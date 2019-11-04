@@ -3,19 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="0dbfe935-8085-4dde-9815-06f8b3761458" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/data/cache begin.zip" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/09Scape/data/cache begin.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/data/cache.zip" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/09Scape/data/cache.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/data/cache/main_file_cache.dat2" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/09Scape/data/cache/main_file_cache.dat2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/data/cacheback up.rar" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/09Scape/data/cacheback up.rar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/data/kratoscache.zip" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/09Scape/data/kratoscache.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/data/kratoscache/cache/main_file_cache.dat2" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/09Scape/data/kratoscache/cache/main_file_cache.dat2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/data/cache begin.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Server/data/cache begin.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/data/cache.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Server/data/cache.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/data/cache/main_file_cache.dat2" beforeDir="false" afterPath="$PROJECT_DIR$/Server/data/cache/main_file_cache.dat2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/data/cacheback up.rar" beforeDir="false" afterPath="$PROJECT_DIR$/Server/data/cacheback up.rar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/data/kratoscache.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Server/data/kratoscache.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/data/kratoscache/cache/main_file_cache.dat2" beforeDir="false" afterPath="$PROJECT_DIR$/Server/data/kratoscache/cache/main_file_cache.dat2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/data/eco/grand_exchange_db.emp" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/09Scape/data/eco/grand_exchange_db.emp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/server.properties" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/09Scape/server.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/server1.properties" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/09Scape/server1.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/server2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/09Scape/server2.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/server3.properties" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/09Scape/server3.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/data/eco/grand_exchange_db.emp" beforeDir="false" afterPath="$PROJECT_DIR$/Server/data/eco/grand_exchange_db.emp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/server.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Server/server.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/server1.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Server/server1.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/server2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Server/server2.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/server3.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Server/server3.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/org/crandor/ServerConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/org/crandor/ServerConstants.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -127,8 +126,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.GameLaunch" />
-        <item itemvalue="Application.Management" />
         <item itemvalue="Application.Server" />
+        <item itemvalue="Application.Management" />
       </list>
     </recent_temporary>
   </component>
@@ -171,77 +170,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>09Scape</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
