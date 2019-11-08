@@ -3,7 +3,7 @@
 This script is run with OSBot. Created by Red Bracket.
 
 namesandarmor.txt has the following format:
-name:cblevel:helmet:cape:neck:weapon:chest:shield:unknown:legs:gloves:boots:
+name:cblevel:helmet:cape:neck:weapon:chest:shield:unknown:legs:unknown:gloves:boots:
 
 */
 
@@ -29,7 +29,7 @@ public class Reader extends Script {
             names.add(p.getName());
             String equipment = getOthersEquipment(p);
             //Format:
-            //name:cblevel:helmet:cape:neck:weapon:chest:shield:unknown:legs:gloves:boots:
+            //name:cblevel:helmet:cape:neck:weapon:chest:shield:unknown:legs:unknown:gloves:boots:
             log2(p.getName()
                     + ":" + p.getCombatLevel()
                     + ":" + equipment);

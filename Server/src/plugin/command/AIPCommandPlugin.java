@@ -257,7 +257,7 @@ public final class AIPCommandPlugin extends CommandPlugin {
                     arg2 = 123;
                 }
                 for (int pestBotsAmount = 0; pestBotsAmount < arg2; pestBotsAmount++) {
-                    PvMBotsBuilder.spawnPestControlTestBot(player.getLocation());
+                    PvMBotsBuilder.createPestControlTestBot(player.getLocation());
                 }
                 return true;
             case "bots":

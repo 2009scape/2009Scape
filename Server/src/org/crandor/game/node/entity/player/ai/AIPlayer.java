@@ -78,17 +78,21 @@ public class AIPlayer extends Player {
 	private Player controler;
 
 
-
 	/**
 	 * Constructs a new {@code AIPlayer} {@code Object}.
+	 *
 	 * @param l The location.
 	 */
 	public AIPlayer(Location l) {
-	    this(retrieveRandomName(), l);
+		this(retrieveRandomName(), l, null);
+	}
+
+	public AIPlayer(String fileName, Location l) {
+		this(retrieveRandomName(fileName), l, null);
 	}
 
 	@SuppressWarnings("deprecation")
-	private AIPlayer(String name, Location l) {
+	private AIPlayer(String name, Location l, String ignored) {
 		super(new PlayerDetails("/aip" + (currentUID + 1) + ":" + name));
 		super.setLocation(startLocation = l);
 		super.artificial = true;
@@ -107,11 +111,11 @@ public class AIPlayer extends Player {
 		this.getAppearance().setGender(RandomFunction.random(5) == 1 ? Gender.FEMALE : Gender.MALE);
 
 		//Create realistic player stats
-		int maxLevel = RandomFunction.random((int) (Integer.parseInt(OSRScopyLine.split(":")[1])*0.78));
+		int maxLevel = RandomFunction.random((int) (Integer.parseInt(OSRScopyLine.split(":")[1]) * 0.78));
 		for (int i = 0; i < Skills.NUM_SKILLS; i++) {
 			this.getSkills().setLevel(i, RandomFunction.linearDecreaseRand(maxLevel));
 			this.getSkills().setStaticLevel(i, RandomFunction.linearDecreaseRand(maxLevel));
-        }
+		}
 		this.getSkills().setLevel(Skills.HITPOINTS, 10);
 		this.getSkills().setStaticLevel(Skills.HITPOINTS, 10);
 
@@ -124,7 +128,7 @@ public class AIPlayer extends Player {
 	}
 
 	private void giveArmor() {
-	 	//name:cblevel:helmet2:cape3:neck4:weapon5:chest6:shield7:unknown8:legs9:unknown10:gloves11:boots12:
+		//name:cblevel:helmet2:cape3:neck4:weapon5:chest6:shield7:unknown8:legs9:unknown10:gloves11:boots12:
 		//sicriona:103:1163:   1023: 1725 :1333:   1127  :1201    :0:      1079 :0:        2922:    1061:0:
 		equipIfExists(new Item(parseOSRS(2)), EquipmentContainer.SLOT_HAT);
 		equipIfExists(new Item(parseOSRS(3)), EquipmentContainer.SLOT_CAPE);
@@ -137,41 +141,47 @@ public class AIPlayer extends Player {
 		equipIfExists(new Item(parseOSRS(12)), EquipmentContainer.SLOT_FEET);
 	}
 
-	private int parseOSRS(int index)
-	{
+	private int parseOSRS(int index) {
 		return Integer.parseInt(OSRScopyLine.split(":")[index]);
 	}
-	private void equipIfExists(Item e, int slot)
-	{
-	    if (e.getId() != 0)
+
+	private void equipIfExists(Item e, int slot) {
+		if (e.getId() != 0)
 			getEquipment().replace(e, slot);
 	}
 
 	/**
-	 * Get a bot name and read other stats while you're at it
+	 * Get a bot content
 	 */
-	public static String retrieveRandomName()
-	{
-		String name = null;
+	public static void updateRandomOSRScopyLine(String fileName) {
 		Random rand = new Random();
 		int n = 0;
 		try {
-			for(Scanner sc = new Scanner(new File("./data/botdata/namesandarmor.txt")); sc.hasNext(); )
-			{
+			for (Scanner sc = new Scanner(new File("./data/botdata/" + fileName)); sc.hasNext(); ) {
 				++n;
 				String line = sc.nextLine();
-				if(rand.nextInt(n) == 0)
-				{
-					name = line.split(":")[0];
+				if (rand.nextInt(n) == 0) { //Chance of overwriting line is lower and lower
 					OSRScopyLine = line;
+					if (line.length() < 3) //probably an empty line
+					{
+					    System.out.println("Something went wrong reading line [" + line + "] from /data/botdata/" + fileName);
+						updateRandomOSRScopyLine(fileName);
+					}
 				}
 			}
 		} catch (FileNotFoundException e) {
-		    System.out.println("Missing namesandarmor.txt!");
+			System.out.println("Missing " + fileName);
 			e.printStackTrace();
 		}
+	}
 
-		return name;
+	private static String retrieveRandomName(String fileName) {
+		updateRandomOSRScopyLine(fileName);
+		return OSRScopyLine.split(":")[0];
+	}
+
+	private static String retrieveRandomName() {
+	    return retrieveRandomName("namesandarmor.txt");
 	}
 
 	@Override

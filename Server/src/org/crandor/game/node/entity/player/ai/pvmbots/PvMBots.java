@@ -28,6 +28,10 @@ public class PvMBots extends AIPlayer {
         super(l);
     }
 
+    public PvMBots(String copyFromFile, Location l) {
+        super(copyFromFile, l);
+    }
+
 
     public List<Entity> FindTargets(Entity entity, int radius) {
         List<Entity> targets = new ArrayList<>();

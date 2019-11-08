@@ -144,31 +144,7 @@ public final class PvMBotsBuilder{
 		}
 	}
 	
-	public static void customizePestControlBot(PestControlTestBot p)
-	{
-		p.getSkills().setLevel(Skills.SLAYER, 99);
-		p.getSkills().setStaticLevel(Skills.SLAYER, 99);
-		int combatType = RandomFunction.getRandom(2);
-		buildMaxMeleeStats(p);
-		buildMaxMeleeEquipment(p);
-		switch(combatType) 
-		{
-			case 0:
-			{
-				break;
-			}
-			case 1:
-			{
-				break;
-			}
-			default:
-			{
-				break;
-			}
-		}
-	}
-	
-	private static void buildMaxMeleeStats(AIPlayer p) 
+	private static void buildMaxMeleeStats(AIPlayer p)
 	{
 		p.getSkills().setLevel(Skills.ATTACK, 99);
 		p.getSkills().setStaticLevel(Skills.ATTACK, 99);
@@ -468,16 +444,6 @@ public final class PvMBotsBuilder{
 	{
 		final PvMBots bot = PvMBotsBuilder.create(loc);
 		bot.getAppearance().setGender(RandomFunction.random(3) == 1 ? Gender.FEMALE : Gender.MALE);
-
-
-	}
-	
-	public static void spawnPestControlTestBot(Location loc)
-	{
-		final PestControlTestBot bot = PvMBotsBuilder.createPestControlTestBot(loc);
-		bot.getAppearance().setGender(RandomFunction.random(3) == 1 ? Gender.FEMALE : Gender.MALE);
-
-		customizePestControlBot(bot);
 	}
 	
 	public static void spawnLowest(Location loc)
