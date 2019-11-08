@@ -110,21 +110,40 @@ public class AIPlayer extends Player {
 	public void updateRandomValues() {
 		this.getAppearance().setGender(RandomFunction.random(5) == 1 ? Gender.FEMALE : Gender.MALE);
 
-		//Create realistic player stats
-		int maxLevel = RandomFunction.random((int) (Integer.parseInt(OSRScopyLine.split(":")[1]) * 0.78));
-		for (int i = 0; i < Skills.NUM_SKILLS; i++) {
-			this.getSkills().setLevel(i, RandomFunction.linearDecreaseRand(maxLevel));
-			this.getSkills().setStaticLevel(i, RandomFunction.linearDecreaseRand(maxLevel));
-		}
-		this.getSkills().setLevel(Skills.HITPOINTS, 10);
-		this.getSkills().setStaticLevel(Skills.HITPOINTS, 10);
-
-		//Create armor as fetched from OSRS
+		setLevels();
 		giveArmor();
 
 		this.setDirection(Direction.values()[new Random().nextInt(Direction.values().length)]); //Random facing dir
 		this.getSkills().updateCombatLevel();
 		this.getAppearance().sync();
+	}
+
+	private void setLevels() {
+		//Create realistic player stats
+		int maxLevel = RandomFunction.random(Math.min(parseOSRS(1), 99));
+		for (int i = 0; i < Skills.NUM_SKILLS; i++) {
+			this.getSkills().setStaticLevel(i, RandomFunction.linearDecreaseRand(maxLevel));
+		}
+		int combatLevelsLeft = parseOSRS(1);
+		int hitpoints = Math.max(RandomFunction.random(10, Math.min(maxLevel, combatLevelsLeft*4)), 10);
+		combatLevelsLeft -= 0.25*hitpoints;
+		int prayer = combatLevelsLeft > 0 ? RandomFunction.random(Math.min(maxLevel, combatLevelsLeft*8)) : 1;
+		combatLevelsLeft -= 0.125*prayer;
+		int defence = combatLevelsLeft > 0 ? RandomFunction.random(Math.min(maxLevel, combatLevelsLeft*4)) : 1;
+		combatLevelsLeft -= 0.25*defence;
+
+		combatLevelsLeft = Math.min(combatLevelsLeft, 199);
+
+		int attack = combatLevelsLeft > 0 ? RandomFunction.normalRandDist(Math.min(maxLevel, combatLevelsLeft*3)) : 1;
+		int strength = combatLevelsLeft > 0 ? combatLevelsLeft*3 - attack : 1;
+
+		this.getSkills().setStaticLevel(Skills.HITPOINTS, hitpoints);
+		this.getSkills().setStaticLevel(Skills.PRAYER, prayer);
+		this.getSkills().setStaticLevel(Skills.DEFENCE, defence);
+		this.getSkills().setStaticLevel(Skills.ATTACK, attack);
+		this.getSkills().setStaticLevel(Skills.STRENGTH, strength);
+		this.getSkills().setStaticLevel(Skills.RANGE, combatLevelsLeft/2);
+		this.getSkills().setStaticLevel(Skills.MAGIC, combatLevelsLeft/2);
 	}
 
 	private void giveArmor() {
