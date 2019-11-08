@@ -62,3 +62,6 @@ Errors could not find library:
     - `09HDscape-client/lib` directory
     - `09HDscape-client/clientlibs.jar` file
     - `09HDscape-management-server/lib` director 
+
+Errors regarding java.nio.BufferUnderflowException in server:
+- Reclone the repository. This happened to me (Red Bracket) once, could never reproduce.

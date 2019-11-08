@@ -120,7 +120,7 @@ public class AIPlayer extends Player {
 
 	private void setLevels() {
 		//Create realistic player stats
-		int maxLevel = RandomFunction.random(Math.min(parseOSRS(1), 99));
+		int maxLevel = RandomFunction.random(1, Math.min(parseOSRS(1), 99));
 		for (int i = 0; i < Skills.NUM_SKILLS; i++) {
 			this.getSkills().setStaticLevel(i, RandomFunction.linearDecreaseRand(maxLevel));
 		}
