@@ -19,7 +19,7 @@ public class GameLaunch {
 	NOTICE: IF YOU'RE A DEVELOPER, THE EASIEST WAY TO CONNECT TO THE LIVESERVER IS WITH CLIENT.JAVA. THIS CLASS IS FOR LOCAL SERVER CONNECTING!
 
 	 */
-	public static GameSetting SETTINGS = new GameSetting("2009Scape", Configurations.LOCAL_SERVER ? PUBLIC_IP_ADDRESS : "34.68.75.237"/*"34.68.75.237"*/, 1, "live", false, false);
+	public static GameSetting SETTINGS = new GameSetting("2009Scape", Configurations.LOCAL_SERVER ? "127.0.0.1" : PUBLIC_IP_ADDRESS/*"34.68.75.237"*/, 1, "live", false, false);
 	
 	/**
 	 * The main method.
