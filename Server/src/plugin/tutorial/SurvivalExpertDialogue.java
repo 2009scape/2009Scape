@@ -1,5 +1,6 @@
 package plugin.tutorial;
 
+import org.crandor.plugin.InitializablePlugin;
 import org.crandor.game.component.Component;
 import org.crandor.game.content.dialogue.DialoguePlugin;
 import org.crandor.game.content.dialogue.FacialExpression;
@@ -13,6 +14,7 @@ import org.crandor.game.node.item.Item;
  * Handles survival expert dialogue.
  * @author 'Vexia
  */
+@InitializablePlugin
 public class SurvivalExpertDialogue extends DialoguePlugin {
 
 	/**

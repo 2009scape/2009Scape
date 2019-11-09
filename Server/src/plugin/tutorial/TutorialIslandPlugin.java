@@ -14,8 +14,8 @@ import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.object.GameObject;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.update.flag.context.Animation;
-import org.crandor.plugin.Plugin;
 import org.crandor.plugin.InitializablePlugin;
+import org.crandor.plugin.Plugin;
 import org.crandor.plugin.PluginManager;
 
 /**
@@ -46,7 +46,7 @@ public class TutorialIslandPlugin extends OptionHandler {
 		ObjectDefinition.forId(3031).getConfigurations().put("option:climb-down", this);
 		ObjectDefinition.forId(1740).getConfigurations().put("option:climb-down", this);
 		ObjectDefinition.forId(3028).getConfigurations().put("option:climb-up", this);
-		PluginManager.definePlugin(new BrotherBraceDialogue(), new CombatInstructorDialogue(), new TutorialBook(), new FinancialAdvisorDialogue(), new MasterChefDialogue(), new MiningInstructorDialogue(), new QuestGuideDialogue(), new RSGuideDialogue(), new SurvivalExpertDialogue(), new TutorialCompletionDialogue());
+//		PluginManager.definePlugin(new BrotherBraceDialogue(), new CombatInstructorDialogue(), new TutorialBook(), new FinancialAdvisorDialogue(), new MasterChefDialogue(), new MiningInstructorDialogue(), new QuestGuideDialogue(), new RSGuideDialogue(), new SurvivalExpertDialogue(), new TutorialCompletionDialogue());
 		return this;
 	}
 

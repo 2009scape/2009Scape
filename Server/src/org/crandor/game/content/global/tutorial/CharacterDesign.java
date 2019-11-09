@@ -147,8 +147,8 @@ public final class CharacterDesign {
 
 	/**
 	 * Handles the buttons.
-	 * @param player the player.
-	 * @param buttonId the button.
+	 * @param opcode the opcode.
+	 * @param button the button.
 	 */
 	public static boolean handleButtons(Player player, int buttonId) {
 		switch (buttonId) {
@@ -289,11 +289,9 @@ public final class CharacterDesign {
 	/**
 	 * Confirms the character screen.
 	 * @param player The player.
+	 * @param If we should close the interface.
 	 */
 	private static void confirm(Player player, boolean close) {
-		if (TutorialSession.getExtension(player).getStage() == 0) {
-			TutorialStage.load(player, 1, false);
-		}
 		if (close) {
 			player.setAttribute("char-design:accepted", true);
 			player.getInterfaceManager().close();
@@ -336,19 +334,19 @@ public final class CharacterDesign {
 		return val;
 	}
 
-	//Male head ids : ScriptAPI - 701 [0: 1 1: 2 2: 3 3: 4 4: 5 5: 6 6: 7 7: 8 8: 9 91: 10 92: 11 93: 12 94: 13 95: 14 96: 15 97: 16 261: 17 262: 18 263: 19 264: 20 265: 21 266: 22 267: 23 268: 24 ]
-	//Female head ids: ScriptAPI - 689 [45: 1 46: 2 47: 3 48: 4 49: 5 50: 6 51: 7 52: 8 53: 9 54: 10 135: 11 136: 12 137: 13 138: 14 139: 15 140: 16 141: 17 142: 318 143: 19 144: 20 145: 21 146: 22 269: 23 270: 24 271: 25 272: 26 273: 27 274: 28 275: 29 276: 30 277: 31 278: 32 279: 33 280: 34 ]
-	//Male jaw ids: ScriptAPI - 703 [10: 1 11: 2 12: 3 13: 4 14: 5 15: 6 16: 7 17: 8 98: 9 99: 10 100: 11 101: 12 102: 13 103: 14 104: 15 305: 16 306: 17 307: 18 308: 19 ]
-	//Male torso ids: ScriptAPI - 1128 [19: 1 20: 2 21: 3 22: 4 23: 5 24: 6 25: 7 111: 8 112: 9 113: 10 114: 11 115: 12 116: 13 ]
-	//Female torso ids: ScriptAPI - 1129 [57: 1 58: 2 59: 3 60: 4 153: 5 154: 6 155: 7 156: 8 157: 9 158: 10 ]
-	//Male arm ids: ScriptAPI - 1130 [27: 1 28: 2 29: 3 30: 4 31: 5 105: 6 106: 7 107: 8 108: 9 109: 10 110: 11 ]
-	//Female arm ids: ScriptAPI - 1131 [62: 1 63: 2 64: 3 65: 4 147: 5 148: 6 149: 7 150: 8 151: 9 152: 10 ]
-	//Male hand ids: ScriptAPI - 1132 [34: 1 84: 2 117: 3 118: 4 119: 5 120: 6 121: 7 122: 8 123: 9 124: 10 125: 11 126: 12 ]
-	//Female hand ids: ScriptAPI - 1133 [68: 1 127: 2 159: 3 160: 4 161: 5 162: 6 163: 7 164: 8 165: 9 166: 10 167: 11 168: 12 ]
-	//Male leg ids: ScriptAPI - 1134 [37: 1 38: 2 39: 3 40: 4 85: 5 86: 6 87: 7 88: 8 89: 9 90: 10 ]
-	//Female leg ids: ScriptAPI - 1135 [71: 1 72: 2 73: 3 74: 4 75: 5 76: 6 77: 7 128: 8 129: 9 130: 10 131: 11 132: 12 133: 13 134: 14 ]
-	//Male feet ids: ScriptAPI - 1136 [43: 1 ]
-	//Female feet ids: ScriptAPI - 1137 [80: 1 ]
+	//Male head ids : Script - 701 [0: 1 1: 2 2: 3 3: 4 4: 5 5: 6 6: 7 7: 8 8: 9 91: 10 92: 11 93: 12 94: 13 95: 14 96: 15 97: 16 261: 17 262: 18 263: 19 264: 20 265: 21 266: 22 267: 23 268: 24 ]
+	//Female head ids: Script - 689 [45: 1 46: 2 47: 3 48: 4 49: 5 50: 6 51: 7 52: 8 53: 9 54: 10 135: 11 136: 12 137: 13 138: 14 139: 15 140: 16 141: 17 142: 318 143: 19 144: 20 145: 21 146: 22 269: 23 270: 24 271: 25 272: 26 273: 27 274: 28 275: 29 276: 30 277: 31 278: 32 279: 33 280: 34 ]
+	//Male jaw ids: Script - 703 [10: 1 11: 2 12: 3 13: 4 14: 5 15: 6 16: 7 17: 8 98: 9 99: 10 100: 11 101: 12 102: 13 103: 14 104: 15 305: 16 306: 17 307: 18 308: 19 ]
+	//Male torso ids: Script - 1128 [19: 1 20: 2 21: 3 22: 4 23: 5 24: 6 25: 7 111: 8 112: 9 113: 10 114: 11 115: 12 116: 13 ]
+	//Female torso ids: Script - 1129 [57: 1 58: 2 59: 3 60: 4 153: 5 154: 6 155: 7 156: 8 157: 9 158: 10 ]
+	//Male arm ids: Script - 1130 [27: 1 28: 2 29: 3 30: 4 31: 5 105: 6 106: 7 107: 8 108: 9 109: 10 110: 11 ]
+	//Female arm ids: Script - 1131 [62: 1 63: 2 64: 3 65: 4 147: 5 148: 6 149: 7 150: 8 151: 9 152: 10 ]
+	//Male hand ids: Script - 1132 [34: 1 84: 2 117: 3 118: 4 119: 5 120: 6 121: 7 122: 8 123: 9 124: 10 125: 11 126: 12 ]
+	//Female hand ids: Script - 1133 [68: 1 127: 2 159: 3 160: 4 161: 5 162: 6 163: 7 164: 8 165: 9 166: 10 167: 11 168: 12 ]
+	//Male leg ids: Script - 1134 [37: 1 38: 2 39: 3 40: 4 85: 5 86: 6 87: 7 88: 8 89: 9 90: 10 ]
+	//Female leg ids: Script - 1135 [71: 1 72: 2 73: 3 74: 4 75: 5 76: 6 77: 7 128: 8 129: 9 130: 10 131: 11 132: 12 133: 13 134: 14 ]
+	//Male feet ids: Script - 1136 [43: 1 ]
+	//Female feet ids: Script - 1137 [80: 1 ]
 
 }
 

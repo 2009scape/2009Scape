@@ -8,11 +8,13 @@ import org.crandor.game.content.global.tutorial.TutorialStage;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.item.Item;
+import org.crandor.plugin.InitializablePlugin;
 
 /**
  * Handles the master chef dialogue plugin.
  * @author 'Vexia
  */
+@InitializablePlugin
 public class MasterChefDialogue extends DialoguePlugin {
 
 	/**

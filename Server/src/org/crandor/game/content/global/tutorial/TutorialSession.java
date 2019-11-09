@@ -1,9 +1,7 @@
 package org.crandor.game.content.global.tutorial;
 
-import org.crandor.ServerConstants;
 import org.crandor.game.component.Component;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.login.LoginConfiguration;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
 import org.crandor.net.packet.PacketRepository;
@@ -51,27 +49,20 @@ public final class TutorialSession {
 	 * Method used to init this session.
 	 */
 	public void init() {
-		if (!GameWorld.getSettings().isPvp()) {
-			if (getStage() >= MAX_STAGE) {
-				player.removeAttribute("tut-island");
-				setStage(1);
-				return;
-			}
-			if (getStage() < 26) {
-				player.getSettings().setRunToggled(true);
-			}
-			delayPulse = new DelayPulse();
-			player.setAttribute("tut-island", true);
-			player.getInterfaceManager().openOverlay(new Component(371));
-			GameWorld.submit(delayPulse);
-			PacketRepository.send(InterfaceConfig.class, new InterfaceConfigContext(player, 371, 25, true));
-			TutorialStage.load(player, getStage(), true);
-		} else {
-			player.getSavedData().getSpawnData().setPurchased(-1);
-			setStage(MAX_STAGE);
-			player.teleport(ServerConstants.HOME_LOCATION);
-			LoginConfiguration.welcome(player);
+		if (getStage() >= MAX_STAGE) {
+			player.removeAttribute("tut-island");
+			setStage(MAX_STAGE + 1);
+			return;
 		}
+		if (getStage() < 26) {
+			player.getSettings().setRunToggled(true);
+		}
+		delayPulse = new DelayPulse();
+		player.setAttribute("tut-island", true);
+		player.getInterfaceManager().openOverlay(new Component(371));
+		GameWorld.submit(delayPulse);
+		PacketRepository.send(InterfaceConfig.class, new InterfaceConfigContext(player, 371, 25, true));
+		TutorialStage.load(player, getStage(), true);
 	}
 
 	/**

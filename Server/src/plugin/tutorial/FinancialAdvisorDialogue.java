@@ -6,11 +6,13 @@ import org.crandor.game.content.global.tutorial.TutorialStage;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.world.GameWorld;
+import org.crandor.plugin.InitializablePlugin;
 
 /**
  * Represents the financial advisor plugin.
  * @author Vexia
  */
+@InitializablePlugin
 public final class FinancialAdvisorDialogue extends DialoguePlugin {
 
 	/**

@@ -8,12 +8,14 @@ import org.crandor.game.content.global.tutorial.TutorialStage;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.world.GameWorld;
+import org.crandor.plugin.InitializablePlugin;
 
 /**
  * Hanldes the RuneScape guide's dialogue.
  * @author Vexia
  * @author Splinter
  */
+@InitializablePlugin
 public class RSGuideDialogue extends DialoguePlugin {
 
 	/**

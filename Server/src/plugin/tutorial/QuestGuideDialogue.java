@@ -7,11 +7,13 @@ import org.crandor.game.content.global.tutorial.TutorialSession;
 import org.crandor.game.content.global.tutorial.TutorialStage;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
+import org.crandor.plugin.InitializablePlugin;
 
 /**
  * Handles the quest guide.
  * @author Vexia
  */
+@InitializablePlugin
 public class QuestGuideDialogue extends DialoguePlugin {
 
 	/**

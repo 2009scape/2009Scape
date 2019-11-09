@@ -37,6 +37,10 @@ public class SettingTabInterface extends ComponentPlugin {
 			p.getSettings().setMusicVolume(volume);
 			break;
 		case 16://530 settings
+		/*	if (TutorialSession.getExtension(p).getStage() != TutorialSession.MAX_STAGE) {
+				p.sendMessage("You must finish the tutorial before opening the graphic settings.");
+				break;
+			}*/
 			p.getInterfaceManager().open(new Component(742));
 			break;
 		case 18://530 settings

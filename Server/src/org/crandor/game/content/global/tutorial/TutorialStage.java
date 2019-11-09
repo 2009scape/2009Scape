@@ -1,7 +1,6 @@
 package org.crandor.game.content.global.tutorial;
 
 import org.crandor.game.component.Component;
-import org.crandor.game.content.activity.ActivityManager;
 import org.crandor.game.node.entity.combat.equipment.WeaponInterface;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.link.HintIconManager;
@@ -25,9 +24,9 @@ public enum TutorialStage {
 		public void run(final Player player) {
 			if (login) {
 				player.lock(1);
-				player.getProperties().setTeleportLocation(Location.create(2524, 5000, 0));
-				player.getInterfaceManager().hideTabs(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13);
-				player.setAttribute("tut-island:hi_slot", HintIconManager.registerHintIcon(player, Repository.findNPC(7938), HintIconManager.DEFAULT_ARROW, HintIconManager.ARROW_CIRCLE_MODEL));
+				player.getProperties().setTeleportLocation(Location.create(3094, 3107, 0));
+				player.getInterfaceManager().hideTabs(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13);
+				player.setAttribute("tut-island:hi_slot", HintIconManager.registerHintIcon(player, Repository.findNPC(945)));
 				GameWorld.submit(new Pulse(1) {
 					@Override
 					public boolean pulse() {
@@ -36,8 +35,7 @@ public enum TutorialStage {
 					}
 				});
 			}
-			Component.setUnclosable(player, player.getDialogueInterpreter().sendPlaneMessageWithBlueTitle(
-					"Creating your Character", "Before your adventure begins, you should take some time to", "set your mouse settings and give your character it's very own", "look. Take your time and choose from the options above, then", "confirm your changes."));
+			Component.setUnclosable(player, player.getDialogueInterpreter().sendPlaneMessageWithBlueTitle("Getting started", "To start the tutorial use your left mouse button to click on the", GameWorld.getName() + " Guide in this room. He is indicated by a flashing", "yellow arrow above his head. If you can't see him, use your", "keyboard's arrow keys to rotate the view."));
 		}
 	},
 	STAGE_1(1) {
@@ -45,14 +43,11 @@ public enum TutorialStage {
 		public void run(final Player player) {
 			if (login) {
 				player.getInterfaceManager().hideTabs(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13);
-				player.setAttribute("tut-island:hi_slot", HintIconManager.registerHintIcon(player, Repository.findNPC(7938), HintIconManager.DEFAULT_ARROW, HintIconManager.ARROW_CIRCLE_MODEL));
+				player.getConfigManager().set(1021, 12);
 			} else {
 				removeHintIcon(player);
 			}
-			player.getInterfaceManager().hideTabs(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13);
-			player.setAttribute("tut-island:hi_slot", HintIconManager.registerHintIcon(player, Repository.findNPC(7938), HintIconManager.DEFAULT_ARROW, HintIconManager.ARROW_CIRCLE_MODEL));
-			Component.setUnclosable(player, player.getDialogueInterpreter().sendScrollMessageWithBlueTitle(
-					"Getting started", "Now is the time for adventure!", "The story has humble beginnings: in a cellar, in fact. Talk to", "Sir Vant by " + TutorialStage.blue("left-clicking")+ " on him. He is indicated by a yellow", "arrow, flashing both above his head and on your minimap","in the top-right of the screen. If you can't see the", "knight, use your keyboard's " + TutorialStage.blue("arrow keys") + " to rotate","your viewpoint."));
+			Component.setUnclosable(player, player.getDialogueInterpreter().sendPlaneMessageWithBlueTitle("", "Player controls", "Please click on the flashing spanner icon found at the bottom", "right of your screen. This will display your player controls.", ""));
 		}
 	},
 	STAGE_2(2) {
@@ -60,12 +55,11 @@ public enum TutorialStage {
 		public void run(final Player player) {
 			if (login) {
 				player.getInterfaceManager().hideTabs(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13);
-				ActivityManager.start(player, "ltr:dragon_fight_cs", true);
 			} else {
-				player.getInterfaceManager().hideTabs(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13);
-				ActivityManager.start(player, "ltr:dragon_fight_cs", false);
+				player.getConfigManager().set(1021, 0);
 			}
-			Component.setUnclosable(player, player.getDialogueInterpreter().sendPlaneMessageWithBlueTitle("Cutscenes", "There are moments in " + GameWorld.getName() + " that you cannot change what is", "going on you must simply watch to see what unfolds. Some call", "these 'cutscenes'. Watch the knight fight the dragon in this cutscene.", ""));
+			player.setAttribute("tut-island:hi_slot", HintIconManager.registerHintIcon(player, Repository.findNPC(945)));
+			Component.setUnclosable(player, player.getDialogueInterpreter().sendScrollMessageWithBlueTitle("Player controls", "On the side panel you can now see a variety of options from", "changing the brightness of the screen and the volume of", "music, to selecting whether your player should accept help", "from other players. Don't worry about these too much for now,", "they will become clearer as you explore the game. Talk to the", GameWorld.getName() + " Guide to continue."));
 		}
 	},
 	STAGE_3(3) {
@@ -73,13 +67,11 @@ public enum TutorialStage {
 		public void run(final Player player) {
 			if (login) {
 				player.getInterfaceManager().hideTabs(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13);
-				player.setAttribute("tut-island:hi_slot", HintIconManager.registerHintIcon(player, Repository.findNPC(7938), HintIconManager.DEFAULT_ARROW, HintIconManager.ARROW_CIRCLE_MODEL));
 			} else {
 				removeHintIcon(player);
 			}
-			player.getInterfaceManager().hideTabs(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13);
-			player.setAttribute("tut-island:hi_slot", HintIconManager.registerHintIcon(player, Repository.findNPC(7938), HintIconManager.DEFAULT_ARROW, HintIconManager.ARROW_CIRCLE_MODEL));
-			Component.setUnclosable(player, player.getDialogueInterpreter().sendPlaneMessageWithBlueTitle("Combat!", TutorialStage.blue("Left-click") + "on the knight to talk to him about combat. I have", "put a flashing yellow arrow above his head. If you can't see", "him, use your keyboard's arrow keys to rotate your view."));
+			player.setAttribute("tut-island:hi_slot", HintIconManager.registerHintIcon(player, Location.create(3098, 3107, 0), 1, -1, player.getHintIconManager().freeSlot(), 125, 3));
+			Component.setUnclosable(player, player.getDialogueInterpreter().sendScrollMessageWithBlueTitle("Interacting with scenery", "You can interact with many items of scenery by simply clicking", "on them. Right clicking will also give more options. Feel free to", "try it with the things in this room, then click on the door", "indicated with the yellow arrow to go though to the next", "instructor."));
 		}
 	},
 	STAGE_4(4) {
@@ -87,14 +79,12 @@ public enum TutorialStage {
 		public void run(final Player player) {
 			if (login) {
 				player.getInterfaceManager().hideTabs(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13);
-				player.setAttribute("tut-island:hi_slot", HintIconManager.registerHintIcon(player, Repository.findNPC(7938), HintIconManager.DEFAULT_ARROW, HintIconManager.ARROW_CIRCLE_MODEL));
 			} else {
 				removeHintIcon(player);
 			}
-			player.getInterfaceManager().hideTabs(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13);
-			player.setAttribute("tut-island:hi_slot", HintIconManager.registerHintIcon(player, Repository.findNPC(7938), HintIconManager.DEFAULT_ARROW, HintIconManager.ARROW_CIRCLE_MODEL));
-			Component.setUnclosable(player, player.getDialogueInterpreter().sendScrollMessageWithBlueTitle(
-					"Getting started", "Now is the time for adventure!", "The story has humble beginnings: in a cellar, in fact. Talk to", "Sir Vant by " + TutorialStage.blue("left-clicking")+ " on him. He is indicated by a yellow", "arrow, flashing both above his head and on your minimap","in the top-right of the screen. If you can't see the", "knight, use your keyboard's " + TutorialStage.blue("arrow keys") + " to rotate","your viewpoint."));
+			player.getConfigManager().set(406, 2);
+			player.setAttribute("tut-island:hi_slot", HintIconManager.registerHintIcon(player, Repository.findNPC(943)));
+			Component.setUnclosable(player, player.getDialogueInterpreter().sendPlaneMessageWithBlueTitle("Moving around", "Follow the path to find the next instructor. Clicking on the", "ground will walk you to that point. Talk to the Survival Expert by", "the pond to continue the tutorial. Remember you can rotate", "the view by pressing the arrow keys."));
 		}
 	},
 	STAGE_5(5) {
@@ -1038,9 +1028,5 @@ public enum TutorialStage {
 		}
 		player.removeAttribute("tut-island:hi_slot");
 		HintIconManager.removeHintIcon(player, slot);
-	}
-
-	private static String blue(String text) {
-		return "<col=0000ff>" +  text + "</col>";
 	}
 }

@@ -1,5 +1,6 @@
 package plugin.tutorial;
 
+import org.crandor.plugin.InitializablePlugin;
 import org.crandor.game.content.dialogue.DialoguePlugin;
 import org.crandor.game.content.dialogue.FacialExpression;
 import org.crandor.game.content.global.tutorial.TutorialSession;
@@ -22,12 +23,13 @@ import org.crandor.net.amsc.WorldCommunicator;
  * @author Splinter
  * 
  */
+@InitializablePlugin
 public class TutorialCompletionDialogue extends DialoguePlugin {
 
 	/**
 	 * The starter pack of items.
 	 */
-	private static final Item[] STARTER_PACK = new Item[] { new Item(995, 25000), new Item(590, 1), new Item(303, 1), new Item(380, 20), new Item(1925, 1), new Item(1931, 1), new Item(8007, 3), new Item(4447, 1), new Item(2741, 1), new Item(14775, 1) };
+	private static final Item[] STARTER_PACK = new Item[] { new Item(995, 25000), new Item(590, 1), new Item(303, 1), new Item(380, 20), new Item(1925, 1), new Item(1931, 1), new Item(8007, 3), new Item(8010, 3), new Item(4447, 1), new Item(2741, 1), new Item(14775, 1) };
 
 	/**
 	 * Represents the rune items.
@@ -129,7 +131,7 @@ public class TutorialCompletionDialogue extends DialoguePlugin {
 				stage = 1;
 				break;
 			case 1:
-				interpreter.sendOptions("What would you like to say?", "Leave Tutorial Island.", "Can I decide later?", "I'll stay here for the Tutorial.");
+				interpreter.sendOptions("What would you like to say?", "<col=CC0000>Leave Tutorial Island.", "Can I decide later?", "I'll stay here for the Tutorial.");
 				stage = 2;
 				break;
 			case 2:
@@ -266,13 +268,13 @@ public class TutorialCompletionDialogue extends DialoguePlugin {
 				stage = 501;
 				break;
 			case 1200:
-				npc("Enjoy your time playing on "+GameWorld.getName()+"!");
+				npc("Keep in mind: our server has more content than any other", "server ever released. There's hundreds of hours of", "exciting and flawless gameplay awaiting you, "+player.getUsername()+".", "Enjoy your time playing "+GameWorld.getName()+"!");
 				stage = 520;
 				break;
 			case 520:
 				player.removeAttribute("tut-island");
 				player.getConfigManager().set(1021, 0);
-				player.getProperties().setTeleportLocation(new Location(3222, 3218, 0));
+				player.getProperties().setTeleportLocation(new Location(3164, 3471));
 				TutorialSession.getExtension(player).setStage(72);
 				player.getInterfaceManager().closeOverlay();
 				player.getInventory().clear();
@@ -281,7 +283,10 @@ public class TutorialCompletionDialogue extends DialoguePlugin {
 				player.getInterfaceManager().restoreTabs();
 				player.getInventory().add(STARTER_PACK);
 				interpreter.sendDialogue("Welcome to " + GameWorld.getName() + "!", "If you require any assistance, please don't hesitate to contact our", "friendly staff members and players for advice.");
-				player.getPacketDispatch().sendMessage("Welcome to " + GameWorld.getName() + "!");
+				player.getPacketDispatch().sendMessage("Welcome to " + GameWorld.getName() + ".");
+				player.getPacketDispatch().sendMessages("<img=16><col=6600CC>As a new player, you are receiving boosted combat skill experience.</col>", "<col=6600CC>We highly recommend playing in high-detail mode if your machine can support it.</col>", "<col=6600CC>An arrow icon has been placed over the WildScape Pk Guide. You may speak to him for", "more in-game information.");
+				player.sendMessage("<col=6600CC>Use the teleporter for easy access to training,cities and minigames.");
+				player.getBank().add(new Item(121, 15), new Item(115, 15), new Item(133, 15), new Item(373, 50), new Item(2289, 25), new Item(7056, 25));
 				player.unlock();
 				TutorialSession.getExtension(player).setStage(TutorialSession.MAX_STAGE + 1);
 				stage = 7;
@@ -298,7 +303,7 @@ public class TutorialCompletionDialogue extends DialoguePlugin {
 				player.getInterfaceManager().setViewedTab(3);
 				player.removeAttribute("tut-island:hi_slot");
 				HintIconManager.removeHintIcon(player, slot);
-				HintIconManager.registerHintIcon(player, Repository.findNPC(Location.create(3089, 3507, 0)));
+				HintIconManager.registerHintIcon(player, Repository.findNPC(Location.create(3168, 3481, 0)));
 				break;
 			case 7:
 				end();

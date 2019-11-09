@@ -1,5 +1,6 @@
 package plugin.tutorial;
 
+import org.crandor.plugin.InitializablePlugin;
 import org.crandor.game.content.dialogue.DialoguePlugin;
 import org.crandor.game.content.dialogue.book.Book;
 import org.crandor.game.content.dialogue.book.BookLine;
@@ -11,6 +12,7 @@ import org.crandor.game.node.entity.player.Player;
  * Handles the introductory after-tutorial book.
  * @author Splinter
  */
+@InitializablePlugin
 public final class TutorialBook extends Book {
 
 	/**
