@@ -15,10 +15,12 @@ NOTICE: THIS IS THE LIVESERVER CLIENT. For development purposes, use GameLaunch.
  */
 public class Client {
 
+	public static final String PUBLIC_IP_ADDRESS = "35.188.69.167";
+
 	/**
 	 * The game settings.
 	 */
-	public static GameSetting SETTINGS = new GameSetting("2009Scape", "34.68.75.237", 1, "live", false, false);
+	public static GameSetting SETTINGS = new GameSetting("2009Scape", PUBLIC_IP_ADDRESS, 1, "live", false, false);
 	
 	/**
 	 * The main method.
@@ -30,7 +32,7 @@ public class Client {
 		System.out.println("Running liveserver client");
 		Configurations.LOCAL_SERVER = false;
 		Configurations.LOCAL_MS = false;
-		Configurations.MS_IP = Configurations.LOCAL_MS ? "127.0.0.1" : "34.68.75.237"; //Needs to be done because of order it's otherwise set
+		Configurations.MS_IP = Configurations.LOCAL_MS ? "127.0.0.1" : PUBLIC_IP_ADDRESS; //Needs to be done because of order it's otherwise set
 
 		for (int i = 0; i < args.length; i++) {
 			String[] cmd = args[i].split("=");
