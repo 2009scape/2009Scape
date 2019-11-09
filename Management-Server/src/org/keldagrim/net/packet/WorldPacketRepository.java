@@ -3,7 +3,6 @@ package org.keldagrim.net.packet;
 import java.nio.ByteBuffer;
 import java.util.List;
 
-import org.crandor.game.world.GameWorld;
 import org.keldagrim.ServerConstants;
 import org.keldagrim.net.IoSession;
 import org.keldagrim.system.PunishmentStorage;
