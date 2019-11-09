@@ -8,8 +8,8 @@ public class NoobBot extends PvMBots{
 	private int tick = 0;
 	private int movetimer = 0;
 	
-	public NoobBot(String name, Location l) {
-		super(name, l);
+	public NoobBot(Location l) {
+		super(l);
 		// TODO Auto-generated constructor stub
 	}
 	

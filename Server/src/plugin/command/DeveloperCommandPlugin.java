@@ -15,8 +15,6 @@ import org.crandor.game.content.skill.Skills;
 import org.crandor.game.content.skill.free.smithing.smelting.Bar;
 import org.crandor.game.content.skill.member.construction.HouseLocation;
 import org.crandor.game.content.skill.member.summoning.pet.Pets;
-import org.crandor.game.events.GlobalEvent;
-import org.crandor.game.events.GlobalEventManager;
 import org.crandor.game.node.entity.combat.ImpactHandler.HitsplatType;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
@@ -99,9 +97,6 @@ public final class DeveloperCommandPlugin extends CommandPlugin {
     @SuppressWarnings("deprecation")
     @Override
     public boolean parse(final Player player, String name, String[] args) {
-        String[] eventNameArr;
-        String eventName;
-        GlobalEvent event = GlobalEvent.ALCHEMY_HELLENISTIC;
         switch (name) {
             case "find":
                 try {
@@ -156,9 +151,6 @@ public final class DeveloperCommandPlugin extends CommandPlugin {
                     }
                 });
                 break;
-            case "eventlocator":
-                player.getDialogueInterpreter().open(175869, GlobalEventManager.get().getCurrentEvent());
-                break;
             case "drops":
                 try {
                     new NPCDropSQLHandler().parse();
@@ -177,66 +169,12 @@ public final class DeveloperCommandPlugin extends CommandPlugin {
                 player.sendMessage("You have " + player.getSkillTasks().getTaskAmount() + " more to go!");
                 break;
 
-            case "eventactivate":
-            case "eventstart":
-            case "eventbegin":
-            case "activateevent":
-            case "startevent":
-            case "beginevent":
-                eventNameArr = Arrays.copyOfRange(args, 1, args.length);
-                eventName = String.join(" ", eventNameArr);
-                event = GlobalEventManager.getEvent(eventName);
-                if (event == null)
-                	break;
-				GlobalEventManager.get().activate(event);
-                player.sendMessage("You have activated the " + event.getName() + " event!");
-                break;
-
-            case "eventdeactivate":
-            case "eventend":
-            case "eventfinish":
-            case "deactivateevent":
-            case "endevent":
-            case "finishevent":
-                eventNameArr = Arrays.copyOfRange(args, 1, args.length);
-                eventName = String.join(" ", eventNameArr);
-                event = GlobalEventManager.getEvent(eventName);
-                if (event == null)
-                	break;
-				GlobalEventManager.get().deactivate(event);
-                player.sendMessage("You have deactivated the " + event.getName() + " event!");
-                break;
-
             case "poison":
                 player.getStateManager().set(EntityState.POISONED, 200, player);
                 player.getConfigManager().set(102, 1);
                 player.sendMessage("Poisoned...");
                 break;
 
-            case "activatecf":
-                GlobalEventManager.get().activate(GlobalEvent.CLONE_FEST);
-                if (GlobalEvent.CLONE_FEST.isActive()) {
-                    int size = 20;
-                    if (PVPAIPActions.pvp_players == null) {
-                        player.setAttribute("aip_legion", PVPAIPActions.pvp_players = new ArrayList<>());
-                    }
-                    for (int i = 0; i < size; i++) {
-                        String aipName = PVPAIPBuilderUtils.names[i];
-                        final AIPlayer aip = AIPBuilder.create(aipName, generateLocation(player));
-                        aip.setControler(player);
-                        aip.getAppearance().setGender(RandomFunction.random(3) == 1 ? Gender.FEMALE : Gender.MALE);
-                        Repository.getPlayers().add(aip);
-                        aip.init();
-                        PVPAIPBuilderUtils.generateClass(aip);
-
-                        if (PVPAIPActions.pvp_players.isEmpty()) {
-                            aip.setAttribute("aip_legion", PVPAIPActions.pvp_players);
-                        }
-                        PVPAIPActions.pvp_players.add(aip);
-                    }
-                    PVPAIPActions.syncBotThread(player);
-                }
-                break;
             case "reloaddb":
                 SQLManager.init();
                 player.sendMessage("[MySQl] The database has been reloaded.");

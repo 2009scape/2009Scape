@@ -7,8 +7,8 @@ import org.crandor.game.world.map.Location;
 
 public class GiantMoleBot extends PvMBots{
 
-	public GiantMoleBot(String name, Location l) {
-		super(name, l);
+	public GiantMoleBot(Location l) {
+		super(l);
 		// TODO Auto-generated constructor stub
 	}
 	

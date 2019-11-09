@@ -89,7 +89,7 @@ public final class OptionDialInstruction extends ScriptContext {
 
 	@Override
 	public ScriptContext create(String args) {
-		System.out.println(args);
+		System.out.println("OptionDialInstruction: " + args);
 		ScriptContext context = super.create(args);
 
 		if (context != null) {

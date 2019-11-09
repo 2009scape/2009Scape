@@ -3,7 +3,6 @@ package org.crandor.game.content.skill;
 import org.crandor.game.content.global.SkillcapePerks;
 import org.crandor.game.content.global.tutorial.TutorialSession;
 import org.crandor.game.content.holiday.HolidayEvent;
-import org.crandor.game.events.GlobalEvent;
 import org.crandor.game.node.entity.Entity;
 import org.crandor.game.node.entity.combat.ImpactHandler;
 import org.crandor.game.node.entity.npc.NPC;
@@ -44,6 +43,11 @@ public final class Skills {
 	 * Constants for the skill ids.
 	 */
 	public static final int ATTACK = 0, DEFENCE = 1, STRENGTH = 2, HITPOINTS = 3, RANGE = 4, PRAYER = 5, MAGIC = 6, COOKING = 7, WOODCUTTING = 8, FLETCHING = 9, FISHING = 10, FIREMAKING = 11, CRAFTING = 12, SMITHING = 13, MINING = 14, HERBLORE = 15, AGILITY = 16, THIEVING = 17, SLAYER = 18, FARMING = 19, RUNECRAFTING = 20, HUNTER = 21, CONSTRUCTION = 22, SUMMONING = 23;
+
+	/**
+	 * Number of skills in game
+	 */
+	public static final int NUM_SKILLS = 24;
 
 	/**
 	 * Represents the entity instance.
@@ -255,10 +259,11 @@ public final class Skills {
 	 * @return The experience mod.
 	 */
 	private double getExperienceMod(int slot, double experience, boolean playerMod, boolean multiplyer) {
+		//This function returns 1.0;
 		if (!(entity instanceof Player)) {
 			return 1.0;
 		}
-		double mod = multiplyer ? (GlobalEvent.XP_FEVER.isActive() ? EXPERIENCE_MULTIPLIER * 2 : EXPERIENCE_MULTIPLIER) : 1;
+		double mod = multiplyer ? (EXPERIENCE_MULTIPLIER) : 1;
 		Player p = (Player) entity;
 		if (p.getIronmanManager().getMode() == IronmanMode.ULTIMATE) {
 			mod /= 4;
@@ -294,7 +299,8 @@ public final class Skills {
 		if (mod > MAX_EXPERIENCE_MOD ) {
 			return MAX_EXPERIENCE_MOD;
 		}
-		return mod;
+		return 1.0;
+		//return mod;
 	}
 
 /**
@@ -859,7 +865,7 @@ public int getCombatMilestone() {
 
 /**
  * Sets the combatMilestones value.
- * @param combatMilestones The combatMilestones to set.
+ * @param combatMilestone The combatMilestones to set.
  */
 public void setCombatMilestone(int combatMilestone) {
 	this.combatMilestone = combatMilestone;

@@ -4,7 +4,6 @@ import org.crandor.game.content.eco.ge.GEOfferDispatch;
 import org.crandor.game.content.holiday.HolidayEvent;
 import org.crandor.game.content.skill.member.farming.FarmingPulse;
 import org.crandor.game.content.skill.member.hunter.ImpetuousImpulses;
-import org.crandor.game.events.GlobalEventManager;
 import org.crandor.game.system.SystemLogger;
 import org.crandor.game.world.map.zone.ZoneBuilder;
 
@@ -41,7 +40,6 @@ public final class CallbackHub {
 		calls.add(new GEOfferDispatch());
 		calls.add(new FarmingPulse());
 		calls.add(new ImpetuousImpulses());
-		calls.add(GlobalEventManager.get());
 		for (CallBack call : calls) {
 			if (!call.call()) {
 				SystemLogger.error("A callback was stopped, callback=" + call.getClass().getSimpleName() + ".");

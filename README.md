@@ -35,7 +35,7 @@ Since this portion of the guide is operating-system specific, you will either ne
 - Import `Server/server.sql` and `Server/global.sql` into their respective databases
   - _Refer [here](https://www.thecodedeveloper.com/import-large-sql-files-xampp/) for help importing the `.sql` files_
 
-# Linux Command Line
+### Linux Command Line
 - Instructions for various Linux distros can be found [here](https://github.com/dginovker/RS-2009/tree/master/CompiledServer/Guides)
 
 
@@ -62,3 +62,6 @@ Errors could not find library:
     - `09HDscape-client/lib` directory
     - `09HDscape-client/clientlibs.jar` file
     - `09HDscape-management-server/lib` director 
+
+Errors regarding java.nio.BufferUnderflowException in server:
+- Reclone the repository. This happened to me (Red Bracket) once, could never reproduce.

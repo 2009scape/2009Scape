@@ -2,8 +2,6 @@ package plugin.command;
 
 import org.crandor.ServerConstants;
 import org.crandor.game.component.Component;
-import org.crandor.game.events.GlobalEvent;
-import org.crandor.game.events.GlobalEventManager;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.info.Rights;
 import org.crandor.game.node.entity.player.link.IronmanMode;
@@ -188,11 +186,6 @@ public final class PlayerCommandPlugin extends CommandPlugin {
 				sendDonationInfo(player);
 				return true;
 
-			case "events":
-				GlobalEventManager.get().alert(player);
-				sendEvents(player);
-				return true;
-
 			case "reply":
 				if(player.getInterfaceManager().isOpened()){
 					player.sendMessage("<col=e74c3c>Please finish what you're doing first.");
@@ -286,33 +279,6 @@ public final class PlayerCommandPlugin extends CommandPlugin {
 		for (Quest q : QuestRepository.getQuests().values()) {
 			// Add a space to beginning and end of string for the strikethrough
 			player.getPacketDispatch().sendString("<col=ecf0f1>" + (q.isCompleted(player) ? "<str> " : "") + q.getName() + " ", 275, lineId++);
-		}
-	}
-
-	/**
-	 * Sends events list.
-	 * @param player the player.
-	 */
-	private void sendEvents(Player player) {
-		if (player.getInterfaceManager().isOpened()) {
-			player.sendMessage("Finish what you're currently doing.");
-			return;
-		}
-		player.getInterfaceManager().open(new Component(275));
-		//CLear old data
-		for (int i = 0; i < 311; i++) {
-			player.getPacketDispatch().sendString("", 275, i);
-		}
-		// Title
-		player.getPacketDispatch().sendString("<col=ecf0f1>" + GameWorld.getName() + " Events</col>", 275, 2);
-
-		// Content
-		int lineId = 11;
-		for(GlobalEvent event : GlobalEvent.values()){
-			player.getPacketDispatch().sendString("<col=ecf0f1>" + event.getName(), 275, lineId++);
-			if (event.isActive())
-				player.getPacketDispatch().sendString("<col=8e44ad>(active)", 275, lineId++);
-			player.getPacketDispatch().sendString("<col=2c3e50>" +  event.getDescription(), 275, lineId++);
 		}
 	}
 

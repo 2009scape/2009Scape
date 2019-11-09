@@ -64,7 +64,7 @@ public final class ScriptCompiler {
 		try {
 			GameWorld.prompt(false);
 			ScriptContext context = parseRaw(new File("./scripts/dialogue/test.asc"));
-			AIPlayer player = AIPBuilder.create("roar", null);
+			AIPlayer player = AIPBuilder.create(null);
 			context.execute(player);
 			ScriptManager.run(context, player);
 		} catch (Throwable e) {

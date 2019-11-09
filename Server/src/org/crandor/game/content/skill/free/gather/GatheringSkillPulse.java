@@ -11,7 +11,6 @@ import org.crandor.game.content.global.tutorial.TutorialStage;
 import org.crandor.game.content.skill.SkillPulse;
 import org.crandor.game.content.skill.Skills;
 import org.crandor.game.content.skill.member.farming.wrapper.PatchWrapper;
-import org.crandor.game.events.GlobalEvent;
 import org.crandor.game.node.entity.impl.Projectile;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.info.portal.Perks;
@@ -343,10 +342,6 @@ public final class GatheringSkillPulse extends SkillPulse<GameObject> {
 	 */
 	private int calculateRewardAmount(int reward) {
 		int amount = 1;
-		// Event doubles resources
-		if (GlobalEvent.HARVESTING_DOUBLES.isActive()) {
-			amount *= 2;
-		}
 		
 		if (isMining && !isMiningEssence) {
 			// Not sure what this bonus is for

@@ -32,8 +32,8 @@ public class PestControlTestBot extends PvMBots {
 		GET_TO_PC
 	}
 
-	public PestControlTestBot(String name, Location l) {
-		super(name, legitimizeLocation(l));
+	public PestControlTestBot(Location l) {
+		super("pestcontrolcopies.txt", legitimizeLocation(l));
 		randomType = new Random().nextInt(100);
 	}
 
@@ -110,17 +110,6 @@ public class PestControlTestBot extends PvMBots {
 			}
 		}
 
-		/*
-		if (randomType < 20)
-		{
-			this.getUpdateMasks().register(new ChatFlag(new ChatMessage(this, "Meee", 0, 0)));
-		}
-		Node test = getClosestNodeWithEntry(5, GATE_ENTRIES);
-		if (!this.inCombat() && test != null) {
-			InteractionPacket.handleObjectInteraction(this, 0, test.getLocation(), test.getId());
-		}
-
-		*/
 	}
 
 	private int insideBoatWalks = 3;

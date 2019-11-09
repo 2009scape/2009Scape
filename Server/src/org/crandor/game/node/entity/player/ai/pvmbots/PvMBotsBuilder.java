@@ -11,39 +11,38 @@ import org.crandor.game.node.entity.player.link.SpellBookManager;
 import org.crandor.game.node.entity.player.link.appearance.Gender;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.map.Location;
-import org.crandor.game.world.repository.Repository;
 import org.crandor.tools.RandomFunction;
 
 public final class PvMBotsBuilder{
 	
-	public static PestControlTestBot createPestControlTestBot(String name, Location l)
+	public static PestControlTestBot createPestControlTestBot(Location l)
 	{
-		return new PestControlTestBot(name, l);
+		return new PestControlTestBot(l);
 	}
 	
-	public static PvMBots create(String name, Location l) 
+	public static PvMBots create(Location l)
 	{
-		return new PvMBots(name, l);
+		return new PvMBots(l);
 	}
 	
-	public static LowestBot createLowest(String name, Location l)
+	public static LowestBot createLowest(Location l)
 	{
-		return new LowestBot(name, l);
+		return new LowestBot(l);
 	}
 	
-	public static NoobBot createNoob(String name, Location l)
+	public static NoobBot createNoob(Location l)
 	{
-		return new NoobBot(name, l);
+		return new NoobBot(l);
 	}
 	
-	public static DragonKiller createDragonKiller(String name, Location l) 
+	public static DragonKiller createDragonKiller(Location l)
 	{
-		return new DragonKiller(name, l);
+		return new DragonKiller(l);
 	}
 	
-	public static GiantMoleBot createGiantMoleBot(String name, Location l)
+	public static GiantMoleBot createGiantMoleBot(Location l)
 	{
-		return new GiantMoleBot(name, l);
+		return new GiantMoleBot(l);
 	}
 	
 	public static void generateGiantMoleBot(PvMBots p)
@@ -64,11 +63,11 @@ public final class PvMBotsBuilder{
 		p.getSkills().updateCombatLevel();
 		p.getAppearance().sync();
 		
-		p.getEquipment().replace(new Item(4720) ,EquipmentContainer.SLOT_CHEST);
-		p.getEquipment().replace(new Item(4722) ,EquipmentContainer.SLOT_LEGS);
-		p.getEquipment().replace(new Item(4716) ,EquipmentContainer.SLOT_HAT);
-		p.getEquipment().replace(new Item(4718) ,EquipmentContainer.SLOT_WEAPON);
-		p.getEquipment().replace(new Item(-1) ,EquipmentContainer.SLOT_SHIELD);
+		p.getEquipment().replace(new Item(4720), EquipmentContainer.SLOT_CHEST);
+		p.getEquipment().replace(new Item(4722), EquipmentContainer.SLOT_LEGS);
+		p.getEquipment().replace(new Item(4716), EquipmentContainer.SLOT_HAT);
+		p.getEquipment().replace(new Item(4718), EquipmentContainer.SLOT_WEAPON);
+		p.getEquipment().replace(new Item(-1), EquipmentContainer.SLOT_SHIELD);
 		
 		p.getInventory().add(new Item(952));
 		p.getInventory().add(new Item(33));
@@ -77,7 +76,7 @@ public final class PvMBotsBuilder{
 	
 	public static void generateMinLevels(PvMBots p) 
 	{
-		//Slayer so they can attack alls monsters
+		//Slayer so they can attack all monsters
 		p.getSkills().setLevel(Skills.SLAYER, 99);
 		p.getSkills().setStaticLevel(Skills.SLAYER, 99);
 		int combatType = RandomFunction.getRandom(2);
@@ -145,31 +144,7 @@ public final class PvMBotsBuilder{
 		}
 	}
 	
-	public static void createPestControlBot(PestControlTestBot p)
-	{
-		p.getSkills().setLevel(Skills.SLAYER, 99);
-		p.getSkills().setStaticLevel(Skills.SLAYER, 99);
-		int combatType = RandomFunction.getRandom(2);
-		buildMaxMeleeStats(p);
-		buildMaxMeleeEquipment(p);
-		switch(combatType) 
-		{
-			case 0:
-			{
-				break;
-			}
-			case 1:
-			{
-				break;
-			}
-			default:
-			{
-				break;
-			}
-		}
-	}
-	
-	private static void buildMaxMeleeStats(AIPlayer p) 
+	private static void buildMaxMeleeStats(AIPlayer p)
 	{
 		p.getSkills().setLevel(Skills.ATTACK, 99);
 		p.getSkills().setStaticLevel(Skills.ATTACK, 99);
@@ -467,59 +442,41 @@ public final class PvMBotsBuilder{
 	
 	public static void spawn(Location loc)
 	{
-		final PvMBots bot = PvMBotsBuilder.create("bottest", loc);
+		final PvMBots bot = PvMBotsBuilder.create(loc);
 		bot.getAppearance().setGender(RandomFunction.random(3) == 1 ? Gender.FEMALE : Gender.MALE);
-		Repository.getPlayers().add(bot);
-		bot.init();
-	}
-	
-	public static void spawnPestControlTestBot(Location loc)
-	{
-		final PestControlTestBot bot = PvMBotsBuilder.createPestControlTestBot("PestBot", loc);
-		bot.getAppearance().setGender(RandomFunction.random(3) == 1 ? Gender.FEMALE : Gender.MALE);
-		Repository.getPlayers().add(bot);
-		bot.init();
-		
-		createPestControlBot(bot);
 	}
 	
 	public static void spawnLowest(Location loc)
 	{
-		final LowestBot bot = PvMBotsBuilder.createLowest("bottest", loc);
-		bot.getAppearance().setGender(RandomFunction.random(3) == 1 ? Gender.FEMALE : Gender.MALE);
-		Repository.getPlayers().add(bot);
-		bot.init();
-		
+		final LowestBot bot = PvMBotsBuilder.createLowest(loc);
+
 		generateMinLevels(bot);
 	}
 	
 	public static void spawnNoob(Location loc)
 	{
-		final NoobBot  bot = PvMBotsBuilder.createNoob("bottest", loc);
-		bot.getAppearance().setGender(RandomFunction.random(3) == 1 ? Gender.FEMALE : Gender.MALE);
-		Repository.getPlayers().add(bot);
-		bot.init();
-		
+		final NoobBot  bot = PvMBotsBuilder.createNoob(loc);
+
 		createNoob(bot);
 	}
 	
 	public static void spawnDragonKiller(Location loc)
 	{
-		final DragonKiller bot = PvMBotsBuilder.createDragonKiller("bottest", loc);
+		final DragonKiller bot = PvMBotsBuilder.createDragonKiller(loc);
 		bot.getAppearance().setGender(RandomFunction.random(3) == 1 ? Gender.FEMALE : Gender.MALE);
-		Repository.getPlayers().add(bot);
-		bot.init();
+
+
 		
 		createDragonKiller(bot);
 	}
 	
 	public static void spawnGiantMoleBot(Location loc)
 	{
-		final GiantMoleBot bot = PvMBotsBuilder.createGiantMoleBot("bottest", new Location(0, 0));
+		final GiantMoleBot bot = PvMBotsBuilder.createGiantMoleBot(new Location(0, 0));
 		bot.teleport(loc);
 		bot.getAppearance().setGender(RandomFunction.random(3) == 1 ? Gender.FEMALE : Gender.MALE);
-		Repository.getPlayers().add(bot);
-		bot.init();
+
+
 		
 		generateGiantMoleBot(bot);
 	}

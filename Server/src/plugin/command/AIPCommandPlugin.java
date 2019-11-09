@@ -13,6 +13,7 @@ import org.crandor.game.node.entity.player.ai.pvmbots.PvMBotsBuilder;
 import org.crandor.game.node.entity.player.ai.pvp.PVPAIPActions;
 import org.crandor.game.node.entity.player.ai.pvp.PVPAIPBuilderUtils;
 import org.crandor.game.node.entity.player.ai.resource.ResourceAIPActions;
+import org.crandor.game.node.entity.player.ai.resource.ResourceAIPManager;
 import org.crandor.game.node.entity.player.ai.skillingbot.SkillingBotsBuilder;
 import org.crandor.game.node.entity.player.ai.wilderness.PvPBotsBuilder;
 import org.crandor.game.node.entity.player.link.appearance.Gender;
@@ -89,8 +90,8 @@ public final class AIPCommandPlugin extends CommandPlugin {
                 return true;
             case "aip":
                 name = args.length < 2 ? player.getName() : args[1];
-                AIPlayer p = AIPBuilder.copy(player, name, player.getLocation().transform(0, 1, 0));
-                Repository.getPlayers().add(p);
+                AIPlayer p = AIPBuilder.copy(player, player.getLocation().transform(0, 1, 0));
+
                 p.init();
 
                 Interaction.sendOption(player, 7, "Control");
@@ -109,7 +110,7 @@ public final class AIPCommandPlugin extends CommandPlugin {
                 // message
                 for (int i = 0; i < size; i++) {
                     final AIPlayer aip = AIPBuilder.copy(player, last.getLocation().transform(0, 1, 0));
-                    Repository.getPlayers().add(aip);
+
                     aip.init();
                     if (legion.isEmpty()) {
                         aip.setAttribute("aip_legion", legion);
@@ -144,11 +145,10 @@ public final class AIPCommandPlugin extends CommandPlugin {
                     player.setAttribute("aip_legion", PVPAIPActions.pvp_players = new ArrayList<>());
                 }
                 for (int i = 0; i < size; i++) {
-                    String aipName = PVPAIPBuilderUtils.names[i];
-                    final AIPlayer aip = AIPBuilder.create(aipName, generateLocation(player));
+                    final AIPlayer aip = AIPBuilder.create( generateLocation(player));
                     aip.setControler(player);
                     aip.getAppearance().setGender(RandomFunction.random(3) == 1 ? Gender.FEMALE : Gender.MALE);
-                    Repository.getPlayers().add(aip);
+
                     aip.init();
                     PVPAIPBuilderUtils.generateClass(aip);
 
@@ -167,11 +167,10 @@ public final class AIPCommandPlugin extends CommandPlugin {
                     player.setAttribute("aip_legion", ResourceAIPActions.resource_players = new ArrayList<>());
                 }
                 for (int i = 0; i < size; i++) {
-                    String aipName = PVPAIPBuilderUtils.names[i];
-                    final AIPlayer aip = AIPBuilder.create(aipName, generateLocation(player));
+                    final AIPlayer aip = AIPBuilder.create(generateLocation(player));
                     aip.setControler(player);
                     aip.getAppearance().setGender(RandomFunction.random(3) == 1 ? Gender.FEMALE : Gender.MALE);
-                    Repository.getPlayers().add(aip);
+
                     aip.init();
                     PVPAIPBuilderUtils.generateClass(aip);
 
@@ -179,7 +178,6 @@ public final class AIPCommandPlugin extends CommandPlugin {
                         aip.setAttribute("aip_legion", ResourceAIPActions.resource_players);
                     }
                     ResourceAIPActions.resource_players.add(aip);
-                    last = aip;
                 }
                 return true;
             case "syncresource":
@@ -214,19 +212,19 @@ public final class AIPCommandPlugin extends CommandPlugin {
             case "noobbot":
                 PvMBotsBuilder.spawnNoob(player.getLocation());
                 return true;
+            case "immerse":
+            case "immersiveworld":
             case "immersive":
-                PvMBotsBuilder.immersiveSpawns();
-                AIPBuilder.immersiveSpawns();
-                SkillingBotsBuilder.immersiveSpawnsSkillingBots();
+                ResourceAIPManager.get().immerseWorld();
                 return true;
             case "fishtest":
-                SkillingBotsBuilder.spawnTroutLumbridge("Bot", new Location(3241, 3242));
+                SkillingBotsBuilder.spawnTroutLumbridge(new Location(3241, 3242));
                 return true;
             case "varrockminebots":
-                SkillingBotsBuilder.spawnClayBotVarrock("clay", new Location(3181, 3368));
-                SkillingBotsBuilder.spawnSilverBotVarrock("silver", new Location(3181, 3368));
-                SkillingBotsBuilder.spawnIronBotVarrock("iron", new Location(3181, 3368));
-                SkillingBotsBuilder.spawnTinBotVarrock("tin", new Location(3181, 3368));
+                SkillingBotsBuilder.spawnClayBotVarrock(new Location(3181, 3368));
+                SkillingBotsBuilder.spawnSilverBotVarrock(new Location(3181, 3368));
+                SkillingBotsBuilder.spawnIronBotVarrock(new Location(3181, 3368));
+                SkillingBotsBuilder.spawnTinBotVarrock(new Location(3181, 3368));
                 return true;
             case "pvpbot":
                 PvPBotsBuilder.spawn(player.getLocation());
@@ -251,6 +249,7 @@ public final class AIPCommandPlugin extends CommandPlugin {
             case "pest-test":
             case "test-pest":
             case "pesttest":
+                player.sendMessage("Spawning some bots I think");
                 int arg2;
                 try {
                     arg2 = Integer.parseInt(args[1]);
@@ -258,7 +257,7 @@ public final class AIPCommandPlugin extends CommandPlugin {
                     arg2 = 123;
                 }
                 for (int pestBotsAmount = 0; pestBotsAmount < arg2; pestBotsAmount++) {
-                    PvMBotsBuilder.spawnPestControlTestBot(player.getLocation());
+                    PvMBotsBuilder.createPestControlTestBot(player.getLocation());
                 }
                 return true;
             case "bots":
@@ -282,10 +281,10 @@ public final class AIPCommandPlugin extends CommandPlugin {
 		    Start regular bots
 		 */
             case "manthiev":
-                new GeneralBotCreator("Bot", player.getLocation(), new ManThiever());
+                new GeneralBotCreator(player.getLocation(), new ManThiever());
                 break;
             case "fish":
-                new GeneralBotCreator("Fisher", Location.create(2805, 3435, 0), new LobsterCatcher());
+                new GeneralBotCreator(Location.create(2805, 3435, 0), new LobsterCatcher());
                 break;
 
         }

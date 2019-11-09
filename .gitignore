@@ -2,3 +2,4 @@ production/*
 .idea/*
 .idea/
 .idea/workspace.xml
+CompiledServer/

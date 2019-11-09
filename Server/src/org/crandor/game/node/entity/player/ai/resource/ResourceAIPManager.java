@@ -1,8 +1,12 @@
 package org.crandor.game.node.entity.player.ai.resource;
 
 import org.crandor.game.node.entity.player.Player;
+import org.crandor.game.node.entity.player.ai.AIPBuilder;
+import org.crandor.game.node.entity.player.ai.lumbridge.LumbridgeBotHandler;
+import org.crandor.game.node.entity.player.ai.pvmbots.PvMBotsBuilder;
 import org.crandor.game.node.entity.player.ai.resource.task.ResourceTask;
 import org.crandor.game.node.entity.player.ai.resource.task.ResourceTasks;
+import org.crandor.game.node.entity.player.ai.skillingbot.SkillingBotsBuilder;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
 
@@ -30,6 +34,14 @@ public class ResourceAIPManager {
     public ResourceAIPManager init() {
         getTasks().put(ResourceTasks.WOODCUTTING.getResourceTask(), 0L);
         return this;
+    }
+
+    public void immerseWorld() { //There's probably a better place for this (it adds bot at bootup)
+        PvMBotsBuilder.immersiveSpawns();
+        LumbridgeBotHandler.immersiveLumbridge();
+        //AIPBuilder.immersiveSpawns();
+        //SkillingBotsBuilder.immersiveSpawnsSkillingBots();
+        System.out.println("Loaded immerseWorld");
     }
 
     public ResourceAIPManager runTask(Player player, String taskName) {
@@ -86,7 +98,7 @@ public class ResourceAIPManager {
                 continue;
             StringBuilder query = new StringBuilder();
             query.append("UPDATE `members` SET `taskName`='" + entry.getKey().getTaskName() + "',`taskTime`='" + entry.getValue() + "' WHERE `username`='" + player.getUsername() + "'");
-            System.out.println(query.toString());
+            System.out.println("ResourceAIPManager: " + query.toString());
             GameWorld.getDatabaseManager().update("global", query.toString());
 
         }

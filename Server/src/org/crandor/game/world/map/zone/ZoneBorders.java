@@ -221,9 +221,8 @@ public final class ZoneBorders {
 	}
 
 	public Location getRandomLoc() {
-	    int x = northEastX - southWestX == 0 ? southWestX : new Random().nextInt(northEastX - southWestX) + southWestX;
-	    int y = northEastY - southWestY == 0 ? southWestY : new Random().nextInt(northEastY - southWestY) + southWestY;
-	    //System.out.println("Generated x,y " + x + ", " + y);
+	    int x = northEastX - southWestX == 0 ? southWestX : new Random().nextInt(northEastX - southWestX + 1) + southWestX;
+	    int y = northEastY - southWestY == 0 ? southWestY : new Random().nextInt(northEastY - southWestY + 1) + southWestY;
 		return new Location(x, y);
 	}
 

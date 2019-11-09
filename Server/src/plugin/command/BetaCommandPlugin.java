@@ -82,6 +82,7 @@ public final class BetaCommandPlugin extends CommandPlugin {
 
             case "pos":
             case "position":
+            case "coords":
             case "loc":
                 final Location l = player.getLocation();
                 final Region r = player.getViewport().getRegion();

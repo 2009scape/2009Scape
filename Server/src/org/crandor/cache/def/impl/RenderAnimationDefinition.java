@@ -302,7 +302,6 @@ public class RenderAnimationDefinition {
 						for (int i = 0; i < length; i++) {
 							System.out.print(Array.get(object, i) + (i < (length - 1) ? ", " : "]"));
 						}
-						System.out.println();
 						continue;
 					}
 				}
@@ -319,7 +318,6 @@ public class RenderAnimationDefinition {
 						for (int i = 0; i < length; i++) {
 							System.out.print(Array.get(object, i) + (i < (length - 1) ? ", " : "]"));
 						}
-						System.out.println();
 						continue;
 					}
 				}

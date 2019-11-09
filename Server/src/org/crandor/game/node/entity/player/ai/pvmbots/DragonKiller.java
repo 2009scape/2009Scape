@@ -13,8 +13,8 @@ public class DragonKiller extends PvMBots{
 
 	private int tick = 0;
 	
-	public DragonKiller(String name, Location l) {
-		super(name, l);
+	public DragonKiller(Location l) {
+		super(l);
 		// TODO Auto-generated constructor stub
 	}
 	

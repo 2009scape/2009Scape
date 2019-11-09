@@ -21,16 +21,16 @@ import org.crandor.tools.RandomFunction;
 
 public class WildernessBot extends AIPlayer {
 
-	public WildernessBot(String name, Location l) {
-		super(name, l);
+	public WildernessBot(Location l) {
+		super(l);
 		this.specWeapon = 1215;
 		this.normalWeapon = 4151;
 		this.getInventory().add(new Item(specWeapon));
 		// TODO Auto-generated constructor stub
 	}
 	
-	public WildernessBot(String name, Location l, int normalWeaponId, int specWeaponId) {
-		super(name, l);
+	public WildernessBot(Location l, int normalWeaponId, int specWeaponId) {
+		super(l);
 		this.specWeapon = specWeaponId;
 		this.normalWeapon = normalWeaponId;
 		this.getInventory().add(new Item(specWeaponId));
@@ -153,7 +153,7 @@ public class WildernessBot extends AIPlayer {
 	
 	private void checkBarrowsSwitch()
 	{
-		System.out.println(this.getSkills().getLifepoints());
+		System.out.println("WildernessBot: " + this.getSkills().getLifepoints());
 		Entity target = getTarget();
 		if (target == null)
 			return;

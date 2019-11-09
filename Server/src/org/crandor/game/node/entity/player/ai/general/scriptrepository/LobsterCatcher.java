@@ -52,7 +52,7 @@ public class LobsterCatcher extends Script {
         Pathfinder.find(bot, Location.create(2837, 3435, 0)).walk(bot);
 
         if (spot != null) {
-            System.out.println(spot.getLocation().toString());
+            System.out.println("LobsterCatcher: " + spot.getLocation().toString());
             spot.getInteraction().handle(bot, spot.getInteraction().get(0));
         }
 
@@ -61,6 +61,6 @@ public class LobsterCatcher extends Script {
             bank.getInteraction().handle(bot, bank.getInteraction().get(2));
         }
                  
-        System.out.println(tick);
+        System.out.println("LobsterCatcher: " + tick);
     }
 }

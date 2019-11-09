@@ -26,7 +26,6 @@ public class BasicStarter implements Plugin<Player> {
 
     @Override
     public Plugin<Player> newInstance(Player player) throws Throwable {
-        System.out.println(player.getDetails().getLastLogin());
         if (player.getDetails().getLastLogin() == 0) {
             for (int[] item : STARTER_ITEMS) {
                 player.getInventory().add(new Item(item[0], item[1]));

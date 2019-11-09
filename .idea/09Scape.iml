@@ -3,6 +3,8 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/09HDscape-management-server/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/09HDscape-server/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Server/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Management-Server/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Client/src" isTestSource="false" />
@@ -40,6 +42,15 @@
         <JAVADOC />
         <SOURCES />
         <jarDirectory url="file://$MODULE_DIR$/Client/lib" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/Client/lib/jogamp-all-platforms/jar/atomic/jogl.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="module-library">

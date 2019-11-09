@@ -8,7 +8,6 @@ import org.crandor.game.content.eco.EconomyManagement;
 import org.crandor.game.content.eco.ge.GrandExchangeDatabase;
 import org.crandor.game.content.global.Bones;
 import org.crandor.game.content.skill.Skills;
-import org.crandor.game.events.GlobalEvent;
 import org.crandor.game.node.entity.Entity;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
@@ -93,12 +92,6 @@ public final class NPCDropTables {
 		Player p = looter instanceof Player ? (Player) looter : null;
 		for (ChanceItem item : defaultTable) {
 			int amount = RandomFunction.random(item.getMinimumAmount(), item.getMaximumAmount() + 1);
-			if (GlobalEvent.TRY_YOUR_LUCK.isActive())
-				amount *= 1.4;
-			if (GlobalEvent.CRAZY_SEEDS.isActive() && ItemDefinition.forId(item.getId()).getName().toLowerCase().contains("seed"))
-				amount *= 2;
-			if (GlobalEvent.CHARMED.isActive() && ItemDefinition.forId(item.getId()).getName().toLowerCase().contains("charm"))
-				amount *= 2;
 			if (npc.getName().startsWith("Revenant") && item.getName().equalsIgnoreCase("coins")) {
 				break;
 			}
@@ -181,7 +174,7 @@ public final class NPCDropTables {
 		if (handleBoneCrusher(player, item)) {
 			return;
 		}
-		if (item.getId() == 995 && player.getBank().hasSpaceFor(item) && ( player.getGlobalData().isEnableCoinMachine() || GlobalEvent.GOLDEN_RETRIEVER.isActive() )) {
+		if (item.getId() == 995 && player.getBank().hasSpaceFor(item) && ( player.getGlobalData().isEnableCoinMachine() )) {
 			item = new Item(995, (int) (item.getAmount() + (item.getAmount() * 0.25)));
 			player.getBank().add(item);
 			player.sendMessage("<col=3498db> " + item.getAmount() + " coins were sent to your bank.");

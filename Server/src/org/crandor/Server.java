@@ -82,7 +82,7 @@ public final class Server {
 	}
 
 	/**
-	 * Sets the bastartTime.
+	 * Sets the bastartTime.ZZ
 	 * @param startTime the startTime to set.
 	 */
 	public static void setStartTime(long startTime) {

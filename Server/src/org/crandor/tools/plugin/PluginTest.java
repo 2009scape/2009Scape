@@ -20,7 +20,7 @@ public final class PluginTest {
 
 	public static void main(String[] args) throws Throwable {
 		GameWorld.prompt(false);
-		Player player = AIPBuilder.create("testharhar", Location.create(3222, 3217, 0));
+		Player player = AIPBuilder.create(Location.create(3222, 3217, 0));
 		player.init();
 		int objectCount = 0;
 		int npcCount = 0;

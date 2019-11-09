@@ -3,7 +3,6 @@ package org.crandor.game.system;
 import org.crandor.cache.ServerStore;
 import org.crandor.game.content.eco.ge.GEOfferDispatch;
 import org.crandor.game.content.eco.ge.GrandExchangeDatabase;
-import org.crandor.game.events.GlobalEventManager;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.info.login.PlayerParser;
 import org.crandor.game.world.repository.Repository;
@@ -43,7 +42,6 @@ public final class SystemTermination {
 	public void terminate() {
 		SystemLogger.log("[SystemTerminator] Initializing termination sequence - do not shutdown!");
 		try {
-			GlobalEventManager.get().save();
 			save(getDataDirectory());
 		} catch (Throwable e) {
 			e.printStackTrace();

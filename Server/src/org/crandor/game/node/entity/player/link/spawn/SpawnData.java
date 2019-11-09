@@ -106,7 +106,7 @@ public class SpawnData implements SavingModule {
 				case 7:
 					for (int i = 0; i < PKPackage.values().length; i++) {
 						purchased = PKPackage.values()[i].ordinal();
-						System.out.println(PKPackage.values()[i].ordinal());
+						System.out.println("SpawnData: " + PKPackage.values()[i].ordinal());
 					}
 					break;
 			}

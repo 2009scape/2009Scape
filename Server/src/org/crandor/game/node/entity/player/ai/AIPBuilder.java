@@ -21,11 +21,10 @@ public final class AIPBuilder {
 
 	/**
 	 * Creates a new artificial intelligent player.
-	 * @param name The name.
 	 * @return The AIPlayer object.
 	 */
-	public static AIPlayer create(String name, Location l) {
-		return new AIPlayer(name, l);
+	public static AIPlayer create(Location l) {
+		return new AIPlayer(l);
 	}
 
 	/**
@@ -35,7 +34,7 @@ public final class AIPBuilder {
 	 * items, etc.
 	 */
 	public static AIPlayer copy(Player player) {
-		return copy(player, player.getName(), player.getLocation());
+		return copy(player, player.getLocation());
 	}
 
 	/**
@@ -46,19 +45,7 @@ public final class AIPBuilder {
 	 * items, etc.
 	 */
 	public static AIPlayer copy(Player player, Location l) {
-		return copy(player, player.getName(), l);
-	}
-
-	/**
-	 * Makes an artificial intelligent copy of the player.
-	 * @param player The player.
-	 * @param name The AIP's name.
-	 * @param l The location the AIP should spawn on.
-	 * @return The artificial intelligent player with the same name, stats,
-	 * items, etc.
-	 */
-	public static AIPlayer copy(Player player, String name, Location l) {
-		AIPlayer p = new AIPlayer(name, l);
+		AIPlayer p = new AIPlayer(l);
 		p.getSkills().copy(player.getSkills());
 		p.getInventory().copy(player.getInventory());
 		p.getEquipment().copy(player.getEquipment());
@@ -70,10 +57,10 @@ public final class AIPBuilder {
 	
 	public static void RandomAfkPlayer(Location loc)
 	{
-		final AIPlayer bot = new AIPlayer("bottest", loc);
+		final AIPlayer bot = new AIPlayer(loc);
 		bot.getAppearance().setGender(RandomFunction.random(3) == 1 ? Gender.FEMALE : Gender.MALE);
-		Repository.getPlayers().add(bot);
-		bot.init();
+
+
 		
 		bot.getSkills().setStaticLevel(Skills.MAGIC, RandomFunction.getRandom(99));
 		bot.getSkills().setStaticLevel(Skills.DEFENCE, RandomFunction.getRandom(99));

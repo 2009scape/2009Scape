@@ -1,0 +1,78 @@
+/*
+
+This script is run with OSBot. Created by Red Bracket.
+
+namesandarmor.txt has the following format:
+name:cblevel:helmet:cape:neck:weapon:chest:shield:unknown:legs:unknown:gloves:boots:
+
+*/
+
+
+import org.osbot.rs07.api.def.ItemDefinition;
+import org.osbot.rs07.api.model.Player;
+import org.osbot.rs07.script.Script;
+import org.osbot.rs07.script.ScriptManifest;
+
+import java.io.*;
+import java.util.ArrayList;
+
+@ScriptManifest(name = "Fetch data10", author = "b4", version = 2, logo = "", info = "info")
+public class Reader extends Script {
+
+    private ArrayList<String> names = new ArrayList<>();
+
+    @Override
+    public int onLoop() {
+        Player p = getPlayers().closest(o -> !names.contains(o.getName()));
+        if (p != null)
+        {
+            names.add(p.getName());
+            String equipment = getOthersEquipment(p);
+            //Format:
+            //name:cblevel:helmet:cape:neck:weapon:chest:shield:unknown:legs:unknown:gloves:boots:
+            log2(p.getName()
+                    + ":" + p.getCombatLevel()
+                    + ":" + equipment);
+        }
+        return 50;
+    }
+
+    private void log2(String msg)
+    {
+        try {
+            log(msg);
+            FileReader fr = new FileReader(getDirectoryData() + "Data.txt");
+            BufferedReader br = new BufferedReader(fr);
+            for (String line; (line = br.readLine()) != null; ) {
+                if (line.split(":")[0].equals(msg.split(":")[0]))
+                {
+                    log("Not adding that one, since we already have it");
+                    return;
+                }
+            }
+
+
+            FileWriter fw = new FileWriter(getDirectoryData() + "Data.txt", true);
+            BufferedWriter bw = new BufferedWriter(fw);
+            PrintWriter out = new PrintWriter(bw);
+            out.println(msg);
+            out.close();
+        } catch (Exception e) {
+            log(e);
+        }
+    }
+
+    private String getOthersEquipment(Player p) {
+        String equipmentList = "";
+        if(p != null) {
+            int[] equipment = p.getDefinition().getAppearance();
+            for (int value : equipment) {
+                if (value - 512 > 0)
+                    equipmentList += ItemDefinition.forId(value - 512).getId() + ":";
+                else
+                    equipmentList += 0 + ":";
+            }
+        }
+        return equipmentList;
+    }
+}

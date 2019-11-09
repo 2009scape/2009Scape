@@ -6,7 +6,6 @@ import org.crandor.game.content.global.tutorial.TutorialStage;
 import org.crandor.game.content.skill.SkillPulse;
 import org.crandor.game.content.skill.Skills;
 import org.crandor.game.content.skill.member.summoning.familiar.Forager;
-import org.crandor.game.events.GlobalEvent;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.info.portal.Perks;
@@ -180,9 +179,7 @@ public final class FishingPulse extends SkillPulse<NPC> {
 					player.getSkillTasks().decreaseTask(player, SkillTasks.FTUNA1);
 					player.getSkillTasks().decreaseTask(player, SkillTasks.FTUNA2);
 				}
-				
-				if (GlobalEvent.PLENTY_OF_FISH.isActive())
-					player.getInventory().add(fish.getItem());
+
 				SkillingPets.checkPetDrop(player, SkillingPets.HERON);
 				final Item item = fish.getItem();
 			    player.getInventory().add(item);
@@ -292,7 +289,6 @@ public final class FishingPulse extends SkillPulse<NPC> {
 
 	/**
 	 * Method used to check if the catch was a success.
-	 * @param player the player.
 	 * @return <code>True</code> if so.
 	 */
 	private boolean success() {

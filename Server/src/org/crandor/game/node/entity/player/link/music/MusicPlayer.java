@@ -218,7 +218,7 @@ public final class MusicPlayer implements SavingModule {
 	public void unlock(int id, boolean play) {
 		MusicEntry entry = MusicEntry.forId(id);
 		if (entry == null) {
-			System.out.println("Could not find entry for id " + id + "!");
+			System.out.println("Could not find music entry for id " + id + "!");
 			return;
 		}
 		if (!unlocked.containsKey(entry.getIndex())) {

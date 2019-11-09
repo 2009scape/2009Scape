@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dbfe935-8085-4dde-9815-06f8b3761458" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Server/src/org/crandor/game/content/global/tutorial/CharacterDesign.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/org/crandor/game/content/global/tutorial/CharacterDesign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/org/crandor/game/content/global/tutorial/TutorialSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/org/crandor/game/content/global/tutorial/TutorialSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/org/crandor/game/content/global/tutorial/TutorialStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/org/crandor/game/content/global/tutorial/TutorialStage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/org/crandor/game/node/entity/player/info/login/LoginConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/org/crandor/game/node/entity/player/info/login/LoginConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/plugin/command/DeveloperCommandPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/plugin/command/DeveloperCommandPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/plugin/interaction/inter/SettingTabInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/plugin/interaction/inter/SettingTabInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/plugin/tutorial/BrotherBraceDialogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/plugin/tutorial/BrotherBraceDialogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/plugin/tutorial/CombatInstructorDialogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/plugin/tutorial/CombatInstructorDialogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/plugin/tutorial/FinancialAdvisorDialogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/plugin/tutorial/FinancialAdvisorDialogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/plugin/tutorial/MasterChefDialogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/plugin/tutorial/MasterChefDialogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/plugin/tutorial/MiningInstructorDialogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/plugin/tutorial/MiningInstructorDialogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/plugin/tutorial/QuestGuideDialogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/plugin/tutorial/QuestGuideDialogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/plugin/tutorial/RSGuideDialogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/plugin/tutorial/RSGuideDialogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/plugin/tutorial/SurvivalExpertDialogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/plugin/tutorial/SurvivalExpertDialogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/plugin/tutorial/TutorialBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/plugin/tutorial/TutorialBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/plugin/tutorial/TutorialCompletionDialogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/plugin/tutorial/TutorialCompletionDialogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/plugin/tutorial/TutorialIslandPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/plugin/tutorial/TutorialIslandPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,10 +104,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server/src/org/crandor/game/node/entity/player/info/login/LoginConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="1054">
               <caret line="129" column="7" lean-forward="true" selection-start-line="129" selection-start-column="7" selection-end-line="129" selection-end-column="7" />
               <folding>
                 <element signature="e#1848#1849#0" expanded="true" />
@@ -134,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/plugin/interaction/inter/SettingTabInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="42" column="15" selection-start-line="39" selection-start-column="8" selection-end-line="42" selection-end-column="15" />
+            <state relative-caret-position="175">
+              <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -189,7 +173,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="25" />
     <option name="width" value="1400" />
@@ -421,10 +405,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20895523" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20895523" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -433,7 +417,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969603" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49573562" visible="true" weight="0.32368702" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49573562" visible="true" weight="0.32368702" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3998441" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -750,22 +734,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/plugin/interaction/inter/SettingTabInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/org/crandor/game/node/entity/player/info/login/LoginConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="1054">
           <caret line="129" column="7" lean-forward="true" selection-start-line="129" selection-start-column="7" selection-end-line="129" selection-end-column="7" />
           <folding>
             <element signature="e#1848#1849#0" expanded="true" />
             <element signature="e#1899#1900#0" expanded="true" />
             <element signature="e#11232#11233#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/plugin/interaction/inter/SettingTabInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="42" column="15" selection-start-line="39" selection-start-column="8" selection-end-line="42" selection-end-column="15" />
         </state>
       </provider>
     </entry>

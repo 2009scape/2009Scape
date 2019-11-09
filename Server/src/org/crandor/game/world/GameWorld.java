@@ -4,8 +4,6 @@ import org.crandor.ServerConstants;
 import org.crandor.cache.Cache;
 import org.crandor.cache.ServerStore;
 import org.crandor.game.content.eco.ge.GrandExchangeDatabase;
-import org.crandor.game.events.GlobalEvent;
-import org.crandor.game.events.GlobalEventManager;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.ai.AIPBuilder;
@@ -99,26 +97,6 @@ public final class GameWorld {
         }
     }
 
-    /*
-     * getEvents().put("Alchemy hellenistic", 0L);
-            getEvents().put("Golden retriever", 0L);
-            getEvents().put("Harvesting doubles", 0L);
-            getEvents().put("Thieves jackpot", 0L);
-            getEvents().put("Golden essence", 0L);
-     */
-    public static GlobalEvent[] hourlyEvents = {
-    		GlobalEvent.ALCHEMY_HELLENISTIC,
-    		GlobalEvent.GOLDEN_RETRIEVER,
-    		GlobalEvent.THIEVES_JACKPOT,
-    		GlobalEvent.GOLDEN_ESSENCE,
-    		GlobalEvent.TRY_YOUR_LUCK,
-    		GlobalEvent.CRAZY_SEEDS,
-    		GlobalEvent.CHARMED,
-    		GlobalEvent.XP_FEVER,
-    		GlobalEvent.PLENTY_OF_FISH,
-    		GlobalEvent.HARVESTING_DOUBLES,
-		};
-
     /**
      * Pulses all current pulses.
      */
@@ -146,68 +124,7 @@ public final class GameWorld {
         }
         pulses.clear();
         ticks++;
-        eventTicks++;
-        cfTicks++;
-        switch(cfTicks) {
-            case 100:
-                if (checkDay()) {
-                	// Activate clone fest for 15 minutes
-                    GlobalEventManager.get().activate(GlobalEvent.CLONE_FEST, null, 1500);
-                    if (GlobalEvent.CLONE_FEST.isActive()) {
-                        int size = 20;
-                        if (PVPAIPActions.pvp_players == null) {
-                            PVPAIPActions.pvp_players = new ArrayList<>();
-                        }
-                        for (int i = 0; i < size; i++) {
-                            String aipName = PVPAIPBuilderUtils.names[i];
-                            final AIPlayer aip = AIPBuilder.create(aipName, generateLocation());
-                            aip.getAppearance().setGender(RandomFunction.random(3) == 1 ? Gender.FEMALE : Gender.MALE);
-                            Repository.getPlayers().add(aip);
-                            aip.init();
-                            PVPAIPBuilderUtils.generateClass(aip);
 
-                            if (PVPAIPActions.pvp_players.isEmpty()) {
-                                aip.setAttribute("aip_legion", PVPAIPActions.pvp_players);
-                            }
-                            PVPAIPActions.pvp_players.add(aip);
-                        }
-                        PVPAIPActions.syncBotThread(null);
-                    }
-                }
-                break;
-            case 2100:
-                cfTicks = 0;
-                break;
-        }
-        switch (eventTicks) {
-        	// 2 minute gap between events
-            case 200:
-                int randomEventId = new Random().nextInt(hourlyEvents.length);
-                GlobalEvent event = hourlyEvents[randomEventId];
-
-                GlobalEventManager.get().setLastEvent(event);
-                GlobalEventManager.get().setCurrentEvent(event);
-                GlobalEventManager.get().activateHourly(event);
-                break;
-            case 6200:
-                eventTicks = 0;
-                break;
-        }
-        for (Player p : Repository.getPlayers()) {
-            if (p.isPlaying()) {
-                switch (RandomFunction.getRandom(1000)) {
-                    case 1:
-                        p.sendMessage("<col=BA55D3>Tip: You can earn some extra gold by looting the stalls in Ardougne.");
-                        break;
-                    case 2:
-                        p.sendMessage("<col=BA55D3>Tip: You can begin slayer by speaking to Turael at home.");
-                        break;
-                    case 3:
-                        p.sendMessage("<col=BA55D3>Tip: Speak to Bill Reach to get to popular areas.");
-                        break;
-                }
-            }
-        }
         if (ticks % 50 == 0) {
             TaskExecutor.execute(() -> {
                 try {
@@ -268,12 +185,12 @@ public final class GameWorld {
         SQLManager.prePlugin();
         ScriptManager.load();
         PluginManager.init();
-        GlobalEventManager.get().init();
         ResourceAIPManager.get().init();
+        ResourceAIPManager.get().immerseWorld();
         SQLManager.postPlugin();
         parseObjects();
         CallbackHub.call();
-//        ResourceAIPManager.get().init();
+
         if (run) {
             SystemManager.flag(GameWorld.getSettings().isDevMode() ? SystemState.PRIVATE : SystemState.ACTIVE);
         }

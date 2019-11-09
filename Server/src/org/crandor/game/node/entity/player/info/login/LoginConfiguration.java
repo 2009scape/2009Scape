@@ -3,8 +3,10 @@ package org.crandor.game.node.entity.player.info.login;
 import org.crandor.game.component.CloseEvent;
 import org.crandor.game.component.Component;
 import org.crandor.game.content.global.tutorial.TutorialSession;
+
 import org.crandor.game.content.global.tutorial.TutorialStage;
 import org.crandor.game.events.GlobalEventManager;
+
 import org.crandor.game.interaction.Option;
 import org.crandor.game.interaction.OptionHandler;
 import org.crandor.game.node.Node;
@@ -161,6 +163,7 @@ public final class LoginConfiguration {
             player.getPacketDispatch().sendString("", 226, 0);
         }
         if (player.isArtificial()) {
+
             return;
         }
         player.getPacketDispatch().sendMessage("Welcome to " + GameWorld.getName() + ".");
@@ -174,6 +177,8 @@ public final class LoginConfiguration {
             Repository.sendNews("<col=BA55D3>As a new player, you are receiving boosted combat skill experience.</col>", "<col=BA55D3>In addition, you may speak to the Guide for game information.");
         }
         player.setAttribute("startTime", System.currentTimeMillis());
+			return;
+		}
 //		ResourceAIPManager.get().load(player);
 //		ResourceAIPManager.get().save(player);
     }
