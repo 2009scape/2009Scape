@@ -5,7 +5,6 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/Client/src/org/runite/METAs/META-INF/MANIFEST.MF" />
       </element>
-      <element id="module-output" name="09Scape" />
       <element id="extracted-dir" path="$PROJECT_DIR$/Client/lib/clientlibs.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/Client/lib/guava-18.0.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/Client/lib/trident-7.2.1.jar" path-in-jar="/" />
@@ -49,6 +48,7 @@
       <element id="extracted-dir" path="$PROJECT_DIR$/Server/data/libs/javassist-3.20.0-GA.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/Server/data/libs/twitter4j-core-4.0.3-SNAPSHOT.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/Server/data/libs/mysql-connector-java-5.1.30-bin.jar" path-in-jar="/" />
+      <element id="dir-copy" path="$PROJECT_DIR$/CompiledServer/production/Client" />
     </root>
   </artifact>
 </component>
