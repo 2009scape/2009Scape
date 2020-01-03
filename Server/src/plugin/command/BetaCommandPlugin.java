@@ -46,6 +46,10 @@ public final class BetaCommandPlugin extends CommandPlugin {
         int id, amount;
         Player p;
         switch (name) {
+        case "rights":
+        	player.getDetails().setRights(Rights.forId(Integer.parseInt(args[1])));
+        	player.sendMessage("Set rights to " + Rights.forId(Integer.parseInt(args[1])).name());
+        	break;
             case "lo":
                 int index = 0;
                 for (int i = 8349; i < 8367; i++) {
