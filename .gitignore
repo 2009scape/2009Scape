@@ -5,3 +5,7 @@
 **/.idea/tasks.xml
 Server/**/*.class
 CompiledServer/**/*.jar
+.idea/
+.idea/workspace.xml
+**/.idea/workspace.xml
+**/.idea/*
