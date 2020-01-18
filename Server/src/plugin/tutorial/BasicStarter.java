@@ -27,9 +27,13 @@ public class BasicStarter implements Plugin<Player> {
     @Override
     public Plugin<Player> newInstance(Player player) throws Throwable {
         if (player.getDetails().getLastLogin() == 0) {
-            for (int[] item : STARTER_ITEMS) {
+            //Redundant if the Tutorial Completion Dialogue is going to clear the bank, inventory and equipment after teleporting to Lumbridge.
+            //Causes a full inventory on tutorial island when the instructors are giving the player more items.
+            //The Starter pack array exists in the TutorialCompletionDialogue file... So could this file be deleted?
+
+            /*for (int[] item : STARTER_ITEMS) {
                 player.getInventory().add(new Item(item[0], item[1]));
-            }
+            }*/
         }
         return this;
     }
