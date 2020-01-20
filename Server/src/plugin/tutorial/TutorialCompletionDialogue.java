@@ -118,135 +118,137 @@ public class TutorialCompletionDialogue extends DialoguePlugin {
 		//Final Dialogue from the either the Magic Instructor or Skippy
 		if (npc.getId() == 2796 || TutorialSession.getExtension(player).getStage() >= 71) {
 			switch (stage) {
-			case -2: //Only used by the Magic Instructor
-				interpreter.sendOptions("Leave Tutorial Island?", "Yes.", "No.");
-				stage = -1;
-				break;
-			case -1:
-				switch (buttonId) {
-				case 1:
-					npc("One more thing: Would you like to", "be an Ironman account?");
-					stage = 501;
+				case -2: //Only used by the Magic Instructor
+					interpreter.sendOptions("Leave Tutorial Island?", "Yes.", "No.");
+					stage = -1;
 					break;
-				case 2:
-					end();
-					TutorialStage.load(player, 71, false);
-					break;
-				}
-				break;
-
-			//Dialogue used by Skippy to leave Tutorial Island
-			case 1:
-				interpreter.sendOptions("What would you like to say?", "<col=CC0000>Leave Tutorial Island.", "Can I decide later?", "I'll stay here for the Tutorial.");
-				stage = 2;
-				break;
-			case 2:
-				switch (buttonId) {
-				case 1:
-					npc("One more thing: Would you like to", "be an Ironman account?");
-					stage = 501;
-					if (!IRONMAN) {
-						stage = 1205;
+				case -1:
+					switch (buttonId) {
+						case 1:
+							npc("One more thing: Would you like to", "be an Ironman account?");
+							stage = 501;
+							break;
+						case 2:
+							end();
+							TutorialStage.load(player, 71, false);
+							break;
 					}
 					break;
-				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can I decide later?.");
-					stage = 39;
-					break;
-				case 3:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'll stay here for the Tutorial.");
-					stage = 40;
-					break;
-				}
-				break;
-			case 39:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Yes. Talk to me at any point during this tutorial", "if you change your mind.");
-				stage = 99;
-				break;
-			case 40:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Very well. Have fun, adventurer.");
-				stage = 99;
-				break;
 
-			//Continuation of Ironman Dialogues
-			case 501:
-				player.removeAttribute("ironMode");
-				player.removeAttribute("ironPermanent");
-				options("Yes, please.", "What is an Ironman account?", "No, thanks.");
-				stage++;
-				break;
-			case 502:
-				switch (buttonId) {
+				//Dialogue used by Skippy to leave Tutorial Island
 				case 1:
-					player("Yes, please.");
-					stage = 506;
+					interpreter.sendOptions("What would you like to say?", "<col=CC0000>Leave Tutorial Island.", "Can I decide later?", "I'll stay here for the Tutorial.");
+					stage = 2;
 					break;
 				case 2:
-					player("What is an Ironman account?");
-					stage = 530;
+					switch (buttonId) {
+						case 1:
+							npc("One more thing: Would you like to", "be an Ironman account?");
+							stage = 501;
+							if (!IRONMAN) {
+								stage = 1205;
+							}
+							break;
+						case 2:
+							interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can I decide later?.");
+							stage = 39;
+							break;
+						case 3:
+							interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'll stay here for the Tutorial.");
+							stage = 40;
+							break;
+					}
 					break;
-				case 3:
-					player("No, thanks.");
+				case 39:
+					interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Yes. Talk to me at any point during this tutorial", "if you change your mind.");
+					stage = 99;
+					break;
+				case 40:
+					interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Very well. Have fun, adventurer.");
+					stage = 99;
+					break;
 
+				//Continuation of Ironman Dialogues
+				case 501:
+					player.removeAttribute("ironMode");
+					player.removeAttribute("ironPermanent");
+					options("Yes, please.", "What is an Ironman account?", "No, thanks.");
+					stage++;
+					break;
+				case 502:
+					switch (buttonId) {
+						case 1:
+							player("Yes, please.");
+							stage = 506;
+							break;
+						case 2:
+							player("What is an Ironman account?");
+							stage = 530;
+							break;
+						case 3:
+							player("No, thanks.");
+							stage = 533;
+							break;
+					}
+					break;
+				case 506:
+					interpreter.sendOptions("Select a Mode", "Standard", "<col=CC0000>Ultimate</col>", "Go back.");
+					stage++;
+					break;
+				case 507:
+					switch (buttonId) {
+						case 1:
+						case 2:
+							npc("You have chosen the " + (buttonId == 1 ? "Standard" : "<col=CC0000>Ultimate</col>") + " mode.");
+							player.setAttribute("ironMode", IronmanMode.values()[buttonId]);
+							stage = 516;
+							break;
+						case 3:
+							player.removeAttribute("ironMode");
+							player.removeAttribute("ironPermanent");
+							options("Yes, please.", "What is an Ironman account?", "No, thanks.");
+							stage = 502;
+							break;
+					}
+					break;
+				case 516:
+					player.getIronmanManager().setMode(player.getAttribute("ironMode", IronmanMode.NONE));
+					MSPacketRepository.sendInfoUpdate(player);
+
+					//Split Dialogue depending on if the Player is talking to the Magic Instructor or Skippy.
+					if (npc.getId() == 946) {
+						npc("Congratulations, you have setup your Ironman account.", "Let's continue.");
+						stage = 1199;
+						break;
+					} else {
+						npc("Congratulations, you have setup your Ironman account.", "You will travel to the mainland in a moment.");
+						stage = 1204;
+						break;
+					}
+				case 530:
+					npc("An Ironman account is a style of playing where players", "are completely self-sufficient.");
+					stage++;
+					break;
+				case 531:
+					npc("A standard Ironman does not receive items or", "assistance from other players. They cannot trade, stake,", "receieve PK loot, scavenge dropped items, nor player", "certain minigames.");
+					stage++;
+					break;
+				case 532:
+					npc("In addition to the standard Ironman rules. An", "Ultimate Ironman cannot use banks, nor retain any", "items on death in dangerous areas.");
+					stage = 501;
+					break;
+				case 533:
+					// From saying no thanks to being an ironman.
 					//Split Dialogue depending on if the Player is talking to the Magic Instructor or Skippy.
 					if (npc.getId() == 946) {
 						npc("Very well.", "Let's continue.");
 						stage = 1199;
 						break;
-					}else {
+					} else {
 						npc("Very well.", "You will travel to the mainland in a moment.");
 						stage = 1204;
 						break;
 					}
-				}
-				break;
-			case 506:
-				interpreter.sendOptions("Select a Mode", "Standard", "<col=CC0000>Ultimate</col>", "Go back.");
-				stage++;
-				break;
-			case 507:
-				switch (buttonId) {
-				case 1:
-				case 2:
-					npc("You have chosen the " + (buttonId == 1 ? "Standard" : "<col=CC0000>Ultimate</col>") + " mode.");
-					player.setAttribute("ironMode", IronmanMode.values()[buttonId]);
-					stage = 516;
-					break;
-				case 3:
-					player.removeAttribute("ironMode");
-					player.removeAttribute("ironPermanent");
-					options("Yes, please.", "What is an Ironman account?", "No, thanks.");
-					stage = 502;
-					break;
-				}
-				break;
-			case 516:
-				player.getIronmanManager().setMode(player.getAttribute("ironMode", IronmanMode.NONE));
-				MSPacketRepository.sendInfoUpdate(player);
-
-				//Split Dialogue depending on if the Player is talking to the Magic Instructor or Skippy.
-				if (npc.getId() == 946) {
-					npc("Congratulations, you have setup your Ironman account.", "Let's continue.");
-					stage = 1199;
-					break;
-				}else {
-					npc("Congratulations, you have setup your Ironman account.", "You will travel to the mainland in a moment.");
-					stage = 1204;
-					break;
-				}
-			case 530:
-				npc("An Ironman account is a style of playing where players", "are completely self-sufficient.");
-				stage++;
-				break;
-			case 531:
-				npc("A standard Ironman does not receive items or", "assistance from other players. They cannot trade, stake,", "receieve PK loot, scavenge dropped items, nor player", "certain minigames.");
-				stage++;
-				break;
-			case 532:
-				npc("In addition to the standard Ironman rules. An", "Ultimate Ironman cannot use banks, nor retain any", "items on death in dangerous areas.");
-				stage = 501;
-				break;
-
 			//Final Regards from the Magic Instructor
 			case 1199:
 				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "When you get to the mainland you will find yourself in", "the town of Lumbridge. If you want some ideas on", "where to go next talk to my friend the Lumbridge", "Guide. You can't miss him; he's holding a big staff with");
