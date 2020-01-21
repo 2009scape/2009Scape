@@ -38,7 +38,7 @@ public final class ServerConstants {
 	/**
 	 * The setting that determines whether new accounts created will automatically join the Server's default clan chat.
 	 */
-	public static boolean  NEW_PLAYER_DEFAULT_CLAN = false;
+	public static boolean  NEW_PLAYER_DEFAULT_CLAN = true;
 
 	/**
 	 * The store path.
