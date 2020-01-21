@@ -13,7 +13,7 @@ public final class ServerConstants {
 	/**
 	 * The port to be used for communications.
 	 */
-	public static final String SERVER_NAME = "RS 2009";
+	public static final String SERVER_NAME = "2009Scape";
 
 	/**
 	 * The port to be used for communications.
@@ -34,6 +34,11 @@ public final class ServerConstants {
 	 * The address of the Management server.
 	 */
 	public static final String HOST_ADDRESS = "127.0.0.1";
+
+	/**
+	 * The setting that determines whether new accounts created will automatically join the Server's default clan chat.
+	 */
+	public static boolean  NEW_PLAYER_DEFAULT_CLAN = false;
 
 	/**
 	 * The store path.

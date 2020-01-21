@@ -9,6 +9,7 @@ import org.crandor.game.system.task.TaskExecutor;
 import org.crandor.net.Constants;
 import org.crandor.net.IoSession;
 import org.crandor.net.event.LoginReadEvent;
+import org.keldagrim.ServerConstants;
 
 import java.nio.ByteBuffer;
 import java.sql.*;
@@ -152,13 +153,21 @@ public class AccountRegister extends SQLEntryHandler<RegistryDetails> {
 
 	@Override
 	public void save() throws SQLException {
-		PreparedStatement statement = getWritingStatement(true, "password", "salt", "birthday", "countryCode", "joined_date");
+		PreparedStatement statement = getWritingStatement(true, "password", "salt", "birthday", "countryCode", "joined_date","currentClan");
 		statement.setString(1, entry.getUsername());
 		statement.setString(2, entry.getPassword());
 		statement.setString(3, entry.getPassword().substring(0, 29));
 		statement.setDate(4, entry.getBirth());
 		statement.setInt(5, entry.getCountry());
 		statement.setTimestamp(6, new Timestamp(System.currentTimeMillis()));
+
+		//If the management server's settings register new users with the server's clan chat
+		//I believe if there was no entry there would be errors during the registration, hence a null entry if the setting is off
+		if (ServerConstants.NEW_PLAYER_DEFAULT_CLAN == true){
+			statement.setString(7,"2009Scape");
+		}else{
+			statement.setString(7,null);
+		}
 		statement.executeUpdate();
 		SQLManager.close(statement.getConnection());
 	}

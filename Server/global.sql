@@ -132,7 +132,7 @@ CREATE TABLE `members` (
 --
 
 INSERT INTO `members` (`UID`, `email`, `username`, `password`, `salt`, `rights`, `email_activated`, `lastActive`, `donatorType`, `donationTotal`, `credits`, `icon`, `perks`, `ip`, `mac`, `serial`, `computerName`, `monthlyVotes`, `netWorth`, `forumUID`, `ironManMode`, `bank`, `inventory`, `equipment`, `ge`, `muteTime`, `banTime`, `profileImage`, `contacts`, `blocked`, `clanName`, `currentClan`, `clanReqs`, `disconnectTime`, `lastWorld`, `chatSettings`, `timePlayed`, `lastLogin`, `lastGameIp`, `countryCode`, `birthday`, `online`, `signature`, `joined_date`, `posts`) VALUES
-(0, '', 'rs_2009', '$2a$12$P0OU2A5S.lEYdkTq5kq3/u1UlfVkMYIS7WWbxsjjeyfxqTDbygpEe', '$2a$12$P0OU2A5S.lEYdkTq5kq3/u', 2, 0, '2019-11-06 00:29:03', 0, 0.00, 0, 0, '', '127.0.0.1', NULL, NULL, 'SERVER', 0, 0, -1, 'STANDARD', NULL, NULL, NULL, NULL, -1, -1, '', '', '', 'Rs 2009', 'rs_2009', '0,0,8,9', 1572999889084, 1, '0,0,0', NULL, 1572999890885, '127.0.0.1', 0, NULL, 0, NULL, NULL, 0);
+(0, '', '2009Scape', '$2a$12$P0OU2A5S.lEYdkTq5kq3/u1UlfVkMYIS7WWbxsjjeyfxqTDbygpEe', '$2a$12$P0OU2A5S.lEYdkTq5kq3/u', 2, 0, '2019-11-06 00:29:03', 0, 0.00, 0, 0, '', '127.0.0.1', NULL, NULL, 'SERVER', 0, 0, -1, 'STANDARD', NULL, NULL, NULL, NULL, -1, -1, '', '', '', '2009Scape', '2009Scape', '0,0,8,9', 1572999889084, 1, '0,0,0', NULL, 1572999890885, '127.0.0.1', 0, NULL, 0, NULL, NULL, 0);
 
 -- --------------------------------------------------------
 

@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30ea45b9-ec6c-429a-b4dc-a876070cf30e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RS-2009.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/09Scape_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="30ea45b9-ec6c-429a-b4dc-a876070cf30e" name="Default Changelist" comment="New Accounts will now automatically join the 2009Scape clan chat&#10;Renamed the Server's account to '2009Scape' within the members table of the global.sql database&#10;The automatic clan chat join can be toggled on or off on the Management Server's ServerConstants.java file&#10;Added some text in the TutorialCompletionDialogue.java file to simulate joining the clan once the player has reached the mainland.&#10;Added some comments to properly denote what is happening.&#10;Added spawns for Melee Dummy and Magic Dummy in the Lumbridge Combat Hall in the server.sql database.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/crandor/net/registry/AccountRegister$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/crandor/net/registry/AccountRegister$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/crandor/net/registry/AccountRegister$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/crandor/net/registry/AccountRegister$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/crandor/net/registry/AccountRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/crandor/net/registry/AccountRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/keldagrim/Management$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/keldagrim/Management$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/keldagrim/Management$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/keldagrim/Management$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/keldagrim/Management$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/keldagrim/Management$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/keldagrim/Management$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/keldagrim/Management$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/keldagrim/Management$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/keldagrim/Management$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/keldagrim/Management$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/keldagrim/Management$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/keldagrim/Management$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/keldagrim/Management$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/keldagrim/Management$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/keldagrim/Management$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/keldagrim/ServerConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/keldagrim/ServerConstants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/keldagrim/net/packet/WorldPacketRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/RS-2009/org/keldagrim/net/packet/WorldPacketRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/RS-2009/plugin/interaction/inter/GameInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/RS-2009/plugin/interaction/inter/GameInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/RS-2009/plugin/tutorial/BasicStarter.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/RS-2009/plugin/tutorial/BasicStarter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/RS-2009/plugin/tutorial/TutorialCompletionDialogue.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/RS-2009/plugin/tutorial/TutorialCompletionDialogue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Management-Server/src/org/keldagrim/ServerConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/Management-Server/src/org/keldagrim/ServerConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/global.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Server/global.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/server.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Server/server.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/org/crandor/net/registry/AccountRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/org/crandor/net/registry/AccountRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/plugin/tutorial/TutorialCompletionDialogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/plugin/tutorial/TutorialCompletionDialogue.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,37 +33,6 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Management-Server/src/org/keldagrim/Management.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/org/crandor/Server.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Client/src/org/runite/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -54,99 +40,21 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>tutorial</find>
-      <find>login</find>
-      <find>starter</find>
-      <find>setlastlogin</find>
-      <find>HOME</find>
-      <find>home teleport</find>
-      <find>mystical foresig</find>
-    </findStrings>
-    <dirStrings>
-      <dir>C:\Users\Michael\Desktop\rsps_trash\rs2009\Server\src\plugin\interaction\item</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1SoCmFrlg0BRp0t2EAHW2CVwxLb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="RS-2009" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS-2009" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS-2009" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS-2009" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS-2009" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS-2009" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS-2009" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS-2009" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="runite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS-2009" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS-2009" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Management-Server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS-2009" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS-2009" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Management-Server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS-2009" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS-2009" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS-2009" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS-2009" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS-2009" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS-2009" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS-2009" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS-2009" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="crandor" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
@@ -163,18 +71,6 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.GameLaunch">
     <configuration name="GameLaunch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -232,6 +128,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -246,39 +154,6 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1036" extended-state="6" />
-    <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973376" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" weight="0.32969433" />
-      <window_info anchor="bottom" id="Messages" weight="0.32969433" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32969433" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -288,12 +163,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -315,28 +184,51 @@
       </map>
     </option>
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Management-Server/src/org/keldagrim/Management.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/org/crandor/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/org/runite/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="New Accounts will now automatically join the 2009Scape clan chat&#10;Renamed the Server's account to '2009Scape' within the members table of the global.sql database&#10;The automatic clan chat join can be toggled on or off on the Management Server's ServerConstants.java file&#10;Added some text in the TutorialCompletionDialogue.java file to simulate joining the clan once the player has reached the mainland.&#10;Added some comments to properly denote what is happening.&#10;Added spawns for Melee Dummy and Magic Dummy in the Lumbridge Combat Hall in the server.sql database." />
+    <option name="LAST_COMMIT_MESSAGE" value="New Accounts will now automatically join the 2009Scape clan chat&#10;Renamed the Server's account to '2009Scape' within the members table of the global.sql database&#10;The automatic clan chat join can be toggled on or off on the Management Server's ServerConstants.java file&#10;Added some text in the TutorialCompletionDialogue.java file to simulate joining the clan once the player has reached the mainland.&#10;Added some comments to properly denote what is happening.&#10;Added spawns for Melee Dummy and Magic Dummy in the Lumbridge Combat Hall in the server.sql database." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="287" y="0" key="CommitChangelistDialog2" timestamp="1579570487959">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="287" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1579570487959" />
+    <state width="1342" height="198" key="GridCell.Tab.0.bottom" timestamp="1579570400537">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="198" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579570400537" />
+    <state width="1342" height="198" key="GridCell.Tab.0.center" timestamp="1579570400537">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="198" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579570400537" />
+    <state width="1342" height="198" key="GridCell.Tab.0.left" timestamp="1579570400537">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="198" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579570400537" />
+    <state width="1342" height="198" key="GridCell.Tab.0.right" timestamp="1579570400537">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="198" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579570400537" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1579570029149">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1579570029149" />
+    <state x="470" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1579567566284">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="470" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1579567566284" />
+    <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579567802246">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1579567802246" />
+    <state x="425" y="189" key="run.anything.popup" timestamp="1579569948685">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1579569948685" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1579568599597">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1579568599597" />
   </component>
   <component name="masterDetails">
     <states>
