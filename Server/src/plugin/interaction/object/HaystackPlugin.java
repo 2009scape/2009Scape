@@ -56,7 +56,7 @@ public final class HaystackPlugin extends OptionHandler {
 		player.getPacketDispatch().sendMessage("You search the " + object.getName().toLowerCase() + "...");
 		if (rand == 1 && player.getInventory().freeSlots() > 0 || player.getInventory().containsItem(NEEDLE)) {
 			player.getInventory().add(NEEDLE);
-			player.getDialogueInterpreter().sendDialogues(player, FacialExpression.NORMAL, "Wow! A needle!", "Now what are the chances of finding that?");
+			player.getDialogueInterpreter().sendDialogues(player, FacialExpression.NO_EXPRESSION, "Wow! A needle!", "Now what are the chances of finding that?");
 			return true;
 		}
 		player.getPacketDispatch().sendMessage("You find nothing of interest.");

@@ -156,7 +156,7 @@ public final class KaramajaOptionPlugin extends OptionHandler {
 			}
 			break;
 		case "fish":
-			player.getDialogueInterpreter().sendDialogues(1171, FacialExpression.ANGRY, "Keep off my fishing spot, whippersnapper!");
+			player.getDialogueInterpreter().sendDialogues(1171, FacialExpression.FURIOUS, "Keep off my fishing spot, whippersnapper!");
 			break;
 		case "pay":
 			if (!player.getAttribute("capn_izzy", false)) {

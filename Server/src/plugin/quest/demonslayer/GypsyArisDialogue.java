@@ -601,7 +601,7 @@ public final class GypsyArisDialogue extends DialoguePlugin {
 				wally.init();
 				PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.POSITION, player.getLocation().getX() + 2, player.getLocation().getY() + 2, 260, 1, 10));
 				PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.ROTATION, player.getLocation().getX() + 190, player.getLocation().getY() + 14, 260, 1, 10));
-				interpreter.sendDialogues(wally, FacialExpression.ANGRY, "Die, foul demon!");
+				interpreter.sendDialogues(wally, FacialExpression.FURIOUS, "Die, foul demon!");
 				GameWorld.submit(new Pulse(5) {
 					@Override
 					public boolean pulse() {

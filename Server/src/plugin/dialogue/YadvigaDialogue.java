@@ -39,7 +39,7 @@ public final class YadvigaDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Get lost!");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Get lost!");
 		stage = 0;
 		return true;
 	}

@@ -50,33 +50,33 @@ public final class MiningtutorDialogue extends DialoguePlugin {
 		case 0:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can you teach me the basics of mining please?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you teach me the basics of mining please?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Are there are mining related quests?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Are there are mining related quests?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Goodbye.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Goodbye.");
 				stage = 30;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "If you want to know what ore's in a rock before you", "mine it, right-click the rock and select prospect from the", "menu, it will take a little time, but you'll find out what's", "in the rock before you mine.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "If you want to know what ore's in a rock before you", "mine it, right-click the rock and select prospect from the", "menu, it will take a little time, but you'll find out what's", "in the rock before you mine.");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You can also tell the ore you'll get from the colour of", "the rock.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You can also tell the ore you'll get from the colour of", "the rock.");
 			stage = 12;
 			break;
 		case 12:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "To mine, simply click on the rock to mine it, but make", "sue you have your pick with you.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "To mine, simply click on the rock to mine it, but make", "sue you have your pick with you.");
 			stage = 13;
 			break;
 		case 13:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "When you have a full inventory, take it to the bank,", "you can find it on the roof of the castle in Lumbridge.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "When you have a full inventory, take it to the bank,", "you can find it on the roof of the castle in Lumbridge.");
 			stage = 14;
 			break;
 		case 14:
@@ -84,7 +84,7 @@ public final class MiningtutorDialogue extends DialoguePlugin {
 			stage = 0;
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Oh yes, if you haven't already, speak to Doric who can", "be found around the anvils north of Falador. I'm sure", "he can help you out.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh yes, if you haven't already, speak to Doric who can", "be found around the anvils north of Falador. I'm sure", "he can help you out.");
 			stage = 21;
 			break;
 		case 21:

@@ -43,7 +43,7 @@ public final class ThessaliaDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		if (args.length == 2) {
-			interpreter.sendDialogues(548, FacialExpression.NORMAL, "Woah! Fabulous! You look absolutely great!");
+			interpreter.sendDialogues(548, FacialExpression.NO_EXPRESSION, "Woah! Fabulous! You look absolutely great!");
 			stage = 600;
 			return true;
 		} else if (args.length == 3) {
@@ -52,7 +52,7 @@ public final class ThessaliaDialogue extends DialoguePlugin {
 			return true;
 		}
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(548, FacialExpression.NORMAL, "Would you like to buy any fine clothes?");
+		interpreter.sendDialogues(548, FacialExpression.NO_EXPRESSION, "Would you like to buy any fine clothes?");
 		stage = 0;
 		return true;
 	}
@@ -71,17 +71,17 @@ public final class ThessaliaDialogue extends DialoguePlugin {
 
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What do you have?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What do you have?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, thank you.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, thank you.");
 				stage = 202;
 				break;
 			}
 			break;
 		case 202:
-			interpreter.sendDialogues(548, FacialExpression.NORMAL, "Well, please return if you change your mind.");
+			interpreter.sendDialogues(548, FacialExpression.NO_EXPRESSION, "Well, please return if you change your mind.");
 			stage = 203;
 			break;
 		case 203:
@@ -90,7 +90,7 @@ public final class ThessaliaDialogue extends DialoguePlugin {
 		case 2:
 			break;
 		case 10:
-			interpreter.sendDialogues(548, FacialExpression.NORMAL, "I have a number of fine pieces of clothing on sale or,", "if you prefer, I can offer you an exclusive", "total clothing makeover?");
+			interpreter.sendDialogues(548, FacialExpression.NO_EXPRESSION, "I have a number of fine pieces of clothing on sale or,", "if you prefer, I can offer you an exclusive", "total clothing makeover?");
 			stage = 11;
 			break;
 		case 11:
@@ -101,7 +101,7 @@ public final class ThessaliaDialogue extends DialoguePlugin {
 
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Tell me more about this makeover.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Tell me more about this makeover.");
 				stage = 50;
 				break;
 			case 2:
@@ -111,19 +111,19 @@ public final class ThessaliaDialogue extends DialoguePlugin {
 			}
 			break;
 		case 50:
-			interpreter.sendDialogues(548, FacialExpression.NORMAL, "Certainly!");
+			interpreter.sendDialogues(548, FacialExpression.NO_EXPRESSION, "Certainly!");
 			stage = 51;
 			break;
 		case 51:
-			interpreter.sendDialogues(548, FacialExpression.NORMAL, "Here at Thessalia's fine clothing boutique, we offer a", "unique service where we will totally revamp your outfit", "to your choosing, for... wait for it...");
+			interpreter.sendDialogues(548, FacialExpression.NO_EXPRESSION, "Here at Thessalia's fine clothing boutique, we offer a", "unique service where we will totally revamp your outfit", "to your choosing, for... wait for it...");
 			stage = 52;
 			break;
 		case 52:
-			interpreter.sendDialogues(548, FacialExpression.NORMAL, "A fee of only 500 gold coins! Tired of always wearing", "the same old outfit, day in, day out? This is the service", "for you!");
+			interpreter.sendDialogues(548, FacialExpression.NO_EXPRESSION, "A fee of only 500 gold coins! Tired of always wearing", "the same old outfit, day in, day out? This is the service", "for you!");
 			stage = 53;
 			break;
 		case 53:
-			interpreter.sendDialogues(548, FacialExpression.NORMAL, "So what do you say? Interested? We can change either", "your top, or your legwear for only 500 gold a item!");
+			interpreter.sendDialogues(548, FacialExpression.NO_EXPRESSION, "So what do you say? Interested? We can change either", "your top, or your legwear for only 500 gold a item!");
 			stage = 54;
 			break;
 		case 54:
@@ -133,19 +133,19 @@ public final class ThessaliaDialogue extends DialoguePlugin {
 		case 55:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'd like to change my top please.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'd like to change my top please.");
 				stage = 100;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'd like to change my legwear please.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'd like to change my legwear please.");
 				stage = 110;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'd just like to buy some clothes.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'd just like to buy some clothes.");
 				stage = 120;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, thank you.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, thank you.");
 				stage = 130;
 				break;
 			}
@@ -158,12 +158,12 @@ public final class ThessaliaDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 110:
-			interpreter.sendDialogues(548, FacialExpression.NORMAL, "Just select what style and colour you would like from", "this catalogue, and then give me the 500 gold when", "you've picked.");
+			interpreter.sendDialogues(548, FacialExpression.NO_EXPRESSION, "Just select what style and colour you would like from", "this catalogue, and then give me the 500 gold when", "you've picked.");
 			stage = 111;
 			break;
 		case 111:
 			if (!player.getInventory().contains(995, 500)) {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I don't have 500 gold on me...");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I don't have 500 gold on me...");
 				stage = 105;
 				break;
 			} else {
@@ -180,14 +180,14 @@ public final class ThessaliaDialogue extends DialoguePlugin {
 			}
 			break;
 		case 100:
-			interpreter.sendDialogues(548, FacialExpression.NORMAL, "Just select what style and colour you would like from", "this catalogue, and then give me the 500 gold when", "you've picked.");
+			interpreter.sendDialogues(548, FacialExpression.NO_EXPRESSION, "Just select what style and colour you would like from", "this catalogue, and then give me the 500 gold when", "you've picked.");
 			stage = 101;
 			break;
 		case 101:
 			// I don't have 500 gold on me...
 			// that's ok! Just come back when you do have it!
 			if (!player.getInventory().contains(995, 500)) {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I don't have 500 gold on me...");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I don't have 500 gold on me...");
 				stage = 105;
 				break;
 			} else {
@@ -204,7 +204,7 @@ public final class ThessaliaDialogue extends DialoguePlugin {
 			}
 			break;
 		case 105:
-			interpreter.sendDialogues(548, FacialExpression.NORMAL, "That's ok! Just come back when you do have it!");
+			interpreter.sendDialogues(548, FacialExpression.NO_EXPRESSION, "That's ok! Just come back when you do have it!");
 			stage = 106;
 			break;
 		case 106:

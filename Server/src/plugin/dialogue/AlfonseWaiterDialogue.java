@@ -39,7 +39,7 @@ public final class AlfonseWaiterDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Welcome to the Shrimps and Parrot.", "Would you like to order, sir?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Welcome to the Shrimps and Parrot.", "Would you like to order, sir?");
 		stage = 0;
 		return true;
 	}
@@ -54,15 +54,15 @@ public final class AlfonseWaiterDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes, please.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, please.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, thank you.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, thank you.");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Where do you get your Karambwan from?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Where do you get your Karambwan from?");
 				stage = 30;
 				break;
 			}
@@ -75,7 +75,7 @@ public final class AlfonseWaiterDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "We buy directly off Lubufu, a local fisherman. He", "seems to have a monopoly over Karambwan sale.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "We buy directly off Lubufu, a local fisherman. He", "seems to have a monopoly over Karambwan sale.");
 			stage = 31;
 			break;
 		case 31:

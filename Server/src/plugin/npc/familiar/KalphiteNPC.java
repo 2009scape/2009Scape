@@ -66,7 +66,7 @@ public class KalphiteNPC extends Metamorphosis {
 		@Override
 		public boolean open(Object... args) {
 			npc = (NPC) args[0];
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "What is it with your kind and potato cactus?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What is it with your kind and potato cactus?");
 			stage = 0;
 			return true;
 		}
@@ -79,7 +79,7 @@ public class KalphiteNPC extends Metamorphosis {
 				stage = 1;
 				break;
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yeah, please.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yeah, please.");
 				stage = 2;
 				break;
 			case 2:
@@ -87,7 +87,7 @@ public class KalphiteNPC extends Metamorphosis {
 				stage = 3;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Kalphites can cook?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Kalphites can cook?");
 				stage = 4;
 				break;
 			case 4:
@@ -95,7 +95,7 @@ public class KalphiteNPC extends Metamorphosis {
 				stage = 5;
 				break;
 			case 5:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Evidently not, that's how I got you!");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Evidently not, that's how I got you!");
 				stage = 6;
 				break;
 			case 6:

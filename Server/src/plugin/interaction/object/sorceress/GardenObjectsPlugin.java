@@ -1326,13 +1326,13 @@ public final class GardenObjectsPlugin extends OptionHandler {
 			dialogueId = (int) args[0];
 			switch (dialogueId) {
 			case 0:
-				interpreter.sendDialogues(player, FacialExpression.ANNOYED, "I should get an empty beer glass to", "hold the juice before I squeeze the fruit.");
+				interpreter.sendDialogues(player, FacialExpression.THINKING, "I should get an empty beer glass to", "hold the juice before I squeeze the fruit.");
 				break;
 			case 1:
 				definition = SeasonDefinitions.forFruitId((int) args[1]);
 				if (definition == null)
 					end();
-				interpreter.sendDialogues(player, FacialExpression.ANNOYED, "I think I should wait till I have", "enough fruits to make a full glass.");
+				interpreter.sendDialogues(player, FacialExpression.THINKING, "I think I should wait till I have", "enough fruits to make a full glass.");
 				break;
 			}
 			stage = 0;

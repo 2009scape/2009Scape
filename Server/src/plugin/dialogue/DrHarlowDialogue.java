@@ -47,7 +47,7 @@ public final class DrHarlowDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Buy me a drrink pleassh.");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Buy me a drrink pleassh.");
 		stage = 0;
 		return true;
 	}

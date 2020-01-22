@@ -39,7 +39,7 @@ public final class CraftingTutorDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can you teach me the basics of crafting please?");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you teach me the basics of crafting please?");
 		stage = 0;
 		return true;
 	}
@@ -48,15 +48,15 @@ public final class CraftingTutorDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Firstly, you should know that not all places associated", "with crafting will be marked on your mini map. Some", "take quite a bit of hunting down to find, don't lose", "heart!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Firstly, you should know that not all places associated", "with crafting will be marked on your mini map. Some", "take quite a bit of hunting down to find, don't lose", "heart!");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I see... so where should I start?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I see... so where should I start?");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "When you have a full inventory, take it to the bank,", "you can find it on the roof of this very castle.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "When you have a full inventory, take it to the bank,", "you can find it on the roof of this very castle.");
 			stage = 3;
 			break;
 		case 3:

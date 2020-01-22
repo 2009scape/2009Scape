@@ -40,14 +40,14 @@ public class RoomikDialogue extends DialoguePlugin {
 				npc.openShop(player);
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No thanks, I've got all the crafting euipment I need.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thanks, I've got all the crafting euipment I need.");
 				stage = 20;
 				break;
 
 			}
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Okay. Fare well on your travels.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Okay. Fare well on your travels.");
 			stage = 21;
 			break;
 		case 21:
@@ -66,7 +66,7 @@ public class RoomikDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Would you like to buy some Crafting equipment?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Would you like to buy some Crafting equipment?");
 		stage = 0;
 		return true;
 	}

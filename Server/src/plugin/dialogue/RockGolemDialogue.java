@@ -40,7 +40,7 @@ public final class RockGolemDialogue extends DialoguePlugin {
 		@Override
 		public boolean open(Object... args) {
 			npc = (NPC) args[0];
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "So you're made entirely of rocks?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "So you're made entirely of rocks?");
 			stage = 0;
 			return true;
 		}
@@ -53,7 +53,7 @@ public final class RockGolemDialogue extends DialoguePlugin {
 				stage = 1;
 				break;
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Aren't minerals just rocks?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Aren't minerals just rocks?");
 				stage = 2;
 				break;
 			case 2:				
@@ -61,7 +61,7 @@ public final class RockGolemDialogue extends DialoguePlugin {
 				stage = 3;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "But you're a Rock Golem...");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "But you're a Rock Golem...");
 				stage = 4;
 				break;
 			case 4:

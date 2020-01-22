@@ -39,7 +39,7 @@ public final class MubarizDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hi!");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hi!");
 		stage = 0;
 		return true;
 	}
@@ -48,15 +48,15 @@ public final class MubarizDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Welcome to the Duel Arena!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Welcome to the Duel Arena!");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Thanks! I need some information.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Thanks! I need some information.");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "What would you like to know?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What would you like to know?");
 			stage = 3;
 			break;
 		case 3:
@@ -66,91 +66,91 @@ public final class MubarizDialogue extends DialoguePlugin {
 		case 4:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What is this place?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What is this place?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "How do I challenge someone to a duel?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How do I challenge someone to a duel?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What kind of options are there?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What kind of options are there?");
 				stage = 30;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "This place looks really old, where did it come from?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "This place looks really old, where did it come from?");
 				stage = 40;
 				break;
 
 			}
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "When you go to the arena you'll go up an access ramp", "to the walkways that overlook the duel arenas. From the", "walkways you can watch the duels and challenge other", "players.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "When you go to the arena you'll go up an access ramp", "to the walkways that overlook the duel arenas. From the", "walkways you can watch the duels and challenge other", "players.");
 			stage = 21;
 			break;
 		case 21:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You'll know you're in the right place as you'll have a", "Duel-with option when you right-click a player.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You'll know you're in the right place as you'll have a", "Duel-with option when you right-click a player.");
 			stage = 22;
 			break;
 		case 22:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'm there!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm there!");
 			stage = 23;
 			break;
 		case 23:
 			end();
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You and your opponent can offer items as a stake. If", "you win, you recieve what your opponent staked, but if", "you lose, your opponent will get whatever items you", "staked.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You and your opponent can offer items as a stake. If", "you win, you recieve what your opponent staked, but if", "you lose, your opponent will get whatever items you", "staked.");
 			stage = 31;
 			break;
 		case 31:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You can choose to use rules to spice things up a bit.", "For instance if you both agree to use the 'No Magic'", "rule then neither player can use magic to attack the", "other player. The fight will be restricted to ranging and");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You can choose to use rules to spice things up a bit.", "For instance if you both agree to use the 'No Magic'", "rule then neither player can use magic to attack the", "other player. The fight will be restricted to ranging and");
 			stage = 32;
 			break;
 		case 32:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "melee only.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "melee only.");
 			stage = 33;
 			break;
 		case 33:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "The rules are fairly self-evident with lots of different", "combinations for you to try out!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "The rules are fairly self-evident with lots of different", "combinations for you to try out!");
 			stage = 34;
 			break;
 		case 34:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Cool! Thanks!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Cool! Thanks!");
 			stage = 35;
 			break;
 		case 35:
 			end();
 			break;
 		case 40:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Now that the archaeologists have moved out, a group of", "warriors, headed by myself, have bought the land and", "converted it to a set of duel arenas. The best fighters", "from around the world come here to fight!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Now that the archaeologists have moved out, a group of", "warriors, headed by myself, have bought the land and", "converted it to a set of duel arenas. The best fighters", "from around the world come here to fight!");
 			stage = 41;
 			break;
 		case 41:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I challenge you!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I challenge you!");
 			stage = 42;
 			break;
 		case 42:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Ho! Ho! Ho!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ho! Ho! Ho!");
 			stage = 43;
 			break;
 		case 43:
 			end();
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "The Duel Arena has six duel arenas where you can", "fight other players in a controlled enviornment. We", "have our own dedicated hospital where we guarantee to", "put you back together, even if you lose.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "The Duel Arena has six duel arenas where you can", "fight other players in a controlled enviornment. We", "have our own dedicated hospital where we guarantee to", "put you back together, even if you lose.");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Inbetween the arenas are walkways where you can", "watch the fights and challenge other players");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Inbetween the arenas are walkways where you can", "watch the fights and challenge other players");
 			stage = 13;
 			break;
 		case 13:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sounds great. Thanks!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sounds great. Thanks!");
 			stage = 14;
 			break;
 		case 14:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "See you in the arenas!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "See you in the arenas!");
 			stage = 15;
 			break;
 		case 15:

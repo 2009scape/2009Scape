@@ -99,7 +99,7 @@ public final class QuizMasterDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.ANNOYED, "I'm sure I didn't ask to take part in a quiz show...");
+			interpreter.sendDialogues(player, FacialExpression.THINKING, "I'm sure I didn't ask to take part in a quiz show...");
 			stage++;
 			break;
 		case 1:

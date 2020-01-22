@@ -39,11 +39,11 @@ public final class MartinTheMasterGardener extends DialoguePlugin {
 		case 0:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What is that cape that you're wearing?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What is that cape that you're wearing?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I can't chat now, I have too many things to worry", "about.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I can't chat now, I have too many things to worry", "about.");
 				stage = 20;
 				break;
 			}
@@ -52,7 +52,7 @@ public final class MartinTheMasterGardener extends DialoguePlugin {
 			end();
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "This is a Skillcape of Farming, isn't it incredbile? It's a", "symbol of my ability as the finest farmer in the land!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "This is a Skillcape of Farming, isn't it incredbile? It's a", "symbol of my ability as the finest farmer in the land!");
 			stage = 11;
 			break;
 		case 11:

@@ -47,7 +47,7 @@ public class ScoolgirlMuseumDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I wanna be an archaeologist when I grow up!");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I wanna be an archaeologist when I grow up!");
 		stage = 0;
 		return true;
 	}

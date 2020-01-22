@@ -45,16 +45,16 @@ public final class HeadChefDialogue extends DialoguePlugin {
 		if (args.length == 2)
 			door = (boolean) args[1];
 		if (door) {
-			interpreter.sendDialogues(847, FacialExpression.NORMAL, "You can't come in here unless you're wearing a chef's", " hat or something like that.");
+			interpreter.sendDialogues(847, FacialExpression.NO_EXPRESSION, "You can't come in here unless you're wearing a chef's", " hat or something like that.");
 			stage = 0;
 			return true;
 		}
 		if (player.getSkills().getStaticLevel(Skills.COOKING) >= 99) {
-			interpreter.sendDialogues(847, FacialExpression.NORMAL, "Hello, welcome to the Cooking Guild. It's always great to", "have such an accomplished chef visit. Say would you be", "interested in a Skillcape of Cooking? They're only available", "to master chefs.");
+			interpreter.sendDialogues(847, FacialExpression.NO_EXPRESSION, "Hello, welcome to the Cooking Guild. It's always great to", "have such an accomplished chef visit. Say would you be", "interested in a Skillcape of Cooking? They're only available", "to master chefs.");
 			stage = 100;
 			return true;
 		}
-		interpreter.sendDialogues(847, FacialExpression.NORMAL, "Hello, welcome to the Cooking Guild. Only accomplished", "chefs and cooks are allowed in here. Feel free to use any", "of our facilities.");
+		interpreter.sendDialogues(847, FacialExpression.NO_EXPRESSION, "Hello, welcome to the Cooking Guild. Only accomplished", "chefs and cooks are allowed in here. Feel free to use any", "of our facilities.");
 		stage = 1;
 		return true;
 	}
@@ -74,11 +74,11 @@ public final class HeadChefDialogue extends DialoguePlugin {
 
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Nice cape, you're wearing!");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Nice cape, you're wearing!");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Thanks, bye.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Thanks, bye.");
 				stage = 3;
 				break;
 			}
@@ -88,7 +88,7 @@ public final class HeadChefDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 10:
-			interpreter.sendDialogues(847, FacialExpression.NORMAL, "Thank you! It's my most prized possesion, it's a Skillcape", "of Cooking; it shows that I've achieved level 99 Cooking", "and am one of the best chefs in the land!");
+			interpreter.sendDialogues(847, FacialExpression.NO_EXPRESSION, "Thank you! It's my most prized possesion, it's a Skillcape", "of Cooking; it shows that I've achieved level 99 Cooking", "and am one of the best chefs in the land!");
 			stage = 11;
 			break;
 		case 11:
@@ -102,7 +102,7 @@ public final class HeadChefDialogue extends DialoguePlugin {
 
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No thanks.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thanks.");
 				stage = 110;
 				break;
 			case 2:
@@ -113,14 +113,14 @@ public final class HeadChefDialogue extends DialoguePlugin {
 			break;
 
 		case 110:
-			interpreter.sendDialogues(847, FacialExpression.NORMAL, "Okay, come back to me if you change your mind.");
+			interpreter.sendDialogues(847, FacialExpression.NO_EXPRESSION, "Okay, come back to me if you change your mind.");
 			stage = 111;
 			break;
 		case 111:
 			end();
 			break;
 		case 150:
-			interpreter.sendDialogues(847, FacialExpression.NORMAL, "Most certainly, just as soon as you give me 99000 gold", "coins.");
+			interpreter.sendDialogues(847, FacialExpression.NO_EXPRESSION, "Most certainly, just as soon as you give me 99000 gold", "coins.");
 			stage = 151;
 			break;
 		case 151:
@@ -131,18 +131,18 @@ public final class HeadChefDialogue extends DialoguePlugin {
 
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "That's much too expensive.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "That's much too expensive.");
 				stage = 160;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sure.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sure.");
 				stage = 200;
 				break;
 			}
 
 			break;
 		case 160:
-			interpreter.sendDialogues(847, FacialExpression.NORMAL, "I'm sorry you feel that way.");
+			interpreter.sendDialogues(847, FacialExpression.NO_EXPRESSION, "I'm sorry you feel that way.");
 			stage = 161;
 			break;
 		case 161:
@@ -150,7 +150,7 @@ public final class HeadChefDialogue extends DialoguePlugin {
 			break;
 		case 200:
 			if (Skillcape.purchase(player, Skills.COOKING)) {
-				interpreter.sendDialogues(847, FacialExpression.NORMAL, "Now you can use the title Master Chef.");
+				interpreter.sendDialogues(847, FacialExpression.NO_EXPRESSION, "Now you can use the title Master Chef.");
 			}
 			stage = 202;
 			break;

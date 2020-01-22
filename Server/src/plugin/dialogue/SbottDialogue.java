@@ -32,7 +32,7 @@ public class SbottDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hello stranger. Would you like to me to tan any hides for", "you?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello stranger. Would you like to me to tan any hides for", "you?");
 		stage = 0;
 		return true;
 	}
@@ -43,7 +43,7 @@ public class SbottDialogue extends DialoguePlugin {
 		case 0:
 			// interpreter.sendDialogues(npc, FacialExpression.NORMAL,
 			// "Soft leather - 2 gp per hide","Hard leather - 5 gp per hide","Snakeskins - 25 gp per hide","Dragon leather - 45 gp per hide.");
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Soft leather - 1 gp per hide", "Hard leather - 3 gp per hide", "Snakeskins - 20 gp per hide", "Dragon leather - 20 gp per hide.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Soft leather - 1 gp per hide", "Hard leather - 3 gp per hide", "Snakeskins - 20 gp per hide", "Dragon leather - 20 gp per hide.");
 			stage = 1;
 			break;
 		case 1:
@@ -59,7 +59,7 @@ public class SbottDialogue extends DialoguePlugin {
 					return true;
 				}
 			}
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "No thanks, I haven't any hides.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thanks, I haven't any hides.");
 			stage = 2;
 			break;
 		case 2:

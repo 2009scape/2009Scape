@@ -76,7 +76,7 @@ public final class VarrockNodePlugin extends OptionHandler {
 			player.getDialogueInterpreter().open(KnockatDoorDialogue.ID, player.getLocation().getX() == 3182 ? 45 : 44);
 			break;
 		case 28094:
-			player.getDialogueInterpreter().sendDialogues(player, FacialExpression.ANNOYED, "I don't think I should go inside.");
+			player.getDialogueInterpreter().sendDialogues(player, FacialExpression.THINKING, "I don't think I should go inside.");
 			break;
 		case 23636:
 			player.getInterfaceManager().open(new Component(531));
@@ -240,7 +240,7 @@ public final class VarrockNodePlugin extends OptionHandler {
 				stage = 22;
 				break;
 			case 22:
-				interpreter.sendDialogues(npcId, FacialExpression.ANGRY, "What? I'm not... oh, just go away!");
+				interpreter.sendDialogues(npcId, FacialExpression.FURIOUS, "What? I'm not... oh, just go away!");
 				stage = 23;
 				break;
 			case 23:
@@ -255,7 +255,7 @@ public final class VarrockNodePlugin extends OptionHandler {
 				stage = 32;
 				break;
 			case 32:
-				interpreter.sendDialogues(npcId, FacialExpression.ANGRY, "Stop messing about and go away!");
+				interpreter.sendDialogues(npcId, FacialExpression.FURIOUS, "Stop messing about and go away!");
 				stage = 33;
 				break;
 			case 33:
@@ -270,14 +270,14 @@ public final class VarrockNodePlugin extends OptionHandler {
 				stage = 42;
 				break;
 			case 42:
-				interpreter.sendDialogues(npcId, FacialExpression.ANGRY, "Stop it!");
+				interpreter.sendDialogues(npcId, FacialExpression.FURIOUS, "Stop it!");
 				stage = 43;
 				break;
 			case 43:
 				end();
 				break;
 			case 50:
-				interpreter.sendDialogues(npcId, FacialExpression.ANGRY, "Doctor. wh.. hang on, I'm not falling for that one again!", "Go away.");
+				interpreter.sendDialogues(npcId, FacialExpression.FURIOUS, "Doctor. wh.. hang on, I'm not falling for that one again!", "Go away.");
 				stage = 51;
 				break;
 			case 51:

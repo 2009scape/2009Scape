@@ -40,7 +40,7 @@ public final class BeggarDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.SAD, "Please kind sir... my family and I are starving...");
+		interpreter.sendDialogues(npc, FacialExpression.SCARED, "Please kind sir... my family and I are starving...");
 		player.lock();
 		stage = 1;
 		return true;
@@ -52,7 +52,7 @@ public final class BeggarDialogue extends DialoguePlugin {
 		switch (stage) {
 		case 1:
 			if (quest.getStage(player) == 60 && player.getAttribute("beggar_npc") != null) {
-				interpreter.sendDialogues(252, FacialExpression.NORMAL, "Could you find it in your heart to spare me a simple", "loaf of bread?");
+				interpreter.sendDialogues(252, FacialExpression.NO_EXPRESSION, "Could you find it in your heart to spare me a simple", "loaf of bread?");
 				stage = 2;
 			} else {
 				interpreter.sendDialogue("Despite the fact that he is starving,", "he does not feel like speaking to you at the moment.");
@@ -66,11 +66,11 @@ public final class BeggarDialogue extends DialoguePlugin {
 		case 3:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes, certainly.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, certainly.");
 				stage = 4;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, I don't have any bread on me at the moment.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, I don't have any bread on me at the moment.");
 				stage = 15;
 				break;
 			}
@@ -81,12 +81,12 @@ public final class BeggarDialogue extends DialoguePlugin {
 				player.getInventory().remove(new Item(2309, 1));
 				stage = 5;
 			} else {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Actually I don't have any bread on me.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Actually I don't have any bread on me.");
 				stage = 15;
 			}
 			break;
 		case 5:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Thank you very much!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Thank you very much!");
 			stage = 6;
 			break;
 		case 6:
@@ -94,12 +94,12 @@ public final class BeggarDialogue extends DialoguePlugin {
 			stage = 7;
 			break;
 		case 7:
-			interpreter.sendDialogues(250, FacialExpression.NORMAL, "Well done. You have passed my test.");
+			interpreter.sendDialogues(250, FacialExpression.NO_EXPRESSION, "Well done. You have passed my test.");
 			npc.transform(250);
 			stage = 8;
 			break;
 		case 8:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Here is Excalibur, guard it well.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Here is Excalibur, guard it well.");
 			stage = 16;
 			break;
 		case 15:

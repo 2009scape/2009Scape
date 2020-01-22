@@ -39,7 +39,7 @@ public final class KanelDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello there.");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello there.");
 		stage = 0;
 		return true;
 	}
@@ -49,15 +49,15 @@ public final class KanelDialogue extends DialoguePlugin {
 
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hel-lo?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hel-lo?");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Right. Goodbye.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Right. Goodbye.");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Bye?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Bye?");
 			stage = 3;
 			break;
 		case 3:

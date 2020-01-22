@@ -39,7 +39,7 @@ public final class BettyDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Welcome to the magic emporium.");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Welcome to the magic emporium.");
 		stage = 0;
 		return true;
 	}
@@ -58,13 +58,13 @@ public final class BettyDialogue extends DialoguePlugin {
 				npc.openShop(player);
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sorry, I'm not into Magic.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, I'm not into Magic.");
 				stage = 20;
 				break;
 			}
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well, if you see ayone who is into Magic, please send", "them my way.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, if you see ayone who is into Magic, please send", "them my way.");
 			stage = 21;
 			break;
 		case 21:

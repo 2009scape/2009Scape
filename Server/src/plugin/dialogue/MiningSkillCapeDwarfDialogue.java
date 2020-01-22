@@ -66,19 +66,19 @@ public final class MiningSkillCapeDwarfDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What have you got in the guild?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What have you got in the guild?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What do you dwarves do with the ore you mine?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What do you dwarves do with the ore you mine?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can you tell me about your skillcape?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you tell me about your skillcape?");
 				stage = 40;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No thanks, I'm fine.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thanks, I'm fine.");
 				stage = 30;
 				break;
 
@@ -89,7 +89,7 @@ public final class MiningSkillCapeDwarfDialogue extends DialoguePlugin {
 			stage = 21;
 			break;
 		case 21:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I don't see many dwarves", "selling armour or weapons here.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I don't see many dwarves", "selling armour or weapons here.");
 			stage = 22;
 			break;
 		case 22:

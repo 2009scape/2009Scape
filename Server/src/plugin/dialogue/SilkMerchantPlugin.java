@@ -213,7 +213,7 @@ public class SilkMerchantPlugin extends DialoguePlugin {
 			});
 			return false;
 		}
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I buy silk. If you ever want to", "sell any silk, bring it here.");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I buy silk. If you ever want to", "sell any silk, bring it here.");
 		stage = 0;
 		return true;
 	}

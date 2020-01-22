@@ -46,7 +46,7 @@ public final class DraynorBankGuard extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Yes?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yes?");
 		stage = 0;
 		return true;
 	}
@@ -70,7 +70,7 @@ public final class DraynorBankGuard extends DialoguePlugin {
 				stage = 71;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sorry, I don't want anything.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, I don't want anything.");
 				stage = 30;
 				break;
 			}
@@ -155,28 +155,28 @@ public final class DraynorBankGuard extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello. Can I deposit my stuff here?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello. Can I deposit my stuff here?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "That wall doesn't look very good.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "That wall doesn't look very good.");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sorry, I don't want anything.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, I don't want anything.");
 				stage = 30;
 				break;
 			}
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Ok.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ok.");
 			stage = 31;
 			break;
 		case 31:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "No, it doesn't.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "No, it doesn't.");
 			stage = 21;
 			break;
 		case 21:
@@ -309,7 +309,7 @@ public final class DraynorBankGuard extends DialoguePlugin {
 			startRecording(player);
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "No. I'm a security guard, not a bank clerk.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "No. I'm a security guard, not a bank clerk.");
 			stage = 11;
 			break;
 		case 11:

@@ -99,7 +99,7 @@ public class WLBelowCutscene extends CutscenePlugin {
 			public boolean pulse() {
 				reset();
 				player.face(king);
-				player.getDialogueInterpreter().sendDialogues(player, FacialExpression.GRUMPY, "Uh oh! King Roald looks evil!");
+				player.getDialogueInterpreter().sendDialogues(player, FacialExpression.ANNOYED, "Uh oh! King Roald looks evil!");
 				return true;
 			}
 		});

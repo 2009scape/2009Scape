@@ -55,7 +55,7 @@ public final class FaladorSquireDialogue extends DialoguePlugin {
 		quest = player.getQuestRepository().getQuest("The Knight's Sword");
 		switch (quest.getStage(player)) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hello. I am the squire to Sir Vyvin.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello. I am the squire to Sir Vyvin.");
 			stage = 0;
 			break;
 		case 10:
@@ -64,11 +64,11 @@ public final class FaladorSquireDialogue extends DialoguePlugin {
 		case 40:
 		case 50:
 		case 60:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "So how are you doing getting a sword?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "So how are you doing getting a sword?");
 			stage = 0;
 			break;
 		case 100:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hello friend! Many thanks for all of your help! Vyvin", "never even realised it was a different sword, and I still", "have my job!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello friend! Many thanks for all of your help! Vyvin", "never even realised it was a different sword, and I still", "have my job!");
 			stage = 0;
 			break;
 		}
@@ -178,11 +178,11 @@ public final class FaladorSquireDialogue extends DialoguePlugin {
 		case 10:
 			switch (stage) {
 			case 0:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'm still looking for Imcando dwarves to help me...");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm still looking for Imcando dwarves to help me...");
 				stage = 1;
 				break;
 			case 1:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Please try and find them quickly... I am scared Sir", "Vyvin will find out!");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Please try and find them quickly... I am scared Sir", "Vyvin will find out!");
 				stage = 2;
 				break;
 			case 2:
@@ -202,17 +202,17 @@ public final class FaladorSquireDialogue extends DialoguePlugin {
 			case 1:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "And how is life as a squire?");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "And how is life as a squire?");
 					stage = 10;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Wouldn't you prefer to be a squire for me?");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Wouldn't you prefer to be a squire for me?");
 					stage = 20;
 					break;
 				}
 				break;
 			case 10:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well, Sir Vyvin is a good guy to work for, however,", "I'm in a spot of trouble today. I've gone and lost Sir", "Vyvin's sword!");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, Sir Vyvin is a good guy to work for, however,", "I'm in a spot of trouble today. I've gone and lost Sir", "Vyvin's sword!");
 				stage = 11;
 				break;
 			case 11:
@@ -222,43 +222,43 @@ public final class FaladorSquireDialogue extends DialoguePlugin {
 			case 12:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Do you know where you lost it?");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you know where you lost it?");
 					stage = 100;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "I can make a new sword if you like...");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I can make a new sword if you like...");
 					stage = 120;
 					break;
 				case 3:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Is he angry?");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Is he angry?");
 					stage = 130;
 					break;
 				}
 				break;
 			case 20:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "No, sorry, I'm loyal to Sir Vyvin.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "No, sorry, I'm loyal to Sir Vyvin.");
 				stage = 21;
 				break;
 			case 21:
 				end();
 				break;
 			case 100:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well now, if I knew THAT it wouldn't be lost, now", "would it?");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well now, if I knew THAT it wouldn't be lost, now", "would it?");
 				stage = 101;
 				break;
 			case 101:
 				end();
 				break;
 			case 120:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Thanks for the offer. I'd be surprised if you could", "though.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Thanks for the offer. I'd be surprised if you could", "though.");
 				stage = 121;
 				break;
 			case 121:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "The thing is, this sword is a family heirloom. It has been", "passed down through Vyvin's family for five", "generations! It was originally made by the Imcando", "dwarves, who were");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "The thing is, this sword is a family heirloom. It has been", "passed down through Vyvin's family for five", "generations! It was originally made by the Imcando", "dwarves, who were");
 				stage = 122;
 				break;
 			case 122:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "a particularly skilled tribe of dwarven smiths. I doubt", "anyone could make it in the style they do.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "a particularly skilled tribe of dwarven smiths. I doubt", "anyone could make it in the style they do.");
 				stage = 123;
 				break;
 			case 123:
@@ -268,21 +268,21 @@ public final class FaladorSquireDialogue extends DialoguePlugin {
 			case 134:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "So would these dwarves make another one?");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "So would these dwarves make another one?");
 					stage = 160;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Well I hope you find it soon.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Well I hope you find it soon.");
 					stage = 170;
 					break;
 				}
 				break;
 			case 160:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I'm not a hundred percent sure the Imcando tribe", "exists anymore. I should think Reldo, the palace", "librarian in Varrock, will know; he has done a lot of", "research on the races of " + GameWorld.getName() + ".");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm not a hundred percent sure the Imcando tribe", "exists anymore. I should think Reldo, the palace", "librarian in Varrock, will know; he has done a lot of", "research on the races of " + GameWorld.getName() + ".");
 				stage = 161;
 				break;
 			case 161:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I don't suppose you could try and track down the", "Imcando dwarves for me? I've got so much work to", "do...");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I don't suppose you could try and track down the", "Imcando dwarves for me? I've got so much work to", "do...");
 				stage = 162;
 				break;
 			case 162:
@@ -292,17 +292,17 @@ public final class FaladorSquireDialogue extends DialoguePlugin {
 			case 163:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Ok, I'll give it a go.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok, I'll give it a go.");
 					stage = 165;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, I've got lots of mining work to do.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, I've got lots of mining work to do.");
 					stage = 164;
 					break;
 				}
 				break;
 			case 165:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Thank you very much! As I say, the best place to start", "should be with Reldo...");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Thank you very much! As I say, the best place to start", "should be with Reldo...");
 				stage = 166;
 				quest.setStage(player, 10);
 				player.getQuestRepository().syncronizeTab(player);
@@ -314,14 +314,14 @@ public final class FaladorSquireDialogue extends DialoguePlugin {
 				end();
 				break;
 			case 170:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Yes, me too. I'm not looking forward to telling Vyvin", "I've lost it. He's going to want it for the parade next", "week as well.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yes, me too. I'm not looking forward to telling Vyvin", "I've lost it. He's going to want it for the parade next", "week as well.");
 				stage = 171;
 				break;
 			case 171:
 				end();
 				break;
 			case 130:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "He doesn't know yet. I was hoping I could think of", "something to do before he does find out, But I find", "myself at a loss.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "He doesn't know yet. I was hoping I could think of", "something to do before he does find out, But I find", "myself at a loss.");
 				stage = 132;
 				break;
 			case 132:

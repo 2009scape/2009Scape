@@ -62,37 +62,37 @@ public final class CartConductorDialogue extends DialoguePlugin {
 		case 0:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Who are you?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Who are you?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Where can you take me?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Where can you take me?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'd like to buy a ticket.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'd like to buy a ticket.");
 				stage = 30;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I have to go.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I have to go.");
 				stage = 40;
 				break;
 			case 10:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I'm an employee of Keldagrim Carts. I make sure the", "carts in this area run on time and that people pay their", "fares.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm an employee of Keldagrim Carts. I make sure the", "carts in this area run on time and that people pay their", "fares.");
 				stage = 11;
 				break;
 			case 11:
 				end();
 				break;
 			case 20:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I don't think I'm allowed to take you into the city of", "Keldagrim, human. Perhaps when you find another way", "into the city and talk to someone of importance there", "you will be allowed to.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I don't think I'm allowed to take you into the city of", "Keldagrim, human. Perhaps when you find another way", "into the city and talk to someone of importance there", "you will be allowed to.");
 				stage = 21;
 				break;
 			case 21:
 				end();
 				break;
 			case 30:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "One ticket to Keldagrim, that's 150 coins then.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "One ticket to Keldagrim, that's 150 coins then.");
 				stage = 31;
 				break;
 			case 31:

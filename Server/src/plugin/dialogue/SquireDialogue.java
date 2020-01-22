@@ -37,14 +37,14 @@ public class SquireDialogue extends DialoguePlugin {
 		if (args.length == 3) {
 			int type = (int) args[1];
 			if (type == 0) {// lost
-				interpreter.sendDialogues(3781, FacialExpression.NORMAL, "The Void Knight was killed, another of our Order has", "fallen and that Island is lost.");
+				interpreter.sendDialogues(3781, FacialExpression.NO_EXPRESSION, "The Void Knight was killed, another of our Order has", "fallen and that Island is lost.");
 				stage = 110;
 			} else if (type == 1) {// won and awarded.
 				String points = (String) args[2];
-				interpreter.sendDialogues(3781, FacialExpression.NORMAL, "Congratulations! You managed to destroy all the portals!", "We've awarded you " + points + " Void Knight Commendation", "points. Please also accept these coins as a reward.");
+				interpreter.sendDialogues(3781, FacialExpression.NO_EXPRESSION, "Congratulations! You managed to destroy all the portals!", "We've awarded you " + points + " Void Knight Commendation", "points. Please also accept these coins as a reward.");
 				stage = 100;
 			} else {// won and not awarded.
-				interpreter.sendDialogues(3781, FacialExpression.NORMAL, "Congratulations! You managed to destroy all the portals!", "However, you did not succeed in reaching the required", "amount of damage delt we cannot grant you a reward.");
+				interpreter.sendDialogues(3781, FacialExpression.NO_EXPRESSION, "Congratulations! You managed to destroy all the portals!", "However, you did not succeed in reaching the required", "amount of damage delt we cannot grant you a reward.");
 				stage = 101;
 			}
 			return true;
@@ -55,7 +55,7 @@ public class SquireDialogue extends DialoguePlugin {
 			stage = 699;
 			return true;
 		}
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hi, how can I help you?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hi, how can I help you?");
 		stage = 0;
 		return true;
 	}
@@ -98,40 +98,40 @@ public class SquireDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Who are you?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Who are you?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Where does this ship go?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Where does this ship go?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'd like to go to your outpost.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'd like to go to your outpost.");
 				stage = 30;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'm fine thanks.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm fine thanks.");
 				stage = 40;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I'm a Squire for the Void Knights.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm a Squire for the Void Knights.");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "The who?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "The who?");
 			stage = 12;
 			break;
 		case 12:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "The Void Knights, they are great warriors of balance", "who do Guthix's work here in Gielinor.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "The Void Knights, they are great warriors of balance", "who do Guthix's work here in Gielinor.");
 			stage = 13;
 			break;
 		case 13:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "To the Void Knight outpost. It's a small island just off", "Karamja.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "To the Void Knight outpost. It's a small island just off", "Karamja.");
 			stage = 21;
 			break;
 		case 21:
@@ -141,17 +141,17 @@ public class SquireDialogue extends DialoguePlugin {
 		case 22:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'd like to go to your outpost.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'd like to go to your outpost.");
 				stage = 23;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "That's nice.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "That's nice.");
 				stage = 200;
 				break;
 			}
 			break;
 		case 23:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Certainly, right this way.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Certainly, right this way.");
 			stage = 24;
 			break;
 		case 24:
@@ -162,7 +162,7 @@ public class SquireDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Certainly, right this way.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Certainly, right this way.");
 			stage = 24;
 			break;
 		case 40:

@@ -35,10 +35,10 @@ public class TheLadyOfTheLake extends DialoguePlugin {
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
 		if (!player.hasItem(new Item(35, 1))) {
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Good day to you, sir.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Good day to you, sir.");
 			stage = 0;
 		} else {
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Good day to you, sir.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Good day to you, sir.");
 			stage = 699;
 		}
 		return true;
@@ -55,31 +55,31 @@ public class TheLadyOfTheLake extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Who are you?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Who are you?");
 				stage = 100;
 				break;
 			case 2:
 				if (quest.getStage(player) < 50) {
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "I seek the sword Excalibur.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I seek the sword Excalibur.");
 					stage = 250;
 				} else {
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "I seek the sword Excalibur.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I seek the sword Excalibur.");
 					stage = 161;
 				}
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Good day.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Good day.");
 				stage = 703;
 				break;
 
 			}
 			break;
 		case 250:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I am afraid I do not know what you are talking about.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I am afraid I do not know what you are talking about.");
 			stage = 171;
 			break;
 		case 100:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I am the Lady of the Lake.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I am the Lady of the Lake.");
 			stage = 102;
 			break;
 		case 102:
@@ -89,11 +89,11 @@ public class TheLadyOfTheLake extends DialoguePlugin {
 		case 150:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I seek the sword Excalibur.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I seek the sword Excalibur.");
 				stage = 161;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Good day.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Good day.");
 				stage = 703;
 				break;
 
@@ -105,27 +105,27 @@ public class TheLadyOfTheLake extends DialoguePlugin {
 				// proven
 				// themselves
 				// yet
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Aye, I have that aretefact in my possession.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Aye, I have that aretefact in my possession.");
 				stage = 300;
 			} else if (quest.getStage(player) >= 70) {
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I recall you have already proven yourself to be worthy of", "wielding it. I shall return it to you if you can prove", "yourself to still be worthy.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I recall you have already proven yourself to be worthy of", "wielding it. I shall return it to you if you can prove", "yourself to still be worthy.");
 				stage = 162;
 			}
 			break;
 		case 162:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "And how can I do that?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "And how can I do that?");
 			stage = 163;
 			break;
 		case 163:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Why, by proving youself to be above material goods.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Why, by proving youself to be above material goods.");
 			stage = 164;
 			break;
 		case 164:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "... And how can I do that?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "... And how can I do that?");
 			stage = 165;
 			break;
 		case 165:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "500 coins ought to do it.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "500 coins ought to do it.");
 			stage = 166;
 			break;
 		case 166:
@@ -136,26 +136,26 @@ public class TheLadyOfTheLake extends DialoguePlugin {
 			switch (buttonId) {
 			case 1:
 
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Okay, here you go.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Okay, here you go.");
 				stage = 168;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "500 coins? No thanks.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "500 coins? No thanks.");
 				stage = 456;
 				break;
 			}
 			break;
 		case 168:
 			if (player.getInventory().freeSlots() == 0) {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sorry, I don't seem to have enough inventory space.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, I don't seem to have enough inventory space.");
 				stage = 169;
 			} else if (player.getInventory().contains(995, 500)) {
 				player.getInventory().remove(new Item(995, 500));
 				player.getInventory().add(new Item(35, 1));
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Thank's for the cash!", "I'm saving up for a new dress.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Thank's for the cash!", "I'm saving up for a new dress.");
 				stage = 170;
 			} else {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sorry, I don't seem to have enough conins.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, I don't seem to have enough conins.");
 				stage = 169;
 			}
 			break;
@@ -170,27 +170,27 @@ public class TheLadyOfTheLake extends DialoguePlugin {
 			end();
 			break;
 		case 300:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "'Tis very valuable, and not an artefact to be given", "away lightly.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "'Tis very valuable, and not an artefact to be given", "away lightly.");
 			stage = 301;
 			break;
 		case 301:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I would want to give it away only to one who is worthy", "and good.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I would want to give it away only to one who is worthy", "and good.");
 			stage = 302;
 			break;
 		case 302:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "And how am I meant to prove that?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "And how am I meant to prove that?");
 			stage = 303;
 			break;
 		case 303:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I shall set a test for you.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I shall set a test for you.");
 			stage = 304;
 			break;
 		case 304:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "First I need you to travel to Port Sarim. Then go to", "the upstairs room of the jeweller's shop there.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "First I need you to travel to Port Sarim. Then go to", "the upstairs room of the jeweller's shop there.");
 			stage = 305;
 			break;
 		case 305:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Ok. That seems easy enough.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok. That seems easy enough.");
 			quest.setStage(player, 60);
 			stage = 171;
 			break;
@@ -201,24 +201,24 @@ public class TheLadyOfTheLake extends DialoguePlugin {
 		case 700:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Who are you?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Who are you?");
 				stage = 720;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Good day.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Good day.");
 				stage = 703;
 				break;
 			}
 			break;
 		case 720:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I am the Lady of the Lake.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I am the Lady of the Lake.");
 			stage = 721;
 			break;
 		case 721:
 			end();
 			break;
 		case 456:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Your materialistic attitude saddens me.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Your materialistic attitude saddens me.");
 			stage = 457;
 			break;
 		case 457:

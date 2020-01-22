@@ -50,21 +50,21 @@ public final class FredTheFarmer extends DialoguePlugin {
 		quest = player.getQuestRepository().getQuest("Sheep Shearer");
 		if (player.getQuestRepository().getQuest("Sheep Shearer").getStage(player) == 10 || player.getQuestRepository().getQuest("Sheep Shearer").getStage(player) == 90) {
 			if (SheepShearer.getWoolGiven(player) == 20 && player.getQuestRepository().getQuest("Sheep Shearer").getStage(player) == 90) {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "That's the last of them.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "That's the last of them.");
 				stage = 999;
 				return true;
 			}
 			if (player.getInventory().contains(1737, 1) || player.getInventory().contains(1759, 1)) {
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "What are you doing on my land?");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What are you doing on my land?");
 				stage = 5000;
 				return true;
 			}
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "How are you doing getting those balls of wool?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "How are you doing getting those balls of wool?");
 			stage = 4000;
 			return true;
 		}
 
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "What are you doing on my land? You're not the one", "who keeps leaving all my gates open and letting out all", "my sheep are you?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What are you doing on my land? You're not the one", "who keeps leaving all my gates open and letting out all", "my sheep are you?");
 		stage = 0;
 		return true;
 	}
@@ -85,11 +85,11 @@ public final class FredTheFarmer extends DialoguePlugin {
 		case 346:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'm looking for something to kill.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm looking for something to kill.");
 				stage = 20;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'm lost.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm lost.");
 				stage = 30;
 				break;
 			}
@@ -97,37 +97,37 @@ public final class FredTheFarmer extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'm looking for a quest.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm looking for a quest.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'm looking for something to kill.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm looking for something to kill.");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'm lost.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm lost.");
 				stage = 30;
 				break;
 
 			}
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "How can you be lost? Just follow the road east and", "south. You'll end up in Lumbridge fairly quickly.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "How can you be lost? Just follow the road east and", "south. You'll end up in Lumbridge fairly quickly.");
 			stage = 31;
 			break;
 		case 31:
 			end();
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You're after a quest, you say? Actually I could do with", "a bit of help.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You're after a quest, you say? Actually I could do with", "a bit of help.");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "My sheep are getting mighty woolly. I'd be much", "obliged if you could shear them. And while you're at it", "spin the wool for me too.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "My sheep are getting mighty woolly. I'd be much", "obliged if you could shear them. And while you're at it", "spin the wool for me too.");
 			stage = 12;
 			break;
 		case 12:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Yes, that's it. Bring me 20 balls of wool. And I'm sure", "I could sort out somesort of payment. Of course,", "there's a small matter of The Thing.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yes, that's it. Bring me 20 balls of wool. And I'm sure", "I could sort out somesort of payment. Of course,", "there's a small matter of The Thing.");
 			stage = 13;
 			break;
 		case 13:
@@ -137,21 +137,21 @@ public final class FredTheFarmer extends DialoguePlugin {
 		case 14:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes okay. I can do that.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes okay. I can do that.");
 				stage = 670;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "That doesn't sound a very exiting quest.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "That doesn't sound a very exiting quest.");
 				stage = 560;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What do you mean, The Thing?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What do you mean, The Thing?");
 				stage = 456;
 				break;
 			}
 			break;
 		case 670:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Good! Now one more thing, do you actually know how", "to shear a sheep?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Good! Now one more thing, do you actually know how", "to shear a sheep?");
 			stage = 678;
 			break;
 		case 678:
@@ -161,33 +161,33 @@ public final class FredTheFarmer extends DialoguePlugin {
 		case 679:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Of course!");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Of course!");
 				stage = 954;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Err. No, I don't know actually.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Err. No, I don't know actually.");
 				stage = 750;
 				break;
 			}
 			break;
 		case 954:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Do you know how to spin wool?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Do you know how to spin wool?");
 			stage = 754;
 			break;
 		case 750:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Just use a set of shears on a sheep to shear it.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Just use a set of shears on a sheep to shear it.");
 			stage = 751;
 			break;
 		case 751:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "That's all I have to do?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "That's all I have to do?");
 			stage = 752;
 			break;
 		case 752:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well once you've collected some wool you'll need to spin", "it into balls.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well once you've collected some wool you'll need to spin", "it into balls.");
 			stage = 753;
 			break;
 		case 753:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Do you know how to spin wool?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Do you know how to spin wool?");
 			stage = 754;
 			break;
 		case 754:
@@ -197,21 +197,21 @@ public final class FredTheFarmer extends DialoguePlugin {
 		case 755:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I don't know how to spin wool, sorry.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I don't know how to spin wool, sorry.");
 				stage = 756;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'm something of an expert actually!");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm something of an expert actually!");
 				stage = 850;
 				break;
 			}
 			break;
 		case 850:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well you can stop grinning and get to work then.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well you can stop grinning and get to work then.");
 			stage = 851;
 			break;
 		case 851:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I'm not paying you by the hour!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm not paying you by the hour!");
 			stage = 852;
 			break;
 		case 852:
@@ -219,19 +219,19 @@ public final class FredTheFarmer extends DialoguePlugin {
 			quest.start(player);
 			break;
 		case 756:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Don't worry, it's quite simple!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Don't worry, it's quite simple!");
 			stage = 757;
 			break;
 		case 757:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "The nearest Spinning Wheel can be found on the first", "floor of Lumbridge Castle.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "The nearest Spinning Wheel can be found on the first", "floor of Lumbridge Castle.");
 			stage = 758;
 			break;
 		case 758:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "To get to the Lumbridge Castle just follow the road east.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "To get to the Lumbridge Castle just follow the road east.");
 			stage = 759;
 			break;
 		case 759:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Thank you!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Thank you!");
 			stage = 760;
 			break;
 		case 760:
@@ -242,79 +242,79 @@ public final class FredTheFarmer extends DialoguePlugin {
 			end();
 			break;
 		case 560:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well what do you expect if you ask a farmer for a", "quest?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well what do you expect if you ask a farmer for a", "quest?");
 			stage = 21;
 			break;
 		case 456:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well now, no one has ever seen The Thing. That's", "why we call it The Thing, 'cos we don't know what it is.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well now, no one has ever seen The Thing. That's", "why we call it The Thing, 'cos we don't know what it is.");
 			stage = 457;
 			break;
 		case 457:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Someone say it's a black hearted shapeshifter, hungering for", "the souls of hard working decent folk like me. Others", "say it's just a sheep.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Someone say it's a black hearted shapeshifter, hungering for", "the souls of hard working decent folk like me. Others", "say it's just a sheep.");
 			stage = 21;
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "What, on my land? Leave my livestock alone you", "scoundrel!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What, on my land? Leave my livestock alone you", "scoundrel!");
 			stage = 21;
 			break;
 		case 21:
 			end();
 			break;
 		case 4000:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "How many more do I need to give you?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How many more do I need to give you?");
 			stage = 4001;
 			break;
 		case 4001:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You need to collect " + SheepShearer.getWoolLeft(player) + " more balls of wool.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You need to collect " + SheepShearer.getWoolLeft(player) + " more balls of wool.");
 			stage = 4002;
 			break;
 		case 4002:
 			if (!player.getInventory().contains(1759, 1)) {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I haven't got any at the moment.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I haven't got any at the moment.");
 				stage = 4003;
 				break;
 			}
 			break;
 		case 4003:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well at least you haven't been eaten.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well at least you haven't been eaten.");
 			stage = 21;
 			break;
 		case 4004:
 			break;
 		case 5000:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'm back!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm back!");
 			stage = 50001;
 			break;
 		case 50001:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "How are you doing getting those balls of wool?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "How are you doing getting those balls of wool?");
 			stage = 50002;
 			break;
 		case 50002:
 			if (player.getInventory().contains(1759, 1)) {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I have some.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I have some.");
 				stage = 50010;
 				break;
 			}
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "How many more do I need to give you?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How many more do I need to give you?");
 			stage = 50003;
 			break;
 		case 50003:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You need to collect " + SheepShearer.getWoolLeft(player) + " more balls of wool.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You need to collect " + SheepShearer.getWoolLeft(player) + " more balls of wool.");
 			stage = 50004;
 			break;
 		case 50004:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Well I've got some wool. I've not managed to make it", "into a ball though.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Well I've got some wool. I've not managed to make it", "into a ball though.");
 			stage = 50005;
 			break;
 		case 50005:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well go find a spinning wheel then. You can find one", "on the first floor of the Lumbridge Castle, just walk east on", "the road outside my house and you'll find Lumbridge.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well go find a spinning wheel then. You can find one", "on the first floor of the Lumbridge Castle, just walk east on", "the road outside my house and you'll find Lumbridge.");
 			stage = 50006;
 			break;
 		case 50006:
 			end();
 			break;
 		case 50010:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Give 'em here then.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Give 'em here then.");
 			stage = 5011;
 			break;
 		case 5011:
@@ -330,24 +330,24 @@ public final class FredTheFarmer extends DialoguePlugin {
 		case 5012:
 			if (SheepShearer.getWoolGiven(player) == 20) {
 				player.getQuestRepository().getQuest("Sheep Shearer").setStage(player, 90);
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "That's the last of them.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "That's the last of them.");
 				stage = 999;
 				break;// enough
 			}
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "That's all I've got so far.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "That's all I've got so far.");
 			stage = 5013;
 			break;
 		case 5013:
 			if (SheepShearer.getWoolGiven(player) == 20) {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "That's the last of them.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "That's the last of them.");
 				stage = 999;
 				break;// enough
 			}
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I need " + SheepShearer.getWoolCollect(player) + " before I can pay you.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I need " + SheepShearer.getWoolCollect(player) + " before I can pay you.");
 			stage = 5014;
 			break;
 		case 999:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I guess I'd better pay you then.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I guess I'd better pay you then.");
 			stage = 1000;
 			break;
 		case 1000:
@@ -357,7 +357,7 @@ public final class FredTheFarmer extends DialoguePlugin {
 			player.removeAttribute("sheep-shearer:wool");
 			break;
 		case 5014:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Ok, I'll work on it.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok, I'll work on it.");
 			stage = 5015;
 			break;
 		case 5015:

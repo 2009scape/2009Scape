@@ -42,7 +42,7 @@ public final class JonnytheBeardPlugin extends DialoguePlugin {
 			end();
 			return true;
 		}
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Will you buy me a beer?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Will you buy me a beer?");
 		stage = 0;
 		return true;
 	}
@@ -51,7 +51,7 @@ public final class JonnytheBeardPlugin extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, I don't think I will.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, I don't think I will.");
 			stage = 1;
 			break;
 		case 1:

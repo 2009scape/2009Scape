@@ -36,7 +36,7 @@ public class GuardDialoguePlugin extends DialoguePlugin {
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
 		boolean read = player.getSavedData().getGlobalData().hasReadPlaques();
-		interpreter.sendDialogues(npc, read ? FacialExpression.NORMAL : FacialExpression.ANGRY, read ? "Can I help you?" : "Ahem! Can I help you?");
+		interpreter.sendDialogues(npc, read ? FacialExpression.NO_EXPRESSION : FacialExpression.FURIOUS, read ? "Can I help you?" : "Ahem! Can I help you?");
 		stage = 0;
 		return true;
 	}
@@ -49,15 +49,15 @@ public class GuardDialoguePlugin extends DialoguePlugin {
 			end();
 			break;
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, read ? "Can I go upstairs?" : "I'd like to go up to the training centre please.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, read ? "Can I go upstairs?" : "I'd like to go up to the training centre please.");
 			increment();
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.ANGRY, !read ? "Sorry, citizen, you can't go up there." : "", "Yes, citizen. Before you do I am instructed to give", "you one final piece of information");
+			interpreter.sendDialogues(npc, FacialExpression.FURIOUS, !read ? "Sorry, citizen, you can't go up there." : "", "Yes, citizen. Before you do I am instructed to give", "you one final piece of information");
 			increment();
 			break;
 		case 2:
-			interpreter.sendDialogues(player, read ? FacialExpression.NORMAL : FacialExpression.SNEAKY, read ? "Oh, okay then." : "Why not?");
+			interpreter.sendDialogues(player, read ? FacialExpression.NO_EXPRESSION : FacialExpression.OSRS_SNEAKY, read ? "Oh, okay then." : "Why not?");
 			increment();
 			break;
 		case 3:
@@ -69,27 +69,27 @@ public class GuardDialoguePlugin extends DialoguePlugin {
 			increment();
 			break;
 		case 4:
-			interpreter.sendDialogues(read ? npc : player, FacialExpression.NORMAL, !read ? "Oh. How do I do that?" : "Reporting is very simple and easy to do. Simply click", "the Report Abuse button at the bottom of the screen", "and you will be shown the following screen:");
+			interpreter.sendDialogues(read ? npc : player, FacialExpression.NO_EXPRESSION, !read ? "Oh. How do I do that?" : "Reporting is very simple and easy to do. Simply click", "the Report Abuse button at the bottom of the screen", "and you will be shown the following screen:");
 			stage = read ? 10 : stage + 1;
 			break;
 		case 5:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Each of these gublinches have been caught breaking the", "Rules of " + GameWorld.getName() + ". You should read the plaques on", "each of their cells to learn what they did wrong.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Each of these gublinches have been caught breaking the", "Rules of " + GameWorld.getName() + ". You should read the plaques on", "each of their cells to learn what they did wrong.");
 			increment();
 			break;
 		case 6:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Oh, right. I can enter the training centre once I have", "done that?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Oh, right. I can enter the training centre once I have", "done that?");
 			increment();
 			break;
 		case 7:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Yes. Once you have have examined each of the plaques,", "come and speak to me and I will tell you about the", "Report Abuse function.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yes. Once you have have examined each of the plaques,", "come and speak to me and I will tell you about the", "Report Abuse function.");
 			increment();
 			break;
 		case 8:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "After that, I can let you into the training centre,", "upstairs.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "After that, I can let you into the training centre,", "upstairs.");
 			increment();
 			break;
 		case 9:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Okay, thanks for the help.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Okay, thanks for the help.");
 			player.getPacketDispatch().sendMessage("You need to read the jail plaques before the guard will allow you upstairs.");
 			stage = -1;
 			break;
@@ -111,19 +111,19 @@ public class GuardDialoguePlugin extends DialoguePlugin {
 			}
 			break;
 		case 12:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Simply enter the player's name in the box and click the", "rule that the offender was breaking.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Simply enter the player's name in the box and click the", "rule that the offender was breaking.");
 			stage = 13;
 			break;
 		case 13:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Okay. Then what?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Okay. Then what?");
 			stage = 14;
 			break;
 		case 14:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "That's it! It reall is that simple and it only takes a ", "moment to do. Now you may enter the training", "centre. Good luck, citizen.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "That's it! It reall is that simple and it only takes a ", "moment to do. Now you may enter the training", "centre. Good luck, citizen.");
 			stage = 15;
 			break;
 		case 15:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Thanks!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Thanks!");
 			stage = -1;
 			break;
 		default:

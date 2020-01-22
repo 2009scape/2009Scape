@@ -39,7 +39,7 @@ public final class GraardoorJRDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Not sure this is going to be worth my time but...", "how are you?");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Not sure this is going to be worth my time but...", "how are you?");
 		stage = 0;
 		return true;
 	}
@@ -52,7 +52,7 @@ public final class GraardoorJRDialogue extends DialoguePlugin {
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Nope. Not worth it.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Nope. Not worth it.");
 			stage = 2;
 			break;
 		case 2:

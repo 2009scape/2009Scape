@@ -47,7 +47,7 @@ public class VarrockGateGuardDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Please don't disturb me, I've got to keep an eye out for", "suspicious indiduals.");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Please don't disturb me, I've got to keep an eye out for", "suspicious indiduals.");
 		stage = 0;
 		return true;
 	}

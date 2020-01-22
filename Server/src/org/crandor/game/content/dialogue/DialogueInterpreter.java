@@ -483,7 +483,7 @@ public final class DialogueInterpreter {
         boolean npc = npcId > -1;
         int interfaceId = (npc ? 240 : 63) + messages.length;
         if (expression == -1) {
-            expression = FacialExpression.NORMAL.getAnimationId();
+            expression = FacialExpression.NO_EXPRESSION.getAnimationId();
         }
         player.getPacketDispatch().sendAnimationInterface(expression, interfaceId, 2);
         if (npc) {

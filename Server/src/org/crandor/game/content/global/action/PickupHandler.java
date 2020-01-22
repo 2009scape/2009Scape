@@ -80,7 +80,7 @@ public final class PickupHandler {
 			return false;
 		}
 		if (item.getId() == 8858 || item.getId() == 8859) {
-			player.getDialogueInterpreter().sendDialogues(4300, FacialExpression.ANGRY, "Hey! You can't take that, it's guild property. Take one", "from the pile.");
+			player.getDialogueInterpreter().sendDialogues(4300, FacialExpression.FURIOUS, "Hey! You can't take that, it's guild property. Take one", "from the pile.");
 			return false;
 		}
 		if (GodType.forCape(item) != null) {

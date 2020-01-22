@@ -39,7 +39,7 @@ public final class YuriDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hmm... you smell strange...");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hmm... you smell strange...");
 		stage = 0;
 		return true;
 	}

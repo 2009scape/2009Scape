@@ -30,7 +30,7 @@ public class SmithingApparenticeDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can you teach me the basics of smelting please?");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you teach me the basics of smelting please?");
 		stage = 0;
 		return true;
 	}
@@ -39,7 +39,7 @@ public class SmithingApparenticeDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You'll need to have mined some ore to smelt first. Go", "see the mining tutor to the south if you're not sure", "how to do this.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You'll need to have mined some ore to smelt first. Go", "see the mining tutor to the south if you're not sure", "how to do this.");
 			stage = 1;
 			break;
 		case 1:

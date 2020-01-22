@@ -52,7 +52,7 @@ public final class CapnIzzyDialogue extends DialoguePlugin {
 			stage = 200;
 			return true;
 		}
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Ahoy Cap'n!");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ahoy Cap'n!");
 		stage = 0;
 		return true;
 	}
@@ -61,7 +61,7 @@ public final class CapnIzzyDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Ahoy there!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ahoy there!");
 			stage = 90;
 			break;
 		case 90:
@@ -73,7 +73,7 @@ public final class CapnIzzyDialogue extends DialoguePlugin {
 			stage = 92;
 			break;
 		case 92:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Don't mind me parrot, he's Cracked Jenny's Tea Cup!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Don't mind me parrot, he's Cracked Jenny's Tea Cup!");
 			stage = 1;
 			break;
 		case 1:
@@ -83,77 +83,77 @@ public final class CapnIzzyDialogue extends DialoguePlugin {
 		case 2:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What is this place?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What is this place?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What do I do in the arena?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What do I do in the arena?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'd like to use the Agility Arena, please.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'd like to use the Agility Arena, please.");
 				stage = 30;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can you tell me a bit about the Skillcape of Agility,", "please?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you tell me a bit about the Skillcape of Agility,", "please?");
 				stage = 40;
 				break;
 			case 5:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "See you later.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "See you later.");
 				stage = 50;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "This, me hearty, is the entrance to the Brimhaven", "Agility Arena!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "This, me hearty, is the entrance to the Brimhaven", "Agility Arena!");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I were diffin for buried treasure when I found it!", "Amazed I was! It was a sight to behold!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I were diffin for buried treasure when I found it!", "Amazed I was! It was a sight to behold!");
 			stage = 12;
 			break;
 		case 12:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "It were the biggest thing I'd ever seen! it must've been", "at least a league from side to side!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "It were the biggest thing I'd ever seen! it must've been", "at least a league from side to side!");
 			stage = 13;
 			break;
 		case 13:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "It made me list, I were that excited!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "It made me list, I were that excited!");
 			stage = 14;
 			break;
 		case 14:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I'd found a huge cave with all these platforms. I reckon", "it be an ancient civilisation that made it. I had to be", "mighty careful as there was these traps everywehre!", "Dangerous it was!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'd found a huge cave with all these platforms. I reckon", "it be an ancient civilisation that made it. I had to be", "mighty careful as there was these traps everywehre!", "Dangerous it was!");
 			stage = 15;
 			break;
 		case 15:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Entrance is only 200 coins!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Entrance is only 200 coins!");
 			stage = 1;
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well, me hearty, it's simple. Ye can cross between two", "platforms by using the traps or obstacles strung across", "'em. Try and make your way to the pillar that is", "indicated by the flashing arrow.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, me hearty, it's simple. Ye can cross between two", "platforms by using the traps or obstacles strung across", "'em. Try and make your way to the pillar that is", "indicated by the flashing arrow.");
 			stage = 21;
 			break;
 		case 21:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Ye receive tickets for tagging more than one pillar in a", "row. So ye won't get a ticket from the first pillar but", "ye will for every platform ye tag in a row after that.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ye receive tickets for tagging more than one pillar in a", "row. So ye won't get a ticket from the first pillar but", "ye will for every platform ye tag in a row after that.");
 			stage = 22;
 			break;
 		case 22:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "If ye miss a platform ye will miss out on the next ticket", "so try and get every platform you can! When ye be", "done, take the tickets to Jackie over there and she'll", "exchange them for more stuff!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "If ye miss a platform ye will miss out on the next ticket", "so try and get every platform you can! When ye be", "done, take the tickets to Jackie over there and she'll", "exchange them for more stuff!");
 			stage = 23;
 			break;
 		case 23:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Thanks me hearty!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Thanks me hearty!");
 			stage = 24;
 			break;
 		case 24:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Thanks!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Thanks!");
 			stage = 1;
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Aye, entrance be 200 coins.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Aye, entrance be 200 coins.");
 			stage = 31;
 			break;
 		case 31:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "A word of warning me hearty! There are dangerous", "traps down there!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "A word of warning me hearty! There are dangerous", "traps down there!");
 			stage = 32;
 			break;
 		case 32:
@@ -163,11 +163,11 @@ public final class CapnIzzyDialogue extends DialoguePlugin {
 		case 33:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Ok, here's 200 coins.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok, here's 200 coins.");
 				stage = 35;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Never mind.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Never mind.");
 				stage = 34;
 				break;
 			}
@@ -196,11 +196,11 @@ public final class CapnIzzyDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 40:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Aye, to be sure! The Skillcape of Agility be the symbol", "of the master of dexterity! One who wears it can climb", "like a cat, run like the wind and jump like...err, well", "jump like a jumping thing! Now, be there anything else");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Aye, to be sure! The Skillcape of Agility be the symbol", "of the master of dexterity! One who wears it can climb", "like a cat, run like the wind and jump like...err, well", "jump like a jumping thing! Now, be there anything else");
 			stage = 41;
 			break;
 		case 41:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "ye'd like to know?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "ye'd like to know?");
 			if (!Skillcape.isMaster(player, Skills.AGILITY)) {
 				stage = 1;
 			} else {

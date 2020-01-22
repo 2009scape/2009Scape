@@ -39,7 +39,7 @@ public final class BurthorpeSoldierDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hi!");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hi!");
 		stage = 0;
 		return true;
 	}
@@ -48,11 +48,11 @@ public final class BurthorpeSoldierDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Vacca foeda.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Vacca foeda.");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Er...");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Er...");
 			stage = 2;
 			break;
 		case 2:

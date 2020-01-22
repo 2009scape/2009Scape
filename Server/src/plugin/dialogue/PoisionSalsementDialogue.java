@@ -32,11 +32,11 @@ public class PoisionSalsementDialogue extends DialoguePlugin {
 		case 0:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I'm afraid I'm all sold out of poison at the moment.", "People know a bargain when they see it!");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm afraid I'm all sold out of poison at the moment.", "People know a bargain when they see it!");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello.");
 				stage = 20;
 				break;
 
@@ -46,15 +46,15 @@ public class PoisionSalsementDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Howdy! Thanks for buying all that low alcohol", "beer from me! Now I have the funds to whip up a new", "batch of my patented multipurpose poision!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Howdy! Thanks for buying all that low alcohol", "beer from me! Now I have the funds to whip up a new", "batch of my patented multipurpose poision!");
 			stage = 21;
 			break;
 		case 21:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Maybe I can take your name and add it to my mailing", "list for potential purchasers of Peter Potter's patented", "multi-purpose poison?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Maybe I can take your name and add it to my mailing", "list for potential purchasers of Peter Potter's patented", "multi-purpose poison?");
 			stage = 22;
 			break;
 		case 22:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Thanks, but no thanks.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Thanks, but no thanks.");
 			stage = 23;
 			break;
 		case 23:

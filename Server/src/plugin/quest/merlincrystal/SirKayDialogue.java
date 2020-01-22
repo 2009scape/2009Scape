@@ -40,7 +40,7 @@ public final class SirKayDialogue extends DialoguePlugin {
 		npc = (NPC) args[0];
 		boolean male = true;
 		String gend = male ? "sir" : "madam";
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Good day " + gend + "!");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Good day " + gend + "!");
 		stage = 0;
 		return true;
 	}
@@ -50,35 +50,35 @@ public final class SirKayDialogue extends DialoguePlugin {
 		switch (stage) {
 		case 0:
 			if (player.getQuestRepository().getQuest("Merlin's Crystal").getStage(player) == 10) {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Do you know how Merlin got trapped?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you know how Merlin got trapped?");
 				stage = 1;
 			} else if (player.getQuestRepository().getQuest("Merlin's Crystal").getStage(player) == 20) {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Any idea how to get into Morgan Le Faye's stronghold?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Any idea how to get into Morgan Le Faye's stronghold?");
 				stage = 5;
 			}
 			if (player.getQuestRepository().getQuest("Merlin's Crystal").getStage(player) != 10 && player.getQuestRepository().getQuest("Merlin's Crystal").getStage(player) != 20) {
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I am afraid I have no time to chat.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I am afraid I have no time to chat.");
 				stage = 15;
 			}
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I would guess this is the work of the evil Morgan Le", "Faye!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I would guess this is the work of the evil Morgan Le", "Faye!");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "And where could I find her?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "And where could I find her?");
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "She lives in her stronghold to the south of here,", "guarded by some renegade knights led by Sir Mordred.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "She lives in her stronghold to the south of here,", "guarded by some renegade knights led by Sir Mordred.");
 			stage = 4;
 			break;
 		case 4:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Any idea how to get into Morgan Le Faye's stronghold?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Any idea how to get into Morgan Le Faye's stronghold?");
 			stage = 5;
 			break;
 		case 5:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "No, you've got me stumped there...");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "No, you've got me stumped there...");
 			player.getQuestRepository().getQuest("Merlin's Crystal").setStage(player, 20);
 			player.getQuestRepository().syncronizeTab(player);
 			stage = 15;

@@ -39,7 +39,7 @@ public final class BrosDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Out of my way, punk");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Out of my way, punk");
 		stage = 1;
 		return true;
 	}

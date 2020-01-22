@@ -44,7 +44,7 @@ public class ThrantaxDialogue extends DialoguePlugin {
 		final Quest quest = player.getQuestRepository().getQuest("Merlin's Crystal");
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Now what were those magic words again?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Now what were those magic words again?");
 			stage = 1;
 			break;
 		case 1:
@@ -54,73 +54,73 @@ public class ThrantaxDialogue extends DialoguePlugin {
 		case 2:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Snarthtrick...");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Snarthtrick...");
 				stage = 100;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Snarthon...");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Snarthon...");
 				stage = 201;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Snarthanto...");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Snarthanto...");
 				stage = 300;
 				break;
 			}
 			break;
 		case 100:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Candanto...");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Candanto...");
 			stage = 101;
 			break;
 		case 101:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Termon!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Termon!");
 			stage = 500;
 			break;
 		case 200:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Candtrick...");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Candtrick...");
 			stage = 201;
 			break;
 		case 201:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Termanto!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Termanto!");
 			stage = 203;
 			break;
 		case 300:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Cando...");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Cando...");
 			stage = 301;
 			break;
 		case 301:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Termtrick!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Termtrick!");
 			stage = 500;
 			break;
 		case 203:
-			interpreter.sendDialogues(238, FacialExpression.NORMAL, "GRAAAAAARGH!");
+			interpreter.sendDialogues(238, FacialExpression.NO_EXPRESSION, "GRAAAAAARGH!");
 			stage = 204;
 			break;
 		case 204:
-			interpreter.sendDialogues(238, FacialExpression.NORMAL, "Thou hast me in thine control. So that I mayst return", "from whence I came, I must grant thee a boon.");
+			interpreter.sendDialogues(238, FacialExpression.NO_EXPRESSION, "Thou hast me in thine control. So that I mayst return", "from whence I came, I must grant thee a boon.");
 			stage = 205;
 			break;
 		case 205:
-			interpreter.sendDialogues(238, FacialExpression.NORMAL, "What dost thou wish of me?");
+			interpreter.sendDialogues(238, FacialExpression.NO_EXPRESSION, "What dost thou wish of me?");
 			stage = 206;
 			break;
 		case 206:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I wish you to free Merlin from his giant crystal!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I wish you to free Merlin from his giant crystal!");
 			stage = 207;
 			break;
 		case 207:
-			interpreter.sendDialogues(238, FacialExpression.NORMAL, "GRAAAAAARGH!");
+			interpreter.sendDialogues(238, FacialExpression.NO_EXPRESSION, "GRAAAAAARGH!");
 			stage = 208;
 			break;
 		case 208:
-			interpreter.sendDialogues(238, FacialExpression.NORMAL, "The deed is done.");
+			interpreter.sendDialogues(238, FacialExpression.NO_EXPRESSION, "The deed is done.");
 			stage = 209;
 			break;
 		case 209:
-			interpreter.sendDialogues(238, FacialExpression.NORMAL, "Thou mayst now shatter Merlin's Crystal with", "Excalibur,");
+			interpreter.sendDialogues(238, FacialExpression.NO_EXPRESSION, "Thou mayst now shatter Merlin's Crystal with", "Excalibur,");
 			stage = 210;
 			break;
 		case 210:
-			interpreter.sendDialogues(238, FacialExpression.NORMAL, "and I can once more rest. Begone! And leave me once", "more in peace.");
+			interpreter.sendDialogues(238, FacialExpression.NO_EXPRESSION, "and I can once more rest. Begone! And leave me once", "more in peace.");
 			stage = 1000;
 			break;
 		case 303:

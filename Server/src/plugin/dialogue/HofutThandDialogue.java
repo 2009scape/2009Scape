@@ -41,7 +41,7 @@ public final class HofutThandDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello!");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello!");
 		stage = 0;
 		return true;
 	}
@@ -50,7 +50,7 @@ public final class HofutThandDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "What? Oh, hello. I was deep in thought. Did", "you say something?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What? Oh, hello. I was deep in thought. Did", "you say something?");
 			stage = 1;
 			break;
 		case 1:
@@ -60,21 +60,21 @@ public final class HofutThandDialogue extends DialoguePlugin {
 		case 2:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Do you know about the prices for armour and weapons?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you know about the prices for armour and weapons?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I didn't say anything at all.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I didn't say anything at all.");
 				stage = 20;
 				break;
 			}
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I thought you at least said. 'Hello' I must be", "going mad. Do you think I'm going mad?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I thought you at least said. 'Hello' I must be", "going mad. Do you think I'm going mad?");
 			stage = 21;
 			break;
 		case 21:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Oh, most definitely. You should see a doctor before it's", "too late.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Oh, most definitely. You should see a doctor before it's", "too late.");
 			stage = 22;
 			break;
 		case 22:

@@ -39,7 +39,7 @@ public final class MissSchismDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Oooh, my dear, have you heard the news?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oooh, my dear, have you heard the news?");
 		stage = 0;
 		return true;
 	}
@@ -54,22 +54,22 @@ public final class MissSchismDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Ok, tell me about the news.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok, tell me about the news.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Who are you?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Who are you?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'm not talking to you, you horrible woman.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm not talking to you, you horrible woman.");
 				stage = 30;
 				break;
 			}
 
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well, there's just to much to tell at once! What would", "you like to hear first: the vampire or the bank?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, there's just to much to tell at once! What would", "you like to hear first: the vampire or the bank?");
 			stage = 11;
 			break;
 		case 11:
@@ -79,11 +79,11 @@ public final class MissSchismDialogue extends DialoguePlugin {
 		case 12:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Tell me about the vampire.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Tell me about the vampire.");
 				stage = 110;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What about the bank?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What about the bank?");
 				stage = 210;
 				break;
 			}
@@ -91,7 +91,7 @@ public final class MissSchismDialogue extends DialoguePlugin {
 			break;
 		case 110:
 			if (player.getQuestRepository().isComplete("Vampire Slayer")) {
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well, there's nothing to tell NOW. You killed it.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, there's nothing to tell NOW. You killed it.");
 				stage = 111;
 			} else {
 				npc("There is an evil Vampire terrorizing the city!");
@@ -99,15 +99,15 @@ public final class MissSchismDialogue extends DialoguePlugin {
 			}
 			break;
 		case 111:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "You could sound a little grateful.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "You could sound a little grateful.");
 			stage = 112;
 			break;
 		case 112:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I'm sure I could, but I don't see why. The vampie wasn't", "bothering me.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm sure I could, but I don't see why. The vampie wasn't", "bothering me.");
 			stage = 113;
 			break;
 		case 113:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "...");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "...");
 			stage = 114;
 			break;
 		case 114:
@@ -121,53 +121,53 @@ public final class MissSchismDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 210:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "It's terrible, absolutely terrible! Those poor people!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "It's terrible, absolutely terrible! Those poor people!");
 			stage = 211;
 			break;
 		case 211:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Ok, yeah.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok, yeah.");
 			stage = 212;
 			break;
 		case 212:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "And who'd have ever thought such a sweet old genleman", "would do such a thing?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "And who'd have ever thought such a sweet old genleman", "would do such a thing?");
 			stage = 213;
 			break;
 		case 213:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Are we talking about the bank robbery?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Are we talking about the bank robbery?");
 			stage = 214;
 			break;
 		case 214:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Oh yes, my dear. It was terrible! TERRIBLE!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh yes, my dear. It was terrible! TERRIBLE!");
 			stage = 215;
 			break;
 		case 215:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I, my dear, am a concerned citizen of Draynor Village.", "Ever since the Council allowed those farmers to set up", "their stalls here, we've had a constant flow of thieves and", "murderers through our fair village, and I decided that");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I, my dear, am a concerned citizen of Draynor Village.", "Ever since the Council allowed those farmers to set up", "their stalls here, we've had a constant flow of thieves and", "murderers through our fair village, and I decided that");
 			stage = 21;
 			break;
 		case 21:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "someone HAD to stand up and", "keep an eye on the situation.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "someone HAD to stand up and", "keep an eye on the situation.");
 			stage = 22;
 			break;
 		case 22:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I also do voluntary work for the Draynor Manor", "Restoration Fund. We're campagning to have", "Draynor manor turned into a museum before the wet-rot", "destroys it completely.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I also do voluntary work for the Draynor Manor", "Restoration Fund. We're campagning to have", "Draynor manor turned into a museum before the wet-rot", "destroys it completely.");
 			stage = 23;
 			break;
 		case 23:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Well, now that I've cleared the vampire out of the manor,", "I guess you won't have to mutch trouble turning it into a", "museum.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Well, now that I've cleared the vampire out of the manor,", "I guess you won't have to mutch trouble turning it into a", "museum.");
 			stage = 24;
 			break;
 		case 24:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "That's all very well dear, but no vampire was ever going to", "stop me making it a museum.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "That's all very well dear, but no vampire was ever going to", "stop me making it a museum.");
 			stage = 25;
 			break;
 		case 25:
 			end();
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Oooh.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oooh.");
 			stage = 31;
 			break;
 		case 31:

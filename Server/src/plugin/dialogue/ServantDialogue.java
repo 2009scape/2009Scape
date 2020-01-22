@@ -30,7 +30,7 @@ public class ServantDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hi!");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hi!");
 		stage = 0;
 		return true;
 	}
@@ -39,15 +39,15 @@ public class ServantDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hi!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hi!");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Look, I'd better not talk. I'll get in trouble.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Look, I'd better not talk. I'll get in trouble.");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "If you want someone to show you round the castle ask", "Eohric, the Head Servant.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "If you want someone to show you round the castle ask", "Eohric, the Head Servant.");
 			stage = 3;
 			break;
 		case 3:

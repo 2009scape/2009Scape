@@ -39,7 +39,7 @@ public final class DoomsayerDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Dooooom!");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Dooooom!");
 		stage = 0;
 		return true;
 	}
@@ -48,51 +48,51 @@ public final class DoomsayerDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Where?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Where?");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "All around us! I can feel it in the air, hear it on the", "wind smell it....also in the air!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "All around us! I can feel it in the air, hear it on the", "wind smell it....also in the air!");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Is there anything we can do about this doom?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Is there anything we can do about this doom?");
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "There is nothing you need to do my friend! I am the", "Doomsayer, although my real title could be something like", "the Danger Tutor.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "There is nothing you need to do my friend! I am the", "Doomsayer, although my real title could be something like", "the Danger Tutor.");
 			stage = 4;
 			break;
 		case 4:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Danger Tutor?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Danger Tutor?");
 			stage = 5;
 			break;
 		case 5:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Yes! I roam the world sensing danger.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yes! I roam the world sensing danger.");
 			stage = 6;
 			break;
 		case 6:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "If I find a dangerous area, then I put up warning signs", "that will tell you what is so dangerous about that area.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "If I find a dangerous area, then I put up warning signs", "that will tell you what is so dangerous about that area.");
 			stage = 7;
 			break;
 		case 7:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "If you see the signs often enough, then you can", "turn them off; by that time you likely know what the", "area has in store for you.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "If you see the signs often enough, then you can", "turn them off; by that time you likely know what the", "area has in store for you.");
 			stage = 8;
 			break;
 		case 8:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "But what if I want to see the warning again?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "But what if I want to see the warning again?");
 			stage = 9;
 			break;
 		case 9:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "That's why I'm waiting here!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "That's why I'm waiting here!");
 			stage = 10;
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "If you want to see the warning messages again, I", "can turn them back on for you.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "If you want to see the warning messages again, I", "can turn them back on for you.");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Do you need to turn on any warning right now?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Do you need to turn on any warning right now?");
 			stage = 12;
 			break;
 		case 12:
@@ -106,13 +106,13 @@ public final class DoomsayerDialogue extends DialoguePlugin {
 				player.getWarningMessages().open(player);
 				break;
 			case 2:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Ok, keep an eye out for the messages though!");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ok, keep an eye out for the messages though!");
 				stage = 30;
 				break;
 			}
 			break;
 		case 30:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, " I will.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, " I will.");
 			stage = 31;
 			break;
 		case 31:

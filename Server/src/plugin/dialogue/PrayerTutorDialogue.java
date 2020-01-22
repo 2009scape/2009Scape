@@ -41,33 +41,33 @@ public class PrayerTutorDialogue extends DialoguePlugin {
 		case 0:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I already know about the basic prayers, got any tips?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I already know about the basic prayers, got any tips?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Tell me about different bones.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Tell me about different bones.");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Goodbye.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Goodbye.");
 				stage = 30;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "For you " + player.getUsername() + "? Always. There are many", "advantages to using the protection prayers when", "fighting the more dangerous foes. You can protect", "yourself from magic, melee or ranged attacks with these");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "For you " + player.getUsername() + "? Always. There are many", "advantages to using the protection prayers when", "fighting the more dangerous foes. You can protect", "yourself from magic, melee or ranged attacks with these");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "useful prayers.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "useful prayers.");
 			stage = 12;
 			break;
 		case 12:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "A good prayer to have when venturing into the", "wilderness is protect item. This will protect one of your", "items if you should die there.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "A good prayer to have when venturing into the", "wilderness is protect item. This will protect one of your", "items if you should die there.");
 			stage = 13;
 			break;
 		case 13:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Remember though that venturing into the wilderness is", "a risky business, store your items in a bank before you", "go there so that you don't lose them.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Remember though that venturing into the wilderness is", "a risky business, store your items in a bank before you", "go there so that you don't lose them.");
 			stage = 14;
 			break;
 		case 14:
@@ -93,7 +93,7 @@ public class PrayerTutorDialogue extends DialoguePlugin {
 				stage = 20;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Goodbye.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Goodbye.");
 				stage = 40;
 				break;
 			}

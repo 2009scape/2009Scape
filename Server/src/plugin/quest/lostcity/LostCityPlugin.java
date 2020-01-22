@@ -116,7 +116,7 @@ public final class LostCityPlugin extends OptionHandler {
 			showShamus();
 			return;
 		}
-		player.getDialogueInterpreter().sendDialogues(SHAMUS, FacialExpression.ANGRY, "Hey! Yer big elephant! Don't go choppin' down me", "house, now!");
+		player.getDialogueInterpreter().sendDialogues(SHAMUS, FacialExpression.FURIOUS, "Hey! Yer big elephant! Don't go choppin' down me", "house, now!");
 	}
 
 	/**

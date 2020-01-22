@@ -124,7 +124,7 @@ public final class GatheringSkillPulse extends SkillPulse<GameObject> {
 			return false;
 		}
 		if (node.getId() == 10041) {
-			player.getDialogueInterpreter().sendDialogues(2574, FacialExpression.ANGRY, RandomFunction.random(2) == 1 ? "You'll blow my cover! I'm meant to be hidden!" : "Will you stop that?");
+			player.getDialogueInterpreter().sendDialogues(2574, FacialExpression.FURIOUS, RandomFunction.random(2) == 1 ? "You'll blow my cover! I'm meant to be hidden!" : "Will you stop that?");
 			return true;
 		}
 		if (!checkReward()) {

@@ -72,18 +72,18 @@ public class HouseServantDialogue extends DialoguePlugin {
 			return true;
 		}
 		if (!manager.hasHouse() && inHouse) {
-			interpreter.sendDialogues(npc, npc.getId() == 4243 ? FacialExpression.NORMAL : null, "You don't have a house that I can work in.", "I'll be waiting here if you decide to buy a house.");
+			interpreter.sendDialogues(npc, npc.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "You don't have a house that I can work in.", "I'll be waiting here if you decide to buy a house.");
 			stage = 100;
 			return true;
 		}
 		if (!manager.hasServant()) {
 			ServantType type = ServantType.forId(npc.getId());
 			if(player.getSkills().getLevel(Skills.CONSTRUCTION) >= type.getLevel()){
-				interpreter.sendDialogues(npc, npc.getId() == 4243 ? FacialExpression.NORMAL : null, "You're not aristocracy, but I suppose you'd do. Do you", "want a good cook for " + type.getCost() + " coins?");
+				interpreter.sendDialogues(npc, npc.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "You're not aristocracy, but I suppose you'd do. Do you", "want a good cook for " + type.getCost() + " coins?");
 				stage = 0;
 				return true;
 			} 
-			interpreter.sendDialogues(npc, npc.getId() == 4243 ? FacialExpression.NORMAL : null, "You need a Construction level of " + type.getLevel() + " and you must not", "currently have another person working for you", "in order to hire me.");
+			interpreter.sendDialogues(npc, npc.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "You need a Construction level of " + type.getLevel() + " and you must not", "currently have another person working for you", "in order to hire me.");
 			stage = 100;
 			return true;
 		} else {
@@ -94,24 +94,24 @@ public class HouseServantDialogue extends DialoguePlugin {
 			if (inHouse) {
 				follow(player, servant);
 				if (sawmill) {
-					interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "Very well, I will take these logs to the mill and", "have them converted into planks.");
+					interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "Very well, I will take these logs to the mill and", "have them converted into planks.");
 					stage = 110;
 					return true;
 				} 
 				if (servant.getItem().getAmount() > 0) {
 					if(player.getInventory().freeSlots() < 1){
-						interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "I have returned with what you asked me to", "retrieve. As I see your inventory is full, I shall wait", "with these " + servant.getItem().getAmount()+" items until you are ready.");
+						interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "I have returned with what you asked me to", "retrieve. As I see your inventory is full, I shall wait", "with these " + servant.getItem().getAmount()+" items until you are ready.");
 						stage = 100;
 						return true;
 					}
-					interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "I have returned with what you asked me to", "retrieve.");
+					interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "I have returned with what you asked me to", "retrieve.");
 					stage = 150;
 					return true;
 				}
-				interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "Yes, " + (player.getAppearance().isMale() ? "sir" : "ma'am") + "?", "You have " + (8 - servant.getUses()) + " uses of my services remaining.");
+				interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "Yes, " + (player.getAppearance().isMale() ? "sir" : "ma'am") + "?", "You have " + (8 - servant.getUses()) + " uses of my services remaining.");
 				stage = 50;
 			} else if(npc.getId() != servant.getId()){
-				interpreter.sendDialogues(npc, npc.getId() == 4243 ? FacialExpression.NORMAL : null, "You already have someone working for you.", "Fire them first before hiring me.");
+				interpreter.sendDialogues(npc, npc.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "You already have someone working for you.", "Fire them first before hiring me.");
 				stage = 100;
 			}
 		}
@@ -141,7 +141,7 @@ public class HouseServantDialogue extends DialoguePlugin {
 			}
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, npc.getId() == 4243 ? FacialExpression.NORMAL : null, "Alright, " + (player.getAppearance().isMale() ? "sir" : "ma'am") + ". I can start work immediately.");
+			interpreter.sendDialogues(npc, npc.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "Alright, " + (player.getAppearance().isMale() ? "sir" : "ma'am") + ". I can start work immediately.");
 			stage++;
 			break;
 		case 3:
@@ -186,7 +186,7 @@ public class HouseServantDialogue extends DialoguePlugin {
 			switch(buttonId){
 			case 1:
 				if (!servant.getAttributes().containsKey("con:lastfetch")) {
-					interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "I haven't recently fetched anything from the bank or", "sawmill for you.");
+					interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "I haven't recently fetched anything from the bank or", "sawmill for you.");
 					stage = 50;
 					break;
 				} else {
@@ -204,25 +204,25 @@ public class HouseServantDialogue extends DialoguePlugin {
 				break;
 			case 3:
 				if (type == ServantType.MAID || type == ServantType.RICK) {
-					interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "I am unable to travel to the sawmill for you.");
+					interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "I am unable to travel to the sawmill for you.");
 					stage = 100;
 					break;
 				}
-				interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "Hand the logs to me and I will take them to the", "sawmill for you.");
+				interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "Hand the logs to me and I will take them to the", "sawmill for you.");
 				stage = 100;
 				break;
 			case 4:
 				stage = 100;
 				if (servant.getUses() < 1) {
-					interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "You have no need to pay me yet, I haven't performed", "any of my services for you.");
+					interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "You have no need to pay me yet, I haven't performed", "any of my services for you.");
 					break;
 				}
 				if (!player.getInventory().containsItem(new Item(995, type.getCost()))) {
-					interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "Thanks for the kind gesture, but you don't have enough", "money to pay me. I require " + type.getCost() + " coins every eight uses", "of my services.");
+					interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "Thanks for the kind gesture, but you don't have enough", "money to pay me. I require " + type.getCost() + " coins every eight uses", "of my services.");
 					break;
 				}
 				if (player.getInventory().remove(new Item(995, type.getCost()))) {
-					interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "Thank you very much.");
+					interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "Thank you very much.");
 					servant.setUses(0);
 				}
 				break;
@@ -237,7 +237,7 @@ public class HouseServantDialogue extends DialoguePlugin {
 				break;
 			case 2:
 				if (type.getFood() == null) {
-					interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "I don't know any recipes.");
+					interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "I don't know any recipes.");
 					stage = 100;
 					break;
 				}
@@ -252,12 +252,12 @@ public class HouseServantDialogue extends DialoguePlugin {
 			}
 			break;
 		case 57:
-			interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "Whatever you command.");
+			interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "Whatever you command.");
 			stage = 50;
 			break;
 		case 58:
 			if (player.getInventory().freeSlots() < 1) {
-				interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "I would love to share my fine cooking with you,", "but your hands are currently full.");
+				interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "I would love to share my fine cooking with you,", "but your hands are currently full.");
 				stage = 100;
 				break;
 			}
@@ -280,12 +280,12 @@ public class HouseServantDialogue extends DialoguePlugin {
 				return true;
 			}
 			servant.setUses(servant.getUses() + 1);
-			interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "Luckily for you, I already have some made. Here you", "go.");
+			interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "Luckily for you, I already have some made. Here you", "go.");
 			stage = 50;
 			break;
 		case 59:
 			if (player.getInventory().freeSlots() < 1) {
-				interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "I would love to share my fine cooking with", "you, but you have no space to take anything.");
+				interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "I would love to share my fine cooking with", "you, but you have no space to take anything.");
 				stage = 50;
 				break;
 			}
@@ -304,7 +304,7 @@ public class HouseServantDialogue extends DialoguePlugin {
 				return true;
 			}
 			servant.setUses(servant.getUses() + 1);
-			interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "Luckily for you, I already have some made. Here you", "go.");
+			interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "Luckily for you, I already have some made. Here you", "go.");
 			stage = 100;
 			break;
 		case 60:
@@ -363,7 +363,7 @@ public class HouseServantDialogue extends DialoguePlugin {
 			}
 			break;
 		case 75:
-			interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "Very well. I will return to the Guild of the Servants", "in Ardougne if you wish to re-hire me.");
+			interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "Very well. I will return to the Guild of the Servants", "in Ardougne if you wish to re-hire me.");
 			stage++;
 			break;
 		case 76:
@@ -389,7 +389,7 @@ public class HouseServantDialogue extends DialoguePlugin {
 			int amtLeft = servant.getItem().getAmount();
 			boolean flag = false;
 			if (amtLeft < 1 || servant.getItem() == null) {
-				interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "I don't have any items left.");
+				interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "I don't have any items left.");
 				stage = 100;
 				break;
 			}
@@ -400,7 +400,7 @@ public class HouseServantDialogue extends DialoguePlugin {
 			servant.getItem().setAmount(servant.getItem().getAmount() - amtLeft);
 			player.getInventory().add(new Item(servant.getItem().getId(), amtLeft));
 			if (flag) {
-				interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "I still have " + servant.getItem().getAmount() + " left for you to take from me.");
+				interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "I still have " + servant.getItem().getAmount() + " left for you to take from me.");
 				stage = 100;
 			} else{
 				end();
@@ -425,7 +425,7 @@ public class HouseServantDialogue extends DialoguePlugin {
 		HouseManager manager = player.getHouseManager();
 		Servant servant = manager.getServant();
 		if (!sawmill && player.getInventory().freeSlots() < 1) {
-			interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "You don't have any space in your inventory.");
+			interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "You don't have any space in your inventory.");
 			stage = 100;
 			return false;
 		}
@@ -440,7 +440,7 @@ public class HouseServantDialogue extends DialoguePlugin {
 			return false;
 		}
 		if (servant.getItem().getAmount() > 0) {
-			interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "You can't send me off again, I'm still holding some of", "your previous items.");
+			interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "You can't send me off again, I'm still holding some of", "your previous items.");
 			return false;
 		}
 		return true;
@@ -459,12 +459,12 @@ public class HouseServantDialogue extends DialoguePlugin {
 			return;
 		}
 		if (type == ServantType.MAID || type == ServantType.RICK) {
-			interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "I am unable to take planks to the sawmill.");
+			interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "I am unable to take planks to the sawmill.");
 			return;
 		}
 		int amt = player.getInventory().getAmount(item);
 		if (amt < 1) {
-			interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "You don't have any more of that type of log.");
+			interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "You don't have any more of that type of log.");
 			return;
 		}
 		for (Plank plank : Plank.values()) {
@@ -473,7 +473,7 @@ public class HouseServantDialogue extends DialoguePlugin {
 					amt = type.getCapacity();
 				}
 				if (!player.getInventory().contains(995, plank.getPrice() * amt)) {
-					interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "You don't have enough coins for me to do that.", "I can hold " + type.getCapacity() + " logs and each of this type of log", "costs " + plank.getPrice() + " coins each to convert into plank form.");
+					interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "You don't have enough coins for me to do that.", "I can hold " + type.getCapacity() + " logs and each of this type of log", "costs " + plank.getPrice() + " coins each to convert into plank form.");
 					return;
 				}
 				end();
@@ -512,7 +512,7 @@ public class HouseServantDialogue extends DialoguePlugin {
 			return;
 		}
 		if (!player.getBank().containsItem(item)) {
-			interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NORMAL : null, "You don't seem to have any of those in the bank.");
+			interpreter.sendDialogues(servant, servant.getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "You don't seem to have any of those in the bank.");
 			stage = 100;
 			return;
 		}

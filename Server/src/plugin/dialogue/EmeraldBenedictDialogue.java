@@ -39,7 +39,7 @@ public final class EmeraldBenedictDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Got anything you don't want to lose?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Got anything you don't want to lose?");
 		stage = 0;
 		return true;
 	}
@@ -61,7 +61,7 @@ public final class EmeraldBenedictDialogue extends DialoguePlugin {
 				end();
 				break;
 			case 3:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Yes thanks, and I'll keep hold of it too.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yes thanks, and I'll keep hold of it too.");
 				stage = 99;
 				break;
 			}

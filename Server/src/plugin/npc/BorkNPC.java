@@ -141,7 +141,7 @@ public class BorkNPC extends AbstractNPC {
 			@Override
 			public boolean pulse() {
 				player.unlock();
-				player.getDialogueInterpreter().sendDialogues(player, FacialExpression.ANGRY, "That monk - he called to Zamorak for revenge!");
+				player.getDialogueInterpreter().sendDialogues(player, FacialExpression.FURIOUS, "That monk - he called to Zamorak for revenge!");
 				player.sendMessage("Something is shaking the whole cavern! You should get out of here quick!");
 				PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.SHAKE, 3, 2, 2, 2, 2));
 				player.getInterfaceManager().restoreTabs();

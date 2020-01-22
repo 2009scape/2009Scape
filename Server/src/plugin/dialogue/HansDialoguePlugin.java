@@ -39,7 +39,7 @@ public final class HansDialoguePlugin extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hello. What are you doing here?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello. What are you doing here?");
 		stage = 0;
 		return true;
 	}
@@ -56,7 +56,7 @@ public final class HansDialoguePlugin extends DialoguePlugin {
 
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Who, the Duke? He's in his study, on the first floor.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Who, the Duke? He's in his study, on the first floor.");
 				stage = 10;
 				break;
 			case 2:
@@ -65,22 +65,22 @@ public final class HansDialoguePlugin extends DialoguePlugin {
 				npc.sendChat("Help Help!");
 				break;
 			case 3:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You are in Lumbridge Castle.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You are in Lumbridge Castle.");
 				stage = 30;
 				break;
 			case 4:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I've been patrolling this castle for years!");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I've been patrolling this castle for years!");
 				stage = 40;
 				break;
 			}
 
 			break;
 		case 40:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "You must be old then?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "You must be old then?");
 			stage = 41;
 			break;
 		case 41:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Haha, you could say I'm quite the veteran of these lands.", "Yes, I've been here a fair while...");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Haha, you could say I'm quite the veteran of these lands.", "Yes, I've been here a fair while...");
 			stage = 42;
 			break;
 		case 42:

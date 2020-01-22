@@ -42,7 +42,7 @@ public class SimpleEntityMessage extends DialoguePlugin {
 		String[] messages = new String[args.length];
 		for (int i = 0; i < messages.length; i++)
 			messages[i] = (String) args[i];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, messages);
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, messages);
 		return true;
 	}
 }

@@ -58,7 +58,7 @@ public final class LuthasDialogue extends DialoguePlugin {
 			stage = 900;
 			return true;
 		}
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hello I'm Luthas, I run the banana plantation here.");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello I'm Luthas, I run the banana plantation here.");
 		stage = 0;
 		return true;
 	}
@@ -73,25 +73,25 @@ public final class LuthasDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Could you offer me employment on your plantation?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Could you offer me employment on your plantation?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "That customs officer is annoying isn't she?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "That customs officer is annoying isn't she?");
 				stage = 20;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Yes, I can sort something out. There's a crate ready to", "be loaded onto the ship.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yes, I can sort something out. There's a crate ready to", "be loaded onto the ship.");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You wouldn't believe the demand for bananas from", "Wydin's shop over in Port Sarim. I think this is the", "third crate I've shipped him this month..");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You wouldn't believe the demand for bananas from", "Wydin's shop over in Port Sarim. I think this is the", "third crate I've shipped him this month..");
 			stage = 12;
 			break;
 		case 12:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "If you could go fill it up with bananas, I'll pay you 30", "gold.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "If you could go fill it up with bananas, I'll pay you 30", "gold.");
 			stage = 13;
 			player.getSavedData().getGlobalData().setLuthasTask(true);
 			break;
@@ -99,7 +99,7 @@ public final class LuthasDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I don't know about that.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I don't know about that.");
 			stage = 21;
 			break;
 		case 21:

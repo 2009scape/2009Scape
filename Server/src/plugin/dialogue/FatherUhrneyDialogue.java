@@ -40,7 +40,7 @@ public final class FatherUhrneyDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Go away! I'm meditating!");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Go away! I'm meditating!");
 		stage = 0;
 		return true;
 	}
@@ -63,45 +63,45 @@ public final class FatherUhrneyDialogue extends DialoguePlugin {
 		case 500:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Well, that's friendly.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Well, that's friendly.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I've come to repossess your house.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I've come to repossess your house.");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Father Aereck sent me to talk to you.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Father Aereck sent me to talk to you.");
 				stage = 501;
 				break;
 			}
 			break;
 		case 501:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I suppose I'd better talk to you then. What problems", "has he got himself into this time?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I suppose I'd better talk to you then. What problems", "has he got himself into this time?");
 			stage = 502;
 			break;
 		case 502:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "He's got a ghost haunting his graveyard.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "He's got a ghost haunting his graveyard.");
 			stage = 503;
 			break;
 		case 503:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Oh, the silly fool.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh, the silly fool.");
 			stage = 504;
 			break;
 		case 504:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I leave town for just five months, and ALREADY he", "can't manage.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I leave town for just five months, and ALREADY he", "can't manage.");
 			stage = 505;
 			break;
 		case 505:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "(sigh)");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "(sigh)");
 			stage = 506;
 			break;
 		case 506:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well, I can't go back and exorcise it. I vowed not to", "leave this place. Until I had done a full two years of", "prayer and meditation.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, I can't go back and exorcise it. I vowed not to", "leave this place. Until I had done a full two years of", "prayer and meditation.");
 			stage = 507;
 			break;
 		case 507:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Tell you what I can do though; take this amulet.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Tell you what I can do though; take this amulet.");
 			stage = 508;
 			break;
 		case 508:
@@ -117,19 +117,19 @@ public final class FatherUhrneyDialogue extends DialoguePlugin {
 			stage = 509;
 			break;
 		case 509:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "It is an Amulet of Ghostspeak.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "It is an Amulet of Ghostspeak.");
 			stage = 510;
 			break;
 		case 510:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "So called, because when you wear it you can speak to", "ghosts. A lot of ghosts are doomed to be ghosts because", "they have left some important task uncompleted.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "So called, because when you wear it you can speak to", "ghosts. A lot of ghosts are doomed to be ghosts because", "they have left some important task uncompleted.");
 			stage = 511;
 			break;
 		case 511:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Maybe if you know what this task is, you can get rid of", "the ghost. I'm not making any gurantees mind you,", "but it is the best I can do right now.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Maybe if you know what this task is, you can get rid of", "the ghost. I'm not making any gurantees mind you,", "but it is the best I can do right now.");
 			stage = 512;
 			break;
 		case 512:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Thank you. I'll give it a try!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Thank you. I'll give it a try!");
 			stage = 513;
 			break;
 		case 513:
@@ -138,15 +138,15 @@ public final class FatherUhrneyDialogue extends DialoguePlugin {
 		case 514:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Well, that's friendly.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Well, that's friendly.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I've come to repossess your house.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I've come to repossess your house.");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I've lost the Amulet of Ghostpeak.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I've lost the Amulet of Ghostpeak.");
 				stage = 515;
 				break;
 			}
@@ -166,18 +166,18 @@ public final class FatherUhrneyDialogue extends DialoguePlugin {
 			stage = 519;
 			break;
 		case 516:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "What are you talking about? I can see you've got it", "with you!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What are you talking about? I can see you've got it", "with you!");
 			stage = 518;
 			break;
 		case 517:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "What are you talking about? I can see you've got it", "in your bank!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What are you talking about? I can see you've got it", "in your bank!");
 			stage = 518;
 			break;
 		case 518:
 			end();
 			break;
 		case 519:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "How careless can you get? Those things aren't easy to", "come by you know! It's a good job I've got a spare.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "How careless can you get? Those things aren't easy to", "come by you know! It's a good job I've got a spare.");
 			stage = 520;
 			break;
 		case 520:
@@ -186,11 +186,11 @@ public final class FatherUhrneyDialogue extends DialoguePlugin {
 			stage = 521;
 			break;
 		case 521:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Be more careful this time.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Be more careful this time.");
 			stage = 522;
 			break;
 		case 522:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Ok, I'll try to be.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok, I'll try to be.");
 			stage = 523;
 			break;
 		case 523:
@@ -199,29 +199,29 @@ public final class FatherUhrneyDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Well, that's friendly.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Well, that's friendly.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I've come to repossess your house.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I've come to repossess your house.");
 				stage = 20;
 				break;
 
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I SAID go AWAY.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I SAID go AWAY.");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Ok, ok... sheesh, what a grouch.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok, ok... sheesh, what a grouch.");
 			stage = 12;
 			break;
 		case 12:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Under what grounds???");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Under what grounds???");
 			stage = 21;
 			break;
 		case 21:
@@ -231,41 +231,41 @@ public final class FatherUhrneyDialogue extends DialoguePlugin {
 		case 22:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Repeated failure on mortgage repayments.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Repeated failure on mortgage repayments.");
 				stage = 100;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I don't know. I just wanted this house...");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I don't know. I just wanted this house...");
 				stage = 200;
 				break;
 
 			}
 			break;
 		case 100:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "What?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What?");
 			stage = 101;
 			break;
 		case 101:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I don't have a mortgage! I built this house.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I don't have a mortgage! I built this house.");
 			stage = 102;
 			break;
 		case 102:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sorry. I mus thave got the wrong address. All the", "houses look the same around here.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry. I mus thave got the wrong address. All the", "houses look the same around here.");
 			stage = 103;
 			break;
 		case 103:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "What? What houses? What ARE you talking about???");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What? What houses? What ARE you talking about???");
 			stage = 104;
 			break;
 		case 104:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Never mind.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Never mind.");
 			stage = 105;
 			break;
 		case 105:
 			end();
 			break;
 		case 200:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Oh... go away and stop wasting my time!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh... go away and stop wasting my time!");
 			stage = 201;
 			break;
 		case 201:

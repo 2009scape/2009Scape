@@ -50,41 +50,41 @@ public final class FishingTutorDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can you teach me the basics of fishing please?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you teach me the basics of fishing please?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Tell me about different fish.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Tell me about different fish.");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Where and what should I fish?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Where and what should I fish?");
 				stage = 30;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Goodbye.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Goodbye.");
 				stage = 40;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Ahoy, to fish, you click on your net in your inventory,", "then on the fishin' spot to put it in. Then you pull the", "net out and see if you got any shrimp.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ahoy, to fish, you click on your net in your inventory,", "then on the fishin' spot to put it in. Then you pull the", "net out and see if you got any shrimp.");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I see.. is that it?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I see.. is that it?");
 			stage = 12;
 			break;
 		case 12:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "There's far more as you progress, not just shrimps,", "you get more equipment, bigger fish and other things", "too...");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "There's far more as you progress, not just shrimps,", "you get more equipment, bigger fish and other things", "too...");
 			stage = 13;
 			break;
 		case 13:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "When you have a full inventory, you can cook it or", "take it to the bank. You can find a bank on the roof of", "the castle in Lumbridge and a cookin' range in the", "castles kitchen.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "When you have a full inventory, you can cook it or", "take it to the bank. You can find a bank on the roof of", "the castle in Lumbridge and a cookin' range in the", "castles kitchen.");
 			stage = 14;
 			break;
 		case 14:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Arrr.. if yer lookin' fer quests you should head to", "the Mountain Dwarf who lies north-west of Taverely", "and have a chat with him, I'm sure he can point you in", "the right direction.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Arrr.. if yer lookin' fer quests you should head to", "the Mountain Dwarf who lies north-west of Taverely", "and have a chat with him, I'm sure he can point you in", "the right direction.");
 			stage = 15;
 			break;
 		case 15:
@@ -140,7 +140,7 @@ public final class FishingTutorDialogue extends DialoguePlugin {
 			stage = 20;
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Herrin' can be fished from Catherby and some other", "places when you reach level 10.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Herrin' can be fished from Catherby and some other", "places when you reach level 10.");
 			stage = 31;
 			break;
 		case 31:

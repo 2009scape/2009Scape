@@ -34,11 +34,11 @@ public class MakeOverMageDialogue extends DialoguePlugin {
 		npc = (NPC) args[0];
 		if (args.length == 2) {
 
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hmm... you didn't feel any unexpected growths", "aywhere around your head just then did you?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hmm... you didn't feel any unexpected growths", "aywhere around your head just then did you?");
 			stage = 600;
 			return true;
 		}
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hello there! I am known as the make-over mage! I", "have spent many years researching magics that can", "change your physical appearance!");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello there! I am known as the make-over mage! I", "have spent many years researching magics that can", "change your physical appearance!");
 		stage = 0;
 		return true;
 	}
@@ -47,7 +47,7 @@ public class MakeOverMageDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I can alter your physical form for a small fee of", "only 3000 gold coins! Would you like me to perform my", "magics upon you?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I can alter your physical form for a small fee of", "only 3000 gold coins! Would you like me to perform my", "magics upon you?");
 			stage = 1;
 			break;
 		case 1:
@@ -61,34 +61,34 @@ public class MakeOverMageDialogue extends DialoguePlugin {
 		case 2:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Tell me more about this 'make-over'.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Tell me more about this 'make-over'.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sure. Do it.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sure. Do it.");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No thanks. I'm happy as Saradomin made me.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thanks. I'm happy as Saradomin made me.");
 				stage = 19;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Cool amulet! Can I have one?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Cool amulet! Can I have one?");
 				stage = 40;
 				break;
 			}
 			break;
 		case 20:
 			if (player.getInventory().contains(995, 3000)) {
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You of course agree that if by some accident you", "are turned into a frog you have no rights for", "compensation or refund.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You of course agree that if by some accident you", "are turned into a frog you have no rights for", "compensation or refund.");
 				stage = 25;
 			} else {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I don't have 3000 gold coins on me...");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I don't have 3000 gold coins on me...");
 				stage = 21;
 			}
 			break;
 		case 21:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well, go get it then. No freebies here!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, go get it then. No freebies here!");
 			stage = 22;
 			break;
 		case 22:
@@ -106,31 +106,31 @@ public class MakeOverMageDialogue extends DialoguePlugin {
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Why, of course! Basically, and I will try and explain", "this so that you will understant it correctly,");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Why, of course! Basically, and I will try and explain", "this so that you will understant it correctly,");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I use my secret magical technique to melt your body", "down into a puddle of its elememnts.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I use my secret magical technique to melt your body", "down into a puddle of its elememnts.");
 			stage = 12;
 			break;
 		case 12:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "When I have broken down all trace of your body, I", "then rebuild it into the form I am thinking of.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "When I have broken down all trace of your body, I", "then rebuild it into the form I am thinking of.");
 			stage = 13;
 			break;
 		case 13:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Or, you know, somewhere vaguely close enough", "anyway.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Or, you know, somewhere vaguely close enough", "anyway.");
 			stage = 14;
 			break;
 		case 14:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Uh... that doesn't sound particularly safe to me...");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Uh... that doesn't sound particularly safe to me...");
 			stage = 15;
 			break;
 		case 15:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "It's as safe as houses! Why, I have only had thrity-six", "major accidents this month!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "It's as safe as houses! Why, I have only had thrity-six", "major accidents this month!");
 			stage = 16;
 			break;
 		case 16:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "So what do you say? Feel like a change?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "So what do you say? Feel like a change?");
 			stage = 17;
 			break;
 		case 17:
@@ -140,24 +140,24 @@ public class MakeOverMageDialogue extends DialoguePlugin {
 		case 18:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sure. Do it.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sure. Do it.");
 				stage = 20;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No thanks. I'm happy as Saradomin made me.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thanks. I'm happy as Saradomin made me.");
 				stage = 19;
 				break;
 			}
 			break;
 		case 19:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Ehhh... suit yourself.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ehhh... suit yourself.");
 			stage = 900;
 			break;
 		case 900:
 			end();
 			break;
 		case 40:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "No problem, but please remember that the amulet I will", "sell you is only a copy of my own. It contains no", "magical powers; and as such will only cost you 100", "coins.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "No problem, but please remember that the amulet I will", "sell you is only a copy of my own. It contains no", "magical powers; and as such will only cost you 100", "coins.");
 			stage = 41;
 			break;
 		case 41:
@@ -167,33 +167,33 @@ public class MakeOverMageDialogue extends DialoguePlugin {
 		case 42:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sure, here you go.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sure, here you go.");
 				stage = 100;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No way! That's too expensive.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No way! That's too expensive.");
 				stage = 400;
 				break;
 
 			}
 			break;
 		case 400:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "That's fair enough, my jewellery is not to everyone's", "taste.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "That's fair enough, my jewellery is not to everyone's", "taste.");
 			stage = 401;
 			break;
 		case 401:
 			end();
 			break;
 		case 600:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Uh... No...?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Uh... No...?");
 			stage = 601;
 			break;
 		case 601:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Good, good, I was worried for a second there!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Good, good, I was worried for a second there!");
 			stage = 602;
 			break;
 		case 602:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Uh... Thanks, I guess.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Uh... Thanks, I guess.");
 			stage = 603;
 			break;
 		case 603:

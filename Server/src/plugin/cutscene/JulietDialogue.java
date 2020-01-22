@@ -77,19 +77,19 @@ public final class JulietDialogue extends DialoguePlugin {
 		}
 		switch (quest.getStage(player)) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Romeo, Romeo, wherefore art thou Romeo? Bold", "adventurer, have you seen Romeo on your travels?", "Skinny guy, a bit wishy washy, head full of poetry.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Romeo, Romeo, wherefore art thou Romeo? Bold", "adventurer, have you seen Romeo on your travels?", "Skinny guy, a bit wishy washy, head full of poetry.");
 			stage = 0;
 			break;
 		case 10:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Juliet, I come from Romeo.", "He begs me to tell you that he cares still.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Juliet, I come from Romeo.", "He begs me to tell you that he cares still.");
 			stage = 700;
 			break;
 		case 20:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello Juliet!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello Juliet!");
 			stage = 100;
 			break;
 		case 30:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hi Juliet, I have passed your message on to", "Romeo...he's scared half out of his wits at the news that", "your father wants to kill him.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hi Juliet, I have passed your message on to", "Romeo...he's scared half out of his wits at the news that", "your father wants to kill him.");
 			stage = 900;
 			break;
 		case 40:
@@ -147,7 +147,7 @@ public final class JulietDialogue extends DialoguePlugin {
 						npc.animate(DRINK_ANIM);
 						break;
 					case 2:
-						interpreter.sendDialogues(npc, FacialExpression.ANNOYED, "Urk!");
+						interpreter.sendDialogues(npc, FacialExpression.THINKING, "Urk!");
 						stage = 2004;
 						return true;
 					}
@@ -166,7 +166,7 @@ public final class JulietDialogue extends DialoguePlugin {
 				public boolean pulse() {
 					switch (counter++) {
 					case 2:
-						interpreter.sendDialogues(phil, FacialExpression.ANNOYED, "Oh no...Juliet has...died!");
+						interpreter.sendDialogues(phil, FacialExpression.THINKING, "Oh no...Juliet has...died!");
 						stage = 2005;
 						return true;
 					}
@@ -176,27 +176,27 @@ public final class JulietDialogue extends DialoguePlugin {
 			});
 			break;
 		case 2005:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "You might be more believable if you're not smiling when", "you say it...");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "You might be more believable if you're not smiling when", "you say it...");
 			stage = 2006;
 			break;
 		case 2006:
-			interpreter.sendDialogues(phil, FacialExpression.NORMAL, "Oh yeah...you might be right...ok, let's try again.");
+			interpreter.sendDialogues(phil, FacialExpression.NO_EXPRESSION, "Oh yeah...you might be right...ok, let's try again.");
 			stage = 2007;
 			break;
 		case 2007:
-			interpreter.sendDialogues(phil, FacialExpression.NORMAL, "Oh no...Juliet has...died?");
+			interpreter.sendDialogues(phil, FacialExpression.NO_EXPRESSION, "Oh no...Juliet has...died?");
 			stage = 2008;
 			break;
 		case 2008:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Perhaps a bit louder, like you're upset...that your cousin", "has died!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Perhaps a bit louder, like you're upset...that your cousin", "has died!");
 			stage = 2009;
 			break;
 		case 2009:
-			interpreter.sendDialogues(phil, FacialExpression.NORMAL, "Right...yes...Ok, ok, I think I'm getting my motivation", "now. Ok, let's try this again!");
+			interpreter.sendDialogues(phil, FacialExpression.NO_EXPRESSION, "Right...yes...Ok, ok, I think I'm getting my motivation", "now. Ok, let's try this again!");
 			stage = 2010;
 			break;
 		case 2010:
-			interpreter.sendDialogues(phil, FacialExpression.ANGRY, "OH NO...JULIET HAS...DIED?....", "Ooooooohhhhhhh.....(sob).Juliet...my poor dead cousin!");
+			interpreter.sendDialogues(phil, FacialExpression.FURIOUS, "OH NO...JULIET HAS...DIED?....", "Ooooooohhhhhhh.....(sob).Juliet...my poor dead cousin!");
 			stage = 2011;
 			break;
 		case 2011:
@@ -210,7 +210,7 @@ public final class JulietDialogue extends DialoguePlugin {
 			stage = 2013;
 			break;
 		case 2013:
-			interpreter.sendDialogues(phil, FacialExpression.ANGRY, "Poor Juliet...make preparations for her body to be", "placed in the Crypt...");
+			interpreter.sendDialogues(phil, FacialExpression.FURIOUS, "Poor Juliet...make preparations for her body to be", "placed in the Crypt...");
 			stage = 2014;
 			break;
 		case 2014:
@@ -227,44 +227,44 @@ public final class JulietDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes I've met him.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes I've met him.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, I think I'd have remembered if I'd met him.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, I think I'd have remembered if I'd met him.");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I guess I could look for him for you.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I guess I could look for him for you.");
 				stage = 30;
 				break;
 			}
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Oh, well that's a shame, I was hopping that you might", "deliver a message to him for me.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh, well that's a shame, I was hopping that you might", "deliver a message to him for me.");
 			stage = 21;
 			break;
 		case 21:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sorry, but I don't even know what he looks like.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, but I don't even know what he looks like.");
 			stage = 22;
 			break;
 		case 22:
 			end();
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Oh, that would be so wonderful of you!", "I'd be most grateful if you could please deliver a", "message to him?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh, that would be so wonderful of you!", "I'd be most grateful if you could please deliver a", "message to him?");
 			stage = 31;
 			break;
 		case 31:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Certainly, I'll do it straight away.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Certainly, I'll do it straight away.");
 			stage = 32;
 			break;
 		case 32:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Many thanks! Oh, i'm so very grateful. You may be", "our only hope.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Many thanks! Oh, i'm so very grateful. You may be", "our only hope.");
 			stage = 33;
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I'd be most grateful if you could please deliver a", "message to him?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'd be most grateful if you could please deliver a", "message to him?");
 			stage = 31;
 			break;
 		case 33:
@@ -280,31 +280,31 @@ public final class JulietDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 100:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hello there...have you delivered the message to Romeo", "yet? What news do you have from my loved one?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello there...have you delivered the message to Romeo", "yet? What news do you have from my loved one?");
 			stage = 101;
 			break;
 		case 101:
 			if (!player.getInventory().contains(755, 1) && !player.getBank().contains(755, 1)) {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hmmm, that's the thing about messages....they're so easy", "to misplace...");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hmmm, that's the thing about messages....they're so easy", "to misplace...");
 				stage = 105;
 			} else {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Oh, sorry, I've not had a chance to deliver it yet!");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Oh, sorry, I've not had a chance to deliver it yet!");
 				stage = 102;
 			}
 			break;
 		case 102:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Oh, that's a shame. I've been waiting so patiently to", "hear some word from him.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh, that's a shame. I've been waiting so patiently to", "hear some word from him.");
 			stage = 103;
 			break;
 		case 103:
 			end();
 			break;
 		case 105:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "How could you lose that message?", "It was incredibly important...and it took me an age to", "write! I used joined up writing and everything!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "How could you lose that message?", "It was incredibly important...and it took me an age to", "write! I used joined up writing and everything!");
 			stage = 106;
 			break;
 		case 106:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Please, take this new message to him,", "and please don't loose it.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Please, take this new message to him,", "and please don't loose it.");
 			stage = 107;
 			break;
 		case 107:
@@ -320,23 +320,23 @@ public final class JulietDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 900:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "yes, unfortunately my father is quite the hunter, you", "may have seen some the animal head trophies on the", "wall. And it would be so awful to see Romeo's head up", "there with them!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "yes, unfortunately my father is quite the hunter, you", "may have seen some the animal head trophies on the", "wall. And it would be so awful to see Romeo's head up", "there with them!");
 			stage = 901;
 			break;
 		case 901:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I know what you mean...");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I know what you mean...");
 			stage = 902;
 			break;
 		case 902:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "...this hair colour will clash terribly with the rest of the", "decoration.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "...this hair colour will clash terribly with the rest of the", "decoration.");
 			stage = 903;
 			break;
 		case 903:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "That's not what I was suggesting at all...");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "That's not what I was suggesting at all...");
 			stage = 904;
 			break;
 		case 904:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I know, I know...I was just kidding.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I know, I know...I was just kidding.");
 			stage = 905;
 			break;
 		case 905:
@@ -344,34 +344,34 @@ public final class JulietDialogue extends DialoguePlugin {
 			stage = 906;
 			break;
 		case 906:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Oh yes, I'm sure that Father Lawrence will come up", "with a solution. I hope you find him soon.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh yes, I'm sure that Father Lawrence will come up", "with a solution. I hope you find him soon.");
 			stage = 907;
 			break;
 		case 907:
 			end();
 			break;
 		case 700:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Oh how my heart soars to hear this news! Please take", "this message to him with great haste.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh how my heart soars to hear this news! Please take", "this message to him with great haste.");
 			stage = 701;
 			break;
 		case 701:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Well, I hope it's good news...he was quite upset when I", "left him.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Well, I hope it's good news...he was quite upset when I", "left him.");
 			stage = 702;
 			break;
 		case 702:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "He's quite often upset...the poor sensitive soul. But I", "don't think he's going to take this news very well,", "however, all is not lost.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "He's quite often upset...the poor sensitive soul. But I", "don't think he's going to take this news very well,", "however, all is not lost.");
 			stage = 703;
 			break;
 		case 703:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Everything is explained in the letter, would you be so", "kind and deliver it to him please?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Everything is explained in the letter, would you be so", "kind and deliver it to him please?");
 			stage = 704;
 			break;
 		case 704:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Certainly, I'll do so straight away.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Certainly, I'll do so straight away.");
 			stage = 705;
 			break;
 		case 705:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Many thanks! Oh, I'm so very grateful. You may be", "our only hope.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Many thanks! Oh, I'm so very grateful. You may be", "our only hope.");
 			stage = 706;
 			break;
 		case 706:

@@ -39,7 +39,7 @@ public final class LouiLegsDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hey, wanna buy some armour?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hey, wanna buy some armour?");
 		stage = 0;
 		return true;
 	}
@@ -54,18 +54,18 @@ public final class LouiLegsDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What have you got?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What have you got?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, thank you.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, thank you.");
 				stage = 20;
 				break;
 
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I provide items to help you keep your legs!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I provide items to help you keep your legs!");
 			stage = 11;
 			break;
 		case 11:

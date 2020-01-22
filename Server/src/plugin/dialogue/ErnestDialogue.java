@@ -39,7 +39,7 @@ public final class ErnestDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Thank you sir. It was dreadfully irritating being a", "chicken. How can I ever thank you?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Thank you sir. It was dreadfully irritating being a", "chicken. How can I ever thank you?");
 		stage = 1;
 		return true;
 	}
@@ -48,11 +48,11 @@ public final class ErnestDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Well a cash reward is always nice...");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Well a cash reward is always nice...");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Of course, of course.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Of course, of course.");
 			stage = 3;
 			break;
 		case 3:

@@ -40,10 +40,10 @@ public class MasterChefDialogue extends DialoguePlugin {
 		int tut_stage = TutorialSession.getExtension(player).getStage();
 		switch (tut_stage) {
 		case 18:
-			Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Ahh! Welcome, newcomer. I am the Master Chef, Lev. It", "is here I will teach you how to cook food truly fit for a", "king."));
+			Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ahh! Welcome, newcomer. I am the Master Chef, Lev. It", "is here I will teach you how to cook food truly fit for a", "king."));
 			break;
 		case 20:
-			Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I see you have lost your pot of flour and bucket of water,", "No worries i will supply you with more."));
+			Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I see you have lost your pot of flour and bucket of water,", "No worries i will supply you with more."));
 			if (player.getInventory().freeSlots() >= 2) {
 				player.getInventory().add(new Item(1933));
 				player.getInventory().add(new Item(1929));
@@ -97,15 +97,15 @@ public class MasterChefDialogue extends DialoguePlugin {
 		case 18:
 			switch (stage) {
 			case 0:
-				Component.setUnclosable(player, interpreter.sendDialogues(player, FacialExpression.NORMAL, "I already know how to cook. Brynna taught me just", "now."));
+				Component.setUnclosable(player, interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I already know how to cook. Brynna taught me just", "now."));
 				stage = 1;
 				break;
 			case 1:
-				Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hahahahahaha! You call THAT cooking? Some shrimp", "on an open log fire? Oh, no, no no. I am going to", "teach you the fine art of cooking bread."));
+				Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hahahahahaha! You call THAT cooking? Some shrimp", "on an open log fire? Oh, no, no no. I am going to", "teach you the fine art of cooking bread."));
 				stage = 2;
 				break;
 			case 2:
-				Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NORMAL, "And no fine meal is complete without good music, so", "we'll cover that while you're here too."));
+				Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "And no fine meal is complete without good music, so", "we'll cover that while you're here too."));
 				stage = 3;
 				break;
 			case 3:

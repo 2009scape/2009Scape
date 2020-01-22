@@ -39,7 +39,7 @@ public final class EntranaChurchMonk extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Greetings traveller.");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Greetings traveller.");
 		stage = 0;
 		return true;
 	}

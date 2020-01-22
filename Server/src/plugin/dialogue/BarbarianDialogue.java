@@ -44,7 +44,7 @@ public final class BarbarianDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "What do you want, outerlander?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What do you want, outerlander?");
 		stage = 0;
 		return true;
 	}
@@ -59,11 +59,11 @@ public final class BarbarianDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Let's fight!");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Let's fight!");
 				stage = 20;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Goodbye.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Goodbye.");
 				stage = 10;
 				break;
 			}

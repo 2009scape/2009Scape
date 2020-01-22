@@ -34,7 +34,7 @@ public final class LumbridgeSwampWizard extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Why are all of you standing around here?");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Why are all of you standing around here?");
 		stage = 0;
 		return true;
 	}
@@ -43,11 +43,11 @@ public final class LumbridgeSwampWizard extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hahaha you dare talk to a mighty wizard such as", "myself? I bet you can't even cast windstrike yet", "amateur!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hahaha you dare talk to a mighty wizard such as", "myself? I bet you can't even cast windstrike yet", "amateur!");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "...You're an idiot.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "...You're an idiot.");
 			stage = 2;
 			break;
 		case 2:

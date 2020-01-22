@@ -62,7 +62,7 @@ public final class JoeGuardDialogue extends DialoguePlugin {
 				stage = 10;
 				break;
 			}
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hi, I'm Joe, door guard for Lady Keli.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hi, I'm Joe, door guard for Lady Keli.");
 			stage = 0;
 			break;
 		case 60:
@@ -71,7 +71,7 @@ public final class JoeGuardDialogue extends DialoguePlugin {
 			stage = 0;
 			break;
 		default:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hi, I'm Joe, door guard for Lady Keli.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hi, I'm Joe, door guard for Lady Keli.");
 			stage = 0;
 			break;
 		}
@@ -167,11 +167,11 @@ public final class JoeGuardDialogue extends DialoguePlugin {
 		}
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hi, who are you guarding here?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hi, who are you guarding here?");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Can't say, all very secret. You should get out of here.", "I am not suposed to talk while I guard.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Can't say, all very secret. You should get out of here.", "I am not suposed to talk while I guard.");
 			stage = 2;
 			break;
 		case 2:

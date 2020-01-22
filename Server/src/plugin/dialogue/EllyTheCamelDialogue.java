@@ -54,15 +54,15 @@ public final class EllyTheCamelDialogue extends DialoguePlugin {
 		int rand = RandomFunction.random(1, 3);
 		switch (rand) {
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "If I go near that camel, it'll probably", "bite my hand off.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "If I go near that camel, it'll probably", "bite my hand off.");
 			stage = 0;
 			break;
 		case 2:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I wonder if that camel has fleas...");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I wonder if that camel has fleas...");
 			stage = 0;
 			break;
 		case 3:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I wonder if that camel has fleas...");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I wonder if that camel has fleas...");
 			stage = 0;
 			break;
 		}

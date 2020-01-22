@@ -98,7 +98,7 @@ public class ImpBoxPlugin extends OptionHandler {
 
 		@Override
 		public boolean open(Object... args) {
-			interpreter.sendDialogues(708, FacialExpression.ANGRY, MESSAGES[RandomFunction.getRandom(MESSAGES.length - 1)]);
+			interpreter.sendDialogues(708, FacialExpression.FURIOUS, MESSAGES[RandomFunction.getRandom(MESSAGES.length - 1)]);
 			return true;
 		}
 

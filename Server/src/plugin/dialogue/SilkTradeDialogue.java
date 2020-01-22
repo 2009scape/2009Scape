@@ -37,11 +37,11 @@ public class SilkTradeDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "How much are they?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How much are they?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, silk doesn't suit me.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, silk doesn't suit me.");
 				stage = 2000;
 				break;
 
@@ -49,7 +49,7 @@ public class SilkTradeDialogue extends DialoguePlugin {
 
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "3gp.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "3gp.");
 			stage = 11;
 			break;
 		case 11:
@@ -59,22 +59,22 @@ public class SilkTradeDialogue extends DialoguePlugin {
 		case 12:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, that's too much for me.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, that's too much for me.");
 				stage = 110;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Okay, that sounds good.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Okay, that sounds good.");
 				stage = 6000;
 				break;
 
 			}
 			break;
 		case 110:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "2gp and that's as low as I'll go.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "2gp and that's as low as I'll go.");
 			stage = 111;
 			break;
 		case 111:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I'm not selling it for any less. You'll only go and sell it", "in Varrock for a profit.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm not selling it for any less. You'll only go and sell it", "in Varrock for a profit.");
 			stage = 113;
 			break;
 		case 113:
@@ -84,7 +84,7 @@ public class SilkTradeDialogue extends DialoguePlugin {
 		case 114:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "2gp sounds good.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "2gp sounds good.");
 				stage = 1000;
 				break;
 			case 2:
@@ -100,7 +100,7 @@ public class SilkTradeDialogue extends DialoguePlugin {
 				interpreter.sendDialogue("You buy some silk for 2gp.");
 				stage = 1001;
 			} else if (player.getInventory().freeSlots() == 0) {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I don't have enough room, sorry.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I don't have enough room, sorry.");
 				stage = 2000;
 			} else if (!player.getInventory().contains(995, 2)) {
 				end();
@@ -120,7 +120,7 @@ public class SilkTradeDialogue extends DialoguePlugin {
 				interpreter.sendDialogue("You buy some silk for 3gp.");
 				stage = 1001;
 			} else if (player.getInventory().freeSlots() == 0) {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I don't have enough room, sorry.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I don't have enough room, sorry.");
 				stage = 2000;
 			} else if (!player.getInventory().contains(995, 3)) {
 				end();
@@ -140,7 +140,7 @@ public class SilkTradeDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Do you want to buy any fine silks?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Do you want to buy any fine silks?");
 		stage = 0;
 		return true;
 	}

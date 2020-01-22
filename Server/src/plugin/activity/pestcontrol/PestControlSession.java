@@ -253,7 +253,7 @@ public final class PestControlSession {
 		Location l = region.getBaseLocation();
 		p.getProperties().setTeleportLocation(l.transform(32 + r.nextInt(4), 49 + r.nextInt(6), 0));
 		p.getConfigManager().set(Configuration.PC_PORTALS, 0);
-		p.getDialogueInterpreter().sendDialogues(3781, FacialExpression.ANGRY, "You must defend the Void Knight while the portals are", "unsummoned. The ritual takes twenty minutes though,", "so you can help out by destroying them yourselves!", "Now GO GO GO!");
+		p.getDialogueInterpreter().sendDialogues(3781, FacialExpression.FURIOUS, "You must defend the Void Knight while the portals are", "unsummoned. The ritual takes twenty minutes though,", "so you can help out by destroying them yourselves!", "Now GO GO GO!");
 	}
 
 	/**

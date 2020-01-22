@@ -56,7 +56,7 @@ public final class WarriorDialogue extends DialoguePlugin {
 			player("Hey, thanks for all the information. It REALLY helped", "me out in finding the lost city of Zanaris and all.");
 			break;
 		default:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hello there traveller.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello there traveller.");
 			break;
 		}
 		return true;

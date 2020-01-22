@@ -39,7 +39,7 @@ public final class ChaosElementalJRDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Is it true a level 3 skiller caught one of your", "siblings?");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Is it true a level 3 skiller caught one of your", "siblings?");
 		stage = 0;
 		return true;
 	}
@@ -52,11 +52,11 @@ public final class ChaosElementalJRDialogue extends DialoguePlugin {
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Aww, well you have me now!", "I shall call you Squishy and you shall be","mine and you shall be my Squishy.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Aww, well you have me now!", "I shall call you Squishy and you shall be","mine and you shall be my Squishy.");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Come on, Squishy come on, little Squishy!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Come on, Squishy come on, little Squishy!");
 			stage = 3;
 			break;
 		case 3:

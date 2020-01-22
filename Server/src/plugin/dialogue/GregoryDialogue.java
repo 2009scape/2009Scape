@@ -39,7 +39,7 @@ public final class GregoryDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "If I were as ugly as you I would not dare to show my", "face in public!");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "If I were as ugly as you I would not dare to show my", "face in public!");
 		stage = 1;
 		return true;
 	}

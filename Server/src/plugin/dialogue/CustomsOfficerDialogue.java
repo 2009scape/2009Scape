@@ -58,12 +58,12 @@ public final class CustomsOfficerDialogue extends DialoguePlugin {
 					stage = 900;
 					return true;
 				}
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well you've got some odd stuff, but it's all legal. Now", "you need to pay a boarding charge of " + getPrice() + " coins.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well you've got some odd stuff, but it's all legal. Now", "you need to pay a boarding charge of " + getPrice() + " coins.");
 				stage = 121;
 				return true;
 			}
 		}
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Can I help you?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Can I help you?");
 		stage = 0;
 		return true;
 	}
@@ -78,17 +78,17 @@ public final class CustomsOfficerDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can I journey on this ship?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can I journey on this ship?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Does Karamja have unusual customs then?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Does Karamja have unusual customs then?");
 				stage = 20;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You need to be searched before you can board?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You need to be searched before you can board?");
 			stage = 11;
 			break;
 		case 11:
@@ -98,28 +98,28 @@ public final class CustomsOfficerDialogue extends DialoguePlugin {
 		case 12:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Why?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Why?");
 				stage = 110;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Search waway, I have nothing to hide.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Search waway, I have nothing to hide.");
 				stage = 120;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "You're not putting your hands on my things!");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "You're not putting your hands on my things!");
 				stage = 130;
 				break;
 			}
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I'm not that sort of customs officer.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm not that sort of customs officer.");
 			stage = 21;
 			break;
 		case 21:
 			end();
 			break;
 		case 110:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Because Asgarnia has banned the import of intoxicating", "spirits.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Because Asgarnia has banned the import of intoxicating", "spirits.");
 			stage = 111;
 			break;
 		case 111:
@@ -131,7 +131,7 @@ public final class CustomsOfficerDialogue extends DialoguePlugin {
 				stage = 900;
 				return true;
 			}
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well you've got some odd stuff, but it's all legal. Now", "you need to pay a boarding charge of " + getPrice() + " coins.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well you've got some odd stuff, but it's all legal. Now", "you need to pay a boarding charge of " + getPrice() + " coins.");
 			stage = 121;
 			break;
 		case 121:
@@ -139,7 +139,7 @@ public final class CustomsOfficerDialogue extends DialoguePlugin {
 			stage = 122;
 			break;
 		case 900:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Umm... it's for personal use?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Umm... it's for personal use?");
 			stage = 901;
 			break;
 		case 901:
@@ -153,11 +153,11 @@ public final class CustomsOfficerDialogue extends DialoguePlugin {
 		case 122:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Ok.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok.");
 				stage = 210;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Oh, I'll not bother then.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Oh, I'll not bother then.");
 				stage = 220;
 				break;
 			}
@@ -189,7 +189,7 @@ public final class CustomsOfficerDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 130:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You're not getting on this ship then.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You're not getting on this ship then.");
 			stage = 131;
 			break;
 		case 131:

@@ -55,11 +55,11 @@ public final class DiangoDialogue extends DialoguePlugin {
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "That's right. There's a funny story behind them, their", "shipment was held up by thieves");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "That's right. There's a funny story behind them, their", "shipment was held up by thieves");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "The crate was marked 'Dragon Plates'.", "Apparently they thought it was some kind of armour,", "when really it's just a plate!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "The crate was marked 'Dragon Plates'.", "Apparently they thought it was some kind of armour,", "when really it's just a plate!");
 			stage = 12;
 			break;
 		case 12:
@@ -97,7 +97,7 @@ public final class DiangoDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Howdy there, partner! Want to see my spinning plates?", "Or did ya want a holiday item back?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Howdy there, partner! Want to see my spinning plates?", "Or did ya want a holiday item back?");
 		stage = 0;
 		return true;
 	}

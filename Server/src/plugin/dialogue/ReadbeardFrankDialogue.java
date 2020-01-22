@@ -55,7 +55,7 @@ public class ReadbeardFrankDialogue extends DialoguePlugin {
 		quest = player.getQuestRepository().getQuest("Pirate's Treasure");
 		switch (quest.getStage(player)) {
 		default:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Arr, Matey!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Arr, Matey!");
 			stage = 0;
 			break;
 		}
@@ -79,18 +79,18 @@ public class ReadbeardFrankDialogue extends DialoguePlugin {
 			case 1:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Arr!");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Arr!");
 					stage = 10;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Do you have anything for trade?");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you have anything for trade?");
 					stage = 20;
 					break;
 				}
 
 				break;
 			case 10:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Arr!");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Arr!");
 				stage = 11;
 				break;
 			case 11:
@@ -98,14 +98,14 @@ public class ReadbeardFrankDialogue extends DialoguePlugin {
 				stage = 1;
 				break;
 			case 20:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Nothin' at the moment, but then again the Customs", "Agents are on the warpath right now.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Nothin' at the moment, but then again the Customs", "Agents are on the warpath right now.");
 				stage = 21;
 				break;
 			case 21:
 				end();
 				break;
 			case 700:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Arr, silly you. Fortunately I took the precaution to have", "another one made.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Arr, silly you. Fortunately I took the precaution to have", "another one made.");
 				stage = 701;
 				break;
 			case 701:
@@ -119,15 +119,15 @@ public class ReadbeardFrankDialogue extends DialoguePlugin {
 				}
 				break;
 			case 14:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "This be Hector's key. I believe it opens his chest in his", "old room in the Blue Moon Inn in Varrock.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "This be Hector's key. I believe it opens his chest in his", "old room in the Blue Moon Inn in Varrock.");
 				stage = 15;
 				break;
 			case 15:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "With any luck his treasure will be in there.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "With any luck his treasure will be in there.");
 				stage = 16;
 				break;
 			case 16:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Ok thanks, I'll go and get it.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok thanks, I'll go and get it.");
 				stage = 17;
 				break;
 			case 17:
@@ -138,15 +138,15 @@ public class ReadbeardFrankDialogue extends DialoguePlugin {
 		case 10:
 			switch (stage) {
 			case 0:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Have ye brought some rum for yer ol' mate Frank?");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Have ye brought some rum for yer ol' mate Frank?");
 				stage = 1;
 				break;
 			case 1:
 				if (!player.getInventory().containsItem(KARAMJAN_RUM)) {
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, not yet.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, not yet.");
 					stage = 2;
 				} else {
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes, I've got some.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, I've got some.");
 					stage = 10;
 				}
 				break;
@@ -154,34 +154,34 @@ public class ReadbeardFrankDialogue extends DialoguePlugin {
 				end();
 				break;
 			case 2:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Not suprising, tis no easy task to get it off Karamja.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Not suprising, tis no easy task to get it off Karamja.");
 				stage = 3;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What do you mean?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What do you mean?");
 				stage = 4;
 				break;
 			case 4:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "The Customs office has been clampin' down on the", "export of spirits. You seem like a resourceful young lad,", "I'm sure ye'll be able to find a way to slip the stuff past", "them.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "The Customs office has been clampin' down on the", "export of spirits. You seem like a resourceful young lad,", "I'm sure ye'll be able to find a way to slip the stuff past", "them.");
 				stage = 5;
 				break;
 			case 5:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Well I'll give it another shot.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Well I'll give it another shot.");
 				stage = 6;
 				break;
 			case 6:
 				end();
 				break;
 			case 10:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Now a deal's a deal, I'll tell ye about the treasure. I", "used to serve under a pirate captain called One-Eyed", "Hector.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Now a deal's a deal, I'll tell ye about the treasure. I", "used to serve under a pirate captain called One-Eyed", "Hector.");
 				stage = 11;
 				break;
 			case 11:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hector were very successful and became very rich.", "But about a year ago we were boarded by the Customs", "and Excise Agents.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hector were very successful and became very rich.", "But about a year ago we were boarded by the Customs", "and Excise Agents.");
 				stage = 12;
 				break;
 			case 12:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hector were killed along with many of the crew, I were", "one of the few to escape and I escaped with this.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hector were killed along with many of the crew, I were", "one of the few to escape and I escaped with this.");
 				stage = 13;
 				break;
 			case 13:
@@ -219,19 +219,19 @@ public class ReadbeardFrankDialogue extends DialoguePlugin {
 				}
 				break;
 			case 10:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Arr, treasure you be after eh? Well I might be able to", "tell you where to find some... For a price...");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Arr, treasure you be after eh? Well I might be able to", "tell you where to find some... For a price...");
 				stage = 11;
 				break;
 			case 11:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What sort of price?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What sort of price?");
 				stage = 12;
 				break;
 			case 12:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well for example if you go and get me a bottle of rum...", "Not just any rum mind...");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well for example if you go and get me a bottle of rum...", "Not just any rum mind...");
 				stage = 13;
 				break;
 			case 13:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I'd like some rum made on Karamja Island. There's no", "rum like Karamaja Rum!");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'd like some rum made on Karamja Island. There's no", "rum like Karamaja Rum!");
 				stage = 14;
 				break;
 			case 14:
@@ -242,48 +242,48 @@ public class ReadbeardFrankDialogue extends DialoguePlugin {
 				switch (buttonId) {
 				case 1:
 					quest.start(player);
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Ok, I will bring you some rum.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok, I will bring you some rum.");
 					stage = 17;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Not right now.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Not right now.");
 					stage = 16;
 					break;
 				}
 				break;
 			case 17:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Yer a saint, although it'll take a miracle to get it off", "Karamja.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yer a saint, although it'll take a miracle to get it off", "Karamja.");
 				stage = 18;
 				break;
 			case 18:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What do you mean?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What do you mean?");
 				stage = 19;
 				break;
 			case 19:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "The Customs office has been clampin' down on the", "export of spirits. You seem like a resourceful young lad,", "I'm sure ye'll be able to find a way to slip the stuff past", "them.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "The Customs office has been clampin' down on the", "export of spirits. You seem like a resourceful young lad,", "I'm sure ye'll be able to find a way to slip the stuff past", "them.");
 				stage = 21;
 				break;
 			case 21:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Well I'll give it a shot.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Well I'll give it a shot.");
 				stage = 22;
 				break;
 			case 22:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Arr, that's the spirit!");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Arr, that's the spirit!");
 				stage = 23;
 				break;
 			case 23:
 				end();
 				break;
 			case 16:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Fair enough. I'll still be here and thirsty whenever you", "feel like helpin' out.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Fair enough. I'll still be here and thirsty whenever you", "feel like helpin' out.");
 				stage = 31;
 				break;
 			case 20:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Arr!");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Arr!");
 				stage = 31;
 				break;
 			case 30:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Nothin' at the moment, but then again the Customs", "Agents are on the warpath right now.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Nothin' at the moment, but then again the Customs", "Agents are on the warpath right now.");
 				stage = 31;
 				break;
 			case 31:
@@ -305,18 +305,18 @@ public class ReadbeardFrankDialogue extends DialoguePlugin {
 			case 1:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Arr!");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Arr!");
 					stage = 10;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Do you have anything for trade?");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you have anything for trade?");
 					stage = 20;
 					break;
 				}
 
 				break;
 			case 10:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Arr!");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Arr!");
 				stage = 11;
 				break;
 			case 11:
@@ -324,14 +324,14 @@ public class ReadbeardFrankDialogue extends DialoguePlugin {
 				stage = 1;
 				break;
 			case 20:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Nothin' at the moment, but then again the Customs", "Agents are on the warpath right now.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Nothin' at the moment, but then again the Customs", "Agents are on the warpath right now.");
 				stage = 21;
 				break;
 			case 21:
 				end();
 				break;
 			case 700:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Arr, silly you. Fortunately I took the precaution to have", "another one made.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Arr, silly you. Fortunately I took the precaution to have", "another one made.");
 				stage = 701;
 				break;
 			case 701:

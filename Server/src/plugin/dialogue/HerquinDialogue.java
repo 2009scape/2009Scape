@@ -49,22 +49,22 @@ public final class HerquinDialogue extends DialoguePlugin {
 		switch (stage) {
 		case 0:
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Do you wish to trade?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you wish to trade?");
 			stage = 10;
 			break;
 		case 2:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sorry, I don't want to talk to you, actually.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, I don't want to talk to you, actually.");
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Huh, charming.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Huh, charming.");
 			stage = 4;
 			break;
 		case 4:
 			end();
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Why, yes, this is a jewel shop after all.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Why, yes, this is a jewel shop after all.");
 			stage = 11;
 			break;
 		case 11:

@@ -13,11 +13,9 @@ import org.crandor.game.node.item.GroundItemManager;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.GameWorld;
 import org.crandor.game.world.map.Location;
-import org.crandor.game.world.repository.Repository;
 import org.crandor.net.amsc.MSPacketRepository;
 import org.crandor.net.amsc.WorldCommunicator;
 import org.keldagrim.ServerConstants;
-import org.runite.GameSetting;
 
 /**
  * Handles the tutorial completition dialogue (skippy, magic instructor)
@@ -108,7 +106,7 @@ public class TutorialCompletionDialogue extends DialoguePlugin {
 
 		//Skippy Dialogue used whenever the Player talks to Skippy during the tutorial
 		else {
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "*psst.* Hey, do you want to skip the tutorial?", "I can send you straight to the mainland, easy.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "*psst.* Hey, do you want to skip the tutorial?", "I can send you straight to the mainland, easy.");
 			stage = 1;
 		}
 		return true;
@@ -152,21 +150,21 @@ public class TutorialCompletionDialogue extends DialoguePlugin {
 							}
 							break;
 						case 2:
-							interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can I decide later?.");
+							interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can I decide later?.");
 							stage = 39;
 							break;
 						case 3:
-							interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'll stay here for the Tutorial.");
+							interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'll stay here for the Tutorial.");
 							stage = 40;
 							break;
 					}
 					break;
 				case 39:
-					interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Yes. Talk to me at any point during this tutorial", "if you change your mind.");
+					interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yes. Talk to me at any point during this tutorial", "if you change your mind.");
 					stage = 99;
 					break;
 				case 40:
-					interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Very well. Have fun, adventurer.");
+					interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Very well. Have fun, adventurer.");
 					stage = 99;
 					break;
 
@@ -253,11 +251,11 @@ public class TutorialCompletionDialogue extends DialoguePlugin {
 					}
 			//Final Regards from the Magic Instructor
 			case 1199:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "When you get to the mainland you will find yourself in", "the town of Lumbridge. If you want some ideas on", "where to go next talk to my friend the Lumbridge", "Guide. You can't miss him; he's holding a big staff with");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "When you get to the mainland you will find yourself in", "the town of Lumbridge. If you want some ideas on", "where to go next talk to my friend the Lumbridge", "Guide. You can't miss him; he's holding a big staff with");
 				stage++;
 				break;
 			case 1200:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "a question mark on the end. He also has a white beard","and carries a rucksack full of scrolls. There are also","many tutors willing to teach you about the many skills","you could learn.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "a question mark on the end. He also has a white beard","and carries a rucksack full of scrolls. There are also","many tutors willing to teach you about the many skills","you could learn.");
 				stage++;
 				break;
 			case 1201: //Needs to be the Lumbridge Guide Icon... Not sure of the ID or interface.
@@ -269,7 +267,7 @@ public class TutorialCompletionDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 1203:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "If all else fails, visit the "+ GameWorld.getName()+ " website for a whole","chestload of information on quests, skills, and minigames","as well as a very good starter's guide.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "If all else fails, visit the "+ GameWorld.getName()+ " website for a whole","chestload of information on quests, skills, and minigames","as well as a very good starter's guide.");
 				stage++;
 				break;
 

@@ -39,7 +39,7 @@ public final class ScorpiasOffspringDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "At night time, if I were to hold ultraviolet", "light over you, would you glow?");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "At night time, if I were to hold ultraviolet", "light over you, would you glow?");
 		stage = 0;
 		return true;
 	}
@@ -48,15 +48,15 @@ public final class ScorpiasOffspringDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Two things wrong there, human.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Two things wrong there, human.");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Oh?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Oh?");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "One, when has it ever been night time here?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "One, when has it ever been night time here?");
 			stage = 3;
 			break;
 		case 3:

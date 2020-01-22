@@ -51,7 +51,7 @@ public final class GodwarsEntranceHandler extends OptionHandler {
 				return true;
 			}
 			if ((player.getConfigManager().get(1048) & 16) == 0) {
-				player.getDialogueInterpreter().sendDialogues(6201, FacialExpression.NORMAL, "Cough... Hey, over here.");
+				player.getDialogueInterpreter().sendDialogues(6201, FacialExpression.NO_EXPRESSION, "Cough... Hey, over here.");
 				return true;
 			}
 			player.lock(2);

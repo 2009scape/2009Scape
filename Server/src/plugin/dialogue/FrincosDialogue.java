@@ -39,7 +39,7 @@ public final class FrincosDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hello, how can I help you?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello, how can I help you?");
 		stage = 0;
 		return true;
 	}
@@ -54,15 +54,15 @@ public final class FrincosDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What are you selling?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What are you selling?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "You can't; I'm beyond help.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "You can't; I'm beyond help.");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'm okay, thank you.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm okay, thank you.");
 				stage = 30;
 				break;
 			}
