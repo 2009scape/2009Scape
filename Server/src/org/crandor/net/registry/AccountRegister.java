@@ -164,7 +164,7 @@ public class AccountRegister extends SQLEntryHandler<RegistryDetails> {
 		//If the management server's settings register new users with the server's clan chat
 		//I believe if there was no entry there would be errors during the registration, hence a null entry if the setting is off
 		if (ServerConstants.NEW_PLAYER_DEFAULT_CLAN == true){
-			statement.setString(7,"2009Scape");
+			statement.setString(7,ServerConstants.SERVER_NAME);
 		}else{
 			statement.setString(7,null);
 		}
