@@ -102,22 +102,27 @@ public final class PlayerCommandPlugin extends CommandPlugin {
 				return true;
 
 			case "players":
-				int count = Repository.getPlayers().size();
-				int ironCount = 0;
-				int ultIronCount = 0;
+				int totalCount = Repository.getPlayers().size();
+				int ironmanCount = 0;
+				int ultIronmanCount = 0;
+				int botCount = 0;
 				for (Player p : Repository.getPlayers()) {
 					if (p.getIronmanManager().checkRestriction(IronmanMode.ULTIMATE)) {
-						ultIronCount++;
+						ultIronmanCount++;
 					}
 					if (p.getIronmanManager().checkRestriction(IronmanMode.STANDARD)) {
-						ironCount++;
+						ironmanCount++;
+					}
+					if (p.isArtificial()){
+						botCount++;
 					}
 				}
-				int regular = count - ironCount - ultIronCount;
-				if (count == 1) {
+				int regular = totalCount - ironmanCount - ultIronmanCount - botCount;
+				int playerCount = totalCount-botCount;
+				if (totalCount == 1) {
 					player.sendMessage("<col=3498db>There is 1 active player in this world.");
 				} else {
-					player.sendMessage("<col=3498db>There are " + count + " active players in this world: " + regular + " regular, " + ironCount + " iron, and " + ultIronCount + " ultimate iron.");
+					player.sendMessage("<col=3498db>There are " + playerCount + " active players in this world: " + regular + " regular, " + ironmanCount + " iron, and " + ultIronmanCount + " ultimate iron.");
 				}
 				return player.getRights() == Rights.REGULAR_PLAYER;
 
