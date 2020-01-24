@@ -12,7 +12,8 @@ import org.crandor.tools.StringUtils;
  */
 @SuppressWarnings("all")
 public enum HouseLocation {
-	
+
+	//Nowhere is used for players who do not have a house
 	NOWHERE(-1, null, 0, 0),
 	
 	RIMMINGTON(15478, Location.create(2953, 3224, 0), 5000, 1),
@@ -25,9 +26,10 @@ public enum HouseLocation {
 	
 	BRIMHAVEN(15481, Location.create(2757, 3178, 0), 15000, 40),
 	
-	YANILLE(15482, Location.create(2544, 3096, 0), 25000, 50),
-	
-	WHITERIDGE(43832, Location.create(3965, 3546, 0), 100_000, 60);
+	YANILLE(15482, Location.create(2544, 3096, 0), 25000, 50);
+
+	//custom island thing that previous source users had.
+	//WHITERIDGE(43832, Location.create(3965, 3546, 0), 100_000, 60);
 	
 	/**
 	 * The portal object id for this location.
