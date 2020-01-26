@@ -93,7 +93,7 @@ public class TzRekJadNPC extends OptionHandler {
 		@Override
 		public boolean open(Object... args) {
 			npc = (NPC) args[0];
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I have a fire cape here.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I have a fire cape here.");
 			stage = 0;
 			return true;
 		}
@@ -215,7 +215,7 @@ public class TzRekJadNPC extends OptionHandler {
 			public boolean open(Object... args) {
 				npc = (NPC) args[0];
 				int i = RandomFunction.getRandom(1);
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, i == 1 ? "Do you miss your people?" : "Are you hungry?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, i == 1 ? "Do you miss your people?" : "Are you hungry?");
 				stage = (i == 1 ? 0 : 5);
 				return true;
 			}
@@ -228,7 +228,7 @@ public class TzRekJadNPC extends OptionHandler {
 					stage = 1;
 					break;
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "No.. I don't think so.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No.. I don't think so.");
 					stage = 2;
 					break;
 				case 2:
@@ -236,7 +236,7 @@ public class TzRekJadNPC extends OptionHandler {
 					stage = 3;
 					break;
 				case 3:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, no, I wouldn't hurt you.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, no, I wouldn't hurt you.");
 					stage = 4;
 					break;
 				case 4:
@@ -247,7 +247,7 @@ public class TzRekJadNPC extends OptionHandler {
 					stage = 6;
 					break;
 				case 6:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Ooookay...");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ooookay...");
 					stage = 4;
 					break;
 				}

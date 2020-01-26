@@ -56,7 +56,7 @@ public final class OldCronDialogue extends DialoguePlugin {
 			player("I'm here about the farmers east of here.");
 			break;
 		default:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello, old woman.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello, old woman.");
 			stage = 1;
 			break;
 		}
@@ -193,7 +193,7 @@ public final class OldCronDialogue extends DialoguePlugin {
 		default:
 			switch (stage) {
 			case 1:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I lived here when this was all just fields, you know.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I lived here when this was all just fields, you know.");
 				stage = 2;
 				break;
 			case 2:

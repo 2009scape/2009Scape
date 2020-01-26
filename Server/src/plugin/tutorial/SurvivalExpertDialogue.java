@@ -107,7 +107,7 @@ public class SurvivalExpertDialogue extends DialoguePlugin {
 		int tut_stage = TutorialSession.getExtension(player).getStage();
 		switch (tut_stage) {
 		case 4:
-			Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hello there, newcomer. My name is Brynna. My job is", "to teach you a few suvival tips and tricks. First off", "we're going to start with the most basic skill of", "all: making a fire."));
+			Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello there, newcomer. My name is Brynna. My job is", "to teach you a few suvival tips and tricks. First off", "we're going to start with the most basic skill of", "all: making a fire."));
 			break;
 		case 6:
 			if (!player.getInventory().contains(1351, 1) && player.getInventory().contains(590, 1)) {
@@ -124,7 +124,7 @@ public class SurvivalExpertDialogue extends DialoguePlugin {
 			stage = 90;
 			break;
 		case 11:
-			Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well done! Next we need to get some food in our", "bellies. We'd need something to cook. There are shrimp", "in the pond there. So let's catch and cook some."));
+			Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well done! Next we need to get some food in our", "bellies. We'd need something to cook. There are shrimp", "in the pond there. So let's catch and cook some."));
 			break;
 		case 8:
 			if (!player.getInventory().contains(1351, 1) && player.getInventory().contains(590, 1)) {

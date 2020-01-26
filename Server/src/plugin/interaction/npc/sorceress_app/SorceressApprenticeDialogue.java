@@ -40,7 +40,7 @@ public class SorceressApprenticeDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Okay, here goes - and remember, to", "return just drink from the fountain.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Okay, here goes - and remember, to", "return just drink from the fountain.");
 			stage = 1;
 			break;
 		case 1:
@@ -226,7 +226,7 @@ public class SorceressApprenticeDialogue extends DialoguePlugin {
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
 		if (player.getSavedData().getGlobalData().hasSpokenToApprentice()) {
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hey apprentice, do you want to try out", "your teleport skills again?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hey apprentice, do you want to try out", "your teleport skills again?");
 			stage = 0;
 		} else {
 			player("Hello. What are you doing?");

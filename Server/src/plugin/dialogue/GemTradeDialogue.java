@@ -39,7 +39,7 @@ public final class GemTradeDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hello adventurer! Can I interest you in any of my gems?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello adventurer! Can I interest you in any of my gems?");
 		stage = 0;
 		return true;
 	}
@@ -54,11 +54,11 @@ public final class GemTradeDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes!");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes!");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, thanks though.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, thanks though.");
 				stage = 20;
 				break;
 

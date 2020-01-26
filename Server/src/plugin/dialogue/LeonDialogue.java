@@ -50,36 +50,36 @@ public final class LeonDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What is this place?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What is this place?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can I have a go with your crossbow?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can I have a go with your crossbow?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What are you holding there?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What are you holding there?");
 				stage = 30;
 				break;
 
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "This is Aleck's Hunter Emporium. Basically, it's just a", "shop with fancy name; you can buy various weapons", "and traps here.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "This is Aleck's Hunter Emporium. Basically, it's just a", "shop with fancy name; you can buy various weapons", "and traps here.");
 			stage = 11;
 			break;
 		case 11:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I'm afraid with it being a prototype, I've only got a few", "for my own testing purposes.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm afraid with it being a prototype, I've only got a few", "for my own testing purposes.");
 			stage = 21;
 			break;
 		case 21:
 			end();
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "This? This is a prototype for a new type of crossbow", "I've been designing.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "This? This is a prototype for a new type of crossbow", "I've been designing.");
 			stage = 31;
 			break;
 		case 31:

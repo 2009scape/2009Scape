@@ -56,7 +56,7 @@ public class SorcceresDialouge extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.ANGRY, "None of your business!");
+				interpreter.sendDialogues(player, FacialExpression.FURIOUS, "None of your business!");
 				stage = 10;
 				break;
 			case 2:

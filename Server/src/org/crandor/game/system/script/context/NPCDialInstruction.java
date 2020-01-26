@@ -81,7 +81,7 @@ public final class NPCDialInstruction extends ScriptContext {
 	public ScriptContext parse(Object... params) {
 		String[] messages = new String[6];
 		int messageIndex = 0;
-		int expression = FacialExpression.NORMAL.getAnimationId();
+		int expression = FacialExpression.NO_EXPRESSION.getAnimationId();
 		int npcId = -1;
 		boolean hide = false;
 		for (int i = 0; i < params.length; i++) {

@@ -35,31 +35,31 @@ public class HadleyDialogue extends DialoguePlugin {
 		/* Main dialogue sequence */
 		case 0:
 			if (player.getInventory().contains(292, 1)) {
-				interpreter.sendDialogues(302, FacialExpression.NORMAL, "I hope you're enjoying your stay, there should be lots", "of useful information in that book: places to go, people to", "see.");
+				interpreter.sendDialogues(302, FacialExpression.NO_EXPRESSION, "I hope you're enjoying your stay, there should be lots", "of useful information in that book: places to go, people to", "see.");
 				stage = 100;
 			} else {
-				interpreter.sendDialogues(302, FacialExpression.NORMAL, "Are you on holiday? If so you've come to the right", "place. I'm Hadley the tourist guide, anything you need", "to know just ask me. We have some of the most unspoilt", "wildlife and scenery in " + GameWorld.getName() + ".");
+				interpreter.sendDialogues(302, FacialExpression.NO_EXPRESSION, "Are you on holiday? If so you've come to the right", "place. I'm Hadley the tourist guide, anything you need", "to know just ask me. We have some of the most unspoilt", "wildlife and scenery in " + GameWorld.getName() + ".");
 				stage = 1;
 			}
 			break;
 		case 1:
-			interpreter.sendDialogues(302, FacialExpression.NORMAL, "People come from miles around to fish in the clear lakes", "or to wander the beautiful hill sides.");
+			interpreter.sendDialogues(302, FacialExpression.NO_EXPRESSION, "People come from miles around to fish in the clear lakes", "or to wander the beautiful hill sides.");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "It is quite pretty.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "It is quite pretty.");
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(302, FacialExpression.NORMAL, "Surely prety is an understatement kind Sir. Beautiful,", "amazing or possibly life-changing would be more suitable", "wording. Have you seen the Baxtorian waterfall?", "Named after the elf king who was buried underneath.");
+			interpreter.sendDialogues(302, FacialExpression.NO_EXPRESSION, "Surely prety is an understatement kind Sir. Beautiful,", "amazing or possibly life-changing would be more suitable", "wording. Have you seen the Baxtorian waterfall?", "Named after the elf king who was buried underneath.");
 			stage = 4;
 			break;
 		case 4:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Thanks then, goodbye.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Thanks then, goodbye.");
 			stage = 5;
 			break;
 		case 5:
-			interpreter.sendDialogues(302, FacialExpression.NORMAL, "Enjoy your visit.");
+			interpreter.sendDialogues(302, FacialExpression.NO_EXPRESSION, "Enjoy your visit.");
 			stage = 100;
 			break;
 		}
@@ -73,7 +73,7 @@ public class HadleyDialogue extends DialoguePlugin {
 
 	@Override
 	public boolean open(Object... args) {
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello there.");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello there.");
 		stage = 0;
 		return true;
 	}

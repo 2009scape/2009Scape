@@ -259,8 +259,10 @@ public final class Skills {
 	 * @return The experience mod.
 	 */
 	private double getExperienceMod(int slot, double experience, boolean playerMod, boolean multiplyer) {
-		//This function returns 1.0;
-		if (!(entity instanceof Player)) {
+		//Keywords for people ctrl + Fing the project
+		//xprate xp rate xp multiplier skilling rate
+		return 5.0;
+		/*if (!(entity instanceof Player)) {
 			return 1.0;
 		}
 		double mod = multiplyer ? (EXPERIENCE_MULTIPLIER) : 1;
@@ -299,8 +301,7 @@ public final class Skills {
 		if (mod > MAX_EXPERIENCE_MOD ) {
 			return MAX_EXPERIENCE_MOD;
 		}
-		return 1.0;
-		//return mod;
+		return mod;*/
 	}
 
 /**

@@ -39,7 +39,7 @@ public final class PeksaDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Are you interested in buying or selling a helmet?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Are you interested in buying or selling a helmet?");
 		stage = 0;
 		return true;
 	}
@@ -58,13 +58,13 @@ public final class PeksaDialogue extends DialoguePlugin {
 				npc.openShop(player);
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, I'll pass on that.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, I'll pass on that.");
 				stage = 20;
 				break;
 			}
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well, come back if you change your mind.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, come back if you change your mind.");
 			stage = 21;
 			break;
 		case 21:

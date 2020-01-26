@@ -5,7 +5,7 @@ final class Class157 {
    
    static int anInt1996;
    private int anInt1997;
-   private static RSString aClass94_1998 = RSString.createRSString("Connecting to update server");
+   private static RSString aClass94_1998 = RSString.createRSString("Connecting.. This takes a LONG time.");
    private int[][] anIntArrayArray1999;
    static Class3_Sub28_Sub17_Sub1 aClass3_Sub28_Sub17_Sub1_2000;
    private int anInt2001;

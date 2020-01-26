@@ -39,7 +39,7 @@ public final class ZahwaDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hi!");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hi!");
 		stage = 0;
 		return true;
 	}
@@ -48,7 +48,7 @@ public final class ZahwaDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Ughhhh....");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ughhhh....");
 			stage = 1;
 			break;
 		case 1:

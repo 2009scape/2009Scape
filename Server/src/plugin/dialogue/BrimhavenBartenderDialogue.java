@@ -60,7 +60,7 @@ public final class BrimhavenBartenderDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Yohoho me hearty what would you like to drink?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yohoho me hearty what would you like to drink?");
 		stage = 99;
 		return true;
 	}
@@ -75,15 +75,15 @@ public final class BrimhavenBartenderDialogue extends DialoguePlugin {
 		case 0:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Nothing, thank you.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Nothing, thank you.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "A pint of Grog please..");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "A pint of Grog please..");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "A bottle of rum please.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "A bottle of rum please.");
 				stage = 30;
 				break;
 			}

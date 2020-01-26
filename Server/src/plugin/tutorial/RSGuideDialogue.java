@@ -42,13 +42,13 @@ public class RSGuideDialogue extends DialoguePlugin {
 		if(tut_stage < TutorialSession.MAX_STAGE){
 			switch (tut_stage) {
 			case 0:
-				Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Greetings! I see you are a new arrival to this land. My", "job is to welcome all new visitors. So welcome!"));
+				Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Greetings! I see you are a new arrival to this land. My", "job is to welcome all new visitors. So welcome!"));
 				return true;
 			case 1:
-				Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You will notice a flashing icon of a spanner; please click", "on this to continue the tutorial."));
+				Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You will notice a flashing icon of a spanner; please click", "on this to continue the tutorial."));
 				return true;
 			case 2:
-				Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I'm glad you're making progress!"));
+				Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm glad you're making progress!"));
 				stage = 1;
 				return true;
 			}	
@@ -71,23 +71,23 @@ public class RSGuideDialogue extends DialoguePlugin {
 			case 0:
 				switch (stage) {
 				case 0:
-					Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You have already learned the first thing needed to", "succeed in this world: talking to other people!"));
+					Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You have already learned the first thing needed to", "succeed in this world: talking to other people!"));
 					stage = 1;
 					break;
 				case 1:
-					Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You will find many inhabitants of this world have useful", "things to say to you. By clicking on them with your", "mouse you can talk to them."));
+					Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You will find many inhabitants of this world have useful", "things to say to you. By clicking on them with your", "mouse you can talk to them."));
 					stage = 2;
 					break;
 				case 2:
-					Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I would also suggest reading through some of the", "supporting information on the website. There you can", "find the Knowledge Base, which contains all the", "additional information you're ever likely to need. It also"));
+					Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I would also suggest reading through some of the", "supporting information on the website. There you can", "find the Knowledge Base, which contains all the", "additional information you're ever likely to need. It also"));
 					stage = 3;
 					break;
 				case 3:
-					Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NORMAL, "contains maps and helpful tips to help you on your", "journey."));
+					Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "contains maps and helpful tips to help you on your", "journey."));
 					stage = 4;
 					break;
 				case 4:
-					Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You will notice a flashing icon of a wrench, please click", "on this to continue the tutorial."));
+					Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You will notice a flashing icon of a wrench, please click", "on this to continue the tutorial."));
 					player.getInterfaceManager().openTab(new Component(261));
 					player.getConfigManager().set(1021, 12);
 					stage = 5;
@@ -102,7 +102,7 @@ public class RSGuideDialogue extends DialoguePlugin {
 			case 2:
 				switch (stage) {
 				case 1:
-					Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NORMAL, "To continue the tutorial go through that door over", "there and speak to your first instructor!"));
+					Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "To continue the tutorial go through that door over", "there and speak to your first instructor!"));
 					stage = 2;
 					break;
 				case 2:

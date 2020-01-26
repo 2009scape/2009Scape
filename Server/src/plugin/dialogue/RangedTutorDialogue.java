@@ -111,77 +111,77 @@ public class RangedTutorDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can you teach me the basics please?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you teach me the basics please?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What about fletching?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What about fletching?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Goodbye.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Goodbye.");
 				stage = 30;
 				break;
 
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "To start with you'll need a bow and arrows.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "To start with you'll need a bow and arrows.");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Mikasi, the Magic Combat tutor and I both give you", "items every 30 minutes, however you must choose", "wether you want runes or ranged equipment. To", "claim ranged equipment, right-click on me and choose");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Mikasi, the Magic Combat tutor and I both give you", "items every 30 minutes, however you must choose", "wether you want runes or ranged equipment. To", "claim ranged equipment, right-click on me and choose");
 			stage = 12;
 			break;
 		case 12:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Claim, to claim runes right-click on the Magic Combat", "tutor and select Claim.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Claim, to claim runes right-click on the Magic Combat", "tutor and select Claim.");
 			stage = 13;
 			break;
 		case 13:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "When you have both bow and arrows, wield them by", "right-clicking on them in your inventory and selecting", "wield.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "When you have both bow and arrows, wield them by", "right-clicking on them in your inventory and selecting", "wield.");
 			stage = 14;
 			break;
 		case 14:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "To set the way you shoot, click on the crossed swords", "above your inventory. This will open the combat", "interface where you can pick how you shoot your bow.", "Accurate means that you will shoot less often but be");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "To set the way you shoot, click on the crossed swords", "above your inventory. This will open the combat", "interface where you can pick how you shoot your bow.", "Accurate means that you will shoot less often but be");
 			stage = 15;
 			break;
 		case 15:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "more likely to hit, rapid means you shoot more often", "but might not hit so often and long range means just", "that, it increases your range. I prefer rapid personally,", "experiment and try it out!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "more likely to hit, rapid means you shoot more often", "but might not hit so often and long range means just", "that, it increases your range. I prefer rapid personally,", "experiment and try it out!");
 			stage = 16;
 			break;
 		case 16:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "The Training Shortbow and Training Arrows can only", "be used together. Remember to pick up your arrows,", "re-use them and come back when you need more.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "The Training Shortbow and Training Arrows can only", "be used together. Remember to pick up your arrows,", "re-use them and come back when you need more.");
 			stage = 17;
 			break;
 		case 17:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Ahh the art of making your own bow and arrows. It's", "quite simple really. You'll need an axe to cut some logs", "from trees and a knife. Knives can be found in and", "arround the Lumbridge castle and in the Varrock");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ahh the art of making your own bow and arrows. It's", "quite simple really. You'll need an axe to cut some logs", "from trees and a knife. Knives can be found in and", "arround the Lumbridge castle and in the Varrock");
 			stage = 21;
 			break;
 		case 21:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "General store upstairs.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "General store upstairs.");
 			stage = 22;
 			break;
 		case 22:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Use your knife on the logs, this will bring up a list of", "items you can make. Right-click on the item of your", "choice and choose the amount to fletch.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Use your knife on the logs, this will bring up a list of", "items you can make. Right-click on the item of your", "choice and choose the amount to fletch.");
 			stage = 23;
 			break;
 		case 23:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "For arrows you will need to smith some arrow heads", "and kill some chickens for feathers. Add the feathers", "and heads to the shafts to make arrows you can use.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "For arrows you will need to smith some arrow heads", "and kill some chickens for feathers. Add the feathers", "and heads to the shafts to make arrows you can use.");
 			stage = 24;
 			break;
 		case 24:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You'll need to find a flax field, there's one south of", "Seer's Village. Gather flax, then spin it on a spinning", "wheel, there's one in Seers' Village too. This makes bow", "strings which you can then use on the unstrung bows");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You'll need to find a flax field, there's one south of", "Seer's Village. Gather flax, then spin it on a spinning", "wheel, there's one in Seers' Village too. This makes bow", "strings which you can then use on the unstrung bows");
 			stage = 25;
 			break;
 		case 25:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "to make a working bow!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "to make a working bow!");
 			stage = 26;
 			break;
 		case 26:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Brilliant. If I forget anything I'll come talk to you", "again.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Brilliant. If I forget anything I'll come talk to you", "again.");
 			stage = 27;
 			break;
 		case 27:

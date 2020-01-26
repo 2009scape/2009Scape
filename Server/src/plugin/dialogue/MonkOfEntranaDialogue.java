@@ -46,7 +46,7 @@ public final class MonkOfEntranaDialogue extends DialoguePlugin {
 			stage = 500;
 			return true;
 		}
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Do you seek passage to holy Entrana? If so, you must", "leave your weaponry and armour behind. This is", "Saradomin's will.");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Do you seek passage to holy Entrana? If so, you must", "leave your weaponry and armour behind. This is", "Saradomin's will.");
 		stage = 0;
 		return true;
 	}

@@ -55,7 +55,7 @@ public final class LucyPartyRoomDialoguePlugin extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hi! I'm Lucy. Welcome to the Party Room!");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hi! I'm Lucy. Welcome to the Party Room!");
 		return true;
 	}
 
@@ -63,19 +63,19 @@ public final class LucyPartyRoomDialoguePlugin extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hi.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hi.");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Would you like to buy a beer?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Would you like to buy a beer?");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "How much do they cost?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How much do they cost?");
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Just 2 gold pieces.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Just 2 gold pieces.");
 			stage = 4;
 			break;
 		case 4:
@@ -87,11 +87,11 @@ public final class LucyPartyRoomDialoguePlugin extends DialoguePlugin {
 			case 228:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes please!");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes please!");
 					stage = 10;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "No thanks, I can't afford that.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thanks, I can't afford that.");
 					stage = 69;
 					break;
 				}
@@ -99,7 +99,7 @@ public final class LucyPartyRoomDialoguePlugin extends DialoguePlugin {
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Coming right up sir!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Coming right up sir!");
 			stage = 11;
 			break;
 		case 11:
@@ -117,7 +117,7 @@ public final class LucyPartyRoomDialoguePlugin extends DialoguePlugin {
 			}
 			break;
 		case 69:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I see. Well, come and see me if you change your mind. YOu", "know where I am!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I see. Well, come and see me if you change your mind. YOu", "know where I am!");
 			stage = 100;
 			break;
 		case 100:

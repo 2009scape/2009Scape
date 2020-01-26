@@ -39,7 +39,7 @@ public final class MamaDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Ar, darlin'! How might ya' Mama help ye?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ar, darlin'! How might ya' Mama help ye?");
 		stage = 0;
 		return true;
 	}

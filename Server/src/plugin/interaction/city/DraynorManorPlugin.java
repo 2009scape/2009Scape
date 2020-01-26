@@ -108,7 +108,7 @@ public final class DraynorManorPlugin extends OptionHandler {
 			break;
 		case 152:
 			if (!player.getInventory().containsItem(SPADE)) {
-				player.getDialogueInterpreter().sendDialogues(player, FacialExpression.ANGRY, "I'm not looking through that with my hands!");
+				player.getDialogueInterpreter().sendDialogues(player, FacialExpression.FURIOUS, "I'm not looking through that with my hands!");
 				return true;
 			}
 			player.lock(3);

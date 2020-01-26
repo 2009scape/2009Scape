@@ -39,7 +39,7 @@ public final class LumbridgeSwampArcher extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Why are you guys hanging around here?");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Why are you guys hanging around here?");
 		stage = 0;
 		return true;
 	}
@@ -48,15 +48,15 @@ public final class LumbridgeSwampArcher extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "(ahem)...'Guys'?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "(ahem)...'Guys'?");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Uh... yeah, sorry about that. Why are you all standing", "around out here?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Uh... yeah, sorry about that. Why are you all standing", "around out here?");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well, that's really none of your business.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, that's really none of your business.");
 			stage = 3;
 			break;
 		case 3:

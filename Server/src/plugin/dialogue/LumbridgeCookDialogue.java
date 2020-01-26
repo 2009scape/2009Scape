@@ -57,11 +57,11 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 		npc = (NPC) args[0];
 		if (player.getQuestRepository().getQuest("Cook's Assistant").getStage(player) == 10) {
 			if (player.getSavedData().getQuestData().getCookAssist("milk") && player.getSavedData().getQuestData().getCookAssist("flour") && player.getSavedData().getQuestData().getCookAssist("egg")) {
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You've brought me everything I need! I am saved!", "Thank you!");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You've brought me everything I need! I am saved!", "Thank you!");
 				stage = 956;
 				return true;
 			}
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "How are you getting on with finding the ingredients?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "How are you getting on with finding the ingredients?");
 			stage = 1000;
 			return true;
 		}
@@ -92,15 +92,15 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 		case 9563:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "You're a cook, why don't you bake me a cake?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "You're a cook, why don't you bake me a cake?");
 				stage = 20;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "You don't look very happy.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "You don't look very happy.");
 				stage = 30;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Nice hat!");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Nice hat!");
 				stage = 40;
 				break;
 			}
@@ -108,19 +108,19 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What's wrong?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What's wrong?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "You're a cook, why don't you bake me a cake?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "You're a cook, why don't you bake me a cake?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "You don't look very happy.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "You don't look very happy.");
 				stage = 30;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Nice hat!");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Nice hat!");
 				stage = 40;
 				break;
 
@@ -134,51 +134,51 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 40:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Err thank you. It's a pretty ordinary cooks hat really.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Err thank you. It's a pretty ordinary cooks hat really.");
 			stage = 41;
 			break;
 		case 41:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Still, suits you. The trousers are pretty special too.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Still, suits you. The trousers are pretty special too.");
 			stage = 42;
 			break;
 		case 42:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "It's all standard cook's issue uniform...");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "It's all standard cook's issue uniform...");
 			stage = 43;
 			break;
 		case 43:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "The whole hat, apron, stripey trousers ensemble - it", "works. It make you looks like a real cook.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "The whole hat, apron, stripey trousers ensemble - it", "works. It make you looks like a real cook.");
 			stage = 44;
 			break;
 		case 44:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I am a real cook! I haven't got time to be chatting", "about Culinary Fashion. I am in desperate need of help!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I am a real cook! I haven't got time to be chatting", "about Culinary Fashion. I am in desperate need of help!");
 			stage = 45;
 			break;
 		case 45:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "What's wrong?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What's wrong?");
 			stage = 10;
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "No, I'm not. The world is caving in around me - I am", "overcome by dark feelings of impending doom.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "No, I'm not. The world is caving in around me - I am", "overcome by dark feelings of impending doom.");
 			stage = 31;
 			break;
 		case 31:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "What's wrong?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What's wrong?");
 			stage = 10;
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "*sniff* Don't talk to me about cakes...");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "*sniff* Don't talk to me about cakes...");
 			stage = 21;
 			break;
 		case 21:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "What's wrong?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What's wrong?");
 			stage = 10;
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Oh dear, oh dear, oh dear, I'm in a terrible", "mess! It's the Duke's birthday today, and I should be", "making him a lovely big birthday cake.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh dear, oh dear, oh dear, I'm in a terrible", "mess! It's the Duke's birthday today, and I should be", "making him a lovely big birthday cake.");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I've forgotten to buy the ingredients. I'll never get", "them in time now. He'll sack me! What will I do? I have", "four children and a goat to look after. Would you help", "me? Please?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I've forgotten to buy the ingredients. I'll never get", "them in time now. He'll sack me! What will I do? I have", "four children and a goat to look after. Would you help", "me? Please?");
 			stage = 12;
 			break;
 		case 12:
@@ -188,18 +188,18 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 		case 13:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes, I'll help you.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, I'll help you.");
 				stage = 678;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, I don't feel like it. Maybe later.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, I don't feel like it. Maybe later.");
 				stage = 14;
 				break;
 
 			}
 			break;
 		case 14:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Fine. I always knew you Adventurer types were callous", "beasts. Go on your merry way!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Fine. I always knew you Adventurer types were callous", "beasts. Go on your merry way!");
 			stage = 15;
 			break;
 		case 15:
@@ -207,11 +207,11 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 			break;
 		case 678:
 			player.getQuestRepository().getQuest("Cook's Assistant").start(player);
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Oh thank you, thank you. I need milk, an egg and", "flour. I'd be very grateful if you can get them for me.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh thank you, thank you. I need milk, an egg and", "flour. I'd be very grateful if you can get them for me.");
 			stage = 679;
 			break;
 		case 679:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Okay, I'm on it.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Okay, I'm on it.");
 			stage = 680;
 			break;
 		case 680:
@@ -221,19 +221,19 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 		case 681:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "There is a Mill fairly close, Go North and then West.", "Mill Lane Mill is just off the road to Draynor. I", "usually get my flour from there.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "There is a Mill fairly close, Go North and then West.", "Mill Lane Mill is just off the road to Draynor. I", "usually get my flour from there.");
 				stage = 6000;
 				break;
 			case 2:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "There is a cattle field on the other side of the river,", "just across the road from the Groats' Farm.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "There is a cattle field on the other side of the river,", "just across the road from the Groats' Farm.");
 				stage = 7000;
 				break;
 			case 3:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I normally get my eggs from the Groats' farm, on the", "other side of the river.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I normally get my eggs from the Groats' farm, on the", "other side of the river.");
 				stage = 8000;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Actually, I know where to find this stuff.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Actually, I know where to find this stuff.");
 				stage = 9000;
 				break;
 			}
@@ -242,7 +242,7 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 8000:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "But any chicken should lay eggs.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "But any chicken should lay eggs.");
 			stage = 8001;
 			break;
 		case 8001:
@@ -250,7 +250,7 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 			stage = 681;
 			break;
 		case 7000:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Talk to Gillie Groats, she looks after the Dairy cows '", "she'll tell you everything you need to know about", "milking cows!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Talk to Gillie Groats, she looks after the Dairy cows '", "she'll tell you everything you need to know about", "milking cows!");
 			stage = 70001;
 			break;
 		case 70001:
@@ -258,7 +258,7 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 			stage = 681;
 			break;
 		case 6000:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Talk to Millie, she'll help, she's a lovely girl and a fine", "Miller..");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Talk to Millie, she'll help, she's a lovely girl and a fine", "Miller..");
 			stage = 6001;
 			break;
 		case 6001:
@@ -269,7 +269,7 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 			boolean gave = false;
 			if (player.getInventory().contains(1927, 1) && !player.getAttribute("gaveMilk", false)) {
 				player.getInventory().remove(MILK);
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Here's a bucket of milk.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Here's a bucket of milk.");
 				player.getSavedData().getQuestData().setCooksAssistant("milk", true);
 				player.getSavedData().getQuestData().setCooksAssistant("gave", true);
 				player.setAttribute("gaveMilk", true);
@@ -278,7 +278,7 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 			}
 			if (player.getInventory().contains(1933, 1) && !player.getAttribute("gaveFlour", false)) {
 				player.getInventory().remove(FLOUR);
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Here's a pot of flour.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Here's a pot of flour.");
 				player.getSavedData().getQuestData().setCooksAssistant("flour", true);
 				player.getSavedData().getQuestData().setCooksAssistant("gave", true);
 				player.setAttribute("gaveFlour", true);
@@ -290,7 +290,7 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 				player.getSavedData().getQuestData().setCooksAssistant("egg", true);
 				player.getSavedData().getQuestData().setCooksAssistant("gave", true);
 				player.setAttribute("gaveEgg", true);
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Here's a fresh egg.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Here's a fresh egg.");
 				gave = true;
 				break;
 			}
@@ -299,7 +299,7 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 					interpreter.sendDialogue("You still need to get:", "A bucket of milk. A pot of flour. An egg.");
 					stage = 1110;
 				} else {
-					interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Thanks for the ingredients you have got so far please get", "the rest quickly. I'm running out of time! The Duke", "will throw me into the streets!");
+					interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Thanks for the ingredients you have got so far please get", "the rest quickly. I'm running out of time! The Duke", "will throw me into the streets!");
 					stage = 10002;
 				}
 				break;
@@ -313,11 +313,11 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 		case 1111:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'll get right on it.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'll get right on it.");
 				stage = 15;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "So where do I find these ingredients then?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "So where do I find these ingredients then?");
 				stage = 490;
 				break;
 			}
@@ -327,7 +327,7 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 			stage = 681;
 			break;
 		case 10001:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Thanks for the ingredients you have got so far please get", "the rest quickly. I'm running out of time! The Duke", "will throw me into the streets!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Thanks for the ingredients you have got so far please get", "the rest quickly. I'm running out of time! The Duke", "will throw me into the streets!");
 			stage = 10002;
 			break;
 		case 10002:
@@ -356,24 +356,24 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 				interpreter.sendDialogue(messages[0], builder.toString());
 				stage = 1110;
 			} else {
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You've brought me everything I need! I am saved!", "Thank you!");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You've brought me everything I need! I am saved!", "Thank you!");
 				stage = 956;
 			}
 			break;
 		case 956:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "So do I get to go to the Duke's Party?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "So do I get to go to the Duke's Party?");
 			stage = 957;
 			break;
 		case 957:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I'm afraid not, only the big cheeses get to dine with the", "Duke.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm afraid not, only the big cheeses get to dine with the", "Duke.");
 			stage = 958;
 			break;
 		case 958:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Well, maybe one day I'll be important enough to sit on", "the Duke's table.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Well, maybe one day I'll be important enough to sit on", "the Duke's table.");
 			stage = 959;
 			break;
 		case 959:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Maybe, but I won't be holding my breath.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Maybe, but I won't be holding my breath.");
 			stage = 960;
 			break;
 		case 960:

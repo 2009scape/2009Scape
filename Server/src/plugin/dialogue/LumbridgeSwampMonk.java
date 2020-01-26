@@ -39,7 +39,7 @@ public final class LumbridgeSwampMonk extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Why are all of you standing around here?");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Why are all of you standing around here?");
 		stage = 0;
 		return true;
 	}
@@ -48,7 +48,7 @@ public final class LumbridgeSwampMonk extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "None of your business. Get lost.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "None of your business. Get lost.");
 			stage = 1;
 			break;
 		case 1:

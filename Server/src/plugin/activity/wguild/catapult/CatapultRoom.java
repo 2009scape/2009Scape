@@ -121,7 +121,7 @@ public final class CatapultRoom extends MapZone implements Plugin<Object> {
 					for (Player p : players) {
 						if (p.isActive() && p.getLocation().equals(TARGET)) {
 							if (p.getEquipment().getNew(EquipmentContainer.SLOT_SHIELD).getId() != SHIELD_ID) {
-								p.getDialogueInterpreter().sendDialogues(4287, FacialExpression.ANGRY, "Watch out! You'll need to equip the shield as soon as", "you're on the target spot else you could get hit! Speak", "to me to get one, and make sure both your hands are", "free to equip it.");
+								p.getDialogueInterpreter().sendDialogues(4287, FacialExpression.FURIOUS, "Watch out! You'll need to equip the shield as soon as", "you're on the target spot else you could get hit! Speak", "to me to get one, and make sure both your hands are", "free to equip it.");
 								p.getWalkingQueue().reset();
 								p.getWalkingQueue().addPath(p.getLocation().getX() + 1, p.getLocation().getY());
 								continue;

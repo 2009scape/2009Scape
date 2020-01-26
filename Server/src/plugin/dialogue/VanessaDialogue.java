@@ -44,18 +44,18 @@ public class VanessaDialogue extends DialoguePlugin {
 				npc.openShop(player);
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can you give me any Farming advice?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you give me any Farming advice?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'm okay, thank you.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm okay, thank you.");
 				stage = 30;
 				break;
 
 			}
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Yes - ask a gardener.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yes - ask a gardener.");
 			stage = 21;
 			break;
 		case 21:
@@ -77,7 +77,7 @@ public class VanessaDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hello. How can I help you?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello. How can I help you?");
 		stage = 0;
 		return true;
 	}

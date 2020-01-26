@@ -23,6 +23,11 @@ import java.util.Scanner;
 public final class Management {
 
 	/**
+	 * If the shutdown hook is active.
+	 */
+	public static boolean active = true;
+
+	/**
 	 * The commands.
 	 */
 	private static final Command[] COMMANDS = {

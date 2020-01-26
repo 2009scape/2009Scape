@@ -30,7 +30,7 @@ public class ZahurOptionPlugin extends OptionHandler {
 	@Override
 	public boolean handle(Player player, Node node, String option) {
 		PotionDecantingPlugin.decant(player);
-		player.getDialogueInterpreter().sendDialogues(node.asNpc(), FacialExpression.NORMAL, "There, all done.");
+		player.getDialogueInterpreter().sendDialogues(node.asNpc(), FacialExpression.NO_EXPRESSION, "There, all done.");
 		return true;
 	}
 

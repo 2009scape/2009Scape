@@ -63,7 +63,7 @@ public final class Configurations {
 	/**
 	 * The MS IP.
 	 */
-	public static String MS_IP = Configurations.LOCAL_MS ? "127.0.0.1" : "34.68.75.237";
+	public static String MS_IP = Configurations.LOCAL_MS ? "127.0.0.1" : Client.PUBLIC_IP_ADDRESS;
 
 	/**
 	 * The operation system name.

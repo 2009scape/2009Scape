@@ -50,14 +50,14 @@ public final class GertrudeDialogue extends DialoguePlugin {
 		final Quest quest = player.getQuestRepository().getQuest("Gertrude's Cat");
 		switch (quest.getStage(player)) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello, are you ok?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello, are you ok?");
 			break;
 		case 10:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello Gertrude.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello Gertrude.");
 			stage = 210;
 			break;
 		case 20:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello Gertrude.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello Gertrude.");
 			stage = 230;
 			break;
 		case 30:
@@ -66,11 +66,11 @@ public final class GertrudeDialogue extends DialoguePlugin {
 			stage = 235;
 			break;
 		case 40:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello Gertrude.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello Gertrude.");
 			stage = 300;
 			break;
 		case 60:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello Gertrude. Fluffs ran off with her kitten.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello Gertrude. Fluffs ran off with her kitten.");
 			stage = 320;
 			break;
 		case 100:
@@ -86,27 +86,27 @@ public final class GertrudeDialogue extends DialoguePlugin {
 		final Quest quest = player.getQuestRepository().getQuest("Gertrude's Cat");
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Do I look ok? Those kids drive me crazy.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Do I look ok? Those kids drive me crazy.");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I'm sorry. It's just that I've lost her.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm sorry. It's just that I've lost her.");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Lost who?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Lost who?");
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Fluffs, poor Fluffs. She never hurt anyone.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Fluffs, poor Fluffs. She never hurt anyone.");
 			stage = 4;
 			break;
 		case 4:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Who's Fluffs?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Who's Fluffs?");
 			stage = 5;
 			break;
 		case 5:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "My beloved feline friends Fluffs. She's been purring by", "my side for almost a decade. Please, could you go", "search for her while I look over the kids?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "My beloved feline friends Fluffs. She's been purring by", "my side for almost a decade. Please, could you go", "search for her while I look over the kids?");
 			stage = 6;
 			break;
 		case 6:
@@ -116,25 +116,25 @@ public final class GertrudeDialogue extends DialoguePlugin {
 		case 7:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Well, I suppose I could.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Well, I suppose I could.");
 				stage = 100;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sorry, I'm to busy too play pet rescue.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, I'm to busy too play pet rescue.");
 				stage = 200;
 				break;
 			}
 			break;
 		case 100:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Really? Thank you so much! I really have no idea", "where she could be!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Really? Thank you so much! I really have no idea", "where she could be!");
 			stage = 101;
 			break;
 		case 101:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I think my sons, Shilop and Wilough, saw the cat last.", "They'll be out in the market place.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I think my sons, Shilop and Wilough, saw the cat last.", "They'll be out in the market place.");
 			stage = 102;
 			break;
 		case 102:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Alright then, I'll see what I can do.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Alright then, I'll see what I can do.");
 			stage = 103;
 			break;
 		case 103:
@@ -146,23 +146,23 @@ public final class GertrudeDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 210:// start of stage 10
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Have you seen my poor Fluffs?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Have you seen my poor Fluffs?");
 			stage = 211;
 			break;
 		case 211:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'm afraid not.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm afraid not.");
 			stage = 212;
 			break;
 		case 212:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "What about Shilop?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What about Shilop?");
 			stage = 213;
 			break;
 		case 213:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "No sign of him either.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No sign of him either.");
 			stage = 214;
 			break;
 		case 214:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hmmm...strange, he should be at the market.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hmmm...strange, he should be at the market.");
 			stage = 215;
 			break;
 		case 215:
@@ -200,11 +200,11 @@ public final class GertrudeDialogue extends DialoguePlugin {
 			stage = 302;
 			break;
 		case 302:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You should try tempting her with a", "seasoned sardine! Those are her favourite snacks.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You should try tempting her with a", "seasoned sardine! Those are her favourite snacks.");
 			stage = 303;
 			break;
 		case 303:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Thanks for the advice!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Thanks for the advice!");
 			stage = 304;
 			break;
 		case 304:
@@ -220,37 +220,37 @@ public final class GertrudeDialogue extends DialoguePlugin {
 			stage = 322;
 			break;
 		case 322:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "If you hadn't found her kitten it would have died out", "there!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "If you hadn't found her kitten it would have died out", "there!");
 			stage = 323;
 			break;
 		case 323:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "That's ok, I like to do my bit.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "That's ok, I like to do my bit.");
 			stage = 324;
 			break;
 		case 324:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I don't know how to thank you. I have no real material", "possesions. I do have kittens! I can only really look", "after one.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I don't know how to thank you. I have no real material", "possesions. I do have kittens! I can only really look", "after one.");
 			stage = 325;
 			break;
 		case 325:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Well, if it needs a home.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Well, if it needs a home.");
 			stage = 326;
 			break;
 		case 326:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I would sell it to my cousin in West Ardougne. I hear", "there's a rat epidemic there. But it's too far.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I would sell it to my cousin in West Ardougne. I hear", "there's a rat epidemic there. But it's too far.");
 			stage = 327;
 			break;
 		case 327:
 			if (player.getInventory().freeSlots() == 0) {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I don't seem to have enough inventory space.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I don't seem to have enough inventory space.");
 				stage = 1000;
 				break;
 			} else {
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Here you go, look after her and thank you again!");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Here you go, look after her and thank you again!");
 				stage = 328;
 			}
 			break;
 		case 328:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Oh by the way, the kitten can live in your backpack,", "but to make it grow you must take it out and feed and", "stroke it often.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh by the way, the kitten can live in your backpack,", "but to make it grow you must take it out and feed and", "stroke it often.");
 			stage = 329;
 			break;
 		case 329:

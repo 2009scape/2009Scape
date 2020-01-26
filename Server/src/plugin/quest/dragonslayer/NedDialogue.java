@@ -95,7 +95,7 @@ public final class NedDialogue extends DialoguePlugin {
 				stage = 520;
 				return true;
 			}
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Why, hello there, lad. Me friends call me Ned. I was a", "man of the sea, but it's past me now. Could I be", "making or selling you some rope?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Why, hello there, lad. Me friends call me Ned. I was a", "man of the sea, but it's past me now. Could I be", "making or selling you some rope?");
 			stage = 499;
 			return true;
 		}
@@ -113,7 +113,7 @@ public final class NedDialogue extends DialoguePlugin {
 			stage = 40;
 			break;
 		default:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Why, hello there, lad. Me friends call me Ned. I was a", "man of the sea, but it's past me now. Could I be", "making or selling you some rope?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Why, hello there, lad. Me friends call me Ned. I was a", "man of the sea, but it's past me now. Could I be", "making or selling you some rope?");
 			stage = 0;
 			break;
 		}
@@ -132,7 +132,7 @@ public final class NedDialogue extends DialoguePlugin {
 						stage = 520;
 						return true;
 					}
-					interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Why, hello there, lad. Me friends call me Ned. I was a", "man of the sea, but it's past me now. Could I be", "making or selling you some rope?");
+					interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Why, hello there, lad. Me friends call me Ned. I was a", "man of the sea, but it's past me now. Could I be", "making or selling you some rope?");
 					stage = 499;
 					return true;
 				}
@@ -153,7 +153,7 @@ public final class NedDialogue extends DialoguePlugin {
 					stage = 40;
 					break;
 				default:
-					interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Why, hello there, lad. Me friends call me Ned. I was a", "man of the sea, but it's past me now. Could I be", "making or selling you some rope?");
+					interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Why, hello there, lad. Me friends call me Ned. I was a", "man of the sea, but it's past me now. Could I be", "making or selling you some rope?");
 					stage = 0;
 					break;
 				}
@@ -280,11 +280,11 @@ public final class NedDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes, I would like some rope.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, I would like some rope.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No thanks Ned, I don't need any.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thanks Ned, I don't need any.");
 				stage = 20;
 				break;
 			case 3:
@@ -294,23 +294,23 @@ public final class NedDialogue extends DialoguePlugin {
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well, I can sell you some rope for 15 coins. Or I can", "be making you some if you gets me 4 balls of wool. I", "strands them together I does, makes em strong.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, I can sell you some rope for 15 coins. Or I can", "be making you some if you gets me 4 balls of wool. I", "strands them together I does, makes em strong.");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "You make rope from wool?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "You make rope from wool?");
 			stage = 12;
 			break;
 		case 12:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Of course you can!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Of course you can!");
 			stage = 13;
 			break;
 		case 13:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I thought you needed hemp or jute.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I thought you needed hemp or jute.");
 			stage = 14;
 			break;
 		case 14:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Do you want some rope or not?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Do you want some rope or not?");
 			stage = 15;
 			break;
 		case 15:
@@ -325,15 +325,15 @@ public final class NedDialogue extends DialoguePlugin {
 		case 17:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Okay, please sell me some rope.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Okay, please sell me some rope.");
 				stage = 100;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I have some balls of wool.", "Could you make me some rope?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I have some balls of wool.", "Could you make me some rope?");
 				stage = 120;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "That's a little more than I want to pay.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "That's a little more than I want to pay.");
 				stage = 200;
 				break;
 			}
@@ -341,15 +341,15 @@ public final class NedDialogue extends DialoguePlugin {
 		case 16:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Okay, please sell me some rope.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Okay, please sell me some rope.");
 				stage = 100;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "That's a little more than I want to pay.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "That's a little more than I want to pay.");
 				stage = 200;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I will go and get some wool.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I will go and get some wool.");
 				stage = 300;
 				break;
 			}
@@ -357,21 +357,21 @@ public final class NedDialogue extends DialoguePlugin {
 		case 40:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Ned could you make other things from wool?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ned could you make other things from wool?");
 				stage = 41;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes, I would like some rope.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, I would like some rope.");
 				stage = 10;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No thanks Ned, I don't need any.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thanks Ned, I don't need any.");
 				stage = 20;
 				break;
 			}
 			break;
 		case 41:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I am sure I can. What are you thinking of?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I am sure I can. What are you thinking of?");
 			stage = 42;
 			break;
 		case 42:
@@ -381,29 +381,29 @@ public final class NedDialogue extends DialoguePlugin {
 		case 43:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Could you knit me a sweater?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Could you knit me a sweater?");
 				stage = 44;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "How about some sort of wig?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How about some sort of wig?");
 				stage = 50;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Could you repair the arrow holes in the", "back of my shirt?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Could you repair the arrow holes in the", "back of my shirt?");
 				stage = 4;
 				break;
 			case 4:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Ah yes, it's a tough world these days. There's a few", "brave enough to attack from 10 metres away.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ah yes, it's a tough world these days. There's a few", "brave enough to attack from 10 metres away.");
 				stage = 47;
 				break;
 			}
 			break;
 		case 44:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Do I look like a member of a sewing circle?", "Be off wi' you. I have fought monsters.", "that would turn your hair blue.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Do I look like a member of a sewing circle?", "Be off wi' you. I have fought monsters.", "that would turn your hair blue.");
 			stage = 45;
 			break;
 		case 45:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I dont't need to be laughted at just 'cos I am getting", "a bit old.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I dont't need to be laughted at just 'cos I am getting", "a bit old.");
 			stage = 46;
 			break;
 		case 46:
@@ -414,11 +414,11 @@ public final class NedDialogue extends DialoguePlugin {
 			stage = 48;
 			break;
 		case 48:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "There you go, good as new.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "There you go, good as new.");
 			stage = 46;
 			break;
 		case 50:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well... That's an interesting though. Yes, I think I", "could do something. Give me 3 balls of wool and I", "might be able to do it.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well... That's an interesting though. Yes, I think I", "could do something. Give me 3 balls of wool and I", "might be able to do it.");
 			stage = 51;
 			break;
 		case 51:
@@ -439,11 +439,11 @@ public final class NedDialogue extends DialoguePlugin {
 			break;
 		case 53:
 			if (!player.getInventory().containsItem(WIG_WOOL)) {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Oh, I seem to have forgotten my wool.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Oh, I seem to have forgotten my wool.");
 				stage = 46;
 				return true;
 			}
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Okay, I will have a go.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Okay, I will have a go.");
 			stage = 54;
 			break;
 		case 54:
@@ -456,7 +456,7 @@ public final class NedDialogue extends DialoguePlugin {
 					GroundItemManager.create(WIG, player);
 				}
 			}
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Here you go, how's that for a quick effort?", "Not nad I think!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Here you go, how's that for a quick effort?", "Not nad I think!");
 			stage = 56;
 			break;
 		case 56:
@@ -464,11 +464,11 @@ public final class NedDialogue extends DialoguePlugin {
 			stage = 57;
 			break;
 		case 57:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Thanks Ned, there's more to you than meets the eye.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Thanks Ned, there's more to you than meets the eye.");
 			stage = 46;
 			break;
 		case 100:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "There you go, finest rope in " + GameWorld.getName() + ".");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "There you go, finest rope in " + GameWorld.getName() + ".");
 			stage = 101;
 			break;
 		case 101:
@@ -500,21 +500,21 @@ public final class NedDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 200:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well, if you ever need rope that's the price. Sorry.", "An old sailor needs money for a little drop o' rum.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, if you ever need rope that's the price. Sorry.", "An old sailor needs money for a little drop o' rum.");
 			stage = 201;
 			break;
 		case 201:
 			end();
 			break;
 		case 300:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Aye, you do that. Remember, it takes 4 balls of wool to", "make strong rope.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Aye, you do that. Remember, it takes 4 balls of wool to", "make strong rope.");
 			stage = 301;
 			break;
 		case 301:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well, old Neddy is always here if you do. Tell your", "friends. I can always be using the business.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, old Neddy is always here if you do. Tell your", "friends. I can always be using the business.");
 			stage = 21;
 			break;
 		case 21:

@@ -39,7 +39,7 @@ public final class DenulthDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello!");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello!");
 		stage = 0;
 		return true;
 	}
@@ -48,19 +48,19 @@ public final class DenulthDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Welcome back friend!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Welcome back friend!");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "How goes your fight with trolls?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How goes your fight with trolls?");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Very good! We are winning.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Very good! We are winning.");
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Good luck!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Good luck!");
 			stage = 4;
 			break;
 		case 4:

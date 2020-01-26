@@ -1,7 +1,8 @@
-# RS 2009
-Open source 2009 Runescape Remake
+# RS 2009 - The most complete Runescape Emulation server. Pull requests welcome!
 
 Join our Discord server: https://discord.gg/4zrA2Wy
+
+We also have a live game in the [Releases](https://github.com/dginovker/RS-2009/releases) section that always runs the latest code.
 
 # Setting up the project
 Requirements:

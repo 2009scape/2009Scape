@@ -47,7 +47,7 @@ public class KingRoaldDialogue extends DialoguePlugin {
 		npc = (NPC) args[0];
 		switch (player.getQuestRepository().getQuest("Priest in Peril").getStage(player)) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Greetings, your majesty.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Greetings, your majesty.");
 			stage = 0;
 			break;
 		case 10:
@@ -58,7 +58,7 @@ public class KingRoaldDialogue extends DialoguePlugin {
 		case 15:
 		case 16:
 		case 100:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Greetings, your majesty.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Greetings, your majesty.");
 			stage = 0;
 			break;
 		}
@@ -154,73 +154,73 @@ public class KingRoaldDialogue extends DialoguePlugin {
 		Quest quest = player.getQuestRepository().getQuest("Priest in Peril");
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well hello there. What do you want?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well hello there. What do you want?");
 			stage = 1;
 			break;
 		case 1:
 			if (quest.getStage(player) == 0) {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I am looking for a quest!");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I am looking for a quest!");
 				stage = 2;
 				return true;
 			}
 			if (quest.getStage(player) <= 11) {
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You have news of Drezel for me?");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You have news of Drezel for me?");
 				stage = 20;
 			}
 			if (quest.getStage(player) == 12) {
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You have news of Drezel for me?");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You have news of Drezel for me?");
 				stage = 23;
 			}
 			if (quest.getStage(player) == 13) {
-				interpreter.sendDialogues(npc, FacialExpression.ANGRY, "AND MORE IMPORTANTLY, WHY HAVEN'T", "YOU ENSURED THE BORDER TO", "MORYTANIA IS SECURE YET?");
+				interpreter.sendDialogues(npc, FacialExpression.FURIOUS, "AND MORE IMPORTANTLY, WHY HAVEN'T", "YOU ENSURED THE BORDER TO", "MORYTANIA IS SECURE YET?");
 				stage = 40;
 			}
 			if (quest.getStage(player) == 14) {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'm looking for a key to unlock drezel!");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm looking for a key to unlock drezel!");
 				stage = 50;
 			}
 			if (quest.getStage(player) == 15 || quest.getStage(player) == 16 || quest.getStage(player) == 17) {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'm helping Drezel!");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm helping Drezel!");
 				stage = 50;
 			}
 			if (quest.getStage(player) == 100) {
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Ah, it's you again. Hello there.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ah, it's you again. Hello there.");
 				stage = 200;
 			}
 			break;
 		case 200:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Do you have anything of importace to say?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Do you have anything of importace to say?");
 			stage = 201;
 			break;
 		case 201:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "...Not really.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "...Not really.");
 			stage = 202;
 			break;
 		case 202:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You will have to excuse me, then. I am very busy as I", "have a kingdom to run!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You will have to excuse me, then. I am very busy as I", "have a kingdom to run!");
 			stage = 203;
 			break;
 		case 203:
 			end();
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "A quest you say? Hmm, what an odd request to make", "of the king. It's funny you should mention it though, as", "there is something you can do for me.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "A quest you say? Hmm, what an odd request to make", "of the king. It's funny you should mention it though, as", "there is something you can do for me.");
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Are you aware of the temple easy of here? It stands on", "the river Salve and guards the entrance to the lands of", "Morytania?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Are you aware of the temple easy of here? It stands on", "the river Salve and guards the entrance to the lands of", "Morytania?");
 			stage = 4;
 			break;
 		case 4:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, I don't think I know it...");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, I don't think I know it...");
 			stage = 5;
 			break;
 		case 5:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hmm, how strange that you don't. Well anyway, it has", "been some days since last I heard from Drezel, the", "priest who lives there.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hmm, how strange that you don't. Well anyway, it has", "been some days since last I heard from Drezel, the", "priest who lives there.");
 			stage = 6;
 			break;
 		case 6:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Be a sport and go make sure that nothing untoward", "has happend to the silly old codger for me, would you?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Be a sport and go make sure that nothing untoward", "has happend to the silly old codger for me, would you?");
 			stage = 7;
 			break;
 		case 7:
@@ -232,11 +232,11 @@ public class KingRoaldDialogue extends DialoguePlugin {
 			case 1:
 				quest.start(player);
 				player.getQuestRepository().syncronizeTab(player);
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sure. I don't have anything better to do right now.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sure. I don't have anything better to do right now.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Yes, I dare say it does. I wouldn't even have", "mentioned it had you not seemed to be looking for", "something to do anyway.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yes, I dare say it does. I wouldn't even have", "mentioned it had you not seemed to be looking for", "something to do anyway.");
 				stage = 9;
 				break;
 			}
@@ -245,57 +245,57 @@ public class KingRoaldDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Many thanks adventurer! I would have sent one of my", "squires but they wanted payment for it!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Many thanks adventurer! I would have sent one of my", "squires but they wanted payment for it!");
 			stage = 11;
 			break;
 		case 11:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "No not yet.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No not yet.");
 			stage = 21;
 			break;
 		case 21:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I would wish you would go check on my dear friend.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I would wish you would go check on my dear friend.");
 			stage = 22;
 			break;
 		case 22:
 			end();
 			break;
 		case 23:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yeah, I spoke to the guys at the temple and they said", "they were being bothered by that dog in the crypt, so I", "went and killed it for them. No problem.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yeah, I spoke to the guys at the temple and they said", "they were being bothered by that dog in the crypt, so I", "went and killed it for them. No problem.");
 			stage = 24;
 			break;
 		case 24:
-			interpreter.sendDialogues(npc, FacialExpression.ANGRY, "YOU DID WHAT???");
+			interpreter.sendDialogues(npc, FacialExpression.FURIOUS, "YOU DID WHAT???");
 			stage = 25;
 			break;
 		case 25:
-			interpreter.sendDialogues(npc, FacialExpression.ANGRY, "Are you mentally deficient??? That guard dog was", "protecting the route to Morytania! Without it we could", "be in severe peril of attack!");
+			interpreter.sendDialogues(npc, FacialExpression.FURIOUS, "Are you mentally deficient??? That guard dog was", "protecting the route to Morytania! Without it we could", "be in severe peril of attack!");
 			stage = 26;
 			break;
 		case 26:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Did I make a mistake?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Did I make a mistake?");
 			stage = 27;
 			break;
 		case 27:
-			interpreter.sendDialogues(npc, FacialExpression.ANGRY, "YES YOU DID!!!!! You need to get there", "and find out what is happening! Before it is too late for", "us all!");
+			interpreter.sendDialogues(npc, FacialExpression.FURIOUS, "YES YOU DID!!!!! You need to get there", "and find out what is happening! Before it is too late for", "us all!");
 			stage = 28;
 			break;
 		case 28:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "B-but Drezel TOLD me to...!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "B-but Drezel TOLD me to...!");
 			stage = 29;
 			break;
 		case 29:
-			interpreter.sendDialogues(npc, FacialExpression.ANGRY, "No, you absolute cretin! Obviously some fiend has done", "something to Drezel and tricked your feeble intellect", "into helping them kill that guard dog!");
+			interpreter.sendDialogues(npc, FacialExpression.FURIOUS, "No, you absolute cretin! Obviously some fiend has done", "something to Drezel and tricked your feeble intellect", "into helping them kill that guard dog!");
 			stage = 30;
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.ANGRY, "You get back there and do whatever is necessary to", "safeguard my kingdom from attack, or I will see you", "beheaded for high treason!");
+			interpreter.sendDialogues(npc, FacialExpression.FURIOUS, "You get back there and do whatever is necessary to", "safeguard my kingdom from attack, or I will see you", "beheaded for high treason!");
 			stage = 31;
 			break;
 		case 31:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Y-yes your Highness.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Y-yes your Highness.");
 			stage = 32;
 			break;
 		case 32:
@@ -303,23 +303,23 @@ public class KingRoaldDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 40:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Okay, okay, I'm going, I'm going.... There's no need to", "shout...");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Okay, okay, I'm going, I'm going.... There's no need to", "shout...");
 			stage = 41;
 			break;
 		case 41:
-			interpreter.sendDialogues(npc, FacialExpression.ANGRY, "NO NEED TO SHOUT???");
+			interpreter.sendDialogues(npc, FacialExpression.FURIOUS, "NO NEED TO SHOUT???");
 			stage = 42;
 			break;
 		case 42:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Listen, and listen well, and see if your puny mind can", "comprehend this; if the border is not protected, then we", "are at the mercy of the evil beings");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Listen, and listen well, and see if your puny mind can", "comprehend this; if the border is not protected, then we", "are at the mercy of the evil beings");
 			stage = 43;
 			break;
 		case 43:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "that live in Morytania. Given the most of the", "inhabitants consider humans to be nothing more than", "over talkative snack foods, I would");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "that live in Morytania. Given the most of the", "inhabitants consider humans to be nothing more than", "over talkative snack foods, I would");
 			stage = 44;
 			break;
 		case 44:
-			interpreter.sendDialogues(npc, FacialExpression.ANGRY, "say that me shouting at you for your incompetence is", "the LEAST of your worries right now NOW GO!");
+			interpreter.sendDialogues(npc, FacialExpression.FURIOUS, "say that me shouting at you for your incompetence is", "the LEAST of your worries right now NOW GO!");
 			stage = 45;
 			break;
 		case 45:

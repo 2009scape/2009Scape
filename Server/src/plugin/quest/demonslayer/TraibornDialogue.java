@@ -67,12 +67,12 @@ public class TraibornDialogue extends DialoguePlugin {
 				npc("How are you doing finding bones?");
 				stage = 380;
 			} else {
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Ello young thingummywut.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ello young thingummywut.");
 				stage = 0;
 			}
 			break;
 		default:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Ello young thingummywut.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ello young thingummywut.");
 			stage = 0;
 			break;
 		}
@@ -266,21 +266,21 @@ public class TraibornDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What's a thingumywut?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What's a thingumywut?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Teach  me to be a mighty and powerful wizard.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Teach  me to be a mighty and powerful wizard.");
 				stage = 20;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "A thingummywut? Where? Where?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "A thingummywut? Where? Where?");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Those pesky thingummywuts. They get everywhere.", "They leave a terrible mess too.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Those pesky thingummywuts. They get everywhere.", "They leave a terrible mess too.");
 			stage = 12;
 			break;
 		case 12:
@@ -290,32 +290,32 @@ public class TraibornDialogue extends DialoguePlugin {
 		case 13:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Err you just called me thingummywut.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Err you just called me thingummywut.");
 				stage = 100;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Tell me what they look like and I'll mash 'em.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Tell me what they look like and I'll mash 'em.");
 				stage = 120;
 				break;
 			}
 			break;
 		case 120:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Don't be ridiculous. No-one has ever seen one.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Don't be ridiculous. No-one has ever seen one.");
 			stage = 121;
 			break;
 		case 121:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "They're invisible, or a myth, or a figment of my", "imagination. Can't remember which right now.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "They're invisible, or a myth, or a figment of my", "imagination. Can't remember which right now.");
 			stage = 122;
 			break;
 		case 122:
 			end();
 			break;
 		case 100:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You're a thingummywut? I've never seen one up close", "before. They said I was mad!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You're a thingummywut? I've never seen one up close", "before. They said I was mad!");
 			stage = 101;
 			break;
 		case 101:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Now you are my proof! There ARE thingummywuts in", "this tower. Now where can I find a cage big enough to", "keep you?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Now you are my proof! There ARE thingummywuts in", "this tower. Now where can I find a cage big enough to", "keep you?");
 			stage = 102;
 			break;
 		case 102:
@@ -325,31 +325,31 @@ public class TraibornDialogue extends DialoguePlugin {
 		case 103:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Err I'd better be off really.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Err I'd better be off really.");
 				stage = 110;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "They're right, you are mad.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "They're right, you are mad.");
 				stage = 130;
 				break;
 			}
 			break;
 		case 130:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "That's a pity. I thought maybe they were winding me", "up.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "That's a pity. I thought maybe they were winding me", "up.");
 			stage = 131;
 			break;
 		case 131:
 			end();
 			break;
 		case 110:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Oh ok, have a good time, and watch out for sheep!", "They're more cunning than they look.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh ok, have a good time, and watch out for sheep!", "They're more cunning than they look.");
 			stage = 111;
 			break;
 		case 111:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Wizard eh? You don't want any truck with that sort.", "They're not to be trusted. That's what I've heard", "anyways.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Wizard eh? You don't want any truck with that sort.", "They're not to be trusted. That's what I've heard", "anyways.");
 			stage = 21;
 			break;
 		case 21:
@@ -359,24 +359,24 @@ public class TraibornDialogue extends DialoguePlugin {
 		case 22:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "So aren't you a wizard?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "So aren't you a wizard?");
 				stage = 40;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Oh I'd better stop talking to you then.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Oh I'd better stop talking to you then.");
 				stage = 60;
 				break;
 			}
 			break;
 		case 60:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Cheerio then. It was nice chatting to you.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Cheerio then. It was nice chatting to you.");
 			stage = 61;
 			break;
 		case 61:
 			end();
 			break;
 		case 40:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "How dare you? Of course I'm a wizard. Now don't be", "so cheeky or I'll turn you into a frog.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "How dare you? Of course I'm a wizard. Now don't be", "so cheeky or I'll turn you into a frog.");
 			stage = 41;
 			break;
 		case 41:

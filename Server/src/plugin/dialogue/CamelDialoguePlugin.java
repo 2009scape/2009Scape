@@ -39,7 +39,7 @@ public final class CamelDialoguePlugin extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "If I go near that camel, it'll probably bite my hand off.");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "If I go near that camel, it'll probably bite my hand off.");
 		stage = 0;
 		return true;
 	}

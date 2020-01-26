@@ -52,7 +52,6 @@ public final class SystemTermination {
 			}
 		}
 		SystemLogger.log("[SystemTerminator] Server successfully terminated!");
-		System.exit(0);
 	}
 
 	/**

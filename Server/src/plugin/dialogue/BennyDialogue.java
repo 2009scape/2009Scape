@@ -61,25 +61,25 @@ public final class BennyDialogue extends DialoguePlugin {
 		case 0:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can I have a newspaper, please?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can I have a newspaper, please?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "How much does a paper cost?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How much does a paper cost?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Varrock Herald? Never heard of it.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Varrock Herald? Never heard of it.");
 				stage = 30;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Anything interesting in there?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Anything interesting in there?");
 				stage = 40;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Certainly, Guv. That'll be 50 gold pieces, please.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Certainly, Guv. That'll be 50 gold pieces, please.");
 			stage = 11;
 			break;
 		case 11:
@@ -89,11 +89,11 @@ public final class BennyDialogue extends DialoguePlugin {
 		case 12:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sure, here you go.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sure, here you go.");
 				stage = 13;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, thanks.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, thanks.");
 				stage = 14;
 				break;
 			}
@@ -120,11 +120,11 @@ public final class BennyDialogue extends DialoguePlugin {
 			}
 			break;
 		case 14:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Ok, suit yourself. Plenty more fish in the sea.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ok, suit yourself. Plenty more fish in the sea.");
 			stage = 100;
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Just 50 gold pieces! An absolute bargain! Want one?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Just 50 gold pieces! An absolute bargain! Want one?");
 			stage = 21;
 			break;
 		case 21:
@@ -133,23 +133,23 @@ public final class BennyDialogue extends DialoguePlugin {
 			break;
 		case 22:
 			if (buttonId == 1) {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes, please.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, please.");
 				stage = 13;
 			} else if (buttonId == 2) {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, thanks.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, thanks.");
 				stage = 14;
 			}
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "For the illiterate amongst us, I shall elucidate. The", "Varrock Herald is a new newspaper. It is edited, printed", "and published by myself, Benny Gutenberg, and each", "edition promises to enthrall the reader with captivating ");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "For the illiterate amongst us, I shall elucidate. The", "Varrock Herald is a new newspaper. It is edited, printed", "and published by myself, Benny Gutenberg, and each", "edition promises to enthrall the reader with captivating ");
 			stage = 31;
 			break;
 		case 31:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "material! Now, can I interest you in buying one for a mere", "50 gold?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "material! Now, can I interest you in buying one for a mere", "50 gold?");
 			stage = 21;
 			break;
 		case 40:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Of course there is, mate. Packed full of thought provoking", "insights, contentious interviews and celebrity", "scandalmongering! An excellent read and all for just 50", "coins! Want one?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Of course there is, mate. Packed full of thought provoking", "insights, contentious interviews and celebrity", "scandalmongering! An excellent read and all for just 50", "coins! Want one?");
 			stage = 21;
 			break;
 		case 100:

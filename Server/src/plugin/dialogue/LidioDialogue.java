@@ -39,7 +39,7 @@ public final class LidioDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Greetings, warrior, how can I fill your stomach today?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Greetings, warrior, how can I fill your stomach today?");
 		stage = 0;
 		return true;
 	}
@@ -48,7 +48,7 @@ public final class LidioDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "With food preferrable.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "With food preferrable.");
 			stage = 1;
 			break;
 		case 1:

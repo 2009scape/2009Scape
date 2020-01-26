@@ -79,8 +79,9 @@ public final class MajorUpdateWorker implements Runnable {
 	 */
 	private void sleep() throws InterruptedException {
 		// How many ticks off we are
+		final int TICK_SPEED = (int) (600 / 1); //Allows you to make server ticks faster than normal
 		StatisticsTab.reportPerformance((int) (System.currentTimeMillis() - start));
-		long duration = 600 - ((System.currentTimeMillis() - start) % 600);
+		long duration = TICK_SPEED - ((System.currentTimeMillis() - start) % TICK_SPEED);
 		if (duration > 0) {
 			Thread.sleep(duration);
 		} else {

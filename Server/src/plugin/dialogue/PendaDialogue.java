@@ -30,7 +30,7 @@ public class PendaDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hi!");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hi!");
 		stage = 0;
 		return true;
 	}
@@ -39,7 +39,7 @@ public class PendaDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "The trolls are coming!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "The trolls are coming!");
 			stage = 2;
 			break;
 		case 2:

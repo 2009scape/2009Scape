@@ -95,7 +95,7 @@ public final class ThuroDialogue extends DialoguePlugin {
 			case 0:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "That's an unusual cape you're wearing, what is it?");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "That's an unusual cape you're wearing, what is it?");
 					stage = 10;
 					player.setAttribute("thurgo:1", true);
 					break;
@@ -127,11 +127,11 @@ public final class ThuroDialogue extends DialoguePlugin {
 			case 13:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes, please.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, please.");
 					stage = 15;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, thanks.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, thanks.");
 					stage = 14;
 					break;
 				}
@@ -141,7 +141,7 @@ public final class ThuroDialogue extends DialoguePlugin {
 				break;
 			case 15:
 				if (player.getInventory().freeSlots() < 2) {
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sorry, I don't have enough room in my inventory.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, I don't have enough room in my inventory.");
 					stage = 14;
 					return true;
 				}
@@ -150,7 +150,7 @@ public final class ThuroDialogue extends DialoguePlugin {
 					return true;
 				}
 				if (!player.getInventory().remove(COINS)) {
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sorry, I don't seem to have enough coins.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, I don't seem to have enough coins.");
 					stage = 14;
 					return true;
 				}
@@ -169,12 +169,12 @@ public final class ThuroDialogue extends DialoguePlugin {
 		case 60:
 			switch (stage) {
 			case 0:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "About that sword...");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "About that sword...");
 				stage = 1;
 				break;
 			case 1:
 				if (player.getInventory().contains(667, 1) || player.getEquipment().contains(667, 1) || player.getBank().contains(667, 1)) {
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Thanks for all your help in getting it for me!");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Thanks for all your help in getting it for me!");
 					stage = 9;
 				} else {
 					interpreter.sendDialogues(npc, FacialExpression.OSRS_NORMAL, "How are you doing finding those sword materials?");
@@ -183,15 +183,15 @@ public final class ThuroDialogue extends DialoguePlugin {
 				break;
 			case 2:
 				if (player.getInventory().containsItem(BLURITE_ORE) && player.getInventory().containsItem(IRON_BARS)) {
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "I have them right here.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I have them right here.");
 					stage = 5;
 				} else {
 					if (player.getInventory().containsItem(BLURITE_ORE)) {
-						interpreter.sendDialogues(player, FacialExpression.NORMAL, "I don't have enough iron bars...");
+						interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I don't have enough iron bars...");
 						stage = 3;
 						return true;
 					}
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "I don't have any blurite ore yet...");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I don't have any blurite ore yet...");
 					stage = 3;
 				}
 				break;
@@ -208,7 +208,7 @@ public final class ThuroDialogue extends DialoguePlugin {
 				break;
 			case 6:
 				if (player.getInventory().remove(BLURITE_ORE) && player.getInventory().remove(IRON_BARS)) {
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Thank you very much!");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Thank you very much!");
 					player.getInventory().add(BLURITE_SWORD);
 					stage = 7;
 				}
@@ -233,10 +233,10 @@ public final class ThuroDialogue extends DialoguePlugin {
 			switch (stage) {
 			case 0:
 				if (player.getInventory().contains(666, 1)) {
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "I have found a picture of the sword I would like you to", "make.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I have found a picture of the sword I would like you to", "make.");
 					stage = 5;
 				} else {
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "About that sword...");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "About that sword...");
 					stage = 1;
 				}
 				break;
@@ -245,7 +245,7 @@ public final class ThuroDialogue extends DialoguePlugin {
 				stage = 2;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sorry, not yet.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, not yet.");
 				stage = 3;
 				break;
 			case 3:
@@ -281,7 +281,7 @@ public final class ThuroDialogue extends DialoguePlugin {
 				stage = 12;
 				break;
 			case 12:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Ok. I'll go and find them then.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok. I'll go and find them then.");
 				stage = 13;
 				break;
 			case 13:
@@ -295,7 +295,7 @@ public final class ThuroDialogue extends DialoguePlugin {
 		case 40:
 			switch (stage) {
 			case 0:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "About that sword...");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "About that sword...");
 				stage = 1;
 				break;
 			case 1:
@@ -303,7 +303,7 @@ public final class ThuroDialogue extends DialoguePlugin {
 				stage = 2;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sorry, not yet.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, not yet.");
 				stage = 3;
 				break;
 			case 3:
@@ -318,7 +318,7 @@ public final class ThuroDialogue extends DialoguePlugin {
 		case 30:
 			switch (stage) {
 			case 0:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can you make me a special sword?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you make me a special sword?");
 				stage = 1;
 				break;
 			case 1:
@@ -326,7 +326,7 @@ public final class ThuroDialogue extends DialoguePlugin {
 				stage = 2;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I need you to make a sword for one of Falador's", "knights. He had one which was passed down through five", "generations, but his squire has lost it. So we need an", "identical one to replace it.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I need you to make a sword for one of Falador's", "knights. He had one which was passed down through five", "generations, but his squire has lost it. So we need an", "identical one to replace it.");
 				stage = 3;
 				break;
 			case 3:
@@ -338,7 +338,7 @@ public final class ThuroDialogue extends DialoguePlugin {
 				stage = 5;
 				break;
 			case 5:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'll go and ask if his squire and see if I can find one.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'll go and ask if his squire and see if I can find one.");
 				stage = 6;
 				break;
 			case 6:
@@ -357,18 +357,18 @@ public final class ThuroDialogue extends DialoguePlugin {
 					interpreter.sendOptions("Select an Option", "Hello. Are you an Imcando dwarf?", "Would you like some redberry pie?");
 					stage = 1;
 				} else {
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello. Are you an Imcando dwarf?");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello. Are you an Imcando dwarf?");
 					stage = 10;
 				}
 				break;
 			case 1:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello. Are you an Imcando dwarf?");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello. Are you an Imcando dwarf?");
 					stage = 10;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Would you like some redberry pie?");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Would you like some redberry pie?");
 					stage = 20;
 					break;
 				}
@@ -388,11 +388,11 @@ public final class ThuroDialogue extends DialoguePlugin {
 			case 12:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Would you like some redberry pie?");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Would you like some redberry pie?");
 					stage = 20;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can you make me a special sword?");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you make me a special sword?");
 					stage = 13;
 					break;
 				}
@@ -433,7 +433,7 @@ public final class ThuroDialogue extends DialoguePlugin {
 			case 0:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "That's an unusual cape you're wearing, what is it?");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "That's an unusual cape you're wearing, what is it?");
 					stage = 10;
 					break;
 				case 2:
@@ -464,11 +464,11 @@ public final class ThuroDialogue extends DialoguePlugin {
 			case 13:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes, please.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, please.");
 					stage = 15;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, thanks.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, thanks.");
 					stage = 14;
 					break;
 				}
@@ -478,12 +478,12 @@ public final class ThuroDialogue extends DialoguePlugin {
 				break;
 			case 15:
 				if (player.getInventory().freeSlots() < 2) {
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sorry, I don't have enough room in my inventory.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, I don't have enough room in my inventory.");
 					stage = 14;
 					return true;
 				}
 				if (!player.getInventory().remove(COINS)) {
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sorry, I don't seem to have enough coins.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, I don't seem to have enough coins.");
 					stage = 14;
 					return true;
 				}

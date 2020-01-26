@@ -382,6 +382,7 @@ public final class Client extends GameShell {
 			CS2Script.anInt2451 = ObjectDefinition.worldId;
 			Class3_Sub28_Sub7.method564(Class38.aClass87_665, 0);
 			System.out.println("port = " + Class53.anInt867);
+			System.out.println("Here: Config.MSIP = " + Configurations.MS_IP);
 			if(Class44.anInt718 != 0) {
 				if(Class44.anInt718 == 1) {
 					RuntimeException_Sub1.worldListHost = this.getCodeBase().getHost();

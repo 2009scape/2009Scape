@@ -141,11 +141,11 @@ public final class AggieDialogue extends DialoguePlugin {
 				stage = 20;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.ANGRY, "You mad old witch, you can't help me.");
+				interpreter.sendDialogues(player, FacialExpression.FURIOUS, "You mad old witch, you can't help me.");
 				stage = 30;
 				break;
 			case 5:
-				interpreter.sendDialogues(player, FacialExpression.ANGRY, "Can you make dyes for me please?");
+				interpreter.sendDialogues(player, FacialExpression.FURIOUS, "Can you make dyes for me please?");
 				stage = 40;
 				break;
 			}
@@ -181,11 +181,11 @@ public final class AggieDialogue extends DialoguePlugin {
 		case 727:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes please. Mix me some skin paste.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes please. Mix me some skin paste.");
 				stage = 731;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No thank you, I don't need any skin paste right now.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thank you, I don't need any skin paste right now.");
 				stage = 729;
 				break;
 			}
@@ -235,17 +235,17 @@ public final class AggieDialogue extends DialoguePlugin {
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.ANGRY, "You mad old witch, you can't help me.");
+				interpreter.sendDialogues(player, FacialExpression.FURIOUS, "You mad old witch, you can't help me.");
 				stage = 30;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.ANGRY, "Can you make dyes for me please?");
+				interpreter.sendDialogues(player, FacialExpression.FURIOUS, "Can you make dyes for me please?");
 				stage = 40;
 				break;
 			}
 			break;
 		case 40:
-			interpreter.sendDialogues(npc, FacialExpression.ANGRY, "What sort of dye would you like? Red, yellow or blue?");
+			interpreter.sendDialogues(npc, FacialExpression.FURIOUS, "What sort of dye would you like? Red, yellow or blue?");
 			stage = 41;
 			break;
 		case 41:
@@ -255,15 +255,15 @@ public final class AggieDialogue extends DialoguePlugin {
 		case 42:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.ANGRY, "What do you need to make red dye?");
+				interpreter.sendDialogues(player, FacialExpression.FURIOUS, "What do you need to make red dye?");
 				stage = 410;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.ANGRY, "What do you need to make yellow dye?");
+				interpreter.sendDialogues(player, FacialExpression.FURIOUS, "What do you need to make yellow dye?");
 				stage = 420;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.ANGRY, "What do you need to make blue dye?");
+				interpreter.sendDialogues(player, FacialExpression.FURIOUS, "What do you need to make blue dye?");
 				stage = 430;
 				break;
 			}
@@ -273,7 +273,7 @@ public final class AggieDialogue extends DialoguePlugin {
 			stage = 431;
 			break;
 		case 431:
-			interpreter.sendDialogues(player, FacialExpression.ANGRY, "Okay, make me some blue dye please.");
+			interpreter.sendDialogues(player, FacialExpression.FURIOUS, "Okay, make me some blue dye please.");
 			stage = 432;
 			break;
 		case 432:
@@ -296,7 +296,7 @@ public final class AggieDialogue extends DialoguePlugin {
 			stage = 421;
 			break;
 		case 421:
-			interpreter.sendDialogues(player, FacialExpression.ANGRY, "Okay, make me some yellow dye please.");
+			interpreter.sendDialogues(player, FacialExpression.FURIOUS, "Okay, make me some yellow dye please.");
 			stage = 422;
 			break;
 		case 422:
@@ -319,7 +319,7 @@ public final class AggieDialogue extends DialoguePlugin {
 			stage = 411;
 			break;
 		case 411:
-			interpreter.sendDialogues(player, FacialExpression.ANGRY, "Okay, make me some red dye please.");
+			interpreter.sendDialogues(player, FacialExpression.FURIOUS, "Okay, make me some red dye please.");
 			stage = 412;
 			break;
 		case 412:

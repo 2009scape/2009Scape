@@ -198,7 +198,7 @@ public final class MerlinCrystalPlugin extends OptionHandler {
 				stage = 0;
 			}
 			if (quest.getStage(player) == 50 && player.getLocation().withinDistance(new Location(2770, 3402, 2), 8)) {
-				interpreter.sendDialogues(248, FacialExpression.SAD, "STOP! Please... spare my son.");
+				interpreter.sendDialogues(248, FacialExpression.SCARED, "STOP! Please... spare my son.");
 				player.lock();
 				stage = 34;
 			}
@@ -352,63 +352,63 @@ public final class MerlinCrystalPlugin extends OptionHandler {
 				stage = 29;
 				break;
 			case 34:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Tell me how to untrap Merlin and I might.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Tell me how to untrap Merlin and I might.");
 				stage = 35;
 				break;
 			case 35:
-				interpreter.sendDialogues(248, FacialExpression.NORMAL, "You have guessed correctly that I'm responsible for", "that.");
+				interpreter.sendDialogues(248, FacialExpression.NO_EXPRESSION, "You have guessed correctly that I'm responsible for", "that.");
 				stage = 36;
 				break;
 			case 36:
-				interpreter.sendDialogues(248, FacialExpression.NORMAL, "I suppose I can live with that fool Merlin being loose", "for the sake of my son.");
+				interpreter.sendDialogues(248, FacialExpression.NO_EXPRESSION, "I suppose I can live with that fool Merlin being loose", "for the sake of my son.");
 				stage = 37;
 				break;
 			case 37:
-				interpreter.sendDialogues(248, FacialExpression.NORMAL, "Setting him free won't be easy though.");
+				interpreter.sendDialogues(248, FacialExpression.NO_EXPRESSION, "Setting him free won't be easy though.");
 				stage = 38;
 				break;
 			case 38:
-				interpreter.sendDialogues(248, FacialExpression.NORMAL, "You will need to find a magic symbol as close to the", "crystal as you can find.");
+				interpreter.sendDialogues(248, FacialExpression.NO_EXPRESSION, "You will need to find a magic symbol as close to the", "crystal as you can find.");
 				stage = 39;
 				break;
 			case 39:
-				interpreter.sendDialogues(248, FacialExpression.NORMAL, "You will then need to drop some bat's bones on the", "magic symbol while holding a lit black candle.");
+				interpreter.sendDialogues(248, FacialExpression.NO_EXPRESSION, "You will then need to drop some bat's bones on the", "magic symbol while holding a lit black candle.");
 				stage = 40;
 				break;
 			case 40:
-				interpreter.sendDialogues(248, FacialExpression.NORMAL, "This will summon a mighty spirit named Thrantax.");
+				interpreter.sendDialogues(248, FacialExpression.NO_EXPRESSION, "This will summon a mighty spirit named Thrantax.");
 				stage = 41;
 				break;
 			case 41:
-				interpreter.sendDialogues(248, FacialExpression.NORMAL, "You will need to bind him with magic words.");
+				interpreter.sendDialogues(248, FacialExpression.NO_EXPRESSION, "You will need to bind him with magic words.");
 				stage = 42;
 				break;
 			case 42:
-				interpreter.sendDialogues(248, FacialExpression.NORMAL, "Then you will need the sword Excalibur with which the", "spell was bound in order to shatter the crystal.");
+				interpreter.sendDialogues(248, FacialExpression.NO_EXPRESSION, "Then you will need the sword Excalibur with which the", "spell was bound in order to shatter the crystal.");
 				stage = 43;
 				break;
 			case 43:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Where can I find the sword Excalibur?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Where can I find the sword Excalibur?");
 				stage = 44;
 				break;
 			case 44:
-				interpreter.sendDialogues(248, FacialExpression.NORMAL, "The lady of the lake has it. I don't know if she'll give it", "to you though, she can be rather temperamental.");
+				interpreter.sendDialogues(248, FacialExpression.NO_EXPRESSION, "The lady of the lake has it. I don't know if she'll give it", "to you though, she can be rather temperamental.");
 				stage = 45;
 				break;
 			case 45:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What are these magic words?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What are these magic words?");
 				stage = 46;
 				break;
 			case 46:
-				interpreter.sendDialogues(248, FacialExpression.NORMAL, "You will find the magic words at the base of one of the", "chaos altars.");
+				interpreter.sendDialogues(248, FacialExpression.NO_EXPRESSION, "You will find the magic words at the base of one of the", "chaos altars.");
 				stage = 47;
 				break;
 			case 47:
-				interpreter.sendDialogues(248, FacialExpression.NORMAL, "Which chaos altar I cannot remember.");
+				interpreter.sendDialogues(248, FacialExpression.NO_EXPRESSION, "Which chaos altar I cannot remember.");
 				stage = 48;
 				break;
 			case 48:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Okay, I can do all of that.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Okay, I can do all of that.");
 				stage = 49;
 				break;
 			case 49:

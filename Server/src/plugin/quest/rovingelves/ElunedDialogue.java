@@ -34,49 +34,49 @@ public class ElunedDialogue extends DialoguePlugin {
 			break;
 		case 1000:
 			if (quest.getStage(player) == 15 && !player.getInventory().contains(RovingElves.CONSECRATION_SEED_CHARGED.getId(), 1)) {
-				interpreter.sendDialogues(1679, FacialExpression.NORMAL, "Hello, any luck finding the consecration seed?");
+				interpreter.sendDialogues(1679, FacialExpression.NO_EXPRESSION, "Hello, any luck finding the consecration seed?");
 				stage = 1002;
 			}
 			if (quest.getStage(player) == 15 && player.getInventory().contains(RovingElves.CONSECRATION_SEED_CHARGED.getId(), 1)) {
-				interpreter.sendDialogues(1679, FacialExpression.NORMAL, "You still have the charged seed with you, I can feel it.", "Hurry adventurer, go plant the seed and free", "my grandmother's spirit.");
+				interpreter.sendDialogues(1679, FacialExpression.NO_EXPRESSION, "You still have the charged seed with you, I can feel it.", "Hurry adventurer, go plant the seed and free", "my grandmother's spirit.");
 				stage = 500;
 			}
 			if (quest.getStage(player) == 15 && player.getInventory().contains(RovingElves.CONSECRATION_SEED.getId(), 1)) {
-				interpreter.sendDialogues(1679, FacialExpression.NORMAL, "Hello, any luck finding the consecration seed?");
+				interpreter.sendDialogues(1679, FacialExpression.NO_EXPRESSION, "Hello, any luck finding the consecration seed?");
 				stage = 1002;
 			}
 			if (quest.getStage(player) == 20) {
-				interpreter.sendDialogues(1679, FacialExpression.NORMAL, "Hey... how's it going? Have you managed to", "reconsecrate Glarial's resting place?");
+				interpreter.sendDialogues(1679, FacialExpression.NO_EXPRESSION, "Hey... how's it going? Have you managed to", "reconsecrate Glarial's resting place?");
 				stage = 12;
 			} else if (quest.getStage(player) != 15) {
-				interpreter.sendDialogues(1679, FacialExpression.NORMAL, "Hello there, it's a lovely day for a walk in the woods.", "So what can I help you with?");
+				interpreter.sendDialogues(1679, FacialExpression.NO_EXPRESSION, "Hello there, it's a lovely day for a walk in the woods.", "So what can I help you with?");
 				stage = 1001;
 			}
 			break;
 		case 1001:
 			if (quest.getStage(player) >= 100) {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I am looking to buy teleportation crystals.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I am looking to buy teleportation crystals.");
 				stage = 1200;
 			} else {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'm just looking around.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm just looking around.");
 				stage = 500;
 			}
 			break;
 		case 1002:
 			if (player.getInventory().contains(RovingElves.CONSECRATION_SEED.getId(), 1)) {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes, I have it here.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, I have it here.");
 				stage = 6;
 			} else {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I forgot what you told me to do.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I forgot what you told me to do.");
 				stage = 1003;
 			}
 			break;
 		case 1003:
-			interpreter.sendDialogues(1679, FacialExpression.NORMAL, "Re-enter Glarial's tomb and defeat the tomb's guardian.", "Take the consecration seed it is guarding and", "bring it back to me.");
+			interpreter.sendDialogues(1679, FacialExpression.NO_EXPRESSION, "Re-enter Glarial's tomb and defeat the tomb's guardian.", "Take the consecration seed it is guarding and", "bring it back to me.");
 			stage = 500;
 			break;
 		case 1200:
-			interpreter.sendDialogues(1679, FacialExpression.NORMAL, "Very well. I'll sell you a brand new teleportation", "crystal for 750 gold. What do you say?");
+			interpreter.sendDialogues(1679, FacialExpression.NO_EXPRESSION, "Very well. I'll sell you a brand new teleportation", "crystal for 750 gold. What do you say?");
 			stage = 1202;
 			break;
 		case 1202:
@@ -88,7 +88,7 @@ public class ElunedDialogue extends DialoguePlugin {
 			case 1:
 				stage = 1204;
 				if (!player.getInventory().contains(995, 750)) {
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Actually, I don't have enough coins.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Actually, I don't have enough coins.");
 				} else {
 					interpreter.sendDialogue("You purchase an eleven teleporation crystal for 750 gold.");
 					if (player.getInventory().remove(new Item(995, 750))) {
@@ -97,7 +97,7 @@ public class ElunedDialogue extends DialoguePlugin {
 				}
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Nevermind, I really must be going.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Nevermind, I really must be going.");
 				stage = 1204;
 				break;
 			}
@@ -109,19 +109,19 @@ public class ElunedDialogue extends DialoguePlugin {
 		/* Main dialogue */
 
 		case 1:
-			interpreter.sendDialogues(1679, FacialExpression.NORMAL, "That I do... It is elvish tradition to plant a specially", "enchanted crystal seed at the graves of our ancestors.", "The seed will create guardians to protect the area.");
+			interpreter.sendDialogues(1679, FacialExpression.NO_EXPRESSION, "That I do... It is elvish tradition to plant a specially", "enchanted crystal seed at the graves of our ancestors.", "The seed will create guardians to protect the area.");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(1679, FacialExpression.NORMAL, "Unfortunately the crystal seed must be tuned to the", "person it's protecting... a new seed won't do. But you", "should be able to recover the seed from her old tomb.");
+			interpreter.sendDialogues(1679, FacialExpression.NO_EXPRESSION, "Unfortunately the crystal seed must be tuned to the", "person it's protecting... a new seed won't do. But you", "should be able to recover the seed from her old tomb.");
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(1679, FacialExpression.NORMAL, "The tomb's guardian will be protecting the seed, you'll", "need to defeat him to get it. Once you have it, return", "here and I will re-enchant it.");
+			interpreter.sendDialogues(1679, FacialExpression.NO_EXPRESSION, "The tomb's guardian will be protecting the seed, you'll", "need to defeat him to get it. Once you have it, return", "here and I will re-enchant it.");
 			stage = 4;
 			break;
 		case 4:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "OK... I'll be back as soon as I have it.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "OK... I'll be back as soon as I have it.");
 			stage = 5;
 			break;
 		case 5:
@@ -133,11 +133,11 @@ public class ElunedDialogue extends DialoguePlugin {
 			stage = 7;
 			break;
 		case 7:
-			interpreter.sendDialogues(1679, FacialExpression.NORMAL, "");
+			interpreter.sendDialogues(1679, FacialExpression.NO_EXPRESSION, "");
 			stage = 8;
 			break;
 		case 8:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "How odd. I can see her lips moving... But there's no", "sound.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How odd. I can see her lips moving... But there's no", "sound.");
 			stage = 9;
 			break;
 		case 9:
@@ -148,19 +148,19 @@ public class ElunedDialogue extends DialoguePlugin {
 			stage = 10;
 			break;
 		case 10:
-			interpreter.sendDialogues(1679, FacialExpression.NORMAL, "Plant this seed in Glarial's new tomb, close to her", "remains and she will rest in peace.");
+			interpreter.sendDialogues(1679, FacialExpression.NO_EXPRESSION, "Plant this seed in Glarial's new tomb, close to her", "remains and she will rest in peace.");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "OK.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "OK.");
 			stage = 500;
 			break;
 		case 12:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes, it's done.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, it's done.");
 			stage = 13;
 			break;
 		case 13:
-			interpreter.sendDialogues(1679, FacialExpression.NORMAL, "Well done... You should go see Islwyn, but I'd guess he", "already knows.");
+			interpreter.sendDialogues(1679, FacialExpression.NO_EXPRESSION, "Well done... You should go see Islwyn, but I'd guess he", "already knows.");
 			stage = 500;
 			break;
 		}
@@ -176,10 +176,10 @@ public class ElunedDialogue extends DialoguePlugin {
 	public boolean open(Object... args) {
 		final Quest quest = player.getQuestRepository().getQuest("Roving Elves");
 		if (quest.getStage(player) == 10) {
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hey there... Islwyn said you may be able to help me.", "He told me you know how to consecrate ground for an", "elven burial. I need to reconsecrate Glarial's resting", "place.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hey there... Islwyn said you may be able to help me.", "He told me you know how to consecrate ground for an", "elven burial. I need to reconsecrate Glarial's resting", "place.");
 			stage = 1;
 		} else {
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Good day.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Good day.");
 			stage = 1000;
 		}
 		return true;

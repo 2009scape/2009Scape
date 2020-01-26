@@ -38,11 +38,11 @@ public final class GuidorsWifeDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		if (args.length == 2) {
-			interpreter.sendDialogues(342, FacialExpression.NORMAL, "Please leave my husband alone. He's very sick, and I don't", "want anyone bothering him.");
+			interpreter.sendDialogues(342, FacialExpression.NO_EXPRESSION, "Please leave my husband alone. He's very sick, and I don't", "want anyone bothering him.");
 			stage = 100;
 			return true;
 		}
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello.");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello.");
 		stage = 0;
 		return true;
 	}
@@ -52,11 +52,11 @@ public final class GuidorsWifeDialogue extends DialoguePlugin {
 
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(342, FacialExpression.NORMAL, "Oh hello, I can't chat now. I have to keep an eye on my", "husband. He's very ill!");
+			interpreter.sendDialogues(342, FacialExpression.NO_EXPRESSION, "Oh hello, I can't chat now. I have to keep an eye on my", "husband. He's very ill!");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'm sorry to hear that!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm sorry to hear that!");
 			stage = 2;
 			break;
 		case 2:

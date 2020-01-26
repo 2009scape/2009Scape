@@ -1,5 +1,7 @@
 package org.keldagrim.net;
 
+import org.keldagrim.Management;
+
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.channels.SelectionKey;
@@ -86,7 +88,7 @@ public final class NioReactor implements Runnable {
 	
 	@Override
 	public void run() {
-		while (running) {
+		while (running && Management.active) {
 			try {
 				selector.select();
 			} catch (IOException e) {

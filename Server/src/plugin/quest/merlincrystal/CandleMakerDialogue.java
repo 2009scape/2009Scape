@@ -72,7 +72,7 @@ public final class CandleMakerDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hi! Would you be interested in some of my fine", "candles?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hi! Would you be interested in some of my fine", "candles?");
 		stage = 2;
 		return true;
 	}
@@ -107,55 +107,55 @@ public final class CandleMakerDialogue extends DialoguePlugin {
 		case 3:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Have you got any black candles?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Have you got any black candles?");
 				stage = 4;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes, let me see your stock.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, let me see your stock.");
 				stage = 30;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No thank you.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thank you.");
 				stage = 40;
 				break;
 			}
 			break;
 		case 4:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "BLACK candles???");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "BLACK candles???");
 			stage = 5;
 			break;
 		case 5:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hmmm. In the candle making trade, we have a tradition", "that it's very bad luck to make black candles.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hmmm. In the candle making trade, we have a tradition", "that it's very bad luck to make black candles.");
 			stage = 6;
 			break;
 		case 6:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "VERY bad luck.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "VERY bad luck.");
 			stage = 7;
 			break;
 		case 7:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I will pay good money for one.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I will pay good money for one.");
 			stage = 8;
 			break;
 		case 8:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I still dunno...");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I still dunno...");
 			stage = 9;
 			break;
 		case 9:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Tell you what. I'll supply you with a black candle...");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Tell you what. I'll supply you with a black candle...");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "IF you can bring me a bucket FULL of wax.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "IF you can bring me a bucket FULL of wax.");
 			stage = 40;
 			break;
 		case 10:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes, let me see your stock.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, let me see your stock.");
 				stage = 30;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No thank you.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thank you.");
 				stage = 40;
 				break;
 			}
@@ -163,21 +163,21 @@ public final class CandleMakerDialogue extends DialoguePlugin {
 		case 25:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Ah, you again. You're quite a trend setter. Can't believe", "the number of black candle requests I've had since you", "came. I couldn't pass up a business opportunity like that,", "bad luck or no. So I'm selling them now. Would you be");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ah, you again. You're quite a trend setter. Can't believe", "the number of black candle requests I've had since you", "came. I couldn't pass up a business opportunity like that,", "bad luck or no. So I'm selling them now. Would you be");
 				stage = 26;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes, let me see your stock.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, let me see your stock.");
 				stage = 30;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No thank you.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thank you.");
 				stage = 40;
 				break;
 			}
 			break;
 		case 26:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "interested in purchasing another?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "interested in purchasing another?");
 			stage = 27;
 			break;
 		case 27:
@@ -194,14 +194,14 @@ public final class CandleMakerDialogue extends DialoguePlugin {
 			break;
 		case 40:
 			if (quest.getStage(player) == 50 && player.getInventory().contains(MerlinCrystalPlugin.BUCKET_OF_WAX.getId(), 1)) {
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Wha- what's that? You've already got a bucket of wax!");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Wha- what's that? You've already got a bucket of wax!");
 				stage = 41;
 			} else {
 				end();
 			}
 			break;
 		case 41:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Give it 'ere and I'll trade you for a black candle.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Give it 'ere and I'll trade you for a black candle.");
 			stage = 42;
 			break;
 		case 42:

@@ -177,7 +177,7 @@ public final class PikkupstixDialogue extends DialoguePlugin {
 				stage = 6;
 				break;
 			case 6:
-				interpreter.sendDialogues(getIds()[0], FacialExpression.ANGRY, "Confound you, lapine menace!");
+				interpreter.sendDialogues(getIds()[0], FacialExpression.FURIOUS, "Confound you, lapine menace!");
 				stage = 7;
 				break;
 			case 7:
@@ -229,7 +229,7 @@ public final class PikkupstixDialogue extends DialoguePlugin {
 				stage = 19;
 				break;
 			case 19:
-				interpreter.sendDialogues(getIds()[0], FacialExpression.ANGRY, "Gah! That better not be my wardrobe!");
+				interpreter.sendDialogues(getIds()[0], FacialExpression.FURIOUS, "Gah! That better not be my wardrobe!");
 				stage = 20;
 				break;
 			case 20:
@@ -281,7 +281,7 @@ public final class PikkupstixDialogue extends DialoguePlugin {
 				stage = 32;
 				break;
 			case 32:
-				interpreter.sendDialogues(getIds()[0], FacialExpression.ANGRY, "Very well, young fool. You go see how well you do", "against it.");
+				interpreter.sendDialogues(getIds()[0], FacialExpression.FURIOUS, "Very well, young fool. You go see how well you do", "against it.");
 				stage = 33;
 				break;
 			case 33:

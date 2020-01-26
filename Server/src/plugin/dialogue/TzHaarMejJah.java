@@ -32,7 +32,7 @@ public class TzHaarMejJah extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You want help JalYt-Ket-" + player.getUsername() + "?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You want help JalYt-Ket-" + player.getUsername() + "?");
 		stage = 0;
 		return true;
 	}
@@ -51,22 +51,22 @@ public class TzHaarMejJah extends DialoguePlugin {
 					interpreter.open(DialogueInterpreter.getDialogueKey("firecape-exchange"), npc);
 					break;
 				}
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What is this place?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What is this place?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What did you call me?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What did you call me?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No I'm fine thanks.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No I'm fine thanks.");
 				stage = 30;
 				break;
 
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "This is the fight caves, TzHaar-Xil made it for practice,", "but many JalYt come here to fight too.", "Just enter the cave and make sure you're prepared.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "This is the fight caves, TzHaar-Xil made it for practice,", "but many JalYt come here to fight too.", "Just enter the cave and make sure you're prepared.");
 			stage = 11;
 			break;
 		case 11:
@@ -76,11 +76,11 @@ public class TzHaarMejJah extends DialoguePlugin {
 		case 12:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Are there any rules?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Are there any rules?");
 				stage = 14;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Ok thanks.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok thanks.");
 				stage = 13;
 				break;
 			}
@@ -89,7 +89,7 @@ public class TzHaarMejJah extends DialoguePlugin {
 			end();
 			break;
 		case 14:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Rules? Survival is the only rule in there.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Rules? Survival is the only rule in there.");
 			stage = 15;
 			break;
 		case 15:
@@ -99,37 +99,37 @@ public class TzHaarMejJah extends DialoguePlugin {
 		case 16:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Do I win anything?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do I win anything?");
 				stage = 17;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sounds good.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sounds good.");
 				stage = 13;
 				break;
 
 			}
 			break;
 		case 17:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You ask a lot of questions.", "Might give you TokKul if you last long enough.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You ask a lot of questions.", "Might give you TokKul if you last long enough.");
 			stage = 18;
 			break;
 		case 18:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "...");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "...");
 			stage = 19;
 			break;
 		case 19:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Before you ask, TokKul is like your Coins.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Before you ask, TokKul is like your Coins.");
 			stage = 500;
 			break;
 		case 500:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Gold is like you JalYt, soft and easily broken, we use", "hard rock forged in fire like TzHaar!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Gold is like you JalYt, soft and easily broken, we use", "hard rock forged in fire like TzHaar!");
 			stage = 501;
 			break;
 		case 501:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Are you not JalYt-Ket?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Are you not JalYt-Ket?");
 			stage = 21;
 			break;
 		case 21:
@@ -139,32 +139,32 @@ public class TzHaarMejJah extends DialoguePlugin {
 		case 22:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "What's a 'JalYt-Ket'?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What's a 'JalYt-Ket'?");
 				stage = 100;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I guess so...");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I guess so...");
 				stage = 200;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No I'm not!");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No I'm not!");
 				stage = 300;
 				break;
 			}
 			break;
 		case 100:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "That what you are... you tough and strong no?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "That what you are... you tough and strong no?");
 			stage = 101;
 			break;
 		case 101:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Well yes I suppose I am...");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Well yes I suppose I am...");
 			stage = 102;
 			break;
 		case 102:
 			end();
 			break;
 		case 200:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I guess so....");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I guess so....");
 			stage = 201;
 			break;
 		case 201:

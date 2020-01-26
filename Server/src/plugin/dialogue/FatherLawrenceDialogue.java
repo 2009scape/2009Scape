@@ -37,7 +37,7 @@ public final class FatherLawrenceDialogue extends DialoguePlugin {
 		npc = (NPC) args[0];
 		final Quest quest = player.getQuestRepository().getQuest("Romeo & Juliet");
 		if (quest.getStage(player) < 30) {
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Oh to be a father in the times of whiskey.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh to be a father in the times of whiskey.");
 			stage = 0;
 		}
 		switch (quest.getStage(player)) {
@@ -71,11 +71,11 @@ public final class FatherLawrenceDialogue extends DialoguePlugin {
 		final Quest quest = player.getQuestRepository().getQuest("Romeo & Juliet");
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I sing and I drink and I wake up in gutters.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I sing and I drink and I wake up in gutters.");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Top of the morning to you.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Top of the morning to you.");
 			stage = 2;
 			break;
 		case 2:

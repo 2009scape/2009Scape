@@ -30,7 +30,7 @@ public class SeerDialoguePlugin extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Anyway, sorry about that.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Anyway, sorry about that.");
 			stage = 1;
 			break;
 		case 1:
@@ -40,29 +40,29 @@ public class SeerDialoguePlugin extends DialoguePlugin {
 		case 2:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Many greetings.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Many greetings.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I seek knowledge and power.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I seek knowledge and power.");
 				stage = 20;
 				break;
 
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Greetings!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Greetings!");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Remember, whenever you set out to do something,", "something else must be done first.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Remember, whenever you set out to do something,", "something else must be done first.");
 			stage = 12;
 			break;
 		case 12:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Knowledge comes from experience, power", "comes from battleaxes.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Knowledge comes from experience, power", "comes from battleaxes.");
 			stage = 21;
 			break;
 		case 21:
@@ -81,7 +81,7 @@ public class SeerDialoguePlugin extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Uh, what was that dark force? I've never sensed anything", "like it...");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Uh, what was that dark force? I've never sensed anything", "like it...");
 		stage = 0;
 		return true;
 	}

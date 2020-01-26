@@ -34,15 +34,15 @@ public class GolrieDialogue extends DialoguePlugin {
 
 		/* Main dialogue sequence */
 		case 0:
-			interpreter.sendDialogues(306, FacialExpression.NORMAL, "That's me. I've been stuck in here for weeks, those", "goblins are trying to steal my family's heirlooms. My", "grandad gave me all sorts of old junk.");
+			interpreter.sendDialogues(306, FacialExpression.NO_EXPRESSION, "That's me. I've been stuck in here for weeks, those", "goblins are trying to steal my family's heirlooms. My", "grandad gave me all sorts of old junk.");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Do you mind if I have a look?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you mind if I have a look?");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(306, FacialExpression.NORMAL, "No, of course not.");
+			interpreter.sendDialogues(306, FacialExpression.NO_EXPRESSION, "No, of course not.");
 			stage = 3;
 			break;
 		case 3:
@@ -54,21 +54,21 @@ public class GolrieDialogue extends DialoguePlugin {
 			stage = 5;
 			break;
 		case 5:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Could I take this old pebble?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Could I take this old pebble?");
 			stage = 6;
 			break;
 		case 6:
-			interpreter.sendDialogues(306, FacialExpression.NORMAL, "Oh that, yes have it, it's just some old elven junk I", "believe.");
+			interpreter.sendDialogues(306, FacialExpression.NO_EXPRESSION, "Oh that, yes have it, it's just some old elven junk I", "believe.");
 			player.getInventory().add(new Item(294, 1));
 			stage = 7;
 			break;
 		case 7:
-			interpreter.sendDialogues(306, FacialExpression.NORMAL, "Thanks a lot for the key traveller. I think I'll wait in", "here until those goblins get bored and leave.");
+			interpreter.sendDialogues(306, FacialExpression.NO_EXPRESSION, "Thanks a lot for the key traveller. I think I'll wait in", "here until those goblins get bored and leave.");
 			player.getInventory().remove(new Item(293, 1));
 			stage = 8;
 			break;
 		case 8:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "OK... Take care Golrie.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "OK... Take care Golrie.");
 			stage = 100;
 			break;
 		}
@@ -82,7 +82,7 @@ public class GolrieDialogue extends DialoguePlugin {
 
 	@Override
 	public boolean open(Object... args) {
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello, is your name Golrie?");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello, is your name Golrie?");
 		stage = 0;
 		return true;
 	}

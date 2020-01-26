@@ -38,11 +38,11 @@ public class MathiasFlaconryDialogue extends DialoguePlugin {
 		case 91:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Ok, that seems reasonable.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok, that seems reasonable.");
 				stage = 95;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'm not interested then, thanks.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm not interested then, thanks.");
 				stage = 323;
 				break;
 
@@ -53,12 +53,12 @@ public class MathiasFlaconryDialogue extends DialoguePlugin {
 			break;
 		case 95:
 			if (player.getBank().containsItem(FALCON) || player.getEquipment().containsItem(FALCON) || player.getInventory().containsItem(FALCON)) {
-				interpreter.sendDialogues(5093, FacialExpression.NORMAL, "You already have a falcon!");
+				interpreter.sendDialogues(5093, FacialExpression.NO_EXPRESSION, "You already have a falcon!");
 				stage = 99;
 				return true;
 			}
 			if (player.getEquipment().get(EquipmentContainer.SLOT_HANDS) != null || player.getEquipment().get(EquipmentContainer.SLOT_SHIELD) != null || player.getEquipment().get(EquipmentContainer.SLOT_WEAPON) != null) {
-				interpreter.sendDialogues(5093, FacialExpression.NORMAL, "Sorry, free your hands, weapon, and shield slot first.");
+				interpreter.sendDialogues(5093, FacialExpression.NO_EXPRESSION, "Sorry, free your hands, weapon, and shield slot first.");
 				stage = 99;
 				break;
 			}
@@ -73,18 +73,18 @@ public class MathiasFlaconryDialogue extends DialoguePlugin {
 			}
 			break;
 		case 97:
-			interpreter.sendDialogues(5093, FacialExpression.NORMAL, "Don't worry: I'll keep and eye on you to make sure", "you don't upset it roo much.");
+			interpreter.sendDialogues(5093, FacialExpression.NO_EXPRESSION, "Don't worry: I'll keep and eye on you to make sure", "you don't upset it roo much.");
 			stage = 99;
 			break;
 		case 99:
 			end();
 			break;
 		case 500:
-			interpreter.sendDialogues(5093, FacialExpression.NORMAL, "Greetings. Can I help you at all?");
+			interpreter.sendDialogues(5093, FacialExpression.NO_EXPRESSION, "Greetings. Can I help you at all?");
 			stage = 501;
 			break;
 		case 501:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Could I have a go with your bird?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Could I have a go with your bird?");
 			stage = 502;
 			break;
 		case 502:
@@ -93,11 +93,11 @@ public class MathiasFlaconryDialogue extends DialoguePlugin {
 				stage = 967;
 				return true;
 			}
-			interpreter.sendDialogues(5093, FacialExpression.NORMAL, "Training falcons is a lot of work and I", "doubt you're up to the task. However, I suppose", "I could let you try hunting with one.");
+			interpreter.sendDialogues(5093, FacialExpression.NO_EXPRESSION, "Training falcons is a lot of work and I", "doubt you're up to the task. However, I suppose", "I could let you try hunting with one.");
 			stage = 503;
 			break;
 		case 503:
-			interpreter.sendDialogues(5093, FacialExpression.NORMAL, "I have some tamer birds that I occasionally lend to rich", "noblemen who consider it a sufficiently refined sport for", "their tastes. and you look like the kind who might", "appreciate a good hunt.");
+			interpreter.sendDialogues(5093, FacialExpression.NO_EXPRESSION, "I have some tamer birds that I occasionally lend to rich", "noblemen who consider it a sufficiently refined sport for", "their tastes. and you look like the kind who might", "appreciate a good hunt.");
 			stage = 90;
 			break;
 		case 900:
@@ -148,11 +148,11 @@ public class MathiasFlaconryDialogue extends DialoguePlugin {
 		if (args.length == 2)
 			quick = true;
 		if (quick) {
-			interpreter.sendDialogues(5093, FacialExpression.NORMAL, "If you wish to try falconry, I request a small fee. How", "does 500 gold coins sound?");
+			interpreter.sendDialogues(5093, FacialExpression.NO_EXPRESSION, "If you wish to try falconry, I request a small fee. How", "does 500 gold coins sound?");
 			stage = 90;
 			return true;
 		}
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello there.");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello there.");
 		stage = 500;
 		return true;
 	}

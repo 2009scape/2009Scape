@@ -39,7 +39,7 @@ public final class PrinceBlackDragonDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Shouldn't a prince only have two heads?");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Shouldn't a prince only have two heads?");
 		stage = 0;
 		return true;
 	}
@@ -52,7 +52,7 @@ public final class PrinceBlackDragonDialogue extends DialoguePlugin {
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Well, a standard Black dragon has one,", "the King has three so inbetween must have two?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Well, a standard Black dragon has one,", "the King has three so inbetween must have two?");
 			stage = 2;
 			break;
 		case 2:

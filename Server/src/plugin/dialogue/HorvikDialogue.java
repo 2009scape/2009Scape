@@ -39,7 +39,7 @@ public final class HorvikDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hello, do you need any help?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello, do you need any help?");
 		stage = 0;
 		return true;
 	}
@@ -55,7 +55,7 @@ public final class HorvikDialogue extends DialoguePlugin {
 
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, thanks. I'm just looking around.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, thanks. I'm just looking around.");
 				stage = 10;
 				break;
 			case 2:
@@ -66,7 +66,7 @@ public final class HorvikDialogue extends DialoguePlugin {
 
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well, come and see me if you're ever in need of armour!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, come and see me if you're ever in need of armour!");
 			stage = 11;
 			break;
 		case 11:

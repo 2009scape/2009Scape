@@ -39,7 +39,7 @@ public final class AmbassadorFernook extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello Ambassador. Are you here visiting King Roald?");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello Ambassador. Are you here visiting King Roald?");
 		stage = 0;
 		return true;
 	}
@@ -48,19 +48,19 @@ public final class AmbassadorFernook extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well, in theory, but he always seems to be busy.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, in theory, but he always seems to be busy.");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "You don't seem that upset by that, though...");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "You don't seem that upset by that, though...");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Oh no, I like travelling, and if you become a diplomat", "patience is a vital skill.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh no, I like travelling, and if you become a diplomat", "patience is a vital skill.");
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'll try to remember that.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'll try to remember that.");
 			stage = 4;
 			break;
 		case 4:

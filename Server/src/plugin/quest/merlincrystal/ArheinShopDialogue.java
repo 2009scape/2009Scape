@@ -43,7 +43,7 @@ public final class ArheinShopDialogue extends DialoguePlugin {
 			stage = 2000;
 			return true;
 		}
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hello! Would you like to trade? I've a variety of wares", "for sale!");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello! Would you like to trade? I've a variety of wares", "for sale!");
 		stage = 0;
 		return true;
 	}
@@ -59,15 +59,15 @@ public final class ArheinShopDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Let's trade.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Let's trade.");
 				stage = 100;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No thanks.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thanks.");
 				stage = 200;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Is that your ship?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Is that your ship?");
 				stage = 300;
 				break;
 			}
@@ -77,7 +77,7 @@ public final class ArheinShopDialogue extends DialoguePlugin {
 			npc.openShop(player);
 			break;
 		case 300:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Yes, I use it to make deliveries to my customers up and", "down the coast. These crates here are all ready for my", "next trip.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yes, I use it to make deliveries to my customers up and", "down the coast. These crates here are all ready for my", "next trip.");
 			stage = 301;
 			break;
 		case 301:
@@ -87,22 +87,22 @@ public final class ArheinShopDialogue extends DialoguePlugin {
 		case 303:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Where do you deliver to?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Where do you deliver to?");
 				stage = 1000;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Are you rich then?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Are you rich then?");
 				stage = 2500;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Do you deliver to the fort just down the coast?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you deliver to the fort just down the coast?");
 				stage = 3000;
 				break;
 
 			}
 			break;
 		case 1000:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Various places up and down the coast. Mostly Karamja", "and Port Sarim.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Various places up and down the coast. Mostly Karamja", "and Port Sarim.");
 			stage = 1001;
 			break;
 		case 1001:
@@ -112,36 +112,36 @@ public final class ArheinShopDialogue extends DialoguePlugin {
 		case 1002:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I don't suppose I could get a lift anywhere?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I don't suppose I could get a lift anywhere?");
 				stage = 1003;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Well, good luck with your business.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Well, good luck with your business.");
 				stage = 2700;
 				break;
 
 			}
 			break;
 		case 1003:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Sorry pal, but I'm afraid I'm not quite ready to sail yet.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Sorry pal, but I'm afraid I'm not quite ready to sail yet.");
 			stage = 1004;
 			break;
 		case 1004:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I'm waiting on a big delivery of candles wich I need to", "deliver further along the coast.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm waiting on a big delivery of candles wich I need to", "deliver further along the coast.");
 			stage = 1005;
 			break;
 		case 1005:
 			end();
 			break;
 		case 2500:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Business is going reasonably well... I wouldn't say I was the", "richest of merchants every, but I'm doing fairly well all", "things considered.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Business is going reasonably well... I wouldn't say I was the", "richest of merchants every, but I'm doing fairly well all", "things considered.");
 			stage = 2501;
 			break;
 		case 2501:
 			end();
 			break;
 		case 2700:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Thanks buddy!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Thanks buddy!");
 			stage = 2701;
 			break;
 		case 2701:
@@ -158,7 +158,7 @@ public final class ArheinShopDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 3000:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Yes, I do have orders to deliver there from time to", "time. I think I may have some bits and pieces for them", "when I leave here next actually.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yes, I do have orders to deliver there from time to", "time. I think I may have some bits and pieces for them", "when I leave here next actually.");
 			if (quest.getStage(player) == 30 || quest.getStage(player) == 40) {
 				stage = 3001;
 			} else {
@@ -166,11 +166,11 @@ public final class ArheinShopDialogue extends DialoguePlugin {
 			}
 			break;
 		case 3001:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can you drop me off on the way down please?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you drop me off on the way down please?");
 			stage = 3002;
 			break;
 		case 3002:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I don't think Sir Mordred would like that. He wants as", "few outsiders visiting as possible. I wouldn't want to lose", "his business.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I don't think Sir Mordred would like that. He wants as", "few outsiders visiting as possible. I wouldn't want to lose", "his business.");
 			quest.setStage(player, 40);
 			stage = 2701;
 			break;

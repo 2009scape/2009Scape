@@ -258,7 +258,7 @@ public final class WaterfallPlugin extends OptionHandler {
 			} else if (player.getInventory().contains(293, 1) && player.getLocation().getY() < 9576) {
 				player.getPacketDispatch().sendMessage("The gate is locked. You need to use the key on the door to enter.");
 			} else {
-				player.getDialogueInterpreter().sendDialogues(306, FacialExpression.NORMAL, "Hello? Ah yes, the door is still locked.", "If you want to get in here, you'll need to find the key", "that I hid in some crates in the eastern room.");
+				player.getDialogueInterpreter().sendDialogues(306, FacialExpression.NO_EXPRESSION, "Hello? Ah yes, the door is still locked.", "If you want to get in here, you'll need to find the key", "that I hid in some crates in the eastern room.");
 			}
 			break;
 		case 1989:

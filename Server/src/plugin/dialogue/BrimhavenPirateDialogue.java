@@ -39,7 +39,7 @@ public final class BrimhavenPirateDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello!");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello!");
 		stage = 0;
 		return true;
 	}
@@ -48,7 +48,7 @@ public final class BrimhavenPirateDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Man overboard!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Man overboard!");
 			stage = 2;
 			break;
 		case 2:

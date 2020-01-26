@@ -58,11 +58,11 @@ public final class ShilopDialogue extends DialoguePlugin {
 		final Quest quest = player.getQuestRepository().getQuest("Gertrude's Cat");
 		switch (quest.getStage(player)) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello again.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello again.");
 			stage = 0;
 			break;
 		case 10:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello there, I've been looking for you.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello there, I've been looking for you.");
 			stage = 100;
 			break;
 		case 20:
@@ -73,7 +73,7 @@ public final class ShilopDialogue extends DialoguePlugin {
 			stage = 130;
 			break;
 		default:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello again.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello again.");
 			stage = 0;
 			break;
 		}
@@ -89,7 +89,7 @@ public final class ShilopDialogue extends DialoguePlugin {
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Pardon?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Pardon?");
 			stage = 2;
 			break;
 		case 2:
@@ -101,7 +101,7 @@ public final class ShilopDialogue extends DialoguePlugin {
 			stage = 4;
 			break;
 		case 4:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Really?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Really?");
 			stage = 5;
 			break;
 		case 5:
@@ -116,7 +116,7 @@ public final class ShilopDialogue extends DialoguePlugin {
 			stage = 101;
 			break;
 		case 101:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "What? I'm trying to help your mum find Fluffs.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What? I'm trying to help your mum find Fluffs.");
 			stage = 102;
 			break;
 		case 102:
@@ -124,7 +124,7 @@ public final class ShilopDialogue extends DialoguePlugin {
 			stage = 103;
 			break;
 		case 103:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Where is this play area?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Where is this play area?");
 			stage = 104;
 			break;
 		case 104:
@@ -132,7 +132,7 @@ public final class ShilopDialogue extends DialoguePlugin {
 			stage = 105;
 			break;
 		case 105:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "What will make you tell me?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What will make you tell me?");
 			stage = 106;
 			break;
 		case 106:
@@ -140,7 +140,7 @@ public final class ShilopDialogue extends DialoguePlugin {
 			stage = 107;
 			break;
 		case 107:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "How much?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How much?");
 			stage = 108;
 			break;
 		case 108:

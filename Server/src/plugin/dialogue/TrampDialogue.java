@@ -38,18 +38,18 @@ public class TrampDialogue extends DialoguePlugin {
 
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes, I can spare a little money.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, I can spare a little money.");
 				stage = 100;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.ANGRY, "Sorry, you'll have to earn it yourself, just like I did.");
+				interpreter.sendDialogues(player, FacialExpression.FURIOUS, "Sorry, you'll have to earn it yourself, just like I did.");
 				stage = 50;
 				break;
 			}
 			break;
 		case 100:
 			if (player.getInventory().contains(995, 1)) {
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Thank's mate!");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Thank's mate!");
 				stage = 101;
 			} else {
 				end();
@@ -60,7 +60,7 @@ public class TrampDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 50:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Please yourself.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Please yourself.");
 			stage = 51;
 			break;
 		case 51:
@@ -80,7 +80,7 @@ public class TrampDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Got any spare change, mate?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Got any spare change, mate?");
 		stage = 0;
 		return true;
 	}

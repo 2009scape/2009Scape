@@ -44,7 +44,7 @@ public class SirVantDialogue extends DialoguePlugin {
             case 1:
             case 2:
             case 72:
-                npc(FacialExpression.HAPPY, "My Word! You scared me there, friend. I have no idea", "where you came from, but you have fantastic timing.", "You see, I have come across a dragon.");
+                npc(FacialExpression.JOLLY, "My Word! You scared me there, friend. I have no idea", "where you came from, but you have fantastic timing.", "You see, I have come across a dragon.");
                 setStage(1);
                 break;
             case 3:
@@ -97,7 +97,7 @@ public class SirVantDialogue extends DialoguePlugin {
                 next();
                 break;
             case 12:
-                npc(FacialExpression.HAPPY, "I'm sure the owners has no idea when they bought it.", "It would take and interesting individual to deliberately","build a cellar in a dragon's den.");
+                npc(FacialExpression.JOLLY, "I'm sure the owners has no idea when they bought it.", "It would take and interesting individual to deliberately","build a cellar in a dragon's den.");
                 next();
                 break;
             case 13:

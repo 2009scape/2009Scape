@@ -104,7 +104,7 @@ public final class TzhaarFightPitsPlugin extends ActivityPlugin {
 	 */
 	private static void sendDialogue(String string) {
 		for (Player p : WAR_PLAYERS) {
-			p.getDialogueInterpreter().sendDialogues(2618, FacialExpression.NORMAL, string);
+			p.getDialogueInterpreter().sendDialogues(2618, FacialExpression.NO_EXPRESSION, string);
 		}
 	}
 

@@ -39,7 +39,7 @@ public final class LoweDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Welcome to Lowe's Archery Emporium. Do you want", "to see my wares?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Welcome to Lowe's Archery Emporium. Do you want", "to see my wares?");
 		stage = 0;
 		return true;
 	}
@@ -57,14 +57,14 @@ public final class LoweDialogue extends DialoguePlugin {
 				npc.openShop(player);
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, I prefer to bash things close up.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, I prefer to bash things close up.");
 				stage = 3;
 				break;
 			}
 
 			break;
 		case 3:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Humph, philistine.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Humph, philistine.");
 			stage = 4;
 			break;
 		case 4:

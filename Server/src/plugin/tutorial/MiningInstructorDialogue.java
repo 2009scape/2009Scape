@@ -53,10 +53,10 @@ public final class MiningInstructorDialogue extends DialoguePlugin {
 		npc = (NPC) args[0];
 		switch (TutorialSession.getExtension(player).getStage()) {
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hi there. You must be new around here. So what do I", "call you? 'Newcomer' seems so impersonal, and if we're", "going to be working together, I'd rather call you by", "name.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hi there. You must be new around here. So what do I", "call you? 'Newcomer' seems so impersonal, and if we're", "going to be working together, I'd rather call you by", "name.");
 			break;
 		case 34:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I prospected both types of rock! One set contains tin", "and the other has copper ore inside.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I prospected both types of rock! One set contains tin", "and the other has copper ore inside.");
 			break;
 		case 35:
 			if (!player.getInventory().contains(1265, 1)) {
@@ -99,11 +99,11 @@ public final class MiningInstructorDialogue extends DialoguePlugin {
 		case 30:
 			switch (stage) {
 			case 0:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "You can call me " + player.getUsername() + ".");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "You can call me " + player.getUsername() + ".");
 				stage = 1;
 				break;
 			case 1:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Ok then, " + player.getUsername() + ". My name is Dezzick and I'm a", "miner by Trade. Let's prospect some of those rocks.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ok then, " + player.getUsername() + ". My name is Dezzick and I'm a", "miner by Trade. Let's prospect some of those rocks.");
 				stage = 2;
 				break;
 			case 2:
@@ -119,7 +119,7 @@ public final class MiningInstructorDialogue extends DialoguePlugin {
 		case 40:
 			switch (stage) {
 			case 1:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Okay, I'll show you how to make a dagger out of it.", "You'll be needing this..");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Okay, I'll show you how to make a dagger out of it.", "You'll be needing this..");
 				stage = 2;
 				break;
 			case 2:
@@ -147,11 +147,11 @@ public final class MiningInstructorDialogue extends DialoguePlugin {
 		case 34:
 			switch (stage) {
 			case 0:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Absolutely right, " + player.getUsername() + ". These two ore types can be", "Smelted together to make bronze.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Absolutely right, " + player.getUsername() + ". These two ore types can be", "Smelted together to make bronze.");
 				stage = 1;
 				break;
 			case 1:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "So now you know what ore is in the rocks over there,", "why don't you have a go at mining some tin and", "copper? Here, you'll need this to start with.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "So now you know what ore is in the rocks over there,", "why don't you have a go at mining some tin and", "copper? Here, you'll need this to start with.");
 				stage = 2;
 				break;
 			case 2:

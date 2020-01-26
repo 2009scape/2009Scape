@@ -42,7 +42,7 @@ public final class CaptainDalburDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "What do you want human?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What do you want human?");
 		stage = 0;
 		return true;
 	}
@@ -51,7 +51,7 @@ public final class CaptainDalburDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "May you fly me somewhere on your glider?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "May you fly me somewhere on your glider?");
 			stage = 1;
 			break;
 		case 1:

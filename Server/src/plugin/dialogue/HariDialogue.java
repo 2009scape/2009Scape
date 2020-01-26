@@ -39,7 +39,7 @@ public final class HariDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hello.");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello.");
 		stage = 0;
 		return true;
 	}
@@ -54,38 +54,38 @@ public final class HariDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "My name is Hari.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "My name is Hari.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "It's really quite simple to make. Just walk down to that", "tree on the bank and chop it down.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "It's really quite simple to make. Just walk down to that", "tree on the bank and chop it down.");
 				stage = 18;
 				break;
 
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "And what are you going here Hari?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "And what are you going here Hari?");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Like most people who come to Edgeville, I am here to seek", "adventure in the Wilderness.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Like most people who come to Edgeville, I am here to seek", "adventure in the Wilderness.");
 			stage = 12;
 			break;
 		case 12:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I found a secret underground riber that will take me quite", "a long way north.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I found a secret underground riber that will take me quite", "a long way north.");
 			stage = 13;
 			break;
 		case 13:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Underground river? Where does it come out?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Underground river? Where does it come out?");
 			stage = 14;
 			break;
 		case 14:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "It comes out in a pond located deep in Wilderness.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "It comes out in a pond located deep in Wilderness.");
 			stage = 15;
 			break;
 		case 15:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I had to find a very special type of canoe to get me up", "the river though, would you like to know more?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I had to find a very special type of canoe to get me up", "the river though, would you like to know more?");
 			stage = 16;
 			break;
 		case 16:
@@ -95,7 +95,7 @@ public final class HariDialogue extends DialoguePlugin {
 		case 17:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "It's really quite simple to make. Just walk down to that", "tree on the bank and chop it down.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "It's really quite simple to make. Just walk down to that", "tree on the bank and chop it down.");
 				stage = 18;
 				break;
 			case 2:
@@ -104,7 +104,7 @@ public final class HariDialogue extends DialoguePlugin {
 			}
 			break;
 		case 18:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "When you have done that you can shape the log further", "with your hatchet to make a canoe.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "When you have done that you can shape the log further", "with your hatchet to make a canoe.");
 			stage = 19;
 			break;
 		case 19:

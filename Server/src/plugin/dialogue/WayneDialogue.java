@@ -39,7 +39,7 @@ public final class WayneDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Welcome to Wayne's Chains. Do you wanna buy or", "sell some chain mail?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Welcome to Wayne's Chains. Do you wanna buy or", "sell some chain mail?");
 		stage = 0;
 		return true;
 	}

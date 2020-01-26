@@ -31,7 +31,7 @@ public class SanfewDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "What can I do for you young 'un?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What can I do for you young 'un?");
 		stage = 0;
 		return true;
 	}
@@ -41,7 +41,7 @@ public class SanfewDialogue extends DialoguePlugin {
 		switch (stage) {
 		case 0:
 			if (player.getQuestRepository().getQuest("Drudic Ritual").getStage(player) == 20) {
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Did you bring me the required ingredients for the", "potion?");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Did you bring me the required ingredients for the", "potion?");
 				stage = 100;
 				break;
 			}
@@ -50,7 +50,7 @@ public class SanfewDialogue extends DialoguePlugin {
 				stage = 2;
 				break;
 			}
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Nothing... I'll just be on my way now.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Nothing... I'll just be on my way now.");
 			stage = 1;
 			break;
 		case 1:
@@ -59,36 +59,36 @@ public class SanfewDialogue extends DialoguePlugin {
 		case 2:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I've been sent to assist you with the ritual to purify the", "Varrockian stone circle.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I've been sent to assist you with the ritual to purify the", "Varrockian stone circle.");
 				stage = 5;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Actually, I don't need to speak to you.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Actually, I don't need to speak to you.");
 				stage = 3;
 				break;
 			}
 			break;
 		case 3:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well, we all make mistakes sometimes.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, we all make mistakes sometimes.");
 			stage = 4;
 			break;
 		case 4:
 			end();
 			break;
 		case 5:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well, what I'm struggling with right now is the meats", "needed for the potion to honour Guthix. I need the raw", "meat of four different animals for it, but not just any", "old meats will do.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, what I'm struggling with right now is the meats", "needed for the potion to honour Guthix. I need the raw", "meat of four different animals for it, but not just any", "old meats will do.");
 			stage = 6;
 			break;
 		case 6:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Each meat has to be dipped individually into the", "Cauldron of Thunder for it to work correctly.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Each meat has to be dipped individually into the", "Cauldron of Thunder for it to work correctly.");
 			stage = 7;
 			break;
 		case 7:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Where can I find this cauldron?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Where can I find this cauldron?");
 			stage = 8;
 			break;
 		case 8:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "It is located somewhere in the mysterious underground", "halls which are located somewhere in the woods just", "South of here. They are too dangerous for me to go", "myself however.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "It is located somewhere in the mysterious underground", "halls which are located somewhere in the woods just", "South of here. They are too dangerous for me to go", "myself however.");
 			player.getQuestRepository().getQuest("Drudic Ritual").setStage(player, 20);
 			stage = 9;
 			break;
@@ -101,19 +101,19 @@ public class SanfewDialogue extends DialoguePlugin {
 				stage = 200;
 				break;
 			}
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, not yet...");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, not yet...");
 			stage = 101;
 			break;
 		case 101:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well let me know when you do young 'un.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well let me know when you do young 'un.");
 			stage = 102;
 			break;
 		case 102:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'll get on with it.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'll get on with it.");
 			stage = 103;
 			break;
 		case 103:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Good, good.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Good, good.");
 			stage = 104;
 			break;
 		case 104:

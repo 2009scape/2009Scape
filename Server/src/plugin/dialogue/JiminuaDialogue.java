@@ -39,7 +39,7 @@ public final class JiminuaDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Welcome to the Jungle Store, Can I help you at all?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Welcome to the Jungle Store, Can I help you at all?");
 		stage = 0;
 		return true;
 	}

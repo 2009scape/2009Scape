@@ -32,7 +32,7 @@ public class PortSarimBartenderDialogue extends DialoguePlugin {
 
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hello there!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello there!");
 			stage = 1;
 			break;
 		case 1:
@@ -42,21 +42,21 @@ public class PortSarimBartenderDialogue extends DialoguePlugin {
 		case 2:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Could I buy a beer, please?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Could I buy a beer, please?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Bye, then.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Bye, then.");
 				stage = 20;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Sure, that will be two gold coins, please.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Sure, that will be two gold coins, please.");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Okay, here you go.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Okay, here you go.");
 			stage = 12;
 			break;
 		case 12:
@@ -74,7 +74,7 @@ public class PortSarimBartenderDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Come back soon!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Come back soon!");
 			stage = 21;
 			break;
 		case 21:
@@ -94,7 +94,7 @@ public class PortSarimBartenderDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Good day to you!");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Good day to you!");
 		stage = 0;
 		return true;
 	}

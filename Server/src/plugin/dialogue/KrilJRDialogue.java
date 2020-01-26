@@ -39,7 +39,7 @@ public final class KrilJRDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "How's life in the light?");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How's life in the light?");
 		stage = 0;
 		return true;
 	}
@@ -52,7 +52,7 @@ public final class KrilJRDialogue extends DialoguePlugin {
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "You seem much nicer than your father. He's mean.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "You seem much nicer than your father. He's mean.");
 			stage = 2;
 			break;
 		case 2:
@@ -60,7 +60,7 @@ public final class KrilJRDialogue extends DialoguePlugin {
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I guess.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I guess.");
 			stage = 4;
 			break;
 		case 4:
@@ -68,7 +68,7 @@ public final class KrilJRDialogue extends DialoguePlugin {
 			stage = 5;
 			break;
 		case 5:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Uh.... Yeah.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Uh.... Yeah.");
 			stage = 6;
 			break;
 		case 6:

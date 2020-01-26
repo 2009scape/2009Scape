@@ -4,6 +4,7 @@ import org.runite.Configurations;
 import org.runite.GameLaunch;
 import org.runite.GameSetting;
 
+import javax.swing.*;
 import java.applet.Applet;
 import java.applet.AppletContext;
 import java.awt.*;
@@ -244,7 +245,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
          if(!this.aBoolean1) {
             this.aBoolean1 = true;
             System.out.println("error_game_" + var1);
-
+            JOptionPane.showMessageDialog(frame, "Error: " + var1 + (var1.contains("js5connect") ? ". The game is likely down." : "") + "\nCheck Discord (Red Bracket#8151) or Github (https://github.com/dginovker/RS-2009/releases) for a potential solution.");
             try {
                if(var2 != -48) {
                   aClass94_4 = (RSString)null;

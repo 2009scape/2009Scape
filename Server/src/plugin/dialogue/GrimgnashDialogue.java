@@ -39,7 +39,7 @@ public final class GrimgnashDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "What you want, little human? Grimgnash hungry. Want", "tasty morsel like you!");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What you want, little human? Grimgnash hungry. Want", "tasty morsel like you!");
 		stage = 0;
 		return true;
 	}
@@ -48,19 +48,19 @@ public final class GrimgnashDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Like me? Why?  Who are you?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Like me? Why?  Who are you?");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I Grimngnash and I hungry! Perhaps I eat you!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I Grimngnash and I hungry! Perhaps I eat you!");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'm really not that tasty. I think I should be going now.", "Goodbye.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm really not that tasty. I think I should be going now.", "Goodbye.");
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Human lucky Grimgnash too tired to hunt for food. Stupid", "wolves keep Grimgnsh awake with howling. Grimgnash", "can't sleep.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Human lucky Grimgnash too tired to hunt for food. Stupid", "wolves keep Grimgnsh awake with howling. Grimgnash", "can't sleep.");
 			stage = 4;
 			break;
 		case 4:

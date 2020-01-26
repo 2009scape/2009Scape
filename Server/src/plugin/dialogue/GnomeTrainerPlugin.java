@@ -43,19 +43,19 @@ public final class GnomeTrainerPlugin extends DialoguePlugin {
 		int rand = RandomFunction.random(0, 3);
 		switch (rand) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello there.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello there.");
 			stage = 0;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello, what is this place?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello, what is this place?");
 			stage = 3;
 			break;
 		case 2:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello how are you?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello how are you?");
 			stage = 7;
 			break;
 		case 3:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "This is fun!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "This is fun!");
 			stage = 10;
 			break;
 		}
@@ -66,36 +66,36 @@ public final class GnomeTrainerPlugin extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "This isn't a grannies' tea party, let's see some sweat", "human. Go! Go! Go!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "This isn't a grannies' tea party, let's see some sweat", "human. Go! Go! Go!");
 			stage = 1;
 			break;
 		case 1:
 			end();
 			break;
 		case 3:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "This, my friend, is where we train. Here we improve", "out agility. It's an essential skill.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "This, my friend, is where we train. Here we improve", "out agility. It's an essential skill.");
 			stage = 4;
 			break;
 		case 4:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "It looks easy enough.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "It looks easy enough.");
 			stage = 5;
 			break;
 		case 5:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "If you complete the course in order from the slippery", "log to the end, your agility will increase much faster", "than by repeating just one obstacle.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "If you complete the course in order from the slippery", "log to the end, your agility will increase much faster", "than by repeating just one obstacle.");
 			stage = 6;
 			break;
 		case 6:
 			end();
 			break;
 		case 7:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I'm amazed by how much humans chat. The sign over", "there says training area, not pointless conversation area.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm amazed by how much humans chat. The sign over", "there says training area, not pointless conversation area.");
 			stage = 8;
 			break;
 		case 8:
 			end();
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "This is training soldier. If you want fun go make some", "cocktails.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "This is training soldier. If you want fun go make some", "cocktails.");
 			stage = 11;
 			break;
 		case 11:

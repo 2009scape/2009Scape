@@ -36,41 +36,41 @@ public class ManDialoguePlugin extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I'm very well thank you.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm very well thank you.");
 			stage = 6969;
 			break;
 		case 6969:
 			end();
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Who are you?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Who are you?");
 			stage = 20;
 			break;
 		case 3:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I'm fine, how are you?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm fine, how are you?");
 			stage = 30;
 			break;
 		case 4:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "No, I don't want to buy anything!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "No, I don't want to buy anything!");
 			stage = 40;
 			break;
 		case 5:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I think we need a new king. The one we've got isn't", "very good.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I think we need a new king. The one we've got isn't", "very good.");
 			stage = 22;
 			break;
 		case 20:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I'm a bold adventurer.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm a bold adventurer.");
 			stage = 21;
 			break;
 		case 21:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Ah, a very noble profession.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ah, a very noble profession.");
 			stage = 22;
 			break;
 		case 22:
 			end();
 			break;
 		case 30:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Very well thank you.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Very well thank you.");
 			stage = 31;
 			break;
 		case 31:
@@ -96,7 +96,7 @@ public class ManDialoguePlugin extends DialoguePlugin {
 		npc = (NPC) args[0];
 		if (npc == null)
 			return false;
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello, how's it going?");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello, how's it going?");
 		stage = RandomFunction.random(0, 5);
 		if (stage == 1) {
 			stage = 0;

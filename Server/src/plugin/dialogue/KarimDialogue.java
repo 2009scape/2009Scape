@@ -50,7 +50,7 @@ public final class KarimDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Would you like to buy a nice kebab? Only one gold.");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Would you like to buy a nice kebab? Only one gold.");
 		stage = 0;
 		return true;
 	}
@@ -65,11 +65,11 @@ public final class KarimDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I think I'll give it a miss.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I think I'll give it a miss.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes please.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes please.");
 				stage = 20;
 				break;
 
@@ -80,7 +80,7 @@ public final class KarimDialogue extends DialoguePlugin {
 			break;
 		case 20:
 			if (player.getInventory().freeSlots() == 0) {
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "I don't have enough room, sorry.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I don't have enough room, sorry.");
 				stage = 21;
 			} else if (!player.getInventory().contains(995, 1)) {
 				end();

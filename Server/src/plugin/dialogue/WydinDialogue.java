@@ -43,7 +43,7 @@ public final class WydinDialogue extends DialoguePlugin {
 			door = (boolean) args[1];
 		if (door) {
 			if (player.getSavedData().getGlobalData().isWydinEmployee()) {
-				interpreter.sendDialogues(557, FacialExpression.NORMAL, "Can you put your white apron on before going in there", "please.");
+				interpreter.sendDialogues(557, FacialExpression.NO_EXPRESSION, "Can you put your white apron on before going in there", "please.");
 				stage = 100;
 			} else {
 				interpreter.sendDialogues(557, null, "Hey, you can't go in there. Only emplyees of the", "grocery store can go in.");
@@ -54,10 +54,10 @@ public final class WydinDialogue extends DialoguePlugin {
 			npc = (NPC) args[0];
 		}
 		if (player.getSavedData().getGlobalData().isWydinEmployee()) {
-			interpreter.sendDialogues(557, FacialExpression.NORMAL, "Is it nice and tidy round the back now?");
+			interpreter.sendDialogues(557, FacialExpression.NO_EXPRESSION, "Is it nice and tidy round the back now?");
 			stage = 0;
 		} else {
-			interpreter.sendDialogues(557, FacialExpression.NORMAL, "Welcome to my food store! Would you like to buy", "anything?");
+			interpreter.sendDialogues(557, FacialExpression.NO_EXPRESSION, "Welcome to my food store! Would you like to buy", "anything?");
 			stage = 0;
 		}
 		return true;
@@ -74,51 +74,51 @@ public final class WydinDialogue extends DialoguePlugin {
 			case 1:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes, can I work out front now?");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, can I work out front now?");
 					stage = 10;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes, are you going to pay me yet?");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, are you going to pay me yet?");
 					stage = 20;
 					break;
 				case 3:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, it's a complete mess.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, it's a complete mess.");
 					stage = 30;
 					break;
 				case 4:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can I buy something please?");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can I buy something please?");
 					stage = 40;
 					break;
 
 				}
 				break;
 			case 10:
-				interpreter.sendDialogues(557, FacialExpression.NORMAL, "No, I'm the one who works here.");
+				interpreter.sendDialogues(557, FacialExpression.NO_EXPRESSION, "No, I'm the one who works here.");
 				stage = 11;
 				break;
 			case 11:
 				end();
 				break;
 			case 20:
-				interpreter.sendDialogues(557, FacialExpression.NORMAL, "Umm... No, not yet.");
+				interpreter.sendDialogues(557, FacialExpression.NO_EXPRESSION, "Umm... No, not yet.");
 				stage = 21;
 				break;
 			case 21:
 				end();
 				break;
 			case 30:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, it's a complete mess.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, it's a complete mess.");
 				stage = 31;
 				break;
 			case 31:
-				interpreter.sendDialogues(557, FacialExpression.NORMAL, "Ah well, it'll give you something to do, won't it.");
+				interpreter.sendDialogues(557, FacialExpression.NO_EXPRESSION, "Ah well, it'll give you something to do, won't it.");
 				stage = 32;
 				break;
 			case 32:
 				end();
 				break;
 			case 40:
-				interpreter.sendDialogues(557, FacialExpression.NORMAL, "Yes, ofcourse.");
+				interpreter.sendDialogues(557, FacialExpression.NO_EXPRESSION, "Yes, ofcourse.");
 				stage = 41;
 				break;
 			case 41:
@@ -138,19 +138,19 @@ public final class WydinDialogue extends DialoguePlugin {
 			case 1:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes please.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes please.");
 					stage = 10;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "No, thank you.");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, thank you.");
 					stage = 20;
 					break;
 				case 3:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "What can you recommend?");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What can you recommend?");
 					stage = 30;
 					break;
 				case 4:
-					interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can I get a job here?");
+					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can I get a job here?");
 					stage = 40;
 					break;
 				}

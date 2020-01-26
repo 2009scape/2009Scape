@@ -45,7 +45,7 @@ public final class MuseumGuardDialogue extends DialoguePlugin {
 
 	@Override
 	public boolean open(Object... args) {
-		interpreter.sendDialogues(5941, FacialExpression.NORMAL, "Welcome! Would you like to go into the Dig Site", "archaeology cleaning area?");
+		interpreter.sendDialogues(5941, FacialExpression.NO_EXPRESSION, "Welcome! Would you like to go into the Dig Site", "archaeology cleaning area?");
 		stage = 0;
 		return true;
 	}
@@ -60,11 +60,11 @@ public final class MuseumGuardDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes, I'll go in!");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, I'll go in!");
 				stage = 20;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "No thanks, I'll take a look around out there.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thanks, I'll take a look around out there.");
 				stage = 3;
 				break;
 			}

@@ -39,7 +39,7 @@ public final class MazionDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Please leave me along, a parrot stole my banana.");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Please leave me along, a parrot stole my banana.");
 		stage = 0;
 		return true;
 	}

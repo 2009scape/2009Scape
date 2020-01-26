@@ -28,31 +28,31 @@ public class SurokMagis extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "What do you want? ...Oh, wait. I know! You're", "porbably just like all the others, aren't you? After some", "fancy spell or potion from me, I bet!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What do you want? ...Oh, wait. I know! You're", "porbably just like all the others, aren't you? After some", "fancy spell or potion from me, I bet!");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "No! atleast, I don't think so. What sort of spells", "do you have?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No! atleast, I don't think so. What sort of spells", "do you have?");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hah! I knew it! I expect you want my Aphro-Dizzy-", "Yak spell! Want someone to fall madly in love with you,", "eh?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hah! I knew it! I expect you want my Aphro-Dizzy-", "Yak spell! Want someone to fall madly in love with you,", "eh?");
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "That spell sounds very interesting, but I didn't mean to", "disturb you!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "That spell sounds very interesting, but I didn't mean to", "disturb you!");
 			stage = 4;
 			break;
 		case 4:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well, I see that you do have some manners. I'm glad", "to see that you use them.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, I see that you do have some manners. I'm glad", "to see that you use them.");
 			stage = 5;
 			break;
 		case 5:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Now, if it's all the same, I am very bust at the", "moment. Come back another time", "please and thank you.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Now, if it's all the same, I am very bust at the", "moment. Come back another time", "please and thank you.");
 			stage = 6;
 			break;
 		case 6:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes, ofcourse!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, ofcourse!");
 			stage = 7;
 			break;
 		case 7:
@@ -71,7 +71,7 @@ public class SurokMagis extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Excuse me?");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Excuse me?");
 		stage = 0;
 		return true;
 	}

@@ -31,7 +31,7 @@ public class RoavarDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello there!");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello there!");
 		stage = 0;
 		return true;
 	}
@@ -40,7 +40,7 @@ public class RoavarDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Greeting traveller. Welcome to 'The Hair Of The Dog'", "Tavern. What can I do you for?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Greeting traveller. Welcome to 'The Hair Of The Dog'", "Tavern. What can I do you for?");
 			stage = 1;
 			break;
 		case 1:
@@ -50,25 +50,25 @@ public class RoavarDialogue extends DialoguePlugin {
 		case 2:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can I buy a beer?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can I buy a beer?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can I hear some gossip?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can I hear some gossip?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Would you happen to have a spare silver sickle?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Would you happen to have a spare silver sickle?");
 				stage = 30;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Nothing thanks.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Nothing thanks.");
 				stage = 40;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well that's my speciality! The local brew's named", "'Moonlight Mead' and will set you back 5 gold.", "Waddya say? Fancy a pint?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well that's my speciality! The local brew's named", "'Moonlight Mead' and will set you back 5 gold.", "Waddya say? Fancy a pint?");
 			stage = 11;
 			break;
 		case 11:
@@ -78,11 +78,11 @@ public class RoavarDialogue extends DialoguePlugin {
 		case 12:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes please.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes please.");
 				stage = 15;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Actually, no thanks.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Actually, no thanks.");
 				stage = 14;
 				break;
 
@@ -95,7 +95,7 @@ public class RoavarDialogue extends DialoguePlugin {
 			if (player.getInventory().contains(995, 5)) {
 				if (player.getInventory().remove(new Item(995, 5))) {
 					player.getInventory().add(new Item(2955, 1));
-					interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Here ya go pal. Enjoy!");
+					interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Here ya go pal. Enjoy!");
 					stage = 16;
 				}
 			} else {
@@ -107,7 +107,7 @@ public class RoavarDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I am not one to gossip!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I am not one to gossip!");
 			stage = 21;
 			break;
 		case 21:
@@ -115,10 +115,10 @@ public class RoavarDialogue extends DialoguePlugin {
 			break;
 		case 30:
 			if (player.getInventory().contains(2963, 1)) {
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I don't have a spare lying around, sorry friend.", "Hopefully you'll find something else that can protect you", "against ghasts!");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I don't have a spare lying around, sorry friend.", "Hopefully you'll find something else that can protect you", "against ghasts!");
 				stage = 31;
 			} else {
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Ah, well I do have one lying around.", "I suppose you could have it.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ah, well I do have one lying around.", "I suppose you could have it.");
 				stage = 42;
 			}
 			break;
@@ -126,7 +126,7 @@ public class RoavarDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 40:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "...I don't know why you talked to me if you don't want", "anything then...");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "...I don't know why you talked to me if you don't want", "anything then...");
 			stage = 41;
 			break;
 		case 41:
@@ -134,7 +134,7 @@ public class RoavarDialogue extends DialoguePlugin {
 			break;
 		case 42:
 			if (player.getInventory().freeSlots() < 1) {
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Oh, nevermind. It seems your backpack is full.");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh, nevermind. It seems your backpack is full.");
 			} else {
 				interpreter.sendDialogue("The bartender hands you a silver sickle.");
 				player.getInventory().add(new Item(2963, 1));

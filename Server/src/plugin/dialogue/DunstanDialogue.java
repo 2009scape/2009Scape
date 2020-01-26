@@ -39,7 +39,7 @@ public final class DunstanDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hi!");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hi!");
 		stage = 0;
 		return true;
 	}
@@ -48,7 +48,7 @@ public final class DunstanDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hi! Did you want something?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hi! Did you want something?");
 			stage = 1;
 			break;
 		case 1:
@@ -58,29 +58,29 @@ public final class DunstanDialogue extends DialoguePlugin {
 		case 2:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Is it OK if I use your anvil?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Is it OK if I use your anvil?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Nothing, thanks.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Nothing, thanks.");
 				stage = 20;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "So you're a smithy are you?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "So you're a smithy are you?");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "I dabble.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I dabble.");
 			stage = 12;
 			break;
 		case 12:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "A fellow smith is welcome to use my anvil!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "A fellow smith is welcome to use my anvil!");
 			stage = 13;
 			break;
 		case 13:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Thanks!");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Thanks!");
 			stage = 14;
 			break;
 		case 14:

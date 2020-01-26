@@ -72,7 +72,7 @@ public final class WysonTheGardenerDialogue extends DialoguePlugin {
 			stage = 100;
 			return true;
 		}
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I'm the head gardener around here.", "If you're looking for woad leaves, or if you need help", "with owt, I'm yer man.");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm the head gardener around here.", "If you're looking for woad leaves, or if you need help", "with owt, I'm yer man.");
 		stage = 0;
 		return true;
 	}
@@ -93,18 +93,18 @@ public final class WysonTheGardenerDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Yes please, I need woad leaves.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes please, I need woad leaves.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Sorry, but I'm not interested.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, but I'm not interested.");
 				stage = 200;
 				break;
 
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "How much are you willing to pay?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "How much are you willing to pay?");
 			stage = 11;
 			break;
 		case 11:
@@ -114,37 +114,37 @@ public final class WysonTheGardenerDialogue extends DialoguePlugin {
 		case 12:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "How about 5 coins?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How about 5 coins?");
 				stage = 110;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "How about 10 coins?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How about 10 coins?");
 				stage = 120;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "How about 15 coins?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How about 15 coins?");
 				stage = 130;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "How about 20 coins?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How about 20 coins?");
 				stage = 140;
 				break;
 
 			}
 			break;
 		case 110:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "No no, that's far too little. Woad leaves are hard to get. I", "used to have plenty but someone kept stealing them off", "me.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "No no, that's far too little. Woad leaves are hard to get. I", "used to have plenty but someone kept stealing them off", "me.");
 			stage = 111;
 			break;
 		case 111:
 			end();
 			break;
 		case 120:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "No no, that's far too little. Woad leaves are hard to get. I", "used to have plenty but someone kept stealing them off", "me.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "No no, that's far too little. Woad leaves are hard to get. I", "used to have plenty but someone kept stealing them off", "me.");
 			stage = 111;
 			break;
 		case 130:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Mmmm... ok, that sounds fair.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Mmmm... ok, that sounds fair.");
 			stage = 131;
 			break;
 		case 133:
@@ -154,7 +154,7 @@ public final class WysonTheGardenerDialogue extends DialoguePlugin {
 			if (player.getInventory().contains(995, 15)) {
 				player.getInventory().remove(COINS[0]);
 				player.getInventory().add(WOAD_LEAF);
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Thanks.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Thanks.");
 				player.getPacketDispatch().sendMessage("You buy a woad leaf from Wyson.");
 				stage = 132;
 			} else {
@@ -163,11 +163,11 @@ public final class WysonTheGardenerDialogue extends DialoguePlugin {
 			}
 			break;
 		case 132:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I'll be around if you have any more gardening needs.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'll be around if you have any more gardening needs.");
 			stage = 133;
 			break;
 		case 140:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Thanks for being generous", "here's an extra woad leave.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Thanks for being generous", "here's an extra woad leave.");
 			stage = 141;
 			break;
 		case 141:
@@ -176,7 +176,7 @@ public final class WysonTheGardenerDialogue extends DialoguePlugin {
 				for (int i = 0; i < 2; i++) {
 					player.getInventory().add(WOAD_LEAF, player);
 				}
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Thanks.");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Thanks.");
 				player.getPacketDispatch().sendMessage("You buy two woad leaves from Wyson.");
 				stage = 132;
 			} else {
@@ -185,7 +185,7 @@ public final class WysonTheGardenerDialogue extends DialoguePlugin {
 			}
 			break;
 		case 200:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Fair enough.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Fair enough.");
 			stage = 201;
 			break;
 		case 201:

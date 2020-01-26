@@ -42,7 +42,7 @@ public final class SurgeonGeneralTafani extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hi!");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hi!");
 		stage = 0;
 		return true;
 	}
@@ -51,7 +51,7 @@ public final class SurgeonGeneralTafani extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Hi. How can I help?");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hi. How can I help?");
 			stage = 1;
 			break;
 		case 1:
@@ -66,35 +66,35 @@ public final class SurgeonGeneralTafani extends DialoguePlugin {
 		case 2:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can you heal me?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you heal me?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Do you see a lot of injured fighters?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you see a lot of injured fighters?");
 				stage = 30;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Do you come here often?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you come here often?");
 				stage = 20;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Where can I get a cape like yours?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Where can I get a cape like yours?");
 				stage = 40;
 				break;
 
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Of course!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Of course!");
 			stage = 11;
 			break;
 		case 11:
 			npc.animate(new Animation(881));
 			if (player.getSkills().getLifepoints() == player.getSkills().getStaticLevel(Skills.HITPOINTS)) {
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "You look healthy to me!");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You look healthy to me!");
 			} else {
 				player.getSkills().heal(player.getSkills().getStaticLevel(Skills.HITPOINTS));
-				interpreter.sendDialogues(npc, FacialExpression.NORMAL, "There you go!");
+				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "There you go!");
 			}
 			stage = 12;
 			break;
@@ -102,29 +102,29 @@ public final class SurgeonGeneralTafani extends DialoguePlugin {
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I work here, so yes!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I work here, so yes!");
 			stage = 21;
 			break;
 		case 21:
 			end();
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Yes I do. Thankfully we can cope with almost aything.", "Jaraah really is a wonderful surgeon, this methods are a", "little unorthodox but he gets the job done.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yes I do. Thankfully we can cope with almost aything.", "Jaraah really is a wonderful surgeon, this methods are a", "little unorthodox but he gets the job done.");
 			stage = 31;
 			break;
 		case 31:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I shouldn't tell you this but his nickname is 'The", "Butcher'.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I shouldn't tell you this but his nickname is 'The", "Butcher'.");
 			stage = 32;
 			break;
 		case 32:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "That's reassuring.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "That's reassuring.");
 			stage = 33;
 			break;
 		case 33:
 			end();
 			break;
 		case 40:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Well, these capes are only available for people who have", "achieved a Hitpoint level of 99. You should go and train", "some more and come back to me when your Hitpoints", "are higher.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, these capes are only available for people who have", "achieved a Hitpoint level of 99. You should go and train", "some more and come back to me when your Hitpoints", "are higher.");
 			stage = 41;
 			break;
 		case 41:
@@ -133,15 +133,15 @@ public final class SurgeonGeneralTafani extends DialoguePlugin {
 		case 80:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Can you heal me?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you heal me?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Do you see a lot of injured fighters?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you see a lot of injured fighters?");
 				stage = 30;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NORMAL, "Do you come here often?");
+				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you come here often?");
 				stage = 20;
 				break;
 			case 4:

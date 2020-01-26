@@ -31,23 +31,23 @@ public class PhilopDialogue extends DialoguePlugin {
 
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Gwwrr!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Gwwrr!");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Err, hello there. What's that you have there?");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Err, hello there. What's that you have there?");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Gwwwrrr! Dwa-gon Gwwwwrrrr!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Gwwwrrr! Dwa-gon Gwwwwrrrr!");
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Enjoy playing with your dragon, then.");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Enjoy playing with your dragon, then.");
 			stage = 4;
 			break;
 		case 4:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Gwwwrrr!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Gwwwrrr!");
 			stage = 5;
 			break;
 		case 5:
@@ -67,7 +67,7 @@ public class PhilopDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hello, what's your name?");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello, what's your name?");
 		stage = 0;
 		return true;
 	}

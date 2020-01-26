@@ -30,7 +30,7 @@ public class ScavvoDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "'Ello matey! D'ya wanna buy some exiting new toys?");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "'Ello matey! D'ya wanna buy some exiting new toys?");
 		stage = 0;
 		return true;
 	}
@@ -39,7 +39,7 @@ public class ScavvoDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NORMAL, "Let's have a look then.");
+			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Let's have a look then.");
 			stage = 1;
 			break;
 		case 1:

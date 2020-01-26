@@ -31,7 +31,7 @@ public class PoxDialogue extends DialoguePlugin {
 
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NORMAL, "Miaooow!");
+			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Miaooow!");
 			stage = 1;
 			break;
 		case 1:
@@ -51,7 +51,7 @@ public class PoxDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NORMAL, "Hi cat!");
+		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hi cat!");
 		stage = 0;
 		return true;
 	}

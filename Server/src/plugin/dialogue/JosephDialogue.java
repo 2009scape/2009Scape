@@ -39,7 +39,7 @@ public final class JosephDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NORMAL, "I have no interest in talking to a pathetic meat bag like", "yourself.");
+		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I have no interest in talking to a pathetic meat bag like", "yourself.");
 		stage = 0;
 		return true;
 	}
