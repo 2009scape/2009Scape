@@ -43,16 +43,26 @@ public class MasterChefDialogue extends DialoguePlugin {
 			Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ahh! Welcome, newcomer. I am the Master Chef, Lev. It", "is here I will teach you how to cook food truly fit for a", "king."));
 			break;
 		case 20:
-			Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I see you have lost your pot of flour and bucket of water,", "No worries i will supply you with more."));
-			if (player.getInventory().freeSlots() >= 2) {
-				player.getInventory().add(new Item(1933));
-				player.getInventory().add(new Item(1929));
+			if (player.getInventory().containsAll(1933,1929)) {
+				Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Mix together the flour and water to form a dough."));
+				stage = 1;
+			
+			} else if (player.getInventory().containsItem(new Item(2307))) {
+				Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You already have some dough, no need", "to make more."));
 				stage = 1;
 			} else {
-				Component.setUnclosable(player, interpreter.sendDialogue("You don't have enough inventory space."));
-				stage = 99;
+				Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I see you have lost your pot of flour and bucket of water,", "No worries i will supply you with more."));
+				if (player.getInventory().freeSlots() >= 2) {
+					player.getInventory().add(new Item(1933));
+					player.getInventory().add(new Item(1929));
+					stage = 1;
+				} else {
+					Component.setUnclosable(player, interpreter.sendDialogue("You don't have enough inventory space."));
+					stage = 99;
+				}
+				break;	
 			}
-			break;
+			
 		case 19:
 			if (!player.getInventory().contains(1929, 1) && !player.getInventory().containItems(1933)) {
 				if (player.getInventory().hasSpaceFor(new Item(1929, 1)) && player.getInventory().hasSpaceFor(new Item(1933, 1))) {

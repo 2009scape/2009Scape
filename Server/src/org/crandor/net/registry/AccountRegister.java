@@ -1,5 +1,15 @@
 package org.crandor.net.registry;
 
+import java.nio.ByteBuffer;
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import org.crandor.ServerConstants;
 import org.crandor.cache.misc.buffer.ByteBufferUtils;
 import org.crandor.game.node.entity.player.info.portal.PlayerSQLManager;
 import org.crandor.game.system.SystemManager;
@@ -9,12 +19,6 @@ import org.crandor.game.system.task.TaskExecutor;
 import org.crandor.net.Constants;
 import org.crandor.net.IoSession;
 import org.crandor.net.event.LoginReadEvent;
-import org.keldagrim.ServerConstants;
-
-import java.nio.ByteBuffer;
-import java.sql.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * Handles the registry of new accounts.
@@ -163,11 +167,7 @@ public class AccountRegister extends SQLEntryHandler<RegistryDetails> {
 
 		//If the management server's settings register new users with the server's clan chat
 		//I believe if there was no entry there would be errors during the registration, hence a null entry if the setting is off
-		if (ServerConstants.NEW_PLAYER_DEFAULT_CLAN == true){
-			statement.setString(7,ServerConstants.SERVER_NAME);
-		}else{
-			statement.setString(7,null);
-		}
+		
 		statement.executeUpdate();
 		SQLManager.close(statement.getConnection());
 	}

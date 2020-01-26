@@ -1,6 +1,5 @@
 package plugin.tutorial;
 
-import org.crandor.plugin.InitializablePlugin;
 import org.crandor.game.content.dialogue.DialoguePlugin;
 import org.crandor.game.content.dialogue.FacialExpression;
 import org.crandor.game.content.global.tutorial.TutorialSession;
@@ -15,7 +14,7 @@ import org.crandor.game.world.GameWorld;
 import org.crandor.game.world.map.Location;
 import org.crandor.net.amsc.MSPacketRepository;
 import org.crandor.net.amsc.WorldCommunicator;
-import org.keldagrim.ServerConstants;
+import org.crandor.plugin.InitializablePlugin;
 
 /**
  * Handles the tutorial completition dialogue (skippy, magic instructor)
@@ -306,12 +305,7 @@ public class TutorialCompletionDialogue extends DialoguePlugin {
 				//Appending the welcome message and some other stuff
 				player.getPacketDispatch().sendMessage("Welcome to " + GameWorld.getName() + ".");
 
-				//If the management server's settings register new users with the server's clan chat, we would have to simulate joining a clan
-				if (ServerConstants.NEW_PLAYER_DEFAULT_CLAN == true) {
-					player.getPacketDispatch().sendMessage("Attempting to join channel...:clan:");
-					player.getPacketDispatch().sendMessage("Now talking in clan channel " + ServerConstants.SERVER_NAME + ":clan:");
-					player.getPacketDispatch().sendMessage("To talk, start each line of chat with the / symbol.:clan:");
-				}
+				
 
 				player.unlock();
 				TutorialSession.getExtension(player).setStage(TutorialSession.MAX_STAGE + 1);

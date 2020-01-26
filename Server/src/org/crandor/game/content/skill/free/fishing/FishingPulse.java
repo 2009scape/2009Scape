@@ -73,7 +73,8 @@ public final class FishingPulse extends SkillPulse<NPC> {
 		if (option == null) {
 			return false;
 		}
-		if (!player.getInventory().containsItem(option.getTool()) && !hasBarbTail() && isBareHanded(player)) {
+		player.debug(String.valueOf(player.getInventory().containsItem(option.getTool())));
+		if (!player.getInventory().containsItem(option.getTool()) && !hasBarbTail()) {
 			//System.out.println(isBareHanded(player));
 			player.getDialogueInterpreter().sendDialogue("You need a " + option.getTool().getName().toLowerCase() + " to catch these fish.");
 			stop();

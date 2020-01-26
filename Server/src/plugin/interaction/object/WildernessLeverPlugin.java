@@ -90,6 +90,7 @@ public final class WildernessLeverPlugin extends OptionHandler {
 				}
 			}
 		},
+		
 		MAGE_BANK("mage's cave", 5959, 5960, Location.create(3090, 3956, 0), Location.create(2539, 4712, 0)), ARENA("arena", 9706, 9707, Location.create(3105, 3956, 0), Location.create(3105, 3951, 0)) {
 			@Override
 			public boolean canPull(Player player, GameObject object) {

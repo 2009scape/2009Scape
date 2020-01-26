@@ -58,6 +58,7 @@ public class IoEventHandler {
 		ByteBuffer buffer = ByteBuffer.allocate(100_000);
 		IoSession session = (IoSession) key.attachment();
 		if (channel.read(buffer) == -1) {
+			//just when a client closes their client, nothing to worry about.
 			throw new IOException("An existing connection was disconnected!");
 		}
 		buffer.flip();
