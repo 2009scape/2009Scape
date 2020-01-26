@@ -2,7 +2,6 @@ package org.crandor.tools;
 
 import org.crandor.cache.Cache;
 import org.crandor.cache.def.impl.ItemDefinition;
-import org.omg.CORBA.CODESET_INCOMPATIBLE;
 
 
 public class Test {

@@ -63,6 +63,8 @@ final class KeyboardListener implements KeyListener, FocusListener {
                var2 = -1;
             }
             
+            
+            
             /**
              * Tab to reply
              */
@@ -74,6 +76,11 @@ final class KeyboardListener implements KeyListener, FocusListener {
             {
                Class73.method1308(RSString.createRSString("::shutdowninterface"), false);
             }
+			if (var1.getKeyCode() == KeyEvent.VK_SPACE)
+            {
+               Class2.method78(40, false, 0);
+            }
+			
             
             /**
              * Controls arrow key mouse movement
