@@ -55,19 +55,19 @@ public final class GillieGroatsDialogue extends DialoguePlugin {
 		switch (stage) {
 			case 900:
 				interpreter.sendDialogues(player, FacialExpression.ASKING, "Erm... No. How could you tell?");
-				stage = 901;
+				stage++;
 				break;
 			case 901:
 				interpreter.sendDialogues(3807, FacialExpression.FRIENDLY, "Because you're spilling milk all over the floor. What a", "waste ! You need something to hold the milk.");
-				stage = 902;
+				stage++;
 				break;
 			case 902:
 				interpreter.sendDialogues(player, FacialExpression.NEUTRAL, "Ah yes, I really should have guessed that one, shouldn't", "I?");
-				stage = 903;
+				stage++;
 				break;
 			case 903:
 				interpreter.sendDialogues(3807, FacialExpression.FRIENDLY, "You're from the city, aren't you... Try it again with an", "empty bucket.");
-				stage = 904;
+				stage++;
 				break;
 			case 904:
 				interpreter.sendDialogues(player, FacialExpression.NEUTRAL, "Right, I'll do that.");
@@ -95,6 +95,8 @@ public final class GillieGroatsDialogue extends DialoguePlugin {
 						break;
 				}
 				break;
+
+			//Who are you?
 			case 10:
 				interpreter.sendDialogues(player, FacialExpression.ASKING, "Do you have any buckets of milk spare?");
 				stage++;
@@ -107,6 +109,8 @@ public final class GillieGroatsDialogue extends DialoguePlugin {
 				interpreter.sendDialogues(player, FacialExpression.HAPPY, "Thanks.");
 				stage++;
 				break;
+
+			//I'm fine thanks and Endpoint for other conversations
 			case 13:
 				end();
 				break;
