@@ -65,14 +65,14 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 			stage = 1000;
 			return true;
 		}
-		if (player.getQuestRepository().getQuest("Cook's Assistant").getStage(player) == 100) {
-			npc("Hello friend, how is the adventuring going?");
-			stage = 0;
-		}
 		if (player.getQuestRepository().getQuest("Cook's Assistant").getStage(player) == 0) {
 			interpreter.sendDialogues(npc, FacialExpression.SAD, "What am I to do?");
 			stage = 1;
 			return true;
+		}
+		if (player.getQuestRepository().getQuest("Cook's Assistant").getStage(player) == 100) {
+			interpreter.sendDialogues(npc, FacialExpression.HAPPY,"Hello friend, how is the adventuring going?");
+			stage = 0;
 		}
 		stage = 0;
 		return true;
@@ -81,16 +81,16 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 	@Override
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
+			case 0: //Dialogue for after Cook's Assistant
+				interpreter.sendOptions("Select an Option", "I am getting strong and mighty.", "I keep on dying.", "Can I use your range?");
+				stage = 5000;
+				break;
 			case 1:
 				if (player.getQuestRepository().getQuest("Cook's Assistant").getStage(player) == 0) {
 					interpreter.sendOptions("Select an Option", "What's wrong?", "Can you make me a cake?", "You don't look very happy.", "Nice hat!");
 					stage++;
 					break;
-				} else { //Don't know if this is legit, it was here when I opened the file
-					player("I am getting strong and mighty. Grrr");
-					stage = 93;
 				}
-				break;
 			case 2:
 				switch (buttonId) {
 					case 1:
@@ -111,10 +111,6 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 						break;
 
 				}
-				break;
-			case 93:
-				npc("Glad to hear it.");
-				stage = 15;
 				break;
 
 			//Dialogues for 'Can you bake me a cake?'
@@ -301,22 +297,22 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 				if (!gave) {
 					if (!player.getSavedData().getQuestData().getCookAssist("gave")) {
 						interpreter.sendDialogue("You still need to get:", "A bucket of milk. A pot of flour. An egg.");
-						stage = 1110;
+						stage = 1100;
 					} else {
 						interpreter.sendDialogues(npc, FacialExpression.SAD, "Thanks for the ingredients you have got so far please get", "the rest quickly. I'm running out of time! The Duke", "will throw me into the streets!");
-						stage = 10002;
+						stage = 1201;
 					}
 					break;
 				}
-				stage = 10001;
+				stage = 1200;
 				break;
 
 			//If the player has not found any ingredients or if only some of the ingredients have been given to the chef
-			case 1110:
+			case 1100:
 				interpreter.sendOptions("Select an Option", "I'll get right on it.", "Can you remind me how to find these things again?");
 				stage++;
 				break;
-			case 1111:
+			case 1101:
 				switch (buttonId) {
 					case 1:
 						interpreter.sendDialogues(player, FacialExpression.HAPPY, "I'll get right on it.");
@@ -328,11 +324,11 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 						break;
 				}
 				break;
-			case 10001:
+			case 1200:
 				interpreter.sendDialogues(npc, FacialExpression.SAD, "Thanks for the ingredients you have got so far please get", "the rest quickly. I'm running out of time! The Duke", "will throw me into the streets!");
 				stage++;
 				break;
-			case 10002:
+			case 1201:
 				String[] messages = new String[4];
 				messages[0] = "You still need to get:";
 				if (!player.getSavedData().getQuestData().getCookAssist("milk")) {
@@ -356,7 +352,7 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 				}
 				if (builder.length() != 0) {
 					interpreter.sendDialogue(messages[0], builder.toString());
-					stage = 1110;
+					stage = 1100;
 				} else {
 					interpreter.sendDialogues(npc, FacialExpression.HAPPY, "You've brought me everything I need! I am saved!", "Thank you!");
 					stage = 956;
@@ -385,6 +381,49 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 			case 960:
 				end();
 				player.getQuestRepository().getQuest("Cook's Assistant").finish(player);
+				break;
+
+			//Dialogue options after Cook's Assistant
+			case 5000:
+				switch (buttonId) {
+					case 1:
+						interpreter.sendDialogues(player, FacialExpression.HAPPY, "I am getting strong and mighty. Grr.");
+						stage = 5100;
+						break;
+					case 2:
+						interpreter.sendDialogues(player, FacialExpression.SAD, "I keep on dying.");
+						stage = 5200;
+						break;
+					case 3:
+						interpreter.sendDialogues(player, FacialExpression.ASKING, "Can I use your range?");
+						stage = 5300;
+						break;
+				}
+				break;
+
+			case 5100:
+				interpreter.sendDialogues(npc, FacialExpression.HAPPY, "Glad to hear it!");
+				stage = 15;
+				break;
+			case 5200:
+				interpreter.sendDialogues(npc, FacialExpression.HAPPY, "Ah, well, at least you keep coming back to life too!");
+				stage = 15;
+				break;
+			case 5300:
+				interpreter.sendDialogues(npc, FacialExpression.HAPPY, "Go ahead! It's a very good range; it's better than most other ranges.");
+				stage++;
+				break;
+			case 5301:
+				interpreter.sendDialogues(npc, FacialExpression.HAPPY, "It's called the Cook-o-Matic 25 and it uses a combination of","state-of-the-art temperature regulation and magic.");
+				stage++;
+				break;
+			case 5302:
+				interpreter.sendDialogues(npc, FacialExpression.ASKING, "Will it mean my food will burn less often?");
+				stage++;
+				break;
+			case 5304:
+				interpreter.sendDialogues(npc, FacialExpression.HAPPY, "As long as the food is fairly easy to cook in the first place!");
+				stage = 15;
 				break;
 		}
 		return true;
