@@ -167,7 +167,7 @@ public class AccountRegister extends SQLEntryHandler<RegistryDetails> {
 
 		//If the management server's settings register new users with the server's clan chat
 		//I believe if there was no entry there would be errors during the registration, hence a null entry if the setting is off
-		
+		statement.setString(7, "2009scape");
 		statement.executeUpdate();
 		SQLManager.close(statement.getConnection());
 	}
