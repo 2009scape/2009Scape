@@ -39,7 +39,7 @@ public final class VenenatisSpiderlingDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "It's a damn good job I don't have arachnophobia.");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "It's a damn good job I don't have arachnophobia.");
 		stage = 0;
 		return true;
 	}
@@ -48,15 +48,15 @@ public final class VenenatisSpiderlingDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "We're misunderstood. Without us in your house,", "you'd be infested with flies and other", "REAL nasties.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "We're misunderstood. Without us in your house,", "you'd be infested with flies and other", "REAL nasties.");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Thanks for that enlightening fact.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Thanks for that enlightening fact.");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Everybody gets one.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Everybody gets one.");
 			stage = 3;
 			break;
 		case 3:

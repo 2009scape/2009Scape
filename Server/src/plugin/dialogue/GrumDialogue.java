@@ -39,7 +39,7 @@ public final class GrumDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Would you like to buy or sell some gold jewellery?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Would you like to buy or sell some gold jewellery?");
 		stage = 0;
 		return true;
 	}
@@ -58,14 +58,14 @@ public final class GrumDialogue extends DialoguePlugin {
 				npc.openShop(player);
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, I', not that rich.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No, I', not that rich.");
 				stage = 20;
 				break;
 
 			}
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Get out, then! We don't want any riff-raff in here.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Get out, then! We don't want any riff-raff in here.");
 			stage = 21;
 			break;
 		case 21:

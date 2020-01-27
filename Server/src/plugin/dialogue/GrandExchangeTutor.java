@@ -40,7 +40,7 @@ public final class GrandExchangeTutor extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "How can I help?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "How can I help?");
 		stage = 0;
 		return true;
 	}
@@ -55,37 +55,37 @@ public final class GrandExchangeTutor extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you teach me about the Grand Exchange?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you teach me about the Grand Exchange?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Where can I find more info?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Where can I find more info?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm okay thanks.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'm okay thanks.");
 				stage = 30;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Of course.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Of course.");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "This is the Grand Exchange. You can tell us", "what you want to buy or sell, and for how much", "and we'll search for another player willing to do the trade!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "This is the Grand Exchange. You can tell us", "what you want to buy or sell, and for how much", "and we'll search for another player willing to do the trade!");
 			stage = 12;
 			break;
 		case 12:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Let me describe the process in four steps:");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Let me describe the process in four steps:");
 			stage = 13;
 			break;
 		case 13:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, getRed() + "Step 1</col>: You come here with items to sell or money to", "spend.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, getRed() + "Step 1</col>: You come here with items to sell or money to", "spend.");
 			stage = 14;
 			break;
 		case 14:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, getRed() + "Step 2</col>: Speak with one of the clerks at the desk.", "They will help you set up your bid.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, getRed() + "Step 2</col>: Speak with one of the clerks at the desk.", "They will help you set up your bid.");
 			stage = 15;
 			break;
 		case 15:
@@ -93,11 +93,11 @@ public final class GrandExchangeTutor extends DialoguePlugin {
 			stage = 16;
 			break;
 		case 16:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, getRed() + "Step 3</col>: The clerks will take the items or money off you", "and look for someone to complete the trade. This may be", "very fast, or it could take several days.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, getRed() + "Step 3</col>: The clerks will take the items or money off you", "and look for someone to complete the trade. This may be", "very fast, or it could take several days.");
 			stage = 17;
 			break;
 		case 17:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, getRed() + "Step 4</col>: When the trade is complete, we will send you a", "message. You can collect your stuff by talking to the", "clerks or by visiting any banker in " + GameWorld.getName() + ".");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, getRed() + "Step 4</col>: When the trade is complete, we will send you a", "message. You can collect your stuff by talking to the", "clerks or by visiting any banker in " + GameWorld.getName() + ".");
 			stage = 18;
 			break;
 		case 18:
@@ -112,11 +112,11 @@ public final class GrandExchangeTutor extends DialoguePlugin {
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Go and speak to Brugsen who's standing over", "there, closer to the building. He'll help you out.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Go and speak to Brugsen who's standing over", "there, closer to the building. He'll help you out.");
 			stage = 31;
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Fair enough.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Fair enough.");
 			stage = 31;
 			break;
 		case 31:

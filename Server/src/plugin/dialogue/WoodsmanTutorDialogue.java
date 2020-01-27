@@ -42,7 +42,7 @@ public final class WoodsmanTutorDialogue extends DialoguePlugin {
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
 		if (player.getSkills().getLevel(Skills.WOODCUTTING) >= 99) {
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Wow! It's not often I meet somebody as accomplished", "as me in Woodcutting! Seeing as youre so skilled,", "maybe you are interested in buying a Skillcape of", "Woodcutting?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Wow! It's not often I meet somebody as accomplished", "as me in Woodcutting! Seeing as youre so skilled,", "maybe you are interested in buying a Skillcape of", "Woodcutting?");
 			stage = 100;
 		} else {
 			interpreter.sendOptions("Select an Option", "Tell me about different trees and axes.", "What is that cape you're wearing?", "Goodbye.");
@@ -57,25 +57,25 @@ public final class WoodsmanTutorDialogue extends DialoguePlugin {
 		case 0:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Who are you?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Who are you?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What is that cape you're wearing?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What is that cape you're wearing?");
 				stage = 20;
 				break;
 
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "My name is Wilfred and I'm the best woodsman in", "Asgarnia! I've spent my life studying the best methods for", "woodcutting. That's why I have this cape, the Skillcape of", "Woodcutting.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "My name is Wilfred and I'm the best woodsman in", "Asgarnia! I've spent my life studying the best methods for", "woodcutting. That's why I have this cape, the Skillcape of", "Woodcutting.");
 			stage = 11;
 			break;
 		case 11:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "This is a Skillcape of Woodcutting. Only a person who has", "achieved the highest possible level in a skill can wear one.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "This is a Skillcape of Woodcutting. Only a person who has", "achieved the highest possible level in a skill can wear one.");
 			stage = 21;
 			break;
 		case 21:
@@ -88,11 +88,11 @@ public final class WoodsmanTutorDialogue extends DialoguePlugin {
 		case 101:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, please.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes, please.");
 				stage = 1000;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, thank you.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No, thank you.");
 				stage = 2000;
 				break;
 			}
@@ -102,7 +102,7 @@ public final class WoodsmanTutorDialogue extends DialoguePlugin {
 			stage = 500;
 			break;
 		case 2002:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Bye!");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Bye!");
 			stage = 2003;
 			break;
 		case 2003:
@@ -110,17 +110,17 @@ public final class WoodsmanTutorDialogue extends DialoguePlugin {
 			break;
 		case 1000:
 			if (player.getInventory().freeSlots() == 1) {
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, I don't have enough inventory space.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Sorry, I don't have enough inventory space.");
 				stage = 99;
 			}
 			if (player.getInventory().contains(995, 99000)) {
 				player.getInventory().remove(new Item(995, 99000));
 				player.getInventory().add(new Item(9807 + (player.getSkills().getMasteredSkills() > 1 ? 1 : 0)));
 				player.getInventory().add(new Item(9809, 1));
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Excellent! Wear that cape with pride my friend.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Excellent! Wear that cape with pride my friend.");
 				stage = 107;
 			} else {
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, I don't seem to have enough coins.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Sorry, I don't seem to have enough coins.");
 				stage = 160;
 			}
 			break;
@@ -128,15 +128,15 @@ public final class WoodsmanTutorDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 160:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Very well, farewell adventurer.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Very well, farewell adventurer.");
 			stage = 2001;
 			break;
 		case 107:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Will do, Wilfred.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Will do, Wilfred.");
 			stage = 108;
 			break;
 		case 108:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Very well, farewell adventurer.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Very well, farewell adventurer.");
 			stage = 2001;
 			break;
 		case 2001:

@@ -39,7 +39,7 @@ public final class DavonDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Pssst! Come here if you want to do some amulet", "trading.");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Pssst! Come here if you want to do some amulet", "trading.");
 		stage = 0;
 		return true;
 	}
@@ -54,15 +54,15 @@ public final class DavonDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What are you selling?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What are you selling?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What do you mean pssst?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What do you mean pssst?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Why don'y you ever restock some types of amulets?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Why don'y you ever restock some types of amulets?");
 				stage = 30;
 				break;
 			}
@@ -72,14 +72,14 @@ public final class DavonDialogue extends DialoguePlugin {
 			npc.openShop(player);
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Errr, I was...I was clearing my throat.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Errr, I was...I was clearing my throat.");
 			stage = 21;
 			break;
 		case 21:
 			end();
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Some of these amulets are very hard to get. I have to", "wait until an adventurer supplies me.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Some of these amulets are very hard to get. I have to", "wait until an adventurer supplies me.");
 			stage = 31;
 			break;
 		case 31:

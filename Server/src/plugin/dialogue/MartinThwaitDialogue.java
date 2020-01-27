@@ -56,7 +56,7 @@ public final class MartinThwaitDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You know it's sometimes funny how things work out, I", "lose some gold but find an item, or I lose an item and", "find some gold... no-one ever knows what's gone where", "ya know.");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "You know it's sometimes funny how things work out, I", "lose some gold but find an item, or I lose an item and", "find some gold... no-one ever knows what's gone where", "ya know.");
 		stage = 0;
 		return true;
 	}
@@ -76,11 +76,11 @@ public final class MartinThwaitDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yeah I know what you mean, found anything recently?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yeah I know what you mean, found anything recently?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Okay... I'll be going now.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Okay... I'll be going now.");
 				stage = 20;
 				break;
 			case 3:
@@ -98,10 +98,10 @@ public final class MartinThwaitDialogue extends DialoguePlugin {
 				npc.openShop(player);
 			} else {
 				if (player.getSkills().getLevel(Skills.THIEVING) < 50) {
-					interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Sorry, mate. Train up your Thieving skill to at least", "50 and I might be able to help you out.");
+					interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Sorry, mate. Train up your Thieving skill to at least", "50 and I might be able to help you out.");
 				}
 				if (player.getSkills().getLevel(Skills.AGILITY) < 50) {
-					interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Sorry, mate. Train up your Agility skill to at least", "50 and I might be able to help you out.");
+					interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Sorry, mate. Train up your Agility skill to at least", "50 and I might be able to help you out.");
 				}
 			}
 			stage = 11;
@@ -113,7 +113,7 @@ public final class MartinThwaitDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Sure, this is a Skillcape of Thieving. It shows my stature as", "a master thief! It has all sorts of uses , if you", "have a level of 99 Thieving I'll sell you one.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Sure, this is a Skillcape of Thieving. It shows my stature as", "a master thief! It has all sorts of uses , if you", "have a level of 99 Thieving I'll sell you one.");
 			stage = 31;
 			break;
 		case 31:
@@ -180,10 +180,10 @@ public final class MartinThwaitDialogue extends DialoguePlugin {
 					npc.openShop(player);
 				} else {
 					if (player.getSkills().getLevel(Skills.THIEVING) < 50) {
-						player.getDialogueInterpreter().sendDialogues(2270, FacialExpression.NO_EXPRESSION, "Sorry, mate. Train up your Thieving skill to at least", "50 and I might be able to help you out.");
+						player.getDialogueInterpreter().sendDialogues(2270, FacialExpression.HALF_GUILTY, "Sorry, mate. Train up your Thieving skill to at least", "50 and I might be able to help you out.");
 					}
 					if (player.getSkills().getLevel(Skills.AGILITY) < 50) {
-						player.getDialogueInterpreter().sendDialogues(2270, FacialExpression.NO_EXPRESSION, "Sorry, mate. Train up your Agility skill to at least", "50 and I might be able to help you out.");
+						player.getDialogueInterpreter().sendDialogues(2270, FacialExpression.HALF_GUILTY, "Sorry, mate. Train up your Agility skill to at least", "50 and I might be able to help you out.");
 					}
 				}
 				return true;

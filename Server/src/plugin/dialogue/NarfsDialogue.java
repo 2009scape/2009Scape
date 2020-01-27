@@ -30,15 +30,15 @@ public class NarfsDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "'Narf'? You think that's funny?", "At least I Don't call myself '" + player.getDetails().getUsername() + "' ", "Where did you get a name like that?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "'Narf'? You think that's funny?", "At least I Don't call myself '" + player.getDetails().getUsername() + "' ", "Where did you get a name like that?");
 			stage = 100;
 			break;
 		case 100:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "It seemed like a good idea at the time!");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "It seemed like a good idea at the time!");
 			stage = 101;
 			break;
 		case 101:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Bah!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Bah!");
 			stage = 102;
 			break;
 		case 102:
@@ -58,7 +58,7 @@ public class NarfsDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "That's a funny name you've got.");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "That's a funny name you've got.");
 		stage = 1;
 		return true;
 	}

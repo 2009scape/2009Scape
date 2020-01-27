@@ -50,33 +50,33 @@ public final class CookingTutorDialogue extends DialoguePlugin {
 		case 0:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you teach me the basics of cooking please?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you teach me the basics of cooking please?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Tell me about different food I can make.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Tell me about different food I can make.");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Goodbye.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Goodbye.");
 				stage = 30;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "The simplest thing to cook is raw meat or fish.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "The simplest thing to cook is raw meat or fish.");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Fish can be caught, speak to the fishing tutor south of", "here in the swamp. Killing cows or chickens will yield", "raw meat to cook too.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Fish can be caught, speak to the fishing tutor south of", "here in the swamp. Killing cows or chickens will yield", "raw meat to cook too.");
 			stage = 12;
 			break;
 		case 12:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You can use your own fire... but it's not as effective", "and you'll burn more. To build a fire use a tinderbox", "on logs.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "You can use your own fire... but it's not as effective", "and you'll burn more. To build a fire use a tinderbox", "on logs.");
 			stage = 13;
 			break;
 		case 13:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Once you've found your range, click on your raw", "meat or fish in your inventory, then click on the", "cooking range. This will bring up an interface which", "you can right-click on to select the number to cook.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Once you've found your range, click on your raw", "meat or fish in your inventory, then click on the", "cooking range. This will bring up an interface which", "you can right-click on to select the number to cook.");
 			stage = 14;
 			break;
 		case 14:
@@ -128,11 +128,11 @@ public final class CookingTutorDialogue extends DialoguePlugin {
 			stage = 241;
 			break;
 		case 241:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Finally cook your pie by using the unbaked pie on a", "cooking range. Mmmm...pie.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Finally cook your pie by using the unbaked pie on a", "cooking range. Mmmm...pie.");
 			stage = 242;
 			break;
 		case 242:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "There's pizza too! Find yourself some tomato and", "cheese, use on the Pizza dough. Cook the pizza on a", "range then add any other topping you want, such as", "anchovies.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "There's pizza too! Find yourself some tomato and", "cheese, use on the Pizza dough. Cook the pizza on a", "range then add any other topping you want, such as", "anchovies.");
 			stage = 20;
 			break;
 		case 30:

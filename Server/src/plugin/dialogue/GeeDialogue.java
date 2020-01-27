@@ -39,7 +39,7 @@ public final class GeeDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello there, can I help you?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hello there, can I help you?");
 		stage = 0;
 		return true;
 	}
@@ -54,37 +54,37 @@ public final class GeeDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What's up?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What's up?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you know of any quests I can do?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Do you know of any quests I can do?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can I buy your stick?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can I buy your stick?");
 				stage = 30;
 				break;
 
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I assume the sky is up..");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I assume the sky is up..");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "You assume?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "You assume?");
 			stage = 12;
 			break;
 		case 12:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yeah, unfortunately I don't seem to be able to look up.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Yeah, unfortunately I don't seem to be able to look up.");
 			stage = 13;
 			break;
 		case 13:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Nope, sorry.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Nope, sorry.");
 			stage = 21;
 			break;
 		case 21:
@@ -95,23 +95,23 @@ public final class GeeDialogue extends DialoguePlugin {
 			stage = 31;
 			break;
 		case 31:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Really? Show me what it can do!");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Really? Show me what it can do!");
 			stage = 32;
 			break;
 		case 32:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Um..It's a bit low on power at the moment..");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Um..It's a bit low on power at the moment..");
 			stage = 33;
 			break;
 		case 33:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "It's a stick isn't it?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "It's a stick isn't it?");
 			stage = 34;
 			break;
 		case 34:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "...Ok it's a stick.. But only while I save up for a staff.", "Zaff in Varrock square sells them in his shop.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "...Ok it's a stick.. But only while I save up for a staff.", "Zaff in Varrock square sells them in his shop.");
 			stage = 35;
 			break;
 		case 35:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Well good luck with that.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Well good luck with that.");
 			stage = 36;
 			break;
 		case 36:

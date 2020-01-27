@@ -523,13 +523,13 @@ public final class SlayerMasterDialogue extends DialoguePlugin {
 					stage = -1;
 					return true;
 				}
-				interpreter.sendDialogues(master.getNpc(), FacialExpression.NO_EXPRESSION, "'Ello, and what are you after, then?");
+				interpreter.sendDialogues(master.getNpc(), FacialExpression.HALF_GUILTY, "'Ello, and what are you after, then?");
 				stage = 0;
 				break;
 			}
 			break;
 		case 901:
-			interpreter.sendDialogues(Master.DURADEL.getNpc(), FacialExpression.NO_EXPRESSION, "Certainly! Right when you give me 99000 coins.");
+			interpreter.sendDialogues(Master.DURADEL.getNpc(), FacialExpression.HALF_GUILTY, "Certainly! Right when you give me 99000 coins.");
 			stage = 902;
 			break;
 		case 902:
@@ -549,7 +549,7 @@ public final class SlayerMasterDialogue extends DialoguePlugin {
 			break;
 		case 904:
 			if (Skillcape.purchase(player, Skills.SLAYER)) {
-				interpreter.sendDialogues(Master.DURADEL.getNpc(), FacialExpression.NO_EXPRESSION, "There you go! Enjoy.");
+				interpreter.sendDialogues(Master.DURADEL.getNpc(), FacialExpression.HALF_GUILTY, "There you go! Enjoy.");
 			}
 			stage = 905;
 			break;
@@ -563,7 +563,7 @@ public final class SlayerMasterDialogue extends DialoguePlugin {
 				stage = 907;
 				break;
 			case 2:
-				interpreter.sendDialogues(master.getNpc(), FacialExpression.NO_EXPRESSION, "'Ello, and what are you after, then?");
+				interpreter.sendDialogues(master.getNpc(), FacialExpression.HALF_GUILTY, "'Ello, and what are you after, then?");
 				stage = 0;
 				break;
 			}
@@ -623,7 +623,7 @@ public final class SlayerMasterDialogue extends DialoguePlugin {
 		if (master == Master.NIEVE || master == Master.CHAELDAR) {
 			return FacialExpression.OSRS_NORMAL;
 		}
-		return FacialExpression.NO_EXPRESSION;
+		return FacialExpression.HALF_GUILTY;
 	}
 	
 	/**

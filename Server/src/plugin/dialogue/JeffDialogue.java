@@ -39,7 +39,7 @@ public final class JeffDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Tell me, is the guard still watching us?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Tell me, is the guard still watching us?");
 		stage = 0;
 		return true;
 	}
@@ -48,11 +48,11 @@ public final class JeffDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Why would you care if there's a guard watching you?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Why would you care if there's a guard watching you?");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh, forget it.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh, forget it.");
 			stage = 2;
 			break;
 		case 2:

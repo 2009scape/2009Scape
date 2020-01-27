@@ -49,7 +49,7 @@ public final class HeronDialogue extends DialoguePlugin {
 		public boolean handle(int interfaceId, int buttonId) {
 			switch (stage) {
 			case 0:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm not falling for that... I'm not a fish! I've got more", "foresight than that.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'm not falling for that... I'm not a fish! I've got more", "foresight than that.");
 				stage = 1;
 				break;
 			case 1:

@@ -40,7 +40,7 @@ public final class LakkiDwarfDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello!");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Hello!");
 		stage = 0;
 		return true;
 	}
@@ -49,7 +49,7 @@ public final class LakkiDwarfDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm sorry, I can't talk right now.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I'm sorry, I can't talk right now.");
 			stage = 1;
 			break;
 		case 1:

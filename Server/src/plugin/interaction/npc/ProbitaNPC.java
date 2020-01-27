@@ -192,23 +192,23 @@ public class ProbitaNPC extends OptionHandler {
 			case 2:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Tell me about pet insurance.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Tell me about pet insurance.");
 					stage = 10;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I've lost a pet. Have you got it?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I've lost a pet. Have you got it?");
 					stage = 20;
 					break;
 				case 3:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I have a pet that I'd like to insure.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I have a pet that I'd like to insure.");
 					stage = 30;
 					break;
 				case 4:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What pets have I insured?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What pets have I insured?");
 					stage = 40;
 					break;
 				case 5:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Maybe another time.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Maybe another time.");
 					stage = 50;
 					break;
 				}
@@ -232,19 +232,19 @@ public class ProbitaNPC extends OptionHandler {
 			case 14:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I've lost a pet. Have you got it?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I've lost a pet. Have you got it?");
 					stage = 20;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I have a pet that I'd like to insure.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I have a pet that I'd like to insure.");
 					stage = 30;
 					break;
 				case 3:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What pets have I insured?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What pets have I insured?");
 					stage = 40;
 					break;
 				case 4:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Maybe another time.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Maybe another time.");
 					stage = 50;
 					break;
 				}

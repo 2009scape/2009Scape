@@ -39,7 +39,7 @@ public final class GemMerchantDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Here, look at my lovely gems.");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Here, look at my lovely gems.");
 		stage = 0;
 		return true;
 	}

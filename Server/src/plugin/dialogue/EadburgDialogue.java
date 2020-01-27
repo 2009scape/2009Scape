@@ -39,7 +39,7 @@ public final class EadburgDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What's cooking, good looking?");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What's cooking, good looking?");
 		stage = 0;
 		return true;
 	}
@@ -48,15 +48,15 @@ public final class EadburgDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "The stew for the servant's main meal.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "The stew for the servant's main meal.");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Um...er...see you later.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Um...er...see you later.");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Bye!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Bye!");
 			stage = 3;
 			break;
 		case 3:

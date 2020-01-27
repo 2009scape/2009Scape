@@ -38,11 +38,11 @@ public class QuestGuideDialogue extends DialoguePlugin {
 		npc = (NPC) args[0];
 		switch (TutorialSession.getExtension(player).getStage()) {
 		case 27:
-			Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ah. Welcome adventurer. I'm here to tell you all about", "quests. Lets start by opening the Quest list."));
+			Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Ah. Welcome adventurer. I'm here to tell you all about", "quests. Lets start by opening the Quest list."));
 			stage = 0;
 			break;
 		case 28:
-			Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Now you have the journal open. I'll tell you a bit about", "it At the moment all the quests are shown in red. Which", "means you have not started them yet."));
+			Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Now you have the journal open. I'll tell you a bit about", "it At the moment all the quests are shown in red. Which", "means you have not started them yet."));
 			break;
 		}
 		return true;
@@ -63,15 +63,15 @@ public class QuestGuideDialogue extends DialoguePlugin {
 		case 28:
 			switch (stage) {
 			case 0:
-				Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "When you start a quest it will change colour to yellow,", "and to green when you've finished. This is so you can", "easily see what's complete, what's started and what's left", "to begin."));
+				Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "When you start a quest it will change colour to yellow,", "and to green when you've finished. This is so you can", "easily see what's complete, what's started and what's left", "to begin."));
 				stage = 1;
 				break;
 			case 1:
-				Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "The start of quests are easy to find. Look out for the", "star icons on the minimap, just like the one you should", "see marking my house."));
+				Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "The start of quests are easy to find. Look out for the", "star icons on the minimap, just like the one you should", "see marking my house."));
 				stage = 2;
 				break;
 			case 2:
-				Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "There's not a lot more I can tell you about questing.", "You have to experience the thrill of it yourself to fully", "understand. You may find some adevnture in the caves", "under my house."));
+				Component.setUnclosable(player, interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "There's not a lot more I can tell you about questing.", "You have to experience the thrill of it yourself to fully", "understand. You may find some adevnture in the caves", "under my house."));
 				stage = 3;
 				break;
 			case 3:

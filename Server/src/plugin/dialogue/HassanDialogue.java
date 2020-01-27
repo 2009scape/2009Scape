@@ -66,13 +66,13 @@ public final class HassanDialogue extends DialoguePlugin {
 		case 50:
 		case 20:
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I understand the Spymaster has hired you. I will pay", "the reward only when the Prince is rescued.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I understand the Spymaster has hired you. I will pay", "the reward only when the Prince is rescued.");
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Have you found the spymaster, Osman, yet? You", "cannot proceed in your task without reporting to him.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Have you found the spymaster, Osman, yet? You", "cannot proceed in your task without reporting to him.");
 			break;
 		default:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Greetings I am Hassan, Chancellor to the Emir of Al-", "Kharid.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Greetings I am Hassan, Chancellor to the Emir of Al-", "Kharid.");
 			break;
 		}
 		stage = 0;
@@ -107,29 +107,29 @@ public final class HassanDialogue extends DialoguePlugin {
 			case 1:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can I help you? You must need some help here in the", "desert.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can I help you? You must need some help here in the", "desert.");
 					stage = 10;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "It's just too hot here. How can you stand it?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "It's just too hot here. How can you stand it?");
 					stage = 20;
 					break;
 				case 3:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you mind if I just kill your warriors?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Do you mind if I just kill your warriors?");
 					stage = 30;
 					break;
 				}
 				break;
 			case 10:
 				quest.start(player);
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I need the services of someone yes. If you are", "interested, see the spymaster, Osman. I manage the", "finances here. Come to me when you need payment.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I need the services of someone yes. If you are", "interested, see the spymaster, Osman. I manage the", "finances here. Come to me when you need payment.");
 				stage = 11;
 				break;
 			case 11:
 				end();
 				break;
 			case 20:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "We manage, in our humble way. We are a wealthy", "town and we have water. It cures many thirsts.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "We manage, in our humble way. We are a wealthy", "town and we have water. It cures many thirsts.");
 				stage = 21;
 				break;
 			case 21:
@@ -143,7 +143,7 @@ public final class HassanDialogue extends DialoguePlugin {
 				end();
 				break;
 			case 30:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You are welcome. They are not expensive. We have", "them here to stop the elite guard being bothered. They", "are a little harder to kill.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "You are welcome. They are not expensive. We have", "them here to stop the elite guard being bothered. They", "are a little harder to kill.");
 				stage = 31;
 				break;
 			case 31:

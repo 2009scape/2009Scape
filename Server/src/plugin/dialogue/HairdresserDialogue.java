@@ -52,11 +52,11 @@ public final class HairdresserDialogue extends DialoguePlugin {
 		}
 		if (args.length == 2) {
 			String man = male ? "men's" : "womens";
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Certainly " + sex + ". I cut " + man + " hair at the bargain rate of", "only 1000 gold coins. I'll even throw in a free recolour!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Certainly " + sex + ". I cut " + man + " hair at the bargain rate of", "only 1000 gold coins. I'll even throw in a free recolour!");
 			stage = 11;
 			return true;
 		}
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Good afternoon " + sex + ". In need of a haircut are we?", male ? "Perhaps a shave too?" : "");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Good afternoon " + sex + ". In need of a haircut are we?", male ? "Perhaps a shave too?" : "");
 		stage = 1;
 		return true;
 	}
@@ -76,15 +76,15 @@ public final class HairdresserDialogue extends DialoguePlugin {
 		case 2:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'd like a haircut please.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'd like a haircut please.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'd like a shave please.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'd like a shave please.");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thank you.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No thank you.");
 				stage = 30;
 				break;
 			}
@@ -92,20 +92,20 @@ public final class HairdresserDialogue extends DialoguePlugin {
 		case 10:
 			String sex = male ? "sir" : "mam";
 			String man = male ? "men's" : "womens";
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Certainly " + sex + ". I cut " + man + " hair at the bargain rate of", "only 1000 gold coins. I'll even throw in a free recolour!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Certainly " + sex + ". I cut " + man + " hair at the bargain rate of", "only 1000 gold coins. I'll even throw in a free recolour!");
 			stage = 11;
 			break;
 		case 11:
 			if (player.getInventory().contains(995, 1000)) {
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Please select the hairstyle and colour you would like", "from this brochure.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Please select the hairstyle and colour you would like", "from this brochure.");
 				stage = 14;
 			} else {
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I don't have 1000 gold coins on me...");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I don't have 1000 gold coins on me...");
 				stage = 12;
 			}
 			break;
 		case 12:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, come back when you do. I'm not running a", "charity here!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well, come back when you do. I'm not running a", "charity here!");
 			stage = 13;
 			break;
 		case 13:
@@ -125,11 +125,11 @@ public final class HairdresserDialogue extends DialoguePlugin {
 		case 100:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'd like a haircut please.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'd like a haircut please.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thank you.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No thank you.");
 				stage = 30;
 				break;
 			}
@@ -137,15 +137,15 @@ public final class HairdresserDialogue extends DialoguePlugin {
 		case 20:
 			String sex1 = male ? "sir" : "mam";
 			String man1 = male ? "men's" : "womens";
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Certainly " + sex1 + ". I cut " + man1 + " hair at the bargain rate of", "only 1000 gold coins. I'll even throw in a free recolour!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Certainly " + sex1 + ". I cut " + man1 + " hair at the bargain rate of", "only 1000 gold coins. I'll even throw in a free recolour!");
 			stage = 21;
 			break;
 		case 21:
 			if (player.getInventory().contains(995, 1000)) {
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Please select the hairstyle and colour you would like", "from this brochure.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Please select the hairstyle and colour you would like", "from this brochure.");
 				stage = 150;
 			} else {
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I don't have 1000 gold coins on me...");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I don't have 1000 gold coins on me...");
 				stage = 12;
 			}
 			break;

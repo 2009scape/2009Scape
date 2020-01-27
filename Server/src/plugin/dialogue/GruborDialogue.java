@@ -39,7 +39,7 @@ public final class GruborDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yes? What do you want?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Yes? What do you want?");
 		stage = 0;
 		return true;
 	}
@@ -54,35 +54,35 @@ public final class GruborDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Would you like your hedges trimming?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Would you like your hedges trimming?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I want to come in.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I want to come in.");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you want to trade?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Do you want to trade?");
 				stage = 30;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Eh? Don't be daft! We don't even HAVE any hehdges!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Eh? Don't be daft! We don't even HAVE any hehdges!");
 			stage = 11;
 			break;
 		case 11:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "No, go away.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "No, go away.");
 			stage = 21;
 			break;
 		case 21:
 			end();
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "No, I'm busy.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "No, I'm busy.");
 			stage = 31;
 			break;
 		case 31:

@@ -39,7 +39,7 @@ public final class DrOnglewipDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you live here too?");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Do you live here too?");
 		stage = 0;
 		return true;
 	}
@@ -48,23 +48,23 @@ public final class DrOnglewipDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh no, I come from Gnome Stronghold. I've been", "sent here by King Narnode to learn about human", "magics.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh no, I come from Gnome Stronghold. I've been", "sent here by King Narnode to learn about human", "magics.");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "So where's this Gnome Stronghold?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "So where's this Gnome Stronghold?");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "It's in the North West of the continent - a long way", "away. You should visit us there some time. The food's", "great, and the company's delightful.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "It's in the North West of the continent - a long way", "away. You should visit us there some time. The food's", "great, and the company's delightful.");
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'll try and make time for it. Sounds like a nice place.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'll try and make time for it. Sounds like a nice place.");
 			stage = 4;
 			break;
 		case 4:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, it's full of gnomes. How much nicer could it be?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well, it's full of gnomes. How much nicer could it be?");
 			stage = 5;
 			break;
 		case 5:

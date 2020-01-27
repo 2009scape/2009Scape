@@ -52,7 +52,7 @@ public final class PirateJackieDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ahoy there!");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ahoy there!");
 		stage = 0;
 		return true;
 	}
@@ -61,7 +61,7 @@ public final class PirateJackieDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ahoy!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Ahoy!");
 			stage = 1;
 			break;
 		case 1:
@@ -71,15 +71,15 @@ public final class PirateJackieDialogue extends DialoguePlugin {
 		case 2:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What is this place?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What is this place?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What do you do?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What do you do?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'd like to trade in my tickets, please.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'd like to trade in my tickets, please.");
 				stage = 30;
 				break;
 			case 4:
@@ -87,35 +87,35 @@ public final class PirateJackieDialogue extends DialoguePlugin {
 				stage = 41;
 				break;
 			case 5:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "See you later.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "See you later.");
 				stage = 50;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Welcome to the Brimhaven Agility Arena!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Welcome to the Brimhaven Agility Arena!");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "If ye want to know more talk to Cap'n Izzy, he found", "it!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "If ye want to know more talk to Cap'n Izzy, he found", "it!");
 			stage = 12;
 			break;
 		case 12:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I be the Jack o' tickets. I exchange the tickets ye", "collect in the Agility Arena for more stuff. Ye can", "obtain more agility experience or some items ye won't", "find anywhere else!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I be the Jack o' tickets. I exchange the tickets ye", "collect in the Agility Arena for more stuff. Ye can", "obtain more agility experience or some items ye won't", "find anywhere else!");
 			stage = 21;
 			break;
 		case 21:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sounds good!");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Sounds good!");
 			stage = 22;
 			break;
 		case 22:
 			end();
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Aye, ye be on the right track.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Aye, ye be on the right track.");
 			stage = 31;
 			break;
 		case 31:

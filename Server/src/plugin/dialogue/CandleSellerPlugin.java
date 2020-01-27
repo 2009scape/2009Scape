@@ -50,7 +50,7 @@ public final class CandleSellerPlugin extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Do you want a lit candle for 1000 gold?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Do you want a lit candle for 1000 gold?");
 		stage = 0;
 		return true;
 	}
@@ -69,43 +69,43 @@ public final class CandleSellerPlugin extends DialoguePlugin {
 				break;
 			}
 			if (!player.getInventory().contains(995, 1000)) {
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, I don't seem to have enough coins.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Sorry, I don't seem to have enough coins.");
 				stage = 30;
 				break;
 			}
 			if (player.getInventory().contains(995, 1000)) {
 				player.getInventory().remove(COINS);
 				player.getInventory().add(new Item(33, 1));
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Here you go then.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Here you go then.");
 				stage = 400;
 			}
 			break;
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes please.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes please.");
 				stage = 800;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "One thousand gold?!");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "One thousand gold?!");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thanks, I'd rather curse the darkness.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No thanks, I'd rather curse the darkness.");
 				stage = 30;
 				break;
 			}
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Look, you're not going to be able to survive down that", "hole without a light source.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Look, you're not going to be able to survive down that", "hole without a light source.");
 			stage = 21;
 			break;
 		case 21:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "So you could go off to the candle shop to buy one", "more cheaply. You could even make your own lantern,", "which is a lot better.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "So you could go off to the candle shop to buy one", "more cheaply. You could even make your own lantern,", "which is a lot better.");
 			stage = 22;
 			break;
 		case 22:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "But I bet you want to find out what's down there right", "now, don't you? And you can pay me 1000 gold for", "the privilege!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "But I bet you want to find out what's down there right", "now, don't you? And you can pay me 1000 gold for", "the privilege!");
 			stage = 23;
 			break;
 		case 23:
@@ -118,45 +118,45 @@ public final class CandleSellerPlugin extends DialoguePlugin {
 		case 240:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "All right, you win, I'll buy a candle.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "All right, you win, I'll buy a candle.");
 				stage = 350;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No way.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No way.");
 				stage = 30;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How do you make lanterns?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "How do you make lanterns?");
 				stage = 230;
 				break;
 			}
 			break;
 		case 230:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Out of glass. The more advanced lanterns have a", "metal component as well.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Out of glass. The more advanced lanterns have a", "metal component as well.");
 			stage = 231;
 			break;
 		case 231:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Firstly you can make a simple candle lantern out of", "glass. It's just like a candle, bu thte flame isn't exposed,", "so it's safer.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Firstly you can make a simple candle lantern out of", "glass. It's just like a candle, bu thte flame isn't exposed,", "so it's safer.");
 			stage = 232;
 			break;
 		case 232:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Then you can make an oil lamp, which is brighter but", "has an exposed flame. But if you make an iron frame", "for it you can turn it into an oil lantern.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Then you can make an oil lamp, which is brighter but", "has an exposed flame. But if you make an iron frame", "for it you can turn it into an oil lantern.");
 			stage = 233;
 			break;
 		case 233:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Finally there's a ullseye lantern. You'll need to", "make a frame out of steel and add a glass lens.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Finally there's a ullseye lantern. You'll need to", "make a frame out of steel and add a glass lens.");
 			stage = 234;
 			break;
 		case 234:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oce you've made your lamp or lantern, you'll need to", "make lamp oil for it. The chemist near Reimmington has", "a machine for that.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oce you've made your lamp or lantern, you'll need to", "make lamp oil for it. The chemist near Reimmington has", "a machine for that.");
 			stage = 235;
 			break;
 		case 235:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "For any light source, you'll need a tinderbox to light it.", "Keep your tinderbox handy in case it goes out!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "For any light source, you'll need a tinderbox to light it.", "Keep your tinderbox handy in case it goes out!");
 			stage = 236;
 			break;
 		case 236:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "But if all that's to complicated, you can buy a candle", "right here for 1000 gold!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "But if all that's to complicated, you can buy a candle", "right here for 1000 gold!");
 			stage = 237;
 			break;
 		case 237:
@@ -170,23 +170,23 @@ public final class CandleSellerPlugin extends DialoguePlugin {
 				break;
 			}
 			if (!player.getInventory().contains(995, 1000)) {
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, I don't seem to have enough coins.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Sorry, I don't seem to have enough coins.");
 				stage = 30;
 				break;
 			}
 
 			if (player.getInventory().remove(COINS)) {
 				player.getInventory().add(CANDLE);
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Here you go then.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Here you go then.");
 				stage = 400;
 			}
 			break;
 		case 400:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I should warn you, though, it can be dangerous to take", "a naked flame down there. You'd better off making", "a lantern.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I should warn you, though, it can be dangerous to take", "a naked flame down there. You'd better off making", "a lantern.");
 			stage = 401;
 			break;
 		case 401:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Okay, thanks.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Okay, thanks.");
 			stage = 402;
 			break;
 		case 402:
@@ -201,18 +201,18 @@ public final class CandleSellerPlugin extends DialoguePlugin {
 					break;
 				}
 				if (!player.getInventory().contains(995, 1000)) {
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, I don't seem to have enough coins.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Sorry, I don't seem to have enough coins.");
 					stage = 30;
 					break;
 				}
 				if (player.getInventory().remove(COINS)) {
 					player.getInventory().add(CANDLE);
-					interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Here you go then.");
+					interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Here you go then.");
 					stage = 400;
 				}
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thanks, I'd rather curse the darkness.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No thanks, I'd rather curse the darkness.");
 				stage = 291;
 				break;
 			}

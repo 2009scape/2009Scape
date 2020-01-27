@@ -40,7 +40,7 @@ public final class BrianORichardDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hi there, looking for a challenge are you?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hi there, looking for a challenge are you?");
 		stage = 1;
 		return true;
 	}
@@ -55,22 +55,22 @@ public final class BrianORichardDialogue extends DialoguePlugin {
 		case 2:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes actually, what've you got?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes actually, what've you got?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What is this place?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What is this place?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thanks.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No thanks.");
 				stage = 30;
 				break;
 			}
 			break;
 		case 10:
 			if (player.getSkills().getLevel(Skills.THIEVING) < 50) {
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Shame, I don't think I have anything for you. Train up", "your Thieving skill to at least 50 and I might be able to", "help you out.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Shame, I don't think I have anything for you. Train up", "your Thieving skill to at least 50 and I might be able to", "help you out.");
 				stage = 11;
 			} else {
 
@@ -80,11 +80,11 @@ public final class BrianORichardDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ah welcome to my humble home, well actually it belongs", "to mummsie but she's getting on a bit so I look after", "the place for her.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Ah welcome to my humble home, well actually it belongs", "to mummsie but she's getting on a bit so I look after", "the place for her.");
 			stage = 21;
 			break;
 		case 21:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "So are you interested in a challenge?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "So are you interested in a challenge?");
 			stage = 22;
 			break;
 		case 22:
@@ -94,18 +94,18 @@ public final class BrianORichardDialogue extends DialoguePlugin {
 		case 23:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes actually, what've you got?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes actually, what've you got?");
 				stage = 24;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, thanks.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No, thanks.");
 				stage = 25;
 				break;
 			}
 			break;
 		case 24:
 			if (player.getSkills().getLevel(Skills.THIEVING) < 50) {
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Shame, I don't think I have anything for you. Train up", "your Thieving skill to at least 50 and I might be able to", "help you out.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Shame, I don't think I have anything for you. Train up", "your Thieving skill to at least 50 and I might be able to", "help you out.");
 				stage = 25;
 			} else {
 

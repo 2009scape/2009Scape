@@ -43,15 +43,15 @@ public final class AlTheCamelDialogue extends DialoguePlugin {
 		int rand = RandomFunction.random(1, 3);
 		switch (rand) {
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Mmm... Looks like that camel would make a nice kebab.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Mmm... Looks like that camel would make a nice kebab.");
 			stage = 0;
 			break;
 		case 2:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "If I go near that camel, it'll probably bite my hand off.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "If I go near that camel, it'll probably bite my hand off.");
 			stage = 0;
 			break;
 		case 3:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Mmm... Looks like that camel would make a nice kebab.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Mmm... Looks like that camel would make a nice kebab.");
 			stage = 0;
 			break;
 		}

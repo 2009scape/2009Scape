@@ -47,7 +47,7 @@ public class ScoolboyMuseumDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Can you find my teacher? I need the toilet!");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Can you find my teacher? I need the toilet!");
 		stage = 0;
 		return true;
 	}

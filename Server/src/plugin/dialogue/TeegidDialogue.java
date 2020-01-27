@@ -32,15 +32,15 @@ public class TeegidDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yeah. What is it to you?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Yeah. What is it to you?");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Nice day for it.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Nice day for it.");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Suppose it is.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Suppose it is.");
 			stage = 3;
 			break;
 		case 3:
@@ -61,7 +61,7 @@ public class TeegidDialogue extends DialoguePlugin {
 		npc = (NPC) args[0];
 		npc.setDirection(Direction.SOUTH);
 		npc.faceLocation(Location.create(2923, 3418, 0));
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "So, you're doing laundry, eh?");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "So, you're doing laundry, eh?");
 		stage = 0;
 		npc.faceLocation(Location.create(2923, 3418, 0));
 		return true;

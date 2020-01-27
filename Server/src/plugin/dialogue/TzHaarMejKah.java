@@ -30,7 +30,7 @@ public class TzHaarMejKah extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You want help JalYt-Ket-" + player.getUsername() + "?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "You want help JalYt-Ket-" + player.getUsername() + "?");
 		stage = 0;
 		return true;
 	}
@@ -45,19 +45,19 @@ public class TzHaarMejKah extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What is this place?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What is this place?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Who's the current champion?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Who's the current champion?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What did you call me?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What did you call me?");
 				stage = 30;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No I'm fine thanks.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No I'm fine thanks.");
 				stage = 40;
 				break;
 
@@ -67,19 +67,19 @@ public class TzHaarMejKah extends DialoguePlugin {
 			end();
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Are you not JalYt-Ket?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Are you not JalYt-Ket?");
 			stage = 31;
 			break;
 		case 31:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I guess so...");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I guess so...");
 			stage = 32;
 			break;
 		case 32:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well then, no problems.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well then, no problems.");
 			stage = 13;
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "This is the fight pit, TzHaar-Xil made it for their sport", "but many JalYt come here to fight too.", "If you are wanting to fight then enter the cage, you", "will be summoned when the next round is ready to begin.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "This is the fight pit, TzHaar-Xil made it for their sport", "but many JalYt come here to fight too.", "If you are wanting to fight then enter the cage, you", "will be summoned when the next round is ready to begin.");
 			stage = 11;
 			break;
 		case 11:
@@ -89,11 +89,11 @@ public class TzHaarMejKah extends DialoguePlugin {
 		case 12:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Are there any rules?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Are there any rules?");
 				stage = 14;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok thanks.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ok thanks.");
 				stage = 13;
 				break;
 			}
@@ -102,7 +102,7 @@ public class TzHaarMejKah extends DialoguePlugin {
 			end();
 			break;
 		case 14:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "No rules, you use whatever you want. Last person", "standing wins and is declared champion, they stay in", "the pit for the next fight.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "No rules, you use whatever you want. Last person", "standing wins and is declared champion, they stay in", "the pit for the next fight.");
 			stage = 15;
 			break;
 		case 15:
@@ -112,36 +112,36 @@ public class TzHaarMejKah extends DialoguePlugin {
 		case 16:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do I win anything?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Do I win anything?");
 				stage = 17;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sounds good.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Sounds good.");
 				stage = 13;
 				break;
 			}
 			break;
 		case 17:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You ask a lot of questions.", "Champion gets TokKul as reward, but more fights the more", "TokKul they get.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "You ask a lot of questions.", "Champion gets TokKul as reward, but more fights the more", "TokKul they get.");
 			stage = 18;
 			break;
 		case 18:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "...");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "...");
 			stage = 19;
 			break;
 		case 19:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Before you ask, TokKul is like your coins.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Before you ask, TokKul is like your coins.");
 			stage = 400;
 			break;
 		case 400:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Gold is like you JalYt, soft and easily broken, we use", "hard rock forged in fire like TzHaar!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Gold is like you JalYt, soft and easily broken, we use", "hard rock forged in fire like TzHaar!");
 			stage = 401;
 			break;
 		case 401:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ah that would be " + npc.getAttribute("fp_champn", "JalYt-Ket-Emperor"));
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Ah that would be " + npc.getAttribute("fp_champn", "JalYt-Ket-Emperor"));
 			stage = 21;
 			break;
 		case 21:

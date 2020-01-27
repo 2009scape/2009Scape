@@ -39,7 +39,7 @@ public final class DrokarDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello, how are you?");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Hello, how are you?");
 		stage = 0;
 		return true;
 	}
@@ -48,11 +48,11 @@ public final class DrokarDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Packages, packages and more!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Packages, packages and more!");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ugh.. Okay, have a good day.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ugh.. Okay, have a good day.");
 			stage = 2;
 			break;
 		case 2:

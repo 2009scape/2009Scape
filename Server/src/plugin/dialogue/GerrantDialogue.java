@@ -39,7 +39,7 @@ public final class GerrantDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Welcome! You can buy fishing equipment at my store.", "We'll also buy anything you catch off you.");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Welcome! You can buy fishing equipment at my store.", "We'll also buy anything you catch off you.");
 		stage = 0;
 		return true;
 	}
@@ -54,11 +54,11 @@ public final class GerrantDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Let's see what you've got then.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Let's see what you've got then.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, I'm not interested.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Sorry, I'm not interested.");
 				stage = 20;
 				break;
 

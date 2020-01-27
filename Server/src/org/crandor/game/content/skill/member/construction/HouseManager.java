@@ -180,7 +180,7 @@ public final class HouseManager implements SavingModule {
 				if (hasServant()){
 					spawnServant();
 					if (servant.isGreet()){
-						player.getDialogueInterpreter().sendDialogues(servant.getType().getId(), servant.getType().getId() == 4243 ? FacialExpression.NO_EXPRESSION : null, "Welcome.");
+						player.getDialogueInterpreter().sendDialogues(servant.getType().getId(), servant.getType().getId() == 4243 ? FacialExpression.HALF_GUILTY : null, "Welcome.");
 					}
 				}
 //				player.getInterfaceManager().switchWindowMode(1);

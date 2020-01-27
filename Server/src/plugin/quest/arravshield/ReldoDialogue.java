@@ -160,7 +160,7 @@ public class ReldoDialogue extends DialoguePlugin {
 		if (stage == -1) {
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello stranger.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hello stranger.");
 				stage = 0;
 				break;
 			case 2:
@@ -240,48 +240,48 @@ public class ReldoDialogue extends DialoguePlugin {
 			case 1:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm in search of a quest.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'm in search of a quest.");
 					stage = 10;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you have anything to trade?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Do you have anything to trade?");
 					stage = 20;
 					break;
 				case 3:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What do you do?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What do you do?");
 					stage = 30;
 					break;
 				}
 				break;
 			case 30:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I am the palace librarian.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I am the palace librarian.");
 				stage = 31;
 				break;
 			case 31:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ah. That's why you're in the library then.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ah. That's why you're in the library then.");
 				stage = 32;
 				break;
 			case 32:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yes.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Yes.");
 				stage = 33;
 				break;
 			case 33:
 				end();
 				break;
 			case 20:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Only knowledge.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Only knowledge.");
 				stage = 21;
 				break;
 			case 21:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How much do you want for that then?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "How much do you want for that then?");
 				stage = 22;
 				break;
 			case 22:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "No, sorry, that was just my little joke. I'm not the", "trading type.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "No, sorry, that was just my little joke. I'm not the", "trading type.");
 				stage = 23;
 				break;
 			case 23:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ah well.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ah well.");
 				stage = 24;
 				break;
 			case 24:
@@ -348,44 +348,44 @@ public class ReldoDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you have anything to trade?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Do you have anything to trade?");
 				stage = 20;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What do you do?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What do you do?");
 				stage = 30;
 				break;
 			}
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I am the palace librarian.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I am the palace librarian.");
 			stage = 31;
 			break;
 		case 31:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ah. That's why you're in the library then.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ah. That's why you're in the library then.");
 			stage = 32;
 			break;
 		case 32:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yes.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Yes.");
 			stage = 33;
 			break;
 		case 33:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Only knowledge.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Only knowledge.");
 			stage = 21;
 			break;
 		case 21:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How much do you want for that then?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "How much do you want for that then?");
 			stage = 22;
 			break;
 		case 22:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "No, sorry, that was just my little joke. I'm not the", "trading type.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "No, sorry, that was just my little joke. I'm not the", "trading type.");
 			stage = 23;
 			break;
 		case 23:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ah well.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ah well.");
 			stage = 24;
 			break;
 		case 24:
@@ -407,83 +407,83 @@ public class ReldoDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you have anything to trade?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Do you have anything to trade?");
 				stage = 20;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What do you do?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What do you do?");
 				stage = 30;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What do you know about Imcando dwarves?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What do you know about Imcando dwarves?");
 				stage = 40;
 				break;
 			}
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I am the palace librarian.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I am the palace librarian.");
 			stage = 31;
 			break;
 		case 31:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ah. That's why you're in the library then.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ah. That's why you're in the library then.");
 			stage = 32;
 			break;
 		case 32:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yes.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Yes.");
 			stage = 33;
 			break;
 		case 33:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Only knowledge.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Only knowledge.");
 			stage = 21;
 			break;
 		case 21:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How much do you want for that then?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "How much do you want for that then?");
 			stage = 22;
 			break;
 		case 22:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "No, sorry, that was just my little joke. I'm not the", "trading type.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "No, sorry, that was just my little joke. I'm not the", "trading type.");
 			stage = 23;
 			break;
 		case 23:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ah well.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ah well.");
 			stage = 24;
 			break;
 		case 24:
 			end();
 			break;
 		case 40:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "The Imcando dwarves, you say?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "The Imcando dwarves, you say?");
 			stage = 41;
 			break;
 		case 41:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ah yes... for many hundreds of years they were the", "world's most skilled smiths. They used secret smithing", "knowledge passed down from generation to generation.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Ah yes... for many hundreds of years they were the", "world's most skilled smiths. They used secret smithing", "knowledge passed down from generation to generation.");
 			stage = 42;
 			break;
 		case 42:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Unfortunately, about a century ago, the once thriving", "race was wiped out during the barbarian invasions of", "that time.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Unfortunately, about a century ago, the once thriving", "race was wiped out during the barbarian invasions of", "that time.");
 			stage = 43;
 			break;
 		case 43:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "So are there any Imcando left at all?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "So are there any Imcando left at all?");
 			stage = 44;
 			break;
 		case 44:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I believe a few of them survived, but with the bulk of", "their population destroyed their numbers have dwindled", "even further.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I believe a few of them survived, but with the bulk of", "their population destroyed their numbers have dwindled", "even further.");
 			stage = 45;
 			break;
 		case 45:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I believe I remember a couple living in Asgarnia near", "the cliffs on the Asgarnian southern peninusla, but they", "DO tend to keep to themselves.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I believe I remember a couple living in Asgarnia near", "the cliffs on the Asgarnian southern peninusla, but they", "DO tend to keep to themselves.");
 			stage = 46;
 			break;
 		case 46:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "They tend not to tell people that they're the", "descendants of the Imcando, which is why people think", "that the tribe has died out totally, but you may well", "have more luck talking to them if you bring them some");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "They tend not to tell people that they're the", "descendants of the Imcando, which is why people think", "that the tribe has died out totally, but you may well", "have more luck talking to them if you bring them some");
 			stage = 47;
 			break;
 		case 47:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "redberry pie. They REALLY like redberry pie.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "redberry pie. They REALLY like redberry pie.");
 			stage = 48;
 			break;
 		case 48:

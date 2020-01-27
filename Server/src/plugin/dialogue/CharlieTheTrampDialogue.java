@@ -49,7 +49,7 @@ public class CharlieTheTrampDialogue extends DialoguePlugin {
 		quest = player.getQuestRepository().getQuest("Shield of Arrav");
 		switch (quest.getStage(player)) {
 		default:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Spare some change guv?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Spare some change guv?");
 			stage = 0;
 			break;
 		}
@@ -79,44 +79,44 @@ public class CharlieTheTrampDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Who are you?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Who are you?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, I haven't got any.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Sorry, I haven't got any.");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Go get a job!");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Go get a job!");
 				stage = 30;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok. Here you go.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ok. Here you go.");
 				stage = 40;
 				break;
 			case 5:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Is there anything down this alleyway?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Is there anything down this alleyway?");
 				stage = 50;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Charles. Charles E. Trampin' at your service. Now, about", "that change you were going to give me...");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Charles. Charles E. Trampin' at your service. Now, about", "that change you were going to give me...");
 			stage = 0;
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Thanks anyways!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Thanks anyways!");
 			stage = 21;
 			break;
 		case 21:
 			end();
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You startin? I hope your nose falls off!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "You startin? I hope your nose falls off!");
 			stage = 21;
 			break;
 		case 40:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hey, thanks alot!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hey, thanks alot!");
 			stage = 41;
 			break;
 		case 41:
@@ -126,11 +126,11 @@ public class CharlieTheTrampDialogue extends DialoguePlugin {
 		case 42:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No problem.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No problem.");
 				stage = 180;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "So...don't I get some sort of quest hint or something now?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "So...don't I get some sort of quest hint or something now?");
 				stage = 190;
 				break;
 			}
@@ -143,11 +143,11 @@ public class CharlieTheTrampDialogue extends DialoguePlugin {
 				player.getPacketDispatch().sendMessage("You need one coin to give away.");
 			break;
 		case 190:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Huh? What do you mean? That wasn't why", " I asked you for money.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Huh? What do you mean? That wasn't why", " I asked you for money.");
 			stage = 191;
 			break;
 		case 191:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I just need to eat...");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I just need to eat...");
 			stage = 192;
 			break;
 		case 192:
@@ -207,7 +207,7 @@ public class CharlieTheTrampDialogue extends DialoguePlugin {
 				stage = 51;
 				break;
 			}
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Nope, nothing at all.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Nope, nothing at all.");
 			stage = 192;
 			break;
 		case 51:

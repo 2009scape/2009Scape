@@ -199,7 +199,7 @@ public class DemonSlayer extends Quest {
 			quest = player.getQuestRepository().getQuest("Demon Slayer");
 			switch (quest.getStage(player)) {
 			default:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What are you doing up here? Only the palace guards", "are allowed up here.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "What are you doing up here? Only the palace guards", "are allowed up here.");
 				stage = 0;
 				break;
 			}
@@ -229,21 +229,21 @@ public class DemonSlayer extends Quest {
 			case 1:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I am one of the palace guards.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I am one of the palace guards.");
 					stage = 10;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What about the King? Surely you'd let him up here.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What about the King? Surely you'd let him up here.");
 					stage = 20;
 					break;
 				case 3:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, I know but this is important.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes, I know but this is important.");
 					stage = 30;
 					break;
 				}
 				break;
 			case 30:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ok, I'm listening. Tell me what's so important.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Ok, I'm listening. Tell me what's so important.");
 				stage = 31;
 				break;
 			case 31:
@@ -252,7 +252,7 @@ public class DemonSlayer extends Quest {
 					stage = 600;
 					return;
 				}
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Erm... I forgot.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Erm... I forgot.");
 				stage = 32;
 				break;
 			case 32:
@@ -262,11 +262,11 @@ public class DemonSlayer extends Quest {
 				end();
 				break;
 			case 20:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, yes I suppose we'd let him up, He doesn't", "generally want to come up here, but if he did want to,", "he could.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well, yes I suppose we'd let him up, He doesn't", "generally want to come up here, but if he did want to,", "he could.");
 				stage = 21;
 				break;
 			case 10:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "No, you're not! I know all the palace guards.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "No, you're not! I know all the palace guards.");
 				stage = 11;
 				break;
 			case 11:

@@ -30,7 +30,7 @@ public class NikitiaDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Don't talk to me again if you value your life!");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Don't talk to me again if you value your life!");
 		stage = 0;
 		return true;
 	}

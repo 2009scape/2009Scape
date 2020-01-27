@@ -40,7 +40,7 @@ public final class ResearcherDialogue extends DialoguePlugin {
     @Override
     public boolean open(Object... args) {
 	npc = (NPC) args[0];
-	interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello.");
+	interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hello.");
 	stage = 0;
 	return true;
     }

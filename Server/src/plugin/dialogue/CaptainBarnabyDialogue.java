@@ -46,7 +46,7 @@ public final class CaptainBarnabyDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Do you want to go on a trip to Brimhaven?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Do you want to go on a trip to Brimhaven?");
 		stage = 0;
 		return true;
 	}
@@ -55,7 +55,7 @@ public final class CaptainBarnabyDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "The trip will cost you 30 coins.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "The trip will cost you 30 coins.");
 			stage = 1;
 			break;
 		case 1:
@@ -65,7 +65,7 @@ public final class CaptainBarnabyDialogue extends DialoguePlugin {
 		case 2:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes please.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes please.");
 				stage = 10;
 				break;
 			case 2:

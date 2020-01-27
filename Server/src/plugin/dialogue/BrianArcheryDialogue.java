@@ -39,7 +39,7 @@ public final class BrianArcheryDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Would you like to buy some archery equipment?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Would you like to buy some archery equipment?");
 		stage = 0;
 		return true;
 	}
@@ -54,7 +54,7 @@ public final class BrianArcheryDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, thanks, I've got all the archery equipment I need.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No, thanks, I've got all the archery equipment I need.");
 				stage = 10;
 				break;
 			case 2:
@@ -64,7 +64,7 @@ public final class BrianArcheryDialogue extends DialoguePlugin {
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Okay. Fare well on your travels.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Okay. Fare well on your travels.");
 			stage = 11;
 			break;
 		case 11:

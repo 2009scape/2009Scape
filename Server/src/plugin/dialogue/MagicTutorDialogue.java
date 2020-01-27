@@ -129,41 +129,41 @@ public final class MagicTutorDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you teach me the basics please?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you teach me the basics please?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Teach me about making runes.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Teach me about making runes.");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Goodbye.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Goodbye.");
 				stage = 30;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You can cast different spells according to what runes", "you have in your inventory. To start off with you'll", "need mind runes and air runes. These will allow you to", "cast Wind Strike like you did in the tutorial.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "You can cast different spells according to what runes", "you have in your inventory. To start off with you'll", "need mind runes and air runes. These will allow you to", "cast Wind Strike like you did in the tutorial.");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Use the spell book icon in the top right of the control", "panel to see what spells you can cast. If you have the", "correct runes, the spell will light up.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Use the spell book icon in the top right of the control", "panel to see what spells you can cast. If you have the", "correct runes, the spell will light up.");
 			stage = 12;
 			break;
 		case 12:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Nemarti, the Ranged Combat tutor and I both give out", "items every 30 minutes, however you must choose", "wether you want runes or ranged equipment. To", "claim runes, right-click on me and choose Claim, to claim");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Nemarti, the Ranged Combat tutor and I both give out", "items every 30 minutes, however you must choose", "wether you want runes or ranged equipment. To", "claim runes, right-click on me and choose Claim, to claim");
 			stage = 13;
 			break;
 		case 13:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "ranged equipment right-click on the Ranged Combat", "tutor and select Claim.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "ranged equipment right-click on the Ranged Combat", "tutor and select Claim.");
 			stage = 14;
 			break;
 		case 14:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "When you have the sepll available, click on it once, then", "click on your target. A good target would be a monster", "that is below your combat level.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "When you have the sepll available, click on it once, then", "click on your target. A good target would be a monster", "that is below your combat level.");
 			stage = 15;
 			break;
 		case 15:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Try rats in the castle or if you're feeling brave, the", "goblins to the west of here have been causing a", "nuisance of themselves.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Try rats in the castle or if you're feeling brave, the", "goblins to the west of here have been causing a", "nuisance of themselves.");
 			stage = 16;
 			break;
 		case 16:
@@ -171,7 +171,7 @@ public final class MagicTutorDialogue extends DialoguePlugin {
 			stage = 1;
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'd talk to the Duke of Lumbridge if I were you. I", "hear he has an interesting artifact that might just have", "something to do with Runecrafting. I expect there wil", "be a quest involved too!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I'd talk to the Duke of Lumbridge if I were you. I", "hear he has an interesting artifact that might just have", "something to do with Runecrafting. I expect there wil", "be a quest involved too!");
 			stage = 21;
 			break;
 		case 21:

@@ -50,7 +50,7 @@ public final class GrandpaJackPlguin extends DialoguePlugin {
 		npc = (NPC) args[0];
 		donatorZone = player.getZoneMonitor().isInZone("Donator Zone");
 		if (!donatorZone) {
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello young man!", "Come to visit old Grandpa Jack? I can tell ye stories", "for sure. I used to be the best fisherman these parts", "have seen!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hello young man!", "Come to visit old Grandpa Jack? I can tell ye stories", "for sure. I used to be the best fisherman these parts", "have seen!");
 			stage = 1;
 		} else {
 			npc("Welcome, " + player.getUsername() + ". Before you is the wonderful land", "of the donators. Here at your disposal is access to", "an overubandance of resources. Your support for", "Keldagrim has not gone unrecognized.");
@@ -63,7 +63,7 @@ public final class GrandpaJackPlguin extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, just passing through.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Sorry, just passing through.");
 			stage = 2;
 			break;
 		case 2:

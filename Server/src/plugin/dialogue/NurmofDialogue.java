@@ -30,7 +30,7 @@ public class NurmofDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Greetings and welcome to my pickaxe shop. Do you", "want to buy my premium quality pickaxes?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Greetings and welcome to my pickaxe shop. Do you", "want to buy my premium quality pickaxes?");
 		stage = 0;
 		return true;
 	}

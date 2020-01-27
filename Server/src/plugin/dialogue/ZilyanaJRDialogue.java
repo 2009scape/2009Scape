@@ -41,10 +41,10 @@ public final class ZilyanaJRDialogue extends DialoguePlugin {
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
 		if(player.getInventory().containsItem(new Item(11698, 1)) || (player.getEquipment().get(3) != null && player.getEquipment().get(3).getId() == 11698)){
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I FOUND THE GODSWORD!");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I FOUND THE GODSWORD!");
 			stage = 0;
 		} else {
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "FIND THE GODSWORD!");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "FIND THE GODSWORD!");
 			stage = 1;
 		}
 		return true;

@@ -39,7 +39,7 @@ public final class JatixDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello, adventurer.");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hello, adventurer.");
 		stage = 0;
 		return true;
 	}
@@ -48,11 +48,11 @@ public final class JatixDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Hello.");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What are you selling?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What are you selling?");
 			stage = 2;
 			break;
 		case 2:

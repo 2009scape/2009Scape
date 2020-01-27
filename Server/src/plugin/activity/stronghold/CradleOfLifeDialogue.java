@@ -83,14 +83,14 @@ public final class CradleOfLifeDialogue extends DialoguePlugin {
 		case 5:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'll take the colourful ones!");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'll take the colourful ones!");
 				player.getInventory().add(ITEMS[0]);
 				player.getEmoteManager().unlock(Emotes.STOMP);
 				stage = 6;
 				player.getSavedData().getGlobalData().getStrongHoldRewards()[3] = true;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'll take the fighting ones!");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'll take the fighting ones!");
 				player.getInventory().add(ITEMS[1]);
 				player.getEmoteManager().unlock(Emotes.STOMP);
 				player.getSavedData().getGlobalData().getStrongHoldRewards()[3] = true;
@@ -118,11 +118,11 @@ public final class CradleOfLifeDialogue extends DialoguePlugin {
 		case 200:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, I'd like the other pair instead please!");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes, I'd like the other pair instead please!");
 				stage = 800;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thanks, I'll keep these!");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No thanks, I'll keep these!");
 				stage = 900;
 				break;
 			}

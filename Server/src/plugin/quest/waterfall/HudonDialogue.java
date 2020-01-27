@@ -46,7 +46,7 @@ public class HudonDialogue extends DialoguePlugin {
 			}
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Your mum sent me to find you.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Your mum sent me to find you.");
 			stage = 2;
 			break;
 		case 2:
@@ -54,7 +54,7 @@ public class HudonDialogue extends DialoguePlugin {
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Where is this treasure you talk of?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Where is this treasure you talk of?");
 			stage = 4;
 			break;
 		case 4:
@@ -62,7 +62,7 @@ public class HudonDialogue extends DialoguePlugin {
 			stage = 5;
 			break;
 		case 5:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Maybe I could help.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Maybe I could help.");
 			stage = 6;
 			break;
 		case 6:
@@ -79,7 +79,7 @@ public class HudonDialogue extends DialoguePlugin {
 			}
 			break;
 		case 21:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I hate to break it to you kid, but I found the treasure.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I hate to break it to you kid, but I found the treasure.");
 			stage = 22;
 			break;
 		case 22:
@@ -87,7 +87,7 @@ public class HudonDialogue extends DialoguePlugin {
 			stage = 23;
 			break;
 		case 23:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No.");
 			stage = 24;
 			break;
 		case 24:
@@ -95,7 +95,7 @@ public class HudonDialogue extends DialoguePlugin {
 			stage = 25;
 			break;
 		case 25:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Life ain't fair kid.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Life ain't fair kid.");
 			stage = 100;
 			break;
 		}
@@ -111,10 +111,10 @@ public class HudonDialogue extends DialoguePlugin {
 	public boolean open(Object... args) {
 		final Quest quest = player.getQuestRepository().getQuest(WaterFall.NAME);
 		if (quest.getStage(player) >= 20) {
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "So you're still here.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "So you're still here.");
 			stage = 20;
 		} else {
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello son, are you okay? You need help?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Hello son, are you okay? You need help?");
 			stage = 0;
 		}
 		return true;

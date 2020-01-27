@@ -31,19 +31,19 @@ public class MuseumGuardVarrockDialogue extends DialoguePlugin {
 
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, how do I get in?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes, how do I get in?");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, the main entrance is 'round the front. Just head", "west then north slightly, you can't miss it!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well, the main entrance is 'round the front. Just head", "west then north slightly, you can't miss it!");
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What about these doors?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What about these doors?");
 			stage = 4;
 			break;
 		case 4:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "They're primarily for the workmen bringing finds from the", "Dig Site, but you can go through if you want.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "They're primarily for the workmen bringing finds from the", "Dig Site, but you can go through if you want.");
 			stage = 5;
 			break;
 		case 5:
@@ -62,7 +62,7 @@ public class MuseumGuardVarrockDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello there. Come to see the new museum?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hello there. Come to see the new museum?");
 		stage = 0;
 		return true;
 	}

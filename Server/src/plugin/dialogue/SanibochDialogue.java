@@ -40,7 +40,7 @@ public class SanibochDialogue extends DialoguePlugin {
 		npc = (NPC) args[0];
 		stage = args.length > 1 ? (Integer) args[1] : 0;
 		if (stage == 0) {
-			interpreter.sendDialogues(1595, FacialExpression.NO_EXPRESSION, "Good day to you bwana.");
+			interpreter.sendDialogues(1595, FacialExpression.HALF_GUILTY, "Good day to you bwana.");
 		} else {
 			handle(0, 0);
 		}

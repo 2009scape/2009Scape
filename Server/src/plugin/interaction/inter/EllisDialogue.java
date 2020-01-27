@@ -41,7 +41,7 @@ public final class EllisDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Greetings friend I am a manufacturer of leather.");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Greetings friend I am a manufacturer of leather.");
 		stage = 0;
 		return true;
 	}
@@ -68,32 +68,32 @@ public final class EllisDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can I buy some leather then?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can I buy some leather then?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Leather is rather weak stuff.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Leather is rather weak stuff.");
 				stage = 3000;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I make leather from animal hides. Bring me some cowhides", "and one gold coin per hide, and I'll tan them into soft", "leather for you.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I make leather from animal hides. Bring me some cowhides", "and one gold coin per hide, and I'll tan them into soft", "leather for you.");
 			stage = 2000;
 			break;
 		case 2000:
 			end();
 			break;
 		case 3000:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Normal leather may be quite weak, but it's very cheap - I", "make it from cowhides for only 1 gp per hide - and it's so", "easy to craft that anyone can work with it.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Normal leather may be quite weak, but it's very cheap - I", "make it from cowhides for only 1 gp per hide - and it's so", "easy to craft that anyone can work with it.");
 			stage = 3001;
 			break;
 		case 3001:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Alernatively you could try hard leather. It's not so easy", "to craft, but I only charge 3 gp per cowhide to prepare it,", "and it makes much sturdier armour.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Alernatively you could try hard leather. It's not so easy", "to craft, but I only charge 3 gp per cowhide to prepare it,", "and it makes much sturdier armour.");
 			stage = 3002;
 			break;
 		case 3002:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Thanks; I'll bear it in mind.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Thanks; I'll bear it in mind.");
 			stage = 3003;
 			break;
 		case 3003:

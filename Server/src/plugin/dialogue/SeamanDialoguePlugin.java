@@ -46,7 +46,7 @@ public class SeamanDialoguePlugin extends DialoguePlugin {
 		} else {
 			player.getPacketDispatch().sendMessage("You may only use the Pay-fare option after completing Pirate's Treasure.");
 		}
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Do you want to go on a trip to Karamja?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Do you want to go on a trip to Karamja?");
 		stage = 0;
 		return true;
 	}
@@ -55,7 +55,7 @@ public class SeamanDialoguePlugin extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "The trip will cost you 30 coins.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "The trip will cost you 30 coins.");
 			stage = 1;
 			break;
 		case 1:
@@ -65,11 +65,11 @@ public class SeamanDialoguePlugin extends DialoguePlugin {
 		case 2:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, please.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes, please.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, thank you.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No, thank you.");
 				stage = 20;
 				break;
 
@@ -91,7 +91,7 @@ public class SeamanDialoguePlugin extends DialoguePlugin {
 	public void pay() {
 		end();
 		if (!player.getInventory().contains(995, 30)) {
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, I don't have enough coins for that.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Sorry, I don't have enough coins for that.");
 			stage = 20;
 		} else {
 			end();

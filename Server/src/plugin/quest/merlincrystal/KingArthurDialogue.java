@@ -51,10 +51,10 @@ public final class KingArthurDialogue extends DialoguePlugin {
 			return true;
 		}
 		if (quest.getStage(player) <= 0) {
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Welcome to my court. I am King Arthur.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Welcome to my court. I am King Arthur.");
 			stage = 0;
 		} else {
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "If you're having any troubles talk to the other", "knights around the room.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "If you're having any troubles talk to the other", "knights around the room.");
 			stage = 9;
 		}
 		return true;
@@ -69,19 +69,19 @@ public final class KingArthurDialogue extends DialoguePlugin {
 			quest.finish(player);
 			break;
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I want to become a knight of the round table!");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I want to become a knight of the round table!");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, in that case I think you need to go on a quest to", "prove yourself worthy.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well, in that case I think you need to go on a quest to", "prove yourself worthy.");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "My knights all appreciate a good quest.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "My knights all appreciate a good quest.");
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(npc, FacialExpression.DISGUSTED_TWO, "Unfortunately, our current quest is to rescue Merlin.");
+			interpreter.sendDialogues(npc, FacialExpression.DISGUSTED, "Unfortunately, our current quest is to rescue Merlin.");
 			stage = 4;
 			break;
 		case 4:
@@ -89,19 +89,19 @@ public final class KingArthurDialogue extends DialoguePlugin {
 			stage = 5;
 			break;
 		case 5:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I will see what I can do then.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I will see what I can do then.");
 			quest.start(player);
 			stage = 6;
 			break;
 		case 6:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Talk to my knights if you need any help.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Talk to my knights if you need any help.");
 			stage = 7;
 			break;
 		case 7:
 			end();
 			break;
 		case 8:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "test");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "test");
 			break;
 		case 9:
 			end();

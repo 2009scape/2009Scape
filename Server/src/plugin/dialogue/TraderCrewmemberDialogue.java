@@ -56,41 +56,41 @@ public class TraderCrewmemberDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, who are you?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes, who are you?");
 				stage = 100;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, I would like to charter a ship.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes, I would like to charter a ship.");
 				stage = 2000;
 				break;
 			}
 			break;
 		case 100:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm one of the Trader Stan's crew; we are all part of the", "largest fleet of trading and sailing vessels to ever sail the", "seven seas.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I'm one of the Trader Stan's crew; we are all part of the", "largest fleet of trading and sailing vessels to ever sail the", "seven seas.");
 			stage = 101;
 			break;
 		case 101:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "If you want to get to a port in a hurry then you can", "charter one of our ships to take you there - if the price", "is right...");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "If you want to get to a port in a hurry then you can", "charter one of our ships to take you there - if the price", "is right...");
 			stage = 102;
 			break;
 		case 102:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "So, where exactly can I go with your ships?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "So, where exactly can I go with your ships?");
 			stage = 103;
 			break;
 		case 103:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "We run ships from Port Phasmatys over to Port Tyras,", "stopping at Port Sarim, Catherby, Jaramja,", "the Shipyard and Port Khazard.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "We run ships from Port Phasmatys over to Port Tyras,", "stopping at Port Sarim, Catherby, Jaramja,", "the Shipyard and Port Khazard.");
 			stage = 104;
 			break;
 		case 104:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Wow, that's a lot of ports. I take it you have some exotic", "stuff to trade?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Wow, that's a lot of ports. I take it you have some exotic", "stuff to trade?");
 			stage = 105;
 			break;
 		case 105:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "We certainly do! We have acces to items", "bought and sold from around the world.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "We certainly do! We have acces to items", "bought and sold from around the world.");
 			stage = 106;
 			break;
 		case 106:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Would you like to take a look?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Would you like to take a look?");
 			stage = 107;
 			break;
 		case 107:
@@ -100,7 +100,7 @@ public class TraderCrewmemberDialogue extends DialoguePlugin {
 		case 108:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes.");
 				stage = 1000;
 				break;
 			case 2:
@@ -114,7 +114,7 @@ public class TraderCrewmemberDialogue extends DialoguePlugin {
 			npc.openShop(player);
 			break;
 		case 2000:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Certainly sir, where would you like to go?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Certainly sir, where would you like to go?");
 			stage = 2001;
 			break;
 		case 2001:
@@ -176,7 +176,7 @@ public class TraderCrewmemberDialogue extends DialoguePlugin {
 			stage = 3000;
 			return true;
 		}
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Can I help you?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Can I help you?");
 		stage = 0;
 		return true;
 	}

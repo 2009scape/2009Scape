@@ -259,7 +259,7 @@ public final class FurClothingInterface extends ComponentPlugin {
 		@Override
 		public boolean open(Object... args) {
 			npc = (NPC) args[0];
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Now you look like someone who goes to a lot of fancy", "dress parties.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Now you look like someone who goes to a lot of fancy", "dress parties.");
 			stage = 0;
 			return true;
 		}
@@ -268,15 +268,15 @@ public final class FurClothingInterface extends ComponentPlugin {
 		public boolean handle(int interfaceId, int buttonId) {
 			switch (stage) {
 			case 0:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Errr....what are you saying exactly?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Errr....what are you saying exactly?");
 				stage = 1;
 				break;
 			case 1:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm just saying that perhaps you would like to persure my", "selection of garments.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I'm just saying that perhaps you would like to persure my", "selection of garments.");
 				stage = 2;
 				break;
 			case 2:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Or, if that doesn't interest you, then maybe you have", "something else to offer? I'm always on the lookout for", "interesting or unusual new materials.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Or, if that doesn't interest you, then maybe you have", "something else to offer? I'm always on the lookout for", "interesting or unusual new materials.");
 				stage = 3;
 				break;
 			case 3:
@@ -287,19 +287,19 @@ public final class FurClothingInterface extends ComponentPlugin {
 
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Okay, let's see what you've got, then.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Okay, let's see what you've got, then.");
 					stage = 10;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I think I might just leave the persuing for now, thanks.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I think I might just leave the persuing for now, thanks.");
 					stage = 100;
 					break;
 				case 3:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you make clothing suitable for hunting?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you make clothing suitable for hunting?");
 					stage = 30;
 					break;
 				case 4:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What sort of unusual materials did you have in mind?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What sort of unusual materials did you have in mind?");
 					stage = 41;
 					break;
 				}
@@ -309,7 +309,7 @@ public final class FurClothingInterface extends ComponentPlugin {
 				end();
 				break;
 			case 30:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Certainly. Take a look at my range of made-to-oder", "items. If you can supply the furs, I'll gladly make any of", "these for you.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Certainly. Take a look at my range of made-to-oder", "items. If you can supply the furs, I'll gladly make any of", "these for you.");
 				stage = 31;
 				break;
 			case 31:
@@ -317,15 +317,15 @@ public final class FurClothingInterface extends ComponentPlugin {
 				FurClothingInterface.open(player);
 				break;
 			case 41:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, soem more colourful feathers might be useful. For", "some surreal reason, all I normally seem to get offered", "are large quantities of rather beaten-up looking chicken", "feathers.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well, soem more colourful feathers might be useful. For", "some surreal reason, all I normally seem to get offered", "are large quantities of rather beaten-up looking chicken", "feathers.");
 				stage = 42;
 				break;
 			case 42:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "People must have some very strange pastimes around", "these parts, that's all I can say.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "People must have some very strange pastimes around", "these parts, that's all I can say.");
 				stage = 43;
 				break;
 			case 43:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok, let's see what you've got then.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ok, let's see what you've got then.");
 				stage = 44;
 				break;
 			case 44:
