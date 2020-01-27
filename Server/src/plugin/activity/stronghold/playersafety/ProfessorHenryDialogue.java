@@ -45,7 +45,7 @@ public class ProfessorHenryDialogue extends DialoguePlugin {
 			stage = 800;
 			return true;
 		}
-		sendNormalDialogue(player, FacialExpression.NO_EXPRESSION, "Hello.");
+		sendNormalDialogue(player, FacialExpression.HALF_GUILTY, "Hello.");
 		return true;
 	}
 
@@ -93,51 +93,51 @@ public class ProfessorHenryDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 0:
-			sendNormalDialogue(npc, FacialExpression.NO_EXPRESSION, "Hello what?");
+			sendNormalDialogue(npc, FacialExpression.HALF_GUILTY, "Hello what?");
 			increment();
 			break;
 		case 1:
-			sendNormalDialogue(player, FacialExpression.NO_EXPRESSION, "Uh...hello there?");
+			sendNormalDialogue(player, FacialExpression.HALF_GUILTY, "Uh...hello there?");
 			increment();
 			break;
 		case 2:
-			sendNormalDialogue(npc, FacialExpression.NO_EXPRESSION, "Hello, 'Professor'. Manners cost nothing, you know.", "When you're in my classroom, I ask that you use the", "proper address for my station.");
+			sendNormalDialogue(npc, FacialExpression.HALF_GUILTY, "Hello, 'Professor'. Manners cost nothing, you know.", "When you're in my classroom, I ask that you use the", "proper address for my station.");
 			increment();
 			break;
 		case 3:
-			sendNormalDialogue(player, FacialExpression.NO_EXPRESSION, "Your station?");
+			sendNormalDialogue(player, FacialExpression.HALF_GUILTY, "Your station?");
 			increment();
 			break;
 		case 4:
-			sendNormalDialogue(npc, FacialExpression.NO_EXPRESSION, "Yes. It means 'position', so to speak.");
+			sendNormalDialogue(npc, FacialExpression.HALF_GUILTY, "Yes. It means 'position', so to speak.");
 			increment();
 			break;
 		case 5:
-			sendNormalDialogue(player, FacialExpression.NO_EXPRESSION, "Oh, okay.");
+			sendNormalDialogue(player, FacialExpression.HALF_GUILTY, "Oh, okay.");
 			increment();
 			break;
 		case 6:
-			sendNormalDialogue(npc, FacialExpression.NO_EXPRESSION, "Now, what can I do for you, exactly?");
+			sendNormalDialogue(npc, FacialExpression.HALF_GUILTY, "Now, what can I do for you, exactly?");
 			increment();
 			break;
 		case 7:
-			sendNormalDialogue(player, FacialExpression.NO_EXPRESSION, "What is this place?");
+			sendNormalDialogue(player, FacialExpression.HALF_GUILTY, "What is this place?");
 			increment();
 			break;
 		case 8:
-			sendNormalDialogue(npc, FacialExpression.NO_EXPRESSION, "This is the Misthalin Training Centre of Ezcelience. It", "is where bold adventurers, such as yourself, can come", "to learn of the dangers of the wide world and gain", "some valuable experience at the same time.");
+			sendNormalDialogue(npc, FacialExpression.HALF_GUILTY, "This is the Misthalin Training Centre of Ezcelience. It", "is where bold adventurers, such as yourself, can come", "to learn of the dangers of the wide world and gain", "some valuable experience at the same time.");
 			increment();
 			break;
 		case 9:
-			sendNormalDialogue(player, FacialExpression.NO_EXPRESSION, "What can I do here?");
+			sendNormalDialogue(player, FacialExpression.HALF_GUILTY, "What can I do here?");
 			increment();
 			break;
 		case 10:
-			sendNormalDialogue(npc, FacialExpression.NO_EXPRESSION, "Here you can take part in the Player Safety test: a set", "of valuable lessons to learn about staying safe in ", "RuneScape.");
+			sendNormalDialogue(npc, FacialExpression.HALF_GUILTY, "Here you can take part in the Player Safety test: a set", "of valuable lessons to learn about staying safe in ", "RuneScape.");
 			increment();
 			break;
 		case 11:
-			sendNormalDialogue(npc, FacialExpression.NO_EXPRESSION, "I can give you a test paper to take and, once", "completed, you can bring it back to me for marking.", "Would you like to take the test?", "It will not cost you anything");
+			sendNormalDialogue(npc, FacialExpression.HALF_GUILTY, "I can give you a test paper to take and, once", "completed, you can bring it back to me for marking.", "Would you like to take the test?", "It will not cost you anything");
 			increment();
 			break;
 		case 12:
@@ -146,30 +146,30 @@ public class ProfessorHenryDialogue extends DialoguePlugin {
 			break;
 		case 13:
 			if (buttonId == 1) {
-				sendNormalDialogue(player, FacialExpression.NO_EXPRESSION, "Yes, please.");
+				sendNormalDialogue(player, FacialExpression.HALF_GUILTY, "Yes, please.");
 				increment();
 			} else if (buttonId == 2) {
-				sendNormalDialogue(player, FacialExpression.NO_EXPRESSION, "Not right now, thanks.");
+				sendNormalDialogue(player, FacialExpression.HALF_GUILTY, "Not right now, thanks.");
 				stage = -1;
 			}
 			break;
 		case 14:
 			if (player.getInventory().freeSlots() == 0) {
-				sendNormalDialogue(npc, FacialExpression.NO_EXPRESSION, "It seems your inventory is full.");
+				sendNormalDialogue(npc, FacialExpression.HALF_GUILTY, "It seems your inventory is full.");
 				stage = -1;
 				return false;
 			} else if (player.getInventory().containItems(StrongHoldOfPlayerSafetyPlugin.TEST_PAPER_ITEM_ID)) {
-				sendNormalDialogue(npc, FacialExpression.NO_EXPRESSION, "You already have a test, please fill it out", "and return it to me.");
+				sendNormalDialogue(npc, FacialExpression.HALF_GUILTY, "You already have a test, please fill it out", "and return it to me.");
 				stage = -1;
 				return false;
 			}
 			player.getSavedData().getGlobalData().setTestStage(1);
 			player.getInventory().add(new Item(StrongHoldOfPlayerSafetyPlugin.TEST_PAPER_ITEM_ID));
-			sendNormalDialogue(npc, FacialExpression.NO_EXPRESSION, "Right then. Here is the test paper. When you have", "completed all the questions, bring it back to me for", "marking.");
+			sendNormalDialogue(npc, FacialExpression.HALF_GUILTY, "Right then. Here is the test paper. When you have", "completed all the questions, bring it back to me for", "marking.");
 			increment();
 			break;
 		case 15:
-			sendNormalDialogue(player, FacialExpression.NO_EXPRESSION, "Okay, thanks.");
+			sendNormalDialogue(player, FacialExpression.HALF_GUILTY, "Okay, thanks.");
 			stage = -1;
 			break;
 		}

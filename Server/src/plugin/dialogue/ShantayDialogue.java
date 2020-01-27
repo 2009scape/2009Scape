@@ -47,11 +47,11 @@ public final class ShantayDialogue extends DialoguePlugin {
 		}
 		if (args.length == 2) {
 			player.getPacketDispatch().sendMessage("Shantay saunters over to talk with you.");
-			interpreter.sendDialogues(836, FacialExpression.NO_EXPRESSION, "If you want to be let out, you have to pay a fine of", "five gold. Do you want to pay now?");
+			interpreter.sendDialogues(836, FacialExpression.HALF_GUILTY, "If you want to be let out, you have to pay a fine of", "five gold. Do you want to pay now?");
 			stage = 703;
 			return true;
 		}
-		interpreter.sendDialogues(836, FacialExpression.NO_EXPRESSION, "Hello effendi, I am Shantay.");
+		interpreter.sendDialogues(836, FacialExpression.HALF_GUILTY, "Hello effendi, I am Shantay.");
 		stage = 0;
 		return true;
 	}
@@ -60,11 +60,11 @@ public final class ShantayDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(836, FacialExpression.NO_EXPRESSION, "I see you're new. Please read the billboard poster", "before going into the desert. It'll give yer details on the", "dangers you can face.");
+			interpreter.sendDialogues(836, FacialExpression.HALF_GUILTY, "I see you're new. Please read the billboard poster", "before going into the desert. It'll give yer details on the", "dangers you can face.");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(836, FacialExpression.NO_EXPRESSION, "There is a heartbroken mother just past the gates and", "in the desert. Her name is Irena and she mourns her", "lost daughter. Such a shame.");
+			interpreter.sendDialogues(836, FacialExpression.HALF_GUILTY, "There is a heartbroken mother just past the gates and", "in the desert. Her name is Irena and she mourns her", "lost daughter. Such a shame.");
 			stage = 2;
 			break;
 		case 2:
@@ -74,19 +74,19 @@ public final class ShantayDialogue extends DialoguePlugin {
 		case 3:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What is this place?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What is this place?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can I see what you have to sell please?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can I see what you have to sell please?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I must be going.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I must be going.");
 				stage = 30;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I want to buy a Shantay pass for 5 gold coins.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I want to buy a Shantay pass for 5 gold coins.");
 				stage = 40;
 				break;
 
@@ -109,18 +109,18 @@ public final class ShantayDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 30:
-			interpreter.sendDialogues(836, FacialExpression.NO_EXPRESSION, "So long...");
+			interpreter.sendDialogues(836, FacialExpression.HALF_GUILTY, "So long...");
 			stage = 31;
 			break;
 		case 31:
 			end();
 			break;
 		case 10:
-			interpreter.sendDialogues(836, FacialExpression.NO_EXPRESSION, "This is the pass of Shantay. I guard this area with my", "men. I am responsible for keeping this pass open and", "repaired.");
+			interpreter.sendDialogues(836, FacialExpression.HALF_GUILTY, "This is the pass of Shantay. I guard this area with my", "men. I am responsible for keeping this pass open and", "repaired.");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(836, FacialExpression.NO_EXPRESSION, "My men and I prevent outlaws from getting out of the", "desert. And we stop the inexeperienced from a dry death", "in the sands. Which would you say you were?");
+			interpreter.sendDialogues(836, FacialExpression.HALF_GUILTY, "My men and I prevent outlaws from getting out of the", "desert. And we stop the inexeperienced from a dry death", "in the sands. Which would you say you were?");
 			stage = 12;
 			break;
 		case 12:
@@ -144,7 +144,7 @@ public final class ShantayDialogue extends DialoguePlugin {
 			}
 			break;
 		case 20:
-			interpreter.sendDialogues(836, FacialExpression.NO_EXPRESSION, "Absolutely Effendi!");
+			interpreter.sendDialogues(836, FacialExpression.HALF_GUILTY, "Absolutely Effendi!");
 			stage = 21;
 			break;
 		case 21:

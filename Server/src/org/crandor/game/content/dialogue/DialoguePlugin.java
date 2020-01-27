@@ -177,9 +177,9 @@ public abstract class DialoguePlugin implements Plugin<Player> {
 	 */
 	public Component npc(final String... messages) {
 		if (npc == null) {
-			return interpreter.sendDialogues(getIds()[0], getIds()[0] > 8591 ? FacialExpression.OSRS_NORMAL : FacialExpression.NO_EXPRESSION, messages);
+			return interpreter.sendDialogues(getIds()[0], getIds()[0] > 8591 ? FacialExpression.OSRS_NORMAL : FacialExpression.HALF_GUILTY, messages);
 		}
-		return interpreter.sendDialogues(npc, getIds()[0] > 8591 ? FacialExpression.OSRS_NORMAL : FacialExpression.NO_EXPRESSION, messages);
+		return interpreter.sendDialogues(npc, getIds()[0] > 8591 ? FacialExpression.OSRS_NORMAL : FacialExpression.HALF_GUILTY, messages);
 	}
 
 	/**
@@ -188,7 +188,7 @@ public abstract class DialoguePlugin implements Plugin<Player> {
 	 * @return the component.
 	 */
 	public Component npc(int id, final String... messages) {
-		return interpreter.sendDialogues(id, FacialExpression.NO_EXPRESSION, messages);
+		return interpreter.sendDialogues(id, FacialExpression.HALF_GUILTY, messages);
 	}
 	
 	/**
@@ -197,7 +197,7 @@ public abstract class DialoguePlugin implements Plugin<Player> {
 	 */
 	public Component npc(FacialExpression expression, final String... messages) {
 		if (npc == null) {
-			return interpreter.sendDialogues(getIds()[0], FacialExpression.NO_EXPRESSION, messages);
+			return interpreter.sendDialogues(getIds()[0], FacialExpression.HALF_GUILTY, messages);
 		}
 		return interpreter.sendDialogues(npc, expression, messages);
 	}

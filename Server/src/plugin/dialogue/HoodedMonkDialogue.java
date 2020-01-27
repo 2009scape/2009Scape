@@ -39,7 +39,7 @@ public final class HoodedMonkDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Excuse me...oh, wait, I thought you were someone else.");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Excuse me...oh, wait, I thought you were someone else.");
 		stage = 1;
 		return true;
 	}
@@ -48,7 +48,7 @@ public final class HoodedMonkDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No problem. Have a good day!");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No problem. Have a good day!");
 			stage = 2;
 			break;
 		case 2:

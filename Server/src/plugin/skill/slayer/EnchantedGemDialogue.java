@@ -48,7 +48,7 @@ public final class EnchantedGemDialogue extends DialoguePlugin {
 	public boolean open(Object... args) {
 		player.faceLocation(player.getLocation().transform(1, 0, 0));
 		player.setDirection(Direction.EAST);
-		interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.NO_EXPRESSION, "Hello there " + player.getUsername() + ", what can I help you with?");
+		interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.HALF_GUILTY, "Hello there " + player.getUsername() + ", what can I help you with?");
 		stage = 0;
 		return true;
 	}
@@ -63,23 +63,23 @@ public final class EnchantedGemDialogue extends DialoguePlugin {
 		case 2:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How am I doing so far?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "How am I doing so far?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Who are you?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Who are you?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Where are you?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Where are you?");
 				stage = 30;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Got any tips for me?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Got any tips for me?");
 				stage = 400;
 				break;
 			case 5:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Nothing really.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Nothing really.");
 				stage = 99;
 				break;
 
@@ -90,11 +90,11 @@ public final class EnchantedGemDialogue extends DialoguePlugin {
 			break;
 		case 10:
 			if (!player.getSlayer().hasTask()) {
-				interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.NO_EXPRESSION, "You need something new to hunt. Come and see me", "When you can and I'll give you a new task.");
+				interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.HALF_GUILTY, "You need something new to hunt. Come and see me", "When you can and I'll give you a new task.");
 				stage = 11;
 				break;
 			}
-			interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.NO_EXPRESSION, "You're currently assigned to kill "  + (Tasks.forValue(player.getSlayer().getTask()) == Tasks.JAD ? " TzTok-Jad!" : NPCDefinition.forId((player.getSlayer().getTask().getNpcs()[0])).getName().toLowerCase() + "'s;"), "only " + player.getSlayer().getAmount() + " more to go.");
+			interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.HALF_GUILTY, "You're currently assigned to kill "  + (Tasks.forValue(player.getSlayer().getTask()) == Tasks.JAD ? " TzTok-Jad!" : NPCDefinition.forId((player.getSlayer().getTask().getNpcs()[0])).getName().toLowerCase() + "'s;"), "only " + player.getSlayer().getAmount() + " more to go.");
 			stage = 11;
 			break;
 		case 11:
@@ -104,24 +104,24 @@ public final class EnchantedGemDialogue extends DialoguePlugin {
 		case 12:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.NO_EXPRESSION, "My name's " + NPCDefinition.forId(player.getSlayer().getMaster().getNpc()).getName() + ", I'm the Slayer Master best able", "to train you.");
+				interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.HALF_GUILTY, "My name's " + NPCDefinition.forId(player.getSlayer().getMaster().getNpc()).getName() + ", I'm the Slayer Master best able", "to train you.");
 				stage = 21;
 				break;
 			case 2:
-				interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.NO_EXPRESSION, "You'll find me in " + masterLocation() + ", I'll be here when you need a", "new task.");
+				interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.HALF_GUILTY, "You'll find me in " + masterLocation() + ", I'll be here when you need a", "new task.");
 				stage = 31;
 				break;
 			case 3:
 				if (!player.getSlayer().hasTask()) {
-					interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.NO_EXPRESSION, "You need something new to hunt.");
+					interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.HALF_GUILTY, "You need something new to hunt.");
 					stage = 99;
 					break;
 				}
-				interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.NO_EXPRESSION, player.getSlayer().getTask().getTip());
+				interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.HALF_GUILTY, player.getSlayer().getTask().getTip());
 				stage = 401;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "That's all thanks.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "That's all thanks.");
 				stage = 99;
 				break;
 			case 99:
@@ -130,7 +130,7 @@ public final class EnchantedGemDialogue extends DialoguePlugin {
 			}
 			break;
 		case 20:
-			interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.NO_EXPRESSION, "My name's " + NPCDefinition.forId(player.getSlayer().getMaster().getNpc()).getName() + ", I'm the Slayer Master best able", "to train you.");
+			interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.HALF_GUILTY, "My name's " + NPCDefinition.forId(player.getSlayer().getMaster().getNpc()).getName() + ", I'm the Slayer Master best able", "to train you.");
 			stage = 21;
 			break;
 		case 21:
@@ -140,31 +140,31 @@ public final class EnchantedGemDialogue extends DialoguePlugin {
 		case 25:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How am I doing so far?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "How am I doing so far?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.NO_EXPRESSION, "You'll find me in " + masterLocation() + ", I'll be here when you need a", "new task.");
+				interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.HALF_GUILTY, "You'll find me in " + masterLocation() + ", I'll be here when you need a", "new task.");
 				stage = 31;
 				break;
 			case 3:
 				if (!player.getSlayer().hasTask()) {
-					interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.NO_EXPRESSION, "You need something new to hunt.");
+					interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.HALF_GUILTY, "You need something new to hunt.");
 					stage = 99;
 					break;
 				}
-				interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.NO_EXPRESSION, player.getSlayer().getTask().getTip());
+				interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.HALF_GUILTY, player.getSlayer().getTask().getTip());
 				stage = 401;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "That's all thanks.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "That's all thanks.");
 				stage = 99;
 				break;
 
 			}
 			break;
 		case 30:
-			interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.NO_EXPRESSION, "You'll find me in " + masterLocation() + ", I'll be here when you need a", "new task.");
+			interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.HALF_GUILTY, "You'll find me in " + masterLocation() + ", I'll be here when you need a", "new task.");
 			stage = 31;
 			break;
 		case 31:
@@ -174,24 +174,24 @@ public final class EnchantedGemDialogue extends DialoguePlugin {
 		case 32:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How am I doing so far?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "How am I doing so far?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.NO_EXPRESSION, "My name's " + NPCDefinition.forId(player.getSlayer().getMaster().getNpc()).getName() + ", I'm the Slayer Master best able", "to train you.");
+				interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.HALF_GUILTY, "My name's " + NPCDefinition.forId(player.getSlayer().getMaster().getNpc()).getName() + ", I'm the Slayer Master best able", "to train you.");
 				stage = 21;
 				break;
 			case 3:
 				if (!player.getSlayer().hasTask()) {
-					interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.NO_EXPRESSION, "You need something new to hunt.");
+					interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.HALF_GUILTY, "You need something new to hunt.");
 					stage = 0;
 					break;
 				}
-				interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.NO_EXPRESSION, player.getSlayer().getTask().getTip());
+				interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.HALF_GUILTY, player.getSlayer().getTask().getTip());
 				stage = 401;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "That's all thanks.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "That's all thanks.");
 				stage = 99;
 				break;
 
@@ -199,15 +199,15 @@ public final class EnchantedGemDialogue extends DialoguePlugin {
 			break;
 		case 400:
 			if (!player.getSlayer().hasTask()) {
-				interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.NO_EXPRESSION, "You need something new to hunt.");
+				interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.HALF_GUILTY, "You need something new to hunt.");
 				stage = 0;
 				break;
 			}
-			interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.NO_EXPRESSION, player.getSlayer().getTask().getTip());
+			interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.HALF_GUILTY, player.getSlayer().getTask().getTip());
 			stage = 401;
 			break;
 		case 401:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Great, thanks!");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Great, thanks!");
 			stage = 403;
 			break;
 		case 403:
@@ -217,19 +217,19 @@ public final class EnchantedGemDialogue extends DialoguePlugin {
 		case 404:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How am I doing so far?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "How am I doing so far?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.NO_EXPRESSION, "My name's " + NPCDefinition.forId(player.getSlayer().getMaster().getNpc()).getName() + ", I'm the Slayer Master best able", "to train you.");
+				interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.HALF_GUILTY, "My name's " + NPCDefinition.forId(player.getSlayer().getMaster().getNpc()).getName() + ", I'm the Slayer Master best able", "to train you.");
 				stage = 21;
 				break;
 			case 3:
-				interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.NO_EXPRESSION, "You'll find me in " + masterLocation() + ", I'll be here when you need a", "new task.");
+				interpreter.sendDialogues(player.getSlayer().getMaster().getNpc(), player.getSlayer().getMaster() == Master.NIEVE ? FacialExpression.OSRS_NORMAL : FacialExpression.HALF_GUILTY, "You'll find me in " + masterLocation() + ", I'll be here when you need a", "new task.");
 				stage = 31;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "That's all thanks.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "That's all thanks.");
 				stage = 99;
 				break;
 

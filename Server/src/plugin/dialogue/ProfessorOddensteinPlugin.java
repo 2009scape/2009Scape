@@ -85,7 +85,7 @@ public class ProfessorOddensteinPlugin extends DialoguePlugin {
 		switch (quest.getStage(player)) {
 		case 0:
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Be careful in here, there's lots of dangerous equipment.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Be careful in here, there's lots of dangerous equipment.");
 			stage = 0;
 			break;
 		case 20:
@@ -114,32 +114,32 @@ public class ProfessorOddensteinPlugin extends DialoguePlugin {
 			case 1:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What does this machine do?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What does this machine do?");
 					stage = 10;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Is this your house?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Is this your house?");
 					stage = 20;
 					break;
 				}
 				break;
 			case 10:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What does this machine do?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What does this machine do?");
 				stage = 11;
 				break;
 			case 11:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Nothing at the moment... It's broken. It's meant to be", "a transmutation machine.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Nothing at the moment... It's broken. It's meant to be", "a transmutation machine.");
 				stage = 12;
 				break;
 			case 12:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "It as also spent time as a time travel machine, and a", "dramatic light generator, and a thing for generating", "monsters.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "It as also spent time as a time travel machine, and a", "dramatic light generator, and a thing for generating", "monsters.");
 				stage = 13;
 				break;
 			case 13:
 				end();
 				break;
 			case 20:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "No, I'm just one of the tenants. It belongs to the count", "who lives in the basement.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "No, I'm just one of the tenants. It belongs to the count", "who lives in the basement.");
 				stage = 21;
 				break;
 			case 21:
@@ -160,11 +160,11 @@ public class ProfessorOddensteinPlugin extends DialoguePlugin {
 					stage = 2;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What does this machine do?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What does this machine do?");
 					stage = 10;
 					break;
 				case 3:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Is this your house?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Is this your house?");
 					stage = 20;
 					break;
 				}

@@ -41,7 +41,7 @@ public class RimmingtonShopKeeperDialogue extends DialoguePlugin {
 				npc.openShop(player);
 				break;
 			case 2:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm glas you ask! You can buy as many of the items", "stocked as you wish. You can also sell most items to the", "shop.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I'm glas you ask! You can buy as many of the items", "stocked as you wish. You can also sell most items to the", "shop.");
 				stage = 10;
 				break;
 			case 3:
@@ -67,7 +67,7 @@ public class RimmingtonShopKeeperDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Can I help you at all?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Can I help you at all?");
 		stage = 0;
 		return true;
 	}

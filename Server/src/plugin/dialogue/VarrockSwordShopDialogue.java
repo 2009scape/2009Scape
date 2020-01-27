@@ -36,11 +36,11 @@ public class VarrockSwordShopDialogue extends DialoguePlugin {
 
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, please.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes, please.");
 				stage = 2;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, I'm okay for swords right now.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No, I'm okay for swords right now.");
 				stage = 10;
 				break;
 			}
@@ -51,7 +51,7 @@ public class VarrockSwordShopDialogue extends DialoguePlugin {
 			npc.openShop(player);
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Come back if you need any.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Come back if you need any.");
 			stage = 11;
 			break;
 		case 11:
@@ -71,7 +71,7 @@ public class VarrockSwordShopDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello, adventurer. Can I interest you in some swords?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hello, adventurer. Can I interest you in some swords?");
 		stage = 0;
 		return true;
 	}

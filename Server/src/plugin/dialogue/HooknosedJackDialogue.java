@@ -39,7 +39,7 @@ public final class HooknosedJackDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello.");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Hello.");
 		stage = 0;
 		return true;
 	}
@@ -48,11 +48,11 @@ public final class HooknosedJackDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "What?");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Actually I've got no time for this. I don't want to talk to", "you.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Actually I've got no time for this. I don't want to talk to", "you.");
 			stage = 2;
 			break;
 		case 2:

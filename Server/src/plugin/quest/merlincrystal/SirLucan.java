@@ -33,7 +33,7 @@ public class SirLucan extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello there adventurer.");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hello there adventurer.");
 		stage = 0;
 		return true;
 	}
@@ -44,34 +44,34 @@ public class SirLucan extends DialoguePlugin {
 		case 0:
 			Quest quest = player.getQuestRepository().getQuest("Merlin's Crystal");
 			if (quest.getStage(player) == 100) {
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Congratulations on freeing Merlin!");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Congratulations on freeing Merlin!");
 				stage = 20;
 			} else if (quest.getStage(player) >= 10 && quest.getStage(player) < 50) {
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Any suggestions on freeing Merlin?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Any suggestions on freeing Merlin?");
 				stage = 1;
 			} else {
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I am afraid I have no time to chat.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I am afraid I have no time to chat.");
 				stage = 20;
 			}
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I've tried all the weapons I can find, yet none are", "powerful enough to break his crystal prison...");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I've tried all the weapons I can find, yet none are", "powerful enough to break his crystal prison...");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Perhaps the mighty Excalibur would be strong enough...");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Perhaps the mighty Excalibur would be strong enough...");
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Excalibur eh? Where would I find that?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Excalibur eh? Where would I find that?");
 			stage = 4;
 			break;
 		case 4:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "The Lady of the Lake is looking atfer it I believe... but", "I know not where she resides currently.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "The Lady of the Lake is looking atfer it I believe... but", "I know not where she resides currently.");
 			stage = 5;
 			break;
 		case 5:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Thanks. I'll try and find someone who does.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Thanks. I'll try and find someone who does.");
 			stage = 20;
 			break;
 		case 20:

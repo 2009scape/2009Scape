@@ -40,7 +40,7 @@ public class SilverMechantPlugin extends DialoguePlugin {
 				npc.openShop(player);
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, thank you.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No, thank you.");
 				stage = 20;
 				break;
 			}
@@ -61,7 +61,7 @@ public class SilverMechantPlugin extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Silver! Silver! Best prices for buying and selling in all", "Kandarin!");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Silver! Silver! Best prices for buying and selling in all", "Kandarin!");
 		stage = 0;
 		return true;
 	}

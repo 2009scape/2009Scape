@@ -60,7 +60,7 @@ public final class EdgevilleMonkDialogue extends DialoguePlugin {
 				return true;
 			}
 		}
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Greetings traveller.");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Greetings traveller.");
 		stage = 0;
 		return true;
 	}
@@ -75,22 +75,22 @@ public final class EdgevilleMonkDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you heal me? I'm injured.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you heal me? I'm injured.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Isn't this place built a bit out of the way?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Isn't this place built a bit out of the way?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How do i get farther into the monastery?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "How do i get farther into the monastery?");
 				stage = 30;
 				break;
 
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ok.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Ok.");
 			stage = 11;
 			break;
 		case 11:
@@ -101,14 +101,14 @@ public final class EdgevilleMonkDialogue extends DialoguePlugin {
 			player.getSkills().heal(((int) (player.getSkills().getStaticLevel(Skills.HITPOINTS) * 0.20)));
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "We like it that way actually! We get disturbed less. We still", "get rather a large amount of travellers looking for", "sanctuary and healing here as it is!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "We like it that way actually! We get disturbed less. We still", "get rather a large amount of travellers looking for", "sanctuary and healing here as it is!");
 			stage = 21;
 			break;
 		case 21:
 			end();
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You'll need to talk to Abbot Langley about that. He's", "usually to be found walking the halls of the monastery.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "You'll need to talk to Abbot Langley about that. He's", "usually to be found walking the halls of the monastery.");
 			stage = 21;
 			break;
 		}

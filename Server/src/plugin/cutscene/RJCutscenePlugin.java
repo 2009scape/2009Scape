@@ -178,49 +178,49 @@ public final class RJCutscenePlugin extends CutscenePlugin {
 			case 1:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No sorry. I haven't seen her.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No sorry. I haven't seen her.");
 					stage = 200;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Perhaps I can help find her for you? What does she", "look like?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Perhaps I can help find her for you? What does she", "look like?");
 					stage = 10;
 					break;
 				}
 				break;
 			case 10:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh would you? That would be great! She has this sort", "of hair...");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh would you? That would be great! She has this sort", "of hair...");
 				stage = 11;
 				break;
 			case 11:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hair...check..");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Hair...check..");
 				stage = 12;
 				break;
 			case 12:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "...and she these...great lips...");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "...and she these...great lips...");
 				stage = 13;
 				break;
 			case 13:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Lips...right.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Lips...right.");
 				stage = 14;
 				break;
 			case 14:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh and she has these lovley shoulders as well..");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh and she has these lovley shoulders as well..");
 				stage = 15;
 				break;
 			case 15:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Shoulders...right so she has hair, lips and shoulders...that", "should cut it down a bit.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Shoulders...right so she has hair, lips and shoulders...that", "should cut it down a bit.");
 				stage = 16;
 				break;
 			case 16:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh yes, Juliet Is very different...please tell her that she", "is the love of my long and that I life to be with her?");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh yes, Juliet Is very different...please tell her that she", "is the love of my long and that I life to be with her?");
 				stage = 17;
 				break;
 			case 17:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What?", "Surely you mean that 'she is the love of your life and", "that you long to be with her?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What?", "Surely you mean that 'she is the love of your life and", "that you long to be with her?");
 				stage = 18;
 				break;
 			case 18:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh yeah...what you said...tell her that, it sounds much", "bettter!", "Oh you're so good at this!");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh yeah...what you said...tell her that, it sounds much", "bettter!", "Oh you're so good at this!");
 				stage = 19;
 				break;
 			case 19:
@@ -230,11 +230,11 @@ public final class RJCutscenePlugin extends CutscenePlugin {
 			case 20:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, ok, I'll let her know.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes, ok, I'll let her know.");
 					stage = 100;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry Romeo, I've got better things to do right now but maybe latter?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Sorry Romeo, I've got better things to do right now but maybe latter?");
 					stage = 50;
 					break;
 				case 3:
@@ -245,23 +245,23 @@ public final class RJCutscenePlugin extends CutscenePlugin {
 			case 100:
 				quest.setStage(player, 10);
 				player.getQuestRepository().syncronizeTab(player);
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh great! And tell her that I want to kiss her a give.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh great! And tell her that I want to kiss her a give.");
 				stage = 101;
 				break;
 			case 101:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "You mean you want to give her a kiss!");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "You mean you want to give her a kiss!");
 				stage = 102;
 				break;
 			case 102:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh you're good...you are good!");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh you're good...you are good!");
 				stage = 103;
 				break;
 			case 103:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I see I've picked a true professional...!");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I see I've picked a true professional...!");
 				stage = 104;
 				break;
 			case 104:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ok, thanks.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Ok, thanks.");
 				stage = 106;
 				break;
 			case 105:
@@ -271,7 +271,7 @@ public final class RJCutscenePlugin extends CutscenePlugin {
 				case 2:
 					break;
 				case 3:
-					interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ok, thanks.");
+					interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Ok, thanks.");
 					stage = 106;
 					break;
 				}
@@ -280,53 +280,53 @@ public final class RJCutscenePlugin extends CutscenePlugin {
 				end();
 				break;
 			case 200:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "If you do see her please tell me!");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "If you do see her please tell me!");
 				stage = 201;
 				break;
 			case 201:
 				end();
 				break;
 			case 230:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Please, oh please! Tell me where you have seen my juliet.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Please, oh please! Tell me where you have seen my juliet.");
 				stage = 231;
 				break;
 			case 231:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I found her alone on a balcony!");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I found her alone on a balcony!");
 				stage = 255;
 				break;
 			case 255:
 				end();
 				break;
 			case 300:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh great! That is great news! Well done...well done...", "what a total success!");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh great! That is great news! Well done...well done...", "what a total success!");
 				stage = 301;
 				break;
 			case 301:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, and she gave me a message to give you...");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes, and she gave me a message to give you...");
 				stage = 302;
 				break;
 			case 302:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ohh great! A message...wow!");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Ohh great! A message...wow!");
 				stage = 303;
 				break;
 			case 303:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes!");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes!");
 				stage = 304;
 				break;
 			case 304:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "A message...oh, I can't wait to read what my dear Juliet", "has to say....");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "A message...oh, I can't wait to read what my dear Juliet", "has to say....");
 				stage = 305;
 				break;
 			case 305:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I know...it's exiting isn't it...?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I know...it's exiting isn't it...?");
 				stage = 306;
 				break;
 			case 306:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yes...yes...");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Yes...yes...");
 				stage = 307;
 				break;
 			case 307:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "...");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "...");
 				stage = 308;
 				break;
 			case 308:
@@ -334,7 +334,7 @@ public final class RJCutscenePlugin extends CutscenePlugin {
 				stage = 309;
 				break;
 			case 309:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yep, haven't got a clue where it is.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yep, haven't got a clue where it is.");
 				stage = 310;
 				break;
 			case 310:
@@ -780,24 +780,24 @@ public final class RJCutscenePlugin extends CutscenePlugin {
 			}
 			switch (quest.getStage(player)) {
 			case 0:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Juliet. Juliet, where art thou Juliet?", "Have you seen my Juliet?");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Juliet. Juliet, where art thou Juliet?", "Have you seen my Juliet?");
 				stage = 0;
 				break;
 			case 10:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Go and speak with Juliet!");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Go and speak with Juliet!");
 				stage = 457;
 				break;
 			case 20:
 				if (!player.getInventory().contains(755, 1)) {
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Romeo...great news...I've been in touch with Juliet!");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Romeo...great news...I've been in touch with Juliet!");
 					stage = 300;
 				} else {
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Romeo...great news...I've been in touch with Juliet!", "She's written a message for you...");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Romeo...great news...I've been in touch with Juliet!", "She's written a message for you...");
 					stage = 400;
 				}
 				break;
 			case 30:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hey again Romeo!");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Hey again Romeo!");
 				stage = 800;
 				break;
 			case 40:

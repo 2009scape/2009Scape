@@ -132,7 +132,7 @@ public final class RangingGuildPlugin extends OptionHandler {
 		@Override
 		public boolean open(Object... args) {
 			npc = (NPC) args[0];
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello there.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Hello there.");
 			stage = 0;
 			return true;
 		}
@@ -141,7 +141,7 @@ public final class RangingGuildPlugin extends OptionHandler {
 		public boolean handle(int interfaceId, int buttonId) {
 			switch (stage) {
 			case 0:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Greetings. If you are an experienced archer, you may", "want to visit the guild here...");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Greetings. If you are an experienced archer, you may", "want to visit the guild here...");
 				stage = 1;
 				break;
 			case 1:

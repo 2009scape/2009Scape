@@ -172,7 +172,7 @@ public class VeronicaDialogue extends DialoguePlugin {
 		final Quest quest = player.getQuestRepository().getQuest("Ernest the Chicken");
 		switch (quest.getStage(player)) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Can you please help me? I'm in a terrible spot of", "trouble.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Can you please help me? I'm in a terrible spot of", "trouble.");
 			stage = 0;
 			break;
 		case 10:

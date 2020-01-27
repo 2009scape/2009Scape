@@ -32,17 +32,17 @@ public class PortSarimBrianDialogue extends DialoguePlugin {
 		case 0:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "So, are you selling something?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "So, are you selling something?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "'Ello.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "'Ello.");
 				stage = 20;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yep, take a look at these great axes.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Yep, take a look at these great axes.");
 			stage = 11;
 			break;
 		case 11:
@@ -50,7 +50,7 @@ public class PortSarimBrianDialogue extends DialoguePlugin {
 			npc.openShop(player);
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "'Ello.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "'Ello.");
 			stage = 21;
 			break;
 		case 21:

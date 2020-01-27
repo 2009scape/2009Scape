@@ -39,7 +39,7 @@ public final class MorrisDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What are you sitting around here for?");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What are you sitting around here for?");
 		stage = 0;
 		return true;
 	}
@@ -48,7 +48,7 @@ public final class MorrisDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm making sure only those with a competition pass enter", "the fishing contest.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I'm making sure only those with a competition pass enter", "the fishing contest.");
 			stage = 1;
 			break;
 		case 1:

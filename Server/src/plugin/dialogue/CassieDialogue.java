@@ -39,7 +39,7 @@ public final class CassieDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I buy and sell shields; do you want to trade?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I buy and sell shields; do you want to trade?");
 		stage = 0;
 		return true;
 	}
@@ -58,7 +58,7 @@ public final class CassieDialogue extends DialoguePlugin {
 				npc.openShop(player);
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, thank you.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No, thank you.");
 				stage = 20;
 				break;
 			}

@@ -39,15 +39,15 @@ public class VarrockCookDialogue extends DialoguePlugin {
 
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you sell me any food?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you sell me any food?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you give me any free food?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you give me any free food?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I don't want anything from this horrible kitchen.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I don't want anything from this horrible kitchen.");
 				stage = 30;
 				break;
 			}
@@ -55,7 +55,7 @@ public class VarrockCookDialogue extends DialoguePlugin {
 			break;
 
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I suppose I could sell you some cabbage, if you're willing to", "pay for it. Cabbage is good for you.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I suppose I could sell you some cabbage, if you're willing to", "pay for it. Cabbage is good for you.");
 			stage = 11;
 			break;
 		case 11:
@@ -66,45 +66,45 @@ public class VarrockCookDialogue extends DialoguePlugin {
 
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Alright, I'll buy a cabbage.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Alright, I'll buy a cabbage.");
 				stage = 150;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thanks, I don't like cabbage.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No thanks, I don't like cabbage.");
 				stage = 160;
 				break;
 			}
 
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Can you give me any free money?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Can you give me any free money?");
 			stage = 21;
 			break;
 		case 21:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Why should I give you free money?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Why should I give you free money?");
 			stage = 22;
 			break;
 		case 22:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Why should I give you free food?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Why should I give you free food?");
 			stage = 23;
 			break;
 		case 23:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Oh, forget it.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Oh, forget it.");
 			stage = 24;
 			break;
 		case 24:
 			end();
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "How dare you? I put a lot of effort into cleaning this", "kitchen. My daily sweat and elbow-grease keep this kitchen", "clean!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "How dare you? I put a lot of effort into cleaning this", "kitchen. My daily sweat and elbow-grease keep this kitchen", "clean!");
 			stage = 31;
 			break;
 		case 31:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ewww!");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ewww!");
 			stage = 32;
 			break;
 		case 32:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh, just leave me alone.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh, just leave me alone.");
 			stage = 33;
 			break;
 		case 33:
@@ -114,7 +114,7 @@ public class VarrockCookDialogue extends DialoguePlugin {
 			if (player.getInventory().contains(995, 1)) {
 				player.getInventory().remove(new Item(995, 1));
 				player.getInventory().add(new Item(1965, 1));
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "It's a deal. Now, make sure you eat it all up. Cabbage is", "good for you.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "It's a deal. Now, make sure you eat it all up. Cabbage is", "good for you.");
 				stage = 151;
 			} else {
 				end();
@@ -125,7 +125,7 @@ public class VarrockCookDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 160:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Bah! People these days only appreciate junk food.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Bah! People these days only appreciate junk food.");
 			stage = 161;
 			break;
 		case 161:
@@ -145,7 +145,7 @@ public class VarrockCookDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What do you want? I'm busy!");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "What do you want? I'm busy!");
 		stage = 0;
 		return true;
 	}

@@ -39,7 +39,7 @@ public final class FortunatoDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Can I help you at all?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Can I help you at all?");
 		stage = 0;
 		return true;
 	}
@@ -56,11 +56,11 @@ public final class FortunatoDialogue extends DialoguePlugin {
 
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, what are you selling?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes, what are you selling?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Then move along, you filthy ragamuffin, I have customers", "to server!");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Then move along, you filthy ragamuffin, I have customers", "to server!");
 				stage = 24;
 				break;
 			}
@@ -71,11 +71,11 @@ public final class FortunatoDialogue extends DialoguePlugin {
 			npc.openShop(player);
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Yes, indeed. The finest wine in Misthalin.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Yes, indeed. The finest wine in Misthalin.");
 			stage = 21;
 			break;
 		case 21:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Care to take a look at my wares?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Care to take a look at my wares?");
 			stage = 269;
 			break;
 		case 269:
@@ -90,14 +90,14 @@ public final class FortunatoDialogue extends DialoguePlugin {
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Not at the moment.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Not at the moment.");
 				stage = 23;
 				break;
 			}
 
 			break;
 		case 23:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Then move along, you filthy ragamuffin, I have customers", "to server!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Then move along, you filthy ragamuffin, I have customers", "to server!");
 			stage = 24;
 			break;
 		case 24:

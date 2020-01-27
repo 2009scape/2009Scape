@@ -38,7 +38,7 @@ public final class CuratorHaigHalenDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Welcome to the museum of Varrock.");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Welcome to the museum of Varrock.");
 		stage = 0;
 		return true;
 	}

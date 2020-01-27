@@ -30,7 +30,7 @@ public class SarahFarmingPlugin extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello.");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hello.");
 		stage = 0;
 		return true;
 	}
@@ -39,11 +39,11 @@ public class SarahFarmingPlugin extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hi!");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Hi!");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Would you like to see what I have in stock?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Would you like to see what I have in stock?");
 			stage = 2;
 			break;
 		case 2:
@@ -53,11 +53,11 @@ public class SarahFarmingPlugin extends DialoguePlugin {
 		case 3:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes please.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes please.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, thank you.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No, thank you.");
 				stage = 20;
 				break;
 

@@ -39,7 +39,7 @@ public final class FurTradePlugin extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Would you like to trade in fur?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Would you like to trade in fur?");
 		stage = 0;
 		return true;
 	}
@@ -58,7 +58,7 @@ public final class FurTradePlugin extends DialoguePlugin {
 				npc.openShop(player);
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, thanks.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No, thanks.");
 				stage = 20;
 				break;
 			}

@@ -59,7 +59,7 @@ public final class CaveMonk extends DialoguePlugin {
 			stage = 100;
 			break;
 		default:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Be careful going in there! You are unarmed, and there", "is much evilness lurking down there! The evilness seems", "to block off our contact with our gods,");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Be careful going in there! You are unarmed, and there", "is much evilness lurking down there! The evilness seems", "to block off our contact with our gods,");
 			stage = 0;
 			break;
 		}
@@ -77,11 +77,11 @@ public final class CaveMonk extends DialoguePlugin {
 			end();
 			break;
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "so our prayers seem to have less effect down there. Oh,", "also, you won't be able to come back this way - This", "ladder only goes one way!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "so our prayers seem to have less effect down there. Oh,", "also, you won't be able to come back this way - This", "ladder only goes one way!");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "The only exit from the caves below is a portal which", "leads only to the deepest wilderness!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "The only exit from the caves below is a portal which", "leads only to the deepest wilderness!");
 			stage = 2;
 			break;
 		case 2:
@@ -91,11 +91,11 @@ public final class CaveMonk extends DialoguePlugin {
 		case 3:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I don't think I'm strong enough to enter then.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I don't think I'm strong enough to enter then.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Well that is a risk I will have to take.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Well that is a risk I will have to take.");
 				stage = 20;
 				break;
 			}

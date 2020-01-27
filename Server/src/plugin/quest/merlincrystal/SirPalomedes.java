@@ -32,7 +32,7 @@ public class SirPalomedes extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello there adventurer, what do you want of me?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hello there adventurer, what do you want of me?");
 		stage = 0;
 		return true;
 	}
@@ -43,18 +43,18 @@ public class SirPalomedes extends DialoguePlugin {
 		case 0:
 			Quest quest = player.getQuestRepository().getQuest("Merlin's Crystal");
 			if (quest.getStage(player) == 100) {
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Congratulations on freeing Merlin!");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Congratulations on freeing Merlin!");
 				stage = 20;
 			} else if (quest.getStage(player) >= 10 && quest.getStage(player) < 50) {
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'd like some advice on breaking that Crystal Merlin's", "trapped in.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'd like some advice on breaking that Crystal Merlin's", "trapped in.");
 				stage = 1;
 			} else {
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I am afraid I have no time to chat.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I am afraid I have no time to chat.");
 				stage = 20;
 			}
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Sorry, I cannot help you with that.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Sorry, I cannot help you with that.");
 			stage = 20;
 			break;
 		case 20:

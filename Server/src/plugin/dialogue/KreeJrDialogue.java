@@ -39,7 +39,7 @@ public final class KreeJrDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Huh... that's odd... I thought that would", "be big news.");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Huh... that's odd... I thought that would", "be big news.");
 		stage = 0;
 		return true;
 	}
@@ -52,7 +52,7 @@ public final class KreeJrDialogue extends DialoguePlugin {
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Well there seems to be an absence of a certain", " ornithological piece: a headline regarding mass", "awareness of a certain avian variety.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Well there seems to be an absence of a certain", " ornithological piece: a headline regarding mass", "awareness of a certain avian variety.");
 			stage = 2;
 			break;
 		case 2:
@@ -60,7 +60,7 @@ public final class KreeJrDialogue extends DialoguePlugin {
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Oh have you not heard? It was my understanding that", "everyone had heard....");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Oh have you not heard? It was my understanding that", "everyone had heard....");
 			stage = 4;
 			break;
 		case 4:
@@ -68,7 +68,7 @@ public final class KreeJrDialogue extends DialoguePlugin {
 			stage = 5;
 			break;
 		case 5:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "OH WELL THE BIRD, BIRD, BIRD, BIRD", "BIRD IS THE WORD.", "OH WELL THE BIRD, BIRD, BIRD,", "BIRD BIRD IS THE WORD.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "OH WELL THE BIRD, BIRD, BIRD, BIRD", "BIRD IS THE WORD.", "OH WELL THE BIRD, BIRD, BIRD,", "BIRD BIRD IS THE WORD.");
 			stage = 6;
 			break;
 		case 6:

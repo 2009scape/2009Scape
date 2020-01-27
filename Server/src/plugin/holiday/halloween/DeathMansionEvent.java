@@ -307,7 +307,7 @@ public class DeathMansionEvent extends HolidayEvent {
 								item.search(player, target.asObject());
 							} else {
 								player.animate(Animation.create(7271));
-								player.getDialogueInterpreter().sendDialogues(player, FacialExpression.SUSPICIOUS_TWO, "Arrghhh! My eyes!");
+								player.getDialogueInterpreter().sendDialogues(player, FacialExpression.SUSPICIOUS, "Arrghhh! My eyes!");
 							}
 						}
 					});
@@ -322,7 +322,7 @@ public class DeathMansionEvent extends HolidayEvent {
 							} else {
 								player.getPacketDispatch().sendObjectAnimation(target.asObject(), Animation.create(7278));
 								player.animate(Animation.create(7272));
-								player.getDialogueInterpreter().sendDialogues(player, FacialExpression.DISGUSTED_TWO, "That wasn't such a good idea.");
+								player.getDialogueInterpreter().sendDialogues(player, FacialExpression.DISGUSTED, "That wasn't such a good idea.");
 							}
 						}
 					});
@@ -1658,7 +1658,7 @@ public class DeathMansionEvent extends HolidayEvent {
 			switch (stage) {
 			case 0:
 				npc.sendChat("Grrrrrrr");
-				interpreter.sendDialogues(player, FacialExpression.SUSPICIOUS_TWO, "Whoaah!");
+				interpreter.sendDialogues(player, FacialExpression.SUSPICIOUS, "Whoaah!");
 				stage++;
 				break;
 			case 1:

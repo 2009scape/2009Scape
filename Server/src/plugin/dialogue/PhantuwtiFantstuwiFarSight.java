@@ -55,26 +55,26 @@ public final class PhantuwtiFantstuwiFarSight extends DialoguePlugin {
 		case 0:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello, what is this place?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Hello, what is this place?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What do you do here?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What do you do here?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you have any quests?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Do you have any quests?");
 				stage = 30;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok, thanks.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ok, thanks.");
 				stage = 40;
 				break;
 
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "This is Seers Village! We're an organisation of mystically", "gifted people with the power of foresight...we see things", "that have yet to come to pass.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "This is Seers Village! We're an organisation of mystically", "gifted people with the power of foresight...we see things", "that have yet to come to pass.");
 			stage = 11;
 			break;
 		case 11:
@@ -82,11 +82,11 @@ public final class PhantuwtiFantstuwiFarSight extends DialoguePlugin {
 			stage = 0;
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "A lot of our time is spent adressing everyday sorts of", "things, plus we meditate a lot and ehhance our", "powers of mystical foresight.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "A lot of our time is spent adressing everyday sorts of", "things, plus we meditate a lot and ehhance our", "powers of mystical foresight.");
 			stage = 31;
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Unfortunately no, sorry, but if adventure is what you", "seek, try checking through your quest list!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Unfortunately no, sorry, but if adventure is what you", "seek, try checking through your quest list!");
 			stage = 31;
 			break;
 		case 31:

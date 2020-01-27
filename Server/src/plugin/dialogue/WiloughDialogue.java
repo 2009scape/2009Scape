@@ -58,11 +58,11 @@ public final class WiloughDialogue extends DialoguePlugin {
 		final Quest quest = player.getQuestRepository().getQuest("Gertrude's Cat");
 		switch (quest.getStage(player)) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello again.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Hello again.");
 			stage = 0;
 			break;
 		case 10:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello there, I've been looking for you.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Hello there, I've been looking for you.");
 			stage = 100;
 			break;
 		case 20:
@@ -73,7 +73,7 @@ public final class WiloughDialogue extends DialoguePlugin {
 			stage = 130;
 			break;
 		default:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello again.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Hello again.");
 			stage = 0;
 			break;
 		}
@@ -85,23 +85,23 @@ public final class WiloughDialogue extends DialoguePlugin {
 		final Quest quest = player.getQuestRepository().getQuest("Gertrude's Cat");
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(id, FacialExpression.NO_EXPRESSION, "You think you're tough do you?");
+			interpreter.sendDialogues(id, FacialExpression.HALF_GUILTY, "You think you're tough do you?");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Pardon?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Pardon?");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(id, FacialExpression.NO_EXPRESSION, "I can beat anyone up!");
+			interpreter.sendDialogues(id, FacialExpression.HALF_GUILTY, "I can beat anyone up!");
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(781, FacialExpression.NO_EXPRESSION, "He can you know!");
+			interpreter.sendDialogues(781, FacialExpression.HALF_GUILTY, "He can you know!");
 			stage = 4;
 			break;
 		case 4:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Really?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Really?");
 			stage = 5;
 			break;
 		case 5:
@@ -112,11 +112,11 @@ public final class WiloughDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 100:// stage 10
-			interpreter.sendDialogues(id, FacialExpression.NO_EXPRESSION, "I didn't mean to take it! I just forgot to pay.");
+			interpreter.sendDialogues(id, FacialExpression.HALF_GUILTY, "I didn't mean to take it! I just forgot to pay.");
 			stage = 101;
 			break;
 		case 101:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What? I'm trying to help your mum find Fluffs.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What? I'm trying to help your mum find Fluffs.");
 			stage = 102;
 			break;
 		case 102:
@@ -124,7 +124,7 @@ public final class WiloughDialogue extends DialoguePlugin {
 			stage = 103;
 			break;
 		case 103:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Where is this play area?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Where is this play area?");
 			stage = 104;
 			break;
 		case 104:
@@ -132,7 +132,7 @@ public final class WiloughDialogue extends DialoguePlugin {
 			stage = 105;
 			break;
 		case 105:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What will make you tell me?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What will make you tell me?");
 			stage = 106;
 			break;
 		case 106:
@@ -140,7 +140,7 @@ public final class WiloughDialogue extends DialoguePlugin {
 			stage = 107;
 			break;
 		case 107:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How much?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "How much?");
 			stage = 108;
 			break;
 		case 108:

@@ -64,34 +64,34 @@ public final class HarlanDialogue extends DialoguePlugin {
 		case 0:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you tell me about different weapon types I can", "use?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you tell me about different weapon types I can", "use?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Please tell me about skillcapes.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Please tell me about skillcapes.");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Bye.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Bye.");
 				stage = 30;
 				break;
 
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well let me see now...There are stabbing type weapons", "such as daggers, then you have swords which are", "slashing, maces that have great crushing abilities, battle", "axes which are powerful and spears which can be good");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well let me see now...There are stabbing type weapons", "such as daggers, then you have swords which are", "slashing, maces that have great crushing abilities, battle", "axes which are powerful and spears which can be good");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "for Defence and many forms of Attack.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "for Defence and many forms of Attack.");
 			stage = 12;
 			break;
 		case 12:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "It depends a lot on how you want to fight. Experiment", "and find out what is best for you. Never be scared to", "try out a new weapon; you never know, you might like", "it! Why, I tried all of them for a while and settled on");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "It depends a lot on how you want to fight. Experiment", "and find out what is best for you. Never be scared to", "try out a new weapon; you never know, you might like", "it! Why, I tried all of them for a while and settled on");
 			stage = 13;
 			break;
 		case 13:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "this rather good sword!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "this rather good sword!");
 			stage = 14;
 			break;
 		case 14:
@@ -101,11 +101,11 @@ public final class HarlanDialogue extends DialoguePlugin {
 		case 15:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'd like a training sword and shield.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'd like a training sword and shield.");
 				stage = 16;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Bye.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Bye.");
 				stage = 30;
 				break;
 			}

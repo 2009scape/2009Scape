@@ -39,7 +39,7 @@ public final class HarryDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Welcome! You can buy Fishing equipment at my store.", "We'll also give you a good price for any fish that you", "catch.");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Welcome! You can buy Fishing equipment at my store.", "We'll also give you a good price for any fish that you", "catch.");
 		stage = 0;
 		return true;
 	}
@@ -58,7 +58,7 @@ public final class HarryDialogue extends DialoguePlugin {
 				npc.openShop(player);
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, I'm not interested.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Sorry, I'm not interested.");
 				stage = 20;
 				break;
 			}

@@ -30,7 +30,7 @@ public class VanstromKlause extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello there, how goes it stranger?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hello there, how goes it stranger?");
 		stage = 0;
 		return true;
 	}
@@ -39,11 +39,11 @@ public class VanstromKlause extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Quite well thanks for asking, how about you?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Quite well thanks for asking, how about you?");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Quite well my self.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Quite well my self.");
 			stage = 2;
 			break;
 		case 2:

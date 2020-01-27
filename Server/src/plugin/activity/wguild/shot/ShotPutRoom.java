@@ -182,7 +182,7 @@ public final class ShotPutRoom extends DialoguePlugin {
 				if (!failed) {
 					player.getSavedData().getActivityData().updateWarriorTokens(tiles + (!lowWeight ? 2 : 0));
 					player.getSkills().addExperience(Skills.STRENGTH, tiles);
-					player.getDialogueInterpreter().sendDialogues(lowWeight ? 4299 : 4300, FacialExpression.NO_EXPRESSION, "Well done. You threw the shot " + (tiles - 1) + " yard" + (tiles > 2 ? "s!" : "!"));
+					player.getDialogueInterpreter().sendDialogues(lowWeight ? 4299 : 4300, FacialExpression.HALF_GUILTY, "Well done. You threw the shot " + (tiles - 1) + " yard" + (tiles > 2 ? "s!" : "!"));
 				}
 				GroundItemManager.create(new GroundItem(new Item(lowWeight ? 8858 : 8859), loc, 20, player));
 				return true;

@@ -14,10 +14,9 @@ public enum FacialExpression {
      */
 
     //Names based off https://runescape.wiki/w/Chathead/Animations
-    //Animation names recorded 2020-01-21
 
     //Chat heads from oldschool runescape?
-    //Maybe for gnomes? Chat heads are frozen when used on Human NPCs
+    //Maybe for gnomes or dwarves? Chat heads are frozen when used on Human NPCs
     OSRS_HAPPY(588),
     OSRS_NORMAL(594),
     OSRS_SNEAKY(595),
@@ -28,28 +27,45 @@ public enum FacialExpression {
     OSRS_LAUGH4(608), //TODO: More
 
     //Chatheads from 2009?
-    NO_EXPRESSION(9760),
-    SAD_TWO(9768), //This one did not have a name on the wiki
+    NOD_YES(9741),
+    WORRIED(9743),
+    HALF_WORRIED(9745), //Not on the wiki, first half of worried
+    AMAZED(9746),
+    EXTREMELY_SHOCKED(9750),
+    GUILTY(9758),
+    HALF_GUILTY(9760), //Not on the wiki, first half of guilty
+    SAD(9761),
+    CRYING(9765),
+    HALF_CRYING(9768), //Not on the wiki, but plays the first half of the crying animation
     AFRAID(9772),
     SCARED(9776),
     PANICKED(9780),
     ANNOYED(9784),
+    ANGRY(9785),
     FURIOUS(9792),
-    ANGRY(9796),
+    ANGRY_WITH_SMILE(9796), // Not on the wiki
+    ANGRY_WITH_SMILE_AND_EVIL_EYE(9798), //Not on the Wiki
+    SLEEPING(9802),
     SILENT(9804),
     NEUTRAL(9808),
     THINKING(9812),
+    HALF_THINKING(9814),
     DISGUSTED(9816),
-    DISGUSTED_TWO(9820), //Same as DISGUSTED?
+    DISGUSTED_HEAD_SHAKE(9823), //Not on the wiki
     ASKING(9827),
-    ASKING_TWO(9828),//Same as ASKING?
-    ROLLING_EYES(9831),
-    ROLLING_EYES_TWO(9832),//Same as ROLLING_EYES?
+    HALF_ASKING(9830), //Not on wiki, first half of Asking
+    ROLLING_EYES(9831), //9832, 9833 are the same
+    HALF_ROLLING_EYES(9834), //Not on Wiki, first half of Rolling eyes
     DRUNK(9835),
-    SUSPICIOUS_TWO(9836),
+    SUSPICIOUS(9836),
     LAUGH(9840),
+    LOUDLY_LAUGHING(9841),
+    EVIL_LAUGH(9842),
     FRIENDLY(9844),
+    HAPPY(9847),
     JOLLY(9851),
+    STRUGGLE(9865), //TODO: More?
+    //9855-9857 are like disgusted? does it just repeat after this?
 
     //Child Chathead?
     CHILD_EVIL_LAUGH(7171),
@@ -60,7 +76,7 @@ public enum FacialExpression {
     CHILD_THINKING(7176),
     CHILD_SAD(7177),
     CHILD_GUILTY(7178),
-    CHILD_SUSPICIOUS(7179);
+    CHILD_SUSPICIOUS(7179); //TODO: More?
 
 
 

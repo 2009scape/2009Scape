@@ -39,7 +39,7 @@ public class MalakDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Away from me, dog.", "I have business to discuss with the barkeeper.");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Away from me, dog.", "I have business to discuss with the barkeeper.");
 		stage = 0;
 		return true;
 	}

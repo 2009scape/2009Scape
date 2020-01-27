@@ -39,7 +39,7 @@ public final class JackSeagullDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Arrr, matey!");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Arrr, matey!");
 		stage = 0;
 		return true;
 	}
@@ -54,32 +54,32 @@ public final class JackSeagullDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What are you doing here?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What are you doing here?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Have you got any quests I could do?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Have you got any quests I could do?");
 				stage = 20;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Drinking.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Drinking.");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Fair enough.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Fair enough.");
 			stage = 12;
 			break;
 		case 12:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Nay, I've nothing for ye to do.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Nay, I've nothing for ye to do.");
 			stage = 21;
 			break;
 		case 21:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Thanks.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Thanks.");
 			stage = 22;
 			break;
 		case 22:

@@ -43,27 +43,27 @@ public final class GoblinVillageDialogue extends DialoguePlugin {
 		int rand = RandomFunction.random(5);
 		switch (rand) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I kill you human!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I kill you human!");
 			stage = 0;
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Go away smelly human!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Go away smelly human!");
 			stage = 300;
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Happy goblin new century!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Happy goblin new century!");
 			stage = 100;
 			break;
 		case 3:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What you doing here?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "What you doing here?");
 			stage = 200;
 			break;
 		case 4:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Brown armour best!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Brown armour best!");
 			stage = 800;
 			break;
 		case 5:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Go away smelly human!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Go away smelly human!");
 			stage = 300;
 			break;
 		}
@@ -84,11 +84,11 @@ public final class GoblinVillageDialogue extends DialoguePlugin {
 		case 101:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Happy new century!");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Happy new century!");
 				stage = 169;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What is the goblin new century?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What is the goblin new century?");
 				stage = 102;
 				break;
 			}
@@ -97,7 +97,7 @@ public final class GoblinVillageDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 102:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You tell human secrets!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "You tell human secrets!");
 			stage = 103;
 			break;
 		case 103:
@@ -110,32 +110,32 @@ public final class GoblinVillageDialogue extends DialoguePlugin {
 		case 201:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm here to kill all you goblins!");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'm here to kill all you goblins!");
 				stage = 143;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm just looking around.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'm just looking around.");
 				stage = 260;
 				break;
 			}
 			break;
 		case 143:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I kill you!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I kill you!");
 			stage = 0;
 			break;
 		case 260:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Me not sure that allowed. You have to check with", "generals.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Me not sure that allowed. You have to check with", "generals.");
 			stage = 261;
 			break;
 		case 261:
 			end();
 			break;
 		case 300:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What you call me?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "What you call me?");
 			stage = 301;
 			break;
 		case 301:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I kill you human!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I kill you human!");
 			stage = 0;
 			break;
 		case 800:
@@ -145,11 +145,11 @@ public final class GoblinVillageDialogue extends DialoguePlugin {
 		case 801:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Err ok.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Err ok.");
 				stage = 810;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Why is brown best?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Why is brown best?");
 				stage = 820;
 				break;
 			}
@@ -158,7 +158,7 @@ public final class GoblinVillageDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 820:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "General Wartface and General Bentnoze both say it is.", "And normally they never agree!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "General Wartface and General Bentnoze both say it is.", "And normally they never agree!");
 			stage = 821;
 			break;
 		case 821:

@@ -181,11 +181,11 @@ public final class AggieDialogue extends DialoguePlugin {
 		case 727:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes please. Mix me some skin paste.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes please. Mix me some skin paste.");
 				stage = 731;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thank you, I don't need any skin paste right now.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No thank you, I don't need any skin paste right now.");
 				stage = 729;
 				break;
 			}

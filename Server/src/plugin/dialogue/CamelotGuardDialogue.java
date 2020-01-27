@@ -35,7 +35,7 @@ public final class CamelotGuardDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Welcome to the Seer's Village courthouse. Court", "is not in session today, so you're not allowed downstairs.");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Welcome to the Seer's Village courthouse. Court", "is not in session today, so you're not allowed downstairs.");
 		stage = 0;
 		return true;
 	}

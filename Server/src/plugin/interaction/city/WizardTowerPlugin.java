@@ -550,7 +550,7 @@ public final class WizardTowerPlugin extends OptionHandler {
 		@Override
 		public boolean open(Object... args) {
 			npc = (NPC) args[0];
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Not now, I'm trying to concentrate on a very difficult", "spell!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Not now, I'm trying to concentrate on a very difficult", "spell!");
 			stage = 0;
 			return true;
 		}
@@ -608,7 +608,7 @@ public final class WizardTowerPlugin extends OptionHandler {
 		@Override
 		public boolean open(Object... args) {
 			npc = (NPC) args[0];
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello there, can I help you?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hello there, can I help you?");
 			stage = 0;
 			return true;
 		}
@@ -623,25 +623,25 @@ public final class WizardTowerPlugin extends OptionHandler {
 			case 1:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What do you do here?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What do you do here?");
 					stage = 10;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What's that you're wearing?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What's that you're wearing?");
 					stage = 20;
 					break;
 				case 3:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you make me some armour please?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you make me some armour please?");
 					stage = 30;
 					break;
 				case 4:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thanks.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No thanks.");
 					stage = 40;
 					break;
 				}
 				break;
 			case 30:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Certainly, what would like to me to make?");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Certainly, what would like to me to make?");
 				stage = 31;
 				break;
 			case 31:
@@ -692,11 +692,11 @@ public final class WizardTowerPlugin extends OptionHandler {
 				end();
 				break;
 			case 20:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Split-bark armour is special armour for mages, it's much", "more resistant to physical attacks than normal robes.", "It's actually very easy for me to make, but I've been", "having trouble getting hold of the pieces.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Split-bark armour is special armour for mages, it's much", "more resistant to physical attacks than normal robes.", "It's actually very easy for me to make, but I've been", "having trouble getting hold of the pieces.");
 				stage = 14;
 				break;
 			case 10:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I've been studying the practice of making split-bark", "armour.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I've been studying the practice of making split-bark", "armour.");
 				stage = 11;
 				break;
 			case 11:
@@ -706,17 +706,17 @@ public final class WizardTowerPlugin extends OptionHandler {
 			case 12:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Split-bark armour, what's that?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Split-bark armour, what's that?");
 					stage = 13;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you make me some?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you make me some?");
 					stage = 9000;
 					break;
 				}
 				break;
 			case 13:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Split-bark armour is special armour for mages, it's much", "more resistant to physical attacks than normal robes.", "It's actually very easy for me to make, but I've been", "having trouble getting hold of the pieces.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Split-bark armour is special armour for mages, it's much", "more resistant to physical attacks than normal robes.", "It's actually very easy for me to make, but I've been", "having trouble getting hold of the pieces.");
 				stage = 14;
 				break;
 			case 14:
@@ -726,11 +726,11 @@ public final class WizardTowerPlugin extends OptionHandler {
 			case 15:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Well good luck with that.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Well good luck with that.");
 					stage = 16;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you make me some?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you make me some?");
 					stage = 9000;
 					break;
 				}
@@ -739,11 +739,11 @@ public final class WizardTowerPlugin extends OptionHandler {
 				end();
 				break;
 			case 9000:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I need bark from a hollow tree, and some fine cloth.", "Unfortunately both these items can be found in", "Morytania, especially the cloth which is found in the", "tombs of shades.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I need bark from a hollow tree, and some fine cloth.", "Unfortunately both these items can be found in", "Morytania, especially the cloth which is found in the", "tombs of shades.");
 				stage = 9001;
 				break;
 			case 9001:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Of course I'd happily sell you some at a discounted", "price if you bring me those items.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Of course I'd happily sell you some at a discounted", "price if you bring me those items.");
 				stage = 9002;
 				break;
 			case 9002:
@@ -753,11 +753,11 @@ public final class WizardTowerPlugin extends OptionHandler {
 			case 9003:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok, guess I'll go looking then!");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ok, guess I'll go looking then!");
 					stage = 9004;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok, how much do I need?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ok, how much do I need?");
 					stage = 9005;
 					break;
 				}
@@ -766,15 +766,15 @@ public final class WizardTowerPlugin extends OptionHandler {
 				end();
 				break;
 			case 9005:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "1 need 1 piece of each for either gloves or boots,", "2 pieces of each for a hat,", "3 pieces of each for leggings,", "and 4 pieces of each for a top.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "1 need 1 piece of each for either gloves or boots,", "2 pieces of each for a hat,", "3 pieces of each for leggings,", "and 4 pieces of each for a top.");
 				stage = 9006;
 				break;
 			case 9006:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'll charge you 1,000 coins for either gloves or boots,", "6,000 coins for a hat", "32,000 coins for leggings,", "and 37,000 for a top.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I'll charge you 1,000 coins for either gloves or boots,", "6,000 coins for a hat", "32,000 coins for leggings,", "and 37,000 for a top.");
 				stage = 9007;
 				break;
 			case 9007:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok, guess I'll go looking then!");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ok, guess I'll go looking then!");
 				stage = 9008;
 				break;
 			case 9008:
@@ -1023,7 +1023,7 @@ public final class WizardTowerPlugin extends OptionHandler {
 		@Override
 		public boolean open(Object... args) {
 			npc = (NPC) args[0];
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Welcome adventurer, to the world renowned", "Wizards' Tower. How may I help you?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Welcome adventurer, to the world renowned", "Wizards' Tower. How may I help you?");
 			stage = 0;
 			return true;
 		}
@@ -1062,7 +1062,7 @@ public final class WizardTowerPlugin extends OptionHandler {
 				stage = 1;
 				break;
 			case 400:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello again " + player.getUsername() + ". What can I do for you?");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hello again " + player.getUsername() + ". What can I do for you?");
 				stage = 401;
 				break;
 			case 401:
@@ -1072,17 +1072,17 @@ public final class WizardTowerPlugin extends OptionHandler {
 			case 402:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Nothing thanks, I'm just looking around.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Nothing thanks, I'm just looking around.");
 					stage = 403;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you teleport me to the Rune Essence?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you teleport me to the Rune Essence?");
 					stage = 405;
 					break;
 				}
 				break;
 			case 403:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, take care adventurer. You stand on the", "ruins of the old destroyed Wizards' Tower.", "Strange and powerful magicks lurk here,");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well, take care adventurer. You stand on the", "ruins of the old destroyed Wizards' Tower.", "Strange and powerful magicks lurk here,");
 				stage = 404;
 				break;
 			case 404:
@@ -1272,29 +1272,29 @@ public final class WizardTowerPlugin extends OptionHandler {
 			case 1000:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Nothing thanks, I'm just looking around.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Nothing thanks, I'm just looking around.");
 					stage = 10;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What are you doing down here?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What are you doing down here?");
 					stage = 20;
 					break;
 				case 3:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm looking for the head wizard.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'm looking for the head wizard.");
 					stage = 30;
 					break;
 				}
 				break;
 			case 30:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh, you are, are you?", "And just why would you be doing that?");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh, you are, are you?", "And just why would you be doing that?");
 				stage = 31;
 				break;
 			case 31:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "The Duke of Lumbridge sent me to find him. I have", "this weird talisman he found. He said the head wizard", "would be very interested in it.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "The Duke of Lumbridge sent me to find him. I have", "this weird talisman he found. He said the head wizard", "would be very interested in it.");
 				stage = 32;
 				break;
 			case 32:// ...except I don't have it with me..."
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Did he now? HmmmMMMMMmmmmm.", "Well that IS interesting. Hand it over then adventurer,", "let me see what all the hubbub about it is.", "Just come amulet I'll wager.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Did he now? HmmmMMMMMmmmmm.", "Well that IS interesting. Hand it over then adventurer,", "let me see what all the hubbub about it is.", "Just come amulet I'll wager.");
 				stage = 33;
 				break;
 			case 33:
@@ -1304,18 +1304,18 @@ public final class WizardTowerPlugin extends OptionHandler {
 			case 34:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok, here you are.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ok, here you are.");
 					stage = 50;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, I'll only give it to the head wizard.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No, I'll only give it to the head wizard.");
 					stage = 40;
 					break;
 				}
 				break;
 			case 50:
 				if (!player.getInventory().containsItem(TALISMAN)) {
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "...except I don't have it with me...");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "...except I don't have it with me...");
 					stage = 99;
 					break;
 				}
@@ -1411,7 +1411,7 @@ public final class WizardTowerPlugin extends OptionHandler {
 				end();
 				break;
 			case 40:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "HA HA HA HA HA! I can tell you are new to this", "land, for I AM the head wizard! Hand it over and", "let me have a proper look at it, hmmm?");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "HA HA HA HA HA! I can tell you are new to this", "land, for I AM the head wizard! Hand it over and", "let me have a proper look at it, hmmm?");
 				stage = 41;
 				break;
 			case 41:
@@ -1421,36 +1421,36 @@ public final class WizardTowerPlugin extends OptionHandler {
 			case 1:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Nothing thanks, I'm just looking around.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Nothing thanks, I'm just looking around.");
 					stage = 10;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What are you doing down here?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What are you doing down here?");
 					stage = 20;
 					break;
 				}
 				break;
 			case 10:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, take care adventurer. You stand on the", "ruins of the destroyed Wizards' Tower.", "Strange and powerful magicks lurk here.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well, take care adventurer. You stand on the", "ruins of the destroyed Wizards' Tower.", "Strange and powerful magicks lurk here.");
 				stage = 11;
 				break;
 			case 11:
 				end();
 				break;
 			case 20:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "That is indeed a good question. Here in the cellar", "of the Wizards' Tower you find the remains of", "the old Wizards' Tower, destroyed by fire");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "That is indeed a good question. Here in the cellar", "of the Wizards' Tower you find the remains of", "the old Wizards' Tower, destroyed by fire");
 				stage = 21;
 				break;
 			case 21:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "many years past by the treachery of the Zamorakians.", "Many mytseries were lost, which we try to find once", "more. By building this tower on the remains of the old,");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "many years past by the treachery of the Zamorakians.", "Many mytseries were lost, which we try to find once", "more. By building this tower on the remains of the old,");
 				stage = 22;
 				break;
 			case 22:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "we sought to show the world of our dedication to", "learning the mysteries of Magic. I am here searching", "through these fragments for knowledge from", "the artefacts from our past.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "we sought to show the world of our dedication to", "learning the mysteries of Magic. I am here searching", "through these fragments for knowledge from", "the artefacts from our past.");
 				stage = 23;
 				break;
 			case 23:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "And have you found anything useful?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "And have you found anything useful?");
 				stage = 24;
 				break;
 			case 24:
@@ -1458,19 +1458,19 @@ public final class WizardTowerPlugin extends OptionHandler {
 				stage = 25;
 				break;
 			case 25:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok, well I'll leave you to it.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ok, well I'll leave you to it.");
 				stage = 26;
 				break;
 			case 26:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Perhaphs I will see you later " + player.getUsername() + ".");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Perhaphs I will see you later " + player.getUsername() + ".");
 				stage = 27;
 				break;
 			case 27:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How did you know my name???");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "How did you know my name???");
 				stage = 28;
 				break;
 			case 28:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, I AM the head wizard here...");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well, I AM the head wizard here...");
 				stage = 29;
 				break;
 			case 29:
@@ -1539,7 +1539,7 @@ public final class WizardTowerPlugin extends OptionHandler {
 				options("Can I buy a Skillcape of Runecrafting?", "Something else");
 				stage = 450;
 			} else {
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Do you want to buy some runes?");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Do you want to buy some runes?");
 			}
 			return true;
 		}
@@ -1685,11 +1685,11 @@ public final class WizardTowerPlugin extends OptionHandler {
 						end();
 						break;
 					case 2:
-						interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thanks.");
+						interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No thanks.");
 						stage = 10;
 						break;
 					case 3:
-						interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you teleport me to the rune essence?");
+						interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you teleport me to the rune essence?");
 						stage = 11;
 						break;
 					}
@@ -1727,7 +1727,7 @@ public final class WizardTowerPlugin extends OptionHandler {
 					stage = 2;
 					break;
 				case 2:
-					interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Do you want to buy some runes?");
+					interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Do you want to buy some runes?");
 					stage = 0;
 					break;
 				}

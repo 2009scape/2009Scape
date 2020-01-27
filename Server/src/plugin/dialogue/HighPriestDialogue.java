@@ -39,7 +39,7 @@ public final class HighPriestDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Many greetings. Welcome to our fair island.");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Many greetings. Welcome to our fair island.");
 		stage = 0;
 		return true;
 	}
@@ -48,7 +48,7 @@ public final class HighPriestDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Enjoy our stay here. May it be spiritually uplifting!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Enjoy our stay here. May it be spiritually uplifting!");
 			stage = 1;
 			break;
 		case 1:

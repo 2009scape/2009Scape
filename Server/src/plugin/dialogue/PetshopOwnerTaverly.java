@@ -78,15 +78,15 @@ public final class PetshopOwnerTaverly extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can I see your shop please?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can I see your shop please?");
 				stage = 100;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How much is that puppy in the window?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "How much is that puppy in the window?");
 				stage = 200;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "So, what sorts of pets are available?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "So, what sorts of pets are available?");
 				stage = 300;
 				break;
 			}
@@ -96,7 +96,7 @@ public final class PetshopOwnerTaverly extends DialoguePlugin {
 			npc.openShop(player);
 			break;
 		case 200:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "The one with the waggly tail?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "The one with the waggly tail?");
 			stage = 201;
 			break;
 		case 201:
@@ -106,31 +106,31 @@ public final class PetshopOwnerTaverly extends DialoguePlugin {
 		case 202:
 			break;
 		case 300:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, here we sell dogs, but we also have supplies for any", "other creatures you might want to raise.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well, here we sell dogs, but we also have supplies for any", "other creatures you might want to raise.");
 			stage = 301;
 			break;
 		case 301:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Such as?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Such as?");
 			stage = 302;
 			break;
 		case 302:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, we sell nuts. Those can be used to feed squirrels. If", "you want to capture a squirrel, you'll need to use the nuts", "on the trap you set, as the little scamps won't be fooled", "by anything else.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well, we sell nuts. Those can be used to feed squirrels. If", "you want to capture a squirrel, you'll need to use the nuts", "on the trap you set, as the little scamps won't be fooled", "by anything else.");
 			stage = 303;
 			break;
 		case 303:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'll bear that in mind.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'll bear that in mind.");
 			stage = 304;
 			break;
 		case 304:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "There are also a number of fabulous and exotic lizards in", "Karmja. Some can be caught easily in a box trap, while", "other will need to be raised from an egg.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "There are also a number of fabulous and exotic lizards in", "Karmja. Some can be caught easily in a box trap, while", "other will need to be raised from an egg.");
 			stage = 305;
 			break;
 		case 305:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Thank's alot! You've been very helpfull.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Thank's alot! You've been very helpfull.");
 			stage = 306;
 			break;
 		case 306:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "It's always a pleasure to help a fellow animal-lover. Come", "back and visit soon.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "It's always a pleasure to help a fellow animal-lover. Come", "back and visit soon.");
 			stage = 307;
 			break;
 		case 307:

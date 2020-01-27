@@ -43,7 +43,7 @@ public final class GrandExchangeClerk extends DialoguePlugin {
 		if (args.length > 0 && args[0] instanceof NPC) {
 			npc = (NPC) args[0];
 		}
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hi there.");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Hi there.");
 		stage = 0;
 		return true;
 	}
@@ -67,23 +67,23 @@ public final class GrandExchangeClerk extends DialoguePlugin {
 		case 2:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I want to access the Grand Exchange, please.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I want to access the Grand Exchange, please.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I want to collect my items.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I want to collect my items.");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can I see history of my offers?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can I see history of my offers?");
 				stage = 30;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you help me with item sets?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you help me with item sets?");
 				stage = 40;
 				break;
 			case 5:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm fine actually.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'm fine actually.");
 				stage = 50;
 				break;
 			}

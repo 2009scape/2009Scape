@@ -46,7 +46,7 @@ public final class JaraahDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hi!");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Hi!");
 		stage = 0;
 		return true;
 	}
@@ -55,7 +55,7 @@ public final class JaraahDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What? Can't you see I'm busy?!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "What? Can't you see I'm busy?!");
 			stage = 1;
 			break;
 		case 1:
@@ -65,30 +65,30 @@ public final class JaraahDialogue extends DialoguePlugin {
 		case 2:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you heal me?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you heal me?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "You must see some gruesome things?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "You must see some gruesome things?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Why do they call you 'The Butcher'?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Why do they call you 'The Butcher'?");
 				stage = 30;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "OK. This will hurt you more than it will me.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "OK. This will hurt you more than it will me.");
 			stage = 11;
 			break;
 		case 11:
 			npc.animate(ANIMATION);
 			if (player.getSkills().getLifepoints() == player.getSkills().getStaticLevel(Skills.HITPOINTS)) {
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You look healthy to me!");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "You look healthy to me!");
 			} else {
 				player.getSkills().heal(player.getSkills().getStaticLevel(Skills.HITPOINTS));
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "There you go!");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "There you go!");
 			}
 			stage = 12;
 			break;
@@ -96,14 +96,14 @@ public final class JaraahDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "It's a gruesome business and with the tools they give", "me it gets more gruesome before it gets better!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "It's a gruesome business and with the tools they give", "me it gets more gruesome before it gets better!");
 			stage = 21;
 			break;
 		case 21:
 			end();
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I often have to amputate peoples limbs!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I often have to amputate peoples limbs!");
 			stage = 31;
 			break;
 		case 31:

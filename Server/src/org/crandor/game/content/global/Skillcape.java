@@ -32,11 +32,11 @@ public final class Skillcape {
 			return false;
 		}
 		if (player.getInventory().freeSlots() < 2) {
-			player.getDialogueInterpreter().sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, I don't seem to have inventory space.");
+			player.getDialogueInterpreter().sendDialogues(player, FacialExpression.HALF_GUILTY, "Sorry, I don't seem to have inventory space.");
 			return false;
 		}
 		if (!player.getInventory().containsItem(COINS)) {
-			player.getDialogueInterpreter().sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sorry, I don't seem to have enough coins with", "me at this time.");
+			player.getDialogueInterpreter().sendDialogues(player, FacialExpression.HALF_GUILTY, "Sorry, I don't seem to have enough coins with", "me at this time.");
 			return false;
 		}
 		if (player.getInventory().remove(COINS)) {

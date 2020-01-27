@@ -46,7 +46,7 @@ public class OllieTheCamelDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I wonder if that camel has fleas...");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I wonder if that camel has fleas...");
 		stage = 0;
 		return true;
 	}

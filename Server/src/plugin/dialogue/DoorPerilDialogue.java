@@ -66,11 +66,11 @@ public final class DoorPerilDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ummmm.....");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ummmm.....");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Roald sent me to check on Drezel.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Roald sent me to check on Drezel.");
 			stage = 2;
 			break;
 		case 2:
@@ -78,7 +78,7 @@ public final class DoorPerilDialogue extends DialoguePlugin {
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Well, as I say, the King sent me to make sure", "everything's okay with you.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Well, as I say, the King sent me to make sure", "everything's okay with you.");
 			stage = 4;
 			break;
 		case 4:
@@ -86,7 +86,7 @@ public final class DoorPerilDialogue extends DialoguePlugin {
 			stage = 5;
 			break;
 		case 5:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm not sure. Ask you what help you need I suppose.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'm not sure. Ask you what help you need I suppose.");
 			stage = 6;
 			break;
 		case 6:
@@ -94,7 +94,7 @@ public final class DoorPerilDialogue extends DialoguePlugin {
 			stage = 7;
 			break;
 		case 7:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sure. I'm a helpful person!");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Sure. I'm a helpful person!");
 			stage = 8;
 			break;
 		case 8:
@@ -102,7 +102,7 @@ public final class DoorPerilDialogue extends DialoguePlugin {
 			stage = 9;
 			break;
 		case 9:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Okey-dokey, one dead dog coming up.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Okey-dokey, one dead dog coming up.");
 			stage = 10;
 			break;
 		case 10:
@@ -111,7 +111,7 @@ public final class DoorPerilDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 11:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I killed that dog for you.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I killed that dog for you.");
 			stage = 12;
 			break;
 		case 12:
@@ -119,7 +119,7 @@ public final class DoorPerilDialogue extends DialoguePlugin {
 			stage = 13;
 			break;
 		case 13:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What's so funny?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What's so funny?");
 			stage = 14;
 			break;
 		case 14:

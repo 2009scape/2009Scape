@@ -59,7 +59,7 @@ public final class ShantayGuard extends DialoguePlugin {
 			return true;
 		}
 		if (npc != null && npc.getId() != 837) {
-			interpreter.sendDialogues(838, FacialExpression.NO_EXPRESSION, "Hello there!");
+			interpreter.sendDialogues(838, FacialExpression.HALF_GUILTY, "Hello there!");
 			stage = 0;
 		} else {
 			interpreter.sendDialogues(838, null, "Go talk to Shantay. I'm on duty and I don't have time", "to talk to the likes of you!");
@@ -72,7 +72,7 @@ public final class ShantayGuard extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(838, FacialExpression.NO_EXPRESSION, "What can I do for you?");
+			interpreter.sendDialogues(838, FacialExpression.HALF_GUILTY, "What can I do for you?");
 			stage = 1;
 			break;
 		case 1:
@@ -82,7 +82,7 @@ public final class ShantayGuard extends DialoguePlugin {
 		case 2:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'd like to go into the desert please.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'd like to go into the desert please.");
 				stage = 10;
 				break;
 			case 2:
@@ -91,7 +91,7 @@ public final class ShantayGuard extends DialoguePlugin {
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(838, FacialExpression.NO_EXPRESSION, "Of course!");
+			interpreter.sendDialogues(838, FacialExpression.HALF_GUILTY, "Of course!");
 			stage = 11;
 			break;
 		case 11:

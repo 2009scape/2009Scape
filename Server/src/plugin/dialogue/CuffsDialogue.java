@@ -39,7 +39,7 @@ public final class CuffsDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello. nice day for a walk, isn't it?");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Hello. nice day for a walk, isn't it?");
 		stage = 0;
 		return true;
 	}
@@ -48,19 +48,19 @@ public final class CuffsDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "A walk? Oh, yes, that's what we're doing.", "We're just out here for a walk.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "A walk? Oh, yes, that's what we're doing.", "We're just out here for a walk.");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm glad you're just out here for a walk. A more suspicious", "person would think you were waiting here to attack weak-", "looking travellers.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'm glad you're just out here for a walk. A more suspicious", "person would think you were waiting here to attack weak-", "looking travellers.");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Nope, we'd never do anuthing like that.", "Just a band of innocent walkers, that's us.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Nope, we'd never do anuthing like that.", "Just a band of innocent walkers, that's us.");
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Alright, have a nice walk.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Alright, have a nice walk.");
 			stage = 4;
 			break;
 		case 4:

@@ -39,7 +39,7 @@ public final class FaladorGardenerDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello.");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Hello.");
 		stage = 0;
 		return true;
 	}
@@ -48,11 +48,11 @@ public final class FaladorGardenerDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oi'm busy. If tha' wants owt, tha' can go find Wyson.", "He's ta boss 'round here. And,", "KEEP YE' TRAMPIN' FEET OFF MA'FLOWERS!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oi'm busy. If tha' wants owt, tha' can go find Wyson.", "He's ta boss 'round here. And,", "KEEP YE' TRAMPIN' FEET OFF MA'FLOWERS!");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Right...");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Right...");
 			stage = 2;
 			break;
 		case 2:

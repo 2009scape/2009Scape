@@ -39,7 +39,7 @@ public final class PatchyDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Aye, can I help ye at all?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Aye, can I help ye at all?");
 		stage = 0;
 		return true;
 	}

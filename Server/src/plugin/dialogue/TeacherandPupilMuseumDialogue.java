@@ -46,7 +46,7 @@ public class TeacherandPupilMuseumDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(5950, FacialExpression.NO_EXPRESSION, "Stop pulling, we've plenty of time to see everything.");
+		interpreter.sendDialogues(5950, FacialExpression.HALF_GUILTY, "Stop pulling, we've plenty of time to see everything.");
 		stage = 0;
 		return true;
 	}

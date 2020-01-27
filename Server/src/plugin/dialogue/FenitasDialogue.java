@@ -39,7 +39,7 @@ public final class FenitasDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Would you like to buy some cooking equipment?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Would you like to buy some cooking equipment?");
 		stage = 0;
 		return true;
 	}
@@ -48,7 +48,7 @@ public final class FenitasDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes please.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes please.");
 			stage = 1;
 			break;
 		case 1:

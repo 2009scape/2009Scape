@@ -53,7 +53,7 @@ public final class KlarenseDialogue extends DialoguePlugin {
 		npc = (NPC) args[0];
 		quest = player.getQuestRepository().getQuest("Dragon Slayer");
 		if (args.length > 1) {
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hey, stay off my ship! That's private property!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hey, stay off my ship! That's private property!");
 			stage = 0;
 			return true;
 		}
@@ -68,7 +68,7 @@ public final class KlarenseDialogue extends DialoguePlugin {
 				stage = 400;
 				return true;
 			}
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "So, are you interested in buying the Lady Lumbridge?", "Now, I'll be straight with you: she's not quite seaworthy", "right now, but give her a bit of work and she'll be the", "nippiest ship this side of Port Khazard.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "So, are you interested in buying the Lady Lumbridge?", "Now, I'll be straight with you: she's not quite seaworthy", "right now, but give her a bit of work and she'll be the", "nippiest ship this side of Port Khazard.");
 			stage = 1;
 			break;
 		}
@@ -182,40 +182,40 @@ public final class KlarenseDialogue extends DialoguePlugin {
 			case 2:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you know when she will be seaworthy?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Do you know when she will be seaworthy?");
 					stage = 10;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Why is she damaged?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Why is she damaged?");
 					stage = 20;
 					break;
 				case 3:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ah, well, never mind.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ah, well, never mind.");
 					stage = 30;
 					break;
 				}
 				break;
 			case 10:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "No, not really. Port Sarim's shipbuilders aren't very", "efficient so it could be quite a while.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "No, not really. Port Sarim's shipbuilders aren't very", "efficient so it could be quite a while.");
 				stage = 11;
 				break;
 			case 11:
 				end();
 				break;
 			case 20:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh, there was no particular accident. It's just years of", "wear and tear.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh, there was no particular accident. It's just years of", "wear and tear.");
 				stage = 21;
 				break;
 			case 21:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "The Lady Lumbridge is an old crandorian fishing ship -", "the last one of her kind, as far as I know. That kind of", "ship was always mightily manoeuvrable, but not too", "tough.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "The Lady Lumbridge is an old crandorian fishing ship -", "the last one of her kind, as far as I know. That kind of", "ship was always mightily manoeuvrable, but not too", "tough.");
 				stage = 22;
 				break;
 			case 22:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "She happend to be somewhere else when Crandor was", "destroyed, and she's had serveral owners since then. Not", "all of them have looked after her too well,");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "She happend to be somewhere else when Crandor was", "destroyed, and she's had serveral owners since then. Not", "all of them have looked after her too well,");
 				stage = 23;
 				break;
 			case 23:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "but once she's patched up, she'll be good as new!");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "but once she's patched up, she'll be good as new!");
 				stage = 24;
 				break;
 			case 24:

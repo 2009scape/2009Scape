@@ -39,7 +39,7 @@ public final class GarvDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello. What do you want?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hello. What do you want?");
 		stage = 0;
 		return true;
 	}
@@ -54,24 +54,24 @@ public final class GarvDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can I go in there?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can I go in there?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I want for nothing!");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I want for nothing!");
 				stage = 20;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "No. In there is private.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "No. In there is private.");
 			stage = 11;
 			break;
 		case 11:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You're one of a very lucky few then.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "You're one of a very lucky few then.");
 			stage = 21;
 			break;
 		case 21:

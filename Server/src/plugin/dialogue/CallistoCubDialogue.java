@@ -39,7 +39,7 @@ public final class CallistoCubDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Why the grizzly face?");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Why the grizzly face?");
 		stage = 0;
 		return true;
 	}
@@ -52,7 +52,7 @@ public final class CallistoCubDialogue extends DialoguePlugin {
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "You should get in the.... sun more.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "You should get in the.... sun more.");
 			stage = 2;
 			break;
 		case 2:
@@ -60,7 +60,7 @@ public final class CallistoCubDialogue extends DialoguePlugin {
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "One second, let me take a picture of you with my....", "kodiak camera.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "One second, let me take a picture of you with my....", "kodiak camera.");
 			stage = 4;
 			break;
 		case 4:

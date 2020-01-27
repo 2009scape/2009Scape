@@ -50,7 +50,7 @@ public final class WiseOldManDialogue extends DialoguePlugin {
     @Override
     public boolean open(Object... args) {
 	npc = (NPC) args[0];
-	interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Greetings, " + player.getUsername() + ",");
+	interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Greetings, " + player.getUsername() + ",");
 	stage = 0;
 	return true;
     }
@@ -131,7 +131,7 @@ public final class WiseOldManDialogue extends DialoguePlugin {
 	case 1:
 	    switch (buttonId) {
 	    case 1:
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Is there anything I can do for you?");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Is there anything I can do for you?");
 		stage = 10;
 		break;
 	    case 2:
@@ -139,14 +139,14 @@ public final class WiseOldManDialogue extends DialoguePlugin {
 		stage = 20;
 		break;
 	    case 3:
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I've got something I'd like you to look at.");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I've got something I'd like you to look at.");
 		stage = 30;
 		break;
 	    }
 
 	    break;
 	case 10:
-	    interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Thanks, but I don't have anything I need.");
+	    interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Thanks, but I don't have anything I need.");
 	    stage = 11;
 	    break;
 	case 11:
@@ -155,29 +155,29 @@ public final class WiseOldManDialogue extends DialoguePlugin {
 	case 20:
 	    switch (buttonId) {
 	    case 1:
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Certainly, but I should warn you that I don't know about", "all items.");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Certainly, but I should warn you that I don't know about", "all items.");
 		stage = 100;
 		break;
 	    case 2:
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Certainly, but I should warn you that I don't know about", "all items.");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Certainly, but I should warn you that I don't know about", "all items.");
 		stage = 102;
 		break;
 	    }
 
 	    break;
 	case 100:
-	    interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You seem to have no junk in your bank, sorry.");
+	    interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "You seem to have no junk in your bank, sorry.");
 	    stage = 101;
 	    break;
 	case 101:
 	    end();
 	    break;
 	case 102:
-	    interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You seem to have no junk in your inventory, sorry.");
+	    interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "You seem to have no junk in your inventory, sorry.");
 	    stage = 101;
 	    break;
 	case 30:
-	    interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Jolly good. Give it to me, and I'll tell you anything I know", "about it.");
+	    interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Jolly good. Give it to me, and I'll tell you anything I know", "about it.");
 	    stage = 31;
 	    break;
 	case 31:

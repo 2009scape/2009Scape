@@ -38,15 +38,15 @@ public class RomilyWeaklaxDialogue extends DialoguePlugin {
 
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'd like to buy some pies.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'd like to buy some pies.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you need any help?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Do you need any help?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm good thanks.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'm good thanks.");
 				stage = 50;
 				break;
 			}
@@ -57,7 +57,7 @@ public class RomilyWeaklaxDialogue extends DialoguePlugin {
 			npc.openShop(player);
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Actually I could, you see I'm running out of stock and I", "don't have tme to bake any more pies. would you be", "willing to bake me some pies? I'll pay you well for them.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Actually I could, you see I'm running out of stock and I", "don't have tme to bake any more pies. would you be", "willing to bake me some pies? I'll pay you well for them.");
 			stage = 21;
 			break;
 		case 21:
@@ -68,7 +68,7 @@ public class RomilyWeaklaxDialogue extends DialoguePlugin {
 
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Sure, what do you need?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Sure, what do you need?");
 				stage = 200;
 				break;
 			case 2:
@@ -77,7 +77,7 @@ public class RomilyWeaklaxDialogue extends DialoguePlugin {
 
 			break;
 		case 200:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Great, can you bake me 11 Wild Pies please.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Great, can you bake me 11 Wild Pies please.");
 			stage = 201;
 			break;
 		case 201:
@@ -100,7 +100,7 @@ public class RomilyWeaklaxDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello and welcome to my pie shop, how can I help you?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hello and welcome to my pie shop, how can I help you?");
 		stage = 0;
 		return true;
 	}

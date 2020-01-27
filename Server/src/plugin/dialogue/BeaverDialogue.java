@@ -40,7 +40,7 @@ public final class BeaverDialogue extends DialoguePlugin {
 		@Override
 		public boolean open(Object... args) {
 			npc = (NPC) args[0];
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "How much wood would a woodchuck chuck if a", "woodchuck could chuck wood?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "How much wood would a woodchuck chuck if a", "woodchuck could chuck wood?");
 			stage = 0;
 			return true;
 		}
@@ -49,7 +49,7 @@ public final class BeaverDialogue extends DialoguePlugin {
 		public boolean handle(int interfaceId, int buttonId) {
 			switch (stage) {
 			case 0:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Approximately 32,768 depending on his woodcutting", "level.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Approximately 32,768 depending on his woodcutting", "level.");
 				stage = 1;
 				break;
 			case 1:

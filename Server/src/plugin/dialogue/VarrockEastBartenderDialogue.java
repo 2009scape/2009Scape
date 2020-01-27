@@ -40,16 +40,16 @@ public class VarrockEastBartenderDialogue extends DialoguePlugin {
 
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "A glass of your finest ale please.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "A glass of your finest ale please.");
 				stage = 10;
 				break;
 
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Cany ou recommend where an adventurer might make", "his fortune?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Cany ou recommend where an adventurer might make", "his fortune?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you know where I can get some good equipment?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Do you know where I can get some good equipment?");
 				stage = 30;
 				break;
 			}
@@ -57,7 +57,7 @@ public class VarrockEastBartenderDialogue extends DialoguePlugin {
 			break;
 
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "No problemo. That'll be 2 coins.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "No problemo. That'll be 2 coins.");
 			stage = 11;
 			break;
 		case 11:
@@ -72,7 +72,7 @@ public class VarrockEastBartenderDialogue extends DialoguePlugin {
 			}
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Ooh I don't know if I should be giving away information,", "makes the computer game too easy.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Ooh I don't know if I should be giving away information,", "makes the computer game too easy.");
 			stage = 21;
 			break;
 		case 21:
@@ -83,34 +83,34 @@ public class VarrockEastBartenderDialogue extends DialoguePlugin {
 
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Oh ah well...");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Oh ah well...");
 				stage = 150;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Computer game? What are you talking about?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Computer game? What are you talking about?");
 				stage = 160;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Just a small clue?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Just a small clue?");
 				stage = 170;
 				break;
 			}
 
 			break;
 		case 160:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "This world around us... is a computer game.... called", "" + GameWorld.getName() + ".");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "This world around us... is a computer game.... called", "" + GameWorld.getName() + ".");
 			stage = 161;
 			break;
 		case 161:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Nope, still don't understand what you are talking about.", "What's a computer?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Nope, still don't understand what you are talking about.", "What's a computer?");
 			stage = 162;
 			break;
 		case 162:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "It's a sort of magic box thing, wich can do all sorts of", "stuff.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "It's a sort of magic box thing, wich can do all sorts of", "stuff.");
 			stage = 163;
 			break;
 		case 163:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I give up. You're obviously completely mad");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I give up. You're obviously completely mad");
 			stage = 164;
 			break;
 		case 164:
@@ -120,14 +120,14 @@ public class VarrockEastBartenderDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, there's the sword shop across the road, or there's", "also all sorts of shops up around the market.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well, there's the sword shop across the road, or there's", "also all sorts of shops up around the market.");
 			stage = 31;
 			break;
 		case 31:
 			end();
 			break;
 		case 170:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Go and talk to the bartender at the Holly Boar Inn, he", "doesn't seem to mind giving away clues.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Go and talk to the bartender at the Holly Boar Inn, he", "doesn't seem to mind giving away clues.");
 			stage = 171;
 			break;
 		case 171:
@@ -147,7 +147,7 @@ public class VarrockEastBartenderDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What can I do yer for?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "What can I do yer for?");
 		stage = 0;
 		return true;
 	}

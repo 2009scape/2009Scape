@@ -72,7 +72,7 @@ public final class BorderGuardDialogue extends DialoguePlugin {
 			end();
 			return true;
 		}
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can I come through this gate?");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can I come through this gate?");
 		stage = 0;
 		return true;
 	}
@@ -82,10 +82,10 @@ public final class BorderGuardDialogue extends DialoguePlugin {
 		switch (stage) {
 		case 0:
 			if (player.getQuestRepository().getQuest("Prince Ali Rescue").getStage(player) > 50) {
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You may pass for free, you are a friend of Al-Kharid.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "You may pass for free, you are a friend of Al-Kharid.");
 				stage = 100;
 			} else {
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You must pay a toll of 10 gold coins to pass.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "You must pay a toll of 10 gold coins to pass.");
 				stage = 1;
 			}
 			break;
@@ -108,18 +108,18 @@ public final class BorderGuardDialogue extends DialoguePlugin {
 				}
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Who does my money go to?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Who does my money go to?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "As you wish. Don't go too near the scorpions.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "As you wish. Don't go too near the scorpions.");
 				stage = 23;
 				break;
 
 			}
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "The money goes to the city of Al-Kharid.", "Will you pay the toll?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "The money goes to the city of Al-Kharid.", "Will you pay the toll?");
 			stage = 21;
 			break;
 		case 21:
@@ -137,7 +137,7 @@ public final class BorderGuardDialogue extends DialoguePlugin {
 				}
 				break;
 			case 2:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "As you wish. Don't go too near the scorpions.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "As you wish. Don't go too near the scorpions.");
 				stage = 23;
 				break;
 			}

@@ -39,7 +39,7 @@ public final class ZamboDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hey, are you wanting to try some of my fine wines", "and spririts? All brewed locally on Karamja island.");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hey, are you wanting to try some of my fine wines", "and spririts? All brewed locally on Karamja island.");
 		stage = 0;
 		return true;
 	}
@@ -58,7 +58,7 @@ public final class ZamboDialogue extends DialoguePlugin {
 				npc.openShop(player);
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, thank you.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No, thank you.");
 				stage = 20;
 				break;
 			}

@@ -40,7 +40,7 @@ public class SpiceSellerPlugin extends DialoguePlugin {
 				npc.openShop(player);
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, thanks.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No, thanks.");
 				stage = 20;
 				break;
 
@@ -62,7 +62,7 @@ public class SpiceSellerPlugin extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Are you interested in buying or selling spice?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Are you interested in buying or selling spice?");
 		stage = 0;
 		return true;
 	}

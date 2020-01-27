@@ -39,7 +39,7 @@ public final class FilelioDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello there.");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Hello there.");
 		stage = 0;
 		return true;
 	}
@@ -48,7 +48,7 @@ public final class FilelioDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "H-hello. You l-look like a s-stranger to these p-parts.", "Would you l-ike to buy something? I h-have some s-", "special offers at the m-minute...some s-sample bottles for", "s-storing s-snail slime.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "H-hello. You l-look like a s-stranger to these p-parts.", "Would you l-ike to buy something? I h-have some s-", "special offers at the m-minute...some s-sample bottles for", "s-storing s-snail slime.");
 			stage = 1;
 			break;
 		case 1:
@@ -58,11 +58,11 @@ public final class FilelioDialogue extends DialoguePlugin {
 		case 2:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, please.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes, please.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thanks.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No thanks.");
 				stage = 20;
 				break;
 

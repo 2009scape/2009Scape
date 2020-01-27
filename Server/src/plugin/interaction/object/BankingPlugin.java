@@ -161,11 +161,11 @@ public final class BankingPlugin extends OptionHandler {
 				setId((int) args[0]);
 			}
 			if (TutorialSession.getExtension(player).getStage() < TutorialSession.MAX_STAGE) {
-				Component.setUnclosable(player, interpreter.sendDialogues(id, FacialExpression.NO_EXPRESSION, "Good day, would you like to access your bank account?"));
+				Component.setUnclosable(player, interpreter.sendDialogues(id, FacialExpression.HALF_GUILTY, "Good day, would you like to access your bank account?"));
 				stage = 999;
 				return true;
 			}
-			interpreter.sendDialogues(id, FacialExpression.NO_EXPRESSION, "Good day, How may I help you?");
+			interpreter.sendDialogues(id, FacialExpression.HALF_GUILTY, "Good day, How may I help you?");
 			for (GrandExchangeOffer o : player.getGrandExchange().getOffers()) {
 				if (o != null && (o.getWithdraw()[0] != null || o.getWithdraw()[1] != null)) {
 					stage = -1;
@@ -179,7 +179,7 @@ public final class BankingPlugin extends OptionHandler {
 		public boolean handle(int interfaceId, int buttonId) {
 			switch (stage) {
 			case -1:
-				interpreter.sendDialogues(id, FacialExpression.NO_EXPRESSION, "Before we go any further, I should inform you that you", "have items ready for collection from the Grand Exchange.");
+				interpreter.sendDialogues(id, FacialExpression.HALF_GUILTY, "Before we go any further, I should inform you that you", "have items ready for collection from the Grand Exchange.");
 				stage = 0;
 				break;
 			case 0:
@@ -187,7 +187,7 @@ public final class BankingPlugin extends OptionHandler {
 				stage = 10;
 				break;
 			case 1:
-				interpreter.sendDialogues(id, FacialExpression.NO_EXPRESSION, "This is a branch of the Bank of " + GameWorld.getName() + ". We have", "branches in many towns.");
+				interpreter.sendDialogues(id, FacialExpression.HALF_GUILTY, "This is a branch of the Bank of " + GameWorld.getName() + ". We have", "branches in many towns.");
 				stage = 2;
 				break;
 			case 2:
@@ -196,19 +196,19 @@ public final class BankingPlugin extends OptionHandler {
 				break;
 			case 3:
 				if (buttonId == 1) {
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "And what do you do?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "And what do you do?");
 					stage = 4;
 				} else if (buttonId == 2) {
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Didnt you used to be called the Bank of Varrock?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Didnt you used to be called the Bank of Varrock?");
 					stage = 5;
 				}
 				break;
 			case 4:
-				interpreter.sendDialogues(id, FacialExpression.NO_EXPRESSION, "We will look after your items and money for you.", "Leave your valuables with us if you want to keep them", "safe.");
+				interpreter.sendDialogues(id, FacialExpression.HALF_GUILTY, "We will look after your items and money for you.", "Leave your valuables with us if you want to keep them", "safe.");
 				stage = 100;
 				break;
 			case 5:
-				interpreter.sendDialogues(id, FacialExpression.NO_EXPRESSION, "Yes we did, but people kept on coming into our", "signs were wrong. They acted as if we didn't know", "what town we were in or something.");
+				interpreter.sendDialogues(id, FacialExpression.HALF_GUILTY, "Yes we did, but people kept on coming into our", "signs were wrong. They acted as if we didn't know", "what town we were in or something.");
 				stage = 100;
 				break;
 			case 100:
@@ -247,7 +247,7 @@ public final class BankingPlugin extends OptionHandler {
 						end();
 						break;
 					case 4:
-						interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What is this place?");
+						interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What is this place?");
 						stage = 1;
 						break;
 					}

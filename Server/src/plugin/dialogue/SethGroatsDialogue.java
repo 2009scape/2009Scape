@@ -30,7 +30,7 @@ public class SethGroatsDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "M'arnin'... going to milk me cowsies!");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "M'arnin'... going to milk me cowsies!");
 		stage = 0;
 		return true;
 	}

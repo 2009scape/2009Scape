@@ -85,7 +85,7 @@ public final class ZaffPlugin extends OptionHandler {
 		public boolean open(Object... args) {
 			npc = (NPC) args[0];
 			quest = player.getQuestRepository().getQuest("What Lies Below");
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Would you like to buy or sell some staves or is there", "something else you need?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Would you like to buy or sell some staves or is there", "something else you need?");
 			stage = 0;
 			return true;
 		}
@@ -113,11 +113,11 @@ public final class ZaffPlugin extends OptionHandler {
 			case 1:
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes, please.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes, please.");
 					stage = 10;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, thank you.");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No, thank you.");
 					stage = 20;
 					break;
 				case 3:
@@ -130,7 +130,7 @@ public final class ZaffPlugin extends OptionHandler {
 						stage = 200;
 						break;
 					}
-					interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can I have another ring?");
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can I have another ring?");
 					stage = 50;
 					break;
 				}
@@ -141,11 +141,11 @@ public final class ZaffPlugin extends OptionHandler {
 				npc.openShop(player);
 				break;
 			case 20:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, 'stick' your head in again if you change your mind.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well, 'stick' your head in again if you change your mind.");
 				stage = 21;
 				break;
 			case 21:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Huh, terrible pun. You just can't get the 'staff' these", "days!");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Huh, terrible pun. You just can't get the 'staff' these", "days!");
 				stage = 22;
 				break;
 			case 22:
@@ -153,13 +153,13 @@ public final class ZaffPlugin extends OptionHandler {
 				break;
 			case 50:
 				if (player.getInventory().contains(11014, 1))
-					interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Go and get the one that's in your inventory " + player.getUsername() + "!");
+					interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Go and get the one that's in your inventory " + player.getUsername() + "!");
 				else if (player.getBank().contains(11014, 1))
-					interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Go and get the one that's in your bank" + player.getUsername() + "!");
+					interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Go and get the one that's in your bank" + player.getUsername() + "!");
 				else if (player.getEquipment().contains(11014, 1))
-					interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Go and get the one that's on your finger " + player.getUsername() + "!");
+					interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Go and get the one that's on your finger " + player.getUsername() + "!");
 				else {
-					interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Of course you can! Here you go " + player.getUsername() + "!");
+					interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Of course you can! Here you go " + player.getUsername() + "!");
 					player.getInventory().add(BEACON_RING);
 				}
 				stage = 51;
@@ -302,7 +302,7 @@ public final class ZaffPlugin extends OptionHandler {
 
 		@Override
 		public boolean open(Object... args) {
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you have any battlestaves?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Do you have any battlestaves?");
 			stage = 0;
 			return true;
 		}
@@ -316,11 +316,11 @@ public final class ZaffPlugin extends OptionHandler {
 					ammount = getMaxStaffs();
 				}
 				if (player.getSavedData().getGlobalData().getZafTime() > System.currentTimeMillis() && ammount <= 0) {
-					interpreter.sendDialogues(546, FacialExpression.NO_EXPRESSION, "I'm very sorry! I seem to be out of battlestaves at the", "moment! I expect I'll get some more in by tomorrow,", "though.");
+					interpreter.sendDialogues(546, FacialExpression.HALF_GUILTY, "I'm very sorry! I seem to be out of battlestaves at the", "moment! I expect I'll get some more in by tomorrow,", "though.");
 					stage = 2;
 					break;
 				}
-				interpreter.sendDialogues(546, FacialExpression.NO_EXPRESSION, "Battlestaves cost 8,000 gold pieces each. I have " + ammount + " left.", "How many would you like to buy?");
+				interpreter.sendDialogues(546, FacialExpression.HALF_GUILTY, "Battlestaves cost 8,000 gold pieces each. I have " + ammount + " left.", "How many would you like to buy?");
 				stage = 1;
 				break;
 			case 1:
@@ -359,7 +359,7 @@ public final class ZaffPlugin extends OptionHandler {
 				interpreter.sendInput(false, "Zaff has " + ammount + " battlestaves...");
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Oh, okay then. I'll try again another time.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Oh, okay then. I'll try again another time.");
 				stage = 3;
 				break;
 			case 3:

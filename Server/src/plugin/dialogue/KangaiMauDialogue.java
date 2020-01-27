@@ -39,7 +39,7 @@ public final class KangaiMauDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello. I Kangai Mau of the Rantuki tribe.");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hello. I Kangai Mau of the Rantuki tribe.");
 		stage = 0;
 		return true;
 	}
@@ -48,7 +48,7 @@ public final class KangaiMauDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Nice to meet you!");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Nice to meet you!");
 			stage = 1;
 			break;
 		case 1:

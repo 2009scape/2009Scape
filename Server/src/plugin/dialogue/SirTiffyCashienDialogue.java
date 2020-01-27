@@ -39,7 +39,7 @@ public final class SirTiffyCashienDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello.");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Hello.");
 		stage = 0;
 		return true;
 	}
@@ -48,19 +48,19 @@ public final class SirTiffyCashienDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What ho, sirrag.", "Spiffing day for a walk in the park, what?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "What ho, sirrag.", "Spiffing day for a walk in the park, what?");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Spiffing?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Spiffing?");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Absolutely, top-hole!", "Well, can't stay and chat all day, dontchaknow!", "Ta-ta for now!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Absolutely, top-hole!", "Well, can't stay and chat all day, dontchaknow!", "Ta-ta for now!");
 			stage = 10;
 			break;
 		case 3:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Erm...goodbye.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Erm...goodbye.");
 			stage = 4;
 			break;
 		case 4:

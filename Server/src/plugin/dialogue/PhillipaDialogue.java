@@ -39,7 +39,7 @@ public final class PhillipaDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello, who are you?");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Hello, who are you?");
 		stage = 0;
 		return true;
 	}
@@ -48,23 +48,23 @@ public final class PhillipaDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hi, I'm Phillipa! Juliet's cousin? I like to keep an eye on", "her, make sure that dashing young Romeo doesn't just", "steal away from here under our plain old noses!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hi, I'm Phillipa! Juliet's cousin? I like to keep an eye on", "her, make sure that dashing young Romeo doesn't just", "steal away from here under our plain old noses!");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "He'd do it to you know... he's ever so dashing, and", "cavalier, in a wet blanket sort of way.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "He'd do it to you know... he's ever so dashing, and", "cavalier, in a wet blanket sort of way.");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Romeo? Where would I find him then?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Romeo? Where would I find him then?");
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, that's a good question! Who knows where his", "head's at most of the time... in the clouds most likely!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well, that's a good question! Who knows where his", "head's at most of the time... in the clouds most likely!");
 			stage = 4;
 			break;
 		case 4:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "But he's probably chasing the ladies who frequent", "Varrockk market. He does like a bit of kiss chase so I've", "heard!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "But he's probably chasing the ladies who frequent", "Varrockk market. He does like a bit of kiss chase so I've", "heard!");
 			stage = 5;
 			break;
 		case 5:

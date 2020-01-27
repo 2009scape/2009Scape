@@ -30,7 +30,7 @@ public class ValaineDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello there. Want to have a look at what we're selling", "today?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hello there. Want to have a look at what we're selling", "today?");
 		stage = 0;
 		return true;
 	}
@@ -45,11 +45,11 @@ public class ValaineDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Yes please.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes please.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No thank you.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No thank you.");
 				stage = 3;
 				break;
 			}

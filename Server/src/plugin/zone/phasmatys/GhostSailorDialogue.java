@@ -41,7 +41,7 @@ public final class GhostSailorDialogue extends DialoguePlugin {
 			player("Hi there. Why do you still bother having ships here? I", "mean - you're dead, what use are they to you?");
 			stage = 10;
 		} else {
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Woooo wooo wooooo woooo");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Woooo wooo wooooo woooo");
 			stage = 0;
 		}
 		return true;

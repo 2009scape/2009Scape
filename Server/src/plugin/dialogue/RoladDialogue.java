@@ -30,11 +30,11 @@ public class RoladDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ehm... well... my name is " + player.getUsername() + ", if that rings any bell?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ehm... well... my name is " + player.getUsername() + ", if that rings any bell?");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "No, never heard of you.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "No, never heard of you.");
 			stage = 2;
 			break;
 		case 2:
@@ -53,7 +53,7 @@ public class RoladDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Oh, hello... do I know you?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh, hello... do I know you?");
 		stage = 0;
 		return true;
 	}

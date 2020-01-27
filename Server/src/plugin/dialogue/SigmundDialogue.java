@@ -36,37 +36,37 @@ public class SigmundDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Do you have any quests for me?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Do you have any quests for me?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Who are you?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Who are you?");
 				stage = 20;
 				break;
 
 			}
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm the Duke's advisor.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I'm the Duke's advisor.");
 			stage = 21;
 			break;
 		case 21:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Can you give me any advice then?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you give me any advice then?");
 			stage = 22;
 			break;
 		case 22:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I only advise the Duke. But if you want to make", "yourself useful, there are evil goblins to slay on the", "other side of the river.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I only advise the Duke. But if you want to make", "yourself useful, there are evil goblins to slay on the", "other side of the river.");
 			stage = 23;
 			break;
 		case 23:
 			end();
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I hear the Duke has a task for an adventurer.", "Otherwise, if you want to make yourself useful, there", "are always evil monsters to slay.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I hear the Duke has a task for an adventurer.", "Otherwise, if you want to make yourself useful, there", "are always evil monsters to slay.");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Okay, I might just do that.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Okay, I might just do that.");
 			stage = 12;
 			break;
 		case 12:
@@ -85,7 +85,7 @@ public class SigmundDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Can I help you?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Can I help you?");
 		stage = 0;
 		return true;
 	}

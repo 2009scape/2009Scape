@@ -43,18 +43,18 @@ public final class MorganDialogue extends DialoguePlugin {
 		npc = (NPC) args[0];
 		quest = player.getQuestRepository().getQuest("Vampire Slayer");
 		if (quest.getStage(player) == 0) {
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Please please help us, bold adventurer!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Please please help us, bold adventurer!");
 			stage = 0;
 		}
 		switch (quest.getStage(player)) {
 		case 10:
 		case 20:
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "How are you doing with the quest?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "How are you doing with the quest?");
 			stage = 10;
 			break;
 		case 100:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I have slain the foul creature!");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I have slain the foul creature!");
 			stage = 101;
 			break;
 		}
@@ -65,11 +65,11 @@ public final class MorganDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What's the problem?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What's the problem?");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Our little village has been dreadfully ravaged by an evil", "vampire! He lives in the basement of the manor to the", "north, we need someone to get rid of him once and for", "all!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Our little village has been dreadfully ravaged by an evil", "vampire! He lives in the basement of the manor to the", "north, we need someone to get rid of him once and for", "all!");
 			stage = 2;
 			break;
 		case 2:
@@ -79,29 +79,29 @@ public final class MorganDialogue extends DialoguePlugin {
 		case 7:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "No, vampires are scary!");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No, vampires are scary!");
 				stage = 8;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Ok, I'm up for an adventure.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ok, I'm up for an adventure.");
 				stage = 3;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Have you got any tips on killing the vampire?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Have you got any tips on killing the vampire?");
 				stage = 3;
 				break;
 			}
 			break;
 		case 3:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I think first you should seek help. I have a friend who", "is a retired vampire hunter, his name is Dr. Harlow. He", "may be able to give you some tips. He can normally be", "found in the Blue Moon Inn in Varrock, he's a bit of");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I think first you should seek help. I have a friend who", "is a retired vampire hunter, his name is Dr. Harlow. He", "may be able to give you some tips. He can normally be", "found in the Blue Moon Inn in Varrock, he's a bit of");
 			stage = 4;
 			break;
 		case 4:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "an old soak these days. Mention his old friend Morgan,", "I'm sure he wouldn't want me killed by a vampire.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "an old soak these days. Mention his old friend Morgan,", "I'm sure he wouldn't want me killed by a vampire.");
 			stage = 5;
 			break;
 		case 5:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'll look him up then.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'll look him up then.");
 			stage = 6;
 			break;
 		case 6:
@@ -113,18 +113,18 @@ public final class MorganDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 10:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I'm still working on it.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'm still working on it.");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Please hurry! Every day we live in fear that we", "the vampire's next victim!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Please hurry! Every day we live in fear that we", "the vampire's next victim!");
 			stage = 12;
 			break;
 		case 12:
 			end();
 			break;
 		case 101:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Thank you, thank you! You will always be a hero in", "our village!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Thank you, thank you! You will always be a hero in", "our village!");
 			stage = 102;
 			break;
 		case 102:

@@ -39,7 +39,7 @@ public final class VetionJRDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Who is the true lord and king of the lands?");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Who is the true lord and king of the lands?");
 		stage = 0;
 		return true;
 	}
@@ -52,7 +52,7 @@ public final class VetionJRDialogue extends DialoguePlugin {
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Where is he? Why hasn't he lifted your burden?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Where is he? Why hasn't he lifted your burden?");
 			stage = 2;
 			break;
 		case 2:

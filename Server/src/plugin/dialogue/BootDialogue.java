@@ -39,7 +39,7 @@ public final class BootDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Hello tall person.");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hello tall person.");
 		stage = 0;
 		return true;
 	}
@@ -54,11 +54,11 @@ public final class BootDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Hello short person.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Hello short person.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Why are you called boot?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Why are you called boot?");
 				stage = 20;
 				break;
 			}
@@ -67,7 +67,7 @@ public final class BootDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I'm called Boot, because when I was very young, I", "used to sleep, in a large boot.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I'm called Boot, because when I was very young, I", "used to sleep, in a large boot.");
 			stage = 21;
 			break;
 		case 21:

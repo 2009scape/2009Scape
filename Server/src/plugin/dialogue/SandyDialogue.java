@@ -30,7 +30,7 @@ public class SandyDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Nice day for sand isn't it?");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Nice day for sand isn't it?");
 		stage = 0;
 		return true;
 	}

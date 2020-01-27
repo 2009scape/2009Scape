@@ -39,7 +39,7 @@ public final class LubufuDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Watch where you're going, young whippersnapper!");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Watch where you're going, young whippersnapper!");
 		stage = 0;
 		return true;
 	}
@@ -54,43 +54,43 @@ public final class LubufuDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "I wasn't going anywhere...");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I wasn't going anywhere...");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What's a whippersnapper?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What's a whippersnapper?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Who are you?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Who are you?");
 				stage = 30;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well then go away from here!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well then go away from here!");
 			stage = 11;
 			break;
 		case 11:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "It's a whip. Which snaps. Like me. Now leave!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "It's a whip. Which snaps. Like me. Now leave!");
 			stage = 21;
 			break;
 		case 21:
 			end();
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I am Lubufu - the only fisherman who knows the secret", "of the Karambwan!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I am Lubufu - the only fisherman who knows the secret", "of the Karambwan!");
 			stage = 31;
 			break;
 		case 31:
-			interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "What's a Karambwan?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What's a Karambwan?");
 			stage = 32;
 			break;
 		case 32:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "What a foolish question! Now leave!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "What a foolish question! Now leave!");
 			stage = 33;
 			break;
 		case 33:

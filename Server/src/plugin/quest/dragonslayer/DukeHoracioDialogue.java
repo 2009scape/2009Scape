@@ -138,11 +138,11 @@ public final class DukeHoracioDialogue extends DialoguePlugin {
 				handleShield(buttonId);
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Have any quests for me?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Have any quests for me?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I hear many of the local people earn money by", "learning a skill. Many people get by in life by becoming", "accomplished smiths, cooks, miners and woodcutters.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I hear many of the local people earn money by", "learning a skill. Many people get by in life by becoming", "accomplished smiths, cooks, miners and woodcutters.");
 				stage = 30;
 				break;
 			}
@@ -150,17 +150,17 @@ public final class DukeHoracioDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.NO_EXPRESSION, "Have any quests for me?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Have any quests for me?");
 				stage = 20;
 				break;
 			case 2:
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "I hear many of the local people earn money by learning a", "skill. Many people get by in life by becoming accomplished", "smiths, cooks, miners and woodcutters.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I hear many of the local people earn money by learning a", "skill. Many people get by in life by becoming accomplished", "smiths, cooks, miners and woodcutters.");
 				stage = 30;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "You haven't seem to have slain Elvarg yet!", "Once you have slain Elvarg come back and talk to me.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "You haven't seem to have slain Elvarg yet!", "Once you have slain Elvarg come back and talk to me.");
 			stage = 11;
 			break;
 		case 20:
@@ -170,11 +170,11 @@ public final class DukeHoracioDialogue extends DialoguePlugin {
 				break;
 			}
 			if (quest.getStage(player) > 10) {
-				interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Nope, I've got everything under control", "in the castle at the moment.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Nope, I've got everything under control", "in the castle at the moment.");
 				stage = 69;
 				return true;
 			}
-			interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Well, it's not really a quest but I recently discovered", "this strange talisman.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well, it's not really a quest but I recently discovered", "this strange talisman.");
 			stage = 21;
 			break;
 		case 69:
@@ -252,7 +252,7 @@ public final class DukeHoracioDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.NO_EXPRESSION, "Greetings. Welcome to my castle.");
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Greetings. Welcome to my castle.");
 		stage = 0;
 		return true;
 	}
