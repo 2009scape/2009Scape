@@ -42,7 +42,7 @@ public final class GillieGroatsDialogue extends DialoguePlugin {
 			milk = true;
 		if (milk) {
 			interpreter.sendDialogues(3807, FacialExpression.LAUGH, "Tee hee! You've never milked a cow before, have you?");
-			stage = 900;
+			stage = 100;
 			return true;
 		}
 		interpreter.sendDialogues(3807, FacialExpression.HAPPY, "Hello, Im Gillie the Milkmaid. What can I do for you?");
@@ -53,23 +53,23 @@ public final class GillieGroatsDialogue extends DialoguePlugin {
 	@Override
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
-			case 900:
+			case 100:
 				interpreter.sendDialogues(player, FacialExpression.ASKING, "Erm... No. How could you tell?");
 				stage++;
 				break;
-			case 901:
+			case 101:
 				interpreter.sendDialogues(3807, FacialExpression.FRIENDLY, "Because you're spilling milk all over the floor. What a", "waste ! You need something to hold the milk.");
 				stage++;
 				break;
-			case 902:
+			case 102:
 				interpreter.sendDialogues(player, FacialExpression.NEUTRAL, "Ah yes, I really should have guessed that one, shouldn't", "I?");
 				stage++;
 				break;
-			case 903:
+			case 103:
 				interpreter.sendDialogues(3807, FacialExpression.FRIENDLY, "You're from the city, aren't you... Try it again with an", "empty bucket.");
 				stage++;
 				break;
-			case 904:
+			case 104:
 				interpreter.sendDialogues(player, FacialExpression.NEUTRAL, "Right, I'll do that.");
 				stage = 13;
 				break;
