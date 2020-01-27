@@ -6,7 +6,7 @@ import org.crandor.plugin.InitializablePlugin;
 import org.crandor.game.node.entity.player.Player;
 
 /**
- * Represents the dialogue plugin used for the grillie groats npc.
+ * Represents the dialogue plugin used for the Gillie Groats npc.
  * @author 'Vexia
  * @version 1.0
  */
@@ -14,7 +14,7 @@ import org.crandor.game.node.entity.player.Player;
 public final class GillieGroatsDialogue extends DialoguePlugin {
 
 	/**
-	 * Constructs a new {@code GrillieGroatsDialogue} {@code Object}.
+	 * Constructs a new {@code GillieGroatsDialogue} {@code Object}.
 	 */
 	public GillieGroatsDialogue() {
 		/**
@@ -23,7 +23,7 @@ public final class GillieGroatsDialogue extends DialoguePlugin {
 	}
 
 	/**
-	 * Constructs a new {@code GrillieGroatsDialogue} {@code Object}.
+	 * Constructs a new {@code GillieGroatsDialogue} {@code Object}.
 	 * @param player the player.
 	 */
 	public GillieGroatsDialogue(Player player) {
