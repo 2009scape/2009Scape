@@ -64,13 +64,11 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 			interpreter.sendDialogues(npc, FacialExpression.SAD, "How are you getting on with finding the ingredients?");
 			stage = 1000;
 			return true;
-		}
-		if (player.getQuestRepository().getQuest("Cook's Assistant").getStage(player) == 0) {
+		} if (player.getQuestRepository().getQuest("Cook's Assistant").getStage(player) == 0) {
 			interpreter.sendDialogues(npc, FacialExpression.SAD, "What am I to do?");
 			stage = 1;
 			return true;
-		}
-		if (player.getQuestRepository().getQuest("Cook's Assistant").getStage(player) == 100) {
+		} if (player.getQuestRepository().getQuest("Cook's Assistant").getStage(player) == 100) {
 			interpreter.sendDialogues(npc, FacialExpression.HAPPY,"Hello friend, how is the adventuring going?");
 			stage = 0;
 		}
@@ -410,18 +408,18 @@ public final class LumbridgeCookDialogue extends DialoguePlugin {
 				stage = 15;
 				break;
 			case 5300:
-				interpreter.sendDialogues(npc, FacialExpression.HAPPY, "Go ahead! It's a very good range; it's better than most other ranges.");
+				interpreter.sendDialogues(npc, FacialExpression.HAPPY, "Go ahead! It's a very good range; it's better than most" ,"other ranges.");
 				stage++;
 				break;
 			case 5301:
-				interpreter.sendDialogues(npc, FacialExpression.HAPPY, "It's called the Cook-o-Matic 25 and it uses a combination of","state-of-the-art temperature regulation and magic.");
+				interpreter.sendDialogues(npc, FacialExpression.HAPPY, "It's called the Cook-o-Matic 100 and it uses a combination","of state-of-the-art temperature regulation and magic.");
 				stage++;
 				break;
 			case 5302:
-				interpreter.sendDialogues(npc, FacialExpression.ASKING, "Will it mean my food will burn less often?");
+				interpreter.sendDialogues(player, FacialExpression.ASKING, "Will it mean my food will burn less often?");
 				stage++;
 				break;
-			case 5304:
+			case 5303:
 				interpreter.sendDialogues(npc, FacialExpression.HAPPY, "As long as the food is fairly easy to cook in the first place!");
 				stage = 15;
 				break;
