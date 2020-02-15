@@ -3,10 +3,10 @@ package plugin.interaction.inter;
 import org.crandor.game.component.Component;
 import org.crandor.game.component.ComponentDefinition;
 import org.crandor.game.component.ComponentPlugin;
+import org.crandor.game.content.dialogue.FacialExpression;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.repository.Repository;
-import org.crandor.game.world.update.flag.player.AppearanceFlag;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.plugin.Plugin;
 
@@ -21,170 +21,144 @@ public final class HairInterfacePlugin extends ComponentPlugin {
 	/**
 	 * Represents the coins item.
 	 */
-	private static final Item COINS = new Item(995, 1000);
+	private static final Item COINS = new Item(995, 2000);
+
+	private static final int[] HAIR_COLORS = new int[] {20, 19, 10, 18, 4, 5, 15, 7, 0, 6, 21, 9, 22, 17, 8, 16, 11, 24, 23, 3, 2, 1, 14, 13, 12};
 
 	@Override
 	public Plugin<Object> newInstance(Object arg) throws Throwable {
-		ComponentDefinition.put(204, this);
-		ComponentDefinition.put(203, this);
-		ComponentDefinition.put(199, this);
+		ComponentDefinition.put(592, this);
+		ComponentDefinition.put(596, this);
 		return this;
 	}
 
 	@Override
 	public boolean handle(Player player, Component component, int opcode, int button, int slot, int itemId) {
-		handle(player, button, component.getId() == 204 ? true : false, component.getId() == 199 ? new int[] { 1, 2 } : new int[] { 1 });
+		//TODO: Have Changing Booth Animation Fall down and stay on the character. Outside of the OpCode because we don't want the animation repeating
+		switch (opcode) {
+			case 155:
+				if(player.isMale()){
+					handleMaleInterfaceButtons(player, button);
+					break;
+				}else{
+					handleFemaleInterfaceButtons(player, button);
+					break;
+				}
+		}
 		return true;
 	}
 
 	/**
-	 * Represents the method used to handle the buttons.
+	 * Represents the method used to handle the buttons for the male hairdresser interface.
 	 * @param player the player.
 	 * @param button the button,
-	 * @param male the male.
 	 */
-	public static void handle(final Player player, int button, boolean male, int... inter) {
-		if (inter != null && inter.length == 2) {
-			int style = -1;
-			int col = -1;
-			switch (button) {
-			case 139:
-				style = 11;
+	public static boolean handleMaleInterfaceButtons(Player player, int button) {
+
+		switch (button) {
+
+			//Male Hair Styles
+			case 65: case 66: case 67: case 68: case 69:
+			case 70: case 71: case 72: case 73:
+				player.setAttribute("newHair", button-65);
 				break;
-			case 140:
-				style = 10;
+			case 74: case 75: case 76: case 77: case 78: case 79: case 80:
+				player.setAttribute("newHair", button+17);
 				break;
-			case 141:
-				style = 13;
+			case 81: case 82: case 83: case 84: case 85: case 86:
+				player.setAttribute("newHair", button+180);
 				break;
-			case 142:
-				style = 15;
+			case 89: case 90:
+				player.setAttribute("newHair", button+178);
 				break;
-			case 143:
-				style = 17;
+
+			//Male Hair Colour Styles
+			//As the array is not ordered (because of the customization menu),
+			//I just copied the array over until a better solution could be thought of.
+			case 229: case 230: case 231: case 232: case 233:
+			case 234: case 235: case 236: case 237: case 238:
+			case 239: case 240: case 241: case 242: case 243:
+			case 244: case 245: case 246: case 247: case 248:
+			case 249: case 250: case 251: case 252: case 253:
+				player.setAttribute("newHairColour", HAIR_COLORS[button - 229]);
 				break;
-			case 144:
-				style = 12;
+
+			//Male Beard Styles
+			case 105: case 106: case 107: case 108: case 109:
+			case 110: case 111: case 112:
+				player.setAttribute("newBeard", button-95);
 				break;
-			case 145:
-				style = 14;
+			case 113: case 114: case 115: case 116: case 117:
+			case 118: case 119:
+				player.setAttribute("newBeard", button-15);
 				break;
-			case 146:
-				style = 16;
+			case 120:
+				player.setAttribute("newBeard", button+185);
 				break;
-			case 127:
-				col = 0;
-				break;
-			case 128:
-				col = 1;
-				break;
-			case 129:
-				col = 2;
-				break;
-			case 130:
-				col = 3;
-				break;
-			case 131:
-				col = 4;
-				break;
-			case 132:
-				col = 5;
-				break;
-			case 133:
-				col = 6;
-				break;
-			case 134:
-				col = 7;
-				break;
-			case 135:
-				col = 8;
-				break;
-			case 136:
-				col = 9;
-				break;
-			case 137:
-				col = 10;
-				break;
-			case 138:
-				col = 11;
-				break;
-			case 104:
-				confirm(player);
-				/** confirms the players choice on design. */
-				break;
-			}
-			if (style != -1) {
-				player.setAttribute("newBeard", style);
-			}
-			if (col != -1) {
-				player.setAttribute("newHairColour", col);
-			}
-			return;
-		}
-		if (male) {
-			switch (button) {
-			case 134:
-			case 135:
-			case 136:
-			case 137:
-			case 138:
-			case 139:
-			case 140:
-			case 141:
-			case 142:
-				player.setAttribute("newHair", button - 134);
-				break;
-			case 122:
 			case 123:
-			case 124:
-			case 125:
+				player.setAttribute("newBeard", button+183);
+				break;
 			case 126:
-			case 127:
-			case 128:
+				player.setAttribute("newBeard", button+181);
+				break;
 			case 129:
-			case 130:
-			case 131:
-			case 132:
-			case 133:
-				player.setAttribute("newHairColour", button - 122);
+				player.setAttribute("newBeard", button+179);
 				break;
-			case 98:
+
+			//Confirm Buttons
+			case 196: //cash bag
+			case 274: //The thumbs up
 				confirm(player);
+				/** confirms the players choice on design. **/
 				break;
-			}
-		} else {
-			switch (button) {
-			case 136:
-			case 137:
-			case 138:
-			case 139:
-			case 140:
-			case 141:
-			case 142:
-			case 143:
-			case 144:
-			case 145:
-				player.setAttribute("newHair", button - 91);
-				break;
-			case 124:
-			case 125:
-			case 126:
-			case 127:
-			case 128:
-			case 129:
-			case 130:
-			case 131:
-			case 132:
-			case 133:
-			case 134:
-			case 135:
-				player.setAttribute("newHairColour", button - 124);
-				break;
-			case 99:
-				confirm(player);
-				break;
-			}
 		}
+		return true;
+	}
+
+	/**
+	 * Represents the method used to handle the buttons for the female hairdresser interface.
+	 * @param player the player.
+	 * @param button the button,
+	 */
+	public static boolean handleFemaleInterfaceButtons(Player player, int button) {
+
+		switch (button) {
+
+			//Female Hair Styles
+			case 148: case 149: case 150: case 151: case 152:
+			case 153: case 154: case 155: case 156: case 157:
+				player.setAttribute("newHair", button-103);
+				break;
+			case 158: case 159: case 160: case 161: case 162:
+			case 163: case 164: case 165: case 166: case 167:
+			case 168: case 169:
+				player.setAttribute("newHair", button-23);
+				break;
+			case 170: case 171: case 172: case 173: case 174:
+			case 175: case 176: case 177: case 178: case 179:
+			case 180: case 181:
+				player.setAttribute("newHair", button+99);
+				break;
+
+			//Female Hair Colour Styles
+			//Unfortunately no 'fancy' calculations I can think of due to the array in CharacterDesign.java
+			//I just copied the array over until a better solution could be thought of.
+			case 73: case 74: case 75: case 76: case 77:
+			case 78: case 79: case 80: case 81: case 82:
+			case 83: case 84: case 85: case 86: case 87:
+			case 88: case 89: case 90: case 91: case 92:
+			case 93: case 94: case 95: case 96: case 97:
+				player.setAttribute("newHairColour", HAIR_COLORS[button-73]);
+				break;
+
+			//Confirm buttons
+			case 68: //cash bag
+			case 100: //The thumbs up
+				confirm(player);
+				/** confirms the players choice on design. **/
+				break;
+		}
+		return true;
 	}
 
 	/**
@@ -195,6 +169,8 @@ public final class HairInterfacePlugin extends ComponentPlugin {
 		if (!player.getInventory().containsItem(COINS)) {
 			return;
 		}
+
+		//Sets the player look
 		if (player.getInventory().remove(COINS)) {
 			if (player.getAttribute("newHair") != null) {
 				player.getAppearance().getHair().changeLook((Integer) player.getAttribute("newHair"));
@@ -205,9 +181,12 @@ public final class HairInterfacePlugin extends ComponentPlugin {
 			if (player.getAttribute("newBeard") != null) {
 				player.getAppearance().getBeard().changeLook((Integer) player.getAttribute("newBeard"));
 			}
-			player.getUpdateMasks().register(new AppearanceFlag(player));
+
+			//Updates the Player Look, Closes the interface, and farewell from the Hairdresser
+			player.getAppearance().sync();
 			player.getInterfaceManager().close();
-			player.getDialogueInterpreter().sendDialogues(Repository.findNPC(598), null, "Hope you like the new do!");
+			//TODO: Remove Changing Booth graphic and switch to Changing Booth disappearing animation. Needs to also work if player clicks away
+			player.getDialogueInterpreter().sendDialogues(Repository.findNPC(598), FacialExpression.HAPPY, "Hope you like the new do!");
 		}
 	}
 }
