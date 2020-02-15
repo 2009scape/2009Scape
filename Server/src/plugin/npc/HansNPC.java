@@ -54,7 +54,7 @@ public final class HansNPC extends AbstractNPC {
 
 	@Override
 	public int[] getIds() {
-		return new int[1];
+		return new int[] { 0 };
 	}
 
 	@Override
@@ -62,5 +62,4 @@ public final class HansNPC extends AbstractNPC {
 		init();
 		return super.newInstance(arg);
 	}
-
 }
