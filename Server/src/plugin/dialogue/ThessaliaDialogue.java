@@ -5,16 +5,13 @@ import org.crandor.game.content.dialogue.DialoguePlugin;
 import org.crandor.game.content.dialogue.FacialExpression;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.link.appearance.Gender;
 import org.crandor.game.node.entity.player.link.diary.DiaryType;
 import org.crandor.plugin.InitializablePlugin;
-import org.crandor.game.world.map.RegionManager;
 
 /**
  * Represents the thessalia dialogue plugin.
- * @author 'Vexia
- * @version 1.0
  */
+
 @InitializablePlugin
 public final class ThessaliaDialogue extends DialoguePlugin {
 
@@ -42,178 +39,166 @@ public final class ThessaliaDialogue extends DialoguePlugin {
 
 	@Override
 	public boolean open(Object... args) {
-		if (args.length == 2) {
-			interpreter.sendDialogues(548, FacialExpression.HALF_GUILTY, "Woah! Fabulous! You look absolutely great!");
-			stage = 600;
-			return true;
-		} else if (args.length == 3) {
-			interpreter.sendOptions("Select an Option", "I'd like to change my top please.", "I'd like to change my legwear please.", "I'd like to buy some clothes.", "No, thank you.");
-			stage = 55;
+
+		//The trade argument is handled elsewhere
+		if (args.length == 3) { //Right-Click 'Change-Clothes' Option
+			if (player.getInventory().contains(995, 1000) && player.getEquipment().isEmpty()) {
+				if (!player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(0, 0)) {
+					player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 0, 0, true);
+				}
+				if (player.isMale()) {
+					end();
+					player.getInterfaceManager().open(new Component(591));
+				} else {
+					end();
+					player.getInterfaceManager().open(new Component(594));
+				}
+			}
+			else if (!player.getInventory().contains(995, 1000)){ //Not enough money
+				interpreter.sendDialogues(player, FacialExpression.SAD, "I don't have 1000 gold coins on me...");
+				stage = 49;
+			}
+			else{ //Has some armour equipped
+				interpreter.sendDialogues(548, FacialExpression.WORRIED, "You can't try them on while wearing armour. Take","it off and speak to me again.");
+				stage = 52;
+			}
 			return true;
 		}
+
+		//Default Talk
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(548, FacialExpression.HALF_GUILTY, "Would you like to buy any fine clothes?");
+		interpreter.sendDialogues(548, FacialExpression.ASKING, "Would you like to buy any fine clothes?");
 		stage = 0;
 		return true;
 	}
 
 	@Override
 	public boolean handle(int interfaceId, int buttonId) {
-		if (npc == null) {
-			npc = RegionManager.getNpc(player, getIds()[0]);
-		}
 		switch (stage) {
-		case 0:
-			interpreter.sendOptions("Choose an option:", "What do you have?", "No, thank you.");
-			stage = 1;
-			break;
-		case 1:
-
-			switch (buttonId) {
+			case 0:
+				interpreter.sendOptions("Choose an option:", "What do you have?", "No, thank you.");
+				stage++;
+				break;
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What do you have?");
-				stage = 10;
+				switch (buttonId) {
+					case 1:
+						interpreter.sendDialogues(player, FacialExpression.ASKING, "What do you have?");
+						stage = 10;
+						break;
+					case 2:
+						interpreter.sendDialogues(player, FacialExpression.NEUTRAL, "No, thank you.");
+						stage = 51;
+						break;
+				}
 				break;
-			case 2:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No, thank you.");
-				stage = 202;
-				break;
-			}
-			break;
-		case 202:
-			interpreter.sendDialogues(548, FacialExpression.HALF_GUILTY, "Well, please return if you change your mind.");
-			stage = 203;
-			break;
-		case 203:
-			end();
-			break;
-		case 2:
-			break;
-		case 10:
-			interpreter.sendDialogues(548, FacialExpression.HALF_GUILTY, "I have a number of fine pieces of clothing on sale or,", "if you prefer, I can offer you an exclusive", "total clothing makeover?");
-			stage = 11;
-			break;
-		case 11:
-			interpreter.sendOptions("Select an Option", "Tell me more about this makeover.", "I'd just like to buy some clothes.");
-			stage = 12;
-			break;
-		case 12:
 
-			switch (buttonId) {
-			case 1:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Tell me more about this makeover.");
-				stage = 50;
+			case 10:
+				interpreter.sendDialogues(548, FacialExpression.HALF_GUILTY, "I have a number of fine pieces of clothing on sale or,", "if you prefer, I can offer you an exclusive", "total clothing makeover?");
+				stage++;
 				break;
-			case 2:
+			case 11:
+				interpreter.sendOptions("Select an Option", "Tell me more about this makeover.", "I'd just like to buy some clothes.");
+				stage++;
+				break;
+
+			case 12:
+				switch (buttonId) {
+					case 1:
+						interpreter.sendDialogues(player, FacialExpression.THINKING, "Tell me more about this makeover.");
+						stage = 20;
+						break;
+					case 2:
+						interpreter.sendDialogues(player, FacialExpression.NEUTRAL, "I'd just like to buy some clothes.");
+						stage = 50;
+						break;
+				}
+				break;
+
+			//More about the makeover
+			case 20:
+				interpreter.sendDialogues(548, FacialExpression.HAPPY, "Certainly!");
+				stage++;
+				break;
+			case 21:
+				interpreter.sendDialogues(548, FacialExpression.HAPPY, "Here at Thessalia's fine clothing boutique, we offer a", "unique service where we will totally revamp your outfit", "to your choosing, for... wait for it...");
+				stage++;
+				break;
+			case 22:
+				interpreter.sendDialogues(548, FacialExpression.FRIENDLY, "A fee of only 500 gold coins! Tired of always wearing", "the same old outfit, day in, day out? This is the service", "for you!");
+				stage++;
+				break;
+			case 23:
+				interpreter.sendDialogues(548, FacialExpression.ASKING, "So what do you say? Interested? We can change either", "your top, or your legwear for only 500 gold a item!");
+				stage++;
+				break;
+
+			//Buying Clothes or changing outfit
+			case 24:
+				interpreter.sendOptions("Select an Option", "I'd like to change my outfit, please.",  "I'd just like to buy some clothes.");
+				stage++;
+				break;
+			case 25:
+				switch (buttonId) {
+					case 1:
+						interpreter.sendDialogues(player, FacialExpression.HAPPY, "I'd like to change my outfit, please.");
+						stage = 30;
+						break;
+					case 2:
+						interpreter.sendDialogues(player, FacialExpression.NEUTRAL, "I'd just like to buy some clothes.");
+						stage = 50;
+						break;
+				}
+				break;
+
+			//Changing outfit code
+			case 30:
+				if(player.getEquipment().isEmpty()){
+					interpreter.sendDialogues(548, FacialExpression.HAPPY, "Just select what style and colour you would like from", "this catalogue, and then give me the 1000 gold when", "you've picked.");
+					stage++;
+					break;
+				} else { //Has some armour equipped
+					interpreter.sendDialogues(548, FacialExpression.WORRIED, "You can't try them on while wearing armour. Take", "it off and speak to me again.");
+					stage = 52;
+					break;
+				}
+			case 31://Player has money and is not wearing armour/weapons
+				if (player.getInventory().contains(995, 1000) && player.getEquipment().isEmpty()) {
+					if (!player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(0, 0)) {
+						player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 0, 0, true);
+					}
+					if (player.isMale()) {
+						end();
+						player.getInterfaceManager().open(new Component(591));
+					} else {
+						end();
+						player.getInterfaceManager().open(new Component(594));
+					}
+				}
+				else{ //Not enough money
+					interpreter.sendDialogues(player, FacialExpression.SAD, "I don't have 1000 gold coins on me...");
+					stage = 49;
+					break;
+				}
+				break;
+
+			//Closing Remarks
+			case 49: //Not enough money
+				interpreter.sendDialogues(548, FacialExpression.FRIENDLY, "That's ok! Just come back when you do have it!");
+				stage = 52;
+				break;
+
+			case 50://Just buying some clothes
 				end();
 				npc.openShop(player);
 				break;
-			}
-			break;
-		case 50:
-			interpreter.sendDialogues(548, FacialExpression.HALF_GUILTY, "Certainly!");
-			stage = 51;
-			break;
-		case 51:
-			interpreter.sendDialogues(548, FacialExpression.HALF_GUILTY, "Here at Thessalia's fine clothing boutique, we offer a", "unique service where we will totally revamp your outfit", "to your choosing, for... wait for it...");
-			stage = 52;
-			break;
-		case 52:
-			interpreter.sendDialogues(548, FacialExpression.HALF_GUILTY, "A fee of only 500 gold coins! Tired of always wearing", "the same old outfit, day in, day out? This is the service", "for you!");
-			stage = 53;
-			break;
-		case 53:
-			interpreter.sendDialogues(548, FacialExpression.HALF_GUILTY, "So what do you say? Interested? We can change either", "your top, or your legwear for only 500 gold a item!");
-			stage = 54;
-			break;
-		case 54:
-			interpreter.sendOptions("Select an Option", "I'd like to change my top please.", "I'd like to change my legwear please.", "I'd like to buy some clothes.", "No, thank you.");
-			stage = 55;
-			break;
-		case 55:
-			switch (buttonId) {
-			case 1:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'd like to change my top please.");
-				stage = 100;
+
+			case 51://No Thanks
+				interpreter.sendDialogues(548, FacialExpression.HALF_GUILTY, "Well, please return if you change your mind.");
+				stage++;
 				break;
-			case 2:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'd like to change my legwear please.");
-				stage = 110;
+			case 52:
+				end();
 				break;
-			case 3:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'd just like to buy some clothes.");
-				stage = 120;
-				break;
-			case 4:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No, thank you.");
-				stage = 130;
-				break;
-			}
-			break;
-		case 120:
-			end();
-			npc.openShop(player);
-			break;
-		case 130:
-			end();
-			break;
-		case 110:
-			interpreter.sendDialogues(548, FacialExpression.HALF_GUILTY, "Just select what style and colour you would like from", "this catalogue, and then give me the 500 gold when", "you've picked.");
-			stage = 111;
-			break;
-		case 111:
-			if (!player.getInventory().contains(995, 500)) {
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I don't have 500 gold on me...");
-				stage = 105;
-				break;
-			} else {
-				if (!player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(0, 0)) {
-					player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 0, 0, true);
-				}
-				if (player.getAppearance().getGender() == Gender.FEMALE) {
-					end();
-					player.getInterfaceManager().open(new Component(201));
-				} else {
-					end();
-					player.getInterfaceManager().open(new Component(206));
-				}
-			}
-			break;
-		case 100:
-			interpreter.sendDialogues(548, FacialExpression.HALF_GUILTY, "Just select what style and colour you would like from", "this catalogue, and then give me the 500 gold when", "you've picked.");
-			stage = 101;
-			break;
-		case 101:
-			// I don't have 500 gold on me...
-			// that's ok! Just come back when you do have it!
-			if (!player.getInventory().contains(995, 500)) {
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I don't have 500 gold on me...");
-				stage = 105;
-				break;
-			} else {
-				if (!player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(0, 0)) {
-					player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 0, 0, true);
-				}
-				if (player.getAppearance().getGender() == Gender.FEMALE) {
-					end();
-					player.getInterfaceManager().open(new Component(202));
-				} else {
-					end();
-					player.getInterfaceManager().open(new Component(207));
-				}
-			}
-			break;
-		case 105:
-			interpreter.sendDialogues(548, FacialExpression.HALF_GUILTY, "That's ok! Just come back when you do have it!");
-			stage = 106;
-			break;
-		case 106:
-			end();
-			break;
-		case 600:
-			end();
-			player.getInterfaceManager().close();
-			break;
 		}
 		return true;
 	}
