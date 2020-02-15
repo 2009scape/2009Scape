@@ -9,7 +9,6 @@ import java.sql.Timestamp;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.crandor.ServerConstants;
 import org.crandor.cache.misc.buffer.ByteBufferUtils;
 import org.crandor.game.node.entity.player.info.portal.PlayerSQLManager;
 import org.crandor.game.system.SystemManager;
@@ -19,6 +18,7 @@ import org.crandor.game.system.task.TaskExecutor;
 import org.crandor.net.Constants;
 import org.crandor.net.IoSession;
 import org.crandor.net.event.LoginReadEvent;
+import org.keldagrim.ServerConstants;
 
 /**
  * Handles the registry of new accounts.
@@ -59,93 +59,93 @@ public class AccountRegister extends SQLEntryHandler<RegistryDetails> {
 	public static void read(final IoSession session, int opcode, ByteBuffer buffer) {
 		int day,month,year,country;
 		switch (opcode) {
-		case 147://details
-			day = buffer.get();
-			month = buffer.get();
-			year = buffer.getShort();
-			country = buffer.getShort();
-			response(session, RegistryResponse.SUCCESS);
-			break;
-		case 186://username
-			final String username = ByteBufferUtils.getString(buffer).replace(" ", "_").toLowerCase().replace("|", "");
-			if (username.length() <= 0 || username.length() > 12) {
-				response(session, RegistryResponse.INVALID_USERNAME);
+			case 147://details
+				day = buffer.get();
+				month = buffer.get();
+				year = buffer.getShort();
+				country = buffer.getShort();
+				response(session, RegistryResponse.SUCCESS);
 				break;
-			}
-			if (!validUsername(username)) {
-				System.out.println("AHAHHA " + username);
-				response(session,RegistryResponse.INVALID_USERNAME);
-				break;
-			}
-			TaskExecutor.executeSQL(new Runnable() {
-				@Override
-				public void run() {
-					try {
-						if (PlayerSQLManager.hasSqlAccount(username, "username")) {
-							response(session, RegistryResponse.NOT_AVAILBLE_USER);
-							return;
-						}
-						response(session, RegistryResponse.SUCCESS);
-					} catch (SQLException e) {
-						e.printStackTrace();
-					}
+			case 186://username
+				final String username = ByteBufferUtils.getString(buffer).replace(" ", "_").toLowerCase().replace("|", "");
+				if (username.length() <= 0 || username.length() > 12) {
+					response(session, RegistryResponse.INVALID_USERNAME);
+					break;
 				}
-			});
-			break;
-		case 36://Register details
-			buffer.get();
-			buffer = LoginReadEvent.getRSABlock(buffer);
-			buffer.getShort();
-			int revision = buffer.getShort();//revision?
-			if (revision != Constants.REVISION) {
-				response(session, RegistryResponse.CANNOT_CREATE);
+				if (!validUsername(username)) {
+					System.out.println("AHAHHA " + username);
+					response(session,RegistryResponse.INVALID_USERNAME);
+					break;
+				}
+				TaskExecutor.executeSQL(new Runnable() {
+					@Override
+					public void run() {
+						try {
+							if (PlayerSQLManager.hasSqlAccount(username, "username")) {
+								response(session, RegistryResponse.NOT_AVAILBLE_USER);
+								return;
+							}
+							response(session, RegistryResponse.SUCCESS);
+						} catch (SQLException e) {
+							e.printStackTrace();
+						}
+					}
+				});
 				break;
-			}
-			final String name = ByteBufferUtils.getString(buffer).replace(" ", "_").toLowerCase().replace("|", "");
-			buffer.getInt();
-			String password = ByteBufferUtils.getString(buffer);
-			if (password.length() < 5 || password.length() > 20) {
-				response(session, RegistryResponse.INVALID_PASS_LENGTH);
-				break;
-			}
-			if (password.equals(name)) {
-				response(session, RegistryResponse.PASS_SIMILAR_TO_USER);
-				break;
-			}
-			if (!validUsername(name)) {
-				response(session, RegistryResponse.INVALID_USERNAME);
-				break;
-			}
-			buffer.getInt();
-			buffer.getShort();
-			day = buffer.get();
-			month = buffer.get();
-			buffer.getInt();
-			year = buffer.getShort();
-			country = buffer.getShort();
-			buffer.getInt();
-			@SuppressWarnings("deprecation")
-			final RegistryDetails details = new RegistryDetails(name, SystemManager.getEncryption().hashPassword(password), new Date(year, month, day), country);
-			TaskExecutor.execute(new Runnable() {
-				@Override
-				public void run() {
-					try {
-						if (PlayerSQLManager.hasSqlAccount(name, "username")) {
+			case 36://Register details
+				buffer.get();
+				buffer = LoginReadEvent.getRSABlock(buffer);
+				buffer.getShort();
+				int revision = buffer.getShort();//revision?
+				if (revision != Constants.REVISION) {
+					response(session, RegistryResponse.CANNOT_CREATE);
+					break;
+				}
+				final String name = ByteBufferUtils.getString(buffer).replace(" ", "_").toLowerCase().replace("|", "");
+				buffer.getInt();
+				String password = ByteBufferUtils.getString(buffer);
+				if (password.length() < 5 || password.length() > 20) {
+					response(session, RegistryResponse.INVALID_PASS_LENGTH);
+					break;
+				}
+				if (password.equals(name)) {
+					response(session, RegistryResponse.PASS_SIMILAR_TO_USER);
+					break;
+				}
+				if (!validUsername(name)) {
+					response(session, RegistryResponse.INVALID_USERNAME);
+					break;
+				}
+				buffer.getInt();
+				buffer.getShort();
+				day = buffer.get();
+				month = buffer.get();
+				buffer.getInt();
+				year = buffer.getShort();
+				country = buffer.getShort();
+				buffer.getInt();
+				@SuppressWarnings("deprecation")
+				final RegistryDetails details = new RegistryDetails(name, SystemManager.getEncryption().hashPassword(password), new Date(year, month, day), country);
+				TaskExecutor.execute(new Runnable() {
+					@Override
+					public void run() {
+						try {
+							if (PlayerSQLManager.hasSqlAccount(name, "username")) {
+								response(session, RegistryResponse.CANNOT_CREATE);
+								return;
+							}
+							SQLEntryHandler.write(new AccountRegister(details));
+							response(session, RegistryResponse.SUCCESS);
+						} catch (SQLException e) {
+							e.printStackTrace();
 							response(session, RegistryResponse.CANNOT_CREATE);
-							return;
 						}
-						SQLEntryHandler.write(new AccountRegister(details));
-						response(session, RegistryResponse.SUCCESS);
-					} catch (SQLException e) {
-						e.printStackTrace();
-						response(session, RegistryResponse.CANNOT_CREATE);
 					}
-				}
-			});
-			break;
-		default:
-			System.err.println("Unhandled account registry opcode = " + opcode);
-			break;
+				});
+				break;
+			default:
+				System.err.println("Unhandled account registry opcode = " + opcode);
+				break;
 		}
 	}
 
@@ -167,7 +167,12 @@ public class AccountRegister extends SQLEntryHandler<RegistryDetails> {
 
 		//If the management server's settings register new users with the server's clan chat
 		//I believe if there was no entry there would be errors during the registration, hence a null entry if the setting is off
-		statement.setString(7, "2009scape");
+		if(ServerConstants.NEW_PLAYER_DEFAULT_CLAN)
+		{
+			statement.setString(7,ServerConstants.SERVER_NAME);
+		}else{
+			statement.setString(7,null);
+		}
 		statement.executeUpdate();
 		SQLManager.close(statement.getConnection());
 	}
@@ -191,7 +196,7 @@ public class AccountRegister extends SQLEntryHandler<RegistryDetails> {
 		return matcher.matches();
 
 	}
-	
+
 	@Override
 	public Connection getConnection() {
 		return SQLManager.getConnection();
