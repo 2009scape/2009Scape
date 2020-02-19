@@ -222,7 +222,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	  {
 	    try
 	    {
-	      if (var1.getButton() == 2)
+	      if (SwingUtilities.isMiddleMouseButton(var1))
 	      {
 	        this.mouseWheelX = var1.getX();
 	        this.mouseWheelY = var1.getY();
@@ -234,16 +234,16 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	        RenderAnimationDefinition.anInt362 = var1.getX();
 	        Class3_Sub13_Sub32.anInt3389 = var1.getY();
 	        Class140_Sub6.aLong2926 = Class5.method830((byte)-55);
-	        if (!var1.isMetaDown())
+	        if (var1.getButton() == MouseEvent.BUTTON3) // SwingUtilities.isRightMouseButton(var1)
 	        {
-	          Class140_Sub3.anInt2743 = 1;
-	          GraphicDefinition.anInt549 = 1;
+				Class140_Sub3.anInt2743 = 2;
+				GraphicDefinition.anInt549 = 2;
 	        }
-	        else
+	        else if (SwingUtilities.isLeftMouseButton(var1))
 	        {
-	          Class140_Sub3.anInt2743 = 2;
-	          GraphicDefinition.anInt549 = 2;
-	        }
+				Class140_Sub3.anInt2743 = 1;
+				GraphicDefinition.anInt549 = 1;
+			}
 	        int var2 = var1.getModifiers();
 	        if (((var2 & 0x10) == 0) && (
 	        
