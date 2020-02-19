@@ -111,11 +111,11 @@ public final class WaterfallPlugin extends OptionHandler {
 		ObjectDefinition.forId(37247).getConfigurations().put("option:open", this);
 		ObjectDefinition.forId(32711).getConfigurations().put("option:open", this);
 		ObjectDefinition.forId(33046).getConfigurations().put("option:open", this);
-		ObjectDefinition.forId(33047).getConfigurations().put("option:search", this);
-		ObjectDefinition.forId(33047).getConfigurations().put("option:close", this);
-		ObjectDefinition.forId(33066).getConfigurations().put("option:search", this);
+		ObjectDefinition.forId(42313).getConfigurations().put("option:search", this);
+		ObjectDefinition.forId(42313).getConfigurations().put("option:close", this);
+		ObjectDefinition.forId(1993).getConfigurations().put("option:search", this);
 		ObjectDefinition.forId(1999).getConfigurations().put("option:search", this);
-		ObjectDefinition.forId(1757).getConfigurations().put("option:climb-up", this);
+		ObjectDefinition.forId(42319).getConfigurations().put("option:climb-up", this);
 		ObjectDefinition.forId(2002).getConfigurations().put("option:open", this);
 		ObjectDefinition.forId(1992).getConfigurations().put("option:read", this);
 		ObjectDefinition.forId(2014).getConfigurations().put("option:take treasure", this);
@@ -200,14 +200,14 @@ public final class WaterfallPlugin extends OptionHandler {
 			ObjectBuilder.add(new GameObject(33047, Location.create(2530, 9844, 0), 10, 1));
 			player.getPacketDispatch().sendMessage("You open the chest.");
 			break;
-		case 1757:
+		case 42319:
 			if (node.getLocation().equals(new Location(2556, 9844))) {
 				ClimbActionHandler.climb(player, new Animation(828), Location.create(2557, 3444, 0));
 			} else {
 				ClimbActionHandler.climbLadder(player, (GameObject) node, option);
 			}
 			break;
-		case 33047:
+		case 42313:
 			switch (option) {
 			case "search":
 				if (quest.getStage(player) >= 30) {
@@ -220,11 +220,11 @@ public final class WaterfallPlugin extends OptionHandler {
 				}
 				break;
 			case "close":
-				ObjectBuilder.add(new GameObject(33046, Location.create(2530, 9844, 0), 10, 1));
+				ObjectBuilder.add(new GameObject(42313, Location.create(2530, 9844, 0), 10, 1));
 				break;
 			}
 			break;
-		case 33066:
+		case 1993:
 			if (quest.getStage(player) >= 30) {
 				if (!player.getInventory().contains(296, 1)) {
 					player.getPacketDispatch().sendMessage("You search the coffin and inside you find an urn full of ashes.");
