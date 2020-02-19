@@ -199,7 +199,7 @@ public final class PCRewardInterface extends ComponentPlugin {
 		} else if (skillId == Skills.MAGIC || skillId == Skills.RANGE) {
 			divideBy = 29;//19.1-31 ideal range
 		}
-		return (int) ((level * level) / divideBy) * (Skills.EXPERIENCE_MULTIPLIER / 2);
+		return (int) ((level * level) / divideBy) * (player.getSkills().experienceMutiplier / 2);
 	}
 
 	/**
@@ -284,7 +284,7 @@ public final class PCRewardInterface extends ComponentPlugin {
 			if (reward.isSkillReward()) {
 				final double experience = ((int) calculateExperience(player, reward.getSkill()) * points);
 				player.getSkills().addExperience(reward.getSkill(), experience);
-				message = "The Void Knight has granted you " + (int) (experience * Skills.EXPERIENCE_MULTIPLIER) + " " + reward.getName() + ".";
+				message = "The Void Knight has granted you " + (int) (experience * player.getSkills().experienceMutiplier) + " " + reward.getName() + ".";
 			} else {
 				if (!reward.checkItemRequirement(player, option)) {
 					return;

@@ -2,14 +2,11 @@ package org.crandor.game.content.skill;
 
 import org.crandor.game.content.global.SkillcapePerks;
 import org.crandor.game.content.global.tutorial.TutorialSession;
-import org.crandor.game.content.holiday.HolidayEvent;
 import org.crandor.game.node.entity.Entity;
 import org.crandor.game.node.entity.combat.ImpactHandler;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.link.IronmanMode;
 import org.crandor.game.node.entity.player.link.request.assist.AssistSession;
-import org.crandor.game.system.SystemManager;
 import org.crandor.game.world.repository.Repository;
 import org.crandor.game.world.update.flag.player.AppearanceFlag;
 import org.crandor.net.packet.PacketRepository;
@@ -27,7 +24,7 @@ public final class Skills {
 	/**
 	 * Represents the constant modifier of experience.
 	 */
-	public static final double EXPERIENCE_MULTIPLIER = 20;
+	public double experienceMutiplier = 5.0;
 
 	/**
 	 * The maximum experience multiplier.
@@ -261,7 +258,7 @@ public final class Skills {
 	private double getExperienceMod(int slot, double experience, boolean playerMod, boolean multiplyer) {
 		//Keywords for people ctrl + Fing the project
 		//xprate xp rate xp multiplier skilling rate
-		return 5.0;
+		return experienceMutiplier;
 		/*if (!(entity instanceof Player)) {
 			return 1.0;
 		}
@@ -359,6 +356,10 @@ public void parse(ByteBuffer buffer) {
 	experienceGained = buffer.getInt();
 }
 
+public void parseExpRate(ByteBuffer buffer) {
+	experienceMutiplier = buffer.getDouble();
+}
+
 /**
  * Saves the skill data on the buffer.
  * @param buffer The byte buffer.
@@ -376,6 +377,10 @@ public void save(ByteBuffer buffer) {
 		buffer.put((byte) staticLevels[i]);
 	}
 	buffer.putInt(experienceGained);
+}
+
+public void saveExpRate(ByteBuffer buffer) {
+	buffer.putDouble(experienceMutiplier);
 }
 
 /**

@@ -146,6 +146,9 @@ public final class PlayerParser {
 					player.getSkills().setCombatMilestone(buffer.get() & 0xFF);
 					player.getSkills().setSkillMilestone(buffer.get() & 0xFF);
 					break;
+				case 46:
+					player.getSkills().parseExpRate(buffer);
+					break;
 				default:
 					System.err.println("[Player parsing] Unhandled opcode: " + opcode + " for " + player.getName() + " - [log=" + Arrays.toString(opcodeLog) + "].");
 					break;
@@ -297,7 +300,9 @@ public final class PlayerParser {
 		if (player.getSkills().getCombatMilestone() > 0 || player.getSkills().getSkillMilestone() > 0) {
 			buffer.put((byte) 45).put((byte) player.getSkills().getCombatMilestone()).put((byte) player.getSkills().getSkillMilestone());
 		}
-		
+
+		player.getSkills().saveExpRate(buffer.put((byte) 46));
+
 		buffer.put((byte) 0); // EOF opcode
 		buffer.flip();
 		File file = new File(directory + "players/" + player.getName() + ".save");

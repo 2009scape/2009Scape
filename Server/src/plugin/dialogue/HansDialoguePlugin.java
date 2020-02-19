@@ -51,7 +51,7 @@ public final class HansDialoguePlugin extends DialoguePlugin {
 
 		switch (stage) {
 			case 0:
-				interpreter.sendOptions("Select an Option", "I'm looking for whoever is in charge of this place.", "I have come to kill everyone in this castle!", "I don't know. I'm lost. Where am I?", "Have you been here as long as me?");
+				interpreter.sendOptions("Select an Option", "I'm looking for whoever is in charge of this place.", "I have come to kill everyone in this castle!", "I don't know. I'm lost. Where am I?", "Have you been here as long as me?", "I'd like to learn faster!");
 				stage++;
 				break;
 			case 1:
@@ -74,6 +74,15 @@ public final class HansDialoguePlugin extends DialoguePlugin {
 					case 4:
 						interpreter.sendDialogues(npc, FacialExpression.NEUTRAL, "I've been patrolling this castle for years!");
 						stage = 40;
+						break;
+					case 5:
+						if (player.getSkills().experienceMutiplier == 15.0) {
+							interpreter.sendDialogues(npc, FacialExpression.OSRS_NORMAL, "Sorry, but you're already at the fastest experience", "rate. It's only a one way operation, and", "you can't learn faster yet I'm afraid!");
+							stage = 50;
+						} else {
+							interpreter.sendDialogues(npc, FacialExpression.HAPPY, "That's great! I can help you with that, but", "I must warn you it's only a one-way thing. There's no", "going back!");
+							stage = 150;
+						}
 						break;
 				}
 
@@ -108,6 +117,23 @@ public final class HansDialoguePlugin extends DialoguePlugin {
 			//Closing Chat
 			case 50:
 				end();
+				break;
+			case 150:
+				interpreter.sendOptions("Select an Option", "Set my exp rate to 15x", "Nevermind");
+				stage++;
+				break;
+			case 151:
+				switch (buttonId) {
+					case 1:
+						interpreter.sendDialogues(npc, FacialExpression.NEUTRAL, "Tada! Your experience rate is now 15x.", "Happy Scaping!");
+						player.getSkills().experienceMutiplier = 15.0;
+						stage = 50;
+						break;
+					case 2:
+					    end();
+						break;
+				}
+
 				break;
 		}
 

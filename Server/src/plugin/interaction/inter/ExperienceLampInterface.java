@@ -80,13 +80,13 @@ public final class ExperienceLampInterface extends ComponentPlugin {
 			double experience = skillLevel * modifier;
 			if (type != null && type != Lamps.GENIE_LAMP) {
 				player.getDialogueInterpreter().open(70099, new Object[] { "The lamp gives you " + (int) type.getExp() + " " + Skills.SKILL_NAME[skillType.skill] + " experience." });
-				experience =  type.getExp() / Skills.EXPERIENCE_MULTIPLIER;
+				experience =  type.getExp() / player.getSkills().experienceMutiplier;
 				int skill = skillType.skill;
 				if (skill == Skills.ATTACK || skill == Skills.DEFENCE || skill == Skills.HITPOINTS || skill == Skills.STRENGTH || skill == Skills.STRENGTH || skill == Skills.MAGIC || skill == Skills.RANGE) {
 					experience /= 2;	
 				}
 			} else {
-				player.getDialogueInterpreter().open(70099, new Object[] { "The lamp gives you " + (experience * (Skills.EXPERIENCE_MULTIPLIER)) + " " + Skills.SKILL_NAME[skillType.skill] + " experience." });
+				player.getDialogueInterpreter().open(70099, new Object[] { "The lamp gives you " + (experience * (player.getSkills().experienceMutiplier)) + " " + Skills.SKILL_NAME[skillType.skill] + " experience." });
 			}
 			player.getSkills().addExperience(skillType.skill, experience, false);
 		}
