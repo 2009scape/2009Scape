@@ -9,23 +9,23 @@ import org.crandor.net.packet.context.CSConfigContext;
  * 
  * @author Torchic
  */
-public class CSConfigPacket implements OutgoingPacket<CSConfigContext> {
+public class CSConfigPacket implements OutgoingPacket<CSConfigContext> {//world map
 
 	@Override
 	public void send(CSConfigContext context) {
-		IoBuffer buffer = new IoBuffer(115);
-		buffer.putShort(context.getId());
-		buffer.putString(context.getTypes());
 
-		for (int i = context.getTypes().length() - 1; i >= 0; i--) {
-			if (context.getTypes().charAt(i) == 's') {
-				buffer.putString((String) context.getParameters()[i]);
-			} else {
-				buffer.putInt(((Number) context.getParameters()[i]).intValue());
-			}
-		}
+		/*
+		 * TranslateBuffer buffer = new TranslateBuffer(header);
+		buffer.putLEShort(context.getPlayer().getInterfaceManager().getPacketCount(1));
+		buffer.putByteC((byte) context.getValue());
+		buffer.putLEShortA(context.getId());
+		Repository.send(context.getPlayer(), header, buffer);
+		 */
 
-		buffer.putInt(context.getValue());
+		IoBuffer buffer = new IoBuffer(65);
+		buffer.putLEShort(context.getPlayer().getInterfaceManager().getPacketCount(1));
+		buffer.putC((byte) context.getValue());
+		buffer.putLEShortA(context.getId());
 		context.getPlayer().getDetails().getSession().write(buffer);
 	}
 }
