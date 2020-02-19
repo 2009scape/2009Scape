@@ -119,14 +119,14 @@ public final class HansDialoguePlugin extends DialoguePlugin {
 				end();
 				break;
 			case 150:
-				interpreter.sendOptions("Select an Option", "Set my exp rate to 15x", "Nevermind");
+				interpreter.sendOptions("Select an Option", "Set my exp rate to 10x", "Nevermind");
 				stage++;
 				break;
 			case 151:
 				switch (buttonId) {
 					case 1:
 						interpreter.sendDialogues(npc, FacialExpression.NEUTRAL, "Tada! Your experience rate is now 15x.", "Happy Scaping!");
-						player.getSkills().experienceMutiplier = 15.0;
+						player.getSkills().experienceMutiplier = 10.0;
 						stage = 50;
 						break;
 					case 2:
