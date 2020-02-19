@@ -169,7 +169,7 @@ public class AccountRegister extends SQLEntryHandler<RegistryDetails> {
 		//I believe if there was no entry there would be errors during the registration, hence a null entry if the setting is off
 		if(ServerConstants.NEW_PLAYER_DEFAULT_CLAN)
 		{
-			statement.setString(7,ServerConstants.SERVER_NAME);
+			statement.setString(7,ServerConstants.SERVER_NAME.toLowerCase());
 		}else{
 			statement.setString(7,null);
 		}
