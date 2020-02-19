@@ -241,10 +241,6 @@ public final class PlayerCommandPlugin extends CommandPlugin {
 		player.getPacketDispatch().sendString("<col=2c3e50>Get online player count.", 275, lineId++);
 		player.getPacketDispatch().sendString("<col=ecf0f1>::quests", 275, lineId++);
 		player.getPacketDispatch().sendString("<col=2c3e50>Shows a list of all available quests.", 275, lineId++);
-		player.getPacketDispatch().sendString("<col=ecf0f1>::shop", 275, lineId++);
-		player.getPacketDispatch().sendString("<col=2c3e50>Open the reward credits shop.", 275, lineId++);
-		player.getPacketDispatch().sendString("<col=ecf0f1>::credits", 275, lineId++);
-		player.getPacketDispatch().sendString("<col=2c3e50>Get your reward credits balance.", 275, lineId++);
 		player.getPacketDispatch().sendString("<col=ecf0f1>::togglenews", 275, lineId++);
 		player.getPacketDispatch().sendString("<col=2c3e50>Toggles the news broadcasts.", 275, lineId++);
 		player.getPacketDispatch().sendString("<col=ecf0f1>::toggleatk", 275, lineId++);
