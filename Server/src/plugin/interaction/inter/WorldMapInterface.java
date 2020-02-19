@@ -25,7 +25,8 @@ public final class WorldMapInterface extends ComponentPlugin {
 	public boolean handle(Player player, Component component, int opcode, int button, int slot, int itemId) {
 		switch (button) {
 		case 3:
-//			player.getInterfaceManager().openWindowsPane(new Component(player.getInterfaceManager().isResizable() ? 746 : 548), 2);
+			//TODO: Reload the World (objects, walls, textures, whatever else to avoid being stuck in a void).
+			player.getInterfaceManager().openWindowsPane(new Component(player.getInterfaceManager().isResizable() ? 746 : 548), 2);
 			return true;
 		}
 		return false;

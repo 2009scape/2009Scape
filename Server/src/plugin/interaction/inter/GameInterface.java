@@ -221,22 +221,26 @@ public final class GameInterface extends ComponentPlugin {
 			player.getPacketDispatch().sendMessage("It wouldn't be very wise opening the world map during combat.");
 			return;
 		}
-//		player.getInterfaceManager().openWindowsPane(new Component(755), 1);
-//		player.getPacketDispatch().sendScriptConfig(1187, 0, "ii", 0);
-		int position = player.getLocation().getX() << 14 | player.getLocation().getY() | player.getLocation().getZ() << 28;
+		player.getPacketDispatch().sendWindowsPane(755, 0);
+		int posHash = player.getLocation().getX() << 14 | player.getLocation().getY();
+		player.getPacketDispatch().sendScriptConfig(622, posHash);
+		player.getPacketDispatch().sendScriptConfig(674, posHash);
 
-//		player.getPacketDispatch().sendScriptConfig(622, position, "ii");
-//		player.getPacketDispatch().sendScriptConfig(674, position, "ii");
+		//OLD CODE BELOW
+		//player.getInterfaceManager().openWindowsPane(new Component(755), 1);
+		//player.getPacketDispatch().sendScriptConfig(1187, 0);
+//		/int position = player.getLocation().getX() << 14 | player.getLocation().getY() | player.getLocation().getZ() << 28;
+
 //		player.getPacketDispatch().sendScriptConfig(622, position);
 //		player.getPacketDispatch().sendScriptConfig(674, position);
-		System.out.println(position);
+//		System.out.println(position);
 
 
 		/*player.getPacketDispatch().sendWindowsPane(755, 1);
 		int hash = player.getLocation().getX() << 14 | player.getLocation().getY();
 		player.getPacketDispatch().sendRunScript(622, "",  hash);
 		player.getPacketDispatch().sendRunScript(674, "", hash);
-		PacketRepository.send(InterfaceConfig.class, new InterfaceConfigContext(player, 371, 25, true));
-		player.setAttribute("worldMap:viewing", true);*/
+		PacketRepository.send(InterfaceConfig.class, new InterfaceConfigContext(player, 371, 25, true));*/
+		/*player.setAttribute("worldMap:viewing", true);*/
 	}
 }
