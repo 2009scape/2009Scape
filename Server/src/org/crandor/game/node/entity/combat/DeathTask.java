@@ -40,9 +40,11 @@ public final class DeathTask extends NodeTask {
 	public void start(Node node, Node... n) {
 		Entity e = (Entity) node;
 		e.getWalkingQueue().reset();
+		//TODO: Reset projectiles as death event executes.
+		// Can test on NPC 50: KBD
 		e.setAttribute("state:death", true);
 		e.setAttribute("tick:death", GameWorld.getTicks());
-		e.lock(50);
+		e.lock(60);
 		Entity killer = n.length > 0 ? (Entity) n[0] : e;
 		if (e instanceof NPC) {
 			killer.removeAttribute("combat-time");
@@ -54,10 +56,11 @@ public final class DeathTask extends NodeTask {
 				}
 			}
 		}
+		e.face(null);
 		e.getAnimator().forceAnimation(e.getProperties().getDeathAnimation());
 		e.graphics(Animator.RESET_G);
 		e.commenceDeath(killer);
-		e.getImpactHandler().setDisabledTicks(50);
+		e.getImpactHandler().setDisabledTicks(60);
 	}
 
 	@Override
