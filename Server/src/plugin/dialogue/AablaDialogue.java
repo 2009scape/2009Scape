@@ -47,7 +47,7 @@ public final class AablaDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		player("Hi!");
+		player("Hi!111");
 		stage = 0;
 		return true;
 	}
