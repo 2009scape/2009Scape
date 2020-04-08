@@ -1,0 +1,14 @@
+void script_499(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = script_488(arg0);
+	ivar2 = 66322452;
+	if (ivar1 != -1) {
+		setWidgetText(new WidgetPointer(1012,27), getOtherCommonData(ivar1, 1150));
+		setWidgetText(new WidgetPointer(1012,28), getOtherCommonData(ivar1, 1152));
+		setWidgetIsHidden(false, new WidgetPointer(ivar2));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(ivar2));
+	}
+	return;
+}

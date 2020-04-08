@@ -1,0 +1,23 @@
+void script_4111() {
+	if (standart_config_1108 <= 3) {
+		setWidgetText(new WidgetPointer(110,84), "If you selected the 'Buy' option, you would see this screen. You can choose an item to buy by clicking on the indicated box.");
+		setWidgetIsHidden(true, new WidgetPointer(110,85));
+		setWidgetText(new WidgetPointer(110,27), "N/A");
+		setWidgetIsHidden(false, new WidgetPointer(110,68));
+		setWidgetText(new WidgetPointer(110,28), "Choose an item to exchange");
+		setWidgetText(new WidgetPointer(110,33), "1");
+		setWidgetText(new WidgetPointer(110,38), "1 gp");
+		setWidgetText(new WidgetPointer(110,65), "1 gp");
+	} else {
+		setWidgetText(new WidgetPointer(110,84), "You can set how many you wish to buy, and the price you're willing to pay, before clicking the 'Confirm Offer' button. We'll suggest a guide price for the item, but you can offer whatever you like.");
+		setWidgetIsHidden(false, new WidgetPointer(110,85));
+		setItemOnWidgetMethod2205(1381, 1, new WidgetPointer(110,85));
+		setWidgetText(new WidgetPointer(110,27), "1,281 gp");
+		setWidgetIsHidden(true, new WidgetPointer(110,68));
+		setWidgetText(new WidgetPointer(110,28), "Staff of air");
+		setWidgetText(new WidgetPointer(110,33), "2");
+		setWidgetText(new WidgetPointer(110,38), "1,281 gp");
+		setWidgetText(new WidgetPointer(110,65), "2,562 gp");
+	}
+	return;
+}

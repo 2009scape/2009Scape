@@ -1,0 +1,12 @@
+void script_743(int arg0,int arg1,int arg2) {
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		if (((boolean)arg2)) {
+			setWidgetPosition(getWidgetActualX(), getWidgetActualY(), 0, 0, new WidgetPointer(18,46));
+			setWidgetSize(getWidgetActualWidth(), getWidgetActualHeight(), 0, 0, new WidgetPointer(18,46));
+			setWidgetIsHidden(false, new WidgetPointer(18,46));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(18,46));
+		}
+	}
+	return;
+}

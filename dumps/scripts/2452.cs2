@@ -1,0 +1,96 @@
+string script_2452(int arg0) {
+	string svar0;
+	svar0 = "";
+	switch (arg0) {
+		case 0:
+			svar0 = globalstring_149;
+			break;
+		case 1:
+			svar0 = globalstring_150;
+			break;
+		case 2:
+			svar0 = globalstring_151;
+			break;
+		case 3:
+			svar0 = globalstring_152;
+			break;
+		case 4:
+			svar0 = globalstring_153;
+			break;
+		case 5:
+			svar0 = globalstring_154;
+			break;
+		case 6:
+			svar0 = globalstring_155;
+			break;
+		case 7:
+			svar0 = globalstring_156;
+			break;
+		case 8:
+			svar0 = globalstring_157;
+			break;
+		case 9:
+			svar0 = globalstring_158;
+			break;
+		case 10:
+			svar0 = globalstring_159;
+			break;
+		case 11:
+			svar0 = globalstring_160;
+			break;
+		case 12:
+			svar0 = globalstring_161;
+			break;
+		case 13:
+			svar0 = globalstring_162;
+			break;
+		case 14:
+			svar0 = globalstring_163;
+			break;
+		case 15:
+			svar0 = globalstring_164;
+			break;
+		case 16:
+			svar0 = globalstring_165;
+			break;
+		case 17:
+			svar0 = globalstring_166;
+			break;
+		case 18:
+			svar0 = globalstring_167;
+			break;
+		case 19:
+			svar0 = globalstring_168;
+			break;
+		case 20:
+			svar0 = globalstring_169;
+			break;
+		case 21:
+			svar0 = globalstring_170;
+			break;
+		case 22:
+			svar0 = globalstring_171;
+			break;
+		case 23:
+			svar0 = globalstring_172;
+			break;
+		case 24:
+			svar0 = globalstring_173;
+			break;
+		case 25:
+			svar0 = globalstring_174;
+			break;
+		case 26:
+			svar0 = globalstring_175;
+			break;
+		case 27:
+			svar0 = globalstring_176;
+			break;
+		case 28:
+			svar0 = globalstring_177;
+			break;
+		case 29:
+			svar0 = globalstring_178;
+	}
+	return svar0;
+}

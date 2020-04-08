@@ -1,0 +1,14 @@
+void script_4059(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = 5;
+	if (getWidgetActualY(new WidgetPointer(arg0)) >= 0) {
+		setWidgetPosition(0, 0, 1, 0, new WidgetPointer(arg0));
+		globalint_1432 = 0;
+		setWidgetContextMenuOption(1, new WidgetPointer(1058,2), "Select");
+		setWidgetContextMenuOption(1, new WidgetPointer(1058,3), "Select");
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg1));
+	} else {
+		setWidgetPosition(0, add(getWidgetActualY(new WidgetPointer(arg0)), ivar2), 1, 0, new WidgetPointer(arg0));
+	}
+	return;
+}

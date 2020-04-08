@@ -1,0 +1,34 @@
+void script_1078(int arg0) {
+	switch (arg0) {
+		case 0:
+			cs2method5068(0, globalint_135);
+			break;
+		case 1:
+			cs2method5068(1, globalint_136);
+			break;
+		case 2:
+			cs2method5068(2, globalint_137);
+			break;
+		case 3:
+			cs2method5068(3, globalint_138);
+			break;
+		case 4:
+			cs2method5068(4, globalint_139);
+			break;
+		case 5:
+			cs2method5068(5, globalint_140);
+			break;
+		case 6:
+			cs2method5068(6, globalint_141);
+			break;
+		case 7:
+			cs2method5068(7, globalint_142);
+			break;
+		case 8:
+			cs2method5068(8, globalint_143);
+			break;
+		case 9:
+			cs2method5068(9, globalint_144);
+	}
+	return;
+}

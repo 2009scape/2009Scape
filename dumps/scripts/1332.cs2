@@ -1,0 +1,16 @@
+void script_1332() {
+	if (((boolean)bitconfig_275)) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(894,5));
+		setWidgetIsHidden(true, new WidgetPointer(894,7));
+		setWidgetSprite(-1, new WidgetPointer(894,4));
+	} else if (script_1305() == 7) {
+		setWidgetText(new WidgetPointer(894,7), "To set Wind Rush to auto-cast, click on the flashing spell icon. You can hover over spell icons to read a brief description of the spell and the runes required to cast it.");
+		setWidgetText(new WidgetPointer(894,6), "");
+		setWidgetSprite(3759, new WidgetPointer(894,4));
+	} else {
+		setWidgetText(new WidgetPointer(894,7), "Click on the Magic icon to open your magic spellbook.");
+		setWidgetText(new WidgetPointer(894,6), "");
+		setWidgetSprite(1824, new WidgetPointer(894,4));
+	}
+	return;
+}

@@ -1,0 +1,6 @@
+void script_3299(int arg0,int arg1) {
+	if (getItemIdInSlotSplit(arg0, arg1) != -1) {
+		messageType0(getItemName(getItemIdInSlotSplit(arg0, arg1)));
+	}
+	return;
+}

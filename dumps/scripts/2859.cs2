@@ -1,0 +1,9 @@
+void script_2859() {
+	if (globalint_1069 >= 100) {
+		globalint_1069 = subtract(globalint_1069, 50);
+	}
+	if (globalint_1073 > globalint_1069) {
+		globalint_1073 = globalint_1069;
+	}
+	return;
+}

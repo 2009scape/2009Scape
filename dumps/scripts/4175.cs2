@@ -1,0 +1,19 @@
+void script_4175(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	ivar4 = subtract(getClientCycle(), script_4176(arg3, arg2));
+	if ((ivar4 >= 255) || (ivar4 < 0)) {
+		if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+			setWidgetHidden(1);
+		}
+		return;
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		setWidgetHidden(0);
+		if (mod(ivar4, 40) > 20) {
+			cs2method2103(255);
+		} else {
+			cs2method2103(ivar4);
+		}
+	}
+	return;
+}

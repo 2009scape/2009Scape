@@ -1,0 +1,17 @@
+void script_3046(int arg0) {
+	if (arg0 > 1) {
+		script_3047(subtract(arg0, 2));
+	} else {
+		switch (cs2method5005()) {
+			case 0:
+				script_3047(1);
+				break;
+			case 1:
+				script_3047(2);
+				break;
+			case 2:
+				script_3047(0);
+		}
+	}
+	return;
+}

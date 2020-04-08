@@ -1,0 +1,24 @@
+int script_1108() {
+	int ivar0;
+	ivar0 = 0;
+	ivar0 = add(ivar0, bitconfig_3986);
+	ivar0 = add(ivar0, bitconfig_3987);
+	ivar0 = add(ivar0, bitconfig_3988);
+	ivar0 = add(ivar0, bitconfig_3989);
+	ivar0 = add(ivar0, bitconfig_3990);
+	ivar0 = add(ivar0, bitconfig_3991);
+	ivar0 = add(ivar0, bitconfig_3992);
+	ivar0 = add(ivar0, bitconfig_3993);
+	ivar0 = add(ivar0, bitconfig_3994);
+	ivar0 = add(ivar0, bitconfig_3995);
+	ivar0 = add(ivar0, bitconfig_3996);
+	ivar0 = add(ivar0, bitconfig_3997);
+	ivar0 = add(ivar0, bitconfig_3998);
+	ivar0 = add(ivar0, bitconfig_3999);
+	ivar0 = add(ivar0, bitconfig_4000);
+	ivar0 = add(ivar0, bitconfig_4001);
+	ivar0 = add(ivar0, bitconfig_4002);
+	ivar0 = add(ivar0, bitconfig_4005);
+	ivar0 = add(ivar0, bitconfig_4004);
+	return ivar0;
+}

@@ -1,0 +1,28 @@
+void script_5152() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	string svar0;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	svar0 = "";
+	globalint_1563 = max(subtract(globalint_1563, 1), 0);
+	if (((boolean)mod(globalint_1563, 50))) {
+		ivar2 = divide(globalint_1563, 50);
+		ivar1 = mod(ivar2, 60);
+		ivar0 = divide(ivar2, 60);
+		svar0 = intToStr(ivar0) + ":";
+		if (ivar1 < 10) {
+			svar0 = concat(svar0, "0" + intToStr(ivar1));
+		} else {
+			svar0 = concat(svar0, intToStr(ivar1));
+		}
+		setWidgetText(new WidgetPointer(800,6), svar0);
+	}
+	if (globalint_1563 <= 0) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(800,6));
+		sendCloseWidgetPacket();
+	}
+	return;
+}

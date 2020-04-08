@@ -1,0 +1,23 @@
+void script_2919(int arg0,int arg1) {
+	int ivar2;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	cs2func_script_2692_struct(2,0,0) structdump_3;
+	cs2func_script_2692_struct(2,0,0) structdump_4;
+	ivar2 = cs2method6131();
+	if (((boolean)arg0)) {
+		stack_dump0 = ivar2;
+		stack_dump1 = getDisplayMode();
+		stack_dump2 = ivar2;
+		structdump_3 = script_2692(stack_dump2);
+		script_2596(stack_dump0, stack_dump1, structdump_3.intpart_0, structdump_3.intpart_1, arg1);
+	} else {
+		stack_dump0 = ivar2;
+		stack_dump1 = getDisplayMode();
+		stack_dump2 = ivar2;
+		structdump_4 = script_2692(stack_dump2);
+		script_3387(stack_dump0, stack_dump1, structdump_4.intpart_0, structdump_4.intpart_1, arg1);
+	}
+	return;
+}

@@ -1,0 +1,87 @@
+void script_5067() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	string svar0;
+	ivar0 = 0;
+	ivar1 = getCommonDefinitionSize(3943);
+	ivar2 = 0;
+	while (ivar0 < ivar1) {
+		if (bitconfig_9516 == ivar0) {
+			ivar2 = 1;
+		} else {
+			ivar2 = 0;
+		}
+		if (commonIntegerExists('i', 3944, ivar0)) {
+			script_5059(72810553, ivar0, ivar2);
+		}
+		if (commonIntegerExists('i', 3945, ivar0)) {
+			script_5059(72810556, ivar0, ivar2);
+		}
+		if (commonIntegerExists('i', 3946, ivar0)) {
+			script_5059(72810559, ivar0, ivar2);
+		}
+		if (commonIntegerExists('i', 3947, ivar0)) {
+			script_5059(72810562, ivar0, ivar2);
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	deleteAllExtraChilds(new WidgetPointer(1111,30));
+	deleteAllExtraChilds(new WidgetPointer(1111,31));
+	deleteAllExtraChilds(new WidgetPointer(1111,32));
+	deleteAllExtraChilds(new WidgetPointer(1111,33));
+	ivar3 = 0;
+	ivar4 = cs2method_3408(105, 74, 3943, bitconfig_9516);
+	svar0 = "";
+	ivar5 = -1;
+	if (ivar4 != -1) {
+		setWidgetText(new WidgetPointer(1111,29), getOtherCommonData(ivar4, 1463));
+		setWidgetSprite(getOtherCommonData(ivar4, 1465), new WidgetPointer(1111,27));
+		svar0 = getOtherCommonData(ivar4, 1464);
+		if (((boolean)getOtherCommonData(ivar4, 1466)) && (ivar4 != 1918)) {
+			svar0 = concat(svar0, "<br>" + "<br>" + "Drag your mouse over the grid to fill an area with this element.");
+		}
+		ivar3 = add(ivar3, script_5068(ivar3, svar0));
+		ivar5 = getOtherCommonData(ivar4, 1470);
+		if (ivar5 != -1) {
+			ivar3 = add(ivar3, 5);
+			ivar3 = add(ivar3, script_5068(ivar3, cs2method_3408(105, 115, ivar5, -1)));
+			setWidgetPosition(0, ivar3, 1, 0, new WidgetPointer(1111,31));
+			ivar3 = add(ivar3, script_5069(ivar5, 72810527, 1, bitconfig_9517));
+		} else {
+			setWidgetSize(0, 0, 1, 0, new WidgetPointer(1111,31));
+		}
+		ivar5 = getOtherCommonData(ivar4, 1471);
+		if (ivar5 != -1) {
+			ivar3 = add(ivar3, 5);
+			ivar3 = add(ivar3, script_5068(ivar3, cs2method_3408(105, 115, ivar5, -1)));
+			setWidgetPosition(0, ivar3, 1, 0, new WidgetPointer(1111,32));
+			ivar3 = add(ivar3, script_5069(ivar5, 72810528, 2, bitconfig_9518));
+		} else {
+			setWidgetSize(0, 0, 1, 0, new WidgetPointer(1111,32));
+		}
+		ivar5 = getOtherCommonData(ivar4, 1472);
+		if (ivar5 != -1) {
+			ivar3 = add(ivar3, 5);
+			ivar3 = add(ivar3, script_5068(ivar3, cs2method_3408(105, 115, ivar5, -1)));
+			setWidgetPosition(0, ivar3, 1, 0, new WidgetPointer(1111,33));
+			ivar3 = add(ivar3, script_5069(ivar5, 72810529, 3, bitconfig_9519));
+		} else {
+			setWidgetSize(0, 0, 1, 0, new WidgetPointer(1111,33));
+		}
+	} else {
+		setWidgetText(new WidgetPointer(1111,29), "");
+		setWidgetSprite(-1, new WidgetPointer(1111,27));
+	}
+	if (ivar3 > getWidgetActualHeight(new WidgetPointer(1111,30))) {
+		setWidgetScrollMax(0, ivar3, new WidgetPointer(1111,30));
+	} else {
+		setWidgetScrollMax(0, 0, new WidgetPointer(1111,30));
+	}
+	cs2method2100(0, min(cs2method2601(new WidgetPointer(1111,30)), ivar3), new WidgetPointer(1111,30));
+	script_31(72810530, 72810526, 6507, 6504, 6505, 6506, 6499, 6498);
+	return;
+}

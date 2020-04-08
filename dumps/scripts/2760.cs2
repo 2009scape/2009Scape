@@ -1,0 +1,12 @@
+void script_2760(int arg0) {
+	if (((boolean)globalint_173) || ((boolean)bitconfig_542)) {
+		setWidgetNoOptions(new WidgetPointer(arg0));
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(arg0));
+		cs2method2005(0, new WidgetPointer(arg0));
+	} else {
+		setWidgetContextMenuOption(1, new WidgetPointer(arg0), "Face North");
+		setScriptCallOnClickContextMenu(2757, -2147483644, "i", new WidgetPointer(arg0));
+		cs2method2005(1, new WidgetPointer(arg0));
+	}
+	return;
+}

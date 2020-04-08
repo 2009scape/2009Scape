@@ -1,0 +1,6 @@
+void script_3293(int arg0,int arg1,int arg2,int arg3) {
+	if (setWidgetRegister(new WidgetPointer(arg0), 1)) {
+		cs2method3109(0, divide(getWidgetActualHeight(), 2));
+	}
+	return;
+}

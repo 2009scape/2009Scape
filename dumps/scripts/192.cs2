@@ -1,0 +1,93 @@
+void script_192() {
+	int ivar0;
+	int ivar1;
+	if (standart_config_281 < 1000) {
+		return;
+	}
+	ivar0 = cs2method5017();
+	ivar1 = 0;
+	if (ivar0 > globalint_43) {
+		if (((boolean)globalint_41)) {
+			globalint_43 = ivar0;
+			return;
+		}
+		ivar0 = subtract(subtract(ivar0, globalint_43), 1);
+		if (ivar0 >= 100) {
+			ivar0 = 99;
+		}
+		while (ivar0 >= 0) {
+			ivar1 = cs2method5004(ivar0);
+			if (((boolean)script_90(ivar0, 0)) && ((boolean)script_506(ivar0))) {
+				switch (ivar1) {
+					case 0:
+					case 4:
+					case 27:
+					case 26:
+					case 29:
+					case 28:
+					case 110:
+					case 109:
+					case 117:
+						script_180(1);
+						break;
+					case 1:
+					case 2:
+					case 17:
+					case 116:
+						script_180(2);
+						break;
+					case 3:
+					case 5:
+					case 6:
+					case 7:
+					case 19:
+					case 18:
+					case 31:
+					case 30:
+						script_180(3);
+						break;
+					case 9:
+					case 11:
+					case 20:
+					case 107:
+						script_180(4);
+						break;
+					case 103:
+					case 100:
+					case 101:
+					case 111:
+					case 108:
+					case 106:
+					case 105:
+					case 118:
+					case 114:
+					case 113:
+					case 112:
+						script_180(5);
+						break;
+					case 102:
+					case 104:
+						script_180(6);
+						break;
+					case 42:
+					case 43:
+					case 41:
+						script_180(7);
+						break;
+					case 46:
+					case 44:
+					case 45:
+						script_180(7);
+						break;
+					case 115:
+						if (strLength(cs2method5003(ivar0)) > 1) {
+							script_180(1);
+						}
+				}
+			}
+			ivar0 = subtract(ivar0, 1);
+		}
+		globalint_43 = cs2method5017();
+	}
+	return;
+}

@@ -1,0 +1,50 @@
+cs2func_script_4661_struct(2,0,0) script_4661() {
+	flow_0:
+		SWITCH (standart_config_2192) {
+			case 0:
+				 GOTO flow_1
+			case 1:
+				 GOTO flow_2
+			case 2:
+				 GOTO flow_3
+			case 3:
+				 GOTO flow_4
+			case 4:
+				 GOTO flow_5
+			case 5:
+				 GOTO flow_6
+			case 6:
+				 GOTO flow_7
+			case 7:
+				 GOTO flow_8
+			case 8:
+				 GOTO flow_9
+			case 9:
+				 GOTO flow_10
+			case 10:
+				 GOTO flow_11
+		}
+		return newstruct cs2func_script_4661_struct(0, 0);
+	flow_1:
+		return newstruct cs2func_script_4661_struct(1, 5);
+	flow_2:
+		return newstruct cs2func_script_4661_struct(1, 4);
+	flow_3:
+		return newstruct cs2func_script_4661_struct(1, 3);
+	flow_4:
+		return newstruct cs2func_script_4661_struct(1, 2);
+	flow_5:
+		return newstruct cs2func_script_4661_struct(1, 1);
+	flow_6:
+		return newstruct cs2func_script_4661_struct(0, 0);
+	flow_7:
+		return newstruct cs2func_script_4661_struct(2, 1);
+	flow_8:
+		return newstruct cs2func_script_4661_struct(2, 2);
+	flow_9:
+		return newstruct cs2func_script_4661_struct(2, 3);
+	flow_10:
+		return newstruct cs2func_script_4661_struct(2, 4);
+	flow_11:
+		return newstruct cs2func_script_4661_struct(2, 5);
+}

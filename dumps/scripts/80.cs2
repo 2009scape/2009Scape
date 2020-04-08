@@ -1,0 +1,30 @@
+void script_80(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	while (ivar1 < getItemContainerLength(140)) {
+		createExtraChild(new WidgetPointer(arg0), 6, ivar1);
+		setWidgetSize(49, 49, 0, 0);
+		setWidgetPosition(multiply(56, ivar2), multiply(56, ivar3), 0, 0);
+		if (getItemIdInSlot(140, ivar1) != -1) {
+			setItemOnWidgetMethod1200(getItemIdInSlot(140, ivar1), getItemAmtInSlot(140, ivar1));
+			setWidget3DRotation(0, 0, 512, 0, 0, 1340);
+			cs2method1111(1);
+			cs2method1305(getItemName(getItemIdInSlot(140, ivar1)));
+			setWidgetContextMenuOption(1, "Move");
+			setScriptCallOnClickContextMenu(106, new WidgetPointer(-32768,3), ivar1, -2147483644, "Iii");
+		} else {
+			setWidgetHidden(1);
+		}
+		ivar1 = add(ivar1, 1);
+		ivar2 = add(ivar2, 1);
+		if (ivar2 == 5) {
+			ivar2 = 0;
+			ivar3 = add(ivar3, 1);
+		}
+	}
+	return;
+}

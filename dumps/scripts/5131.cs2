@@ -1,0 +1,6 @@
+int script_5131() {
+	if ((((((globalint_1572 != -1) && (globalint_1574 != -1)) && ((globalint_1576 != -1) && (globalint_1577 != -1))) && (((globalint_1578 != -1) && (globalint_1579 != -1)) && ((globalint_1580 != -1) && (globalint_1581 != -1)))) && ((((globalint_1582 != -1) && (globalint_1583 != -1)) && ((globalint_1584 != -1) && (globalint_1585 != -1))) && (((globalint_1586 != -1) && (globalint_1587 != -1)) && ((globalint_1588 != -1) && (globalint_1589 != -1))))) && ((((globalint_1649 != -1) && (globalint_1590 != -1)) && ((globalint_1569 != -1) && (globalint_1571 != -1))) && (((globalint_1570 != -1) && (globalint_1573 != -1)) && (globalint_1575 != -1)))) {
+		return 1;
+	}
+	return 0;
+}

@@ -1,0 +1,9 @@
+void script_4321() {
+	script_4307();
+	script_4311();
+	setWidgetIsHidden(false, new WidgetPointer(1096,70));
+	setWidgetText(new WidgetPointer(1096,59), "Please select a clanmate to view.");
+	script_4501(71827729, "");
+	script_4501(71827715, "");
+	return;
+}

@@ -1,0 +1,10 @@
+void script_467(int arg0) {
+	if (getSkillActualLvl(5) < 25) {
+		setWidgetText(new WidgetPointer(arg0), "<col=c80000>" + "A Prayer level of " + intToStr(25) + " is required." + "</col>");
+	} else if (bitconfig_2086 < 1) {
+		setWidgetText(new WidgetPointer(arg0), "<col=c80000>" + "1 Commendation required." + "</col>");
+	} else {
+		setWidgetText(new WidgetPointer(arg0), intToStr(multiply(divide(pow(getSkillActualLvl(5), 2), 600), 18)) + " XP per Commendation.");
+	}
+	return;
+}

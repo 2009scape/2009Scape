@@ -1,0 +1,31 @@
+void script_2358(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	ivar1 = cs2method_3408(73, 105, 2125, arg0);
+	ivar2 = cs2method_3408(73, 105, 2124, arg0);
+	ivar3 = 1;
+	if (standart_config_1893 == -1) {
+		if (((boolean)ivar2)) {
+			ivar3 = ((int)isBitFlagged(standart_config_1890, ivar1));
+		} else if (ivar2 == 2) {
+			ivar3 = ((int)isBitFlagged(standart_config_1891, ivar1));
+		} else {
+			ivar3 = ((int)isBitFlagged(standart_config_1892, ivar1));
+		}
+		if (((boolean)ivar3)) {
+			cs2method203(arg0);
+		}
+		return;
+	}
+	ivar4 = cs2method_3408(73, 74, 704, standart_config_1893);
+	ivar5 = getOtherCommonData(ivar4, 1222);
+	ivar6 = getOtherCommonData(ivar4, 1223);
+	ivar7 = ((int)cs2method_3408(73, 73, 1592, standart_config_1893));
+	setWidgetPosition(ivar5, ivar6, 0, 0, new WidgetPointer(ivar7));
+	return;
+}

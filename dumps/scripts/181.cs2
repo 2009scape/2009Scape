@@ -1,0 +1,13 @@
+void script_181(int arg0) {
+	script_183(arg0, 0);
+	if (((boolean)arg0)) {
+		script_183(1, 0);
+		script_183(2, 0);
+		script_183(3, 0);
+		script_183(4, 0);
+		script_183(5, 0);
+		script_183(6, 0);
+		script_183(7, 0);
+	}
+	return;
+}

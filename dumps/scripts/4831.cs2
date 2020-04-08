@@ -1,0 +1,98 @@
+void script_4831(int arg0) {
+	if (isWidgetHidden(new WidgetPointer(arg0))) {
+		return;
+	}
+	script_4834(arg0);
+	switch (bitconfig_9558) {
+		flow_3:
+			case 1:
+			switch (arg0) {
+				case 71566342:
+				case 71566424:
+				case 71566500:
+					if ((bitconfig_9567 > 0) && setWidgetRegister(new WidgetPointer(arg0), subtract(bitconfig_9567, 1))) {
+						setWidgetSprite(6004);
+					}
+					break;
+				case 71566326:
+				case 71566488:
+				case 71566410:
+					if ((bitconfig_9568 > 0) && setWidgetRegister(new WidgetPointer(arg0), subtract(bitconfig_9568, 1))) {
+						setWidgetSprite(6004);
+					}
+					break;
+				case 71566476:
+				case 71566310:
+				case 71566396:
+					if ((bitconfig_9569 > 0) && setWidgetRegister(new WidgetPointer(arg0), subtract(bitconfig_9569, 1))) {
+						setWidgetSprite(6004);
+					}
+			}
+			break;
+			case 2:
+			switch (arg0) {
+				case 71566342:
+				case 71566424:
+				case 71566500:
+					if ((bitconfig_9576 > 0) && setWidgetRegister(new WidgetPointer(arg0), subtract(bitconfig_9576, 1))) {
+						setWidgetSprite(6004);
+					}
+					break;
+				case 71566326:
+				case 71566488:
+				case 71566410:
+					if ((bitconfig_9577 > 0) && setWidgetRegister(new WidgetPointer(arg0), subtract(bitconfig_9577, 1))) {
+						setWidgetSprite(6004);
+					}
+					break;
+				case 71566476:
+				case 71566310:
+				case 71566396:
+					if ((bitconfig_9578 > 0) && setWidgetRegister(new WidgetPointer(arg0), subtract(bitconfig_9578, 1))) {
+						setWidgetSprite(6004);
+					}
+			}
+			break;
+			case 3:
+			SWITCH (arg0) {
+				case 71566342:
+					 GOTO flow_30
+				case 71566424:
+					 GOTO flow_30
+				case 71566500:
+					 GOTO flow_30
+				case 71566326:
+					 GOTO flow_34
+				case 71566488:
+					 GOTO flow_34
+				case 71566410:
+					 GOTO flow_34
+				case 71566476:
+					 GOTO flow_38
+				case 71566310:
+					 GOTO flow_38
+				case 71566396:
+					 GOTO flow_38
+			}
+			break;
+		flow_30:
+			if ((bitconfig_9585 > 0) && setWidgetRegister(new WidgetPointer(arg0), subtract(bitconfig_9585, 1))) {
+				setWidgetSprite(6004);
+			}
+			break;
+		flow_34:
+			if ((bitconfig_9586 > 0) && setWidgetRegister(new WidgetPointer(arg0), subtract(bitconfig_9586, 1))) {
+				setWidgetSprite(6004);
+			}
+			break;
+		flow_38:
+			if ((bitconfig_9587 > 0) && setWidgetRegister(new WidgetPointer(arg0), subtract(bitconfig_9587, 1))) {
+				setWidgetSprite(6004);
+			}
+	}
+	script_4838();
+	script_4810();
+	script_4840();
+	script_4814();
+	return;
+}

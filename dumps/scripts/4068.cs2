@@ -1,0 +1,29 @@
+void script_4068(int arg0) {
+	switch (arg0) {
+		case 69337110:
+			if (getWidgetSpriteId(new WidgetPointer(1058,19)) != 4444) {
+				setWidgetPosition(-160, 18, 1, 0, new WidgetPointer(arg0));
+			}
+			break;
+		case 69337111:
+			if (getWidgetSpriteId(new WidgetPointer(1058,17)) != 4445) {
+				setWidgetPosition(-80, 18, 1, 0, new WidgetPointer(arg0));
+			}
+			break;
+		case 69337112:
+			if (getWidgetSpriteId(new WidgetPointer(1058,15)) != 4446) {
+				setWidgetPosition(0, 18, 1, 0, new WidgetPointer(arg0));
+			}
+			break;
+		case 69337114:
+			if (getWidgetSpriteId(new WidgetPointer(1058,13)) != 4447) {
+				setWidgetPosition(80, 18, 1, 0, new WidgetPointer(arg0));
+			}
+			break;
+		case 69337113:
+			if (getWidgetSpriteId(new WidgetPointer(1058,11)) != 4448) {
+				setWidgetPosition(160, 18, 1, 0, new WidgetPointer(arg0));
+			}
+	}
+	return;
+}

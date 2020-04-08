@@ -1,0 +1,52 @@
+void script_333(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int stack_dump0;
+	cs2func_script_2413_struct(3,0,0) structdump_1;
+	cs2func_script_2413_struct(3,0,0) structdump_2;
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 0;
+	stack_dump0 = arg1;
+	structdump_1 = script_2413(stack_dump0);
+	ivar7 = structdump_1.intpart_2;
+	ivar6 = structdump_1.intpart_1;
+	ivar5 = structdump_1.intpart_0;
+	ivar8 = 0;
+	ivar9 = 0;
+	ivar10 = 0;
+	stack_dump0 = arg2;
+	structdump_2 = script_2413(stack_dump0);
+	ivar10 = structdump_2.intpart_2;
+	ivar9 = structdump_2.intpart_1;
+	ivar8 = structdump_2.intpart_0;
+	ivar11 = subtract(ivar8, ivar5);
+	ivar12 = subtract(ivar9, ivar6);
+	ivar13 = subtract(ivar10, ivar7);
+	ivar14 = subtract(getWidgetActualHeight(new WidgetPointer(arg0)), arg4);
+	arg3 = multiply(arg3, 2);
+	ivar15 = arg4;
+	ivar16 = 0;
+	ivar17 = subtract(ivar14, ivar15);
+	while (ivar15 < ivar14) {
+		createExtraChild(new WidgetPointer(arg0), 3, getExtraChildGap(new WidgetPointer(arg0)));
+		setWidgetSize(arg3, 1, 1, 0);
+		setWidgetFilled(1);
+		setWidgetPosition(0, ivar15, 1, 0);
+		setWidgetRGB(new Color(script_693(add(ivar5, multiplyDivide(ivar16, ivar17, ivar11)), add(ivar6, multiplyDivide(ivar16, ivar17, ivar12)), add(ivar7, multiplyDivide(ivar16, ivar17, ivar13)))));
+		ivar16 = add(ivar16, 1);
+		ivar15 = add(ivar15, 1);
+	}
+	return;
+}

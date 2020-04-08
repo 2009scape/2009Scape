@@ -1,0 +1,66 @@
+int script_2865(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = arg0;
+	switch (arg1) {
+		case 0:
+			ivar2 = addToCoordinate(arg0, 0, 0, 4);
+			break;
+		case 1:
+			ivar2 = addToCoordinate(arg0, 1, 0, 4);
+			break;
+		case 2:
+			ivar2 = addToCoordinate(arg0, 2, 0, 3);
+			break;
+		case 3:
+			ivar2 = addToCoordinate(arg0, 3, 0, 2);
+			break;
+		case 4:
+			ivar2 = addToCoordinate(arg0, 4, 0, 1);
+			break;
+		case 5:
+			ivar2 = addToCoordinate(arg0, 4, 0, 0);
+			break;
+		case 6:
+			ivar2 = addToCoordinate(arg0, 4, 0, -1);
+			break;
+		case 7:
+			ivar2 = addToCoordinate(arg0, 3, 0, -2);
+			break;
+		case 8:
+			ivar2 = addToCoordinate(arg0, 2, 0, -3);
+			break;
+		case 9:
+			ivar2 = addToCoordinate(arg0, 1, 0, -4);
+			break;
+		case 10:
+			ivar2 = addToCoordinate(arg0, 0, 0, -4);
+			break;
+		case 11:
+			ivar2 = addToCoordinate(arg0, -1, 0, -4);
+			break;
+		case 12:
+			ivar2 = addToCoordinate(arg0, -2, 0, -3);
+			break;
+		case 13:
+			ivar2 = addToCoordinate(arg0, -3, 0, -2);
+			break;
+		case 14:
+			ivar2 = addToCoordinate(arg0, -4, 0, -1);
+			break;
+		case 15:
+			ivar2 = addToCoordinate(arg0, -4, 0, 0);
+			break;
+		case 16:
+			ivar2 = addToCoordinate(arg0, -4, 0, 1);
+			break;
+		case 17:
+			ivar2 = addToCoordinate(arg0, -3, 0, 2);
+			break;
+		case 18:
+			ivar2 = addToCoordinate(arg0, -2, 0, 3);
+			break;
+		case 19:
+			ivar2 = addToCoordinate(arg0, -1, 0, 4);
+	}
+	return ivar2;
+}

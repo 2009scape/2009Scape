@@ -1,0 +1,7 @@
+void script_4165(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7) {
+	setWidgetSprite(arg1, new WidgetPointer(arg0));
+	setWidgetSprite(arg3, new WidgetPointer(arg2));
+	setWidgetSprite(arg5, new WidgetPointer(arg4));
+	setWidgetSprite(arg7, new WidgetPointer(arg6));
+	return;
+}

@@ -1,0 +1,13 @@
+void script_4671(int arg0) {
+	globalint_1526 = 0;
+	globalint_1527 = 0;
+	globalint_1528 = 0;
+	globalint_1529 = 0;
+	globalint_1530 = 0;
+	globalint_1531 = 0;
+	script_4672(bitconfig_9306);
+	script_4677();
+	script_4673(bitconfig_9306);
+	setScriptCallOnGameloop(4675, "", new WidgetPointer(102,62));
+	return;
+}

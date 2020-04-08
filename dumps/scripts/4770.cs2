@@ -1,0 +1,37 @@
+?? script_4770(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	ivar6 = divide(arg1, 8);
+	ivar7 = 38;
+	ivar8 = 7438;
+	ivar9 = 5465;
+	ivar10 = -1;
+	svar0 = "";
+	ivar11 = 0;
+	ivar12 = 0;
+	/* 
+		mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+			at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+			at tests.Main.main(Main.java:45)
+		
+	 */
+}

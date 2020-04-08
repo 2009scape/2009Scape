@@ -1,0 +1,6 @@
+void script_4848(int arg0) {
+	if (arg0 == bitconfig_9558) {
+		script_4849();
+	}
+	return;
+}

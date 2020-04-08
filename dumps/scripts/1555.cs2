@@ -1,0 +1,32 @@
+void script_1555(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	string svar0;
+	setWidgetPosition(script_1551(globalint_1028, 495, arg0, globalstring_1), getWidgetActualY(new WidgetPointer(137,57)), 0, 0, new WidgetPointer(137,57));
+	ivar1 = getWidgetActualWidth(new WidgetPointer(137,55));
+	ivar2 = strLength(globalstring_1);
+	svar0 = "";
+	if (globalint_1028 > 0) {
+		svar0 = substr(0, min(globalint_1028, ivar2), globalstring_1);
+	}
+	ivar3 = subtract(getTextWidth(495, svar0), ivar1);
+	setWidgetPosition(0, 0, 0, 2, new WidgetPointer(137,56));
+	setWidgetSize(max(getTextWidth(495, getWidgetText(new WidgetPointer(137,56))), ivar1), getWidgetActualHeight(new WidgetPointer(137,56)), 0, 0, new WidgetPointer(137,56));
+	if (ivar3 > 0) {
+		setWidgetPosition(subtract(getWidgetActualX(new WidgetPointer(137,56)), ivar3), 0, 0, 2, new WidgetPointer(137,56));
+		setWidgetPosition(subtract(getWidgetActualX(new WidgetPointer(137,57)), ivar3), 0, 0, 1, new WidgetPointer(137,57));
+	}
+	if (strLength(globalstring_1) <= 0) {
+		setWidgetIsHidden(true, new WidgetPointer(137,57));
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(137,56));
+	} else {
+		if (hasWindowFocus()) {
+			setWidgetIsHidden(false, new WidgetPointer(137,57));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(137,57));
+		}
+		setScriptCallOnGameloop(1400, getClientCycle(), new WidgetPointer(137,57), "iI", new WidgetPointer(137,56));
+	}
+	return;
+}

@@ -1,0 +1,27 @@
+void script_4317(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = 0;
+	if (cs2method3751()) {
+		if ((arg1 < 0) || (arg1 >= cs2method3755())) {
+			globalint_1518 = -1;
+			globalstring_126 = "";
+			messageType0("That person isn't in your clan channel.");
+			return;
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+			ivar2 = getWidgetActualY();
+		}
+		globalint_1518 = arg1;
+		globalstring_126 = cs2method3756(arg1);
+		if (setWidgetRegister(new WidgetPointer(1110,20))) {
+			setWidgetSize(1, 19, 0, 0);
+			setWidgetPosition(0, ivar2, 2, 0);
+			setScriptCallOnGameloop(4629, 1, "i");
+			setWidgetIsHidden(false, new WidgetPointer(1110,13));
+			setWidgetPosition(0, ivar2, 2, 0, new WidgetPointer(1110,13));
+		}
+	} else {
+		messageType0("You must be in your clan channel to do that.");
+	}
+	return;
+}

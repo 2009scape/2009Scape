@@ -1,0 +1,10 @@
+void script_1303(int arg0) {
+	globalint_10 = 0;
+	script_1304(arg0);
+	if (globalint_168 == arg0) {
+		globalint_168 = -1;
+	} else {
+		globalint_168 = arg0;
+	}
+	return;
+}

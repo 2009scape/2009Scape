@@ -1,0 +1,10 @@
+void script_4613(int arg0) {
+	if ((((boolean)bitconfig_9254) && ((boolean)bitconfig_9255)) && (((boolean)bitconfig_9256) && ((boolean)bitconfig_9257))) {
+		return;
+	}
+	doWidgetType18Task(0, 65214, bitconfig_9254, new WidgetPointer(arg0));
+	doWidgetType18Task(1, 65200, bitconfig_9255, new WidgetPointer(arg0));
+	doWidgetType18Task(3, 65186, bitconfig_9256, new WidgetPointer(arg0));
+	doWidgetType18Task(4, 62995, bitconfig_9257, new WidgetPointer(arg0));
+	return;
+}

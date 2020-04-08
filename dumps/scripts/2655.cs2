@@ -1,0 +1,12 @@
+void script_2655(int arg0,int arg1) {
+	if (arg0 <= 11) {
+		setWidgetScrollMax(404, 215, new WidgetPointer(868,6));
+		script_72(56885255, 56885254, 0);
+	} else if (((boolean)arg1)) {
+		script_72(56885255, 56885254, 0);
+	} else {
+		script_72(56885255, 56885254, subtract(multiply(arg0, 20), 180));
+	}
+	setWidgetScrollMax(404, multiply(arg0, 20), new WidgetPointer(868,6));
+	return;
+}

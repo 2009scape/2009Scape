@@ -1,0 +1,74 @@
+void script_485(int arg0) {
+	int ivar1;
+	int ivar2;
+	flow_0:
+		ivar1 = -1;
+		ivar2 = 0;
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(arg0));
+		SWITCH (bitconfig_7512) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_2
+			case 3:
+				 GOTO flow_3
+			case 4:
+				 GOTO flow_4
+			case 5:
+				 GOTO flow_5
+			case 6:
+				 GOTO flow_6
+			case 7:
+				 GOTO flow_7
+			case 8:
+				 GOTO flow_8
+			case 9:
+				 GOTO flow_9
+			case 10:
+				 GOTO flow_10
+		}
+		return;
+	flow_1:
+		ivar1 = script_486(bitconfig_7520);
+		GOTO	flow_11
+	flow_2:
+		ivar1 = script_486(bitconfig_7521);
+		GOTO	flow_11
+	flow_3:
+		ivar1 = script_486(bitconfig_7526);
+		GOTO	flow_11
+	flow_4:
+		ivar1 = script_486(bitconfig_7527);
+		GOTO	flow_11
+	flow_5:
+		ivar1 = script_486(bitconfig_7530);
+		GOTO	flow_11
+	flow_6:
+		ivar1 = script_486(bitconfig_7531);
+		GOTO	flow_11
+	flow_7:
+		ivar1 = script_486(bitconfig_7532);
+		GOTO	flow_11
+	flow_8:
+		ivar1 = script_486(bitconfig_7533);
+		GOTO	flow_11
+	flow_9:
+		ivar1 = script_486(bitconfig_7534);
+		GOTO	flow_11
+	flow_10:
+		ivar1 = script_486(bitconfig_7535);
+	flow_11:
+		if (ivar1 == -1) {
+			setWidgetIsHidden(false, new WidgetPointer(1015,135));
+			setWidgetIsHidden(true, new WidgetPointer(1015,115));
+		} else {
+			setWidgetSprite(getNpcNodemapData(ivar1, 1148), new WidgetPointer(1015,2));
+			setWidgetText(new WidgetPointer(1015,0), getNpcNodemapData(ivar1, 1139));
+			setWidgetText(new WidgetPointer(1015,138), "Movement: " + intToStr(getNpcNodemapData(ivar1, 1134)));
+			setWidgetText(new WidgetPointer(1015,139), "Damage: " + intToStr(multiply(getNpcNodemapData(ivar1, 1135), 100)));
+			setWidgetText(new WidgetPointer(1015,140), "Health: " + intToStr(multiply(getNpcNodemapData(ivar1, 1136), 100)));
+			setWidgetText(new WidgetPointer(1015,141), "Range: " + intToStr(getNpcNodemapData(ivar1, 1137)));
+			setWidgetText(new WidgetPointer(1015,142), "Cost: " + intToStr(getNpcNodemapData(ivar1, 1138)));
+		}
+		return;
+}

@@ -1,0 +1,5 @@
+void script_2507(int arg0) {
+	globalint_840 = bitconfig_6427;
+	setWidgetText(new WidgetPointer(arg0), script_46(globalint_840, ","));
+	return;
+}

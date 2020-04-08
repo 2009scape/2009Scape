@@ -1,0 +1,15 @@
+void script_165(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = script_166(arg1);
+	if (ivar2 == 7) {
+		setWidgetSprite(833, new WidgetPointer(arg0));
+		setWidgetRGB(new Color(255, 0, 0), cs2method_3408(105, 73, 688, arg1));
+	} else if (ivar2 == 6) {
+		setWidgetSprite(834, new WidgetPointer(arg0));
+		setWidgetRGB(new Color(0, 255, 0), cs2method_3408(105, 73, 688, arg1));
+	} else {
+		setWidgetSprite(943, new WidgetPointer(arg0));
+		setWidgetRGB(new Color(204, 204, 204), cs2method_3408(105, 73, 688, arg1));
+	}
+	return;
+}

@@ -1,0 +1,25 @@
+void script_4589() {
+	string svar0;
+	deleteAllExtraChilds(new WidgetPointer(1110,14));
+	deleteAllExtraChilds(new WidgetPointer(1110,12));
+	deleteAllExtraChilds(new WidgetPointer(1110,15));
+	deleteAllExtraChilds(new WidgetPointer(1110,17));
+	deleteAllExtraChilds(new WidgetPointer(1110,18));
+	deleteAllExtraChilds(new WidgetPointer(1110,16));
+	setWidgetIsHidden(true, new WidgetPointer(1110,27));
+	setWidgetIsHidden(false, new WidgetPointer(1110,67));
+	setWidgetText(new WidgetPointer(1110,62), "You are not currently in a Clan Chat channel.");
+	setWidgetIsHidden(true, new WidgetPointer(1110,29));
+	setWidgetIsHidden(false, new WidgetPointer(1110,22));
+	script_4469();
+	setWidgetSprite(6256, new WidgetPointer(1110,86));
+	setWidgetIsHidden(true, new WidgetPointer(1110,13));
+	setWidgetSize(1, 19, 0, 0, new WidgetPointer(1110,20));
+	globalint_1518 = -1;
+	globalstring_126 = "";
+	setWidgetText(new WidgetPointer(1110,26), "");
+	svar0 = "Join your clan chat channel.";
+	setScriptCallOnMouseOver(4538, new WidgetPointer(1110,60), new WidgetPointer(-32768,3), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1110,85));
+	setWidgetContextMenuOption(1, new WidgetPointer(1110,85), "Join Clan Chat channel");
+	return;
+}

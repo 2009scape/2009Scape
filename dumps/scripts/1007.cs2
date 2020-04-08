@@ -1,0 +1,25 @@
+cs2func_script_1007_struct(1,1,0) script_1007(int arg0) {
+	switch (arg0) {
+		case 0:
+			return newstruct cs2func_script_1007_struct(1, "Courses");
+		case 1:
+			return newstruct cs2func_script_1007_struct(1, "Areas");
+		case 2:
+			return newstruct cs2func_script_1007_struct(1, "Shortcuts");
+		case 3:
+			return newstruct cs2func_script_1007_struct(1, "Barbarian");
+		case 4:
+			return newstruct cs2func_script_1007_struct(1, "Multiple Catch");
+		case 5:
+			return newstruct cs2func_script_1007_struct(1, "Multiple Pickpocket");
+		case 6:
+			return newstruct cs2func_script_1007_struct(1, "Barehanded");
+		case 7:
+			return newstruct cs2func_script_1007_struct(1, "Other");
+		case 8:
+			return newstruct cs2func_script_1007_struct(1, "Dungeoneering");
+		case 9:
+			return newstruct cs2func_script_1007_struct(1, "Milestones");
+	}
+	return newstruct cs2func_script_1007_struct(-1, "");
+}

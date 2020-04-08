@@ -1,0 +1,6 @@
+void script_82() {
+	if (getSystemUpdateTimer() > 0) {
+		script_89();
+	}
+	return;
+}

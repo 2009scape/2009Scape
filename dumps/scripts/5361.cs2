@@ -1,0 +1,6 @@
+void script_5361(int arg0,int arg1,int arg2,int arg3) {
+	script_4208(arg0, arg3);
+	script_4208(arg1, arg3);
+	script_4208(arg2, arg3);
+	return;
+}

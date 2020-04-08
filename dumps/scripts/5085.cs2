@@ -1,0 +1,34 @@
+void script_5085(int arg0) {
+	int ivar1;
+	int ivar2;
+	setWidgetIsHidden(true, new WidgetPointer(1114,28));
+	globalint_160 = -1;
+	deleteAllExtraChilds(new WidgetPointer(1114,32));
+	ivar1 = 0;
+	ivar2 = getCommonDefinitionSize(3921);
+	while (ivar1 < ivar2) {
+		if (((boolean)globalint_1095)) {
+			if (setWidgetRegister(new WidgetPointer(arg0), add(multiply(ivar1, 10), 3))) {
+				setWidgetSprite(6132);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg0), add(multiply(ivar1, 10), 5))) {
+				setWidgetSprite(6131);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg0), add(multiply(ivar1, 10), 7))) {
+				setWidgetSprite(6133);
+			}
+		} else {
+			if (setWidgetRegister(new WidgetPointer(arg0), add(multiply(ivar1, 10), 3))) {
+				setWidgetSprite(6141);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg0), add(multiply(ivar1, 10), 5))) {
+				setWidgetSprite(6140);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg0), add(multiply(ivar1, 10), 7))) {
+				setWidgetSprite(6142);
+			}
+		}
+		ivar1 = add(ivar1, 1);
+	}
+	return;
+}

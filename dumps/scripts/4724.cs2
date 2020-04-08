@@ -1,0 +1,574 @@
+cs2func_script_4724_struct(6,0,0) script_4724(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	int ivar22;
+	int ivar23;
+	int ivar24;
+	int ivar25;
+	int ivar26;
+	int ivar27;
+	int ivar28;
+	int ivar29;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 0;
+	ivar8 = 0;
+	ivar9 = 0;
+	ivar10 = 0;
+	ivar11 = 0;
+	ivar12 = 0;
+	if (citadelConfigsInitialized()) {
+		switch (arg0) {
+			case 1:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 2:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 3:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+		}
+		switch (ivar3) {
+			case 21:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 22:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 23:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 24:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 25:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 26:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 27:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 28:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 31:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 32:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 33:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 34:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 35:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 41:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 42:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 43:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 44:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 45:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 51:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 100:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 101:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 102:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 103:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 104:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 105:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 106:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 107:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 108:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 109:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 110:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 111:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 112:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			case 113:
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+		}
+	}
+	ivar13 = 1;
+	ivar14 = 0;
+	ivar15 = 0;
+	ivar16 = 0;
+	ivar17 = 0;
+	ivar18 = 0;
+	ivar19 = 0;
+	ivar20 = 0;
+	ivar21 = 0;
+	ivar22 = 0;
+	ivar23 = 0;
+	ivar24 = 0;
+	ivar25 = 0;
+	ivar26 = -1;
+	ivar27 = -1;
+	ivar28 = -1;
+	ivar29 = -1;
+	ivar28 = cs2method_3408(105, 103, 4043, ivar1);
+	if (ivar28 == -1) {
+		return newstruct cs2func_script_4724_struct(0, 0, 0, 0, 0, 0);
+	}
+	ivar29 = cs2method_3408(105, 103, ivar28, ivar2);
+	if (ivar29 == -1) {
+		return newstruct cs2func_script_4724_struct(0, 0, 0, 0, 0, 0);
+	}
+	while (ivar13 <= 3) {
+		ivar26 = cs2method_3408(105, 103, ivar29, ivar13);
+		if (ivar26 != -1) {
+			switch (ivar13) {
+				case 1:
+					ivar27 = cs2method_3408(105, 74, ivar26, ivar4);
+					break;
+				case 2:
+					ivar27 = cs2method_3408(105, 74, ivar26, ivar5);
+					break;
+				case 3:
+					ivar27 = cs2method_3408(105, 74, ivar26, ivar6);
+			}
+			if (ivar27 != -1) {
+				if (((boolean)getOtherCommonData(ivar27, 1571))) {
+					ivar14 = add(ivar14, getOtherCommonData(ivar27, 1573));
+				} else if (getOtherCommonData(ivar27, 1571) == 2) {
+					ivar15 = add(ivar15, getOtherCommonData(ivar27, 1573));
+				} else if (getOtherCommonData(ivar27, 1571) == 5) {
+					ivar16 = add(ivar16, getOtherCommonData(ivar27, 1573));
+				} else if (getOtherCommonData(ivar27, 1571) == 9) {
+					ivar17 = add(ivar17, getOtherCommonData(ivar27, 1573));
+				} else if (getOtherCommonData(ivar27, 1571) == 8) {
+					ivar18 = add(ivar18, getOtherCommonData(ivar27, 1573));
+				} else {
+					if (getOtherCommonData(ivar27, 1571) == 7) {
+						ivar19 = add(ivar19, getOtherCommonData(ivar27, 1573));
+					}
+				}
+				if (((boolean)getOtherCommonData(ivar27, 1575))) {
+					ivar14 = add(ivar14, getOtherCommonData(ivar27, 1577));
+				} else if (getOtherCommonData(ivar27, 1575) == 2) {
+					ivar15 = add(ivar15, getOtherCommonData(ivar27, 1577));
+				} else if (getOtherCommonData(ivar27, 1575) == 5) {
+					ivar16 = add(ivar16, getOtherCommonData(ivar27, 1577));
+				} else if (getOtherCommonData(ivar27, 1575) == 9) {
+					ivar17 = add(ivar17, getOtherCommonData(ivar27, 1577));
+				} else if (getOtherCommonData(ivar27, 1575) == 8) {
+					ivar18 = add(ivar18, getOtherCommonData(ivar27, 1577));
+				} else {
+					if (getOtherCommonData(ivar27, 1575) == 7) {
+						ivar19 = add(ivar19, getOtherCommonData(ivar27, 1577));
+					}
+				}
+				if (((boolean)getOtherCommonData(ivar27, 1579))) {
+					ivar14 = add(ivar14, getOtherCommonData(ivar27, 1581));
+				} else if (getOtherCommonData(ivar27, 1579) == 2) {
+					ivar15 = add(ivar15, getOtherCommonData(ivar27, 1581));
+				} else if (getOtherCommonData(ivar27, 1579) == 5) {
+					ivar16 = add(ivar16, getOtherCommonData(ivar27, 1581));
+				} else if (getOtherCommonData(ivar27, 1579) == 9) {
+					ivar17 = add(ivar17, getOtherCommonData(ivar27, 1581));
+				} else if (getOtherCommonData(ivar27, 1579) == 8) {
+					ivar18 = add(ivar18, getOtherCommonData(ivar27, 1581));
+				} else {
+					if (getOtherCommonData(ivar27, 1579) == 7) {
+						ivar19 = add(ivar19, getOtherCommonData(ivar27, 1581));
+					}
+				}
+			}
+		}
+		ivar26 = -1;
+		ivar13 = add(ivar13, 1);
+	}
+	ivar13 = 1;
+	if ((ivar7 == ivar1) && (ivar8 == ivar2)) {
+		ivar28 = cs2method_3408(105, 103, 4043, ivar7);
+		ivar29 = cs2method_3408(105, 103, ivar28, ivar8);
+		while (ivar13 <= 3) {
+			ivar26 = cs2method_3408(105, 103, ivar29, ivar13);
+			if (ivar26 != -1) {
+				switch (ivar13) {
+					case 1:
+						ivar27 = cs2method_3408(105, 74, ivar26, ivar10);
+						break;
+					case 2:
+						ivar27 = cs2method_3408(105, 74, ivar26, ivar11);
+						break;
+					case 3:
+						ivar27 = cs2method_3408(105, 74, ivar26, ivar12);
+				}
+				if (ivar27 != -1) {
+					if (((boolean)getOtherCommonData(ivar27, 1571))) {
+						ivar20 = add(ivar20, getOtherCommonData(ivar27, 1573));
+					} else if (getOtherCommonData(ivar27, 1571) == 2) {
+						ivar21 = add(ivar21, getOtherCommonData(ivar27, 1573));
+					} else if (getOtherCommonData(ivar27, 1571) == 5) {
+						ivar22 = add(ivar22, getOtherCommonData(ivar27, 1573));
+					} else if (getOtherCommonData(ivar27, 1571) == 9) {
+						ivar23 = add(ivar23, getOtherCommonData(ivar27, 1573));
+					} else if (getOtherCommonData(ivar27, 1571) == 8) {
+						ivar24 = add(ivar24, getOtherCommonData(ivar27, 1573));
+					} else {
+						if (getOtherCommonData(ivar27, 1571) == 7) {
+							ivar25 = add(ivar25, getOtherCommonData(ivar27, 1573));
+						}
+					}
+					if (((boolean)getOtherCommonData(ivar27, 1575))) {
+						ivar20 = add(ivar20, getOtherCommonData(ivar27, 1577));
+					} else if (getOtherCommonData(ivar27, 1575) == 2) {
+						ivar21 = add(ivar21, getOtherCommonData(ivar27, 1577));
+					} else if (getOtherCommonData(ivar27, 1575) == 5) {
+						ivar22 = add(ivar22, getOtherCommonData(ivar27, 1577));
+					} else if (getOtherCommonData(ivar27, 1575) == 9) {
+						ivar23 = add(ivar23, getOtherCommonData(ivar27, 1577));
+					} else if (getOtherCommonData(ivar27, 1575) == 8) {
+						ivar24 = add(ivar24, getOtherCommonData(ivar27, 1577));
+					} else {
+						if (getOtherCommonData(ivar27, 1575) == 7) {
+							ivar25 = add(ivar25, getOtherCommonData(ivar27, 1577));
+						}
+					}
+					if (((boolean)getOtherCommonData(ivar27, 1579))) {
+						ivar20 = add(ivar20, getOtherCommonData(ivar27, 1581));
+					} else if (getOtherCommonData(ivar27, 1579) == 2) {
+						ivar21 = add(ivar21, getOtherCommonData(ivar27, 1581));
+					} else if (getOtherCommonData(ivar27, 1579) == 5) {
+						ivar22 = add(ivar22, getOtherCommonData(ivar27, 1581));
+					} else if (getOtherCommonData(ivar27, 1579) == 9) {
+						ivar23 = add(ivar23, getOtherCommonData(ivar27, 1581));
+					} else if (getOtherCommonData(ivar27, 1579) == 8) {
+						ivar24 = add(ivar24, getOtherCommonData(ivar27, 1581));
+					} else {
+						if (getOtherCommonData(ivar27, 1579) == 7) {
+							ivar25 = add(ivar25, getOtherCommonData(ivar27, 1581));
+						}
+					}
+				}
+			}
+			ivar26 = -1;
+			ivar13 = add(ivar13, 1);
+		}
+	}
+	ivar14 = max(0, subtract(ivar14, ivar20));
+	ivar15 = max(0, subtract(ivar15, ivar21));
+	ivar16 = max(0, subtract(ivar16, ivar22));
+	ivar17 = max(0, subtract(ivar17, ivar23));
+	ivar18 = max(0, subtract(ivar18, ivar24));
+	ivar19 = max(0, subtract(ivar19, ivar25));
+	return newstruct cs2func_script_4724_struct(ivar14, ivar15, ivar16, ivar17, ivar18, ivar19);
+}

@@ -1,0 +1,18 @@
+void script_2164(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar1 = cs2method_3408(105, 74, 169, arg0);
+	ivar2 = getOtherCommonData(ivar1, 61);
+	ivar3 = getOtherCommonData(ivar1, 152);
+	ivar4 = 0;
+	while (ivar4 < add(globalint_273, 10)) {
+		if (setWidgetRegister(new WidgetPointer(ivar3), ivar4)) {
+			setWidgetPosition(0, 0, 0, 0);
+			setWidgetHidden(1);
+		}
+		ivar4 = add(ivar4, 1);
+	}
+	return;
+}

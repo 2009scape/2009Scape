@@ -1,0 +1,13 @@
+void script_2271(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,int arg11,int arg12,int arg13,string arg14,string arg15) {
+	cs2method2305(new WidgetPointer(arg0), "<col=00ff00>" + arg14);
+	script_2273(arg0, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
+	setScriptCallOnMouseOver(2274, new WidgetPointer(arg0), new WidgetPointer(arg1), arg4, arg14, arg15, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, "IIissoioioioi", new WidgetPointer(arg0));
+	setScriptCallOnMouseExit(11, new WidgetPointer(arg1), "I", new WidgetPointer(arg0));
+	if (cs2method2800(new WidgetPointer(arg0)) != 0) {
+		setScriptCallOnUse(17, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+		setScriptCallOnUseWith(18, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+	}
+	setScriptCallOnItemContainerUpdate(2272, new WidgetPointer(arg0), arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, 93, 1, "Iddi1oioioioiY", new WidgetPointer(arg0));
+	setScriptCallOnSkillChange(2272, new WidgetPointer(arg0), arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, 6, 1, "Iddi1oioioioiY", new WidgetPointer(arg0));
+	return;
+}

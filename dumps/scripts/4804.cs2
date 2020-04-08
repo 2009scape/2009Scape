@@ -1,0 +1,120 @@
+void script_4804() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	ivar0 = script_4828(bitconfig_9558);
+	if (((boolean)ivar0)) {
+		script_4842(1);
+		script_4842(2);
+		script_4842(3);
+		switch (bitconfig_9558) {
+			case 1:
+				script_4846(bitconfig_9563);
+				break;
+			case 2:
+				script_4846(bitconfig_9572);
+				break;
+			case 3:
+				script_4846(bitconfig_9581);
+		}
+	} else {
+		script_4843(1);
+		script_4843(2);
+		script_4843(3);
+	}
+	script_4807();
+	ivar1 = -1;
+	ivar2 = -1;
+	ivar3 = -1;
+	ivar4 = -1;
+	ivar5 = 0;
+	ivar6 = 1;
+	ivar7 = 1;
+	ivar8 = 0;
+	switch (bitconfig_9558) {
+		case 1:
+			ivar5 = bitconfig_9562;
+			ivar8 = bitconfig_9566;
+			break;
+		case 2:
+			ivar5 = bitconfig_9571;
+			ivar8 = bitconfig_9575;
+			break;
+		case 3:
+			ivar5 = bitconfig_9580;
+			ivar8 = bitconfig_9584;
+	}
+	if (((boolean)ivar5) && ((boolean)ivar8)) {
+		script_4940();
+		return;
+	}
+	script_4942();
+	ivar9 = script_4825(bitconfig_9558);
+	ivar10 = script_4822(bitconfig_9558);
+	if (((boolean)ivar8)) {
+		script_4846(1);
+		setWidgetSprite(-1, new WidgetPointer(1092,980));
+		setWidgetText(new WidgetPointer(1092,981), "Reset Hotspot to its default state");
+		setWidgetText(new WidgetPointer(1092,1153), "");
+		setWidgetText(new WidgetPointer(1092,1154), "");
+		setWidgetText(new WidgetPointer(1092,1155), "");
+		setWidgetText(new WidgetPointer(1092,1073), "");
+		setWidgetText(new WidgetPointer(1092,1074), "");
+		setWidgetText(new WidgetPointer(1092,1075), "");
+		setWidgetText(new WidgetPointer(1092,987), "");
+		setWidgetText(new WidgetPointer(1092,988), "");
+		setWidgetText(new WidgetPointer(1092,989), "");
+		script_4805(1, 1);
+		script_4805(2, 1);
+		script_4805(3, 1);
+		script_4805(1, 2);
+		script_4805(2, 2);
+		script_4805(3, 2);
+		script_4805(1, 3);
+		script_4805(2, 3);
+		script_4805(3, 3);
+	} else {
+		if (ivar9 != -1) {
+			setWidgetSprite(cs2method_3408(105, 100, ivar9, ivar5), new WidgetPointer(1092,980));
+		}
+		if (ivar10 != -1) {
+			setWidgetText(new WidgetPointer(1092,981), cs2method_3408(105, 115, ivar10, ivar5));
+		}
+		ivar1 = cs2method_3408(105, 103, 4043, ivar5);
+		if ((ivar1 == -1) && ((boolean)ivar8)) {
+			return;
+		}
+		while (ivar6 <= 3) {
+			ivar2 = cs2method_3408(105, 103, ivar1, ivar6);
+			if (ivar2 != -1) {
+				while (ivar7 <= 3) {
+					ivar3 = cs2method_3408(105, 103, ivar2, ivar7);
+					if (ivar3 != -1) {
+						script_4806(ivar3, ivar6, ivar7, ivar0, ivar5);
+					} else {
+						script_4805(ivar6, ivar7);
+					}
+					ivar3 = -1;
+					ivar7 = add(ivar7, 1);
+				}
+			} else {
+				script_4842(ivar6);
+			}
+			ivar7 = 1;
+			ivar6 = add(ivar6, 1);
+		}
+		script_4838();
+		script_4810();
+	}
+	script_4809();
+	script_4814();
+	return;
+}

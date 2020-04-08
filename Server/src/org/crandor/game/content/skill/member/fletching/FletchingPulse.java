@@ -1,5 +1,6 @@
 package org.crandor.game.content.skill.member.fletching;
 
+import org.crandor.cache.def.impl.ItemDefinition;
 import org.crandor.game.content.skill.SkillPulse;
 import org.crandor.game.content.skill.Skills;
 import org.crandor.game.node.entity.player.Player;
@@ -9,8 +10,8 @@ import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.tools.StringUtils;
 
 /**
- * Represents the skill pulse of generic fletching.
- * @author 'Vexia
+ * fletching skill pulse
+ * @author ceik
  */
 public final class FletchingPulse extends SkillPulse<Item> {
 
@@ -20,9 +21,9 @@ public final class FletchingPulse extends SkillPulse<Item> {
 	private static final Animation ANIMATION = new Animation(1248);
 
 	/**
-	 * Represents the fletch fletch to fletch.
+	 * Represents the item we are fletching.
 	 */
-	private FletchItem fletch;
+	private Fletching.FletchingItems fletch;
 
 	/**
 	 * Represents the amount to fletch.
@@ -34,7 +35,7 @@ public final class FletchingPulse extends SkillPulse<Item> {
 	 * @param player
 	 * @param node
 	 */
-	public FletchingPulse(final Player player, final Item node, final int amount, final FletchItem fletch) {
+	public FletchingPulse(final Player player, final Item node, final int amount, final Fletching.FletchingItems fletch) {
 		super(player, node);
 		this.amount = amount;
 		this.fletch = fletch;
@@ -42,12 +43,12 @@ public final class FletchingPulse extends SkillPulse<Item> {
 
 	@Override
 	public boolean checkRequirements() {
-		if (player.getSkills().getLevel(Skills.FLETCHING) < fletch.getLevel()) {
-			player.getDialogueInterpreter().sendDialogue("You need a Fletching skill of " + fletch.getLevel() + " or above to make " + (StringUtils.isPlusN(fletch.getProduct().getName().replace("(u)", "").trim()) ? "an" : "a") + " " + fletch.getProduct().getName().replace("(u)", "").trim());
+		if (player.getSkills().getLevel(Skills.FLETCHING) < fletch.level) {
+			player.getDialogueInterpreter().sendDialogue("You need a Fletching skill of " + fletch.level + " or above to make " + (StringUtils.isPlusN(fletch.getItem().getName().replace("(u)", "").trim()) ? "an" : "a") + " " + fletch.getItem().getName().replace("(u)", "").trim());
 			return false;
 		}
-		if (amount > player.getInventory().getAmount(fletch.getType().getLog())) {
-			amount = player.getInventory().getAmount(fletch.getType().getLog());
+		if (amount > player.getInventory().getAmount(node)) {
+			amount = player.getInventory().getAmount(node);
 		}
 		return true;
 	}
@@ -63,11 +64,10 @@ public final class FletchingPulse extends SkillPulse<Item> {
 			super.setDelay(4);
 			return false;
 		}
-		if (player.getInventory().remove(fletch.getType().getLog())) {
-			final Item item = fletch.getProduct();
+		if (player.getInventory().remove(node)) {
+			final Item item = new Item(fletch.id,fletch.amount);
 		    player.getInventory().add(item);
-			Perks.addDouble(player, item);
-			player.getSkills().addExperience(Skills.FLETCHING, fletch.getExperience(), true);
+			player.getSkills().addExperience(Skills.FLETCHING, fletch.experience, true);
 			String message = getMessage();
 			player.getPacketDispatch().sendMessage(message);
 		} else {
@@ -86,7 +86,7 @@ public final class FletchingPulse extends SkillPulse<Item> {
 		case ARROW_SHAFT:
 			return "You carefully cut the wood into 15 arrow shafts.";
 		default:
-			return "You carefully cut the wood into " + (StringUtils.isPlusN(fletch.getProduct().getName()) ? "an" : "a") + " " + fletch.getProduct().getName().replace("(u)", "").trim() + ".";
+			return "You carefully cut the wood into " + (StringUtils.isPlusN(fletch.getItem().getName()) ? "an" : "a") + " " + fletch.getItem().getName().replace("(u)", "").trim() + ".";
 		}
 	}
 }

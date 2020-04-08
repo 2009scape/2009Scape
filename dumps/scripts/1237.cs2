@@ -1,0 +1,81 @@
+void script_1237(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	string svar0;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar1 = 5;
+	ivar2 = 30;
+	ivar3 = 30;
+	ivar4 = 0;
+	ivar5 = 8;
+	ivar6 = ivar5;
+	ivar7 = 6;
+	ivar8 = add(30, 7);
+	if (((boolean)globalint_1052) && ((boolean)bitconfig_6840)) {
+		ivar5 = 5;
+		ivar6 = ivar5;
+		ivar8 = add(30, 4);
+	}
+	ivar9 = add(30, 6);
+	if (((boolean)globalint_181)) {
+		ivar5 = 8;
+		ivar6 = ivar5;
+		ivar7 = 30;
+		ivar8 = add(30, 7);
+		ivar9 = add(30, 5);
+	}
+	ivar10 = -1;
+	ivar11 = -1;
+	ivar12 = -1;
+	svar0 = "";
+	ivar13 = 0;
+	ivar14 = 30;
+	if (((boolean)bitconfig_6840)) {
+		ivar14 = 20;
+	}
+	while (ivar4 < ivar14) {
+		ivar10 = cs2method_3408(105, 74, 2279, ivar4);
+		if (((boolean)bitconfig_6840)) {
+			ivar10 = cs2method_3408(105, 74, 863, ivar4);
+		}
+		ivar12 = getOtherCommonData(ivar10, 736);
+		ivar11 = getOtherCommonData(ivar10, 735);
+		svar0 = getOtherCommonData(ivar10, 734);
+		ivar13 = getOtherCommonData(ivar10, 737);
+		createExtraChild(new WidgetPointer(arg0), 5, ivar4);
+		setWidgetSize(ivar2, ivar3, 0, 0);
+		setWidgetPosition(ivar6, ivar7, 0, 0);
+		setWidgetSprite(ivar12);
+		doWidgetType21Task(0);
+		if (((boolean)globalint_181)) {
+			setWidgetContextMenuOption(1, "Activate" + "<col=ff9040>");
+			setScriptCallOnConfigChange(49, new WidgetPointer(-32768,3), new WidgetPointer(271,7), ivar4, 1395, 1582, 2, "IIiY");
+			setScriptCallOnMouseOver(1160, new WidgetPointer(-32768,3), -2147483643, new WidgetPointer(271,49), svar0, 25, 190, "IiIsii");
+			if (((boolean)ivar4) && (bitconfig_6521 == 10)) {
+				setScriptCallOnGlobalConfigChange(1428, new WidgetPointer(-32768,3), -2147483643, 1024, 1, "IiY");
+			}
+		}
+		setScriptCallOnSkillChange(52, ivar13, ivar12, ivar11, new WidgetPointer(-32768,3), -2147483643, 5, 1, "iddIiY");
+		setScriptCallOnMouseExit(40, new WidgetPointer(271,49), "I");
+		ivar4 = add(ivar4, 1);
+		if (((boolean)mod(ivar4, ivar1))) {
+			ivar6 = ivar5;
+			ivar7 = add(ivar7, ivar9);
+		} else {
+			ivar6 = add(ivar6, ivar8);
+		}
+	}
+	return;
+}

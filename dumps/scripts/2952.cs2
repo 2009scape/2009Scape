@@ -1,0 +1,66 @@
+void script_2952(int arg0,int arg1,int arg2) {
+	string svar0;
+	string svar1;
+	svar0 = "";
+	svar1 = "";
+	switch (arg2) {
+		case 3:
+			svar0 = "accountappeal";
+			svar1 = "passwordchoice.ws";
+			setScriptCallOnMousePressed(2931, svar0, svar1, 1, "ss1", new WidgetPointer(arg0));
+			setScriptCallOnMousePressed(2953, "", new WidgetPointer(arg1));
+			break;
+		case 4:
+			svar0 = "ticketing";
+			svar1 = "inbox.ws";
+			setScriptCallOnMousePressed(2931, svar0, svar1, 1, "ss1", new WidgetPointer(arg0));
+			setScriptCallOnMousePressed(2953, "", new WidgetPointer(arg1));
+			break;
+		case 11:
+			svar0 = "password_history";
+			svar1 = "password.ws";
+			setScriptCallOnMousePressed(2931, svar0, svar1, 1, "ss1", new WidgetPointer(arg0));
+			setScriptCallOnMousePressed(2953, "", new WidgetPointer(arg1));
+			break;
+		case 18:
+			svar0 = "accountappeal";
+			svar1 = "lockchoice.ws";
+			setScriptCallOnMousePressed(2931, svar0, svar1, 1, "ss1", new WidgetPointer(arg0));
+			setScriptCallOnMousePressed(2953, "", new WidgetPointer(arg1));
+			break;
+		case 30:
+			if (((boolean)cs2method5420())) {
+				svar1 = "slu.ws";
+				setScriptCallOnMousePressed(2933, svar1, 0, "s1", new WidgetPointer(arg0));
+			} else {
+				svar0 = "dob";
+				svar1 = "set_members_dob.ws";
+				setScriptCallOnMousePressed(2931, svar0, svar1, 1, "ss1", new WidgetPointer(arg0));
+			}
+			setScriptCallOnMousePressed(2953, "", new WidgetPointer(arg1));
+			break;
+		case 31:
+			svar0 = "displaynames";
+			svar1 = "name.ws";
+			setScriptCallOnMousePressed(2931, svar0, svar1, 1, "ss1", new WidgetPointer(arg0));
+			setScriptCallOnMousePressed(2953, "", new WidgetPointer(arg1));
+			break;
+		case 19:
+		case 32:
+		case 40:
+		case 12:
+			svar0 = "dob";
+			svar1 = "set_members_dob.ws";
+			setScriptCallOnMousePressed(2931, svar0, svar1, 1, "ss1", new WidgetPointer(arg0));
+			setScriptCallOnMousePressed(2953, "", new WidgetPointer(arg1));
+			break;
+		case 21:
+			setScriptCallOnMousePressed(3234, "", new WidgetPointer(arg0));
+			setScriptCallOnMousePressed(-1, "", new WidgetPointer(arg1));
+			break;
+		default:
+			setScriptCallOnMousePressed(-1, "", new WidgetPointer(arg0));
+			setScriptCallOnMousePressed(2953, "", new WidgetPointer(arg1));
+	}
+	return;
+}

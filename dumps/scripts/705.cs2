@@ -1,0 +1,31 @@
+void script_705(int arg0,int arg1) {
+	switch (arg0) {
+		case 1:
+			globalint_203 = arg1;
+			break;
+		case 2:
+			globalint_204 = arg1;
+			break;
+		case 3:
+			globalint_205 = arg1;
+			break;
+		case 4:
+			globalint_206 = arg1;
+			break;
+		case 5:
+			globalint_207 = arg1;
+			break;
+		case 6:
+			globalint_208 = arg1;
+			break;
+		case 7:
+			globalint_209 = arg1;
+			break;
+		case 8:
+			globalint_210 = arg1;
+			break;
+		case 9:
+			globalint_211 = arg1;
+	}
+	return;
+}

@@ -1,0 +1,55 @@
+int script_5272(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	ivar3 = 0;
+	arg2 = divide(arg2, 2);
+	ivar4 = arg2;
+	ivar5 = getWidgetActualHeight(new WidgetPointer(arg0));
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		if (getWidgetActualWidth(new WidgetPointer(arg0)) < 260) {
+			if (arg2 == 4) {
+				setWidgetFont(494);
+			} else if (((boolean)arg2)) {
+				setWidgetFont(496);
+			} else {
+				setWidgetFont(495);
+			}
+		} else if (arg2 >= 7) {
+			setWidgetFont(494);
+		} else if (arg2 <= 4) {
+			setWidgetFont(496);
+		} else {
+			setWidgetFont(495);
+		}
+		if (arg2 > 4) {
+			ivar4 = script_5276(arg2, 2);
+			ivar3 = divide(multiply(divide(arg1, 4), ivar5), ivar4);
+			if (((boolean)mod(divide(arg1, 2), 2))) {
+				setWidgetPosition(2, ivar3, 0, 0);
+			} else {
+				setWidgetPosition(2, ivar3, 2, 0);
+			}
+			setWidgetSize(subtract(divide(getWidgetActualWidth(new WidgetPointer(arg0)), 2), 4), divide(ivar5, ivar4), 0, 0);
+		} else {
+			ivar3 = divide(multiply(divide(arg1, 2), ivar5), arg2);
+			setWidgetPosition(2, ivar3, 0, 0);
+			setWidgetSize(6, divide(ivar5, arg2), 1, 0);
+		}
+	}
+	arg1 = add(arg1, 1);
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		if (arg2 > 4) {
+			if (((boolean)mod(divide(arg1, 2), 2))) {
+				setWidgetPosition(2, add(ivar3, 1), 0, 0);
+			} else {
+				setWidgetPosition(2, add(ivar3, 1), 2, 0);
+			}
+			setWidgetSize(subtract(divide(getWidgetActualWidth(new WidgetPointer(arg0)), 2), 4), subtract(divide(ivar5, ivar4), 2), 0, 0);
+		} else {
+			setWidgetPosition(2, add(ivar3, 1), 0, 0);
+			setWidgetSize(4, subtract(divide(ivar5, arg2), 2), 1, 0);
+		}
+	}
+	return add(arg1, 1);
+}

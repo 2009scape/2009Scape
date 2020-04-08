@@ -1,0 +1,7 @@
+void script_5209() {
+	string svar0;
+	svar0 = "Pin this skill plot's information to this side interface?";
+	setScriptCallOnMouseOver(4538, new WidgetPointer(1117,0), new WidgetPointer(1117,133), -1, svar0, 160, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1117,133));
+	setScriptCallOnMouseExit(40, new WidgetPointer(1117,0), "I", new WidgetPointer(1117,133));
+	return;
+}

@@ -1,0 +1,102 @@
+void script_2657() {
+	bitconfig_6302 = 0;
+	if (((boolean)bitconfig_6290)) {
+		setWidgetIsHidden(false, new WidgetPointer(876,4));
+		setWidgetIsHidden(true, new WidgetPointer(876,5));
+	}
+	if (((boolean)bitconfig_6290)) {
+		setWidgetIsHidden(true, new WidgetPointer(876,4));
+		cs2method5405(0, 2);
+		cs2method5405(1, 2);
+		cs2method5406(0, 0, 53651260, 1450, 53733182, 1385, 0);
+		cs2method5406(1, 0, 53749565, 700, 53749565, 700, 0);
+		cs2method5406(0, 1, 53765948, 1125, 53782331, 1000, 0);
+		cs2method5406(1, 1, 53765942, 600, 53765942, 600, 0);
+		cameraMethod5502(0, 0, 250, 350, 1, 0);
+	}
+	if (bitconfig_6290 == 2) {
+		cs2method5405(0, 3);
+		cs2method5405(1, 3);
+		cs2method5406(0, 0, 53798717, 1065, 53798718, 1130, 0);
+		cs2method5406(1, 0, 53782326, 600, 53782326, 600, 0);
+		cs2method5406(0, 1, 53831484, 1140, 53880637, 1105, 0);
+		cs2method5406(1, 1, 53913403, 600, 53946170, 600, 0);
+		cs2method5406(0, 2, 53897019, 825, 53913404, 565, 0);
+		cs2method5406(1, 2, 53897015, 600, 53864247, 600, 0);
+		cameraMethod5502(0, 0, 250, 350, 1, 0);
+		setScriptCallOnMinimapRelatedSetting3(2658, "", new WidgetPointer(876,0));
+	}
+	if (bitconfig_6290 == 3) {
+		setWidgetIsHidden(true, new WidgetPointer(876,4));
+		cs2method5405(0, 4);
+		cs2method5405(1, 4);
+		cs2method5406(0, 0, 55027504, 805, 54978351, 650, 0);
+		cs2method5406(1, 0, 55027497, 620, 55027497, 580, 0);
+		cs2method5406(0, 1, 55043882, 725, 55093034, 650, 0);
+		cs2method5406(1, 1, 55109414, 555, 55109414, 505, 0);
+		cs2method5406(0, 2, 55191335, 800, 55207717, 740, 0);
+		cs2method5406(1, 2, 55207715, 525, 55207714, 505, 0);
+		cs2method5406(0, 3, 55224098, 745, 55224096, 650, 0);
+		cs2method5406(1, 3, 55224092, 600, 55240475, 670, 0);
+		cameraMethod5502(0, 0, 300, 400, 1, 0);
+		setScriptCallOnMinimapRelatedSetting3(2658, "", new WidgetPointer(876,0));
+	}
+	if (bitconfig_6290 == 4) {
+		setWidgetIsHidden(true, new WidgetPointer(876,4));
+		cs2method5405(0, 3);
+		cs2method5405(1, 3);
+		cs2method5406(0, 0, 53782327, 1125, 53798710, 1085, 0);
+		cs2method5406(1, 0, 53782322, 750, 53782323, 750, 0);
+		cs2method5406(0, 1, 53798703, 1015, 53782318, 865, 0);
+		cs2method5406(1, 1, 53733165, 750, 53733167, 750, 0);
+		cs2method5406(0, 2, 53684015, 980, 53651247, 865, 0);
+		cs2method5406(1, 2, 53651241, 620, 53651240, 540, 0);
+		cameraMethod5502(0, 0, 300, 400, 1, 0);
+		setScriptCallOnMinimapRelatedSetting3(2658, "", new WidgetPointer(876,0));
+	}
+	if (bitconfig_6290 == 5) {
+		setWidgetIsHidden(false, new WidgetPointer(876,5));
+	}
+	if (bitconfig_6290 == 6) {
+		cs2method5405(0, 6);
+		cs2method5405(0, 6);
+		cs2method5405(1, 6);
+		cs2method5406(0, 0, 53684015, 980, 53651247, 1185, 0);
+		cs2method5406(1, 0, 53651241, 620, 53651240, 540, 0);
+		cs2method5406(0, 1, 53749551, 1190, 53765935, 1165, 0);
+		cs2method5406(1, 1, 53798702, 750, 53847854, 750, 0);
+		cs2method5406(0, 2, 53815087, 1220, 53847854, 1190, 0);
+		cs2method5406(1, 2, 53864237, 750, 53880620, 750, 0);
+		cs2method5406(0, 3, 53864238, 1160, 53897005, 1135, 0);
+		cs2method5406(1, 3, 53897001, 750, 53913383, 750, 0);
+		cs2method5406(0, 4, 53897003, 1045, 53913386, 1005, 0);
+		cs2method5406(1, 4, 53929766, 750, 53946149, 750, 0);
+		cs2method5406(0, 5, 53913383, 975, 53913384, 920, 0);
+		cs2method5406(1, 5, 53978919, 725, 53978920, 725, 0);
+		cameraMethod5502(0, 0, 500, 600, 1, 0);
+		setScriptCallOnMinimapRelatedSetting3(2658, "", new WidgetPointer(876,0));
+	}
+	if (bitconfig_6290 == 7) {
+		setWidgetIsHidden(true, new WidgetPointer(876,5));
+		cs2method5405(0, 2);
+		cs2method5405(1, 2);
+		cs2method5406(0, 0, 53913383, 975, 53929767, 1410, 0);
+		cs2method5406(1, 0, 53978919, 725, 54011687, 725, 0);
+		cs2method5406(0, 1, 53978919, 915, 53995303, 800, 0);
+		cs2method5406(1, 1, 54060839, 650, 54060839, 725, 0);
+		cameraMethod5502(0, 0, 400, 200, 1, 0);
+		setScriptCallOnMinimapRelatedSetting3(2658, "", new WidgetPointer(876,0));
+	}
+	if (bitconfig_6290 == 8) {
+		setWidgetIsHidden(true, new WidgetPointer(876,5));
+		cs2method5405(0, 2);
+		cs2method5405(1, 2);
+		cs2method5406(0, 0, 53978919, 915, 53995303, 960, 0);
+		cs2method5406(1, 0, 54060839, 650, 54060839, 725, 0);
+		cs2method5406(0, 1, 54093606, 985, 54093606, 950, 0);
+		cs2method5406(1, 1, 54142759, 800, 54142759, 800, 0);
+		cameraMethod5502(0, 0, 400, 200, 1, 0);
+		setScriptCallOnMinimapRelatedSetting3(2658, "", new WidgetPointer(876,0));
+	}
+	return;
+}

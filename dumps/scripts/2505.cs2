@@ -1,0 +1,4 @@
+void script_2505(int arg0) {
+	setWidgetText(new WidgetPointer(arg0), "Limit: " + script_46(script_2687(), ","));
+	return;
+}

@@ -1,0 +1,9 @@
+void script_1488() {
+	if (((boolean)standart_config_304)) {
+		standart_config_304 = 1;
+	} else {
+		standart_config_304 = 0;
+	}
+	script_1490();
+	return;
+}

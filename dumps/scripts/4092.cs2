@@ -1,0 +1,16 @@
+void script_4092(int arg0,int arg1,int arg2) {
+	if (((boolean)script_2728())) {
+		if ((arg1 != -1) && (getExtraChildGap(new WidgetPointer(arg1)) <= 0)) {
+			script_4093(arg0, arg1);
+		}
+		script_4089();
+	} else {
+		if ((arg1 != -1) && (getExtraChildGap(new WidgetPointer(arg1)) > 0)) {
+			deleteAllExtraChilds(new WidgetPointer(arg1));
+			setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+			setWidgetIsHidden(true, new WidgetPointer(arg1));
+		}
+		setWidgetIsHidden(true, new WidgetPointer(arg2));
+	}
+	return;
+}

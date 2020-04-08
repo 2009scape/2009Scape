@@ -1,0 +1,76 @@
+int script_1563(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10) {
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	int stack_dump3;
+	int stack_dump4;
+	int stack_dump5;
+	int stack_dump6;
+	cs2func_script_296_struct(2,0,0) structdump_7;
+	cs2func_script_296_struct(2,0,0) structdump_8;
+	ivar11 = 0;
+	ivar12 = 0;
+	stack_dump0 = arg0;
+	stack_dump1 = arg2;
+	stack_dump2 = arg5;
+	stack_dump3 = arg6;
+	stack_dump4 = arg7;
+	stack_dump5 = arg8;
+	stack_dump6 = arg9;
+	structdump_7 = script_296(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4, stack_dump5, stack_dump6);
+	ivar12 = structdump_7.intpart_1;
+	ivar11 = structdump_7.intpart_0;
+	ivar13 = 0;
+	ivar14 = 0;
+	stack_dump0 = arg1;
+	stack_dump1 = arg2;
+	stack_dump2 = arg5;
+	stack_dump3 = arg6;
+	stack_dump4 = arg7;
+	stack_dump5 = arg8;
+	stack_dump6 = arg9;
+	structdump_8 = script_296(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4, stack_dump5, stack_dump6);
+	ivar14 = structdump_8.intpart_1;
+	ivar13 = structdump_8.intpart_0;
+	ivar15 = add(ivar11, divide(subtract(ivar13, ivar11), 2));
+	ivar16 = add(ivar12, divide(subtract(ivar14, ivar12), 2));
+	ivar17 = subtract(ivar13, ivar11);
+	ivar18 = subtract(ivar14, ivar12);
+	stack_dump0 = max(ivar17, subtract(0, ivar17));
+	ivar18 = max(ivar18, subtract(0, ivar18));
+	ivar17 = stack_dump0;
+	if (setWidgetRegister(new WidgetPointer(arg5), arg10)) {
+		setWidgetPosition(ivar15, ivar16, 1, 1);
+		setWidgetSize(ivar17, ivar18, 0, 0);
+	} else {
+		createExtraChild(new WidgetPointer(arg5), 3, arg10);
+		setWidgetPosition(ivar15, ivar16, 1, 1);
+		setWidgetSize(ivar17, ivar18, 0, 0);
+		setWidgetRGB(new Color(arg3));
+		setWidgetFilled(0);
+		cs2method2103(0);
+	}
+	arg10 = add(arg10, 1);
+	ivar17 = add(ivar17, multiply(2, arg4));
+	ivar18 = add(ivar18, multiply(2, arg4));
+	if (setWidgetRegister(new WidgetPointer(arg5), arg10)) {
+		setWidgetPosition(ivar15, ivar16, 1, 1);
+		setWidgetSize(ivar17, ivar18, 0, 0);
+	} else {
+		createExtraChild(new WidgetPointer(arg5), 3, arg10);
+		setWidgetPosition(ivar15, ivar16, 1, 1);
+		setWidgetSize(ivar17, ivar18, 0, 0);
+		setWidgetRGB(new Color(arg3));
+		setWidgetFilled(0);
+		cs2method2103(0);
+	}
+	return add(arg10, 1);
+}

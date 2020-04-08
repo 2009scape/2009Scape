@@ -1,0 +1,27 @@
+void script_160(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,string arg6,string arg7,string arg8,string arg9,string arg10,string arg11,string arg12,string arg13,string arg14) {
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar6 = 0;
+	ivar7 = 0;
+	if (getWidgetScrollMaxH(new WidgetPointer(arg0)) > 0) {
+		ivar6 = divide(subtract(getWidgetScrollMaxH(new WidgetPointer(arg0)), multiply(36, arg2)), subtract(arg2, 1));
+	} else {
+		ivar6 = divide(subtract(getWidgetActualWidth(new WidgetPointer(arg0)), multiply(36, arg2)), subtract(arg2, 1));
+	}
+	if (getWidgetScrollMaxV(new WidgetPointer(arg0)) > 0) {
+		ivar7 = divide(subtract(getWidgetScrollMaxV(new WidgetPointer(arg0)), multiply(32, arg3)), subtract(arg3, 1));
+	} else {
+		ivar7 = divide(subtract(getWidgetActualHeight(new WidgetPointer(arg0)), multiply(32, arg3)), subtract(arg3, 1));
+	}
+	ivar8 = 0;
+	while (ivar8 <= multiply(arg2, arg3)) {
+		createExtraChild(new WidgetPointer(arg0), 5, ivar8);
+		setWidgetSize(36, 32, 0, 0);
+		setWidgetPosition(multiply(add(36, ivar6), mod(ivar8, arg2)), multiply(divide(ivar8, arg2), add(32, ivar7)), 0, 0);
+		script_161(arg1, ivar8, arg0, ivar8, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14);
+		ivar8 = add(ivar8, 1);
+	}
+	return;
+}

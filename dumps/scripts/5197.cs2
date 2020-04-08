@@ -1,0 +1,17 @@
+void script_5197(int arg0,int arg1,int arg2) {
+	if (((boolean)arg2)) {
+		setWidgetIsHidden(true, new WidgetPointer(1122,57));
+		setWidgetIsHidden(true, new WidgetPointer(1122,248));
+		setWidgetIsHidden(true, new WidgetPointer(1122,260));
+		setWidgetIsHidden(true, new WidgetPointer(1122,272));
+		setWidgetIsHidden(true, new WidgetPointer(1122,284));
+		setWidgetIsHidden(false, new WidgetPointer(arg0));
+	} else if (arg1 == bitconfig_9674) {
+		setWidgetIsHidden(false, new WidgetPointer(arg0));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+	}
+	globalint_1600 = arg1;
+	script_5202(1);
+	return;
+}

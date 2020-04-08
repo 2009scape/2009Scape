@@ -1,0 +1,16 @@
+void script_5261(int arg0) {
+	switch (arg0) {
+		case 74186762:
+			setWidgetIsHidden(false, new WidgetPointer(1132,22));
+			setWidgetText(new WidgetPointer(1132,23), "4");
+			setWidgetIsHidden(false, new WidgetPointer(1132,23));
+			setScriptCallOnGameloop(5262, 4, 0, new WidgetPointer(1132,10), "iiI", new WidgetPointer(arg0));
+			break;
+		case 74186763:
+			setWidgetIsHidden(false, new WidgetPointer(1132,27));
+			setWidgetText(new WidgetPointer(1132,28), "2");
+			setWidgetIsHidden(false, new WidgetPointer(1132,28));
+			setScriptCallOnGameloop(5262, 2, 0, new WidgetPointer(1132,11), "iiI", new WidgetPointer(arg0));
+	}
+	return;
+}

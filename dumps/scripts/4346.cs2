@@ -1,0 +1,13 @@
+void script_4346() {
+	script_4586(71893069, 71893169, bitconfig_9155, bitconfig_9156);
+	script_4586(71893080, 71893180, bitconfig_9157, bitconfig_9158);
+	script_4586(71893091, 71893181, bitconfig_9159, bitconfig_9160);
+	script_4586(71893102, 71893182, bitconfig_9161, bitconfig_9162);
+	script_4586(71893113, 71893183, bitconfig_9163, bitconfig_9164);
+	script_4586(71893124, 71893184, bitconfig_9165, bitconfig_9166);
+	script_4586(71893135, 71893185, bitconfig_9167, bitconfig_9168);
+	script_4586(71893146, 71893186, bitconfig_9169, bitconfig_9170);
+	script_4586(71893157, 71893187, bitconfig_9171, bitconfig_9172);
+	script_4586(71893179, 71893188, bitconfig_9173, bitconfig_9174);
+	return;
+}

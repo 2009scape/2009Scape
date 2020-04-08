@@ -1,0 +1,124 @@
+void script_5065(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int stack_dump0;
+	int stack_dump1;
+	flow_0:
+		ivar1 = getWidgetActualHeight(new WidgetPointer(1111,68));
+		setWidgetSize(0, ivar1, 1, 0, new WidgetPointer(1111,69));
+		setWidgetSize(0, ivar1, 1, 0, new WidgetPointer(1111,70));
+		setWidgetSize(0, ivar1, 1, 0, new WidgetPointer(1111,71));
+		ivar2 = getWidgetActualHeight(new WidgetPointer(1111,55));
+		ivar3 = 0;
+		ivar4 = 0;
+		ivar5 = 0;
+		SWITCH (globalint_768) {
+			case 2:
+				 GOTO flow_1
+			case 3:
+				 GOTO flow_2
+			case 4:
+				 GOTO flow_3
+		}
+		globalint_768 = 1;
+		ivar3 = subtract(ivar2, multiply(ivar1, 3));
+		ivar4 = subtract(ivar2, multiply(ivar1, 2));
+		ivar5 = subtract(ivar2, ivar1);
+		script_5056(72810564, 1);
+		script_5056(72810565, 0);
+		script_5056(72810566, 0);
+		script_5056(72810567, 0);
+		GOTO	flow_4
+	flow_1:
+		ivar3 = ivar1;
+		ivar4 = subtract(ivar2, multiply(ivar1, 2));
+		ivar5 = subtract(ivar2, ivar1);
+		script_5056(72810564, 0);
+		script_5056(72810565, 1);
+		script_5056(72810566, 0);
+		script_5056(72810567, 0);
+		GOTO	flow_4
+	flow_2:
+		ivar3 = ivar1;
+		ivar4 = multiply(ivar1, 2);
+		ivar5 = subtract(ivar2, ivar1);
+		script_5056(72810564, 0);
+		script_5056(72810565, 0);
+		script_5056(72810566, 1);
+		script_5056(72810567, 0);
+		GOTO	flow_4
+	flow_3:
+		ivar3 = ivar1;
+		ivar4 = multiply(ivar1, 2);
+		ivar5 = multiply(ivar1, 3);
+		script_5056(72810564, 0);
+		script_5056(72810565, 0);
+		script_5056(72810566, 0);
+		script_5056(72810567, 1);
+	flow_4:
+		ivar6 = 0;
+		ivar7 = 0;
+		ivar8 = 0;
+		ivar9 = 0;
+		ivar10 = 0;
+		if (((boolean)arg0)) {
+			stack_dump0 = ivar3;
+			stack_dump1 = ivar4;
+			ivar8 = ivar5;
+			stack_dump0 = stack_dump0;
+			ivar7 = stack_dump1;
+			ivar6 = stack_dump0;
+		} else {
+			ivar9 = getWidgetActualY(new WidgetPointer(1111,69));
+			if (ivar9 != ivar3) {
+				ivar6 = add(ivar9, max(min(subtract(ivar3, ivar9), 3), -3));
+				ivar10 = 1;
+			} else {
+				ivar6 = ivar3;
+			}
+			ivar9 = getWidgetActualY(new WidgetPointer(1111,70));
+			if (ivar9 != ivar4) {
+				ivar7 = add(ivar9, max(min(subtract(ivar4, ivar9), 3), -3));
+				ivar10 = 1;
+			} else {
+				ivar7 = ivar4;
+			}
+			ivar9 = getWidgetActualY(new WidgetPointer(1111,71));
+			if (ivar9 != ivar5) {
+				ivar8 = add(ivar9, max(min(subtract(ivar5, ivar9), 3), -3));
+				ivar10 = 1;
+			} else {
+				ivar8 = ivar5;
+			}
+		}
+		setWidgetPosition(0, 0, 1, 0, new WidgetPointer(1111,68));
+		setWidgetPosition(0, ivar6, 1, 0, new WidgetPointer(1111,69));
+		setWidgetPosition(0, ivar7, 1, 0, new WidgetPointer(1111,70));
+		setWidgetPosition(0, ivar8, 1, 0, new WidgetPointer(1111,71));
+		setWidgetPosition(0, ivar1, 1, 0, new WidgetPointer(1111,56));
+		setWidgetPosition(0, add(ivar6, ivar1), 1, 0, new WidgetPointer(1111,59));
+		setWidgetPosition(0, add(ivar7, ivar1), 1, 0, new WidgetPointer(1111,62));
+		setWidgetPosition(0, add(ivar8, ivar1), 1, 0, new WidgetPointer(1111,65));
+		setWidgetSize(0, subtract(ivar6, ivar1), 1, 0, new WidgetPointer(1111,56));
+		setWidgetSize(0, subtract(ivar7, add(ivar6, ivar1)), 1, 0, new WidgetPointer(1111,59));
+		setWidgetSize(0, subtract(ivar8, add(ivar7, ivar1)), 1, 0, new WidgetPointer(1111,62));
+		setWidgetSize(0, add(ivar8, ivar1), 1, 1, new WidgetPointer(1111,65));
+		script_72(72810554, 72810553, cs2method2601(new WidgetPointer(1111,57)));
+		script_72(72810557, 72810556, cs2method2601(new WidgetPointer(1111,60)));
+		script_72(72810560, 72810559, cs2method2601(new WidgetPointer(1111,63)));
+		script_72(72810563, 72810562, cs2method2601(new WidgetPointer(1111,66)));
+		if (((boolean)ivar10)) {
+			setScriptCallOnGameloop(5064, -1, "i", new WidgetPointer(1111,55));
+		} else {
+			setScriptCallOnGameloop(-1, "", new WidgetPointer(1111,55));
+		}
+		return;
+}

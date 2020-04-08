@@ -1,0 +1,16 @@
+void script_4034() {
+	if (((boolean)globalint_1429)) {
+		globalint_1429 = 1;
+		setWidgetSprite(4086, new WidgetPointer(917,142));
+		setScriptCallOnMouseEntered(4033, 0, 1, "ii", new WidgetPointer(917,142));
+		setScriptCallOnMouseExit(4033, 1, 1, "ii", new WidgetPointer(917,142));
+		setWidgetContextMenuOption(1, new WidgetPointer(917,142), "Turn-on");
+	} else {
+		globalint_1429 = 0;
+		setWidgetSprite(4084, new WidgetPointer(917,142));
+		setScriptCallOnMouseEntered(4033, 0, 0, "ii", new WidgetPointer(917,142));
+		setScriptCallOnMouseExit(4033, 1, 0, "ii", new WidgetPointer(917,142));
+		setWidgetContextMenuOption(1, new WidgetPointer(917,142), "Turn-off");
+	}
+	return;
+}

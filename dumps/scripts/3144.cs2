@@ -1,0 +1,25 @@
+void script_3144(int arg0,int arg1,int arg2,int arg3,string arg4) {
+	if (setWidgetRegister(new WidgetPointer(arg0), arg2)) {
+		setWidgetIsHidden(false, new WidgetPointer(910,65));
+		setWidgetIsHidden(false, new WidgetPointer(910,66));
+		setWidgetPosition(getWidgetActualX(new WidgetPointer(910,65)), getWidgetActualY(), 0, 0, new WidgetPointer(910,65));
+		setWidgetPosition(getWidgetActualX(new WidgetPointer(910,66)), getWidgetActualY(), 0, 0, new WidgetPointer(910,66));
+	}
+	if (setWidgetRegister(new WidgetPointer(arg1), arg2)) {
+		if (getWidgetSpriteId() == 1541) {
+			setWidgetSprite(1542);
+		} else {
+			if (getWidgetSpriteId() == 1545) {
+				setWidgetSprite(1546);
+			}
+		}
+	}
+	if (((boolean)arg3)) {
+		setWidgetRGB(new Color(96, 96, 96), new WidgetPointer(910,65));
+		setWidgetRGB(new Color(64, 64, 64), new WidgetPointer(910,66));
+	} else {
+		setWidgetRGB(new Color(96, 96, 96), new WidgetPointer(910,66));
+		setWidgetRGB(new Color(64, 64, 64), new WidgetPointer(910,65));
+	}
+	return;
+}

@@ -1,0 +1,6 @@
+int script_850(int arg0) {
+	if (((boolean)mod(arg0, 2))) {
+		return 1;
+	}
+	return 0;
+}

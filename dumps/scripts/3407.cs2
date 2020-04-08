@@ -1,0 +1,24 @@
+void script_3407(int arg0,int arg1,int arg2) {
+	if (isWidgetHidden(new WidgetPointer(arg1))) {
+		deleteAllExtraChilds(new WidgetPointer(arg2));
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg2));
+		return;
+	}
+	if (mod(subtract(getClientCycle(), arg0), 40) < 20) {
+		if (setWidgetRegister(new WidgetPointer(arg2), 0)) {
+			setWidgetHidden(0);
+		} else {
+			createExtraChild(new WidgetPointer(arg2), 3, 0);
+			setWidgetSize(4, 2, 1, 1);
+			setWidgetPosition(0, 0, 1, 2);
+			setWidgetFilled(1);
+			cs2method2103(225);
+			setWidgetRGB(new Color(255, 255, 255));
+		}
+	} else {
+		if (setWidgetRegister(new WidgetPointer(arg2), 0)) {
+			setWidgetHidden(1);
+		}
+	}
+	return;
+}

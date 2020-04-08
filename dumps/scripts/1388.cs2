@@ -1,0 +1,44 @@
+void script_1388(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	deleteAllExtraChilds(new WidgetPointer(271,6));
+	ivar1 = 5;
+	ivar2 = 15;
+	ivar3 = 15;
+	ivar4 = 0;
+	ivar5 = 6;
+	ivar6 = 28;
+	ivar7 = 30;
+	if (((boolean)bitconfig_6840)) {
+		ivar7 = 20;
+	}
+	while (ivar4 < ivar7) {
+		createExtraChild(new WidgetPointer(arg0), 5, ivar4);
+		setWidgetSize(ivar2, ivar3, 0, 0);
+		cs2method1107(1);
+		setWidgetPosition(ivar5, ivar6, 0, 0);
+		if (((boolean)script_2297(ivar4))) {
+			setWidgetContextMenuOption(1, "Select" + "<col=ff9040>");
+			setWidgetSprite(180);
+		} else {
+			setWidgetContextMenuOption(1, "Deselect" + "<col=ff9040>");
+			setWidgetSprite(181);
+		}
+		setScriptCallOnClickContextMenu(2290, new WidgetPointer(-32768,3), -2147483643, "Ii");
+		setScriptCallOnConfigChange(2291, new WidgetPointer(-32768,3), -2147483643, 1397, 1587, 2, "IiY");
+		ivar4 = add(ivar4, 1);
+		if (((boolean)mod(ivar4, ivar1))) {
+			ivar5 = 6;
+			ivar6 = add(ivar6, 35);
+		} else {
+			ivar5 = add(ivar5, 37);
+		}
+	}
+	return;
+}

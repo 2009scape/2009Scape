@@ -1,0 +1,45 @@
+int script_1696(int arg0) {
+	switch (arg0) {
+		case 0:
+			if (bitconfig_6830 > 0) {
+				return 4;
+			}
+			if (bitconfig_6821 > 0) {
+				return 1;
+			}
+			return 0;
+		case 2:
+			if (bitconfig_6834 > 0) {
+				return 4;
+			}
+			if (bitconfig_6821 > 0) {
+				return 1;
+			}
+			return 0;
+		case 1:
+			if (bitconfig_6833 > 0) {
+				return 4;
+			}
+			if (((bitconfig_6821 > 0) || (bitconfig_6822 > 0)) || (bitconfig_6823 > 0)) {
+				return 1;
+			}
+			return 0;
+		case 4:
+			if (bitconfig_6831 > 0) {
+				return 4;
+			}
+			if (bitconfig_6822 > 0) {
+				return 1;
+			}
+			return 0;
+		case 6:
+			if (bitconfig_6832 > 0) {
+				return 4;
+			}
+			if (bitconfig_6823 > 0) {
+				return 1;
+			}
+			return 0;
+	}
+	return 0;
+}

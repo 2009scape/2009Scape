@@ -1,0 +1,5 @@
+void script_5166() {
+	globalint_1591 = max(0, min(globalint_1591, 65535));
+	sendColorPickerPacket(globalint_1591);
+	return;
+}

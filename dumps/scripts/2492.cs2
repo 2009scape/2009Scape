@@ -1,0 +1,27 @@
+void script_2492() {
+	if (((boolean)stringMethod4107(globalstring_184, ""))) {
+		setScriptCallOnMouseOver(38, new WidgetPointer(862,50), new WidgetPointer(862,11), globalstring_184, 50, 250, "IIsii", new WidgetPointer(862,50));
+		setScriptCallOnMouseExit(40, new WidgetPointer(862,11), "I", new WidgetPointer(862,50));
+	}
+	if (((boolean)stringMethod4107(globalstring_185, ""))) {
+		setScriptCallOnMouseOver(38, new WidgetPointer(862,51), new WidgetPointer(862,11), globalstring_185, 50, 250, "IIsii", new WidgetPointer(862,51));
+		setScriptCallOnMouseExit(40, new WidgetPointer(862,11), "I", new WidgetPointer(862,51));
+	}
+	if (((boolean)stringMethod4107(globalstring_186, ""))) {
+		setScriptCallOnMouseOver(38, new WidgetPointer(862,52), new WidgetPointer(862,11), globalstring_186, 50, 250, "IIsii", new WidgetPointer(862,52));
+		setScriptCallOnMouseExit(40, new WidgetPointer(862,11), "I", new WidgetPointer(862,52));
+	}
+	if (((boolean)stringMethod4107(globalstring_187, ""))) {
+		setScriptCallOnMouseOver(38, new WidgetPointer(862,53), new WidgetPointer(862,11), globalstring_187, 50, 250, "IIsii", new WidgetPointer(862,53));
+		setScriptCallOnMouseExit(40, new WidgetPointer(862,11), "I", new WidgetPointer(862,53));
+	}
+	if (((boolean)stringMethod4107(globalstring_188, ""))) {
+		setScriptCallOnMouseOver(38, new WidgetPointer(862,54), new WidgetPointer(862,11), globalstring_188, 50, 250, "IIsii", new WidgetPointer(862,54));
+		setScriptCallOnMouseExit(40, new WidgetPointer(862,11), "I", new WidgetPointer(862,54));
+	}
+	if (((boolean)stringMethod4107(globalstring_189, ""))) {
+		setScriptCallOnMouseOver(38, new WidgetPointer(862,55), new WidgetPointer(862,11), globalstring_189, 50, 250, "IIsii", new WidgetPointer(862,55));
+		setScriptCallOnMouseExit(40, new WidgetPointer(862,11), "I", new WidgetPointer(862,55));
+	}
+	return;
+}

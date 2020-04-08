@@ -1,0 +1,10 @@
+void script_52(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	if (setWidgetRegister(new WidgetPointer(arg3), arg4)) {
+		if (getSkillActualLvl(5) < arg0) {
+			setWidgetSprite(arg1);
+		} else {
+			setWidgetSprite(arg2);
+		}
+	}
+	return;
+}

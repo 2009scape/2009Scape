@@ -1,0 +1,19 @@
+void script_1781() {
+	int ivar0;
+	ivar0 = 0;
+	while (ivar0 <= 4) {
+		if (setWidgetRegister(new WidgetPointer(791,141), multiply(ivar0, 4))) {
+			if (globalint_257 == ivar0) {
+				setWidgetSprite(699);
+				script_1783(51839117, 51839118, 51839117, add(multiply(ivar0, 4), 3));
+			} else if (isMember() && ((boolean)getOtherCommonData(cs2method_3408(105, 74, 1604, ivar0), 557))) {
+				setWidgetSprite(698);
+			} else {
+				setWidgetSprite(697);
+			}
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	script_1784();
+	return;
+}

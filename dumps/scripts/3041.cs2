@@ -1,0 +1,125 @@
+void script_3041(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	int stack_dump0;
+	opcStruct3622(0,2,0) structdump_1;
+	if (cs2method5428(arg2, -1)) {
+		setScriptCallOnGameloop(3040, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), "IIIII", new WidgetPointer(arg3));
+		return;
+	}
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(arg3));
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	deleteAllExtraChilds(new WidgetPointer(arg1));
+	deleteAllExtraChilds(new WidgetPointer(arg2));
+	ivar5 = getIgnoreCount();
+	ivar6 = 0;
+	ivar7 = 0;
+	svar0 = "";
+	svar1 = "";
+	svar2 = "";
+	ivar8 = 0;
+	ivar9 = 0;
+	ivar10 = 15;
+	ivar11 = 0;
+	ivar12 = 5;
+	ivar13 = 0;
+	ivar14 = 0;
+	ivar15 = 0;
+	svar3 = "";
+	if (ivar5 == -2) {
+		setWidgetText(new WidgetPointer(909,89), "Name");
+		script_3038(arg2, "Loading Ignore List." + "<br>" + "<br>" + "Please wait.");
+	} else if (ivar5 == -1) {
+		setWidgetText(new WidgetPointer(909,89), "Name");
+		script_3038(arg2, "Connecting to server." + "<br>" + "<br>" + "Please wait.");
+	} else if (ivar5 > 0) {
+		setWidgetText(new WidgetPointer(909,89), "Name (" + intToStr(ivar5) + "/100)");
+		while (ivar6 < ivar5) {
+			stack_dump0 = ivar6;
+			structdump_1 = cs2method3622(stack_dump0);
+			svar1 = structdump_1.stringpart_1;
+			svar0 = structdump_1.stringpart_0;
+			script_2996(arg2, ivar6, getWidgetActualWidth(new WidgetPointer(arg2)), ivar10, 0, ivar7, 0, 1, 0);
+			if (((boolean)mod(ivar6, 2))) {
+				setWidgetRGB(new Color(32, 25, 17));
+			} else {
+				setWidgetRGB(new Color(41, 32, 22));
+			}
+			setScriptCallOnMouseEntered(3031, new WidgetPointer(arg2), ivar6, "Ii");
+			setScriptCallOnMouseExit(3036, "");
+			if (strLength(svar1) > 0) {
+				ivar15 = add(getTextWidth(494, "Last known as: " + svar1), 8);
+				if (ivar15 > getWidgetActualWidth(new WidgetPointer(909,76))) {
+					svar3 = "Last known as:" + "<br>" + svar1;
+				} else {
+					svar3 = "Last known as: " + svar1;
+				}
+				setScriptCallOnMouseOver(2467, new WidgetPointer(-32768,3), -2147483643, svar3, -2147483647, -2147483646, new WidgetPointer(909,78), new WidgetPointer(909,80), new WidgetPointer(909,83), 494, "IisiiIIIf");
+			}
+			cs2method1305(svar0);
+			setWidgetContextMenuOption(1, "Delete");
+			setScriptCallOnClickContextMenu(3042, -2147483644, svar0, "is");
+			script_2994(arg1, ivar6, 14, 14, 5, add(ivar7, 1), -1, 0, 0, 0, 0);
+			if (stringMethod4107(svar1, "") != 0) {
+				setWidgetSprite(2313);
+				ivar12 = 20;
+			} else {
+				setWidgetSprite(-1);
+				ivar12 = 5;
+			}
+			svar2 = svar0;
+			script_2995(arg0, ivar6, 0, ivar10, ivar12, ivar7, 16777215, 494, 0, 1, 0, 1, svar2);
+			setWidgetSize(ivar12, ivar10, 1, 0);
+			cs2method1126(1);
+			ivar7 = add(ivar7, ivar10);
+			ivar6 = add(ivar6, 1);
+		}
+		ivar9 = add(divide(getWidgetActualHeight(new WidgetPointer(arg3)), ivar10), 1);
+		if (ivar9 > ivar5) {
+			while (ivar6 < ivar9) {
+				script_2996(arg2, ivar6, getWidgetActualWidth(new WidgetPointer(arg2)), ivar10, 0, ivar7, 0, 1, 0);
+				if (((boolean)mod(ivar6, 2))) {
+					setWidgetRGB(new Color(32, 25, 17));
+				} else {
+					setWidgetRGB(new Color(41, 32, 22));
+				}
+				ivar7 = add(ivar7, ivar10);
+				ivar6 = add(ivar6, 1);
+			}
+			ivar11 = getWidgetActualHeight(new WidgetPointer(arg3));
+		} else {
+			ivar11 = ivar7;
+		}
+		if (ivar9 <= ivar5) {
+			ivar14 = cs2method2601(new WidgetPointer(909,78));
+			setWidgetScrollMax(0, ivar11, new WidgetPointer(909,78));
+			if (ivar14 > ivar11) {
+				ivar14 = ivar11;
+			}
+			script_72(59572303, 59572302, ivar14);
+		} else {
+			setWidgetScrollMax(0, 0, new WidgetPointer(909,78));
+			cs2method2100(0, 0, new WidgetPointer(909,78));
+			script_72(59572303, 59572302, 0);
+		}
+	} else {
+		if (((boolean)ivar5)) {
+			setWidgetText(new WidgetPointer(909,89), "Name");
+			script_3038(arg2, "You are not ignoring any players.");
+		}
+	}
+	return;
+}

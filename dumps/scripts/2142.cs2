@@ -1,0 +1,18 @@
+int script_2142(int arg0,int arg1,int arg2,string arg3) {
+	int ivar3;
+	int ivar4;
+	ivar3 = getLineCount(390, 495, arg3);
+	ivar4 = 15;
+	createExtraChild(new WidgetPointer(864,7), 4, arg0);
+	setWidgetSize(390, multiply(ivar3, ivar4), 0, 0);
+	setWidgetText(arg3);
+	setWidgetPosition(15, arg1, 0, 0);
+	setWidgetTextAlignment(0, 0, 0);
+	setWidgetRGB(new Color(70, 50, 10));
+	setWidgetFont(495);
+	setWidgetUnknownBoolean(false);
+	setWidgetContextMenuOption(1, "Teleport");
+	setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), -2147483643, 6574120, "Iii");
+	setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), -2147483643, 4600330, "Iii");
+	return add(multiply(ivar3, ivar4), 5);
+}

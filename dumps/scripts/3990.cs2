@@ -1,0 +1,15 @@
+void script_3990(int arg0,int arg1,int arg2) {
+	int ivar3;
+	if (arg2 != 1) {
+		return;
+	}
+	script_41(60096664);
+	ivar3 = script_3227(arg0);
+	if (ivar3 == 2) {
+		script_4014(arg1, 4043);
+	} else {
+		script_4014(arg1, 4041);
+	}
+	script_3991(arg0);
+	return;
+}

@@ -1,0 +1,12 @@
+void script_5108(int arg0) {
+	if (((boolean)arg0)) {
+		setWidgetSize(0, 20, 1, 1, new WidgetPointer(1116,50));
+		setWidgetIsHidden(false, new WidgetPointer(1116,40));
+		script_5110(1);
+	} else {
+		setWidgetSize(0, 0, 1, 1, new WidgetPointer(1116,50));
+		setWidgetIsHidden(true, new WidgetPointer(1116,40));
+		script_5110(0);
+	}
+	return;
+}

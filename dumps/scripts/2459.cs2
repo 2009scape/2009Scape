@@ -1,0 +1,74 @@
+int script_2459(int arg0) {
+	if (getDisplayMode() >= 2) {
+		switch (arg0) {
+			case 0:
+				return 48889911;
+			case 1:
+				return 48889912;
+			case 2:
+				return 48889913;
+			case 3:
+				return 48889914;
+			case 4:
+				return 48889915;
+			case 5:
+				return 48889916;
+			case 6:
+				return 48889917;
+			case 7:
+				return 48889918;
+			case 8:
+				return 48889919;
+			case 9:
+				return 48889920;
+			case 10:
+				return 48889921;
+			case 11:
+				return 48889922;
+			case 12:
+				return 48889923;
+			case 13:
+				return 48889924;
+			case 14:
+				return 48889925;
+			case 15:
+				return 48889926;
+		}
+	} else {
+		switch (arg0) {
+			case 0:
+				return 35913848;
+			case 1:
+				return 35913849;
+			case 2:
+				return 35913850;
+			case 3:
+				return 35913851;
+			case 4:
+				return 35913852;
+			case 5:
+				return 35913853;
+			case 6:
+				return 35913854;
+			case 7:
+				return 35913855;
+			case 8:
+				return 35913801;
+			case 9:
+				return 35913802;
+			case 10:
+				return 35913803;
+			case 11:
+				return 35913804;
+			case 12:
+				return 35913805;
+			case 13:
+				return 35913806;
+			case 14:
+				return 35913807;
+			case 15:
+				return 35913808;
+		}
+	}
+	return -1;
+}

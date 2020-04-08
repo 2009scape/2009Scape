@@ -1,0 +1,30 @@
+void script_3058() {
+	cs2func_script_3406_struct(3,0,0) structdump_0;
+	int stack_dump1;
+	int stack_dump2;
+	openInterface(59375801, 907);
+	script_2998();
+	openInterface(59375802, 910);
+	script_3103();
+	openInterface(59375803, 909);
+	script_3023();
+	script_3052(59572273);
+	script_3043(59572290);
+	openInterface(59375805, 912);
+	script_3159(59768841);
+	script_3171(59768842);
+	openInterface(59375804, 589);
+	script_4554(38600715);
+	script_4565(38600716);
+	openInterface(59375806, 911);
+	script_3158();
+	setScriptCallOnMessage(3405, new WidgetPointer(909,49), new WidgetPointer(912,10), new WidgetPointer(589,12), "III", new WidgetPointer(906,23));
+	structdump_0 = script_3406();
+	stack_dump1 = structdump_0.intpart_0;
+	stack_dump2 = structdump_0.intpart_1;
+	globalint_1510 = structdump_0.intpart_2;
+	stack_dump1 = stack_dump1;
+	globalint_1276 = stack_dump2;
+	globalint_1275 = stack_dump1;
+	return;
+}

@@ -1,0 +1,23 @@
+void script_4731(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	pressedButtons(3,0,0) structdump_0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	structdump_0 = getPressedMouseButtons();
+	ivar4 = structdump_0.intpart_2;
+	ivar3 = structdump_0.intpart_1;
+	ivar2 = structdump_0.intpart_0;
+	ivar5 = add(cameraGetHrot(), multiply(subtract(globalint_1653, arg0), 2));
+	ivar6 = subtract(cameraGetVrot(), subtract(globalint_1654, arg1));
+	if ((((boolean)ivar3) && (globalint_173 != 1)) && ((bitconfig_542 != 1) && minimapSettingIs1())) {
+		cameraMethod5504(ivar6, ivar5);
+	}
+	globalint_1653 = arg0;
+	globalint_1654 = arg1;
+	return;
+}

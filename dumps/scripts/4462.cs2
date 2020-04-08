@@ -1,0 +1,78 @@
+void script_4462() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	string svar0;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 19;
+	svar0 = "";
+	ivar3 = 72744971;
+	ivar4 = 72745001;
+	ivar5 = 72745000;
+	ivar6 = 72744970;
+	ivar7 = divide(getWidgetActualHeight(new WidgetPointer(ivar4)), 19);
+	ivar8 = 0;
+	deleteAllExtraChilds(new WidgetPointer(ivar3));
+	deleteAllExtraChilds(new WidgetPointer(ivar6));
+	if (cs2method3701()) {
+		setWidgetText(new WidgetPointer(1110,72), "");
+		setWidgetIsHidden(true, new WidgetPointer(1110,42));
+		ivar1 = cs2method3712();
+		while (ivar0 < ivar1) {
+			ivar8 = multiply(ivar0, 19);
+			svar0 = cs2method3713(ivar0);
+			createExtraChild(new WidgetPointer(ivar3), 4, getExtraChildGap(new WidgetPointer(ivar3)));
+			setWidgetText(svar0);
+			setWidgetPosition(0, multiply(ivar0, ivar2), 0, 0);
+			setWidgetSize(16384, ivar2, 2, 0);
+			setWidgetRGB(new Color(164, 153, 125));
+			setWidgetFont(3793);
+			setWidgetUnknownBoolean(true);
+			cs2method1305("<col=ffffff>" + svar0);
+			setWidgetContextMenuOption(1, "Remove ban");
+			setScriptCallOnClickContextMenu(4580, "");
+			setWidgetTextAlignment(0, 0, 0);
+			if (mod(ivar0, 2) != 0) {
+				createExtraChild(new WidgetPointer(ivar6), 3, getExtraChildGap(new WidgetPointer(ivar6)));
+				setWidgetSize(16384, ivar2, 2, 0);
+				setWidgetPosition(0, multiply(ivar0, ivar2), 0, 0);
+				setWidgetRGB(new Color(35, 34, 32));
+				setWidgetFilled(1);
+				cs2method2103(128);
+			}
+			ivar0 = add(ivar0, 1);
+		}
+		while (ivar0 < ivar7) {
+			ivar8 = multiply(ivar0, ivar2);
+			if (mod(ivar0, 2) != 0) {
+				createExtraChild(new WidgetPointer(ivar6), 3, getExtraChildGap(new WidgetPointer(ivar6)));
+				setWidgetSize(16384, ivar2, 2, 0);
+				setWidgetPosition(0, ivar8, 0, 0);
+				setWidgetRGB(new Color(35, 34, 32));
+				setWidgetFilled(1);
+				cs2method2103(128);
+			}
+			ivar0 = add(ivar0, 1);
+		}
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(1110,42));
+		setWidgetText(new WidgetPointer(1110,72), "You must be part of a clan to" + "<br>" + "view the ban list.");
+		deleteAllExtraChilds(new WidgetPointer(ivar3));
+		deleteAllExtraChilds(new WidgetPointer(ivar6));
+	}
+	setWidgetIsHidden(false, new WidgetPointer(ivar5));
+	ivar9 = cs2method2601(new WidgetPointer(1110,41));
+	setWidgetScrollMax(getWidgetActualWidth(new WidgetPointer(1110,41)), multiply(ivar2, max(ivar1, ivar7)), new WidgetPointer(1110,41));
+	ivar9 = min(ivar9, getWidgetScrollMaxV(new WidgetPointer(1110,41)));
+	cs2method2100(0, ivar9, new WidgetPointer(1110,41));
+	script_31(72745000, 72745001, 5666, 5663, 5664, 5665, 5686, 5685);
+	return;
+}

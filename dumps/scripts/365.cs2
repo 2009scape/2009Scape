@@ -1,0 +1,79 @@
+void script_365(int arg0,int arg1,int arg2) {
+	if (((boolean)arg2)) {
+		if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+			setWidgetSprite(4096);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 1))) {
+			setWidgetSprite(4096);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 2))) {
+			setWidgetSprite(4093);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 3))) {
+			setWidgetSprite(4093);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 4))) {
+			setWidgetSprite(4090);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 5))) {
+			setWidgetSprite(4090);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 6))) {
+			setWidgetSprite(4090);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 7))) {
+			setWidgetSprite(4090);
+		}
+	} else if (arg2 == 2) {
+		if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+			setWidgetSprite(4095);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 1))) {
+			setWidgetSprite(4095);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 2))) {
+			setWidgetSprite(4092);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 3))) {
+			setWidgetSprite(4092);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 4))) {
+			setWidgetSprite(4089);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 5))) {
+			setWidgetSprite(4089);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 6))) {
+			setWidgetSprite(4089);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 7))) {
+			setWidgetSprite(4089);
+		}
+	} else {
+		if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+			setWidgetSprite(4097);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 1))) {
+			setWidgetSprite(4097);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 2))) {
+			setWidgetSprite(4094);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 3))) {
+			setWidgetSprite(4094);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 4))) {
+			setWidgetSprite(4091);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 5))) {
+			setWidgetSprite(4091);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 6))) {
+			setWidgetSprite(4091);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 7))) {
+			setWidgetSprite(4091);
+		}
+	}
+	return;
+}

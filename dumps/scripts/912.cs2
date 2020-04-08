@@ -1,0 +1,24 @@
+string script_912(int arg0) {
+	string svar0;
+	svar0 = cs2method_3408(111, 115, 1440, arg0);
+	if (stringMethod4107(svar0, "") != 0) {
+		return "<br>" + svar0;
+	}
+	switch (globalint_746) {
+		case 0:
+			if (getItemHashmapData(arg0, 1047) != 1) {
+				return "<br>" + cs2method_3408(105, 115, 1437, getItemHashmapData(arg0, 23));
+			}
+			break;
+		case 1:
+			return "<br>" + cs2method_3408(105, 115, 1439, getItemHashmapData(arg0, 23));
+		case 2:
+		case 5:
+			return "<br>" + cs2method_3408(105, 115, 1436, getItemHashmapData(arg0, 23));
+		case 3:
+			return "<br>" + cs2method_3408(105, 115, 1438, getItemHashmapData(arg0, 23));
+		case 4:
+			return "<br>" + "Requires an ogre composite bow.";
+	}
+	return "";
+}

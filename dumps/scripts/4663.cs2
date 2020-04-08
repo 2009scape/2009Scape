@@ -1,0 +1,33 @@
+void script_4663(int arg0) {
+	flow_0:
+		SWITCH (globalint_1534) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_2
+			case 3:
+				 GOTO flow_3
+			case 4:
+				 GOTO flow_4
+			case 5:
+				 GOTO flow_5
+		}
+		cameraUnlock();
+		GOTO	flow_6
+	flow_1:
+		script_4664(arg0);
+		GOTO	flow_6
+	flow_2:
+		script_4665(arg0);
+		GOTO	flow_6
+	flow_3:
+		script_4666(arg0);
+		GOTO	flow_6
+	flow_4:
+		script_4667(arg0);
+		GOTO	flow_6
+	flow_5:
+		script_4668(arg0);
+	flow_6:
+		return;
+}

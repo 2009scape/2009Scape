@@ -1,0 +1,17 @@
+void script_5190(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	ivar2 = 25;
+	ivar3 = multiply(getWidgetActualWidth(new WidgetPointer(1122,73)), arg0);
+	if (((boolean)arg1)) {
+		cs2method2100(ivar3, 0, new WidgetPointer(1122,74));
+		setWidgetIsHidden(true, new WidgetPointer(1122,75));
+		return;
+	}
+	setWidgetIsHidden(false, new WidgetPointer(1122,75));
+	if (ivar3 < cs2method2600(new WidgetPointer(1122,74))) {
+		ivar2 = subtract(0, ivar2);
+	}
+	setScriptCallOnGameloop(5191, ivar3, ivar2, "ii", new WidgetPointer(1122,74));
+	return;
+}

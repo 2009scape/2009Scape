@@ -1,0 +1,87 @@
+void script_593(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	string svar0;
+	string svar1;
+	ivar1 = cs2method_3408(105, 118, 1079, standart_config_1112);
+	ivar2 = getItemIdInSlot(ivar1, 0);
+	setItemOnWidgetMethod2200(ivar2, getItemAmtInSlot(ivar1, 0), new WidgetPointer(105,206));
+	setWidgetNoOptions(new WidgetPointer(105,206));
+	if (ivar2 != -1) {
+		if (getNotedItem(ivar2) != ivar2) {
+			if (getItemAmtInSlot(ivar1, 0) > 1) {
+				setWidgetContextMenuOption(1, new WidgetPointer(105,206), "Collect-notes");
+				setWidgetContextMenuOption(2, new WidgetPointer(105,206), "Collect-items");
+			} else {
+				setWidgetContextMenuOption(1, new WidgetPointer(105,206), "Collect-items");
+				setWidgetContextMenuOption(2, new WidgetPointer(105,206), "Collect-notes");
+			}
+		} else {
+			setWidgetContextMenuOption(1, new WidgetPointer(105,206), "Collect");
+		}
+		cs2method2305(new WidgetPointer(105,206), getItemName(ivar2));
+	} else {
+		cs2method2305(new WidgetPointer(105,206), "");
+	}
+	ivar3 = getItemIdInSlot(ivar1, 1);
+	setItemOnWidgetMethod2200(ivar3, getItemAmtInSlot(ivar1, 1), new WidgetPointer(105,208));
+	setWidgetNoOptions(new WidgetPointer(105,208));
+	if (ivar3 != -1) {
+		if (getNotedItem(ivar3) != ivar3) {
+			if (getItemAmtInSlot(ivar1, 1) > 1) {
+				setWidgetContextMenuOption(1, new WidgetPointer(105,208), "Collect-notes");
+				setWidgetContextMenuOption(2, new WidgetPointer(105,208), "Collect-items");
+			} else {
+				setWidgetContextMenuOption(1, new WidgetPointer(105,208), "Collect-items");
+				setWidgetContextMenuOption(2, new WidgetPointer(105,208), "Collect-notes");
+			}
+		} else {
+			setWidgetContextMenuOption(1, new WidgetPointer(105,208), "Collect");
+		}
+		cs2method2305(new WidgetPointer(105,208), getItemName(ivar3));
+	} else {
+		cs2method2305(new WidgetPointer(105,208), "");
+	}
+	setScriptCallOnItemContainerUpdate(589, ivar1, 1, "Y", new WidgetPointer(105,197));
+	ivar4 = getGEIsSelling(arg0);
+	ivar5 = getGEItemAmt(arg0);
+	ivar6 = getGEItemAmtTransfered(arg0);
+	ivar7 = getGECashTransfered(arg0);
+	svar0 = formatNumber(ivar6, 1);
+	svar1 = formatNumber(ivar7, 1);
+	deleteAllExtraChilds(new WidgetPointer(105,199));
+	if (setWidgetRegister(new WidgetPointer(105,199))) {
+		if (getGEIsStatus1(arg0)) {
+			createExtraChild(new WidgetPointer(105,199), 4, 0);
+			setWidgetPosition(0, 0, 0, 0);
+			setWidgetSize(getWidgetActualWidth(), getWidgetActualHeight(), 0, 0);
+			setWidgetFont(494);
+			setWidgetRGB(new Color(219, 216, 132));
+			setWidgetText("Submitting offer...");
+			setWidgetTextAlignment(1, 1, 0);
+		} else {
+			script_652(0, 0, getWidgetActualWidth(), getWidgetActualHeight(), arg0, 6881479, 0, 6881490, 2);
+		}
+	}
+	if (getGEIsDone(arg0)) {
+		if (((boolean)ivar4)) {
+			setWidgetText(new WidgetPointer(105,198), "You bought a total of " + "<col=cc9900>" + svar0 + "</col>" + "<br>" + "for a total price of " + "<col=cc9900>" + svar1 + "</col>" + " gp.");
+		} else {
+			setWidgetText(new WidgetPointer(105,198), "You sold a total of " + "<col=cc9900>" + svar0 + "</col>" + "<br>" + "for a total price of " + "<col=cc9900>" + svar1 + "</col>" + " gp.");
+		}
+		setWidgetIsHidden(true, new WidgetPointer(105,200));
+	} else {
+		if (((boolean)ivar4)) {
+			setWidgetText(new WidgetPointer(105,198), "You have bought a total of " + "<col=cc9900>" + svar0 + "</col>" + " so far" + "<br>" + "for a total price of " + "<col=cc9900>" + svar1 + "</col>" + " gp.");
+		} else {
+			setWidgetText(new WidgetPointer(105,198), "You have sold a total of " + "<col=cc9900>" + svar0 + "</col>" + " so far" + "<br>" + "for a total price of " + "<col=cc9900>" + svar1 + "</col>" + " gp.");
+		}
+		setWidgetIsHidden(false, new WidgetPointer(105,200));
+	}
+	return;
+}

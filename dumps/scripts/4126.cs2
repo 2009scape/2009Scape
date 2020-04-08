@@ -1,0 +1,123 @@
+string script_4126(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	string svar0;
+	string svar1;
+	int stack_dump0;
+	cs2func_script_2413_struct(3,0,0) structdump_1;
+	int stack_dump2;
+	int stack_dump3;
+	cs2func_script_4127_struct(3,0,0) structdump_4;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 1;
+	svar0 = "";
+	svar1 = "";
+	stack_dump0 = arg0;
+	structdump_1 = script_2413(stack_dump0);
+	ivar3 = structdump_1.intpart_2;
+	ivar2 = structdump_1.intpart_1;
+	ivar1 = structdump_1.intpart_0;
+	stack_dump0 = ivar1;
+	stack_dump2 = ivar2;
+	stack_dump3 = ivar3;
+	structdump_4 = script_4127(stack_dump0, stack_dump2, stack_dump3);
+	ivar3 = structdump_4.intpart_2;
+	ivar2 = structdump_4.intpart_1;
+	ivar1 = structdump_4.intpart_0;
+	if (((boolean)ivar3)) {
+		return "Black";
+	}
+	if (ivar3 == 255) {
+		return "White";
+	}
+	if (ivar3 < 97) {
+		svar0 = "Dark ";
+	} else if ((ivar3 == 127) && (ivar2 >= 240)) {
+		svar0 = "Vivid ";
+	} else if (ivar3 > 157) {
+		svar0 = "Light ";
+	} else {
+		ivar4 = 0;
+	}
+	switch (arg0) {
+		case 65535:
+		case 255:
+		case 65280:
+		case 16744448:
+		case 8388863:
+		case 4194559:
+		case 16711935:
+		case 16776960:
+		case 16711680:
+			svar0 = "Pure ";
+			ivar4 = 1;
+	}
+	if (((boolean)ivar4)) {
+		if (((boolean)ivar2)) {
+			svar1 = "grey";
+		}
+		if (ivar1 < 10) {
+			svar1 = "red";
+		} else if (ivar1 < 45) {
+			svar1 = "orange";
+		} else if (ivar1 < 75) {
+			svar1 = "yellow";
+		} else if (ivar1 < 140) {
+			svar1 = "green";
+		} else if (ivar1 < 160) {
+			svar1 = "turquoise";
+		} else if (ivar1 < 195) {
+			svar1 = "cyan";
+		} else if (ivar1 < 250) {
+			svar1 = "blue";
+		} else if (ivar1 < 265) {
+			svar1 = "indigo";
+		} else if (ivar1 < 280) {
+			svar1 = "violet";
+		} else if (ivar1 < 290) {
+			svar1 = "purple";
+		} else if (ivar1 < 305) {
+			svar1 = "magenta";
+		} else if (ivar1 < 345) {
+			svar1 = "pink";
+		} else {
+			svar1 = "red";
+		}
+	} else {
+		if (((boolean)ivar2)) {
+			svar1 = "Grey";
+		}
+		if (ivar1 < 10) {
+			svar1 = "Red";
+		} else if (ivar1 < 45) {
+			svar1 = "Orange";
+		} else if (ivar1 < 75) {
+			svar1 = "Yellow";
+		} else if (ivar1 < 140) {
+			svar1 = "Green";
+		} else if (ivar1 < 160) {
+			svar1 = "Turquoise";
+		} else if (ivar1 < 195) {
+			svar1 = "Cyan";
+		} else if (ivar1 < 250) {
+			svar1 = "Blue";
+		} else if (ivar1 < 265) {
+			svar1 = "Indigo";
+		} else if (ivar1 < 280) {
+			svar1 = "Violet";
+		} else if (ivar1 < 290) {
+			svar1 = "Purple";
+		} else if (ivar1 < 305) {
+			svar1 = "Magenta";
+		} else if (ivar1 < 345) {
+			svar1 = "Pink";
+		} else {
+			svar1 = "Red";
+		}
+	}
+	return svar0 + svar1 + ".";
+}

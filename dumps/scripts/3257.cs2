@@ -1,0 +1,20 @@
+void script_3257() {
+	if (((boolean)globalint_1202)) {
+		setWidgetText(new WidgetPointer(933,301), globalstring_314);
+		setWidgetText(new WidgetPointer(933,302), cs2method_3408(105, 115, 2857, globalint_1227));
+		setWidgetText(new WidgetPointer(933,303), cs2method_3408(105, 115, 2857, globalint_1228));
+		setWidgetText(new WidgetPointer(933,304), cs2method_3408(105, 115, 2857, globalint_1229));
+		setWidgetText(new WidgetPointer(933,305), cs2method_3408(105, 115, 2857, globalint_1230));
+		setWidgetText(new WidgetPointer(933,306), cs2method_3408(105, 115, 2857, globalint_1231));
+		setWidgetText(new WidgetPointer(933,307), cs2method_3408(105, 115, 2857, globalint_1232));
+	} else {
+		setWidgetText(new WidgetPointer(933,301), "");
+		setWidgetText(new WidgetPointer(933,302), "");
+		setWidgetText(new WidgetPointer(933,303), "");
+		setWidgetText(new WidgetPointer(933,304), "");
+		setWidgetText(new WidgetPointer(933,305), "");
+		setWidgetText(new WidgetPointer(933,306), "");
+		setWidgetText(new WidgetPointer(933,307), "");
+	}
+	return;
+}

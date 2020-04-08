@@ -1,0 +1,31 @@
+void script_744(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	int stack_dump0;
+	ivar5 = -1;
+	ivar6 = -1;
+	if (arg0 == 1179657) {
+		if (arg2 == 1179657) {
+			if (setWidgetRegister(new WidgetPointer(arg0), arg1) && setWidgetRegister(new WidgetPointer(arg2), arg3)) {
+				stack_dump0 = getWidgetItemId();
+				ivar6 = getWidgetItemId();
+				ivar5 = stack_dump0;
+				setItemOnWidgetMethod1205(ivar6, 1);
+				setItemOnWidgetMethod1205(ivar5, 1);
+				cs2method1305("<col=ff9040>" + getItemName(ivar6) + "</col>");
+				cs2method1305("<col=ff9040>" + getItemName(ivar5) + "</col>");
+			}
+			return;
+		}
+		if (arg2 == 1179665) {
+			script_1535(arg1, 0);
+			script_59(arg4);
+		}
+		return;
+	}
+	if ((arg0 == 1179665) && (arg2 == 1179657)) {
+		script_1535(arg3, arg1);
+		script_59(arg4);
+	}
+	return;
+}

@@ -1,0 +1,15 @@
+void script_2300(int arg0) {
+	if (arg0 != 1) {
+		return;
+	}
+	if (((boolean)standart_config_1397)) {
+		return;
+	}
+	if (((boolean)script_42(globalint_182))) {
+		globalint_182 = 0;
+	} else {
+		globalint_182 = 1;
+	}
+	script_2303();
+	return;
+}

@@ -1,0 +1,11 @@
+void script_677(int arg0) {
+	if (arg0 <= 9) {
+		setWidgetScrollMax(358, 225, new WidgetPointer(156,2));
+		setWidgetIsHidden(true, new WidgetPointer(156,1));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(156,1));
+		setWidgetScrollMax(358, add(multiply(arg0, 20), 30), new WidgetPointer(156,2));
+		script_72(10223617, 10223618, 0);
+	}
+	return;
+}

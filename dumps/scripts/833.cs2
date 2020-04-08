@@ -1,0 +1,17 @@
+void script_833(int arg0,int arg1) {
+	if (arg0 == 2) {
+		script_3683();
+		if (arg1 < 500) {
+			if (((boolean)script_837(arg1)) && ((boolean)cs2method_3408(105, 105, 1350, arg1))) {
+				messageType0("This track was unlocked " + getCommonString(1349, arg1));
+			} else {
+				messageType0("This track unlocks " + getCommonString(1349, arg1));
+			}
+		} else if (((boolean)script_837(arg1)) && ((boolean)cs2method_3408(105, 105, 1350, arg1))) {
+			messageType0("This track was unlocked " + getCommonString(952, arg1));
+		} else {
+			messageType0("This track unlocks " + getCommonString(952, arg1));
+		}
+	}
+	return;
+}

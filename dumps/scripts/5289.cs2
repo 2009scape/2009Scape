@@ -1,0 +1,5 @@
+void script_5289() {
+	playSoundEffect2False(7557, 1, 0, 200, cs2method_4019(20, 20));
+	script_675();
+	return;
+}

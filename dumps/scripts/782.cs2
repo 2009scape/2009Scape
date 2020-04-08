@@ -1,0 +1,56 @@
+void script_782(int arg0,int arg1,int arg2,int arg3,string arg4) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	deleteAllExtraChilds(new WidgetPointer(arg1));
+	ivar4 = add(2, multiply(13, getLineCount(177, 495, "This space is reserved")));
+	ivar5 = add(2, multiply(13, getLineCount(177, 494, "You cannot make this pouch.")));
+	ivar6 = add(add(add(add(add(2, ivar4), ivar5), 32), 14), 2);
+	ivar7 = 5;
+	ivar8 = 5;
+	ivar9 = 1;
+	ivar10 = 1;
+	if (setWidgetRegister(new WidgetPointer(arg2), arg0)) {
+		ivar6 = subtract(subtract(ivar6, 32), 14);
+		ivar7 = add(subtract(getWidgetActualY(), cs2method2601(new WidgetPointer(arg2))), 110);
+		if (ivar7 > 200) {
+			ivar7 = add(subtract(subtract(getWidgetActualY(), cs2method2601(new WidgetPointer(arg2))), ivar6), 45);
+		}
+		ivar8 = subtract(getWidgetActualX(), 60);
+		if (ivar8 < 0) {
+			ivar8 = 5;
+		}
+		if (ivar8 > 270) {
+			ivar8 = 285;
+		}
+		createExtraChild(new WidgetPointer(arg1), 3, 0);
+		setWidgetPosition(ivar8, ivar7, 0, 0);
+		setWidgetSize(180, ivar6, 0, 0);
+		setWidgetFilled(1);
+		setWidgetRGB(new Color(0, 0, 0));
+		cs2method2103(42);
+		createExtraChild(new WidgetPointer(arg1), 3, 1);
+		setWidgetPosition(add(ivar8, 1), add(ivar7, 1), 0, 0);
+		setWidgetSize(179, subtract(ivar6, 1), 0, 0);
+		setWidgetFilled(0);
+		setWidgetRGB(new Color(46, 43, 35));
+		createExtraChild(new WidgetPointer(arg1), 3, 2);
+		setWidgetPosition(ivar8, ivar7, 0, 0);
+		setWidgetSize(179, subtract(ivar6, 1), 0, 0);
+		setWidgetFilled(0);
+		setWidgetRGB(new Color(114, 100, 81));
+		createExtraChild(new WidgetPointer(arg1), 4, 3);
+		setWidgetPosition(add(ivar8, 2), add(ivar7, 2), 0, 0);
+		setWidgetSize(177, ivar4, 0, 0);
+		setWidgetTextAlignment(1, 1, 0);
+		setWidgetFont(495);
+		setWidgetRGB(new Color(255, 152, 31));
+		setWidgetUnknownBoolean(false);
+		setWidgetText("This space is reserved.");
+	}
+	return;
+}

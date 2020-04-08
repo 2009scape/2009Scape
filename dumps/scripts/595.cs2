@@ -1,0 +1,5 @@
+void script_595() {
+	standart_config_1113 = 1;
+	script_621();
+	return;
+}

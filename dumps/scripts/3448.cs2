@@ -1,0 +1,29 @@
+void script_3448() {
+	if (bitconfig_7933 != 0) {
+		setWidgetIsHidden(false, new WidgetPointer(987,30));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(987,30));
+	}
+	switch (bitconfig_7933) {
+		case 1:
+			setWidgetPosition(16, 28, 0, 0, new WidgetPointer(987,30));
+			break;
+		case 7:
+			setWidgetPosition(16, 161, 0, 0, new WidgetPointer(987,30));
+			break;
+		case 2:
+		case 3:
+		case 4:
+		case 5:
+		case 6:
+			setWidgetPosition(add(16, multiply(subtract(bitconfig_7933, 1), 79)), 28, 0, 0, new WidgetPointer(987,30));
+			break;
+		case 8:
+		case 9:
+		case 10:
+		case 11:
+		case 12:
+			setWidgetPosition(add(16, multiply(subtract(bitconfig_7933, 7), 79)), 161, 0, 0, new WidgetPointer(987,30));
+	}
+	return;
+}

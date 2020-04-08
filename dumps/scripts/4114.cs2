@@ -1,0 +1,39 @@
+void script_4114() {
+	int ivar0;
+	string svar0;
+	string svar1;
+	script_662(0);
+	script_662(1);
+	script_662(2);
+	script_662(3);
+	script_662(4);
+	script_662(5);
+	ivar0 = getItemIdInSlot(540, 0);
+	if (ivar0 == -1) {
+		setWidgetIsHidden(true, new WidgetPointer(109,45));
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(109,1)), 225, 0, 0, new WidgetPointer(109,1));
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(109,1)), 225, 0, 0, new WidgetPointer(109,0));
+		return;
+	}
+	setWidgetIsHidden(false, new WidgetPointer(109,45));
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(109,1)), 305, 0, 0, new WidgetPointer(109,1));
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(109,1)), 305, 0, 0, new WidgetPointer(109,0));
+	setItemOnWidgetMethod2200(ivar0, -1, new WidgetPointer(109,58));
+	cs2method2305(new WidgetPointer(109,58), "<col=ff9040>" + getItemName(ivar0) + "</col>");
+	svar0 = "Lent item";
+	svar1 = "Still on loan";
+	setWidgetText(new WidgetPointer(109,57), svar0);
+	if ((standart_config_1267 != -1) || (standart_config_1269 > 0)) {
+		cs2method2103(200, new WidgetPointer(109,58));
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(109,59));
+		setWidgetContextMenuOption(1, new WidgetPointer(109,58), "Demand");
+	} else {
+		cs2method2103(0, new WidgetPointer(109,58));
+		setWidgetRGB(new Color(0, 223, 0), new WidgetPointer(109,59));
+		svar1 = "Available";
+		setWidgetContextMenuOption(1, new WidgetPointer(109,58), "Reclaim");
+	}
+	setWidgetText(new WidgetPointer(109,59), svar1);
+	setWidgetSize(add(max(max(getTextWidth(495, svar0), getTextWidth(494, svar1)), getWidgetActualWidth(new WidgetPointer(109,58))), 30), getWidgetActualHeight(new WidgetPointer(109,45)), 0, 0, new WidgetPointer(109,45));
+	return;
+}

@@ -1,0 +1,6 @@
+void script_1307(int arg0) {
+	if (((boolean)bitconfig_7912) || (((bitconfig_7904 == 8) && ((boolean)bitconfig_7921)) && ((boolean)bitconfig_7916))) {
+		setWidgetModel(getWidgetModelId(new WidgetPointer(arg0)), new WidgetPointer(986,3));
+	}
+	return;
+}

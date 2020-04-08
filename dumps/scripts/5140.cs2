@@ -1,0 +1,65 @@
+void script_5140(int arg0) {
+	switch (arg0) {
+		case 71827963:
+			globalint_1576 = -1;
+			break;
+		case 71828013:
+			globalint_1572 = -1;
+			break;
+		case 71828026:
+			globalint_1574 = -1;
+			break;
+		case 71828218:
+			globalint_1573 = -1;
+			break;
+		case 71828231:
+			globalint_1575 = -1;
+			break;
+		case 71828127:
+			globalint_1577 = -1;
+			break;
+		case 71828138:
+			globalint_1578 = -1;
+			break;
+		case 71828150:
+			globalint_1579 = -1;
+			break;
+		case 71828163:
+			globalint_1580 = -1;
+			break;
+		case 71828175:
+			globalint_1581 = -1;
+			break;
+		case 71828272:
+			globalint_1582 = -1;
+			break;
+		case 71828071:
+			globalint_1583 = -1;
+			break;
+		case 71828060:
+			globalint_1584 = -1;
+			break;
+		case 71828104:
+			globalint_1585 = -1;
+			break;
+		case 71828082:
+			globalint_1586 = -1;
+			break;
+		case 71828093:
+			globalint_1587 = -1;
+			break;
+		case 71828115:
+			globalint_1588 = -1;
+			break;
+		case 71828187:
+			globalint_1589 = -1;
+			break;
+		case 71828261:
+			globalint_1649 = -1;
+			break;
+		case 71828199:
+			globalint_1590 = -1;
+	}
+	script_5141(arg0);
+	return;
+}

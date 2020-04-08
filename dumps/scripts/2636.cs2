@@ -1,0 +1,14 @@
+void script_2636() {
+	if (bitconfig_6357 == 2) {
+		cs2method2306(new WidgetPointer(859,16), "Attack wall");
+		cs2method2306(new WidgetPointer(859,17), "Collect");
+	} else if (bitconfig_6357 == 4) {
+		cs2method2306(new WidgetPointer(859,16), "Rescue");
+		cs2method2306(new WidgetPointer(859,17), "Steal");
+	} else {
+		if (bitconfig_6357 == 3) {
+			cs2method2306(new WidgetPointer(859,16), "Collect gold");
+		}
+	}
+	return;
+}

@@ -1,0 +1,18 @@
+void script_2169() {
+	int ivar0;
+	if (isMember()) {
+		globalint_693 = bitconfig_4536;
+	} else {
+		globalint_693 = 0;
+	}
+	globalint_694 = bitconfig_4538;
+	globalint_692 = bitconfig_4537;
+	script_2162(1, globalint_693, globalint_694, globalint_692, globalint_1103);
+	ivar0 = 0;
+	if (isMember() && (standart_config_281 >= 1000)) {
+		script_944(1, globalint_693, 2, 12451856, 12451854, 12451855, -1, 897, 788, 788, 1040, 16777215, 16776960, 494, 792, 789, 790, 791, 773, 788);
+	} else {
+		script_1355(12451856, 12451854, 12451855, -1, 897, 16776960, 494, "Free/Members");
+	}
+	return;
+}

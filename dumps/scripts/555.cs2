@@ -1,0 +1,13 @@
+void script_555() {
+	int ivar0;
+	ivar0 = multiply(subtract(15, bitconfig_4109), 6);
+	setWidgetPosition(0, ivar0, 0, 0, new WidgetPointer(624,15));
+	setWidgetText(new WidgetPointer(624,70), intToStr(bitconfig_4109));
+	ivar0 = multiply(subtract(15, bitconfig_4110), 6);
+	setWidgetPosition(0, ivar0, 0, 0, new WidgetPointer(624,17));
+	setWidgetText(new WidgetPointer(624,71), intToStr(bitconfig_4110));
+	ivar0 = multiply(subtract(15, bitconfig_4111), 6);
+	setWidgetPosition(0, ivar0, 0, 0, new WidgetPointer(624,19));
+	setWidgetText(new WidgetPointer(624,72), intToStr(bitconfig_4111));
+	return;
+}

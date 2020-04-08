@@ -1,0 +1,49 @@
+void script_917() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	deleteAllExtraChilds(new WidgetPointer(449,8));
+	globalint_742 = 0;
+	ivar0 = 0;
+	setWidgetRGB(new Color(globalint_1241), new WidgetPointer(449,2));
+	setWidgetRGB(new Color(globalint_1241), new WidgetPointer(449,14));
+	setWidgetRGB(new Color(globalint_1241), new WidgetPointer(449,22));
+	setWidgetRGB(new Color(globalint_1241), new WidgetPointer(449,24));
+	if (globalint_743 != -1) {
+		ivar0 = getItemAmtInContainer(93, globalint_743);
+		script_919();
+		setWidgetIsHidden(false, new WidgetPointer(449,15));
+		setWidgetSize(16384, 147, 2, 0, new WidgetPointer(449,6));
+	} else if ((standart_config_1109 != -1) && (multiply(standart_config_1111, standart_config_1110) > ivar0)) {
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(449,25));
+	} else {
+		setWidgetRGB(new Color(globalint_1241), new WidgetPointer(449,25));
+	}
+	ivar0 = getItemAmtInContainer(93, 995);
+	setItemOnWidgetMethod2205(-1, -1, new WidgetPointer(449,23));
+	setWidgetIsHidden(true, new WidgetPointer(449,15));
+	setWidgetSize(16384, 187, 2, 0, new WidgetPointer(449,6));
+	if (((boolean)ivar0)) {
+		setWidgetText(new WidgetPointer(449,25), "You have no " + cs2method_3408(111, 115, 62, globalint_743) + ".");
+	} else if (((boolean)ivar0)) {
+		setWidgetText(new WidgetPointer(449,25), "You have one " + cs2method_3408(111, 115, 923, globalint_743) + ".");
+	} else {
+		setWidgetText(new WidgetPointer(449,25), "You have " + script_940(ivar0) + " " + cs2method_3408(111, 115, 62, globalint_743) + ".");
+	}
+	ivar1 = 181;
+	ivar2 = script_920(ivar1);
+	if (ivar2 > getWidgetActualHeight(new WidgetPointer(449,8))) {
+		ivar1 = 165;
+		deleteAllExtraChilds(new WidgetPointer(449,8));
+		ivar2 = script_920(ivar1);
+	} else {
+		deleteAllExtraChilds(new WidgetPointer(449,9));
+	}
+	setWidgetScrollMax(ivar1, ivar2, new WidgetPointer(449,8));
+	setWidgetSize(ivar1, 6, 0, 1, new WidgetPointer(449,8));
+	cs2method2100(0, 0, new WidgetPointer(449,8));
+	if (ivar2 > getWidgetActualHeight(new WidgetPointer(449,8))) {
+		script_31(29425673, 29425672, 792, 789, 790, 791, 773, 788);
+	}
+	return;
+}

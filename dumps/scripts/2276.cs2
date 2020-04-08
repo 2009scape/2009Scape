@@ -1,0 +1,25 @@
+void script_2276(int arg0,int arg1,int arg2) {
+	int ivar3;
+	string svar0;
+	string svar1;
+	svar0 = cs2method_3408(105, 115, 2857, arg1);
+	ivar3 = cs2method_3408(105, 105, 2858, arg1);
+	svar1 = cs2method_3408(105, 115, 2859, arg1);
+	if (((boolean)arg0)) {
+		setWidgetText(new WidgetPointer(arg2), svar0);
+		if (ivar3 == 2) {
+			setWidgetRGB(new Color(0, 160, 0), new WidgetPointer(arg2));
+		} else if (((boolean)ivar3)) {
+			setWidgetRGB(new Color(144, 144, 0), new WidgetPointer(arg2));
+		} else {
+			if (((boolean)ivar3)) {
+				setWidgetRGB(new Color(160, 0, 0), new WidgetPointer(arg2));
+			}
+		}
+		setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(933,254), svar1, 25, 200, "IIsii", new WidgetPointer(arg2));
+		setScriptCallOnMouseExit(40, new WidgetPointer(933,254), "I", new WidgetPointer(arg2));
+	} else {
+		setWidgetText(new WidgetPointer(arg2), "");
+	}
+	return;
+}

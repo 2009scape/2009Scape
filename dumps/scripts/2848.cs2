@@ -1,0 +1,41 @@
+void script_2848(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	int ivar6;
+	int ivar7;
+	ivar6 = 0;
+	ivar7 = 0;
+	if (arg2 != -1) {
+		if (arg3 == -1) {
+			if (setWidgetRegister(new WidgetPointer(arg2)) && (arg2 == 31064075)) {
+				ivar6 = arg4;
+				ivar7 = arg5;
+				if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+					setWidgetPosition(cs2method_3408(105, 105, 905, arg1), cs2method_3408(105, 105, 906, arg1), 0, 0);
+				}
+			}
+		} else {
+			if (arg3 < 9) {
+				return;
+			}
+			if (((boolean)script_2849(subtract(arg3, 9)))) {
+				if (setWidgetRegister(new WidgetPointer(arg2), arg3)) {
+					ivar6 = getWidgetActualX();
+					ivar7 = getWidgetActualY();
+				}
+				if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+					switch (rnd(2)) {
+						case 0:
+							playSoundEffect(8502, 1, 0);
+							break;
+						case 1:
+							playSoundEffect(8518, 1, 0);
+							break;
+						case 2:
+							playSoundEffect(8515, 1, 0);
+					}
+					setWidgetPosition(ivar6, ivar7, 0, 0);
+				}
+			}
+		}
+	}
+	return;
+}

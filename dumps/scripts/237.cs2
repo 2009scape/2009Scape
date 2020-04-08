@@ -1,0 +1,6 @@
+void script_237(int arg0) {
+	if (setWidgetRegister(new WidgetPointer(594,93), arg0)) {
+		cs2method2103(192);
+	}
+	return;
+}

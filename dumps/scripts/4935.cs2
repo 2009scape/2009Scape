@@ -1,0 +1,7 @@
+void script_4935() {
+	int ivar0;
+	ivar0 = 71565520;
+	setScriptCallOnGameloop(4938, 1, "i", new WidgetPointer(ivar0));
+	script_5220();
+	return;
+}

@@ -1,0 +1,6 @@
+int script_1891() {
+	if ((cs2method3612() > 0) && (cs2method3618() >= cs2method3616())) {
+		return 1;
+	}
+	return 0;
+}

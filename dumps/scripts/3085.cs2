@@ -1,0 +1,44 @@
+void script_3085(int arg0,int arg1,int arg2,int arg3,int arg4,string arg5) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 0;
+	ivar8 = arg0;
+	if (getClientCycle() > arg2) {
+		setWidgetText(new WidgetPointer(906,223), arg5);
+		setWidgetSize(add(multiply(getWidgetActualX(new WidgetPointer(906,223)), 2), getTextWidth(495, arg5)), getWidgetActualHeight(new WidgetPointer(906,220)), 0, 0, new WidgetPointer(906,220));
+		while (((boolean)ivar7)) {
+			if (ivar8 == 59375643) {
+				ivar7 = 1;
+			}
+			ivar5 = add(ivar5, getWidgetActualX(new WidgetPointer(ivar8)));
+			ivar6 = add(ivar6, getWidgetActualY(new WidgetPointer(ivar8)));
+			ivar8 = getWidgetParentId(new WidgetPointer(ivar8));
+		}
+		if ((arg1 > -1) && setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+			ivar5 = add(ivar5, getWidgetActualX());
+			ivar6 = add(ivar6, getWidgetActualY());
+		}
+		ivar5 = add(add(ivar5, arg3), 3);
+		ivar6 = subtract(subtract(add(ivar6, arg4), 3), getWidgetActualHeight(new WidgetPointer(906,220)));
+		if (add(ivar5, getWidgetActualWidth(new WidgetPointer(906,220))) > getWidgetActualWidth(new WidgetPointer(906,23))) {
+			ivar5 = subtract(getWidgetActualWidth(new WidgetPointer(906,23)), getWidgetActualWidth(new WidgetPointer(906,220)));
+		}
+		if (ivar6 < 0) {
+			ivar6 = 0;
+		}
+		setWidgetPosition(ivar5, ivar6, 0, 0, new WidgetPointer(906,220));
+		setWidgetIsHidden(false, new WidgetPointer(906,220));
+		if (arg1 < 0) {
+			setScriptCallOnMouseOver(-1, "", new WidgetPointer(arg0));
+		} else {
+			if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+				setScriptCallOnMouseOver(-1, "");
+			}
+		}
+	}
+	return;
+}

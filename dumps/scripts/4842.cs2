@@ -1,0 +1,13 @@
+void script_4842(int arg0) {
+	switch (arg0) {
+		case 1:
+			setWidgetIsHidden(false, new WidgetPointer(1092,1253));
+			break;
+		case 2:
+			setWidgetIsHidden(false, new WidgetPointer(1092,1244));
+			break;
+		case 3:
+			setWidgetIsHidden(false, new WidgetPointer(1092,1235));
+	}
+	return;
+}

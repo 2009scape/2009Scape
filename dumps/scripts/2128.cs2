@@ -1,0 +1,23 @@
+void script_2128(int arg0,int arg1) {
+	switch (arg1) {
+		case 1:
+			setWidgetModel(16036, new WidgetPointer(arg0));
+			setWidget3DRotation(0, 0, script_686(globalint_680, 2048), globalint_681, script_686(globalint_682, 2048), 800, new WidgetPointer(arg0));
+			break;
+		case 2:
+			setWidgetModel(16025, new WidgetPointer(arg0));
+			setWidget3DRotation(0, 17, script_686(globalint_683, 2048), globalint_684, script_686(globalint_685, 2048), 800, new WidgetPointer(arg0));
+			break;
+		case 3:
+			setWidgetModel(16022, new WidgetPointer(arg0));
+			setWidget3DRotation(0, 0, script_686(globalint_686, 2048), globalint_687, script_686(globalint_688, 2048), 800, new WidgetPointer(arg0));
+			break;
+		case 4:
+			setWidgetModel(16034, new WidgetPointer(arg0));
+			setWidget3DRotation(0, 0, script_686(globalint_689, 2048), globalint_690, script_686(globalint_691, 2048), 800, new WidgetPointer(arg0));
+			break;
+		default:
+			setWidgetModel(-1, new WidgetPointer(arg0));
+	}
+	return;
+}

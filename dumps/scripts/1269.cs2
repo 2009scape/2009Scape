@@ -1,0 +1,18 @@
+void script_1269() {
+	string svar0;
+	svar0 = "null";
+	if (((boolean)standart_config_427)) {
+		setWidgetSprite(761, new WidgetPointer(261,7));
+		svar0 = "Accept aid" + "<br>" + "(currently off)";
+		setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(261,22), svar0, 25, 180, "IIsii", new WidgetPointer(261,7));
+		globalint_2 = 0;
+	} else {
+		if (((boolean)standart_config_427)) {
+			setWidgetSprite(762, new WidgetPointer(261,7));
+			svar0 = "Accept aid" + "<br>" + "(currently on)";
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(261,22), svar0, 25, 180, "IIsii", new WidgetPointer(261,7));
+			globalint_2 = 0;
+		}
+	}
+	return;
+}

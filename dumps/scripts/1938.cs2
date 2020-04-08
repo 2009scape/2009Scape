@@ -1,0 +1,9 @@
+void script_1938() {
+	globalint_556 = add(getClientCycle(), multiply(2000, 30));
+	globalint_559 = 255;
+	globalint_560 = 0;
+	globalint_561 = 0;
+	globalint_562 = 0;
+	setWidgetUnknownBoolean(false, new WidgetPointer(809,15));
+	return;
+}

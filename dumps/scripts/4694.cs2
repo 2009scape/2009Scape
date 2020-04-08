@@ -1,0 +1,24 @@
+void script_4694(int arg0) {
+	if (((boolean)globalint_1548)) {
+		setWidgetPosition(getWidgetActualWidth(new WidgetPointer(500,2)), 63, 0, 0, new WidgetPointer(arg0));
+	}
+	if (globalint_1548 == 2) {
+		setWidgetPosition(getWidgetActualWidth(new WidgetPointer(500,2)), 93, 0, 0, new WidgetPointer(arg0));
+	}
+	if (globalint_1548 == 3) {
+		setWidgetPosition(getWidgetActualWidth(new WidgetPointer(500,2)), 123, 0, 0, new WidgetPointer(arg0));
+	}
+	if (globalint_1548 == 4) {
+		setWidgetPosition(getWidgetActualWidth(new WidgetPointer(500,2)), 153, 0, 0, new WidgetPointer(arg0));
+	}
+	if (globalint_1548 == 5) {
+		setWidgetPosition(getWidgetActualWidth(new WidgetPointer(500,2)), 183, 0, 0, new WidgetPointer(arg0));
+	}
+	if (globalint_1548 == 6) {
+		setWidgetPosition(getWidgetActualWidth(new WidgetPointer(500,2)), 213, 0, 0, new WidgetPointer(arg0));
+	}
+	if (globalint_1548 == 7) {
+		setWidgetPosition(getWidgetActualWidth(new WidgetPointer(500,2)), 213, 0, 0, new WidgetPointer(arg0));
+	}
+	return;
+}

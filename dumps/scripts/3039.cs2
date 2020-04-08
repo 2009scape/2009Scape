@@ -1,0 +1,21 @@
+void script_3039(int arg0,int arg1,int arg2,string arg3) {
+	switch (arg0) {
+		case 1:
+			if (cs2method6900()) {
+				script_3015(0, "Send message to " + arg3, "", arg3, "");
+			} else {
+				messageType0("Users restricted to quick-chat cannot send messages from the Lobby.");
+			}
+			break;
+		case 2:
+			script_1182(arg1);
+			break;
+		case 3:
+		case 4:
+			messageType0("That player is currently offline.");
+			break;
+		case 10:
+			cs2method3606(strRemoveEntities(arg3));
+	}
+	return;
+}

@@ -1,0 +1,5 @@
+void script_725(int arg0,int arg1) {
+	globalint_199 = -1;
+	setScriptCallOnGlobalConfigChange(726, new WidgetPointer(arg0), new WidgetPointer(arg1), 199, 213, 2, "IIY", new WidgetPointer(arg0));
+	return;
+}

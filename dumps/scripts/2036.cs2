@@ -1,0 +1,3 @@
+int script_2036() {
+	return add(add(add(add(add(add(add(add(add(add(add(bitconfig_5799, bitconfig_5805), bitconfig_5794), bitconfig_5797), bitconfig_5795), bitconfig_5800), bitconfig_5796), bitconfig_5798), bitconfig_5802), bitconfig_5803), bitconfig_5804), bitconfig_5801);
+}

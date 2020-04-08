@@ -1,0 +1,4 @@
+void script_755() {
+	setWidgetText(new WidgetPointer(662,41), intToStr(getSkillCurrentLvl(23)) + "/" + intToStr(getSkillActualLvl(23)));
+	return;
+}

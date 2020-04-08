@@ -1,0 +1,74 @@
+void script_2274(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,string arg11,string arg12) {
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	deleteAllExtraChilds(new WidgetPointer(arg1));
+	ivar11 = add(2, multiply(13, getLineCount(177, 495, "Level " + intToStr(arg2) + ": " + arg11)));
+	ivar12 = add(2, multiply(13, getLineCount(177, 494, arg12)));
+	ivar13 = add(add(add(add(add(2, ivar11), ivar12), 32), 14), 2);
+	if (arg3 == -1) {
+		ivar13 = subtract(subtract(ivar13, 32), 14);
+	}
+	ivar14 = 5;
+	if (getWidgetActualY(new WidgetPointer(arg0)) < 130) {
+		ivar14 = subtract(subtract(261, ivar13), 5);
+	}
+	createExtraChild(new WidgetPointer(arg1), 3, 0);
+	setWidgetPosition(5, ivar14, 0, 0);
+	setWidgetSize(180, ivar13, 0, 0);
+	setWidgetFilled(1);
+	setWidgetRGB(new Color(0, 0, 0));
+	cs2method2103(42);
+	createExtraChild(new WidgetPointer(arg1), 3, 1);
+	setWidgetPosition(6, add(ivar14, 1), 0, 0);
+	setWidgetSize(179, subtract(ivar13, 1), 0, 0);
+	setWidgetFilled(0);
+	setWidgetRGB(new Color(46, 43, 35));
+	createExtraChild(new WidgetPointer(arg1), 3, 2);
+	setWidgetPosition(5, ivar14, 0, 0);
+	setWidgetSize(179, subtract(ivar13, 1), 0, 0);
+	setWidgetFilled(0);
+	setWidgetRGB(new Color(114, 100, 81));
+	createExtraChild(new WidgetPointer(arg1), 4, 3);
+	setWidgetPosition(7, add(ivar14, 2), 0, 0);
+	setWidgetSize(177, ivar11, 0, 0);
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetFont(495);
+	setWidgetRGB(new Color(255, 152, 31));
+	setWidgetUnknownBoolean(false);
+	setWidgetText("Level " + intToStr(arg2) + ": " + arg11);
+	createExtraChild(new WidgetPointer(arg1), 4, 4);
+	setWidgetPosition(7, add(add(ivar14, 2), ivar11), 0, 0);
+	setWidgetSize(177, ivar12, 0, 0);
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetFont(494);
+	setWidgetRGB(new Color(175, 106, 26));
+	setWidgetUnknownBoolean(false);
+	setWidgetText(arg12);
+	ivar15 = 1;
+	ivar16 = divide(subtract(190, multiply(ivar15, 35)), add(ivar15, 1));
+	createExtraChild(new WidgetPointer(arg1), 5, 5);
+	setWidgetPosition(ivar16, add(add(add(ivar14, 2), ivar11), ivar12), 0, 0);
+	setWidgetSize(35, 32, 0, 0);
+	setItemOnWidgetMethod1200(17489, -1);
+	createExtraChild(new WidgetPointer(arg1), 4, 6);
+	setWidgetPosition(ivar16, add(add(add(add(ivar14, 2), ivar11), ivar12), 32), 0, 0);
+	setWidgetSize(35, 14, 0, 0);
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetFont(494);
+	if (standart_config_1795 != -1) {
+		setWidgetRGB(new Color(0, 255, 0));
+	} else {
+		setWidgetRGB(new Color(255, 0, 0));
+	}
+	setWidgetUnknownBoolean(false);
+	if (standart_config_1795 != -1) {
+		setWidgetText("1/1");
+	} else {
+		setWidgetText("0/1");
+	}
+	return;
+}

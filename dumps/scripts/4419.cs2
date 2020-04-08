@@ -1,0 +1,16 @@
+void script_4419(int arg0) {
+	if (getWidgetActualHeight(new WidgetPointer(getWidgetParentId(new WidgetPointer(arg0)))) > 69) {
+		script_4544(arg0, -1, -1, -1, 14, 70, 3, 1);
+		setWidgetSprite(6169, new WidgetPointer(1107,58));
+		setWidgetSprite(6169, new WidgetPointer(1107,59));
+		cs2method2005(0, new WidgetPointer(1107,40));
+	} else {
+		if (getWidgetActualHeight(new WidgetPointer(getWidgetParentId(new WidgetPointer(arg0)))) == 14) {
+			script_4544(arg0, -1, -1, -1, 14, 70, 3, 1);
+			setWidgetSprite(6168, new WidgetPointer(1107,58));
+			setWidgetSprite(6168, new WidgetPointer(1107,59));
+			cs2method2005(1, new WidgetPointer(1107,40));
+		}
+	}
+	return;
+}

@@ -1,0 +1,38 @@
+void script_4340(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	string svar0;
+	string svar1;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	cs2func_script_4341_struct(0,2,0) structdump_3;
+	ivar4 = divide(divide(arg0, 60), 24);
+	ivar5 = subtract(arg0, multiply(multiply(ivar4, 24), 60));
+	ivar6 = divide(ivar5, 60);
+	ivar7 = mod(ivar5, 60);
+	svar0 = "";
+	if (ivar6 < 10) {
+		svar0 = "0" + intToStr(ivar6);
+	} else {
+		svar0 = intToStr(ivar6);
+	}
+	svar1 = "";
+	if (ivar7 < 10) {
+		svar1 = "0" + intToStr(ivar7);
+	} else {
+		svar1 = intToStr(ivar7);
+	}
+	setWidgetText(new WidgetPointer(arg2), svar0 + ":" + svar1);
+	setScriptCallOnGameloop(4342, ivar6, ivar7, arg1, new WidgetPointer(arg2), new WidgetPointer(arg3), "iiiII", new WidgetPointer(arg2));
+	stack_dump0 = arg1;
+	stack_dump1 = ivar6;
+	stack_dump2 = ivar7;
+	structdump_3 = script_4341(stack_dump0, stack_dump1, stack_dump2);
+	svar1 = structdump_3.stringpart_1;
+	svar0 = structdump_3.stringpart_0;
+	setWidgetText(new WidgetPointer(arg3), svar0 + ":" + svar1);
+	return;
+}

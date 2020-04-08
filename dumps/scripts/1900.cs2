@@ -1,0 +1,63 @@
+void script_1900(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	string svar0;
+	globalint_159 = 0;
+	globalint_158 = 0;
+	ivar4 = 0;
+	while (setWidgetRegister(new WidgetPointer(arg0), ivar4)) {
+		if (ivar4 == arg2) {
+			setScriptCallOnMouseEntered(-1, "");
+			setScriptCallOnMouseExit(-1, "");
+			if (setWidgetRegister(new WidgetPointer(arg1), ivar4)) {
+				setWidgetHidden(0);
+				setWidgetRGB(new Color(150, 151, 119));
+			}
+		} else {
+			setScriptCallOnMouseEntered(1082, subtract(arg3, 1), new WidgetPointer(arg1), ivar4, "iIi");
+			setScriptCallOnMouseExit(1083, subtract(arg3, 1), new WidgetPointer(arg1), ivar4, "iIi");
+			if (setWidgetRegister(new WidgetPointer(arg1), ivar4)) {
+				setWidgetHidden(1);
+			}
+		}
+		ivar4 = add(ivar4, 1);
+	}
+	globalint_128 = -1;
+	globalint_129 = 0;
+	globalstring_30 = "";
+	svar0 = "Search phrases...";
+	if (((boolean)globalint_126)) {
+		svar0 = "To " + globalstring_27 + ": " + "<col=800000>" + svar0;
+	} else if (globalint_126 == 2) {
+		svar0 = "[" + "<col=0000ff>" + cs2method3611() + "<col=000000>" + "]: " + "<col=800000>" + svar0;
+	} else if (globalint_126 == 8) {
+		if (cs2method3751()) {
+			svar0 = "[" + "<col=0000ff>" + cs2method3752() + "<col=000000>" + "]: " + "<col=800000>" + svar0;
+		}
+	} else if (globalint_126 == 10) {
+		if (cs2method3750()) {
+			svar0 = "[" + "<col=0000ff>" + cs2method3752() + "<col=000000>" + "]: " + "<col=800000>" + svar0;
+		}
+	} else {
+		svar0 = "<col=0000ff>" + svar0;
+	}
+	setWidgetIsHidden(true, new WidgetPointer(137,50));
+	setScriptCallOnKeyPress(-1, "", new WidgetPointer(137,56));
+	setWidgetIsHidden(false, new WidgetPointer(137,0));
+	setWidgetIsHidden(true, new WidgetPointer(137,7));
+	setWidgetIsHidden(true, new WidgetPointer(137,9));
+	setWidgetIsHidden(false, new WidgetPointer(137,13));
+	setWidgetIsHidden(true, new WidgetPointer(137,17));
+	setWidgetIsHidden(true, new WidgetPointer(137,1));
+	setWidgetIsHidden(false, new WidgetPointer(137,3));
+	setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(137,3));
+	setWidgetFont(495, new WidgetPointer(137,3));
+	setWidgetTextAlignment(0, 1, 0, new WidgetPointer(137,3));
+	setWidgetText(new WidgetPointer(137,3), svar0);
+	setWidgetUnknownBoolean(false, new WidgetPointer(137,3));
+	deleteAllExtraChilds(new WidgetPointer(137,16));
+	setWidgetText(new WidgetPointer(137,14), "Search for: *");
+	setScriptCallOnKeyPress(1901, -2147483640, false, new WidgetPointer(137,1), new WidgetPointer(137,14), new WidgetPointer(137,16), new WidgetPointer(137,15), 0, "izIIIIi", new WidgetPointer(137,13));
+	setWidgetScrollMax(0, 0, new WidgetPointer(137,16));
+	script_72(8978447, 8978448, 0);
+	return;
+}

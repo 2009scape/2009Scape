@@ -1,0 +1,14 @@
+void script_666(int arg0,int arg1,int arg2) {
+	int ivar3;
+	ivar3 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg1), arg2)) {
+		ivar3 = subtract(arg0, getClientCycle());
+		if (ivar3 <= 0) {
+			cs2method2103(0);
+			setScriptCallOnGameloop(-1, "");
+			return;
+		}
+		cs2method2103(max(subtract(cs2method1609(), divide(cs2method1609(), ivar3)), 1));
+	}
+	return;
+}

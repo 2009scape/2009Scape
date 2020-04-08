@@ -1,0 +1,36 @@
+int script_851(int arg0) {
+	if (arg0 == 10) {
+		return 0;
+	}
+	if (((boolean)arg0)) {
+		return bitconfig_4400;
+	}
+	if (((boolean)arg0)) {
+		return bitconfig_4404;
+	}
+	if (arg0 == 2) {
+		return bitconfig_4408;
+	}
+	if (arg0 == 3) {
+		return bitconfig_4412;
+	}
+	if (arg0 == 4) {
+		return bitconfig_4416;
+	}
+	if (arg0 == 5) {
+		return bitconfig_4420;
+	}
+	if (arg0 == 6) {
+		return bitconfig_4424;
+	}
+	if (arg0 == 7) {
+		return bitconfig_4428;
+	}
+	if (arg0 == 8) {
+		return bitconfig_4432;
+	}
+	if (arg0 == 9) {
+		return bitconfig_4436;
+	}
+	return 0;
+}

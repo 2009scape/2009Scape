@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Tools/Arios Editor/Arios Editor.iml" filepath="$PROJECT_DIR$/Tools/Arios Editor/Arios Editor.iml" />
       <module fileurl="file://$PROJECT_DIR$/RS-2009.iml" filepath="$PROJECT_DIR$/RS-2009.iml" />
     </modules>
   </component>

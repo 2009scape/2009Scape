@@ -1,0 +1,27 @@
+void script_143(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 0;
+	if (getWidgetScrollMaxH(new WidgetPointer(arg0)) > 0) {
+		ivar6 = divide(subtract(getWidgetScrollMaxH(new WidgetPointer(arg0)), multiply(36, arg1)), subtract(arg1, 1));
+	} else {
+		ivar6 = divide(subtract(getWidgetActualWidth(new WidgetPointer(arg0)), multiply(36, arg1)), subtract(arg1, 1));
+	}
+	if (getWidgetScrollMaxV(new WidgetPointer(arg0)) > 0) {
+		ivar7 = divide(subtract(getWidgetScrollMaxV(new WidgetPointer(arg0)), multiply(32, arg2)), subtract(arg2, 1));
+	} else {
+		ivar7 = divide(subtract(getWidgetActualHeight(new WidgetPointer(arg0)), multiply(32, arg2)), subtract(arg2, 1));
+	}
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSprite(937);
+	setWidgetSize(10, 32, 0, 0);
+	setWidgetPosition(add(multiply(add(36, ivar6), mod(arg3, arg1)), 13), multiply(divide(arg3, arg1), add(32, ivar7)), 0, 0);
+	setWidgetHidden(0);
+	setScriptCallOnGameloop(144, new WidgetPointer(arg0), -2147483643, getClientCycle(), add(getClientCycle(), 750), "Iiii");
+	return;
+}

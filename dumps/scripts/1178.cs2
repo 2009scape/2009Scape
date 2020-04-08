@@ -1,0 +1,8 @@
+void script_1178() {
+	globalint_548 = max(0, subtract(globalint_548, 1));
+	setWidgetText(new WidgetPointer(745,5), intToStr(divide(multiply(globalint_548, 2), 100)));
+	if (globalint_548 <= 0) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(745,5));
+	}
+	return;
+}

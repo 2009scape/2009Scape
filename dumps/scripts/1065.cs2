@@ -1,0 +1,25 @@
+void script_1065(int arg0,int arg1) {
+	if (cs2method2600(new WidgetPointer(arg0)) > arg1) {
+		setWidgetScrollMax(subtract(getWidgetScrollMaxH(new WidgetPointer(arg0)), 10), 0, new WidgetPointer(arg0));
+		cs2method2100(subtract(cs2method2600(new WidgetPointer(arg0)), 10), 0, new WidgetPointer(arg0));
+		if (cs2method2600(new WidgetPointer(arg0)) < arg1) {
+			setWidgetScrollMax(add(arg1, getWidgetActualWidth(new WidgetPointer(arg0))), 0, new WidgetPointer(arg0));
+			cs2method2100(arg1, 0, new WidgetPointer(arg0));
+			setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+			return;
+		}
+	} else if (cs2method2600(new WidgetPointer(arg0)) < arg1) {
+		setWidgetScrollMax(add(getWidgetScrollMaxH(new WidgetPointer(arg0)), 10), 0, new WidgetPointer(arg0));
+		cs2method2100(add(cs2method2600(new WidgetPointer(arg0)), 10), 0, new WidgetPointer(arg0));
+		if (cs2method2600(new WidgetPointer(arg0)) > arg1) {
+			setWidgetScrollMax(add(arg1, getWidgetActualWidth(new WidgetPointer(arg0))), 0, new WidgetPointer(arg0));
+			cs2method2100(arg1, 0, new WidgetPointer(arg0));
+			setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+			return;
+		}
+	} else {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+		return;
+	}
+	return;
+}

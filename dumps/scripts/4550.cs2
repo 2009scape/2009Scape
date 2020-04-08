@@ -1,0 +1,6 @@
+int script_4550(int arg0) {
+	if ((isParent(new WidgetPointer(753,4), arg0) || isParent(new WidgetPointer(746,12), arg0)) || isParent(new WidgetPointer(548,19), arg0)) {
+		return 1;
+	}
+	return 0;
+}

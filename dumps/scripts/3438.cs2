@@ -1,0 +1,12 @@
+void script_3438() {
+	if (((boolean)getLanguage())) {
+		setWidgetSprite(861, new WidgetPointer(329,11));
+	} else if (getLanguage() == 2) {
+		setWidgetSprite(644, new WidgetPointer(329,11));
+	} else {
+		if (getLanguage() == 3) {
+			setWidgetSprite(866, new WidgetPointer(329,11));
+		}
+	}
+	return;
+}

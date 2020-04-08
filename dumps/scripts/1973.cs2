@@ -1,0 +1,21 @@
+void script_1973(int arg0,int arg1,int arg2) {
+	if (arg2 != 1) {
+		return;
+	}
+	playSoundEffect(4911, 1, 0);
+	switch (arg0) {
+		case 0:
+			globalint_618 = script_686(subtract(globalint_618, 1), 26);
+			break;
+		case 1:
+			globalint_619 = script_686(subtract(globalint_619, 1), 26);
+			break;
+		case 2:
+			globalint_620 = script_686(subtract(globalint_620, 1), 26);
+			break;
+		case 3:
+			globalint_621 = script_686(subtract(globalint_621, 1), 26);
+	}
+	script_1971(arg0, arg1);
+	return;
+}

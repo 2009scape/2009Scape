@@ -1,0 +1,39 @@
+void script_3626(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6) {
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int stack_dump0;
+	ivar7 = 0;
+	ivar8 = getCommonDefinitionSize(arg0);
+	ivar9 = -1;
+	ivar10 = 0;
+	ivar11 = 0;
+	ivar12 = 0;
+	ivar13 = 0;
+	playSoundEffect(9506, 1, 0);
+	while (ivar7 < ivar8) {
+		ivar9 = ((int)cs2method_3408(105, 73, arg0, ivar7));
+		ivar10 = cs2method_3408(105, 105, arg3, mod(add(ivar7, arg4), ivar8));
+		ivar13 = mod(add(ivar10, arg5), getCommonDefinitionSize(3170));
+		if (setWidgetRegister(new WidgetPointer(ivar9))) {
+			stack_dump0 = 1103;
+			/* 
+				mgi.tools.jagdecs2.DecompilerException: opcode 1613 not decompileable
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeSpecialCall(FlowBlocksGenerator.java:297)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:249)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+					at tests.Main.main(Main.java:45)
+				
+			 */
+		}
+		setScriptCallOnGameloop(3628, new WidgetPointer(ivar9), ivar11, ivar12, multiply(25, cs2method_3408(105, 105, arg1, ivar7)), multiply(25, cs2method_3408(105, 105, arg2, ivar7)), cs2method_3408(105, 79, 3170, ivar13), ivar13, 0, arg6, "IiiiiOiii", new WidgetPointer(ivar9));
+		ivar7 = add(ivar7, 1);
+	}
+	return;
+}

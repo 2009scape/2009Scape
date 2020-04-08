@@ -1,0 +1,25 @@
+void script_2699(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6) {
+	int ivar7;
+	ivar7 = script_2582(arg1, arg0, arg6);
+	if (((boolean)ivar7)) {
+		if (arg1 == 845) {
+			arg5 = cs2method5308();
+			cs2method5307(arg5);
+			script_2694(arg6, 0, "RuneScape was unable to change to that resolution." + "<br>" + "<br>" + "Please visit our Knowledge Base for more information.", "Consult Knowledge Base", "kbase/view.ws?guid=controls_display_options");
+		} else if (arg1 == 1009) {
+			script_3413(arg6);
+		} else {
+			script_2694(arg6, 1, "RuneScape was unable to implement that setting." + "<br>" + "<br>" + "Please visit our Knowledge Base for more information.", "Consult Knowledge Base", "kbase/view.ws?guid=controls_display_options");
+		}
+	} else {
+		if (cs2method7007() != 0) {
+			cs2method7005();
+		}
+	}
+	if (arg1 == 845) {
+		script_2596(arg4, arg5, arg2, arg3, arg6);
+	} else {
+		script_3387(arg4, arg5, arg2, arg3, arg6);
+	}
+	return;
+}

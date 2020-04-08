@@ -1,0 +1,99 @@
+cs2func_script_4841_struct(6,0,0) script_4841(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 0;
+	if (citadelConfigsInitialized()) {
+		switch (arg0) {
+			case 1:
+				ivar3 = bitconfig_9570;
+				ivar1 = bitconfig_9562;
+				ivar2 = bitconfig_9563;
+				ivar4 = bitconfig_9567;
+				ivar5 = bitconfig_9568;
+				ivar6 = bitconfig_9569;
+				break;
+			case 2:
+				ivar3 = bitconfig_9579;
+				ivar1 = bitconfig_9571;
+				ivar2 = bitconfig_9572;
+				ivar4 = bitconfig_9576;
+				ivar5 = bitconfig_9577;
+				ivar6 = bitconfig_9578;
+				break;
+			case 3:
+				ivar3 = bitconfig_9588;
+				ivar1 = bitconfig_9580;
+				ivar2 = bitconfig_9581;
+				ivar4 = bitconfig_9585;
+				ivar5 = bitconfig_9586;
+				ivar6 = bitconfig_9587;
+		}
+	}
+	ivar7 = 1;
+	ivar8 = 1;
+	ivar9 = -1;
+	ivar10 = -1;
+	ivar11 = -1;
+	ivar12 = -1;
+	ivar13 = 0;
+	ivar14 = 0;
+	ivar15 = 0;
+	ivar16 = 0;
+	ivar17 = 0;
+	ivar18 = 0;
+	ivar11 = cs2method_3408(105, 103, 4043, ivar1);
+	if (ivar11 == -1) {
+		return newstruct cs2func_script_4841_struct(0, 0, 0, 0, 0, 0);
+	}
+	ivar12 = cs2method_3408(105, 103, ivar11, ivar2);
+	if (ivar12 == -1) {
+		return newstruct cs2func_script_4841_struct(0, 0, 0, 0, 0, 0);
+	}
+	while (ivar7 <= 3) {
+		ivar9 = cs2method_3408(105, 103, ivar12, ivar7);
+		if (ivar9 != -1) {
+			switch (ivar7) {
+				case 1:
+					ivar10 = cs2method_3408(105, 74, ivar9, ivar4);
+					break;
+				case 2:
+					ivar10 = cs2method_3408(105, 74, ivar9, ivar5);
+					break;
+				case 3:
+					ivar10 = cs2method_3408(105, 74, ivar9, ivar6);
+			}
+			if (ivar10 != -1) {
+				ivar13 = getOtherCommonData(ivar10, 1571);
+				ivar16 = add(ivar16, getOtherCommonData(ivar10, 1573));
+				ivar14 = getOtherCommonData(ivar10, 1575);
+				ivar17 = add(ivar17, getOtherCommonData(ivar10, 1577));
+				ivar15 = getOtherCommonData(ivar10, 1579);
+				ivar18 = add(ivar18, getOtherCommonData(ivar10, 1581));
+			}
+		}
+		ivar9 = -1;
+		ivar7 = add(ivar7, 1);
+	}
+	return newstruct cs2func_script_4841_struct(ivar13, ivar16, ivar14, ivar17, ivar15, ivar18);
+}

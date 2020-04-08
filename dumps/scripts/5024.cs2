@@ -1,0 +1,3 @@
+int script_5024(int arg0) {
+	return bitAnd(divide(arg0, pow(2, 8)), 63);
+}

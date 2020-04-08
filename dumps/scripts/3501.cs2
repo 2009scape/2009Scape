@@ -1,0 +1,24 @@
+void script_3501(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	while (ivar1 < getItemContainerLength(207)) {
+		createExtraChild(new WidgetPointer(arg0), 6, ivar1);
+		setWidgetSize(49, 49, 0, 0);
+		setWidgetPosition(multiply(56, ivar2), multiply(56, ivar3), 0, 0);
+		if (getItemIdInSlot(207, ivar1) != -1) {
+			setItemOnWidgetMethod1200(getItemIdInSlot(207, ivar1), getItemAmtInSlot(207, ivar1));
+			setWidget3DRotation(0, 0, 512, 0, 0, 1340);
+			cs2method1111(1);
+		} else {
+			setWidgetHidden(1);
+		}
+		ivar1 = add(ivar1, 1);
+		ivar2 = mod(ivar1, 5);
+		ivar3 = divide(ivar1, 5);
+	}
+	return;
+}

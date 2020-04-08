@@ -1,0 +1,66 @@
+void script_4130(int arg0) {
+	int ivar1;
+	ivar1 = 0;
+	switch (globalint_1452) {
+		flow_1:
+			case 1:
+			createExtraChild(new WidgetPointer(arg0), 3, ivar1);
+			setWidgetFilled(1);
+			setWidgetRGB(new Color(238, 238, 170));
+			setWidgetSize(30, 0, 0, 1);
+			setWidgetPosition(0, 0, 0, 0);
+			setWidgetHidden(1);
+			ivar1 = add(ivar1, 1);
+			createExtraChild(new WidgetPointer(arg0), 5, ivar1);
+			setWidgetSprite(3181);
+			setWidgetSize(30, 0, 0, 1);
+			setWidgetPosition(0, 0, 0, 0);
+			setWidgetHidden(1);
+			ivar1 = add(ivar1, 1);
+			createExtraChild(new WidgetPointer(arg0), 3, ivar1);
+			setWidgetFilled(1);
+			setWidgetRGB(new Color(238, 238, 170));
+			setWidgetSize(30, 0, 0, 1);
+			setWidgetPosition(0, 0, 2, 2);
+			setWidgetHidden(1);
+			ivar1 = add(ivar1, 1);
+			createExtraChild(new WidgetPointer(arg0), 5, ivar1);
+			setWidgetSprite(3182);
+			setWidgetSize(30, 0, 0, 1);
+			setWidgetPosition(0, 0, 2, 2);
+			setWidgetHidden(1);
+			ivar1 = add(ivar1, 1);
+			script_665(0, 50, arg0, ivar1);
+			GOTO	flow_14
+			while (true) {
+				case 2:
+					if (ivar1 < 4) {
+						if (setWidgetRegister(new WidgetPointer(arg0), ivar1)) {
+							setWidgetHidden(0);
+						}
+						ivar1 = add(ivar1, 1);
+					}
+			}
+		flow_6:
+			script_667(50, arg0, ivar1);
+			break;
+			case 3:
+			script_665(0, 50, arg0, 4);
+			GOTO	flow_14
+			while (true) {
+				case 4:
+					if (ivar1 < 4) {
+						if (setWidgetRegister(new WidgetPointer(arg0), ivar1)) {
+							setWidgetHidden(1);
+						}
+						ivar1 = add(ivar1, 1);
+					}
+			}
+		script_667(50, arg0, ivar1);
+		break;
+		case 5:
+			deleteAllExtraChilds(new WidgetPointer(arg0));
+	}
+	flow_14:
+		return;
+}

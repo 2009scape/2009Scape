@@ -1,0 +1,90 @@
+void script_683(int arg0) {
+	setWidgetNpcHead(cs2method_3408(105, 110, 1098, arg0));
+	if (((boolean)arg0)) {
+		script_684(0, 63);
+		setWidget3DRotation(0, 0, 0, 0, 0, 528);
+		setScriptCallOnGameloop(685, new WidgetPointer(-32768,3), -2147483643, 0, 0, 256, 2, "Iiiiii");
+		return;
+	}
+	if (((boolean)arg0)) {
+		script_684(-31, 58);
+		setWidget3DRotation(0, 0, 0, 0, 0, 400);
+		setScriptCallOnGameloop(685, new WidgetPointer(-32768,3), -2147483643, 0, 0, 256, 3, "Iiiiii");
+		setWidgetAnimation(7375);
+		return;
+	}
+	if (arg0 == 2) {
+		script_684(0, 58);
+		setWidget3DRotation(0, 0, 0, 0, 0, 528);
+		setScriptCallOnGameloop(685, new WidgetPointer(-32768,3), -2147483643, 0, 0, 256, 2, "Iiiiii");
+		return;
+	}
+	if (arg0 == 3) {
+		script_684(0, 48);
+		setWidget3DRotation(0, 0, 52, 0, 0, 650);
+		setScriptCallOnGameloop(685, new WidgetPointer(-32768,3), -2147483643, 0, 0, 256, 2, "Iiiiii");
+		return;
+	}
+	if (arg0 == 4) {
+		script_684(0, 62);
+		setWidget3DRotation(0, 0, 35, 0, 0, 528);
+		setScriptCallOnGameloop(685, new WidgetPointer(-32768,3), -2147483643, 0, 0, 256, 2, "Iiiiii");
+		return;
+	}
+	if (arg0 == 5) {
+		script_684(-3, 60);
+		setWidget3DRotation(0, 0, 35, 0, 0, 656);
+		setScriptCallOnGameloop(685, new WidgetPointer(-32768,3), -2147483643, 0, 0, 512, 3, "Iiiiii");
+		return;
+	}
+	if (arg0 == 6) {
+		script_684(0, 68);
+		setWidget3DRotation(0, 0, 35, 0, 0, 720);
+		setScriptCallOnGameloop(685, new WidgetPointer(-32768,3), -2147483643, 0, 0, 256, 2, "Iiiiii");
+		return;
+	}
+	if (arg0 == 7) {
+		script_684(0, 61);
+		setWidget3DRotation(0, 0, 35, 0, 0, 584);
+		setScriptCallOnGameloop(685, new WidgetPointer(-32768,3), -2147483643, 0, 0, 256, 2, "Iiiiii");
+		return;
+	}
+	if (arg0 == 8) {
+		script_684(0, 67);
+		setWidget3DRotation(0, 0, 35, 0, 0, 840);
+		setScriptCallOnGameloop(685, new WidgetPointer(-32768,3), -2147483643, 0, 0, 256, 2, "Iiiiii");
+		return;
+	}
+	if (arg0 == 9) {
+		script_684(0, 65);
+		setWidget3DRotation(0, 0, 35, 0, 0, 614);
+		setScriptCallOnGameloop(685, new WidgetPointer(-32768,3), -2147483643, 0, 0, 256, 2, "Iiiiii");
+		return;
+	}
+	if (arg0 == 10) {
+		script_684(0, 69);
+		setWidget3DRotation(0, 0, 35, 0, 0, 755);
+		setScriptCallOnGameloop(685, new WidgetPointer(-32768,3), -2147483643, 35, 0, 256, 2, "Iiiiii");
+		return;
+	}
+	if (arg0 == 11) {
+		script_684(0, 68);
+		setWidget3DRotation(0, 0, 35, 0, 0, 671);
+		setScriptCallOnGameloop(685, new WidgetPointer(-32768,3), -2147483643, 35, 0, 256, 2, "Iiiiii");
+		return;
+	}
+	if (arg0 == 12) {
+		script_684(0, 70);
+		setWidget3DRotation(0, 0, 35, 1891, 0, 1277);
+		setScriptCallOnGameloop(685, new WidgetPointer(-32768,3), -2147483643, 35, 0, 256, 2, "Iiiiii");
+		return;
+	}
+	if (arg0 == 13) {
+		script_684(0, 70);
+		setWidget3DRotation(0, 0, 35, 1891, 0, 1277);
+		setScriptCallOnGameloop(685, new WidgetPointer(-32768,3), -2147483643, 35, 0, 256, 2, "Iiiiii");
+		return;
+	}
+	setWidget3DRotation(0, 0, 0, 0, 0, 2000);
+	return;
+}

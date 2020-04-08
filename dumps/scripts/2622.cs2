@@ -1,0 +1,31 @@
+void script_2622() {
+	int ivar0;
+	int ivar1;
+	ivar0 = -1;
+	ivar1 = 1;
+	if (((boolean)stringMethod4107(globalstring_179, "")) || ((boolean)stringMethod4107(globalstring_179, "null"))) {
+		return;
+	}
+	setWidgetText(new WidgetPointer(850,44), getWidgetText(new WidgetPointer(850,43)));
+	setWidgetText(new WidgetPointer(850,43), getWidgetText(new WidgetPointer(850,42)));
+	setWidgetText(new WidgetPointer(850,42), getWidgetText(new WidgetPointer(850,41)));
+	setWidgetText(new WidgetPointer(850,41), getWidgetText(new WidgetPointer(850,40)));
+	setWidgetText(new WidgetPointer(850,40), getWidgetText(new WidgetPointer(850,39)));
+	setWidgetText(new WidgetPointer(850,39), getWidgetText(new WidgetPointer(850,38)));
+	setWidgetText(new WidgetPointer(850,38), getWidgetText(new WidgetPointer(850,37)));
+	setWidgetText(new WidgetPointer(850,37), getWidgetText(new WidgetPointer(850,36)));
+	setWidgetText(new WidgetPointer(850,36), getWidgetText(new WidgetPointer(850,35)));
+	setWidgetText(new WidgetPointer(850,35), getWidgetText(new WidgetPointer(850,34)));
+	setWidgetText(new WidgetPointer(850,34), getWidgetText(new WidgetPointer(850,33)));
+	setWidgetText(new WidgetPointer(850,33), getWidgetText(new WidgetPointer(850,32)));
+	setWidgetText(new WidgetPointer(850,32), getWidgetText(new WidgetPointer(850,31)));
+	setWidgetText(new WidgetPointer(850,31), getWidgetText(new WidgetPointer(850,30)));
+	setWidgetText(new WidgetPointer(850,30), getWidgetText(new WidgetPointer(850,29)));
+	setWidgetText(new WidgetPointer(850,29), getWidgetText(new WidgetPointer(850,28)));
+	setWidgetText(new WidgetPointer(850,28), getWidgetText(new WidgetPointer(850,27)));
+	setWidgetText(new WidgetPointer(850,27), getWidgetText(new WidgetPointer(850,26)));
+	setWidgetText(new WidgetPointer(850,26), getWidgetText(new WidgetPointer(850,25)));
+	setWidgetText(new WidgetPointer(850,25), globalstring_179);
+	script_157(55705645, 55705646, getWidgetScrollMaxV(new WidgetPointer(850,46)), 1);
+	return;
+}

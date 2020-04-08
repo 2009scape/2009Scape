@@ -1,0 +1,33 @@
+void script_2049(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,string arg11,string arg12) {
+	int ivar11;
+	int ivar12;
+	setWidgetHidden(0);
+	setWidgetSize(arg1, arg2, 0, 0);
+	setWidgetPosition(arg3, arg4, 1, 1);
+	cs2method1106(arg5);
+	cs2method1107(arg6);
+	setWidgetHFlip(arg7);
+	setWidgetVFlip(arg8);
+	setWidgetSprite(arg0);
+	ivar11 = 0;
+	ivar12 = 0;
+	if (((boolean)arg9)) {
+		cs2method1122(1);
+		ivar11 = mod(getClientCycle(), 50);
+		ivar12 = divide(50, 2);
+		if (ivar11 <= ivar12) {
+			cs2method2103(subtract(255, multiplyDivide(ivar11, ivar12, 255)));
+		} else {
+			cs2method2103(multiplyDivide(subtract(ivar11, ivar12), ivar12, 255));
+		}
+	}
+	if (arg10 != -1) {
+		cs2method1305("<col=ff9040>" + arg11 + "</col>");
+		setWidgetContextMenuOption(1, arg12);
+		setScriptCallOnClickContextMenu(2053, -2147483644, new WidgetPointer(-32768,3), arg10, "iIc");
+	} else {
+		setWidgetContextMenuOption(1, "");
+		setScriptCallOnClickContextMenu(-1, "");
+	}
+	return;
+}

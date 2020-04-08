@@ -1,0 +1,12 @@
+void script_521() {
+	globalint_54 = getSkillXp(20);
+	globalint_55 = getSkillXp(12);
+	globalint_57 = getSkillXp(9);
+	globalint_58 = getSkillXp(7);
+	globalint_60 = getSkillXp(22);
+	globalint_61 = getSkillXp(15);
+	globalint_64 = getSkillXp(6);
+	globalint_66 = getSkillXp(13);
+	globalint_62 = getSkillXp(19);
+	return;
+}

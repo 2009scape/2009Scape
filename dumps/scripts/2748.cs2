@@ -1,0 +1,9 @@
+void script_2748(int arg0) {
+	setWidgetText(new WidgetPointer(204,30), intToStr(add(arg0, 1)));
+	setWidgetVFlip(0, new WidgetPointer(204,44));
+	setWidgetIsHidden(true, new WidgetPointer(204,86));
+	setWidgetIsHidden(true, new WidgetPointer(204,87));
+	setWidgetIsHidden(true, new WidgetPointer(204,77));
+	setWidgetIsHidden(true, new WidgetPointer(204,26));
+	return;
+}

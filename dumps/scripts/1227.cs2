@@ -1,0 +1,22 @@
+void script_1227(int arg0,int arg1,int arg2) {
+	int ivar3;
+	if ((bitconfig_1549 < 1) || (bitconfig_1549 > 63)) {
+		setWidgetIsHidden(true, new WidgetPointer(arg1));
+		setWidgetIsHidden(true, new WidgetPointer(arg2));
+		return;
+	}
+	if (bitconfig_1549 == 63) {
+		setWidgetText(new WidgetPointer(arg2), "Final" + "<br>" + "Challenge");
+	} else {
+		setWidgetText(new WidgetPointer(arg2), "Wave " + intToStr(bitconfig_1549));
+	}
+	ivar3 = subtract(0, getWidgetActualHeight(new WidgetPointer(arg0)));
+	setWidgetPosition(0, ivar3, 1, 1, new WidgetPointer(arg1));
+	setWidgetPosition(0, ivar3, 1, 1, new WidgetPointer(arg2));
+	setWidgetIsHidden(false, new WidgetPointer(arg1));
+	setWidgetIsHidden(false, new WidgetPointer(arg2));
+	setScriptCallOnGameloop(1228, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), getClientCycle(), "IIIi", new WidgetPointer(arg0));
+	setWidgetContextMenuOption(1, new WidgetPointer(arg1), "Dismiss");
+	setScriptCallOnClickContextMenu(1229, -2147483644, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), "iIII", new WidgetPointer(arg1));
+	return;
+}

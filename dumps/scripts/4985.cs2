@@ -1,0 +1,20 @@
+void script_4985() {
+	int ivar0;
+	flow_0:
+		ivar0 = -1;
+		IF (citadelConfigsInitialized() && (bitconfig_9550 > 0)) 
+			GOTO	flow_2
+		GOTO	flow_5
+	flow_2:
+		ivar0 = script_4948(bitconfig_9550);
+		IF (ivar0 <= 0) 
+			GOTO	flow_3
+		GOTO	flow_4
+	flow_3:
+		script_4899(4);
+		GOTO	flow_4
+	flow_4:
+		GOTO	flow_5
+	flow_5:
+		return;
+}

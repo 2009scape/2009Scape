@@ -1,0 +1,15 @@
+void script_2504() {
+	int ivar0;
+	ivar0 = 0;
+	setWidgetText(new WidgetPointer(291,73), globalstring_180);
+	setWidgetText(new WidgetPointer(291,28), globalstring_181);
+	ivar0 = add(multiply(getLineCount(207, 497, globalstring_180), 17), 5);
+	setWidgetSize(207, ivar0, 0, 0, new WidgetPointer(291,73));
+	setWidgetScrollMax(0, ivar0, new WidgetPointer(291,72));
+	script_72(19071045, 19071048, 0);
+	ivar0 = add(multiply(getLineCount(207, 497, globalstring_181), 17), 5);
+	setWidgetSize(207, ivar0, 0, 0, new WidgetPointer(291,28));
+	setWidgetScrollMax(0, ivar0, new WidgetPointer(291,68));
+	script_72(19071046, 19071044, 0);
+	return;
+}

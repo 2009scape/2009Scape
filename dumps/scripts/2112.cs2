@@ -1,0 +1,32 @@
+void script_2112(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	setWidget3DRotation(0, 0, getWidgetRotateX(new WidgetPointer(arg0)), getWidgetRotateY(new WidgetPointer(arg0)), cs2method2607(new WidgetPointer(arg0)), add(add(395, arg5), arg5), new WidgetPointer(arg0));
+	setWidget3DRotation(0, 0, getWidgetRotateX(new WidgetPointer(arg1)), getWidgetRotateY(new WidgetPointer(arg1)), cs2method2607(new WidgetPointer(arg1)), add(add(395, arg5), arg5), new WidgetPointer(arg1));
+	setWidget3DRotation(0, 0, getWidgetRotateX(new WidgetPointer(arg2)), getWidgetRotateY(new WidgetPointer(arg2)), cs2method2607(new WidgetPointer(arg2)), add(add(395, arg5), arg5), new WidgetPointer(arg2));
+	setWidget3DRotation(0, 0, getWidgetRotateX(new WidgetPointer(arg3)), getWidgetRotateY(new WidgetPointer(arg3)), cs2method2607(new WidgetPointer(arg3)), add(add(395, arg5), arg5), new WidgetPointer(arg3));
+	switch (arg4) {
+		case 0:
+			setWidgetPosition(0, 43, 1, 0, new WidgetPointer(arg0));
+			setWidgetPosition(0, 126, 1, 0, new WidgetPointer(arg1));
+			setWidgetPosition(0, 210, 1, 0, new WidgetPointer(arg2));
+			setWidgetPosition(0, -70, 1, 0, new WidgetPointer(arg3));
+			break;
+		case 1:
+			setWidgetPosition(0, 43, 1, 0, new WidgetPointer(arg1));
+			setWidgetPosition(0, 126, 1, 0, new WidgetPointer(arg2));
+			setWidgetPosition(0, 210, 1, 0, new WidgetPointer(arg3));
+			setWidgetPosition(0, -70, 1, 0, new WidgetPointer(arg0));
+			break;
+		case 2:
+			setWidgetPosition(0, 43, 1, 0, new WidgetPointer(arg2));
+			setWidgetPosition(0, 126, 1, 0, new WidgetPointer(arg3));
+			setWidgetPosition(0, 210, 1, 0, new WidgetPointer(arg0));
+			setWidgetPosition(0, -70, 1, 0, new WidgetPointer(arg1));
+			break;
+		default:
+			setWidgetPosition(0, 43, 1, 0, new WidgetPointer(arg3));
+			setWidgetPosition(0, 126, 1, 0, new WidgetPointer(arg0));
+			setWidgetPosition(0, 210, 1, 0, new WidgetPointer(arg1));
+			setWidgetPosition(0, -70, 1, 0, new WidgetPointer(arg2));
+	}
+	return;
+}

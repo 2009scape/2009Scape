@@ -1,0 +1,11 @@
+void script_1428(int arg0,int arg1) {
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		if ((globalint_1024 == bitconfig_6521) && (globalint_1024 != 0)) {
+			setScriptCallOnGameloop(1429, new WidgetPointer(arg0), arg1, "Ii");
+		} else {
+			setScriptCallOnGameloop(-1, "");
+			cs2method2103(0);
+		}
+	}
+	return;
+}

@@ -1,0 +1,3 @@
+int script_5020(int arg0) {
+	return max(bitAnd(arg0, 127), 1);
+}

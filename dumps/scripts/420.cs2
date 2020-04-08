@@ -1,0 +1,5 @@
+void script_420() {
+	cameraMethod5511(globalint_1353);
+	setScriptCallOnGameloop(421, globalint_1355, globalint_1356, 0, "iii", new WidgetPointer(1013,0));
+	return;
+}

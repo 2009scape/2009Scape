@@ -1,0 +1,83 @@
+void script_2646(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	if (globalint_842 == 3) {
+		globalint_842 = 1;
+		setWidgetText(new WidgetPointer(arg0), "Check bank & inventory");
+		setWidgetText(new WidgetPointer(860,18), "Commodities");
+		setWidgetIsHidden(false, new WidgetPointer(860,20));
+		script_2645(56360980);
+		script_2642();
+		return;
+	}
+	globalint_842 = 3;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 0;
+	globalint_842 = 3;
+	ivar6 = -1;
+	setWidgetIsHidden(true, new WidgetPointer(860,20));
+	setWidgetText(new WidgetPointer(arg0), "View all commodities");
+	setWidgetText(new WidgetPointer(860,18), "Commodities in your bank & inventory");
+	deleteAllExtraChilds(new WidgetPointer(860,23));
+	setWidgetText(new WidgetPointer(860,19), "A list of items already in your inventory or bank that you can trade with Mal for investment credit.");
+	ivar3 = divide(subtract(getWidgetActualWidth(new WidgetPointer(860,23)), multiply(36, 10)), subtract(10, 1));
+	ivar4 = divide(subtract(getWidgetActualHeight(new WidgetPointer(860,23)), 128), 3);
+	ivar7 = 0;
+	while (ivar1 <= getItemContainerLength(95)) {
+		ivar6 = getItemIdInSlot(95, ivar1);
+		if ((ivar6 != -1) && commonIntegerExists('o', 1939, ivar6)) {
+			createExtraChild(new WidgetPointer(860,23), 5, ivar2);
+			setWidgetSize(36, 32, 0, 0);
+			setWidgetPosition(multiply(add(36, ivar3), mod(ivar2, 10)), multiply(divide(ivar2, 10), add(32, ivar4)), 0, 0);
+			setItemOnWidgetMethod1200(ivar6, -1);
+			cs2method1305("<col=ff981f>" + getItemName(ivar6));
+			setWidgetContextMenuOption(1, "Examine");
+			setWidgetShadowColor(new Color(51, 51, 51));
+			setWidgetBorderThickness(1);
+			ivar2 = add(ivar2, 1);
+			ivar7 = getWidgetActualY();
+		}
+		ivar1 = add(ivar1, 1);
+	}
+	ivar8 = 0;
+	while (ivar8 <= getItemContainerLength(93)) {
+		ivar6 = getItemIdInSlot(93, ivar8);
+		if ((ivar6 != -1) && commonIntegerExists('o', 1939, ivar6)) {
+			createExtraChild(new WidgetPointer(860,23), 5, ivar2);
+			setWidgetSize(36, 32, 0, 0);
+			setWidgetPosition(multiply(add(36, ivar3), mod(ivar2, 10)), multiply(divide(ivar2, 10), add(32, ivar4)), 0, 0);
+			setItemOnWidgetMethod1200(ivar6, -1);
+			cs2method1305("<col=ff981f>" + getItemName(ivar6));
+			setWidgetContextMenuOption(1, "Examine");
+			setWidgetShadowColor(new Color(51, 51, 51));
+			setWidgetBorderThickness(1);
+			ivar2 = add(ivar2, 1);
+			ivar7 = getWidgetActualY();
+		}
+		ivar8 = add(ivar8, 1);
+	}
+	if (((boolean)ivar2)) {
+		createExtraChild(new WidgetPointer(860,23), 4, ivar2);
+		setWidgetSize(200, 32, 0, 0);
+		setWidgetPosition(0, 0, 1, 4);
+		setWidgetText("No valid commodities were found in your bank or inventory.");
+		setWidgetFont(496);
+		setWidgetTextAlignment(1, 1, 0);
+		setWidgetUnknownBoolean(false);
+		setWidgetRGB(new Color(255, 152, 31));
+		ivar2 = 1;
+	}
+	setWidgetScrollMax(getWidgetActualWidth(new WidgetPointer(860,23)), add(ivar7, 32), new WidgetPointer(860,23));
+	cs2method2100(0, 0, new WidgetPointer(860,23));
+	script_31(56360982, 56360983, 792, 789, 790, 791, 773, 788);
+	return;
+}

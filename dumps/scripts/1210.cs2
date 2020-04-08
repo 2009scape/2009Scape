@@ -1,0 +1,15 @@
+int script_1210(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	ivar4 = mod(subtract(add(getClientCycle(), arg3), arg2), arg1);
+	ivar5 = divide(arg1, 2);
+	ivar6 = subtract(ivar5, ivar4);
+	if (((boolean)ivar6)) {
+		return arg0;
+	}
+	if (ivar6 > 0) {
+		return subtract(arg0, multiplyDivide(ivar6, ivar5, arg0));
+	}
+	return add(arg0, multiplyDivide(ivar6, ivar5, arg0));
+}

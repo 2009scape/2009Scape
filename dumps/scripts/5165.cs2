@@ -1,0 +1,5 @@
+void script_5165() {
+	standart_config_2347 = max(0, min(standart_config_2347, 65535));
+	sendColorPickerPacket(standart_config_2347);
+	return;
+}

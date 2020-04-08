@@ -1,0 +1,14 @@
+void script_4325(int arg0,int arg1,int arg2) {
+	int ivar3;
+	ivar3 = 0;
+	while (ivar3 < arg2) {
+		if (setWidgetRegister(new WidgetPointer(arg1), ivar3)) {
+			setWidgetSprite(6036);
+		}
+		ivar3 = add(ivar3, 1);
+	}
+	if (setWidgetRegister(new WidgetPointer(arg1), arg0)) {
+		setWidgetSprite(6039);
+	}
+	return;
+}

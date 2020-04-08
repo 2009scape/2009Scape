@@ -1,0 +1,12 @@
+void script_1791(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = divide(globalint_270, 60);
+	ivar2 = mod(globalint_270, 60);
+	if (ivar2 >= 10) {
+		setWidgetText(new WidgetPointer(arg0), intToStr(ivar1) + "h " + intToStr(ivar2) + "m");
+	} else {
+		setWidgetText(new WidgetPointer(arg0), intToStr(ivar1) + "h 0" + intToStr(ivar2) + "m");
+	}
+	return;
+}

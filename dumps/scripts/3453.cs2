@@ -1,0 +1,15 @@
+void script_3453() {
+	if (globalint_1281 == 8) {
+		return;
+	}
+	if (((boolean)globalint_1074)) {
+		script_3454(add(globalint_1281, 1), globalint_1070, globalint_1069, script_2865(globalint_1070, globalint_1071), globalint_1073);
+	} else if (((boolean)globalint_1074)) {
+		script_3454(add(globalint_1281, 1), globalint_1070, globalint_1069, globalint_1072, 50);
+	} else {
+		return;
+	}
+	globalint_1281 = add(globalint_1281, 1);
+	setWidgetText(new WidgetPointer(475,78), intToStr(globalint_1281));
+	return;
+}

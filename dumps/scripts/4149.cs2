@@ -1,0 +1,20 @@
+void script_4149(int arg0,int arg1,string arg2) {
+	if (((boolean)arg1)) {
+		script_1361(arg0);
+	} else {
+		script_915(arg0);
+	}
+	createExtraChild(new WidgetPointer(arg0), 4, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(0, 0, 1, 1);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetFont(495);
+	setWidgetUnknownBoolean(true);
+	setWidgetTextAlignment(1, 1, 0);
+	if (((boolean)arg1)) {
+		setWidgetRGB(new Color(255, 255, 255));
+	} else {
+		setWidgetRGB(new Color(255, 152, 31));
+	}
+	setWidgetText(arg2);
+	return;
+}

@@ -1,0 +1,14 @@
+void script_3206(int arg0) {
+	switch (arg0) {
+		case 1:
+			script_3196(6, 59834382, 59834383, 59834371, 59834370, 59834368);
+			break;
+		case 13:
+			if (isWidgetHidden(new WidgetPointer(913,2))) {
+				script_3198(59834382, 59834383, 59834371, 59834370, 59834368);
+			} else {
+				script_3205();
+			}
+	}
+	return;
+}

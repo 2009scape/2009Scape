@@ -1,0 +1,13 @@
+void script_1834(int arg0) {
+	if (arg0 != 1) {
+		return;
+	}
+	if (((((boolean)globalint_250) && (globalint_252 >= 2)) && ((boolean)globalint_251)) && (isMember() || ((boolean)globalint_253))) {
+		return;
+	}
+	if (((boolean)globalint_258)) {
+		globalint_258 = 1;
+		script_1782();
+	}
+	return;
+}

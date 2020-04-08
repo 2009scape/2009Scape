@@ -908,6 +908,8 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                                        if(~Class3_Sub13_Sub23_Sub1.anInt4032 < -51) {
                                           ++Class3_Sub28_Sub4.anInt3569;
                                           Class3_Sub13_Sub1.outgoingBuffer.putOpcode(93);
+
+
                                        }
 
                                        if(RenderAnimationDefinition.aBoolean402) {

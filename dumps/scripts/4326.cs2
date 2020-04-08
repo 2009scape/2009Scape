@@ -1,0 +1,6 @@
+void script_4326(int arg0,int arg1) {
+	if (setWidgetRegister(new WidgetPointer(arg1), arg0)) {
+		setWidgetSprite(6037);
+	}
+	return;
+}

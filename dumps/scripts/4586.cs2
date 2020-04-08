@@ -1,0 +1,15 @@
+void script_4586(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	ivar4 = -1;
+	if ((arg2 > 0) && (arg3 > 0)) {
+		ivar4 = cs2method_3408(105, 103, 3703, arg2);
+		if (ivar4 != -1) {
+			setWidgetText(new WidgetPointer(arg0), cs2method_3408(105, 115, ivar4, arg3));
+			setWidgetIsHidden(false, new WidgetPointer(arg1));
+			return;
+		}
+	}
+	setWidgetText(new WidgetPointer(arg0), "");
+	setWidgetIsHidden(true, new WidgetPointer(arg1));
+	return;
+}

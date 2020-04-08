@@ -1,0 +1,6 @@
+void script_2774(int arg0) {
+	playSoundEffect(2277, 1, 0);
+	setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(arg0));
+	setScriptCallOnGameloop(2775, add(getClientCycle(), 15), new WidgetPointer(-32768,3), "iI", new WidgetPointer(arg0));
+	return;
+}

@@ -1,0 +1,220 @@
+cs2func_script_1012_struct(2,2,0) script_1012(int arg0,int arg1) {
+	switch (arg0) {
+		flow_1:
+			case 0:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1012_struct(-1, 7620, "To mine rune essence, you must have started Rune Mysteries.", "");
+				case 1:
+					return newstruct cs2func_script_1012_struct(1, 556, "Air runes", "You can now craft " + "<col=000080>" + "air runes" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1012_struct(2, 558, "Mind runes", "You can now craft " + "<col=000080>" + "mind runes" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1012_struct(5, 555, "Water runes", "You can now craft " + "<col=000080>" + "water runes" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1012_struct(6, 4695, "Members: Mist runes", "Members can now craft " + "<col=000080>" + "mist runes" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1012_struct(9, 557, "Earth runes", "You can now craft " + "<col=000080>" + "earth runes" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1012_struct(10, 4696, "Members: Dust runes", "Members can now craft " + "<col=000080>" + "dust runes" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1012_struct(13, 4698, "Members: Mud runes", "Members can now craft " + "<col=000080>" + "mud runes" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1012_struct(14, 554, "Fire runes", "You can now craft " + "<col=000080>" + "fire runes" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1012_struct(15, 4697, "Members: Smoke runes", "Members can now craft " + "<col=000080>" + "smoke runes" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_1012_struct(19, 4694, "Members: Steam runes", "Members can now craft " + "<col=000080>" + "steam runes" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_1012_struct(20, 559, "Body runes", "You can now craft " + "<col=000080>" + "body runes" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_1012_struct(23, 4699, "Members: Lava runes", "Members can now craft " + "<col=000080>" + "lava runes" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_1012_struct(27, 564, "Members: Cosmic runes", "Members can now craft " + "<col=000080>" + "cosmic runes" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_1012_struct(35, 562, "Members: Chaos runes", "Members can now craft " + "<col=000080>" + "chaos runes" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_1012_struct(40, 9075, "Members: Astral runes" + "<br>" + " (after Lunar Diplomacy)", "Members now have the Runecrafting level required to craft " + "<col=000080>" + "astral runes" + "</col>" + " (after Lunar Diplomacy, or when in Daemonheim).");
+				case 16:
+					return newstruct cs2func_script_1012_struct(44, 561, "Members: Nature runes", "Members can now craft " + "<col=000080>" + "nature runes" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_1012_struct(54, 563, "Members: Law runes", "Members can now craft " + "<col=000080>" + "law runes" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_1012_struct(65, 560, "Members: Death runes" + "<br>" + " (after Mourning's Ends Part II)", "Members now have the Runecrafting level required to craft " + "<col=000080>" + "death runes" + "</col>" + " (after Mourning's Ends Part II, or when in Daemonheim).");
+				case 19:
+					return newstruct cs2func_script_1012_struct(72, 21773, "Members: Armadyl runes" + "<br>" + " (after Ritual of the Mahjarrat)", "Members can now craft " + "<col=000080>" + "Armadyl runes" + "</col>" + " (after Ritual of the Mahjarrat).");
+				case 20:
+					return newstruct cs2func_script_1012_struct(77, 565, "Members: Blood runes" + "<br>" + " (after Legacy of Seergaze)", "Members now have the Runecrafting level required to craft " + "<col=000080>" + "blood runes" + "</col>" + " (after Legacy of Seergaze, or when in Daemonheim).");
+			}
+			break;
+			case 1:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1012_struct(-1, 7620, "As your Runecrafting skill develops, you will be able to craft multiple runes from one piece of essence. You only receive experience for each piece of essence crafted, not each rune crafted.", " ");
+				case 1:
+					return newstruct cs2func_script_1012_struct(11, 556, "2 Air runes per essence", "You can now craft " + "<col=000080>" + "2 air runes" + "</col>" + " from one piece of essence.");
+				case 2:
+					return newstruct cs2func_script_1012_struct(14, 558, "2 Mind runes per essence", "You can now craft " + "<col=000080>" + "2 mind runes" + "</col>" + " from one piece of essence.");
+				case 3:
+					return newstruct cs2func_script_1012_struct(19, 555, "2 Water runes per essence", "You can now craft " + "<col=000080>" + "2 water runes" + "</col>" + " from one piece of essence.");
+				case 4:
+					return newstruct cs2func_script_1012_struct(22, 556, "3 Air runes per essence", "You can now craft " + "<col=000080>" + "3 air runes" + "</col>" + " from one piece of essence.");
+				case 5:
+					return newstruct cs2func_script_1012_struct(26, 557, "2 Earth runes per essence", "You can now craft " + "<col=000080>" + "2 earth runes" + "</col>" + " from one piece of essence.");
+				case 6:
+					return newstruct cs2func_script_1012_struct(28, 558, "3 Mind runes per essence", "You can now craft " + "<col=000080>" + "3 mind runes" + "</col>" + " from one piece of essence.");
+				case 7:
+					return newstruct cs2func_script_1012_struct(33, 556, "4 Air runes per essence", "You can now craft " + "<col=000080>" + "4 air runes" + "</col>" + " from one piece of essence.");
+				case 8:
+					return newstruct cs2func_script_1012_struct(35, 554, "2 Fire runes per essence", "You can now craft " + "<col=000080>" + "2 fire runes" + "</col>" + " from one piece of essence.");
+				case 9:
+					return newstruct cs2func_script_1012_struct(38, 555, "3 Water runes per essence", "You can now craft " + "<col=000080>" + "3 water runes" + "</col>" + " from one piece of essence.");
+				case 10:
+					return newstruct cs2func_script_1012_struct(42, 558, "4 Mind runes per essence", "You can now craft " + "<col=000080>" + "4 mind runes" + "</col>" + " from one piece of essence.");
+				case 11:
+					return newstruct cs2func_script_1012_struct(44, 556, "5 Air runes per essence", "You can now craft " + "<col=000080>" + "5 air runes" + "</col>" + " from one piece of essence.");
+				case 12:
+					return newstruct cs2func_script_1012_struct(46, 559, "2 Body runes per essence", "You can now craft " + "<col=000080>" + "2 body runes" + "</col>" + " from one piece of essence.");
+				case 13:
+					return newstruct cs2func_script_1012_struct(52, 557, "3 Earth runes per essence", "You can now craft " + "<col=000080>" + "3 earth runes" + "</col>" + " from one piece of essence.");
+				case 14:
+					return newstruct cs2func_script_1012_struct(55, 556, "6 Air runes per essence", "You can now craft " + "<col=000080>" + "6 air runes" + "</col>" + " from one piece of essence.");
+				case 15:
+					return newstruct cs2func_script_1012_struct(56, 558, "5 Mind runes per essence", "You can now craft " + "<col=000080>" + "5 mind runes" + "</col>" + " from one piece of essence.");
+				case 16:
+					return newstruct cs2func_script_1012_struct(57, 555, "4 Water runes per essence", "You can now craft " + "<col=000080>" + "4 water runes" + "</col>" + " from one piece of essence.");
+				case 17:
+					return newstruct cs2func_script_1012_struct(59, 564, "Members: 2 Cosmic runes per essence", "Members can now craft " + "<col=000080>" + "2 cosmic runes" + "</col>" + " from one piece of essence.");
+				case 18:
+					return newstruct cs2func_script_1012_struct(66, 556, "7 Air runes per essence", "You can now craft " + "<col=000080>" + "7 air runes" + "</col>" + " from one piece of essence.");
+				case 19:
+					return newstruct cs2func_script_1012_struct(70, 558, "6 Mind runes per essence", "You can now craft " + "<col=000080>" + "6 mind runes" + "</col>" + " from one piece of essence.");
+				case 20:
+					return newstruct cs2func_script_1012_struct(70, 554, "3 Fire runes per essence", "You can now craft " + "<col=000080>" + "3 fire runes" + "</col>" + " from one piece of essence.");
+				case 21:
+					return newstruct cs2func_script_1012_struct(74, 562, "Members: 2 Chaos runes per essence", "Members can now craft " + "<col=000080>" + "2 chaos runes" + "</col>" + " from one piece of essence.");
+				case 22:
+					return newstruct cs2func_script_1012_struct(76, 555, "5 Water runes per essence", "You can now craft " + "<col=000080>" + "5 water runes" + "</col>" + " from one piece of essence.");
+				case 23:
+					return newstruct cs2func_script_1012_struct(77, 556, "8 Air runes per essence", "You can now craft " + "<col=000080>" + "8 air runes" + "</col>" + " from one piece of essence.");
+				case 24:
+					return newstruct cs2func_script_1012_struct(78, 557, "4 Earth runes per essence", "You can now craft " + "<col=000080>" + "4 earth runes" + "</col>" + " from one piece of essence.");
+				case 25:
+					return newstruct cs2func_script_1012_struct(82, 9075, "Members: 2 Astral runes per essence", "Members can now craft " + "<col=000080>" + "2 astral runes" + "</col>" + " from one piece of essence.");
+				case 26:
+					return newstruct cs2func_script_1012_struct(84, 558, "7 Mind runes per essence", "You can now craft " + "<col=000080>" + "7 mind runes" + "</col>" + " from one piece of essence.");
+				case 27:
+					return newstruct cs2func_script_1012_struct(88, 556, "9 Air runes per essence", "You can now craft " + "<col=000080>" + "9 air runes" + "</col>" + " from one piece of essence.");
+				case 28:
+					return newstruct cs2func_script_1012_struct(91, 561, "Members: 2 Nature runes per essence", "Members can now craft " + "<col=000080>" + "2 nature runes" + "</col>" + " from one piece of essence.");
+				case 29:
+					return newstruct cs2func_script_1012_struct(92, 559, "3 Body runes per essence", "You can now craft " + "<col=000080>" + "3 body runes" + "</col>" + " from one piece of essence.");
+				case 30:
+					return newstruct cs2func_script_1012_struct(95, 555, "6 Water runes per essence", "You can now craft " + "<col=000080>" + "6 water runes" + "</col>" + " from one piece of essence.");
+				case 31:
+					return newstruct cs2func_script_1012_struct(98, 558, "8 Mind runes per essence", "You can now craft " + "<col=000080>" + "8 mind runes" + "</col>" + " from one piece of essence.");
+				case 32:
+					return newstruct cs2func_script_1012_struct(99, 556, "10 Air runes per essence", "You can now craft " + "<col=000080>" + "10 air runes" + "</col>" + " from one piece of essence.");
+			}
+			break;
+			case 2:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1012_struct(-1, 7620, "Pouches allow you to carry extra essence in them and they come in various sizes. As you use the pouches, they degrade and store less essence. Speak to the Dark Mage at the centre of the Abyss to restore them.", "");
+				case 1:
+					return newstruct cs2func_script_1012_struct(1, 5509, "Members: Small pouch" + "<br>" + "Holds 3 extra essence", "Members can now use " + "<col=000080>" + "small pouches" + "</col>" + " to store 3 essence.");
+				case 2:
+					return newstruct cs2func_script_1012_struct(10, 12863, "Air rune crafting gloves", "You can now wear " + "<col=000080>" + "air rune crafting gloves" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1012_struct(20, 12864, "Water rune crafting gloves", "You can now wear " + "<col=000080>" + "water rune crafting gloves" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1012_struct(25, 5510, "Members: Medium pouch" + "<br>" + "Holds 6 extra essence", "Members can now use " + "<col=000080>" + "medium pouches" + "</col>" + " to store 6 essence.");
+				case 5:
+					return newstruct cs2func_script_1012_struct(30, 12865, "Earth rune crafting gloves", "You can now wear " + "<col=000080>" + "earth rune crafting gloves" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1012_struct(35, 19671, "Magical blastbox" + "<br>" + " (with 30 Dungeoneering and 30 Magic)", "You can now use " + "<col=000080>" + "magical blastboxes" + "</col>" + ". (You also need level 30 Dungeoneering and 30 Magic.)");
+				case 7:
+					return newstruct cs2func_script_1012_struct(50, 5512, "Members: Large pouch" + "<br>" + "Holds 9 extra essence", "Members can now use " + "<col=000080>" + "large pouches" + "</col>" + " to store 9 essence.");
+				case 8:
+					return newstruct cs2func_script_1012_struct(50, 21517, "Members: Master Runecrafter hat", "Members can now wear " + "<col=000080>" + "Master Runecrafter hats" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1012_struct(50, 21516, "Members: Master Runecrafter robe", "Members can now wear " + "<col=000080>" + "Master Runecrafter robes" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_1012_struct(50, 21518, "Members: Master Runecrafter legs", "Members can now wear " + "<col=000080>" + "Master Runecrafter legs" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_1012_struct(50, 21519, "Members: Master Runecrafter boots", "Members can now wear " + "<col=000080>" + "Master Runecrafter boots" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_1012_struct(70, 19889, "Members: Celestial surgebox" + "<br>" + " (with 70 Magic and 70 Dungeoneering)", "Members can now use " + "<col=000080>" + "celestial surgeboxes" + "</col>" + ". (They also need level 70 Magic and level 70 Dungeoneering.)");
+				case 13:
+					return newstruct cs2func_script_1012_struct(75, 5514, "Members: Giant pouch" + "<br>" + "Holds 12 extra essence", "Members can now use " + "<col=000080>" + "giant pouches" + "</col>" + " to store 12 essence.");
+			}
+			break;
+			case 3:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1012_struct(91, 18778, "Members: Starved ancient effigies", "Members can now investigate " + "<col=000080>" + "starved ancient effigies" + "</col>" + " using their knowledge of Runecrafting.");
+				case 1:
+					return newstruct cs2func_script_1012_struct(93, 18779, "Members: Nourished ancient effigies", "Members can now investigate " + "<col=000080>" + "nourished ancient effigies" + "</col>" + " using their knowledge of Runecrafting.");
+				case 2:
+					return newstruct cs2func_script_1012_struct(95, 18780, "Members: Sated ancient effigies", "Members can now investigate " + "<col=000080>" + "sated ancient effigies" + "</col>" + " using their knowledge of Runecrafting.");
+				case 3:
+					return newstruct cs2func_script_1012_struct(97, 18781, "Members: Gorged ancient effigies", "Members can now investigate " + "<col=000080>" + "gorged ancient effigies" + "</col>" + " using their knowledge of Runecrafting.");
+			}
+			break;
+			case 4:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1012_struct(1, 12851, "Members: Stealing Creation - class 1 sacred clay", "Members can now craft runes from class 1 sacred clay in Stealing Creation.");
+				case 1:
+					return newstruct cs2func_script_1012_struct(20, 12851, "Members: Stealing Creation - class 2 sacred clay", "Members can now craft runes from class 2 sacred clay in Stealing Creation.");
+				case 2:
+					return newstruct cs2func_script_1012_struct(40, 12851, "Members: Stealing Creation - class 3 sacred clay", "Members can now craft runes from class 3 sacred clay in Stealing Creation.");
+				case 3:
+					return newstruct cs2func_script_1012_struct(60, 12851, "Members: Stealing Creation - class 4 sacred clay", "Members can now craft runes from class 4 sacred clay in Stealing Creation.");
+				case 4:
+					return newstruct cs2func_script_1012_struct(75, 21536, "Members: Pyramid Plunder - Engraved Sarcophagus", "Members can now open the engraved sarcophagus in Pyramid Plunder.");
+				case 5:
+					return newstruct cs2func_script_1012_struct(80, 12851, "Members: Stealing Creation - class 5 sacred clay", "Members can now craft runes from class 5 sacred clay in Stealing Creation.");
+			}
+			break;
+			case 5:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1012_struct(-1, 15707, "Dungeoneering skill tasks" + "<br>" + "As your Runecrafting level increases, you will be able to attempt higher-level runecrafting tasks within Daemonheim. You will also be more likely to succeed when attempting runecrafting tasks within Daemonheim.", "");
+				case 1:
+					return newstruct cs2func_script_1012_struct(10, 16997, "Water staff", "You can now craft " + "<col=000080>" + "water staves" + "</col>" + " within Daemonheim.");
+				case 2:
+					return newstruct cs2func_script_1012_struct(20, 17001, "Earth staff", "You can now craft " + "<col=000080>" + "earth staves" + "</col>" + " within Daemonheim.");
+				case 3:
+					return newstruct cs2func_script_1012_struct(30, 17005, "Fire staff", "You can now craft " + "<col=000080>" + "fire staves" + "</col>" + " within Daemonheim.");
+				case 4:
+					return newstruct cs2func_script_1012_struct(40, 17009, "Air staff", "You can now craft " + "<col=000080>" + "air staves" + "</col>" + " within Daemonheim.");
+				case 5:
+					return newstruct cs2func_script_1012_struct(50, 17013, "Catalytic staff", "You can now craft " + "<col=000080>" + "catalytic staves" + "</col>" + " within Daemonheim.");
+				case 6:
+					return newstruct cs2func_script_1012_struct(60, 16999, "Members: Empowered water staff", "Members can now craft " + "<col=000080>" + "empowered water staves" + "</col>" + " within Daemonheim.");
+				case 7:
+					return newstruct cs2func_script_1012_struct(70, 17003, "Members: Empowered earth staff", "Members can now craft " + "<col=000080>" + "empowered earth staves" + "</col>" + " within Daemonheim.");
+				case 8:
+					return newstruct cs2func_script_1012_struct(80, 17007, "Members: Empowered fire staff", "Members can now craft " + "<col=000080>" + "empowered fire staves" + "</col>" + " within Daemonheim.");
+				case 9:
+					return newstruct cs2func_script_1012_struct(90, 17011, "Members: Empowered air staff", "Members can now craft " + "<col=000080>" + "empowered air staves" + "</col>" + " within Daemonheim.");
+				case 10:
+					return newstruct cs2func_script_1012_struct(99, 17015, "Members: Empowered catalytic staff", "Members can now craft " + "<col=000080>" + "empowered catalytic staves" + "</col>" + " within Daemonheim.");
+			}
+			break;
+			case 6:
+			SWITCH (arg1) {
+				case 0:
+					 GOTO flow_103
+				case 1:
+					 GOTO flow_104
+			}
+			break;
+		flow_103:
+			return newstruct cs2func_script_1012_struct(50, 13625, "Runecrafting Guild", "You can now enter the prestigious " + "<col=000080>" + "Runecrafting Guild" + "</col>" + " and play the " + "<col=000080>" + "Great Orb Project" + "</col>" + ".");
+		flow_104:
+			return newstruct cs2func_script_1012_struct(99, 9765, "Skill mastery", "<col=000080>" + "Congratulations! You are now a master of " + "<col=800000>" + "Runecrafting" + "<col=000080>" + ". Members can visit " + "<col=800000>" + "Larriar" + "<col=000080>" + " in the " + "<col=800000>" + "Runecrafting Guild" + "<col=000080>" + ". She has something special that is only available to true masters of the " + "<col=800000>" + "Runecrafting" + "<col=000080>" + " skill!");
+	}
+	return newstruct cs2func_script_1012_struct(0, -1, "", "");
+}

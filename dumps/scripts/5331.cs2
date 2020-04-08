@@ -1,0 +1,9 @@
+void script_5331() {
+	if (((boolean)globalint_1606)) {
+		globalint_1606 = 0;
+	} else {
+		globalint_1606 = 1;
+	}
+	script_4725();
+	return;
+}

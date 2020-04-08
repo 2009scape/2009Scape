@@ -1,0 +1,4 @@
+void script_3286() {
+	globalint_10 = add(script_1305(), 100);
+	return;
+}

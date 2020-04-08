@@ -1,0 +1,15 @@
+int script_925(int arg0) {
+	if (((boolean)script_929(arg0))) {
+		return 0;
+	}
+	if (((boolean)script_930(arg0))) {
+		return 0;
+	}
+	if (((boolean)script_933(arg0))) {
+		return 0;
+	}
+	if (script_1432() < getItemHashmapData(arg0, 761)) {
+		return 0;
+	}
+	return 1;
+}

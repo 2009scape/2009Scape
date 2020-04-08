@@ -1,0 +1,44 @@
+int script_121(int arg0) {
+	if (getDisplayMode() >= 2) {
+		return script_1742(arg0);
+	}
+	switch (arg0) {
+		case 0:
+			return 35913866;
+		case 1:
+			return 35913867;
+		case 2:
+			return 35913868;
+		case 3:
+			return 35913869;
+		case 4:
+			return 35913870;
+		case 5:
+			return 35913871;
+		case 6:
+			return 35913872;
+		case 7:
+			return 35913873;
+		case 8:
+			return 35913835;
+		case 9:
+			return 35913836;
+		case 10:
+			return 35913837;
+		case 11:
+			return 35913838;
+		case 12:
+			return 35913839;
+		case 13:
+			return 35913840;
+		case 14:
+			return 35913841;
+		case 15:
+			return 35913842;
+		case 95:
+			return 48955400;
+		case 99:
+			return 35913910;
+	}
+	return -1;
+}

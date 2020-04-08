@@ -1,0 +1,50 @@
+void script_3014() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	flow_0:
+		ivar0 = 0;
+		ivar1 = 0;
+		ivar2 = ((int)isSiteSettingsMembers());
+		ivar3 = rndExcl(100);
+		setWidgetIsHidden(true, new WidgetPointer(908,15));
+		setWidgetIsHidden(false, new WidgetPointer(908,30));
+		setWidgetText(new WidgetPointer(908,33), "Invite your friends to the world of RuneScape and receive a 7 day 10% XP boost.");
+		setWidgetText(new WidgetPointer(908,32), "Invite your friends to the world of RuneScape and receive a 7 day 10% XP boost.");
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(908,33));
+		setWidgetPosition(8, 50, 0, 0, new WidgetPointer(908,33));
+		setWidgetSize(363, 73, 0, 0, new WidgetPointer(908,33));
+		setWidgetFont(591, new WidgetPointer(908,33));
+		setWidgetTextAlignment(1, 2, 0, new WidgetPointer(908,33));
+		setWidgetRGB(new Color(28, 28, 28), new WidgetPointer(908,32));
+		setWidgetPosition(9, 51, 0, 0, new WidgetPointer(908,32));
+		setWidgetSize(363, 73, 0, 0, new WidgetPointer(908,32));
+		setWidgetFont(591, new WidgetPointer(908,32));
+		setWidgetTextAlignment(1, 2, 0, new WidgetPointer(908,32));
+		setWidgetSprite(7670, new WidgetPointer(908,31));
+		setWidgetSprite(7662, new WidgetPointer(908,35));
+		SWITCH (getLanguage()) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_2
+			case 3:
+				 GOTO flow_3
+		}
+		setWidgetSprite(7662, new WidgetPointer(908,35));
+		GOTO	flow_4
+	flow_1:
+		setWidgetSprite(7664, new WidgetPointer(908,35));
+		GOTO	flow_4
+	flow_2:
+		setWidgetSprite(7663, new WidgetPointer(908,35));
+		GOTO	flow_4
+	flow_3:
+		setWidgetSprite(7665, new WidgetPointer(908,35));
+	flow_4:
+		setScriptCallOnMouseEntered(4924, "", new WidgetPointer(908,30));
+		setScriptCallOnMouseExit(5003, "", new WidgetPointer(908,30));
+		setScriptCallOnMousePressed(5208, "", new WidgetPointer(908,30));
+		return;
+}

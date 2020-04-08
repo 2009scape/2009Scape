@@ -1,0 +1,11 @@
+void script_516() {
+	if (globalint_52 < 300) {
+		globalint_52 = add(globalint_52, 1);
+	}
+	if ((globalint_51 > 0) && ((boolean)mod(globalint_52, 3))) {
+		globalint_51 = subtract(globalint_51, 3);
+		globalint_50 = add(globalint_50, 1);
+		setWidget3DRotation(0, globalint_50, 0, 0, 0, globalint_51, new WidgetPointer(615,0));
+	}
+	return;
+}

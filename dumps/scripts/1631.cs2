@@ -1,0 +1,21 @@
+void script_1631() {
+	if (globalint_1033 <= cs2method5407(0)) {
+		flow_1:
+			globalint_1033 = add(globalint_1033, 1);
+			SWITCH (globalint_1033) {
+				case 4:
+					 GOTO flow_2
+				case 2:
+					 GOTO flow_2
+			}
+			setScriptCallOnMinimapRelatedSetting3(-1, "", new WidgetPointer(75,0));
+			GOTO	flow_3
+		flow_2:
+			setScriptCallOnMinimapRelatedSetting3(1631, "", new WidgetPointer(75,0));
+			cameraMethod5502(0, globalint_1033, 200, 200, 1, globalint_1033);
+		flow_3:
+	} else {
+		globalint_1033 = 0;
+	}
+	return;
+}

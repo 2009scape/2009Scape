@@ -1,0 +1,28 @@
+void script_1919() {
+	if (globalint_583 > 0) {
+		setWidgetRGB(new Color(200, 170, 100), new WidgetPointer(813,99));
+	} else {
+		setWidgetRGB(new Color(51, 51, 51), new WidgetPointer(813,99));
+	}
+	if (globalint_584 > 0) {
+		setWidgetRGB(new Color(200, 170, 100), new WidgetPointer(813,101));
+	} else {
+		setWidgetRGB(new Color(51, 51, 51), new WidgetPointer(813,101));
+	}
+	if (globalint_585 > 0) {
+		setWidgetRGB(new Color(200, 170, 100), new WidgetPointer(813,103));
+	} else {
+		setWidgetRGB(new Color(51, 51, 51), new WidgetPointer(813,103));
+	}
+	if (globalint_586 > 0) {
+		setWidgetRGB(new Color(200, 170, 100), new WidgetPointer(813,105));
+	} else {
+		setWidgetRGB(new Color(51, 51, 51), new WidgetPointer(813,105));
+	}
+	if (globalint_587 > 0) {
+		setWidgetRGB(new Color(200, 170, 100), new WidgetPointer(813,107));
+	} else {
+		setWidgetRGB(new Color(51, 51, 51), new WidgetPointer(813,107));
+	}
+	return;
+}

@@ -1,0 +1,11 @@
+void script_4258(int arg0) {
+	if (setWidgetRegister(new WidgetPointer(arg0))) {
+		setWidgetPosition(0, 0, 1, 1);
+		setWidgetSize(16, 15, 0, 0);
+		setWidgetSprite(5451);
+		setScriptCallOnMouseEntered(4209, new WidgetPointer(arg0), 0, "Ii");
+		setScriptCallOnMouseExit(4209, new WidgetPointer(arg0), 1, "Ii");
+		cs2method2103(255);
+	}
+	return;
+}

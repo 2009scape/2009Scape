@@ -1,0 +1,75 @@
+int script_24(int arg0,int arg1,int arg2,int arg3,int arg4,string arg5) {
+	int ivar5;
+	createExtraChild(new WidgetPointer(499,7), 4, multiply(arg3, 3));
+	setWidgetSize(26, 32, 0, 0);
+	if (arg0 > 0) {
+		setWidgetText(intToStr(arg0));
+	} else {
+		setWidgetText(" ");
+	}
+	setWidgetPosition(0, arg4, 0, 0);
+	setWidgetTextAlignment(2, 0, 0);
+	setWidgetRGB(new Color(70, 50, 10));
+	setWidgetFont(497);
+	setWidgetUnknownBoolean(false);
+	createExtraChild(new WidgetPointer(499,7), 5, add(multiply(arg3, 3), 1));
+	setWidgetSize(36, 32, 0, 0);
+	if (((boolean)script_1566(bitconfig_3288, bitconfig_3289))) {
+		if (bitconfig_3288 == 7) {
+			setWidgetSize(30, 30, 0, 0);
+		} else {
+			if (bitconfig_3288 == 4) {
+				setWidgetSize(24, 24, 0, 0);
+				setWidgetPosition(0, arg4, 1, 0);
+			}
+		}
+		setWidgetBorderThickness(0);
+		if (arg2 != -1) {
+			setWidgetSprite(arg2);
+		} else {
+			setWidgetSprite(2287);
+		}
+	} else if (arg1 != -1) {
+		if ((arg1 == 18637) || (arg1 == 18638)) {
+			setWidgetSize(24, 24, 0, 0);
+			setWidgetPosition(0, arg4, 1, 0);
+			setWidgetBorderThickness(0);
+			if (arg1 == 18637) {
+				setWidgetSprite(3057);
+			} else {
+				setWidgetSprite(3056);
+			}
+		} else if ((bitconfig_3288 == 21) && (bitconfig_3289 != 10)) {
+			setWidgetContextMenuOption(1, "Check protection price");
+			setScriptCallOnClickContextMenu(1865, -2147483644, arg1, "io");
+			setScriptCallOnMouseEntered(1862, new WidgetPointer(-32768,3), -2147483643, "Ii");
+			setScriptCallOnMouseExit(1863, new WidgetPointer(-32768,3), -2147483643, "Ii");
+		} else {
+			if (((bitconfig_3288 == 22) && (bitconfig_3289 != 13)) && ((bitconfig_3289 != 14) && (bitconfig_3289 != 15))) {
+				setWidgetContextMenuOption(1, "Check materials");
+				setScriptCallOnClickContextMenu(1864, -2147483644, arg1, bitconfig_3289, arg3, "ioii");
+				setScriptCallOnMouseEntered(1862, new WidgetPointer(-32768,3), -2147483643, "Ii");
+				setScriptCallOnMouseExit(1863, new WidgetPointer(-32768,3), -2147483643, "Ii");
+			}
+		}
+		setWidgetBorderThickness(1);
+		setWidgetShadowColor(new Color(96, 78, 50));
+		setItemOnWidgetMethod1200(arg1, -1);
+	} else {
+		setItemOnWidgetMethod1200(7620, -1);
+	}
+	setWidgetPosition(28, arg4, 0, 0);
+	createExtraChild(new WidgetPointer(499,7), 4, add(multiply(arg3, 3), 2));
+	ivar5 = getLineCount(228, 495, arg5);
+	setWidgetSize(228, multiply(ivar5, 15), 0, 0);
+	setWidgetText(arg5);
+	setWidgetPosition(66, arg4, 0, 0);
+	setWidgetTextAlignment(0, 0, 0);
+	setWidgetRGB(new Color(70, 50, 10));
+	setWidgetFont(495);
+	setWidgetUnknownBoolean(false);
+	if (multiply(ivar5, 15) < 32) {
+		return 32;
+	}
+	return add(multiply(ivar5, 15), 5);
+}

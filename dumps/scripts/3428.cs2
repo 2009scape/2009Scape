@@ -1,0 +1,18 @@
+void script_3428() {
+	setItemOnWidgetMethod2200(18739, -1, new WidgetPointer(985,29));
+	setWidgetBorderThickness(1, new WidgetPointer(985,29));
+	setWidgetShadowColor(new Color(51, 51, 51), new WidgetPointer(985,29));
+	setItemOnWidgetMethod2200(18740, -1, new WidgetPointer(985,65));
+	setWidgetBorderThickness(1, new WidgetPointer(985,65));
+	setWidgetShadowColor(new Color(51, 51, 51), new WidgetPointer(985,65));
+	setItemOnWidgetMethod2200(18741, -1, new WidgetPointer(985,64));
+	setWidgetBorderThickness(1, new WidgetPointer(985,64));
+	setWidgetShadowColor(new Color(51, 51, 51), new WidgetPointer(985,64));
+	setItemOnWidgetMethod2200(18742, -1, new WidgetPointer(985,63));
+	setWidgetBorderThickness(1, new WidgetPointer(985,63));
+	setWidgetShadowColor(new Color(51, 51, 51), new WidgetPointer(985,63));
+	setItemOnWidgetMethod2200(18743, -1, new WidgetPointer(985,62));
+	setWidgetBorderThickness(1, new WidgetPointer(985,62));
+	setWidgetShadowColor(new Color(51, 51, 51), new WidgetPointer(985,62));
+	return;
+}

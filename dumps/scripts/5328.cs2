@@ -1,0 +1,50 @@
+void script_5328() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar0 = 0;
+	ivar1 = 1;
+	ivar2 = divide(subtract(getWidgetActualWidth(new WidgetPointer(951,24)), multiply(subtract(8, 1), ivar1)), 8);
+	ivar3 = subtract(multiply(add(ivar2, ivar1), 8), ivar1);
+	setWidgetSize(add(ivar3, 12), getWidgetActualHeight(new WidgetPointer(951,2)), 0, 0, new WidgetPointer(951,2));
+	deleteAllExtraChilds(new WidgetPointer(951,24));
+	ivar4 = 0;
+	while (ivar0 < 8) {
+		createExtraChild(new WidgetPointer(951,24), 5, multiply(ivar0, 6));
+		setWidgetSprite(5610);
+		setWidgetSize(6, 0, 0, 1);
+		setWidgetPosition(ivar4, 0, 0, 0);
+		setWidgetRGB(new Color(83, 83, 83));
+		createExtraChild(new WidgetPointer(951,24), 5, add(multiply(ivar0, 6), 1));
+		setWidgetSprite(5611);
+		setWidgetSize(subtract(ivar2, 12), 0, 0, 1);
+		setWidgetPosition(add(ivar4, 6), 0, 0, 0);
+		setWidgetHidden(0);
+		setWidgetRGB(new Color(83, 83, 83));
+		createExtraChild(new WidgetPointer(951,24), 5, add(multiply(ivar0, 6), 2));
+		setWidgetSprite(5612);
+		setWidgetSize(6, 0, 0, 1);
+		setWidgetPosition(subtract(add(ivar4, ivar2), 6), 0, 0, 0);
+		setWidgetRGB(new Color(83, 83, 83));
+		createExtraChild(new WidgetPointer(951,24), 5, add(multiply(ivar0, 6), 3));
+		setWidgetSprite(5610);
+		setWidgetSize(6, 0, 0, 1);
+		setWidgetPosition(ivar4, 0, 0, 0);
+		createExtraChild(new WidgetPointer(951,24), 5, add(multiply(ivar0, 6), 4));
+		setWidgetSprite(5611);
+		setWidgetSize(subtract(ivar2, 12), 0, 0, 1);
+		setWidgetPosition(add(ivar4, 6), 0, 0, 0);
+		setWidgetHidden(0);
+		createExtraChild(new WidgetPointer(951,24), 5, add(multiply(ivar0, 6), 5));
+		setWidgetSprite(5612);
+		setWidgetSize(6, 0, 0, 1);
+		setWidgetPosition(subtract(add(ivar4, ivar2), 6), 0, 0, 0);
+		ivar4 = add(add(ivar4, ivar1), ivar2);
+		ivar0 = add(ivar0, 1);
+	}
+	globalint_1657 = -1;
+	globalint_1658 = 0;
+	return;
+}

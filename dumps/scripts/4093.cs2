@@ -1,0 +1,34 @@
+void script_4093(int arg0,int arg1) {
+	string svar0;
+	deleteAllExtraChilds(new WidgetPointer(arg1));
+	createExtraChild(new WidgetPointer(arg1), 5, getExtraChildGap(new WidgetPointer(arg1)));
+	setWidgetSize(8, 23, 0, 0);
+	setWidgetPosition(0, 0, 0, 0);
+	setWidgetSprite(4514);
+	createExtraChild(new WidgetPointer(arg1), 5, getExtraChildGap(new WidgetPointer(arg1)));
+	setWidgetSize(8, 23, 0, 0);
+	setWidgetPosition(0, 0, 2, 0);
+	setWidgetSprite(4516);
+	createExtraChild(new WidgetPointer(arg1), 5, getExtraChildGap(new WidgetPointer(arg1)));
+	setWidgetSize(16, 23, 1, 0);
+	setWidgetPosition(0, 0, 1, 0);
+	cs2method1107(1);
+	setWidgetSprite(4515);
+	createExtraChild(new WidgetPointer(arg1), 4, getExtraChildGap(new WidgetPointer(arg1)));
+	setWidgetSize(0, 23, 1, 0);
+	setWidgetPosition(0, 0, 1, 0);
+	setWidgetFont(494);
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetRGB(new Color(0, 0, 0));
+	setWidgetUnknownBoolean(false);
+	svar0 = "Task List";
+	setWidgetText(svar0);
+	setWidgetSize(add(getTextWidth(494, svar0), 10), 32, 0, 0, new WidgetPointer(arg1));
+	createExtraChild(new WidgetPointer(arg1), 5, getExtraChildGap(new WidgetPointer(arg1)));
+	setWidgetSize(21, 11, 0, 0);
+	setWidgetPosition(0, 0, 1, 2);
+	setWidgetSprite(4517);
+	script_4096(arg1);
+	script_4095(arg0, arg1, script_3365(48889986), script_3366(48889986), ((int)isWidgetHidden(new WidgetPointer(746,86))));
+	return;
+}

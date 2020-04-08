@@ -1,0 +1,49 @@
+void script_1121() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar0 = ((int)cs2method_3408(105, 73, 729, bitconfig_276));
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = -1;
+	ivar4 = -1;
+	switch (bitconfig_357) {
+		case 0:
+			ivar3 = 12583005;
+			ivar4 = 12583004;
+			break;
+		case 1:
+			ivar3 = 12648498;
+			ivar4 = 12648497;
+			break;
+		case 3:
+			ivar3 = 62259269;
+			ivar4 = 62259268;
+			break;
+		default:
+			return;
+	}
+	if (((boolean)bitconfig_276)) {
+		if (bitconfig_6521 == 3) {
+			script_948();
+		} else {
+			if (bitconfig_6521 == 28) {
+				script_1331();
+			}
+		}
+	}
+	if ((ivar0 != -1) && ((boolean)bitconfig_275)) {
+		ivar1 = subtract(getWidgetActualX(new WidgetPointer(ivar0)), 2);
+		ivar2 = subtract(getWidgetActualY(new WidgetPointer(ivar0)), 2);
+		setWidgetPosition(ivar1, ivar2, 0, 0, new WidgetPointer(ivar3));
+		setWidgetPosition(ivar1, ivar2, 0, 0, new WidgetPointer(ivar4));
+		setWidgetIsHidden(false, new WidgetPointer(ivar3));
+		setWidgetIsHidden(false, new WidgetPointer(ivar4));
+		return;
+	}
+	setWidgetIsHidden(true, new WidgetPointer(ivar3));
+	setWidgetIsHidden(true, new WidgetPointer(ivar4));
+	return;
+}

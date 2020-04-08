@@ -1,0 +1,13 @@
+void script_4066() {
+	setWidgetSprite(4459, new WidgetPointer(1058,19));
+	setWidgetSprite(4460, new WidgetPointer(1058,17));
+	setWidgetSprite(4461, new WidgetPointer(1058,15));
+	setWidgetSprite(4462, new WidgetPointer(1058,13));
+	setWidgetSprite(4463, new WidgetPointer(1058,11));
+	setWidgetPosition(-160, 18, 1, 0, new WidgetPointer(1058,22));
+	setWidgetPosition(-80, 18, 1, 0, new WidgetPointer(1058,23));
+	setWidgetPosition(0, 18, 1, 0, new WidgetPointer(1058,24));
+	setWidgetPosition(80, 18, 1, 0, new WidgetPointer(1058,26));
+	setWidgetPosition(160, 18, 1, 0, new WidgetPointer(1058,25));
+	return;
+}

@@ -1,0 +1,18 @@
+void script_2423(int arg0) {
+	int ivar1;
+	ivar1 = -1;
+	if (((boolean)globalint_811)) {
+		ivar1 = 1358;
+	} else if (((boolean)globalint_811)) {
+		ivar1 = 1359;
+	} else if (globalint_811 == 2) {
+		ivar1 = 1360;
+	} else {
+		if (globalint_811 == 3) {
+			ivar1 = 1361;
+		}
+	}
+	setWidgetAnimation(-1, new WidgetPointer(arg0));
+	setWidgetAnimation(ivar1, new WidgetPointer(arg0));
+	return;
+}

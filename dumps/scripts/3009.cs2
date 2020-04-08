@@ -1,0 +1,14 @@
+void script_3009(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6) {
+	setWidgetSize(13, 88, 0, 0, new WidgetPointer(arg1));
+	setWidgetSprite(4681, new WidgetPointer(arg1));
+	setWidgetSize(26, 88, 1, 0, new WidgetPointer(arg2));
+	setWidgetSprite(4682, new WidgetPointer(arg2));
+	setWidgetSize(13, 88, 0, 0, new WidgetPointer(arg3));
+	setWidgetSprite(4684, new WidgetPointer(arg3));
+	setWidgetSprite(2673, new WidgetPointer(arg5));
+	setWidgetSize(13, 88, 0, 0, new WidgetPointer(arg6));
+	setWidgetSprite(4683, new WidgetPointer(arg6));
+	setScriptCallOnMouseEntered(-1, "", new WidgetPointer(arg0));
+	setScriptCallOnMouseExit(-1, "", new WidgetPointer(arg0));
+	return;
+}

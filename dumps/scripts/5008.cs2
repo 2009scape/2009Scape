@@ -1,0 +1,25 @@
+int script_5008() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = -1;
+	ivar1 = -1;
+	ivar2 = 0;
+	if (cs2method3701()) {
+		ivar0 = cs2method3717(cs2method5020());
+		if (ivar0 < 0) {
+			return 0;
+		}
+		ivar1 = cs2method3711(ivar0);
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:106
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+				at tests.Main.main(Main.java:45)
+			
+		 */
+	}
+	return 0;
+}

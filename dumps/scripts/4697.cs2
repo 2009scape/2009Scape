@@ -1,0 +1,110 @@
+void script_4697(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	string svar4;
+	string svar5;
+	ivar1 = getClientCycle();
+	svar0 = "";
+	svar1 = "";
+	svar2 = "";
+	svar3 = "";
+	svar4 = "";
+	svar5 = "";
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 1;
+	if ((ivar1 >= add(arg0, 200)) || ((boolean)arg0)) {
+		arg0 = ivar1;
+		if (globalint_1540 < 1) {
+			svar0 = "Destroyed";
+		} else if (globalint_1540 < divide(5, 2)) {
+			svar0 = "Under attack";
+		} else if (globalint_1540 < 5) {
+			svar0 = "Unlit ammo";
+		} else {
+			svar0 = "Fine";
+		}
+		if (globalint_1541 < 1) {
+			svar1 = "Empty";
+		} else if (globalint_1541 < divide(10, 2)) {
+			svar1 = "Low";
+		} else if (globalint_1541 < 10) {
+			svar1 = "Almost full";
+		} else {
+			svar1 = "Full";
+		}
+		if (((boolean)globalint_1542)) {
+			svar2 = "1 broken";
+		} else if (globalint_1542 > 0) {
+			svar2 = intToStr(globalint_1542) + " broken";
+		} else {
+			svar2 = "Repaired";
+		}
+		if (((boolean)globalint_1543)) {
+			svar3 = intToStr(ivar5) + " broken";
+		} else if (globalint_1543 > 0) {
+			svar3 = intToStr(globalint_1543) + " broken";
+		} else {
+			svar3 = "Repaired";
+		}
+		ivar2 = divide(globalint_1545, 2);
+		setWidgetSize(divide(multiply(ivar2, 16384), 100), getWidgetActualHeight(new WidgetPointer(500,12)), 2, 0, new WidgetPointer(500,12));
+		if (ivar2 < 97) {
+			setWidgetIsHidden(true, new WidgetPointer(500,13));
+		}
+		svar4 = intToStr(multiply(globalint_1544, 10));
+		setWidgetText(new WidgetPointer(500,29), intToStr(globalint_1546) + " min");
+		if (globalint_1547 != 0) {
+			setWidgetIsHidden(false, new WidgetPointer(500,10));
+			setWidgetSize(getWidgetActualWidth(new WidgetPointer(500,2)), 253, 0, 0, new WidgetPointer(500,2));
+			switch (globalint_1547) {
+				case 1:
+					svar5 = "Clobbering Time!";
+					break;
+				case 2:
+					svar5 = "Slow-mo";
+					break;
+				case 3:
+					svar5 = "No Well";
+					break;
+				case 4:
+					svar5 = "Oil Spill";
+					break;
+				case 5:
+					svar5 = "Fire in the Hole!";
+					break;
+				case 6:
+					svar5 = "Armoured Trolls";
+			}
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(500,10));
+			setWidgetSize(getWidgetActualWidth(new WidgetPointer(500,2)), 225, 0, 0, new WidgetPointer(500,2));
+		}
+		ivar3 = script_4699(32768008, 32768021, 32768022, "Ballista", svar0);
+		ivar4 = script_4699(32768005, 32768019, 32768020, "Oil", svar1);
+		ivar3 = max(ivar3, ivar4);
+		ivar4 = script_4699(32768006, 32768039, 32768040, "Barricades", svar2);
+		ivar3 = max(ivar3, ivar4);
+		ivar4 = script_4699(32768007, 32768017, 32768018, "Walls", svar3);
+		ivar3 = max(ivar3, ivar4);
+		ivar4 = script_4699(32768009, 32768041, 32768042, "Trolls", svar4);
+		ivar3 = max(ivar3, ivar4);
+		if (globalint_1547 != 0) {
+			ivar4 = script_4699(32768010, 32768015, 32768016, "Troll Attack", svar5);
+			ivar3 = max(ivar3, ivar4);
+		}
+		if (add(ivar3, 15) > getWidgetActualWidth(new WidgetPointer(500,2))) {
+			setWidgetSize(add(ivar3, 15), getWidgetActualHeight(new WidgetPointer(500,2)), 0, 0, new WidgetPointer(500,2));
+		}
+	}
+	setScriptCallOnGameloop(4697, arg0, "i", new WidgetPointer(500,8));
+	return;
+}

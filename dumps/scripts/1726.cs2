@@ -1,0 +1,13 @@
+void script_1726(int arg0) {
+	int ivar1;
+	ivar1 = 0;
+	if (mod(getClientCycle(), 40) > 20) {
+		cs2method2103(0, new WidgetPointer(arg0));
+		if (mod(getClientCycle(), 40) == 21) {
+			playSoundEffect(5009, 1, 0);
+		}
+	} else {
+		cs2method2103(255, new WidgetPointer(arg0));
+	}
+	return;
+}

@@ -1,0 +1,10 @@
+void script_2023(int arg0,int arg1) {
+	if (arg0 != 1) {
+		return;
+	}
+	bitconfig_8095 = max(min(add(bitconfig_8095, arg1), bitconfig_8094), 0);
+	script_2047();
+	setScriptCallOnGameloop(2024, add(getClientCycle(), 15), "i", new WidgetPointer(905,28));
+	setWidgetIsHidden(false, new WidgetPointer(905,28));
+	return;
+}

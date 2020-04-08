@@ -1,0 +1,15 @@
+void script_1677() {
+	setScriptCallOnGameloop(1688, "", new WidgetPointer(85,0));
+	globalint_1046 = 0;
+	globalint_1045 = 0;
+	globalint_1051 = 0;
+	globalint_1048 = 0;
+	globalint_1049 = 255;
+	globalint_1044 = 0;
+	cs2method5405(0, 0);
+	cs2method5405(1, 0);
+	script_1678();
+	cameraMethod5502(0, 0, 200, 200, 1, 0);
+	setScriptCallOnMinimapRelatedSetting3(1679, "", new WidgetPointer(85,0));
+	return;
+}

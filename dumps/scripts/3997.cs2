@@ -1,0 +1,11 @@
+void script_3997() {
+	int ivar0;
+	setWidgetText(new WidgetPointer(917,112), intToStr(globalint_1423));
+	setWidgetText(new WidgetPointer(917,110), intToStr(globalint_1424));
+	setWidgetText(new WidgetPointer(917,150), intToStr(428));
+	setWidgetText(new WidgetPointer(917,148), intToStr(bitconfig_8601));
+	setWidgetText(new WidgetPointer(917,113), "Progress:");
+	ivar0 = divide(multiply(globalint_1424, subtract(getWidgetActualWidth(new WidgetPointer(917,105)), 4)), max(globalint_1423, 1));
+	setWidgetSize(ivar0, 16, 0, 0, new WidgetPointer(917,109));
+	return;
+}

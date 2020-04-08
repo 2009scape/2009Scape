@@ -1,0 +1,3 @@
+int script_1145(int arg0,int arg1,int arg2) {
+	return addToCoordinate(arg2, arg0, 2, arg1);
+}

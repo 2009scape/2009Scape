@@ -1,0 +1,186 @@
+void script_1062(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	string svar0;
+	ivar5 = ((int)cs2method_3408(105, 73, 1550, arg1));
+	ivar6 = ((int)cs2method_3408(105, 73, 1551, arg1));
+	deleteAllExtraChilds(new WidgetPointer(ivar5));
+	deleteAllExtraChilds(new WidgetPointer(ivar6));
+	if (ivar5 == -1) {
+		return;
+	}
+	createExtraChild(new WidgetPointer(arg0), 4, arg1);
+	setWidgetRGB(new Color(0, 0, 0));
+	setWidgetFont(495);
+	setWidgetTextAlignment(1, 1, 0);
+	svar0 = cs2method5050(arg2);
+	cs2method1305(svar0);
+	setScriptCallOnClickContextMenu(1067, new WidgetPointer(arg0), arg1, "Ii");
+	setWidgetContextMenuOption(1, "Return to: ");
+	if (arg1 > 0) {
+		svar0 = " " + "<col=0000ff>" + svar0 + " " + "<img=2>";
+	} else if (((boolean)globalint_126)) {
+		svar0 = " To " + globalstring_27 + ": " + "<col=800000>" + svar0 + " " + "<img=2>";
+	} else if (globalint_126 == 2) {
+		svar0 = " [" + "<col=0000ff>" + cs2method3611() + "<col=000000>" + "]: " + "<col=800000>" + svar0 + " " + "<img=2>";
+	} else if (globalint_126 == 8) {
+		if (cs2method3751()) {
+			svar0 = " [" + "<col=0000ff>" + cs2method3752() + "<col=000000>" + "]: " + "<col=800000>" + svar0 + " " + "<img=2>";
+		}
+	} else if (globalint_126 == 10) {
+		if (cs2method3750()) {
+			svar0 = " [" + "<col=0000ff>" + cs2method3752() + "<col=000000>" + "]: " + "<col=800000>" + svar0 + " " + "<img=2>";
+		}
+	} else {
+		svar0 = " " + "<col=0000ff>" + svar0 + " " + "<img=2>";
+	}
+	setWidgetText(svar0);
+	setWidgetUnknownBoolean(false);
+	setWidgetSize(add(getMaxLineWidth(getWidgetActualWidth(new WidgetPointer(arg0)), 495, svar0), 4), getWidgetActualHeight(new WidgetPointer(arg0)), 0, 0);
+	setScriptCallOnMouseEntered(1080, new WidgetPointer(137,2), arg1, "Ii");
+	setScriptCallOnMouseExit(1081, new WidgetPointer(137,2), arg1, "Ii");
+	createExtraChild(new WidgetPointer(137,2), 3, arg1);
+	setWidgetSize(getWidgetActualWidth(), getWidgetActualHeight(), 0, 0);
+	setWidgetRGB(new Color(87, 126, 69));
+	setWidgetFilled(1);
+	setWidgetHidden(1);
+	setWidgetIsHidden(false, new WidgetPointer(ivar5));
+	ivar7 = cs2method5051(arg2);
+	ivar8 = cs2method5053(arg2);
+	ivar9 = 0;
+	ivar10 = 0;
+	ivar11 = 0;
+	ivar12 = 0;
+	ivar13 = -1;
+	ivar14 = -1;
+	ivar15 = -1;
+	ivar16 = 0;
+	while (ivar9 < ivar7) {
+		createExtraChild(new WidgetPointer(ivar5), 4, ivar10);
+		setWidgetRGB(new Color(0, 0, 0));
+		setWidgetFont(495);
+		setWidgetTextAlignment(0, 1, 0);
+		ivar13 = cs2method5052(arg2, ivar9);
+		svar0 = cs2method5050(ivar13);
+		setScriptCallOnClickContextMenu(1060, new WidgetPointer(ivar5), new WidgetPointer(ivar6), ivar10, new WidgetPointer(arg0), add(arg1, 1), ivar13, "IIiIik");
+		cs2method1305(svar0);
+		setWidgetContextMenuOption(1, "Select: ");
+		setScriptCallOnMouseEntered(1082, arg1, new WidgetPointer(ivar6), ivar10, "iIi");
+		setScriptCallOnMouseExit(1083, arg1, new WidgetPointer(ivar6), ivar10, "iIi");
+		ivar15 = upper(((char)cs2method5062(arg2, ivar9)));
+		if (isAlphaNumeric(((char)ivar15))) {
+			svar0 = "<col=555555>" + concatChar(((char)ivar15), "") + ". " + "<col=000000>" + svar0 + " " + "<img=2>";
+		} else {
+			svar0 = svar0 + " " + "<img=2>";
+		}
+		setWidgetText(svar0);
+		setWidgetUnknownBoolean(false);
+		ivar11 = getMaxLineWidth(getWidgetActualWidth(new WidgetPointer(arg0)), 495, svar0);
+		if (ivar11 > ivar12) {
+			ivar12 = ivar11;
+		}
+		ivar9 = add(ivar9, 1);
+		ivar10 = add(ivar10, 1);
+	}
+	ivar9 = 0;
+	while (ivar9 < ivar8) {
+		createExtraChild(new WidgetPointer(ivar5), 4, ivar10);
+		setWidgetRGB(new Color(0, 0, 0));
+		setWidgetFont(495);
+		setWidgetTextAlignment(0, 1, 0);
+		ivar14 = cs2method5054(arg2, ivar9);
+		svar0 = cs2method5055(ivar14);
+		setScriptCallOnClickContextMenu(1070, new WidgetPointer(arg0), ivar14, arg1, "Iei");
+		cs2method1305(svar0);
+		setWidgetContextMenuOption(1, "Send: ");
+		setScriptCallOnMouseEntered(1082, arg1, new WidgetPointer(ivar6), ivar10, "iIi");
+		setScriptCallOnMouseExit(1083, arg1, new WidgetPointer(ivar6), ivar10, "iIi");
+		if (ivar9 < 10) {
+			svar0 = "<col=555555>" + intToStr(mod(add(ivar9, 1), 10)) + ". " + "<col=000000>" + svar0;
+		}
+		setWidgetText(svar0);
+		setWidgetUnknownBoolean(false);
+		ivar11 = getMaxLineWidth(getWidgetActualWidth(new WidgetPointer(arg0)), 495, svar0);
+		if (ivar11 > ivar12) {
+			ivar12 = ivar11;
+		}
+		ivar9 = add(ivar9, 1);
+		ivar10 = add(ivar10, 1);
+	}
+	if (arg3 != -1) {
+		createExtraChild(new WidgetPointer(ivar5), 4, ivar10);
+		setWidgetRGB(new Color(0, 0, 0));
+		setWidgetFont(495);
+		setWidgetTextAlignment(0, 1, 0);
+		svar0 = cs2method5050(arg3);
+		setScriptCallOnClickContextMenu(1060, new WidgetPointer(ivar5), new WidgetPointer(ivar6), ivar10, new WidgetPointer(arg0), add(arg1, 1), arg3, "IIiIik");
+		cs2method1305(svar0);
+		setWidgetContextMenuOption(1, "Select: ");
+		setScriptCallOnMouseEntered(1082, arg1, new WidgetPointer(ivar6), ivar10, "iIi");
+		setScriptCallOnMouseExit(1083, arg1, new WidgetPointer(ivar6), ivar10, "iIi");
+		svar0 = "<col=555555>" + "X. " + "<col=000000>" + svar0 + " " + "<img=2>";
+		setWidgetText(svar0);
+		setWidgetUnknownBoolean(false);
+		ivar11 = getMaxLineWidth(getWidgetActualWidth(new WidgetPointer(arg0)), 495, svar0);
+		if (ivar11 > ivar12) {
+			ivar12 = ivar11;
+		}
+		ivar10 = add(ivar10, 1);
+	}
+	if (((boolean)arg4)) {
+		createExtraChild(new WidgetPointer(ivar5), 4, ivar10);
+		setWidgetRGB(new Color(0, 0, 0));
+		setWidgetFont(495);
+		setWidgetTextAlignment(0, 1, 0);
+		setScriptCallOnClickContextMenu(1877, new WidgetPointer(ivar5), new WidgetPointer(ivar6), ivar10, arg1, "IIii");
+		cs2method1305("Search phrases");
+		setWidgetContextMenuOption(1, "Select: ");
+		setScriptCallOnMouseEntered(1082, arg1, new WidgetPointer(ivar6), ivar10, "iIi");
+		setScriptCallOnMouseExit(1083, arg1, new WidgetPointer(ivar6), ivar10, "iIi");
+		setWidgetText("<col=555555>" + "Enter. " + "<col=000000>" + "Search " + "<img=2>");
+		setWidgetUnknownBoolean(false);
+		ivar11 = getMaxLineWidth(getWidgetActualWidth(new WidgetPointer(arg0)), 495, svar0);
+		if (ivar11 > ivar12) {
+			ivar12 = ivar11;
+		}
+		ivar10 = add(ivar10, 1);
+	}
+	setScriptCallOnKeyPress(1059, -2147483640, false, new WidgetPointer(arg0), arg1, arg2, -1, ivar10, "izIikei", new WidgetPointer(ivar5));
+	ivar9 = 0;
+	ivar17 = 0;
+	while (setWidgetRegister(new WidgetPointer(ivar5), ivar9)) {
+		if (add(multiply(ivar16, 14), 14) > getWidgetActualHeight(new WidgetPointer(ivar5))) {
+			ivar17 = add(add(ivar17, ivar12), 4);
+			ivar16 = 0;
+		}
+		setWidgetSize(ivar12, 14, 0, 0);
+		setWidgetPosition(add(ivar17, 2), multiply(ivar16, 14), 0, 0);
+		createExtraChild(new WidgetPointer(ivar6), 3, ivar9);
+		setWidgetSize(add(getWidgetActualWidth(), 4), getWidgetActualHeight(), 0, 0);
+		setWidgetPosition(subtract(getWidgetActualX(), 2), getWidgetActualY(), 0, 0);
+		setWidgetRGB(new Color(87, 126, 69));
+		setWidgetFilled(1);
+		setWidgetHidden(1);
+		ivar9 = add(ivar9, 1);
+		ivar16 = add(ivar16, 1);
+	}
+	ivar17 = add(add(ivar17, ivar12), 4);
+	ivar18 = getWidgetParentId(new WidgetPointer(ivar5));
+	setWidgetSize(ivar17, getWidgetActualHeight(new WidgetPointer(ivar18)), 0, 0, new WidgetPointer(ivar5));
+	setWidgetSize(ivar17, getWidgetActualHeight(new WidgetPointer(ivar18)), 0, 0, new WidgetPointer(ivar6));
+	setWidgetPosition(add(getWidgetActualX(new WidgetPointer(ivar5)), ivar17), 0, 0, 0, cs2method_3408(105, 73, 1550, add(arg1, 1)));
+	script_1068(arg0, arg1);
+	return;
+}

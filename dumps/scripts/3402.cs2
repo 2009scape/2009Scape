@@ -1,0 +1,11 @@
+void script_3402(int arg0,int arg1) {
+	if (((boolean)arg1)) {
+		if (arg0 < 0) {
+			arg0 = 0;
+		} else {
+			arg0 = subtract(arg0, mod(arg0, 15));
+		}
+	}
+	script_3403(arg0, arg1);
+	return;
+}

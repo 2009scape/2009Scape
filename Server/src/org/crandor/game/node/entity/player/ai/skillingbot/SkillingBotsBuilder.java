@@ -176,7 +176,8 @@ public final class SkillingBotsBuilder extends AIPlayer {
 		bot.getSkills().setLevel(Skills.FISHING, 25);
 		bot.setInteractionRange(25);
 	}
-	
+
+	//These bots are disabled because they somehow break pets
 	public static void immersiveSpawnsSkillingBots()
 	{
 		// Varrock Mine

@@ -1,0 +1,6 @@
+void script_5162(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	globalint_1592 = arg3;
+	globalint_1593 = arg4;
+	script_5164(arg0, arg1, arg2, arg3, arg4);
+	return;
+}

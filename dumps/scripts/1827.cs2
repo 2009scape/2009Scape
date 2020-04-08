@@ -1,0 +1,18 @@
+void script_1827(int arg0) {
+	if (((boolean)script_1820(arg0))) {
+		return;
+	}
+	if (isMember()) {
+		if (((boolean)globalint_252)) {
+			globalint_252 = 2;
+		} else if (globalint_252 == 2) {
+			globalint_252 = 3;
+		} else {
+			globalint_252 = 1;
+		}
+	} else {
+		globalint_252 = mod(add(globalint_252, 1), 4);
+	}
+	script_1775();
+	return;
+}

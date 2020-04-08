@@ -1,0 +1,13 @@
+void script_550() {
+	int ivar0;
+	if (((boolean)bitconfig_4109)) {
+		playSoundEffect(4020, 1, 0);
+		return;
+	}
+	bitconfig_4109 = subtract(bitconfig_4109, 1);
+	ivar0 = multiply(subtract(15, bitconfig_4109), 6);
+	setWidgetPosition(0, ivar0, 0, 0, new WidgetPointer(624,15));
+	setWidgetText(new WidgetPointer(624,70), intToStr(bitconfig_4109));
+	playSoundEffect(4026, 1, 0);
+	return;
+}

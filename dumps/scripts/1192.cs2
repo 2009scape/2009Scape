@@ -1,0 +1,7 @@
+void script_1192(int arg0,int arg1) {
+	setWidgetSize(add(getMaxLineWidth(512, 495, getWidgetText(new WidgetPointer(arg1))), 34), getWidgetActualHeight(new WidgetPointer(arg0)), 0, 0, new WidgetPointer(arg0));
+	setScriptCallOnGlobalConfigChange(1193, 1, 1002, 1, "1Y", new WidgetPointer(arg0));
+	setScriptCallOnGameloop(1193, 0, "1", new WidgetPointer(arg0));
+	script_1194();
+	return;
+}

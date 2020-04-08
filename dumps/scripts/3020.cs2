@@ -1,0 +1,100 @@
+void script_3020(int arg0,string arg1) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	string svar1;
+	string svar2;
+	string svar3;
+	string svar4;
+	ivar1 = 0;
+	svar1 = "";
+	svar2 = "";
+	ivar2 = -1;
+	svar3 = "";
+	svar4 = "";
+	ivar3 = -1;
+	if (strLength(globalstring_277) > 0) {
+		switch (arg0) {
+			case 0:
+				if ((strLength(globalstring_277) > 0) && (strLength(arg1) > 0)) {
+					if (cs2method5005() == 2) {
+						script_3047(1);
+					}
+					cs2method5009(strRemoveEntities(arg1), globalstring_277);
+				}
+				break;
+			case 1:
+				if (getFriendlistSize() < 0) {
+					messageType0("Unable to update Friends List - system busy.");
+				} else {
+					if (strLength(globalstring_277) > 0) {
+						cs2method3605(globalstring_277);
+					}
+				}
+				break;
+			case 2:
+				if (getIgnoreCount() < 0) {
+					messageType0("Unable to update Ignore List - system busy.");
+				} else {
+					if (strLength(globalstring_277) > 0) {
+						cs2method3607(globalstring_277);
+					}
+				}
+				break;
+			case 3:
+				if (getFriendlistSize() < 0) {
+					messageType0("Unable to update Friends List - system busy.");
+				} else {
+					if (strLength(globalstring_277) > 0) {
+						cs2method3606(globalstring_277);
+					}
+				}
+				break;
+			case 4:
+				if (getIgnoreCount() < 0) {
+					messageType0("Unable to update Ignore List - system busy.");
+				} else {
+					if (strLength(globalstring_277) > 0) {
+						cs2method3608(globalstring_277);
+					}
+				}
+				break;
+			case 5:
+				if ((cs2method3612() <= 0) && (strLength(globalstring_277) > 0)) {
+					sendUnknownFriendPacketMethod3619(globalstring_277);
+				}
+				break;
+			case 6:
+				globalint_1094 = 0;
+				cs2method5400(0, "bugtracker_v4", "index.html");
+				break;
+			case 7:
+				if (strLength(globalstring_277) > 0) {
+					script_4465(globalstring_277);
+				}
+				break;
+			case 9:
+				if ((cs2method3612() > 0) && (strLength(globalstring_277) > 0)) {
+					script_1633(globalstring_277);
+				}
+				break;
+			case 10:
+				cancelLogin();
+				globalint_1100 = -1;
+				break;
+			case 12:
+				script_3017();
+				cancelLogin();
+				globalint_1100 = -1;
+				script_4701(1, globalint_1553, globalint_1554, globalstring_128);
+				return;
+		}
+	}
+	globalint_1650 = 0;
+	if (((boolean)ivar1)) {
+		script_3015(ivar2, svar1, svar2, svar3, svar4);
+	} else {
+		script_3017();
+	}
+	return;
+}

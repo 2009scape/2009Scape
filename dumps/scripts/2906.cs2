@@ -1,0 +1,32 @@
+void script_2906(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	ivar3 = getWidgetParentId(new WidgetPointer(arg0));
+	ivar4 = 0;
+	if (arg1 == 10010) {
+		ivar4 = add(getItemAmtInContainer(94, 11259), getItemAmtInContainer(93, 11259));
+		if (ivar4 > 0) {
+			arg1 = 11259;
+		}
+	}
+	switch (arg1) {
+		case 11259:
+		case 10010:
+			if (((boolean)ivar4)) {
+				ivar4 = add(getItemAmtInContainer(93, 10010), getItemAmtInContainer(94, 10010));
+			}
+			break;
+		default:
+			ivar4 = getItemAmtInContainer(93, arg1);
+	}
+	setWidgetText(new WidgetPointer(arg2), getItemName(arg1));
+	if (ivar4 > 0) {
+		setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(arg2));
+		setItemOnWidgetMethod2200(arg1, ivar4, new WidgetPointer(arg0));
+	} else {
+		setWidgetRGB(new Color(204, 0, 0), new WidgetPointer(arg2));
+		setItemOnWidgetMethod2200(arg1, -1, new WidgetPointer(arg0));
+	}
+	setWidgetBorderThickness(1, new WidgetPointer(arg0));
+	return;
+}

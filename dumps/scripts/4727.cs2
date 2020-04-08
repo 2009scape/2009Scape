@@ -1,0 +1,353 @@
+cs2func_script_4727_struct(5,0,0) script_4727(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9) {
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	string svar0;
+	string svar1;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	int stack_dump3;
+	int stack_dump4;
+	int stack_dump5;
+	int stack_dump6;
+	int stack_dump7;
+	int stack_dump8;
+	int stack_dump9;
+	int stack_dump10;
+	cs2func_script_5351_struct(5,0,0) structdump_11;
+	flow_0:
+		ivar10 = -1;
+		ivar11 = -1;
+		ivar12 = 0;
+		ivar13 = -1;
+		ivar14 = 0;
+		ivar15 = 0;
+		ivar16 = 0;
+		ivar17 = 0;
+		while (ivar16 < 5) {
+			switch (ivar16) {
+				case 0:
+					ivar10 = 5182;
+					break;
+				case 1:
+					ivar10 = 3875;
+					break;
+				case 2:
+					if (IsFemale()) {
+						ivar10 = 5189;
+					} else {
+						ivar10 = 5188;
+					}
+					break;
+				case 3:
+					ivar10 = 5184;
+					break;
+				case 4:
+					ivar10 = 5183;
+			}
+			ivar14 = 0;
+			while (ivar14 < getCommonDefinitionSize(ivar10)) {
+				switch (ivar16) {
+					case 0:
+						if (isBitFlagged(standart_config_2391, ivar14)) {
+							ivar15 = add(ivar15, 1);
+						}
+						break;
+					case 1:
+						if (isBitFlagged(standart_config_2392, ivar14)) {
+							ivar15 = add(ivar15, 1);
+						}
+						break;
+					case 2:
+						if (isBitFlagged(standart_config_2393, ivar14)) {
+							ivar15 = add(ivar15, 1);
+						}
+						break;
+					case 3:
+						if (isBitFlagged(standart_config_2394, ivar14)) {
+							ivar15 = add(ivar15, 1);
+						}
+						break;
+					case 4:
+						if (isBitFlagged(standart_config_2394, add(ivar14, 16))) {
+							ivar15 = add(ivar15, 1);
+						}
+				}
+				ivar14 = add(ivar14, 1);
+			}
+			ivar16 = add(ivar16, 1);
+		}
+		if (ivar15 < 1) {
+			return newstruct cs2func_script_4727_struct(arg0, arg1, arg2, arg3, arg5);
+		}
+		globalarray_0 = new int[ivar15];
+		ivar17 = subtract(ivar15, 1);
+		ivar16 = 0;
+		while (ivar16 < 5) {
+			switch (ivar16) {
+				case 0:
+					ivar10 = 5182;
+					break;
+				case 1:
+					ivar10 = 3875;
+					break;
+				case 2:
+					if (IsFemale()) {
+						ivar10 = 5189;
+					} else {
+						ivar10 = 5188;
+					}
+					break;
+				case 3:
+					ivar10 = 5184;
+					break;
+				case 4:
+					ivar10 = 5183;
+			}
+			ivar14 = 0;
+			while (ivar14 < getCommonDefinitionSize(ivar10)) {
+				ivar11 = cs2method_3408(105, 74, ivar10, ivar14);
+				switch (ivar16) {
+					case 0:
+						if (isBitFlagged(standart_config_2391, ivar14)) {
+							globalarray_0[ivar17] = ivar11;
+							ivar17 = max(subtract(ivar17, 1), 0);
+						}
+						break;
+					case 1:
+						if (isBitFlagged(standart_config_2392, ivar14)) {
+							globalarray_0[ivar17] = ivar11;
+							ivar17 = max(subtract(ivar17, 1), 0);
+						}
+						break;
+					case 2:
+						if (isBitFlagged(standart_config_2393, ivar14)) {
+							globalarray_0[ivar17] = ivar11;
+							ivar17 = max(subtract(ivar17, 1), 0);
+						}
+						break;
+					case 3:
+						if (isBitFlagged(standart_config_2394, ivar14)) {
+							globalarray_0[ivar17] = ivar11;
+							ivar17 = max(subtract(ivar17, 1), 0);
+						}
+						break;
+					case 4:
+						if (isBitFlagged(standart_config_2394, add(ivar14, 16))) {
+							globalarray_0[ivar17] = ivar11;
+							ivar17 = max(subtract(ivar17, 1), 0);
+						}
+				}
+				ivar14 = add(ivar14, 1);
+			}
+			ivar16 = add(ivar16, 1);
+		}
+		ivar14 = 0;
+		ivar12 = 1;
+		ivar18 = 0;
+		ivar19 = 0;
+		svar0 = "";
+		svar1 = "";
+		ivar20 = 0;
+		ivar21 = 0;
+		SWITCH (globalint_1659) {
+			case 1:
+				 GOTO flow_77
+			case 2:
+				 GOTO flow_91
+			case 3:
+				 GOTO flow_123
+		}
+		while (((boolean)ivar12)) {
+			ivar12 = 0;
+			ivar14 = subtract(ivar15, 1);
+			while (ivar14 > 0) {
+				if (getOtherCommonData(globalarray_0[ivar14], 1933) > 0) {
+					ivar18 = getOtherCommonData(globalarray_0[ivar14], 1933);
+				} else {
+					ivar18 = getOtherCommonData(globalarray_0[ivar14], 1932);
+				}
+				if (getOtherCommonData(globalarray_0[subtract(ivar14, 1)], 1933) > 0) {
+					ivar19 = getOtherCommonData(globalarray_0[subtract(ivar14, 1)], 1933);
+				} else {
+					ivar19 = getOtherCommonData(globalarray_0[subtract(ivar14, 1)], 1932);
+				}
+				if (ivar18 < ivar19) {
+					ivar12 = 1;
+					ivar13 = globalarray_0[subtract(ivar14, 1)];
+					globalarray_0[subtract(ivar14, 1)] = globalarray_0[ivar14];
+					globalarray_0[ivar14] = ivar13;
+				}
+				ivar14 = subtract(ivar14, 1);
+			}
+		}
+	flow_76:
+		GOTO	flow_154
+	flow_77:
+		IF (((boolean)ivar12)) 
+			GOTO	flow_78
+		GOTO	flow_90
+	flow_78:
+		ivar12 = 0;
+		ivar14 = subtract(ivar15, 1);
+		while (ivar14 > 0) {
+			if (getOtherCommonData(globalarray_0[ivar14], 1933) > 0) {
+				ivar18 = getOtherCommonData(globalarray_0[ivar14], 1933);
+			} else {
+				ivar18 = getOtherCommonData(globalarray_0[ivar14], 1932);
+			}
+			if (getOtherCommonData(globalarray_0[subtract(ivar14, 1)], 1933) > 0) {
+				ivar19 = getOtherCommonData(globalarray_0[subtract(ivar14, 1)], 1933);
+			} else {
+				ivar19 = getOtherCommonData(globalarray_0[subtract(ivar14, 1)], 1932);
+			}
+			if (ivar18 > ivar19) {
+				ivar12 = 1;
+				ivar13 = globalarray_0[subtract(ivar14, 1)];
+				globalarray_0[subtract(ivar14, 1)] = globalarray_0[ivar14];
+				globalarray_0[ivar14] = ivar13;
+			}
+			ivar14 = subtract(ivar14, 1);
+		}
+		GOTO	flow_77
+	flow_90:
+		GOTO	flow_154
+	flow_91:
+		IF (((boolean)ivar12)) 
+			GOTO	flow_92
+		GOTO	flow_122
+	flow_92:
+		ivar12 = 0;
+		ivar14 = subtract(ivar15, 1);
+		while (ivar14 > 0) {
+			if (getOtherCommonData(globalarray_0[ivar14], 1937) == 4) {
+				ivar20 = 0;
+				ivar21 = 0;
+				while ((ivar20 < getCommonDefinitionSize(5184)) && ((boolean)ivar21)) {
+					if (cs2method_3408(105, 74, 5184, ivar20) == globalarray_0[ivar14]) {
+						if (IsFemale()) {
+							svar0 = cs2method_3408(105, 115, 5186, ivar20);
+						} else {
+							svar0 = cs2method_3408(105, 115, 5187, ivar20);
+						}
+						ivar21 = 1;
+					}
+					ivar20 = add(ivar20, 1);
+				}
+			} else {
+				svar0 = getOtherCommonData(globalarray_0[ivar14], 1930);
+			}
+			if (getOtherCommonData(globalarray_0[subtract(ivar14, 1)], 1937) == 4) {
+				ivar20 = 0;
+				ivar21 = 0;
+				while ((ivar20 < getCommonDefinitionSize(5184)) && ((boolean)ivar21)) {
+					if (cs2method_3408(105, 74, 5184, ivar20) == globalarray_0[subtract(ivar14, 1)]) {
+						if (IsFemale()) {
+							svar1 = cs2method_3408(105, 115, 5186, ivar20);
+						} else {
+							svar1 = cs2method_3408(105, 115, 5187, ivar20);
+						}
+						ivar21 = 1;
+					}
+					ivar20 = add(ivar20, 1);
+				}
+			} else {
+				svar1 = getOtherCommonData(globalarray_0[subtract(ivar14, 1)], 1930);
+			}
+			if (stringMethod4107(svar0, svar1) < 0) {
+				ivar12 = 1;
+				ivar13 = globalarray_0[subtract(ivar14, 1)];
+				globalarray_0[subtract(ivar14, 1)] = globalarray_0[ivar14];
+				globalarray_0[ivar14] = ivar13;
+			}
+			ivar14 = subtract(ivar14, 1);
+		}
+		GOTO	flow_91
+	flow_122:
+		GOTO	flow_154
+	flow_123:
+		IF (((boolean)ivar12)) 
+			GOTO	flow_124
+		GOTO	flow_154
+	flow_124:
+		ivar12 = 0;
+		ivar14 = subtract(ivar15, 1);
+		while (ivar14 > 0) {
+			if (getOtherCommonData(globalarray_0[ivar14], 1937) == 4) {
+				ivar20 = 0;
+				ivar21 = 0;
+				while ((ivar20 < getCommonDefinitionSize(5184)) && ((boolean)ivar21)) {
+					if (cs2method_3408(105, 74, 5184, ivar20) == globalarray_0[ivar14]) {
+						if (IsFemale()) {
+							svar0 = cs2method_3408(105, 115, 5186, ivar20);
+						} else {
+							svar0 = cs2method_3408(105, 115, 5187, ivar20);
+						}
+						ivar21 = 1;
+					}
+					ivar20 = add(ivar20, 1);
+				}
+			} else {
+				svar0 = getOtherCommonData(globalarray_0[ivar14], 1930);
+			}
+			if (getOtherCommonData(globalarray_0[subtract(ivar14, 1)], 1937) == 4) {
+				ivar20 = 0;
+				ivar21 = 0;
+				while ((ivar20 < getCommonDefinitionSize(5184)) && ((boolean)ivar21)) {
+					if (cs2method_3408(105, 74, 5184, ivar20) == globalarray_0[subtract(ivar14, 1)]) {
+						if (IsFemale()) {
+							svar1 = cs2method_3408(105, 115, 5186, ivar20);
+						} else {
+							svar1 = cs2method_3408(105, 115, 5187, ivar20);
+						}
+						ivar21 = 1;
+					}
+					ivar20 = add(ivar20, 1);
+				}
+			} else {
+				svar1 = getOtherCommonData(globalarray_0[subtract(ivar14, 1)], 1930);
+			}
+			if (stringMethod4107(svar0, svar1) > 0) {
+				ivar12 = 1;
+				ivar13 = globalarray_0[subtract(ivar14, 1)];
+				globalarray_0[subtract(ivar14, 1)] = globalarray_0[ivar14];
+				globalarray_0[ivar14] = ivar13;
+			}
+			ivar14 = subtract(ivar14, 1);
+		}
+		GOTO	flow_123
+	flow_154:
+		ivar14 = 0;
+		while (ivar14 < ivar15) {
+			ivar11 = globalarray_0[ivar14];
+			stack_dump0 = ivar11;
+			stack_dump1 = arg0;
+			stack_dump2 = arg1;
+			stack_dump3 = arg2;
+			stack_dump4 = arg3;
+			stack_dump5 = arg4;
+			stack_dump6 = arg5;
+			stack_dump7 = arg6;
+			stack_dump8 = arg7;
+			stack_dump9 = arg8;
+			stack_dump10 = arg9;
+			structdump_11 = script_5351(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4, stack_dump5, stack_dump6, stack_dump7, stack_dump8, stack_dump9, stack_dump10);
+			arg5 = structdump_11.intpart_4;
+			arg3 = structdump_11.intpart_3;
+			arg2 = structdump_11.intpart_2;
+			arg1 = structdump_11.intpart_1;
+			arg0 = structdump_11.intpart_0;
+			ivar14 = add(ivar14, 1);
+		}
+		return newstruct cs2func_script_4727_struct(arg0, arg1, arg2, arg3, arg5);
+}

@@ -1,0 +1,10 @@
+void script_5050(int arg0,int arg1,int arg2) {
+	arg0 = multiply(arg0, arg1);
+	if (((boolean)arg2)) {
+		cs2method2100(cs2method2600(new WidgetPointer(1111,15)), max(add(cs2method2601(new WidgetPointer(1111,15)), arg0), 0), new WidgetPointer(1111,15));
+	} else {
+		cs2method2100(max(add(cs2method2600(new WidgetPointer(1111,15)), arg0), 0), cs2method2601(new WidgetPointer(1111,15)), new WidgetPointer(1111,15));
+	}
+	script_5053(0, 0);
+	return;
+}

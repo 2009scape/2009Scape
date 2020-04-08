@@ -1,0 +1,14 @@
+int script_2728() {
+	int ivar0;
+	if (script_2761() > 100) {
+		return 0;
+	}
+	ivar0 = getCommonDefinitionSize(681);
+	while (ivar0 > 0) {
+		if (getSkillActualLvl(cs2method_3408(105, 83, 681, ivar0)) > 20) {
+			return 0;
+		}
+		ivar0 = subtract(ivar0, 1);
+	}
+	return 1;
+}

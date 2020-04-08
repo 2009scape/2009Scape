@@ -1,0 +1,22 @@
+void script_4649() {
+	flow_0:
+		SWITCH (bitconfig_9367) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_2
+			case 3:
+				 GOTO flow_3
+		}
+		return;
+	flow_1:
+		script_4650();
+		GOTO	flow_4
+	flow_2:
+		script_4652();
+		GOTO	flow_4
+	flow_3:
+		script_4651();
+	flow_4:
+		return;
+}

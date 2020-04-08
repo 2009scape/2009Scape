@@ -1,0 +1,11 @@
+void script_5306() {
+	setWidgetIsHidden(true, new WidgetPointer(824,8));
+	setWidgetSprite(6168, new WidgetPointer(824,74));
+	setWidgetIsHidden(true, new WidgetPointer(824,9));
+	setWidgetSprite(6168, new WidgetPointer(824,127));
+	setWidgetIsHidden(true, new WidgetPointer(824,10));
+	setWidgetSprite(6168, new WidgetPointer(824,180));
+	setWidgetIsHidden(true, new WidgetPointer(824,11));
+	setWidgetSprite(6168, new WidgetPointer(824,217));
+	return;
+}

@@ -1,0 +1,97 @@
+void script_2570() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = -1;
+	globalint_930 = -1;
+	globalint_931 = -1;
+	globalint_932 = -1;
+	globalint_933 = -1;
+	globalint_934 = -1;
+	globalint_935 = -1;
+	globalint_936 = -1;
+	globalint_937 = -1;
+	globalint_938 = -1;
+	globalint_939 = -1;
+	if ((bitconfig_6429 > 0) && (bitconfig_6429 < 11)) {
+		globalint_929 = subtract(bitconfig_6429, 1);
+	} else {
+		globalint_929 = 0;
+	}
+	while ((ivar1 < 10) && (ivar0 < 28)) {
+		ivar2 = getItemIdInSlot(93, ivar0);
+		if (((boolean)getItemHashmapData(ivar2, 802)) || ((boolean)getItemHashmapData(ivar2, 803))) {
+			setWidgetText(cs2method_3408(105, 73, 2423, ivar1), "Squad " + intToStr(add(ivar1, 1)));
+			if (((boolean)getItemHashmapData(ivar2, 806))) {
+				setWidgetSprite(2023, cs2method_3408(105, 73, 2427, ivar1));
+			} else {
+				if (((boolean)getItemHashmapData(ivar2, 806))) {
+					setWidgetSprite(2022, cs2method_3408(105, 73, 2427, ivar1));
+				}
+			}
+			if (((boolean)getItemHashmapData(ivar2, 805))) {
+				setWidgetSprite(2016, cs2method_3408(105, 73, 2426, ivar1));
+			} else if (getItemHashmapData(ivar2, 805) == 2) {
+				setWidgetSprite(2018, cs2method_3408(105, 73, 2426, ivar1));
+			} else {
+				if (getItemHashmapData(ivar2, 805) == 3) {
+					setWidgetSprite(2017, cs2method_3408(105, 73, 2426, ivar1));
+				}
+			}
+			if (((boolean)getItemHashmapData(ivar2, 803))) {
+				setWidgetRGB(new Color(204, 0, 0), cs2method_3408(105, 73, 2429, ivar1));
+			} else {
+				setWidgetRGB(new Color(0, 0, 0), cs2method_3408(105, 73, 2429, ivar1));
+			}
+			switch (ivar1) {
+				case 0:
+					globalint_930 = ivar0;
+					break;
+				case 1:
+					globalint_931 = ivar0;
+					break;
+				case 2:
+					globalint_932 = ivar0;
+					break;
+				case 3:
+					globalint_933 = ivar0;
+					break;
+				case 4:
+					globalint_934 = ivar0;
+					break;
+				case 5:
+					globalint_935 = ivar0;
+					break;
+				case 6:
+					globalint_936 = ivar0;
+					break;
+				case 7:
+					globalint_937 = ivar0;
+					break;
+				case 8:
+					globalint_938 = ivar0;
+					break;
+				case 9:
+					globalint_939 = ivar0;
+			}
+			ivar1 = add(ivar1, 1);
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	if ((ivar1 < 10) && (ivar1 < 10)) {
+		while (true) {
+			setWidgetText(cs2method_3408(105, 73, 2423, ivar1), "No squad");
+			setWidgetText(cs2method_3408(105, 73, 2424, ivar1), "");
+			setWidgetSprite(-1, cs2method_3408(105, 73, 2427, ivar1));
+			setWidgetSprite(-1, cs2method_3408(105, 73, 2426, ivar1));
+			setScriptCallOnClickContextMenu(-1, "", cs2method_3408(105, 73, 2422, ivar1));
+			setWidgetNoOptions(cs2method_3408(105, 73, 2422, ivar1));
+			ivar1 = add(ivar1, 1);
+		}
+	}
+	script_2599();
+	script_2573();
+	return;
+}

@@ -1,0 +1,16 @@
+int script_2203(string arg0) {
+	int ivar0;
+	int ivar1;
+	ivar0 = strLength(arg0);
+	if (ivar0 > 12) {
+		return 0;
+	}
+	ivar1 = 0;
+	while (ivar1 < ivar0) {
+		if (strIndexof(0, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_@. \u00a0", substr(ivar1, add(ivar1, 1), arg0)) == -1) {
+			return 0;
+		}
+		ivar1 = add(ivar1, 1);
+	}
+	return 1;
+}

@@ -1,0 +1,7 @@
+void script_5064(int arg0) {
+	if (arg0 != -1) {
+		globalint_768 = arg0;
+	}
+	script_5065(0);
+	return;
+}

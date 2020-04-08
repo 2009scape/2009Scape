@@ -1,0 +1,65 @@
+void script_2945() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	string svar0;
+	string svar1;
+	globalint_1100 = -1;
+	if (hasSSKey() && (((boolean)strLength(globalstring_32)) || ((boolean)strLength(globalstring_33)))) {
+		script_2940(11);
+		return;
+	}
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	if ((((boolean)cs2method5420()) && ((boolean)script_2727())) && ((boolean)globalint_547)) {
+		globalint_174 = 12;
+		setWidgetIsHidden(false, new WidgetPointer(744,28));
+		playMusicEffect(349, 0);
+		script_3412(48758826, 48758827);
+		ivar2 = getWidgetActualWidth(new WidgetPointer(744,43));
+		ivar3 = getWidgetActualWidth(new WidgetPointer(744,43));
+		ivar0 = max(337, add(getTextWidth(591, getWidgetText(new WidgetPointer(744,42))), 31));
+		ivar3 = max(152, multiply(getLineCount(ivar2, 496, getWidgetText(new WidgetPointer(744,43))), 16));
+		ivar1 = max(252, add(ivar3, 100));
+		setWidgetSize(ivar2, ivar3, 0, 0, new WidgetPointer(744,43));
+		setWidgetSize(ivar0, ivar1, 0, 0, new WidgetPointer(744,28));
+		setWidgetIsHidden(true, new WidgetPointer(744,26));
+		setWidgetIsHidden(true, new WidgetPointer(744,27));
+		return;
+	}
+	globalint_200 = 0;
+	globalint_201 = 0;
+	ivar4 = 39059516;
+	ivar5 = 39059501;
+	if (hasSSKey()) {
+		ivar4 = 63897649;
+		ivar5 = 63897644;
+	}
+	setWidgetText(new WidgetPointer(ivar4), "Logging in...");
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(ivar5));
+	script_2950(-3, 0, 1, -1, 0, -1, 0, "Logging In - Please Wait", "", "");
+	setWidgetIsHidden(true, new WidgetPointer(596,9));
+	globalint_1100 = -3;
+	svar0 = globalstring_32;
+	svar1 = globalstring_33;
+	if (hasSSKey()) {
+		svar0 = "";
+		svar1 = "";
+	}
+	if (((boolean)cs2method5420())) {
+		directlogin(0, svar0, svar1);
+	} else {
+		setUserAndPass(svar0, svar1);
+	}
+	if (hasSSKey()) {
+		setScriptCallOnGameloop(2946, 0, "i", new WidgetPointer(975,26));
+	} else {
+		setScriptCallOnGameloop(2946, 0, "i", new WidgetPointer(596,7));
+	}
+	return;
+}

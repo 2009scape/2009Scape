@@ -1,0 +1,12 @@
+void script_2070(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	if (arg0 != 1) {
+		return;
+	}
+	if ((arg1 >= globalint_657) || (arg1 < 0)) {
+		return;
+	}
+	globalint_656 = arg1;
+	playSoundEffect2False(3550, 1, 0, 100);
+	script_1439(arg2, arg3, arg4);
+	return;
+}

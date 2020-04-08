@@ -1,0 +1,18 @@
+void script_4640(int arg0) {
+	if (((boolean)arg0)) {
+		setWidgetSprite(4601, new WidgetPointer(153,66));
+		setWidgetSprite(4601, new WidgetPointer(153,68));
+		setWidgetSprite(4600, new WidgetPointer(153,67));
+		setWidgetSprite(4607, new WidgetPointer(153,70));
+		setWidgetSprite(4607, new WidgetPointer(153,69));
+		setWidgetSprite(4606, new WidgetPointer(153,71));
+	} else {
+		setWidgetSprite(4595, new WidgetPointer(153,66));
+		setWidgetSprite(4595, new WidgetPointer(153,68));
+		setWidgetSprite(4594, new WidgetPointer(153,67));
+		setWidgetSprite(4605, new WidgetPointer(153,70));
+		setWidgetSprite(4605, new WidgetPointer(153,69));
+		setWidgetSprite(4604, new WidgetPointer(153,71));
+	}
+	return;
+}

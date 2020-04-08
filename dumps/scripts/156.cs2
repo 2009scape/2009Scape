@@ -1,0 +1,21 @@
+void script_156(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,string arg6,string arg7,string arg8,string arg9,string arg10,string arg11,string arg12,string arg13,string arg14) {
+	int ivar6;
+	if (arg2 == -1) {
+		script_154(arg0, arg1, arg3, arg1, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14);
+		return;
+	}
+	ivar6 = arg1;
+	while (ivar6 != arg2) {
+		if (ivar6 > arg2) {
+			script_154(arg0, subtract(ivar6, 1), arg3, ivar6, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14);
+			ivar6 = subtract(ivar6, 1);
+		} else {
+			if (ivar6 < arg2) {
+				script_154(arg0, add(ivar6, 1), arg3, ivar6, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14);
+				ivar6 = add(ivar6, 1);
+			}
+		}
+	}
+	script_154(arg0, arg1, arg3, arg2, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14);
+	return;
+}

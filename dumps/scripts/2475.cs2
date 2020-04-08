@@ -1,0 +1,45 @@
+void script_2475(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	ivar4 = 1093;
+	if (IsFemale()) {
+		ivar4 = 3872;
+	}
+	ivar5 = 0;
+	ivar6 = 0;
+	while (ivar5 <= getCommonDefinitionSize(ivar4)) {
+		createExtraChild(new WidgetPointer(arg0), 4, ivar5);
+		if (((boolean)ivar5) || ((ivar5 >= arg2) && (ivar5 <= arg3))) {
+			if (((boolean)ivar5)) {
+				setWidgetText("No Prefix");
+			} else {
+				setWidgetText(cs2method_3408(105, 115, ivar4, ivar5));
+			}
+			setWidgetPosition(0, ivar6, 0, 0);
+			setWidgetSize(165, 17, 0, 0);
+			setWidgetUnknownBoolean(false);
+			setWidgetFont(495);
+			setWidgetTextAlignment(0, 1, 0);
+			setWidgetContextMenuOption(1, "Select");
+			setScriptCallOnClickContextMenu(2143, new WidgetPointer(-32768,3), -2147483643, "Ii");
+			if (((boolean)script_2476(ivar5))) {
+				setWidgetRGB(new Color(17, 255, 0));
+			} else {
+				setWidgetRGB(new Color(255, 17, 0));
+			}
+			ivar6 = add(ivar6, 19);
+		} else {
+			setWidgetHidden(1);
+		}
+		ivar5 = add(1, ivar5);
+	}
+	if (ivar6 > getWidgetActualHeight(new WidgetPointer(arg0))) {
+		setWidgetScrollMax(0, add(25, ivar6), new WidgetPointer(arg0));
+		setWidgetIsHidden(false, new WidgetPointer(arg1));
+		script_31(arg1, arg0, 792, 789, 790, 791, 773, 788);
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(arg1));
+	}
+	return;
+}

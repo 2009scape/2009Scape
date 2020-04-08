@@ -1,0 +1,30 @@
+void script_3499(int arg0,int arg1,int arg2) {
+	int ivar3;
+	ivar3 = 0;
+	if (arg0 > 20000000) {
+		arg0 = 0;
+	}
+	if ((extractY(getMyPositionHash()) > 6400) || (extractY(getMyPositionHash()) > extractY(48238975))) {
+		setWidget3DRotation(0, 0, 512, mod(subtract(getWidgetRotateY(new WidgetPointer(arg1)), 30), 2047), 40, 275, new WidgetPointer(arg1));
+		setWidgetIsHidden(true, new WidgetPointer(arg2));
+	} else if (((boolean)script_133(33556928, 869257279, getMyPositionHash()))) {
+		if (mod(arg0, 68) > 34) {
+			setWidget3DRotation(0, 0, 512, mod(subtract(getWidgetRotateY(new WidgetPointer(arg1)), 30), 2047), 40, 275, new WidgetPointer(arg1));
+		} else {
+			setWidget3DRotation(0, 0, 512, mod(add(getWidgetRotateY(new WidgetPointer(arg1)), 30), 2047), 40, 275, new WidgetPointer(arg1));
+		}
+		setWidgetIsHidden(true, new WidgetPointer(arg2));
+	} else if (subtract(extractZ(getMyPositionHash()), extractZ(globalint_1323)) > 0) {
+		setWidget3DRotation(0, 0, 512, mod(add(getWidgetRotateY(new WidgetPointer(arg1)), 30), 2047), 40, 275, new WidgetPointer(arg1));
+		setWidgetIsHidden(true, new WidgetPointer(arg2));
+	} else if (ivar3 == -1) {
+		setWidget3DRotation(0, 0, 0, 0, 40, 275, new WidgetPointer(arg1));
+		setWidgetIsHidden(false, new WidgetPointer(arg2));
+	} else {
+		setWidget3DRotation(0, 0, 512, divide(multiply(2047, ivar3), 65535), 40, 275, new WidgetPointer(arg1));
+		setWidgetIsHidden(true, new WidgetPointer(arg2));
+	}
+	ivar3 = script_3500(extractX(getMyPositionHash()), extractY(getMyPositionHash()), extractX(globalint_1323), extractY(globalint_1323));
+	setScriptCallOnGameloop(3499, add(arg0, 1), new WidgetPointer(arg1), new WidgetPointer(arg2), "iII", new WidgetPointer(arg1));
+	return;
+}

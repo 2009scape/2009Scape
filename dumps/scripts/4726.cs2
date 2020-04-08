@@ -1,0 +1,234 @@
+cs2func_script_4726_struct(5,0,0) script_4726(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10) {
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	string svar0;
+	string svar1;
+	string svar2;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	int stack_dump3;
+	int stack_dump4;
+	int stack_dump5;
+	int stack_dump6;
+	int stack_dump7;
+	int stack_dump8;
+	int stack_dump9;
+	int stack_dump10;
+	cs2func_script_5351_struct(5,0,0) structdump_11;
+	flow_0:
+		ivar11 = 74907707;
+		ivar12 = 0;
+		ivar13 = -1;
+		svar0 = "";
+		ivar14 = 0;
+		globalarray_0 = new int[getCommonDefinitionSize(arg0)];
+		ivar15 = 0;
+		ivar16 = -1;
+		ivar17 = 0;
+		while (ivar17 < getCommonDefinitionSize(arg0)) {
+			globalarray_0[ivar17] = cs2method_3408(105, 74, arg0, ivar17);
+			ivar17 = add(ivar17, 1);
+		}
+		ivar17 = 0;
+		ivar15 = 1;
+		ivar18 = 0;
+		ivar19 = 0;
+		svar1 = "";
+		svar2 = "";
+		ivar20 = 0;
+		ivar21 = 0;
+		SWITCH (globalint_1659) {
+			case 1:
+				 GOTO flow_18
+			case 2:
+				 GOTO flow_32
+			case 3:
+				 GOTO flow_61
+		}
+		while (((boolean)ivar15)) {
+			ivar15 = 0;
+			ivar17 = subtract(getCommonDefinitionSize(arg0), 1);
+			while (ivar17 > 0) {
+				if (getOtherCommonData(globalarray_0[ivar17], 1933) > 0) {
+					ivar18 = getOtherCommonData(globalarray_0[ivar17], 1933);
+				} else {
+					ivar18 = getOtherCommonData(globalarray_0[ivar17], 1932);
+				}
+				if (getOtherCommonData(globalarray_0[subtract(ivar17, 1)], 1933) > 0) {
+					ivar19 = getOtherCommonData(globalarray_0[subtract(ivar17, 1)], 1933);
+				} else {
+					ivar19 = getOtherCommonData(globalarray_0[subtract(ivar17, 1)], 1932);
+				}
+				if (ivar18 < ivar19) {
+					ivar15 = 1;
+					ivar16 = globalarray_0[subtract(ivar17, 1)];
+					globalarray_0[subtract(ivar17, 1)] = globalarray_0[ivar17];
+					globalarray_0[ivar17] = ivar16;
+				}
+				ivar17 = subtract(ivar17, 1);
+			}
+		}
+	flow_17:
+		GOTO	flow_89
+	flow_18:
+		IF (((boolean)ivar15)) 
+			GOTO	flow_19
+		GOTO	flow_31
+	flow_19:
+		ivar15 = 0;
+		ivar17 = subtract(getCommonDefinitionSize(arg0), 1);
+		while (ivar17 > 0) {
+			if (getOtherCommonData(globalarray_0[ivar17], 1933) > 0) {
+				ivar18 = getOtherCommonData(globalarray_0[ivar17], 1933);
+			} else {
+				ivar18 = getOtherCommonData(globalarray_0[ivar17], 1932);
+			}
+			if (getOtherCommonData(globalarray_0[subtract(ivar17, 1)], 1933) > 0) {
+				ivar19 = getOtherCommonData(globalarray_0[subtract(ivar17, 1)], 1933);
+			} else {
+				ivar19 = getOtherCommonData(globalarray_0[subtract(ivar17, 1)], 1932);
+			}
+			if (ivar18 > ivar19) {
+				ivar15 = 1;
+				ivar16 = globalarray_0[subtract(ivar17, 1)];
+				globalarray_0[subtract(ivar17, 1)] = globalarray_0[ivar17];
+				globalarray_0[ivar17] = ivar16;
+			}
+			ivar17 = subtract(ivar17, 1);
+		}
+		GOTO	flow_18
+	flow_31:
+		GOTO	flow_89
+	flow_32:
+		IF (((boolean)ivar15)) 
+			GOTO	flow_33
+		GOTO	flow_60
+	flow_33:
+		ivar15 = 0;
+		ivar17 = subtract(getCommonDefinitionSize(arg0), 1);
+		while (ivar17 > 0) {
+			if (getOtherCommonData(globalarray_0[ivar17], 1937) == 4) {
+				ivar20 = 0;
+				ivar21 = 0;
+				while ((ivar20 < getCommonDefinitionSize(5184)) && ((boolean)ivar21)) {
+					if (cs2method_3408(105, 74, 5184, ivar20) == globalarray_0[ivar17]) {
+						if (IsFemale()) {
+							svar1 = cs2method_3408(105, 115, 5186, ivar20);
+						} else {
+							svar1 = cs2method_3408(105, 115, 5187, ivar20);
+						}
+						ivar21 = 1;
+					}
+					ivar20 = add(ivar20, 1);
+				}
+				ivar20 = 0;
+				ivar21 = 0;
+				while ((ivar20 < getCommonDefinitionSize(5184)) && ((boolean)ivar21)) {
+					if (cs2method_3408(105, 74, 5184, ivar20) == globalarray_0[subtract(ivar17, 1)]) {
+						if (IsFemale()) {
+							svar2 = cs2method_3408(105, 115, 5186, ivar20);
+						} else {
+							svar2 = cs2method_3408(105, 115, 5187, ivar20);
+						}
+						ivar21 = 1;
+					}
+					ivar20 = add(ivar20, 1);
+				}
+			} else {
+				svar1 = getOtherCommonData(globalarray_0[ivar17], 1930);
+				svar2 = getOtherCommonData(globalarray_0[subtract(ivar17, 1)], 1930);
+			}
+			if (stringMethod4107(svar1, svar2) < 0) {
+				ivar15 = 1;
+				ivar16 = globalarray_0[subtract(ivar17, 1)];
+				globalarray_0[subtract(ivar17, 1)] = globalarray_0[ivar17];
+				globalarray_0[ivar17] = ivar16;
+			}
+			ivar17 = subtract(ivar17, 1);
+		}
+		GOTO	flow_32
+	flow_60:
+		GOTO	flow_89
+	flow_61:
+		IF (((boolean)ivar15)) 
+			GOTO	flow_62
+		GOTO	flow_89
+	flow_62:
+		ivar15 = 0;
+		ivar17 = subtract(getCommonDefinitionSize(arg0), 1);
+		while (ivar17 > 0) {
+			if (getOtherCommonData(globalarray_0[ivar17], 1937) == 4) {
+				ivar20 = 0;
+				ivar21 = 0;
+				while ((ivar20 < getCommonDefinitionSize(5184)) && ((boolean)ivar21)) {
+					if (cs2method_3408(105, 74, 5184, ivar20) == globalarray_0[ivar17]) {
+						if (IsFemale()) {
+							svar1 = cs2method_3408(105, 115, 5186, ivar20);
+						} else {
+							svar1 = cs2method_3408(105, 115, 5187, ivar20);
+						}
+						ivar21 = 1;
+					}
+					ivar20 = add(ivar20, 1);
+				}
+				ivar20 = 0;
+				ivar21 = 0;
+				while ((ivar20 < getCommonDefinitionSize(5184)) && ((boolean)ivar21)) {
+					if (cs2method_3408(105, 74, 5184, ivar20) == globalarray_0[subtract(ivar17, 1)]) {
+						if (IsFemale()) {
+							svar2 = cs2method_3408(105, 115, 5186, ivar20);
+						} else {
+							svar2 = cs2method_3408(105, 115, 5187, ivar20);
+						}
+						ivar21 = 1;
+					}
+					ivar20 = add(ivar20, 1);
+				}
+			} else {
+				svar1 = getOtherCommonData(globalarray_0[ivar17], 1930);
+				svar2 = getOtherCommonData(globalarray_0[subtract(ivar17, 1)], 1930);
+			}
+			if (stringMethod4107(svar1, svar2) > 0) {
+				ivar15 = 1;
+				ivar16 = globalarray_0[subtract(ivar17, 1)];
+				globalarray_0[subtract(ivar17, 1)] = globalarray_0[ivar17];
+				globalarray_0[ivar17] = ivar16;
+			}
+			ivar17 = subtract(ivar17, 1);
+		}
+		GOTO	flow_61
+	flow_89:
+		ivar17 = 0;
+		while (ivar17 < getCommonDefinitionSize(arg0)) {
+			ivar13 = globalarray_0[ivar17];
+			stack_dump0 = ivar13;
+			stack_dump1 = arg1;
+			stack_dump2 = arg2;
+			stack_dump3 = arg3;
+			stack_dump4 = arg4;
+			stack_dump5 = arg5;
+			stack_dump6 = arg6;
+			stack_dump7 = arg7;
+			stack_dump8 = arg8;
+			stack_dump9 = arg9;
+			stack_dump10 = arg10;
+			structdump_11 = script_5351(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4, stack_dump5, stack_dump6, stack_dump7, stack_dump8, stack_dump9, stack_dump10);
+			arg6 = structdump_11.intpart_4;
+			arg4 = structdump_11.intpart_3;
+			arg3 = structdump_11.intpart_2;
+			arg2 = structdump_11.intpart_1;
+			arg1 = structdump_11.intpart_0;
+			ivar17 = add(ivar17, 1);
+		}
+		return newstruct cs2func_script_4726_struct(arg1, arg2, arg3, arg4, arg6);
+}

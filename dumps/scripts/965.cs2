@@ -1,0 +1,29 @@
+void script_965(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,int arg11,int arg12,int arg13,int arg14,int arg15,int arg16) {
+	script_966(arg0, globalint_122);
+	script_966(arg1, globalint_122);
+	script_966(arg2, globalint_122);
+	script_966(arg3, globalint_122);
+	script_966(arg4, globalint_122);
+	script_966(arg5, globalint_123);
+	script_966(arg6, globalint_123);
+	script_966(arg7, globalint_123);
+	script_966(arg8, globalint_123);
+	script_966(arg9, globalint_123);
+	script_966(arg10, globalint_124);
+	script_966(arg11, globalint_124);
+	script_966(arg12, globalint_124);
+	script_966(arg13, globalint_124);
+	script_966(arg14, globalint_124);
+	if (globalint_125 < getClientCycle()) {
+		setWidgetIsHidden(false, new WidgetPointer(arg15));
+		setWidgetIsHidden(true, new WidgetPointer(arg16));
+	} else {
+		if ((globalint_156 <= getClientCycle()) && ((boolean)globalint_157)) {
+			playSoundEffect2False(7540, 1, 0, 100, cs2method_4019(15, 15));
+			globalint_156 = add(getClientCycle(), 30);
+		}
+		setWidgetIsHidden(true, new WidgetPointer(arg15));
+		setWidgetIsHidden(false, new WidgetPointer(arg16));
+	}
+	return;
+}

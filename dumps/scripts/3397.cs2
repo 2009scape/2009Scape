@@ -1,0 +1,23 @@
+void script_3397() {
+	int ivar0;
+	int ivar1;
+	setWidgetText(new WidgetPointer(979,18), globalstring_279);
+	ivar0 = 2568;
+	ivar1 = 2569;
+	if (stringMethod4107(globalstring_279, "") != 0) {
+		setWidgetText(new WidgetPointer(979,40), "Reporting: " + globalstring_279);
+		cs2method2103(0, new WidgetPointer(979,10));
+		cs2method2103(0, new WidgetPointer(979,11));
+		cs2method2103(0, new WidgetPointer(979,12));
+		cs2method2103(0, new WidgetPointer(979,13));
+		setScriptCallOnMouseEntered(3071, new WidgetPointer(979,10), ivar0, new WidgetPointer(979,11), ivar1, new WidgetPointer(979,12), ivar0, "IdIdId", new WidgetPointer(979,9));
+	} else {
+		setWidgetText(new WidgetPointer(979,40), "Report Abuse: Select Player");
+		cs2method2103(100, new WidgetPointer(979,10));
+		cs2method2103(100, new WidgetPointer(979,11));
+		cs2method2103(100, new WidgetPointer(979,12));
+		cs2method2103(100, new WidgetPointer(979,13));
+		setScriptCallOnMouseEntered(-1, "", new WidgetPointer(979,9));
+	}
+	return;
+}

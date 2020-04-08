@@ -1,0 +1,79 @@
+void script_2708(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	cs2method3115(0, 0, 4, 3, 135, 30, 3791, 3792, 297, 16777215, 3793);
+	setWidgetSize(278, 90, 0, 0, new WidgetPointer(744,23));
+	setWidgetSprite(2498, new WidgetPointer(744,23));
+	setWidgetSprite(4140, new WidgetPointer(744,8));
+	setWidgetSprite(4139, new WidgetPointer(744,9));
+	setWidgetSprite(4141, new WidgetPointer(744,10));
+	setWidgetSprite(4142, new WidgetPointer(744,11));
+	setWidgetSprite(4144, new WidgetPointer(744,12));
+	setWidgetSprite(4143, new WidgetPointer(744,13));
+	setWidgetSprite(4145, new WidgetPointer(744,14));
+	setWidgetSprite(4146, new WidgetPointer(744,15));
+	setWidgetSprite(4129, new WidgetPointer(744,22));
+	setWidgetSprite(4129, new WidgetPointer(744,97));
+	setWidgetSprite(4129, new WidgetPointer(744,100));
+	setWidgetSprite(4067, new WidgetPointer(744,70));
+	setWidgetHFlip(1, new WidgetPointer(744,70));
+	setWidgetVFlip(1, new WidgetPointer(744,70));
+	setWidgetSprite(4067, new WidgetPointer(744,74));
+	setWidgetHFlip(0, new WidgetPointer(744,74));
+	setWidgetVFlip(1, new WidgetPointer(744,74));
+	setWidgetSprite(4067, new WidgetPointer(744,4));
+	setWidgetSprite(4067, new WidgetPointer(744,6));
+	cs2method6039(rndExcl(18));
+	if (globalint_176 <= 0) {
+		globalint_176 = multiply(add(rndExcl(5), 1), 10);
+	}
+	setScriptCallOnWidgetResize(3229, "", new WidgetPointer(744,17));
+	script_3964();
+	globalstring_32 = "";
+	globalstring_33 = "";
+	globalint_547 = 0;
+	globalint_1093 = 0;
+	openInterface(48758834, 882);
+	script_2595(0);
+	setScriptCallOnMousePressed(1173, 11, "i", new WidgetPointer(882,20));
+	setScriptCallOnKeyPress(1221, -2147483640, false, "iz", new WidgetPointer(744,17));
+	script_2710(arg0, arg1, arg2, arg3, arg4, arg5);
+	script_1129();
+	if (isFromBilling()) {
+		globalint_1090 = 11;
+		globalint_1091 = 11;
+		script_3239(11, 1, 0);
+	} else {
+		if ((globalint_1240 == 2) && (cs2method6131() != 0)) {
+			globalint_1240 = 3;
+		}
+		if (((boolean)cs2method5420())) {
+			globalint_1240 = 3;
+		}
+		if ((cs2method6148() && ((boolean)cs2method5420())) && (((globalint_1240 < 3) || cs2method6144()) || ((boolean)cs2method6132()))) {
+			globalint_1090 = 0;
+			globalint_1091 = 0;
+			script_3239(0, 1, 0);
+		} else if (hasSSKey()) {
+			globalint_1090 = 5;
+			globalint_1091 = 5;
+			script_3239(5, 1, 0);
+			if (((boolean)globalint_1273)) {
+				return;
+			}
+			setScriptCallOnGameloop(3381, new WidgetPointer(975,44), 0, "Ii", new WidgetPointer(975,44));
+		} else if (((boolean)script_3487(3))) {
+			globalint_1090 = 7;
+			globalint_1091 = 7;
+			script_3239(7, 1, 0);
+		} else {
+			globalint_1090 = 11;
+			globalint_1091 = 11;
+			script_3239(11, 1, 0);
+		}
+	}
+	script_3230();
+	if (cs2method5436()) {
+		openInterface(48758900, 405);
+		cs2method2005(1, new WidgetPointer(744,116));
+	}
+	return;
+}

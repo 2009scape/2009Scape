@@ -1,0 +1,30 @@
+void script_1360(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar1 = getWidgetActualWidth(new WidgetPointer(arg0));
+	ivar2 = getWidgetActualHeight(new WidgetPointer(arg0));
+	ivar3 = subtract(ivar1, 9);
+	ivar4 = subtract(ivar2, 9);
+	ivar5 = subtract(ivar1, 18);
+	ivar6 = subtract(ivar2, 18);
+	createExtraChild(new WidgetPointer(arg0), 3, 0);
+	setWidgetPosition(0, 0, 0, 0);
+	setWidgetSize(ivar1, ivar2, 0, 0);
+	setWidgetFilled(1);
+	setWidgetRGB(new Color(48, 32, 28));
+	cs2method2103(200);
+	script_98(arg0, 1, 921, 0, 0, 9, 9);
+	script_98(arg0, 2, 922, ivar3, 0, 9, 9);
+	script_98(arg0, 3, 923, 0, ivar4, 9, 9);
+	script_98(arg0, 4, 924, ivar3, ivar4, 9, 9);
+	script_98(arg0, 5, 925, 0, 9, 9, ivar6);
+	script_98(arg0, 6, 926, 9, 0, ivar5, 9);
+	script_98(arg0, 7, 927, ivar3, 9, 9, ivar6);
+	script_98(arg0, 8, 928, 9, ivar4, ivar5, 9);
+	return;
+}

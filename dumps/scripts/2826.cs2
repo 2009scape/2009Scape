@@ -1,0 +1,26 @@
+void script_2826(int arg0,int arg1) {
+	switch (globalint_1007) {
+		case 301:
+			cs2method5405(0, 4);
+			cs2method5405(1, 4);
+			cs2method5406(0, 0, script_2764(60248925, arg1), 565, script_2764(60232544, arg1), 820, 0);
+			cs2method5406(1, 0, script_2764(60248932, arg1), 295, script_2764(60281705, arg1), 378, 0);
+			cs2method5406(0, 1, script_2764(60330858, arg1), 700, script_2764(60363630, arg1), 705, 0);
+			cs2method5406(1, 1, script_2764(60478315, arg1), 335, script_2764(60527467, arg1), 305, 0);
+			cs2method5406(0, 2, script_2764(60281699, arg1), 740, script_2764(60183394, arg1), 755, 0);
+			cs2method5406(1, 2, script_2764(60281717, arg1), 315, script_2764(60265345, arg1), 270, 0);
+			cs2method5406(0, 3, script_2764(60281695, arg1), 554, script_2764(60298077, arg1), 554, 0);
+			cs2method5406(1, 3, script_2764(60085092, arg1), 305, script_2764(59806564, arg1), 215, 0);
+			cameraMethod5502(0, 0, 500, 300, 1, 0);
+			break;
+		case 302:
+			cameraMethod5502(0, 1, 600, 300, 1, 1);
+			break;
+		case 303:
+			cameraMethod5502(0, 2, 600, 300, 1, 2);
+			break;
+		default:
+			cs2method5512();
+	}
+	return;
+}

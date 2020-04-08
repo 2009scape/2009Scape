@@ -1,0 +1,17 @@
+cs2func_script_2146_struct(2,1,0) script_2146(int arg0,int arg1,int arg2,int arg3,string arg4) {
+	int ivar4;
+	int ivar5;
+	string svar1;
+	svar1 = "null";
+	ivar4 = -1;
+	ivar5 = 1;
+	if (((boolean)script_2152(arg1, arg3))) {
+		svar1 = "<col=000080>" + "Level " + intToStr(arg2) + " " + "<col=800000>" + cs2method_3408(83, 115, 680, arg0) + "<col=000080>" + " is one of the requirements for " + "<col=800000>" + arg4 + "<col=000080>" + ".";
+	} else {
+		svar1 = "<col=000080>" + "You have all of the levels required to complete " + "<col=800000>" + arg4 + "<col=000080>" + ".";
+	}
+	if (ivar4 == -1) {
+		ivar4 = 6513;
+	}
+	return newstruct cs2func_script_2146_struct(ivar4, ivar5, svar1);
+}

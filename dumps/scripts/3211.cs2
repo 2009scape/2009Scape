@@ -1,0 +1,10 @@
+void script_3211() {
+	if (getDisplayMode() < 2) {
+		setWidgetPosition(-85, 25, 1, 1, new WidgetPointer(673,33));
+		setWidgetPosition(-85, 25, 1, 1, new WidgetPointer(673,38));
+	} else {
+		setWidgetPosition(-85, 0, 1, 1, new WidgetPointer(673,33));
+		setWidgetPosition(-85, 0, 1, 1, new WidgetPointer(673,38));
+	}
+	return;
+}

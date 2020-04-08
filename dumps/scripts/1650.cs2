@@ -1,0 +1,25 @@
+void script_1650() {
+	if (((boolean)script_1653())) {
+		script_1652(0);
+		setWidgetIsHidden(true, new WidgetPointer(746,75));
+		return;
+	}
+	if (globalint_41 != -1) {
+		setWidgetIsHidden(false, new WidgetPointer(746,75));
+	}
+	if (globalint_1037 < 142) {
+		globalint_1037 = 142;
+	} else {
+		if (globalint_1037 > subtract(getWidgetActualHeight(new WidgetPointer(746,3)), 117)) {
+			script_1651(0, 1);
+			return;
+		}
+	}
+	setWidgetSize(519, globalint_1037, 0, 0, new WidgetPointer(746,73));
+	setWidgetPosition(0, 23, 0, 2, new WidgetPointer(746,73));
+	setWidgetPosition(0, subtract(getWidgetActualY(new WidgetPointer(746,73)), 94), 0, 0, new WidgetPointer(746,75));
+	setWidgetPosition(0, subtract(getWidgetActualY(new WidgetPointer(746,73)), 69), 0, 0, new WidgetPointer(746,72));
+	script_1301(8978491, 8978490);
+	script_84();
+	return;
+}

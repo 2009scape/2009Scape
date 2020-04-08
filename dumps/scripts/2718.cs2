@@ -1,0 +1,12 @@
+void script_2718(int arg0,int arg1,int arg2) {
+	int ivar3;
+	ivar3 = 464;
+	if (((boolean)arg1)) {
+		ivar3 = 448;
+	}
+	setWidgetPosition(getWidgetActualX(new WidgetPointer(arg0)), 118, 0, 0, new WidgetPointer(arg0));
+	setWidgetSize(ivar3, 181, 0, 0, new WidgetPointer(arg0));
+	setWidgetPosition(474, 120, 0, 0, new WidgetPointer(arg2));
+	setWidgetSize(16, 181, 0, 0, new WidgetPointer(arg2));
+	return;
+}

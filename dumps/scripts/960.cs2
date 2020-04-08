@@ -1,0 +1,17 @@
+void script_960() {
+	script_333(44957699, 0, 4537650, 0, 0);
+	script_333(44957700, 4537650, 6052707, 0, 0);
+	setWidgetIsHidden(true, new WidgetPointer(686,9));
+	script_680(44957710);
+	setScriptCallOnMouseEntered(95, new WidgetPointer(-32768,3), "I", new WidgetPointer(686,14));
+	setScriptCallOnMouseExit(93, new WidgetPointer(-32768,3), "I", new WidgetPointer(686,14));
+	setScriptCallOnClickContextMenu(69, 1, new WidgetPointer(686,9), "1I", new WidgetPointer(686,14));
+	script_680(44957712);
+	setScriptCallOnMouseEntered(95, new WidgetPointer(-32768,3), "I", new WidgetPointer(686,16));
+	setScriptCallOnMouseExit(93, new WidgetPointer(-32768,3), "I", new WidgetPointer(686,16));
+	setScriptCallOnClickContextMenu(69, 1, new WidgetPointer(686,9), "1I", new WidgetPointer(686,16));
+	script_2003();
+	setScriptCallOnConfigChange(961, 1195, 1, "Y", new WidgetPointer(686,1));
+	setScriptCallOnSkillChange(961, 19, 1, "Y", new WidgetPointer(686,1));
+	return;
+}

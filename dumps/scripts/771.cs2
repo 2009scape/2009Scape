@@ -1,0 +1,11 @@
+int script_771(int arg0) {
+	switch (arg0) {
+		case 6287:
+			return add(getItemAmtInContainer(93, 6287), getItemAmtInContainer(93, 7801));
+		case 6979:
+			return add(add(getItemAmtInContainer(93, 6979), getItemAmtInContainer(93, 6981)), getItemAmtInContainer(93, 6983));
+		case 2462:
+			return add(add(add(add(add(add(getItemAmtInContainer(93, 2462), getItemAmtInContainer(93, 2460)), getItemAmtInContainer(93, 2464)), getItemAmtInContainer(93, 2466)), getItemAmtInContainer(93, 2468)), getItemAmtInContainer(93, 2470)), getItemAmtInContainer(93, 2472));
+	}
+	return script_1(93, arg0);
+}

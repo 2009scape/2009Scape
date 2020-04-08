@@ -3622,10 +3622,11 @@ final class ItemDefinition {
 														int i39 = Class140_Sub7.anIntArray2929[k];
 														int l61 = Class140_Sub7.anIntArray2929[k + 1];
 														ItemDefinition class48_3 = Class38.getItemDefinition(i39, (byte)70);
-														if(l61 >= 1 && ~l61 >= -6 && null != class48_3.inventoryOptions[l61 + -1])
+														if(l61 >= 1 && ~l61 >= -6 && null != class48_3.inventoryOptions[l61 + -1]) {
 															Class3.aClass94Array75[l++] = class48_3.inventoryOptions[-1 + l61];
-														else
+														} else {
 															Class3.aClass94Array75[l++] = Class3_Sub9.aClass94_2331;
+														}
 														continue;
 													}
 													if(j1 == 4203)
@@ -5304,5 +5305,10 @@ final class ItemDefinition {
 		aClass94_811 = RSString.createRSString("green:");
 		aClass94_809 = aClass94_811;
 		aClass94_806 = aClass94_811;
+	}
+
+	public int getShiftClickActionIndex() {
+		return (inventoryOptions != null)
+				? ("Drop".equalsIgnoreCase(inventoryOptions[4].toString()) ? 4 : -1) : -1;
 	}
 }

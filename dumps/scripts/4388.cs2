@@ -1,0 +1,23 @@
+void script_4388(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	cs2func_script_4384_struct(2,0,0) structdump_3;
+	ivar2 = -1;
+	ivar3 = -1;
+	if (cs2method3701()) {
+		stack_dump0 = bitconfig_9086;
+		stack_dump1 = bitconfig_9087;
+		stack_dump2 = 0;
+		structdump_3 = script_4384(stack_dump0, stack_dump1, stack_dump2);
+		ivar3 = structdump_3.intpart_1;
+		ivar2 = structdump_3.intpart_0;
+		setWidgetSprite(ivar2, new WidgetPointer(arg0));
+		setWidgetSprite(ivar3, new WidgetPointer(arg1));
+		setWidgetRGB(new Color(getColorRelatedMethod4020(standart_config_2094)), new WidgetPointer(arg0));
+		setWidgetRGB(new Color(getColorRelatedMethod4020(standart_config_2095)), new WidgetPointer(arg1));
+	}
+	return;
+}

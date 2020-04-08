@@ -1,0 +1,9 @@
+void script_1281(int arg0,int arg1,int arg2,int arg3) {
+	if (arg2 == -1) {
+		script_1280(arg0, arg1, arg3, arg1);
+		return;
+	}
+	script_1280(arg0, arg1, arg3, arg2);
+	script_1280(arg0, arg2, arg3, arg1);
+	return;
+}

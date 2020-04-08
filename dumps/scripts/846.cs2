@@ -1,0 +1,52 @@
+void script_846(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	ivar2 = ((int)cs2method_3408(105, 73, 1354, arg0));
+	ivar3 = ((int)cs2method_3408(105, 73, 1355, arg0));
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = getWidgetActualX(new WidgetPointer(ivar2));
+	ivar7 = getWidgetActualY(new WidgetPointer(ivar2));
+	ivar8 = getWidgetActualX(new WidgetPointer(ivar3));
+	ivar9 = getWidgetActualY(new WidgetPointer(ivar3));
+	ivar10 = getWidgetRotateY(new WidgetPointer(ivar2));
+	ivar11 = add(multiply(15, 18), 65);
+	ivar12 = add(multiply(11, 18), -2);
+	ivar13 = 0;
+	ivar14 = 0;
+	if (arg0 != 10) {
+		if (((boolean)arg1) && (ivar6 > 65)) {
+			ivar13 = subtract(ivar13, 18);
+			playSoundEffect(4503, 1, 0);
+		} else if (((boolean)arg1) && (ivar6 < subtract(ivar11, 1))) {
+			ivar13 = add(ivar13, 18);
+			playSoundEffect(4503, 1, 0);
+		} else if ((arg1 == 2) && (ivar7 > -2)) {
+			ivar14 = subtract(ivar14, 18);
+			playSoundEffect(4503, 1, 0);
+		} else {
+			if ((arg1 == 3) && (ivar7 < ivar12)) {
+				ivar14 = add(ivar14, 18);
+				playSoundEffect(4503, 1, 0);
+			}
+		}
+		ivar6 = add(add(ivar6, ivar13), ivar4);
+		ivar7 = add(add(ivar7, ivar14), ivar5);
+		ivar8 = add(add(ivar8, ivar13), ivar4);
+		ivar9 = add(add(ivar9, ivar14), ivar5);
+		setWidgetPosition(ivar6, ivar7, 0, 0, new WidgetPointer(ivar2));
+		setWidgetPosition(ivar8, ivar9, 0, 0, new WidgetPointer(ivar3));
+	}
+	return;
+}

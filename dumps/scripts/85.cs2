@@ -1,0 +1,5 @@
+void script_85(int arg0) {
+	setWidgetText(new WidgetPointer(arg0), "");
+	setWidgetNoOptions(new WidgetPointer(arg0));
+	return;
+}

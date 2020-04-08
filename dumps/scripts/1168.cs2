@@ -1,0 +1,9 @@
+void script_1168(int arg0,int arg1,string arg2) {
+	if (mod(getClientCycle(), 50) != 0) {
+		return;
+	}
+	if (setWidgetRegister(new WidgetPointer(885,16), arg0)) {
+		setWidgetText(arg2);
+	}
+	return;
+}

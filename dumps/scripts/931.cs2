@@ -1,0 +1,46 @@
+int script_931(int arg0) {
+	int ivar1;
+	ivar1 = getItemHashmapData(arg0, 770);
+	if (ivar1 == -1) {
+		return 1;
+	}
+	if (getSkillActualLvl(ivar1) < getItemHashmapData(arg0, 771)) {
+		return 0;
+	}
+	ivar1 = getItemHashmapData(arg0, 772);
+	if (ivar1 == -1) {
+		return 1;
+	}
+	if (getSkillActualLvl(ivar1) < getItemHashmapData(arg0, 773)) {
+		return 0;
+	}
+	ivar1 = getItemHashmapData(arg0, 774);
+	if (ivar1 == -1) {
+		return 1;
+	}
+	if (getSkillActualLvl(ivar1) < getItemHashmapData(arg0, 775)) {
+		return 0;
+	}
+	ivar1 = getItemHashmapData(arg0, 776);
+	if (ivar1 == -1) {
+		return 1;
+	}
+	if (getSkillActualLvl(ivar1) < getItemHashmapData(arg0, 777)) {
+		return 0;
+	}
+	ivar1 = getItemHashmapData(arg0, 778);
+	if (ivar1 == -1) {
+		return 1;
+	}
+	if (getSkillActualLvl(ivar1) < getItemHashmapData(arg0, 779)) {
+		return 0;
+	}
+	ivar1 = getItemHashmapData(arg0, 780);
+	if (ivar1 == -1) {
+		return 1;
+	}
+	if (getSkillActualLvl(ivar1) < getItemHashmapData(arg0, 781)) {
+		return 0;
+	}
+	return 1;
+}

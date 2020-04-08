@@ -1,0 +1,27 @@
+void script_4362(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,int arg11,long arg12) {
+	int ivar12;
+	string svar0;
+	if ((((boolean)arg9) || ((boolean)arg8)) || ((boolean)arg6)) {
+		setWidgetSprite(5936, new WidgetPointer(arg2));
+		return;
+	}
+	ivar12 = cs2method_3408(105, 103, 3689, arg6);
+	svar0 = timeToStr(arg4) + " at " + cs2method_3408(105, 115, 3695, arg5);
+	if (((boolean)clanbitconfig_5)) {
+		svar0 = svar0 + " Game Time";
+	} else {
+		svar0 = svar0 + " Clan Local Time";
+	}
+	svar0 = svar0 + "<br>" + "<br>" + "World " + intToStr(arg9) + " at " + "<br>" + cs2method_3408(105, 115, 3696, arg8) + "<br>" + "<br>" + cs2method_3408(105, 115, 3687, arg6);
+	if ((ivar12 != -1) && (arg7 > 0)) {
+		svar0 = svar0 + "<br>" + cs2method_3408(105, 115, ivar12, arg7);
+	}
+	svar0 = svar0 + "<br>" + "<br>" + "Open to " + cs2method_3408(105, 115, 3716, arg10);
+	if (((boolean)arg11)) {
+		svar0 = svar0 + "<br>" + "Attendance is mandatory";
+	}
+	setScriptCallOnClickContextMenu(4363, arg0, svar0, arg12, new WidgetPointer(arg2), arg4, arg5, arg9, arg8, arg6, "is\u00a7Iiiiii", new WidgetPointer(arg1));
+	setWidgetSprite(cs2method_3408(105, 100, 3688, arg6), new WidgetPointer(arg3));
+	setWidgetSprite(5932, new WidgetPointer(arg2));
+	return;
+}

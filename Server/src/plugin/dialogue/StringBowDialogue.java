@@ -1,3 +1,4 @@
+/*
 package plugin.dialogue;
 
 import org.crandor.game.content.dialogue.DialoguePlugin;
@@ -8,23 +9,29 @@ import org.crandor.game.node.entity.player.link.RunScript;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.game.node.item.Item;
 
+*/
 /**
  * Handles the StringBowDialogue dialogue.
  * @author Vexia
- */
+ *//*
+
 @InitializablePlugin
 public class StringBowDialogue extends DialoguePlugin {
 
-	/**
+	*/
+/**
 	 * Constructs a new {@code StringBowDialogue.java} {@code Object}.
-	 */
+	 *//*
+
 	public StringBowDialogue() {
 	}
 
-	/**
+	*/
+/**
 	 * Constructs a new {@code StringBowDialogue.java} {@code Object}.
 	 * @param player the player.
-	 */
+	 *//*
+
 	public StringBowDialogue(Player player) {
 		super(player);
 	}
@@ -34,14 +41,18 @@ public class StringBowDialogue extends DialoguePlugin {
 		return new StringBowDialogue(player);
 	}
 
-	/**
+	*/
+/**
 	 * The item.
-	 */
+	 *//*
+
 	private Item item;
 
-	/**
+	*/
+/**
 	 * The string bow enum.
-	 */
+	 *//*
+
 	private StringBow bow;
 
 	@Override
@@ -98,3 +109,4 @@ public class StringBowDialogue extends DialoguePlugin {
 	}
 
 }
+*/

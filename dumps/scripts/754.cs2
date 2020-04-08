@@ -1,0 +1,8 @@
+void script_754(int arg0,int arg1) {
+	if (((boolean)arg1)) {
+		setWidgetText(new WidgetPointer(662,43), intToStr(arg0) + ".00");
+	} else {
+		setWidgetText(new WidgetPointer(662,43), intToStr(arg0) + ".30");
+	}
+	return;
+}

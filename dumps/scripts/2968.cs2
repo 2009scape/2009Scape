@@ -1,0 +1,17 @@
+void script_2968(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	ivar3 = getWidgetParentId(new WidgetPointer(arg0));
+	ivar4 = 0;
+	ivar4 = getItemAmtInContainer(93, arg1);
+	if (ivar4 > 0) {
+		setWidgetRGB(new Color(125, 215, 100), new WidgetPointer(arg2));
+		setItemOnWidgetMethod2200(arg1, ivar4, new WidgetPointer(arg0));
+	} else {
+		setWidgetRGB(new Color(135, 35, 0), new WidgetPointer(arg2));
+		setItemOnWidgetMethod2200(arg1, -1, new WidgetPointer(arg0));
+	}
+	setWidgetBorderThickness(1, new WidgetPointer(arg0));
+	cs2method2314(171, new WidgetPointer(arg2));
+	return;
+}

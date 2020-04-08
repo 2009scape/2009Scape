@@ -1,0 +1,13 @@
+void script_4041() {
+	int ivar0;
+	ivar0 = 0;
+	if (getDisplayMode() < 2) {
+		setWidgetSize(0, 0, 1, 1, new WidgetPointer(906,256));
+	} else {
+		setWidgetSize(956, 503, 0, 0, new WidgetPointer(906,256));
+	}
+	if ((cs2method6139() == 2) && (getDisplayMode() != 1)) {
+		setWidgetSize(800, 503, 0, 0, new WidgetPointer(906,256));
+	}
+	return;
+}

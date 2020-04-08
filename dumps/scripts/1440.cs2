@@ -1,0 +1,25 @@
+void script_1440(int arg0) {
+	switch (arg0) {
+		case 40173583:
+			setItemOnWidgetMethod2205(standart_config_1068, 1, new WidgetPointer(613,15));
+			break;
+		case 40173584:
+			setItemOnWidgetMethod2205(standart_config_1069, 1, new WidgetPointer(613,16));
+			break;
+		case 40173585:
+			setItemOnWidgetMethod2205(standart_config_1070, 1, new WidgetPointer(613,17));
+			break;
+		case 40173577:
+			setItemOnWidgetMethod2205(standart_config_1065, 1, new WidgetPointer(613,9));
+			break;
+		case 40173578:
+			setItemOnWidgetMethod2205(standart_config_1066, 1, new WidgetPointer(613,10));
+			break;
+		case 40173579:
+			setItemOnWidgetMethod2205(standart_config_1067, 1, new WidgetPointer(613,11));
+			break;
+		case 40173580:
+			setItemOnWidgetMethod2205(standart_config_856, 1, new WidgetPointer(613,12));
+	}
+	return;
+}

@@ -1,0 +1,17 @@
+void script_447(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	string svar0;
+	svar0 = getWidgetText(new WidgetPointer(arg2));
+	ivar3 = getWidgetActualWidth(new WidgetPointer(arg2));
+	ivar4 = getLineCount(ivar3, 494, svar0);
+	ivar5 = add(multiply(ivar4, 10), 5);
+	if (ivar5 > getWidgetActualHeight(new WidgetPointer(arg1))) {
+		setWidgetScrollMax(0, ivar5, new WidgetPointer(arg1));
+		script_31(arg0, arg1, 2598, 2595, 2596, 2597, 2593, 2594);
+		setWidgetTextAlignment(1, 0, 0, new WidgetPointer(arg2));
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg2)), ivar5, 0, 0, new WidgetPointer(arg2));
+	}
+	return;
+}

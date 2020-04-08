@@ -1,0 +1,32 @@
+int script_4218() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	cs2func_script_4217_struct(2,0,0) structdump_0;
+	int stack_dump1;
+	ivar0 = 0;
+	ivar1 = 0;
+	structdump_0 = script_4217();
+	ivar1 = structdump_0.intpart_1;
+	ivar0 = structdump_0.intpart_0;
+	ivar2 = subtract(standart_config_2068, ivar1);
+	ivar3 = subtract(standart_config_450, ivar0);
+	while ((ivar2 > 0) && (ivar3 <= 1000000000)) {
+		stack_dump1 = subtract(ivar2, 1);
+		ivar3 = add(ivar3, 1000000000);
+		ivar2 = stack_dump1;
+	}
+	while ((ivar2 < 0) && (ivar3 >= 1000000000)) {
+		stack_dump1 = add(ivar2, 1);
+		ivar3 = subtract(ivar3, 1000000000);
+		ivar2 = stack_dump1;
+	}
+	if (ivar2 < 0) {
+		return 0;
+	}
+	if (((boolean)ivar2) && (ivar3 <= 100000)) {
+		return max(ivar3, 0);
+	}
+	return 100000;
+}

@@ -1,0 +1,10 @@
+void script_5192() {
+	globalint_1595 = script_5193();
+	globalint_1594 = script_5194();
+	globalint_1596 = -1;
+	script_5176();
+	script_5195();
+	script_5196();
+	script_5180(-1);
+	return;
+}

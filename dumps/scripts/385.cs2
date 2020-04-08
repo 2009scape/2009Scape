@@ -1,0 +1,119 @@
+void script_385(int arg0) {
+	flow_0:
+		if ((arg0 == globalint_543) && (arg0 != -1)) {
+			return;
+		}
+		globalint_543 = arg0;
+		SWITCH (arg0) {
+			case 1112:
+				 GOTO flow_4
+			case 1118:
+				 GOTO flow_5
+			case 1120:
+				 GOTO flow_6
+			case 1127:
+				 GOTO flow_7
+			case 1125:
+				 GOTO flow_8
+			case 1122:
+				 GOTO flow_9
+			case 1128:
+				 GOTO flow_10
+			case 1129:
+				 GOTO flow_11
+			case 1119:
+				 GOTO flow_12
+			case 1114:
+				 GOTO flow_13
+			case 1124:
+				 GOTO flow_14
+			case 1121:
+				 GOTO flow_15
+			case 1115:
+				 GOTO flow_16
+			case 1130:
+				 GOTO flow_17
+			case 1116:
+				 GOTO flow_18
+			case 1126:
+				 GOTO flow_19
+			case 1131:
+				 GOTO flow_20
+			case 1117:
+				 GOTO flow_21
+			case 1113:
+				 GOTO flow_22
+			case 1123:
+				 GOTO flow_23
+			case -1:
+				 GOTO flow_25
+		}
+		GOTO	flow_24
+	flow_4:
+		openInterface(67371042, 1033);
+		GOTO	flow_26
+	flow_5:
+		openInterface(67371042, 1043);
+		GOTO	flow_26
+	flow_6:
+		openInterface(67371042, 1032);
+		GOTO	flow_26
+	flow_7:
+		openInterface(67371042, 1038);
+		GOTO	flow_26
+	flow_8:
+		openInterface(67371042, 1034);
+		GOTO	flow_26
+	flow_9:
+		openInterface(67371042, 1036);
+		GOTO	flow_26
+	flow_10:
+		openInterface(67371042, 1044);
+		GOTO	flow_26
+	flow_11:
+		openInterface(67371042, 1042);
+		GOTO	flow_26
+	flow_12:
+		openInterface(67371042, 1041);
+		GOTO	flow_26
+	flow_13:
+		openInterface(67371042, 1029);
+		GOTO	flow_26
+	flow_14:
+		openInterface(67371042, 1030);
+		GOTO	flow_26
+	flow_15:
+		openInterface(67371042, 1031);
+		GOTO	flow_26
+	flow_16:
+		openInterface(67371042, 1046);
+		GOTO	flow_26
+	flow_17:
+		openInterface(67371042, 1047);
+		GOTO	flow_26
+	flow_18:
+		openInterface(67371042, 1045);
+		GOTO	flow_26
+	flow_19:
+		openInterface(67371042, 1049);
+		GOTO	flow_26
+	flow_20:
+		openInterface(67371042, 1035);
+		GOTO	flow_26
+	flow_21:
+		openInterface(67371042, 1039);
+		GOTO	flow_26
+	flow_22:
+		openInterface(67371042, 1048);
+		GOTO	flow_26
+	flow_23:
+		openInterface(67371042, 1037);
+		GOTO	flow_26
+	flow_24:
+		openInterface(67371042, 1033);
+		GOTO	flow_26
+	flow_25:
+		closeInterface(67371042);
+	flow_26:
+		return;
+}

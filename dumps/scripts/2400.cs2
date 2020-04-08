@@ -1,0 +1,4 @@
+void script_2400(int arg0,int arg1) {
+	script_2010(arg0, arg1, "Level 37 Agility" + "<br>" + "Requires the Grand Tree quest");
+	return;
+}

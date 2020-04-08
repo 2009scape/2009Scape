@@ -1,0 +1,10 @@
+void script_3238(int arg0,int arg1,int arg2) {
+	int ivar3;
+	ivar3 = script_2948();
+	if ((((globalint_174 == arg2) && (mod(subtract(getClientCycle(), arg0), 40) < 20)) && ((ivar3 != -3) && (ivar3 != 21))) && (((ivar3 != 1) && isWidgetHidden(new WidgetPointer(596,7))) && hasWindowFocus())) {
+		setWidgetIsHidden(false, new WidgetPointer(arg1));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(arg1));
+	}
+	return;
+}

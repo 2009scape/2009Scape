@@ -1,0 +1,7 @@
+void script_413() {
+	cameraMethod5511(getMyPositionHash());
+	globalint_1353 = getMyPositionHash();
+	globalint_1359 = 0;
+	globalint_1360 = 0;
+	return;
+}

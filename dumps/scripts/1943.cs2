@@ -1,0 +1,6 @@
+void script_1943() {
+	setWidgetIsHidden(false, new WidgetPointer(802,19));
+	setWidgetText(new WidgetPointer(802,16), globalstring_43);
+	globalint_581 = 1;
+	return;
+}

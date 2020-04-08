@@ -1,0 +1,10 @@
+void script_1517(int arg0,int arg1) {
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		if (globalint_779 != -1) {
+			setWidgetAnimation(getRenderEmoteMaxSomethingMethod4600(globalint_779));
+		} else {
+			setWidgetAnimation(getRenderEmoteMaxSomethingMethod4600(1426));
+		}
+	}
+	return;
+}

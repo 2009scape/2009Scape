@@ -1,0 +1,177 @@
+void script_2790() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	string svar0;
+	int stack_dump0;
+	ivar0 = -1;
+	ivar1 = -1;
+	ivar2 = -1;
+	ivar3 = -1;
+	if (IsFemale()) {
+		stack_dump0 = 2341;
+		ivar2 = 7;
+		ivar0 = stack_dump0;
+		ivar3 = globalint_1008;
+	} else if (((boolean)globalint_774)) {
+		setWidgetSprite(1056, new WidgetPointer(309,6));
+		setWidgetSprite(1047, new WidgetPointer(309,7));
+		stack_dump0 = 703;
+		ivar2 = 1;
+		ivar0 = stack_dump0;
+		ivar1 = 2340;
+		ivar3 = globalint_1009;
+	} else {
+		setWidgetSprite(1048, new WidgetPointer(309,6));
+		setWidgetSprite(1055, new WidgetPointer(309,7));
+		stack_dump0 = 2338;
+		ivar2 = 0;
+		ivar0 = stack_dump0;
+		ivar3 = globalint_1008;
+	}
+	deleteAllExtraChilds(new WidgetPointer(309,10));
+	ivar4 = 0;
+	ivar5 = getCommonDefinitionSize(ivar0);
+	ivar6 = -1;
+	ivar7 = -1;
+	svar0 = "";
+	ivar8 = 0;
+	ivar9 = 0;
+	while (ivar4 < ivar5) {
+		if (ivar1 == -1) {
+			ivar6 = cs2method_3408(105, 74, ivar0, ivar4);
+			ivar7 = getOtherCommonData(ivar6, 788);
+			svar0 = getOtherCommonData(ivar6, 792);
+		} else {
+			ivar7 = cs2method_3408(105, 75, ivar0, ivar4);
+			svar0 = cs2method_3408(105, 115, ivar1, ivar4);
+		}
+		createExtraChild(new WidgetPointer(309,10), 5, getExtraChildGap(new WidgetPointer(309,10)));
+		setWidgetSize(17, 17, 0, 0);
+		setWidgetPosition(0, add(ivar8, 1), 0, 0);
+		createExtraChild(new WidgetPointer(309,10), 4, getExtraChildGap(new WidgetPointer(309,10)));
+		setWidgetSize(20, 19, 1, 0);
+		setWidgetPosition(0, ivar8, 2, 0);
+		setWidgetTextAlignment(0, 1, 0);
+		setWidgetRGB(new Color(255, 152, 31));
+		setWidgetFont(495);
+		setWidgetText(svar0);
+		if (ivar7 == ivar3) {
+			setWidgetSprite(699);
+			ivar9 = ivar8;
+		} else {
+			setWidgetSprite(697);
+			setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), 16777215, "Iii");
+			setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), 16750623, "Iii");
+			setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), 16777215, "Iii");
+			setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), 16750623, "Iii");
+			setWidgetContextMenuOption(1, svar0);
+			setWidgetContextMenuOption(1, svar0);
+			setScriptCallOnClickContextMenu(2831, -2147483644, ivar7, ivar2, "iKi");
+			setScriptCallOnClickContextMenu(2831, -2147483644, ivar7, ivar2, "iKi");
+		}
+		ivar4 = add(ivar4, 1);
+		ivar8 = add(ivar8, 19);
+	}
+	if (ivar8 > getWidgetActualHeight(new WidgetPointer(309,10))) {
+		setWidgetSize(20, 4, 1, 1, new WidgetPointer(309,10));
+		setWidgetScrollMax(0, ivar8, new WidgetPointer(309,10));
+		if (ivar9 < cs2method2601(new WidgetPointer(309,10))) {
+			cs2method2100(0, subtract(ivar9, 5), new WidgetPointer(309,10));
+		} else {
+			if (add(ivar9, 19) >= add(cs2method2601(new WidgetPointer(309,10)), getWidgetActualHeight(new WidgetPointer(309,10)))) {
+				cs2method2100(0, subtract(add(ivar9, 25), getWidgetActualHeight(new WidgetPointer(309,10))), new WidgetPointer(309,10));
+			}
+		}
+		setWidgetIsHidden(false, new WidgetPointer(309,11));
+		script_31(20250635, 20250634, 792, 789, 790, 791, 773, 788);
+	} else {
+		setWidgetSize(4, 4, 1, 1, new WidgetPointer(309,10));
+		setWidgetScrollMax(0, 0, new WidgetPointer(309,10));
+		cs2method2100(0, 0, new WidgetPointer(309,10));
+		deleteAllExtraChilds(new WidgetPointer(309,11));
+		setWidgetIsHidden(true, new WidgetPointer(309,11));
+	}
+	deleteAllExtraChilds(new WidgetPointer(309,16));
+	ivar5 = getCommonDefinitionSize(2345);
+	ivar10 = 5;
+	ivar11 = 0;
+	if (multiply(add(divide(subtract(ivar5, 1), ivar10), 1), 21) > getWidgetActualHeight(new WidgetPointer(309,16))) {
+		stack_dump0 = 4;
+		ivar11 = 2;
+		ivar10 = stack_dump0;
+	}
+	ivar4 = 0;
+	ivar8 = 0;
+	ivar12 = 0;
+	ivar13 = -1;
+	ivar14 = 0;
+	while (ivar4 < ivar5) {
+		ivar14 = cs2method_3408(105, 105, 2345, ivar4);
+		svar0 = cs2method_3408(105, 115, 2344, ivar4);
+		createExtraChild(new WidgetPointer(309,16), 3, getExtraChildGap(new WidgetPointer(309,16)));
+		setWidgetSize(21, 21, 0, 0);
+		setWidgetFilled(1);
+		setWidgetPosition(add(multiply(ivar12, getWidgetActualWidth()), ivar11), ivar8, 0, 0);
+		setWidgetRGB(new Color(cs2method_3408(105, 105, 2343, ivar4)));
+		setScriptCallOnMouseOver(1160, new WidgetPointer(-32768,3), -2147483643, new WidgetPointer(309,22), svar0, 0, 512, "IiIsii");
+		setScriptCallOnMouseExit(40, new WidgetPointer(309,22), "I");
+		createExtraChild(new WidgetPointer(309,16), 5, getExtraChildGap(new WidgetPointer(309,16)));
+		setWidgetSize(getWidgetActualWidth(), getWidgetActualHeight(), 0, 0);
+		setWidgetPosition(getWidgetActualX(), getWidgetActualY(), 0, 0);
+		if (ivar14 == globalint_1015) {
+			setWidgetSprite(1043);
+			ivar9 = ivar8;
+		} else {
+			ivar13 = 1041;
+			setWidgetSprite(ivar13);
+			setScriptCallOnMouseExit(688, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), ivar13, "Iid");
+			ivar13 = 1042;
+			setScriptCallOnMouseEntered(688, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), ivar13, "Iid");
+			setWidgetContextMenuOption(1, svar0);
+			setScriptCallOnClickContextMenu(2832, -2147483644, ivar14, "ii");
+		}
+		ivar4 = add(ivar4, 1);
+		if (ivar12 < subtract(ivar10, 1)) {
+			ivar12 = add(ivar12, 1);
+		} else {
+			ivar12 = 0;
+			ivar8 = add(ivar8, getWidgetActualHeight());
+		}
+	}
+	if (ivar12 != 0) {
+		ivar8 = add(ivar8, 21);
+	}
+	if ((ivar8 > getWidgetActualHeight(new WidgetPointer(309,16))) || (ivar10 < 5)) {
+		setWidgetSize(20, 4, 1, 1, new WidgetPointer(309,16));
+		setWidgetScrollMax(0, ivar8, new WidgetPointer(309,16));
+		if (ivar9 < cs2method2601(new WidgetPointer(309,16))) {
+			cs2method2100(0, subtract(ivar9, 5), new WidgetPointer(309,16));
+		} else {
+			if (add(ivar9, 21) >= add(cs2method2601(new WidgetPointer(309,16)), getWidgetActualHeight(new WidgetPointer(309,16)))) {
+				cs2method2100(0, subtract(add(ivar9, 25), getWidgetActualHeight(new WidgetPointer(309,16))), new WidgetPointer(309,16));
+			}
+		}
+		setWidgetIsHidden(false, new WidgetPointer(309,17));
+		script_31(20250641, 20250640, 792, 789, 790, 791, 773, 788);
+	} else {
+		setWidgetSize(4, 4, 1, 1, new WidgetPointer(309,16));
+		setWidgetScrollMax(0, 0, new WidgetPointer(309,16));
+		cs2method2100(0, 0, new WidgetPointer(309,16));
+		deleteAllExtraChilds(new WidgetPointer(309,17));
+		setWidgetIsHidden(true, new WidgetPointer(309,17));
+	}
+	return;
+}

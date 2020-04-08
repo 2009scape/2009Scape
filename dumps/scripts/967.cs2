@@ -1,0 +1,18 @@
+int script_967(int arg0,int arg1) {
+	if (arg1 > arg0) {
+		if (subtract(arg1, arg0) <= 1024) {
+			return min(add(arg0, 6), arg1);
+		}
+		if (arg0 >= 6) {
+			return subtract(arg0, 6);
+		}
+		return max(script_686(subtract(arg0, 6), 2048), arg1);
+	}
+	if (subtract(arg0, arg1) <= 1024) {
+		return max(subtract(arg0, 6), arg1);
+	}
+	if (arg0 < subtract(2048, 6)) {
+		return add(arg0, 6);
+	}
+	return min(mod(add(arg0, 6), 2048), arg1);
+}

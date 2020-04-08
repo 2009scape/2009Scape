@@ -1,0 +1,11 @@
+void script_2367() {
+	setWidgetIntegerNode(1224, 0, new WidgetPointer(1054,30));
+	setWidgetIntegerNode(1224, 0, new WidgetPointer(1054,31));
+	setWidgetIntegerNode(1224, 0, new WidgetPointer(1054,32));
+	setWidgetIntegerNode(1224, 0, new WidgetPointer(1054,33));
+	setWidgetIntegerNode(1224, 0, new WidgetPointer(1054,34));
+	setWidgetIntegerNode(1224, 0, new WidgetPointer(1054,35));
+	setWidgetIntegerNode(1224, 0, new WidgetPointer(1054,36));
+	setWidgetIntegerNode(1224, 0, new WidgetPointer(1054,37));
+	return;
+}

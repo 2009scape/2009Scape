@@ -1,0 +1,150 @@
+void script_4864() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	int ivar22;
+	int ivar23;
+	int ivar24;
+	int ivar25;
+	int ivar26;
+	int ivar27;
+	int ivar28;
+	int ivar29;
+	int ivar30;
+	int ivar31;
+	int ivar32;
+	int ivar33;
+	int ivar34;
+	int ivar35;
+	int ivar36;
+	int ivar37;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	string svar4;
+	string svar5;
+	cs2func_script_4797_struct(6,0,0) structdump_0;
+	int stack_dump1;
+	cs2func_script_4791_struct(7,1,0) structdump_2;
+	int stack_dump3;
+	cs2func_script_4792_struct(6,0,0) structdump_4;
+	script_4865();
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 1;
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 0;
+	ivar8 = 0;
+	ivar9 = 0;
+	ivar10 = 0;
+	ivar11 = 0;
+	ivar12 = 0;
+	ivar13 = 0;
+	ivar14 = 0;
+	ivar15 = 0;
+	ivar16 = 0;
+	ivar17 = 0;
+	ivar18 = 0;
+	ivar19 = 0;
+	ivar20 = 0;
+	ivar21 = 0;
+	ivar22 = 0;
+	ivar23 = 0;
+	ivar24 = 0;
+	ivar25 = 0;
+	ivar26 = -1;
+	svar0 = "";
+	ivar27 = 0;
+	ivar28 = 0;
+	ivar29 = 0;
+	ivar30 = 0;
+	ivar31 = 0;
+	ivar32 = 0;
+	ivar33 = 0;
+	ivar34 = 0;
+	svar1 = "";
+	svar2 = "You do not have permission from your clan to set the primary resource target.";
+	svar3 = "Toggle whether this resource is the primary resource target.";
+	svar4 = "You do not have permission from your clan to set resource target amounts.";
+	svar5 = "Set a target amount of this resource to be collected.";
+	ivar35 = -1;
+	globalarray_0 = new int[10];
+	ivar36 = 0;
+	ivar37 = 0;
+	if (citadelConfigsInitialized()) {
+		structdump_0 = script_4797();
+		ivar15 = structdump_0.intpart_5;
+		ivar16 = structdump_0.intpart_4;
+		ivar17 = structdump_0.intpart_3;
+		ivar14 = structdump_0.intpart_2;
+		ivar13 = structdump_0.intpart_1;
+		ivar12 = structdump_0.intpart_0;
+		while (ivar3 <= 31) {
+			ivar4 = script_4790(ivar3);
+			if (ivar4 > 0) {
+				stack_dump1 = ivar4;
+				structdump_2 = script_4791(stack_dump1);
+				ivar32 = structdump_2.intpart_6;
+				ivar31 = structdump_2.intpart_5;
+				ivar30 = structdump_2.intpart_4;
+				ivar29 = structdump_2.intpart_3;
+				ivar28 = structdump_2.intpart_2;
+				ivar27 = structdump_2.intpart_1;
+				svar0 = structdump_2.stringpart_0;
+				ivar26 = structdump_2.intpart_0;
+				stack_dump1 = ivar4;
+				stack_dump3 = ivar27;
+				structdump_4 = script_4792(stack_dump1, stack_dump3);
+				ivar9 = structdump_4.intpart_5;
+				ivar11 = structdump_4.intpart_4;
+				ivar10 = structdump_4.intpart_3;
+				ivar8 = structdump_4.intpart_2;
+				ivar7 = structdump_4.intpart_1;
+				ivar6 = structdump_4.intpart_0;
+				ivar5 = script_4975(ivar4);
+				if (ivar5 == 3) {
+					ivar18 = add(ivar18, ivar6);
+					ivar19 = add(ivar19, ivar7);
+					ivar20 = add(ivar20, ivar8);
+					ivar23 = add(ivar23, ivar11);
+					ivar22 = add(ivar22, ivar10);
+					ivar21 = add(ivar21, ivar9);
+				}
+			}
+			ivar3 = add(ivar3, 1);
+		}
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:106
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+				at tests.Main.main(Main.java:45)
+			
+		 */
+	}
+	return;
+}

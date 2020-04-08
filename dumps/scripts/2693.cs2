@@ -1,0 +1,13 @@
+string script_2693(int arg0) {
+	int ivar1;
+	int ivar2;
+	int stack_dump0;
+	opcStruct5303(2,0,0) structdump_1;
+	ivar1 = 0;
+	ivar2 = 0;
+	stack_dump0 = arg0;
+	structdump_1 = cs2method5303(stack_dump0);
+	ivar2 = structdump_1.intpart_1;
+	ivar1 = structdump_1.intpart_0;
+	return intToStr(ivar1) + "x" + intToStr(ivar2);
+}

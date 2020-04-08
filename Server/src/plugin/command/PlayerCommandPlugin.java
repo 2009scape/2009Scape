@@ -1,8 +1,11 @@
 package plugin.command;
 
 import org.crandor.ServerConstants;
+import org.crandor.cache.def.impl.ItemDefinition;
+import org.crandor.cache.def.impl.NPCDefinition;
 import org.crandor.game.component.Component;
 import org.crandor.game.content.skill.Skills;
+import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.info.PlayerDetails;
 import org.crandor.game.node.entity.player.info.Rights;
@@ -12,18 +15,25 @@ import org.crandor.game.node.entity.player.link.RunScript;
 import org.crandor.game.node.entity.player.link.music.MusicEntry;
 import org.crandor.game.node.entity.player.link.quest.Quest;
 import org.crandor.game.node.entity.player.link.quest.QuestRepository;
+import org.crandor.game.node.item.ChanceItem;
 import org.crandor.game.system.command.CommandPlugin;
 import org.crandor.game.system.command.CommandSet;
 import org.crandor.game.system.communication.ClanRepository;
 import org.crandor.game.system.communication.CommunicationInfo;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.map.RegionManager;
 import org.crandor.game.world.repository.Repository;
+import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.net.amsc.WorldCommunicator;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.plugin.Plugin;
+import org.crandor.tools.RandomFunction;
 import org.crandor.tools.StringUtils;
 
 import plugin.zone.GrandExchangeZone.CreditStore;
+
+import java.util.List;
+import java.util.ListIterator;
 
 /**
  * Handles a player command.
@@ -219,7 +229,20 @@ public final class PlayerCommandPlugin extends CommandPlugin {
 			case "donate":
 				sendDonationInfo(player);
 				return true;
-
+			case "roll":
+				rollSkill(player);
+				return true;
+			case "drops":
+				if(arguments.length > 0) {
+					int npcid = toInteger(arguments[1]);
+					getDrops(player, npcid);
+				} else {
+					player.getPacketDispatch().sendMessage("Syntax: ::getdrops id");
+				}
+				return true;
+			case "npcs":
+				getNPCs(player);
+				return true;
 			case "reply":
 				if(player.getInterfaceManager().isOpened()){
 					player.sendMessage("<col=e74c3c>Please finish what you're doing first.");
@@ -249,6 +272,93 @@ public final class PlayerCommandPlugin extends CommandPlugin {
 	 * Sends commands.
 	 * @param player the player.
 	 */
+	/**
+	 * ::npcs lists NPCs in the area and their IDs
+	 * @author ceik
+	 */
+	public final void getNPCs(Player player){
+		player.getInterfaceManager().close();
+		final List<NPC> npcs = RegionManager.getLocalNpcs(player);
+		for (int i = 0; i < 311; i++) {
+			player.getPacketDispatch().sendString("", 275, i);
+		}
+		player.getPacketDispatch().sendString("<col=ecf0f1>Nearby NPCs</col>", 275, 2);
+		int lineid = 11;
+		for(NPC n : npcs){
+			player.getPacketDispatch().sendString("<col=05edce>[" + n.getId() + "]</col> " + "<col=f5fffe>" + n.getName() + "</col>",275,lineid++);
+		}
+		player.getInterfaceManager().open(new Component(275));
+	}
+
+	/**
+	 * ::drops lists the drops for a specific NPC ID
+	 * @author ceik
+	 */
+	public final void getDrops(Player player, int npc){
+		player.getInterfaceManager().close();
+		for (int i = 0; i < 311; i++) {
+			player.getPacketDispatch().sendString("", 275, i);
+		}
+		int lineid = 11;
+		List<ChanceItem> drops = NPCDefinition.forId(npc).getDropTables().getMainTable();
+		ListIterator drop = drops.listIterator();
+		player.getPacketDispatch().sendString("<col=ecf0f1>" + NPCDefinition.forId(npc).getName() + " (Level " + NPCDefinition.forId(npc).getCombatLevel() + ")</col>", 275, 2);
+		while(drop.hasNext()){
+			ChanceItem current = (ChanceItem) drop.next();
+			String rarity = "";
+			switch(current.getDropFrequency()){
+				case UNCOMMON:
+					rarity = "<col=edce05>UNCOMMON</col>";
+					break;
+				case RARE:
+					rarity = "<col=ff6b08>RARE</col>";
+					break;
+				case VERY_RARE:
+					rarity = "<col=ff0000>VERY RARE</col>";
+					break;
+				case COMMON:
+					rarity = "<col=04c91e>COMMON</col>";
+					break;
+
+			}
+			player.getPacketDispatch().sendString("(" + rarity + ") <col=f5fffe>" + ((current.getMinimumAmount() - current.getMaximumAmount() != 0) ? (current.getMinimumAmount() + "-" + current.getMaximumAmount()) : "") + " " + ItemDefinition.forId(current.getId()).getName() + "</col>", 275, lineid++);
+		}
+		player.getInterfaceManager().open(new Component(275));
+	}
+
+	/**
+	 * ::roll command
+	 * @author ceik
+	 */
+	public final void rollSkill(Player player){
+		boolean rareEventChance = RandomFunction.random(100) == 54;
+		if(rareEventChance){
+			int rareChoice = RandomFunction.random(2,5);
+			if(rareChoice % 5 == 0){
+				player.sendChat("Oh god! Somebody help me!");
+				player.getAnimator().reset();
+				player.getAnimator().forceAnimation(new Animation(3123));
+				return;
+			}
+			if(rareChoice % 2 == 0){
+				player.sendChat("Yibbly jibbly dibbly nibbly doo dah");
+				return;
+			}
+			if(rareChoice % 3 == 0){
+				player.sendChat("Oh god! Somebody help me!");
+				player.getAnimator().reset();
+				player.getAnimator().forceAnimation(new Animation(92));
+				return;
+			}
+		}
+		int skill = RandomFunction.random(0,23);
+		player.sendChat("I think I should train " + Skills.SKILL_NAME[skill]);
+	}
+
+	/**
+	 * Sends commands.
+	 * @param player the player.
+	 */
 	private void sendCommands(Player player) {
 		if (player.getInterfaceManager().isOpened()) {
 			player.sendMessage("Finish what you're currently doing.");
@@ -268,6 +378,10 @@ public final class PlayerCommandPlugin extends CommandPlugin {
 		player.getPacketDispatch().sendString("<col=2c3e50>Shows this list.", 275, lineId++);
 		player.getPacketDispatch().sendString("<col=ecf0f1>::players", 275, lineId++);
 		player.getPacketDispatch().sendString("<col=2c3e50>Get online player count.", 275, lineId++);
+		player.getPacketDispatch().sendString("<col=ecf0f1>::npcs", 275, lineId++);
+		player.getPacketDispatch().sendString("<col=2c3e50>Lists all NPCs in your areas and their IDs", 275, lineId++);
+		player.getPacketDispatch().sendString("<col=ecf0f1>::drops id", 275, lineId++);
+		player.getPacketDispatch().sendString("<col=2c3e50>Lists drops for a given NPC id", 275, lineId++);
 		player.getPacketDispatch().sendString("<col=ecf0f1>::quests", 275, lineId++);
 		player.getPacketDispatch().sendString("<col=2c3e50>Shows a list of all available quests.", 275, lineId++);
 		player.getPacketDispatch().sendString("<col=ecf0f1>::togglenews", 275, lineId++);
@@ -278,8 +392,14 @@ public final class PlayerCommandPlugin extends CommandPlugin {
 		player.getPacketDispatch().sendString("<col=2c3e50>Remove your bank pin.", 275, lineId++);
 		player.getPacketDispatch().sendString("<col=ecf0f1>::bankresettabs", 275, lineId++);
 		player.getPacketDispatch().sendString("<col=2c3e50>Reset all of your bank tabs.", 275, lineId++);
+		player.getPacketDispatch().sendString("<col=ecf0f1>::stats", 275, lineId++);
+		player.getPacketDispatch().sendString("<col=2c3e50>View a player's stats.", 275, lineId++);
+		player.getPacketDispatch().sendString("<col=ecf0f1>::roll", 275, lineId++);
+		player.getPacketDispatch().sendString("<col=2c3e50>Picks a skill to train for you, and perhaps more?", 275, lineId++);
+
 	}
-	
+
+
 	private void sendHiscore(Player player, Player target) {
 		if (player.getInterfaceManager().isOpened()) {
 			player.sendMessage("Finish what you're currently doing.");
@@ -305,14 +425,14 @@ public final class PlayerCommandPlugin extends CommandPlugin {
 		}
 		
 		//stats
-		player.getPacketDispatch().sendString("<col=ecf0f1>(Since 27/03/2020)</col> Al kharid passes: " + target.getStatisticsManager().getAL_KHARID_GATE_PASSES().getStatisticalAmount(), 275, lineId++);
-		player.getPacketDispatch().sendString("<col=ecf0f1>(Since 27/03/2020)</col> Logs chopped: " +  target.getStatisticsManager().getLOGS_OBTAINED().getStatisticalAmount(), 275, lineId++);
-		player.getPacketDispatch().sendString("<col=ecf0f1>(Since 27/03/2020)</col> Flax picked: " +  target.getStatisticsManager().getFLAX_PICKED().getStatisticalAmount(), 275, lineId++);
-		player.getPacketDispatch().sendString("<col=ecf0f1>(Since 27/03/2020)</col> Clue scrolls completed: " +  target.getStatisticsManager().getCLUES_COMPLETED().getStatisticalAmount(), 275, lineId++);
-		player.getPacketDispatch().sendString("<col=ecf0f1>(Since 27/03/2020)</col> Enemies killed: " +  target.getStatisticsManager().getENTITIES_KILLED().getStatisticalAmount(), 275, lineId++);
-		player.getPacketDispatch().sendString("<col=ecf0f1>(Since 27/03/2020)</col> Deaths: " +  target.getStatisticsManager().getDEATHS().getStatisticalAmount(), 275, lineId++);
 		player.getPacketDispatch().sendString("Music tracks unlocked: " +  target.getMusicPlayer().getUnlocked().size() + "/" + MusicEntry.getSongs().size(), 275, lineId++);
-		
+		player.getPacketDispatch().sendString("Clue scrolls completed: " +  target.getStatisticsManager().getCLUES_COMPLETED().getStatisticalAmount(), 275, lineId++);
+		player.getPacketDispatch().sendString("Slayer tasks completed: " + target.getSlayer().getTotalTasks(),275,lineId++);
+		player.getPacketDispatch().sendString("Al kharid passes: " + target.getStatisticsManager().getAL_KHARID_GATE_PASSES().getStatisticalAmount(), 275, lineId++);
+		player.getPacketDispatch().sendString("Enemies killed: " +  target.getStatisticsManager().getENTITIES_KILLED().getStatisticalAmount(), 275, lineId++);
+		player.getPacketDispatch().sendString("Logs chopped: " +  target.getStatisticsManager().getLOGS_OBTAINED().getStatisticalAmount(), 275, lineId++);
+		player.getPacketDispatch().sendString("Flax picked: " +  target.getStatisticsManager().getFLAX_PICKED().getStatisticalAmount(), 275, lineId++);
+		player.getPacketDispatch().sendString("Deaths: " +  target.getStatisticsManager().getDEATHS().getStatisticalAmount(), 275, lineId++);
 		
 		//quests
 		player.getPacketDispatch().sendString("", 275, lineId++);

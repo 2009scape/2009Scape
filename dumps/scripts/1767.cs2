@@ -1,0 +1,16 @@
+void script_1767() {
+	script_71(5);
+	doWidgetType21Task(0, new WidgetPointer(783,1));
+	doWidgetType21Task(0, new WidgetPointer(783,2));
+	doWidgetType21Task(0, new WidgetPointer(783,3));
+	doWidgetType21Task(0, new WidgetPointer(783,4));
+	doWidgetType21Task(0, new WidgetPointer(783,5));
+	doWidgetType21Task(0, new WidgetPointer(783,6));
+	doWidgetType21Task(0, new WidgetPointer(783,7));
+	doWidgetType21Task(0, new WidgetPointer(783,8));
+	doWidgetType21Task(0, new WidgetPointer(783,9));
+	doWidgetType21Task(0, new WidgetPointer(783,10));
+	doWidgetType21Task(0, new WidgetPointer(783,11));
+	script_1766();
+	return;
+}

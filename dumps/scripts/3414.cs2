@@ -1,0 +1,6 @@
+void script_3414(int arg0) {
+	if (bitconfig_7868 == 2) {
+		setWidgetModel(57477, new WidgetPointer(arg0));
+	}
+	return;
+}

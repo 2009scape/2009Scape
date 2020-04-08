@@ -23,7 +23,7 @@ public final class KolodionSession {
 	private final KolodionNPC kolodion;
 
 	/**
-	 * Constructs a new {@code KolodionSession} {@code Object}.
+	 * Constructs a new {@code ExperimentSession} {@code Object}.
 	 * @param player the player.
 	 */
 	public KolodionSession(final Player player) {

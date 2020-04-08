@@ -1,0 +1,31 @@
+void script_817(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar1 = 31;
+	ivar2 = 0;
+	ivar3 = 31;
+	if (arg0 == 5) {
+		if (bitconfig_9816 >= script_5255()) {
+			ivar2 = 0;
+		} else if (((boolean)getSkillActualLvl(arg0)) || (getSkillActualLvl(arg0) == -1)) {
+			ivar2 = 0;
+		} else {
+			ivar2 = subtract(ivar1, divide(multiply(ivar1, bitconfig_9816), script_5255()));
+		}
+	} else if (getSkillCurrentLvl(arg0) >= getSkillActualLvl(arg0)) {
+		ivar2 = 0;
+	} else if (((boolean)getSkillActualLvl(arg0)) || (getSkillActualLvl(arg0) == -1)) {
+		ivar2 = 0;
+	} else {
+		ivar2 = subtract(ivar1, divide(multiply(ivar1, getSkillCurrentLvl(arg0)), getSkillActualLvl(arg0)));
+	}
+	if (arg0 == 5) {
+		setWidgetSize(ivar3, ivar2, 0, 0, new WidgetPointer(749,3));
+	} else {
+		if (arg0 == 23) {
+			setWidgetSize(ivar3, ivar2, 0, 0, new WidgetPointer(747,4));
+		}
+	}
+	return;
+}

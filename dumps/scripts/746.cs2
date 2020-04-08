@@ -1,0 +1,14 @@
+void script_746(int arg0) {
+	if (((boolean)arg0)) {
+		setWidgetIsHidden(false, new WidgetPointer(18,42));
+		setScriptCallOnMouseEntered(-1, "", new WidgetPointer(18,29));
+		setScriptCallOnMouseExit(-1, "", new WidgetPointer(18,29));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(18,42));
+		setScriptCallOnMouseEntered(748, 1, "1", new WidgetPointer(18,29));
+		setScriptCallOnMouseExit(748, 0, "1", new WidgetPointer(18,29));
+	}
+	script_749(0);
+	script_41(1179689);
+	return;
+}

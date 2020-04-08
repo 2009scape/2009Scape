@@ -1,0 +1,161 @@
+void script_1289() {
+	setWidgetText(new WidgetPointer(129,52), intToStr(bitconfig_861));
+	setWidgetText(new WidgetPointer(129,53), intToStr(bitconfig_862));
+	if (bitconfig_842 == 2) {
+		setWidgetModel(8448, new WidgetPointer(129,0));
+		setWidgetModel(8449, new WidgetPointer(129,1));
+		setWidgetModel(8496, new WidgetPointer(129,26));
+	} else if (((boolean)bitconfig_842)) {
+		setWidgetModel(8447, new WidgetPointer(129,0));
+		setWidgetModel(8450, new WidgetPointer(129,1));
+		setWidgetModel(8495, new WidgetPointer(129,26));
+	} else {
+		setWidgetModel(-1, new WidgetPointer(129,26));
+		setWidgetModel(8448, new WidgetPointer(129,0));
+		setWidgetModel(8450, new WidgetPointer(129,1));
+	}
+	if (bitconfig_843 == 2) {
+		setWidgetModel(8452, new WidgetPointer(129,2));
+		setWidgetModel(8453, new WidgetPointer(129,3));
+		setWidgetModel(8498, new WidgetPointer(129,27));
+	} else if (((boolean)bitconfig_843)) {
+		setWidgetModel(8451, new WidgetPointer(129,2));
+		setWidgetModel(8454, new WidgetPointer(129,3));
+		setWidgetModel(8497, new WidgetPointer(129,27));
+	} else {
+		setWidgetModel(-1, new WidgetPointer(129,27));
+		setWidgetModel(8452, new WidgetPointer(129,2));
+		setWidgetModel(8454, new WidgetPointer(129,3));
+	}
+	if (bitconfig_844 == 2) {
+		setWidgetModel(8456, new WidgetPointer(129,4));
+		setWidgetModel(8457, new WidgetPointer(129,5));
+		setWidgetModel(8500, new WidgetPointer(129,28));
+	} else if (((boolean)bitconfig_844)) {
+		setWidgetModel(8455, new WidgetPointer(129,4));
+		setWidgetModel(8458, new WidgetPointer(129,5));
+		setWidgetModel(8499, new WidgetPointer(129,28));
+	} else {
+		setWidgetModel(-1, new WidgetPointer(129,28));
+		setWidgetModel(8456, new WidgetPointer(129,4));
+		setWidgetModel(8458, new WidgetPointer(129,5));
+	}
+	if (bitconfig_845 == 2) {
+		setWidgetModel(8460, new WidgetPointer(129,6));
+		setWidgetModel(8461, new WidgetPointer(129,7));
+		setWidgetModel(8502, new WidgetPointer(129,29));
+	} else if (((boolean)bitconfig_845)) {
+		setWidgetModel(8459, new WidgetPointer(129,6));
+		setWidgetModel(8462, new WidgetPointer(129,7));
+		setWidgetModel(8501, new WidgetPointer(129,29));
+	} else {
+		setWidgetModel(-1, new WidgetPointer(129,29));
+		setWidgetModel(8460, new WidgetPointer(129,6));
+		setWidgetModel(8462, new WidgetPointer(129,7));
+	}
+	if (bitconfig_846 == 2) {
+		setWidgetModel(8464, new WidgetPointer(129,8));
+		setWidgetModel(8465, new WidgetPointer(129,9));
+		setWidgetModel(8504, new WidgetPointer(129,30));
+	} else if (((boolean)bitconfig_846)) {
+		setWidgetModel(8463, new WidgetPointer(129,8));
+		setWidgetModel(8466, new WidgetPointer(129,9));
+		setWidgetModel(8503, new WidgetPointer(129,30));
+	} else {
+		setWidgetModel(-1, new WidgetPointer(129,30));
+		setWidgetModel(8464, new WidgetPointer(129,8));
+		setWidgetModel(8466, new WidgetPointer(129,9));
+	}
+	if (bitconfig_847 == 2) {
+		setWidgetModel(8468, new WidgetPointer(129,10));
+		setWidgetModel(8469, new WidgetPointer(129,11));
+		setWidgetModel(8506, new WidgetPointer(129,31));
+	} else if (((boolean)bitconfig_847)) {
+		setWidgetModel(8467, new WidgetPointer(129,10));
+		setWidgetModel(8470, new WidgetPointer(129,11));
+		setWidgetModel(8505, new WidgetPointer(129,31));
+	} else {
+		setWidgetModel(-1, new WidgetPointer(129,31));
+		setWidgetModel(8468, new WidgetPointer(129,10));
+		setWidgetModel(8470, new WidgetPointer(129,11));
+	}
+	if (bitconfig_848 == 2) {
+		setWidgetModel(8472, new WidgetPointer(129,12));
+		setWidgetModel(8473, new WidgetPointer(129,13));
+		setWidgetModel(8508, new WidgetPointer(129,32));
+	} else if (((boolean)bitconfig_848)) {
+		setWidgetModel(8471, new WidgetPointer(129,12));
+		setWidgetModel(8474, new WidgetPointer(129,13));
+		setWidgetModel(8507, new WidgetPointer(129,32));
+	} else {
+		setWidgetModel(-1, new WidgetPointer(129,32));
+		setWidgetModel(8472, new WidgetPointer(129,12));
+		setWidgetModel(8474, new WidgetPointer(129,13));
+	}
+	if (bitconfig_849 == 2) {
+		setWidgetModel(8476, new WidgetPointer(129,14));
+		setWidgetModel(8477, new WidgetPointer(129,15));
+		setWidgetModel(8510, new WidgetPointer(129,33));
+	} else if (((boolean)bitconfig_849)) {
+		setWidgetModel(8475, new WidgetPointer(129,14));
+		setWidgetModel(8478, new WidgetPointer(129,15));
+		setWidgetModel(8509, new WidgetPointer(129,33));
+	} else {
+		setWidgetModel(-1, new WidgetPointer(129,33));
+		setWidgetModel(8476, new WidgetPointer(129,14));
+		setWidgetModel(8478, new WidgetPointer(129,15));
+	}
+	if (bitconfig_850 == 2) {
+		setWidgetModel(8480, new WidgetPointer(129,16));
+		setWidgetModel(8481, new WidgetPointer(129,17));
+		setWidgetModel(8512, new WidgetPointer(129,34));
+	} else if (((boolean)bitconfig_850)) {
+		setWidgetModel(8479, new WidgetPointer(129,16));
+		setWidgetModel(8482, new WidgetPointer(129,17));
+		setWidgetModel(8511, new WidgetPointer(129,34));
+	} else {
+		setWidgetModel(-1, new WidgetPointer(129,34));
+		setWidgetModel(8480, new WidgetPointer(129,16));
+		setWidgetModel(8482, new WidgetPointer(129,17));
+	}
+	if (bitconfig_851 == 2) {
+		setWidgetModel(8484, new WidgetPointer(129,18));
+		setWidgetModel(8485, new WidgetPointer(129,19));
+		setWidgetModel(8514, new WidgetPointer(129,35));
+	} else if (((boolean)bitconfig_851)) {
+		setWidgetModel(8483, new WidgetPointer(129,18));
+		setWidgetModel(8486, new WidgetPointer(129,19));
+		setWidgetModel(8513, new WidgetPointer(129,35));
+	} else {
+		setWidgetModel(-1, new WidgetPointer(129,35));
+		setWidgetModel(8484, new WidgetPointer(129,18));
+		setWidgetModel(8486, new WidgetPointer(129,19));
+	}
+	if (bitconfig_852 == 2) {
+		setWidgetModel(8488, new WidgetPointer(129,20));
+		setWidgetModel(8489, new WidgetPointer(129,21));
+		setWidgetModel(8516, new WidgetPointer(129,36));
+	} else if (((boolean)bitconfig_852)) {
+		setWidgetModel(8487, new WidgetPointer(129,20));
+		setWidgetModel(8490, new WidgetPointer(129,21));
+		setWidgetModel(8515, new WidgetPointer(129,36));
+	} else {
+		setWidgetModel(-1, new WidgetPointer(129,36));
+		setWidgetModel(8488, new WidgetPointer(129,20));
+		setWidgetModel(8490, new WidgetPointer(129,21));
+	}
+	if (bitconfig_853 == 2) {
+		setWidgetModel(8492, new WidgetPointer(129,22));
+		setWidgetModel(8493, new WidgetPointer(129,23));
+		setWidgetModel(8518, new WidgetPointer(129,37));
+	} else if (((boolean)bitconfig_853)) {
+		setWidgetModel(8491, new WidgetPointer(129,22));
+		setWidgetModel(8494, new WidgetPointer(129,23));
+		setWidgetModel(8517, new WidgetPointer(129,37));
+	} else {
+		setWidgetModel(-1, new WidgetPointer(129,37));
+		setWidgetModel(8492, new WidgetPointer(129,22));
+		setWidgetModel(8494, new WidgetPointer(129,23));
+	}
+	return;
+}

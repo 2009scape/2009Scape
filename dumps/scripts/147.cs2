@@ -1,0 +1,91 @@
+void script_147(int arg0,int arg1) {
+	switch (arg0) {
+		case 0:
+			globalint_12 = arg1;
+			break;
+		case 1:
+			globalint_13 = arg1;
+			break;
+		case 2:
+			globalint_14 = arg1;
+			break;
+		case 3:
+			globalint_15 = arg1;
+			break;
+		case 4:
+			globalint_16 = arg1;
+			break;
+		case 5:
+			globalint_17 = arg1;
+			break;
+		case 6:
+			globalint_18 = arg1;
+			break;
+		case 7:
+			globalint_19 = arg1;
+			break;
+		case 8:
+			globalint_20 = arg1;
+			break;
+		case 9:
+			globalint_21 = arg1;
+			break;
+		case 10:
+			globalint_22 = arg1;
+			break;
+		case 11:
+			globalint_23 = arg1;
+			break;
+		case 12:
+			globalint_24 = arg1;
+			break;
+		case 13:
+			globalint_25 = arg1;
+			break;
+		case 14:
+			globalint_26 = arg1;
+			break;
+		case 15:
+			globalint_27 = arg1;
+			break;
+		case 16:
+			globalint_28 = arg1;
+			break;
+		case 17:
+			globalint_29 = arg1;
+			break;
+		case 18:
+			globalint_30 = arg1;
+			break;
+		case 19:
+			globalint_31 = arg1;
+			break;
+		case 20:
+			globalint_32 = arg1;
+			break;
+		case 21:
+			globalint_33 = arg1;
+			break;
+		case 22:
+			globalint_34 = arg1;
+			break;
+		case 23:
+			globalint_35 = arg1;
+			break;
+		case 24:
+			globalint_36 = arg1;
+			break;
+		case 25:
+			globalint_37 = arg1;
+			break;
+		case 26:
+			globalint_38 = arg1;
+			break;
+		case 27:
+			globalint_39 = arg1;
+			break;
+		case -1:
+			globalint_212 = arg1;
+	}
+	return;
+}

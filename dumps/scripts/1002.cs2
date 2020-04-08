@@ -1,0 +1,385 @@
+cs2func_script_1002_struct(2,2,0) script_1002(int arg0,int arg1) {
+	switch (arg0) {
+		case 0:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1002_struct(-1, 7620, "You must complete Druidic Ritual before you can use Herblore.", "");
+				case 1:
+					return newstruct cs2func_script_1002_struct(3, 121, "Attack potion" + "<br>" + "Guam & eye of newt", "You can now make " + "<col=000080>" + "attack potions" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1002_struct(5, 175, "Anti-poison" + "<br>" + "Marrentill & ground unicorn horn", "You can now make " + "<col=000080>" + "anti-poison" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1002_struct(8, 4844, "Relicym's balm" + "<br>" + "Rogue's Purse and snake weed (after starting Zogre Flesh Eaters)", "You now have the Herblore level required to make " + "<col=000080>" + "Relicym's balms" + "</col>" + " (after starting Zogre Flesh Eaters).");
+				case 4:
+					return newstruct cs2func_script_1002_struct(12, 115, "Strength potion" + "<br>" + "Tarromin & limpwurt root", "You can now make " + "<col=000080>" + "strength potions" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1002_struct(19, 10142, "Guam tar" + "<br>" + "Guam & swamp tar", "You can now make " + "<col=000080>" + "guam tar" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1002_struct(22, 127, "Stat restore potion" + "<br>" + "Harralander & red spiders' eggs", "You can now make " + "<col=000080>" + "stat restore potions" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1002_struct(22, 7662, "Guthix Balance potion" + "<br>" + "Harralander, red spiders' eggs, garlic and silver dust", "You can now make " + "<col=000080>" + "Guthix balance potions" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1002_struct(25, 1582, "Blamish oil" + "<br>" + "Harralander & blamish snail slime", "You can now make " + "<col=000080>" + "blamish oil" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1002_struct(26, 3010, "Energy potion" + "<br>" + "Harralander & chocolate dust", "You can now make " + "<col=000080>" + "energy potions" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_1002_struct(30, 133, "Defence potion" + "<br>" + "Ranarr & white berries", "You can now make " + "<col=000080>" + "defence potions" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_1002_struct(31, 10143, "Marrentill tar" + "<br>" + "Marrentill & swamp tar", "You can now make " + "<col=000080>" + "marrentill tar" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_1002_struct(31, 12633, "Super fishing explosive" + "<br>" + "Guam & rubium (after Kennith's Concerns)", "You now have the Herblore level required to make " + "<col=000080>" + "super fishing explosives" + "</col>" + " (after Kennith's Concerns).");
+				case 13:
+					return newstruct cs2func_script_1002_struct(34, 3034, "Agility potion" + "<br>" + "Toadflax & toad legs", "You can now make " + "<col=000080>" + "agility potions" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_1002_struct(36, 9741, "Combat potion" + "<br>" + "Harralander & ground desert goat horn", "You can now make " + "<col=000080>" + "combat potions" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_1002_struct(38, 139, "Prayer restore potion" + "<br>" + "Ranarr & snape grass", "You can now make " + "<col=000080>" + "prayer restore potions" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_1002_struct(39, 10144, "Tarromin tar" + "<br>" + "Tarromin & swamp tar", "You can now make " + "<col=000080>" + "tarromin tar" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_1002_struct(40, 12142, "Summoning Potion" + "<br>" + "Spirit weed & cockatrice egg", "You can now make " + "<col=000080>" + "summoning potions" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_1002_struct(42, 14840, "Crafting potion" + "<br>" + "Wergali & giant frogspawn", "You can now make " + "<col=000080>" + "crafting potions" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_1002_struct(44, 10145, "Harralander tar" + "<br>" + "Harralander & swamp tar", "You can now make " + "<col=000080>" + "harralander tar" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_1002_struct(45, 145, "Super Attack potion" + "<br>" + "Irit & eye of newt", "You can now make " + "<col=000080>" + "super attack potions" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_1002_struct(46, 18662, "Vial of stench" + "<br>" + "Irit & chopped onion (after starting Buyers & Cellars: A Guild of our Own)", "You can now make " + "<col=000080>" + "a vial of stench" + "</col>" + " with Robin's help (after starting Buyers & Cellars: A Guild of our Own).");
+				case 22:
+					return newstruct cs2func_script_1002_struct(48, 181, "Super anti-poison" + "<br>" + "Irit & ground unicorn horn", "You can now make " + "<col=000080>" + "super anti-poison" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_1002_struct(50, 151, "Fishing potion" + "<br>" + "Avantoe & snape grass", "You can now make " + "<col=000080>" + "fishing potions" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_1002_struct(52, 3018, "Super energy potion" + "<br>" + "Avantoe & Mort Myre fungi", "You can now make " + "<col=000080>" + "super energy potions" + "</col>" + ".");
+				case 25:
+					return newstruct cs2func_script_1002_struct(53, 10000, "Hunter potion - Avantoe & ground sabre-toothed kebbit teeth", "You can now make " + "<col=000080>" + "hunter potions" + "</col>" + ".");
+				case 26:
+					return newstruct cs2func_script_1002_struct(54, 20024, "Juju hunter potion" + "<br>" + "Erzille & corrupt vine", "You can now make " + "<col=000080>" + "juju hunter potions" + "</col>" + ".");
+				case 27:
+					return newstruct cs2func_script_1002_struct(55, 157, "Super Strength potion" + "<br>" + "Kwuarm & limpwurt root", "You can now make " + "<col=000080>" + "super strength potions" + "</col>" + ".");
+				case 28:
+					return newstruct cs2func_script_1002_struct(57, 9022, "Magic essence potion" + "<br>" + "Starflower & ground gorak claw", "You can now make " + "<col=000080>" + "magic essence potions" + "</col>" + ".");
+				case 29:
+					return newstruct cs2func_script_1002_struct(58, 14848, "Fletching potion" + "<br>" + "Wergali & wimpy bird feather", "You can now make " + "<col=000080>" + "fletching potions" + "</col>" + ".");
+				case 30:
+					return newstruct cs2func_script_1002_struct(59, 20028, "Scentless potion" + "<br>" + "Argway & shadow vine", "You can now make " + "<col=000080>" + "scentless potions" + "</col>" + ".");
+				case 31:
+					return newstruct cs2func_script_1002_struct(60, 187, "Weapon poison" + "<br>" + "Kwuarm & ground blue dragon scale", "You can now make " + "<col=000080>" + "weapon poisons" + "</col>" + ".");
+				case 32:
+					return newstruct cs2func_script_1002_struct(63, 3026, "Super restore potion" + "<br>" + "Snapdragon & red spiders' eggs", "You can now make " + "<col=000080>" + "super restore potions" + "</col>" + ".");
+				case 33:
+					return newstruct cs2func_script_1002_struct(64, 20012, "Juju farming potion" + "<br>" + "Ugune & marble vine", "You can now make " + "<col=000080>" + "juju farming potions" + "</col>" + ".");
+				case 34:
+					return newstruct cs2func_script_1002_struct(65, 10927, "Sanfew Serum" + "<br>" + "Super restore potion, snake weed, ground unicorn horn and nail beast nails.", "You can now make " + "<col=000080>" + "Sanfew serums" + "</col>" + ".");
+				case 35:
+					return newstruct cs2func_script_1002_struct(66, 163, "Super Defence potion" + "<br>" + "Cadantine & white berries", "You can now make " + "<col=000080>" + "super defence potions" + "</col>" + ".");
+				case 36:
+					return newstruct cs2func_script_1002_struct(67, 20008, "Juju cooking potion" + "<br>" + "Shengo & plant teeth", "You can now make " + "<col=000080>" + "juju cooking potions" + "</col>" + ".");
+				case 37:
+					return newstruct cs2func_script_1002_struct(68, 5945, "Anti-poison+" + "<br>" + "Coconut milk, toadflax & yew roots", "You can now make " + "<col=000080>" + "anti-poison+ potions" + "</col>" + ".");
+				case 38:
+					return newstruct cs2func_script_1002_struct(69, 2454, "Anti fire-breath potion" + "<br>" + "Lantadyme & ground blue dragon scale", "You can now make " + "<col=000080>" + "anti fire-breath potions" + "</col>" + ".");
+				case 39:
+					return newstruct cs2func_script_1002_struct(70, 20020, "Juju fishing potion" + "<br>" + "Shengo & aquatic vine", "You can now make " + "<col=000080>" + "juju fishing potions" + "</col>" + ".");
+				case 40:
+					return newstruct cs2func_script_1002_struct(71, 20016, "Juju woodcutting potion" + "<br>" + "Samaden & oily vine", "You can now make " + "<col=000080>" + "juju woodcutting potions" + "</col>" + ".");
+				case 41:
+					return newstruct cs2func_script_1002_struct(72, 169, "Ranging potion" + "<br>" + "Dwarf weed & wine of Zamorak", "You can now make " + "<col=000080>" + "ranging potions" + "</col>" + ".");
+				case 42:
+					return newstruct cs2func_script_1002_struct(73, 5937, "Weapon poison+" + "<br>" + "Coconut milk, cactus spine & red spiders' eggs", "You can now make " + "<col=000080>" + "weapon poison+ potions" + "</col>" + ".");
+				case 43:
+					return newstruct cs2func_script_1002_struct(74, 20004, "Juju mining potion" + "<br>" + "Samaden & draconic vine", "You can now make " + "<col=000080>" + "juju mining potions" + "</col>" + ".");
+				case 44:
+					return newstruct cs2func_script_1002_struct(75, 20032, "Saradomin's blessing" + "<br>" + "Samaden & Saradomin vine", "You can now make " + "<col=000080>" + "Saradomin's blessings" + "</col>" + ".");
+				case 45:
+					return newstruct cs2func_script_1002_struct(75, 20036, "Guthix's gift" + "<br>" + "Samaden & Guthix vine", "You can now make " + "<col=000080>" + "Guthix's gifts" + "</col>" + ".");
+				case 46:
+					return newstruct cs2func_script_1002_struct(75, 20040, "Zamorak's favour" + "<br>" + "Samaden & Zamorak vine", "You can now make " + "<col=000080>" + "Zamorak's favours" + "</col>" + ".");
+				case 47:
+					return newstruct cs2func_script_1002_struct(76, 3042, "Magic potion" + "<br>" + "Lantadyme & potato cactus", "You can now make " + "<col=000080>" + "magic potions" + "</col>" + ".");
+				case 48:
+					return newstruct cs2func_script_1002_struct(78, 189, "Zamorak brew" + "<br>" + "Torstol & jangerberries", "You can now make " + "<col=000080>" + "Zamorak brews" + "</col>" + ".");
+				case 49:
+					return newstruct cs2func_script_1002_struct(79, 5954, "Anti-poison++" + "<br>" + "Coconut milk, irit & magic tree roots", "You can now make " + "<col=000080>" + "anti-poison++ potions" + "</col>" + ".");
+				case 50:
+					return newstruct cs2func_script_1002_struct(81, 6687, "Saradomin Brew" + "<br>" + "Toadflax & crushed bird nest", "You can now make " + "<col=000080>" + "Saradomin brews" + "</col>" + ".");
+				case 51:
+					return newstruct cs2func_script_1002_struct(82, 5940, "Weapon poison++" + "<br>" + "Coconut milk, nightshade & poison ivy berries", "You can now make " + "<col=000080>" + "weapon poison++ potions" + "</col>" + ".");
+				case 52:
+					return newstruct cs2func_script_1002_struct(84, 15301, "Recover special" + "<br>" + "Super energy potion & papaya", "You can now make " + "<col=000080>" + "recover special potions" + "</col>" + ".");
+				case 53:
+					return newstruct cs2func_script_1002_struct(85, 15305, "Super antifire" + "<br>" + "Antifire potion & desert phoenix feather", "You can now make " + "<col=000080>" + "super antifire potions" + "</col>" + ".");
+				case 54:
+					return newstruct cs2func_script_1002_struct(88, 15309, "Extreme attack" + "<br>" + "Super attack potion & avantoe", "You can now make " + "<col=000080>" + "extreme attack potions" + "</col>" + ".");
+				case 55:
+					return newstruct cs2func_script_1002_struct(89, 15313, "Extreme strength" + "<br>" + "Super strength potion & dwarf weed", "You can now make " + "<col=000080>" + "extreme strength potions" + "</col>" + ".");
+				case 56:
+					return newstruct cs2func_script_1002_struct(90, 15317, "Extreme defence" + "<br>" + "Super defence potion & lantadyme", "You can now make " + "<col=000080>" + "extreme defence potions" + "</col>" + ".");
+				case 57:
+					return newstruct cs2func_script_1002_struct(91, 15321, "Extreme magic" + "<br>" + "Magic potion & ground mud runes", "You can now make " + "<col=000080>" + "extreme magic potions" + "</col>" + ".");
+				case 58:
+					return newstruct cs2func_script_1002_struct(92, 15325, "Extreme ranging" + "<br>" + "Ranging potion & 5 grenwall spikes", "You can now make " + "<col=000080>" + "extreme ranging potions" + "</col>" + ".");
+				case 59:
+					return newstruct cs2func_script_1002_struct(94, 15329, "Super prayer restore" + "<br>" + "Prayer restore potion & wyvern bonemeal", "You can now make " + "<col=000080>" + "super prayer potions" + "</col>" + ".");
+				case 60:
+					return newstruct cs2func_script_1002_struct(94, 21632, "Prayer renewal" + "<br>" + "Fellstalk & morchella mushroom", "You can now make " + "<col=000080>" + "prayer renewal potions" + "</col>" + ".");
+				case 61:
+					return newstruct cs2func_script_1002_struct(96, 15333, "Overload" + "<br>" + "Extreme attack, extreme strength, extreme defence, extreme magic, extreme ranging potions & torstol", "You can now make " + "<col=000080>" + "overload potions" + "</col>" + ".");
+			}
+			break;
+		case 1:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1002_struct(-1, 7620, "You must complete Druidic Ritual before you can use Herblore", "");
+				case 1:
+					return newstruct cs2func_script_1002_struct(3, 249, "Guam leaf", "You can now clean " + "<col=000080>" + "guam" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1002_struct(3, 1534, "Rogue's purse", "You can now clean " + "<col=000080>" + "rogue's purse" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1002_struct(3, 1526, "Snake weed", "You can now clean " + "<col=000080>" + "snake weed" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1002_struct(5, 251, "Marrentill", "You can now clean " + "<col=000080>" + "marrentill" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1002_struct(11, 253, "Tarromin", "You can now clean " + "<col=000080>" + "tarromin" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1002_struct(20, 255, "Harralander", "You can now clean " + "<col=000080>" + "harralander" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1002_struct(25, 257, "Ranarr", "You can now clean " + "<col=000080>" + "ranarr" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1002_struct(30, 2998, "Toadflax", "You can now clean " + "<col=000080>" + "toadflax" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1002_struct(35, 12172, "Spirit weed", "You can now clean " + "<col=000080>" + "spirit weed" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_1002_struct(40, 259, "Irit leaf", "You can now clean " + "<col=000080>" + "irit leaf" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_1002_struct(41, 14854, "Wergali", "You can now clean " + "<col=000080>" + "wergali" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_1002_struct(48, 261, "Avantoe", "You can now clean " + "<col=000080>" + "avantoe" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_1002_struct(54, 263, "Kwuarm", "You can now clean " + "<col=000080>" + "kwuarm" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_1002_struct(54, 19989, "Erzille", "You can now clean " + "<col=000080>" + "erzille" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_1002_struct(56, 19991, "Ugune", "You can now clean " + "<col=000080>" + "ugune" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_1002_struct(57, 19990, "Argway", "You can now clean " + "<col=000080>" + "argway" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_1002_struct(58, 19992, "Shengo", "You can now clean " + "<col=000080>" + "shengo" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_1002_struct(59, 3000, "Snapdragon", "You can now clean " + "<col=000080>" + "snapdragon" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_1002_struct(59, 19993, "Samaden", "You can now clean " + "<col=000080>" + "samaden" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_1002_struct(65, 265, "Cadantine", "You can now clean " + "<col=000080>" + "cadantine" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_1002_struct(67, 2481, "Lantadyme", "You can now clean " + "<col=000080>" + "lantadyme" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_1002_struct(70, 267, "Dwarf weed", "You can now clean " + "<col=000080>" + "dwarf weed" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_1002_struct(75, 269, "Torstol", "You can now clean " + "<col=000080>" + "torstol" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_1002_struct(91, 21624, "Fellstalk", "You can now clean " + "<col=000080>" + "fellstalk" + "</col>" + ".");
+			}
+			break;
+		case 2:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1002_struct(-1, 7620, "You must complete barbarian Herblore training before you can make these potions.", " ");
+				case 1:
+					return newstruct cs2func_script_1002_struct(4, 11429, "Attack mix", "You can now make " + "<col=000080>" + "attack mixes" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1002_struct(6, 11433, "Anti-poison mix", "You can now make " + "<col=000080>" + "anti-poison mixes" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1002_struct(9, 11437, "Relicym's Balm mix", "You can now make " + "<col=000080>" + "Relicym's balm mixes" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1002_struct(14, 11443, "Strength mix", "You can now make " + "<col=000080>" + "strength mixes" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1002_struct(24, 11449, "Stat restore mix", "You can now make " + "<col=000080>" + "stat restore mixes" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1002_struct(29, 11453, "Energy mix", "You can now make " + "<col=000080>" + "energy mixes" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1002_struct(33, 11457, "Defence mix", "You can now make " + "<col=000080>" + "defence mixes" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1002_struct(37, 11461, "Agility mix", "You can now make " + "<col=000080>" + "agility mixes" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1002_struct(40, 11445, "Combat mix", "You can now make " + "<col=000080>" + "combat mixes" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_1002_struct(42, 11465, "Prayer restore mix", "You can now make " + "<col=000080>" + "prayer restore mixes" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_1002_struct(47, 11469, "Super Attack mix", "You can now make " + "<col=000080>" + "super attack mixes" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_1002_struct(51, 11473, "Super anti-poison mix", "You can now make " + "<col=000080>" + "super anti-poison mixes" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_1002_struct(53, 11477, "Fishing mix", "You can now make " + "<col=000080>" + "fishing mixes" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_1002_struct(56, 11481, "Super energy mix", "You can now make " + "<col=000080>" + "super energy mixes" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_1002_struct(58, 11517, "Hunter mix", "You can now make " + "<col=000080>" + "hunter mixes" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_1002_struct(59, 11485, "Super Strength mix", "You can now make " + "<col=000080>" + "super strength mixes" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_1002_struct(61, 11489, "Magic essence mix", "You can now make " + "<col=000080>" + "magic essence mixes" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_1002_struct(67, 11493, "Super restore mix", "You can now make " + "<col=000080>" + "super restore mix" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_1002_struct(71, 11497, "Super Defence mix", "You can now make " + "<col=000080>" + "super defence mix" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_1002_struct(74, 11501, "Anti-poison+ mix", "You can now make " + "<col=000080>" + "anti-poison+ mix" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_1002_struct(75, 11505, "Anti fire-breath mix", "You can now make " + "<col=000080>" + "anti fire-breath mix" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_1002_struct(80, 11509, "Ranging mix", "You can now make " + "<col=000080>" + "ranging mix" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_1002_struct(83, 11513, "Magic mix", "You can now make " + "<col=000080>" + "magic mix" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_1002_struct(85, 11521, "Zamorak mix", "You can now make " + "<col=000080>" + "Zamorak mix" + "</col>" + ".");
+			}
+			break;
+		case 3:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1002_struct(21, 19675, "Members: Herbicide" + "<br>" + " (with 21 Dungeoneering)", "Members can now use " + "<col=000080>" + "herbicide" + "</col>" + ". (They also need level 21 Dungeoneering.)");
+				case 1:
+					return newstruct cs2func_script_1002_struct(50, 12856, "Irit gloves", "You can now wear " + "<col=000080>" + "irit gloves.");
+				case 2:
+					return newstruct cs2func_script_1002_struct(60, 12857, "Avantoe gloves", "You can now wear " + "<col=000080>" + "avantoe gloves.");
+				case 3:
+					return newstruct cs2func_script_1002_struct(70, 12858, "Kwuarm gloves", "You can now wear " + "<col=000080>" + "kwuarm gloves.");
+				case 4:
+					return newstruct cs2func_script_1002_struct(70, 18340, "Members: Anti-poison totem" + "<br>" + " (with 60 Defence and 60 Dungeoneering)", "Members can now wield " + "<col=000080>" + "anti-poison totems" + "</col>" + ". (They also need level 60 Defence and level 60 Dungeoneering.)");
+				case 5:
+					return newstruct cs2func_script_1002_struct(80, 12859, "Cadantine gloves", "You can now wear " + "<col=000080>" + "cadantine gloves.");
+			}
+			break;
+		case 4:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1002_struct(49, 19890, "Scroll of Cleansing" + "<br>" + " (with 49 Dungeoneering)", "You can now use the " + "<col=000080>" + "Scroll of cleansing" + "</col>" + ". (You also need level 49 Dungeoneering.)");
+				case 1:
+					return newstruct cs2func_script_1002_struct(91, 18778, "Starved ancient effigies", "You can now investigate " + "<col=000080>" + "starved ancient effigies" + "</col>" + " using your knowledge of Herblore.");
+				case 2:
+					return newstruct cs2func_script_1002_struct(93, 18779, "Nourished ancient effigies", "You can now investigate " + "<col=000080>" + "nourished ancient effigies" + "</col>" + " using your knowledge of Herblore.");
+				case 3:
+					return newstruct cs2func_script_1002_struct(95, 18780, "Sated ancient effigies", "You can now investigate " + "<col=000080>" + "sated ancient effigies" + "</col>" + " using your knowledge of Herblore.");
+				case 4:
+					return newstruct cs2func_script_1002_struct(97, 18781, "Gorged ancient effigies", "You can now investigate " + "<col=000080>" + "gorged ancient effigies" + "</col>" + " using your knowledge of Herblore.");
+			}
+			break;
+		case 5:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1002_struct(1, 14215, "Stealing Creation - class 1 sacred clay", "Members can now make " + "<col=000080>" + "1-dose potions out of class 1 sacred clay" + "</col>" + " in Stealing Creation.");
+				case 1:
+					return newstruct cs2func_script_1002_struct(20, 14213, "Stealing Creation - class 2 sacred clay", "Members can now make " + "<col=000080>" + "2-dose potions out of class 2 sacred clay" + "</col>" + " in Stealing Creation.");
+				case 2:
+					return newstruct cs2func_script_1002_struct(40, 14211, "Stealing Creation - class 3 sacred clay", "Members can now make " + "<col=000080>" + "3-dose potions out of class 3 sacred clay" + "</col>" + " in Stealing Creation.");
+				case 3:
+					return newstruct cs2func_script_1002_struct(60, 14209, "Stealing Creation - class 4 sacred clay", "Members can now make " + "<col=000080>" + "4-dose potions out of class 4 sacred clay" + "</col>" + " in Stealing Creation.");
+				case 4:
+					return newstruct cs2func_script_1002_struct(80, 14207, "Stealing Creation - class 5 sacred clay", "Members can now make " + "<col=000080>" + "5-dose potions out of class 5 sacred clay" + "</col>" + " in Stealing Creation.");
+			}
+			break;
+		case 6:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1002_struct(-1, 15707, "Dungeoneering skill tasks" + "<br>" + "As your Herblore level increases, you will be able to attempt higher-level herblore tasks within Daemonheim. You will also be more likely to succeed when attempting herblore tasks within Daemonheim.", "");
+				case 1:
+					return newstruct cs2func_script_1002_struct(3, 17556, "Weak magic potion" + "<br>" + " Sagewort & void dust", "You can now make " + "<col=000080>" + "weak magic potions" + "</col>" + " within Daemonheim.");
+				case 2:
+					return newstruct cs2func_script_1002_struct(3, 17512, "Sagewort", "You can now clean " + "<col=000080>" + "sagewort" + "</col>" + " within Daemonheim.");
+				case 3:
+					return newstruct cs2func_script_1002_struct(4, 17514, "Valerian", "You can now clean " + "<col=000080>" + "valerian" + "</col>" + " within Daemonheim.");
+				case 4:
+					return newstruct cs2func_script_1002_struct(5, 17558, "Weak ranged potion" + "<br>" + " Valerian & void dust", "You can now make " + "<col=000080>" + "weak ranged potions" + "</col>" + " within Daemonheim.");
+				case 5:
+					return newstruct cs2func_script_1002_struct(7, 17560, "Weak melee potion" + "<br>" + " Valerian & misshapen claw", "You can now make " + "<col=000080>" + "weak melee potions" + "</col>" + " within Daemonheim.");
+				case 6:
+					return newstruct cs2func_script_1002_struct(8, 17516, "Aloe", "You can now clean " + "<col=000080>" + "aloe" + "</col>" + " within Daemonheim.");
+				case 7:
+					return newstruct cs2func_script_1002_struct(9, 17562, "Weak defence potion" + "<br>" + " Aloe & void dust", "You can now make " + "<col=000080>" + "weak defence potions" + "</col>" + " within Daemonheim.");
+				case 8:
+					return newstruct cs2func_script_1002_struct(12, 17564, "Weak stat restore potion" + "<br>" + " Aloe & red moss", "You can now make " + "<col=000080>" + "weak stat restore potions" + "</col>" + " within Daemonheim.");
+				case 9:
+					return newstruct cs2func_script_1002_struct(15, 17568, "Weak cure potion" + "<br>" + " Aloe & firebreath whiskey", "You can now make " + "<col=000080>" + "weak cure potions" + "</col>" + " within Daemonheim.");
+				case 10:
+					return newstruct cs2func_script_1002_struct(18, 17570, "Weak rejuvenation potion" + "<br>" + " Aloe & misshapen claw", "You can now make " + "<col=000080>" + "weak rejuvenation potions" + "</col>" + " within Daemonheim.");
+				case 11:
+					return newstruct cs2func_script_1002_struct(21, 17572, "Weak poison" + "<br>" + " Sagewort & firebreath whiskey", "You can now make " + "<col=000080>" + "weak poisons" + "</col>" + " within Daemonheim.");
+				case 12:
+					return newstruct cs2func_script_1002_struct(24, 17574, "Weak gatherer's potion" + "<br>" + " Sagewort & red moss", "You can now make " + "<col=000080>" + "weak gatherer's potions" + "</col>" + " within Daemonheim.");
+				case 13:
+					return newstruct cs2func_script_1002_struct(27, 17576, "Weak artisan's potion" + "<br>" + " Valerian & red moss", "You can now make " + "<col=000080>" + "weak artisan's potions" + "</col>" + " within Daemonheim.");
+				case 14:
+					return newstruct cs2func_script_1002_struct(30, 17578, "Weak naturalist's potion" + "<br>" + " Sagewort & misshapen claw", "You can now make " + "<col=000080>" + "weak naturalist's potions" + "</col>" + " within Daemonheim.");
+				case 15:
+					return newstruct cs2func_script_1002_struct(33, 17580, "Weak survivalist's potion" + "<br>" + " Valerian and firebreath whiskey", "You can now make " + "<col=000080>" + "weak survivalist's potions" + "</col>" + " within Daemonheim.");
+				case 16:
+					return newstruct cs2func_script_1002_struct(34, 17518, "Wormwood leaf", "You can now clean " + "<col=000080>" + "wormwood leaf" + "</col>" + " within Daemonheim.");
+				case 17:
+					return newstruct cs2func_script_1002_struct(36, 17582, "Magic potion" + "<br>" + " Wormwood leaf & void dust", "You can now make " + "<col=000080>" + "magic potions" + "</col>" + " within Daemonheim.");
+				case 18:
+					return newstruct cs2func_script_1002_struct(37, 17520, "Magebane", "You can now clean " + "<col=000080>" + "magebane" + "</col>" + " within Daemonheim.");
+				case 19:
+					return newstruct cs2func_script_1002_struct(38, 17584, "Ranged potion" + "<br>" + " Magebane & void dust", "You can now make " + "<col=000080>" + "ranged potions" + "</col>" + " within Daemonheim.");
+				case 20:
+					return newstruct cs2func_script_1002_struct(40, 17586, "Melee potion" + "<br>" + " Magebane & misshapen claw", "You can now make " + "<col=000080>" + "melee potions" + "</col>" + " within Daemonheim.");
+				case 21:
+					return newstruct cs2func_script_1002_struct(41, 17522, "Featherfoil", "You can now clean " + "<col=000080>" + "featherfoil" + "</col>" + " within Daemonheim.");
+				case 22:
+					return newstruct cs2func_script_1002_struct(42, 17588, "Defence potion" + "<br>" + " Featherfoil & void dust", "You can now make " + "<col=000080>" + "defence potions" + "</col>" + " within Daemonheim.");
+				case 23:
+					return newstruct cs2func_script_1002_struct(45, 17590, "Stat restore potion" + "<br>" + " Featherfoil & red moss", "You can now make " + "<col=000080>" + "stat restore potions" + "</col>" + " within Daemonheim.");
+				case 24:
+					return newstruct cs2func_script_1002_struct(48, 17592, "Cure potion" + "<br>" + " Featherfoil & firebreath whiskey", "You can now make " + "<col=000080>" + "cure potions" + "</col>" + " within Daemonheim.");
+				case 25:
+					return newstruct cs2func_script_1002_struct(51, 17594, "Rejuvenation potion" + "<br>" + " Featherfoil & misshapen claw", "You can now make " + "<col=000080>" + "rejuvenation potions" + "</col>" + " within Daemonheim.");
+				case 26:
+					return newstruct cs2func_script_1002_struct(54, 17596, "Poison" + "<br>" + " Wormwood leaf & firebreath whiskey", "You can now make " + "<col=000080>" + "poisons" + "</col>" + " within Daemonheim.");
+				case 27:
+					return newstruct cs2func_script_1002_struct(57, 17598, "Gatherer's potion" + "<br>" + " Wormwood leaf & red moss", "You can now make " + "<col=000080>" + "gatherer's potions" + "</col>" + " within Daemonheim.");
+				case 28:
+					return newstruct cs2func_script_1002_struct(60, 17600, "Artisan's potion" + "<br>" + " Magebane & red moss", "You can now make " + "<col=000080>" + "artisan's potions" + "</col>" + " within Daemonheim.");
+				case 29:
+					return newstruct cs2func_script_1002_struct(63, 17602, "Naturalist's potion" + "<br>" + " Wormwood leaf & misshapen claw", "You can now make " + "<col=000080>" + "naturalist's potions" + "</col>" + " within Daemonheim.");
+				case 30:
+					return newstruct cs2func_script_1002_struct(66, 17604, "Survivalist's potion" + "<br>" + " Magebane & firebreath whiskey", "You can now make " + "<col=000080>" + "survivalist's potions" + "</col>" + " within Daemonheim.");
+				case 31:
+					return newstruct cs2func_script_1002_struct(67, 17524, "Winter's Grip", "You can now clean " + "<col=000080>" + "winter's grip" + "</col>" + " within Daemonheim.");
+				case 32:
+					return newstruct cs2func_script_1002_struct(69, 17606, "Strong magic potion" + "<br>" + " Winter's grip & void dust", "You can now make " + "<col=000080>" + "strong magic potions" + "</col>" + " within Daemonheim.");
+				case 33:
+					return newstruct cs2func_script_1002_struct(70, 17526, "Lycopus", "You can now clean " + "<col=000080>" + "lycopus" + "</col>" + " within Daemonheim.");
+				case 34:
+					return newstruct cs2func_script_1002_struct(71, 17608, "Strong ranged potion" + "<br>" + " Lycopus & void dust", "You can now make " + "<col=000080>" + "strong ranged potions" + "</col>" + " within Daemonheim.");
+				case 35:
+					return newstruct cs2func_script_1002_struct(73, 17610, "Strong melee potion" + "<br>" + " Lycopus & misshapen claw", "You can now make " + "<col=000080>" + "strong melee potions" + "</col>" + " within Daemonheim.");
+				case 36:
+					return newstruct cs2func_script_1002_struct(74, 17528, "Buckthorn", "You can now clean " + "<col=000080>" + "buckthorn" + "</col>" + " within Daemonheim.");
+				case 37:
+					return newstruct cs2func_script_1002_struct(75, 17612, "Strong defence potion" + "<br>" + " Buckthorn & void dust", "You can now make " + "<col=000080>" + "strong defence potions" + "</col>" + " within Daemonheim.");
+				case 38:
+					return newstruct cs2func_script_1002_struct(78, 17614, "Strong stat restore potion" + "<br>" + " Buckthorn & red moss", "You can now make " + "<col=000080>" + "strong stat restore potions" + "</col>" + " within Daemonheim.");
+				case 39:
+					return newstruct cs2func_script_1002_struct(81, 17616, "Strong cure potion" + "<br>" + " Buckthorn & firebreath whiskey", "You can now make " + "<col=000080>" + "strong cure potions" + "</col>" + " within Daemonheim.");
+				case 40:
+					return newstruct cs2func_script_1002_struct(84, 17618, "Strong rejuvenation potion" + "<br>" + " Buckthorn & misshapen claw", "You can now make " + "<col=000080>" + "strong rejuvenation potions" + "</col>" + " within Daemonheim.");
+				case 41:
+					return newstruct cs2func_script_1002_struct(87, 17620, "Strong poison" + "<br>" + " Winter's grip & firebreath whiskey", "You can now make " + "<col=000080>" + "strong poisons" + "</col>" + " within Daemonheim.");
+				case 42:
+					return newstruct cs2func_script_1002_struct(90, 17622, "Strong gatherer's potion" + "<br>" + " Winter's grip & red moss", "You can now make " + "<col=000080>" + "strong gatherer's potions" + "</col>" + " within Daemonheim.");
+				case 43:
+					return newstruct cs2func_script_1002_struct(93, 17624, "Strong artisan's potion" + "<br>" + " Lycopus & red moss", "You can now make " + "<col=000080>" + "strong artisan's potions" + "</col>" + " within Daemonheim.");
+				case 44:
+					return newstruct cs2func_script_1002_struct(96, 17626, "Strong naturalist's potion" + "<br>" + " Winter's grip & misshapen claw", "You can now make " + "<col=000080>" + "strong naturalist's potions" + "</col>" + " within Daemonheim.");
+				case 45:
+					return newstruct cs2func_script_1002_struct(99, 17628, "Strong survivalist's potion" + "<br>" + " Lycopus & firebreath whiskey", "You can now make " + "<col=000080>" + "strong survivalist's potions" + "</col>" + " within Daemonheim.");
+			}
+			break;
+		case 7:
+			if (((boolean)arg1)) {
+				return newstruct cs2func_script_1002_struct(99, 9774, "Skill mastery", "<col=000080>" + "Congratulations! You are now a master of " + "<col=800000>" + "Herblore" + "<col=000080>" + ". Why not visit " + "<col=800000>" + "Kaqemeex" + "<col=000080>" + ", near " + "<col=800000>" + "Taverley" + "<col=000080>" + "? He has something special that is only available to true masters of the " + "<col=800000>" + "Herblore" + "<col=000080>" + " skill!");
+			}
+	}
+	return newstruct cs2func_script_1002_struct(0, -1, "", "");
+}

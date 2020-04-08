@@ -1,0 +1,33 @@
+string script_2706(int arg0) {
+	if (((boolean)script_926(arg0))) {
+		if (((boolean)script_925(arg0))) {
+			if (((boolean)stringMethod4107(getItemOption(arg0, 2), "Wield"))) {
+				return "You do not meet the requirements to use or wield this item." + "<br>";
+			}
+			return "You do not meet the requirements to use or wear this item." + "<br>";
+		}
+		if (((boolean)stringMethod4107(getItemOption(arg0, 2), "Wield"))) {
+			return "You can wield this item but not use it." + "<br>";
+		}
+		if (((boolean)stringMethod4107(getItemOption(arg0, 2), "Wear"))) {
+			return "You can wear this item but not use it." + "<br>";
+		}
+		return "You do not meet the requirements to use this item." + "<br>";
+	}
+	if (((boolean)script_928(arg0))) {
+		if (((boolean)script_925(arg0))) {
+			if (((boolean)stringMethod4107(getItemOption(arg0, 2), "Wield"))) {
+				return "You can use this item but not wield it." + "<br>";
+			}
+			return "You can use this item but not wear it." + "<br>";
+		}
+	} else {
+		if (((boolean)script_925(arg0))) {
+			if (((boolean)stringMethod4107(getItemOption(arg0, 2), "Wield"))) {
+				return "You do not meet the requirements to wield this item." + "<br>";
+			}
+			return "You do not meet the requirements to wear this item." + "<br>";
+		}
+	}
+	return "";
+}

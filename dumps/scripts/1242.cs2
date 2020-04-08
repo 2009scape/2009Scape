@@ -1,0 +1,10 @@
+void script_1242(int arg0) {
+	int ivar1;
+	setWidgetSprite(3152, new WidgetPointer(arg0));
+	setScriptCallOnMousePressed(1950, new WidgetPointer(-32768,3), "I", new WidgetPointer(arg0));
+	ivar1 = addToCoordinate(0, add(subtract(extractX(getMyPositionHash()), mod(extractX(getMyPositionHash()), 64)), 13), 0, add(subtract(extractY(getMyPositionHash()), mod(extractY(getMyPositionHash()), 64)), 23));
+	cameraMethod5511(ivar1);
+	cameraPointAt(ivar1, 25, 100, 10);
+	cameraMoveTo(addToCoordinate(ivar1, 11, 0, 0), 2600, 100, 10);
+	return;
+}

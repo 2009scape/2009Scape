@@ -1,0 +1,29 @@
+void script_537(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar2 = 0;
+	ivar3 = add(arg1, 25);
+	ivar4 = subtract(getClientCycle(), arg0);
+	if (getClientCycle() >= arg1) {
+		if (getClientCycle() < ivar3) {
+			ivar2 = divide(255, subtract(ivar3, arg1));
+			ivar2 = subtract(255, multiply(ivar2, subtract(getClientCycle(), arg1)));
+			cs2method2103(ivar2, new WidgetPointer(745,2));
+			return;
+		}
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(745,2));
+		cs2method2103(0, new WidgetPointer(745,2));
+		return;
+	}
+	if (ivar4 <= 5) {
+		cs2method2103(0, new WidgetPointer(745,2));
+	} else if (ivar4 <= 10) {
+		cs2method2103(85, new WidgetPointer(745,2));
+	} else if (ivar4 <= 15) {
+		cs2method2103(200, new WidgetPointer(745,2));
+	} else {
+		cs2method2103(85, new WidgetPointer(745,2));
+	}
+	return;
+}

@@ -1,0 +1,7 @@
+void script_48() {
+	if ((((boolean)globalint_1034) && ((boolean)globalint_1027)) && (strLength(globalstring_202) > 0)) {
+		sendUnknownFriendPacketMethod3619(globalstring_202);
+		globalint_1034 = 2;
+	}
+	return;
+}

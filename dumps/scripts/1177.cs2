@@ -1,0 +1,9 @@
+void script_1177() {
+	if (((boolean)standart_config_1414)) {
+		return;
+	}
+	globalint_548 = 540;
+	setWidgetText(new WidgetPointer(745,5), "10");
+	setScriptCallOnGameloop(1178, "", new WidgetPointer(745,5));
+	return;
+}

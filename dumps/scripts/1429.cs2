@@ -1,0 +1,21 @@
+void script_1429(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = mod(getClientCycle(), 32);
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		if ((globalint_1024 == bitconfig_6521) && (globalint_1024 != 0)) {
+			if (ivar2 < 8) {
+				cs2method2103(0);
+			} else if (ivar2 < 16) {
+				cs2method2103(85);
+			} else if (ivar2 < 24) {
+				cs2method2103(255);
+			} else {
+				cs2method2103(85);
+			}
+		} else {
+			setScriptCallOnGameloop(-1, "");
+			cs2method2103(0);
+		}
+	}
+	return;
+}

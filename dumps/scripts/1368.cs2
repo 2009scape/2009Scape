@@ -1,0 +1,72 @@
+void script_1368() {
+	setWidgetText(new WidgetPointer(59,0), "Zamorak = " + intToStr(bitconfig_155));
+	setWidgetText(new WidgetPointer(59,1), intToStr(bitconfig_145) + " = Saradomin");
+	setWidgetText(new WidgetPointer(59,6), intToStr(standart_config_380) + " min");
+	if (((boolean)bitconfig_146)) {
+		setWidgetText(new WidgetPointer(59,9), "Health: " + intToStr(bitconfig_146) + "%");
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(59,9));
+	} else {
+		setWidgetText(new WidgetPointer(59,9), "Health " + intToStr(bitconfig_146) + "%");
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(59,9));
+	}
+	if (((boolean)bitconfig_143)) {
+		setWidgetText(new WidgetPointer(59,2), "Safe");
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(59,2));
+	} else if (((boolean)bitconfig_143)) {
+		setWidgetText(new WidgetPointer(59,2), "Taken");
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(59,2));
+	} else {
+		if (bitconfig_143 == 2) {
+			setWidgetText(new WidgetPointer(59,2), "Dropped");
+			setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(59,2));
+		}
+	}
+	if (((boolean)bitconfig_153)) {
+		setWidgetText(new WidgetPointer(59,3), "Safe");
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(59,3));
+	} else if (((boolean)bitconfig_153)) {
+		setWidgetText(new WidgetPointer(59,3), "Taken");
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(59,3));
+	} else {
+		if (bitconfig_153 == 2) {
+			setWidgetText(new WidgetPointer(59,3), "Dropped");
+			setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(59,3));
+		}
+	}
+	if (((boolean)bitconfig_147)) {
+		setWidgetText(new WidgetPointer(59,10), "Unlocked");
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(59,10));
+	} else {
+		setWidgetText(new WidgetPointer(59,10), "Locked");
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(59,10));
+	}
+	if (((boolean)bitconfig_148)) {
+		setWidgetText(new WidgetPointer(59,11), "Cleared");
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(59,11));
+	} else {
+		setWidgetText(new WidgetPointer(59,11), "Collapsed");
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(59,11));
+	}
+	if (((boolean)bitconfig_149)) {
+		setWidgetText(new WidgetPointer(59,12), "Cleared");
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(59,12));
+	} else {
+		setWidgetText(new WidgetPointer(59,12), "Collapsed");
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(59,12));
+	}
+	if (((boolean)bitconfig_150)) {
+		setWidgetText(new WidgetPointer(59,13), "Destroyed");
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(59,13));
+	} else {
+		setWidgetText(new WidgetPointer(59,13), "Operational");
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(59,13));
+	}
+	setItemOnWidgetMethod2200(18748, -1, new WidgetPointer(59,4));
+	setItemOnWidgetMethod2200(18749, -1, new WidgetPointer(59,5));
+	setItemOnWidgetMethod2200(18750, -1, new WidgetPointer(59,14));
+	setItemOnWidgetMethod2200(18751, -1, new WidgetPointer(59,15));
+	setItemOnWidgetMethod2200(18752, -1, new WidgetPointer(59,16));
+	setItemOnWidgetMethod2200(18753, -1, new WidgetPointer(59,17));
+	setItemOnWidgetMethod2200(18754, -1, new WidgetPointer(59,18));
+	return;
+}

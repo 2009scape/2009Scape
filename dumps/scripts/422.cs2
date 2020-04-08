@@ -1,0 +1,17 @@
+cs2func_script_422_struct(2,0,0) script_422(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	ivar2 = 5;
+	ivar3 = 5;
+	if ((arg0 <= ivar2) || (arg1 <= ivar3)) {
+		return newstruct cs2func_script_422_struct(ivar2, ivar3);
+	}
+	if (arg0 > arg1) {
+		ivar2 = multiply(ivar2, divide(arg0, arg1));
+	} else {
+		if (arg1 > arg0) {
+			ivar3 = multiply(ivar3, divide(arg1, arg0));
+		}
+	}
+	return newstruct cs2func_script_422_struct(ivar2, ivar3);
+}

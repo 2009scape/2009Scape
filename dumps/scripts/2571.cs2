@@ -1,0 +1,8 @@
+void script_2571(int arg0) {
+	if (add(getContainerIntNodeCountIgnoreStacks(93, 803), getContainerIntNodeCountIgnoreStacks(93, 802)) < add(1, arg0)) {
+		return;
+	}
+	globalint_929 = arg0;
+	script_2573();
+	return;
+}

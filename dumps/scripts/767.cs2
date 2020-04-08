@@ -1,0 +1,52 @@
+cs2func_script_767_struct(20,0,0) script_767(int arg0) {
+	int ivar1;
+	globalarray_0 = new int[10];
+	globalarray_1 = new int[10];
+	ivar1 = 0;
+	if (getItemHashmapData(arg0, 538) != -1) {
+		globalarray_0[ivar1] = getItemHashmapData(arg0, 538);
+		globalarray_0[ivar1] = getItemHashmapData(arg0, 539);
+		ivar1 = add(ivar1, 1);
+	}
+	if (getItemHashmapData(arg0, 540) != -1) {
+		globalarray_0[ivar1] = getItemHashmapData(arg0, 540);
+		globalarray_0[ivar1] = getItemHashmapData(arg0, 541);
+		ivar1 = add(ivar1, 1);
+	}
+	if (getItemHashmapData(arg0, 542) != -1) {
+		globalarray_0[ivar1] = getItemHashmapData(arg0, 542);
+		globalarray_0[ivar1] = getItemHashmapData(arg0, 543);
+		ivar1 = add(ivar1, 1);
+	}
+	if (getItemHashmapData(arg0, 697) != -1) {
+		globalarray_0[ivar1] = getItemHashmapData(arg0, 697);
+		globalarray_0[ivar1] = getItemHashmapData(arg0, 698);
+		ivar1 = add(ivar1, 1);
+	}
+	if (getItemHashmapData(arg0, 699) != -1) {
+		globalarray_0[ivar1] = getItemHashmapData(arg0, 699);
+		globalarray_0[ivar1] = getItemHashmapData(arg0, 700);
+		ivar1 = add(ivar1, 1);
+	}
+	if (getItemHashmapData(arg0, 701) != -1) {
+		globalarray_0[ivar1] = getItemHashmapData(arg0, 701);
+		globalarray_0[ivar1] = getItemHashmapData(arg0, 702);
+		ivar1 = add(ivar1, 1);
+	}
+	if (getItemHashmapData(arg0, 703) != -1) {
+		globalarray_0[ivar1] = getItemHashmapData(arg0, 703);
+		globalarray_0[ivar1] = getItemHashmapData(arg0, 704);
+		ivar1 = add(ivar1, 1);
+	}
+	if (getItemHashmapData(arg0, 705) != -1) {
+		globalarray_0[ivar1] = getItemHashmapData(arg0, 705);
+		globalarray_0[ivar1] = getItemHashmapData(arg0, 706);
+		ivar1 = add(ivar1, 1);
+	}
+	if (getItemHashmapData(arg0, 707) != -1) {
+		globalarray_0[ivar1] = getItemHashmapData(arg0, 707);
+		globalarray_0[ivar1] = getItemHashmapData(arg0, 708);
+		ivar1 = add(ivar1, 1);
+	}
+	return newstruct cs2func_script_767_struct(globalarray_0[0], globalarray_0[1], globalarray_0[2], globalarray_0[3], globalarray_0[4], globalarray_0[5], globalarray_0[6], globalarray_0[7], globalarray_0[8], globalarray_0[9], globalarray_1[0], globalarray_1[1], globalarray_1[2], globalarray_1[3], globalarray_1[4], globalarray_1[5], globalarray_1[6], globalarray_1[7], globalarray_1[8], globalarray_1[9]);
+}

@@ -1,0 +1,9 @@
+void script_1136(int arg0) {
+	if (isMember() && (getItemHashmapData(getItemIdInSlot(94, 3), 687) != 0)) {
+		setWidgetIsHidden(false, new WidgetPointer(arg0));
+		return;
+	}
+	setWidgetIsHidden(true, new WidgetPointer(arg0));
+	script_41(57933843);
+	return;
+}

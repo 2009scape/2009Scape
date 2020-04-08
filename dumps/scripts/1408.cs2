@@ -1,0 +1,18 @@
+void script_1408() {
+	setWidgetSprite(180, new WidgetPointer(756,12));
+	setWidgetSprite(180, new WidgetPointer(756,13));
+	setWidgetSprite(180, new WidgetPointer(756,15));
+	setWidgetSprite(180, new WidgetPointer(756,16));
+	if (((boolean)bitconfig_49)) {
+		setWidgetSprite(181, new WidgetPointer(756,12));
+	} else if (((boolean)bitconfig_49)) {
+		setWidgetSprite(181, new WidgetPointer(756,13));
+	} else if (bitconfig_49 == 2) {
+		setWidgetSprite(181, new WidgetPointer(756,15));
+	} else {
+		if (bitconfig_49 == 3) {
+			setWidgetSprite(181, new WidgetPointer(756,16));
+		}
+	}
+	return;
+}

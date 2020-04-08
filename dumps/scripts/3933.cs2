@@ -1,0 +1,11 @@
+void script_3933(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	setWidgetRGB(new Color(arg1), new WidgetPointer(arg0));
+	if (((boolean)arg2)) {
+		setWidgetSprite(cs2method_3408(105, 100, 3480, arg3), new WidgetPointer(arg4));
+	} else if (arg5 == arg3) {
+		setWidgetSprite(cs2method_3408(105, 100, 736, arg3), new WidgetPointer(arg4));
+	} else {
+		setWidgetSprite(cs2method_3408(105, 100, 735, arg3), new WidgetPointer(arg4));
+	}
+	return;
+}

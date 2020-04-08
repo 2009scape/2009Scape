@@ -1,0 +1,43 @@
+void script_1037(int arg0,int arg1) {
+	string svar0;
+	globalint_161 = arg1;
+	globalint_128 = -1;
+	globalint_129 = 0;
+	globalstring_30 = "";
+	svar0 = cs2method5055(arg0);
+	if (((boolean)globalint_126)) {
+		svar0 = "To " + globalstring_27 + ": " + "<col=800000>" + svar0;
+	} else if (globalint_126 == 2) {
+		svar0 = "[" + "<col=0000ff>" + cs2method3611() + "<col=000000>" + "]: " + "<col=800000>" + svar0;
+	} else if (globalint_126 == 8) {
+		if (cs2method3751()) {
+			svar0 = "[" + "<col=0000ff>" + cs2method3752() + "<col=000000>" + "]: " + "<col=800000>" + svar0;
+		}
+	} else if (globalint_126 == 10) {
+		if (cs2method3750()) {
+			svar0 = "[" + "<col=0000ff>" + cs2method3752() + "<col=000000>" + "]: " + "<col=800000>" + svar0;
+		}
+	} else {
+		svar0 = "<col=0000ff>" + svar0;
+	}
+	setWidgetIsHidden(true, new WidgetPointer(137,50));
+	setScriptCallOnKeyPress(-1, "", new WidgetPointer(137,56));
+	setWidgetIsHidden(false, new WidgetPointer(137,0));
+	setWidgetIsHidden(true, new WidgetPointer(137,7));
+	setWidgetIsHidden(true, new WidgetPointer(137,9));
+	setWidgetIsHidden(false, new WidgetPointer(137,13));
+	setWidgetIsHidden(true, new WidgetPointer(137,17));
+	setWidgetIsHidden(true, new WidgetPointer(137,1));
+	setWidgetIsHidden(false, new WidgetPointer(137,3));
+	setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(137,3));
+	setWidgetFont(495, new WidgetPointer(137,3));
+	setWidgetTextAlignment(0, 1, 0, new WidgetPointer(137,3));
+	setWidgetText(new WidgetPointer(137,3), svar0);
+	setWidgetUnknownBoolean(false, new WidgetPointer(137,3));
+	deleteAllExtraChilds(new WidgetPointer(137,16));
+	setWidgetText(new WidgetPointer(137,14), "Search for: *");
+	setScriptCallOnKeyPress(1038, -2147483640, false, new WidgetPointer(137,1), new WidgetPointer(137,14), new WidgetPointer(137,16), new WidgetPointer(137,15), arg0, 0, "izIIIIei", new WidgetPointer(137,13));
+	setWidgetScrollMax(0, 0, new WidgetPointer(137,16));
+	script_72(8978447, 8978448, 0);
+	return;
+}

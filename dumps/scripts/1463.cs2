@@ -1,0 +1,40 @@
+void script_1463(int arg0) {
+	setWidgetSprite(1421, new WidgetPointer(762,62));
+	setWidgetSprite(1421, new WidgetPointer(762,60));
+	setWidgetSprite(1421, new WidgetPointer(762,58));
+	setWidgetSprite(1421, new WidgetPointer(762,56));
+	setWidgetSprite(1421, new WidgetPointer(762,54));
+	setWidgetSprite(1421, new WidgetPointer(762,52));
+	setWidgetSprite(1421, new WidgetPointer(762,50));
+	setWidgetSprite(1421, new WidgetPointer(762,48));
+	setWidgetSprite(1421, new WidgetPointer(762,46));
+	switch (arg0) {
+		case 1:
+			setWidgetSprite(1419, new WidgetPointer(762,62));
+			break;
+		case 2:
+			setWidgetSprite(1419, new WidgetPointer(762,60));
+			break;
+		case 3:
+			setWidgetSprite(1419, new WidgetPointer(762,58));
+			break;
+		case 4:
+			setWidgetSprite(1419, new WidgetPointer(762,56));
+			break;
+		case 5:
+			setWidgetSprite(1419, new WidgetPointer(762,54));
+			break;
+		case 6:
+			setWidgetSprite(1419, new WidgetPointer(762,52));
+			break;
+		case 7:
+			setWidgetSprite(1419, new WidgetPointer(762,50));
+			break;
+		case 8:
+			setWidgetSprite(1419, new WidgetPointer(762,48));
+			break;
+		case 9:
+			setWidgetSprite(1419, new WidgetPointer(762,46));
+	}
+	return;
+}

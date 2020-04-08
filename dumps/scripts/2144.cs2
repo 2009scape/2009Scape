@@ -1,0 +1,13 @@
+void script_2144(int arg0) {
+	int ivar1;
+	ivar1 = 1093;
+	if (IsFemale()) {
+		ivar1 = 3872;
+	}
+	if (((boolean)standart_config_1442)) {
+		setWidgetText(new WidgetPointer(arg0), "No Prefix");
+	} else {
+		setWidgetText(new WidgetPointer(arg0), cs2method_3408(105, 115, ivar1, standart_config_1442));
+	}
+	return;
+}

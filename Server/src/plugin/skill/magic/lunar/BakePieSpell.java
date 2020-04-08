@@ -4,6 +4,7 @@ import org.crandor.game.content.global.consumable.Consumables;
 import org.crandor.game.content.global.consumable.Food;
 import org.crandor.game.content.skill.SkillPulse;
 import org.crandor.game.content.skill.Skills;
+import plugin.skill.cooking.CookableItems;
 import org.crandor.game.content.skill.free.magic.MagicSpell;
 import org.crandor.game.content.skill.free.magic.Runes;
 import org.crandor.game.node.Node;
@@ -54,20 +55,21 @@ public final class BakePieSpell extends MagicSpell {
 		if (!super.meetsRequirements(player, true, false)) {
 			return false;
 		}
-		Food food = null;
+		Item foodItem = target.asItem();
+		CookableItems food = null;
 		for (Item item : player.getInventory().toArray()) {
 			if (item == null) {
 				continue;
 			}
 			if (item.getName().toLowerCase().contains("pie") && item.getName().toLowerCase().contains("uncooked") || item.getName().toLowerCase().contains("raw")) {
-				food = Consumables.forRaw(item);
+				food = CookableItems.forId(item.getId());
 			}
 		}
 		if (food == null) {
 			player.getPacketDispatch().sendMessage("You need a pie in order to cast this spell.");
 			return false;
 		}
-		player.getPulseManager().run(new LunarPiePulse(player, food.getRaw(), food));
+		player.getPulseManager().run(new LunarPiePulse(player, foodItem, food));
 		return true;
 	}
 
@@ -77,28 +79,26 @@ public final class BakePieSpell extends MagicSpell {
 	 */
 	public final class LunarPiePulse extends SkillPulse<Item> {
 
-		/**
-		 * Represents the pie to make.
-		 */
-		private Food pie;
+		//the pie
+		private CookableItems pie;
 
 		/**
 		 * Constructs a new {@code BakePieSpell} {@code Object}.
 		 * @param player the player.
 		 * @param node the node.
 		 */
-		public LunarPiePulse(final Player player, final Item node, final Food pie) {
+		public LunarPiePulse(final Player player, final Item node, final CookableItems pie) {
 			super(player, node);
 			this.pie = pie;
 		}
 
 		@Override
 		public boolean checkRequirements() {
-			if (player.getSkills().getLevel(Skills.COOKING) < pie.getCookingProperties().getLevel()) {
-				player.getDialogueInterpreter().sendDialogue("You need to have a Cooking level of t " + pie.getCookingProperties().getLevel() + " to cook this pie.");
+			if (player.getSkills().getLevel(Skills.COOKING) < pie.level) {
+				player.getDialogueInterpreter().sendDialogue("You need to have a Cooking level of " + pie.level + " to cook this pie.");
 				return false;
 			}
-			if (!player.getInventory().containsItem(pie.getRaw())) {
+			if (!player.getInventory().containsItem(new Item(pie.raw))) {
 				stop();
 				return false;
 			}
@@ -117,8 +117,8 @@ public final class BakePieSpell extends MagicSpell {
 				setDelay(5);
 				return false;
 			}
-			if (player.getInventory().remove(pie.getRaw()) && meetsRequirements(player, true, true)) {
-				player.getInventory().add(pie.getItem());
+			if (player.getInventory().remove(new Item(pie.raw)) && meetsRequirements(player, true, true)) {
+				player.getInventory().add(new Item(pie.cooked));
 			} else {
 				return true;
 			}
@@ -139,14 +139,17 @@ public final class BakePieSpell extends MagicSpell {
 		 * Method used to get the next pie.
 		 * @return the pie.
 		 */
-		public Food nextPie() {
+		public CookableItems nextPie() {
 			for (Item item : player.getInventory().toArray()) {
 				if (item == null) {
 					continue;
 				}
 				if (item.getName().toLowerCase().contains("pie") && item.getName().toLowerCase().contains("uncooked") || item.getName().toLowerCase().contains("raw")) {
-					pie = Consumables.forRaw(item);
-					node = pie.getItem();
+					if(CookableItems.cookingMap.get(item.getId()) == null){
+						pie = null;
+					}
+					pie = CookableItems.forId(item.getId());
+					node = item;
 				}
 			}
 			return pie;

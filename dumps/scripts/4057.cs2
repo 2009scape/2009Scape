@@ -1,0 +1,31 @@
+void script_4057(int arg0) {
+	if (((boolean)globalint_1432) || isWidgetHidden(new WidgetPointer(1058,10))) {
+		return;
+	}
+	if (isWidgetHidden(new WidgetPointer(1058,10)) && isWidgetHidden(new WidgetPointer(1058,9))) {
+		setWidgetIsHidden(false, new WidgetPointer(1058,10));
+		setWidgetPosition(0, subtract(1, getWidgetActualHeight(new WidgetPointer(1058,10))), 1, 0, new WidgetPointer(1058,10));
+		globalint_1432 = 1;
+		setWidgetNoOptions(new WidgetPointer(1058,2));
+		setWidgetNoOptions(new WidgetPointer(1058,3));
+		setScriptCallOnGameloop(4059, new WidgetPointer(1058,10), new WidgetPointer(arg0), "II", new WidgetPointer(arg0));
+	} else {
+		globalint_1432 = 1;
+		setWidgetNoOptions(new WidgetPointer(1058,2));
+		setWidgetNoOptions(new WidgetPointer(1058,3));
+		setScriptCallOnGameloop(4058, new WidgetPointer(1058,9), new WidgetPointer(1058,10), new WidgetPointer(arg0), "III", new WidgetPointer(arg0));
+	}
+	setWidgetSprite(4465, new WidgetPointer(1058,32));
+	setWidgetSprite(2657, new WidgetPointer(1058,33));
+	setWidgetSprite(2657, new WidgetPointer(1058,34));
+	setWidgetSprite(4464, new WidgetPointer(1058,36));
+	setWidgetSprite(2659, new WidgetPointer(1058,37));
+	setWidgetSprite(2659, new WidgetPointer(1058,38));
+	if ((((bitconfig_8662 < 200) && (bitconfig_8663 < 200)) && ((bitconfig_8664 < 200) && (bitconfig_8665 < 200))) && (bitconfig_8666 < 200)) {
+		script_4061();
+	} else {
+		script_4062();
+	}
+	globalint_1431 = 1;
+	return;
+}

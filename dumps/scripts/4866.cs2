@@ -1,0 +1,100 @@
+?? script_4866(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	int ivar22;
+	int ivar23;
+	int ivar24;
+	int ivar25;
+	int ivar26;
+	string svar0;
+	string svar1;
+	int stack_dump0;
+	cs2func_script_5223_struct(2,0,0) structdump_1;
+	ivar5 = script_4867(arg0);
+	ivar6 = script_4868(arg0);
+	ivar7 = script_4869(arg0);
+	ivar8 = script_4870(arg0);
+	ivar9 = getWidgetParentUid(new WidgetPointer(ivar6));
+	ivar10 = getWidgetParentUid(new WidgetPointer(ivar9));
+	ivar11 = getWidgetParentUid(new WidgetPointer(ivar10));
+	ivar12 = 1;
+	if (citadelConfigsInitialized()) {
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+				at tests.Main.main(Main.java:45)
+			
+		 */
+	}
+	ivar13 = script_5215(arg0);
+	ivar14 = getWidgetActualWidth(new WidgetPointer(getWidgetParentUid(new WidgetPointer(ivar6))));
+	arg1 = divide(arg1, 100);
+	arg4 = max(arg4, ivar13);
+	ivar15 = divide(multiply(arg1, ivar14), arg4);
+	ivar16 = divide(multiply(ivar13, ivar14), arg4);
+	ivar17 = divide(multiply(arg2, ivar14), arg4);
+	ivar18 = divide(multiply(arg3, ivar14), arg4);
+	ivar19 = subtract(arg1, add(arg2, arg3));
+	ivar20 = divide(multiply(ivar19, ivar14), arg4);
+	setWidgetText(new WidgetPointer(ivar5), intToStr(arg1));
+	ivar21 = 0;
+	setWidgetSize(min(subtract(ivar17, 2), ivar15), getWidgetActualHeight(new WidgetPointer(ivar6)), 0, 0, new WidgetPointer(ivar6));
+	setWidgetPosition(1, 0, 0, 0, new WidgetPointer(ivar6));
+	setWidgetSize(min(ivar18, subtract(ivar15, ivar17)), getWidgetActualHeight(new WidgetPointer(ivar7)), 0, 0, new WidgetPointer(ivar7));
+	setWidgetPosition(ivar17, 0, 0, 0, new WidgetPointer(ivar7));
+	setWidgetSize(min(subtract(ivar20, 2), subtract(ivar15, add(ivar17, ivar18))), getWidgetActualHeight(new WidgetPointer(ivar8)), 0, 0, new WidgetPointer(ivar8));
+	setWidgetPosition(add(add(ivar17, ivar18), 1), 0, 0, 0, new WidgetPointer(ivar8));
+	ivar22 = -1;
+	ivar23 = -1;
+	ivar24 = 7317;
+	ivar25 = 7314;
+	stack_dump0 = arg0;
+	structdump_1 = script_5223(stack_dump0);
+	ivar23 = structdump_1.intpart_1;
+	ivar22 = structdump_1.intpart_0;
+	if ((ivar22 != -1) && (ivar23 != -1)) {
+		ivar16 = add(ivar16, 82);
+		ivar16 = subtract(ivar16, divide(getWidgetActualWidth(new WidgetPointer(ivar23)), 2));
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:106
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+				at tests.Main.main(Main.java:45)
+			
+		 */
+	}
+	svar0 = cs2method_3408(105, 115, 4285, arg0);
+	svar1 = svar0 + "<br>" + "Total : " + intToStr(arg1) + "<br>" + "Upkeep : " + intToStr(arg2) + "<br>" + "Upgrades : " + intToStr(arg3) + "<br>" + "Surplus : " + intToStr(ivar19);
+	if (ivar13 > 0) {
+		svar1 = concat(svar1, "<br>" + "Goal: " + intToStr(ivar13));
+	}
+	/* 
+		mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:106
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+			at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+			at tests.Main.main(Main.java:45)
+		
+	 */
+}

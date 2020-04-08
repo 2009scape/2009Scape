@@ -1,0 +1,87 @@
+void script_224() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	string svar0;
+	ivar0 = ((int)isWidgetHidden(new WidgetPointer(594,61)));
+	if (((boolean)ivar0)) {
+		setWidgetIsHidden(false, new WidgetPointer(594,61));
+	}
+	ivar1 = 100;
+	svar0 = "";
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	deleteAllExtraChilds(new WidgetPointer(594,94));
+	deleteAllExtraChilds(new WidgetPointer(594,93));
+	deleteAllExtraChilds(new WidgetPointer(594,92));
+	setWidgetScrollMax(0, 0, new WidgetPointer(594,94));
+	cs2method2100(0, 0, new WidgetPointer(594,94));
+	while (ivar1 >= 0) {
+		ivar3 = cs2method5004(ivar1);
+		if (((((ivar3 != 0) && (ivar3 != 4)) && ((ivar3 != 27) && (ivar3 != 28))) && (((ivar3 != 29) && (ivar3 != 43)) && ((ivar3 != 103) && (ivar3 != 104)))) && ((((ivar3 != 26) && (ivar3 != 30)) && ((ivar3 != 31) && (stringMethod4107(cs2method5010(ivar1), "") != 0))) && (stringMethod4107(cs2method5003(ivar1), "") != 0))) {
+			if (((stringMethod4107(strRemoveEntities(cs2method5010(ivar1)), cs2method5015()) != 0) && (ivar3 != 6)) && (ivar3 != 19)) {
+				ivar4 = 1;
+				createExtraChild(new WidgetPointer(594,93), 3, getExtraChildGap(new WidgetPointer(594,93)));
+				setWidgetPosition(0, multiply(ivar2, 14), 0, 0);
+				setWidgetSize(16384, 14, 2, 0);
+				setWidgetRGB(new Color(103, 138, 176));
+				cs2method2103(255);
+				setWidgetFilled(1);
+				setScriptCallOnMouseEntered(237, -2147483643, "i");
+				setScriptCallOnMouseExit(238, -2147483643, "i");
+				createExtraChild(new WidgetPointer(594,92), 3, getExtraChildGap(new WidgetPointer(594,92)));
+				setWidgetPosition(0, multiply(ivar2, 14), 0, 0);
+				setWidgetSize(16384, 14, 2, 0);
+				setWidgetRGB(new Color(103, 138, 176));
+				cs2method2103(255);
+				setWidgetFilled(1);
+				setScriptCallOnMouseEntered(239, -2147483643, "i");
+			}
+			createExtraChild(new WidgetPointer(594,94), 4, getExtraChildGap(new WidgetPointer(594,94)));
+			setWidgetPosition(5, multiply(ivar2, 14), 0, 0);
+			setWidgetSize(16384, 14, 2, 0);
+			if ((ivar3 != 6) && (ivar3 != 19)) {
+				setWidgetText(" " + cs2method5010(ivar1) + ": " + cs2method5003(ivar1));
+			} else {
+				setWidgetText("To " + cs2method5010(ivar1) + ": " + cs2method5003(ivar1));
+			}
+			setWidgetRGB(new Color(119, 119, 119));
+			if (((stringMethod4107(strRemoveEntities(cs2method5010(ivar1)), cs2method5015()) != 0) && (ivar3 != 6)) && (ivar3 != 19)) {
+				cs2method1305(strRemoveEntities(cs2method5019(ivar1)));
+				setWidgetContextMenuOption(1, "Report");
+				setScriptCallOnClickContextMenu(234, -2147483643, "i");
+				setWidgetRGB(new Color(0, 0, 0));
+			}
+			setWidgetFont(495);
+			setWidgetTextAlignment(0, 0, 14);
+			ivar2 = add(ivar2, 1);
+		}
+		ivar1 = subtract(ivar1, 1);
+	}
+	if (((boolean)ivar4)) {
+		createExtraChild(new WidgetPointer(594,94), 4, getExtraChildGap(new WidgetPointer(594,94)));
+		setWidgetPosition(5, multiply(ivar2, 14), 0, 0);
+		setWidgetSize(16384, 14, 2, 0);
+		setWidgetText("There is no chat to report at the moment.");
+		setWidgetRGB(new Color(0, 0, 153));
+		setWidgetFont(495);
+		setWidgetTextAlignment(0, 0, 14);
+	}
+	if (ivar2 > divide(getWidgetActualHeight(new WidgetPointer(594,87)), 14)) {
+		setWidgetSize(63, getWidgetActualHeight(new WidgetPointer(594,87)), 1, 0, new WidgetPointer(594,87));
+		setWidgetScrollMax(0, multiply(ivar2, 14), new WidgetPointer(594,91));
+		script_31(38928470, 38928475, 792, 789, 790, 791, 773, 788);
+		if (setWidgetRegister(new WidgetPointer(594,86), 1)) {
+			script_37(38928470, 38928475, getWidgetScrollMaxV(new WidgetPointer(594,91)), 1);
+		}
+	} else {
+		setWidgetSize(44, getWidgetActualHeight(new WidgetPointer(594,87)), 1, 0, new WidgetPointer(594,87));
+	}
+	if (((boolean)ivar0)) {
+		setWidgetIsHidden(true, new WidgetPointer(594,61));
+	}
+	return;
+}

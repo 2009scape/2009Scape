@@ -1,0 +1,15 @@
+void script_3425(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	ivar2 = cs2method_3408(73, 79, 3058, arg1);
+	ivar3 = cs2method_3408(79, 105, 3059, ivar2);
+	if (ivar2 == 4055) {
+		setWidgetText(new WidgetPointer(arg0), "Free!");
+	} else {
+		setWidgetText(new WidgetPointer(arg0), intToStr(ivar3));
+	}
+	setItemOnWidgetMethod2200(ivar2, -1, new WidgetPointer(arg1));
+	setWidgetBorderThickness(1, new WidgetPointer(arg1));
+	setWidgetShadowColor(new Color(51, 51, 51), new WidgetPointer(arg1));
+	return;
+}

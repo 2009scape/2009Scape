@@ -1,0 +1,9 @@
+void script_2361(int arg0) {
+	int ivar1;
+	if (((boolean)bitconfig_8271)) {
+		return;
+	}
+	ivar1 = ((int)cs2method_3408(105, 73, 2352, bitconfig_8271));
+	setWidgetIntegerNode(1224, arg0, new WidgetPointer(ivar1));
+	return;
+}

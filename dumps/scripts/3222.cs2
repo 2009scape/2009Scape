@@ -1,0 +1,92 @@
+int script_3222(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	string svar0;
+	ivar4 = cs2method_3408(105, 74, 3483, arg1);
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = -1;
+	ivar8 = 0;
+	svar0 = "";
+	ivar9 = -1;
+	switch (arg2) {
+		case 0:
+			ivar5 = getOtherCommonData(ivar4, 1294);
+			ivar6 = getOtherCommonData(ivar4, 1295);
+			break;
+		case 1:
+			ivar5 = getOtherCommonData(ivar4, 1296);
+			ivar6 = getOtherCommonData(ivar4, 1297);
+			break;
+		case 2:
+			ivar5 = getOtherCommonData(ivar4, 1298);
+			ivar6 = getOtherCommonData(ivar4, 1299);
+			break;
+		case 3:
+			ivar5 = getOtherCommonData(ivar4, 1300);
+			ivar6 = getOtherCommonData(ivar4, 1301);
+			break;
+		case 4:
+			ivar5 = getOtherCommonData(ivar4, 1302);
+			ivar6 = getOtherCommonData(ivar4, 1303);
+			break;
+		case 5:
+			ivar5 = getOtherCommonData(ivar4, 1304);
+			ivar6 = getOtherCommonData(ivar4, 1305);
+			break;
+		case 6:
+			ivar5 = getOtherCommonData(ivar4, 1306);
+			ivar6 = getOtherCommonData(ivar4, 1307);
+			break;
+		case 7:
+			ivar5 = getOtherCommonData(ivar4, 1308);
+			ivar6 = getOtherCommonData(ivar4, 1309);
+			break;
+		case 8:
+			ivar5 = getOtherCommonData(ivar4, 1310);
+			ivar6 = getOtherCommonData(ivar4, 1311);
+			break;
+		case 9:
+			ivar5 = getOtherCommonData(ivar4, 1312);
+			ivar6 = getOtherCommonData(ivar4, 1313);
+	}
+	if (((boolean)ivar5)) {
+		return arg0;
+	}
+	if (ivar5 < 62) {
+		ivar7 = cs2method_3408(105, 83, 681, ivar5);
+		if (ivar7 != -1) {
+			svar0 = "This Task requires " + intToStr(ivar6) + " " + cs2method_3408(105, 115, 108, ivar5) + ".";
+			if (getSkillCurrentLvl(ivar7) >= ivar6) {
+				svar0 = concat("<str>", svar0);
+			}
+		}
+	} else if (ivar5 == 62) {
+		ivar9 = cs2method_3408(105, 74, 2252, ivar6);
+		svar0 = "To complete this Task, you must complete the " + getOtherCommonData(ivar9, 845) + " quest.";
+		if (script_2193(ivar6) == 2) {
+			svar0 = concat("<str>", svar0);
+		}
+	} else {
+		svar0 = script_3223(arg1, add(arg2, 1));
+	}
+	ivar10 = 0;
+	if (stringMethod4107(svar0, "") != 0) {
+		setWidgetIsHidden(false, new WidgetPointer(arg3));
+		setWidgetText(new WidgetPointer(arg3), svar0);
+		setWidgetFont(495, new WidgetPointer(arg3));
+		setWidgetTextAlignment(0, 1, 0, new WidgetPointer(arg3));
+		ivar10 = subtract(getWidgetActualWidth(new WidgetPointer(getWidgetParentId(new WidgetPointer(arg3)))), 18);
+		ivar8 = multiply(15, getLineCount(ivar10, 495, svar0));
+		setWidgetSize(ivar10, ivar8, 0, 0, new WidgetPointer(arg3));
+		setWidgetPosition(9, arg0, 0, 0, new WidgetPointer(arg3));
+	} else {
+		ivar8 = 0;
+	}
+	return add(arg0, ivar8);
+}

@@ -1,0 +1,4 @@
+void script_5204() {
+	playSoundEffect2False(6185, 1, 0, 200, 127);
+	return;
+}

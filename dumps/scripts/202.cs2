@@ -1,0 +1,25 @@
+void script_202(int arg0,int arg1,string arg2,string arg3) {
+	switch (arg0) {
+		case 5:
+			if (isFriend(arg3)) {
+				globalint_1650 = 1;
+				globalstring_23 = arg2;
+				script_1558(0);
+				return;
+			}
+			cs2method3605(arg2);
+			break;
+		case 6:
+			cs2method3607(arg2);
+			break;
+		case 7:
+			cs2method3606(arg2);
+			break;
+		case 8:
+			cs2method3608(arg2);
+			break;
+		case 9:
+			script_1633(arg2);
+	}
+	return;
+}

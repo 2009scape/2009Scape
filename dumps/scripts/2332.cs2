@@ -1,0 +1,11 @@
+string script_2332(string arg0,string arg1,string arg2) {
+	int ivar0;
+	int ivar1;
+	ivar0 = strIndexof(0, arg0, arg1);
+	ivar1 = strLength(arg1);
+	while (ivar0 != -1) {
+		arg0 = substr(0, ivar0, arg0) + arg2 + substr(add(ivar0, ivar1), strLength(arg0), arg0);
+		ivar0 = strIndexof(ivar0, arg0, arg1);
+	}
+	return arg0;
+}

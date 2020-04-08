@@ -1,0 +1,13 @@
+void script_1619(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	if ((((arg0 < 0) || (arg0 >= 5)) || (arg1 < 0)) || (arg1 >= 5)) {
+		messageType0("Nothing happens, as if something has gone wrong.");
+		return;
+	}
+	ivar3 = cs2method_3408(105, 103, 800, arg1);
+	ivar4 = ((int)cs2method_3408(105, 73, ivar3, arg0));
+	setWidgetModel(cs2method_3408(111, 109, 797, arg2), new WidgetPointer(ivar4));
+	setWidget3DRotation(0, 0, 520, 0, 0, 2180, new WidgetPointer(ivar4));
+	return;
+}

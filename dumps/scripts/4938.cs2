@@ -1,0 +1,30 @@
+void script_4938(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 71565520;
+	if (((boolean)arg0) && ((boolean)bitconfig_9552)) {
+		ivar1 = add(getWidgetActualX(new WidgetPointer(ivar3)), 12);
+		ivar2 = 0;
+		ivar1 = min(ivar1, ivar2);
+		if (isWidgetHidden(new WidgetPointer(1092,260))) {
+			ivar1 = max(ivar1, -226);
+		}
+	} else {
+		ivar1 = subtract(getWidgetActualX(new WidgetPointer(ivar3)), 12);
+		if (isWidgetHidden(new WidgetPointer(1092,260))) {
+			ivar2 = -295;
+		} else {
+			ivar2 = -226;
+		}
+		ivar1 = max(ivar1, ivar2);
+	}
+	setWidgetPosition(ivar1, getWidgetActualY(new WidgetPointer(ivar3)), 0, 0, new WidgetPointer(ivar3));
+	if (ivar1 == ivar2) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(ivar3));
+		script_5220();
+	}
+	return;
+}

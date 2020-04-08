@@ -1,0 +1,20 @@
+void script_3469(int arg0,int arg1) {
+	switch (rnd(2)) {
+		case 0:
+			playSoundEffect(6645, 1, rndExcl(15));
+			break;
+		case 1:
+			playSoundEffect(6644, 1, rndExcl(15));
+			break;
+		case 2:
+			playSoundEffect(6643, 1, rndExcl(15));
+	}
+	if (arg1 < subtract(cs2method5407(0), 2)) {
+		cameraMethod5502(0, arg1, 3100, 3300, 1, arg1);
+		setScriptCallOnMinimapRelatedSetting3(3469, new WidgetPointer(arg0), add(arg1, 1), "Ii", new WidgetPointer(arg0));
+		return;
+	}
+	cameraMethod5502(0, arg1, 1000, 0, 1, arg1);
+	setScriptCallOnMinimapRelatedSetting3(-1, "", new WidgetPointer(arg0));
+	return;
+}

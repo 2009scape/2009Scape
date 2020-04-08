@@ -1,0 +1,28 @@
+void script_3337() {
+	globalint_1243 = getSkillXp(0);
+	globalint_1244 = getSkillXp(2);
+	globalint_1245 = getSkillXp(1);
+	globalint_1246 = getSkillXp(4);
+	globalint_1247 = getSkillXp(5);
+	globalint_1248 = getSkillXp(6);
+	globalint_1249 = getSkillXp(20);
+	globalint_1250 = getSkillXp(3);
+	globalint_1251 = getSkillXp(12);
+	globalint_1252 = getSkillXp(14);
+	globalint_1253 = getSkillXp(13);
+	globalint_1254 = getSkillXp(10);
+	globalint_1255 = getSkillXp(7);
+	globalint_1256 = getSkillXp(11);
+	globalint_1257 = getSkillXp(8);
+	globalint_1258 = getSkillXp(16);
+	globalint_1259 = getSkillXp(15);
+	globalint_1260 = getSkillXp(17);
+	globalint_1261 = getSkillXp(9);
+	globalint_1262 = getSkillXp(18);
+	globalint_1263 = getSkillXp(19);
+	globalint_1264 = getSkillXp(22);
+	globalint_1265 = getSkillXp(21);
+	globalint_1266 = getSkillXp(23);
+	globalint_1267 = getSkillXp(24);
+	return;
+}

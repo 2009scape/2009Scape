@@ -1,0 +1,28 @@
+int script_1468(int arg0) {
+	arg0 = add(arg0, 1);
+	if (arg0 <= bitconfig_4885) {
+		return 2;
+	}
+	if (arg0 <= add(bitconfig_4885, bitconfig_4886)) {
+		return 3;
+	}
+	if (arg0 <= add(add(bitconfig_4885, bitconfig_4886), bitconfig_4887)) {
+		return 4;
+	}
+	if (arg0 <= add(add(add(bitconfig_4885, bitconfig_4886), bitconfig_4887), bitconfig_4888)) {
+		return 5;
+	}
+	if (arg0 <= add(add(add(add(bitconfig_4885, bitconfig_4886), bitconfig_4887), bitconfig_4888), bitconfig_4889)) {
+		return 6;
+	}
+	if (arg0 <= add(add(add(add(add(bitconfig_4885, bitconfig_4886), bitconfig_4887), bitconfig_4888), bitconfig_4889), bitconfig_4890)) {
+		return 7;
+	}
+	if (arg0 <= add(add(add(add(add(add(bitconfig_4885, bitconfig_4886), bitconfig_4887), bitconfig_4888), bitconfig_4889), bitconfig_4890), bitconfig_4891)) {
+		return 8;
+	}
+	if (arg0 <= add(add(add(add(add(add(add(bitconfig_4885, bitconfig_4886), bitconfig_4887), bitconfig_4888), bitconfig_4889), bitconfig_4890), bitconfig_4891), bitconfig_4892)) {
+		return 9;
+	}
+	return 1;
+}

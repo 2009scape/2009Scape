@@ -1,0 +1,94 @@
+void script_25() {
+	int ivar0;
+	int ivar1;
+	ivar0 = 0;
+	ivar1 = 0;
+	if (ivar0 != 0) {
+		if (isBitFlagged(ivar0, 0)) {
+			ivar1 = flagBit(ivar1, 0);
+		}
+		if (isBitFlagged(ivar0, 1)) {
+			ivar1 = flagBit(ivar1, 1);
+		}
+		if (isBitFlagged(ivar0, 2)) {
+			ivar1 = flagBit(ivar1, 2);
+		}
+		if (isBitFlagged(ivar0, 3)) {
+			ivar1 = flagBit(ivar1, 3);
+		}
+		globalint_996 = ivar1;
+		ivar1 = 0;
+		if (isBitFlagged(ivar0, 4)) {
+			ivar1 = flagBit(ivar1, 0);
+		}
+		if (isBitFlagged(ivar0, 5)) {
+			ivar1 = flagBit(ivar1, 1);
+		}
+		if (isBitFlagged(ivar0, 6)) {
+			ivar1 = flagBit(ivar1, 2);
+		}
+		if (isBitFlagged(ivar0, 7)) {
+			ivar1 = flagBit(ivar1, 3);
+		}
+		globalint_997 = ivar1;
+		ivar1 = 0;
+		if (isBitFlagged(ivar0, 14)) {
+			ivar1 = flagBit(ivar1, 0);
+		}
+		if (isBitFlagged(ivar0, 15)) {
+			ivar1 = flagBit(ivar1, 1);
+		}
+		if (isBitFlagged(ivar0, 16)) {
+			ivar1 = flagBit(ivar1, 2);
+		}
+		if (isBitFlagged(ivar0, 17)) {
+			ivar1 = flagBit(ivar1, 3);
+		}
+		if (isBitFlagged(ivar0, 18)) {
+			ivar1 = flagBit(ivar1, 4);
+		}
+		if (isBitFlagged(ivar0, 19)) {
+			ivar1 = flagBit(ivar1, 5);
+		}
+		if (isBitFlagged(ivar0, 20)) {
+			ivar1 = flagBit(ivar1, 6);
+		}
+		if (isBitFlagged(ivar0, 21)) {
+			ivar1 = flagBit(ivar1, 7);
+		}
+		if (isBitFlagged(ivar0, 22)) {
+			ivar1 = flagBit(ivar1, 8);
+		}
+		globalint_998 = ivar1;
+		ivar1 = 0;
+		if (isBitFlagged(ivar0, 23)) {
+			ivar1 = flagBit(ivar1, 0);
+		}
+		if (isBitFlagged(ivar0, 24)) {
+			ivar1 = flagBit(ivar1, 1);
+		}
+		if (isBitFlagged(ivar0, 25)) {
+			ivar1 = flagBit(ivar1, 2);
+		}
+		if (isBitFlagged(ivar0, 26)) {
+			ivar1 = flagBit(ivar1, 3);
+		}
+		if (isBitFlagged(ivar0, 27)) {
+			ivar1 = flagBit(ivar1, 4);
+		}
+		if (isBitFlagged(ivar0, 28)) {
+			ivar1 = flagBit(ivar1, 5);
+		}
+		if (isBitFlagged(ivar0, 29)) {
+			ivar1 = flagBit(ivar1, 6);
+		}
+		if (isBitFlagged(ivar0, 30)) {
+			ivar1 = flagBit(ivar1, 7);
+		}
+		if (isBitFlagged(ivar0, 31)) {
+			ivar1 = flagBit(ivar1, 8);
+		}
+		globalint_999 = ivar1;
+	}
+	return;
+}

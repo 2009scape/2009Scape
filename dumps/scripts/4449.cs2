@@ -1,0 +1,10 @@
+void script_4449(int arg0) {
+	if (cs2method5428(72744974, -1)) {
+		setScriptCallOnGameloop(4450, "", new WidgetPointer(1110,14));
+		return;
+	}
+	if (cs2method3751()) {
+		script_4451();
+	}
+	return;
+}

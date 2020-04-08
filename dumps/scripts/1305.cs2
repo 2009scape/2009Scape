@@ -1,0 +1,20 @@
+int script_1305() {
+	int ivar0;
+	ivar0 = 0;
+	if (((boolean)script_1314(99))) {
+		return 99;
+	}
+	if (((boolean)script_1314(95))) {
+		return 95;
+	}
+	if (((boolean)script_1314(98))) {
+		return 98;
+	}
+	while (ivar0 < 16) {
+		if (((boolean)script_1314(ivar0))) {
+			return ivar0;
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	return -1;
+}

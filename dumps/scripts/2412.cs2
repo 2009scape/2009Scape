@@ -1,0 +1,7 @@
+void script_2412(int arg0,int arg1,int arg2) {
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		setWidgetNoOptions();
+		script_2411(arg2);
+	}
+	return;
+}

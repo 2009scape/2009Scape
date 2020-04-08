@@ -1,0 +1,7 @@
+void script_3042(int arg0,string arg1) {
+	if (((boolean)arg0)) {
+		cs2method3608(arg1);
+		script_3037();
+	}
+	return;
+}

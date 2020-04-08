@@ -1,0 +1,40 @@
+int script_5148(int arg0) {
+	int ivar1;
+	ivar1 = -1;
+	ivar1 = cs2method3717(strRemoveEntities(cs2method5020()));
+	if (ivar1 < 0) {
+		return 0;
+	}
+	if (arg0 == -1) {
+		arg0 = cs2method3711(ivar1);
+	}
+	switch (arg0) {
+		case 0:
+			return 0;
+		case 1:
+			return 0;
+		case 2:
+			return 0;
+		case 3:
+			return 0;
+		case 4:
+			return 0;
+		case 5:
+			return 0;
+		case 100:
+			return clanbitconfig_146;
+		case 101:
+			return clanbitconfig_147;
+		case 102:
+			return clanbitconfig_148;
+		case 103:
+			return clanbitconfig_149;
+		case 125:
+			return clanbitconfig_150;
+		case 126:
+			return 1;
+		case 127:
+			return 1;
+	}
+	return 0;
+}

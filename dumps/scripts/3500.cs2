@@ -1,0 +1,43 @@
+int script_3500(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	ivar4 = subtract(arg2, arg0);
+	ivar5 = subtract(arg3, arg1);
+	if (ivar5 > 0) {
+		if (ivar4 > 0) {
+			if (ivar5 > ivar4) {
+				return divide(multiply(8192, ivar4), ivar5);
+			}
+			return subtract(16834, divide(multiply(8192, ivar5), ivar4));
+		}
+		if (ivar4 < 0) {
+			if (subtract(0, ivar4) > ivar5) {
+				return subtract(49152, divide(multiply(8192, ivar5), ivar4));
+			}
+			return add(65535, divide(multiply(8192, ivar4), ivar5));
+		}
+		return 0;
+	}
+	if (ivar5 < 0) {
+		if (ivar4 > 0) {
+			if (ivar4 > subtract(0, ivar5)) {
+				return subtract(16834, divide(multiply(8192, ivar5), ivar4));
+			}
+			return add(32768, divide(multiply(8192, ivar4), ivar5));
+		}
+		if (ivar4 < 0) {
+			if (ivar5 < ivar4) {
+				return add(32768, divide(multiply(8192, ivar4), ivar5));
+			}
+			return subtract(49152, divide(multiply(8192, ivar5), ivar4));
+		}
+		return 32768;
+	}
+	if (ivar4 > 0) {
+		return 16384;
+	}
+	if (ivar4 < 0) {
+		return 49152;
+	}
+	return -1;
+}

@@ -1,0 +1,9 @@
+void script_5210(int arg0) {
+	if (((boolean)bitconfig_6448)) {
+		script_5211(1);
+		return;
+	}
+	script_5211(0);
+	setScriptCallOnConfigChange(-1, "", new WidgetPointer(arg0));
+	return;
+}

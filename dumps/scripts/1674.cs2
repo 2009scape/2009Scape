@@ -1,0 +1,80 @@
+cs2func_script_1674_struct(2,0,0) script_1674(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	string svar0;
+	ivar1 = 836;
+	ivar2 = 1;
+	ivar3 = 2;
+	svar0 = "";
+	ivar4 = 0;
+	ivar5 = 0;
+	svar0 = cs2method_3408(105, 115, ivar1, 0);
+	createExtraChild(new WidgetPointer(84,22), 5, 0);
+	setWidgetSize(17, 17, 0, 0);
+	setWidgetPosition(2, ivar3, 0, 0);
+	if (((boolean)arg0)) {
+		setWidgetSprite(699);
+		ivar4 = ivar3;
+	} else {
+		setWidgetSprite(697);
+	}
+	createExtraChild(new WidgetPointer(84,22), 4, 1);
+	setWidgetFont(494);
+	setWidgetRGB(new Color(255, 152, 31));
+	setWidgetTextAlignment(0, 1, 0);
+	setWidgetSize(23, 16, 1, 0);
+	setWidgetPosition(0, add(ivar3, 2), 2, 0);
+	setWidgetText(svar0);
+	createExtraChild(new WidgetPointer(84,22), 3, 2);
+	setWidgetSize(0, 17, 1, 0);
+	setWidgetPosition(0, ivar3, 1, 0);
+	cs2method2103(255);
+	setWidgetFilled(1);
+	if (arg0 != 0) {
+		setWidgetContextMenuOption(1, svar0);
+		setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), 16777215, "Iii");
+		setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), 16750623, "Iii");
+		setScriptCallOnClickContextMenu(1676, -2147483644, 0, arg0, "iii");
+	}
+	ivar3 = add(ivar3, getWidgetActualHeight());
+	ivar5 = 1;
+	while (ivar2 < getCommonDefinitionSize(ivar1)) {
+		if (isBitFlagged(standart_config_617, subtract(ivar2, 1))) {
+			svar0 = cs2method_3408(105, 115, ivar1, ivar2);
+			createExtraChild(new WidgetPointer(84,22), 5, multiply(ivar5, 3));
+			setWidgetSize(17, 17, 0, 0);
+			setWidgetPosition(2, ivar3, 0, 0);
+			if (ivar2 == arg0) {
+				setWidgetSprite(699);
+				ivar4 = ivar3;
+			} else {
+				setWidgetSprite(697);
+			}
+			createExtraChild(new WidgetPointer(84,22), 4, add(multiply(ivar5, 3), 1));
+			setWidgetFont(494);
+			setWidgetRGB(new Color(255, 152, 31));
+			setWidgetTextAlignment(0, 1, 0);
+			setWidgetSize(23, 16, 1, 0);
+			setWidgetPosition(0, add(ivar3, 2), 2, 0);
+			setWidgetText(svar0);
+			createExtraChild(new WidgetPointer(84,22), 3, add(multiply(ivar5, 3), 2));
+			setWidgetSize(0, 17, 1, 0);
+			setWidgetPosition(0, ivar3, 1, 0);
+			cs2method2103(255);
+			setWidgetFilled(1);
+			if (ivar2 != arg0) {
+				setWidgetContextMenuOption(1, svar0);
+				setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), 16777215, "Iii");
+				setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), 16750623, "Iii");
+				setScriptCallOnClickContextMenu(1676, -2147483644, ivar2, arg0, "iii");
+			}
+			ivar3 = add(ivar3, getWidgetActualHeight());
+			ivar5 = add(ivar5, 1);
+		}
+		ivar2 = add(ivar2, 1);
+	}
+	return newstruct cs2func_script_1674_struct(ivar3, max(subtract(ivar4, 8), 0));
+}

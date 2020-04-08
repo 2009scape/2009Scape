@@ -1,0 +1,116 @@
+int script_2582(int arg0,int arg1,int arg2) {
+	int stack_dump0;
+	opcStruct5303(2,0,0) structdump_1;
+	switch (arg0) {
+		case 830:
+			cs2method6003(((boolean)script_734(arg1)));
+			break;
+		case 831:
+			cs2method6005(((boolean)script_734(arg1)));
+			break;
+		case 833:
+			cs2method6029(((boolean)arg1));
+			break;
+		case 834:
+			cs2method6008(((boolean)script_734(arg1)));
+			break;
+		case 836:
+			cs2method6010(((boolean)script_734(arg1)));
+			break;
+		case 837:
+			if ((arg1 > 0) && cs2method6136()) {
+				cs2method6034(true);
+			}
+			cs2method6011(arg1);
+			break;
+		case 838:
+			cs2method6012(((boolean)script_734(arg1)));
+			break;
+		case 839:
+			cs2method6014(((boolean)script_734(arg1)));
+			break;
+		case 840:
+			if (((boolean)arg1) && (((boolean)cs2method6131()) || (cs2method6131() == 2))) {
+				cs2method6014(false);
+				cs2method6015(false);
+			} else {
+				if (cs2method6130()) {
+					cs2method6030(true);
+				}
+				cs2method6015(((boolean)script_734(arg1)));
+			}
+			break;
+		case 841:
+			cs2method6016(arg1);
+			if (((arg1 > 0) && (cs2method6131() != 0)) && (cs2method6131() != 2)) {
+				script_2700(4, arg2, 0, 1);
+				return 2;
+			}
+			cs2method6024(arg1);
+			break;
+		case 842:
+			if (cs2method7206() || ((boolean)cs2method7306(arg1))) {
+				return 0;
+			}
+			cs2method6023(arg1);
+			return 1;
+		case 843:
+			if (((boolean)arg1) && (((boolean)cs2method6131()) || (cs2method6131() == 2))) {
+				cs2method6014(false);
+				cs2method6015(false);
+				cs2method6034(false);
+				cs2method6030(false);
+			} else {
+				cs2method6030(((boolean)script_734(arg1)));
+			}
+			break;
+		case 844:
+			globalint_987 = script_734(arg1);
+			cs2method6028(((boolean)globalint_987));
+			break;
+		case 845:
+			globalint_178 = arg1;
+			if (getDisplayMode() == 3) {
+				stack_dump0 = arg1;
+				structdump_1 = cs2method5303(stack_dump0);
+				if (cs2method5300(structdump_1.intpart_0, structdump_1.intpart_1)) {
+					script_2700(2, arg2, 0, 0);
+					return 2;
+				}
+				return 0;
+			}
+			break;
+		case 908:
+			cs2method6033(arg1);
+			break;
+		case 963:
+			if (((boolean)arg1)) {
+				cs2method6011(0);
+			} else {
+				if (cs2method6130()) {
+					cs2method6030(true);
+				}
+			}
+			cs2method6034(((boolean)script_734(arg1)));
+			break;
+		case 1009:
+			if (cs2method7211() && ((boolean)cs2method7311(arg1))) {
+				cs2method6036(arg1);
+				return 1;
+			}
+			return 0;
+		case 2430:
+			if (cs2method7215()) {
+				if (cs2method7315(arg1) == 3) {
+					return 0;
+				}
+				cs2method6041(arg1);
+			} else {
+				return 0;
+			}
+			break;
+		default:
+			return 0;
+	}
+	return 1;
+}

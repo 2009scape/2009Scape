@@ -1,0 +1,17 @@
+void script_1433() {
+	if (getDisplayMode() >= 1) {
+		setScriptCallOnGlobalConfigChange(1434, 184, 1, "Y", new WidgetPointer(746,9));
+		setScriptCallOnGlobalConfigChange(1434, 184, 1, "Y", new WidgetPointer(548,2));
+	}
+	setScriptCallOnGlobalConfigChange(1547, 5, 1, "Y", new WidgetPointer(752,3));
+	setScriptCallOnWidgetResize(721, "", new WidgetPointer(746,3));
+	if (getDisplayMode() >= 2) {
+		setScriptCallOnConfigChange(1850, new WidgetPointer(746,175), 281, 1255, 2, "IY", new WidgetPointer(746,13));
+		script_1886(48890031);
+	} else {
+		setScriptCallOnConfigChange(1850, new WidgetPointer(548,184), 281, 1255, 2, "IY", new WidgetPointer(548,66));
+		script_1886(35913912);
+	}
+	script_51();
+	return;
+}

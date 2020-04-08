@@ -1,0 +1,23 @@
+void script_1967() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = 1;
+	ivar1 = -1;
+	ivar2 = -1;
+	while (ivar0 <= getCommonDefinitionSize(2120)) {
+		setWidgetText(cs2method_3408(105, 73, 2118, ivar0), cs2method_3408(105, 115, 2023, ivar0));
+		ivar1 = cs2method_3408(105, 111, 2019, ivar0);
+		ivar2 = ((int)cs2method_3408(105, 73, 2120, ivar0));
+		setItemOnWidgetMethod2200(ivar1, 1, cs2method_3408(105, 73, 2117, ivar0));
+		cs2method2305(new WidgetPointer(ivar2), cs2method_3408(105, 115, 2023, ivar0));
+		if (getItemAmtInContainer(93, ivar1) > 0) {
+			setWidgetRGB(new Color(0, 255, 0), cs2method_3408(105, 73, 2118, ivar0));
+		} else {
+			setWidgetRGB(new Color(255, 0, 0), cs2method_3408(105, 73, 2118, ivar0));
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	script_1969();
+	return;
+}

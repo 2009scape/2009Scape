@@ -1,0 +1,45 @@
+void script_724(int arg0,int arg1,int arg2,string arg3) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	if ((arg0 == 48824321) && ((boolean)globalint_616)) {
+		return;
+	}
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = -1;
+	ivar7 = -1;
+	ivar8 = -1;
+	if (globalint_1 < add(getClientCycle(), 25)) {
+		if (globalint_1 < getClientCycle()) {
+			globalint_1 = getClientCycle();
+		}
+		globalint_1 = add(globalint_1, 2);
+		return;
+	}
+	globalint_1 = add(add(getClientCycle(), 25), 10);
+	if (globalint_2 != 1) {
+		ivar5 = add(getMaxLineWidth(1000, 495, arg3), 8);
+		if (getDisplayMode() < 2) {
+			ivar6 = 35913744;
+			ivar8 = 35913953;
+			ivar7 = 35913743;
+		} else {
+			ivar6 = 48889872;
+			ivar8 = 48890023;
+			ivar7 = 48889871;
+		}
+		ivar3 = subtract(add(add(getWidgetActualX(new WidgetPointer(ivar7)), getWidgetActualX(new WidgetPointer(arg0))), arg1), ivar5);
+		ivar4 = subtract(add(add(getWidgetActualY(new WidgetPointer(ivar7)), getWidgetActualY(new WidgetPointer(arg0))), arg2), 17);
+		setWidgetIsHidden(false, new WidgetPointer(ivar6));
+		setWidgetSize(ivar5, 17, 0, 0, new WidgetPointer(ivar6));
+		setWidgetPosition(ivar3, ivar4, 0, 0, new WidgetPointer(ivar6));
+		setWidgetText(new WidgetPointer(ivar8), arg3);
+		globalint_2 = 1;
+	}
+	return;
+}

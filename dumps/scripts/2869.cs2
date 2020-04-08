@@ -1,0 +1,9 @@
+int script_2869(int arg0) {
+	if (((boolean)script_2868(arg0, 35884240, 37440815))) {
+		return 1;
+	}
+	if (((boolean)script_2868(arg0, 52513484, 53398263))) {
+		return 1;
+	}
+	return 0;
+}

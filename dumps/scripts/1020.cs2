@@ -1,0 +1,691 @@
+cs2func_script_1020_struct(2,2,0) script_1020(int arg0,int arg1) {
+	switch (arg0) {
+		case 0:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1020_struct(1, 12047, "Spirit wolf - Attack XP" + "<br>" + "Gold charm, wolf bones, 7 shards", "You can now infuse " + "<col=000080>" + "spirit wolf pouches" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1020_struct(4, 12043, "Dreadfowl - Magic XP" + "<br>" + "Gold charm, raw chicken, 8 shards", "You can now infuse " + "<col=000080>" + "dreadfowl pouches" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1020_struct(4, 19622, "Meerkats" + "<br>" + "Obtained from Treasure Trails.", "You can now summon " + "<col=000080>" + "meerkats" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1020_struct(10, 12059, "Spirit spider - Controlled XP" + "<br>" + "Gold charm, spider carcass, 8 shards", "You can now infuse " + "<col=000080>" + "spirit spider pouches" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1020_struct(13, 12019, "Thorny snail - Ranged XP" + "<br>" + "Gold charm, raw thin snail, 9 shards", "You can now infuse " + "<col=000080>" + "thorny snail pouches" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1020_struct(16, 12009, "Granite crab - Defence XP" + "<br>" + "Gold charm, iron ore, 7 shards", "You can now infuse " + "<col=000080>" + "granite crab pouches" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1020_struct(17, 12778, "Spirit mosquito - Attack XP" + "<br>" + "Gold charm, proboscis, 1 shard", "You can now infuse " + "<col=000080>" + "spirit mosquito pouches" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1020_struct(18, 12049, "Desert wyrm - Strength XP" + "<br>" + "Green charm, bucket of sand, 45 shards", "You can now infuse " + "<col=000080>" + "desert wyrm pouches" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1020_struct(19, 12055, "Spirit scorpion - Controlled XP" + "<br>" + "Crimson charm, bronze claws, 57 shards", "You can now infuse " + "<col=000080>" + "spirit scorpion pouches" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1020_struct(22, 12808, "Spirit Tz-Kih - Magic XP" + "<br>" + "Crimson charm, obsidian charm, 64 shards", "You can now infuse " + "<col=000080>" + "spirit Tz-Kih pouches" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_1020_struct(23, 12067, "Albino rat - Attack XP" + "<br>" + "Blue charm, raw rat meat, 75 shards", "You can now infuse " + "<col=000080>" + "albino rat pouches" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_1020_struct(25, 12063, "Spirit kalphite - Defence XP" + "<br>" + "Blue charm, potato cactus, 51 shards", "You can now infuse " + "<col=000080>" + "spirit kalphite pouches" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_1020_struct(28, 12091, "Compost mound - Strength XP" + "<br>" + "Green charm, compost, 47 shards", "You can now infuse " + "<col=000080>" + "compost mound pouches" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_1020_struct(29, 12800, "Giant chinchompa - Ranged XP" + "<br>" + "Blue charm, chinchompa, 84 shards", "You can now infuse " + "<col=000080>" + "giant chinchompa pouches" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_1020_struct(31, 12053, "Vampyre bat - Controlled XP" + "<br>" + "Crimson charm, vampyre dust, 81 shards", "You can now infuse " + "<col=000080>" + "vampyre bat pouches" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_1020_struct(32, 12065, "Honey badger - Strength XP" + "<br>" + "Crimson charm, honeycomb, 84 shards", "You can now infuse " + "<col=000080>" + "honey badger pouches" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_1020_struct(33, 12021, "Beaver" + "<br>" + "Green charm, willow logs, 72 shards", "You can now infuse " + "<col=000080>" + "beaver pouches" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_1020_struct(34, 12818, "Void ravager - Strength XP" + "<br>" + "Green charm, ravager charm, 74 shards", "You can now infuse " + "<col=000080>" + "void ravager pouches" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_1020_struct(34, 12780, "Void spinner - Defence XP" + "<br>" + "Blue charm, spinner charm, 74 shards", "You can now infuse " + "<col=000080>" + "void spinner pouches" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_1020_struct(34, 12798, "Void torcher - Magic XP" + "<br>" + "Blue charm, torcher charm, 74 shards", "You can now infuse " + "<col=000080>" + "void torcher pouches" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_1020_struct(34, 12814, "Void shifter - Attack XP" + "<br>" + "Blue charm, shifter charm, 74 shards", "You can now infuse " + "<col=000080>" + "void shifter pouches" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_1020_struct(36, 12073, "Bronze minotaur - Defence XP" + "<br>" + "Blue charm, bronze bar, 102 shards", "You can now infuse " + "<col=000080>" + "bronze minotaur pouches" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_1020_struct(40, 12087, "Bull ant - Controlled XP" + "<br>" + "Gold charm, marigolds, 11 shards", "You can now infuse " + "<col=000080>" + "bull ant pouches" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_1020_struct(41, 12071, "Macaw" + "<br>" + "Green charm, guam, 78 shards", "You can now infuse " + "<col=000080>" + "macaw pouches" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_1020_struct(42, 12051, "Evil turnip - Ranged XP" + "<br>" + "Crimson charm, carved turnip, 104 shards", "You can now infuse " + "<col=000080>" + "evil turnip pouches" + "</col>" + ".");
+				case 25:
+					return newstruct cs2func_script_1020_struct(43, 12095, "Spirit cockatrice - Magic XP" + "<br>" + "Green charm, cockatrice egg, 88 shards", "You can now infuse " + "<col=000080>" + "spirit cockatrice pouches" + "</col>" + ".");
+				case 26:
+					return newstruct cs2func_script_1020_struct(43, 12097, "Spirit guthatrice - Magic XP" + "<br>" + "Green charm, guthatrice egg, 88 shards", "You can now infuse " + "<col=000080>" + "spirit guthatrice pouches" + "</col>" + ".");
+				case 27:
+					return newstruct cs2func_script_1020_struct(43, 12099, "Spirit saratrice - Magic XP" + "<br>" + "Green charm, saratrice egg, 88 shards", "You can now infuse " + "<col=000080>" + "spirit saratrice pouches" + "</col>" + ".");
+				case 28:
+					return newstruct cs2func_script_1020_struct(43, 12101, "Spirit zamatrice - Magic XP" + "<br>" + "Green charm, zamatrice egg, 88 shards", "You can now infuse " + "<col=000080>" + "spirit zamatrice pouches" + "</col>" + ".");
+				case 29:
+					return newstruct cs2func_script_1020_struct(43, 12103, "Spirit pengatrice - Magic XP" + "<br>" + "Green charm, pengatrice egg, 88 shards", "You can now infuse " + "<col=000080>" + "spirit pengatrice pouches" + "</col>" + ".");
+				case 30:
+					return newstruct cs2func_script_1020_struct(43, 12105, "Spirit coraxatrice - Magic XP" + "<br>" + "Green charm, coraxatrice egg, 88 shards", "You can now infuse " + "<col=000080>" + "spirit coraxatrice pouches" + "</col>" + ".");
+				case 31:
+					return newstruct cs2func_script_1020_struct(43, 12107, "Spirit vulatrice - Magic XP" + "<br>" + "Green charm, vulatrice egg, 88 shards", "You can now infuse " + "<col=000080>" + "spirit vulatrice pouches" + "</col>" + ".");
+				case 32:
+					return newstruct cs2func_script_1020_struct(46, 12075, "Iron minotaur - Defence XP" + "<br>" + "Blue charm, iron bar, 125 shards", "You can now infuse " + "<col=000080>" + "iron minotaur pouches" + "</col>" + ".");
+				case 33:
+					return newstruct cs2func_script_1020_struct(46, 12816, "Pyrelord - Strength XP" + "<br>" + "Crimson charm, tinderbox, 111 shards", "You can now infuse " + "<col=000080>" + "pyrelord" + "</col>" + " pouches.");
+				case 34:
+					return newstruct cs2func_script_1020_struct(47, 12041, "Magpie" + "<br>" + "Green charm, gold ring, 88 shards", "You can now infuse " + "<col=000080>" + "magpie pouches" + "</col>" + ".");
+				case 35:
+					return newstruct cs2func_script_1020_struct(49, 12061, "Bloated leech - Attack XP" + "<br>" + "Crimson charm, raw beef, 117 shards", "You can now infuse " + "<col=000080>" + "bloated leech pouches" + "</col>" + ".");
+				case 36:
+					return newstruct cs2func_script_1020_struct(52, 12007, "Spirit terrorbird - Controlled XP" + "<br>" + "Gold charm, raw bird meat, 12 shards", "You can now infuse " + "<col=000080>" + "spirit terrorbird pouches" + "</col>" + ".");
+				case 37:
+					return newstruct cs2func_script_1020_struct(54, 12035, "Abyssal parasite - Magic XP" + "<br>" + "Green charm, abyssal charm, 106 shards", "You can now infuse " + "<col=000080>" + "abyssal parasite pouches" + "</col>" + ".");
+				case 38:
+					return newstruct cs2func_script_1020_struct(55, 12027, "Spirit jelly - Strength XP" + "<br>" + "Blue charm, jug of water, 151 shards", "You can now infuse " + "<col=000080>" + "spirit jelly pouches" + "</col>" + ".");
+				case 39:
+					return newstruct cs2func_script_1020_struct(56, 12077, "Steel minotaur - Defence XP" + "<br>" + "Blue charm, steel bar, 141 shards", "You can now infuse " + "<col=000080>" + "steel minotaur pouches" + "</col>" + ".");
+				case 40:
+					return newstruct cs2func_script_1020_struct(56, 12531, "Ibis" + "<br>" + "Green charm, harpoon, 109 shards", "You can now infuse " + "<col=000080>" + "ibis pouches" + "</col>" + ".");
+				case 41:
+					return newstruct cs2func_script_1020_struct(57, 12812, "Spirit kyatt - Attack XP" + "<br>" + "Blue charm, kyatt fur, 153 shards", "You can now infuse " + "<col=000080>" + "spirit kyatt pouches" + "</col>" + ".");
+				case 42:
+					return newstruct cs2func_script_1020_struct(57, 12784, "Spirit larupia - Controlled XP" + "<br>" + "Blue charm, larupia fur, 155 shards", "You can now infuse " + "<col=000080>" + "spirit larupia pouches" + "</col>" + ".");
+				case 43:
+					return newstruct cs2func_script_1020_struct(57, 12810, "Spirit graahk - Strength XP" + "<br>" + "Blue charm, graahk fur, 154 shards", "You can now infuse " + "<col=000080>" + "spirit graahk pouches" + "</col>" + ".");
+				case 44:
+					return newstruct cs2func_script_1020_struct(58, 12023, "Karamthulhu overlord - Ranged XP" + "<br>" + "Blue charm, empty fishbowl, 144 shards", "You can now infuse " + "<col=000080>" + "karamthulhu overlord pouches" + "</col>" + ".");
+				case 45:
+					return newstruct cs2func_script_1020_struct(61, 12085, "Smoke devil - Magic XP" + "<br>" + "Crimson charm, goat's horn dust, 141 shards", "You can now infuse " + "<col=000080>" + "smoke devil pouches" + "</col>" + ".");
+				case 46:
+					return newstruct cs2func_script_1020_struct(62, 12037, "Abyssal lurker - Controlled XP" + "<br>" + "Green charm, abyssal charm, 119 shards", "You can now infuse " + "<col=000080>" + "abyssal lurker pouches" + "</col>" + ".");
+				case 47:
+					return newstruct cs2func_script_1020_struct(63, 12015, "Spirit cobra - Attack XP" + "<br>" + "Crimson charm, snake hide, 116 shards", "You can now infuse " + "<col=000080>" + "spirit cobra pouches" + "</col>" + ".");
+				case 48:
+					return newstruct cs2func_script_1020_struct(64, 12045, "Stranger plant - Controlled XP" + "<br>" + "Crimson charm, bagged plant, 128 shards", "You can now infuse " + "<col=000080>" + "stranger plant pouches" + "</col>" + ".");
+				case 49:
+					return newstruct cs2func_script_1020_struct(66, 12079, "Mithril minotaur - Defence XP" + "<br>" + "Blue charm, mithril bar, 152 shards", "You can now infuse " + "<col=000080>" + "mithril minotaur pouches" + "</col>" + ".");
+				case 50:
+					return newstruct cs2func_script_1020_struct(66, 12123, "Barker toad - Strength XP" + "<br>" + "Gold charm, swamp toad, 11 shards", "You can now infuse " + "<col=000080>" + "barker toad pouches" + "</col>" + ".");
+				case 51:
+					return newstruct cs2func_script_1020_struct(67, 12031, "War tortoise - Defence XP" + "<br>" + "Gold charm, tortoise shell, 1 shard", "You can now infuse " + "<col=000080>" + "war tortoise pouches" + "</col>" + ".");
+				case 52:
+					return newstruct cs2func_script_1020_struct(68, 12029, "Bunyip - Attack XP" + "<br>" + "Green charm, raw shark, 110 shards", "You can now infuse " + "<col=000080>" + "bunyip pouches" + "</col>" + ".");
+				case 53:
+					return newstruct cs2func_script_1020_struct(69, 12033, "Fruit bat" + "<br>" + "Green charm, banana, 130 shards", "You can now infuse " + "<col=000080>" + "fruit bat pouches" + "</col>" + ".");
+				case 54:
+					return newstruct cs2func_script_1020_struct(70, 12820, "Ravenous locust - Attack XP" + "<br>" + "Crimson charm, pot of flour, 79 shards", "You can now infuse " + "<col=000080>" + "ravenous locust pouches" + "</col>" + ".");
+				case 55:
+					return newstruct cs2func_script_1020_struct(71, 12057, "Arctic bear - Controlled XP" + "<br>" + "Gold charm, polar kebbit fur, 14 shards", "You can now infuse " + "<col=000080>" + "arctic bear pouches" + "</col>" + ".");
+				case 56:
+					return newstruct cs2func_script_1020_struct(72, 14623, "Phoenix - Magic XP" + "<br>" + "Crimson charm, phoenix quill, 165 shards (after In Pyre Need)", "You can now infuse " + "<col=000080>" + "phoenix pouches" + "</col>" + " (after In Pyre Need)" + "</col>" + ".");
+				case 57:
+					return newstruct cs2func_script_1020_struct(73, 12792, "Obsidian golem - Strength XP" + "<br>" + "Blue charm, obsidian charm, 195 shards", "You can now infuse " + "<col=000080>" + "obsidian golem pouches" + "</col>" + ".");
+				case 58:
+					return newstruct cs2func_script_1020_struct(74, 12069, "Granite lobster - Defence XP" + "<br>" + "Crimson charm, granite (500g, 2kg or 5kg), 166 shards", "You can now infuse " + "<col=000080>" + "granite lobster pouches" + "</col>" + ".");
+				case 59:
+					return newstruct cs2func_script_1020_struct(75, 12011, "Praying mantis - Attack XP" + "<br>" + "Crimson charm, flowers (any except black or white), 168 shards", "You can now infuse " + "<col=000080>" + "praying mantis pouches" + "</col>" + ".");
+				case 60:
+					return newstruct cs2func_script_1020_struct(76, 12782, "Forge regent - Ranged XP" + "<br>" + "Green charm, ruby harvest, 141 shards", "You can now infuse " + "<col=000080>" + "forge regent pouches" + "</col>" + ".");
+				case 61:
+					return newstruct cs2func_script_1020_struct(76, 12081, "Adamant minotaur - Defence XP" + "<br>" + "Blue charm, adamant bar, 144 shards", "You can now infuse " + "<col=000080>" + "adamant minotaur pouches" + "</col>" + ".");
+				case 62:
+					return newstruct cs2func_script_1020_struct(77, 12794, "Talon beast - Strength XP" + "<br>" + "Crimson charm, talon beast charm, 174 shards", "You can now infuse " + "<col=000080>" + "talon beast pouches" + "</col>" + ".");
+				case 63:
+					return newstruct cs2func_script_1020_struct(78, 12013, "Giant ent - Controlled XP" + "<br>" + "Green charm, willow branch, 124 shards", "You can now infuse " + "<col=000080>" + "giant ent pouches" + "</col>" + ".");
+				case 64:
+					return newstruct cs2func_script_1020_struct(79, 12802, "Fire titan - Magic XP" + "<br>" + "Blue charm, fire talisman, 198 shards", "You can now infuse " + "<col=000080>" + "fire titan pouches" + "</col>" + ".");
+				case 65:
+					return newstruct cs2func_script_1020_struct(79, 12804, "Moss titan - Strength XP" + "<br>" + "Blue charm, earth talisman, 202 shards", "You can now infuse " + "<col=000080>" + "moss titan pouches" + "</col>" + ".");
+				case 66:
+					return newstruct cs2func_script_1020_struct(79, 12806, "Ice titan - Attack XP" + "<br>" + "Blue charm, air talisman, water talisman, 198 shards", "You can now infuse " + "<col=000080>" + "ice titan pouches" + "</col>" + ".");
+				case 67:
+					return newstruct cs2func_script_1020_struct(80, 12025, "Hydra - Ranged XP" + "<br>" + "Green charm, water orb, 128 shards", "You can now infuse " + "<col=000080>" + "hydra pouches" + "</col>" + ".");
+				case 68:
+					return newstruct cs2func_script_1020_struct(83, 12017, "Spirit dagannoth - Controlled XP" + "<br>" + "Crimson charm, dagannoth hide, 1 shard", "You can now infuse " + "<col=000080>" + "spirit dagannoth pouches" + "</col>" + ".");
+				case 69:
+					return newstruct cs2func_script_1020_struct(83, 12788, "Lava titan - Strength XP" + "<br>" + "Blue charm, obsidian charm, 219 shards", "You can now infuse " + "<col=000080>" + "lava titan pouches" + "</col>" + ".");
+				case 70:
+					return newstruct cs2func_script_1020_struct(85, 12776, "Swamp titan - Attack XP" + "<br>" + "Crimson charm, swamp lizard, 150 shards", "You can now infuse " + "<col=000080>" + "swamp titan pouches" + "</col>" + ".");
+				case 71:
+					return newstruct cs2func_script_1020_struct(86, 12083, "Rune minotaur - Defence XP" + "<br>" + "Blue charm, rune bar, 1 shard", "You can now infuse " + "<col=000080>" + "rune minotaur pouches" + "</col>" + ".");
+				case 72:
+					return newstruct cs2func_script_1020_struct(88, 12039, "Unicorn stallion - Controlled XP" + "<br>" + "Green charm, unicorn horn, 140 shards", "You can now infuse " + "<col=000080>" + "unicorn stallion pouches" + "</col>" + ".");
+				case 73:
+					return newstruct cs2func_script_1020_struct(89, 12786, "Geyser titan - Ranged XP" + "<br>" + "Blue charm, water talisman, 222 shards", "You can now infuse " + "<col=000080>" + "geyser titan pouches" + "</col>" + ".");
+				case 74:
+					return newstruct cs2func_script_1020_struct(92, 12089, "Wolpertinger - Magic XP" + "<br>" + "Crimson charm, raw rabbit, wolf bones, 203 shards", "You can now infuse " + "<col=000080>" + "wolpertinger pouches" + "</col>" + ".");
+				case 75:
+					return newstruct cs2func_script_1020_struct(93, 12796, "Abyssal titan - Attack XP" + "<br>" + "Green charm, abyssal charm, 113 shards", "You can now infuse " + "<col=000080>" + "abyssal titan pouches" + "</col>" + ".");
+				case 76:
+					return newstruct cs2func_script_1020_struct(95, 12822, "Iron titan - Defence XP" + "<br>" + "Crimson charm, iron platebody, 198 shards", "You can now infuse " + "<col=000080>" + "iron titan pouches" + "</col>" + ".");
+				case 77:
+					return newstruct cs2func_script_1020_struct(96, 12093, "Pack yak - Strength XP" + "<br>" + "Crimson charm, yak hide, 211 shards", "You can now infuse " + "<col=000080>" + "pack yak pouches" + "</col>" + ".");
+				case 78:
+					return newstruct cs2func_script_1020_struct(99, 12790, "Steel titan - Ranged XP" + "<br>" + "Crimson charm, steel platebody, 178 shards", "You can now infuse " + "<col=000080>" + "steel titan pouches" + "</col>" + ".");
+			}
+			break;
+		case 1:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1020_struct(1, 12425, "Howl", "You can now use " + "<col=000080>" + "Howl scrolls" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1020_struct(4, 12445, "Dreadfowl Strike", "You can now use " + "<col=000080>" + "Dreadfowl Strike scrolls" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1020_struct(4, 19621, "Fetch Casket", "You can now use " + "<col=000080>" + "Fetch Casket scrolls" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1020_struct(10, 12428, "Egg Spawn", "You can now use " + "<col=000080>" + "Egg Spawn scrolls" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1020_struct(13, 12459, "Slime Spray", "You can now use " + "<col=000080>" + "Slime Spray scrolls" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1020_struct(16, 12533, "Stony Shell", "You can now use " + "<col=000080>" + "Stony Shell scrolls" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1020_struct(17, 12838, "Pester", "You can now use " + "<col=000080>" + "Pester scrolls" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1020_struct(18, 12460, "Electric Lash", "You can now use " + "<col=000080>" + "Electric Lash scrolls" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1020_struct(19, 12432, "Venom Shot", "You can now use " + "<col=000080>" + "Venom Shot scrolls" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1020_struct(22, 12839, "Fireball Assault", "You can now use " + "<col=000080>" + "Fireball Assault scrolls" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_1020_struct(23, 12430, "Cheese Feast", "You can now use " + "<col=000080>" + "Cheese Feast scrolls" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_1020_struct(25, 12446, "Sandstorm", "You can now use " + "<col=000080>" + "Sandstorm scrolls" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_1020_struct(28, 12440, "Generate Compost", "You can now use " + "<col=000080>" + "Generate Compost scrolls" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_1020_struct(29, 12834, "Explode", "You can now use " + "<col=000080>" + "Explode scrolls" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_1020_struct(31, 12447, "Vampyre Touch", "You can now use " + "<col=000080>" + "Vampyre Touch scrolls" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_1020_struct(32, 12433, "Insane Ferocity", "You can now use " + "<col=000080>" + "Insane Ferocity scrolls" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_1020_struct(33, 12429, "Multichop", "You can now use " + "<col=000080>" + "Multichop scrolls" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_1020_struct(34, 12443, "Call to Arms", "You can now use " + "<col=000080>" + "Call to Arms scrolls" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_1020_struct(36, 12461, "Bronze Bull Rush", "You can now use " + "<col=000080>" + "Bronze Bull Rush scrolls" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_1020_struct(40, 12431, "Unburden", "You can now use " + "<col=000080>" + "Unburden scrolls" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_1020_struct(41, 12422, "Herbcall", "You can now use " + "<col=000080>" + "Herbcall scrolls" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_1020_struct(42, 12448, "Evil Flames", "You can now use " + "<col=000080>" + "Evil Flames scrolls" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_1020_struct(43, 12458, "Petrifying Gaze", "You can now use " + "<col=000080>" + "Petrifying Gaze scrolls" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_1020_struct(46, 12462, "Iron Bull Rush", "You can now use " + "<col=000080>" + "Iron Bull Rush scrolls" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_1020_struct(46, 12829, "Immense Heat", "You can now use " + "<col=000080>" + "Immense Heat scrolls" + "</col>" + ".");
+				case 25:
+					return newstruct cs2func_script_1020_struct(47, 12426, "Thieving Fingers", "You can now use " + "<col=000080>" + "Thieving Fingers scrolls" + "</col>" + ".");
+				case 26:
+					return newstruct cs2func_script_1020_struct(49, 12444, "Blood Drain", "You can now use " + "<col=000080>" + "Blood Drain scrolls" + "</col>" + ".");
+				case 27:
+					return newstruct cs2func_script_1020_struct(52, 12441, "Tireless Run", "You can now use " + "<col=000080>" + "Tireless Run scrolls" + "</col>" + ".");
+				case 28:
+					return newstruct cs2func_script_1020_struct(54, 12454, "Abyssal Drain", "You can now use " + "<col=000080>" + "Abyssal Drain scrolls" + "</col>" + ".");
+				case 29:
+					return newstruct cs2func_script_1020_struct(55, 12453, "Dissolve", "You can now use " + "<col=000080>" + "Dissolve scrolls" + "</col>" + ".");
+				case 30:
+					return newstruct cs2func_script_1020_struct(56, 12463, "Steel Bull Rush", "You can now use " + "<col=000080>" + "Steel Bull Rush scrolls" + "</col>" + ".");
+				case 31:
+					return newstruct cs2func_script_1020_struct(56, 12424, "Fish Rain", "You can now use " + "<col=000080>" + "Fish Rain scrolls" + "</col>" + ".");
+				case 32:
+					return newstruct cs2func_script_1020_struct(57, 12836, "Ambush", "You can now use " + "<col=000080>" + "Ambush scrolls" + "</col>" + ".");
+				case 33:
+					return newstruct cs2func_script_1020_struct(57, 12840, "Rending", "You can now use " + "<col=000080>" + "Rending scrolls" + "</col>" + ".");
+				case 34:
+					return newstruct cs2func_script_1020_struct(57, 12835, "Goad", "You can now use " + "<col=000080>" + "Goad scrolls" + "</col>" + ".");
+				case 35:
+					return newstruct cs2func_script_1020_struct(58, 12455, "Doomsphere Device", "You can now use " + "<col=000080>" + "Doomsphere Device scrolls" + "</col>" + ".");
+				case 36:
+					return newstruct cs2func_script_1020_struct(61, 12468, "Dust Cloud", "You can now use " + "<col=000080>" + "Dust Cloud scrolls" + "</col>" + ".");
+				case 37:
+					return newstruct cs2func_script_1020_struct(62, 12427, "Abyssal Stealth", "You can now use " + "<col=000080>" + "Abyssal Stealth scrolls" + "</col>" + ".");
+				case 38:
+					return newstruct cs2func_script_1020_struct(63, 12436, "Ophidian Incubation", "You can now use " + "<col=000080>" + "Ophidian Incubation scrolls" + "</col>" + ".");
+				case 39:
+					return newstruct cs2func_script_1020_struct(64, 12467, "Poisonous Blast", "You can now use " + "<col=000080>" + "Poisonous Blast scrolls" + "</col>" + ".");
+				case 40:
+					return newstruct cs2func_script_1020_struct(66, 12464, "Mithril Bull Rush", "You can now use " + "<col=000080>" + "Mithril Bull Rush scrolls" + "</col>" + ".");
+				case 41:
+					return newstruct cs2func_script_1020_struct(66, 12452, "Toad Bark", "You can now use " + "<col=000080>" + "Toad Bark scrolls" + "</col>" + ".");
+				case 42:
+					return newstruct cs2func_script_1020_struct(67, 12439, "Testudo", "You can now use " + "<col=000080>" + "Testudo scrolls" + "</col>" + ".");
+				case 43:
+					return newstruct cs2func_script_1020_struct(68, 12438, "Swallow Whole", "You can now use " + "<col=000080>" + "Swallow Whole scrolls" + "</col>" + ".");
+				case 44:
+					return newstruct cs2func_script_1020_struct(69, 12423, "Fruitfall", "You can now use " + "<col=000080>" + "Fruitfall scrolls" + "</col>" + ".");
+				case 45:
+					return newstruct cs2func_script_1020_struct(70, 12830, "Famine", "You can now use " + "<col=000080>" + "Famine scrolls" + "</col>" + ".");
+				case 46:
+					return newstruct cs2func_script_1020_struct(71, 12451, "Arctic Blast", "You can now use " + "<col=000080>" + "Arctic Blast scrolls" + "</col>" + ".");
+				case 47:
+					return newstruct cs2func_script_1020_struct(72, 14622, "Rise from the Ashes (after In Pyre Need)", "You can now use " + "<col=000080>" + "Rise from the Ashes scrolls" + "</col>" + " (after In Pyre Need).");
+				case 48:
+					return newstruct cs2func_script_1020_struct(73, 12826, "Volcanic Strength", "You can now use " + "<col=000080>" + "Volcanic Strength scrolls" + "</col>" + ".");
+				case 49:
+					return newstruct cs2func_script_1020_struct(74, 12449, "Crushing Claw", "You can now use " + "<col=000080>" + "Crushing Claw scrolls" + "</col>" + ".");
+				case 50:
+					return newstruct cs2func_script_1020_struct(75, 12450, "Mantis Strike", "You can now use " + "<col=000080>" + "Mantis Strike scrolls" + "</col>" + ".");
+				case 51:
+					return newstruct cs2func_script_1020_struct(76, 12841, "Inferno", "You can now use " + "<col=000080>" + "Inferno scrolls" + "</col>" + ".");
+				case 52:
+					return newstruct cs2func_script_1020_struct(76, 12465, "Adamant Bull Rush", "You can now use " + "<col=000080>" + "Adamant Bull Rush scrolls" + "</col>" + ".");
+				case 53:
+					return newstruct cs2func_script_1020_struct(77, 12831, "Deadly Claw", "You can now use " + "<col=000080>" + "Deadly Claw scrolls" + "</col>" + ".");
+				case 54:
+					return newstruct cs2func_script_1020_struct(78, 12457, "Acorn Missile", "You can now use " + "<col=000080>" + "Acorn Missile scrolls" + "</col>" + ".");
+				case 55:
+					return newstruct cs2func_script_1020_struct(79, 12824, "Titan's Constitution", "You can now use " + "<col=000080>" + "Titan's Constitution scrolls" + "</col>" + ".");
+				case 56:
+					return newstruct cs2func_script_1020_struct(80, 12442, "Regrowth", "You can now use " + "<col=000080>" + "Regrowth scrolls" + "</col>" + ".");
+				case 57:
+					return newstruct cs2func_script_1020_struct(83, 12456, "Spike Shot", "You can now use " + "<col=000080>" + "Spike Shot scrolls" + "</col>" + ".");
+				case 58:
+					return newstruct cs2func_script_1020_struct(83, 12837, "Ebon Thunder", "You can now use " + "<col=000080>" + "Ebon Thunder scrolls" + "</col>" + ".");
+				case 59:
+					return newstruct cs2func_script_1020_struct(85, 12832, "Swamp Plague", "You can now use " + "<col=000080>" + "Swamp Plague scrolls" + "</col>" + ".");
+				case 60:
+					return newstruct cs2func_script_1020_struct(86, 12466, "Rune Bull Rush", "You can now use " + "<col=000080>" + "Rune Bull Rush scrolls" + "</col>" + ".");
+				case 61:
+					return newstruct cs2func_script_1020_struct(88, 12434, "Healing Aura", "You can now use " + "<col=000080>" + "Healing Aura scrolls" + "</col>" + ".");
+				case 62:
+					return newstruct cs2func_script_1020_struct(89, 12833, "Boil", "You can now use " + "<col=000080>" + "Boil scrolls" + "</col>" + ".");
+				case 63:
+					return newstruct cs2func_script_1020_struct(92, 12437, "Magic Focus", "You can now use " + "<col=000080>" + "Magic Focus scrolls" + "</col>" + ".");
+				case 64:
+					return newstruct cs2func_script_1020_struct(93, 12827, "Essence Shipment", "You can now use " + "<col=000080>" + "Essence Shipment scrolls" + "</col>" + ".");
+				case 65:
+					return newstruct cs2func_script_1020_struct(95, 12828, "Iron Within", "You can now use " + "<col=000080>" + "Iron Within scrolls" + "</col>" + ".");
+				case 66:
+					return newstruct cs2func_script_1020_struct(96, 12435, "Winter Storage", "You can now use " + "<col=000080>" + "Winter Storage scrolls" + "</col>" + ".");
+				case 67:
+					return newstruct cs2func_script_1020_struct(99, 12825, "Steel of Legends", "You can now use " + "<col=000080>" + "Steel of Legends scrolls" + "</col>" + ".");
+			}
+			break;
+		case 2:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1020_struct(4, 12196, "Bulldog", "You can now raise " + "<col=000080>" + "bulldogs" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1020_struct(4, 12194, "Dalmatian", "You can now raise " + "<col=000080>" + "dalmatians" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1020_struct(4, 12192, "Greyhound", "You can now raise " + "<col=000080>" + "greyhounds" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1020_struct(4, 12193, "Labrador", "You can now raise " + "<col=000080>" + "labradors" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1020_struct(4, 12195, "Sheepdog", "You can now raise " + "<col=000080>" + "sheepdogs" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1020_struct(4, 12191, "Terrier", "You can now raise " + "<col=000080>" + "terriers" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1020_struct(4, 14652, "Creeping hand", "You can now keep " + "<col=000080>" + "creeping hands" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1020_struct(4, 14653, "Minitrice", "You can now keep " + "<col=000080>" + "minitrices" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1020_struct(4, 14654, "Baby basilisk", "You can now keep " + "<col=000080>" + "baby basilisks" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1020_struct(4, 14655, "Baby kurask", "You can now keep " + "<col=000080>" + "baby kurasks" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_1020_struct(4, 14651, "Abyssal minion", "You can now keep " + "<col=000080>" + "abyssal minions" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_1020_struct(4, 15483, "Rune guardian" + "<br>" + " (after Rune Mechanics)", "You can now keep " + "<col=000080>" + "rune guardians" + "</col>" + " (after Rune Mechanics)");
+				case 12:
+					return newstruct cs2func_script_1020_struct(10, 12488, "Gecko", "You can now raise " + "<col=000080>" + "geckos" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_1020_struct(10, 12547, "Platypus" + "<br>" + " (after As a First Resort...)", "You can now raise " + "<col=000080>" + "platypodes" + "</col>" + " (after As a First Resort...).");
+				case 14:
+					return newstruct cs2func_script_1020_struct(23, 14533, "Broav" + "<br>" + " (after While Guthix Sleeps...)", "You can now raise " + "<col=000080>" + "broavs" + "</col>" + " " + "<br>" + " (after While Guthix Sleeps...).");
+				case 15:
+					return newstruct cs2func_script_1020_struct(30, 12188, "Penguin", "You can now raise " + "<col=000080>" + "penguins" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_1020_struct(37, 18668, "Tooth pet", "You can now raise " + "<col=000080>" + "tooth pets" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_1020_struct(40, 12198, "Giant crab", "You can now raise " + "<col=000080>" + "giant crabs" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_1020_struct(50, 12485, "Raven", "You can now raise " + "<col=000080>" + "ravens" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_1020_struct(60, 12200, "Squirrel", "You can now raise " + "<col=000080>" + "squirrels" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_1020_struct(70, 12185, "Saradomin owl", "You can now raise " + "<col=000080>" + "Saradomin owls" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_1020_struct(70, 12187, "Guthix raptor", "You can now raise " + "<col=000080>" + "Guthix raptors" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_1020_struct(70, 12186, "Zamorak hawk", "You can now raise " + "<col=000080>" + "Zamorak hawks" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_1020_struct(71, 13336, "Ex-ex-parrot" + "<br>" + " (after Rocking Out)", "You can now raise " + "<col=000080>" + "ex-ex-parrots" + "</col>" + " (after Rocking Out).");
+				case 24:
+					return newstruct cs2func_script_1020_struct(72, 14627, "Cute phoenix eggling" + "<br>" + " (after In Pyre Need)", "You can now raise " + "<col=000080>" + "cute phoenix egglings" + "</col>" + " (after In Pyre Need).");
+				case 25:
+					return newstruct cs2func_script_1020_struct(72, 14626, "Mean phoenix eggling" + "<br>" + " (after In Pyre Need)", "You can now raise " + "<col=000080>" + "mean phoenix egglings" + "</col>" + " (after In Pyre Need).");
+				case 26:
+					return newstruct cs2func_script_1020_struct(80, 12199, "Raccoon", "You can now raise " + "<col=000080>" + "raccoons" + "</col>" + ".");
+				case 27:
+					return newstruct cs2func_script_1020_struct(80, 19894, "Sneakerpeeper" + "<br>" + " (with 80 Dungeoneering)", "You can now raise " + "<col=000080>" + "sneakerpeepers" + "</col>" + ". (You also need level 80 Dungeoneering.)");
+				case 28:
+					return newstruct cs2func_script_1020_struct(85, 12190, "Vulture", "You can now raise " + "<col=000080>" + "vultures" + "</col>" + ".");
+				case 29:
+					return newstruct cs2func_script_1020_struct(90, 12203, "Chameleon", "You can now raise " + "<col=000080>" + "chameleons" + "</col>" + ".");
+				case 30:
+					return newstruct cs2func_script_1020_struct(95, 12201, "Monkey", "You can now raise " + "<col=000080>" + "monkeys" + "</col>" + ".");
+				case 31:
+					return newstruct cs2func_script_1020_struct(99, 12197, "Dragon", "You can now raise " + "<col=000080>" + "dragons" + "</col>" + ".");
+				case 32:
+					return newstruct cs2func_script_1020_struct(99, 21512, "TzRek Jad", "You can now keep " + "<col=000080>" + "TzRek Jad" + "</col>" + ".");
+			}
+			break;
+		case 3:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1020_struct(10, 12204, "Antlers", "You can now use " + "<col=000080>" + "antlers" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1020_struct(20, 1161, "Adamant full helm" + "<br>" + " (with 30 Defence)", "You can now have " + "<col=000080>" + "adamant full helms" + "</col>" + " enchanted to hold Summoning scrolls. (You also need level 30 Defence).");
+				case 2:
+					return newstruct cs2func_script_1020_struct(20, 6326, "Snakeskin bandana" + "<br>" + " (with 30 Defence and 30 Ranged)", "You can now have " + "<col=000080>" + "snakeskin bandanas" + "</col>" + " enchanted to hold Summoning scrolls. (You also need level 30 Defence and level 30 Ranged).");
+				case 3:
+					return newstruct cs2func_script_1020_struct(20, 14636, "Slayer helmet" + "<br>" + " (with 10 Defence)", "You can now have " + "<col=000080>" + "Slayer helmets" + "</col>" + " enchanted to hold Summoning scrolls. (You also need level 10 Defence).");
+				case 4:
+					return newstruct cs2func_script_1020_struct(30, 12207, "Lizard skull", "You can now use " + "<col=000080>" + "lizard skulls" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1020_struct(30, 3385, "Splitbark helm" + "<br>" + " (with 40 Defence and 40 Magic)", "You can now have " + "<col=000080>" + "splitbark helms" + "</col>" + " enchanted to hold Summoning scrolls. (You also need level 40 Defence and level 40 Magic).");
+				case 6:
+					return newstruct cs2func_script_1020_struct(30, 1163, "Rune full helm" + "<br>" + " (with 40 Defence)", "You can now have " + "<col=000080>" + "rune full helms" + "</col>" + " enchanted to hold Summoning scrolls. (You also need level 40 Defence).");
+				case 7:
+					return newstruct cs2func_script_1020_struct(35, 3751, "Berserker helm" + "<br>" + " (after Fremennik Trials with 45 Defence)", "You can now have " + "<col=000080>" + "Berserker helms" + "</col>" + " enchanted to hold Summoning scrolls. (After Fremennik Trials and with level 45 Defence).");
+				case 8:
+					return newstruct cs2func_script_1020_struct(35, 3755, "Farseer helm" + "<br>" + " (after Fremennik Trials with 45 Defence)", "You can now have " + "<col=000080>" + "Farseer helms" + "</col>" + " enchanted to hold Summoning scrolls. (After Fremennik Trials and with level 45 Defence).");
+				case 9:
+					return newstruct cs2func_script_1020_struct(35, 3749, "Archer helm" + "<br>" + " (after Fremennik Trials with 45 Defence)", "You can now have " + "<col=000080>" + "Archer helms" + "</col>" + " enchanted to hold Summoning scrolls. (After Fremennik Trials and with level 45 Defence).");
+				case 10:
+					return newstruct cs2func_script_1020_struct(35, 3753, "Warrior helm" + "<br>" + " (after Fremennik Trials with 45 Defence)", "You can now have " + "<col=000080>" + "Warrior helms" + "</col>" + " enchanted to hold Summoning scrolls. (After Fremennik Trials and with level 45 Defence).");
+				case 11:
+					return newstruct cs2func_script_1020_struct(45, 10828, "Helm of Neitiznot" + "<br>" + " (after Fremennik Isles)", "You can now have the " + "<col=000080>" + "Helm of Neitiznot" + "</col>" + " enchanted to hold Summoning scrolls (after Fremennik Isles).");
+				case 12:
+					return newstruct cs2func_script_1020_struct(50, 12210, "Feather headdress", "You can now use " + "<col=000080>" + "feather headdresses" + "</col>" + ". (You also need Level 79 Crafting to make feather headdresses).");
+				case 13:
+					return newstruct cs2func_script_1020_struct(50, 1149, "Dragon medium helm" + "<br>" + " (with 60 Defence)", "You can now have " + "<col=000080>" + "dragon medium helms" + "</col>" + " enchanted to hold Summoning scrolls. (You also need level 60 Defence.)");
+				case 14:
+					return newstruct cs2func_script_1020_struct(50, 19893, "Spirit cape" + "<br>" + " (with 50 Defence and 50 Dungeoneering)", "You can now wear " + "<col=000080>" + "spirit capes" + "</col>" + ". (You also need level 50 Defence and 50 Dungeoneering.)");
+				case 15:
+					return newstruct cs2func_script_1020_struct(55, 9096, "Lunar helm" + "<br>" + " (with 40 Defence and 65 Magic)", "You can now have " + "<col=000080>" + "lunar helms" + "</col>" + " enchanted to hold Summoning scrolls. (You also need level 40 Defence and level 65 Magic.)");
+				case 16:
+					return newstruct cs2func_script_1020_struct(60, 11718, "Armadyl helm" + "<br>" + " (with 70 Defence and 70 Ranged)", "You can now have " + "<col=000080>" + "Armadyl helms" + "</col>" + " enchanted to hold Summoning scrolls. (You also need level 70 Defence and level 70 Ranged.)");
+			}
+			break;
+		case 4:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1020_struct(91, 18778, "Starved ancient effigies", "You can now investigate " + "<col=000080>" + "starved ancient effigies" + "</col>" + " using your knowledge of Summoning.");
+				case 1:
+					return newstruct cs2func_script_1020_struct(93, 18779, "Nourished ancient effigies", "You can now investigate " + "<col=000080>" + "nourished ancient effigies" + "</col>" + " using your knowledge of Summoning.");
+				case 2:
+					return newstruct cs2func_script_1020_struct(95, 18780, "Sated ancient effigies", "You can now investigate " + "<col=000080>" + "sated ancient effigies" + "</col>" + " using your knowledge of Summoning.");
+				case 3:
+					return newstruct cs2func_script_1020_struct(97, 18781, "Gorged ancient effigies", "You can now investigate " + "<col=000080>" + "gorged ancient effigies" + "</col>" + " using your knowledge of Summoning.");
+			}
+			break;
+		case 5:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1020_struct(1, 14422, "Stealing Creation - class 1 clay being - Strength XP", "You can now summon " + "<col=000080>" + "class 1 clay beings" + "</col>" + " in Stealing Creation.");
+				case 1:
+					return newstruct cs2func_script_1020_struct(20, 14424, "Stealing Creation - class 2 clay being - Strength XP", "You can now summon " + "<col=000080>" + "class 2 clay beings" + "</col>" + " in Stealing Creation.");
+				case 2:
+					return newstruct cs2func_script_1020_struct(40, 14426, "Stealing Creation - class 3 clay being - Strength XP", "You can now summon " + "<col=000080>" + "class 3 clay beings" + "</col>" + " in Stealing Creation.");
+				case 3:
+					return newstruct cs2func_script_1020_struct(60, 14428, "Stealing Creation - class 4 clay being - Strength XP", "You can now summon " + "<col=000080>" + "class 4 clay beings" + "</col>" + " in Stealing Creation.");
+				case 4:
+					return newstruct cs2func_script_1020_struct(80, 14430, "Stealing Creation - class 5 clay being - Strength XP", "You can now summon " + "<col=000080>" + "class 5 clay beings" + "</col>" + " in Stealing Creation.");
+			}
+			break;
+		case 6:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1020_struct(-1, 15707, "Dungeoneering skill tasks" + "<br>" + "As your Summoning level increases, you will be able to attempt higher-level summoning tasks within Daemonheim. You will also be more likely to succeed when attempting summoning tasks within Daemonheim.", "");
+				case 1:
+					return newstruct cs2func_script_1020_struct(1, 17935, "Cub bloodrager (Melee, tier 1)" + "<br>" + "Gold charm, novite ore", "You can now infuse " + "<col=000080>" + "cub bloodrager pouches" + "</col>" + " within Daemonheim.");
+				case 2:
+					return newstruct cs2func_script_1020_struct(1, 18027, "Sundering Strike (Tier 1) scroll", "You can now use " + "<col=000080>" + "Sundering Strike (Tier 1) scrolls" + "</col>" + " within Daemonheim.");
+				case 3:
+					return newstruct cs2func_script_1020_struct(2, 17985, "Cub deathslinger (Ranged, tier 1)" + "<br>" + "Gold charm, tangle gum branches", "You can now infuse " + "<col=000080>" + "cub deathslinger pouches" + "</col>" + " within Daemonheim.");
+				case 4:
+					return newstruct cs2func_script_1020_struct(2, 18037, "Poisonous Shot (Tier 1) scroll", "You can now use " + "<col=000080>" + " Poisonous Shot (Tier 1) scrolls" + "</col>" + " within Daemonheim.");
+				case 5:
+					return newstruct cs2func_script_1020_struct(3, 17945, "Cub stormbringer (Magic, tier 1)" + "<br>" + "Gold charm, salve nettles", "You can now infuse " + "<col=000080>" + "cub stormbringer pouches" + "</col>" + " within Daemonheim.");
+				case 6:
+					return newstruct cs2func_script_1020_struct(3, 18047, "Snaring Wave (Tier 1) scroll", "You can now use " + "<col=000080>" + " Snaring Wave (Tier 1) scrolls" + "</col>" + " within Daemonheim.");
+				case 7:
+					return newstruct cs2func_script_1020_struct(5, 17955, "Cub hoardstalker (Forager, tier 1)" + "<br>" + "Gold charm, protomastyx hide", "You can now infuse " + "<col=000080>" + "cub hoardstalker pouches" + "</col>" + " within Daemonheim.");
+				case 8:
+					return newstruct cs2func_script_1020_struct(5, 18057, "Aptitude (Tier 1) scroll", "You can now use " + "<col=000080>" + " Aptitude (Tier 1) scrolls" + "</col>" + " within Daemonheim.");
+				case 9:
+					return newstruct cs2func_script_1020_struct(7, 17975, "Cub worldbearer (Beast of burden, tier 1)" + "<br>" + "Gold charm, protoleather torn bag", "You can now infuse " + "<col=000080>" + "cub worldbearer pouches" + "</col>" + " within Daemonheim.");
+				case 10:
+					return newstruct cs2func_script_1020_struct(7, 18067, "Second Wind (Tier 1) scroll", "You can now use " + "<col=000080>" + " Second Wind (Tier 1) scrolls" + "</col>" + " within Daemonheim.");
+				case 11:
+					return newstruct cs2func_script_1020_struct(9, 17965, "Cub skinweaver (Healer, tier 1)" + "<br>" + "Gold charm, 2 cooked heim crabs", "You can now infuse " + "<col=000080>" + "cub skinweaver pouches" + "</col>" + " within Daemonheim.");
+				case 12:
+					return newstruct cs2func_script_1020_struct(9, 18077, "Glimmer of Light (Tier 1) scroll", "You can now use " + "<col=000080>" + " Glimmer of Light (Tier 1) scrolls" + "</col>" + " within Daemonheim.");
+				case 13:
+					return newstruct cs2func_script_1020_struct(11, 17936, "Little bloodrager (Melee, tier 2)" + "<br>" + "Gold charm, bathus ore", "You can now infuse " + "<col=000080>" + "little bloodrager pouches" + "</col>" + " within Daemonheim.");
+				case 14:
+					return newstruct cs2func_script_1020_struct(11, 18028, "Sundering Strike (Tier 2) scroll", "You can now use " + "<col=000080>" + " Sundering Strike (Tier 2) scrolls" + "</col>" + " within Daemonheim.");
+				case 15:
+					return newstruct cs2func_script_1020_struct(12, 17986, "Little deathslinger (Ranged, tier 2)" + "<br>" + "Gold charm, seeping elm branches", "You can now infuse " + "<col=000080>" + "little deathslinger pouches" + "</col>" + " within Daemonheim.");
+				case 16:
+					return newstruct cs2func_script_1020_struct(12, 18038, "Poisonous Shot (Tier 2) scroll", "You can now use " + "<col=000080>" + " Poisonous Shot (Tier 2) scrolls" + "</col>" + " within Daemonheim.");
+				case 17:
+					return newstruct cs2func_script_1020_struct(13, 17946, "Little stormbringer (Magic, tier 2)" + "<br>" + "Gold charm, wildercress stems", "You can now infuse " + "<col=000080>" + "little stormbringer pouches" + "</col>" + " within Daemonheim.");
+				case 18:
+					return newstruct cs2func_script_1020_struct(13, 18048, "Snaring Wave (Tier 2) scroll", "You can now use " + "<col=000080>" + " Snaring Wave (Tier 2) scrolls" + "</col>" + " within Daemonheim.");
+				case 19:
+					return newstruct cs2func_script_1020_struct(15, 17956, "Little hoardstalker (Forager, tier 2)" + "<br>" + "Gold charm, submastyx hide", "You can now infuse " + "<col=000080>" + "little hoardstalker pouches" + "</col>" + " within Daemonheim.");
+				case 20:
+					return newstruct cs2func_script_1020_struct(15, 18058, "Aptitude (Tier 2) scroll", "You can now use " + "<col=000080>" + " Aptitude (Tier 2) scrolls" + "</col>" + " within Daemonheim.");
+				case 21:
+					return newstruct cs2func_script_1020_struct(17, 17976, "Little worldbearer (Beast of burden, tier 2)" + "<br>" + "Gold charm, subleather torn bag", "You can now infuse " + "<col=000080>" + "little worldbearer pouches" + "</col>" + " within Daemonheim.");
+				case 22:
+					return newstruct cs2func_script_1020_struct(17, 18068, "Second Wind (Tier 2) scroll", "You can now use " + "<col=000080>" + " Second Wind (Tier 2) scrolls" + "</col>" + " within Daemonheim.");
+				case 23:
+					return newstruct cs2func_script_1020_struct(19, 17966, "Little skinweaver (Healer, tier 2)" + "<br>" + "Gold charm, 2 cooked red-eye", "You can now infuse " + "<col=000080>" + "little skinweaver pouches" + "</col>" + " within Daemonheim.");
+				case 24:
+					return newstruct cs2func_script_1020_struct(19, 18078, "Glimmer of Light (Tier 2) scroll", "You can now use " + "<col=000080>" + " Glimmer of Light (Tier 2) scrolls" + "</col>" + " within Daemonheim.");
+				case 25:
+					return newstruct cs2func_script_1020_struct(21, 17937, "Na\u00efve bloodrager (Melee, tier 3)" + "<br>" + "Gold charm, marmaros ore", "You can now infuse " + "<col=000080>" + "na\u00efve bloodrager pouches" + "</col>" + " within Daemonheim.");
+				case 26:
+					return newstruct cs2func_script_1020_struct(21, 18029, "Sundering Strike (Tier 3) scroll", "You can now use " + "<col=000080>" + " Sundering Strike (Tier 3) scrolls" + "</col>" + " within Daemonheim.");
+				case 27:
+					return newstruct cs2func_script_1020_struct(22, 17987, "Na\u00efve deathslinger (Ranged, tier 3)" + "<br>" + "Gold charm, blood spindle branches", "You can now infuse " + "<col=000080>" + "na\u00efve deathslinger pouches" + "</col>" + " within Daemonheim.");
+				case 28:
+					return newstruct cs2func_script_1020_struct(22, 18039, "Poisonous Shot (Tier 3) scroll", "You can now use " + "<col=000080>" + " Poisonous Shot (Tier 3) scrolls" + "</col>" + " within Daemonheim.");
+				case 29:
+					return newstruct cs2func_script_1020_struct(23, 17947, "Na\u00efve stormbringer (Magic, tier 3)" + "<br>" + "Gold charm, blightleaf gauze", "You can now infuse " + "<col=000080>" + "na\u00efve stormbringer pouches" + "</col>" + " within Daemonheim.");
+				case 30:
+					return newstruct cs2func_script_1020_struct(23, 18049, "Snaring Wave (Tier 3) scroll", "You can now use " + "<col=000080>" + " Snaring Wave (Tier 3) scrolls" + "</col>" + " within Daemonheim.");
+				case 31:
+					return newstruct cs2func_script_1020_struct(25, 17957, "Na\u00efve hoardstalker (Forager, tier 3)" + "<br>" + "Gold charm, paramastyx hide", "You can now infuse " + "<col=000080>" + "na\u00efve hoardstalker pouches" + "</col>" + " within Daemonheim.");
+				case 32:
+					return newstruct cs2func_script_1020_struct(25, 18059, "Aptitude (Tier 3) scroll", "You can now use " + "<col=000080>" + " Aptitude (Tier 3) scrolls" + "</col>" + " within Daemonheim.");
+				case 33:
+					return newstruct cs2func_script_1020_struct(27, 17977, "Na\u00efve worldbearer (Beast of burden, tier 3)" + "<br>" + "Gold charm, paraleather torn bag", "You can now infuse " + "<col=000080>" + "na\u00efve worldbearer pouches" + "</col>" + " within Daemonheim.");
+				case 34:
+					return newstruct cs2func_script_1020_struct(27, 18069, "Second Wind (Tier 3) scroll", "You can now use " + "<col=000080>" + " Second Wind (Tier 3) scrolls" + "</col>" + " within Daemonheim.");
+				case 35:
+					return newstruct cs2func_script_1020_struct(29, 17967, "Na\u00efve skinweaver (Healer, tier 3)" + "<br>" + "Gold charm, 2 cooked dusk eels", "You can now infuse " + "<col=000080>" + "na\u00efve skinweaver pouches" + "</col>" + " within Daemonheim.");
+				case 36:
+					return newstruct cs2func_script_1020_struct(29, 18079, "Glimmer of Light (Tier 3) scroll", "You can now use " + "<col=000080>" + " Glimmer of Light (Tier 3) scrolls" + "</col>" + " within Daemonheim.");
+				case 37:
+					return newstruct cs2func_script_1020_struct(31, 17938, "Keen bloodrager (Melee, tier 4)" + "<br>" + "Green charm, kratonite ore", "You can now infuse " + "<col=000080>" + "keen bloodrager pouches" + "</col>" + " within Daemonheim.");
+				case 38:
+					return newstruct cs2func_script_1020_struct(31, 18030, "Sundering Strike (Tier 4) scroll", "You can now use " + "<col=000080>" + " Sundering Strike (Tier 4) scrolls" + "</col>" + " within Daemonheim.");
+				case 39:
+					return newstruct cs2func_script_1020_struct(32, 17988, "Keen deathslinger (Ranged, tier 4)" + "<br>" + "Green charm, utuku branches", "You can now infuse " + "<col=000080>" + "keen deathslinger pouches" + "</col>" + " within Daemonheim.");
+				case 40:
+					return newstruct cs2func_script_1020_struct(32, 18040, "Poisonous Shot (Tier 4) scroll", "You can now use " + "<col=000080>" + " Poisonous Shot (Tier 4) scrolls" + "</col>" + " within Daemonheim.");
+				case 41:
+					return newstruct cs2func_script_1020_struct(33, 17948, "Keen stormbringer (Magic, tier 4)" + "<br>" + "Green charm, roseblood stems", "You can now infuse " + "<col=000080>" + "keen stormbringer pouches" + "</col>" + " within Daemonheim.");
+				case 42:
+					return newstruct cs2func_script_1020_struct(33, 18050, "Snaring Wave (Tier 4) scroll", "You can now use " + "<col=000080>" + " Snaring Wave (Tier 4) scrolls" + "</col>" + " within Daemonheim.");
+				case 43:
+					return newstruct cs2func_script_1020_struct(35, 17958, "Keen hoardstalker (Forager, tier 4)" + "<br>" + "Green charm, archaemastyx hide", "You can now infuse " + "<col=000080>" + "keen hoardstalker pouches" + "</col>" + " within Daemonheim.");
+				case 44:
+					return newstruct cs2func_script_1020_struct(35, 18060, "Aptitude (Tier 4) scroll", "You can now use " + "<col=000080>" + " Aptitude (Tier 4) scrolls" + "</col>" + " within Daemonheim.");
+				case 45:
+					return newstruct cs2func_script_1020_struct(37, 17978, "Keen worldbearer (Beast of burden, tier 4)" + "<br>" + "Green charm, archleather torn bag", "You can now infuse " + "<col=000080>" + "keen worldbearer pouches" + "</col>" + " within Daemonheim.");
+				case 46:
+					return newstruct cs2func_script_1020_struct(37, 18070, "Second Wind (Tier 4) scroll", "You can now use " + "<col=000080>" + " Second Wind (Tier 4) scrolls" + "</col>" + " within Daemonheim.");
+				case 47:
+					return newstruct cs2func_script_1020_struct(39, 17968, "Keen skinweaver (Healer, tier 4)" + "<br>" + "Green charm, 2 cooked giant flatfish", "You can now infuse " + "<col=000080>" + "keen skinweaver pouches" + "</col>" + " within Daemonheim.");
+				case 48:
+					return newstruct cs2func_script_1020_struct(39, 18080, "Glimmer of Light (Tier 4) scroll", "You can now use " + "<col=000080>" + " Glimmer of Light (Tier 4) scrolls" + "</col>" + " within Daemonheim.");
+				case 49:
+					return newstruct cs2func_script_1020_struct(41, 17939, "Brave bloodrager (Melee, tier 5)" + "<br>" + "Green charm, fractite ore", "You can now infuse " + "<col=000080>" + "brave bloodrager pouches" + "</col>" + " within Daemonheim.");
+				case 50:
+					return newstruct cs2func_script_1020_struct(41, 18031, "Sundering Strike (Tier 5) scroll", "You can now use " + "<col=000080>" + " Sundering Strike (Tier 5) scrolls" + "</col>" + " within Daemonheim.");
+				case 51:
+					return newstruct cs2func_script_1020_struct(42, 17989, "Brave deathslinger (Ranged, tier 5)" + "<br>" + "Green charm, spinebeam branches", "You can now infuse " + "<col=000080>" + "brave deathslinger pouches" + "</col>" + " within Daemonheim.");
+				case 52:
+					return newstruct cs2func_script_1020_struct(42, 18041, "Poisonous Shot (Tier 5) scroll", "You can now use " + "<col=000080>" + " Poisonous Shot (Tier 5) scrolls" + "</col>" + " within Daemonheim.");
+				case 53:
+					return newstruct cs2func_script_1020_struct(43, 17949, "Brave stormbringer (Magic, tier 5)" + "<br>" + "Green charm, bryll reeds", "You can now infuse " + "<col=000080>" + "brave stormbringer pouches" + "</col>" + " within Daemonheim.");
+				case 54:
+					return newstruct cs2func_script_1020_struct(43, 18051, "Snaring Wave (Tier 5) scroll", "You can now use " + "<col=000080>" + " Snaring Wave (Tier 5) scrolls" + "</col>" + " within Daemonheim.");
+				case 55:
+					return newstruct cs2func_script_1020_struct(45, 17959, "Brave hoardstalker (Forager, tier 5)" + "<br>" + "Green charm, dromomastyx hide", "You can now infuse " + "<col=000080>" + "brave hoardstalker pouches" + "</col>" + " within Daemonheim.");
+				case 56:
+					return newstruct cs2func_script_1020_struct(45, 18061, "Aptitude (Tier 5) scroll", "You can now use " + "<col=000080>" + " Aptitude (Tier 5) scrolls" + "</col>" + " within Daemonheim.");
+				case 57:
+					return newstruct cs2func_script_1020_struct(47, 17979, "Brave worldbearer (Beast of burden, tier 5)" + "<br>" + "Green charm, dromoleather torn bag", "You can now infuse " + "<col=000080>" + "brave worldbearer pouches" + "</col>" + " within Daemonheim.");
+				case 58:
+					return newstruct cs2func_script_1020_struct(47, 18071, "Second Wind (Tier 5) scroll", "You can now use " + "<col=000080>" + " Second Wind (Tier 5) scrolls" + "</col>" + " within Daemonheim.");
+				case 59:
+					return newstruct cs2func_script_1020_struct(49, 17969, "Brave skinweaver (Healer, tier 5)" + "<br>" + "Green charm, 2 cooked short-finned eels", "You can now infuse " + "<col=000080>" + "brave skinweaver pouches" + "</col>" + " within Daemonheim.");
+				case 60:
+					return newstruct cs2func_script_1020_struct(49, 18081, "Glimmer of Light (Tier 5) scroll", "You can now use " + "<col=000080>" + " Glimmer of Light (Tier 5) scrolls" + "</col>" + " within Daemonheim.");
+				case 61:
+					return newstruct cs2func_script_1020_struct(51, 17940, "Brah bloodrager (Melee, tier 6)" + "<br>" + "Green charm, zephyrium ore", "You can now infuse " + "<col=000080>" + "brah bloodrager pouches" + "</col>" + " within Daemonheim.");
+				case 62:
+					return newstruct cs2func_script_1020_struct(51, 18032, "Sundering Strike (Tier 6) scroll", "You can now use " + "<col=000080>" + " Sundering Strike (Tier 6) scrolls" + "</col>" + " within Daemonheim.");
+				case 63:
+					return newstruct cs2func_script_1020_struct(52, 17990, "Brah deathslinger (Ranged, tier 6)" + "<br>" + "Green charm, bovistrangler branches", "You can now infuse " + "<col=000080>" + "brah deathslinger pouches" + "</col>" + " within Daemonheim.");
+				case 64:
+					return newstruct cs2func_script_1020_struct(52, 18042, "Poisonous Shot (Tier 6) scroll", "You can now use " + "<col=000080>" + " Poisonous Shot (Tier 6) scrolls" + "</col>" + " within Daemonheim.");
+				case 65:
+					return newstruct cs2func_script_1020_struct(53, 17950, "Brah stormbringer (Magic, tier 6)" + "<br>" + "Green charm, duskweed sproutings", "You can now infuse " + "<col=000080>" + "brah stormbringer pouches" + "</col>" + " within Daemonheim.");
+				case 66:
+					return newstruct cs2func_script_1020_struct(53, 18052, "Snaring Wave (Tier 6) scroll", "You can now use " + "<col=000080>" + " Snaring Wave (Tier 6) scrolls" + "</col>" + " within Daemonheim.");
+				case 67:
+					return newstruct cs2func_script_1020_struct(55, 17960, "Brah hoardstalker (Forager, tier 6)" + "<br>" + "Green charm, spinomastyx hide", "You can now infuse " + "<col=000080>" + "brah hoardstalker pouches" + "</col>" + " within Daemonheim.");
+				case 68:
+					return newstruct cs2func_script_1020_struct(55, 18062, "Aptitude (Tier 6) scroll", "You can now use " + "<col=000080>" + " Aptitude (Tier 6) scrolls" + "</col>" + " within Daemonheim.");
+				case 69:
+					return newstruct cs2func_script_1020_struct(57, 17980, "Brah worldbearer (Beast of burden, tier 6)" + "<br>" + "Green charm, spinoleather torn bag", "You can now infuse " + "<col=000080>" + "brah worldbearer pouches" + "</col>" + " within Daemonheim.");
+				case 70:
+					return newstruct cs2func_script_1020_struct(57, 18072, "Second Wind (Tier 6) scroll", "You can now use " + "<col=000080>" + " Second Wind (Tier 6) scrolls" + "</col>" + " within Daemonheim.");
+				case 71:
+					return newstruct cs2func_script_1020_struct(59, 17970, "Brah skinweaver (Healer, tier 6)" + "<br>" + "Green charm, 2 cooked web snippers", "You can now infuse " + "<col=000080>" + "brah skinweaver pouches" + "</col>" + " within Daemonheim.");
+				case 72:
+					return newstruct cs2func_script_1020_struct(59, 18082, "Glimmer of Light (Tier 6) scroll", "You can now use " + "<col=000080>" + " Glimmer of Light (Tier 6) scrolls" + "</col>" + " within Daemonheim.");
+				case 73:
+					return newstruct cs2func_script_1020_struct(61, 17941, "Naabe bloodrager (Melee, tier 7)" + "<br>" + "Crimson charm, argonite ore", "You can now infuse " + "<col=000080>" + "naabe bloodrager pouches" + "</col>" + " within Daemonheim.");
+				case 74:
+					return newstruct cs2func_script_1020_struct(61, 18033, "Sundering Strike (Tier 7) scroll", "You can now use " + "<col=000080>" + " Sundering Strike (Tier 7) scrolls" + "</col>" + " within Daemonheim.");
+				case 75:
+					return newstruct cs2func_script_1020_struct(62, 17991, "Naabe deathslinger (Ranged, tier 7)" + "<br>" + "Crimson charm, thigat branches", "You can now infuse " + "<col=000080>" + "naabe deathslinger pouches" + "</col>" + " within Daemonheim.");
+				case 76:
+					return newstruct cs2func_script_1020_struct(62, 18043, "Poisonous Shot (Tier 7) scroll", "You can now use " + "<col=000080>" + " Poisonous Shot (Tier 7) scrolls" + "</col>" + " within Daemonheim.");
+				case 77:
+					return newstruct cs2func_script_1020_struct(63, 17951, "Naabe stormbringer (Magic, tier 7)" + "<br>" + "Crimson charm, soulbell roots", "You can now infuse " + "<col=000080>" + "naabe stormbringer pouches" + "</col>" + " within Daemonheim.");
+				case 78:
+					return newstruct cs2func_script_1020_struct(63, 18053, "Snaring Wave (Tier 7) scroll", "You can now use " + "<col=000080>" + " Snaring Wave (Tier 7) scrolls" + "</col>" + " within Daemonheim.");
+				case 79:
+					return newstruct cs2func_script_1020_struct(65, 17961, "Naabe hoardstalker (Forager, tier 7)" + "<br>" + "Crimson charm, gallimastyx hide", "You can now infuse " + "<col=000080>" + "naabe hoardstalker pouches" + "</col>" + " within Daemonheim.");
+				case 80:
+					return newstruct cs2func_script_1020_struct(65, 18063, "Aptitude (Tier 7) scroll", "You can now use " + "<col=000080>" + " Aptitude (Tier 7) scrolls" + "</col>" + " within Daemonheim.");
+				case 81:
+					return newstruct cs2func_script_1020_struct(67, 17981, "Naabe worldbearer (Beast of burden, tier 7)" + "<br>" + "Crimson charm, gallileather torn bag", "You can now infuse " + "<col=000080>" + "naabe worldbearer pouches" + "</col>" + " within Daemonheim.");
+				case 82:
+					return newstruct cs2func_script_1020_struct(67, 18073, "Second Wind (Tier 7) scroll", "You can now use " + "<col=000080>" + " Second Wind (Tier 7) scrolls" + "</col>" + " within Daemonheim.");
+				case 83:
+					return newstruct cs2func_script_1020_struct(69, 17971, "Naabe skinweaver (Healer, tier 7)" + "<br>" + "Crimson charm, 2 cooked bouldabass", "You can now infuse " + "<col=000080>" + "naabe skinweaver pouches" + "</col>" + " within Daemonheim.");
+				case 84:
+					return newstruct cs2func_script_1020_struct(69, 18083, "Glimmer of Light (Tier 7) scroll", "You can now use " + "<col=000080>" + " Glimmer of Light (Tier 7) scrolls" + "</col>" + " within Daemonheim.");
+				case 85:
+					return newstruct cs2func_script_1020_struct(71, 17942, "Wise bloodrager (Melee, tier 8)" + "<br>" + "Crimson charm, katagon ore", "You can now infuse " + "<col=000080>" + "wise bloodrager pouches" + "</col>" + " within Daemonheim.");
+				case 86:
+					return newstruct cs2func_script_1020_struct(71, 18034, "Sundering Strike (Tier 8) scroll", "You can now use " + "<col=000080>" + " Sundering Strike (Tier 8) scrolls" + "</col>" + " within Daemonheim.");
+				case 87:
+					return newstruct cs2func_script_1020_struct(72, 17992, "Wise deathslinger (Ranged, tier 8)" + "<br>" + "Crimson charm, corpsethorn branches", "You can now infuse " + "<col=000080>" + "wise deathslinger pouches" + "</col>" + " within Daemonheim.");
+				case 88:
+					return newstruct cs2func_script_1020_struct(72, 18044, "Poisonous Shot (Tier 8) scroll", "You can now use " + "<col=000080>" + " Poisonous Shot (Tier 8) scrolls" + "</col>" + " within Daemonheim.");
+				case 89:
+					return newstruct cs2func_script_1020_struct(73, 17952, "Wise stormbringer (Magic, tier 8)" + "<br>" + "Crimson charm, ectograss blades", "You can now infuse " + "<col=000080>" + "wise stormbringer pouches" + "</col>" + " within Daemonheim.");
+				case 90:
+					return newstruct cs2func_script_1020_struct(73, 18054, "Snaring Wave (Tier 8) scroll", "You can now use " + "<col=000080>" + " Snaring Wave (Tier 8) scrolls" + "</col>" + " within Daemonheim.");
+				case 91:
+					return newstruct cs2func_script_1020_struct(75, 17962, "Wise hoardstalker (Forager, tier 8)" + "<br>" + "Crimson charm, stegomastyx hide", "You can now infuse " + "<col=000080>" + "wise hoardstalker pouches" + "</col>" + " within Daemonheim.");
+				case 92:
+					return newstruct cs2func_script_1020_struct(75, 18064, "Aptitude (Tier 8) scroll", "You can now use " + "<col=000080>" + " Aptitude (Tier 8) scrolls" + "</col>" + " within Daemonheim.");
+				case 93:
+					return newstruct cs2func_script_1020_struct(77, 17982, "Wise worldbearer (Beast of burden, tier 8)" + "<br>" + "Crimson charm, stegoleather torn bag", "You can now infuse " + "<col=000080>" + "wise worldbearer pouches" + "</col>" + " within Daemonheim.");
+				case 94:
+					return newstruct cs2func_script_1020_struct(77, 18074, "Second Wind (Tier 8) scroll", "You can now use " + "<col=000080>" + " Second Wind (Tier 8) scrolls" + "</col>" + " within Daemonheim.");
+				case 95:
+					return newstruct cs2func_script_1020_struct(79, 17972, "Wise skinweaver (Healer, tier 8)" + "<br>" + "Crimson charm, 2 cooked salve eels", "You can now infuse " + "<col=000080>" + "wise skinweaver pouches" + "</col>" + " within Daemonheim.");
+				case 96:
+					return newstruct cs2func_script_1020_struct(79, 18084, "Glimmer of Light (Tier 8) scroll", "You can now use " + "<col=000080>" + " Glimmer of Light (Tier 8) scrolls" + "</col>" + " within Daemonheim.");
+				case 97:
+					return newstruct cs2func_script_1020_struct(81, 17943, "Adept bloodrager (Melee, tier 9)" + "<br>" + "Blue charm, gorgonite ore", "You can now infuse " + "<col=000080>" + "adept bloodrager pouches" + "</col>" + " within Daemonheim.");
+				case 98:
+					return newstruct cs2func_script_1020_struct(81, 18035, "Sundering Strike (Tier 9) scroll", "You can now use " + "<col=000080>" + " Sundering Strike (Tier 9) scrolls" + "</col>" + " within Daemonheim.");
+				case 99:
+					return newstruct cs2func_script_1020_struct(82, 17993, "Adept deathslinger (Ranged, tier 9)" + "<br>" + "Blue charm, entgallow branches", "You can now infuse " + "<col=000080>" + "adept deathslinger pouches" + "</col>" + " within Daemonheim.");
+				case 100:
+					return newstruct cs2func_script_1020_struct(82, 18045, "Poisonous Shot (Tier 9) scroll", "You can now use " + "<col=000080>" + " Poisonous Shot (Tier 9) scrolls" + "</col>" + " within Daemonheim.");
+				case 101:
+					return newstruct cs2func_script_1020_struct(83, 17953, "Adept stormbringer (Magic, tier 9)" + "<br>" + "Blue charm, runeleaf fibres", "You can now infuse " + "<col=000080>" + "adept stormbringer pouches" + "</col>" + " within Daemonheim.");
+				case 102:
+					return newstruct cs2func_script_1020_struct(83, 18055, "Snaring Wave (Tier 9) scroll", "You can now use " + "<col=000080>" + " Snaring Wave (Tier 9) scrolls" + "</col>" + " within Daemonheim.");
+				case 103:
+					return newstruct cs2func_script_1020_struct(85, 17963, "Adept hoardstalker (Forager, tier 9)" + "<br>" + "Blue charm, megamastyx hide", "You can now infuse " + "<col=000080>" + "adept hoardstalker pouches" + "</col>" + " within Daemonheim.");
+				case 104:
+					return newstruct cs2func_script_1020_struct(85, 18065, "Aptitude (Tier 9) scroll", "You can now use " + "<col=000080>" + " Aptitude (Tier 9) scrolls" + "</col>" + " within Daemonheim.");
+				case 105:
+					return newstruct cs2func_script_1020_struct(87, 17983, "Adept worldbearer (Beast of burden, tier 9)" + "<br>" + "Blue charm, megaleather torn bag", "You can now infuse " + "<col=000080>" + "adept worldbearer pouches" + "</col>" + " within Daemonheim.");
+				case 106:
+					return newstruct cs2func_script_1020_struct(87, 18075, "Second Wind (Tier 9) scroll", "You can now use " + "<col=000080>" + " Second Wind (Tier 9) scrolls" + "</col>" + " within Daemonheim.");
+				case 107:
+					return newstruct cs2func_script_1020_struct(89, 17973, "Adept skinweaver (Healer, tier 9)" + "<br>" + "Blue charm, 2 cooked blue crabs", "You can now infuse " + "<col=000080>" + "adept skinweaver pouches" + "</col>" + " within Daemonheim.");
+				case 108:
+					return newstruct cs2func_script_1020_struct(89, 18085, "Glimmer of Light (Tier 9) scroll", "You can now use " + "<col=000080>" + " Glimmer of Light (Tier 9) scrolls" + "</col>" + " within Daemonheim.");
+				case 109:
+					return newstruct cs2func_script_1020_struct(91, 17944, "Sachem bloodrager (Melee, tier 10)" + "<br>" + "Blue charm, promethium ore", "You can now infuse " + "<col=000080>" + "sachem bloodrager pouches" + "</col>" + " within Daemonheim.");
+				case 110:
+					return newstruct cs2func_script_1020_struct(91, 18036, "Sundering Strike (Tier 10) scroll", "You can now use " + "<col=000080>" + " Sundering Strike (Tier 10) scrolls" + "</col>" + " within Daemonheim.");
+				case 111:
+					return newstruct cs2func_script_1020_struct(92, 17994, "Sachem deathslinger (Ranged, tier 10)" + "<br>" + "Blue charm, grave creeper branches", "You can now infuse " + "<col=000080>" + "sachem deathslinger pouches" + "</col>" + " within Daemonheim.");
+				case 112:
+					return newstruct cs2func_script_1020_struct(92, 18046, "Poisonous Shot (Tier 10) scroll", "You can now use " + "<col=000080>" + " Poisonous Shot (Tier 10) scrolls" + "</col>" + " within Daemonheim.");
+				case 113:
+					return newstruct cs2func_script_1020_struct(93, 17954, "Sachem stormbringer (Magic, tier 10)" + "<br>" + "Blue charm, spiritbloom fibres", "You can now infuse " + "<col=000080>" + "sachem stormbringer pouches" + "</col>" + " within Daemonheim.");
+				case 114:
+					return newstruct cs2func_script_1020_struct(93, 18056, "Snaring Wave (Tier 10) scroll", "You can now use " + "<col=000080>" + " Snaring Wave (Tier 10) scrolls" + "</col>" + " within Daemonheim.");
+				case 115:
+					return newstruct cs2func_script_1020_struct(95, 17964, "Sachem hoardstalker (Forager, tier 10)" + "<br>" + "Blue charm, tyrannomastyx hide", "You can now infuse " + "<col=000080>" + "sachem hoardstalker pouches" + "</col>" + " within Daemonheim.");
+				case 116:
+					return newstruct cs2func_script_1020_struct(95, 18066, "Aptitude (Tier 10) scroll", "You can now use " + "<col=000080>" + " Aptitude (Tier 10) scrolls" + "</col>" + " within Daemonheim.");
+				case 117:
+					return newstruct cs2func_script_1020_struct(97, 17984, "Sachem worldbearer (Beast of burden, tier 10)" + "<br>" + "Blue charm, tyrannoleather torn bag", "You can now infuse " + "<col=000080>" + "sachem worldbearer pouches" + "</col>" + " within Daemonheim.");
+				case 118:
+					return newstruct cs2func_script_1020_struct(97, 18076, "Second Wind (Tier 10) scroll", "You can now use " + "<col=000080>" + " Second Wind (Tier 10) scrolls" + "</col>" + " within Daemonheim.");
+				case 119:
+					return newstruct cs2func_script_1020_struct(99, 17974, "Sachem skinweaver (Healer, tier 10)" + "<br>" + "Blue charm, 2 cooked cave morays", "You can now infuse " + "<col=000080>" + "sachem skinweaver pouches" + "</col>" + " within Daemonheim.");
+				case 120:
+					return newstruct cs2func_script_1020_struct(99, 18086, "Glimmer of Light (Tier 10) scroll", "You can now use " + "<col=000080>" + " Glimmer of Light (Tier 10) scrolls" + "</col>" + " within Daemonheim.");
+			}
+			break;
+		case 7:
+			if (((boolean)arg1)) {
+				return newstruct cs2func_script_1020_struct(99, 12169, "Skill mastery", "<col=000080>" + "Congratulations! You are now a master of " + "<col=800000>" + "Summoning" + "<col=000080>" + ".  Why not visit " + "<col=800000>" + "Pikkupstix" + "<col=000080>" + " in " + "<col=800000>" + "Taverley" + "<col=000080>" + "? He has something special only available to true masters of the " + "<col=800000>" + "Summoning" + "<col=000080>" + " skill!");
+			}
+	}
+	return newstruct cs2func_script_1020_struct(0, -1, "", "");
+}

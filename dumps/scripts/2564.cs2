@@ -1,0 +1,5 @@
+void script_2564() {
+	globalint_839 = bitconfig_6351;
+	script_2565();
+	return;
+}

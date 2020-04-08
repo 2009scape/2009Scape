@@ -1,0 +1,14 @@
+void script_2218() {
+	globalint_1126 = standart_config_1675;
+	globalint_1127 = standart_config_1676;
+	globalint_1128 = standart_config_1677;
+	globalint_1129 = standart_config_1678;
+	globalint_1131 = standart_config_1680;
+	globalint_1130 = standart_config_1679;
+	globalint_1132 = standart_config_1682;
+	globalint_1134 = standart_config_1684;
+	globalint_1133 = standart_config_1683;
+	globalint_1135 = standart_config_1681;
+	script_2220();
+	return;
+}

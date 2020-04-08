@@ -1,0 +1,8 @@
+void script_169(int arg0,int arg1) {
+	if (bitconfig_3905 == arg0) {
+		setWidgetRGB(new Color(221, 80, 50), new WidgetPointer(arg1));
+	} else {
+		setWidgetRGB(new Color(100, 80, 30), new WidgetPointer(arg1));
+	}
+	return;
+}

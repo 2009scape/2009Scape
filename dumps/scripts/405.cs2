@@ -1,0 +1,6 @@
+void script_405(int arg0) {
+	cs2method2103(255, new WidgetPointer(arg0));
+	setScriptCallOnGameloop(406, new WidgetPointer(-32768,3), "I", new WidgetPointer(arg0));
+	setWidgetText(new WidgetPointer(arg0), "Conquest Ranking: " + intToStr(standart_config_1875));
+	return;
+}

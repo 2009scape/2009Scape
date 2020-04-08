@@ -1,0 +1,32 @@
+void script_1232(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg2)), add(multiply(getLineCount(getWidgetActualWidth(new WidgetPointer(arg2)), 494, getWidgetText(new WidgetPointer(arg2))), 12), 3), 0, 0, new WidgetPointer(arg2));
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar3 = divide(subtract(getWidgetActualWidth(new WidgetPointer(arg0)), multiply(36, 8)), 7);
+	ivar4 = divide(subtract(getWidgetActualHeight(new WidgetPointer(arg0)), multiply(32, 5)), 4);
+	ivar5 = 0;
+	while (ivar5 < getItemContainerLength(0)) {
+		createExtraChild(new WidgetPointer(arg0), 5, ivar5);
+		setWidgetSize(36, 32, 0, 0);
+		setWidgetPosition(multiply(add(36, ivar3), mod(ivar5, 8)), multiply(divide(ivar5, 8), add(32, ivar4)), 0, 0);
+		setWidgetHidden(0);
+		if (getItemIdInSlot(0, ivar5) != -1) {
+			setItemOnWidgetMethod1200(getItemIdInSlot(0, ivar5), getItemAmtInSlot(0, ivar5));
+			cs2method1305("<col=ff981f>" + getItemName(getItemIdInSlot(0, ivar5)));
+			setWidgetContextMenuOption(1, "Withdraw" + "<col=ff9040>");
+			setWidgetContextMenuOption(2, "Withdraw-All" + "<col=ff9040>");
+			setWidgetContextMenuOption(10, "Examine" + "<col=ff9040>");
+			cs2method1303(5);
+			cs2method1304(10);
+			setWidgetShadowColor(new Color(51, 51, 51));
+			setWidgetBorderThickness(1);
+			setScriptCallOnMouseDragReleased(1233, new WidgetPointer(arg0), -2147483643, new WidgetPointer(-32768,6), -2147483641, new WidgetPointer(arg1), new WidgetPointer(arg2), "IiIiII");
+		} else {
+			setItemOnWidgetMethod1205(-1, 0);
+		}
+		ivar5 = add(ivar5, 1);
+	}
+	return;
+}

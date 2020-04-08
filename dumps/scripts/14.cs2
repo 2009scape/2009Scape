@@ -1,0 +1,157 @@
+cs2func_script_14_struct(2,2,0) script_14(int arg0,int arg1,int arg2) {
+	int stack_dump0;
+	int stack_dump1;
+	cs2func_script_982_struct(2,2,0) structdump_2;
+	cs2func_script_984_struct(2,2,0) structdump_3;
+	cs2func_script_978_struct(2,2,0) structdump_4;
+	cs2func_script_1010_struct(2,2,0) structdump_5;
+	cs2func_script_1004_struct(2,2,0) structdump_6;
+	cs2func_script_996_struct(2,2,0) structdump_7;
+	cs2func_script_994_struct(2,2,0) structdump_8;
+	cs2func_script_1008_struct(2,2,0) structdump_9;
+	cs2func_script_1002_struct(2,2,0) structdump_10;
+	cs2func_script_992_struct(2,2,0) structdump_11;
+	cs2func_script_1000_struct(2,2,0) structdump_12;
+	cs2func_script_980_struct(2,2,0) structdump_13;
+	cs2func_script_1016_struct(2,2,0) structdump_14;
+	cs2func_script_1022_struct(2,2,0) structdump_15;
+	cs2func_script_998_struct(2,2,0) structdump_16;
+	cs2func_script_1018_struct(2,2,0) structdump_17;
+	cs2func_script_986_struct(2,2,0) structdump_18;
+	cs2func_script_990_struct(2,2,0) structdump_19;
+	cs2func_script_1012_struct(2,2,0) structdump_20;
+	cs2func_script_988_struct(2,2,0) structdump_21;
+	cs2func_script_1014_struct(2,2,0) structdump_22;
+	cs2func_script_3_struct(2,2,0) structdump_23;
+	cs2func_script_1006_struct(2,2,0) structdump_24;
+	cs2func_script_1020_struct(2,2,0) structdump_25;
+	cs2func_script_3355_struct(2,2,0) structdump_26;
+	switch (arg0) {
+		case 1:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_2 = script_982(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_2.intpart_0, structdump_2.intpart_1, structdump_2.stringpart_0, structdump_2.stringpart_1);
+		case 2:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_3 = script_984(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_3.intpart_0, structdump_3.intpart_1, structdump_3.stringpart_0, structdump_3.stringpart_1);
+		case 5:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_4 = script_978(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_4.intpart_0, structdump_4.intpart_1, structdump_4.stringpart_0, structdump_4.stringpart_1);
+		case 3:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_5 = script_1010(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_5.intpart_0, structdump_5.intpart_1, structdump_5.stringpart_0, structdump_5.stringpart_1);
+		case 7:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_6 = script_1004(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_6.intpart_0, structdump_6.intpart_1, structdump_6.stringpart_0, structdump_6.stringpart_1);
+		case 4:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_7 = script_996(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_7.intpart_0, structdump_7.intpart_1, structdump_7.stringpart_0, structdump_7.stringpart_1);
+		case 6:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_8 = script_994(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_8.intpart_0, structdump_8.intpart_1, structdump_8.stringpart_0, structdump_8.stringpart_1);
+		case 8:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_9 = script_1008(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_9.intpart_0, structdump_9.intpart_1, structdump_9.stringpart_0, structdump_9.stringpart_1);
+		case 9:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_10 = script_1002(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_10.intpart_0, structdump_10.intpart_1, structdump_10.stringpart_0, structdump_10.stringpart_1);
+		case 10:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_11 = script_992(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_11.intpart_0, structdump_11.intpart_1, structdump_11.stringpart_0, structdump_11.stringpart_1);
+		case 11:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_12 = script_1000(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_12.intpart_0, structdump_12.intpart_1, structdump_12.stringpart_0, structdump_12.stringpart_1);
+		case 19:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_13 = script_980(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_13.intpart_0, structdump_13.intpart_1, structdump_13.stringpart_0, structdump_13.stringpart_1);
+		case 13:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_14 = script_1016(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_14.intpart_0, structdump_14.intpart_1, structdump_14.stringpart_0, structdump_14.stringpart_1);
+		case 14:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_15 = script_1022(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_15.intpart_0, structdump_15.intpart_1, structdump_15.stringpart_0, structdump_15.stringpart_1);
+		case 15:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_16 = script_998(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_16.intpart_0, structdump_16.intpart_1, structdump_16.stringpart_0, structdump_16.stringpart_1);
+		case 16:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_17 = script_1018(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_17.intpart_0, structdump_17.intpart_1, structdump_17.stringpart_0, structdump_17.stringpart_1);
+		case 17:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_18 = script_986(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_18.intpart_0, structdump_18.intpart_1, structdump_18.stringpart_0, structdump_18.stringpart_1);
+		case 18:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_19 = script_990(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_19.intpart_0, structdump_19.intpart_1, structdump_19.stringpart_0, structdump_19.stringpart_1);
+		case 12:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_20 = script_1012(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_20.intpart_0, structdump_20.intpart_1, structdump_20.stringpart_0, structdump_20.stringpart_1);
+		case 20:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_21 = script_988(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_21.intpart_0, structdump_21.intpart_1, structdump_21.stringpart_0, structdump_21.stringpart_1);
+		case 21:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_22 = script_1014(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_22.intpart_0, structdump_22.intpart_1, structdump_22.stringpart_0, structdump_22.stringpart_1);
+		case 22:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_23 = script_3(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_23.intpart_0, structdump_23.intpart_1, structdump_23.stringpart_0, structdump_23.stringpart_1);
+		case 23:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_24 = script_1006(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_24.intpart_0, structdump_24.intpart_1, structdump_24.stringpart_0, structdump_24.stringpart_1);
+		case 24:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_25 = script_1020(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_25.intpart_0, structdump_25.intpart_1, structdump_25.stringpart_0, structdump_25.stringpart_1);
+		case 25:
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			structdump_26 = script_3355(stack_dump0, stack_dump1);
+			return newstruct cs2func_script_14_struct(structdump_26.intpart_0, structdump_26.intpart_1, structdump_26.stringpart_0, structdump_26.stringpart_1);
+	}
+	return newstruct cs2func_script_14_struct(0, -1, "", "");
+}

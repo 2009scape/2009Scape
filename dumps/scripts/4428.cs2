@@ -1,0 +1,39 @@
+void script_4428() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = 72745013;
+	setScriptCallOnGameloop(4431, new WidgetPointer(-32768,3), "I", new WidgetPointer(ivar0));
+	if (cs2method3751()) {
+		globalint_53 = 0;
+		setScriptCallOnClanListChange(4449, new WidgetPointer(-32768,3), "I", new WidgetPointer(ivar0));
+		setScriptCallOnFriendListChange(4449, new WidgetPointer(-32768,3), "I", new WidgetPointer(ivar0));
+		setWidgetScrollMax(0, 0, new WidgetPointer(ivar0));
+		cs2method2100(0, 0, new WidgetPointer(ivar0));
+		cs2method2314(149, new WidgetPointer(1110,27));
+		setWidgetIsHidden(false, new WidgetPointer(1110,22));
+		script_4470();
+		script_4436(ivar0, globalint_1035);
+		script_4447();
+	}
+	deleteAllExtraChilds(new WidgetPointer(1110,12));
+	deleteAllExtraChilds(new WidgetPointer(1110,4));
+	ivar1 = 0;
+	ivar2 = divide(add(500, 100), 2);
+	while (ivar1 < ivar2) {
+		createExtraChild(new WidgetPointer(1110,12), 3, ivar1);
+		createExtraChild(new WidgetPointer(1110,4), 3, ivar1);
+		setWidgetSize(0, 19, 1, 0);
+		setWidgetSize(0, 19, 1, 0);
+		setWidgetPosition(0, multiply(multiply(ivar1, 2), 19), 1, 0);
+		setWidgetPosition(0, getWidgetActualY(), 1, 0);
+		setWidgetRGB(new Color(35, 34, 32));
+		setWidgetRGB(new Color(35, 34, 32));
+		setWidgetFilled(1);
+		setWidgetFilled(1);
+		cs2method2103(128);
+		cs2method2103(128);
+		ivar1 = add(ivar1, 1);
+	}
+	return;
+}

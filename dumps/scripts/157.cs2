@@ -1,0 +1,27 @@
+void script_157(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	ivar4 = subtract(getWidgetScrollMaxV(new WidgetPointer(arg1)), getWidgetActualHeight(new WidgetPointer(arg1)));
+	if (((boolean)ivar4)) {
+		ivar4 = 1;
+	}
+	if (arg2 < 0) {
+		arg2 = 0;
+	}
+	if (arg2 > ivar4) {
+		arg2 = ivar4;
+	}
+	cs2method2100(0, arg2, new WidgetPointer(arg1));
+	ivar5 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg0), 1) && ((boolean)arg3)) {
+		ivar5 = subtract(subtract(getWidgetActualHeight(new WidgetPointer(arg0)), 32), getWidgetActualHeight());
+		setWidgetPosition(0, add(16, divide(multiply(ivar5, arg2), ivar4)), 0, 0);
+		if (setWidgetRegister(new WidgetPointer(arg0), 2)) {
+			setWidgetPosition(0, getWidgetActualY(), 0, 0);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 3)) {
+			setWidgetPosition(0, subtract(add(getWidgetActualY(), getWidgetActualHeight()), 5), 0, 0);
+		}
+	}
+	return;
+}

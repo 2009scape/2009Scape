@@ -1,0 +1,21 @@
+void script_1929() {
+	setWidgetIsHidden(true, new WidgetPointer(811,110));
+	setWidgetRGB(new Color(200, 170, 100), new WidgetPointer(811,126));
+	setWidgetRGB(new Color(200, 170, 100), new WidgetPointer(811,127));
+	setWidgetIsHidden(true, new WidgetPointer(811,52));
+	setWidgetRGB(new Color(200, 170, 100), new WidgetPointer(811,63));
+	setWidgetRGB(new Color(200, 170, 100), new WidgetPointer(811,65));
+	setWidgetIsHidden(true, new WidgetPointer(811,38));
+	setWidgetRGB(new Color(200, 170, 100), new WidgetPointer(811,48));
+	setWidgetRGB(new Color(200, 170, 100), new WidgetPointer(811,49));
+	setWidgetIsHidden(true, new WidgetPointer(811,95));
+	setWidgetRGB(new Color(200, 170, 100), new WidgetPointer(811,105));
+	setWidgetRGB(new Color(200, 170, 100), new WidgetPointer(811,106));
+	setWidgetIsHidden(true, new WidgetPointer(811,81));
+	setWidgetRGB(new Color(200, 170, 100), new WidgetPointer(811,91));
+	setWidgetRGB(new Color(200, 170, 100), new WidgetPointer(811,92));
+	setWidgetIsHidden(true, new WidgetPointer(811,67));
+	setWidgetRGB(new Color(200, 170, 100), new WidgetPointer(811,77));
+	setWidgetRGB(new Color(200, 170, 100), new WidgetPointer(811,78));
+	return;
+}

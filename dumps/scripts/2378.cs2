@@ -1,0 +1,43 @@
+void script_2378(int arg0) {
+	int ivar1;
+	ivar1 = -1;
+	switch (bitconfig_6099) {
+		case 0:
+			ivar1 = 58982423;
+			break;
+		case 1:
+			ivar1 = 58982424;
+			break;
+		case 2:
+			ivar1 = 58982425;
+			break;
+		case 3:
+			ivar1 = 58982426;
+			break;
+		case 4:
+			ivar1 = 58982427;
+			break;
+		case 5:
+			ivar1 = 58982428;
+			break;
+		case 6:
+			ivar1 = 58982429;
+			break;
+		case 7:
+			ivar1 = 58982422;
+			break;
+		case 8:
+			ivar1 = 58982421;
+			break;
+		case 9:
+			ivar1 = 58982420;
+			break;
+		case 10:
+			ivar1 = 58982430;
+			break;
+		case 11:
+			ivar1 = 58982431;
+	}
+	script_2380(ivar1, arg0);
+	return;
+}

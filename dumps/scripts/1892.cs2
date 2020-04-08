@@ -1,0 +1,12 @@
+void script_1892(int arg0,int arg1) {
+	setScriptCallOnFriendListChange(1893, new WidgetPointer(arg0), new WidgetPointer(arg1), "II", new WidgetPointer(arg0));
+	setWidgetScrollMax(0, 0, new WidgetPointer(arg0));
+	cs2method2100(0, 0, new WidgetPointer(arg0));
+	script_31(arg1, arg0, 5666, 5663, 5664, 5665, 5686, 5685);
+	script_1895(arg0, arg1);
+	if (cs2method6900()) {
+		setWidgetText(new WidgetPointer(1108,27), "Friends Chat channel:");
+		setWidgetContextMenuOption(1, new WidgetPointer(1108,22), "Enable");
+	}
+	return;
+}

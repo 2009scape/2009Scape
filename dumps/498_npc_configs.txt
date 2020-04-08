@@ -1,0 +1,505 @@
+NPC config [id=152, name=Tree, config=939, shift=0, childs=[5207, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5207, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5207, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5207, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5207, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5207, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5207, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5207, -1, -1, 5207, -1, -1, 5207, -1, -1, -1, 5207, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5207, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5207, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5207, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5207, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5207, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5207, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5208, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5208, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5208, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5208, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5208, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5208, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5208, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5208, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5208, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5208, -1]].
+NPC config [id=226, name=Sinister Stranger, config=12, shift=4, childs=[3677, 3678, -1]].
+NPC config [id=292, name=Sick-looking sheep (1), config=518, shift=13, childs=[2345, 2377, -1]].
+NPC config [id=293, name=Sick-looking sheep (2), config=518, shift=15, childs=[2346, 2378, -1]].
+NPC config [id=294, name=Sick-looking sheep (3), config=518, shift=12, childs=[2347, 2379, -1]].
+NPC config [id=295, name=Sick-looking sheep (4), config=518, shift=14, childs=[2348, 2380, -1]].
+NPC config [id=335, name=null, config=667, shift=1, childs=[-1, 3209, -1]].
+NPC config [id=381, name=Captain Barnaby, config=905, shift=27, childs=[4974, -1]].
+NPC config [id=431, name='Bird's-Eye' Jack, config=1003, shift=0, childs=[4544, -1, 4544, -1, 4544, -1, 4544, -1, 4544, -1, 4544, -1, 4544, -1, 4544, -1]].
+NPC config [id=697, name=Kennith, config=159, shift=-1, childs=[4864, 4864, 4864, 4864, 4864, 4864, 4864, 4864, 4864, 4864, 4864, -1]].
+NPC config [id=647, name=Reldo, config=568, shift=26, childs=[2661, 2660, -1]].
+NPC config [id=748, name=Cabin boy Jenkins, config=176, shift=-1, childs=[6085, 6085, 6085, 6085, 6085, 6085, 6085, 6085, -1]].
+NPC config [id=759, name=null, config=180, shift=-1, childs=[-1, -1, 7742, 7742, 7742, -1]].
+NPC config [id=715, name=Elena, config=667, shift=1, childs=[3215, -1]].
+NPC config [id=829, name=Gublinch, config=941, shift=0, childs=[5017, 5018, 5019, -1]].
+NPC config [id=844, name=Wizard Cromperty, config=1077, shift=8, childs=[2328, -1]].
+NPC config [id=1048, name=null, config=1218, shift=10, childs=[-1, 7664, -1]].
+NPC config [id=1047, name=Drezel, config=869, shift=27, childs=[7707, -1]].
+NPC config [id=1207, name=null, config=1190, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7117, -1, -1, -1, -1, 7117, -1, -1, -1, -1, 7117, -1, -1, -1, -1, 7117, -1, -1, -1, -1, 7117, -1, -1, -1, -1, 7117, -1, -1, -1, -1, 7117, -1, -1, -1, -1, 7117, -1]].
+NPC config [id=1205, name=null, config=1190, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7116, -1]].
+NPC config [id=1520, name=null, config=983, shift=0, childs=[-1, 1513, -1]].
+NPC config [id=1517, name=null, config=983, shift=0, childs=[-1, 1510, -1]].
+NPC config [id=1516, name=null, config=983, shift=0, childs=[-1, 1509, -1]].
+NPC config [id=1519, name=null, config=983, shift=0, childs=[-1, 1512, -1]].
+NPC config [id=1518, name=null, config=983, shift=0, childs=[-1, 1511, -1]].
+NPC config [id=1515, name=null, config=983, shift=0, childs=[-1, 1508, -1]].
+NPC config [id=1732, name=null, config=709, shift=31, childs=[-1, 5462, -1]].
+NPC config [id=1669, name=null, config=399, shift=-1, childs=[-1, -1, -1, -1, -1, -1, -1, -1, 1670, -1]].
+NPC config [id=1668, name=Dr Fenkenstrain, config=399, shift=-1, childs=[1670, 1670, 1670, 1670, 1670, 1670, 1670, 1670, -1]].
+NPC config [id=1671, name=Fenkenstrain's Monster, config=399, shift=-1, childs=[1673, 1673, 1673, 1673, 1673, 1673, 1673, 1673, -1]].
+NPC config [id=1667, name=Gardener Ghost, config=400, shift=31, childs=[1675, -1]].
+NPC config [id=1666, name=null, config=400, shift=31, childs=[-1, 1675, -1]].
+NPC config [id=1672, name=null, config=399, shift=-1, childs=[-1, -1, -1, -1, -1, -1, -1, -1, 1674, 1674, -1]].
+NPC config [id=1687, name=null, config=408, shift=28, childs=[-1, -1, -1, -1, 1688, 1688, 1688, 1688, 1688, -1]].
+NPC config [id=1907, name=Broken clay golem, config=437, shift=7, childs=[1908, 1908, 1909, 1909, 1910, -1]].
+NPC config [id=1899, name=null, config=435, shift=6, childs=[-1, 1901, -1]].
+NPC config [id=1900, name=null, config=435, shift=7, childs=[-1, 1901, -1]].
+NPC config [id=1903, name=Menaphite Thug, config=435, shift=11, childs=[1904, 1904, 1905, -1]].
+NPC config [id=1891, name=Villager, config=435, shift=11, childs=[1892, 1893, 1894, -1]].
+NPC config [id=1895, name=Villager, config=435, shift=11, childs=[1896, 1897, 1898, -1]].
+NPC config [id=1887, name=Villager, config=435, shift=11, childs=[1888, 1889, 1890, -1]].
+NPC config [id=1879, name=Bandit, config=435, shift=11, childs=[1880, 1880, 1881, -1]].
+NPC config [id=1877, name=null, config=435, shift=9, childs=[-1, 1878, -1]].
+NPC config [id=1876, name=null, config=435, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2548, -1]].
+NPC config [id=1869, name=Ali the Mayor, config=435, shift=18, childs=[1870, -1]].
+NPC config [id=1845, name=null, config=433, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1846, -1]].
+NPC config [id=1836, name=Dondakan the Dwarf, config=433, shift=0, childs=[1837, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1837, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1837, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1837, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1837, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1837, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1837, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1837, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1837, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1837, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1837, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1838, -1]].
+NPC config [id=1811, name=The Kendal, config=423, shift=25, childs=[1812, -1]].
+NPC config [id=2020, name=Vanstrom Klause, config=388, shift=25, childs=[1577, 1576, -1]].
+NPC config [id=2002, name=Wanderer, config=443, shift=26, childs=[2006, -1]].
+NPC config [id=2003, name=null, config=443, shift=26, childs=[-1, -1, 2006, -1]].
+NPC config [id=2004, name=null, config=443, shift=26, childs=[-1, -1, -1, 2006, -1]].
+NPC config [id=2011, name=null, config=445, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2012, -1]].
+NPC config [id=2013, name=null, config=446, shift=4, childs=[-1, 2014, -1]].
+NPC config [id=1987, name=null, config=445, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1988, 1988, 1988, 1988, 1988, 1988, 1988, -1]].
+NPC config [id=1985, name=High Priest, config=443, shift=14, childs=[1986, -1]].
+NPC config [id=1984, name=null, config=445, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1986, 1986, 1986, 1986, 1986, 1986, -1]].
+NPC config [id=1970, name=null, config=440, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1971, 1971, -1]].
+NPC config [id=1943, name=Ice block, config=442, shift=17, childs=[1944, 1948, -1]].
+NPC config [id=1949, name=null, config=442, shift=19, childs=[-1, -1, -1, -1, 1950, 1950, -1]].
+NPC config [id=1947, name=null, config=442, shift=19, childs=[-1, -1, -1, -1, 1948, 1948, -1]].
+NPC config [id=1945, name=Ice block, config=442, shift=18, childs=[1946, 1950, -1]].
+NPC config [id=1924, name=null, config=440, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1925, 1925, 1925, 1925, 1925, 1925, -1]].
+NPC config [id=1922, name=Eblis, config=440, shift=0, childs=[1923, 1923, 1923, 1923, 1923, 1923, 1923, 1923, 1923, 1923, 1923, -1]].
+NPC config [id=1932, name=Troll child, config=442, shift=19, childs=[1934, 1933, 1933, 1933, 1933, 1933, -1]].
+NPC config [id=2202, name=Drunken Dwarf, config=470, shift=0, childs=[2203, 2204, -1]].
+NPC config [id=2231, name=null, config=482, shift=23, childs=[-1, 2232, -1]].
+NPC config [id=2260, name=null, config=492, shift=-1, childs=[-1, 2261, 2261, 2261, 2261, -1]].
+NPC config [id=2257, name=Mage of Zamorak, config=492, shift=-1, childs=[2258, 2258, 2258, 2258, 2259, -1]].
+NPC config [id=2302, name=null, config=443, shift=20, childs=[-1, 2301, -1]].
+NPC config [id=2303, name=null, config=437, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2301, -1]].
+NPC config [id=2299, name=null, config=443, shift=20, childs=[-1, 2300, -1]].
+NPC config [id=2297, name=null, config=443, shift=20, childs=[-1, 2298, -1]].
+NPC config [id=2295, name=null, config=437, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2296, -1]].
+NPC config [id=2079, name=Sigmund, config=465, shift=0, childs=[2082, 2082, 2082, 2082, 2082, 2082, 2082, 2082, 2082, 2082, -1]].
+NPC config [id=2080, name=null, config=465, shift=21, childs=[-1, 2082, -1]].
+NPC config [id=2081, name=null, config=465, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2083, 2083, -1]].
+NPC config [id=2085, name=null, config=465, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, 2086, 2086, 2086, -1]].
+NPC config [id=2142, name=Riki the sculptor's model, config=482, shift=11, childs=[2143, 2144, 2145, 2147, 2146, 2148, 2149, 2150, -1]].
+NPC config [id=2125, name=Trader, config=482, shift=25, childs=[2126, -1]].
+NPC config [id=2123, name=Trader, config=482, shift=25, childs=[2124, -1]].
+NPC config [id=2435, name=Jarvald, config=520, shift=13, childs=[2436, 2437, -1]].
+NPC config [id=2488, name=null, config=320, shift=-1, childs=[-1, -1, -1, -1, -1, -1, 1167, -1]].
+NPC config [id=2483, name=Tiadeche, config=320, shift=-1, childs=[1163, 1163, 1163, 1163, 1163, 1163, -1]].
+NPC config [id=2484, name=null, config=320, shift=-1, childs=[-1, -1, -1, -1, -1, -1, 1164, -1]].
+NPC config [id=2485, name=Tinsay, config=320, shift=-1, childs=[1165, 1165, 1165, 1165, 1165, 1165, -1]].
+NPC config [id=2486, name=null, config=320, shift=-1, childs=[-1, -1, -1, -1, -1, -1, 1166, -1]].
+NPC config [id=2487, name=Tamayu, config=320, shift=-1, childs=[1167, 1167, 1167, 1167, 1167, 1167, -1]].
+NPC config [id=2510, name=null, config=534, shift=6, childs=[-1, 2511, 2512, 2512, 2512, 2512, 2512, 2512, -1]].
+NPC config [id=2507, name=null, config=534, shift=3, childs=[-1, 2508, 2509, 2509, 2509, 2509, 2509, 2509, -1]].
+NPC config [id=2504, name=null, config=534, shift=0, childs=[-1, 2505, 2506, 2506, 2506, 2506, 2506, 2506, -1]].
+NPC config [id=2525, name=null, config=534, shift=21, childs=[-1, 2526, 2527, 2527, 2527, 2527, 2527, 2527, -1]].
+NPC config [id=2522, name=null, config=534, shift=18, childs=[-1, 2523, 2524, 2524, 2524, 2524, 2524, 2524, -1]].
+NPC config [id=2519, name=null, config=534, shift=15, childs=[-1, 2520, 2521, 2521, 2521, 2521, 2521, 2521, -1]].
+NPC config [id=2516, name=null, config=534, shift=12, childs=[-1, 2517, 2518, 2518, 2518, 2518, 2518, 2518, -1]].
+NPC config [id=2513, name=null, config=534, shift=9, childs=[-1, 2514, 2515, 2515, 2515, 2515, 2515, 2515, -1]].
+NPC config [id=2528, name=null, config=534, shift=24, childs=[-1, 2529, 2530, 2530, 2530, 2530, 2530, 2530, -1]].
+NPC config [id=2531, name=null, config=534, shift=27, childs=[-1, 2532, 2533, 2533, 2533, 2533, 2533, 2533, -1]].
+NPC config [id=2375, name=null, config=518, shift=0, childs=[-1, 2376, -1]].
+NPC config [id=2370, name=null, config=518, shift=8, childs=[-1, -1, -1, -1, -1, -1, -1, 2371, 2371, 2371, 2371, 2371, 2371, 2371, 2371, 2371, 2371, 2371, -1]].
+NPC config [id=2382, name=null, config=440, shift=21, childs=[-1, 2397, -1]].
+NPC config [id=2383, name=null, config=440, shift=21, childs=[-1, 2397, -1]].
+NPC config [id=2381, name=null, config=440, shift=21, childs=[-1, 2399, -1]].
+NPC config [id=2391, name=null, config=440, shift=21, childs=[-1, 2401, -1]].
+NPC config [id=2390, name=null, config=440, shift=21, childs=[-1, 2400, -1]].
+NPC config [id=2389, name=null, config=440, shift=21, childs=[-1, 2400, -1]].
+NPC config [id=2388, name=null, config=440, shift=21, childs=[-1, 2400, -1]].
+NPC config [id=2387, name=null, config=440, shift=21, childs=[-1, 2398, -1]].
+NPC config [id=2386, name=null, config=440, shift=21, childs=[-1, 2398, -1]].
+NPC config [id=2385, name=null, config=440, shift=21, childs=[-1, 2398, -1]].
+NPC config [id=2384, name=null, config=440, shift=21, childs=[-1, 2397, -1]].
+NPC config [id=2396, name=null, config=440, shift=21, childs=[-1, 2402, -1]].
+NPC config [id=2395, name=null, config=440, shift=21, childs=[-1, 2402, -1]].
+NPC config [id=2394, name=null, config=440, shift=21, childs=[-1, 2402, -1]].
+NPC config [id=2393, name=null, config=440, shift=21, childs=[-1, 2401, -1]].
+NPC config [id=2392, name=null, config=440, shift=21, childs=[-1, 2401, -1]].
+NPC config [id=2404, name=Red Axe Director, config=482, shift=26, childs=[2107, -1]].
+NPC config [id=2405, name=Red Axe Cat, config=482, shift=26, childs=[2108, -1]].
+NPC config [id=2406, name=Gnome emissary, config=482, shift=26, childs=[2137, -1]].
+NPC config [id=2407, name=Gnome traveller, config=482, shift=26, childs=[2138, -1]].
+NPC config [id=2403, name=Red Axe Secretary, config=482, shift=26, childs=[2099, -1]].
+NPC config [id=2408, name=Gnome traveller, config=482, shift=26, childs=[2139, -1]].
+NPC config [id=2813, name=Camel, config=599, shift=31, childs=[80, 2814, -1]].
+NPC config [id=2795, name=Skippy, config=597, shift=0, childs=[2796, 2797, 2798, 2799, -1]].
+NPC config [id=2788, name=null, config=594, shift=25, childs=[-1, 2789, -1]].
+NPC config [id=2768, name=null, config=572, shift=10, childs=[-1, 2747, -1]].
+NPC config [id=2769, name=null, config=572, shift=12, childs=[-1, 2747, -1]].
+NPC config [id=2770, name=null, config=572, shift=14, childs=[-1, 2747, -1]].
+NPC config [id=2771, name=null, config=572, shift=16, childs=[-1, 2747, -1]].
+NPC config [id=2772, name=null, config=572, shift=18, childs=[-1, 2747, -1]].
+NPC config [id=2773, name=null, config=572, shift=20, childs=[-1, 2747, -1]].
+NPC config [id=2774, name=null, config=572, shift=22, childs=[-1, 2747, -1]].
+NPC config [id=2775, name=null, config=571, shift=22, childs=[-1, 2776, -1]].
+NPC config [id=2761, name=null, config=571, shift=28, childs=[-1, 2747, -1]].
+NPC config [id=2760, name=null, config=571, shift=26, childs=[-1, 2747, -1]].
+NPC config [id=2763, name=null, config=572, shift=0, childs=[-1, 2747, -1]].
+NPC config [id=2762, name=null, config=571, shift=30, childs=[-1, 2747, -1]].
+NPC config [id=2765, name=null, config=572, shift=4, childs=[-1, 2747, -1]].
+NPC config [id=2764, name=null, config=572, shift=2, childs=[-1, 2747, -1]].
+NPC config [id=2767, name=null, config=572, shift=8, childs=[-1, 2747, -1]].
+NPC config [id=2766, name=null, config=572, shift=6, childs=[-1, 2747, -1]].
+NPC config [id=2757, name=null, config=571, shift=20, childs=[-1, 2747, -1]].
+NPC config [id=2756, name=null, config=571, shift=18, childs=[-1, 2747, -1]].
+NPC config [id=2759, name=null, config=571, shift=24, childs=[-1, 2747, -1]].
+NPC config [id=2758, name=null, config=571, shift=22, childs=[-1, 2747, -1]].
+NPC config [id=2585, name=Trolley, config=553, shift=11, childs=[2584, 2582, 2583, -1]].
+NPC config [id=2652, name=null, config=568, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2653, -1, -1, -1, -1, 2653, -1, -1, -1, -1, 2653, -1]].
+NPC config [id=2654, name=Unferth, config=568, shift=13, childs=[2655, 2656, 2657, 2658, 2659, 2658, 2657, 2656, 2655, -1]].
+NPC config [id=2977, name=Rat, config=609, shift=10, childs=[2980, -1]].
+NPC config [id=2976, name=Rat, config=609, shift=9, childs=[2980, -1]].
+NPC config [id=2979, name=Rat, config=609, shift=12, childs=[2980, -1]].
+NPC config [id=2978, name=Rat, config=609, shift=11, childs=[2980, -1]].
+NPC config [id=2974, name=Rat, config=609, shift=7, childs=[2980, -1]].
+NPC config [id=2975, name=Rat, config=609, shift=8, childs=[2980, -1]].
+NPC config [id=3049, name=Target, config=616, shift=16, childs=[3047, 3048, -1]].
+NPC config [id=2818, name=null, config=599, shift=31, childs=[-1, 2822, -1]].
+NPC config [id=2819, name=null, config=599, shift=31, childs=[-1, 2823, -1]].
+NPC config [id=2816, name=null, config=599, shift=31, childs=[-1, 2820, -1]].
+NPC config [id=2817, name=null, config=599, shift=31, childs=[-1, 2821, -1]].
+NPC config [id=2920, name=null, config=602, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2921, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2921, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2921, -1]].
+NPC config [id=2922, name=null, config=602, shift=26, childs=[-1, 2910, -1]].
+NPC config [id=2923, name=null, config=602, shift=26, childs=[-1, -1, 2910, -1]].
+NPC config [id=2924, name=null, config=602, shift=28, childs=[-1, -1, 2902, -1]].
+NPC config [id=2925, name=null, config=602, shift=30, childs=[-1, -1, 2899, -1]].
+NPC config [id=2926, name=null, config=437, shift=7, childs=[-1, -1, -1, -1, -1, 1910, -1]].
+NPC config [id=2929, name=null, config=602, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2915, -1]].
+NPC config [id=2930, name=null, config=602, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2931, -1]].
+NPC config [id=2933, name=Melina, config=604, shift=13, childs=[2935, -1]].
+NPC config [id=2936, name=Droalak, config=604, shift=14, childs=[2938, -1]].
+NPC config [id=2898, name=null, config=602, shift=30, childs=[-1, 2899, -1]].
+NPC config [id=2897, name=Father Reen, config=602, shift=0, childs=[2899, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2899, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2899, -1]].
+NPC config [id=2901, name=null, config=602, shift=28, childs=[-1, 2902, -1]].
+NPC config [id=2908, name=null, config=602, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2910, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2910, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2910, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2910, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2910, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2910, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2910, -1]].
+NPC config [id=3289, name=null, config=32, shift=-1, childs=[-1, -1, -1, 287, -1]].
+NPC config [id=3290, name=Chicken, config=32, shift=-1, childs=[288, 288, 288, -1]].
+NPC config [id=3318, name=null, config=671, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3321, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3321, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3321, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3321, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3321, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3321, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3321, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3321, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3321, -1]].
+NPC config [id=3316, name=null, config=671, shift=24, childs=[-1, 3305, 3305, -1]].
+NPC config [id=3317, name=null, config=671, shift=24, childs=[-1, 3306, 3306, -1]].
+NPC config [id=3314, name=Fairy Queen, config=671, shift=22, childs=[653, -1]].
+NPC config [id=3315, name=null, config=671, shift=24, childs=[-1, 3304, 4433, -1]].
+NPC config [id=3323, name=Juliet, config=673, shift=0, childs=[637, -1, 637, -1]].
+NPC config [id=3213, name=Edmond, config=667, shift=0, childs=[714, -1]].
+NPC config [id=3214, name=null, config=667, shift=0, childs=[-1, 714, -1]].
+NPC config [id=3152, name=Boneguard, config=643, shift=6, childs=[3140, 3141, 3142, -1]].
+NPC config [id=3144, name=null, config=643, shift=0, childs=[-1, 3147, -1]].
+NPC config [id=3145, name=null, config=643, shift=0, childs=[-1, -1, 3147, -1]].
+NPC config [id=3146, name=null, config=643, shift=0, childs=[-1, -1, -1, 3147, -1]].
+NPC config [id=3143, name=Lazim, config=643, shift=0, childs=[3147, -1]].
+NPC config [id=3136, name=Enakhra, config=643, shift=4, childs=[3137, 3138, -1]].
+NPC config [id=3139, name=Boneguard, config=643, shift=6, childs=[3140, 3141, 3142, -1]].
+NPC config [id=3074, name=Monk, config=622, shift=27, childs=[3075, -1]].
+NPC config [id=3076, name=null, config=622, shift=27, childs=[-1, 3077, -1]].
+NPC config [id=3128, name=Boneguard, config=641, shift=0, childs=[3129, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3129, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3129, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3129, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3129, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3130, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3130, -1, -1, -1, -1, 3130, -1, -1, -1, -1, 3130, -1]].
+NPC config [id=3134, name=Furnace grate, config=642, shift=2, childs=[3135, -1]].
+NPC config [id=3132, name=Crust of ice, config=642, shift=1, childs=[3133, -1]].
+NPC config [id=3110, name=Sandy, config=636, shift=0, childs=[3112, -1]].
+NPC config [id=3111, name=null, config=636, shift=0, childs=[-1, 3113, -1]].
+NPC config [id=3567, name=null, config=704, shift=19, childs=[-1, 3569, -1]].
+NPC config [id=3566, name=Cornelius, config=704, shift=19, childs=[3568, -1]].
+NPC config [id=3462, name=null, config=679, shift=5, childs=[-1, 3463, 3464, -1]].
+NPC config [id=3465, name=null, config=684, shift=11, childs=[-1, 3466, -1]].
+NPC config [id=3470, name=null, config=684, shift=17, childs=[-1, 3471, -1]].
+NPC config [id=3469, name=null, config=684, shift=17, childs=[-1, 3472, -1]].
+NPC config [id=3479, name=null, config=679, shift=7, childs=[-1, 3480, 3478, -1]].
+NPC config [id=3510, name=null, config=704, shift=23, childs=[-1, 3511, 3539, -1]].
+NPC config [id=3512, name=null, config=704, shift=23, childs=[-1, 3514, -1]].
+NPC config [id=3513, name=null, config=704, shift=23, childs=[-1, 3515, -1]].
+NPC config [id=3516, name=null, config=704, shift=23, childs=[-1, 3517, -1]].
+NPC config [id=3404, name=null, config=680, shift=28, childs=[-1, -1, 3405, -1]].
+NPC config [id=3401, name=An old Dwarf, config=680, shift=28, childs=[3402, 3403, -1]].
+NPC config [id=3399, name=null, config=678, shift=0, childs=[-1, -1, -1, 3400, 3400, -1]].
+NPC config [id=3417, name=null, config=679, shift=2, childs=[-1, 3418, 3416, -1]].
+NPC config [id=3450, name=null, config=679, shift=3, childs=[-1, 3451, 3449, -1]].
+NPC config [id=3373, name=null, config=679, shift=6, childs=[-1, 3374, 3372, -1]].
+NPC config [id=3384, name=null, config=678, shift=0, childs=[-1, -1, -1, -1, 3385, -1]].
+NPC config [id=3379, name=Evil Dave, config=679, shift=4, childs=[3380, 3380, 3380, 3380, 3380, -1]].
+NPC config [id=3383, name=null, config=678, shift=0, childs=[-1, -1, -1, 3385, 3385, -1]].
+NPC config [id=3828, name=Devin Mendelberg, config=723, shift=0, childs=[3825, -1, -1, -1, -1, 3825, -1, -1, -1, -1, 3825, -1, -1, -1, -1, 3825, -1, -1, -1, -1, 3825, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3825, -1]].
+NPC config [id=3829, name=Kathy Corkat, config=723, shift=0, childs=[3830, -1, -1, -1, -1, 3831, -1, -1, -1, -1, 3831, -1, -1, -1, -1, 3831, -1, -1, -1, -1, 3831, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3831, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3831, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3831, -1, -1, -1, -1, 3831, -1, -1, -1, -1, 3831, -1, -1, -1, -1, 3831, -1, -1, -1, -1, 3831, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3831, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3831, -1, -1, -1, -1, 3831, -1, -1, -1, -1, 3831, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3831, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3831, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3831, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3831, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3831, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3831, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3831, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3831, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3831, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3831, -1]].
+NPC config [id=3834, name=null, config=723, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3821, -1]].
+NPC config [id=3832, name=Herman Caranos, config=723, shift=0, childs=[3822, -1, -1, -1, -1, 3822, -1, -1, -1, -1, 3822, -1, -1, -1, -1, 3822, -1, -1, -1, -1, 3822, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2567, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2567, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2567, -1, -1, -1, -1, 2567, -1]].
+NPC config [id=3833, name=null, config=723, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2567, -1, -1, -1, -1, 2567, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2567, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2567, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2567, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2567, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2567, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2567, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2567, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2567, -1]].
+NPC config [id=3820, name=Wise Old Man, config=723, shift=0, childs=[2253, -1, -1, -1, -1, 2253, -1, -1, -1, -1, 2253, -1, -1, -1, -1, 2253, -1, -1, -1, -1, 2253, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2253, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2253, -1]].
+NPC config [id=3778, name=null, config=1049, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 251, -1, -1, -1, -1, 3779, -1]].
+NPC config [id=3780, name=null, config=1049, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 249, -1, -1, -1, -1, 249, -1, -1, -1, -1, 249, -1]].
+NPC config [id=3638, name=Launa, config=710, shift=0, childs=[3639, -1]].
+NPC config [id=3633, name=null, config=700, shift=0, childs=[-1, 3634, -1]].
+NPC config [id=3631, name=null, config=700, shift=0, childs=[-1, 3632, -1]].
+NPC config [id=3629, name=null, config=700, shift=0, childs=[-1, 3630, -1]].
+NPC config [id=3627, name=null, config=700, shift=0, childs=[-1, 3628, -1]].
+NPC config [id=3625, name=null, config=700, shift=0, childs=[-1, 3626, -1]].
+NPC config [id=3623, name=null, config=700, shift=0, childs=[-1, 3624, -1]].
+NPC config [id=4453, name=null, config=810, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4442, -1]].
+NPC config [id=4454, name=null, config=810, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4437, -1]].
+NPC config [id=4436, name=null, config=810, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4437, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4437, -1]].
+NPC config [id=4435, name=null, config=810, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4442, -1, -1, -1, -1, 4442, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4442, -1, -1, -1, -1, 4442, -1, -1, -1, -1, 4442, -1, 4442, 4442, -1, 4442, -1, -1, -1, -1, 4442, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4442, -1]].
+NPC config [id=4432, name=null, config=810, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4434, -1, -1, -1, -1, 4434, -1, -1, -1, -1, 4434, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4434, -1, -1, -1, -1, 4434, -1, -1, -1, -1, 4434, -1, 4434, 4434, -1, 4434, -1, -1, -1, -1, 4434, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4434, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4434, -1]].
+NPC config [id=4423, name=Fairy, config=810, shift=0, childs=[57, -1, -1, -1, -1, -1, -1, -1, -1, -1, 57, -1, -1, -1, -1, -1, -1, -1, -1, -1, 57, -1, -1, -1, -1, -1, -1, -1, -1, -1, 57, -1]].
+NPC config [id=4422, name=Fairy, config=810, shift=0, childs=[57, -1, -1, -1, -1, -1, -1, -1, -1, -1, 57, -1]].
+NPC config [id=4431, name=Fairy Nuff, config=810, shift=14, childs=[4434, -1]].
+NPC config [id=4430, name=null, config=810, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4445, -1, -1, -1, -1, 4445, -1, -1, -1, -1, 4445, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4445, -1, -1, -1, -1, 4445, -1, -1, -1, -1, 4445, -1, 4445, 4445, -1, 4445, -1, -1, -1, -1, 4445, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4445, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4445, -1]].
+NPC config [id=4429, name=null, config=810, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4446, -1, -1, -1, -1, 4446, -1, -1, -1, -1, 4446, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4446, -1, -1, -1, -1, 4446, -1, -1, -1, -1, 4446, -1, 4446, 4446, -1, 4446, -1, -1, -1, -1, 4446, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4446, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4446, -1]].
+NPC config [id=4428, name=null, config=810, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4444, -1, -1, -1, -1, 4444, -1, -1, -1, -1, 4444, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4444, -1, -1, -1, -1, 4444, -1, -1, -1, -1, 4444, -1, 4444, 4444, -1, 4444, -1, -1, -1, -1, 4444, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4444, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4444, -1]].
+NPC config [id=4427, name=null, config=810, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4443, -1, -1, -1, -1, 4443, -1, -1, -1, -1, 4443, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4443, -1, -1, -1, -1, 4443, -1, -1, -1, -1, 4443, -1, 4443, 4443, -1, 4443, -1, -1, -1, -1, 4443, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4443, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4443, -1]].
+NPC config [id=4426, name=null, config=810, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 57, -1, -1, -1, -1, 57, -1, -1, -1, -1, 57, -1, -1, -1, -1, -1, -1, -1, -1, -1, 57, -1, -1, -1, -1, 57, -1, -1, -1, -1, 57, -1, 57, 57, -1, 57, -1, -1, -1, -1, 57, -1, -1, -1, -1, -1, -1, -1, -1, -1, 57, -1, -1, -1, -1, -1, -1, -1, -1, -1, 57, -1]].
+NPC config [id=4425, name=null, config=810, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4458, -1, -1, -1, -1, 4458, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4458, -1, -1, -1, -1, 4458, -1, -1, -1, -1, 4458, -1, 4458, 4458, -1, 4458, -1, -1, -1, -1, 4458, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4458, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4458, -1]].
+NPC config [id=4424, name=null, config=810, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4456, -1, -1, -1, -1, 4456, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4456, -1, -1, -1, -1, 4456, -1, -1, -1, -1, 4456, -1, 4456, 4456, -1, 4456, -1, -1, -1, -1, 4456, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4456, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4456, -1]].
+NPC config [id=4538, name=Cabin boy, config=823, shift=0, childs=[4539, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4539, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4539, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4539, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4539, -1, -1, -1, -1, 4539, -1, -1, -1, -1, 4539, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4539, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4539, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4539, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4539, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4539, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4539, -1, 4539, -1, 4539, -1, 4539, -1, 4539, -1, 4539, -1, -1, -1, -1, 4539, -1]].
+NPC config [id=4495, name=Grubfoot, config=62, shift=0, childs=[4496, 4496, 4496, 4496, 4497, 4498, 4496, -1]].
+NPC config [id=4256, name=null, config=61, shift=10, childs=[-1, 2348, -1]].
+NPC config [id=4236, name=Rick, config=738, shift=16, childs=[4235, -1, 4235, 4235, 4235, 4235, 4235, 4235, 4235, -1]].
+NPC config [id=4238, name=Maid, config=738, shift=16, childs=[4237, 4237, 4237, -1, 4237, 4237, 4237, 4237, 4237, -1]].
+NPC config [id=4253, name=null, config=61, shift=1, childs=[-1, 2345, -1]].
+NPC config [id=4255, name=null, config=61, shift=7, childs=[-1, 2347, -1]].
+NPC config [id=4254, name=null, config=61, shift=4, childs=[-1, 2346, -1]].
+NPC config [id=4240, name=Cook, config=738, shift=16, childs=[4239, 4239, 4239, 4239, 4239, -1, 4239, 4239, 4239, -1]].
+NPC config [id=4242, name=Butler, config=738, shift=16, childs=[4241, 4241, 4241, 4241, 4241, 4241, -1, 4241, 4241, -1]].
+NPC config [id=4244, name=Demon butler, config=738, shift=16, childs=[4243, 4243, 4243, 4243, 4243, 4243, 4243, 4243, -1]].
+NPC config [id=4321, name=null, config=794, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4320, -1]].
+NPC config [id=4338, name=null, config=794, shift=16, childs=[-1, 4337, -1]].
+NPC config [id=4317, name=null, config=794, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, 4318, 4318, 4318, -1]].
+NPC config [id=4319, name=null, config=794, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, 4320, 4320, 4320, -1]].
+NPC config [id=4313, name=null, config=794, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4314, -1]].
+NPC config [id=4315, name=null, config=794, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, 4316, 4316, 4316, -1]].
+NPC config [id=4882, name=null, config=874, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, 4888, 4888, 4888, 4888, 4888, 4888, -1]].
+NPC config [id=4880, name=null, config=874, shift=0, childs=[-1, 4884, 4884, 4884, 4884, 4884, 4884, 4884, 4884, 4884, 4884, 4884, 4884, 4884, 4884, -1]].
+NPC config [id=4881, name=null, config=874, shift=0, childs=[-1, -1, -1, -1, -1, 4886, 4886, 4886, 4886, 4886, 4886, 4886, 4886, 4886, 4886, -1]].
+NPC config [id=4891, name=null, config=874, shift=11, childs=[-1, 4892, -1]].
+NPC config [id=4871, name=Holgart, config=874, shift=11, childs=[699, 4896, -1]].
+NPC config [id=4869, name=null, config=159, shift=-1, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 701, 701, -1]].
+NPC config [id=4865, name=null, config=159, shift=-1, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4864, 4864, -1]].
+NPC config [id=4912, name=Jig cart, config=896, shift=9, childs=[4913, 4914, 4915, 4916, 4917, 4918, -1]].
+NPC config [id=4950, name=null, config=905, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4947, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4947, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4947, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4947, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4947, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4947, -1]].
+NPC config [id=4951, name=null, config=905, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4948, -1]].
+NPC config [id=4954, name=null, config=905, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4948, -1]].
+NPC config [id=4955, name=null, config=905, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4947, -1]].
+NPC config [id=4952, name=null, config=905, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4948, -1]].
+NPC config [id=4953, name=null, config=905, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4947, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4947, -1]].
+NPC config [id=4956, name=null, config=905, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4947, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4947, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4947, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4947, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4947, -1]].
+NPC config [id=4984, name=Ana, config=907, shift=7, childs=[822, -1]].
+NPC config [id=4985, name=Male slave, config=907, shift=4, childs=[825, 826, -1]].
+NPC config [id=4986, name=Irena, config=907, shift=10, childs=[835, -1]].
+NPC config [id=4987, name=null, config=907, shift=10, childs=[-1, 4988, -1]].
+NPC config [id=4961, name=null, config=905, shift=27, childs=[-1, 4962, -1]].
+NPC config [id=4966, name=null, config=435, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4967, -1]].
+NPC config [id=4970, name=null, config=905, shift=20, childs=[-1, 4969, -1]].
+NPC config [id=5022, name=null, config=942, shift=21, childs=[-1, 5025, -1]].
+NPC config [id=5021, name=null, config=942, shift=21, childs=[-1, 5024, -1]].
+NPC config [id=5020, name=null, config=942, shift=21, childs=[-1, 5023, -1]].
+NPC config [id=5016, name=Gublinch, config=941, shift=28, childs=[5017, 5018, 5019, -1]].
+NPC config [id=5015, name=Gublinch, config=941, shift=26, childs=[5017, 5018, 5019, -1]].
+NPC config [id=5014, name=Gublinch, config=941, shift=24, childs=[5017, 5018, 5019, -1]].
+NPC config [id=5013, name=Gublinch, config=941, shift=22, childs=[5017, 5018, 5019, -1]].
+NPC config [id=5012, name=Gublinch, config=941, shift=20, childs=[5017, 5018, 5019, -1]].
+NPC config [id=5011, name=Gublinch, config=941, shift=18, childs=[5017, 5018, 5019, -1]].
+NPC config [id=5010, name=Gublinch, config=941, shift=16, childs=[5017, 5018, 5019, -1]].
+NPC config [id=5009, name=Gublinch, config=941, shift=14, childs=[5017, 5018, 5019, -1]].
+NPC config [id=5008, name=Gublinch, config=941, shift=12, childs=[5017, 5018, 5019, -1]].
+NPC config [id=5006, name=Gublinch, config=941, shift=8, childs=[5017, 5018, 5019, -1]].
+NPC config [id=5007, name=Gublinch, config=941, shift=10, childs=[5017, 5018, 5019, -1]].
+NPC config [id=5004, name=Gublinch, config=941, shift=4, childs=[5017, 5018, 5019, -1]].
+NPC config [id=5005, name=Gublinch, config=941, shift=6, childs=[5017, 5018, 5019, -1]].
+NPC config [id=5003, name=Gublinch, config=941, shift=2, childs=[5017, 5018, 5019, -1]].
+NPC config [id=5078, name=null, config=925, shift=31, childs=[-1, 1, -1]].
+NPC config [id=5077, name=null, config=925, shift=31, childs=[-1, 1, -1]].
+NPC config [id=5066, name=null, config=912, shift=15, childs=[-1, 5053, -1]].
+NPC config [id=5064, name=null, config=912, shift=13, childs=[-1, 5056, -1]].
+NPC config [id=5065, name=null, config=912, shift=14, childs=[-1, 5054, -1]].
+NPC config [id=5070, name=null, config=925, shift=31, childs=[-1, 1, -1]].
+NPC config [id=5071, name=null, config=925, shift=31, childs=[-1, 1, -1]].
+NPC config [id=5062, name=null, config=912, shift=10, childs=[-1, 5049, 5057, -1]].
+NPC config [id=5063, name=null, config=912, shift=12, childs=[-1, 5055, -1]].
+NPC config [id=5119, name=null, config=925, shift=31, childs=[-1, 1, -1]].
+NPC config [id=5118, name=null, config=925, shift=31, childs=[-1, 1, -1]].
+NPC config [id=5107, name=null, config=925, shift=31, childs=[-1, 1, -1]].
+NPC config [id=5106, name=null, config=925, shift=31, childs=[-1, 1, -1]].
+NPC config [id=5108, name=null, config=925, shift=31, childs=[-1, 1, -1]].
+NPC config [id=5101, name=null, config=925, shift=31, childs=[-1, 1, -1]].
+NPC config [id=5102, name=null, config=925, shift=31, childs=[-1, 1, -1]].
+NPC config [id=5090, name=null, config=925, shift=31, childs=[-1, 1, -1]].
+NPC config [id=5091, name=null, config=925, shift=31, childs=[-1, 1, -1]].
+NPC config [id=4613, name=Cute creature, config=844, shift=13, childs=[4614, 4615, 1957, -1]].
+NPC config [id=4622, name=Cute creature, config=844, shift=19, childs=[4623, 4624, 1957, -1]].
+NPC config [id=4616, name=Cute creature, config=844, shift=15, childs=[4617, 4618, 1957, -1]].
+NPC config [id=4619, name=Cute creature, config=844, shift=17, childs=[4620, 4621, 1957, -1]].
+NPC config [id=4628, name=Cute creature, config=844, shift=23, childs=[4629, 4630, 1957, -1]].
+NPC config [id=4625, name=Cute creature, config=844, shift=21, childs=[4626, 4627, 1957, -1]].
+NPC config [id=4711, name=null, config=870, shift=12, childs=[-1, 4713, -1]].
+NPC config [id=4714, name=null, config=870, shift=15, childs=[-1, 4715, -1]].
+NPC config [id=4712, name=null, config=870, shift=12, childs=[-1, -1, 4713, -1]].
+NPC config [id=4859, name=Witchaven villager, config=874, shift=0, childs=[4887, 4887, 4887, 4887, 4887, 4887, 4887, 4887, 4887, -1]].
+NPC config [id=4858, name=Witchaven villager, config=874, shift=0, childs=[4885, 4885, 4885, 4885, 4885, -1]].
+NPC config [id=4857, name=Witchaven villager, config=874, shift=0, childs=[4883, -1]].
+NPC config [id=4860, name=Jeb, config=874, shift=0, childs=[4895, 4895, 4896, 4896, 4896, 4896, 4896, 4896, 4896, 4896, 4896, 4896, 4896, 4896, 4896, -1]].
+NPC config [id=4855, name=Brother Maledict, config=874, shift=0, childs=[4878, 4878, 4878, 4878, 4878, 4878, 4878, 4878, 4879, 4879, 4879, 4879, 4879, 4879, -1]].
+NPC config [id=4854, name=Mayor Hobb, config=874, shift=0, childs=[4874, 4874, 4874, 4874, 4874, 4874, 4874, 4874, 4874, 4874, 4874, 4874, 4875, 4875, -1]].
+NPC config [id=4853, name=Col. O'Niall, config=874, shift=0, childs=[4872, 4872, 4872, 4872, 4872, 4872, 4872, 4872, 4872, 4873, 4873, 4873, 4873, -1]].
+NPC config [id=5443, name=null, config=968, shift=14, childs=[-1, 5444, -1]].
+NPC config [id=5440, name=KGP Agent, config=968, shift=14, childs=[5441, 5441, -1]].
+NPC config [id=5439, name=null, config=968, shift=14, childs=[-1, 5441, -1]].
+NPC config [id=5427, name=Penguin, config=968, shift=8, childs=[5428, 5428, 5428, -1]].
+NPC config [id=5423, name=null, config=968, shift=13, childs=[-1, 5424, -1]].
+NPC config [id=5606, name=null, config=980, shift=-1, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1670, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1670, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1670, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1670, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1670, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1670, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1670, -1]].
+NPC config [id=5600, name=null, config=978, shift=9, childs=[-1, 5581, -1]].
+NPC config [id=5601, name='Transmute' The Alchemist, config=977, shift=0, childs=[5585, -1, 5585, 5585, 5585, -1, 5585, -1, 5585, -1, -1, 5585, 5585, -1, 5585, -1, 5585, -1]].
+NPC config [id=5602, name='Currency' The Alchemist, config=977, shift=0, childs=[5587, -1, 5587, 5587, 5587, -1, 5587, -1, 5587, -1, -1, 5587, 5587, -1, 5587, -1, 5587, -1]].
+NPC config [id=5599, name=null, config=977, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5583, -1, 5583, -1, 5583, -1]].
+NPC config [id=5598, name=Effigy, config=977, shift=0, childs=[5578, -1, 5578, 5578, 5578, -1, 5578, -1, 5578, -1, -1, 5578, 5578, -1, 5578, -1, 5578, -1]].
+NPC config [id=5574, name=null, config=440, shift=21, childs=[-1, 5567, -1]].
+NPC config [id=5575, name=null, config=440, shift=21, childs=[-1, 5568, -1]].
+NPC config [id=5573, name=null, config=440, shift=21, childs=[-1, 5566, -1]].
+NPC config [id=5576, name=null, config=440, shift=21, childs=[-1, 5569, -1]].
+NPC config [id=5577, name=null, config=440, shift=21, childs=[-1, 5570, -1]].
+NPC config [id=5530, name=Mawnis Burowgar, config=970, shift=21, childs=[5503, 5504, -1]].
+NPC config [id=5199, name=null, config=32, shift=-1, childs=[-1, -1, -1, 5198, -1]].
+NPC config [id=5192, name=Ogre shaman, config=936, shift=27, childs=[5193, 5194, -1]].
+NPC config [id=5189, name=Ogre shaman, config=936, shift=26, childs=[5190, 5191, -1]].
+NPC config [id=5186, name=Ogre shaman, config=936, shift=25, childs=[5187, 5188, -1]].
+NPC config [id=5206, name=Alice's husband, config=939, shift=0, childs=[5202, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5202, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5202, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5202, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5202, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5202, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5202, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5202, -1, -1, 5202, -1, -1, 5202, -1, -1, -1, 5203, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5203, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5203, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5203, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5203, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5203, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5203, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5203, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5203, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5203, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5203, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5203, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5203, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5203, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5203, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5203, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5203, -1]].
+NPC config [id=5201, name=null, config=32, shift=-1, childs=[-1, -1, -1, 5200, -1]].
+NPC config [id=5183, name=Ogre shaman, config=936, shift=24, childs=[5184, 5185, -1]].
+NPC config [id=5180, name=Ogre shaman, config=936, shift=23, childs=[5181, 5182, -1]].
+NPC config [id=5175, name=Ogre shaman, config=936, shift=22, childs=[5176, 5179, -1]].
+NPC config [id=5135, name=null, config=934, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5131, -1]].
+NPC config [id=5134, name=null, config=934, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5130, -1]].
+NPC config [id=5125, name=Nickolaus, config=934, shift=0, childs=[5128, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5128, -1, -1, -1, -1, 5128, -1, -1, -1, -1, 5128, -1, -1, -1, -1, 5128, -1]].
+NPC config [id=5124, name=null, config=934, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5127, -1, -1, -1, -1, 5128, -1, -1, -1, -1, 5129, -1]].
+NPC config [id=5136, name=null, config=934, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5132, -1]].
+NPC config [id=5139, name=null, config=934, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5081, -1]].
+NPC config [id=5282, name=Osman, config=964, shift=14, childs=[924, 924, 5284, -1]].
+NPC config [id=5283, name=null, config=964, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 924, -1, -1, -1, -1, -1, -1, -1, -1, -1, 924, -1]].
+NPC config [id=5280, name=Maisa, config=964, shift=19, childs=[5281, -1]].
+NPC config [id=5257, name=null, config=964, shift=9, childs=[-1, 5258, -1]].
+NPC config [id=5259, name=null, config=964, shift=9, childs=[-1, 5260, -1]].
+NPC config [id=5261, name=null, config=964, shift=8, childs=[-1, 5262, -1]].
+NPC config [id=5263, name=null, config=964, shift=8, childs=[-1, 5264, -1]].
+NPC config [id=5265, name=null, config=964, shift=8, childs=[-1, 5266, -1]].
+NPC config [id=5267, name=null, config=964, shift=8, childs=[-1, 5268, -1]].
+NPC config [id=5269, name=null, config=964, shift=8, childs=[-1, 5270, -1]].
+NPC config [id=5271, name=null, config=964, shift=8, childs=[-1, 5272, -1]].
+NPC config [id=5273, name=null, config=964, shift=8, childs=[-1, 5274, -1]].
+NPC config [id=5275, name=null, config=964, shift=8, childs=[-1, 5276, -1]].
+NPC config [id=6000, name=Rupert the Beard, config=1017, shift=11, childs=[5992, 6001, -1]].
+NPC config [id=5997, name=Grimgnash, config=1017, shift=20, childs=[5989, -1]].
+NPC config [id=5998, name=Rupert the Beard, config=1016, shift=31, childs=[5990, 5999, -1]].
+NPC config [id=5901, name=null, config=1003, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5898, -1, 5898, -1, 5898, -1, 5898, -1, 5898, -1, 5898, -1, 5898, -1]].
+NPC config [id=5900, name=null, config=1005, shift=8, childs=[-1, -1, -1, -1, 5896, 5897, 5895, -1]].
+NPC config [id=5899, name=null, config=1005, shift=8, childs=[-1, 5896, 5897, 5895, -1]].
+NPC config [id=5892, name=null, config=997, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, 5872, -1]].
+NPC config [id=5891, name=null, config=997, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, 5871, -1]].
+NPC config [id=5890, name=null, config=997, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, 5872, 5872, -1]].
+NPC config [id=5889, name=null, config=997, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, 5871, 5871, -1]].
+NPC config [id=5888, name=null, config=997, shift=23, childs=[-1, 5870, -1]].
+NPC config [id=6082, name=null, config=176, shift=-1, childs=[-1, -1, -1, -1, -1, -1, -1, 918, 918, 918, 918, -1]].
+NPC config [id=6083, name=null, config=176, shift=-1, childs=[-1, -1, -1, -1, -1, -1, -1, -1, 918, 918, 918, -1]].
+NPC config [id=6119, name=Observatory professor, config=112, shift=-1, childs=[488, 488, 488, 488, 488, 488, -1]].
+NPC config [id=6120, name=null, config=112, shift=-1, childs=[-1, -1, -1, -1, -1, -1, 488, 488, 488, -1]].
+NPC config [id=6077, name=null, config=907, shift=14, childs=[-1, 822, -1]].
+NPC config [id=6076, name=null, config=728, shift=3, childs=[-1, 1685, -1]].
+NPC config [id=6075, name=Gravingas, config=728, shift=3, childs=[1685, -1]].
+NPC config [id=5677, name=Brother Tranquility, config=982, shift=27, childs=[5618, -1]].
+NPC config [id=5676, name=Monk, config=982, shift=27, childs=[5622, -1]].
+NPC config [id=5675, name=Monk, config=982, shift=27, childs=[5621, -1]].
+NPC config [id=5674, name=Monk, config=982, shift=27, childs=[5620, -1]].
+NPC config [id=5673, name=Monk, config=982, shift=27, childs=[5619, -1]].
+NPC config [id=5672, name=Zombie monk, config=982, shift=27, childs=[5626, 5611, -1]].
+NPC config [id=5671, name=Zombie monk, config=982, shift=27, childs=[5625, 5610, -1]].
+NPC config [id=5670, name=Zombie monk, config=982, shift=27, childs=[5624, 5609, -1]].
+NPC config [id=5669, name=Zombie monk, config=982, shift=27, childs=[5623, 5608, -1]].
+NPC config [id=5668, name=Brother Tranquility, config=980, shift=-1, childs=[5616, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5616, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5616, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5616, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5616, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5616, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5616, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5616, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5616, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5616, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5617, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5617, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5617, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5617, -1]].
+NPC config [id=5667, name=Brother Tranquility, config=980, shift=-1, childs=[5616, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5616, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5616, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5616, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5616, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5616, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5616, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5616, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5616, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5616, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5617, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5617, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5617, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5617, -1]].
+NPC config [id=5830, name=null, config=987, shift=1, childs=[-1, 5825, -1]].
+NPC config [id=5831, name=null, config=987, shift=1, childs=[-1, 5826, -1]].
+NPC config [id=5832, name=Ambassador Alvijar, config=997, shift=0, childs=[5863, 5863, 5863, 5863, 5863, 5863, 5863, 5863, 5863, 5863, 5863, -1]].
+NPC config [id=5853, name=Surok Magis, config=1181, shift=11, childs=[5834, 5835, 7000, -1]].
+NPC config [id=5869, name=null, config=997, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5868, -1]].
+NPC config [id=5887, name=null, config=997, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5863, -1]].
+NPC config [id=5787, name=Oldak, config=1094, shift=0, childs=[6392, 6392, 6392, 6392, 6392, 6392, 6392, 6392, 6392, 6392, 6392, 6392, 6392, 6392, 6392, 6392, -1, -1, 6392, -1]].
+NPC config [id=5802, name=null, config=988, shift=8, childs=[-1, 3712, -1]].
+NPC config [id=6400, name=null, config=1094, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6392, 6392, -1]].
+NPC config [id=6505, name=null, config=440, shift=21, childs=[-1, 6504, -1]].
+NPC config [id=6480, name=null, config=1094, shift=5, childs=[-1, 6479, -1]].
+NPC config [id=6333, name=null, config=1064, shift=30, childs=[-1, 6311, 6312, -1]].
+NPC config [id=6310, name=Cute creature, config=844, shift=13, childs=[6311, 6312, 1957, -1]].
+NPC config [id=6398, name=null, config=1094, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6393, 6393, -1]].
+NPC config [id=6396, name=null, config=1094, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, 6393, 6393, -1]].
+NPC config [id=6394, name=null, config=1094, shift=6, childs=[-1, 6393, -1]].
+NPC config [id=6387, name=null, config=934, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6385, -1]].
+NPC config [id=6386, name=null, config=1077, shift=8, childs=[-1, 6375, -1]].
+NPC config [id=6194, name=Carol, config=1049, shift=0, childs=[816, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 816, -1]].
+NPC config [id=6195, name=David, config=1049, shift=0, childs=[817, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 817, -1]].
+NPC config [id=6192, name=Anna, config=1049, shift=0, childs=[814, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 814, -1]].
+NPC config [id=6193, name=Bob, config=1049, shift=0, childs=[815, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 815, -1]].
+NPC config [id=6199, name=null, config=1049, shift=0, childs=[-1, -1, -1, -1, -1, 6178, -1, -1, -1, -1, 6178, -1, -1, -1, -1, 6178, -1, -1, -1, -1, 6178, -1, -1, -1, -1, 6178, -1, -1, -1, -1, 6178, -1, -1, -1, -1, 6178, -1, -1, -1, -1, 6178, -1]].
+NPC config [id=6196, name=Elizabeth, config=1049, shift=0, childs=[818, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 818, -1]].
+NPC config [id=6197, name=Frank, config=1049, shift=0, childs=[819, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 819, -1]].
+NPC config [id=6202, name=Knight, config=1048, shift=4, childs=[6201, -1]].
+NPC config [id=6186, name=null, config=1051, shift=19, childs=[-1, 806, 807, 808, 809, 810, 811, -1]].
+NPC config [id=6191, name=Guard, config=1049, shift=0, childs=[812, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 812, -1]].
+NPC config [id=7055, name=Chargurr, config=1185, shift=31, childs=[7053, -1]].
+NPC config [id=7042, name=Diseased kebbit, config=1185, shift=15, childs=[7039, 7083, -1]].
+NPC config [id=7043, name=Diseased kebbit, config=1185, shift=16, childs=[7039, 7083, -1]].
+NPC config [id=7040, name=Diseased kebbit, config=1185, shift=13, childs=[7039, 7083, -1]].
+NPC config [id=7041, name=Diseased kebbit, config=1185, shift=14, childs=[7039, 7083, -1]].
+NPC config [id=7066, name=null, config=1185, shift=31, childs=[-1, 4651, -1]].
+NPC config [id=7065, name=null, config=1185, shift=31, childs=[-1, 4654, -1]].
+NPC config [id=7056, name=null, config=1185, shift=31, childs=[-1, 7054, -1]].
+NPC config [id=7101, name=Thump, config=1185, shift=31, childs=[7061, -1]].
+NPC config [id=7100, name=Massage table, config=1185, shift=31, childs=[7060, 7059, -1]].
+NPC config [id=7103, name=null, config=1185, shift=31, childs=[-1, 7064, -1]].
+NPC config [id=7102, name=null, config=1185, shift=31, childs=[-1, 7063, -1]].
+NPC config [id=7097, name=null, config=1185, shift=11, childs=[-1, 7029, -1]].
+NPC config [id=7096, name=null, config=1185, shift=10, childs=[-1, 7028, -1]].
+NPC config [id=7099, name=Kringk, config=1185, shift=31, childs=[7058, -1]].
+NPC config [id=7098, name=null, config=1185, shift=12, childs=[-1, 7030, -1]].
+NPC config [id=7093, name=Peter, config=1185, shift=7, childs=[7029, 7083, -1]].
+NPC config [id=7092, name=Penelope, config=1185, shift=6, childs=[7028, 7083, -1]].
+NPC config [id=7095, name=null, config=1185, shift=9, childs=[-1, 7027, -1]].
+NPC config [id=7094, name=Peanut, config=1185, shift=8, childs=[7030, 7083, -1]].
+NPC config [id=7091, name=Patrick, config=1185, shift=5, childs=[7027, 7083, -1]].
+NPC config [id=7119, name=null, config=1190, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7118, -1, -1, -1, -1, 7118, 7118, -1, 7118, 7118, 7118, -1, -1, -1, -1, 7118, -1, -1, -1, -1, 7118, -1, -1, -1, -1, 7118, -1]].
+NPC config [id=7163, name=Caroline, config=1204, shift=0, childs=[696, -1]].
+NPC config [id=6989, name=null, config=1178, shift=1, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6970, -1]].
+NPC config [id=6988, name=Pikkupstix, config=1178, shift=1, childs=[6971, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6971, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6971, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6971, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6971, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6971, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6971, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6971, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6971, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6971, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6971, -1]].
+NPC config [id=7006, name=null, config=1181, shift=17, childs=[-1, 7001, -1]].
+NPC config [id=7007, name=null, config=1181, shift=17, childs=[-1, 7001, -1]].
+NPC config [id=7009, name=null, config=1181, shift=9, childs=[-1, 7002, -1]].
+NPC config [id=7008, name=null, config=1181, shift=17, childs=[-1, 7001, -1]].
+NPC config [id=7032, name=Wimpy bird, config=1185, shift=0, childs=[7031, 7083, -1]].
+NPC config [id=7033, name=Wimpy bird, config=1185, shift=1, childs=[7031, 7083, -1]].
+NPC config [id=7034, name=Wimpy bird, config=1185, shift=2, childs=[7031, 7083, -1]].
+NPC config [id=7035, name=Wimpy bird, config=1185, shift=3, childs=[7031, 7083, -1]].
+NPC config [id=7036, name=Wimpy bird, config=1185, shift=4, childs=[7031, 7083, -1]].
+NPC config [id=7037, name=null, config=925, shift=31, childs=[-1, 1, -1]].
+NPC config [id=7038, name=null, config=925, shift=31, childs=[-1, 1, -1]].
+NPC config [id=6793, name=null, config=1165, shift=22, childs=[-1, 6782, -1]].
+NPC config [id=7478, name=Bandit, config=435, shift=11, childs=[6174, 6174, 6388, -1]].
+NPC config [id=7192, name=null, config=1204, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7168, -1]].
+NPC config [id=7193, name=null, config=1204, shift=18, childs=[-1, 7171, -1]].
+NPC config [id=7194, name=null, config=1204, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7171, -1]].
+NPC config [id=7195, name=null, config=1204, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7189, -1]].
+NPC config [id=7190, name=Ezekial Lovecraft, config=1204, shift=0, childs=[4856, -1, -1, -1, -1, 4856, -1, -1, -1, -1, 4856, -1, -1, -1, -1, 4856, -1, -1, -1, -1, 4856, -1, -1, -1, -1, 4856, -1, -1, -1, -1, 4856, -1, -1, -1, -1, 4856, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 4856, -1]].
+NPC config [id=7191, name=Kimberly, config=1204, shift=0, childs=[7168, -1, -1, -1, -1, 7168, -1, -1, -1, -1, 7168, -1, -1, -1, -1, 7168, -1, -1, -1, -1, 7168, -1, -1, -1, -1, 7168, -1, 7168, -1, -1, 7168, -1, -1, -1, -1, 7168, -1]].
+NPC config [id=7177, name=null, config=1204, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 701, 701, -1, -1, -1, 701, -1, -1, -1, -1, 701, 701, -1, -1, -1, 701, -1, -1, -1, -1, 701, -1, 701, -1, -1, 701, -1, -1, -1, -1, 701, -1]].
+NPC config [id=7176, name=null, config=1204, shift=19, childs=[-1, 701, -1]].
+NPC config [id=7179, name=null, config=1204, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 696, -1]].
+NPC config [id=7178, name=null, config=1204, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 701, -1, 701, -1, -1, 701, -1]].
+NPC config [id=7181, name=null, config=1204, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 696, -1]].
+NPC config [id=7180, name=null, config=1204, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 696, -1, 696, -1]].
+NPC config [id=7182, name=null, config=1204, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 696, 696, -1, -1, -1, 696, -1, -1, -1, -1, 696, 696, -1, -1, -1, 696, -1, -1, -1, -1, 696, -1, 696, -1, -1, 696, -1, -1, -1, -1, 696, -1]].
+NPC config [id=7744, name=null, config=180, shift=-1, childs=[-1, -1, -1, -1, -1, 7742, 7742, -1]].
+NPC config [id=7708, name=null, config=1218, shift=15, childs=[-1, 7664, 7665, -1]].
+NPC config [id=7709, name=null, config=1218, shift=15, childs=[-1, -1, -1, 7665, -1]].
+NPC config [id=7710, name=Flaygian Screwte, config=1218, shift=29, childs=[7672, -1]].
+NPC config [id=7689, name=null, config=1219, shift=4, childs=[-1, 7675, -1]].
+NPC config [id=7688, name=null, config=1219, shift=1, childs=[-1, 7674, -1]].
+NPC config [id=7734, name=Baby icefiend, config=1225, shift=13, childs=[7736, 7713, -1]].
+NPC config [id=7735, name=Baby icefiend, config=1225, shift=15, childs=[7736, 7713, -1]].
+NPC config [id=7732, name=Baby icefiend, config=1225, shift=9, childs=[7736, 7713, -1]].
+NPC config [id=7733, name=Baby icefiend, config=1225, shift=11, childs=[7736, 7713, -1]].
+NPC config [id=7730, name=Brother Bordiss, config=1225, shift=0, childs=[7724, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7724, -1, -1, -1, -1, 7724, -1, -1, -1, -1, 7724, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7724, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7724, -1, -1, -1, -1, 7724, -1, -1, -1, 7724, 7724, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7724, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7724, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7724, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7724, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7724, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7724, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7724, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7724, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7724, -1]].
+NPC config [id=7731, name=null, config=1225, shift=0, childs=[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7725, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7725, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7725, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7725, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7725, -1]].
+NPC config [id=7728, name=Lakki the delivery dwarf, config=1225, shift=8, childs=[7722, -1]].
+NPC config [id=7729, name=Drorkar, config=1225, shift=0, childs=[7723, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7723, -1, -1, -1, -1, 7723, -1, -1, -1, -1, 7723, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7723, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7723, -1, -1, -1, -1, 7723, -1, -1, -1, 7723, 7723, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7723, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7723, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7723, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7723, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7723, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7723, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7723, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7723, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7723, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7724, -1]].
+NPC config [id=7716, name=Icefiend, config=1225, shift=0, childs=[7714, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7714, -1, -1, -1, -1, 7714, -1, -1, -1, -1, 7714, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7714, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7714, -1, -1, -1, -1, 7714, -1, -1, -1, 7714, 7715, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7715, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7715, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7715, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7715, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7715, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7715, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7715, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7715, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7715, -1, -1, -1, -1, -1, -1, -1, -1, -1, 7714, -1]].

@@ -1,0 +1,38 @@
+void script_4675() {
+	int ivar0;
+	int ivar1;
+	ivar0 = multiply(bitconfig_9298, 10);
+	ivar1 = 0;
+	if (globalint_1530 < ivar0) {
+		globalint_1530 = add(globalint_1530, 1);
+		playSoundEffect2False(5251, 1, 0, 255);
+	}
+	script_4542(globalint_1530, 6684772, 6684777);
+	switch (bitconfig_9306) {
+		case 1:
+			ivar1 = multiply(bitconfig_9308, 10);
+			break;
+		case 2:
+			ivar1 = multiply(bitconfig_9309, 10);
+			break;
+		case 3:
+			ivar1 = multiply(bitconfig_9310, 10);
+			break;
+		case 4:
+			ivar1 = multiply(bitconfig_9311, 10);
+			break;
+		case 5:
+			ivar1 = multiply(bitconfig_9312, 10);
+			break;
+		case 6:
+			ivar1 = multiply(bitconfig_9313, 10);
+	}
+	if ((globalint_1530 >= ivar0) && (globalint_1531 >= ivar1)) {
+		script_4676(bitconfig_9306);
+	}
+	if (globalint_1531 < ivar1) {
+		globalint_1531 = add(globalint_1531, 1);
+	}
+	script_4542(globalint_1531, 6684782, 6684787);
+	return;
+}

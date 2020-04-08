@@ -1,0 +1,150 @@
+void script_3029(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	int stack_dump0;
+	previousAndCurrentName(0,2,0) structdump_1;
+	if (cs2method5428(arg3, -1)) {
+		setScriptCallOnGameloop(3028, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), "IIIIII", new WidgetPointer(arg4));
+		return;
+	}
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(arg4));
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	deleteAllExtraChilds(new WidgetPointer(arg1));
+	deleteAllExtraChilds(new WidgetPointer(arg2));
+	deleteAllExtraChilds(new WidgetPointer(arg3));
+	ivar6 = getFriendlistSize();
+	ivar7 = 0;
+	ivar8 = 0;
+	svar0 = "";
+	svar1 = "";
+	svar2 = "";
+	ivar9 = 0;
+	ivar10 = 0;
+	ivar11 = 15;
+	ivar12 = 0;
+	ivar13 = 5;
+	ivar14 = 0;
+	ivar15 = 0;
+	ivar16 = 0;
+	svar3 = "";
+	if (ivar6 == -2) {
+		setWidgetText(new WidgetPointer(909,38), "Name");
+		script_3038(arg3, "Loading Friends List." + "<br>" + "<br>" + "Please wait.");
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(909,31)), getWidgetActualHeight(new WidgetPointer(909,36)), 0, 0, new WidgetPointer(909,31));
+	} else if (ivar6 == -1) {
+		setWidgetText(new WidgetPointer(909,38), "Name");
+		script_3038(arg3, "Connecting to server." + "<br>" + "<br>" + "Please wait.");
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(909,31)), getWidgetActualHeight(new WidgetPointer(909,36)), 0, 0, new WidgetPointer(909,31));
+	} else if (ivar6 > 0) {
+		setWidgetText(new WidgetPointer(909,38), "Name (" + intToStr(ivar6) + "/200)");
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(909,31)), 4, 0, 1, new WidgetPointer(909,31));
+		while (ivar7 < ivar6) {
+			stack_dump0 = ivar7;
+			structdump_1 = getFriendName(stack_dump0);
+			svar1 = structdump_1.stringpart_1;
+			svar0 = structdump_1.stringpart_0;
+			ivar9 = getFriendWorld(ivar7);
+			script_2996(arg3, ivar7, getWidgetActualWidth(new WidgetPointer(arg3)), ivar11, 0, ivar8, 0, 1, 0);
+			if (((boolean)mod(ivar7, 2))) {
+				setWidgetRGB(new Color(32, 25, 17));
+			} else {
+				setWidgetRGB(new Color(41, 32, 22));
+			}
+			setScriptCallOnMouseEntered(3030, new WidgetPointer(arg3), ivar7, "Ii");
+			setScriptCallOnMouseExit(3035, "");
+			if (strLength(svar1) > 0) {
+				ivar16 = add(getTextWidth(494, "Last known as: " + svar1), 8);
+				if (ivar16 > getWidgetActualWidth(new WidgetPointer(909,19))) {
+					svar3 = "Last known as:" + "<br>" + svar1;
+				} else {
+					svar3 = "Last known as: " + svar1;
+				}
+				setScriptCallOnMouseOver(2467, new WidgetPointer(-32768,3), -2147483643, svar3, -2147483647, -2147483646, new WidgetPointer(909,41), new WidgetPointer(909,32), new WidgetPointer(909,35), 494, "IisiiIIIf");
+			}
+			cs2method1305(svar0);
+			if (ivar9 > 0) {
+				setWidgetContextMenuOption(1, "Message");
+				setWidgetContextMenuOption(2, "Join");
+			} else {
+				setWidgetContextMenuOption(3, "Message");
+				setWidgetContextMenuOption(4, "Join");
+			}
+			setWidgetContextMenuOption(10, "Delete");
+			setScriptCallOnClickContextMenu(3039, -2147483644, ivar9, svar0, ivar7, "iisi");
+			script_2994(arg1, ivar7, 14, 14, 5, add(ivar8, 1), -1, 0, 0, 0, 0);
+			if (stringMethod4107(svar1, "") != 0) {
+				setWidgetSprite(2313);
+				ivar13 = 20;
+			} else {
+				setWidgetSprite(-1);
+				ivar13 = 5;
+			}
+			svar2 = svar0;
+			script_2995(arg0, ivar7, 0, ivar11, ivar13, ivar8, 16777215, 494, 0, 1, 0, 1, svar2);
+			setWidgetSize(ivar13, ivar11, 1, 0);
+			cs2method1126(1);
+			if (((boolean)ivar9)) {
+				svar2 = "Offline";
+				ivar14 = 16711680;
+			} else if (ivar9 == getWorldId()) {
+				ivar14 = 65280;
+			} else {
+				ivar14 = 16776960;
+			}
+			svar2 = cs2method3610(ivar7);
+			script_2995(arg2, ivar7, 0, ivar11, 5, ivar8, ivar14, 494, 0, 1, 0, 1, svar2);
+			setWidgetSize(5, ivar11, 1, 0);
+			cs2method1126(1);
+			ivar8 = add(ivar8, ivar11);
+			ivar7 = add(ivar7, 1);
+		}
+		ivar10 = add(divide(getWidgetActualHeight(new WidgetPointer(arg4)), ivar11), 1);
+		if (ivar10 > ivar6) {
+			while (ivar7 < ivar10) {
+				script_2996(arg3, ivar7, getWidgetActualWidth(new WidgetPointer(arg3)), ivar11, 0, ivar8, 0, 1, 0);
+				if (((boolean)mod(ivar7, 2))) {
+					setWidgetRGB(new Color(32, 25, 17));
+				} else {
+					setWidgetRGB(new Color(41, 32, 22));
+				}
+				ivar8 = add(ivar8, ivar11);
+				ivar7 = add(ivar7, 1);
+			}
+			ivar12 = getWidgetActualHeight(new WidgetPointer(arg4));
+		} else {
+			ivar12 = ivar8;
+		}
+		if (ivar10 <= ivar6) {
+			ivar15 = cs2method2601(new WidgetPointer(909,41));
+			setWidgetScrollMax(0, ivar12, new WidgetPointer(909,41));
+			if (ivar15 > ivar12) {
+				ivar15 = ivar12;
+			}
+			script_72(59572271, 59572265, ivar15);
+		} else {
+			setWidgetScrollMax(0, 0, new WidgetPointer(909,41));
+			cs2method2100(0, 0, new WidgetPointer(909,41));
+			script_72(59572271, 59572265, 0);
+		}
+	} else {
+		if (((boolean)ivar6)) {
+			setWidgetText(new WidgetPointer(909,38), "Name");
+			script_3038(arg3, "You have not added any friends to your list.");
+			setWidgetSize(getWidgetActualWidth(new WidgetPointer(909,31)), getWidgetActualHeight(new WidgetPointer(909,36)), 0, 0, new WidgetPointer(909,31));
+		}
+	}
+	return;
+}

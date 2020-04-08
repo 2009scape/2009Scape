@@ -1,0 +1,7 @@
+void script_1510() {
+	if (bitconfig_6091 != globalint_778) {
+		globalint_778 = bitconfig_6091;
+		script_1513();
+	}
+	return;
+}

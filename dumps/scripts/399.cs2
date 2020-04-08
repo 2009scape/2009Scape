@@ -1,0 +1,11 @@
+void script_399(int arg0) {
+	if ((getWidgetActualX(new WidgetPointer(arg0)) < subtract(getWidgetActualWidth(new WidgetPointer(306,1)), 1)) || (subtract(getWidgetActualY(new WidgetPointer(arg0)), getWidgetActualHeight(new WidgetPointer(arg0))) > 110)) {
+		if (getWidgetActualX(new WidgetPointer(arg0)) == add(140, getWidgetActualWidth(new WidgetPointer(arg0)))) {
+			setScriptCallOnGameloop(1550, new WidgetPointer(306,7), "I", new WidgetPointer(306,20));
+		}
+		setWidgetPosition(add(1, getWidgetActualX(new WidgetPointer(arg0))), getWidgetActualY(new WidgetPointer(arg0)), 0, 0, new WidgetPointer(arg0));
+	} else {
+		script_1411();
+	}
+	return;
+}

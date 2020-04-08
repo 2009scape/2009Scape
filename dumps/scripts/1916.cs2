@@ -1,0 +1,23 @@
+void script_1916(int arg0) {
+	if ((arg0 == 53280867) && (globalint_583 > 0)) {
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(arg0));
+		return;
+	}
+	if ((arg0 == 53280869) && (globalint_584 > 0)) {
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(arg0));
+		return;
+	}
+	if ((arg0 == 53280871) && (globalint_585 > 0)) {
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(arg0));
+		return;
+	}
+	if ((arg0 == 53280873) && (globalint_586 > 0)) {
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(arg0));
+		return;
+	}
+	if ((arg0 == 53280875) && (globalint_587 > 0)) {
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(arg0));
+		return;
+	}
+	return;
+}

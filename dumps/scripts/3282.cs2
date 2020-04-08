@@ -1,0 +1,4 @@
+void script_3282(int arg0,int arg1,int arg2,string arg3) {
+	script_3364(arg0, arg1, arg2, 25, getWidgetActualWidth(new WidgetPointer(getWidgetParentId(new WidgetPointer(arg2)))), 11, 11, arg3);
+	return;
+}

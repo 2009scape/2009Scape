@@ -1,0 +1,8 @@
+void script_406(int arg0) {
+	if (getWidgetShadeColor(new WidgetPointer(arg0)) > 0) {
+		cs2method2103(max(subtract(getWidgetShadeColor(new WidgetPointer(arg0)), 1), 0), new WidgetPointer(arg0));
+	} else {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+	}
+	return;
+}

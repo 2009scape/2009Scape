@@ -1,0 +1,37 @@
+void script_110(string arg0) {
+	if (getDisplayMode() >= 2) {
+		setWidgetIsHidden(false, new WidgetPointer(746,73));
+	}
+	setWidgetIsHidden(false, new WidgetPointer(752,3));
+	setWidgetIsHidden(true, new WidgetPointer(752,7));
+	setWidgetIsHidden(true, new WidgetPointer(752,8));
+	setWidgetText(new WidgetPointer(752,4), arg0);
+	globalint_5 = 9;
+	if (((boolean)stringMethod4107("null", globalstring_350))) {
+		globalstring_350 = "";
+	}
+	if (stringMethod4107("", globalstring_350) != 0) {
+		script_1564(globalstring_350);
+		globalstring_350 = "";
+	} else {
+		script_1564("");
+	}
+	if (((boolean)stringMethod4107("null", globalstring_354))) {
+		globalstring_354 = "";
+	}
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(752,3));
+	script_2026();
+	setScriptCallOnKeyPress(112, -2147483640, false, "iz", new WidgetPointer(752,5));
+	setScriptCallOnWindowPaneRefresh(138, "", new WidgetPointer(752,5));
+	if (stringMethod4107(globalstring_354, "") != 0) {
+		createExtraChild(new WidgetPointer(752,3), 4, 0);
+		script_2752();
+		setWidgetText("Last entered: " + globalstring_354);
+		setWidgetContextMenuOption(1, "Use:");
+		cs2method1305("<col=ff9040>" + strRemoveEntities(globalstring_354) + "</col>");
+		setScriptCallOnClickContextMenu(2753, globalint_5, -2147483644, new WidgetPointer(-32768,3), -2147483643, globalstring_354, "iiIis");
+		globalstring_354 = "";
+	}
+	script_1188();
+	return;
+}

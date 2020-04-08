@@ -1,0 +1,10 @@
+void script_217() {
+	setWidgetText(new WidgetPointer(594,106), "Reporting: " + globalstring_24);
+	setWidgetText(new WidgetPointer(594,71), globalstring_24);
+	if (stringMethod4107(globalstring_24, "") != 0) {
+		setWidgetIsHidden(true, new WidgetPointer(594,81));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(594,81));
+	}
+	return;
+}

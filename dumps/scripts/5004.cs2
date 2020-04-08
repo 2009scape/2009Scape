@@ -1,0 +1,14 @@
+void script_5004() {
+	int ivar0;
+	int ivar1;
+	ivar0 = 0;
+	ivar1 = 0;
+	if (citadelConfigsInitialized()) {
+		ivar0 = script_4948(bitconfig_9550);
+		ivar1 = script_4978(ivar0);
+		if ((ivar1 == ivar0) || (ivar1 <= 0)) {
+			script_4899(3);
+		}
+	}
+	return;
+}

@@ -1,0 +1,18 @@
+void script_1783(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	if (arg2 == -1) {
+		if (setWidgetRegister(new WidgetPointer(arg1), 1)) {
+			script_157(arg1, arg0, 0, 1);
+		}
+		return;
+	}
+	ivar4 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg2), arg3) || ((arg3 == -1) && setWidgetRegister(new WidgetPointer(arg2)))) {
+		ivar4 = add(getWidgetActualY(), divide(getWidgetActualHeight(), 2));
+		ivar4 = subtract(ivar4, divide(getWidgetActualHeight(new WidgetPointer(arg0)), 2));
+		if (setWidgetRegister(new WidgetPointer(arg1), 1)) {
+			script_157(arg1, arg0, ivar4, 1);
+		}
+	}
+	return;
+}

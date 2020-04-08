@@ -1,0 +1,8 @@
+void script_2119(int arg0,int arg1) {
+	if ((getWidgetScrollMaxV(new WidgetPointer(arg0)) > 0) && (cs2method2601(new WidgetPointer(arg0)) < 35)) {
+		setWidgetIsHidden(false, new WidgetPointer(arg1));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(arg1));
+	}
+	return;
+}

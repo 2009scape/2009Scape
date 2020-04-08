@@ -1,0 +1,7 @@
+void script_4502(int arg0,int arg1,int arg2) {
+	if (setWidgetRegister(new WidgetPointer(arg1), arg2) && (strLength(getWidgetText()) > 0)) {
+		setWidgetIsHidden(false, new WidgetPointer(arg0));
+		setWidgetPosition(0, getWidgetActualY(), 0, 0, new WidgetPointer(arg0));
+	}
+	return;
+}

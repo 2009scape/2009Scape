@@ -1,0 +1,9 @@
+int script_1611() {
+	int ivar0;
+	ivar0 = 0;
+	ivar0 = add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(bitconfig_4003, bitconfig_4007), bitconfig_4008), bitconfig_4009), bitconfig_4010), bitconfig_4011), bitconfig_4013), bitconfig_4014), bitconfig_4015), bitconfig_4016), bitconfig_4017), bitconfig_4018), bitconfig_4019), bitconfig_4020), bitconfig_4021), bitconfig_4022), bitconfig_4023), bitconfig_4024), bitconfig_4025), bitconfig_4026);
+	if (bitconfig_4012 == 4) {
+		ivar0 = add(ivar0, 1);
+	}
+	return ivar0;
+}

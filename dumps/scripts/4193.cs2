@@ -1,0 +1,68 @@
+void script_4193(int arg0) {
+	if (arg0 == 70385736) {
+		if (((boolean)bitconfig_8911)) {
+			setWidgetSprite(4701, new WidgetPointer(1074,34));
+		}
+	} else if (arg0 == 70385765) {
+		if (((boolean)bitconfig_8912)) {
+			setWidgetSprite(4701, new WidgetPointer(1074,35));
+		}
+	} else if (arg0 == 70385766) {
+		if (((boolean)bitconfig_8913)) {
+			setWidgetSprite(4701, new WidgetPointer(1074,36));
+		}
+	} else if (arg0 == 70385767) {
+		if (((boolean)bitconfig_8914)) {
+			setWidgetSprite(4701, new WidgetPointer(1074,37));
+		}
+	} else if (arg0 == 70385768) {
+		if (((boolean)bitconfig_8915)) {
+			setWidgetSprite(4701, new WidgetPointer(1074,38));
+		}
+	} else if (arg0 == 70385769) {
+		if (((boolean)bitconfig_8916)) {
+			setWidgetSprite(4701, new WidgetPointer(1074,39));
+		}
+	} else if (arg0 == 70385770) {
+		if (((boolean)bitconfig_8917)) {
+			setWidgetSprite(4701, new WidgetPointer(1074,40));
+		}
+	} else if (arg0 == 70385771) {
+		if (((boolean)bitconfig_8918)) {
+			setWidgetSprite(4701, new WidgetPointer(1074,41));
+		}
+	} else if (arg0 == 70385772) {
+		if (((boolean)bitconfig_8919)) {
+			setWidgetSprite(4701, new WidgetPointer(1074,42));
+		}
+	} else if (arg0 == 70385773) {
+		if (((boolean)bitconfig_8920)) {
+			setWidgetSprite(4701, new WidgetPointer(1074,43));
+		}
+	} else if (arg0 == 70385774) {
+		if (((boolean)bitconfig_8921)) {
+			setWidgetSprite(4701, new WidgetPointer(1074,44));
+		}
+	} else if (arg0 == 70385775) {
+		if (((boolean)bitconfig_8922)) {
+			setWidgetSprite(4701, new WidgetPointer(1074,45));
+		}
+	} else if (arg0 == 70385776) {
+		if (((boolean)bitconfig_8923)) {
+			setWidgetSprite(4701, new WidgetPointer(1074,46));
+		}
+	} else if (arg0 == 70385777) {
+		if (((boolean)bitconfig_8924)) {
+			setWidgetSprite(4701, new WidgetPointer(1074,47));
+		}
+	} else if (arg0 == 70385778) {
+		if (((boolean)bitconfig_8925)) {
+			setWidgetSprite(4701, new WidgetPointer(1074,48));
+		}
+	} else {
+		if ((arg0 == 70385779) && ((boolean)bitconfig_8926)) {
+			setWidgetSprite(4701, new WidgetPointer(1074,49));
+		}
+	}
+	return;
+}

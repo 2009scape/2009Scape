@@ -1,0 +1,15 @@
+void script_716(int arg0) {
+	if (arg0 == 50724876) {
+		setWidgetModel(41312, new WidgetPointer(774,11));
+		playSoundEffect(5111, 1, 0);
+	} else if (arg0 == 50724877) {
+		setWidgetModel(41303, new WidgetPointer(774,11));
+		playSoundEffect(5112, 1, 0);
+	} else {
+		if (arg0 == 50724878) {
+			setWidgetModel(41305, new WidgetPointer(774,11));
+			playSoundEffect(5110, 1, 0);
+		}
+	}
+	return;
+}

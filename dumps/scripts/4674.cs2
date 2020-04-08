@@ -1,0 +1,104 @@
+void script_4674() {
+	int ivar0;
+	ivar0 = bitconfig_9306;
+	if (((globalint_1526 >= 20) && (globalint_1527 >= 30)) && ((globalint_1528 >= 40) && (globalint_1529 >= 50))) {
+		return;
+	}
+	if (globalint_1526 < 20) {
+		globalint_1526 = add(globalint_1526, 1);
+	}
+	if (globalint_1527 < 30) {
+		globalint_1527 = add(globalint_1527, 1);
+	}
+	if (globalint_1528 < 40) {
+		globalint_1528 = add(globalint_1528, 1);
+	}
+	if (globalint_1529 < 50) {
+		globalint_1529 = add(globalint_1529, 1);
+	}
+	switch (ivar0) {
+		case 1:
+			if (globalint_1526 >= 20) {
+				if (((boolean)bitconfig_9320)) {
+					setWidgetSprite(5917, new WidgetPointer(102,150));
+				} else {
+					setWidgetSprite(5921, new WidgetPointer(102,150));
+				}
+			}
+			if (globalint_1527 >= 30) {
+				if (((boolean)bitconfig_9321)) {
+					setWidgetSprite(5917, new WidgetPointer(102,151));
+				} else {
+					setWidgetSprite(5921, new WidgetPointer(102,151));
+				}
+			}
+			if (globalint_1528 >= 40) {
+				if (((boolean)bitconfig_9322)) {
+					setWidgetSprite(5917, new WidgetPointer(102,152));
+				} else {
+					setWidgetSprite(5921, new WidgetPointer(102,152));
+				}
+			}
+			if (globalint_1529 >= 50) {
+				if (((boolean)bitconfig_9323)) {
+					setWidgetSprite(5917, new WidgetPointer(102,153));
+				} else {
+					setWidgetSprite(5921, new WidgetPointer(102,153));
+				}
+			}
+			break;
+		case 4:
+			if (globalint_1526 >= 20) {
+				if (((boolean)bitconfig_9324)) {
+					setWidgetSprite(5917, new WidgetPointer(102,150));
+				} else {
+					setWidgetSprite(5921, new WidgetPointer(102,150));
+				}
+			}
+			if (globalint_1527 >= 30) {
+				if (((boolean)bitconfig_9325)) {
+					setWidgetSprite(5917, new WidgetPointer(102,151));
+				} else {
+					setWidgetSprite(5921, new WidgetPointer(102,151));
+				}
+			}
+			if (globalint_1528 >= 40) {
+				if (((boolean)bitconfig_9326)) {
+					setWidgetSprite(5917, new WidgetPointer(102,152));
+				} else {
+					setWidgetSprite(5921, new WidgetPointer(102,152));
+				}
+			}
+			if (globalint_1529 >= 50) {
+				if (((boolean)bitconfig_9327)) {
+					setWidgetSprite(5917, new WidgetPointer(102,153));
+				} else {
+					setWidgetSprite(5921, new WidgetPointer(102,153));
+				}
+			}
+			break;
+		case 2:
+			if (globalint_1526 >= 20) {
+				if (((boolean)bitconfig_9331)) {
+					setWidgetSprite(5917, new WidgetPointer(102,64));
+				} else {
+					setWidgetSprite(5921, new WidgetPointer(102,64));
+				}
+			}
+			if (globalint_1527 >= 30) {
+				if (((boolean)bitconfig_9333)) {
+					setWidgetSprite(5917, new WidgetPointer(102,148));
+				} else {
+					setWidgetSprite(5921, new WidgetPointer(102,148));
+				}
+			}
+			if (globalint_1528 >= 40) {
+				if (((boolean)bitconfig_9332)) {
+					setWidgetSprite(5917, new WidgetPointer(102,149));
+				} else {
+					setWidgetSprite(5921, new WidgetPointer(102,149));
+				}
+			}
+	}
+	return;
+}

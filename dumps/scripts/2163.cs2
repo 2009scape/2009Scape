@@ -1,0 +1,44 @@
+void script_2163(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	string svar0;
+	string svar1;
+	ivar4 = divide(add(arg2, arg3), 2);
+	ivar5 = globalarray_0[ivar4];
+	globalarray_0[ivar4] = globalarray_0[arg3];
+	globalarray_0[arg3] = ivar5;
+	ivar6 = arg2;
+	ivar7 = arg2;
+	ivar8 = -1;
+	svar0 = "null";
+	svar1 = "null";
+	svar1 = lower(getOtherCommonData(cs2method_3408(105, 74, arg1, ivar5), 846));
+	if (((boolean)stringMethod4107(svar1, ""))) {
+		svar1 = lower(getOtherCommonData(cs2method_3408(105, 74, arg1, ivar5), 845));
+	}
+	while (ivar7 < arg3) {
+		svar0 = lower(getOtherCommonData(cs2method_3408(105, 74, arg1, globalarray_0[ivar7]), 846));
+		if (((boolean)stringMethod4107(svar0, ""))) {
+			svar0 = lower(getOtherCommonData(cs2method_3408(105, 74, arg1, globalarray_0[ivar7]), 845));
+		}
+		if (stringMethod4107(svar0, svar1) < bitAnd(ivar7, 1)) {
+			ivar8 = globalarray_0[ivar7];
+			globalarray_0[ivar7] = globalarray_0[ivar6];
+			globalarray_0[ivar6] = ivar8;
+			ivar6 = add(ivar6, 1);
+		}
+		ivar7 = add(ivar7, 1);
+	}
+	globalarray_0[arg3] = globalarray_0[ivar6];
+	globalarray_0[ivar6] = ivar5;
+	if (arg2 < subtract(ivar6, 1)) {
+		script_2163(0, arg1, arg2, subtract(ivar6, 1));
+	}
+	if (add(ivar6, 1) < arg3) {
+		script_2163(0, arg1, add(ivar6, 1), arg3);
+	}
+	return;
+}

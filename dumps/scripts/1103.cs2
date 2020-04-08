@@ -1,0 +1,12 @@
+int script_1103() {
+	if (((boolean)globalint_754)) {
+		return 0;
+	}
+	if (globalint_754 == 9) {
+		return 0;
+	}
+	if (globalint_754 == 12) {
+		return 0;
+	}
+	return 1;
+}

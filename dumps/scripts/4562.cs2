@@ -1,0 +1,22 @@
+void script_4562(int arg0,int arg1,int arg2,int arg3,int arg4,string arg5) {
+	int ivar5;
+	int ivar6;
+	ivar5 = 0;
+	ivar6 = 0;
+	if ((getClientCycle() > arg2) && setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		setWidgetIsHidden(false, new WidgetPointer(589,34));
+		setWidgetText(new WidgetPointer(589,38), arg5);
+		setWidgetSize(add(multiply(getWidgetActualX(new WidgetPointer(589,38)), 2), getTextWidth(495, arg5)), getWidgetActualHeight(new WidgetPointer(589,34)), 0, 0, new WidgetPointer(589,34));
+		ivar5 = subtract(add(add(getWidgetActualX(), arg3), 3), cs2method2600(new WidgetPointer(arg0)));
+		ivar6 = subtract(subtract(subtract(add(add(add(getWidgetActualY(), arg4), getWidgetActualY(new WidgetPointer(589,43))), getWidgetActualY(new WidgetPointer(589,51))), 3), getWidgetActualHeight(new WidgetPointer(589,34))), cs2method2601(new WidgetPointer(589,51)));
+		if (add(ivar5, getWidgetActualWidth(new WidgetPointer(589,34))) > getWidgetActualWidth(new WidgetPointer(589,32))) {
+			ivar5 = subtract(getWidgetActualWidth(new WidgetPointer(589,32)), getWidgetActualWidth(new WidgetPointer(589,34)));
+		}
+		if (ivar6 < 0) {
+			ivar6 = 0;
+		}
+		setWidgetPosition(ivar5, ivar6, 0, 0, new WidgetPointer(589,34));
+		setScriptCallOnMouseOver(-1, "");
+	}
+	return;
+}

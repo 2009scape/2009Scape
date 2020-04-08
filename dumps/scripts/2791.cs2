@@ -1,0 +1,104 @@
+cs2func_script_2791_struct(4,1,0) script_2791(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	string svar0;
+	ivar1 = getOtherCommonData(cs2method_3408(105, 74, 869, arg0), 938);
+	svar0 = getOtherCommonData(cs2method_3408(105, 74, 869, arg0), 935);
+	ivar2 = getOtherCommonData(cs2method_3408(105, 74, 869, arg0), 939);
+	ivar3 = getOtherCommonData(cs2method_3408(105, 74, 869, arg0), 937);
+	ivar4 = 1;
+	ivar5 = 0;
+	if (((boolean)getOtherCommonData(cs2method_3408(105, 74, 869, arg0), 940))) {
+		switch (arg0) {
+			case 0:
+				if (getSkillActualLvl(7) < 40) {
+					ivar1 = getOtherCommonData(cs2method_3408(105, 74, 869, arg0), 936);
+					ivar4 = 0;
+				}
+				break;
+			case 1:
+				if (bitconfig_1527 < 160) {
+					ivar1 = getOtherCommonData(cs2method_3408(105, 74, 869, arg0), 936);
+					ivar4 = 0;
+				}
+				break;
+			case 2:
+				if (standart_config_359 < 100) {
+					ivar1 = getOtherCommonData(cs2method_3408(105, 74, 869, arg0), 936);
+					ivar4 = 0;
+				}
+				break;
+			case 3:
+				if (bitconfig_5491 > 370) {
+					ivar5 = 1;
+				}
+				break;
+			case 5:
+				if (bitconfig_418 < 26) {
+					ivar1 = getOtherCommonData(cs2method_3408(105, 74, 869, arg0), 936);
+					ivar4 = 0;
+				}
+				break;
+			case 6:
+				if (((boolean)bitconfig_5525)) {
+					ivar5 = 1;
+				}
+				break;
+			case 7:
+				if (bitconfig_5491 > 370) {
+					ivar5 = 1;
+				}
+				break;
+			case 9:
+				if (getSkillActualLvl(10) < 15) {
+					ivar1 = getOtherCommonData(cs2method_3408(105, 74, 869, arg0), 936);
+					ivar4 = 0;
+				}
+				break;
+			case 11:
+				if ((bitconfig_3618 < 16) || ((boolean)bitconfig_5550)) {
+					ivar1 = getOtherCommonData(cs2method_3408(105, 74, 869, arg0), 936);
+					ivar4 = 0;
+				}
+				break;
+			case 12:
+				if (bitconfig_3293 < 135) {
+					ivar1 = getOtherCommonData(cs2method_3408(105, 74, 869, arg0), 936);
+					ivar4 = 0;
+				} else {
+					if (bitconfig_6180 == 140) {
+						ivar5 = 1;
+					}
+				}
+				break;
+			case 17:
+				if (bitconfig_3618 < 28) {
+					ivar1 = getOtherCommonData(cs2method_3408(105, 74, 869, arg0), 936);
+					ivar4 = 0;
+				}
+				break;
+			case 14:
+				if (standart_config_492 < 4) {
+					ivar1 = getOtherCommonData(cs2method_3408(105, 74, 869, arg0), 936);
+					ivar4 = 0;
+				}
+				break;
+			case 16:
+				if (bitconfig_9067 < 8) {
+					ivar1 = getOtherCommonData(cs2method_3408(105, 74, 869, arg0), 936);
+					ivar4 = 0;
+				}
+		}
+		if (((boolean)ivar5)) {
+			ivar1 = getOtherCommonData(cs2method_3408(105, 74, 869, arg0), 942);
+			ivar4 = 1;
+			svar0 = getOtherCommonData(cs2method_3408(105, 74, 869, arg0), 941);
+			ivar3 = getOtherCommonData(cs2method_3408(105, 74, 869, arg0), 943);
+			ivar2 = getOtherCommonData(cs2method_3408(105, 74, 869, arg0), 944);
+		}
+	}
+	return newstruct cs2func_script_2791_struct(ivar1, ivar4, ivar3, ivar2, svar0);
+}

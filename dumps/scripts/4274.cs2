@@ -1,0 +1,24 @@
+void script_4274() {
+	setWidgetText(new WidgetPointer(1083,137), script_46(multiply(cs2method_3408(105, 105, 3674, 0), 10), ","));
+	setWidgetText(new WidgetPointer(1083,133), script_46(multiply(cs2method_3408(105, 105, 3674, 1), 10), ","));
+	setWidgetText(new WidgetPointer(1083,129), script_46(multiply(cs2method_3408(105, 105, 3674, 2), 10), ","));
+	setWidgetText(new WidgetPointer(1083,125), script_46(multiply(cs2method_3408(105, 105, 3674, 3), 10), ","));
+	setWidgetText(new WidgetPointer(1083,121), script_46(multiply(cs2method_3408(105, 105, 3674, 4), 10), ","));
+	setWidgetText(new WidgetPointer(1083,117), script_46(multiply(cs2method_3408(105, 105, 3674, 5), 10), ","));
+	setWidgetText(new WidgetPointer(1083,113), script_46(multiply(cs2method_3408(105, 105, 3674, 6), 10), ","));
+	setWidgetText(new WidgetPointer(1083,109), script_46(multiply(cs2method_3408(105, 105, 3674, 7), 10), ","));
+	setWidgetText(new WidgetPointer(1083,223), script_46(multiply(550, 10), ","));
+	setWidgetText(new WidgetPointer(1083,219), script_46(multiply(1800, 10), ","));
+	setWidgetText(new WidgetPointer(1083,215), script_46(multiply(1800, 10), ","));
+	setWidgetText(new WidgetPointer(1083,227), script_46(multiply(550, 10), ","));
+	setWidgetText(new WidgetPointer(1083,235), script_46(multiply(1800, 10), ","));
+	setWidgetText(new WidgetPointer(1083,231), script_46(multiply(1800, 10), ","));
+	setWidgetText(new WidgetPointer(1083,435), script_46(multiply(cs2method_3408(105, 105, 3674, 8), 10), ","));
+	setWidgetText(new WidgetPointer(1083,446), script_46(multiply(cs2method_3408(105, 105, 3674, 9), 10), ","));
+	setWidgetText(new WidgetPointer(1083,457), script_46(multiply(cs2method_3408(105, 105, 3674, 10), 10), ","));
+	setWidgetText(new WidgetPointer(1083,497), script_46(multiply(5500, 10), ","));
+	setWidgetText(new WidgetPointer(1083,506), script_46(multiply(1800, 10), ","));
+	setWidgetText(new WidgetPointer(1083,516), script_46(multiply(1800, 10), ","));
+	setWidgetText(new WidgetPointer(1083,556), script_46(multiply(3700, 10), ","));
+	return;
+}

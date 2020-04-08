@@ -1,0 +1,39 @@
+void script_3102() {
+	script_3104(59637767);
+	script_3105(59637765);
+	script_3107(59637770);
+	script_3107(59637771);
+	script_3108(59637814);
+	script_3108(59637791);
+	script_3108(59637811);
+	script_3108(59637808);
+	script_3108(59637804);
+	if (getLanguage() != 0) {
+		setWidgetText(new WidgetPointer(910,51), "Language");
+	}
+	script_3109(59637786);
+	script_3109(59637779);
+	script_3111(59637796);
+	script_3111(59637784);
+	script_3110(59637816);
+	script_3110(59637817);
+	script_3110(59637818);
+	script_3110(59637819);
+	script_3110(59637821);
+	script_3155(59637813);
+	script_3155(59637810);
+	setWidgetIsHidden(false, new WidgetPointer(910,75));
+	setWidgetIsHidden(false, new WidgetPointer(910,34));
+	setWidgetIsHidden(false, new WidgetPointer(910,60));
+	setWidgetIsHidden(false, new WidgetPointer(910,84));
+	setWidgetIsHidden(false, new WidgetPointer(910,42));
+	setWidgetPosition(110, 0, 2, 0, new WidgetPointer(910,33));
+	setWidgetPosition(94, 0, 2, 0, new WidgetPointer(910,74));
+	setWidgetPosition(173, 0, 2, 0, new WidgetPointer(910,59));
+	setWidgetPosition(157, 0, 2, 0, new WidgetPointer(910,83));
+	setWidgetPosition(173, 0, 2, 0, new WidgetPointer(910,41));
+	setWidgetSize(330, 2, 1, 1, new WidgetPointer(910,32));
+	setWidgetSize(313, 0, 1, 1, new WidgetPointer(910,72));
+	script_3110(59637820);
+	return;
+}

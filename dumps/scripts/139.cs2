@@ -1,0 +1,5 @@
+void script_139(int arg0) {
+	setScriptCallOnAnyWidgetOpenAndClose(140, "", new WidgetPointer(arg0));
+	script_1364();
+	return;
+}

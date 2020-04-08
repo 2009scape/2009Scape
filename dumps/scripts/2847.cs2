@@ -1,0 +1,36 @@
+void script_2847(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar1 = 308;
+	ivar2 = 55;
+	ivar3 = 0;
+	ivar4 = getCommonDefinitionSize(903);
+	globalarray_0 = new int[ivar4];
+	globalarray_0[0] = 5;
+	globalarray_0[1] = 8;
+	globalarray_0[2] = 2;
+	globalarray_0[3] = 0;
+	globalarray_0[4] = 4;
+	globalarray_0[5] = 1;
+	globalarray_0[6] = 3;
+	globalarray_0[7] = 7;
+	globalarray_0[8] = 6;
+	while (ivar3 < ivar4) {
+		if (setWidgetRegister(new WidgetPointer(arg0), globalarray_0[ivar3])) {
+			setWidgetPosition(ivar1, ivar2, 0, 0);
+		}
+		ivar3 = add(ivar3, 1);
+		if (ivar3 == 3) {
+			ivar1 = add(308, 48);
+			ivar2 = 55;
+		} else if (ivar3 == 6) {
+			ivar1 = add(308, 96);
+			ivar2 = 55;
+		} else {
+			ivar2 = add(48, ivar2);
+		}
+	}
+	return;
+}

@@ -1,0 +1,6 @@
+void script_2716(int arg0,int arg1) {
+	script_2723(arg0, arg1, standart_config_118, standart_config_1496);
+	setScriptCallOnItemContainerUpdate(2722, new WidgetPointer(arg0), new WidgetPointer(arg1), standart_config_118, standart_config_1496, standart_config_118, 1, "IIvvY", new WidgetPointer(arg0));
+	setScriptCallOnGlobalConfigChange(2722, new WidgetPointer(arg0), new WidgetPointer(arg1), standart_config_118, standart_config_1496, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 40, "IIvvY", new WidgetPointer(arg0));
+	return;
+}

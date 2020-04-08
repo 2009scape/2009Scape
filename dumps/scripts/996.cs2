@@ -1,0 +1,624 @@
+cs2func_script_996_struct(2,2,0) script_996(int arg0,int arg1) {
+	switch (arg0) {
+		flow_1:
+			case 3:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_996_struct(4, 9236, "Members: Opal-tipped bronze crossbow bolt", "Members can now enchant " + "<col=000080>" + "opal-tipped bronze crossbow bolts" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_996_struct(7, 1607, "Sapphire items", "You can now enchant " + "<col=000080>" + "sapphire items" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_996_struct(7, 9240, "Members: Sapphire-tipped mithril crossbow bolt", "Members can now enchant " + "<col=000080>" + "sapphire-tipped crossbow bolts" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_996_struct(14, 9237, "Members: Jade-tipped blurite crossbow bolt", "Members can now enchant " + "<col=000080>" + "jade-tipped blurite crossbow bolts" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_996_struct(24, 9238, "Members: Pearl-tipped iron crossbow bolt", "Members can now enchant " + "<col=000080>" + "pearl-tipped iron crossbow bolts" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_996_struct(27, 1605, "Emerald items", "You can now enchant " + "<col=000080>" + "emerald items" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_996_struct(27, 9241, "Members: Emerald-tipped mithril crossbow bolt", "Members can now enchant " + "<col=000080>" + "emerald-tipped mithril crossbow bolts" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_996_struct(29, 9239, "Members: Red topaz-tipped steel crossbow bolt", "Members can now enchant " + "<col=000080>" + "red topaz-tipped steel crossbow bolts" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_996_struct(49, 1603, "Ruby items", "You can now enchant " + "<col=000080>" + "ruby items" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_996_struct(49, 9242, "Members: Ruby-tipped adamant crossbow bolt", "Members can now " + "<col=000080>" + "enchant ruby-tipped adamant crossbow bolts" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_996_struct(56, 571, "Members: Charge water orbs", "Members can now charge " + "<col=000080>" + "water orbs" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_996_struct(57, 1601, "Diamond items", "You can now enchant " + "<col=000080>" + "diamond items" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_996_struct(57, 9243, "Members: Diamond-tipped adamant crossbow bolt", "Members can now enchant " + "<col=000080>" + "diamond-tipped adamant crossbow bolts" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_996_struct(60, 575, "Members: Charge earth orbs", "Members can now charge " + "<col=000080>" + "earth orbs" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_996_struct(63, 569, "Members: Charge fire orbs", "Members can now charge " + "<col=000080>" + "fire orbs" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_996_struct(66, 573, "Members: Charge air orbs", "Members can now charge " + "<col=000080>" + "air orbs" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_996_struct(68, 1615, "Members: Dragonstone items", "Members can now enchant " + "<col=000080>" + "dragonstone items" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_996_struct(68, 9244, "Members: Dragonstone-tipped rune crossbow bolt", "Members can now enchant " + "<col=000080>" + "dragonstone-tipped rune crossbow bolts" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_996_struct(87, 6573, "Members: Onyx items", "Members can now enchant " + "<col=000080>" + "onyx items" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_996_struct(87, 9245, "Members: Onyx-tipped rune crossbow bolt", "Members can now enchant " + "<col=000080>" + "onyx-tipped rune crossbow bolts" + "</col>" + ".");
+			}
+			break;
+			case 4:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_996_struct(1, 3755, "Members: Farseer helm" + "<br>" + " (after Fremennik Trials and with 45 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "farseer helms" + "</col>" + " (after Fremennik Trials).");
+				case 1:
+					return newstruct cs2func_script_996_struct(1, 6153, "Members: Skeletal gloves", "Members can now wear " + "<col=000080>" + "skeletal gloves" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_996_struct(1, 6147, "Members: Skeletal boots", "Members can now wear " + "<col=000080>" + "skeletal boots" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_996_struct(20, 2579, "Members: Wizard boots", "Members can now wear " + "<col=000080>" + "wizard boots.");
+				case 4:
+					return newstruct cs2func_script_996_struct(20, 12964, "Combat hood" + "<br>" + " (with level 10 Defence)", "You now have the Magic level required to wear " + "<col=000080>" + "combat hoods" + "</col>" + ". (You also need level 10 Defence.)");
+				case 5:
+					return newstruct cs2func_script_996_struct(20, 12971, "Combat robe top" + "<br>" + " (with level 10 Defence)", "You now have the Magic level required to wear " + "<col=000080>" + "combat robe tops" + "</col>" + ". (You also need level 10 Defence.)");
+				case 6:
+					return newstruct cs2func_script_996_struct(20, 12978, "Combat robe bottom" + "<br>" + " (with level 10 Defence)", "You now have the Magic level required to wear " + "<col=000080>" + "combat robe bottoms" + "</col>" + ". (You also need level 10 Defence.)");
+				case 7:
+					return newstruct cs2func_script_996_struct(20, 12887, "Druidic mage hood" + "<br>" + " (with level 10 Defence)", "You now have the Magic level required to wear " + "<col=000080>" + "druidic mage hoods" + "</col>" + ". (You also need level 10 Defence.)");
+				case 8:
+					return newstruct cs2func_script_996_struct(20, 12894, "Druidic mage top" + "<br>" + " (with level 10 Defence)", "You now have the Magic level required to wear " + "<col=000080>" + "druidic mage tops" + "</col>" + ". (You also need level 10 Defence.)");
+				case 9:
+					return newstruct cs2func_script_996_struct(20, 12901, "Druidic mage bottom" + "<br>" + " (with level 10 Defence)", "You now have the Magic level required to wear " + "<col=000080>" + "druidic mage bottoms" + "</col>" + ". (You also need level 10 Defence.)");
+				case 10:
+					return newstruct cs2func_script_996_struct(20, 13938, "Members: Corrupt Zuriel's hood" + "<br>" + " (with level 20 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "corrupt Zuriel's hood" + "</col>" + ". (They also need level 20 Defence.)");
+				case 11:
+					return newstruct cs2func_script_996_struct(20, 13932, "Members: Corrupt Zuriel's robe top" + "<br>" + " (with level 20 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "corrupt Zuriel's robe top" + "</col>" + ". (They also need level 20 Defence.)");
+				case 12:
+					return newstruct cs2func_script_996_struct(20, 13935, "Members: Corrupt Zuriel's robe bottom" + "<br>" + " (with level 20 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "corrupt Zuriel's robe bottom" + "</col>" + ". (They also need level 20 Defence.)");
+				case 13:
+					return newstruct cs2func_script_996_struct(20, 15488, "Members: Hexcrest" + "<br>" + " (with 10 Defence)", "Members can now wear " + "<col=000080>" + "hexcrests" + "</col>" + " (with 10 Defence).");
+				case 14:
+					return newstruct cs2func_script_996_struct(20, 15492, "Members: Full Slayer helmet" + "<br>" + " (after Smoking Kills with 10 Defence, 20 Ranged and Strength)", "Members can now wear " + "<col=000080>" + "full slayer helmets" + "</col>" + " (after Smoking Kills with 10 Defence, 20 Ranged and Strength).");
+				case 15:
+					return newstruct cs2func_script_996_struct(20, 9733, "Members: Elemental mind equipment (After Elemental Workshop II and with level 30 Smithing)", "Members now have the Magic level required to wear " + "<col=000080>" + "Elemental mind equipment" + "</col>" + ". (After Elemental Workshop II and with level 30 Smithing)");
+				case 16:
+					return newstruct cs2func_script_996_struct(30, 18333, "Arcane pulse necklace" + "<br>" + " (with 30 Dungeoneering)", "You can now wear " + "<col=000080>" + "arcane pulse necklaces" + "</col>" + ". (You also need level 30 Dungeoneering.)");
+				case 17:
+					return newstruct cs2func_script_996_struct(40, 4089, "Members: Mystic hat" + "<br>" + " (with level 20 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "mystic hats" + "</col>" + ". (They also need level 20 Defence.)");
+				case 18:
+					return newstruct cs2func_script_996_struct(40, 4091, "Members: Mystic robe top" + "<br>" + " (with level 20 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "mystic robe tops" + "</col>" + ". (They also need level 20 Defence.)");
+				case 19:
+					return newstruct cs2func_script_996_struct(40, 4093, "Members: Mystic robe bottom" + "<br>" + " (with level 20 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "mystic robe bottoms" + "</col>" + ". (They also need level 20 Defence.)");
+				case 20:
+					return newstruct cs2func_script_996_struct(40, 4095, "Members: Mystic gloves" + "<br>" + " (with level 20 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "mystic gloves" + "</col>" + ". (They also need level 20 Defence.)");
+				case 21:
+					return newstruct cs2func_script_996_struct(40, 4097, "Members: Mystic boots" + "<br>" + " (with level 20 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "mystic boots" + "</col>" + ". (They also need level 20 Defence.)");
+				case 22:
+					return newstruct cs2func_script_996_struct(40, 14499, "Members: Dagon'hai hat" + "<br>" + " (with level 20 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "Dagon'hai hats" + "</col>" + ". (They also need level 20 Defence.)");
+				case 23:
+					return newstruct cs2func_script_996_struct(40, 14497, "Members: Dagon'hai robe top" + "<br>" + " (with level 20 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "Dagon'hai robe tops" + "</col>" + ". (They also need level 20 Defence.)");
+				case 24:
+					return newstruct cs2func_script_996_struct(40, 14501, "Members: Dagon'hai robe bottom" + "<br>" + " (with level 20 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "Dagon'hai robe bottoms" + "</col>" + ". (They also need level 20 Defence.)");
+				case 25:
+					return newstruct cs2func_script_996_struct(40, 21509, "Members: Necromancer hood" + "<br>" + " (with level 20 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "Necromancer hoods" + "</col>" + ". (They also need level 20 Defence.)");
+				case 26:
+					return newstruct cs2func_script_996_struct(40, 21508, "Members: Necromancer robe" + "<br>" + " (with level 20 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "Necromancer robes" + "</col>" + ". (They also need level 20 Defence.)");
+				case 27:
+					return newstruct cs2func_script_996_struct(40, 21510, "Members: Necromancer legs" + "<br>" + " (with level 20 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "Necromancer legs" + "</col>" + ". (They also need level 20 Defence.)");
+				case 28:
+					return newstruct cs2func_script_996_struct(40, 7400, "Members: Enchanted hat" + "<br>" + " (with level 20 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "enchanted hats" + "</col>" + ". (They also need level 20 Defence.)");
+				case 29:
+					return newstruct cs2func_script_996_struct(40, 7399, "Members: Enchanted top" + "<br>" + " (with level 20 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "enchanted tops" + "</col>" + ". (They also need level 20 Defence.)");
+				case 30:
+					return newstruct cs2func_script_996_struct(40, 7398, "Members: Enchanted robe" + "<br>" + " (with level 20 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "enchanted robes" + "</col>" + ". (They also need level 20 Defence.)");
+				case 31:
+					return newstruct cs2func_script_996_struct(40, 3385, "Members: Splitbark helm" + "<br>" + " (with level 40 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "splitbark helms" + "</col>" + ". (They also need level 40 Defence.)");
+				case 32:
+					return newstruct cs2func_script_996_struct(40, 3387, "Members: Splitbark body" + "<br>" + " (with level 40 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "splitbark bodies" + "</col>" + ". (They also need level 40 Defence.)");
+				case 33:
+					return newstruct cs2func_script_996_struct(40, 3389, "Members: Splitbark legs" + "<br>" + " (with level 40 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "splitbark legs" + "</col>" + ". (They also need level 40 Defence.)");
+				case 34:
+					return newstruct cs2func_script_996_struct(40, 3391, "Members: Splitbark gauntlets" + "<br>" + " (with level 40 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "splitbark gauntlets" + "</col>" + ". (They also need level 40 Defence.)");
+				case 35:
+					return newstruct cs2func_script_996_struct(40, 3393, "Members: Splitbark boots" + "<br>" + " (with level 40 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "splitbark boots" + "</col>" + ". (They also need level 40 Defence.)");
+				case 36:
+					return newstruct cs2func_script_996_struct(40, 6137, "Members: Skeletal helmet" + "<br>" + " (after Fremennik Trials and with 40 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "skeletal helmets" + "</col>" + " (after Fremennik Trials and with level 40 Defence).");
+				case 37:
+					return newstruct cs2func_script_996_struct(40, 6139, "Members: Skeletal top" + "<br>" + " (after Fremennik Trials and with 40 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "skeletal tops" + "</col>" + " (after Fremennik Trials and with level 40 Defence).");
+				case 38:
+					return newstruct cs2func_script_996_struct(40, 6141, "Members: Skeletal bottoms" + "<br>" + " (after Fremennik Trials and with 40 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "skeletal bottoms" + "</col>" + " (after Fremennik Trials and with level 40 Defence).");
+				case 39:
+					return newstruct cs2func_script_996_struct(40, 14116, "Members: Sacred clay hat" + "<br>" + " (with level 40 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "sacred clay hats" + "</col>" + ". (They also need level 40 Defence.)");
+				case 40:
+					return newstruct cs2func_script_996_struct(40, 14114, "Members: Sacred clay robe top" + "<br>" + " (with level 40 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "sacred clay robe tops" + "</col>" + ". (They also need level 40 Defence.)");
+				case 41:
+					return newstruct cs2func_script_996_struct(40, 14115, "Members: Sacred clay robe bottom" + "<br>" + " (with level 40 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "sacred clay robe bottoms" + "</col>" + ". (They also need level 40 Defence.)");
+				case 42:
+					return newstruct cs2func_script_996_struct(40, 10454, "Members: Guthix mitre" + "<br>" + " (with 40 Prayer)", "Members now have the Magic level required to wear " + "<col=000080>" + "Guthix mitres" + "</col>" + ". (They also need level 40 Prayer.)");
+				case 43:
+					return newstruct cs2func_script_996_struct(40, 10452, "Members: Saradomin mitre" + "<br>" + " (with 40 Prayer)", "Members now have the Magic level required to wear " + "<col=000080>" + "Saradomin mitres" + "</col>" + ". (They also need level 40 Prayer.)");
+				case 44:
+					return newstruct cs2func_script_996_struct(40, 10456, "Members: Zamorak mitre" + "<br>" + " (with 40 Prayer)", "Members now have the Magic level required to wear " + "<col=000080>" + "Zamorak mitres" + "</col>" + ". (They also need level 40 Prayer.)");
+				case 45:
+					return newstruct cs2func_script_996_struct(40, 19374, "Members: Armadyl mitre" + "<br>" + " (with 40 Prayer)", "Members now have the Magic level required to wear " + "<col=000080>" + "Armadyl mitres" + "</col>" + ". (They also need level 40 Prayer.)");
+				case 46:
+					return newstruct cs2func_script_996_struct(40, 19376, "Members: Bandos mitre" + "<br>" + " (with 40 Prayer)", "Members now have the Magic level required to wear " + "<col=000080>" + "Bandos mitres" + "</col>" + ". (They also need level 40 Prayer.)");
+				case 47:
+					return newstruct cs2func_script_996_struct(40, 19378, "Members: Ancient mitre" + "<br>" + " (with 40 Prayer)", "Members now have the Magic level required to wear " + "<col=000080>" + "Ancient mitres" + "</col>" + ". (They also need level 40 Prayer.)");
+				case 48:
+					return newstruct cs2func_script_996_struct(42, 11665, "Members: Void melee helm", "Members now have the Magic level required to wear " + "<col=000080>" + "Void melee helms" + "</col>" + ".");
+				case 49:
+					return newstruct cs2func_script_996_struct(42, 11664, "Members: Void ranger helm", "Members now have the Magic level required to wear " + "<col=000080>" + "Void ranger helms" + "</col>" + ".");
+				case 50:
+					return newstruct cs2func_script_996_struct(42, 11663, "Members: Void mage helm", "Members now have the Magic level required to wear " + "<col=000080>" + "Void mage helms" + "</col>" + ".");
+				case 51:
+					return newstruct cs2func_script_996_struct(42, 8839, "Members: Void knight top", "Members now have the Magic level required to wear " + "<col=000080>" + "Void knight tops" + "</col>" + ".");
+				case 52:
+					return newstruct cs2func_script_996_struct(42, 8840, "Members: Void knight robe", "Members now have the Magic level required to wear " + "<col=000080>" + "Void knight robes" + "</col>" + ".");
+				case 53:
+					return newstruct cs2func_script_996_struct(42, 8842, "Members: Void knight gloves", "Members now have the Magic level required to wear " + "<col=000080>" + "Void knight gloves" + "</col>" + ".");
+				case 54:
+					return newstruct cs2func_script_996_struct(42, 19712, "Members: Void knight deflector", "Members now have the Magic level required to wear " + "<col=000080>" + "Void knight deflectors" + "</col>" + ".");
+				case 55:
+					return newstruct cs2func_script_996_struct(42, 7620, "Void knight equipment requires 42 Attack, Defence, Strength, Ranged, Magic and Constitution and 22 Prayer.", "<col=000080>" + "Void knight equipment" + "</col>" + " requires 42 Attack, Defence, Strength, Ranged, Magic and Constitution and 22 Prayer.");
+				case 56:
+					return newstruct cs2func_script_996_struct(50, 6918, "Members: Infinity hat" + "<br>" + " (with level 25 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "infinity hats" + "</col>" + ". (They also need level 25 Defence.)");
+				case 57:
+					return newstruct cs2func_script_996_struct(50, 6916, "Members: Infinity top" + "<br>" + " (with level 25 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "infinity tops" + "</col>" + ". (They also need level 25 Defence.)");
+				case 58:
+					return newstruct cs2func_script_996_struct(50, 6924, "Members: Infinity bottom" + "<br>" + " (with level 25 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "infinity bottoms" + "</col>" + ". (They also need level 25 Defence.)");
+				case 59:
+					return newstruct cs2func_script_996_struct(50, 6920, "Members: Infinity boots" + "<br>" + " (with level 25 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "infinity boots" + "</col>" + ". (They also need level 25 Defence.)");
+				case 60:
+					return newstruct cs2func_script_996_struct(50, 6922, "Members: Infinity gloves" + "<br>" + " (with level 25 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "infinity gloves" + "</col>" + ". (They also need level 25 Defence.)");
+				case 61:
+					return newstruct cs2func_script_996_struct(50, 18334, "Arcane blast necklace" + "<br>" + " (with 50 Dungeoneering)", "You can now wear " + "<col=000080>" + "arcane blast necklaces" + "</col>" + ". (You also need level 50 Dungeoneering.)");
+				case 62:
+					return newstruct cs2func_script_996_struct(60, 2413, "Members: Guthix cape", "Members can now wear " + "<col=000080>" + "Guthix capes.");
+				case 63:
+					return newstruct cs2func_script_996_struct(60, 2412, "Members: Saradomin cape", "Members can now wear " + "<col=000080>" + "Saradomin capes.");
+				case 64:
+					return newstruct cs2func_script_996_struct(60, 2414, "Members: Zamorak cape", "Members can now wear " + "<col=000080>" + "Zamorak capes.");
+				case 65:
+					return newstruct cs2func_script_996_struct(60, 12866, "Members: Battle hood" + "<br>" + " (with level 50 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "battle hoods" + "</col>" + ". (They also need level 50 Defence.)");
+				case 66:
+					return newstruct cs2func_script_996_struct(60, 12873, "Members: Battle robe top" + "<br>" + " (with level 50 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "battle robe tops" + "</col>" + ". (They also need level 50 Defence.)");
+				case 67:
+					return newstruct cs2func_script_996_struct(60, 12880, "Members: Battle robe bottom" + "<br>" + " (with level 50 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "battle robe bottoms" + "</col>" + ". (They also need level 50 Defence.)");
+				case 68:
+					return newstruct cs2func_script_996_struct(65, 10342, "Members: Third-Age mage hat" + "<br>" + " (with level 30 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "Third-Age mage hats" + "</col>" + ". (They also need level 30 Defence)");
+				case 69:
+					return newstruct cs2func_script_996_struct(65, 10338, "Members: Third-Age robe top" + "<br>" + " (with level 30 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "Third-Age robe tops" + "</col>" + ". (They also need level 30 Defence)");
+				case 70:
+					return newstruct cs2func_script_996_struct(65, 10340, "Members: Third-Age robe" + "<br>" + " (with level 30 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "Third-Age robes" + "</col>" + ". (They also need level 30 Defence)");
+				case 71:
+					return newstruct cs2func_script_996_struct(65, 10344, "Members: Third-Age amulet" + "<br>" + " (with level 30 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "Third-Age amulets" + "</col>" + ". (They also need level 30 Defence)");
+				case 72:
+					return newstruct cs2func_script_996_struct(65, 9096, "Members: Lunar helm" + "<br>" + " (with level 40 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "lunar helms" + "</col>" + ". (They also need level 40 Defence.)");
+				case 73:
+					return newstruct cs2func_script_996_struct(65, 9097, "Members: Lunar torso" + "<br>" + " (with level 40 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "lunar torsos" + "</col>" + ". (They also need level 40 Defence.)");
+				case 74:
+					return newstruct cs2func_script_996_struct(65, 9099, "Members: Lunar gloves" + "<br>" + " (with level 40 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "lunar gloves" + "</col>" + ". (They also need level 40 Defence.)");
+				case 75:
+					return newstruct cs2func_script_996_struct(65, 9098, "Members: Lunar legs" + "<br>" + " (with level 40 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "lunar legs" + "</col>" + ". (They also need level 40 Defence.)");
+				case 76:
+					return newstruct cs2func_script_996_struct(65, 9100, "Members: Lunar boots" + "<br>" + " (with level 40 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "lunar boots" + "</col>" + ". (They also need level 40 Defence.)");
+				case 77:
+					return newstruct cs2func_script_996_struct(65, 9101, "Members: Lunar cape" + "<br>" + " (with level 40 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "lunar capes" + "</col>" + ". (They also need level 40 Defence.)");
+				case 78:
+					return newstruct cs2func_script_996_struct(65, 13738, "Members: Arcane spirit shield" + "<br>" + " (after Summer's End and with 70 Prayer and 75 Defence)", "Members now have the Magic level required to wield " + "<col=000080>" + "arcane spirit shields" + "</col>" + " (after Summer's End, with level 70 Prayer and 75 Defence).");
+				case 79:
+					return newstruct cs2func_script_996_struct(65, 13744, "Members: Spectral spirit shield" + "<br>" + " (after Summer's End and with 70 Prayer and 75 Defence)", "Members now have the Magic level required to wield " + "<col=000080>" + "spectral spirit shields" + "</col>" + " (after Summer's End, with level 70 Prayer and 75 Defence).");
+				case 80:
+					return newstruct cs2func_script_996_struct(70, 4708, "Members: Ahrim's hood" + "<br>" + " (with level 70 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "Ahrim's hood" + "</col>" + ". (They also need level 70 Defence.)");
+				case 81:
+					return newstruct cs2func_script_996_struct(70, 4712, "Members: Ahrim's robe top" + "<br>" + " (with level 70 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "Ahrim's robe top" + "</col>" + ". (They also need level 70 Defence.)");
+				case 82:
+					return newstruct cs2func_script_996_struct(70, 4714, "Members: Ahrim's robe skirt" + "<br>" + " (with level 70 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "Ahrim's robe skirt" + "</col>" + ". (They also need level 70 Defence.)");
+				case 83:
+					return newstruct cs2func_script_996_struct(70, 21736, "Members: Akrisae's hood" + "<br>" + " (after Ritual of the Mahjarrat and with level 70 Defence and 70 Prayer)", "Members now have the Magic level required to wear " + "<col=000080>" + "Akrisae's hood" + "</col>" + " (after Ritual of the Mahjarrat and with level 70 Defence and 70 Prayer).");
+				case 84:
+					return newstruct cs2func_script_996_struct(70, 21752, "Members: Akrisae's robe top" + "<br>" + " (after Ritual of the Mahjarrat and with level 70 Defence and 70 Prayer)", "Members now have the Magic level required to wear " + "<col=000080>" + "Akrisae's robe top" + "</col>" + " (after Ritual of the Mahjarrat and with level 70 Defence and 70 Prayer).");
+				case 85:
+					return newstruct cs2func_script_996_struct(70, 21760, "Members: Akrisae's robe skirt" + "<br>" + " (after Ritual of the Mahjarrat and with level 70 Defence and 70 Prayer)", "Members now have the Magic level required to wear " + "<col=000080>" + "Akrisae's robe skirt" + "</col>" + " (after Ritual of the Mahjarrat and with level 70 Defence and 70 Prayer).");
+				case 86:
+					return newstruct cs2func_script_996_struct(70, 18335, "Members: Arcane stream necklace" + "<br>" + " (with 70 Dungeoneering)", "Members can now wear " + "<col=000080>" + "arcane stream necklaces" + "</col>" + ". (They also need level 70 Dungeoneering.)");
+				case 87:
+					return newstruct cs2func_script_996_struct(75, 21793, "Members: Ragefire boots" + "<br>" + " (with 75 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "ragefire boots" + "</col>" + " (with 75 Defence).");
+				case 88:
+					return newstruct cs2func_script_996_struct(78, 13864, "Members: Zuriel's hood" + "<br>" + " (with level 78 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "Zuriel's hood" + "</col>" + ". (They also need level 78 Defence.)");
+				case 89:
+					return newstruct cs2func_script_996_struct(78, 13858, "Members: Zuriel's robe top" + "<br>" + " (with level 78 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "Zuriel's robe top" + "</col>" + ". (They also need level 78 Defence.)");
+				case 90:
+					return newstruct cs2func_script_996_struct(78, 13861, "Members: Zuriel's robe bottom" + "<br>" + " (with level 78 Defence)", "Members now have the Magic level required to wear " + "<col=000080>" + "Zuriel's robe bottom" + "</col>" + ". (They also need level 78 Defence.)");
+				case 91:
+					return newstruct cs2func_script_996_struct(80, 20159, "Members: Virtus mask" + "<br>" + " (with 80 Defence and Constitution)", "Members can now wear " + "<col=000080>" + "virtus masks" + "</col>" + ". (They also need level 80 Defence and Constitution.)");
+				case 92:
+					return newstruct cs2func_script_996_struct(80, 20163, "Members: Virtus robe top" + "<br>" + " (with 80 Defence and Constitution)", "Members can now wear " + "<col=000080>" + "virtus robe tops" + "</col>" + ". (They also need level 80 Defence and Constitution.)");
+				case 93:
+					return newstruct cs2func_script_996_struct(80, 20167, "Members: Virtus robe legs" + "<br>" + " (with 80 Defence and Constitution)", "Members can now wear " + "<col=000080>" + "virtus robe legs" + "</col>" + ". (They also need level 80 Defence and Constitution.)");
+			}
+			break;
+			case 5:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_996_struct(1, 1379, "Staff", "You can now wield " + "<col=000080>" + "staves" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_996_struct(1, 15598, "Caitlin's staff" + "<br>" + " (after The Blood Pact)", "You can now wield " + "<col=000080>" + "Caitlin's staff" + "</col>" + " (after The Blood Pact).");
+				case 2:
+					return newstruct cs2func_script_996_struct(1, 1389, "Magic staff", "You can now wield " + "<col=000080>" + "staves of magic" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_996_struct(1, 1381, "Staff of air", "You can now wield " + "<col=000080>" + "staves of air" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_996_struct(1, 1385, "Staff of earth", "You can now wield " + "<col=000080>" + "staves of earth" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_996_struct(1, 1387, "Staff of fire", "You can now wield " + "<col=000080>" + "staves of fires" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_996_struct(1, 1383, "Staff of water", "You can now wield " + "<col=000080>" + "staves of water" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_996_struct(1, 21490, "Skeletal staves", "You can now wield " + "<col=000080>" + "skeletal staves" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_996_struct(20, 13941, "Members: Corrupt Zuriel's staff" + "<br>" + " (with level 20 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "Corrupt Zuriel's staff" + "</col>" + ". (They also need level 20 Attack.)");
+				case 9:
+					return newstruct cs2func_script_996_struct(30, 1397, "Members: Air battlestaff" + "<br>" + " (with level 30 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "air battlestaves" + "</col>" + ". (They also need level 30 Attack.)");
+				case 10:
+					return newstruct cs2func_script_996_struct(30, 1399, "Members: Earth battlestaff" + "<br>" + " (with level 30 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "earth battlestaves" + "</col>" + ". (They also need level 30 Attack.)");
+				case 11:
+					return newstruct cs2func_script_996_struct(30, 1393, "Members: Fire battlestaff" + "<br>" + " (with level 30 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "fire battlestaves" + "</col>" + ". (They also need level 30 Attack.)");
+				case 12:
+					return newstruct cs2func_script_996_struct(30, 1395, "Members: Water battlestaff" + "<br>" + " (with level 30 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "water battlestaves" + "</col>" + ". (They also need level 30 Attack.)");
+				case 13:
+					return newstruct cs2func_script_996_struct(30, 3053, "Members: Lava battlestaff" + "<br>" + " (with level 30 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "lava battlestaves" + "</col>" + ". (They also need level 30 Attack.)");
+				case 14:
+					return newstruct cs2func_script_996_struct(30, 6562, "Members: Mud battlestaff" + "<br>" + " (with level 30 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "mud battlestaves" + "</col>" + ". (They also need level 30 Attack.)");
+				case 15:
+					return newstruct cs2func_script_996_struct(30, 11736, "Members: Steam battlestaff" + "<br>" + " (with level 30 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "steam battlestaves" + "</col>" + ". (They also need level 30 Attack.)");
+				case 16:
+					return newstruct cs2func_script_996_struct(30, 21502, "Members: Skeletal battlestaves" + "<br>" + " (with level 30 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "skeletal battlestaves" + "</col>" + ". (They also need level 30 Attack.)");
+				case 17:
+					return newstruct cs2func_script_996_struct(30, 21536, "Members: Sceptre of the gods" + "<br>" + " (with level 30 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "the sceptre of the gods" + "</col>" + ". (They also need level 30 Attack.)");
+				case 18:
+					return newstruct cs2func_script_996_struct(40, 1405, "Members: Mystic air staff" + "<br>" + " (with level 40 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "mystic air staves" + "</col>" + ". (They also need level 40 Attack.)");
+				case 19:
+					return newstruct cs2func_script_996_struct(40, 1407, "Members: Mystic earth staff" + "<br>" + " (with level 40 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "mystic earth staves" + "</col>" + ". (They also need level 40 Attack.)");
+				case 20:
+					return newstruct cs2func_script_996_struct(40, 1401, "Members: Mystic fire staff" + "<br>" + " (with level 40 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "mystic fire staves" + "</col>" + ". (They also need level 40 Attack.)");
+				case 21:
+					return newstruct cs2func_script_996_struct(40, 1403, "Members: Mystic water staff" + "<br>" + " (with level 40 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "mystic water staves" + "</col>" + ". (They also need level 40 Attack.)");
+				case 22:
+					return newstruct cs2func_script_996_struct(40, 3054, "Members: Mystic lava staff" + "<br>" + " (with level 40 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "mystic lava staves" + "</col>" + ". (They also need level 40 Attack.)");
+				case 23:
+					return newstruct cs2func_script_996_struct(40, 6563, "Members: Mystic mud staff" + "<br>" + " (with level 40 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "mystic mud staves" + "</col>" + ". (They also need level 40 Attack.)");
+				case 24:
+					return newstruct cs2func_script_996_struct(40, 11738, "Members: Mystic steam staff" + "<br>" + " (with level 40 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "mystic steam staves" + "</col>" + ". (They also need level 40 Attack.)");
+				case 25:
+					return newstruct cs2func_script_996_struct(40, 19323, "Members: Dragon staff" + "<br>" + " (with 40 Attack, 60 Prayer and 20 Defence)", "Members now have the Magic level required to wield " + "<col=000080>" + "dragon staves" + "</col>" + ". (They also need level 40 Attack, level 60 Prayer and level 20 Defence.)");
+				case 26:
+					return newstruct cs2func_script_996_struct(40, 19325, "Members: Penguin staff" + "<br>" + " (with 40 Attack, 60 Prayer and 20 Defence)", "Members now have the Magic level required to wield " + "<col=000080>" + "penguin staves" + "</col>" + ". (They also need level 40 Attack, level 60 Prayer and level 20 Defence.)");
+				case 27:
+					return newstruct cs2func_script_996_struct(40, 19327, "Members: Bat staff" + "<br>" + " (with 40 Attack, 60 Prayer and 20 Defence)", "Members now have the Magic level required to wield " + "<col=000080>" + "bat staves" + "</col>" + ". (They also need level 40 Attack, level 60 Prayer and level 20 Defence.)");
+				case 28:
+					return newstruct cs2func_script_996_struct(40, 19329, "Members: Wolf staff" + "<br>" + " (with 40 Attack, 60 Prayer and 20 Defence)", "Members now have the Magic level required to wield " + "<col=000080>" + "wolf staves" + "</col>" + ". (They also need level 40 Attack, level 60 Prayer and level 20 Defence.)");
+				case 29:
+					return newstruct cs2func_script_996_struct(40, 19331, "Members: Cat staff" + "<br>" + " (with 40 Attack, 60 Prayer and 20 Defence)", "Members now have the Magic level required to wield " + "<col=000080>" + "cat staves" + "</col>" + ". (They also need level 40 Attack, level 60 Prayer and level 20 Defence.)");
+				case 30:
+					return newstruct cs2func_script_996_struct(40, 14117, "Members: Sacred clay staff", "Members can now wield " + "<col=000080>" + "sacred clay staves" + "</col>" + ".");
+				case 31:
+					return newstruct cs2func_script_996_struct(40, 21498, "Members: Necromancer staves" + "<br>" + " (with level 40 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "necromancer staves" + "</col>" + ". (They also need level 40 Attack.)");
+				case 32:
+					return newstruct cs2func_script_996_struct(42, 8841, "Members: Void knight mace", "Members now have the Magic level required to wield " + "<col=000080>" + "Void knight maces" + "</col>" + ".");
+				case 33:
+					return newstruct cs2func_script_996_struct(45, 18342, "Law staff" + "<br>" + " (with 40 Attack and 45 Dungeoneering)", "You can now use " + "<col=000080>" + "law staves" + "</col>" + ". (You also need level 40 Attack and level 45 Dungeoneering.)");
+				case 34:
+					return newstruct cs2func_script_996_struct(45, 18371, "Gravite staff" + "<br>" + " (with 45 Dungeoneering)", "You can now wield " + "<col=000080>" + "gravite staves" + "</col>" + ". (You also need level 45 Dungeoneering.)");
+				case 35:
+					return newstruct cs2func_script_996_struct(50, 4170, "Members: Slayer's staff" + "<br>" + " (with level 55 Slayer)", "Members now have the Magic level required to use " + "<col=000080>" + "Slayer staves" + "</col>" + ", magic weapons used for killing turoth and kurask. (They also need level 55 Slayer.)");
+				case 36:
+					return newstruct cs2func_script_996_struct(50, 1409, "Members: Iban's Staff" + "<br>" + " (after Underground Pass and with 50 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "Iban's Staff" + "</col>" + " (after Underground Pass and with 50 Attack).");
+				case 37:
+					return newstruct cs2func_script_996_struct(50, 4675, "Members: Ancient Staff" + "<br>" + " (after Desert Treasure, with 50 Attack)", "Members now have the Magic level required to use the " + "<col=000080>" + "Ancient Staff" + "</col>" + " (after Desert Treasure and with 50 Attack).");
+				case 38:
+					return newstruct cs2func_script_996_struct(53, 18341, "Nature staff" + "<br>" + " (with 40 Attack and 53 Dungeoneering)", "You can now use " + "<col=000080>" + "nature staves" + "</col>" + ". (You also need level 40 Attack and level 53 Dungeoneering.)");
+				case 39:
+					return newstruct cs2func_script_996_struct(60, 2415, "Members: Saradomin staff", "Members can now use " + "<col=000080>" + "Saradomin staves" + "</col>" + ".");
+				case 40:
+					return newstruct cs2func_script_996_struct(60, 2416, "Members: Guthix staff", "Members can now use the " + "<col=000080>" + "Guthix staves" + "</col>" + ".");
+				case 41:
+					return newstruct cs2func_script_996_struct(60, 2417, "Members: Zamorak staff", "Members can now use the " + "<col=000080>" + "Zamorak staves" + "</col>" + ".");
+				case 42:
+					return newstruct cs2func_script_996_struct(60, 6526, "Members: Toktz-Mej-Tal" + "<br>" + " (with level 60 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "Toktz-Mej-Tal" + "</col>" + ". (They also need level 60 Attack.)");
+				case 43:
+					return newstruct cs2func_script_996_struct(70, 15438, "Members: Penance Trident", "Members now have the Magic level required to use the " + "<col=000080>" + "Penance Trident" + "</col>" + ".");
+				case 44:
+					return newstruct cs2func_script_996_struct(70, 15485, "Members: Penance Master Trident" + "<br>" + " (with level 70 Attack)", "Members now have the Magic level required to use the " + "<col=000080>" + "Penance Master Trident" + "</col>" + ". (They also need level 70 Attack.)");
+				case 45:
+					return newstruct cs2func_script_996_struct(70, 4710, "Members: Ahrim's staff" + "<br>" + " (with level 70 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "Ahrim's staff" + "</col>" + ". (They also need level 70 Attack.)");
+				case 46:
+					return newstruct cs2func_script_996_struct(70, 21744, "Members: Akrisae's war mace" + "<br>" + " (after Ritual of the Mahjarrat and with level 70 Attack and level 70 Prayer)", "Members now have the Magic level required to wield " + "<col=000080>" + "Akrisae's war mace" + "</col>" + " (after Ritual of the Mahjarrat with level 70 Defence and 70 Prayer.)");
+				case 47:
+					return newstruct cs2func_script_996_struct(70, 21580, "Members: Blisterwood staff (after The Branches of Darkmeyer)", "Members now have the Magic level required to use " + "<col=000080>" + "blisterwood staves" + "</col>" + " (after The Branches of Darkmeyer.)");
+				case 48:
+					return newstruct cs2func_script_996_struct(75, 15486, "Members: Staff of Light (with 75 Attack)", "Members can now wield the " + "<col=000080>" + "Staff of Light" + "</col>" + " (with 75 Attack).");
+				case 49:
+					return newstruct cs2func_script_996_struct(77, 21777, "Members: Armadyl battlestaff" + "<br>" + " (with level 40 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "Armadyl battlestaves" + "</col>" + ". (They also need level 40 Attack.)");
+				case 50:
+					return newstruct cs2func_script_996_struct(78, 13867, "Members: Zuriel's staff" + "<br>" + " (with level 78 Attack)", "Members now have the Magic level required to use " + "<col=000080>" + "Zuriel's staff" + "</col>" + ". (They also need level 78 Attack.)");
+				case 51:
+					return newstruct cs2func_script_996_struct(80, 18355, "Members: Chaotic staff" + "<br>" + " (with 80 Dungeoneering)", "Members can now wield " + "<col=000080>" + "chaotic staves" + "</col>" + ". (They also need level 80 Dungeoneering.)");
+			}
+			break;
+			case 6:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_996_struct(35, 19671, " Magical blastbox" + "<br>" + " (with 30 Dungeoneering and 30 Runecrafting)", "You can now use " + "<col=000080>" + "magical blastboxes" + "</col>" + ". (You also need level 30 Dungeoneering and 30 Runecrafting.)");
+				case 1:
+					return newstruct cs2func_script_996_struct(45, 6908, "Members: Beginner wand", "Members can now use " + "<col=000080>" + "beginner wands" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_996_struct(48, 18346, "Tome of frost" + "<br>" + " (with 48 Dungeoneering)", "You can now use " + "<col=000080>" + "tomes of frost" + "</col>" + ". (You also need level 48 Dungeoneering.)");
+				case 3:
+					return newstruct cs2func_script_996_struct(50, 6910, "Members: Apprentice wand", "Members can now use " + "<col=000080>" + "apprentice wands" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_996_struct(55, 6912, "Members: Teacher wand", "Members can now use " + "<col=000080>" + "teacher wands" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_996_struct(60, 6914, "Members: Master wand", "Members can now use " + "<col=000080>" + "master wands" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_996_struct(60, 6889, "Members: Mage's book", "Members can now use " + "<col=000080>" + "mages' books" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_996_struct(70, 19889, "Members: Celestial surgebox" + "<br>" + " (with 70 Dungeoneering and 70 Runecrafting)", "Members can now use " + "<col=000080>" + "celestial surgeboxes" + "</col>" + ". (They also need level 70 Dungeoneering and level 70 Runecrafting.)");
+			}
+			break;
+			case 7:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_996_struct(30, 10149, "Members: Swamp lizard" + "<br>" + " (with level 30 Attack and 30 Ranged)", "Members now have the Magic level required to wield " + "<col=000080>" + "swamp lizards" + "</col>" + ". (They also need level 30 Attack and level 30 Ranged.)");
+				case 1:
+					return newstruct cs2func_script_996_struct(50, 10146, "Members: Orange salamander" + "<br>" + " (with level 50 Attack and 50 Ranged)", "Members now have the Magic level required to wield " + "<col=000080>" + "orange salamanders" + "</col>" + ". (They also need level 50 Attack and 50 Ranged.)");
+				case 2:
+					return newstruct cs2func_script_996_struct(60, 10147, "Members: Red salamander" + "<br>" + " (with level 60 Attack and 60 Ranged)", "Members now have the Magic level required to wield " + "<col=000080>" + "red salamanders" + "</col>" + ". (They also need level 60 Attack and 60 Ranged.)");
+				case 3:
+					return newstruct cs2func_script_996_struct(70, 10148, "Members: Black salamander" + "<br>" + " (with level 70 Attack and 70 Ranged)", "Members now have the Magic level required to wield " + "<col=000080>" + "black salamanders" + "</col>" + ". (They also need level 70 Attack and 70 Ranged.)");
+			}
+			break;
+			case 8:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_996_struct(1, 14377, "Members: Stealing Creation - class 1 staff", "Members can now wield " + "<col=000080>" + "class 1 staves" + "</col>" + " in Stealing Creation.");
+				case 1:
+					return newstruct cs2func_script_996_struct(1, 14337, "Members: Stealing Creation - class 1 hat", "Members can now wear " + "<col=000080>" + "class 1 hats" + "</col>" + " in Stealing Creation.");
+				case 2:
+					return newstruct cs2func_script_996_struct(1, 14317, "Members: Stealing Creation - class 1 robe top", "Members can now wear " + "<col=000080>" + "class 1 robe tops" + "</col>" + " in Stealing Creation.");
+				case 3:
+					return newstruct cs2func_script_996_struct(1, 14327, "Members: Stealing Creation - class 1 robe bottom", "Members can now wear " + "<col=000080>" + "class 1 robe bottoms" + "</col>" + " in Stealing Creation.");
+				case 4:
+					return newstruct cs2func_script_996_struct(20, 14379, "Members: Stealing Creation - class 2 staff", "Members can now wield " + "<col=000080>" + "class 2 staves" + "</col>" + " in Stealing Creation.");
+				case 5:
+					return newstruct cs2func_script_996_struct(20, 14339, "Members: Stealing Creation - class 2 hat", "Members can now wear " + "<col=000080>" + "class 2 hats" + "</col>" + " in Stealing Creation.");
+				case 6:
+					return newstruct cs2func_script_996_struct(20, 14319, "Members: Stealing Creation - class 2 robe top", "Members can now wear " + "<col=000080>" + "class 2 robe tops" + "</col>" + " in Stealing Creation.");
+				case 7:
+					return newstruct cs2func_script_996_struct(20, 14329, "Members: Stealing Creation - class 2 robe bottom", "Members can now wear " + "<col=000080>" + "class 2 robe bottoms" + "</col>" + " in Stealing Creation.");
+				case 8:
+					return newstruct cs2func_script_996_struct(40, 14381, "Members: Stealing Creation - class 3 staff", "Members can now wield " + "<col=000080>" + "class 3 staves" + "</col>" + " in Stealing Creation.");
+				case 9:
+					return newstruct cs2func_script_996_struct(40, 14341, "Members: Stealing Creation - class 3 hat", "Members can now wear " + "<col=000080>" + "class 3 hats" + "</col>" + " in Stealing Creation.");
+				case 10:
+					return newstruct cs2func_script_996_struct(40, 14321, "Members: Stealing Creation - class 3 robe top", "Members can now wear " + "<col=000080>" + "class 3 robe tops" + "</col>" + " in Stealing Creation.");
+				case 11:
+					return newstruct cs2func_script_996_struct(40, 14331, "Members: Stealing Creation - class 3 robe bottom", "Members can now wear " + "<col=000080>" + "class 3 robe bottoms" + "</col>" + " in Stealing Creation.");
+				case 12:
+					return newstruct cs2func_script_996_struct(60, 14383, "Members: Stealing Creation - class 4 staff", "Members can now wield " + "<col=000080>" + "class 4 staves" + "</col>" + " in Stealing Creation.");
+				case 13:
+					return newstruct cs2func_script_996_struct(60, 14343, "Members: Stealing Creation - class 4 hat", "Members can now wear " + "<col=000080>" + "class 4 hats" + "</col>" + " in Stealing Creation.");
+				case 14:
+					return newstruct cs2func_script_996_struct(60, 14323, "Members: Stealing Creation - class 4 robe top", "Members can now wear " + "<col=000080>" + "class 4 robe tops" + "</col>" + " in Stealing Creation.");
+				case 15:
+					return newstruct cs2func_script_996_struct(60, 14333, "Members: Stealing Creation - class 4 robe bottom", "Members can now wear " + "<col=000080>" + "class 4 robe bottoms" + "</col>" + " in Stealing Creation.");
+				case 16:
+					return newstruct cs2func_script_996_struct(80, 14385, "Members: Stealing Creation - class 5 staff", "Members can now wield " + "<col=000080>" + "class 5 staves" + "</col>" + " in Stealing Creation.");
+				case 17:
+					return newstruct cs2func_script_996_struct(80, 14345, "Members: Stealing Creation - class 5 hat", "Members can now wear " + "<col=000080>" + "class 5 hats" + "</col>" + " in Stealing Creation.");
+				case 18:
+					return newstruct cs2func_script_996_struct(80, 14325, "Members: Stealing Creation - class 5 robe top", "Members can now wear " + "<col=000080>" + "class 5 robe tops" + "</col>" + " in Stealing Creation.");
+				case 19:
+					return newstruct cs2func_script_996_struct(80, 14335, "Members: Stealing Creation - class 5 robe bottom", "Members can now wear " + "<col=000080>" + "class 5 robe bottoms" + "</col>" + " in Stealing Creation.");
+				case 20:
+					return newstruct cs2func_script_996_struct(85, 21537, "Members: Battle-mage helm" + "<br>" + " (with 85 Defence and 85 Strength)", "Members now have the magic level require to wear " + "<col=000080>" + "Battle-mage helms" + "</col>" + ". They also need level 85 Defence and level 85 Strength.");
+				case 21:
+					return newstruct cs2func_script_996_struct(85, 21539, "Members: Battle-mage robe" + "<br>" + " (with 85 Defence and 85 Strength)", "Members now have the magic level require to wear " + "<col=000080>" + "Battle-mage robes" + "</col>" + ". They also need level 85 Defence and level 85 Strength.");
+				case 22:
+					return newstruct cs2func_script_996_struct(85, 21541, "Members: Battle-mage legs" + "<br>" + " (with 85 Defence and 85 Strength)", "Members now have the magic level require to wear " + "<col=000080>" + "Battle-mage legs" + "</col>" + ". They also need level 85 Defence and level 85 Strength.");
+				case 23:
+					return newstruct cs2func_script_996_struct(85, 21543, "Members: Battle-mage gloves" + "<br>" + " (with 85 Defence and 85 Strength)", "Members now have the magic level require to wear " + "<col=000080>" + "Battle-mage gloves" + "</col>" + ". They also need level 85 Defence and level 85 Strength.");
+				case 24:
+					return newstruct cs2func_script_996_struct(85, 21545, "Members: Battle-mage boots" + "<br>" + " (with 85 Defence and 85 Strength)", "Members now have the magic level require to wear " + "<col=000080>" + "Battle-mage boots" + "</col>" + ". They also need level 85 Defence and level 85 Strength.");
+				case 25:
+					return newstruct cs2func_script_996_struct(85, 21547, "Members: Trickster hood" + "<br>" + " (with 85 Defence and 85 Ranged)", "Members now have the magic level require to wear " + "<col=000080>" + "Trickster hoods" + "</col>" + ". They also need level 85 Defence and level 85 Ranged");
+				case 26:
+					return newstruct cs2func_script_996_struct(85, 21549, "Members: Trickster robe" + "<br>" + " (with 85 Defence and 85 Ranged)", "Members now have the magic level require to wear " + "<col=000080>" + "Trickster robes" + "</col>" + ". They also need level 85 Defence and level 85 Ranged");
+				case 27:
+					return newstruct cs2func_script_996_struct(85, 21551, "Members: Trickster legs" + "<br>" + " (with 85 Defence and 85 Ranged)", "Members now have the magic level require to wear " + "<col=000080>" + "Trickster legs" + "</col>" + ". They also need level 85 Defence and level 85 Ranged");
+				case 28:
+					return newstruct cs2func_script_996_struct(85, 21553, "Members: Trickster gloves" + "<br>" + " (with 85 Defence and 85 Ranged)", "Members now have the magic level require to wear " + "<col=000080>" + "Trickster gloves" + "</col>" + ". They also need level 85 Defence and level 85 Ranged");
+				case 29:
+					return newstruct cs2func_script_996_struct(85, 21555, "Members: Trickster boots" + "<br>" + " (with 85 Defence and 85 Ranged)", "Members now have the magic level require to wear " + "<col=000080>" + "Trickster boots" + "</col>" + ". They also need level 85 Defence and level 85 Ranged");
+			}
+			break;
+			case 9:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_996_struct(-1, 15707, "Dungeoneering skill tasks" + "<br>" + "As your Magic level increases, you will be able to attempt higher-level magic tasks within Daemonheim. You will also be more likely to succeed when attempting magic tasks within Daemonheim.", "");
+				case 1:
+					return newstruct cs2func_script_996_struct(1, 16977, "Basic staves (all tiers)", "You can now wield " + "<col=000080>" + "basic staves" + "</col>" + " within Daemonheim.");
+				case 2:
+					return newstruct cs2func_script_996_struct(1, 16997, "Water staff", "You can now wield " + "<col=000080>" + "water staves" + "</col>" + " within Daemonheim.");
+				case 3:
+					return newstruct cs2func_script_996_struct(1, 16735, "Salve hood (Tier 1)" + "<br>" + " (with 1 Defence)", "You can now wear " + "<col=000080>" + "salve hoods" + "</col>" + " within Daemonheim. (You also need level 1 Defence.)");
+				case 4:
+					return newstruct cs2func_script_996_struct(1, 17217, "Salve robe top (Tier 1)" + "<br>" + " (with 1 Defence)", "You can now wear " + "<col=000080>" + "salve robe tops" + "</col>" + " within Daemonheim. (You also need level 1 Defence.)");
+				case 5:
+					return newstruct cs2func_script_996_struct(1, 16845, "Salve robe bottom (Tier 1)" + "<br>" + " (with 1 Defence)", "You can now wear " + "<col=000080>" + "salve robe bottoms" + "</col>" + " within Daemonheim. (You also need level 1 Defence.)");
+				case 6:
+					return newstruct cs2func_script_996_struct(1, 17151, "Salve gloves (Tier 1)" + "<br>" + " (with 1 Defence)", "You can now wear " + "<col=000080>" + "salve gloves" + "</col>" + " within Daemonheim. (You also need level 1 Defence.)");
+				case 7:
+					return newstruct cs2func_script_996_struct(1, 16911, "Salve boots (Tier 1)" + "<br>" + " (with 1 Defence)", "You can now wear " + "<col=000080>" + "salve boots" + "</col>" + " within Daemonheim. (You also need level 1 Defence.)");
+				case 8:
+					return newstruct cs2func_script_996_struct(10, 17001, "Earth staff", "You can now wield " + "<col=000080>" + "earth staves" + "</col>" + " within Daemonheim.");
+				case 9:
+					return newstruct cs2func_script_996_struct(10, 16737, "Wildercress hood (Tier 2)" + "<br>" + " (with 10 Defence)", "You can now wear " + "<col=000080>" + "wildercress hoods" + "</col>" + " within Daemonheim. (You also need level 10 Defence.)");
+				case 10:
+					return newstruct cs2func_script_996_struct(10, 17219, "Wildercress robe top (Tier 2)" + "<br>" + " (with 10 Defence)", "You can now wear " + "<col=000080>" + "wildercress robe tops" + "</col>" + " within Daemonheim. (You also need level 10 Defence.)");
+				case 11:
+					return newstruct cs2func_script_996_struct(10, 16847, "Wildercress robe bottom (Tier 2)" + "<br>" + " (with 10 Defence)", "You can now wear " + "<col=000080>" + "wildercress robe bottoms" + "</col>" + " within Daemonheim. (You also need level 10 Defence.)");
+				case 12:
+					return newstruct cs2func_script_996_struct(10, 17153, "Wildercress gloves (Tier 2)" + "<br>" + " (with 10 Defence)", "You can now wear " + "<col=000080>" + "wildercress gloves" + "</col>" + " within Daemonheim. (You also need level 10 Defence.)");
+				case 13:
+					return newstruct cs2func_script_996_struct(10, 16913, "Wildercress boots (Tier 2)" + "<br>" + " (with 10 Defence)", "You can now wear " + "<col=000080>" + "wildercress boots" + "</col>" + " within Daemonheim. (You also need level 10 Defence.)");
+				case 14:
+					return newstruct cs2func_script_996_struct(20, 17005, "Fire staff", "You can now wield " + "<col=000080>" + "fire staves" + "</col>" + " within Daemonheim.");
+				case 15:
+					return newstruct cs2func_script_996_struct(20, 16739, "Blightleaf hood (Tier 3)" + "<br>" + " (with 20 Defence)", "You can now wear " + "<col=000080>" + "blightleaf hoods" + "</col>" + " within Daemonheim. (You also need level 20 Defence.)");
+				case 16:
+					return newstruct cs2func_script_996_struct(20, 17221, "Blightleaf robe top (Tier 3)" + "<br>" + " (with 20 Defence)", "You can now wear " + "<col=000080>" + "blightleaf robe tops" + "</col>" + " within Daemonheim. (You also need level 20 Defence.)");
+				case 17:
+					return newstruct cs2func_script_996_struct(20, 16849, "Blightleaf robe bottom (Tier 3)" + "<br>" + " (with 20 Defence)", "You can now wear " + "<col=000080>" + "blightleaf robe bottoms" + "</col>" + " within Daemonheim. (You also need level 20 Defence.)");
+				case 18:
+					return newstruct cs2func_script_996_struct(20, 17155, "Blightleaf gloves (Tier 3)" + "<br>" + " (with 20 Defence)", "You can now wear " + "<col=000080>" + "blightleaf gloves" + "</col>" + " within Daemonheim. (You also need level 20 Defence.)");
+				case 19:
+					return newstruct cs2func_script_996_struct(20, 16915, "Blightleaf boots (Tier 3)" + "<br>" + " (with 20 Defence)", "You can now wear " + "<col=000080>" + "blightleaf boots" + "</col>" + " within Daemonheim. (You also need level 20 Defence.)");
+				case 20:
+					return newstruct cs2func_script_996_struct(30, 17009, "Air staff", "You can now wield " + "<col=000080>" + "air staves" + "</col>" + " within Daemonheim.");
+				case 21:
+					return newstruct cs2func_script_996_struct(30, 16741, "Roseblood hood (Tier 4)" + "<br>" + " (with 30 Defence)", "You can now wear " + "<col=000080>" + "roseblood hoods" + "</col>" + " within Daemonheim. (You also need level 30 Defence.)");
+				case 22:
+					return newstruct cs2func_script_996_struct(30, 17223, "Roseblood robe top (Tier 4)" + "<br>" + " (with 30 Defence)", "You can now wear " + "<col=000080>" + "roseblood robe tops" + "</col>" + " within Daemonheim. (You also need level 30 Defence.)");
+				case 23:
+					return newstruct cs2func_script_996_struct(30, 16851, "Roseblood robe bottom (Tier 4)" + "<br>" + " (with 30 Defence)", "You can now wear " + "<col=000080>" + "roseblood robe bottoms" + "</col>" + " within Daemonheim. (You also need level 30 Defence.)");
+				case 24:
+					return newstruct cs2func_script_996_struct(30, 17157, "Roseblood gloves (Tier 4)" + "<br>" + " (with 30 Defence)", "You can now wear " + "<col=000080>" + "roseblood gloves" + "</col>" + " within Daemonheim. (You also need level 30 Defence.)");
+				case 25:
+					return newstruct cs2func_script_996_struct(30, 16917, "Roseblood boots (Tier 4)" + "<br>" + " (with 30 Defence)", "You can now wear " + "<col=000080>" + "roseblood boots" + "</col>" + " within Daemonheim. (You also need level 30 Defence.)");
+				case 26:
+					return newstruct cs2func_script_996_struct(32, 18637, "Spell: Create Gatestone", "You can now cast " + "<col=000080>" + "Create Gatestone" + "</col>" + " within Daemonheim.");
+				case 27:
+					return newstruct cs2func_script_996_struct(32, 18638, "Spell: Gatestone Teleport", "You can now cast " + "<col=000080>" + "Gatestone Teleport" + "</col>" + " within Daemonheim.");
+				case 28:
+					return newstruct cs2func_script_996_struct(33, 17273, "Members: Flameburst defender" + "<br>" + " (with 33 Defence)", "Members can now wield " + "<col=000080>" + "flameburst defenders" + "</col>" + " within Daemonheim. (They also need level 33 Defence.)");
+				case 29:
+					return newstruct cs2func_script_996_struct(36, 17275, "Members: Frostbite dagger" + "<br>" + " (with 36 Attack)", "Members can now wield " + "<col=000080>" + "frostbite daggers" + "</col>" + " within Daemonheim. (They also need level 36 Attack.)");
+				case 30:
+					return newstruct cs2func_script_996_struct(40, 17013, "Catalytic staff", "You can now wield " + "<col=000080>" + "catalytic staves" + "</col>" + " within Daemonheim.");
+				case 31:
+					return newstruct cs2func_script_996_struct(40, 16743, "Bryll hood (Tier 5)" + "<br>" + " (with 40 Defence)", "You can now wear " + "<col=000080>" + "bryll hoods" + "</col>" + " within Daemonheim. (You also need level 40 Defence.)");
+				case 32:
+					return newstruct cs2func_script_996_struct(40, 17225, "Bryll robe top (Tier 5)" + "<br>" + " (with 40 Defence)", "You can now wear " + "<col=000080>" + "bryll robe tops" + "</col>" + " within Daemonheim. (You also need level 40 Defence.)");
+				case 33:
+					return newstruct cs2func_script_996_struct(40, 16853, "Bryll robe bottom (Tier 5)" + "<br>" + " (with 40 Defence)", "You can now wear " + "<col=000080>" + "bryll robe bottoms" + "</col>" + " within Daemonheim. (You also need level 40 Defence.)");
+				case 34:
+					return newstruct cs2func_script_996_struct(40, 17159, "Bryll gloves (Tier 5)" + "<br>" + " (with 40 Defence)", "You can now wear " + "<col=000080>" + "bryll gloves" + "</col>" + " within Daemonheim. (You also need level 40 Defence.)");
+				case 35:
+					return newstruct cs2func_script_996_struct(40, 16919, "Bryll boots (Tier 5)" + "<br>" + " (with 40 Defence)", "You can now wear " + "<col=000080>" + "bryll boots" + "</col>" + " within Daemonheim. (You also need level 40 Defence.)");
+				case 36:
+					return newstruct cs2func_script_996_struct(50, 16999, "Members: Empowered water staff", "Members can now wield " + "<col=000080>" + "empowered water staves" + "</col>" + " within Daemonheim.");
+				case 37:
+					return newstruct cs2func_script_996_struct(50, 16745, "Members: Duskweed hood (Tier 6)" + "<br>" + " (with 50 Defence)", "Members can now wear " + "<col=000080>" + "duskweed hoods" + "</col>" + " within Daemonheim. (They also need level 50 Defence.)");
+				case 38:
+					return newstruct cs2func_script_996_struct(50, 17227, "Members: Duskweed robe top (Tier 6)" + "<br>" + " (with 50 Defence)", "Members can now wear " + "<col=000080>" + "duskweed robe tops" + "</col>" + " within Daemonheim. (They also need level 50 Defence.)");
+				case 39:
+					return newstruct cs2func_script_996_struct(50, 16855, "Members: Duskweed robe bottom (Tier 6)" + "<br>" + " (with 50 Defence)", "Members can now wear " + "<col=000080>" + "duskweed robe bottoms" + "</col>" + " within Daemonheim. (They also need level 50 Defence.)");
+				case 40:
+					return newstruct cs2func_script_996_struct(50, 17161, "Members: Duskweed gloves (Tier 6)" + "<br>" + " (with 50 Defence)", "Members can now wear " + "<col=000080>" + "duskweed gloves" + "</col>" + " within Daemonheim. (They also need level 50 Defence.)");
+				case 41:
+					return newstruct cs2func_script_996_struct(50, 16921, "Members: Duskweed boots (Tier 6)" + "<br>" + " (with 50 Defence)", "Members can now wear " + "<col=000080>" + "duskweed boots" + "</col>" + " within Daemonheim. (They also need level 50 Defence.)");
+				case 42:
+					return newstruct cs2func_script_996_struct(60, 17003, "Members: Empowered earth staff", "Members can now wield " + "<col=000080>" + "empowered earth staves" + "</col>" + " within Daemonheim.");
+				case 43:
+					return newstruct cs2func_script_996_struct(60, 16747, "Members: Soulbell hood (Tier 7)" + "<br>" + " (with 60 Defence)", "Members can now wear " + "<col=000080>" + "soulbell hoods" + "</col>" + " within Daemonheim. (You also need level 60 Defence).");
+				case 44:
+					return newstruct cs2func_script_996_struct(60, 17229, "Members: Soulbell robe top (Tier 7)" + "<br>" + " (with 60 Defence)", "Members can now wear " + "<col=000080>" + "soulbell robe tops" + "</col>" + " within Daemonheim. (They also need level 60 Defence.)");
+				case 45:
+					return newstruct cs2func_script_996_struct(60, 16857, "Members: Soulbell robe bottom (Tier 7)" + "<br>" + " (with 60 Defence)", "Members can now wear " + "<col=000080>" + "soulbell robe bottoms" + "</col>" + " within Daemonheim. (They also need level 60 Defence.)");
+				case 46:
+					return newstruct cs2func_script_996_struct(60, 17163, "Members: Soulbell gloves (Tier 7)" + "<br>" + " (with 60 Defence)", "Members can now wear " + "<col=000080>" + "soulbell gloves" + "</col>" + " within Daemonheim. (They also need level 60 Defence.)");
+				case 47:
+					return newstruct cs2func_script_996_struct(60, 16923, "Members: Soulbell boots (Tier 7)" + "<br>" + " (with 60 Defence)", "Members can now wear " + "<col=000080>" + "soulbell boots" + "</col>" + " within Daemonheim. (They also need level 60 Defence.)");
+				case 48:
+					return newstruct cs2func_script_996_struct(68, 17275, "Members: Hailstorm dagger" + "<br>" + " (with 68 Attack)", "Members can now wield " + "<col=000080>" + "hailstorm daggers" + "</col>" + " within Daemonheim. (They also need level 68 Attack.)");
+				case 49:
+					return newstruct cs2func_script_996_struct(68, 17293, "Members: Doomcore staff" + "<br>" + " (with 68 Attack)", "Members can now wield " + "<col=000080>" + "doomcore staves" + "</col>" + " within Daemonheim. (They also need level 68 Attack.)");
+				case 50:
+					return newstruct cs2func_script_996_struct(70, 17007, "Members: Empowered fire staff", "Members can now wield " + "<col=000080>" + "empowered fire staves" + "</col>" + " within Daemonheim.");
+				case 51:
+					return newstruct cs2func_script_996_struct(70, 16749, "Members: Ectohood (Tier 8)" + "<br>" + " (with 70 Defence)", "Members can now wear " + "<col=000080>" + "ectohoods" + "</col>" + " within Daemonheim. (They also need level 70 Defence.)");
+				case 52:
+					return newstruct cs2func_script_996_struct(70, 17231, "Members: Ectorobe top (Tier 8)" + "<br>" + " (with 70 Defence)", "Members can now wear " + "<col=000080>" + "ectorobe tops" + "</col>" + " within Daemonheim. (They also need level 70 Defence.)");
+				case 53:
+					return newstruct cs2func_script_996_struct(70, 16859, "Members: Ectorobe bottom (Tier 8)" + "<br>" + " (with 70 Defence)", "Members can now wear " + "<col=000080>" + "ectorobe bottoms" + "</col>" + " within Daemonheim. (They also need level 70 Defence.)");
+				case 54:
+					return newstruct cs2func_script_996_struct(70, 17165, "Members: Ectogloves (Tier 8)" + "<br>" + " (with 70 Defence)", "Members can now wear " + "<col=000080>" + "ectogloves" + "</col>" + " within Daemonheim. (They also need level 70 Defence.)");
+				case 55:
+					return newstruct cs2func_script_996_struct(70, 16925, "Members: Ectoboots (Tier 8)" + "<br>" + " (with 70 Defence)", "Members can now wear " + "<col=000080>" + "ectoboots" + "</col>" + " within Daemonheim. (They also need level 70 Defence.)");
+				case 56:
+					return newstruct cs2func_script_996_struct(80, 17011, "Members: Empowered air staff", "Members can now wield " + "<col=000080>" + "empowered air staves" + "</col>" + " within Daemonheim.");
+				case 57:
+					return newstruct cs2func_script_996_struct(80, 16751, "Members: Runic hood (Tier 9)" + "<br>" + " (with 80 Defence)", "Members can now wear " + "<col=000080>" + "runic hoods" + "</col>" + " within Daemonheim. (They also need level 80 Defence.)");
+				case 58:
+					return newstruct cs2func_script_996_struct(80, 17233, "Members: Runic robe top (Tier 9)" + "<br>" + " (with 80 Defence)", "Members can now wear " + "<col=000080>" + "runic robe tops" + "</col>" + " within Daemonheim. (They also need level 80 Defence.)");
+				case 59:
+					return newstruct cs2func_script_996_struct(80, 16861, "Members: Runic robe bottom (Tier 9)" + "<br>" + " (with 80 Defence)", "Members can now wear " + "<col=000080>" + "runic robe bottoms" + "</col>" + " within Daemonheim. (They also need level 80 Defence.)");
+				case 60:
+					return newstruct cs2func_script_996_struct(80, 17167, "Members: Runic gloves (Tier 9)" + "<br>" + " (with 80 Defence)", "Members can now wear " + "<col=000080>" + "runic gloves" + "</col>" + " within Daemonheim. (They also need level 80 Defence.)");
+				case 61:
+					return newstruct cs2func_script_996_struct(80, 16927, "Members: Runic boots (Tier 9)" + "<br>" + " (with 80 Defence)", "Members can now wear " + "<col=000080>" + "runic boots" + "</col>" + " within Daemonheim. (They also need level 80 Defence.)");
+				case 62:
+					return newstruct cs2func_script_996_struct(83, 17293, "Members: Doomcore staff", "Members can now wield " + "<col=000080>" + "doomcore staves" + "</col>" + " within Daemonheim.");
+				case 63:
+					return newstruct cs2func_script_996_struct(90, 17015, "Members: Empowered catalytic staff", "Members can now wield " + "<col=000080>" + "empowered catalytic staves" + "</col>" + " within Daemonheim.");
+				case 64:
+					return newstruct cs2func_script_996_struct(90, 16753, "Members: Spiritbloom hood (Tier 10)" + "<br>" + " (with 90 Defence)", "Members can now wear " + "<col=000080>" + "spiritbloom hoods" + "</col>" + " within Daemonheim. (They also need level 90 Defence.)");
+				case 65:
+					return newstruct cs2func_script_996_struct(90, 17235, "Members: Spiritbloom robe top (Tier 10)" + "<br>" + " (with 90 Defence)", "Members can now wear " + "<col=000080>" + "spiritbloom robe tops" + "</col>" + " within Daemonheim. (They also need level 90 Defence.)");
+				case 66:
+					return newstruct cs2func_script_996_struct(90, 16863, "Members: Spiritbloom robe bottom (Tier 10)" + "<br>" + " (with 90 Defence)", "Members can now wear " + "<col=000080>" + "spiritbloom robe bottoms" + "</col>" + " within Daemonheim. (They also need level 90 Defence.)");
+				case 67:
+					return newstruct cs2func_script_996_struct(90, 17169, "Members: Spiritbloom gloves (Tier 10)" + "<br>" + " (with 90 Defence)", "Members can now wear " + "<col=000080>" + "spiritbloom gloves" + "</col>" + " within Daemonheim. (They also need level 90 Defence.)");
+				case 68:
+					return newstruct cs2func_script_996_struct(90, 16929, "Members: Spiritbloom boots (Tier 10)" + "<br>" + " (with 90 Defence)", "Members can now wear " + "<col=000080>" + "spiritbloom boots" + "</col>" + " within Daemonheim. (They also need level 90 Defence.)");
+				case 69:
+					return newstruct cs2func_script_996_struct(99, 17015, "Members: Celestial catalytic staff", "Members can now wield " + "<col=000080>" + "celestial catalytic staves" + "</col>" + " within Daemonheim.");
+				case 70:
+					return newstruct cs2func_script_996_struct(99, 16755, "Members: Celestial hood (Tier 11)" + "<br>" + " (with 99 Defence)", "Members can now wear " + "<col=000080>" + "celestial hoods" + "</col>" + " within Daemonheim. (They also need level 99 Defence.)");
+				case 71:
+					return newstruct cs2func_script_996_struct(99, 17237, "Members: Celestial robe top (Tier 11)" + "<br>" + " (with 99 Defence)", "Members can now wear " + "<col=000080>" + "celestial robe tops" + "</col>" + " within Daemonheim. (They also need level 99 Defence.)");
+				case 72:
+					return newstruct cs2func_script_996_struct(99, 16865, "Members: Celestial robe bottom (Tier 11)" + "<br>" + " (with 99 Defence)", "Members can now wear " + "<col=000080>" + "celestial robe bottoms" + "</col>" + " within Daemonheim. (They also need level 99 Defence.)");
+				case 73:
+					return newstruct cs2func_script_996_struct(99, 17171, "Members: Celestial gloves (Tier 11)" + "<br>" + " (with 99 Defence)", "Members can now wear " + "<col=000080>" + "celestial gloves" + "</col>" + " within Daemonheim. (They also need level 99 Defence.)");
+				case 74:
+					return newstruct cs2func_script_996_struct(99, 16931, "Members: Celestial boots (Tier 11)" + "<br>" + " (with 99 Defence)", "Members can now wear " + "<col=000080>" + "celestial boots" + "</col>" + " within Daemonheim. (They also need level 99 Defence.)");
+			}
+			break;
+			case 10:
+			SWITCH (arg1) {
+				case 0:
+					 GOTO flow_299
+				case 1:
+					 GOTO flow_300
+				case 2:
+					 GOTO flow_301
+				case 3:
+					 GOTO flow_302
+				case 4:
+					 GOTO flow_303
+			}
+			break;
+		flow_299:
+			return newstruct cs2func_script_996_struct(1, 1907, "Wizard's Mind Bomb" + "<br>" + " will temporarily increase your Magic level by 2 levels.", "<col=000080>" + "Wizard's Mind Bomb" + "</col>" + " will now temporarily increase your Magic level by " + "<col=000080>" + "2 levels" + "</col>" + ".");
+		flow_300:
+			return newstruct cs2func_script_996_struct(50, 1907, "Wizard's Mind Bomb" + "<br>" + " will temporarily increase your Magic level by 3 levels.", "<col=000080>" + "Wizard's Mind Bomb" + "</col>" + " will now temporarily increase your Magic level by " + "<col=000080>" + "3 levels" + "</col>" + ".");
+		flow_301:
+			return newstruct cs2func_script_996_struct(66, 4675, "Members: Magic Guild", "Members can now enter the " + "<col=000080>" + "Wizard's Guild" + "</col>" + ".");
+		flow_302:
+			return newstruct cs2func_script_996_struct(70, 20704, "Members: access to the Livid Farm (with 60 Agility, 60 Crafting, 60 Farming, 50 Construction and Lunar Diplomacy)", "Members can access the " + "<col=000080>" + "Livid Farm" + "</col>" + " (with 60 Farming, 60 Agility, 60 Crafting, 50 Construction and Lunar Diplomacy).");
+		flow_303:
+			return newstruct cs2func_script_996_struct(99, 9762, "Skill mastery", "<col=000080>" + "Congratulations! You are now a master of " + "<col=800000>" + "Magic" + "<col=000080>" + ". Members can visit the " + "<col=800000>" + "robe store" + "<col=000080>" + " in the " + "<col=800000>" + "Wizards' Guild" + "<col=000080>" + ". They have something special that is only available to true masters of the " + "<col=800000>" + "Magic" + "<col=000080>" + " skill!");
+	}
+	return newstruct cs2func_script_996_struct(0, -1, "", "");
+}

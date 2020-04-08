@@ -1,0 +1,4 @@
+void script_4288() {
+	sendStringInput(globalstring_348);
+	return;
+}

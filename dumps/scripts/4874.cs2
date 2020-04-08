@@ -1,0 +1,12 @@
+void script_4874(int arg0) {
+	int ivar1;
+	bitconfig_9553 = arg0;
+	ivar1 = add(0, 1);
+	while (ivar1 <= 10) {
+		setWidgetIsHidden(true, new WidgetPointer(script_4871(ivar1)));
+		ivar1 = add(ivar1, 1);
+	}
+	setWidgetIsHidden(false, new WidgetPointer(script_4871(arg0)));
+	script_4864();
+	return;
+}

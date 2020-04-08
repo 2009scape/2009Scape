@@ -1,0 +1,6 @@
+void script_2455(int arg0,int arg1) {
+	if (isWidgetHidden(new WidgetPointer(34,16)) && isWidgetHidden(new WidgetPointer(34,44))) {
+		setWidgetSprite(arg1, new WidgetPointer(arg0));
+	}
+	return;
+}

@@ -1,0 +1,25 @@
+void script_3137(int arg0) {
+	string svar0;
+	if ((globalint_998 > 0) && (globalint_999 > 0)) {
+		script_3143(1, "Please delete one of your existing favourite worlds before setting another.");
+		return;
+	}
+	if (globalint_998 < 1) {
+		script_1857(arg0);
+	} else {
+		if (globalint_999 < 1) {
+			script_1858(arg0);
+		}
+	}
+	globalint_998 = script_1853();
+	globalint_999 = script_1854();
+	script_3113();
+	svar0 = "Your changes cannot be saved because" + "<br>" + "you are using the unsigned client.";
+	if (((boolean)cs2method5420())) {
+		script_3143(1, svar0);
+	} else {
+		script_3143(0, "World " + intToStr(arg0) + " has been added to your favourites.");
+	}
+	script_3065(1);
+	return;
+}

@@ -1,0 +1,33 @@
+void script_4463(int arg0,int arg1) {
+	int ivar2;
+	string svar0;
+	svar0 = "";
+	ivar2 = 0;
+	if (cs2method3751()) {
+		if (cs2method3701()) {
+			svar0 = cs2method3756(arg0);
+			if (((boolean)arg1)) {
+				if (isFriend(svar0)) {
+					ivar2 = 1;
+				} else {
+					message(0, 0, "You only message people on your Friends List.");
+				}
+			} else {
+				if (arg1 == 8) {
+					script_4466(svar0);
+				}
+			}
+		} else {
+			messageType0("You must be in a clan to do that.");
+		}
+	} else {
+		messageType0("You must be in a clan to do that.");
+	}
+	if (((boolean)ivar2)) {
+		globalint_1650 = 1;
+		globalstring_23 = svar0;
+		script_1558(0);
+		return;
+	}
+	return;
+}

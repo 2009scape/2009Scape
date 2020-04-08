@@ -1,0 +1,15 @@
+int script_2687() {
+	if (standart_config_1447 < 100) {
+		return 10000;
+	}
+	if (standart_config_1447 < 200) {
+		return 12500;
+	}
+	if (standart_config_1447 < 300) {
+		return 15000;
+	}
+	if (standart_config_1447 < 400) {
+		return 17500;
+	}
+	return 20000;
+}

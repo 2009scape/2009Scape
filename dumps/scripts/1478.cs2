@@ -1,0 +1,13 @@
+void script_1478() {
+	int ivar0;
+	globalstring_138 = globalstring_22;
+	ivar0 = script_1479(globalstring_138);
+	if (ivar0 > 1) {
+		messageType0("Search for '" + replaceLtGt(globalstring_138) + "' returned " + intToStr(ivar0) + " results.");
+	} else if (((boolean)ivar0)) {
+		messageType0("Search for '" + replaceLtGt(globalstring_138) + "' returned " + intToStr(ivar0) + " result.");
+	} else {
+		messageType0("Search for '" + replaceLtGt(globalstring_138) + "' returned 0 results.");
+	}
+	return;
+}

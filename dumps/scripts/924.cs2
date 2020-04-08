@@ -1,0 +1,17 @@
+void script_924(int arg0,int arg1,int arg2,int arg3,string arg4) {
+	int ivar4;
+	ivar4 = add(6, multiply(globalint_742, 11));
+	if (stringMethod4107(arg4, "") != 0) {
+		createExtraChild(new WidgetPointer(449,8), 4, getExtraChildGap(new WidgetPointer(449,8)));
+		setWidgetPosition(0, ivar4, 0, 0);
+		setWidgetSize(16384, multiply(11, arg0), 2, 0);
+		setWidgetFont(arg3);
+		setWidgetRGB(new Color(globalint_1242));
+		setWidgetText(arg4);
+		setWidgetTextAlignment(arg1, 0, 0);
+		if (((boolean)arg2)) {
+			globalint_742 = add(globalint_742, arg0);
+		}
+	}
+	return;
+}

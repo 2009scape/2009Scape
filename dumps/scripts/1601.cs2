@@ -1,0 +1,55 @@
+void script_1601(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = -1;
+	ivar2 = -1;
+	switch (rnd(2)) {
+		case 0:
+			playSoundEffect(7813, 1, 0);
+			break;
+		case 1:
+			playSoundEffect(7817, 1, 0);
+			break;
+		case 2:
+			playSoundEffect(7818, 1, 0);
+	}
+	switch (arg0) {
+		case 63701023:
+			ivar1 = 63700995;
+			ivar2 = 63700996;
+			break;
+		case 63701017:
+			ivar1 = 63700996;
+			ivar2 = 63700997;
+			break;
+		case 63701012:
+			ivar1 = 63700997;
+			ivar2 = 63700998;
+			break;
+		case 63701007:
+			ivar1 = 63700998;
+			ivar2 = 63700999;
+			break;
+		case 63701003:
+			ivar1 = 63700999;
+			ivar2 = 63700998;
+			break;
+		case 63701008:
+			ivar1 = 63700998;
+			ivar2 = 63700997;
+			break;
+		case 63701013:
+			ivar1 = 63700997;
+			ivar2 = 63700996;
+			break;
+		case 63701018:
+			ivar1 = 63700996;
+			ivar2 = 63700995;
+			break;
+		default:
+			script_675();
+	}
+	setWidgetIsHidden(true, new WidgetPointer(ivar1));
+	setWidgetIsHidden(false, new WidgetPointer(ivar2));
+	return;
+}

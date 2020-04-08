@@ -1,0 +1,38 @@
+void script_2973() {
+	if (getSkillCurrentLvl(22) < 56) {
+		setWidgetRGB(new Color(134, 131, 96), new WidgetPointer(459,27));
+	} else {
+		setWidgetRGB(new Color(234, 231, 196), new WidgetPointer(459,27));
+	}
+	if (getSkillCurrentLvl(22) < 57) {
+		setWidgetRGB(new Color(134, 131, 96), new WidgetPointer(459,23));
+	} else {
+		setWidgetRGB(new Color(234, 231, 196), new WidgetPointer(459,23));
+	}
+	if (getSkillCurrentLvl(22) < 59) {
+		setWidgetRGB(new Color(134, 131, 96), new WidgetPointer(459,19));
+	} else {
+		setWidgetRGB(new Color(234, 231, 196), new WidgetPointer(459,19));
+	}
+	if (getSkillCurrentLvl(22) < 62) {
+		setWidgetRGB(new Color(134, 131, 96), new WidgetPointer(459,15));
+	} else {
+		setWidgetRGB(new Color(234, 231, 196), new WidgetPointer(459,15));
+	}
+	if (getSkillCurrentLvl(22) < 65) {
+		setWidgetRGB(new Color(134, 131, 96), new WidgetPointer(459,7));
+	} else {
+		setWidgetRGB(new Color(234, 231, 196), new WidgetPointer(459,7));
+	}
+	if (getSkillCurrentLvl(22) < 70) {
+		setWidgetRGB(new Color(134, 131, 96), new WidgetPointer(459,11));
+	} else {
+		setWidgetRGB(new Color(234, 231, 196), new WidgetPointer(459,11));
+	}
+	if (getSkillCurrentLvl(22) < 80) {
+		setWidgetRGB(new Color(134, 131, 96), new WidgetPointer(459,3));
+	} else {
+		setWidgetRGB(new Color(234, 231, 196), new WidgetPointer(459,3));
+	}
+	return;
+}

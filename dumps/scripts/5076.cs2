@@ -1,0 +1,21 @@
+void script_5076(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	ivar2 = 0;
+	ivar3 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		if (isWidgetHidden()) {
+			ivar2 = divide(subtract(getWidgetScrollMaxH(new WidgetPointer(1111,15)), getWidgetActualWidth(new WidgetPointer(1111,15))), 2);
+			ivar3 = ivar2;
+		} else {
+			ivar2 = subtract(add(getWidgetActualX(), divide(getWidgetActualWidth(), 2)), divide(getWidgetActualWidth(new WidgetPointer(1111,15)), 2));
+			ivar3 = subtract(add(getWidgetActualY(), divide(getWidgetActualHeight(), 2)), divide(getWidgetActualHeight(new WidgetPointer(1111,15)), 2));
+		}
+	} else {
+		ivar2 = divide(subtract(getWidgetScrollMaxH(new WidgetPointer(1111,15)), getWidgetActualWidth(new WidgetPointer(1111,15))), 2);
+		ivar3 = ivar2;
+	}
+	cs2method2100(ivar2, ivar3, new WidgetPointer(1111,15));
+	script_5053(0, 0);
+	return;
+}

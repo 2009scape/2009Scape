@@ -1,0 +1,47 @@
+cs2func_script_3269_struct(4,0,0) script_3269(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	if (((boolean)arg0)) {
+		arg2 = 48;
+		arg3 = 48;
+	}
+	ivar4 = arg1;
+	if (((boolean)globalint_1198)) {
+		ivar4 = add(ivar4, 2);
+		if (((boolean)arg0)) {
+			ivar4 = add(ivar4, arg3);
+		} else {
+			ivar4 = add(ivar4, arg2);
+		}
+	}
+	ivar5 = ivar4;
+	if (((boolean)globalint_1199)) {
+		ivar5 = add(ivar5, 2);
+		if (arg0 == 2) {
+			ivar5 = add(ivar5, arg3);
+		} else {
+			ivar5 = add(ivar5, arg2);
+		}
+	}
+	ivar6 = ivar5;
+	if (((boolean)globalint_1200)) {
+		ivar6 = add(ivar6, 2);
+		if (arg0 == 3) {
+			ivar6 = add(ivar6, arg3);
+		} else {
+			ivar6 = add(ivar6, arg2);
+		}
+	}
+	ivar7 = ivar6;
+	if (((boolean)globalint_1201)) {
+		ivar7 = add(ivar7, 2);
+		if (arg0 == 4) {
+			ivar7 = add(ivar7, arg3);
+		} else {
+			ivar7 = add(ivar7, arg2);
+		}
+	}
+	return newstruct cs2func_script_3269_struct(ivar4, ivar5, ivar6, ivar7);
+}

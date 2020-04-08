@@ -1,0 +1,90 @@
+void script_3680() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	string svar0;
+	int stack_dump0;
+	script_41(12255248);
+	globalint_1 = 0;
+	ivar0 = -1;
+	if (setWidgetRegister(new WidgetPointer(187,4))) {
+		stack_dump0 = 1133;
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: opcode 1613 not decompileable
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeSpecialCall(FlowBlocksGenerator.java:297)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:249)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+				at tests.Main.main(Main.java:45)
+			
+		 */
+	}
+	ivar1 = 0;
+	ivar2 = 0;
+	svar0 = "";
+	ivar3 = strLength(globalstring_196);
+	ivar4 = 5;
+	while (ivar0 != -1) {
+		if (setWidgetRegister(new WidgetPointer(187,1), multiply(ivar0, 2)) && setWidgetRegister(new WidgetPointer(187,1), add(multiply(ivar0, 2), 1))) {
+			setWidgetNoOptions();
+			setWidgetNoOptions();
+			svar0 = lower(getWidgetText());
+			if (strLength(svar0) > 0) {
+				if (((boolean)script_837(ivar0))) {
+					if (((boolean)ivar3) || (strIndexof(0, svar0, globalstring_196) != -1)) {
+						setWidgetContextMenuOption(2, "Unlock hint");
+						script_3681(ivar0);
+						setWidgetHidden(0);
+						setWidgetHidden(0);
+						setWidgetPosition(15, ivar4, 0, 0);
+						setWidgetPosition(2, add(ivar4, 1), 0, 0);
+						ivar4 = add(ivar4, 15);
+					} else {
+						setWidgetHidden(1);
+						setWidgetHidden(1);
+					}
+					ivar1 = add(ivar1, 1);
+				} else {
+					if (((boolean)ivar3) || (strIndexof(0, svar0, globalstring_196) != -1)) {
+						setWidgetContextMenuOption(2, "Unlock hint");
+						setWidgetRGB(new Color(255, 0, 0));
+						setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), -2147483643, 16711680, "Iii");
+						setScriptCallOnClickContextMenu(-1, "");
+						setWidgetHidden(0);
+						setWidgetPosition(15, ivar4, 0, 0);
+						setWidgetPosition(2, add(ivar4, 1), 0, 0);
+						ivar4 = add(ivar4, 15);
+					} else {
+						setWidgetHidden(1);
+					}
+					setWidgetHidden(1);
+				}
+				ivar2 = add(ivar2, 1);
+			}
+			stack_dump0 = 1133;
+			/* 
+				mgi.tools.jagdecs2.DecompilerException: opcode 1613 not decompileable
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeSpecialCall(FlowBlocksGenerator.java:297)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:249)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+					at tests.Main.main(Main.java:45)
+				
+			 */
+		}
+		ivar0 = -1;
+	}
+	setWidgetScrollMax(167, add(5, ivar4), new WidgetPointer(187,1));
+	script_72(12255234, 12255233, globalint_88);
+	setWidgetText(new WidgetPointer(187,5), "Unlocked:" + "<br>" + intToStr(ivar1) + " / " + intToStr(ivar2));
+	if (ivar4 == 5) {
+		setWidgetIsHidden(false, new WidgetPointer(187,18));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(187,18));
+	}
+	return;
+}

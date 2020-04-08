@@ -1,0 +1,28 @@
+void script_2126(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7) {
+	globalint_681 = mod(add(add(globalint_681, rndExcl(4)), 2), 2048);
+	globalint_684 = mod(add(add(globalint_684, rndExcl(4)), 2), 2048);
+	globalint_687 = mod(add(add(globalint_687, rndExcl(4)), 2), 2048);
+	globalint_690 = mod(add(add(globalint_690, rndExcl(4)), 2), 2048);
+	if ((globalint_680 < 20) && ((globalint_680 < -20) || ((boolean)rndExcl(2)))) {
+		globalint_680 = min(add(add(globalint_680, rndExcl(3)), 1), 25);
+	} else {
+		globalint_680 = max(subtract(globalint_680, add(rndExcl(3), 1)), -25);
+	}
+	if ((globalint_683 < 20) && ((globalint_683 < -20) || ((boolean)rndExcl(2)))) {
+		globalint_683 = min(add(add(globalint_683, rndExcl(3)), 1), 25);
+	} else {
+		globalint_683 = max(subtract(globalint_683, add(rndExcl(3), 1)), -25);
+	}
+	if ((globalint_686 < 20) && ((globalint_686 < -20) || ((boolean)rndExcl(2)))) {
+		globalint_686 = min(add(add(globalint_686, rndExcl(3)), 1), 25);
+	} else {
+		globalint_686 = max(subtract(globalint_686, add(rndExcl(3), 1)), -25);
+	}
+	if ((globalint_689 < 20) && ((globalint_689 < -20) || ((boolean)rndExcl(2)))) {
+		globalint_689 = min(add(add(globalint_689, rndExcl(3)), 1), 25);
+	} else {
+		globalint_689 = max(subtract(globalint_689, add(rndExcl(3), 1)), -25);
+	}
+	script_2127(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+	return;
+}

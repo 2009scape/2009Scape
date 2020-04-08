@@ -1,0 +1,60 @@
+void script_5180(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	ivar1 = cs2method_3408(105, 74, 4849, arg0);
+	svar0 = "";
+	svar1 = "";
+	svar2 = "";
+	if (ivar1 == -1) {
+		svar1 = "Select a goal from the list above.";
+		if (arg0 > -1) {
+			return;
+		}
+	} else {
+		svar0 = getOtherCommonData(ivar1, 1879);
+		svar1 = getOtherCommonData(ivar1, 1880);
+		if (arg0 != 13) {
+			if (((boolean)script_5200(arg0))) {
+				svar2 = "<col=00ff00>" + "COMPLETED" + "</col>";
+			} else {
+				svar2 = "<col=ff0000>" + "INCOMPLETE" + "</col>";
+			}
+		}
+		script_5204();
+	}
+	svar3 = "";
+	svar3 = concat("Goal: ", svar0);
+	if (strLength(svar2) > 0) {
+		svar3 = concat(svar3, "<br>" + "Status: ");
+		svar3 = concat(svar3, svar2);
+	}
+	svar3 = concat(svar3, "<br>");
+	svar3 = concat(svar3, svar1);
+	ivar2 = 10;
+	ivar3 = 16;
+	ivar4 = subtract(getWidgetActualWidth(new WidgetPointer(1122,62)), multiply(ivar2, 2));
+	ivar5 = getLineCount(ivar4, 495, svar3);
+	setWidgetTextAlignment(0, 0, ivar3, new WidgetPointer(1122,63));
+	ivar6 = multiply(ivar3, ivar5);
+	setWidgetPosition(ivar2, ivar2, 0, 0, new WidgetPointer(1122,63));
+	setWidgetSize(ivar4, ivar6, 0, 0, new WidgetPointer(1122,63));
+	setWidgetText(new WidgetPointer(1122,63), svar3);
+	ivar7 = add(add(ivar6, ivar2), ivar2);
+	if (ivar7 < getWidgetActualHeight(new WidgetPointer(1122,62))) {
+		ivar7 = getWidgetActualHeight(new WidgetPointer(1122,62));
+	}
+	setWidgetScrollMax(getWidgetActualWidth(new WidgetPointer(1122,62)), ivar7, new WidgetPointer(1122,62));
+	script_31(73531519, 73531454, 5666, 5663, 5664, 5665, 5686, 5685);
+	globalint_1596 = arg0;
+	script_5176();
+	return;
+}

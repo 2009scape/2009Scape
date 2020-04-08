@@ -1,0 +1,175 @@
+void script_3489() {
+	int ivar0;
+	int ivar1;
+	ivar0 = cs2method_3408(105, 103, 3088, globalint_1184);
+	ivar1 = 0;
+	if (globalint_1186 < 17) {
+		switch (globalint_1184) {
+			case 1:
+				if (bitconfig_8053 == 10) {
+					setWidgetIsHidden(true, new WidgetPointer(993,139));
+				} else {
+					setWidgetIsHidden(false, new WidgetPointer(993,139));
+				}
+				if (bitconfig_8054 == 10) {
+					setWidgetIsHidden(true, new WidgetPointer(993,46));
+				} else {
+					setWidgetIsHidden(false, new WidgetPointer(993,46));
+				}
+				if (bitconfig_8055 == 10) {
+					setWidgetIsHidden(true, new WidgetPointer(993,88));
+				} else {
+					setWidgetIsHidden(false, new WidgetPointer(993,88));
+				}
+				break;
+			case 2:
+				if (bitconfig_8056 == 10) {
+					setWidgetIsHidden(true, new WidgetPointer(993,139));
+				} else {
+					setWidgetIsHidden(false, new WidgetPointer(993,139));
+				}
+				if (bitconfig_8057 == 10) {
+					setWidgetIsHidden(true, new WidgetPointer(993,46));
+				} else {
+					setWidgetIsHidden(false, new WidgetPointer(993,46));
+				}
+				if (bitconfig_8058 == 10) {
+					setWidgetIsHidden(true, new WidgetPointer(993,88));
+				} else {
+					setWidgetIsHidden(false, new WidgetPointer(993,88));
+				}
+				break;
+			case 3:
+				if (bitconfig_8059 == 10) {
+					setWidgetIsHidden(true, new WidgetPointer(993,139));
+				} else {
+					setWidgetIsHidden(false, new WidgetPointer(993,139));
+				}
+				if (bitconfig_8060 == 10) {
+					setWidgetIsHidden(true, new WidgetPointer(993,46));
+				} else {
+					setWidgetIsHidden(false, new WidgetPointer(993,46));
+				}
+				if (bitconfig_8061 == 10) {
+					setWidgetIsHidden(true, new WidgetPointer(993,88));
+				} else {
+					setWidgetIsHidden(false, new WidgetPointer(993,88));
+				}
+				break;
+			case 4:
+				if (bitconfig_8062 == 10) {
+					setWidgetIsHidden(true, new WidgetPointer(993,139));
+				} else {
+					setWidgetIsHidden(false, new WidgetPointer(993,139));
+				}
+				if (bitconfig_8063 == 10) {
+					setWidgetIsHidden(true, new WidgetPointer(993,46));
+				} else {
+					setWidgetIsHidden(false, new WidgetPointer(993,46));
+				}
+				if (bitconfig_8064 == 10) {
+					setWidgetIsHidden(true, new WidgetPointer(993,88));
+				} else {
+					setWidgetIsHidden(false, new WidgetPointer(993,88));
+				}
+		}
+		setWidgetPosition(getWidgetActualX(new WidgetPointer(993,112)), add(getWidgetActualY(new WidgetPointer(993,112)), 4), 0, 0, new WidgetPointer(993,112));
+		setWidgetPosition(getWidgetActualX(new WidgetPointer(993,27)), add(getWidgetActualY(new WidgetPointer(993,27)), 4), 0, 0, new WidgetPointer(993,27));
+		setWidgetPosition(getWidgetActualX(new WidgetPointer(993,26)), add(getWidgetActualY(new WidgetPointer(993,26)), 4), 0, 0, new WidgetPointer(993,26));
+		globalint_1186 = add(1, globalint_1186);
+	} else if (globalint_1186 < 33) {
+		setWidgetPosition(getWidgetActualX(new WidgetPointer(993,27)), add(getWidgetActualY(new WidgetPointer(993,27)), 4), 0, 0, new WidgetPointer(993,27));
+		setWidgetPosition(getWidgetActualX(new WidgetPointer(993,26)), add(getWidgetActualY(new WidgetPointer(993,26)), 4), 0, 0, new WidgetPointer(993,26));
+		globalint_1186 = add(1, globalint_1186);
+	} else if (globalint_1186 < 49) {
+		setWidgetPosition(getWidgetActualX(new WidgetPointer(993,26)), add(getWidgetActualY(new WidgetPointer(993,26)), 4), 0, 0, new WidgetPointer(993,26));
+		globalint_1186 = add(1, globalint_1186);
+	} else {
+		if (globalint_1186 < 69) {
+			ivar1 = multiplyDivide(subtract(globalint_1186, 48), 20, 100);
+			switch (globalint_1184) {
+				case 1:
+					setWidgetSize(multiplyDivide(multiplyDivide(16384, 100, multiply(bitconfig_8053, 10)), 100, ivar1), 16384, 2, 2, new WidgetPointer(993,160));
+					if (bitconfig_8053 == 10) {
+						setWidgetIsHidden(true, new WidgetPointer(993,139));
+					} else {
+						setWidgetIsHidden(false, new WidgetPointer(993,139));
+					}
+					setWidgetSize(multiplyDivide(multiplyDivide(16384, 100, multiply(bitconfig_8054, 10)), 100, ivar1), 16384, 2, 2, new WidgetPointer(993,67));
+					if (bitconfig_8054 == 10) {
+						setWidgetIsHidden(true, new WidgetPointer(993,46));
+					} else {
+						setWidgetIsHidden(false, new WidgetPointer(993,46));
+					}
+					setWidgetSize(multiplyDivide(multiplyDivide(16384, 100, multiply(bitconfig_8055, 10)), 100, ivar1), 16384, 2, 2, new WidgetPointer(993,109));
+					if (bitconfig_8055 == 10) {
+						setWidgetIsHidden(true, new WidgetPointer(993,88));
+					} else {
+						setWidgetIsHidden(false, new WidgetPointer(993,88));
+					}
+					break;
+				case 2:
+					setWidgetSize(multiplyDivide(multiplyDivide(16384, 100, multiply(bitconfig_8056, 10)), 100, ivar1), 16384, 2, 2, new WidgetPointer(993,160));
+					if (bitconfig_8056 == 10) {
+						setWidgetIsHidden(true, new WidgetPointer(993,139));
+					} else {
+						setWidgetIsHidden(false, new WidgetPointer(993,139));
+					}
+					setWidgetSize(multiplyDivide(multiplyDivide(16384, 100, multiply(bitconfig_8057, 10)), 100, ivar1), 16384, 2, 2, new WidgetPointer(993,67));
+					if (bitconfig_8057 == 10) {
+						setWidgetIsHidden(true, new WidgetPointer(993,46));
+					} else {
+						setWidgetIsHidden(false, new WidgetPointer(993,46));
+					}
+					setWidgetSize(multiplyDivide(multiplyDivide(16384, 100, multiply(bitconfig_8058, 10)), 100, ivar1), 16384, 2, 2, new WidgetPointer(993,109));
+					if (bitconfig_8058 == 10) {
+						setWidgetIsHidden(true, new WidgetPointer(993,88));
+					} else {
+						setWidgetIsHidden(false, new WidgetPointer(993,88));
+					}
+					break;
+				case 3:
+					setWidgetSize(multiplyDivide(multiplyDivide(16384, 100, multiply(bitconfig_8059, 10)), 100, ivar1), 16384, 2, 2, new WidgetPointer(993,160));
+					if (bitconfig_8059 == 10) {
+						setWidgetIsHidden(true, new WidgetPointer(993,139));
+					} else {
+						setWidgetIsHidden(false, new WidgetPointer(993,139));
+					}
+					setWidgetSize(multiplyDivide(multiplyDivide(16384, 100, multiply(bitconfig_8060, 10)), 100, ivar1), 16384, 2, 2, new WidgetPointer(993,67));
+					if (bitconfig_8060 == 10) {
+						setWidgetIsHidden(true, new WidgetPointer(993,46));
+					} else {
+						setWidgetIsHidden(false, new WidgetPointer(993,46));
+					}
+					setWidgetSize(multiplyDivide(multiplyDivide(16384, 100, multiply(bitconfig_8061, 10)), 100, ivar1), 16384, 2, 2, new WidgetPointer(993,109));
+					if (bitconfig_8061 == 10) {
+						setWidgetIsHidden(true, new WidgetPointer(993,88));
+					} else {
+						setWidgetIsHidden(false, new WidgetPointer(993,88));
+					}
+					break;
+				case 4:
+					setWidgetSize(multiplyDivide(multiplyDivide(16384, 100, multiply(bitconfig_8062, 10)), 100, ivar1), 16384, 2, 2, new WidgetPointer(993,160));
+					if (bitconfig_8062 == 10) {
+						setWidgetIsHidden(true, new WidgetPointer(993,139));
+					} else {
+						setWidgetIsHidden(false, new WidgetPointer(993,139));
+					}
+					setWidgetSize(multiplyDivide(multiplyDivide(16384, 100, multiply(bitconfig_8063, 10)), 100, ivar1), 16384, 2, 2, new WidgetPointer(993,67));
+					if (bitconfig_8063 == 10) {
+						setWidgetIsHidden(true, new WidgetPointer(993,46));
+					} else {
+						setWidgetIsHidden(false, new WidgetPointer(993,46));
+					}
+					setWidgetSize(multiplyDivide(multiplyDivide(16384, 100, multiply(bitconfig_8064, 10)), 100, ivar1), 16384, 2, 2, new WidgetPointer(993,109));
+					if (bitconfig_8064 == 10) {
+						setWidgetIsHidden(true, new WidgetPointer(993,88));
+					} else {
+						setWidgetIsHidden(false, new WidgetPointer(993,88));
+					}
+			}
+			globalint_1186 = add(1, globalint_1186);
+		}
+	}
+	return;
+}

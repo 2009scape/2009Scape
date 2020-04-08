@@ -1,0 +1,17 @@
+void script_2060(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar1 = cs2method_3408(105, 74, 2162, bitconfig_357);
+	ivar2 = cs2method_3408(73, 105, getOtherCommonData(ivar1, 664), arg0);
+	ivar3 = getOtherCommonData(ivar1, 661);
+	if (ivar3 != -1) {
+		script_41(ivar3);
+	}
+	if (ivar2 == globalint_631) {
+		setWidgetSprite(1703, new WidgetPointer(arg0));
+	} else {
+		setWidgetSprite(1701, new WidgetPointer(arg0));
+	}
+	return;
+}

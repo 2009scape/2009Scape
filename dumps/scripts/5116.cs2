@@ -1,0 +1,7 @@
+int script_5116(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	ivar2 = 4515;
+	ivar3 = cs2method_3408(105, 103, ivar2, arg0);
+	return cs2method_3408(105, 74, ivar3, arg1);
+}

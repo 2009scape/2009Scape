@@ -1,0 +1,4 @@
+void script_5320() {
+	script_5324(bitconfig_9887);
+	return;
+}

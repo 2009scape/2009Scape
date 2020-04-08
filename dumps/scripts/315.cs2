@@ -1,0 +1,23 @@
+void script_315() {
+	int ivar0;
+	ivar0 = -1;
+	if ((bitconfig_8093 != globalint_196) || (globalint_197 != bitconfig_8089)) {
+		ivar0 = script_734(bitconfig_8093);
+		globalint_196 = bitconfig_8093;
+		globalint_197 = bitconfig_8089;
+		script_387(ivar0);
+		globalint_86 = bitconfig_8090;
+		script_390(ivar0);
+	} else {
+		if (globalint_86 != bitconfig_8090) {
+			globalint_86 = bitconfig_8090;
+			script_390(script_734(globalint_196));
+		}
+	}
+	if (globalint_1020 != bitconfig_6501) {
+		globalint_1020 = bitconfig_6501;
+		script_391();
+	}
+	script_2741();
+	return;
+}

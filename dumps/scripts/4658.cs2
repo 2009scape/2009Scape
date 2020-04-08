@@ -1,0 +1,12 @@
+void script_4658(int arg0) {
+	int ivar1;
+	ivar1 = divide(standart_config_2201, 3);
+	setWidgetText(new WidgetPointer(arg0), intToStr(standart_config_2201));
+	script_4542(ivar1, 1441832, 1441837);
+	if (standart_config_2201 <= 100) {
+		setWidgetAnimation(9777, new WidgetPointer(22,2));
+	} else {
+		setWidgetAnimation(9804, new WidgetPointer(22,2));
+	}
+	return;
+}

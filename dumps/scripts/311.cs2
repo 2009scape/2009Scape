@@ -1,0 +1,8 @@
+void script_311(int arg0,int arg1,string arg2) {
+	if (((boolean)bitconfig_6177)) {
+		deleteAllExtraChilds(new WidgetPointer(755,57));
+		return;
+	}
+	script_312(add(arg0, 3), add(arg1, 3), arg2);
+	return;
+}

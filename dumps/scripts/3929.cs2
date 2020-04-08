@@ -1,0 +1,34 @@
+void script_3929(int arg0,int arg1,int arg2) {
+	if (((boolean)arg2)) {
+		if (setWidgetRegister(new WidgetPointer(arg0), 0)) {
+			setWidgetSprite(4038);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 1)) {
+			setWidgetSprite(4032);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 2)) {
+			setWidgetSprite(4035);
+		}
+	} else if (cs2method7007() == arg1) {
+		if (setWidgetRegister(new WidgetPointer(arg0), 0)) {
+			setWidgetSprite(4039);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 1)) {
+			setWidgetSprite(4033);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 2)) {
+			setWidgetSprite(4036);
+		}
+	} else {
+		if (setWidgetRegister(new WidgetPointer(arg0), 0)) {
+			setWidgetSprite(4037);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 1)) {
+			setWidgetSprite(4031);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 2)) {
+			setWidgetSprite(4034);
+		}
+	}
+	return;
+}

@@ -1,0 +1,9 @@
+void script_714(int arg0) {
+	createExtraChild(new WidgetPointer(arg0), 5, 4);
+	setWidgetSprite(937);
+	setWidgetSize(10, 32, 0, 0);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetHidden(0);
+	setScriptCallOnGameloop(144, new WidgetPointer(arg0), 4, getClientCycle(), add(getClientCycle(), 750), "Iiii");
+	return;
+}

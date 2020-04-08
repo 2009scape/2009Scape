@@ -1,0 +1,37 @@
+cs2func_script_4644_struct(2,0,0) script_4644(int arg0) {
+	flow_0:
+		SWITCH (arg0) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_6
+			case 4:
+				 GOTO flow_11
+		}
+		return newstruct cs2func_script_4644_struct(0, 0);
+	flow_1:
+		if (((boolean)bitconfig_9315)) {
+			if (((boolean)bitconfig_9314)) {
+				return newstruct cs2func_script_4644_struct(1, 1);
+			}
+			return newstruct cs2func_script_4644_struct(1, 0);
+		}
+		GOTO	flow_15
+	flow_6:
+		if (((boolean)bitconfig_9317)) {
+			if (((boolean)bitconfig_9316)) {
+				return newstruct cs2func_script_4644_struct(1, 1);
+			}
+			return newstruct cs2func_script_4644_struct(1, 0);
+		}
+		GOTO	flow_15
+	flow_11:
+		if (((boolean)bitconfig_9319)) {
+			if (((boolean)bitconfig_9318)) {
+				return newstruct cs2func_script_4644_struct(1, 1);
+			}
+			return newstruct cs2func_script_4644_struct(1, 0);
+		}
+	flow_15:
+		return newstruct cs2func_script_4644_struct(0, 0);
+}

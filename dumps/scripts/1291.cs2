@@ -1,0 +1,121 @@
+void script_1291(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	ivar4 = getWidgetParentId(new WidgetPointer(arg0));
+	ivar5 = 0;
+	switch (arg1) {
+		case 5341:
+			ivar5 = bitconfig_1435;
+			setWidgetText(new WidgetPointer(arg3), getItemName(arg1) + "<br>" + "(" + intToStr(ivar5) + "/" + intToStr(arg2) + ")");
+			break;
+		case 5343:
+			ivar5 = bitconfig_1436;
+			setWidgetText(new WidgetPointer(arg3), "Dibber" + "<br>" + "(" + intToStr(ivar5) + "/" + intToStr(arg2) + ")");
+			break;
+		case 952:
+			ivar5 = bitconfig_1437;
+			setWidgetText(new WidgetPointer(arg3), getItemName(arg1) + "<br>" + "(" + intToStr(ivar5) + "/" + intToStr(arg2) + ")");
+			break;
+		case 5325:
+			ivar5 = bitconfig_1440;
+			setWidgetText(new WidgetPointer(arg3), "Trowel" + "<br>" + "(" + intToStr(ivar5) + "/" + intToStr(arg2) + ")");
+			break;
+		case 6059:
+			ivar5 = bitconfig_1778;
+			setWidgetText(new WidgetPointer(arg3), getItemName(arg1) + "<br>" + "(" + intToStr(ivar5) + "/" + intToStr(arg2) + ")");
+			break;
+		case 1925:
+			ivar5 = bitconfig_1441;
+			setWidgetText(new WidgetPointer(arg3), getItemName(arg1) + "<br>" + "(" + intToStr(ivar5) + "/" + intToStr(arg2) + ")");
+			break;
+		case 6032:
+			ivar5 = bitconfig_1442;
+			setWidgetText(new WidgetPointer(arg3), getItemName(arg1) + "<br>" + "(" + intToStr(ivar5) + "/" + intToStr(arg2) + ")");
+			break;
+		case 6034:
+			ivar5 = bitconfig_1443;
+			setWidgetText(new WidgetPointer(arg3), getItemName(arg1) + "<br>" + "(" + intToStr(ivar5) + "/" + intToStr(arg2) + ")");
+			break;
+		case 5329:
+			ivar5 = bitconfig_1438;
+			setWidgetText(new WidgetPointer(arg3), getItemName(arg1) + "<br>" + "(" + intToStr(ivar5) + "/" + intToStr(arg2) + ")");
+			if (((boolean)bitconfig_1848)) {
+				arg1 = 7409;
+			}
+			break;
+		case 6797:
+			switch (bitconfig_1439) {
+				case 10:
+					arg1 = 18682;
+					ivar5 = 1;
+					setWidgetText(new WidgetPointer(arg3), "Magic watering can" + "<br>" + "(1/1)");
+					cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + "Magic watering can");
+					break;
+				case 9:
+					arg1 = 5340;
+					ivar5 = 1;
+					setWidgetText(new WidgetPointer(arg3), "Watering can (8)" + "<br>" + "(1/1)");
+					cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + "Watering can (8)");
+					break;
+				case 8:
+					arg1 = 5339;
+					ivar5 = 1;
+					setWidgetText(new WidgetPointer(arg3), "Watering can (7)" + "<br>" + "(1/1)");
+					cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + "Watering can (7)");
+					break;
+				case 7:
+					arg1 = 5338;
+					ivar5 = 1;
+					setWidgetText(new WidgetPointer(arg3), "Watering can (6)" + "<br>" + "(1/1)");
+					cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + "Watering can (6)");
+					break;
+				case 6:
+					arg1 = 5337;
+					ivar5 = 1;
+					setWidgetText(new WidgetPointer(arg3), "Watering can (5)" + "<br>" + "(1/1)");
+					cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + "Watering can (5)");
+					break;
+				case 5:
+					arg1 = 5336;
+					ivar5 = 1;
+					setWidgetText(new WidgetPointer(arg3), "Watering can (4)" + "<br>" + "(1/1)");
+					cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + "Watering can (4)");
+					break;
+				case 4:
+					arg1 = 5335;
+					ivar5 = 1;
+					setWidgetText(new WidgetPointer(arg3), "Watering can (3)" + "<br>" + "(1/1)");
+					cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + "Watering can (3)");
+					break;
+				case 3:
+					arg1 = 5334;
+					ivar5 = 1;
+					setWidgetText(new WidgetPointer(arg3), "Watering can (2)" + "<br>" + "(1/1)");
+					cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + "Watering can (2)");
+					break;
+				case 2:
+					arg1 = 5333;
+					ivar5 = 1;
+					setWidgetText(new WidgetPointer(arg3), "Watering can (1)" + "<br>" + "(1/1)");
+					cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + "Watering can (1)");
+					break;
+				case 1:
+					arg1 = 5331;
+					ivar5 = 1;
+					setWidgetText(new WidgetPointer(arg3), "Watering can (0)" + "<br>" + "(1/1)");
+					cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + "Watering can (0)");
+					break;
+			}
+			ivar5 = 0;
+			setWidgetText(new WidgetPointer(arg3), "Watering can" + "<br>" + "(0/1)");
+			cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + "Watering can");
+	}
+	setItemOnWidgetMethod2205(arg1, -1, new WidgetPointer(arg0));
+	setWidgetBorderThickness(1, new WidgetPointer(arg0));
+	if (ivar5 > 0) {
+		setWidgetRGB(new Color(125, 215, 100), new WidgetPointer(arg3));
+	} else {
+		setWidgetRGB(new Color(135, 35, 0), new WidgetPointer(arg3));
+	}
+	return;
+}

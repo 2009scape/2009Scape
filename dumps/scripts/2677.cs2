@@ -1,0 +1,5 @@
+void script_2677() {
+	setWidgetScrollMax(431, 1863, new WidgetPointer(467,11));
+	script_31(30605325, 30605323, 792, 789, 790, 791, 773, 788);
+	return;
+}

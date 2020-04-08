@@ -1,0 +1,25 @@
+void script_5086(int arg0,int arg1,int arg2) {
+	int ivar3;
+	if (arg1 == globalint_160) {
+		arg2 = 255;
+	}
+	ivar3 = multiply(arg1, 10);
+	if (setWidgetRegister(new WidgetPointer(arg0), ivar3)) {
+		if (arg2 == 255) {
+			setScriptCallOnGameloop(-1, "");
+			if (setWidgetRegister(new WidgetPointer(arg0), add(ivar3, 4))) {
+				cs2method2103(255);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg0), add(ivar3, 6))) {
+				cs2method2103(255);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg0), add(ivar3, 8))) {
+				cs2method2103(255);
+			}
+		} else {
+			setScriptCallOnGameloop(5087, new WidgetPointer(-32768,3), -2147483643, arg2, "Iii");
+			script_5088(arg0, arg2);
+		}
+	}
+	return;
+}

@@ -1,0 +1,6 @@
+void script_5138(int arg0,string arg1) {
+	int ivar1;
+	ivar1 = add(getWidgetActualX(new WidgetPointer(arg0)), divide(getWidgetActualWidth(new WidgetPointer(arg0)), 2));
+	script_4539(71827560, arg0, -1, 150, -1, -1, -1, 13, 4, 2, ivar1, getWidgetActualY(new WidgetPointer(arg0)), arg1);
+	return;
+}

@@ -1,0 +1,25 @@
+cs2func_script_5223_struct(2,0,0) script_5223(int arg0) {
+	switch (arg0) {
+		case 1:
+			return newstruct cs2func_script_5223_struct(71565435, 71565424);
+		case 2:
+			return newstruct cs2func_script_5223_struct(71566946, 71566936);
+		case 3:
+			return newstruct cs2func_script_5223_struct(71566961, 71566951);
+		case 4:
+			return newstruct cs2func_script_5223_struct(71566976, 71566966);
+		case 5:
+			return newstruct cs2func_script_5223_struct(71566991, 71566981);
+		case 6:
+			return newstruct cs2func_script_5223_struct(71567036, 71567026);
+		case 7:
+			return newstruct cs2func_script_5223_struct(71567051, 71567041);
+		case 8:
+			return newstruct cs2func_script_5223_struct(71567021, 71567011);
+		case 9:
+			return newstruct cs2func_script_5223_struct(71567007, 71566996);
+		case 10:
+			return newstruct cs2func_script_5223_struct(71567066, 71567056);
+	}
+	return newstruct cs2func_script_5223_struct(-1, -1);
+}

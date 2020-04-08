@@ -1,0 +1,16 @@
+void script_1474() {
+	setWidgetIsHidden(true, new WidgetPointer(762,115));
+	setWidgetIsHidden(true, new WidgetPointer(762,116));
+	setWidgetSprite(1423, new WidgetPointer(762,18));
+	setWidgetSprite(1431, new WidgetPointer(762,17));
+	if (((boolean)bitconfig_4893)) {
+		script_1456();
+	}
+	script_1463(1);
+	globalstring_138 = "";
+	script_1548(11);
+	globalint_188 = 0;
+	setWidgetText(new WidgetPointer(762,45), "Bank of RuneScape");
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(762,17));
+	return;
+}

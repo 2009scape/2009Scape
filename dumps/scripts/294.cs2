@@ -1,0 +1,18 @@
+void script_294(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	playSoundEffect(2266, 1, 0);
+	arg0 = script_2785(arg0);
+	if (arg0 == cs2method5235()) {
+		script_291(0, arg1, arg2, arg3, arg4, arg5);
+		return;
+	}
+	globalstring_31 = "";
+	script_308(arg4);
+	script_2046(arg5);
+	script_41(49479737);
+	loadDungeonmap(arg0);
+	globalint_172 = cs2method5218(arg0);
+	script_1372();
+	script_307();
+	script_291(0, arg1, arg2, arg3, arg4, arg5);
+	return;
+}

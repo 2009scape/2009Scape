@@ -1,0 +1,7 @@
+void script_17(int arg0) {
+	setWidgetBorderThickness(2, new WidgetPointer(arg0));
+	if (bitAnd(cs2method2800(new WidgetPointer(arg0)), 32) != 0) {
+		script_71(4);
+	}
+	return;
+}

@@ -1,0 +1,11 @@
+void script_3087(int arg0,int arg1) {
+	setWidgetIsHidden(true, new WidgetPointer(906,220));
+	if (arg1 < 0) {
+		setScriptCallOnMouseOver(-1, "", new WidgetPointer(arg0));
+	} else {
+		if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+			setScriptCallOnMouseOver(-1, "");
+		}
+	}
+	return;
+}

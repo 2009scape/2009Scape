@@ -1,0 +1,4 @@
+void script_1031() {
+	cs2method5400(0, "www", "kbase/viewcategory.ws?cat_id=827");
+	return;
+}

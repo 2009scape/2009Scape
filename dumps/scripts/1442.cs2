@@ -1,0 +1,66 @@
+void script_1442() {
+	switch (standart_config_75) {
+		case 0:
+			return;
+		case 1:
+			setWidgetIsHidden(false, new WidgetPointer(299,55));
+			setWidgetAnimation(632, new WidgetPointer(299,54));
+			break;
+		case 2:
+			setWidgetIsHidden(false, new WidgetPointer(299,47));
+			setWidgetAnimation(633, new WidgetPointer(299,53));
+			break;
+		case 3:
+			setWidgetIsHidden(false, new WidgetPointer(299,45));
+			setWidgetAnimation(630, new WidgetPointer(299,56));
+			break;
+		case 5:
+			setWidgetIsHidden(false, new WidgetPointer(299,44));
+			setWidgetAnimation(634, new WidgetPointer(299,58));
+			break;
+		case 6:
+			setWidgetIsHidden(false, new WidgetPointer(299,43));
+			setWidgetAnimation(635, new WidgetPointer(299,59));
+			break;
+		case 7:
+			setWidgetIsHidden(false, new WidgetPointer(299,42));
+			setWidgetAnimation(636, new WidgetPointer(299,60));
+			break;
+		case 8:
+			setWidgetIsHidden(false, new WidgetPointer(299,41));
+			setWidgetAnimation(637, new WidgetPointer(299,61));
+			break;
+		case 10:
+			setWidgetIsHidden(false, new WidgetPointer(299,39));
+			setWidgetAnimation(638, new WidgetPointer(299,63));
+			break;
+		case 11:
+			setWidgetIsHidden(false, new WidgetPointer(299,38));
+			setWidgetAnimation(639, new WidgetPointer(299,64));
+			break;
+		case 12:
+			setWidgetIsHidden(false, new WidgetPointer(299,37));
+			setWidgetAnimation(640, new WidgetPointer(299,65));
+			break;
+		case 13:
+			setWidgetIsHidden(false, new WidgetPointer(299,36));
+			setWidgetAnimation(641, new WidgetPointer(299,66));
+			break;
+		case 14:
+			setWidgetIsHidden(false, new WidgetPointer(299,35));
+			setWidgetAnimation(3545, new WidgetPointer(299,67));
+			break;
+		case 15:
+			setWidgetIsHidden(false, new WidgetPointer(299,34));
+			setWidgetAnimation(3546, new WidgetPointer(299,68));
+			break;
+		case 16:
+			setWidgetIsHidden(false, new WidgetPointer(299,33));
+			setWidgetAnimation(3476, new WidgetPointer(299,69));
+			break;
+		case 17:
+			setWidgetIsHidden(false, new WidgetPointer(299,32));
+			setWidgetAnimation(3477, new WidgetPointer(299,52));
+	}
+	return;
+}

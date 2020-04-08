@@ -1,0 +1,4 @@
+void script_510() {
+	globalint_51 = getWidget3DDistance(new WidgetPointer(605,0));
+	return;
+}

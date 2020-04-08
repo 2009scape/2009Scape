@@ -1,0 +1,9 @@
+void script_3233(string arg0) {
+	int ivar0;
+	ivar0 = 39059470;
+	if (hasSSKey()) {
+		ivar0 = 63897604;
+	}
+	setWidgetText(new WidgetPointer(ivar0), arg0);
+	return;
+}

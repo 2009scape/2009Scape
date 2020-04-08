@@ -1,0 +1,10 @@
+void script_3381(int arg0,int arg1) {
+	arg1 = add(arg1, 1);
+	setScriptCallOnGameloop(3381, new WidgetPointer(arg0), arg1, "Ii", new WidgetPointer(arg0));
+	if (arg1 > 1) {
+		globalint_1273 = 1;
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+		script_2945();
+	}
+	return;
+}

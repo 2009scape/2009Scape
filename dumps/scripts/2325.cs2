@@ -1,0 +1,26 @@
+void script_2325() {
+	if (((boolean)globalint_766) || (globalint_766 == 2)) {
+		messageType0("You can't do that right now.");
+		return;
+	}
+	playSoundEffect(6421, 1, 0);
+	if ((getWidgetActualX(new WidgetPointer(306,6)) >= getWidgetActualX(new WidgetPointer(306,18))) && (getWidgetActualX(new WidgetPointer(306,6)) < add(getWidgetActualX(new WidgetPointer(306,18)), getWidgetActualWidth(new WidgetPointer(306,18))))) {
+		globalint_765 = 1;
+		script_2326(globalint_761);
+	}
+	if ((getWidgetActualX(new WidgetPointer(306,7)) >= getWidgetActualX(new WidgetPointer(306,18))) && (getWidgetActualX(new WidgetPointer(306,7)) < add(getWidgetActualX(new WidgetPointer(306,18)), getWidgetActualWidth(new WidgetPointer(306,18))))) {
+		globalint_765 = 2;
+		script_2326(globalint_762);
+	}
+	if ((getWidgetActualX(new WidgetPointer(306,8)) >= getWidgetActualX(new WidgetPointer(306,18))) && (getWidgetActualX(new WidgetPointer(306,8)) < add(getWidgetActualX(new WidgetPointer(306,18)), getWidgetActualWidth(new WidgetPointer(306,18))))) {
+		globalint_765 = 3;
+		script_2326(globalint_763);
+	}
+	if ((getWidgetActualX(new WidgetPointer(306,9)) >= getWidgetActualX(new WidgetPointer(306,18))) && (getWidgetActualX(new WidgetPointer(306,9)) < add(getWidgetActualX(new WidgetPointer(306,18)), getWidgetActualWidth(new WidgetPointer(306,18))))) {
+		globalint_765 = 4;
+		script_2326(globalint_764);
+	}
+	globalint_766 = 1;
+	setScriptCallOnGameloop(2328, new WidgetPointer(-32768,3), "I", new WidgetPointer(306,10));
+	return;
+}

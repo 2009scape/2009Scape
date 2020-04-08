@@ -1,0 +1,54 @@
+void script_1143(int arg0,int arg1,int arg2,int arg3,string arg4,string arg5,string arg6,string arg7,string arg8,string arg9,string arg10,string arg11) {
+	string svar8;
+	if ((stringMethod4107(arg4, "") != 0) && (arg0 != -1)) {
+		setWidgetSprite(arg0, new WidgetPointer(884,30));
+		setWidgetText(new WidgetPointer(884,31), arg4);
+		setWidgetIsHidden(false, new WidgetPointer(884,11));
+		setWidgetContextMenuOption(1, new WidgetPointer(884,11), arg4);
+		setScriptCallOnMouseOver(38, new WidgetPointer(884,11), new WidgetPointer(884,19), arg5, 25, 190, "IIsii", new WidgetPointer(884,11));
+		setScriptCallOnMouseExit(40, new WidgetPointer(884,19), "I", new WidgetPointer(884,11));
+	} else {
+		setWidgetNoOptions(new WidgetPointer(884,11));
+		setWidgetIsHidden(true, new WidgetPointer(884,11));
+	}
+	if ((stringMethod4107(arg6, "") != 0) && (arg1 != -1)) {
+		setWidgetSprite(arg1, new WidgetPointer(884,28));
+		setWidgetText(new WidgetPointer(884,27), arg6);
+		setWidgetIsHidden(false, new WidgetPointer(884,12));
+		setWidgetContextMenuOption(1, new WidgetPointer(884,12), arg6);
+		setScriptCallOnMouseOver(38, new WidgetPointer(884,12), new WidgetPointer(884,19), arg7, 25, 190, "IIsii", new WidgetPointer(884,12));
+		setScriptCallOnMouseExit(40, new WidgetPointer(884,19), "I", new WidgetPointer(884,12));
+	} else {
+		setWidgetNoOptions(new WidgetPointer(884,12));
+		setWidgetIsHidden(true, new WidgetPointer(884,12));
+	}
+	if ((stringMethod4107(arg8, "") != 0) && (arg2 != -1)) {
+		setWidgetSprite(arg2, new WidgetPointer(884,24));
+		setWidgetText(new WidgetPointer(884,25), arg8);
+		setWidgetIsHidden(false, new WidgetPointer(884,13));
+		setWidgetContextMenuOption(1, new WidgetPointer(884,13), arg8);
+		setScriptCallOnMouseOver(38, new WidgetPointer(884,13), new WidgetPointer(884,19), arg9, 25, 190, "IIsii", new WidgetPointer(884,13));
+		setScriptCallOnMouseExit(40, new WidgetPointer(884,19), "I", new WidgetPointer(884,13));
+	} else {
+		setWidgetNoOptions(new WidgetPointer(884,13));
+		setWidgetIsHidden(true, new WidgetPointer(884,13));
+	}
+	if ((stringMethod4107(arg10, "") != 0) && (arg3 != -1)) {
+		setWidgetSprite(arg3, new WidgetPointer(884,21));
+		setWidgetText(new WidgetPointer(884,22), arg10);
+		setWidgetIsHidden(false, new WidgetPointer(884,14));
+		setWidgetContextMenuOption(1, new WidgetPointer(884,14), arg10);
+		setScriptCallOnMouseOver(38, new WidgetPointer(884,14), new WidgetPointer(884,19), arg11, 25, 190, "IIsii", new WidgetPointer(884,14));
+		setScriptCallOnMouseExit(40, new WidgetPointer(884,19), "I", new WidgetPointer(884,14));
+	} else {
+		setWidgetNoOptions(new WidgetPointer(884,14));
+		setWidgetIsHidden(true, new WidgetPointer(884,14));
+	}
+	svar8 = "When active, you will automatically fight back if attacked.";
+	setScriptCallOnMouseOver(38, new WidgetPointer(884,15), new WidgetPointer(884,19), svar8, 25, 190, "IIsii", new WidgetPointer(884,15));
+	setScriptCallOnMouseExit(40, new WidgetPointer(884,19), "I", new WidgetPointer(884,15));
+	svar8 = "Select to perform a special attack.";
+	setScriptCallOnMouseOver(38, new WidgetPointer(884,3), new WidgetPointer(884,19), svar8, 25, 190, "IIsii", new WidgetPointer(884,3));
+	setScriptCallOnMouseExit(40, new WidgetPointer(884,19), "I", new WidgetPointer(884,3));
+	return;
+}

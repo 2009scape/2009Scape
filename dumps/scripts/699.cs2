@@ -1,0 +1,31 @@
+void script_699(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	ivar2 = 0;
+	ivar3 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg1))) {
+		ivar2 = getWidgetActualX();
+		if (arg0 < 5) {
+			ivar2 = getWidgetActualX();
+			if (((boolean)script_700(arg0))) {
+				ivar3 = -57;
+			} else if (((boolean)script_700(arg0))) {
+				ivar3 = -68;
+			} else {
+				ivar3 = -79;
+			}
+			setWidgetPosition(ivar2, ivar3, 0, 1);
+		} else {
+			ivar3 = getWidgetActualY();
+			if (((boolean)script_700(arg0))) {
+				ivar2 = -42;
+			} else if (((boolean)script_700(arg0))) {
+				ivar2 = -53;
+			} else {
+				ivar2 = -64;
+			}
+			setWidgetPosition(ivar2, ivar3, 1, 0);
+		}
+	}
+	return;
+}

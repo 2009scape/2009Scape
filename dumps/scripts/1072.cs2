@@ -1,0 +1,38 @@
+void script_1072(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	flow_0:
+		ivar2 = cs2method5066(arg1);
+		ivar3 = 0;
+		IF ((ivar2 > 0) && (globalint_134 < ivar2)) 
+			GOTO	flow_2
+		GOTO	flow_12
+	flow_1:
+	flow_2:
+		IF (globalint_134 < 10) 
+			GOTO	flow_3
+		GOTO	flow_12
+	flow_3:
+		ivar3 = cs2method5067(arg1, globalint_134);
+		if (((boolean)ivar3)) {
+			script_1044(arg1);
+			return;
+		}
+		if (((boolean)ivar3)) {
+			script_1037(arg1, 0);
+			return;
+		}
+		if (ivar3 == 10) {
+			script_1037(arg1, 1);
+			return;
+		}
+		if (ivar3 == 2) {
+			script_1047(arg1);
+			return;
+		}
+		globalint_134 = add(globalint_134, 1);
+		GOTO	flow_1
+	flow_12:
+		script_1077(arg1);
+		return;
+}

@@ -1,0 +1,22 @@
+void script_3139(int arg0) {
+	string svar0;
+	if (globalint_998 == arg0) {
+		script_1857(script_1854());
+		script_1858(0);
+	} else {
+		if (globalint_999 == arg0) {
+			script_1858(0);
+		}
+	}
+	globalint_998 = script_1853();
+	globalint_999 = script_1854();
+	script_3113();
+	svar0 = "Your changes cannot be saved because" + "<br>" + "you are using the unsigned client.";
+	if (((boolean)cs2method5420())) {
+		script_3143(1, svar0);
+	} else {
+		script_3143(0, "World " + intToStr(arg0) + " has been removed from your favourites.");
+	}
+	script_3065(1);
+	return;
+}

@@ -1,0 +1,16 @@
+void script_3100(int arg0) {
+	int ivar1;
+	ivar1 = getGameloginRC();
+	if (ivar1 == -3) {
+		return;
+	}
+	if ((ivar1 == 21) && (arg0 == 13)) {
+		script_1873();
+		return;
+	}
+	if (arg0 == 13) {
+		script_3097();
+		return;
+	}
+	return;
+}

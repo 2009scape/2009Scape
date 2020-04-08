@@ -1,0 +1,176 @@
+cs2func_script_4769_struct(8,0,0) script_4769(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8) {
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	int ivar22;
+	int ivar23;
+	int ivar24;
+	int ivar25;
+	int ivar26;
+	int ivar27;
+	int ivar28;
+	int ivar29;
+	int ivar30;
+	int ivar31;
+	int ivar32;
+	int ivar33;
+	int ivar34;
+	int ivar35;
+	int ivar36;
+	int ivar37;
+	int ivar38;
+	int ivar39;
+	int ivar40;
+	int ivar41;
+	int ivar42;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	int stack_dump3;
+	int stack_dump4;
+	int stack_dump5;
+	int stack_dump6;
+	int stack_dump7;
+	cs2func_script_4795_struct(32,0,0) structdump_8;
+	ivar9 = 0;
+	ivar10 = 0;
+	ivar11 = 0;
+	ivar12 = 0;
+	ivar13 = -1;
+	ivar14 = -1;
+	ivar15 = 0;
+	ivar16 = 0;
+	ivar17 = 0;
+	ivar18 = 0;
+	ivar19 = 0;
+	ivar20 = 0;
+	ivar21 = 0;
+	ivar22 = 0;
+	ivar23 = 0;
+	ivar24 = 0;
+	ivar25 = 0;
+	ivar26 = 0;
+	ivar27 = 0;
+	ivar28 = 0;
+	ivar29 = 0;
+	ivar30 = 0;
+	ivar31 = 0;
+	ivar32 = 0;
+	ivar33 = 0;
+	ivar34 = 0;
+	ivar35 = 0;
+	ivar36 = 0;
+	ivar37 = 0;
+	ivar38 = 0;
+	ivar39 = 0;
+	ivar40 = 0;
+	if (((boolean)arg0)) {
+		ivar11 = 300;
+		ivar13 = 73072707;
+		ivar14 = 73072706;
+	} else if (arg0 == 2) {
+		ivar11 = 600;
+		ivar13 = 73072705;
+		ivar14 = 73072704;
+	} else {
+		ivar11 = 900;
+		ivar13 = 73072703;
+		ivar14 = 73072702;
+		globalint_1561 = 0;
+		globalint_1562 = 0;
+	}
+	while ((arg1 <= 31) && ((boolean)ivar12)) {
+		ivar10 = script_4790(arg1);
+		if ((ivar10 > ivar11) || ((boolean)ivar10)) {
+			ivar12 = 1;
+		} else {
+			stack_dump0 = arg1;
+			stack_dump1 = arg2;
+			stack_dump2 = arg3;
+			stack_dump3 = arg4;
+			stack_dump4 = arg5;
+			stack_dump5 = arg6;
+			stack_dump6 = arg7;
+			stack_dump7 = arg8;
+			structdump_8 = script_4795(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4, stack_dump5, stack_dump6, stack_dump7);
+			ivar39 = structdump_8.intpart_31;
+			ivar38 = structdump_8.intpart_30;
+			ivar37 = structdump_8.intpart_29;
+			ivar36 = structdump_8.intpart_28;
+			ivar35 = structdump_8.intpart_27;
+			ivar34 = structdump_8.intpart_26;
+			ivar33 = structdump_8.intpart_25;
+			ivar32 = structdump_8.intpart_24;
+			ivar31 = structdump_8.intpart_23;
+			ivar30 = structdump_8.intpart_22;
+			ivar29 = structdump_8.intpart_21;
+			ivar28 = structdump_8.intpart_20;
+			ivar27 = structdump_8.intpart_19;
+			ivar26 = structdump_8.intpart_18;
+			ivar25 = structdump_8.intpart_17;
+			ivar24 = structdump_8.intpart_16;
+			ivar23 = structdump_8.intpart_15;
+			ivar22 = structdump_8.intpart_14;
+			ivar21 = structdump_8.intpart_13;
+			ivar20 = structdump_8.intpart_12;
+			ivar19 = structdump_8.intpart_11;
+			ivar18 = structdump_8.intpart_10;
+			ivar17 = structdump_8.intpart_9;
+			ivar16 = structdump_8.intpart_8;
+			ivar15 = structdump_8.intpart_7;
+			arg8 = structdump_8.intpart_6;
+			arg7 = structdump_8.intpart_5;
+			arg6 = structdump_8.intpart_4;
+			arg5 = structdump_8.intpart_3;
+			arg4 = structdump_8.intpart_2;
+			arg3 = structdump_8.intpart_1;
+			arg2 = structdump_8.intpart_0;
+			if (((boolean)add(add(add(add(add(ivar15, ivar16), ivar17), ivar18), ivar19), ivar20))) {
+				ivar40 = 0;
+			} else if (add(add(add(add(add(ivar33, ivar34), ivar35), ivar36), ivar37), ivar38) > 0) {
+				ivar40 = 3;
+			} else if (add(add(add(add(add(ivar27, ivar28), ivar29), ivar30), ivar31), ivar32) > 0) {
+				ivar40 = 2;
+			} else {
+				if (add(add(add(add(add(ivar21, ivar22), ivar23), ivar24), ivar25), ivar26) > 0) {
+					ivar40 = 1;
+				}
+			}
+			stack_dump0 = ivar13;
+			stack_dump1 = ivar9;
+			stack_dump2 = ivar10;
+			stack_dump3 = ivar39;
+			stack_dump4 = ivar40;
+			stack_dump5 = arg1;
+			/* 
+				mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	4770
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:178)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+					at tests.Main.main(Main.java:45)
+				
+			 */
+		}
+	}
+	ivar41 = 38;
+	ivar42 = multiply(divide(ivar9, 8), ivar41);
+	if (ivar9 > 0) {
+		ivar9 = script_4771(ivar13, ivar9);
+	}
+	ivar42 = add(ivar42, 10);
+	setWidgetScrollMax(getWidgetActualWidth(new WidgetPointer(ivar13)), ivar42, new WidgetPointer(ivar13));
+	cs2method2100(0, 0, new WidgetPointer(ivar13));
+	script_31(ivar14, ivar13, 5666, 5663, 5664, 5665, 5686, 5685);
+	return newstruct cs2func_script_4769_struct(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+}

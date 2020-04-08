@@ -35,6 +35,14 @@ public class WitchsHouse extends Quest {
                 line(player,  "<str>nearby garden, and I have agreed to retrieve it for him.", 5+ 7);
                 line(player,  "<blue>I should find a way into the <red>garden<blue> where the <red>ball<blue> is.", 6+ 7);
                 break;
+            case 100:
+                line(player,  "<str>A small boy has kicked his ball over the fence into the", 4+ 7);
+                line(player,  "<str>nearby garden, and I have agreed to retrieve it for him.", 5+ 7);
+                line(player,  "<str>After puzzling through the strangely elaborate security", 6+ 7);
+                line(player,  "<str>system, and defeating a very strange monster, I returned",  7+ 7);
+                line(player,  "<str>the child's ball to him, and he thanked me for my help.",  8+ 7);
+                line(player,  "<col=FF0000>QUEST COMPLETE!",  10+ 7);
+                break;
         }
     }
 
@@ -42,16 +50,15 @@ public class WitchsHouse extends Quest {
     public void finish(Player player) {
         super.finish(player);
         player.getConfigManager().set(101, player.getQuestRepository().getPoints());
-        player.getPacketDispatch().sendString("1 Quest Point", 277, 8 + 2);
-        player.getPacketDispatch().sendString("325 Magic XP", 277, 9 + 2);
-        player.getSkills().addExperience(Skills.MAGIC, 325);
+        player.getPacketDispatch().sendString("4 Quest Point", 277, 8 + 2);
+        player.getPacketDispatch().sendString("6325 Hitpoints XP", 277, 9 + 2);
+        player.getSkills().addExperience(Skills.HITPOINTS, 6325);
         player.getInterfaceManager().closeChatbox();
-        player.getPacketDispatch().sendItemZoomOnInterface(221, 240, 277, 3 + 2);
+        player.getPacketDispatch().sendItemZoomOnInterface(2407, 240, 277, 3 + 2);
     }
 
     @Override
     public Quest newInstance(Object object) {
-        // TODO Auto-generated method stub
         return this;
     }
 }

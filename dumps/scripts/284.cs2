@@ -1,0 +1,9 @@
+int script_284(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = extractX(arg0);
+	ivar2 = extractY(arg0);
+	ivar1 = subtract(ivar1, mod(ivar1, 64));
+	ivar2 = subtract(ivar2, mod(ivar2, 64));
+	return addToCoordinate(0, ivar1, 0, ivar2);
+}

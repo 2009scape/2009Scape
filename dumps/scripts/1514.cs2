@@ -1,0 +1,80 @@
+void script_1514(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int stack_dump0;
+	int stack_dump1;
+	if (arg0 != 1) {
+		return;
+	}
+	ivar3 = -1;
+	ivar4 = 2;
+	ivar5 = 3;
+	ivar6 = 4;
+	if (IsFemale()) {
+		stack_dump0 = 9;
+		stack_dump1 = 10;
+		ivar6 = 11;
+		stack_dump0 = stack_dump0;
+		ivar5 = stack_dump1;
+		ivar4 = stack_dump0;
+	}
+	ivar7 = -1;
+	switch (arg2) {
+		case 2:
+		case 9:
+			ivar3 = script_361(arg1, 3);
+			if (ivar3 != -1) {
+				globalint_1010 = getOtherCommonData(ivar3, 1182);
+				cs2method403(ivar4, globalint_1010);
+				globalint_1011 = getOtherCommonData(ivar3, 1183);
+				cs2method403(ivar5, globalint_1011);
+				globalint_1012 = getOtherCommonData(ivar3, 1184);
+				cs2method403(ivar6, globalint_1012);
+			} else {
+				cs2method403(arg2, arg1);
+				globalint_1010 = arg1;
+				if ((globalint_1011 == -1) || (script_361(globalint_1011, 4) != -1)) {
+					if (IsFemale()) {
+						ivar7 = 61;
+					} else {
+						ivar7 = 26;
+					}
+					cs2method403(ivar5, ivar7);
+					globalint_1011 = ivar7;
+				}
+				if ((globalint_1012 == -1) || (script_361(globalint_1012, 5) != -1)) {
+					if (IsFemale()) {
+						ivar7 = 68;
+					} else {
+						ivar7 = 34;
+					}
+					cs2method403(ivar6, ivar7);
+					globalint_1012 = ivar7;
+				}
+			}
+			break;
+		case 3:
+		case 10:
+			if (script_361(globalint_1010, 3) == -1) {
+				cs2method403(arg2, arg1);
+				globalint_1011 = arg1;
+			}
+			break;
+		case 4:
+		case 11:
+			if (script_361(globalint_1010, 3) == -1) {
+				cs2method403(arg2, arg1);
+				globalint_1012 = arg1;
+			}
+			break;
+		case 5:
+		case 12:
+			cs2method403(arg2, arg1);
+			globalint_1013 = arg1;
+	}
+	script_1513();
+	return;
+}

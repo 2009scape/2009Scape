@@ -1,0 +1,33 @@
+void script_2669() {
+	if (((boolean)bitconfig_6304)) {
+		setWidgetModel(48047, new WidgetPointer(866,64));
+	}
+	if (((boolean)bitconfig_6304)) {
+		setWidgetModel(48028, new WidgetPointer(866,64));
+	}
+	if (bitconfig_6304 == 2) {
+		setWidgetModel(48038, new WidgetPointer(866,64));
+	}
+	if (bitconfig_6304 == 3) {
+		setWidgetModel(48027, new WidgetPointer(866,64));
+	}
+	if (bitconfig_6304 == 4) {
+		setWidgetModel(48030, new WidgetPointer(866,64));
+	}
+	if (bitconfig_6304 == 5) {
+		setWidgetModel(48052, new WidgetPointer(866,64));
+	}
+	if (bitconfig_6304 == 6) {
+		setWidgetModel(48051, new WidgetPointer(866,64));
+	}
+	if (bitconfig_6304 == 7) {
+		setWidgetModel(48050, new WidgetPointer(866,64));
+	}
+	if (bitconfig_6304 == 8) {
+		setWidgetModel(48015, new WidgetPointer(866,64));
+	}
+	if (bitconfig_6304 == 9) {
+		setWidgetModel(48029, new WidgetPointer(866,64));
+	}
+	return;
+}

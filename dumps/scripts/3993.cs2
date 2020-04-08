@@ -1,0 +1,32 @@
+void script_3993() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = 1;
+	ivar1 = -1;
+	while (ivar0 < subtract(getCommonDefinitionSize(3489), 1)) {
+		ivar1 = ((int)cs2method_3408(105, 73, 3489, ivar0));
+		setWidgetPosition(14, multiply(subtract(ivar0, 1), getWidgetActualHeight(new WidgetPointer(ivar1))), 0, 0, new WidgetPointer(ivar1));
+		setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(ivar1));
+		ivar1 = ((int)cs2method_3408(105, 73, 3490, ivar0));
+		if (ivar1 != -1) {
+			setWidgetPosition(1, add(2, multiply(subtract(ivar0, 1), getWidgetActualHeight(new WidgetPointer(ivar1)))), 0, 0, new WidgetPointer(ivar1));
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	ivar1 = ((int)cs2method_3408(105, 73, 3489, 62));
+	setWidgetPosition(14, multiply(subtract(ivar0, 1), getWidgetActualHeight(new WidgetPointer(ivar1))), 0, 0, new WidgetPointer(ivar1));
+	setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(ivar1));
+	ivar1 = ((int)cs2method_3408(105, 73, 3490, 62));
+	setWidgetPosition(1, add(2, multiply(subtract(ivar0, 1), getWidgetActualHeight(new WidgetPointer(ivar1)))), 0, 0, new WidgetPointer(ivar1));
+	ivar0 = add(ivar0, 1);
+	ivar1 = ((int)cs2method_3408(105, 73, 3489, 0));
+	setWidgetPosition(14, multiply(subtract(ivar0, 1), getWidgetActualHeight(new WidgetPointer(ivar1))), 0, 0, new WidgetPointer(ivar1));
+	setWidgetRGB(new Color(255, 249, 235), new WidgetPointer(ivar1));
+	ivar1 = ((int)cs2method_3408(105, 73, 3490, 0));
+	setWidgetPosition(1, add(2, multiply(subtract(ivar0, 1), getWidgetActualHeight(new WidgetPointer(ivar1)))), 0, 0, new WidgetPointer(ivar1));
+	ivar2 = multiply(ivar0, getWidgetActualHeight(new WidgetPointer(ivar1)));
+	setWidgetScrollMax(0, ivar2, new WidgetPointer(917,119));
+	script_31(60096627, 60096631, 4288, 4286, 4285, 4287, 4290, 4289);
+	return;
+}

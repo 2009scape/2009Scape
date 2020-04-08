@@ -1,0 +1,11 @@
+void script_2201() {
+	if (((boolean)standart_config_1701)) {
+		script_2200();
+	} else {
+		script_2199();
+	}
+	script_2209();
+	setWidgetIsHidden(false, new WidgetPointer(globalint_1136));
+	setScriptCallOnGameloop(2210, "", new WidgetPointer(932,1));
+	return;
+}

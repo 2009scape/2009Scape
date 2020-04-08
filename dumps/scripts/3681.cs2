@@ -1,0 +1,25 @@
+void script_3681(int arg0) {
+	string svar0;
+	string svar1;
+	svar0 = "Add to playlist";
+	svar1 = "Remove from playlist";
+	setWidgetContextMenuOption(1, "Play");
+	setWidgetRGB(new Color(0, 255, 0));
+	setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), -2147483643, 65280, "Iii");
+	setWidgetHidden(0);
+	setScriptCallOnClickContextMenu(2885, new WidgetPointer(-32768,3), -2147483643, 150, 0, 20, -2147483644, "Iiiiii");
+	if ((((((((((((arg0 == bitconfig_7081) || (arg0 == bitconfig_7082)) || (arg0 == bitconfig_7083)) || (arg0 == bitconfig_7084)) || (arg0 == bitconfig_7085)) || (arg0 == bitconfig_7086)) || (arg0 == bitconfig_7087)) || (arg0 == bitconfig_7088)) || (arg0 == bitconfig_7089)) || (arg0 == bitconfig_7090)) || (arg0 == bitconfig_7091)) || (arg0 == bitconfig_7092)) {
+		setWidgetSprite(2430);
+		setWidgetContextMenuOption(4, svar1);
+		setWidgetContextMenuOption(4, svar1);
+		setScriptCallOnMouseOver(1160, new WidgetPointer(187,1), -2147483643, new WidgetPointer(187,16), svar1, 25, 189, "IiIsii");
+		setScriptCallOnMouseExit(40, new WidgetPointer(187,16), "I");
+	} else {
+		setWidgetContextMenuOption(3, svar0);
+		setWidgetContextMenuOption(3, svar0);
+		setWidgetSprite(2429);
+		setScriptCallOnMouseOver(1160, new WidgetPointer(187,1), -2147483643, new WidgetPointer(187,16), svar0, 25, 189, "IiIsii");
+		setScriptCallOnMouseExit(40, new WidgetPointer(187,16), "I");
+	}
+	return;
+}

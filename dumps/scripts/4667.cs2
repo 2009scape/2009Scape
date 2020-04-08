@@ -1,0 +1,4 @@
+void script_4667(int arg0) {
+	cameraMethod5502(0, 1, 100, 400, 1, 0);
+	return;
+}

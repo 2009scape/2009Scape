@@ -1,0 +1,25 @@
+void script_841(int arg0) {
+	int ivar1;
+	ivar1 = 0;
+	bitconfig_4399 = arg0;
+	setWidgetIsHidden(true, cs2method_3408(105, 73, 1355, bitconfig_4398));
+	setWidgetIsHidden(true, cs2method_3408(105, 73, 1358, bitconfig_4398));
+	if (((boolean)arg0)) {
+		setWidgetIsHidden(false, new WidgetPointer(681,9));
+		setWidgetIsHidden(true, new WidgetPointer(681,12));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(681,12));
+		setWidgetIsHidden(true, new WidgetPointer(681,9));
+	}
+	while (ivar1 < 10) {
+		if (script_855(ivar1) == arg0) {
+			if ((script_851(ivar1) != 7) || (script_852(ivar1) != 2)) {
+				setWidgetIsHidden(false, cs2method_3408(105, 73, 1354, ivar1));
+			}
+		} else {
+			setWidgetIsHidden(true, cs2method_3408(105, 73, 1354, ivar1));
+		}
+		ivar1 = add(ivar1, 1);
+	}
+	return;
+}

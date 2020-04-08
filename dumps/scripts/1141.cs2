@@ -1,0 +1,10 @@
+void script_1141() {
+	if (((boolean)script_1431())) {
+		if (getDisplayMode() < 2) {
+			setScriptCallOnGameloop(1175, "", new WidgetPointer(548,10));
+		} else {
+			setScriptCallOnGameloop(1175, "", new WidgetPointer(746,17));
+		}
+	}
+	return;
+}

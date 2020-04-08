@@ -1,0 +1,47 @@
+void script_1500(int arg0,int arg1) {
+	int stack_dump0;
+	cs2func_script_1467_struct(2,0,0) structdump_1;
+	if (script_706(arg1) > 0) {
+		if (((boolean)arg0)) {
+			if (((boolean)globalint_188)) {
+				script_1474();
+			}
+			script_1455();
+			stack_dump0 = arg1;
+			structdump_1 = script_1467(stack_dump0);
+			script_1457(structdump_1.intpart_0, structdump_1.intpart_1);
+			script_1463(arg1);
+			cs2method2100(0, script_704(arg1), new WidgetPointer(762,93));
+			script_157(49938546, 49938525, cs2method2601(new WidgetPointer(762,93)), 1);
+			bitconfig_4893 = arg1;
+		} else {
+			if (arg0 == 2) {
+				if (arg1 == 2) {
+					globalint_204 = globalint_205;
+				}
+				if (arg1 <= 3) {
+					globalint_205 = globalint_206;
+				}
+				if (arg1 <= 4) {
+					globalint_206 = globalint_207;
+				}
+				if (arg1 <= 5) {
+					globalint_207 = globalint_208;
+				}
+				if (arg1 <= 6) {
+					globalint_208 = globalint_209;
+				}
+				if (arg1 <= 7) {
+					globalint_209 = globalint_210;
+				}
+				if (arg1 <= 8) {
+					globalint_210 = globalint_211;
+				}
+				if (arg1 <= 9) {
+					globalint_211 = 0;
+				}
+			}
+		}
+	}
+	return;
+}

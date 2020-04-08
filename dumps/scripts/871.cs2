@@ -1,0 +1,24 @@
+void script_871() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	ivar0 = subtract(20, 0);
+	ivar1 = subtract(80, 0);
+	ivar2 = divide(ivar1, ivar0);
+	ivar3 = multiply(bitconfig_4523, ivar2);
+	ivar4 = divide(1024, ivar1);
+	globalint_111 = ivar3;
+	ivar5 = multiply(globalint_111, ivar4);
+	ivar5 = add(ivar5, 512);
+	ivar5 = subtract(2048, ivar5);
+	setWidget3DRotation(0, 0, 0, 0, ivar5, 388, new WidgetPointer(717,4));
+	script_896();
+	ivar6 = multiply(cs2method_3408(105, 105, 1422, bitconfig_4519), divide(1024, ivar0));
+	ivar6 = add(ivar6, 512);
+	setWidget3DRotation(0, 0, 0, 0, ivar6, 365, new WidgetPointer(717,3));
+	return;
+}

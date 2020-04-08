@@ -1,0 +1,48 @@
+void script_4906(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	ivar1 = -1;
+	ivar2 = -1;
+	ivar3 = 0;
+	ivar4 = script_4968(arg0);
+	ivar5 = -1;
+	ivar6 = -1;
+	ivar7 = 1;
+	ivar8 = 0;
+	ivar9 = 0;
+	ivar10 = -1;
+	if (citadelConfigsInitialized()) {
+		if (isWidgetHidden(new WidgetPointer(1092,209))) {
+			ivar7 = 0;
+		}
+		if (((boolean)ivar7)) {
+			/* 
+				mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+					at tests.Main.main(Main.java:45)
+				
+			 */
+		}
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+				at tests.Main.main(Main.java:45)
+			
+		 */
+	}
+	return;
+}

@@ -1,0 +1,12 @@
+void script_4673(int arg0) {
+	if (arg0 != 2) {
+		setWidgetIsHidden(true, new WidgetPointer(102,60));
+		setWidgetIsHidden(false, new WidgetPointer(102,61));
+		setScriptCallOnGameloop(4674, "", new WidgetPointer(102,61));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(102,61));
+		setWidgetIsHidden(false, new WidgetPointer(102,60));
+		setScriptCallOnGameloop(4674, "", new WidgetPointer(102,60));
+	}
+	return;
+}

@@ -1,0 +1,10 @@
+void script_1030(int arg0) {
+	setWidgetIsHidden(true, new WidgetPointer(157,17));
+	setWidgetIsHidden(false, new WidgetPointer(157,35));
+	deleteAllExtraChilds(new WidgetPointer(157,23));
+	deleteAllExtraChilds(new WidgetPointer(157,25));
+	setScriptCallOnMousePressed(1031, "", new WidgetPointer(157,30));
+	setWidgetText(new WidgetPointer(157,30), "Safety Guide");
+	script_1033(cs2method_3408(105, 115, 1485, 0));
+	return;
+}

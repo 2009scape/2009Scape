@@ -1,0 +1,9 @@
+void script_3409(int arg0) {
+	string svar0;
+	svar0 = "Access Forums";
+	script_3408(arg0, svar0);
+	setWidgetSize(getTextWidth(495, svar0), getWidgetActualHeight(new WidgetPointer(arg0)), 0, 0, new WidgetPointer(arg0));
+	setWidgetText(new WidgetPointer(arg0), "<u=64c8fa>" + svar0 + "</u>");
+	setScriptCallOnClickContextMenu(3410, "", new WidgetPointer(arg0));
+	return;
+}

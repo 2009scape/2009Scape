@@ -1,0 +1,169 @@
+void script_4178(int arg0,int arg1,int arg2) {
+	if (((boolean)arg0)) {
+		switch (arg1) {
+			case 0:
+				if (((boolean)arg2)) {
+					globalint_1465 = getClientCycle();
+				} else {
+					globalint_1465 = 0;
+				}
+				break;
+			case 1:
+				if (((boolean)arg2)) {
+					globalint_1466 = getClientCycle();
+				} else {
+					globalint_1466 = 0;
+				}
+				break;
+			case 2:
+				if (((boolean)arg2)) {
+					globalint_1467 = getClientCycle();
+				} else {
+					globalint_1467 = 0;
+				}
+				break;
+			case 3:
+				if (((boolean)arg2)) {
+					globalint_740 = getClientCycle();
+				} else {
+					globalint_740 = 0;
+				}
+				break;
+			case 4:
+				if (((boolean)arg2)) {
+					globalint_745 = getClientCycle();
+				} else {
+					globalint_745 = 0;
+				}
+				break;
+			case 5:
+				if (((boolean)arg2)) {
+					globalint_780 = getClientCycle();
+				} else {
+					globalint_780 = 0;
+				}
+				break;
+			case 7:
+				if (((boolean)arg2)) {
+					globalint_781 = getClientCycle();
+				} else {
+					globalint_781 = 0;
+				}
+				break;
+			case 9:
+				if (((boolean)arg2)) {
+					globalint_782 = getClientCycle();
+				} else {
+					globalint_782 = 0;
+				}
+				break;
+			case 10:
+				if (((boolean)arg2)) {
+					globalint_789 = getClientCycle();
+				} else {
+					globalint_789 = 0;
+				}
+				break;
+			case 12:
+				if (((boolean)arg2)) {
+					globalint_1409 = getClientCycle();
+				} else {
+					globalint_1409 = 0;
+				}
+				break;
+			case 13:
+				if (((boolean)arg2)) {
+					globalint_1410 = getClientCycle();
+				} else {
+					globalint_1410 = 0;
+				}
+		}
+	} else {
+		switch (arg1) {
+			case 0:
+				if (((boolean)arg2)) {
+					globalint_1453 = getClientCycle();
+				} else {
+					globalint_1453 = 0;
+				}
+				break;
+			case 1:
+				if (((boolean)arg2)) {
+					globalint_1454 = getClientCycle();
+				} else {
+					globalint_1454 = 0;
+				}
+				break;
+			case 4:
+				if (((boolean)arg2)) {
+					globalint_1455 = getClientCycle();
+				} else {
+					globalint_1455 = 0;
+				}
+				break;
+			case 5:
+				if (((boolean)arg2)) {
+					globalint_1456 = getClientCycle();
+				} else {
+					globalint_1456 = 0;
+				}
+				break;
+			case 6:
+				if (((boolean)arg2)) {
+					globalint_1457 = getClientCycle();
+				} else {
+					globalint_1453 = 6;
+				}
+				break;
+			case 7:
+				if (((boolean)arg2)) {
+					globalint_1458 = getClientCycle();
+				} else {
+					globalint_1453 = 7;
+				}
+				break;
+			case 8:
+				if (((boolean)arg2)) {
+					globalint_1459 = getClientCycle();
+				} else {
+					globalint_1453 = 8;
+				}
+				break;
+			case 9:
+				if (((boolean)arg2)) {
+					globalint_1460 = getClientCycle();
+				} else {
+					globalint_1453 = 9;
+				}
+				break;
+			case 10:
+				if (((boolean)arg2)) {
+					globalint_1461 = getClientCycle();
+				} else {
+					globalint_1461 = 0;
+				}
+				break;
+			case 12:
+				if (((boolean)arg2)) {
+					globalint_1462 = getClientCycle();
+				} else {
+					globalint_1462 = 0;
+				}
+				break;
+			case 13:
+				if (((boolean)arg2)) {
+					globalint_1463 = getClientCycle();
+				} else {
+					globalint_1463 = 0;
+				}
+				break;
+			case 28:
+				if (((boolean)arg2)) {
+					globalint_1464 = getClientCycle();
+				} else {
+					globalint_1464 = 0;
+				}
+		}
+	}
+	return;
+}

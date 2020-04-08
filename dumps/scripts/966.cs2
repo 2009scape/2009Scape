@@ -1,0 +1,9 @@
+void script_966(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = cs2method2607(new WidgetPointer(arg0));
+	if (ivar2 != arg1) {
+		setWidget3DRotation(0, 0, getWidgetRotateX(new WidgetPointer(arg0)), getWidgetRotateY(new WidgetPointer(arg0)), script_967(ivar2, arg1), getWidget3DDistance(new WidgetPointer(arg0)), new WidgetPointer(arg0));
+		globalint_125 = getClientCycle();
+	}
+	return;
+}

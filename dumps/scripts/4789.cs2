@@ -1,0 +1,16 @@
+int script_4789(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar1 = 4;
+	ivar2 = 0;
+	ivar3 = 0;
+	while (ivar1 <= 15) {
+		ivar2 = script_4949(ivar1);
+		if (ivar2 == arg0) {
+			return script_4959(ivar1);
+		}
+		ivar1 = add(ivar1, 1);
+	}
+	return 0;
+}

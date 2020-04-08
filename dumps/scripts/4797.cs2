@@ -1,0 +1,106 @@
+cs2func_script_4797_struct(6,0,0) script_4797() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	string svar0;
+	int stack_dump0;
+	cs2func_script_4791_struct(7,1,0) structdump_1;
+	int stack_dump2;
+	cs2func_script_4792_struct(6,0,0) structdump_3;
+	flow_0:
+		ivar0 = 0;
+		ivar1 = 1;
+		ivar2 = 0;
+		ivar3 = 0;
+		ivar4 = 0;
+		ivar5 = 0;
+		ivar6 = 0;
+		ivar7 = 0;
+		ivar8 = 0;
+		ivar9 = 0;
+		ivar10 = 0;
+		ivar11 = 0;
+		ivar12 = 0;
+		ivar13 = 0;
+		ivar14 = 0;
+		ivar15 = 0;
+		ivar16 = 0;
+		ivar17 = 0;
+		ivar18 = 0;
+		ivar19 = 0;
+		ivar20 = 0;
+		ivar21 = -1;
+		svar0 = "";
+		IF (citadelConfigsInitialized() && (ivar1 <= 31)) 
+			GOTO	flow_2
+		GOTO	flow_11
+	flow_1:
+	flow_2:
+		IF (((boolean)ivar8)) 
+			GOTO	flow_3
+		GOTO	flow_11
+	flow_3:
+		ivar0 = script_4790(ivar1);
+		if (ivar0 > 600) {
+			ivar8 = 1;
+		} else if (ivar0 < 300) {
+		} else {
+			stack_dump0 = ivar0;
+			structdump_1 = script_4791(stack_dump0);
+			ivar4 = structdump_1.intpart_6;
+			ivar3 = structdump_1.intpart_5;
+			ivar2 = structdump_1.intpart_4;
+			ivar7 = structdump_1.intpart_3;
+			ivar6 = structdump_1.intpart_2;
+			ivar5 = structdump_1.intpart_1;
+			svar0 = structdump_1.stringpart_0;
+			ivar21 = structdump_1.intpart_0;
+			ivar5 = subtract(ivar5, ivar6);
+			stack_dump0 = ivar0;
+			stack_dump2 = ivar5;
+			structdump_3 = script_4792(stack_dump0, stack_dump2);
+			ivar11 = structdump_3.intpart_5;
+			ivar13 = structdump_3.intpart_4;
+			ivar12 = structdump_3.intpart_3;
+			ivar11 = structdump_3.intpart_2;
+			ivar10 = structdump_3.intpart_1;
+			ivar9 = structdump_3.intpart_0;
+			if (ivar7 == 2) {
+				ivar9 = multiply(ivar9, 2);
+				ivar10 = multiply(ivar10, 2);
+				ivar11 = multiply(ivar11, 2);
+				ivar12 = multiply(ivar12, 2);
+				ivar13 = multiply(ivar13, 2);
+				ivar14 = multiply(ivar14, 2);
+			}
+			ivar15 = add(ivar15, ivar9);
+			ivar16 = add(ivar16, ivar10);
+			ivar17 = add(ivar17, ivar11);
+			ivar18 = add(ivar18, ivar12);
+			ivar19 = add(ivar19, ivar13);
+			ivar20 = add(ivar20, ivar14);
+		}
+		ivar1 = add(ivar1, 1);
+		GOTO	flow_1
+	flow_11:
+		return newstruct cs2func_script_4797_struct(ivar15, ivar16, ivar17, ivar18, ivar19, ivar20);
+}

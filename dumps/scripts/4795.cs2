@@ -1,0 +1,211 @@
+cs2func_script_4795_struct(32,0,0) script_4795(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7) {
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	int ivar22;
+	int ivar23;
+	int ivar24;
+	int ivar25;
+	int ivar26;
+	int ivar27;
+	int ivar28;
+	int ivar29;
+	int ivar30;
+	int ivar31;
+	int ivar32;
+	int ivar33;
+	int ivar34;
+	int ivar35;
+	int ivar36;
+	int ivar37;
+	int ivar38;
+	int ivar39;
+	int ivar40;
+	int ivar41;
+	int ivar42;
+	int ivar43;
+	int ivar44;
+	int ivar45;
+	int ivar46;
+	string svar0;
+	int stack_dump0;
+	cs2func_script_4791_struct(7,1,0) structdump_1;
+	cs2func_script_4724_struct(6,0,0) structdump_2;
+	cs2func_script_4724_struct(6,0,0) structdump_3;
+	cs2func_script_4724_struct(6,0,0) structdump_4;
+	int stack_dump5;
+	cs2func_script_4792_struct(6,0,0) structdump_6;
+	cs2func_script_4793_struct(6,0,0) structdump_7;
+	ivar8 = 0;
+	ivar9 = 0;
+	ivar10 = 0;
+	ivar11 = 0;
+	ivar12 = 0;
+	ivar13 = 0;
+	ivar14 = 0;
+	ivar15 = 0;
+	ivar16 = 0;
+	ivar17 = 0;
+	ivar18 = 0;
+	ivar19 = 0;
+	ivar20 = 0;
+	ivar21 = 0;
+	ivar22 = 0;
+	ivar23 = 0;
+	ivar24 = 0;
+	ivar25 = 0;
+	ivar26 = 0;
+	ivar27 = script_4790(arg0);
+	ivar28 = -1;
+	svar0 = "";
+	ivar29 = 0;
+	ivar30 = 0;
+	ivar31 = 0;
+	ivar32 = 0;
+	ivar33 = 0;
+	ivar34 = 0;
+	if ((ivar27 < 1) || (ivar27 > 900)) {
+		messageType0("Clan Build Tick : Check resources for invalid job " + intToStr(ivar27) + " at position " + intToStr(arg0) + ".");
+		return newstruct cs2func_script_4795_struct(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+	}
+	stack_dump0 = ivar27;
+	structdump_1 = script_4791(stack_dump0);
+	ivar33 = structdump_1.intpart_6;
+	ivar32 = structdump_1.intpart_5;
+	ivar29 = structdump_1.intpart_4;
+	ivar34 = structdump_1.intpart_3;
+	ivar31 = structdump_1.intpart_2;
+	ivar30 = structdump_1.intpart_1;
+	svar0 = structdump_1.stringpart_0;
+	ivar28 = structdump_1.intpart_0;
+	if ((ivar27 > 300) && (ivar27 < 600)) {
+		ivar30 = subtract(ivar30, ivar31);
+	}
+	if (ivar27 == 616) {
+		stack_dump0 = 1;
+		structdump_2 = script_4724(stack_dump0);
+		ivar13 = structdump_2.intpart_5;
+		ivar12 = structdump_2.intpart_4;
+		ivar11 = structdump_2.intpart_3;
+		ivar10 = structdump_2.intpart_2;
+		ivar9 = structdump_2.intpart_1;
+		ivar8 = structdump_2.intpart_0;
+	} else if (ivar27 == 617) {
+		stack_dump0 = 2;
+		structdump_3 = script_4724(stack_dump0);
+		ivar13 = structdump_3.intpart_5;
+		ivar12 = structdump_3.intpart_4;
+		ivar11 = structdump_3.intpart_3;
+		ivar10 = structdump_3.intpart_2;
+		ivar9 = structdump_3.intpart_1;
+		ivar8 = structdump_3.intpart_0;
+	} else if (ivar27 == 618) {
+		stack_dump0 = 3;
+		structdump_4 = script_4724(stack_dump0);
+		ivar13 = structdump_4.intpart_5;
+		ivar12 = structdump_4.intpart_4;
+		ivar11 = structdump_4.intpart_3;
+		ivar10 = structdump_4.intpart_2;
+		ivar9 = structdump_4.intpart_1;
+		ivar8 = structdump_4.intpart_0;
+	} else {
+		stack_dump0 = ivar27;
+		stack_dump5 = ivar30;
+		structdump_6 = script_4792(stack_dump0, stack_dump5);
+		ivar13 = structdump_6.intpart_5;
+		ivar12 = structdump_6.intpart_4;
+		ivar11 = structdump_6.intpart_3;
+		ivar10 = structdump_6.intpart_2;
+		ivar9 = structdump_6.intpart_1;
+		ivar8 = structdump_6.intpart_0;
+	}
+	if (((ivar34 == 2) && (ivar27 > 300)) && (ivar27 < 600)) {
+		ivar8 = multiply(ivar8, 2);
+		ivar9 = multiply(ivar9, 2);
+		ivar10 = multiply(ivar10, 2);
+		ivar11 = multiply(ivar11, 2);
+		ivar12 = multiply(ivar12, 2);
+		ivar13 = multiply(ivar13, 2);
+	}
+	if (ivar27 < 300) {
+		return newstruct cs2func_script_4795_struct(arg1, arg2, arg3, arg4, arg5, arg6, arg7, ivar8, ivar9, ivar10, ivar11, ivar12, ivar13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+	}
+	ivar35 = ivar8;
+	ivar36 = ivar9;
+	ivar37 = ivar10;
+	ivar38 = ivar11;
+	ivar39 = ivar12;
+	ivar40 = ivar13;
+	if (ivar27 > 600) {
+		stack_dump0 = ivar29;
+		stack_dump5 = ivar32;
+		structdump_7 = script_4793(stack_dump0, stack_dump5);
+		ivar19 = structdump_7.intpart_5;
+		ivar18 = structdump_7.intpart_4;
+		ivar17 = structdump_7.intpart_3;
+		ivar16 = structdump_7.intpart_2;
+		ivar15 = structdump_7.intpart_1;
+		ivar14 = structdump_7.intpart_0;
+	}
+	ivar35 = max(0, subtract(ivar35, ivar14));
+	ivar36 = max(0, subtract(ivar36, ivar15));
+	ivar37 = max(0, subtract(ivar37, ivar16));
+	ivar38 = max(0, subtract(ivar38, ivar17));
+	ivar39 = max(0, subtract(ivar39, ivar18));
+	ivar40 = max(0, subtract(ivar40, ivar19));
+	if (((((boolean)ivar35) && ((boolean)ivar36)) && (((boolean)ivar37) && ((boolean)ivar38))) && (((boolean)ivar39) && ((boolean)ivar40))) {
+		return newstruct cs2func_script_4795_struct(arg1, arg2, arg3, arg4, arg5, arg6, arg7, ivar8, ivar9, ivar10, ivar11, ivar12, ivar13, ivar14, ivar15, ivar16, ivar17, ivar18, ivar19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100);
+	}
+	ivar41 = min(ivar35, arg1);
+	ivar42 = min(ivar36, arg2);
+	ivar43 = min(ivar37, arg3);
+	ivar44 = min(ivar38, arg4);
+	ivar45 = min(ivar39, arg5);
+	ivar46 = min(ivar40, arg6);
+	ivar35 = max(0, subtract(ivar35, ivar41));
+	ivar36 = max(0, subtract(ivar36, ivar42));
+	ivar37 = max(0, subtract(ivar37, ivar43));
+	ivar38 = max(0, subtract(ivar38, ivar44));
+	ivar39 = max(0, subtract(ivar39, ivar45));
+	ivar40 = max(0, subtract(ivar40, ivar46));
+	arg1 = max(0, subtract(arg1, ivar41));
+	arg2 = max(0, subtract(arg2, ivar42));
+	arg3 = max(0, subtract(arg3, ivar43));
+	arg4 = max(0, subtract(arg4, ivar44));
+	arg5 = max(0, subtract(arg5, ivar45));
+	arg6 = max(0, subtract(arg6, ivar46));
+	if (((((boolean)ivar35) && ((boolean)ivar36)) && (((boolean)ivar37) && ((boolean)ivar38))) && (((boolean)ivar39) && ((boolean)ivar40))) {
+		return newstruct cs2func_script_4795_struct(arg1, arg2, arg3, arg4, arg5, arg6, arg7, ivar8, ivar9, ivar10, ivar11, ivar12, ivar13, ivar14, ivar15, ivar16, ivar17, ivar18, ivar19, ivar41, ivar42, ivar43, ivar44, ivar45, ivar46, 0, 0, 0, 0, 0, 0, 100);
+	}
+	ivar20 = min(ivar35, divide(arg7, 1));
+	ivar35 = max(0, subtract(ivar35, ivar20));
+	arg7 = subtract(arg7, multiply(ivar20, 1));
+	ivar21 = min(ivar36, divide(arg7, 1));
+	ivar36 = max(0, subtract(ivar36, ivar21));
+	arg7 = subtract(arg7, multiply(ivar21, 1));
+	ivar22 = min(ivar37, divide(arg7, 3));
+	ivar37 = max(0, subtract(ivar37, ivar22));
+	arg7 = subtract(arg7, multiply(ivar22, 3));
+	ivar23 = min(ivar38, divide(arg7, 1));
+	ivar38 = max(0, subtract(ivar38, ivar23));
+	arg7 = subtract(arg7, multiply(ivar23, 1));
+	ivar24 = min(ivar39, divide(arg7, 1));
+	ivar39 = max(0, subtract(ivar39, ivar24));
+	arg7 = subtract(arg7, multiply(ivar24, 1));
+	ivar25 = min(ivar40, divide(arg7, 3));
+	ivar40 = max(0, subtract(ivar40, ivar25));
+	arg7 = subtract(arg7, multiply(ivar25, 3));
+	ivar26 = script_4796(ivar35, ivar8, ivar36, ivar9, ivar37, ivar10, ivar38, ivar11, ivar39, ivar12, ivar40, ivar13);
+	return newstruct cs2func_script_4795_struct(arg1, arg2, arg3, arg4, arg5, arg6, arg7, ivar8, ivar9, ivar10, ivar11, ivar12, ivar13, ivar14, ivar15, ivar16, ivar17, ivar18, ivar19, ivar41, ivar42, ivar43, ivar44, ivar45, ivar46, ivar20, ivar21, ivar22, ivar23, ivar24, ivar25, ivar26);
+}

@@ -1,0 +1,52 @@
+void script_2671() {
+	if (((boolean)bitconfig_6454)) {
+		setWidgetIsHidden(false, new WidgetPointer(747,18));
+		setWidgetIsHidden(true, new WidgetPointer(747,9));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(747,18));
+		setWidgetIsHidden(false, new WidgetPointer(747,9));
+	}
+	if (bitconfig_6454 == 2) {
+		setWidgetIsHidden(false, new WidgetPointer(747,23));
+		setWidgetIsHidden(true, new WidgetPointer(747,14));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(747,23));
+		setWidgetIsHidden(false, new WidgetPointer(747,14));
+	}
+	if (bitconfig_6454 == 3) {
+		setWidgetIsHidden(false, new WidgetPointer(747,19));
+		setWidgetIsHidden(true, new WidgetPointer(747,10));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(747,19));
+		setWidgetIsHidden(false, new WidgetPointer(747,10));
+	}
+	if (bitconfig_6454 == 4) {
+		setWidgetIsHidden(false, new WidgetPointer(747,20));
+		setWidgetIsHidden(true, new WidgetPointer(747,11));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(747,20));
+		setWidgetIsHidden(false, new WidgetPointer(747,11));
+	}
+	if (bitconfig_6454 == 5) {
+		setWidgetIsHidden(false, new WidgetPointer(747,21));
+		setWidgetIsHidden(true, new WidgetPointer(747,12));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(747,21));
+		setWidgetIsHidden(false, new WidgetPointer(747,12));
+	}
+	if (bitconfig_6454 == 6) {
+		setWidgetIsHidden(false, new WidgetPointer(747,22));
+		setWidgetIsHidden(true, new WidgetPointer(747,13));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(747,22));
+		setWidgetIsHidden(false, new WidgetPointer(747,13));
+	}
+	if (bitconfig_6454 == 7) {
+		setWidgetIsHidden(false, new WidgetPointer(747,26));
+		setWidgetIsHidden(true, new WidgetPointer(747,15));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(747,26));
+		setWidgetIsHidden(false, new WidgetPointer(747,15));
+	}
+	return;
+}

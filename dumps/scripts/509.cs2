@@ -1,0 +1,24 @@
+void script_509(int arg0) {
+	string svar0;
+	svar0 = "";
+	if (arg0 == 40173577) {
+		svar0 = getItemName(standart_config_1065);
+		if (standart_config_1065 == -1) {
+			svar0 = "Empty";
+		}
+	} else if (arg0 == 40173578) {
+		svar0 = getItemName(standart_config_1066);
+		if (standart_config_1066 == -1) {
+			svar0 = "Empty";
+		}
+	} else {
+		if (arg0 == 40173579) {
+			svar0 = getItemName(standart_config_1067);
+			if (standart_config_1067 == -1) {
+				svar0 = "Empty";
+			}
+		}
+	}
+	script_39(arg0, 40173592, 25, 199, svar0);
+	return;
+}

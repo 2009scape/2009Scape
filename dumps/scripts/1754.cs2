@@ -1,0 +1,11 @@
+void script_1754(int arg0,int arg1) {
+	if (globalint_226 > 4) {
+		setWidgetModel(15690, new WidgetPointer(arg0));
+		setWidgetRGB(new Color(51, 255, 0), new WidgetPointer(arg1));
+	} else {
+		setWidgetModel(15689, new WidgetPointer(arg0));
+		setWidgetRGB(new Color(145, 0, 0), new WidgetPointer(arg1));
+	}
+	setWidgetText(new WidgetPointer(arg1), intToStr(globalint_226));
+	return;
+}

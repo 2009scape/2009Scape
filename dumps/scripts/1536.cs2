@@ -1,0 +1,8 @@
+void script_1536(int arg0) {
+	setScriptCallOnConfigChange(1537, 1747, 1, "Y", new WidgetPointer(arg0));
+	setScriptCallOnItemContainerUpdate(1538, 93, 94, 530, 3, "Y", new WidgetPointer(arg0));
+	setScriptCallOnGlobalStringChange(1539, 352, 1, "Y", new WidgetPointer(arg0));
+	script_4592();
+	script_4597();
+	return;
+}

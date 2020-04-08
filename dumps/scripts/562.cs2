@@ -1,0 +1,6 @@
+void script_562(int arg0) {
+	if (getWidgetSpriteId(new WidgetPointer(arg0)) == 5455) {
+		setWidgetSprite(5456, new WidgetPointer(arg0));
+	}
+	return;
+}

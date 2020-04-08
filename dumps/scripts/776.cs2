@@ -1,0 +1,40 @@
+void script_776() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	string svar0;
+	string svar1;
+	string svar2;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	svar0 = "Hello";
+	svar1 = "00:00";
+	svar2 = "1.1x";
+	if (((boolean)bitconfig_7232)) {
+		ivar0 = divide(bitconfig_7233, 60);
+		ivar1 = mod(bitconfig_7233, 60);
+		ivar2 = divide(script_338(16), 1000);
+		ivar3 = divide(mod(script_338(16), 1000), 100);
+		if (ivar1 < 10) {
+			if (ivar0 < 10) {
+				svar1 = "0" + intToStr(ivar0) + ":0" + intToStr(ivar1);
+			} else {
+				svar1 = intToStr(ivar0) + ":0" + intToStr(ivar1);
+			}
+		} else if (ivar0 < 10) {
+			svar1 = "0" + intToStr(ivar0) + ":" + intToStr(ivar1);
+		} else {
+			svar1 = intToStr(ivar0) + ":" + intToStr(ivar1);
+		}
+		svar2 = intToStr(ivar2) + "." + intToStr(ivar3) + "x";
+		svar0 = "Multiplier:" + "<col=ff0000>" + svar2 + "</col>" + "<br>" + "Elapsed:" + "<col=ff0000>" + svar1 + "</col>" + "<br>" + "Bonus:" + "<col=ff0000>" + intToStr(divide(standart_config_1878, 10)) + "xp" + "</col>";
+		setScriptCallOnMouseOver(38, new WidgetPointer(746,190), new WidgetPointer(746,186), svar0, 0, 500, "IIsii", new WidgetPointer(746,190));
+		setScriptCallOnMouseExit(40, new WidgetPointer(746,186), "I", new WidgetPointer(746,190));
+		setScriptCallOnMouseOver(38, new WidgetPointer(548,27), new WidgetPointer(548,23), svar0, 0, 500, "IIsii", new WidgetPointer(548,27));
+		setScriptCallOnMouseExit(40, new WidgetPointer(548,23), "I", new WidgetPointer(548,27));
+	}
+	return;
+}

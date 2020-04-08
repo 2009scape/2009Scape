@@ -1,0 +1,9 @@
+void script_4524(int arg0,int arg1) {
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(16384, 16384, 2, 2);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetSprite(arg1);
+	cs2method2005(1, new WidgetPointer(arg0));
+	setWidgetIsHidden(true, new WidgetPointer(arg0));
+	return;
+}

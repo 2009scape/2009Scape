@@ -1,7 +1,12 @@
 package plugin.activity.pyramidplunder;
 
 import org.crandor.game.node.entity.player.Player;
+import org.crandor.game.node.object.GameObject;
+import org.crandor.game.node.object.ObjectBuilder;
+import org.crandor.game.world.map.Location;
+
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.ListIterator;
 
@@ -11,30 +16,19 @@ import java.util.ListIterator;
  */
 
 public class PlunderObjectManager{
-    Player player;
-    public PlunderObjectManager(Player player){
-        this.player = player;
-    }
-    public List<PlunderObject> ObjectList = new ArrayList<PlunderObject>();
+    public static HashMap<Location,Boolean> openedMap = new HashMap<>();
+    public static HashMap<Location, Boolean> charmedMap = new HashMap<>();
+
     int originalIndex;
     public boolean resetObjectsFor(Player player){
-        //Completely clear the list
-        ObjectList.clear();
-        /*ListIterator oliter = ObjectList.listIterator();
-        int i = 0;
-        while(oliter.hasNext()){
-            PlunderObject current = (PlunderObject) oliter.next();
-            if(current.playerOpened){
-                current.playerOpened = false;
-            }
-            if(current.snakeCharmed){
-                current.snakeCharmed = false;
-            }
-        }*/
+        //Completely clear the mapping and reset objects
+        openedMap.clear();
+        charmedMap.clear();
         return true;
     }
 
-    public void register(PlunderObject object){
-        ObjectList.add(object);
+    public void registerOpened(PlunderObject object){
+        openedMap.putIfAbsent(object.getLocation(),true);
     }
+    public void registerCharmed(PlunderObject object) { charmedMap.putIfAbsent(object.getLocation(),true);}
 }

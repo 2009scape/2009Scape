@@ -1,0 +1,23 @@
+void script_5242(int arg0) {
+	playSoundEffect2False(6185, 1, 0, 127);
+	if (arg0 == 73793723) {
+		setWidgetRGB(new Color(153, 145, 122), new WidgetPointer(1126,192));
+		setWidgetRGB(new Color(235, 224, 188), new WidgetPointer(1126,187));
+		setWidgetSprite(459, new WidgetPointer(1126,189));
+		setWidgetSprite(460, new WidgetPointer(1126,190));
+		setWidgetSprite(459, new WidgetPointer(1126,191));
+		setWidgetSprite(454, new WidgetPointer(1126,0));
+		setWidgetSprite(456, new WidgetPointer(1126,1));
+		setWidgetSprite(454, new WidgetPointer(1126,186));
+	} else {
+		setWidgetRGB(new Color(153, 145, 122), new WidgetPointer(1126,187));
+		setWidgetRGB(new Color(235, 224, 188), new WidgetPointer(1126,192));
+		setWidgetSprite(454, new WidgetPointer(1126,189));
+		setWidgetSprite(456, new WidgetPointer(1126,190));
+		setWidgetSprite(454, new WidgetPointer(1126,191));
+		setWidgetSprite(459, new WidgetPointer(1126,0));
+		setWidgetSprite(460, new WidgetPointer(1126,1));
+		setWidgetSprite(459, new WidgetPointer(1126,186));
+	}
+	return;
+}

@@ -1,0 +1,6 @@
+void script_212(string arg0) {
+	if (stringMethod4107(arg0, "") != 0) {
+		cs2method5421(1, arg0);
+	}
+	return;
+}

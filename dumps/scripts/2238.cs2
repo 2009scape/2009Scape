@@ -1,0 +1,10 @@
+void script_2238() {
+	playSoundEffect(8729, 1, 0);
+	if (((boolean)globalint_1134)) {
+		globalint_1134 = 1;
+	} else {
+		globalint_1134 = 0;
+	}
+	script_2220();
+	return;
+}

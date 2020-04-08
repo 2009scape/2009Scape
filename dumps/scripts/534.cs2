@@ -1,0 +1,4 @@
+void script_534(int arg0) {
+	setWidgetFilled(0, new WidgetPointer(arg0));
+	return;
+}

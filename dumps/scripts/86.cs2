@@ -1,0 +1,68 @@
+void script_86(int arg0,int arg1,string arg2) {
+	int ivar2;
+	arg2 = strRemoveEntities(arg2);
+	ivar2 = cs2method5004(arg1);
+	switch (arg0) {
+		case 1:
+			clickPlayerOption(4, arg2);
+			break;
+		case 2:
+			clickPlayerOption(1, arg2);
+			break;
+		case 3:
+			clickPlayerOption(7, arg2);
+			break;
+		case 4:
+			clickPlayerOption(1, arg2);
+			break;
+		case 5:
+			clickPlayerOption(9, arg2);
+			break;
+		case 6:
+			if (((boolean)script_2709())) {
+				messageType0("You cannot add a friend until you have entered your date of birth");
+				return;
+			}
+			if (isFriend(arg2)) {
+				if (isMuteRelatedMethod3329() && cs2method6900()) {
+					globalint_1650 = 1;
+					globalstring_23 = arg2;
+					script_1558(0);
+					return;
+				}
+			} else {
+				cs2method3605(arg2);
+			}
+			break;
+		case 7:
+			cs2method3607(arg2);
+			break;
+		case 8:
+			globalstring_24 = arg2;
+			break;
+		case 9:
+			if (ivar2 == 17) {
+				script_1052(4, cs2method5012(arg1), cs2method5010(arg1));
+			} else if (ivar2 == 18) {
+				script_1052(5, cs2method5012(arg1), cs2method5010(arg1));
+			} else if (ivar2 == 20) {
+				script_1052(6, cs2method5012(arg1), cs2method5010(arg1));
+			} else if (ivar2 == 42) {
+				script_1052(9, cs2method5012(arg1), cs2method5010(arg1));
+			} else {
+				if (ivar2 == 45) {
+					script_1052(11, cs2method5012(arg1), cs2method5010(arg1));
+				}
+			}
+			break;
+		case 10:
+			if ((ivar2 == 41) || (ivar2 == 42)) {
+				script_4465(arg2);
+			} else if ((ivar2 == 9) || (ivar2 == 20)) {
+				script_1633(arg2);
+			} else {
+				clickPlayerOption(5, arg2);
+			}
+	}
+	return;
+}

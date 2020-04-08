@@ -1,0 +1,5 @@
+void script_317(int arg0,int arg1,int arg2,int arg3,int arg4,string arg5,string arg6,string arg7,string arg8,string arg9,string arg10) {
+	script_319(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+	setScriptCallOnItemContainerUpdate(318, new WidgetPointer(arg0), arg1, arg2, arg5, arg6, arg7, arg8, arg9, arg10, arg3, arg4, 93, 1, "IiissssssiiY", new WidgetPointer(arg0));
+	return;
+}

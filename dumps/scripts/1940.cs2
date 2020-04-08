@@ -1,0 +1,8 @@
+void script_1940() {
+	int ivar0;
+	ivar0 = add(getClientCycle(), multiply(globalint_557, 3000));
+	if (ivar0 < globalint_556) {
+		globalint_556 = ivar0;
+	}
+	return;
+}

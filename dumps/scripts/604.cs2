@@ -1,0 +1,9 @@
+void script_604() {
+	if (standart_config_1109 == -1) {
+		return;
+	}
+	globalint_85 = max(subtract(globalint_85, 1), 1);
+	setWidgetText(new WidgetPointer(105,153), formatNumber(globalint_85, 1) + " gp");
+	script_609();
+	return;
+}

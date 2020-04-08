@@ -1,0 +1,131 @@
+cs2func_script_13_struct(1,1,0) script_13(int arg0,int arg1) {
+	int stack_dump0;
+	cs2func_script_981_struct(1,1,0) structdump_1;
+	cs2func_script_983_struct(1,1,0) structdump_2;
+	cs2func_script_977_struct(1,1,0) structdump_3;
+	cs2func_script_1009_struct(1,1,0) structdump_4;
+	cs2func_script_1003_struct(1,1,0) structdump_5;
+	cs2func_script_995_struct(1,1,0) structdump_6;
+	cs2func_script_993_struct(1,1,0) structdump_7;
+	cs2func_script_1007_struct(1,1,0) structdump_8;
+	cs2func_script_1001_struct(1,1,0) structdump_9;
+	cs2func_script_991_struct(1,1,0) structdump_10;
+	cs2func_script_999_struct(1,1,0) structdump_11;
+	cs2func_script_979_struct(1,1,0) structdump_12;
+	cs2func_script_1015_struct(1,1,0) structdump_13;
+	cs2func_script_1021_struct(1,1,0) structdump_14;
+	cs2func_script_997_struct(1,1,0) structdump_15;
+	cs2func_script_1017_struct(1,1,0) structdump_16;
+	cs2func_script_985_struct(1,1,0) structdump_17;
+	cs2func_script_989_struct(1,1,0) structdump_18;
+	cs2func_script_1011_struct(1,1,0) structdump_19;
+	cs2func_script_987_struct(1,1,0) structdump_20;
+	cs2func_script_1013_struct(1,1,0) structdump_21;
+	cs2func_script_2_struct(1,1,0) structdump_22;
+	cs2func_script_1005_struct(1,1,0) structdump_23;
+	cs2func_script_1019_struct(1,1,0) structdump_24;
+	cs2func_script_3354_struct(1,1,0) structdump_25;
+	switch (arg0) {
+		case 1:
+			stack_dump0 = arg1;
+			structdump_1 = script_981(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_1.intpart_0, structdump_1.stringpart_0);
+		case 2:
+			stack_dump0 = arg1;
+			structdump_2 = script_983(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_2.intpart_0, structdump_2.stringpart_0);
+		case 5:
+			stack_dump0 = arg1;
+			structdump_3 = script_977(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_3.intpart_0, structdump_3.stringpart_0);
+		case 3:
+			stack_dump0 = arg1;
+			structdump_4 = script_1009(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_4.intpart_0, structdump_4.stringpart_0);
+		case 7:
+			stack_dump0 = arg1;
+			structdump_5 = script_1003(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_5.intpart_0, structdump_5.stringpart_0);
+		case 4:
+			stack_dump0 = arg1;
+			structdump_6 = script_995(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_6.intpart_0, structdump_6.stringpart_0);
+		case 6:
+			stack_dump0 = arg1;
+			structdump_7 = script_993(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_7.intpart_0, structdump_7.stringpart_0);
+		case 8:
+			stack_dump0 = arg1;
+			structdump_8 = script_1007(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_8.intpart_0, structdump_8.stringpart_0);
+		case 9:
+			stack_dump0 = arg1;
+			structdump_9 = script_1001(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_9.intpart_0, structdump_9.stringpart_0);
+		case 10:
+			stack_dump0 = arg1;
+			structdump_10 = script_991(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_10.intpart_0, structdump_10.stringpart_0);
+		case 11:
+			stack_dump0 = arg1;
+			structdump_11 = script_999(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_11.intpart_0, structdump_11.stringpart_0);
+		case 19:
+			stack_dump0 = arg1;
+			structdump_12 = script_979(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_12.intpart_0, structdump_12.stringpart_0);
+		case 13:
+			stack_dump0 = arg1;
+			structdump_13 = script_1015(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_13.intpart_0, structdump_13.stringpart_0);
+		case 14:
+			stack_dump0 = arg1;
+			structdump_14 = script_1021(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_14.intpart_0, structdump_14.stringpart_0);
+		case 15:
+			stack_dump0 = arg1;
+			structdump_15 = script_997(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_15.intpart_0, structdump_15.stringpart_0);
+		case 16:
+			stack_dump0 = arg1;
+			structdump_16 = script_1017(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_16.intpart_0, structdump_16.stringpart_0);
+		case 17:
+			stack_dump0 = arg1;
+			structdump_17 = script_985(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_17.intpart_0, structdump_17.stringpart_0);
+		case 18:
+			stack_dump0 = arg1;
+			structdump_18 = script_989(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_18.intpart_0, structdump_18.stringpart_0);
+		case 12:
+			stack_dump0 = arg1;
+			structdump_19 = script_1011(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_19.intpart_0, structdump_19.stringpart_0);
+		case 20:
+			stack_dump0 = arg1;
+			structdump_20 = script_987(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_20.intpart_0, structdump_20.stringpart_0);
+		case 21:
+			stack_dump0 = arg1;
+			structdump_21 = script_1013(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_21.intpart_0, structdump_21.stringpart_0);
+		case 22:
+			stack_dump0 = arg1;
+			structdump_22 = script_2(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_22.intpart_0, structdump_22.stringpart_0);
+		case 23:
+			stack_dump0 = arg1;
+			structdump_23 = script_1005(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_23.intpart_0, structdump_23.stringpart_0);
+		case 24:
+			stack_dump0 = arg1;
+			structdump_24 = script_1019(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_24.intpart_0, structdump_24.stringpart_0);
+		case 25:
+			stack_dump0 = arg1;
+			structdump_25 = script_3354(stack_dump0);
+			return newstruct cs2func_script_13_struct(structdump_25.intpart_0, structdump_25.stringpart_0);
+	}
+	return newstruct cs2func_script_13_struct(-1, "");
+}

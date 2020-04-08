@@ -1,0 +1,13 @@
+void script_1548(int arg0) {
+	if (((boolean)arg0) || (arg0 == globalint_5)) {
+		setWidgetIsHidden(true, new WidgetPointer(752,3));
+		setWidgetIsHidden(true, new WidgetPointer(752,7));
+		setWidgetIsHidden(false, new WidgetPointer(752,8));
+		script_2026();
+		globalint_5 = 0;
+	}
+	if (getDisplayMode() >= 2) {
+		script_1364();
+	}
+	return;
+}

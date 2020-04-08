@@ -1,0 +1,18 @@
+void script_3439() {
+	setWidgetIsHidden(false, new WidgetPointer(1128,192));
+	setWidgetIsHidden(false, new WidgetPointer(1128,88));
+	setWidgetIsHidden(false, new WidgetPointer(1128,117));
+	setWidgetIsHidden(false, new WidgetPointer(1128,155));
+	setWidgetIsHidden(false, new WidgetPointer(1128,229));
+	setWidgetIsHidden(false, new WidgetPointer(1128,266));
+	setWidgetIsHidden(false, new WidgetPointer(1128,303));
+	setWidgetText(new WidgetPointer(1128,9), concat("20", "/" + intToStr(20)));
+	setWidgetText(new WidgetPointer(1128,135), concat("20", "/" + intToStr(20)));
+	setWidgetText(new WidgetPointer(1128,173), concat("30", "/" + intToStr(20)));
+	setWidgetText(new WidgetPointer(1128,210), concat("28", "/" + intToStr(20)));
+	setWidgetText(new WidgetPointer(1128,247), concat("24", "/" + intToStr(20)));
+	setWidgetText(new WidgetPointer(1128,284), concat("26", "/" + intToStr(20)));
+	setWidgetText(new WidgetPointer(1128,321), concat("200", "/" + intToStr(200)));
+	setWidgetText(new WidgetPointer(1128,13), intToStr(bitconfig_5505));
+	return;
+}

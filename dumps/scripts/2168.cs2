@@ -1,0 +1,10 @@
+void script_2168() {
+	if (isMember()) {
+		messageType0("More advanced sorting options are available on a members' world.");
+	} else {
+		if (standart_config_281 < 1000) {
+			messageType0("More advanced sorting options are available after the Tutorial.");
+		}
+	}
+	return;
+}

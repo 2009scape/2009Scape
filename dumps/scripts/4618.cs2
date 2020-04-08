@@ -1,0 +1,31 @@
+cs2func_script_4618_struct(2,0,0) script_4618(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	if (((boolean)arg0)) {
+		return newstruct cs2func_script_4618_struct(0, 0);
+	}
+	ivar2 = arg0;
+	ivar3 = arg1;
+	ivar4 = 0;
+	if (((boolean)clanbitconfig_5)) {
+		ivar4 = max(clanconfig_0, subtract(0, clanconfig_0));
+	}
+	ivar3 = add(multiply(divide(arg1, 10), 60), multiply(mod(arg1, 10), 10));
+	if (((boolean)clanbitconfig_5)) {
+		if (clanconfig_0 < 0) {
+			if (add(ivar3, ivar4) >= 1440) {
+				ivar2 = add(ivar2, 1);
+				ivar3 = subtract(add(ivar3, ivar4), 1440);
+			} else {
+				ivar3 = add(ivar3, ivar4);
+			}
+		} else if (subtract(ivar3, ivar4) < 0) {
+			ivar2 = subtract(ivar2, 1);
+			ivar3 = subtract(add(1440, arg1), ivar4);
+		} else {
+			ivar3 = subtract(ivar3, ivar4);
+		}
+	}
+	return newstruct cs2func_script_4618_struct(ivar2, ivar3);
+}

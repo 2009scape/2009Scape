@@ -1,0 +1,12 @@
+void script_5326(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = 20316177;
+	ivar2 = 20316179;
+	script_5330();
+	setScriptCallOnGlobalStringChange(5327, 139, 141, 191, 192, 193, 289, 290, 291, 297, 298, 299, 300, 301, 302, 303, 15, "Y", new WidgetPointer(arg0));
+	setScriptCallOnGlobalConfigChange(5327, 1606, 1, "Y", new WidgetPointer(arg0));
+	script_31(ivar2, ivar1, 5666, 5663, 5664, 5665, 5686, 5685);
+	script_4725();
+	return;
+}

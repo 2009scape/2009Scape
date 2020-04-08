@@ -1,0 +1,36 @@
+void script_171() {
+	if (((boolean)globalint_40)) {
+		setWidgetText(new WidgetPointer(390,6), "Show riddle");
+		setWidgetContextMenuOption(1, new WidgetPointer(390,6), "Show");
+		setWidgetIsHidden(false, new WidgetPointer(390,7));
+		setWidgetIsHidden(false, new WidgetPointer(390,8));
+		setWidgetIsHidden(false, new WidgetPointer(390,9));
+		setWidgetIsHidden(false, new WidgetPointer(390,10));
+		setWidgetIsHidden(false, new WidgetPointer(390,11));
+		setWidgetIsHidden(false, new WidgetPointer(390,12));
+		setWidgetIsHidden(false, new WidgetPointer(390,13));
+		setWidgetIsHidden(false, new WidgetPointer(390,14));
+		setWidgetIsHidden(true, new WidgetPointer(390,3));
+		setWidgetIsHidden(true, new WidgetPointer(390,5));
+		globalint_40 = 1;
+	} else {
+		setWidgetText(new WidgetPointer(390,6), "Hide riddle");
+		setWidgetContextMenuOption(1, new WidgetPointer(390,6), "Hide");
+		setWidgetText(new WidgetPointer(390,18), "You seek the grail of old," + "<br>" + "but no longer is it a goblet of gold." + "<br>" + "Among these nine will you find what you seek," + "<br>" + "but be careful and don't peek!" + "<br>" + "A wrong choice will expel you," + "<br>" + "so consider carefully each clue." + "<br>" + "<br>" + "Three boxes contain only air," + "<br>" + "beware of three boxes, for danger lurks there." + "<br>" + "Two hold only rubbish but would fool you with disguise," + "<br>" + "only one box holds your prize." + "<br>" + "<br>" + "Clues will give the information you need," + "<br>" + "<br>" + "rubbish always sits to the right of danger, pay heed." + "<br>" + "There is nothing helpful in boxes great in height," + "<br>" + "and boxes on either end will not end your plight." + "<br>" + "A tall or small box will only bring you anger," + "<br>" + "but a square box will not put you in danger.");
+		setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(390,18));
+		setWidgetIsHidden(true, new WidgetPointer(390,7));
+		setWidgetIsHidden(true, new WidgetPointer(390,8));
+		setWidgetIsHidden(true, new WidgetPointer(390,9));
+		setWidgetIsHidden(true, new WidgetPointer(390,10));
+		setWidgetIsHidden(true, new WidgetPointer(390,11));
+		setWidgetIsHidden(true, new WidgetPointer(390,12));
+		setWidgetIsHidden(true, new WidgetPointer(390,13));
+		setWidgetIsHidden(true, new WidgetPointer(390,14));
+		setWidgetIsHidden(false, new WidgetPointer(390,3));
+		setWidgetIsHidden(false, new WidgetPointer(390,5));
+		setWidgetScrollMax(190, 520, new WidgetPointer(390,19));
+		script_31(25559045, 25559059, 792, 789, 790, 791, 773, 788);
+		globalint_40 = 0;
+	}
+	return;
+}

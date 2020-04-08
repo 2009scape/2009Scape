@@ -1,0 +1,4 @@
+void script_3310() {
+	setWidgetText(new WidgetPointer(949,75), intToStr(globalint_1163));
+	return;
+}

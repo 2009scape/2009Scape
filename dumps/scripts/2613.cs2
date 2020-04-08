@@ -1,0 +1,41 @@
+void script_2613() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	switch (script_2617()) {
+		case 0:
+			ivar2 = addToCoordinate(globalint_834, 0, 0, 5);
+			break;
+		case 7:
+			ivar2 = addToCoordinate(globalint_834, -4, 0, 4);
+			break;
+		case 6:
+			ivar2 = addToCoordinate(globalint_834, -5, 0, 0);
+			break;
+		case 5:
+			ivar2 = addToCoordinate(globalint_834, -4, 0, -4);
+			break;
+		case 4:
+			ivar2 = addToCoordinate(globalint_834, 0, 0, -5);
+			break;
+		case 3:
+			ivar2 = addToCoordinate(globalint_834, 4, 0, -4);
+			break;
+		case 2:
+			ivar2 = addToCoordinate(globalint_834, 5, 0, 0);
+			break;
+		case 1:
+			ivar2 = addToCoordinate(globalint_834, 4, 0, 4);
+	}
+	ivar0 = divide(extractX(ivar2), 64);
+	ivar1 = divide(extractY(ivar2), 64);
+	if ((globalint_835 != ivar0) || (globalint_836 != ivar1)) {
+		return;
+	}
+	globalint_834 = ivar2;
+	script_2612(globalint_834, globalint_833);
+	return;
+}

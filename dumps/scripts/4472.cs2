@@ -1,0 +1,38 @@
+void script_4472(int arg0,int arg1,string arg2) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar2 = -1;
+	ivar3 = -1;
+	ivar4 = -1;
+	switch (arg0) {
+		case 1:
+			globalint_1650 = 1;
+			globalstring_23 = arg2;
+			script_1558(0);
+			return;
+		case 5:
+			messageType0("Attempting to add " + arg2 + " to your Friends List.");
+			arg2 = strRemoveEntities(arg2);
+			cs2method3605(arg2);
+			break;
+		case 6:
+			messageType0("Attempting to add " + arg2 + " to your Ignore List.");
+			arg2 = strRemoveEntities(arg2);
+			cs2method3607(arg2);
+			break;
+		case 7:
+			messageType0("Attempting to remove " + arg2 + " from your Friends List.");
+			arg2 = strRemoveEntities(arg2);
+			cs2method3606(arg2);
+			break;
+		case 8:
+			messageType0("Attempting to remove " + arg2 + " from your Ignore List.");
+			arg2 = strRemoveEntities(arg2);
+			cs2method3608(arg2);
+			break;
+		case 9:
+			script_4465(arg2);
+	}
+	return;
+}

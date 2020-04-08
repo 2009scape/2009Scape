@@ -1,0 +1,23 @@
+int script_4180(int arg0,int arg1,int arg2,string arg3) {
+	int ivar3;
+	int ivar4;
+	ivar3 = add(multiply(getLineCount(getWidgetActualWidth(new WidgetPointer(arg1)), 494, arg3), 10), 2);
+	ivar4 = subtract(getClientCycle(), arg2);
+	if ((arg2 > 0) && (ivar4 < 255)) {
+		createExtraChild(new WidgetPointer(arg1), 3, getExtraChildGap(new WidgetPointer(arg1)));
+		setWidgetSize(0, ivar3, 1, 0);
+		setWidgetPosition(0, arg0, 1, 0);
+		setWidgetFilled(1);
+		setWidgetRGB(new Color(255, 0, 0));
+		cs2method2103(max(ivar4, 0));
+		setScriptCallOnGameloop(4181, new WidgetPointer(-32768,3), -2147483643, "Ii");
+	}
+	createExtraChild(new WidgetPointer(arg1), 4, getExtraChildGap(new WidgetPointer(arg1)));
+	setWidgetSize(0, ivar3, 1, 0);
+	setWidgetPosition(0, arg0, 1, 0);
+	setWidgetRGB(new Color(170, 170, 170));
+	setWidgetFont(494);
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetText(arg3);
+	return add(add(arg0, ivar3), 2);
+}

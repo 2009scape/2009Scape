@@ -1,0 +1,26 @@
+void script_1782() {
+	if (standart_config_1149 != -1) {
+		script_1801();
+		if (((boolean)globalint_258)) {
+			script_1363(51839119);
+			setScriptCallOnMouseOver(95, new WidgetPointer(-32768,3), "I", new WidgetPointer(791,143));
+			setScriptCallOnMouseExit(97, new WidgetPointer(-32768,3), "I", new WidgetPointer(791,143));
+			if (((boolean)globalint_259)) {
+				setWidgetText(new WidgetPointer(791,146), "Accept");
+				setWidgetFont(496, new WidgetPointer(791,146));
+			} else {
+				setWidgetText(new WidgetPointer(791,146), "Accept -" + "<br>" + "Opponent has accepted.");
+				setWidgetFont(494, new WidgetPointer(791,146));
+			}
+		} else {
+			script_1360(51839119);
+			setScriptCallOnMouseOver(-1, "", new WidgetPointer(791,143));
+			setScriptCallOnMouseExit(-1, "", new WidgetPointer(791,143));
+			setWidgetText(new WidgetPointer(791,146), "Waiting for opponent...");
+			setWidgetFont(495, new WidgetPointer(791,146));
+		}
+	} else {
+		script_1802();
+	}
+	return;
+}

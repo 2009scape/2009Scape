@@ -1,0 +1,34 @@
+void script_3385() {
+	string svar0;
+	openInterface(48758808, 976);
+	svar0 = "";
+	if (cs2method6144()) {
+		svar0 = "There was a problem with your current graphic settings, so you have been given default settings for safety. Click below to auto-choose best graphics settings.";
+		setWidgetText(new WidgetPointer(976,4), svar0);
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(976,2)), add(multiply(22, getLineCount(getWidgetActualWidth(new WidgetPointer(976,4)), 3793, svar0)), 86), 0, 0, new WidgetPointer(976,2));
+		setWidgetSize(getTextWidth(3793, getWidgetText(new WidgetPointer(976,6))), getWidgetActualHeight(new WidgetPointer(976,6)), 0, 0, new WidgetPointer(976,6));
+	} else if (((boolean)globalint_1277) && (globalint_1240 == -1)) {
+		svar0 = "This is your first time playing. Click below to auto-choose best graphics settings. Choose 'Leave Alone' to continue with default settings.";
+		setWidgetText(new WidgetPointer(976,4), svar0);
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(976,2)), add(multiply(22, getLineCount(getWidgetActualWidth(new WidgetPointer(976,4)), 3793, svar0)), 86), 0, 0, new WidgetPointer(976,2));
+		setWidgetSize(getTextWidth(3793, getWidgetText(new WidgetPointer(976,6))), getWidgetActualHeight(new WidgetPointer(976,6)), 0, 0, new WidgetPointer(976,6));
+	} else if (globalint_1240 == -1) {
+		svar0 = "This is your first time playing, click below to auto choose best graphics settings.";
+		setWidgetText(new WidgetPointer(976,4), svar0);
+		setWidgetPosition(0, 10, 1, 0, new WidgetPointer(976,4));
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(976,4)), 68, 0, 1, new WidgetPointer(976,4));
+		setWidgetPosition(0, 17, 1, 2, new WidgetPointer(976,5));
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(976,2)), add(multiply(22, getLineCount(getWidgetActualWidth(new WidgetPointer(976,4)), 3793, svar0)), 68), 0, 0, new WidgetPointer(976,2));
+		setWidgetIsHidden(true, new WidgetPointer(976,6));
+	} else {
+		svar0 = "Available graphics options have changed. Click below to auto choose best graphics settings.";
+		if (((boolean)globalint_1277)) {
+			svar0 = "Available graphics options have changed. Click below to auto-choose best graphics settings. Choose 'Leave Alone' to continue with your current settings.";
+		}
+		setWidgetText(new WidgetPointer(976,4), svar0);
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(976,2)), add(multiply(22, getLineCount(getWidgetActualWidth(new WidgetPointer(976,4)), 3793, svar0)), 86), 0, 0, new WidgetPointer(976,2));
+		setWidgetSize(getTextWidth(3793, getWidgetText(new WidgetPointer(976,6))), getWidgetActualHeight(new WidgetPointer(976,6)), 0, 0, new WidgetPointer(976,6));
+	}
+	globalint_1277 = 1;
+	return;
+}

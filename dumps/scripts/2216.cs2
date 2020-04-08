@@ -1,0 +1,12 @@
+void script_2216() {
+	if (standart_config_1700 == 2) {
+		if (((boolean)globalint_1137)) {
+			playSoundEffect(8731, 1, 0);
+		}
+		globalint_1137 = 1;
+		setScriptCallOnGameloop(2214, "", new WidgetPointer(932,1));
+	} else {
+		messageType0("There is nothing to push off!");
+	}
+	return;
+}

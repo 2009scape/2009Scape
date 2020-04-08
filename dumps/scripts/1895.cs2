@@ -1,0 +1,144 @@
+void script_1895(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	int stack_dump0;
+	previousAndCurrentName(0,2,0) structdump_1;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar2 = getFriendlistSize();
+	if (ivar2 == -2) {
+		createExtraChild(new WidgetPointer(arg0), 4, 0);
+		setWidgetFont(496);
+		setWidgetText("Loading Friends List - Please wait...");
+		setWidgetPosition(0, 0, 0, 0);
+		setWidgetSize(138, 100, 0, 0);
+		setWidgetRGB(new Color(255, 255, 100));
+		setWidgetUnknownBoolean(true);
+		return;
+	}
+	if (ivar2 == -1) {
+		createExtraChild(new WidgetPointer(arg0), 4, 0);
+		setWidgetFont(496);
+		setWidgetText("Connecting to Friend Server - Please wait...");
+		setWidgetPosition(0, 0, 0, 0);
+		setWidgetSize(138, 100, 0, 0);
+		setWidgetRGB(new Color(255, 255, 100));
+		setWidgetUnknownBoolean(true);
+		return;
+	}
+	ivar3 = 0;
+	ivar4 = subtract(subtract(add(add(getWidgetActualX(new WidgetPointer(1108,12)), getWidgetActualX(new WidgetPointer(1108,7))), 14), getMaxLineWidth(2147483647, 496, " ")), getWidgetActualX(new WidgetPointer(1108,13)));
+	svar0 = "";
+	svar1 = "";
+	svar2 = "";
+	ivar5 = 0;
+	svar3 = "";
+	ivar6 = 0;
+	ivar7 = 0;
+	ivar8 = 0;
+	ivar9 = 0;
+	while (ivar3 < ivar2) {
+		ivar8 = multiply(ivar3, 3);
+		ivar9 = add(multiply(ivar3, 16), 2);
+		stack_dump0 = ivar3;
+		structdump_1 = getFriendName(stack_dump0);
+		svar3 = structdump_1.stringpart_1;
+		svar0 = structdump_1.stringpart_0;
+		if (stringMethod4107(svar3, "") != 0) {
+			ivar6 = 1;
+		} else {
+			ivar6 = 0;
+		}
+		if (((boolean)ivar6)) {
+			svar1 = "    " + svar0;
+		} else {
+			svar1 = svar0;
+		}
+		createExtraChild(new WidgetPointer(arg0), 4, ivar8);
+		setWidgetFont(496);
+		setWidgetPosition(0, ivar9, 0, 0);
+		setWidgetSize(ivar4, 15, 0, 0);
+		setWidgetRGB(new Color(255, 255, 100));
+		setWidgetUnknownBoolean(true);
+		if (getMaxLineWidth(2147483647, 496, svar1) > ivar4) {
+			while ((getMaxLineWidth(2147483647, 496, svar1 + "...") > ivar4) && (strLength(svar1) > 0)) {
+				svar1 = substr(0, subtract(strLength(svar1), 1), svar1);
+			}
+			setWidgetText(svar1 + "...");
+			if (((boolean)ivar6)) {
+				ivar5 = add(getMaxLineWidth(2147483647, 496, "Last known as: " + svar3), 8);
+				if (ivar5 > getWidgetActualWidth(new WidgetPointer(arg0))) {
+					svar2 = svar0 + "<br>" + "Last known as:" + "<br>" + svar3;
+				} else {
+					svar2 = svar0 + "<br>" + "Last known as: " + svar3;
+				}
+			} else {
+				svar2 = svar0;
+			}
+			setScriptCallOnMouseOver(4538, new WidgetPointer(1108,34), new WidgetPointer(-32768,3), -1, svar2, 120, 3793, 3793, 16777215, 13, 4, 2, -2147483647, -2147483646, "IIisifdiiiiii");
+			setScriptCallOnMouseExit(40, new WidgetPointer(1108,34), "I");
+		} else if (((boolean)ivar6)) {
+			setWidgetText(svar1);
+			ivar5 = add(getMaxLineWidth(2147483647, 496, "Last known as: " + svar3), 8);
+			if (ivar5 > getWidgetActualWidth(new WidgetPointer(arg0))) {
+				svar2 = "Last known as:" + "<br>" + svar3;
+			} else {
+				svar2 = "Last known as: " + svar3;
+			}
+			setScriptCallOnMouseOver(4538, new WidgetPointer(1108,34), new WidgetPointer(-32768,3), ivar3, svar2, 120, 3793, 3793, 16777215, 13, 4, 2, -2147483647, -2147483646, "IIisifdiiiiii");
+			setScriptCallOnMouseExit(40, new WidgetPointer(1108,34), "I");
+		} else {
+			setWidgetText(svar0);
+		}
+		createExtraChild(new WidgetPointer(arg0), 5, add(ivar8, 1));
+		setWidgetSprite(2313);
+		setWidgetSize(14, 14, 0, 0);
+		setWidgetPosition(0, ivar9, 0, 0);
+		if (((boolean)ivar6)) {
+			setWidgetHidden(1);
+		}
+		createExtraChild(new WidgetPointer(arg0), 4, add(ivar8, 2));
+		setWidgetFont(496);
+		setWidgetText(script_196(getFriendRank(ivar3)));
+		setWidgetPosition(137, ivar9, 0, 0);
+		setWidgetSize(131, 15, 0, 0);
+		setWidgetRGB(new Color(255, 255, 255));
+		setWidgetUnknownBoolean(true);
+		setWidgetContextMenuOption(1, "Not in Friends Chat");
+		setWidgetContextMenuOption(2, "Recruit");
+		setWidgetContextMenuOption(3, "Corporal");
+		setWidgetContextMenuOption(4, "Sergeant");
+		setWidgetContextMenuOption(5, "Lieutenant");
+		setWidgetContextMenuOption(6, "Captain");
+		setWidgetContextMenuOption(7, "General");
+		setScriptCallOnClickContextMenu(197, ivar3, -2147483644, "ii");
+		ivar3 = add(ivar3, 1);
+	}
+	ivar10 = 0;
+	ivar11 = 0;
+	if (ivar3 > 12) {
+		ivar10 = cs2method2601(new WidgetPointer(arg0));
+		ivar11 = add(multiply(ivar3, 16), 4);
+		setWidgetScrollMax(0, ivar11, new WidgetPointer(arg0));
+		if (ivar10 > ivar11) {
+			ivar10 = ivar11;
+		}
+		script_72(arg1, arg0, ivar10);
+	} else {
+		setWidgetScrollMax(0, 0, new WidgetPointer(arg0));
+		cs2method2100(0, 0, new WidgetPointer(arg0));
+		script_72(arg1, arg0, 0);
+	}
+	return;
+}

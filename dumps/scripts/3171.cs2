@@ -1,0 +1,9 @@
+void script_3171(int arg0) {
+	setScriptCallOnFriendListChange(3172, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+	setScriptCallOnClanListChange(3172, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+	setScriptCallOnMessage(3172, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+	setScriptCallOnClanChatDeltaStuff(3172, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+	setScriptCallOnClanChatSettingsStuff(3172, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+	script_3173(arg0);
+	return;
+}

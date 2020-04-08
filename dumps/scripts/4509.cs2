@@ -1,0 +1,11 @@
+void script_4509(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = 535;
+	ivar2 = 536;
+	setWidgetSprite(ivar1, new WidgetPointer(arg0));
+	setScriptCallOnMouseEntered(44, new WidgetPointer(-32768,3), ivar2, "Id", new WidgetPointer(arg0));
+	setScriptCallOnMouseExit(44, new WidgetPointer(-32768,3), ivar1, "Id", new WidgetPointer(arg0));
+	setScriptCallOnClickContextMenu(29, "", new WidgetPointer(arg0));
+	return;
+}

@@ -1,0 +1,4 @@
+void script_1302() {
+	script_71(globalint_168);
+	return;
+}

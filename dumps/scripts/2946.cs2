@@ -1,0 +1,375 @@
+void script_2946(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	string svar4;
+	ivar1 = script_2948();
+	ivar2 = 39059516;
+	ivar3 = 39059515;
+	ivar4 = 39059501;
+	ivar5 = 39059463;
+	if (hasSSKey()) {
+		ivar2 = 63897649;
+		ivar4 = 63897644;
+		ivar5 = 63897626;
+	}
+	if (ivar1 == 42) {
+		setWidgetSprite(6297, new WidgetPointer(744,97));
+		setWidgetIsHidden(false, new WidgetPointer(744,103));
+		setWidgetText(new WidgetPointer(744,130), intToStr(getWorldId()));
+		setWidgetText(new WidgetPointer(744,131), intToStr(getReturncode42ExtraData()));
+		globalint_1100 = 42;
+		return;
+	}
+	if (ivar1 == 43) {
+		setWidgetText(new WidgetPointer(744,130), intToStr(getWorldId()));
+		setWidgetText(new WidgetPointer(744,131), intToStr(getReturncode42ExtraData()));
+		globalint_1100 = 43;
+		return;
+	}
+	setWidgetIsHidden(true, new WidgetPointer(744,103));
+	setWidgetSprite(4129, new WidgetPointer(744,97));
+	if (ivar1 == -3) {
+		setWidgetText(new WidgetPointer(ivar2), "Logging in...");
+		setWidgetText(new WidgetPointer(ivar3), "Logging in...");
+		setScriptCallOnMousePressed(-1, "", new WidgetPointer(ivar4));
+		script_2950(ivar1, 0, 1, -1, 0, -1, 0, "Logging In - Please Wait", "", "");
+		globalint_1100 = -3;
+		return;
+	}
+	if (globalint_1100 == -3) {
+		script_2954();
+	}
+	ivar6 = 0;
+	svar0 = "";
+	if (ivar1 == 21) {
+		globalint_1100 = 21;
+		setWidgetText(new WidgetPointer(ivar2), "Logging in...");
+		setWidgetText(new WidgetPointer(ivar3), "Logging in...");
+		setScriptCallOnMousePressed(-1, "", new WidgetPointer(ivar4));
+		if (((boolean)globalint_200)) {
+			globalint_200 = getWorldswitchTimer();
+		}
+		globalint_200 = subtract(globalint_200, 1);
+		if (globalint_200 <= 0) {
+			setScriptCallOnGameloop(-1, "", new WidgetPointer(ivar4));
+			if (((boolean)arg0)) {
+				script_2945();
+			} else {
+				script_4634(arg0);
+			}
+			return;
+		}
+		ivar6 = divide(globalint_200, 50);
+		if (((boolean)ivar6)) {
+			svar0 = "You have only just left another world. Your profile will be transferred in" + "<br>" + "1 second.";
+		} else {
+			svar0 = "You have only just left another world. Your profile will be transferred in" + "<br>" + intToStr(ivar6) + " seconds.";
+		}
+		if (isWidgetHidden(new WidgetPointer(ivar5))) {
+			script_2950(ivar1, 0, 0, 2611, 1, 1, 0, svar0, "Abort Login", "");
+		} else {
+			script_3233(svar0);
+		}
+		return;
+	}
+	script_2954();
+	ivar7 = 0;
+	svar1 = "";
+	if (((boolean)ivar1)) {
+		flow_27:
+			setWidgetText(new WidgetPointer(ivar2), "Logging in...");
+			setWidgetText(new WidgetPointer(ivar3), "Logging in...");
+			setScriptCallOnMousePressed(-1, "", new WidgetPointer(ivar4));
+			if (((boolean)globalint_201)) {
+				globalint_202 = ((int)canShowVideoAd());
+			}
+			ivar7 = divide(subtract(500, globalint_201), 50);
+			if (((boolean)globalint_202)) {
+				if (((boolean)ivar7)) {
+					svar1 = "Could not display video advertisement. Login will continue in 1 second.";
+				} else {
+					svar1 = "Could not display video advertisement. Login will continue in " + intToStr(ivar7) + " seconds";
+				}
+			} else if (globalint_201 < 500) {
+				if (((boolean)ivar7)) {
+					svar1 = "Displaying video advertisement. Login will continue in 1 second.";
+				} else {
+					svar1 = "Displaying video advertisement. Login will continue in " + intToStr(ivar7) + " seconds.";
+				}
+			} else {
+				svar1 = "Displaying video advertisement. Login will continue in 0 seconds.";
+			}
+			script_2950(ivar1, 0, 0, 2611, 0, -1, 0, svar1, "", "");
+			globalint_201 = add(globalint_201, 1);
+			IF (((boolean)globalint_202)) 
+				GOTO	flow_41
+			GOTO	flow_42
+		flow_41:
+			IF (isShowingVideoAd()) 
+				GOTO	flow_43
+		flow_42:
+			IF (globalint_201 < 500) 
+				GOTO	flow_43
+			GOTO	flow_44
+		flow_43:
+			return;
+		flow_44:
+			script_2954();
+			skipLoginstage10();
+			return;
+	}
+	script_2954();
+	if (hasSSKey()) {
+		setWidgetText(new WidgetPointer(ivar2), "Play Game");
+		setWidgetText(new WidgetPointer(ivar3), "Play Game");
+	} else {
+		setWidgetText(new WidgetPointer(ivar2), "Log In");
+		setWidgetText(new WidgetPointer(ivar3), "Log In");
+	}
+	setScriptCallOnMousePressed(2944, "", new WidgetPointer(ivar4));
+	if (hasSSKey()) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(975,26));
+	} else {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(596,7));
+	}
+	svar2 = "";
+	ivar8 = 1;
+	ivar9 = 0;
+	ivar10 = 2608;
+	ivar11 = 0;
+	ivar12 = 0;
+	svar3 = "";
+	ivar13 = 1;
+	svar4 = "Back";
+	switch (ivar1) {
+		case -2:
+			script_2954();
+			if (hasSSKey()) {
+				return;
+			}
+			script_2940(11);
+			return;
+		case 29:
+			switch (getDetailedRC()) {
+				case 0:
+					svar2 = "You must have a Combat Level of at least 20 (not including Summoning) to enter a PvP world.";
+					break;
+				case 1:
+					svar2 = "You are currently carrying lent items and cannot enter a PvP world.";
+					break;
+				case 2:
+					svar2 = "You must be standing in the Wilderness or Edgeville to enter this bounty world.";
+					break;
+				case 3:
+					svar2 = "You must have a total skill level of 1,000 or greater to enter this world.";
+					break;
+				case 5:
+					svar2 = "You must have a total skill level of 1,500 or greater to enter this world.";
+					break;
+				case 4:
+					svar2 = "You must move to a safe area before you can log in to a PvP or bounty world.";
+					break;
+				default:
+					svar2 = "Unexpected server response. Please try using a different world.";
+			}
+			break;
+		case 46:
+			svar2 = "This instance is marked for deletion/rebuild. Please try using a different world.";
+			break;
+		case 45:
+			switch (getReturncodeExtraData()) {
+				case 0:
+					switch (getDetailedRC()) {
+						case 0:
+							svar2 = "You must be near the TzHaar Fight Pits entrance to enter a global match.";
+							break;
+						default:
+							svar2 = "Unable to log in. Please try using a different world.";
+					}
+					break;
+				case 1:
+					switch (getDetailedRC()) {
+						case 1:
+							svar2 = "There was an error connecting to your meeting room. Please try again.";
+							break;
+						case 2:
+							svar2 = "You need a higher rank to enter that private tent.";
+							break;
+						case 3:
+							svar2 = "You need an invitation to enter that private room.";
+							break;
+						default:
+							svar2 = "Unable to log in. Please try using a different world.";
+					}
+					break;
+				default:
+					svar2 = "Unexpected server response. Please try using a different world.";
+			}
+			break;
+		case -5:
+			svar2 = "Connection timed out. Please try using a different world.";
+			break;
+		case -4:
+			svar2 = "Error connecting to server.";
+			break;
+		case -1:
+			svar2 = "No response from server. Please try using a different world.";
+			break;
+		case 5:
+			svar2 = "Your account has not logged out from its last session. Try again in a few minutes.";
+			break;
+		case 7:
+			svar2 = "This world is full. Please use a different world.";
+			break;
+		case 8:
+			svar2 = "Unable to connect: login server offline.";
+			break;
+		case 9:
+			svar2 = "Login limit exceeded: too many connections from your address.";
+			break;
+		case 10:
+			svar2 = "Unable to connect: bad session id.";
+			break;
+		case 13:
+			svar2 = "Could not complete login. Please try using a different world.";
+			break;
+		case 16:
+			svar2 = "Too many incorrect logins from your address. Please wait 5 minutes before trying again.";
+			break;
+		case 17:
+			svar2 = "You are standing in a members-only area. To play on this world, move to a free area first.";
+			break;
+		case 20:
+			svar2 = "Invalid loginserver requested. Please try using a different world.";
+			break;
+		case 22:
+			svar2 = "Malformed login packet. Please try again.";
+			break;
+		case 23:
+			svar2 = "No reply from login server. Please wait a minute and try again.";
+			break;
+		case 24:
+			svar2 = "Error loading your profile. Please contact customer support.";
+			break;
+		case 25:
+			svar2 = "Unexpected loginserver response. Please try using a different world.";
+			break;
+		case 26:
+			svar2 = "This computer's address has been blocked, as it was used to break our rules.";
+			break;
+		case 27:
+			svar2 = "Service unavailable.";
+			break;
+		case 36:
+			svar2 = "Unable to connect: authentication server offline.";
+			break;
+		case 37:
+			svar2 = "Your account is currently inaccessible. Please try again in a few minutes.";
+			break;
+		case 39:
+			svar2 = "The instance you tried to join no longer exists. Please try using a different world.";
+			break;
+		case 41:
+			svar2 = "The instance you tried to join is full. Please try back later or try using a different world.";
+			break;
+		case 44:
+			svar2 = "Our systems are currently unavailable. Please try again in a few minutes.";
+			break;
+		case 35:
+			svar2 = "Your session has expired. Please click 'Back' in your browser to renew it.";
+			svar4 = "Close";
+			break;
+		case 14:
+			ivar8 = 0;
+			ivar10 = 2610;
+			svar2 = "The server is being updated. Please wait a few minutes and try again.";
+			break;
+		case 6:
+			ivar8 = 0;
+			ivar10 = 2610;
+			svar2 = "RuneScape has been updated! Please reload this page.";
+			break;
+		case 3:
+			if (((boolean)globalint_1414)) {
+				svar2 = "Invalid username or password." + "<br>" + "<br>" + "For accounts created after the 24th of November 2010, please use your email address to login. Otherwise please login with your username.";
+			} else if (globalint_1414 == 2) {
+				svar2 = "Invalid email or password." + "<br>" + "<br>" + "For accounts created after the 24th of November 2010, please use your email address to login. Otherwise please login with your username.";
+			} else {
+				svar2 = "Invalid login or password." + "<br>" + "<br>" + "For accounts created after the 24th of November 2010, please use your email address to login. Otherwise please login with your username.";
+			}
+			svar4 = "Try Again";
+			ivar11 = 1;
+			svar3 = "Forgotten your password?";
+			break;
+		case 4:
+			svar2 = "Your account has been disabled. Check your message centre for details.";
+			ivar11 = 1;
+			svar3 = "Message Centre";
+			break;
+		case 11:
+			svar2 = "Your password is an extremely common choice, and is not secure. You must change it before you can login.";
+			ivar11 = 1;
+			svar3 = "Change Password";
+			break;
+		case 18:
+			ivar10 = 2612;
+			svar2 = "Your account has been locked. If you have not received an account recovery email, please select 'Recover Account'.";
+			ivar11 = 1;
+			svar3 = "Recover Account";
+			break;
+		case 30:
+			svar2 = "This is not a member's account; please choose a 'free' world from the website to play on this account.";
+			ivar11 = 1;
+			if (((boolean)cs2method5420())) {
+				svar3 = "Choose World";
+			} else {
+				svar3 = "Subscribe";
+			}
+			break;
+		case 31:
+			svar2 = "You must change your account's display name before you can login.";
+			ivar11 = 1;
+			svar3 = "Change Display Name";
+			break;
+		case 19:
+			svar2 = "Fullscreen is currently a members-only feature. To log in, exit fullscreen via the options menu or use a member's account.";
+			ivar11 = 1;
+			svar3 = "Subscribe";
+			break;
+		case 12:
+			svar2 = "You need a member's account to log in to this world. Please subscribe or use a different world.";
+			ivar11 = 1;
+			svar3 = "Subscribe";
+			break;
+		case 40:
+			svar2 = "You need a member's account to log in to this world. Please subscribe or use a different world.";
+			ivar11 = 1;
+			svar3 = "Subscribe";
+			break;
+		case 32:
+			svar2 = "Your account has negative membership credit. Please log into the billing system to add credit to your account.";
+			ivar11 = 1;
+			svar3 = "Add Credit";
+			break;
+		default:
+			svar2 = "Unexpected server response. Please try using a different world.";
+	}
+	script_2950(ivar1, ivar8, ivar9, ivar10, ivar11, ivar12, ivar13, svar2, svar3, svar4);
+	resetRCs();
+	return;
+}

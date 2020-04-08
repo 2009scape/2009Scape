@@ -1,0 +1,12 @@
+void script_5017(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6) {
+	setWidgetSprite(arg2, new WidgetPointer(arg0));
+	setWidgetSprite(arg3, new WidgetPointer(arg1));
+	if (arg6 >= 5) {
+		setWidgetRGB(new Color(getColorRelatedMethod4020(arg4)), new WidgetPointer(arg0));
+		setWidgetRGB(new Color(getColorRelatedMethod4020(arg5)), new WidgetPointer(arg1));
+	} else {
+		setWidgetRGB(new Color(getColorRelatedMethod4020(6716)), new WidgetPointer(arg0));
+		setWidgetRGB(new Color(getColorRelatedMethod4020(6716)), new WidgetPointer(arg1));
+	}
+	return;
+}

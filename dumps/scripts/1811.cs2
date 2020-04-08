@@ -1,0 +1,46 @@
+void script_1811(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	string svar0;
+	if (((boolean)strLength(globalstring_38))) {
+		script_1812(arg2, "");
+		return;
+	}
+	ivar3 = subtract(min(cs2method5017(), 100), 1);
+	svar0 = "";
+	ivar4 = -1;
+	while (ivar3 >= 0) {
+		switch (cs2method5004(ivar3)) {
+			case 1:
+			case 2:
+			case 3:
+			case 7:
+			case 42:
+			case 9:
+			case 11:
+			case 41:
+			case 44:
+			case 45:
+			case 17:
+			case 18:
+			case 20:
+			case 25:
+			case 24:
+				if (((boolean)stringMethod4107(lower(strRemoveEntities(cs2method5010(ivar3))), globalstring_38))) {
+					svar0 = cs2method5003(ivar3);
+					ivar4 = ivar3;
+				}
+		}
+		ivar3 = subtract(ivar3, 1);
+	}
+	if (ivar4 < 0) {
+		globalint_267 = -1;
+		script_1812(arg2, "");
+		return;
+	}
+	if (((globalint_267 == -1) || (ivar4 <= globalint_267)) || (stringMethod4107(svar0, globalstring_39) != 0)) {
+		script_1812(arg2, svar0);
+	}
+	globalint_267 = ivar4;
+	return;
+}

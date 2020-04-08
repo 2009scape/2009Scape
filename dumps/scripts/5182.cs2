@@ -1,0 +1,16 @@
+void script_5182() {
+	if (((boolean)getWidgetScrollMaxH(new WidgetPointer(1122,88)))) {
+		setWidgetIsHidden(false, new WidgetPointer(1122,87));
+		setWidgetIsHidden(false, new WidgetPointer(1122,367));
+	} else if (((boolean)cs2method2600(new WidgetPointer(1122,88)))) {
+		setWidgetIsHidden(false, new WidgetPointer(1122,87));
+		setWidgetIsHidden(true, new WidgetPointer(1122,367));
+	} else if (cs2method2600(new WidgetPointer(1122,88)) == subtract(getWidgetScrollMaxH(new WidgetPointer(1122,88)), getWidgetActualWidth(new WidgetPointer(1122,88)))) {
+		setWidgetIsHidden(true, new WidgetPointer(1122,87));
+		setWidgetIsHidden(false, new WidgetPointer(1122,367));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1122,87));
+		setWidgetIsHidden(true, new WidgetPointer(1122,367));
+	}
+	return;
+}

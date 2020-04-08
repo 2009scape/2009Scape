@@ -1,0 +1,26 @@
+void script_2576(int arg0,int arg1) {
+	string svar0;
+	svar0 = "";
+	switch (arg0) {
+		case 51183658:
+		case 51183649:
+			svar0 = "How much time is left for this round.";
+			break;
+		case 51183659:
+		case 51183650:
+			svar0 = "How many orbs the green team have captured this round.";
+			break;
+		case 51183660:
+		case 51183651:
+			svar0 = "How many orbs the yellow team have captured this round.";
+			break;
+		case 51183662:
+		case 51183653:
+			svar0 = "How active you have been during this round.";
+			break;
+		default:
+			return;
+	}
+	script_39(arg0, arg1, 25, getWidgetActualWidth(new WidgetPointer(getWidgetParentId(new WidgetPointer(arg1)))), svar0);
+	return;
+}

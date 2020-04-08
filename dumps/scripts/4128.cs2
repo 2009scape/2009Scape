@@ -1,0 +1,15 @@
+void script_4128(int arg0) {
+	if (globalint_1452 <= 100) {
+		script_4130(arg0);
+		return;
+	}
+	if (globalint_1452 <= 200) {
+		script_4131(arg0, script_284(getMyPositionHash()));
+		return;
+	}
+	if (globalint_1452 <= 300) {
+		script_4132(arg0, script_284(getMyPositionHash()));
+		return;
+	}
+	return;
+}

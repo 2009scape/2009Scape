@@ -1,0 +1,10 @@
+void script_1424() {
+	if (((boolean)bitconfig_4456)) {
+		setWidgetRGB(new Color(0, 35, 0), new WidgetPointer(5,3));
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(5,2));
+	} else {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(5,3));
+		setWidgetRGB(new Color(35, 0, 0), new WidgetPointer(5,2));
+	}
+	return;
+}

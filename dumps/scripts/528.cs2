@@ -1,0 +1,10 @@
+void script_528(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	if (((boolean)arg0)) {
+		setWidgetSprite(arg1, new WidgetPointer(arg3));
+		setWidgetIsHidden(false, new WidgetPointer(arg4));
+	} else {
+		setWidgetSprite(arg2, new WidgetPointer(arg3));
+		setWidgetIsHidden(true, new WidgetPointer(arg4));
+	}
+	return;
+}

@@ -1,0 +1,44 @@
+void script_2698(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int stack_dump0;
+	opcStruct5303(2,0,0) structdump_1;
+	if (arg0 == getDisplayMode()) {
+		return;
+	}
+	ivar5 = -1;
+	if (arg0 != 3) {
+		cs2method5307(arg0);
+		ivar5 = getDisplayMode();
+		cs2method5309(ivar5);
+		if (arg0 != ivar5) {
+			script_2694(arg4, 0, "RuneScape was unable to enter that display mode." + "<br>" + "<br>" + "Please visit our Knowledge Base for more information.", "Consult Knowledge Base", "kbase/view.ws?guid=controls_display_options");
+			script_2596(arg3, ivar5, arg1, arg2, arg4);
+			return;
+		}
+		script_2596(arg3, ivar5, arg1, arg2, arg4);
+		if ((arg0 >= 2) && (ivar5 >= 2)) {
+			globalint_994 = 2;
+		}
+		return;
+	}
+	if (isSiteSettingsMembers()) {
+		script_2694(arg4, 0, "Fullscreen mode is only available to RuneScape members." + "<br>" + "<br>" + "Please visit the RuneScape website to learn about other benefits of membership.", "Members' benefits", "members/members.ws");
+		return;
+	}
+	if (cs2method5302() > globalint_178) {
+		stack_dump0 = globalint_178;
+		structdump_1 = cs2method5303(stack_dump0);
+		if (cs2method5300(structdump_1.intpart_0, structdump_1.intpart_1)) {
+			script_2596(arg3, arg0, arg1, arg2, arg4);
+			script_2700(2, arg4, 0, 0);
+			return;
+		}
+	}
+	arg0 = cs2method5308();
+	cs2method5307(arg0);
+	if (((boolean)arg4)) {
+		messageType0("Unable to enter fullscreen mode at that resolution.");
+	}
+	script_2596(arg3, arg0, arg1, arg2, arg4);
+	return;
+}

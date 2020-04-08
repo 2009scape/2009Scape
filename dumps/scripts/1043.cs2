@@ -1,0 +1,12 @@
+void script_1043(int arg0,int arg1) {
+	if (setWidgetRegister(new WidgetPointer(arg1), arg0)) {
+		globalint_128 = subtract(arg0, 1);
+		if (setWidgetRegister(new WidgetPointer(arg1), 0)) {
+			setWidgetPosition(getWidgetActualX(), getWidgetActualY(), 0, 0);
+			setWidgetSize(getWidgetActualWidth(), getWidgetActualHeight(), 0, 0);
+			setWidgetRGB(new Color(87, 126, 69));
+			setWidgetFilled(1);
+		}
+	}
+	return;
+}

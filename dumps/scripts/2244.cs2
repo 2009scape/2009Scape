@@ -1,0 +1,17 @@
+void script_2244(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,int arg11) {
+	int ivar12;
+	arg0 = script_2245(arg1, arg2, arg0, 61276214, 61276209);
+	arg3 = script_2245(arg4, arg5, arg3, 61276224, 61276219);
+	arg6 = script_2245(arg7, arg8, arg6, 61276234, 61276229);
+	ivar12 = add(add(arg0, arg3), arg6);
+	setWidgetSize(add(1, divide(multiply(223, ivar12), add(add(arg2, arg5), arg8))), 10, 0, 0, new WidgetPointer(935,95));
+	ivar12 = add(add(ivar12, arg9), arg10);
+	setWidgetText(new WidgetPointer(935,90), intToStr(ivar12));
+	setWidgetText(new WidgetPointer(935,107), intToStr(divide(multiply(ivar12, arg11), 100)));
+	if (((arg0 == arg1) && (arg3 == arg4)) && (arg6 == arg7)) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(935,0));
+	} else {
+		setScriptCallOnGameloop(2244, arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, "iiiiiiiiiiii", new WidgetPointer(935,0));
+	}
+	return;
+}

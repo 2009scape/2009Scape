@@ -1,0 +1,14 @@
+void script_4039(int arg0,int arg1) {
+	if (setWidgetRegister(new WidgetPointer(190,18), arg0)) {
+		if (((boolean)arg1)) {
+			setWidgetRGB(new Color(0, 255, 255));
+		} else if (script_2193(arg0) == 2) {
+			setWidgetRGB(new Color(0, 255, 0));
+		} else if (((boolean)script_2193(arg0))) {
+			setWidgetRGB(new Color(255, 255, 0));
+		} else {
+			setWidgetRGB(new Color(255, 0, 0));
+		}
+	}
+	return;
+}

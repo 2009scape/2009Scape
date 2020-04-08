@@ -1,0 +1,12 @@
+void script_251(int arg0) {
+	if (((boolean)script_133(42996800, 849335423, getMyPositionHash())) && cs2method6108()) {
+		if (isWidgetHidden(new WidgetPointer(arg0))) {
+			setWidgetIsHidden(false, new WidgetPointer(arg0));
+		}
+	} else {
+		if (isWidgetHidden(new WidgetPointer(arg0))) {
+			setWidgetIsHidden(true, new WidgetPointer(arg0));
+		}
+	}
+	return;
+}

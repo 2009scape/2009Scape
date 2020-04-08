@@ -1,0 +1,246 @@
+int script_1502(int arg0) {
+	flow_0:
+		SWITCH (arg0) {
+			case 66650278:
+				 GOTO flow_1
+			case 66650279:
+				 GOTO flow_2
+			case 66650280:
+				 GOTO flow_3
+			case 66650281:
+				 GOTO flow_4
+			case 66650282:
+				 GOTO flow_5
+			case 66650283:
+				 GOTO flow_6
+			case 66650284:
+				 GOTO flow_7
+			case 66650285:
+				 GOTO flow_8
+			case 66650286:
+				 GOTO flow_9
+			case 66650287:
+				 GOTO flow_10
+			case 66650288:
+				 GOTO flow_11
+			case 66650289:
+				 GOTO flow_12
+			case 66650290:
+				 GOTO flow_13
+			case 66650291:
+				 GOTO flow_14
+			case 66650292:
+				 GOTO flow_15
+			case 66650293:
+				 GOTO flow_16
+			case 66650294:
+				 GOTO flow_17
+			case 66650295:
+				 GOTO flow_18
+			case 66650296:
+				 GOTO flow_19
+			case 66650297:
+				 GOTO flow_20
+			case 66650298:
+				 GOTO flow_21
+			case 66650299:
+				 GOTO flow_22
+			case 66650300:
+				 GOTO flow_23
+			case 66650301:
+				 GOTO flow_24
+			case 66650302:
+				 GOTO flow_25
+			case 66650303:
+				 GOTO flow_26
+			case 66650304:
+				 GOTO flow_27
+			case 66650305:
+				 GOTO flow_28
+			case 66650306:
+				 GOTO flow_29
+			case 66650307:
+				 GOTO flow_30
+			case 66650308:
+				 GOTO flow_31
+			case 66650309:
+				 GOTO flow_32
+			case 66650310:
+				 GOTO flow_33
+			case 66650311:
+				 GOTO flow_34
+			case 66650312:
+				 GOTO flow_35
+			case 66650313:
+				 GOTO flow_36
+			case 66650314:
+				 GOTO flow_37
+			case 66650315:
+				 GOTO flow_38
+			case 66650316:
+				 GOTO flow_39
+			case 66650317:
+				 GOTO flow_40
+			case 66650318:
+				 GOTO flow_41
+			case 66650319:
+				 GOTO flow_42
+			case 66650320:
+				 GOTO flow_43
+			case 66650321:
+				 GOTO flow_44
+			case 66650322:
+				 GOTO flow_45
+			case 66650323:
+				 GOTO flow_46
+			case 66650324:
+				 GOTO flow_47
+			case 66650325:
+				 GOTO flow_48
+			case 66650326:
+				 GOTO flow_49
+			case 66650327:
+				 GOTO flow_50
+			case 66650328:
+				 GOTO flow_51
+			case 66650329:
+				 GOTO flow_52
+			case 66650330:
+				 GOTO flow_53
+			case 66650331:
+				 GOTO flow_54
+			case 66650332:
+				 GOTO flow_55
+			case 66650333:
+				 GOTO flow_56
+			case 66650334:
+				 GOTO flow_57
+			case 66650335:
+				 GOTO flow_58
+			case 66650336:
+				 GOTO flow_59
+			case 66650337:
+				 GOTO flow_60
+		}
+		return -1;
+	flow_1:
+		return 1;
+	flow_2:
+		return 2;
+	flow_3:
+		return 3;
+	flow_4:
+		return 4;
+	flow_5:
+		return 5;
+	flow_6:
+		return 6;
+	flow_7:
+		return 7;
+	flow_8:
+		return 8;
+	flow_9:
+		return 9;
+	flow_10:
+		return 10;
+	flow_11:
+		return 11;
+	flow_12:
+		return 12;
+	flow_13:
+		return 13;
+	flow_14:
+		return 14;
+	flow_15:
+		return 15;
+	flow_16:
+		return 16;
+	flow_17:
+		return 17;
+	flow_18:
+		return 18;
+	flow_19:
+		return 19;
+	flow_20:
+		return 20;
+	flow_21:
+		return 21;
+	flow_22:
+		return 22;
+	flow_23:
+		return 23;
+	flow_24:
+		return 24;
+	flow_25:
+		return 25;
+	flow_26:
+		return 26;
+	flow_27:
+		return 27;
+	flow_28:
+		return 28;
+	flow_29:
+		return 29;
+	flow_30:
+		return 30;
+	flow_31:
+		return 31;
+	flow_32:
+		return 32;
+	flow_33:
+		return 33;
+	flow_34:
+		return 34;
+	flow_35:
+		return 35;
+	flow_36:
+		return 36;
+	flow_37:
+		return 37;
+	flow_38:
+		return 38;
+	flow_39:
+		return 39;
+	flow_40:
+		return 40;
+	flow_41:
+		return 41;
+	flow_42:
+		return 42;
+	flow_43:
+		return 43;
+	flow_44:
+		return 44;
+	flow_45:
+		return 45;
+	flow_46:
+		return 46;
+	flow_47:
+		return 47;
+	flow_48:
+		return 48;
+	flow_49:
+		return 49;
+	flow_50:
+		return 50;
+	flow_51:
+		return 51;
+	flow_52:
+		return 52;
+	flow_53:
+		return 53;
+	flow_54:
+		return 54;
+	flow_55:
+		return 55;
+	flow_56:
+		return 56;
+	flow_57:
+		return 57;
+	flow_58:
+		return 58;
+	flow_59:
+		return 59;
+	flow_60:
+		return 60;
+}

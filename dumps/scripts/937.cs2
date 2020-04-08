@@ -1,0 +1,36 @@
+void script_937() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	deleteAllExtraChilds(new WidgetPointer(335,32));
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 4;
+	ivar3 = 7;
+	if (getWidgetScrollMaxH(new WidgetPointer(335,32)) > 0) {
+		ivar0 = divide(subtract(getWidgetScrollMaxH(new WidgetPointer(335,32)), multiply(36, ivar2)), subtract(ivar2, 1));
+	} else {
+		ivar0 = divide(subtract(getWidgetActualWidth(new WidgetPointer(335,32)), multiply(36, ivar2)), subtract(ivar2, 1));
+	}
+	if (getWidgetScrollMaxV(new WidgetPointer(335,32)) > 0) {
+		ivar1 = divide(subtract(getWidgetScrollMaxV(new WidgetPointer(335,32)), multiply(32, ivar3)), subtract(ivar3, 1));
+	} else {
+		ivar1 = divide(subtract(getWidgetActualHeight(new WidgetPointer(335,32)), multiply(32, ivar3)), subtract(ivar3, 1));
+	}
+	ivar4 = 0;
+	ivar5 = -1;
+	while (ivar4 < getItemContainerLength(90)) {
+		createExtraChild(new WidgetPointer(335,32), 3, ivar4);
+		setWidgetSize(36, 32, 0, 0);
+		setWidgetPosition(multiply(add(36, ivar0), mod(ivar4, ivar2)), multiply(divide(ivar4, ivar2), add(32, ivar1)), 0, 0);
+		setWidgetFilled(1);
+		setWidgetRGB(new Color(255, 0, 0));
+		cs2method2103(255);
+		ivar4 = add(ivar4, 1);
+	}
+	setScriptCallOnItemContainerUpdate(938, 90, 1, "Y", new WidgetPointer(335,32));
+	return;
+}

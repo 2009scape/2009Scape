@@ -1,0 +1,14 @@
+void script_2022(int arg0,int arg1) {
+	if (arg0 != 1) {
+		return;
+	}
+	if (arg1 <= -1) {
+		setWidgetText(new WidgetPointer(916,17), "");
+		return;
+	}
+	bitconfig_8095 = min(arg1, bitconfig_8094);
+	script_2047();
+	setScriptCallOnGameloop(2024, add(getClientCycle(), 15), "i", new WidgetPointer(905,28));
+	setWidgetIsHidden(false, new WidgetPointer(905,28));
+	return;
+}

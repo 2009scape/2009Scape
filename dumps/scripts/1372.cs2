@@ -1,0 +1,5 @@
+void script_1372() {
+	setWorldmapZoom(globalint_172);
+	setWidgetText(new WidgetPointer(755,14), intToStr(globalint_172) + "%");
+	return;
+}

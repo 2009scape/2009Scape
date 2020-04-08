@@ -1,0 +1,7 @@
+void script_2131(int arg0,int arg1) {
+	setScriptCallOnGameloop(2132, new WidgetPointer(arg0), subtract(rndExcl(6), 3), subtract(rndExcl(6), 3), new WidgetPointer(arg1), 0, "IiiIi", new WidgetPointer(arg0));
+	setScriptCallOnMouseEntered(2133, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+	setScriptCallOnMouseOver(2135, new WidgetPointer(arg0), -2147483647, -2147483646, "Iii", new WidgetPointer(arg0));
+	setScriptCallOnMouseExit(2134, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+	return;
+}

@@ -467,7 +467,7 @@ public final class SlayerMasterDialogue extends DialoguePlugin {
 				} else if (Tasks.forValue(player.getSlayer().getTask()) == Tasks.CAVE_KRAKEN) {
 					interpreter.sendDialogues(master.getNpc(), getExpression(master), "Excellent, you're doing great. Your new task is to kill ", "" + player.getSlayer().getAmount() + " cave krakens.");					
 				} else {
-				interpreter.sendDialogues(master.getNpc(), getExpression(master), "Excellent, you're doing great. Your new task is to kill", "" + player.getSlayer().getAmount() + " " + player.getSlayer().getTaskName() + "s.");
+					interpreter.sendDialogues(master.getNpc(), getExpression(master), "Excellent, you're doing great. Your new task is to kill", "" + player.getSlayer().getAmount() + " " + player.getSlayer().getTaskName() + "s.");
 				}
 				stage = 844;
 				break;
@@ -650,7 +650,7 @@ public final class SlayerMasterDialogue extends DialoguePlugin {
 
 	@Override
 	public int[] getIds() {
-		return new int[] { 70, 1598, 1596, 1597, 1599, 3820, 8275, 8273, 8274, 8649 };
+		return new int[] { 70, 1598, 1596, 1597, 1599, 8275, 8273, 8274, 8649 };
 	}
 
 }

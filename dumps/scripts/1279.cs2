@@ -1,0 +1,19 @@
+void script_1279(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar4 = divide(subtract(getWidgetActualWidth(new WidgetPointer(arg0)), multiply(36, arg2)), subtract(arg2, 1));
+	ivar5 = divide(subtract(getWidgetActualHeight(new WidgetPointer(arg0)), multiply(32, arg3)), subtract(arg3, 1));
+	ivar6 = 0;
+	while (ivar6 <= multiply(arg2, arg3)) {
+		createExtraChild(new WidgetPointer(arg0), 5, ivar6);
+		setWidgetSize(36, 32, 0, 0);
+		setWidgetPosition(multiply(add(36, ivar4), mod(ivar6, arg2)), multiply(divide(ivar6, arg2), add(32, ivar5)), 0, 0);
+		script_1280(arg1, ivar6, arg0, ivar6);
+		ivar6 = add(ivar6, 1);
+	}
+	return;
+}

@@ -1,0 +1,93 @@
+int script_4796(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,int arg11) {
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	flow_0:
+		ivar12 = 0;
+		ivar13 = 0;
+		ivar14 = 0;
+		ivar15 = 0;
+		ivar16 = 0;
+		ivar17 = 0;
+		ivar18 = 0;
+		ivar19 = 0;
+		if (arg1 > 0) {
+			ivar14 = divide(multiply(arg0, 1000), arg1);
+			ivar12 = add(ivar12, 1);
+		}
+		if (arg3 > 0) {
+			ivar15 = divide(multiply(arg2, 1000), arg3);
+			ivar12 = add(ivar12, 1);
+		}
+		if (arg5 > 0) {
+			ivar16 = divide(multiply(arg4, 1000), arg5);
+			ivar12 = add(ivar12, 1);
+		}
+		if (arg7 > 0) {
+			ivar17 = divide(multiply(arg6, 1000), arg7);
+			ivar12 = add(ivar12, 1);
+		}
+		if (arg9 > 0) {
+			ivar18 = divide(multiply(arg8, 1000), arg9);
+			ivar12 = add(ivar12, 1);
+		}
+		if (arg11 > 0) {
+			ivar19 = divide(multiply(arg10, 1000), arg11);
+			ivar12 = add(ivar12, 1);
+		}
+		ivar12 = max(ivar12, 1);
+		ivar20 = divide(add(add(add(add(add(ivar14, ivar15), ivar16), ivar17), ivar18), ivar19), multiply(ivar12, 10));
+		ivar13 = subtract(100, ivar20);
+		IF (ivar13 == 100) 
+			GOTO	flow_13
+		GOTO	flow_26
+	flow_13:
+		IF (arg0 != arg1) 
+			GOTO	flow_14
+		GOTO	flow_15
+	flow_14:
+		IF (arg0 != 0) 
+			GOTO	flow_25
+	flow_15:
+		IF (arg2 != arg3) 
+			GOTO	flow_16
+		GOTO	flow_17
+	flow_16:
+		IF (arg2 != 0) 
+			GOTO	flow_25
+	flow_17:
+		IF (arg4 != arg5) 
+			GOTO	flow_18
+		GOTO	flow_19
+	flow_18:
+		IF (arg4 != 0) 
+			GOTO	flow_25
+	flow_19:
+		IF (arg6 != arg7) 
+			GOTO	flow_20
+		GOTO	flow_21
+	flow_20:
+		IF (arg6 != 0) 
+			GOTO	flow_25
+	flow_21:
+		IF (arg8 != arg9) 
+			GOTO	flow_22
+		GOTO	flow_23
+	flow_22:
+		IF (arg8 != 0) 
+			GOTO	flow_25
+	flow_23:
+		IF ((arg10 != arg11) && (arg10 != 0)) 
+			GOTO	flow_25
+		GOTO	flow_26
+	flow_25:
+		ivar13 = 99;
+	flow_26:
+		return ivar13;
+}

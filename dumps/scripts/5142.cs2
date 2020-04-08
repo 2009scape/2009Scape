@@ -1,0 +1,11 @@
+void script_5142(int arg0) {
+	switch (arg0) {
+		case 71828049:
+			globalint_1570 = -1;
+			break;
+		case 71828037:
+			globalint_1571 = -1;
+	}
+	setWidgetIsHidden(false, new WidgetPointer(arg0));
+	return;
+}

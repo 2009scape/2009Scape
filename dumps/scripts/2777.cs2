@@ -1,0 +1,7 @@
+void script_2777(int arg0,int arg1,int arg2) {
+	int ivar3;
+	ivar3 = subtract(255, script_1210(200, 75, arg0, 0));
+	cs2method2103(ivar3, new WidgetPointer(arg1));
+	cs2method2103(ivar3, new WidgetPointer(arg2));
+	return;
+}

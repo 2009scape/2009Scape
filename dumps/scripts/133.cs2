@@ -1,0 +1,6 @@
+int script_133(int arg0,int arg1,int arg2) {
+	if ((((extractX(arg2) >= min(extractX(arg0), extractX(arg1))) && (extractY(arg2) >= min(extractY(arg0), extractY(arg1)))) && ((extractZ(arg2) >= min(extractZ(arg0), extractZ(arg1))) && (extractX(arg2) <= max(extractX(arg0), extractX(arg1))))) && ((extractY(arg2) <= max(extractY(arg0), extractY(arg1))) && (extractZ(arg2) <= max(extractZ(arg0), extractZ(arg1))))) {
+		return 1;
+	}
+	return 0;
+}

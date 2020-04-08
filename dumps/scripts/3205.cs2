@@ -1,0 +1,5 @@
+void script_3205() {
+	closeInterface(59375680);
+	setWidgetIsHidden(true, new WidgetPointer(906,56));
+	return;
+}

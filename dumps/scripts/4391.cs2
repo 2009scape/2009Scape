@@ -1,0 +1,21 @@
+void script_4391(int arg0) {
+	int ivar1;
+	int ivar2;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	cs2func_script_4383_struct(2,0,0) structdump_3;
+	ivar1 = -1;
+	ivar2 = -1;
+	if (cs2method3701()) {
+		stack_dump0 = bitconfig_9086;
+		stack_dump1 = bitconfig_9087;
+		stack_dump2 = 0;
+		structdump_3 = script_4383(stack_dump0, stack_dump1, stack_dump2);
+		ivar2 = structdump_3.intpart_1;
+		ivar1 = structdump_3.intpart_0;
+		doWidgetType19Task(0, 1024, ivar1, new WidgetPointer(arg0));
+		doWidgetType19Task(1, 1057, ivar2, new WidgetPointer(arg0));
+	}
+	return;
+}

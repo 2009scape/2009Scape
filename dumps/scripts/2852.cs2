@@ -1,0 +1,29 @@
+void script_2852(int arg0) {
+	if ((globalint_1076 < add(globalint_1075, 250)) && (globalint_1076 > subtract(globalint_1075, 250))) {
+		globalint_1076 = globalint_1075;
+	} else if (globalint_1076 > globalint_1075) {
+		if (subtract(globalint_1076, 32768) > globalint_1075) {
+			globalint_1076 = add(globalint_1076, 250);
+			if (globalint_1076 > 65535) {
+				globalint_1076 = subtract(globalint_1076, 63335);
+			}
+		} else {
+			globalint_1076 = subtract(globalint_1076, 250);
+			if (globalint_1076 < 0) {
+				globalint_1076 = add(globalint_1076, 63335);
+			}
+		}
+	} else if (add(globalint_1076, 32768) < globalint_1075) {
+		globalint_1076 = subtract(globalint_1076, 250);
+		if (globalint_1076 < 0) {
+			globalint_1076 = add(globalint_1076, 63335);
+		}
+	} else {
+		globalint_1076 = add(globalint_1076, 250);
+		if (globalint_1076 > 65535) {
+			globalint_1076 = subtract(globalint_1076, 63335);
+		}
+	}
+	cs2method2106(globalint_1076, new WidgetPointer(475,31));
+	return;
+}

@@ -1,0 +1,5 @@
+void script_1184(int arg0) {
+	setWidgetRGB(new Color(script_806()), new WidgetPointer(arg0));
+	setWidgetText(new WidgetPointer(arg0), intToStr(getRunEnergy()));
+	return;
+}

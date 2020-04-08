@@ -1,0 +1,6 @@
+void script_2137(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6) {
+	if (setWidgetRegister(new WidgetPointer(arg5), arg6)) {
+		setWidget3DRotation(arg3, arg4, bitAnd(add(getWidgetRotateX(), arg0), 2047), bitAnd(add(getWidgetRotateY(), arg1), 2047), bitAnd(add(cs2method1607(), arg2), 2047), getWidget3DDistance());
+	}
+	return;
+}

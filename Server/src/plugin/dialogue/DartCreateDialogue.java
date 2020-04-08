@@ -1,3 +1,4 @@
+/*
 package plugin.dialogue;
 
 import org.crandor.game.content.dialogue.DialoguePlugin;
@@ -7,42 +8,56 @@ import org.crandor.game.node.entity.player.Player;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.game.node.item.Item;
 
+*/
 /**
  * Represents the dart creating dialogue.
  * @author 'Vexia
  * @version 1.0
- */
+ *//*
+
 @InitializablePlugin
 public final class DartCreateDialogue extends DialoguePlugin {
 
-	/**
+	*/
+/**
 	 * Represents the first item parameter.
-	 */
+	 *//*
+
 	private Item item;
 
-	/**
+	*/
+/**
 	 * Represents the second item parameter.
-	 */
+	 *//*
+
 	private Item second;
 
-	/**
+	*/
+/**
 	 * Represents the dark.
-	 */
+	 *//*
+
 	private Dart dart;
 
-	/**
+	*/
+/**
 	 * Constructs a new {@code DartCreateDialogue} {@code Object}.
-	 */
+	 *//*
+
 	public DartCreateDialogue() {
-		/**
+		*/
+/**
 		 * empty.
-		 */
+		 *//*
+
 	}
 
-	/**
+	*/
+/**
 	 * Constructs a new {@code DartCreateDialogue} {@code Object}.
 	 * @param player the player.
-	 */
+	 *//*
+
 	public DartCreateDialogue(Player player) {
 		super(player);
 	}
@@ -87,3 +102,4 @@ public final class DartCreateDialogue extends DialoguePlugin {
 		return new int[] { 328933 };
 	}
 }
+*/

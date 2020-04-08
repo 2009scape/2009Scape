@@ -1,0 +1,16 @@
+void script_2729(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	ivar4 = getDisplayMode();
+	if (ivar4 != 1) {
+		if (arg3 != 1) {
+			return;
+		}
+	} else {
+		if (((boolean)arg3)) {
+			return;
+		}
+	}
+	script_2730(arg1, arg2, ivar4);
+	setScriptCallOnGameloop(2729, new WidgetPointer(-32768,3), new WidgetPointer(arg1), new WidgetPointer(arg2), ivar4, "IIIi", new WidgetPointer(arg0));
+	return;
+}

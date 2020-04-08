@@ -1,0 +1,9 @@
+string script_780(int arg0) {
+	if (arg0 >= 999999) {
+		return "*";
+	}
+	if (arg0 >= 10000) {
+		return concat(intToStr(divide(arg0, 1000)), "K");
+	}
+	return intToStr(arg0);
+}

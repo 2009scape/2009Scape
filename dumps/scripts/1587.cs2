@@ -1,0 +1,19 @@
+void script_1587(int arg0,int arg1,int arg2,string arg3) {
+	int ivar3;
+	string svar1;
+	svar1 = arg3;
+	ivar3 = getWidgetActualWidth(new WidgetPointer(arg0));
+	if (getMaxLineWidth(ivar3, arg2, svar1 + " ") > ivar3) {
+		while (getMaxLineWidth(2147483647, arg2, svar1 + "... ") > ivar3) {
+			svar1 = substr(0, subtract(strLength(svar1), 1), svar1);
+		}
+		svar1 = svar1 + "...";
+		setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(arg1), arg3, 25, 5000, "IIsii", new WidgetPointer(arg0));
+		setScriptCallOnMouseExit(40, new WidgetPointer(arg1), "I", new WidgetPointer(arg0));
+	} else {
+		setScriptCallOnMouseOver(-1, "", new WidgetPointer(arg0));
+		setScriptCallOnMouseExit(-1, "", new WidgetPointer(arg0));
+	}
+	setWidgetText(new WidgetPointer(arg0), svar1);
+	return;
+}

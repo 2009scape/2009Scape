@@ -1,0 +1,29 @@
+int script_4771(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	ivar2 = 38;
+	ivar3 = divide(arg1, 8);
+	ivar4 = 5470;
+	createExtraChild(new WidgetPointer(arg0), 3, arg1);
+	setWidgetPosition(2, multiply(ivar2, ivar3), 0, 0);
+	setWidgetSize(4, 10, 1, 0);
+	if (((boolean)mod(ivar3, 2))) {
+		setWidgetRGB(new Color(24, 23, 21));
+	} else {
+		setWidgetRGB(new Color(33, 31, 28));
+	}
+	setWidgetFilled(1);
+	ivar5 = add(arg1, 1);
+	setScriptCallOnMouseEntered(4779, new WidgetPointer(arg0), ivar5, 1, "Iii");
+	setScriptCallOnMouseExit(4779, new WidgetPointer(arg0), ivar5, 0, "Iii");
+	arg1 = add(arg1, 1);
+	createExtraChild(new WidgetPointer(arg0), 5, arg1);
+	setWidgetSprite(ivar4);
+	setWidgetSize(4, 10, 1, 0);
+	setWidgetPosition(2, multiply(ivar2, ivar3), 0, 0);
+	setWidgetHidden(1);
+	arg1 = add(arg1, 1);
+	return arg1;
+}

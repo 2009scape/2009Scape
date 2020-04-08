@@ -1,0 +1,26 @@
+void script_2753(int arg0,int arg1,int arg2,int arg3,string arg4) {
+	if (arg1 != 1) {
+		return;
+	}
+	if (setWidgetRegister(new WidgetPointer(arg2), arg3)) {
+		deleteExtraChild();
+	}
+	if ((globalint_5 != arg0) || (strLength(arg4) <= 0)) {
+		return;
+	}
+	globalstring_22 = strRemoveEntities(arg4);
+	setWidgetText(new WidgetPointer(752,5), replaceLtGt(globalstring_22));
+	if (globalint_5 == 8) {
+		sendNameInput(globalstring_22);
+		script_1548(0);
+	} else if (globalint_5 == 9) {
+		sendStringInput(globalstring_22);
+		script_1548(0);
+	} else {
+		if (globalint_5 == 10) {
+			sendUnknownFriendPacketMethod3619(globalstring_22);
+			script_1548(0);
+		}
+	}
+	return;
+}

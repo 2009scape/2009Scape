@@ -1,0 +1,90 @@
+void script_2782() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	string svar0;
+	if (strLength(globalstring_321) <= 0) {
+		setWidgetIsHidden(true, new WidgetPointer(667,52));
+		setWidgetIsHidden(true, new WidgetPointer(670,1));
+		setWidgetIsHidden(true, new WidgetPointer(763,3));
+		return;
+	}
+	deleteAllExtraChilds(new WidgetPointer(667,54));
+	ivar0 = getTextWidth(496, globalstring_321);
+	ivar1 = getMaxLineWidth(2147483647, 494, globalstring_322);
+	ivar2 = getMaxLineWidth(2147483647, 494, globalstring_323);
+	ivar3 = getMaxLineWidth(2147483647, 494, globalstring_324);
+	ivar4 = 0;
+	ivar5 = 0;
+	svar0 = "Superior stats are shown in " + "<col=ffffff>" + "white" + "</col>" + ".";
+	if (strLength(globalstring_325) > 0) {
+		ivar4 = getMaxLineWidth(2147483647, 494, globalstring_325);
+		ivar5 = getTextWidth(494, svar0);
+	}
+	ivar6 = add(multiply(getLineCount(2147483647, 494, globalstring_324), 10), 3);
+	ivar7 = add(add(add(5, ivar2), 5), ivar3);
+	if (ivar4 > 0) {
+		ivar7 = add(add(ivar7, 5), ivar4);
+		ivar7 = max(ivar7, add(ivar5, 10));
+	}
+	ivar7 = max(ivar7, ivar1);
+	ivar8 = max(max(ivar7, ivar0), getWidgetActualWidth(new WidgetPointer(667,65)));
+	ivar9 = 0;
+	if (ivar8 > ivar7) {
+		ivar9 = divide(subtract(ivar8, ivar7), 2);
+	}
+	createExtraChild(new WidgetPointer(667,54), 4, getExtraChildGap(new WidgetPointer(667,54)));
+	setWidgetPosition(add(ivar9, 10), 25, 0, 0);
+	setWidgetSize(getWidgetActualX(), ivar6, 1, 0);
+	setWidgetFont(494);
+	setWidgetUnknownBoolean(true);
+	setWidgetRGB(new Color(255, 152, 31));
+	setWidgetText(globalstring_322);
+	createExtraChild(new WidgetPointer(667,54), 4, getExtraChildGap(new WidgetPointer(667,54)));
+	setWidgetPosition(add(ivar9, 15), 25, 0, 0);
+	setWidgetSize(getWidgetActualX(), ivar6, 1, 0);
+	setWidgetFont(494);
+	setWidgetUnknownBoolean(true);
+	setWidgetRGB(new Color(255, 152, 31));
+	setWidgetText(globalstring_323);
+	createExtraChild(new WidgetPointer(667,54), 4, getExtraChildGap(new WidgetPointer(667,54)));
+	setWidgetPosition(add(add(add(ivar9, 15), ivar2), 5), 25, 0, 0);
+	setWidgetSize(ivar3, ivar6, 0, 0);
+	setWidgetFont(494);
+	setWidgetUnknownBoolean(true);
+	setWidgetRGB(new Color(255, 152, 31));
+	setWidgetTextAlignment(1, 0, 0);
+	setWidgetText(globalstring_324);
+	if (ivar4 > 0) {
+		createExtraChild(new WidgetPointer(667,54), 4, getExtraChildGap(new WidgetPointer(667,54)));
+		setWidgetPosition(add(add(add(add(add(ivar9, 15), ivar2), 5), ivar3), 5), 25, 0, 0);
+		setWidgetSize(ivar4, ivar6, 0, 0);
+		setWidgetFont(494);
+		setWidgetUnknownBoolean(true);
+		setWidgetRGB(new Color(255, 152, 31));
+		setWidgetTextAlignment(1, 0, 0);
+		setWidgetText(globalstring_325);
+		createExtraChild(new WidgetPointer(667,54), 4, getExtraChildGap(new WidgetPointer(667,54)));
+		setWidgetPosition(0, add(25, ivar6), 1, 0);
+		setWidgetSize(ivar5, 12, 0, 0);
+		setWidgetTextAlignment(1, 1, 0);
+		setWidgetFont(494);
+		setWidgetUnknownBoolean(true);
+		setWidgetRGB(new Color(255, 152, 31));
+		setWidgetText(svar0);
+		ivar6 = add(ivar6, getWidgetActualHeight());
+	}
+	setWidgetSize(add(ivar8, 20), add(ivar6, 60), 0, 0, new WidgetPointer(667,54));
+	setWidgetText(new WidgetPointer(667,64), globalstring_321);
+	setWidgetIsHidden(false, new WidgetPointer(667,52));
+	setWidgetIsHidden(false, new WidgetPointer(670,1));
+	setWidgetIsHidden(false, new WidgetPointer(763,3));
+	return;
+}

@@ -1,0 +1,131 @@
+void script_3005(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int stack_dump0;
+	cs2func_script_3011_struct(7,0,0) structdump_1;
+	cs2func_script_3011_struct(7,0,0) structdump_2;
+	ivar2 = script_3012(arg1);
+	ivar3 = getWidgetActualHeight(new WidgetPointer(ivar2));
+	ivar4 = subtract(ivar3, 3);
+	if (ivar3 > 30) {
+		if (ivar4 < 30) {
+			setWidgetSize(0, 30, 1, 0, new WidgetPointer(ivar2));
+		} else {
+			setWidgetSize(0, ivar4, 1, 0, new WidgetPointer(ivar2));
+		}
+		switch (arg1) {
+			case 0:
+				ivar4 = subtract(getWidgetActualY(new WidgetPointer(907,4)), 3);
+				if (ivar4 < 30) {
+					setWidgetPosition(0, 30, 0, 0, new WidgetPointer(907,4));
+				} else {
+					setWidgetPosition(0, ivar4, 0, 0, new WidgetPointer(907,4));
+				}
+				ivar4 = subtract(getWidgetActualY(new WidgetPointer(907,5)), 3);
+				if (ivar4 < multiply(30, 2)) {
+					setWidgetPosition(0, multiply(30, 2), 0, 0, new WidgetPointer(907,5));
+				} else {
+					setWidgetPosition(0, ivar4, 0, 0, new WidgetPointer(907,5));
+				}
+				ivar4 = subtract(getWidgetActualY(new WidgetPointer(907,43)), 3);
+				if (ivar4 < multiply(30, 3)) {
+					setWidgetPosition(0, multiply(30, 3), 0, 0, new WidgetPointer(907,43));
+				} else {
+					setWidgetPosition(0, ivar4, 0, 0, new WidgetPointer(907,43));
+				}
+				break;
+			case 1:
+				ivar4 = subtract(getWidgetActualY(new WidgetPointer(907,5)), 3);
+				if (ivar4 < multiply(30, 2)) {
+					setWidgetPosition(0, multiply(30, 2), 0, 0, new WidgetPointer(907,5));
+				} else {
+					setWidgetPosition(0, ivar4, 0, 0, new WidgetPointer(907,5));
+				}
+				ivar4 = subtract(getWidgetActualY(new WidgetPointer(907,43)), 3);
+				if (ivar4 < multiply(30, 3)) {
+					setWidgetPosition(0, multiply(30, 3), 0, 0, new WidgetPointer(907,43));
+				} else {
+					setWidgetPosition(0, ivar4, 0, 0, new WidgetPointer(907,43));
+				}
+				break;
+			case 2:
+				ivar4 = subtract(getWidgetActualY(new WidgetPointer(907,43)), 3);
+				if (ivar4 < multiply(30, 3)) {
+					setWidgetPosition(0, multiply(30, 3), 0, 0, new WidgetPointer(907,43));
+				} else {
+					setWidgetPosition(0, ivar4, 0, 0, new WidgetPointer(907,43));
+				}
+		}
+	}
+	ivar5 = script_3012(arg0);
+	ivar3 = getWidgetActualHeight(new WidgetPointer(ivar5));
+	ivar4 = add(ivar3, 3);
+	if (ivar3 < 88) {
+		if (ivar4 > 88) {
+			setWidgetSize(0, 88, 1, 0, new WidgetPointer(ivar5));
+		} else {
+			setWidgetSize(0, ivar4, 1, 0, new WidgetPointer(ivar5));
+		}
+		switch (arg0) {
+			case 0:
+				ivar4 = add(getWidgetActualY(new WidgetPointer(907,4)), 3);
+				if (ivar4 > 88) {
+					setWidgetPosition(0, 88, 0, 0, new WidgetPointer(907,4));
+				} else {
+					setWidgetPosition(0, ivar4, 0, 0, new WidgetPointer(907,4));
+				}
+				ivar4 = add(getWidgetActualY(new WidgetPointer(907,5)), 3);
+				if (ivar4 > add(88, 30)) {
+					setWidgetPosition(0, add(88, 30), 0, 0, new WidgetPointer(907,5));
+				} else {
+					setWidgetPosition(0, ivar4, 0, 0, new WidgetPointer(907,5));
+				}
+				ivar4 = add(getWidgetActualY(new WidgetPointer(907,43)), 3);
+				if (ivar4 > add(88, multiply(30, 2))) {
+					setWidgetPosition(0, add(88, multiply(30, 2)), 0, 0, new WidgetPointer(907,43));
+				} else {
+					setWidgetPosition(0, ivar4, 0, 0, new WidgetPointer(907,43));
+				}
+				break;
+			case 1:
+				ivar4 = add(getWidgetActualY(new WidgetPointer(907,5)), 3);
+				if (ivar4 > add(88, 30)) {
+					setWidgetPosition(0, add(88, 30), 0, 0, new WidgetPointer(907,5));
+				} else {
+					setWidgetPosition(0, ivar4, 0, 0, new WidgetPointer(907,5));
+				}
+				ivar4 = add(getWidgetActualY(new WidgetPointer(907,43)), 3);
+				if (ivar4 > add(88, multiply(30, 2))) {
+					setWidgetPosition(0, add(88, multiply(30, 2)), 0, 0, new WidgetPointer(907,43));
+				} else {
+					setWidgetPosition(0, ivar4, 0, 0, new WidgetPointer(907,43));
+				}
+				break;
+			case 2:
+				ivar4 = add(getWidgetActualY(new WidgetPointer(907,43)), 3);
+				if (ivar4 > add(88, multiply(30, 2))) {
+					setWidgetPosition(0, add(88, multiply(30, 2)), 0, 0, new WidgetPointer(907,43));
+				} else {
+					setWidgetPosition(0, ivar4, 0, 0, new WidgetPointer(907,43));
+				}
+		}
+	} else {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(907,2));
+		if (getWidgetSpriteId(new WidgetPointer(script_3013(arg1))) == 2669) {
+			stack_dump0 = arg1;
+			structdump_1 = script_3011(stack_dump0);
+			script_3008(structdump_1.intpart_0, structdump_1.intpart_1, structdump_1.intpart_2, structdump_1.intpart_3, structdump_1.intpart_4, structdump_1.intpart_5, structdump_1.intpart_6);
+		} else {
+			stack_dump0 = arg1;
+			structdump_2 = script_3011(stack_dump0);
+			script_3010(structdump_2.intpart_0, structdump_2.intpart_1, structdump_2.intpart_2, structdump_2.intpart_3, structdump_2.intpart_4, structdump_2.intpart_5, structdump_2.intpart_6);
+		}
+		setScriptCallOnMousePressed(3002, 3, "i", new WidgetPointer(907,55));
+		setScriptCallOnMousePressed(3002, 2, "i", new WidgetPointer(907,17));
+		setScriptCallOnMousePressed(3002, 1, "i", new WidgetPointer(907,29));
+		setScriptCallOnMousePressed(3002, 0, "i", new WidgetPointer(907,41));
+	}
+	return;
+}

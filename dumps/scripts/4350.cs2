@@ -1,0 +1,67 @@
+void script_4350() {
+	int ivar0;
+	int ivar1;
+	ivar0 = -1;
+	ivar1 = 0;
+	switch (standart_config_2128) {
+		case 1:
+			ivar1 = bitconfig_9091;
+			break;
+		case 2:
+			ivar1 = bitconfig_9092;
+			break;
+		case 3:
+			ivar1 = bitconfig_9093;
+			break;
+		case 4:
+			ivar1 = bitconfig_9094;
+			break;
+		case 5:
+			ivar1 = bitconfig_9095;
+			break;
+		case 6:
+			ivar1 = bitconfig_9096;
+			break;
+		case 7:
+			ivar1 = bitconfig_9097;
+			break;
+		case 8:
+			ivar1 = bitconfig_9098;
+	}
+	if (ivar1 > 0) {
+		ivar0 = cs2method_3408(105, 103, 3689, ivar1);
+		if (ivar0 != -1) {
+			setWidgetIsHidden(true, new WidgetPointer(1098,135));
+			cs2method2100(0, 0, new WidgetPointer(1098,140));
+			switch (standart_config_2128) {
+				case 1:
+					script_4499(ivar0, 1, getCommonDefinitionSize(ivar0), 4, 71958657, 71958667, 71958669, 71958668, 71958791, cs2method_3408(105, 115, ivar0, bitconfig_9131));
+					break;
+				case 2:
+					script_4499(ivar0, 1, getCommonDefinitionSize(ivar0), 4, 71958657, 71958667, 71958669, 71958668, 71958791, cs2method_3408(105, 115, ivar0, bitconfig_9132));
+					break;
+				case 3:
+					script_4499(ivar0, 1, getCommonDefinitionSize(ivar0), 4, 71958657, 71958667, 71958669, 71958668, 71958791, cs2method_3408(105, 115, ivar0, bitconfig_9133));
+					break;
+				case 4:
+					script_4499(ivar0, 1, getCommonDefinitionSize(ivar0), 4, 71958657, 71958667, 71958669, 71958668, 71958791, cs2method_3408(105, 115, ivar0, bitconfig_9134));
+					break;
+				case 5:
+					script_4499(ivar0, 1, getCommonDefinitionSize(ivar0), 4, 71958657, 71958667, 71958669, 71958668, 71958791, cs2method_3408(105, 115, ivar0, bitconfig_9135));
+					break;
+				case 6:
+					script_4499(ivar0, 1, getCommonDefinitionSize(ivar0), 4, 71958657, 71958667, 71958669, 71958668, 71958791, cs2method_3408(105, 115, ivar0, bitconfig_9136));
+					break;
+				case 7:
+					script_4499(ivar0, 1, getCommonDefinitionSize(ivar0), 4, 71958657, 71958667, 71958669, 71958668, 71958791, cs2method_3408(105, 115, ivar0, bitconfig_9137));
+					break;
+				case 8:
+					script_4499(ivar0, 1, getCommonDefinitionSize(ivar0), 4, 71958657, 71958667, 71958669, 71958668, 71958791, cs2method_3408(105, 115, ivar0, bitconfig_9138));
+			}
+			return;
+		}
+	}
+	script_4501(71958657, "Select a sub-type");
+	setWidgetIsHidden(false, new WidgetPointer(1098,135));
+	return;
+}

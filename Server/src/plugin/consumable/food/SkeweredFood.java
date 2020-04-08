@@ -1,3 +1,4 @@
+/*
 package plugin.consumable.food;
 
 import org.crandor.game.content.global.consumable.ConsumableProperties;
@@ -12,21 +13,27 @@ import org.crandor.plugin.Plugin;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.tools.RandomFunction;
 
+*/
 /**
  * Represents a skewered food.
  * @author 'Vexia
  * @date 23/12/2013
- */
+ *//*
+
 @InitializablePlugin
 public class SkeweredFood extends Food {
 
-	/**
+	*/
+/**
 	 * Constructs a new {@code SkeweredFood} {@code Object}.
-	 */
+	 *//*
+
 	public SkeweredFood() {
-		/**
+		*/
+/**
 		 * empty.
-		 */
+		 *//*
+
 	}
 
 	@Override
@@ -39,31 +46,38 @@ public class SkeweredFood extends Food {
 		return this;
 	}
 
-	/**
+	*/
+/**
 	 * Constructs a new {@code SkeweredFood} {@code Object}.
 	 * @param item the item.
 	 * @param raw the raw item.
 	 * @param burnt the burnt item.
 	 * @param foodProperties the food properties.
 	 * @param cookingProperties the cooking properties.
-	 */
+	 *//*
+
 	public SkeweredFood(int item, int raw, int burnt, ConsumableProperties foodProperties, CookingProperties cookingProperties) {
 		super(item, raw, burnt, foodProperties, new SkeweredProperty(cookingProperties.getLevel(), cookingProperties.getExperience(), cookingProperties.getBurnLevel(), cookingProperties.isRange(), cookingProperties.isSpit()));
 	}
 
-	/**
+	*/
+/**
 	 * Represents the skewered property.
 	 * @author 'Vexia
 	 * @date 23/12/2013
-	 */
+	 *//*
+
 	public static class SkeweredProperty extends CookingProperties {
 
-		/**
+		*/
+/**
 		 * Represents the iron spit item.
-		 */
+		 *//*
+
 		private static final Item IRON_SPIT = new Item(7225);
 
-		/**
+		*/
+/**
 		 * Constructs a new {@code SkeweredFood.java} {@code Object}.
 		 * @param level the level.
 		 * @param experience the experience.
@@ -71,7 +85,8 @@ public class SkeweredFood extends Food {
 		 * @param range the range.
 		 * @param spit the spit.
 		 * @param messages the messages.
-		 */
+		 *//*
+
 		public SkeweredProperty(int level, double experience, int burnLevel, boolean range, boolean spit) {
 			super(level, experience, burnLevel, range, spit, "You successfully roast the meat.", CookingProperties.FAIL_MESSAGE);
 		}
@@ -95,3 +110,4 @@ public class SkeweredFood extends Food {
 		}
 	}
 }
+*/

@@ -1,0 +1,32 @@
+void script_4919() {
+	int ivar0;
+	ivar0 = 0;
+	if (citadelConfigsInitialized()) {
+		if (bitconfig_9550 > 0) {
+			if (isWidgetHidden(new WidgetPointer(1092,259))) {
+				script_4989(script_4948(bitconfig_9550));
+			}
+		} else {
+			script_5007();
+			script_4935();
+			script_4905();
+			script_4907();
+			script_5012();
+			script_4895();
+			script_4864();
+			script_4994();
+			/* 
+				mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	4889
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:178)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+					at tests.Main.main(Main.java:45)
+				
+			 */
+		}
+		script_4853();
+		return;
+	}
+	return;
+}

@@ -1,0 +1,12 @@
+void script_4145(int arg0,int arg1) {
+	if (globalint_98 >= 1) {
+		setWidgetIsHidden(false, new WidgetPointer(arg0));
+		cs2method2310(new WidgetPointer(arg0), "I don't know it.");
+		setWidgetPosition(0, subtract(0, divide(getWidgetActualHeight(new WidgetPointer(arg1)), 2)), 1, 1, new WidgetPointer(arg1));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+		setWidgetNoOptions(new WidgetPointer(arg0));
+		setWidgetPosition(0, 0, 1, 1, new WidgetPointer(arg1));
+	}
+	return;
+}

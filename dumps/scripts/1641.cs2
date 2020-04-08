@@ -1,0 +1,3 @@
+int script_1641() {
+	return add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(bitconfig_6598, bitconfig_6599), bitconfig_6600), bitconfig_6601), bitconfig_6602), bitconfig_6603), bitconfig_6604), bitconfig_6605), bitconfig_6606), bitconfig_6607), bitconfig_6608), bitconfig_6609), bitconfig_1421), bitconfig_6611), bitconfig_6612), bitconfig_6613), bitconfig_6614), bitconfig_6615), bitconfig_6616), bitconfig_6617), bitconfig_6618), bitconfig_6619), bitconfig_6620);
+}

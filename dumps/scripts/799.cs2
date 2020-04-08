@@ -1,0 +1,6 @@
+int script_799(int arg0) {
+	if (getItemAmtInContainer(93, 12526) < 1) {
+		return 0;
+	}
+	return 1;
+}

@@ -1,0 +1,110 @@
+void script_2136(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int stack_dump0;
+	int stack_dump1;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar1 = add(add(118, bitconfig_5855), bitconfig_5855);
+	createExtraChild(new WidgetPointer(arg0), 4, 0);
+	setWidgetSize(200, 32, 0, 0);
+	setWidgetPosition(ivar1, 36, 0, 0);
+	setWidgetFont(497);
+	setWidgetTextAlignment(0, 1, 0);
+	setWidgetRGB(new Color(52, 46, 16));
+	setWidgetUnknownBoolean(false);
+	setWidgetText(cs2method_3408(105, 115, 2224, bitconfig_5856));
+	setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), -2147483643, 16777215, "Iii");
+	setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), -2147483643, 3419664, "Iii");
+	setWidgetContextMenuOption(1, "Select");
+	createExtraChild(new WidgetPointer(arg0), 4, 1);
+	setWidgetSize(200, 32, 0, 0);
+	setWidgetPosition(ivar1, 70, 0, 0);
+	setWidgetFont(497);
+	setWidgetTextAlignment(0, 1, 0);
+	setWidgetRGB(new Color(52, 46, 16));
+	setWidgetUnknownBoolean(false);
+	setWidgetText(cs2method_3408(105, 115, 2224, bitconfig_5858));
+	setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), -2147483643, 16777215, "Iii");
+	setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), -2147483643, 3419664, "Iii");
+	setWidgetContextMenuOption(1, "Select");
+	createExtraChild(new WidgetPointer(arg0), 4, 2);
+	setWidgetSize(200, 32, 0, 0);
+	setWidgetPosition(ivar1, 104, 0, 0);
+	setWidgetFont(497);
+	setWidgetTextAlignment(0, 1, 0);
+	setWidgetRGB(new Color(52, 46, 16));
+	setWidgetUnknownBoolean(false);
+	setWidgetText(cs2method_3408(105, 115, 2224, bitconfig_5860));
+	setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), -2147483643, 16777215, "Iii");
+	setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), -2147483643, 3419664, "Iii");
+	setWidgetContextMenuOption(1, "Select");
+	createExtraChild(new WidgetPointer(arg0), 6, 3);
+	setWidgetSize(226, 144, 0, 0);
+	setWidgetPosition(0, 147, 1, 0);
+	switch (bitconfig_5857) {
+		case 0:
+			setWidgetModel(cs2method_3408(105, 109, 2225, bitconfig_5862));
+			break;
+		case 1:
+			setWidgetModel(cs2method_3408(105, 109, 2226, bitconfig_5862));
+			break;
+		case 2:
+			setWidgetModel(cs2method_3408(105, 109, 2227, bitconfig_5862));
+			break;
+		default:
+			setWidgetModel(cs2method_3408(105, 109, 2228, bitconfig_5862));
+	}
+	ivar2 = multiply(subtract(bitconfig_5855, 5), 4);
+	ivar3 = multiply(subtract(bitconfig_5859, 4), 4);
+	setWidget3DRotation(ivar2, ivar3, pow(bitconfig_5861, 2), pow(bitconfig_5861, 2), pow(bitconfig_5861, 2), add(add(400, bitconfig_5863), bitconfig_5863));
+	ivar4 = bitconfig_5855;
+	ivar5 = divide(bitconfig_5859, 2);
+	ivar6 = 0;
+	switch (bitconfig_5863) {
+		case 0:
+			stack_dump0 = ivar5;
+			stack_dump1 = ivar6;
+			ivar6 = ivar4;
+			stack_dump0 = stack_dump0;
+			ivar5 = stack_dump1;
+			ivar4 = stack_dump0;
+			break;
+		case 1:
+			stack_dump0 = ivar6;
+			stack_dump1 = ivar4;
+			ivar6 = ivar5;
+			stack_dump0 = stack_dump0;
+			ivar5 = stack_dump1;
+			ivar4 = stack_dump0;
+			break;
+		case 2:
+			stack_dump0 = ivar4;
+			stack_dump1 = ivar6;
+			ivar6 = ivar5;
+			stack_dump0 = stack_dump0;
+			ivar5 = stack_dump1;
+			ivar4 = stack_dump0;
+	}
+	setScriptCallOnGameloop(2137, ivar4, ivar5, ivar6, ivar2, ivar3, new WidgetPointer(-32768,3), -2147483643, "iiiiiIi");
+	createExtraChild(new WidgetPointer(arg0), 3, 4);
+	setWidgetSize(226, 144, 0, 0);
+	setWidgetPosition(0, 147, 1, 0);
+	setWidgetRGB(new Color(script_693(add(bitconfig_5861, 95), add(bitconfig_5859, 85), add(bitconfig_5855, 29))));
+	setWidgetFilled(1);
+	cs2method2103(0);
+	setScriptCallOnGameloop(2138, new WidgetPointer(-32768,3), -2147483643, 0, "Iii");
+	createExtraChild(new WidgetPointer(arg0), 5, 5);
+	setWidgetSize(19, 16, 0, 0);
+	setWidgetPosition(349, add(bitconfig_5859, 148), 0, 0);
+	setWidgetHFlip(1);
+	setWidgetSprite(1538);
+	setScriptCallOnMouseEntered(2140, new WidgetPointer(-32768,3), -2147483643, 125, "Iii");
+	setScriptCallOnMouseExit(2140, new WidgetPointer(-32768,3), -2147483643, 0, "Iii");
+	setWidgetContextMenuOption(1, "Change spin");
+	setScriptCallOnClickContextMenu(2139, -2147483644, new WidgetPointer(arg0), getWidgetCustomChildArrayIndex(), ivar2, ivar3, "iIiii");
+	return;
+}

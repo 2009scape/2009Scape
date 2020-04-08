@@ -1,0 +1,49 @@
+void script_4597() {
+	int ivar0;
+	string svar0;
+	string svar1;
+	svar0 = "What if I entered the Wilderness?";
+	svar1 = "Back";
+	ivar0 = 0;
+	if (bitconfig_9226 >= 2) {
+		setWidgetIsHidden(true, new WidgetPointer(17,28));
+		setWidgetSize(16, 0, 1, 1, new WidgetPointer(17,26));
+		setWidgetSize(16, 0, 0, 1, new WidgetPointer(17,27));
+	} else if (((boolean)bitconfig_9226)) {
+		setWidgetText(new WidgetPointer(17,30), svar1);
+	} else {
+		setWidgetText(new WidgetPointer(17,30), svar0);
+	}
+	ivar0 = max(getLineCount(getWidgetActualWidth(new WidgetPointer(17,30)), 495, svar0), getLineCount(getWidgetActualWidth(new WidgetPointer(17,30)), 495, svar1));
+	ivar0 = add(multiply(ivar0, 12), 10);
+	setWidgetSize(10, ivar0, 1, 0, new WidgetPointer(17,28));
+	setWidgetIsHidden(false, new WidgetPointer(17,28));
+	ivar0 = add(ivar0, 5);
+	setWidgetSize(16, ivar0, 1, 1, new WidgetPointer(17,26));
+	setWidgetSize(16, ivar0, 0, 1, new WidgetPointer(17,27));
+	script_680(1114141);
+	setScriptCallOnMouseEntered(95, new WidgetPointer(17,29), "I", new WidgetPointer(17,28));
+	setScriptCallOnMouseExit(93, new WidgetPointer(17,29), "I", new WidgetPointer(17,28));
+	deleteAllExtraChilds(new WidgetPointer(17,26));
+	ivar0 = add(multiply(getLineCount(getWidgetActualWidth(new WidgetPointer(17,26)), 494, globalstring_352), 10), 2);
+	createExtraChild(new WidgetPointer(17,26), 4, 0);
+	setWidgetSize(0, ivar0, 1, 0);
+	setWidgetPosition(0, 0, 1, 0);
+	setWidgetFont(494);
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetRGB(new Color(255, 152, 31));
+	setWidgetUnknownBoolean(true);
+	setWidgetText(globalstring_352);
+	if (ivar0 > getWidgetActualHeight(new WidgetPointer(17,26))) {
+		setWidgetScrollMax(0, ivar0, new WidgetPointer(17,26));
+		script_31(1114139, 1114138, 792, 789, 790, 791, 773, 788);
+		setWidgetIsHidden(false, new WidgetPointer(17,27));
+		setWidgetPosition(0, 0, 0, 0, new WidgetPointer(17,26));
+	} else {
+		setWidgetScrollMax(0, 0, new WidgetPointer(17,26));
+		setWidgetIsHidden(true, new WidgetPointer(17,27));
+		setWidgetPosition(0, 0, 1, 0, new WidgetPointer(17,26));
+		cs2method2100(0, 0, new WidgetPointer(17,26));
+	}
+	return;
+}

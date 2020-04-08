@@ -1,0 +1,8 @@
+void script_2830(int arg0,int arg1) {
+	if (arg0 != 1) {
+		return;
+	}
+	globalint_774 = arg1;
+	script_2790();
+	return;
+}

@@ -1,0 +1,11 @@
+void script_4681() {
+	int ivar0;
+	ivar0 = 0;
+	ivar0 = add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(bitconfig_9436, bitconfig_9437), bitconfig_9438), bitconfig_9439), bitconfig_9440), bitconfig_9441), bitconfig_9442), bitconfig_9443), bitconfig_9444), bitconfig_9445), bitconfig_9446), bitconfig_9447), bitconfig_9448), bitconfig_9449), bitconfig_9450), bitconfig_9451), bitconfig_9452), bitconfig_9453), bitconfig_9454), bitconfig_9455), bitconfig_9456), bitconfig_9457), bitconfig_9458), bitconfig_9459), bitconfig_9460), bitconfig_9461), bitconfig_9462);
+	if (ivar0 == 26) {
+		setWidgetText(new WidgetPointer(314,13), "Final wreck to loot!");
+	} else {
+		setWidgetText(new WidgetPointer(314,13), "Wrecks looted: " + intToStr(ivar0) + "/27");
+	}
+	return;
+}

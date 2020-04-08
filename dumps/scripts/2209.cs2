@@ -1,0 +1,22 @@
+void script_2209() {
+	setWidgetText(new WidgetPointer(932,3), "Correct " + intToStr(standart_config_1703) + "/5");
+	globalint_1137 = 0;
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(932,1));
+	setWidgetPosition(0, 120, 0, 0, new WidgetPointer(932,10));
+	setWidgetPosition(0, 120, 0, 0, new WidgetPointer(932,11));
+	setWidgetPosition(0, 120, 0, 0, new WidgetPointer(932,12));
+	setWidgetPosition(0, 120, 0, 0, new WidgetPointer(932,13));
+	setWidgetPosition(0, 120, 0, 0, new WidgetPointer(932,6));
+	setWidgetPosition(0, 120, 0, 0, new WidgetPointer(932,7));
+	setWidgetPosition(0, 120, 0, 0, new WidgetPointer(932,8));
+	setWidgetPosition(0, 120, 0, 0, new WidgetPointer(932,9));
+	setWidgetIsHidden(true, new WidgetPointer(932,10));
+	setWidgetIsHidden(true, new WidgetPointer(932,11));
+	setWidgetIsHidden(true, new WidgetPointer(932,12));
+	setWidgetIsHidden(true, new WidgetPointer(932,13));
+	setWidgetIsHidden(true, new WidgetPointer(932,6));
+	setWidgetIsHidden(true, new WidgetPointer(932,7));
+	setWidgetIsHidden(true, new WidgetPointer(932,8));
+	setWidgetIsHidden(true, new WidgetPointer(932,9));
+	return;
+}

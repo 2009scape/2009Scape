@@ -1,0 +1,4 @@
+void script_513() {
+	globalint_51 = 1;
+	return;
+}

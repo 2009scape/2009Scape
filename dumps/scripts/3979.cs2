@@ -1,0 +1,35 @@
+void script_3979(int arg0,int arg1) {
+	int ivar2;
+	string svar0;
+	bitconfig_8576 = arg0;
+	ivar2 = cs2method_3408(105, 74, 3483, arg0);
+	svar0 = " -" + "<br>";
+	svar0 = concat(getOtherCommonData(ivar2, 1266), svar0);
+	svar0 = concat(svar0, getOtherCommonData(ivar2, 1273));
+	if (((boolean)script_3999(arg0))) {
+		setScriptCallOnMouseOver(3981, new WidgetPointer(arg1), svar0, "Is", new WidgetPointer(arg1));
+	} else {
+		setScriptCallOnMouseOver(-1, "", new WidgetPointer(arg1));
+	}
+	switch (arg1) {
+		case 69206080:
+			bitconfig_8577 = 1;
+			break;
+		case 69206160:
+			bitconfig_8577 = 2;
+			break;
+		case 69206165:
+			bitconfig_8577 = 3;
+			break;
+		case 69206170:
+			bitconfig_8577 = 4;
+			break;
+		case 69206175:
+			bitconfig_8577 = 5;
+			break;
+		case 69206181:
+			bitconfig_8577 = 6;
+	}
+	script_3975();
+	return;
+}

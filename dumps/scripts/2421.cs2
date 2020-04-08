@@ -1,0 +1,42 @@
+void script_2421() {
+	setWidgetModel(46997, new WidgetPointer(674,13));
+	setWidgetModel(46976, new WidgetPointer(674,15));
+	setWidgetModel(46974, new WidgetPointer(674,14));
+	setWidgetModel(46995, new WidgetPointer(674,16));
+	setWidgetModel(46986, new WidgetPointer(674,17));
+	if (((boolean)globalint_737)) {
+		setWidgetModel(46982, new WidgetPointer(674,13));
+		playSoundEffect(6691, 1, 0);
+		setWidgetIsHidden(true, new WidgetPointer(674,10));
+	} else if (globalint_737 == 2) {
+		setWidgetModel(46979, new WidgetPointer(674,15));
+		playSoundEffect(6694, 1, 0);
+		setWidgetModel(46964, new WidgetPointer(674,6));
+	} else if (globalint_737 == 3) {
+		setWidgetModel(46989, new WidgetPointer(674,14));
+		setWidgetModel(46956, new WidgetPointer(674,6));
+	} else if (globalint_737 == 4) {
+		setWidgetModel(46981, new WidgetPointer(674,16));
+		playSoundEffect(6695, 1, 0);
+		setWidgetModel(46965, new WidgetPointer(674,6));
+	} else if (globalint_737 == 5) {
+		setWidgetModel(46996, new WidgetPointer(674,17));
+		playSoundEffect(6690, 1, 0);
+		setWidgetIsHidden(false, new WidgetPointer(674,5));
+	} else if (globalint_737 == 6) {
+		setWidgetAnimation(11761, new WidgetPointer(674,9));
+	} else if (globalint_737 == 7) {
+		setWidgetAnimation(11760, new WidgetPointer(674,9));
+	} else if (globalint_737 == 8) {
+		setWidgetAnimation(11759, new WidgetPointer(674,9));
+	} else if (globalint_737 == 9) {
+		setWidgetAnimation(11763, new WidgetPointer(674,9));
+	} else if (globalint_737 == 10) {
+		setWidgetAnimation(11764, new WidgetPointer(674,9));
+	} else {
+		if (globalint_737 == 11) {
+			setWidgetAnimation(11765, new WidgetPointer(674,9));
+		}
+	}
+	return;
+}

@@ -1,0 +1,3 @@
+int script_4129(int arg0,int arg1) {
+	return addToCoordinate(arg1, subtract(extractX(arg0), extractX(57676160)), subtract(extractZ(arg0), extractZ(57676160)), subtract(extractY(arg0), extractY(57676160)));
+}

@@ -1,0 +1,11 @@
+void script_1947() {
+	if ((globalint_600 < 1) && (globalint_603 < 1)) {
+		messageType0("The awards tab is not available for this scoring.");
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(810,84));
+		setWidgetIsHidden(false, new WidgetPointer(810,85));
+		setWidgetIsHidden(true, new WidgetPointer(810,86));
+		setWidgetIsHidden(false, new WidgetPointer(810,144));
+	}
+	return;
+}

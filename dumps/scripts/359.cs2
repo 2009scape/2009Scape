@@ -1,0 +1,113 @@
+void script_359(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int stack_dump0;
+	cs2func_script_360_struct(3,0,0) structdump_1;
+	int stack_dump2;
+	ivar2 = -1;
+	if (((boolean)arg1)) {
+		cs2method403(2, -1);
+		cs2method403(3, -1);
+		cs2method403(4, -1);
+		cs2method403(5, -1);
+		cs2method403(6, -1);
+		cs2method403(8, -1);
+		cs2method403(14, -1);
+		cs2method403(15, -1);
+		globalint_1009 = -1;
+		ivar2 = getOtherCommonData(arg0, 1182);
+		if (ivar2 != -1) {
+			globalint_1010 = ivar2;
+			cs2method403(9, ivar2);
+		}
+		ivar2 = getOtherCommonData(arg0, 1183);
+		globalint_1011 = ivar2;
+		cs2method403(10, ivar2);
+		ivar2 = getOtherCommonData(arg0, 1184);
+		if (ivar2 != -1) {
+			globalint_1012 = ivar2;
+			cs2method403(11, ivar2);
+		}
+		ivar2 = getOtherCommonData(arg0, 1185);
+		if (ivar2 != -1) {
+			globalint_1013 = ivar2;
+			cs2method403(12, ivar2);
+		}
+		ivar2 = getOtherCommonData(arg0, 1186);
+		if (ivar2 != -1) {
+			globalint_1014 = ivar2;
+			cs2method403(13, ivar2);
+		}
+	} else {
+		cs2method403(9, -1);
+		cs2method403(10, -1);
+		cs2method403(11, -1);
+		cs2method403(12, -1);
+		cs2method403(13, -1);
+		cs2method403(14, -1);
+		cs2method403(15, -1);
+		ivar2 = getOtherCommonData(arg0, 1182);
+		if (ivar2 != -1) {
+			globalint_1010 = ivar2;
+			cs2method403(2, ivar2);
+		}
+		ivar2 = getOtherCommonData(arg0, 1183);
+		globalint_1011 = ivar2;
+		cs2method403(3, ivar2);
+		ivar2 = getOtherCommonData(arg0, 1184);
+		if (ivar2 != -1) {
+			globalint_1012 = ivar2;
+			cs2method403(4, ivar2);
+		}
+		ivar2 = getOtherCommonData(arg0, 1185);
+		if (ivar2 != -1) {
+			globalint_1013 = ivar2;
+			cs2method403(5, ivar2);
+		}
+		ivar2 = getOtherCommonData(arg0, 1186);
+		if (ivar2 != -1) {
+			cs2method403(6, ivar2);
+			globalint_1014 = ivar2;
+		}
+	}
+	stack_dump0 = arg0;
+	structdump_1 = script_360(stack_dump0);
+	stack_dump0 = structdump_1.intpart_0;
+	stack_dump2 = structdump_1.intpart_1;
+	globalint_1018 = structdump_1.intpart_2;
+	stack_dump0 = stack_dump0;
+	globalint_1017 = stack_dump2;
+	globalint_1016 = stack_dump0;
+	cs2method404(1, globalint_1016);
+	cs2method404(2, globalint_1017);
+	cs2method404(3, globalint_1018);
+	ivar3 = -1;
+	ivar4 = -1;
+	ivar5 = -1;
+	ivar6 = -1;
+	if (globalint_86 != 0) {
+		ivar4 = cs2method_3408(105, 74, 3278, subtract(globalint_197, 1));
+		if (ivar4 != -1) {
+			ivar3 = getOtherCommonData(ivar4, 1163);
+			if (ivar3 != -1) {
+				if (getItemContainerLength(ivar3) >= 2) {
+					ivar5 = getItemIdInSlot(ivar3, 1);
+				}
+				if (getItemContainerLength(ivar3) >= 3) {
+					ivar6 = getItemIdInSlot(ivar3, 2);
+				}
+			}
+		}
+		script_392(ivar4, arg1);
+	} else {
+		script_392(-1, arg1);
+	}
+	cs2method411(2, 19713);
+	cs2method411(3, ivar5);
+	cs2method411(5, ivar6);
+	bitconfig_8092 = 0;
+	return;
+}

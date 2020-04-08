@@ -1,0 +1,8 @@
+void script_4625() {
+	if ((stringMethod4107(globalstring_353, "") != 0) && (stringMethod4107(globalstring_353, "null") != 0)) {
+		globalstring_354 = globalstring_353;
+	} else {
+		globalstring_354 = "";
+	}
+	return;
+}

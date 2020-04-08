@@ -1,0 +1,29 @@
+void script_2364(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int stack_dump0;
+	ivar1 = 1;
+	ivar2 = 0;
+	ivar3 = -1;
+	ivar4 = -1;
+	while (ivar1 < 9) {
+		ivar3 = ((int)cs2method_3408(105, 73, 2352, ivar1));
+		if (setWidgetRegister(new WidgetPointer(ivar3))) {
+			stack_dump0 = 1224;
+			/* 
+				mgi.tools.jagdecs2.DecompilerException: opcode 1613 not decompileable
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeSpecialCall(FlowBlocksGenerator.java:297)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:249)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+					at tests.Main.main(Main.java:45)
+				
+			 */
+		}
+		ivar1 = add(ivar1, 1);
+	}
+	return;
+}

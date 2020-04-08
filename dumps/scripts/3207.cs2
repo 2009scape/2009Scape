@@ -1,0 +1,27 @@
+void script_3207(int arg0) {
+	int ivar1;
+	script_3205();
+	ivar1 = 0;
+	if (isWidgetHidden(cs2method_3408(105, 73, 941, 5))) {
+		ivar1 = 1;
+	}
+	if (((boolean)arg0) && (strLength(globalstring_279) > 0)) {
+		if (isFriend(globalstring_279)) {
+			if (((boolean)ivar1)) {
+				message(26, 0, "Sorry, you cannot ignore players in your Friends List.");
+			} else {
+				message(26, 0, "Sorry, you cannot ignore players in your Friends List.");
+			}
+		} else if (((boolean)ivar1)) {
+			message(26, 0, "You are ignoring " + globalstring_279 + " until you log out.");
+		} else {
+			message(26, 0, "You are ignoring " + globalstring_279 + " until you log out.");
+		}
+		cs2method3630(globalstring_279);
+	}
+	if (((boolean)globalint_1094)) {
+		script_3015(6, "", "Open a bug report form?" + "<br>" + "(opens a new window)", "", "");
+		globalint_1094 = 0;
+	}
+	return;
+}

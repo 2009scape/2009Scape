@@ -1,0 +1,4 @@
+void script_247(int arg0,int arg1) {
+	globalstring_24 = script_74(2, arg0, arg1, globalstring_24);
+	return;
+}

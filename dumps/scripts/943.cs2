@@ -1,0 +1,24 @@
+void script_943(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	ivar4 = getOtherCommonData(cs2method_3408(105, 74, 169, arg0), 782);
+	if (isMember()) {
+		messageType0("More advanced grouping options are available on a members' world.");
+	} else if (standart_config_281 < 1000) {
+		messageType0("More advanced grouping options will be available when you've finished the Tutorial.");
+	} else {
+		if (globalint_693 == arg1) {
+			globalint_694 = mod(add(1, globalint_694), 2);
+		} else {
+			globalint_693 = arg1;
+			globalint_694 = 0;
+		}
+		script_2162(arg0, globalint_693, globalint_694, globalint_692, globalint_1103);
+		script_1349(12451856, 12451854, 12451855, -1, 1);
+		if (setWidgetRegister(new WidgetPointer(190,16), 2)) {
+			setWidgetText(cs2method_3408(105, 115, ivar4, arg1));
+			setWidgetRGB(new Color(arg3));
+			setScriptCallOnMouseExit(1354, new WidgetPointer(190,16), 2, arg3, "Iii");
+		}
+	}
+	return;
+}

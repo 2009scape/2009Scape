@@ -1,0 +1,10 @@
+void script_466(int arg0) {
+	if (getSkillActualLvl(6) < 25) {
+		setWidgetText(new WidgetPointer(arg0), "<col=c80000>" + "A Magic level of " + intToStr(25) + " is required." + "</col>");
+	} else if (bitconfig_2086 < 1) {
+		setWidgetText(new WidgetPointer(arg0), "<col=c80000>" + "1 Commendation required." + "</col>");
+	} else {
+		setWidgetText(new WidgetPointer(arg0), intToStr(multiply(divide(pow(getSkillActualLvl(6), 2), 600), 32)) + " XP per Commendation.");
+	}
+	return;
+}

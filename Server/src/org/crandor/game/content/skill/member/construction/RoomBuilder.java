@@ -174,6 +174,10 @@ public final class RoomBuilder {
 	 */
 	public static void buildRoom(Player player, Room room, int z, int x, int y) {
 		System.err.println("Building direction = " + room.getRotation().name());
+		if(room.getRotation() != Direction.NORTH){
+			room.setRotation(Direction.NORTH);
+			player.getDialogueInterpreter().sendDialogue("Room rotation is currently disabled.");
+		}
 		player.getHouseManager().getRooms()[z][x][y] = room;
 		player.getPacketDispatch().sendMessage("Building room " + room.getProperties() + ".");
 		player.getHouseManager().reload(player, true);
@@ -237,7 +241,7 @@ public final class RoomBuilder {
 				}
 			}
 			if (success) {
-				directions[i] = DIRECTIONS[i];
+				directions[i] = Direction.NORTH;
 			}
 			System.out.println(i + ": " + Arrays.toString(exit) + " - " + Arrays.toString(info));
 			boolean b = exit[0];

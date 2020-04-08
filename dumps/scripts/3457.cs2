@@ -1,0 +1,46 @@
+void script_3457(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = subtract(getClientCycle(), arg1);
+	if ((ivar2 < 100) && (globalint_1281 > 0)) {
+		cameraPointAt(globalint_1285, globalint_1286, 3000, globalint_1282);
+		cameraMoveTo(globalint_1283, globalint_1284, 3000, globalint_1282);
+		return;
+	}
+	if ((ivar2 < 200) && (globalint_1281 > 1)) {
+		cameraPointAt(globalint_1289, globalint_1290, 0, globalint_1282);
+		cameraMoveTo(globalint_1287, globalint_1288, 0, globalint_1282);
+		return;
+	}
+	if ((ivar2 < 300) && (globalint_1281 > 2)) {
+		cameraPointAt(globalint_1293, globalint_1294, 0, globalint_1282);
+		cameraMoveTo(globalint_1291, globalint_1292, 0, globalint_1282);
+		return;
+	}
+	if ((ivar2 < 400) && (globalint_1281 > 3)) {
+		cameraPointAt(globalint_1297, globalint_1298, 0, globalint_1282);
+		cameraMoveTo(globalint_1295, globalint_1296, 0, globalint_1282);
+		return;
+	}
+	if ((ivar2 < 500) && (globalint_1281 > 4)) {
+		cameraPointAt(globalint_1301, globalint_1302, 0, globalint_1282);
+		cameraMoveTo(globalint_1299, globalint_1300, 0, globalint_1282);
+		return;
+	}
+	if ((ivar2 < 600) && (globalint_1281 > 5)) {
+		cameraPointAt(globalint_1305, globalint_1306, 0, globalint_1282);
+		cameraMoveTo(globalint_1303, globalint_1304, 0, globalint_1282);
+		return;
+	}
+	if ((ivar2 < 700) && (globalint_1281 > 6)) {
+		cameraPointAt(globalint_1309, globalint_1310, 0, globalint_1282);
+		cameraMoveTo(globalint_1307, globalint_1308, 0, globalint_1282);
+		return;
+	}
+	if ((ivar2 < 800) && (globalint_1281 > 7)) {
+		cameraPointAt(globalint_1313, globalint_1314, 0, globalint_1282);
+		cameraMoveTo(globalint_1311, globalint_1312, 0, globalint_1282);
+		return;
+	}
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+	return;
+}

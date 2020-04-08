@@ -7,14 +7,13 @@ import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.item.Item;
 
 /**
- * Represents the generic recipe for a pie.
- * @author 'Vexia
- * @date 21/12/2013
+ * Represents the generic recipe for a pizza.
+ * @author ceikry
  */
 public abstract class PizzaRecipe extends Recipe {
 
 	/**
-	 * Represents the pie shell item.
+	 * Represents the plain pizza.
 	 */
 	protected static final Item PLAIN_PIZZA = new Item(2289);
 

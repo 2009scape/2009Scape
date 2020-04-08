@@ -1,0 +1,28 @@
+void script_1971(int arg0,int arg1) {
+	switch (arg0) {
+		case 0:
+			if ((globalint_618 < 0) || (globalint_618 > 25)) {
+				globalint_618 = 0;
+			}
+			setWidgetText(new WidgetPointer(arg1), cs2method_3408(105, 115, 2121, globalint_618));
+			break;
+		case 1:
+			if ((globalint_619 < 0) || (globalint_619 > 25)) {
+				globalint_619 = 0;
+			}
+			setWidgetText(new WidgetPointer(arg1), cs2method_3408(105, 115, 2121, globalint_619));
+			break;
+		case 2:
+			if ((globalint_620 < 0) || (globalint_620 > 25)) {
+				globalint_620 = 0;
+			}
+			setWidgetText(new WidgetPointer(arg1), cs2method_3408(105, 115, 2121, globalint_620));
+			break;
+		case 3:
+			if ((globalint_621 < 0) || (globalint_621 > 25)) {
+				globalint_621 = 0;
+			}
+			setWidgetText(new WidgetPointer(arg1), cs2method_3408(105, 115, 2121, globalint_621));
+	}
+	return;
+}

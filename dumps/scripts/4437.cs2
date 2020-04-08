@@ -1,0 +1,14 @@
+void script_4437() {
+	setWidgetIsHidden(true, new WidgetPointer(1110,27));
+	setWidgetNoOptions(new WidgetPointer(1110,27));
+	cs2method2100(0, 0, new WidgetPointer(1110,25));
+	setWidgetIsHidden(false, new WidgetPointer(1110,29));
+	script_31(72744989, 72744985, 5666, 5663, 5664, 5665, 5686, 5685);
+	setWidgetSprite(6256, new WidgetPointer(1110,86));
+	setWidgetIsHidden(true, new WidgetPointer(1110,13));
+	setWidgetSize(1, 19, 0, 0, new WidgetPointer(1110,20));
+	globalint_1518 = -1;
+	globalstring_126 = "";
+	setWidgetText(new WidgetPointer(1110,26), "");
+	return;
+}

@@ -1,0 +1,11 @@
+void script_5260(int arg0) {
+	int ivar1;
+	ivar1 = 74252290;
+	if (getWidgetActualHeight(new WidgetPointer(ivar1)) >= arg0) {
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(ivar1)), arg0, 0, 0, new WidgetPointer(ivar1));
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(ivar1));
+	} else {
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(ivar1)), add(getWidgetActualHeight(new WidgetPointer(ivar1)), 1), 0, 0, new WidgetPointer(ivar1));
+	}
+	return;
+}

@@ -1,0 +1,40 @@
+void script_5245() {
+	int ivar0;
+	int ivar1;
+	ivar0 = 0;
+	ivar1 = 0;
+	if (getWidgetSpriteId(new WidgetPointer(1128,4)) == 6007) {
+		ivar0 = add(ivar0, 20);
+		ivar1 = add(ivar1, 20);
+	}
+	if (getWidgetSpriteId(new WidgetPointer(1128,104)) == 6007) {
+		ivar0 = add(ivar0, 20);
+		ivar1 = add(ivar1, 20);
+	}
+	if (getWidgetSpriteId(new WidgetPointer(1128,142)) == 6007) {
+		ivar0 = add(ivar0, 30);
+		ivar1 = add(ivar1, 20);
+	}
+	if (getWidgetSpriteId(new WidgetPointer(1128,179)) == 6007) {
+		ivar0 = add(ivar0, 28);
+		ivar1 = add(ivar1, 20);
+	}
+	if (getWidgetSpriteId(new WidgetPointer(1128,216)) == 6007) {
+		ivar0 = add(ivar0, 24);
+		ivar1 = add(ivar1, 20);
+	}
+	if (getWidgetSpriteId(new WidgetPointer(1128,253)) == 6007) {
+		ivar0 = add(ivar0, 26);
+		ivar1 = add(ivar1, 20);
+	}
+	if (getWidgetSpriteId(new WidgetPointer(1128,290)) == 6007) {
+		ivar0 = add(ivar0, 200);
+		ivar1 = add(ivar1, 200);
+	}
+	if ((bitconfig_5505 < ivar0) || (bitconfig_5505 < ivar1)) {
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(1128,13));
+	} else {
+		setWidgetRGB(new Color(168, 141, 101), new WidgetPointer(1128,13));
+	}
+	return;
+}

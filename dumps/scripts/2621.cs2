@@ -1,0 +1,12 @@
+void script_2621() {
+	if (isWidgetHidden(new WidgetPointer(850,1))) {
+		setWidgetIsHidden(true, new WidgetPointer(850,1));
+		setWidgetIsHidden(false, new WidgetPointer(850,47));
+		setWidgetHFlip(0, new WidgetPointer(850,50));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(850,1));
+		setWidgetIsHidden(true, new WidgetPointer(850,47));
+		setWidgetHFlip(1, new WidgetPointer(850,50));
+	}
+	return;
+}

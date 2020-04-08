@@ -1,0 +1,5 @@
+int script_1345(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = divide(add(arg0, cs2method2601(new WidgetPointer(arg1))), 15);
+	return ivar2;
+}

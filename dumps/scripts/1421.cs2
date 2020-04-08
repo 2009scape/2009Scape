@@ -1,0 +1,63 @@
+void script_1421(int arg0) {
+	string svar0;
+	svar0 = "";
+	switch (arg0) {
+		case 1:
+			svar0 = cs2method_3408(105, 115, 1697, bitconfig_5146);
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 130, "IIsii", new WidgetPointer(575,3));
+			break;
+		case 2:
+			svar0 = cs2method_3408(105, 115, 1698, bitconfig_5147);
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 160, "IIsii", new WidgetPointer(575,4));
+			break;
+		case 3:
+			svar0 = cs2method_3408(105, 115, 1699, bitconfig_5148);
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,5));
+			break;
+		case 4:
+			svar0 = cs2method_3408(105, 115, 1700, bitconfig_5149);
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,6));
+			break;
+		case 5:
+			svar0 = cs2method_3408(105, 115, 1701, bitconfig_5150);
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,7));
+			break;
+		case 6:
+			svar0 = cs2method_3408(105, 115, 1702, bitconfig_5151);
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,8));
+			break;
+		case 7:
+			svar0 = cs2method_3408(105, 115, 1703, bitconfig_5152);
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,9));
+			break;
+		case 8:
+			svar0 = cs2method_3408(105, 115, 1704, bitconfig_5153);
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,10));
+			break;
+		case 9:
+			svar0 = cs2method_3408(105, 115, 1705, bitconfig_5154);
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,11));
+			break;
+		case 10:
+			svar0 = cs2method_3408(105, 115, 1706, bitconfig_5155);
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,12));
+			break;
+		case 11:
+			svar0 = cs2method_3408(105, 115, 1707, bitconfig_5156);
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,13));
+			break;
+		case 12:
+			svar0 = cs2method_3408(105, 115, 1708, bitconfig_5157);
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,14));
+			break;
+		case 13:
+			svar0 = cs2method_3408(105, 115, 1709, bitconfig_5158);
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,15));
+			break;
+		case 14:
+			svar0 = cs2method_3408(105, 115, 1710, bitconfig_5159);
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,16));
+	}
+	globalint_2 = 0;
+	return;
+}

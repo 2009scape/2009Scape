@@ -1,0 +1,12 @@
+void script_2979(int arg0) {
+	int ivar1;
+	ivar1 = script_284(getMyPositionHash());
+	cs2method5405(0, 2);
+	cs2method5405(1, 2);
+	cs2method5406(0, 0, addToCoordinate(ivar1, 31, 0, 25), 800, addToCoordinate(ivar1, 31, 0, 25), 800, 0);
+	cs2method5406(1, 0, addToCoordinate(ivar1, 31, 0, 33), 300, addToCoordinate(ivar1, 31, 0, 33), 300, 0);
+	cs2method5406(0, 1, addToCoordinate(ivar1, 30, 0, 25), 900, addToCoordinate(ivar1, 30, 0, 25), 900, 0);
+	cs2method5406(1, 1, addToCoordinate(ivar1, 30, 0, 33), 500, addToCoordinate(ivar1, 30, 0, 33), 500, 0);
+	cameraMethod5502(0, 0, 450, 450, 1, 0);
+	return;
+}

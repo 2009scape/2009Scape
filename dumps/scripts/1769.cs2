@@ -1,0 +1,7 @@
+void script_1769(int arg0) {
+	setWidgetModel(getOtherCommonData(globalint_269, 581), new WidgetPointer(arg0));
+	setWidget3DRotation(0, 160, getOtherCommonData(globalint_269, 584), getOtherCommonData(globalint_269, 585), getOtherCommonData(globalint_269, 586), getOtherCommonData(globalint_269, 583), new WidgetPointer(arg0));
+	setWidgetAnimation(getOtherCommonData(globalint_269, 582), new WidgetPointer(arg0));
+	setWidgetPosition(0, getOtherCommonData(globalint_269, 587), 1, 0, new WidgetPointer(arg0));
+	return;
+}

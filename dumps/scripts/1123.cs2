@@ -1,0 +1,19 @@
+void script_1123(int arg0) {
+	switch (bitconfig_804) {
+		case 1:
+			setItemOnWidgetMethod2200(6090, 300, new WidgetPointer(arg0));
+			break;
+		case 2:
+			setItemOnWidgetMethod2200(6092, 300, new WidgetPointer(arg0));
+			break;
+		case 3:
+			setItemOnWidgetMethod2200(6089, 300, new WidgetPointer(arg0));
+			break;
+		case 4:
+			setItemOnWidgetMethod2200(6091, 300, new WidgetPointer(arg0));
+			break;
+		default:
+			setItemOnWidgetMethod2200(-1, 300, new WidgetPointer(arg0));
+	}
+	return;
+}

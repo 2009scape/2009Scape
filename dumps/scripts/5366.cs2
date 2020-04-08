@@ -1,0 +1,32 @@
+void script_5366() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = divide(100, 8);
+	ivar1 = divide(globalint_1655, ivar0);
+	if (((boolean)mod(globalint_1655, ivar0))) {
+		ivar1 = subtract(ivar1, 1);
+	}
+	ivar2 = 0;
+	while (ivar2 < 8) {
+		if (ivar2 > ivar1) {
+			script_5367(add(multiply(ivar2, 6), 3), 0);
+			script_5367(add(multiply(ivar2, 6), 4), 0);
+			script_5367(add(multiply(ivar2, 6), 5), 0);
+		} else if (ivar2 < ivar1) {
+			script_5367(add(multiply(ivar2, 6), 3), 2);
+			script_5367(add(multiply(ivar2, 6), 4), 2);
+			script_5367(add(multiply(ivar2, 6), 5), 2);
+		} else {
+			if ((ivar2 == ivar1) && (ivar2 != globalint_1657)) {
+				globalint_1658 = 0;
+				globalint_1657 = ivar2;
+				script_5367(add(multiply(ivar2, 6), 3), 1);
+				script_5367(add(multiply(ivar2, 6), 4), 1);
+				script_5367(add(multiply(ivar2, 6), 5), 1);
+			}
+		}
+		ivar2 = add(ivar2, 1);
+	}
+	return;
+}

@@ -1,0 +1,31 @@
+void script_2197(int arg0,int arg1,string arg2) {
+	int ivar2;
+	flow_0:
+		ivar2 = 0;
+		IF (arg1 == -1) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		IF (setWidgetRegister(new WidgetPointer(arg0))) 
+			GOTO	flow_3
+	flow_2:
+		IF (setWidgetRegister(new WidgetPointer(arg0), arg1)) 
+			GOTO	flow_3
+		GOTO	flow_10
+	flow_3:
+		if (globalint_198 != 1) {
+			setScriptCallOnGameloop(-1, "");
+			setWidgetText(arg2);
+			return;
+		}
+		if (mod(getClientCycle(), 20) > 9) {
+			setWidgetText("");
+			if (mod(getClientCycle(), 20) == 10) {
+				playSoundEffect(5009, 1, 0);
+			}
+		} else {
+			setWidgetText(arg2);
+		}
+	flow_10:
+		return;
+}

@@ -1,0 +1,59 @@
+void script_1633(string arg0) {
+	int ivar0;
+	int ivar1;
+	string svar1;
+	arg0 = lower(strRemoveEntities(arg0));
+	ivar0 = strLength(arg0);
+	ivar1 = 0;
+	arg0 = script_2332(arg0, "_", "\u00a0");
+	arg0 = script_2332(arg0, "-", "\u00a0");
+	arg0 = script_2332(arg0, " ", "\u00a0");
+	while (((boolean)strIndexof(0, arg0, " ")) && (ivar0 > 0)) {
+		arg0 = substr(1, ivar0, arg0);
+		ivar0 = strLength(arg0);
+	}
+	while ((strIndexof(subtract(ivar0, 1), arg0, " ") == subtract(ivar0, 1)) && (ivar0 > 0)) {
+		arg0 = substr(0, subtract(ivar0, 1), arg0);
+		ivar0 = strLength(arg0);
+	}
+	while (((boolean)strIndexof(0, arg0, "\u00a0")) && (ivar0 > 0)) {
+		arg0 = substr(1, ivar0, arg0);
+		ivar0 = strLength(arg0);
+	}
+	while ((strIndexof(subtract(ivar0, 1), arg0, "\u00a0") == subtract(ivar0, 1)) && (ivar0 > 0)) {
+		arg0 = substr(0, subtract(ivar0, 1), arg0);
+		ivar0 = strLength(arg0);
+	}
+	svar1 = lower(strRemoveEntities(cs2method5020()));
+	ivar0 = strLength(svar1);
+	svar1 = script_2332(svar1, "_", "\u00a0");
+	svar1 = script_2332(svar1, "-", "\u00a0");
+	svar1 = script_2332(svar1, " ", "\u00a0");
+	while (((boolean)strIndexof(0, svar1, " ")) && (ivar0 > 0)) {
+		svar1 = substr(1, ivar0, svar1);
+		ivar0 = strLength(svar1);
+	}
+	while ((strIndexof(subtract(ivar0, 1), arg0, " ") == subtract(ivar0, 1)) && (ivar0 > 0)) {
+		svar1 = substr(0, subtract(ivar0, 1), svar1);
+		ivar0 = strLength(svar1);
+	}
+	while (((boolean)strIndexof(0, svar1, "\u00a0")) && (ivar0 > 0)) {
+		svar1 = substr(1, ivar0, svar1);
+		ivar0 = strLength(svar1);
+	}
+	while ((strIndexof(subtract(ivar0, 1), svar1, "\u00a0") == subtract(ivar0, 1)) && (ivar0 > 0)) {
+		svar1 = substr(0, subtract(ivar0, 1), svar1);
+		ivar0 = strLength(svar1);
+	}
+	if (stringMethod4107(arg0, "") != 0) {
+		if (((boolean)stringMethod4107(arg0, svar1))) {
+			script_1890("You cannot kick or ban yourself.");
+			return;
+		}
+		cs2method3617(arg0);
+		arg0 = script_1814(arg0);
+		cs2method5006(1);
+		cs2method5008("[Attempting to kick/ban " + arg0 + " from this Friends Chat.]");
+	}
+	return;
+}

@@ -1,0 +1,10 @@
+void script_5368(int arg0) {
+	int ivar1;
+	globalint_1658 = add(globalint_1658, 1);
+	ivar1 = divide(multiply(globalint_1658, 255), globalint_1656);
+	ivar1 = min(255, max(0, ivar1));
+	if (setWidgetRegister(new WidgetPointer(951,24), arg0)) {
+		cs2method2103(ivar1);
+	}
+	return;
+}

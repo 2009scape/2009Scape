@@ -1,0 +1,12 @@
+void script_2253() {
+	int ivar0;
+	setWidgetText(new WidgetPointer(945,14), globalstring_315);
+	if (globalint_1233 > 200) {
+		globalint_1233 = 200;
+	}
+	ivar0 = globalint_1233;
+	ivar0 = add(divide(multiply(ivar0, 37), 40), 14);
+	setWidgetSize(ivar0, 18, 1, 0, new WidgetPointer(945,16));
+	setWidgetPosition(add(ivar0, 1), 15, 0, 0, new WidgetPointer(945,17));
+	return;
+}

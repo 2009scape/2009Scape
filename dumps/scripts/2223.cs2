@@ -1,0 +1,61 @@
+void script_2223() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	openInterface(48758833, 669);
+	setWidgetSprite(4088, new WidgetPointer(669,27));
+	setWidgetSprite(4063, new WidgetPointer(669,28));
+	setWidgetVFlip(0, new WidgetPointer(669,28));
+	setWidgetHFlip(1, new WidgetPointer(669,28));
+	setWidgetSprite(4063, new WidgetPointer(669,29));
+	setWidgetVFlip(0, new WidgetPointer(669,29));
+	setWidgetHFlip(0, new WidgetPointer(669,29));
+	setWidgetSprite(4065, new WidgetPointer(669,21));
+	setWidgetVFlip(0, new WidgetPointer(669,21));
+	setWidgetHFlip(1, new WidgetPointer(669,21));
+	setWidgetSprite(4065, new WidgetPointer(669,26));
+	setWidgetVFlip(0, new WidgetPointer(669,26));
+	setWidgetHFlip(0, new WidgetPointer(669,26));
+	svar0 = "";
+	ivar0 = getTextWidth(3793, getWidgetText(new WidgetPointer(669,48)));
+	setWidgetSize(ivar0, getWidgetActualHeight(new WidgetPointer(669,7)), 0, 0, new WidgetPointer(669,7));
+	ivar1 = getTextWidth(3793, getWidgetText(new WidgetPointer(669,49)));
+	setWidgetSize(ivar1, getWidgetActualHeight(new WidgetPointer(669,9)), 0, 0, new WidgetPointer(669,9));
+	ivar2 = getTextWidth(3793, getWidgetText(new WidgetPointer(669,8)));
+	setWidgetSize(ivar2, getWidgetActualHeight(new WidgetPointer(669,8)), 0, 0, new WidgetPointer(669,8));
+	svar1 = getWidgetText(new WidgetPointer(669,8));
+	setWidgetText(new WidgetPointer(669,8), concat(concat(getWidgetText(new WidgetPointer(669,48)), concat(" ", concat(getWidgetText(new WidgetPointer(669,8)), " "))), getWidgetText(new WidgetPointer(669,49))));
+	setWidgetPosition(0, getWidgetActualY(new WidgetPointer(669,8)), 1, 0, new WidgetPointer(669,8));
+	setWidgetSize(getTextWidth(3793, getWidgetText(new WidgetPointer(669,8))), getWidgetActualHeight(new WidgetPointer(669,8)), 0, 0, new WidgetPointer(669,8));
+	setWidgetPosition(getWidgetActualX(new WidgetPointer(669,8)), getWidgetActualY(new WidgetPointer(669,7)), 0, 0, new WidgetPointer(669,7));
+	setWidgetText(new WidgetPointer(669,8), svar1);
+	setWidgetSize(ivar2, getWidgetActualHeight(new WidgetPointer(669,8)), 0, 0, new WidgetPointer(669,8));
+	setWidgetPosition(add(add(getWidgetActualX(new WidgetPointer(669,7)), getWidgetActualWidth(new WidgetPointer(669,7))), getTextWidth(3793, " ")), getWidgetActualY(new WidgetPointer(669,8)), 0, 0, new WidgetPointer(669,8));
+	setWidgetPosition(add(add(getWidgetActualX(new WidgetPointer(669,8)), getWidgetActualWidth(new WidgetPointer(669,8))), getTextWidth(3793, " ")), getWidgetActualY(new WidgetPointer(669,9)), 0, 0, new WidgetPointer(669,9));
+	if (globalint_1407 < 13) {
+		setWidgetIsHidden(true, new WidgetPointer(669,14));
+		setWidgetIsHidden(true, new WidgetPointer(669,27));
+		setWidgetIsHidden(false, new WidgetPointer(669,13));
+		setWidgetText(new WidgetPointer(669,18), "Congratulations, your account has been created successfully!");
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(669,14));
+		setWidgetIsHidden(false, new WidgetPointer(669,27));
+		setWidgetIsHidden(true, new WidgetPointer(669,13));
+		setWidgetText(new WidgetPointer(669,18), "Congratulations, your account has been successfully created!");
+	}
+	svar2 = "dob";
+	svar3 = "set_members_dob.ws";
+	if (((boolean)globalint_1088)) {
+		svar0 = "Continue To Buy";
+		setScriptCallOnMousePressed(2931, svar2, svar3, 0, "ss1", new WidgetPointer(669,40));
+	} else {
+		svar0 = "Continue";
+		setScriptCallOnMousePressed(1173, 12, "i", new WidgetPointer(669,40));
+	}
+	script_1174(8);
+	return;
+}

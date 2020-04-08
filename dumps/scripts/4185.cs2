@@ -1,0 +1,10 @@
+void script_4185(int arg0) {
+	if (arg0 == 70254623) {
+		setWidgetSprite(3865, new WidgetPointer(1072,31));
+	} else {
+		if (arg0 == 70254624) {
+			setWidgetSprite(3866, new WidgetPointer(1072,32));
+		}
+	}
+	return;
+}

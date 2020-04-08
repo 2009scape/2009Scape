@@ -1,0 +1,23 @@
+void script_2955(int arg0,int arg1,int arg2,int arg3,int arg4,string arg5) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	ivar5 = 4044;
+	ivar6 = 4044;
+	ivar7 = 4046;
+	setScriptCallOnMouseExit(2924, new WidgetPointer(arg1), ivar5, new WidgetPointer(arg2), ivar7, new WidgetPointer(arg3), ivar6, "IdIdId", new WidgetPointer(arg0));
+	setWidgetSprite(ivar5, new WidgetPointer(arg1));
+	setWidgetSprite(ivar7, new WidgetPointer(arg2));
+	setWidgetSprite(ivar6, new WidgetPointer(arg3));
+	ivar5 = 4045;
+	ivar6 = 4045;
+	ivar7 = 4047;
+	setScriptCallOnMouseEntered(2924, new WidgetPointer(arg1), ivar5, new WidgetPointer(arg2), ivar7, new WidgetPointer(arg3), ivar6, "IdIdId", new WidgetPointer(arg0));
+	ivar8 = 39059475;
+	if (hasSSKey()) {
+		ivar8 = 63897614;
+	}
+	setWidgetText(new WidgetPointer(ivar8), arg5);
+	return;
+}

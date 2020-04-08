@@ -1,0 +1,36 @@
+void script_3486(int arg0,int arg1,int arg2) {
+	int ivar3;
+	string svar0;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	deleteAllExtraChilds(new WidgetPointer(arg1));
+	deleteAllExtraChilds(new WidgetPointer(arg2));
+	createExtraChild(new WidgetPointer(arg0), 6, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(0, 0, 1, 1);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidget3DRotation(0, 0, 0, 0, 0, 2600);
+	setWidgetNpcHead(2567);
+	setWidgetAnimation(9804);
+	script_2647(arg0);
+	script_1298(getWidgetParentId(new WidgetPointer(arg1)), 0, 0, 0);
+	createExtraChild(new WidgetPointer(arg1), 4, getExtraChildGap(new WidgetPointer(arg1)));
+	setWidgetFont(494);
+	setWidgetRGB(new Color(255, 255, 255));
+	setWidgetUnknownBoolean(true);
+	setWidgetTextAlignment(0, 1, 0);
+	svar0 = "To modify the spell so that it goes to our chosen destination, you must connect the " + "<col=ff0000>" + "start node" + "</col>" + " at the bottom to the " + "<col=ff0000>" + "destination node" + "</col>" + " in the " + "<col=ff0000>" + "upper half" + "</col>" + " of the tablet." + "<br>" + "<br>" + "Drag the " + "<col=ff0000>" + "conduit tiles" + "</col>" + " into the grid to form a path leading upwards. You can click tiles to remove them from the grid." + "<br>" + "<br>" + "The tablet has been damaged slightly by the chipping process, creating " + "<col=ff0000>" + "dead zones" + "</col>" + ". Magic cannot flow through a " + "<col=ff0000>" + "dead zone" + "</col>" + ", so you must route the power around them.";
+	setWidgetText(svar0);
+	if (add(multiply(getLineCount(getWidgetActualWidth(new WidgetPointer(arg1)), 494, svar0), 10), 5) <= getWidgetActualHeight(new WidgetPointer(arg1))) {
+		setWidgetSize(0, 0, 1, 1);
+		setWidgetPosition(0, 0, 1, 1);
+		setWidgetScrollMax(0, 0, new WidgetPointer(arg1));
+		setWidgetIsHidden(true, new WidgetPointer(arg2));
+		return;
+	}
+	ivar3 = add(multiply(getLineCount(subtract(getWidgetActualWidth(new WidgetPointer(arg1)), 17), 494, svar0), 10), 5);
+	setWidgetSize(17, ivar3, 1, 0);
+	setWidgetPosition(0, 0, 0, 1);
+	setWidgetScrollMax(0, ivar3, new WidgetPointer(arg1));
+	setWidgetIsHidden(false, new WidgetPointer(arg2));
+	script_31(arg2, arg1, 792, 789, 790, 791, 773, 788);
+	return;
+}

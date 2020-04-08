@@ -1,0 +1,87 @@
+void script_548(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9) {
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	string svar0;
+	string svar1;
+	int stack_dump0;
+	cs2func_script_4037_struct(3,0,0) structdump_1;
+	if (((boolean)globalint_80)) {
+		return;
+	}
+	ivar10 = 0;
+	ivar11 = 0;
+	ivar12 = 0;
+	ivar13 = 0;
+	ivar14 = 0;
+	ivar15 = 0;
+	ivar16 = 0;
+	ivar17 = 0;
+	ivar18 = 0;
+	svar0 = "";
+	svar1 = cs2method_3408(83, 115, 680, arg7) + ": " + intToStr(getSkillCurrentLvl(arg7)) + "/" + intToStr(getSkillActualLvl(arg7));
+	if ((setWidgetRegister(new WidgetPointer(arg9), arg0) && (getMaxLineWidth(190, 495, svar1) < getWidgetActualWidth())) && (globalint_80 == getSkillActualLvl(arg7))) {
+		setWidgetText(svar1);
+		if (setWidgetRegister(new WidgetPointer(arg9), arg1)) {
+			setWidgetText(script_46(getSkillXp(arg7), ","));
+		}
+		if ((getSkillActualLvl(arg7) < 99) && setWidgetRegister(new WidgetPointer(arg9), arg2)) {
+			setWidgetText(script_46(subtract(cs2method_3408(105, 105, 716, add(getSkillActualLvl(arg7), 1)), getSkillXp(arg7)), ","));
+		}
+		if (((boolean)script_4036(cs2method_3408(83, 105, 1482, arg7)))) {
+			stack_dump0 = cs2method_3408(83, 105, 1482, arg7);
+			structdump_1 = script_4037(stack_dump0);
+			ivar11 = structdump_1.intpart_2;
+			ivar10 = structdump_1.intpart_1;
+			ivar12 = structdump_1.intpart_0;
+			ivar17 = ivar10;
+			if (((boolean)ivar12)) {
+				ivar17 = cs2method_3408(105, 105, 716, ivar10);
+			}
+			ivar18 = max(0, subtract(ivar17, getSkillXp(arg7)));
+			svar0 = script_46(ivar18, ",");
+			if (setWidgetRegister(new WidgetPointer(arg9), arg5)) {
+				if (((boolean)ivar12)) {
+					ivar15 = cs2method_3408(105, 105, 716, ivar11);
+					ivar16 = cs2method_3408(105, 105, 716, ivar10);
+					if (subtract(ivar16, ivar15) != 0) {
+						ivar13 = multiplyDivide(subtract(getSkillXp(arg7), ivar15), subtract(ivar16, ivar15), 100);
+					} else {
+						ivar13 = -1;
+					}
+				} else if (subtract(ivar10, ivar11) != 0) {
+					ivar13 = multiplyDivide(subtract(getSkillXp(arg7), ivar11), subtract(ivar10, ivar11), 100);
+				} else {
+					ivar13 = -1;
+				}
+				if (ivar13 > 100) {
+					ivar13 = 100;
+				}
+				ivar13 = max(ivar13, 0);
+				ivar14 = multiply(ivar13, subtract(arg6, 4));
+				ivar14 = divide(ivar14, 100);
+				setWidgetSize(ivar14, 16, 0, 0);
+				if (setWidgetRegister(new WidgetPointer(arg9), arg4)) {
+					if (ivar13 > 47) {
+						setWidgetRGB(new Color(0, 0, 0));
+					}
+					setWidgetText(intToStr(ivar13) + "%");
+				}
+				if (setWidgetRegister(new WidgetPointer(arg9), arg3)) {
+					setWidgetText(svar0);
+				}
+			}
+		}
+		return;
+	}
+	deleteAllExtraChilds(new WidgetPointer(arg9));
+	globalint_80 = getSkillActualLvl(arg7);
+	script_547(arg8, arg7, arg9);
+	return;
+}

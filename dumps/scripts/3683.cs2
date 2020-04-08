@@ -1,0 +1,7 @@
+void script_3683() {
+	script_1548(14);
+	globalstring_196 = "";
+	script_3680();
+	setWidgetSprite(3245, new WidgetPointer(187,17));
+	return;
+}

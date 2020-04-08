@@ -1,0 +1,203 @@
+void script_142() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	if (((boolean)getLanguage())) {
+		setWidgetFont(495, new WidgetPointer(334,50));
+		setWidgetFont(495, new WidgetPointer(334,52));
+		setWidgetTextAlignment(1, 1, 17, new WidgetPointer(334,50));
+		setWidgetTextAlignment(1, 1, 17, new WidgetPointer(334,52));
+	} else {
+		setWidgetFont(494, new WidgetPointer(334,50));
+		setWidgetFont(494, new WidgetPointer(334,52));
+		setWidgetTextAlignment(1, 1, 0, new WidgetPointer(334,50));
+		setWidgetTextAlignment(1, 1, 0, new WidgetPointer(334,52));
+	}
+	deleteAllExtraChilds(new WidgetPointer(334,38));
+	deleteAllExtraChilds(new WidgetPointer(334,39));
+	deleteAllExtraChilds(new WidgetPointer(334,40));
+	ivar0 = 0;
+	ivar1 = -1;
+	if ((((((((((((((getItemIdInSlot(90, 14) != -1) || (getItemIdInSlot(90, 15) != -1)) || (getItemIdInSlot(90, 16) != -1)) || (getItemIdInSlot(90, 17) != -1)) || (getItemIdInSlot(90, 18) != -1)) || (getItemIdInSlot(90, 19) != -1)) || (getItemIdInSlot(90, 20) != -1)) || (getItemIdInSlot(90, 21) != -1)) || (getItemIdInSlot(90, 22) != -1)) || (getItemIdInSlot(90, 23) != -1)) || (getItemIdInSlot(90, 24) != -1)) || (getItemIdInSlot(90, 25) != -1)) || (getItemIdInSlot(90, 26) != -1)) || (getItemIdInSlot(90, 27) != -1)) {
+		setWidgetIsHidden(false, new WidgetPointer(334,39));
+		setWidgetIsHidden(false, new WidgetPointer(334,40));
+		setWidgetIsHidden(false, new WidgetPointer(334,41));
+		while (ivar0 < 14) {
+			ivar1 = getItemIdInSlot(90, ivar0);
+			if (ivar1 != -1) {
+				createExtraChild(new WidgetPointer(334,39), 4, getExtraChildGap(new WidgetPointer(334,39)));
+				setWidgetPosition(0, multiply(ivar0, 12), 1, 0);
+				setWidgetSize(0, 12, 1, 0);
+				setWidgetTextAlignment(0, 0, 0);
+				setWidgetFont(495);
+				setWidgetRGB(new Color(255, 255, 255));
+				setWidgetUnknownBoolean(true);
+				setWidgetText(script_4107(ivar1, getItemAmtInSlot(90, ivar0)));
+			}
+			ivar0 = add(ivar0, 1);
+		}
+		while (ivar0 < 28) {
+			ivar1 = getItemIdInSlot(90, ivar0);
+			if (ivar1 != -1) {
+				createExtraChild(new WidgetPointer(334,40), 4, getExtraChildGap(new WidgetPointer(334,40)));
+				setWidgetPosition(0, multiply(subtract(ivar0, 14), 12), 1, 0);
+				setWidgetSize(0, 12, 1, 0);
+				setWidgetTextAlignment(0, 0, 0);
+				setWidgetFont(495);
+				setWidgetRGB(new Color(255, 255, 255));
+				setWidgetUnknownBoolean(true);
+				setWidgetText(script_4107(ivar1, getItemAmtInSlot(90, ivar0)));
+			}
+			ivar0 = add(ivar0, 1);
+		}
+		script_4109(114, 21889062, 21889063, 21889064, 21889065, 21889066);
+		setScriptCallOnMouseDragged(4108, -2147483647, new WidgetPointer(334,38), new WidgetPointer(334,39), new WidgetPointer(334,40), new WidgetPointer(334,41), new WidgetPointer(334,42), "iIIIII", new WidgetPointer(334,42));
+		setScriptCallOnMouseDragReleased(4108, -2147483647, new WidgetPointer(334,38), new WidgetPointer(334,39), new WidgetPointer(334,40), new WidgetPointer(334,41), new WidgetPointer(334,42), "iIIIII", new WidgetPointer(334,42));
+		cs2method2314(149, new WidgetPointer(334,42));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(334,39));
+		setWidgetIsHidden(true, new WidgetPointer(334,40));
+		setWidgetIsHidden(true, new WidgetPointer(334,41));
+		while (ivar0 < 14) {
+			ivar1 = getItemIdInSlot(90, ivar0);
+			if (ivar1 != -1) {
+				createExtraChild(new WidgetPointer(334,38), 4, getExtraChildGap(new WidgetPointer(334,38)));
+				setWidgetPosition(0, multiply(ivar0, 12), 1, 0);
+				setWidgetSize(0, 12, 1, 0);
+				setWidgetTextAlignment(1, 0, 0);
+				setWidgetFont(496);
+				setWidgetRGB(new Color(255, 255, 255));
+				setWidgetUnknownBoolean(true);
+				setWidgetText(script_4107(ivar1, getItemAmtInSlot(90, ivar0)));
+			}
+			ivar0 = add(ivar0, 1);
+		}
+	}
+	deleteAllExtraChilds(new WidgetPointer(334,49));
+	deleteAllExtraChilds(new WidgetPointer(334,58));
+	deleteAllExtraChilds(new WidgetPointer(334,59));
+	ivar0 = 0;
+	ivar2 = 0;
+	if ((((((((((((((getItemIdInSlotSplit(90, 14) != -1) || (getItemIdInSlotSplit(90, 15) != -1)) || (getItemIdInSlotSplit(90, 16) != -1)) || (getItemIdInSlotSplit(90, 17) != -1)) || (getItemIdInSlotSplit(90, 18) != -1)) || (getItemIdInSlotSplit(90, 19) != -1)) || (getItemIdInSlotSplit(90, 20) != -1)) || (getItemIdInSlotSplit(90, 21) != -1)) || (getItemIdInSlotSplit(90, 22) != -1)) || (getItemIdInSlotSplit(90, 23) != -1)) || (getItemIdInSlotSplit(90, 24) != -1)) || (getItemIdInSlotSplit(90, 25) != -1)) || (getItemIdInSlotSplit(90, 26) != -1)) || (getItemIdInSlotSplit(90, 27) != -1)) {
+		setWidgetIsHidden(false, new WidgetPointer(334,58));
+		setWidgetIsHidden(false, new WidgetPointer(334,59));
+		setWidgetIsHidden(false, new WidgetPointer(334,60));
+		while (ivar0 < 14) {
+			ivar2 = script_148(ivar0);
+			if ((ivar2 > 0) && (ivar2 > subtract(getClientCycle(), 750))) {
+				setWidgetIsHidden(false, new WidgetPointer(334,55));
+				createExtraChild(new WidgetPointer(334,58), 3, getExtraChildGap(new WidgetPointer(334,58)));
+				createExtraChild(new WidgetPointer(334,58), 3, getExtraChildGap(new WidgetPointer(334,58)));
+				setWidgetPosition(0, multiply(ivar0, 12), 1, 0);
+				setWidgetPosition(0, multiply(ivar0, 12), 1, 0);
+				setWidgetSize(0, 13, 1, 0);
+				setWidgetSize(0, 13, 1, 0);
+				setWidgetRGB(new Color(255, 0, 0));
+				setWidgetRGB(new Color(153, 0, 0));
+				setWidgetFilled(1);
+				setWidgetFilled(0);
+				setScriptCallOnGameloop(144, new WidgetPointer(-32768,3), -2147483643, ivar2, add(ivar2, 750), "Iiii");
+				setScriptCallOnGameloop(144, new WidgetPointer(-32768,3), -2147483643, ivar2, add(ivar2, 750), "Iiii");
+			}
+			ivar1 = getItemIdInSlotSplit(90, ivar0);
+			if (ivar1 != -1) {
+				createExtraChild(new WidgetPointer(334,58), 4, getExtraChildGap(new WidgetPointer(334,58)));
+				setWidgetPosition(0, multiply(ivar0, 12), 1, 0);
+				setWidgetSize(0, 12, 1, 0);
+				setWidgetTextAlignment(0, 0, 0);
+				setWidgetFont(495);
+				setWidgetRGB(new Color(255, 255, 255));
+				setWidgetUnknownBoolean(true);
+				setWidgetText(script_4107(ivar1, getItemAmtInSlotSplit(90, ivar0)));
+			}
+			ivar0 = add(ivar0, 1);
+		}
+		while (ivar0 < 28) {
+			ivar2 = script_148(ivar0);
+			if ((ivar2 > 0) && (ivar2 > subtract(getClientCycle(), 750))) {
+				setWidgetIsHidden(false, new WidgetPointer(334,55));
+				createExtraChild(new WidgetPointer(334,59), 3, getExtraChildGap(new WidgetPointer(334,59)));
+				createExtraChild(new WidgetPointer(334,59), 3, getExtraChildGap(new WidgetPointer(334,59)));
+				setWidgetPosition(0, multiply(subtract(ivar0, 14), 12), 1, 0);
+				setWidgetPosition(0, multiply(subtract(ivar0, 14), 12), 1, 0);
+				setWidgetSize(0, 13, 1, 0);
+				setWidgetSize(0, 13, 1, 0);
+				setWidgetRGB(new Color(255, 0, 0));
+				setWidgetRGB(new Color(153, 0, 0));
+				setWidgetFilled(1);
+				setWidgetFilled(0);
+				setScriptCallOnGameloop(144, new WidgetPointer(-32768,3), -2147483643, ivar2, add(ivar2, 750), "Iiii");
+				setScriptCallOnGameloop(144, new WidgetPointer(-32768,3), -2147483643, ivar2, add(ivar2, 750), "Iiii");
+			}
+			ivar1 = getItemIdInSlotSplit(90, ivar0);
+			if (ivar1 != -1) {
+				createExtraChild(new WidgetPointer(334,59), 4, getExtraChildGap(new WidgetPointer(334,59)));
+				setWidgetPosition(0, multiply(subtract(ivar0, 14), 12), 1, 0);
+				setWidgetSize(0, 12, 1, 0);
+				setWidgetTextAlignment(0, 0, 0);
+				setWidgetFont(495);
+				setWidgetRGB(new Color(255, 255, 255));
+				setWidgetUnknownBoolean(true);
+				setWidgetText(script_4107(ivar1, getItemAmtInSlotSplit(90, ivar0)));
+			}
+			ivar0 = add(ivar0, 1);
+		}
+		script_4109(114, 21889073, 21889082, 21889083, 21889084, 21889085);
+		setScriptCallOnMouseDragged(4108, -2147483647, new WidgetPointer(334,49), new WidgetPointer(334,58), new WidgetPointer(334,59), new WidgetPointer(334,60), new WidgetPointer(334,61), "iIIIII", new WidgetPointer(334,61));
+		setScriptCallOnMouseDragReleased(4108, -2147483647, new WidgetPointer(334,49), new WidgetPointer(334,58), new WidgetPointer(334,59), new WidgetPointer(334,60), new WidgetPointer(334,61), "iIIIII", new WidgetPointer(334,61));
+		cs2method2314(149, new WidgetPointer(334,61));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(334,58));
+		setWidgetIsHidden(true, new WidgetPointer(334,59));
+		setWidgetIsHidden(true, new WidgetPointer(334,60));
+		while (ivar0 < 14) {
+			ivar2 = script_148(ivar0);
+			if ((ivar2 > 0) && (ivar2 > subtract(getClientCycle(), 750))) {
+				setWidgetIsHidden(false, new WidgetPointer(334,55));
+				createExtraChild(new WidgetPointer(334,49), 3, getExtraChildGap(new WidgetPointer(334,49)));
+				createExtraChild(new WidgetPointer(334,49), 3, getExtraChildGap(new WidgetPointer(334,49)));
+				setWidgetPosition(0, multiply(ivar0, 12), 1, 0);
+				setWidgetPosition(0, multiply(ivar0, 12), 1, 0);
+				setWidgetSize(0, 13, 1, 0);
+				setWidgetSize(0, 13, 1, 0);
+				setWidgetRGB(new Color(255, 0, 0));
+				setWidgetRGB(new Color(153, 0, 0));
+				setWidgetFilled(1);
+				setWidgetFilled(0);
+				setScriptCallOnGameloop(144, new WidgetPointer(-32768,3), -2147483643, ivar2, add(ivar2, 750), "Iiii");
+				setScriptCallOnGameloop(144, new WidgetPointer(-32768,3), -2147483643, ivar2, add(ivar2, 750), "Iiii");
+			}
+			ivar1 = getItemIdInSlotSplit(90, ivar0);
+			if (ivar1 != -1) {
+				createExtraChild(new WidgetPointer(334,49), 4, getExtraChildGap(new WidgetPointer(334,49)));
+				setWidgetPosition(0, multiply(ivar0, 12), 1, 0);
+				setWidgetSize(0, 12, 1, 0);
+				setWidgetTextAlignment(1, 0, 0);
+				setWidgetFont(496);
+				setWidgetRGB(new Color(255, 255, 255));
+				setWidgetUnknownBoolean(true);
+				setWidgetText(script_4107(ivar1, getItemAmtInSlotSplit(90, ivar0)));
+			}
+			ivar0 = add(ivar0, 1);
+		}
+	}
+	ivar2 = script_148(-1);
+	if (ivar2 > 0) {
+		setWidgetIsHidden(false, new WidgetPointer(334,55));
+		createExtraChild(new WidgetPointer(334,51), 3, 0);
+		setWidgetHidden(0);
+		setWidgetPosition(0, 0, 0, 0);
+		setWidgetSize(0, 0, 1, 1);
+		setWidgetRGB(new Color(255, 0, 0));
+		setWidgetFilled(1);
+		setScriptCallOnGameloop(144, new WidgetPointer(-32768,3), -2147483643, ivar2, add(ivar2, 750), "Iiii");
+		createExtraChild(new WidgetPointer(334,51), 3, 1);
+		setWidgetHidden(0);
+		setWidgetPosition(0, 0, 0, 0);
+		setWidgetSize(0, 0, 1, 1);
+		setWidgetRGB(new Color(153, 0, 0));
+		setWidgetFilled(0);
+		setScriptCallOnGameloop(144, new WidgetPointer(-32768,3), -2147483643, ivar2, add(ivar2, 750), "Iiii");
+	}
+	return;
+}

@@ -3,6 +3,7 @@ package plugin.npc.familiar;
 import org.crandor.game.content.global.consumable.Consumables;
 import org.crandor.game.content.global.consumable.Food;
 import org.crandor.game.content.skill.Skills;
+import plugin.skill.cooking.CookableItems;
 import org.crandor.game.content.skill.free.fishing.Fish;
 import org.crandor.game.content.skill.member.summoning.familiar.Familiar;
 import org.crandor.game.content.skill.member.summoning.familiar.FamiliarSpecial;
@@ -94,8 +95,8 @@ public class BunyipNPC extends Familiar {
 			player.sendMessage("Error: Report to admin.");
 			return false;
 		}
-		if (player.getSkills().getLevel(Skills.COOKING) < food.getCookingProperties().getLevel()) {
-			player.sendMessage("You need a Cooking level of at least " + food.getCookingProperties().getLevel() + " in order to do that.");
+		if (player.getSkills().getLevel(Skills.COOKING) < CookableItems.forId(special.getItem().getId() + 2).level) {
+			player.sendMessage("You need a Cooking level of at least " + CookableItems.forId(special.getItem().getId()).level + " in order to do that.");
 			return false;
 		}
 		if (player.getInventory().remove(special.getItem())) {

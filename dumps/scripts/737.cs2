@@ -1,0 +1,38 @@
+void script_737(int arg0) {
+	int ivar1;
+	ivar1 = -1;
+	if (((boolean)globalint_99)) {
+		globalint_99 = arg0;
+		return;
+	}
+	if (((boolean)globalint_100)) {
+		globalint_100 = arg0;
+		return;
+	}
+	if (((boolean)globalint_101)) {
+		globalint_101 = arg0;
+		if ((script_739(globalint_99) == script_739(globalint_100)) && (script_739(globalint_99) == script_739(globalint_101))) {
+			ivar1 = cs2method_3408(105, 109, 1152, script_739(globalint_99));
+			setWidgetModel(ivar1, cs2method_3408(105, 73, 1153, globalint_99));
+			setWidgetModel(ivar1, cs2method_3408(105, 73, 1153, globalint_100));
+			setWidgetModel(ivar1, cs2method_3408(105, 73, 1153, globalint_101));
+			globalint_104 = flagBit(globalint_104, script_739(globalint_99));
+			globalint_99 = 0;
+			globalint_100 = 0;
+			globalint_101 = 0;
+			globalint_102 = add(globalint_102, 1);
+			globalint_105 = subtract(globalint_105, 1);
+			script_738();
+		}
+		return;
+	}
+	setWidgetModel(31025, cs2method_3408(105, 73, 1153, globalint_99));
+	setWidgetModel(31025, cs2method_3408(105, 73, 1153, globalint_100));
+	setWidgetModel(31025, cs2method_3408(105, 73, 1153, globalint_101));
+	globalint_99 = arg0;
+	globalint_100 = 0;
+	globalint_101 = 0;
+	globalint_105 = subtract(globalint_105, 1);
+	script_738();
+	return;
+}

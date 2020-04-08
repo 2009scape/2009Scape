@@ -1,0 +1,154 @@
+void script_5078(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int stack_dump0;
+	script_4762(73007134, 1788);
+	deleteAllExtraChilds(new WidgetPointer(1114,5));
+	ivar1 = 0;
+	ivar2 = getCommonDefinitionSize(3921);
+	ivar3 = -1;
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 0;
+	globalarray_0 = new int[add(ivar2, 1)];
+	ivar7 = 1;
+	while (ivar1 < ivar2) {
+		ivar3 = cs2method_3408(105, 103, 3921, ivar1);
+		if (ivar3 != -1) {
+			stack_dump0 = 0;
+			ivar5 = getCommonDefinitionSize(ivar3);
+			ivar4 = stack_dump0;
+			while (ivar4 < ivar5) {
+				ivar6 = max(ivar6, getTextWidth(494, cs2method_3408(105, 115, ivar3, ivar4)));
+				ivar4 = add(ivar4, 1);
+			}
+			globalarray_0[ivar7] = add(globalarray_0[subtract(ivar7, 1)], ivar5);
+			ivar7 = add(ivar7, 1);
+		}
+		ivar1 = add(ivar1, 1);
+	}
+	ivar8 = add(ivar6, 28);
+	ivar1 = 0;
+	ivar9 = 0;
+	ivar10 = 0;
+	while (ivar1 < ivar2) {
+		ivar3 = cs2method_3408(105, 103, 3921, ivar1);
+		if (ivar3 != -1) {
+			createExtraChild(new WidgetPointer(1114,5), 3, getExtraChildGap(new WidgetPointer(1114,5)));
+			setWidgetSize(0, 33, 1, 0);
+			setWidgetPosition(0, ivar9, 0, 0);
+			setWidgetFilled(1);
+			if (((boolean)mod(ivar1, 2))) {
+				setWidgetRGB(new Color(33, 31, 28));
+			} else {
+				setWidgetRGB(new Color(24, 23, 21));
+			}
+			createExtraChild(new WidgetPointer(1114,5), 4, getExtraChildGap(new WidgetPointer(1114,5)));
+			setWidgetSize(add(ivar8, 15), 33, 1, 0);
+			setWidgetPosition(5, ivar9, 0, 0);
+			setWidgetFont(494);
+			setWidgetTextAlignment(0, 1, 0);
+			setWidgetRGB(new Color(233, 226, 180));
+			setWidgetUnknownBoolean(true);
+			setWidgetText(cs2method_3408(105, 115, ivar3, -1));
+			createExtraChild(new WidgetPointer(1114,5), 3, getExtraChildGap(new WidgetPointer(1114,5)));
+			setWidgetSize(ivar8, 21, 0, 0);
+			setWidgetPosition(6, add(ivar9, 6), 2, 0);
+			cs2method2103(255);
+			createExtraChild(new WidgetPointer(1114,5), 5, getExtraChildGap(new WidgetPointer(1114,5)));
+			setWidgetSize(subtract(getWidgetActualWidth(), 40), getWidgetActualHeight(), 0, 0);
+			setWidgetPosition(26, getWidgetActualY(), 2, 0);
+			if (((boolean)globalint_1095)) {
+				setWidgetSprite(6132);
+			} else {
+				setWidgetSprite(6141);
+			}
+			createExtraChild(new WidgetPointer(1114,5), 5, getExtraChildGap(new WidgetPointer(1114,5)));
+			setWidgetSize(subtract(getWidgetActualWidth(), 40), getWidgetActualHeight(), 0, 0);
+			setWidgetPosition(26, getWidgetActualY(), 2, 0);
+			if (((boolean)globalint_1095)) {
+				setWidgetSprite(6135);
+				cs2method2103(255);
+			} else {
+				setWidgetHidden(1);
+			}
+			createExtraChild(new WidgetPointer(1114,5), 5, getExtraChildGap(new WidgetPointer(1114,5)));
+			setWidgetSize(20, getWidgetActualHeight(), 0, 0);
+			setWidgetPosition(getWidgetActualX(), getWidgetActualY(), 0, 0);
+			if (((boolean)globalint_1095)) {
+				setWidgetSprite(6131);
+			} else {
+				setWidgetSprite(6140);
+			}
+			createExtraChild(new WidgetPointer(1114,5), 5, getExtraChildGap(new WidgetPointer(1114,5)));
+			setWidgetSize(20, getWidgetActualHeight(), 0, 0);
+			setWidgetPosition(getWidgetActualX(), getWidgetActualY(), 0, 0);
+			if (((boolean)globalint_1095)) {
+				setWidgetSprite(6134);
+				cs2method2103(255);
+			} else {
+				setWidgetHidden(1);
+			}
+			createExtraChild(new WidgetPointer(1114,5), 5, getExtraChildGap(new WidgetPointer(1114,5)));
+			setWidgetSize(20, getWidgetActualHeight(), 0, 0);
+			setWidgetPosition(6, getWidgetActualY(), 2, 0);
+			if (((boolean)globalint_1095)) {
+				setWidgetSprite(6133);
+			} else {
+				setWidgetSprite(6142);
+			}
+			createExtraChild(new WidgetPointer(1114,5), 5, getExtraChildGap(new WidgetPointer(1114,5)));
+			setWidgetSize(20, getWidgetActualHeight(), 0, 0);
+			setWidgetPosition(6, getWidgetActualY(), 2, 0);
+			if (((boolean)globalint_1095)) {
+				setWidgetSprite(6136);
+				cs2method2103(255);
+			} else {
+				setWidgetHidden(1);
+			}
+			createExtraChild(new WidgetPointer(1114,5), 4, getExtraChildGap(new WidgetPointer(1114,5)));
+			setWidgetSize(ivar6, 21, 0, 0);
+			setWidgetPosition(30, getWidgetActualY(), 2, 0);
+			setWidgetFont(494);
+			setWidgetTextAlignment(1, 1, 0);
+			setWidgetRGB(new Color(37, 30, 20));
+			setWidgetUnknownBoolean(false);
+			setWidgetText("");
+			ivar9 = add(ivar9, 33);
+			if (((boolean)globalint_1095)) {
+				setScriptCallOnMouseEntered(5086, new WidgetPointer(-32768,3), ivar1, 0, "Iii");
+				setScriptCallOnMouseExit(5086, new WidgetPointer(-32768,3), ivar1, 1, "Iii");
+				setScriptCallOnMouseReleased(5086, new WidgetPointer(-32768,3), ivar1, 255, "Iii");
+				if (ivar3 == 3922) {
+					setScriptCallOnMousePressed(5081, new WidgetPointer(-32768,3), ivar1, ivar3, globalarray_0[ivar1], min(subtract(globalarray_0[add(ivar1, 1)], globalarray_0[ivar1]), bitconfig_9544), ivar10, ivar8, "Iigiiii");
+				} else {
+					setScriptCallOnMousePressed(5081, new WidgetPointer(-32768,3), ivar1, ivar3, globalarray_0[ivar1], subtract(globalarray_0[add(ivar1, 1)], globalarray_0[ivar1]), ivar10, ivar8, "Iigiiii");
+				}
+			}
+		}
+		ivar1 = add(ivar1, 1);
+	}
+	if (ivar9 > getWidgetActualHeight(new WidgetPointer(1114,5))) {
+		setWidgetScrollMax(0, ivar9, new WidgetPointer(1114,5));
+		cs2method2100(0, cs2method2601(new WidgetPointer(1114,5)), new WidgetPointer(1114,5));
+	} else {
+		setWidgetScrollMax(0, 0, new WidgetPointer(1114,5));
+		cs2method2100(0, 0, new WidgetPointer(1114,5));
+	}
+	script_31(73007110, 73007109, 6507, 6504, 6505, 6506, 6499, 6498);
+	script_5080(73007109);
+	setScriptCallOnMousePressed(5084, new WidgetPointer(1114,5), "I", new WidgetPointer(1114,28));
+	setScriptCallOnGlobalConfigChange(5078, new WidgetPointer(-32768,3), 1095, 1, "IY", new WidgetPointer(arg0));
+	setScriptCallOnConfigChange(5078, new WidgetPointer(-32768,3), 1734, 1, "IY", new WidgetPointer(arg0));
+	setScriptCallOnConfigChange(5079, new WidgetPointer(-32768,3), 1736, 1, "IY", new WidgetPointer(1114,5));
+	setScriptCallOnGlobalStringChange(5079, new WidgetPointer(-32768,3), 129, 1, "IY", new WidgetPointer(1114,5));
+	return;
+}

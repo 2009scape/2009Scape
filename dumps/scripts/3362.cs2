@@ -1,0 +1,46 @@
+cs2func_script_3362_struct(2,1,0) script_3362() {
+	flow_0:
+		SWITCH (standart_config_448) {
+			case 17965:
+				 GOTO flow_1
+			case 17966:
+				 GOTO flow_2
+			case 17967:
+				 GOTO flow_3
+			case 17968:
+				 GOTO flow_4
+			case 17969:
+				 GOTO flow_5
+			case 17970:
+				 GOTO flow_6
+			case 17971:
+				 GOTO flow_7
+			case 17972:
+				 GOTO flow_8
+			case 17973:
+				 GOTO flow_9
+			case 17974:
+				 GOTO flow_10
+		}
+		return newstruct cs2func_script_3362_struct(9, 18077, "Glimmer of Light (Tier 1)");
+	flow_1:
+		return newstruct cs2func_script_3362_struct(9, 18077, "Glimmer of Light (Tier 1)");
+	flow_2:
+		return newstruct cs2func_script_3362_struct(19, 18078, "Glimmer of Light (Tier 2)");
+	flow_3:
+		return newstruct cs2func_script_3362_struct(29, 18079, "Glimmer of Light (Tier 3)");
+	flow_4:
+		return newstruct cs2func_script_3362_struct(39, 18080, "Glimmer of Light (Tier 4)");
+	flow_5:
+		return newstruct cs2func_script_3362_struct(49, 18081, "Glimmer of Light (Tier 5)");
+	flow_6:
+		return newstruct cs2func_script_3362_struct(59, 18082, "Glimmer of Light (Tier 6)");
+	flow_7:
+		return newstruct cs2func_script_3362_struct(69, 18083, "Glimmer of Light (Tier 7)");
+	flow_8:
+		return newstruct cs2func_script_3362_struct(79, 18084, "Glimmer of Light (Tier 8)");
+	flow_9:
+		return newstruct cs2func_script_3362_struct(89, 18085, "Glimmer of Light (Tier 9)");
+	flow_10:
+		return newstruct cs2func_script_3362_struct(99, 18086, "Glimmer of Light (Tier 10)");
+}

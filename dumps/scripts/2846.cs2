@@ -1,0 +1,57 @@
+void script_2846(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar1 = 308;
+	ivar2 = 55;
+	ivar3 = 0;
+	ivar4 = getCommonDefinitionSize(903);
+	while (ivar3 < ivar4) {
+		createExtraChild(new WidgetPointer(arg0), 6, ivar3);
+		setWidgetSize(50, 50, 0, 0);
+		setWidgetPosition(ivar1, ivar2, 0, 0);
+		setWidgetModel(cs2method_3408(105, 109, 903, ivar3));
+		setWidget3DRotation(0, 0, 512, 0, 0, 2750);
+		setScriptCallOnMouseDragReleased(2848, new WidgetPointer(-32768,3), -2147483643, new WidgetPointer(-32768,6), -2147483641, -2147483647, -2147483646, "IiIiii");
+		cs2method1302(2);
+		cs2method1303(14);
+		setWidgetContextMenuOption(1, "Select");
+		ivar3 = add(ivar3, 1);
+		if (ivar3 == 3) {
+			ivar1 = add(308, 48);
+			ivar2 = 55;
+		} else if (ivar3 == 6) {
+			ivar1 = add(308, 96);
+			ivar2 = 55;
+		} else {
+			ivar2 = add(48, ivar2);
+		}
+	}
+	ivar1 = 113;
+	ivar2 = 83;
+	ivar4 = getCommonDefinitionSize(904);
+	ivar4 = add(ivar4, ivar3);
+	ivar5 = 0;
+	while (ivar3 < ivar4) {
+		createExtraChild(new WidgetPointer(arg0), 3, ivar3);
+		setWidgetSize(50, 50, 0, 0);
+		setWidgetPosition(ivar1, ivar2, 0, 0);
+		cs2method2103(255);
+		ivar3 = add(ivar3, 1);
+		ivar5 = add(ivar5, 1);
+		if (ivar5 == 3) {
+			ivar1 = 113;
+			ivar2 = add(83, 52);
+		} else if (ivar5 == 6) {
+			ivar1 = 113;
+			ivar2 = add(83, 104);
+		} else {
+			ivar1 = add(50, ivar1);
+		}
+	}
+	script_2847(arg0);
+	return;
+}

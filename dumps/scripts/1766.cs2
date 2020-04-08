@@ -1,0 +1,241 @@
+void script_1766() {
+	flow_0:
+		if (((boolean)globalint_232)) {
+			setWidgetSprite(1817, new WidgetPointer(548,138));
+			setWidgetSprite(1817, new WidgetPointer(746,24));
+			setWidgetContextMenuOption(1, new WidgetPointer(548,129), "Combat Styles");
+			setWidgetContextMenuOption(1, new WidgetPointer(746,39), "Combat Styles");
+		} else {
+			if (((boolean)globalint_232)) {
+				setWidgetSprite(7710, new WidgetPointer(548,138));
+				setWidgetSprite(7710, new WidgetPointer(746,24));
+				setWidgetContextMenuOption(1, new WidgetPointer(548,129), "Props");
+				setWidgetContextMenuOption(1, new WidgetPointer(746,39), "Props");
+			}
+		}
+		if (((boolean)globalint_822)) {
+			script_4089();
+			setWidgetSprite(1820, new WidgetPointer(548,139));
+			setWidgetSprite(1820, new WidgetPointer(746,131));
+			setWidgetContextMenuOption(1, new WidgetPointer(548,130), "Task List");
+			setWidgetContextMenuOption(1, new WidgetPointer(746,40), "Task List");
+		} else if (((boolean)globalint_822)) {
+			setWidgetIsHidden(true, new WidgetPointer(746,130));
+			setWidgetIsHidden(true, new WidgetPointer(548,137));
+			setWidgetSprite(1812, new WidgetPointer(548,139));
+			setWidgetSprite(1812, new WidgetPointer(746,131));
+			setWidgetContextMenuOption(1, new WidgetPointer(548,130), "Camera");
+			setWidgetContextMenuOption(1, new WidgetPointer(746,40), "Camera");
+		} else {
+			if (globalint_822 == 2) {
+				setWidgetIsHidden(true, new WidgetPointer(746,130));
+				setWidgetIsHidden(true, new WidgetPointer(548,137));
+				setWidgetSprite(7709, new WidgetPointer(548,139));
+				setWidgetSprite(7709, new WidgetPointer(746,131));
+				setWidgetContextMenuOption(1, new WidgetPointer(548,130), "Spotlights");
+				setWidgetContextMenuOption(1, new WidgetPointer(746,40), "Spotlights");
+			}
+		}
+		SWITCH (globalint_233) {
+			case 1:
+				 GOTO flow_11
+			case 2:
+				 GOTO flow_12
+			case 4:
+				 GOTO flow_13
+			case 5:
+				 GOTO flow_14
+		}
+		setWidgetSprite(1818, new WidgetPointer(548,140));
+		setWidgetSprite(1818, new WidgetPointer(746,25));
+		setWidgetContextMenuOption(1, new WidgetPointer(548,131), "Stats");
+		setWidgetContextMenuOption(1, new WidgetPointer(746,41), "Stats");
+		GOTO	flow_15
+	flow_11:
+		setWidgetSprite(1815, new WidgetPointer(548,140));
+		setWidgetSprite(1815, new WidgetPointer(746,25));
+		setWidgetContextMenuOption(1, new WidgetPointer(548,131), "Squad Commands");
+		setWidgetContextMenuOption(1, new WidgetPointer(746,41), "Squad Commands");
+		GOTO	flow_15
+	flow_12:
+		setWidgetSprite(7708, new WidgetPointer(548,140));
+		setWidgetSprite(7708, new WidgetPointer(746,25));
+		setWidgetContextMenuOption(1, new WidgetPointer(548,131), "Sound Effects");
+		setWidgetContextMenuOption(1, new WidgetPointer(746,41), "Sound Effects");
+		GOTO	flow_15
+	flow_13:
+		setWidgetSprite(3248, new WidgetPointer(548,140));
+		setWidgetSprite(3248, new WidgetPointer(746,25));
+		setWidgetContextMenuOption(1, new WidgetPointer(548,131), "Turn Options");
+		setWidgetContextMenuOption(1, new WidgetPointer(746,41), "Turn Options");
+		GOTO	flow_15
+	flow_14:
+		setWidgetSprite(3248, new WidgetPointer(548,140));
+		setWidgetSprite(3248, new WidgetPointer(746,25));
+		setWidgetContextMenuOption(1, new WidgetPointer(548,131), "Command Options");
+		setWidgetContextMenuOption(1, new WidgetPointer(746,41), "Command Options");
+	flow_15:
+		SWITCH (globalint_234) {
+			case 1:
+				 GOTO flow_16
+			case 2:
+				 GOTO flow_17
+			case 3:
+				 GOTO flow_18
+			case 4:
+				 GOTO flow_19
+			case 5:
+				 GOTO flow_20
+		}
+		setWidgetSprite(1819, new WidgetPointer(548,141));
+		setWidgetSprite(1819, new WidgetPointer(746,26));
+		setWidgetContextMenuOption(1, new WidgetPointer(548,132), "Quest Journals");
+		setWidgetContextMenuOption(1, new WidgetPointer(746,42), "Quest Journals");
+		GOTO	flow_21
+	flow_16:
+		setWidgetSprite(1813, new WidgetPointer(548,141));
+		setWidgetSprite(1813, new WidgetPointer(746,26));
+		setWidgetContextMenuOption(1, new WidgetPointer(548,132), "Special Units");
+		setWidgetContextMenuOption(1, new WidgetPointer(746,42), "Special Units");
+		GOTO	flow_21
+	flow_17:
+		setWidgetSprite(3249, new WidgetPointer(548,141));
+		setWidgetSprite(3249, new WidgetPointer(746,26));
+		setWidgetContextMenuOption(1, new WidgetPointer(548,132), "Troop Details");
+		setWidgetContextMenuOption(1, new WidgetPointer(746,42), "Troop Details");
+		GOTO	flow_21
+	flow_18:
+		setWidgetSprite(3028, new WidgetPointer(548,141));
+		setWidgetSprite(3028, new WidgetPointer(746,26));
+		setWidgetContextMenuOption(1, new WidgetPointer(548,132), "Party organiser");
+		setWidgetContextMenuOption(1, new WidgetPointer(746,42), "Party organiser");
+		GOTO	flow_21
+	flow_19:
+		setWidgetSprite(1834, new WidgetPointer(548,141));
+		setWidgetSprite(1834, new WidgetPointer(746,26));
+		setWidgetContextMenuOption(1, new WidgetPointer(548,132), "Book");
+		setWidgetContextMenuOption(1, new WidgetPointer(746,42), "Book");
+		GOTO	flow_21
+	flow_20:
+		setWidgetSprite(7711, new WidgetPointer(548,141));
+		setWidgetSprite(7711, new WidgetPointer(746,26));
+		setWidgetContextMenuOption(1, new WidgetPointer(548,132), "Actors");
+		setWidgetContextMenuOption(1, new WidgetPointer(746,42), "Actors");
+	flow_21:
+		if (((boolean)globalint_235)) {
+			setWidgetSprite(1821, new WidgetPointer(548,142));
+			setWidgetSprite(1821, new WidgetPointer(746,27));
+			setWidgetContextMenuOption(1, new WidgetPointer(548,133), "Inventory");
+			setWidgetContextMenuOption(1, new WidgetPointer(746,43), "Inventory");
+		} else if (((boolean)globalint_235)) {
+			setWidgetSprite(1814, new WidgetPointer(548,142));
+			setWidgetSprite(1814, new WidgetPointer(746,27));
+			setWidgetContextMenuOption(1, new WidgetPointer(548,133), "My Squads");
+			setWidgetContextMenuOption(1, new WidgetPointer(746,43), "My Squads");
+		} else {
+			if (globalint_235 == 2) {
+				setWidgetSprite(3247, new WidgetPointer(548,142));
+				setWidgetSprite(3247, new WidgetPointer(746,27));
+				setWidgetContextMenuOption(1, new WidgetPointer(548,133), "Commands");
+				setWidgetContextMenuOption(1, new WidgetPointer(746,43), "Commands");
+			}
+		}
+		if (((boolean)globalint_236)) {
+			setWidgetSprite(1822, new WidgetPointer(548,143));
+			setWidgetSprite(1822, new WidgetPointer(746,28));
+			setWidgetContextMenuOption(1, new WidgetPointer(548,134), "Worn Equipment");
+			setWidgetContextMenuOption(1, new WidgetPointer(746,44), "Worn Equipment");
+		} else if (((boolean)globalint_236)) {
+			setWidgetSprite(1833, new WidgetPointer(548,143));
+			setWidgetSprite(1833, new WidgetPointer(746,28));
+			setWidgetContextMenuOption(1, new WidgetPointer(548,134), "Acrobat Emotes");
+			setWidgetContextMenuOption(1, new WidgetPointer(746,44), "Acrobat Emotes");
+		} else if (globalint_236 == 2) {
+			setWidgetSprite(1816, new WidgetPointer(548,143));
+			setWidgetSprite(1816, new WidgetPointer(746,28));
+			setWidgetContextMenuOption(1, new WidgetPointer(548,134), "Forfeit");
+			setWidgetContextMenuOption(1, new WidgetPointer(746,44), "Forfeit");
+		} else if (globalint_236 == 3) {
+			setWidgetSprite(3250, new WidgetPointer(548,143));
+			setWidgetSprite(3250, new WidgetPointer(746,28));
+			setWidgetContextMenuOption(1, new WidgetPointer(548,134), "Diplomacy");
+			setWidgetContextMenuOption(1, new WidgetPointer(746,44), "Diplomacy");
+		} else {
+			if (globalint_236 == 4) {
+				setWidgetSprite(3250, new WidgetPointer(548,143));
+				setWidgetSprite(3250, new WidgetPointer(746,28));
+				setWidgetContextMenuOption(1, new WidgetPointer(548,134), "Retreat");
+				setWidgetContextMenuOption(1, new WidgetPointer(746,44), "Retreat");
+			}
+		}
+		if (((boolean)globalint_237)) {
+			setWidgetSprite(1823, new WidgetPointer(548,144));
+			setWidgetSprite(1823, new WidgetPointer(746,29));
+		}
+		if (((boolean)globalint_238)) {
+			setWidgetSprite(1824, new WidgetPointer(548,145));
+			setWidgetSprite(1824, new WidgetPointer(746,30));
+			setWidgetContextMenuOption(1, new WidgetPointer(548,136), "Magic Spellbook");
+			setWidgetContextMenuOption(1, new WidgetPointer(746,46), "Magic Spellbook");
+		}
+		if (globalint_823 != 2) {
+			setWidgetSprite(-1, new WidgetPointer(548,107));
+			setWidgetSprite(-1, new WidgetPointer(746,31));
+			setWidgetNoOptions(new WidgetPointer(746,47));
+			setWidgetNoOptions(new WidgetPointer(548,99));
+		} else {
+			if (globalint_823 == 2) {
+				setWidgetSprite(447, new WidgetPointer(548,107));
+				setWidgetSprite(447, new WidgetPointer(746,31));
+				setWidgetContextMenuOption(1, new WidgetPointer(548,99), "Production");
+				setWidgetContextMenuOption(1, new WidgetPointer(746,47), "Production");
+			}
+		}
+		if (((boolean)globalint_240)) {
+			setWidgetSprite(6238, new WidgetPointer(548,108));
+			setWidgetSprite(6238, new WidgetPointer(746,32));
+		}
+		if (((boolean)globalint_241)) {
+			setWidgetSprite(6237, new WidgetPointer(548,109));
+			setWidgetSprite(6237, new WidgetPointer(746,33));
+		}
+		if (((boolean)globalint_242)) {
+			setWidgetSprite(1828, new WidgetPointer(548,110));
+			setWidgetSprite(1828, new WidgetPointer(746,34));
+		}
+		if (((boolean)globalint_243)) {
+			setWidgetSprite(1829, new WidgetPointer(548,111));
+			setWidgetSprite(1829, new WidgetPointer(746,35));
+		}
+		if (((boolean)globalint_244)) {
+			setWidgetSprite(1830, new WidgetPointer(548,112));
+			setWidgetSprite(1830, new WidgetPointer(746,36));
+			setWidgetContextMenuOption(1, new WidgetPointer(548,104), "Emotes");
+			setWidgetContextMenuOption(1, new WidgetPointer(746,52), "Emotes");
+		} else {
+			if (((boolean)globalint_244)) {
+				setWidgetSprite(3247, new WidgetPointer(548,112));
+				setWidgetSprite(3247, new WidgetPointer(746,36));
+				setWidgetContextMenuOption(1, new WidgetPointer(548,104), "Special Attacks");
+				setWidgetContextMenuOption(1, new WidgetPointer(746,52), "Special Attacks");
+			}
+		}
+		if (((boolean)globalint_245)) {
+			setWidgetSprite(1831, new WidgetPointer(548,113));
+			setWidgetSprite(1831, new WidgetPointer(746,37));
+			setWidgetContextMenuOption(1, new WidgetPointer(548,105), "Music Player");
+			setWidgetContextMenuOption(1, new WidgetPointer(746,53), "Music Player");
+		} else {
+			if (((boolean)globalint_245)) {
+				setWidgetSprite(7707, new WidgetPointer(548,113));
+				setWidgetSprite(7707, new WidgetPointer(746,37));
+				setWidgetContextMenuOption(1, new WidgetPointer(548,105), "Face Direction");
+				setWidgetContextMenuOption(1, new WidgetPointer(746,53), "Face Direction");
+			}
+		}
+		if (((boolean)globalint_824)) {
+			setWidgetSprite(1832, new WidgetPointer(548,114));
+			setWidgetSprite(1832, new WidgetPointer(746,38));
+		}
+		return;
+}

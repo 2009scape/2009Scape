@@ -104,10 +104,10 @@ public final class ScriptManager {
 					load(file);
 					continue;
 				}
-				ScriptContext context = ScriptCompiler.parseRaw(file);
-				if (ScriptCompiler.getBuilder() != null) {
-					ScriptCompiler.getBuilder().configureScript(context);
-				}
+//				ScriptContext context = ScriptCompiler.parseRaw(file);
+//				if (ScriptCompiler.getBuilder() != null) {
+//					ScriptCompiler.getBuilder().configureScript(context);
+//				}
 				amount++;
 			}
 		} catch (Throwable e) {

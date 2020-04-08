@@ -1,0 +1,16 @@
+void script_4614(int arg0) {
+	switch (arg0) {
+		case 1310722:
+			setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9254)), new WidgetPointer(arg0));
+			break;
+		case 1310728:
+			setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9255)), new WidgetPointer(arg0));
+			break;
+		case 1310731:
+			setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9256)), new WidgetPointer(arg0));
+			break;
+		case 1310725:
+			setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9257)), new WidgetPointer(arg0));
+	}
+	return;
+}

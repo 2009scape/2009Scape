@@ -1,0 +1,5 @@
+void script_41(int arg0) {
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	globalint_2 = 0;
+	return;
+}

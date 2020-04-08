@@ -190,6 +190,6 @@ public final class WiseOldManDialogue extends DialoguePlugin {
 
     @Override
     public int[] getIds() {
-	return new int[] {  };
+	return new int[] { 2253,3820 };
     }
 }

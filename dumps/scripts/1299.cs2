@@ -1,0 +1,86 @@
+void script_1299(int arg0,int arg1) {
+	int ivar2;
+	string svar0;
+	flow_0:
+		if (((boolean)arg1)) {
+			script_2710(59375640, 59375641, 59375642, 59703312, 59703318, 59703317);
+		}
+		setWidgetSprite(4140, new WidgetPointer(906,248));
+		setWidgetSprite(4139, new WidgetPointer(906,249));
+		setWidgetSprite(4141, new WidgetPointer(906,250));
+		setWidgetSprite(4142, new WidgetPointer(906,251));
+		setWidgetSprite(4144, new WidgetPointer(906,252));
+		setWidgetSprite(4143, new WidgetPointer(906,253));
+		setWidgetSprite(4145, new WidgetPointer(906,254));
+		setWidgetSprite(4146, new WidgetPointer(906,255));
+		setWidgetSprite(4129, new WidgetPointer(906,257));
+		setWidgetSprite(4129, new WidgetPointer(906,259));
+		setWidgetSprite(4129, new WidgetPointer(906,262));
+		setWidgetSprite(4065, new WidgetPointer(906,226));
+		setWidgetVFlip(1, new WidgetPointer(906,226));
+		setWidgetHFlip(1, new WidgetPointer(906,226));
+		setWidgetSprite(4065, new WidgetPointer(906,230));
+		setWidgetVFlip(1, new WidgetPointer(906,230));
+		setWidgetHFlip(0, new WidgetPointer(906,230));
+		setWidgetSprite(4065, new WidgetPointer(906,227));
+		setWidgetVFlip(0, new WidgetPointer(906,227));
+		setWidgetHFlip(1, new WidgetPointer(906,227));
+		setWidgetSprite(4065, new WidgetPointer(906,231));
+		setWidgetVFlip(0, new WidgetPointer(906,231));
+		setWidgetHFlip(0, new WidgetPointer(906,231));
+		setScriptCallOnWidgetResize(4040, "", new WidgetPointer(906,23));
+		ivar2 = strIndexof(0, globalstring_32, "@");
+		if (ivar2 == -1) {
+			globalint_1414 = 1;
+		} else {
+			globalint_1414 = 2;
+		}
+		IF (((boolean)cs2method6912())) 
+			GOTO	flow_6
+		IF (((boolean)stringMethod4107(substr(0, 1, cs2method5020()), "#")) && ((boolean)arg0)) 
+			GOTO	flow_7
+		GOTO	flow_12
+	flow_6:
+	flow_7:
+		globalint_1322 = 1;
+		globalint_200 = 0;
+		script_3093(-3, 0, 1, -1, 0, -1, 0, "Logging In - Please Wait", "", "", "", "");
+		globalint_1100 = -3;
+		if (arg1 < 50) {
+			arg1 = add(arg1, 1);
+			setScriptCallOnGameloop(3057, 0, arg1, "1i", new WidgetPointer(906,23));
+			return;
+		}
+		if (cs2method6500()) {
+			setScriptCallOnGameloop(3057, 0, arg1, "1i", new WidgetPointer(906,23));
+			return;
+		}
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(906,23));
+		cs2method5612(0);
+		setScriptCallOnGameloop(3063, new WidgetPointer(906,23), getWorldId(), "Ii", new WidgetPointer(906,23));
+		return;
+	flow_12:
+		setWidgetIsHidden(false, new WidgetPointer(906,27));
+		setWidgetIsHidden(true, new WidgetPointer(906,41));
+		script_3097();
+		script_3058();
+		script_3060(0);
+		script_3064(1);
+		globalstring_277 = "";
+		globalint_547 = 0;
+		messageType0("Welcome to the RuneScape Lobby.");
+		message(43, 0, "Welcome to the RuneScape Lobby.");
+		if (cs2method6900()) {
+			messageType0("Users restricted to quick-chat cannot send messages from the Lobby.");
+			message(43, 0, "Users restricted to quick-chat cannot send messages from the Lobby.");
+		}
+		script_51();
+		setScriptCallOnKeyPress(1328, -2147483640, "i", new WidgetPointer(906,23));
+		svar0 = script_2781();
+		if (strLength(svar0) > 0) {
+			script_2779(-3000, 0, 0, 2607, 1, 0, 1, 350, svar0 + "<br>" + " ", "Re-Subscribe Now", "Re-Subscribe Now", "Close", "Close");
+		}
+		setScriptCallOnGameloop(1868, new WidgetPointer(906,28), "I", new WidgetPointer(906,28));
+		script_4041();
+		return;
+}

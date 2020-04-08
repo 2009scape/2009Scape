@@ -1,0 +1,117 @@
+void script_431(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	flow_0:
+		ivar2 = -1;
+		ivar3 = -1;
+		ivar4 = 0;
+		ivar5 = -1;
+		ivar6 = -1;
+		SWITCH (arg0) {
+			case 67108872:
+				 GOTO flow_1
+			case 67108873:
+				 GOTO flow_5
+			case 67108874:
+				 GOTO flow_9
+			case 67108875:
+				 GOTO flow_13
+		}
+		return;
+	flow_1:
+		ivar2 = 67108944;
+		ivar3 = 67108945;
+		if (((boolean)globalint_1388)) {
+			ivar4 = 1;
+		} else {
+			ivar4 = bitconfig_7539;
+		}
+		GOTO	flow_16
+	flow_5:
+		ivar2 = 67108927;
+		ivar3 = 67108928;
+		if (((boolean)globalint_1388)) {
+			ivar4 = 3;
+		} else {
+			ivar4 = bitconfig_7540;
+		}
+		GOTO	flow_16
+	flow_9:
+		ivar2 = 67108910;
+		ivar3 = 67108911;
+		if (((boolean)globalint_1388)) {
+			ivar4 = 5;
+		} else {
+			ivar4 = bitconfig_7541;
+		}
+		GOTO	flow_16
+	flow_13:
+		ivar2 = 67108893;
+		ivar3 = 67108894;
+		if (((boolean)globalint_1388)) {
+			ivar4 = 6;
+		} else {
+			ivar4 = bitconfig_7542;
+		}
+	flow_16:
+		SWITCH (ivar4) {
+			case 1:
+				 GOTO flow_17
+			case 2:
+				 GOTO flow_18
+			case 3:
+				 GOTO flow_19
+			case 4:
+				 GOTO flow_20
+			case 5:
+				 GOTO flow_21
+			case 6:
+				 GOTO flow_22
+			case 7:
+				 GOTO flow_23
+			case 8:
+				 GOTO flow_24
+			case 9:
+				 GOTO flow_25
+		}
+		return;
+	flow_17:
+		ivar5 = 293;
+		GOTO	flow_26
+	flow_18:
+		ivar5 = 299;
+		GOTO	flow_26
+	flow_19:
+		ivar5 = 300;
+		GOTO	flow_26
+	flow_20:
+		ivar5 = 301;
+		GOTO	flow_26
+	flow_21:
+		ivar5 = 305;
+		GOTO	flow_26
+	flow_22:
+		ivar5 = 1044;
+		GOTO	flow_26
+	flow_23:
+		ivar5 = 1045;
+		GOTO	flow_26
+	flow_24:
+		ivar5 = 1046;
+		GOTO	flow_26
+	flow_25:
+		ivar5 = 1047;
+	flow_26:
+		if (((boolean)arg1)) {
+			setWidgetIsHidden(false, new WidgetPointer(ivar2));
+			setWidgetIsHidden(false, new WidgetPointer(ivar3));
+			cs2method2308(getOtherCommonData(ivar5, 1157), getOtherCommonData(ivar5, 1157), new WidgetPointer(arg0));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(ivar2));
+			setWidgetIsHidden(true, new WidgetPointer(ivar3));
+		}
+		return;
+}

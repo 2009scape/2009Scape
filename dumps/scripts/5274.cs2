@@ -1,0 +1,22 @@
+void script_5274() {
+	int ivar0;
+	int stack_dump0;
+	ivar0 = 0;
+	if (setWidgetRegister(new WidgetPointer(1137,7))) {
+		stack_dump0 = 1103;
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: opcode 1613 not decompileable
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeSpecialCall(FlowBlocksGenerator.java:297)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:249)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+				at tests.Main.main(Main.java:45)
+			
+		 */
+	}
+	if (((boolean)ivar0)) {
+		setWidgetIsHidden(true, new WidgetPointer(1137,7));
+	}
+	return;
+}

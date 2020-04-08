@@ -1,0 +1,11 @@
+void script_2236() {
+	if ((globalint_1135 < 15) && (add(add(standart_config_1687, standart_config_1688), standart_config_1686) > 1)) {
+		playSoundEffect(8729, 1, 0);
+		globalint_1135 = add(globalint_1135, 1);
+	} else {
+		standart_config_1685 = 2;
+		playSoundEffect(2277, 1, 0);
+	}
+	script_2220();
+	return;
+}

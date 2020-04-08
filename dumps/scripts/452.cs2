@@ -1,0 +1,8 @@
+void script_452() {
+	if (((boolean)bitconfig_7537)) {
+		setWidgetSprite(3745, new WidgetPointer(1008,31));
+	} else {
+		setWidgetSprite(3746, new WidgetPointer(1008,31));
+	}
+	return;
+}

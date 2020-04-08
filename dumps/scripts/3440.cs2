@@ -1,0 +1,12 @@
+void script_3440(int arg0,int arg1) {
+	playSoundEffect2False(6185, 1, 0, 200);
+	if (isWidgetHidden(new WidgetPointer(arg0))) {
+		setWidgetIsHidden(false, new WidgetPointer(arg0));
+		setWidgetSprite(6007, new WidgetPointer(arg1));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+		setWidgetSprite(6009, new WidgetPointer(arg1));
+	}
+	script_5245();
+	return;
+}

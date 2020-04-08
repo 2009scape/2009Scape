@@ -45,7 +45,8 @@ final class Class3_Sub31 extends Class3 {
          }
 
          for(int var3 = 0; ~var3 > -6; ++var3) {
-            var2[var3] = RenderAnimationDefinition.method903(new RSString[]{Class72.method1298((byte)9, var3), Class3_Sub28_Sub4.aClass94_3577}, (byte)-67);
+            var2[var3] = RenderAnimationDefinition.method903(new RSString[]{
+                    Class72.method1298((byte)9, var3), Class3_Sub28_Sub4.aClass94_3577}, (byte)-67);
             if(var1 != null && null != var1[var3]) {
                var2[var3] = RenderAnimationDefinition.method903(new RSString[]{var2[var3], var1[var3]}, (byte)-62);
             }

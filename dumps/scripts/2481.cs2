@@ -1,0 +1,14 @@
+void script_2481() {
+	cs2method2308(14, 15, new WidgetPointer(855,17));
+	cs2method2308(16, 17, new WidgetPointer(855,33));
+	cs2method2308(18, 19, new WidgetPointer(855,19));
+	cs2method2308(20, 21, new WidgetPointer(855,9));
+	cs2method2308(26, 27, new WidgetPointer(855,11));
+	cs2method2308(22, 23, new WidgetPointer(855,13));
+	cs2method2308(24, 25, new WidgetPointer(855,15));
+	cs2method2308(28, 29, new WidgetPointer(855,7));
+	cs2method2308(30, 31, new WidgetPointer(855,2));
+	cs2method2308(32, 33, new WidgetPointer(855,3));
+	cs2method2308(34, 35, new WidgetPointer(855,1));
+	return;
+}

@@ -1,0 +1,8 @@
+void script_1965(int arg0) {
+	if (standart_config_261 > 0) {
+		cs2method2103(255, new WidgetPointer(arg0));
+	} else {
+		cs2method2103(200, new WidgetPointer(arg0));
+	}
+	return;
+}

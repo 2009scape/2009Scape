@@ -1,0 +1,38 @@
+void script_1792(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	if (((boolean)bitconfig_5283)) {
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(arg3));
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(arg4));
+		setWidgetSprite(444, new WidgetPointer(arg1));
+		setWidgetText(new WidgetPointer(arg4), "ITEMS ARE" + "<br>" + "SAFE");
+	} else {
+		setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(arg3));
+		setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(arg4));
+		setWidgetSprite(445, new WidgetPointer(arg1));
+		setWidgetText(new WidgetPointer(arg4), "ITEMS ARE" + "<br>" + "DROPPED");
+	}
+	cs2method2107(1, new WidgetPointer(arg1));
+	ivar6 = getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg3)));
+	ivar6 = max(getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg4))), ivar6);
+	ivar6 = add(ivar6, 6);
+	ivar7 = 5;
+	setWidgetPosition(0, ivar7, 0, 0, new WidgetPointer(arg3));
+	ivar8 = getLineCount(ivar6, 494, getWidgetText(new WidgetPointer(arg3)));
+	ivar8 = add(multiply(ivar8, 10), 3);
+	setWidgetSize(ivar6, ivar8, 0, 0, new WidgetPointer(arg3));
+	ivar7 = subtract(add(ivar7, ivar8), 1);
+	setWidgetPosition(divide(subtract(ivar6, getWidgetActualWidth(new WidgetPointer(arg2))), 2), ivar7, 0, 0, new WidgetPointer(arg2));
+	ivar7 = subtract(add(ivar7, getWidgetActualHeight(new WidgetPointer(arg2))), 1);
+	setWidgetPosition(0, ivar7, 0, 0, new WidgetPointer(arg4));
+	ivar9 = getLineCount(ivar6, 494, getWidgetText(new WidgetPointer(arg4)));
+	ivar9 = add(multiply(ivar9, 10), 3);
+	setWidgetSize(ivar6, ivar8, 0, 0, new WidgetPointer(arg4));
+	ivar7 = add(add(ivar7, ivar9), 3);
+	setWidgetSize(ivar6, ivar7, 0, 0, new WidgetPointer(arg0));
+	setWidgetSize(ivar6, ivar7, 0, 0, new WidgetPointer(arg1));
+	script_1086(arg0, 0, 0, 0);
+	return;
+}

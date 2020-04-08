@@ -1,0 +1,9 @@
+void script_839() {
+	playSoundEffect(4501, 1, 0);
+	if (((boolean)bitconfig_4399)) {
+		script_841(1);
+	} else {
+		script_841(0);
+	}
+	return;
+}

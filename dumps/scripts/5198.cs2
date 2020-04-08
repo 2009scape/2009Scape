@@ -1,0 +1,13 @@
+void script_5198() {
+	setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9671)), new WidgetPointer(1122,111));
+	setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9672)), new WidgetPointer(1122,118));
+	setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9673)), new WidgetPointer(1122,120));
+	setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9672)), new WidgetPointer(1122,313));
+	setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9671)), new WidgetPointer(1122,320));
+	setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9673)), new WidgetPointer(1122,322));
+	setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9673)), new WidgetPointer(1122,341));
+	setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9673)), new WidgetPointer(1122,359));
+	setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9671)), new WidgetPointer(1122,348));
+	setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9672)), new WidgetPointer(1122,350));
+	return;
+}

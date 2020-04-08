@@ -1,0 +1,126 @@
+int script_2721(int arg0) {
+	int ivar1;
+	ivar1 = -1;
+	switch (arg0) {
+		case 0:
+			ivar1 = globalint_946;
+			break;
+		case 1:
+			ivar1 = globalint_947;
+			break;
+		case 2:
+			ivar1 = globalint_948;
+			break;
+		case 3:
+			ivar1 = globalint_949;
+			break;
+		case 4:
+			ivar1 = globalint_950;
+			break;
+		case 5:
+			ivar1 = globalint_951;
+			break;
+		case 6:
+			ivar1 = globalint_952;
+			break;
+		case 7:
+			ivar1 = globalint_953;
+			break;
+		case 8:
+			ivar1 = globalint_954;
+			break;
+		case 9:
+			ivar1 = globalint_955;
+			break;
+		case 10:
+			ivar1 = globalint_956;
+			break;
+		case 11:
+			ivar1 = globalint_957;
+			break;
+		case 12:
+			ivar1 = globalint_958;
+			break;
+		case 13:
+			ivar1 = globalint_959;
+			break;
+		case 14:
+			ivar1 = globalint_960;
+			break;
+		case 15:
+			ivar1 = globalint_961;
+			break;
+		case 16:
+			ivar1 = globalint_962;
+			break;
+		case 17:
+			ivar1 = globalint_963;
+			break;
+		case 18:
+			ivar1 = globalint_964;
+			break;
+		case 19:
+			ivar1 = globalint_965;
+			break;
+		case 20:
+			ivar1 = globalint_966;
+			break;
+		case 21:
+			ivar1 = globalint_967;
+			break;
+		case 22:
+			ivar1 = globalint_968;
+			break;
+		case 23:
+			ivar1 = globalint_969;
+			break;
+		case 24:
+			ivar1 = globalint_970;
+			break;
+		case 25:
+			ivar1 = globalint_971;
+			break;
+		case 26:
+			ivar1 = globalint_972;
+			break;
+		case 27:
+			ivar1 = globalint_973;
+			break;
+		case 28:
+			ivar1 = globalint_974;
+			break;
+		case 29:
+			ivar1 = globalint_975;
+			break;
+		case 30:
+			ivar1 = globalint_976;
+			break;
+		case 31:
+			ivar1 = globalint_977;
+			break;
+		case 32:
+			ivar1 = globalint_978;
+			break;
+		case 33:
+			ivar1 = globalint_979;
+			break;
+		case 34:
+			ivar1 = globalint_980;
+			break;
+		case 35:
+			ivar1 = globalint_981;
+			break;
+		case 36:
+			ivar1 = globalint_982;
+			break;
+		case 37:
+			ivar1 = globalint_983;
+			break;
+		case 38:
+			ivar1 = globalint_984;
+			break;
+		case 39:
+			ivar1 = globalint_985;
+	}
+	return ivar1;
+}

@@ -1,0 +1,23 @@
+int script_704(int arg0) {
+	switch (arg0) {
+		case 1:
+			return globalint_203;
+		case 2:
+			return globalint_204;
+		case 3:
+			return globalint_205;
+		case 4:
+			return globalint_206;
+		case 5:
+			return globalint_207;
+		case 6:
+			return globalint_208;
+		case 7:
+			return globalint_209;
+		case 8:
+			return globalint_210;
+		case 9:
+			return globalint_211;
+	}
+	return 0;
+}

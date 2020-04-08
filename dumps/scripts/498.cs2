@@ -1,0 +1,244 @@
+void script_498(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	ivar6 = 0;
+	ivar7 = 0;
+	ivar8 = 0;
+	ivar9 = 0;
+	ivar10 = 0;
+	ivar11 = 0;
+	ivar12 = 0;
+	ivar13 = -1;
+	if ((((arg0 == globalint_1372) && (arg1 == globalint_1373)) && ((arg2 == globalint_1374) && (arg3 == globalint_1375))) && ((arg4 == globalint_1376) && (arg5 == globalint_1377))) {
+		return;
+	}
+	setScriptCallOnGlobalConfigChange(498, globalint_1372, globalint_1373, globalint_1374, globalint_1375, globalint_1376, globalint_1377, 1372, 1373, 1374, 1375, 1376, 1377, 6, "iiiiiiY", new WidgetPointer(1012,0));
+	if (globalint_1367 != -1) {
+		ivar6 = add(add(add(add(add(globalint_1372, globalint_1373), globalint_1374), globalint_1375), globalint_1376), globalint_1377);
+		if (((boolean)ivar6)) {
+			setWidgetIsHidden(true, new WidgetPointer(1012,14));
+			setWidgetIsHidden(false, new WidgetPointer(1012,29));
+		} else {
+			setWidgetIsHidden(false, new WidgetPointer(1012,14));
+			setWidgetIsHidden(true, new WidgetPointer(1012,29));
+		}
+		if (((boolean)ivar6)) {
+			setWidgetIsHidden(false, new WidgetPointer(1012,15));
+			setWidgetPosition(82, getWidgetActualY(new WidgetPointer(1012,15)), 0, 0, new WidgetPointer(1012,15));
+			if (((boolean)globalint_1372)) {
+				ivar13 = 293;
+			} else if (((boolean)globalint_1373)) {
+				ivar13 = 299;
+			} else if (((boolean)globalint_1374)) {
+				ivar13 = 305;
+			} else if (((boolean)globalint_1375)) {
+				ivar13 = 1044;
+			} else if (((boolean)globalint_1376)) {
+				ivar13 = 1045;
+			} else {
+				ivar13 = 1046;
+			}
+			setWidgetSprite(getOtherCommonData(ivar13, 1153), new WidgetPointer(1012,15));
+			setScriptCallOnMouseOver(499, getOtherCommonData(ivar13, 1149), "i", new WidgetPointer(1012,15));
+			setWidgetIsHidden(true, new WidgetPointer(1012,16));
+			setWidgetIsHidden(true, new WidgetPointer(1012,17));
+			setWidgetIsHidden(true, new WidgetPointer(1012,18));
+			setWidgetIsHidden(true, new WidgetPointer(1012,19));
+		} else if (ivar6 == 2) {
+			setWidgetIsHidden(false, new WidgetPointer(1012,15));
+			setWidgetPosition(50, getWidgetActualY(new WidgetPointer(1012,15)), 0, 0, new WidgetPointer(1012,15));
+			if (((boolean)globalint_1372)) {
+				ivar13 = 293;
+			} else if (((boolean)globalint_1373)) {
+				ivar13 = 299;
+				ivar8 = 1;
+			} else if (((boolean)globalint_1374)) {
+				ivar13 = 305;
+				ivar9 = 1;
+			} else if (((boolean)globalint_1375)) {
+				ivar13 = 1044;
+				ivar10 = 1;
+			} else {
+				ivar13 = 1045;
+				ivar11 = 1;
+			}
+			setWidgetSprite(getOtherCommonData(ivar13, 1153), new WidgetPointer(1012,15));
+			setScriptCallOnMouseOver(499, getOtherCommonData(ivar13, 1149), "i", new WidgetPointer(1012,15));
+			setWidgetIsHidden(false, new WidgetPointer(1012,16));
+			setWidgetPosition(115, getWidgetActualY(new WidgetPointer(1012,16)), 0, 0, new WidgetPointer(1012,16));
+			if (((boolean)globalint_1373) && ((boolean)ivar8)) {
+				ivar13 = 299;
+			} else if (((boolean)globalint_1374) && ((boolean)ivar9)) {
+				ivar13 = 305;
+			} else if (((boolean)globalint_1375) && ((boolean)ivar10)) {
+				ivar13 = 1044;
+			} else if (((boolean)globalint_1376) && ((boolean)ivar11)) {
+				ivar13 = 1045;
+			} else {
+				ivar13 = 1046;
+			}
+			setWidgetSprite(getOtherCommonData(ivar13, 1153), new WidgetPointer(1012,16));
+			setScriptCallOnMouseOver(499, getOtherCommonData(ivar13, 1149), "i", new WidgetPointer(1012,16));
+			setWidgetIsHidden(true, new WidgetPointer(1012,17));
+			setWidgetIsHidden(true, new WidgetPointer(1012,18));
+			setWidgetIsHidden(true, new WidgetPointer(1012,19));
+		} else if (ivar6 == 3) {
+			setWidgetIsHidden(false, new WidgetPointer(1012,15));
+			setWidgetPosition(30, getWidgetActualY(new WidgetPointer(1012,15)), 0, 0, new WidgetPointer(1012,15));
+			if (((boolean)globalint_1372)) {
+				ivar13 = 293;
+			} else if (((boolean)globalint_1373)) {
+				ivar13 = 299;
+				ivar8 = 1;
+			} else if (((boolean)globalint_1374)) {
+				ivar13 = 305;
+				ivar9 = 1;
+			} else {
+				ivar13 = 1044;
+				ivar10 = 1;
+			}
+			setWidgetSprite(getOtherCommonData(ivar13, 1153), new WidgetPointer(1012,15));
+			setScriptCallOnMouseOver(499, getOtherCommonData(ivar13, 1149), "i", new WidgetPointer(1012,15));
+			setWidgetIsHidden(false, new WidgetPointer(1012,16));
+			setWidgetPosition(80, getWidgetActualY(new WidgetPointer(1012,16)), 0, 0, new WidgetPointer(1012,16));
+			if (((boolean)globalint_1373) && ((boolean)ivar8)) {
+				ivar13 = 299;
+			} else if (((boolean)globalint_1374) && ((boolean)ivar9)) {
+				ivar13 = 305;
+				ivar9 = 1;
+			} else if (((boolean)globalint_1375) && ((boolean)ivar10)) {
+				ivar13 = 1044;
+				ivar10 = 1;
+			} else {
+				ivar13 = 1045;
+				ivar11 = 1;
+			}
+			setWidgetSprite(getOtherCommonData(ivar13, 1153), new WidgetPointer(1012,16));
+			setScriptCallOnMouseOver(499, getOtherCommonData(ivar13, 1149), "i", new WidgetPointer(1012,16));
+			setWidgetIsHidden(false, new WidgetPointer(1012,17));
+			setWidgetPosition(130, getWidgetActualY(new WidgetPointer(1012,17)), 0, 0, new WidgetPointer(1012,17));
+			if (((boolean)globalint_1374) && ((boolean)ivar9)) {
+				ivar13 = 305;
+			} else if (((boolean)globalint_1375) && ((boolean)ivar10)) {
+				ivar13 = 1044;
+			} else if (((boolean)globalint_1376) && ((boolean)ivar11)) {
+				ivar13 = 1045;
+			} else {
+				ivar13 = 1046;
+			}
+			setWidgetSprite(getOtherCommonData(ivar13, 1153), new WidgetPointer(1012,17));
+			setScriptCallOnMouseOver(499, getOtherCommonData(ivar13, 1149), "i", new WidgetPointer(1012,17));
+			setWidgetIsHidden(true, new WidgetPointer(1012,18));
+			setWidgetIsHidden(true, new WidgetPointer(1012,19));
+		} else if (ivar6 == 4) {
+			setWidgetIsHidden(false, new WidgetPointer(1012,15));
+			setWidgetPosition(18, getWidgetActualY(new WidgetPointer(1012,15)), 0, 0, new WidgetPointer(1012,15));
+			if (((boolean)globalint_1372)) {
+				ivar13 = 293;
+			} else if (((boolean)globalint_1373)) {
+				ivar13 = 299;
+				ivar8 = 1;
+			} else {
+				ivar13 = 305;
+				ivar9 = 1;
+			}
+			setWidgetSprite(getOtherCommonData(ivar13, 1153), new WidgetPointer(1012,15));
+			setScriptCallOnMouseOver(499, getOtherCommonData(ivar13, 1149), "i", new WidgetPointer(1012,15));
+			setWidgetIsHidden(false, new WidgetPointer(1012,16));
+			setWidgetPosition(61, getWidgetActualY(new WidgetPointer(1012,16)), 0, 0, new WidgetPointer(1012,16));
+			if (((boolean)globalint_1373) && ((boolean)ivar8)) {
+				ivar13 = 299;
+			} else if (((boolean)globalint_1374) && ((boolean)ivar9)) {
+				ivar13 = 305;
+				ivar9 = 1;
+			} else {
+				ivar13 = 1044;
+				ivar10 = 1;
+			}
+			setWidgetSprite(getOtherCommonData(ivar13, 1153), new WidgetPointer(1012,16));
+			setScriptCallOnMouseOver(499, getOtherCommonData(ivar13, 1149), "i", new WidgetPointer(1012,16));
+			setWidgetIsHidden(false, new WidgetPointer(1012,17));
+			setWidgetPosition(104, getWidgetActualY(new WidgetPointer(1012,17)), 0, 0, new WidgetPointer(1012,17));
+			if (((boolean)globalint_1374) && ((boolean)ivar9)) {
+				ivar13 = 305;
+			} else if (((boolean)globalint_1375) && ((boolean)ivar10)) {
+				ivar13 = 1044;
+				ivar10 = 1;
+			} else {
+				ivar13 = 1045;
+				ivar11 = 1;
+			}
+			setWidgetSprite(getOtherCommonData(ivar13, 1153), new WidgetPointer(1012,17));
+			setScriptCallOnMouseOver(499, getOtherCommonData(ivar13, 1149), "i", new WidgetPointer(1012,17));
+			setWidgetIsHidden(false, new WidgetPointer(1012,18));
+			setWidgetPosition(147, getWidgetActualY(new WidgetPointer(1012,18)), 0, 0, new WidgetPointer(1012,18));
+			if (((boolean)globalint_1375) && ((boolean)ivar10)) {
+				ivar13 = 1044;
+			} else if (((boolean)globalint_1376) && ((boolean)ivar11)) {
+				ivar13 = 1045;
+			} else {
+				ivar13 = 1046;
+			}
+			setWidgetSprite(getOtherCommonData(ivar13, 1153), new WidgetPointer(1012,18));
+			setScriptCallOnMouseOver(499, getOtherCommonData(ivar13, 1149), "i", new WidgetPointer(1012,18));
+			setWidgetIsHidden(true, new WidgetPointer(1012,19));
+		} else {
+			setWidgetIsHidden(false, new WidgetPointer(1012,15));
+			setWidgetPosition(11, getWidgetActualY(new WidgetPointer(1012,15)), 0, 0, new WidgetPointer(1012,15));
+			if (((boolean)globalint_1372)) {
+				ivar13 = 293;
+			} else {
+				ivar13 = 299;
+				ivar8 = 1;
+			}
+			setWidgetSprite(getOtherCommonData(ivar13, 1153), new WidgetPointer(1012,15));
+			setScriptCallOnMouseOver(499, getOtherCommonData(ivar13, 1149), "i", new WidgetPointer(1012,15));
+			setWidgetIsHidden(false, new WidgetPointer(1012,16));
+			setWidgetPosition(47, getWidgetActualY(new WidgetPointer(1012,16)), 0, 0, new WidgetPointer(1012,16));
+			if (((boolean)globalint_1373) && ((boolean)ivar8)) {
+				ivar13 = 299;
+			} else {
+				ivar13 = 305;
+				ivar9 = 1;
+			}
+			setWidgetSprite(getOtherCommonData(ivar13, 1153), new WidgetPointer(1012,16));
+			setScriptCallOnMouseOver(499, getOtherCommonData(ivar13, 1149), "i", new WidgetPointer(1012,16));
+			setWidgetIsHidden(false, new WidgetPointer(1012,17));
+			setWidgetPosition(83, getWidgetActualY(new WidgetPointer(1012,17)), 0, 0, new WidgetPointer(1012,17));
+			if (((boolean)globalint_1374) && ((boolean)ivar9)) {
+				ivar13 = 305;
+			} else {
+				ivar13 = 1044;
+				ivar10 = 1;
+			}
+			setWidgetSprite(getOtherCommonData(ivar13, 1153), new WidgetPointer(1012,17));
+			setScriptCallOnMouseOver(499, getOtherCommonData(ivar13, 1149), "i", new WidgetPointer(1012,17));
+			setWidgetIsHidden(false, new WidgetPointer(1012,18));
+			setWidgetPosition(119, getWidgetActualY(new WidgetPointer(1012,18)), 0, 0, new WidgetPointer(1012,18));
+			if (((boolean)globalint_1375) && ((boolean)ivar10)) {
+				ivar13 = 1044;
+			} else {
+				ivar13 = 1045;
+				ivar11 = 1;
+			}
+			setWidgetSprite(getOtherCommonData(ivar13, 1153), new WidgetPointer(1012,18));
+			setScriptCallOnMouseOver(499, getOtherCommonData(ivar13, 1149), "i", new WidgetPointer(1012,18));
+			setWidgetIsHidden(false, new WidgetPointer(1012,19));
+			setWidgetPosition(155, getWidgetActualY(new WidgetPointer(1012,19)), 0, 0, new WidgetPointer(1012,19));
+			if (((boolean)globalint_1376) && ((boolean)ivar11)) {
+				ivar13 = 1045;
+			} else {
+				ivar13 = 1046;
+			}
+			setWidgetSprite(getOtherCommonData(ivar13, 1153), new WidgetPointer(1012,19));
+			setScriptCallOnMouseOver(499, getOtherCommonData(ivar13, 1149), "i", new WidgetPointer(1012,19));
+		}
+	}
+	return;
+}

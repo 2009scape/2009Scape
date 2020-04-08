@@ -1,0 +1,7 @@
+void script_4916() {
+	if (citadelConfigsInitialized()) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(1092,319));
+		script_4917();
+	}
+	return;
+}

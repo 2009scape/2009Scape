@@ -1,0 +1,6 @@
+void script_4090(int arg0,int arg1,int arg2) {
+	setScriptCallOnSkillChange(4091, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), "III", new WidgetPointer(arg0));
+	setScriptCallOnAnyWidgetOpenAndClose(4091, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), "III", new WidgetPointer(arg0));
+	script_4092(arg0, arg1, arg2);
+	return;
+}

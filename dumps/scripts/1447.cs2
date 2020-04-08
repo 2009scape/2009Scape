@@ -1,0 +1,31 @@
+void script_1447(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = 0;
+	ivar2 = ((int)cs2method_3408(105, 73, 1617, ivar1));
+	while (ivar2 != -1) {
+		if (ivar1 == arg0) {
+			setWidgetIsHidden(false, new WidgetPointer(ivar2));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(ivar2));
+		}
+		ivar1 = add(ivar1, 1);
+		ivar2 = ((int)cs2method_3408(105, 73, 1617, ivar1));
+	}
+	if (arg0 > 0) {
+		setScriptCallOnClickContextMenu(1446, subtract(arg0, 1), "i", new WidgetPointer(767,64));
+		cs2method2103(0, new WidgetPointer(767,64));
+	} else {
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(767,64));
+		cs2method2103(200, new WidgetPointer(767,64));
+	}
+	if (arg0 < subtract(ivar1, 1)) {
+		setScriptCallOnClickContextMenu(1446, add(arg0, 1), "i", new WidgetPointer(767,63));
+		cs2method2103(0, new WidgetPointer(767,63));
+	} else {
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(767,63));
+		cs2method2103(200, new WidgetPointer(767,63));
+	}
+	setWidgetText(new WidgetPointer(767,62), "Page " + intToStr(add(arg0, 1)) + " of " + intToStr(ivar1));
+	return;
+}

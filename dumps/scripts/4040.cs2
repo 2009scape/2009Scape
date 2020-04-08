@@ -1,0 +1,4 @@
+void script_4040() {
+	script_4041();
+	return;
+}

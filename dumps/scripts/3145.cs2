@@ -1,0 +1,14 @@
+void script_3145(int arg0,int arg1,int arg2,int arg3) {
+	setWidgetIsHidden(true, new WidgetPointer(910,65));
+	setWidgetIsHidden(true, new WidgetPointer(910,66));
+	if (setWidgetRegister(new WidgetPointer(arg1), arg2)) {
+		if (getWidgetSpriteId() == 1542) {
+			setWidgetSprite(1541);
+		} else {
+			if (getWidgetSpriteId() == 1546) {
+				setWidgetSprite(1545);
+			}
+		}
+	}
+	return;
+}

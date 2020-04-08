@@ -1,0 +1,24 @@
+void script_3960(int arg0) {
+	int ivar1;
+	flow_0:
+		ivar1 = getWidgetSpriteId(new WidgetPointer(arg0));
+		SWITCH (ivar1) {
+			case 4122:
+				 GOTO flow_1
+			case 4123:
+				 GOTO flow_2
+			case 4124:
+				 GOTO flow_3
+		}
+		return;
+	flow_1:
+		setWidgetSprite(4117, new WidgetPointer(arg0));
+		GOTO	flow_4
+	flow_2:
+		setWidgetSprite(4118, new WidgetPointer(arg0));
+		GOTO	flow_4
+	flow_3:
+		setWidgetSprite(4119, new WidgetPointer(arg0));
+	flow_4:
+		return;
+}

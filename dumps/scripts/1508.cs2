@@ -1,0 +1,9 @@
+void script_1508(int arg0,int arg1) {
+	if (arg0 != 1) {
+		return;
+	}
+	cs2method404(3, arg1);
+	globalint_1018 = arg1;
+	script_1506();
+	return;
+}

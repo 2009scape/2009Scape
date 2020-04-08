@@ -1,0 +1,57 @@
+void script_4690(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	flow_0:
+		ivar2 = 15458492;
+		ivar3 = 0;
+		ivar4 = -1;
+		ivar5 = 0;
+		ivar6 = 0;
+		ivar7 = 0;
+		SWITCH (arg0) {
+			case 36110345:
+				 GOTO flow_1
+			case 36110369:
+				 GOTO flow_2
+			case 36110383:
+				 GOTO flow_3
+			case 36110397:
+				 GOTO flow_4
+		}
+		return;
+	flow_1:
+		ivar3 = globalint_1549;
+		ivar4 = 36110351;
+		ivar6 = globalint_1549;
+		ivar7 = cs2method_3408(105, 105, 3856, 1);
+		GOTO	flow_5
+	flow_2:
+		ivar3 = globalint_1550;
+		ivar4 = 36110377;
+		ivar6 = globalint_1550;
+		ivar7 = cs2method_3408(105, 105, 3856, 2);
+		GOTO	flow_5
+	flow_3:
+		ivar3 = globalint_1551;
+		ivar4 = 36110391;
+		ivar6 = globalint_1551;
+		ivar7 = cs2method_3408(105, 105, 3856, 3);
+		GOTO	flow_5
+	flow_4:
+		ivar3 = globalint_1552;
+		ivar4 = 36110405;
+		ivar6 = globalint_1552;
+		ivar7 = cs2method_3408(105, 105, 3856, 4);
+	flow_5:
+		if (((boolean)ivar6) && (bitconfig_9465 >= ivar7)) {
+			if (((boolean)arg1)) {
+				ivar2 = 16777215;
+			}
+			setWidgetRGB(new Color(ivar2), new WidgetPointer(ivar4));
+		}
+		return;
+}

@@ -1,0 +1,27 @@
+string script_4591(string arg0) {
+	int ivar0;
+	int ivar1;
+	arg0 = lower(strRemoveEntities(arg0));
+	ivar0 = strLength(arg0);
+	ivar1 = 0;
+	arg0 = script_2332(arg0, "_", "\u00a0");
+	arg0 = script_2332(arg0, "-", "\u00a0");
+	arg0 = script_2332(arg0, " ", "\u00a0");
+	while (((boolean)strIndexof(0, arg0, " ")) && (ivar0 > 0)) {
+		arg0 = substr(1, ivar0, arg0);
+		ivar0 = strLength(arg0);
+	}
+	while ((strIndexof(subtract(ivar0, 1), arg0, " ") == subtract(ivar0, 1)) && (ivar0 > 0)) {
+		arg0 = substr(0, subtract(ivar0, 1), arg0);
+		ivar0 = strLength(arg0);
+	}
+	while (((boolean)strIndexof(0, arg0, "\u00a0")) && (ivar0 > 0)) {
+		arg0 = substr(1, ivar0, arg0);
+		ivar0 = strLength(arg0);
+	}
+	while ((strIndexof(subtract(ivar0, 1), arg0, "\u00a0") == subtract(ivar0, 1)) && (ivar0 > 0)) {
+		arg0 = substr(0, subtract(ivar0, 1), arg0);
+		ivar0 = strLength(arg0);
+	}
+	return arg0;
+}

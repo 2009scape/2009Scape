@@ -1,0 +1,29 @@
+void script_2303() {
+	if (((boolean)script_42(globalint_182))) {
+		setWidgetSprite(782, new WidgetPointer(749,2));
+		if (((boolean)bitconfig_6840)) {
+			setWidgetContextMenuOption(1, new WidgetPointer(749,1), "Turn curses off");
+		} else {
+			setWidgetContextMenuOption(1, new WidgetPointer(749,1), "Turn prayers off");
+		}
+	} else if (((boolean)bitconfig_6840)) {
+		setWidgetContextMenuOption(1, new WidgetPointer(749,1), "Turn quick curses on");
+	} else {
+		setWidgetContextMenuOption(1, new WidgetPointer(749,1), "Turn quick prayers on");
+	}
+	setWidgetSprite(1209, new WidgetPointer(749,2));
+	if (getDisplayMode() >= 2) {
+		setWidgetSprite(1207, new WidgetPointer(749,1));
+		setWidgetPosition(25, 1, 0, 0, new WidgetPointer(749,2));
+		setWidgetPosition(25, 1, 0, 0, new WidgetPointer(749,3));
+		setWidgetPosition(3, 15, 0, 0, new WidgetPointer(749,4));
+		setWidgetPosition(31, 7, 0, 0, new WidgetPointer(749,5));
+	} else {
+		setWidgetSprite(1206, new WidgetPointer(749,1));
+		setWidgetPosition(1, 1, 0, 0, new WidgetPointer(749,2));
+		setWidgetPosition(1, 1, 0, 0, new WidgetPointer(749,3));
+		setWidgetPosition(31, 15, 0, 0, new WidgetPointer(749,4));
+		setWidgetPosition(7, 7, 0, 0, new WidgetPointer(749,5));
+	}
+	return;
+}

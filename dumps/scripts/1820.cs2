@@ -1,0 +1,9 @@
+int script_1820(int arg0) {
+	if (standart_config_1149 == -1) {
+		return 0;
+	}
+	if (arg0 != 1) {
+		return 0;
+	}
+	return 1;
+}

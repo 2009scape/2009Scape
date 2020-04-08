@@ -1,0 +1,19 @@
+string script_446(int arg0,int arg1) {
+	string svar0;
+	string svar1;
+	string svar2;
+	svar0 = "";
+	svar1 = "";
+	svar2 = "";
+	if (itemIsStackable(arg1)) {
+		svar2 = concat(svar2, "<col=ff981f>" + getItemName(arg1) + "<col=ffffff>" + " x " + "<col=fff000>" + intToStr(arg0) + "<br>");
+	} else if (arg0 < 100000) {
+		svar0 = script_46(arg0, ",");
+		svar2 = concat(svar2, "<col=ff981f>" + getItemName(arg1) + "<col=ffffff>" + " x " + "<col=fff000>" + svar0 + "<br>");
+	} else {
+		svar0 = script_46(arg0, ",");
+		svar1 = script_46(divide(arg0, 1000), ",");
+		svar2 = concat(svar2, "<col=ff981f>" + getItemName(arg1) + "<col=ffffff>" + " x " + "<col=ffffff>" + svar1 + "K (" + svar0 + ")" + "<br>");
+	}
+	return svar2;
+}

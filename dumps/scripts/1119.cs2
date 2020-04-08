@@ -1,0 +1,92 @@
+int script_1119() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	ivar0 = cs2method_3408(105, 74, 2162, bitconfig_357);
+	ivar1 = 0;
+	globalarray_0 = new int[4];
+	switch (bitconfig_357) {
+		case 0:
+			ivar1 = bitconfig_5822;
+			globalarray_0[0] = bitconfig_6459;
+			globalarray_0[1] = bitconfig_6460;
+			globalarray_0[2] = bitconfig_6461;
+			globalarray_0[3] = bitconfig_6462;
+			break;
+		case 1:
+			ivar1 = bitconfig_5823;
+			globalarray_0[0] = bitconfig_6466;
+			globalarray_0[1] = 0;
+			globalarray_0[2] = 0;
+			globalarray_0[3] = bitconfig_6467;
+			break;
+		case 2:
+			ivar1 = bitconfig_5824;
+			globalarray_0[0] = bitconfig_6463;
+			globalarray_0[1] = 0;
+			globalarray_0[2] = bitconfig_6464;
+			globalarray_0[3] = bitconfig_6465;
+			break;
+		case 3:
+			ivar1 = bitconfig_7347;
+			globalarray_0[0] = bitconfig_7348;
+			globalarray_0[1] = bitconfig_7349;
+			globalarray_0[2] = bitconfig_7350;
+			globalarray_0[3] = bitconfig_7351;
+	}
+	ivar2 = cs2method_3408(105, 103, getOtherCommonData(ivar0, 662), ivar1);
+	ivar3 = getOtherCommonData(ivar0, 654);
+	ivar4 = getOtherCommonData(ivar0, 655);
+	ivar5 = getCommonDefinitionSize(ivar2);
+	ivar6 = 0;
+	ivar7 = 0;
+	ivar8 = -1;
+	ivar9 = 0;
+	ivar10 = 0;
+	ivar11 = 0;
+	ivar12 = -1;
+	ivar13 = -1;
+	while (ivar7 < ivar5) {
+		ivar8 = cs2method_3408(105, 103, ivar2, ivar7);
+		if (ivar8 != -1) {
+			ivar6 = getCommonDefinitionSize(ivar8);
+			ivar9 = 0;
+			ivar11 = 0;
+			while (ivar9 < ivar6) {
+				ivar12 = ((int)cs2method_3408(105, 73, ivar8, ivar11));
+				if (ivar12 != -1) {
+					ivar9 = add(ivar9, 1);
+					ivar13 = cs2method_3408(73, 105, 727, ivar12);
+					if ((ivar13 == -1) || (((boolean)globalarray_0[ivar13]) && (isMember() || ((boolean)cs2method_3408(73, 105, 743, ivar12))))) {
+						ivar10 = add(ivar10, 1);
+						ivar4 = add(ivar4, add(getOtherCommonData(ivar0, 657), getOtherCommonData(ivar0, 658)));
+						if (((boolean)mod(ivar10, getOtherCommonData(ivar0, 660)))) {
+							ivar3 = add(ivar3, add(getOtherCommonData(ivar0, 656), getOtherCommonData(ivar0, 659)));
+							ivar4 = getOtherCommonData(ivar0, 655);
+						}
+					}
+				}
+				ivar11 = add(ivar11, 1);
+				if (ivar11 > 997) {
+					return 1;
+				}
+			}
+		}
+		ivar7 = add(ivar7, 1);
+	}
+	if (add(ivar3, getOtherCommonData(ivar0, 656)) >= 229) {
+		return 1;
+	}
+	return 0;
+}

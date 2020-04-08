@@ -1,0 +1,55 @@
+void script_5059(int arg0,int arg1,int arg2) {
+	int ivar3;
+	ivar3 = multiply(arg1, 12);
+	if (((boolean)arg2)) {
+		if (setWidgetRegister(new WidgetPointer(arg0), add(ivar3, 2))) {
+			setWidgetSprite(7555);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(ivar3, 3))) {
+			setWidgetSprite(7554);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(ivar3, 4))) {
+			setWidgetSprite(7556);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), ivar3)) {
+			setScriptCallOnMouseEntered(-1, "");
+			setScriptCallOnMouseExit(-1, "");
+		}
+		if (isWidgetHidden(new WidgetPointer(1111,21))) {
+			script_5063(arg0, arg1, 0);
+			if (setWidgetRegister(new WidgetPointer(arg0), add(ivar3, 1))) {
+				setScriptCallOnMouseEntered(5061, new WidgetPointer(-32768,3), arg1, 1, 0, "Ii11");
+				setScriptCallOnMouseExit(5061, new WidgetPointer(-32768,3), arg1, 0, 0, "Ii11");
+			}
+		} else {
+			if (setWidgetRegister(new WidgetPointer(arg0), add(ivar3, 5))) {
+				setWidgetSprite(7555);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg0), add(ivar3, 6))) {
+				setWidgetSprite(7554);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg0), add(ivar3, 7))) {
+				setWidgetSprite(7556);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg0), add(ivar3, 10))) {
+				setWidgetSprite(7408);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg0), add(ivar3, 1))) {
+				setScriptCallOnMouseEntered(-1, "");
+				setScriptCallOnMouseExit(-1, "");
+			}
+		}
+	} else {
+		script_5062(arg0, arg1, 0);
+		script_5063(arg0, arg1, 0);
+		if (setWidgetRegister(new WidgetPointer(arg0), ivar3)) {
+			setScriptCallOnMouseEntered(5060, new WidgetPointer(-32768,3), arg1, 1, "Ii1");
+			setScriptCallOnMouseExit(5060, new WidgetPointer(-32768,3), arg1, 0, "Ii1");
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(ivar3, 1))) {
+			setScriptCallOnMouseEntered(5061, new WidgetPointer(-32768,3), arg1, 1, 1, "Ii11");
+			setScriptCallOnMouseExit(5061, new WidgetPointer(-32768,3), arg1, 0, 1, "Ii11");
+		}
+	}
+	return;
+}

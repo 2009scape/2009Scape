@@ -1,0 +1,6 @@
+void script_2607(int arg0) {
+	if (setWidgetRegister(new WidgetPointer(88,22), arg0)) {
+		setWidgetAnimation(-1);
+	}
+	return;
+}

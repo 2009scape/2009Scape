@@ -1,0 +1,105 @@
+void script_1077(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	flow_0:
+		ivar1 = arg0;
+		if (arg0 == 105) {
+			if (bitconfig_7774 != 0) {
+				arg0 = 1021;
+			} else {
+				if (((boolean)standart_config_394)) {
+					arg0 = 561;
+				}
+			}
+		}
+		cs2method5058(arg0);
+		ivar2 = 0;
+		ivar3 = cs2method5066(arg0);
+		ivar4 = -1;
+		while ((ivar2 < ivar3) && (ivar2 < 10)) {
+			switch (cs2method5067(arg0, ivar2)) {
+				case 0:
+					script_1078(ivar2);
+					break;
+				case 1:
+					script_1079(ivar2);
+					break;
+				case 10:
+					script_1079(ivar2);
+					break;
+				case 2:
+					script_1078(ivar2);
+			}
+			ivar2 = add(ivar2, 1);
+		}
+		IF (((boolean)globalint_126) || (globalint_126 == 4)) 
+			GOTO	flow_15
+		GOTO	flow_16
+	flow_15:
+		cs2method5059();
+		GOTO	flow_36
+	flow_16:
+		IF (((boolean)globalint_126)) 
+			GOTO	flow_17
+		GOTO	flow_23
+	flow_17:
+		ivar4 = script_1090(globalstring_27);
+		if (((boolean)ivar4)) {
+			cs2method5060(strRemoveEntities(globalstring_27));
+			script_1089();
+		} else if (ivar4 == -1) {
+			messageType0("Sorry, this user is not on your Friends List.");
+		} else {
+			messageType0("Sorry, your friend is no longer playing RuneScape.");
+		}
+		GOTO	flow_36
+	flow_23:
+		IF (globalint_126 == 5) 
+			GOTO	flow_24
+		GOTO	flow_25
+	flow_24:
+		cs2method5060(strRemoveEntities(globalstring_27));
+		script_1089();
+		GOTO	flow_36
+	flow_25:
+		IF ((globalint_126 == 3) || (globalint_126 == 7)) 
+			GOTO	flow_26
+		GOTO	flow_27
+	flow_26:
+		cs2method5060(strRemoveEntities(globalstring_27));
+		script_1089();
+		GOTO	flow_36
+	flow_27:
+		IF ((globalint_126 == 2) || (globalint_126 == 6)) 
+			GOTO	flow_28
+		GOTO	flow_29
+	flow_28:
+		cs2method5061();
+		GOTO	flow_36
+	flow_29:
+		IF ((globalint_126 == 8) || (globalint_126 == 9)) 
+			GOTO	flow_30
+		GOTO	flow_33
+	flow_30:
+		if (cs2method3751()) {
+			cs2method5074();
+		}
+		GOTO	flow_36
+	flow_33:
+		IF (globalint_126 == 10) 
+			GOTO	flow_34
+		IF ((globalint_126 == 11) && cs2method3750()) 
+			GOTO	flow_35
+		GOTO	flow_36
+	flow_34:
+	flow_35:
+		cs2method5075();
+	flow_36:
+		globalint_130 = ivar1;
+		globalint_131 = globalint_126;
+		globalstring_28 = globalstring_27;
+		script_1054();
+		return;
+}

@@ -1,0 +1,9 @@
+void script_2818() {
+	if (globalint_1065 != -1) {
+		script_2819();
+		setScriptCallOnGlobalConfigChange(-1, "", new WidgetPointer(89,0));
+	} else {
+		setScriptCallOnGlobalConfigChange(2818, 1065, 1, "Y", new WidgetPointer(89,0));
+	}
+	return;
+}

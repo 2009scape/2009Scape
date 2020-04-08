@@ -1,0 +1,22 @@
+void script_4028(int arg0,int arg1) {
+	if (((boolean)arg0)) {
+		if (((boolean)arg1)) {
+			setWidgetSprite(4302, new WidgetPointer(917,106));
+			setScriptCallOnMouseEntered(4029, 0, "i", new WidgetPointer(917,106));
+			setScriptCallOnMouseExit(4029, 1, "i", new WidgetPointer(917,106));
+		} else {
+			setWidgetSprite(4300, new WidgetPointer(917,106));
+			setScriptCallOnMouseEntered(4030, 0, "i", new WidgetPointer(917,106));
+			setScriptCallOnMouseExit(4030, 1, "i", new WidgetPointer(917,106));
+		}
+	} else if (((boolean)arg1)) {
+		setWidgetSprite(4299, new WidgetPointer(917,114));
+		setScriptCallOnMouseEntered(4031, 0, "i", new WidgetPointer(917,114));
+		setScriptCallOnMouseExit(4031, 1, "i", new WidgetPointer(917,114));
+	} else {
+		setWidgetSprite(4297, new WidgetPointer(917,114));
+		setScriptCallOnMouseEntered(4032, 0, "i", new WidgetPointer(917,114));
+		setScriptCallOnMouseExit(4032, 1, "i", new WidgetPointer(917,114));
+	}
+	return;
+}

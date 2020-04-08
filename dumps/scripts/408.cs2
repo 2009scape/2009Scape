@@ -1,0 +1,22 @@
+void script_408(int arg0) {
+	if (globalint_1363 == arg0) {
+		return;
+	}
+	setScriptCallOnGlobalConfigChange(408, globalint_1363, 1363, 1, "iY", new WidgetPointer(1013,1));
+	globalint_1389 = 0;
+	if (globalint_1363 == bitconfig_7510) {
+		setWidgetIsHidden(false, new WidgetPointer(1010,33));
+		setWidgetIsHidden(true, new WidgetPointer(1010,32));
+		setWidgetIsHidden(true, new WidgetPointer(1010,24));
+		setWidgetText(new WidgetPointer(1013,26), "Your Turn");
+		playSoundEffect2False(3439, 1, 0, 255);
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1010,33));
+		setWidgetIsHidden(true, new WidgetPointer(1010,24));
+		setWidgetText(new WidgetPointer(1013,26), "Opponent's Turn");
+		if (isWidgetHidden(new WidgetPointer(1010,7))) {
+			setWidgetIsHidden(false, new WidgetPointer(1010,32));
+		}
+	}
+	return;
+}

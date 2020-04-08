@@ -1,0 +1,120 @@
+void script_358(int arg0) {
+	int ivar1;
+	int ivar2;
+	flow_0:
+		if (arg0 != 1) {
+			return;
+		}
+		playSoundEffect(9830, 1, 0);
+		bitconfig_8092 = mod(add(bitconfig_8092, 1), 8);
+		ivar1 = 0;
+		ivar2 = script_361(globalint_1010, 3);
+		if (ivar2 == -1) {
+			ivar2 = 1076;
+		}
+		SWITCH (mod(add(bitconfig_8091, bitconfig_8092), 8)) {
+			case 1:
+				 GOTO flow_5
+			case 2:
+				 GOTO flow_6
+			case 3:
+				 GOTO flow_7
+			case 4:
+				 GOTO flow_8
+			case 5:
+				 GOTO flow_9
+			case 6:
+				 GOTO flow_10
+			case 7:
+				 GOTO flow_11
+		}
+		ivar1 = getOtherCommonData(ivar2, 1187);
+		globalint_1016 = ivar1;
+		cs2method404(1, ivar1);
+		ivar1 = getOtherCommonData(ivar2, 1188);
+		globalint_1017 = ivar1;
+		cs2method404(2, ivar1);
+		ivar1 = getOtherCommonData(ivar2, 1189);
+		globalint_1018 = ivar1;
+		cs2method404(3, ivar1);
+		GOTO	flow_12
+	flow_5:
+		ivar1 = getOtherCommonData(ivar2, 1190);
+		globalint_1016 = ivar1;
+		cs2method404(1, ivar1);
+		ivar1 = getOtherCommonData(ivar2, 1191);
+		globalint_1017 = ivar1;
+		cs2method404(2, ivar1);
+		ivar1 = getOtherCommonData(ivar2, 1192);
+		globalint_1018 = ivar1;
+		cs2method404(3, ivar1);
+		GOTO	flow_12
+	flow_6:
+		ivar1 = getOtherCommonData(ivar2, 1193);
+		globalint_1016 = ivar1;
+		cs2method404(1, ivar1);
+		ivar1 = getOtherCommonData(ivar2, 1194);
+		globalint_1017 = ivar1;
+		cs2method404(2, ivar1);
+		ivar1 = getOtherCommonData(ivar2, 1195);
+		globalint_1018 = ivar1;
+		cs2method404(3, ivar1);
+		GOTO	flow_12
+	flow_7:
+		ivar1 = getOtherCommonData(ivar2, 1196);
+		globalint_1016 = ivar1;
+		cs2method404(1, ivar1);
+		ivar1 = getOtherCommonData(ivar2, 1197);
+		globalint_1017 = ivar1;
+		cs2method404(2, ivar1);
+		ivar1 = getOtherCommonData(ivar2, 1198);
+		globalint_1018 = ivar1;
+		cs2method404(3, ivar1);
+		GOTO	flow_12
+	flow_8:
+		ivar1 = getOtherCommonData(ivar2, 1199);
+		globalint_1016 = ivar1;
+		cs2method404(1, ivar1);
+		ivar1 = getOtherCommonData(ivar2, 1200);
+		globalint_1017 = ivar1;
+		cs2method404(2, ivar1);
+		ivar1 = getOtherCommonData(ivar2, 1201);
+		globalint_1018 = ivar1;
+		cs2method404(3, ivar1);
+		GOTO	flow_12
+	flow_9:
+		ivar1 = getOtherCommonData(ivar2, 1202);
+		globalint_1016 = ivar1;
+		cs2method404(1, ivar1);
+		ivar1 = getOtherCommonData(ivar2, 1203);
+		globalint_1017 = ivar1;
+		cs2method404(2, ivar1);
+		ivar1 = getOtherCommonData(ivar2, 1204);
+		globalint_1018 = ivar1;
+		cs2method404(3, ivar1);
+		GOTO	flow_12
+	flow_10:
+		ivar1 = getOtherCommonData(ivar2, 1205);
+		globalint_1016 = ivar1;
+		cs2method404(1, ivar1);
+		ivar1 = getOtherCommonData(ivar2, 1206);
+		globalint_1017 = ivar1;
+		cs2method404(2, ivar1);
+		ivar1 = getOtherCommonData(ivar2, 1207);
+		globalint_1018 = ivar1;
+		cs2method404(3, ivar1);
+		GOTO	flow_12
+	flow_11:
+		ivar1 = getOtherCommonData(ivar2, 1208);
+		globalint_1016 = ivar1;
+		cs2method404(1, ivar1);
+		ivar1 = getOtherCommonData(ivar2, 1209);
+		globalint_1017 = ivar1;
+		cs2method404(2, ivar1);
+		ivar1 = getOtherCommonData(ivar2, 1210);
+		globalint_1018 = ivar1;
+		cs2method404(3, ivar1);
+	flow_12:
+		script_391();
+		return;
+}

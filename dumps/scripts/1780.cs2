@@ -1,0 +1,11 @@
+void script_1780() {
+	if (((boolean)globalint_255)) {
+		setWidgetSprite(699, new WidgetPointer(791,137));
+		cs2method2103(0, new WidgetPointer(791,136));
+	} else {
+		setWidgetSprite(698, new WidgetPointer(791,137));
+		cs2method2103(225, new WidgetPointer(791,136));
+	}
+	script_1784();
+	return;
+}

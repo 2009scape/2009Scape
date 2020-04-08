@@ -1,0 +1,3 @@
+int script_1851() {
+	return globalint_996;
+}

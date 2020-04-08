@@ -1,0 +1,7 @@
+void script_5093(int arg0,int arg1) {
+	globalint_995 = max(subtract(globalint_995, 1), 0);
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		setWidgetText(script_5094());
+	}
+	return;
+}

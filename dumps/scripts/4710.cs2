@@ -1,0 +1,36 @@
+cs2func_script_4710_struct(2,0,0) script_4710(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,int arg11) {
+	int ivar12;
+	int ivar13;
+	deleteAllExtraChilds(new WidgetPointer(arg2));
+	createExtraChild(new WidgetPointer(arg2), 5, 0);
+	setWidgetPosition(0, 0, 0, 0);
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg2)), getWidgetActualHeight(new WidgetPointer(arg2)), 0, 0);
+	setWidgetSprite(arg6);
+	cs2method1107(1);
+	createExtraChild(new WidgetPointer(arg2), 3, getExtraChildGap(new WidgetPointer(arg2)));
+	setWidgetPosition(0, 0, 0, 0);
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg2)), getWidgetActualHeight(new WidgetPointer(arg2)), 0, 0);
+	setWidgetRGB(new Color(0, 0, 0));
+	ivar12 = 1;
+	createExtraChild(new WidgetPointer(arg2), 5, ivar12);
+	setWidgetPosition(subtract(getWidgetActualWidth(new WidgetPointer(arg2)), 16), 0, 0, 0);
+	setWidgetSize(16, getWidgetActualHeight(new WidgetPointer(arg2)), 0, 0);
+	setWidgetSprite(arg7);
+	cs2method1107(0);
+	setScriptCallOnMouseEntered(1351, new WidgetPointer(arg2), ivar12, arg8, "Iid");
+	setScriptCallOnMouseExit(1352, new WidgetPointer(arg2), ivar12, arg7, "Iid");
+	ivar13 = getExtraChildGap(new WidgetPointer(arg2));
+	setScriptCallOnMousePressed(4711, new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), ivar12, "IIIIi");
+	createExtraChild(new WidgetPointer(arg2), 4, ivar13);
+	setWidgetText(cs2method_3408(105, 115, arg0, arg1));
+	setWidgetPosition(5, 0, 0, 0);
+	setWidgetSize(subtract(getWidgetActualWidth(new WidgetPointer(arg2)), 22), getWidgetActualHeight(new WidgetPointer(arg2)), 0, 0);
+	setWidgetUnknownBoolean(false);
+	setWidgetFont(arg11);
+	setWidgetTextAlignment(0, 1, 0);
+	setWidgetRGB(new Color(arg9));
+	setScriptCallOnMouseExit(1354, new WidgetPointer(arg2), ivar13, arg9, "Iii");
+	setScriptCallOnMouseEntered(1353, new WidgetPointer(arg2), ivar13, arg10, "Iii");
+	setScriptCallOnMousePressed(4711, new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), ivar12, "IIIIi");
+	return newstruct cs2func_script_4710_struct(ivar12, ivar13);
+}

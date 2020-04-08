@@ -1,0 +1,5 @@
+void script_4684() {
+	cs2method2005(0, new WidgetPointer(744,116));
+	closeInterface(48758900);
+	return;
+}

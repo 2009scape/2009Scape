@@ -1,0 +1,166 @@
+void script_4295() {
+	int ivar0;
+	int ivar1;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	int stack_dump3;
+	ivar0 = 0;
+	ivar1 = 0;
+	if (cs2method3701()) {
+		if (cs2method3703()) {
+			ivar1 = 1;
+		} else {
+			if (cs2method3703()) {
+				ivar1 = 0;
+			}
+		}
+		ivar0 = clanconfig_0;
+		ivar0 = add(divide(ivar0, 10), 72);
+		script_4501(71827692, cs2method_3408(105, 115, 3711, ivar0));
+		script_4501(71827836, cs2method_3408(105, 115, 3797, globalint_1516));
+		script_4501(71827660, cs2method_3408(105, 115, 4255, clanbitconfig_292));
+		script_4329(71827772);
+		if (((boolean)clanbitconfig_6)) {
+			script_4501(71827743, "Not set");
+		} else {
+			script_4501(71827743, cs2method_3408(105, 115, 3700, clanbitconfig_6));
+		}
+		if (((boolean)clanbitconfig_5)) {
+			if (((boolean)script_4292())) {
+				setWidgetIsHidden(false, new WidgetPointer(1096,255));
+				setWidgetIsHidden(true, new WidgetPointer(1096,257));
+				setWidgetIsHidden(true, new WidgetPointer(1096,256));
+				setWidgetIsHidden(true, new WidgetPointer(1096,258));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(1096,255));
+				setWidgetIsHidden(true, new WidgetPointer(1096,257));
+				setWidgetIsHidden(false, new WidgetPointer(1096,256));
+				setWidgetIsHidden(true, new WidgetPointer(1096,258));
+			}
+		} else if (((boolean)script_4292())) {
+			setWidgetIsHidden(true, new WidgetPointer(1096,255));
+			setWidgetIsHidden(false, new WidgetPointer(1096,257));
+			setWidgetIsHidden(true, new WidgetPointer(1096,256));
+			setWidgetIsHidden(true, new WidgetPointer(1096,258));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,255));
+			setWidgetIsHidden(true, new WidgetPointer(1096,257));
+			setWidgetIsHidden(true, new WidgetPointer(1096,256));
+			setWidgetIsHidden(false, new WidgetPointer(1096,258));
+		}
+		if (((boolean)clanbitconfig_4)) {
+			if (((boolean)script_4292())) {
+				setWidgetIsHidden(false, new WidgetPointer(1096,251));
+				setWidgetIsHidden(true, new WidgetPointer(1096,253));
+				setWidgetIsHidden(true, new WidgetPointer(1096,252));
+				setWidgetIsHidden(true, new WidgetPointer(1096,254));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(1096,251));
+				setWidgetIsHidden(true, new WidgetPointer(1096,253));
+				setWidgetIsHidden(false, new WidgetPointer(1096,252));
+				setWidgetIsHidden(true, new WidgetPointer(1096,254));
+			}
+		} else if (((boolean)script_4292())) {
+			setWidgetIsHidden(true, new WidgetPointer(1096,251));
+			setWidgetIsHidden(false, new WidgetPointer(1096,253));
+			setWidgetIsHidden(true, new WidgetPointer(1096,252));
+			setWidgetIsHidden(true, new WidgetPointer(1096,254));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,251));
+			setWidgetIsHidden(true, new WidgetPointer(1096,253));
+			setWidgetIsHidden(true, new WidgetPointer(1096,252));
+			setWidgetIsHidden(false, new WidgetPointer(1096,254));
+		}
+		if (cs2method3703()) {
+			if (((boolean)script_4292())) {
+				setWidgetIsHidden(false, new WidgetPointer(1096,794));
+				setWidgetIsHidden(true, new WidgetPointer(1096,749));
+				setWidgetIsHidden(true, new WidgetPointer(1096,748));
+				setWidgetIsHidden(true, new WidgetPointer(1096,750));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(1096,794));
+				setWidgetIsHidden(true, new WidgetPointer(1096,749));
+				setWidgetIsHidden(false, new WidgetPointer(1096,748));
+				setWidgetIsHidden(true, new WidgetPointer(1096,750));
+			}
+		} else if (((boolean)script_4292())) {
+			setWidgetIsHidden(true, new WidgetPointer(1096,794));
+			setWidgetIsHidden(false, new WidgetPointer(1096,749));
+			setWidgetIsHidden(true, new WidgetPointer(1096,748));
+			setWidgetIsHidden(true, new WidgetPointer(1096,750));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,794));
+			setWidgetIsHidden(true, new WidgetPointer(1096,749));
+			setWidgetIsHidden(true, new WidgetPointer(1096,748));
+			setWidgetIsHidden(false, new WidgetPointer(1096,750));
+		}
+		if (cs2method3704() == -1) {
+			if (((boolean)script_4292())) {
+				setWidgetIsHidden(false, new WidgetPointer(1096,798));
+				setWidgetIsHidden(true, new WidgetPointer(1096,796));
+				setWidgetIsHidden(true, new WidgetPointer(1096,795));
+				setWidgetIsHidden(true, new WidgetPointer(1096,797));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(1096,798));
+				setWidgetIsHidden(true, new WidgetPointer(1096,796));
+				setWidgetIsHidden(false, new WidgetPointer(1096,795));
+				setWidgetIsHidden(true, new WidgetPointer(1096,797));
+			}
+		} else if (((boolean)script_4292())) {
+			setWidgetIsHidden(true, new WidgetPointer(1096,798));
+			setWidgetIsHidden(false, new WidgetPointer(1096,796));
+			setWidgetIsHidden(true, new WidgetPointer(1096,795));
+			setWidgetIsHidden(true, new WidgetPointer(1096,797));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,798));
+			setWidgetIsHidden(true, new WidgetPointer(1096,796));
+			setWidgetIsHidden(true, new WidgetPointer(1096,795));
+			setWidgetIsHidden(false, new WidgetPointer(1096,797));
+		}
+		if (citadelConfigsInitialized()) {
+			stack_dump0 = 71827675;
+			stack_dump1 = 105;
+			stack_dump2 = 115;
+			stack_dump3 = 4514;
+			/* 
+				mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:106
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+					at tests.Main.main(Main.java:45)
+				
+			 */
+		}
+		script_4501(71827675, "N/A");
+		script_4501(71827660, "N/A");
+		if (((boolean)script_4292())) {
+			setWidgetIsHidden(true, new WidgetPointer(1096,243));
+			setWidgetIsHidden(true, new WidgetPointer(1096,293));
+		} else {
+			setWidgetIsHidden(false, new WidgetPointer(1096,243));
+			setWidgetIsHidden(false, new WidgetPointer(1096,293));
+		}
+		script_4301();
+		if (((boolean)script_4292())) {
+			setWidgetIsHidden(true, new WidgetPointer(1096,279));
+			setWidgetIsHidden(true, new WidgetPointer(1096,265));
+			setWidgetIsHidden(true, new WidgetPointer(1096,138));
+			setWidgetIsHidden(true, new WidgetPointer(1096,127));
+			setWidgetIsHidden(true, new WidgetPointer(1096,170));
+			setWidgetIsHidden(true, new WidgetPointer(1096,374));
+			setWidgetIsHidden(true, new WidgetPointer(1096,311));
+		} else {
+			setWidgetIsHidden(false, new WidgetPointer(1096,279));
+			setWidgetIsHidden(false, new WidgetPointer(1096,265));
+			setWidgetIsHidden(false, new WidgetPointer(1096,138));
+			setWidgetIsHidden(false, new WidgetPointer(1096,127));
+			setWidgetIsHidden(false, new WidgetPointer(1096,170));
+			setWidgetIsHidden(false, new WidgetPointer(1096,374));
+			setWidgetIsHidden(false, new WidgetPointer(1096,311));
+		}
+	}
+	script_4310();
+	return;
+}

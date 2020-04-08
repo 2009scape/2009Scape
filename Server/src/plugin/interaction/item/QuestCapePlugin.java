@@ -14,7 +14,7 @@ import org.crandor.plugin.Plugin;
  */
 @InitializablePlugin
 public final class QuestCapePlugin extends OptionHandler {
-	final int MAX_QP = 63;
+	final int MAX_QP = 67;
 
 	@Override
 	public Plugin<Object> newInstance(Object arg) throws Throwable {
@@ -25,7 +25,7 @@ public final class QuestCapePlugin extends OptionHandler {
 
 	@Override
 	public boolean handle(Player player, Node node, String option) {
-		if (!(player.getQuestRepository().getPoints() == MAX_QP)) {
+		if (!(player.getQuestRepository().getPoints() >= MAX_QP)) {
 			player.getPacketDispatch().sendMessage("You cannot wear this " + node.getName().toLowerCase() + " yet.");
 			return true;
 		}

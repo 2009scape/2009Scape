@@ -1,0 +1,27 @@
+void script_3284(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	ivar4 = add(61, multiply(10, subtract(arg0, 1)));
+	playSoundEffect(8809, 1, 0);
+	setWidgetPosition(0, ivar4, 0, 0, new WidgetPointer(arg1));
+	setWidgetText(new WidgetPointer(arg2), intToStr(arg0));
+	switch (cs2method_3408(105, 105, 1264, arg0)) {
+		case 1:
+			setWidgetText(new WidgetPointer(arg3), "Frozen");
+			break;
+		case 2:
+			setWidgetText(new WidgetPointer(arg3), "Abandoned");
+			break;
+		case 3:
+			setWidgetText(new WidgetPointer(arg3), "Furnished");
+			break;
+		case 4:
+			setWidgetText(new WidgetPointer(arg3), "Occult");
+			break;
+		case 5:
+			setWidgetText(new WidgetPointer(arg3), "Warped");
+			break;
+		default:
+			setWidgetText(new WidgetPointer(arg3), "Dungeon");
+	}
+	return;
+}

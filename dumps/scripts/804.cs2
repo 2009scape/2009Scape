@@ -1,0 +1,23 @@
+void script_804() {
+	int ivar0;
+	setWidgetModel(cs2method_3408(105, 109, 1696, bitconfig_5146), new WidgetPointer(575,3));
+	setWidgetModel(cs2method_3408(105, 109, 1696, bitconfig_5147), new WidgetPointer(575,4));
+	setWidgetModel(cs2method_3408(105, 109, 1696, bitconfig_5148), new WidgetPointer(575,5));
+	setWidgetModel(cs2method_3408(105, 109, 1696, bitconfig_5149), new WidgetPointer(575,6));
+	setWidgetModel(cs2method_3408(105, 109, 1696, bitconfig_5150), new WidgetPointer(575,7));
+	setWidgetModel(cs2method_3408(105, 109, 1696, bitconfig_5151), new WidgetPointer(575,8));
+	setWidgetModel(cs2method_3408(105, 109, 1696, bitconfig_5152), new WidgetPointer(575,9));
+	setWidgetModel(cs2method_3408(105, 109, 1696, bitconfig_5153), new WidgetPointer(575,10));
+	setWidgetModel(cs2method_3408(105, 109, 1696, bitconfig_5154), new WidgetPointer(575,11));
+	setWidgetModel(cs2method_3408(105, 109, 1696, bitconfig_5155), new WidgetPointer(575,12));
+	setWidgetModel(cs2method_3408(105, 109, 1696, bitconfig_5156), new WidgetPointer(575,13));
+	setWidgetModel(cs2method_3408(105, 109, 1696, bitconfig_5157), new WidgetPointer(575,14));
+	setWidgetModel(cs2method_3408(105, 109, 1696, bitconfig_5158), new WidgetPointer(575,15));
+	setWidgetModel(cs2method_3408(105, 109, 1696, bitconfig_5159), new WidgetPointer(575,16));
+	ivar0 = 14;
+	while (ivar0 > 0) {
+		script_1421(ivar0);
+		ivar0 = subtract(ivar0, 1);
+	}
+	return;
+}

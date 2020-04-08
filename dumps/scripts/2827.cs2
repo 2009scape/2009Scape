@@ -1,0 +1,20 @@
+void script_2827(string arg0) {
+	int ivar0;
+	ivar0 = 0;
+	ivar0 = multiply(getLineCount(346, 495, arg0), 13);
+	if (ivar0 > 48) {
+		ivar0 = multiply(getLineCount(328, 495, arg0), 13);
+	}
+	if (ivar0 > 48) {
+		setWidgetScrollMax(0, ivar0, new WidgetPointer(178,23));
+		script_31(11665432, 11665431, 792, 789, 790, 791, 773, 788);
+		setWidgetSize(334, 48, 0, 0, new WidgetPointer(178,23));
+		setWidgetSize(16384, ivar0, 2, 0, new WidgetPointer(178,53));
+		setWidgetSize(16384, ivar0, 2, 0, new WidgetPointer(178,54));
+		setWidgetTextAlignment(0, 0, 0, new WidgetPointer(178,55));
+	} else {
+		setWidgetSize(354, 48, 0, 0, new WidgetPointer(178,23));
+		setWidgetTextAlignment(0, 1, 0, new WidgetPointer(178,55));
+	}
+	return;
+}

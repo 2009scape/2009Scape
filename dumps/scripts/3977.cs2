@@ -1,0 +1,266 @@
+void script_3977(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	string svar4;
+	string svar5;
+	int stack_dump0;
+	cs2func_script_3995_struct(2,1,0) structdump_1;
+	script_41(69206152);
+	if (((boolean)arg0) && (standart_config_281 < 1000)) {
+		arg0 = 4094;
+	}
+	if (((boolean)script_3999(arg0))) {
+		return;
+	}
+	ivar1 = -1;
+	svar0 = "";
+	svar1 = "";
+	svar2 = "";
+	ivar2 = -1;
+	ivar3 = -1;
+	ivar1 = cs2method_3408(105, 74, 3483, arg0);
+	ivar4 = add(multiply(subtract(getOtherCommonData(ivar1, 1293), 1), 5), getOtherCommonData(ivar1, 1272));
+	ivar5 = cs2method_3408(105, 74, 3494, ivar4);
+	if (ivar1 != -1) {
+		svar0 = getOtherCommonData(ivar1, 1266);
+		svar1 = getOtherCommonData(ivar1, 1273);
+		if ((arg0 > 419) && (arg0 < 424)) {
+			svar1 = concat(svar1, "<br>" + "<br>" + "Click on the Hints tab above if you wish to see more information on how to complete this Task.");
+		} else {
+			if (arg0 == 419) {
+				svar1 = concat(svar1, "<br>" + "<br>" + "Simply click on Jack to start a conversation - as a new player you will start just nearby.");
+			}
+		}
+		if (getOtherCommonData(ivar1, 1270) != 4094) {
+			svar2 = getOtherCommonData(cs2method_3408(105, 74, 2252, getOtherCommonData(ivar1, 1270)), 951);
+			ivar3 = getOtherCommonData(cs2method_3408(105, 74, 2252, getOtherCommonData(ivar1, 1270)), 952);
+		} else {
+			svar2 = getOtherCommonData(ivar1, 1292);
+			ivar3 = getOtherCommonData(ivar1, 1271);
+		}
+		setWidgetSprite(ivar3, new WidgetPointer(1056,135));
+		setWidgetText(new WidgetPointer(1056,91), svar0);
+		setWidgetText(new WidgetPointer(1056,129), svar1);
+		setWidgetFont(495, new WidgetPointer(1056,129));
+		setWidgetTextAlignment(0, 0, 0, new WidgetPointer(1056,129));
+	}
+	svar3 = "";
+	if (((boolean)stringMethod4107(svar2, "")) && (standart_config_281 == 1000)) {
+		if (bitconfig_8601 < 10) {
+			svar3 = "ten";
+		} else if (bitconfig_8601 < 25) {
+			svar3 = "forty";
+		} else if (bitconfig_8601 < 50) {
+			svar3 = "160";
+		} else if (bitconfig_8601 < 100) {
+			svar3 = "640";
+		} else {
+			svar3 = "2560";
+		}
+		svar2 = "Completing this Task will earn you " + svar3 + " coins.";
+	}
+	setWidgetIsHidden(true, new WidgetPointer(1056,76));
+	setWidgetIsHidden(true, new WidgetPointer(1056,77));
+	setWidgetIsHidden(true, new WidgetPointer(1056,78));
+	setWidgetIsHidden(true, new WidgetPointer(1056,79));
+	setWidgetIsHidden(true, new WidgetPointer(1056,80));
+	setWidgetIsHidden(true, new WidgetPointer(1056,81));
+	setWidgetIsHidden(true, new WidgetPointer(1056,82));
+	setWidgetIsHidden(true, new WidgetPointer(1056,83));
+	setWidgetIsHidden(true, new WidgetPointer(1056,84));
+	setWidgetIsHidden(true, new WidgetPointer(1056,85));
+	setWidgetIsHidden(true, new WidgetPointer(1056,86));
+	setWidgetIsHidden(true, new WidgetPointer(1056,87));
+	ivar6 = 10;
+	ivar7 = 0;
+	ivar8 = 15;
+	ivar9 = 0;
+	svar4 = "";
+	ivar10 = 0;
+	stack_dump0 = arg0;
+	structdump_1 = script_3995(stack_dump0);
+	ivar10 = structdump_1.intpart_1;
+	svar4 = structdump_1.stringpart_0;
+	ivar9 = structdump_1.intpart_0;
+	if ((((boolean)getLanguage()) || (getLanguage() == 3)) || (getLanguage() == 2)) {
+		setWidgetIsHidden(true, new WidgetPointer(1056,121));
+		setWidgetIsHidden(true, new WidgetPointer(1056,141));
+	} else {
+		if (((boolean)getLanguage())) {
+			setWidgetText(new WidgetPointer(1056,120), "    Pin");
+			setWidgetText(new WidgetPointer(1056,140), "     Back");
+		}
+		setWidgetIsHidden(false, new WidgetPointer(1056,121));
+		setWidgetIsHidden(false, new WidgetPointer(1056,141));
+	}
+	setWidgetIsHidden(true, new WidgetPointer(1056,88));
+	if (stringMethod4107(getOtherCommonData(ivar1, 1274), "") != 0) {
+		if (getOtherCommonData(ivar1, 1282) != -1) {
+			ivar7 = arg0;
+		} else {
+			ivar7 = 4094;
+		}
+		ivar6 = script_3978(1, ivar6, 69206092, ivar7, 69206093, 69206139, getOtherCommonData(ivar1, 1274));
+	}
+	if (stringMethod4107(getOtherCommonData(ivar1, 1275), "") != 0) {
+		if (getOtherCommonData(ivar1, 1283) != -1) {
+			ivar7 = arg0;
+		} else {
+			ivar7 = 4094;
+		}
+		ivar6 = script_3978(2, ivar6, 69206094, ivar7, 69206095, 69206139, getOtherCommonData(ivar1, 1275));
+	}
+	if (stringMethod4107(getOtherCommonData(ivar1, 1276), "") != 0) {
+		if (getOtherCommonData(ivar1, 1284) != -1) {
+			ivar7 = arg0;
+		} else {
+			ivar7 = 4094;
+		}
+		ivar6 = script_3978(3, ivar6, 69206096, ivar7, 69206097, 69206139, getOtherCommonData(ivar1, 1276));
+	}
+	if (stringMethod4107(getOtherCommonData(ivar1, 1277), "") != 0) {
+		if (getOtherCommonData(ivar1, 1285) != -1) {
+			ivar7 = arg0;
+		} else {
+			ivar7 = 4094;
+		}
+		ivar6 = script_3978(4, ivar6, 69206098, ivar7, 69206099, 69206139, getOtherCommonData(ivar1, 1277));
+	}
+	if (stringMethod4107(getOtherCommonData(ivar1, 1278), "") != 0) {
+		if (getOtherCommonData(ivar1, 1286) != -1) {
+			ivar7 = arg0;
+		} else {
+			ivar7 = 4094;
+		}
+		ivar6 = script_3978(5, ivar6, 69206100, ivar7, 69206101, 69206139, getOtherCommonData(ivar1, 1278));
+	}
+	if (stringMethod4107(getOtherCommonData(ivar1, 1279), "") != 0) {
+		if (getOtherCommonData(ivar1, 1287) != -1) {
+			ivar7 = arg0;
+		} else {
+			ivar7 = 4094;
+		}
+		ivar6 = script_3978(6, ivar6, 69206102, ivar7, 69206103, 69206139, getOtherCommonData(ivar1, 1279));
+	}
+	ivar6 = max(ivar6, getWidgetActualHeight(new WidgetPointer(1056,123)));
+	setWidgetScrollMax(0, ivar6, new WidgetPointer(1056,123));
+	script_31(69206140, 69206139, 4343, 4340, 4341, 4342, 4337, 4336);
+	if (ivar6 > getWidgetActualHeight(new WidgetPointer(1056,123))) {
+		setWidgetIsHidden(false, new WidgetPointer(1056,124));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1056,124));
+	}
+	setWidgetIsHidden(true, new WidgetPointer(1056,66));
+	setWidgetIsHidden(true, new WidgetPointer(1056,67));
+	setWidgetIsHidden(true, new WidgetPointer(1056,68));
+	setWidgetIsHidden(true, new WidgetPointer(1056,69));
+	setWidgetIsHidden(true, new WidgetPointer(1056,70));
+	setWidgetIsHidden(true, new WidgetPointer(1056,71));
+	setWidgetIsHidden(true, new WidgetPointer(1056,72));
+	setWidgetIsHidden(true, new WidgetPointer(1056,73));
+	ivar6 = script_3978(0, 10, 69206081, 4094, -1, 69206090, svar2);
+	if ((ivar5 != -1) && (ivar5 != 1645)) {
+		ivar6 = script_3978(0, ivar6, 69206082, 4094, -1, 69206090, getOtherCommonData(ivar5, 1273));
+		ivar6 = script_3978(0, ivar6, 69206083, 4094, -1, 69206090, getOtherCommonData(ivar5, 1292));
+		if (stringMethod4107(getOtherCommonData(ivar5, 1274), "") != 0) {
+			ivar6 = script_3978(0, ivar6, 69206084, 4094, -1, 69206090, getOtherCommonData(ivar5, 1274));
+		}
+		if (stringMethod4107(getOtherCommonData(ivar5, 1275), "") != 0) {
+			ivar6 = script_3978(0, ivar6, 69206085, 4094, -1, 69206090, getOtherCommonData(ivar5, 1275));
+		}
+		if (stringMethod4107(getOtherCommonData(ivar5, 1276), "") != 0) {
+			ivar6 = script_3978(0, ivar6, 69206086, 4094, -1, 69206090, getOtherCommonData(ivar5, 1276));
+		}
+		if (stringMethod4107(getOtherCommonData(ivar5, 1277), "") != 0) {
+			ivar6 = script_3978(0, ivar6, 69206087, 4094, -1, 69206090, getOtherCommonData(ivar5, 1277));
+		}
+		if (stringMethod4107(getOtherCommonData(ivar5, 1278), "") != 0) {
+			ivar6 = script_3978(0, ivar6, 69206088, 4094, -1, 69206090, getOtherCommonData(ivar5, 1278));
+		}
+		if (stringMethod4107(getOtherCommonData(ivar5, 1279), "") != 0) {
+			ivar6 = script_3978(0, ivar6, 69206089, 4094, -1, 69206090, getOtherCommonData(ivar5, 1279));
+		}
+	} else {
+		if (bitconfig_8601 > bitconfig_8602) {
+			svar2 = "You have already earned a sum of money, which you may claim by talking to any Taskmaster or you can increase by completing more Tasks.";
+			ivar6 = script_3978(0, ivar6, 69206083, 4094, -1, 69206090, svar2);
+		}
+	}
+	ivar6 = max(ivar6, getWidgetActualHeight(new WidgetPointer(1056,74)));
+	setWidgetScrollMax(0, ivar6, new WidgetPointer(1056,74));
+	script_31(69206111, 69206090, 4343, 4340, 4341, 4342, 4337, 4336);
+	if (ivar6 > getWidgetActualHeight(new WidgetPointer(1056,74))) {
+		setWidgetIsHidden(false, new WidgetPointer(1056,95));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1056,95));
+	}
+	svar5 = "";
+	ivar11 = 5;
+	if (script_3227(arg0) == 2) {
+		setWidgetIsHidden(true, new WidgetPointer(1056,88));
+		setWidgetIsHidden(true, new WidgetPointer(1056,90));
+		if ((standart_config_281 == 1000) || ((boolean)bitconfig_9029)) {
+			setWidgetIsHidden(false, new WidgetPointer(1056,130));
+		}
+		if ((arg0 == 419) && ((boolean)bitconfig_9030)) {
+			svar5 = "Task complete! Click here to return to the task list.";
+			if (getDisplayMode() >= 2) {
+				if (getWidgetActualWidth(new WidgetPointer(746,2)) < 997) {
+					ivar11 = add(ivar11, 40);
+				}
+				script_4248(158, ivar11, 1, 16777215, 5631, svar5);
+			} else {
+				script_4247(175, -1, 1, 16777215, 5631, svar5);
+			}
+		}
+	} else if (getOtherCommonData(ivar1, 1267) == 60) {
+		setWidgetIsHidden(true, new WidgetPointer(1056,88));
+		setWidgetIsHidden(true, new WidgetPointer(1056,130));
+		if ((standart_config_281 < 135) && ((boolean)bitconfig_9029)) {
+			setWidgetIsHidden(true, new WidgetPointer(1056,90));
+		} else {
+			setWidgetIsHidden(false, new WidgetPointer(1056,90));
+		}
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(1056,90));
+		if ((((boolean)script_3999(arg0)) && ((boolean)ivar9)) && (arg0 != bitconfig_8576)) {
+			setWidgetIsHidden(false, new WidgetPointer(1056,88));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1056,88));
+		}
+		if (((arg0 == 420) || (arg0 == 363)) || ((arg0 == 419) && (standart_config_281 == 1000))) {
+			svar5 = "Click on the Hints tab for more on how to complete this Task.";
+		} else if (arg0 == 421) {
+			svar5 = "Remember, the Hints tab provides more details about a Task.";
+		} else {
+			svar5 = "";
+		}
+		if (((boolean)bitconfig_9030)) {
+			svar5 = "";
+		}
+		if (getDisplayMode() >= 2) {
+			if (getWidgetActualWidth(new WidgetPointer(746,2)) < 997) {
+				script_4248(196, 223, 1, 16777215, 5631, svar5);
+			} else {
+				script_4248(196, 183, 1, 16777215, 5631, svar5);
+			}
+		} else {
+			script_4247(217, 177, 1, 16777215, 5631, svar5);
+		}
+	}
+	setWidgetSize(0, add(15, ivar6), 1, 0, new WidgetPointer(1056,96));
+	return;
+}

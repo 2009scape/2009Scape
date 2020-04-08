@@ -1,0 +1,4 @@
+void script_2063() {
+	script_2064(standart_config_153);
+	return;
+}

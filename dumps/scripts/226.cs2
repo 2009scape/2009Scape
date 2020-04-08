@@ -1,0 +1,13 @@
+void script_226() {
+	script_231();
+	script_232();
+	setWidgetIsHidden(false, new WidgetPointer(594,149));
+	if (((boolean)getLanguage())) {
+		setWidgetIsHidden(false, new WidgetPointer(594,210));
+		setWidgetIsHidden(true, new WidgetPointer(594,212));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(594,210));
+		setWidgetIsHidden(false, new WidgetPointer(594,212));
+	}
+	return;
+}

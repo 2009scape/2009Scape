@@ -1,0 +1,11 @@
+void script_4307() {
+	globalint_1500 = -1;
+	globalint_1501 = -1;
+	bitconfig_9591 = -1;
+	bitconfig_9593 = -1;
+	bitconfig_9592 = -1;
+	bitconfig_9594 = -1;
+	globalstring_347 = "";
+	globalint_1568 = -1;
+	return;
+}

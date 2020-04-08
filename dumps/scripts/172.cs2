@@ -1,0 +1,32 @@
+void script_172() {
+	globalint_12 = 0;
+	globalint_13 = 0;
+	globalint_14 = 0;
+	globalint_15 = 0;
+	globalint_16 = 0;
+	globalint_17 = 0;
+	globalint_18 = 0;
+	globalint_19 = 0;
+	globalint_20 = 0;
+	globalint_21 = 0;
+	globalint_22 = 0;
+	globalint_23 = 0;
+	globalint_24 = 0;
+	globalint_25 = 0;
+	globalint_26 = 0;
+	globalint_27 = 0;
+	globalint_28 = 0;
+	globalint_29 = 0;
+	globalint_30 = 0;
+	globalint_31 = 0;
+	globalint_32 = 0;
+	globalint_33 = 0;
+	globalint_34 = 0;
+	globalint_35 = 0;
+	globalint_36 = 0;
+	globalint_37 = 0;
+	globalint_38 = 0;
+	globalint_39 = 0;
+	globalint_212 = 0;
+	return;
+}

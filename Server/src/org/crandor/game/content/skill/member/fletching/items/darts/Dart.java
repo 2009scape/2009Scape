@@ -7,7 +7,13 @@ import org.crandor.game.node.item.Item;
  * @author 'Vexia
  */
 public enum Dart {
-	BRONZE_DART(new Item(819), new Item(806), 1, 1.8), IRON_DART(new Item(820), new Item(807), 22, 3.8), STEEL_DART(new Item(821), new Item(808), 37, 7.5), MITHRIL_DART(new Item(822), new Item(809), 52, 11.2), ADAMANT_DART(new Item(823), new Item(810), 67, 15), RUNE_DART(new Item(824), new Item(811), 81, 18.8), DRAGON_DART(new Item(11232), new Item(11230), 95, 25);
+	BRONZE_DART(new Item(819), new Item(806), 1, 1.8),
+	IRON_DART(new Item(820), new Item(807), 22, 3.8),
+	STEEL_DART(new Item(821), new Item(808), 37, 7.5),
+	MITHRIL_DART(new Item(822), new Item(809), 52, 11.2),
+	ADAMANT_DART(new Item(823), new Item(810), 67, 15),
+	RUNE_DART(new Item(824), new Item(811), 81, 18.8),
+	DRAGON_DART(new Item(11232), new Item(11230), 95, 25);
 	/**
 	 * Constructs a new {@code Dart} {@code Object}.
 	 * @param item the item.

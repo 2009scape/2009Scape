@@ -1,0 +1,11 @@
+void script_1807(int arg0,int arg1,int arg2) {
+	if (((boolean)script_42(globalint_266))) {
+		globalstring_38 = "";
+		globalstring_39 = "";
+		globalint_266 = 1;
+	}
+	script_1809(arg0, arg1, arg2);
+	setScriptCallOnGlobalStringChange(1808, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), 38, 1, "IIIY", new WidgetPointer(arg0));
+	setScriptCallOnMessage(1810, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), "III", new WidgetPointer(arg0));
+	return;
+}

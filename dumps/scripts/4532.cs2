@@ -1,0 +1,13 @@
+void script_4532(int arg0) {
+	int ivar1;
+	ivar1 = getWidgetParentId(new WidgetPointer(arg0));
+	if (ivar1 == -1) {
+		return;
+	}
+	if (setWidgetRegister(new WidgetPointer(ivar1))) {
+		setWidgetPosition(0, 4, 1, 0);
+		setWidgetSize(16384, 23, 2, 0);
+	}
+	script_4211(arg0, 5419, 15458492, 0);
+	return;
+}

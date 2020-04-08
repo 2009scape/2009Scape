@@ -1,0 +1,66 @@
+void script_4899(int arg0) {
+	bitconfig_9552 = arg0;
+	script_4935();
+	script_4940();
+	switch (arg0) {
+		case 0:
+			setWidgetIsHidden(true, new WidgetPointer(1092,212));
+			setWidgetIsHidden(true, new WidgetPointer(1092,217));
+			setWidgetIsHidden(true, new WidgetPointer(1092,216));
+			setWidgetText(new WidgetPointer(1092,859), "");
+			setWidgetIsHidden(true, new WidgetPointer(1092,847));
+			script_4913();
+			break;
+		case 1:
+			setWidgetIsHidden(false, new WidgetPointer(1092,212));
+			setWidgetIsHidden(true, new WidgetPointer(1092,217));
+			setWidgetIsHidden(true, new WidgetPointer(1092,216));
+			setWidgetText(new WidgetPointer(1092,859), "");
+			setWidgetIsHidden(true, new WidgetPointer(1092,847));
+			setWidgetIsHidden(true, new WidgetPointer(1092,197));
+			script_5009();
+			script_5011();
+			break;
+		case 2:
+			script_4860();
+			script_4863();
+			script_4859();
+			setWidgetIsHidden(true, new WidgetPointer(1092,212));
+			setWidgetIsHidden(false, new WidgetPointer(1092,217));
+			setWidgetIsHidden(false, new WidgetPointer(1092,216));
+			setWidgetText(new WidgetPointer(1092,859), "");
+			setWidgetIsHidden(true, new WidgetPointer(1092,847));
+			setWidgetIsHidden(true, new WidgetPointer(1092,197));
+			script_5009();
+			break;
+		case 4:
+			setWidgetIsHidden(false, new WidgetPointer(1092,212));
+			setWidgetIsHidden(true, new WidgetPointer(1092,217));
+			setWidgetIsHidden(true, new WidgetPointer(1092,216));
+			setWidgetText(new WidgetPointer(1092,859), "Please select an available spot from the map.");
+			setWidgetIsHidden(false, new WidgetPointer(1092,847));
+			setWidgetIsHidden(true, new WidgetPointer(1092,197));
+			script_5010();
+			script_4935();
+			break;
+		case 3:
+			setWidgetIsHidden(false, new WidgetPointer(1092,212));
+			setWidgetIsHidden(true, new WidgetPointer(1092,217));
+			setWidgetIsHidden(true, new WidgetPointer(1092,216));
+			setWidgetText(new WidgetPointer(1092,859), "Please select a spot from the map.");
+			setWidgetIsHidden(false, new WidgetPointer(1092,847));
+			setWidgetIsHidden(true, new WidgetPointer(1092,197));
+			script_5010();
+			break;
+		case 5:
+			setWidgetIsHidden(true, new WidgetPointer(1092,212));
+			setWidgetIsHidden(false, new WidgetPointer(1092,217));
+			setWidgetIsHidden(false, new WidgetPointer(1092,216));
+			setWidgetText(new WidgetPointer(1092,859), "Please select an available spot from the map.");
+			setWidgetIsHidden(false, new WidgetPointer(1092,847));
+			setWidgetIsHidden(true, new WidgetPointer(1092,197));
+			script_5009();
+	}
+	script_4853();
+	return;
+}

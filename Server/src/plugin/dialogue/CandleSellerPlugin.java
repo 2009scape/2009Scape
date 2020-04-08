@@ -136,7 +136,7 @@ public final class CandleSellerPlugin extends DialoguePlugin {
 			stage = 231;
 			break;
 		case 231:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Firstly you can make a simple candle lantern out of", "glass. It's just like a candle, bu thte flame isn't exposed,", "so it's safer.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Firstly you can make a simple candle lantern out of", "glass. It's just like a candle, but the flame isn't exposed,", "so it's safer.");
 			stage = 232;
 			break;
 		case 232:
@@ -144,7 +144,7 @@ public final class CandleSellerPlugin extends DialoguePlugin {
 			stage = 233;
 			break;
 		case 233:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Finally there's a ullseye lantern. You'll need to", "make a frame out of steel and add a glass lens.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Finally there's a Bullseye lantern. You'll need to", "make a frame out of steel and add a glass lens.");
 			stage = 234;
 			break;
 		case 234:

@@ -1,0 +1,248 @@
+void script_4436(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	int ivar22;
+	int ivar23;
+	int ivar24;
+	int ivar25;
+	int ivar26;
+	int ivar27;
+	int ivar28;
+	int ivar29;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	string svar4;
+	int stack_dump0;
+	if (globalint_1512 != 1) {
+		globalint_1512 = 1;
+	}
+	ivar2 = 72744974;
+	ivar3 = 72744975;
+	ivar4 = 72744977;
+	ivar5 = 72744978;
+	ivar6 = 72744987;
+	ivar7 = 72744979;
+	ivar8 = 72744985;
+	ivar9 = 72744989;
+	ivar10 = 72744976;
+	ivar11 = getWidgetActualWidth(new WidgetPointer(ivar6));
+	if (arg1 <= -1) {
+		arg1 = getWidgetActualX(new WidgetPointer(ivar6));
+	}
+	arg1 = max(min(arg1, subtract(getWidgetActualWidth(new WidgetPointer(ivar7)), ivar11)), 0);
+	globalint_1035 = arg1;
+	setWidgetPosition(arg1, 0, 0, 1, new WidgetPointer(ivar6));
+	cs2method2314(149, new WidgetPointer(ivar6));
+	setWidgetIsHidden(false, new WidgetPointer(ivar6));
+	deleteAllExtraChilds(new WidgetPointer(ivar2));
+	deleteAllExtraChilds(new WidgetPointer(ivar3));
+	deleteAllExtraChilds(new WidgetPointer(ivar4));
+	deleteAllExtraChilds(new WidgetPointer(ivar5));
+	deleteAllExtraChilds(new WidgetPointer(ivar10));
+	setWidgetSprite(6255, new WidgetPointer(1110,86));
+	setWidgetIsHidden(false, new WidgetPointer(1110,22));
+	script_4470();
+	svar0 = "Leave your clan chat channel.";
+	setScriptCallOnMouseOver(4538, new WidgetPointer(1110,60), new WidgetPointer(-32768,3), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1110,85));
+	setWidgetContextMenuOption(1, new WidgetPointer(1110,85), "Leave Clan Chat channel");
+	ivar12 = 0;
+	ivar13 = 0;
+	ivar14 = 0;
+	svar1 = "";
+	ivar15 = 19;
+	ivar16 = divide(getWidgetActualHeight(new WidgetPointer(ivar8)), ivar15);
+	svar2 = "";
+	ivar17 = 0;
+	svar3 = "";
+	ivar18 = 0;
+	ivar19 = 0;
+	svar4 = "";
+	ivar20 = 0;
+	ivar21 = script_3365(ivar7);
+	ivar22 = subtract(add(arg1, ivar21), script_3365(ivar2));
+	ivar23 = subtract(getWidgetActualWidth(new WidgetPointer(ivar4)), add(add(arg1, subtract(ivar21, script_3365(ivar4))), ivar11));
+	setWidgetSize(ivar23, 0, 0, 1, new WidgetPointer(ivar4));
+	setWidgetSize(ivar23, 0, 0, 1, new WidgetPointer(ivar5));
+	setWidgetIsHidden(false, new WidgetPointer(ivar9));
+	setScriptCallOnClanChatDeltaStuff(4435, -1, "i", new WidgetPointer(arg0));
+	setWidgetText(new WidgetPointer(1110,26), cs2method3752());
+	setWidgetText(new WidgetPointer(1110,62), "");
+	setWidgetIsHidden(true, new WidgetPointer(1110,67));
+	ivar24 = cs2method3760(strRemoveEntities(cs2method5020()));
+	if (ivar24 == -1) {
+		return;
+	}
+	ivar25 = cs2method3757(ivar24);
+	ivar14 = cs2method3755();
+	ivar12 = 0;
+	while (ivar12 < ivar14) {
+		ivar13 = multiply(ivar12, ivar15);
+		svar2 = strRemoveEntities(cs2method3756(ivar12));
+		ivar20 = cs2method3757(ivar12);
+		createExtraChild(new WidgetPointer(ivar2), 4, getExtraChildGap(new WidgetPointer(ivar2)));
+		setWidgetTextAlignment(0, 1, 0);
+		setWidgetPosition(0, ivar13, 0, 0);
+		setWidgetSize(ivar22, ivar15, 0, 0);
+		setWidgetRGB(new Color(164, 153, 125));
+		setWidgetFont(3793);
+		setWidgetUnknownBoolean(true);
+		if (stringMethod4107(svar2, strRemoveEntities(cs2method5020())) != 0) {
+			cs2method1305(svar2);
+			if (isFriend(svar2)) {
+				setWidgetContextMenuOption(1, "Message");
+				setWidgetContextMenuOption(7, "Remove friend");
+			} else if (cs2method3623(svar2)) {
+				setWidgetContextMenuOption(8, "Remove ignore");
+			} else {
+				setWidgetContextMenuOption(5, "Add friend");
+				setWidgetContextMenuOption(6, "Add ignore");
+			}
+			if (ivar25 >= 100) {
+				setWidgetContextMenuOption(9, "Temp-ban");
+			}
+			setScriptCallOnClickContextMenu(4472, svar2, -2147483644, ivar12, "sii");
+		}
+		svar1 = "\u00a0\u00a0\u00a0" + svar2;
+		if (getTextWidth(3793, svar1) > ivar22) {
+			while ((getTextWidth(3793, svar1 + "...") > ivar22) && (strLength(svar1) > 0)) {
+				svar1 = substr(0, subtract(strLength(svar1), 1), svar1);
+			}
+			svar1 = svar1 + "...";
+			setScriptCallOnMouseOver(1594, new WidgetPointer(1110,60), new WidgetPointer(-32768,3), -2147483643, svar2, -2147483647, -2147483646, "IIisii");
+			setScriptCallOnMouseExit(40, new WidgetPointer(1110,60), "I");
+		}
+		setWidgetText(svar1);
+		setWidgetUnknownBoolean(true);
+		ivar17 = cs2method3758(ivar12);
+		if ((ivar17 >= 1100) && (ivar17 < 5001)) {
+			svar3 = "Lobby";
+			svar4 = "Lobby";
+			ivar18 = 0;
+		} else if ((ivar17 >= 5001) && (ivar17 < 6000)) {
+			svar3 = "Classic " + intToStr(subtract(ivar17, 5000));
+			svar4 = "Classic " + intToStr(subtract(ivar17, 5000));
+			ivar18 = 0;
+		} else {
+			svar3 = intToStr(ivar17);
+			svar4 = "World " + intToStr(ivar17);
+			ivar18 = add(add(2, 24), 2);
+		}
+		ivar19 = getTextWidth(3793, svar3);
+		createExtraChild(new WidgetPointer(ivar5), 5, getExtraChildGap(new WidgetPointer(ivar5)));
+		if (ivar23 >= add(ivar19, ivar18)) {
+			if (ivar18 > 0) {
+				setWidgetSprite(2173);
+				setWidgetSize(24, 12, 0, 0);
+				setWidgetPosition(2, add(ivar13, 1), 0, 0);
+				setScriptCallOnMouseOver(1594, new WidgetPointer(1110,60), new WidgetPointer(-32768,3), -2147483643, svar4, -2147483647, -2147483646, "IIisii");
+				setScriptCallOnMouseExit(40, new WidgetPointer(1110,60), "I");
+			}
+		} else {
+			ivar18 = 0;
+		}
+		if (ivar23 >= ivar19) {
+		} else {
+			setScriptCallOnMouseOver(1594, new WidgetPointer(1110,60), new WidgetPointer(-32768,3), -2147483643, svar4, -2147483647, -2147483646, "IIisii");
+			setScriptCallOnMouseExit(40, new WidgetPointer(1110,60), "I");
+			svar3 = "...";
+		}
+		createExtraChild(new WidgetPointer(ivar4), 4, getExtraChildGap(new WidgetPointer(ivar4)));
+		setWidgetSize(ivar23, ivar15, 0, 0);
+		setWidgetPosition(add(ivar18, 2), ivar13, 0, 0);
+		setWidgetFont(3793);
+		setWidgetUnknownBoolean(true);
+		setWidgetTextAlignment(0, 1, 0);
+		setWidgetText(svar3);
+		if (ivar17 == getWorldId()) {
+			setWidgetRGB(new Color(60, 183, 30));
+		} else {
+			setWidgetRGB(new Color(255, 255, 100));
+		}
+		setScriptCallOnMouseOver(1594, new WidgetPointer(1110,60), new WidgetPointer(-32768,3), -2147483643, svar4, -2147483647, -2147483646, "IIisii");
+		setScriptCallOnMouseExit(40, new WidgetPointer(1110,60), "I");
+		createExtraChild(new WidgetPointer(ivar3), 5, getExtraChildGap(new WidgetPointer(ivar3)));
+		if (ivar20 == 127) {
+			setWidgetPosition(3, 3, 0, 0);
+			setWidgetSize(9, 9, 0, 0);
+		} else {
+			setWidgetPosition(0, 0, 0, 0);
+			setWidgetSize(15, 15, 0, 0);
+		}
+		setWidgetSprite(cs2method_3408(105, 100, 3712, ivar20));
+		createExtraChild(new WidgetPointer(ivar10), 5, getExtraChildGap(new WidgetPointer(ivar10)));
+		setWidgetPosition(0, 0, 2, 0);
+		setWidgetSize(9, ivar15, 0, 0);
+		setWidgetSprite(6032);
+		setScriptCallOnClickContextMenu(4317, new WidgetPointer(-32768,3), -2147483643, "Ii");
+		setWidgetContextMenuOption(1, "Show options");
+		ivar12 = add(ivar12, 1);
+	}
+	ivar12 = 0;
+	ivar26 = 0;
+	while (ivar12 < ivar14) {
+		stack_dump0 = ivar12;
+		cs2method3761();
+		ivar26 = stack_dump0;
+		if (setWidgetRegister(new WidgetPointer(ivar2), ivar26) && (stringMethod4107(getWidgetText(), "") != 0)) {
+			ivar13 = multiply(ivar12, ivar15);
+			setWidgetPosition(getWidgetActualX(), ivar13, 0, 0);
+			if (setWidgetRegister(new WidgetPointer(ivar3), ivar26)) {
+				setWidgetPosition(getWidgetActualX(), add(add(getWidgetActualY(), ivar13), 3), 0, 0);
+			}
+			if (setWidgetRegister(new WidgetPointer(ivar4), ivar26)) {
+				setWidgetPosition(getWidgetActualX(), ivar13, 0, 0);
+			}
+			if (setWidgetRegister(new WidgetPointer(ivar5), ivar26)) {
+				setWidgetPosition(getWidgetActualX(), add(ivar13, 5), 0, 0);
+			}
+			if (setWidgetRegister(new WidgetPointer(ivar10), ivar26)) {
+				setWidgetPosition(getWidgetActualX(), add(ivar13, 2), 0, 0);
+			}
+		}
+		ivar12 = add(ivar12, 1);
+	}
+	ivar27 = 0;
+	ivar28 = -1;
+	if (globalint_1518 >= 0) {
+		ivar28 = cs2method3760(globalstring_126);
+		if (ivar28 >= 0) {
+			globalint_1518 = ivar28;
+			if (setWidgetRegister(new WidgetPointer(ivar10), globalint_1518)) {
+				ivar27 = getWidgetActualY();
+				setWidgetPosition(0, ivar27, 2, 0, new WidgetPointer(1110,20));
+				setWidgetPosition(0, ivar27, 2, 0, new WidgetPointer(1110,13));
+			}
+		} else {
+			globalint_1518 = -1;
+			globalstring_126 = "";
+			setWidgetIsHidden(false, new WidgetPointer(1110,13));
+			script_4628();
+		}
+	}
+	ivar29 = cs2method2601(new WidgetPointer(ivar8));
+	setWidgetScrollMax(getWidgetActualWidth(new WidgetPointer(ivar8)), multiply(ivar15, max(ivar14, ivar16)), new WidgetPointer(ivar8));
+	ivar29 = min(ivar29, getWidgetScrollMaxV(new WidgetPointer(ivar8)));
+	cs2method2100(0, ivar29, new WidgetPointer(ivar8));
+	script_31(72744989, ivar8, 5666, 5663, 5664, 5665, 5686, 5685);
+	return;
+}

@@ -1,0 +1,18 @@
+void script_182(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = script_179(arg0);
+	ivar2 = 0;
+	if (((boolean)mod(ivar1, 25))) {
+		script_178();
+		ivar2 = divide(ivar1, 25);
+		if (ivar2 <= 1) {
+			setScriptCallOnGameloop(-1, "", cs2method_3408(105, 73, 683, arg0));
+		} else {
+			script_183(arg0, subtract(ivar1, 1));
+		}
+	} else {
+		script_183(arg0, subtract(ivar1, 1));
+	}
+	return;
+}

@@ -1,0 +1,10 @@
+void script_460(int arg0) {
+	if (getSkillActualLvl(2) < 25) {
+		setWidgetText(new WidgetPointer(arg0), "<col=c80000>" + "A Strength level of " + intToStr(25) + " is required." + "</col>");
+	} else if (bitconfig_2086 < 1) {
+		setWidgetText(new WidgetPointer(arg0), "<col=c80000>" + "1 Commendation required." + "</col>");
+	} else {
+		setWidgetText(new WidgetPointer(arg0), intToStr(multiply(divide(pow(getSkillActualLvl(2), 2), 600), 35)) + " XP per Commendation.");
+	}
+	return;
+}

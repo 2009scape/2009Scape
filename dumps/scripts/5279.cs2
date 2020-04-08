@@ -1,0 +1,55 @@
+void script_5279(int arg0) {
+	int ivar1;
+	ivar1 = script_734(bitconfig_9897);
+	setWidgetIsHidden(((boolean)ivar1), new WidgetPointer(388,17));
+	setWidgetIsHidden(((boolean)ivar1), new WidgetPointer(388,30));
+	setWidgetIsHidden(((boolean)ivar1), new WidgetPointer(388,43));
+	setWidgetIsHidden(((boolean)ivar1), new WidgetPointer(388,56));
+	setWidgetIsHidden(((boolean)ivar1), new WidgetPointer(388,69));
+	setWidgetIsHidden(((boolean)ivar1), new WidgetPointer(388,107));
+	setWidgetIsHidden(((boolean)ivar1), new WidgetPointer(388,121));
+	setWidgetIsHidden(((boolean)ivar1), new WidgetPointer(388,135));
+	setWidgetIsHidden(((boolean)ivar1), new WidgetPointer(388,148));
+	setWidgetIsHidden(((boolean)ivar1), new WidgetPointer(388,163));
+	setWidgetIsHidden(((boolean)ivar1), new WidgetPointer(388,177));
+	setWidgetIsHidden(((boolean)ivar1), new WidgetPointer(388,191));
+	setWidgetIsHidden(((boolean)ivar1), new WidgetPointer(388,205));
+	setWidgetIsHidden(((boolean)ivar1), new WidgetPointer(388,90));
+	if (((boolean)ivar1)) {
+		setWidgetText(new WidgetPointer(arg0), "Theatre Options");
+		setScriptCallOnClickContextMenu(5293, -2147483644, 1, 0, "ii1", new WidgetPointer(388,104));
+		setScriptCallOnClickContextMenu(5293, -2147483644, 2, 0, "ii1", new WidgetPointer(388,117));
+		setScriptCallOnClickContextMenu(5293, -2147483644, 3, 0, "ii1", new WidgetPointer(388,131));
+		setScriptCallOnClickContextMenu(5293, -2147483644, 4, 0, "ii1", new WidgetPointer(388,145));
+		setScriptCallOnClickContextMenu(5293, -2147483644, 5, 0, "ii1", new WidgetPointer(388,159));
+		setScriptCallOnClickContextMenu(5293, -2147483644, 6, 0, "ii1", new WidgetPointer(388,173));
+		setScriptCallOnClickContextMenu(5293, -2147483644, 7, 0, "ii1", new WidgetPointer(388,187));
+		setScriptCallOnClickContextMenu(5293, -2147483644, 8, 0, "ii1", new WidgetPointer(388,201));
+		setScriptCallOnClickContextMenu(5293, -2147483644, 1, 1, "ii1", new WidgetPointer(388,14));
+		setScriptCallOnClickContextMenu(5293, -2147483644, 2, 1, "ii1", new WidgetPointer(388,27));
+		setScriptCallOnClickContextMenu(5293, -2147483644, 3, 1, "ii1", new WidgetPointer(388,40));
+		setScriptCallOnClickContextMenu(5293, -2147483644, 4, 1, "ii1", new WidgetPointer(388,53));
+		setScriptCallOnClickContextMenu(5293, -2147483644, 5, 1, "ii1", new WidgetPointer(388,66));
+	} else {
+		if (((boolean)bitconfig_9887) || ((boolean)bitconfig_9896)) {
+			setWidgetText(new WidgetPointer(arg0), "Waiting on technician to select options...");
+		} else {
+			setWidgetText(new WidgetPointer(arg0), "Waiting on technician to unlock theatre...");
+		}
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(388,104));
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(388,117));
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(388,131));
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(388,145));
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(388,159));
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(388,173));
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(388,187));
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(388,201));
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(388,14));
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(388,27));
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(388,40));
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(388,53));
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(388,66));
+	}
+	script_4532(arg0);
+	return;
+}

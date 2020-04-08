@@ -1,0 +1,12 @@
+void script_473(int arg0,int arg1) {
+	if (getSkillActualLvl(19) < 25) {
+		setWidgetText(new WidgetPointer(arg0), "<col=c80000>" + "A Farming level of " + intToStr(25) + " is required." + "</col>");
+		return;
+	}
+	if (bitconfig_2086 < arg1) {
+		setWidgetText(new WidgetPointer(arg0), "<col=c80000>" + intToStr(arg1) + " Commendations required." + "</col>");
+	} else {
+		setWidgetText(new WidgetPointer(arg0), intToStr(arg1) + " Commendations.");
+	}
+	return;
+}

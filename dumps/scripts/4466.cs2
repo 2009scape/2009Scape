@@ -1,0 +1,45 @@
+void script_4466(string arg0) {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar0 = -1;
+	ivar1 = -1;
+	ivar2 = -1;
+	ivar3 = -1;
+	ivar0 = cs2method3760(arg0);
+	if (ivar0 >= 0) {
+		if (ivar0 == -1) {
+			return;
+		}
+		ivar1 = cs2method3757(ivar0);
+		ivar2 = cs2method3760(strRemoveEntities(cs2method5020()));
+		if (ivar2 >= 0) {
+			if (ivar2 == ivar0) {
+				message(43, 0, "You cannot temporarily ban yourself.");
+				return;
+			}
+			ivar3 = cs2method3757(ivar2);
+			if (ivar2 == -1) {
+				return;
+			}
+			if (ivar3 >= cs2method3753()) {
+				if (ivar1 > -1) {
+					message(43, 0, "You can only temporarily ban guests.");
+					message(43, 0, "A clan admin can remove your clanmate.");
+				} else if (ivar3 > ivar1) {
+					cs2method3759(cs2method3760(arg0));
+					cs2method5006(2);
+					cs2method5008("[Attempting to kick/ban " + arg0 + " from this channel.]");
+				} else {
+					message(43, 0, "You can only kick people with a lower rank than yourself.");
+				}
+			} else {
+				message(43, 0, "You do not have sufficient rank to kick.");
+			}
+		}
+	} else {
+		message(43, 0, "Could not find that guest to kick from your Clan Chat.");
+	}
+	return;
+}

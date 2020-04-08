@@ -1,0 +1,13 @@
+void script_2560() {
+	setWidgetText(new WidgetPointer(845,10), cs2method_3408(105, 115, 2385, 1));
+	setWidgetText(new WidgetPointer(845,14), cs2method_3408(105, 115, 2385, 2));
+	setWidgetText(new WidgetPointer(845,18), cs2method_3408(105, 115, 2385, 3));
+	setWidgetText(new WidgetPointer(845,22), cs2method_3408(105, 115, 2385, 4));
+	setWidgetText(new WidgetPointer(845,26), cs2method_3408(105, 115, 2385, 5));
+	setWidgetText(new WidgetPointer(845,9), "x " + intToStr(globalint_828));
+	setWidgetText(new WidgetPointer(845,13), "x " + intToStr(globalint_829));
+	setWidgetText(new WidgetPointer(845,17), "x " + intToStr(globalint_830));
+	setWidgetText(new WidgetPointer(845,21), "x " + intToStr(globalint_831));
+	setWidgetText(new WidgetPointer(845,25), "x " + intToStr(globalint_832));
+	return;
+}

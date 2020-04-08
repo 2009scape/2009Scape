@@ -1,0 +1,12 @@
+void script_2666() {
+	int ivar0;
+	int ivar1;
+	ivar0 = ((int)cs2method_3408(105, 73, 2566, bitconfig_6297));
+	ivar1 = ((int)cs2method_3408(105, 73, 2565, bitconfig_6297));
+	if (getWidgetActualY(new WidgetPointer(ivar0)) < 293) {
+		playSoundEffect2False(7570, 1, 0, 50);
+		setWidgetPosition(getWidgetActualX(new WidgetPointer(ivar0)), add(getWidgetActualY(new WidgetPointer(ivar0)), 2), 0, 0, new WidgetPointer(ivar0));
+		setWidgetPosition(getWidgetActualX(new WidgetPointer(ivar1)), add(getWidgetActualY(new WidgetPointer(ivar1)), 2), 0, 0, new WidgetPointer(ivar1));
+	}
+	return;
+}

@@ -1,0 +1,11 @@
+void script_122(int arg0) {
+	int ivar1;
+	ivar1 = 0;
+	ivar1 = mod(getClientCycle(), 100);
+	if (ivar1 > 50) {
+		ivar1 = subtract(100, ivar1);
+	}
+	ivar1 = subtract(255, ivar1);
+	cs2method2103(ivar1, new WidgetPointer(arg0));
+	return;
+}

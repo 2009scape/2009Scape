@@ -1,0 +1,26 @@
+void script_4170(int arg0,int arg1,int arg2,string arg3) {
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	script_4178(1, arg2, 0);
+	createExtraChild(new WidgetPointer(arg0), 5, 0);
+	setWidgetSize(0, 0, 1, 1);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetSprite(170);
+	setScriptCallOnMouseOver(1160, new WidgetPointer(-32768,3), -2147483643, new WidgetPointer(arg1), arg3, 25, 200, "IiIsii");
+	setScriptCallOnMouseExit(40, new WidgetPointer(arg1), "I");
+	createExtraChild(new WidgetPointer(arg0), 5, 1);
+	script_4172(arg2);
+	setScriptCallOnItemContainerUpdate(4171, new WidgetPointer(-32768,3), -2147483643, arg2, 94, 1, "IiiY");
+	createExtraChild(new WidgetPointer(arg0), 5, 2);
+	setWidgetSize(0, 0, 1, 1);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetSprite(1132);
+	script_4174(arg2);
+	setScriptCallOnConfigChange(4173, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), arg2, 286, 1, "IiiY");
+	createExtraChild(new WidgetPointer(arg0), 5, 3);
+	setWidgetSize(10, 32, 0, 0);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetSprite(937);
+	setWidgetHidden(1);
+	setScriptCallOnGameloop(4175, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), arg2, 1, "Iii1");
+	return;
+}

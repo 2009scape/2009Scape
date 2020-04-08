@@ -1,0 +1,16 @@
+void script_4703() {
+	setWidgetIsHidden(true, new WidgetPointer(744,103));
+	setWidgetSprite(4129, new WidgetPointer(744,97));
+	globalint_1100 = -1;
+	script_2954();
+	resetRCs();
+	setWidgetText(new WidgetPointer(975,49), "Play Game");
+	setWidgetText(new WidgetPointer(596,60), "Play Game");
+	setWidgetText(new WidgetPointer(975,48), "Play Game");
+	setWidgetText(new WidgetPointer(596,59), "Play Game");
+	setScriptCallOnMousePressed(2944, "", new WidgetPointer(975,44));
+	setScriptCallOnMousePressed(2944, "", new WidgetPointer(596,45));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(975,26));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(596,7));
+	return;
+}

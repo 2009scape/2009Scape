@@ -1,0 +1,23 @@
+void script_3298(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	ivar4 = getWidgetScrollMaxV(new WidgetPointer(arg1));
+	ivar5 = getWidgetActualHeight(new WidgetPointer(arg0));
+	ivar6 = subtract(ivar5, 32);
+	ivar7 = 0;
+	if (ivar4 > 0) {
+		ivar7 = divide(multiply(ivar6, ivar5), ivar4);
+	} else {
+		ivar7 = ivar6;
+	}
+	if (ivar7 < 10) {
+		ivar7 = 10;
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), 1)) {
+		setWidgetSize(16, ivar7, 0, 0);
+		script_3296(arg0, arg1, arg2, arg3, 1);
+	}
+	return;
+}

@@ -1,0 +1,3 @@
+WidgetPointer script_624(int arg0) {
+	return cs2method_3408(105, 73, 1077, arg0);
+}

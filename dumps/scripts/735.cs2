@@ -1,0 +1,7 @@
+void script_735(int arg0,int arg1,int arg2,int arg3) {
+	script_41(arg0);
+	if (setWidgetRegister(new WidgetPointer(arg1), arg2)) {
+		setWidgetSprite(arg3);
+	}
+	return;
+}

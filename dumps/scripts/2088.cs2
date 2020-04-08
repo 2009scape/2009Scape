@@ -1,0 +1,18 @@
+void script_2088() {
+	int ivar0;
+	int ivar1;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar0 = cs2method_3408(105, 105, 723, globalint_645);
+	ivar1 = cs2method_3408(105, 105, 2196, globalint_645);
+	if (globalint_645 < 15) {
+		setWidgetRGB(new Color(51, 102, 255), new WidgetPointer(836,5));
+	} else if (globalint_645 > 15) {
+		setWidgetRGB(new Color(225, 35, 35), new WidgetPointer(836,5));
+	} else {
+		setWidgetRGB(new Color(102, 102, 102), new WidgetPointer(836,5));
+	}
+	setWidgetPosition(ivar0, 66, 2, 0, new WidgetPointer(836,5));
+	setWidgetSize(ivar1, 8, 0, 0, new WidgetPointer(836,5));
+	return;
+}

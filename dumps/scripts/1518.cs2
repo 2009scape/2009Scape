@@ -1,0 +1,25 @@
+void script_1518(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	ivar3 = 0;
+	ivar4 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		if (arg2 > 0) {
+			setWidget3DRotation(cs2method1610(), cs2method1611(), getWidgetRotateX(), script_686(subtract(getWidgetRotateY(), 10), 2048), cs2method1607(), getWidget3DDistance());
+		} else if (arg2 < 0) {
+			setWidget3DRotation(cs2method1610(), cs2method1611(), getWidgetRotateX(), mod(add(getWidgetRotateY(), 10), 2048), cs2method1607(), getWidget3DDistance());
+		} else if (ivar3 > 1024) {
+			ivar4 = add(ivar3, 15);
+			if (ivar4 >= 2048) {
+				ivar4 = 0;
+			}
+			setWidget3DRotation(cs2method1610(), cs2method1611(), getWidgetRotateX(), ivar4, cs2method1607(), getWidget3DDistance());
+		} else if (ivar3 > 0) {
+			setWidget3DRotation(cs2method1610(), cs2method1611(), getWidgetRotateX(), max(subtract(ivar3, 15), 0), cs2method1607(), getWidget3DDistance());
+		} else {
+			setScriptCallOnGameloop(-1, "");
+		}
+		ivar3 = getWidgetRotateY();
+	}
+	return;
+}

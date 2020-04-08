@@ -1,0 +1,110 @@
+void script_379(int arg0,int arg1,int arg2,int arg3,string arg4) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int stack_dump0;
+	ivar4 = add(getClientCycle(), 25);
+	if (globalint_1 < ivar4) {
+		globalint_1 = max(getClientCycle(), add(globalint_1, 2));
+		return;
+	}
+	globalint_1 = ivar4;
+	arg3 = max(min(arg3, arg1), 0);
+	stack_dump0 = arg0;
+	globalint_773 = arg1;
+	globalint_2 = stack_dump0;
+	ivar5 = 0;
+	if (isWidgetHidden(new WidgetPointer(1028,125))) {
+		setWidgetPosition(getWidgetActualX(new WidgetPointer(1028,125)), max(subtract(arg2, getWidgetActualHeight(new WidgetPointer(1028,125))), 0), 0, 0, new WidgetPointer(1028,125));
+		if (setWidgetRegister(new WidgetPointer(1028,125), 9)) {
+			ivar5 = subtract(add(arg0, arg3), add(script_3365(67371133), divide(getWidgetActualWidth(), 2)));
+			setWidgetPosition(min(max(ivar5, 5), subtract(getWidgetActualWidth(new WidgetPointer(1028,125)), add(getWidgetActualWidth(), 5))), 0, 0, 2);
+		}
+		return;
+	}
+	setWidgetIsHidden(false, new WidgetPointer(1028,125));
+	deleteAllExtraChilds(new WidgetPointer(1028,125));
+	ivar6 = getMaxLineWidth(getWidgetActualWidth(new WidgetPointer(1028,29)), 495, arg4);
+	ivar7 = add(multiply(getLineCount(ivar6, 495, arg4), 12), 3);
+	ivar8 = max(add(ivar6, 8), 45);
+	ivar9 = add(ivar7, 18);
+	ivar10 = max(subtract(ivar8, 14), 0);
+	ivar11 = max(subtract(ivar9, 25), 0);
+	setWidgetSize(ivar8, ivar9, 0, 0, new WidgetPointer(1028,125));
+	createExtraChild(new WidgetPointer(1028,125), 3, getExtraChildGap(new WidgetPointer(1028,125)));
+	setWidgetSize(ivar10, ivar11, 0, 0);
+	setWidgetPosition(0, 7, 1, 0);
+	setWidgetFilled(1);
+	setWidgetRGB(new Color(227, 226, 225));
+	createExtraChild(new WidgetPointer(1028,125), 5, getExtraChildGap(new WidgetPointer(1028,125)));
+	setWidgetSize(ivar10, 7, 0, 0);
+	setWidgetPosition(0, 0, 1, 0);
+	cs2method1107(1);
+	setWidgetSprite(3476);
+	createExtraChild(new WidgetPointer(1028,125), 5, getExtraChildGap(new WidgetPointer(1028,125)));
+	setWidgetSize(ivar10, 7, 0, 0);
+	setWidgetPosition(0, 11, 1, 2);
+	cs2method1107(1);
+	setWidgetVFlip(1);
+	setWidgetSprite(3476);
+	createExtraChild(new WidgetPointer(1028,125), 5, getExtraChildGap(new WidgetPointer(1028,125)));
+	setWidgetSize(7, ivar11, 0, 0);
+	setWidgetPosition(0, 7, 0, 0);
+	cs2method1107(1);
+	setWidgetSprite(3475);
+	createExtraChild(new WidgetPointer(1028,125), 5, getExtraChildGap(new WidgetPointer(1028,125)));
+	setWidgetSize(7, ivar11, 0, 0);
+	setWidgetPosition(0, 7, 2, 0);
+	cs2method1107(1);
+	setWidgetHFlip(1);
+	setWidgetSprite(3475);
+	createExtraChild(new WidgetPointer(1028,125), 5, getExtraChildGap(new WidgetPointer(1028,125)));
+	setWidgetSize(7, 7, 0, 0);
+	setWidgetPosition(0, 0, 0, 0);
+	setWidgetSprite(3474);
+	createExtraChild(new WidgetPointer(1028,125), 5, getExtraChildGap(new WidgetPointer(1028,125)));
+	setWidgetSize(7, 7, 0, 0);
+	setWidgetPosition(0, 0, 2, 0);
+	setWidgetHFlip(1);
+	setWidgetSprite(3474);
+	createExtraChild(new WidgetPointer(1028,125), 5, getExtraChildGap(new WidgetPointer(1028,125)));
+	setWidgetSize(7, 7, 0, 0);
+	setWidgetPosition(0, 11, 0, 2);
+	setWidgetVFlip(1);
+	setWidgetSprite(3474);
+	createExtraChild(new WidgetPointer(1028,125), 5, getExtraChildGap(new WidgetPointer(1028,125)));
+	setWidgetSize(7, 7, 0, 0);
+	setWidgetPosition(0, 11, 2, 2);
+	setWidgetHFlip(1);
+	setWidgetVFlip(1);
+	setWidgetSprite(3474);
+	createExtraChild(new WidgetPointer(1028,125), 5, getExtraChildGap(new WidgetPointer(1028,125)));
+	setWidgetSize(11, 12, 0, 0);
+	setWidgetSprite(3473);
+	createExtraChild(new WidgetPointer(1028,125), 4, getExtraChildGap(new WidgetPointer(1028,125)));
+	setWidgetSize(ivar6, ivar7, 0, 0);
+	setWidgetPosition(0, 3, 1, 0);
+	setWidgetRGB(new Color(0, 0, 0));
+	setWidgetFont(3793);
+	setWidgetTextAlignment(1, 0, 0);
+	setWidgetText(arg4);
+	ivar10 = divide(ivar8, 2);
+	ivar5 = subtract(add(arg0, arg3), ivar10);
+	ivar12 = 0;
+	if (ivar5 < 0) {
+		ivar12 = subtract(0, ivar5);
+	} else {
+		if (add(ivar5, ivar8) > getWidgetActualWidth(new WidgetPointer(1028,28))) {
+			ivar12 = subtract(getWidgetActualWidth(new WidgetPointer(1028,28)), add(ivar5, ivar8));
+		}
+	}
+	setWidgetPosition(add(ivar5, ivar12), max(subtract(arg2, ivar9), 0), 0, 0, new WidgetPointer(1028,125));
+	setWidgetPosition(subtract(0, ivar12), 0, 1, 2);
+	return;
+}

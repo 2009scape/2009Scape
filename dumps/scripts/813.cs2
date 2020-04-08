@@ -1,0 +1,60 @@
+void script_813(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int stack_dump0;
+	cs2func_script_814_struct(3,0,0) structdump_1;
+	cs2func_script_814_struct(3,0,0) structdump_2;
+	cs2func_script_814_struct(3,0,0) structdump_3;
+	ivar1 = arg0;
+	ivar2 = -1;
+	ivar3 = 0;
+	ivar4 = -1;
+	stack_dump0 = arg0;
+	structdump_1 = script_814(stack_dump0);
+	ivar2 = structdump_1.intpart_2;
+	ivar4 = structdump_1.intpart_1;
+	ivar3 = structdump_1.intpart_0;
+	setWidgetModel(ivar2, new WidgetPointer(ivar4));
+	script_1421(arg0);
+	ivar1 = subtract(arg0, 1);
+	while (ivar1 > 0) {
+		stack_dump0 = ivar1;
+		structdump_2 = script_814(stack_dump0);
+		ivar2 = structdump_2.intpart_2;
+		ivar4 = structdump_2.intpart_1;
+		ivar3 = structdump_2.intpart_0;
+		setWidgetModel(ivar2, new WidgetPointer(ivar4));
+		script_1421(ivar1);
+		if (ivar3 > 1) {
+			ivar1 = subtract(ivar1, 1);
+		} else {
+			ivar1 = subtract(ivar1, 1);
+			while (ivar1 > 0) {
+				script_818(ivar1);
+				ivar1 = subtract(ivar1, 1);
+			}
+		}
+	}
+	ivar1 = add(arg0, 1);
+	while (ivar1 <= 14) {
+		stack_dump0 = ivar1;
+		structdump_3 = script_814(stack_dump0);
+		ivar2 = structdump_3.intpart_2;
+		ivar4 = structdump_3.intpart_1;
+		ivar3 = structdump_3.intpart_0;
+		setWidgetModel(ivar2, new WidgetPointer(ivar4));
+		script_1421(ivar1);
+		if (ivar3 > 1) {
+			ivar1 = add(ivar1, 1);
+		} else {
+			ivar1 = add(ivar1, 1);
+			while (ivar1 <= 14) {
+				script_818(ivar1);
+				ivar1 = add(ivar1, 1);
+			}
+		}
+	}
+	return;
+}

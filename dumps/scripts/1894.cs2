@@ -1,0 +1,35 @@
+void script_1894(int arg0,int arg1,int arg2,int arg3,string arg4) {
+	int ivar4;
+	setWidgetSize(arg1, 76, 0, 0, new WidgetPointer(arg3));
+	setWidgetPosition(arg0, 0, 0, 1, new WidgetPointer(arg3));
+	ivar4 = divide(subtract(76, 64), 2);
+	script_333(arg3, 6116682, 3024411, 4, 4);
+	createExtraChild(new WidgetPointer(arg3), 5, getExtraChildGap(new WidgetPointer(arg3)));
+	setWidgetSize(36, 32, 0, 0);
+	setWidgetPosition(0, add(4, ivar4), 1, 0);
+	setWidgetShadowColor(new Color(48, 32, 32));
+	setWidgetBorderThickness(1);
+	setItemOnWidgetMethod1205(arg2, 1);
+	createExtraChild(new WidgetPointer(arg3), 4, getExtraChildGap(new WidgetPointer(arg3)));
+	setWidgetSize(subtract(add(multiply(4, 2), 70), 56), subtract(add(add(add(4, ivar4), 32), ivar4), 3), 1, 1);
+	setWidgetPosition(0, ivar4, 1, 2);
+	setWidgetFont(494);
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetRGB(new Color(255, 152, 31));
+	setWidgetUnknownBoolean(true);
+	setWidgetText(arg4);
+	createExtraChild(new WidgetPointer(arg3), 5, getExtraChildGap(new WidgetPointer(arg3)));
+	setWidgetSize(58, 0, 1, 1);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetSprite(3875);
+	cs2method1107(1);
+	createExtraChild(new WidgetPointer(arg3), 5, getExtraChildGap(new WidgetPointer(arg3)));
+	setWidgetSize(30, 0, 0, 1);
+	setWidgetPosition(0, 0, 0, 1);
+	setWidgetSprite(3874);
+	createExtraChild(new WidgetPointer(arg3), 5, getExtraChildGap(new WidgetPointer(arg3)));
+	setWidgetSize(30, 0, 0, 1);
+	setWidgetPosition(0, 0, 2, 1);
+	setWidgetSprite(3876);
+	return;
+}

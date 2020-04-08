@@ -1,0 +1,13 @@
+void script_4181(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		ivar2 = add(cs2method1609(), 1);
+		if (ivar2 >= 255) {
+			deleteExtraChild();
+			return;
+		}
+		cs2method2103(ivar2);
+	}
+	return;
+}

@@ -1,0 +1,28 @@
+void script_1326(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6) {
+	setWidgetModel(cs2method_3408(105, 109, 1595, divide(bitconfig_2512, 10)), new WidgetPointer(arg0));
+	setWidgetModel(cs2method_3408(105, 109, 1595, mod(bitconfig_2512, 10)), new WidgetPointer(arg1));
+	setItemOnWidgetMethod2205(standart_config_851, 1, new WidgetPointer(arg5));
+	setItemOnWidgetMethod2205(standart_config_852, 1, new WidgetPointer(arg6));
+	if (((boolean)bitconfig_2541)) {
+		setWidgetModel(17219, new WidgetPointer(arg3));
+		setWidgetModel(-1, new WidgetPointer(arg2));
+		setWidgetModel(-1, new WidgetPointer(arg4));
+		return;
+	}
+	if (bitconfig_2541 > bitconfig_2512) {
+		setWidgetModel(17219, new WidgetPointer(arg3));
+		setWidgetModel(17221, new WidgetPointer(arg2));
+		setWidgetModel(17217, new WidgetPointer(arg4));
+		return;
+	}
+	if (bitconfig_2541 < bitconfig_2512) {
+		setWidgetModel(17219, new WidgetPointer(arg3));
+		setWidgetModel(17220, new WidgetPointer(arg2));
+		setWidgetModel(17218, new WidgetPointer(arg4));
+		return;
+	}
+	setWidgetModel(17216, new WidgetPointer(arg3));
+	setWidgetModel(-1, new WidgetPointer(arg2));
+	setWidgetModel(-1, new WidgetPointer(arg4));
+	return;
+}

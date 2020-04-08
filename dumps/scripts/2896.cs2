@@ -1,0 +1,12 @@
+void script_2896(int arg0) {
+	if (((boolean)mod(getClientCycle(), 5))) {
+		if (multiplyDivide(globalint_1078, 2000, 200) > multiplyDivide(bitconfig_7189, 2000, 200)) {
+			setWidgetSize(20, multiplyDivide(globalint_1078, 2000, 200), 0, 0, new WidgetPointer(arg0));
+			globalint_1078 = subtract(globalint_1078, 1);
+		} else {
+			setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+			globalint_1079 = 0;
+		}
+	}
+	return;
+}

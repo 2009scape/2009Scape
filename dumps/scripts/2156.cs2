@@ -1,0 +1,8 @@
+int script_2156(int arg0) {
+	int ivar1;
+	ivar1 = script_2193(arg0);
+	if (ivar1 == 2) {
+		return 1;
+	}
+	return 0;
+}

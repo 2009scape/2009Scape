@@ -1,0 +1,46 @@
+cs2func_script_3360_struct(2,1,0) script_3360() {
+	flow_0:
+		SWITCH (standart_config_448) {
+			case 17955:
+				 GOTO flow_1
+			case 17956:
+				 GOTO flow_2
+			case 17957:
+				 GOTO flow_3
+			case 17958:
+				 GOTO flow_4
+			case 17959:
+				 GOTO flow_5
+			case 17960:
+				 GOTO flow_6
+			case 17961:
+				 GOTO flow_7
+			case 17962:
+				 GOTO flow_8
+			case 17963:
+				 GOTO flow_9
+			case 17964:
+				 GOTO flow_10
+		}
+		return newstruct cs2func_script_3360_struct(5, 18057, "Aptitude (Tier 1)");
+	flow_1:
+		return newstruct cs2func_script_3360_struct(5, 18057, "Aptitude (Tier 1)");
+	flow_2:
+		return newstruct cs2func_script_3360_struct(15, 18058, "Aptitude (Tier 2)");
+	flow_3:
+		return newstruct cs2func_script_3360_struct(25, 18059, "Aptitude (Tier 3)");
+	flow_4:
+		return newstruct cs2func_script_3360_struct(35, 18060, "Aptitude (Tier 4)");
+	flow_5:
+		return newstruct cs2func_script_3360_struct(45, 18061, "Aptitude (Tier 5)");
+	flow_6:
+		return newstruct cs2func_script_3360_struct(55, 18062, "Aptitude (Tier 6)");
+	flow_7:
+		return newstruct cs2func_script_3360_struct(65, 18063, "Aptitude (Tier 7)");
+	flow_8:
+		return newstruct cs2func_script_3360_struct(75, 18064, "Aptitude (Tier 8)");
+	flow_9:
+		return newstruct cs2func_script_3360_struct(85, 18065, "Aptitude (Tier 9)");
+	flow_10:
+		return newstruct cs2func_script_3360_struct(95, 18066, "Aptitude (Tier 10)");
+}

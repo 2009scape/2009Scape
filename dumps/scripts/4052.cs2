@@ -1,0 +1,22 @@
+void script_4052(int arg0,int arg1) {
+	if (((boolean)arg1)) {
+		if (getWidgetActualY(new WidgetPointer(arg0)) < subtract(1, getWidgetActualHeight(new WidgetPointer(arg0)))) {
+			setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+			setWidgetIsHidden(true, new WidgetPointer(arg0));
+		} else {
+			setWidgetPosition(0, subtract(getWidgetActualY(new WidgetPointer(arg0)), 1), 2, 0, new WidgetPointer(arg0));
+			if (getWidgetShadeColor(new WidgetPointer(arg0)) < 245) {
+				cs2method2103(add(getWidgetShadeColor(new WidgetPointer(arg0)), 10), new WidgetPointer(arg0));
+			}
+		}
+	} else if (getWidgetActualY(new WidgetPointer(arg0)) > 30) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+	} else {
+		setWidgetPosition(0, add(getWidgetActualY(new WidgetPointer(arg0)), 1), 2, 0, new WidgetPointer(arg0));
+		if (getWidgetShadeColor(new WidgetPointer(arg0)) < 245) {
+			cs2method2103(add(getWidgetShadeColor(new WidgetPointer(arg0)), 10), new WidgetPointer(arg0));
+		}
+	}
+	return;
+}

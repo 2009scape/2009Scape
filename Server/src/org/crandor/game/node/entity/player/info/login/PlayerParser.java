@@ -37,124 +37,127 @@ public final class PlayerParser {
 			int[] opcodeLog = new int[5];
 			while ((opcode = buffer.get() & 0xFF) != 0) {
 				switch (opcode) {
-				case 1:
-					player.setLocation(Location.create(buffer.getShort() & 0xFFFF, buffer.getShort() & 0xFFFF, buffer.get() & 0xF));
-					break;
-				case 2:
-					networth += player.getInventory().parse(buffer);
-					break;
-				case 3:
-					networth += player.getEquipment().parse(buffer);
-					break;
-				case 4:
-					networth += player.getBank().parse(buffer);
-					break;
-				case 5:
-					player.getSkills().parse(buffer);
-					break;
-				case 6:
-					player.getSettings().parse(buffer);
-					break;
-				case 7://old emotes
-					int op;
-					while ((op = buffer.get() & 0xFF) != 0) {
-						switch (op) {
-						default: // Opcodes 22-40 are used for locked emotes.
-							player.getEmoteManager().unlock(Emotes.values()[op]);
-							break;
+					case 1:
+						player.setLocation(Location.create(buffer.getShort() & 0xFFFF, buffer.getShort() & 0xFFFF, buffer.get() & 0xF));
+						break;
+					case 2:
+						networth += player.getInventory().parse(buffer);
+						break;
+					case 3:
+						networth += player.getEquipment().parse(buffer);
+						break;
+					case 4:
+						networth += player.getBank().parse(buffer);
+						break;
+					case 5:
+						player.getSkills().parse(buffer);
+						break;
+					case 6:
+						player.getSettings().parse(buffer);
+						break;
+					case 7://old emotes
+						int op;
+						while ((op = buffer.get() & 0xFF) != 0) {
+							switch (op) {
+								default: // Opcodes 22-40 are used for locked emotes.
+									player.getEmoteManager().unlock(Emotes.values()[op]);
+									break;
+							}
 						}
-					}
-					break;
-				case 10:
-					player.getGameAttributes().parse(buffer);
-					break;
-				case 14:
-					player.getSlayer().parse(buffer);
-					break;
-				case 17:
-					player.getQuestRepository().parse(buffer);
-					break;
-				case 21:
-					player.getAppearance().parse(buffer);
-					break;
-				case 23:
-					player.getGraveManager().parse(buffer);
-					break;
-				case 25:
-					player.getSpellBookManager().parse(buffer);
-					break;
-				case 26:
-					player.getGrandExchange().parse(buffer);
-					break;
-				case 27:
-					player.getSavedData().parse(buffer);
-					break;
-				case 28:
-					player.getDetails().getCommunication().parsePrevious(buffer);
-					break;
-				case 29:
-					int spellBook = buffer.get();
-					int spellId = buffer.get() & 0xFF;
-					player.getProperties().setAutocastSpell((CombatSpell) SpellBookManager.SpellBook.values()[spellBook].getSpell(spellId));
-					break;
-				case 30:
-					player.getFarmingManager().parse(buffer);
-					break;
-				case 31:
-					player.getConfigManager().parse(buffer);
-					break;
-				case 32:
-					player.getWarningMessages().parse(buffer);
-					break;
-				case 33:
-					player.getMonitor().parse(buffer);
-					break;
-				case 34:
-					player.getMusicPlayer().parse(buffer);
-					break;
-				case 35:
-					player.getFamiliarManager().parse(buffer);
-					break;
-				case 36:
-					player.getBarcrawlManager().parse(buffer);
-					break;
-				case 37:
-					player.getStateManager().parse(buffer);
-					break;
-				case 38:
-					player.getAntiMacroHandler().parse(buffer);
-					break;
-				case 39:
-					player.getTreasureTrailManager().parse(buffer);
-					break;
-				case 40:
-					player.getBankPinManager().parse(buffer);
-					break;
-				case 41:
-					player.getHouseManager().parse(buffer);
-					break;
-				case 42:
-					player.getAchievementDiaryManager().parse(buffer);
-					break;
-				case 43:
-					player.getIronmanManager().parse(buffer);
-					break;
-				case 44:
-					player.getEmoteManager().parse(buffer);
-					break;
-				case 45:
-					player.getSkills().setCombatMilestone(buffer.get() & 0xFF);
-					player.getSkills().setSkillMilestone(buffer.get() & 0xFF);
-					break;
-				case 46:
-					player.getSkills().parseExpRate(buffer);
-					break;
-				case 47:
-					player.getStatisticsManager().parse(buffer);
-					break;
-				default:
-					System.err.println("[Player parsing] Unhandled opcode: " + opcode + " for " + player.getName() + " - [log=" + Arrays.toString(opcodeLog) + "].");
-					break;
+						break;
+					case 10:
+						player.getGameAttributes().parse(buffer);
+						break;
+					case 14:
+						player.getSlayer().parse(buffer);
+						break;
+					case 17:
+						player.getQuestRepository().parse(buffer);
+						break;
+					case 21:
+						player.getAppearance().parse(buffer);
+						break;
+					case 23:
+						player.getGraveManager().parse(buffer);
+						break;
+					case 25:
+						player.getSpellBookManager().parse(buffer);
+						break;
+					case 26:
+						player.getGrandExchange().parse(buffer);
+						break;
+					case 27:
+						player.getSavedData().parse(buffer);
+						break;
+					case 28:
+						player.getDetails().getCommunication().parsePrevious(buffer);
+						break;
+					case 29:
+						int spellBook = buffer.get();
+						int spellId = buffer.get() & 0xFF;
+						player.getProperties().setAutocastSpell((CombatSpell) SpellBookManager.SpellBook.values()[spellBook].getSpell(spellId));
+						break;
+					case 30:
+						player.getFarmingManager().parse(buffer);
+						break;
+					case 31:
+						player.getConfigManager().parse(buffer);
+						break;
+					case 32:
+						player.getWarningMessages().parse(buffer);
+						break;
+					case 33:
+						player.getMonitor().parse(buffer);
+						break;
+					case 34:
+						player.getMusicPlayer().parse(buffer);
+						break;
+					case 35:
+						player.getFamiliarManager().parse(buffer);
+						break;
+					case 36:
+						player.getBarcrawlManager().parse(buffer);
+						break;
+					case 37:
+						player.getStateManager().parse(buffer);
+						break;
+					case 38:
+						player.getAntiMacroHandler().parse(buffer);
+						break;
+					case 39:
+						player.getTreasureTrailManager().parse(buffer);
+						break;
+					case 40:
+						player.getBankPinManager().parse(buffer);
+						break;
+					case 41:
+						player.getHouseManager().parse(buffer);
+						break;
+					case 42:
+						player.getAchievementDiaryManager().parse(buffer);
+						break;
+					case 43:
+						player.getIronmanManager().parse(buffer);
+						break;
+					case 44:
+						player.getEmoteManager().parse(buffer);
+						break;
+					case 45:
+						player.getSkills().setCombatMilestone(buffer.get() & 0xFF);
+						player.getSkills().setSkillMilestone(buffer.get() & 0xFF);
+						break;
+					case 46:
+						player.getSkills().parseExpRate(buffer);
+						break;
+					case 47:
+						player.getStatisticsManager().parse(buffer);
+						break;
+					case 48:
+						player.getBrawlingGlovesManager().parse(buffer);
+						break;
+					default:
+						System.err.println("[Player parsing] Unhandled opcode: " + opcode + " for " + player.getName() + " - [log=" + Arrays.toString(opcodeLog) + "].");
+						break;
 				}
 				for (int i = opcodeLog.length - 2; i >= 0; i--) {
 					opcodeLog[i + 1] = opcodeLog[i];
@@ -293,20 +296,25 @@ public final class PlayerParser {
 
 		// Ironman Manager
 		player.getIronmanManager().save(buffer.put((byte) 43));
-		
+
 		//Emotes
 		if (player.getEmoteManager().isSaveRequired()) {
 			player.getEmoteManager().save(buffer.put((byte) 44));
 		}
-		
+
 		//Milestones
 		if (player.getSkills().getCombatMilestone() > 0 || player.getSkills().getSkillMilestone() > 0) {
 			buffer.put((byte) 45).put((byte) player.getSkills().getCombatMilestone()).put((byte) player.getSkills().getSkillMilestone());
 		}
 
+		//xp rate
 		player.getSkills().saveExpRate(buffer.put((byte) 46));
-		
+
+		//stat manager
 		player.getStatisticsManager().save(buffer.put((byte)47));
+
+		//Brawling Gloves manager
+		player.getBrawlingGlovesManager().save(buffer.put((byte)48));
 
 		buffer.put((byte) 0); // EOF opcode
 		buffer.flip();

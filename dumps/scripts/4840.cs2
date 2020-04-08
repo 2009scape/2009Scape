@@ -1,0 +1,104 @@
+void script_4840() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int stack_dump0;
+	cs2func_script_4841_struct(6,0,0) structdump_1;
+	ivar0 = 0;
+	switch (bitconfig_9558) {
+		case 1:
+			ivar0 = bitconfig_9563;
+			break;
+		case 2:
+			ivar0 = bitconfig_9572;
+			break;
+		case 3:
+			ivar0 = bitconfig_9581;
+	}
+	if (((boolean)ivar0)) {
+		return;
+	}
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = -1;
+	ivar8 = -1;
+	ivar9 = -1;
+	stack_dump0 = bitconfig_9558;
+	structdump_1 = script_4841(stack_dump0);
+	ivar6 = structdump_1.intpart_5;
+	ivar5 = structdump_1.intpart_4;
+	ivar4 = structdump_1.intpart_3;
+	ivar3 = structdump_1.intpart_2;
+	ivar2 = structdump_1.intpart_1;
+	ivar1 = structdump_1.intpart_0;
+	ivar10 = cs2method_3408(105, 100, 4286, ivar1);
+	ivar11 = cs2method_3408(105, 100, 4286, ivar3);
+	ivar12 = cs2method_3408(105, 100, 4286, ivar5);
+	switch (ivar0) {
+		case 1:
+			if (ivar2 > 0) {
+				setWidgetText(new WidgetPointer(1092,47), intToStr(ivar2));
+			} else {
+				setWidgetText(new WidgetPointer(1092,47), "");
+			}
+			ivar7 = 71565356;
+			ivar8 = 71565357;
+			ivar9 = 71565358;
+			break;
+		case 2:
+			if (ivar2 > 0) {
+				setWidgetText(new WidgetPointer(1092,56), intToStr(ivar2));
+			} else {
+				setWidgetText(new WidgetPointer(1092,56), "");
+			}
+			if (ivar4 > 0) {
+				setWidgetText(new WidgetPointer(1092,57), intToStr(ivar4));
+			} else {
+				setWidgetText(new WidgetPointer(1092,57), "");
+			}
+			ivar7 = 71565365;
+			ivar8 = 71565366;
+			ivar9 = 71565367;
+			break;
+		case 3:
+			if (ivar2 > 0) {
+				setWidgetText(new WidgetPointer(1092,65), intToStr(ivar2));
+			} else {
+				setWidgetText(new WidgetPointer(1092,65), "");
+			}
+			if (ivar4 > 0) {
+				setWidgetText(new WidgetPointer(1092,67), intToStr(ivar4));
+			} else {
+				setWidgetText(new WidgetPointer(1092,67), "");
+			}
+			if (ivar6 > 0) {
+				setWidgetText(new WidgetPointer(1092,66), intToStr(ivar6));
+			} else {
+				setWidgetText(new WidgetPointer(1092,66), "");
+			}
+			ivar7 = 71565374;
+			ivar8 = 71565375;
+			ivar9 = 71565376;
+			break;
+		default:
+			return;
+	}
+	setWidgetSprite(ivar10, new WidgetPointer(ivar7));
+	setWidgetSprite(ivar11, new WidgetPointer(ivar8));
+	setWidgetSprite(ivar12, new WidgetPointer(ivar9));
+	return;
+}

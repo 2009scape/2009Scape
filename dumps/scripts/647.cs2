@@ -1,0 +1,15 @@
+void script_647(int arg0,int arg1,int arg2,int arg3,string arg4) {
+	int ivar4;
+	ivar4 = 0;
+	if (((boolean)globalint_2) && (ivar4 < 6)) {
+		while (true) {
+			script_41(((int)script_626(ivar4)));
+			ivar4 = add(ivar4, 1);
+		}
+	}
+	if (isWidgetHidden(new WidgetPointer(105,17))) {
+		return;
+	}
+	script_39(arg0, arg1, arg2, arg3, arg4);
+	return;
+}

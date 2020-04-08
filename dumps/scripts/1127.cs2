@@ -1,0 +1,25 @@
+void script_1127(int arg0) {
+	int ivar1;
+	string svar0;
+	ivar1 = -1;
+	svar0 = "";
+	switch (arg0) {
+		case 12582914:
+			svar0 = "Toggle defensive casting.";
+			ivar1 = 12583008;
+			break;
+		case 12648466:
+			svar0 = "Toggle defensive casting.";
+			ivar1 = 12648501;
+			break;
+		case 28180500:
+			svar0 = "Toggle defensive casting.";
+			ivar1 = 28180545;
+			break;
+		case 62259202:
+			svar0 = "Toggle defensive casting.";
+			ivar1 = 62259272;
+	}
+	script_39(arg0, ivar1, 25, getWidgetActualWidth(new WidgetPointer(getWidgetParentId(new WidgetPointer(ivar1)))), svar0);
+	return;
+}

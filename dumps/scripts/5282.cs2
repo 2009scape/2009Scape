@@ -1,0 +1,8 @@
+void script_5282() {
+	if (getWidgetActualX(new WidgetPointer(555,48)) > 29) {
+		playSoundEffect2False(7557, 1, 0, 200, cs2method_4019(20, 20));
+		setWidgetPosition(subtract(getWidgetActualX(new WidgetPointer(555,48)), 10), getWidgetActualY(new WidgetPointer(555,48)), 0, 0, new WidgetPointer(555,48));
+		setWidgetPosition(subtract(getWidgetActualX(new WidgetPointer(555,49)), 10), getWidgetActualY(new WidgetPointer(555,49)), 0, 0, new WidgetPointer(555,49));
+	}
+	return;
+}

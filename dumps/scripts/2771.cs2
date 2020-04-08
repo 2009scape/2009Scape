@@ -1,0 +1,21 @@
+void script_2771(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = subtract(getClientCycle(), arg1);
+	if ((ivar2 >= 181) || (globalint_1007 != 1)) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+		return;
+	}
+	if (((boolean)mod(ivar2, 25))) {
+		switch (rnd(2)) {
+			case 0:
+				playSoundEffect(6645, 1, 0);
+				break;
+			case 1:
+				playSoundEffect(6644, 1, 0);
+				break;
+			case 2:
+				playSoundEffect(6643, 1, 0);
+		}
+	}
+	return;
+}

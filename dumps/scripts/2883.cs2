@@ -1,0 +1,7 @@
+void script_2883() {
+	if (((boolean)bitconfig_4393) || ((boolean)bitconfig_542)) {
+		return;
+	}
+	script_39(12255243, 12255248, 25, 189, "Clear playlist");
+	return;
+}

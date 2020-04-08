@@ -1,0 +1,405 @@
+void script_4268(int arg0) {
+	switch (arg0) {
+		case 1:
+			setWidgetText(new WidgetPointer(1083,85), "Teleport to South Falador");
+			break;
+		case 2:
+			setWidgetText(new WidgetPointer(1083,85), "Repair Rune Pouch");
+			break;
+		case 3:
+			setWidgetText(new WidgetPointer(1083,85), "Teleport to North Ardougne");
+			break;
+		case 4:
+			setWidgetText(new WidgetPointer(1083,85), "Remote Farming");
+			break;
+		case 5:
+			setWidgetText(new WidgetPointer(1083,85), "Spiritualise Food");
+			break;
+		case 6:
+			setWidgetText(new WidgetPointer(1083,85), "Make Leather");
+			break;
+		case 7:
+			setWidgetText(new WidgetPointer(1083,85), "Disruption Shield");
+			break;
+		case 8:
+			setWidgetText(new WidgetPointer(1083,85), "Vengeance Group");
+			break;
+		case 9:
+			setWidgetText(new WidgetPointer(1083,85), "Let it Rain Seeds!");
+			break;
+		case 10:
+			setWidgetText(new WidgetPointer(1083,85), "Gimme Herbs!");
+			break;
+		case 11:
+			setWidgetText(new WidgetPointer(1083,85), "Vial My Herbs!");
+			break;
+		case 12:
+			setWidgetText(new WidgetPointer(1083,85), "Turn Lunar Lumber into Runes!");
+			break;
+		case 13:
+			setWidgetText(new WidgetPointer(1083,85), "Reduce the Fish I Burn!");
+			break;
+		case 14:
+			setWidgetText(new WidgetPointer(1083,85), "More Planks, Please!");
+			break;
+		case 15:
+			setWidgetText(new WidgetPointer(1083,85), "Teleport to Trollheim");
+			break;
+		case 16:
+			setWidgetText(new WidgetPointer(1083,85), "Teleport Group to Trollheim");
+			break;
+		case 17:
+			setWidgetText(new WidgetPointer(1083,85), "Borrowed Power");
+			break;
+		case 18:
+			setWidgetText(new WidgetPointer(1083,85), "Let it Rain Awesome Seeds!");
+			break;
+		case 19:
+			setWidgetText(new WidgetPointer(1083,85), "I'd Like a New Patch!");
+			break;
+		case 20:
+			setWidgetText(new WidgetPointer(1083,85), "Give Me An Arcane Capacitor!");
+			break;
+		case 21:
+			setWidgetText(new WidgetPointer(1083,85), "Protect A Patch For Me!");
+	}
+	switch (arg0) {
+		case 1:
+			setWidgetText(new WidgetPointer(1083,87), "Teleports you to the south of Falador.");
+			break;
+		case 2:
+			setWidgetText(new WidgetPointer(1083,87), "Use on a degraded pouch to repair it and improve its strength, so it takes longer to degrade.");
+			break;
+		case 3:
+			setWidgetText(new WidgetPointer(1083,87), "Teleports you to the north of Ardougne.");
+			break;
+		case 4:
+			setWidgetText(new WidgetPointer(1083,87), "View the status of farming patches and cure any disease from a distance.");
+			break;
+		case 5:
+			setWidgetText(new WidgetPointer(1083,87), "Cast on ordinary food and feed it to your familiar to heal it, boost its combat stats and extend its timer.");
+			break;
+		case 6:
+			setWidgetText(new WidgetPointer(1083,87), "Cast on hides to turn them into leather. This will convert 5 hides at a time.");
+			break;
+		case 7:
+			setWidgetText(new WidgetPointer(1083,87), "Nullifies the next hit you receive from another player. This works against players only, not against monsters.");
+			break;
+		case 8:
+			setWidgetText(new WidgetPointer(1083,87), "When cast, those nearby get to rebound damage." + "<br>" + "After learning this last spell, your current produce will be reduced by " + script_46(multiply(cs2method_3408(105, 105, 3674, 7), 10), ",") + " and the remainder can be spent on wishes.");
+			break;
+		case 9:
+			setWidgetText(new WidgetPointer(1083,87), "Seeds will appear on the floor. Be quick to pick up the ones you want.");
+			break;
+		case 10:
+			setWidgetText(new WidgetPointer(1083,87), "Puts a load of grimy herbs in your inventory.");
+			break;
+		case 11:
+			setWidgetText(new WidgetPointer(1083,87), "Takes all the clean herbs in your inventory and turns them into unfinished potions of that herb type. This will work on noted herbs of up to 50 at a time.");
+			break;
+		case 12:
+			setWidgetText(new WidgetPointer(1083,87), "Turns all lunar lumber in your inventory into runes. You'll need a full inventory of logs.");
+			break;
+		case 13:
+			setWidgetText(new WidgetPointer(1083,87), "For the next thirty minutes, you'll find that you burn fewer fish.");
+			break;
+		case 14:
+			setWidgetText(new WidgetPointer(1083,87), "This will be active for the next twenty minutes: when casting Plank Make, you will have a chance of receiving additional planks.");
+			break;
+		case 15:
+			setWidgetText(new WidgetPointer(1083,87), "Teleports you to the farming patch in Trollheim.");
+			break;
+		case 16:
+			setWidgetText(new WidgetPointer(1083,87), "Teleports you and those nearby to the farming patch in Trollheim.");
+			break;
+		case 17:
+			setWidgetText(new WidgetPointer(1083,87), "Allows you to store and cast certain spells from the standard spellbook.");
+			break;
+		case 18:
+			setWidgetText(new WidgetPointer(1083,87), "High value seeds will appear on the floor. Be quick to pick up the ones you want.");
+			break;
+		case 19:
+			setWidgetText(new WidgetPointer(1083,87), "A new allotment patch will become available nearby. It will vanish if the patch is cleared.");
+			break;
+		case 20:
+			setWidgetText(new WidgetPointer(1083,87), "You'll be given an Arcane Capacitor, for use with the Borrowed Power spell.");
+			break;
+		case 21:
+			if (bitconfig_9067 < 11) {
+				setWidgetText(new WidgetPointer(1083,87), "Gives you a scroll which, when used on a fruit tree or tree patch, will protect that patch for the next 10 growths in that patch. ");
+			} else {
+				setWidgetText(new WidgetPointer(1083,87), "Gives you a scroll which, when used on a fruit tree or tree patch, will protect that patch for the next 10 growths in that patch. You will need to use the scroll on a patch that is currently growing something and you must have the produce in your inventory that would cover the cost of protecting that patch normally.");
+			}
+	}
+	switch (arg0) {
+		case 1:
+			if (bitconfig_9067 < 1) {
+				setWidgetText(new WidgetPointer(1083,89), "Requires level 72 Magic to cast. You must unlock the spells in order.");
+			} else {
+				setWidgetText(new WidgetPointer(1083,89), "Learned!");
+			}
+			break;
+		case 2:
+			if (bitconfig_9067 < 2) {
+				setWidgetText(new WidgetPointer(1083,89), "Requires level 75 Magic to cast. You must unlock the spells in order.");
+			} else {
+				setWidgetText(new WidgetPointer(1083,89), "Learned!");
+			}
+			break;
+		case 3:
+			if (bitconfig_9067 < 3) {
+				setWidgetText(new WidgetPointer(1083,89), "Requires level 76 Magic to cast. You must unlock the spells in order.");
+			} else {
+				setWidgetText(new WidgetPointer(1083,89), "Learned!");
+			}
+			break;
+		case 4:
+			if (bitconfig_9067 < 4) {
+				setWidgetText(new WidgetPointer(1083,89), "Requires level 78 Magic to cast. You must unlock the spells in order.");
+			} else {
+				setWidgetText(new WidgetPointer(1083,89), "Learned!");
+			}
+			break;
+		case 5:
+			if (bitconfig_9067 < 5) {
+				setWidgetText(new WidgetPointer(1083,89), "Requires level 80 Magic to cast. You must unlock the spells in order.");
+			} else {
+				setWidgetText(new WidgetPointer(1083,89), "Learned!");
+			}
+			break;
+		case 6:
+			if (bitconfig_9067 < 6) {
+				setWidgetText(new WidgetPointer(1083,89), "Requires level 83 Magic to cast. You must unlock the spells in order.");
+			} else {
+				setWidgetText(new WidgetPointer(1083,89), "Learned!");
+			}
+			break;
+		case 7:
+			if (bitconfig_9067 < 7) {
+				setWidgetText(new WidgetPointer(1083,89), "Requires level 90 Magic to cast. You must unlock the spells in order.");
+			} else {
+				setWidgetText(new WidgetPointer(1083,89), "Learned!");
+			}
+			break;
+		case 8:
+			if (bitconfig_9067 < 8) {
+				setWidgetText(new WidgetPointer(1083,89), "Requires level 95 Magic to cast. You must unlock the spells in order.");
+			} else {
+				setWidgetText(new WidgetPointer(1083,89), "Learned!");
+			}
+			break;
+		case 15:
+			if (bitconfig_9067 < 9) {
+				setWidgetText(new WidgetPointer(1083,89), "Requires level 92 Magic to cast. You must unlock the spells in order.");
+			} else {
+				setWidgetText(new WidgetPointer(1083,89), "Learned!");
+			}
+			break;
+		case 16:
+			if (bitconfig_9067 < 10) {
+				setWidgetText(new WidgetPointer(1083,89), "Requires level 93 Magic to cast. You must unlock the spells in order.");
+			} else {
+				setWidgetText(new WidgetPointer(1083,89), "Learned!");
+			}
+			break;
+		case 17:
+			if (bitconfig_9067 < 11) {
+				setWidgetText(new WidgetPointer(1083,89), "Requires level 99 Magic to cast. You must unlock the spells in order.");
+			} else {
+				setWidgetText(new WidgetPointer(1083,89), "Learned!");
+			}
+			break;
+		default:
+			if (bitconfig_9067 < 11) {
+				setWidgetText(new WidgetPointer(1083,89), "You must unlock all the spells before you can use wishes.");
+			}
+	}
+	if ((arg0 < 9) || ((arg0 > 14) && (arg0 < 18))) {
+		setWidgetIsHidden(false, new WidgetPointer(1083,90));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1083,90));
+	}
+	switch (arg0) {
+		case 1:
+			setWidgetSprite(4585, new WidgetPointer(1083,93));
+			break;
+		case 2:
+			setWidgetSprite(4586, new WidgetPointer(1083,93));
+			break;
+		case 3:
+			setWidgetSprite(4587, new WidgetPointer(1083,93));
+			break;
+		case 4:
+			setWidgetSprite(4588, new WidgetPointer(1083,93));
+			break;
+		case 5:
+			setWidgetSprite(4590, new WidgetPointer(1083,93));
+			break;
+		case 6:
+			setWidgetSprite(4589, new WidgetPointer(1083,93));
+			break;
+		case 7:
+			setWidgetSprite(4591, new WidgetPointer(1083,93));
+			break;
+		case 8:
+			setWidgetSprite(4592, new WidgetPointer(1083,93));
+			break;
+		case 15:
+			setWidgetSprite(7685, new WidgetPointer(1083,93));
+			break;
+		case 16:
+			setWidgetSprite(7686, new WidgetPointer(1083,93));
+			break;
+		case 17:
+			setWidgetSprite(7687, new WidgetPointer(1083,93));
+	}
+	setWidgetIsHidden(true, new WidgetPointer(1083,94));
+	setWidgetIsHidden(true, new WidgetPointer(1083,95));
+	setWidgetIsHidden(true, new WidgetPointer(1083,96));
+	setWidgetIsHidden(true, new WidgetPointer(1083,97));
+	setWidgetIsHidden(true, new WidgetPointer(1083,98));
+	setWidgetIsHidden(true, new WidgetPointer(1083,99));
+	setWidgetIsHidden(true, new WidgetPointer(1083,100));
+	setWidgetIsHidden(true, new WidgetPointer(1083,101));
+	setWidgetIsHidden(true, new WidgetPointer(1083,102));
+	setWidgetIsHidden(true, new WidgetPointer(1083,103));
+	setWidgetIsHidden(true, new WidgetPointer(1083,104));
+	setWidgetIsHidden(true, new WidgetPointer(1083,105));
+	setWidgetIsHidden(true, new WidgetPointer(1083,106));
+	setWidgetIsHidden(true, new WidgetPointer(1083,107));
+	setWidgetIsHidden(true, new WidgetPointer(1083,460));
+	setWidgetIsHidden(true, new WidgetPointer(1083,470));
+	setWidgetIsHidden(true, new WidgetPointer(1083,480));
+	setWidgetIsHidden(true, new WidgetPointer(1083,518));
+	setWidgetIsHidden(true, new WidgetPointer(1083,528));
+	setWidgetIsHidden(true, new WidgetPointer(1083,538));
+	setWidgetIsHidden(true, new WidgetPointer(1083,558));
+	switch (arg0) {
+		case 1:
+			if (bitconfig_9067 < 1) {
+				setWidgetIsHidden(false, new WidgetPointer(1083,94));
+			}
+			break;
+		case 2:
+			if (bitconfig_9067 < 2) {
+				setWidgetIsHidden(false, new WidgetPointer(1083,95));
+			}
+			break;
+		case 3:
+			if (bitconfig_9067 < 3) {
+				setWidgetIsHidden(false, new WidgetPointer(1083,96));
+			}
+			break;
+		case 4:
+			if (bitconfig_9067 < 4) {
+				setWidgetIsHidden(false, new WidgetPointer(1083,97));
+			}
+			break;
+		case 5:
+			if (bitconfig_9067 < 5) {
+				setWidgetIsHidden(false, new WidgetPointer(1083,98));
+			}
+			break;
+		case 6:
+			if (bitconfig_9067 < 6) {
+				setWidgetIsHidden(false, new WidgetPointer(1083,99));
+			}
+			break;
+		case 7:
+			if (bitconfig_9067 < 7) {
+				setWidgetIsHidden(false, new WidgetPointer(1083,100));
+			}
+			break;
+		case 8:
+			if (bitconfig_9067 < 8) {
+				setWidgetIsHidden(false, new WidgetPointer(1083,101));
+			}
+			break;
+		case 9:
+			if (bitconfig_9067 > 10) {
+				setWidgetIsHidden(false, new WidgetPointer(1083,102));
+			}
+			break;
+		case 10:
+			if (bitconfig_9067 > 10) {
+				setWidgetIsHidden(false, new WidgetPointer(1083,103));
+			}
+			break;
+		case 11:
+			if (bitconfig_9067 > 10) {
+				setWidgetIsHidden(false, new WidgetPointer(1083,104));
+			}
+			break;
+		case 12:
+			if (bitconfig_9067 > 10) {
+				setWidgetIsHidden(false, new WidgetPointer(1083,105));
+			}
+			break;
+		case 13:
+			if (bitconfig_9067 > 10) {
+				setWidgetIsHidden(false, new WidgetPointer(1083,106));
+			}
+			break;
+		case 14:
+			if (bitconfig_9067 > 10) {
+				setWidgetIsHidden(false, new WidgetPointer(1083,107));
+			}
+			break;
+		case 15:
+			if (bitconfig_9067 < 9) {
+				setWidgetIsHidden(false, new WidgetPointer(1083,460));
+			}
+			break;
+		case 16:
+			if (bitconfig_9067 < 10) {
+				setWidgetIsHidden(false, new WidgetPointer(1083,470));
+			}
+			break;
+		case 17:
+			if (bitconfig_9067 < 11) {
+				setWidgetIsHidden(false, new WidgetPointer(1083,480));
+			}
+			break;
+		case 18:
+			if (bitconfig_9067 > 10) {
+				setWidgetIsHidden(false, new WidgetPointer(1083,518));
+			}
+			break;
+		case 19:
+			if (bitconfig_9067 > 10) {
+				setWidgetIsHidden(false, new WidgetPointer(1083,528));
+			}
+			break;
+		case 20:
+			if (bitconfig_9067 > 10) {
+				setWidgetIsHidden(false, new WidgetPointer(1083,538));
+			}
+			break;
+		case 21:
+			if (bitconfig_9067 > 10) {
+				setWidgetIsHidden(false, new WidgetPointer(1083,558));
+			}
+	}
+	setWidgetIsHidden(true, new WidgetPointer(1083,385));
+	setWidgetIsHidden(true, new WidgetPointer(1083,72));
+	setWidgetIsHidden(true, new WidgetPointer(1083,67));
+	setWidgetIsHidden(true, new WidgetPointer(1083,62));
+	setWidgetIsHidden(true, new WidgetPointer(1083,57));
+	setWidgetIsHidden(true, new WidgetPointer(1083,52));
+	setWidgetIsHidden(true, new WidgetPointer(1083,47));
+	setWidgetIsHidden(true, new WidgetPointer(1083,42));
+	setWidgetIsHidden(true, new WidgetPointer(1083,37));
+	setWidgetIsHidden(true, new WidgetPointer(1083,32));
+	setWidgetIsHidden(true, new WidgetPointer(1083,27));
+	setWidgetIsHidden(true, new WidgetPointer(1083,22));
+	setWidgetIsHidden(true, new WidgetPointer(1083,17));
+	setWidgetIsHidden(true, new WidgetPointer(1083,12));
+	setWidgetIsHidden(true, new WidgetPointer(1083,431));
+	setWidgetIsHidden(true, new WidgetPointer(1083,442));
+	setWidgetIsHidden(true, new WidgetPointer(1083,453));
+	setWidgetIsHidden(true, new WidgetPointer(1083,493));
+	setWidgetIsHidden(true, new WidgetPointer(1083,502));
+	setWidgetIsHidden(true, new WidgetPointer(1083,512));
+	setWidgetIsHidden(true, new WidgetPointer(1083,552));
+	return;
+}

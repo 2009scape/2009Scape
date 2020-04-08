@@ -1,0 +1,52 @@
+void script_2138(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	ivar3 = add(bitconfig_5861, 95);
+	ivar4 = add(bitconfig_5859, 85);
+	ivar5 = add(bitconfig_5855, 29);
+	ivar6 = 0;
+	ivar7 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		if (arg2 < 150) {
+			arg2 = add(arg2, 10);
+			cs2method2103(arg2);
+			setScriptCallOnGameloop(2138, new WidgetPointer(-32768,3), -2147483643, arg2, "Iii");
+		} else if (arg2 <= 225) {
+			arg2 = add(arg2, 2);
+			cs2method2103(arg2);
+			setScriptCallOnGameloop(2138, new WidgetPointer(-32768,3), -2147483643, arg2, "Iii");
+		} else if (arg2 < 300) {
+			arg2 = add(arg2, 2);
+			cs2method2103(subtract(450, arg2));
+			setScriptCallOnGameloop(2138, new WidgetPointer(-32768,3), -2147483643, arg2, "Iii");
+		} else {
+			arg2 = 150;
+			cs2method2103(150);
+			setScriptCallOnGameloop(2138, new WidgetPointer(-32768,3), -2147483643, arg2, "Iii");
+		}
+		ivar6 = multiplyDivide(cs2method1609(), 255, 100);
+		ivar7 = divide(ivar6, 2);
+		switch (bitconfig_5863) {
+			case 0:
+				ivar4 = add(ivar4, ivar6);
+				ivar3 = add(ivar3, ivar7);
+				break;
+			case 1:
+				ivar5 = add(ivar5, ivar6);
+				ivar3 = add(ivar3, ivar7);
+				break;
+			case 2:
+				ivar5 = add(ivar5, ivar6);
+				ivar4 = add(ivar4, ivar7);
+				break;
+			default:
+				ivar4 = add(ivar4, ivar6);
+				ivar5 = add(ivar5, ivar7);
+		}
+		setWidgetRGB(new Color(script_693(ivar3, ivar4, ivar5)));
+	}
+	return;
+}

@@ -1,0 +1,3 @@
+int script_1986() {
+	return 9;
+}

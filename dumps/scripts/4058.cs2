@@ -1,0 +1,14 @@
+void script_4058(int arg0,int arg1,int arg2) {
+	int ivar3;
+	ivar3 = 5;
+	if (getWidgetActualY(new WidgetPointer(arg0)) > subtract(1, getWidgetActualHeight(new WidgetPointer(arg0)))) {
+		setWidgetPosition(0, subtract(getWidgetActualY(new WidgetPointer(arg0)), ivar3), 1, 0, new WidgetPointer(arg0));
+	} else {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg2));
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+		setWidgetIsHidden(false, new WidgetPointer(arg1));
+		setWidgetPosition(0, subtract(1, getWidgetActualHeight(new WidgetPointer(arg1))), 1, 0, new WidgetPointer(arg1));
+		setScriptCallOnGameloop(4059, new WidgetPointer(arg1), new WidgetPointer(arg2), "II", new WidgetPointer(arg2));
+	}
+	return;
+}

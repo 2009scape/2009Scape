@@ -1,0 +1,4 @@
+void script_1964(int arg0) {
+	setWidgetText(new WidgetPointer(arg0), strRemoveEntities(getWidgetText(new WidgetPointer(arg0))));
+	return;
+}

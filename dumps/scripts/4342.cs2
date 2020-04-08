@@ -1,0 +1,70 @@
+void script_4342(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	string svar0;
+	string svar1;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	cs2func_script_4341_struct(0,2,0) structdump_3;
+	cs2func_script_4341_struct(0,2,0) structdump_4;
+	svar0 = "";
+	svar1 = "";
+	if (((boolean)mod(getClientCycle(), 3000))) {
+		arg1 = add(arg1, 1);
+		if (arg1 >= 60) {
+			arg1 = 0;
+			arg0 = add(arg0, 1);
+			if (arg0 >= 24) {
+				arg0 = 0;
+			}
+		}
+		if (arg0 < 10) {
+			svar0 = "0" + intToStr(arg0);
+		} else {
+			svar0 = intToStr(arg0);
+		}
+		if (arg1 < 10) {
+			svar1 = "0" + intToStr(arg1);
+		} else {
+			svar1 = intToStr(arg1);
+		}
+		setWidgetText(new WidgetPointer(arg3), svar0 + ":" + svar1);
+		setScriptCallOnGameloop(4342, arg0, arg1, arg2, new WidgetPointer(arg3), new WidgetPointer(arg4), "iiiII", new WidgetPointer(arg3));
+		stack_dump0 = arg2;
+		stack_dump1 = arg0;
+		stack_dump2 = arg1;
+		structdump_3 = script_4341(stack_dump0, stack_dump1, stack_dump2);
+		svar1 = structdump_3.stringpart_1;
+		svar0 = structdump_3.stringpart_0;
+		setWidgetText(new WidgetPointer(arg4), svar0 + ":" + svar1);
+	} else {
+		if (((boolean)mod(getClientCycle(), 50))) {
+			if (arg0 < 10) {
+				svar0 = "0" + intToStr(arg0);
+			} else {
+				svar0 = intToStr(arg0);
+			}
+			if (arg1 < 10) {
+				svar1 = "0" + intToStr(arg1);
+			} else {
+				svar1 = intToStr(arg1);
+			}
+			if (((boolean)mod(getClientCycle(), 100))) {
+				setWidgetText(new WidgetPointer(arg3), svar0 + ":" + svar1);
+			} else {
+				setWidgetText(new WidgetPointer(arg3), svar0 + " " + svar1);
+			}
+			stack_dump0 = arg2;
+			stack_dump1 = arg0;
+			stack_dump2 = arg1;
+			structdump_4 = script_4341(stack_dump0, stack_dump1, stack_dump2);
+			svar1 = structdump_4.stringpart_1;
+			svar0 = structdump_4.stringpart_0;
+			if (((boolean)mod(getClientCycle(), 100))) {
+				setWidgetText(new WidgetPointer(arg4), svar0 + ":" + svar1);
+			} else {
+				setWidgetText(new WidgetPointer(arg4), svar0 + " " + svar1);
+			}
+		}
+	}
+	return;
+}

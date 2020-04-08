@@ -1,0 +1,30 @@
+int script_523(int arg0) {
+	if (arg0 == 20) {
+		return globalint_54;
+	}
+	if (arg0 == 12) {
+		return globalint_55;
+	}
+	if (arg0 == 9) {
+		return globalint_57;
+	}
+	if (arg0 == 7) {
+		return globalint_58;
+	}
+	if (arg0 == 22) {
+		return globalint_60;
+	}
+	if (arg0 == 15) {
+		return globalint_61;
+	}
+	if (arg0 == 6) {
+		return globalint_64;
+	}
+	if (arg0 == 13) {
+		return globalint_66;
+	}
+	if (arg0 == 19) {
+		return globalint_62;
+	}
+	return 0;
+}

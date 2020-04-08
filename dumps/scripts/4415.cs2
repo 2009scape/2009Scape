@@ -1,0 +1,25 @@
+void script_4415() {
+	setWidgetText(new WidgetPointer(1107,173), cs2method3702());
+	setWidgetText(new WidgetPointer(1107,19), "Game time:" + "<br>" + script_4337(clanconfig_0));
+	setWidgetText(new WidgetPointer(1107,35), cs2method3710(cs2method3715()));
+	if (clanbitconfig_6 > 0) {
+		setWidgetText(new WidgetPointer(1107,36), intToStr(clanbitconfig_6));
+	}
+	setWidgetText(new WidgetPointer(1107,37), intToStr(cs2method3709()));
+	if (((boolean)clanbitconfig_4)) {
+		setWidgetText(new WidgetPointer(1107,5), "This clan is not recruiting.");
+	} else {
+		if (((boolean)clanbitconfig_4)) {
+			setWidgetText(new WidgetPointer(1107,5), "This clan is recruiting.");
+		}
+	}
+	script_4332(72548454, 72548464);
+	script_4334(72548359, 72548360);
+	script_4336(72548446);
+	script_4343(72548447);
+	script_4329(72548390);
+	script_4328(72548551);
+	script_4420();
+	setWidgetIsHidden(true, new WidgetPointer(1107,151));
+	return;
+}

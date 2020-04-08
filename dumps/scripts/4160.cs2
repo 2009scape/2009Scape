@@ -1,0 +1,39 @@
+void script_4160(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	flow_0:
+		if (arg2 > 0) {
+			setScriptCallOnGameloop(4159, new WidgetPointer(-32768,3), arg1, subtract(arg2, 1), "Iii", new WidgetPointer(arg0));
+			return;
+		}
+		ivar3 = 0;
+		ivar4 = 0;
+		if (setWidgetRegister(new WidgetPointer(arg0), 0)) {
+			ivar3 = cs2method1609();
+			if (((boolean)arg1)) {
+				ivar4 = subtract(ivar3, 22);
+			} else {
+				ivar4 = add(ivar3, 22);
+			}
+			ivar4 = max(ivar4, 0);
+			ivar4 = min(ivar4, 255);
+		}
+		IF (((boolean)ivar4)) 
+			GOTO	flow_8
+		GOTO	flow_9
+	flow_8:
+		IF (((boolean)arg1)) 
+			GOTO	flow_11
+	flow_9:
+		IF ((ivar4 == 255) && ((boolean)arg1)) 
+			GOTO	flow_11
+		GOTO	flow_12
+	flow_11:
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+		GOTO	flow_13
+	flow_12:
+		setScriptCallOnGameloop(4159, new WidgetPointer(-32768,3), arg1, 0, "Iii", new WidgetPointer(arg0));
+	flow_13:
+		script_4161(arg0, ivar4);
+		return;
+}

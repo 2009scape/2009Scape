@@ -1,0 +1,37 @@
+cs2func_script_1017_struct(1,1,0) script_1017(int arg0) {
+	switch (arg0) {
+		case 0:
+			return newstruct cs2func_script_1017_struct(0, "Meats");
+		case 1:
+			return newstruct cs2func_script_1017_struct(0, "Bread");
+		case 2:
+			return newstruct cs2func_script_1017_struct(0, "Pies");
+		case 3:
+			return newstruct cs2func_script_1017_struct(0, "Stews");
+		case 4:
+			return newstruct cs2func_script_1017_struct(0, "Pizzas");
+		case 5:
+			return newstruct cs2func_script_1017_struct(0, "Cakes");
+		case 6:
+			return newstruct cs2func_script_1017_struct(0, "Wine");
+		case 7:
+			return newstruct cs2func_script_1017_struct(1, "Hot Drinks");
+		case 8:
+			return newstruct cs2func_script_1017_struct(1, "Brewing");
+		case 9:
+			return newstruct cs2func_script_1017_struct(1, "Potatoes & Toppings");
+		case 10:
+			return newstruct cs2func_script_1017_struct(1, "Dairy");
+		case 11:
+			return newstruct cs2func_script_1017_struct(1, "Gnome");
+		case 12:
+			return newstruct cs2func_script_1017_struct(0, "Other");
+		case 13:
+			return newstruct cs2func_script_1017_struct(1, "Minigames");
+		case 14:
+			return newstruct cs2func_script_1017_struct(0, "Dungeoneering");
+		case 15:
+			return newstruct cs2func_script_1017_struct(0, "Milestones");
+	}
+	return newstruct cs2func_script_1017_struct(-1, "");
+}

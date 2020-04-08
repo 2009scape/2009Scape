@@ -1,0 +1,24 @@
+void script_4192() {
+	if (setWidgetRegister(new WidgetPointer(1074,80))) {
+		setWidgetVFlip(1);
+	}
+	if (setWidgetRegister(new WidgetPointer(1074,81))) {
+		setWidgetVFlip(1);
+	}
+	if (setWidgetRegister(new WidgetPointer(1074,82))) {
+		setWidgetVFlip(1);
+	}
+	if (setWidgetRegister(new WidgetPointer(1074,83))) {
+		setWidgetVFlip(1);
+	}
+	if (setWidgetRegister(new WidgetPointer(1074,84))) {
+		setWidgetVFlip(1);
+	}
+	if (setWidgetRegister(new WidgetPointer(1074,85))) {
+		setWidgetVFlip(1);
+	}
+	if (setWidgetRegister(new WidgetPointer(1074,86))) {
+		setWidgetVFlip(1);
+	}
+	return;
+}

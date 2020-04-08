@@ -1,0 +1,15 @@
+int script_2240() {
+	int ivar0;
+	ivar0 = 5;
+	ivar0 = add(add(add(add(add(globalint_1126, globalint_1127), globalint_1128), globalint_1129), globalint_1131), globalint_1130);
+	if (((boolean)globalint_1133)) {
+		ivar0 = add(ivar0, 1);
+	}
+	if (((boolean)globalint_1134)) {
+		ivar0 = add(ivar0, 1);
+	}
+	if (((boolean)globalint_1132)) {
+		ivar0 = add(ivar0, 1);
+	}
+	return ivar0;
+}

@@ -1,0 +1,92 @@
+void script_2599() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = -1;
+	globalarray_0 = new int[10];
+	globalarray_1 = new int[10];
+	globalarray_2 = new int[10];
+	ivar4 = 0;
+	while ((ivar1 < 28) && (ivar2 < 10)) {
+		ivar3 = getItemIdInSlot(93, ivar1);
+		if ((ivar3 != -1) && (((boolean)getItemHashmapData(ivar3, 802)) || ((boolean)getItemHashmapData(ivar3, 803)))) {
+			globalarray_0[ivar2] = ivar3;
+			ivar2 = add(ivar2, 1);
+		}
+		ivar1 = add(ivar1, 1);
+	}
+	ivar3 = -1;
+	globalarray_0[0] = bitconfig_6405;
+	globalarray_0[1] = bitconfig_6406;
+	globalarray_0[2] = bitconfig_6407;
+	globalarray_0[3] = bitconfig_6408;
+	globalarray_0[4] = bitconfig_6409;
+	globalarray_0[5] = bitconfig_6410;
+	globalarray_0[6] = bitconfig_6411;
+	globalarray_0[7] = bitconfig_6412;
+	globalarray_0[8] = bitconfig_6413;
+	globalarray_0[9] = bitconfig_6414;
+	ivar1 = 0;
+	while (ivar1 < 10) {
+		if (globalarray_0[ivar1] != -1) {
+			if (((boolean)getItemHashmapData(ivar3, 803))) {
+				globalarray_0[ivar1] = multiply(bitconfig_6405, 50);
+			}
+			if (((boolean)getItemHashmapData(globalarray_0[ivar1], 803)) && ((boolean)globalarray_1[ivar1])) {
+				globalarray_0[ivar1] = 50;
+				ivar4 = add(ivar4, globalarray_2[ivar1]);
+			}
+			setWidgetText(cs2method_3408(105, 73, 2424, ivar1), "Cost: " + intToStr(globalarray_2[ivar1]));
+		}
+		ivar1 = add(ivar1, 1);
+	}
+	setWidgetText(new WidgetPointer(292,101), intToStr(globalarray_2[globalint_929]));
+	globalint_928 = ivar4;
+	setWidgetText(new WidgetPointer(292,126), intToStr(globalint_928));
+	setWidgetText(new WidgetPointer(292,128), "Remaining investment credits: " + intToStr(subtract(bitconfig_6351, globalint_928)));
+	if (globalint_928 <= bitconfig_6351) {
+		setWidgetSprite(1870, new WidgetPointer(292,123));
+		setScriptCallOnClickContextMenu(2605, "", new WidgetPointer(292,122));
+		setWidgetContextMenuOption(1, new WidgetPointer(292,122), "Apply changes");
+		setScriptCallOnMouseEntered(94, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,122));
+		setWidgetRGB(new Color(255, 153, 53), new WidgetPointer(292,126));
+		setScriptCallOnMousePressed(-1, "", new WidgetPointer(292,122));
+	} else {
+		setWidgetSprite(1871, new WidgetPointer(292,123));
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(292,122));
+		setWidgetNoOptions(new WidgetPointer(292,122));
+		setScriptCallOnMouseEntered(-1, "", new WidgetPointer(292,122));
+		setWidgetRGB(new Color(255, 17, 17), new WidgetPointer(292,126));
+		setScriptCallOnMousePressed(2606, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,122));
+	}
+	ivar1 = 0;
+	while (ivar1 < 10) {
+		if ((globalarray_0[ivar1] != -1) && ((boolean)getItemHashmapData(globalarray_0[ivar1], 803))) {
+			ivar0 = add(ivar0, 50);
+		}
+		ivar1 = add(ivar1, 1);
+	}
+	if (ivar0 > 0) {
+		setWidgetText(new WidgetPointer(292,124), "Resupply all" + "<br>" + "(" + intToStr(ivar0) + ")");
+	}
+	if ((bitconfig_6351 >= ivar0) && (ivar0 > 0)) {
+		setWidgetRGB(new Color(255, 153, 53), new WidgetPointer(292,124));
+		setScriptCallOnClickContextMenu(2603, "", new WidgetPointer(292,119));
+		setWidgetContextMenuOption(1, new WidgetPointer(292,119), "Resupply all");
+		setScriptCallOnMouseEntered(94, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,119));
+		setScriptCallOnMousePressed(-1, "", new WidgetPointer(292,119));
+	} else {
+		setWidgetText(new WidgetPointer(292,124), "Resupply all");
+		setWidgetRGB(new Color(102, 102, 102), new WidgetPointer(292,124));
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(292,119));
+		setWidgetNoOptions(new WidgetPointer(292,119));
+		setScriptCallOnMouseEntered(-1, "", new WidgetPointer(292,119));
+		setScriptCallOnMousePressed(2606, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,119));
+	}
+	return;
+}

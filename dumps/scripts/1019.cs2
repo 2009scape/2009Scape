@@ -1,0 +1,21 @@
+cs2func_script_1019_struct(1,1,0) script_1019(int arg0) {
+	switch (arg0) {
+		case 0:
+			return newstruct cs2func_script_1019_struct(1, "Familiars");
+		case 1:
+			return newstruct cs2func_script_1019_struct(1, "Summoning Scrolls");
+		case 2:
+			return newstruct cs2func_script_1019_struct(1, "Pets");
+		case 3:
+			return newstruct cs2func_script_1019_struct(1, "Equipment");
+		case 4:
+			return newstruct cs2func_script_1019_struct(1, "Other");
+		case 5:
+			return newstruct cs2func_script_1019_struct(1, "Minigames");
+		case 6:
+			return newstruct cs2func_script_1019_struct(1, "Dungeoneering");
+		case 7:
+			return newstruct cs2func_script_1019_struct(1, "Milestones");
+	}
+	return newstruct cs2func_script_1019_struct(-1, "");
+}

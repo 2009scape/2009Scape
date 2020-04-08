@@ -1,0 +1,18 @@
+int script_3954(int arg0) {
+	globalint_1408 = globalint_1407;
+	if (globalint_1407 < 1) {
+		script_3213(44105777, "Please enter your age, in years, here.");
+		return 0;
+	}
+	if (globalint_1407 > 120) {
+		script_3213(44105777, "Please check the age entered and try again.");
+		return 0;
+	}
+	setWidgetSprite(4059, new WidgetPointer(673,49));
+	setWidgetIsHidden(true, new WidgetPointer(673,125));
+	setWidgetIsHidden(true, new WidgetPointer(673,31));
+	if (((boolean)arg0)) {
+		script_2714(6, 1);
+	}
+	return 1;
+}

@@ -1,0 +1,20 @@
+void script_1764(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	ivar4 = subtract(getWidgetActualWidth(new WidgetPointer(arg0)), getWidgetActualWidth(new WidgetPointer(arg1)));
+	arg2 = max(arg2, 0);
+	arg2 = min(arg2, ivar4);
+	switch (arg3) {
+		case 0:
+			cs2method6019(multiplyDivide(arg2, ivar4, 255));
+			script_1159();
+			break;
+		case 1:
+			cs2method6018(multiplyDivide(arg2, ivar4, 127));
+			script_1165();
+			break;
+		case 2:
+			cs2method6020(multiplyDivide(arg2, ivar4, 127));
+			script_1162();
+	}
+	return;
+}

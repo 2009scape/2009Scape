@@ -1,0 +1,4 @@
+void script_4608() {
+	sendColorPickerPacket(globalint_1497);
+	return;
+}

@@ -1,0 +1,13 @@
+void script_2121(int arg0,int arg1) {
+	script_2122(1, arg0, "Mime outfit");
+	script_2122(11, arg0, "Frog kit");
+	script_2122(21, arg0, "Zombie outfit (Gravedigger reward)");
+	script_2122(31, arg0, "Camo kit (Drill Demon reward)");
+	script_2122(41, arg0, "Lederhosen outfit (Freaky Forester reward)");
+	setWidgetScrollMax(0, 320, new WidgetPointer(arg0));
+	script_31(arg1, arg0, 792, 789, 790, 791, 773, 788);
+	if (setWidgetRegister(new WidgetPointer(arg1), 1)) {
+		script_37(arg1, arg0, cs2method2601(new WidgetPointer(arg0)), 1);
+	}
+	return;
+}

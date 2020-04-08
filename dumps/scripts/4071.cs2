@@ -1,0 +1,12 @@
+void script_4071(int arg0) {
+	if (arg0 == 69337132) {
+		setWidgetIsHidden(false, new WidgetPointer(1058,31));
+	} else if (arg0 == 69337090) {
+		setWidgetIsHidden(false, new WidgetPointer(1058,39));
+	} else {
+		if (arg0 == 69337091) {
+			setWidgetIsHidden(false, new WidgetPointer(1058,35));
+		}
+	}
+	return;
+}

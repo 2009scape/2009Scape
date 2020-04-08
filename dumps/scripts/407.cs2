@@ -1,0 +1,33 @@
+void script_407() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	string svar0;
+	if (globalint_1362 < 1) {
+		return;
+	}
+	ivar0 = divide(multiply(globalint_1362, 6), 10);
+	ivar1 = 0;
+	ivar2 = 0;
+	svar0 = "";
+	if (ivar0 < 60) {
+		ivar1 = ivar0;
+	} else {
+		ivar1 = mod(ivar0, 60);
+		ivar2 = divide(ivar0, 60);
+	}
+	if (ivar1 < 10) {
+		svar0 = concat("0", intToStr(ivar1));
+		if (((boolean)ivar2) && ((boolean)globalint_1389)) {
+			globalint_1389 = 1;
+			if (((boolean)bitconfig_7511)) {
+				playSoundEffect2False(3434, 1, 0, 255);
+			}
+		}
+	} else {
+		svar0 = intToStr(ivar1);
+	}
+	setWidgetText(new WidgetPointer(1010,21), "Turn Time Left" + "<br>" + intToStr(ivar2) + ":" + svar0);
+	setWidgetText(new WidgetPointer(1013,24), intToStr(ivar2) + ":" + svar0);
+	return;
+}

@@ -1,0 +1,7 @@
+void script_174(int arg0) {
+	if (globalint_42 == arg0) {
+		globalint_42 = -1;
+		script_178();
+	}
+	return;
+}

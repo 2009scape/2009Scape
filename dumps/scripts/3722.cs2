@@ -1,0 +1,6 @@
+void script_3722(int arg0,int arg1,int arg2) {
+	if (standart_config_851 != -1) {
+		script_1163(arg0, arg1, arg2, 0, 180, getItemName(standart_config_851));
+	}
+	return;
+}

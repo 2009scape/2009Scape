@@ -1,0 +1,40 @@
+void script_584(int arg0,string arg1) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	ivar1 = getWidgetActualWidth(new WidgetPointer(arg0));
+	ivar2 = getWidgetActualHeight(new WidgetPointer(arg0));
+	ivar3 = subtract(ivar1, 32);
+	ivar4 = subtract(ivar2, 32);
+	ivar5 = subtract(ivar1, 64);
+	ivar6 = subtract(ivar2, 64);
+	if (ivar5 < 0) {
+		ivar5 = 0;
+	}
+	if (ivar6 < 0) {
+		ivar6 = 0;
+	}
+	ivar7 = getExtraChildGap(new WidgetPointer(arg0));
+	script_98(arg0, ivar7, 856, 0, 0, 32, 32);
+	script_98(arg0, add(ivar7, 1), 857, ivar3, 0, 32, 32);
+	script_98(arg0, add(ivar7, 2), 858, 0, ivar4, 32, 32);
+	script_98(arg0, add(ivar7, 3), 859, ivar3, ivar4, 32, 32);
+	script_98(arg0, add(ivar7, 4), 1121, 32, 0, ivar5, 3);
+	script_98(arg0, add(ivar7, 5), 1121, 32, subtract(ivar2, 3), ivar5, 3);
+	script_98(arg0, add(ivar7, 6), 1122, 0, 32, 3, ivar6);
+	script_98(arg0, add(ivar7, 7), 1122, subtract(ivar1, 3), 32, 3, ivar6);
+	script_98(arg0, add(ivar7, 8), 1121, 2, 22, subtract(ivar1, 5), 3);
+	createExtraChild(new WidgetPointer(arg0), 4, add(ivar7, 9));
+	setWidgetPosition(3, 3, 0, 0);
+	setWidgetSize(subtract(ivar1, 6), 15, 0, 0);
+	setWidgetText(arg1);
+	setWidgetFont(496);
+	setWidgetUnknownBoolean(true);
+	setWidgetRGB(new Color(204, 153, 0));
+	setWidgetTextAlignment(1, 1, 0);
+	return;
+}

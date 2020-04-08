@@ -1,0 +1,21 @@
+int script_1931(int arg0) {
+	if (arg0 == 53149717) {
+		return 1;
+	}
+	if (arg0 == 53149718) {
+		return 2;
+	}
+	if (arg0 == 53149719) {
+		return 3;
+	}
+	if (arg0 == 53149720) {
+		return 4;
+	}
+	if (arg0 == 53149721) {
+		return 5;
+	}
+	if (arg0 == 53149722) {
+		return 6;
+	}
+	return 0;
+}

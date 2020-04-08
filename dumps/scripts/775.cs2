@@ -1,0 +1,30 @@
+cs2func_script_775_struct(2,1,0) script_775() {
+	flow_0:
+		SWITCH (standart_config_448) {
+			case 12073:
+				 GOTO flow_1
+			case 12075:
+				 GOTO flow_2
+			case 12077:
+				 GOTO flow_3
+			case 12079:
+				 GOTO flow_4
+			case 12081:
+				 GOTO flow_5
+			case 12083:
+				 GOTO flow_6
+		}
+		return newstruct cs2func_script_775_struct(36, 12461, "Bronze Bull Rush");
+	flow_1:
+		return newstruct cs2func_script_775_struct(36, 12461, "Bronze Bull Rush");
+	flow_2:
+		return newstruct cs2func_script_775_struct(46, 12462, "Iron Bull Rush");
+	flow_3:
+		return newstruct cs2func_script_775_struct(56, 12463, "Steel Bull Rush");
+	flow_4:
+		return newstruct cs2func_script_775_struct(66, 12464, "Mithril Bull Rush");
+	flow_5:
+		return newstruct cs2func_script_775_struct(76, 12465, "Adamant Bull Rush");
+	flow_6:
+		return newstruct cs2func_script_775_struct(86, 12466, "Rune Bull Rush");
+}

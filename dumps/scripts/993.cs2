@@ -1,0 +1,12 @@
+cs2func_script_993_struct(1,1,0) script_993(int arg0) {
+	if (((boolean)arg0)) {
+		return newstruct cs2func_script_993_struct(0, "Constitution");
+	}
+	if (((boolean)arg0)) {
+		return newstruct cs2func_script_993_struct(0, "Armour");
+	}
+	if (arg0 == 2) {
+		return newstruct cs2func_script_993_struct(0, "Milestones");
+	}
+	return newstruct cs2func_script_993_struct(-1, "");
+}

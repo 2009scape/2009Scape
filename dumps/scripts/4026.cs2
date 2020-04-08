@@ -1,0 +1,58 @@
+void script_4026(int arg0) {
+	switch (arg0) {
+		case 0:
+			if (isWidgetHidden(new WidgetPointer(917,83))) {
+				setWidgetSprite(4316, new WidgetPointer(917,26));
+				setWidgetSprite(4316, new WidgetPointer(917,28));
+				setWidgetSprite(4317, new WidgetPointer(917,27));
+			}
+			if (isWidgetHidden(new WidgetPointer(917,84))) {
+				setWidgetSprite(4316, new WidgetPointer(917,22));
+				setWidgetSprite(4316, new WidgetPointer(917,24));
+				setWidgetSprite(4317, new WidgetPointer(917,23));
+			}
+			if (isWidgetHidden(new WidgetPointer(917,82))) {
+				setWidgetSprite(4316, new WidgetPointer(917,18));
+				setWidgetSprite(4316, new WidgetPointer(917,20));
+				setWidgetSprite(4317, new WidgetPointer(917,19));
+			}
+			if (isWidgetHidden(new WidgetPointer(917,86))) {
+				setWidgetSprite(4316, new WidgetPointer(917,14));
+				setWidgetSprite(4316, new WidgetPointer(917,16));
+				setWidgetSprite(4317, new WidgetPointer(917,15));
+			}
+			break;
+		case 1:
+			if (isWidgetHidden(new WidgetPointer(917,83))) {
+				return;
+			}
+			setWidgetSprite(4318, new WidgetPointer(917,26));
+			setWidgetSprite(4318, new WidgetPointer(917,28));
+			setWidgetSprite(4319, new WidgetPointer(917,27));
+			break;
+		case 2:
+			if (isWidgetHidden(new WidgetPointer(917,84))) {
+				return;
+			}
+			setWidgetSprite(4318, new WidgetPointer(917,22));
+			setWidgetSprite(4318, new WidgetPointer(917,24));
+			setWidgetSprite(4319, new WidgetPointer(917,23));
+			break;
+		case 3:
+			if (isWidgetHidden(new WidgetPointer(917,82))) {
+				return;
+			}
+			setWidgetSprite(4318, new WidgetPointer(917,18));
+			setWidgetSprite(4318, new WidgetPointer(917,20));
+			setWidgetSprite(4319, new WidgetPointer(917,19));
+			break;
+		case 4:
+			if (isWidgetHidden(new WidgetPointer(917,86))) {
+				return;
+			}
+			setWidgetSprite(4318, new WidgetPointer(917,14));
+			setWidgetSprite(4318, new WidgetPointer(917,16));
+			setWidgetSprite(4319, new WidgetPointer(917,15));
+	}
+	return;
+}

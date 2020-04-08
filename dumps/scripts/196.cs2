@@ -1,0 +1,23 @@
+string script_196(int arg0) {
+	switch (arg0) {
+		case 0:
+			return "Not in Friends Chat";
+		case 1:
+			return "Recruit";
+		case 2:
+			return "Corporal";
+		case 3:
+			return "Sergeant";
+		case 4:
+			return "Lieutenant";
+		case 5:
+			return "Captain";
+		case 6:
+			return "General";
+		case 7:
+			return "Channel Owner";
+		case 127:
+			return "Jagex Mod";
+	}
+	return "Not in Friends Chat";
+}

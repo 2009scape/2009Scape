@@ -1,0 +1,117 @@
+void script_1038(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7) {
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	if (arg0 == 104) {
+		if (((boolean)arg7)) {
+			return;
+		}
+		if (globalint_128 <= 0) {
+			globalint_128 = subtract(arg7, 1);
+		} else {
+			globalint_128 = subtract(globalint_128, 1);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg4), add(globalint_128, 1))) {
+			if (setWidgetRegister(new WidgetPointer(arg4), 0)) {
+				setWidgetPosition(getWidgetActualX(), getWidgetActualY(), 0, 0);
+				setWidgetSize(getWidgetActualWidth(), getWidgetActualHeight(), 0, 0);
+				setWidgetRGB(new Color(87, 126, 69));
+				setWidgetFilled(1);
+			}
+			if (getWidgetActualY() < cs2method2601(new WidgetPointer(arg4))) {
+				script_72(arg5, arg4, subtract(cs2method2601(new WidgetPointer(arg4)), getWidgetActualHeight()));
+			} else {
+				if (add(getWidgetActualY(), getWidgetActualHeight()) > add(getWidgetActualHeight(new WidgetPointer(arg4)), cs2method2601(new WidgetPointer(arg4)))) {
+					script_72(arg5, arg4, getWidgetScrollMaxV(new WidgetPointer(arg4)));
+				}
+			}
+		}
+		return;
+	}
+	if (arg0 == 105) {
+		if (((boolean)arg7)) {
+			return;
+		}
+		if (globalint_128 == subtract(arg7, 1)) {
+			globalint_128 = 0;
+		} else {
+			globalint_128 = add(globalint_128, 1);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg4), add(globalint_128, 1))) {
+			if (setWidgetRegister(new WidgetPointer(arg4), 0)) {
+				setWidgetPosition(getWidgetActualX(), getWidgetActualY(), 0, 0);
+				setWidgetSize(getWidgetActualWidth(), getWidgetActualHeight(), 0, 0);
+				setWidgetRGB(new Color(87, 126, 69));
+				setWidgetFilled(1);
+			}
+			if (add(getWidgetActualY(), getWidgetActualHeight()) > add(getWidgetActualHeight(new WidgetPointer(arg4)), cs2method2601(new WidgetPointer(arg4)))) {
+				script_72(arg5, arg4, add(cs2method2601(new WidgetPointer(arg4)), getWidgetActualHeight()));
+			} else {
+				if (getWidgetActualY() < cs2method2601(new WidgetPointer(arg4))) {
+					script_72(arg5, arg4, 0);
+				}
+			}
+		}
+		return;
+	}
+	if (arg0 == 102) {
+		script_1050(globalint_126, globalstring_27);
+		return;
+	}
+	if (arg0 == 13) {
+		script_1054();
+		return;
+	}
+	ivar8 = strLength(globalstring_30);
+	ivar9 = cs2method4210(globalint_161, globalstring_30);
+	ivar10 = 0;
+	ivar11 = -1;
+	if (arg0 == 84) {
+		if (globalint_128 < 0) {
+			if (ivar8 > 0) {
+				globalint_129 = 0;
+				setScriptCallOnGameloop(-1, "", new WidgetPointer(arg3));
+				script_1041(arg2, arg4, arg5, arg6);
+			} else {
+				script_1054();
+			}
+		} else {
+			if (((ivar9 > 0) && setWidgetRegister(new WidgetPointer(arg4), add(globalint_128, 1))) && (ivar10 < ivar9)) {
+				while (true) {
+					ivar11 = cs2method4211();
+					if (((boolean)stringMethod4107(getWidgetText(), getItemName(ivar11)))) {
+						script_1076(arg2, arg6, ivar11);
+						return;
+					}
+					ivar10 = add(ivar10, 1);
+				}
+			}
+		}
+		return;
+	}
+	if (arg0 == 85) {
+		if (ivar8 > 0) {
+			globalstring_30 = substr(0, subtract(ivar8, 1), globalstring_30);
+		} else if (((boolean)globalint_127)) {
+			script_1054();
+		} else {
+			globalint_128 = -1;
+			setWidgetIsHidden(true, new WidgetPointer(137,7));
+			setWidgetIsHidden(true, new WidgetPointer(137,9));
+			setWidgetIsHidden(true, new WidgetPointer(137,13));
+			setWidgetIsHidden(false, new WidgetPointer(137,17));
+			setWidgetIsHidden(false, new WidgetPointer(137,1));
+			setWidgetIsHidden(true, new WidgetPointer(137,3));
+			return;
+		}
+	} else if (isValidChar(((char)arg1)) && (ivar8 < 80)) {
+		globalstring_30 = strRemoveEntities(concatChar(((char)arg1), globalstring_30));
+	} else {
+		return;
+	}
+	setWidgetText(new WidgetPointer(arg3), "Search for: " + globalstring_30 + "*");
+	globalint_129 = 50;
+	setScriptCallOnGameloop(1040, new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), arg6, "IIIIe", new WidgetPointer(arg3));
+	return;
+}

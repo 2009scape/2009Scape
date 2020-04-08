@@ -1,0 +1,70 @@
+void script_4567(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	if (cs2method5428(38600727, -1)) {
+		setScriptCallOnGameloop(4566, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+		return;
+	}
+	deleteAllExtraChilds(new WidgetPointer(589,23));
+	svar0 = "<col=7fa9ff>";
+	svar1 = "<col=ff5256>";
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	svar2 = "";
+	svar3 = "";
+	while (ivar1 < 100) {
+		ivar3 = cs2method5004(ivar1);
+		svar2 = cs2method5010(ivar1);
+		svar3 = cs2method5019(ivar1);
+		switch (ivar3) {
+			case 26:
+			case 11:
+				ivar2 = script_4568(ivar2, 0, ivar3, cs2method5003(ivar1), "", "");
+				break;
+			case 9:
+				ivar2 = script_4568(ivar2, 1, ivar3, "[" + svar0 + cs2method5011(ivar1) + "</col>" + "] " + svar2 + ": " + svar1 + cs2method5003(ivar1), svar2, svar3);
+				break;
+			case 20:
+				ivar2 = script_4568(ivar2, 1, ivar3, "[" + svar0 + cs2method5011(ivar1) + "</col>" + "] " + svar2 + ": " + svar1 + cs2method5003(ivar1), svar2, svar3);
+				break;
+			case 115:
+				ivar2 = script_4568(ivar2, 0, ivar3, "<col=ff0000>" + cs2method5003(ivar1) + "</col>", "", "");
+		}
+		ivar1 = add(ivar1, 1);
+	}
+	ivar4 = divide(getWidgetActualHeight(new WidgetPointer(589,23)), 15);
+	ivar1 = 0;
+	ivar5 = 0;
+	if (ivar2 < ivar4) {
+		ivar5 = subtract(ivar4, ivar2);
+		while (ivar1 < ivar5) {
+			ivar2 = script_4568(ivar2, 0, 0, "", "", "");
+			ivar1 = add(ivar1, 1);
+		}
+	}
+	ivar6 = 0;
+	ivar7 = 0;
+	while (ivar7 <= ivar2) {
+		if (setWidgetRegister(new WidgetPointer(589,23), ivar7)) {
+			ivar6 = add(ivar6, getWidgetActualHeight());
+		}
+		ivar7 = add(ivar7, 1);
+	}
+	ivar8 = max(ivar6, multiply(ivar4, 15));
+	setWidgetScrollMax(0, ivar8, new WidgetPointer(589,23));
+	script_72(38600728, 38600727, subtract(add(globalint_1508, getWidgetScrollMaxV(new WidgetPointer(589,23))), globalint_1509));
+	globalint_1508 = cs2method2601(new WidgetPointer(589,23));
+	globalint_1509 = getWidgetScrollMaxV(new WidgetPointer(589,23));
+	return;
+}

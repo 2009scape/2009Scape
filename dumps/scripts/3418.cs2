@@ -1,0 +1,20 @@
+void script_3418(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	ivar3 = 2289;
+	ivar4 = 2288;
+	if (arg2 == arg1) {
+		if (setWidgetRegister(new WidgetPointer(arg0), 1)) {
+			setWidgetSprite(ivar3);
+			setScriptCallOnMouseEntered(-1, "", new WidgetPointer(arg0));
+			setScriptCallOnMouseExit(-1, "", new WidgetPointer(arg0));
+		}
+	} else {
+		if (setWidgetRegister(new WidgetPointer(arg0), 1)) {
+			setWidgetSprite(ivar4);
+			setScriptCallOnMouseEntered(688, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), ivar3, "Iid", new WidgetPointer(arg0));
+			setScriptCallOnMouseExit(688, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), ivar4, "Iid", new WidgetPointer(arg0));
+		}
+	}
+	return;
+}

@@ -1,0 +1,4 @@
+void script_617(int arg0) {
+	setWidgetSprite(1166, new WidgetPointer(arg0));
+	return;
+}

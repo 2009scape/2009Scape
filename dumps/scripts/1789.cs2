@@ -1,0 +1,7 @@
+void script_1789(int arg0,int arg1,int arg2) {
+	int ivar3;
+	ivar3 = subtract(getClientCycle(), arg1);
+	globalint_265 = max(subtract(arg2, divide(ivar3, 30)), 0);
+	script_1790(arg0);
+	return;
+}

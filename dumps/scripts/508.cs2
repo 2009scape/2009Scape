@@ -1,0 +1,23 @@
+void script_508() {
+	globalint_6 = 0;
+	if ((getBlackmarks() == 5) || (getBlackmarks() == 6)) {
+		setWidgetText(new WidgetPointer(594,83), "Suggest to mute this player for 48 hours");
+		setWidgetText(new WidgetPointer(594,10), "Suggest to mute this player for 48 hours");
+		setWidgetText(new WidgetPointer(594,60), "Suggest to mute this player for 48 hours");
+	} else {
+		setWidgetText(new WidgetPointer(594,83), "Mute this player for 48 hours");
+		setWidgetText(new WidgetPointer(594,10), "Mute this player for 48 hours");
+		setWidgetText(new WidgetPointer(594,60), "Mute this player for 48 hours");
+	}
+	globalint_11 = 1;
+	if (getLanguage() != 1) {
+		script_216();
+		script_246();
+		return;
+	}
+	setScriptCallOnGlobalStringChange(218, 24, 1, "Y", new WidgetPointer(594,32));
+	globalint_792 = -1;
+	script_224();
+	script_216();
+	return;
+}

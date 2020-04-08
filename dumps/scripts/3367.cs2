@@ -1,0 +1,98 @@
+void script_3367() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	if (globalint_1243 < getSkillXp(0)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(0), globalint_1243));
+		ivar1 = add(ivar1, divide(subtract(getSkillXp(0), globalint_1243), 2));
+	}
+	if (globalint_1244 < getSkillXp(2)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(2), globalint_1244));
+		ivar1 = add(ivar1, divide(subtract(getSkillXp(2), globalint_1244), 2));
+	}
+	if (globalint_1245 < getSkillXp(1)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(1), globalint_1245));
+		ivar1 = add(ivar1, divide(subtract(getSkillXp(1), globalint_1245), 2));
+	}
+	if (globalint_1246 < getSkillXp(4)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(4), globalint_1246));
+		ivar1 = add(ivar1, divide(subtract(getSkillXp(4), globalint_1246), 2));
+	}
+	if (globalint_1247 < getSkillXp(5)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(5), globalint_1247));
+	}
+	if (globalint_1248 < getSkillXp(6)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(6), globalint_1248));
+		ivar1 = add(ivar1, divide(subtract(getSkillXp(6), globalint_1248), 2));
+	}
+	if (globalint_1249 < getSkillXp(20)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(20), globalint_1249));
+	}
+	if (globalint_1250 < getSkillXp(3)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(3), globalint_1250));
+		ivar1 = add(ivar1, divide(subtract(getSkillXp(3), globalint_1250), 2));
+	}
+	if (globalint_1251 < getSkillXp(12)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(12), globalint_1251));
+	}
+	if (globalint_1252 < getSkillXp(14)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(14), globalint_1252));
+	}
+	if (globalint_1253 < getSkillXp(13)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(13), globalint_1253));
+	}
+	if (globalint_1254 < getSkillXp(10)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(10), globalint_1254));
+	}
+	if (globalint_1255 < getSkillXp(7)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(7), globalint_1255));
+	}
+	if (globalint_1256 < getSkillXp(11)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(11), globalint_1256));
+	}
+	if (globalint_1257 < getSkillXp(8)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(8), globalint_1257));
+	}
+	if (globalint_1258 < getSkillXp(16)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(16), globalint_1258));
+	}
+	if (globalint_1259 < getSkillXp(15)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(15), globalint_1259));
+	}
+	if (globalint_1260 < getSkillXp(17)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(17), globalint_1260));
+	}
+	if (globalint_1261 < getSkillXp(9)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(9), globalint_1261));
+	}
+	if (globalint_1262 < getSkillXp(18)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(18), globalint_1262));
+	}
+	if (globalint_1263 < getSkillXp(19)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(19), globalint_1263));
+	}
+	if (globalint_1264 < getSkillXp(22)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(22), globalint_1264));
+	}
+	if (globalint_1265 < getSkillXp(21)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(21), globalint_1265));
+	}
+	if (globalint_1266 < getSkillXp(23)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(23), globalint_1266));
+	}
+	if (globalint_1267 < getSkillXp(24)) {
+		ivar0 = add(ivar0, subtract(getSkillXp(24), globalint_1267));
+	}
+	if (((boolean)ivar0)) {
+		return;
+	}
+	if (standart_config_2044 > 0) {
+		script_337(ivar0, standart_config_2044, 0);
+	} else {
+		script_3368(ivar0);
+	}
+	return;
+}

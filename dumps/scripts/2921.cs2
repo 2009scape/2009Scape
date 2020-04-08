@@ -1,0 +1,103 @@
+void script_2921(int arg0,int arg1,string arg2) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	openInterface(59375670, 979);
+	globalstring_279 = arg2;
+	script_3397();
+	if (isWidgetHidden(cs2method_3408(105, 73, 941, 5))) {
+		script_3161(0);
+	}
+	setScriptCallOnKeyPress(3398, -2147483640, false, new WidgetPointer(-32768,3), "izI", new WidgetPointer(979,0));
+	setScriptCallOnClickContextMenu(3399, "", new WidgetPointer(979,9));
+	ivar2 = 100;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 0;
+	deleteAllExtraChilds(new WidgetPointer(979,27));
+	deleteAllExtraChilds(new WidgetPointer(979,26));
+	deleteAllExtraChilds(new WidgetPointer(979,25));
+	setWidgetScrollMax(0, 0, new WidgetPointer(979,27));
+	cs2method2100(0, 0, new WidgetPointer(979,27));
+	while (ivar2 >= 0) {
+		ivar4 = cs2method5004(ivar2);
+		if (((((ivar4 != 0) && (ivar4 != 4)) && ((ivar4 != 27) && (ivar4 != 28))) && (((ivar4 != 29) && (ivar4 != 43)) && ((ivar4 != 103) && (ivar4 != 104)))) && ((((ivar4 != 26) && (ivar4 != 30)) && ((ivar4 != 31) && (ivar4 != 115))) && ((stringMethod4107(cs2method5010(ivar2), "") != 0) && (stringMethod4107(cs2method5003(ivar2), "") != 0)))) {
+			if (((stringMethod4107(strRemoveEntities(cs2method5010(ivar2)), cs2method5015()) != 0) && (ivar4 != 6)) && (ivar4 != 19)) {
+				ivar5 = 1;
+				createExtraChild(new WidgetPointer(979,26), 3, getExtraChildGap(new WidgetPointer(979,26)));
+				setWidgetPosition(2, add(multiply(ivar3, 14), 1), 0, 0);
+				setWidgetSize(4, 14, 1, 0);
+				setWidgetRGB(new Color(96, 96, 96));
+				cs2method2103(255);
+				setWidgetFilled(1);
+				setScriptCallOnMouseEntered(3392, -2147483643, "i");
+				setScriptCallOnMouseExit(3393, -2147483643, "i");
+				createExtraChild(new WidgetPointer(979,25), 3, getExtraChildGap(new WidgetPointer(979,25)));
+				setWidgetPosition(2, add(multiply(ivar3, 14), 1), 0, 0);
+				setWidgetSize(4, 14, 1, 0);
+				setWidgetRGB(new Color(73, 73, 73));
+				cs2method2103(255);
+				setWidgetFilled(1);
+				setScriptCallOnMouseEntered(3394, -2147483643, "i");
+			}
+			createExtraChild(new WidgetPointer(979,27), 4, getExtraChildGap(new WidgetPointer(979,27)));
+			setWidgetPosition(5, multiply(ivar3, 14), 0, 0);
+			setWidgetSize(10, 14, 1, 0);
+			if ((ivar4 != 6) && (ivar4 != 19)) {
+				setWidgetText(" " + cs2method5010(ivar2) + ": " + cs2method5003(ivar2));
+			} else {
+				setWidgetText("To " + cs2method5010(ivar2) + ": " + cs2method5003(ivar2));
+			}
+			setWidgetRGB(new Color(102, 102, 120));
+			if (((stringMethod4107(strRemoveEntities(cs2method5010(ivar2)), cs2method5015()) != 0) && (ivar4 != 6)) && (ivar4 != 19)) {
+				cs2method1305(strRemoveEntities(cs2method5010(ivar2)));
+				setWidgetContextMenuOption(1, "Report");
+				setScriptCallOnClickContextMenu(3396, -2147483643, "i");
+				setWidgetRGB(new Color(255, 255, 255));
+			}
+			setWidgetFont(495);
+			setWidgetTextAlignment(0, 0, 14);
+			ivar3 = add(ivar3, 1);
+		}
+		ivar2 = subtract(ivar2, 1);
+	}
+	if (((boolean)ivar5)) {
+		createExtraChild(new WidgetPointer(979,27), 4, getExtraChildGap(new WidgetPointer(979,27)));
+		setWidgetPosition(5, multiply(ivar3, 14), 0, 0);
+		setWidgetSize(16384, 14, 2, 0);
+		setWidgetText("There is no chat to report at the moment.");
+		setWidgetRGB(new Color(125, 125, 209));
+		setWidgetFont(495);
+		setWidgetTextAlignment(0, 0, 14);
+	}
+	if (ivar3 > divide(getWidgetActualHeight(new WidgetPointer(979,5)), 14)) {
+		setWidgetSize(38, getWidgetActualHeight(new WidgetPointer(979,5)), 1, 0, new WidgetPointer(979,5));
+		setWidgetScrollMax(0, add(multiply(ivar3, 14), 5), new WidgetPointer(979,24));
+		script_31(64159750, 64159768, 792, 789, 790, 791, 773, 788);
+		if (setWidgetRegister(new WidgetPointer(979,6), 1)) {
+			script_37(64159750, 64159768, getWidgetScrollMaxV(new WidgetPointer(979,24)), 1);
+		}
+	} else {
+		setWidgetSize(21, getWidgetActualHeight(new WidgetPointer(979,5)), 1, 0, new WidgetPointer(979,5));
+	}
+	if (((boolean)arg0)) {
+		if (((boolean)globalint_6)) {
+			setWidgetSprite(1768, new WidgetPointer(979,20));
+		} else {
+			setWidgetSprite(1770, new WidgetPointer(979,20));
+		}
+		if ((arg1 == 5) || (arg1 == 6)) {
+			setWidgetText(new WidgetPointer(979,19), "Suggest to mute this player for 48 hours");
+		} else {
+			setWidgetText(new WidgetPointer(979,19), "Mute this player for 48 hours");
+		}
+		setWidgetSize(add(getTextWidth(494, getWidgetText(new WidgetPointer(979,19))), 18), getWidgetActualHeight(new WidgetPointer(979,7)), 0, 0, new WidgetPointer(979,7));
+		setWidgetPosition(18, 273, 0, 0, new WidgetPointer(979,8));
+		setWidgetIsHidden(false, new WidgetPointer(979,7));
+	} else {
+		setWidgetPosition(18, 266, 0, 0, new WidgetPointer(979,8));
+	}
+	setWidgetIsHidden(false, new WidgetPointer(906,46));
+	return;
+}

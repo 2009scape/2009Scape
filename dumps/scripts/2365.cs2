@@ -1,0 +1,4 @@
+void script_2365(int arg0) {
+	setWidgetIntegerNode(1224, 0, new WidgetPointer(arg0));
+	return;
+}

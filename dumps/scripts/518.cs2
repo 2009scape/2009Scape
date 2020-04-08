@@ -1,0 +1,5 @@
+void script_518() {
+	script_1593(globalint_1505);
+	script_1600();
+	return;
+}

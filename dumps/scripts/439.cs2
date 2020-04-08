@@ -1,0 +1,22 @@
+void script_439(int arg0) {
+	switch (bitconfig_8087) {
+		case 0:
+			setWidgetText(new WidgetPointer(arg0), "0:30");
+			break;
+		case 1:
+			setWidgetText(new WidgetPointer(arg0), "1:00");
+			break;
+		case 2:
+			setWidgetText(new WidgetPointer(arg0), "1:30");
+			break;
+		case 3:
+			setWidgetText(new WidgetPointer(arg0), "2:00");
+			break;
+		case 4:
+			setWidgetText(new WidgetPointer(arg0), "2:30");
+			break;
+		case 5:
+			setWidgetText(new WidgetPointer(arg0), "3:00");
+	}
+	return;
+}

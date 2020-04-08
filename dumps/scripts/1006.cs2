@@ -1,0 +1,382 @@
+cs2func_script_1006_struct(2,2,0) script_1006(int arg0,int arg1) {
+	switch (arg0) {
+		case 0:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1006_struct(1, 9951, "Lay 1 trap at a time", "You can now lay " + "<col=000080>" + "1 trap" + "</col>" + " at a time.");
+				case 1:
+					return newstruct cs2func_script_1006_struct(1, 10006, "Bird snare setting", "You can now set " + "<col=000080>" + "bird snares" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1006_struct(1, 10150, "Noose wand", "You can now use a " + "<col=000080>" + "noose wand" + "</col>" + " when tracking.");
+				case 3:
+					return newstruct cs2func_script_1006_struct(15, 10010, "Butterfly netting", "You can now use a " + "<col=000080>" + "butterfly net" + "</col>" + " and " + "<col=000080>" + "butterfly jar" + "</col>" + " to catch " + "<col=000080>" + "butterflies" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1006_struct(20, 9951, "Lay up to 2 traps at a time", "You can now lay up to " + "<col=000080>" + "2 traps" + "</col>" + " at a time.");
+				case 5:
+					return newstruct cs2func_script_1006_struct(23, 1511, "Set a deadfall trap (limit of 1)", "You can now set a " + "<col=000080>" + "deadfall trap" + "</col>" + " up to a limit of 1.");
+				case 6:
+					return newstruct cs2func_script_1006_struct(27, 10008, "Set a box trap", "You can now set a " + "<col=000080>" + "box trap" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1006_struct(27, 10031, "Set a rabbit snare", "You can now set a " + "<col=000080>" + "rabbit snare" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1006_struct(29, 303, "Set a net trap", "You can now set a " + "<col=000080>" + "net trap" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1006_struct(31, 10029, "Set a pitfall trap", "You can now set a " + "<col=000080>" + "pitfall trap" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_1006_struct(39, 594, "Use smoke to mask the scent on a trap", "You can now use " + "<col=000080>" + "smoke" + "</col>" + " to mask the scent on a trap.");
+				case 11:
+					return newstruct cs2func_script_1006_struct(40, 9951, "Lay up to 3 traps at a time", "You can now lay up to " + "<col=000080>" + "3 traps" + "</col>" + " at a time.");
+				case 12:
+					return newstruct cs2func_script_1006_struct(40, 14110, "Sacred clay butterfly net", "You can now use " + "<col=000080>" + "sacred clay butterfly nets" + "</col>");
+				case 13:
+					return newstruct cs2func_script_1006_struct(40, 14102, "Volatile butterfly net", "You can now use " + "<col=000080>" + "volatile butterfly nets" + "</col>");
+				case 14:
+					return newstruct cs2func_script_1006_struct(43, 10023, "Hunt with a falcon", "You can now hunt with a " + "<col=000080>" + "falcon" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_1006_struct(60, 9951, "Lay up to 4 traps at a time", "You can now lay up to " + "<col=000080>" + "4 traps" + "</col>" + " at a time.");
+				case 16:
+					return newstruct cs2func_script_1006_struct(70, 19965, "Marasamaw plants (herblore habitat)", "You can now set a " + "<col=000080>" + "marasamaw plant" + "</col>" + " trap.");
+				case 17:
+					return newstruct cs2func_script_1006_struct(71, 10025, "Magical imp box", "You can now set a " + "<col=000080>" + "magical imp box" + "</col>" + " trap.");
+				case 18:
+					return newstruct cs2func_script_1006_struct(80, 9951, "Lay up to 5 traps at a time", "You can now lay up to " + "<col=000080>" + " 5 traps" + "</col>" + " at a time.");
+			}
+			break;
+		case 1:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1006_struct(1, 9953, "Polar kebbit (polar)", "You can now track " + "<col=000080>" + "polar kebbits" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1006_struct(3, 9954, "Common kebbit (woodland)", "You can now track " + "<col=000080>" + "common kebbits" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1006_struct(7, 9955, "Feldip weasel (jungle)", "You can now track " + "<col=000080>" + "feldip weasels" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1006_struct(13, 9956, "Desert devil (desert)", "You can now track " + "<col=000080>" + "desert devils" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1006_struct(45, 14832, "Penguins (polar)" + "<br>" + " (after Hunt for Red Raktuber)", "You can now track " + "<col=000080>" + "penguins" + "</col>" + " (after Hunt for Red Raktuber).");
+				case 5:
+					return newstruct cs2func_script_1006_struct(49, 9961, "Razor-backed kebbit (woodland)", "You can now track " + "<col=000080>" + "razor-backed kebbits" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1006_struct(71, 19954, "Shadow jadinko (herblore habitat)", "You can now track " + "<col=000080>" + "shadow jadinkos" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1006_struct(78, 19958, "Diseased jadinko (herblore habitat)", "You can now track " + "<col=000080>" + "diseased jadinkos" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1006_struct(79, 19955, "Camouflaged jadinko (herblore habitat)", "You can now track " + "<col=000080>" + "camouflaged jadinkos" + "</col>" + ".");
+			}
+			break;
+		case 2:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1006_struct(1, 9965, "Crimson swift (jungle)", "You can now trap " + "<col=000080>" + "crimson swifts" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1006_struct(5, 9968, "Golden warbler (desert)", "You can now trap " + "<col=000080>" + "golden warblers" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1006_struct(9, 9966, "Copper longtail (woodland)", "You can now trap " + "<col=000080>" + "copper longtails" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1006_struct(11, 9967, "Cerulean twitch (polar)", "You can now trap " + "<col=000080>" + "cerulean twitches" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1006_struct(19, 9969, "Tropical wagtail (jungle)", "You can now trap " + "<col=000080>" + "tropical wagtails" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1006_struct(39, 12586, "Wimpy bird (jungle)" + "<br>" + " (after starting As a First Resort...)" + "<br>" + " Required lure: smouldering tansymum", "You can now trap " + "<col=000080>" + "wimpy birds" + "</col>" + " (after starting As a First Resort...).");
+			}
+			break;
+		case 3:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1006_struct(15, 9970, "Ruby harvest butterfly (woodland)", "You can now net " + "<col=000080>" + "ruby harvest butterflies" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1006_struct(17, 11238, "Baby impling", "You can now net " + "<col=000080>" + "baby implings" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1006_struct(22, 11240, "Young impling", "You can now net " + "<col=000080>" + "young implings" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1006_struct(25, 9971, "Sapphire glacialis butterfly (polar)", "You can now net " + "<col=000080>" + "sapphire glacialis butterflies" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1006_struct(28, 11242, "Gourmet impling", "You can now net " + "<col=000080>" + "gourmet implings" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1006_struct(35, 9972, "Snowy knight butterfly (polar)", "You can now net " + "<col=000080>" + "snowy knight butterflies" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1006_struct(36, 11244, "Earth impling", "You can now net " + "<col=000080>" + "earth implings" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1006_struct(42, 11246, "Essence impling", "You can now net " + "<col=000080>" + "essence implings" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1006_struct(45, 9973, "Black warlock butterfly (jungle)", "You can now net " + "<col=000080>" + "black warlock butterflies" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1006_struct(50, 11248, "Eclectic impling", "You can now net " + "<col=000080>" + "eclectic implings" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_1006_struct(54, 15513, "Spirit impling", "You can now net " + "<col=000080>" + "spirit implings" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_1006_struct(58, 11250, "Nature impling", "You can now net " + "<col=000080>" + "nature implings" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_1006_struct(65, 11252, "Magpie impling", "You can now net " + "<col=000080>" + "magpie implings" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_1006_struct(74, 11254, "Ninja impling", "You can now net " + "<col=000080>" + "ninja implings" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_1006_struct(76, 13337, "Pirate impling" + "<br>" + " (after Rocking Out)", "You can now net " + "<col=000080>" + "pirate implings" + "</col>" + " (after Rocking Out).");
+				case 15:
+					return newstruct cs2func_script_1006_struct(83, 11256, "Dragon impling", "You can now net " + "<col=000080>" + "dragon implings" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_1006_struct(87, 15515, "Zombie impling", "You can now net " + "<col=000080>" + "zombie implings" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_1006_struct(91, 15517, "Kingly impling", "You can now net " + "<col=000080>" + "kingly implings" + "</col>" + ".");
+			}
+			break;
+		case 4:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1006_struct(23, 9962, "Wild kebbit (woodland)" + "<br>" + " Preferred bait: Raw meat", "You can now use deadfall traps to hunt " + "<col=000080>" + "wild kebbits" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1006_struct(33, 9958, "Barb-tailed kebbit (jungle)" + "<br>" + " Preferred bait: Raw rainbow fish", "You can now use deadfall traps to hunt " + "<col=000080>" + "barb-tailed kebbits" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1006_struct(37, 9957, "Prickly kebbit (northern woodland)" + "<br>" + " Preferred bait: Barley", "You can now use deadfall traps to hunt " + "<col=000080>" + "prickly kebbits" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1006_struct(44, 12587, "Diseased kebbit (jungle)" + "<br>" + " (after starting As a First Resort...)" + "<br>" + " Required lure: smouldering fever grass", "You now have the Hunter level required to use deadfall traps to hunt " + "<col=000080>" + "diseased kebbits" + "</col>" + " (after starting As a First Resort...).");
+				case 4:
+					return newstruct cs2func_script_1006_struct(51, 9959, "Sabre-toothed kebbit (polar)" + "<br>" + " Preferred bait: Raw meat", "You can now use deadfall traps to hunt " + "<col=000080>" + "sabre-toothed kebbits" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1006_struct(51, 14832, "Penguins (polar)" + "<br>" + " (after Hunt for Red Raktuber)" + "<br>" + " Preferred bait: Raw cod", "You can now use deadfall traps to hunt " + "<col=000080>" + "penguins" + "</col>" + " (after Hunt for Red Raktuber).");
+			}
+			break;
+		case 5:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1006_struct(27, 10092, "Ferret (woodland)" + "<br>" + " (after Eagles' Peak)", "You can now catch " + "<col=000080>" + "ferrets" + "</col>" + " with box traps (after Eagles' Peak).");
+				case 1:
+					return newstruct cs2func_script_1006_struct(27, 12184, "Gecko" + "<br>" + " (with 10 Summoning)", "You now have the Hunter level required to catch " + "<col=000080>" + "geckos" + "</col>" + " with box traps. (You also need level 10 Summoning.)");
+				case 2:
+					return newstruct cs2func_script_1006_struct(27, 12199, "Raccoon" + "<br>" + " (with 80 Summoning)", "You now have the Hunter level required to catch " + "<col=000080>" + "raccoons" + "</col>" + " with box traps. (You also need level 80 Summoning.)");
+				case 3:
+					return newstruct cs2func_script_1006_struct(27, 12201, "Monkey" + "<br>" + " (with 95 Summoning)" + "<br>" + " Preferred bait: Bananas", "You now have the Hunter level required to catch " + "<col=000080>" + "monkeys" + "</col>" + " with box traps. (You also need level 95 Summoning.)");
+				case 4:
+					return newstruct cs2func_script_1006_struct(48, 12585, "Platypus (jungle)" + "<br>" + " (with 10 Summoning)" + "<br>" + " (after starting As a First Resort...)" + "<br>" + " Required lure: Smouldering lavender", "You now have the Hunter level required to catch " + "<col=000080>" + "platypodes" + "</col>" + " with box traps (after As a First Resort... and with level 10 Summoning).");
+				case 5:
+					return newstruct cs2func_script_1006_struct(53, 9976, "Chinchompa (woodland)" + "<br>" + " Preferred bait: Spicy chopped tomatoes", "You can now catch " + "<col=000080>" + "chinchompas" + "</col>" + " with box traps.");
+				case 6:
+					return newstruct cs2func_script_1006_struct(56, 14832, "Penguin (polar)" + "<br>" + " (after Hunt for Red Raktuber)" + "<br>" + " Preferred bait: Raw cod", "You can now catch " + "<col=000080>" + "penguins" + "</col>" + " with box traps (after Hunt for Red Raktuber).");
+				case 7:
+					return newstruct cs2func_script_1006_struct(63, 9977, "Red chinchompa (jungle)" + "<br>" + " Preferred bait: Spicy minced meat", "You can now catch " + "<col=000080>" + "red chinchompas" + "</col>" + " with box traps.");
+				case 8:
+					return newstruct cs2func_script_1006_struct(66, 12544, "Pawya (Isafdar)" + "<br>" + " Required bait: Papaya fruit", "You can now catch " + "<col=000080>" + "pawyas" + "</col>" + " with box traps.");
+				case 9:
+					return newstruct cs2func_script_1006_struct(70, 19951, "Common jadinko (using marasamaw plants)" + "<br>" + " Preferred bait: Withered vines", "You can now catch " + "<col=000080>" + "common jadinkos" + "</col>" + " with marasamaw plants.");
+				case 10:
+					return newstruct cs2func_script_1006_struct(74, 19957, "Igneous jadinko (using marasamaw plants)" + "<br>" + " Preferred bait: Withered vines", "You can now catch " + "<col=000080>" + "igneous jadinkos" + "</col>" + " with marasamaw plants.");
+				case 11:
+					return newstruct cs2func_script_1006_struct(75, 19960, "Cannibal jadinko (using marasamaw plants)" + "<br>" + " Preferred bait: Withered vines", "You can now catch " + "<col=000080>" + "cannibal jadinkos" + "</col>" + " with marasamaw plants.");
+				case 12:
+					return newstruct cs2func_script_1006_struct(76, 19953, "Aquatic jadinko (using marasamaw plants)" + "<br>" + " Preferred bait: Withered vines", "You can now catch " + "<col=000080>" + "aquatic jadinkos" + "</col>" + " with marasamaw plants.");
+				case 13:
+					return newstruct cs2func_script_1006_struct(77, 19952, "Amphibious jadinko (using marasamaw plants)" + "<br>" + " Preferred bait: Withered vines", "You can now catch " + "<col=000080>" + "amphibious jadinkos" + "</col>" + " with marasamaw plants.");
+				case 14:
+					return newstruct cs2func_script_1006_struct(77, 12537, "Grenwall (Isafdar)" + "<br>" + " Required bait: Raw pawya meat", "You can now catch " + "<col=000080>" + "grenwall" + "</col>" + " with box traps.");
+				case 15:
+					return newstruct cs2func_script_1006_struct(78, 19959, "Carrion jadinko (using marasamaw plants)" + "<br>" + " Preferred bait: Withered vines", "You can now catch " + "<col=000080>" + "carrion jadinkos" + "</col>" + " with marasamaw plants.");
+				case 16:
+					return newstruct cs2func_script_1006_struct(80, 19956, "Draconic jadinko (using marasamaw plants)" + "<br>" + " Preferred bait: Withered vines", "You can now catch " + "<col=000080>" + "draconic jadinkos" + "</col>" + " with marasamaw plants.");
+				case 17:
+					return newstruct cs2func_script_1006_struct(81, 19961, "Saradomin, Guthix and Zamorak jadinko (using marasamaw plants)" + "<br>" + " Preferred bait: Withered vines", "You can now catch " + "<col=000080>" + "Saradomin, Guthix and Zamorak jadinkos" + "</col>" + " with marasamaw plants.");
+			}
+			break;
+		case 6:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1006_struct(29, 10149, "Swamp lizard (swamp)" + "<br>" + " Preferred bait: Guam tar", "You can now catch " + "<col=000080>" + "swamp lizards" + "</col>" + " with net traps.");
+				case 1:
+					return newstruct cs2func_script_1006_struct(29, 12200, "Squirrel" + "<br>" + " (with 60 Summoning)" + "<br>" + " Preferred bait: Nuts", "You now have the Hunter level required to catch " + "<col=000080>" + "squirrels" + "</col>" + " with net traps. (You also need level 60 Summoning.)");
+				case 2:
+					return newstruct cs2func_script_1006_struct(47, 10146, "Orange salamander (desert)" + "<br>" + " Preferred bait: Marrentill tar", "You can now catch " + "<col=000080>" + "orange salamanders" + "</col>" + " with net traps.");
+				case 3:
+					return newstruct cs2func_script_1006_struct(50, 14832, "Penguin (polar)" + "<br>" + " (after Hunt for Red Raktuber)", "You can now catch " + "<col=000080>" + "penguins" + "</col>" + " with net traps (after Hunt for Red Raktuber).");
+				case 4:
+					return newstruct cs2func_script_1006_struct(59, 10147, "Red salamander (lava)" + "<br>" + " Preferred bait: Tarromin tar", "You can now catch " + "<col=000080>" + "red salamanders" + "</col>" + " with net traps.");
+				case 5:
+					return newstruct cs2func_script_1006_struct(67, 10148, "Black salamander (lava)" + "<br>" + " Preferred bait: Harralander tar", "You can now catch " + "<col=000080>" + "black salamanders" + "</col>" + " with net traps.");
+			}
+			break;
+		case 7:
+			if (((boolean)arg1)) {
+				return newstruct cs2func_script_1006_struct(31, 10045, "Spined larupia (jungle)", "You can now catch " + "<col=000080>" + "spined larupias" + "</col>" + " with pit traps.");
+			}
+			if (((boolean)arg1)) {
+				return newstruct cs2func_script_1006_struct(41, 10051, "Horned graahk (Karamja)", "You can now catch " + "<col=000080>" + "horned graahks" + "</col>" + " with pit traps.");
+			}
+			if (arg1 == 2) {
+				return newstruct cs2func_script_1006_struct(55, 10039, "Sabre-toothed kyatt (polar)", "You can now catch " + "<col=000080>" + "sabre-toothed kyatts" + "</col>" + " with pit traps.");
+			}
+			break;
+		case 8:
+			if (((boolean)arg1)) {
+				return newstruct cs2func_script_1006_struct(43, 9960, "Spotted kebbit (woodland)", "You can now hunt " + "<col=000080>" + "spotted kebbits" + "</col>" + " with a falcon.");
+			}
+			if (((boolean)arg1)) {
+				return newstruct cs2func_script_1006_struct(57, 9963, "Dark kebbit (woodland)", "You can now hunt " + "<col=000080>" + "dark kebbits" + "</col>" + " with a falcon.");
+			}
+			if (arg1 == 2) {
+				return newstruct cs2func_script_1006_struct(69, 9964, "Dashing kebbit (woodland)", "You can now hunt " + "<col=000080>" + "dashing kebbits" + "</col>" + " with a falcon.");
+			}
+			break;
+		case 9:
+			if (((boolean)arg1)) {
+				return newstruct cs2func_script_1006_struct(71, 9952, "Imp (worldwide)" + "<br>" + " Preferred bait: Magical beads", "You can now catch " + "<col=000080>" + "imps" + "</col>" + " in " + "<col=000080>" + "imp boxes" + "</col>" + ".");
+			}
+			break;
+		case 10:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1006_struct(27, 9975, "White rabbit (woodland)" + "<br>" + " Use a ferret to flush the rabbit out of its hole" + "<br>" + " (after Eagles' Peak)", "You now have the Hunter level required to use a " + "<col=000080>" + "ferret" + "</col>" + " to hunt " + "<col=000080>" + "white rabbits" + "</col>" + " (after Eagles' Peak).");
+				case 1:
+					return newstruct cs2func_script_1006_struct(27, 9974, "Giant eagle (various)" + "<br>" + " (after Eagles' Peak)", "You now have the Hunter level required to lasso " + "<col=000080>" + "giant eagles" + "</col>" + " (after Eagles' Peak).");
+				case 2:
+					return newstruct cs2func_script_1006_struct(72, 19808, "Charm sprites (south of the Tree Gnome Stronghold)" + "<br>" + " Use Hunter skill to catch charm sprites and gain Summoning charms", "You now have the Hunter level required to transmute " + "<col=000080>" + "charm sprites" + "</col>" + " into Summoning charm slices.");
+				case 3:
+					return newstruct cs2func_script_1006_struct(91, 18778, "Starved ancient effigies", "You can now investigate " + "<col=000080>" + "starved ancient effigies" + "</col>" + " using your knowledge of Hunter.");
+				case 4:
+					return newstruct cs2func_script_1006_struct(93, 18779, "Nourished ancient effigies", "You can now investigate " + "<col=000080>" + "nourished ancient effigies" + "</col>" + " using your knowledge of Hunter.");
+				case 5:
+					return newstruct cs2func_script_1006_struct(95, 18780, "Sated ancient effigies", "You can now investigate " + "<col=000080>" + "sated ancient effigies" + "</col>" + " using your knowledge of Hunter.");
+				case 6:
+					return newstruct cs2func_script_1006_struct(97, 18781, "Gorged ancient effigies", "You can now investigate " + "<col=000080>" + "gorged ancient effigies" + "</col>" + " using your knowledge of Hunter.");
+			}
+			break;
+		case 11:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1006_struct(1, 10065, "Polar kebbit fur clothing (polar)", "You can now wear " + "<col=000080>" + "polar kebbit fur clothing" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1006_struct(1, 10053, "Common kebbit fur clothing (woodland)", "You can now wear " + "<col=000080>" + "common kebbit fur clothing" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1006_struct(4, 10057, "Feldip weasel fur clothing (jungle)", "You can now wear " + "<col=000080>" + "feldip weasel fur clothing" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1006_struct(10, 10061, "Desert devil fur clothing (desert)", "You can now wear " + "<col=000080>" + "desert devil fur clothing" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1006_struct(24, 10132, "Lucky rabbit's foot", "You can now wear a " + "<col=000080>" + "lucky rabbit's foot" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1006_struct(28, 10045, "Larupia fur clothing", "You can now wear " + "<col=000080>" + "larupia fur clothing" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1006_struct(38, 10051, "Graahk-hide clothing", "You can now wear " + "<col=000080>" + "graahk-hide clothing" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1006_struct(40, 10069, "Spotted capes", "You can now wear " + "<col=000080>" + "spotted capes" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1006_struct(52, 10039, "Kyatt fur clothing", "You can now wear " + "<col=000080>" + "kyatt fur clothing" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1006_struct(54, 10075, "Gloves of silence", "You can now wear " + "<col=000080>" + "gloves of silence" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_1006_struct(66, 10071, "Spottier capes", "You can now wear " + "<col=000080>" + "spottier capes" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_1006_struct(70, 20046, "Witchdoctor clothing", "You can now wear " + "<col=000080>" + "witchdoctor clothing" + "</col>" + ".");
+			}
+			break;
+		case 12:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1006_struct(17, 11238, "Baby impling", "You can now catch " + "<col=000080>" + "baby implings" + "</col>" + " barehanded.");
+				case 1:
+					return newstruct cs2func_script_1006_struct(22, 11240, "Young impling", "You can now catch " + "<col=000080>" + "young implings" + "</col>" + " barehanded.");
+				case 2:
+					return newstruct cs2func_script_1006_struct(28, 11242, "Gourmet impling", "You can now catch " + "<col=000080>" + "gourmet implings" + "</col>" + " barehanded.");
+				case 3:
+					return newstruct cs2func_script_1006_struct(36, 11244, "Earth impling", "You can now catch " + "<col=000080>" + "earth implings" + "</col>" + " barehanded.");
+				case 4:
+					return newstruct cs2func_script_1006_struct(42, 11246, "Essence impling", "You can now catch " + "<col=000080>" + "essence implings" + "</col>" + " barehanded.");
+				case 5:
+					return newstruct cs2func_script_1006_struct(50, 11248, "Eclectic impling", "You can now catch " + "<col=000080>" + "eclectic implings" + "</col>" + " barehanded.");
+				case 6:
+					return newstruct cs2func_script_1006_struct(54, 15513, "Spirit impling", "You can now catch " + "<col=000080>" + "spirit implings" + "</col>" + " barehanded.");
+				case 7:
+					return newstruct cs2func_script_1006_struct(58, 11250, "Nature impling", "You can now catch " + "<col=000080>" + "nature implings" + "</col>" + " barehanded.");
+				case 8:
+					return newstruct cs2func_script_1006_struct(65, 11252, "Magpie impling", "You can now catch " + "<col=000080>" + "magpie implings" + "</col>" + " barehanded.");
+				case 9:
+					return newstruct cs2func_script_1006_struct(74, 11254, "Ninja impling", "You can now catch " + "<col=000080>" + "ninja implings" + "</col>" + " barehanded.");
+				case 10:
+					return newstruct cs2func_script_1006_struct(76, 13337, "Pirate impling" + "<br>" + " (after Rocking Out)", "You can now catch " + "<col=000080>" + "pirate implings" + "</col>" + " barehanded (after Rocking Out).");
+				case 11:
+					return newstruct cs2func_script_1006_struct(80, 9970, "Catch ruby harvest butterfly barehanded (woodland)" + "<br>" + " (with 75 Agility)", "You now have the Hunter level to catch " + "<col=000080>" + "ruby harvest butterflies" + "</col>" + " barehanded. This feat will give you Hunter and Agility experience upon a successful catch. (You also need level 75 Agility.)");
+				case 12:
+					return newstruct cs2func_script_1006_struct(83, 11256, "Dragon impling", "You can now catch " + "<col=000080>" + "dragon implings" + "</col>" + " barehanded.");
+				case 13:
+					return newstruct cs2func_script_1006_struct(85, 9971, "Catch sapphire glacialis butterfly barehanded (polar)" + "<br>" + " (with 80 Agility)", "You now have the Hunter level to catch " + "<col=000080>" + "sapphire glacialis butterflies" + "</col>" + " barehanded. This feat will give you Hunter and Agility experience upon a successful catch. (You also need level 80 Agility.)");
+				case 14:
+					return newstruct cs2func_script_1006_struct(87, 15515, "Zombie impling", "You can now catch " + "<col=000080>" + "zombie implings" + "</col>" + " barehanded.");
+				case 15:
+					return newstruct cs2func_script_1006_struct(90, 9972, "Catch snowy knight butterfly barehanded (polar)" + "<br>" + " (with 85 Agility)", "You now have the Hunter level to catch " + "<col=000080>" + "snowy knight butterflies" + "</col>" + " barehanded. This feat will give you Hunter and Agility experience upon a successful catch. (You also need level 85 Agility.)");
+				case 16:
+					return newstruct cs2func_script_1006_struct(91, 15517, "Kingly impling", "You can now catch " + "<col=000080>" + "kingly implings" + "</col>" + " barehanded.");
+				case 17:
+					return newstruct cs2func_script_1006_struct(95, 9973, "Catch black warlock butterfly barehanded (jungle)" + "<br>" + " (with 90 Agility)", "You now have the Hunter level to catch " + "<col=000080>" + "black warlock butterflies" + "</col>" + " barehanded. This feat will give you Hunter and Agility experience upon a successful catch. (You also need level 90 Agility.)");
+			}
+			break;
+		case 13:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1006_struct(1, 14152, "Stealing Creation - class 1 butterfly net", "Members can now use " + "<col=000080>" + "class 1 butterfly nets" + "</col>" + " in Stealing Creation.");
+				case 1:
+					return newstruct cs2func_script_1006_struct(20, 14184, "Stealing Creation - net class 2 sacred clay", "Members can now net " + "<col=000080>" + "class 2 sacred clay" + "</col>" + " in Stealing Creation.");
+				case 2:
+					return newstruct cs2func_script_1006_struct(20, 14154, "Stealing Creation - class 2 butterfly net", "Members can now use " + "<col=000080>" + "class 2 butterfly nets" + "</col>" + " in Stealing Creation.");
+				case 3:
+					return newstruct cs2func_script_1006_struct(40, 14186, "Stealing Creation - net class 3 sacred clay", "Members can now net " + "<col=000080>" + "class 3 sacred clay" + "</col>" + " in Stealing Creation.");
+				case 4:
+					return newstruct cs2func_script_1006_struct(40, 14156, "Stealing Creation - class 3 butterfly net", "Members can now use " + "<col=000080>" + "class 3 butterfly nets" + "</col>" + " in Stealing Creation.");
+				case 5:
+					return newstruct cs2func_script_1006_struct(60, 14188, "Stealing Creation - net class 4 sacred clay", "Members can now net " + "<col=000080>" + "class 4 sacred clay" + "</col>" + " in Stealing Creation.");
+				case 6:
+					return newstruct cs2func_script_1006_struct(60, 14158, "Stealing Creation - class 4 butterfly net", "Members can now use " + "<col=000080>" + "class 4 butterfly nets" + "</col>" + " in Stealing Creation.");
+				case 7:
+					return newstruct cs2func_script_1006_struct(80, 14190, "Stealing Creation - net class 5 sacred clay", "Members can now net " + "<col=000080>" + "class 5 sacred clay" + "</col>" + " in Stealing Creation.");
+				case 8:
+					return newstruct cs2func_script_1006_struct(80, 14160, "Stealing Creation - class 5 butterfly net", "Members can now use " + "<col=000080>" + "class 5 butterfly nets" + "</col>" + " in Stealing Creation.");
+			}
+			break;
+		case 14:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1006_struct(-1, 15707, "Dungeoneering skill tasks" + "<br>" + "As your Hunter level increases, you will be able to attempt higher-level hunter tasks within Daemonheim. You will also be more likely to succeed when attempting hunter tasks within Daemonheim.", "");
+				case 1:
+					return newstruct cs2func_script_1006_struct(1, 17756, "Tangle gum trap (Tier 1)", "You can now place " + "<col=000080>" + "tangle gum traps" + "</col>" + " within Daemonheim.");
+				case 2:
+					return newstruct cs2func_script_1006_struct(1, 17424, "Protomastyx hide (Tier 1)", "You can now gain " + "<col=000080>" + "protomastyx hides" + "</col>" + " from protomastyx carcasses within Daemonheim.");
+				case 3:
+					return newstruct cs2func_script_1006_struct(10, 17758, "Seeping elm trap (Tier 2)", "You can now place " + "<col=000080>" + "seeping elm traps" + "</col>" + " within Daemonheim.");
+				case 4:
+					return newstruct cs2func_script_1006_struct(10, 17426, "Submastyx hide (Tier 2)", "You can now gain " + "<col=000080>" + "submastyx hides" + "</col>" + " from submastyx carcasses within Daemonheim.");
+				case 5:
+					return newstruct cs2func_script_1006_struct(20, 17760, "Blood spindle trap (Tier 3)", "You can now place " + "<col=000080>" + "blood spindle traps" + "</col>" + " within Daemonheim.");
+				case 6:
+					return newstruct cs2func_script_1006_struct(20, 17428, "Paramastyx hide (Tier 3)", "You can now gain " + "<col=000080>" + "paramastyx hides" + "</col>" + " from paramastyx carcasses within Daemonheim.");
+				case 7:
+					return newstruct cs2func_script_1006_struct(30, 17762, "Utuku trap (Tier 4)", "You can now place " + "<col=000080>" + "utuku traps" + "</col>" + " within Daemonheim.");
+				case 8:
+					return newstruct cs2func_script_1006_struct(30, 17430, "Archaemastyx hide (Tier 4)", "You can now gain " + "<col=000080>" + "archaemastyx hides" + "</col>" + " from archaemastyx carcasses within Daemonheim.");
+				case 9:
+					return newstruct cs2func_script_1006_struct(40, 17764, "Spinebeam trap (Tier 5)", "You can now place " + "<col=000080>" + "spinebeam traps" + "</col>" + " within Daemonheim.");
+				case 10:
+					return newstruct cs2func_script_1006_struct(40, 17432, "Dromomastyx hide (Tier 5)", "You can now gain " + "<col=000080>" + "dromomastyx hides" + "</col>" + " from dromomastyx carcasses within Daemonheim.");
+				case 11:
+					return newstruct cs2func_script_1006_struct(50, 17766, "Bovistrangler trap (Tier 6)", "You can now place " + "<col=000080>" + "bovistrangler traps" + "</col>" + " within Daemonheim.");
+				case 12:
+					return newstruct cs2func_script_1006_struct(50, 17434, "Spinomastyx hide (Tier 6)", "You can now gain " + "<col=000080>" + "spinomastyx hides" + "</col>" + " from spinomastyx carcasses within Daemonheim.");
+				case 13:
+					return newstruct cs2func_script_1006_struct(60, 17768, "Thigat trap (Tier 7)", "You can now place " + "<col=000080>" + "thigat traps" + "</col>" + " within Daemonheim.");
+				case 14:
+					return newstruct cs2func_script_1006_struct(60, 17436, "Gallimastyx hide (Tier 7)", "You can now gain " + "<col=000080>" + "gallimastyx hides" + "</col>" + " from gallimastyx carcasses within Daemonheim.");
+				case 15:
+					return newstruct cs2func_script_1006_struct(70, 17770, "Corpsethorn trap (Tier 8)", "You can now place " + "<col=000080>" + "corpsethorn traps" + "</col>" + " within Daemonheim.");
+				case 16:
+					return newstruct cs2func_script_1006_struct(70, 17438, "Stegomastyx hide (Tier 8)", "You can now gain " + "<col=000080>" + "stegomastyx hides" + "</col>" + " from stegomastyx carcasses within Daemonheim.");
+				case 17:
+					return newstruct cs2func_script_1006_struct(80, 17772, "Entgallow trap (Tier 9)", "You can now place " + "<col=000080>" + "entgallow traps" + "</col>" + " within Daemonheim.");
+				case 18:
+					return newstruct cs2func_script_1006_struct(80, 17440, "Megamastyx hide (Tier 9)", "You can now gain " + "<col=000080>" + "megamastyx hides" + "</col>" + " from megamastyx carcasses within Daemonheim.");
+				case 19:
+					return newstruct cs2func_script_1006_struct(90, 17774, "Grave creeper trap (Tier 10)", "You can now place " + "<col=000080>" + "grave creeper traps" + "</col>" + " within Daemonheim.");
+				case 20:
+					return newstruct cs2func_script_1006_struct(90, 17442, "Tyrannomastyx hide (Tier 10)", "You can now gain " + "<col=000080>" + "tyrannomastyx hides" + "</col>" + " from tyrannomastyx carcasses within Daemonheim.");
+			}
+			break;
+		case 15:
+			if (((boolean)arg1)) {
+				return newstruct cs2func_script_1006_struct(99, 9948, "Skill mastery", "<col=000080>" + "Congratulations! You are now a master " + "<col=800000>" + "Hunter" + "<col=000080>" + ". Why not visit the " + "<col=800000>" + "Hunter Expert" + "<col=000080>" + ", south of the " + "<col=800000>" + "Feldip Hills" + "<col=000080>" + "? She has something special that is only available to true masters of the " + "<col=800000>" + "Hunter" + "<col=000080>" + " skill!");
+			}
+	}
+	return newstruct cs2func_script_1006_struct(0, -1, "", "");
+}

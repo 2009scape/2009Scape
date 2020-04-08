@@ -1,0 +1,8 @@
+void script_968(int arg0) {
+	if (((boolean)script_970(arg0))) {
+		setScriptCallOnGameloop(969, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+	} else {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+	}
+	return;
+}

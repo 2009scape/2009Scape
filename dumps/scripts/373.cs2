@@ -1,0 +1,36 @@
+void script_373(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	ivar5 = -1;
+	if (arg1 == -1) {
+		ivar5 = getWidgetParentId(new WidgetPointer(arg0));
+	} else {
+		ivar5 = arg0;
+	}
+	if (((boolean)arg4)) {
+		flow_4:
+			IF (arg1 == -1) 
+				GOTO	flow_5
+			GOTO	flow_6
+		flow_5:
+			IF (setWidgetRegister(new WidgetPointer(arg0))) 
+				GOTO	flow_7
+		flow_6:
+			IF (setWidgetRegister(new WidgetPointer(arg0), arg1)) 
+				GOTO	flow_7
+			GOTO	flow_8
+		flow_7:
+			createExtraChild(new WidgetPointer(ivar5), 3, arg2);
+			setWidgetSize(subtract(getWidgetActualWidth(), multiply(arg3, 2)), subtract(getWidgetActualHeight(), multiply(arg3, 2)), 0, 0);
+			setWidgetPosition(add(getWidgetActualX(), arg3), add(getWidgetActualY(), arg3), 0, 0);
+			setWidgetRGB(new Color(255, 255, 255));
+			cs2method2103(200);
+			setWidgetFilled(1);
+		flow_8:
+	} else {
+		if (setWidgetRegister(new WidgetPointer(ivar5), arg2)) {
+			deleteExtraChild();
+		}
+		script_383();
+	}
+	return;
+}

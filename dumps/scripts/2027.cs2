@@ -1,0 +1,32 @@
+void script_2027(int arg0) {
+	if (isBitFlagged(standart_config_331, 0)) {
+		setWidget3DRotation(0, 0, 512, 1536, 0, 400, new WidgetPointer(arg0));
+	} else if (isBitFlagged(standart_config_331, 1)) {
+		setWidget3DRotation(0, 0, 512, 1664, 0, 400, new WidgetPointer(arg0));
+	} else if (isBitFlagged(standart_config_331, 2)) {
+		setWidget3DRotation(0, 0, 512, 1792, 0, 400, new WidgetPointer(arg0));
+	} else if (isBitFlagged(standart_config_331, 3)) {
+		setWidget3DRotation(0, 0, 512, 1920, 0, 400, new WidgetPointer(arg0));
+	} else if (isBitFlagged(standart_config_331, 4)) {
+		setWidget3DRotation(0, 0, 512, 0, 0, 400, new WidgetPointer(arg0));
+	} else if (isBitFlagged(standart_config_331, 5)) {
+		setWidget3DRotation(0, 0, 512, 128, 0, 400, new WidgetPointer(arg0));
+	} else if (isBitFlagged(standart_config_331, 6)) {
+		setWidget3DRotation(0, 0, 512, 256, 0, 400, new WidgetPointer(arg0));
+	} else if (isBitFlagged(standart_config_331, 7)) {
+		setWidget3DRotation(0, 0, 512, 384, 0, 400, new WidgetPointer(arg0));
+	} else if (isBitFlagged(standart_config_331, 8)) {
+		setWidget3DRotation(0, 0, 512, 512, 0, 400, new WidgetPointer(arg0));
+	} else if (isBitFlagged(standart_config_331, 9)) {
+		setWidget3DRotation(0, 0, 512, 640, 0, 400, new WidgetPointer(arg0));
+	} else if (isBitFlagged(standart_config_331, 10)) {
+		setWidget3DRotation(0, 0, 512, 768, 0, 400, new WidgetPointer(arg0));
+	} else if (isBitFlagged(standart_config_331, 11)) {
+		setWidget3DRotation(0, 0, 512, 896, 0, 400, new WidgetPointer(arg0));
+	} else {
+		if (isBitFlagged(standart_config_331, 12)) {
+			setWidget3DRotation(0, 0, 512, 1024, 0, 400, new WidgetPointer(arg0));
+		}
+	}
+	return;
+}

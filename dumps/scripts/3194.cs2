@@ -1,0 +1,10 @@
+void script_3194() {
+	closeInterface(59375688);
+	setWidgetIsHidden(true, new WidgetPointer(906,55));
+	setScriptCallOnKeyPress(-1, "", new WidgetPointer(915,18));
+	globalint_1094 = 0;
+	if (isWidgetHidden(cs2method_3408(105, 73, 941, 5))) {
+		script_3161(1);
+	}
+	return;
+}

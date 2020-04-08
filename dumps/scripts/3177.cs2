@@ -1,0 +1,18 @@
+void script_3177(int arg0,string arg1) {
+	int ivar1;
+	script_41(59768846);
+	script_41(59572283);
+	globalstring_279 = "";
+	globalint_6 = arg0;
+	globalint_1094 = 0;
+	ivar1 = 0;
+	if (hasMoreThen5Blackmarks() || (getClientRights() > 0)) {
+		ivar1 = 1;
+	}
+	if (((boolean)getLanguage())) {
+		script_2921(ivar1, getBlackmarks(), arg1);
+	} else {
+		script_2920(ivar1, getBlackmarks(), arg1);
+	}
+	return;
+}

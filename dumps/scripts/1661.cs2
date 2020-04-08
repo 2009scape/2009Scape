@@ -1,0 +1,14 @@
+void script_1661(int arg0,int arg1,int arg2) {
+	deleteAllExtraChilds(new WidgetPointer(arg2));
+	if ((bitconfig_4895 != 3) || (standart_config_281 != 55)) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg2));
+		return;
+	}
+	createExtraChild(new WidgetPointer(arg2), 6, 0);
+	setWidgetModel(41760);
+	setWidgetAnimation(10221);
+	setWidgetSize(43, 43, 0, 0);
+	script_1663(arg0, arg1, arg2);
+	setScriptCallOnGameloop(1662, new WidgetPointer(arg0), arg1, new WidgetPointer(arg2), "IiI", new WidgetPointer(arg2));
+	return;
+}

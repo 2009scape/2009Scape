@@ -1,0 +1,17 @@
+void script_4784(int arg0,int arg1,string arg2) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar2 = 2;
+	ivar3 = divide(getWidgetActualWidth(new WidgetPointer(arg0)), 2);
+	ivar4 = getWidgetActualY(new WidgetPointer(arg0));
+	if ((arg1 != -1) && setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		ivar3 = divide(getWidgetActualWidth(), 2);
+		ivar4 = getWidgetActualY();
+	}
+	if (subtract(ivar4, cs2method2601(new WidgetPointer(arg0))) > 114) {
+		ivar2 = 0;
+	}
+	script_4539(73072826, arg0, arg1, 150, -1, -1, -1, 13, 4, ivar2, ivar3, ivar4, arg2);
+	return;
+}

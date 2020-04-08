@@ -1,0 +1,175 @@
+int script_300(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,string arg9) {
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	int stack_dump3;
+	int stack_dump4;
+	int stack_dump5;
+	int stack_dump6;
+	cs2func_script_296_struct(2,0,0) structdump_7;
+	ivar9 = 0;
+	ivar10 = 0;
+	stack_dump0 = arg0;
+	stack_dump1 = arg1;
+	stack_dump2 = arg3;
+	stack_dump3 = arg4;
+	stack_dump4 = arg5;
+	stack_dump5 = arg6;
+	stack_dump6 = arg7;
+	structdump_7 = script_296(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4, stack_dump5, stack_dump6);
+	ivar10 = structdump_7.intpart_1;
+	ivar9 = structdump_7.intpart_0;
+	ivar11 = getOtherCommonData(arg2, 650);
+	ivar12 = getOtherCommonData(arg2, 651);
+	ivar13 = add(add(getMaxLineWidth(512, 591, arg9), ivar11), ivar11);
+	ivar14 = add(add(add(multiply(getLineCount(getWidgetActualWidth(new WidgetPointer(arg3)), 591, arg9), 13), 2), ivar12), ivar12);
+	ivar15 = getOtherCommonData(arg2, 647);
+	ivar16 = getOtherCommonData(arg2, 648);
+	ivar17 = getOtherCommonData(arg2, 649);
+	ivar18 = getOtherCommonData(arg2, 652);
+	ivar19 = divide(subtract(ivar13, ivar11), 2);
+	ivar20 = divide(subtract(ivar14, ivar12), 2);
+	if (setWidgetRegister(new WidgetPointer(arg3), arg8)) {
+		setWidgetPosition(ivar9, ivar10, 1, 1);
+	} else {
+		createExtraChild(new WidgetPointer(arg3), 5, arg8);
+		setWidgetPosition(ivar9, ivar10, 1, 1);
+		setWidgetSize(subtract(ivar13, multiply(ivar11, 2)), subtract(ivar14, multiply(ivar12, 2)), 0, 0);
+		setWidgetSprite(getOtherCommonData(arg2, 646));
+		cs2method1107(1);
+	}
+	arg8 = add(arg8, 1);
+	if (setWidgetRegister(new WidgetPointer(arg3), arg8)) {
+		setWidgetPosition(ivar9, subtract(ivar10, ivar20), 1, 1);
+	} else {
+		createExtraChild(new WidgetPointer(arg3), 5, arg8);
+		setWidgetPosition(ivar9, subtract(ivar10, ivar20), 1, 1);
+		setWidgetSize(subtract(ivar13, multiply(ivar11, 2)), ivar12, 0, 0);
+		setWidgetSprite(ivar16);
+		cs2method1107(1);
+		setWidgetVFlip(0);
+		setWidgetHFlip(0);
+	}
+	arg8 = add(arg8, 1);
+	if (setWidgetRegister(new WidgetPointer(arg3), arg8)) {
+		setWidgetPosition(ivar9, add(ivar10, ivar20), 1, 1);
+	} else {
+		createExtraChild(new WidgetPointer(arg3), 5, arg8);
+		setWidgetPosition(ivar9, add(ivar10, ivar20), 1, 1);
+		setWidgetSize(subtract(ivar13, multiply(ivar11, 2)), ivar12, 0, 0);
+		setWidgetSprite(ivar16);
+		cs2method1107(1);
+		setWidgetVFlip(1);
+		setWidgetHFlip(0);
+	}
+	arg8 = add(arg8, 1);
+	if (setWidgetRegister(new WidgetPointer(arg3), arg8)) {
+		setWidgetPosition(subtract(ivar9, ivar19), ivar10, 1, 1);
+	} else {
+		createExtraChild(new WidgetPointer(arg3), 5, arg8);
+		setWidgetPosition(subtract(ivar9, ivar19), ivar10, 1, 1);
+		setWidgetSize(ivar11, subtract(ivar14, multiply(ivar12, 2)), 0, 0);
+		setWidgetSprite(ivar17);
+		cs2method1107(1);
+		setWidgetVFlip(0);
+		setWidgetHFlip(0);
+	}
+	arg8 = add(arg8, 1);
+	if (setWidgetRegister(new WidgetPointer(arg3), arg8)) {
+		setWidgetPosition(add(ivar9, ivar19), ivar10, 1, 1);
+	} else {
+		createExtraChild(new WidgetPointer(arg3), 5, arg8);
+		setWidgetPosition(add(ivar9, ivar19), ivar10, 1, 1);
+		setWidgetSize(ivar11, subtract(ivar14, multiply(ivar12, 2)), 0, 0);
+		setWidgetSprite(ivar17);
+		cs2method1107(1);
+		setWidgetVFlip(0);
+		setWidgetHFlip(1);
+	}
+	arg8 = add(arg8, 1);
+	if (setWidgetRegister(new WidgetPointer(arg3), arg8)) {
+		setWidgetPosition(subtract(ivar9, ivar19), subtract(ivar10, ivar20), 1, 1);
+	} else {
+		createExtraChild(new WidgetPointer(arg3), 5, arg8);
+		setWidgetPosition(subtract(ivar9, ivar19), subtract(ivar10, ivar20), 1, 1);
+		setWidgetSize(ivar11, ivar12, 0, 0);
+		setWidgetSprite(ivar15);
+		cs2method1107(0);
+		setWidgetVFlip(0);
+		setWidgetHFlip(0);
+	}
+	arg8 = add(arg8, 1);
+	if (setWidgetRegister(new WidgetPointer(arg3), arg8)) {
+		setWidgetPosition(add(ivar9, ivar19), subtract(ivar10, ivar20), 1, 1);
+	} else {
+		createExtraChild(new WidgetPointer(arg3), 5, arg8);
+		setWidgetPosition(add(ivar9, ivar19), subtract(ivar10, ivar20), 1, 1);
+		setWidgetSize(ivar11, ivar12, 0, 0);
+		setWidgetSprite(ivar15);
+		cs2method1107(0);
+		setWidgetVFlip(0);
+		setWidgetHFlip(1);
+	}
+	arg8 = add(arg8, 1);
+	if (setWidgetRegister(new WidgetPointer(arg3), arg8)) {
+		setWidgetPosition(subtract(ivar9, ivar19), add(ivar10, ivar20), 1, 1);
+	} else {
+		createExtraChild(new WidgetPointer(arg3), 5, arg8);
+		setWidgetPosition(subtract(ivar9, ivar19), add(ivar10, ivar20), 1, 1);
+		setWidgetSize(ivar11, ivar12, 0, 0);
+		setWidgetSprite(ivar15);
+		cs2method1107(0);
+		setWidgetVFlip(1);
+		setWidgetHFlip(0);
+	}
+	arg8 = add(arg8, 1);
+	if (setWidgetRegister(new WidgetPointer(arg3), arg8)) {
+		setWidgetPosition(add(ivar9, ivar19), add(ivar10, ivar20), 1, 1);
+	} else {
+		createExtraChild(new WidgetPointer(arg3), 5, arg8);
+		setWidgetPosition(add(ivar9, ivar19), add(ivar10, ivar20), 1, 1);
+		setWidgetSize(ivar11, ivar12, 0, 0);
+		setWidgetSprite(ivar15);
+		cs2method1107(0);
+		setWidgetVFlip(1);
+		setWidgetHFlip(1);
+	}
+	arg8 = add(arg8, 1);
+	if (setWidgetRegister(new WidgetPointer(arg3), arg8)) {
+		setWidgetPosition(add(ivar9, 1), add(ivar10, 1), 1, 1);
+	} else {
+		createExtraChild(new WidgetPointer(arg3), 4, arg8);
+		setWidgetPosition(add(ivar9, 1), add(ivar10, 1), 1, 1);
+		setWidgetSize(ivar13, ivar14, 0, 0);
+		setWidgetRGB(new Color(getOtherCommonData(arg2, 653)));
+		setWidgetTextAlignment(1, 1, 13);
+		setWidgetFont(591);
+		setWidgetText(arg9);
+	}
+	arg8 = add(arg8, 1);
+	if (setWidgetRegister(new WidgetPointer(arg3), arg8)) {
+		setWidgetPosition(ivar9, ivar10, 1, 1);
+	} else {
+		createExtraChild(new WidgetPointer(arg3), 4, arg8);
+		setWidgetPosition(ivar9, ivar10, 1, 1);
+		setWidgetSize(ivar13, ivar14, 0, 0);
+		setWidgetRGB(new Color(ivar18));
+		setWidgetTextAlignment(1, 1, 13);
+		setWidgetFont(591);
+		setWidgetText(arg9);
+	}
+	arg8 = add(arg8, 1);
+	return arg8;
+}

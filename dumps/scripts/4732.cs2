@@ -1,0 +1,8 @@
+void script_4732(int arg0,int arg1) {
+	if (isBitFlagged(standart_config_2396, arg1)) {
+		setWidgetSprite(6004, new WidgetPointer(arg0));
+	} else {
+		setWidgetSprite(6011, new WidgetPointer(arg0));
+	}
+	return;
+}

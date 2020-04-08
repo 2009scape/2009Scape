@@ -1,0 +1,11 @@
+void script_2752() {
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetFont(495);
+	setWidgetRGB(new Color(0, 0, 255));
+	setWidgetUnknownBoolean(false);
+	setWidgetSize(0, subtract(getWidgetActualHeight(new WidgetPointer(getWidgetParentId())), add(getWidgetActualY(new WidgetPointer(752,5)), getWidgetActualHeight(new WidgetPointer(752,5)))), 1, 0);
+	setWidgetPosition(0, 0, 1, 2);
+	setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), -2147483643, 16777215, "Iii");
+	setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), -2147483643, 255, "Iii");
+	return;
+}

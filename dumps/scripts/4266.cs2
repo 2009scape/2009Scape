@@ -1,0 +1,21 @@
+void script_4266() {
+	script_4267();
+	script_4274();
+	setWidgetText(new WidgetPointer(1083,85), "");
+	setWidgetText(new WidgetPointer(1083,87), "Select a reward for more information.");
+	setWidgetText(new WidgetPointer(1083,89), "");
+	setWidgetIsHidden(true, new WidgetPointer(1083,90));
+	setWidgetIsHidden(true, new WidgetPointer(1083,164));
+	setWidgetIsHidden(true, new WidgetPointer(1083,159));
+	setWidgetIsHidden(false, new WidgetPointer(1083,157));
+	setWidgetIsHidden(false, new WidgetPointer(1083,158));
+	setWidgetIsHidden(false, new WidgetPointer(1083,165));
+	if (bitconfig_9067 < 11) {
+		script_4270();
+		setWidgetText(new WidgetPointer(1083,85), "Spells");
+	} else {
+		script_4272();
+		setWidgetText(new WidgetPointer(1083,85), "Wishes");
+	}
+	return;
+}

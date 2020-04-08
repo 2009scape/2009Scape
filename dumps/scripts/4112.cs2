@@ -1,0 +1,25 @@
+void script_4112(int arg0) {
+	int ivar1;
+	if (standart_config_1109 == -1) {
+		return;
+	}
+	ivar1 = 0;
+	if ((arg0 > 100) && (globalint_85 > 2045222520)) {
+		ivar1 = 2147483647;
+	} else if ((arg0 < 100) && (globalint_85 <= 1)) {
+		ivar1 = 1;
+	} else {
+		ivar1 = multiplyDivide(arg0, 100, globalint_85);
+		if (ivar1 == globalint_85) {
+			if (arg0 >= 100) {
+				ivar1 = add(ivar1, 1);
+			} else {
+				ivar1 = subtract(ivar1, 1);
+			}
+		}
+	}
+	globalint_85 = ivar1;
+	setWidgetText(new WidgetPointer(105,153), formatNumber(globalint_85, 1) + " gp");
+	script_609();
+	return;
+}

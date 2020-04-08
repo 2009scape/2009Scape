@@ -1,0 +1,24 @@
+void script_679(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar1 = getWidgetActualWidth(new WidgetPointer(arg0));
+	ivar2 = getWidgetActualHeight(new WidgetPointer(arg0));
+	ivar3 = subtract(ivar1, 9);
+	ivar4 = subtract(ivar2, 9);
+	ivar5 = subtract(ivar1, 18);
+	ivar6 = subtract(ivar2, 18);
+	script_98(arg0, 0, 913, 0, 0, 9, 9);
+	script_98(arg0, 1, 914, ivar3, 0, 9, 9);
+	script_98(arg0, 2, 915, 0, ivar4, 9, 9);
+	script_98(arg0, 3, 916, ivar3, ivar4, 9, 9);
+	script_98(arg0, 4, 917, 0, 9, 9, ivar6);
+	script_98(arg0, 5, 918, 9, 0, ivar5, 9);
+	script_98(arg0, 6, 919, ivar3, 9, 9, ivar6);
+	script_98(arg0, 7, 920, 9, ivar4, ivar5, 9);
+	return;
+}

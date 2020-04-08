@@ -2,12 +2,13 @@ package org.crandor.game.content.skill.member.fletching.items.bolts;
 
 import org.crandor.game.content.skill.SkillPulse;
 import org.crandor.game.content.skill.Skills;
+import org.crandor.game.content.skill.member.fletching.Fletching;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.item.Item;
 
 /**
  * Represents the bolt pulse class to make bolts.
- * @author 'Vexia
+ * @author ceik
  */
 public final class BoltPulse extends SkillPulse<Item> {
 
@@ -19,7 +20,7 @@ public final class BoltPulse extends SkillPulse<Item> {
 	/**
 	 * Represents the bolt.
 	 */
-	private final Bolt bolt;
+	private final Fletching.Bolts bolt;
 
 	/**
 	 * Represents the sets to do.
@@ -36,7 +37,7 @@ public final class BoltPulse extends SkillPulse<Item> {
 	 * @param player the player.
 	 * @param node the node.
 	 */
-	public BoltPulse(Player player, Item node, final Bolt bolt, final int sets) {
+	public BoltPulse(Player player, Item node, final Fletching.Bolts bolt, final int sets) {
 		super(player, node);
 		this.bolt = bolt;
 		this.sets = sets;
@@ -44,26 +45,21 @@ public final class BoltPulse extends SkillPulse<Item> {
 
 	@Override
 	public boolean checkRequirements() {
-		if (bolt.getItem().getId() == 13279) {
+		if (bolt.getUnfinished().getId() == 13279) {
 			if (!player.getSlayer().getLearned()[0]) {
 				player.getDialogueInterpreter().sendDialogue("You need to unlock the ability to create broad bolts.");
 				return false;
 			}
 		}
-		if (player.getSkills().getLevel(Skills.FLETCHING) < bolt.getLevel()) {
-			player.getDialogueInterpreter().sendDialogue("You need a fletching level of " + bolt.getLevel() + " in order to do this.");
+		if (player.getSkills().getLevel(Skills.FLETCHING) < bolt.level) {
+			player.getDialogueInterpreter().sendDialogue("You need a fletching level of " + bolt.level + " in order to do this.");
 			return false;
 		}
 		if (!player.getInventory().containsItem(feather)) {
 			return false;
 		}
-		if (!player.getInventory().containsItem(bolt.getItem())) {
+		if (!player.getInventory().containsItem(bolt.getUnfinished())) {
 			return false;
-		}
-		if (player.getInventory().contains(bolt.getItem().getId(), 10) && player.getInventory().contains(feather.getId(), 10)) {
-			useSets = true;
-		} else {
-			useSets = false;
 		}
 		return true;
 	}
@@ -74,36 +70,37 @@ public final class BoltPulse extends SkillPulse<Item> {
 
 	@Override
 	public boolean reward() {
+		int featherAmount = player.getInventory().getAmount(feather);
+		int boltAmount = player.getInventory().getAmount(bolt.unfinished);
 		if (getDelay() == 1) {
 			super.setDelay(3);
 		}
-		final Item boltt = bolt.getItem();
-		if (useSets) {
+		final Item unfinished = bolt.getUnfinished();
+		if (featherAmount >= 10 && boltAmount >= 10) {
 			feather.setAmount(10);
-			boltt.setAmount(10);
+			unfinished.setAmount(10);
 			player.getPacketDispatch().sendMessage("You fletch 10 bolts.");
 		} else {
-			player.getPacketDispatch().sendMessage("You attach a feather to a bolt.");
+			int amount = featherAmount > boltAmount ? boltAmount : featherAmount;
+			feather.setAmount(amount);
+			unfinished.setAmount(amount);
+			player.getPacketDispatch().sendMessage(amount == 1 ? "You attach a feather to a bolt." : "You fletch " + amount + " bolts");
 		}
-		if (player.getInventory().remove(feather, boltt)) {
-			Item product = bolt.getProduct();
-			if (useSets) {
-				product.setAmount(10);
-			} else {
-				product.setAmount(1);
-			}
-			player.getSkills().addExperience(Skills.FLETCHING, useSets ? bolt.getExperience() * 10 : bolt.getExperience(), true);
+		if (player.getInventory().remove(feather, unfinished)) {
+			Item product = bolt.getFinished();
+			product.setAmount(feather.getAmount());
+			player.getSkills().addExperience(Skills.FLETCHING, product.getAmount() * bolt.experience, true);
 			player.getInventory().add(product);
 		}
 		feather.setAmount(1);
 		if (!player.getInventory().containsItem(feather)) {
 			return true;
 		}
-		if (!player.getInventory().containsItem(bolt.getItem())) {
+		if (!player.getInventory().containsItem(bolt.getUnfinished())) {
 			return true;
 		}
 		sets--;
-		return sets == 0;
+		return sets <= 0;
 	}
 
 	@Override

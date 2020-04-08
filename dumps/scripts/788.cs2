@@ -1,0 +1,3 @@
+cs2func_script_788_struct(2,0,0) script_788(int arg0,int arg1,int arg2) {
+	return newstruct cs2func_script_788_struct(add(getWidgetActualX(new WidgetPointer(arg0)), arg1), add(getWidgetActualY(new WidgetPointer(arg0)), arg2));
+}

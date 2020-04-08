@@ -1,0 +1,21 @@
+void script_2833(int arg0) {
+	switch (arg0) {
+		case 6099:
+		case 6102:
+		case 6101:
+		case 6100:
+			script_2411(arg0);
+			return;
+		case 13561:
+		case 19760:
+		case 13562:
+			script_2431(arg0);
+			return;
+		case 18339:
+			script_1273(arg0);
+			return;
+	}
+	setScriptCallOnConfigChange(-1, "");
+	script_2410(getItemDefOpcode129Or130Method4209(arg0, 1), getItemDefOpcode129Or130Method4209(arg0, 2), getItemDefOpcode129Or130Method4209(arg0, 3), getItemDefOpcode129Or130Method4209(arg0, 4), getItemDefOpcode129Or130Method4209(arg0, 5), getItemOption(arg0, 1), getItemOption(arg0, 2), getItemOption(arg0, 3), getItemOption(arg0, 4), getItemOption(arg0, 5), getItemName(arg0));
+	return;
+}

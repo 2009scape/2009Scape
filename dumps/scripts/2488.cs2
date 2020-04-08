@@ -1,0 +1,10 @@
+void script_2488() {
+	setWidgetIsHidden(false, new WidgetPointer(844,10));
+	setWidgetIsHidden(true, new WidgetPointer(844,11));
+	setWidgetSprite(1420, new WidgetPointer(844,51));
+	setWidgetSprite(1421, new WidgetPointer(844,49));
+	setItemOnWidgetMethod2205(436, 1, new WidgetPointer(844,52));
+	setItemOnWidgetMethod2205(1511, 1, new WidgetPointer(844,50));
+	script_2490();
+	return;
+}

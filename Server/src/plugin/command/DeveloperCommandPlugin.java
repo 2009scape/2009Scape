@@ -23,6 +23,7 @@ import org.crandor.game.node.entity.player.ai.AIPlayer;
 import org.crandor.game.node.entity.player.ai.pvp.PVPAIPActions;
 import org.crandor.game.node.entity.player.ai.pvp.PVPAIPBuilderUtils;
 import org.crandor.game.node.entity.player.ai.resource.ResourceAIPManager;
+import org.crandor.game.node.entity.player.info.PlayerDetails;
 import org.crandor.game.node.entity.player.info.login.PlayerParser;
 import org.crandor.game.node.entity.player.link.IronmanMode;
 import org.crandor.game.node.entity.player.link.appearance.Gender;
@@ -32,9 +33,12 @@ import org.crandor.game.node.entity.player.link.skillertasks.Difficulty;
 import org.crandor.game.node.entity.state.EntityState;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.node.object.GameObject;
+import org.crandor.game.node.object.ObjectBuilder;
 import org.crandor.game.system.command.CommandPlugin;
 import org.crandor.game.system.command.CommandSet;
 import org.crandor.game.system.mysql.SQLManager;
+import org.crandor.game.system.mysql.impl.DoorConfigSQLHandler;
+import org.crandor.game.system.mysql.impl.DoorConfigSQLHandler.Door;
 import org.crandor.game.system.mysql.impl.ItemConfigSQLHandler;
 import org.crandor.game.system.mysql.impl.NPCDropSQLHandler;
 import org.crandor.game.system.script.ScriptManager;
@@ -107,6 +111,11 @@ public final class DeveloperCommandPlugin extends CommandPlugin {
         		}
         		
         	break;
+        	
+        	case "setlevel":
+        		player.getSkills().setLevel(Integer.parseInt(args[1]), Integer.parseInt(args[2]));
+        		player.getSkills().setStaticLevel(Integer.parseInt(args[1]), Integer.parseInt(args[2]));
+        		break;
         	
         	case "playsong":
         		player.getMusicPlayer().play(MusicEntry.getSongs().get(Integer.parseInt(args[1])));
@@ -259,6 +268,27 @@ public final class DeveloperCommandPlugin extends CommandPlugin {
 
                 });
                 break;
+               
+            case "tempsound":
+            	player.getPacketDispatch().sendTempMusic(Integer.parseInt(args[1]));
+            	break;
+            case "loopsounds":
+            	GameWorld.submit(new Pulse(5) {
+            		int i = Integer.parseInt(args[2]);
+            		int j = Integer.parseInt(args[1]);
+            		@Override
+            		public boolean pulse() {
+                		player.sendMessage("Sound: " + i);
+                		player.getPacketDispatch().sendTempMusic(i);
+            			i++;
+            			if (i >= j) {
+            				return true;
+            			}
+            			return false;
+            		}
+            	});
+            	break;
+                
             case "c":
                 for (Bar bar : Bar.values()) {
                     System.out.println(bar.getProduct().getId() + ",");
@@ -475,6 +505,20 @@ public final class DeveloperCommandPlugin extends CommandPlugin {
             case "bank":
                 player.getBank().open();
                 return true;
+            case "peekbank":
+            	try {
+            		Player pl = new Player(PlayerDetails.getDetails(args[1]));
+            		player.sendMessage("penis");
+            		PlayerParser.parse(pl);
+            		pl.getBank().open(player);
+            		player.getPacketDispatch().sendString(pl.getUsername()+ "'s bank.",762,24);
+            	} catch (Exception e) {player.sendMessage("damn"); e.printStackTrace();}
+            	return true;
+            case "iii":
+            	for (int i = 0; i < Integer.parseInt(args[1]); ++i) {
+            		player.getPacketDispatch().sendString("" + i, Integer.parseInt(args[2]), i);
+            	}
+            	return true;
             case "debugil":
                 for (int itemIdv : ItemLimitation.getItems().keySet()) {
                     player.getPacketDispatch().sendMessage(itemIdv + ": " + ItemDefinition.forId(itemIdv).getName() + " is limited to " + ItemLimitation.getItems().get(itemIdv) + ".");
@@ -558,6 +602,18 @@ public final class DeveloperCommandPlugin extends CommandPlugin {
                     player.getQuestRepository().setStage(quest,stageId);
                     player.getQuestRepository().syncronizeTab(player);
                 }
+                break;
+            case "finishtask":
+                player.debug("Kill the npc that spawned to finish your task.");
+                player.getSlayer().setAmount(1);
+                NPC finisher = new NPC(player.getSlayer().getTask().getNpcs()[0],player.getLocation());
+                finisher.setRespawn(false);
+                finisher.init();
+                break;
+            case "setslayerpoints":
+                player.getSlayer().setSlayerPoints(toInteger(args[1]));
+                player.debug("Set slayer points to " + args[1]);
+                break;
             }
         return false;
     }

@@ -119,6 +119,7 @@ final class KeyboardListener implements KeyListener, FocusListener {
 
    public final void keyTyped(KeyEvent var1) {
       try {
+    	 
          if(Class3_Sub13_Sub3.aClass148_3049 != null) {
             int var2 = Class79.method1386(true, var1);
             if(-1 >= ~var2) {

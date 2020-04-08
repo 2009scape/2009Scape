@@ -1,0 +1,8 @@
+void script_4680() {
+	int ivar0;
+	int ivar1;
+	ivar0 = getWidgetActualWidth(new WidgetPointer(302,77));
+	ivar1 = multiplyDivide(globalint_1536, 10000, ivar0);
+	setWidgetSize(ivar1, getWidgetActualHeight(new WidgetPointer(302,77)), 0, 0, new WidgetPointer(302,78));
+	return;
+}

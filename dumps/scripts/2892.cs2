@@ -1,0 +1,10 @@
+void script_2892(int arg0,int arg1) {
+	if (subtract(getClientCycle(), arg1) >= 180) {
+		globalint_1086 = 1;
+	}
+	if (subtract(getClientCycle(), arg1) >= 1000) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(476,24));
+		setWidgetIsHidden(true, new WidgetPointer(476,24));
+	}
+	return;
+}

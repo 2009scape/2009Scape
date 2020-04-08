@@ -1,0 +1,51 @@
+void script_4131(int arg0,int arg1) {
+	switch (globalint_1452) {
+		case 101:
+			deleteAllExtraChilds(new WidgetPointer(arg0));
+			script_4138(0, 50, arg0);
+			break;
+		case 102:
+			cs2method5405(0, 4);
+			cs2method5405(1, 4);
+			cs2method5406(0, 0, script_4129(58069409, arg1), 610, script_4129(58069409, arg1), 610, 0);
+			cs2method5406(1, 0, script_4129(58118559, arg1), 475, script_4129(58118559, arg1), 475, 0);
+			cs2method5406(0, 1, script_4129(58134945, arg1), 610, script_4129(58167712, arg1), 610, 0);
+			cs2method5406(1, 1, script_4129(58151326, arg1), 475, script_4129(58167709, arg1), 475, 0);
+			cs2method5406(0, 2, script_4129(58167711, arg1), 550, script_4129(58167711, arg1), 550, 0);
+			cs2method5406(1, 2, script_4129(58167708, arg1), 475, script_4129(58167708, arg1), 475, 0);
+			cs2method5406(0, 3, script_4129(58184098, arg1), 545, script_4129(58184099, arg1), 545, 0);
+			cs2method5406(1, 3, script_4129(58151338, arg1), 475, script_4129(58151338, arg1), 475, 0);
+			cameraMethod5502(0, 0, 1000, 1000, 1, 0);
+			script_4140(30, arg0);
+			break;
+		case 103:
+			cs2method5405(0, 3);
+			cs2method5405(1, 3);
+			cs2method5406(0, 0, script_4129(58167711, arg1), 550, script_4129(58167711, arg1), 550, 0);
+			cs2method5406(1, 0, script_4129(58167708, arg1), 475, script_4129(58167708, arg1), 475, 0);
+			cs2method5406(0, 1, script_4129(58184098, arg1), 545, script_4129(58184099, arg1), 545, 0);
+			cs2method5406(1, 1, script_4129(58151338, arg1), 475, script_4129(58151338, arg1), 475, 0);
+			cs2method5406(0, 2, script_4129(58167717, arg1), 520, script_4129(58167717, arg1), 520, 0);
+			cs2method5406(1, 2, script_4129(58151338, arg1), 475, script_4129(58151338, arg1), 475, 0);
+			cameraMethod5502(0, 0, 1000, 1000, 1, 0);
+			break;
+		case 104:
+			cs2method5405(0, 2);
+			cs2method5405(1, 2);
+			cs2method5406(0, 0, script_4129(58167717, arg1), 520, script_4129(58167717, arg1), 520, 0);
+			cs2method5406(1, 0, script_4129(58151338, arg1), 475, script_4129(58151338, arg1), 475, 0);
+			cs2method5406(0, 1, script_4129(58102180, arg1), 510, script_4129(58036639, arg1), 510, 0);
+			cs2method5406(1, 1, script_4129(58003872, arg1), 475, script_4129(58003872, arg1), 475, 0);
+			cameraMethod5502(0, 0, 1000, 1000, 1, 0);
+			break;
+		case 105:
+			script_4138(0, 50, arg0);
+			break;
+		case 106:
+			script_4140(50, arg0);
+			break;
+		case 107:
+			deleteAllExtraChilds(new WidgetPointer(arg0));
+	}
+	return;
+}

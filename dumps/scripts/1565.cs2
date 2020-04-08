@@ -1,0 +1,18 @@
+void script_1565() {
+	setWidgetFont(307, new WidgetPointer(210,1));
+	setWidgetFont(307, new WidgetPointer(211,1));
+	setWidgetFont(307, new WidgetPointer(211,2));
+	setWidgetFont(307, new WidgetPointer(212,1));
+	setWidgetFont(307, new WidgetPointer(212,2));
+	setWidgetFont(307, new WidgetPointer(212,3));
+	setWidgetFont(307, new WidgetPointer(213,1));
+	setWidgetFont(307, new WidgetPointer(213,2));
+	setWidgetFont(307, new WidgetPointer(213,3));
+	setWidgetFont(307, new WidgetPointer(213,4));
+	setWidgetFont(307, new WidgetPointer(214,1));
+	setWidgetFont(307, new WidgetPointer(214,2));
+	setWidgetFont(307, new WidgetPointer(214,3));
+	setWidgetFont(307, new WidgetPointer(214,4));
+	setWidgetFont(307, new WidgetPointer(214,5));
+	return;
+}

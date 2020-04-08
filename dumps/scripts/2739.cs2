@@ -1,0 +1,46 @@
+void script_2739(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar2 = getItemContainerLength(93);
+	ivar3 = -1;
+	ivar4 = divide(ivar2, 4);
+	ivar5 = divide(subtract(getWidgetActualWidth(new WidgetPointer(arg0)), multiply(4, 36)), 3);
+	ivar6 = divide(subtract(getWidgetActualHeight(new WidgetPointer(arg0)), multiply(ivar4, 32)), 6);
+	ivar7 = 0;
+	while (ivar7 < ivar2) {
+		createExtraChild(new WidgetPointer(arg0), 5, ivar7);
+		ivar3 = getItemIdInSlot(93, ivar7);
+		if (ivar3 != -1) {
+			setWidgetSize(36, 32, 0, 0);
+			setWidgetPosition(multiply(mod(ivar7, 4), add(36, ivar5)), multiply(divide(ivar7, 4), add(32, ivar6)), 0, 0);
+			setItemOnWidgetMethod1200(ivar3, getItemAmtInSlot(93, ivar7));
+			cs2method1305(concat("<col=ff9040>", getItemName(ivar3)));
+			setWidgetContextMenuOption(1, "Equip");
+			setWidgetContextMenuOption(9, "Stats");
+			cs2method1306("Compare");
+			setWidgetContextMenuOption(10, "Examine");
+			setWidgetShadowColor(new Color(48, 32, 32));
+			if (arg1 == ivar7) {
+				setWidgetBorderThickness(2);
+			} else {
+				setWidgetBorderThickness(1);
+			}
+			setScriptCallOnClickContextMenu(1620, new WidgetPointer(-32768,3), -2147483643, 100, 0, 8, "Iiiii");
+			setScriptCallOnUse(2738, new WidgetPointer(arg0), ivar7, "Ii");
+			setScriptCallOnUseWith(2738, new WidgetPointer(arg0), -1, "Ii");
+		} else {
+			setWidgetHidden(1);
+		}
+		ivar7 = add(ivar7, 1);
+	}
+	if ((arg1 != -1) && (getItemIdInSlot(93, arg1) == -1)) {
+		arg1 = -1;
+	}
+	setScriptCallOnItemContainerUpdate(2738, new WidgetPointer(-32768,3), arg1, 93, 1, "IiY", new WidgetPointer(arg0));
+	return;
+}

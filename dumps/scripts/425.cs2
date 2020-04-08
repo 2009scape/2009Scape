@@ -1,0 +1,13 @@
+void script_425() {
+	if (((boolean)globalint_1366)) {
+		setWidgetContextMenuOption(1, new WidgetPointer(1019,16), "Accept Victory");
+		setWidgetText(new WidgetPointer(1019,16), "Accept Victory");
+		setWidgetText(new WidgetPointer(1019,0), "Your opponent has logged out. You may end the Conquest now and be declared the winner.");
+	} else {
+		setWidgetContextMenuOption(1, new WidgetPointer(1019,16), "Resign");
+		setWidgetText(new WidgetPointer(1019,16), "Resign");
+		setWidgetText(new WidgetPointer(1019,0), "If you resign, the Conquest will end immediately.");
+		sendCloseWidgetPacket();
+	}
+	return;
+}

@@ -1,0 +1,359 @@
+cs2func_script_980_struct(2,2,0) script_980(int arg0,int arg1) {
+	switch (arg0) {
+		case 0:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_980_struct(1, 882, "Bronze arrow", "You can now fletch " + "<col=000080>" + "bronze arrows" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_980_struct(5, 2866, "Ogre arrow" + "<br>" + " (after starting Big Chompy Bird Hunting)", "You now have the Fletching level required to fletch " + "<col=000080>" + "ogre arrows" + "</col>" + " (after starting Big Chompy Bird Hunting).");
+				case 2:
+					return newstruct cs2func_script_980_struct(7, 4773, "Bronze 'brutal' arrow" + "<br>" + " (after starting Zogre Flesh Eaters)", "You now have the Fletching level required to fletch " + "<col=000080>" + "bronze 'brutal' arrows" + "</col>" + " (after starting Zogre Flesh Eaters).");
+				case 3:
+					return newstruct cs2func_script_980_struct(15, 884, "Iron arrow", "You can now fletch " + "<col=000080>" + "iron arrows" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_980_struct(18, 4778, "Iron 'brutal' arrow" + "<br>" + " (after starting Zogre Flesh Eaters)", "You now have the Fletching level required to fletch " + "<col=000080>" + "iron 'brutal' arrows" + "</col>" + " (after starting Zogre Flesh Eaters).");
+				case 5:
+					return newstruct cs2func_script_980_struct(30, 886, "Steel arrow", "You can now fletch " + "<col=000080>" + "steel arrows" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_980_struct(33, 4783, "Steel 'brutal' arrow" + "<br>" + " (after starting Zogre Flesh Eaters)", "You now have the Fletching level required to fletch " + "<col=000080>" + "steel 'brutal' arrows" + "</col>" + " (after starting Zogre Flesh Eaters).");
+				case 7:
+					return newstruct cs2func_script_980_struct(38, 4788, "Black 'brutal' arrow" + "<br>" + " (after starting Zogre Flesh Eaters)", "You now have the Fletching level required to fletch " + "<col=000080>" + "black 'brutal' arrows" + "</col>" + " (after starting Zogre Flesh Eaters).");
+				case 8:
+					return newstruct cs2func_script_980_struct(45, 888, "Mithril arrow", "You can now fletch " + "<col=000080>" + "mithril arrows" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_980_struct(49, 4793, "Mithril 'brutal' arrow" + "<br>" + " (after starting Zogre Flesh Eaters)", "You now have the Fletching level required to fletch " + "<col=000080>" + "mithril 'brutal' arrows" + "</col>" + " (after starting Zogre Flesh Eaters).");
+				case 10:
+					return newstruct cs2func_script_980_struct(52, 13278, "Broad leaf arrows" + "<br>" + " (after Smoking Kills)", "You can now fletch " + "<col=000080>" + "broad leaf arrows" + "</col>" + " (after Smoking Kills).");
+				case 11:
+					return newstruct cs2func_script_980_struct(60, 890, "Adamant arrow", "You can now fletch " + "<col=000080>" + "adamant arrows" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_980_struct(62, 4798, "Adamant 'brutal' arrow" + "<br>" + " (after starting Zogre Flesh Eaters)", "You now have the Fletching level required to fletch " + "<col=000080>" + "adamant 'brutal' arrows" + "</col>" + " (after starting Zogre Flesh Eaters).");
+				case 13:
+					return newstruct cs2func_script_980_struct(75, 892, "Rune arrow", "You can now fletch " + "<col=000080>" + "rune arrows" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_980_struct(76, 21640, "Dragonbane arrows (after Ritual of the Mahjarrat)", "You can now fletch " + "<col=000080>" + "dragonbane arrowtips" + "</col>" + " (after Ritual of the Mahjarrat).");
+				case 15:
+					return newstruct cs2func_script_980_struct(76, 21645, "Wallasalkibane arrows (after Ritual of the Mahjarrat)", "You can now fletch " + "<col=000080>" + "wallasalkibane arrowtips" + "</col>" + " (after Ritual of the Mahjarrat).");
+				case 16:
+					return newstruct cs2func_script_980_struct(76, 21650, "Basiliskbane arrows (after Ritual of the Mahjarrat)", "You can now fletch " + "<col=000080>" + "basiliskbane arrowtips" + "</col>" + " (after Ritual of the Mahjarrat).");
+				case 17:
+					return newstruct cs2func_script_980_struct(76, 21655, "Abyssalbane arrows (after Ritual of the Mahjarrat)", "You can now fletch " + "<col=000080>" + "abyssalbane arrowtips" + "</col>" + " (after Ritual of the Mahjarrat).");
+				case 18:
+					return newstruct cs2func_script_980_struct(77, 4803, "Rune 'brutal' arrow" + "<br>" + " (after starting Zogre Flesh Eaters)", "You now have the Fletching level required to fletch " + "<col=000080>" + "rune 'brutal' arrows" + "</col>" + " (after starting Zogre Flesh Eaters).");
+				case 19:
+					return newstruct cs2func_script_980_struct(90, 11212, "Dragon arrow", "You can now fletch " + "<col=000080>" + "dragon arrows" + "</col>" + ".");
+			}
+			break;
+		case 1:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_980_struct(5, 841, "Shortbow", "You can now fletch " + "<col=000080>" + "shortbows" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_980_struct(10, 839, "Longbow", "You can now fletch " + "<col=000080>" + "longbows" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_980_struct(20, 843, "Oak shortbow", "You can now fletch " + "<col=000080>" + "oak shortbows" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_980_struct(25, 845, "Oak longbow", "You can now fletch " + "<col=000080>" + "oak longbows" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_980_struct(30, 4827, "Ogre composite bow" + "<br>" + " (after starting Zogre Flesh Eaters)", "You now have the Fletching level required to fletch " + "<col=000080>" + "ogre composite bows" + "</col>" + " (after starting Zogre Flesh Eaters).");
+				case 5:
+					return newstruct cs2func_script_980_struct(35, 849, "Willow shortbow", "You can now fletch " + "<col=000080>" + "willow shortbows" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_980_struct(40, 847, "Willow longbow", "You can now fletch " + "<col=000080>" + "willow longbows" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_980_struct(50, 853, "Maple shortbow", "You can now fletch " + "<col=000080>" + "maple shortbows" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_980_struct(55, 851, "Maple longbow", "You can now fletch " + "<col=000080>" + "maple longbows" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_980_struct(65, 857, "Yew shortbow", "You can now fletch " + "<col=000080>" + "yew shortbows" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_980_struct(70, 855, "Yew longbow", "You can now fletch " + "<col=000080>" + "yew longbows" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_980_struct(80, 861, "Magic shortbow", "You can now fletch " + "<col=000080>" + "magic shortbows" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_980_struct(85, 859, "Magic longbow", "You can now fletch " + "<col=000080>" + "magic longbows" + "</col>" + ".");
+			}
+			break;
+		case 2:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_980_struct(9, 877, "Bronze bolt", "You can now fletch " + "<col=000080>" + "bronze bolts" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_980_struct(11, 879, "Opal-tipped bronze bolt", "You can now fletch " + "<col=000080>" + "opal-tipped bronze bolts" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_980_struct(24, 9139, "Blurite bolt" + "<br>" + " (after The Knight's Sword)", "You now have the Fletching level required to fletch " + "<col=000080>" + "blurite bolts" + "</col>" + " (after The Knight's Sword).");
+				case 3:
+					return newstruct cs2func_script_980_struct(26, 9335, "Jade-tipped blurite bolt" + "<br>" + " (after The Knight's Sword)", "You now have the Fletching level required to fletch " + "<col=000080>" + "jade-tipped blurite bolts" + "</col>" + " (after The Knight's Sword).");
+				case 4:
+					return newstruct cs2func_script_980_struct(32, 10158, "Kebbit-tipped hunting bolt", "You can now fletch " + "<col=000080>" + "kebbit-tipped hunting bolts" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_980_struct(39, 9140, "Iron bolt", "You can now fletch " + "<col=000080>" + "iron bolts" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_980_struct(41, 880, "Pearl-tipped iron bolt", "You can now fletch " + "<col=000080>" + "pearl-tipped iron bolts" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_980_struct(42, 10159, "Long kebbit-tipped hunting bolt", "You can now fletch " + "<col=000080>" + "long kebbit-tipped hunting bolts" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_980_struct(43, 9145, "Silver bolt", "You can now fletch " + "<col=000080>" + "silver bolts" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_980_struct(46, 9141, "Steel bolt", "You can now fletch " + "<col=000080>" + "steel bolts" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_980_struct(48, 9336, "Red topaz-tipped steel bolt", "You can now fletch " + "<col=000080>" + "red topaz-tipped steel bolts" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_980_struct(51, 881, "Barbed bolts", "You can now fletch " + "<col=000080>" + "barbed bolts" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_980_struct(54, 9142, "Mithril bolt", "You can now fletch " + "<col=000080>" + "mithril bolts" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_980_struct(55, 13279, "Broad leaf bolts" + "<br>" + " (after Smoking Kills)", "You can now fletch " + "<col=000080>" + "broad leaf bolts" + "</col>" + " (after Smoking Kills).");
+				case 14:
+					return newstruct cs2func_script_980_struct(56, 9337, "Sapphire-tipped mithril bolt", "You can now fletch " + "<col=000080>" + "sapphire-tipped mithril bolts" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_980_struct(58, 9338, "Emerald-tipped mithril bolt", "You can now fletch " + "<col=000080>" + "emerald-tipped mithril bolts" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_980_struct(59, 9418, "Mithril grapple-tipped bolt", "You can now fletch " + "<col=000080>" + "mithril grapple-tipped bolts" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_980_struct(61, 9143, "Adamantite bolt", "You can now fletch " + "<col=000080>" + "adamantite bolts" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_980_struct(63, 9339, "Ruby-tipped adamantite bolt", "You can now fletch " + "<col=000080>" + "ruby-tipped adamantite bolts" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_980_struct(65, 9340, "Diamond-tipped adamantite bolt", "You can now fletch " + "<col=000080>" + "diamond-tipped adamantite bolts" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_980_struct(69, 9144, "Runite bolt", "You can now fletch " + "<col=000080>" + "runite bolts" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_980_struct(71, 9341, "Dragonstone-tipped runite bolt", "You can now fletch " + "<col=000080>" + "dragonstone-tipped runite bolts" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_980_struct(73, 9342, "Onyx-tipped runite bolt", "You can now fletch " + "<col=000080>" + "onyx-tipped runite bolts" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_980_struct(80, 21660, "Dragonbane bolts (after Ritual of the Mahjarrat)", "You can now fletch " + "<col=000080>" + "dragonbane bolts" + "</col>" + " (after Ritual of the Mahjarrat).");
+				case 24:
+					return newstruct cs2func_script_980_struct(80, 21665, "Wallasalkibane bolts (after Ritual of the Mahjarrat)", "You can now fletch " + "<col=000080>" + "wallasalkibane bolts" + "</col>" + " (after Ritual of the Mahjarrat).");
+				case 25:
+					return newstruct cs2func_script_980_struct(80, 21670, "Basiliskbane bolts (after Ritual of the Mahjarrat)", "You can now fletch " + "<col=000080>" + "basiliskbane bolts" + "</col>" + " (after Ritual of the Mahjarrat).");
+				case 26:
+					return newstruct cs2func_script_980_struct(80, 21675, "Abyssalbane bolts (after Ritual of the Mahjarrat)", "You can now fletch " + "<col=000080>" + "abyssalbane bolts" + "</col>" + " (after Ritual of the Mahjarrat).");
+			}
+			break;
+		case 3:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_980_struct(1, 806, "Bronze dart", "You can now fletch " + "<col=000080>" + "bronze darts" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_980_struct(22, 807, "Iron dart", "You can now fletch " + "<col=000080>" + "iron darts" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_980_struct(37, 808, "Steel dart", "You can now fletch " + "<col=000080>" + "steel darts" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_980_struct(52, 809, "Mithril dart", "You can now fletch " + "<col=000080>" + "mithril darts" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_980_struct(67, 810, "Adamant dart", "You can now fletch " + "<col=000080>" + "adamant darts" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_980_struct(70, 21581, "Blisterwood stake", "You can now fletch " + "<col=000080>" + "blisterwood stakes" + "</col>" + " (after The Branches of Darkmeyer).");
+				case 6:
+					return newstruct cs2func_script_980_struct(81, 811, "Rune dart", "You can now fletch " + "<col=000080>" + "rune darts" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_980_struct(95, 11230, "Dragon dart", "You can now fletch " + "<col=000080>" + "dragon darts" + "</col>" + ".");
+			}
+			break;
+		case 4:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_980_struct(9, 9440, "Bronze/wooden crossbow", "You can now fletch " + "<col=000080>" + "bronze and wooden crossbows" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_980_struct(24, 9442, "Blurite/oak crossbow" + "<br>" + " (after The Knight's Sword)", "You now have the Fletching level required to fletch " + "<col=000080>" + "blurite and oak crossbows" + "</col>" + " (after The Knight's Sword).");
+				case 2:
+					return newstruct cs2func_script_980_struct(39, 9444, "Iron/willow crossbow", "You can now fletch " + "<col=000080>" + "iron and willow crossbows" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_980_struct(46, 9446, "Steel/teak crossbow", "You can now fletch " + "<col=000080>" + "steel and teak crossbows" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_980_struct(54, 9448, "Mithril/maple crossbow", "You can now fletch " + "<col=000080>" + "mithril and maple crossbows" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_980_struct(61, 9450, "Adamantite/mahogany crossbow", "You can now fletch " + "<col=000080>" + "adamantite and mahogany crossbows" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_980_struct(69, 9452, "Runite/yew crossbow", "You can now fletch " + "<col=000080>" + "runite and yew crossbows" + "</col>" + ".");
+			}
+			break;
+		case 5:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_980_struct(70, 21580, "Blisterwood staff", "You can now fletch " + "<col=000080>" + "blisterwood staves" + "</col>" + " (after the Branches of Darkmeyer).");
+				case 1:
+					return newstruct cs2func_script_980_struct(70, 21582, "Blisterwood polearm", "You can now fletch " + "<col=000080>" + "blisterwood polearms" + "</col>" + " (after the Branches of Darkmeyer).");
+				case 2:
+					return newstruct cs2func_script_980_struct(83, 21364, "Sagaie", "You can now fletch " + "<col=000080>" + "sagaies" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_980_struct(87, 21365, "Bolas", "You can now fletch " + "<col=000080>" + "bolas" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_980_struct(91, 18778, "Starved ancient effigies", "You can now investigate " + "<col=000080>" + "starved ancient effigies" + "</col>" + " using your knowledge of Fletching.");
+				case 5:
+					return newstruct cs2func_script_980_struct(93, 18779, "Nourished ancient effigies", "You can now investigate " + "<col=000080>" + "nourished ancient effigies" + "</col>" + " using your knowledge of Fletching.");
+				case 6:
+					return newstruct cs2func_script_980_struct(95, 18780, "Sated ancient effigies", "You can now investigate " + "<col=000080>" + "sated ancient effigies" + "</col>" + " using your knowledge of Fletching.");
+				case 7:
+					return newstruct cs2func_script_980_struct(97, 18781, "Gorged ancient effigies", "You can now investigate " + "<col=000080>" + "gorged ancient effigies" + "</col>" + " using your knowledge of Fletching.");
+			}
+			break;
+		case 6:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_980_struct(1, 14192, "Stealing Creation - class 1 bow", "Members can now fletch " + "<col=000080>" + "class 1 bows" + "</col>" + " in Stealing Creation.");
+				case 1:
+					return newstruct cs2func_script_980_struct(1, 14202, "Stealing Creation - class 1 arrow", "You can now fletch " + "<col=000080>" + "class 1 arrows" + "</col>" + " in Stealing Creation.");
+				case 2:
+					return newstruct cs2func_script_980_struct(20, 14194, "Stealing Creation - class 2 bow", "Members can now fletch " + "<col=000080>" + "class 2 bows" + "</col>" + " in Stealing Creation.");
+				case 3:
+					return newstruct cs2func_script_980_struct(20, 14203, "Stealing Creation - class 2 arrow", "You can now fletch " + "<col=000080>" + "class 2 arrows" + "</col>" + " in Stealing Creation.");
+				case 4:
+					return newstruct cs2func_script_980_struct(40, 14196, "Stealing Creation - class 3 bow", "Members can now fletch " + "<col=000080>" + "class 3 bows" + "</col>" + " in Stealing Creation.");
+				case 5:
+					return newstruct cs2func_script_980_struct(40, 14204, "Stealing Creation - class 3 arrow", "You can now fletch " + "<col=000080>" + "class 3 arrows" + "</col>" + " in Stealing Creation.");
+				case 6:
+					return newstruct cs2func_script_980_struct(53, 14611, "Phoenix lair - cinnamon weaving ribbon", "Members can now fletch " + "<col=000080>" + "cinnamon weaving ribbon" + "</col>" + " in the phoenix lair.");
+				case 7:
+					return newstruct cs2func_script_980_struct(53, 14612, "Phoenix lair - sassafras weaving ribbon", "Members can now fletch " + "<col=000080>" + "sassafras weaving ribbon" + "</col>" + " in the phoenix lair.");
+				case 8:
+					return newstruct cs2func_script_980_struct(53, 14613, "Phoenix lair - ailanthus weaving ribbon", "Members can now fletch " + "<col=000080>" + "ailanthus weaving ribbon" + "</col>" + " in the phoenix lair.");
+				case 9:
+					return newstruct cs2func_script_980_struct(53, 14614, "Phoenix lair - cedar weaving ribbon", "Members can now fletch " + "<col=000080>" + "cedar weaving ribbon" + "</col>" + " in the phoenix lair.");
+				case 10:
+					return newstruct cs2func_script_980_struct(53, 14615, "Phoenix lair - mastic weaving ribbon", "Members can now fletch " + "<col=000080>" + "mastic weaving ribbon" + "</col>" + " in the phoenix lair.");
+				case 11:
+					return newstruct cs2func_script_980_struct(60, 14198, "Stealing Creation - class 4 bow", "Members can now fletch " + "<col=000080>" + "class 4 bows" + "</col>" + " in Stealing Creation.");
+				case 12:
+					return newstruct cs2func_script_980_struct(60, 14205, "Stealing Creation - class 4 arrow", "You can now fletch " + "<col=000080>" + "class 4 arrows" + "</col>" + " in Stealing Creation.");
+				case 13:
+					return newstruct cs2func_script_980_struct(80, 14200, "Stealing Creation - class 5 bow", "Members can now fletch " + "<col=000080>" + "class 5 bows" + "</col>" + " in Stealing Creation.");
+				case 14:
+					return newstruct cs2func_script_980_struct(80, 14206, "Stealing Creation - class 5 arrow", "You can now fletch " + "<col=000080>" + "class 5 arrows" + "</col>" + " in Stealing Creation.");
+			}
+			break;
+		case 7:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_980_struct(-1, 15707, "Dungeoneering skill tasks" + "<br>" + "As your Fletching level increases, you will be able to attempt higher-level fletching tasks within Daemonheim. You will also be more likely to succeed when attempting fletching tasks within Daemonheim.", "");
+				case 1:
+					return newstruct cs2func_script_980_struct(1, 17742, "Tangle gum" + "<br>" + " 15 Arrow shafts", "You can now fletch " + "<col=000080>" + "tangle gum branches" + "</col>" + " into " + "<col=000080>" + "15 arrow shafts" + "</col>" + " within Daemonheim.");
+				case 2:
+					return newstruct cs2func_script_980_struct(1, 16427, "Novite arrows (Tier 1)", "You can now fletch " + "<col=000080>" + "novite arrows" + "</col>" + " within Daemonheim.");
+				case 3:
+					return newstruct cs2func_script_980_struct(1, 16867, "Tangle gum shortbow (Tier 1)", "You can now fletch " + "<col=000080>" + "tangle gum shortbows" + "</col>" + " within Daemonheim.");
+				case 4:
+					return newstruct cs2func_script_980_struct(3, 17756, "Tangle gum trap (Tier 1)", "You can now fletch " + "<col=000080>" + "tangle gum traps" + "</col>" + " within Daemonheim.");
+				case 5:
+					return newstruct cs2func_script_980_struct(6, 16317, "Tangle gum longbow (Tier 1)", "You can now fletch " + "<col=000080>" + "tangle gum longbows" + "</col>" + " within Daemonheim.");
+				case 6:
+					return newstruct cs2func_script_980_struct(8, 16977, "Tangle gum staff (Tier 1)", "You can now fletch " + "<col=000080>" + "tangle gum staves" + "</col>" + " within Daemonheim.");
+				case 7:
+					return newstruct cs2func_script_980_struct(10, 17742, "Seeping elm" + "<br>" + " 21 Arrow shafts", "You can now fletch " + "<col=000080>" + "seeping elm branches" + "</col>" + " into " + "<col=000080>" + "21 arrow shafts" + "</col>" + " within Daemonheim.");
+				case 8:
+					return newstruct cs2func_script_980_struct(11, 16432, "Bathus arrows (Tier 2)", "You can now fletch " + "<col=000080>" + "bathus arrows" + "</col>" + " within Daemonheim.");
+				case 9:
+					return newstruct cs2func_script_980_struct(11, 16869, "Seeping elm shortbow (Tier 2)", "You can now fletch " + "<col=000080>" + "seeping elm shortbows" + "</col>" + " within Daemonheim.");
+				case 10:
+					return newstruct cs2func_script_980_struct(13, 17758, "Seeping elm trap (Tier 2)", "You can now fletch " + "<col=000080>" + "seeping elm traps" + "</col>" + " within Daemonheim.");
+				case 11:
+					return newstruct cs2func_script_980_struct(16, 16319, "Seeping elm longbow (Tier 2)", "You can now fletch " + "<col=000080>" + "seeping elm longbows" + "</col>" + " within Daemonheim.");
+				case 12:
+					return newstruct cs2func_script_980_struct(18, 16979, "Seeping elm staff (Tier 2)", "You can now fletch " + "<col=000080>" + "seeping elm staves" + "</col>" + " within Daemonheim.");
+				case 13:
+					return newstruct cs2func_script_980_struct(20, 17742, "Blood spindle" + "<br>" + " 26 Arrow shafts", "You can now fletch " + "<col=000080>" + "blood spindle branches" + "</col>" + " into " + "<col=000080>" + "26 arrow shafts" + "</col>" + " within Daemonheim.");
+				case 14:
+					return newstruct cs2func_script_980_struct(21, 16871, "Blood spindle shortbow (Tier 3)", "You can now fletch " + "<col=000080>" + "blood spindle shortbows" + "</col>" + " within Daemonheim.");
+				case 15:
+					return newstruct cs2func_script_980_struct(22, 16437, "Marmaros arrows (Tier 3)", "You can now fletch " + "<col=000080>" + "marmaros arrows" + "</col>" + " within Daemonheim.");
+				case 16:
+					return newstruct cs2func_script_980_struct(23, 17760, "Blood spindle trap (Tier 3)", "You can now fletch " + "<col=000080>" + "blood spindle traps" + "</col>" + " within Daemonheim.");
+				case 17:
+					return newstruct cs2func_script_980_struct(26, 16321, "Blood spindle longbow (Tier 3)", "You can now fletch " + "<col=000080>" + "blood spindle longbows" + "</col>" + " within Daemonheim.");
+				case 18:
+					return newstruct cs2func_script_980_struct(28, 16981, "Blood spindle staff (Tier 3)", "You can now fletch " + "<col=000080>" + "blood spindle staves" + "</col>" + " within Daemonheim.");
+				case 19:
+					return newstruct cs2func_script_980_struct(30, 17742, "Utuku" + "<br>" + " 32 Arrow shafts", "You can now fletch " + "<col=000080>" + "utuku branches" + "</col>" + " into " + "<col=000080>" + "32 arrow shafts" + "</col>" + " within Daemonheim.");
+				case 20:
+					return newstruct cs2func_script_980_struct(31, 16873, "Utuku shortbow (Tier 4)", "You can now fletch " + "<col=000080>" + "utuku shortbows" + "</col>" + " within Daemonheim.");
+				case 21:
+					return newstruct cs2func_script_980_struct(33, 16442, "Kratonite arrows (Tier 4)", "You can now fletch " + "<col=000080>" + "kratonite arrows" + "</col>" + " within Daemonheim.");
+				case 22:
+					return newstruct cs2func_script_980_struct(33, 17762, "Utuku trap (Tier 4)", "You can now fletch " + "<col=000080>" + "utuku traps" + "</col>" + " within Daemonheim.");
+				case 23:
+					return newstruct cs2func_script_980_struct(36, 16323, "Utuku longbow (Tier 4)", "You can now fletch " + "<col=000080>" + "utuku longbows" + "</col>" + " within Daemonheim.");
+				case 24:
+					return newstruct cs2func_script_980_struct(38, 16983, "Utuku staff (Tier 4)", "You can now fletch " + "<col=000080>" + "utuku staves" + "</col>" + " within Daemonheim.");
+				case 25:
+					return newstruct cs2func_script_980_struct(40, 17742, "Spinebeam" + "<br>" + " 37 Arrow shafts", "You can now fletch " + "<col=000080>" + "spinebeam branches" + "</col>" + " into " + "<col=000080>" + "37 arrow shafts" + "</col>" + " within Daemonheim.");
+				case 26:
+					return newstruct cs2func_script_980_struct(41, 16875, "Spinebeam shortbow (Tier 5)", "You can now fletch " + "<col=000080>" + "spinebeam shortbows" + "</col>" + " within Daemonheim.");
+				case 27:
+					return newstruct cs2func_script_980_struct(43, 17764, "Spinebeam trap (Tier 5)", "You can now fletch " + "<col=000080>" + "spinebeam traps" + "</col>" + " within Daemonheim.");
+				case 28:
+					return newstruct cs2func_script_980_struct(44, 16447, "Fractite arrows (Tier 5)", "You can now fletch " + "<col=000080>" + "fractite arrows" + "</col>" + " within Daemonheim.");
+				case 29:
+					return newstruct cs2func_script_980_struct(46, 16325, "Spinebeam longbow (Tier 5)", "You can now fletch " + "<col=000080>" + "spinebeam longbows" + "</col>" + " within Daemonheim.");
+				case 30:
+					return newstruct cs2func_script_980_struct(48, 16985, "Spinebeam staff (Tier 5)", "You can now fletch " + "<col=000080>" + "spinebeam staves" + "</col>" + " within Daemonheim.");
+				case 31:
+					return newstruct cs2func_script_980_struct(50, 17742, "Bovistrangler" + "<br>" + " 43 Arrow shafts", "You can now fletch " + "<col=000080>" + "bovistrangler branches" + "</col>" + " into " + "<col=000080>" + "43 arrow shafts" + "</col>" + " within Daemonheim.");
+				case 32:
+					return newstruct cs2func_script_980_struct(51, 16877, "Bovistrangler shortbow (Tier 6)", "You can now fletch " + "<col=000080>" + "bovistrangler shortbows" + "</col>" + " within Daemonheim.");
+				case 33:
+					return newstruct cs2func_script_980_struct(53, 17766, "Bovistrangler trap (Tier 6)", "You can now fletch " + "<col=000080>" + "bovistrangler traps" + "</col>" + " within Daemonheim.");
+				case 34:
+					return newstruct cs2func_script_980_struct(55, 16452, "Zephyrium arrows (Tier 6)", "You can now fletch " + "<col=000080>" + "zephyrium arrows" + "</col>" + " within Daemonheim.");
+				case 35:
+					return newstruct cs2func_script_980_struct(56, 16327, "Bovistrangler longbow (Tier 6)", "You can now fletch " + "<col=000080>" + "bovistrangler longbows" + "</col>" + " within Daemonheim.");
+				case 36:
+					return newstruct cs2func_script_980_struct(58, 16987, "Bovistrangler staff (Tier 6)", "You can now fletch " + "<col=000080>" + "bovistrangler staves" + "</col>" + " within Daemonheim.");
+				case 37:
+					return newstruct cs2func_script_980_struct(60, 17742, "Thigat" + "<br>" + " 48 Arrow shafts", "You can now fletch " + "<col=000080>" + "thigat branches" + "</col>" + " into " + "<col=000080>" + "48 arrow shafts" + "</col>" + " within Daemonheim.");
+				case 38:
+					return newstruct cs2func_script_980_struct(61, 16879, "Thigat shortbow (Tier 7)", "You can now fletch " + "<col=000080>" + "thigat shortbows" + "</col>" + " within Daemonheim.");
+				case 39:
+					return newstruct cs2func_script_980_struct(63, 17768, "Thigat trap (Tier 7)", "You can now fletch " + "<col=000080>" + "thigat traps" + "</col>" + " within Daemonheim.");
+				case 40:
+					return newstruct cs2func_script_980_struct(66, 16457, "Argonite arrows (Tier 7)", "You can now fletch " + "<col=000080>" + "argonite arrows" + "</col>" + " within Daemonheim.");
+				case 41:
+					return newstruct cs2func_script_980_struct(66, 16329, "Thigat longbow (Tier 7)", "You can now fletch " + "<col=000080>" + "thigat longbows" + "</col>" + " within Daemonheim.");
+				case 42:
+					return newstruct cs2func_script_980_struct(68, 16989, "Thigat staff (Tier 7)", "You can now fletch " + "<col=000080>" + "thigat staves" + "</col>" + " within Daemonheim.");
+				case 43:
+					return newstruct cs2func_script_980_struct(70, 17742, "Corpsethorn" + "<br>" + " 54 Arrow shafts", "You can now fletch " + "<col=000080>" + "corpsethorn branches" + "</col>" + " into " + "<col=000080>" + "54 arrow shafts" + "</col>" + " within Daemonheim.");
+				case 44:
+					return newstruct cs2func_script_980_struct(71, 16881, "Corpsethorn shortbow (Tier 8)", "You can now fletch " + "<col=000080>" + "corpsethorn shortbows" + "</col>" + " within Daemonheim.");
+				case 45:
+					return newstruct cs2func_script_980_struct(73, 17770, "Corpsethorn trap (Tier 8)", "You can now fletch " + "<col=000080>" + "corpsethorn traps" + "</col>" + " within Daemonheim.");
+				case 46:
+					return newstruct cs2func_script_980_struct(76, 16331, "Corpsethorn longbow (Tier 8)", "You can now fletch " + "<col=000080>" + "corpsethorn longbows" + "</col>" + " within Daemonheim.");
+				case 47:
+					return newstruct cs2func_script_980_struct(77, 16462, "Katagon arrows (Tier 8)", "You can now fletch " + "<col=000080>" + "katagon arrows" + "</col>" + " within Daemonheim.");
+				case 48:
+					return newstruct cs2func_script_980_struct(78, 16991, "Corpsethorn staff (Tier 8)", "You can now fletch " + "<col=000080>" + "corpsethorn staves" + "</col>" + " within Daemonheim.");
+				case 49:
+					return newstruct cs2func_script_980_struct(80, 17742, "Entgallow" + "<br>" + " 59 Arrow shafts", "You can now fletch " + "<col=000080>" + "entgallow branches" + "</col>" + " into " + "<col=000080>" + "59 arrow shafts" + "</col>" + " within Daemonheim.");
+				case 50:
+					return newstruct cs2func_script_980_struct(81, 16883, "Entgallow shortbow (Tier 9)", "You can now fletch " + "<col=000080>" + "entgallow shortbows" + "</col>" + " within Daemonheim.");
+				case 51:
+					return newstruct cs2func_script_980_struct(83, 17772, "Entgallow trap (Tier 9)", "You can now fletch " + "<col=000080>" + "entgallow traps" + "</col>" + " within Daemonheim.");
+				case 52:
+					return newstruct cs2func_script_980_struct(86, 16333, "Entgallow longbow (Tier 9)", "You can now fletch " + "<col=000080>" + "entgallow longbows" + "</col>" + " within Daemonheim.");
+				case 53:
+					return newstruct cs2func_script_980_struct(88, 16467, "Gorgonite arrows (Tier 9)", "You can now fletch " + "<col=000080>" + "gorgonite arrows" + "</col>" + " within Daemonheim.");
+				case 54:
+					return newstruct cs2func_script_980_struct(88, 16993, "Entgallow staff (Tier 9)", "You can now fletch " + "<col=000080>" + "entgallow staves" + "</col>" + " within Daemonheim.");
+				case 55:
+					return newstruct cs2func_script_980_struct(90, 17742, "Grave creeper" + "<br>" + " 65 Arrow shafts", "You can now fletch " + "<col=000080>" + "grave creeper branches" + "</col>" + " into " + "<col=000080>" + "65 arrow shafts" + "</col>" + " within Daemonheim.");
+				case 56:
+					return newstruct cs2func_script_980_struct(91, 16885, "Grave creeper shortbow (Tier 10)", "You can now fletch " + "<col=000080>" + "grave creeper shortbows" + "</col>" + " within Daemonheim.");
+				case 57:
+					return newstruct cs2func_script_980_struct(93, 17774, "Grave creeper trap (Tier 10)", "You can now fletch " + "<col=000080>" + "grave creeper traps" + "</col>" + " within Daemonheim.");
+				case 58:
+					return newstruct cs2func_script_980_struct(96, 16335, "Grave creeper longbow (Tier 10)", "You can now fletch " + "<col=000080>" + "grave creeper longbows" + "</col>" + " within Daemonheim.");
+				case 59:
+					return newstruct cs2func_script_980_struct(98, 16995, "Grave creeper staff (Tier 10)", "You can now fletch " + "<col=000080>" + "grave creeper staves" + "</col>" + " within Daemonheim.");
+				case 60:
+					return newstruct cs2func_script_980_struct(99, 16472, "Promethium arrows (Tier 10)", "You can now fletch promethium arrows" + "</col>" + " within Daemonheim.");
+			}
+			break;
+		case 8:
+			if (((boolean)arg1)) {
+				return newstruct cs2func_script_980_struct(99, 9783, "Skill mastery", "<col=000080>" + "Congratulations! You are now a master of " + "<col=800000>" + "Fletching" + "<col=000080>" + ". Why not visit " + "<col=800000>" + "Hickton" + "<col=000080>" + " who runs the " + "<col=800000>" + "bow and arrow shop" + "<col=000080>" + " in " + "<col=800000>" + "Catherby" + "<col=000080>" + "? He has something special that is only available to true masters of the " + "<col=800000>" + "Fletching" + "<col=000080>" + " skill!");
+			}
+	}
+	return newstruct cs2func_script_980_struct(0, -1, "", "");
+}

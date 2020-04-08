@@ -1,0 +1,17 @@
+void script_1773() {
+	if (((boolean)globalint_249)) {
+		setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(791,111));
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(791,112));
+		setWidgetIsHidden(true, new WidgetPointer(791,114));
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(791,115));
+		setWidgetText(new WidgetPointer(791,115), "...you keep" + "<br>" + "your items.");
+	} else {
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(791,111));
+		setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(791,112));
+		setWidgetIsHidden(false, new WidgetPointer(791,114));
+		setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(791,115));
+		setWidgetText(new WidgetPointer(791,115), "...you DROP ALL your items.");
+	}
+	script_1784();
+	return;
+}

@@ -1,0 +1,8 @@
+void script_2268(int arg0) {
+	if (((boolean)standart_config_170)) {
+		setWidgetText(new WidgetPointer(arg0), "Right-click the object to see more options.");
+	} else {
+		setWidgetText(new WidgetPointer(arg0), "Click the object to see more options.");
+	}
+	return;
+}

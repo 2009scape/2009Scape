@@ -1,0 +1,12 @@
+void script_329(int arg0) {
+	int ivar1;
+	ivar1 = 0;
+	if (IsFemale()) {
+		ivar1 = getCommonDefinitionSize(2363);
+	} else {
+		ivar1 = getCommonDefinitionSize(2132);
+	}
+	script_332(globalint_785);
+	script_2366(arg0, globalint_785, ivar1);
+	return;
+}

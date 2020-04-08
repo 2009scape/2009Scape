@@ -1,0 +1,12 @@
+void script_5241(int arg0) {
+	if (((boolean)globalint_1184)) {
+		if (arg0 == 73793728) {
+			setWidgetRGB(new Color(153, 145, 122), new WidgetPointer(arg0));
+		}
+	} else {
+		if (arg0 == 73793723) {
+			setWidgetRGB(new Color(153, 145, 122), new WidgetPointer(arg0));
+		}
+	}
+	return;
+}

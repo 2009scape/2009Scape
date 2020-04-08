@@ -1,0 +1,59 @@
+void script_1691(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	cs2func_script_1692_struct(2,0,0) structdump_3;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar2 = 0;
+	globalarray_0 = new int[96];
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = -1;
+	while (((boolean)ivar4) && (ivar2 < 96)) {
+		ivar5 = cs2method_3408(105, 74, 845, ivar2);
+		if (ivar5 == 345) {
+			ivar4 = 1;
+		} else if (((boolean)script_1694(ivar2)) && (ivar5 != -1)) {
+			globalarray_0[ivar3] = ivar2;
+			ivar3 = add(ivar3, 1);
+		} else {
+			setWidgetHidden(1);
+		}
+		createExtraChild(new WidgetPointer(arg0), 3, ivar2);
+		ivar2 = add(ivar2, 1);
+	}
+	script_1693(0, 0, subtract(ivar3, 1));
+	ivar6 = 0;
+	ivar7 = -1;
+	ivar2 = 0;
+	while (ivar2 < ivar3) {
+		if (setWidgetRegister(new WidgetPointer(arg0), globalarray_0[ivar2])) {
+			stack_dump0 = arg0;
+			stack_dump1 = ivar6;
+			stack_dump2 = globalarray_0[ivar2];
+			structdump_3 = script_1692(stack_dump0, stack_dump1, stack_dump2);
+			ivar7 = structdump_3.intpart_1;
+			ivar6 = structdump_3.intpart_0;
+		}
+		ivar2 = add(ivar2, 1);
+	}
+	if (ivar6 <= getWidgetActualHeight(new WidgetPointer(arg0))) {
+		setWidgetScrollMax(0, 0, new WidgetPointer(arg0));
+		deleteAllExtraChilds(new WidgetPointer(arg1));
+		setWidgetIsHidden(true, new WidgetPointer(arg1));
+	} else {
+		if ((ivar7 != -1) && setWidgetRegister(new WidgetPointer(arg0), ivar7)) {
+			deleteExtraChild();
+		}
+		setWidgetScrollMax(0, ivar6, new WidgetPointer(arg0));
+		setWidgetIsHidden(false, new WidgetPointer(arg1));
+		script_31(arg1, arg0, 798, 795, 796, 797, 793, 794);
+	}
+	return;
+}

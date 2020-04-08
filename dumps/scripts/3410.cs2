@@ -1,0 +1,4 @@
+void script_3410() {
+	cs2method5400(0, "forum", "forums.ws");
+	return;
+}

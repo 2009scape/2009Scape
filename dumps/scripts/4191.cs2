@@ -1,0 +1,45 @@
+void script_4191() {
+	if (setWidgetRegister(new WidgetPointer(1070,95))) {
+		setWidgetVFlip(1);
+	}
+	if (setWidgetRegister(new WidgetPointer(1070,96))) {
+		setWidgetVFlip(1);
+	}
+	if (setWidgetRegister(new WidgetPointer(1070,97))) {
+		setWidgetVFlip(1);
+	}
+	if (setWidgetRegister(new WidgetPointer(1070,98))) {
+		setWidgetVFlip(1);
+	}
+	if (setWidgetRegister(new WidgetPointer(1070,99))) {
+		setWidgetVFlip(1);
+	}
+	if (setWidgetRegister(new WidgetPointer(1070,100))) {
+		setWidgetVFlip(1);
+	}
+	if (setWidgetRegister(new WidgetPointer(1070,101))) {
+		setWidgetVFlip(1);
+	}
+	if (setWidgetRegister(new WidgetPointer(1070,81))) {
+		setWidgetVFlip(1);
+	}
+	if (setWidgetRegister(new WidgetPointer(1070,82))) {
+		setWidgetVFlip(1);
+	}
+	if (setWidgetRegister(new WidgetPointer(1070,83))) {
+		setWidgetVFlip(1);
+	}
+	if (setWidgetRegister(new WidgetPointer(1070,84))) {
+		setWidgetVFlip(1);
+	}
+	if (setWidgetRegister(new WidgetPointer(1070,85))) {
+		setWidgetVFlip(1);
+	}
+	if (setWidgetRegister(new WidgetPointer(1070,86))) {
+		setWidgetVFlip(1);
+	}
+	if (setWidgetRegister(new WidgetPointer(1070,87))) {
+		setWidgetVFlip(1);
+	}
+	return;
+}

@@ -1,0 +1,22 @@
+void script_2111(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6) {
+	int ivar7;
+	int ivar8;
+	if (arg0 != 1) {
+		return;
+	}
+	ivar7 = 0;
+	ivar8 = 0;
+	playSoundEffect(4911, 1, 0);
+	if (((boolean)arg1)) {
+		ivar7 = script_686(mod(add(bitconfig_693, arg2), 4), 4);
+		ivar8 = bitconfig_5851;
+	} else if (arg1 == 2) {
+		ivar7 = script_686(mod(add(bitconfig_694, arg2), 4), 4);
+		ivar8 = bitconfig_5852;
+	} else {
+		ivar7 = script_686(mod(add(bitconfig_695, arg2), 4), 4);
+		ivar8 = bitconfig_5853;
+	}
+	script_2112(arg3, arg4, arg5, arg6, ivar7, ivar8);
+	return;
+}

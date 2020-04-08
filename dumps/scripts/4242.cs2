@@ -1,0 +1,41 @@
+string script_4242(int arg0) {
+	switch (arg0) {
+		case 1:
+			return "You are more likely to hit with your melee attacks." + "<br>" + "<br>";
+		case 2:
+			return "You are able to deal more damage with your melee attacks." + "<br>" + "<br>";
+		case 5:
+			return "You are less likely to be hit by an enemy's attacks." + "<br>" + "<br>";
+		case 3:
+			return "You are more likely to hit with your ranged attacks." + "<br>" + "<br>";
+		case 7:
+			return "You are able to sustain your prayers for longer before needing to recharge." + "<br>" + "<br>";
+		case 4:
+			return "Your ability to hit with and defend against magical attacks is improved." + "<br>" + "<br>";
+		case 6:
+			return "Your maximum lifepoints have been increased by 10." + "<br>" + "<br>";
+		case 8:
+			return "Your chance of failing agility shortcuts and obstacles is reduced." + "<br>" + "<br>";
+		case 10:
+			return "You are more likely to succeed when picking pockets or locks." + "<br>" + "<br>";
+		case 13:
+			return "You are more likely to succeed when attempting to mine ore." + "<br>" + "<br>";
+		case 15:
+			return "You are more likely to succeed when attempting to catch a fish." + "<br>" + "<br>";
+		case 16:
+			return "Your likelihood of burning food is decreased." + "<br>" + "<br>";
+		case 17:
+			return "Your chance of success when lighting a fire is improved." + "<br>" + "<br>";
+		case 18:
+			return "You are more likely to succeed when attempting to cut a log." + "<br>" + "<br>";
+		case 12:
+			return "Your chance of crafting multiple runes from a single piece of essence is increased." + "<br>" + "<br>";
+		case 21:
+			return "Your chance of successfully pruning diseased plants is increased." + "<br>" + "<br>";
+		case 23:
+			return "Your chance of successfully trapping creatures is increased." + "<br>" + "<br>";
+		case 24:
+			return "You are able to sustain your familiars for longer before needing to recharge." + "<br>" + "<br>";
+	}
+	return "";
+}

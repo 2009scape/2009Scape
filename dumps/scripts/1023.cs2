@@ -1,0 +1,4603 @@
+cs2func_script_1023_struct(2,1,0) script_1023(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	string svar0;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	cs2func_script_1025_struct(2,1,0) structdump_3;
+	cs2func_script_1025_struct(2,1,0) structdump_4;
+	cs2func_script_1025_struct(2,1,0) structdump_5;
+	cs2func_script_1025_struct(2,1,0) structdump_6;
+	cs2func_script_1025_struct(2,1,0) structdump_7;
+	cs2func_script_1025_struct(2,1,0) structdump_8;
+	cs2func_script_1025_struct(2,1,0) structdump_9;
+	cs2func_script_1025_struct(2,1,0) structdump_10;
+	cs2func_script_1025_struct(2,1,0) structdump_11;
+	cs2func_script_1025_struct(2,1,0) structdump_12;
+	cs2func_script_1025_struct(2,1,0) structdump_13;
+	cs2func_script_1025_struct(2,1,0) structdump_14;
+	cs2func_script_1025_struct(2,1,0) structdump_15;
+	cs2func_script_1025_struct(2,1,0) structdump_16;
+	cs2func_script_1025_struct(2,1,0) structdump_17;
+	cs2func_script_1025_struct(2,1,0) structdump_18;
+	cs2func_script_1025_struct(2,1,0) structdump_19;
+	cs2func_script_1025_struct(2,1,0) structdump_20;
+	cs2func_script_1025_struct(2,1,0) structdump_21;
+	cs2func_script_1025_struct(2,1,0) structdump_22;
+	cs2func_script_1025_struct(2,1,0) structdump_23;
+	cs2func_script_1025_struct(2,1,0) structdump_24;
+	cs2func_script_1025_struct(2,1,0) structdump_25;
+	cs2func_script_1025_struct(2,1,0) structdump_26;
+	cs2func_script_1025_struct(2,1,0) structdump_27;
+	cs2func_script_1025_struct(2,1,0) structdump_28;
+	cs2func_script_1025_struct(2,1,0) structdump_29;
+	cs2func_script_1025_struct(2,1,0) structdump_30;
+	cs2func_script_1025_struct(2,1,0) structdump_31;
+	cs2func_script_1025_struct(2,1,0) structdump_32;
+	cs2func_script_1025_struct(2,1,0) structdump_33;
+	cs2func_script_1025_struct(2,1,0) structdump_34;
+	cs2func_script_1025_struct(2,1,0) structdump_35;
+	cs2func_script_1025_struct(2,1,0) structdump_36;
+	cs2func_script_1025_struct(2,1,0) structdump_37;
+	cs2func_script_1025_struct(2,1,0) structdump_38;
+	cs2func_script_1025_struct(2,1,0) structdump_39;
+	cs2func_script_1025_struct(2,1,0) structdump_40;
+	cs2func_script_1025_struct(2,1,0) structdump_41;
+	cs2func_script_1025_struct(2,1,0) structdump_42;
+	cs2func_script_1025_struct(2,1,0) structdump_43;
+	cs2func_script_1025_struct(2,1,0) structdump_44;
+	cs2func_script_1025_struct(2,1,0) structdump_45;
+	cs2func_script_1025_struct(2,1,0) structdump_46;
+	cs2func_script_1025_struct(2,1,0) structdump_47;
+	cs2func_script_1025_struct(2,1,0) structdump_48;
+	cs2func_script_1025_struct(2,1,0) structdump_49;
+	cs2func_script_1025_struct(2,1,0) structdump_50;
+	cs2func_script_1025_struct(2,1,0) structdump_51;
+	cs2func_script_1025_struct(2,1,0) structdump_52;
+	cs2func_script_1025_struct(2,1,0) structdump_53;
+	cs2func_script_1025_struct(2,1,0) structdump_54;
+	cs2func_script_1025_struct(2,1,0) structdump_55;
+	cs2func_script_1025_struct(2,1,0) structdump_56;
+	cs2func_script_1025_struct(2,1,0) structdump_57;
+	cs2func_script_1025_struct(2,1,0) structdump_58;
+	cs2func_script_1025_struct(2,1,0) structdump_59;
+	cs2func_script_1025_struct(2,1,0) structdump_60;
+	cs2func_script_1025_struct(2,1,0) structdump_61;
+	cs2func_script_1025_struct(2,1,0) structdump_62;
+	cs2func_script_1025_struct(2,1,0) structdump_63;
+	cs2func_script_1025_struct(2,1,0) structdump_64;
+	cs2func_script_1025_struct(2,1,0) structdump_65;
+	cs2func_script_1025_struct(2,1,0) structdump_66;
+	cs2func_script_1025_struct(2,1,0) structdump_67;
+	cs2func_script_1025_struct(2,1,0) structdump_68;
+	cs2func_script_1025_struct(2,1,0) structdump_69;
+	cs2func_script_1025_struct(2,1,0) structdump_70;
+	cs2func_script_1025_struct(2,1,0) structdump_71;
+	cs2func_script_1025_struct(2,1,0) structdump_72;
+	cs2func_script_1025_struct(2,1,0) structdump_73;
+	cs2func_script_1025_struct(2,1,0) structdump_74;
+	cs2func_script_1025_struct(2,1,0) structdump_75;
+	cs2func_script_1025_struct(2,1,0) structdump_76;
+	cs2func_script_1025_struct(2,1,0) structdump_77;
+	cs2func_script_1025_struct(2,1,0) structdump_78;
+	cs2func_script_1025_struct(2,1,0) structdump_79;
+	cs2func_script_1025_struct(2,1,0) structdump_80;
+	cs2func_script_1025_struct(2,1,0) structdump_81;
+	cs2func_script_1025_struct(2,1,0) structdump_82;
+	cs2func_script_1025_struct(2,1,0) structdump_83;
+	cs2func_script_1025_struct(2,1,0) structdump_84;
+	cs2func_script_1025_struct(2,1,0) structdump_85;
+	cs2func_script_1025_struct(2,1,0) structdump_86;
+	cs2func_script_1025_struct(2,1,0) structdump_87;
+	cs2func_script_1025_struct(2,1,0) structdump_88;
+	cs2func_script_1025_struct(2,1,0) structdump_89;
+	cs2func_script_1025_struct(2,1,0) structdump_90;
+	cs2func_script_1025_struct(2,1,0) structdump_91;
+	cs2func_script_1025_struct(2,1,0) structdump_92;
+	cs2func_script_1025_struct(2,1,0) structdump_93;
+	cs2func_script_1025_struct(2,1,0) structdump_94;
+	cs2func_script_1025_struct(2,1,0) structdump_95;
+	cs2func_script_1025_struct(2,1,0) structdump_96;
+	cs2func_script_1025_struct(2,1,0) structdump_97;
+	cs2func_script_1025_struct(2,1,0) structdump_98;
+	cs2func_script_1025_struct(2,1,0) structdump_99;
+	cs2func_script_1025_struct(2,1,0) structdump_100;
+	cs2func_script_1025_struct(2,1,0) structdump_101;
+	cs2func_script_1025_struct(2,1,0) structdump_102;
+	cs2func_script_1025_struct(2,1,0) structdump_103;
+	cs2func_script_1025_struct(2,1,0) structdump_104;
+	cs2func_script_1025_struct(2,1,0) structdump_105;
+	cs2func_script_1025_struct(2,1,0) structdump_106;
+	cs2func_script_1025_struct(2,1,0) structdump_107;
+	cs2func_script_1025_struct(2,1,0) structdump_108;
+	cs2func_script_1025_struct(2,1,0) structdump_109;
+	cs2func_script_1025_struct(2,1,0) structdump_110;
+	cs2func_script_1025_struct(2,1,0) structdump_111;
+	cs2func_script_1025_struct(2,1,0) structdump_112;
+	cs2func_script_1025_struct(2,1,0) structdump_113;
+	cs2func_script_1025_struct(2,1,0) structdump_114;
+	cs2func_script_1025_struct(2,1,0) structdump_115;
+	cs2func_script_1025_struct(2,1,0) structdump_116;
+	cs2func_script_1025_struct(2,1,0) structdump_117;
+	cs2func_script_1025_struct(2,1,0) structdump_118;
+	cs2func_script_1025_struct(2,1,0) structdump_119;
+	cs2func_script_1025_struct(2,1,0) structdump_120;
+	cs2func_script_1025_struct(2,1,0) structdump_121;
+	cs2func_script_1025_struct(2,1,0) structdump_122;
+	cs2func_script_1025_struct(2,1,0) structdump_123;
+	cs2func_script_1025_struct(2,1,0) structdump_124;
+	cs2func_script_1025_struct(2,1,0) structdump_125;
+	cs2func_script_1025_struct(2,1,0) structdump_126;
+	cs2func_script_1025_struct(2,1,0) structdump_127;
+	cs2func_script_1025_struct(2,1,0) structdump_128;
+	cs2func_script_1025_struct(2,1,0) structdump_129;
+	cs2func_script_1025_struct(2,1,0) structdump_130;
+	cs2func_script_1025_struct(2,1,0) structdump_131;
+	cs2func_script_1025_struct(2,1,0) structdump_132;
+	cs2func_script_1025_struct(2,1,0) structdump_133;
+	cs2func_script_1025_struct(2,1,0) structdump_134;
+	cs2func_script_1025_struct(2,1,0) structdump_135;
+	cs2func_script_1025_struct(2,1,0) structdump_136;
+	cs2func_script_1025_struct(2,1,0) structdump_137;
+	cs2func_script_1025_struct(2,1,0) structdump_138;
+	cs2func_script_1025_struct(2,1,0) structdump_139;
+	cs2func_script_1025_struct(2,1,0) structdump_140;
+	cs2func_script_1025_struct(2,1,0) structdump_141;
+	cs2func_script_1025_struct(2,1,0) structdump_142;
+	cs2func_script_1025_struct(2,1,0) structdump_143;
+	cs2func_script_1025_struct(2,1,0) structdump_144;
+	cs2func_script_1025_struct(2,1,0) structdump_145;
+	cs2func_script_1025_struct(2,1,0) structdump_146;
+	cs2func_script_1025_struct(2,1,0) structdump_147;
+	cs2func_script_1025_struct(2,1,0) structdump_148;
+	cs2func_script_1025_struct(2,1,0) structdump_149;
+	cs2func_script_1025_struct(2,1,0) structdump_150;
+	cs2func_script_1025_struct(2,1,0) structdump_151;
+	cs2func_script_1025_struct(2,1,0) structdump_152;
+	cs2func_script_1025_struct(2,1,0) structdump_153;
+	cs2func_script_1025_struct(2,1,0) structdump_154;
+	cs2func_script_1025_struct(2,1,0) structdump_155;
+	cs2func_script_1025_struct(2,1,0) structdump_156;
+	cs2func_script_1025_struct(2,1,0) structdump_157;
+	cs2func_script_1025_struct(2,1,0) structdump_158;
+	cs2func_script_1025_struct(2,1,0) structdump_159;
+	cs2func_script_1025_struct(2,1,0) structdump_160;
+	cs2func_script_1025_struct(2,1,0) structdump_161;
+	cs2func_script_1025_struct(2,1,0) structdump_162;
+	cs2func_script_1025_struct(2,1,0) structdump_163;
+	cs2func_script_1025_struct(2,1,0) structdump_164;
+	cs2func_script_1025_struct(2,1,0) structdump_165;
+	cs2func_script_1025_struct(2,1,0) structdump_166;
+	cs2func_script_1025_struct(2,1,0) structdump_167;
+	cs2func_script_1025_struct(2,1,0) structdump_168;
+	cs2func_script_1025_struct(2,1,0) structdump_169;
+	cs2func_script_1025_struct(2,1,0) structdump_170;
+	cs2func_script_1025_struct(2,1,0) structdump_171;
+	cs2func_script_1025_struct(2,1,0) structdump_172;
+	cs2func_script_1025_struct(2,1,0) structdump_173;
+	cs2func_script_1025_struct(2,1,0) structdump_174;
+	cs2func_script_1025_struct(2,1,0) structdump_175;
+	cs2func_script_1025_struct(2,1,0) structdump_176;
+	cs2func_script_1025_struct(2,1,0) structdump_177;
+	cs2func_script_1025_struct(2,1,0) structdump_178;
+	cs2func_script_1025_struct(2,1,0) structdump_179;
+	cs2func_script_1025_struct(2,1,0) structdump_180;
+	cs2func_script_1025_struct(2,1,0) structdump_181;
+	cs2func_script_1025_struct(2,1,0) structdump_182;
+	cs2func_script_1025_struct(2,1,0) structdump_183;
+	cs2func_script_1025_struct(2,1,0) structdump_184;
+	cs2func_script_1025_struct(2,1,0) structdump_185;
+	cs2func_script_1025_struct(2,1,0) structdump_186;
+	cs2func_script_1025_struct(2,1,0) structdump_187;
+	cs2func_script_1025_struct(2,1,0) structdump_188;
+	cs2func_script_1025_struct(2,1,0) structdump_189;
+	cs2func_script_1025_struct(2,1,0) structdump_190;
+	cs2func_script_1025_struct(2,1,0) structdump_191;
+	cs2func_script_1025_struct(2,1,0) structdump_192;
+	cs2func_script_1025_struct(2,1,0) structdump_193;
+	cs2func_script_1025_struct(2,1,0) structdump_194;
+	cs2func_script_1025_struct(2,1,0) structdump_195;
+	cs2func_script_1025_struct(2,1,0) structdump_196;
+	cs2func_script_1025_struct(2,1,0) structdump_197;
+	cs2func_script_1025_struct(2,1,0) structdump_198;
+	cs2func_script_1025_struct(2,1,0) structdump_199;
+	cs2func_script_1025_struct(2,1,0) structdump_200;
+	cs2func_script_1025_struct(2,1,0) structdump_201;
+	cs2func_script_1025_struct(2,1,0) structdump_202;
+	cs2func_script_1025_struct(2,1,0) structdump_203;
+	cs2func_script_1025_struct(2,1,0) structdump_204;
+	cs2func_script_1025_struct(2,1,0) structdump_205;
+	cs2func_script_1025_struct(2,1,0) structdump_206;
+	cs2func_script_1025_struct(2,1,0) structdump_207;
+	cs2func_script_1025_struct(2,1,0) structdump_208;
+	cs2func_script_1025_struct(2,1,0) structdump_209;
+	cs2func_script_1025_struct(2,1,0) structdump_210;
+	cs2func_script_1025_struct(2,1,0) structdump_211;
+	cs2func_script_1025_struct(2,1,0) structdump_212;
+	cs2func_script_1025_struct(2,1,0) structdump_213;
+	cs2func_script_1025_struct(2,1,0) structdump_214;
+	cs2func_script_1025_struct(2,1,0) structdump_215;
+	cs2func_script_1025_struct(2,1,0) structdump_216;
+	cs2func_script_1025_struct(2,1,0) structdump_217;
+	cs2func_script_1025_struct(2,1,0) structdump_218;
+	cs2func_script_1025_struct(2,1,0) structdump_219;
+	cs2func_script_1025_struct(2,1,0) structdump_220;
+	cs2func_script_1025_struct(2,1,0) structdump_221;
+	cs2func_script_1025_struct(2,1,0) structdump_222;
+	cs2func_script_1025_struct(2,1,0) structdump_223;
+	cs2func_script_1025_struct(2,1,0) structdump_224;
+	cs2func_script_1025_struct(2,1,0) structdump_225;
+	cs2func_script_1025_struct(2,1,0) structdump_226;
+	cs2func_script_1025_struct(2,1,0) structdump_227;
+	cs2func_script_1025_struct(2,1,0) structdump_228;
+	cs2func_script_1025_struct(2,1,0) structdump_229;
+	cs2func_script_1025_struct(2,1,0) structdump_230;
+	cs2func_script_1025_struct(2,1,0) structdump_231;
+	cs2func_script_1025_struct(2,1,0) structdump_232;
+	cs2func_script_1025_struct(2,1,0) structdump_233;
+	cs2func_script_1025_struct(2,1,0) structdump_234;
+	cs2func_script_1025_struct(2,1,0) structdump_235;
+	cs2func_script_1025_struct(2,1,0) structdump_236;
+	cs2func_script_1025_struct(2,1,0) structdump_237;
+	cs2func_script_1025_struct(2,1,0) structdump_238;
+	cs2func_script_1025_struct(2,1,0) structdump_239;
+	cs2func_script_1025_struct(2,1,0) structdump_240;
+	cs2func_script_1025_struct(2,1,0) structdump_241;
+	cs2func_script_1025_struct(2,1,0) structdump_242;
+	cs2func_script_1025_struct(2,1,0) structdump_243;
+	cs2func_script_1025_struct(2,1,0) structdump_244;
+	cs2func_script_1025_struct(2,1,0) structdump_245;
+	cs2func_script_1025_struct(2,1,0) structdump_246;
+	cs2func_script_1025_struct(2,1,0) structdump_247;
+	cs2func_script_1025_struct(2,1,0) structdump_248;
+	cs2func_script_1025_struct(2,1,0) structdump_249;
+	cs2func_script_1025_struct(2,1,0) structdump_250;
+	cs2func_script_1025_struct(2,1,0) structdump_251;
+	cs2func_script_1025_struct(2,1,0) structdump_252;
+	cs2func_script_1025_struct(2,1,0) structdump_253;
+	cs2func_script_1025_struct(2,1,0) structdump_254;
+	cs2func_script_1025_struct(2,1,0) structdump_255;
+	cs2func_script_1025_struct(2,1,0) structdump_256;
+	cs2func_script_1025_struct(2,1,0) structdump_257;
+	cs2func_script_1025_struct(2,1,0) structdump_258;
+	cs2func_script_1025_struct(2,1,0) structdump_259;
+	cs2func_script_1025_struct(2,1,0) structdump_260;
+	cs2func_script_1025_struct(2,1,0) structdump_261;
+	cs2func_script_1025_struct(2,1,0) structdump_262;
+	cs2func_script_1025_struct(2,1,0) structdump_263;
+	cs2func_script_1025_struct(2,1,0) structdump_264;
+	cs2func_script_1025_struct(2,1,0) structdump_265;
+	cs2func_script_1025_struct(2,1,0) structdump_266;
+	cs2func_script_1025_struct(2,1,0) structdump_267;
+	cs2func_script_1025_struct(2,1,0) structdump_268;
+	cs2func_script_1025_struct(2,1,0) structdump_269;
+	cs2func_script_1025_struct(2,1,0) structdump_270;
+	cs2func_script_1025_struct(2,1,0) structdump_271;
+	cs2func_script_1025_struct(2,1,0) structdump_272;
+	cs2func_script_1025_struct(2,1,0) structdump_273;
+	cs2func_script_1025_struct(2,1,0) structdump_274;
+	cs2func_script_1025_struct(2,1,0) structdump_275;
+	cs2func_script_1025_struct(2,1,0) structdump_276;
+	cs2func_script_2042_struct(2,1,0) structdump_277;
+	cs2func_script_1025_struct(2,1,0) structdump_278;
+	cs2func_script_1025_struct(2,1,0) structdump_279;
+	cs2func_script_1025_struct(2,1,0) structdump_280;
+	cs2func_script_1025_struct(2,1,0) structdump_281;
+	cs2func_script_1025_struct(2,1,0) structdump_282;
+	cs2func_script_1025_struct(2,1,0) structdump_283;
+	cs2func_script_1025_struct(2,1,0) structdump_284;
+	cs2func_script_1025_struct(2,1,0) structdump_285;
+	cs2func_script_1025_struct(2,1,0) structdump_286;
+	cs2func_script_1025_struct(2,1,0) structdump_287;
+	cs2func_script_1025_struct(2,1,0) structdump_288;
+	cs2func_script_1025_struct(2,1,0) structdump_289;
+	cs2func_script_1025_struct(2,1,0) structdump_290;
+	cs2func_script_1025_struct(2,1,0) structdump_291;
+	cs2func_script_1025_struct(2,1,0) structdump_292;
+	cs2func_script_1025_struct(2,1,0) structdump_293;
+	cs2func_script_1025_struct(2,1,0) structdump_294;
+	cs2func_script_1025_struct(2,1,0) structdump_295;
+	cs2func_script_1025_struct(2,1,0) structdump_296;
+	cs2func_script_1025_struct(2,1,0) structdump_297;
+	cs2func_script_1025_struct(2,1,0) structdump_298;
+	cs2func_script_1025_struct(2,1,0) structdump_299;
+	cs2func_script_1025_struct(2,1,0) structdump_300;
+	cs2func_script_1025_struct(2,1,0) structdump_301;
+	cs2func_script_1025_struct(2,1,0) structdump_302;
+	cs2func_script_1025_struct(2,1,0) structdump_303;
+	cs2func_script_1025_struct(2,1,0) structdump_304;
+	cs2func_script_1025_struct(2,1,0) structdump_305;
+	cs2func_script_1025_struct(2,1,0) structdump_306;
+	cs2func_script_1025_struct(2,1,0) structdump_307;
+	cs2func_script_1025_struct(2,1,0) structdump_308;
+	cs2func_script_1025_struct(2,1,0) structdump_309;
+	cs2func_script_1025_struct(2,1,0) structdump_310;
+	cs2func_script_1025_struct(2,1,0) structdump_311;
+	cs2func_script_1025_struct(2,1,0) structdump_312;
+	cs2func_script_1025_struct(2,1,0) structdump_313;
+	cs2func_script_1025_struct(2,1,0) structdump_314;
+	cs2func_script_1025_struct(2,1,0) structdump_315;
+	cs2func_script_1025_struct(2,1,0) structdump_316;
+	cs2func_script_1025_struct(2,1,0) structdump_317;
+	cs2func_script_1025_struct(2,1,0) structdump_318;
+	cs2func_script_1025_struct(2,1,0) structdump_319;
+	cs2func_script_1025_struct(2,1,0) structdump_320;
+	cs2func_script_1025_struct(2,1,0) structdump_321;
+	cs2func_script_1025_struct(2,1,0) structdump_322;
+	cs2func_script_1025_struct(2,1,0) structdump_323;
+	cs2func_script_1025_struct(2,1,0) structdump_324;
+	cs2func_script_1025_struct(2,1,0) structdump_325;
+	cs2func_script_1025_struct(2,1,0) structdump_326;
+	cs2func_script_1025_struct(2,1,0) structdump_327;
+	cs2func_script_1025_struct(2,1,0) structdump_328;
+	cs2func_script_1025_struct(2,1,0) structdump_329;
+	cs2func_script_1025_struct(2,1,0) structdump_330;
+	cs2func_script_1025_struct(2,1,0) structdump_331;
+	cs2func_script_1025_struct(2,1,0) structdump_332;
+	cs2func_script_1025_struct(2,1,0) structdump_333;
+	cs2func_script_1025_struct(2,1,0) structdump_334;
+	cs2func_script_1025_struct(2,1,0) structdump_335;
+	cs2func_script_1025_struct(2,1,0) structdump_336;
+	cs2func_script_1025_struct(2,1,0) structdump_337;
+	cs2func_script_1025_struct(2,1,0) structdump_338;
+	cs2func_script_1025_struct(2,1,0) structdump_339;
+	cs2func_script_1025_struct(2,1,0) structdump_340;
+	cs2func_script_1025_struct(2,1,0) structdump_341;
+	cs2func_script_1025_struct(2,1,0) structdump_342;
+	cs2func_script_1025_struct(2,1,0) structdump_343;
+	cs2func_script_1025_struct(2,1,0) structdump_344;
+	cs2func_script_1025_struct(2,1,0) structdump_345;
+	cs2func_script_1025_struct(2,1,0) structdump_346;
+	cs2func_script_1025_struct(2,1,0) structdump_347;
+	cs2func_script_1025_struct(2,1,0) structdump_348;
+	cs2func_script_1025_struct(2,1,0) structdump_349;
+	cs2func_script_1025_struct(2,1,0) structdump_350;
+	cs2func_script_1025_struct(2,1,0) structdump_351;
+	cs2func_script_1025_struct(2,1,0) structdump_352;
+	cs2func_script_1025_struct(2,1,0) structdump_353;
+	cs2func_script_1025_struct(2,1,0) structdump_354;
+	cs2func_script_1025_struct(2,1,0) structdump_355;
+	cs2func_script_1025_struct(2,1,0) structdump_356;
+	cs2func_script_1025_struct(2,1,0) structdump_357;
+	cs2func_script_1025_struct(2,1,0) structdump_358;
+	cs2func_script_1025_struct(2,1,0) structdump_359;
+	cs2func_script_1025_struct(2,1,0) structdump_360;
+	cs2func_script_1025_struct(2,1,0) structdump_361;
+	cs2func_script_1025_struct(2,1,0) structdump_362;
+	cs2func_script_1025_struct(2,1,0) structdump_363;
+	cs2func_script_1025_struct(2,1,0) structdump_364;
+	cs2func_script_1025_struct(2,1,0) structdump_365;
+	cs2func_script_1025_struct(2,1,0) structdump_366;
+	cs2func_script_1025_struct(2,1,0) structdump_367;
+	cs2func_script_1025_struct(2,1,0) structdump_368;
+	cs2func_script_1025_struct(2,1,0) structdump_369;
+	cs2func_script_1025_struct(2,1,0) structdump_370;
+	cs2func_script_1025_struct(2,1,0) structdump_371;
+	cs2func_script_1025_struct(2,1,0) structdump_372;
+	cs2func_script_1025_struct(2,1,0) structdump_373;
+	cs2func_script_1025_struct(2,1,0) structdump_374;
+	cs2func_script_1025_struct(2,1,0) structdump_375;
+	cs2func_script_1025_struct(2,1,0) structdump_376;
+	cs2func_script_1025_struct(2,1,0) structdump_377;
+	cs2func_script_1025_struct(2,1,0) structdump_378;
+	cs2func_script_1025_struct(2,1,0) structdump_379;
+	cs2func_script_1025_struct(2,1,0) structdump_380;
+	cs2func_script_1025_struct(2,1,0) structdump_381;
+	cs2func_script_1025_struct(2,1,0) structdump_382;
+	cs2func_script_1025_struct(2,1,0) structdump_383;
+	cs2func_script_1025_struct(2,1,0) structdump_384;
+	cs2func_script_1025_struct(2,1,0) structdump_385;
+	cs2func_script_1025_struct(2,1,0) structdump_386;
+	cs2func_script_1025_struct(2,1,0) structdump_387;
+	cs2func_script_1025_struct(2,1,0) structdump_388;
+	cs2func_script_1025_struct(2,1,0) structdump_389;
+	cs2func_script_1025_struct(2,1,0) structdump_390;
+	cs2func_script_1025_struct(2,1,0) structdump_391;
+	cs2func_script_1025_struct(2,1,0) structdump_392;
+	cs2func_script_1025_struct(2,1,0) structdump_393;
+	cs2func_script_1025_struct(2,1,0) structdump_394;
+	cs2func_script_1025_struct(2,1,0) structdump_395;
+	cs2func_script_1025_struct(2,1,0) structdump_396;
+	ivar2 = getSkillActualLvl(arg0);
+	svar0 = "null";
+	ivar3 = -1;
+	ivar4 = 0;
+	switch (arg1) {
+		case 0:
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 10)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_3 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_3.intpart_1;
+				ivar3 = structdump_3.intpart_0;
+				svar0 = structdump_3.stringpart_0;
+			}
+			if (standart_config_122 == 7) {
+				ivar4 = 0;
+			}
+			break;
+		case 1:
+			if (((boolean)arg0) && (getSkillActualLvl(arg0) == 15)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_4 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_4.intpart_1;
+				ivar3 = structdump_4.intpart_0;
+				svar0 = structdump_4.stringpart_0;
+			}
+			if ((arg0 == 5) && (getSkillActualLvl(arg0) == 25)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_5 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_5.intpart_1;
+				ivar3 = structdump_5.intpart_0;
+				svar0 = structdump_5.stringpart_0;
+			}
+			if (bitconfig_3550 == 11) {
+				ivar4 = 0;
+			}
+			break;
+		case 2:
+			if (((boolean)arg0) && (getSkillActualLvl(arg0) == 30)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_6 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_6.intpart_1;
+				ivar3 = structdump_6.intpart_0;
+				svar0 = structdump_6.stringpart_0;
+			}
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_7 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_7.intpart_1;
+				ivar3 = structdump_7.intpart_0;
+				svar0 = structdump_7.stringpart_0;
+			}
+			if ((arg0 == 13) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_8 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_8.intpart_1;
+				ivar3 = structdump_8.intpart_0;
+				svar0 = structdump_8.stringpart_0;
+			}
+			if (bitconfig_299 > 109) {
+				ivar4 = 0;
+			}
+			break;
+		case 3:
+			if ((arg0 == 7) && (getSkillActualLvl(arg0) == 30)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_9 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_9.intpart_1;
+				ivar3 = structdump_9.intpart_0;
+				svar0 = structdump_9.stringpart_0;
+			}
+			if ((arg0 == 9) && (getSkillActualLvl(arg0) == 5)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_10 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_10.intpart_1;
+				ivar3 = structdump_10.intpart_0;
+				svar0 = structdump_10.stringpart_0;
+			}
+			if ((arg0 == 4) && (getSkillActualLvl(arg0) == 30)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_11 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_11.intpart_1;
+				ivar3 = structdump_11.intpart_0;
+				svar0 = structdump_11.stringpart_0;
+			}
+			if (standart_config_293 == 65) {
+				ivar4 = 0;
+			}
+			break;
+		case 4:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 42)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_12 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_12.intpart_1;
+				ivar3 = structdump_12.intpart_0;
+				svar0 = structdump_12.stringpart_0;
+			}
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 45)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_13 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_13.intpart_1;
+				ivar3 = structdump_13.intpart_0;
+				svar0 = structdump_13.stringpart_0;
+			}
+			if ((arg0 == 4) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_14 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_14.intpart_1;
+				ivar3 = structdump_14.intpart_0;
+				svar0 = structdump_14.stringpart_0;
+			}
+			if ((arg0 == 13) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_15 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_15.intpart_1;
+				ivar3 = structdump_15.intpart_0;
+				svar0 = structdump_15.stringpart_0;
+			}
+			if (standart_config_655 > 130) {
+				ivar4 = 0;
+			}
+			break;
+		case 5:
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 20)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_16 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_16.intpart_1;
+				ivar3 = structdump_16.intpart_0;
+				svar0 = structdump_16.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 25)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_17 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_17.intpart_1;
+				ivar3 = structdump_17.intpart_0;
+				svar0 = structdump_17.stringpart_0;
+			}
+			if (standart_config_399 > 6) {
+				ivar4 = 0;
+			}
+			break;
+		case 6:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 26)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_18 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_18.intpart_1;
+				ivar3 = structdump_18.intpart_0;
+				svar0 = structdump_18.stringpart_0;
+			}
+			if ((arg0 == 22) && (getSkillActualLvl(arg0) == 5)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_19 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_19.intpart_1;
+				ivar3 = structdump_19.intpart_0;
+				svar0 = structdump_19.stringpart_0;
+			}
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 32)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_20 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_20.intpart_1;
+				ivar3 = structdump_20.intpart_0;
+				svar0 = structdump_20.stringpart_0;
+			}
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 33)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_21 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_21.intpart_1;
+				ivar3 = structdump_21.intpart_0;
+				svar0 = structdump_21.stringpart_0;
+			}
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 20)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_22 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_22.intpart_1;
+				ivar3 = structdump_22.intpart_0;
+				svar0 = structdump_22.stringpart_0;
+			}
+			if ((arg0 == 2) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_23 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_23.intpart_1;
+				ivar3 = structdump_23.intpart_0;
+				svar0 = structdump_23.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 22)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_24 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_24.intpart_1;
+				ivar3 = structdump_24.intpart_0;
+				svar0 = structdump_24.stringpart_0;
+			}
+			if (bitconfig_2573 == 320) {
+				ivar4 = 0;
+			}
+			break;
+		case 7:
+			if ((arg0 == 11) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_25 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_25.intpart_1;
+				ivar3 = structdump_25.intpart_0;
+				svar0 = structdump_25.stringpart_0;
+			}
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_26 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_26.intpart_1;
+				ivar3 = structdump_26.intpart_0;
+				svar0 = structdump_26.stringpart_0;
+			}
+			if ((arg0 == 18) && (getSkillActualLvl(arg0) == 10)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_27 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_27.intpart_1;
+				ivar3 = structdump_27.intpart_0;
+				svar0 = structdump_27.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 53)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_28 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_28.intpart_1;
+				ivar3 = structdump_28.intpart_0;
+				svar0 = structdump_28.stringpart_0;
+			}
+			if (bitconfig_358 == 15) {
+				ivar4 = 0;
+			}
+			break;
+		case 8:
+			if ((arg0 == 9) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_29 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_29.intpart_1;
+				ivar3 = structdump_29.intpart_0;
+				svar0 = structdump_29.stringpart_0;
+			}
+			if ((arg0 == 20) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_30 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_30.intpart_1;
+				ivar3 = structdump_30.intpart_0;
+				svar0 = structdump_30.stringpart_0;
+			}
+			if ((arg0 == 13) && (getSkillActualLvl(arg0) == 65)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_31 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_31.intpart_1;
+				ivar3 = structdump_31.intpart_0;
+				svar0 = structdump_31.stringpart_0;
+			}
+			if (bitconfig_1465 == 80) {
+				ivar4 = 0;
+			}
+			break;
+		case 9:
+			if ((arg0 == 15) && (getSkillActualLvl(arg0) == 10)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_32 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_32.intpart_1;
+				ivar3 = structdump_32.intpart_0;
+				svar0 = structdump_32.stringpart_0;
+			}
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 10)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_33 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_33.intpart_1;
+				ivar3 = structdump_33.intpart_0;
+				svar0 = structdump_33.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 25)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_34 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_34.intpart_1;
+				ivar3 = structdump_34.intpart_0;
+				svar0 = structdump_34.stringpart_0;
+			}
+			if (standart_config_131 == 9) {
+				ivar4 = 0;
+			}
+			break;
+		case 10:
+			if ((arg0 == 15) && (getSkillActualLvl(arg0) == 31)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_35 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_35.intpart_1;
+				ivar3 = structdump_35.intpart_0;
+				svar0 = structdump_35.stringpart_0;
+			}
+			if (standart_config_335 == 110) {
+				ivar4 = 0;
+			}
+			break;
+		case 11:
+			if ((arg0 == 21) && (getSkillActualLvl(arg0) == 27)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_36 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_36.intpart_1;
+				ivar3 = structdump_36.intpart_0;
+				svar0 = structdump_36.stringpart_0;
+			}
+			if (bitconfig_2780 == 40) {
+				ivar4 = 0;
+			}
+			break;
+		case 12:
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 20)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_37 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_37.intpart_1;
+				ivar3 = structdump_37.intpart_0;
+				svar0 = structdump_37.stringpart_0;
+			}
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 20)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_38 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_38.intpart_1;
+				ivar3 = structdump_38.intpart_0;
+				svar0 = structdump_38.stringpart_0;
+			}
+			if ((arg0 == 13) && (getSkillActualLvl(arg0) == 20)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_39 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_39.intpart_1;
+				ivar3 = structdump_39.intpart_0;
+				svar0 = structdump_39.stringpart_0;
+			}
+			if (isBitFlagged(standart_config_299, 20)) {
+				ivar4 = 0;
+			}
+			break;
+		case 13:
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_40 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_40.intpart_1;
+				ivar3 = structdump_40.intpart_0;
+				svar0 = structdump_40.stringpart_0;
+			}
+			if ((arg0 == 11) && (getSkillActualLvl(arg0) == 45)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_41 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_41.intpart_1;
+				ivar3 = structdump_41.intpart_0;
+				svar0 = structdump_41.stringpart_0;
+			}
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 39)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_42 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_42.intpart_1;
+				ivar3 = structdump_42.intpart_0;
+				svar0 = structdump_42.stringpart_0;
+			}
+			if ((arg0 == 5) && (getSkillActualLvl(arg0) == 43)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_43 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_43.intpart_1;
+				ivar3 = structdump_43.intpart_0;
+				svar0 = structdump_43.stringpart_0;
+			}
+			if (bitconfig_1560 > 69) {
+				ivar4 = 0;
+			}
+			break;
+		case 14:
+			if ((arg0 == 19) && (getSkillActualLvl(arg0) == 49)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_44 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_44.intpart_1;
+				ivar3 = structdump_44.intpart_0;
+				svar0 = structdump_44.stringpart_0;
+			}
+			if ((arg0 == 15) && (getSkillActualLvl(arg0) == 57)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_45 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_45.intpart_1;
+				ivar3 = structdump_45.intpart_0;
+				svar0 = structdump_45.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_46 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_46.intpart_1;
+				ivar3 = structdump_46.intpart_0;
+				svar0 = structdump_46.stringpart_0;
+			}
+			if (bitconfig_2326 > 80) {
+				ivar4 = 0;
+			}
+			break;
+		case 15:
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_47 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_47.intpart_1;
+				ivar3 = structdump_47.intpart_0;
+				svar0 = structdump_47.stringpart_0;
+			}
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 59)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_48 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_48.intpart_1;
+				ivar3 = structdump_48.intpart_0;
+				svar0 = structdump_48.stringpart_0;
+			}
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_49 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_49.intpart_1;
+				ivar3 = structdump_49.intpart_0;
+				svar0 = structdump_49.stringpart_0;
+			}
+			if ((arg0 == 13) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_50 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_50.intpart_1;
+				ivar3 = structdump_50.intpart_0;
+				svar0 = structdump_50.stringpart_0;
+			}
+			if (standart_config_148 == 11) {
+				ivar4 = 0;
+			}
+			break;
+		case 16:
+			if ((arg0 == 10) && (getSkillActualLvl(arg0) == 10)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_51 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_51.intpart_1;
+				ivar3 = structdump_51.intpart_0;
+				svar0 = structdump_51.stringpart_0;
+			}
+			if (standart_config_11 == 5) {
+				ivar4 = 0;
+			}
+			break;
+		case 17:
+			if ((arg0 == 7) && (getSkillActualLvl(arg0) == 22)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_52 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_52.intpart_1;
+				ivar3 = structdump_52.intpart_0;
+				svar0 = structdump_52.stringpart_0;
+			}
+			if ((arg0 == 19) && (getSkillActualLvl(arg0) == 17)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_53 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_53.intpart_1;
+				ivar3 = structdump_53.intpart_0;
+				svar0 = structdump_53.stringpart_0;
+			}
+			if (bitconfig_822 >= 140) {
+				ivar4 = 0;
+			}
+			break;
+		case 18:
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_54 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_54.intpart_1;
+				ivar3 = structdump_54.intpart_0;
+				svar0 = structdump_54.stringpart_0;
+			}
+			if ((arg0 == 9) && (getSkillActualLvl(arg0) == 25)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_55 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_55.intpart_1;
+				ivar3 = structdump_55.intpart_0;
+				svar0 = structdump_55.stringpart_0;
+			}
+			if ((arg0 == 8) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_56 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_56.intpart_1;
+				ivar3 = structdump_56.intpart_0;
+				svar0 = structdump_56.stringpart_0;
+			}
+			if (standart_config_347 > 9) {
+				ivar4 = 0;
+			}
+			break;
+		case 19:
+			if ((arg0 == 19) && (getSkillActualLvl(arg0) == 25)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_57 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_57.intpart_1;
+				ivar3 = structdump_57.intpart_0;
+				svar0 = structdump_57.stringpart_0;
+			}
+			if (bitconfig_961 == 60) {
+				ivar4 = 0;
+			}
+			break;
+		case 20:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 25)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_58 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_58.intpart_1;
+				ivar3 = structdump_58.intpart_0;
+				svar0 = structdump_58.stringpart_0;
+			}
+			if ((arg0 == 7) && (getSkillActualLvl(arg0) == 20)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_59 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_59.intpart_1;
+				ivar3 = structdump_59.intpart_0;
+				svar0 = structdump_59.stringpart_0;
+			}
+			if (bitconfig_217 > 7) {
+				ivar4 = 0;
+			}
+			break;
+		case 21:
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 12)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_60 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_60.intpart_1;
+				ivar3 = structdump_60.intpart_0;
+				svar0 = structdump_60.stringpart_0;
+			}
+			if ((arg0 == 11) && (getSkillActualLvl(arg0) == 16)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_61 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_61.intpart_1;
+				ivar3 = structdump_61.intpart_0;
+				svar0 = structdump_61.stringpart_0;
+			}
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 33)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_62 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_62.intpart_1;
+				ivar3 = structdump_62.intpart_0;
+				svar0 = structdump_62.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 14)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_63 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_63.intpart_1;
+				ivar3 = structdump_63.intpart_0;
+				svar0 = structdump_63.stringpart_0;
+			}
+			if (bitconfig_571 > 49) {
+				ivar4 = 0;
+			}
+			break;
+		case 22:
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 20)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_64 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_64.intpart_1;
+				ivar3 = structdump_64.intpart_0;
+				svar0 = structdump_64.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 25)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_65 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_65.intpart_1;
+				ivar3 = structdump_65.intpart_0;
+				svar0 = structdump_65.stringpart_0;
+			}
+			if (bitconfig_346 > 9) {
+				ivar4 = 0;
+			}
+			break;
+		case 23:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 25)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_66 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_66.intpart_1;
+				ivar3 = structdump_66.intpart_0;
+				svar0 = structdump_66.stringpart_0;
+			}
+			if (standart_config_150 >= 160) {
+				ivar4 = 0;
+			}
+			break;
+		case 24:
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 49)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_67 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_67.intpart_1;
+				ivar3 = structdump_67.intpart_0;
+				svar0 = structdump_67.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 17)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_68 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_68.intpart_1;
+				ivar3 = structdump_68.intpart_0;
+				svar0 = structdump_68.stringpart_0;
+			}
+			if (bitconfig_1527 > 159) {
+				ivar4 = 0;
+			}
+			break;
+		case 25:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 15)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_69 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_69.intpart_1;
+				ivar3 = structdump_69.intpart_0;
+				svar0 = structdump_69.stringpart_0;
+			}
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 35)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_70 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_70.intpart_1;
+				ivar3 = structdump_70.intpart_0;
+				svar0 = structdump_70.stringpart_0;
+			}
+			if (standart_config_382 == 11) {
+				ivar4 = 0;
+			}
+			break;
+		case 26:
+			if ((arg0 == 7) && (getSkillActualLvl(arg0) == 53)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_71 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_71.intpart_1;
+				ivar3 = structdump_71.intpart_0;
+				svar0 = structdump_71.stringpart_0;
+			}
+			if ((arg0 == 10) && (getSkillActualLvl(arg0) == 53)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_72 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_72.intpart_1;
+				ivar3 = structdump_72.intpart_0;
+				svar0 = structdump_72.stringpart_0;
+			}
+			if ((arg0 == 15) && (getSkillActualLvl(arg0) == 25)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_73 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_73.intpart_1;
+				ivar3 = structdump_73.intpart_0;
+				svar0 = structdump_73.stringpart_0;
+			}
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_74 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_74.intpart_1;
+				ivar3 = structdump_74.intpart_0;
+				svar0 = structdump_74.stringpart_0;
+			}
+			if (standart_config_188 == 15) {
+				ivar4 = 0;
+			}
+			break;
+		case 27:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 35)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_75 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_75.intpart_1;
+				ivar3 = structdump_75.intpart_0;
+				svar0 = structdump_75.stringpart_0;
+			}
+			if (bitconfig_34 > 9) {
+				ivar4 = 0;
+			}
+			break;
+		case 28:
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 25)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_76 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_76.intpart_1;
+				ivar3 = structdump_76.intpart_0;
+				svar0 = structdump_76.stringpart_0;
+			}
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 7)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_77 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_77.intpart_1;
+				ivar3 = structdump_77.intpart_0;
+				svar0 = structdump_77.stringpart_0;
+			}
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 15)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_78 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_78.intpart_1;
+				ivar3 = structdump_78.intpart_0;
+				svar0 = structdump_78.stringpart_0;
+			}
+			if (bitconfig_1990 > 420) {
+				ivar4 = 0;
+			}
+			break;
+		case 29:
+			if ((arg0 == 15) && (getSkillActualLvl(arg0) == 3)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_79 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_79.intpart_1;
+				ivar3 = structdump_79.intpart_0;
+				svar0 = structdump_79.stringpart_0;
+			}
+			if (standart_config_175 > 11) {
+				ivar4 = 0;
+			}
+			break;
+		case 30:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_80 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_80.intpart_1;
+				ivar3 = structdump_80.intpart_0;
+				svar0 = structdump_80.stringpart_0;
+			}
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_81 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_81.intpart_1;
+				ivar3 = structdump_81.intpart_0;
+				svar0 = structdump_81.stringpart_0;
+			}
+			if ((arg0 == 15) && (getSkillActualLvl(arg0) == 45)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_82 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_82.intpart_1;
+				ivar3 = structdump_82.intpart_0;
+				svar0 = structdump_82.stringpart_0;
+			}
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 56)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_83 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_83.intpart_1;
+				ivar3 = structdump_83.intpart_0;
+				svar0 = structdump_83.stringpart_0;
+			}
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 52)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_84 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_84.intpart_1;
+				ivar3 = structdump_84.intpart_0;
+				svar0 = structdump_84.stringpart_0;
+			}
+			if ((arg0 == 5) && (getSkillActualLvl(arg0) == 42)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_85 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_85.intpart_1;
+				ivar3 = structdump_85.intpart_0;
+				svar0 = structdump_85.stringpart_0;
+			}
+			if ((arg0 == 13) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_86 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_86.intpart_1;
+				ivar3 = structdump_86.intpart_0;
+				svar0 = structdump_86.stringpart_0;
+			}
+			if ((arg0 == 2) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_87 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_87.intpart_1;
+				ivar3 = structdump_87.intpart_0;
+				svar0 = structdump_87.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_88 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_88.intpart_1;
+				ivar3 = structdump_88.intpart_0;
+				svar0 = structdump_88.stringpart_0;
+			}
+			if ((arg0 == 8) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_89 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_89.intpart_1;
+				ivar3 = structdump_89.intpart_0;
+				svar0 = structdump_89.stringpart_0;
+			}
+			if (standart_config_139 == 75) {
+				ivar4 = 0;
+			}
+			break;
+		case 31:
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 31)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_90 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_90.intpart_1;
+				ivar3 = structdump_90.intpart_0;
+				svar0 = structdump_90.stringpart_0;
+			}
+			if ((arg0 == 8) && (getSkillActualLvl(arg0) == 36)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_91 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_91.intpart_1;
+				ivar3 = structdump_91.intpart_0;
+				svar0 = structdump_91.stringpart_0;
+			}
+			if (standart_config_147 == 6) {
+				ivar4 = 0;
+			}
+			break;
+		case 32:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 13)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_92 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_92.intpart_1;
+				ivar3 = structdump_92.intpart_0;
+				svar0 = structdump_92.stringpart_0;
+			}
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 17)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_93 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_93.intpart_1;
+				ivar3 = structdump_93.intpart_0;
+				svar0 = structdump_93.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 13)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_94 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_94.intpart_1;
+				ivar3 = structdump_94.intpart_0;
+				svar0 = structdump_94.stringpart_0;
+			}
+			if (bitconfig_532 > 10) {
+				ivar4 = 0;
+			}
+			break;
+		case 33:
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 61)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_95 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_95.intpart_1;
+				ivar3 = structdump_95.intpart_0;
+				svar0 = structdump_95.stringpart_0;
+			}
+			if (((boolean)arg0) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_96 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_96.intpart_1;
+				ivar3 = structdump_96.intpart_0;
+				svar0 = structdump_96.stringpart_0;
+			}
+			if ((arg0 == 11) && (getSkillActualLvl(arg0) == 49)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_97 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_97.intpart_1;
+				ivar3 = structdump_97.intpart_0;
+				svar0 = structdump_97.stringpart_0;
+			}
+			if ((arg0 == 15) && (getSkillActualLvl(arg0) == 5)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_98 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_98.intpart_1;
+				ivar3 = structdump_98.intpart_0;
+				svar0 = structdump_98.stringpart_0;
+			}
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 65)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_99 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_99.intpart_1;
+				ivar3 = structdump_99.intpart_0;
+				svar0 = structdump_99.stringpart_0;
+			}
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 60)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_100 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_100.intpart_1;
+				ivar3 = structdump_100.intpart_0;
+				svar0 = structdump_100.stringpart_0;
+			}
+			if ((arg0 == 8) && (getSkillActualLvl(arg0) == 55)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_101 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_101.intpart_1;
+				ivar3 = structdump_101.intpart_0;
+				svar0 = structdump_101.stringpart_0;
+			}
+			if (bitconfig_2448 == 190) {
+				ivar4 = 0;
+			}
+			break;
+		case 34:
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 20)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_102 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_102.intpart_1;
+				ivar3 = structdump_102.intpart_0;
+				svar0 = structdump_102.stringpart_0;
+			}
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 7)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_103 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_103.intpart_1;
+				ivar3 = structdump_103.intpart_0;
+				svar0 = structdump_103.stringpart_0;
+			}
+			if ((arg0 == 13) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_104 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_104.intpart_1;
+				ivar3 = structdump_104.intpart_0;
+				svar0 = structdump_104.stringpart_0;
+			}
+			if (bitconfig_1383 > 3) {
+				ivar4 = 0;
+			}
+			break;
+		case 35:
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 30)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_105 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_105.intpart_1;
+				ivar3 = structdump_105.intpart_0;
+				svar0 = structdump_105.stringpart_0;
+			}
+			if (bitconfig_334 > 27) {
+				ivar4 = 0;
+			}
+			break;
+		case 36:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 20)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_106 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_106.intpart_1;
+				ivar3 = structdump_106.intpart_0;
+				svar0 = structdump_106.stringpart_0;
+			}
+			if (bitconfig_260 > 69) {
+				ivar4 = 0;
+			}
+			break;
+		case 37:
+			if ((arg0 == 4) && (getSkillActualLvl(arg0) == 60)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_107 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_107.intpart_1;
+				ivar3 = structdump_107.intpart_0;
+				svar0 = structdump_107.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_108 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_108.intpart_1;
+				ivar3 = structdump_108.intpart_0;
+				svar0 = structdump_108.stringpart_0;
+			}
+			if (standart_config_517 > 7) {
+				ivar4 = 0;
+			}
+			break;
+		case 38:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 25)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_109 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_109.intpart_1;
+				ivar3 = structdump_109.intpart_0;
+				svar0 = structdump_109.stringpart_0;
+			}
+			if (standart_config_387 > 100) {
+				ivar4 = 0;
+			}
+			break;
+		case 39:
+			if ((arg0 == 19) && (getSkillActualLvl(arg0) == 29)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_110 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_110.intpart_1;
+				ivar3 = structdump_110.intpart_0;
+				svar0 = structdump_110.stringpart_0;
+			}
+			if ((arg0 == 8) && (getSkillActualLvl(arg0) == 10)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_111 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_111.intpart_1;
+				ivar3 = structdump_111.intpart_0;
+				svar0 = structdump_111.stringpart_0;
+			}
+			if (bitconfig_2790 > 310) {
+				ivar4 = 0;
+			}
+			break;
+		case 40:
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 18)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_112 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_112.intpart_1;
+				ivar3 = structdump_112.intpart_0;
+				svar0 = structdump_112.stringpart_0;
+			}
+			if (standart_config_307 == 110) {
+				ivar4 = 0;
+			}
+			break;
+		case 41:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 36)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_113 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_113.intpart_1;
+				ivar3 = structdump_113.intpart_0;
+				svar0 = structdump_113.stringpart_0;
+			}
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 25)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_114 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_114.intpart_1;
+				ivar3 = structdump_114.intpart_0;
+				svar0 = structdump_114.stringpart_0;
+			}
+			if ((arg0 == 15) && (getSkillActualLvl(arg0) == 18)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_115 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_115.intpart_1;
+				ivar3 = structdump_115.intpart_0;
+				svar0 = structdump_115.stringpart_0;
+			}
+			if ((arg0 == 13) && (getSkillActualLvl(arg0) == 30)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_116 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_116.intpart_1;
+				ivar3 = structdump_116.intpart_0;
+				svar0 = structdump_116.stringpart_0;
+			}
+			if (standart_config_416 > 275) {
+				ivar4 = 0;
+			}
+			break;
+		case 42:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 56)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_117 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_117.intpart_1;
+				ivar3 = structdump_117.intpart_0;
+				svar0 = structdump_117.stringpart_0;
+			}
+			if (standart_config_328 > 14) {
+				ivar4 = 0;
+			}
+			break;
+		case 43:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_118 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_118.intpart_1;
+				ivar3 = structdump_118.intpart_0;
+				svar0 = structdump_118.stringpart_0;
+			}
+			if ((arg0 == 18) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_119 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_119.intpart_1;
+				ivar3 = structdump_119.intpart_0;
+				svar0 = structdump_119.stringpart_0;
+			}
+			if (bitconfig_2140 > 20) {
+				ivar4 = 0;
+			}
+			break;
+		case 44:
+			if ((arg0 == 5) && (getSkillActualLvl(arg0) == 31)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_120 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_120.intpart_1;
+				ivar3 = structdump_120.intpart_0;
+				svar0 = structdump_120.stringpart_0;
+			}
+			if (standart_config_76 == 6) {
+				ivar4 = 0;
+			}
+			break;
+		case 45:
+			if ((arg0 == 11) && (getSkillActualLvl(arg0) == 30)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_121 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_121.intpart_1;
+				ivar3 = structdump_121.intpart_0;
+				svar0 = structdump_121.stringpart_0;
+			}
+			if (standart_config_159 >= 12) {
+				ivar4 = 0;
+			}
+			break;
+		case 46:
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 20)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_122 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_122.intpart_1;
+				ivar3 = structdump_122.intpart_0;
+				svar0 = structdump_122.stringpart_0;
+			}
+			if ((arg0 == 15) && (getSkillActualLvl(arg0) == 15)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_123 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_123.intpart_1;
+				ivar3 = structdump_123.intpart_0;
+				svar0 = structdump_123.stringpart_0;
+			}
+			if (standart_config_339 == 85) {
+				ivar4 = 0;
+			}
+			break;
+		case 47:
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 30)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_124 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_124.intpart_1;
+				ivar3 = structdump_124.intpart_0;
+				svar0 = structdump_124.stringpart_0;
+			}
+			if (bitconfig_1372 > 124) {
+				ivar4 = 0;
+			}
+			break;
+		case 48:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 32)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_125 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_125.intpart_1;
+				ivar3 = structdump_125.intpart_0;
+				svar0 = structdump_125.stringpart_0;
+			}
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 20)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_126 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_126.intpart_1;
+				ivar3 = structdump_126.intpart_0;
+				svar0 = structdump_126.stringpart_0;
+			}
+			if (standart_config_116 > 14) {
+				ivar4 = 0;
+			}
+			break;
+		case 49:
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 33)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_127 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_127.intpart_1;
+				ivar3 = structdump_127.intpart_0;
+				svar0 = structdump_127.stringpart_0;
+			}
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 37)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_128 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_128.intpart_1;
+				ivar3 = structdump_128.intpart_0;
+				svar0 = structdump_128.stringpart_0;
+			}
+			if ((arg0 == 4) && (getSkillActualLvl(arg0) == 37)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_129 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_129.intpart_1;
+				ivar3 = structdump_129.intpart_0;
+				svar0 = structdump_129.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 37)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_130 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_130.intpart_1;
+				ivar3 = structdump_130.intpart_0;
+				svar0 = structdump_130.stringpart_0;
+			}
+			if (bitconfig_1444 > 59) {
+				ivar4 = 0;
+			}
+			break;
+		case 50:
+			if ((arg0 == 7) && (getSkillActualLvl(arg0) == 62)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_131 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_131.intpart_1;
+				ivar3 = structdump_131.intpart_0;
+				svar0 = structdump_131.stringpart_0;
+			}
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_132 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_132.intpart_1;
+				ivar3 = structdump_132.intpart_0;
+				svar0 = structdump_132.stringpart_0;
+			}
+			if ((arg0 == 11) && (getSkillActualLvl(arg0) == 42)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_133 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_133.intpart_1;
+				ivar3 = structdump_133.intpart_0;
+				svar0 = structdump_133.stringpart_0;
+			}
+			if ((arg0 == 10) && (getSkillActualLvl(arg0) == 62)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_134 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_134.intpart_1;
+				ivar3 = structdump_134.intpart_0;
+				svar0 = structdump_134.stringpart_0;
+			}
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 66)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_135 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_135.intpart_1;
+				ivar3 = structdump_135.intpart_0;
+				svar0 = structdump_135.stringpart_0;
+			}
+			if ((arg0 == 13) && (getSkillActualLvl(arg0) == 45)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_136 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_136.intpart_1;
+				ivar3 = structdump_136.intpart_0;
+				svar0 = structdump_136.stringpart_0;
+			}
+			if (bitconfig_2098 >= 200) {
+				ivar4 = 0;
+			}
+			break;
+		case 51:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 15)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_137 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_137.intpart_1;
+				ivar3 = structdump_137.intpart_0;
+				svar0 = structdump_137.stringpart_0;
+			}
+			if ((arg0 == 7) && (getSkillActualLvl(arg0) == 30)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_138 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_138.intpart_1;
+				ivar3 = structdump_138.intpart_0;
+				svar0 = structdump_138.stringpart_0;
+			}
+			if ((arg0 == 10) && (getSkillActualLvl(arg0) == 5)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_139 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_139.intpart_1;
+				ivar3 = structdump_139.intpart_0;
+				svar0 = structdump_139.stringpart_0;
+			}
+			if (standart_config_320 == 6) {
+				ivar4 = 0;
+			}
+			break;
+		case 52:
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 20)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_140 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_140.intpart_1;
+				ivar3 = structdump_140.intpart_0;
+				svar0 = structdump_140.stringpart_0;
+			}
+			if ((arg0 == 11) && (getSkillActualLvl(arg0) == 49)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_141 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_141.intpart_1;
+				ivar3 = structdump_141.intpart_0;
+				svar0 = structdump_141.stringpart_0;
+			}
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 20)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_142 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_142.intpart_1;
+				ivar3 = structdump_142.intpart_0;
+				svar0 = structdump_142.stringpart_0;
+			}
+			if (bitconfig_451 > 1) {
+				ivar4 = 0;
+			}
+			break;
+		case 53:
+			if ((arg0 == 4) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_143 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_143.intpart_1;
+				ivar3 = structdump_143.intpart_0;
+				svar0 = structdump_143.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 42)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_144 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_144.intpart_1;
+				ivar3 = structdump_144.intpart_0;
+				svar0 = structdump_144.stringpart_0;
+			}
+			if ((standart_config_26 == 80) || (standart_config_26 == 90)) {
+				ivar4 = 0;
+			}
+			break;
+		case 54:
+			if ((arg0 == 9) && (getSkillActualLvl(arg0) == 10)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_145 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_145.intpart_1;
+				ivar3 = structdump_145.intpart_0;
+				svar0 = structdump_145.stringpart_0;
+			}
+			if ((arg0 == 13) && (getSkillActualLvl(arg0) == 20)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_146 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_146.intpart_1;
+				ivar3 = structdump_146.intpart_0;
+				svar0 = structdump_146.stringpart_0;
+			}
+			if (standart_config_197 == 30) {
+				ivar4 = 0;
+			}
+			break;
+		case 55:
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 21)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_147 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_147.intpart_1;
+				ivar3 = structdump_147.intpart_0;
+				svar0 = structdump_147.stringpart_0;
+			}
+			if (standart_config_200 == 5) {
+				ivar4 = 0;
+			}
+			break;
+		case 56:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 28)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_148 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_148.intpart_1;
+				ivar3 = structdump_148.intpart_0;
+				svar0 = structdump_148.stringpart_0;
+			}
+			if (standart_config_385 > 44) {
+				ivar4 = 0;
+			}
+			break;
+		case 57:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 15)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_149 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_149.intpart_1;
+				ivar3 = structdump_149.intpart_0;
+				svar0 = structdump_149.stringpart_0;
+			}
+			if (standart_config_317 == 50) {
+				ivar4 = 0;
+			}
+			break;
+		case 58:
+			if ((arg0 == 4) && (getSkillActualLvl(arg0) == 25)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_150 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_150.intpart_1;
+				ivar3 = structdump_150.intpart_0;
+				svar0 = structdump_150.stringpart_0;
+			}
+			if (standart_config_161 == 10) {
+				ivar4 = 0;
+			}
+			break;
+		case 59:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 25)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_151 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_151.intpart_1;
+				ivar3 = structdump_151.intpart_0;
+				svar0 = structdump_151.stringpart_0;
+			}
+			if ((arg0 == 15) && (getSkillActualLvl(arg0) == 14)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_152 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_152.intpart_1;
+				ivar3 = structdump_152.intpart_0;
+				svar0 = structdump_152.stringpart_0;
+			}
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 14)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_153 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_153.intpart_1;
+				ivar3 = structdump_153.intpart_0;
+				svar0 = structdump_153.stringpart_0;
+			}
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_154 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_154.intpart_1;
+				ivar3 = structdump_154.intpart_0;
+				svar0 = structdump_154.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 15)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_155 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_155.intpart_1;
+				ivar3 = structdump_155.intpart_0;
+				svar0 = structdump_155.stringpart_0;
+			}
+			if (standart_config_212 > 12) {
+				ivar4 = 0;
+			}
+			break;
+		case 60:
+			if (((boolean)arg0) && (getSkillActualLvl(arg0) == 20)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_156 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_156.intpart_1;
+				ivar3 = structdump_156.intpart_0;
+				svar0 = structdump_156.stringpart_0;
+			}
+			if (standart_config_5 == 10) {
+				ivar4 = 0;
+			}
+			break;
+		case 61:
+			if ((arg0 == 22) && (getSkillActualLvl(arg0) == 5)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_157 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_157.intpart_1;
+				ivar3 = structdump_157.intpart_0;
+				svar0 = structdump_157.stringpart_0;
+			}
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 46)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_158 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_158.intpart_1;
+				ivar3 = structdump_158.intpart_0;
+				svar0 = structdump_158.stringpart_0;
+			}
+			if (bitconfig_2497 == 60) {
+				ivar4 = 0;
+			}
+			break;
+		case 62:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 23)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_159 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_159.intpart_1;
+				ivar3 = structdump_159.intpart_0;
+				svar0 = structdump_159.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 23)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_160 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_160.intpart_1;
+				ivar3 = structdump_160.intpart_0;
+				svar0 = structdump_160.stringpart_0;
+			}
+			if (bitconfig_2258 == 13) {
+				ivar4 = 0;
+			}
+			break;
+		case 63:
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 19)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_161 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_161.intpart_1;
+				ivar3 = structdump_161.intpart_0;
+				svar0 = structdump_161.stringpart_0;
+			}
+			if ((arg0 == 4) && (getSkillActualLvl(arg0) == 30)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_162 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_162.intpart_1;
+				ivar3 = structdump_162.intpart_0;
+				svar0 = structdump_162.stringpart_0;
+			}
+			if ((arg0 == 18) && (getSkillActualLvl(arg0) == 18)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_163 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_163.intpart_1;
+				ivar3 = structdump_163.intpart_0;
+				svar0 = structdump_163.stringpart_0;
+			}
+			if ((arg0 == 8) && (getSkillActualLvl(arg0) == 35)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_164 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_164.intpart_1;
+				ivar3 = structdump_164.intpart_0;
+				svar0 = structdump_164.stringpart_0;
+			}
+			if (bitconfig_3185 == 240) {
+				ivar4 = 0;
+			}
+			break;
+		case 64:
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 20)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_165 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_165.intpart_1;
+				ivar3 = structdump_165.intpart_0;
+				svar0 = structdump_165.stringpart_0;
+			}
+			if ((arg0 == 13) && (getSkillActualLvl(arg0) == 30)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_166 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_166.intpart_1;
+				ivar3 = structdump_166.intpart_0;
+				svar0 = structdump_166.stringpart_0;
+			}
+			if (bitconfig_2639 == 11) {
+				ivar4 = 0;
+			}
+			break;
+		case 65:
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 36)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_167 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_167.intpart_1;
+				ivar3 = structdump_167.intpart_0;
+				svar0 = structdump_167.stringpart_0;
+			}
+			if ((arg0 == 19) && (getSkillActualLvl(arg0) == 30)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_168 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_168.intpart_1;
+				ivar3 = structdump_168.intpart_0;
+				svar0 = structdump_168.stringpart_0;
+			}
+			if ((arg0 == 11) && (getSkillActualLvl(arg0) == 20)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_169 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_169.intpart_1;
+				ivar3 = structdump_169.intpart_0;
+				svar0 = structdump_169.stringpart_0;
+			}
+			if (bitconfig_2866 == 200) {
+				ivar4 = 0;
+			}
+			break;
+		case 66:
+			if ((arg0 == 22) && (getSkillActualLvl(arg0) == 30)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_170 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_170.intpart_1;
+				ivar3 = structdump_170.intpart_0;
+				svar0 = structdump_170.stringpart_0;
+			}
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 16)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_171 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_171.intpart_1;
+				ivar3 = structdump_171.intpart_0;
+				svar0 = structdump_171.stringpart_0;
+			}
+			if ((arg0 == 5) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_172 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_172.intpart_1;
+				ivar3 = structdump_172.intpart_0;
+				svar0 = structdump_172.stringpart_0;
+			}
+			if (standart_config_980 > 129) {
+				ivar4 = 0;
+			}
+			break;
+		case 67:
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 30)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_173 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_173.intpart_1;
+				ivar3 = structdump_173.intpart_0;
+				svar0 = structdump_173.stringpart_0;
+			}
+			if ((arg0 == 20) && (getSkillActualLvl(arg0) == 30)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_174 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_174.intpart_1;
+				ivar3 = structdump_174.intpart_0;
+				svar0 = structdump_174.stringpart_0;
+			}
+			if ((arg0 == 18) && (getSkillActualLvl(arg0) == 30)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_175 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_175.intpart_1;
+				ivar3 = structdump_175.intpart_0;
+				svar0 = structdump_175.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 30)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_176 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_176.intpart_1;
+				ivar3 = structdump_176.intpart_0;
+				svar0 = structdump_176.stringpart_0;
+			}
+			if (bitconfig_2610 >= 14) {
+				ivar4 = 0;
+			}
+			break;
+		case 68:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 30)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_177 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_177.intpart_1;
+				ivar3 = structdump_177.intpart_0;
+				svar0 = structdump_177.stringpart_0;
+			}
+			if ((arg0 == 22) && (getSkillActualLvl(arg0) == 34)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_178 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_178.intpart_1;
+				ivar3 = structdump_178.intpart_0;
+				svar0 = structdump_178.stringpart_0;
+			}
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 30)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_179 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_179.intpart_1;
+				ivar3 = structdump_179.intpart_0;
+				svar0 = structdump_179.stringpart_0;
+			}
+			if ((arg0 == 21) && (getSkillActualLvl(arg0) == 10)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_180 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_180.intpart_1;
+				ivar3 = structdump_180.intpart_0;
+				svar0 = structdump_180.stringpart_0;
+			}
+			if (bitconfig_3293 == 135) {
+				ivar4 = 0;
+			}
+			break;
+		case 69:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_181 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_181.intpart_1;
+				ivar3 = structdump_181.intpart_0;
+				svar0 = structdump_181.stringpart_0;
+			}
+			if ((arg0 == 22) && (getSkillActualLvl(arg0) == 20)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_182 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_182.intpart_1;
+				ivar3 = structdump_182.intpart_0;
+				svar0 = structdump_182.stringpart_0;
+			}
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 46)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_183 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_183.intpart_1;
+				ivar3 = structdump_183.intpart_0;
+				svar0 = structdump_183.stringpart_0;
+			}
+			if ((arg0 == 8) && (getSkillActualLvl(arg0) == 56)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_184 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_184.intpart_1;
+				ivar3 = structdump_184.intpart_0;
+				svar0 = structdump_184.stringpart_0;
+			}
+			if (bitconfig_3311 == 340) {
+				ivar4 = 0;
+			}
+			break;
+		case 70:
+			if ((arg0 == 22) && (getSkillActualLvl(arg0) == 10)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_185 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_185.intpart_1;
+				ivar3 = structdump_185.intpart_0;
+				svar0 = structdump_185.stringpart_0;
+			}
+			if (bitconfig_3337 == 18) {
+				ivar4 = 0;
+			}
+			break;
+		case 71:
+			if ((arg0 == 20) && (getSkillActualLvl(arg0) == 35)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_186 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_186.intpart_1;
+				ivar3 = structdump_186.intpart_0;
+				svar0 = structdump_186.stringpart_0;
+			}
+			if (bitconfig_3523 > 149) {
+				ivar4 = 0;
+			}
+			break;
+		case 72:
+			if ((arg0 == 11) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_187 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				stack_dump0 = structdump_187.intpart_0;
+				stack_dump1 = structdump_187.intpart_1;
+				structdump_187.stringpart_0;
+				stack_dump0 = stack_dump0;
+				stack_dump1;
+				stack_dump0;
+			}
+			if ((arg0 == 8) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_188 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_188.intpart_1;
+				ivar3 = structdump_188.intpart_0;
+				svar0 = structdump_188.stringpart_0;
+			}
+			if (bitconfig_3534 == 80) {
+				ivar4 = 0;
+			}
+			break;
+		case 73:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 59)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_189 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_189.intpart_1;
+				ivar3 = structdump_189.intpart_0;
+				svar0 = structdump_189.stringpart_0;
+			}
+			if ((arg0 == 19) && (getSkillActualLvl(arg0) == 45)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_190 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_190.intpart_1;
+				ivar3 = structdump_190.intpart_0;
+				svar0 = structdump_190.stringpart_0;
+			}
+			if ((arg0 == 15) && (getSkillActualLvl(arg0) == 52)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_191 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_191.intpart_1;
+				ivar3 = structdump_191.intpart_0;
+				svar0 = structdump_191.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 58)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_192 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_192.intpart_1;
+				ivar3 = structdump_192.intpart_0;
+				svar0 = structdump_192.stringpart_0;
+			}
+			if ((arg0 == 8) && (getSkillActualLvl(arg0) == 71)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_193 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_193.intpart_1;
+				ivar3 = structdump_193.intpart_0;
+				svar0 = structdump_193.stringpart_0;
+			}
+			if (bitconfig_2783 == 60) {
+				ivar4 = 0;
+			}
+			break;
+		case 74:
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 45)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_194 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_194.intpart_1;
+				ivar3 = structdump_194.intpart_0;
+				svar0 = structdump_194.stringpart_0;
+			}
+			if (((boolean)arg0) && (getSkillActualLvl(arg0) == 65)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_195 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_195.intpart_1;
+				ivar3 = structdump_195.intpart_0;
+				svar0 = structdump_195.stringpart_0;
+			}
+			if (bitconfig_3888 == 90) {
+				ivar4 = 0;
+			}
+			break;
+		case 75:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 45)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_196 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_196.intpart_1;
+				ivar3 = structdump_196.intpart_0;
+				svar0 = structdump_196.stringpart_0;
+			}
+			if ((arg0 == 4) && (getSkillActualLvl(arg0) == 47)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_197 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_197.intpart_1;
+				ivar3 = structdump_197.intpart_0;
+				svar0 = structdump_197.stringpart_0;
+			}
+			if ((arg0 == 18) && (getSkillActualLvl(arg0) == 56)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_198 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_198.intpart_1;
+				ivar3 = structdump_198.intpart_0;
+				svar0 = structdump_198.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 56)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_199 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_199.intpart_1;
+				ivar3 = structdump_199.intpart_0;
+				svar0 = structdump_199.stringpart_0;
+			}
+			if ((arg0 == 2) && (getSkillActualLvl(arg0) == 60)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_200 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_200.intpart_1;
+				ivar3 = structdump_200.intpart_0;
+				svar0 = structdump_200.stringpart_0;
+			}
+			if (bitconfig_3954 == 200) {
+				ivar4 = 0;
+			}
+			break;
+		case 76:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 55)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_201 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_201.intpart_1;
+				ivar3 = structdump_201.intpart_0;
+				svar0 = structdump_201.stringpart_0;
+			}
+			if ((arg0 == 19) && (getSkillActualLvl(arg0) == 53)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_202 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_202.intpart_1;
+				ivar3 = structdump_202.intpart_0;
+				svar0 = structdump_202.stringpart_0;
+			}
+			if ((arg0 == 18) && (getSkillActualLvl(arg0) == 59)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_203 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_203.intpart_1;
+				ivar3 = structdump_203.intpart_0;
+				svar0 = structdump_203.stringpart_0;
+			}
+			if ((arg0 == 8) && (getSkillActualLvl(arg0) == 72)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_204 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_204.intpart_1;
+				ivar3 = structdump_204.intpart_0;
+				svar0 = structdump_204.stringpart_0;
+			}
+			if (bitconfig_4055 == 65) {
+				ivar4 = 0;
+			}
+			break;
+		case 77:
+			if ((arg0 == 5) && (getSkillActualLvl(arg0) == 30)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_205 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_205.intpart_1;
+				ivar3 = structdump_205.intpart_0;
+				svar0 = structdump_205.stringpart_0;
+			}
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 36)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_206 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_206.intpart_1;
+				ivar3 = structdump_206.intpart_0;
+				svar0 = structdump_206.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 36)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_207 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_207.intpart_1;
+				ivar3 = structdump_207.intpart_0;
+				svar0 = structdump_207.stringpart_0;
+			}
+			if ((arg0 == 10) && (getSkillActualLvl(arg0) == 36)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_208 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_208.intpart_1;
+				ivar3 = structdump_208.intpart_0;
+				svar0 = structdump_208.stringpart_0;
+			}
+			if ((arg0 == 15) && (getSkillActualLvl(arg0) == 37)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_209 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_209.intpart_1;
+				ivar3 = structdump_209.intpart_0;
+				svar0 = structdump_209.stringpart_0;
+			}
+			if (bitconfig_4105 == 18) {
+				ivar4 = 0;
+			}
+			break;
+		case 78:
+			if ((arg0 == 7) && (getSkillActualLvl(arg0) == 10)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_210 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_210.intpart_1;
+				ivar3 = structdump_210.intpart_0;
+				svar0 = structdump_210.stringpart_0;
+			}
+			if (((boolean)bitconfig_1850)) {
+				ivar4 = 0;
+			}
+			break;
+		case 79:
+			if ((arg0 == 7) && (getSkillActualLvl(arg0) == 31)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_211 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_211.intpart_1;
+				ivar3 = structdump_211.intpart_0;
+				svar0 = structdump_211.stringpart_0;
+			}
+			if (bitconfig_1895 == 110) {
+				ivar4 = 0;
+			}
+			break;
+		case 80:
+			if ((arg0 == 7) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_212 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_212.intpart_1;
+				ivar3 = structdump_212.intpart_0;
+				svar0 = structdump_212.stringpart_0;
+			}
+			if (bitconfig_1896 == 5) {
+				ivar4 = 0;
+			}
+			break;
+		case 81:
+			if ((arg0 == 7) && (getSkillActualLvl(arg0) == 25)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_213 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_213.intpart_1;
+				ivar3 = structdump_213.intpart_0;
+				svar0 = structdump_213.stringpart_0;
+			}
+			if (bitconfig_1878 == 5) {
+				ivar4 = 0;
+			}
+			break;
+		case 82:
+			if ((arg0 == 7) && (getSkillActualLvl(arg0) == 41)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_214 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_214.intpart_1;
+				ivar3 = structdump_214.intpart_0;
+				svar0 = structdump_214.stringpart_0;
+			}
+			if ((arg0 == 11) && (getSkillActualLvl(arg0) == 20)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_215 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_215.intpart_1;
+				ivar3 = structdump_215.intpart_0;
+				svar0 = structdump_215.stringpart_0;
+			}
+			if (bitconfig_1904 == 170) {
+				ivar4 = 0;
+			}
+			break;
+		case 83:
+			if ((arg0 == 7) && (getSkillActualLvl(arg0) == 70)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_216 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_216.intpart_1;
+				ivar3 = structdump_216.intpart_0;
+				svar0 = structdump_216.stringpart_0;
+			}
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 48)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_217 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_217.intpart_1;
+				ivar3 = structdump_217.intpart_0;
+				svar0 = structdump_217.stringpart_0;
+			}
+			if (bitconfig_1914 == 50) {
+				ivar4 = 0;
+			}
+			break;
+		case 84:
+			if ((arg0 == 21) && (getSkillActualLvl(arg0) == 48)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_218 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_218.intpart_1;
+				ivar3 = structdump_218.intpart_0;
+				svar0 = structdump_218.stringpart_0;
+			}
+			if ((arg0 == 11) && (getSkillActualLvl(arg0) == 51)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_219 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_219.intpart_1;
+				ivar3 = structdump_219.intpart_0;
+				svar0 = structdump_219.stringpart_0;
+			}
+			if ((arg0 == 8) && (getSkillActualLvl(arg0) == 58)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_220 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_220.intpart_1;
+				ivar3 = structdump_220.intpart_0;
+				svar0 = structdump_220.stringpart_0;
+			}
+			if (bitconfig_4321 == 200) {
+				ivar4 = 0;
+			}
+			break;
+		case 85:
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 46)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_221 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_221.intpart_1;
+				ivar3 = structdump_221.intpart_0;
+				svar0 = structdump_221.stringpart_0;
+			}
+			if (bitconfig_4505 == 100) {
+				ivar4 = 0;
+			}
+			break;
+		case 86:
+			if ((arg0 == 22) && (getSkillActualLvl(arg0) == 44)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_222 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_222.intpart_1;
+				ivar3 = structdump_222.intpart_0;
+				svar0 = structdump_222.stringpart_0;
+			}
+			if ((arg0 == 9) && (getSkillActualLvl(arg0) == 42)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_223 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_223.intpart_1;
+				ivar3 = structdump_223.intpart_0;
+				svar0 = structdump_223.stringpart_0;
+			}
+			if (bitconfig_4396 == 60) {
+				ivar4 = 0;
+			}
+			break;
+		case 87:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_224 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_224.intpart_1;
+				ivar3 = structdump_224.intpart_0;
+				svar0 = structdump_224.stringpart_0;
+			}
+			if ((arg0 == 11) && (getSkillActualLvl(arg0) == 21)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_225 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_225.intpart_1;
+				ivar3 = structdump_225.intpart_0;
+				svar0 = structdump_225.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 60)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_226 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_226.intpart_1;
+				ivar3 = structdump_226.intpart_0;
+				svar0 = structdump_226.stringpart_0;
+			}
+			if ((arg0 == 2) && (getSkillActualLvl(arg0) == 60)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_227 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_227.intpart_1;
+				ivar3 = structdump_227.intpart_0;
+				svar0 = structdump_227.stringpart_0;
+			}
+			if (bitconfig_4230 == 700) {
+				ivar4 = 0;
+			}
+			break;
+		case 88:
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 42)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_228 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_228.intpart_1;
+				ivar3 = structdump_228.intpart_0;
+				svar0 = structdump_228.stringpart_0;
+			}
+			if ((arg0 == 19) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_229 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_229.intpart_1;
+				ivar3 = structdump_229.intpart_0;
+				svar0 = structdump_229.stringpart_0;
+			}
+			if ((arg0 == 10) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_230 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_230.intpart_1;
+				ivar3 = structdump_230.intpart_0;
+				svar0 = structdump_230.stringpart_0;
+			}
+			if ((arg0 == 5) && (getSkillActualLvl(arg0) == 47)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_231 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_231.intpart_1;
+				ivar3 = structdump_231.intpart_0;
+				svar0 = structdump_231.stringpart_0;
+			}
+			if ((arg0 == 18) && (getSkillActualLvl(arg0) == 42)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_232 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_232.intpart_1;
+				ivar3 = structdump_232.intpart_0;
+				svar0 = structdump_232.stringpart_0;
+			}
+			if (standart_config_600 > 18) {
+				ivar4 = 0;
+			}
+			break;
+		case 89:
+			if ((arg0 == 22) && (getSkillActualLvl(arg0) == 20)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_233 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_233.intpart_1;
+				ivar3 = structdump_233.intpart_0;
+				svar0 = structdump_233.stringpart_0;
+			}
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 29)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_234 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_234.intpart_1;
+				ivar3 = structdump_234.intpart_0;
+				svar0 = structdump_234.stringpart_0;
+			}
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 47)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_235 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_235.intpart_1;
+				ivar3 = structdump_235.intpart_0;
+				svar0 = structdump_235.stringpart_0;
+			}
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 49)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_236 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_236.intpart_1;
+				ivar3 = structdump_236.intpart_0;
+				svar0 = structdump_236.stringpart_0;
+			}
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 35)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_237 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_237.intpart_1;
+				ivar3 = structdump_237.intpart_0;
+				svar0 = structdump_237.stringpart_0;
+			}
+			if ((arg0 == 18) && (getSkillActualLvl(arg0) == 31)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_238 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_238.intpart_1;
+				ivar3 = structdump_238.intpart_0;
+				svar0 = structdump_238.stringpart_0;
+			}
+			if ((arg0 == 11) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_239 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_239.intpart_1;
+				ivar3 = structdump_239.intpart_0;
+				svar0 = structdump_239.stringpart_0;
+			}
+			if (bitconfig_4569 == 500) {
+				ivar4 = 0;
+			}
+			break;
+		case 90:
+			if (((boolean)arg0) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_240 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_240.intpart_1;
+				ivar3 = structdump_240.intpart_0;
+				svar0 = structdump_240.stringpart_0;
+			}
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 41)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_241 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_241.intpart_1;
+				ivar3 = structdump_241.intpart_0;
+				svar0 = structdump_241.stringpart_0;
+			}
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 43)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_242 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_242.intpart_1;
+				ivar3 = structdump_242.intpart_0;
+				svar0 = structdump_242.stringpart_0;
+			}
+			if ((arg0 == 2) && (getSkillActualLvl(arg0) == 45)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_243 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_243.intpart_1;
+				ivar3 = structdump_243.intpart_0;
+				svar0 = structdump_243.stringpart_0;
+			}
+			if ((arg0 == 22) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_244 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_244.intpart_1;
+				ivar3 = structdump_244.intpart_0;
+				svar0 = structdump_244.stringpart_0;
+			}
+			if (bitconfig_4700 == 63) {
+				ivar4 = 0;
+			}
+			break;
+		case 91:
+			if ((arg0 == 22) && (getSkillActualLvl(arg0) == 10)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_245 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_245.intpart_1;
+				ivar3 = structdump_245.intpart_0;
+				svar0 = structdump_245.stringpart_0;
+			}
+			if ((arg0 == 19) && (getSkillActualLvl(arg0) == 10)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_246 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_246.intpart_1;
+				ivar3 = structdump_246.intpart_0;
+				svar0 = structdump_246.stringpart_0;
+			}
+			if ((arg0 == 21) && (getSkillActualLvl(arg0) == 10)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_247 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_247.intpart_1;
+				ivar3 = structdump_247.intpart_0;
+				svar0 = structdump_247.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 11)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_248 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_248.intpart_1;
+				ivar3 = structdump_248.intpart_0;
+				svar0 = structdump_248.stringpart_0;
+			}
+			if (bitconfig_4684 == 150) {
+				ivar4 = 0;
+			}
+			break;
+		case 92:
+			if ((arg0 == 18) && (getSkillActualLvl(arg0) == 35)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_249 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_249.intpart_1;
+				ivar3 = structdump_249.intpart_0;
+				svar0 = structdump_249.stringpart_0;
+			}
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 25)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_250 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_250.intpart_1;
+				ivar3 = structdump_250.intpart_0;
+				svar0 = structdump_250.stringpart_0;
+			}
+			if (bitconfig_4764 == 250) {
+				ivar4 = 0;
+			}
+			break;
+		case 93:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 60)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_251 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_251.intpart_1;
+				ivar3 = structdump_251.intpart_0;
+				svar0 = structdump_251.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 63)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_252 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_252.intpart_1;
+				ivar3 = structdump_252.intpart_0;
+				svar0 = structdump_252.stringpart_0;
+			}
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 66)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_253 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_253.intpart_1;
+				ivar3 = structdump_253.intpart_0;
+				svar0 = structdump_253.stringpart_0;
+			}
+			if ((arg0 == 13) && (getSkillActualLvl(arg0) == 69)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_254 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_254.intpart_1;
+				ivar3 = structdump_254.intpart_0;
+				svar0 = structdump_254.stringpart_0;
+			}
+			if (bitconfig_4797 == 100) {
+				ivar4 = 0;
+			}
+			break;
+		case 94:
+			if ((arg0 == 22) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_255 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_255.intpart_1;
+				ivar3 = structdump_255.intpart_0;
+				svar0 = structdump_255.stringpart_0;
+			}
+			if ((arg0 == 19) && (getSkillActualLvl(arg0) == 26)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_256 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_256.intpart_1;
+				ivar3 = structdump_256.intpart_0;
+				svar0 = structdump_256.stringpart_0;
+			}
+			if ((arg0 == 5) && (getSkillActualLvl(arg0) == 35)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_257 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_257.intpart_1;
+				ivar3 = structdump_257.intpart_0;
+				svar0 = structdump_257.stringpart_0;
+			}
+			if ((arg0 == 23) && (getSkillActualLvl(arg0) == 19)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_258 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_258.intpart_1;
+				ivar3 = structdump_258.intpart_0;
+				svar0 = structdump_258.stringpart_0;
+			}
+			if (bitconfig_5032 == 80) {
+				ivar4 = 0;
+			}
+			break;
+		case 95:
+			if ((arg0 == 11) && (getSkillActualLvl(arg0) == 43)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_259 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_259.intpart_1;
+				ivar3 = structdump_259.intpart_0;
+				svar0 = structdump_259.stringpart_0;
+			}
+			if (bitconfig_5133 >= 90) {
+				ivar4 = 0;
+			}
+			break;
+		case 96:
+			if ((arg0 == 11) && (getSkillActualLvl(arg0) == 47)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_260 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_260.intpart_1;
+				ivar3 = structdump_260.intpart_0;
+				svar0 = structdump_260.stringpart_0;
+			}
+			if ((arg0 == 21) && (getSkillActualLvl(arg0) == 35)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_261 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_261.intpart_1;
+				ivar3 = structdump_261.intpart_0;
+				svar0 = structdump_261.stringpart_0;
+			}
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 45)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_262 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_262.intpart_1;
+				ivar3 = structdump_262.intpart_0;
+				svar0 = structdump_262.stringpart_0;
+			}
+			if ((arg0 == 5) && (getSkillActualLvl(arg0) == 55)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_263 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_263.intpart_1;
+				ivar3 = structdump_263.intpart_0;
+				svar0 = structdump_263.stringpart_0;
+			}
+			if ((arg0 == 23) && (getSkillActualLvl(arg0) == 23)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_264 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_264.intpart_1;
+				ivar3 = structdump_264.intpart_0;
+				svar0 = structdump_264.stringpart_0;
+			}
+			if ((arg0 == 8) && (getSkillActualLvl(arg0) == 37)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_265 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_265.intpart_1;
+				ivar3 = structdump_265.intpart_0;
+				svar0 = structdump_265.stringpart_0;
+			}
+			if (bitconfig_5331 == 35) {
+				ivar4 = 0;
+			}
+			break;
+		case 97:
+			if ((arg0 == 21) && (getSkillActualLvl(arg0) == 51)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_266 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_266.intpart_1;
+				ivar3 = structdump_266.intpart_0;
+				svar0 = structdump_266.stringpart_0;
+			}
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 51)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_267 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_267.intpart_1;
+				ivar3 = structdump_267.intpart_0;
+				svar0 = structdump_267.stringpart_0;
+			}
+			if ((arg0 == 13) && (getSkillActualLvl(arg0) == 54)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_268 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_268.intpart_1;
+				ivar3 = structdump_268.intpart_0;
+				svar0 = structdump_268.stringpart_0;
+			}
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 59)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_269 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_269.intpart_1;
+				ivar3 = structdump_269.intpart_0;
+				svar0 = structdump_269.stringpart_0;
+			}
+			if (bitconfig_5387 >= 250) {
+				ivar4 = 0;
+			}
+			break;
+		case 98:
+			if (((boolean)arg0) && (getSkillActualLvl(arg0) == 65)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_270 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_270.intpart_1;
+				ivar3 = structdump_270.intpart_0;
+				svar0 = structdump_270.stringpart_0;
+			}
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 75)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_271 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_271.intpart_1;
+				ivar3 = structdump_271.intpart_0;
+				svar0 = structdump_271.stringpart_0;
+			}
+			if ((arg0 == 15) && (getSkillActualLvl(arg0) == 65)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_272 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_272.intpart_1;
+				ivar3 = structdump_272.intpart_0;
+				svar0 = structdump_272.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 60)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_273 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_273.intpart_1;
+				ivar3 = structdump_273.intpart_0;
+				svar0 = structdump_273.stringpart_0;
+			}
+			if ((arg0 == 21) && (getSkillActualLvl(arg0) == 55)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_274 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_274.intpart_1;
+				ivar3 = structdump_274.intpart_0;
+				svar0 = structdump_274.stringpart_0;
+			}
+			if ((arg0 == 19) && (getSkillActualLvl(arg0) == 65)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_275 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_275.intpart_1;
+				ivar3 = structdump_275.intpart_0;
+				svar0 = structdump_275.stringpart_0;
+			}
+			if ((arg0 == 23) && (getSkillActualLvl(arg0) == 23)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_276 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_276.intpart_1;
+				ivar3 = structdump_276.intpart_0;
+				svar0 = structdump_276.stringpart_0;
+			}
+			if (((boolean)script_395()) && ((arg0 == 2) || ((boolean)arg0))) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_277 = script_2042(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_277.intpart_1;
+				ivar3 = structdump_277.intpart_0;
+				svar0 = structdump_277.stringpart_0;
+			}
+			if (bitconfig_5491 >= 910) {
+				ivar4 = 0;
+			}
+			break;
+		case 99:
+			if ((arg0 == 11) && (getSkillActualLvl(arg0) == 55)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_278 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_278.intpart_1;
+				ivar3 = structdump_278.intpart_0;
+				svar0 = structdump_278.stringpart_0;
+			}
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 52)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_279 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_279.intpart_1;
+				ivar3 = structdump_279.intpart_0;
+				svar0 = structdump_279.stringpart_0;
+			}
+			if ((arg0 == 9) && (getSkillActualLvl(arg0) == 53)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_280 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_280.intpart_1;
+				ivar3 = structdump_280.intpart_0;
+				svar0 = structdump_280.stringpart_0;
+			}
+			if (bitconfig_5761 == 30) {
+				ivar4 = 0;
+			}
+			break;
+		case 100:
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 46)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_281 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_281.intpart_1;
+				ivar3 = structdump_281.intpart_0;
+				svar0 = structdump_281.stringpart_0;
+			}
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 46)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_282 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_282.intpart_1;
+				ivar3 = structdump_282.intpart_0;
+				svar0 = structdump_282.stringpart_0;
+			}
+			if ((arg0 == 2) && (getSkillActualLvl(arg0) == 46)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_283 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_283.intpart_1;
+				ivar3 = structdump_283.intpart_0;
+				svar0 = structdump_283.stringpart_0;
+			}
+			if (bitconfig_1938 >= 110) {
+				ivar4 = 0;
+			}
+			break;
+		case 101:
+			if ((arg0 == 21) && (getSkillActualLvl(arg0) == 41)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_284 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_284.intpart_1;
+				ivar3 = structdump_284.intpart_0;
+				svar0 = structdump_284.stringpart_0;
+			}
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_285 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_285.intpart_1;
+				ivar3 = structdump_285.intpart_0;
+				svar0 = structdump_285.stringpart_0;
+			}
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 57)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_286 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_286.intpart_1;
+				ivar3 = structdump_286.intpart_0;
+				svar0 = structdump_286.stringpart_0;
+			}
+			if ((arg0 == 15) && (getSkillActualLvl(arg0) == 43)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_287 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_287.intpart_1;
+				ivar3 = structdump_287.intpart_0;
+				svar0 = structdump_287.stringpart_0;
+			}
+			if (bitconfig_6001 >= 45) {
+				ivar4 = 0;
+			}
+			break;
+		case 102:
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 8)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_288 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_288.intpart_1;
+				ivar3 = structdump_288.intpart_0;
+				svar0 = structdump_288.stringpart_0;
+			}
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 10)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_289 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_289.intpart_1;
+				ivar3 = structdump_289.intpart_0;
+				svar0 = structdump_289.stringpart_0;
+			}
+			if ((arg0 == 11) && (getSkillActualLvl(arg0) == 6)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_290 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_290.intpart_1;
+				ivar3 = structdump_290.intpart_0;
+				svar0 = structdump_290.stringpart_0;
+			}
+			if ((arg0 == 8) && (getSkillActualLvl(arg0) == 10)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_291 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_291.intpart_1;
+				ivar3 = structdump_291.intpart_0;
+				svar0 = structdump_291.stringpart_0;
+			}
+			if (bitconfig_6048 == 250) {
+				ivar4 = 0;
+			}
+			break;
+		case 103:
+			if ((arg0 == 22) && (getSkillActualLvl(arg0) == 35)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_292 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_292.intpart_1;
+				ivar3 = structdump_292.intpart_0;
+				svar0 = structdump_292.stringpart_0;
+			}
+			if ((arg0 == 7) && (getSkillActualLvl(arg0) == 35)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_293 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_293.intpart_1;
+				ivar3 = structdump_293.intpart_0;
+				svar0 = structdump_293.stringpart_0;
+			}
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 35)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_294 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_294.intpart_1;
+				ivar3 = structdump_294.intpart_0;
+				svar0 = structdump_294.stringpart_0;
+			}
+			if ((arg0 == 5) && (getSkillActualLvl(arg0) == 35)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_295 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_295.intpart_1;
+				ivar3 = structdump_295.intpart_0;
+				svar0 = structdump_295.stringpart_0;
+			}
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 35)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_296 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_296.intpart_1;
+				ivar3 = structdump_296.intpart_0;
+				svar0 = structdump_296.stringpart_0;
+			}
+			if (bitconfig_6112 == 60) {
+				ivar4 = 0;
+			}
+			break;
+		case 104:
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 38)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_297 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_297.intpart_1;
+				ivar3 = structdump_297.intpart_0;
+				svar0 = structdump_297.stringpart_0;
+			}
+			if ((arg0 == 22) && (getSkillActualLvl(arg0) == 45)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_298 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_298.intpart_1;
+				ivar3 = structdump_298.intpart_0;
+				svar0 = structdump_298.stringpart_0;
+			}
+			if ((arg0 == 21) && (getSkillActualLvl(arg0) == 45)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_299 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_299.intpart_1;
+				ivar3 = structdump_299.intpart_0;
+				svar0 = structdump_299.stringpart_0;
+			}
+			if (bitconfig_6180 == 140) {
+				ivar4 = 0;
+			}
+			break;
+		case 105:
+			if ((arg0 == 23) && (getSkillActualLvl(arg0) == 41)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_300 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_300.intpart_1;
+				ivar3 = structdump_300.intpart_0;
+				svar0 = structdump_300.stringpart_0;
+			}
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 64)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_301 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_301.intpart_1;
+				ivar3 = structdump_301.intpart_0;
+				svar0 = structdump_301.stringpart_0;
+			}
+			if ((arg0 == 18) && (getSkillActualLvl(arg0) == 37)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_302 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_302.intpart_1;
+				ivar3 = structdump_302.intpart_0;
+				svar0 = structdump_302.stringpart_0;
+			}
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 61)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_303 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_303.intpart_1;
+				ivar3 = structdump_303.intpart_0;
+				svar0 = structdump_303.stringpart_0;
+			}
+			if ((arg0 == 2) && (getSkillActualLvl(arg0) == 64)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_304 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_304.intpart_1;
+				ivar3 = structdump_304.intpart_0;
+				svar0 = structdump_304.stringpart_0;
+			}
+			if ((arg0 == 4) && (getSkillActualLvl(arg0) == 64)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_305 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_305.intpart_1;
+				ivar3 = structdump_305.intpart_0;
+				svar0 = structdump_305.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 66)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_306 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_306.intpart_1;
+				ivar3 = structdump_306.intpart_0;
+				svar0 = structdump_306.stringpart_0;
+			}
+			break;
+		case 106:
+			if ((arg0 == 21) && (getSkillActualLvl(arg0) == 61)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_307 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_307.intpart_1;
+				ivar3 = structdump_307.intpart_0;
+				svar0 = structdump_307.stringpart_0;
+			}
+			if ((arg0 == 11) && (getSkillActualLvl(arg0) == 61)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_308 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_308.intpart_1;
+				ivar3 = structdump_308.intpart_0;
+				svar0 = structdump_308.stringpart_0;
+			}
+			if ((arg0 == 2) && (getSkillActualLvl(arg0) == 69)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_309 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_309.intpart_1;
+				ivar3 = structdump_309.intpart_0;
+				svar0 = structdump_309.stringpart_0;
+			}
+			if (bitconfig_6471 == 90) {
+				ivar4 = 0;
+			}
+			break;
+		case 107:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 69)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_310 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_310.intpart_1;
+				ivar3 = structdump_310.intpart_0;
+				svar0 = structdump_310.stringpart_0;
+			}
+			if ((arg0 == 9) && (getSkillActualLvl(arg0) == 70)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_311 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_311.intpart_1;
+				ivar3 = structdump_311.intpart_0;
+				svar0 = structdump_311.stringpart_0;
+			}
+			if ((arg0 == 4) && (getSkillActualLvl(arg0) == 75)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_312 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_312.intpart_1;
+				ivar3 = structdump_312.intpart_0;
+				svar0 = structdump_312.stringpart_0;
+			}
+			if ((arg0 == 8) && (getSkillActualLvl(arg0) == 75)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_313 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_313.intpart_1;
+				ivar3 = structdump_313.intpart_0;
+				svar0 = structdump_313.stringpart_0;
+			}
+			if (bitconfig_6553 == 46) {
+				ivar4 = 0;
+			}
+			break;
+		case 108:
+			if ((arg0 == 5) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_314 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_314.intpart_1;
+				ivar3 = structdump_314.intpart_0;
+				svar0 = structdump_314.stringpart_0;
+			}
+			if (bitconfig_6775 == 90) {
+				ivar4 = 0;
+			}
+			break;
+		case 109:
+			if (((boolean)arg0) && (getSkillActualLvl(arg0) == 75)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_315 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_315.intpart_1;
+				ivar3 = structdump_315.intpart_0;
+				svar0 = structdump_315.stringpart_0;
+			}
+			if ((arg0 == 2) && (getSkillActualLvl(arg0) == 75)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_316 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_316.intpart_1;
+				ivar3 = structdump_316.intpart_0;
+				svar0 = structdump_316.stringpart_0;
+			}
+			if ((arg0 == 18) && (getSkillActualLvl(arg0) == 65)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_317 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_317.intpart_1;
+				ivar3 = structdump_317.intpart_0;
+				svar0 = structdump_317.stringpart_0;
+			}
+			if (bitconfig_6883 >= 147) {
+				ivar4 = 0;
+			}
+			break;
+		case 110:
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 75)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_318 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_318.intpart_1;
+				ivar3 = structdump_318.intpart_0;
+				svar0 = structdump_318.stringpart_0;
+			}
+			if ((arg0 == 5) && (getSkillActualLvl(arg0) == 70)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_319 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_319.intpart_1;
+				ivar3 = structdump_319.intpart_0;
+				svar0 = structdump_319.stringpart_0;
+			}
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 66)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_320 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_320.intpart_1;
+				ivar3 = structdump_320.intpart_0;
+				svar0 = structdump_320.stringpart_0;
+			}
+			if ((arg0 == 21) && (getSkillActualLvl(arg0) == 65)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_321 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_321.intpart_1;
+				ivar3 = structdump_321.intpart_0;
+				svar0 = structdump_321.stringpart_0;
+			}
+			if ((arg0 == 22) && (getSkillActualLvl(arg0) == 60)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_322 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_322.intpart_1;
+				ivar3 = structdump_322.intpart_0;
+				svar0 = structdump_322.stringpart_0;
+			}
+			if (bitconfig_6962 == 12) {
+				ivar4 = 0;
+			}
+			break;
+		case 111:
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 27)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_323 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_323.intpart_1;
+				ivar3 = structdump_323.intpart_0;
+				svar0 = structdump_323.stringpart_0;
+			}
+			if ((arg0 == 20) && (getSkillActualLvl(arg0) == 20)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_324 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_324.intpart_1;
+				ivar3 = structdump_324.intpart_0;
+				svar0 = structdump_324.stringpart_0;
+			}
+			if ((arg0 == 22) && (getSkillActualLvl(arg0) == 25)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_325 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_325.intpart_1;
+				ivar3 = structdump_325.intpart_0;
+				svar0 = structdump_325.stringpart_0;
+			}
+			if (bitconfig_7050 == 35) {
+				ivar4 = 0;
+			}
+			break;
+		case 112:
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 24)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_326 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_326.intpart_1;
+				ivar3 = structdump_326.intpart_0;
+				svar0 = structdump_326.stringpart_0;
+			}
+			if (bitconfig_7794 == 15) {
+				ivar4 = 0;
+			}
+			break;
+		case 113:
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 41)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_327 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_327.intpart_1;
+				ivar3 = structdump_327.intpart_0;
+				svar0 = structdump_327.stringpart_0;
+			}
+			if (bitconfig_7795 == 2) {
+				ivar4 = 0;
+			}
+			break;
+		case 114:
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 62)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_328 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_328.intpart_1;
+				ivar3 = structdump_328.intpart_0;
+				svar0 = structdump_328.stringpart_0;
+			}
+			if ((arg0 == 15) && (getSkillActualLvl(arg0) == 46)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_329 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_329.intpart_1;
+				ivar3 = structdump_329.intpart_0;
+				svar0 = structdump_329.stringpart_0;
+			}
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_330 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_330.intpart_1;
+				ivar3 = structdump_330.intpart_0;
+				svar0 = structdump_330.stringpart_0;
+			}
+			if (bitconfig_7796 == 30) {
+				ivar4 = 0;
+			}
+			break;
+		case 115:
+			if ((arg0 == 19) && (getSkillActualLvl(arg0) == 54)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_331 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_331.intpart_1;
+				ivar3 = structdump_331.intpart_0;
+				svar0 = structdump_331.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 51)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_332 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_332.intpart_1;
+				ivar3 = structdump_332.intpart_0;
+				svar0 = structdump_332.stringpart_0;
+			}
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 59)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_333 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_333.intpart_1;
+				ivar3 = structdump_333.intpart_0;
+				svar0 = structdump_333.stringpart_0;
+			}
+			if ((arg0 == 23) && (getSkillActualLvl(arg0) == 37)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_334 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_334.intpart_1;
+				ivar3 = structdump_334.intpart_0;
+				svar0 = structdump_334.stringpart_0;
+			}
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 36)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_335 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_335.intpart_1;
+				ivar3 = structdump_335.intpart_0;
+				svar0 = structdump_335.stringpart_0;
+			}
+			if (bitconfig_7826 > 170) {
+				ivar4 = 0;
+			}
+			break;
+		case 116:
+			if (((boolean)arg0) && (getSkillActualLvl(arg0) == 33)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_336 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_336.intpart_1;
+				ivar3 = structdump_336.intpart_0;
+				svar0 = structdump_336.stringpart_0;
+			}
+			if ((arg0 == 13) && (getSkillActualLvl(arg0) == 33)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_337 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_337.intpart_1;
+				ivar3 = structdump_337.intpart_0;
+				svar0 = structdump_337.stringpart_0;
+			}
+			if (bitconfig_7871 == 11) {
+				ivar4 = 0;
+			}
+			break;
+		case 117:
+			if ((arg0 == 2) && (getSkillActualLvl(arg0) == 42)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_338 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_338.intpart_1;
+				ivar3 = structdump_338.intpart_0;
+				svar0 = structdump_338.stringpart_0;
+			}
+			if (((boolean)arg0) && (getSkillActualLvl(arg0) == 35)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_339 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_339.intpart_1;
+				ivar3 = structdump_339.intpart_0;
+				svar0 = structdump_339.stringpart_0;
+			}
+			if (bitconfig_7958 == 90) {
+				ivar4 = 0;
+			}
+			break;
+		case 118:
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 77)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_340 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_340.intpart_1;
+				ivar3 = structdump_340.intpart_0;
+				svar0 = structdump_340.stringpart_0;
+			}
+			if ((arg0 == 22) && (getSkillActualLvl(arg0) == 68)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_341 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_341.intpart_1;
+				ivar3 = structdump_341.intpart_0;
+				svar0 = structdump_341.stringpart_0;
+			}
+			if ((arg0 == 13) && (getSkillActualLvl(arg0) == 68)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_342 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_342.intpart_1;
+				ivar3 = structdump_342.intpart_0;
+				svar0 = structdump_342.stringpart_0;
+			}
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 67)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_343 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_343.intpart_1;
+				ivar3 = structdump_343.intpart_0;
+				svar0 = structdump_343.stringpart_0;
+			}
+			if (bitconfig_8045 >= 150) {
+				ivar4 = 0;
+			}
+			break;
+		case 119:
+			if ((arg0 == 22) && (getSkillActualLvl(arg0) == 47)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_344 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_344.intpart_1;
+				ivar3 = structdump_344.intpart_0;
+				svar0 = structdump_344.stringpart_0;
+			}
+			if ((arg0 == 15) && (getSkillActualLvl(arg0) == 49)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_345 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_345.intpart_1;
+				ivar3 = structdump_345.intpart_0;
+				svar0 = structdump_345.stringpart_0;
+			}
+			if ((arg0 == 21) && (getSkillActualLvl(arg0) == 46)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_346 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_346.intpart_1;
+				ivar3 = structdump_346.intpart_0;
+				svar0 = structdump_346.stringpart_0;
+			}
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 47)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_347 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_347.intpart_1;
+				ivar3 = structdump_347.intpart_0;
+				svar0 = structdump_347.stringpart_0;
+			}
+			if ((arg0 == 23) && (getSkillActualLvl(arg0) == 48)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_348 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_348.intpart_1;
+				ivar3 = structdump_348.intpart_0;
+				svar0 = structdump_348.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 54)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_349 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_349.intpart_1;
+				ivar3 = structdump_349.intpart_0;
+				svar0 = structdump_349.stringpart_0;
+			}
+			if ((arg0 == 8) && (getSkillActualLvl(arg0) == 52)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_350 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_350.intpart_1;
+				ivar3 = structdump_350.intpart_0;
+				svar0 = structdump_350.stringpart_0;
+			}
+			if (bitconfig_7451 == 63) {
+				ivar4 = 0;
+			}
+			break;
+		case 120:
+			if (((boolean)arg0) && (getSkillActualLvl(arg0) == 78)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_351 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_351.intpart_1;
+				ivar3 = structdump_351.intpart_0;
+				svar0 = structdump_351.stringpart_0;
+			}
+			if ((arg0 == 22) && (getSkillActualLvl(arg0) == 70)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_352 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_352.intpart_1;
+				ivar3 = structdump_352.intpart_0;
+				svar0 = structdump_352.stringpart_0;
+			}
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 70)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_353 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_353.intpart_1;
+				ivar3 = structdump_353.intpart_0;
+				svar0 = structdump_353.stringpart_0;
+			}
+			if ((arg0 == 11) && (getSkillActualLvl(arg0) == 71)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_354 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_354.intpart_1;
+				ivar3 = structdump_354.intpart_0;
+				svar0 = structdump_354.stringpart_0;
+			}
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 80)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_355 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_355.intpart_1;
+				ivar3 = structdump_355.intpart_0;
+				svar0 = structdump_355.stringpart_0;
+			}
+			if ((arg0 == 13) && (getSkillActualLvl(arg0) == 70)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_356 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_356.intpart_1;
+				ivar3 = structdump_356.intpart_0;
+				svar0 = structdump_356.stringpart_0;
+			}
+			if ((arg0 == 2) && (getSkillActualLvl(arg0) == 78)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_357 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_357.intpart_1;
+				ivar3 = structdump_357.intpart_0;
+				svar0 = structdump_357.stringpart_0;
+			}
+			if ((arg0 == 23) && (getSkillActualLvl(arg0) == 55)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_358 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_358.intpart_1;
+				ivar3 = structdump_358.intpart_0;
+				svar0 = structdump_358.stringpart_0;
+			}
+			if (((boolean)arg0) && (getSkillActualLvl(arg0) == 10)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_359 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_359.intpart_1;
+				ivar3 = structdump_359.intpart_0;
+				svar0 = structdump_359.stringpart_0;
+			}
+			if (bitconfig_8248 == 40) {
+				ivar4 = 0;
+			}
+			break;
+		case 121:
+			if ((arg0 == 2) && (getSkillActualLvl(arg0) == 77)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_360 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_360.intpart_1;
+				ivar3 = structdump_360.intpart_0;
+				svar0 = structdump_360.stringpart_0;
+			}
+			if ((arg0 == 13) && (getSkillActualLvl(arg0) == 70)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_361 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_361.intpart_1;
+				ivar3 = structdump_361.intpart_0;
+				svar0 = structdump_361.stringpart_0;
+			}
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 68)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_362 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_362.intpart_1;
+				ivar3 = structdump_362.intpart_0;
+				svar0 = structdump_362.stringpart_0;
+			}
+			if (bitconfig_8704 == 90) {
+				ivar4 = 0;
+			}
+			break;
+		case 122:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 64)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_363 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_363.intpart_1;
+				ivar3 = structdump_363.intpart_0;
+				svar0 = structdump_363.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 64)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_364 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_364.intpart_1;
+				ivar3 = structdump_364.intpart_0;
+				svar0 = structdump_364.stringpart_0;
+			}
+			if ((arg0 == 22) && (getSkillActualLvl(arg0) == 62)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_365 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_365.intpart_1;
+				ivar3 = structdump_365.intpart_0;
+				svar0 = structdump_365.stringpart_0;
+			}
+			if ((arg0 == 20) && (getSkillActualLvl(arg0) == 61)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_366 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_366.intpart_1;
+				ivar3 = structdump_366.intpart_0;
+				svar0 = structdump_366.stringpart_0;
+			}
+			if (bitconfig_5332 >= 120) {
+				ivar4 = 0;
+			}
+			break;
+		case 123:
+			if (((boolean)arg0) && (getSkillActualLvl(arg0) == 40)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_367 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_367.intpart_1;
+				ivar3 = structdump_367.intpart_0;
+				svar0 = structdump_367.stringpart_0;
+			}
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 41)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_368 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_368.intpart_1;
+				ivar3 = structdump_368.intpart_0;
+				svar0 = structdump_368.stringpart_0;
+			}
+			if ((arg0 == 20) && (getSkillActualLvl(arg0) == 39)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_369 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_369.intpart_1;
+				ivar3 = structdump_369.intpart_0;
+				svar0 = structdump_369.stringpart_0;
+			}
+			if ((arg0 == 13) && (getSkillActualLvl(arg0) == 42)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_370 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_370.intpart_1;
+				ivar3 = structdump_370.intpart_0;
+				svar0 = structdump_370.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 39)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_371 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_371.intpart_1;
+				ivar3 = structdump_371.intpart_0;
+				svar0 = structdump_371.stringpart_0;
+			}
+			if (bitconfig_998 >= 9) {
+				ivar4 = 0;
+			}
+			break;
+		case 124:
+			if ((arg0 == 22) && (getSkillActualLvl(arg0) == 62)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_372 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_372.intpart_1;
+				ivar3 = structdump_372.intpart_0;
+				svar0 = structdump_372.stringpart_0;
+			}
+			if ((arg0 == 24) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_373 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_373.intpart_1;
+				ivar3 = structdump_373.intpart_0;
+				svar0 = structdump_373.stringpart_0;
+			}
+			if ((arg0 == 18) && (getSkillActualLvl(arg0) == 61)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_374 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_374.intpart_1;
+				ivar3 = structdump_374.intpart_0;
+				svar0 = structdump_374.stringpart_0;
+			}
+			if ((arg0 == 23) && (getSkillActualLvl(arg0) == 65)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_375 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_375.intpart_1;
+				ivar3 = structdump_375.intpart_0;
+				svar0 = structdump_375.stringpart_0;
+			}
+			if ((arg0 == 13) && (getSkillActualLvl(arg0) == 74)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_376 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_376.intpart_1;
+				ivar3 = structdump_376.intpart_0;
+				svar0 = structdump_376.stringpart_0;
+			}
+			if (((boolean)arg0) && (getSkillActualLvl(arg0) == 76)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_377 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_377.intpart_1;
+				ivar3 = structdump_377.intpart_0;
+				svar0 = structdump_377.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 74)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_378 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_378.intpart_1;
+				ivar3 = structdump_378.intpart_0;
+				svar0 = structdump_378.stringpart_0;
+			}
+			if (bitconfig_8961 >= 200) {
+				ivar4 = 0;
+			}
+			break;
+		case 125:
+			if ((arg0 == 10) && (getSkillActualLvl(arg0) == 70)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_379 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_379.intpart_1;
+				ivar3 = structdump_379.intpart_0;
+				svar0 = structdump_379.stringpart_0;
+			}
+			if ((arg0 == 21) && (getSkillActualLvl(arg0) == 67)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_380 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_380.intpart_1;
+				ivar3 = structdump_380.intpart_0;
+				svar0 = structdump_380.stringpart_0;
+			}
+			if ((arg0 == 17) && (getSkillActualLvl(arg0) == 70)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_381 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_381.intpart_1;
+				ivar3 = structdump_381.intpart_0;
+				svar0 = structdump_381.stringpart_0;
+			}
+			if (bitconfig_9369 == 50) {
+				ivar4 = 0;
+			}
+			break;
+		case 126:
+			if (((boolean)arg0) && (getSkillActualLvl(arg0) == 60)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_382 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_382.intpart_1;
+				ivar3 = structdump_382.intpart_0;
+				svar0 = structdump_382.stringpart_0;
+			}
+			if ((arg0 == 3) && (getSkillActualLvl(arg0) == 50)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_383 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_383.intpart_1;
+				ivar3 = structdump_383.intpart_0;
+				svar0 = structdump_383.stringpart_0;
+			}
+			if ((arg0 == 15) && (getSkillActualLvl(arg0) == 47)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_384 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_384.intpart_1;
+				ivar3 = structdump_384.intpart_0;
+				svar0 = structdump_384.stringpart_0;
+			}
+			if ((arg0 == 23) && (getSkillActualLvl(arg0) == 45)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_385 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_385.intpart_1;
+				ivar3 = structdump_385.intpart_0;
+				svar0 = structdump_385.stringpart_0;
+			}
+			if ((arg0 == 24) && (getSkillActualLvl(arg0) == 35)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_386 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_386.intpart_1;
+				ivar3 = structdump_386.intpart_0;
+				svar0 = structdump_386.stringpart_0;
+			}
+			if (bitconfig_9491 == 250) {
+				ivar4 = 0;
+			}
+			break;
+		case 127:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 63)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_387 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_387.intpart_1;
+				ivar3 = structdump_387.intpart_0;
+				svar0 = structdump_387.stringpart_0;
+			}
+			if ((arg0 == 8) && (getSkillActualLvl(arg0) == 76)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_388 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_388.intpart_1;
+				ivar3 = structdump_388.intpart_0;
+				svar0 = structdump_388.stringpart_0;
+			}
+			if ((arg0 == 19) && (getSkillActualLvl(arg0) == 63)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_389 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_389.intpart_1;
+				ivar3 = structdump_389.intpart_0;
+				svar0 = structdump_389.stringpart_0;
+			}
+			if ((arg0 == 9) && (getSkillActualLvl(arg0) == 70)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_390 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_390.intpart_1;
+				ivar3 = structdump_390.intpart_0;
+				svar0 = structdump_390.stringpart_0;
+			}
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 64)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_391 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_391.intpart_1;
+				ivar3 = structdump_391.intpart_0;
+				svar0 = structdump_391.stringpart_0;
+			}
+			if ((arg0 == 18) && (getSkillActualLvl(arg0) == 67)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_392 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_392.intpart_1;
+				ivar3 = structdump_392.intpart_0;
+				svar0 = structdump_392.stringpart_0;
+			}
+			if ((arg0 == 6) && (getSkillActualLvl(arg0) == 70)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_393 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_393.intpart_1;
+				ivar3 = structdump_393.intpart_0;
+				svar0 = structdump_393.stringpart_0;
+			}
+			if (bitconfig_9757 == 170) {
+				ivar4 = 0;
+			}
+			break;
+		case 128:
+			if ((arg0 == 16) && (getSkillActualLvl(arg0) == 77)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_394 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_394.intpart_1;
+				ivar3 = structdump_394.intpart_0;
+				svar0 = structdump_394.stringpart_0;
+			}
+			if ((arg0 == 12) && (getSkillActualLvl(arg0) == 76)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_395 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_395.intpart_1;
+				ivar3 = structdump_395.intpart_0;
+				svar0 = structdump_395.stringpart_0;
+			}
+			if ((arg0 == 14) && (getSkillActualLvl(arg0) == 76)) {
+				stack_dump0 = arg0;
+				stack_dump1 = ivar2;
+				stack_dump2 = arg1;
+				structdump_396 = script_1025(stack_dump0, stack_dump1, stack_dump2);
+				ivar4 = structdump_396.intpart_1;
+				ivar3 = structdump_396.intpart_0;
+				svar0 = structdump_396.stringpart_0;
+			}
+			if (bitconfig_9829 == 400) {
+				ivar4 = 0;
+			}
+			break;
+		default:
+			ivar4 = -1;
+	}
+	return newstruct cs2func_script_1023_struct(ivar3, ivar4, svar0);
+}

@@ -1,0 +1,16 @@
+void script_1349(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	if (setWidgetRegister(new WidgetPointer(arg0), arg4)) {
+		setWidgetVFlip(0);
+	}
+	setWidgetIsHidden(true, new WidgetPointer(arg1));
+	setWidgetIsHidden(true, new WidgetPointer(arg2));
+	if (arg3 != -1) {
+		setWidgetIsHidden(true, new WidgetPointer(arg3));
+	}
+	deleteAllExtraChilds(new WidgetPointer(arg1));
+	deleteAllExtraChilds(new WidgetPointer(arg2));
+	if (arg3 != -1) {
+		deleteAllExtraChilds(new WidgetPointer(arg3));
+	}
+	return;
+}

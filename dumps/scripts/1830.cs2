@@ -1,0 +1,15 @@
+void script_1830(int arg0) {
+	if (isMember()) {
+		return;
+	}
+	if (((boolean)script_1820(arg0))) {
+		return;
+	}
+	if (((boolean)globalint_253)) {
+		globalint_253 = 1;
+	} else {
+		globalint_253 = 0;
+	}
+	script_1778();
+	return;
+}

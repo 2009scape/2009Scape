@@ -1,0 +1,36 @@
+void script_2940(int arg0) {
+	int ivar1;
+	flow_0:
+		ivar1 = script_2948();
+		IF (ivar1 == -3) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		IF (arg0 != 13) 
+			GOTO	flow_3
+	flow_2:
+		IF ((ivar1 == 21) || ((boolean)ivar1)) 
+			GOTO	flow_3
+		GOTO	flow_4
+	flow_3:
+		return;
+	flow_4:
+		setWidgetText(new WidgetPointer(596,73), globalstring_32);
+		setWidgetText(new WidgetPointer(596,79), script_2949(globalstring_33));
+		if (strLength(globalstring_32) > 0) {
+			globalint_174 = 4;
+		} else {
+			globalint_174 = 3;
+		}
+		if (globalint_174 == 3) {
+			globalint_1099 = strLength(globalstring_32);
+			script_3237(39059528, 39059529, 39059530, 3, globalstring_32);
+		} else {
+			globalint_1099 = strLength(script_2949(globalstring_33));
+			script_3237(39059534, 39059535, 39059536, 4, script_2949(globalstring_33));
+		}
+		setWidgetIsHidden(false, new WidgetPointer(744,26));
+		setWidgetIsHidden(false, new WidgetPointer(596,6));
+		script_3964();
+		return;
+}

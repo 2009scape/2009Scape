@@ -1,0 +1,10 @@
+void script_3471(int arg0,int arg1) {
+	if (arg1 < subtract(cs2method5407(0), 1)) {
+		cameraMethod5502(0, arg1, 700, 700, 1, arg1);
+		setScriptCallOnMinimapRelatedSetting3(3471, new WidgetPointer(arg0), add(arg1, 1), "Ii", new WidgetPointer(arg0));
+	} else {
+		setScriptCallOnMinimapRelatedSetting3(-1, "", new WidgetPointer(arg0));
+		cs2method5512();
+	}
+	return;
+}

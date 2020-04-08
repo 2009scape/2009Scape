@@ -1,0 +1,59 @@
+void script_5077(int arg0,int arg1,int arg2,int arg3,string arg4) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int stack_dump0;
+	if (isWidgetHidden(new WidgetPointer(1111,21)) || isWidgetHidden(new WidgetPointer(1111,9))) {
+		script_41(72810627);
+		return;
+	}
+	if (((boolean)script_4761(25))) {
+		return;
+	}
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 0;
+	ivar8 = 0;
+	ivar9 = 0;
+	ivar10 = script_3365(72810505);
+	ivar11 = script_3366(72810505);
+	ivar12 = getWidgetActualWidth(new WidgetPointer(1111,9));
+	ivar13 = getWidgetActualHeight(new WidgetPointer(1111,9));
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		stack_dump0 = script_1743();
+		ivar5 = script_1744();
+		ivar4 = stack_dump0;
+		stack_dump0 = subtract(ivar4, ivar10);
+		ivar6 = subtract(ivar5, ivar11);
+		ivar9 = stack_dump0;
+		stack_dump0 = add(ivar9, getWidgetActualWidth());
+		ivar7 = add(ivar6, getWidgetActualHeight());
+		ivar8 = stack_dump0;
+		if (subtract(ivar13, ivar7) > 150) {
+			script_4540(72810627, arg0, arg1, ivar12, 494, 494, -1, 10, 2, 2, arg2, arg3, arg4);
+			return;
+		}
+		if (ivar6 > 125) {
+			script_4540(72810627, arg0, arg1, ivar12, 494, 494, -1, 10, 2, 0, arg2, arg3, arg4);
+			return;
+		}
+		if (subtract(ivar12, ivar8) > 150) {
+			script_4540(72810627, arg0, arg1, ivar12, 494, 494, -1, 10, 2, 1, arg2, arg3, arg4);
+			return;
+		}
+		if (ivar9 > 225) {
+			script_4540(72810627, arg0, arg1, ivar12, 494, 494, -1, 10, 2, 3, arg2, arg3, arg4);
+			return;
+		}
+		script_4540(72810627, arg0, arg1, ivar12, 494, 494, -1, 10, 2, -1, add(ivar4, arg2), add(ivar5, arg3), arg4);
+	}
+	return;
+}

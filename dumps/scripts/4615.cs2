@@ -1,0 +1,40 @@
+void script_4615(int arg0) {
+	switch (arg0) {
+		case 1310735:
+			setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9255)), new WidgetPointer(arg0));
+			break;
+		case 1310875:
+			setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9254)), new WidgetPointer(arg0));
+			break;
+		case 1310889:
+			setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9254)), new WidgetPointer(arg0));
+			break;
+		case 1310903:
+			setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9254)), new WidgetPointer(arg0));
+			break;
+		case 1310737:
+			setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9256)), new WidgetPointer(arg0));
+			break;
+		case 1310877:
+			setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9256)), new WidgetPointer(arg0));
+			break;
+		case 1310891:
+			setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9255)), new WidgetPointer(arg0));
+			break;
+		case 1310905:
+			setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9255)), new WidgetPointer(arg0));
+			break;
+		case 1310739:
+			setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9257)), new WidgetPointer(arg0));
+			break;
+		case 1310879:
+			setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9257)), new WidgetPointer(arg0));
+			break;
+		case 1310893:
+			setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9257)), new WidgetPointer(arg0));
+			break;
+		case 1310907:
+			setWidgetRGB(new Color(getColorRelatedMethod4020(bitconfig_9256)), new WidgetPointer(arg0));
+	}
+	return;
+}

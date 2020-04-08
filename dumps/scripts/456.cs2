@@ -1,0 +1,4 @@
+void script_456() {
+	setWidgetContextMenuOption(1, new WidgetPointer(1019,16), "Exit Tutorial");
+	return;
+}

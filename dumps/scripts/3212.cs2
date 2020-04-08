@@ -1,0 +1,5 @@
+void script_3212(string arg0) {
+	arg0 = arg0 + "?cty=" + intToStr(cs2method3629());
+	script_2934(1, arg0);
+	return;
+}

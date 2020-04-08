@@ -1,0 +1,26 @@
+void script_794(int arg0,int arg1,int arg2,int arg3,string arg4,string arg5,string arg6,string arg7,string arg8) {
+	if (setWidgetRegister(new WidgetPointer(arg2), arg3)) {
+		if (arg0 != -1) {
+			setItemOnWidgetMethod1200(arg0, -1);
+			cs2method1305(getItemName(arg1));
+			setWidgetContextMenuOption(1, arg4);
+			setWidgetContextMenuOption(2, arg5);
+			setWidgetContextMenuOption(3, arg6);
+			setWidgetContextMenuOption(4, arg7);
+			setWidgetContextMenuOption(5, arg8);
+			setWidgetContextMenuOption(6, "Examine" + "<col=ff9040>");
+			setWidgetShadowColor(new Color(51, 51, 51));
+			setWidgetBorderThickness(1);
+		} else {
+			setItemOnWidgetMethod1200(-1, 0);
+			cs2method1305("");
+			setWidgetContextMenuOption(1, "");
+			setWidgetContextMenuOption(2, "");
+			setWidgetContextMenuOption(3, "");
+			setWidgetContextMenuOption(4, "");
+			setWidgetContextMenuOption(5, "");
+			setWidgetContextMenuOption(6, "");
+		}
+	}
+	return;
+}

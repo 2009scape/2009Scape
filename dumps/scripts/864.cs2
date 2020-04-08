@@ -1,0 +1,16 @@
+void script_864(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10) {
+	int ivar11;
+	ivar11 = 0;
+	if (((boolean)arg6)) {
+		ivar11 = getTextWidth(468, getWidgetText(new WidgetPointer(arg5)));
+	} else {
+		ivar11 = getWidgetActualWidth(new WidgetPointer(arg5));
+	}
+	if (((boolean)arg1) && (subtract(getWidgetActualWidth(new WidgetPointer(arg0)), ivar11) < arg7)) {
+		setScriptCallOnGameloop(2929, new WidgetPointer(arg0), arg1, new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), arg6, arg7, arg8, arg9, arg10, "I1IIII1iiii", new WidgetPointer(arg2));
+		return;
+	}
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(arg2));
+	setScriptCallOnGameloop(2930, new WidgetPointer(arg0), arg1, ivar11, new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), arg7, arg8, arg9, arg10, "I1iIIIiiii", new WidgetPointer(arg0));
+	return;
+}

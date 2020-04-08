@@ -1,0 +1,49 @@
+void script_1392() {
+	int ivar0;
+	ivar0 = rndExcl(4);
+	if (((boolean)ivar0)) {
+		setWidgetPosition(59, 9, 0, 0, new WidgetPointer(188,2));
+		setWidgetPosition(59, 50, 0, 0, new WidgetPointer(188,3));
+		setWidgetPosition(139, 9, 0, 0, new WidgetPointer(188,4));
+		setWidgetPosition(139, 50, 0, 0, new WidgetPointer(188,5));
+		setWidgetPosition(219, 9, 0, 0, new WidgetPointer(188,6));
+		setWidgetPosition(219, 50, 0, 0, new WidgetPointer(188,7));
+		setWidgetPosition(319, 9, 0, 0, new WidgetPointer(188,8));
+		setWidgetPosition(319, 50, 0, 0, new WidgetPointer(188,9));
+		return;
+	}
+	if (((boolean)ivar0)) {
+		setWidgetPosition(59, 9, 0, 0, new WidgetPointer(188,3));
+		setWidgetPosition(59, 50, 0, 0, new WidgetPointer(188,4));
+		setWidgetPosition(139, 9, 0, 0, new WidgetPointer(188,5));
+		setWidgetPosition(139, 50, 0, 0, new WidgetPointer(188,2));
+		setWidgetPosition(219, 9, 0, 0, new WidgetPointer(188,7));
+		setWidgetPosition(219, 50, 0, 0, new WidgetPointer(188,8));
+		setWidgetPosition(319, 9, 0, 0, new WidgetPointer(188,9));
+		setWidgetPosition(319, 50, 0, 0, new WidgetPointer(188,6));
+		return;
+	}
+	if (ivar0 == 2) {
+		setWidgetPosition(59, 9, 0, 0, new WidgetPointer(188,4));
+		setWidgetPosition(59, 50, 0, 0, new WidgetPointer(188,5));
+		setWidgetPosition(139, 9, 0, 0, new WidgetPointer(188,2));
+		setWidgetPosition(139, 50, 0, 0, new WidgetPointer(188,3));
+		setWidgetPosition(219, 9, 0, 0, new WidgetPointer(188,8));
+		setWidgetPosition(219, 50, 0, 0, new WidgetPointer(188,9));
+		setWidgetPosition(319, 9, 0, 0, new WidgetPointer(188,6));
+		setWidgetPosition(319, 50, 0, 0, new WidgetPointer(188,7));
+		return;
+	}
+	if (ivar0 == 3) {
+		setWidgetPosition(59, 9, 0, 0, new WidgetPointer(188,5));
+		setWidgetPosition(59, 50, 0, 0, new WidgetPointer(188,2));
+		setWidgetPosition(139, 9, 0, 0, new WidgetPointer(188,3));
+		setWidgetPosition(139, 50, 0, 0, new WidgetPointer(188,4));
+		setWidgetPosition(219, 9, 0, 0, new WidgetPointer(188,9));
+		setWidgetPosition(219, 50, 0, 0, new WidgetPointer(188,6));
+		setWidgetPosition(319, 9, 0, 0, new WidgetPointer(188,7));
+		setWidgetPosition(319, 50, 0, 0, new WidgetPointer(188,8));
+		return;
+	}
+	return;
+}

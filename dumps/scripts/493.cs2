@@ -1,0 +1,128 @@
+void script_493(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	flow_0:
+		ivar2 = 0;
+		ivar3 = 0;
+		ivar4 = -1;
+		SWITCH (arg0) {
+			case 66519098:
+				 GOTO flow_1
+			case 66519100:
+				 GOTO flow_2
+			case 66519102:
+				 GOTO flow_3
+			case 66519104:
+				 GOTO flow_4
+			case 66519108:
+				 GOTO flow_5
+			case 66519110:
+				 GOTO flow_6
+			case 66519112:
+				 GOTO flow_7
+			case 66519114:
+				 GOTO flow_8
+			case 66519106:
+				 GOTO flow_9
+		}
+		return;
+	flow_1:
+		ivar2 = 1;
+		GOTO	flow_10
+	flow_2:
+		ivar2 = 2;
+		GOTO	flow_10
+	flow_3:
+		ivar2 = 3;
+		GOTO	flow_10
+	flow_4:
+		ivar2 = 4;
+		GOTO	flow_10
+	flow_5:
+		ivar2 = 5;
+		GOTO	flow_10
+	flow_6:
+		ivar2 = 6;
+		GOTO	flow_10
+	flow_7:
+		ivar2 = 7;
+		GOTO	flow_10
+	flow_8:
+		ivar2 = 8;
+		GOTO	flow_10
+	flow_9:
+		ivar2 = 9;
+	flow_10:
+		if (((boolean)arg1)) {
+			ivar3 = 16777215;
+		} else {
+			ivar3 = 16750623;
+		}
+		if (((bitconfig_7539 != ivar2) && (bitconfig_7540 != ivar2)) && ((bitconfig_7541 != ivar2) && (bitconfig_7542 != ivar2))) {
+			setWidgetRGB(new Color(ivar3), new WidgetPointer(arg0));
+			if (((boolean)arg1)) {
+				ivar4 = script_488(ivar2);
+				if (ivar4 != -1) {
+					setWidgetIsHidden(true, new WidgetPointer(1015,49));
+					setWidgetIsHidden(false, new WidgetPointer(1015,50));
+					setWidgetIsHidden(false, new WidgetPointer(1015,51));
+					setWidgetIsHidden(false, new WidgetPointer(1015,52));
+					setWidgetIsHidden(false, new WidgetPointer(1015,53));
+					setWidgetIsHidden(false, new WidgetPointer(1015,54));
+					setWidgetText(new WidgetPointer(1015,51), getOtherCommonData(ivar4, 1150));
+					setWidgetSprite(getOtherCommonData(ivar4, 1153), new WidgetPointer(1015,50));
+					setWidgetText(new WidgetPointer(1015,52), getOtherCommonData(ivar4, 1151));
+					setWidgetText(new WidgetPointer(1015,53), concat("Cooldown: ", intToStr(getOtherCommonData(ivar4, 1155))));
+					setWidgetText(new WidgetPointer(1015,54), concat("Cost: ", intToStr(getOtherCommonData(ivar4, 1154))));
+				}
+			} else {
+				flow_21:
+					SWITCH (bitconfig_7515) {
+						case 1:
+							 GOTO flow_22
+						case 2:
+							 GOTO flow_23
+						case 3:
+							 GOTO flow_24
+						case 4:
+							 GOTO flow_25
+					}
+					ivar4 = -1;
+					GOTO	flow_26
+				flow_22:
+					ivar4 = script_488(bitconfig_7539);
+					GOTO	flow_26
+				flow_23:
+					ivar4 = script_488(bitconfig_7540);
+					GOTO	flow_26
+				flow_24:
+					ivar4 = script_488(bitconfig_7541);
+					GOTO	flow_26
+				flow_25:
+					ivar4 = script_488(bitconfig_7542);
+				flow_26:
+					if (ivar4 == -1) {
+						setWidgetIsHidden(false, new WidgetPointer(1015,49));
+						setWidgetIsHidden(true, new WidgetPointer(1015,50));
+						setWidgetIsHidden(true, new WidgetPointer(1015,51));
+						setWidgetIsHidden(true, new WidgetPointer(1015,52));
+						setWidgetIsHidden(true, new WidgetPointer(1015,53));
+						setWidgetIsHidden(true, new WidgetPointer(1015,54));
+					} else {
+						setWidgetIsHidden(true, new WidgetPointer(1015,49));
+						setWidgetIsHidden(false, new WidgetPointer(1015,50));
+						setWidgetIsHidden(false, new WidgetPointer(1015,51));
+						setWidgetIsHidden(false, new WidgetPointer(1015,52));
+						setWidgetIsHidden(false, new WidgetPointer(1015,53));
+						setWidgetIsHidden(false, new WidgetPointer(1015,54));
+						setWidgetText(new WidgetPointer(1015,51), getOtherCommonData(ivar4, 1150));
+						setWidgetSprite(getOtherCommonData(ivar4, 1153), new WidgetPointer(1015,50));
+						setWidgetText(new WidgetPointer(1015,52), getOtherCommonData(ivar4, 1151));
+						setWidgetText(new WidgetPointer(1015,53), concat("Cooldown: ", intToStr(getOtherCommonData(ivar4, 1155))));
+						setWidgetText(new WidgetPointer(1015,54), concat("Cost: ", intToStr(getOtherCommonData(ivar4, 1154))));
+					}
+			}
+		}
+		return;
+}

@@ -1,0 +1,81 @@
+void script_4645(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int stack_dump0;
+	cs2func_script_4644_struct(2,0,0) structdump_1;
+	flow_0:
+		ivar1 = -1;
+		ivar2 = -1;
+		ivar3 = 0;
+		ivar4 = 0;
+		stack_dump0 = arg0;
+		structdump_1 = script_4644(stack_dump0);
+		ivar4 = structdump_1.intpart_1;
+		ivar3 = structdump_1.intpart_0;
+		SWITCH (arg0) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_2
+			case 4:
+				 GOTO flow_3
+			case 3:
+				 GOTO flow_4
+			case 6:
+				 GOTO flow_5
+			case 5:
+				 GOTO flow_6
+		}
+		return;
+	flow_1:
+		ivar1 = 10027024;
+		ivar2 = 10027179;
+		GOTO	flow_7
+	flow_2:
+		ivar1 = 10027021;
+		ivar2 = 10027022;
+		GOTO	flow_7
+	flow_3:
+		ivar1 = 10027018;
+		ivar2 = 10027019;
+		GOTO	flow_7
+	flow_4:
+		ivar1 = 10027015;
+		ivar2 = 10027016;
+		GOTO	flow_7
+	flow_5:
+		ivar1 = 10027012;
+		ivar2 = 10027013;
+		GOTO	flow_7
+	flow_6:
+		ivar1 = 10027009;
+		ivar2 = 10027010;
+	flow_7:
+		if (((boolean)script_4643(arg0))) {
+			if (((boolean)ivar3)) {
+				if (((boolean)ivar4)) {
+					setWidgetSprite(6274, new WidgetPointer(ivar1));
+					setWidgetIsHidden(false, new WidgetPointer(ivar1));
+					setWidgetSprite(6275, new WidgetPointer(ivar2));
+					setWidgetIsHidden(false, new WidgetPointer(ivar2));
+				} else {
+					setWidgetSprite(6272, new WidgetPointer(ivar1));
+					setWidgetIsHidden(false, new WidgetPointer(ivar1));
+					setWidgetSprite(6275, new WidgetPointer(ivar2));
+					setWidgetIsHidden(false, new WidgetPointer(ivar2));
+				}
+			} else {
+				setWidgetSprite(6272, new WidgetPointer(ivar1));
+				setWidgetIsHidden(false, new WidgetPointer(ivar1));
+			}
+		} else if (((boolean)ivar3)) {
+			setWidgetSprite(6275, new WidgetPointer(ivar1));
+			setWidgetIsHidden(false, new WidgetPointer(ivar1));
+		} else {
+			setWidgetSprite(6273, new WidgetPointer(ivar1));
+			setWidgetIsHidden(false, new WidgetPointer(ivar1));
+		}
+		return;
+}

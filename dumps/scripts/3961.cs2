@@ -1,0 +1,11 @@
+void script_3961(int arg0,int arg1) {
+	if (arg0 < 50) {
+		arg0 = add(arg0, 1);
+		setScriptCallOnGameloop(3961, arg0, new WidgetPointer(arg1), "iI", new WidgetPointer(arg1));
+	} else {
+		setWidgetSize(63, 16, 0, 0, new WidgetPointer(744,81));
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg1));
+		script_3960(48758892);
+	}
+	return;
+}

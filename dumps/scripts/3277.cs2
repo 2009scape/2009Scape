@@ -1,0 +1,10 @@
+void script_3277() {
+	globalint_1149 = 0;
+	globalint_1150 = 0;
+	globalint_1151 = 0;
+	globalint_1152 = 0;
+	deleteAllExtraChilds(new WidgetPointer(942,3));
+	deleteAllExtraChilds(new WidgetPointer(942,5));
+	deleteAllExtraChilds(new WidgetPointer(942,4));
+	return;
+}

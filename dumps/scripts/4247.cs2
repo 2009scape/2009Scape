@@ -1,0 +1,37 @@
+void script_4247(int arg0,int arg1,int arg2,int arg3,int arg4,string arg5) {
+	if (isParent(new WidgetPointer(script_8(1)), 1056)) {
+		arg5 = "";
+	}
+	if ((((divide(extractX(getMyPositionHash()), 64) < 48) || (divide(extractX(getMyPositionHash()), 64) > 52)) || (divide(extractY(getMyPositionHash()), 64) < 48)) || (divide(extractY(getMyPositionHash()), 64) > 52)) {
+		arg5 = "";
+	}
+	if (arg3 == -1) {
+		arg3 = 16777215;
+	}
+	if (arg4 == -1) {
+		arg4 = 5631;
+	}
+	setWidgetIsHidden(true, new WidgetPointer(746,185));
+	setWidgetIsHidden(true, new WidgetPointer(548,196));
+	if (((boolean)stringMethod4107(arg5, ""))) {
+		return;
+	}
+	setWidgetText(new WidgetPointer(548,236), arg5);
+	setWidgetPosition(arg0, arg1, 2, 2, new WidgetPointer(548,196));
+	setWidgetRGB(new Color(arg3), new WidgetPointer(548,236));
+	setWidgetFont(arg4, new WidgetPointer(548,236));
+	if (((boolean)arg2)) {
+		setWidgetIsHidden(false, new WidgetPointer(548,238));
+		setWidgetIsHidden(true, new WidgetPointer(548,239));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(548,238));
+		setWidgetIsHidden(false, new WidgetPointer(548,239));
+	}
+	setWidgetIsHidden(false, new WidgetPointer(548,196));
+	if (((boolean)stringMethod4107(arg5, "The '?' icon will add an arrow to the screen which points to your destination.")) && ((boolean)getLanguage())) {
+		setWidgetIsHidden(false, new WidgetPointer(548,237));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(548,237));
+	}
+	return;
+}

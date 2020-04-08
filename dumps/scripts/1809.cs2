@@ -1,0 +1,16 @@
+void script_1809(int arg0,int arg1,int arg2) {
+	string svar0;
+	svar0 = "";
+	if (strLength(globalstring_38) > 0) {
+		svar0 = script_1814(globalstring_38);
+		setWidgetText(new WidgetPointer(arg1), svar0);
+		setWidgetSize(getMaxLineWidth(512, 496, svar0), 15, 0, 0, new WidgetPointer(arg1));
+	} else {
+		setWidgetText(new WidgetPointer(arg1), "");
+		setWidgetSize(0, 15, 0, 0, new WidgetPointer(arg1));
+	}
+	globalint_267 = -1;
+	globalstring_39 = "";
+	script_1811(arg0, arg1, arg2);
+	return;
+}

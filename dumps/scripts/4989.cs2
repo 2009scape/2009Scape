@@ -1,0 +1,26 @@
+void script_4989(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int stack_dump0;
+	cs2func_script_4958_struct(5,0,0) structdump_1;
+	ivar1 = -1;
+	ivar2 = -1;
+	ivar3 = -1;
+	ivar4 = -1;
+	ivar5 = -1;
+	stack_dump0 = arg0;
+	structdump_1 = script_4958(stack_dump0);
+	ivar3 = structdump_1.intpart_4;
+	ivar5 = structdump_1.intpart_3;
+	ivar4 = structdump_1.intpart_2;
+	ivar2 = structdump_1.intpart_1;
+	ivar1 = structdump_1.intpart_0;
+	script_4988(bitconfig_9550);
+	script_4937();
+	bitconfig_9550 = ivar1;
+	bitconfig_9551 = script_4945(ivar1);
+	return;
+}

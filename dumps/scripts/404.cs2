@@ -1,0 +1,4 @@
+void script_404(int arg0) {
+	setWidgetText(new WidgetPointer(arg0), "Conquest Ranking: " + intToStr(standart_config_1875));
+	return;
+}

@@ -1,0 +1,16 @@
+void script_5() {
+	int ivar0;
+	int ivar1;
+	ivar0 = 30;
+	if (((boolean)bitconfig_6840)) {
+		ivar0 = 20;
+	}
+	ivar1 = 0;
+	while (ivar1 < ivar0) {
+		if ((setWidgetRegister(new WidgetPointer(271,7), ivar1) && ((boolean)script_2297(ivar1))) && ((boolean)script_2295(ivar1))) {
+			setWidgetSprite(155);
+		}
+		ivar1 = add(ivar1, 1);
+	}
+	return;
+}

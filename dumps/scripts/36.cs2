@@ -1,0 +1,19 @@
+void script_36(int arg0,int arg1,int arg2) {
+	int ivar3;
+	ivar3 = cs2method2601(new WidgetPointer(arg1));
+	switch (arg1) {
+		case 38666248:
+			if (arg2 > 0) {
+				ivar3 = script_4754(arg1, ivar3, 0);
+			} else {
+				ivar3 = script_4754(arg1, ivar3, 1);
+			}
+			break;
+		default:
+			ivar3 = add(ivar3, multiply(arg2, 45));
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), 1)) {
+		script_37(arg0, arg1, ivar3, 1);
+	}
+	return;
+}

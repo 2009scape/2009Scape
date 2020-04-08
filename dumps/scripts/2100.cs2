@@ -1,0 +1,50 @@
+void script_2100(int arg0,int arg1) {
+	string svar0;
+	svar0 = "";
+	switch (arg0) {
+		case 54657051:
+		case 54657036:
+		case 54657032:
+			svar0 = "The number of times that the avatar has been killed.";
+			break;
+		case 54657048:
+		case 54657037:
+		case 54657033:
+			svar0 = "The Slayer level required to attack each avatar.";
+			break;
+		case 54657047:
+		case 54657038:
+		case 54657034:
+			svar0 = "The remaining health of each avatar.";
+			break;
+		case 54657049:
+		case 54657050:
+			svar0 = "How much time the game has remaining.";
+			break;
+		case 54657031:
+			svar0 = "This column displays the blue team's statistics.";
+			break;
+		case 54657035:
+			svar0 = "This column displays the red team's statistics.";
+			break;
+		case 54657052:
+			svar0 = "Shows which team controls the soul obelisk.";
+			break;
+		case 54657053:
+			svar0 = "Shows which team controls the western graveyard.";
+			break;
+		case 54657054:
+			svar0 = "Shows which team controls the eastern graveyard.";
+			break;
+		case 54657092:
+			svar0 = "Shows how much control a team has over the soul obelisk.";
+			break;
+		case 54657098:
+			svar0 = "Shows how active you have been during the game.";
+			break;
+		default:
+			return;
+	}
+	script_39(arg0, arg1, 25, getWidgetActualWidth(new WidgetPointer(getWidgetParentId(new WidgetPointer(arg1)))), svar0);
+	return;
+}

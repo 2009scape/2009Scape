@@ -1,0 +1,26 @@
+void script_1355(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,string arg7) {
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	setWidgetIsHidden(true, new WidgetPointer(arg1));
+	setWidgetIsHidden(true, new WidgetPointer(arg2));
+	if (arg3 != -1) {
+		setWidgetIsHidden(true, new WidgetPointer(arg3));
+	}
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetPosition(0, 0, 0, 0);
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg0)), getWidgetActualHeight(new WidgetPointer(arg0)), 0, 0);
+	setWidgetSprite(arg4);
+	cs2method1107(1);
+	createExtraChild(new WidgetPointer(arg0), 3, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetPosition(0, 0, 0, 0);
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg0)), getWidgetActualHeight(new WidgetPointer(arg0)), 0, 0);
+	setWidgetRGB(new Color(0, 0, 0));
+	createExtraChild(new WidgetPointer(arg0), 4, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetText(arg7);
+	setWidgetPosition(0, 0, 0, 0);
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg0)), getWidgetActualHeight(new WidgetPointer(arg0)), 0, 0);
+	setWidgetUnknownBoolean(false);
+	setWidgetFont(arg6);
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetRGB(new Color(arg5));
+	return;
+}

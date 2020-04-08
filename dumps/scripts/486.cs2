@@ -1,0 +1,55 @@
+int script_486(int arg0) {
+	flow_0:
+		SWITCH (arg0) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_5
+			case 3:
+				 GOTO flow_9
+			case 4:
+				 GOTO flow_13
+			case 5:
+				 GOTO flow_17
+			case 6:
+				 GOTO flow_21
+			case 7:
+				 GOTO flow_25
+		}
+		return -1;
+	flow_1:
+		if (((boolean)bitconfig_7510)) {
+			return 12200;
+		}
+		return 12197;
+	flow_5:
+		if (((boolean)bitconfig_7510)) {
+			return 12205;
+		}
+		return 12202;
+	flow_9:
+		if (((boolean)bitconfig_7510)) {
+			return 12210;
+		}
+		return 12207;
+	flow_13:
+		if (((boolean)bitconfig_7510)) {
+			return 12215;
+		}
+		return 12212;
+	flow_17:
+		if (((boolean)bitconfig_7510)) {
+			return 12219;
+		}
+		return 12216;
+	flow_21:
+		if (((boolean)bitconfig_7510)) {
+			return 12223;
+		}
+		return 12220;
+	flow_25:
+		if (((boolean)bitconfig_7510)) {
+			return 12227;
+		}
+		return 12224;
+}

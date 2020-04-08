@@ -1,0 +1,5 @@
+void script_5043(int arg0,int arg1,int arg2) {
+	globalint_1396 = max(min(add(3, multiplyDivide(add(arg2, divide(getWidgetActualWidth(new WidgetPointer(arg1)), 2)), getWidgetActualWidth(new WidgetPointer(getWidgetParentId(new WidgetPointer(arg1)))), add(subtract(21, 3), 1))), 21), 3);
+	script_5044(arg0, 0, 0);
+	return;
+}

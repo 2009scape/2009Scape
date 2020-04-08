@@ -1,0 +1,6 @@
+void script_2053(int arg0,int arg1,int arg2) {
+	if (((boolean)arg0)) {
+		setScriptCallOnGameloop(2054, add(getClientCycle(), 3), new WidgetPointer(arg1), arg2, "iIc", new WidgetPointer(arg1));
+	}
+	return;
+}

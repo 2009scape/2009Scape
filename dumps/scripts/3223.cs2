@@ -1,0 +1,371 @@
+string script_3223(int arg0,int arg1) {
+	int ivar2;
+	string svar0;
+	flow_0:
+		svar0 = "";
+		ivar2 = 0;
+		SWITCH (arg0) {
+			case 23:
+				 GOTO flow_1
+			case 147:
+				 GOTO flow_1
+			case 167:
+				 GOTO flow_1
+			case 294:
+				 GOTO flow_1
+			case 249:
+				 GOTO flow_1
+			case 49:
+				 GOTO flow_5
+			case 59:
+				 GOTO flow_9
+			case 107:
+				 GOTO flow_13
+			case 178:
+				 GOTO flow_19
+			case 180:
+				 GOTO flow_23
+			case 177:
+				 GOTO flow_27
+			case 316:
+				 GOTO flow_31
+			case 321:
+				 GOTO flow_35
+			case 322:
+				 GOTO flow_39
+			case 323:
+				 GOTO flow_43
+			case 175:
+				 GOTO flow_47
+			case 219:
+				 GOTO flow_51
+			case 331:
+				 GOTO flow_51
+			case 248:
+				 GOTO flow_55
+			case 276:
+				 GOTO flow_59
+			case 3011:
+				 GOTO flow_59
+			case 281:
+				 GOTO flow_63
+			case 285:
+				 GOTO flow_70
+			case 289:
+				 GOTO flow_74
+			case 300:
+				 GOTO flow_78
+			case 3000:
+				 GOTO flow_82
+			case 3001:
+				 GOTO flow_91
+			case 3013:
+				 GOTO flow_91
+			case 3002:
+				 GOTO flow_95
+			case 12:
+				 GOTO flow_107
+			case 3003:
+				 GOTO flow_111
+			case 3007:
+				 GOTO flow_115
+			case 3008:
+				 GOTO flow_119
+			case 3010:
+				 GOTO flow_123
+			case 3012:
+				 GOTO flow_127
+			case 3015:
+				 GOTO flow_131
+			case 3031:
+				 GOTO flow_135
+			case 3034:
+				 GOTO flow_139
+		}
+		svar0 = "";
+		ivar2 = 0;
+		GOTO	flow_142
+	flow_1:
+		if (((boolean)arg1)) {
+			svar0 = "You must have access to the fairy ring network to complete this Task.";
+			if (((boolean)bitconfig_2328)) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_5:
+		if (((boolean)arg1)) {
+			svar0 = "You must unlock 500 music tracks in order to perform the Air Guitar emote.";
+			if (((boolean)bitconfig_4394)) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_9:
+		if (arg1 == 2) {
+			svar0 = "You must also have completed the Abyss miniquest.";
+			if (standart_config_492 >= 4) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_13:
+		IF (((boolean)arg1)) 
+			GOTO	flow_14
+		GOTO	flow_18
+	flow_14:
+		svar0 = "You must have progressed to a certain point in the Dragon Slayer quest.";
+		IF (standart_config_176 >= 2) 
+			GOTO	flow_15
+		GOTO	flow_16
+	flow_15:
+		IF (((boolean)bitconfig_3746)) 
+			GOTO	flow_17
+	flow_16:
+		IF (standart_config_176 >= 10) 
+			GOTO	flow_17
+		GOTO	flow_18
+	flow_17:
+		ivar2 = 1;
+	flow_18:
+		GOTO	flow_142
+	flow_19:
+		if (((boolean)arg1)) {
+			svar0 = "You must begin the relevant section of Otto Godblessed's barbarian training.";
+			if (bitconfig_3757 > 0) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_23:
+		if (((boolean)arg1)) {
+			svar0 = "You must begin the relevant section of Otto Godblessed's barbarian training.";
+			if (bitconfig_3764 > 0) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_27:
+		if (((boolean)arg1)) {
+			svar0 = "You must begin the relevant section of Otto Godblessed's barbarian training.";
+			if (bitconfig_3764 > 0) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_31:
+		if (((boolean)arg1)) {
+			svar0 = "You must begin the relevant section of Otto Godblessed's barbarian training.";
+			if (bitconfig_3757 > 0) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_35:
+		if (((boolean)arg1)) {
+			svar0 = "You must begin the relevant section of Otto Godblessed's barbarian training.";
+			if (bitconfig_3764 > 0) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_39:
+		if (((boolean)arg1)) {
+			svar0 = "You must begin the relevant section of Otto Godblessed's barbarian training.";
+			if (bitconfig_3763 > 0) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_43:
+		if (((boolean)arg1)) {
+			svar0 = "You must begin the relevant section of Otto Godblessed's barbarian training.";
+			if (bitconfig_3761 > 0) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_47:
+		if (((boolean)arg1)) {
+			svar0 = "You must complete the Bar Crawl miniquest.";
+			if ((standart_config_76 >= 6) || ((boolean)bitconfig_3378)) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_51:
+		if (arg1 == 2) {
+			svar0 = "You must have a total combat level of at least 100 to accept an assignment in Shilo Village.";
+			if (script_1432() >= 100) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_55:
+		if (((boolean)arg1)) {
+			svar0 = "You must have completed the Knight Waves in Camelot.";
+			if (bitconfig_3909 == 8) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_59:
+		if (((boolean)arg1)) {
+			svar0 = "You require 33 Quest Points to enter the Champions' Guild.";
+			if (standart_config_101 >= 33) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_63:
+		if (((boolean)arg1)) {
+			svar0 = "You must unlock all four emotes by completing levels of the Stronghold of Security.";
+			if ((((boolean)bitconfig_2309) && ((boolean)bitconfig_2310)) && (((boolean)bitconfig_2311) && ((boolean)bitconfig_2312))) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_70:
+		if (((boolean)arg1)) {
+			svar0 = "You must learn the secret of the Senntisten necklace.";
+			if (((boolean)bitconfig_3639)) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_74:
+		if (((boolean)arg1)) {
+			svar0 = "You must have a total combat level of at least 40 to accept an assignment from Vannaka.";
+			if (script_1432() >= 40) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_78:
+		if (((boolean)arg1)) {
+			svar0 = "Completing quests will increase your access to Kudos with the Varrock Museum.";
+			if (script_4035() >= 153) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_82:
+		if (arg1 == 2) {
+			if (getMinute() >= standart_config_451) {
+				ivar2 = 1;
+			}
+			svar0 = "You may gather the Tears of Guthix once every week.";
+		} else {
+			if (arg1 == 3) {
+				if ((standart_config_101 >= bitconfig_456) || (script_4218() <= 0)) {
+					ivar2 = 1;
+				}
+				svar0 = "You must have gained a Quest Point or 100,000 total experience to enter Juna's cavern.";
+			}
+		}
+		GOTO	flow_142
+	flow_91:
+		if (((boolean)arg1)) {
+			svar0 = "You must have a total combat level of at least 40 to fight for the Void Knights.";
+			if (getMyCombat() >= 40) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_95:
+		if (((boolean)arg1)) {
+			svar0 = "You must have Larry or Chuck explain the purpose of penguin spying.";
+			if (((boolean)bitconfig_5277)) {
+				ivar2 = 1;
+			}
+		} else if (arg1 == 2) {
+			svar0 = "You must have spied on fewer than ten penguins already this week.";
+			if (bitconfig_5276 < 10) {
+				ivar2 = 1;
+			}
+		} else {
+			if (arg1 == 3) {
+				svar0 = "You may spy on penguins if your total Penguin Points are less than the maximum of fifty.";
+				if (bitconfig_5275 < 50) {
+					ivar2 = 1;
+				}
+			}
+		}
+		GOTO	flow_142
+	flow_107:
+		if (((boolean)arg1)) {
+			svar0 = "You must have Larry or Chuck explain the purpose of Penguin Hide and Seek.";
+			if (((boolean)bitconfig_5277)) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_111:
+		if (((boolean)arg1)) {
+			svar0 = "You may not chop down more than two evil trees per day.";
+			if (bitconfig_1545 < 2) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_115:
+		if (((boolean)arg1)) {
+			svar0 = "You may attempt the Agility, Magic and Ranged performances after a week has passed since your last show.";
+			if ((((boolean)bitconfig_5251) || ((boolean)bitconfig_5252)) || ((boolean)bitconfig_5253)) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_119:
+		if (arg1 == 2) {
+			svar0 = "You must wait at least a day since you last faced Bork.";
+			if (standart_config_1199 != getCurrentDaysSinceLaunch()) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_123:
+		if (arg1 == 2) {
+			svar0 = "At least a week must pass since you last faced the Skeletal Horror.";
+			if (getMinute() > bitconfig_6305) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_127:
+		if (((boolean)arg1)) {
+			svar0 = "You require 50 Runecrafting to enter the Runecrafters' Guild.";
+			if (getSkillActualLvl(20) >= 50) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_131:
+		if (arg1 == 2) {
+			svar0 = "You must have at least 65 Attack or Defence in order to take on a case.";
+			if ((getSkillActualLvl(0) >= 65) || (getSkillActualLvl(1) >= 65)) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_135:
+		if (((boolean)arg1)) {
+			svar0 = "You must have a total combat level of at least 48 to fight in the Clan Wars.";
+			if (script_1432() >= 48) {
+				ivar2 = 1;
+			}
+		}
+		GOTO	flow_142
+	flow_139:
+		if (((boolean)arg1)) {
+			svar0 = "To enter the Warriors' Guild your Attack or Strength level must be 99, or your combined Attack and Strength levels must total 130 or more.";
+			if (((add(getSkillActualLvl(2), getSkillActualLvl(0)) >= 130) || (getSkillActualLvl(0) >= 99)) || (getSkillActualLvl(2) >= 99)) {
+				ivar2 = 1;
+			}
+		}
+	flow_142:
+		if (((boolean)ivar2)) {
+			svar0 = concat("<str>", svar0);
+		}
+		return svar0;
+}

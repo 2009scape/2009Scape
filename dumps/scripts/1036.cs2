@@ -1,0 +1,11 @@
+int script_1036() {
+	int ivar0;
+	ivar0 = -1;
+	if (cs2method_3408(105, 105, 1548, bitconfig_4758) > 0) {
+		ivar0 = cs2method_3408(105, 107, 1549, bitconfig_4758);
+		if (ivar0 != -1) {
+			return ivar0;
+		}
+	}
+	return cs2method_3408(105, 107, 1483, bitconfig_4759);
+}

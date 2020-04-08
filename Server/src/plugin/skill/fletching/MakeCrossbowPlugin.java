@@ -1,35 +1,38 @@
 package plugin.skill.fletching;
 
-import org.crandor.game.content.skill.member.fletching.items.crossbow.Limb;
-import org.crandor.game.content.skill.member.fletching.items.crossbow.StringCross;
+import org.crandor.game.content.dialogue.SkillDialogueHandler;
+import org.crandor.game.content.skill.member.fletching.Fletching;
+import org.crandor.game.content.skill.member.fletching.items.crossbow.LimbPulse;
 import org.crandor.game.interaction.NodeUsageEvent;
 import org.crandor.game.interaction.UseWithHandler;
 import org.crandor.game.node.entity.player.Player;
+import org.crandor.game.node.item.Item;
+import org.crandor.net.packet.PacketRepository;
+import org.crandor.net.packet.context.ChildPositionContext;
+import org.crandor.net.packet.out.RepositionChild;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.plugin.Plugin;
 
 /**
  * Represents the plugin used to make a crossbow.
- * @author 'Vexia
+ * @author Ceikry
  */
 @InitializablePlugin
 public class MakeCrossbowPlugin extends UseWithHandler {
+	Fletching.Limb limb;
+	Item whichItem;
 
 	/**
 	 * Constructs a new {@code StringcrossbowPlugin} {@code Object}.
 	 */
 	public MakeCrossbowPlugin() {
-		super(9420, 9423, 9422, 9425, 9427, 9429, 9431, /** crossbow string */
-		9438);
+		super(9420, 9423, 9422, 9425, 9427, 9429, 9431);
 	}
 
 	@Override
 	public Plugin<Object> newInstance(Object arg) throws Throwable {
-		for (Limb l : Limb.values()) {
-			addHandler(l.getStock().getId(), ITEM_TYPE, this);
-		}
-		for (StringCross c : StringCross.values()) {
-			addHandler(c.getItem().getId(), ITEM_TYPE, this);
+		for (Fletching.Limb l : Fletching.Limb.values()) {
+			addHandler(new Item(l.stock).getId(), ITEM_TYPE, this);
 		}
 		return this;
 	}
@@ -37,17 +40,24 @@ public class MakeCrossbowPlugin extends UseWithHandler {
 	@Override
 	public boolean handle(NodeUsageEvent event) {
 		final Player player = event.getPlayer();
-		if (event.getUsedItem().getName().toLowerCase().equals("string") || event.getBaseItem().getName().toLowerCase().contains("string")) {
-			player.getDialogueInterpreter().open(92747, event.getUsedItem().getId() == 9438 ? event.getBaseItem() : event.getUsedItem());
-			return true;
+		limb = Fletching.limbMap.get(event.getBaseItem().getId());
+		whichItem = (Item)event.getUsedWith();
+		if(limb == null){
+			limb = Fletching.limbMap.get(event.getUsed().getId());
+			whichItem = (Item)event.getUsed();
 		}
-		final Limb limb = Limb.forItems(event.getUsedItem(), event.getBaseItem());
-		if (limb == null) {
-			player.getDialogueInterpreter().sendDialogue("That's not the correct limb to attach.");
-			return true;
-		}
-		player.getDialogueInterpreter().open(84923, event.getUsedItem(), event.getBaseItem());
+		SkillDialogueHandler handler = new SkillDialogueHandler(player, SkillDialogueHandler.SkillDialogue.ONE_OPTION, new Item(limb.product)) {
+			@Override
+			public void create(final int amount, int index) {
+				player.getPulseManager().run(new LimbPulse(player, whichItem, limb, amount));
+			}
+			@Override
+			public int getAll(int index) {
+				return player.getInventory().getAmount(whichItem);
+			}
+		};
+		handler.open();
+		PacketRepository.send(RepositionChild.class, new ChildPositionContext(player, 309, 2, 210, 10));
 		return true;
 	}
-
 }

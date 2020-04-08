@@ -1,0 +1,30 @@
+void script_199(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	string svar0;
+	ivar1 = 0;
+	ivar2 = cs2method3612();
+	ivar3 = 2;
+	ivar4 = 100;
+	ivar5 = 19;
+	svar0 = "";
+	if (ivar2 > 0) {
+		deleteAllExtraChilds(new WidgetPointer(arg0));
+		while (ivar1 < ivar2) {
+			svar0 = cs2method3613(ivar1);
+			createExtraChild(new WidgetPointer(arg0), 4, getExtraChildGap(new WidgetPointer(arg0)));
+			setWidgetRGB(new Color(164, 153, 125));
+			setWidgetFont(3793);
+			setWidgetUnknownBoolean(false);
+			setWidgetPosition(0, multiply(ivar1, ivar5), 0, 0);
+			setWidgetSize(ivar4, ivar5, 0, 0);
+			setWidgetText(svar0);
+			ivar1 = add(ivar1, 1);
+		}
+		setScriptCallOnClanChatDeltaStuff(198, new WidgetPointer(-32768,3), "I", new WidgetPointer(arg0));
+	}
+	return;
+}

@@ -1,0 +1,92 @@
+int script_193(int arg0) {
+	int ivar1;
+	if (((boolean)globalint_41)) {
+		return 1;
+	}
+	ivar1 = cs2method5004(arg0);
+	if (ivar1 == -1) {
+		return 0;
+	}
+	if (ivar1 == 115) {
+		return 1;
+	}
+	switch (globalint_41) {
+		flow_7:
+			case 1:
+			if ((((((((((boolean)ivar1) || (ivar1 == 4)) || (ivar1 == 27)) || (ivar1 == 28)) || (ivar1 == 29)) || (ivar1 == 109)) || (ivar1 == 110)) || (ivar1 == 26)) || (ivar1 == 117)) {
+				return 1;
+			}
+			break;
+			case 2:
+			if (((((boolean)ivar1) || (ivar1 == 2)) || (ivar1 == 17)) || (ivar1 == 116)) {
+				return 1;
+			}
+			break;
+			case 3:
+			switch (ivar1) {
+				case 19:
+				case 3:
+				case 18:
+				case 5:
+				case 6:
+				case 7:
+				case 31:
+				case 30:
+					return 1;
+			}
+			break;
+			case 4:
+			switch (ivar1) {
+				case 20:
+				case 9:
+				case 11:
+					return 1;
+			}
+			break;
+			case 5:
+			switch (ivar1) {
+				case 118:
+				case 103:
+				case 100:
+				case 101:
+				case 114:
+				case 113:
+				case 112:
+				case 111:
+				case 108:
+				case 106:
+				case 105:
+					return 1;
+			}
+			if (((boolean)script_506(arg0))) {
+				return 1;
+			}
+			break;
+			case 6:
+			if ((ivar1 == 102) || (ivar1 == 104)) {
+				return 1;
+			}
+			break;
+			case 7:
+			SWITCH (ivar1) {
+				case 42:
+					 GOTO flow_28
+				case 43:
+					 GOTO flow_28
+				case 41:
+					 GOTO flow_28
+				case 46:
+					 GOTO flow_28
+				case 107:
+					 GOTO flow_28
+				case 44:
+					 GOTO flow_28
+				case 45:
+					 GOTO flow_28
+			}
+			break;
+		flow_28:
+			return 1;
+	}
+	return 0;
+}

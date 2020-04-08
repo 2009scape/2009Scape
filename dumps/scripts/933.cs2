@@ -1,0 +1,42 @@
+int script_933(int arg0) {
+	switch (getItemHashmapData(arg0, 741)) {
+		case 1:
+			if (bitconfig_1852 < getItemHashmapData(arg0, 742)) {
+				return 0;
+			}
+			break;
+		case 2:
+			if (bitconfig_3763 < 2) {
+				return 0;
+			}
+			break;
+		case 3:
+			if (bitconfig_4310 < 10) {
+				return 0;
+			}
+			break;
+		case 4:
+			if (bitconfig_1990 < 280) {
+				return 0;
+			}
+			break;
+		case 5:
+			if (bitconfig_1850 < 4) {
+				return 0;
+			}
+			break;
+		case 6:
+			if (bitconfig_3550 < 8) {
+				return 0;
+			}
+			break;
+		case 7:
+			if (bitconfig_998 < 7) {
+				return 0;
+			}
+			break;
+		default:
+			return 1;
+	}
+	return -1;
+}

@@ -1,0 +1,19 @@
+void script_144(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	ivar4 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		if (getClientCycle() >= arg3) {
+			deleteExtraChild();
+			return;
+		}
+		if (mod(getClientCycle(), 40) < 20) {
+			ivar4 = subtract(getClientCycle(), arg2);
+			ivar4 = multiply(ivar4, 255);
+			ivar4 = divide(ivar4, subtract(arg3, arg2));
+			cs2method2103(ivar4);
+		} else {
+			cs2method2103(255);
+		}
+	}
+	return;
+}

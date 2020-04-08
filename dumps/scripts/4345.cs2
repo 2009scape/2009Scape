@@ -1,0 +1,11 @@
+string script_4345(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = -1;
+	if ((arg0 > 0) && (arg1 > 0)) {
+		ivar2 = cs2method_3408(105, 103, 3703, arg0);
+		if (ivar2 != -1) {
+			return cs2method_3408(105, 115, ivar2, arg1);
+		}
+	}
+	return "";
+}

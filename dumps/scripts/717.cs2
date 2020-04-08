@@ -1,0 +1,4 @@
+void script_717() {
+	setWidgetModel(41313, new WidgetPointer(774,11));
+	return;
+}

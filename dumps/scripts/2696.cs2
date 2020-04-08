@@ -1,0 +1,34 @@
+void script_2696(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10) {
+	if (((boolean)arg10)) {
+		deleteAllExtraChilds(new WidgetPointer(742,21));
+		deleteAllExtraChilds(new WidgetPointer(742,22));
+		setWidgetIsHidden(true, new WidgetPointer(742,20));
+		setScriptCallOnMousePressed(-1, "", new WidgetPointer(742,4));
+	} else if (arg10 == 2) {
+		deleteAllExtraChilds(new WidgetPointer(911,64));
+		deleteAllExtraChilds(new WidgetPointer(911,65));
+		setWidgetIsHidden(true, new WidgetPointer(911,59));
+		setScriptCallOnMousePressed(-1, "", new WidgetPointer(911,0));
+	} else {
+		deleteAllExtraChilds(new WidgetPointer(882,6));
+		deleteAllExtraChilds(new WidgetPointer(882,7));
+		setWidgetIsHidden(true, new WidgetPointer(882,5));
+		setScriptCallOnMousePressed(-1, "", new WidgetPointer(882,4));
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), arg2)) {
+		setWidgetSprite(2554);
+	}
+	if ((arg4 != -1) && setWidgetRegister(new WidgetPointer(arg0), arg4)) {
+		setWidgetRGB(new Color(235, 224, 188));
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		setScriptCallOnMousePressed(2695, new WidgetPointer(-32768,3), -2147483643, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, "IiiiiJiiiii");
+		setScriptCallOnMouseEntered(2691, new WidgetPointer(-32768,3), arg2, 1, arg3, 8419437, 1, "Ii1ii1");
+		setScriptCallOnMouseExit(2691, new WidgetPointer(-32768,3), arg2, 0, arg3, 6249298, 1, "Ii1ii1");
+		if (setWidgetRegister(new WidgetPointer(arg0), arg3)) {
+			setWidgetRGB(new Color(95, 91, 82));
+			setWidgetSize(getWidgetActualWidth(), getWidgetActualHeight(), 0, 0);
+		}
+	}
+	return;
+}

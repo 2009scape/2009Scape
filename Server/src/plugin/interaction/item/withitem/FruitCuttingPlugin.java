@@ -199,8 +199,8 @@ public final class FruitCuttingPlugin extends UseWithHandler {
 			case 0:
 				player.getInterfaceManager().openChatbox(309);
 				player.getPacketDispatch().sendItemZoomOnInterface(1, 160, 309, 2);
-				slice = buttonId == 2 ? true : false;
-				item = buttonId == 2 ? fruit.getSliced() : fruit.getDiced();
+				slice = buttonId == 2 ? false : true;
+				item = buttonId == 2 ? fruit.getDiced() : fruit.getSliced();
 				player.getPacketDispatch().sendString("<br><br><br><br>" + item.getName(), 309, 6);
 				player.getPacketDispatch().sendItemZoomOnInterface(item.getId(), 175, 309, 2);
 				stage = 1;

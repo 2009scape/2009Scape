@@ -1,0 +1,46 @@
+void script_3230() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar0 = 0;
+	if (getDisplayMode() < 2) {
+		setWidgetPosition(0, 16, 1, 1, new WidgetPointer(596,6));
+		setWidgetPosition(0, 16, 1, 1, new WidgetPointer(596,7));
+		setWidgetSize(0, 0, 1, 1, new WidgetPointer(744,16));
+		setWidgetPosition(0, 26, 1, 0, new WidgetPointer(744,23));
+	} else {
+		setWidgetPosition(0, 0, 1, 1, new WidgetPointer(596,6));
+		setWidgetPosition(0, 0, 1, 1, new WidgetPointer(596,7));
+		setWidgetSize(956, 503, 0, 0, new WidgetPointer(744,16));
+		ivar0 = getWidgetActualY(new WidgetPointer(744,16));
+		ivar0 = subtract(ivar0, getWidgetActualHeight(new WidgetPointer(744,23)));
+		ivar0 = divide(ivar0, 2);
+		setWidgetPosition(0, max(ivar0, 0), 1, 0, new WidgetPointer(744,23));
+	}
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 2;
+	ivar1 = add(getWidgetActualX(new WidgetPointer(744,99)), getWidgetActualX(new WidgetPointer(744,16)));
+	ivar1 = subtract(ivar1, add(getWidgetActualWidth(new WidgetPointer(744,81)), ivar3));
+	ivar2 = add(getWidgetActualY(new WidgetPointer(744,101)), getWidgetActualY(new WidgetPointer(744,16)));
+	ivar2 = add(ivar2, ivar3);
+	ivar2 = add(ivar2, getWidgetActualHeight(new WidgetPointer(744,101)));
+	setWidgetPosition(ivar1, ivar2, 0, 0, new WidgetPointer(744,81));
+	ivar1 = getWidgetActualX(new WidgetPointer(744,81));
+	ivar1 = add(ivar1, getWidgetActualWidth(new WidgetPointer(744,81)));
+	ivar1 = subtract(getWidgetActualWidth(new WidgetPointer(744,17)), ivar1);
+	setWidgetPosition(ivar1, ivar2, 2, 0, new WidgetPointer(744,81));
+	if ((cs2method6139() == 2) && (getDisplayMode() != 1)) {
+		setWidgetPosition(9, 57, 2, 0, new WidgetPointer(744,81));
+		setWidgetSize(800, 503, 0, 0, new WidgetPointer(744,16));
+	} else {
+		if (add(getWidgetActualWidth(new WidgetPointer(744,81)), getWidgetActualX(new WidgetPointer(744,81))) > getWidgetActualWidth(new WidgetPointer(744,17))) {
+			setWidgetPosition(5, 5, 2, 0, new WidgetPointer(744,81));
+		}
+	}
+	if (((boolean)globalint_986)) {
+		setWidgetPosition(5, 5, 2, 0, new WidgetPointer(744,81));
+	}
+	return;
+}

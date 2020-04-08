@@ -1,0 +1,10 @@
+void script_1723(int arg0,int arg1,int arg2,int arg3) {
+	if (getClientCycle() < arg3) {
+		return;
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1) || ((arg1 == -1) && setWidgetRegister(new WidgetPointer(arg0)))) {
+		setWidgetSprite(arg2);
+		setScriptCallOnGameloop(-1, "");
+	}
+	return;
+}

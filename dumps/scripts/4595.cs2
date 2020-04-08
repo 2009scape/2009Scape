@@ -1,0 +1,19 @@
+void script_4595() {
+	setWidgetIsHidden(true, new WidgetPointer(17,17));
+	setWidgetIsHidden(true, new WidgetPointer(17,16));
+	setWidgetIsHidden(true, new WidgetPointer(17,20));
+	setWidgetIsHidden(true, new WidgetPointer(17,19));
+	setWidgetIsHidden(true, new WidgetPointer(17,22));
+	setWidgetIsHidden(true, new WidgetPointer(17,21));
+	setWidgetIsHidden(true, new WidgetPointer(17,24));
+	setWidgetScrollMax(0, 0, new WidgetPointer(17,15));
+	setWidgetPosition(0, 0, 1, 1, new WidgetPointer(17,15));
+	cs2method2100(0, 0, new WidgetPointer(17,15));
+	setWidgetSize(0, 0, 1, 1);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetFont(495);
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetRGB(new Color(255, 152, 31));
+	setWidgetUnknownBoolean(true);
+	return;
+}

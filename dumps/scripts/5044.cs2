@@ -1,0 +1,5 @@
+void script_5044(int arg0,int arg1,int arg2) {
+	script_5045(arg0, arg1, arg2);
+	script_5048();
+	return;
+}

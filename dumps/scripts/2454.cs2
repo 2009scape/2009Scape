@@ -1,0 +1,18 @@
+int script_2454(int arg0) {
+	int ivar1;
+	ivar1 = 16777215;
+	switch (arg0) {
+		case 0:
+			ivar1 = 16777215;
+			break;
+		case 1:
+			ivar1 = 65280;
+			break;
+		case 2:
+			ivar1 = 14064640;
+			break;
+		case 3:
+			ivar1 = 16727871;
+	}
+	return ivar1;
+}

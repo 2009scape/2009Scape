@@ -1,0 +1,10 @@
+void script_707() {
+	if (getDisplayMode() >= 2) {
+		setWidgetPosition(220, 11, 2, 0, new WidgetPointer(680,19));
+	} else {
+		setWidgetPosition(12, 11, 2, 0, new WidgetPointer(680,19));
+	}
+	globalint_215 = 255;
+	globalint_216 = 0;
+	return;
+}

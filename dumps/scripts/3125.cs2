@@ -1,0 +1,16 @@
+void script_3125(int arg0,int arg1,int arg2,string arg3,string arg4) {
+	script_2994(arg0, 0, 11, 11, 0, 0, 1535, 0, 0, 0, 0);
+	setScriptCallOnMouseEntered(3126, new WidgetPointer(arg0), 0, "Ii");
+	setScriptCallOnMouseExit(3127, new WidgetPointer(arg0), 0, "Ii");
+	setWidgetContextMenuOption(1, "Sort");
+	cs2method1305(arg3);
+	setScriptCallOnClickContextMenu(3148, arg1, "i");
+	script_2994(arg0, 1, 11, 11, 0, 0, 1536, 0, 0, 0, 0);
+	setWidgetPosition(0, 0, 2, 0);
+	setScriptCallOnMouseEntered(3126, new WidgetPointer(arg0), 1, "Ii");
+	setScriptCallOnMouseExit(3127, new WidgetPointer(arg0), 1, "Ii");
+	setWidgetContextMenuOption(1, "Sort");
+	cs2method1305(arg4);
+	setScriptCallOnClickContextMenu(3148, arg2, "i");
+	return;
+}

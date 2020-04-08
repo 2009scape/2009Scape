@@ -1,0 +1,14 @@
+void script_939() {
+	int ivar0;
+	int ivar1;
+	ivar0 = 0;
+	ivar1 = -1;
+	while (ivar0 < getItemContainerLength(90)) {
+		if (setWidgetRegister(new WidgetPointer(335,32), ivar0)) {
+			ivar1 = getItemIdInSlotSplit(90, ivar0);
+			script_812(ivar1);
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	return;
+}

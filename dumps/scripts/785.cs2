@@ -1,0 +1,86 @@
+void script_785(int arg0) {
+	globalint_988 = 0;
+	globalint_989 = 0;
+	globalint_990 = 0;
+	globalint_991 = 0;
+	switch (arg0) {
+		case 12582919:
+			globalint_988 = 1;
+			if (((boolean)bitconfig_6459)) {
+				setWidgetSprite(1702, new WidgetPointer(arg0));
+			}
+			break;
+		case 12582921:
+			globalint_989 = 1;
+			if (((boolean)bitconfig_6462)) {
+				setWidgetSprite(1702, new WidgetPointer(arg0));
+			}
+			break;
+		case 12582923:
+			globalint_990 = 1;
+			if (((boolean)bitconfig_6461)) {
+				setWidgetSprite(1702, new WidgetPointer(arg0));
+			}
+			break;
+		case 12582925:
+			globalint_991 = 1;
+			if (((boolean)bitconfig_6460)) {
+				setWidgetSprite(1702, new WidgetPointer(arg0));
+			}
+			break;
+		case 28180485:
+			globalint_988 = 1;
+			if (((boolean)bitconfig_6463)) {
+				setWidgetSprite(1702, new WidgetPointer(arg0));
+			}
+			break;
+		case 28180489:
+			globalint_990 = 1;
+			if (((boolean)bitconfig_6464)) {
+				setWidgetSprite(1702, new WidgetPointer(arg0));
+			}
+			break;
+		case 28180487:
+			globalint_989 = 1;
+			if (((boolean)bitconfig_6465)) {
+				setWidgetSprite(1702, new WidgetPointer(arg0));
+			}
+			break;
+		case 12648453:
+			globalint_988 = 1;
+			if (((boolean)bitconfig_6466)) {
+				setWidgetSprite(1702, new WidgetPointer(arg0));
+			}
+			break;
+		case 12648455:
+			globalint_989 = 1;
+			if (((boolean)bitconfig_6467)) {
+				setWidgetSprite(1702, new WidgetPointer(arg0));
+			}
+			break;
+		case 62259207:
+			globalint_988 = 1;
+			if (((boolean)bitconfig_7348)) {
+				setWidgetSprite(1702, new WidgetPointer(arg0));
+			}
+			break;
+		case 62259209:
+			globalint_989 = 1;
+			if (((boolean)bitconfig_7351)) {
+				setWidgetSprite(1702, new WidgetPointer(arg0));
+			}
+			break;
+		case 62259211:
+			globalint_990 = 1;
+			if (((boolean)bitconfig_7350)) {
+				setWidgetSprite(1702, new WidgetPointer(arg0));
+			}
+			break;
+		case 62259213:
+			globalint_991 = 1;
+			if (((boolean)bitconfig_7349)) {
+				setWidgetSprite(1702, new WidgetPointer(arg0));
+			}
+	}
+	return;
+}

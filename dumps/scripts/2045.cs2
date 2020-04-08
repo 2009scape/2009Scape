@@ -1,0 +1,59 @@
+void script_2045(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	opcStruct5208(2,0,0) structdump_0;
+	opcStruct5209(2,0,0) structdump_1;
+	if (cs2method5220()) {
+		script_2046(arg0);
+		return;
+	}
+	ivar5 = getWidgetActualWidth(new WidgetPointer(arg1));
+	if (ivar5 <= 0) {
+		return;
+	}
+	ivar6 = 0;
+	ivar7 = 0;
+	structdump_0 = cs2method5208();
+	ivar7 = structdump_0.intpart_1;
+	ivar6 = structdump_0.intpart_0;
+	if (ivar6 <= 0) {
+		return;
+	}
+	ivar8 = 0;
+	ivar9 = 0;
+	ivar10 = 0;
+	ivar11 = 0;
+	ivar12 = 0;
+	ivar13 = 0;
+	structdump_1 = cs2method5209();
+	ivar13 = structdump_1.intpart_1;
+	ivar12 = structdump_1.intpart_0;
+	ivar8 = add(ivar13, divide(ivar7, 2));
+	ivar9 = subtract(ivar13, divide(ivar7, 2));
+	ivar10 = add(ivar12, divide(ivar6, 2));
+	ivar11 = subtract(ivar12, divide(ivar6, 2));
+	ivar11 = add(ivar11, multiplyDivide(ivar6, ivar5, subtract(ivar5, getWidgetActualWidth(new WidgetPointer(arg0)))));
+	if (((ivar12 != arg2) || (ivar13 != arg3)) || (ivar7 != arg4)) {
+		setScriptCallOnGameloop(2045, new WidgetPointer(arg0), new WidgetPointer(arg1), ivar12, ivar13, ivar7, "IIiii", new WidgetPointer(arg0));
+		script_295(arg0, ivar8, ivar9, ivar10, ivar11);
+	}
+	if (((boolean)bitconfig_6174)) {
+		script_4(49479716, globalint_674, 280, arg0, ivar8, ivar9, ivar10, ivar11, "You are here");
+	} else {
+		deleteAllExtraChilds(new WidgetPointer(755,36));
+	}
+	script_4(49479717, globalint_623, globalint_624, arg0, ivar8, ivar9, ivar10, ivar11, globalstring_53);
+	script_4(49479718, globalint_625, globalint_626, arg0, ivar8, ivar9, ivar10, ivar11, globalstring_54);
+	script_4(49479719, globalint_627, globalint_628, arg0, ivar8, ivar9, ivar10, ivar11, globalstring_55);
+	script_4(49479720, globalint_629, globalint_630, arg0, ivar8, ivar9, ivar10, ivar11, globalstring_56);
+	script_4(49479721, globalint_940, globalint_941, arg0, ivar8, ivar9, ivar10, ivar11, globalstring_190);
+	script_4(49479722, standart_config_1159, 972, arg0, ivar8, ivar9, ivar10, ivar11, "Your marker");
+	return;
+}

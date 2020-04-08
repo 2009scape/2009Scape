@@ -1,0 +1,24 @@
+void script_4773(int arg0,int arg1,int arg2) {
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	if (citadelConfigsInitialized() && (bitconfig_9555 == arg0)) {
+		if (((boolean)globalint_1560)) {
+			script_4768();
+			stack_dump0 = arg0;
+			stack_dump1 = arg1;
+			stack_dump2 = arg2;
+			/* 
+				mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	4777
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:178)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+					at tests.Main.main(Main.java:45)
+				
+			 */
+		}
+		globalint_1560 = 0;
+	}
+	return;
+}

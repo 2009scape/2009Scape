@@ -67,7 +67,11 @@ public final class DoorActionHandler {
 			handleAutowalkDoor(player, object);
 			return;
 		}
-		player.getAudioManager().send(new Audio(81));
+		if (d.isMetal()) {
+			player.getAudioManager().send(new Audio(71));
+		} else {
+			player.getAudioManager().send(new Audio(81));
+		}
 		if (second != null) {
 			Door s = DoorConfigSQLHandler.forId(second.getId());
 			open(object, second, d.getReplaceId(), s == null ? second.getId() : s.getReplaceId(), true, 500, d.isFence());
@@ -296,9 +300,21 @@ public final class DoorActionHandler {
 			secondDir = (secondDir + 2) % 4;
 		}
 		Location secondLoc = firstLoc.transform((int) p.getX(), (int) p.getY(), 0);
-		if(object.getId() == 36917 || object.getId() == 36919){
-			ObjectBuilder.replace(object, object.transform(36919, firstDir, firstLoc), restoreTicks, true);
-			ObjectBuilder.replace(second, second.transform(36917, secondDir, secondLoc), restoreTicks, true);
+		if((object.getId() == 36917 || object.getId() == 36919)){
+			switch(object.getDirection()) {
+				case SOUTH:
+					ObjectBuilder.replace(object, object.transform(36919, firstDir, firstLoc), restoreTicks, true);
+					ObjectBuilder.replace(second, second.transform(36917, secondDir, secondLoc), restoreTicks, true);
+					break;
+				case EAST:
+					ObjectBuilder.replace(object, object.transform(36917, firstDir, firstLoc), restoreTicks, true);
+					ObjectBuilder.replace(second, second.transform(36919, secondDir, secondLoc), restoreTicks, true);
+					break;
+				default:
+					ObjectBuilder.replace(object, object.transform(36919, firstDir, firstLoc), restoreTicks, true);
+					ObjectBuilder.replace(second, second.transform(36917, secondDir, secondLoc), restoreTicks, true);
+					break;
+			}
 		} else {
 			ObjectBuilder.replace(object, object.transform(replaceId, firstDir, firstLoc), restoreTicks, clip);
 			ObjectBuilder.replace(second, second.transform(secondReplaceId, secondDir, secondLoc), restoreTicks, clip);

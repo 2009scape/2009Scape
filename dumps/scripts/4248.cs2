@@ -1,0 +1,34 @@
+void script_4248(int arg0,int arg1,int arg2,int arg3,int arg4,string arg5) {
+	if (isParent(new WidgetPointer(script_8(1)), 1056)) {
+		arg5 = "";
+	}
+	if (arg3 == -1) {
+		arg3 = 16777215;
+	}
+	if (arg4 == -1) {
+		arg4 = 5631;
+	}
+	setWidgetIsHidden(true, new WidgetPointer(746,185));
+	setWidgetIsHidden(true, new WidgetPointer(548,196));
+	if (((boolean)stringMethod4107(arg5, ""))) {
+		return;
+	}
+	setWidgetText(new WidgetPointer(746,241), arg5);
+	setWidgetPosition(arg0, arg1, 2, 2, new WidgetPointer(746,185));
+	setWidgetRGB(new Color(arg3), new WidgetPointer(746,241));
+	setWidgetFont(arg4, new WidgetPointer(746,241));
+	if (((boolean)arg2)) {
+		setWidgetIsHidden(false, new WidgetPointer(746,243));
+		setWidgetIsHidden(true, new WidgetPointer(746,244));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(746,243));
+		setWidgetIsHidden(false, new WidgetPointer(746,244));
+	}
+	setWidgetIsHidden(false, new WidgetPointer(746,185));
+	if (((boolean)stringMethod4107(arg5, "The '?' icon will add an arrow to the screen which points to your destination.")) && ((boolean)getLanguage())) {
+		setWidgetIsHidden(false, new WidgetPointer(746,242));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(746,242));
+	}
+	return;
+}

@@ -1,0 +1,48 @@
+int script_2720(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	arg0 = getRealItem(arg0);
+	ivar2 = cs2method_3408(111, 105, 731, arg0);
+	if (((standart_config_532 == 6529) && (ivar2 != -1)) && (ivar2 > 0)) {
+		return ivar2;
+	}
+	ivar2 = cs2method_3408(111, 105, 733, arg0);
+	if ((ivar2 != -1) && (ivar2 > 0)) {
+		return ivar2;
+	}
+	if (((boolean)getItemHashmapData(arg0, 258)) || ((boolean)getItemHashmapData(arg0, 259))) {
+		return 99000;
+	}
+	ivar3 = 130;
+	ivar4 = 100;
+	ivar5 = 0;
+	ivar6 = script_2721(arg1);
+	if (ivar6 == -1) {
+		return -1;
+	}
+	ivar7 = getItemAmtInContainer(standart_config_118, arg0);
+	ivar8 = subtract(ivar7, ivar6);
+	if (((boolean)ivar6)) {
+		ivar5 = ivar4;
+	} else if (((boolean)ivar7)) {
+		ivar5 = ivar3;
+	} else if (ivar7 >= ivar6) {
+		ivar5 = ivar4;
+	} else {
+		ivar5 = subtract(ivar3, multiplyDivide(subtract(ivar3, ivar4), ivar6, ivar7));
+	}
+	if (ivar5 < 0) {
+		ivar5 = 0;
+	}
+	ivar5 = max(ivar4, min(ivar3, ivar5));
+	ivar2 = multiplyDivide(getItemValue(arg0), 100, ivar5);
+	if (standart_config_532 == 6529) {
+		ivar2 = multiplyDivide(3, 2, ivar2);
+	}
+	return max(ivar2, 1);
+}

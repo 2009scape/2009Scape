@@ -1,0 +1,10 @@
+void script_4698() {
+	int ivar0;
+	ivar0 = 0;
+	ivar0 = divide(globalint_1545, 2);
+	setWidgetSize(divide(multiply(ivar0, 16384), 100), getWidgetActualHeight(new WidgetPointer(500,12)), 2, 0, new WidgetPointer(500,12));
+	if (ivar0 < 97) {
+		setWidgetIsHidden(true, new WidgetPointer(500,13));
+	}
+	return;
+}

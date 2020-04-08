@@ -1,0 +1,16 @@
+void script_2516() {
+	globalint_847 = bitconfig_6364;
+	globalint_848 = bitconfig_6366;
+	globalint_849 = bitconfig_6367;
+	globalint_850 = bitconfig_6363;
+	globalint_851 = bitconfig_6365;
+	globalint_839 = bitconfig_6351;
+	setWidgetText(new WidgetPointer(654,13), intToStr(globalint_847));
+	setWidgetText(new WidgetPointer(654,61), intToStr(globalint_848));
+	setWidgetText(new WidgetPointer(654,53), intToStr(globalint_849));
+	setWidgetText(new WidgetPointer(654,45), intToStr(globalint_850));
+	setWidgetText(new WidgetPointer(654,70), intToStr(globalint_851));
+	setWidgetText(new WidgetPointer(654,77), script_46(globalint_839, ","));
+	script_2517();
+	return;
+}

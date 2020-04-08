@@ -1,0 +1,5 @@
+void script_4236(int arg0) {
+	setScriptCallOnUse(4239, "", new WidgetPointer(arg0));
+	setScriptCallOnUseWith(4240, "", new WidgetPointer(arg0));
+	return;
+}

@@ -1,0 +1,26 @@
+cs2func_script_296_struct(2,0,0) script_296(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6) {
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int stack_dump0;
+	opcStruct5224(2,0,0) structdump_1;
+	ivar7 = 0;
+	ivar8 = 0;
+	if (((boolean)arg1)) {
+		ivar7 = extractX(arg0);
+		ivar8 = extractY(arg0);
+	} else {
+		stack_dump0 = arg0;
+		structdump_1 = cs2method5224(stack_dump0);
+		ivar8 = structdump_1.intpart_1;
+		ivar7 = structdump_1.intpart_0;
+	}
+	ivar9 = getWidgetActualWidth(new WidgetPointer(arg2));
+	ivar10 = getWidgetActualHeight(new WidgetPointer(arg2));
+	ivar7 = multiplyDivide(ivar9, subtract(arg5, arg6), subtract(ivar7, arg6));
+	ivar8 = multiplyDivide(ivar10, subtract(arg3, arg4), subtract(ivar8, arg4));
+	ivar7 = subtract(ivar7, divide(ivar9, 2));
+	ivar8 = subtract(divide(ivar10, 2), ivar8);
+	return newstruct cs2func_script_296_struct(ivar7, ivar8);
+}

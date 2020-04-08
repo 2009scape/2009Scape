@@ -1,0 +1,36 @@
+void script_1074(int arg0,int arg1,int arg2) {
+	switch (globalint_134) {
+		case 0:
+			globalint_135 = arg2;
+			break;
+		case 1:
+			globalint_136 = arg2;
+			break;
+		case 2:
+			globalint_137 = arg2;
+			break;
+		case 3:
+			globalint_138 = arg2;
+			break;
+		case 4:
+			globalint_139 = arg2;
+			break;
+		case 5:
+			globalint_140 = arg2;
+			break;
+		case 6:
+			globalint_141 = arg2;
+			break;
+		case 7:
+			globalint_142 = arg2;
+			break;
+		case 8:
+			globalint_143 = arg2;
+			break;
+		case 9:
+			globalint_144 = arg2;
+	}
+	globalint_134 = add(globalint_134, 1);
+	script_1072(arg0, arg1);
+	return;
+}

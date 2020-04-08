@@ -1,0 +1,46 @@
+void script_2951() {
+	int ivar0;
+	int ivar1;
+	ivar0 = 39059469;
+	if (hasSSKey()) {
+		ivar0 = 63897603;
+	}
+	ivar1 = script_2948();
+	if (((ivar1 != -3) && (ivar1 != 42)) && (ivar1 != 43)) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(ivar0));
+		return;
+	}
+	if (getClientCycle() < globalint_1092) {
+		return;
+	}
+	globalint_1092 = add(getClientCycle(), 5);
+	switch (getWidgetSpriteId(new WidgetPointer(ivar0))) {
+		case 4107:
+			setWidgetSprite(4108, new WidgetPointer(ivar0));
+			break;
+		case 4108:
+			setWidgetSprite(4109, new WidgetPointer(ivar0));
+			break;
+		case 4109:
+			setWidgetSprite(4110, new WidgetPointer(ivar0));
+			break;
+		case 4110:
+			setWidgetSprite(4111, new WidgetPointer(ivar0));
+			break;
+		case 4111:
+			setWidgetSprite(4112, new WidgetPointer(ivar0));
+			break;
+		case 4112:
+			setWidgetSprite(4113, new WidgetPointer(ivar0));
+			break;
+		case 4113:
+			setWidgetSprite(4114, new WidgetPointer(ivar0));
+			break;
+		case 4114:
+			setWidgetSprite(4107, new WidgetPointer(ivar0));
+			break;
+		default:
+			setWidgetSprite(4107, new WidgetPointer(ivar0));
+	}
+	return;
+}

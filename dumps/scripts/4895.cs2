@@ -1,0 +1,25 @@
+void script_4895() {
+	int ivar0;
+	int stack_dump0;
+	ivar0 = 0;
+	if (citadelConfigsInitialized()) {
+		stack_dump0 = bitconfig_9548;
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+				at tests.Main.main(Main.java:45)
+			
+		 */
+	}
+	if (((boolean)ivar0)) {
+		setWidgetIsHidden(true, new WidgetPointer(1092,419));
+		setWidgetIsHidden(true, new WidgetPointer(1092,427));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(1092,419));
+		setWidgetIsHidden(false, new WidgetPointer(1092,427));
+	}
+	return;
+}

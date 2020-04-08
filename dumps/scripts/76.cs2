@@ -1,0 +1,20 @@
+void script_76() {
+	string svar0;
+	svar0 = "null";
+	if (globalint_3 != -1) {
+		globalint_3 = add(globalint_3, 1);
+		if (globalint_3 >= 20) {
+			globalint_3 = 0;
+		}
+		if (globalint_3 == globalint_4) {
+			globalstring_1 = "";
+			globalint_3 = -1;
+		} else {
+			svar0 = script_79(globalint_3);
+			if (strLength(svar0) > 0) {
+				globalstring_1 = svar0;
+			}
+		}
+	}
+	return;
+}

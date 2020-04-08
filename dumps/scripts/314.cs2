@@ -1,0 +1,8 @@
+void script_314(int arg0) {
+	if (globalint_179 != -1) {
+		setWidgetModel(globalint_179, new WidgetPointer(arg0));
+	} else {
+		setWidgetModel(18535, new WidgetPointer(arg0));
+	}
+	return;
+}

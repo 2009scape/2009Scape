@@ -1,0 +1,13 @@
+void script_5164(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	ivar5 = getWidgetActualHeight(new WidgetPointer(arg0));
+	ivar6 = divide(multiply(subtract(ivar5, arg4), 8), ivar5);
+	ivar7 = divide(multiply(arg3, 128), getWidgetActualWidth(new WidgetPointer(arg0)));
+	bitconfig_9643 = mod(ivar6, 8);
+	bitconfig_9644 = mod(ivar7, 128);
+	script_5167(arg3, arg4);
+	setWidgetRGB(new Color(getColorRelatedMethod4020(standart_config_2347)), new WidgetPointer(arg2));
+	return;
+}

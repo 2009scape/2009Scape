@@ -1,0 +1,31 @@
+void script_1323(int arg0,int arg1,int arg2,int arg3) {
+	if (getItemIdInSlot(439, 0) != -1) {
+		setWidgetIsHidden(false, new WidgetPointer(arg0));
+		setItemOnWidgetMethod2205(getItemIdInSlot(439, 0), 1, new WidgetPointer(arg0));
+		cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + getItemName(getItemIdInSlot(439, 0)));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+	}
+	if (getItemIdInSlot(439, 1) != -1) {
+		setWidgetIsHidden(false, new WidgetPointer(arg1));
+		setItemOnWidgetMethod2205(getItemIdInSlot(439, 1), 1, new WidgetPointer(arg1));
+		cs2method2305(new WidgetPointer(arg1), "<col=ff9040>" + getItemName(getItemIdInSlot(439, 1)));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(arg1));
+	}
+	if (getItemIdInSlot(439, 2) != -1) {
+		setWidgetIsHidden(false, new WidgetPointer(arg2));
+		setItemOnWidgetMethod2205(getItemIdInSlot(439, 2), 1, new WidgetPointer(arg2));
+		cs2method2305(new WidgetPointer(arg2), "<col=ff9040>" + getItemName(getItemIdInSlot(439, 2)));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(arg2));
+	}
+	if (getItemIdInSlot(439, 3) != -1) {
+		setWidgetIsHidden(false, new WidgetPointer(arg3));
+		setItemOnWidgetMethod2205(getItemIdInSlot(439, 3), 1, new WidgetPointer(arg3));
+		cs2method2305(new WidgetPointer(arg3), "<col=ff9040>" + getItemName(getItemIdInSlot(439, 3)));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(arg3));
+	}
+	return;
+}

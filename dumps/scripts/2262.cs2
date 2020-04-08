@@ -1,0 +1,3 @@
+int script_2262(int arg0) {
+	return multiplyDivide(getItemValue(arg0), 100, getItemHashmapData(arg0, 1046));
+}

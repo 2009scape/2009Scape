@@ -1,0 +1,26 @@
+void script_2135(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	ivar3 = getWidgetActualX(new WidgetPointer(arg0));
+	ivar4 = getWidgetActualY(new WidgetPointer(arg0));
+	if ((arg1 >= 0) && (arg1 <= divide(getWidgetActualWidth(new WidgetPointer(arg0)), 2))) {
+		ivar3 = subtract(ivar3, add(rndExcl(2), 2));
+	} else {
+		if (arg1 <= getWidgetActualWidth(new WidgetPointer(arg0))) {
+			ivar3 = add(add(ivar3, rndExcl(2)), 2);
+		}
+	}
+	if ((arg2 >= 0) && (arg2 <= divide(getWidgetActualHeight(new WidgetPointer(arg0)), 2))) {
+		ivar4 = subtract(ivar4, add(rndExcl(2), 2));
+	} else {
+		if (arg2 <= getWidgetActualHeight(new WidgetPointer(arg0))) {
+			ivar4 = add(add(ivar4, rndExcl(2)), 2);
+		}
+	}
+	ivar3 = max(ivar3, 0);
+	ivar4 = max(ivar4, 0);
+	ivar3 = min(ivar3, subtract(getWidgetActualWidth(new WidgetPointer(getWidgetParentId(new WidgetPointer(arg0)))), getWidgetActualWidth(new WidgetPointer(arg0))));
+	ivar4 = min(ivar4, subtract(getWidgetActualHeight(new WidgetPointer(getWidgetParentId(new WidgetPointer(arg0)))), getWidgetActualHeight(new WidgetPointer(arg0))));
+	setWidgetPosition(ivar3, ivar4, 0, 0, new WidgetPointer(arg0));
+	return;
+}

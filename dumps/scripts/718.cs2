@@ -1,0 +1,34 @@
+int script_718(int arg0) {
+	flow_0:
+		SWITCH (arg0) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_2
+			case 3:
+				 GOTO flow_3
+			case 4:
+				 GOTO flow_4
+			case 5:
+				 GOTO flow_5
+			case 6:
+				 GOTO flow_6
+			case 7:
+				 GOTO flow_7
+		}
+		return 16777215;
+	flow_1:
+		return 16711680;
+	flow_2:
+		return 16744448;
+	flow_3:
+		return 16776960;
+	flow_4:
+		return 65280;
+	flow_5:
+		return 255;
+	flow_6:
+		return 4194559;
+	flow_7:
+		return 8388863;
+}

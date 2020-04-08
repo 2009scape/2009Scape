@@ -1,0 +1,98 @@
+void script_1049(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	cs2func_script_4590_struct(6,0,0) structdump_0;
+	ivar1 = -1;
+	ivar2 = -1;
+	ivar3 = -1;
+	ivar4 = -1;
+	ivar5 = -1;
+	ivar6 = -1;
+	structdump_0 = script_4590();
+	ivar6 = structdump_0.intpart_5;
+	ivar5 = structdump_0.intpart_4;
+	ivar4 = structdump_0.intpart_3;
+	ivar3 = structdump_0.intpart_2;
+	ivar2 = structdump_0.intpart_1;
+	ivar1 = structdump_0.intpart_0;
+	if (((boolean)arg0)) {
+		globalint_1651 = 0;
+		cs2method5006(0);
+		script_1558(0);
+		return;
+	}
+	if (arg0 == 2) {
+		script_1050(0, "");
+	} else if (arg0 == 4) {
+		if (cs2method3612() > 0) {
+			script_1050(2, "");
+		} else {
+			globalint_41 = 0;
+			script_181(0);
+			script_178();
+			script_84();
+			script_89();
+			messageType0("You aren't in a Friends Chat channel.");
+			return;
+		}
+	} else if (arg0 == 6) {
+		if (ivar1 >= 0) {
+			if (ivar2 >= ivar3) {
+				script_1050(8, "");
+			} else {
+				message(43, 0, "Your rank is not high enough to chat in the Clan Chat.");
+				return;
+			}
+		} else {
+			globalint_41 = 0;
+			script_181(0);
+			script_178();
+			script_84();
+			script_89();
+			messageType0("You aren't in a Clan Chat channel.");
+			return;
+		}
+	} else {
+		if (arg0 == 7) {
+			globalint_1651 = 3;
+			cs2method5006(3);
+			script_1558(0);
+			return;
+		}
+		if (arg0 == 8) {
+			if (ivar4 >= 0) {
+				if (ivar5 >= ivar6) {
+					script_1050(10, "");
+				} else {
+					message(43, 0, "Guests cannot chat in this visited Clan channel.");
+					return;
+				}
+			} else {
+				globalint_41 = 0;
+				script_181(0);
+				script_178();
+				script_84();
+				script_89();
+				messageType0("You aren't a guest in a Clan Chat channel.");
+				return;
+			}
+		}
+	}
+	if (arg0 == 3) {
+		globalint_1651 = 1;
+		cs2method5006(1);
+		script_1558(0);
+		return;
+	}
+	if (arg0 == 5) {
+		globalint_1651 = 2;
+		cs2method5006(2);
+		script_1558(0);
+		return;
+	}
+	return;
+}

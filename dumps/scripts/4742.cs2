@@ -1,0 +1,6 @@
+void script_4742(int arg0) {
+	bitconfig_9904 = 99999;
+	setWidgetIsHidden(true, new WidgetPointer(1144,9));
+	setWidgetIsHidden(true, new WidgetPointer(1144,45));
+	return;
+}

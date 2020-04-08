@@ -1,0 +1,8 @@
+void script_2511() {
+	setWidgetText(new WidgetPointer(654,8), cs2method_3408(105, 115, 2385, 1));
+	setWidgetText(new WidgetPointer(654,57), cs2method_3408(105, 115, 2385, 2));
+	setWidgetText(new WidgetPointer(654,49), cs2method_3408(105, 115, 2385, 3));
+	setWidgetText(new WidgetPointer(654,41), cs2method_3408(105, 115, 2385, 4));
+	setWidgetText(new WidgetPointer(654,66), cs2method_3408(105, 115, 2385, 5));
+	return;
+}

@@ -1,0 +1,9 @@
+void script_4435(int arg0) {
+	if (cs2method3751()) {
+		if (arg0 <= -1) {
+			arg0 = globalint_1035;
+		}
+		script_4436(72744974, arg0);
+	}
+	return;
+}

@@ -1,0 +1,117 @@
+cs2func_script_4792_struct(6,0,0) script_4792(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	int ivar22;
+	string svar0;
+	int stack_dump0;
+	cs2func_script_4791_struct(7,1,0) structdump_1;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 0;
+	ivar8 = 0;
+	ivar9 = 0;
+	ivar10 = 0;
+	ivar11 = 0;
+	ivar12 = 0;
+	ivar13 = 0;
+	ivar14 = cs2method_3408(105, 74, 4008, arg0);
+	ivar15 = 0;
+	ivar16 = 0;
+	ivar17 = 0;
+	ivar18 = 0;
+	ivar19 = 0;
+	ivar20 = 0;
+	ivar21 = -1;
+	svar0 = "";
+	if ((arg0 < 1) || (arg0 > 900)) {
+		messageType0("Clan Build Tick : Attempting to look up build cost for invalid job " + intToStr(arg0) + ".");
+		return newstruct cs2func_script_4792_struct(0, 0, 0, 0, 0, 0);
+	}
+	stack_dump0 = arg0;
+	structdump_1 = script_4791(stack_dump0);
+	ivar10 = structdump_1.intpart_6;
+	ivar9 = structdump_1.intpart_5;
+	ivar8 = structdump_1.intpart_4;
+	ivar13 = structdump_1.intpart_3;
+	ivar12 = structdump_1.intpart_2;
+	ivar11 = structdump_1.intpart_1;
+	svar0 = structdump_1.stringpart_0;
+	ivar21 = structdump_1.intpart_0;
+	ivar22 = -1;
+	if (arg0 < 600) {
+		switch (ivar8) {
+			case 1:
+				ivar22 = 2021;
+				break;
+			case 2:
+				ivar22 = 2022;
+				break;
+			case 3:
+				ivar22 = 2023;
+				break;
+			case 4:
+				ivar22 = cs2method_3408(105, 74, 4010, ivar10);
+				break;
+			case 5:
+				ivar22 = ivar14;
+		}
+	} else {
+		switch (ivar8) {
+			case 1:
+				ivar22 = 2031;
+				break;
+			case 2:
+				ivar22 = 2032;
+				break;
+			case 3:
+				ivar22 = 2033;
+				break;
+			case 4:
+				ivar22 = cs2method_3408(105, 74, 4009, ivar10);
+				break;
+			case 5:
+				ivar22 = ivar14;
+		}
+	}
+	if (((boolean)arg1)) {
+		return newstruct cs2func_script_4792_struct(0, 0, 0, 0, 0, 0);
+	}
+	switch (arg1) {
+		case 1:
+			return newstruct cs2func_script_4792_struct(getOtherCommonData(ivar22, 1483), getOtherCommonData(ivar22, 1490), getOtherCommonData(ivar22, 1497), getOtherCommonData(ivar22, 1504), getOtherCommonData(ivar22, 1511), getOtherCommonData(ivar22, 1518));
+		case 2:
+			return newstruct cs2func_script_4792_struct(getOtherCommonData(ivar22, 1484), getOtherCommonData(ivar22, 1491), getOtherCommonData(ivar22, 1498), getOtherCommonData(ivar22, 1505), getOtherCommonData(ivar22, 1512), getOtherCommonData(ivar22, 1519));
+		case 3:
+			return newstruct cs2func_script_4792_struct(getOtherCommonData(ivar22, 1485), getOtherCommonData(ivar22, 1492), getOtherCommonData(ivar22, 1499), getOtherCommonData(ivar22, 1506), getOtherCommonData(ivar22, 1513), getOtherCommonData(ivar22, 1520));
+		case 4:
+			return newstruct cs2func_script_4792_struct(getOtherCommonData(ivar22, 1486), getOtherCommonData(ivar22, 1493), getOtherCommonData(ivar22, 1500), getOtherCommonData(ivar22, 1507), getOtherCommonData(ivar22, 1514), getOtherCommonData(ivar22, 1521));
+		case 5:
+			return newstruct cs2func_script_4792_struct(getOtherCommonData(ivar22, 1487), getOtherCommonData(ivar22, 1494), getOtherCommonData(ivar22, 1501), getOtherCommonData(ivar22, 1508), getOtherCommonData(ivar22, 1515), getOtherCommonData(ivar22, 1522));
+		case 6:
+			return newstruct cs2func_script_4792_struct(getOtherCommonData(ivar22, 1488), getOtherCommonData(ivar22, 1495), getOtherCommonData(ivar22, 1502), getOtherCommonData(ivar22, 1509), getOtherCommonData(ivar22, 1516), getOtherCommonData(ivar22, 1523));
+		case 7:
+			return newstruct cs2func_script_4792_struct(getOtherCommonData(ivar22, 1489), getOtherCommonData(ivar22, 1496), getOtherCommonData(ivar22, 1503), getOtherCommonData(ivar22, 1510), getOtherCommonData(ivar22, 1517), getOtherCommonData(ivar22, 1524));
+	}
+	return newstruct cs2func_script_4792_struct(0, 0, 0, 0, 0, 0);
+}

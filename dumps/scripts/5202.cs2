@@ -1,0 +1,59 @@
+void script_5202(int arg0) {
+	if (((boolean)arg0)) {
+		globalint_1597 = bitconfig_9671;
+		globalint_1598 = bitconfig_9672;
+		globalint_1599 = bitconfig_9673;
+		globalint_1600 = bitconfig_9674;
+		globalint_1601 = bitconfig_9675;
+	}
+	switch (globalint_1600) {
+		case 0:
+			setWidgetModel(43803, new WidgetPointer(1122,80));
+			break;
+		case 1:
+			setWidgetModel(43796, new WidgetPointer(1122,80));
+			break;
+		case 2:
+			setWidgetModel(43790, new WidgetPointer(1122,80));
+			break;
+		case 3:
+			setWidgetModel(43779, new WidgetPointer(1122,80));
+			break;
+		case 4:
+			setWidgetModel(43795, new WidgetPointer(1122,80));
+	}
+	switch (bitconfig_9646) {
+		case 1:
+			doWidgetType19Task(2, 1303, 1298, new WidgetPointer(1122,80));
+			break;
+		case 2:
+			doWidgetType19Task(2, 1303, 1303, new WidgetPointer(1122,80));
+			break;
+		case 3:
+			doWidgetType19Task(2, 1303, 1301, new WidgetPointer(1122,80));
+	}
+	switch (globalint_1601) {
+		case 0:
+			doWidgetType19Task(1, 1304, 1299, new WidgetPointer(1122,80));
+			break;
+		case 1:
+			doWidgetType19Task(1, 1304, 1304, new WidgetPointer(1122,80));
+			break;
+		case 2:
+			doWidgetType19Task(1, 1304, 1300, new WidgetPointer(1122,80));
+			break;
+		case 3:
+			doWidgetType19Task(1, 1304, 1296, new WidgetPointer(1122,80));
+			break;
+		case 4:
+			doWidgetType19Task(1, 1304, 1302, new WidgetPointer(1122,80));
+			break;
+		case 5:
+			doWidgetType19Task(1, 1304, 1297, new WidgetPointer(1122,80));
+	}
+	doWidgetType18Task(0, 41506, globalint_1597, new WidgetPointer(1122,80));
+	doWidgetType18Task(1, 41497, script_5183(globalint_1597, 0, 0, -9), new WidgetPointer(1122,80));
+	doWidgetType18Task(2, 13434, globalint_1598, new WidgetPointer(1122,80));
+	doWidgetType18Task(3, 7102, globalint_1599, new WidgetPointer(1122,80));
+	return;
+}

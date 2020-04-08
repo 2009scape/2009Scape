@@ -1,6 +1,7 @@
 package org.crandor.game.world.map.zone.impl;
 
 import org.crandor.game.component.Component;
+import org.crandor.game.content.ame.AntiMacroNPC;
 import org.crandor.game.content.skill.member.summoning.familiar.Familiar;
 import org.crandor.game.interaction.Option;
 import org.crandor.game.node.Node;
@@ -9,19 +10,31 @@ import org.crandor.game.node.entity.combat.CombatStyle;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.npc.agg.AggressiveBehavior;
 import org.crandor.game.node.entity.npc.agg.AggressiveHandler;
+import org.crandor.game.node.entity.npc.drop.NPCDropTables;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.info.Rights;
+import org.crandor.game.node.item.GroundItem;
+import org.crandor.game.node.item.GroundItemManager;
 import org.crandor.game.node.item.Item;
+import org.crandor.game.system.mysql.impl.NPCConfigSQLHandler;
+import org.crandor.game.world.GameWorld;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.map.zone.MapZone;
 import org.crandor.game.world.map.zone.RegionZone;
 import org.crandor.game.world.map.zone.ZoneBorders;
+import org.crandor.game.world.repository.Repository;
+import org.crandor.tools.RandomFunction;
+import plugin.interaction.item.brawling_gloves.BrawlingGloves;
 
 /**
  * Handles the wilderness zone.
  * @author Emperor
  */
 public final class WildernessZone extends MapZone {
+	/**
+	 * The PvP gear items
+	 */
+	private static int[] PVP_GEAR = { 13887, 13893, 13899, 13905, 13870, 13873, 13876, 13879, 13883, 13884, 13890, 13896, 13902, 13858, 13861, 13864, 13867};
 
 	/**
 	 * The wilderness zone.
@@ -48,11 +61,99 @@ public final class WildernessZone extends MapZone {
 		}
 	}
 
+	/**
+	 * calculate drop rate for rev items based on combat level
+	 * @author ceik
+	 * @param combatLevel
+	 * @return
+	 */
+	public int getNewDropRate(int combatLevel){
+		double x = combatLevel;
+		double A = 44044.5491;
+		double B = -7360.19548;
+		return (int) (A + (B * Math.log(x)));
+	}
+
+	/**
+	 * Handles rev drops
+	 * @author ceik
+	 * @param e The entity dying.
+	 * @param killer The killer.
+	 * @return true
+	 */
+	@Override
+	public boolean death(Entity e, Entity killer) {
+		if(e instanceof NPC && killer instanceof Player && (e.asNpc().getName().contains("Revenant") || e.asNpc().getName().equals("Chaos elemental"))){
+			int combatLevel = e.asNpc().getDefinition().getCombatLevel();
+			int dropRate = getNewDropRate(combatLevel);
+			for(int i = 0; i < PVP_GEAR.length; i++){
+				boolean chance = RandomFunction.random(dropRate) == dropRate / 2;
+				if(chance){
+					Item reward;
+					if(PVP_GEAR[i] == 13879 || PVP_GEAR[i] == 13883){ // checks if it's a javelin or throwing axe
+						reward = new Item(PVP_GEAR[i],RandomFunction.random(15,50));
+					} else {
+						reward = new Item(PVP_GEAR[i]);
+					}
+					Repository.sendNews(killer.asPlayer().getUsername() + " has received a " + reward.getName() + " from a " + e.asNpc().getName() + "!");
+					GroundItemManager.create(reward,((NPC) e).getDropLocation(),killer.asPlayer());
+					return true;
+				}
+			}
+		}
+		if (killer.isPlayer()) {
+			if (e instanceof NPC) {
+				boolean gloveDrop = RandomFunction.random(1,100) == 54;
+				if(gloveDrop){
+					byte glove = (byte) RandomFunction.random(1,13);
+					Item reward = new Item(BrawlingGloves.forIndicator(glove).getId());
+					GroundItemManager.create(reward,e.asNpc().getDropLocation(),killer.asPlayer());
+					Repository.sendNews(killer.getUsername() + " has received " + reward.getName().toLowerCase() + " from a " + e.asNpc().getName() +"!");
+				}
+				e.asNpc().getDefinition().getDropTables().drop(e.asNpc(),killer);
+				if (((NPC) e).getTask() != null && killer instanceof Player && ((Player) killer).getSlayer().getTask() == e.asNpc().getTask()) {
+					((Player) killer).getSlayer().finalizeDeath(killer.asPlayer(), e.asNpc());
+				}
+			}
+			
+		}
+		
+		if (e instanceof NPC || e instanceof AntiMacroNPC) {
+			e.asNpc().setRespawnTick(GameWorld.getTicks() + e.asNpc().getDefinition().getConfiguration(NPCConfigSQLHandler.RESPAWN_DELAY, 17));
+			if (!e.asNpc().isRespawn()) {
+				e.asNpc().clear();
+			}
+		}
+		
+		return true;
+	}
+
+	/**
+	 * Fixes attack options for the revs
+	 * @param e The entity.
+	 * @param target The target to interact with.
+	 * @param option The option.
+	 * @return true
+	 */
+	@Override
+	public boolean interact(Entity e, Node target, Option option) {
+		if(target instanceof NPC){
+			if(target.asNpc().getName().contains("Revenant")){
+				e.asPlayer().getProperties().getCombatPulse().attack(target);
+				return true;
+			}
+		}
+		return super.interact(e, target, option);
+	}
+
+
+
 	@Override
 	public boolean enter(Entity e) {
 		if (e instanceof Player) {
 			Player p = (Player) e;
 			show(p);
+			p.getAntiMacroHandler().isDisabled = true;
 			for (int i = 0; i < 7; i++) {
 				if (i == 5 || i == 3) {
 					continue;
@@ -84,6 +185,7 @@ public final class WildernessZone extends MapZone {
 		if (!logout && e instanceof Player) {
 			Player p = (Player) e;
 			leave(p);
+			p.getAntiMacroHandler().isDisabled = false;
 			if (p.getFamiliarManager().hasFamiliar() && !p.getFamiliarManager().hasPet()) {
 				Familiar familiar = p.getFamiliarManager().getFamiliar();
 				if (familiar.isCombatFamiliar()) {

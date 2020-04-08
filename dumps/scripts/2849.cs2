@@ -1,0 +1,23 @@
+int script_2849(int arg0) {
+	switch (arg0) {
+		case 0:
+			return bitconfig_7060;
+		case 1:
+			return bitconfig_7061;
+		case 2:
+			return bitconfig_7062;
+		case 3:
+			return bitconfig_7063;
+		case 4:
+			return bitconfig_7064;
+		case 5:
+			return bitconfig_7065;
+		case 6:
+			return bitconfig_7066;
+		case 7:
+			return bitconfig_7067;
+		case 8:
+			return bitconfig_7068;
+	}
+	return 0;
+}

@@ -1,0 +1,99 @@
+int script_837(int arg0) {
+	if (arg0 < 32) {
+		return isBitFlagged(standart_config_20, bitAnd(arg0, 31));
+	}
+	if (arg0 < 64) {
+		return isBitFlagged(standart_config_21, bitAnd(arg0, 31));
+	}
+	if (arg0 < 96) {
+		return isBitFlagged(standart_config_22, bitAnd(arg0, 31));
+	}
+	if (arg0 < 128) {
+		return isBitFlagged(standart_config_23, bitAnd(arg0, 31));
+	}
+	if (arg0 < 160) {
+		return isBitFlagged(standart_config_24, bitAnd(arg0, 31));
+	}
+	if (arg0 < 192) {
+		return isBitFlagged(standart_config_25, bitAnd(arg0, 31));
+	}
+	if (arg0 < 224) {
+		return isBitFlagged(standart_config_298, bitAnd(arg0, 31));
+	}
+	if (arg0 < 256) {
+		return isBitFlagged(standart_config_311, bitAnd(arg0, 31));
+	}
+	if (arg0 < 288) {
+		return isBitFlagged(standart_config_346, bitAnd(arg0, 31));
+	}
+	if (arg0 < 320) {
+		return isBitFlagged(standart_config_414, bitAnd(arg0, 31));
+	}
+	if (arg0 < 352) {
+		return isBitFlagged(standart_config_464, bitAnd(arg0, 31));
+	}
+	if (arg0 < 384) {
+		return isBitFlagged(standart_config_598, bitAnd(arg0, 31));
+	}
+	if (arg0 < 416) {
+		return isBitFlagged(standart_config_662, bitAnd(arg0, 31));
+	}
+	if (arg0 < 448) {
+		return isBitFlagged(standart_config_721, bitAnd(arg0, 31));
+	}
+	if (arg0 < 480) {
+		return isBitFlagged(standart_config_906, bitAnd(arg0, 31));
+	}
+	if (arg0 < 512) {
+		return isBitFlagged(standart_config_1009, bitAnd(arg0, 31));
+	}
+	if (arg0 < 544) {
+		return isBitFlagged(standart_config_1104, bitAnd(arg0, 31));
+	}
+	if (arg0 < 576) {
+		return isBitFlagged(standart_config_1136, bitAnd(arg0, 31));
+	}
+	if (arg0 < 608) {
+		return isBitFlagged(standart_config_1180, bitAnd(arg0, 31));
+	}
+	if (arg0 < 640) {
+		return isBitFlagged(standart_config_1202, bitAnd(arg0, 31));
+	}
+	if (arg0 < 672) {
+		return isBitFlagged(standart_config_1381, bitAnd(arg0, 31));
+	}
+	if (arg0 < 704) {
+		return isBitFlagged(standart_config_1394, bitAnd(arg0, 31));
+	}
+	if (arg0 < 736) {
+		return isBitFlagged(standart_config_1434, bitAnd(arg0, 31));
+	}
+	if (arg0 < 768) {
+		return isBitFlagged(standart_config_1596, bitAnd(arg0, 31));
+	}
+	if (arg0 < 800) {
+		return isBitFlagged(standart_config_1618, bitAnd(arg0, 31));
+	}
+	if (arg0 < 832) {
+		return isBitFlagged(standart_config_1619, bitAnd(arg0, 31));
+	}
+	if (arg0 < 864) {
+		return isBitFlagged(standart_config_1620, bitAnd(arg0, 31));
+	}
+	if (arg0 < 896) {
+		return 1;
+	}
+	if (arg0 < 928) {
+		return isBitFlagged(standart_config_1864, bitAnd(arg0, 31));
+	}
+	if (arg0 < 960) {
+		return isBitFlagged(standart_config_1865, bitAnd(arg0, 31));
+	}
+	if (arg0 < 992) {
+		return isBitFlagged(standart_config_2019, bitAnd(arg0, 31));
+	}
+	if (arg0 < 1024) {
+		return isBitFlagged(standart_config_2246, bitAnd(arg0, 31));
+	}
+	return -1;
+}

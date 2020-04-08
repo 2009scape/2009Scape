@@ -1,0 +1,45 @@
+void script_3185(int arg0,int arg1,int arg2) {
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	int stack_dump3;
+	string stack_dump4;
+	cs2func_script_802_struct(1,1,0) structdump_5;
+	switch (arg0) {
+		case 84:
+			script_3183();
+			return;
+		case 13:
+			script_3180();
+			return;
+		case 102:
+		case 103:
+		case 98:
+		case 99:
+		case 96:
+		case 97:
+			globalint_1097 = script_1553(arg0, globalint_1097, globalstring_277);
+			script_1879(59899931, 59899932, globalstring_277);
+			return;
+		case 85:
+		case 101:
+		case -1:
+			if ((isValidChar(((char)arg1)) || (arg0 == 85)) || (arg0 == 101)) {
+				if ((arg0 == -1) && ((boolean)strLength(strRemoveEntities(concatChar(((char)arg1), ""))))) {
+					return;
+				}
+				stack_dump0 = globalint_1097;
+				stack_dump1 = 2;
+				stack_dump2 = arg0;
+				stack_dump3 = arg1;
+				stack_dump4 = globalstring_277;
+				structdump_5 = script_802(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+				stack_dump4 = structdump_5.stringpart_0;
+				globalint_1097 = structdump_5.intpart_0;
+				globalstring_277 = stack_dump4;
+				setWidgetText(new WidgetPointer(arg2), globalstring_277);
+				script_1879(59899931, 59899932, globalstring_277);
+			}
+	}
+	return;
+}

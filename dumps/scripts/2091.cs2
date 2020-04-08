@@ -1,0 +1,59 @@
+void script_2091(int arg0,int arg1) {
+	string svar0;
+	svar0 = "";
+	if (((boolean)bitconfig_5835)) {
+		return;
+	}
+	switch (arg0) {
+		case 54788124:
+		case 54788105:
+		case 54788109:
+			svar0 = "The number of times that the avatar has been killed.";
+			break;
+		case 54788121:
+		case 54788106:
+		case 54788110:
+			svar0 = "The Slayer level required to attack each avatar.";
+			break;
+		case 54788120:
+		case 54788107:
+		case 54788111:
+			svar0 = "The remaining health of each avatar.";
+			break;
+		case 54788122:
+		case 54788123:
+			svar0 = "How much time the game has remaining.";
+			break;
+		case 54788104:
+			svar0 = "This column displays the blue team's statistics.";
+			break;
+		case 54788108:
+			svar0 = "This column displays the red team's statistics.";
+			break;
+		case 54788125:
+			svar0 = "Shows which team controls the soul obelisk.";
+			break;
+		case 54788126:
+			svar0 = "Shows which team controls the western graveyard.";
+			break;
+		case 54788127:
+			svar0 = "Shows which team controls the eastern graveyard.";
+			break;
+		case 54788102:
+			svar0 = "Shows how much control a team has over the soul obelisk.";
+			break;
+		case 54788165:
+			svar0 = "Shows how much control a team has over the eastern graveyard.";
+			break;
+		case 54788158:
+			svar0 = "Shows how much control a team has over the western graveyard.";
+			break;
+		case 54788152:
+			svar0 = "Shows how active you have been during the game.";
+			break;
+		default:
+			return;
+	}
+	script_39(arg0, arg1, 25, getWidgetActualWidth(new WidgetPointer(getWidgetParentId(new WidgetPointer(arg1)))), svar0);
+	return;
+}

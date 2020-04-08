@@ -1,0 +1,79 @@
+void script_1721() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	string svar0;
+	int stack_dump0;
+	cs2func_script_2791_struct(4,1,0) structdump_1;
+	ivar0 = 0;
+	ivar1 = 84;
+	ivar2 = 5;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 125;
+	ivar6 = 64;
+	ivar7 = 32;
+	ivar8 = 10;
+	ivar9 = -1;
+	ivar10 = 2200;
+	svar0 = "";
+	ivar11 = 0;
+	ivar12 = -1;
+	ivar13 = 0;
+	if (((boolean)mod(getCommonDefinitionSize(869), ivar2))) {
+		ivar13 = multiply(divide(getCommonDefinitionSize(869), ivar2), ivar5);
+	} else {
+		ivar13 = add(multiply(divide(getCommonDefinitionSize(869), ivar2), ivar5), ivar5);
+	}
+	deleteAllExtraChilds(new WidgetPointer(88,22));
+	deleteAllExtraChilds(new WidgetPointer(88,23));
+	setWidgetScrollMax(multiply(ivar2, ivar1), ivar13, new WidgetPointer(88,21));
+	while (ivar0 < getCommonDefinitionSize(869)) {
+		createExtraChild(new WidgetPointer(88,22), 6, ivar0);
+		setWidgetSize(ivar1, ivar5, 0, 0);
+		stack_dump0 = ivar0;
+		structdump_1 = script_2791(stack_dump0);
+		ivar12 = structdump_1.intpart_3;
+		ivar10 = structdump_1.intpart_2;
+		ivar11 = structdump_1.intpart_1;
+		svar0 = structdump_1.stringpart_0;
+		ivar9 = structdump_1.intpart_0;
+		setWidgetModel(ivar9);
+		setWidget3DRotation(1, 20, 5, 1950, 0, ivar10);
+		setWidgetPosition(multiply(ivar3, ivar1), multiply(ivar4, ivar5), 0, 0);
+		if (((boolean)ivar11)) {
+			setWidgetContextMenuOption(1, "Speak-to");
+			setScriptCallOnMouseOver(1860, -2147483643, ivar12, "iA");
+			setScriptCallOnMouseExit(2607, -2147483643, "i");
+		}
+		createExtraChild(new WidgetPointer(88,23), 4, ivar0);
+		setWidgetSize(ivar6, ivar7, 0, 0);
+		setWidgetRGB(new Color(255, 153, 53));
+		setWidgetFont(494);
+		setWidgetUnknownBoolean(true);
+		setWidgetText(svar0);
+		setWidgetTextAlignment(1, 1, 0);
+		setWidgetPosition(add(multiply(ivar3, ivar1), ivar8), add(multiply(ivar4, ivar5), ivar8), 0, 0);
+		ivar3 = add(ivar3, 1);
+		if (ivar3 >= ivar2) {
+			ivar3 = 0;
+			ivar4 = add(ivar4, 1);
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	if (((boolean)cs2method2601(new WidgetPointer(88,22)))) {
+		script_31(5767188, 5767189, 792, 789, 790, 791, 773, 788);
+	}
+	return;
+}

@@ -1,0 +1,307 @@
+void script_3216(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	string svar0;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	int stack_dump3;
+	string stack_dump4;
+	cs2func_script_802_struct(1,1,0) structdump_5;
+	cs2func_script_802_struct(1,1,0) structdump_6;
+	cs2func_script_802_struct(1,1,0) structdump_7;
+	cs2func_script_802_struct(1,1,0) structdump_8;
+	if (getAccountCreateRC() == -3) {
+		return;
+	}
+	svar0 = "";
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 0;
+	switch (globalint_174) {
+		case 6:
+			switch (arg0) {
+				case 13:
+					script_2206();
+					return;
+				case 84:
+				case 80:
+					if (globalint_175 >= getClientCycle()) {
+						return;
+					}
+					if ((arg0 == 80) && isHoldingCtrl()) {
+						script_2714(15, 1);
+					} else {
+						script_2714(14, 1);
+					}
+					return;
+				case 102:
+				case 103:
+				case 98:
+				case 99:
+				case 96:
+				case 97:
+					globalint_1099 = script_1553(arg0, globalint_1099, globalstring_122);
+					script_3218(44105828, 44105772, 44105829, 6, globalstring_122);
+					return;
+			}
+			if (((strLength(globalstring_122) >= 320) && (arg0 != 85)) && (arg0 != 101)) {
+				return;
+			}
+			if (((strIndexof(((char)arg1), 0, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&'*+-/=?^_.{}~@") != -1) || (arg0 == 85)) || (arg0 == 101)) {
+				stack_dump0 = globalint_1099;
+				stack_dump1 = 3;
+				stack_dump2 = arg0;
+				stack_dump3 = arg1;
+				stack_dump4 = globalstring_122;
+				structdump_5 = script_802(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+				stack_dump4 = structdump_5.stringpart_0;
+				globalint_1099 = structdump_5.intpart_0;
+				globalstring_122 = stack_dump4;
+				setWidgetText(new WidgetPointer(673,44), globalstring_122);
+				script_3218(44105828, 44105772, 44105829, 6, globalstring_122);
+			}
+			return;
+		case 14:
+			switch (arg0) {
+				case 13:
+					script_2206();
+					return;
+				case 84:
+				case 80:
+					if (globalint_175 >= getClientCycle()) {
+						return;
+					}
+					if ((arg0 == 80) && isHoldingCtrl()) {
+						script_2714(6, 1);
+					} else {
+						script_2714(7, 1);
+					}
+					return;
+				case 102:
+				case 103:
+				case 98:
+				case 99:
+				case 96:
+				case 97:
+					globalint_1099 = script_1553(arg0, globalint_1099, globalstring_326);
+					script_3218(44105847, 44105848, 44105849, 14, globalstring_326);
+					return;
+			}
+			if (((strLength(globalstring_326) >= 320) && (arg0 != 85)) && (arg0 != 101)) {
+				return;
+			}
+			if (((strIndexof(((char)arg1), 0, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&'*+-/=?^_.{}~@") != -1) || (arg0 == 85)) || (arg0 == 101)) {
+				stack_dump0 = globalint_1099;
+				stack_dump1 = 3;
+				stack_dump2 = arg0;
+				stack_dump3 = arg1;
+				stack_dump4 = globalstring_326;
+				structdump_6 = script_802(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+				stack_dump4 = structdump_6.stringpart_0;
+				globalint_1099 = structdump_6.intpart_0;
+				globalstring_326 = stack_dump4;
+				setWidgetText(new WidgetPointer(673,120), globalstring_326);
+				script_3218(44105847, 44105848, 44105849, 14, globalstring_326);
+			}
+			return;
+		case 7:
+			switch (arg0) {
+				case 13:
+					script_2206();
+					return;
+				case 84:
+				case 80:
+					if (globalint_175 >= getClientCycle()) {
+						return;
+					}
+					if ((arg0 == 80) && isHoldingCtrl()) {
+						script_2714(14, 1);
+					} else {
+						script_2714(8, 1);
+					}
+					return;
+				case 102:
+				case 103:
+				case 98:
+				case 99:
+				case 96:
+				case 97:
+					globalint_1099 = script_1553(arg0, globalint_1099, globalstring_124);
+					script_3218(44105818, 44105819, 44105820, 7, script_2949(globalstring_124));
+					return;
+			}
+			if (((strLength(globalstring_124) > 20) && (arg0 != 85)) && (arg0 != 101)) {
+				return;
+			}
+			stack_dump0 = globalint_1099;
+			stack_dump1 = 0;
+			stack_dump2 = arg0;
+			stack_dump3 = arg1;
+			stack_dump4 = globalstring_124;
+			structdump_7 = script_802(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+			stack_dump4 = structdump_7.stringpart_0;
+			globalint_1099 = structdump_7.intpart_0;
+			globalstring_124 = stack_dump4;
+			setWidgetText(new WidgetPointer(673,91), script_2949(globalstring_124));
+			script_3218(44105818, 44105819, 44105820, 7, script_2949(globalstring_124));
+			return;
+		case 8:
+			switch (arg0) {
+				case 13:
+					script_2206();
+					return;
+				case 84:
+				case 80:
+					if (globalint_175 >= getClientCycle()) {
+						return;
+					}
+					if ((arg0 == 80) && isHoldingCtrl()) {
+						script_2714(7, 1);
+					} else {
+						script_2714(15, 1);
+					}
+					return;
+				case 102:
+				case 103:
+				case 98:
+				case 99:
+				case 96:
+				case 97:
+					globalint_1099 = script_1553(arg0, globalint_1099, globalstring_125);
+					script_3218(44105808, 44105809, 44105810, 8, script_2949(globalstring_125));
+					return;
+			}
+			if (((strLength(globalstring_125) > 20) && (arg0 != 85)) && (arg0 != 101)) {
+				return;
+			}
+			stack_dump0 = globalint_1099;
+			stack_dump1 = 0;
+			stack_dump2 = arg0;
+			stack_dump3 = arg1;
+			stack_dump4 = globalstring_125;
+			structdump_8 = script_802(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+			stack_dump4 = structdump_8.stringpart_0;
+			globalint_1099 = structdump_8.intpart_0;
+			globalstring_125 = stack_dump4;
+			setWidgetText(new WidgetPointer(673,81), script_2949(globalstring_125));
+			script_3218(44105808, 44105809, 44105810, 8, script_2949(globalstring_125));
+			return;
+		case 15:
+			switch (arg0) {
+				case 13:
+					script_2206();
+					return;
+				case 84:
+				case 80:
+					if (globalint_175 >= getClientCycle()) {
+						return;
+					}
+					if ((arg0 == 80) && isHoldingCtrl()) {
+						script_2714(8, 1);
+					} else {
+						if ((((arg0 == 84) && (strLength(globalstring_122) > 0)) && ((strLength(globalstring_326) > 0) && (strLength(globalstring_124) > 0))) && ((strLength(globalstring_125) > 0) && (globalint_1407 != 0))) {
+							script_2967(0);
+							return;
+						}
+						script_2714(6, 1);
+					}
+					return;
+				case 102:
+				case 103:
+				case 98:
+				case 99:
+				case 96:
+				case 97:
+					globalint_1099 = script_1553(arg0, globalint_1099, intToStr(globalint_1407));
+					script_3218(44105854, 44105771, 44105855, 15, intToStr(globalint_1407));
+					return;
+			}
+			if (((strLength(intToStr(globalint_1407)) >= 3) && (arg0 != 85)) && (arg0 != 101)) {
+				return;
+			}
+			if (strLength(intToStr(globalint_1407)) == 3) {
+				ivar3 = divide(globalint_1407, 100);
+				ivar4 = divide(subtract(globalint_1407, multiply(ivar3, 100)), 10);
+				ivar5 = subtract(globalint_1407, add(multiply(ivar3, 100), multiply(ivar4, 10)));
+			} else {
+				if (strLength(intToStr(globalint_1407)) == 2) {
+					ivar3 = divide(globalint_1407, 10);
+					ivar4 = subtract(globalint_1407, multiply(ivar3, 10));
+				}
+			}
+			if (isDigit(((char)arg1))) {
+				ivar2 = strIndexof(((char)arg1), 0, "0123456789");
+				if (globalint_1407 < 1) {
+					globalint_1407 = ivar2;
+				} else {
+					globalint_1407 = add(multiply(globalint_1407, 10), ivar2);
+				}
+				globalint_1099 = strLength(intToStr(globalint_1407));
+			} else if (arg0 == 85) {
+				if (globalint_1099 >= 3) {
+					globalint_1407 = divide(globalint_1407, 10);
+				} else if (globalint_1099 == 2) {
+					if (strLength(intToStr(globalint_1407)) == 3) {
+						globalint_1407 = add(multiply(ivar3, 10), ivar5);
+					} else if (strLength(intToStr(globalint_1407)) == 2) {
+						globalint_1407 = divide(globalint_1407, 10);
+					} else {
+						globalint_1407 = 0;
+						globalint_1099 = 0;
+					}
+				} else if (((boolean)globalint_1099)) {
+					if (strLength(intToStr(globalint_1407)) == 3) {
+						globalint_1407 = subtract(globalint_1407, multiply(ivar3, 100));
+					} else if (strLength(intToStr(globalint_1407)) == 2) {
+						globalint_1407 = subtract(globalint_1407, multiply(ivar3, 10));
+					} else {
+						globalint_1407 = 0;
+						globalint_1099 = 0;
+					}
+				} else {
+					return;
+				}
+				globalint_1099 = max(subtract(globalint_1099, 1), 0);
+			} else {
+				if (arg0 == 101) {
+					if (globalint_1099 >= 3) {
+						return;
+					}
+					if (globalint_1099 == 2) {
+						if (strLength(intToStr(globalint_1407)) == 3) {
+							globalint_1407 = divide(globalint_1407, 10);
+						} else {
+							globalint_1099 = strLength(intToStr(globalint_1407));
+						}
+					} else if (((boolean)globalint_1099)) {
+						if (strLength(intToStr(globalint_1407)) == 3) {
+							globalint_1407 = add(multiply(ivar3, 10), ivar5);
+						} else if (strLength(intToStr(globalint_1407)) == 2) {
+							globalint_1407 = divide(globalint_1407, 10);
+						} else {
+							return;
+						}
+					} else if (strLength(intToStr(globalint_1407)) == 3) {
+						globalint_1407 = subtract(globalint_1407, multiply(ivar3, 100));
+					} else if (strLength(intToStr(globalint_1407)) == 2) {
+						globalint_1407 = ivar4;
+					} else {
+						globalint_1407 = 0;
+					}
+				}
+			}
+			if (globalint_1407 < 1) {
+				setWidgetText(new WidgetPointer(673,43), "");
+				script_3218(44105854, 44105771, 44105855, 15, "");
+			} else {
+				setWidgetText(new WidgetPointer(673,43), intToStr(globalint_1407));
+				script_3218(44105854, 44105771, 44105855, 15, intToStr(globalint_1407));
+			}
+			return;
+	}
+	return;
+}

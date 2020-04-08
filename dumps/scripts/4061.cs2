@@ -1,0 +1,5 @@
+void script_4061() {
+	setWidgetText(new WidgetPointer(1058,45), "Not Enough Tokens");
+	setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(1058,45));
+	return;
+}

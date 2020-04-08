@@ -1,0 +1,127 @@
+int script_298(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10) {
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	int ivar22;
+	int ivar23;
+	int ivar24;
+	int ivar25;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	int stack_dump3;
+	int stack_dump4;
+	int stack_dump5;
+	int stack_dump6;
+	cs2func_script_296_struct(2,0,0) structdump_7;
+	cs2func_script_296_struct(2,0,0) structdump_8;
+	cs2func_script_2413_struct(3,0,0) structdump_9;
+	if (((boolean)bitconfig_6175)) {
+		return arg10;
+	}
+	arg3 = 16776960;
+	ivar11 = add(arg10, 1);
+	ivar12 = add(arg10, 2);
+	ivar13 = 0;
+	ivar14 = 0;
+	stack_dump0 = arg0;
+	stack_dump1 = arg2;
+	stack_dump2 = arg5;
+	stack_dump3 = arg6;
+	stack_dump4 = arg7;
+	stack_dump5 = arg8;
+	stack_dump6 = arg9;
+	structdump_7 = script_296(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4, stack_dump5, stack_dump6);
+	ivar14 = structdump_7.intpart_1;
+	ivar13 = structdump_7.intpart_0;
+	ivar15 = 0;
+	ivar16 = 0;
+	stack_dump0 = arg1;
+	stack_dump1 = arg2;
+	stack_dump2 = arg5;
+	stack_dump3 = arg6;
+	stack_dump4 = arg7;
+	stack_dump5 = arg8;
+	stack_dump6 = arg9;
+	structdump_8 = script_296(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4, stack_dump5, stack_dump6);
+	ivar16 = structdump_8.intpart_1;
+	ivar15 = structdump_8.intpart_0;
+	ivar17 = add(ivar13, divide(subtract(ivar15, ivar13), 2));
+	ivar18 = add(ivar14, divide(subtract(ivar16, ivar14), 2));
+	ivar19 = subtract(ivar15, ivar13);
+	ivar20 = subtract(ivar16, ivar14);
+	ivar21 = 0;
+	if (ivar19 < 0) {
+		if (ivar20 < 0) {
+			ivar19 = subtract(0, ivar19);
+			ivar20 = subtract(0, ivar20);
+		} else {
+			ivar19 = subtract(0, ivar19);
+			ivar21 = 1;
+		}
+	} else {
+		if (ivar20 < 0) {
+			ivar20 = subtract(0, ivar20);
+			ivar21 = 1;
+		}
+	}
+	if (setWidgetRegister(new WidgetPointer(arg5), arg10)) {
+		setWidgetPosition(add(ivar13, 1), add(ivar14, 1), 1, 1);
+	} else {
+		createExtraChild(new WidgetPointer(arg5), 3, arg10);
+		setWidgetPosition(add(ivar13, 1), add(ivar14, 1), 1, 1);
+		setWidgetSize(arg4, arg4, 0, 0);
+		setWidgetRGB(new Color(0, 0, 0));
+		setWidgetFilled(1);
+	}
+	ivar22 = 0;
+	ivar23 = 0;
+	ivar24 = 0;
+	ivar25 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg5), ivar11)) {
+		setWidgetPosition(ivar13, ivar14, 1, 1);
+	} else {
+		stack_dump0 = arg3;
+		structdump_9 = script_2413(stack_dump0);
+		ivar24 = structdump_9.intpart_2;
+		ivar23 = structdump_9.intpart_1;
+		ivar22 = structdump_9.intpart_0;
+		stack_dump0 = max(subtract(ivar22, 48), 0);
+		stack_dump1 = max(subtract(ivar23, 48), 0);
+		ivar24 = max(subtract(ivar24, 48), 0);
+		stack_dump0 = stack_dump0;
+		ivar23 = stack_dump1;
+		ivar22 = stack_dump0;
+		ivar25 = script_693(ivar22, ivar23, ivar24);
+		createExtraChild(new WidgetPointer(arg5), 3, ivar11);
+		setWidgetPosition(ivar13, ivar14, 1, 1);
+		setWidgetSize(arg4, arg4, 0, 0);
+		setWidgetRGB(new Color(ivar25));
+		setWidgetFilled(1);
+		setScriptCallOnMouseEntered(301, 1, new WidgetPointer(arg5), ivar11, -1, ivar12, arg3, "1Iiiii");
+		setScriptCallOnMouseExit(301, 0, new WidgetPointer(arg5), ivar11, -1, ivar12, ivar25, "1Iiiii");
+		setWidgetContextMenuOption(1, "Scroll map");
+		setScriptCallOnClickContextMenu(302, -2147483644, arg1, arg2, "ic1");
+	}
+	if (setWidgetRegister(new WidgetPointer(arg5), ivar12)) {
+		setWidgetPosition(ivar17, ivar18, 1, 1);
+		setWidgetSize(ivar19, ivar20, 0, 0);
+	} else {
+		createExtraChild(new WidgetPointer(arg5), 9, ivar12);
+		setWidgetPosition(ivar17, ivar18, 1, 1);
+		setWidgetSize(ivar19, ivar20, 0, 0);
+		cs2method1124(ivar21);
+		cs2method1104(add(1, divide(arg4, 5)));
+		setWidgetRGB(new Color(arg3));
+		setWidgetHidden(1);
+	}
+	return add(ivar12, 1);
+}

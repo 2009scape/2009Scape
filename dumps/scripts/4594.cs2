@@ -1,0 +1,19 @@
+void script_4594(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	createExtraChild(new WidgetPointer(arg4), 5, getExtraChildGap(new WidgetPointer(arg4)));
+	if ((arg2 != -1) && (arg3 != -1)) {
+		setWidgetSize(36, 32, 0, 0);
+		setWidgetPosition(add(arg2, 2), add(arg3, 2), 0, 0);
+		if (arg1 <= 0) {
+			setItemOnWidgetMethod1205(arg0, 1);
+		} else {
+			setItemOnWidgetMethod1200(arg0, arg1);
+		}
+		setWidgetContextMenuOption(10, "Examine");
+		setWidgetShadowColor(new Color(48, 32, 32));
+		setWidgetBorderThickness(1);
+		cs2method1305("<col=ff9040>" + getItemName(arg0) + "</col>");
+	} else {
+		setWidgetHidden(1);
+	}
+	return;
+}

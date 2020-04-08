@@ -1,0 +1,20 @@
+int script_269() {
+	int ivar0;
+	ivar0 = 0;
+	if (globalint_1104 != 0) {
+		ivar0 = add(ivar0, 1);
+	}
+	if (globalint_1105 != 0) {
+		ivar0 = add(ivar0, 1);
+	}
+	if (globalint_1106 != 0) {
+		ivar0 = add(ivar0, 1);
+	}
+	if (globalint_1107 != 0) {
+		ivar0 = add(ivar0, 1);
+	}
+	if (globalint_1108 != 0) {
+		ivar0 = add(ivar0, 1);
+	}
+	return ivar0;
+}

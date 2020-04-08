@@ -1,0 +1,25 @@
+void script_2690(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 5;
+	while (setWidgetRegister(new WidgetPointer(1022,15), ivar1)) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (arg0 > 4) {
+		ivar3 = add(ivar3, 40);
+		ivar2 = multiply(subtract(arg0, 5), 40);
+	} else {
+		ivar2 = multiply(arg0, 40);
+	}
+	ivar2 = add(ivar2, 17);
+	createExtraChild(new WidgetPointer(1022,15), 5, ivar1);
+	setWidgetSprite(937);
+	setWidgetSize(10, 32, 0, 0);
+	setWidgetPosition(ivar2, ivar3, 0, 0);
+	setWidgetHidden(0);
+	setScriptCallOnGameloop(144, new WidgetPointer(1022,15), ivar1, getClientCycle(), add(getClientCycle(), 750), "Iiii");
+	return;
+}

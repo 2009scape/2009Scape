@@ -1,0 +1,89 @@
+void script_1581(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	string svar0;
+	string svar1;
+	svar0 = "";
+	ivar1 = 494;
+	ivar2 = 32243761;
+	switch (arg0) {
+		case 32243727:
+		case 32309275:
+		case 31981571:
+			svar0 = globalstring_212;
+			break;
+		case 32309276:
+		case 31981576:
+		case 32243728:
+			svar0 = globalstring_213;
+			break;
+		case 32309277:
+		case 31981581:
+		case 32243729:
+			svar0 = globalstring_214;
+			break;
+		case 32309278:
+		case 31981586:
+		case 32243730:
+			svar0 = globalstring_215;
+			break;
+		case 32309279:
+		case 32243731:
+			svar0 = globalstring_216;
+	}
+	switch (arg0) {
+		case 32309278:
+		case 32309279:
+		case 32309276:
+		case 32309277:
+		case 32309275:
+			ivar1 = 495;
+			ivar2 = 32309304;
+			break;
+		case 31981576:
+		case 31981581:
+		case 31981586:
+		case 31981571:
+			ivar1 = 495;
+			ivar2 = 31981595;
+	}
+	svar1 = svar0;
+	ivar3 = getWidgetActualWidth(new WidgetPointer(arg0));
+	if (getMaxLineWidth(2147483647, ivar1, svar1 + " ") > ivar3) {
+		while (getMaxLineWidth(2147483647, ivar1, svar1 + "... ") > ivar3) {
+			svar1 = substr(0, subtract(strLength(svar1), 1), svar1);
+		}
+		setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(ivar2), svar0, 25, 5000, "IIsii", new WidgetPointer(arg0));
+		setScriptCallOnMouseExit(40, new WidgetPointer(ivar2), "I", new WidgetPointer(arg0));
+		svar0 = svar1 + "...";
+	} else {
+		setScriptCallOnMouseOver(-1, "", new WidgetPointer(arg0));
+		setScriptCallOnMouseExit(-1, "", new WidgetPointer(arg0));
+	}
+	switch (arg0) {
+		case 32309278:
+		case 32243727:
+		case 32309279:
+		case 32309276:
+		case 32309277:
+		case 32309275:
+		case 32243731:
+		case 32243730:
+		case 32243729:
+		case 32243728:
+			if (((boolean)stringMethod4107(svar0, "")) || ((boolean)stringMethod4107(svar0, "null"))) {
+				svar0 = "none set";
+			}
+			break;
+		case 31981576:
+		case 31981581:
+		case 31981571:
+		case 31981586:
+			if (((boolean)stringMethod4107(svar0, "")) || ((boolean)stringMethod4107(svar0, "null"))) {
+				svar0 = "---";
+			}
+	}
+	setWidgetText(new WidgetPointer(arg0), svar0);
+	return;
+}

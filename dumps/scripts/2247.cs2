@@ -1,0 +1,77 @@
+void script_2247() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 3016;
+	if (isMember()) {
+		ivar6 = 3015;
+	}
+	if (((boolean)mod(getCommonDefinitionSize(ivar6), 5))) {
+		ivar3 = multiply(divide(getCommonDefinitionSize(ivar6), 5), 67);
+	} else {
+		ivar3 = add(multiply(divide(getCommonDefinitionSize(ivar6), 5), 67), 67);
+	}
+	deleteAllExtraChilds(new WidgetPointer(940,1));
+	setWidgetScrollMax(multiply(5, 60), ivar3, new WidgetPointer(940,1));
+	while (ivar0 < getCommonDefinitionSize(ivar6)) {
+		createExtraChild(new WidgetPointer(940,2), 5, ivar4);
+		setWidgetContextMenuOption(1, getItemName(getOtherCommonData(cs2method_3408(105, 74, ivar6, ivar0), 1070)));
+		setScriptCallOnClickContextMenu(2250, ivar4, "i");
+		ivar5 = ivar4;
+		ivar4 = add(ivar4, 1);
+		setWidgetSprite(2206);
+		if (getSkillActualLvl(24) < getOtherCommonData(cs2method_3408(105, 74, ivar6, ivar0), 1071)) {
+			setWidgetRGB(new Color(255, 0, 0));
+		}
+		setWidgetSize(52, 55, 0, 0);
+		setWidgetPosition(multiply(ivar1, 60), subtract(multiply(ivar2, 67), 1), 0, 0);
+		setWidgetHidden(1);
+		createExtraChild(new WidgetPointer(940,2), 5, ivar4);
+		ivar4 = add(ivar4, 1);
+		setWidgetSprite(2205);
+		setWidgetSize(48, 52, 0, 0);
+		setWidgetPosition(add(multiply(ivar1, 60), 2), add(multiply(ivar2, 67), 1), 0, 0);
+		setScriptCallOnMouseOver(2248, ivar5, "i");
+		setScriptCallOnMouseExit(2249, ivar5, "i");
+		createExtraChild(new WidgetPointer(940,2), 5, ivar4);
+		ivar4 = add(ivar4, 1);
+		setWidgetSprite(2184);
+		setWidgetRGB(new Color(200, 0, 0));
+		setWidgetSize(12, 12, 0, 0);
+		setWidgetPosition(add(multiply(ivar1, 60), 5), add(multiply(ivar2, 67), 40), 0, 0);
+		createExtraChild(new WidgetPointer(940,2), 4, ivar4);
+		ivar4 = add(ivar4, 1);
+		setWidgetRGB(new Color(226, 226, 162));
+		setWidgetFont(494);
+		setWidgetUnknownBoolean(true);
+		setWidgetTextAlignment(1, 1, 0);
+		setWidgetText(script_940(getOtherCommonData(cs2method_3408(105, 74, ivar6, ivar0), 1072)));
+		setWidgetSize(31, 12, 0, 0);
+		setWidgetPosition(add(multiply(ivar1, 60), 18), add(multiply(ivar2, 67), 40), 0, 0);
+		createExtraChild(new WidgetPointer(940,2), 5, ivar4);
+		ivar4 = add(ivar4, 1);
+		setItemOnWidgetMethod1200(getOtherCommonData(cs2method_3408(105, 74, ivar6, divide(subtract(ivar4, 5), 5)), 1070), -1);
+		setWidgetSize(25, 25, 0, 0);
+		setWidgetPosition(add(multiply(ivar1, 60), 13), add(multiply(ivar2, 67), 9), 0, 0);
+		ivar1 = add(ivar1, 1);
+		if (ivar1 >= 5) {
+			ivar1 = 0;
+			ivar2 = add(ivar2, 1);
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	if (((boolean)cs2method2601(new WidgetPointer(940,1)))) {
+		script_31(61603875, 61603841, 792, 789, 790, 791, 773, 788);
+	}
+	return;
+}

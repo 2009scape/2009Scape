@@ -1,0 +1,76 @@
+void script_3945(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	flow_0:
+		if (((boolean)arg2)) {
+			globalint_1412 = 1;
+		}
+		SWITCH (arg0) {
+			case 1:
+				 GOTO flow_5
+			case 2:
+				 GOTO flow_8
+			case 3:
+				 GOTO flow_11
+			case 4:
+				 GOTO flow_14
+			case 5:
+				 GOTO flow_17
+			case 6:
+				 GOTO flow_20
+		}
+		if (((boolean)arg2)) {
+			sendStringInput(globalstring_330);
+		}
+	flow_4:
+		GOTO	flow_23
+	flow_5:
+		if (((boolean)arg2)) {
+			sendStringInput(globalstring_331);
+		}
+		globalstring_330 = globalstring_331;
+		GOTO	flow_23
+	flow_8:
+		if (((boolean)arg2)) {
+			sendStringInput(globalstring_332);
+		}
+		globalstring_330 = globalstring_332;
+		GOTO	flow_23
+	flow_11:
+		if (((boolean)arg2)) {
+			sendStringInput(globalstring_333);
+		}
+		globalstring_330 = globalstring_333;
+		GOTO	flow_23
+	flow_14:
+		if (((boolean)arg2)) {
+			sendStringInput(globalstring_334);
+		}
+		globalstring_330 = globalstring_334;
+		GOTO	flow_23
+	flow_17:
+		if (((boolean)arg2)) {
+			sendStringInput(globalstring_335);
+		}
+		globalstring_330 = globalstring_335;
+		GOTO	flow_23
+	flow_20:
+		if (((boolean)arg2)) {
+			sendStringInput(globalstring_336);
+		}
+		globalstring_330 = globalstring_336;
+	flow_23:
+		ivar3 = 67371189;
+		ivar4 = 67371190;
+		ivar5 = 67371191;
+		if (((boolean)arg1)) {
+			ivar3 = 58327099;
+			ivar4 = 58327100;
+			ivar5 = 58327101;
+		}
+		setWidgetText(new WidgetPointer(ivar4), globalstring_330);
+		globalint_1099 = strLength(globalstring_330);
+		script_3218(ivar3, ivar4, ivar5, 16, globalstring_330);
+		return;
+}

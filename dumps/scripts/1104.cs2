@@ -1,0 +1,16 @@
+void script_1104() {
+	if (((boolean)cs2method5420())) {
+		setWidgetText(new WidgetPointer(182,1), "When you have finished playing" + "<br>" + "RuneScape, always use a" + "<br>" + "button below to exit the game and logout safely.");
+		setWidgetText(new WidgetPointer(182,6), "Exit to Lobby");
+		setWidgetContextMenuOption(1, new WidgetPointer(182,6), "Exit to Lobby");
+		setWidgetIsHidden(false, new WidgetPointer(182,7));
+		setWidgetText(new WidgetPointer(182,13), "Exit to Login");
+		setWidgetContextMenuOption(1, new WidgetPointer(182,13), "Exit to Login");
+	} else {
+		setWidgetText(new WidgetPointer(182,1), "When you have finished playing" + "<br>" + "RuneScape, always use the" + "<br>" + "button below to exit the game and logout safely.");
+		setWidgetText(new WidgetPointer(182,6), "Click here to log out");
+		setWidgetContextMenuOption(1, new WidgetPointer(182,6), "Logout");
+		setWidgetIsHidden(true, new WidgetPointer(182,7));
+	}
+	return;
+}

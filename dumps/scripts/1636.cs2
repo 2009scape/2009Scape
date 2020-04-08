@@ -1,0 +1,53 @@
+void script_1636(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	string stack_dump3;
+	cs2func_script_1637_struct(2,0,0) structdump_4;
+	cs2func_script_1637_struct(2,0,0) structdump_5;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	while (ivar4 < 50) {
+		stack_dump0 = arg0;
+		stack_dump1 = ivar3;
+		stack_dump2 = ivar2;
+		stack_dump3 = script_1638(ivar4);
+		structdump_4 = script_1637(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar2 = structdump_4.intpart_1;
+		ivar3 = structdump_4.intpart_0;
+		ivar4 = add(ivar4, 1);
+	}
+	if (((boolean)ivar3)) {
+		stack_dump0 = arg0;
+		stack_dump1 = 0;
+		stack_dump2 = 0;
+		stack_dump3 = "Loading...";
+		structdump_5 = script_1637(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		stack_dump0 = structdump_5.intpart_0;
+		structdump_5.intpart_1;
+		stack_dump0;
+	}
+	ivar5 = 0;
+	ivar6 = 0;
+	if (ivar2 > 15) {
+		ivar5 = cs2method2601(new WidgetPointer(arg0));
+		ivar6 = add(multiply(ivar2, 15), 8);
+		setWidgetScrollMax(0, ivar6, new WidgetPointer(arg0));
+		if (ivar5 > ivar6) {
+			ivar5 = ivar6;
+		}
+		script_72(arg1, arg0, ivar5);
+	} else {
+		setWidgetScrollMax(0, 0, new WidgetPointer(arg0));
+		cs2method2100(0, 0, new WidgetPointer(arg0));
+		script_72(arg1, arg0, 0);
+	}
+	return;
+}

@@ -1,0 +1,160 @@
+void script_1908() {
+	int ivar0;
+	string svar0;
+	ivar0 = 12;
+	svar0 = "";
+	setWidgetSize(16, divide(multiply(divide(multiply(globalint_564, 100), ivar0), 16384), 100), 0, 2, new WidgetPointer(806,138));
+	setWidgetSize(16, divide(multiply(divide(multiply(globalint_565, 100), ivar0), 16384), 100), 0, 2, new WidgetPointer(806,139));
+	setWidgetSize(16, divide(multiply(divide(multiply(globalint_566, 100), ivar0), 16384), 100), 0, 2, new WidgetPointer(806,140));
+	setWidgetSize(16, divide(multiply(divide(multiply(globalint_567, 100), ivar0), 16384), 100), 0, 2, new WidgetPointer(806,144));
+	setWidgetSize(16, divide(multiply(divide(multiply(globalint_568, 100), ivar0), 16384), 100), 0, 2, new WidgetPointer(806,148));
+	setWidgetSize(16, divide(multiply(divide(multiply(globalint_569, 100), ivar0), 16384), 100), 0, 2, new WidgetPointer(806,82));
+	setWidgetSize(16, divide(multiply(divide(multiply(globalint_570, 100), ivar0), 16384), 100), 0, 2, new WidgetPointer(806,86));
+	setWidgetSize(16, divide(multiply(divide(multiply(globalint_571, 100), ivar0), 16384), 100), 0, 2, new WidgetPointer(806,90));
+	setWidgetSize(16, divide(multiply(divide(multiply(globalint_572, 100), ivar0), 16384), 100), 0, 2, new WidgetPointer(806,94));
+	setWidgetSize(16, divide(multiply(divide(multiply(globalint_573, 100), ivar0), 16384), 100), 0, 2, new WidgetPointer(806,61));
+	setWidgetSize(16, divide(multiply(divide(multiply(globalint_574, 100), ivar0), 16384), 100), 0, 2, new WidgetPointer(806,65));
+	setWidgetSize(16, divide(multiply(divide(multiply(globalint_575, 100), ivar0), 16384), 100), 0, 2, new WidgetPointer(806,69));
+	setWidgetSize(16, divide(multiply(divide(multiply(globalint_576, 100), ivar0), 16384), 100), 0, 2, new WidgetPointer(806,73));
+	setWidgetSize(16, divide(multiply(divide(multiply(globalint_577, 100), ivar0), 16384), 100), 0, 2, new WidgetPointer(806,103));
+	setWidgetSize(16, divide(multiply(divide(multiply(globalint_578, 100), ivar0), 16384), 100), 0, 2, new WidgetPointer(806,107));
+	setWidgetSize(16, divide(multiply(divide(multiply(globalint_579, 100), ivar0), 16384), 100), 0, 2, new WidgetPointer(806,111));
+	setWidgetSize(16, divide(multiply(divide(multiply(globalint_580, 100), ivar0), 16384), 100), 0, 2, new WidgetPointer(806,115));
+	if (((boolean)globalint_564)) {
+		svar0 = "There are no class 1 clay locations in the area.";
+	} else if (((boolean)globalint_564)) {
+		svar0 = "There is 1 class 1 clay location in the area.";
+	} else {
+		svar0 = "There are " + intToStr(globalint_564) + " class 1 clay locations in the area.";
+	}
+	setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(806,49), svar0, 25, 100, "IIsii", new WidgetPointer(806,138));
+	if (((boolean)globalint_565)) {
+		svar0 = "There are no class 2 fishing locations in the area.";
+	} else if (((boolean)globalint_565)) {
+		svar0 = "There is 1 class 2 fishing location in the area.";
+	} else {
+		svar0 = "There are " + intToStr(globalint_565) + " class 2 fishing locations in the area.";
+	}
+	setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(806,49), svar0, 25, 100, "IIsii", new WidgetPointer(806,139));
+	if (((boolean)globalint_566)) {
+		svar0 = "There are no class 3 fishing locations in the area.";
+	} else if (((boolean)globalint_566)) {
+		svar0 = "There is 1 class 3 fishing location in the area.";
+	} else {
+		svar0 = "There are " + intToStr(globalint_566) + " class 3 fishing locations in the area.";
+	}
+	setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(806,49), svar0, 25, 100, "IIsii", new WidgetPointer(806,140));
+	if (((boolean)globalint_567)) {
+		svar0 = "There are no class 4 fishing locations in the area.";
+	} else if (((boolean)globalint_567)) {
+		svar0 = "There is 1 class 4 fishing location in the area.";
+	} else {
+		svar0 = "There are " + intToStr(globalint_567) + " class 4 fishing locations in the area.";
+	}
+	setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(806,49), svar0, 25, 100, "IIsii", new WidgetPointer(806,144));
+	if (((boolean)globalint_568)) {
+		svar0 = "There are no class 5 fishing locations in the area.";
+	} else if (((boolean)globalint_568)) {
+		svar0 = "There is 1 class 5 fishing location in the area.";
+	} else {
+		svar0 = "There are " + intToStr(globalint_568) + " class 5 fishing locations in the area.";
+	}
+	setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(806,49), svar0, 25, 100, "IIsii", new WidgetPointer(806,148));
+	if (((boolean)globalint_569)) {
+		svar0 = "There are no class 2 mining locations in the area.";
+	} else if (((boolean)globalint_569)) {
+		svar0 = "There is 1 class 2 mining location in the area.";
+	} else {
+		svar0 = "There are " + intToStr(globalint_569) + " class 2 mining locations in the area.";
+	}
+	setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(806,49), svar0, 25, 100, "IIsii", new WidgetPointer(806,82));
+	if (((boolean)globalint_570)) {
+		svar0 = "There are no class 3 mining locations in the area.";
+	} else if (((boolean)globalint_570)) {
+		svar0 = "There is 1 class 3 mining location in the area.";
+	} else {
+		svar0 = "There are " + intToStr(globalint_570) + " class 3 mining locations in the area.";
+	}
+	setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(806,49), svar0, 25, 100, "IIsii", new WidgetPointer(806,86));
+	if (((boolean)globalint_571)) {
+		svar0 = "There are no class 4 mining locations in the area.";
+	} else if (((boolean)globalint_571)) {
+		svar0 = "There is 1 class 4 mining location in the area.";
+	} else {
+		svar0 = "There are " + intToStr(globalint_571) + " class 4 mining locations in the area.";
+	}
+	setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(806,49), svar0, 25, 100, "IIsii", new WidgetPointer(806,90));
+	if (((boolean)globalint_572)) {
+		svar0 = "There are no class 5 mining locations in the area.";
+	} else if (((boolean)globalint_572)) {
+		svar0 = "There is 1 class 5 mining location in the area.";
+	} else {
+		svar0 = "There are " + intToStr(globalint_572) + " class 5 mining locations in the area.";
+	}
+	setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(806,49), svar0, 25, 100, "IIsii", new WidgetPointer(806,94));
+	if (((boolean)globalint_573)) {
+		svar0 = "There are no class 2 woodcutting locations in the area.";
+	} else if (((boolean)globalint_573)) {
+		svar0 = "There is 1 class 2 woodcutting location in the area.";
+	} else {
+		svar0 = "There are " + intToStr(globalint_573) + " class 2 woodcutting locations in the area.";
+	}
+	setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(806,49), svar0, 25, 100, "IIsii", new WidgetPointer(806,61));
+	if (((boolean)globalint_574)) {
+		svar0 = "There are no class 3 woodcutting locations in the area.";
+	} else if (((boolean)globalint_574)) {
+		svar0 = "There is 1 class 3 woodcutting location in the area.";
+	} else {
+		svar0 = "There are " + intToStr(globalint_574) + " class 3 woodcutting locations in the area.";
+	}
+	setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(806,49), svar0, 25, 100, "IIsii", new WidgetPointer(806,65));
+	if (((boolean)globalint_575)) {
+		svar0 = "There are no class 4 woodcutting locations in the area.";
+	} else if (((boolean)globalint_575)) {
+		svar0 = "There is 1 class 4 woodcutting location in the area.";
+	} else {
+		svar0 = "There are " + intToStr(globalint_575) + " class 4 woodcutting locations in the area.";
+	}
+	setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(806,49), svar0, 25, 100, "IIsii", new WidgetPointer(806,69));
+	if (((boolean)globalint_576)) {
+		svar0 = "There are no class 5 woodcutting locations in the area.";
+	} else if (((boolean)globalint_576)) {
+		svar0 = "There is 1 class 5 woodcutting location in the area.";
+	} else {
+		svar0 = "There are " + intToStr(globalint_576) + " class 5 woodcutting locations in the area.";
+	}
+	setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(806,49), svar0, 25, 100, "IIsii", new WidgetPointer(806,73));
+	if (((boolean)globalint_577)) {
+		svar0 = "There are no class 2 hunting locations in the area.";
+	} else if (((boolean)globalint_577)) {
+		svar0 = "There is 1 class 2 hunting location in the area.";
+	} else {
+		svar0 = "There are " + intToStr(globalint_577) + " class 2 hunting locations in the area.";
+	}
+	setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(806,49), svar0, 25, 100, "IIsii", new WidgetPointer(806,103));
+	if (((boolean)globalint_578)) {
+		svar0 = "There are no class 3 hunting locations in the area.";
+	} else if (((boolean)globalint_578)) {
+		svar0 = "There is 1 class 3 hunting location in the area.";
+	} else {
+		svar0 = "There are " + intToStr(globalint_578) + " class 3 hunting locations in the area.";
+	}
+	setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(806,49), svar0, 25, 100, "IIsii", new WidgetPointer(806,107));
+	if (((boolean)globalint_579)) {
+		svar0 = "There are no class 4 hunting locations in the area.";
+	} else if (((boolean)globalint_579)) {
+		svar0 = "There is 1 class 4 hunting location in the area.";
+	} else {
+		svar0 = "There are " + intToStr(globalint_579) + " class 4 hunting locations in the area.";
+	}
+	setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(806,49), svar0, 25, 100, "IIsii", new WidgetPointer(806,111));
+	if (((boolean)globalint_580)) {
+		svar0 = "There are no class 5 hunting locations in the area.";
+	} else if (((boolean)globalint_580)) {
+		svar0 = "There is 1 class 5 hunting location in the area.";
+	} else {
+		svar0 = "There are " + intToStr(globalint_580) + " class 5 hunting locations in the area.";
+	}
+	setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(806,49), svar0, 25, 100, "IIsii", new WidgetPointer(806,115));
+	return;
+}

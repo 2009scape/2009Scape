@@ -1,0 +1,40 @@
+void script_919() {
+	int ivar0;
+	int ivar1;
+	string svar0;
+	ivar0 = getItemAmtInContainer(93, globalint_743);
+	svar0 = "Cost:";
+	ivar1 = -1;
+	if (((boolean)globalint_744)) {
+		svar0 = "None available";
+	} else if (globalint_744 == -1) {
+		svar0 = "Free sample!";
+	} else {
+		ivar1 = globalint_744;
+	}
+	setWidgetText(new WidgetPointer(449,24), svar0);
+	if (ivar1 > ivar0) {
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(449,25));
+	} else {
+		setWidgetRGB(new Color(globalint_1241), new WidgetPointer(449,25));
+	}
+	if (ivar1 > -1) {
+		setItemOnWidgetMethod2212(globalint_743, ivar1, new WidgetPointer(449,23));
+	} else {
+		setItemOnWidgetMethod2205(-1, -1, new WidgetPointer(449,23));
+	}
+	if (globalint_744 == -1) {
+		setWidgetText(new WidgetPointer(449,22), "Take");
+		setWidgetContextMenuOption(1, new WidgetPointer(449,21), "Take 1");
+		setWidgetContextMenuOption(2, new WidgetPointer(449,21), "Take 5");
+		setWidgetContextMenuOption(3, new WidgetPointer(449,21), "Take 10");
+		setWidgetContextMenuOption(4, new WidgetPointer(449,21), "Take 50");
+	} else {
+		setWidgetText(new WidgetPointer(449,22), "Buy");
+		setWidgetContextMenuOption(1, new WidgetPointer(449,21), "Buy 1");
+		setWidgetContextMenuOption(2, new WidgetPointer(449,21), "Buy 5");
+		setWidgetContextMenuOption(3, new WidgetPointer(449,21), "Buy 10");
+		setWidgetContextMenuOption(4, new WidgetPointer(449,21), "Buy 50");
+	}
+	return;
+}

@@ -1,0 +1,11 @@
+void script_1957(int arg0,int arg1,int arg2) {
+	int ivar3;
+	ivar3 = getItemAmtInContainer(93, arg1);
+	setWidgetText(new WidgetPointer(arg0), intToStr(ivar3) + "/" + intToStr(arg2));
+	if (ivar3 >= arg2) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(arg0));
+	} else {
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(arg0));
+	}
+	return;
+}

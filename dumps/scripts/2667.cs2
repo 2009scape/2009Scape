@@ -1,0 +1,55 @@
+void script_2667() {
+	int ivar0;
+	int ivar1;
+	ivar0 = ((int)cs2method_3408(105, 73, 2566, bitconfig_6297));
+	ivar1 = ((int)cs2method_3408(105, 73, 2565, bitconfig_6297));
+	if ((getWidgetActualX(new WidgetPointer(ivar0)) < 17) || (getWidgetActualX(new WidgetPointer(ivar0)) > 57)) {
+		return;
+	}
+	if ((getWidgetActualY(new WidgetPointer(ivar0)) > 12) && (getWidgetActualY(new WidgetPointer(ivar0)) < 32)) {
+		setWidgetPosition(37, 22, 0, 0, new WidgetPointer(ivar0));
+		setWidgetPosition(37, 22, 0, 0, new WidgetPointer(ivar1));
+		return;
+	}
+	if ((getWidgetActualY(new WidgetPointer(ivar0)) > 38) && (getWidgetActualY(new WidgetPointer(ivar0)) < 58)) {
+		setWidgetPosition(37, 48, 0, 0, new WidgetPointer(ivar0));
+		setWidgetPosition(37, 48, 0, 0, new WidgetPointer(ivar1));
+		return;
+	}
+	if ((getWidgetActualY(new WidgetPointer(ivar0)) > 70) && (getWidgetActualY(new WidgetPointer(ivar0)) < 90)) {
+		setWidgetPosition(37, 80, 0, 0, new WidgetPointer(ivar0));
+		setWidgetPosition(37, 80, 0, 0, new WidgetPointer(ivar1));
+		return;
+	}
+	if ((getWidgetActualY(new WidgetPointer(ivar0)) > 98) && (getWidgetActualY(new WidgetPointer(ivar0)) < 118)) {
+		setWidgetPosition(37, 108, 0, 0, new WidgetPointer(ivar0));
+		setWidgetPosition(37, 108, 0, 0, new WidgetPointer(ivar1));
+		return;
+	}
+	if ((getWidgetActualY(new WidgetPointer(ivar0)) > 128) && (getWidgetActualY(new WidgetPointer(ivar0)) < 148)) {
+		setWidgetPosition(37, 138, 0, 0, new WidgetPointer(ivar0));
+		setWidgetPosition(37, 138, 0, 0, new WidgetPointer(ivar1));
+		return;
+	}
+	if ((getWidgetActualY(new WidgetPointer(ivar0)) > 156) && (getWidgetActualY(new WidgetPointer(ivar0)) < 176)) {
+		setWidgetPosition(37, 166, 0, 0, new WidgetPointer(ivar0));
+		setWidgetPosition(37, 166, 0, 0, new WidgetPointer(ivar1));
+		return;
+	}
+	if ((getWidgetActualY(new WidgetPointer(ivar0)) > 184) && (getWidgetActualY(new WidgetPointer(ivar0)) < 204)) {
+		setWidgetPosition(37, 194, 0, 0, new WidgetPointer(ivar0));
+		setWidgetPosition(37, 194, 0, 0, new WidgetPointer(ivar1));
+		return;
+	}
+	if ((getWidgetActualY(new WidgetPointer(ivar0)) > 214) && (getWidgetActualY(new WidgetPointer(ivar0)) < 234)) {
+		setWidgetPosition(37, 224, 0, 0, new WidgetPointer(ivar0));
+		setWidgetPosition(37, 224, 0, 0, new WidgetPointer(ivar1));
+		return;
+	}
+	if ((getWidgetActualY(new WidgetPointer(ivar0)) > 242) && (getWidgetActualY(new WidgetPointer(ivar0)) < 262)) {
+		setWidgetPosition(37, 252, 0, 0, new WidgetPointer(ivar0));
+		setWidgetPosition(37, 252, 0, 0, new WidgetPointer(ivar1));
+		return;
+	}
+	return;
+}

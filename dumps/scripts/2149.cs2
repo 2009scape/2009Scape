@@ -1,0 +1,18 @@
+int script_2149() {
+	if (((boolean)script_2155())) {
+		return 0;
+	}
+	if (standart_config_101 < getOtherCommonData(globalint_699, 895)) {
+		return 0;
+	}
+	if (globalint_698 < getOtherCommonData(globalint_699, 896)) {
+		return 0;
+	}
+	if (((boolean)script_2153())) {
+		return 0;
+	}
+	if (((boolean)getOtherCommonData(globalint_699, 898)) && ((boolean)script_2194(getOtherCommonData(globalint_699, 847)))) {
+		return 0;
+	}
+	return 1;
+}

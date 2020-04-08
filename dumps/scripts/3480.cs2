@@ -1,0 +1,36 @@
+void script_3480(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	ivar5 = cs2method2601(new WidgetPointer(arg0));
+	if (((boolean)arg3)) {
+		if (ivar5 != 0) {
+			ivar5 = max(subtract(ivar5, 6), 0);
+			cs2method2100(0, ivar5, new WidgetPointer(arg0));
+		}
+		if (ivar5 <= 0) {
+			cs2method2100(0, 0, new WidgetPointer(arg0));
+			setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+			setWidgetIsHidden(false, new WidgetPointer(arg1));
+			setWidgetIsHidden(false, new WidgetPointer(arg2));
+			return;
+		}
+	} else {
+		if (ivar5 != 300) {
+			ivar5 = min(add(ivar5, 6), 300);
+			cs2method2100(0, ivar5, new WidgetPointer(arg0));
+		}
+		if (ivar5 >= 300) {
+			cs2method2100(0, 300, new WidgetPointer(arg0));
+			setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+			setWidgetIsHidden(false, new WidgetPointer(arg1));
+			setWidgetIsHidden(false, new WidgetPointer(arg2));
+			return;
+		}
+	}
+	setWidgetIsHidden(true, new WidgetPointer(arg1));
+	setWidgetIsHidden(true, new WidgetPointer(arg2));
+	if (subtract(getClientCycle(), arg4) >= 10) {
+		playSoundEffect(2871, 1, 0);
+		setScriptCallOnGameloop(3480, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), arg3, getClientCycle(), "III1i", new WidgetPointer(arg0));
+	}
+	return;
+}

@@ -1,0 +1,10 @@
+void script_271() {
+	globalint_1109 = 0;
+	globalint_1110 = 0;
+	globalint_1104 = 0;
+	globalint_1105 = 0;
+	globalint_1106 = 0;
+	globalint_1107 = 0;
+	globalint_1108 = 0;
+	return;
+}

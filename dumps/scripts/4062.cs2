@@ -1,0 +1,5 @@
+void script_4062() {
+	setWidgetText(new WidgetPointer(1058,45), "Accept Token Options");
+	setWidgetRGB(new Color(13, 0, 0), new WidgetPointer(1058,45));
+	return;
+}

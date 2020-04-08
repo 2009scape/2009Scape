@@ -1,0 +1,47 @@
+void script_1267() {
+	string svar0;
+	deleteAllExtraChilds(new WidgetPointer(309,1));
+	script_1088(20250625, 22);
+	deleteAllExtraChilds(new WidgetPointer(309,9));
+	script_333(20250633, 4734771, 3156258, 0, 0);
+	script_2647(20250633);
+	deleteAllExtraChilds(new WidgetPointer(309,12));
+	script_333(20250636, 4734771, 3156258, 0, 0);
+	script_1516(20250636, 380, 100);
+	script_2647(20250636);
+	svar0 = "Choose a hairstyle";
+	if (IsFemale()) {
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(309,8)), getWidgetActualHeight(new WidgetPointer(309,13)), 0, 0, new WidgetPointer(309,13));
+		setWidgetIsHidden(true, new WidgetPointer(309,5));
+		setScriptCallOnGlobalConfigChange(2789, 1008, 1015, 2, "Y", new WidgetPointer(309,1));
+		setScriptCallOnConfigChange(-1, "", new WidgetPointer(309,1));
+	} else {
+		setWidgetSize(subtract(getWidgetActualWidth(new WidgetPointer(309,8)), add(getWidgetActualWidth(new WidgetPointer(309,5)), 5)), getWidgetActualHeight(new WidgetPointer(309,13)), 0, 0, new WidgetPointer(309,13));
+		setWidgetIsHidden(false, new WidgetPointer(309,5));
+		globalint_774 = script_734(bitconfig_6084);
+		setWidgetSprite(1048, new WidgetPointer(309,6));
+		setWidgetSprite(1055, new WidgetPointer(309,7));
+		setScriptCallOnClickContextMenu(2830, -2147483644, 0, "i1", new WidgetPointer(309,6));
+		setScriptCallOnClickContextMenu(2830, -2147483644, 1, "i1", new WidgetPointer(309,7));
+		setScriptCallOnMouseOver(1160, new WidgetPointer(-32768,3), -1, new WidgetPointer(309,22), svar0, 25, 512, "IiIsii", new WidgetPointer(309,6));
+		setScriptCallOnMouseExit(40, new WidgetPointer(309,22), "I", new WidgetPointer(309,6));
+		svar0 = "Choose your facial hair";
+		setScriptCallOnMouseOver(1160, new WidgetPointer(-32768,3), -1, new WidgetPointer(309,22), svar0, 25, 512, "IiIsii", new WidgetPointer(309,7));
+		setScriptCallOnMouseExit(40, new WidgetPointer(309,22), "I", new WidgetPointer(309,7));
+		setScriptCallOnGlobalConfigChange(2789, 1008, 1009, 1015, 3, "Y", new WidgetPointer(309,1));
+		setScriptCallOnConfigChange(2736, 1057, 1, "Y", new WidgetPointer(309,1));
+	}
+	deleteAllExtraChilds(new WidgetPointer(309,13));
+	script_333(20250637, 4734771, 3156258, 0, 0);
+	createExtraChild(new WidgetPointer(309,13), 6, getExtraChildGap(new WidgetPointer(309,13)));
+	setWidgetSize(0, 0, 1, 1);
+	setWidgetPosition(0, 0, 1, 1);
+	cs2method1202();
+	setWidget3DRotation(5, 15, 40, 1870, 0, 2400);
+	setWidgetAnimation(9804);
+	script_2647(20250637);
+	deleteAllExtraChilds(new WidgetPointer(309,15));
+	script_2647(20250639);
+	script_2790();
+	return;
+}

@@ -1,0 +1,357 @@
+void script_84() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	string svar4;
+	ivar0 = -1;
+	ivar1 = -1;
+	ivar2 = 0;
+	ivar3 = 1;
+	ivar4 = 1;
+	if (globalint_41 == 3) {
+		ivar2 = 1;
+	}
+	deleteAllExtraChilds(new WidgetPointer(137,58));
+	ivar5 = -1;
+	ivar6 = script_4467();
+	ivar7 = -1;
+	ivar8 = script_1891();
+	globalint_132 = -1;
+	svar0 = "<col=0000ff>";
+	svar1 = "<col=800000>";
+	svar2 = "<col=800080>";
+	svar3 = "<col=00ff00>";
+	ivar9 = 0;
+	ivar10 = 0;
+	ivar11 = 0;
+	ivar12 = 0;
+	svar4 = "<col=000000>";
+	ivar13 = 0;
+	if (getDisplayMode() >= 2) {
+		svar0 = "<col=7fa9ff>";
+		svar1 = "<col=ff5256>";
+		svar2 = "<col=ff78d9>";
+		svar3 = "<col=96ff7d>";
+		ivar12 = 16777215;
+		svar4 = "<col=ffffff>";
+		ivar13 = 1;
+		ivar10 = cs2method_3408(105, 105, 3724, bitconfig_3612);
+		ivar9 = cs2method_3408(105, 105, 3723, bitconfig_9188);
+		ivar11 = cs2method_3408(105, 105, 3726, bitconfig_9191);
+	} else {
+		ivar10 = cs2method_3408(105, 105, 3724, bitconfig_3612);
+		ivar9 = cs2method_3408(105, 105, 3723, bitconfig_9188);
+		ivar11 = cs2method_3408(105, 105, 3726, bitconfig_9191);
+	}
+	ivar14 = 0;
+	ivar15 = 0;
+	ivar16 = 0;
+	ivar17 = 0;
+	ivar18 = 0;
+	ivar19 = 0;
+	ivar20 = 2;
+	ivar21 = 2;
+	while (ivar18 < 100) {
+		if (((boolean)script_193(ivar18)) && ((boolean)script_90(ivar18, ivar2))) {
+			createExtraChild(new WidgetPointer(137,58), 4, ivar14);
+			ivar15 = ivar14;
+			ivar16 = 1;
+			ivar14 = add(ivar14, 1);
+			ivar17 = cs2method5004(ivar18);
+			setWidgetRGB(new Color(ivar12));
+			setWidgetFont(495);
+			setWidgetTextAlignment(0, 0, 14);
+			setWidgetUnknownBoolean(((boolean)ivar13));
+			setWidgetPosition(3, ivar21, 0, 2);
+			switch (ivar17) {
+				case 0:
+				case 4:
+				case 11:
+				case 27:
+				case 26:
+				case 29:
+				case 28:
+				case 31:
+				case 30:
+				case 103:
+				case 110:
+				case 43:
+				case 109:
+				case 104:
+					setWidgetText(cs2method5003(ivar18));
+					if (((boolean)ivar3) && (((((((((boolean)ivar17) || (ivar17 == 4)) || (ivar17 == 27)) || (ivar17 == 28)) || (ivar17 == 29)) || (ivar17 == 26)) || (ivar17 == 30)) || (ivar17 == 31))) {
+						globalint_1269 = cs2method5024(ivar18);
+						ivar3 = 0;
+					}
+					break;
+				case 1:
+				case 2:
+					setWidgetText(cs2method5010(ivar18) + ": " + svar0 + cs2method5003(ivar18));
+					break;
+				case 3:
+					setWidgetText("From " + cs2method5010(ivar18) + ": " + svar1 + cs2method5003(ivar18));
+					break;
+				case 100:
+					setWidgetText(svar2 + cs2method5010(ivar18) + " " + cs2method5003(ivar18));
+					break;
+				case 5:
+					setWidgetText(svar1 + cs2method5003(ivar18));
+					break;
+				case 6:
+					setWidgetText("To " + cs2method5010(ivar18) + ": " + svar1 + cs2method5003(ivar18));
+					break;
+				case 7:
+					setWidgetText("From " + cs2method5010(ivar18) + ": " + svar1 + cs2method5003(ivar18));
+					break;
+				case 101:
+					setWidgetText("<col=7e3200>" + cs2method5010(ivar18) + " " + cs2method5003(ivar18));
+					break;
+				case 41:
+					setWidgetRGB(new Color(ivar10));
+					setWidgetText(svar4 + "[" + "</col>" + svar0 + cs2method5011(ivar18) + "</col>" + svar4 + "] " + cs2method5010(ivar18) + ": " + "</col>" + cs2method5003(ivar18));
+					break;
+				case 9:
+					setWidgetRGB(new Color(ivar9));
+					setWidgetText(svar4 + "[" + "</col>" + svar0 + cs2method5011(ivar18) + "</col>" + svar4 + "] " + cs2method5010(ivar18) + ": " + "</col>" + cs2method5003(ivar18));
+					break;
+				case 44:
+					setWidgetRGB(new Color(ivar11));
+					setWidgetText(svar4 + "[" + "</col>" + svar0 + cs2method5011(ivar18) + "</col>" + svar4 + "] " + cs2method5010(ivar18) + ": " + "</col>" + cs2method5003(ivar18));
+					break;
+				case 117:
+					setWidgetText("<col=7e3200>" + cs2method5003(ivar18));
+					break;
+				case 102:
+					setWidgetText("<col=8a2be2>" + cs2method5010(ivar18) + " " + cs2method5003(ivar18));
+					break;
+				case 105:
+					setWidgetText("<col=7e3200>" + cs2method5010(ivar18) + " " + cs2method5003(ivar18));
+					break;
+				case 106:
+					setWidgetText("<col=7e3200>" + cs2method5010(ivar18) + " " + cs2method5003(ivar18));
+					break;
+				case 107:
+					setWidgetText("<col=7e3200>" + cs2method5010(ivar18) + " " + cs2method5003(ivar18));
+					break;
+				case 118:
+					setWidgetText("<col=7e3200>" + cs2method5010(ivar18) + " " + cs2method5003(ivar18));
+					break;
+				case 17:
+					if ((stringMethod4107(strRemoveEntities(cs2method5015()), strRemoveEntities(cs2method5010(ivar18))) != 0) && (cs2method5056(cs2method5012(ivar18)) > 0)) {
+						setWidgetText(cs2method5010(ivar18) + "<img=3>" + ": " + svar0 + cs2method5003(ivar18));
+					} else {
+						setWidgetText(cs2method5010(ivar18) + ": " + svar0 + cs2method5003(ivar18));
+					}
+					break;
+				case 18:
+					if ((stringMethod4107(strRemoveEntities(cs2method5015()), strRemoveEntities(cs2method5010(ivar18))) != 0) && (cs2method5056(cs2method5012(ivar18)) > 0)) {
+						setWidgetText("From " + cs2method5010(ivar18) + "<img=3>" + ": " + svar1 + cs2method5003(ivar18));
+					} else {
+						setWidgetText("From " + cs2method5010(ivar18) + ": " + svar1 + cs2method5003(ivar18));
+					}
+					break;
+				case 19:
+					setWidgetText("To " + cs2method5010(ivar18) + ": " + svar1 + cs2method5003(ivar18));
+					break;
+				case 42:
+					setWidgetRGB(new Color(ivar10));
+					if ((stringMethod4107(strRemoveEntities(cs2method5015()), strRemoveEntities(cs2method5010(ivar18))) != 0) && (cs2method5056(cs2method5012(ivar18)) > 0)) {
+						setWidgetText(svar4 + "[" + "</col>" + svar0 + cs2method5011(ivar18) + "</col>" + svar4 + "] " + cs2method5010(ivar18) + "<img=3>" + ": " + "</col>" + cs2method5003(ivar18));
+					} else {
+						setWidgetText(svar4 + "[" + "</col>" + svar0 + cs2method5011(ivar18) + "</col>" + svar4 + "] " + cs2method5010(ivar18) + ": " + "</col>" + cs2method5003(ivar18));
+					}
+					break;
+				case 45:
+					setWidgetRGB(new Color(ivar11));
+					if ((stringMethod4107(strRemoveEntities(cs2method5015()), strRemoveEntities(cs2method5010(ivar18))) != 0) && (cs2method5056(cs2method5012(ivar18)) > 0)) {
+						setWidgetText(svar4 + "[" + "</col>" + svar0 + cs2method5011(ivar18) + "</col>" + svar4 + "] " + cs2method5010(ivar18) + "<img=3>" + ": " + "</col>" + cs2method5003(ivar18));
+					} else {
+						setWidgetText(svar4 + "[" + "</col>" + svar0 + cs2method5011(ivar18) + "</col>" + svar4 + "] " + cs2method5010(ivar18) + ": " + "</col>" + cs2method5003(ivar18));
+					}
+					break;
+				case 20:
+					setWidgetRGB(new Color(ivar9));
+					if ((stringMethod4107(strRemoveEntities(cs2method5015()), strRemoveEntities(cs2method5010(ivar18))) != 0) && (cs2method5056(cs2method5012(ivar18)) > 0)) {
+						setWidgetText(svar4 + "[" + "</col>" + svar0 + cs2method5011(ivar18) + "</col>" + svar4 + "] " + cs2method5010(ivar18) + "<img=3>" + ": " + "</col>" + cs2method5003(ivar18));
+					} else {
+						setWidgetText(svar4 + "[" + "</col>" + svar0 + cs2method5011(ivar18) + "</col>" + svar4 + "] " + cs2method5010(ivar18) + ": " + "</col>" + cs2method5003(ivar18));
+					}
+					break;
+				case 108:
+					setWidgetText("<col=7e3200>" + cs2method5010(ivar18) + " " + cs2method5003(ivar18));
+					break;
+				case 111:
+				case 112:
+					setWidgetText("<col=7e3200>" + cs2method5010(ivar18) + " " + cs2method5003(ivar18));
+					break;
+				case 114:
+				case 113:
+					setWidgetText("<col=7e3200>" + cs2method5010(ivar18) + " " + cs2method5003(ivar18));
+					break;
+				case 115:
+					setWidgetText("<col=7f0000>" + cs2method5010(ivar18) + " " + cs2method5003(ivar18));
+					break;
+				case 116:
+					setWidgetText(cs2method5003(ivar18));
+			}
+			setWidgetNoOptions();
+			setScriptCallOnClickContextMenu(86, -2147483644, cs2method5019(ivar18), ivar18, "isi");
+			cs2method1305("<col=ffffff>" + strRemoveEntities(cs2method5010(ivar18)));
+			switch (ivar17) {
+				case 1:
+				case 2:
+				case 3:
+				case 6:
+				case 7:
+				case 9:
+				case 41:
+				case 44:
+					if (((boolean)stringMethod4107(strRemoveEntities(cs2method5015()), strRemoveEntities(cs2method5010(ivar18)))) || ((boolean)stringMethod4107(strRemoveEntities(cs2method5020()), strRemoveEntities(cs2method5010(ivar18))))) {
+					} else {
+						if (isFriend(cs2method5019(ivar18))) {
+							if (isMuteRelatedMethod3329() && cs2method6900()) {
+								setWidgetContextMenuOption(6, "Message");
+							}
+						} else {
+							setWidgetContextMenuOption(6, "Add friend");
+							setWidgetContextMenuOption(7, "Add ignore");
+						}
+						if ((getClientRights() > 0) || (((int)hasMoreThen5Blackmarks()) > 0)) {
+							setWidgetContextMenuOption(8, "Report abuse");
+						}
+						if ((ivar17 == 41) && ((boolean)ivar6)) {
+							setWidgetContextMenuOption(10, "Kick/ban");
+						}
+						if ((ivar17 == 9) && ((boolean)ivar8)) {
+							setWidgetContextMenuOption(10, "Kick/ban");
+						}
+					}
+					break;
+				case 100:
+					setWidgetContextMenuOption(1, "Accept trade");
+					break;
+				case 101:
+				case 106:
+				case 107:
+				case 105:
+				case 118:
+				case 114:
+				case 113:
+					setWidgetContextMenuOption(2, "Accept challenge");
+					break;
+				case 102:
+					setWidgetContextMenuOption(3, "Give assistance");
+					break;
+				case 111:
+					setWidgetContextMenuOption(4, "Open invitation");
+					break;
+				case 112:
+					setWidgetContextMenuOption(3, "Vote");
+					break;
+				case 17:
+				case 18:
+				case 20:
+				case 42:
+				case 45:
+					if (((boolean)stringMethod4107(strRemoveEntities(cs2method5015()), strRemoveEntities(cs2method5010(ivar18)))) || ((boolean)stringMethod4107(strRemoveEntities(cs2method5020()), strRemoveEntities(cs2method5010(ivar18))))) {
+					} else {
+						if (isFriend(cs2method5019(ivar18))) {
+							if (isMuteRelatedMethod3329() && cs2method6900()) {
+								setWidgetContextMenuOption(6, "Message");
+							}
+						} else {
+							setWidgetContextMenuOption(6, "Add friend");
+							setWidgetContextMenuOption(7, "Add ignore");
+						}
+						if ((ivar17 == 42) && ((boolean)ivar6)) {
+							setWidgetContextMenuOption(10, "Kick/ban");
+						}
+						if ((ivar17 == 20) && ((boolean)ivar8)) {
+							setWidgetContextMenuOption(10, "Kick/ban");
+						}
+						if (cs2method5056(cs2method5012(ivar18)) > 0) {
+							if (globalint_132 == -1) {
+								globalint_132 = cs2method5012(ivar18);
+								globalstring_29 = cs2method5010(ivar18);
+								if (ivar17 == 20) {
+									globalint_133 = 6;
+									setWidgetContextMenuOption(9, "Quick Response");
+								}
+								if (ivar17 == 42) {
+									globalint_133 = 9;
+									setWidgetContextMenuOption(9, "Quick Response");
+								}
+								if (ivar17 == 45) {
+									globalint_133 = 11;
+									setWidgetContextMenuOption(9, "Quick Response");
+								} else if (ivar17 == 18) {
+									globalint_133 = 5;
+									if (isFriend(cs2method5019(ivar18))) {
+										setWidgetContextMenuOption(9, "Quick Response");
+									}
+								} else {
+									globalint_133 = 4;
+									setWidgetContextMenuOption(9, "Quick Response");
+								}
+							} else {
+								setWidgetContextMenuOption(9, "Quick Response");
+							}
+						}
+					}
+					break;
+				case 108:
+					setWidgetContextMenuOption(10, "Accept alliance");
+					break;
+				case 117:
+					setWidgetContextMenuOption(5, "View invite from");
+			}
+		} else {
+			ivar16 = 0;
+		}
+		if (((boolean)ivar4)) {
+			switch (cs2method5004(ivar18)) {
+				case 18:
+				case 7:
+				case 3:
+					globalstring_276 = strRemoveEntities(cs2method5019(ivar18));
+					ivar4 = 0;
+			}
+		}
+		if (setWidgetRegister(new WidgetPointer(137,58), ivar15) && ((boolean)ivar16)) {
+			ivar19 = max(getLineCount(484, getWidgetFont(), getWidgetText()), 1);
+			setWidgetSize(max(min(getMaxLineWidth(484, getWidgetFont(), getWidgetText()), 484), 1), multiply(14, ivar19), 0, 0);
+			ivar20 = add(ivar20, getWidgetActualHeight());
+			ivar21 = add(ivar21, getWidgetActualHeight());
+		}
+		ivar18 = add(ivar18, 1);
+	}
+	ivar20 = max(ivar20, getWidgetActualHeight(new WidgetPointer(137,58)));
+	setWidgetScrollMax(463, ivar20, new WidgetPointer(137,58));
+	script_72(8978491, 8978490, subtract(add(globalint_7, getWidgetScrollMaxV(new WidgetPointer(137,58))), globalint_8));
+	globalint_7 = cs2method2601(new WidgetPointer(137,58));
+	globalint_8 = getWidgetScrollMaxV(new WidgetPointer(137,58));
+	return;
+}

@@ -1,0 +1,52 @@
+void script_963(int arg0) {
+	globalint_157 = 1;
+	if (globalint_125 >= subtract(getClientCycle(), 5)) {
+		return;
+	}
+	if (arg0 == 48103425) {
+		switch (globalint_122) {
+			case 0:
+				globalint_122 = 512;
+				break;
+			case 512:
+				globalint_122 = 1024;
+				break;
+			case 1024:
+				globalint_122 = 1536;
+				break;
+			default:
+				globalint_122 = 0;
+		}
+	} else if (arg0 == 48103430) {
+		switch (globalint_123) {
+			case 0:
+				globalint_123 = 512;
+				break;
+			case 512:
+				globalint_123 = 1024;
+				break;
+			case 1024:
+				globalint_123 = 1536;
+				break;
+			default:
+				globalint_123 = 0;
+		}
+	} else {
+		if (arg0 == 48103435) {
+			switch (globalint_124) {
+				case 0:
+					globalint_124 = 512;
+					break;
+				case 512:
+					globalint_124 = 1024;
+					break;
+				case 1024:
+					globalint_124 = 1536;
+					break;
+				default:
+					globalint_124 = 0;
+			}
+		}
+	}
+	return;
+}

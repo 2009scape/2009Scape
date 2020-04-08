@@ -1,0 +1,6 @@
+void script_244() {
+	script_132();
+	globalint_11 = 0;
+	globalstring_24 = "";
+	return;
+}

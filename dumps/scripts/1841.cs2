@@ -1,0 +1,11 @@
+int script_1841(int arg0,int arg1,int arg2) {
+	createExtraChild(new WidgetPointer(arg0), 4, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetText(cs2method_3408(105, 115, 1806, arg1));
+	setWidgetPosition(0, arg2, 0, 0);
+	setWidgetSize(0, 30, 1, 0);
+	setWidgetRGB(new Color(255, 152, 31));
+	setWidgetFont(496);
+	setWidgetUnknownBoolean(true);
+	setWidgetTextAlignment(1, 1, 0);
+	return add(arg2, getWidgetActualHeight());
+}

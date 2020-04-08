@@ -1,0 +1,6 @@
+void script_1193(int arg0) {
+	if (((boolean)arg0) || ((boolean)mod(getClientCycle(), 50))) {
+		script_1194();
+	}
+	return;
+}

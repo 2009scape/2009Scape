@@ -1,0 +1,29 @@
+int script_506(int arg0) {
+	int ivar1;
+	ivar1 = cs2method5004(arg0);
+	if ((globalint_41 == 5) && (strLength(globalstring_0) > 0)) {
+		switch (ivar1) {
+			case 1:
+			case 19:
+			case 2:
+			case 18:
+			case 3:
+			case 6:
+			case 7:
+			case 42:
+			case 41:
+				if (((boolean)stringMethod4107(strRemoveEntities(cs2method5010(arg0)), globalstring_0)) || ((boolean)stringMethod4107(strRemoveEntities(cs2method5010(arg0)), cs2method5015()))) {
+					if (((boolean)cs2method5016())) {
+						return 1;
+					}
+					if (((boolean)cs2method5016()) && isFriend(cs2method5019(arg0))) {
+						return 1;
+					}
+					if (((boolean)ivar1) || (ivar1 == 7)) {
+						return 1;
+					}
+				}
+		}
+	}
+	return 0;
+}

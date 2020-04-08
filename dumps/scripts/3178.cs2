@@ -1,0 +1,10 @@
+void script_3178(int arg0) {
+	if (((boolean)globalint_6)) {
+		globalint_6 = 1;
+		setWidgetSprite(4086, new WidgetPointer(arg0));
+	} else {
+		globalint_6 = 0;
+		setWidgetSprite(4084, new WidgetPointer(arg0));
+	}
+	return;
+}

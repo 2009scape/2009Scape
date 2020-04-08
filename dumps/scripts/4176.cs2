@@ -1,0 +1,56 @@
+int script_4176(int arg0,int arg1) {
+	if (((boolean)arg0)) {
+		switch (arg1) {
+			case 0:
+				return globalint_1465;
+			case 1:
+				return globalint_1466;
+			case 2:
+				return globalint_1467;
+			case 3:
+				return globalint_740;
+			case 4:
+				return globalint_745;
+			case 5:
+				return globalint_780;
+			case 7:
+				return globalint_781;
+			case 9:
+				return globalint_782;
+			case 10:
+				return globalint_789;
+			case 12:
+				return globalint_1409;
+			case 13:
+				return globalint_1410;
+		}
+	} else {
+		switch (arg1) {
+			case 0:
+				return globalint_1453;
+			case 1:
+				return globalint_1454;
+			case 4:
+				return globalint_1455;
+			case 5:
+				return globalint_1456;
+			case 6:
+				return globalint_1457;
+			case 7:
+				return globalint_1458;
+			case 8:
+				return globalint_1459;
+			case 9:
+				return globalint_1460;
+			case 10:
+				return globalint_1461;
+			case 12:
+				return globalint_1462;
+			case 13:
+				return globalint_1463;
+			case 28:
+				return globalint_1464;
+		}
+	}
+	return -1;
+}

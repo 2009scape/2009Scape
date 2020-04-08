@@ -1,0 +1,4 @@
+void script_2301(int arg0) {
+	script_2308(arg0, script_42(globalint_182));
+	return;
+}

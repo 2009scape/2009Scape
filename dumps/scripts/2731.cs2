@@ -1,0 +1,5 @@
+void script_2731(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7) {
+	script_2732(arg0, arg1, bitconfig_3612, 1);
+	setScriptCallOnClickContextMenu(2733, -2147483644, arg1, new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), new WidgetPointer(arg6), new WidgetPointer(arg7), "iiIIIIII", new WidgetPointer(arg0));
+	return;
+}

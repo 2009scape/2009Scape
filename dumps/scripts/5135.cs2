@@ -1,0 +1,115 @@
+void script_5135() {
+	if (((boolean)script_5131())) {
+		if (((boolean)globalint_1571)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,581));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,581));
+		}
+		if (((boolean)globalint_1570)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,593));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,593));
+		}
+		if (((boolean)globalint_1572)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,557));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,557));
+		}
+		if (((boolean)globalint_1574)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,570));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,570));
+		}
+		if (((boolean)globalint_1573)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,762));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,762));
+		}
+		if (((boolean)globalint_1575)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,775));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,775));
+		}
+		if (((boolean)globalint_1576)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,507));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,507));
+		}
+		if (((boolean)globalint_1577)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,671));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,671));
+		}
+		if (((boolean)globalint_1578)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,682));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,682));
+		}
+		if (((boolean)globalint_1579)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,694));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,694));
+		}
+		if (((boolean)globalint_1580)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,707));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,707));
+		}
+		if (((boolean)globalint_1581)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,719));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,719));
+		}
+		if (((boolean)globalint_1582)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,816));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,816));
+		}
+		if (((boolean)globalint_1583)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,615));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,615));
+		}
+		if (((boolean)globalint_1584)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,604));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,604));
+		}
+		if (((boolean)globalint_1585)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,648));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,648));
+		}
+		if (((boolean)globalint_1586)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,626));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,626));
+		}
+		if (((boolean)globalint_1587)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,637));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,637));
+		}
+		if (((boolean)globalint_1588)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,659));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,659));
+		}
+		if (((boolean)globalint_1589)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,731));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,731));
+		}
+		if (((boolean)globalint_1649)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,805));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,805));
+		}
+		if (((boolean)globalint_1590)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,743));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,743));
+		}
+	}
+	return;
+}

@@ -1,0 +1,82 @@
+void script_2561() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	if (((boolean)globalint_844)) {
+		setWidgetSprite(1135, new WidgetPointer(863,27));
+		setWidgetSprite(1134, new WidgetPointer(863,28));
+	} else {
+		setWidgetSprite(1134, new WidgetPointer(863,27));
+		setWidgetSprite(1135, new WidgetPointer(863,28));
+	}
+	if (((boolean)globalint_844)) {
+		if (((boolean)globalint_845)) {
+			setWidgetText(new WidgetPointer(863,57), "Dwarf");
+			ivar0 = 175;
+			ivar1 = 5300;
+			ivar2 = 60;
+		} else if (globalint_845 == 2) {
+			setWidgetText(new WidgetPointer(863,57), "Goblin");
+			ivar0 = 175;
+			ivar1 = 4800;
+			ivar2 = 110;
+		} else {
+			if (globalint_845 == 3) {
+				setWidgetText(new WidgetPointer(863,57), "Elf");
+				ivar0 = 225;
+				ivar1 = 4800;
+				ivar2 = 60;
+			}
+		}
+	} else {
+		if (((boolean)globalint_844)) {
+			if (((boolean)globalint_845)) {
+				setWidgetText(new WidgetPointer(863,57), "Dwarf");
+				ivar0 = 350;
+				ivar1 = 10100;
+				ivar2 = 60;
+			} else if (globalint_845 == 2) {
+				setWidgetText(new WidgetPointer(863,57), "Goblin");
+				ivar0 = 350;
+				ivar1 = 9600;
+				ivar2 = 110;
+			} else {
+				if (globalint_845 == 3) {
+					setWidgetText(new WidgetPointer(863,57), "Elf");
+					ivar0 = 400;
+					ivar1 = 9600;
+					ivar2 = 60;
+				}
+			}
+		}
+	}
+	ivar3 = 100;
+	setWidgetText(new WidgetPointer(863,15), script_46(ivar3, ","));
+	setWidgetText(new WidgetPointer(863,5), intToStr(ivar0));
+	setWidgetText(new WidgetPointer(863,7), intToStr(ivar1));
+	setWidgetText(new WidgetPointer(863,9), intToStr(ivar2));
+	setWidgetText(new WidgetPointer(863,58), cs2method_3408(105, 115, 2386, globalint_845));
+	if (((boolean)globalint_845) && ((boolean)globalint_844)) {
+		setWidgetModel(47798, new WidgetPointer(863,34));
+	} else if ((globalint_845 == 2) && ((boolean)globalint_844)) {
+		setWidgetModel(47794, new WidgetPointer(863,34));
+	} else if ((globalint_845 == 3) && ((boolean)globalint_844)) {
+		setWidgetModel(47792, new WidgetPointer(863,34));
+	} else if (((boolean)globalint_845) && ((boolean)globalint_844)) {
+		setWidgetModel(47786, new WidgetPointer(863,34));
+	} else if ((globalint_845 == 2) && ((boolean)globalint_844)) {
+		setWidgetModel(47787, new WidgetPointer(863,34));
+	} else {
+		if ((globalint_845 == 3) && ((boolean)globalint_844)) {
+			setWidgetModel(47796, new WidgetPointer(863,34));
+		}
+	}
+	globalint_839 = bitconfig_6351;
+	globalint_846 = bitconfig_6380;
+	return;
+}

@@ -1,0 +1,8 @@
+void script_1170() {
+	if (getWidgetShadeColor(new WidgetPointer(601,1)) > globalint_1435) {
+		cs2method2103(max(50, subtract(getWidgetShadeColor(new WidgetPointer(601,1)), 1)), new WidgetPointer(601,1));
+	} else {
+		cs2method2103(min(255, add(getWidgetShadeColor(new WidgetPointer(601,1)), 1)), new WidgetPointer(601,1));
+	}
+	return;
+}

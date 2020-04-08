@@ -1,0 +1,30 @@
+void script_4782(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	ivar3 = -1;
+	ivar4 = -1;
+	switch (arg1) {
+		case 1:
+			ivar3 = 7541;
+			ivar4 = 7537;
+			break;
+		case 2:
+			ivar3 = 7540;
+			ivar4 = 7536;
+			break;
+		case 3:
+			ivar3 = 7539;
+			ivar4 = 7535;
+			break;
+		case 4:
+			ivar3 = 7538;
+			ivar4 = 7534;
+	}
+	if (((boolean)arg2)) {
+		setWidgetSprite(ivar3, new WidgetPointer(arg0));
+	} else {
+		setWidgetSprite(ivar4, new WidgetPointer(arg0));
+		script_41(73072826);
+	}
+	return;
+}

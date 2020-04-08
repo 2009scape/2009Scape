@@ -1,0 +1,21 @@
+int script_700(int arg0) {
+	switch (arg0) {
+		case 1:
+			return bitconfig_1000;
+		case 2:
+			return bitconfig_1001;
+		case 3:
+			return bitconfig_1002;
+		case 4:
+			return bitconfig_1003;
+		case 5:
+			return bitconfig_1004;
+		case 6:
+			return bitconfig_1005;
+		case 7:
+			return bitconfig_1006;
+		case 8:
+			return bitconfig_1009;
+	}
+	return 0;
+}

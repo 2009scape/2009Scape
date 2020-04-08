@@ -1,0 +1,9 @@
+void script_383() {
+	int stack_dump0;
+	deleteAllExtraChilds(new WidgetPointer(1028,125));
+	setWidgetIsHidden(true, new WidgetPointer(1028,125));
+	stack_dump0 = -1;
+	globalint_773 = -1;
+	globalint_2 = stack_dump0;
+	return;
+}

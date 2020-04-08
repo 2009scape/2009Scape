@@ -1,0 +1,16 @@
+void script_2221() {
+	switch (standart_config_1685) {
+		case 0:
+			setWidgetText(new WidgetPointer(931,156), "");
+			break;
+		case 1:
+			setWidgetText(new WidgetPointer(931,156), "Not enough workers.");
+			break;
+		case 2:
+			setWidgetText(new WidgetPointer(931,156), "Not enough resources.");
+			break;
+		case 3:
+			setWidgetText(new WidgetPointer(931,156), "Worker limit reached.");
+	}
+	return;
+}

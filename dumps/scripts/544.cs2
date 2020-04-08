@@ -1,0 +1,6 @@
+void script_544(int arg0) {
+	int ivar1;
+	ivar1 = script_2761();
+	setWidgetText(new WidgetPointer(arg0), "Total level: " + intToStr(ivar1));
+	return;
+}

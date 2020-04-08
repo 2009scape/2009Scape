@@ -1,0 +1,70 @@
+void script_2250(int arg0) {
+	int ivar1;
+	int ivar2;
+	flow_0:
+		ivar1 = divide(arg0, 5);
+		ivar2 = 3016;
+		if (isMember()) {
+			ivar2 = 3015;
+		}
+		IF (isMember()) 
+			GOTO	flow_3
+		GOTO	flow_4
+	flow_3:
+		IF (ivar1 == 41) 
+			GOTO	flow_6
+	flow_4:
+		IF (isMember() && (ivar1 == 17)) 
+			GOTO	flow_6
+		GOTO	flow_7
+	flow_6:
+		setWidgetIsHidden(true, new WidgetPointer(940,42));
+		setWidgetText(new WidgetPointer(940,40), getOtherCommonData(cs2method_3408(105, 74, ivar2, ivar1), 1078));
+		setWidgetIsHidden(false, new WidgetPointer(940,43));
+		setWidgetText(new WidgetPointer(940,43), getItemName(getOtherCommonData(cs2method_3408(105, 74, ivar2, ivar1), 1070)));
+		setWidgetIsHidden(false, new WidgetPointer(940,44));
+		setItemOnWidgetMethod2200(getOtherCommonData(cs2method_3408(105, 74, ivar2, ivar1), 1070), -1, new WidgetPointer(940,44));
+		setWidgetIsHidden(false, new WidgetPointer(940,41));
+		setWidgetIsHidden(false, new WidgetPointer(940,66));
+		setWidgetIsHidden(false, new WidgetPointer(940,64));
+		setWidgetIsHidden(false, new WidgetPointer(940,62));
+		setWidgetIsHidden(false, new WidgetPointer(940,63));
+		setWidgetIsHidden(true, new WidgetPointer(940,67));
+		setWidgetIsHidden(true, new WidgetPointer(940,68));
+		setWidgetText(new WidgetPointer(940,62), "1 : 1xp");
+		GOTO	flow_10
+	flow_7:
+		if (getSkillActualLvl(24) < getOtherCommonData(cs2method_3408(105, 74, ivar2, ivar1), 1071)) {
+			setWidgetIsHidden(true, new WidgetPointer(940,42));
+			setWidgetText(new WidgetPointer(940,40), getOtherCommonData(cs2method_3408(105, 74, ivar2, ivar1), 1078));
+			setWidgetIsHidden(false, new WidgetPointer(940,43));
+			setWidgetText(new WidgetPointer(940,43), getItemName(getOtherCommonData(cs2method_3408(105, 74, ivar2, ivar1), 1070)));
+			setWidgetIsHidden(false, new WidgetPointer(940,44));
+			setItemOnWidgetMethod2200(getOtherCommonData(cs2method_3408(105, 74, ivar2, ivar1), 1070), -1, new WidgetPointer(940,44));
+			setWidgetIsHidden(false, new WidgetPointer(940,41));
+			setWidgetIsHidden(true, new WidgetPointer(940,66));
+			setWidgetIsHidden(true, new WidgetPointer(940,64));
+			setWidgetIsHidden(true, new WidgetPointer(940,62));
+			setWidgetIsHidden(true, new WidgetPointer(940,63));
+			setWidgetIsHidden(false, new WidgetPointer(940,67));
+			setWidgetIsHidden(false, new WidgetPointer(940,68));
+			setWidgetText(new WidgetPointer(940,68), "Dungeoneering " + intToStr(getOtherCommonData(cs2method_3408(105, 74, ivar2, ivar1), 1071)) + " required");
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(940,42));
+			setWidgetText(new WidgetPointer(940,40), getOtherCommonData(cs2method_3408(105, 74, ivar2, ivar1), 1078));
+			setWidgetIsHidden(false, new WidgetPointer(940,43));
+			setWidgetText(new WidgetPointer(940,43), getItemName(getOtherCommonData(cs2method_3408(105, 74, ivar2, ivar1), 1070)));
+			setWidgetIsHidden(false, new WidgetPointer(940,44));
+			setItemOnWidgetMethod2200(getOtherCommonData(cs2method_3408(105, 74, ivar2, ivar1), 1070), -1, new WidgetPointer(940,44));
+			setWidgetIsHidden(false, new WidgetPointer(940,41));
+			setWidgetIsHidden(false, new WidgetPointer(940,66));
+			setWidgetIsHidden(false, new WidgetPointer(940,64));
+			setWidgetIsHidden(false, new WidgetPointer(940,62));
+			setWidgetIsHidden(false, new WidgetPointer(940,63));
+			setWidgetIsHidden(true, new WidgetPointer(940,67));
+			setWidgetIsHidden(true, new WidgetPointer(940,68));
+			setWidgetText(new WidgetPointer(940,62), intToStr(getOtherCommonData(cs2method_3408(105, 74, ivar2, ivar1), 1072)));
+		}
+	flow_10:
+		return;
+}

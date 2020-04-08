@@ -1,0 +1,6 @@
+void script_955() {
+	if (((((bitconfig_4540 == 3) && ((boolean)getItemAmtInContainer(94, 12845))) && (((boolean)getItemAmtInContainer(93, 12845)) && ((boolean)getItemAmtInContainer(94, 12846)))) && ((((boolean)getItemAmtInContainer(93, 12846)) && ((boolean)getItemAmtInContainer(94, 12847))) && (((boolean)getItemAmtInContainer(93, 12847)) && ((boolean)getItemAmtInContainer(94, 12848))))) && ((((boolean)getItemAmtInContainer(93, 12848)) && ((boolean)getItemAmtInContainer(94, 12849))) && ((boolean)getItemAmtInContainer(93, 12849)))) {
+		setWidgetIsHidden(false, new WidgetPointer(730,24));
+	}
+	return;
+}

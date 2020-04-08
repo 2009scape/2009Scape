@@ -1,0 +1,23 @@
+int script_1599(int arg0) {
+	switch (arg0) {
+		case 0:
+			return 1004;
+		case 1:
+			return 6226;
+		case 2:
+			return 6225;
+		case 3:
+			return 6224;
+		case 4:
+			return 6232;
+		case 5:
+			return 6233;
+		case 6:
+			return 6231;
+		case 7:
+			return 6227;
+		case 127:
+			return 1005;
+	}
+	return -1;
+}

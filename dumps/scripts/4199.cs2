@@ -1,0 +1,31 @@
+void script_4199(int arg0) {
+	setWidgetSprite(5416, new WidgetPointer(arg0));
+	setWidgetIsHidden(false, new WidgetPointer(891,76));
+	setWidgetIsHidden(false, new WidgetPointer(891,65));
+	if (arg0 == 58392632) {
+		setWidgetText(new WidgetPointer(891,75), "Cannon Room");
+		setWidgetText(new WidgetPointer(891,77), "62+");
+		setWidgetText(new WidgetPointer(891,78), "(Members only) Fix up broken cannons. This offers fast XP, for medium resource costs.");
+	}
+	if (arg0 == 58392633) {
+		setWidgetText(new WidgetPointer(891,75), "Burial Armour Room");
+		setWidgetText(new WidgetPointer(891,77), "30-70");
+		setWidgetText(new WidgetPointer(891,78), "Forge burial armour in line with the taskmaster's orders. Different XP rates at a range of resource costs.");
+	}
+	if (arg0 == 58392634) {
+		setWidgetText(new WidgetPointer(891,75), "Ceremonial Sword Room");
+		setWidgetText(new WidgetPointer(891,77), "70+");
+		setWidgetText(new WidgetPointer(891,78), "(Members Only) Smith beautiful ceremonial swords. High XP rate, for reasonably high resource costs.");
+	}
+	if (arg0 == 58392635) {
+		setWidgetText(new WidgetPointer(891,75), "Track Room");
+		setWidgetText(new WidgetPointer(891,77), "1-30");
+		setWidgetText(new WidgetPointer(891,78), "Build up sections of mine cart tracks. Low XP rate, no resource costs.");
+	}
+	if (arg0 == 58392636) {
+		setWidgetText(new WidgetPointer(891,75), "Reward Shop");
+		setWidgetText(new WidgetPointer(891,77), "--");
+		setWidgetText(new WidgetPointer(891,78), "Purchase unique rewards using respect earned in the workshop.");
+	}
+	return;
+}

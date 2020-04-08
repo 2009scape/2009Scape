@@ -1,0 +1,212 @@
+cs2func_script_998_struct(2,2,0) script_998(int arg0,int arg1) {
+	switch (arg0) {
+		flow_1:
+			case 0:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_998_struct(1, 303, "Small net", "You can now fish with a " + "<col=000080>" + "small net" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_998_struct(1, 13431, "Crayfish cage", "You can now fish with a " + "<col=000080>" + "crayfish cage" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_998_struct(5, 307, "Bait fishing", "You can now fish with " + "<col=000080>" + "fishing rods" + "</col>" + " and bait" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_998_struct(16, 305, "Members: Big net", "Members can now fish with " + "<col=000080>" + "big nets" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_998_struct(20, 309, "Fly fishing rod", "You can now fish with " + "<col=000080>" + "fly fishing rods" + "</col>" + " and " + "<col=000080>" + "feathers" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_998_struct(35, 311, "Harpoon", "You can now fish with " + "<col=000080>" + "harpoons" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_998_struct(40, 301, "Lobster pot", "You can now fish with " + "<col=000080>" + "lobster pots" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_998_struct(40, 14109, "Members: Sacred clay harpoon", "Members can now use " + "<col=000080>" + "sacred clay harpoons" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_998_struct(40, 14101, "Members: Volatile harpoon", "Members can now use " + "<col=000080>" + "volatile harpoons" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_998_struct(48, 11323, "Members: Heavy rod" + "<br>" + " (with 15 Agility and 15 Strength)", "Members who are versed in the art of barbarian fishing now have the Fishing level required to fish with " + "<col=000080>" + "heavy rods" + "</col>" + ". (They also need level 15 Agility and level 15 Strength.)");
+				case 10:
+					return newstruct cs2func_script_998_struct(65, 3157, "Members: Vessel fishing" + "<br>" + " (after starting Tai Bwo Wannai Trio)", "Members now have the Fishing level required to use " + "<col=000080>" + "karambwan vessels" + "</col>" + " to fish for " + "<col=000080>" + "karambwan" + "</col>" + " (after starting Tai Bwo Wannai Trio).");
+				case 11:
+					return newstruct cs2func_script_998_struct(65, 12860, "Swordfish gloves", "You can now wear " + "<col=000080>" + "swordfish gloves" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_998_struct(70, 20891, "Members: Small cast net (after completing Deadliest Catch)", "You can now fish with " + "<col=000080>" + "small cast nets" + "</col>" + " (after completing Deadliest Catch).");
+				case 13:
+					return newstruct cs2func_script_998_struct(70, 20892, "Members: Big cast net (after completing Deadliest Catch)", "Members can now fish with " + "<col=000080>" + "big cast nets" + "</col>" + " (after completing Deadliest Catch).");
+				case 14:
+					return newstruct cs2func_script_998_struct(90, 12861, "Members: Shark gloves", "Members can now wear " + "<col=000080>" + "shark gloves" + "</col>" + ".");
+			}
+			break;
+			case 1:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_998_struct(1, 317, "Shrimp - Net fishing", "You can now catch " + "<col=000080>" + "shrimp" + "</col>" + " with a net.");
+				case 1:
+					return newstruct cs2func_script_998_struct(1, 13435, "Crayfish - Crayfish cage", "You can now catch " + "<col=000080>" + "crayfish" + "</col>" + " with a crayfish cage.");
+				case 2:
+					return newstruct cs2func_script_998_struct(5, 327, "Sardine - Sea bait fishing", "You can now catch " + "<col=000080>" + "sardines" + "</col>" + " with a fishing rod.");
+				case 3:
+					return newstruct cs2func_script_998_struct(5, 3150, "Members: Karambwanji - Net fishing", "Members can now catch " + "<col=000080>" + "karabwanji" + "</col>" + " with a net.");
+				case 4:
+					return newstruct cs2func_script_998_struct(10, 345, "Herring - Sea bait fishing", "You can now catch " + "<col=000080>" + "herring" + "</col>" + " with a fishing rod.");
+				case 5:
+					return newstruct cs2func_script_998_struct(15, 321, "Anchovies - Net fishing", "You can now catch " + "<col=000080>" + "anchovies" + "</col>" + " with a net.");
+				case 6:
+					return newstruct cs2func_script_998_struct(16, 353, "Members: Mackerel - Big net fishing", "Members can now catch " + "<col=000080>" + "mackerel" + "</col>" + " with a big net.");
+				case 7:
+					return newstruct cs2func_script_998_struct(16, 407, "Members: Oyster - Big net fishing", "Members can now catch " + "<col=000080>" + "oysters" + "</col>" + " with a big net.");
+				case 8:
+					return newstruct cs2func_script_998_struct(16, 405, "Members: Casket - Big net fishing", "Members can now catch " + "<col=000080>" + "caskets" + "</col>" + " with a big net.");
+				case 9:
+					return newstruct cs2func_script_998_struct(16, 401, "Members: Seaweed - Big net fishing", "Members can now catch " + "<col=000080>" + "seaweed" + "</col>" + " with a big net.");
+				case 10:
+					return newstruct cs2func_script_998_struct(20, 335, "Trout - Fly-fishing", "You can now catch " + "<col=000080>" + "trout" + "</col>" + " with a fly-fishing rod.");
+				case 11:
+					return newstruct cs2func_script_998_struct(23, 341, "Members: Cod - Big net fishing", "Members can now catch " + "<col=000080>" + "cod" + "</col>" + " with a big net.");
+				case 12:
+					return newstruct cs2func_script_998_struct(25, 349, "Pike - River bait fishing", "You can now catch " + "<col=000080>" + "pike" + "</col>" + " with a fishing rod.");
+				case 13:
+					return newstruct cs2func_script_998_struct(28, 3379, "Members: Slimy eel - River bait fishing", "Members can now catch " + "<col=000080>" + "slimy eels" + "</col>" + " with a fishing rod.");
+				case 14:
+					return newstruct cs2func_script_998_struct(30, 331, "Salmon - Fly-fishing", "You can now catch " + "<col=000080>" + "salmon" + "</col>" + " with a fly-fishing rod.");
+				case 15:
+					return newstruct cs2func_script_998_struct(33, 5004, "Members: Giant frogspawn - Net fishing", "Members can now catch " + "<col=000080>" + "giant frogspawn" + "</col>" + " with a net.");
+				case 16:
+					return newstruct cs2func_script_998_struct(35, 359, "Tuna - Harpoon fishing", "You can now catch " + "<col=000080>" + "tuna" + "</col>" + " with a harpoon.");
+				case 17:
+					return newstruct cs2func_script_998_struct(38, 10138, "Members: Rainbow fish - Stripy fly-fishing", "Members can now catch " + "<col=000080>" + "rainbow fish" + "</col>" + " with a fly-fishing rod.");
+				case 18:
+					return newstruct cs2func_script_998_struct(38, 5001, "Members: Cave eel - River bait fishing", "Members can now catch " + "<col=000080>" + "cave eels" + "</col>" + " with a fishing rod.");
+				case 19:
+					return newstruct cs2func_script_998_struct(40, 377, "Lobster - Lobster pot fishing", "You can now catch " + "<col=000080>" + "lobsters" + "</col>" + " with a lobster pot.");
+				case 20:
+					return newstruct cs2func_script_998_struct(46, 363, "Members: Bass - Big net fishing", "Members can now catch " + "<col=000080>" + "bass" + "</col>" + " with a big net.");
+				case 21:
+					return newstruct cs2func_script_998_struct(50, 371, "Swordfish - Harpoon fishing", "You can now catch " + "<col=000080>" + "swordfish" + "</col>" + " with a harpoon.");
+				case 22:
+					return newstruct cs2func_script_998_struct(53, 2148, "Members: Lava eel - Bait fishing (oily fishing rod)", "Members can now catch " + "<col=000080>" + "lava eels" + "</col>" + " with an oily fishing rod.");
+				case 23:
+					return newstruct cs2func_script_998_struct(62, 7944, "Members: Monkfish - Net fishing", "Members can now catch " + "<col=000080>" + "monkfish" + "</col>" + " with a net.");
+				case 24:
+					return newstruct cs2func_script_998_struct(65, 3142, "Members: Karambwan - Vessel fishing", "Members can now catch " + "<col=000080>" + "karambwan" + "</col>" + " with a karambwan vessel in Karamja.");
+				case 25:
+					return newstruct cs2func_script_998_struct(76, 383, "Members: Shark - Harpoon fishing", "Members can now catch " + "<col=000080>" + "sharks" + "</col>" + " with a harpoon.");
+				case 26:
+					return newstruct cs2func_script_998_struct(79, 395, "Members: Sea turtle - Fishing Trawler", "Members can now catch " + "<col=000080>" + "sea turtles" + "</col>" + " in Fishing Trawler.");
+				case 27:
+					return newstruct cs2func_script_998_struct(81, 389, "Members: Manta ray - Fishing Trawler", "Members can now catch " + "<col=000080>" + "manta rays" + "</col>" + " in Fishing Trawler.");
+				case 28:
+					return newstruct cs2func_script_998_struct(85, 15264, "Members: Cavefish - Cave bait fishing", "Members can now catch " + "<col=000080>" + "cavefish" + "</col>" + " with a fishing rod.");
+				case 29:
+					return newstruct cs2func_script_998_struct(90, 15270, "Members: Rocktail - Living minerals cave bait fishing", "Members can now catch " + "<col=000080>" + "rocktails" + "</col>" + " with a fishing rod.");
+				case 30:
+					return newstruct cs2func_script_998_struct(95, 21520, "Members: Tiger shark - Fishing Trawler", "Members can now catch " + "<col=000080>" + "tiger sharks" + "</col>" + " in Fishing Trawler.");
+			}
+			break;
+			case 2:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_998_struct(-1, 7620, "To start fishing like a barbarian, talk to Otto Godblessed when you have at least level 48 Fishing, level 15 Agility and level 15 Strength.", "");
+				case 1:
+					return newstruct cs2func_script_998_struct(48, 11328, "Members: Leaping trout" + "<br>" + " (with 15 Strength and 15 Agility)", "Members who are versed in the art of barbarian fishing now have the Fishing level required to catch " + "<col=000080>" + "leaping trout" + "</col>" + " with a heavy rod. (They also need level 15 Agility and level 15 Strength.)");
+				case 2:
+					return newstruct cs2func_script_998_struct(55, 359, "Members: Tuna" + "<br>" + " (with 35 Strength)", "Members who are versed in the art of barbarian fishing now have the Fishing level required to catch " + "<col=000080>" + "tuna" + "</col>" + " without a harpoon. (They also need level 35 Strength.)");
+				case 3:
+					return newstruct cs2func_script_998_struct(55, 359, "Members: Possibility of catching two tuna in one fishing attempt" + "<br>" + " (with 35 Strength and 35 Agility)", "Members who are versed in the art of barbarian fishing now have the Fishing level required to potentially catch two " + "<col=000080>" + "tuna" + "</col>" + " in one attempt without a harpoon. (They also need level 35 Strength and 35 Agility.)");
+				case 4:
+					return newstruct cs2func_script_998_struct(58, 11330, "Members: Leaping salmon" + "<br>" + " (with 30 Strength and 30 Agility)", "Members who are versed in the art of barbarian fishing now have the Fishing level required to catch " + "<col=000080>" + "leaping salmon" + "</col>" + " with a heavy rod. (They also need level 30 Agility and level 30 Strength.)");
+				case 5:
+					return newstruct cs2func_script_998_struct(70, 371, "Members: Swordfish" + "<br>" + " (with 50 Strength)", "Members who are versed in the art of barbarian fishing now have the Fishing level required to catch " + "<col=000080>" + "swordfish" + "</col>" + " without a harpoon. (They also need level 50 Strength.)");
+				case 6:
+					return newstruct cs2func_script_998_struct(70, 371, "Members: Possibility of catching two swordfish in one fishing attempt" + "<br>" + " (with 50 Strength and 50 Agility)", "Members who are versed in the art of barbarian fishing now have the Fishing level required to catch two " + "<col=000080>" + "swordfish" + "</col>" + " without a harpoon. (They also need level 50 Strength and 50 Agility.)");
+				case 7:
+					return newstruct cs2func_script_998_struct(70, 11332, "Members: Leaping sturgeon" + "<br>" + " (with 45 Strength and 45 Agility)", "Members who are versed in the art of barbarian fishing now have the Fishing level required to catch " + "<col=000080>" + "leaping sturgeon" + "</col>" + " with a heavy rod. (They also need level 45 Agility and level 45 Strength.)");
+				case 8:
+					return newstruct cs2func_script_998_struct(96, 383, "Members: Shark" + "<br>" + " (with 76 Strength)", "Members who are versed in the art of barbarian fishing now have the Fishing level required to catch " + "<col=000080>" + "sharks" + "</col>" + " without a harpoon. (They also need level 76 Strength.)");
+				case 9:
+					return newstruct cs2func_script_998_struct(96, 383, "Members: Possibility of catching two sharks in one fishing attempt" + "<br>" + " (with 76 Strength and 76 Agility)", "Members who are versed in the art of barbarian fishing now have the Fishing level required to potentially catch two " + "<col=000080>" + "sharks" + "</col>" + " in one attempt without a harpoon. (They also need level 76 Strength and 76 Agility.)");
+			}
+			break;
+			case 3:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_998_struct(35, 359, "Possibility of catching two tuna in one fishing attempt" + "<br>" + " (with 35 Agility)", "You now have the Fishing level required to potentially catch two " + "<col=000080>" + "tuna" + "</col>" + " in one fishing attempt. (You also need level 35 Agility.)");
+				case 1:
+					return newstruct cs2func_script_998_struct(50, 371, "Possibility of catching two swordfish in one fishing attempt" + "<br>" + " (with 50 Agility)", "You now have the Fishing level required to potentially catch two " + "<col=000080>" + "swordfish" + "</col>" + " in one fishing attempt. (You also need level 50 Agility.)");
+				case 2:
+					return newstruct cs2func_script_998_struct(76, 383, "Possibility of catching two sharks in one fishing attempt" + "<br>" + " (with 76 Agility)", "You now have the Fishing level required to potentially catch two " + "<col=000080>" + "sharks" + "</col>" + " in one fishing attempt. (You also need level 76 Agility.)");
+			}
+			break;
+			case 4:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_998_struct(91, 18778, "Members: Starved ancient effigies", "Members can now investigate " + "<col=000080>" + "starved ancient effigies" + "</col>" + " using their knowledge of Fishing.");
+				case 1:
+					return newstruct cs2func_script_998_struct(93, 18779, "Members: Nourished ancient effigies", "Members can now investigate " + "<col=000080>" + "nourished ancient effigies" + "</col>" + " using their knowledge of Fishing.");
+				case 2:
+					return newstruct cs2func_script_998_struct(95, 18780, "Members: Sated ancient effigies", "Members can now investigate " + "<col=000080>" + "sated ancient effigies" + "</col>" + " using their knowledge of Fishing.");
+				case 3:
+					return newstruct cs2func_script_998_struct(97, 18781, "Members: Gorged ancient effigies", "Members can now investigate " + "<col=000080>" + "gorged ancient effigies" + "</col>" + " using their knowledge of Fishing.");
+			}
+			break;
+			case 5:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_998_struct(1, 14142, "Members: Stealing Creation - class 1 harpoon", "Members can now use " + "<col=000080>" + "class 1 harpoons" + "</col>" + " in Stealing Creation.");
+				case 1:
+					return newstruct cs2func_script_998_struct(20, 14184, "Members: Stealing Creation - catch class 2 sacred clay", "Members can now catch " + "<col=000080>" + "class 2 sacred clay" + "</col>" + " in Stealing Creation.");
+				case 2:
+					return newstruct cs2func_script_998_struct(20, 14144, "Members: Stealing Creation - class 2 harpoon", "Members can now use " + "<col=000080>" + "class 2 harpoons" + "</col>" + " in Stealing Creation.");
+				case 3:
+					return newstruct cs2func_script_998_struct(40, 14186, "Members: Stealing Creation - catch class 3 sacred clay", "Members can now catch " + "<col=000080>" + "class 3 sacred clay" + "</col>" + " in Stealing Creation.");
+				case 4:
+					return newstruct cs2func_script_998_struct(40, 14146, "Members: Stealing Creation - class 3 harpoon", "Members can now use " + "<col=000080>" + "class 3 harpoons" + "</col>" + " in Stealing Creation.");
+				case 5:
+					return newstruct cs2func_script_998_struct(60, 14188, "Members: Stealing Creation - catch class 4 sacred clay", "Members can now catch " + "<col=000080>" + "class 4 sacred clay" + "</col>" + " in Stealing Creation.");
+				case 6:
+					return newstruct cs2func_script_998_struct(60, 14148, "Members: Stealing Creation - class 4 harpoon", "Members can now use " + "<col=000080>" + "class 4 harpoons" + "</col>" + " in Stealing Creation.");
+				case 7:
+					return newstruct cs2func_script_998_struct(80, 14190, "Members: Stealing Creation - catch class 5 sacred clay", "Members can now catch " + "<col=000080>" + "class 5 sacred clay" + "</col>" + " in Stealing Creation.");
+				case 8:
+					return newstruct cs2func_script_998_struct(80, 14150, "Members: Stealing Creation - class 5 harpoon", "Members can now use " + "<col=000080>" + "class 5 harpoons" + "</col>" + " in Stealing Creation.");
+			}
+			break;
+			case 6:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_998_struct(-1, 15707, "Dungeoneering skill tasks" + "<br>" + "As your Fishing level increases, you will be able to attempt higher-level fishing tasks within Daemonheim. You will also be more likely to succeed when attempting fishing tasks within Daemonheim.", "");
+				case 1:
+					return newstruct cs2func_script_998_struct(1, 17797, "Heim crab (Tier 1)", "You can now catch " + "<col=000080>" + "heim crabs" + "</col>" + " within Daemonheim.");
+				case 2:
+					return newstruct cs2func_script_998_struct(10, 17799, "Red-eye (Tier 2)", "You can now catch " + "<col=000080>" + "red-eye" + "</col>" + " within Daemonheim.");
+				case 3:
+					return newstruct cs2func_script_998_struct(20, 17801, "Dusk eel (Tier 3)", "You can now catch " + "<col=000080>" + "dusk eels" + "</col>" + " within Daemonheim.");
+				case 4:
+					return newstruct cs2func_script_998_struct(30, 17803, "Giant flatfish (Tier 4)", "You can now catch " + "<col=000080>" + "giant flatfish" + "</col>" + " within Daemonheim.");
+				case 5:
+					return newstruct cs2func_script_998_struct(40, 17805, "Short-finned eel (Tier 5)", "You can now catch " + "<col=000080>" + "short-finned eels" + "</col>" + " within Daemonheim.");
+				case 6:
+					return newstruct cs2func_script_998_struct(50, 17807, "Members: Web snipper (Tier 6)", "Members can now catch " + "<col=000080>" + "web snippers" + "</col>" + " within Daemonheim.");
+				case 7:
+					return newstruct cs2func_script_998_struct(60, 17809, "Members: Bouldabass (Tier 7)", "Members can now catch " + "<col=000080>" + "bouldabass" + "</col>" + " within Daemonheim.");
+				case 8:
+					return newstruct cs2func_script_998_struct(70, 17811, "Members: Salve eel (Tier 8)", "Members can now catch " + "<col=000080>" + "salve eels" + "</col>" + " within Daemonheim.");
+				case 9:
+					return newstruct cs2func_script_998_struct(80, 17813, "Members: Blue crab (Tier 9)", "Members can now catch " + "<col=000080>" + "blue crabs" + "</col>" + " within Daemonheim.");
+				case 10:
+					return newstruct cs2func_script_998_struct(90, 17815, "Members: Cave moray (Tier 10)", "Members can now catch " + "<col=000080>" + "cave morays" + "</col>" + " within Daemonheim.");
+			}
+			break;
+			case 7:
+			SWITCH (arg1) {
+				case 0:
+					 GOTO flow_99
+				case 1:
+					 GOTO flow_100
+			}
+			break;
+		flow_99:
+			return newstruct cs2func_script_998_struct(68, 383, "Members: Fishing Guild", "Members can now enter the " + "<col=000080>" + "Fishing Guild" + "</col>" + ".");
+		flow_100:
+			return newstruct cs2func_script_998_struct(99, 9798, "Skill mastery", "<col=000080>" + "Congratulations! You are now a master of " + "<col=800000>" + "Fishing" + "<col=000080>" + ". Members can visit the " + "<col=800000>" + "Master Fisherman" + "<col=000080>" + " at the " + "<col=800000>" + "Fishing Guild" + "<col=000080>" + ". He has something special that is only available to true masters of the " + "<col=800000>" + "Fishing" + "<col=000080>" + " skill!");
+	}
+	return newstruct cs2func_script_998_struct(0, -1, "", "");
+}

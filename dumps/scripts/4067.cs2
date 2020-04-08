@@ -1,0 +1,19 @@
+void script_4067(int arg0) {
+	switch (arg0) {
+		case 69337110:
+			setWidgetPosition(-160, 13, 1, 0, new WidgetPointer(arg0));
+			break;
+		case 69337111:
+			setWidgetPosition(-80, 13, 1, 0, new WidgetPointer(arg0));
+			break;
+		case 69337112:
+			setWidgetPosition(0, 13, 1, 0, new WidgetPointer(arg0));
+			break;
+		case 69337114:
+			setWidgetPosition(80, 13, 1, 0, new WidgetPointer(arg0));
+			break;
+		case 69337113:
+			setWidgetPosition(160, 13, 1, 0, new WidgetPointer(arg0));
+	}
+	return;
+}

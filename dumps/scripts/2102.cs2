@@ -1,0 +1,9 @@
+void script_2102() {
+	int ivar0;
+	script_31(19464198, 19464196, 798, 795, 796, 797, 793, 794);
+	ivar0 = add(multiply(getLineCount(getWidgetActualWidth(new WidgetPointer(297,7)), 495, getWidgetText(new WidgetPointer(297,7))), 12), 5);
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(297,7)), ivar0, 0, 0, new WidgetPointer(297,7));
+	setWidgetPosition(getWidgetActualX(new WidgetPointer(297,49)), add(add(getWidgetActualY(new WidgetPointer(297,7)), ivar0), 5), 0, 0, new WidgetPointer(297,49));
+	script_2104(0);
+	return;
+}

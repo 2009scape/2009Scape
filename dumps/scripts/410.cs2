@@ -1,0 +1,61 @@
+void script_410(int arg0) {
+	if (globalint_1361 == arg0) {
+		return;
+	}
+	setScriptCallOnGlobalConfigChange(410, globalint_1361, 1361, 1, "iY", new WidgetPointer(1010,6));
+	if (globalint_1363 == bitconfig_7510) {
+		setWidgetIsHidden(false, new WidgetPointer(1010,33));
+		setWidgetIsHidden(true, new WidgetPointer(1010,24));
+	}
+	if (((boolean)globalint_1361)) {
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(1010,12));
+		setWidgetSprite(3745, new WidgetPointer(1010,13));
+		setWidgetRGB(new Color(150, 150, 100), new WidgetPointer(1010,14));
+		setWidgetSprite(3745, new WidgetPointer(1010,15));
+		setWidgetRGB(new Color(150, 150, 100), new WidgetPointer(1010,16));
+		setWidgetSprite(3745, new WidgetPointer(1010,17));
+		setWidgetRGB(new Color(150, 150, 100), new WidgetPointer(1010,18));
+		setWidgetSprite(3745, new WidgetPointer(1010,19));
+	} else if (((boolean)globalint_1361)) {
+		if (((boolean)bitconfig_7511)) {
+			if (((boolean)rndExcl(2))) {
+				playSoundEffect2False(3436, 1, 0, 255);
+			} else {
+				playSoundEffect2False(3438, 1, 0, 255);
+			}
+		}
+		setWidgetRGB(new Color(0, 200, 0), new WidgetPointer(1010,12));
+		setWidgetSprite(3746, new WidgetPointer(1010,13));
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(1010,14));
+		setWidgetSprite(3745, new WidgetPointer(1010,15));
+		setWidgetRGB(new Color(150, 150, 100), new WidgetPointer(1010,16));
+		setWidgetSprite(3745, new WidgetPointer(1010,17));
+		setWidgetRGB(new Color(150, 150, 100), new WidgetPointer(1010,18));
+		setWidgetSprite(3745, new WidgetPointer(1010,19));
+	} else if (globalint_1361 == 2) {
+		if (((boolean)bitconfig_7511)) {
+			playSoundEffect2False(3437, 1, 0, 255);
+		}
+		setWidgetRGB(new Color(0, 200, 0), new WidgetPointer(1010,12));
+		setWidgetSprite(3746, new WidgetPointer(1010,13));
+		setWidgetRGB(new Color(0, 200, 0), new WidgetPointer(1010,14));
+		setWidgetSprite(3746, new WidgetPointer(1010,15));
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(1010,16));
+		setWidgetSprite(3745, new WidgetPointer(1010,17));
+		setWidgetRGB(new Color(150, 150, 100), new WidgetPointer(1010,18));
+		setWidgetSprite(3745, new WidgetPointer(1010,19));
+	} else {
+		if (((boolean)bitconfig_7511)) {
+			playSoundEffect2False(3441, 1, 0, 255);
+		}
+		setWidgetRGB(new Color(0, 200, 0), new WidgetPointer(1010,12));
+		setWidgetSprite(3746, new WidgetPointer(1010,13));
+		setWidgetRGB(new Color(0, 200, 0), new WidgetPointer(1010,14));
+		setWidgetSprite(3746, new WidgetPointer(1010,15));
+		setWidgetRGB(new Color(0, 200, 0), new WidgetPointer(1010,16));
+		setWidgetSprite(3746, new WidgetPointer(1010,17));
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(1010,18));
+		setWidgetSprite(3745, new WidgetPointer(1010,19));
+	}
+	return;
+}

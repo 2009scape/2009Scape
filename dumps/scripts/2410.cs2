@@ -1,0 +1,48 @@
+void script_2410(int arg0,int arg1,int arg2,int arg3,int arg4,string arg5,string arg6,string arg7,string arg8,string arg9,string arg10) {
+	if (strLength(arg5) > 0) {
+		setWidgetContextMenuOption(1, arg5);
+		if (arg0 != -1) {
+			cs2method1309(1, arg0);
+		} else {
+			cs2method1309(1, 36);
+		}
+	}
+	if (strLength(arg6) > 0) {
+		setWidgetContextMenuOption(2, arg6);
+		if (arg1 != -1) {
+			cs2method1309(2, arg1);
+		} else {
+			cs2method1309(2, 36);
+		}
+	}
+	if (strLength(arg7) > 0) {
+		setWidgetContextMenuOption(3, arg7);
+		if (arg2 != -1) {
+			cs2method1309(3, arg2);
+		} else {
+			cs2method1309(3, 36);
+		}
+	}
+	cs2method1306("Use");
+	cs2method1311(46);
+	cs2method1308(46, 36);
+	setWidgetContextMenuOption(10, "Examine");
+	if (strLength(arg8) > 0) {
+		setWidgetContextMenuOption(7, arg8);
+		if (arg3 != -1) {
+			cs2method1309(7, arg3);
+		} else {
+			cs2method1309(7, 36);
+		}
+	}
+	if (strLength(arg9) > 0) {
+		setWidgetContextMenuOption(8, arg9);
+		if (arg4 != -1) {
+			cs2method1309(8, arg4);
+		} else {
+			cs2method1309(8, 36);
+		}
+	}
+	cs2method1305("<col=ff9040>" + arg10);
+	return;
+}

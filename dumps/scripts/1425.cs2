@@ -1,0 +1,63 @@
+int script_1425(int arg0) {
+	if (((boolean)arg0)) {
+		return 14;
+	}
+	if (((boolean)arg0)) {
+		return 58;
+	}
+	if (arg0 == 2) {
+		return 138;
+	}
+	if (arg0 == 3) {
+		return 172;
+	}
+	if (arg0 == 4) {
+		return 262;
+	}
+	if (arg0 == 5) {
+		return 296;
+	}
+	if (arg0 == 6) {
+		return 376;
+	}
+	if (arg0 == 7) {
+		return 410;
+	}
+	if (arg0 == 8) {
+		return 48;
+	}
+	if (arg0 == 9) {
+		return 216;
+	}
+	if (arg0 == 10) {
+		return 14;
+	}
+	if (arg0 == 11) {
+		return 48;
+	}
+	if (arg0 == 12) {
+		return 82;
+	}
+	if (arg0 == 13) {
+		return 172;
+	}
+	if (arg0 == 14) {
+		return 216;
+	}
+	if (arg0 == 15) {
+		return 250;
+	}
+	if (arg0 == 16) {
+		return 345;
+	}
+	if (arg0 == 17) {
+		return 379;
+	}
+	if (arg0 == 18) {
+		return 409;
+	}
+	if (arg0 == 19) {
+		return 379;
+	}
+	return 0;
+}

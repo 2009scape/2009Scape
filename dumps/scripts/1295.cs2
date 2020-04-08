@@ -1,0 +1,8 @@
+void script_1295() {
+	setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(144,147));
+	setScriptCallOnMouseExit(45, new WidgetPointer(-32768,3), 16711680, "Ii", new WidgetPointer(144,147));
+	setWidgetIsHidden(true, new WidgetPointer(144,186));
+	setWidgetModel(4910, new WidgetPointer(144,187));
+	setWidgetAnimation(1453, new WidgetPointer(144,187));
+	return;
+}

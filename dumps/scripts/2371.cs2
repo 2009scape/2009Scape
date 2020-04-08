@@ -1,0 +1,8 @@
+void script_2371() {
+	if (((boolean)bitconfig_4894)) {
+		setWidgetIsHidden(false, new WidgetPointer(667,49));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(667,49));
+	}
+	return;
+}

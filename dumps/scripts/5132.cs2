@@ -1,0 +1,7 @@
+void script_5132() {
+	if (((boolean)script_5131())) {
+		script_5127();
+		script_5133();
+	}
+	return;
+}

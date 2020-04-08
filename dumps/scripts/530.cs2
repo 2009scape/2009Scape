@@ -1,0 +1,30 @@
+cs2func_script_530_struct(1,1,0) script_530(int arg0) {
+	if (arg0 == 19726410) {
+		return newstruct cs2func_script_530_struct(bitconfig_4090, "Runecrafting");
+	}
+	if (arg0 == 19726411) {
+		return newstruct cs2func_script_530_struct(bitconfig_4091, "Crafting");
+	}
+	if (arg0 == 19726412) {
+		return newstruct cs2func_script_530_struct(bitconfig_4093, "Fletching");
+	}
+	if (arg0 == 19726413) {
+		return newstruct cs2func_script_530_struct(bitconfig_4095, "Construction");
+	}
+	if (arg0 == 19726414) {
+		return newstruct cs2func_script_530_struct(bitconfig_4096, "Farming");
+	}
+	if (arg0 == 19726415) {
+		return newstruct cs2func_script_530_struct(bitconfig_4098, "Magic");
+	}
+	if (arg0 == 19726416) {
+		return newstruct cs2func_script_530_struct(bitconfig_4100, "Smithing");
+	}
+	if (arg0 == 19726417) {
+		return newstruct cs2func_script_530_struct(bitconfig_4101, "Cooking");
+	}
+	if (arg0 == 19726418) {
+		return newstruct cs2func_script_530_struct(bitconfig_4102, "Herblore");
+	}
+	return newstruct cs2func_script_530_struct(0, "");
+}

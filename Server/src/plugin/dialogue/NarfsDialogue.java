@@ -58,7 +58,7 @@ public class NarfsDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "That's a funny name you've got.");
+		interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "That's a funny name you've got.");
 		stage = 1;
 		return true;
 	}

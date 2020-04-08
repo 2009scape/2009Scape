@@ -1,0 +1,14 @@
+void script_3235() {
+	int ivar0;
+	ivar0 = 39059501;
+	if (hasSSKey()) {
+		ivar0 = 63897644;
+	}
+	if (globalint_200 > 0) {
+		setScriptCallOnMousePressed(2944, "", new WidgetPointer(ivar0));
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(ivar0));
+		resetRCs();
+		script_2954();
+	}
+	return;
+}

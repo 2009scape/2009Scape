@@ -1,0 +1,5 @@
+void script_3412(int arg0,int arg1) {
+	setWidgetText(new WidgetPointer(arg0), "High-risk Wilderness World");
+	setWidgetText(new WidgetPointer(arg1), "Warning: This is a High-risk Wilderness world." + "<br>" + "<br>" + "While you are in the Wilderness on this world, you will not be permitted to use the Protect Item prayer or curse, so you may lose ALL your items when you die." + "<br>" + "<br>" + "You have been warned!");
+	return;
+}

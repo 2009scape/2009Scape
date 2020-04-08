@@ -1,0 +1,4 @@
+void script_5374(int arg0) {
+	globalint_1656 = divide(multiply(multiply(arg0, 10), 50), multiply(6, 8));
+	return;
+}

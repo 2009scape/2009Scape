@@ -1,0 +1,6 @@
+int script_3287() {
+	if (globalint_1324 > 2) {
+		return 1;
+	}
+	return 0;
+}

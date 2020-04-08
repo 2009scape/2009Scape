@@ -1,0 +1,14 @@
+void script_4060() {
+	if (((boolean)bitconfig_8669)) {
+		if (((((bitconfig_8662 < 30) || (bitconfig_8663 < 30)) || (bitconfig_8664 < 30)) || (bitconfig_8665 < 30)) || (bitconfig_8666 < 30)) {
+			script_4061();
+		} else {
+			script_4062();
+		}
+	} else if ((((bitconfig_8662 < 200) && (bitconfig_8663 < 200)) && ((bitconfig_8664 < 200) && (bitconfig_8665 < 200))) && (bitconfig_8666 < 200)) {
+		script_4061();
+	} else {
+		script_4062();
+	}
+	return;
+}

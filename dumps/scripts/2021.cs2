@@ -1,0 +1,24 @@
+void script_2021(int arg0,int arg1) {
+	if (((boolean)arg1)) {
+		if (setWidgetRegister(new WidgetPointer(arg0), 0)) {
+			setWidgetSprite(3862);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 1)) {
+			setWidgetSprite(3860);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 2)) {
+			setWidgetSprite(3861);
+		}
+	} else {
+		if (setWidgetRegister(new WidgetPointer(arg0), 0)) {
+			setWidgetSprite(3859);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 1)) {
+			setWidgetSprite(3857);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 2)) {
+			setWidgetSprite(3858);
+		}
+	}
+	return;
+}

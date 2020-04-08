@@ -1,0 +1,6 @@
+void script_2858() {
+	if (globalint_1069 < 5000) {
+		globalint_1069 = add(globalint_1069, 50);
+	}
+	return;
+}

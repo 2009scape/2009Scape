@@ -1,0 +1,141 @@
+void script_4880(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	string svar0;
+	svar0 = "";
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 3;
+	ivar4 = 0;
+	ivar5 = 2236962;
+	ivar6 = -1;
+	ivar7 = 0;
+	ivar8 = script_4964(arg0);
+	ivar9 = 0;
+	ivar10 = 0;
+	switch (arg0) {
+		case 71566780:
+		case 71566750:
+		case 71566707:
+		case 71566744:
+		case 71566713:
+		case 71566774:
+		case 71566768:
+		case 71566738:
+		case 71566719:
+		case 71566689:
+		case 71566792:
+		case 71566732:
+		case 71566798:
+		case 71566762:
+		case 71566695:
+		case 71566786:
+		case 71566756:
+		case 71566726:
+		case 71566701:
+			ivar10 = 1;
+	}
+	if (citadelConfigsInitialized()) {
+		deleteAllExtraChilds(new WidgetPointer(arg0));
+		script_4407(arg0, 1, 178);
+		createExtraChild(new WidgetPointer(arg0), 3, 0);
+		setWidgetSize(20, 20, 0, 0);
+		setWidgetPosition(0, 0, 1, 1);
+		setWidgetRGB(new Color(85, 51, 51));
+		setWidgetFilled(1);
+		if (((boolean)ivar10)) {
+			cs2method2103(255);
+			setWidgetHidden(1);
+		}
+		ivar4 = getExtraChildGap(new WidgetPointer(arg0));
+		createExtraChild(new WidgetPointer(arg0), 3, 1);
+		setWidgetSize(20, 20, 0, 0);
+		setWidgetPosition(0, 0, 1, 1);
+		setWidgetRGB(new Color(238, 204, 238));
+		if (((boolean)ivar10)) {
+			cs2method2103(255);
+		}
+		ivar7 = script_4971(ivar8);
+		ivar6 = script_5171(ivar7);
+		createExtraChild(new WidgetPointer(arg0), 5, 2);
+		setWidgetSize(18, 18, 0, 0);
+		setWidgetPosition(0, 0, 1, 1);
+		if (((boolean)ivar10)) {
+			cs2method2103(255);
+		}
+		switch (ivar8) {
+			case 35:
+			case 38:
+			case 39:
+			case 36:
+			case 37:
+			case 42:
+			case 43:
+			case 40:
+			case 41:
+			case 46:
+			case 47:
+			case 44:
+			case 45:
+			case 48:
+				ivar2 = 1;
+				ivar3 = 1;
+				break;
+			default:
+				ivar2 = 0;
+				ivar3 = 3;
+		}
+		if (ivar9 > 0) {
+			ivar1 = 1;
+			ivar5 = 12303291;
+		} else {
+			ivar1 = 0;
+			ivar5 = 2236962;
+		}
+		if (((boolean)ivar2)) {
+			if (((boolean)ivar1)) {
+				svar0 = "Build over the existing blanket change.";
+			} else {
+				svar0 = "Build a new blanket change.";
+			}
+		} else {
+			switch (ivar8) {
+				case 25:
+				case 24:
+				case 27:
+				case 26:
+				case 28:
+					if (((boolean)ivar1)) {
+						svar0 = "Build over the existing statue.";
+					} else {
+						svar0 = "Build a new statue.";
+					}
+					break;
+				default:
+					if (((boolean)ivar1)) {
+						svar0 = "Build over the existing customisation.";
+					} else {
+						svar0 = "Build a new customisation.";
+					}
+			}
+		}
+	}
+	ivar11 = script_5216(ivar8);
+	if (((boolean)ivar2)) {
+		setWidgetIsHidden(true, new WidgetPointer(getWidgetParentUid(new WidgetPointer(arg0))));
+		if (ivar11 != -1) {
+			setScriptCallOnMouseOver(4882, new WidgetPointer(-32768,3), svar0, ivar3, "Isi", new WidgetPointer(ivar11));
+		}
+	}
+	setScriptCallOnMouseOver(4882, new WidgetPointer(-32768,3), svar0, ivar3, "Isi", new WidgetPointer(arg0));
+	return;
+}

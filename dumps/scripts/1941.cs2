@@ -1,0 +1,35 @@
+void script_1941() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar0 = add(add(add(standart_config_1332, standart_config_1334), standart_config_1337), multiply(2, subtract(standart_config_1333, standart_config_1335)));
+	setWidgetText(new WidgetPointer(809,17), "Score: " + intToStr(ivar0));
+	if (((boolean)globalint_556)) {
+		return;
+	}
+	ivar1 = subtract(globalint_556, getClientCycle());
+	ivar2 = divide(ivar1, 3000);
+	ivar3 = mod(divide(ivar1, 50), 60);
+	if ((ivar2 < 0) || (ivar3 < 0)) {
+		setWidgetText(new WidgetPointer(809,15), "Game ending");
+		setWidgetUnknownBoolean(true, new WidgetPointer(809,15));
+		script_1942();
+	} else if (((boolean)ivar2) && ((boolean)ivar3)) {
+		setWidgetText(new WidgetPointer(809,15), "Game ending");
+	} else if (ivar3 < 10) {
+		setWidgetText(new WidgetPointer(809,15), intToStr(ivar2) + ":0" + intToStr(ivar3));
+	} else {
+		setWidgetText(new WidgetPointer(809,15), intToStr(ivar2) + ":" + intToStr(ivar3));
+	}
+	if (ivar2 < 1) {
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(809,15));
+		setWidgetUnknownBoolean(true, new WidgetPointer(809,15));
+		script_1942();
+	} else {
+		if (isWidgetHidden(new WidgetPointer(809,18))) {
+			setWidgetIsHidden(true, new WidgetPointer(809,18));
+		}
+	}
+	return;
+}

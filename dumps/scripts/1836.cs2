@@ -1,0 +1,53 @@
+void script_1836() {
+	if (globalint_246 != bitconfig_5280) {
+		globalint_246 = bitconfig_5280;
+		script_1770();
+	}
+	if (globalint_247 != bitconfig_5281) {
+		globalint_247 = bitconfig_5281;
+		script_1771();
+	}
+	if (script_42(globalint_248) != bitconfig_5282) {
+		globalint_248 = script_734(bitconfig_5282);
+		script_1772();
+	}
+	if (script_42(globalint_249) != bitconfig_5283) {
+		globalint_249 = script_734(bitconfig_5283);
+		script_1773();
+	}
+	if (script_42(globalint_250) != bitconfig_5284) {
+		globalint_250 = script_734(bitconfig_5284);
+		script_1774();
+	}
+	if (globalint_252 != bitconfig_5286) {
+		globalint_252 = bitconfig_5286;
+		script_1775();
+	}
+	if (script_42(globalint_251) != bitconfig_5285) {
+		globalint_251 = script_734(bitconfig_5285);
+		script_1776();
+	}
+	if (script_42(globalint_256) != bitconfig_5290) {
+		globalint_256 = script_734(bitconfig_5290);
+		script_1777();
+	}
+	if (script_42(globalint_253) != bitconfig_5287) {
+		globalint_253 = script_734(bitconfig_5287);
+		script_1778();
+	}
+	if (script_42(globalint_254) != bitconfig_5288) {
+		globalint_254 = script_734(bitconfig_5288);
+		script_1779();
+	}
+	if (script_42(globalint_255) != bitconfig_5289) {
+		globalint_255 = script_734(bitconfig_5289);
+		script_1780();
+	}
+	if (globalint_257 != bitconfig_5292) {
+		globalint_257 = bitconfig_5292;
+		script_1781();
+	}
+	globalint_258 = script_734(bitconfig_5293);
+	script_1782();
+	return;
+}

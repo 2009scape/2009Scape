@@ -1,0 +1,883 @@
+string script_4747(int arg0) {
+	flow_0:
+		SWITCH (arg0) {
+			case 7464:
+				 GOTO flow_1
+			case 5507:
+				 GOTO flow_1
+			case 5508:
+				 GOTO flow_1
+			case 15671:
+				 GOTO flow_2
+			case 15672:
+				 GOTO flow_3
+			case 2399:
+				 GOTO flow_4
+			case 2400:
+				 GOTO flow_4
+			case 2401:
+				 GOTO flow_4
+			case 1536:
+				 GOTO flow_5
+			case 1537:
+				 GOTO flow_5
+			case 1538:
+				 GOTO flow_5
+			case 1535:
+				 GOTO flow_5
+			case 1548:
+				 GOTO flow_9
+			case 1544:
+				 GOTO flow_9
+			case 1545:
+				 GOTO flow_9
+			case 1546:
+				 GOTO flow_9
+			case 1547:
+				 GOTO flow_9
+			case 1543:
+				 GOTO flow_9
+			case 1542:
+				 GOTO flow_10
+			case 271:
+				 GOTO flow_11
+			case 274:
+				 GOTO flow_12
+			case 272:
+				 GOTO flow_12
+			case 275:
+				 GOTO flow_13
+			case 276:
+				 GOTO flow_14
+			case 277:
+				 GOTO flow_15
+			case 666:
+				 GOTO flow_16
+			case 668:
+				 GOTO flow_17
+			case 667:
+				 GOTO flow_18
+			case 432:
+				 GOTO flow_19
+			case 433:
+				 GOTO flow_20
+			case 7956:
+				 GOTO flow_21
+			case 7957:
+				 GOTO flow_22
+			case 2418:
+				 GOTO flow_23
+			case 2421:
+				 GOTO flow_24
+			case 2419:
+				 GOTO flow_24
+			case 2423:
+				 GOTO flow_25
+			case 2424:
+				 GOTO flow_26
+			case 964:
+				 GOTO flow_27
+			case 755:
+				 GOTO flow_28
+			case 756:
+				 GOTO flow_29
+			case 753:
+				 GOTO flow_30
+			case 290:
+				 GOTO flow_31
+			case 291:
+				 GOTO flow_32
+			case 761:
+				 GOTO flow_33
+			case 763:
+				 GOTO flow_34
+			case 765:
+				 GOTO flow_34
+			case 769:
+				 GOTO flow_35
+			case 1549:
+				 GOTO flow_36
+			case 300:
+				 GOTO flow_37
+			case 14062:
+				 GOTO flow_38
+			case 14064:
+				 GOTO flow_39
+			case 14065:
+				 GOTO flow_40
+			case 14066:
+				 GOTO flow_41
+			case 14067:
+				 GOTO flow_42
+			case 14068:
+				 GOTO flow_43
+			case 14069:
+				 GOTO flow_44
+			case 14070:
+				 GOTO flow_45
+			case 14071:
+				 GOTO flow_46
+			case 14072:
+				 GOTO flow_47
+			case 14073:
+				 GOTO flow_48
+			case 14074:
+				 GOTO flow_49
+			case 14075:
+				 GOTO flow_50
+			case 9590:
+				 GOTO flow_51
+			case 9589:
+				 GOTO flow_51
+			case 9591:
+				 GOTO flow_52
+			case 524:
+				 GOTO flow_53
+			case 525:
+				 GOTO flow_53
+			case 522:
+				 GOTO flow_53
+			case 523:
+				 GOTO flow_53
+			case 12546:
+				 GOTO flow_53
+			case 2409:
+				 GOTO flow_54
+			case 2408:
+				 GOTO flow_55
+			case 2410:
+				 GOTO flow_56
+			case 2411:
+				 GOTO flow_57
+			case 11211:
+				 GOTO flow_58
+			case 11210:
+				 GOTO flow_58
+			case 11203:
+				 GOTO flow_58
+			case 11202:
+				 GOTO flow_58
+			case 11204:
+				 GOTO flow_58
+			case 11198:
+				 GOTO flow_58
+			case 11196:
+				 GOTO flow_58
+			case 11197:
+				 GOTO flow_58
+			case 1584:
+				 GOTO flow_59
+			case 463:
+				 GOTO flow_60
+			case 462:
+				 GOTO flow_60
+			case 461:
+				 GOTO flow_60
+			case 460:
+				 GOTO flow_60
+			case 459:
+				 GOTO flow_60
+			case 458:
+				 GOTO flow_60
+			case 457:
+				 GOTO flow_60
+			case 456:
+				 GOTO flow_60
+			case 774:
+				 GOTO flow_61
+			case 773:
+				 GOTO flow_61
+			case 1856:
+				 GOTO flow_62
+			case 1858:
+				 GOTO flow_63
+			case 1857:
+				 GOTO flow_63
+			case 90:
+				 GOTO flow_64
+			case 83:
+				 GOTO flow_65
+			case 21:
+				 GOTO flow_66
+			case 20:
+				 GOTO flow_66
+			case 23:
+				 GOTO flow_66
+			case 22:
+				 GOTO flow_66
+			case 15:
+				 GOTO flow_67
+			case 17:
+				 GOTO flow_68
+			case 18:
+				 GOTO flow_69
+			case 19:
+				 GOTO flow_70
+			case 587:
+				 GOTO flow_71
+			case 588:
+				 GOTO flow_71
+			case 77:
+				 GOTO flow_72
+			case 76:
+				 GOTO flow_73
+			case 2403:
+				 GOTO flow_74
+			case 2404:
+				 GOTO flow_75
+			case 1508:
+				 GOTO flow_76
+			case 1503:
+				 GOTO flow_77
+			case 1509:
+				 GOTO flow_78
+			case 1510:
+				 GOTO flow_79
+			case 1466:
+				 GOTO flow_80
+			case 9665:
+				 GOTO flow_81
+			case 292:
+				 GOTO flow_82
+			case 298:
+				 GOTO flow_83
+			case 296:
+				 GOTO flow_84
+			case 297:
+				 GOTO flow_84
+			case 423:
+				 GOTO flow_85
+			case 425:
+				 GOTO flow_86
+			case 424:
+				 GOTO flow_86
+			case 422:
+				 GOTO flow_86
+			case 420:
+				 GOTO flow_87
+			case 415:
+				 GOTO flow_88
+			case 417:
+				 GOTO flow_88
+			case 416:
+				 GOTO flow_88
+			case 419:
+				 GOTO flow_88
+			case 418:
+				 GOTO flow_88
+			case 783:
+				 GOTO flow_89
+			case 784:
+				 GOTO flow_90
+			case 785:
+				 GOTO flow_91
+			case 786:
+				 GOTO flow_92
+			case 793:
+				 GOTO flow_93
+			case 788:
+				 GOTO flow_94
+			case 794:
+				 GOTO flow_95
+			case 787:
+				 GOTO flow_96
+			case 791:
+				 GOTO flow_97
+			case 790:
+				 GOTO flow_97
+			case 789:
+				 GOTO flow_97
+			case 792:
+				 GOTO flow_97
+			case 2529:
+				 GOTO flow_98
+			case 1484:
+				 GOTO flow_98
+			case 1483:
+				 GOTO flow_98
+			case 1482:
+				 GOTO flow_98
+			case 1481:
+				 GOTO flow_98
+			case 1486:
+				 GOTO flow_99
+			case 1493:
+				 GOTO flow_100
+			case 1490:
+				 GOTO flow_100
+			case 1488:
+				 GOTO flow_100
+			case 1489:
+				 GOTO flow_100
+			case 1487:
+				 GOTO flow_100
+			case 1494:
+				 GOTO flow_101
+			case 1500:
+				 GOTO flow_102
+			case 1502:
+				 GOTO flow_103
+			case 1501:
+				 GOTO flow_103
+			case 1498:
+				 GOTO flow_103
+			case 1499:
+				 GOTO flow_103
+			case 1496:
+				 GOTO flow_103
+			case 1497:
+				 GOTO flow_103
+			case 603:
+				 GOTO flow_104
+			case 602:
+				 GOTO flow_104
+			case 1852:
+				 GOTO flow_105
+			case 1851:
+				 GOTO flow_106
+			case 1841:
+				 GOTO flow_107
+			case 1842:
+				 GOTO flow_108
+			case 1849:
+				 GOTO flow_109
+			case 1855:
+				 GOTO flow_110
+			case 9904:
+				 GOTO flow_111
+			case 2388:
+				 GOTO flow_112
+			case 2387:
+				 GOTO flow_112
+			case 2386:
+				 GOTO flow_112
+			case 2385:
+				 GOTO flow_112
+			case 2384:
+				 GOTO flow_112
+			case 2374:
+				 GOTO flow_113
+			case 2375:
+				 GOTO flow_113
+			case 2373:
+				 GOTO flow_113
+			case 2382:
+				 GOTO flow_114
+			case 2383:
+				 GOTO flow_114
+			case 2380:
+				 GOTO flow_114
+			case 2381:
+				 GOTO flow_114
+			case 2378:
+				 GOTO flow_115
+			case 2379:
+				 GOTO flow_115
+			case 2377:
+				 GOTO flow_115
+			case 2397:
+				 GOTO flow_115
+			case 2395:
+				 GOTO flow_115
+			case 2394:
+				 GOTO flow_115
+			case 2393:
+				 GOTO flow_115
+			case 0:
+				 GOTO flow_116
+			case 1:
+				 GOTO flow_117
+			case 1822:
+				 GOTO flow_118
+			case 715:
+				 GOTO flow_119
+			case 714:
+				 GOTO flow_119
+			case 750:
+				 GOTO flow_120
+			case 717:
+				 GOTO flow_121
+			case 719:
+				 GOTO flow_121
+			case 718:
+				 GOTO flow_121
+			case 729:
+				 GOTO flow_121
+			case 720:
+				 GOTO flow_121
+			case 9716:
+				 GOTO flow_122
+			case 2888:
+				 GOTO flow_123
+			case 2889:
+				 GOTO flow_123
+			case 2954:
+				 GOTO flow_124
+			case 2953:
+				 GOTO flow_124
+			case 2967:
+				 GOTO flow_125
+			case 3103:
+				 GOTO flow_126
+			case 3102:
+				 GOTO flow_126
+			case 3104:
+				 GOTO flow_127
+			case 3112:
+				 GOTO flow_128
+			case 3113:
+				 GOTO flow_128
+			case 3110:
+				 GOTO flow_128
+			case 3111:
+				 GOTO flow_128
+			case 3109:
+				 GOTO flow_128
+			case 3207:
+				 GOTO flow_129
+			case 3206:
+				 GOTO flow_129
+			case 3208:
+				 GOTO flow_130
+			case 3267:
+				 GOTO flow_131
+			case 3268:
+				 GOTO flow_132
+			case 3395:
+				 GOTO flow_133
+			case 10830:
+				 GOTO flow_134
+			case 10835:
+				 GOTO flow_135
+			case 10834:
+				 GOTO flow_135
+			case 10833:
+				 GOTO flow_135
+			case 10832:
+				 GOTO flow_135
+			case 10831:
+				 GOTO flow_135
+			case 10842:
+				 GOTO flow_136
+			case 3846:
+				 GOTO flow_137
+			case 3847:
+				 GOTO flow_137
+			case 3845:
+				 GOTO flow_137
+			case 3895:
+				 GOTO flow_138
+			case 3894:
+				 GOTO flow_138
+			case 3896:
+				 GOTO flow_139
+			case 4073:
+				 GOTO flow_140
+			case 4193:
+				 GOTO flow_141
+			case 4192:
+				 GOTO flow_141
+			case 4189:
+				 GOTO flow_141
+			case 4190:
+				 GOTO flow_141
+			case 4191:
+				 GOTO flow_141
+			case 4204:
+				 GOTO flow_142
+			case 4206:
+				 GOTO flow_143
+			case 4205:
+				 GOTO flow_143
+			case 4238:
+				 GOTO flow_144
+			case 4272:
+				 GOTO flow_145
+			case 4249:
+				 GOTO flow_145
+			case 4248:
+				 GOTO flow_145
+			case 4247:
+				 GOTO flow_145
+			case 4273:
+				 GOTO flow_146
+			case 4415:
+				 GOTO flow_147
+			case 4490:
+				 GOTO flow_148
+			case 4496:
+				 GOTO flow_149
+			case 4568:
+				 GOTO flow_150
+			case 4597:
+				 GOTO flow_151
+			case 4598:
+				 GOTO flow_151
+			case 4606:
+				 GOTO flow_152
+			case 4615:
+				 GOTO flow_153
+			case 4616:
+				 GOTO flow_153
+			case 4617:
+				 GOTO flow_154
+			case 4623:
+				 GOTO flow_155
+			case 4619:
+				 GOTO flow_156
+			case 4684:
+				 GOTO flow_157
+			case 4686:
+				 GOTO flow_158
+			case 4814:
+				 GOTO flow_159
+			case 4815:
+				 GOTO flow_159
+			case 4817:
+				 GOTO flow_159
+			case 6072:
+				 GOTO flow_160
+			case 6077:
+				 GOTO flow_161
+			case 6079:
+				 GOTO flow_161
+			case 6073:
+				 GOTO flow_161
+			case 6075:
+				 GOTO flow_161
+			case 6104:
+				 GOTO flow_162
+			case 6083:
+				 GOTO flow_162
+			case 6546:
+				 GOTO flow_163
+			case 6545:
+				 GOTO flow_163
+		}
+		return "You should get rid of the " + getItemName(arg0);
+	flow_1:
+		return "That's my book! What's it doing in your bank?";
+	flow_2:
+		return "You have Roddeck's book on dragon rearing in your bank. I don't think it's a great discourse on the subject, to be quite honest.";
+	flow_3:
+		return "I see you're hanging on to Roddeck's diary. It's got a seeking spell on it, you know. If you get rid of it, it'll find its way back to him.";
+	flow_4:
+		return "You've killed Delrith, so you don't need any of the little grey keys that you collected to get Silverlight.";
+	flow_5:
+		if (((boolean)bitconfig_3741)) {
+			return "You've opened a secret passageway to Crandor Island, so you won't need the map that showed you how to get there by sea.";
+		}
+		return "Ned knows the way to Crandor now, so you don't need the map any more. Also, if you go there, look around for secret passages. There might be another way to get back to Crandor.";
+	flow_9:
+		return "The coloured keys from Melzar's maze are very pretty, but you don't really need to keep them. If you ever go there again, the creatures in the maze will drop more coloured keys for you.";
+	flow_10:
+		return "You don't really need to keep the key to Melzar's Maze. If you ever go there again, you can ask for a new one from the Guildmaster of the Champions' Guild.";
+	flow_11:
+		return "Since you've already helped to repair Professor Oddenstein's machine, you can get rid of the pressure gauge.";
+	flow_12:
+		return "You really don't need to keep fish food in your bank.";
+	flow_13:
+		return "The little key that opens a closet in Draynor Manor? I think you can afford to get rid of it.";
+	flow_14:
+		return "You aren't going to need that rubber tube again.";
+	flow_15:
+		return "No need to keep that oil can.";
+	flow_16:
+		return "That's a nice picture of Sir Vyvin, but you don't really need it.";
+	flow_17:
+		return "Blurite ore's handy for making ceremonial swords, but you've already done that quest. Members can make crossbows and bolts out of it, but it has no other use.";
+	flow_18:
+		return "You don't really need a copy of Sir Vyvin's sword, although it's a fairly nice weapon.";
+	flow_19:
+		return "I see you've got the key to One-Eyed Hector's chest. That's not much use to you.";
+	flow_20:
+		return "You've already found the pirate's treasure, so you can get rid of the pirate's message.";
+	flow_21:
+		return "You've already found the pirate's treasure, so you can get rid of the pirate's casket.";
+	flow_22:
+		return "You've already found the pirate's treasure, so you can get rid of the pirate's apron.";
+	flow_23:
+		return "You aren't going to need to get back into Prince Ali's cell.";
+	flow_24:
+		return "You don't need a wig. Your head looks fine.";
+	flow_25:
+		return "I can't imagine why you've kept the imprint of Lady Keli's key.";
+	flow_26:
+		return "If you want to change your appearance, go to the Makeover Mage. You don't need this skin paste.";
+	flow_27:
+		return "I suggest you get rid of the skull. It's unhygienic.";
+	flow_28:
+		return "You have a message from Juliet to Romeo. There's no point in keeping that now that they've split up.";
+	flow_29:
+		return "A potion made from cadava berries? There's not much you can do with one of those.";
+	flow_30:
+		return "If you get rid of those cadava berries, you'll still be able to pick more near Varrock, and you'll save bank space.";
+	flow_31:
+		return "Sedridor's research into the mysteries of the runes is very interesting, but you don't need it.";
+	flow_32:
+		return "Aubury's notes won't be of any further use to you. You can't even read them!";
+	flow_33:
+		return "You won't need Jonny the Beard's intelligence report now that you've found the Shield of Arrav.";
+	flow_34:
+		return "You don't need to keep bits of the Shield of Arrav now that you've completed that quest.";
+	flow_35:
+		return "You can get rid of the little certificate from the Museum of Varrock. You've already been rewarded for taking one to the King.";
+	flow_36:
+		return "Now that you've slain Count Draynor, you don't need that stake. It's not much use against other vampyres.";
+	flow_37:
+		return "Ugh... A rat's tail! Get rid of it!";
+	flow_38:
+		return "I don't think you'll need the broom ointment.";
+	flow_39:
+		return "That newt doesn't look very useful.";
+	flow_40:
+		return "You probably won't need the 'Newts' label.";
+	flow_41:
+		return "You probably won't need the 'Toads' label.";
+	flow_42:
+		return "You certainly won't need the 'Newts & Toads' label.";
+	flow_43:
+		return "Betty's wand? I don't think you should be messing around with that.";
+	flow_44:
+		return "There's no point in hanging on to that slate.";
+	flow_45:
+		return "You shouldn't be keeping that reptile in there.";
+	flow_46:
+		return "You shouldn't be keeping that blackbird in there.";
+	flow_47:
+		return "You shouldn't be keeping that bat in there.";
+	flow_48:
+		return "You shouldn't be keeping that spider in there.";
+	flow_49:
+		return "You shouldn't be keeping that rat in there.";
+	flow_50:
+		return "You shouldn't be keeping that snail in there.";
+	flow_51:
+		return "You don't need to keep the dossier from the White Knight.";
+	flow_52:
+		return "You completed the Black Knights' fortress; you don't need this old cauldron anymore.";
+	flow_53:
+		return "You have completed the druidic ritual. You don't need the enchanted meat any longer.";
+	flow_54:
+		return "You don't need the witch's door key any longer.";
+	flow_55:
+		return "You don't need to keep the witch's diary. You can get it from the bookshelf again, if you need to.";
+	flow_56:
+		return "You don't need the magnet. You opened the witch's back door.";
+	flow_57:
+		return "You don't really need the witch's shed key any more.";
+	flow_58:
+		return "You don't need that grim looking item.";
+	flow_59:
+		return "You've already given the id papers to Grip. This must be a forgery!";
+	flow_60:
+		return "You don't need that scorpion cage anymore.";
+	flow_61:
+		return "You've obtained Avan's part of the crest. You don't need the perfect ruby jewellery.";
+	flow_62:
+		return "You've already read from the Ardougne tourist guide.";
+	flow_63:
+		return "You've finished the Tribal Totem quest. Why do you still have this?";
+	flow_64:
+		return "You've given this blanket to the monk already. Did you steal it back again?";
+	flow_65:
+		return "You already fixed the lever in The Temple of Ikov.";
+	flow_66:
+		return "You've finished the Clock Tower quest. You don't need that cog.";
+	flow_67:
+		return "You completed the Holy Grail quest. You don't need Sir Galahad's table napkin.";
+	flow_68:
+		return "You completed the Holy Grail quest. You don't need the grail bell anymore.";
+	flow_69:
+		return "You completed the Holy Grail quest. You have no need of King Arthur's golden feather.";
+	flow_70:
+		return "You completed the Holy Grail quest. Why do you have the grail?";
+	flow_71:
+		return "You have finished with Tree Gnome Village. You don't need the orbs.";
+	flow_72:
+		return "You already got the keys from the lazy guard. You don't need the brew.";
+	flow_73:
+		return "You have already used the keys from the lazy guard.";
+	flow_74:
+		return "You already completed the Hazeel Cult Quest; no need to hang onto one of those scrolls.";
+	flow_75:
+		return "You have already opened the chest in the Carnillean household.";
+	flow_76:
+		return "You have already made Bravek a hangover cure. You don't need his scrawled note.";
+	flow_77:
+		return "You have no need of a warrant to the plague house.";
+	flow_78:
+		return "You have already given this book to Ted Rehnison. You don't need it.";
+	flow_79:
+		return "You have already shown Elena's picture to Jethick.";
+	flow_80:
+		return "Yuck! A sea slug! Get rid of it!";
+	flow_81:
+		return "A sea slug torch... Fascinating! You don't need it; lit, unlit, smouldering or otherwise.";
+	flow_82:
+		return "You have completed the Waterfall quest, so you don't need the book about Baxtorian.";
+	flow_83:
+		return "You have completed the Waterfall quest, so you don't need this key.";
+	flow_84:
+		return "You have finished the Waterfall quest, so you certainly don't need that urn; empty or full.";
+	flow_85:
+		return "You've freed Elena already, so you don't need the key.";
+	flow_86:
+		return "You have already distracted the guards with the pigeons.";
+	flow_87:
+		return "You've already retreived Elena's distillator.";
+	flow_88:
+		return "Guidor has already tested the plague sample. you don't need that any more.";
+	flow_89:
+		return "You have given the bark sample to Hazelmere already.";
+	flow_90:
+		return "You have already translated the ancient message told to you by Hazelmere.";
+	flow_91:
+		return "You have completed the Grand Tree quest. You have no need of Glough's Journal.";
+	flow_92:
+		return "You have completed the Grand Tree quest. You have no need of Hazelmere's scroll.";
+	flow_93:
+		return "You have completed the Grand Tree quest. You don't need this rock.";
+	flow_94:
+		return "You have already searched the Glough's chest. You have no possible use for the key.";
+	flow_95:
+		return "You have already given the invasion plans to the King.";
+	flow_96:
+		return "You have completed the Grand Tree quest. You don't need to hold on to this lumber order.";
+	flow_97:
+		return "You have already opened the watchtower entrance; you don't need twigs.";
+	flow_98:
+		return "The orbs are pretty, but you have already found your way down the well in the underground pass.";
+	flow_99:
+		return "Railings... Useful for poking undead in cages, I guess, but of no value otherwise.";
+	flow_100:
+		return "You have already passed the gate of Zamorak. You don't need this.";
+	flow_101:
+		return "You have killed Iban. You have little use for his journal.";
+	flow_102:
+		return "You have already done all you can with Iban's shadow.";
+	flow_103:
+		return "You have completed the four tasks with the doll.";
+	flow_104:
+		return "The professor has already fixed his telescope. You don't need this.";
+	flow_105:
+		return "You have already opened the Captain's chest with the copied key.";
+	flow_106:
+		return "A pineapple! How wonderful... You don't need it.";
+	flow_107:
+		return "You have already returned Ana to the Shantay Pass. You don't need to carry the barrel around.";
+	flow_108:
+		return "You have already returned Ana to the Shantay Pass. You don't need to carry the barrel around... or Ana.";
+	flow_109:
+		GOTO	flow_164
+	flow_110:
+		return "You don't need that rock unless you plan on being caught by the guards agasin.";
+	flow_111:
+		return "The book on sailing is rather dull.";
+	flow_112:
+		return "You have already given evidence to the wizard.";
+	flow_113:
+		return "You have already received the ogre relic. You don't need these relic parts.";
+	flow_114:
+		return "You have already used the powering crystals.";
+	flow_115:
+		return "You have already received the powering crystals from this item.";
+	flow_116:
+		return "You have already returned the dwarf remains to Captain Lawgof.";
+	flow_117:
+		return "You have already returned the dwarven toolkit to Captain Lawgof.";
+	flow_118:
+		return "You have already solved the murder mystery. You don't need this fingerprint.";
+	flow_119:
+		return "You have already presented the Radimus notes.";
+	flow_120:
+		return "You have already presented the gilded totem.";
+	flow_121:
+		return "You have freed Ungadulu from possession. You don't have any use for the scrawled notes, books, tomes or pictures of dirty old bowls.";
+	flow_122:
+		return "What are you going to do with that rock?";
+	flow_123:
+		return "You do not need the Elemental workshop bowl.";
+	flow_124:
+		return "You have doused the vampyre's coffin already. You don't need this old bucket of stale water.";
+	flow_125:
+		return "You don't need Filliman's Journal.";
+	flow_126:
+		return "You have already recovered the combination for Denulf.";
+	flow_127:
+		return "You have already recovered the secret way map for Denulf.";
+	flow_128:
+		return "You don't need those coloured cannonballs";
+	flow_129:
+		return "You don't need the king's summons or messages.";
+	flow_130:
+		return "You can get rid of the crystal pendant. It has served it's purpose.";
+	flow_131:
+		return "You don't need that dirty old druid's robe.";
+	flow_132:
+		return "Argh! Is that a man in your backpack? Wait...no! It's a fake man, you crafty so-and-so. Still, you don't need it.";
+	flow_133:
+		return "You have already sold the apothecary this book.";
+	flow_134:
+		return "You've already given King Sorvott's decree to Burgher.";
+	flow_135:
+		return "You have already collected King Sorvott IV's window taxes.";
+	flow_136:
+		return "You have already handed in the troll's talking head to the Burgher.";
+	flow_137:
+		return "You have completed the Horror from the Deep quest. You probably don't need this book.";
+	flow_138:
+		return "You have already given the Etceteria anthem to Queen Sigrid.";
+	flow_139:
+		return "You have already given the treaty to King Vargas to sign.";
+	flow_140:
+		return "A damp tinderbox; not at all useful for anything.";
+	flow_141:
+		return "You already retrieved the lightning conductor mould from the chimney. You don't need this brush.";
+	flow_142:
+		return "You don't need the dusty old letter from the clock.";
+	flow_143:
+		return "You have already planted this seed for Eluned.";
+	flow_144:
+		return "Yuck! An ectoplasm puddle.";
+	flow_145:
+		return "You have already given that to the crone.";
+	flow_146:
+		return "You have already made the toy boat. You don't need this key.";
+	flow_147:
+		return "You already have an axe that's been sharpened by Brian. You don't need this blunt one.";
+	flow_148:
+		return "You have already spread enough mud over that poor tree.";
+	flow_149:
+		return "A broken stick. Really? You kept a broken stick?";
+	flow_150:
+		return "You have already retrieved the schematic from that book.";
+	flow_151:
+		return "You have already solved the safe combination.";
+	flow_152:
+		return "You have already caught the snake with this basket.";
+	flow_153:
+		return "You have already found out about the golem. You don't need the note or letter.";
+	flow_154:
+		return "You have already retrieved the statuette from the display case.";
+	flow_155:
+		return "You have already reprogrammed the golem. You don't need this pen.";
+	flow_156:
+		return "You have already opened the golem's head. You don't need this key.";
+	flow_157:
+		return "You don't need more linen for mummification, however much you might like to.";
+	flow_158:
+		return "You don't need the book on embalming.";
+	flow_159:
+		return "You have already shown the portrait to Zavistic Rarve.";
+	flow_160:
+		return "You have already washed the mourner's top.";
+	flow_161:
+		return "You have finished the Mourning's End quest. You don't need the mourner's books.";
+	flow_162:
+		return "You have finished the Mourning's End quest. You don't need that key.";
+	flow_163:
+		return "You have already completed all the chores for Bob.";
+	flow_164:
+		return "";
+}

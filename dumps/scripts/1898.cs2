@@ -1,0 +1,25 @@
+cs2func_script_1898_struct(2,0,0) script_1898(int arg0) {
+	switch (arg0) {
+		case 0:
+			return newstruct cs2func_script_1898_struct(globalint_523, globalint_533);
+		case 1:
+			return newstruct cs2func_script_1898_struct(globalint_524, globalint_534);
+		case 2:
+			return newstruct cs2func_script_1898_struct(globalint_525, globalint_535);
+		case 3:
+			return newstruct cs2func_script_1898_struct(globalint_526, globalint_536);
+		case 4:
+			return newstruct cs2func_script_1898_struct(globalint_527, globalint_537);
+		case 5:
+			return newstruct cs2func_script_1898_struct(globalint_528, globalint_538);
+		case 6:
+			return newstruct cs2func_script_1898_struct(globalint_529, globalint_539);
+		case 7:
+			return newstruct cs2func_script_1898_struct(globalint_530, globalint_540);
+		case 8:
+			return newstruct cs2func_script_1898_struct(globalint_531, globalint_541);
+		case 9:
+			return newstruct cs2func_script_1898_struct(globalint_532, globalint_542);
+	}
+	return newstruct cs2func_script_1898_struct(0, 0);
+}

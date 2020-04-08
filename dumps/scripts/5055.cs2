@@ -1,0 +1,154 @@
+void script_5055(int arg0,int arg1,int arg2,int arg3,int arg4,string arg5) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int stack_dump0;
+	deleteAllExtraChilds(new WidgetPointer(arg2));
+	createExtraChild(new WidgetPointer(arg2), 5, getExtraChildGap(new WidgetPointer(arg2)));
+	setWidgetSize(40, 0, 1, 1);
+	setWidgetPosition(0, 0, 1, 1);
+	cs2method1107(1);
+	createExtraChild(new WidgetPointer(arg2), 5, getExtraChildGap(new WidgetPointer(arg2)));
+	setWidgetSize(20, 0, 0, 1);
+	setWidgetPosition(0, 0, 0, 1);
+	createExtraChild(new WidgetPointer(arg2), 5, getExtraChildGap(new WidgetPointer(arg2)));
+	setWidgetSize(20, 0, 0, 1);
+	setWidgetPosition(0, 0, 2, 1);
+	createExtraChild(new WidgetPointer(arg2), 5, getExtraChildGap(new WidgetPointer(arg2)));
+	setWidgetSize(10, 10, 0, 0);
+	setWidgetPosition(7, 0, 0, 1);
+	createExtraChild(new WidgetPointer(arg2), 4, getExtraChildGap(new WidgetPointer(arg2)));
+	setWidgetSize(20, 0, 1, 1);
+	setWidgetPosition(0, 1, 2, 1);
+	setWidgetFont(494);
+	setWidgetTextAlignment(0, 1, 0);
+	setWidgetRGB(new Color(255, 239, 95));
+	setWidgetUnknownBoolean(true);
+	setWidgetText(arg5);
+	setScriptCallOnMousePressed(5064, arg0, "i", new WidgetPointer(arg2));
+	deleteAllExtraChilds(new WidgetPointer(arg3));
+	deleteAllExtraChilds(new WidgetPointer(arg4));
+	ivar5 = 0;
+	ivar6 = getCommonDefinitionSize(3943);
+	while (ivar5 < ivar6) {
+		createExtraChild(new WidgetPointer(arg3), 3, getExtraChildGap(new WidgetPointer(arg3)));
+		setWidgetHidden(1);
+		createExtraChild(new WidgetPointer(arg3), 3, getExtraChildGap(new WidgetPointer(arg3)));
+		setWidgetHidden(1);
+		createExtraChild(new WidgetPointer(arg3), 5, getExtraChildGap(new WidgetPointer(arg3)));
+		setWidgetHidden(1);
+		createExtraChild(new WidgetPointer(arg3), 5, getExtraChildGap(new WidgetPointer(arg3)));
+		setWidgetHidden(1);
+		createExtraChild(new WidgetPointer(arg3), 5, getExtraChildGap(new WidgetPointer(arg3)));
+		setWidgetHidden(1);
+		createExtraChild(new WidgetPointer(arg3), 5, getExtraChildGap(new WidgetPointer(arg3)));
+		setWidgetHidden(1);
+		createExtraChild(new WidgetPointer(arg3), 5, getExtraChildGap(new WidgetPointer(arg3)));
+		setWidgetHidden(1);
+		createExtraChild(new WidgetPointer(arg3), 5, getExtraChildGap(new WidgetPointer(arg3)));
+		setWidgetHidden(1);
+		createExtraChild(new WidgetPointer(arg3), 5, getExtraChildGap(new WidgetPointer(arg3)));
+		setWidgetHidden(1);
+		createExtraChild(new WidgetPointer(arg3), 3, getExtraChildGap(new WidgetPointer(arg3)));
+		setWidgetHidden(1);
+		createExtraChild(new WidgetPointer(arg3), 5, getExtraChildGap(new WidgetPointer(arg3)));
+		setWidgetHidden(1);
+		createExtraChild(new WidgetPointer(arg3), 4, getExtraChildGap(new WidgetPointer(arg3)));
+		setWidgetHidden(1);
+		ivar5 = add(ivar5, 1);
+	}
+	ivar7 = -1;
+	ivar8 = -1;
+	ivar9 = 0;
+	stack_dump0 = 0;
+	ivar6 = getCommonDefinitionSize(arg1);
+	ivar5 = stack_dump0;
+	while (ivar5 < ivar6) {
+		ivar7 = cs2method_3408(105, 105, arg1, ivar5);
+		ivar8 = cs2method_3408(105, 74, 3943, ivar7);
+		if (ivar8 != -1) {
+			if (setWidgetRegister(new WidgetPointer(arg3), multiply(ivar7, 12))) {
+				setWidgetSize(24, 26, 1, 0);
+				setWidgetPosition(0, ivar9, 0, 0);
+				cs2method2103(255);
+				setWidgetContextMenuOption(1, "Select");
+				setScriptCallOnClickContextMenu(5070, -2147483644, ivar7, 0, "ii1");
+				setWidgetHidden(0);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg3), add(multiply(ivar7, 12), 1))) {
+				setWidgetSize(24, 26, 0, 0);
+				setWidgetPosition(0, ivar9, 2, 0);
+				cs2method2103(255);
+				setWidgetContextMenuOption(1, "Select & open settings");
+				setScriptCallOnClickContextMenu(5070, -2147483644, ivar7, 1, "ii1");
+				setWidgetHidden(0);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg3), add(multiply(ivar7, 12), 2))) {
+				setWidgetSize(40, 26, 1, 0);
+				setWidgetPosition(8, ivar9, 0, 0);
+				setWidgetHidden(0);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg3), add(multiply(ivar7, 12), 3))) {
+				setWidgetSize(8, 26, 0, 0);
+				setWidgetPosition(0, ivar9, 0, 0);
+				setWidgetHidden(0);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg3), add(multiply(ivar7, 12), 4))) {
+				setWidgetSize(8, 26, 0, 0);
+				setWidgetPosition(24, ivar9, 2, 0);
+				setWidgetHidden(0);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg3), add(multiply(ivar7, 12), 5))) {
+				setWidgetSize(8, 26, 0, 0);
+				setWidgetPosition(8, ivar9, 2, 0);
+				setWidgetHidden(0);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg3), add(multiply(ivar7, 12), 6))) {
+				setWidgetSize(8, 26, 0, 0);
+				setWidgetPosition(16, ivar9, 2, 0);
+				setWidgetHidden(0);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg3), add(multiply(ivar7, 12), 7))) {
+				setWidgetSize(8, 26, 0, 0);
+				setWidgetPosition(0, ivar9, 2, 0);
+				setWidgetHidden(0);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg3), add(multiply(ivar7, 12), 8))) {
+				setWidgetSize(20, 20, 0, 0);
+				setWidgetPosition(3, add(ivar9, 3), 0, 0);
+				setWidgetSprite(getOtherCommonData(ivar8, 1465));
+				setWidgetHidden(0);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg3), add(multiply(ivar7, 12), 9))) {
+				setWidgetSize(21, 21, 0, 0);
+				setWidgetPosition(2, add(ivar9, 2), 0, 0);
+				setWidgetRGB(new Color(239, 223, 207));
+				setWidgetFilled(0);
+				setWidgetHidden(0);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg3), add(multiply(ivar7, 12), 10))) {
+				setWidgetSize(17, 17, 0, 0);
+				setWidgetPosition(4, add(ivar9, 4), 2, 0);
+				setWidgetHidden(0);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg3), add(multiply(ivar7, 12), 11))) {
+				setWidgetSize(53, 26, 1, 0);
+				setWidgetPosition(24, ivar9, 2, 0);
+				setWidgetFont(494);
+				setWidgetTextAlignment(0, 1, 0);
+				setWidgetRGB(new Color(255, 239, 223));
+				setWidgetUnknownBoolean(true);
+				setWidgetText(getOtherCommonData(ivar8, 1463));
+				setWidgetHidden(0);
+			}
+			ivar9 = add(ivar9, 26);
+		}
+		ivar5 = add(ivar5, 1);
+	}
+	setWidgetScrollMax(0, ivar9, new WidgetPointer(arg3));
+	cs2method2100(0, 0, new WidgetPointer(arg3));
+	script_31(arg4, arg3, 6507, 6504, 6505, 6506, 6499, 6498);
+	return;
+}

@@ -1,0 +1,7 @@
+void script_1472() {
+	if (((boolean)globalint_190)) {
+		setWidgetContextMenuOption(1, new WidgetPointer(762,17), "Search");
+		setScriptCallOnClickContextMenu(1471, "", new WidgetPointer(762,17));
+	}
+	return;
+}

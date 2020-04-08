@@ -1,0 +1,16 @@
+int script_4799() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 1;
+	while (ivar2 <= 31) {
+		ivar0 = script_4790(ivar2);
+		if ((ivar0 >= 604) && (ivar0 <= 615)) {
+			ivar1 = add(ivar1, 1);
+		}
+		ivar2 = add(ivar2, 1);
+	}
+	return ivar1;
+}

@@ -1,0 +1,20 @@
+void script_753() {
+	if (bitconfig_4286 != 101) {
+		setWidgetText(new WidgetPointer(662,48), intToStr(bitconfig_4286) + "%");
+		if (bitconfig_4286 > 74) {
+			setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(662,48));
+		} else {
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(662,48));
+		}
+	} else {
+		setWidgetText(new WidgetPointer(662,48), "NA");
+	}
+	if (bitconfig_4285 != 101) {
+		setWidgetText(new WidgetPointer(662,45), intToStr(bitconfig_4285) + "%");
+		setWidgetText(new WidgetPointer(662,46), intToStr(bitconfig_4285) + "%");
+	} else {
+		setWidgetText(new WidgetPointer(662,45), "NA");
+		setWidgetText(new WidgetPointer(662,46), "NA");
+	}
+	return;
+}

@@ -1,0 +1,18 @@
+void script_5263(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = 28180558;
+	ivar2 = 28180559;
+	if (((boolean)bitconfig_9814)) {
+		setWidgetPosition(getWidgetActualX(new WidgetPointer(arg0)), getWidgetActualY(new WidgetPointer(arg0)), 0, 0, new WidgetPointer(ivar1));
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+		setWidgetIsHidden(false, new WidgetPointer(ivar1));
+	} else {
+		if (((boolean)bitconfig_9815)) {
+			setWidgetPosition(getWidgetActualX(new WidgetPointer(arg0)), getWidgetActualY(new WidgetPointer(arg0)), 0, 0, new WidgetPointer(ivar2));
+			setWidgetIsHidden(true, new WidgetPointer(arg0));
+			setWidgetIsHidden(false, new WidgetPointer(ivar2));
+		}
+	}
+	return;
+}

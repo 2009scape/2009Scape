@@ -1,0 +1,31 @@
+void script_263() {
+	string svar0;
+	svar0 = "None";
+	switch (globalint_1109) {
+		case 1:
+			svar0 = "Worm";
+			break;
+		case 2:
+			svar0 = "Maggot";
+			break;
+		case 4:
+			svar0 = "Locust";
+			break;
+		case 3:
+			svar0 = "Cricket";
+			break;
+		case 5:
+			svar0 = "Cray";
+			break;
+		case 6:
+			svar0 = "Shrimp";
+			break;
+		case 7:
+			svar0 = "Green moth";
+			break;
+		case 8:
+			svar0 = "Grey moth";
+	}
+	setWidgetText(new WidgetPointer(923,51), svar0);
+	return;
+}

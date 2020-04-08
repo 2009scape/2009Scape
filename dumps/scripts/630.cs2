@@ -1,0 +1,6 @@
+void script_630(int arg0) {
+	if (getGENotStarted(arg0) && setWidgetRegister(script_623(arg0), 0)) {
+		cs2method2103(230);
+	}
+	return;
+}

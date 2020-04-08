@@ -1,0 +1,15 @@
+void script_1054() {
+	int ivar0;
+	setWidgetIsHidden(false, new WidgetPointer(137,50));
+	setScriptCallOnKeyPress(73, -2147483640, false, "iz", new WidgetPointer(137,56));
+	setWidgetIsHidden(true, new WidgetPointer(137,0));
+	ivar0 = 0;
+	while (((int)cs2method_3408(105, 73, 1550, ivar0)) != -1) {
+		setScriptCallOnKeyPress(-1, "", cs2method_3408(105, 73, 1550, ivar0));
+		ivar0 = add(ivar0, 1);
+	}
+	if (getDisplayMode() >= 2) {
+		script_1364();
+	}
+	return;
+}

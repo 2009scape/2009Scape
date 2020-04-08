@@ -1,0 +1,44 @@
+void script_1183(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	switch (globalint_808) {
+		case 1:
+			setWidgetIsHidden(true, new WidgetPointer(arg3));
+			setWidgetIsHidden(true, new WidgetPointer(arg4));
+			setWidgetIsHidden(true, new WidgetPointer(arg5));
+			setWidgetIsHidden(false, new WidgetPointer(arg2));
+			setWidgetText(new WidgetPointer(arg0), "Draughts");
+			setWidgetText(new WidgetPointer(arg1), intToStr(standart_config_354));
+			break;
+		case 2:
+			setWidgetIsHidden(true, new WidgetPointer(arg2));
+			setWidgetIsHidden(true, new WidgetPointer(arg4));
+			setWidgetIsHidden(true, new WidgetPointer(arg5));
+			setWidgetIsHidden(false, new WidgetPointer(arg3));
+			setWidgetText(new WidgetPointer(arg0), "Runelink");
+			setWidgetText(new WidgetPointer(arg1), intToStr(standart_config_353));
+			break;
+		case 3:
+			setWidgetIsHidden(true, new WidgetPointer(arg2));
+			setWidgetIsHidden(true, new WidgetPointer(arg3));
+			setWidgetIsHidden(true, new WidgetPointer(arg5));
+			setWidgetIsHidden(false, new WidgetPointer(arg4));
+			setWidgetText(new WidgetPointer(arg0), "Runesquares");
+			setWidgetText(new WidgetPointer(arg1), intToStr(standart_config_648));
+			break;
+		case 4:
+			setWidgetIsHidden(true, new WidgetPointer(arg2));
+			setWidgetIsHidden(true, new WidgetPointer(arg3));
+			setWidgetIsHidden(true, new WidgetPointer(arg4));
+			setWidgetIsHidden(false, new WidgetPointer(arg5));
+			setWidgetText(new WidgetPointer(arg0), "Runeversi");
+			setWidgetText(new WidgetPointer(arg1), intToStr(standart_config_649));
+			break;
+		default:
+			setWidgetIsHidden(true, new WidgetPointer(arg3));
+			setWidgetIsHidden(true, new WidgetPointer(arg4));
+			setWidgetIsHidden(true, new WidgetPointer(arg5));
+			setWidgetIsHidden(true, new WidgetPointer(arg2));
+			setWidgetText(new WidgetPointer(arg0), "");
+			setWidgetText(new WidgetPointer(arg1), "");
+	}
+	return;
+}

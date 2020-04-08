@@ -1,0 +1,25 @@
+int script_4954(int arg0) {
+	switch (arg0) {
+		case 17:
+			return 2031;
+		case 18:
+			return 2032;
+		case 19:
+			return 2033;
+		case 1:
+			return 2034;
+		case 2:
+			return 2035;
+		case 3:
+			return 2037;
+		case 4:
+			return 2038;
+		case 5:
+			return 2039;
+		case 6:
+			return 2036;
+		case 7:
+			return 2040;
+	}
+	return -1;
+}

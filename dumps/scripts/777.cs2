@@ -1,0 +1,48 @@
+void script_777(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	deleteAllExtraChilds(new WidgetPointer(arg1));
+	ivar4 = add(2, multiply(13, getLineCount(125, 495, intToStr(standart_config_1177) + "/60 special move points remaining")));
+	ivar5 = add(add(add(add(2, ivar4), 32), 14), 2);
+	ivar6 = 5;
+	ivar7 = 5;
+	ivar8 = 1;
+	ivar9 = 1;
+	ivar5 = subtract(subtract(ivar5, 32), 14);
+	ivar6 = getWidgetActualY(new WidgetPointer(arg0));
+	if (ivar6 == 224) {
+		ivar6 = 180;
+	}
+	ivar7 = subtract(getWidgetActualX(new WidgetPointer(arg0)), 60);
+	if (ivar7 < 0) {
+		ivar7 = 5;
+	}
+	createExtraChild(new WidgetPointer(arg1), 3, 0);
+	setWidgetPosition(ivar7, ivar6, 0, 0);
+	setWidgetSize(128, ivar5, 0, 0);
+	setWidgetFilled(1);
+	setWidgetRGB(new Color(255, 255, 160));
+	createExtraChild(new WidgetPointer(arg1), 3, 1);
+	setWidgetPosition(add(ivar7, 1), add(ivar6, 1), 0, 0);
+	setWidgetSize(127, subtract(ivar5, 1), 0, 0);
+	setWidgetFilled(0);
+	setWidgetRGB(new Color(0, 0, 0));
+	createExtraChild(new WidgetPointer(arg1), 3, 2);
+	setWidgetPosition(ivar7, ivar6, 0, 0);
+	setWidgetSize(127, subtract(ivar5, 1), 0, 0);
+	setWidgetFilled(0);
+	setWidgetRGB(new Color(0, 0, 0));
+	createExtraChild(new WidgetPointer(arg1), 4, 3);
+	setWidgetPosition(add(ivar7, 2), add(ivar6, 2), 0, 0);
+	setWidgetSize(125, ivar4, 0, 0);
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetFont(495);
+	setWidgetRGB(new Color(0, 0, 0));
+	setWidgetUnknownBoolean(false);
+	setWidgetText(intToStr(standart_config_1177) + "/60 special move points remaining");
+	return;
+}

@@ -1,0 +1,34 @@
+int script_1713(int arg0) {
+	int ivar1;
+	ivar1 = 0;
+	if (getItemIdInSlot(94, 2) == 19892) {
+		ivar1 = multiplyDivide(getSkillActualLvl(arg0), 100, 5);
+	}
+	switch (arg0) {
+		case 0:
+			if (((boolean)bitconfig_6830)) {
+				return script_1714(0, script_1718(0, add(ivar1, 5)));
+			}
+			break;
+		case 2:
+			if (((boolean)bitconfig_6834)) {
+				return script_1714(2, script_1718(2, add(ivar1, 5)));
+			}
+			break;
+		case 1:
+			if (((boolean)bitconfig_6833)) {
+				return script_1714(1, script_1718(1, add(ivar1, 5)));
+			}
+			break;
+		case 4:
+			if (((boolean)bitconfig_6831)) {
+				return script_1714(4, script_1718(4, add(ivar1, 5)));
+			}
+			break;
+		case 6:
+			if (((boolean)bitconfig_6832)) {
+				return script_1714(6, script_1718(6, add(ivar1, 5)));
+			}
+	}
+	return 0;
+}

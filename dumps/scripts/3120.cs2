@@ -1,0 +1,14 @@
+void script_3120(int arg0) {
+	if (setWidgetRegister(new WidgetPointer(arg0), 1)) {
+		setWidgetHidden(0);
+		setWidgetRGB(new Color(96, 96, 96));
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), 2)) {
+		setWidgetHidden(0);
+		setWidgetRGB(new Color(64, 64, 64));
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), 4)) {
+		setWidgetSprite(1542);
+	}
+	return;
+}

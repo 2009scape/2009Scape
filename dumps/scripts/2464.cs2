@@ -1,0 +1,22 @@
+void script_2464(int arg0,int arg1) {
+	if (arg0 > subtract(getClientCycle(), 5)) {
+		return;
+	}
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(arg1));
+	if (((boolean)script_2465(script_1305()))) {
+		if (getDisplayMode() >= 2) {
+			script_71(-1);
+			return;
+		}
+		if (((boolean)script_2465(4))) {
+			script_71(4);
+		} else if (((boolean)script_2465(9))) {
+			script_71(9);
+		} else {
+			if (((boolean)script_2465(12)) && (standart_config_281 > 3)) {
+				script_71(12);
+			}
+		}
+	}
+	return;
+}

@@ -1,0 +1,32 @@
+void script_4166(int arg0,int arg1,int arg2,int arg3,string arg4,string arg5) {
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	script_4178(0, arg2, 0);
+	if (isMember() && ((boolean)arg3)) {
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+		return;
+	}
+	createExtraChild(new WidgetPointer(arg0), 3, 0);
+	setWidgetSize(0, 0, 1, 1);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetFilled(1);
+	setWidgetRGB(new Color(255, 0, 0));
+	setWidgetHidden(1);
+	setScriptCallOnGameloop(4175, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), arg2, 0, "Iii1", new WidgetPointer(arg0));
+	createExtraChild(new WidgetPointer(arg0), 5, 1);
+	setWidgetSize(15, 15, 0, 0);
+	setWidgetPosition(10, 0, 0, 1);
+	script_4169(arg2);
+	setScriptCallOnConfigChange(4168, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), arg2, 286, 1, "IiiY", new WidgetPointer(arg0));
+	createExtraChild(new WidgetPointer(arg0), 4, 2);
+	setWidgetSize(35, 0, 1, 1);
+	setWidgetPosition(0, 0, 2, 1);
+	setWidgetFont(494);
+	setWidgetTextAlignment(0, 1, 0);
+	setWidgetRGB(new Color(255, 152, 31));
+	setWidgetUnknownBoolean(true);
+	setWidgetText(arg4);
+	setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), 16777215, "Iii", new WidgetPointer(arg0));
+	setScriptCallOnMouseOver(1160, new WidgetPointer(-32768,3), -1, new WidgetPointer(arg1), arg5, 25, 200, "IiIsii", new WidgetPointer(arg0));
+	setScriptCallOnMouseExit(4167, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), new WidgetPointer(arg1), "IiI", new WidgetPointer(arg0));
+	return;
+}

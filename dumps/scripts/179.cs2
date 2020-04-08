@@ -1,0 +1,19 @@
+int script_179(int arg0) {
+	switch (arg0) {
+		case 1:
+			return globalint_44;
+		case 2:
+			return globalint_45;
+		case 3:
+			return globalint_46;
+		case 4:
+			return globalint_47;
+		case 5:
+			return globalint_48;
+		case 6:
+			return globalint_49;
+		case 7:
+			return globalint_1511;
+	}
+	return 0;
+}

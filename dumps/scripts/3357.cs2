@@ -1,0 +1,46 @@
+cs2func_script_3357_struct(2,1,0) script_3357() {
+	flow_0:
+		SWITCH (standart_config_448) {
+			case 17935:
+				 GOTO flow_1
+			case 17936:
+				 GOTO flow_2
+			case 17937:
+				 GOTO flow_3
+			case 17938:
+				 GOTO flow_4
+			case 17939:
+				 GOTO flow_5
+			case 17940:
+				 GOTO flow_6
+			case 17941:
+				 GOTO flow_7
+			case 17942:
+				 GOTO flow_8
+			case 17943:
+				 GOTO flow_9
+			case 17944:
+				 GOTO flow_10
+		}
+		return newstruct cs2func_script_3357_struct(1, 18027, "Sundering Strike (Tier 1)");
+	flow_1:
+		return newstruct cs2func_script_3357_struct(1, 18027, "Sundering Strike (Tier 1)");
+	flow_2:
+		return newstruct cs2func_script_3357_struct(11, 18028, "Sundering Strike (Tier 2)");
+	flow_3:
+		return newstruct cs2func_script_3357_struct(21, 18029, "Sundering Strike (Tier 3)");
+	flow_4:
+		return newstruct cs2func_script_3357_struct(31, 18030, "Sundering Strike (Tier 4)");
+	flow_5:
+		return newstruct cs2func_script_3357_struct(41, 18031, "Sundering Strike (Tier 5)");
+	flow_6:
+		return newstruct cs2func_script_3357_struct(51, 18032, "Sundering Strike (Tier 6)");
+	flow_7:
+		return newstruct cs2func_script_3357_struct(61, 18033, "Sundering Strike (Tier 7)");
+	flow_8:
+		return newstruct cs2func_script_3357_struct(71, 18034, "Sundering Strike (Tier 8)");
+	flow_9:
+		return newstruct cs2func_script_3357_struct(81, 18035, "Sundering Strike (Tier 9)");
+	flow_10:
+		return newstruct cs2func_script_3357_struct(91, 18036, "Sundering Strike (Tier 10)");
+}

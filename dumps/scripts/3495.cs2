@@ -1,0 +1,77 @@
+void script_3495(int arg0,int arg1) {
+	int ivar2;
+	string svar0;
+	string svar1;
+	string svar2;
+	svar0 = "";
+	svar1 = "";
+	ivar2 = 65077550;
+	switch (globalint_1184) {
+		case 1:
+			if (arg0 == 65077382) {
+				svar0 = cs2method_3408(105, 115, 3089, bitconfig_8053);
+				svar1 = cs2method_3408(105, 115, 3089, add(bitconfig_8053, 1));
+			} else if (arg0 == 65077289) {
+				svar0 = cs2method_3408(105, 115, 3090, bitconfig_8054);
+				svar1 = cs2method_3408(105, 115, 3090, add(bitconfig_8054, 1));
+				ivar2 = 65077549;
+			} else {
+				if (arg0 == 65077331) {
+					svar0 = cs2method_3408(105, 115, 3091, bitconfig_8055);
+					svar1 = cs2method_3408(105, 115, 3091, add(bitconfig_8055, 1));
+					ivar2 = 65077548;
+				}
+			}
+			break;
+		case 2:
+			if (arg0 == 65077382) {
+				svar0 = cs2method_3408(105, 115, 3092, bitconfig_8056);
+				svar1 = cs2method_3408(105, 115, 3092, add(bitconfig_8056, 1));
+			} else if (arg0 == 65077289) {
+				svar0 = cs2method_3408(105, 115, 3093, bitconfig_8057);
+				svar1 = cs2method_3408(105, 115, 3093, add(bitconfig_8057, 1));
+				ivar2 = 65077549;
+			} else {
+				if (arg0 == 65077331) {
+					svar0 = cs2method_3408(105, 115, 3094, bitconfig_8058);
+					svar1 = cs2method_3408(105, 115, 3094, add(bitconfig_8058, 1));
+					ivar2 = 65077548;
+				}
+			}
+			break;
+		case 3:
+			if (arg0 == 65077382) {
+				svar0 = cs2method_3408(105, 115, 3095, bitconfig_8059);
+				svar1 = cs2method_3408(105, 115, 3095, add(bitconfig_8059, 1));
+			} else if (arg0 == 65077289) {
+				svar0 = cs2method_3408(105, 115, 3096, bitconfig_8060);
+				svar1 = cs2method_3408(105, 115, 3096, add(bitconfig_8060, 1));
+				ivar2 = 65077549;
+			} else {
+				if (arg0 == 65077331) {
+					svar0 = cs2method_3408(105, 115, 3097, bitconfig_8061);
+					svar1 = cs2method_3408(105, 115, 3097, add(bitconfig_8061, 1));
+					ivar2 = 65077548;
+				}
+			}
+			break;
+		case 4:
+			if (arg0 == 65077382) {
+				svar0 = cs2method_3408(105, 115, 3098, bitconfig_8062);
+				svar1 = cs2method_3408(105, 115, 3098, add(bitconfig_8062, 1));
+			} else if (arg0 == 65077289) {
+				svar0 = cs2method_3408(105, 115, 3099, bitconfig_8063);
+				svar1 = cs2method_3408(105, 115, 3099, add(bitconfig_8063, 1));
+				ivar2 = 65077549;
+			} else {
+				if (arg0 == 65077331) {
+					svar0 = cs2method_3408(105, 115, 3100, bitconfig_8064);
+					svar1 = cs2method_3408(105, 115, 3100, add(bitconfig_8064, 1));
+					ivar2 = 65077548;
+				}
+			}
+	}
+	svar2 = "Current - " + svar0 + "<br>" + "Next - " + svar1;
+	script_569(arg0, arg1, ivar2, 25, getWidgetActualWidth(new WidgetPointer(getWidgetParentId(new WidgetPointer(ivar2)))), svar2);
+	return;
+}

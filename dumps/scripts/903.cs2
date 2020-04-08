@@ -1,0 +1,5 @@
+void script_903() {
+	setWidget3DRotation(0, 0, 0, 0, 1024, 400, new WidgetPointer(717,13));
+	setWidgetPosition(subtract(getWidgetActualX(new WidgetPointer(717,13)), 2), subtract(getWidgetActualY(new WidgetPointer(717,13)), 2), 0, 0, new WidgetPointer(717,13));
+	return;
+}

@@ -1,0 +1,4 @@
+void script_4875(int arg0) {
+	script_4876(arg0);
+	return;
+}

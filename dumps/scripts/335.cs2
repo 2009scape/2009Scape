@@ -1,0 +1,9 @@
+cs2func_script_335_struct(2,0,0) script_335(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	ivar4 = script_338(arg3);
+	ivar5 = divide(multiply(arg2, 1000), ivar4);
+	ivar6 = subtract(arg2, ivar5);
+	return newstruct cs2func_script_335_struct(add(arg0, ivar5), add(arg1, ivar6));
+}

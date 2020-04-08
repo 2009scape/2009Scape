@@ -1,0 +1,49 @@
+int script_361(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	ivar2 = script_734(((int)IsFemale()));
+	ivar3 = subtract(getCommonDefinitionSize(3278), 1);
+	ivar4 = -1;
+	ivar5 = 0;
+	ivar6 = -1;
+	while (ivar3 >= 0) {
+		ivar4 = cs2method_3408(105, 74, 3278, ivar3);
+		if (ivar4 != -1) {
+			ivar5 = 0;
+			ivar6 = script_384(0, ivar4, ivar2);
+			while (ivar6 != -1) {
+				switch (arg1) {
+					case 3:
+						if (getOtherCommonData(ivar6, 1182) == arg0) {
+							return ivar6;
+						}
+						break;
+					case 4:
+						if (getOtherCommonData(ivar6, 1183) == arg0) {
+							return ivar6;
+						}
+						break;
+					case 5:
+						if (getOtherCommonData(ivar6, 1184) == arg0) {
+							return ivar6;
+						}
+						break;
+					case 6:
+						if (getOtherCommonData(ivar6, 1185) == arg0) {
+							return ivar6;
+						}
+						break;
+					default:
+						return -1;
+				}
+				ivar5 = add(ivar5, 1);
+				ivar6 = script_384(ivar5, ivar4, ivar2);
+			}
+		}
+		ivar3 = subtract(ivar3, 1);
+	}
+	return -1;
+}

@@ -1,0 +1,33 @@
+void script_1618() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar0 = -1;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	setWidgetIsHidden(false, new WidgetPointer(287,4));
+	if (((boolean)globalint_1032)) {
+		ivar0 = 221;
+	} else {
+		ivar0 = 222;
+	}
+	ivar1 = getItemContainerLength(ivar0);
+	if (ivar1 != multiply(5, 5)) {
+		messageType0("Nothing happens, as if something is wrong.");
+		return;
+	}
+	while (ivar4 < ivar1) {
+		script_1619(ivar2, ivar3, getItemIdInSlot(ivar0, ivar4));
+		ivar2 = add(ivar2, 1);
+		if (ivar2 >= 5) {
+			ivar2 = 0;
+			ivar3 = add(ivar3, 1);
+		}
+		ivar4 = add(ivar4, 1);
+	}
+	return;
+}

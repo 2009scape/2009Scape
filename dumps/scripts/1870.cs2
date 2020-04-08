@@ -1,0 +1,29 @@
+void script_1870(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	string svar0;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = getSystemUpdateTimer();
+	svar0 = "0";
+	if (ivar3 > 0) {
+		ivar1 = mod(divide(ivar3, 50), 60);
+		ivar2 = divide(ivar3, 3000);
+		if (ivar1 < 10) {
+			svar0 = "System update in: " + intToStr(ivar2) + ":0" + intToStr(ivar1);
+		} else {
+			svar0 = "System update in: " + intToStr(ivar2) + ":" + intToStr(ivar1);
+		}
+		setWidgetText(new WidgetPointer(arg0), svar0);
+		if (strLength(svar0) > 0) {
+			setWidgetSize(add(getTextWidth(494, "System update in: "), 40), getWidgetActualHeight(new WidgetPointer(906,30)), 0, 0, new WidgetPointer(906,30));
+			setWidgetIsHidden(false, new WidgetPointer(906,30));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(906,30));
+		}
+	} else {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+	}
+	return;
+}

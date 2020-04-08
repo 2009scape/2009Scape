@@ -1,0 +1,70 @@
+int script_5200(int arg0) {
+	switch (arg0) {
+		case 1:
+			if (bitconfig_7238 >= 60) {
+				return 1;
+			}
+			return 0;
+		case 2:
+			if (bitconfig_5733 >= 60) {
+				return 1;
+			}
+			return 0;
+		case 3:
+			if (bitconfig_6914 >= 3) {
+				return 1;
+			}
+			return 0;
+		case 4:
+			if (globalint_1594 >= 56) {
+				return 1;
+			}
+			return 0;
+		case 5:
+			if (bitconfig_5730 >= 100) {
+				return 1;
+			}
+			return 0;
+		case 6:
+			if ((standart_config_145 >= 7) || (standart_config_146 >= 4)) {
+				return 1;
+			}
+			return 0;
+		case 7:
+			if (bitconfig_2561 >= 3) {
+				return 1;
+			}
+			return 0;
+		case 8:
+			if (globalint_1594 >= 17) {
+				return 1;
+			}
+			return 0;
+		case 9:
+			if (bitconfig_2378 >= 6) {
+				return 1;
+			}
+			return 0;
+		case 10:
+			if (standart_config_122 >= 7) {
+				return 1;
+			}
+			return 0;
+		case 11:
+			if (standart_config_130 >= 4) {
+				return 1;
+			}
+			return 0;
+		case 12:
+			if (globalint_1594 >= 11) {
+				return 1;
+			}
+			return 0;
+		case 14:
+			if (standart_config_176 >= 10) {
+				return 1;
+			}
+			return 0;
+	}
+	return 0;
+}

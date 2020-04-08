@@ -1,0 +1,20 @@
+void script_5191(int arg0,int arg1) {
+	flow_0:
+		cs2method2100(add(cs2method2600(new WidgetPointer(1122,74)), arg1), 0, new WidgetPointer(1122,74));
+		IF (arg1 < 0) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		IF (cs2method2600(new WidgetPointer(1122,74)) <= arg0) 
+			GOTO	flow_4
+	flow_2:
+		IF ((arg1 > 0) && (cs2method2600(new WidgetPointer(1122,74)) >= arg0)) 
+			GOTO	flow_4
+		GOTO	flow_5
+	flow_4:
+		cs2method2100(arg0, 0, new WidgetPointer(1122,74));
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(1122,74));
+		setWidgetIsHidden(true, new WidgetPointer(1122,75));
+	flow_5:
+		return;
+}

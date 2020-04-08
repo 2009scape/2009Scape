@@ -1,0 +1,13 @@
+int script_3013(int arg0) {
+	switch (arg0) {
+		case 0:
+			return 59441186;
+		case 1:
+			return 59441174;
+		case 2:
+			return 59441162;
+		case 3:
+			return 59441200;
+	}
+	return -1;
+}

@@ -1,0 +1,4 @@
+void script_3859(int arg0,int arg1) {
+	script_311(arg0, arg1, getOtherCommonData(480, 596));
+	return;
+}

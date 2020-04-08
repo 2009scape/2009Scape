@@ -1,0 +1,44 @@
+void script_4838() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar0 = -1;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 1;
+	switch (bitconfig_9558) {
+		case 1:
+			ivar1 = bitconfig_9567;
+			ivar2 = bitconfig_9568;
+			ivar3 = bitconfig_9569;
+			ivar4 = bitconfig_9563;
+			break;
+		case 2:
+			ivar1 = bitconfig_9576;
+			ivar2 = bitconfig_9577;
+			ivar3 = bitconfig_9578;
+			ivar4 = bitconfig_9572;
+			break;
+		case 3:
+			ivar1 = bitconfig_9585;
+			ivar2 = bitconfig_9586;
+			ivar3 = bitconfig_9587;
+			ivar4 = bitconfig_9581;
+	}
+	ivar0 = script_4815(ivar4, 1);
+	if (ivar0 != -1) {
+		script_4839(ivar0, multiply(subtract(ivar1, 1), 27));
+	}
+	ivar0 = script_4815(ivar4, 2);
+	if (ivar0 != -1) {
+		script_4839(ivar0, multiply(subtract(ivar2, 1), 27));
+	}
+	ivar0 = script_4815(ivar4, 3);
+	if (ivar0 != -1) {
+		script_4839(ivar0, multiply(subtract(ivar3, 1), 27));
+	}
+	return;
+}

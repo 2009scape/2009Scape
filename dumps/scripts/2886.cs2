@@ -1,0 +1,11 @@
+void script_2886() {
+	int ivar0;
+	globalint_1078 = bitconfig_7189;
+	globalint_1086 = 0;
+	ivar0 = getClientCycle();
+	setScriptCallOnGameloop(2892, new WidgetPointer(476,24), ivar0, "Ii", new WidgetPointer(476,24));
+	playSoundEffect(8641, 1, 0);
+	setScriptCallOnWidgetResize(2887, "", new WidgetPointer(476,0));
+	script_2888();
+	return;
+}

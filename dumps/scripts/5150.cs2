@@ -1,0 +1,8 @@
+void script_5150(int arg0) {
+	string svar0;
+	svar0 = "It would be advisable to retrieve items you have dropped and do not wish to lose.";
+	if (setWidgetRegister(new WidgetPointer(arg0))) {
+		setScriptCallOnMouseOver(4538, new WidgetPointer(800,1), new WidgetPointer(-32768,3), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 2, -2147483647, -2147483646, "IIisifdiiiiii");
+	}
+	return;
+}

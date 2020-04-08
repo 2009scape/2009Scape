@@ -1,0 +1,28 @@
+void script_3470(int arg0,int arg1) {
+	switch (globalint_1007) {
+		case 1:
+			deleteAllExtraChilds(new WidgetPointer(arg0));
+			script_2766(0, 75, arg0);
+			break;
+		case 2:
+			cs2method5405(0, 5);
+			cs2method5405(1, 5);
+			cs2method5406(0, 0, script_3459(62019146, arg1), 510, script_3459(62035526, arg1), 715, 0);
+			cs2method5406(1, 0, script_3459(62117455, arg1), 170, script_3459(62051920, arg1), 170, 0);
+			cs2method5406(0, 1, script_3459(62658120, arg1), 1035, script_3459(62772815, arg1), 1430, 0);
+			cs2method5406(1, 1, script_3459(62527055, arg1), 170, script_3459(62576213, arg1), 170, 0);
+			cs2method5406(0, 2, script_3459(62527082, arg1), 2095, script_3459(62363249, arg1), 2095, 0);
+			cs2method5406(1, 2, script_3459(62379614, arg1), 170, script_3459(62264928, arg1), 170, 0);
+			cs2method5406(0, 3, script_3459(62035560, arg1), 1565, script_3459(61920865, arg1), 965, 0);
+			cs2method5406(1, 3, script_3459(62183006, arg1), 170, script_3459(62101084, arg1), 170, 0);
+			cs2method5406(0, 4, script_3459(62019146, arg1), 470, script_3459(62051906, arg1), 435, 0);
+			cs2method5406(1, 4, script_3459(62117455, arg1), 170, script_3459(62133836, arg1), 170, 0);
+			script_2768(150, arg0);
+			setScriptCallOnMinimapRelatedSetting3(3471, new WidgetPointer(arg0), 1, "Ii", new WidgetPointer(arg0));
+			cameraMethod5502(0, 0, 100, 700, 1, 0);
+			break;
+		default:
+			cs2method5512();
+	}
+	return;
+}

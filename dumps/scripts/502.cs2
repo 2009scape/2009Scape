@@ -1,0 +1,160 @@
+void script_502(int arg0,int arg1) {
+	flow_0:
+		if ((arg0 == 66650268) && ((boolean)bitconfig_7520)) {
+			return;
+		}
+		if ((arg0 == 66650269) && ((boolean)bitconfig_7521)) {
+			return;
+		}
+		if ((arg0 == 66650270) && ((boolean)bitconfig_7526)) {
+			return;
+		}
+		if ((arg0 == 66650271) && ((boolean)bitconfig_7527)) {
+			return;
+		}
+		if ((arg0 == 66650272) && ((boolean)bitconfig_7530)) {
+			return;
+		}
+		if ((arg0 == 66650273) && ((boolean)bitconfig_7531)) {
+			return;
+		}
+		if ((arg0 == 66650274) && ((boolean)bitconfig_7532)) {
+			return;
+		}
+		if ((arg0 == 66650275) && ((boolean)bitconfig_7533)) {
+			return;
+		}
+		if ((arg0 == 66650276) && ((boolean)bitconfig_7534)) {
+			return;
+		}
+		if ((arg0 == 66650277) && ((boolean)bitconfig_7535)) {
+			return;
+		}
+		SWITCH (arg1) {
+			case 66650279:
+				 GOTO flow_31
+			case 66650278:
+				 GOTO flow_31
+			case 66650281:
+				 GOTO flow_31
+			case 66650280:
+				 GOTO flow_31
+			case 66650283:
+				 GOTO flow_31
+			case 66650282:
+				 GOTO flow_31
+			case 66650285:
+				 GOTO flow_31
+			case 66650284:
+				 GOTO flow_31
+			case 66650287:
+				 GOTO flow_31
+			case 66650286:
+				 GOTO flow_31
+			case 66650288:
+				 GOTO flow_31
+			case 66650289:
+				 GOTO flow_31
+			case 66650290:
+				 GOTO flow_31
+			case 66650291:
+				 GOTO flow_31
+			case 66650292:
+				 GOTO flow_31
+			case 66650293:
+				 GOTO flow_31
+			case 66650294:
+				 GOTO flow_31
+			case 66650295:
+				 GOTO flow_31
+			case 66650296:
+				 GOTO flow_31
+			case 66650297:
+				 GOTO flow_31
+			case 66650298:
+				 GOTO flow_31
+			case 66650299:
+				 GOTO flow_31
+			case 66650300:
+				 GOTO flow_31
+			case 66650301:
+				 GOTO flow_31
+			case 66650302:
+				 GOTO flow_31
+			case 66650303:
+				 GOTO flow_31
+			case 66650337:
+				 GOTO flow_31
+			case 66650336:
+				 GOTO flow_31
+			case 66650311:
+				 GOTO flow_31
+			case 66650310:
+				 GOTO flow_31
+			case 66650309:
+				 GOTO flow_31
+			case 66650308:
+				 GOTO flow_31
+			case 66650307:
+				 GOTO flow_31
+			case 66650306:
+				 GOTO flow_31
+			case 66650305:
+				 GOTO flow_31
+			case 66650304:
+				 GOTO flow_31
+			case 66650319:
+				 GOTO flow_31
+			case 66650318:
+				 GOTO flow_31
+			case 66650317:
+				 GOTO flow_31
+			case 66650316:
+				 GOTO flow_31
+			case 66650315:
+				 GOTO flow_31
+			case 66650314:
+				 GOTO flow_31
+			case 66650313:
+				 GOTO flow_31
+			case 66650312:
+				 GOTO flow_31
+			case 66650326:
+				 GOTO flow_31
+			case 66650327:
+				 GOTO flow_31
+			case 66650324:
+				 GOTO flow_31
+			case 66650325:
+				 GOTO flow_31
+			case 66650322:
+				 GOTO flow_31
+			case 66650323:
+				 GOTO flow_31
+			case 66650320:
+				 GOTO flow_31
+			case 66650321:
+				 GOTO flow_31
+			case 66650334:
+				 GOTO flow_31
+			case 66650335:
+				 GOTO flow_31
+			case 66650332:
+				 GOTO flow_31
+			case 66650333:
+				 GOTO flow_31
+			case 66650330:
+				 GOTO flow_31
+			case 66650331:
+				 GOTO flow_31
+			case 66650328:
+				 GOTO flow_31
+			case 66650329:
+				 GOTO flow_31
+		}
+		return;
+	flow_31:
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+		globalint_1387 = 1;
+		return;
+}

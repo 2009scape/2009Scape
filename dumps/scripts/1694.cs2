@@ -1,0 +1,12 @@
+int script_1694(int arg0) {
+	if (arg0 < 32) {
+		return isBitFlagged(globalint_1040, arg0);
+	}
+	if (arg0 < 64) {
+		return isBitFlagged(globalint_1041, mod(arg0, 32));
+	}
+	if (arg0 < 96) {
+		return isBitFlagged(globalint_1042, mod(arg0, 32));
+	}
+	return 0;
+}

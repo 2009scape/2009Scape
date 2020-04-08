@@ -1,0 +1,60 @@
+void script_1693(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	string svar0;
+	string svar1;
+	ivar3 = divide(add(arg1, arg2), 2);
+	ivar4 = globalarray_0[ivar3];
+	globalarray_0[ivar3] = globalarray_0[arg2];
+	globalarray_0[arg2] = ivar4;
+	ivar5 = arg1;
+	ivar6 = arg1;
+	ivar7 = 0;
+	svar0 = "";
+	svar1 = "";
+	ivar8 = -1;
+	while (ivar6 < arg2) {
+		ivar8 = cs2method_3408(105, 74, 845, globalarray_0[ivar6]);
+		if (ivar8 != -1) {
+			ivar8 = getOtherCommonData(ivar8, 923);
+			if (ivar8 != -1) {
+				svar0 = getOtherCommonData(ivar8, 846);
+			} else {
+				svar0 = "";
+			}
+		} else {
+			svar0 = "";
+		}
+		ivar8 = cs2method_3408(105, 74, 845, ivar4);
+		if (ivar8 != -1) {
+			ivar8 = getOtherCommonData(ivar8, 923);
+			if (ivar8 != -1) {
+				svar1 = getOtherCommonData(ivar8, 846);
+			} else {
+				svar1 = "";
+			}
+		} else {
+			svar1 = "";
+		}
+		if (stringMethod4107(svar0, svar1) < bitAnd(ivar6, 1)) {
+			ivar7 = globalarray_0[ivar6];
+			globalarray_0[ivar6] = globalarray_0[ivar5];
+			globalarray_0[ivar5] = ivar7;
+			ivar5 = add(ivar5, 1);
+		}
+		ivar6 = add(ivar6, 1);
+	}
+	globalarray_0[arg2] = globalarray_0[ivar5];
+	globalarray_0[ivar5] = ivar4;
+	if (arg1 < subtract(ivar5, 1)) {
+		script_1693(0, arg1, subtract(ivar5, 1));
+	}
+	if (add(ivar5, 1) < arg2) {
+		script_1693(0, add(ivar5, 1), arg2);
+	}
+	return;
+}

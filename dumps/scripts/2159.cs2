@@ -1,0 +1,9 @@
+int script_2159(int arg0,int arg1,int arg2,int arg3) {
+	if (((boolean)arg0) && ((boolean)arg2)) {
+		return 0;
+	}
+	if ((arg0 < arg1) && (arg2 < arg3)) {
+		return 1;
+	}
+	return 2;
+}

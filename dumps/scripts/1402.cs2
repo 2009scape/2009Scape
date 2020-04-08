@@ -1,0 +1,135 @@
+void script_1402() {
+	if (standart_config_106 == -1) {
+		return;
+	}
+	if (((boolean)standart_config_106)) {
+		setWidgetModel(3062, new WidgetPointer(270,5));
+		setWidgetAnimation(646, new WidgetPointer(270,5));
+	} else if (((boolean)standart_config_106)) {
+		setWidgetModel(3062, new WidgetPointer(270,6));
+		setWidgetAnimation(646, new WidgetPointer(270,6));
+	} else if (standart_config_106 == 2) {
+		setWidgetModel(3062, new WidgetPointer(270,7));
+		setWidgetAnimation(646, new WidgetPointer(270,7));
+	} else if (standart_config_106 == 3) {
+		setWidgetModel(3062, new WidgetPointer(270,8));
+		setWidgetAnimation(646, new WidgetPointer(270,8));
+	} else if (standart_config_106 == 4) {
+		setWidgetModel(3062, new WidgetPointer(270,9));
+		setWidgetAnimation(646, new WidgetPointer(270,9));
+	} else if (standart_config_106 == 5) {
+		setWidgetModel(3062, new WidgetPointer(270,10));
+		setWidgetAnimation(646, new WidgetPointer(270,10));
+	} else if (standart_config_106 == 6) {
+		setWidgetModel(3062, new WidgetPointer(270,11));
+		setWidgetAnimation(646, new WidgetPointer(270,11));
+	} else if (standart_config_106 == 7) {
+		setWidgetModel(3062, new WidgetPointer(270,12));
+		setWidgetAnimation(646, new WidgetPointer(270,12));
+	} else if (standart_config_106 == 8) {
+		setWidgetModel(3062, new WidgetPointer(270,13));
+		setWidgetAnimation(646, new WidgetPointer(270,13));
+	} else if (standart_config_106 == 9) {
+		setWidgetModel(3062, new WidgetPointer(270,14));
+		setWidgetAnimation(646, new WidgetPointer(270,14));
+	} else if (standart_config_106 == 10) {
+		setWidgetModel(3062, new WidgetPointer(270,15));
+		setWidgetAnimation(646, new WidgetPointer(270,15));
+	} else if (standart_config_106 == 11) {
+		setWidgetModel(3062, new WidgetPointer(270,16));
+		setWidgetAnimation(646, new WidgetPointer(270,16));
+	} else if (standart_config_106 == 12) {
+		setWidgetModel(3062, new WidgetPointer(270,17));
+		setWidgetAnimation(646, new WidgetPointer(270,17));
+	} else if (standart_config_106 == 13) {
+		setWidgetModel(3062, new WidgetPointer(270,18));
+		setWidgetAnimation(646, new WidgetPointer(270,18));
+	} else if (standart_config_106 == 14) {
+		setWidgetModel(3062, new WidgetPointer(270,19));
+		setWidgetAnimation(646, new WidgetPointer(270,19));
+	} else if (standart_config_106 == 15) {
+		setWidgetModel(3062, new WidgetPointer(270,20));
+		setWidgetAnimation(646, new WidgetPointer(270,20));
+	} else if (standart_config_106 == 16) {
+		setWidgetModel(3062, new WidgetPointer(270,21));
+		setWidgetAnimation(646, new WidgetPointer(270,21));
+	} else if (standart_config_106 == 17) {
+		setWidgetModel(3062, new WidgetPointer(270,22));
+		setWidgetAnimation(646, new WidgetPointer(270,22));
+	} else if (standart_config_106 == 18) {
+		setWidgetModel(3062, new WidgetPointer(270,23));
+		setWidgetAnimation(646, new WidgetPointer(270,23));
+	} else if (standart_config_106 == 19) {
+		setWidgetModel(3062, new WidgetPointer(270,24));
+		setWidgetAnimation(646, new WidgetPointer(270,24));
+	} else if (standart_config_106 == 20) {
+		setWidgetModel(3062, new WidgetPointer(270,25));
+		setWidgetAnimation(646, new WidgetPointer(270,25));
+	} else if (standart_config_106 == 21) {
+		setWidgetModel(3062, new WidgetPointer(270,26));
+		setWidgetAnimation(646, new WidgetPointer(270,26));
+	} else if (standart_config_106 == 22) {
+		setWidgetModel(3062, new WidgetPointer(270,27));
+		setWidgetAnimation(646, new WidgetPointer(270,27));
+	} else if (standart_config_106 == 23) {
+		setWidgetModel(3062, new WidgetPointer(270,28));
+		setWidgetAnimation(646, new WidgetPointer(270,28));
+	} else if (standart_config_106 == 24) {
+		setWidgetModel(3062, new WidgetPointer(270,29));
+		setWidgetAnimation(646, new WidgetPointer(270,29));
+	} else if (standart_config_106 == 25) {
+		setWidgetModel(3062, new WidgetPointer(270,30));
+		setWidgetAnimation(646, new WidgetPointer(270,30));
+	} else if (standart_config_106 == 26) {
+		setWidgetModel(3062, new WidgetPointer(270,31));
+		setWidgetAnimation(646, new WidgetPointer(270,31));
+	} else if (standart_config_106 == 27) {
+		setWidgetModel(3062, new WidgetPointer(270,32));
+		setWidgetAnimation(646, new WidgetPointer(270,32));
+	} else if (standart_config_106 == 28) {
+		setWidgetModel(3062, new WidgetPointer(270,33));
+		setWidgetAnimation(646, new WidgetPointer(270,33));
+	} else if (standart_config_106 == 29) {
+		setWidgetModel(3062, new WidgetPointer(270,34));
+		setWidgetAnimation(646, new WidgetPointer(270,34));
+	} else if (standart_config_106 == 30) {
+		setWidgetModel(3062, new WidgetPointer(270,35));
+		setWidgetAnimation(646, new WidgetPointer(270,35));
+	} else if (standart_config_106 == 31) {
+		setWidgetModel(3062, new WidgetPointer(270,36));
+		setWidgetAnimation(646, new WidgetPointer(270,36));
+	} else if (standart_config_106 == 32) {
+		setWidgetModel(3062, new WidgetPointer(270,37));
+		setWidgetAnimation(646, new WidgetPointer(270,37));
+	} else if (standart_config_106 == 33) {
+		setWidgetModel(3062, new WidgetPointer(270,38));
+		setWidgetAnimation(646, new WidgetPointer(270,38));
+	} else if (standart_config_106 == 34) {
+		setWidgetModel(3062, new WidgetPointer(270,39));
+		setWidgetAnimation(646, new WidgetPointer(270,39));
+	} else if (standart_config_106 == 35) {
+		setWidgetModel(3062, new WidgetPointer(270,40));
+		setWidgetAnimation(646, new WidgetPointer(270,40));
+	} else if (standart_config_106 == 36) {
+		setWidgetModel(3062, new WidgetPointer(270,41));
+		setWidgetAnimation(646, new WidgetPointer(270,41));
+	} else if (standart_config_106 == 37) {
+		setWidgetModel(3062, new WidgetPointer(270,42));
+		setWidgetAnimation(646, new WidgetPointer(270,42));
+	} else if (standart_config_106 == 38) {
+		setWidgetModel(3062, new WidgetPointer(270,43));
+		setWidgetAnimation(646, new WidgetPointer(270,43));
+	} else if (standart_config_106 == 39) {
+		setWidgetModel(3062, new WidgetPointer(270,44));
+		setWidgetAnimation(646, new WidgetPointer(270,44));
+	} else if (standart_config_106 == 40) {
+		setWidgetModel(3062, new WidgetPointer(270,45));
+		setWidgetAnimation(646, new WidgetPointer(270,45));
+	} else {
+		if (standart_config_106 == 41) {
+			setWidgetModel(3062, new WidgetPointer(270,46));
+			setWidgetAnimation(646, new WidgetPointer(270,46));
+		}
+	}
+	return;
+}

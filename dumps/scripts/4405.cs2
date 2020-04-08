@@ -1,0 +1,11 @@
+int script_4405() {
+	int ivar0;
+	int ivar1;
+	ivar0 = getWidgetActualY();
+	ivar1 = getWidgetParentId();
+	while (ivar1 != -1) {
+		ivar0 = subtract(add(ivar0, getWidgetActualY(new WidgetPointer(ivar1))), cs2method2601(new WidgetPointer(ivar1)));
+		ivar1 = getWidgetParentId(new WidgetPointer(ivar1));
+	}
+	return ivar0;
+}

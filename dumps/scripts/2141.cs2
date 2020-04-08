@@ -1,0 +1,34 @@
+void script_2141() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	string svar0;
+	int stack_dump0;
+	cs2func_script_942_struct(1,1,0) structdump_1;
+	deleteAllExtraChilds(new WidgetPointer(864,7));
+	if (standart_config_1469 == -1) {
+		return;
+	}
+	ivar0 = 0;
+	ivar1 = 10;
+	ivar2 = 0;
+	ivar3 = 0;
+	svar0 = "";
+	while (ivar2 != -1) {
+		stack_dump0 = ivar3;
+		structdump_1 = script_942(stack_dump0);
+		svar0 = structdump_1.stringpart_0;
+		ivar2 = structdump_1.intpart_0;
+		if (((boolean)ivar2)) {
+			ivar1 = add(ivar1, script_2142(ivar0, ivar1, ivar3, svar0));
+			ivar0 = add(ivar0, 1);
+		}
+		ivar3 = add(ivar3, 1);
+	}
+	setWidgetScrollMax(296, ivar1, new WidgetPointer(864,7));
+	if (ivar1 > 240) {
+		script_31(56623112, 56623111, 798, 795, 796, 797, 793, 794);
+	}
+	return;
+}

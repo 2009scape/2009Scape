@@ -1,0 +1,10 @@
+void script_2585() {
+	setWidgetRGB(new Color(255, 153, 53), new WidgetPointer(292,116));
+	setWidgetContextMenuOption(1, new WidgetPointer(292,110), "Select light");
+	setWidgetContextMenuOption(1, new WidgetPointer(292,111), "Select heavy");
+	setScriptCallOnClickContextMenu(2589, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,110));
+	setScriptCallOnClickContextMenu(2589, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,111));
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(292,110));
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(292,111));
+	return;
+}

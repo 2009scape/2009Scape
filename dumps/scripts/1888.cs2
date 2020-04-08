@@ -1,0 +1,19 @@
+void script_1888() {
+	if (((boolean)globalint_1025)) {
+		return;
+	}
+	if ((((boolean)script_2728()) && ((boolean)bitconfig_6521)) && (standart_config_281 >= 1000)) {
+		if (globalint_94 > getClientCycle()) {
+			return;
+		}
+		globalint_94 = add(getClientCycle(), 1500);
+		if (((boolean)standart_config_1647)) {
+			messageType0("Your health is low! Run away from your attacker and speak to Xenia.");
+		} else {
+			messageType0("Your health is low! Find a safe place away from your attacker");
+			messageType0("or eat some food to heal yourself.");
+		}
+	}
+	globalint_1025 = 1;
+	return;
+}

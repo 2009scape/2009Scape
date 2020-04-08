@@ -1,0 +1,381 @@
+void script_1784() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	int stack_dump3;
+	string stack_dump4;
+	cs2func_script_1785_struct(2,0,0) structdump_5;
+	cs2func_script_1785_struct(2,0,0) structdump_6;
+	cs2func_script_1785_struct(2,0,0) structdump_7;
+	cs2func_script_1785_struct(2,0,0) structdump_8;
+	cs2func_script_1785_struct(2,0,0) structdump_9;
+	cs2func_script_1785_struct(2,0,0) structdump_10;
+	cs2func_script_1785_struct(2,0,0) structdump_11;
+	cs2func_script_1785_struct(2,0,0) structdump_12;
+	cs2func_script_1785_struct(2,0,0) structdump_13;
+	cs2func_script_1785_struct(2,0,0) structdump_14;
+	cs2func_script_1785_struct(2,0,0) structdump_15;
+	cs2func_script_1785_struct(2,0,0) structdump_16;
+	cs2func_script_1785_struct(2,0,0) structdump_17;
+	cs2func_script_1785_struct(2,0,0) structdump_18;
+	cs2func_script_1785_struct(2,0,0) structdump_19;
+	cs2func_script_1785_struct(2,0,0) structdump_20;
+	cs2func_script_1785_struct(2,0,0) structdump_21;
+	cs2func_script_1785_struct(2,0,0) structdump_22;
+	cs2func_script_1785_struct(2,0,0) structdump_23;
+	cs2func_script_1785_struct(2,0,0) structdump_24;
+	cs2func_script_1785_struct(2,0,0) structdump_25;
+	cs2func_script_1785_struct(2,0,0) structdump_26;
+	cs2func_script_1785_struct(2,0,0) structdump_27;
+	cs2func_script_1785_struct(2,0,0) structdump_28;
+	cs2func_script_1785_struct(2,0,0) structdump_29;
+	cs2func_script_1785_struct(2,0,0) structdump_30;
+	cs2func_script_1785_struct(2,0,0) structdump_31;
+	cs2func_script_1785_struct(2,0,0) structdump_32;
+	cs2func_script_1785_struct(2,0,0) structdump_33;
+	cs2func_script_1785_struct(2,0,0) structdump_34;
+	cs2func_script_1785_struct(2,0,0) structdump_35;
+	cs2func_script_1785_struct(2,0,0) structdump_36;
+	cs2func_script_1785_struct(2,0,0) structdump_37;
+	ivar0 = 0;
+	ivar1 = subtract(getWidgetActualWidth(new WidgetPointer(792,3)), 16);
+	ivar2 = 0;
+	stack_dump0 = ivar0;
+	stack_dump1 = ivar2;
+	stack_dump2 = ivar1;
+	stack_dump3 = 1;
+	stack_dump4 = "~ Winning ~";
+	structdump_5 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+	ivar2 = structdump_5.intpart_1;
+	ivar0 = structdump_5.intpart_0;
+	stack_dump0 = ivar0;
+	stack_dump1 = ivar2;
+	stack_dump2 = ivar1;
+	stack_dump3 = 0;
+	stack_dump4 = "Victory is awarded...";
+	structdump_6 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+	ivar2 = structdump_6.intpart_1;
+	ivar0 = structdump_6.intpart_0;
+	if (((boolean)globalint_248)) {
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar2;
+		stack_dump2 = ivar1;
+		stack_dump3 = 0;
+		stack_dump4 = "...to the team that defeats all its enemies.";
+		structdump_7 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar2 = structdump_7.intpart_1;
+		ivar0 = structdump_7.intpart_0;
+	} else {
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar2;
+		stack_dump2 = ivar1;
+		stack_dump3 = 0;
+		stack_dump4 = "...to the team that defeats all its enemies, excluding the last five.";
+		structdump_8 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar2 = structdump_8.intpart_1;
+		ivar0 = structdump_8.intpart_0;
+	}
+	if ((globalint_246 > 0) && (globalint_246 < 15)) {
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar2;
+		stack_dump2 = ivar1;
+		stack_dump3 = 0;
+		stack_dump4 = "OR" + "<br>" + "...to the team that first achieves " + intToStr(cs2method_3408(105, 105, 1605, globalint_246)) + " kills.";
+		structdump_9 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar2 = structdump_9.intpart_1;
+		ivar0 = structdump_9.intpart_0;
+	}
+	if (globalint_247 > 0) {
+		if (globalint_246 > 0) {
+			stack_dump0 = ivar0;
+			stack_dump1 = ivar2;
+			stack_dump2 = ivar1;
+			stack_dump3 = 0;
+			stack_dump4 = "OR" + "<br>" + "...to the team that scores the most kills " + script_1751(cs2method_3408(105, 105, 1800, globalint_247)) + ".";
+			structdump_10 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+			ivar2 = structdump_10.intpart_1;
+			ivar0 = structdump_10.intpart_0;
+		} else {
+			stack_dump0 = ivar0;
+			stack_dump1 = ivar2;
+			stack_dump2 = ivar1;
+			stack_dump3 = 0;
+			stack_dump4 = "OR" + "<br>" + "...to the team with the most survivors " + script_1751(cs2method_3408(105, 105, 1800, globalint_247)) + ".";
+			structdump_11 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+			ivar2 = structdump_11.intpart_1;
+			ivar0 = structdump_11.intpart_0;
+		}
+	}
+	ivar0 = add(ivar0, 7);
+	if (((boolean)globalint_246)) {
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar2;
+		stack_dump2 = ivar1;
+		stack_dump3 = 0;
+		stack_dump4 = "<col=ff981f>" + "Knock-out mode:" + "</col>" + "<br>" + "Once war has begun, players may no longer join/rejoin the fight.";
+		structdump_12 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar2 = structdump_12.intpart_1;
+		ivar0 = structdump_12.intpart_0;
+	} else {
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar2;
+		stack_dump2 = ivar1;
+		stack_dump3 = 0;
+		stack_dump4 = "<col=ff981f>" + "Run-in mode:" + "</col>" + "<br>" + "Players may join/rejoin the fight at any time during the war.";
+		structdump_13 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar2 = structdump_13.intpart_1;
+		ivar0 = structdump_13.intpart_0;
+		if ((globalint_246 == 15) && ((boolean)globalint_247)) {
+			ivar0 = add(ivar0, 7);
+			stack_dump0 = ivar0;
+			stack_dump1 = ivar2;
+			stack_dump2 = ivar1;
+			stack_dump3 = 0;
+			stack_dump4 = "This war has no time limit or kill target, so it might go on for ages!";
+			structdump_14 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+			ivar2 = structdump_14.intpart_1;
+			ivar0 = structdump_14.intpart_0;
+		}
+	}
+	ivar0 = add(ivar0, 7);
+	stack_dump0 = ivar0;
+	stack_dump1 = ivar2;
+	stack_dump2 = ivar1;
+	stack_dump3 = 1;
+	stack_dump4 = "~ Item loss ~";
+	structdump_15 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+	ivar2 = structdump_15.intpart_1;
+	ivar0 = structdump_15.intpart_0;
+	if (((boolean)globalint_249)) {
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar2;
+		stack_dump2 = ivar1;
+		stack_dump3 = 0;
+		stack_dump4 = "On death, players keep their items.";
+		structdump_16 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar2 = structdump_16.intpart_1;
+		ivar0 = structdump_16.intpart_0;
+	} else {
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar2;
+		stack_dump2 = ivar1;
+		stack_dump3 = 0;
+		stack_dump4 = "<col=ff0000>" + "On death, players DROP their items." + "</col>" + "<br>" + "Players may not teleport.";
+		structdump_17 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar2 = structdump_17.intpart_1;
+		ivar0 = structdump_17.intpart_0;
+	}
+	ivar0 = add(ivar0, 7);
+	stack_dump0 = ivar0;
+	stack_dump1 = ivar2;
+	stack_dump2 = ivar1;
+	stack_dump3 = 1;
+	stack_dump4 = "~ Combat rules ~";
+	structdump_18 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+	ivar2 = structdump_18.intpart_1;
+	ivar0 = structdump_18.intpart_0;
+	if (((boolean)globalint_250)) {
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar2;
+		stack_dump2 = ivar1;
+		stack_dump3 = 0;
+		stack_dump4 = "Melee combat is allowed.";
+		structdump_19 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar2 = structdump_19.intpart_1;
+		ivar0 = structdump_19.intpart_0;
+	} else {
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar2;
+		stack_dump2 = ivar1;
+		stack_dump3 = 0;
+		stack_dump4 = "<col=ff0000>" + "Melee combat" + "</col>" + " is forbidden.";
+		structdump_20 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar2 = structdump_20.intpart_1;
+		ivar0 = structdump_20.intpart_0;
+	}
+	switch (globalint_252) {
+		case 0:
+			stack_dump0 = ivar0;
+			stack_dump1 = ivar2;
+			stack_dump2 = ivar1;
+			stack_dump3 = 0;
+			stack_dump4 = "Magical combat is allowed.";
+			structdump_21 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+			ivar2 = structdump_21.intpart_1;
+			ivar0 = structdump_21.intpart_0;
+			break;
+		case 1:
+			stack_dump0 = ivar0;
+			stack_dump1 = ivar2;
+			stack_dump2 = ivar1;
+			stack_dump3 = 0;
+			stack_dump4 = "Spells from the " + "<col=ff0000>" + "standard spellbook" + "</col>" + " are allowed.";
+			structdump_22 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+			ivar2 = structdump_22.intpart_1;
+			ivar0 = structdump_22.intpart_0;
+			break;
+		case 2:
+			if (isMember()) {
+				stack_dump0 = ivar0;
+				stack_dump1 = ivar2;
+				stack_dump2 = ivar1;
+				stack_dump3 = 0;
+				stack_dump4 = "The " + "<col=ff0000>" + "Bind" + "</col>" + ", " + "<col=ff0000>" + "Snare" + "</col>" + " and " + "<col=ff0000>" + "Entangle" + "</col>" + " spells are allowed.";
+				structdump_23 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+				ivar2 = structdump_23.intpart_1;
+				ivar0 = structdump_23.intpart_0;
+			} else {
+				stack_dump0 = ivar0;
+				stack_dump1 = ivar2;
+				stack_dump2 = ivar1;
+				stack_dump3 = 0;
+				stack_dump4 = "The " + "<col=ff0000>" + "Bind" + "</col>" + " spell is allowed.";
+				structdump_24 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+				ivar2 = structdump_24.intpart_1;
+				ivar0 = structdump_24.intpart_0;
+			}
+			break;
+		case 3:
+			stack_dump0 = ivar0;
+			stack_dump1 = ivar2;
+			stack_dump2 = ivar1;
+			stack_dump3 = 0;
+			stack_dump4 = "<col=ff0000>" + "Magical combat" + "</col>" + " is forbidden.";
+			structdump_25 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+			ivar2 = structdump_25.intpart_1;
+			ivar0 = structdump_25.intpart_0;
+	}
+	if (((boolean)globalint_251)) {
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar2;
+		stack_dump2 = ivar1;
+		stack_dump3 = 0;
+		stack_dump4 = "Ranged combat is allowed.";
+		structdump_26 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar2 = structdump_26.intpart_1;
+		ivar0 = structdump_26.intpart_0;
+	} else {
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar2;
+		stack_dump2 = ivar1;
+		stack_dump3 = 0;
+		stack_dump4 = "<col=ff0000>" + "Ranged combat" + "</col>" + " is forbidden.";
+		structdump_27 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar2 = structdump_27.intpart_1;
+		ivar0 = structdump_27.intpart_0;
+	}
+	if (((boolean)globalint_256)) {
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar2;
+		stack_dump2 = ivar1;
+		stack_dump3 = 0;
+		stack_dump4 = "Prayer is allowed.";
+		structdump_28 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar2 = structdump_28.intpart_1;
+		ivar0 = structdump_28.intpart_0;
+	} else {
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar2;
+		stack_dump2 = ivar1;
+		stack_dump3 = 0;
+		stack_dump4 = "<col=ff0000>" + "Prayer" + "</col>" + " is forbidden.";
+		structdump_29 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar2 = structdump_29.intpart_1;
+		ivar0 = structdump_29.intpart_0;
+	}
+	if (isMember()) {
+		if (((boolean)globalint_253)) {
+			stack_dump0 = ivar0;
+			stack_dump1 = ivar2;
+			stack_dump2 = ivar1;
+			stack_dump3 = 0;
+			stack_dump4 = "Summoning is allowed.";
+			structdump_30 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+			ivar2 = structdump_30.intpart_1;
+			ivar0 = structdump_30.intpart_0;
+		} else {
+			stack_dump0 = ivar0;
+			stack_dump1 = ivar2;
+			stack_dump2 = ivar1;
+			stack_dump3 = 0;
+			stack_dump4 = "<col=ff0000>" + "Summoning" + "</col>" + " is forbidden." + "<br>" + "Familiars will be dismissed.";
+			structdump_31 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+			ivar2 = structdump_31.intpart_1;
+			ivar0 = structdump_31.intpart_0;
+		}
+	}
+	if (((boolean)globalint_254)) {
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar2;
+		stack_dump2 = ivar1;
+		stack_dump3 = 0;
+		stack_dump4 = "Food is allowed.";
+		structdump_32 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar2 = structdump_32.intpart_1;
+		ivar0 = structdump_32.intpart_0;
+	} else {
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar2;
+		stack_dump2 = ivar1;
+		stack_dump3 = 0;
+		stack_dump4 = "<col=ff0000>" + "Food" + "</col>" + " is forbidden.";
+		structdump_33 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar2 = structdump_33.intpart_1;
+		ivar0 = structdump_33.intpart_0;
+	}
+	if (((boolean)globalint_255)) {
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar2;
+		stack_dump2 = ivar1;
+		stack_dump3 = 0;
+		stack_dump4 = "Potions are allowed.";
+		structdump_34 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar2 = structdump_34.intpart_1;
+		ivar0 = structdump_34.intpart_0;
+	} else {
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar2;
+		stack_dump2 = ivar1;
+		stack_dump3 = 0;
+		stack_dump4 = "<col=ff0000>" + "Potions" + "</col>" + " are forbidden." + "<br>" + "Boosted stats will be reset (excluding Prayer boosts).";
+		structdump_35 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar2 = structdump_35.intpart_1;
+		ivar0 = structdump_35.intpart_0;
+	}
+	ivar0 = add(ivar0, 7);
+	stack_dump0 = ivar0;
+	stack_dump1 = ivar2;
+	stack_dump2 = ivar1;
+	stack_dump3 = 1;
+	stack_dump4 = "~ Arena ~";
+	structdump_36 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+	ivar2 = structdump_36.intpart_1;
+	ivar0 = structdump_36.intpart_0;
+	stack_dump0 = ivar0;
+	stack_dump1 = ivar2;
+	stack_dump2 = ivar1;
+	stack_dump3 = 0;
+	stack_dump4 = getOtherCommonData(cs2method_3408(105, 74, 1604, globalint_257), 555);
+	structdump_37 = script_1785(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+	ivar2 = structdump_37.intpart_1;
+	ivar0 = structdump_37.intpart_0;
+	if (ivar0 > getWidgetActualHeight(new WidgetPointer(792,3))) {
+		setWidgetIsHidden(false, new WidgetPointer(792,4));
+		setWidgetPosition(7, 46, 0, 0, new WidgetPointer(792,3));
+		setWidgetScrollMax(0, ivar0, new WidgetPointer(792,3));
+		script_31(51904516, 51904515, 792, 789, 790, 791, 773, 788);
+		if (setWidgetRegister(new WidgetPointer(792,4), 1)) {
+			script_37(51904516, 51904515, cs2method2601(new WidgetPointer(792,3)), 1);
+		}
+	} else {
+		deleteAllExtraChilds(new WidgetPointer(792,4));
+		setWidgetIsHidden(true, new WidgetPointer(792,4));
+		setWidgetPosition(15, 46, 0, 0, new WidgetPointer(792,3));
+		setWidgetScrollMax(0, 0, new WidgetPointer(792,3));
+		cs2method2100(0, 0, new WidgetPointer(792,3));
+	}
+	return;
+}

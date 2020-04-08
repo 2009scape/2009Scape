@@ -1,0 +1,62 @@
+void script_5097() {
+	switch (bitconfig_9539) {
+		case 1:
+			setWidgetText(new WidgetPointer(1113,4), "Unable to load your clan data.");
+			setWidgetText(new WidgetPointer(1113,6), "Sorry!");
+			setWidgetSprite(7532, new WidgetPointer(1113,7));
+			setWidgetText(new WidgetPointer(1113,8), "Please try again later when the system is less busy.");
+			break;
+		case 2:
+			setWidgetText(new WidgetPointer(1113,4), "And the winner is:");
+			setWidgetText(new WidgetPointer(1113,6), "<col=ff7f7f>" + "Red Team!" + "</col>");
+			setWidgetSprite(7531, new WidgetPointer(1113,7));
+			if (((boolean)bitconfig_9540)) {
+				setWidgetText(new WidgetPointer(1113,8), "Congratulations, your team won!");
+			} else if (bitconfig_9540 == 2) {
+				setWidgetText(new WidgetPointer(1113,8), "Oh dear, better luck next time.");
+			} else {
+				setWidgetText(new WidgetPointer(1113,8), "Better luck next time to the Blue Team.");
+			}
+			break;
+		case 3:
+			setWidgetText(new WidgetPointer(1113,4), "And the winner is:");
+			setWidgetText(new WidgetPointer(1113,6), "<col=7f7fff>" + "Blue Team!" + "</col>");
+			setWidgetSprite(7530, new WidgetPointer(1113,7));
+			if (bitconfig_9540 == 2) {
+				setWidgetText(new WidgetPointer(1113,8), "Congratulations, your team won!");
+			} else if (((boolean)bitconfig_9540)) {
+				setWidgetText(new WidgetPointer(1113,8), "Oh dear, better luck next time.");
+			} else {
+				setWidgetText(new WidgetPointer(1113,8), "Better luck next time to the Red Team.");
+			}
+			break;
+		case 5:
+			setWidgetText(new WidgetPointer(1113,4), "And the result is:");
+			setWidgetText(new WidgetPointer(1113,6), "It's a draw!");
+			setWidgetSprite(7532, new WidgetPointer(1113,7));
+			setWidgetText(new WidgetPointer(1113,8), "Well done, everyone!");
+			break;
+		case 4:
+			setWidgetText(new WidgetPointer(1113,4), "And the winner is:");
+			if (strLength(globalstring_129) > 0) {
+				setWidgetText(new WidgetPointer(1113,6), globalstring_129);
+			} else {
+				setWidgetText(new WidgetPointer(1113,6), "... missing!");
+			}
+			setWidgetSprite(7532, new WidgetPointer(1113,7));
+			setWidgetText(new WidgetPointer(1113,8), "Better luck next time to everyone else.");
+			break;
+		case 6:
+			setWidgetText(new WidgetPointer(1113,4), "And the winner is:");
+			setWidgetText(new WidgetPointer(1113,6), "YOU!");
+			setWidgetSprite(7532, new WidgetPointer(1113,7));
+			setWidgetText(new WidgetPointer(1113,8), "Congratulations!");
+			break;
+		default:
+			setWidgetText(new WidgetPointer(1113,4), "");
+			setWidgetText(new WidgetPointer(1113,6), "");
+			setWidgetSprite(-1, new WidgetPointer(1113,7));
+			setWidgetText(new WidgetPointer(1113,8), "");
+	}
+	return;
+}

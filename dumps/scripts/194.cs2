@@ -1,0 +1,10 @@
+void script_194(int arg0) {
+	if (((boolean)arg0)) {
+		if (cs2method3612() > 0) {
+			sendUnknownVarByteEmptyFriendPacketMethod3620();
+		} else {
+			script_111();
+		}
+	}
+	return;
+}

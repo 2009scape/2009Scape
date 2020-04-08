@@ -1,0 +1,8 @@
+void script_2611(int arg0,int arg1) {
+	if (((boolean)arg1)) {
+		cs2method6201(256, 320);
+		cameraMethod5504(383, 0);
+	}
+	script_2612(addToCoordinate(getMyPositionHash(), -16, 0, -16), arg0);
+	return;
+}

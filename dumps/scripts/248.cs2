@@ -1,0 +1,8 @@
+void script_248(int arg0) {
+	if (strLength(globalstring_24) > 0) {
+		cs2method5002(arg0, globalint_6, globalstring_24, "");
+	}
+	script_675();
+	globalint_11 = 0;
+	return;
+}

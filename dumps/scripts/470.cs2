@@ -1,0 +1,8 @@
+void script_470(int arg0,int arg1) {
+	if (bitconfig_2086 < arg1) {
+		setWidgetText(new WidgetPointer(arg0), "<col=c80000>" + intToStr(arg1) + " Commendations required." + "</col>");
+	} else {
+		setWidgetText(new WidgetPointer(arg0), intToStr(arg1) + " Commendations.");
+	}
+	return;
+}

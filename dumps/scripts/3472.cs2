@@ -1,0 +1,151 @@
+void script_3472(int arg0,int arg1) {
+	switch (globalint_1007) {
+		case 51:
+			deleteAllExtraChilds(new WidgetPointer(arg0));
+			script_2766(0, 100, arg0);
+			break;
+		case 52:
+			if (((globalint_1065 == -1) || (subtract(extractX(getMyPositionHash()), extractX(globalint_1065)) > 128)) || (subtract(extractY(getMyPositionHash()), extractY(globalint_1065)) > 128)) {
+				globalint_1065 = script_284(getMyPositionHash());
+			}
+			script_2768(75, arg0);
+			cs2method5405(0, 2);
+			cs2method5405(1, 2);
+			cs2method5406(0, 0, script_3474(0, 30, 26), 500, script_3474(0, 29, 26), 500, 0);
+			cs2method5406(1, 0, script_3474(0, 33, 26), 250, script_3474(0, 33, 26), 250, 0);
+			cs2method5406(0, 1, script_3474(0, 20, 30), 600, script_3474(0, 20, 30), 500, 0);
+			cs2method5406(1, 1, script_3474(0, 23, 26), 250, script_3474(0, 23, 26), 250, 0);
+			cameraMethod5502(0, 0, 150, 150, 1, 0);
+			break;
+		case 53:
+			cs2method5405(0, 3);
+			cs2method5405(1, 3);
+			cs2method5406(0, 0, script_3474(0, 7, 26), 425, script_3474(0, 6, 26), 425, 0);
+			cs2method5406(1, 0, script_3474(0, 13, 25), 275, script_3474(0, 13, 25), 275, 0);
+			cs2method5406(0, 1, script_3474(0, 5, 28), 425, script_3474(0, 6, 26), 425, 0);
+			cs2method5406(1, 1, script_3474(0, 11, 27), 275, script_3474(0, 11, 27), 275, 0);
+			cs2method5406(0, 2, script_3474(0, 3, 26), 425, script_3474(0, 3, 27), 425, 0);
+			cs2method5406(1, 2, script_3474(0, 11, 26), 275, script_3474(0, 11, 26), 275, 0);
+			setScriptCallOnMinimapRelatedSetting3(3473, new WidgetPointer(arg0), 1, 50, 0, 0, 0, "Iiiiii", new WidgetPointer(arg0));
+			cameraMethod5502(0, 0, 150, 50, 1, 0);
+			break;
+		case 54:
+			setScriptCallOnMinimapRelatedSetting3(-1, "", new WidgetPointer(arg0));
+			script_2766(0, 25, arg0);
+			break;
+		case 55:
+			script_2768(25, arg0);
+			cs2method5405(0, 4);
+			cs2method5405(1, 4);
+			cs2method5406(0, 0, script_3474(0, 79, 16), 800, script_3474(0, 79, 16), 800, 0);
+			cs2method5406(1, 0, script_3474(0, 73, 18), 325, script_3474(0, 73, 18), 325, 0);
+			cs2method5406(0, 1, script_3474(0, 81, 17), 900, script_3474(0, 81, 17), 900, 0);
+			cs2method5406(1, 1, script_3474(0, 73, 17), 275, script_3474(0, 73, 17), 275, 0);
+			cs2method5406(0, 2, script_3474(0, 82, 19), 1000, script_3474(0, 82, 19), 1000, 0);
+			cs2method5406(1, 2, script_3474(0, 73, 16), 225, script_3474(0, 73, 16), 225, 0);
+			cs2method5406(0, 3, script_3474(0, 82, 16), 1100, script_3474(0, 82, 16), 1100, 0);
+			cs2method5406(1, 3, script_3474(0, 73, 17), 175, script_3474(0, 73, 17), 175, 0);
+			setScriptCallOnMinimapRelatedSetting3(3473, new WidgetPointer(arg0), 1, 175, 125, 125, 0, "Iiiiii", new WidgetPointer(arg0));
+			cameraMethod5502(0, 0, 150, 175, 1, 0);
+			break;
+		case 56:
+			script_2768(25, arg0);
+			cs2method5405(0, 2);
+			cs2method5405(1, 2);
+			cs2method5406(0, 0, script_3474(0, 3, 28), 425, script_3474(0, 3, 27), 425, 0);
+			cs2method5406(1, 0, script_3474(0, 11, 26), 275, script_3474(0, 11, 26), 275, 0);
+			cs2method5406(0, 1, script_3474(0, 0, 25), 425, script_3474(0, 0, 26), 425, 0);
+			cs2method5406(1, 1, script_3474(0, 11, 26), 275, script_3474(0, 11, 26), 275, 0);
+			cameraMethod5502(0, 0, 75, 0, 1, 0);
+			break;
+		case 57:
+			script_2768(25, arg0);
+			cs2method5405(0, 2);
+			cs2method5405(1, 2);
+			cs2method5406(0, 0, script_3474(0, 123, 15), 800, script_3474(0, 123, 15), 800, 0);
+			cs2method5406(1, 0, script_3474(0, 114, 11), 175, script_3474(0, 114, 11), 175, 0);
+			cs2method5406(0, 1, script_3474(0, 120, 10), 600, script_3474(0, 120, 10), 600, 0);
+			cs2method5406(1, 1, script_3474(0, 114, 12), 275, script_3474(0, 114, 12), 275, 0);
+			cameraMethod5502(0, 0, 100, 0, 1, 0);
+			break;
+		case 58:
+			script_2768(25, arg0);
+			cs2method5405(0, 2);
+			cs2method5405(1, 2);
+			cs2method5406(0, 0, script_3474(0, 7, 26), 400, script_3474(0, 7, 26), 400, 0);
+			cs2method5406(1, 0, script_3474(0, 11, 27), 275, script_3474(0, 11, 27), 275, 0);
+			cs2method5406(0, 1, script_3474(0, 8, 29), 400, script_3474(0, 8, 29), 400, 0);
+			cs2method5406(1, 1, script_3474(0, 11, 28), 275, script_3474(0, 11, 28), 275, 0);
+			cameraMethod5502(0, 0, 50, 0, 1, 0);
+			break;
+		case 59:
+			setScriptCallOnMinimapRelatedSetting3(-1, "", new WidgetPointer(arg0));
+			script_2766(0, 75, arg0);
+			break;
+		case 60:
+			script_2768(75, arg0);
+			cs2method5405(0, 2);
+			cs2method5405(1, 2);
+			cs2method5406(0, 0, script_3474(0, 43, 28), 700, script_3474(0, 42, 28), 700, 0);
+			cs2method5406(1, 0, script_3474(0, 31, 24), 200, script_3474(0, 31, 24), 200, 0);
+			cs2method5406(0, 1, script_3474(0, 36, 25), 425, script_3474(0, 36, 25), 425, 0);
+			cs2method5406(1, 1, script_3474(0, 32, 27), 275, script_3474(0, 32, 27), 275, 0);
+			cameraMethod5502(0, 0, 125, 0, 1, 0);
+			break;
+		case 61:
+			script_2768(50, arg0);
+			cs2method5405(0, 3);
+			cs2method5405(1, 3);
+			cs2method5406(0, 0, script_3474(0, 40, 90), 1200, script_3474(0, 35, 90), 1200, -2000);
+			cs2method5406(1, 0, script_3474(0, 24, 110), 425, script_3474(0, 24, 110), 425, 0);
+			cs2method5406(0, 1, script_3474(0, 15, 97), 700, script_3474(0, 14, 97), 700, 500);
+			cs2method5406(1, 1, script_3474(0, 29, 110), 400, script_3474(0, 29, 110), 400, 0);
+			cs2method5406(0, 2, script_3474(0, 22, 102), 650, script_3474(0, 22, 102), 650, 0);
+			cs2method5406(1, 2, script_3474(0, 30, 111), 400, script_3474(0, 30, 111), 400, 0);
+			setScriptCallOnMinimapRelatedSetting3(3473, new WidgetPointer(arg0), 1, 400, 100, 100, 0, "Iiiiii", new WidgetPointer(arg0));
+			cameraMethod5502(0, 0, 400, 400, 1, 0);
+			break;
+		case 62:
+			setScriptCallOnMinimapRelatedSetting3(-1, "", new WidgetPointer(arg0));
+			cs2method5405(0, 2);
+			cs2method5405(1, 2);
+			cs2method5406(0, 0, script_3474(0, 34, 120), 750, script_3474(0, 29, 120), 750, 0);
+			cs2method5406(1, 0, script_3474(0, 30, 112), 425, script_3474(0, 30, 112), 425, 0);
+			cs2method5406(0, 1, script_3474(0, 33, 117), 750, script_3474(0, 33, 117), 750, 0);
+			cs2method5406(1, 1, script_3474(0, 30, 111), 425, script_3474(0, 30, 111), 425, 0);
+			cameraMethod5502(0, 0, 50, 100, 1, 0);
+			break;
+		case 63:
+			script_2768(50, arg0);
+			script_2784(1, arg1, 64880645, 64880646, 64880647, 64880648, -1, 1);
+			setWidgetIsHidden(false, new WidgetPointer(arg1));
+			cs2method5405(0, 3);
+			cs2method5405(1, 3);
+			cs2method5406(0, 0, script_3474(1, 64, 98), 500, script_3474(1, 66, 96), 500, 0);
+			cs2method5406(1, 0, script_3474(1, 90, 98), 500, script_3474(1, 90, 98), 500, 0);
+			cs2method5406(0, 1, script_3474(1, 90, 80), 1000, script_3474(1, 88, 80), 950, 0);
+			cs2method5406(1, 1, script_3474(1, 91, 98), 500, script_3474(1, 91, 98), 500, 0);
+			cs2method5406(0, 2, script_3474(1, 91, 87), 1000, script_3474(1, 91, 87), 1000, 0);
+			cs2method5406(1, 2, script_3474(1, 90, 98), 500, script_3474(1, 90, 98), 500, 0);
+			setScriptCallOnMinimapRelatedSetting3(3473, new WidgetPointer(arg0), 1, 200, 0, 0, 0, "Iiiiii", new WidgetPointer(arg0));
+			cameraMethod5502(0, 0, 700, 700, 1, 0);
+			break;
+		case 64:
+			setScriptCallOnMinimapRelatedSetting3(-1, "", new WidgetPointer(arg0));
+			cs2method5405(0, 2);
+			cs2method5405(1, 2);
+			cs2method5406(0, 0, script_3474(1, 91, 91), 800, script_3474(1, 91, 91), 800, 0);
+			cs2method5406(1, 0, script_3474(1, 91, 98), 450, script_3474(1, 91, 98), 450, 0);
+			cs2method5406(0, 1, script_3474(1, 91, 94), 750, script_3474(1, 91, 94), 750, 0);
+			cs2method5406(1, 1, script_3474(1, 91, 98), 425, script_3474(1, 91, 98), 425, 0);
+			cameraMethod5502(0, 0, 75, 0, 1, 0);
+			break;
+		case 65:
+			setWidgetIsHidden(true, new WidgetPointer(arg1));
+			script_2768(75, arg0);
+			break;
+		default:
+			cs2method5512();
+	}
+	return;
+}

@@ -1,0 +1,15 @@
+void script_1420() {
+	int ivar0;
+	ivar0 = script_121(subtract(bitconfig_3756, 1));
+	if (ivar0 != -1) {
+		if (mod(getClientCycle(), 40) > 20) {
+			setWidgetIsHidden(false, new WidgetPointer(ivar0));
+			if (mod(getClientCycle(), 40) == 21) {
+				playSoundEffect(5009, 1, 0);
+			}
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(ivar0));
+		}
+	}
+	return;
+}

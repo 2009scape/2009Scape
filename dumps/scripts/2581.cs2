@@ -1,0 +1,50 @@
+int script_2581(int arg0) {
+	switch (arg0) {
+		case 830:
+			if (cs2method6102() || (cs2method6131() != 0)) {
+				return script_42(((int)cs2method6103()));
+			}
+			return -1;
+		case 831:
+			return script_42(((int)cs2method6105()));
+		case 833:
+			return cs2method6129();
+		case 834:
+			return script_42(((int)cs2method6108()));
+		case 836:
+			return script_42(((int)cs2method6110()));
+		case 837:
+			return cs2method6111();
+		case 838:
+			return script_42(((int)cs2method6112()));
+		case 839:
+			return script_42(((int)cs2method6114()));
+		case 840:
+			return script_42(((int)cs2method6115()));
+		case 841:
+			return cs2method6116();
+		case 842:
+			return cs2method6123();
+		case 843:
+			return script_42(((int)cs2method6130()));
+		case 844:
+			if (cs2method6133()) {
+				return script_42(globalint_987);
+			}
+			return -1;
+		case 845:
+			return globalint_178;
+		case 908:
+			return cs2method6135();
+		case 963:
+			return script_42(((int)cs2method6136()));
+		case 1009:
+			return cs2method6139();
+		case 2430:
+			if (cs2method7215()) {
+				return cs2method6149();
+			}
+			return -1;
+	}
+	return -1;
+}

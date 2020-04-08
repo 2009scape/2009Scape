@@ -1,0 +1,5 @@
+void script_2304() {
+	setScriptCallOnGeneralDataChange(2305, "", new WidgetPointer(750,1));
+	script_2306();
+	return;
+}

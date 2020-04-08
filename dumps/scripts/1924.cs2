@@ -1,0 +1,13 @@
+void script_1924() {
+	setWidgetText(new WidgetPointer(811,127), concat(intToStr(20), "<br>" + "points."));
+	setWidgetText(new WidgetPointer(811,65), concat(intToStr(20), "<br>" + "points."));
+	setWidgetText(new WidgetPointer(811,49), concat(intToStr(30), "<br>" + "points."));
+	setWidgetText(new WidgetPointer(811,106), concat(intToStr(28), "<br>" + "points."));
+	setWidgetText(new WidgetPointer(811,92), concat(intToStr(24), "<br>" + "points."));
+	setWidgetText(new WidgetPointer(811,78), concat(intToStr(26), "<br>" + "points."));
+	setItemOnWidgetMethod2200(14385, 1, new WidgetPointer(811,74));
+	setWidget3DRotation(0, 0, 1274, 876, 625, 1715, new WidgetPointer(811,74));
+	script_1929();
+	globalint_544 = 0;
+	return;
+}

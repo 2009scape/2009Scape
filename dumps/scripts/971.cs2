@@ -1,0 +1,6 @@
+void script_971() {
+	if (bitconfig_4757 > 0) {
+		setWidgetSprite(cs2method_3408(105, 100, 1478, bitconfig_4757), new WidgetPointer(740,4));
+	}
+	return;
+}

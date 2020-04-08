@@ -1,0 +1,37 @@
+void script_4222() {
+	if ((globalint_1468 > 100) && (globalint_1468 <= 355)) {
+		cs2method2103(subtract(255, subtract(globalint_1468, 100)), new WidgetPointer(1075,0));
+	}
+	if ((globalint_1468 > 100) && (globalint_1468 <= 150)) {
+		setWidgetPosition(add(-35, subtract(globalint_1468, 100)), 122, 0, 0, new WidgetPointer(1075,4));
+	}
+	if ((globalint_1468 > 200) && (globalint_1468 <= 455)) {
+		setWidgetPosition(add(-255, subtract(globalint_1468, 200)), 70, 0, 0, new WidgetPointer(1075,1));
+	}
+	if ((globalint_1468 > 250) && (globalint_1468 <= 505)) {
+		setWidgetPosition(add(-255, subtract(globalint_1468, 250)), 85, 0, 0, new WidgetPointer(1075,2));
+	}
+	if ((globalint_1468 > 300) && (globalint_1468 <= 555)) {
+		setWidgetPosition(add(-255, subtract(globalint_1468, 300)), 100, 0, 0, new WidgetPointer(1075,3));
+	}
+	if ((globalint_1468 > 500) && (globalint_1468 <= 755)) {
+		setWidgetPosition(subtract(0, subtract(globalint_1468, 500)), 70, 0, 0, new WidgetPointer(1075,1));
+	}
+	if ((globalint_1468 > 550) && (globalint_1468 <= 805)) {
+		setWidgetPosition(subtract(0, subtract(globalint_1468, 550)), 85, 0, 0, new WidgetPointer(1075,2));
+	}
+	if ((globalint_1468 > 600) && (globalint_1468 <= 855)) {
+		setWidgetPosition(subtract(0, subtract(globalint_1468, 600)), 100, 0, 0, new WidgetPointer(1075,3));
+	}
+	if (globalint_1468 == 700) {
+		setWidget3DRotation(0, 0, 0, 210, 0, 1750, new WidgetPointer(1075,4));
+	}
+	if ((globalint_1468 > 700) && (globalint_1468 <= 955)) {
+		cs2method2103(subtract(globalint_1468, 700), new WidgetPointer(1075,0));
+	}
+	if ((globalint_1468 > 700) && (globalint_1468 <= 750)) {
+		setWidgetPosition(subtract(0, subtract(globalint_1468, 700)), 122, 0, 0, new WidgetPointer(1075,4));
+	}
+	globalint_1468 = add(globalint_1468, 1);
+	return;
+}

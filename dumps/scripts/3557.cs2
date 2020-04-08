@@ -1,0 +1,4 @@
+void script_3557(int arg0,int arg1,int arg2) {
+	script_3626(3204, 3205, 3206, script_3593(bitconfig_7392), arg0, arg1, arg2);
+	return;
+}

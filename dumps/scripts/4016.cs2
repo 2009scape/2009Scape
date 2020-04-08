@@ -1,0 +1,7 @@
+void script_4016() {
+	script_4017(bitconfig_8582);
+	script_4028(0, bitconfig_8579);
+	script_4028(1, bitconfig_8580);
+	script_4253();
+	return;
+}

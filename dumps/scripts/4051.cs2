@@ -1,0 +1,13 @@
+void script_4051(int arg0,int arg1) {
+	setWidgetIsHidden(false, new WidgetPointer(arg0));
+	cs2method2103(0, new WidgetPointer(arg0));
+	if (((boolean)arg1)) {
+		setWidgetSprite(489, new WidgetPointer(arg0));
+		setWidgetPosition(0, 22, 2, 0, new WidgetPointer(arg0));
+	} else {
+		setWidgetSprite(534, new WidgetPointer(arg0));
+		setWidgetPosition(0, subtract(1, getWidgetActualHeight(new WidgetPointer(arg0))), 2, 0, new WidgetPointer(arg0));
+	}
+	setScriptCallOnGameloop(4052, new WidgetPointer(arg0), arg1, "Ii", new WidgetPointer(arg0));
+	return;
+}

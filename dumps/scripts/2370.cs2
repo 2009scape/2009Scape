@@ -1,0 +1,18 @@
+void script_2370() {
+	int ivar0;
+	ivar0 = cs2method2600(new WidgetPointer(905,13));
+	if (ivar0 <= 0) {
+		cs2method2103(150, new WidgetPointer(905,11));
+		setWidgetSprite(3877, new WidgetPointer(905,11));
+	} else {
+		cs2method2103(0, new WidgetPointer(905,11));
+	}
+	if (ivar0 >= subtract(getWidgetScrollMaxH(new WidgetPointer(905,13)), getWidgetActualWidth(new WidgetPointer(905,13)))) {
+		cs2method2103(150, new WidgetPointer(905,12));
+		setWidgetSprite(3879, new WidgetPointer(905,12));
+	} else {
+		cs2method2103(0, new WidgetPointer(905,12));
+	}
+	globalint_93 = ivar0;
+	return;
+}

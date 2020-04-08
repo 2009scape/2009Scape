@@ -1,0 +1,58 @@
+void script_2573() {
+	int ivar0;
+	ivar0 = -1;
+	switch (globalint_929) {
+		case 0:
+			ivar0 = getItemIdInSlot(93, globalint_930);
+			break;
+		case 1:
+			ivar0 = getItemIdInSlot(93, globalint_931);
+			break;
+		case 2:
+			ivar0 = getItemIdInSlot(93, globalint_932);
+			break;
+		case 3:
+			ivar0 = getItemIdInSlot(93, globalint_933);
+			break;
+		case 4:
+			ivar0 = getItemIdInSlot(93, globalint_934);
+			break;
+		case 5:
+			ivar0 = getItemIdInSlot(93, globalint_935);
+			break;
+		case 6:
+			ivar0 = getItemIdInSlot(93, globalint_936);
+			break;
+		case 7:
+			ivar0 = getItemIdInSlot(93, globalint_937);
+			break;
+		case 8:
+			ivar0 = getItemIdInSlot(93, globalint_938);
+			break;
+		case 9:
+			ivar0 = getItemIdInSlot(93, globalint_939);
+	}
+	if ((ivar0 == -1) || ((getItemHashmapData(ivar0, 802) != 1) && (getItemHashmapData(ivar0, 803) != 1))) {
+		return;
+	}
+	script_2575();
+	setWidgetText(new WidgetPointer(292,99), getItemName(ivar0));
+	setItemOnWidgetMethod2200(ivar0, -1, new WidgetPointer(292,112));
+	if (((boolean)getItemHashmapData(ivar0, 802))) {
+		script_2578();
+		script_2584();
+		script_2585();
+		script_2588();
+		script_2591();
+	} else {
+		if (((boolean)getItemHashmapData(ivar0, 803))) {
+			script_2590();
+			script_2587();
+			script_2579();
+			script_2580();
+			script_2583();
+			script_2597();
+		}
+	}
+	return;
+}

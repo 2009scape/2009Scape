@@ -1,0 +1,9 @@
+int script_1504(int arg0,int arg1,int arg2,int arg3,string arg4) {
+	int ivar4;
+	ivar4 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg2), arg3) || ((arg3 == -1) && setWidgetRegister(new WidgetPointer(arg2)))) {
+		ivar4 = divide(subtract(getWidgetActualWidth(), getTextWidth(arg1, script_1602(arg4))), 2);
+		return script_1401(arg0, arg1, ivar4, arg4);
+	}
+	return strLength(arg4);
+}

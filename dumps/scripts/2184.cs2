@@ -1,0 +1,89 @@
+void script_2184(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar3 = divide(subtract(getWidgetActualWidth(new WidgetPointer(arg0)), multiply(5, 36)), 6);
+	ivar4 = 0;
+	ivar5 = -1;
+	ivar6 = 0;
+	ivar7 = 0;
+	ivar8 = 0;
+	if (getContainerFreeSlots(90) < getItemContainerLength(90)) {
+		while (ivar4 < getItemContainerLength(90)) {
+			ivar6 = getItemAmtInSlot(90, ivar4);
+			createExtraChild(new WidgetPointer(arg0), 5, multiply(ivar4, 2));
+			createExtraChild(new WidgetPointer(arg0), 4, add(multiply(ivar4, 2), 1));
+			if (ivar6 > 0) {
+				ivar5 = getItemIdInSlot(90, ivar4);
+				setWidgetSize(36, 32, 0, 0);
+				ivar8 = add(multiply(divide(ivar4, 5), add(32, 40)), 2);
+				setWidgetPosition(add(multiply(mod(ivar4, 5), add(36, ivar3)), ivar3), ivar8, 0, 0);
+				setWidgetHidden(0);
+				setItemOnWidgetMethod1200(ivar5, ivar6);
+				setWidgetShadowColor(new Color(51, 51, 51));
+				setWidgetBorderThickness(1);
+				setWidgetContextMenuOption(1, "Remove-1");
+				setWidgetContextMenuOption(2, "Remove-5");
+				setWidgetContextMenuOption(3, "Remove-10");
+				setWidgetContextMenuOption(4, "Remove-All");
+				setWidgetContextMenuOption(5, "Remove-X");
+				setWidgetContextMenuOption(10, "Examine");
+				cs2method1305("<col=ff9040>" + getItemName(ivar5));
+				setWidgetSize(subtract(add(36, ivar3), 6), 40, 0, 0);
+				setWidgetPosition(add(add(multiply(mod(ivar4, 5), add(36, ivar3)), divide(ivar3, 2)), 3), add(ivar8, 32), 0, 0);
+				setWidgetHidden(0);
+				setWidgetTextAlignment(1, 0, 0);
+				setWidgetFont(494);
+				setWidgetRGB(new Color(255, 255, 255));
+				setWidgetUnknownBoolean(true);
+				ivar7 = script_2185(ivar4);
+				if (ivar6 > 1) {
+					setWidgetText(formatNumber(ivar6, 1) + " x " + formatNumber(ivar7, 1) + "<br>" + "= " + formatNumber(multiply(ivar6, ivar7), 1));
+				} else {
+					setWidgetText(formatNumber(ivar7, 1));
+				}
+			} else {
+				setWidgetSize(0, 0, 0, 0);
+				setWidgetPosition(0, 0, 0, 0);
+				setWidgetHidden(1);
+				setWidgetSize(0, 0, 0, 0);
+				setWidgetPosition(0, 0, 0, 0);
+				setWidgetHidden(1);
+			}
+			ivar4 = add(ivar4, 1);
+		}
+	} else {
+		createExtraChild(new WidgetPointer(arg0), 4, 0);
+		setWidgetSize(0, getWidgetActualHeight(new WidgetPointer(arg0)), 1, 0);
+		setWidgetPosition(0, 0, 1, 0);
+		setWidgetRGB(new Color(255, 255, 255));
+		setWidgetUnknownBoolean(true);
+		setWidgetTextAlignment(1, 1, 0);
+		setWidgetFont(495);
+		setWidgetText("Click on items in your inventory to check their values.");
+	}
+	ivar8 = add(add(ivar8, 32), 40);
+	if (ivar8 > getWidgetActualHeight(new WidgetPointer(arg0))) {
+		setWidgetScrollMax(0, ivar8, new WidgetPointer(arg0));
+		setWidgetPosition(-8, getWidgetActualY(new WidgetPointer(arg0)), 1, 0, new WidgetPointer(arg0));
+		script_31(arg1, arg0, 792, 789, 790, 791, 773, 788);
+		if (setWidgetRegister(new WidgetPointer(arg1), 1)) {
+			script_37(arg1, arg0, cs2method2601(new WidgetPointer(arg0)), 1);
+		}
+	} else {
+		setWidgetScrollMax(0, 0, new WidgetPointer(arg0));
+		cs2method2100(0, 0, new WidgetPointer(arg0));
+		deleteAllExtraChilds(new WidgetPointer(arg1));
+		setWidgetPosition(0, getWidgetActualY(new WidgetPointer(arg0)), 1, 0, new WidgetPointer(arg0));
+	}
+	if (globalint_728 < 0) {
+		setWidgetText(new WidgetPointer(arg2), "Total value:" + "<br>" + "---");
+	} else {
+		setWidgetText(new WidgetPointer(arg2), "Total value:" + "<br>" + formatNumber(globalint_728, 1));
+	}
+	return;
+}

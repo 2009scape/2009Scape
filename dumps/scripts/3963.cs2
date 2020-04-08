@@ -1,0 +1,16 @@
+void script_3963(int arg0,int arg1,int arg2,int arg3) {
+	string svar0;
+	svar0 = strRemoveEntities(getWidgetText(new WidgetPointer(arg1)));
+	if (arg0 != -1) {
+		if (((boolean)arg3)) {
+			setWidgetText(new WidgetPointer(arg1), "<u=fafafa>" + svar0 + "</u>");
+			setWidgetRGB(new Color(250, 250, 250), new WidgetPointer(arg1));
+			setWidgetSize(getTextWidth(arg2, svar0), getWidgetActualHeight(new WidgetPointer(arg0)), 0, 0, new WidgetPointer(arg0));
+		} else {
+			setWidgetText(new WidgetPointer(arg1), "<u=c8c8c8>" + svar0 + "</u>");
+			setWidgetRGB(new Color(200, 200, 200), new WidgetPointer(arg1));
+			setWidgetSize(getTextWidth(arg2, svar0), getWidgetActualHeight(new WidgetPointer(arg0)), 0, 0, new WidgetPointer(arg0));
+		}
+	}
+	return;
+}

@@ -1,0 +1,126 @@
+cs2func_script_3117_struct(6,3,0) script_3117(int arg0,int arg1,int arg2,int arg3,int arg4,string arg5,string arg6) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	string svar2;
+	string svar3;
+	string svar4;
+	ivar5 = -1;
+	ivar6 = -1;
+	ivar7 = 0;
+	ivar8 = 0;
+	svar2 = "";
+	ivar9 = -1;
+	ivar10 = -1;
+	ivar11 = 0;
+	ivar12 = 0;
+	ivar13 = 0;
+	ivar14 = 0;
+	ivar15 = 0;
+	svar3 = "";
+	svar4 = "";
+	if (isBitFlagged(arg1, 0)) {
+		ivar11 = 1;
+	} else {
+		ivar11 = 0;
+	}
+	if (isBitFlagged(arg1, 1)) {
+		ivar12 = 1;
+	} else {
+		ivar12 = 0;
+	}
+	if (isBitFlagged(arg1, 2)) {
+		ivar13 = 1;
+	} else {
+		ivar13 = 0;
+	}
+	if (isBitFlagged(arg1, 3)) {
+		ivar14 = 1;
+	} else {
+		ivar14 = 0;
+	}
+	if (isBitFlagged(arg1, 4)) {
+		ivar15 = 1;
+	} else {
+		ivar15 = 0;
+	}
+	if (((boolean)getLanguage())) {
+		if (((boolean)ivar15)) {
+			ivar9 = cs2method_3408(105, 100, 730, 1);
+			svar2 = arg5;
+		} else if (strLength(arg5) > 1) {
+			ivar9 = cs2method_3408(105, 100, 730, 1);
+			svar2 = arg5;
+		} else {
+			ivar9 = cs2method_3408(105, 100, 1810, arg4);
+			svar2 = arg6;
+		}
+	} else {
+		if (((boolean)getLanguage())) {
+			ivar9 = 1517;
+		} else if (getLanguage() == 2) {
+			ivar9 = cs2method_3408(105, 100, 1810, 74);
+		} else {
+			if (getLanguage() == 3) {
+				ivar9 = cs2method_3408(105, 100, 1810, 31);
+			}
+		}
+		if (((boolean)ivar15)) {
+			svar2 = arg5;
+		} else if (strLength(arg5) > 1) {
+			svar2 = arg5;
+		} else if (((boolean)getLanguage())) {
+			svar2 = "German";
+		} else if (getLanguage() == 2) {
+			svar2 = "French";
+		} else {
+			if (getLanguage() == 3) {
+				svar2 = "Portuguese";
+			}
+		}
+	}
+	if (((boolean)ivar11)) {
+		ivar5 = 1532;
+		ivar8 = 16579836;
+		svar3 = "Free";
+	} else {
+		ivar5 = 1531;
+		ivar8 = 16579684;
+		svar3 = "Members";
+	}
+	if (((boolean)ivar14)) {
+		ivar10 = 699;
+	} else {
+		ivar10 = 698;
+	}
+	if (arg0 == globalint_998) {
+		ivar7 = 2109969;
+		ivar6 = 1541;
+	} else if (arg0 == globalint_999) {
+		ivar7 = 2112529;
+		ivar6 = 1541;
+	} else {
+		if (((boolean)mod(arg2, 2))) {
+			ivar7 = 2103569;
+		} else {
+			ivar7 = 2695190;
+		}
+		ivar6 = 1545;
+	}
+	if (arg3 >= 1980) {
+		svar4 = "FULL";
+	} else if (arg3 >= 0) {
+		svar4 = intToStr(arg3);
+	} else {
+		svar4 = "OFFLINE";
+	}
+	return newstruct cs2func_script_3117_struct(ivar9, ivar5, ivar8, ivar10, ivar7, ivar6, svar2, svar3, svar4);
+}

@@ -1,0 +1,12 @@
+void script_4599(int arg0,int arg1,int arg2,string arg3) {
+	if (arg1 > 1) {
+		setItemOnWidgetMethod2212(arg0, arg1, new WidgetPointer(arg2));
+	} else {
+		setItemOnWidgetMethod2205(arg0, 1, new WidgetPointer(arg2));
+	}
+	setScriptCallOnClickContextMenu(1620, new WidgetPointer(-32768,3), -2147483643, 100, 0, 8, "Iiiii", new WidgetPointer(arg2));
+	setWidgetContextMenuOption(10, new WidgetPointer(arg2), "Examine");
+	cs2method2305(new WidgetPointer(arg2), "<col=ff9040>" + getItemName(arg0) + "</col>");
+	setScriptCallOnClickContextMenu(4600, -2147483644, arg3, "is", new WidgetPointer(arg2));
+	return;
+}

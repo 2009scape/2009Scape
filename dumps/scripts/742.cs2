@@ -1,0 +1,38 @@
+void script_742() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar0 = standart_config_1164;
+	ivar1 = 0;
+	if (((boolean)ivar0)) {
+		return;
+	}
+	if (ivar0 == 10) {
+		globalint_105 = subtract(globalint_105, 1);
+		if (bitconfig_4228 != globalint_105) {
+			if (bitconfig_4228 > globalint_105) {
+				ivar1 = 1;
+				messageType0("Part of the mechanism jams due to your frenzied manipulation.");
+			}
+			globalint_105 = bitconfig_4228;
+		}
+		if (((boolean)globalint_105)) {
+			messageType0("The mechanism issues forth a whine and shuts down.");
+			script_675();
+		}
+		script_738();
+		return;
+	}
+	ivar0 = subtract(ivar0, 1);
+	if (isBitFlagged(globalint_106, ivar0)) {
+		return;
+	}
+	globalint_106 = flagBit(globalint_106, ivar0);
+	globalint_105 = add(globalint_105, 5);
+	script_738();
+	ivar2 = cs2method_3408(105, 109, 1155, ivar0);
+	ivar3 = ((int)cs2method_3408(105, 73, 1154, ivar0));
+	setWidgetModel(ivar2, new WidgetPointer(ivar3));
+	return;
+}

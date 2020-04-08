@@ -1,0 +1,8 @@
+void script_3285(int arg0) {
+	setWidgetScrollMax(0, arg0, new WidgetPointer(947,36));
+	setWidgetScrollMax(0, arg0, new WidgetPointer(947,38));
+	if (getWidgetScrollMaxV(new WidgetPointer(947,36)) < getWidgetActualHeight(new WidgetPointer(947,36))) {
+		setWidgetIsHidden(true, new WidgetPointer(947,47));
+	}
+	return;
+}

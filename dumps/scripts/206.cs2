@@ -1,0 +1,110 @@
+void script_206() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	string svar0;
+	string svar1;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = -1;
+	svar0 = "";
+	svar1 = "";
+	ivar3 = getItemContainerLength(134);
+	globalarray_0 = new int[ivar3];
+	globalarray_1 = new int[ivar3];
+	ivar4 = 0;
+	ivar5 = 99;
+	ivar6 = 0;
+	while (ivar0 < ivar3) {
+		ivar2 = getItemIdInSlot(134, ivar0);
+		ivar1 = getItemAmtInSlot(134, ivar0);
+		if (ivar2 != -1) {
+			ivar5 = 99;
+			ivar6 = 0;
+			while (ivar6 < ivar3) {
+				if (globalarray_0[ivar6] != -1) {
+					if (globalarray_0[ivar6] == ivar2) {
+						ivar5 = ivar6;
+						ivar6 = ivar3;
+					}
+					ivar6 = add(ivar6, 1);
+				} else {
+					ivar6 = ivar3;
+				}
+			}
+			if (ivar5 == 99) {
+				globalarray_0[ivar4] = ivar2;
+				globalarray_0[ivar4] = ivar1;
+				ivar4 = add(ivar4, 1);
+			} else {
+				globalarray_0[ivar5] = add(globalarray_1[ivar5], ivar1);
+			}
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	ivar4 = 0;
+	while (ivar4 < ivar3) {
+		ivar2 = globalarray_0[ivar4];
+		if (ivar2 != -1) {
+			ivar1 = globalarray_1[ivar4];
+			svar0 = concat(svar0, script_207(2, ivar1, ivar2));
+		} else {
+			ivar4 = ivar3;
+		}
+		ivar4 = add(ivar4, 1);
+	}
+	ivar0 = 0;
+	ivar4 = 0;
+	while (ivar4 < ivar3) {
+		globalarray_0[ivar4] = -1;
+		globalarray_0[ivar4] = 0;
+		ivar4 = add(ivar4, 1);
+	}
+	ivar4 = 0;
+	ivar6 = 0;
+	while (ivar0 < ivar3) {
+		ivar2 = getItemIdInSlotSplit(134, ivar0);
+		ivar1 = getItemAmtInSlotSplit(134, ivar0);
+		if (ivar2 != -1) {
+			ivar5 = 99;
+			ivar6 = 0;
+			while (ivar6 < ivar3) {
+				if (globalarray_0[ivar6] != -1) {
+					if (globalarray_0[ivar6] == ivar2) {
+						ivar5 = ivar6;
+						ivar6 = ivar3;
+					}
+					ivar6 = add(ivar6, 1);
+				} else {
+					ivar6 = ivar3;
+				}
+			}
+			if (ivar5 == 99) {
+				globalarray_0[ivar4] = ivar2;
+				globalarray_0[ivar4] = ivar1;
+				ivar4 = add(ivar4, 1);
+			} else {
+				globalarray_0[ivar5] = add(globalarray_1[ivar5], ivar1);
+			}
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	ivar4 = 0;
+	while (ivar4 < ivar3) {
+		ivar2 = globalarray_0[ivar4];
+		if (ivar2 != -1) {
+			ivar1 = globalarray_1[ivar4];
+			svar1 = concat(svar1, script_207(2, ivar1, ivar2));
+		} else {
+			ivar4 = ivar3;
+		}
+		ivar4 = add(ivar4, 1);
+	}
+	setWidgetText(new WidgetPointer(626,36), svar0);
+	setWidgetText(new WidgetPointer(626,37), svar1);
+	return;
+}

@@ -1,0 +1,4 @@
+void script_4984() {
+	script_4985();
+	return;
+}

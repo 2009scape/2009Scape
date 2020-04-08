@@ -1,0 +1,120 @@
+void script_2770(int arg0,int arg1) {
+	switch (globalint_1007) {
+		case 1:
+			cs2method5405(0, 2);
+			cs2method5406(0, 0, script_2764(60298061, arg1), 600, script_2764(60298061, arg1), 600, 0);
+			cs2method5406(0, 1, script_2764(60298061, arg1), 450, script_2764(60298061, arg1), 450, 0);
+			cs2method5405(1, 2);
+			cs2method5406(1, 0, script_2764(60298068, arg1), 100, script_2764(60298068, arg1), 100, 0);
+			cs2method5406(1, 1, script_2764(60298073, arg1), 100, script_2764(60298073, arg1), 100, 0);
+			cameraMethod5502(0, 0, 100, 140, 1, 0);
+			setScriptCallOnGameloop(2771, new WidgetPointer(arg0), getClientCycle(), "Ii", new WidgetPointer(arg0));
+			break;
+		case 2:
+			setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+			cs2method5405(0, 10);
+			cs2method5405(1, 10);
+			cs2method5406(0, 0, script_2764(60183397, arg1), 400, script_2764(60183397, arg1), 420, 0);
+			cs2method5406(0, 1, script_2764(60199780, arg1), 400, script_2764(60199780, arg1), 420, 128);
+			cs2method5406(0, 2, script_2764(60216163, arg1), 400, script_2764(60216163, arg1), 420, 0);
+			cs2method5406(0, 3, script_2764(60232546, arg1), 400, script_2764(60232546, arg1), 420, -128);
+			cs2method5406(0, 4, script_2764(60248929, arg1), 400, script_2764(60248929, arg1), 420, 0);
+			cs2method5406(0, 5, script_2764(60265312, arg1), 400, script_2764(60265312, arg1), 420, 128);
+			cs2method5406(0, 6, script_2764(60281695, arg1), 400, script_2764(60281695, arg1), 420, 0);
+			cs2method5406(0, 7, script_2764(60298078, arg1), 400, script_2764(60298078, arg1), 420, -128);
+			cs2method5406(0, 8, script_2764(60298077, arg1), 400, script_2764(60298077, arg1), 420, 0);
+			cs2method5406(0, 9, script_2764(60298076, arg1), 400, script_2764(60298076, arg1), 420, 128);
+			cs2method5406(0, 10, script_2764(60298075, arg1), 400, script_2764(60298075, arg1), 420, 0);
+			cs2method5406(1, 0, script_2764(60298074, arg1), 400, script_2764(60298074, arg1), 400, 0);
+			cs2method5406(1, 1, script_2764(60298073, arg1), 395, script_2764(60298073, arg1), 395, 0);
+			cs2method5406(1, 2, script_2764(60298072, arg1), 390, script_2764(60298072, arg1), 390, 0);
+			cs2method5406(1, 3, script_2764(60298071, arg1), 385, script_2764(60298071, arg1), 385, 0);
+			cs2method5406(1, 4, script_2764(60298070, arg1), 380, script_2764(60298070, arg1), 380, 0);
+			cs2method5406(1, 5, script_2764(60298069, arg1), 375, script_2764(60298069, arg1), 375, 0);
+			cs2method5406(1, 6, script_2764(60298068, arg1), 370, script_2764(60298068, arg1), 370, 0);
+			cs2method5406(1, 7, script_2764(60298067, arg1), 365, script_2764(60298067, arg1), 365, 0);
+			cs2method5406(1, 8, script_2764(60298066, arg1), 360, script_2764(60298066, arg1), 360, 0);
+			cs2method5406(1, 9, script_2764(60298065, arg1), 355, script_2764(60298065, arg1), 355, 0);
+			cs2method5406(1, 10, script_2764(60298065, arg1), 350, script_2764(60298065, arg1), 350, 0);
+			setScriptCallOnMinimapRelatedSetting3(2772, new WidgetPointer(arg0), 1, "Ii", new WidgetPointer(arg0));
+			cameraMethod5502(0, 0, 3000, 2500, 1, 0);
+			playSoundEffect(6645, 1, 0);
+			break;
+		case 3:
+			setScriptCallOnMinimapRelatedSetting3(-1, "", new WidgetPointer(arg0));
+			cs2method5405(0, 2);
+			cs2method5406(0, 0, script_2764(60298070, arg1), 350, script_2764(60298070, arg1), 350, 0);
+			cs2method5406(0, 1, script_2764(60298070, arg1), 300, script_2764(60298070, arg1), 300, 0);
+			cs2method5405(1, 2);
+			cs2method5406(1, 0, script_2764(60298078, arg1), 300, script_2764(60298078, arg1), 300, 0);
+			cs2method5406(1, 1, script_2764(60298078, arg1), 350, script_2764(60298078, arg1), 350, 0);
+			cameraMethod5502(0, 0, 60, 50, 1, 0);
+			break;
+		case 4:
+			cs2method5405(0, 2);
+			cs2method5406(0, 0, script_2764(60363602, arg1), 450, script_2764(60363601, arg1), 450, 0);
+			cs2method5406(0, 1, script_2764(60330828, arg1), 600, script_2764(60330829, arg1), 600, 0);
+			cs2method5405(1, 2);
+			cs2method5406(1, 0, script_2764(60298065, arg1), 400, script_2764(60298066, arg1), 400, 0);
+			cs2method5406(1, 1, script_2764(60298067, arg1), 350, script_2764(60298066, arg1), 350, 0);
+			cameraMethod5502(0, 0, 250, 200, 1, 0);
+			break;
+		case 5:
+			cs2method5405(0, 2);
+			cs2method5406(0, 0, script_2764(60363601, arg1), 700, script_2764(60363601, arg1), 700, 0);
+			cs2method5406(0, 1, script_2764(60363601, arg1), 700, script_2764(60363601, arg1), 700, 0);
+			cs2method5405(1, 2);
+			cs2method5406(1, 0, script_2764(60298062, arg1), 350, script_2764(60298061, arg1), 350, 0);
+			cs2method5406(1, 1, script_2764(60298061, arg1), 150, script_2764(60298061, arg1), 350, 0);
+			cameraMethod5502(0, 0, 100, 100, 1, 0);
+			break;
+		case 6:
+			cs2method5405(0, 2);
+			cs2method5406(0, 0, script_2764(60347213, arg1), 450, script_2764(60347214, arg1), 450, 0);
+			cs2method5406(0, 1, script_2764(60314446, arg1), 450, script_2764(60314446, arg1), 450, 0);
+			cs2method5405(1, 2);
+			cs2method5406(1, 0, script_2764(60298065, arg1), 400, script_2764(60298066, arg1), 400, 0);
+			cs2method5406(1, 1, script_2764(60298067, arg1), 400, script_2764(60298066, arg1), 400, 0);
+			cameraMethod5502(0, 0, 60, 60, 1, 0);
+			break;
+		case 7:
+			cs2method5405(0, 2);
+			cs2method5406(0, 0, script_2764(60314446, arg1), 400, script_2764(60314445, arg1), 400, 0);
+			cs2method5406(0, 1, script_2764(60314444, arg1), 400, script_2764(60314445, arg1), 400, 0);
+			cs2method5405(1, 2);
+			cs2method5406(1, 0, script_2764(60248909, arg1), 350, script_2764(60248909, arg1), 350, 0);
+			cs2method5406(1, 1, script_2764(60248909, arg1), 350, script_2764(60248909, arg1), 350, 0);
+			cameraMethod5502(0, 0, 30, 30, 1, 0);
+			break;
+		case 8:
+			cs2method5405(0, 2);
+			cs2method5406(0, 0, script_2764(60363605, arg1), 450, script_2764(60363604, arg1), 450, 0);
+			cs2method5406(0, 1, script_2764(60347219, arg1), 450, script_2764(60363604, arg1), 450, 0);
+			cs2method5405(1, 2);
+			cs2method5406(1, 0, script_2764(60330836, arg1), 400, script_2764(60314453, arg1), 400, 0);
+			cs2method5406(1, 1, script_2764(60298069, arg1), 400, script_2764(60314453, arg1), 400, 0);
+			cameraMethod5502(0, 0, 150, 150, 1, 0);
+			break;
+		case 9:
+			cs2method5405(0, 2);
+			cs2method5406(0, 0, script_2764(60363601, arg1), 500, script_2764(60330833, arg1), 500, 0);
+			cs2method5406(0, 1, script_2764(60248912, arg1), 700, script_2764(60248913, arg1), 700, 0);
+			cs2method5405(1, 2);
+			cs2method5406(1, 0, script_2764(60330828, arg1), 250, script_2764(60330828, arg1), 250, 0);
+			cs2method5406(1, 1, script_2764(60347212, arg1), 250, script_2764(60347212, arg1), 250, 0);
+			cameraMethod5502(0, 0, 30, 30, 1, 0);
+			break;
+		case 10:
+			cs2method5405(0, 2);
+			cs2method5406(0, 0, script_2764(60363593, arg1), 800, script_2764(60363593, arg1), 800, 0);
+			cs2method5406(0, 1, script_2764(60363591, arg1), 600, script_2764(60363591, arg1), 600, 0);
+			cs2method5405(1, 2);
+			cs2method5406(1, 0, script_2764(60298064, arg1), 500, script_2764(60298064, arg1), 500, 0);
+			cs2method5406(1, 1, script_2764(60265298, arg1), 400, script_2764(60265298, arg1), 400, 0);
+			cameraMethod5502(0, 0, 400, 80, 1, 0);
+			break;
+		default:
+			cs2method5512();
+	}
+	return;
+}

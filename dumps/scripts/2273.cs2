@@ -1,0 +1,19 @@
+void script_2273(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,int arg11,int arg12) {
+	if ((getSkillCurrentLvl(6) < arg3) && (((boolean)arg4) || (getSkillActualLvl(6) < arg3))) {
+		if (((boolean)bitconfig_4089)) {
+			if ((standart_config_1092 < arg3) || ((boolean)cs2method_3408(73, 105, 1061, arg0))) {
+				setWidgetSprite(arg2, new WidgetPointer(arg0));
+				return;
+			}
+		} else {
+			setWidgetSprite(arg2, new WidgetPointer(arg0));
+			return;
+		}
+	}
+	if (standart_config_1795 == -1) {
+		setWidgetSprite(arg2, new WidgetPointer(arg0));
+		return;
+	}
+	setWidgetSprite(arg1, new WidgetPointer(arg0));
+	return;
+}

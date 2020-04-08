@@ -1,0 +1,20 @@
+string script_46(int arg0,string arg1) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar1 = divide(arg0, 1000000000);
+	ivar2 = divide(subtract(arg0, multiply(ivar1, 1000000000)), 1000000);
+	ivar3 = divide(subtract(arg0, add(multiply(ivar1, 1000000000), multiply(ivar2, 1000000))), 1000);
+	ivar4 = subtract(arg0, add(add(multiply(ivar1, 1000000000), multiply(ivar2, 1000000)), multiply(ivar3, 1000)));
+	if (ivar1 > 0) {
+		return intToStr(ivar1) + arg1 + script_47(ivar2) + arg1 + script_47(ivar3) + arg1 + script_47(ivar4);
+	}
+	if (ivar2 > 0) {
+		return intToStr(ivar2) + arg1 + script_47(ivar3) + arg1 + script_47(ivar4);
+	}
+	if (ivar3 > 0) {
+		return intToStr(ivar3) + arg1 + script_47(ivar4);
+	}
+	return intToStr(arg0);
+}

@@ -1,0 +1,12 @@
+void script_911() {
+	if (((boolean)bitconfig_4532) && (globalint_118 < 253)) {
+		globalint_118 = add(globalint_118, 3);
+		cs2method2103(subtract(255, globalint_118), new WidgetPointer(721,3));
+	} else {
+		if (((boolean)bitconfig_4532) && (globalint_118 > 3)) {
+			globalint_118 = subtract(globalint_118, 3);
+			cs2method2103(subtract(255, globalint_118), new WidgetPointer(721,3));
+		}
+	}
+	return;
+}

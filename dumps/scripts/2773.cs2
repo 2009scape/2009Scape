@@ -1,0 +1,61 @@
+void script_2773(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8) {
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int stack_dump0;
+	if (standart_config_281 < 6) {
+		return;
+	}
+	ivar9 = -1;
+	ivar10 = -1;
+	ivar11 = -1;
+	ivar12 = -1;
+	switch (arg0) {
+		case 1:
+			cs2method5510();
+			stack_dump0 = arg1;
+			ivar10 = arg5;
+			ivar9 = stack_dump0;
+			stack_dump0 = 2273;
+			ivar12 = 2278;
+			ivar11 = stack_dump0;
+			break;
+		case 2:
+			cs2method5509();
+			stack_dump0 = arg2;
+			ivar10 = arg6;
+			ivar9 = stack_dump0;
+			stack_dump0 = 2272;
+			ivar12 = 2277;
+			ivar11 = stack_dump0;
+			break;
+		case 3:
+			cs2method5507();
+			stack_dump0 = arg3;
+			ivar10 = arg7;
+			ivar9 = stack_dump0;
+			stack_dump0 = 2274;
+			ivar12 = 2279;
+			ivar11 = stack_dump0;
+			break;
+		case 4:
+			cs2method5508();
+			stack_dump0 = arg4;
+			ivar10 = arg8;
+			ivar9 = stack_dump0;
+			stack_dump0 = 2275;
+			ivar12 = 2280;
+			ivar11 = stack_dump0;
+			break;
+		default:
+			return;
+	}
+	setWidgetSprite(2276, new WidgetPointer(ivar9));
+	ivar13 = 2271;
+	setScriptCallOnGameloop(1723, new WidgetPointer(-32768,3), -2147483643, ivar13, add(getClientCycle(), 10), "Iidi", new WidgetPointer(ivar9));
+	setWidgetSprite(ivar12, new WidgetPointer(ivar10));
+	setScriptCallOnGameloop(1723, new WidgetPointer(-32768,3), -2147483643, ivar11, add(getClientCycle(), 10), "Iidi", new WidgetPointer(ivar10));
+	return;
+}

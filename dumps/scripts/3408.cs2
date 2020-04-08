@@ -1,0 +1,12 @@
+void script_3408(int arg0,string arg1) {
+	string svar1;
+	string svar2;
+	svar1 = "<u=88ffff>" + arg1 + "</u>";
+	svar2 = "<u=64c8fa>" + arg1 + "</u>";
+	setWidgetContextMenuOption(1, new WidgetPointer(arg0), "Open link");
+	setScriptCallOnClickContextMenu(1897, "", new WidgetPointer(arg0));
+	cs2method2309(1, 146, new WidgetPointer(arg0));
+	setScriptCallOnMouseEntered(2381, new WidgetPointer(arg0), 8978431, svar1, "Iis", new WidgetPointer(arg0));
+	setScriptCallOnMouseExit(2381, new WidgetPointer(arg0), 6605050, svar2, "Iis", new WidgetPointer(arg0));
+	return;
+}

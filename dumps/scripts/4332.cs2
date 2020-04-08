@@ -1,0 +1,26 @@
+void script_4332(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	cs2func_script_4384_struct(2,0,0) structdump_3;
+	ivar2 = -1;
+	ivar3 = -1;
+	stack_dump0 = clanbitconfig_14;
+	stack_dump1 = clanbitconfig_15;
+	stack_dump2 = 1;
+	structdump_3 = script_4384(stack_dump0, stack_dump1, stack_dump2);
+	ivar3 = structdump_3.intpart_1;
+	ivar2 = structdump_3.intpart_0;
+	setWidgetSprite(ivar2, new WidgetPointer(arg0));
+	setWidgetSprite(ivar3, new WidgetPointer(arg1));
+	if (cs2method3709() >= 5) {
+		setWidgetRGB(new Color(getColorRelatedMethod4020(clanconfig_16)), new WidgetPointer(arg0));
+		setWidgetRGB(new Color(getColorRelatedMethod4020(clanconfig_17)), new WidgetPointer(arg1));
+	} else {
+		setWidgetRGB(new Color(getColorRelatedMethod4020(6716)), new WidgetPointer(arg0));
+		setWidgetRGB(new Color(getColorRelatedMethod4020(6716)), new WidgetPointer(arg1));
+	}
+	return;
+}

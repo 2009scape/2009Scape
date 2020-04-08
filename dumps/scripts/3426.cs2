@@ -1,0 +1,6 @@
+void script_3426(int arg0) {
+	string svar0;
+	svar0 = cs2method_3408(73, 115, 3063, arg0);
+	setWidgetText(new WidgetPointer(60,92), svar0);
+	return;
+}

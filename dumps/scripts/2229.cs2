@@ -1,0 +1,8 @@
+void script_2229() {
+	if (globalint_1128 > 0) {
+		playSoundEffect(8729, 1, 0);
+		globalint_1128 = subtract(globalint_1128, 1);
+		script_2220();
+	}
+	return;
+}

@@ -1,0 +1,8 @@
+void script_1886(int arg0) {
+	if ((bitconfig_4895 == 3) && (standart_config_281 < 125)) {
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(arg0));
+	}
+	return;
+}

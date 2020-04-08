@@ -1,0 +1,8 @@
+void script_1962(int arg0,int arg1) {
+	if (getItemAmtInContainer(93, 2996) >= arg1) {
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(arg0));
+	} else {
+		setWidgetRGB(new Color(119, 115, 106), new WidgetPointer(arg0));
+	}
+	return;
+}

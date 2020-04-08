@@ -1,0 +1,26 @@
+void script_811(int arg0) {
+	int ivar1;
+	ivar1 = 0;
+	if (arg0 > 1) {
+		return;
+	}
+	if (getDisplayMode() >= 2) {
+		ivar1 = ((int)isWidgetHidden(new WidgetPointer(746,184)));
+	} else {
+		ivar1 = ((int)isWidgetHidden(new WidgetPointer(548,22)));
+	}
+	if (((boolean)ivar1)) {
+		script_3337();
+		setWidgetIsHidden(true, new WidgetPointer(548,24));
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(548,22));
+		setWidgetIsHidden(true, new WidgetPointer(746,187));
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(746,184));
+		setWidgetIsHidden(false, new WidgetPointer(746,184));
+		setWidgetIsHidden(false, new WidgetPointer(548,22));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(746,184));
+		setWidgetIsHidden(true, new WidgetPointer(548,22));
+	}
+	script_776();
+	return;
+}

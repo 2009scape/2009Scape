@@ -1,0 +1,51 @@
+void script_1293(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar1 = 5;
+	ivar2 = 34;
+	ivar3 = 34;
+	ivar4 = 0;
+	ivar5 = 6;
+	ivar6 = ivar5;
+	ivar7 = 3;
+	ivar8 = add(34, 3);
+	if (((boolean)globalint_1052) && ((boolean)bitconfig_6840)) {
+		ivar5 = 3;
+		ivar6 = ivar5;
+		ivar8 = add(34, 0);
+	}
+	ivar9 = add(34, 2);
+	if (((boolean)globalint_181)) {
+		ivar5 = 6;
+		ivar6 = ivar5;
+		ivar7 = 28;
+		ivar8 = add(34, 5);
+		ivar9 = add(34, 3);
+	}
+	ivar10 = 30;
+	if (((boolean)bitconfig_6840)) {
+		ivar10 = 20;
+	}
+	while (ivar4 < ivar10) {
+		createExtraChild(new WidgetPointer(arg0), 5, ivar4);
+		setWidgetSize(ivar2, ivar3, 0, 0);
+		setWidgetPosition(ivar6, ivar7, 0, 0);
+		ivar4 = add(ivar4, 1);
+		if (((boolean)mod(ivar4, ivar1))) {
+			ivar6 = ivar5;
+			ivar7 = add(ivar7, ivar9);
+		} else {
+			ivar6 = add(ivar6, ivar8);
+		}
+	}
+	return;
+}

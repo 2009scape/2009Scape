@@ -1,0 +1,24 @@
+void script_107(string arg0) {
+	if (((boolean)globalint_1413)) {
+		return;
+	}
+	if (((boolean)globalint_11)) {
+		messageType0("You can't do that while you're reporting abuse.");
+		return;
+	}
+	if (getDisplayMode() >= 2) {
+		setWidgetIsHidden(false, new WidgetPointer(746,73));
+	}
+	globalstring_23 = arg0;
+	setWidgetIsHidden(false, new WidgetPointer(752,3));
+	setWidgetIsHidden(true, new WidgetPointer(752,7));
+	setWidgetIsHidden(true, new WidgetPointer(752,8));
+	setWidgetText(new WidgetPointer(752,4), "Enter message to send to " + globalstring_23);
+	globalint_5 = 6;
+	script_1564("");
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(752,3));
+	script_2026();
+	setScriptCallOnKeyPress(112, -2147483640, false, "iz", new WidgetPointer(752,5));
+	script_1188();
+	return;
+}

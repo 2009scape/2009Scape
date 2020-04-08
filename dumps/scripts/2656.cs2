@@ -1,0 +1,31 @@
+int script_2656() {
+	int ivar0;
+	int ivar1;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar0 = add(ivar0, bitconfig_6113);
+	ivar1 = divide(add(1, bitconfig_6114), 2);
+	ivar0 = add(ivar0, ivar1);
+	ivar1 = divide(bitconfig_6115, 2);
+	ivar0 = add(ivar0, ivar1);
+	ivar1 = divide(bitconfig_6116, 2);
+	ivar0 = add(ivar0, ivar1);
+	ivar1 = add(add(bitconfig_6117, bitconfig_6118), add(bitconfig_6119, bitconfig_6120));
+	ivar0 = add(ivar0, ivar1);
+	ivar0 = add(bitconfig_6121, ivar0);
+	ivar1 = divide(bitconfig_6122, 2);
+	ivar0 = add(ivar0, ivar1);
+	ivar1 = divide(bitconfig_6123, 2);
+	ivar0 = add(ivar0, ivar1);
+	ivar1 = divide(bitconfig_6124, 2);
+	ivar0 = add(ivar0, ivar1);
+	ivar1 = divide(bitconfig_6125, 2);
+	ivar0 = add(ivar0, ivar1);
+	ivar1 = add(add(add(bitconfig_6151, bitconfig_6152), add(bitconfig_6153, bitconfig_6154)), bitconfig_6155);
+	ivar0 = add(ivar0, ivar1);
+	ivar0 = multiply(ivar0, 4);
+	if ((bitconfig_6112 == 20) && (ivar0 > 75)) {
+		bitconfig_6112 = 50;
+	}
+	return ivar0;
+}

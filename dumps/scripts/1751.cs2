@@ -1,0 +1,27 @@
+string script_1751(int arg0) {
+	int ivar1;
+	if (arg0 < 2) {
+		return "in a minute";
+	}
+	ivar1 = divide(arg0, 60);
+	arg0 = mod(arg0, 60);
+	if (ivar1 > 1) {
+		if (arg0 > 1) {
+			return "in " + intToStr(ivar1) + " hours " + intToStr(arg0) + " minutes";
+		}
+		if (((boolean)arg0)) {
+			return "in " + intToStr(ivar1) + " hours 1 minute";
+		}
+		return "in " + intToStr(ivar1) + " hours";
+	}
+	if (((boolean)ivar1)) {
+		if (arg0 > 1) {
+			return "in 1 hour " + intToStr(arg0) + " minutes";
+		}
+		if (((boolean)arg0)) {
+			return "in 1 hour 1 minute";
+		}
+		return "in 1 hour";
+	}
+	return "in " + intToStr(arg0) + " minutes";
+}

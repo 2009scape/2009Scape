@@ -1,0 +1,18 @@
+void script_3947(int arg0,string arg1,string arg2,string arg3,string arg4,string arg5,string arg6) {
+	if (((boolean)arg0)) {
+		setWidgetContextMenuOption(1, new WidgetPointer(1028,158), arg1);
+		setWidgetContextMenuOption(1, new WidgetPointer(1028,159), arg2);
+		setWidgetContextMenuOption(1, new WidgetPointer(1028,160), arg3);
+		setWidgetContextMenuOption(1, new WidgetPointer(1028,161), arg4);
+		setWidgetContextMenuOption(1, new WidgetPointer(1028,162), arg5);
+		setWidgetContextMenuOption(1, new WidgetPointer(1028,163), arg6);
+	} else {
+		setWidgetContextMenuOption(1, new WidgetPointer(890,37), arg1);
+		setWidgetContextMenuOption(1, new WidgetPointer(890,38), arg2);
+		setWidgetContextMenuOption(1, new WidgetPointer(890,39), arg3);
+		setWidgetContextMenuOption(1, new WidgetPointer(890,40), arg4);
+		setWidgetContextMenuOption(1, new WidgetPointer(890,41), arg5);
+		setWidgetContextMenuOption(1, new WidgetPointer(890,42), arg6);
+	}
+	return;
+}

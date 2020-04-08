@@ -1,0 +1,70 @@
+string script_79(int arg0) {
+	if (arg0 < 10) {
+		if (arg0 < 5) {
+			if (((boolean)arg0)) {
+				return globalstring_2;
+			}
+			if (((boolean)arg0)) {
+				return globalstring_3;
+			}
+			if (arg0 == 2) {
+				return globalstring_4;
+			}
+			if (arg0 == 3) {
+				return globalstring_5;
+			}
+			if (arg0 == 4) {
+				return globalstring_6;
+			}
+		} else {
+			if (arg0 == 5) {
+				return globalstring_7;
+			}
+			if (arg0 == 6) {
+				return globalstring_8;
+			}
+			if (arg0 == 7) {
+				return globalstring_9;
+			}
+			if (arg0 == 8) {
+				return globalstring_10;
+			}
+			if (arg0 == 9) {
+				return globalstring_11;
+			}
+		}
+	} else if (arg0 < 15) {
+		if (arg0 == 10) {
+			return globalstring_12;
+		}
+		if (arg0 == 11) {
+			return globalstring_13;
+		}
+		if (arg0 == 12) {
+			return globalstring_14;
+		}
+		if (arg0 == 13) {
+			return globalstring_15;
+		}
+		if (arg0 == 14) {
+			return globalstring_16;
+		}
+	} else {
+		if (arg0 == 15) {
+			return globalstring_17;
+		}
+		if (arg0 == 16) {
+			return globalstring_18;
+		}
+		if (arg0 == 17) {
+			return globalstring_19;
+		}
+		if (arg0 == 18) {
+			return globalstring_20;
+		}
+		if (arg0 == 19) {
+			return globalstring_21;
+		}
+	}
+	return "";
+}

@@ -1,0 +1,970 @@
+cs2func_script_3_struct(2,2,0) script_3(int arg0,int arg1) {
+	switch (arg0) {
+		flow_1:
+			case 0:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_3_struct(1, 8170, "Garden", "You can now build a " + "<col=000080>" + "garden" + "</col>" + " for your house.");
+				case 1:
+					return newstruct cs2func_script_3_struct(1, 8315, "Parlour", "You can now build a " + "<col=000080>" + "parlour" + "</col>" + " for your house.");
+				case 2:
+					return newstruct cs2func_script_3_struct(5, 8222, "Kitchen", "You can now build a " + "<col=000080>" + "kitchen" + "</col>" + " for your house.");
+				case 3:
+					return newstruct cs2func_script_3_struct(10, 8121, "Dining room", "You can now build a " + "<col=000080>" + "dining room" + "</col>" + " for your house.");
+				case 4:
+					return newstruct cs2func_script_3_struct(15, 8379, "Workshop", "You can now build a " + "<col=000080>" + "workshop" + "</col>" + " for your house.");
+				case 5:
+					return newstruct cs2func_script_3_struct(20, 8037, "Bedroom", "You can now build a " + "<col=000080>" + "bedroom" + "</col>" + " for your house.");
+				case 6:
+					return newstruct cs2func_script_3_struct(25, 8255, "Hall (skill trophies)", "You can now build a " + "<col=000080>" + "hall" + "</col>" + " for your house, in which you can display " + "<col=000080>" + "skill trophies" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_3_struct(30, 8163, "Games room", "You can now build a " + "<col=000080>" + "games room" + "</col>" + " for your house.");
+				case 8:
+					return newstruct cs2func_script_3_struct(32, 8027, "Combat room", "You can now build a " + "<col=000080>" + "combat room" + "</col>" + " for your house.");
+				case 9:
+					return newstruct cs2func_script_3_struct(35, 8259, "Hall (quest trophies)", "You can now build a " + "<col=000080>" + "hall" + "</col>" + " for your house, in which you can display your " + "<col=000080>" + "quest trophies" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_3_struct(37, 15221, "Menagerie", "You can now build a " + "<col=000080>" + "menagerie" + "</col>" + " for your house.");
+				case 11:
+					return newstruct cs2func_script_3_struct(40, 8340, "Study", "You can now build a " + "<col=000080>" + "study" + "</col>" + " for your house.");
+				case 12:
+					return newstruct cs2func_script_3_struct(42, 9822, "Costume room", "You can now build a " + "<col=000080>" + "costume room" + "</col>" + " for your house.");
+				case 13:
+					return newstruct cs2func_script_3_struct(45, 8068, "Chapel", "You can now build a " + "<col=000080>" + "chapel" + "</col>" + " for your house.");
+				case 14:
+					return newstruct cs2func_script_3_struct(50, 8333, "Portal chamber", "You can now build a " + "<col=000080>" + "portal chamber" + "</col>" + " for your house.");
+				case 15:
+					return newstruct cs2func_script_3_struct(55, 8195, "Formal garden", "You can now build a " + "<col=000080>" + "formal garden" + "</col>" + " for your house.");
+				case 16:
+					return newstruct cs2func_script_3_struct(60, 8363, "Throne room", "You can now build a " + "<col=000080>" + "throne room" + "</col>" + " for your house.");
+				case 17:
+					return newstruct cs2func_script_3_struct(65, 8302, "Oubliette", "You can now build an " + "<col=000080>" + "oubliette" + "</col>" + " for your house.");
+				case 18:
+					return newstruct cs2func_script_3_struct(70, 8123, "Dungeon", "You can now build a " + "<col=000080>" + "dungeon" + "</col>" + " for your house.");
+				case 19:
+					return newstruct cs2func_script_3_struct(70, 8122, "Dungeon pit", "You can now build a " + "<col=000080>" + "dungeon pit" + "</col>" + " in your dungeon (after Love Story).");
+				case 20:
+					return newstruct cs2func_script_3_struct(75, 8151, "Treasure room", "You can now build a " + "<col=000080>" + "treasure room" + "</col>" + " for your house.");
+			}
+			break;
+			case 1:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_3_struct(3, 8325, "Clay fireplace", "You can now construct " + "<col=000080>" + "clay fireplaces" + "</col>" + " for your house.");
+				case 1:
+					return newstruct cs2func_script_3_struct(5, 8216, "Firepit", "You can now construct " + "<col=000080>" + "firepits" + "</col>" + " for your house.");
+				case 2:
+					return newstruct cs2func_script_3_struct(7, 8230, "Pump and drain", "You can now construct " + "<col=000080>" + "pumps and drains" + "</col>" + " for your house.");
+				case 3:
+					return newstruct cs2func_script_3_struct(11, 8217, "Firepit with hook", "You can now construct " + "<col=000080>" + "firepits with hooks" + "</col>" + " for your house.");
+				case 4:
+					return newstruct cs2func_script_3_struct(15, 8389, "Repair bench", "You can now construct " + "<col=000080>" + "repair benches" + "</col>" + " for your house (at which you can repair " + "<col=000080>" + "bent arrows" + "</col>" + " and " + "<col=000080>" + "broken staves" + "</col>" + ").");
+				case 5:
+					return newstruct cs2func_script_3_struct(16, 8392, "Pluming stand", "You can now construct " + "<col=000080>" + "pluming stands" + "</col>" + " for your house.");
+				case 6:
+					return newstruct cs2func_script_3_struct(16, 8380, "Crafting table 1", "You can now construct " + "<col=000080>" + "crafting table 1" + "</col>" + " for your house, at which you can craft " + "<col=000080>" + "toy horsies" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_3_struct(17, 8218, "Firepit with pot", "You can now construct " + "<col=000080>" + "firepits with pots" + "</col>" + " for your house.");
+				case 8:
+					return newstruct cs2func_script_3_struct(17, 8375, "Wooden workbench", "You can now construct " + "<col=000080>" + "wooden workbenches" + "</col>" + " for your house, at which you can build " + "<col=000080>" + "flatpack items" + "</col>" + " up to " + "<col=000080>" + "level 20 Construction" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_3_struct(24, 8219, "Small oven", "You can now construct " + "<col=000080>" + "small ovens" + "</col>" + " for your house.");
+				case 10:
+					return newstruct cs2func_script_3_struct(25, 8381, "Crafting table 2", "You can now construct " + "<col=000080>" + "crafting table 2" + "</col>" + " for your house, at which you can craft " + "<col=000080>" + "toy horsies" + "</col>" + " and " + "<col=000080>" + "clockwork mechanisms" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_3_struct(27, 8231, "Pump and tub", "You can now construct " + "<col=000080>" + "pumps and tubs" + "</col>" + " for your house.");
+				case 12:
+					return newstruct cs2func_script_3_struct(29, 8220, "Large oven", "You can now construct " + "<col=000080>" + "large ovens" + "</col>" + " for your house.");
+				case 13:
+					return newstruct cs2func_script_3_struct(32, 8376, "Oak workbench", "You can now construct " + "<col=000080>" + "oak workbenches" + "</col>" + " for your house, at which you can build " + "<col=000080>" + "flatpack items" + "</col>" + " up to " + "<col=000080>" + "level 40 Construction" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_3_struct(33, 8326, "Stone fireplace", "You can now construct " + "<col=000080>" + "stone fireplaces" + "</col>" + " for your house.");
+				case 15:
+					return newstruct cs2func_script_3_struct(34, 8382, "Crafting table 3", "You can now construct " + "<col=000080>" + "crafting table 3" + "</col>" + " for your house, at which you can craft " + "<col=000080>" + "toy horsies" + "</col>" + ", " + "<col=000080>" + "clockwork mechanisms" + "</col>" + ", " + "<col=000080>" + "clockwork soldiers" + "</col>" + " and " + "<col=000080>" + "clockwork dolls" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_3_struct(34, 8221, "Steel range", "You can now construct " + "<col=000080>" + "steel ranges" + "</col>" + " for your house.");
+				case 17:
+					return newstruct cs2func_script_3_struct(35, 8390, "Whetstone", "You can now construct " + "<col=000080>" + "whetstones" + "</col>" + " for your house, at which you can sharpen " + "<col=000080>" + "rusty swords" + "</col>" + ", and repair " + "<col=000080>" + "broken arrows" + "</col>" + " and " + "<col=000080>" + "staves" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_3_struct(41, 8393, "Shield easel", "You can now construct " + "<col=000080>" + "shield easels" + "</col>" + " for your house.");
+				case 19:
+					return newstruct cs2func_script_3_struct(42, 8222, "Fancy range", "You can now construct " + "<col=000080>" + "fancy ranges" + "</col>" + " for your house.");
+				case 20:
+					return newstruct cs2func_script_3_struct(42, 8383, "Crafting table 4", "You can now construct " + "<col=000080>" + "crafting table 4" + "</col>" + " for your house, at which you can craft " + "<col=000080>" + "toy horsies" + "</col>" + ", " + "<col=000080>" + "clockwork mechanisms" + "</col>" + ", " + "<col=000080>" + "clockwork soldiers" + "</col>" + ", " + "<col=000080>" + "clockwork dolls" + "</col>" + ", " + "<col=000080>" + "clockwork mice" + "</col>" + ", " + "<col=000080>" + "clockwork cats" + "</col>" + ", " + "<col=000080>" + "watches" + "</col>" + " and " + "<col=000080>" + "sextants" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_3_struct(46, 8377, "Steel-framed workbench", "You can now construct " + "<col=000080>" + "steel-framed workbenches" + "</col>" + " for your house, at which you can build flatpack items" + "</col>" + " up to level 60 Construction" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_3_struct(47, 8232, "Sink", "You can now construct " + "<col=000080>" + "sinks" + "</col>" + " for your house.");
+				case 23:
+					return newstruct cs2func_script_3_struct(55, 8391, "Armour stand", "You can now construct " + "<col=000080>" + "armour stands" + "</col>" + " for your house, at which you can repair " + "<col=000080>" + "broken arrows" + "</col>" + ", " + "<col=000080>" + "broken staves" + "</col>" + ", " + "<col=000080>" + "rusty swords" + "</col>" + ", " + "<col=000080>" + "damaged armour" + "</col>" + " and " + "<col=000080>" + "damaged Barrows items" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_3_struct(62, 8378, "Workbench with vice", "You can now construct " + "<col=000080>" + "workbenches with vices" + "</col>" + " for your house, at which you can build " + "<col=000080>" + "flatpack items" + "</col>" + " up to " + "<col=000080>" + "level 80 Construction" + "</col>" + ".");
+				case 25:
+					return newstruct cs2func_script_3_struct(63, 8327, "Marble fireplace", "You can now construct " + "<col=000080>" + "marble fireplaces" + "</col>" + " for your house.");
+				case 26:
+					return newstruct cs2func_script_3_struct(66, 8394, "Banner easel", "You can now construct " + "<col=000080>" + "banner easels" + "</col>" + " for your house.");
+				case 27:
+					return newstruct cs2func_script_3_struct(77, 8379, "Workbench with lathe", "You can now construct " + "<col=000080>" + "workbenches with lathes" + "</col>" + " for your house, at which you can build " + "<col=000080>" + "flatpack items" + "</col>" + " of " + "<col=000080>" + "any level" + "</col>" + ".");
+			}
+			break;
+			case 2:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_3_struct(1, 8309, "Crude wooden chair", "You can now construct " + "<col=000080>" + "crude wooden chairs" + "</col>" + " for your house.");
+				case 1:
+					return newstruct cs2func_script_3_struct(8, 8310, "Wooden chair", "You can now construct " + "<col=000080>" + "wooden chairs" + "</col>" + " for your house.");
+				case 2:
+					return newstruct cs2func_script_3_struct(10, 8115, "Wooden dining table", "You can now construct " + "<col=000080>" + "wooden dining tables" + "</col>" + " for your house.");
+				case 3:
+					return newstruct cs2func_script_3_struct(10, 8108, "Wooden dining bench", "You can now construct " + "<col=000080>" + "wooden dining benches" + "</col>" + " for your house.");
+				case 4:
+					return newstruct cs2func_script_3_struct(12, 8246, "Wooden kitchen table", "You can now construct " + "<col=000080>" + "wooden kitchen tables" + "</col>" + " for your house.");
+				case 5:
+					return newstruct cs2func_script_3_struct(14, 8311, "Rocking chair", "You can now construct " + "<col=000080>" + "rocking chairs" + "</col>" + " for your house.");
+				case 6:
+					return newstruct cs2func_script_3_struct(19, 8312, "Oak chair", "You can now construct " + "<col=000080>" + "oak chairs" + "</col>" + " for your house.");
+				case 7:
+					return newstruct cs2func_script_3_struct(20, 8031, "Wooden bed", "You can now construct " + "<col=000080>" + "wooden beds" + "</col>" + " for your house.");
+				case 8:
+					return newstruct cs2func_script_3_struct(22, 8116, "Oak dining table", "You can now construct " + "<col=000080>" + "oak dining tables" + "</col>" + " for your house.");
+				case 9:
+					return newstruct cs2func_script_3_struct(22, 8109, "Oak dining bench", "You can now construct " + "<col=000080>" + "oak dining benches" + "</col>" + " for your house.");
+				case 10:
+					return newstruct cs2func_script_3_struct(26, 8313, "Oak armchair", "You can now construct " + "<col=000080>" + "oak armchairs" + "</col>" + " for your house.");
+				case 11:
+					return newstruct cs2func_script_3_struct(30, 8032, "Oak bed", "You can now construct " + "<col=000080>" + "oak beds" + "</col>" + " for your house.");
+				case 12:
+					return newstruct cs2func_script_3_struct(31, 8117, "Carved oak dining table", "You can now construct " + "<col=000080>" + "carved oak dining tables" + "</col>" + " for your house.");
+				case 13:
+					return newstruct cs2func_script_3_struct(31, 8110, "Carved oak dining bench", "You can now construct " + "<col=000080>" + "carved oak dining benches" + "</col>" + " for your house.");
+				case 14:
+					return newstruct cs2func_script_3_struct(32, 8247, "Oak kitchen table", "You can now construct " + "<col=000080>" + "oak kitchen tables" + "</col>" + " for your house.");
+				case 15:
+					return newstruct cs2func_script_3_struct(34, 8033, "Large oak bed", "You can now construct " + "<col=000080>" + "large oak beds" + "</col>" + " for your house.");
+				case 16:
+					return newstruct cs2func_script_3_struct(35, 8314, "Teak armchair", "You can now construct " + "<col=000080>" + "teak armchairs" + "</col>" + " for your house.");
+				case 17:
+					return newstruct cs2func_script_3_struct(38, 8118, "Teak dining table", "You can now construct " + "<col=000080>" + "teak dining tables" + "</col>" + " for your house.");
+				case 18:
+					return newstruct cs2func_script_3_struct(38, 8111, "Teak dining bench", "You can now construct " + "<col=000080>" + "teak dining benches" + "</col>" + " for your house.");
+				case 19:
+					return newstruct cs2func_script_3_struct(40, 8034, "Teak bed", "You can now construct " + "<col=000080>" + "teak beds" + "</col>" + " for your house.");
+				case 20:
+					return newstruct cs2func_script_3_struct(44, 8112, "Carved teak dining bench", "You can now construct " + "<col=000080>" + "carved teak dining benches" + "</col>" + " for your house.");
+				case 21:
+					return newstruct cs2func_script_3_struct(45, 8119, "Carved teak dining table", "You can now construct " + "<col=000080>" + "carved teak dining tables" + "</col>" + " for your house.");
+				case 22:
+					return newstruct cs2func_script_3_struct(45, 8035, "Large teak bed", "You can now construct " + "<col=000080>" + "large teak beds" + "</col>" + " for your house.");
+				case 23:
+					return newstruct cs2func_script_3_struct(50, 8315, "Mahogany armchair", "You can now construct " + "<col=000080>" + "mahogany armchairs" + "</col>" + " for your house.");
+				case 24:
+					return newstruct cs2func_script_3_struct(52, 8120, "Mahogany dining table", "You can now construct " + "<col=000080>" + "mahogany dining tables" + "</col>" + " for your house.");
+				case 25:
+					return newstruct cs2func_script_3_struct(52, 8113, "Mahogany dining bench", "You can now construct " + "<col=000080>" + "mahogany dining benches" + "</col>" + " for your house.");
+				case 26:
+					return newstruct cs2func_script_3_struct(52, 8248, "Teak kitchen table", "You can now construct " + "<col=000080>" + "teak kitchen tables" + "</col>" + " for your house.");
+				case 27:
+					return newstruct cs2func_script_3_struct(53, 8036, "Mahogany four-poster bed", "You can now construct " + "<col=000080>" + "mahogany four-poster beds" + "</col>" + " for your house.");
+				case 28:
+					return newstruct cs2func_script_3_struct(60, 8357, "Oak throne", "You can now construct " + "<col=000080>" + "oak thrones" + "</col>" + " for your house.");
+				case 29:
+					return newstruct cs2func_script_3_struct(60, 8037, "Gilded mahogany four-poster bed", "You can now construct " + "<col=000080>" + "gilded mahogany four-poster beds" + "</col>" + " for your house.");
+				case 30:
+					return newstruct cs2func_script_3_struct(61, 8114, "Gilded mahogany dining bench", "You can now construct " + "<col=000080>" + "gilded mahogany dining benches" + "</col>" + " for your house.");
+				case 31:
+					return newstruct cs2func_script_3_struct(67, 8358, "Teak throne", "You can now construct " + "<col=000080>" + "teak thrones" + "</col>" + " for your house.");
+				case 32:
+					return newstruct cs2func_script_3_struct(72, 8121, "Gilded mahogany and marble table", "You can now construct " + "<col=000080>" + "gilded mahogany and marble tables" + "</col>" + " for your house.");
+				case 33:
+					return newstruct cs2func_script_3_struct(74, 8359, "Mahogany throne", "You can now construct " + "<col=000080>" + "mahogany thrones" + "</col>" + " for your house.");
+				case 34:
+					return newstruct cs2func_script_3_struct(81, 8360, "Gilded mahogany throne", "You can now construct " + "<col=000080>" + "gilded mahogany thrones" + "</col>" + " for your house.");
+				case 35:
+					return newstruct cs2func_script_3_struct(88, 8361, "Skeleton throne", "You can now construct " + "<col=000080>" + "skeleton thrones" + "</col>" + " for your house.");
+				case 36:
+					return newstruct cs2func_script_3_struct(95, 8362, "Crystal throne", "You can now construct " + "<col=000080>" + "crystal thrones" + "</col>" + " for your house.");
+				case 37:
+					return newstruct cs2func_script_3_struct(99, 8363, "Demonic throne", "You can now construct " + "<col=000080>" + "demonic thrones" + "</col>" + " for your house.");
+			}
+			break;
+			case 3:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_3_struct(4, 8319, "Wooden bookcase", "You can now construct " + "<col=000080>" + "wooden bookcases" + "</col>" + " for your house.");
+				case 1:
+					return newstruct cs2func_script_3_struct(6, 8223, "Wooden shelves 1", "You can now construct " + "<col=000080>" + "wooden shelves 1" + "</col>" + " for your house, which provide " + "<col=000080>" + "kettles" + "</col>" + ", " + "<col=000080>" + "teapots" + "</col>" + " and " + "<col=000080>" + "cups" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_3_struct(7, 8239, "Beer barrel", "You can now construct " + "<col=000080>" + "beer barrels" + "</col>" + " for your house.");
+				case 3:
+					return newstruct cs2func_script_3_struct(9, 8233, "Wooden larder", "You can now construct " + "<col=000080>" + "wooden larders" + "</col>" + " for your house.");
+				case 4:
+					return newstruct cs2func_script_3_struct(12, 8240, "Cider barrel", "You can now construct " + "<col=000080>" + "cider barrels" + "</col>" + " for your house.");
+				case 5:
+					return newstruct cs2func_script_3_struct(12, 8224, "Wooden shelves 2", "You can now construct " + "<col=000080>" + "wooden shelves 2" + "</col>" + " for your house, which provide " + "<col=000080>" + "kettles" + "</col>" + ", " + "<col=000080>" + "teapots" + "</col>" + ", " + "<col=000080>" + "cups" + "</col>" + " and " + "<col=000080>" + "beer glasses" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_3_struct(15, 8384, "Tool store 1", "You can now construct " + "<col=000080>" + "tool store 1" + "</col>" + " for your house, which provide " + "<col=000080>" + "saws" + "</col>" + ", " + "<col=000080>" + "hammers" + "</col>" + ", " + "<col=000080>" + "chisels" + "</col>" + " and " + "<col=000080>" + "shears" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_3_struct(18, 8241, "Asgarnian Ale barrel", "You can now construct " + "<col=000080>" + "Asgarnian Ale barrels" + "</col>" + " for your house.");
+				case 8:
+					return newstruct cs2func_script_3_struct(20, 8038, "Shoe box", "You can now construct " + "<col=000080>" + "shoe boxes" + "</col>" + " for your house.");
+				case 9:
+					return newstruct cs2func_script_3_struct(21, 8045, "Wooden shaving stand", "You can now construct " + "<col=000080>" + "wooden shaving stands" + "</col>" + " for your house.");
+				case 10:
+					return newstruct cs2func_script_3_struct(23, 8225, "Wooden shelves 3", "You can now construct " + "<col=000080>" + "wooden shelves 3" + "</col>" + " for your house, which provide " + "<col=000080>" + "kettles" + "</col>" + ", " + "<col=000080>" + "teapots" + "</col>" + ", " + "<col=000080>" + "cups" + "</col>" + ", " + "<col=000080>" + "beer glasses" + "</col>" + " and " + "<col=000080>" + "cake tins" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_3_struct(25, 8385, "Tool store 2", "You can now construct " + "<col=000080>" + "tool store 2" + "</col>" + " for your house, which provide " + "<col=000080>" + "buckets" + "</col>" + ", " + "<col=000080>" + "spades" + "</col>" + " and " + "<col=000080>" + "tinderboxes" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_3_struct(26, 8242, "Greenman's Ale barrel", "You can now construct " + "<col=000080>" + "Greenman's Ale barrels" + "</col>" + " for your house.");
+				case 13:
+					return newstruct cs2func_script_3_struct(27, 8039, "Oak chest of drawers", "You can now construct " + "<col=000080>" + "oak chests of drawers" + "</col>" + " for your house.");
+				case 14:
+					return newstruct cs2func_script_3_struct(29, 8046, "Oak shaving stand", "You can now construct " + "<col=000080>" + "oak shaving stands" + "</col>" + " for your house.");
+				case 15:
+					return newstruct cs2func_script_3_struct(29, 8320, "Oak bookcase", "You can now construct " + "<col=000080>" + "oak bookcases" + "</col>" + " for your house.");
+				case 16:
+					return newstruct cs2func_script_3_struct(33, 8234, "Oak larder", "You can now construct " + "<col=000080>" + "oak larders" + "</col>" + " for your house.");
+				case 17:
+					return newstruct cs2func_script_3_struct(34, 8226, "Oak shelves 1", "You can now construct " + "<col=000080>" + "oak shelves 1" + "</col>" + " for your house, which provide " + "<col=000080>" + "kettles" + "</col>" + ", " + "<col=000080>" + "teapots" + "</col>" + ", " + "<col=000080>" + "cups" + "</col>" + ", " + "<col=000080>" + "beer glasses" + "</col>" + ", " + "<col=000080>" + "cake tins" + "</col>" + " and " + "<col=000080>" + "bowls" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_3_struct(35, 8386, "Tool store 3", "You can now construct " + "<col=000080>" + "tool store 3" + "</col>" + " for your house, which provide " + "<col=000080>" + "brown aprons" + "</col>" + ", " + "<col=000080>" + "glassblowing pipes" + "</col>" + " and " + "<col=000080>" + "needles" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_3_struct(36, 8243, "Dragon Bitter barrel", "You can now construct " + "<col=000080>" + "Dragon Bitter barrels" + "</col>" + " for your house.");
+				case 20:
+					return newstruct cs2func_script_3_struct(37, 8047, "Oak dresser", "You can now construct " + "<col=000080>" + "oak dressers" + "</col>" + " for your house.");
+				case 21:
+					return newstruct cs2func_script_3_struct(39, 8040, "Oak wardrobe (bedroom)", "You can now construct " + "<col=000080>" + "oak wardrobes (bedroom)" + "</col>" + "  for your house.");
+				case 22:
+					return newstruct cs2func_script_3_struct(40, 8321, "Mahogany bookcase", "You can now construct " + "<col=000080>" + "mahogany bookcases" + "</col>" + " for your house.");
+				case 23:
+					return newstruct cs2func_script_3_struct(42, 9829, "Oak wardrobe", "You can now construct " + "<col=000080>" + "oak wardrobes" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_3_struct(43, 8235, "Teak larder", "You can now construct " + "<col=000080>" + "teak larders" + "</col>" + " for your house.");
+				case 25:
+					return newstruct cs2func_script_3_struct(44, 8387, "Tool store 4", "You can now construct " + "<col=000080>" + "tool store 4" + "</col>" + " for your house, which provide " + "<col=000080>" + "amulets" + "</col>" + ", " + "<col=000080>" + "necklaces" + "</col>" + ", " + "<col=000080>" + "rings" + "</col>" + ", " + "<col=000080>" + "holy symbols" + "</col>" + " and " + "<col=000080>" + "tiara moulds" + "</col>" + ".");
+				case 26:
+					return newstruct cs2func_script_3_struct(44, 9823, "Oak fancy dress box", "You can now construct " + "<col=000080>" + "oak fancy dress boxes" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 27:
+					return newstruct cs2func_script_3_struct(45, 8227, "Oak shelves 2", "You can now construct " + "<col=000080>" + "oak shelves 2" + "</col>" + " for your house, which provide " + "<col=000080>" + "kettles" + "</col>" + ", " + "<col=000080>" + "teapots" + "</col>" + ", " + "<col=000080>" + "cups" + "</col>" + ", " + "<col=000080>" + "beer glasses" + "</col>" + ", " + "<col=000080>" + "cake tins" + "</col>" + ", " + "<col=000080>" + "bowls" + "</col>" + " and " + "<col=000080>" + "pie dishes" + "</col>" + ".");
+				case 28:
+					return newstruct cs2func_script_3_struct(46, 8048, "Teak dresser", "You can now construct " + "<col=000080>" + "teak dressers" + "</col>" + " for your house.");
+				case 29:
+					return newstruct cs2func_script_3_struct(46, 9826, "Oak armour case", "You can now construct " + "<col=000080>" + "oak armour cases" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 30:
+					return newstruct cs2func_script_3_struct(48, 8244, "Chef's Delight barrel", "You can now construct " + "<col=000080>" + "Chef's Delight barrels" + "</col>" + " for your house.");
+				case 31:
+					return newstruct cs2func_script_3_struct(48, 9839, "Oak treasure chest", "You can now construct " + "<col=000080>" + "oak treasure chests" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 32:
+					return newstruct cs2func_script_3_struct(50, 9836, "Oak toy box", "You can now construct " + "<col=000080>" + "oak toy boxes" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 33:
+					return newstruct cs2func_script_3_struct(51, 8041, "Teak chest of drawers", "You can now construct " + "<col=000080>" + "teak chests of drawers" + "</col>" + " for your house.");
+				case 34:
+					return newstruct cs2func_script_3_struct(51, 9830, "Carved oak wardrobe", "You can now construct " + "<col=000080>" + "carved oak wardrobes" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 35:
+					return newstruct cs2func_script_3_struct(54, 9817, "Oak cape rack", "You can now construct " + "<col=000080>" + "oak cape racks" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 36:
+					return newstruct cs2func_script_3_struct(55, 8388, "Tool store 5", "You can now construct " + "<col=000080>" + "tool store 5" + "</col>" + " for your house, which provide " + "<col=000080>" + "rakes" + "</col>" + ", " + "<col=000080>" + "spades" + "</col>" + ", " + "<col=000080>" + "trowels" + "</col>" + ", " + "<col=000080>" + "seed dibbers" + "</col>" + " and " + "<col=000080>" + "watering cans" + "</col>" + ".");
+				case 37:
+					return newstruct cs2func_script_3_struct(56, 8049, "Fancy teak dresser", "You can now construct " + "<col=000080>" + "fancy teak dressers" + "</col>" + " for your house.");
+				case 38:
+					return newstruct cs2func_script_3_struct(56, 8228, "Teak shelves 1", "You can now construct " + "<col=000080>" + "teak shelves 1" + "</col>" + " for your house, which provide " + "<col=000080>" + "kettles" + "</col>" + ", " + "<col=000080>" + "teapots" + "</col>" + ", " + "<col=000080>" + "cups" + "</col>" + ", " + "<col=000080>" + "beer glasses" + "</col>" + ", " + "<col=000080>" + "cake tins" + "</col>" + ", " + "<col=000080>" + "bowls" + "</col>" + ", " + "<col=000080>" + "pie dishes" + "</col>" + " and " + "<col=000080>" + "pots" + "</col>" + ".");
+				case 39:
+					return newstruct cs2func_script_3_struct(60, 9831, "Teak wardrobe", "You can now construct " + "<col=000080>" + "teak wardrobes" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 40:
+					return newstruct cs2func_script_3_struct(62, 9824, "Teak fancy dress box", "You can now construct " + "<col=000080>" + "teak fancy dress boxes" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 41:
+					return newstruct cs2func_script_3_struct(63, 9818, "Teak cape rack", "You can now construct " + "<col=000080>" + "teak cape racks" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 42:
+					return newstruct cs2func_script_3_struct(63, 8042, "Teak wardrobe (bedroom)", "You can now construct " + "<col=000080>" + "teak wardrobes (bedroom)" + "</col>" + " for your house.");
+				case 43:
+					return newstruct cs2func_script_3_struct(64, 8050, "Mahogany dresser", "You can now construct " + "<col=000080>" + "mahogany dressers" + "</col>" + " for your house.");
+				case 44:
+					return newstruct cs2func_script_3_struct(64, 9827, "Teak armour case", "You can now construct " + "<col=000080>" + "teak armour cases" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 45:
+					return newstruct cs2func_script_3_struct(66, 9840, "Teak treasure chest", "You can now construct " + "<col=000080>" + "teak treasure chests" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 46:
+					return newstruct cs2func_script_3_struct(67, 8229, "Teak shelves 2", "You can now construct " + "<col=000080>" + "teak shelves 2" + "</col>" + " for your house, which provide " + "<col=000080>" + "kettles" + "</col>" + ", " + "<col=000080>" + "teapots" + "</col>" + ", " + "<col=000080>" + "cups" + "</col>" + ", " + "<col=000080>" + "beer glasses" + "</col>" + ", " + "<col=000080>" + "cake tins" + "</col>" + ", " + "<col=000080>" + "bowls" + "</col>" + ", " + "<col=000080>" + "pie dishes" + "</col>" + ", " + "<col=000080>" + "pots" + "</col>" + " and " + "<col=000080>" + "chef's hats" + "</col>" + ".");
+				case 47:
+					return newstruct cs2func_script_3_struct(68, 9837, "Teak toy box", "You can now construct " + "<col=000080>" + "teak toy boxes" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 48:
+					return newstruct cs2func_script_3_struct(69, 9832, "Carved teak wardrobe", "You can now construct " + "<col=000080>" + "carved teak wardrobes" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 49:
+					return newstruct cs2func_script_3_struct(72, 9819, "Mahogany cape rack", "You can now construct " + "<col=000080>" + "mahogany cape racks" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 50:
+					return newstruct cs2func_script_3_struct(74, 8051, "Gilded mahogany dresser", "You can now construct " + "<col=000080>" + "gilded mahogany dressers" + "</col>" + " for your house.");
+				case 51:
+					return newstruct cs2func_script_3_struct(75, 8043, "Mahogany wardrobe (bedroom)", "You can now construct " + "<col=000080>" + "mahogany wardrobes (bedroom)" + "</col>" + " for your house.");
+				case 52:
+					return newstruct cs2func_script_3_struct(78, 9833, "Mahogany wardrobe", "You can now construct " + "<col=000080>" + "mahogany wardrobes" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 53:
+					return newstruct cs2func_script_3_struct(80, 9825, "Mahogany fancy dress box", "You can now construct " + "<col=000080>" + "mahogany fancy dress boxes" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 54:
+					return newstruct cs2func_script_3_struct(81, 9820, "Gilded mahogany cape rack", "You can now construct " + "<col=000080>" + "gilded mahogany cape racks" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 55:
+					return newstruct cs2func_script_3_struct(82, 9828, "Mahogany armour case", "You can now construct " + "<col=000080>" + "mahogany armour cases" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 56:
+					return newstruct cs2func_script_3_struct(84, 9841, "Mahogany treasure chest", "You can now construct " + "<col=000080>" + "mahogany treasure chests" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 57:
+					return newstruct cs2func_script_3_struct(86, 9838, "Mahogany toy box", "You can now construct " + "<col=000080>" + "mahogany toy boxes" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 58:
+					return newstruct cs2func_script_3_struct(87, 8044, "Gilded mahogany wardrobe (bedroom)", "You can now construct " + "<col=000080>" + "gilded mahogany wardrobes (bedroom)" + "</col>" + " for your house.");
+				case 59:
+					return newstruct cs2func_script_3_struct(87, 9834, "Gilded mahogany wardrobe", "You can now construct " + "<col=000080>" + "gilded mahogany wardrobes" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 60:
+					return newstruct cs2func_script_3_struct(90, 9821, "Marble cape rack", "You can now construct " + "<col=000080>" + "marble cape racks" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 61:
+					return newstruct cs2func_script_3_struct(96, 9835, "Marble wardrobe", "You can now construct " + "<col=000080>" + "marble wardrobes" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+				case 62:
+					return newstruct cs2func_script_3_struct(99, 9822, "Magic stone cape rack", "You can now construct " + "<col=000080>" + "magic stone cape racks" + "</col>" + " for your " + "<col=000080>" + "costume room" + "</col>" + ".");
+			}
+			break;
+			case 4:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_3_struct(2, 8316, "Brown rug", "You can now make " + "<col=000080>" + "brown rugs" + "</col>" + " for your house.");
+				case 1:
+					return newstruct cs2func_script_3_struct(2, 8322, "Torn curtains", "You can now make " + "<col=000080>" + "torn curtains" + "</col>" + " for your house.");
+				case 2:
+					return newstruct cs2func_script_3_struct(13, 8317, "Rug", "You can now make " + "<col=000080>" + "rugs" + "</col>" + " for your house.");
+				case 3:
+					return newstruct cs2func_script_3_struct(18, 8323, "Curtains", "You can now make " + "<col=000080>" + "curtains" + "</col>" + " for your house.");
+				case 4:
+					return newstruct cs2func_script_3_struct(25, 8052, "Oak clock", "You can now construct " + "<col=000080>" + "oak clocks" + "</col>" + " for your house.");
+				case 5:
+					return newstruct cs2func_script_3_struct(40, 8334, "Oak lectern", "You can now construct " + "<col=000080>" + "oak lecterns" + "</col>" + " for your house.");
+				case 6:
+					return newstruct cs2func_script_3_struct(40, 8324, "Opulent curtains", "You can now make " + "<col=000080>" + "opulent curtains" + "</col>" + " for your house.");
+				case 7:
+					return newstruct cs2func_script_3_struct(41, 8341, "Globe", "You can now construct " + "<col=000080>" + "globes" + "</col>" + " for your house.");
+				case 8:
+					return newstruct cs2func_script_3_struct(43, 8354, "Alchemical chart", "You can now make " + "<col=000080>" + "alchemical charts" + "</col>" + " for your house.");
+				case 9:
+					return newstruct cs2func_script_3_struct(44, 8348, "Wooden telescope", "You can now construct " + "<col=000080>" + "wooden telescopes" + "</col>" + " for your house.");
+				case 10:
+					return newstruct cs2func_script_3_struct(47, 8335, "Oak eagle lectern", "You can now construct " + "<col=000080>" + "oak eagle lecterns" + "</col>" + " for your house.");
+				case 11:
+					return newstruct cs2func_script_3_struct(47, 8336, "Oak demon lectern", "You can now construct " + "<col=000080>" + "oak demon lecterns" + "</col>" + " for your house.");
+				case 12:
+					return newstruct cs2func_script_3_struct(50, 8342, "Ornamental globe", "You can now construct " + "<col=000080>" + "ornamental globes" + "</col>" + " for your house.");
+				case 13:
+					return newstruct cs2func_script_3_struct(55, 8053, "Teak clock", "You can now construct " + "<col=000080>" + "teak clocks" + "</col>" + " for your house.");
+				case 14:
+					return newstruct cs2func_script_3_struct(57, 8337, "Teak eagle lectern", "You can now construct " + "<col=000080>" + "teak eagle lecterns" + "</col>" + " for your house.");
+				case 15:
+					return newstruct cs2func_script_3_struct(57, 8338, "Teak demon lectern", "You can now construct " + "<col=000080>" + "teak demon lecterns" + "</col>" + " for your house.");
+				case 16:
+					return newstruct cs2func_script_3_struct(59, 8343, "Lunar globe", "You can now construct " + "<col=000080>" + "lunar globes" + "</col>" + " for your house.");
+				case 17:
+					return newstruct cs2func_script_3_struct(63, 8355, "Astronomical chart", "You can now make " + "<col=000080>" + "astronomical charts" + "</col>" + " for your house.");
+				case 18:
+					return newstruct cs2func_script_3_struct(64, 8349, "Teak telescope", "You can now construct " + "<col=000080>" + "teak telescopes" + "</col>" + " for your house.");
+				case 19:
+					return newstruct cs2func_script_3_struct(65, 8318, "Opulent rug", "You can now make " + "<col=000080>" + "opulent rugs" + "</col>" + " for your house.");
+				case 20:
+					return newstruct cs2func_script_3_struct(67, 8339, "Mahogany eagle lectern", "You can now construct " + "<col=000080>" + "mahogany eagle lecterns" + "</col>" + " for your house.");
+				case 21:
+					return newstruct cs2func_script_3_struct(67, 8340, "Mahogany demon lectern", "You can now construct " + "<col=000080>" + "mahogany demon lecterns" + "</col>" + " for your house.");
+				case 22:
+					return newstruct cs2func_script_3_struct(68, 8344, "Celestial globe", "You can now construct " + "<col=000080>" + "celestial globes" + "</col>" + " for your house.");
+				case 23:
+					return newstruct cs2func_script_3_struct(72, 8128, "Dungeon candles", "You can now make " + "<col=000080>" + "dungeon candles" + "</col>" + " for your house.");
+				case 24:
+					return newstruct cs2func_script_3_struct(72, 8125, "Decorative dungeon bloodstain", "You can now put " + "<col=000080>" + "decorative dungeon bloodstains" + "</col>" + " in your house.");
+				case 25:
+					return newstruct cs2func_script_3_struct(77, 8345, "Armillary sphere", "You can now construct " + "<col=000080>" + "armillary spheres" + "</col>" + " for your house.");
+				case 26:
+					return newstruct cs2func_script_3_struct(83, 8356, "Infernal chart", "You can now make " + "<col=000080>" + "infernal charts" + "</col>" + " for your house.");
+				case 27:
+					return newstruct cs2func_script_3_struct(83, 8126, "Decorative dungeon pipe", "You can now construct " + "<col=000080>" + "decorative dungeon pipes" + "</col>" + " for your house.");
+				case 28:
+					return newstruct cs2func_script_3_struct(84, 8129, "Dungeon torches", "You can now make " + "<col=000080>" + "dungeon torches" + "</col>" + " for your house.");
+				case 29:
+					return newstruct cs2func_script_3_struct(84, 8350, "Mahogany 'scope", "You can now construct " + "<col=000080>" + "mahogany 'scopes" + "</col>" + " for your house.");
+				case 30:
+					return newstruct cs2func_script_3_struct(85, 8054, "Gilded mahogany clock", "You can now construct " + "<col=000080>" + "gilded mahogany clocks" + "</col>" + " for your house.");
+				case 31:
+					return newstruct cs2func_script_3_struct(86, 8346, "Small orrery", "You can now construct " + "<col=000080>" + "small orreries" + "</col>" + " for your house.");
+				case 32:
+					return newstruct cs2func_script_3_struct(94, 8127, "Hanging dungeon skeleton", "You can now put " + "<col=000080>" + "hanging dungeon skeletons" + "</col>" + " in your house.");
+				case 33:
+					return newstruct cs2func_script_3_struct(94, 8130, "Dungeon skull torches", "You can now make " + "<col=000080>" + "dungeon skull torches" + "</col>" + " for your house.");
+				case 34:
+					return newstruct cs2func_script_3_struct(95, 8347, "Large orrery", "You can now construct " + "<col=000080>" + "large orreries" + "</col>" + " for your house.");
+			}
+			break;
+			case 5:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_3_struct(16, 8102, "Oak wall decoration", "You can now display " + "<col=000080>" + "oak wall decorations" + "</col>" + " in your house.");
+				case 1:
+					return newstruct cs2func_script_3_struct(28, 8085, "Suit of armour", "You can now display a " + "<col=000080>" + "suit of armour" + "</col>" + " in your house.");
+				case 2:
+					return newstruct cs2func_script_3_struct(35, 8086, "Small portrait", "You can now display " + "<col=000080>" + "small portraits" + "</col>" + " in your house.");
+				case 3:
+					return newstruct cs2func_script_3_struct(36, 8267, "Mounted bass", "You can now display " + "<col=000080>" + "mounted bass" + "</col>" + " in your house.");
+				case 4:
+					return newstruct cs2func_script_3_struct(36, 8103, "Teak wall decoration", "You can now display " + "<col=000080>" + "teak wall decorations" + "</col>" + " in your house.");
+				case 5:
+					return newstruct cs2func_script_3_struct(38, 8087, "Minor Slayer monster head", "You can now display " + "<col=000080>" + "minor Slayer monster heads" + "</col>" + " in your house.");
+				case 6:
+					return newstruct cs2func_script_3_struct(38, 8294, "Small map", "You can now display " + "<col=000080>" + "small maps" + "</col>" + " in your house.");
+				case 7:
+					return newstruct cs2func_script_3_struct(41, 8095, "Rune display case", "You can now put " + "<col=000080>" + "rune display cases" + "</col>" + " in your house.");
+				case 8:
+					return newstruct cs2func_script_3_struct(42, 8090, "Mounted sword", "You can now display " + "<col=000080>" + "mounted swords" + "</col>" + " in your house.");
+				case 9:
+					return newstruct cs2func_script_3_struct(44, 8091, "Small landscape", "You can now display " + "<col=000080>" + "small landscapes" + "</col>" + " in your house.");
+				case 10:
+					return newstruct cs2func_script_3_struct(47, 8092, "Guild trophy", "You can now display " + "<col=000080>" + "guild trophies" + "</col>" + " in your house.");
+				case 11:
+					return newstruct cs2func_script_3_struct(55, 8093, "Large portrait", "You can now display " + "<col=000080>" + "large portraits" + "</col>" + " in your house.");
+				case 12:
+					return newstruct cs2func_script_3_struct(56, 8104, "Gilded mahogany wall decoration", "You can now display " + "<col=000080>" + "gilded mahogany wall decorations" + "</col>" + " in your house.");
+				case 13:
+					return newstruct cs2func_script_3_struct(56, 8268, "Mounted swordfish", "You can now display " + "<col=000080>" + "mounted swordfish" + "</col>" + " in your house.");
+				case 14:
+					return newstruct cs2func_script_3_struct(58, 8295, "Medium map", "You can now display " + "<col=000080>" + "medium maps" + "</col>" + " in your house.");
+				case 15:
+					return newstruct cs2func_script_3_struct(58, 8088, "Medium Slayer monster head", "You can now display " + "<col=000080>" + "medium Slayer monster heads" + "</col>" + " in your house.");
+				case 16:
+					return newstruct cs2func_script_3_struct(65, 8094, "Large landscape", "You can now display " + "<col=000080>" + "large landscapes" + "</col>" + " in your house.");
+				case 17:
+					return newstruct cs2func_script_3_struct(66, 8105, "Round wall-mounted shield", "You can now display " + "<col=000080>" + "round wall-mounted shields" + "</col>" + " in your house.");
+				case 18:
+					return newstruct cs2func_script_3_struct(76, 8269, "Mounted shark", "You can now display " + "<col=000080>" + "mounted shark" + "</col>" + " in your house.");
+				case 19:
+					return newstruct cs2func_script_3_struct(76, 8106, "Square wall-mounted shield", "You can now display " + "<col=000080>" + "square wall-mounted shields" + "</col>" + " in your house.");
+				case 20:
+					return newstruct cs2func_script_3_struct(78, 8089, "Major Slayer monster head", "You can now display " + "<col=000080>" + "major Slayer monster heads" + "</col>" + " in your house.");
+				case 21:
+					return newstruct cs2func_script_3_struct(78, 8296, "Large map", "You can now display " + "<col=000080>" + "large maps" + "</col>" + " in your house.");
+				case 22:
+					return newstruct cs2func_script_3_struct(86, 8107, "Wall-mounted kiteshield", "You can now display " + "<col=000080>" + "wall-mounted kiteshields" + "</col>" + " in your house.");
+			}
+			break;
+			case 6:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_3_struct(30, 8162, "Hoop-and-stick game", "You can now construct " + "<col=000080>" + "hoop-and-stick games" + "</col>" + " for your " + "<col=000080>" + "games room" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_3_struct(32, 8023, "Boxing ring", "You can now construct " + "<col=000080>" + "boxing rings" + "</col>" + " for your " + "<col=000080>" + "combat room" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_3_struct(34, 8028, "Boxing glove rack", "You can now construct " + "<col=000080>" + "boxing glove racks" + "</col>" + " for your " + "<col=000080>" + "combat room" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_3_struct(34, 8165, "Oak prize chest", "You can now construct " + "<col=000080>" + "oak prize chests" + "</col>" + " for your " + "<col=000080>" + "games room" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_3_struct(37, 8156, "Lesser magical balance", "You can now construct " + "<col=000080>" + "lesser magical balances" + "</col>" + " for your " + "<col=000080>" + "games room" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_3_struct(39, 8159, "Jester game", "You can now construct " + "<col=000080>" + "jester games" + "</col>" + " for your " + "<col=000080>" + "games room" + "</col>");
+				case 6:
+					return newstruct cs2func_script_3_struct(39, 8153, "Clay attack stone", "You can now construct " + "<col=000080>" + "clay attack stones" + "</col>" + " for your " + "<col=000080>" + "games room" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_3_struct(41, 8024, "Fencing ring", "You can now construct " + "<col=000080>" + "fencing rings" + "</col>" + " for your " + "<col=000080>" + "combat room" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_3_struct(44, 8029, "Weapons rack", "You can now construct " + "<col=000080>" + "weapons racks" + "</col>" + " for your " + "<col=000080>" + "combat room" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_3_struct(44, 8166, "Teak prize chest", "You can now construct " + "<col=000080>" + "teak prize chests" + "</col>" + " for your " + "<col=000080>" + "games room" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_3_struct(49, 8160, "Treasure hunt fairy house", "You can now construct " + "<col=000080>" + "treasure hunt fairy houses" + "</col>" + " for your " + "<col=000080>" + "games room" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_3_struct(51, 8025, "Combat ring", "You can now construct " + "<col=000080>" + "combat rings" + "</col>" + " for your " + "<col=000080>" + "combat room" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_3_struct(54, 8163, "Dartboard", "You can now construct " + "<col=000080>" + "dartboards" + "</col>" + " for your " + "<col=000080>" + "games room" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_3_struct(54, 8030, "Upgraded weapons rack", "You can now construct " + "<col=000080>" + "upgraded weapons racks" + "</col>" + " for your " + "<col=000080>" + "combat room" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_3_struct(54, 8167, "Mahogany prize chest", "You can now construct " + "<col=000080>" + "mahogany prize chests" + "</col>" + " for your " + "<col=000080>" + "games room" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_3_struct(57, 8157, "Medium balance", "You can now construct " + "<col=000080>" + "medium balances" + "</col>" + " for your " + "<col=000080>" + "games room" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_3_struct(59, 8154, "Limestone attack stone", "You can now construct " + "<col=000080>" + "limestone attack stones" + "</col>" + " for your " + "<col=000080>" + "games room" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_3_struct(59, 8161, "Hangman game", "You can now construct " + "<col=000080>" + "hangman games" + "</col>" + " for your " + "<col=000080>" + "games room" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_3_struct(71, 8026, "Ranging pedestals", "You can now construct " + "<col=000080>" + "ranging pedestals" + "</col>" + " for your " + "<col=000080>" + "combat room" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_3_struct(77, 8158, "Greater magical balance", "You can now add " + "<col=000080>" + "greater magic balances" + "</col>" + " for your " + "<col=000080>" + "games room" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_3_struct(79, 8155, "Marble attack stone", "You can now construct " + "<col=000080>" + "marble attack stones" + "</col>" + " for your " + "<col=000080>" + "games room" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_3_struct(81, 8164, "Archery target", "You can now construct " + "<col=000080>" + "archery targets" + "</col>" + " for your " + "<col=000080>" + "games room" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_3_struct(81, 8027, "Balance beam", "You can now construct " + "<col=000080>" + "balance beams" + "</col>" + " for your " + "<col=000080>" + "games room" + "</col>" + ".");
+			}
+			break;
+			case 7:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_3_struct(1, 8168, "Exit portal", "You can now build an " + "<col=000080>" + "exit portal" + "</col>" + " for your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_3_struct(1, 8096, "Low-level plants", "You can now put " + "<col=000080>" + "low-level plants" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_3_struct(5, 8169, "Decorative rock", "You can now put " + "<col=000080>" + "decorative rocks" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_3_struct(5, 8173, "Tree", "You can now plant " + "<col=000080>" + "trees" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_3_struct(6, 8097, "Mid-level plants", "You can now put " + "<col=000080>" + "mid-level plants" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_3_struct(10, 8170, "Pond", "You can now put a " + "<col=000080>" + "pond" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_3_struct(10, 8174, "Nice tree", "You can now plant " + "<col=000080>" + "nice trees" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_3_struct(12, 8098, "High-level plants", "You can now put " + "<col=000080>" + "high-level plants" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_3_struct(15, 8171, "Imp statue", "You can now put " + "<col=000080>" + "imp statues" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_3_struct(15, 8175, "Oak tree", "You can now plant " + "<col=000080>" + "oak trees" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_3_struct(30, 8176, "Willow tree", "You can now plant " + "<col=000080>" + "willow trees" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_3_struct(45, 8177, "Maple tree", "You can now plant " + "<col=000080>" + "maple trees" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_3_struct(55, 8196, "Boundary stones", "You can now put " + "<col=000080>" + "boundary stones" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_3_struct(56, 8203, "Thorny hedge", "You can now plant " + "<col=000080>" + "thorny hedges" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_3_struct(59, 8197, "Wooden fence", "You can now put " + "<col=000080>" + "wooden fences" + "</col>" + " around your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_3_struct(60, 8204, "Nice hedge", "You can now plant " + "<col=000080>" + "nice hedges" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_3_struct(60, 8178, "Yew tree", "You can now plant " + "<col=000080>" + "yew trees" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_3_struct(63, 8198, "Stone wall", "You can now put " + "<col=000080>" + "stone walls" + "</col>" + " around your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_3_struct(64, 8205, "Small box hedge", "You can now plant " + "<col=000080>" + "small box hedges" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_3_struct(65, 8192, "Gazebo", "You can now put " + "<col=000080>" + "gazebos" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_3_struct(66, 8213, "Sunflower", "You can now plant " + "<col=000080>" + "sunflowers" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_3_struct(66, 8210, "Rosemary", "You can now plant " + "<col=000080>" + "rosemary" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_3_struct(67, 8199, "Iron railings", "You can now put " + "<col=000080>" + "iron railings" + "</col>" + " around your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_3_struct(68, 8206, "Topiary hedge", "You can now plant " + "<col=000080>" + "topiary hedges" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_3_struct(70, 8172, "Dungeon entrance", "You can now put " + "<col=000080>" + "dungeon entrances" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 25:
+					return newstruct cs2func_script_3_struct(71, 8214, "Marigolds", "You can now plant " + "<col=000080>" + "marigolds" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 26:
+					return newstruct cs2func_script_3_struct(71, 8211, "Daffodils", "You can now plant " + "<col=000080>" + "daffodils" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 27:
+					return newstruct cs2func_script_3_struct(71, 8200, "Picket fence", "You can now put " + "<col=000080>" + "picket fences" + "</col>" + " around your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 28:
+					return newstruct cs2func_script_3_struct(71, 8193, "Small fountain", "You can now put " + "<col=000080>" + "small fountains" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 29:
+					return newstruct cs2func_script_3_struct(72, 8207, "Fancy hedge", "You can now put " + "<col=000080>" + "fancy hedges" + "</col>" + " around your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 30:
+					return newstruct cs2func_script_3_struct(75, 8179, "Magic tree", "You can now plant " + "<col=000080>" + "magic trees" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 31:
+					return newstruct cs2func_script_3_struct(75, 8194, "Large fountain", "You can now put " + "<col=000080>" + "large fountains" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 32:
+					return newstruct cs2func_script_3_struct(75, 8201, "Garden fence", "You can now put " + "<col=000080>" + "garden fences" + "</col>" + " around your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 33:
+					return newstruct cs2func_script_3_struct(76, 8208, "Tall fancy hedge", "You can now plant " + "<col=000080>" + "tall fancy hedges" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 34:
+					return newstruct cs2func_script_3_struct(76, 8215, "Roses", "You can now plant " + "<col=000080>" + "roses" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 35:
+					return newstruct cs2func_script_3_struct(76, 8212, "Bluebells", "You can now plant " + "<col=000080>" + "bluebells" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 36:
+					return newstruct cs2func_script_3_struct(79, 8202, "Marble wall", "You can now put " + "<col=000080>" + "marble walls" + "</col>" + " around your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 37:
+					return newstruct cs2func_script_3_struct(80, 8209, "Tall box hedge", "You can now plant " + "<col=000080>" + "tall box hedges" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+				case 38:
+					return newstruct cs2func_script_3_struct(81, 8195, "Posh fountain", "You can now put " + "<col=000080>" + "posh fountains" + "</col>" + " in your " + "<col=000080>" + "garden" + "</col>" + ".");
+			}
+			break;
+			case 8:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_3_struct(61, 8370, "Throne room floor decoration", "You can now add " + "<col=000080>" + "floor decorations" + "</col>" + " to your " + "<col=000080>" + "throne room" + "</col>" + " floor.");
+				case 1:
+					return newstruct cs2func_script_3_struct(65, 8297, "Oak cage", "You can add " + "<col=000080>" + "oak cages" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_3_struct(65, 8302, "Oubliette spikes", "You can now add " + "<col=000080>" + "oubliette spikes" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_3_struct(68, 8371, "Steel cage", "You can now add " + "<col=000080>" + "steel cages" + "</col>" + " to your " + "<col=000080>" + "throne room" + "</col>" + " floor.");
+				case 4:
+					return newstruct cs2func_script_3_struct(70, 8298, "Oak and steel cage", "You can now add " + "<col=000080>" + "oak and steel cages" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_3_struct(70, 8131, "Skeleton guard", "You can now add " + "<col=000080>" + "skeleton guards" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_3_struct(70, 18791, "Pit dog", "You can now add " + "<col=000080>" + "pit dogs" + "</col>" + " to your dungeon pits (after Love Story).");
+				case 7:
+					return newstruct cs2func_script_3_struct(71, 8303, "Tentacle pool", "You can now add " + "<col=000080>" + "tentacle pools" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_3_struct(71, 18797, "Minor pit trap", "You can now add " + "<col=000080>" + "minor traps" + "</col>" + " to your dungeon pits (after Love Story).");
+				case 9:
+					return newstruct cs2func_script_3_struct(72, 8143, "Spike trap", "You can now add " + "<col=000080>" + "spike traps" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_3_struct(73, 18792, "Pit ogre", "You can now add " + "<col=000080>" + "pit ogres" + "</col>" + " to your dungeon pits (after Love Story).");
+				case 11:
+					return newstruct cs2func_script_3_struct(74, 8372, "Large trapdoor", "You can now add " + "<col=000080>" + "large trapdoors" + "</col>" + " to your " + "<col=000080>" + "throne room" + "</col>" + " floor.");
+				case 12:
+					return newstruct cs2func_script_3_struct(74, 8122, "Oak dungeon door", "You can now add " + "<col=000080>" + "oak dungeon doors" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_3_struct(74, 8132, "Guard dog", "You can now add " + "<col=000080>" + "guard dogs" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_3_struct(75, 8148, "Wooden dungeon treasure crate", "You can now add " + "<col=000080>" + "wooden dungeon treasure crates" + "</col>" + " to your " + "<col=000080>" + "treasure room" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_3_struct(75, 8138, "Demon", "You can now add " + "<col=000080>" + "demons" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_3_struct(75, 8299, "Steel cage", "You can now add " + "<col=000080>" + "steel cages" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_3_struct(76, 8144, "Man trap", "You can now add " + "<col=000080>" + "man traps" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_3_struct(77, 8304, "Oubliette flame pit", "You can now add " + "<col=000080>" + "oubliette flame pits" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_3_struct(78, 8133, "Hobgoblin guard", "You can now add " + "<col=000080>" + "hobgoblin guards" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_3_struct(79, 8149, "Oak dungeon treasure chest", "You can now add " + "<col=000080>" + "oak dungeon treasure chests" + "</col>" + " to your " + "<col=000080>" + "treasure room" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_3_struct(79, 18793, "Pit rock protector", "You can now add " + "<col=000080>" + "pit rock protectors" + "</col>" + " to your dungeon pits (after Love Story).");
+				case 22:
+					return newstruct cs2func_script_3_struct(80, 8300, "Spiked cage", "You can now add " + "<col=000080>" + "spiked cages" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_3_struct(80, 8145, "Tangle vine", "You can now add " + "<col=000080>" + "tangle vines" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_3_struct(80, 8139, "Kalphite soldier", "You can now add " + "<col=000080>" + "kalphite soldiers" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 25:
+					return newstruct cs2func_script_3_struct(82, 8373, "Lesser magic cage", "You can now add " + "<col=000080>" + "lesser magic cages" + "</col>" + " to your " + "<col=000080>" + "throne room" + "</col>" + " floor.");
+				case 26:
+					return newstruct cs2func_script_3_struct(82, 8134, "Baby red dragon", "You can now add " + "<col=000080>" + "baby red dragons" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 27:
+					return newstruct cs2func_script_3_struct(83, 8150, "Teak dungeon treasure chest", "You can now add " + "<col=000080>" + "teak dungeon treasure chests" + "</col>" + " to your " + "<col=000080>" + "treasure room" + "</col>" + ".");
+				case 28:
+					return newstruct cs2func_script_3_struct(83, 8305, "Rocnar", "You can now add " + "<col=000080>" + "rocnars" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 29:
+					return newstruct cs2func_script_3_struct(83, 18798, "Major pit trap", "You can now add " + "<col=000080>" + "major traps" + "</col>" + " to your dungeon pits (after Love Story).");
+				case 30:
+					return newstruct cs2func_script_3_struct(84, 8123, "Steel-plated oak door", "You can now add " + "<col=000080>" + "steel-plated oak doors" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 31:
+					return newstruct cs2func_script_3_struct(84, 8146, "Marble trap", "You can now add " + "<col=000080>" + "marble traps" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 32:
+					return newstruct cs2func_script_3_struct(84, 18794, "Pit scabarite", "You can now add " + "<col=000080>" + "pit scarabites" + "</col>" + " to your dungeon pits (after Love Story).");
+				case 33:
+					return newstruct cs2func_script_3_struct(85, 8140, "Tok-Xil", "You can now add " + "<col=000080>" + "Tok-Xil" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 34:
+					return newstruct cs2func_script_3_struct(85, 8301, "Bone cage", "You can now add " + "<col=000080>" + "bone cages" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 35:
+					return newstruct cs2func_script_3_struct(86, 8135, "Huge spider", "You can now add " + "<col=000080>" + "huge spiders" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 36:
+					return newstruct cs2func_script_3_struct(87, 8151, "Mahogany dungeon treasure chest", "You can now add " + "<col=000080>" + "mahogany dungeon treasure chests" + "</col>" + " to your " + "<col=000080>" + "treasure room" + "</col>" + ".");
+				case 37:
+					return newstruct cs2func_script_3_struct(88, 8147, "Teleport trap", "You can now add " + "<col=000080>" + "teleport traps" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 38:
+					return newstruct cs2func_script_3_struct(89, 8374, "Greater magic cage", "You can now add " + "<col=000080>" + "greater magic cages" + "</col>" + " to your " + "<col=000080>" + "throne room" + "</col>" + " floor.");
+				case 39:
+					return newstruct cs2func_script_3_struct(89, 18795, "Pit black demon", "You can now add " + "<col=000080>" + "pit black demons" + "</col>" + " to your dungeon pits (after Love Story).");
+				case 40:
+					return newstruct cs2func_script_3_struct(90, 8136, "Troll guard", "You can now add " + "<col=000080>" + "troll guards" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 41:
+					return newstruct cs2func_script_3_struct(90, 8141, "Dagannoth", "You can now add " + "<col=000080>" + "dagannoths" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 42:
+					return newstruct cs2func_script_3_struct(91, 8152, "Magic dungeon treasure chest", "You can now add " + "<col=000080>" + "magic dungeon treasure chests" + "</col>" + " to your " + "<col=000080>" + "treasure room" + "</col>" + ".");
+				case 43:
+					return newstruct cs2func_script_3_struct(94, 8124, "Marble dungeon door", "You can now add " + "<col=000080>" + "marble dungeon doors" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 44:
+					return newstruct cs2func_script_3_struct(94, 8137, "Hellhound", "You can now add " + "<col=000080>" + "hellhounds" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 45:
+					return newstruct cs2func_script_3_struct(95, 8142, "Steel dragon", "You can now add " + "<col=000080>" + "steel dragons" + "</col>" + " to your " + "<col=000080>" + "dungeon" + "</col>" + ".");
+				case 46:
+					return newstruct cs2func_script_3_struct(96, 18799, "Superior pit trap", "You can now add " + "<col=000080>" + "superior traps" + "</col>" + " to your dungeon pits (after Love Story).");
+				case 47:
+					return newstruct cs2func_script_3_struct(97, 18796, "Pit iron dragon", "You can now add " + "<col=000080>" + "pit iron dragons" + "</col>" + " to your dungeon pits (after Love Story).");
+			}
+			break;
+			case 9:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_3_struct(45, 8062, "Oak altar", "You can now construct " + "<col=000080>" + "oak altars" + "</col>" + " for your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_3_struct(45, 8070, "Steel torches", "You can now add " + "<col=000080>" + "steel torches" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_3_struct(48, 8055, "Symbol of Saradomin", "You can now add " + "<col=000080>" + "symbols of Saradomin" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_3_struct(48, 8057, "Symbol of Guthix", "You can now add " + "<col=000080>" + "symbols of Guthix" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_3_struct(48, 8056, "Symbol of Zamorak", "You can now add " + "<col=000080>" + "symbols of Zamorak" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_3_struct(49, 8069, "Wooden torches", "You can now add " + "<col=000080>" + "wooden torches" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_3_struct(49, 8079, "Chapel windchimes", "You can now add " + "<col=000080>" + "chapel windchimes" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_3_struct(49, 8082, "Small chapel statue", "You can now construct " + "<col=000080>" + "small chapel statues" + "</col>" + " for your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_3_struct(49, 8076, "Shuttered chapel window", "You can now add " + "<col=000080>" + "shuttered windows" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_3_struct(50, 8063, "Teak altar", "You can now construct " + "<col=000080>" + "teak altars" + "</col>" + " for your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_3_struct(53, 8071, "Steel candlesticks", "You can now add " + "<col=000080>" + "steel candlesticks" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_3_struct(56, 8064, "Cloth-covered teak altar", "You can now add " + "<col=000080>" + "cloth-covered teak altars" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_3_struct(57, 8072, "Gold candlesticks", "You can now add " + "<col=000080>" + "gold candlesticks" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_3_struct(58, 8080, "Chapel bells", "You can now add " + "<col=000080>" + "chapel bells" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_3_struct(59, 8058, "Icon of Saradomin", "You can now add " + "<col=000080>" + "icons of Saradomin" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_3_struct(59, 8060, "Icon of Guthix", "You can now add " + "<col=000080>" + "icons of Guthix" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_3_struct(59, 8059, "Icon of Zamorak", "You can now add " + "<col=000080>" + "icons of Zamorak" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_3_struct(60, 8065, "Cloth-covered mahogany altar", "You can now construct " + "<col=000080>" + "cloth-covered mahogany altars" + "</col>" + " for your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_3_struct(61, 8073, "Oak incense burners", "You can now add " + "<col=000080>" + "oak incense burners" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_3_struct(64, 8066, "Limestone altar", "You can now construct " + "<col=000080>" + "limestone altars" + "</col>" + " for your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_3_struct(65, 8074, "Mahogany incense burners", "You can now add " + "<col=000080>" + "mahogany incense burners" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_3_struct(69, 8083, "Medium chapel statue", "You can now add " + "<col=000080>" + "medium chapel statues" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_3_struct(69, 8081, "Chapel organ", "You can now add " + "<col=000080>" + "organs" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_3_struct(69, 8077, "Decorative chapel window", "You can now add " + "<col=000080>" + "decorative windows" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_3_struct(69, 8075, "Marble incense burner", "You can now add " + "<col=000080>" + "marble incense burners" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 25:
+					return newstruct cs2func_script_3_struct(70, 8067, "Marble altar", "You can now construct " + "<col=000080>" + "marble altars" + "</col>" + " for your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 26:
+					return newstruct cs2func_script_3_struct(71, 8061, "Icon of Bob the Cat", "You can now add " + "<col=000080>" + "icons of Bob the Cat" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 27:
+					return newstruct cs2func_script_3_struct(75, 8068, "Gilded marble altar", "You can now construct " + "<col=000080>" + "gilded marble altars" + "</col>" + " for your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 28:
+					return newstruct cs2func_script_3_struct(89, 8084, "Large chapel statue", "You can now add " + "<col=000080>" + "large chapel statues" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+				case 29:
+					return newstruct cs2func_script_3_struct(89, 8078, "Stained-glass chapel window", "You can now add " + "<col=000080>" + "stained-glass windows" + "</col>" + " to your " + "<col=000080>" + "chapel" + "</col>" + ".");
+			}
+			break;
+			case 10:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_3_struct(5, 8236, "Cat blanket", "You can now add " + "<col=000080>" + "cat blankets" + "</col>" + " to your house.");
+				case 1:
+					return newstruct cs2func_script_3_struct(19, 8237, "Cat basket", "You can now add " + "<col=000080>" + "cat baskets" + "</col>" + " to your house.");
+				case 2:
+					return newstruct cs2func_script_3_struct(26, 8099, "Rope bell pull", "You can now add " + "<col=000080>" + "rope bell pulls" + "</col>" + " to your house.");
+				case 3:
+					return newstruct cs2func_script_3_struct(27, 8249, "Oak staircase", "You can now construct " + "<col=000080>" + "oak staircases" + "</col>" + " for your house.");
+				case 4:
+					return newstruct cs2func_script_3_struct(33, 8238, "Cushioned cat basket", "You can now add " + "<col=000080>" + "cushioned cat baskets" + "</col>" + " to your house.");
+				case 5:
+					return newstruct cs2func_script_3_struct(37, 8100, "Teak bell pull", "You can now add " + "<col=000080>" + "teak bell pulls" + "</col>" + " to your house.");
+				case 6:
+					return newstruct cs2func_script_3_struct(42, 8351, "Crystal ball", "You can now add " + "<col=000080>" + "crystal balls" + "</col>" + " to your house.");
+				case 7:
+					return newstruct cs2func_script_3_struct(48, 8252, "Teak staircase", "You can now construct " + "<col=000080>" + "teak staircases" + "</col>" + " for your house.");
+				case 8:
+					return newstruct cs2func_script_3_struct(50, 8328, "Teak portal frame", "You can now construct " + "<col=000080>" + "teak portal frames" + "</col>" + " for your house.");
+				case 9:
+					return newstruct cs2func_script_3_struct(50, 8331, "Teleport focus", "You can now construct " + "<col=000080>" + "teleport focuses" + "</col>" + " for your house.");
+				case 10:
+					return newstruct cs2func_script_3_struct(54, 8352, "Elemental sphere", "You can now add " + "<col=000080>" + "elemental spheres" + "</col>" + " to your house.");
+				case 11:
+					return newstruct cs2func_script_3_struct(60, 8101, "Gilded teak bell pull", "You can now add " + "<col=000080>" + "gilded teak bell pulls" + "</col>" + " to your house.");
+				case 12:
+					return newstruct cs2func_script_3_struct(65, 8332, "Greater teleport focus", "You can now construct " + "<col=000080>" + "greater teleport focuses" + "</col>" + " for your house.");
+				case 13:
+					return newstruct cs2func_script_3_struct(65, 8329, "Mahogany portal frame", "You can now construct " + "<col=000080>" + "mahogany portal frames" + "</col>" + " for your house.");
+				case 14:
+					return newstruct cs2func_script_3_struct(66, 8353, "Crystal of power", "You can now make " + "<col=000080>" + "crystals of power" + "</col>" + " for your house.");
+				case 15:
+					return newstruct cs2func_script_3_struct(67, 8258, "Limestone spiral staircase", "You can now construct " + "<col=000080>" + "limestone spiral staircases" + "</col>" + " for your house.");
+				case 16:
+					return newstruct cs2func_script_3_struct(68, 8306, "Oak oubliette ladder", "You can now construct " + "<col=000080>" + "oak oubliette ladders" + "</col>" + " for your house.");
+				case 17:
+					return newstruct cs2func_script_3_struct(68, 8364, "Oak lever", "You can now construct " + "<col=000080>" + "oak levers" + "</col>" + " for your house.");
+				case 18:
+					return newstruct cs2func_script_3_struct(68, 8367, "Oak trapdoor", "You can now make " + "<col=000080>" + "oak trapdoors" + "</col>" + " for your " + "<col=000080>" + "throne room" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_3_struct(78, 8307, "Teak oubliette ladder", "You can now construct " + "<col=000080>" + "teak oubliette ladders" + "</col>" + " for your house.");
+				case 20:
+					return newstruct cs2func_script_3_struct(78, 8365, "Teak lever", "You can now construct " + "<col=000080>" + "teak levers" + "</col>" + " for your house.");
+				case 21:
+					return newstruct cs2func_script_3_struct(78, 8368, "Teak trapdoor", "You can now construct " + "<col=000080>" + "teak trapdoors" + "</col>" + " for your " + "<col=000080>" + "throne room" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_3_struct(80, 8330, "Marble portal frame", "You can now construct " + "<col=000080>" + "marble portal frames" + "</col>" + " for your house.");
+				case 23:
+					return newstruct cs2func_script_3_struct(80, 8333, "Scrying pool", "You can now construct " + "<col=000080>" + "scrying pools" + "</col>" + " for your house.");
+				case 24:
+					return newstruct cs2func_script_3_struct(82, 8255, "Marble staircase", "You can now construct a " + "<col=000080>" + "marble staircase" + "</col>" + " for your house.");
+				case 25:
+					return newstruct cs2func_script_3_struct(88, 8308, "Mahogany oubliette ladder", "You can now construct " + "<col=000080>" + "mahogany oubliette ladders" + "</col>" + " for your house.");
+				case 26:
+					return newstruct cs2func_script_3_struct(88, 8366, "Mahogany lever", "You can now construct " + "<col=000080>" + "mahogany levers" + "</col>" + " for your house.");
+				case 27:
+					return newstruct cs2func_script_3_struct(88, 8369, "Mahogany trapdoor", "You can now construct " + "<col=000080>" + "mahogany trapdoors" + "</col>" + " for your " + "<col=000080>" + "throne room" + "</col>" + ".");
+				case 28:
+					return newstruct cs2func_script_3_struct(91, 18778, "Starved ancient effigies", "You can now investigate " + "<col=000080>" + "starved ancient effigies" + "</col>" + " using your knowledge of Construction.");
+				case 29:
+					return newstruct cs2func_script_3_struct(93, 18779, "Nourished ancient effigies", "You can now investigate " + "<col=000080>" + "nourished ancient effigies" + "</col>" + " using your knowledge of Construction.");
+				case 30:
+					return newstruct cs2func_script_3_struct(95, 18780, "Sated ancient effigies", "You can now investigate " + "<col=000080>" + "sated ancient effigies" + "</col>" + " using your knowledge of Construction.");
+				case 31:
+					return newstruct cs2func_script_3_struct(97, 18781, "Gorged ancient effigies", "You can now investigate " + "<col=000080>" + "gorged ancient effigies" + "</col>" + " using your knowledge of Construction.");
+				case 32:
+					return newstruct cs2func_script_3_struct(97, 8259, "Marble spiral staircase", "You can now construct " + "<col=000080>" + "marble spiral staircases" + "</col>" + " for your house.");
+			}
+			break;
+			case 11:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_3_struct(37, 15222, "Garden habitat", "You can now construct " + "<col=000080>" + "garden habitats" + "</col>" + " for your " + "<col=000080>" + "menagerie" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_3_struct(37, 15227, "Oak pet house", "You can now construct " + "<col=000080>" + "oak pet houses" + "</col>" + " for your " + "<col=000080>" + "menagerie" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_3_struct(37, 15233, "Oak pet feeder", "You can now construct " + "<col=000080>" + "oak pet feeders" + "</col>" + " for your " + "<col=000080>" + "menagerie" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_3_struct(41, 15236, "Mini obelisk", "You can now construct " + "<col=000080>" + "mini obelisks" + "</col>" + " for your " + "<col=000080>" + "menagerie" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_3_struct(47, 15223, "Jungle habitat", "You can now construct " + "<col=000080>" + "jungle habitats" + "</col>" + " for your " + "<col=000080>" + "menagerie" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_3_struct(52, 15228, "Teak pet house", "You can now construct " + "<col=000080>" + "teak pet houses" + "</col>" + " for your " + "<col=000080>" + "menagerie" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_3_struct(52, 15234, "Teak pet feeder", "You can now construct " + "<col=000080>" + "teak pet feeders" + "</col>" + " for your " + "<col=000080>" + "menagerie" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_3_struct(57, 15224, "Desert habitat", "You can now construct " + "<col=000080>" + "desert habitats" + "</col>" + " for your " + "<col=000080>" + "menagerie" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_3_struct(67, 15229, "Mahogany pet house", "You can now construct " + "<col=000080>" + "mahogany pet houses" + "</col>" + " for your " + "<col=000080>" + "menagerie" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_3_struct(67, 15235, "Mahogany pet feeder", "You can now construct " + "<col=000080>" + "mahogany pet feeders" + "</col>" + " for your " + "<col=000080>" + "menagerie" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_3_struct(67, 15225, "Polar habitat", "You can now construct " + "<col=000080>" + "polar habitats" + "</col>" + " for your " + "<col=000080>" + "menagerie" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_3_struct(77, 15226, "Volcanic habitat", "You can now construct " + "<col=000080>" + "volcanic habitats" + "</col>" + " for your " + "<col=000080>" + "menagerie" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_3_struct(92, 15230, "Consecrated pet house", "You can now construct " + "<col=000080>" + "consecrated pet houses" + "</col>" + " for your " + "<col=000080>" + "menagerie" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_3_struct(92, 15231, "Desecrated pet house", "You can now construct " + "<col=000080>" + "desecrated pet houses" + "</col>" + " for your " + "<col=000080>" + "menagerie" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_3_struct(92, 15232, "Natural pet house", "You can now construct " + "<col=000080>" + "natural pet houses" + "</col>" + " for your " + "<col=000080>" + "menagerie" + "</col>" + ".");
+			}
+			break;
+			case 12:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_3_struct(20, 7974, "Rick", "You can now hire " + "<col=000080>" + "Rick" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_3_struct(25, 7974, "Maid", "You can now hire " + "<col=000080>" + "maids" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_3_struct(30, 7974, "Cook", "You can now hire " + "<col=000080>" + "cooks" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_3_struct(40, 7974, "Butler", "You can now hire " + "<col=000080>" + "butlers" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_3_struct(50, 7974, "Demon butler", "You can now hire " + "<col=000080>" + "demon butlers" + "</col>" + ".");
+			}
+			break;
+			case 13:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_3_struct(1, 14172, "Stealing Creation - class 1 barriers", "You can now make " + "<col=000080>" + "class 1 barriers" + "</col>" + " in Stealing Creation.");
+				case 1:
+					return newstruct cs2func_script_3_struct(20, 14174, "Stealing Creation - class 2 barriers", "You can now make " + "<col=000080>" + "class 2 barriers" + "</col>" + " in Stealing Creation.");
+				case 2:
+					return newstruct cs2func_script_3_struct(40, 14176, "Stealing Creation - class 3 barriers", "You can now make " + "<col=000080>" + "class 3 barriers" + "</col>" + " in Stealing Creation.");
+				case 3:
+					return newstruct cs2func_script_3_struct(50, 20704, "Members: access to the Livid Farm (with 70 Magic, 60 Agility, 60 Crafting, 60 Farming and Lunar Diplomacy)", "Members can access the " + "<col=000080>" + "Livid Farm" + "</col>" + " (with 70 Magic, 60 Agility, 60 Crafting, 60 Farming and Lunar Diplomacy).");
+				case 4:
+					return newstruct cs2func_script_3_struct(60, 14178, "Stealing Creation - class 4 barriers", "You can now make " + "<col=000080>" + "class 4 barriers" + "</col>" + " in Stealing Creation.");
+				case 5:
+					return newstruct cs2func_script_3_struct(80, 14180, "Stealing Creation - class 5 barriers", "You can now make " + "<col=000080>" + "class 5 barriers" + "</col>" + " in Stealing Creation.");
+			}
+			break;
+			case 14:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_3_struct(-1, 15707, "Dungeoneering skill tasks" + "<br>" + "As your Construction level increases, you will be able to attempt higher-level construction tasks within Daemonheim. You will also be more likely to succeed when attempting construction tasks within Daemonheim.", "");
+				case 1:
+					return newstruct cs2func_script_3_struct(5, 1510, "Start room photo booth", "You can now make " + "<col=000080>" + "a photo booth" + "<col=000080>" + " in the start room of Daemonheim.");
+				case 2:
+					return newstruct cs2func_script_3_struct(25, 18835, "Start room farming patch" + "<br>" + "5 seeping elm branches and 5 bathus bars", "You can now make " + "<col=000080>" + "farming patches" + "<col=000080>" + " in the start room of Daemonheim.");
+				case 3:
+					return newstruct cs2func_script_3_struct(50, 18837, "Start room range" + "<br>" + "5 utuku branches and 5 kratonite bars", "You can now make " + "<col=000080>" + "ranges" + "<col=000080>" + " in the start room of Daemonheim.");
+				case 4:
+					return newstruct cs2func_script_3_struct(75, 18836, "Start room prayer altar" + "<br>" + "5 bovistrangler logs and 5 zephyrium bars", "You can now make " + "<col=000080>" + "prayer altars" + "<col=000080>" + " in the start room of Daemonheim.");
+			}
+			break;
+			case 15:
+			SWITCH (arg1) {
+				case 0:
+					 GOTO flow_444
+				case 1:
+					 GOTO flow_445
+				case 2:
+					 GOTO flow_446
+				case 3:
+					 GOTO flow_447
+				case 4:
+					 GOTO flow_448
+				case 5:
+					 GOTO flow_449
+				case 6:
+					 GOTO flow_450
+				case 7:
+					 GOTO flow_451
+				case 8:
+					 GOTO flow_452
+				case 9:
+					 GOTO flow_453
+				case 10:
+					 GOTO flow_454
+				case 11:
+					 GOTO flow_455
+				case 12:
+					 GOTO flow_456
+				case 13:
+					 GOTO flow_457
+				case 14:
+					 GOTO flow_458
+				case 15:
+					 GOTO flow_459
+				case 16:
+					 GOTO flow_460
+				case 17:
+					 GOTO flow_461
+				case 18:
+					 GOTO flow_462
+			}
+			break;
+		flow_444:
+			return newstruct cs2func_script_3_struct(1, 2347, "Maximum rooms: 20", "You can now have a maximum of " + "<col=000080>" + "20 rooms" + "</col>" + " in your house.");
+		flow_445:
+			return newstruct cs2func_script_3_struct(1, 8794, "Maximum dimensions: 3x3", "Your house can now have maximum dimensions of " + "<col=000080>" + "3 rooms wide by 3 rooms long" + "</col>" + ".");
+		flow_446:
+			return newstruct cs2func_script_3_struct(15, 8794, "Maximum dimensions: 4x4", "Your house can now have maximum dimensions of " + "<col=000080>" + "4 rooms wide by 4 rooms long" + "</col>" + ".");
+		flow_447:
+			return newstruct cs2func_script_3_struct(30, 8794, "Maximum dimensions: 5x5", "Your house can now have maximum dimensions of " + "<col=000080>" + "5 rooms wide by 5 rooms long" + "</col>" + ".");
+		flow_448:
+			return newstruct cs2func_script_3_struct(38, 2347, "Maximum rooms: 21", "You can now have a maximum of " + "<col=000080>" + "21 rooms" + "</col>" + " in your house.");
+		flow_449:
+			return newstruct cs2func_script_3_struct(44, 2347, "Maximum rooms: 22", "You can now have a maximum of " + "<col=000080>" + "22 rooms" + "</col>" + " in your house.");
+		flow_450:
+			return newstruct cs2func_script_3_struct(45, 8794, "Maximum dimensions: 6x6", "Your house can now have maximum dimensions of " + "<col=000080>" + "6 rooms wide by 6 rooms long" + "</col>" + ".");
+		flow_451:
+			return newstruct cs2func_script_3_struct(50, 2347, "Maximum rooms: 23", "You can now have a maximum of " + "<col=000080>" + "23 rooms" + "</col>" + " in your house.");
+		flow_452:
+			return newstruct cs2func_script_3_struct(56, 2347, "Maximum rooms: 24", "You can now have a maximum of " + "<col=000080>" + "24 rooms" + "</col>" + " in your house.");
+		flow_453:
+			return newstruct cs2func_script_3_struct(60, 8794, "Maximum dimensions: 7x7", "Your house can now have maximum dimensions of " + "<col=000080>" + "7 rooms wide by 7 rooms long" + "</col>" + ".");
+		flow_454:
+			return newstruct cs2func_script_3_struct(62, 2347, "Maximum rooms: 25", "You can now have a maximum of " + "<col=000080>" + "25 rooms" + "</col>" + " in your house.");
+		flow_455:
+			return newstruct cs2func_script_3_struct(68, 2347, "Maximum rooms: 26", "You can now have a maximum of " + "<col=000080>" + "26 rooms" + "</col>" + " in your house.");
+		flow_456:
+			return newstruct cs2func_script_3_struct(74, 2347, "Maximum rooms: 27", "You can now have a maximum of " + "<col=000080>" + "27 rooms" + "</col>" + " in your house.");
+		flow_457:
+			return newstruct cs2func_script_3_struct(80, 2347, "Maximum rooms: 28", "You can now have a maximum of " + "<col=000080>" + "28 rooms" + "</col>" + " in your house.");
+		flow_458:
+			return newstruct cs2func_script_3_struct(86, 2347, "Maximum rooms: 29", "You can now have a maximum of " + "<col=000080>" + "29 rooms" + "</col>" + " in your house.");
+		flow_459:
+			return newstruct cs2func_script_3_struct(92, 2347, "Maximum rooms: 30", "You can now have a maximum of " + "<col=000080>" + "30 rooms" + "</col>" + " in your house.");
+		flow_460:
+			return newstruct cs2func_script_3_struct(96, 2347, "Maximum rooms: 31", "You can now have a maximum of " + "<col=000080>" + "31 rooms" + "</col>" + " in your house.");
+		flow_461:
+			return newstruct cs2func_script_3_struct(99, 2347, "Maximum rooms: 32", "You can now have a maximum of " + "<col=000080>" + "32 rooms" + "</col>" + " in your house.");
+		flow_462:
+			return newstruct cs2func_script_3_struct(99, 9789, "Skill mastery", "<col=000080>" + "Congratulations! You are now a master of " + "<col=800000>" + "Construction" + "<col=000080>" + ". Why not visit the " + "<col=800000>" + "Estate Agent" + "<col=000080>" + "? He has something special that is only available to true masters of the " + "<col=800000>" + "Construction" + "<col=000080>" + " skill!");
+	}
+	return newstruct cs2func_script_3_struct(0, -1, "", "");
+}

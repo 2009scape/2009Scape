@@ -1,0 +1,50 @@
+int script_4798(int arg0) {
+	int ivar1;
+	int ivar2;
+	int stack_dump0;
+	ivar1 = 604;
+	ivar2 = 0;
+	if (arg0 == 603) {
+		stack_dump0 = 602;
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	4800
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:178)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+				at tests.Main.main(Main.java:45)
+			
+		 */
+	}
+	if (arg0 == 602) {
+		stack_dump0 = 603;
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	4800
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:178)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+				at tests.Main.main(Main.java:45)
+			
+		 */
+	}
+	if ((arg0 >= 604) && (arg0 <= 615)) {
+		while (ivar1 <= 615) {
+			if (ivar1 != arg0) {
+				stack_dump0 = ivar1;
+				/* 
+					mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	4800
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:178)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+						at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+						at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+						at tests.Main.main(Main.java:45)
+					
+				 */
+			}
+			ivar1 = add(ivar1, 1);
+		}
+		return 0;
+	}
+	return 0;
+}

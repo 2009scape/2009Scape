@@ -1,0 +1,112 @@
+void script_565() {
+	int ivar0;
+	int ivar1;
+	string svar0;
+	ivar0 = 50;
+	ivar1 = 45;
+	svar0 = script_20(bitconfig_4138);
+	if (bitconfig_4140 > 0) {
+		setWidgetIsHidden(false, new WidgetPointer(635,33));
+		setWidgetText(new WidgetPointer(635,35), intToStr(bitconfig_4140));
+		setWidgetText(new WidgetPointer(635,32), intToStr(bitconfig_4143));
+		setWidgetText(new WidgetPointer(635,30), svar0 + " Coins");
+		if (((boolean)bitconfig_4144)) {
+			setWidgetSprite(223, new WidgetPointer(635,15));
+			setWidgetPosition(ivar0, ivar1, 0, 0, new WidgetPointer(635,15));
+			setWidgetIsHidden(false, new WidgetPointer(635,2));
+			ivar1 = add(ivar1, 29);
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(635,2));
+		}
+		if (((boolean)bitconfig_4145)) {
+			setWidgetSprite(225, new WidgetPointer(635,16));
+			setWidgetPosition(ivar0, ivar1, 0, 0, new WidgetPointer(635,16));
+			setWidgetIsHidden(false, new WidgetPointer(635,3));
+			ivar1 = add(ivar1, 29);
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(635,3));
+		}
+		if (((boolean)bitconfig_4146)) {
+			setWidgetSprite(201, new WidgetPointer(635,17));
+			setWidgetPosition(ivar0, ivar1, 0, 0, new WidgetPointer(635,17));
+			setWidgetIsHidden(false, new WidgetPointer(635,4));
+			ivar1 = add(ivar1, 29);
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(635,4));
+		}
+		if (((boolean)bitconfig_4147)) {
+			setWidgetSprite(226, new WidgetPointer(635,18));
+			setWidgetPosition(ivar0, ivar1, 0, 0, new WidgetPointer(635,18));
+			setWidgetIsHidden(false, new WidgetPointer(635,5));
+			ivar1 = add(ivar1, 29);
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(635,5));
+		}
+		if (((boolean)bitconfig_4151)) {
+			setWidgetSprite(203, new WidgetPointer(635,20));
+			setWidgetPosition(ivar0, ivar1, 0, 0, new WidgetPointer(635,20));
+			setWidgetIsHidden(false, new WidgetPointer(635,7));
+			ivar1 = add(ivar1, 29);
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(635,7));
+		}
+		if (((boolean)bitconfig_4152)) {
+			setWidgetSprite(227, new WidgetPointer(635,21));
+			setWidgetPosition(ivar0, ivar1, 0, 0, new WidgetPointer(635,21));
+			setWidgetIsHidden(false, new WidgetPointer(635,8));
+			ivar1 = add(ivar1, 29);
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(635,8));
+		}
+		if (((boolean)bitconfig_4276)) {
+			setWidgetSprite(222, new WidgetPointer(635,19));
+			setWidgetPosition(ivar0, ivar1, 0, 0, new WidgetPointer(635,19));
+			setWidgetIsHidden(false, new WidgetPointer(635,6));
+			ivar1 = add(ivar1, 29);
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(635,6));
+		}
+		ivar0 = 8;
+		ivar1 = 45;
+		if (((boolean)bitconfig_4148)) {
+			setWidgetSprite(200, new WidgetPointer(635,22));
+			setWidgetPosition(ivar0, ivar1, 0, 0, new WidgetPointer(635,22));
+			setWidgetIsHidden(false, new WidgetPointer(635,9));
+			ivar1 = add(ivar1, 29);
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(635,9));
+		}
+		if (((boolean)bitconfig_4149)) {
+			setWidgetSprite(197, new WidgetPointer(635,23));
+			setWidgetPosition(ivar0, ivar1, 0, 0, new WidgetPointer(635,23));
+			setWidgetIsHidden(false, new WidgetPointer(635,10));
+			ivar1 = add(ivar1, 29);
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(635,10));
+		}
+		if (((boolean)bitconfig_4150)) {
+			setWidgetSprite(202, new WidgetPointer(635,24));
+			setWidgetPosition(ivar0, ivar1, 0, 0, new WidgetPointer(635,24));
+			setWidgetIsHidden(false, new WidgetPointer(635,11));
+			ivar1 = add(ivar1, 29);
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(635,11));
+		}
+	} else {
+		setWidgetSprite(-1, new WidgetPointer(635,15));
+		setWidgetSprite(-1, new WidgetPointer(635,16));
+		setWidgetSprite(-1, new WidgetPointer(635,17));
+		setWidgetSprite(-1, new WidgetPointer(635,18));
+		setWidgetSprite(-1, new WidgetPointer(635,20));
+		setWidgetSprite(-1, new WidgetPointer(635,21));
+		setWidgetSprite(-1, new WidgetPointer(635,22));
+		setWidgetSprite(-1, new WidgetPointer(635,24));
+		setWidgetSprite(-1, new WidgetPointer(635,23));
+		setWidgetSprite(-1, new WidgetPointer(635,19));
+		setWidgetText(new WidgetPointer(635,32), " ");
+		setWidgetText(new WidgetPointer(635,30), " ");
+		setWidgetText(new WidgetPointer(635,26), " ");
+		setWidgetIsHidden(true, new WidgetPointer(635,33));
+	}
+	return;
+}

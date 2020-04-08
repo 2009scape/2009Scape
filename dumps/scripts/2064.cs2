@@ -1,0 +1,85 @@
+void script_2064(int arg0) {
+	int ivar1;
+	setWidgetIsHidden(true, new WidgetPointer(138,28));
+	setWidgetIsHidden(true, new WidgetPointer(138,37));
+	setWidgetIsHidden(true, new WidgetPointer(138,36));
+	setWidgetIsHidden(true, new WidgetPointer(138,31));
+	setWidgetIsHidden(true, new WidgetPointer(138,39));
+	setWidgetIsHidden(true, new WidgetPointer(138,38));
+	setWidgetIsHidden(true, new WidgetPointer(138,35));
+	setWidgetIsHidden(true, new WidgetPointer(138,34));
+	setWidgetIsHidden(true, new WidgetPointer(138,33));
+	setWidgetIsHidden(true, new WidgetPointer(138,32));
+	setWidgetIsHidden(true, new WidgetPointer(138,29));
+	setWidgetIsHidden(true, new WidgetPointer(138,30));
+	setWidgetIsHidden(true, new WidgetPointer(138,41));
+	setWidgetIsHidden(true, new WidgetPointer(138,40));
+	ivar1 = 0;
+	if (bitconfig_5332 < 120) {
+		ivar1 = 1;
+	}
+	setWidgetIsHidden(((boolean)ivar1), new WidgetPointer(138,6));
+	setWidgetIsHidden(((boolean)ivar1), new WidgetPointer(138,7));
+	setWidgetIsHidden(((boolean)ivar1), new WidgetPointer(138,8));
+	setWidgetIsHidden(((boolean)ivar1), new WidgetPointer(138,19));
+	setWidgetIsHidden(((boolean)ivar1), new WidgetPointer(138,20));
+	setWidgetIsHidden(((boolean)ivar1), new WidgetPointer(138,21));
+	setWidgetIsHidden(((boolean)ivar1), new WidgetPointer(138,12));
+	switch (arg0) {
+		case 0:
+			setWidgetIsHidden(false, new WidgetPointer(138,28));
+			break;
+		case 1:
+			setWidgetIsHidden(false, new WidgetPointer(138,37));
+			setWidgetAnimation(786, new WidgetPointer(138,37));
+			break;
+		case 2:
+			setWidgetIsHidden(false, new WidgetPointer(138,36));
+			setWidgetAnimation(786, new WidgetPointer(138,36));
+			break;
+		case 3:
+			setWidgetIsHidden(false, new WidgetPointer(138,31));
+			setWidgetAnimation(785, new WidgetPointer(138,31));
+			break;
+		case 4:
+			setWidgetIsHidden(false, new WidgetPointer(138,39));
+			setWidgetAnimation(785, new WidgetPointer(138,39));
+			break;
+		case 5:
+			setWidgetIsHidden(false, new WidgetPointer(138,38));
+			setWidgetAnimation(785, new WidgetPointer(138,38));
+			break;
+		case 6:
+			setWidgetIsHidden(false, new WidgetPointer(138,35));
+			setWidgetAnimation(785, new WidgetPointer(138,35));
+			break;
+		case 7:
+			setWidgetIsHidden(false, new WidgetPointer(138,34));
+			setWidgetAnimation(785, new WidgetPointer(138,34));
+			break;
+		case 8:
+			setWidgetIsHidden(false, new WidgetPointer(138,32));
+			setWidgetAnimation(785, new WidgetPointer(138,32));
+			break;
+		case 9:
+			setWidgetIsHidden(false, new WidgetPointer(138,33));
+			setWidgetAnimation(785, new WidgetPointer(138,33));
+			break;
+		case 10:
+			setWidgetIsHidden(false, new WidgetPointer(138,29));
+			setWidgetAnimation(785, new WidgetPointer(138,29));
+			break;
+		case 11:
+			setWidgetIsHidden(false, new WidgetPointer(138,30));
+			setWidgetAnimation(785, new WidgetPointer(138,30));
+			break;
+		case 12:
+			setWidgetIsHidden(false, new WidgetPointer(138,41));
+			setWidgetAnimation(786, new WidgetPointer(138,41));
+			break;
+		case 13:
+			setWidgetIsHidden(false, new WidgetPointer(138,40));
+			setWidgetAnimation(786, new WidgetPointer(138,40));
+	}
+	return;
+}

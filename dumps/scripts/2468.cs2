@@ -1,0 +1,53 @@
+void script_2468(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,string arg8) {
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	ivar8 = 0;
+	ivar9 = 0;
+	ivar10 = 0;
+	ivar11 = 0;
+	if (globalint_1 < add(getClientCycle(), 25)) {
+		if (globalint_1 < getClientCycle()) {
+			globalint_1 = getClientCycle();
+		}
+		globalint_1 = add(globalint_1, 2);
+		return;
+	}
+	globalint_1 = add(add(getClientCycle(), 25), 10);
+	if (globalint_2 != 1) {
+		ivar10 = add(getMaxLineWidth(2147483647, arg7, arg8), 8);
+		ivar11 = getLineCount(ivar10, arg7, arg8);
+		if (ivar11 > 1) {
+			ivar11 = multiply(ivar11, 15);
+		} else {
+			ivar11 = 17;
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+			ivar8 = add(add(add(getWidgetActualX(new WidgetPointer(arg4)), getWidgetActualX()), arg2), 3);
+			ivar9 = subtract(subtract(add(add(getWidgetActualY(new WidgetPointer(arg4)), getWidgetActualY()), arg3), ivar11), cs2method2601(new WidgetPointer(arg4)));
+		} else {
+			return;
+		}
+		if (ivar8 < 0) {
+			ivar8 = 0;
+		} else {
+			if (add(ivar8, ivar10) > add(getWidgetActualX(new WidgetPointer(arg4)), getWidgetActualWidth(new WidgetPointer(arg4)))) {
+				ivar8 = subtract(ivar8, subtract(add(ivar8, ivar10), add(getWidgetActualX(new WidgetPointer(arg4)), getWidgetActualWidth(new WidgetPointer(arg4)))));
+			}
+		}
+		if (ivar9 < 0) {
+			ivar9 = 0;
+		} else {
+			if (add(ivar9, ivar11) > add(getWidgetActualY(new WidgetPointer(arg4)), getWidgetActualHeight(new WidgetPointer(arg4)))) {
+				ivar9 = subtract(ivar9, subtract(add(ivar9, ivar11), add(getWidgetActualY(new WidgetPointer(arg4)), getWidgetActualHeight(new WidgetPointer(arg4)))));
+			}
+		}
+		setWidgetIsHidden(false, new WidgetPointer(arg5));
+		setWidgetSize(ivar10, ivar11, 0, 0, new WidgetPointer(arg5));
+		setWidgetPosition(ivar8, ivar9, 0, 0, new WidgetPointer(arg5));
+		setWidgetText(new WidgetPointer(arg6), arg8);
+		globalint_2 = 1;
+	}
+	return;
+}

@@ -1,0 +1,13 @@
+void script_5342(int arg0) {
+	if (arg0 == -1) {
+		arg0 = 70;
+	} else if (arg0 > 255) {
+		arg0 = 255;
+	} else {
+		if (arg0 < 0) {
+			arg0 = 0;
+		}
+	}
+	cs2method2103(arg0, new WidgetPointer(746,0));
+	return;
+}

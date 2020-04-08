@@ -1,0 +1,31 @@
+void script_2905(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	ivar4 = getWidgetParentId(new WidgetPointer(arg0));
+	ivar5 = 0;
+	if (arg1 == 10010) {
+		switch (bitconfig_7193) {
+			case 1:
+				ivar5 = 1;
+				break;
+			case 2:
+				ivar5 = 1;
+				arg1 = 11259;
+		}
+	} else if (arg1 == 11262) {
+		ivar5 = bitconfig_7192;
+	} else {
+		if (arg1 == 11260) {
+			ivar5 = bitconfig_7194;
+		}
+	}
+	setWidgetText(new WidgetPointer(arg3), getItemName(arg1) + "<br>" + "(" + intToStr(ivar5) + "/" + intToStr(arg2) + ")");
+	setItemOnWidgetMethod2205(arg1, -1, new WidgetPointer(arg0));
+	setWidgetBorderThickness(1, new WidgetPointer(arg0));
+	if (ivar5 > 0) {
+		setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(arg3));
+	} else {
+		setWidgetRGB(new Color(204, 0, 0), new WidgetPointer(arg3));
+	}
+	return;
+}

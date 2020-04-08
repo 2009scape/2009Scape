@@ -1,0 +1,15 @@
+int script_2520() {
+	int ivar0;
+	ivar0 = 0;
+	ivar0 = add(ivar0, globalint_847);
+	ivar0 = add(ivar0, globalint_852);
+	ivar0 = add(ivar0, globalint_848);
+	ivar0 = add(ivar0, globalint_853);
+	ivar0 = add(ivar0, globalint_849);
+	ivar0 = add(ivar0, globalint_854);
+	ivar0 = add(ivar0, globalint_850);
+	ivar0 = add(ivar0, globalint_855);
+	ivar0 = add(ivar0, globalint_851);
+	ivar0 = add(ivar0, globalint_856);
+	return ivar0;
+}

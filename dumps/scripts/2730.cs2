@@ -1,0 +1,14 @@
+void script_2730(int arg0,int arg1,int arg2) {
+	if (arg2 != 1) {
+		setWidgetSprite(297, new WidgetPointer(arg0));
+		setWidgetSize(0, 0, 1, 1, new WidgetPointer(arg0));
+		cs2method2107(1, new WidgetPointer(arg0));
+		setWidgetUnknownBoolean(true, new WidgetPointer(arg1));
+	} else {
+		setWidgetSprite(1017, new WidgetPointer(arg0));
+		setWidgetSize(519, 142, 0, 0, new WidgetPointer(arg0));
+		cs2method2107(0, new WidgetPointer(arg0));
+		setWidgetUnknownBoolean(false, new WidgetPointer(arg1));
+	}
+	return;
+}

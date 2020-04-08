@@ -1,0 +1,76 @@
+void script_175(int arg0,int arg1) {
+	if (standart_config_281 < 1000) {
+		messageType0("You can't do this while in the tutorial.");
+		return;
+	}
+	switch (arg0) {
+		case 1:
+			if ((globalint_41 == arg1) && (getDisplayMode() >= 2)) {
+				globalint_41 = -1;
+				script_1364();
+			} else if (globalint_41 == -1) {
+				globalint_41 = arg1;
+				script_1364();
+			} else {
+				globalint_41 = arg1;
+			}
+			switch (arg1) {
+				case 0:
+				case 2:
+					globalint_1650 = 0;
+					globalint_1651 = 0;
+					cs2method5006(0);
+					globalstring_1 = "";
+					globalint_1028 = 0;
+					script_1558(0);
+					break;
+				case 4:
+					globalint_1650 = 0;
+					globalint_1651 = 1;
+					cs2method5006(1);
+					globalstring_1 = "";
+					globalint_1028 = 0;
+					script_1558(0);
+					break;
+				case 7:
+					globalint_1650 = 0;
+					globalint_1651 = 2;
+					cs2method5006(2);
+					globalstring_1 = "";
+					globalint_1028 = 0;
+					script_1558(0);
+			}
+			script_181(globalint_41);
+			script_178();
+			script_84();
+			script_89();
+			break;
+		case 2:
+			script_184(arg1, 0);
+			script_178();
+			script_84();
+			script_89();
+			break;
+		case 3:
+			if ((arg1 == 3) && (getFriendlistSize() < 0)) {
+				messageType0("The friends list is still loading, your selection won't take effect immediately.");
+			}
+			script_184(arg1, 1);
+			script_178();
+			script_84();
+			script_89();
+			break;
+		case 4:
+			script_184(arg1, 2);
+			script_178();
+			script_84();
+			script_89();
+			break;
+		case 5:
+			script_184(arg1, 3);
+			script_178();
+			script_84();
+			script_89();
+	}
+	return;
+}

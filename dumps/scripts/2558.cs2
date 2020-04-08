@@ -1,0 +1,12 @@
+void script_2558(int arg0) {
+	if (getWidgetSpriteId(new WidgetPointer(arg0)) == 1946) {
+		setWidgetSprite(1951, new WidgetPointer(arg0));
+	} else if (getWidgetSpriteId(new WidgetPointer(arg0)) == 1947) {
+		setWidgetSprite(1952, new WidgetPointer(arg0));
+	} else {
+		if (getWidgetSpriteId(new WidgetPointer(arg0)) == 1949) {
+			setWidgetSprite(1954, new WidgetPointer(arg0));
+		}
+	}
+	return;
+}

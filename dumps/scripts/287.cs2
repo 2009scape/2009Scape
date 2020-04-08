@@ -1,0 +1,8 @@
+void script_287(int arg0,int arg1,int arg2,int arg3) {
+	createExtraChild(new WidgetPointer(arg2), 5, arg0);
+	setWidgetSize(17, 17, 0, 0);
+	setWidgetPosition(4, add(arg3, 4), 0, 0);
+	setWidgetHidden(arg1);
+	setWidgetSprite(1726);
+	return;
+}

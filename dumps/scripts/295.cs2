@@ -1,0 +1,266 @@
+void script_295(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	if (cs2method5229()) {
+		deleteAllExtraChilds(new WidgetPointer(arg0));
+		return;
+	}
+	ivar5 = 0;
+	switch (cs2method5235()) {
+		case 31:
+			ivar5 = script_297(589620541, 52864326, 0, 16776960, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			break;
+		case 1:
+			ivar5 = script_297(39325979, 38474018, 0, 16776960, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			break;
+		case 26:
+			ivar5 = script_300(143, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Lower level");
+			ivar5 = script_300(1573071, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Middle level");
+			ivar5 = script_300(3145999, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Upper level");
+			ivar5 = script_297(44831902, 313267358, 0, 16776960, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(44618924, 313070764, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(44324084, 312759540, 0, 65535, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(44225744, 312661200, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(44569840, 313005296, 0, 65280, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(44750053, 313185509, 0, 32767, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(44881101, 313316557, 0, 16776960, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(44733625, 313169081, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(44618896, 313070736, 0, 65535, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(44274873, 312710329, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(313283821, 581719277, 0, 16776960, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(312694002, 581129458, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(312612023, 581047479, 0, 65535, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(312628396, 581063852, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(313037957, 581473413, 0, 65280, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(313349258, 581784714, 0, 32767, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(313332908, 581768364, 0, 16776960, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			break;
+		case 21:
+			ivar5 = script_298(46524306, 46491549, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_298(46786463, 46835605, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(46589842, 47310831, 0, 16776960, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(46507915, 45557681, 0, 65535, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			break;
+		case 20:
+			ivar5 = script_297(594388249, 57517334, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			break;
+		case 25:
+			ivar5 = script_297(50079065, 50079060, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			break;
+		case 3:
+			ivar5 = script_298(42575123, 42591571, 0, 16776960, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_298(42247537, 42067252, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_298(42263852, 42247532, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(42951961, 42935643, 0, 65535, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(42870115, 42870048, 0, 32767, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(42247458, 42149154, 0, 32767, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			break;
+		case 14:
+			ivar5 = script_297(41101361, 41199667, 0, 16776960, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			break;
+		case 2:
+			ivar5 = script_297(583460733, 315025277, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(583460675, 315025219, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(315189070, 46753614, 0, 16776960, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(315172731, 46737275, 0, 65535, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_300(79, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Lower level");
+			ivar5 = script_300(1572943, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Middle level");
+			ivar5 = script_300(3145807, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Upper level");
+			break;
+		case 6:
+			ivar5 = script_297(50259980, 37212744, 0, 32767, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(41669235, 41112143, 0, 16776960, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			break;
+		case 24:
+			ivar5 = script_300(524464, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "War");
+			ivar5 = script_298(30528630, 31364198, 0, 32767, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_298(30823536, 30463099, 0, 32767, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(31167590, 33461373, 0, 32767, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_300(1966240, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Famine");
+			ivar5 = script_298(33412216, 33117287, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_298(33051738, 33461373, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_298(33428568, 33461373, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_298(32953416, 33461373, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_298(33281093, 33461373, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(33199202, 34788484, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_300(655448, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Pestilence");
+			ivar5 = script_298(34739338, 35165351, 0, 16711807, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_298(35230878, 34788484, 0, 16711807, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(35198115, 38638687, 0, 16711807, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_300(2097224, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Death");
+			ivar5 = script_298(38753372, 38360163, 0, 65280, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			break;
+		case 9:
+			ivar5 = script_300(1573096, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Jail");
+			ivar5 = script_300(524432, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Lower level");
+			ivar5 = script_300(1704080, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Middle level");
+			ivar5 = script_300(2883728, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Upper level");
+			ivar5 = script_300(1704000, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Secure sector");
+			ivar5 = script_297(50417803, 588304518, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(588533912, 320098456, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(588828849, 857280689, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(588943533, 52072618, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(319901872, 51482798, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			break;
+		case 15:
+			ivar5 = script_297(584602804, 316167348, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(316282011, 47846554, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(584127643, 46781541, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			break;
+		case 13:
+			ivar5 = script_300(524488, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Upper level");
+			ivar5 = script_297(43410808, 580199803, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(43197740, 580068647, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			break;
+		case 22:
+			ivar5 = script_297(55354521, 54399220, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(55354579, 54399245, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(54748371, 53727504, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(54748313, 53645556, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			break;
+		case 16:
+			ivar5 = script_300(524810, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Sub-level 1");
+			ivar5 = script_297(41740191, 834769206, 0, 16776960, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_300(1573291, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Sub-level 2");
+			ivar5 = script_297(834949429, 566513973, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(835178804, 566743348, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(835359013, 566923557, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(835195165, 566759709, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(835424536, 566989080, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(837439784, 569004328, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_300(1573194, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Sub-level 3");
+			ivar5 = script_297(566530346, 298094890, 0, 8323327, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(566350115, 297914659, 0, 8323327, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(566333726, 297898270, 0, 8323327, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(566399249, 297963793, 0, 8323327, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(566792458, 298357002, 0, 8323327, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(567185697, 298750241, 0, 8323327, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(567415076, 298979620, 0, 8323327, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(567398676, 298963220, 0, 8323327, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(568529179, 300093723, 0, 8323327, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_300(1573099, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Sub-level 4");
+			ivar5 = script_297(299405624, 30970168, 0, 16744192, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(300503316, 32067860, 0, 16744192, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_300(2621578, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Sub-level 5");
+			ivar5 = script_297(31314191, 47501665, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_300(3473463, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Sub-level 6");
+			break;
+		case 30:
+			ivar5 = script_300(524402, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Lower level");
+			ivar5 = script_300(2097240, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Middle level");
+			ivar5 = script_300(3670104, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Upper level");
+			ivar5 = script_297(51827152, 51827157, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51696079, 51794383, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(319902165, 588337616, 0, 16744192, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(588386779, 319951318, 0, 16744192, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(319951334, 588386785, 0, 16744192, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51630567, 319984103, 0, 32512, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51876321, 51794401, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52171227, 320606678, 0, 32512, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(320606697, 52171235, 0, 32512, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51941857, 320459233, 0, 32512, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(320442833, 52089297, 0, 32512, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(320786911, 52351450, 0, 32512, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(589124065, 320770529, 0, 16744192, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(320639465, 589074914, 0, 16744192, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51909098, 51909091, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(320229869, 51876333, 0, 32512, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51532274, 319967725, 0, 32512, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51778038, 51597814, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51909104, 51909109, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(320066037, 320131573, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(320524790, 320459254, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51564996, 319951300, 0, 32512, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51745225, 320180684, 0, 32512, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51909081, 320393689, 0, 32512, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52171209, 320606668, 0, 32512, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52269558, 320754166, 0, 32512, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(319902151, 588337610, 0, 16744192, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(320180692, 588616151, 0, 16744192, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(320492001, 588976609, 0, 16744192, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52187642, 51597859, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51597875, 51597879, 0, 16711680, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			break;
+		case 23:
+			ivar5 = script_297(52335986, 52286839, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52286826, 52188518, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52204896, 52303200, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52254020, 52221268, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52073812, 51909968, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51696969, 51500355, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51680598, 51483990, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51893599, 51959137, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51959142, 51893606, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51467624, 51484017, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(53155191, 53073274, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52974942, 53106013, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52729209, 52794736, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52827495, 52794722, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52909390, 53007697, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(53105989, 52974917, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52630860, 52663632, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52729190, 52680035, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52565343, 52598117, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(53253448, 53318987, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52499781, 52385096, 0, 65280, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(54187384, 54351224, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(54056300, 54121829, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(54367593, 54433128, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(54105437, 53908823, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(54007119, 54056266, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(53859656, 53794120, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(53843294, 53826914, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(53630292, 53744980, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(53515590, 53417331, 0, 65280, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(53499251, 53400902, 0, 65280, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(53777819, 53826967, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(53876128, 53892509, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(53826996, 53925299, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(54023584, 54056349, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(54416818, 54318512, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(54449563, 54482318, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(54072714, 54023558, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(53826948, 53745021, 0, 65280, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52614547, 52565399, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52499882, 52532657, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52614557, 52663709, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52925867, 52827569, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(53106073, 53138838, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(53286311, 53237162, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(53302713, 53351865, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(53450160, 53515696, 0, 65280, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(53433760, 53548446, 0, 65280, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(53056899, 52958589, 0, 65280, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51565989, 51500447, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51746233, 51811765, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51811753, 51877297, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51664289, 51582365, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51910053, 51959206, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52008374, 52106677, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52270514, 52270509, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51713427, 51647888, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51991962, 51860875, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52139418, 52221339, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52123021, 52188558, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52270479, 52270475, 0, 16711935, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52368776, 52467083, 0, 65280, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(52385177, 52450715, 0, 65280, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(51926406, 51762557, 0, 65280, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			break;
+		case 34:
+		case 32:
+		case 33:
+			ivar5 = script_300(15, 1, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "The world map screen" + "<br>" + "shows you where you are," + "<br>" + "and where important" + "<br>" + "features may be found.");
+			break;
+		case 36:
+			ivar5 = script_300(28316927, 0, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Lower level");
+			ivar5 = script_300(296752383, 0, 280, arg0, arg1, arg2, arg3, arg4, ivar5, "Upper level");
+			ivar5 = script_297(297424118, 29054198, 0, 65280, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(29136098, 297571551, 0, 65280, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(28579021, 297014473, 0, 65280, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			ivar5 = script_297(296867009, 27219081, 0, 65280, 6, arg0, arg1, arg2, arg3, arg4, ivar5);
+			break;
+		default:
+			deleteAllExtraChilds(new WidgetPointer(arg0));
+	}
+	return;
+}

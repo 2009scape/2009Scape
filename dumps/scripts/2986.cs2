@@ -1,0 +1,33 @@
+void script_2986() {
+	if (((boolean)bitconfig_8386)) {
+		script_2987(4718594, 4718593, 4718623, 4718595);
+	}
+	if (((boolean)bitconfig_8393)) {
+		script_2987(4718597, 4718596, 4718624, 4718598);
+	}
+	if (((boolean)bitconfig_8394)) {
+		script_2987(4718600, 4718599, 4718625, 4718601);
+	}
+	if (((boolean)bitconfig_8395)) {
+		script_2987(4718603, 4718602, 4718626, 4718604);
+	}
+	if (((boolean)bitconfig_8391)) {
+		script_2987(4718606, 4718605, 4718627, 4718607);
+	}
+	if (((boolean)bitconfig_8387)) {
+		script_2987(4718609, 4718608, 4718628, 4718610);
+	}
+	if (((boolean)bitconfig_8388)) {
+		script_2987(4718612, 4718611, 4718629, 4718613);
+	}
+	if (((boolean)bitconfig_8390)) {
+		script_2987(4718615, 4718614, 4718630, 4718616);
+	}
+	if (((boolean)bitconfig_8389)) {
+		script_2987(4718618, 4718617, 4718631, 4718619);
+	}
+	if (((boolean)bitconfig_8392)) {
+		script_2987(4718621, 4718620, 4718632, 4718622);
+	}
+	return;
+}

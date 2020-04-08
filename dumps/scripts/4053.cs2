@@ -1,0 +1,22 @@
+void script_4053() {
+	switch (bitconfig_8661) {
+		case 0:
+			setWidgetText(new WidgetPointer(1057,26), "Using multiple token types");
+			break;
+		case 1:
+			setWidgetText(new WidgetPointer(1057,26), "Using attack tokens");
+			break;
+		case 2:
+			setWidgetText(new WidgetPointer(1057,26), "Using defence tokens");
+			break;
+		case 3:
+			setWidgetText(new WidgetPointer(1057,26), "Using strength tokens");
+			break;
+		case 4:
+			setWidgetText(new WidgetPointer(1057,26), "Using combat tokens");
+			break;
+		case 5:
+			setWidgetText(new WidgetPointer(1057,26), "Using balance tokens");
+	}
+	return;
+}

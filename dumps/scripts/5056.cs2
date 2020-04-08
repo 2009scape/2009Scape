@@ -1,0 +1,26 @@
+void script_5056(int arg0,int arg1) {
+	if (((boolean)arg1)) {
+		if (setWidgetRegister(new WidgetPointer(arg0), 0)) {
+			setWidgetSprite(7571);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 1)) {
+			setWidgetSprite(7570);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 2)) {
+			setWidgetSprite(7572);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 3)) {
+			setWidgetSprite(7577);
+		}
+		setScriptCallOnMouseOver(-1, "", new WidgetPointer(arg0));
+		setScriptCallOnMouseExit(-1, "", new WidgetPointer(arg0));
+	} else {
+		script_5058(arg0, 0);
+		if (setWidgetRegister(new WidgetPointer(arg0), 3)) {
+			setWidgetSprite(7576);
+		}
+		setScriptCallOnMouseOver(5057, new WidgetPointer(-32768,3), 1, "I1", new WidgetPointer(arg0));
+		setScriptCallOnMouseExit(5057, new WidgetPointer(-32768,3), 0, "I1", new WidgetPointer(arg0));
+	}
+	return;
+}

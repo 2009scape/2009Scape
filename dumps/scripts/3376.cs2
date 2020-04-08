@@ -1,0 +1,14 @@
+void script_3376(int arg0) {
+	int ivar1;
+	int ivar2;
+	string svar0;
+	ivar1 = getWidgetActualWidth(new WidgetPointer(arg0));
+	svar0 = strRemoveEntities(getWidgetText(new WidgetPointer(arg0)));
+	ivar2 = getLineCount(ivar1, 3793, svar0);
+	if (((boolean)ivar2)) {
+		setWidgetSize(getTextWidth(3793, svar0), 19, 0, 0, new WidgetPointer(arg0));
+	} else {
+		setWidgetSize(ivar1, add(multiply(14, ivar2), 5), 0, 0, new WidgetPointer(arg0));
+	}
+	return;
+}

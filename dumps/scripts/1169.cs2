@@ -1,0 +1,6 @@
+void script_1169(int arg0,int arg1,string arg2) {
+	int ivar2;
+	ivar2 = ((int)cs2method_3408(105, 73, 737, arg1));
+	setScriptCallOnGameloop(1168, arg0, arg2, new WidgetPointer(ivar2), "isI", new WidgetPointer(ivar2));
+	return;
+}

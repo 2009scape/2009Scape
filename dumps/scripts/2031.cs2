@@ -1,0 +1,12 @@
+void script_2031(int arg0) {
+	if (isBitFlagged(standart_config_331, 29)) {
+		setWidget3DRotation(0, 0, 512, 1024, 0, 1000, new WidgetPointer(arg0));
+	} else if (isBitFlagged(standart_config_331, 30)) {
+		setWidget3DRotation(0, 0, 512, 1536, 0, 1000, new WidgetPointer(arg0));
+	} else {
+		if (isBitFlagged(standart_config_331, 31)) {
+			setWidget3DRotation(0, 0, 512, 0, 0, 1000, new WidgetPointer(arg0));
+		}
+	}
+	return;
+}

@@ -1,0 +1,4 @@
+void script_2251(int arg0) {
+	setWidgetText(new WidgetPointer(arg0), "Deaths: " + intToStr(bitconfig_7554));
+	return;
+}

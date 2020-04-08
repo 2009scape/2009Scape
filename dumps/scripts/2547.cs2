@@ -1,0 +1,12 @@
+void script_2547() {
+	if (((boolean)globalint_917)) {
+		setWidgetSprite(1949, new WidgetPointer(39,6));
+	} else if (globalint_917 == 2) {
+		setWidgetSprite(1946, new WidgetPointer(39,6));
+	} else {
+		if (globalint_917 == 3) {
+			setWidgetSprite(1947, new WidgetPointer(39,6));
+		}
+	}
+	return;
+}

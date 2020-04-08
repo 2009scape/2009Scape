@@ -1,0 +1,9 @@
+void script_1315(int arg0) {
+	globalint_119 = standart_config_173;
+	setScriptCallOnConfigChange(1316, new WidgetPointer(arg0), 173, 1, "IY", new WidgetPointer(arg0));
+	setScriptCallOnMouseOver(1533, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+	setScriptCallOnMouseExit(2307, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+	setScriptCallOnClickContextMenu(1534, new WidgetPointer(arg0), -2147483644, "Ii", new WidgetPointer(arg0));
+	script_1741(arg0);
+	return;
+}

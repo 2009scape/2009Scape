@@ -1,0 +1,20 @@
+int script_1710(int arg0) {
+	int ivar1;
+	ivar1 = script_1711(arg0);
+	if (bitconfig_6839 > 0) {
+		switch (arg0) {
+			case 0:
+				ivar1 = add(ivar1, 15);
+				ivar1 = add(ivar1, script_1714(arg0, bitconfig_6844));
+				break;
+			case 2:
+				ivar1 = add(ivar1, 23);
+				ivar1 = add(ivar1, script_1714(arg0, bitconfig_6845));
+				break;
+			case 1:
+				ivar1 = add(ivar1, 15);
+				ivar1 = add(ivar1, script_1714(arg0, bitconfig_6846));
+		}
+	}
+	return ivar1;
+}

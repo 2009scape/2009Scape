@@ -1,0 +1,23 @@
+void script_4689() {
+	setWidgetIsHidden(false, new WidgetPointer(551,9));
+	setWidgetText(new WidgetPointer(551,15), cs2method_3408(105, 115, 3855, 1));
+	setWidgetSprite(6188, new WidgetPointer(551,17));
+	setWidgetText(new WidgetPointer(551,16), intToStr(cs2method_3408(105, 105, 3856, 1)));
+	setWidgetIsHidden(false, new WidgetPointer(551,33));
+	setWidgetText(new WidgetPointer(551,41), cs2method_3408(105, 115, 3855, 2));
+	setWidgetSprite(6189, new WidgetPointer(551,43));
+	setWidgetText(new WidgetPointer(551,42), intToStr(cs2method_3408(105, 105, 3856, 2)));
+	setWidgetIsHidden(false, new WidgetPointer(551,47));
+	setWidgetText(new WidgetPointer(551,55), cs2method_3408(105, 115, 3855, 3));
+	setWidgetSprite(6190, new WidgetPointer(551,57));
+	setWidgetText(new WidgetPointer(551,56), intToStr(cs2method_3408(105, 105, 3856, 3)));
+	setWidgetIsHidden(false, new WidgetPointer(551,61));
+	setWidgetText(new WidgetPointer(551,69), cs2method_3408(105, 115, 3855, 4));
+	setWidgetSprite(6191, new WidgetPointer(551,71));
+	setWidgetText(new WidgetPointer(551,70), intToStr(cs2method_3408(105, 105, 3856, 4)));
+	setScriptCallOnMouseOver(4692, new WidgetPointer(-32768,3), 80, "Ii", new WidgetPointer(551,10));
+	setScriptCallOnMouseOver(4692, new WidgetPointer(-32768,3), 129, "Ii", new WidgetPointer(551,36));
+	setScriptCallOnMouseOver(4692, new WidgetPointer(-32768,3), 31, "Ii", new WidgetPointer(551,50));
+	setScriptCallOnMouseOver(4692, new WidgetPointer(-32768,3), 80, "Ii", new WidgetPointer(551,64));
+	return;
+}

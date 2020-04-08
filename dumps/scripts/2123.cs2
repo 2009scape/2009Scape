@@ -1,0 +1,57 @@
+void script_2123(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	createExtraChild(new WidgetPointer(arg2), 5, arg0);
+	setWidgetPosition(add(5, multiply(add(36, 20), arg1)), add(arg3, 22), 0, 0);
+	setWidgetSize(36, 32, 0, 0);
+	ivar4 = cs2method_3408(105, 79, 2240, arg0);
+	if (ivar4 != -1) {
+		setWidgetBorderThickness(1);
+		setWidgetShadowColor(new Color(48, 32, 32));
+		setItemOnWidgetMethod1200(ivar4, -1);
+		setWidgetContextMenuOption(1, "Claim");
+		setWidgetContextMenuOption(10, "Examine");
+		cs2method1305("<col=ff9040>" + getItemName(ivar4) + "</col>");
+		if (add(add(add(getItemAmtInContainer(93, ivar4), getItemAmtInContainer(94, ivar4)), getItemAmtInContainer(95, ivar4)), getItemAmtInContainer(530, ivar4)) > 0) {
+			cs2method2103(200);
+		} else if (divide(arg0, 10) == divide(1, 10)) {
+			if (bitconfig_2698 > 0) {
+				cs2method2103(200);
+			} else {
+				cs2method2103(0);
+			}
+		} else if (arg0 == 11) {
+			if (bitconfig_2776 > 0) {
+				cs2method2103(200);
+			} else {
+				cs2method2103(0);
+			}
+		} else if (divide(arg0, 10) == divide(11, 10)) {
+			if (bitconfig_2699 > 0) {
+				cs2method2103(200);
+			} else {
+				cs2method2103(0);
+			}
+		} else if (divide(arg0, 10) == divide(21, 10)) {
+			if (bitconfig_2700 > 0) {
+				cs2method2103(200);
+			} else {
+				cs2method2103(0);
+			}
+		} else if (divide(arg0, 10) == divide(31, 10)) {
+			if (bitconfig_2701 > 0) {
+				cs2method2103(200);
+			} else {
+				cs2method2103(0);
+			}
+		} else if (divide(arg0, 10) == divide(41, 10)) {
+			if (bitconfig_2702 > 0) {
+				cs2method2103(200);
+			} else {
+				cs2method2103(0);
+			}
+		} else {
+			cs2method2103(0);
+		}
+	}
+	return;
+}

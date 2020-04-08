@@ -1,0 +1,10 @@
+void script_2801(int arg0,int arg1,int arg2) {
+	setWidgetRGB(new Color(arg2), new WidgetPointer(arg0));
+	if (arg1 > 0) {
+		cs2method2103(0, new WidgetPointer(arg0));
+	} else {
+		cs2method2103(255, new WidgetPointer(arg0));
+	}
+	setScriptCallOnGameloop(2802, arg1, new WidgetPointer(arg0), "iI", new WidgetPointer(arg0));
+	return;
+}

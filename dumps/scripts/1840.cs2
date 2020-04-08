@@ -1,0 +1,36 @@
+int script_1840(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	string svar0;
+	ivar3 = cs2method_3408(105, 74, 1805, arg1);
+	if (ivar3 == -1) {
+		return arg2;
+	}
+	svar0 = getOtherCommonData(ivar3, 596);
+	ivar4 = getOtherCommonData(ivar3, 477);
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	createExtraChild(new WidgetPointer(arg0), 4, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetPosition(3, arg2, 0, 0);
+	setWidgetSize(15, 15, 0, 0);
+	setWidgetPosition(add(getWidgetActualX(), getWidgetActualWidth()), arg2, 0, 0);
+	setWidgetSize(add(getWidgetActualX(), getWidgetActualX()), getWidgetActualHeight(), 1, 0);
+	setWidgetSprite(getOtherCommonData(ivar3, 595));
+	setWidgetRGB(new Color(175, 175, 175));
+	setWidgetFont(495);
+	setWidgetUnknownBoolean(true);
+	setWidgetTextAlignment(0, 1, 0);
+	setWidgetText(svar0);
+	if (ivar4 != -1) {
+		cs2method1305("<col=ff9040>" + svar0 + "</col>");
+		cs2method1305("<col=ff9040>" + svar0 + "</col>");
+		setWidgetContextMenuOption(1, "Highlight");
+		setWidgetContextMenuOption(1, "Highlight");
+		setScriptCallOnClickContextMenu(288, ivar4, "y");
+		setScriptCallOnClickContextMenu(288, ivar4, "y");
+		setScriptCallOnMouseEntered(1356, new WidgetPointer(arg0), getWidgetCustomChildArrayIndex(), 16777215, "Iii");
+		setScriptCallOnMouseEntered(1356, new WidgetPointer(arg0), getWidgetCustomChildArrayIndex(), 16777215, "Iii");
+		setScriptCallOnMouseExit(1356, new WidgetPointer(arg0), getWidgetCustomChildArrayIndex(), 11513775, "Iii");
+		setScriptCallOnMouseExit(1356, new WidgetPointer(arg0), getWidgetCustomChildArrayIndex(), 11513775, "Iii");
+	}
+	return add(arg2, getWidgetActualHeight());
+}

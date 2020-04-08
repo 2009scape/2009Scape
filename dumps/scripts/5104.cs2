@@ -1,0 +1,14 @@
+void script_5104(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	setWidgetIsHidden(true, new WidgetPointer(arg1));
+	setWidgetIsHidden(false, new WidgetPointer(arg2));
+	if (((boolean)arg0)) {
+		setWidgetText(new WidgetPointer(arg3), "Click to add" + "<br>" + "clan relationship");
+		setWidgetContextMenuOption(1, new WidgetPointer(arg4), "Add");
+		setWidgetIsHidden(true, new WidgetPointer(arg5));
+	} else {
+		setWidgetText(new WidgetPointer(arg3), "No clan set");
+		setWidgetNoOptions(new WidgetPointer(arg4));
+		setWidgetIsHidden(false, new WidgetPointer(arg5));
+	}
+	return;
+}

@@ -1,0 +1,23 @@
+void script_221() {
+	if (((boolean)stringMethod4107(globalstring_24, ""))) {
+		script_675();
+		return;
+	}
+	globalint_790 = 3;
+	setWidgetIsHidden(true, new WidgetPointer(594,33));
+	setWidgetIsHidden(true, new WidgetPointer(594,34));
+	setWidgetIsHidden(true, new WidgetPointer(594,61));
+	setWidgetIsHidden(true, new WidgetPointer(594,148));
+	setWidgetIsHidden(true, new WidgetPointer(594,149));
+	setWidgetIsHidden(true, new WidgetPointer(594,150));
+	setWidgetIsHidden(true, new WidgetPointer(594,151));
+	setWidgetIsHidden(true, new WidgetPointer(594,165));
+	setWidgetIsHidden(true, new WidgetPointer(594,166));
+	setWidgetIsHidden(true, new WidgetPointer(594,104));
+	setWidgetIsHidden(false, new WidgetPointer(594,120));
+	setWidgetIsHidden(true, new WidgetPointer(594,62));
+	setWidgetIsHidden(true, new WidgetPointer(594,117));
+	setWidgetIsHidden(true, new WidgetPointer(594,121));
+	setWidgetText(new WidgetPointer(594,135), "Ignore " + globalstring_24 + "?");
+	return;
+}

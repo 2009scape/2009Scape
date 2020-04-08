@@ -1,0 +1,8 @@
+void script_1564(string arg0) {
+	setWidgetText(new WidgetPointer(752,5), replaceLtGt(arg0));
+	globalstring_22 = arg0;
+	globalint_1029 = strLength(arg0);
+	setScriptCallOnMousePressed(1556, -2147483647, new WidgetPointer(-32768,3), -2147483643, "iIi", new WidgetPointer(752,5));
+	script_1557();
+	return;
+}

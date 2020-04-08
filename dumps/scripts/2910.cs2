@@ -1,0 +1,12 @@
+void script_2910(int arg0,int arg1) {
+	if (((boolean)stringMethod4107(getWidgetText(new WidgetPointer(arg1)), "Hide"))) {
+		setScriptCallOnGameloop(2911, 0, 24, subtract(getWidgetActualHeight(new WidgetPointer(getWidgetParentId(new WidgetPointer(arg0)))), 24), 0, new WidgetPointer(arg0), "1iiiI", new WidgetPointer(arg0));
+		setWidgetText(new WidgetPointer(arg1), "Show");
+		setWidgetContextMenuOption(1, new WidgetPointer(arg1), "Show");
+	} else {
+		setScriptCallOnGameloop(2911, 1, 24, subtract(getWidgetActualHeight(new WidgetPointer(getWidgetParentId(new WidgetPointer(arg0)))), 24), 0, new WidgetPointer(arg0), "1iiiI", new WidgetPointer(arg0));
+		setWidgetText(new WidgetPointer(arg1), "Hide");
+		setWidgetContextMenuOption(1, new WidgetPointer(arg1), "Hide");
+	}
+	return;
+}

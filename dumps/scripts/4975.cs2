@@ -1,0 +1,12 @@
+int script_4975(int arg0) {
+	if ((arg0 > 0) && (arg0 < 300)) {
+		return 1;
+	}
+	if ((arg0 > 300) && (arg0 < 600)) {
+		return 2;
+	}
+	if (arg0 > 600) {
+		return 3;
+	}
+	return 0;
+}

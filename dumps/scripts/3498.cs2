@@ -1,0 +1,88 @@
+void script_3498(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	ivar2 = 65142858;
+	ivar3 = 65142862;
+	ivar4 = 65142864;
+	ivar5 = add(10, multiply(10, arg0));
+	ivar6 = getWidgetActualY(new WidgetPointer(994,135));
+	switch (ivar6) {
+		case -22:
+			ivar6 = arg0;
+			break;
+		case -137:
+			ivar6 = add(arg0, 11);
+			break;
+		case -222:
+			ivar6 = add(arg0, 17);
+			break;
+		case -277:
+			ivar6 = add(arg0, 29);
+			break;
+		case -400:
+			ivar6 = add(arg0, 35);
+			break;
+		case -500:
+			ivar6 = add(arg0, 47);
+			break;
+		default:
+			ivar6 = arg0;
+	}
+	if (arg1 != 0) {
+		ivar6 = arg1;
+	}
+	playSoundEffect(8809, 1, 0);
+	setWidgetPosition(0, ivar5, 0, 0, new WidgetPointer(ivar2));
+	setWidgetText(new WidgetPointer(ivar3), intToStr(ivar6));
+	switch (arg0) {
+		case 1:
+			setWidgetText(new WidgetPointer(ivar4), getWidgetText(new WidgetPointer(994,44)));
+			break;
+		case 2:
+			setWidgetText(new WidgetPointer(ivar4), getWidgetText(new WidgetPointer(994,46)));
+			break;
+		case 3:
+			setWidgetText(new WidgetPointer(ivar4), getWidgetText(new WidgetPointer(994,48)));
+			break;
+		case 4:
+			setWidgetText(new WidgetPointer(ivar4), getWidgetText(new WidgetPointer(994,50)));
+			break;
+		case 5:
+			setWidgetText(new WidgetPointer(ivar4), getWidgetText(new WidgetPointer(994,52)));
+			break;
+		case 6:
+			setWidgetText(new WidgetPointer(ivar4), getWidgetText(new WidgetPointer(994,54)));
+			break;
+		case 7:
+			setWidgetText(new WidgetPointer(ivar4), getWidgetText(new WidgetPointer(994,56)));
+			break;
+		case 8:
+			setWidgetText(new WidgetPointer(ivar4), getWidgetText(new WidgetPointer(994,58)));
+			break;
+		case 9:
+			setWidgetText(new WidgetPointer(ivar4), getWidgetText(new WidgetPointer(994,60)));
+			break;
+		case 10:
+			setWidgetText(new WidgetPointer(ivar4), getWidgetText(new WidgetPointer(994,62)));
+			break;
+		case 11:
+			setWidgetText(new WidgetPointer(ivar4), getWidgetText(new WidgetPointer(994,64)));
+			break;
+		case 12:
+			setWidgetText(new WidgetPointer(ivar4), getWidgetText(new WidgetPointer(994,66)));
+			break;
+		case 13:
+			setWidgetText(new WidgetPointer(ivar4), getWidgetText(new WidgetPointer(994,68)));
+			break;
+		case 14:
+			setWidgetText(new WidgetPointer(ivar4), getWidgetText(new WidgetPointer(994,70)));
+			break;
+		case 15:
+			setWidgetText(new WidgetPointer(ivar4), getWidgetText(new WidgetPointer(994,72)));
+			break;
+	}
+	return;
+}

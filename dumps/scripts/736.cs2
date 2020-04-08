@@ -1,0 +1,90 @@
+void script_736(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int stack_dump0;
+	ivar4 = 48889937;
+	ivar5 = 35913917;
+	ivar6 = 35913930;
+	if (arg0 == -1) {
+		setWidgetIsHidden(true, new WidgetPointer(ivar4));
+		setWidgetPosition(0, 0, 0, 0, new WidgetPointer(ivar4));
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(746,21));
+		setWidgetIsHidden(true, new WidgetPointer(ivar5));
+		setWidgetIsHidden(true, new WidgetPointer(ivar6));
+		setWidgetPosition(0, 0, 0, 0, new WidgetPointer(ivar5));
+		setWidgetPosition(0, 0, 0, 0, new WidgetPointer(ivar6));
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(548,116));
+		return;
+	}
+	setWidgetIsHidden(false, new WidgetPointer(ivar4));
+	script_2755(arg0, arg1, ivar4);
+	setScriptCallOnGameloop(2754, new WidgetPointer(arg0), arg1, new WidgetPointer(ivar4), "IiI", new WidgetPointer(746,21));
+	ivar7 = 0;
+	ivar8 = 0;
+	ivar9 = 0;
+	ivar10 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg2), arg3) || ((arg3 == -1) && setWidgetRegister(new WidgetPointer(arg2)))) {
+		stack_dump0 = script_1743();
+		ivar8 = script_1744();
+		ivar7 = stack_dump0;
+		stack_dump0 = getWidgetActualWidth();
+		ivar10 = getWidgetActualHeight();
+		ivar9 = stack_dump0;
+	} else {
+		return;
+	}
+	ivar11 = getWidgetParentId(new WidgetPointer(ivar5));
+	ivar12 = 0;
+	ivar13 = 0;
+	ivar14 = 0;
+	ivar15 = 0;
+	ivar16 = 0;
+	ivar17 = 0;
+	stack_dump0 = script_3365(ivar11);
+	ivar13 = script_3366(ivar11);
+	ivar12 = stack_dump0;
+	stack_dump0 = getWidgetActualWidth(new WidgetPointer(ivar11));
+	ivar15 = getWidgetActualHeight(new WidgetPointer(ivar11));
+	ivar14 = stack_dump0;
+	stack_dump0 = add(ivar12, ivar14);
+	ivar17 = add(ivar13, ivar15);
+	ivar16 = stack_dump0;
+	ivar18 = 0;
+	ivar19 = 0;
+	if (((add(ivar7, ivar9) >= ivar12) && (ivar7 <= ivar16)) && ((add(ivar8, ivar10) >= ivar13) && (ivar8 <= ivar17))) {
+		ivar4 = ivar5;
+	} else {
+		ivar4 = ivar6;
+		ivar11 = getWidgetParentId(new WidgetPointer(ivar6));
+		stack_dump0 = script_3365(ivar11);
+		ivar13 = script_3366(ivar11);
+		ivar12 = stack_dump0;
+		stack_dump0 = getWidgetActualWidth(new WidgetPointer(ivar11));
+		ivar15 = getWidgetActualHeight(new WidgetPointer(ivar11));
+		ivar14 = stack_dump0;
+		stack_dump0 = add(ivar12, ivar14);
+		ivar17 = add(ivar13, ivar15);
+		ivar16 = stack_dump0;
+	}
+	stack_dump0 = subtract(ivar7, ivar12);
+	ivar19 = subtract(ivar8, ivar13);
+	ivar18 = stack_dump0;
+	setWidgetIsHidden(false, new WidgetPointer(ivar4));
+	script_1176(ivar4, ivar7, ivar8, ivar9, ivar10, ivar18, ivar19, ivar12, ivar13, ivar14, ivar15);
+	setScriptCallOnGameloop(836, new WidgetPointer(ivar4), ivar7, ivar8, ivar9, ivar10, ivar18, ivar19, ivar12, ivar13, ivar14, ivar15, "Iiiiiiiiiii", new WidgetPointer(548,116));
+	return;
+}

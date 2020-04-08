@@ -1,0 +1,190 @@
+void script_722() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	opcStruct6203(2,0,0) structdump_0;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	if (getDisplayMode() >= 2) {
+		structdump_0 = cs2method6203();
+		setWidgetSize(structdump_0.intpart_0, structdump_0.intpart_1, 0, 0, new WidgetPointer(746,9));
+		script_1658();
+		script_1650();
+		ivar0 = getWidgetActualWidth(new WidgetPointer(746,3));
+		ivar1 = getWidgetActualHeight(new WidgetPointer(746,3));
+		ivar2 = divide(subtract(ivar0, 512), 2);
+		if (isParent(new WidgetPointer(746,12), 762)) {
+			if (((boolean)bitconfig_8348)) {
+				setWidgetSize(10, 10, 0, 0, new WidgetPointer(746,12));
+			} else {
+				ivar4 = subtract(ivar1, 185);
+				ivar3 = 175;
+				if (ivar4 > 942) {
+					ivar4 = 942;
+					ivar3 = add(divide(subtract(subtract(ivar1, 175), ivar4), 2), 175);
+				} else {
+					if (ivar4 < 334) {
+						ivar4 = 334;
+						ivar3 = divide(subtract(ivar1, 334), 2);
+					}
+				}
+				setWidgetSize(512, ivar4, 0, 0, new WidgetPointer(746,12));
+				script_1654();
+			}
+		} else {
+			setWidgetSize(512, 334, 0, 0, new WidgetPointer(746,12));
+			ivar3 = divide(subtract(ivar1, 334), 2);
+		}
+		if (ivar2 < 223) {
+			ivar2 = 223;
+		}
+		if (ivar3 < 165) {
+			ivar3 = 165;
+		}
+		setWidgetPosition(ivar2, ivar3, 2, 2, new WidgetPointer(746,12));
+		if (isParent(new WidgetPointer(746,9), 667)) {
+			setWidgetSize(512, 334, 0, 0, new WidgetPointer(746,9));
+			setWidgetPosition(ivar2, max(divide(subtract(ivar1, 334), 2), ivar3), 2, 2, new WidgetPointer(746,9));
+			setWidgetSize(219, 164, 1, 1, new WidgetPointer(746,10));
+			setWidgetPosition(0, 0, 0, 0, new WidgetPointer(746,10));
+		} else if (isParent(new WidgetPointer(746,10), 667)) {
+			setWidgetSize(512, 334, 0, 0, new WidgetPointer(746,10));
+			setWidgetPosition(ivar2, max(divide(subtract(ivar1, 334), 2), ivar3), 2, 2, new WidgetPointer(746,10));
+			setWidgetSize(0, 0, 1, 1, new WidgetPointer(746,9));
+			setWidgetPosition(0, 0, 1, 1, new WidgetPointer(746,9));
+		} else {
+			setWidgetSize(219, 164, 1, 1, new WidgetPointer(746,10));
+			setWidgetPosition(0, 0, 0, 0, new WidgetPointer(746,10));
+			setWidgetSize(0, 0, 1, 1, new WidgetPointer(746,9));
+			setWidgetPosition(0, 0, 1, 1, new WidgetPointer(746,9));
+		}
+		if (ivar0 < 996) {
+			setWidgetPosition(0, 74, 2, 2, new WidgetPointer(746,79));
+			setWidgetSize(240, 74, 0, 0, new WidgetPointer(746,20));
+			setWidgetPosition(4, 42, 2, 2, new WidgetPointer(746,30));
+			setWidgetPosition(34, 43, 2, 2, new WidgetPointer(746,29));
+			setWidgetPosition(64, 43, 2, 2, new WidgetPointer(746,28));
+			setWidgetPosition(94, 43, 2, 2, new WidgetPointer(746,27));
+			setWidgetPosition(124, 43, 2, 2, new WidgetPointer(746,26));
+			setWidgetPosition(154, 43, 2, 2, new WidgetPointer(746,25));
+			setWidgetPosition(184, 44, 2, 2, new WidgetPointer(746,131));
+			setWidgetPosition(214, 43, 2, 2, new WidgetPointer(746,24));
+			setWidgetPosition(0, 37, 2, 2, new WidgetPointer(746,62));
+			setWidgetPosition(30, 37, 2, 2, new WidgetPointer(746,61));
+			setWidgetPosition(60, 37, 2, 2, new WidgetPointer(746,60));
+			setWidgetPosition(90, 37, 2, 2, new WidgetPointer(746,59));
+			setWidgetPosition(120, 37, 2, 2, new WidgetPointer(746,58));
+			setWidgetPosition(150, 37, 2, 2, new WidgetPointer(746,57));
+			setWidgetPosition(180, 37, 2, 2, new WidgetPointer(746,56));
+			setWidgetPosition(210, 37, 2, 2, new WidgetPointer(746,55));
+			setWidgetPosition(0, 37, 2, 2, new WidgetPointer(746,46));
+			setWidgetPosition(30, 37, 2, 2, new WidgetPointer(746,45));
+			setWidgetPosition(60, 37, 2, 2, new WidgetPointer(746,44));
+			setWidgetPosition(90, 37, 2, 2, new WidgetPointer(746,43));
+			setWidgetPosition(120, 37, 2, 2, new WidgetPointer(746,42));
+			setWidgetPosition(150, 37, 2, 2, new WidgetPointer(746,41));
+			setWidgetPosition(180, 37, 2, 2, new WidgetPointer(746,40));
+			setWidgetPosition(210, 37, 2, 2, new WidgetPointer(746,39));
+			setWidgetSize(249, 78, 0, 0, new WidgetPointer(746,71));
+			setWidgetPosition(0, 0, 0, 0, new WidgetPointer(746,133));
+			setWidgetPosition(30, 0, 0, 0, new WidgetPointer(746,135));
+			setWidgetPosition(60, 0, 0, 0, new WidgetPointer(746,137));
+			setWidgetPosition(90, 0, 0, 0, new WidgetPointer(746,139));
+			setWidgetPosition(120, 0, 0, 0, new WidgetPointer(746,141));
+			setWidgetPosition(150, 0, 0, 0, new WidgetPointer(746,143));
+			setWidgetPosition(180, 0, 0, 0, new WidgetPointer(746,145));
+			setWidgetPosition(210, 0, 0, 0, new WidgetPointer(746,147));
+			setWidgetPosition(0, 0, 0, 0, new WidgetPointer(746,132));
+			setWidgetPosition(30, 0, 0, 0, new WidgetPointer(746,134));
+			setWidgetPosition(60, 0, 0, 0, new WidgetPointer(746,136));
+			setWidgetPosition(90, 0, 0, 0, new WidgetPointer(746,138));
+			setWidgetPosition(120, 0, 0, 0, new WidgetPointer(746,140));
+			setWidgetPosition(150, 0, 0, 0, new WidgetPointer(746,142));
+			setWidgetPosition(180, 0, 0, 0, new WidgetPointer(746,144));
+			setWidgetPosition(210, 0, 0, 0, new WidgetPointer(746,146));
+		} else {
+			setWidgetPosition(0, 37, 2, 2, new WidgetPointer(746,79));
+			setWidgetSize(480, 37, 0, 0, new WidgetPointer(746,20));
+			setWidgetPosition(244, 6, 2, 2, new WidgetPointer(746,30));
+			setWidgetPosition(274, 7, 2, 2, new WidgetPointer(746,29));
+			setWidgetPosition(305, 7, 2, 2, new WidgetPointer(746,28));
+			setWidgetPosition(334, 6, 2, 2, new WidgetPointer(746,27));
+			setWidgetPosition(364, 6, 2, 2, new WidgetPointer(746,26));
+			setWidgetPosition(394, 6, 2, 2, new WidgetPointer(746,25));
+			setWidgetPosition(424, 7, 2, 2, new WidgetPointer(746,131));
+			setWidgetPosition(454, 6, 2, 2, new WidgetPointer(746,24));
+			setWidgetPosition(240, 0, 2, 2, new WidgetPointer(746,62));
+			setWidgetPosition(270, 0, 2, 2, new WidgetPointer(746,61));
+			setWidgetPosition(300, 0, 2, 2, new WidgetPointer(746,60));
+			setWidgetPosition(330, 0, 2, 2, new WidgetPointer(746,59));
+			setWidgetPosition(360, 0, 2, 2, new WidgetPointer(746,58));
+			setWidgetPosition(390, 0, 2, 2, new WidgetPointer(746,57));
+			setWidgetPosition(420, 0, 2, 2, new WidgetPointer(746,56));
+			setWidgetPosition(450, 0, 2, 2, new WidgetPointer(746,55));
+			setWidgetPosition(240, 0, 2, 2, new WidgetPointer(746,46));
+			setWidgetPosition(270, 0, 2, 2, new WidgetPointer(746,45));
+			setWidgetPosition(300, 0, 2, 2, new WidgetPointer(746,44));
+			setWidgetPosition(330, 0, 2, 2, new WidgetPointer(746,43));
+			setWidgetPosition(360, 0, 2, 2, new WidgetPointer(746,42));
+			setWidgetPosition(390, 0, 2, 2, new WidgetPointer(746,41));
+			setWidgetPosition(420, 0, 2, 2, new WidgetPointer(746,40));
+			setWidgetPosition(450, 0, 2, 2, new WidgetPointer(746,39));
+			setWidgetSize(489, 42, 0, 0, new WidgetPointer(746,71));
+			setWidgetPosition(0, 0, 0, 0, new WidgetPointer(746,133));
+			setWidgetPosition(30, 0, 0, 0, new WidgetPointer(746,135));
+			setWidgetPosition(60, 0, 0, 0, new WidgetPointer(746,137));
+			setWidgetPosition(90, 0, 0, 0, new WidgetPointer(746,139));
+			setWidgetPosition(120, 0, 0, 0, new WidgetPointer(746,141));
+			setWidgetPosition(150, 0, 0, 0, new WidgetPointer(746,143));
+			setWidgetPosition(180, 0, 0, 0, new WidgetPointer(746,145));
+			setWidgetPosition(210, 0, 0, 0, new WidgetPointer(746,147));
+			setWidgetPosition(0, 0, 0, 0, new WidgetPointer(746,132));
+			setWidgetPosition(30, 0, 0, 0, new WidgetPointer(746,134));
+			setWidgetPosition(60, 0, 0, 0, new WidgetPointer(746,136));
+			setWidgetPosition(90, 0, 0, 0, new WidgetPointer(746,138));
+			setWidgetPosition(120, 0, 0, 0, new WidgetPointer(746,140));
+			setWidgetPosition(150, 0, 0, 0, new WidgetPointer(746,142));
+			setWidgetPosition(180, 0, 0, 0, new WidgetPointer(746,144));
+			setWidgetPosition(210, 0, 0, 0, new WidgetPointer(746,146));
+		}
+		script_4251();
+	} else if (isParent(new WidgetPointer(548,19), 762) && ((boolean)bitconfig_8348)) {
+		setWidgetSize(10, 10, 0, 0, new WidgetPointer(548,19));
+		cs2method202(35913738);
+		cs2method202(35913739);
+		cs2method202(35913740);
+		cs2method202(35913743);
+		cs2method202(35913744);
+		cs2method202(35913745);
+		cs2method202(35913746);
+		cs2method202(35913748);
+		cs2method202(35913749);
+		cs2method202(35913750);
+		cs2method202(35913768);
+		cs2method202(35913736);
+		cs2method202(35913737);
+		cs2method202(35913747);
+	} else {
+		setWidgetSize(512, 334, 0, 0, new WidgetPointer(548,19));
+		cs2method202(35913736);
+		cs2method202(35913737);
+		cs2method202(35913738);
+		cs2method202(35913739);
+		cs2method202(35913740);
+		cs2method202(35913743);
+		cs2method202(35913744);
+		cs2method202(35913745);
+		cs2method202(35913746);
+		cs2method202(35913747);
+		cs2method202(35913748);
+		cs2method202(35913749);
+		cs2method202(35913750);
+		cs2method202(35913768);
+	}
+	return;
+}

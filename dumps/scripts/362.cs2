@@ -1,0 +1,13 @@
+void script_362(int arg0,int arg1,string arg2) {
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	setWidgetSize(arg1, getWidgetActualHeight(new WidgetPointer(arg0)), 0, 0, new WidgetPointer(arg0));
+	createExtraChild(new WidgetPointer(arg0), 4, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(0, 0, 1, 1);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetFont(468);
+	setWidgetRGB(new Color(36, 27, 18));
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetUnknownBoolean(false);
+	setWidgetText(arg2);
+	return;
+}

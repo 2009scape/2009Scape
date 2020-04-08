@@ -1,0 +1,18 @@
+void script_4223() {
+	cs2method2310(new WidgetPointer(944,79), "Make 100");
+	cs2method2310(new WidgetPointer(944,80), "Make 50");
+	cs2method2310(new WidgetPointer(944,81), "Make 10");
+	cs2method2310(new WidgetPointer(944,26), "Make 100");
+	cs2method2310(new WidgetPointer(944,27), "Make 50");
+	cs2method2310(new WidgetPointer(944,28), "Make 10");
+	cs2method2310(new WidgetPointer(944,32), "Make 100");
+	cs2method2310(new WidgetPointer(944,33), "Make 50");
+	cs2method2310(new WidgetPointer(944,34), "Make 10");
+	cs2method2310(new WidgetPointer(944,38), "Make 100");
+	cs2method2310(new WidgetPointer(944,39), "Make 50");
+	cs2method2310(new WidgetPointer(944,40), "Make 10");
+	cs2method2310(new WidgetPointer(944,44), "Make 100");
+	cs2method2310(new WidgetPointer(944,45), "Make 50");
+	cs2method2310(new WidgetPointer(944,46), "Make 10");
+	return;
+}

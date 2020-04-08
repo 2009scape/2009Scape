@@ -1,0 +1,13 @@
+cs2func_script_5173_struct(2,0,0) script_5173() {
+	int ivar0;
+	int ivar1;
+	int stack_dump0;
+	cs2func_script_5175_struct(2,0,0) structdump_1;
+	ivar0 = 0;
+	ivar1 = 0;
+	stack_dump0 = 2;
+	structdump_1 = script_5175(stack_dump0);
+	ivar1 = structdump_1.intpart_1;
+	ivar0 = structdump_1.intpart_0;
+	return newstruct cs2func_script_5173_struct(ivar0, ivar1);
+}

@@ -1,0 +1,26 @@
+cs2func_script_5172_struct(2,0,0) script_5172() {
+	int ivar0;
+	ivar0 = add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(bitconfig_4949, bitconfig_4950), bitconfig_4951), bitconfig_4952), bitconfig_4953), bitconfig_4954), bitconfig_4955), bitconfig_4956), bitconfig_4957), bitconfig_4958), bitconfig_4959), bitconfig_4960), bitconfig_4961), bitconfig_4962), bitconfig_4963), bitconfig_4964), bitconfig_4965), bitconfig_4966), bitconfig_4967), bitconfig_4968), bitconfig_4969), bitconfig_4970), bitconfig_4971), bitconfig_4972), bitconfig_4973), bitconfig_4974), bitconfig_4975), bitconfig_4976), bitconfig_4977), bitconfig_4978), bitconfig_4979), bitconfig_4980), bitconfig_4981), bitconfig_4982), bitconfig_4983), bitconfig_4984), bitconfig_4985), bitconfig_4986), bitconfig_4987), bitconfig_4988), bitconfig_4989), bitconfig_4991), bitconfig_4992), bitconfig_4993), bitconfig_4994), bitconfig_4995), bitconfig_4996), bitconfig_4997), bitconfig_4998), bitconfig_4999), bitconfig_5998), bitconfig_5001), bitconfig_5002), bitconfig_5003), bitconfig_8180), bitconfig_8181), bitconfig_8188), bitconfig_8191), bitconfig_8192), bitconfig_8193), bitconfig_8194), bitconfig_8517), bitconfig_8518), bitconfig_8519), bitconfig_8520), bitconfig_8521), bitconfig_8522), bitconfig_8523), bitconfig_8524), bitconfig_8525), bitconfig_8526), bitconfig_8527), bitconfig_8528), bitconfig_8529), bitconfig_8530), bitconfig_8531), bitconfig_8532), bitconfig_8533), bitconfig_8534), bitconfig_8535), bitconfig_8536), bitconfig_8537), bitconfig_8538), bitconfig_8539), bitconfig_8540), bitconfig_8541), bitconfig_8542), bitconfig_8543), bitconfig_8544), bitconfig_8545), bitconfig_8546), bitconfig_8547), bitconfig_8548), bitconfig_8549), bitconfig_8550), bitconfig_8551), bitconfig_8552), bitconfig_8553), bitconfig_8554), bitconfig_8555), bitconfig_8556), bitconfig_8557), bitconfig_8558), bitconfig_8559), bitconfig_8560), bitconfig_8561), bitconfig_8562), bitconfig_8563), bitconfig_8564), bitconfig_8565), bitconfig_8566), bitconfig_8567), bitconfig_8568), bitconfig_8569), bitconfig_8570), bitconfig_8571), bitconfig_8572), bitconfig_8573), bitconfig_8574), bitconfig_8781), bitconfig_9010), bitconfig_9015), bitconfig_9016), bitconfig_9018), bitconfig_9019), bitconfig_9027);
+	if (bitconfig_9011 == 3) {
+		ivar0 = add(ivar0, 1);
+	}
+	if (bitconfig_9013 == 3) {
+		ivar0 = add(ivar0, 1);
+	}
+	if (bitconfig_7238 == 60) {
+		ivar0 = add(ivar0, 1);
+	}
+	if (standart_config_107 == 5) {
+		ivar0 = add(ivar0, 1);
+	}
+	if (bitconfig_5733 > 59) {
+		ivar0 = add(ivar0, 1);
+	}
+	if (standart_config_63 == 6) {
+		ivar0 = add(ivar0, 1);
+	}
+	if (standart_config_29 == 2) {
+		ivar0 = add(ivar0, 1);
+	}
+	return newstruct cs2func_script_5172_struct(ivar0, 133);
+}

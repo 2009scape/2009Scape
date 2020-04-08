@@ -1,0 +1,26 @@
+void script_2889() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = cs2method_3408(105, 110, 927, bitconfig_7099);
+	ivar1 = -1;
+	ivar2 = -1;
+	if (ivar0 != -1) {
+		if (getNpcNodemapData(ivar0, 956) != -1) {
+			setWidgetModel(cs2method_3408(110, 109, 934, getNpcNodemapData(ivar0, 956)), new WidgetPointer(476,45));
+			setWidgetAnimation(cs2method_3408(110, 65, 935, getNpcNodemapData(ivar0, 956)), new WidgetPointer(476,45));
+			setWidgetSprite(cs2method_3408(110, 100, 932, getNpcNodemapData(ivar0, 956)), new WidgetPointer(476,49));
+			setWidgetText(new WidgetPointer(476,52), cs2method_3408(110, 115, 930, getNpcNodemapData(ivar0, 956)));
+		}
+		if (getNpcNodemapData(ivar0, 957) != -1) {
+			setWidgetModel(cs2method_3408(110, 109, 934, getNpcNodemapData(ivar0, 957)), new WidgetPointer(476,46));
+			setWidgetAnimation(cs2method_3408(110, 65, 935, getNpcNodemapData(ivar0, 957)), new WidgetPointer(476,46));
+			setWidgetSprite(cs2method_3408(110, 100, 932, getNpcNodemapData(ivar0, 957)), new WidgetPointer(476,50));
+			setWidgetText(new WidgetPointer(476,53), cs2method_3408(110, 115, 930, getNpcNodemapData(ivar0, 957)));
+		}
+		setWidgetSprite(cs2method_3408(110, 100, 933, ivar0), new WidgetPointer(476,48));
+		setWidgetModel(cs2method_3408(110, 109, 934, ivar0), new WidgetPointer(476,44));
+		setWidgetAnimation(cs2method_3408(110, 65, 935, ivar0), new WidgetPointer(476,44));
+	}
+	return;
+}

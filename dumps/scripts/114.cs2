@@ -1,0 +1,13 @@
+void script_114() {
+	setScriptCallOnGlobalConfigChange(1302, 168, 747, 2, "Y", new WidgetPointer(548,195));
+	setScriptCallOnGlobalConfigChange(1302, 168, 747, 2, "Y", new WidgetPointer(746,79));
+	if (getDisplayMode() >= 2) {
+		setScriptCallOnConfigChange(117, 1021, 1, "Y", new WidgetPointer(746,22));
+		script_1309(1);
+	} else {
+		setScriptCallOnConfigChange(117, 1021, 1, "Y", new WidgetPointer(548,128));
+		script_2756();
+		script_1312(1);
+	}
+	return;
+}

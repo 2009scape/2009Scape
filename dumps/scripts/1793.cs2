@@ -1,0 +1,19 @@
+void script_1793(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	int ivar6;
+	script_1795(arg4, arg5);
+	if (((boolean)bitconfig_5279)) {
+		setWidgetText(new WidgetPointer(arg0), "Free-for-all: Dangerous");
+		setWidgetText(new WidgetPointer(arg1), "This is a " + "<col=ff0000>" + "DANGEROUS" + "</col>" + " arena. When players fight each other in here, they drop " + "<col=ff0000>" + "ALL" + "</col>" + " their items on death. Gravestones do not appear." + "<br>" + "<br>" + "A non-combat zone exists at the southern end of the arena. This portal leads into that zone." + "<br>" + "<br>" + "You cannot teleport out of this arena unless you're standing in the non-combat zone.");
+		setScriptCallOnConfigChange(1794, new WidgetPointer(arg4), new WidgetPointer(arg5), 1147, 1046, 2, "IIY", new WidgetPointer(arg4));
+	} else {
+		setWidgetText(new WidgetPointer(arg0), "Free-for-all: Safe");
+		setWidgetText(new WidgetPointer(arg1), "This is a SAFE arena. Although players may fight each other in here, items are not dropped on death." + "<br>" + "<br>" + "You can teleport out of the arena at any time." + "<br>" + "<br>" + "A non-combat zone exists at the southern end of the arena. This portal leads into that zone.");
+		setScriptCallOnConfigChange(1794, new WidgetPointer(arg4), new WidgetPointer(arg5), 1147, 1045, 2, "IIY", new WidgetPointer(arg4));
+	}
+	ivar6 = getMaxLineWidth(getWidgetActualWidth(new WidgetPointer(arg0)), 496, getWidgetText(new WidgetPointer(arg0)));
+	ivar6 = divide(subtract(getWidgetActualWidth(new WidgetPointer(arg0)), ivar6), 2);
+	ivar6 = subtract(ivar6, add(getWidgetActualWidth(new WidgetPointer(arg2)), 10));
+	setWidgetPosition(ivar6, getWidgetActualY(new WidgetPointer(arg2)), 0, 0, new WidgetPointer(arg2));
+	setWidgetPosition(ivar6, getWidgetActualY(new WidgetPointer(arg3)), 2, 0, new WidgetPointer(arg3));
+	return;
+}

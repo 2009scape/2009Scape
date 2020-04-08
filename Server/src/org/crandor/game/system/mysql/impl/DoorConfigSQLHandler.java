@@ -75,6 +75,7 @@ public class DoorConfigSQLHandler extends SQLEntryHandler<Object> {
 		door = new Door(id);
 		door.setReplaceId(set.getInt("replaceId"));
 		door.setFence(set.getBoolean("fence"));
+		door.setMetal(set.getBoolean("metal"));
 		DOORS.put(id, door);
 	}
 
@@ -124,6 +125,11 @@ public class DoorConfigSQLHandler extends SQLEntryHandler<Object> {
 		 * If the player should automaticly walk through it.
 		 */
 		private boolean autoWalk;
+		
+		/**
+		 * Is the door metal?
+		 */
+		private boolean metal;
 
 		/**
 		 * Constructs a new {@code DoorManager} {@code Object}.
@@ -186,6 +192,14 @@ public class DoorConfigSQLHandler extends SQLEntryHandler<Object> {
 		 */
 		public void setFence(boolean fence) {
 			this.fence = fence;
+		}
+		
+		public boolean isMetal() {
+			return metal;
+		}
+		
+		public void setMetal(boolean metal) {
+			this.metal = metal;
 		}
 
 	}

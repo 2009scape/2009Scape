@@ -1,0 +1,119 @@
+void script_1271(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int stack_dump0;
+	ivar1 = 1;
+	ivar2 = 0;
+	switch (bitconfig_1010) {
+		case 0:
+			setWidgetText(new WidgetPointer(13,28), "First click the FIRST digit.");
+			setWidgetText(new WidgetPointer(13,1), "?");
+			setWidgetText(new WidgetPointer(13,2), "?");
+			setWidgetText(new WidgetPointer(13,3), "?");
+			setWidgetText(new WidgetPointer(13,4), "?");
+			break;
+		case 1:
+			setWidgetText(new WidgetPointer(13,28), "Now click the SECOND digit.");
+			setWidgetText(new WidgetPointer(13,1), "*");
+			setWidgetText(new WidgetPointer(13,2), "?");
+			setWidgetText(new WidgetPointer(13,3), "?");
+			setWidgetText(new WidgetPointer(13,4), "?");
+			break;
+		case 2:
+			setWidgetText(new WidgetPointer(13,28), "Time for the THIRD digit.");
+			setWidgetText(new WidgetPointer(13,1), "*");
+			setWidgetText(new WidgetPointer(13,2), "*");
+			setWidgetText(new WidgetPointer(13,3), "?");
+			setWidgetText(new WidgetPointer(13,4), "?");
+			break;
+		case 3:
+			setWidgetText(new WidgetPointer(13,28), "Finally, the FOURTH digit.");
+			setWidgetText(new WidgetPointer(13,1), "*");
+			setWidgetText(new WidgetPointer(13,2), "*");
+			setWidgetText(new WidgetPointer(13,3), "*");
+			setWidgetText(new WidgetPointer(13,4), "?");
+			stack_dump0 = 0;
+			ivar2 = 1;
+			ivar1 = stack_dump0;
+			break;
+		default:
+			setWidgetText(new WidgetPointer(13,28), "Please wait...");
+			setWidgetText(new WidgetPointer(13,1), "*");
+			setWidgetText(new WidgetPointer(13,2), "*");
+			setWidgetText(new WidgetPointer(13,3), "*");
+			setWidgetText(new WidgetPointer(13,4), "*");
+			stack_dump0 = 1;
+			ivar2 = 1;
+			ivar1 = stack_dump0;
+	}
+	ivar3 = 0;
+	if (((boolean)arg0)) {
+		while (ivar3 < 10) {
+			setWidgetIsHidden(((boolean)ivar1), cs2method_3408(105, 73, 3555, ivar3));
+			setWidgetIsHidden(((boolean)ivar2), cs2method_3408(105, 73, 3554, ivar3));
+			ivar3 = add(ivar3, 1);
+		}
+		return;
+	}
+	ivar4 = rndExcl(10);
+	globalarray_0 = new int[10];
+	globalarray_0[0] = ivar4;
+	globalarray_0[1] = mod(add(ivar4, 1), 10);
+	globalarray_0[2] = mod(add(ivar4, 2), 10);
+	globalarray_0[3] = mod(add(ivar4, 3), 10);
+	globalarray_0[4] = mod(add(ivar4, 4), 10);
+	globalarray_0[5] = mod(add(ivar4, 5), 10);
+	globalarray_0[6] = mod(add(ivar4, 6), 10);
+	globalarray_0[7] = mod(add(ivar4, 7), 10);
+	globalarray_0[8] = mod(add(ivar4, 8), 10);
+	globalarray_0[9] = mod(add(ivar4, 9), 10);
+	ivar5 = 0;
+	while (ivar3 < 10) {
+		ivar5 = rndExcl(9);
+		ivar4 = globalarray_0[9];
+		globalarray_0[9] = globalarray_0[ivar5];
+		globalarray_0[ivar5] = ivar4;
+		setWidgetPosition(subtract(25, rnd(50)), subtract(20, rnd(40)), 1, 1, cs2method_3408(105, 73, 3557, ivar3));
+		setWidgetIsHidden(((boolean)ivar1), cs2method_3408(105, 73, 3555, ivar3));
+		setWidgetIsHidden(((boolean)ivar2), cs2method_3408(105, 73, 3554, ivar3));
+		ivar3 = add(ivar3, 1);
+	}
+	ivar6 = getWidgetActualWidth(new WidgetPointer(13,6));
+	ivar7 = getWidgetActualHeight(new WidgetPointer(13,6));
+	ivar8 = divide(subtract(getWidgetActualWidth(new WidgetPointer(13,5)), ivar6), 3);
+	ivar9 = divide(subtract(getWidgetActualHeight(new WidgetPointer(13,5)), ivar7), 2);
+	ivar10 = multiply(ivar8, 2);
+	ivar11 = multiply(ivar9, 2);
+	ivar12 = multiply(ivar8, 3);
+	setWidgetPosition(0, 0, 0, 0, cs2method_3408(105, 73, 3556, globalarray_0[0]));
+	setWidgetPosition(0, 0, 0, 0, cs2method_3408(105, 73, 3555, globalarray_0[0]));
+	setWidgetPosition(ivar8, 0, 0, 0, cs2method_3408(105, 73, 3556, globalarray_0[1]));
+	setWidgetPosition(ivar8, 0, 0, 0, cs2method_3408(105, 73, 3555, globalarray_0[1]));
+	setWidgetPosition(ivar10, 0, 0, 0, cs2method_3408(105, 73, 3556, globalarray_0[2]));
+	setWidgetPosition(ivar10, 0, 0, 0, cs2method_3408(105, 73, 3555, globalarray_0[2]));
+	setWidgetPosition(ivar12, 0, 0, 0, cs2method_3408(105, 73, 3556, globalarray_0[3]));
+	setWidgetPosition(ivar12, 0, 0, 0, cs2method_3408(105, 73, 3555, globalarray_0[3]));
+	setWidgetPosition(0, ivar9, 0, 0, cs2method_3408(105, 73, 3556, globalarray_0[4]));
+	setWidgetPosition(0, ivar9, 0, 0, cs2method_3408(105, 73, 3555, globalarray_0[4]));
+	setWidgetPosition(ivar8, ivar9, 0, 0, cs2method_3408(105, 73, 3556, globalarray_0[5]));
+	setWidgetPosition(ivar8, ivar9, 0, 0, cs2method_3408(105, 73, 3555, globalarray_0[5]));
+	setWidgetPosition(ivar10, ivar9, 0, 0, cs2method_3408(105, 73, 3556, globalarray_0[6]));
+	setWidgetPosition(ivar10, ivar9, 0, 0, cs2method_3408(105, 73, 3555, globalarray_0[6]));
+	setWidgetPosition(0, ivar11, 0, 0, cs2method_3408(105, 73, 3556, globalarray_0[7]));
+	setWidgetPosition(0, ivar11, 0, 0, cs2method_3408(105, 73, 3555, globalarray_0[7]));
+	setWidgetPosition(ivar8, ivar11, 0, 0, cs2method_3408(105, 73, 3556, globalarray_0[8]));
+	setWidgetPosition(ivar8, ivar11, 0, 0, cs2method_3408(105, 73, 3555, globalarray_0[8]));
+	setWidgetPosition(ivar10, ivar11, 0, 0, cs2method_3408(105, 73, 3556, globalarray_0[9]));
+	setWidgetPosition(ivar10, ivar11, 0, 0, cs2method_3408(105, 73, 3555, globalarray_0[9]));
+	return;
+}

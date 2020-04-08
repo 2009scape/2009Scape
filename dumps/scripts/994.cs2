@@ -1,0 +1,78 @@
+cs2func_script_994_struct(2,2,0) script_994(int arg0,int arg1) {
+	switch (arg0) {
+		flow_1:
+			case 0:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_994_struct(-1, 7620, "Your Constitution tells you how healthy your character can be. A character with low Constitution will only have a small number of life points when they're fully healed, whereas a character with high Constitution can have many more life points.", "");
+				case 1:
+					return newstruct cs2func_script_994_struct(-1, 7620, "If you see any " + "<col=800000>" + "red 'hitsplats'" + "</col>" + " during combat, the number shown corresponds to the number of life points lost as a result of that strike.", "");
+				case 2:
+					return newstruct cs2func_script_994_struct(-1, 7620, "<col=800000>" + "Blue hitsplats" + "</col>" + " mean no damage has been dealt.", "");
+				case 3:
+					return newstruct cs2func_script_994_struct(-1, 7620, "<col=800000>" + "Green hitsplats" + "</col>" + " are poison damage (members).", "");
+				case 4:
+					return newstruct cs2func_script_994_struct(-1, 7620, "<col=800000>" + "Yellow hitsplats" + "</col>" + " are disease damage (members).", "");
+				case 5:
+					return newstruct cs2func_script_994_struct(-1, 7620, "<col=800000>" + "Pink hitsplats" + "</col>" + " show life points restored through healing (while in Daemonheim).", "");
+			}
+			break;
+			case 1:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_994_struct(35, 14936, "Members: Agile top (with 35 Defence)", "Members now have the Constitution level required to wear " + "<col=000080>" + "agile tops" + "</col>" + ". (They also need level 35 Defence.)");
+				case 1:
+					return newstruct cs2func_script_994_struct(35, 14938, "Members: Agile legs (with 35 Defence)", "Members now have the Constitution level required to wear " + "<col=000080>" + "agile legs" + "</col>" + ". (They also need level 35 Defence.)");
+				case 2:
+					return newstruct cs2func_script_994_struct(42, 11665, "Members: Void melee helm", "Members now have the Constitution level required to wear " + "<col=000080>" + "Void melee helms" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_994_struct(42, 11664, "Members: Void ranger helm", "Members now have the Constitution level required to wear " + "<col=000080>" + "Void ranger helms" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_994_struct(42, 11663, "Members: Void mage helm", "Members now have the Constitution level required to wear " + "<col=000080>" + "Void mage helms" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_994_struct(42, 8839, "Members: Void knight top", "Members now have the Constitution level required to wear " + "<col=000080>" + "Void knight tops" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_994_struct(42, 8840, "Members: Void knight robe", "Members now have the Constitution level required to wear " + "<col=000080>" + "Void knight robes" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_994_struct(42, 8842, "Members: Void knight gloves", "Members now have the Constitution level required to wear " + "<col=000080>" + "Void knight gloves" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_994_struct(42, 19712, "Members: Void knight deflector", "Members now have the Constitution level required to wear " + "<col=000080>" + "Void knight deflectors" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_994_struct(42, 8841, "Members: Void knight mace", "Members now have the Constitution level required to wield " + "<col=000080>" + "Void knight maces" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_994_struct(42, 7620, "Void knight equipment requires 42 Attack, Defence, Strength, Ranged, Magic and Constitution and 22 Prayer.", "<col=000080>" + "Void knight equipment" + "</col>" + " requires 42 Attack, Defence, Strength, Ranged, Magic and Constitution and 22 Prayer.");
+				case 11:
+					return newstruct cs2func_script_994_struct(80, 20135, "Members: Torva full helm" + "<br>" + " (with 80 Strength and Defence)", "Members can now wear " + "<col=000080>" + "torva full helms" + "</col>" + ". (They also need level 80 Strength and Defence)");
+				case 12:
+					return newstruct cs2func_script_994_struct(80, 20139, "Members: Torva platebody" + "<br>" + " (with 80 Strength and Defence)", "Members can now wear " + "<col=000080>" + "torva platebodies" + "</col>" + ". (They also need level 80 Strength and Defence)");
+				case 13:
+					return newstruct cs2func_script_994_struct(80, 20143, "Members: Torva platelegs" + "<br>" + " (with 80 Strength and Defence)", "Members can now wear " + "<col=000080>" + "torva platelegs" + "</col>" + ". (They also need level 80 Strength and Defence)");
+				case 14:
+					return newstruct cs2func_script_994_struct(80, 20159, "Members: Virtus mask" + "<br>" + " (with 80 Magic and Defence)", "Members can now wear " + "<col=000080>" + "virtus masks" + "</col>" + ". (They also need level 80 Magic and Defence)");
+				case 15:
+					return newstruct cs2func_script_994_struct(80, 20163, "Members: Virtus robe top" + "<br>" + " (with 80 Magic and Defence)", "Members can now wear " + "<col=000080>" + "virtus robe tops" + "</col>" + ". (They also need level 80 Magic and Defence)");
+				case 16:
+					return newstruct cs2func_script_994_struct(80, 20167, "Members: Virtus robe legs" + "<br>" + " (with 80 Magic and Defence)", "Members can now wear " + "<col=000080>" + "virtus robe legs" + "</col>" + ". (They also need level 80 Magic and Defence)");
+				case 17:
+					return newstruct cs2func_script_994_struct(80, 20147, "Members: Pernix cowl" + "<br>" + " (with 80 Ranged and Defence)", "Members can now wear " + "<col=000080>" + "pernix cowls" + "</col>" + ". (They also need level 80 Ranged and Defence)");
+				case 18:
+					return newstruct cs2func_script_994_struct(80, 20151, "Members: Pernix body" + "<br>" + " (with 80 Ranged and Defence)", "Members can now wear " + "<col=000080>" + "pernix bodies" + "</col>" + ". (They also need level 80 Ranged and Defence)");
+				case 19:
+					return newstruct cs2func_script_994_struct(80, 20155, "Members: Pernix chaps" + "<br>" + " (with 80 Ranged and Defence)", "Members can now wear " + "<col=000080>" + "pernix chaps" + "</col>" + ". (They also need level 80 Ranged and Defence)");
+			}
+			break;
+			case 2:
+			SWITCH (arg1) {
+				case 0:
+					 GOTO flow_32
+				case 1:
+					 GOTO flow_33
+			}
+			break;
+		flow_32:
+			return newstruct cs2func_script_994_struct(70, 8122, "Members: Zamorak's Fortress in the God Wars Dungeon", "Members can now access the " + "<col=000080>" + "Zamorak Fortress" + "</col>" + " in the " + "<col=000080>" + "God Wars Dungeon" + "</col>" + ".");
+		flow_33:
+			return newstruct cs2func_script_994_struct(99, 9768, "Skill mastery", "<col=000080>" + "Congratulations! You are now a master of " + "<col=800000>" + "Constitution" + "<col=000080>" + ". Members can visit " + "<col=800000>" + "Surgeon General Tafani" + "<col=000080>" + " at the " + "<col=800000>" + "Duel Arena Hospital" + "<col=000080>" + ". She has something special that is only available to true masters of the " + "<col=800000>" + "Constitution" + "<col=000080>" + " skill!");
+	}
+	return newstruct cs2func_script_994_struct(0, -1, "", "");
+}

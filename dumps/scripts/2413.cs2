@@ -1,0 +1,3 @@
+cs2func_script_2413_struct(3,0,0) script_2413(int arg0) {
+	return newstruct cs2func_script_2413_struct(divide(arg0, 65536), divide(bitAnd(arg0, 65280), 256), bitAnd(arg0, 255));
+}

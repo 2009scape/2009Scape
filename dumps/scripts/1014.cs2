@@ -1,0 +1,291 @@
+cs2func_script_1014_struct(2,2,0) script_1014(int arg0,int arg1) {
+	switch (arg0) {
+		case 0:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1014_struct(1, 1942, "Potato", "You can now plant " + "<col=000080>" + "potatoes" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1014_struct(5, 1957, "Onion", "You can now plant " + "<col=000080>" + "onions" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1014_struct(7, 1965, "Cabbage", "You can now plant " + "<col=000080>" + "cabbages" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1014_struct(12, 1982, "Tomato", "You can now plant " + "<col=000080>" + "tomatoes" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1014_struct(20, 5986, "Sweetcorn", "You can now plant " + "<col=000080>" + "sweetcorn" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1014_struct(31, 5504, "Strawberry", "You can now plant " + "<col=000080>" + "strawberries" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1014_struct(47, 5982, "Watermelon", "You can now plant " + "<col=000080>" + "watermelons" + "</col>" + ".");
+			}
+			break;
+		case 1:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1014_struct(3, 6006, "Barley", "You can now plant " + "<col=000080>" + "barley" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1014_struct(4, 5994, "Hammerstone hop", "You can now plant " + "<col=000080>" + "hammerstone hops" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1014_struct(8, 5996, "Asgarnian hop", "You can now plant " + "<col=000080>" + "Asgarnian hops" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1014_struct(13, 5931, "Jute plant", "You can now plant " + "<col=000080>" + "jute plants" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1014_struct(16, 5998, "Yanillian hop", "You can now plant " + "<col=000080>" + "Yanillian hops" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1014_struct(21, 6000, "Krandorian hop", "You can now plant " + "<col=000080>" + "Krandorian hops" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1014_struct(28, 6002, "Wildblood hop", "You can now plant " + "<col=000080>" + "wildblood hops" + "</col>" + ".");
+			}
+			break;
+		case 2:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1014_struct(15, 1521, "Oak tree", "You can now plant " + "<col=000080>" + "oak trees" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1014_struct(30, 1519, "Willow tree", "You can now plant " + "<col=000080>" + "willow trees" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1014_struct(45, 1517, "Maple tree", "You can now plant " + "<col=000080>" + "maple trees" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1014_struct(60, 1515, "Yew tree", "You can now plant " + "<col=000080>" + "yew trees" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1014_struct(75, 1513, "Magic tree", "You can now plant " + "<col=000080>" + "magic trees" + "</col>" + ".");
+			}
+			break;
+		case 3:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1014_struct(27, 1955, "Apple tree", "You can now plant " + "<col=000080>" + "apple trees" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1014_struct(33, 1963, "Banana tree", "You can now plant " + "<col=000080>" + "banana trees" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1014_struct(39, 2108, "Orange tree", "You can now plant " + "<col=000080>" + "orange trees" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1014_struct(42, 5970, "Curry tree", "You can now plant " + "<col=000080>" + "curry trees" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1014_struct(51, 2114, "Pineapple plant", "You can now plant " + "<col=000080>" + "pineapple plants" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1014_struct(57, 5972, "Papaya tree", "You can now plant " + "<col=000080>" + "papaya trees" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1014_struct(68, 5974, "Palm tree", "You can now plant " + "<col=000080>" + "palm trees" + "</col>" + ".");
+			}
+			break;
+		case 4:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1014_struct(10, 1951, "Redberry bush", "You can now plant " + "<col=000080>" + "redberry bushes" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1014_struct(22, 753, "Cadavaberry bush", "You can now plant " + "<col=000080>" + "cadavaberry bushes" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1014_struct(36, 2126, "Dwellberry bush", "You can now plant " + "<col=000080>" + "dwellberry bushes" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1014_struct(48, 247, "Jangerberry bush", "You can now plant " + "<col=000080>" + "jangerberry bushes" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1014_struct(59, 239, "White berry bush", "You can now plant " + "<col=000080>" + "white berry bushes" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1014_struct(70, 6018, "Poison ivy bush", "You can now plant " + "<col=000080>" + "poison ivy bushes" + "</col>" + ".");
+			}
+			break;
+		case 5:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1014_struct(2, 6010, "Marigold" + "<br>" + " Protects onions, tomatoes and potatoes from disease", "You can now " + "<col=000080>" + "plant marigolds" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1014_struct(11, 6014, "Rosemary" + "<br>" + " Protects cabbages from disease", "You can now plant " + "<col=000080>" + "rosemary" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1014_struct(24, 6012, "Nasturtium" + "<br>" + " Protects watermelons from disease", "You can now plant " + "<col=000080>" + "nasturtiums" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1014_struct(25, 5738, "Woad", "You can now plant " + "<col=000080>" + "woad" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1014_struct(26, 225, "Limpwurt", "You can now plant " + "<col=000080>" + "limpwurt" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1014_struct(52, 14583, "White lily" + "<br>" + " Protects all neighbouring fruit and vegetables from disease", "You can now plant " + "<col=000080>" + "white lilies" + "</col>" + ".");
+			}
+			break;
+		case 6:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1014_struct(9, 249, "Guam", "You can now plant " + "<col=000080>" + "guam" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1014_struct(14, 251, "Marrentill", "You can now plant " + "<col=000080>" + "marrentill" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1014_struct(19, 253, "Tarromin", "You can now plant " + "<col=000080>" + "tarromin" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1014_struct(26, 255, "Harralander", "You can now plant " + "<col=000080>" + "harralander" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1014_struct(29, 3261, "Goutweed" + "<br>" + " (after Eadgar's Ruse)", "You now have the Farming level required to plant " + "<col=000080>" + "goutweed" + "</col>" + " (after Eadgar's Ruse).");
+				case 5:
+					return newstruct cs2func_script_1014_struct(32, 257, "Ranarr", "You can now plant " + "<col=000080>" + "ranarr" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1014_struct(36, 12172, "Spirit weed", "You can now plant " + "<col=000080>" + "spirit weed" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1014_struct(38, 2998, "Toadflax", "You can now plant " + "<col=000080>" + "toadflax" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1014_struct(44, 259, "Irit", "You can now plant " + "<col=000080>" + "irit" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1014_struct(46, 14854, "Wergali", "You can now plant " + "<col=000080>" + "wergali" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_1014_struct(50, 261, "Avantoe", "You can now plant " + "<col=000080>" + "avantoe" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_1014_struct(56, 263, "Kwuarm", "You can now plant " + "<col=000080>" + "kwuarm" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_1014_struct(58, 19989, "Erzille", "You can now plant " + "<col=000080>" + "erzille" + "</col>" + " (in a vine herb patch).");
+				case 13:
+					return newstruct cs2func_script_1014_struct(62, 3000, "Snapdragon", "You can now plant " + "<col=000080>" + "snapdragon" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_1014_struct(65, 19990, "Argway", "You can now plant " + "<col=000080>" + "argway" + "</col>" + " (in a vine herb patch).");
+				case 15:
+					return newstruct cs2func_script_1014_struct(67, 265, "Cadantine", "You can now plant " + "<col=000080>" + "cadantine" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_1014_struct(70, 19991, "Ugune", "You can now plant " + "<col=000080>" + "ugune" + "</col>" + " (in a vine herb patch).");
+				case 17:
+					return newstruct cs2func_script_1014_struct(73, 2481, "Lantadyme", "You can now plant " + "<col=000080>" + "lantadyme" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_1014_struct(76, 19992, "Shengo", "You can now plant " + "<col=000080>" + "shengo" + "</col>" + " (in a vine herb patch).");
+				case 19:
+					return newstruct cs2func_script_1014_struct(79, 267, "Dwarf weed", "You can now plant " + "<col=000080>" + "dwarf weed" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_1014_struct(80, 19993, "Samaden", "You can now plant " + "<col=000080>" + "samaden" + "</col>" + " (in a vine herb patch).");
+				case 21:
+					return newstruct cs2func_script_1014_struct(85, 269, "Torstol", "You can now plant " + "<col=000080>" + "torstol" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_1014_struct(91, 21624, "Fellstalk", "You can now plant fellstalk" + "</col>" + ".");
+			}
+			break;
+		case 7:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1014_struct(42, 12134, "Evil turnip", "You can now plant " + "<col=000080>" + "evil turnips" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1014_struct(53, 6004, "Bittercap mushroom", "You can now plant " + "<col=000080>" + "bittercap mushrooms" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1014_struct(53, 11779, "Jade vine" + "<br>" + " (after Back to My Roots)", "You now have the Farming level required to plant " + "<col=000080>" + "jade vines" + "</col>" + " (after Back to my Roots).");
+				case 3:
+					return newstruct cs2func_script_1014_struct(54, 19962, "Vine blossoms", "You can now plant " + "<col=000080>" + "vine blossoms" + "</col>" + " (in a vine flower patch).");
+				case 4:
+					return newstruct cs2func_script_1014_struct(55, 6016, "Cactus", "You can now plant " + "<col=000080>" + "cacti" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1014_struct(61, 19969, "Lergberry bush", "You can now plant " + "<col=000080>" + "lergberry bushes" + "</col>" + " (in a vine bush patch).");
+				case 6:
+					return newstruct cs2func_script_1014_struct(63, 2398, "Belladonna", "You can now plant " + "<col=000080>" + "belladonna" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1014_struct(72, 5980, "Calquat tree", "You can now plant " + "<col=000080>" + "calquat trees" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1014_struct(74, 21622, "Morchella mushroom", "You can now plant " + "<col=000080>" + "morchella mushrooms" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1014_struct(77, 19970, "Kalferberry bush", "You can now plant " + "<col=000080>" + "kalferberry bushes" + "</col>" + " (in a vine bush patch).");
+				case 10:
+					return newstruct cs2func_script_1014_struct(83, 6063, "Spirit tree" + "<br>" + " (only 1 planted at a time)", "You can now plant " + "<col=000080>" + "spirit trees" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_1014_struct(86, 6063, "Spirit tree" + "<br>" + " (only 2 planted at a time, after Prisoner of Glouphrie)", "You now have the Farming level required to plant " + "<col=000080>" + "2 spirit trees" + "</col>" + " (after Prisoner of Glouphrie).");
+			}
+			break;
+		case 8:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1014_struct(23, 6059, "Able to make and place a scarecrow", "You now have the ability to make and place a " + "<col=000080>" + "scarecrow" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1014_struct(-1, 7620, "Scarecrows help to stop sweetcorn from being attacked by birds, while also helping to prevent disease.", "");
+				case 2:
+					return newstruct cs2func_script_1014_struct(-1, 7620, "How to make a scarecrow:", "");
+				case 3:
+					return newstruct cs2func_script_1014_struct(-1, 7620, "1. Fill an empty sack with straw from a haystack.", "");
+				case 4:
+					return newstruct cs2func_script_1014_struct(-1, 7620, "2. Drive the hay sack onto a bronze spear.", "");
+				case 5:
+					return newstruct cs2func_script_1014_struct(-1, 7620, "3. Place a watermelon at the very top as a head.", "");
+				case 6:
+					return newstruct cs2func_script_1014_struct(-1, 7620, "4. Stand the scarecrow in an empty flower patch.", "");
+				case 7:
+					return newstruct cs2func_script_1014_struct(25, 18336, "Scroll of life" + "<br>" + " (with 25 Dungeoneering)", "You can now use the " + "<col=000080>" + "scroll of life" + "</col>" + ". (You also need level 25 Dungeoneering.)");
+			}
+			break;
+		case 9:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1014_struct(60, 20704, "Members: access to the Livid Farm (with 70 Magic, 60 Agility, 60 Crafting, 50 Construction and Lunar Diplomacy)", "Members can access the " + "<col=000080>" + "Livid Farm" + "</col>" + " (with 70 Magic, 60 Agility, 60 Crafting, 50 Construction and Lunar Diplomacy).");
+				case 1:
+					return newstruct cs2func_script_1014_struct(91, 18778, "Starved ancient effigies", "You can now investigate " + "<col=000080>" + "starved ancient effigies" + "</col>" + " using your knowledge of Farming.");
+				case 2:
+					return newstruct cs2func_script_1014_struct(93, 18779, "Nourished ancient effigies", "You can now investigate " + "<col=000080>" + "nourished ancient effigies" + "</col>" + " using your knowledge of Farming.");
+				case 3:
+					return newstruct cs2func_script_1014_struct(95, 18780, "Sated ancient effigies", "You can now investigate " + "<col=000080>" + "sated ancient effigies" + "</col>" + " using your knowledge of Farming.");
+				case 4:
+					return newstruct cs2func_script_1014_struct(97, 18781, "Gorged ancient effigies", "You can now investigate " + "<col=000080>" + "gorged ancient effigies" + "</col>" + " using your knowledge of Farming.");
+			}
+			break;
+		case 10:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1014_struct(1, 12625, "Vinesweeper", "You can now play " + "<col=000080>" + "Vinesweeper" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1014_struct(1, 14667, "Nurture basic evil tree saplings", "You can now nurture " + "<col=000080>" + "basic evil tree saplings" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1014_struct(7, 14667, "Nurture evil oak tree saplings", "You can now nurture " + "<col=000080>" + "evil oak tree saplings" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1014_struct(15, 14667, "Nurture evil willow tree saplings", "You can now nurture " + "<col=000080>" + "evil willow tree saplings" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1014_struct(22, 14667, "Nurture evil maple tree saplings", "You can now nurture " + "<col=000080>" + "evil maple tree saplings" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1014_struct(30, 14667, "Nurture evil yew tree saplings", "You can now nurture " + "<col=000080>" + "evil yew tree saplings" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1014_struct(37, 14667, "Nurture evil magic tree saplings", "You can now nurture " + "<col=000080>" + "evil magic tree saplings" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1014_struct(42, 14667, "Nurture elder evil tree saplings", "You can now nurture " + "<col=000080>" + "elder evil tree saplings" + "</col>" + ".");
+			}
+			break;
+		case 11:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1014_struct(-1, 15707, "Dungeoneering skill tasks" + "<br>" + "As your Farming level increases, you will be able to attempt higher-level farming tasks within Daemonheim. You will also be more likely to succeed when attempting farming tasks within Daemonheim.", "");
+				case 1:
+					return newstruct cs2func_script_1014_struct(1, 17448, "Salve nettles", "You can now harvest " + "<col=000080>" + "salve nettles" + "</col>" + " within Daemonheim.");
+				case 2:
+					return newstruct cs2func_script_1014_struct(1, 17823, "Cave potato", "You can now plant " + "<col=000080>" + "cave potatoes" + "</col>" + " within Daemonheim.");
+				case 3:
+					return newstruct cs2func_script_1014_struct(7, 17826, "Sagewort", "You can now plant " + "<col=000080>" + "sagewort" + "</col>" + " within Daemonheim.");
+				case 4:
+					return newstruct cs2func_script_1014_struct(10, 17450, "Wildercress", "You can now harvest " + "<col=000080>" + "wildercress" + "</col>" + " within Daemonheim.");
+				case 5:
+					return newstruct cs2func_script_1014_struct(18, 17827, "Valerian", "You can now plant " + "<col=000080>" + "valerian" + "</col>" + " within Daemonheim.");
+				case 6:
+					return newstruct cs2func_script_1014_struct(20, 17452, "Blightleaf", "You can now harvest " + "<col=000080>" + "blightleaves" + "</col>" + " within Daemonheim.");
+				case 7:
+					return newstruct cs2func_script_1014_struct(29, 17828, "Aloe", "You can now plant " + "<col=000080>" + "aloe" + "</col>" + " within Daemonheim.");
+				case 8:
+					return newstruct cs2func_script_1014_struct(30, 17454, "Roseblood", "You can now harvest " + "<col=000080>" + "roseblood" + "</col>" + " within Daemonheim.");
+				case 9:
+					return newstruct cs2func_script_1014_struct(34, 17824, "Gissel mushroom", "You can now plant " + "<col=000080>" + "gissel mushrooms" + "</col>" + " within Daemonheim.");
+				case 10:
+					return newstruct cs2func_script_1014_struct(40, 17829, "Wormwood", "You can now plant " + "<col=000080>" + "wormwood" + "</col>" + " within Daemonheim.");
+				case 11:
+					return newstruct cs2func_script_1014_struct(40, 17456, "Bryll", "You can now harvest " + "<col=000080>" + "bryll" + "</col>" + " within Daemonheim.");
+				case 12:
+					return newstruct cs2func_script_1014_struct(50, 17458, "Duskweed", "You can now plant " + "<col=000080>" + "duskweed" + "</col>" + " within Daemonheim.");
+				case 13:
+					return newstruct cs2func_script_1014_struct(51, 17830, "Magebane", "You can now plant " + "<col=000080>" + "magebane" + "</col>" + " within Daemonheim.");
+				case 14:
+					return newstruct cs2func_script_1014_struct(60, 17460, "Soulbell", "You can now harvest " + "<col=000080>" + "soulbells" + "</col>" + " within Daemonheim.");
+				case 15:
+					return newstruct cs2func_script_1014_struct(62, 17831, "Featherfoil", "You can now plant " + "<col=000080>" + "featherfoil" + "</col>" + " within Daemonheim.");
+				case 16:
+					return newstruct cs2func_script_1014_struct(68, 17825, "Edicap mushroom", "You can now plant " + "<col=000080>" + "edicap mushrooms" + "</col>" + " within Daemonheim.");
+				case 17:
+					return newstruct cs2func_script_1014_struct(70, 17462, "Ectograss", "You can now harvest " + "<col=000080>" + "ectograss" + "</col>" + " within Daemonheim.");
+				case 18:
+					return newstruct cs2func_script_1014_struct(73, 17832, "Winter's grip", "You can now plant " + "<col=000080>" + "winter's grip" + "</col>" + " within Daemonheim.");
+				case 19:
+					return newstruct cs2func_script_1014_struct(80, 17464, "Runeleaf", "You can now harvest " + "<col=000080>" + "runeleaves" + "</col>" + " within Daemonheim.");
+				case 20:
+					return newstruct cs2func_script_1014_struct(84, 17833, "Lycopus", "You can now plant " + "<col=000080>" + "lycopus" + "</col>" + " within Daemonheim.");
+				case 21:
+					return newstruct cs2func_script_1014_struct(90, 17466, "Spiritbloom", "You can now harvest " + "<col=000080>" + "spiritbloom" + "</col>" + " within Daemonheim.");
+				case 22:
+					return newstruct cs2func_script_1014_struct(95, 17834, "Buckthorn", "You can now plant " + "<col=000080>" + "buckthorn" + "</col>" + " within Daemonheim.");
+			}
+			break;
+		case 12:
+			if (((boolean)arg1)) {
+				return newstruct cs2func_script_1014_struct(99, 9810, "Skill mastery", "<col=000080>" + "Congratulations! You are now a master of " + "<col=800000>" + "Farming" + "<col=000080>" + ". Why not visit " + "<col=800000>" + "Martin the Master Gardener" + "<col=000080>" + " in " + "<col=800000>" + "Draynor Village" + "<col=000080>" + "? He has something special that is only available to true masters of the " + "<col=800000>" + "Farming" + "<col=000080>" + " skill!");
+			}
+	}
+	return newstruct cs2func_script_1014_struct(0, -1, "", "");
+}

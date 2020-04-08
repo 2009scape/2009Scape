@@ -1,0 +1,4 @@
+void script_1939() {
+	globalint_556 = add(getClientCycle(), multiply(globalint_558, 30));
+	return;
+}

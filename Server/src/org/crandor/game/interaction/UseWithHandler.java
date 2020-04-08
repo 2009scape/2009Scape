@@ -128,6 +128,7 @@ public abstract class UseWithHandler implements Plugin<Object> {
                                 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection("LandscapeParser.removeGameObject(new GameObject(" + coords + "));//" + event.getUsedWith().getName()), null);
                             }
                         }
+                        event.getPlayer().debug("Unhandled use with interaction: item used: " + event.getUsed() + " with: " + event.getUsedWith());
                         event.getPlayer().getPacketDispatch().sendMessage("Nothing interesting happens.");
                         return true;
                     }
@@ -153,6 +154,7 @@ public abstract class UseWithHandler implements Plugin<Object> {
                         break;
                     }
                     if (!handled) {
+                        event.getPlayer().debug("Handler=none, used item=" + event.getUsedItem() + ", used with=" + event.getUsedWith());
                         event.getPlayer().getPacketDispatch().sendMessage("Nothing interesting happens.");
                     }
                     return true;
@@ -175,6 +177,7 @@ public abstract class UseWithHandler implements Plugin<Object> {
                     break;
                 }
                 if (!handled) {
+                    event.getPlayer().debug("Handler=none, used item=" + event.getUsedItem() + ", used with=" + event.getUsedWith());
                     event.getPlayer().getPacketDispatch().sendMessage("Nothing interesting happens.");
                 }
                 return true;

@@ -1,0 +1,70 @@
+void script_2714(int arg0,int arg1) {
+	int ivar2;
+	if (getAccountCreateRC() == -3) {
+		return;
+	}
+	ivar2 = globalint_174;
+	globalint_174 = arg0;
+	globalint_175 = getClientCycle();
+	switch (arg0) {
+		case 6:
+			if (((boolean)arg1)) {
+				globalint_1099 = strLength(globalstring_122);
+				script_3218(44105828, 44105772, 44105829, 6, globalstring_122);
+			}
+			break;
+		case 14:
+			if (((boolean)arg1)) {
+				globalint_1099 = strLength(globalstring_326);
+				script_3218(44105847, 44105848, 44105849, 14, globalstring_326);
+			}
+			break;
+		case 7:
+			if (((boolean)arg1)) {
+				globalint_1099 = strLength(globalstring_124);
+				script_3218(44105818, 44105819, 44105820, 7, script_2949(globalstring_124));
+			}
+			break;
+		case 8:
+			if (((boolean)arg1)) {
+				globalint_1099 = strLength(globalstring_125);
+				script_3218(44105808, 44105809, 44105810, 8, script_2949(globalstring_125));
+			}
+			break;
+		case 15:
+			if (((boolean)arg1)) {
+				if (globalint_1407 < 1) {
+					globalint_1099 = 0;
+					script_3218(44105854, 44105771, 44105855, 15, "");
+				} else {
+					globalint_1099 = strLength(intToStr(globalint_1407));
+					script_3218(44105854, 44105771, 44105855, 15, intToStr(globalint_1407));
+				}
+			}
+	}
+	if ((ivar2 == 6) && (arg0 != 6)) {
+		if (stringMethod4107(globalstring_123, globalstring_122) != 0) {
+			script_2283(0, 1);
+		}
+	} else if ((ivar2 == 14) && (arg0 != 14)) {
+		if (stringMethod4107(globalstring_327, globalstring_326) != 0) {
+			script_3953(0);
+		}
+	} else if ((ivar2 == 7) && (arg0 != 7)) {
+		if (stringMethod4107(globalstring_328, globalstring_124) != 0) {
+			script_3228(7, 0, 0);
+			if (strLength(globalstring_125) > 0) {
+				script_3228(8, 1, 0);
+			}
+		}
+	} else if ((ivar2 == 8) && (arg0 != 8)) {
+		if (stringMethod4107(globalstring_329, globalstring_125) != 0) {
+			script_3228(8, 1, 0);
+		}
+	} else {
+		if (((ivar2 == 15) && (arg0 != 15)) && (globalint_1408 != globalint_1407)) {
+			script_3954(0);
+		}
+	}
+	return;
+}

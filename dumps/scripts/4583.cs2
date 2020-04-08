@@ -1,0 +1,6 @@
+string script_4583(int arg0,string arg1,string arg2) {
+	if (((boolean)arg0)) {
+		return arg1;
+	}
+	return arg2;
+}

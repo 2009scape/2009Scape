@@ -1,0 +1,6 @@
+int script_829(int arg0,int arg1) {
+	if (arg0 == 845) {
+		return subtract(cs2method5302(), 1);
+	}
+	return subtract(getCommonDefinitionSize(arg1), 1);
+}

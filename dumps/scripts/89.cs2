@@ -1,0 +1,165 @@
+void script_89() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	flow_0:
+		if (cs2method5428(49414144, -1)) {
+			setScriptCallOnGameloop(1562, "", new WidgetPointer(754,0));
+			return;
+		}
+		ivar0 = 0;
+		ivar1 = -1;
+		ivar2 = 0;
+		ivar3 = 0;
+		if (getSystemUpdateTimer() > 0) {
+			ivar2 = mod(divide(getSystemUpdateTimer(), 50), 60);
+			ivar3 = divide(getSystemUpdateTimer(), 3000);
+			if (ivar2 < 10) {
+				setWidgetText(new WidgetPointer(754,5), "<col=ffff00>" + "System update in: " + intToStr(ivar3) + ":0" + intToStr(ivar2));
+			} else {
+				setWidgetText(new WidgetPointer(754,5), "<col=ffff00>" + "System update in: " + intToStr(ivar3) + ":" + intToStr(ivar2));
+			}
+			ivar0 = 1;
+			setWidgetNoOptions(new WidgetPointer(754,5));
+			setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(754,5));
+			setWidgetUnknownBoolean(true, new WidgetPointer(754,5));
+		}
+		ivar4 = 0;
+		ivar5 = 0;
+		ivar6 = cs2method_3408(105, 105, 3056, standart_config_287);
+		ivar7 = cs2method_3408(105, 49, 3057, standart_config_287);
+		IF (standart_config_287 > 0) 
+			GOTO	flow_8
+		GOTO	flow_43
+	flow_8:
+		IF (getDisplayMode() < 2) 
+			GOTO	flow_9
+		IF ((globalint_41 != -1) && (ivar4 < 100)) 
+			GOTO	flow_10
+		GOTO	flow_43
+	flow_9:
+	flow_10:
+		IF (ivar0 < 5) 
+			GOTO	flow_11
+		GOTO	flow_43
+	flow_11:
+		if (((boolean)script_91(ivar4))) {
+			ivar1 = ((int)cs2method_3408(105, 73, 580, ivar0));
+			setWidgetRGB(new Color(ivar6), new WidgetPointer(ivar1));
+			setWidgetUnknownBoolean(((boolean)ivar7), new WidgetPointer(ivar1));
+			ivar5 = cs2method5004(ivar4);
+			switch (ivar5) {
+				case 18:
+				case 3:
+				case 7:
+					setWidgetText(new WidgetPointer(ivar1), "From " + cs2method5010(ivar4) + ": " + cs2method5003(ivar4));
+					break;
+				case 5:
+					setWidgetText(new WidgetPointer(ivar1), cs2method5003(ivar4));
+					break;
+				case 19:
+				case 6:
+					setWidgetText(new WidgetPointer(ivar1), "To " + cs2method5010(ivar4) + ": " + cs2method5003(ivar4));
+			}
+			setWidgetNoOptions(new WidgetPointer(ivar1));
+			setScriptCallOnClickContextMenu(88, -2147483644, cs2method5019(ivar4), ivar4, "isi", new WidgetPointer(ivar1));
+			switch (ivar5) {
+				flow_17:
+					case 3:
+					case 6:
+					case 7:
+					cs2method2305(new WidgetPointer(ivar1), "<col=ffffff>" + strRemoveEntities(cs2method5010(ivar4)));
+					if (stringMethod4107(strRemoveEntities(cs2method5015()), strRemoveEntities(cs2method5010(ivar4))) != 0) {
+						if (isFriend(cs2method5019(ivar4))) {
+							if (isMuteRelatedMethod3329() && cs2method6900()) {
+								setWidgetContextMenuOption(7, new WidgetPointer(ivar1), "Message");
+							}
+						} else {
+							setWidgetContextMenuOption(7, new WidgetPointer(ivar1), "Add friend");
+							setWidgetContextMenuOption(8, new WidgetPointer(ivar1), "Add ignore");
+						}
+						if ((getClientRights() > 0) || (((int)hasMoreThen5Blackmarks()) > 0)) {
+							setWidgetContextMenuOption(10, new WidgetPointer(ivar1), "Report abuse");
+						}
+					}
+					break;
+					case 19:
+					case 18:
+					cs2method2305(new WidgetPointer(ivar1), "<col=ffffff>" + strRemoveEntities(cs2method5010(ivar4)));
+					IF (stringMethod4107(strRemoveEntities(cs2method5015()), strRemoveEntities(cs2method5010(ivar4))) != 0) 
+						GOTO	flow_28
+					break;
+				flow_28:
+					if (isFriend(cs2method5019(ivar4))) {
+						if (isMuteRelatedMethod3329() && cs2method6900()) {
+							setWidgetContextMenuOption(7, new WidgetPointer(ivar1), "Message");
+						}
+					} else {
+						setWidgetContextMenuOption(7, new WidgetPointer(ivar1), "Add friend");
+						setWidgetContextMenuOption(8, new WidgetPointer(ivar1), "Add ignore");
+					}
+					if ((ivar5 == 18) && (cs2method5056(cs2method5012(ivar4)) > 0)) {
+						if (globalint_132 == -1) {
+							globalint_132 = cs2method5012(ivar4);
+							globalstring_29 = cs2method5010(ivar4);
+							globalint_133 = 5;
+							if (isFriend(cs2method5019(ivar4))) {
+								setWidgetContextMenuOption(9, new WidgetPointer(ivar1), "Quick Response");
+							}
+						} else {
+							setWidgetContextMenuOption(9, new WidgetPointer(ivar1), "Quick Response");
+						}
+					}
+			}
+			ivar0 = add(ivar0, 1);
+		}
+		ivar4 = add(ivar4, 1);
+		GOTO	flow_9
+	flow_43:
+		IF (ivar0 < 5) 
+			GOTO	flow_44
+		GOTO	flow_45
+	flow_44:
+		ivar1 = ((int)cs2method_3408(105, 73, 580, ivar0));
+		setWidgetText(new WidgetPointer(ivar1), "");
+		setWidgetNoOptions(new WidgetPointer(ivar1));
+		ivar0 = add(ivar0, 1);
+		GOTO	flow_43
+	flow_45:
+		ivar8 = 0;
+		ivar9 = 0;
+		if (getDisplayMode() >= 2) {
+			ivar9 = 9;
+		} else {
+			ivar9 = 5;
+		}
+		ivar8 = subtract(512, ivar9);
+		ivar0 = 0;
+		while (ivar0 < 5) {
+			ivar1 = ((int)cs2method_3408(105, 73, 580, ivar0));
+			setWidgetSize(max(min(getMaxLineWidth(ivar8, getWidgetFont(new WidgetPointer(ivar1)), getWidgetText(new WidgetPointer(ivar1))), ivar8), 1), multiply(max(getLineCount(ivar8, getWidgetFont(new WidgetPointer(ivar1)), getWidgetText(new WidgetPointer(ivar1))), 1), 14), 0, 0, new WidgetPointer(ivar1));
+			ivar0 = add(ivar0, 1);
+		}
+		ivar10 = -1;
+		ivar0 = 0;
+		ivar1 = ((int)cs2method_3408(105, 73, 580, ivar0));
+		setWidgetPosition(ivar9, 2, 0, 2, new WidgetPointer(ivar1));
+		ivar0 = 1;
+		while (ivar0 < 5) {
+			ivar1 = ((int)cs2method_3408(105, 73, 580, ivar0));
+			ivar10 = ((int)cs2method_3408(105, 73, 580, subtract(ivar0, 1)));
+			if ((ivar1 != -1) && (ivar10 != -1)) {
+				setWidgetPosition(ivar9, subtract(getWidgetActualY(new WidgetPointer(ivar10)), getWidgetActualHeight(new WidgetPointer(ivar1))), 0, 0, new WidgetPointer(ivar1));
+			}
+			ivar0 = add(ivar0, 1);
+		}
+		return;
+}

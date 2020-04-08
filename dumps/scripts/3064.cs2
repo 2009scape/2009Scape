@@ -1,0 +1,13 @@
+void script_3064(int arg0) {
+	if (((boolean)arg0)) {
+		setWidgetText(new WidgetPointer(906,184), "Play");
+		setWidgetContextMenuOption(1, new WidgetPointer(906,171), "Play");
+		setScriptCallOnClickContextMenu(3061, new WidgetPointer(906,171), "I", new WidgetPointer(906,171));
+	} else {
+		setWidgetText(new WidgetPointer(906,184), "Entering game...");
+		setWidgetNoOptions(new WidgetPointer(906,171));
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(906,171));
+	}
+	script_3065(arg0);
+	return;
+}

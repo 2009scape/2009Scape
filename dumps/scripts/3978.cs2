@@ -1,0 +1,31 @@
+int script_3978(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,string arg6) {
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	setWidgetIsHidden(false, new WidgetPointer(arg2));
+	setWidgetText(new WidgetPointer(arg2), arg6);
+	setWidgetFont(495, new WidgetPointer(arg2));
+	setWidgetTextAlignment(0, 1, 0, new WidgetPointer(arg2));
+	ivar6 = subtract(getWidgetActualWidth(new WidgetPointer(arg5)), 18);
+	if (((boolean)script_3999(arg3))) {
+		ivar6 = add(ivar6, 9);
+	}
+	ivar7 = 0;
+	if (arg4 != -1) {
+		ivar7 = getWidgetActualHeight(new WidgetPointer(arg4));
+		ivar6 = subtract(ivar6, 21);
+	}
+	ivar8 = max(add(ivar7, 5), multiply(15, getLineCount(ivar6, 495, arg6)));
+	setWidgetSize(ivar6, ivar8, 0, 0, new WidgetPointer(arg2));
+	setWidgetPosition(9, arg1, 0, 0, new WidgetPointer(arg2));
+	if (((boolean)script_3999(arg3)) && (arg4 != -1)) {
+		setWidgetIsHidden(false, new WidgetPointer(arg4));
+		setWidgetPosition(2, add(arg1, divide(subtract(ivar8, getWidgetActualHeight(new WidgetPointer(arg4))), 2)), 2, 0, new WidgetPointer(arg4));
+		if ((bitconfig_8578 == arg0) && (bitconfig_8594 == arg3)) {
+			setWidgetSprite(5623, new WidgetPointer(arg4));
+		} else {
+			setWidgetSprite(5621, new WidgetPointer(arg4));
+		}
+	}
+	return add(arg1, ivar8);
+}

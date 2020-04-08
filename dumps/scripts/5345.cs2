@@ -1,0 +1,27 @@
+void script_5345() {
+	flow_0:
+		setWidgetIsHidden(true, new WidgetPointer(622,6));
+		setWidgetIsHidden(true, new WidgetPointer(622,7));
+		setWidgetIsHidden(true, new WidgetPointer(622,9));
+		setWidgetIsHidden(true, new WidgetPointer(622,8));
+		SWITCH (getLanguage()) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_2
+			case 3:
+				 GOTO flow_3
+		}
+		setWidgetIsHidden(false, new WidgetPointer(622,6));
+		GOTO	flow_4
+	flow_1:
+		setWidgetIsHidden(false, new WidgetPointer(622,9));
+		GOTO	flow_4
+	flow_2:
+		setWidgetIsHidden(false, new WidgetPointer(622,7));
+		GOTO	flow_4
+	flow_3:
+		setWidgetIsHidden(false, new WidgetPointer(622,8));
+	flow_4:
+		return;
+}

@@ -1,0 +1,8 @@
+void script_5119(int arg0) {
+	if (globalint_777 != arg0) {
+		playSoundEffect2False(6185, 1, 0, 200);
+		globalint_777 = arg0;
+	}
+	script_5121();
+	return;
+}

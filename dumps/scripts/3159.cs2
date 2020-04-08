@@ -1,0 +1,32 @@
+void script_3159(int arg0) {
+	setWidgetSize(subtract(getWidgetActualX(new WidgetPointer(912,38)), getWidgetActualX(new WidgetPointer(912,36))), 0, 0, 1, new WidgetPointer(912,49));
+	setWidgetSize(subtract(subtract(getWidgetActualWidth(new WidgetPointer(912,45)), getWidgetActualWidth(new WidgetPointer(912,49))), 2), 0, 0, 1, new WidgetPointer(912,51));
+	setWidgetScrollMax(0, 0, new WidgetPointer(912,45));
+	cs2method2100(0, 0, new WidgetPointer(912,45));
+	script_31(59768878, 59768877, 792, 789, 790, 791, 773, 788);
+	setWidgetScrollMax(0, 0, new WidgetPointer(912,20));
+	cs2method2100(0, 0, new WidgetPointer(912,20));
+	script_31(59768853, 59768852, 792, 789, 790, 791, 773, 788);
+	setScriptCallOnClanChatSettingsStuff(3164, new WidgetPointer(912,49), new WidgetPointer(912,50), new WidgetPointer(912,51), new WidgetPointer(912,47), new WidgetPointer(912,45), new WidgetPointer(912,46), "IIIIII", new WidgetPointer(912,45));
+	setScriptCallOnClanChatDeltaStuff(3164, new WidgetPointer(912,49), new WidgetPointer(912,50), new WidgetPointer(912,51), new WidgetPointer(912,47), new WidgetPointer(912,45), new WidgetPointer(912,46), "IIIIII", new WidgetPointer(912,45));
+	if (cs2method3751()) {
+		setWidgetIsHidden(true, new WidgetPointer(912,39));
+		script_3165(59768881, 59768882, 59768883, 59768879, 59768877, 59768878);
+		if (isWidgetHidden(new WidgetPointer(906,189))) {
+			script_3161(1);
+		} else {
+			script_3161(0);
+		}
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(912,39));
+		script_3161(0);
+	}
+	globalstring_278 = "";
+	script_3024(59768860);
+	script_3027(59768840);
+	globalint_1098 = strLength(globalstring_278);
+	setScriptCallOnMousePressed(1335, -2147483647, new WidgetPointer(912,24), new WidgetPointer(912,25), "iII", new WidgetPointer(912,24));
+	script_1390(59768856, 59768857, globalstring_278);
+	setWidgetIsHidden(true, new WidgetPointer(912,25));
+	return;
+}

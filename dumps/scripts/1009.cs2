@@ -1,0 +1,27 @@
+cs2func_script_1009_struct(1,1,0) script_1009(int arg0) {
+	switch (arg0) {
+		case 0:
+			return newstruct cs2func_script_1009_struct(0, "Bows");
+		case 1:
+			return newstruct cs2func_script_1009_struct(1, "Thrown");
+		case 2:
+			return newstruct cs2func_script_1009_struct(0, "Armour");
+		case 3:
+			return newstruct cs2func_script_1009_struct(0, "Crossbows");
+		case 4:
+			return newstruct cs2func_script_1009_struct(1, "Shortcuts");
+		case 5:
+			return newstruct cs2func_script_1009_struct(1, "Salamanders");
+		case 6:
+			return newstruct cs2func_script_1009_struct(1, "Areas");
+		case 7:
+			return newstruct cs2func_script_1009_struct(0, "Other");
+		case 8:
+			return newstruct cs2func_script_1009_struct(1, "Minigames");
+		case 9:
+			return newstruct cs2func_script_1009_struct(0, "Dungeoneering");
+		case 10:
+			return newstruct cs2func_script_1009_struct(0, "Milestones");
+	}
+	return newstruct cs2func_script_1009_struct(-1, "");
+}

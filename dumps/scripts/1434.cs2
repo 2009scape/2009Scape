@@ -1,0 +1,4 @@
+void script_1434() {
+	cs2method6200(globalint_184, globalint_184);
+	return;
+}

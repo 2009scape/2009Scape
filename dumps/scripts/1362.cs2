@@ -1,0 +1,64 @@
+void script_1362() {
+	int ivar0;
+	ivar0 = 0;
+	setScriptCallOnKeyPress(73, -2147483640, false, "iz", new WidgetPointer(137,56));
+	setScriptCallOnMessage(81, 1, "1", new WidgetPointer(751,0));
+	setScriptCallOnClanListChange(81, 1, "1", new WidgetPointer(751,0));
+	setScriptCallOnFriendListChange(81, 0, "1", new WidgetPointer(751,0));
+	setScriptCallOnGeneralDataChange(82, "", new WidgetPointer(751,0));
+	setScriptCallOnGlobalStringChange(710, 0, 1, "Y", new WidgetPointer(751,0));
+	globalstring_1 = "";
+	globalint_1028 = 0;
+	globalint_42 = -1;
+	globalint_41 = 0;
+	globalint_43 = cs2method5017();
+	globalint_3 = -1;
+	globalint_4 = 0;
+	globalstring_2 = "";
+	globalstring_3 = "";
+	globalstring_4 = "";
+	globalstring_5 = "";
+	globalstring_6 = "";
+	globalstring_7 = "";
+	globalstring_8 = "";
+	globalstring_9 = "";
+	globalstring_10 = "";
+	globalstring_11 = "";
+	globalstring_12 = "";
+	globalstring_13 = "";
+	globalstring_14 = "";
+	globalstring_15 = "";
+	globalstring_16 = "";
+	globalstring_17 = "";
+	globalstring_18 = "";
+	globalstring_19 = "";
+	globalstring_20 = "";
+	globalstring_21 = "";
+	globalstring_276 = "";
+	script_1558(1);
+	setWidgetIsHidden(false, new WidgetPointer(137,56));
+	if (getDisplayMode() >= 2) {
+		setWidgetIsHidden(true, new WidgetPointer(752,2));
+		setWidgetSprite(1247, new WidgetPointer(752,1));
+		cs2method2122(1, 49283073);
+		setWidgetIsHidden(false, new WidgetPointer(752,1));
+		setWidgetIsHidden(true, new WidgetPointer(137,51));
+		setWidgetIsHidden(false, new WidgetPointer(137,52));
+		setWidgetIsHidden(false, new WidgetPointer(137,53));
+		setWidgetUnknownBoolean(true, new WidgetPointer(137,56));
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(137,56));
+	} else {
+		setWidgetSprite(1017, new WidgetPointer(752,1));
+		setWidgetIsHidden(false, new WidgetPointer(752,1));
+		setWidgetIsHidden(false, new WidgetPointer(752,2));
+		setWidgetIsHidden(false, new WidgetPointer(137,51));
+		setWidgetIsHidden(true, new WidgetPointer(137,52));
+		setWidgetIsHidden(true, new WidgetPointer(137,53));
+		setWidgetUnknownBoolean(false, new WidgetPointer(137,56));
+		setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(137,56));
+	}
+	globalint_7 = getWidgetActualHeight(new WidgetPointer(137,58));
+	script_178();
+	globalstring_0 = "";
+	return;
+}

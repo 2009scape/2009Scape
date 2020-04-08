@@ -1,0 +1,78 @@
+void script_5308() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	string svar0;
+	ivar0 = 0;
+	ivar1 = 0;
+	svar0 = "";
+	ivar2 = -1;
+	ivar3 = 0;
+	ivar4 = 7287;
+	ivar5 = 7706;
+	ivar6 = 7289;
+	ivar7 = 2;
+	ivar8 = 54;
+	deleteAllExtraChilds(new WidgetPointer(823,3));
+	deleteAllExtraChilds(new WidgetPointer(823,4));
+	while (ivar0 < getCommonDefinitionSize(840)) {
+		ivar3 = cs2method_3408(105, 105, 840, ivar0);
+		ivar2 = cs2method_3408(105, 74, 5173, ivar3);
+		if (ivar2 == -1) {
+			return;
+		}
+		svar0 = getOtherCommonData(ivar2, 1974) + "<br>" + getOtherCommonData(ivar2, 1975);
+		createExtraChild(new WidgetPointer(823,3), 5, ivar0);
+		setWidgetSprite(ivar4);
+		setWidgetSize(ivar8, ivar8, 0, 0);
+		if (((boolean)mod(ivar0, 3))) {
+			setWidgetPosition(ivar7, add(ivar7, multiply(ivar1, add(54, ivar7))), 0, 0);
+		} else if (((boolean)mod(ivar0, 3))) {
+			setWidgetPosition(add(multiply(ivar7, 2), ivar8), add(ivar7, multiply(ivar1, add(54, ivar7))), 0, 0);
+		} else {
+			setWidgetPosition(add(multiply(ivar7, 3), multiply(ivar8, 2)), add(ivar7, multiply(ivar1, add(54, ivar7))), 0, 0);
+		}
+		if (((boolean)ivar3)) {
+			setWidgetContextMenuOption(1, getOtherCommonData(ivar2, 1974));
+		} else {
+			setScriptCallOnUse(5309, -2147483643, "i");
+			setScriptCallOnUseWith(44, new WidgetPointer(-32768,3), ivar4, "Id");
+			if (((boolean)ivar3)) {
+				cs2method1306(getOtherCommonData(ivar2, 1974));
+			} else if (ivar3 == 2) {
+				cs2method1306(getOtherCommonData(ivar2, 1974));
+			} else {
+				cs2method1306("Place " + getOtherCommonData(ivar2, 1974));
+			}
+			cs2method1308(176, -1);
+		}
+		setScriptCallOnMouseEntered(44, new WidgetPointer(-32768,3), ivar5, "Id");
+		setScriptCallOnMouseOver(5334, new WidgetPointer(823,3), ivar0, new WidgetPointer(823,15), svar0, 20, 200, "IiIsii");
+		setScriptCallOnMouseExit(299, new WidgetPointer(823,15), new WidgetPointer(-32768,3), ivar4, "IId");
+		createExtraChild(new WidgetPointer(823,4), 5, ivar0);
+		setWidgetSprite(getOtherCommonData(ivar2, 1983));
+		setWidgetSize(50, 50, 0, 0);
+		if (((boolean)mod(ivar0, 3))) {
+			setWidgetPosition(add(ivar7, 2), add(add(2, ivar7), multiply(ivar1, add(54, ivar7))), 0, 0);
+		} else if (((boolean)mod(ivar0, 3))) {
+			setWidgetPosition(add(2, add(multiply(ivar7, 2), ivar8)), add(add(2, ivar7), multiply(ivar1, add(54, ivar7))), 0, 0);
+		} else {
+			setWidgetPosition(add(2, add(multiply(ivar7, 3), multiply(ivar8, 2))), add(add(2, ivar7), multiply(ivar1, add(54, ivar7))), 0, 0);
+		}
+		if (mod(ivar0, 3) == 2) {
+			ivar1 = add(ivar1, 1);
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	ivar1 = add(ivar1, 1);
+	cs2method2100(0, 0, new WidgetPointer(823,9));
+	setWidgetScrollMax(0, add(ivar7, multiply(ivar1, add(54, ivar7))), new WidgetPointer(823,9));
+	script_31(53936138, 53936137, 6507, 6504, 6505, 6506, 6499, 6498);
+	return;
+}

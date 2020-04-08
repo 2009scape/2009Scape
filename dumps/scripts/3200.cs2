@@ -1,0 +1,18 @@
+void script_3200(int arg0) {
+	if (strLength(globalstring_279) > 0) {
+		cs2method5002(arg0, globalint_6, globalstring_279, "");
+	}
+	script_3194();
+	if (((strLength(globalstring_279) > 0) && cs2method3623(globalstring_279)) && (stringMethod4107(globalstring_279, cs2method5015()) != 0)) {
+		if (arg0 == 5) {
+			globalint_1094 = 1;
+		}
+		script_3203();
+	} else {
+		globalint_1094 = 0;
+		if (arg0 == 5) {
+			script_2190(0, 6, 1, "", "Open a bug report form?" + "<br>" + "(opens a new window)", "", "");
+		}
+	}
+	return;
+}

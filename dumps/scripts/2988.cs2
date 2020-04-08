@@ -1,0 +1,140 @@
+void script_2988(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	string svar0;
+	string svar1;
+	string svar2;
+	flow_0:
+		svar0 = "null";
+		svar1 = "null";
+		svar2 = "null";
+		ivar1 = -1;
+		ivar2 = -1;
+		ivar3 = -1;
+		ivar4 = -1;
+		ivar5 = -1;
+		SWITCH (arg0) {
+			case 4718660:
+				 GOTO flow_1
+			case 4718659:
+				 GOTO flow_4
+			case 4718658:
+				 GOTO flow_7
+			case 4718657:
+				 GOTO flow_10
+			case 4718656:
+				 GOTO flow_13
+			case 4718665:
+				 GOTO flow_16
+			case 4718664:
+				 GOTO flow_19
+			case 4718663:
+				 GOTO flow_22
+			case 4718662:
+				 GOTO flow_25
+			case 4718661:
+				 GOTO flow_28
+		}
+		svar1 = "Coming soon";
+		GOTO	flow_31
+	flow_1:
+		if (((boolean)bitconfig_8386)) {
+			return;
+		}
+		svar0 = "Common jadinko";
+		svar1 = "The most abundant form of jadinko. The common jadinkos lack the magical properties of their counterparts; however, they are the easiest of all the jadinkos to attract." + "<br>" + "<br>" + "These jadinkos are caught with marasamaw plants.";
+		svar2 = "To attract common jadinkos:" + "<br>" + "<br>" + "grow any of the vine flowers.";
+		ivar5 = 62244;
+		GOTO	flow_31
+	flow_4:
+		if (((boolean)bitconfig_8393)) {
+			return;
+		}
+		svar0 = "Shadow jadinko";
+		svar1 = "This species of jadinko is particularly sinister, tied as it is with darkness. Shadow jadinkos produce shadow vines which are useful for those who want to be more stealthy when hunting." + "<br>" + "<br>" + "These jadinkos are caught by tracking.";
+		svar2 = "To attract shadow jadinkos:" + "<br>" + "<br>" + "grow red vine flowers and build an abandoned house.";
+		ivar5 = 62253;
+		GOTO	flow_31
+	flow_7:
+		if (((boolean)bitconfig_8394)) {
+			return;
+		}
+		svar0 = "Diseased jadinko";
+		svar1 = "The diseased jadinko is a sorry sort of creature, corrupted by some unknown illness that it can never shake. That's unfortunate for the jadinko, but fortunate for the hunter, because the corrupt vines these creatures produce can be made into juju hunter potions that are invaluable for hunting in the habitat." + "<br>" + "<br>" + "These jadinkos are caught by tracking.";
+		svar2 = "To attract diseased jadinkos:" + "<br>" + "<br>" + "grow a banana tree and build a boneyard.";
+		ivar5 = 62251;
+		GOTO	flow_31
+	flow_10:
+		if (((boolean)bitconfig_8395)) {
+			return;
+		}
+		svar0 = "Igneous jadinko";
+		svar1 = "The igneous jadinko have a great affinity with the earth. They dwell beneath the stones, unless attracted by the sweet scent of lergberry and oranges. Their vines are particularly useful for those who wish to gather herbs more efficiently." + "<br>" + "<br>" + "These jadinkos are caught with marasamaw plants.";
+		svar2 = "To attract igneous jadinkos:" + "<br>" + "<br>" + "grow a lergberry bush, an orange tree, a blue vine plant and construct a thermal vent.";
+		ivar5 = 62249;
+		GOTO	flow_31
+	flow_13:
+		if (((boolean)bitconfig_8391)) {
+			return;
+		}
+		svar0 = "Cannibal jadinko";
+		svar1 = "These jadinko prey on other jadinkos. They roam the habitat looking for other creatures to snack on. Unlike other jadinkos, the cannibal jadinko's magic is located not in the vine, but in its teeth. The plant teeth can be used to make a deliciously tasty gumbo, if mixed with the right herbs." + "<br>" + "<br>" + "These jadinkos are caught with marasamaw plants.";
+		svar2 = "To attract cannibal jadinkos:" + "<br>" + "<br>" + "grow a kalferberry bush, a green vine flower, construct tall grass and be sure to have used the juju hunter potion on the flower.";
+		ivar5 = 62241;
+		GOTO	flow_31
+	flow_16:
+		if (((boolean)bitconfig_8387)) {
+			return;
+		}
+		svar0 = "Aquatic jadinko";
+		svar1 = "The aquatic jadinko rarely comes out on land, but, when it does, it's highly sought after by the discerning hunter. The vines that grow from this creature's back can be used to create a juju fishing potion that allows you to catch the elusive baron shark." + "<br>" + "<br>" + "These jadinkos are caught with marasamaw plants.";
+		svar2 = "To attract aquatic jadinkos:" + "<br>" + "<br>" + "grow a kalferberry bush, an apple tree, a red vine flower and construct a pond. You must also be under the effects of a juju hunter potion.";
+		ivar5 = 62250;
+		GOTO	flow_31
+	flow_19:
+		if (((boolean)bitconfig_8388)) {
+			return;
+		}
+		svar0 = "Amphibious jadinko";
+		svar1 = "The amphibious jadinko is as at home on land as it is in water. These creatures may be slimy and froggish, but their oily vines can be extremely useful. When combined with the appropriate herb, their vines can be used to create potions that attract wood spirits when you are woodcutting, making a lumberjack's life significantly easier." + "<br>" + "<br>" + "These jadinkos are caught with marasamaw plants.";
+		svar2 = "To attract amphibian jadinkos:" + "<br>" + "<br>" + "grow a lergberry bush, a blue flower and construct a pond.";
+		ivar5 = 62243;
+		GOTO	flow_31
+	flow_22:
+		if (((boolean)bitconfig_8390)) {
+			return;
+		}
+		svar0 = "Carrion jadinko";
+		svar1 = "The carrion jadinko is probably the least pleasant of the jadinko species. They scavenge on the leftovers of other creatures and feast cannibalistically on the remains of other hunted jadinkos. The vines that these creatures produce are particularly pungent and rot rather nicely to create supercompost.";
+		svar2 = "To attract carrion jadinkos:" + "<br>" + "<br>" + "grow a kalferberry bush, a green vine flower and build a boneyard.";
+		ivar5 = 62248;
+		GOTO	flow_31
+	flow_25:
+		if (((boolean)bitconfig_8389)) {
+			return;
+		}
+		svar0 = "Camouflaged jadinko";
+		svar1 = "The camouflaged jadinko is a stealthy critter that takes great delight in hiding itself in foliage. The magic of its striped vines is particularly odd and cannot be turned into a potion; however, Papa Mambo has mentioned that he has uses for these vines." + "<br>" + "<br>" + "These jadinkos are caught by tracking.";
+		svar2 = "To attract camouflaged jadinkos:" + "<br>" + "<br>" + "grow a lergberry bush and build standing stones. In addition, you must be under the effects of the juju hunter potion.";
+		ivar5 = 62245;
+		GOTO	flow_31
+	flow_28:
+		if (((boolean)bitconfig_8392)) {
+			return;
+		}
+		svar0 = "Draconic jadinko";
+		svar1 = "While not dragons, these rare and elusive creatures certainly resemble them. They are powerful beasts with a deep connection to the earth: so deep that their vines can be used to create powerful potions that attracts the mining spirits of stone." + "<br>" + "<br>" + "These jadinkos are caught with marasamaw plants.";
+		svar2 = "To attract draconic jadinkos:" + "<br>" + "<br>" + "grow a lergberry bush, a red vine flower and build a dark pit. In addition you will need to be under the influence of the juju hunter potion.";
+		ivar5 = 62238;
+	flow_31:
+		setWidgetIsHidden(true, new WidgetPointer(72,56));
+		setWidgetIsHidden(false, new WidgetPointer(72,58));
+		setWidgetText(new WidgetPointer(72,60), svar0);
+		setWidgetText(new WidgetPointer(72,61), svar1);
+		setWidgetText(new WidgetPointer(72,62), svar2);
+		setWidgetModel(ivar5, new WidgetPointer(72,59));
+		return;
+}

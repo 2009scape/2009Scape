@@ -1,0 +1,6 @@
+void script_5267() {
+	setWidgetIsHidden(true, new WidgetPointer(1137,5));
+	script_5219(74514438);
+	deleteAllExtraChilds(new WidgetPointer(1137,109));
+	return;
+}

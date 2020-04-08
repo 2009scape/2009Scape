@@ -1,0 +1,6 @@
+void script_2382(int arg0,int arg1,int arg2) {
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		setWidgetBorderThickness(arg2);
+	}
+	return;
+}

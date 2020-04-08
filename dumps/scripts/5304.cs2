@@ -1,0 +1,86 @@
+void script_5304(int arg0) {
+	if (arg0 == 54001714) {
+		switch (bitconfig_9892) {
+			case 0:
+				setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(arg0));
+				break;
+			case 1:
+				setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(arg0));
+				break;
+			case 2:
+				setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(arg0));
+				break;
+			case 3:
+				setWidgetRGB(new Color(0, 0, 255), new WidgetPointer(arg0));
+				break;
+			case 4:
+				setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(arg0));
+				break;
+			default:
+				setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(arg0));
+		}
+	} else if (arg0 == 54001784) {
+		switch (bitconfig_9893) {
+			case 0:
+				setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(arg0));
+				break;
+			case 1:
+				setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(arg0));
+				break;
+			case 2:
+				setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(arg0));
+				break;
+			case 3:
+				setWidgetRGB(new Color(0, 0, 255), new WidgetPointer(arg0));
+				break;
+			case 4:
+				setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(arg0));
+				break;
+			default:
+				setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(arg0));
+		}
+	} else if (arg0 == 54001837) {
+		switch (bitconfig_9894) {
+			case 0:
+				setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(arg0));
+				break;
+			case 1:
+				setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(arg0));
+				break;
+			case 2:
+				setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(arg0));
+				break;
+			case 3:
+				setWidgetRGB(new Color(0, 0, 255), new WidgetPointer(arg0));
+				break;
+			case 4:
+				setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(arg0));
+				break;
+			default:
+				setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(arg0));
+		}
+	} else {
+		if (arg0 == 54001874) {
+			switch (bitconfig_9895) {
+				case 0:
+					setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(arg0));
+					break;
+				case 1:
+					setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(arg0));
+					break;
+				case 2:
+					setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(arg0));
+					break;
+				case 3:
+					setWidgetRGB(new Color(0, 0, 255), new WidgetPointer(arg0));
+					break;
+				case 4:
+					setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(arg0));
+					break;
+				default:
+					setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(arg0));
+			}
+		}
+	}
+	return;
+}

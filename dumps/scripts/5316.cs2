@@ -1,0 +1,7 @@
+void script_5316(int arg0,int arg1,int arg2) {
+	if ((((arg1 >= 0) && (arg1 < 40)) && ((arg2 >= 0) && (arg2 < 40))) && (setWidgetRegister(new WidgetPointer(arg0), arg1) && setWidgetRegister(new WidgetPointer(arg0), arg2))) {
+		setWidgetPosition(0, getWidgetActualY(), 0, 0);
+		setWidgetPosition(0, getWidgetActualY(), 0, 0);
+	}
+	return;
+}

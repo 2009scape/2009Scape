@@ -1,0 +1,12 @@
+int script_3275() {
+	if (((boolean)globalint_1196)) {
+		switch (globalint_1188) {
+			case 3:
+				return 9500;
+			case 2:
+				return 9500;
+		}
+		return 9500;
+	}
+	return 10000;
+}

@@ -1,0 +1,13 @@
+int script_1531() {
+	int ivar0;
+	ivar0 = 0;
+	ivar0 = add(ivar0, bitconfig_8121);
+	ivar0 = add(ivar0, bitconfig_8122);
+	ivar0 = add(ivar0, bitconfig_8123);
+	ivar0 = add(ivar0, bitconfig_8124);
+	ivar0 = add(ivar0, bitconfig_8125);
+	ivar0 = add(ivar0, bitconfig_8126);
+	ivar0 = add(ivar0, bitconfig_8127);
+	ivar0 = add(ivar0, bitconfig_8128);
+	return ivar0;
+}

@@ -1,0 +1,4 @@
+void script_905() {
+	globalint_116 = 0;
+	return;
+}

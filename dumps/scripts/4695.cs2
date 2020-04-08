@@ -1,0 +1,17 @@
+void script_4695(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = getClientCycle();
+	if ((ivar2 >= add(arg0, 15)) || ((boolean)arg0)) {
+		cs2method2103(arg1, new WidgetPointer(500,11));
+		arg0 = ivar2;
+		if (((boolean)globalint_1548)) {
+			arg1 = 255;
+		} else if (arg1 == 255) {
+			arg1 = 0;
+		} else {
+			arg1 = 255;
+		}
+	}
+	setScriptCallOnGameloop(4695, arg0, arg1, "ii", new WidgetPointer(500,11));
+	return;
+}

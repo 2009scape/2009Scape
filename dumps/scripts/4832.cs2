@@ -1,0 +1,84 @@
+void script_4832(int arg0,int arg1) {
+	script_4834(arg0);
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		if (getWidgetSpriteId() == 6009) {
+			switch (bitconfig_9558) {
+				flow_3:
+					case 1:
+					switch (arg0) {
+						case 71566342:
+						case 71566424:
+						case 71566500:
+							bitconfig_9567 = add(1, arg1);
+							break;
+						case 71566326:
+						case 71566488:
+						case 71566410:
+							bitconfig_9568 = add(1, arg1);
+							break;
+						case 71566476:
+						case 71566310:
+						case 71566396:
+							bitconfig_9569 = add(1, arg1);
+					}
+					break;
+					case 2:
+					switch (arg0) {
+						case 71566342:
+						case 71566424:
+						case 71566500:
+							bitconfig_9576 = add(1, arg1);
+							break;
+						case 71566326:
+						case 71566488:
+						case 71566410:
+							bitconfig_9577 = add(1, arg1);
+							break;
+						case 71566476:
+						case 71566310:
+						case 71566396:
+							bitconfig_9578 = add(1, arg1);
+					}
+					break;
+					case 3:
+					SWITCH (arg0) {
+						case 71566342:
+							 GOTO flow_14
+						case 71566424:
+							 GOTO flow_14
+						case 71566500:
+							 GOTO flow_14
+						case 71566326:
+							 GOTO flow_15
+						case 71566488:
+							 GOTO flow_15
+						case 71566410:
+							 GOTO flow_15
+						case 71566476:
+							 GOTO flow_16
+						case 71566310:
+							 GOTO flow_16
+						case 71566396:
+							 GOTO flow_16
+					}
+					break;
+				flow_14:
+					bitconfig_9585 = add(1, arg1);
+					break;
+				flow_15:
+					bitconfig_9586 = add(1, arg1);
+					break;
+				flow_16:
+					bitconfig_9587 = add(1, arg1);
+			}
+			setWidgetSprite(6004);
+		} else {
+			script_4834(arg0);
+		}
+	}
+	script_4838();
+	script_4810();
+	script_4840();
+	script_4814();
+	return;
+}

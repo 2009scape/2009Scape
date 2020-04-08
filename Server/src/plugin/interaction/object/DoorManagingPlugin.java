@@ -31,7 +31,7 @@ public final class DoorManagingPlugin extends OptionHandler {
 	@Override
 	public boolean handle(Player player, Node node, String option) {
 		GameObject object = (GameObject) node;
-		if (object.getType() != 9 && !player.getLocation().equals(node.getLocation()) && !player.getLocation().isNextTo(object)) {
+		if (object.getType() != 9 && !player.getLocation().equals(node.getLocation()) && !player.getLocation().isNextTo(object) && object.getName().contains("cupboard")) {
 			return true;
 		}
 		String name = object.getName().toLowerCase();

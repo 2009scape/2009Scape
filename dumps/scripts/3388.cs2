@@ -1,0 +1,78 @@
+void script_3388(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	cs2func_script_2692_struct(2,0,0) structdump_3;
+	cs2func_script_2692_struct(2,0,0) structdump_4;
+	ivar3 = 4;
+	switch (arg0) {
+		case 1:
+			if (cs2method7007() != 1) {
+				cs2method7004();
+			} else {
+				return;
+			}
+			break;
+		case 2:
+			if (ivar3 >= 2) {
+				if (cs2method7007() != 2) {
+					cs2method7003();
+				} else {
+					return;
+				}
+			} else {
+				script_3413(arg1);
+			}
+			break;
+		case 3:
+			if (ivar3 >= 3) {
+				if (cs2method7007() != 3) {
+					cs2method7002();
+				} else {
+					return;
+				}
+			} else {
+				script_3413(arg1);
+			}
+			break;
+		case 4:
+			if (ivar3 >= 4) {
+				if (cs2method7007() != 4) {
+					cs2method7001();
+				} else {
+					return;
+				}
+			} else {
+				script_3413(arg1);
+			}
+			break;
+		case 0:
+			if (((boolean)arg2)) {
+				if (cs2method7007() != 0) {
+					cs2method7005();
+				} else {
+					return;
+				}
+			}
+			break;
+		case -1:
+			script_3384(arg1);
+	}
+	ivar4 = cs2method6131();
+	if (((boolean)arg0) || ((boolean)arg2)) {
+		stack_dump0 = ivar4;
+		stack_dump1 = getDisplayMode();
+		stack_dump2 = ivar4;
+		structdump_3 = script_2692(stack_dump2);
+		script_3387(stack_dump0, stack_dump1, structdump_3.intpart_0, structdump_3.intpart_1, arg1);
+	} else {
+		stack_dump0 = ivar4;
+		stack_dump1 = getDisplayMode();
+		stack_dump2 = ivar4;
+		structdump_4 = script_2692(stack_dump2);
+		script_2596(stack_dump0, stack_dump1, structdump_4.intpart_0, structdump_4.intpart_1, arg1);
+	}
+	return;
+}

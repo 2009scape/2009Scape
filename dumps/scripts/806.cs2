@@ -1,0 +1,14 @@
+int script_806() {
+	int ivar0;
+	ivar0 = 5592405;
+	if (getRunEnergy() > 75) {
+		ivar0 = 65280;
+	} else if (getRunEnergy() > 50) {
+		ivar0 = 16776960;
+	} else if (getRunEnergy() > 25) {
+		ivar0 = 16750623;
+	} else {
+		ivar0 = 16711680;
+	}
+	return ivar0;
+}

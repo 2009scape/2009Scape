@@ -1,0 +1,10 @@
+void script_4073() {
+	if (((boolean)bitconfig_8669)) {
+		globalint_1432 = 0;
+		script_4057(69337090);
+	} else {
+		globalint_1432 = 0;
+		script_4055(69337091);
+	}
+	return;
+}

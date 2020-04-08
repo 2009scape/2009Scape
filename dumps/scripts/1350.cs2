@@ -1,0 +1,9 @@
+void script_1350(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,string arg7) {
+	if (setWidgetRegister(new WidgetPointer(arg3), arg4)) {
+		setWidgetText(arg7);
+		setWidgetRGB(new Color(arg6));
+		setScriptCallOnMouseExit(1354, new WidgetPointer(arg3), arg4, arg6, "Iii");
+	}
+	script_1349(arg3, arg0, arg1, arg2, arg5);
+	return;
+}

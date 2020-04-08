@@ -1,0 +1,16 @@
+void script_1819(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	setWidgetText(new WidgetPointer(arg0), "Draw!");
+	setWidgetPosition(75, 89, 0, 0, new WidgetPointer(arg0));
+	setWidgetText(new WidgetPointer(arg1), "It's a draw.");
+	setWidgetPosition(79, 130, 0, 0, new WidgetPointer(arg1));
+	setWidgetPosition(79, 180, 0, 0, new WidgetPointer(arg2));
+	setWidgetSize(175, 125, 0, 0, new WidgetPointer(arg2));
+	setWidgetPosition(52, 118, 0, 0, new WidgetPointer(arg3));
+	setWidgetIsHidden(false, new WidgetPointer(arg0));
+	setWidgetIsHidden(false, new WidgetPointer(arg1));
+	setWidgetIsHidden(false, new WidgetPointer(arg2));
+	setWidgetIsHidden(false, new WidgetPointer(arg3));
+	setWidgetIsHidden(false, new WidgetPointer(arg4));
+	setWidgetIsHidden(true, new WidgetPointer(arg5));
+	return;
+}

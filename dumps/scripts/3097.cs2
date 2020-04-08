@@ -1,0 +1,24 @@
+void script_3097() {
+	setWidgetNoOptions(new WidgetPointer(906,236));
+	setWidgetNoOptions(new WidgetPointer(906,242));
+	setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(906,236));
+	setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(906,242));
+	setScriptCallOnMouseEntered(-1, "", new WidgetPointer(906,242));
+	setScriptCallOnMouseExit(-1, "", new WidgetPointer(906,242));
+	setScriptCallOnMouseEntered(-1, "", new WidgetPointer(906,236));
+	setScriptCallOnMouseExit(-1, "", new WidgetPointer(906,236));
+	setWidgetPosition(6, 5, 0, 2, new WidgetPointer(906,236));
+	setWidgetPosition(6, 5, 0, 2, new WidgetPointer(906,242));
+	setWidgetText(new WidgetPointer(906,241), "");
+	setWidgetText(new WidgetPointer(906,247), "");
+	setWidgetIsHidden(true, new WidgetPointer(906,236));
+	setWidgetIsHidden(true, new WidgetPointer(906,242));
+	setWidgetText(new WidgetPointer(906,235), "");
+	globalint_1092 = 0;
+	setWidgetSprite(-1, new WidgetPointer(906,234));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(906,234));
+	setScriptCallOnKeyPress(-1, "", new WidgetPointer(906,44));
+	setWidgetIsHidden(true, new WidgetPointer(906,44));
+	setWidgetIsHidden(true, new WidgetPointer(906,29));
+	return;
+}

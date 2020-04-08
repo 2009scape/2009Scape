@@ -1,0 +1,10 @@
+void script_4678(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar2 = getWidgetActualWidth(new WidgetPointer(arg1));
+	ivar3 = divide(ivar2, cs2method_3408(105, 105, 3840, bitconfig_9373));
+	ivar4 = multiply(bitconfig_9376, ivar3);
+	setWidgetSize(ivar4, getWidgetActualHeight(new WidgetPointer(arg0)), 0, 0, new WidgetPointer(arg0));
+	return;
+}

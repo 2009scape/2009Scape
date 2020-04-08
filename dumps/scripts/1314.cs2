@@ -1,0 +1,92 @@
+int script_1314(int arg0) {
+	if (getDisplayMode() >= 2) {
+		switch (arg0) {
+			case 0:
+				return isWidgetHidden(new WidgetPointer(746,90));
+			case 1:
+				return isWidgetHidden(new WidgetPointer(746,91));
+			case 2:
+				return isWidgetHidden(new WidgetPointer(746,92));
+			case 3:
+				return isWidgetHidden(new WidgetPointer(746,93));
+			case 4:
+				return isWidgetHidden(new WidgetPointer(746,94));
+			case 5:
+				return isWidgetHidden(new WidgetPointer(746,95));
+			case 6:
+				return isWidgetHidden(new WidgetPointer(746,96));
+			case 7:
+				return isWidgetHidden(new WidgetPointer(746,97));
+			case 8:
+				return isWidgetHidden(new WidgetPointer(746,98));
+			case 9:
+				return isWidgetHidden(new WidgetPointer(746,99));
+			case 10:
+				return isWidgetHidden(new WidgetPointer(746,100));
+			case 11:
+				return isWidgetHidden(new WidgetPointer(746,101));
+			case 12:
+				return isWidgetHidden(new WidgetPointer(746,102));
+			case 13:
+				return isWidgetHidden(new WidgetPointer(746,103));
+			case 14:
+				return isWidgetHidden(new WidgetPointer(746,104));
+			case 15:
+				return isWidgetHidden(new WidgetPointer(746,105));
+			case 95:
+				return isWidgetHidden(new WidgetPointer(746,107));
+			case 99:
+				return isWidgetHidden(new WidgetPointer(746,108));
+			case 98:
+				if (isWidgetOpen(new WidgetPointer(746,88))) {
+					return isWidgetHidden(new WidgetPointer(746,88));
+				}
+				return 1;
+		}
+	} else {
+		switch (arg0) {
+			case 0:
+				return isWidgetHidden(new WidgetPointer(548,204));
+			case 1:
+				return isWidgetHidden(new WidgetPointer(548,205));
+			case 2:
+				return isWidgetHidden(new WidgetPointer(548,206));
+			case 3:
+				return isWidgetHidden(new WidgetPointer(548,207));
+			case 4:
+				return isWidgetHidden(new WidgetPointer(548,208));
+			case 5:
+				return isWidgetHidden(new WidgetPointer(548,209));
+			case 6:
+				return isWidgetHidden(new WidgetPointer(548,210));
+			case 7:
+				return isWidgetHidden(new WidgetPointer(548,211));
+			case 8:
+				return isWidgetHidden(new WidgetPointer(548,212));
+			case 9:
+				return isWidgetHidden(new WidgetPointer(548,213));
+			case 10:
+				return isWidgetHidden(new WidgetPointer(548,214));
+			case 11:
+				return isWidgetHidden(new WidgetPointer(548,215));
+			case 12:
+				return isWidgetHidden(new WidgetPointer(548,216));
+			case 13:
+				return isWidgetHidden(new WidgetPointer(548,217));
+			case 14:
+				return isWidgetHidden(new WidgetPointer(548,218));
+			case 15:
+				return isWidgetHidden(new WidgetPointer(548,219));
+			case 95:
+				return isWidgetHidden(new WidgetPointer(548,221));
+			case 99:
+				return isWidgetHidden(new WidgetPointer(548,222));
+			case 98:
+				if (isWidgetOpen(new WidgetPointer(548,200))) {
+					return isWidgetHidden(new WidgetPointer(548,200));
+				}
+				return 1;
+		}
+	}
+	return -1;
+}

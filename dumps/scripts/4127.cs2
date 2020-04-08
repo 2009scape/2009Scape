@@ -1,0 +1,31 @@
+cs2func_script_4127_struct(3,0,0) script_4127(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	ivar3 = min(arg0, min(arg1, arg2));
+	ivar4 = max(arg0, max(arg1, arg2));
+	ivar5 = subtract(ivar4, ivar3);
+	ivar6 = 0;
+	ivar7 = 0;
+	ivar8 = divide(add(ivar3, ivar4), 2);
+	if (ivar5 != 0) {
+		if (ivar8 < 128) {
+			ivar7 = multiplyDivide(ivar5, multiply(2, ivar8), 255);
+		} else {
+			ivar7 = multiplyDivide(ivar5, subtract(510, multiply(2, ivar8)), 255);
+		}
+		if (arg0 == ivar4) {
+			ivar6 = multiplyDivide(mod(add(multiplyDivide(subtract(arg1, arg2), ivar5, 10000), 60000), 60000), 10000, 60);
+		}
+		if (arg1 == ivar4) {
+			ivar6 = multiplyDivide(add(multiplyDivide(subtract(arg2, arg0), ivar5, 10000), 20000), 10000, 60);
+		}
+		if (arg2 == ivar4) {
+			ivar6 = multiplyDivide(add(multiplyDivide(subtract(arg0, arg1), ivar5, 10000), 40000), 10000, 60);
+		}
+	}
+	return newstruct cs2func_script_4127_struct(ivar6, ivar7, ivar8);
+}

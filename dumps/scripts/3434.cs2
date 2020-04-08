@@ -1,0 +1,23 @@
+void script_3434(int arg0) {
+	if (((boolean)globalint_1280)) {
+		return;
+	}
+	if (globalint_1278 != arg0) {
+		playSoundEffect(9439, 1, 0);
+	}
+	globalint_1278 = arg0;
+	setWidgetSprite(1134, new WidgetPointer(54,16));
+	setWidgetSprite(1134, new WidgetPointer(54,17));
+	setWidgetSprite(1134, new WidgetPointer(54,18));
+	if (((boolean)globalint_1278)) {
+		setWidgetSprite(1135, new WidgetPointer(54,16));
+	} else if (globalint_1278 == 2) {
+		setWidgetSprite(1135, new WidgetPointer(54,17));
+	} else if (globalint_1278 == 3) {
+		setWidgetSprite(1135, new WidgetPointer(54,18));
+	} else {
+		globalint_1278 = 1;
+		setWidgetSprite(1135, new WidgetPointer(54,16));
+	}
+	return;
+}

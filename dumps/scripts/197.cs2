@@ -1,0 +1,19 @@
+void script_197(int arg0,int arg1) {
+	int ivar2;
+	string svar0;
+	string svar1;
+	int stack_dump0;
+	previousAndCurrentName(0,2,0) structdump_1;
+	ivar2 = subtract(arg1, 1);
+	svar0 = "";
+	svar1 = "";
+	stack_dump0 = arg0;
+	structdump_1 = getFriendName(stack_dump0);
+	svar1 = structdump_1.stringpart_1;
+	svar0 = structdump_1.stringpart_0;
+	cs2method3604(ivar2, svar0);
+	if (setWidgetRegister(new WidgetPointer(1108,13), add(multiply(arg0, 2), 1))) {
+		setWidgetText(script_196(ivar2));
+	}
+	return;
+}

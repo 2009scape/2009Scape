@@ -1,0 +1,19 @@
+void script_4033(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = -1;
+	if (((boolean)arg1)) {
+		if (((boolean)arg0)) {
+			ivar2 = 4087;
+		} else {
+			ivar2 = 4086;
+			script_41(60096664);
+		}
+	} else if (((boolean)arg0)) {
+		ivar2 = 4085;
+	} else {
+		ivar2 = 4084;
+		script_41(60096664);
+	}
+	setWidgetSprite(ivar2, new WidgetPointer(917,142));
+	return;
+}

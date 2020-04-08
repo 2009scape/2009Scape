@@ -448,7 +448,7 @@ public final class HouseManager implements SavingModule {
 		int chunkX = object.getLocation().getChunkOffsetX();
 		int chunkY = object.getLocation().getChunkOffsetY();
 		for (Hotspot h : room.getHotspots()) {
-			//System.out.println(h.getHotspot().getObjectId(style) + ", "+object.protocol() + ", " +h.getCurrentX() + ", " +chunkX+", "+h.getCurrentY()+", "+chunkY);
+			System.out.println(h.getHotspot().getObjectId(style) + ", " +h.getChunkX() + ", " +chunkX+", "+h.getChunkY()+", "+chunkY);
 			if (h.getChunkX() == chunkX && h.getChunkY() == chunkY && h.getHotspot().getObjectId(style) == object.getId()) {
 				return h;
 			}

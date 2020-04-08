@@ -1,0 +1,7 @@
+void script_3186(int arg0,int arg1) {
+	setWidgetSize(getTextWidth(2710, getWidgetText(new WidgetPointer(arg1))), 0, 0, 1, new WidgetPointer(arg1));
+	setWidgetPosition(40, 0, 2, 1, new WidgetPointer(arg1));
+	setWidgetSize(38, 31, 0, 0, new WidgetPointer(arg0));
+	setWidgetIsHidden(false, new WidgetPointer(arg0));
+	return;
+}

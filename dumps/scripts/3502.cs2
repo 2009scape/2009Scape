@@ -1,0 +1,15 @@
+void script_3502() {
+	setItemOnWidgetMethod2200(cs2method_3408(105, 79, 3170, mod(add(script_3547(3), bitconfig_7387), getCommonDefinitionSize(3170))), -1, new WidgetPointer(1003,191));
+	setItemOnWidgetMethod2200(cs2method_3408(105, 79, 3170, mod(add(script_3545(4), bitconfig_7387), getCommonDefinitionSize(3170))), -1, new WidgetPointer(1003,192));
+	setItemOnWidgetMethod2200(cs2method_3408(105, 79, 3170, mod(add(script_3545(12), bitconfig_7387), getCommonDefinitionSize(3170))), -1, new WidgetPointer(1003,193));
+	setItemOnWidgetMethod2200(cs2method_3408(105, 79, 3170, mod(add(script_3546(13), bitconfig_7387), getCommonDefinitionSize(3170))), -1, new WidgetPointer(1003,194));
+	setItemOnWidgetMethod2200(cs2method_3408(105, 79, 3170, mod(add(script_3546(5), bitconfig_7387), getCommonDefinitionSize(3170))), -1, new WidgetPointer(1003,195));
+	setItemOnWidgetMethod2200(cs2method_3408(105, 79, 3170, mod(add(script_3547(11), bitconfig_7387), getCommonDefinitionSize(3170))), -1, new WidgetPointer(1003,196));
+	setItemOnWidgetMethod2200(cs2method_3408(105, 79, 3170, mod(add(script_3546(1), bitconfig_7387), getCommonDefinitionSize(3170))), -1, new WidgetPointer(1003,197));
+	setItemOnWidgetMethod2200(cs2method_3408(105, 79, 3170, mod(add(script_3547(14), bitconfig_7387), getCommonDefinitionSize(3170))), -1, new WidgetPointer(1003,198));
+	setItemOnWidgetMethod2200(cs2method_3408(105, 79, 3170, mod(add(script_3545(1), bitconfig_7387), getCommonDefinitionSize(3170))), -1, new WidgetPointer(1003,199));
+	setItemOnWidgetMethod2200(cs2method_3408(105, 79, 3170, mod(add(script_3545(9), bitconfig_7387), getCommonDefinitionSize(3170))), -1, new WidgetPointer(1003,200));
+	setItemOnWidgetMethod2200(cs2method_3408(105, 79, 3170, mod(add(script_3547(6), bitconfig_7387), getCommonDefinitionSize(3170))), -1, new WidgetPointer(1003,201));
+	setItemOnWidgetMethod2200(cs2method_3408(105, 79, 3170, mod(add(script_3546(9), bitconfig_7387), getCommonDefinitionSize(3170))), -1, new WidgetPointer(1003,202));
+	return;
+}

@@ -1,0 +1,17 @@
+void script_135(int arg0) {
+	int ivar1;
+	ivar1 = -1;
+	if (strLength(globalstring_24) > 0) {
+		cs2method5002(arg0, globalint_6, globalstring_24, "");
+	}
+	if (((boolean)stringMethod4107(globalstring_24, cs2method5015()))) {
+		script_675();
+		return;
+	}
+	if (cs2method3623(globalstring_24) && (stringMethod4107(globalstring_24, cs2method5015()) != 0)) {
+		script_221();
+	} else {
+		script_675();
+	}
+	return;
+}

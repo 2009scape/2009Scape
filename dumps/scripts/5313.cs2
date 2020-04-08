@@ -1,0 +1,59 @@
+void script_5313(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	ivar5 = 0;
+	ivar6 = 15;
+	ivar7 = getCommonDefinitionSize(5177);
+	ivar8 = getCommonDefinitionSize(5176);
+	ivar9 = -1;
+	deleteAllExtraChilds(new WidgetPointer(arg1));
+	deleteAllExtraChilds(new WidgetPointer(arg3));
+	deleteAllExtraChilds(new WidgetPointer(arg4));
+	deleteAllExtraChilds(new WidgetPointer(arg2));
+	while (ivar5 < min(ivar7, ivar8)) {
+		createExtraChild(new WidgetPointer(arg1), 3, ivar5);
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg0)), ivar6, 0, 0);
+		setWidgetPosition(0, multiply(ivar5, ivar6), 0, 0);
+		if (((boolean)mod(ivar5, 2))) {
+			setWidgetRGB(new Color(34, 34, 34));
+		} else {
+			setWidgetRGB(new Color(17, 17, 17));
+		}
+		setWidgetFilled(1);
+		setWidgetContextMenuOption(1, "Sort");
+		createExtraChild(new WidgetPointer(arg3), 5, ivar5);
+		setWidgetSprite(7712);
+		setWidgetContextMenuOption(1, "Play");
+		setWidgetSize(12, 13, 0, 0);
+		setWidgetPosition(138, add(1, multiply(ivar5, ivar6)), 0, 0);
+		ivar9 = 7713;
+		setScriptCallOnMouseEntered(5336, new WidgetPointer(-32768,3), -2147483643, ivar9, "Iid");
+		ivar9 = 7712;
+		setScriptCallOnMouseExit(5336, new WidgetPointer(-32768,3), -2147483643, ivar9, "Iid");
+		createExtraChild(new WidgetPointer(arg4), 5, ivar5);
+		setWidgetSprite(7715);
+		setWidgetContextMenuOption(1, "Bookmark");
+		setWidgetSize(12, 13, 0, 0);
+		setWidgetPosition(151, multiply(ivar5, ivar6), 0, 0);
+		ivar9 = 7716;
+		setScriptCallOnMouseEntered(5336, new WidgetPointer(-32768,3), -2147483643, ivar9, "Iid");
+		ivar9 = 7715;
+		setScriptCallOnMouseExit(5336, new WidgetPointer(-32768,3), -2147483643, ivar9, "Iid");
+		createExtraChild(new WidgetPointer(arg2), 4, ivar5);
+		setWidgetText(cs2method_3408(105, 115, 5177, ivar5));
+		setWidgetFont(494);
+		setWidgetPosition(2, multiply(ivar5, ivar6), 0, 0);
+		setWidgetSize(subtract(getWidgetActualWidth(new WidgetPointer(arg0)), 24), 15, 0, 0);
+		setWidgetRGB(new Color(221, 221, 221));
+		setWidgetTextAlignment(0, 1, 0);
+		setWidgetUnknownBoolean(false);
+		ivar5 = add(ivar5, 1);
+	}
+	cs2method2100(0, 0, new WidgetPointer(arg0));
+	setWidgetScrollMax(0, add(2, multiply(ivar5, ivar6)), new WidgetPointer(arg0));
+	script_31(20905992, arg0, 6507, 6504, 6505, 6506, 6499, 6498);
+	return;
+}

@@ -1,0 +1,8 @@
+void script_1722(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	arg4 = add(arg4, getClientCycle());
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1) || ((arg1 == -1) && setWidgetRegister(new WidgetPointer(arg0)))) {
+		setWidgetSprite(arg2);
+		setScriptCallOnGameloop(1723, new WidgetPointer(arg0), arg1, arg3, arg4, "Iidi");
+	}
+	return;
+}

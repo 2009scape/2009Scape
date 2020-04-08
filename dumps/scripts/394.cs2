@@ -1,0 +1,14 @@
+void script_394(int arg0) {
+	if (((boolean)globalint_1391)) {
+		cs2method2103(max(subtract(getWidgetShadeColor(new WidgetPointer(arg0)), 10), 0), new WidgetPointer(arg0));
+		if (((boolean)getWidgetShadeColor(new WidgetPointer(arg0)))) {
+			globalint_1391 = 1;
+		}
+	} else {
+		cs2method2103(min(add(getWidgetShadeColor(new WidgetPointer(arg0)), 10), 255), new WidgetPointer(arg0));
+		if (getWidgetShadeColor(new WidgetPointer(arg0)) == 255) {
+			globalint_1391 = 0;
+		}
+	}
+	return;
+}

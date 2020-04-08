@@ -1,0 +1,97 @@
+void script_673(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9) {
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	ivar10 = ((int)cs2method_3408(105, 73, 1083, arg0));
+	deleteAllExtraChilds(new WidgetPointer(ivar10));
+	ivar11 = getWidgetActualWidth(new WidgetPointer(ivar10));
+	ivar12 = getWidgetActualHeight(new WidgetPointer(ivar10));
+	svar0 = "";
+	if (((boolean)arg7)) {
+		svar0 = "Empty";
+	} else if (((boolean)arg1)) {
+		svar0 = "Buy";
+	} else {
+		svar0 = "Sell";
+	}
+	createExtraChild(new WidgetPointer(ivar10), 3, 0);
+	setWidgetSize(ivar11, ivar12, 0, 0);
+	setWidgetPosition(0, 0, 0, 0);
+	setWidgetFilled(1);
+	setWidgetRGB(new Color(255, 255, 255));
+	cs2method2103(255);
+	script_584(ivar10, svar0);
+	ivar13 = getExtraChildGap(new WidgetPointer(ivar10));
+	if (((boolean)arg7)) {
+		if ((arg0 < 2) || isSiteSettingsMembers()) {
+			if ((arg9 == arg0) && setWidgetRegister(new WidgetPointer(ivar10), 0)) {
+				cs2method2103(230);
+			}
+		} else {
+			setWidgetIsHidden(false, cs2method_3408(105, 73, 1085, arg0));
+		}
+	}
+	svar1 = script_46(arg2, ",");
+	svar2 = script_46(arg6, ",");
+	ivar14 = 0;
+	ivar15 = 0;
+	ivar16 = ((int)cs2method_3408(105, 73, 1084, arg0));
+	setWidgetIsHidden(true, new WidgetPointer(ivar16));
+	svar3 = "";
+	if (((boolean)arg7)) {
+		if ((arg0 < 2) || isSiteSettingsMembers()) {
+			if (arg0 == arg9) {
+				setWidgetIsHidden(false, new WidgetPointer(ivar16));
+			} else {
+				createExtraChild(new WidgetPointer(ivar10), 5, ivar13);
+				setWidgetSprite(1155);
+				setWidgetSize(16, 14, 0, 0);
+				setWidgetPosition(5, 29, 0, 0);
+				ivar13 = add(ivar13, 1);
+			}
+		}
+	} else {
+		ivar14 = 7;
+		ivar15 = subtract(ivar12, 30);
+		script_674(ivar14, ivar15, subtract(ivar11, 14), 15, arg0, ivar10, ivar13, 1, arg7, arg8, arg2, arg3);
+		ivar13 = getExtraChildGap(new WidgetPointer(ivar10));
+		createExtraChild(new WidgetPointer(ivar10), 5, ivar13);
+		ivar13 = add(ivar13, 1);
+		setWidgetPosition(6, 30, 0, 0);
+		setWidgetSize(40, 36, 0, 0);
+		setWidgetSprite(1137);
+		createExtraChild(new WidgetPointer(ivar10), 5, ivar13);
+		setWidgetPosition(8, 32, 0, 0);
+		setWidgetSize(36, 32, 0, 0);
+		setItemOnWidgetMethod1200(arg5, arg2);
+		setWidgetShadowColor(new Color(0, 0, 0));
+		ivar13 = add(ivar13, 1);
+		createExtraChild(new WidgetPointer(ivar10), 4, ivar13);
+		ivar13 = add(ivar13, 1);
+		setWidgetPosition(48, 30, 0, 0);
+		setWidgetSize(subtract(ivar11, 53), 22, 0, 0);
+		setWidgetRGB(new Color(204, 153, 0));
+		setWidgetFont(494);
+		setWidgetTextAlignment(0, 0, 0);
+		setWidgetUnknownBoolean(true);
+		setWidgetText(getItemName(arg5));
+		createExtraChild(new WidgetPointer(ivar10), 4, ivar13);
+		ivar13 = add(ivar13, 1);
+		setWidgetPosition(48, 54, 0, 0);
+		setWidgetSize(subtract(ivar11, 53), 15, 0, 0);
+		setWidgetRGB(new Color(189, 187, 91));
+		setWidgetFont(494);
+		setWidgetTextAlignment(0, 0, 15);
+		setWidgetUnknownBoolean(true);
+		setWidgetText(svar2 + " gp");
+	}
+	return;
+}

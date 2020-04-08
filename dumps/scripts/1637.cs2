@@ -1,0 +1,19 @@
+cs2func_script_1637_struct(2,0,0) script_1637(int arg0,int arg1,int arg2,string arg3) {
+	int ivar3;
+	if (((boolean)stringMethod4107(arg3, ""))) {
+		return newstruct cs2func_script_1637_struct(arg1, arg2);
+	}
+	createExtraChild(new WidgetPointer(arg0), 4, arg1);
+	setWidgetText(arg3);
+	setWidgetFont(495);
+	ivar3 = getLineCount(430, 495, arg3);
+	if (ivar3 < 1) {
+		ivar3 = 1;
+	}
+	setWidgetSize(430, multiply(14, ivar3), 0, 0);
+	setWidgetPosition(3, add(multiply(arg2, 15), 4), 0, 0);
+	setWidgetTextAlignment(1, 0, 14);
+	setWidgetRGB(new Color(170, 170, 170));
+	setWidgetUnknownBoolean(true);
+	return newstruct cs2func_script_1637_struct(add(arg1, 1), add(arg2, ivar3));
+}

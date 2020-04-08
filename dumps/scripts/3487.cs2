@@ -1,0 +1,17 @@
+int script_3487(int arg0) {
+	int ivar1;
+	int ivar2;
+	opcStruct5624(2,0,0) structdump_0;
+	if ((arg0 < 0) || (arg0 > 63)) {
+		return 0;
+	}
+	ivar1 = 0;
+	ivar2 = 0;
+	structdump_0 = getUserflowParam();
+	ivar1 = structdump_0.intpart_1;
+	ivar2 = structdump_0.intpart_0;
+	if (arg0 < 32) {
+		return script_734(((int)isBitFlagged(ivar1, arg0)));
+	}
+	return script_734(((int)isBitFlagged(ivar2, subtract(arg0, 32))));
+}

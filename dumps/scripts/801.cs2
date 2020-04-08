@@ -1,0 +1,9 @@
+void script_801(int arg0,int arg1) {
+	setWidgetRGB(new Color(script_805(arg1)), new WidgetPointer(arg0));
+	if (arg1 == 5) {
+		setWidgetText(new WidgetPointer(arg0), intToStr(bitconfig_9816));
+	} else {
+		setWidgetText(new WidgetPointer(arg0), intToStr(getSkillCurrentLvl(arg1)));
+	}
+	return;
+}

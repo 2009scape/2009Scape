@@ -1,0 +1,24 @@
+string script_4582(int arg0,int arg1,int arg2) {
+	if (arg0 > 0) {
+		if (arg1 > 0) {
+			if (arg2 > 0) {
+				return intToStr(arg0) + " " + script_4583(arg0, "day", "days") + ", " + intToStr(arg1) + " " + script_4583(arg0, "hour", "hours") + " and " + intToStr(arg2) + " " + script_4583(arg0, "minute", "minutes");
+			}
+			return intToStr(arg0) + " " + script_4583(arg0, "day", "days") + " and " + intToStr(arg1) + " " + script_4583(arg0, "hour", "hours");
+		}
+		if (arg2 > 0) {
+			return intToStr(arg0) + " " + script_4583(arg0, "day", "days") + " and " + intToStr(arg2) + " " + script_4583(arg0, "minute", "minutes");
+		}
+		return intToStr(arg0) + " " + script_4583(arg0, "day", "days");
+	}
+	if (arg1 > 0) {
+		if (arg2 > 0) {
+			return script_4583(arg0, "hour", "hours") + " and " + intToStr(arg2) + " " + script_4583(arg0, "minute", "minutes");
+		}
+		return intToStr(arg1) + " " + script_4583(arg0, "hour", "hours");
+	}
+	if (arg2 > 0) {
+		return intToStr(arg2) + " " + script_4583(arg0, "minute", "minutes");
+	}
+	return "";
+}

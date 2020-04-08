@@ -1,0 +1,33 @@
+void script_4654(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	if ((arg0 == -1) || (arg1 == -1)) {
+		return;
+	}
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 11337808;
+	if (((boolean)bitconfig_9306)) {
+		ivar5 = 11337808;
+	}
+	if (bitconfig_9306 == 2) {
+		ivar5 = 11337789;
+	}
+	if (bitconfig_9306 == 4) {
+		if (((boolean)bitconfig_9367)) {
+			ivar5 = 11337735;
+		}
+		if (bitconfig_9367 == 2) {
+			ivar5 = 11337766;
+		}
+		if (bitconfig_9367 == 3) {
+			ivar5 = 11337769;
+		}
+	}
+	createExtraChild(new WidgetPointer(ivar5), 5, 0);
+	setWidgetSprite(2825);
+	setWidgetPosition(add(add(multiply(arg0, 32), 10), ivar3), add(add(multiply(arg1, 32), 10), ivar4), 0, 2);
+	setWidgetSize(11, 11, 0, 0);
+	return;
+}

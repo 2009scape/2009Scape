@@ -1,0 +1,158 @@
+cs2func_script_4217_struct(2,0,0) script_4217() {
+	int ivar0;
+	int ivar1;
+	int stack_dump0;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar0 = add(ivar0, getSkillXp(7));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(12));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(11));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(10));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(6));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(14));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(5));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(4));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(20));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(13));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(8));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(16));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(15));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(9));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(17));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(18));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(0));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(1));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(2));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(3));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(19));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(22));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(21));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(23));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	ivar0 = add(ivar0, getSkillXp(24));
+	if (ivar0 > 1000000000) {
+		stack_dump0 = add(ivar1, 1);
+		ivar0 = subtract(ivar0, 1000000000);
+		ivar1 = stack_dump0;
+	}
+	return newstruct cs2func_script_4217_struct(ivar0, ivar1);
+}

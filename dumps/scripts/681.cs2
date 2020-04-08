@@ -1,0 +1,30 @@
+void script_681(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	cs2method2100(0, 0, new WidgetPointer(arg0));
+	deleteAllExtraChilds(new WidgetPointer(arg1));
+	deleteAllExtraChilds(new WidgetPointer(arg2));
+	setWidgetText(new WidgetPointer(arg4), "Gravestones");
+	setWidgetText(new WidgetPointer(arg5), "Please make your selection from the list.");
+	setWidgetText(new WidgetPointer(arg3), "");
+	script_682(arg0, 0, 0, arg2, arg3, arg4, arg5);
+	ivar6 = 1;
+	ivar7 = 0;
+	while (ivar7 <= 26) {
+		if (isBitFlagged(bitconfig_4191, ivar7)) {
+			script_682(arg0, add(ivar7, 1), ivar6, arg2, arg3, arg4, arg5);
+			ivar6 = add(ivar6, 1);
+		}
+		ivar7 = add(ivar7, 1);
+	}
+	ivar8 = divide(subtract(getWidgetActualWidth(new WidgetPointer(arg0)), 164), 2);
+	ivar9 = add(ivar8, multiply(add(146, ivar8), ivar6));
+	if (ivar9 > getWidgetActualHeight(new WidgetPointer(arg0))) {
+		setWidgetScrollMax(0, ivar9, new WidgetPointer(arg0));
+		script_31(arg1, arg0, 792, 789, 790, 791, 773, 788);
+	}
+	return;
+}

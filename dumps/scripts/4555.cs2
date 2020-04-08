@@ -1,0 +1,53 @@
+void script_4555(int arg0,int arg1) {
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	int stack_dump3;
+	string stack_dump4;
+	cs2func_script_802_struct(1,1,0) structdump_5;
+	if (((cs2method3612() <= 0) || cs2method6900()) || ((boolean)script_5280())) {
+		return;
+	}
+	switch (arg0) {
+		case 84:
+			if (cs2method3612() > 0) {
+				if (strLength(globalstring_349) > 0) {
+					cs2method5006(1);
+					cs2method5008(globalstring_349);
+				}
+			} else {
+				message(11, 0, "You are not in a Friends Chat Channel.");
+			}
+			globalstring_349 = "";
+			setWidgetText(new WidgetPointer(589,27), replaceLtGt(globalstring_349));
+			globalint_1507 = strLength(globalstring_349);
+			script_4571(38600731, 38600732, globalstring_349);
+			break;
+		case 102:
+		case 103:
+		case 98:
+		case 99:
+		case 96:
+		case 97:
+			globalint_1507 = script_1553(arg0, globalint_1507, globalstring_349);
+			script_4571(38600731, 38600732, globalstring_349);
+			break;
+		case 85:
+		case 101:
+		case -1:
+			if ((isValidChar(((char)arg1)) || (arg0 == 85)) || (arg0 == 101)) {
+				stack_dump0 = globalint_1507;
+				stack_dump1 = 0;
+				stack_dump2 = arg0;
+				stack_dump3 = arg1;
+				stack_dump4 = globalstring_349;
+				structdump_5 = script_802(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+				stack_dump4 = structdump_5.stringpart_0;
+				globalint_1507 = structdump_5.intpart_0;
+				globalstring_349 = stack_dump4;
+				setWidgetText(new WidgetPointer(589,27), replaceLtGt(globalstring_349));
+				script_4571(38600731, 38600732, globalstring_349);
+			}
+	}
+	return;
+}

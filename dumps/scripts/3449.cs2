@@ -1,0 +1,5 @@
+void script_3449(int arg0,int arg1) {
+	setItemOnWidgetMethod2200(arg0, 0, new WidgetPointer(519,0));
+	setWidget3DViewDistance(arg1, new WidgetPointer(519,0));
+	return;
+}

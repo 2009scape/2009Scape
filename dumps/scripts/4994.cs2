@@ -1,0 +1,100 @@
+void script_4994() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	int ivar22;
+	int ivar23;
+	int ivar24;
+	int ivar25;
+	int ivar26;
+	int ivar27;
+	string stack_dump0;
+	ivar0 = -1;
+	ivar1 = -1;
+	ivar2 = -1;
+	ivar3 = -1;
+	ivar4 = -1;
+	ivar5 = -1;
+	ivar6 = -1;
+	ivar7 = -1;
+	ivar8 = -1;
+	ivar9 = -1;
+	ivar10 = -1;
+	ivar11 = -1;
+	ivar12 = -1;
+	ivar13 = -1;
+	ivar14 = -1;
+	ivar15 = -1;
+	ivar16 = -1;
+	ivar17 = -1;
+	ivar18 = -1;
+	ivar19 = -1;
+	ivar20 = -1;
+	ivar21 = -1;
+	ivar22 = -1;
+	ivar23 = -1;
+	ivar24 = -1;
+	ivar25 = -1;
+	ivar26 = -1;
+	ivar27 = -1;
+	if (citadelConfigsInitialized()) {
+		ivar0 = script_4948(1);
+		ivar1 = script_4948(2);
+		ivar2 = script_4948(3);
+		ivar3 = script_4948(4);
+		ivar4 = script_4948(7);
+		ivar5 = script_4948(6);
+		ivar6 = script_4948(5);
+		ivar7 = script_4959(ivar0);
+		ivar8 = script_4959(ivar1);
+		ivar9 = script_4959(ivar2);
+		ivar10 = script_4959(ivar3);
+		ivar11 = script_4959(ivar4);
+		ivar12 = script_4959(ivar5);
+		ivar13 = script_4959(ivar6);
+		ivar14 = script_4961(ivar0, 3);
+		ivar15 = script_4961(ivar1, 3);
+		ivar16 = script_4961(ivar2, 3);
+		ivar17 = script_4961(ivar3, 3);
+		ivar18 = script_4961(ivar4, 3);
+		ivar19 = script_4961(ivar5, 3);
+		ivar20 = script_4961(ivar6, 3);
+		ivar21 = script_4953(ivar14);
+		ivar22 = script_4953(ivar15);
+		ivar23 = script_4953(ivar16);
+		ivar24 = script_4953(ivar17);
+		ivar25 = script_4953(ivar18);
+		ivar26 = script_4953(ivar19);
+		ivar27 = script_4953(ivar20);
+		stack_dump0 = "Tier ";
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+				at tests.Main.main(Main.java:45)
+			
+		 */
+	}
+	return;
+}

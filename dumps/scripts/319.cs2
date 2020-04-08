@@ -1,0 +1,89 @@
+void script_319(int arg0,int arg1,int arg2,int arg3,int arg4,string arg5,string arg6,string arg7,string arg8,string arg9,string arg10) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	string svar6;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar5 = 0;
+	ivar6 = 0;
+	setWidgetScrollMax(0, multiply(add(divide(subtract(arg4, arg3), arg1), 1), 57), new WidgetPointer(arg0));
+	ivar7 = 0;
+	ivar8 = 1;
+	ivar9 = 0;
+	ivar10 = 0;
+	ivar11 = -1;
+	svar6 = "hello";
+	ivar12 = 0;
+	globalarray_0 = new int[10];
+	ivar13 = -1;
+	ivar14 = 0;
+	ivar15 = 0;
+	while (ivar7 <= subtract(arg4, arg3)) {
+		flow_1:
+			ivar5 = add(add(16, multiply(mod(ivar7, arg1), 48)), multiply(mod(ivar7, arg1), 5));
+			ivar6 = add(multiply(divide(ivar7, arg1), 52), multiply(divide(ivar7, arg1), 5));
+			createExtraChild(new WidgetPointer(arg0), 5, ivar15);
+			ivar15 = add(ivar15, 1);
+			setWidgetSize(48, 52, 0, 0);
+			setWidgetPosition(ivar5, ivar6, 0, 0);
+			setWidgetSprite(2205);
+			setScriptCallOnMouseEntered(2724, new WidgetPointer(-32768,3), ivar15, 0, "Ii1");
+			setScriptCallOnMouseExit(2724, new WidgetPointer(-32768,3), ivar15, 1, "Ii1");
+			createExtraChild(new WidgetPointer(arg0), 5, ivar15);
+			ivar15 = add(ivar15, 1);
+			setWidgetSize(48, 52, 0, 0);
+			setWidgetPosition(ivar5, ivar6, 0, 0);
+			setWidgetSprite(2206);
+			setWidgetHidden(1);
+			createExtraChild(new WidgetPointer(arg0), 5, ivar15);
+			setWidgetSize(36, 32, 0, 0);
+			setWidgetPosition(add(ivar5, 6), add(ivar6, 4), 0, 0);
+			ivar13 = cs2method_3408(105, 111, 1182, ivar8);
+			ivar14 = cs2method_3408(111, 105, 1185, getRealItem(ivar13));
+			IF (ivar13 == 12292) 
+				GOTO	flow_3
+			GOTO	flow_4
+		flow_3:
+			script_760(ivar13, ivar13, arg0, ivar15, arg5, arg6, arg7, arg8, arg9, arg10);
+			GOTO	flow_8
+		flow_4:
+			IF (getItemAmtInContainer(93, ivar13) > 0) 
+				GOTO	flow_5
+			IF ((getItemAmtInContainer(93, getNotedItem(ivar13)) > 0) && (getSkillActualLvl(23) >= cs2method_3408(105, 105, 1472, ivar14))) 
+				GOTO	flow_6
+			GOTO	flow_7
+		flow_5:
+		flow_6:
+			script_760(ivar13, ivar13, arg0, ivar15, arg5, arg6, arg7, arg8, arg9, arg10);
+			GOTO	flow_8
+		flow_7:
+			script_760(cs2method_3408(105, 111, 1183, ivar8), ivar13, arg0, ivar15, arg5, arg6, arg7, arg8, arg9, arg10);
+		flow_8:
+			ivar15 = add(ivar15, 1);
+			createExtraChild(new WidgetPointer(arg0), 5, ivar15);
+			ivar15 = add(ivar15, 1);
+			setWidgetSize(12, 12, 0, 0);
+			setWidgetPosition(add(ivar5, 2), add(ivar6, 38), 0, 0);
+			setItemOnWidgetMethod1205(12183, 1);
+			createExtraChild(new WidgetPointer(arg0), 4, ivar15);
+			ivar15 = add(ivar15, 1);
+			setWidgetSize(31, 12, 0, 0);
+			setWidgetPosition(add(ivar5, 13), add(ivar6, 39), 0, 0);
+			setWidgetFont(494);
+			setWidgetRGB(new Color(255, 255, 255));
+			setWidgetTextAlignment(2, 1, 0);
+			setWidgetText(script_940(getItemHashmapData(ivar13, 457)));
+			setWidgetUnknownBoolean(true);
+			ivar7 = add(ivar7, 1);
+			ivar8 = add(ivar8, 1);
+	}
+	return;
+}

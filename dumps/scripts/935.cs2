@@ -1,0 +1,17 @@
+int script_935(int arg0) {
+	switch (getItemHashmapData(arg0, 762)) {
+		case 1:
+			if (standart_config_322 < 10) {
+				return 0;
+			}
+			break;
+		case 2:
+			if (bitconfig_4310 < 10) {
+				return 0;
+			}
+			break;
+		default:
+			return 1;
+	}
+	return -1;
+}

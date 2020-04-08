@@ -1,0 +1,91 @@
+void script_2890() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	ivar0 = -1;
+	ivar1 = 0;
+	ivar2 = -1;
+	ivar3 = -1;
+	ivar4 = -1;
+	ivar5 = -1;
+	ivar6 = -1;
+	ivar7 = -1;
+	ivar8 = 1;
+	ivar9 = 0;
+	ivar10 = 31195136;
+	while (ivar8 <= getCommonDefinitionSize(929)) {
+		if ((((ivar8 != globalint_1080) && (ivar8 != globalint_1081)) && ((ivar8 != globalint_1082) && (ivar8 != globalint_1083))) && (((ivar8 != globalint_1084) && (ivar8 != globalint_1085)) && isBitFlagged(standart_config_1632, ivar8))) {
+			ivar0 = cs2method_3408(105, 110, 929, ivar8);
+			if ((ivar0 != -1) && (ivar1 < 6)) {
+				ivar1 = add(ivar1, 1);
+				if (globalint_1080 == -1) {
+					globalint_1080 = ivar8;
+				} else if (globalint_1081 == -1) {
+					globalint_1081 = ivar8;
+				} else if (globalint_1082 == -1) {
+					globalint_1082 = ivar8;
+				} else if (globalint_1083 == -1) {
+					globalint_1083 = ivar8;
+				} else if (globalint_1084 == -1) {
+					globalint_1084 = ivar8;
+				} else {
+					if (globalint_1085 == -1) {
+						globalint_1085 = ivar8;
+					}
+				}
+				ivar0 = -1;
+			}
+		}
+		ivar8 = add(ivar8, 1);
+	}
+	ivar8 = 1;
+	ivar11 = 0;
+	while (ivar8 <= 6) {
+		ivar10 = ((int)cs2method_3408(105, 73, 925, ivar8));
+		if ((ivar10 != 31195136) && (getWidgetSpriteId(new WidgetPointer(ivar10)) == -1)) {
+			switch (ivar8) {
+				case 1:
+					ivar0 = cs2method_3408(105, 110, 929, globalint_1080);
+					break;
+				case 2:
+					ivar0 = cs2method_3408(105, 110, 929, globalint_1081);
+					break;
+				case 3:
+					ivar0 = cs2method_3408(105, 110, 929, globalint_1082);
+					break;
+				case 4:
+					ivar0 = cs2method_3408(105, 110, 929, globalint_1083);
+					break;
+				case 5:
+					ivar0 = cs2method_3408(105, 110, 929, globalint_1084);
+					break;
+				case 6:
+					ivar0 = cs2method_3408(105, 110, 929, globalint_1085);
+			}
+			if (ivar0 != -1) {
+				setWidgetSprite(cs2method_3408(110, 100, 932, ivar0), new WidgetPointer(ivar10));
+				setWidgetText(cs2method_3408(73, 73, 926, ivar10), cs2method_3408(110, 115, 930, ivar0));
+				setScriptCallOnMouseOver(1160, new WidgetPointer(ivar10), -1, new WidgetPointer(476,59), cs2method_3408(110, 115, 930, ivar0), 25, 200, "IiIsii", new WidgetPointer(ivar10));
+				setScriptCallOnMouseExit(40, new WidgetPointer(476,59), "I", new WidgetPointer(ivar10));
+				if ((ivar10 != 31195149) && (ivar10 != 31195150)) {
+					setWidgetIsHidden(false, new WidgetPointer(476,17));
+					setWidgetPosition(getWidgetActualX(new WidgetPointer(ivar10)), getWidgetActualY(new WidgetPointer(ivar10)), 0, 0, new WidgetPointer(476,17));
+					script_1725(31195153);
+					ivar11 = add(getClientCycle(), 150);
+					setScriptCallOnGameloop(2891, ivar11, new WidgetPointer(ivar10), "iI", new WidgetPointer(ivar10));
+				}
+			}
+		}
+		ivar8 = add(ivar8, 1);
+	}
+	return;
+}

@@ -1,0 +1,33 @@
+void script_5088(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg0), add(getWidgetCustomChildArrayIndex(), 4))) {
+		ivar2 = cs2method1609();
+		if (((boolean)arg1)) {
+			ivar2 = max(subtract(ivar2, 22), 0);
+			cs2method2103(ivar2);
+			if (setWidgetRegister(new WidgetPointer(arg0), add(getWidgetCustomChildArrayIndex(), 6))) {
+				cs2method2103(ivar2);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg0), add(getWidgetCustomChildArrayIndex(), 8))) {
+				cs2method2103(ivar2);
+			}
+			if (ivar2 <= 0) {
+				setScriptCallOnGameloop(-1, "");
+			}
+		} else {
+			ivar2 = min(add(ivar2, 22), 255);
+			cs2method2103(ivar2);
+			if (setWidgetRegister(new WidgetPointer(arg0), add(getWidgetCustomChildArrayIndex(), 6))) {
+				cs2method2103(ivar2);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg0), add(getWidgetCustomChildArrayIndex(), 8))) {
+				cs2method2103(ivar2);
+			}
+			if (ivar2 >= 255) {
+				setScriptCallOnGameloop(-1, "");
+			}
+		}
+	}
+	return;
+}

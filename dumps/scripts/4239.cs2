@@ -1,0 +1,5 @@
+void script_4239() {
+	setWidgetBorderThickness(2, new WidgetPointer(1078,23));
+	script_4161(70647825, 0);
+	return;
+}

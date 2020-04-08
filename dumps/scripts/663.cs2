@@ -1,0 +1,24 @@
+void script_663(int arg0,int arg1) {
+	setWidgetFont(764, new WidgetPointer(arg1));
+	setWidgetTextAlignment(1, 1, 0, new WidgetPointer(arg1));
+	if (((boolean)bitconfig_4191)) {
+		setWidgetModel(30184, new WidgetPointer(arg0));
+		setWidget3DRotation(0, 0, 0, 0, 0, 365, new WidgetPointer(arg0));
+		setWidgetPosition(2, 84, 0, 0, new WidgetPointer(arg0));
+		setWidgetSize(509, 156, 0, 0, new WidgetPointer(arg0));
+		setWidgetPosition(15, 89, 0, 0, new WidgetPointer(arg1));
+		setWidgetSize(487, 143, 0, 0, new WidgetPointer(arg1));
+		setWidgetRGB(new Color(script_693(43, 26, 11)), new WidgetPointer(arg1));
+	} else {
+		if (((boolean)bitconfig_4191)) {
+			setWidgetModel(30183, new WidgetPointer(arg0));
+			setWidget3DRotation(0, 0, 0, 0, 0, 344, new WidgetPointer(arg0));
+			setWidgetPosition(3, 90, 0, 0, new WidgetPointer(arg0));
+			setWidgetSize(509, 156, 0, 0, new WidgetPointer(arg0));
+			setWidgetPosition(4, 88, 0, 0, new WidgetPointer(arg1));
+			setWidgetSize(506, 139, 0, 0, new WidgetPointer(arg1));
+			setWidgetRGB(new Color(script_693(85, 85, 65)), new WidgetPointer(arg1));
+		}
+	}
+	return;
+}

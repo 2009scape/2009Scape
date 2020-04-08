@@ -1,0 +1,16 @@
+void script_834(int arg0) {
+	switch (bitconfig_278) {
+		case 1:
+			cs2method2103(200, new WidgetPointer(arg0));
+			break;
+		case 2:
+			cs2method2103(150, new WidgetPointer(arg0));
+			break;
+		case 3:
+			cs2method2103(50, new WidgetPointer(arg0));
+			break;
+		default:
+			cs2method2103(255, new WidgetPointer(arg0));
+	}
+	return;
+}

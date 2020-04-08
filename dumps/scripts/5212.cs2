@@ -1,0 +1,8 @@
+void script_5212(int arg0) {
+	if (bitconfig_9511 == 2000) {
+		setWidgetText(new WidgetPointer(arg0), "<col=ff0000>" + intToStr(bitconfig_9511) + "/" + intToStr(2000) + "</col>");
+	} else {
+		setWidgetText(new WidgetPointer(arg0), "<col=ff981f>" + intToStr(bitconfig_9511) + "/" + intToStr(2000) + "</col>");
+	}
+	return;
+}

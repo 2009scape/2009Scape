@@ -1,0 +1,13 @@
+void script_2527() {
+	script_2529();
+	script_2531();
+	script_2533();
+	script_2535();
+	script_2537();
+	script_2539();
+	script_2541();
+	script_2543();
+	script_2545();
+	script_2547();
+	return;
+}

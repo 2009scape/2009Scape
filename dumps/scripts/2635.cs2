@@ -1,0 +1,20 @@
+void script_2635() {
+	globalint_904 = 0;
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(859,2));
+	setWidgetSprite(1914, new WidgetPointer(859,2));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(859,8));
+	setWidgetSprite(1915, new WidgetPointer(859,8));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(859,7));
+	setWidgetSprite(1916, new WidgetPointer(859,7));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(859,22));
+	setWidgetSprite(1917, new WidgetPointer(859,22));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(859,23));
+	setWidgetSprite(1921, new WidgetPointer(859,23));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(859,6));
+	setWidgetSprite(1918, new WidgetPointer(859,6));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(859,20));
+	setWidgetSprite(1919, new WidgetPointer(859,20));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(859,21));
+	setWidgetSprite(1920, new WidgetPointer(859,21));
+	return;
+}

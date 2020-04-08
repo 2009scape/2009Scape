@@ -1,0 +1,5 @@
+void script_1335(int arg0,int arg1,int arg2) {
+	globalint_1098 = script_1401(arg0, 494, getWidgetActualX(new WidgetPointer(arg1)), globalstring_278);
+	script_1390(arg1, arg2, globalstring_278);
+	return;
+}

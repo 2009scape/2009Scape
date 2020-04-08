@@ -1,0 +1,5 @@
+void script_1462(int arg0) {
+	setWidgetIsHidden(true, cs2method_3408(105, 73, 1614, arg0));
+	setWidgetIsHidden(true, cs2method_3408(105, 73, 1615, arg0));
+	return;
+}

@@ -1,0 +1,4 @@
+void script_684(int arg0,int arg1) {
+	setWidgetPosition(add(getWidgetActualX(), arg0), add(getWidgetActualY(), arg1), 0, 0);
+	return;
+}

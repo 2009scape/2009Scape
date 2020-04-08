@@ -1,0 +1,10 @@
+void script_1560(int arg0) {
+	if ((((boolean)arg0) && (isWidgetOpen(new WidgetPointer(752,10)) || isWidgetOpen(new WidgetPointer(752,11)))) && (((((((((boolean)cs2method5004(0)) || (cs2method5004(0) == 4)) || (cs2method5004(0) == 27)) || (cs2method5004(0) == 28)) || (cs2method5004(0) == 29)) || (cs2method5004(0) == 26)) || (cs2method5004(0) == 30)) || (cs2method5004(0) == 31))) {
+		script_1561();
+	}
+	script_84();
+	script_89();
+	script_192();
+	script_178();
+	return;
+}

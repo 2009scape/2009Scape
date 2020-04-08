@@ -1,0 +1,5 @@
+void script_2133(int arg0) {
+	setWidgetAnimation(1, new WidgetPointer(arg0));
+	playSoundEffect(819, 1, 0);
+	return;
+}

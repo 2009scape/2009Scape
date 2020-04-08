@@ -1,0 +1,71 @@
+void script_2744() {
+	int ivar0;
+	ivar0 = 0;
+	while (ivar0 < 31) {
+		createExtraChild(new WidgetPointer(204,86), 4, ivar0);
+		setWidgetSize(46, 20, 0, 0);
+		setWidgetPosition(4, multiply(ivar0, 20), 0, 0);
+		setWidgetFont(496);
+		setWidgetTextAlignment(1, 1, 0);
+		setWidgetText(intToStr(add(ivar0, 1)));
+		setWidgetRGB(new Color(255, 255, 255));
+		setWidgetContextMenuOption(1, "Select");
+		setScriptCallOnClickContextMenu(2748, ivar0, "i");
+		setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), -2147483643, 16723968, "Iii");
+		setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), -2147483643, 16777215, "Iii");
+		ivar0 = add(ivar0, 1);
+	}
+	setWidgetScrollMax(0, multiply(ivar0, 20), new WidgetPointer(204,86));
+	script_31(13369431, 13369430, 792, 789, 790, 791, 773, 788);
+	ivar0 = 0;
+	while (ivar0 < 12) {
+		createExtraChild(new WidgetPointer(204,98), 4, ivar0);
+		setWidgetSize(158, 20, 0, 0);
+		setWidgetPosition(4, multiply(ivar0, 20), 0, 0);
+		setWidgetFont(496);
+		setWidgetTextAlignment(1, 1, 0);
+		setWidgetText(cs2method_3408(105, 115, 950, ivar0));
+		setWidgetRGB(new Color(255, 255, 255));
+		setWidgetContextMenuOption(1, "Select");
+		setScriptCallOnClickContextMenu(2749, ivar0, "i");
+		setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), -2147483643, 16723968, "Iii");
+		setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), -2147483643, 16777215, "Iii");
+		ivar0 = add(ivar0, 1);
+	}
+	setWidgetScrollMax(0, multiply(ivar0, 20), new WidgetPointer(204,98));
+	script_31(13369443, 13369442, 792, 789, 790, 791, 773, 788);
+	ivar0 = 0;
+	while (ivar0 < 90) {
+		createExtraChild(new WidgetPointer(204,110), 4, ivar0);
+		setWidgetSize(70, 20, 0, 0);
+		setWidgetPosition(6, add(multiply(ivar0, 20), 1), 0, 0);
+		setWidgetFont(496);
+		setWidgetTextAlignment(1, 1, 0);
+		setWidgetText(intToStr(subtract(2009, ivar0)));
+		setWidgetRGB(new Color(255, 255, 255));
+		setWidgetContextMenuOption(1, "Select");
+		setScriptCallOnClickContextMenu(2750, ivar0, "i");
+		setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), -2147483643, 16723968, "Iii");
+		setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), -2147483643, 16777215, "Iii");
+		ivar0 = add(ivar0, 1);
+	}
+	setWidgetScrollMax(0, multiply(ivar0, 20), new WidgetPointer(204,110));
+	script_31(13369455, 13369454, 792, 789, 790, 791, 773, 788);
+	setWidgetIsHidden(true, new WidgetPointer(204,86));
+	setWidgetIsHidden(true, new WidgetPointer(204,77));
+	setWidgetIsHidden(true, new WidgetPointer(204,87));
+	setWidgetIsHidden(true, new WidgetPointer(204,98));
+	setWidgetIsHidden(true, new WidgetPointer(204,89));
+	setWidgetIsHidden(true, new WidgetPointer(204,99));
+	setWidgetIsHidden(true, new WidgetPointer(204,110));
+	setWidgetIsHidden(true, new WidgetPointer(204,111));
+	setWidgetIsHidden(true, new WidgetPointer(204,101));
+	setWidgetIsHidden(true, new WidgetPointer(204,26));
+	setWidgetIsHidden(true, new WidgetPointer(204,27));
+	setWidgetIsHidden(true, new WidgetPointer(204,28));
+	setWidgetIsHidden(false, new WidgetPointer(204,29));
+	setWidgetIsHidden(false, new WidgetPointer(204,45));
+	setWidgetIsHidden(false, new WidgetPointer(204,61));
+	setWidgetIsHidden(true, new WidgetPointer(204,113));
+	return;
+}

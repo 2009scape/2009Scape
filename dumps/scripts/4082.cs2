@@ -1,0 +1,12 @@
+void script_4082() {
+	if (setWidgetRegister(new WidgetPointer(1060,0))) {
+		setWidgetSprite(4033);
+	}
+	if (setWidgetRegister(new WidgetPointer(1060,2))) {
+		setWidgetSprite(4036);
+	}
+	if (setWidgetRegister(new WidgetPointer(1060,1))) {
+		setWidgetSprite(4039);
+	}
+	return;
+}

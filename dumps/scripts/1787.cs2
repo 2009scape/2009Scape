@@ -1,0 +1,128 @@
+void script_1787(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,int arg11,int arg12,int arg13,int arg14,int arg15,int arg16) {
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	int ivar22;
+	int ivar23;
+	int ivar24;
+	string svar0;
+	svar0 = "";
+	ivar17 = 0;
+	ivar18 = 0;
+	ivar19 = 0;
+	if (((boolean)globalint_271)) {
+		setWidgetText(new WidgetPointer(arg3), cs2method3611() + ":");
+	} else {
+		setWidgetText(new WidgetPointer(arg3), "This clan:");
+	}
+	setWidgetText(new WidgetPointer(arg5), intToStr(globalint_261));
+	setWidgetText(new WidgetPointer(arg11), intToStr(globalint_262));
+	if (bitconfig_5280 > 0) {
+		if (globalint_263 < 65535) {
+			setWidgetText(new WidgetPointer(arg7), script_46(globalint_263, ","));
+		} else {
+			setWidgetText(new WidgetPointer(arg7), "<col=ff0000>" + "You rock!" + "</col>");
+		}
+		if (globalint_264 < 65535) {
+			setWidgetText(new WidgetPointer(arg13), script_46(globalint_264, ","));
+		} else {
+			setWidgetText(new WidgetPointer(arg13), "<col=ff0000>" + "They rock!" + "</col>");
+		}
+		setWidgetIsHidden(false, new WidgetPointer(arg6));
+		setWidgetIsHidden(false, new WidgetPointer(arg12));
+		setWidgetIsHidden(false, new WidgetPointer(arg7));
+		setWidgetIsHidden(false, new WidgetPointer(arg13));
+		ivar17 = 1;
+		if (bitconfig_5280 < 15) {
+			svar0 = "/ " + script_46(cs2method_3408(105, 105, 1605, bitconfig_5280), ",");
+			setWidgetText(new WidgetPointer(arg8), svar0);
+			setWidgetText(new WidgetPointer(arg14), svar0);
+			setWidgetIsHidden(false, new WidgetPointer(arg8));
+			setWidgetIsHidden(false, new WidgetPointer(arg14));
+			ivar18 = 1;
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(arg8));
+			setWidgetIsHidden(true, new WidgetPointer(arg14));
+		}
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(arg6));
+		setWidgetIsHidden(true, new WidgetPointer(arg12));
+		setWidgetIsHidden(true, new WidgetPointer(arg7));
+		setWidgetIsHidden(true, new WidgetPointer(arg13));
+		setWidgetIsHidden(true, new WidgetPointer(arg8));
+		setWidgetIsHidden(true, new WidgetPointer(arg14));
+	}
+	if (((boolean)globalint_260)) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg16));
+		if (bitconfig_5281 > 0) {
+			setWidgetText(new WidgetPointer(arg15), "Time remaining:");
+			if (globalint_270 > 60) {
+				script_1791(arg16);
+			} else if (globalint_270 > 1) {
+				setWidgetText(new WidgetPointer(arg16), intToStr(globalint_270) + " minutes");
+			} else if (((boolean)globalint_270)) {
+				setWidgetText(new WidgetPointer(arg16), "<col=ff0000>" + "1 minute" + "</col>");
+			} else {
+				setWidgetText(new WidgetPointer(arg16), "<col=ff0000>" + "Not much!" + "</col>");
+			}
+			setWidgetIsHidden(false, new WidgetPointer(arg15));
+			setWidgetIsHidden(false, new WidgetPointer(arg16));
+			ivar19 = 1;
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(arg15));
+			setWidgetIsHidden(true, new WidgetPointer(arg16));
+		}
+	} else {
+		setWidgetText(new WidgetPointer(arg15), "Countdown to battle:");
+		if (globalint_265 != globalint_270) {
+			globalint_265 = globalint_270;
+			script_1790(arg16);
+			setScriptCallOnGameloop(1789, new WidgetPointer(arg16), getClientCycle(), globalint_270, "Iii", new WidgetPointer(arg16));
+		}
+		setWidgetIsHidden(false, new WidgetPointer(arg15));
+		setWidgetIsHidden(false, new WidgetPointer(arg16));
+		ivar19 = 1;
+	}
+	ivar20 = getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg3)));
+	ivar21 = getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg9)));
+	ivar20 = max(add(add(getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg4))), 10), getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg5)))), ivar20);
+	ivar21 = max(add(add(getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg10))), 10), getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg11)))), ivar21);
+	ivar22 = add(getWidgetActualHeight(new WidgetPointer(arg3)), getWidgetActualHeight(new WidgetPointer(arg4)));
+	if (((boolean)ivar17)) {
+		ivar20 = max(add(add(getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg6))), 10), getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg7)))), ivar20);
+		ivar21 = max(add(add(getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg12))), 10), getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg13)))), ivar21);
+		ivar22 = add(ivar22, getWidgetActualHeight(new WidgetPointer(arg6)));
+		if (((boolean)ivar18)) {
+			ivar20 = max(getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg8))), ivar20);
+			ivar21 = max(getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg14))), ivar21);
+			ivar22 = add(ivar22, getWidgetActualHeight(new WidgetPointer(arg8)));
+		}
+	}
+	ivar23 = add(add(ivar20, 10), ivar21);
+	if (((boolean)ivar19)) {
+		setWidgetSize(add(ivar23, 8), add(ivar22, 8), 0, 0, new WidgetPointer(arg0));
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg0)), getWidgetActualHeight(new WidgetPointer(arg0)), 0, 0, new WidgetPointer(arg1));
+		script_1788(ivar20, arg3, arg4, arg5, arg6, arg7, arg8, ivar21, arg9, arg10, arg11, arg12, arg13, arg14, ivar23);
+		setWidgetPosition(add(add(4, ivar20), 5), 4, 0, 0, new WidgetPointer(arg2));
+		setWidgetSize(0, ivar22, 0, 0, new WidgetPointer(arg2));
+		script_1086(arg0, 0, 0, 0);
+		return;
+	}
+	ivar24 = ivar22;
+	ivar22 = add(add(add(ivar22, 10), getWidgetActualHeight(new WidgetPointer(arg15))), getWidgetActualHeight(new WidgetPointer(arg16)));
+	ivar23 = max(getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg15))), ivar23);
+	ivar23 = max(getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg16))), ivar23);
+	setWidgetSize(add(ivar23, 8), add(ivar22, 8), 0, 0, new WidgetPointer(arg0));
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg0)), getWidgetActualHeight(new WidgetPointer(arg0)), 0, 0, new WidgetPointer(arg1));
+	script_1788(ivar20, arg3, arg4, arg5, arg6, arg7, arg8, ivar21, arg9, arg10, arg11, arg12, arg13, arg14, ivar23);
+	setWidgetPosition(add(add(4, ivar20), divide(subtract(ivar23, add(ivar20, ivar21)), 2)), 4, 0, 0, new WidgetPointer(arg2));
+	setWidgetSize(0, ivar24, 0, 0, new WidgetPointer(arg2));
+	setWidgetSize(ivar23, getWidgetActualHeight(new WidgetPointer(arg15)), 0, 0, new WidgetPointer(arg15));
+	setWidgetSize(ivar23, getWidgetActualHeight(new WidgetPointer(arg16)), 0, 0, new WidgetPointer(arg16));
+	setWidgetPosition(4, add(add(4, ivar24), 10), 0, 0, new WidgetPointer(arg15));
+	setWidgetPosition(4, add(add(add(4, ivar24), 10), getWidgetActualHeight(new WidgetPointer(arg15))), 0, 0, new WidgetPointer(arg16));
+	script_1086(arg0, add(add(4, ivar24), 5), 0, 0);
+	return;
+}

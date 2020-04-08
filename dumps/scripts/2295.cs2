@@ -1,0 +1,27 @@
+int script_2295(int arg0) {
+	int ivar1;
+	if (isMember() && ((boolean)script_2294(arg0))) {
+		return 0;
+	}
+	if (((boolean)script_5256())) {
+		playSoundEffect(2673, 1, 0);
+		return 0;
+	}
+	ivar1 = 2279;
+	if (((boolean)bitconfig_6840)) {
+		ivar1 = 863;
+	}
+	if (getSkillActualLvl(5) < getOtherCommonData(cs2method_3408(105, 74, ivar1, arg0), 737)) {
+		playSoundEffect(2673, 1, 0);
+		return 0;
+	}
+	if ((arg0 == 25) && ((getSkillActualLvl(1) < 55) || (bitconfig_3909 != 8))) {
+		playSoundEffect(2673, 1, 0);
+		return 0;
+	}
+	if ((arg0 == 26) && ((getSkillActualLvl(1) < 70) || (bitconfig_3909 != 8))) {
+		playSoundEffect(2673, 1, 0);
+		return 0;
+	}
+	return 1;
+}

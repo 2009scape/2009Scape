@@ -1,0 +1,58 @@
+void script_5195() {
+	setWidgetIsHidden(true, new WidgetPointer(1122,67));
+	setWidgetIsHidden(true, new WidgetPointer(1122,168));
+	setWidgetIsHidden(true, new WidgetPointer(1122,169));
+	setWidgetIsHidden(true, new WidgetPointer(1122,170));
+	setWidgetRGB(new Color(181, 157, 105), new WidgetPointer(1122,69));
+	setWidgetRGB(new Color(120, 102, 75), new WidgetPointer(1122,155));
+	setWidgetRGB(new Color(120, 102, 75), new WidgetPointer(1122,159));
+	setWidgetRGB(new Color(120, 102, 75), new WidgetPointer(1122,163));
+	setWidgetRGB(new Color(120, 102, 75), new WidgetPointer(1122,167));
+	setWidgetSprite(7653, new WidgetPointer(1122,31));
+	setWidgetSprite(7652, new WidgetPointer(1122,153));
+	setWidgetSprite(7652, new WidgetPointer(1122,157));
+	setWidgetSprite(7652, new WidgetPointer(1122,161));
+	setWidgetSprite(7652, new WidgetPointer(1122,165));
+	setWidgetIsHidden(true, new WidgetPointer(1122,32));
+	setWidgetIsHidden(true, new WidgetPointer(1122,154));
+	setWidgetIsHidden(true, new WidgetPointer(1122,158));
+	setWidgetIsHidden(true, new WidgetPointer(1122,162));
+	setWidgetIsHidden(true, new WidgetPointer(1122,166));
+	if (globalint_1595 >= 1) {
+		setWidgetIsHidden(false, new WidgetPointer(1122,67));
+		setWidgetSprite(7653, new WidgetPointer(1122,153));
+		setWidgetRGB(new Color(181, 157, 105), new WidgetPointer(1122,155));
+	}
+	if (globalint_1595 >= 2) {
+		setWidgetIsHidden(false, new WidgetPointer(1122,168));
+		setWidgetSprite(7653, new WidgetPointer(1122,157));
+		setWidgetRGB(new Color(181, 157, 105), new WidgetPointer(1122,159));
+	}
+	if (globalint_1595 >= 3) {
+		setWidgetIsHidden(false, new WidgetPointer(1122,169));
+		setWidgetSprite(7653, new WidgetPointer(1122,161));
+		setWidgetRGB(new Color(181, 157, 105), new WidgetPointer(1122,163));
+	}
+	if (globalint_1595 >= 4) {
+		setWidgetIsHidden(false, new WidgetPointer(1122,170));
+		setWidgetSprite(7653, new WidgetPointer(1122,165));
+		setWidgetRGB(new Color(181, 157, 105), new WidgetPointer(1122,167));
+	}
+	switch (globalint_1595) {
+		case 0:
+			setWidgetIsHidden(false, new WidgetPointer(1122,32));
+			break;
+		case 1:
+			setWidgetIsHidden(false, new WidgetPointer(1122,154));
+			break;
+		case 2:
+			setWidgetIsHidden(false, new WidgetPointer(1122,158));
+			break;
+		case 3:
+			setWidgetIsHidden(false, new WidgetPointer(1122,162));
+			break;
+		case 4:
+			setWidgetIsHidden(false, new WidgetPointer(1122,166));
+	}
+	return;
+}

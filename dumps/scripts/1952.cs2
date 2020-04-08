@@ -1,0 +1,17 @@
+void script_1952() {
+	int ivar0;
+	int ivar1;
+	ivar0 = -1;
+	ivar1 = -1;
+	if (getDisplayMode() < 2) {
+		ivar0 = 35913744;
+		ivar1 = 35913953;
+	} else {
+		ivar0 = 48889872;
+		ivar1 = 48890023;
+	}
+	setWidgetText(new WidgetPointer(ivar1), "");
+	setWidgetIsHidden(true, new WidgetPointer(ivar0));
+	globalint_2 = 0;
+	return;
+}

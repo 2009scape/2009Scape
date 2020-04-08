@@ -1,0 +1,32 @@
+void script_4424(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	ivar4 = divide(add(arg2, arg3), 2);
+	ivar5 = globalarray_0[ivar4];
+	globalarray_0[ivar4] = globalarray_0[arg3];
+	globalarray_0[arg3] = ivar5;
+	ivar6 = arg2;
+	ivar7 = arg2;
+	ivar8 = -1;
+	while (ivar7 < arg3) {
+		if ((setWidgetRegister(new WidgetPointer(arg1), ivar5) && setWidgetRegister(new WidgetPointer(arg1), globalarray_0[ivar7])) && (stringMethod4107(lower(getWidgetText()), lower(getWidgetText())) < bitAnd(ivar7, 1))) {
+			ivar8 = globalarray_0[ivar7];
+			globalarray_0[ivar7] = globalarray_0[ivar6];
+			globalarray_0[ivar6] = ivar8;
+			ivar6 = add(ivar6, 1);
+		}
+		ivar7 = add(ivar7, 1);
+	}
+	globalarray_0[arg3] = globalarray_0[ivar6];
+	globalarray_0[ivar6] = ivar5;
+	if (arg2 < subtract(ivar6, 1)) {
+		script_4424(0, arg1, arg2, subtract(ivar6, 1));
+	}
+	if (add(ivar6, 1) < arg3) {
+		script_4424(0, arg1, add(ivar6, 1), arg3);
+	}
+	return;
+}

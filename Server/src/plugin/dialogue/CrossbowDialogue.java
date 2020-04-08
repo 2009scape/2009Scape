@@ -1,3 +1,4 @@
+/*
 package plugin.dialogue;
 
 import org.crandor.game.content.dialogue.DialoguePlugin;
@@ -8,37 +9,49 @@ import org.crandor.game.node.entity.player.link.RunScript;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.game.node.item.Item;
 
+*/
 /**
  * Represents the dialogue plugin used for the crossbow.
  * @author 'Vexia
  * @version 1.0
- */
+ *//*
+
 @InitializablePlugin
 public final class CrossbowDialogue extends DialoguePlugin {
 
-	/**
+	*/
+/**
 	 * Represents the item used.
-	 */
+	 *//*
+
 	private Item item;
 
-	/**
+	*/
+/**
 	 * The string cross.
-	 */
+	 *//*
+
 	private StringCross cross;
 
-	/**
+	*/
+/**
 	 * Constructs a new {@code CrossbowDialogue} {@code Object}.
-	 */
+	 *//*
+
 	public CrossbowDialogue() {
-		/**
+		*/
+/**
 		 * empty.
-		 */
+		 *//*
+
 	}
 
-	/**
+	*/
+/**
 	 * Constructs a new {@code CrossbowDialogue.java} {@code Object}.
 	 * @param player
-	 */
+	 *//*
+
 	public CrossbowDialogue(Player player) {
 		super(player);
 	}
@@ -100,3 +113,4 @@ public final class CrossbowDialogue extends DialoguePlugin {
 		return new int[] { 92747 };
 	}
 }
+*/

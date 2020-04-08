@@ -1,0 +1,17 @@
+void script_4686() {
+	if (globalint_1538 >= 160) {
+		return;
+	}
+	if (((boolean)globalint_1539)) {
+		globalint_1538 = 160;
+		setWidgetPosition(0, 75, 0, 0, new WidgetPointer(447,15));
+		return;
+	}
+	if (globalint_1538 == 158) {
+		setWidgetIsHidden(true, new WidgetPointer(447,15));
+	} else {
+		setWidgetPosition(subtract(-2, globalint_1538), 75, 0, 0, new WidgetPointer(447,15));
+		globalint_1538 = add(globalint_1538, 2);
+	}
+	return;
+}

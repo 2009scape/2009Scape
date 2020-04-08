@@ -1,0 +1,5 @@
+int script_4077(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = script_284(getMyPositionHash());
+	return addToCoordinate(ivar2, arg0, 0, arg1);
+}

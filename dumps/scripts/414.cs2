@@ -1,0 +1,48 @@
+void script_414(int arg0) {
+	setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(1013,19));
+	setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(1013,18));
+	setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(1013,20));
+	setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(1013,21));
+	setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(1013,17));
+	setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(1013,15));
+	setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(1013,16));
+	setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(1013,14));
+	switch (arg0) {
+		case 66387971:
+			setWidgetIsHidden(false, new WidgetPointer(1013,19));
+			break;
+		case 66387973:
+			setWidgetIsHidden(false, new WidgetPointer(1013,18));
+			break;
+		case 66387970:
+			setWidgetIsHidden(false, new WidgetPointer(1013,20));
+			break;
+		case 66387972:
+			setWidgetIsHidden(false, new WidgetPointer(1013,21));
+			break;
+		case 66387978:
+			setWidgetIsHidden(false, new WidgetPointer(1013,17));
+			break;
+		case 66387979:
+			setWidgetIsHidden(false, new WidgetPointer(1013,17));
+			break;
+		case 66387980:
+			setWidgetIsHidden(false, new WidgetPointer(1013,15));
+			break;
+		case 66387981:
+			setWidgetIsHidden(false, new WidgetPointer(1013,15));
+			break;
+		case 66387974:
+			setWidgetIsHidden(false, new WidgetPointer(1013,16));
+			break;
+		case 66387975:
+			setWidgetIsHidden(false, new WidgetPointer(1013,16));
+			break;
+		case 66387976:
+			setWidgetIsHidden(false, new WidgetPointer(1013,14));
+			break;
+		case 66387977:
+			setWidgetIsHidden(false, new WidgetPointer(1013,14));
+	}
+	return;
+}

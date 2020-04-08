@@ -1,0 +1,39 @@
+void script_4996(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	ivar1 = -1;
+	ivar2 = -1;
+	ivar3 = 0;
+	ivar4 = -1;
+	ivar5 = -1;
+	ivar6 = -1;
+	setWidgetIsHidden(false, new WidgetPointer(1092,289));
+	if (citadelConfigsInitialized()) {
+		script_4899(1);
+		ivar2 = script_4963(arg0);
+		bitconfig_9550 = ivar2;
+		if (ivar2 <= 0) {
+			messageType0("You must first select a building.");
+			return;
+		}
+		ivar1 = script_4948(ivar2);
+		ivar4 = script_4954(ivar2);
+		if (ivar4 == -1) {
+			return;
+		}
+		ivar5 = script_4955(ivar2);
+		if (ivar5 == -1) {
+			return;
+		}
+		if (ivar1 > 0) {
+			ivar3 = script_4959(ivar1);
+		}
+		script_4988(bitconfig_9550);
+		script_4937();
+	}
+	return;
+}

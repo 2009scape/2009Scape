@@ -1,0 +1,66 @@
+void script_376(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6) {
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int stack_dump0;
+	if (arg1 == -1) {
+		createExtraChild(new WidgetPointer(arg0), 3, arg6);
+		setWidgetHidden(1);
+		createExtraChild(new WidgetPointer(arg0), 3, add(arg6, 1));
+		setWidgetHidden(1);
+		createExtraChild(new WidgetPointer(arg0), 3, add(arg6, 2));
+		setWidgetHidden(1);
+		createExtraChild(new WidgetPointer(arg0), 3, add(arg6, 3));
+		setWidgetHidden(1);
+		createExtraChild(new WidgetPointer(arg0), 3, add(arg6, 4));
+		setWidgetHidden(1);
+		createExtraChild(new WidgetPointer(arg0), 3, add(arg6, 5));
+		setWidgetHidden(1);
+		return;
+	}
+	ivar7 = 0;
+	ivar8 = 0;
+	ivar9 = 0;
+	ivar10 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg1), arg2) || ((arg2 == -1) && setWidgetRegister(new WidgetPointer(arg1)))) {
+		stack_dump0 = subtract(getWidgetActualX(), arg5);
+		ivar8 = subtract(getWidgetActualY(), arg5);
+		ivar7 = stack_dump0;
+		ivar9 = min(add(getWidgetActualWidth(), multiply(arg5, 2)), getWidgetActualWidth(new WidgetPointer(arg0)));
+		ivar10 = add(getWidgetActualHeight(), multiply(arg5, 2));
+	} else {
+		return;
+	}
+	createExtraChild(new WidgetPointer(arg0), 3, arg6);
+	setWidgetSize(subtract(ivar9, 2), 2, 0, 0);
+	setWidgetPosition(add(ivar7, 1), ivar8, 0, 0);
+	setWidgetFilled(1);
+	setWidgetRGB(new Color(arg3));
+	createExtraChild(new WidgetPointer(arg0), 3, add(arg6, 1));
+	setWidgetSize(subtract(ivar9, 2), 2, 0, 0);
+	setWidgetPosition(add(ivar7, 1), subtract(add(ivar8, ivar10), 2), 0, 0);
+	setWidgetFilled(1);
+	setWidgetRGB(new Color(arg4));
+	createExtraChild(new WidgetPointer(arg0), 3, add(arg6, 2));
+	setWidgetSize(2, subtract(ivar10, 2), 0, 0);
+	setWidgetPosition(ivar7, add(ivar8, 1), 0, 0);
+	setWidgetFilled(1);
+	setWidgetRGB(new Color(arg4));
+	createExtraChild(new WidgetPointer(arg0), 3, add(arg6, 3));
+	setWidgetSize(2, subtract(ivar10, 2), 0, 0);
+	setWidgetPosition(subtract(add(ivar7, ivar9), 2), add(ivar8, 1), 0, 0);
+	setWidgetFilled(1);
+	setWidgetRGB(new Color(arg4));
+	createExtraChild(new WidgetPointer(arg0), 3, add(arg6, 4));
+	setWidgetSize(2, divide(subtract(ivar10, 2), 2), 0, 0);
+	setWidgetPosition(ivar7, add(ivar8, 1), 0, 0);
+	setWidgetFilled(1);
+	setWidgetRGB(new Color(arg3));
+	createExtraChild(new WidgetPointer(arg0), 3, add(arg6, 5));
+	setWidgetSize(2, divide(subtract(ivar10, 2), 2), 0, 0);
+	setWidgetPosition(subtract(add(ivar7, ivar9), 2), add(ivar8, 1), 0, 0);
+	setWidgetFilled(1);
+	setWidgetRGB(new Color(arg3));
+	return;
+}

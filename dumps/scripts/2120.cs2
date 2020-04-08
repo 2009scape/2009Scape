@@ -1,0 +1,42 @@
+void script_2120(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	if (arg0 != 1) {
+		return;
+	}
+	ivar5 = 0;
+	while (ivar5 < getItemContainerLength(307)) {
+		if (setWidgetRegister(new WidgetPointer(arg1), multiply(ivar5, 7))) {
+			if (ivar5 == arg2) {
+				cs2method2103(100);
+			} else {
+				cs2method2103(200);
+			}
+		}
+		ivar5 = add(ivar5, 1);
+	}
+	setWidgetText(new WidgetPointer(arg4), "Confirm:" + "<br>" + cs2method_3408(105, 115, 2238, arg2));
+	deleteAllExtraChilds(new WidgetPointer(arg3));
+	ivar6 = 833;
+	ivar5 = 0;
+	while (ivar5 < getItemContainerLength(307)) {
+		if (ivar5 == arg2) {
+			createExtraChild(new WidgetPointer(arg3), 5, ivar5);
+			setWidgetSize(90, 56, 0, 0);
+			setWidgetPosition(0, 0, 0, 0);
+			setWidgetSprite(ivar6);
+			setWidgetHidden(0);
+			setScriptCallOnMouseExit(688, new WidgetPointer(-32768,3), -2147483643, ivar6, "Iid");
+			ivar6 = 834;
+			setScriptCallOnMouseEntered(688, new WidgetPointer(-32768,3), -2147483643, ivar6, "Iid");
+			setWidgetContextMenuOption(1, "Confirm");
+			return;
+		}
+		createExtraChild(new WidgetPointer(arg3), 3, ivar5);
+		setWidgetPosition(-1, -1, 0, 0);
+		setWidgetSize(0, 0, 0, 0);
+		setWidgetHidden(1);
+		ivar5 = add(ivar5, 1);
+	}
+	return;
+}

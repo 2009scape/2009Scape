@@ -1,0 +1,4 @@
+void script_146(int arg0) {
+	script_147(arg0, getClientCycle());
+	return;
+}

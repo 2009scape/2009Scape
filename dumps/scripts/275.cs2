@@ -1,0 +1,10 @@
+void script_275() {
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(919,1)), 75, 0, 0, new WidgetPointer(919,1));
+	setScriptCallOnClickContextMenu(272, "", new WidgetPointer(919,23));
+	setWidgetText(new WidgetPointer(919,31), "Show All");
+	deleteAllExtraChilds(new WidgetPointer(919,5));
+	setWidgetVFlip(0, new WidgetPointer(919,29));
+	setWidgetVFlip(0, new WidgetPointer(919,30));
+	cs2method2100(0, 0, new WidgetPointer(919,6));
+	return;
+}

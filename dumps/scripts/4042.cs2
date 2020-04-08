@@ -1,0 +1,83 @@
+void script_4042() {
+	switch (bitconfig_8648) {
+		case 1:
+			setWidgetPosition(-130, 0, 1, 0, cs2method_3408(105, 73, 755, 1));
+			break;
+		case 2:
+			setWidgetPosition(-130, 0, 1, 0, cs2method_3408(105, 73, 755, 2));
+			break;
+		case 3:
+			setWidgetPosition(-130, 0, 1, 0, cs2method_3408(105, 73, 755, 3));
+			break;
+		case 4:
+			setWidgetPosition(-130, 0, 1, 0, cs2method_3408(105, 73, 755, 4));
+			break;
+		case 5:
+			setWidgetPosition(-130, 0, 1, 0, cs2method_3408(105, 73, 755, 5));
+	}
+	switch (bitconfig_8649) {
+		case 1:
+			setWidgetPosition(-65, 0, 1, 0, cs2method_3408(105, 73, 755, 1));
+			break;
+		case 2:
+			setWidgetPosition(-65, 0, 1, 0, cs2method_3408(105, 73, 755, 2));
+			break;
+		case 3:
+			setWidgetPosition(-65, 0, 1, 0, cs2method_3408(105, 73, 755, 3));
+			break;
+		case 4:
+			setWidgetPosition(-65, 0, 1, 0, cs2method_3408(105, 73, 755, 4));
+			break;
+		case 5:
+			setWidgetPosition(-65, 0, 1, 0, cs2method_3408(105, 73, 755, 5));
+	}
+	switch (bitconfig_8650) {
+		case 1:
+			setWidgetPosition(0, 0, 1, 0, cs2method_3408(105, 73, 755, 1));
+			break;
+		case 2:
+			setWidgetPosition(0, 0, 1, 0, cs2method_3408(105, 73, 755, 2));
+			break;
+		case 3:
+			setWidgetPosition(0, 0, 1, 0, cs2method_3408(105, 73, 755, 3));
+			break;
+		case 4:
+			setWidgetPosition(0, 0, 1, 0, cs2method_3408(105, 73, 755, 4));
+			break;
+		case 5:
+			setWidgetPosition(0, 0, 1, 0, cs2method_3408(105, 73, 755, 5));
+	}
+	switch (bitconfig_8651) {
+		case 1:
+			setWidgetPosition(65, 0, 1, 0, cs2method_3408(105, 73, 755, 1));
+			break;
+		case 2:
+			setWidgetPosition(65, 0, 1, 0, cs2method_3408(105, 73, 755, 2));
+			break;
+		case 3:
+			setWidgetPosition(65, 0, 1, 0, cs2method_3408(105, 73, 755, 3));
+			break;
+		case 4:
+			setWidgetPosition(65, 0, 1, 0, cs2method_3408(105, 73, 755, 4));
+			break;
+		case 5:
+			setWidgetPosition(65, 0, 1, 0, cs2method_3408(105, 73, 755, 5));
+	}
+	switch (bitconfig_8652) {
+		case 1:
+			setWidgetPosition(130, 0, 1, 0, cs2method_3408(105, 73, 755, 1));
+			break;
+		case 2:
+			setWidgetPosition(130, 0, 1, 0, cs2method_3408(105, 73, 755, 2));
+			break;
+		case 3:
+			setWidgetPosition(130, 0, 1, 0, cs2method_3408(105, 73, 755, 3));
+			break;
+		case 4:
+			setWidgetPosition(130, 0, 1, 0, cs2method_3408(105, 73, 755, 4));
+			break;
+		case 5:
+			setWidgetPosition(130, 0, 1, 0, cs2method_3408(105, 73, 755, 5));
+	}
+	return;
+}

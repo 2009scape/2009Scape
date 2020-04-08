@@ -1,0 +1,6 @@
+int script_1714(int arg0,int arg1) {
+	if (getSkillActualLvl(arg0) != 0) {
+		return divide(multiply(arg1, 100), getSkillActualLvl(arg0));
+	}
+	return 0;
+}

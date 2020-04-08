@@ -1,0 +1,9 @@
+void script_2050(int arg0,int arg1) {
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		setWidgetHidden(1);
+	} else {
+		createExtraChild(new WidgetPointer(arg0), 5, arg1);
+		setWidgetHidden(1);
+	}
+	return;
+}

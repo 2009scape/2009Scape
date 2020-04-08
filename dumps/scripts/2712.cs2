@@ -1,0 +1,15 @@
+void script_2712(int arg0,int arg1,int arg2) {
+	int ivar3;
+	if (getClientCycle() < globalint_177) {
+		return;
+	}
+	globalint_176 = add(globalint_176, 2);
+	ivar3 = mod(globalint_176, 10);
+	if (ivar3 != 2) {
+		globalint_176 = add(subtract(globalint_176, ivar3), 2);
+	}
+	setWidgetIsHidden(false, new WidgetPointer(arg0));
+	setScriptCallOnGameloop(1249, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), "III", new WidgetPointer(arg0));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(arg1));
+	return;
+}

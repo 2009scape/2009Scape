@@ -1,0 +1,6 @@
+void script_4335(int arg0) {
+	if (cs2method3700()) {
+		script_4336(arg0);
+	}
+	return;
+}

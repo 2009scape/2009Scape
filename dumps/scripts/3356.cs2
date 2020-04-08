@@ -1,0 +1,24 @@
+void script_3356(int arg0,int arg1,int arg2) {
+	int ivar3;
+	ivar3 = getItemIdInSlotSplit(arg2, arg1);
+	if (ivar3 == -1) {
+		setItemOnWidgetMethod2200(-1, 0, new WidgetPointer(arg0));
+		setWidgetSize(32, 32, 0, 0, new WidgetPointer(arg0));
+		setWidgetPosition(0, 0, 1, 1, new WidgetPointer(arg0));
+		setWidgetSprite(cs2method_3408(105, 100, 796, arg1), new WidgetPointer(arg0));
+		setWidgetBorderThickness(0, new WidgetPointer(arg0));
+		setWidgetShadowColor(new Color(0, 0, 0), new WidgetPointer(arg0));
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(arg0));
+		setWidgetNoOptions(new WidgetPointer(arg0));
+		return;
+	}
+	setWidgetSize(36, 32, 0, 0, new WidgetPointer(arg0));
+	setWidgetPosition(2, 0, 0, 1, new WidgetPointer(arg0));
+	setItemOnWidgetMethod2200(ivar3, getItemAmtInSlotSplit(arg2, arg1), new WidgetPointer(arg0));
+	setWidgetBorderThickness(1, new WidgetPointer(arg0));
+	setWidgetShadowColor(new Color(48, 32, 32), new WidgetPointer(arg0));
+	setWidgetNoOptions(new WidgetPointer(arg0));
+	setWidgetContextMenuOption(10, new WidgetPointer(arg0), "Examine" + "<col=ff9040>");
+	cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + getItemName(ivar3));
+	return;
+}

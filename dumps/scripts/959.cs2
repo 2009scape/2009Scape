@@ -1,0 +1,112 @@
+void script_959(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	string svar0;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	globalarray_0 = new WidgetPointer[64];
+	ivar3 = 0;
+	ivar4 = -1;
+	ivar5 = 0;
+	while (ivar5 < 64) {
+		ivar4 = ((int)cs2method_3408(105, 73, 1467, ivar5));
+		if (strLength(getWidgetText(new WidgetPointer(ivar4))) > 0) {
+			setWidgetIsHidden(false, new WidgetPointer(ivar4));
+			globalarray_0[ivar3] = ivar4;
+			ivar3 = add(ivar3, 1);
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(ivar4));
+		}
+		ivar5 = add(ivar5, 1);
+	}
+	if (ivar3 > 1) {
+		if (((boolean)arg2)) {
+			script_0(0, 0, subtract(ivar3, 1));
+		} else {
+			script_62(0, 0, subtract(ivar3, 1), 1466);
+		}
+	}
+	ivar6 = 0;
+	ivar7 = 0;
+	ivar8 = getWidgetActualWidth(new WidgetPointer(ivar4));
+	ivar5 = 0;
+	while (ivar5 < ivar3) {
+		ivar4 = globalarray_0[ivar5];
+		ivar7 = getLineCount(ivar8, 495, getWidgetText(new WidgetPointer(ivar4)));
+		ivar7 = add(multiply(12, ivar7), 10);
+		setWidgetFont(495, new WidgetPointer(ivar4));
+		setWidgetSize(ivar8, ivar7, 0, 0, new WidgetPointer(ivar4));
+		setWidgetPosition(0, ivar6, 0, 0, new WidgetPointer(ivar4));
+		createExtraChild(new WidgetPointer(arg0), 4, ivar5);
+		setWidgetSize(ivar8, ivar7, 0, 0);
+		setWidgetPosition(0, ivar6, 0, 0);
+		setWidgetFont(495);
+		setWidgetRGB(new Color(223, 15, 15));
+		setWidgetUnknownBoolean(true);
+		setWidgetTextAlignment(0, 0, 0);
+		setWidgetText(cs2method_3408(73, 115, 1466, ivar4));
+		ivar6 = add(ivar6, ivar7);
+		ivar5 = add(ivar5, 1);
+	}
+	ivar4 = ((int)cs2method_3408(105, 73, 1467, 64));
+	svar0 = getWidgetText(new WidgetPointer(ivar4));
+	if (strLength(svar0) > 0) {
+		if (ivar6 > 0) {
+			ivar6 = add(ivar6, 5);
+		}
+		ivar7 = getLineCount(ivar8, 495, svar0);
+		ivar7 = add(multiply(12, ivar7), 5);
+		setWidgetSize(ivar8, ivar7, 0, 0, new WidgetPointer(ivar4));
+		setWidgetPosition(0, ivar6, 0, 0, new WidgetPointer(ivar4));
+		setWidgetIsHidden(false, new WidgetPointer(ivar4));
+		ivar6 = add(ivar6, ivar7);
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(ivar4));
+	}
+	ivar4 = ((int)cs2method_3408(105, 73, 1467, 65));
+	svar0 = getWidgetText(new WidgetPointer(ivar4));
+	if (strLength(svar0) > 0) {
+		if (ivar6 > 0) {
+			ivar6 = add(ivar6, 5);
+		}
+		ivar7 = getLineCount(ivar8, 495, svar0);
+		ivar7 = add(multiply(12, ivar7), 5);
+		setWidgetSize(ivar8, ivar7, 0, 0, new WidgetPointer(ivar4));
+		setWidgetPosition(0, ivar6, 0, 0, new WidgetPointer(ivar4));
+		setWidgetIsHidden(false, new WidgetPointer(ivar4));
+		ivar6 = add(ivar6, ivar7);
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(ivar4));
+	}
+	ivar4 = ((int)cs2method_3408(105, 73, 1467, 66));
+	svar0 = getWidgetText(new WidgetPointer(ivar4));
+	if (strLength(svar0) > 0) {
+		if (ivar6 > 0) {
+			ivar6 = add(ivar6, 5);
+		}
+		ivar7 = getLineCount(ivar8, 495, svar0);
+		ivar7 = add(multiply(12, ivar7), 5);
+		setWidgetSize(ivar8, ivar7, 0, 0, new WidgetPointer(ivar4));
+		setWidgetPosition(0, ivar6, 0, 0, new WidgetPointer(ivar4));
+		setWidgetIsHidden(false, new WidgetPointer(ivar4));
+		ivar6 = add(ivar6, ivar7);
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(ivar4));
+	}
+	setWidgetScrollMax(ivar8, ivar6, new WidgetPointer(arg0));
+	if (ivar6 > getWidgetActualHeight(new WidgetPointer(arg0))) {
+		setWidgetPosition(3, getWidgetActualY(new WidgetPointer(arg0)), 0, 0, new WidgetPointer(arg0));
+		script_31(arg1, arg0, 792, 789, 790, 791, 773, 788);
+		if (setWidgetRegister(new WidgetPointer(arg1), 1)) {
+			script_157(arg1, arg0, globalint_121, 1);
+		}
+	} else {
+		cs2method2100(0, 0, new WidgetPointer(arg0));
+		globalint_121 = 0;
+		setWidgetPosition(12, getWidgetActualY(new WidgetPointer(arg0)), 0, 0, new WidgetPointer(arg0));
+	}
+	return;
+}

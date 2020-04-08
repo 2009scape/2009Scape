@@ -1,0 +1,120 @@
+void script_444() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	string svar0;
+	string svar1;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = -1;
+	svar0 = "";
+	svar1 = "";
+	globalarray_0 = new int[getItemContainerLength(583)];
+	globalarray_1 = new int[getItemContainerLength(583)];
+	ivar3 = 0;
+	ivar4 = 99;
+	ivar5 = 0;
+	while (ivar0 < getItemContainerLength(583)) {
+		ivar2 = getItemIdInSlot(583, ivar0);
+		ivar1 = getItemAmtInSlot(583, ivar0);
+		if (ivar2 != -1) {
+			ivar4 = 99;
+			ivar5 = 0;
+			while (ivar5 < getItemContainerLength(583)) {
+				if (globalarray_0[ivar5] != -1) {
+					if (globalarray_0[ivar5] == ivar2) {
+						ivar4 = ivar5;
+						ivar5 = getItemContainerLength(583);
+					}
+					ivar5 = add(ivar5, 1);
+				} else {
+					ivar5 = getItemContainerLength(583);
+				}
+			}
+			if (ivar4 == 99) {
+				globalarray_0[ivar3] = ivar2;
+				globalarray_0[ivar3] = ivar1;
+				ivar3 = add(ivar3, 1);
+			} else {
+				globalarray_0[ivar4] = add(globalarray_1[ivar4], ivar1);
+			}
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	ivar3 = 0;
+	while (ivar3 < getItemContainerLength(583)) {
+		ivar2 = globalarray_0[ivar3];
+		if (ivar2 != -1) {
+			ivar1 = globalarray_1[ivar3];
+			svar0 = concat(svar0, script_446(ivar1, ivar2));
+		} else {
+			ivar3 = getItemContainerLength(583);
+		}
+		ivar3 = add(ivar3, 1);
+	}
+	ivar0 = 0;
+	ivar3 = 0;
+	while (ivar3 < getItemContainerLength(583)) {
+		globalarray_0[ivar3] = -1;
+		globalarray_0[ivar3] = 0;
+		ivar3 = add(ivar3, 1);
+	}
+	ivar3 = 0;
+	ivar5 = 0;
+	while (ivar0 < getItemContainerLength(583)) {
+		ivar2 = getItemIdInSlotSplit(583, ivar0);
+		ivar1 = getItemAmtInSlotSplit(583, ivar0);
+		if (ivar2 != -1) {
+			ivar4 = 99;
+			ivar5 = 0;
+			while (ivar5 < getItemContainerLength(583)) {
+				if (globalarray_0[ivar5] != -1) {
+					if (globalarray_0[ivar5] == ivar2) {
+						ivar4 = ivar5;
+						ivar5 = getItemContainerLength(583);
+					}
+					ivar5 = add(ivar5, 1);
+				} else {
+					ivar5 = getItemContainerLength(583);
+				}
+			}
+			if (ivar4 == 99) {
+				globalarray_0[ivar3] = ivar2;
+				globalarray_0[ivar3] = ivar1;
+				ivar3 = add(ivar3, 1);
+			} else {
+				globalarray_0[ivar4] = add(globalarray_1[ivar4], ivar1);
+			}
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	ivar3 = 0;
+	while (ivar3 < getItemContainerLength(583)) {
+		ivar2 = globalarray_0[ivar3];
+		if (ivar2 != -1) {
+			ivar1 = globalarray_1[ivar3];
+			svar1 = concat(svar1, script_446(ivar1, ivar2));
+		} else {
+			ivar3 = getItemContainerLength(583);
+		}
+		ivar3 = add(ivar3, 1);
+	}
+	if (strLength(svar0) > 0) {
+		setWidgetText(new WidgetPointer(1023,14), svar0);
+		script_447(67043343, 67043341, 67043342);
+		setWidgetIsHidden(true, new WidgetPointer(1023,12));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(1023,12));
+	}
+	if (strLength(svar1) > 0) {
+		setWidgetText(new WidgetPointer(1023,21), svar1);
+		script_447(67043350, 67043348, 67043349);
+		setWidgetIsHidden(true, new WidgetPointer(1023,19));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(1023,19));
+	}
+	return;
+}

@@ -1,0 +1,206 @@
+void script_4301() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	int ivar22;
+	int ivar23;
+	int ivar24;
+	int ivar25;
+	int ivar26;
+	int ivar27;
+	int ivar28;
+	int ivar29;
+	int ivar30;
+	int ivar31;
+	int ivar32;
+	int ivar33;
+	int ivar34;
+	int ivar35;
+	int ivar36;
+	int ivar37;
+	int ivar38;
+	int ivar39;
+	string svar0;
+	string svar1;
+	int stack_dump0;
+	ivar0 = 71827492;
+	ivar1 = 71827493;
+	ivar2 = 71827494;
+	ivar3 = 71827495;
+	ivar4 = 71827531;
+	ivar5 = 71827532;
+	ivar6 = 71827817;
+	ivar7 = 71828240;
+	ivar8 = 218;
+	ivar9 = divide(16384, 2);
+	ivar10 = 3;
+	ivar11 = 4;
+	ivar12 = 200;
+	ivar13 = 3;
+	ivar14 = 16;
+	ivar15 = 23;
+	ivar16 = 177;
+	ivar17 = 4;
+	ivar18 = 157;
+	ivar19 = 4;
+	ivar20 = 137;
+	ivar21 = 4;
+	ivar22 = 15;
+	ivar23 = 15;
+	ivar24 = 0;
+	ivar25 = 0;
+	ivar26 = 0;
+	ivar27 = 0;
+	svar0 = "0";
+	ivar28 = 9;
+	ivar29 = 23;
+	ivar30 = 0;
+	ivar31 = divide(getWidgetActualHeight(new WidgetPointer(ivar0)), ivar15);
+	ivar32 = multiply(ivar31, 2);
+	ivar33 = -1;
+	ivar34 = -1;
+	ivar35 = 0;
+	ivar36 = 0;
+	deleteAllExtraChilds(new WidgetPointer(ivar0));
+	deleteAllExtraChilds(new WidgetPointer(ivar1));
+	deleteAllExtraChilds(new WidgetPointer(ivar2));
+	deleteAllExtraChilds(new WidgetPointer(ivar3));
+	deleteAllExtraChilds(new WidgetPointer(ivar6));
+	deleteAllExtraChilds(new WidgetPointer(ivar7));
+	svar1 = "";
+	ivar37 = -1;
+	ivar27 = cs2method3709();
+	while (ivar26 < ivar27) {
+		ivar25 = multiply(divide(ivar37, 2), ivar15);
+		svar0 = cs2method3710(ivar26);
+		ivar34 = cs2method3711(ivar26);
+		if (subtract(globalint_1516, 1) != ivar34) {
+			ivar36 = 1;
+			if (((boolean)globalint_1516) || (globalint_1516 == -1)) {
+				ivar36 = 0;
+			}
+		} else {
+			ivar36 = 0;
+		}
+		createExtraChild(new WidgetPointer(ivar0), 4, ivar26);
+		if (((boolean)ivar36)) {
+			setWidgetFont(3793);
+			setWidgetSize(ivar9, ivar15, 2, 0);
+			ivar33 = -1;
+			if (cs2method3751() && (cs2method3760(svar0) > -1)) {
+				ivar33 = cs2method3758(cs2method3760(svar0));
+			}
+			if (ivar33 == getWorldId()) {
+				setWidgetRGB(new Color(60, 183, 30));
+			} else if (ivar33 > 0) {
+				setWidgetRGB(new Color(255, 255, 100));
+			} else {
+				setWidgetRGB(new Color(190, 178, 140));
+			}
+			setWidgetUnknownBoolean(true);
+			setWidgetText(svar0);
+		}
+		createExtraChild(new WidgetPointer(ivar2), 5, ivar26);
+		if (((boolean)ivar36)) {
+			setWidgetSize(ivar22, ivar23, 0, 0);
+			setWidgetSprite(cs2method_3408(105, 100, 3712, ivar34));
+			svar1 = cs2method_3408(105, 115, 3714, ivar34);
+			setScriptCallOnMouseOver(4538, new WidgetPointer(1096,104), new WidgetPointer(ivar2), ivar26, svar1, 120, 3793, 3793, 16777215, 13, 4, 3, -2147483647, -2147483646, "IIisifdiiiiii");
+			setScriptCallOnMouseExit(40, new WidgetPointer(1096,104), "I");
+		}
+		createExtraChild(new WidgetPointer(ivar6), 5, ivar26);
+		if (((boolean)ivar36)) {
+			setWidgetSize(ivar22, ivar23, 0, 0);
+			switch (ivar34) {
+				case 0:
+					ivar35 = clanbitconfig_178;
+					break;
+				case 1:
+					ivar35 = clanbitconfig_179;
+					break;
+				case 2:
+					ivar35 = clanbitconfig_180;
+					break;
+				case 3:
+					ivar35 = clanbitconfig_181;
+					break;
+				case 4:
+					ivar35 = clanbitconfig_182;
+					break;
+				case 5:
+					ivar35 = clanbitconfig_183;
+			}
+			if (((boolean)ivar35) || (ivar34 >= 100)) {
+				setWidgetSprite(6235);
+				svar1 = "Rated Clan" + "<br>" + "Wars Leader";
+				setScriptCallOnMouseOver(4538, new WidgetPointer(1096,104), new WidgetPointer(ivar6), ivar26, svar1, 120, 3793, 3793, 16777215, 13, 4, 3, -2147483647, -2147483646, "IIisifdiiiiii");
+				setScriptCallOnMouseExit(40, new WidgetPointer(1096,104), "I");
+			}
+		}
+		createExtraChild(new WidgetPointer(ivar7), 5, ivar26);
+		if (((boolean)ivar36)) {
+			setWidgetSize(ivar22, ivar23, 0, 0);
+		}
+		createExtraChild(new WidgetPointer(ivar3), 5, ivar26);
+		if (((boolean)ivar36)) {
+			setWidgetSize(ivar28, ivar29, 0, 0);
+			setWidgetSprite(6034);
+			setWidgetContextMenuOption(1, "Show details");
+			setScriptCallOnClickContextMenu(4303, "");
+		}
+		ivar26 = add(ivar26, 1);
+	}
+	ivar38 = 0;
+	ivar26 = 0;
+	ivar39 = 0;
+	while (ivar26 < ivar27) {
+		stack_dump0 = ivar26;
+		cs2method3718();
+		ivar39 = stack_dump0;
+		if (setWidgetRegister(new WidgetPointer(ivar0), ivar39) && (stringMethod4107(getWidgetText(), "") != 0)) {
+			if (mod(ivar38, 2) != 0) {
+				ivar24 = ivar8;
+			} else {
+				ivar24 = 0;
+			}
+			ivar25 = multiply(divide(ivar38, 2), ivar15);
+			setWidgetPosition(add(ivar10, ivar24), add(ivar11, ivar25), 0, 0);
+			if (setWidgetRegister(new WidgetPointer(ivar2), ivar39)) {
+				setWidgetPosition(add(ivar16, ivar24), add(ivar17, ivar25), 0, 0);
+			}
+			if (setWidgetRegister(new WidgetPointer(ivar3), ivar39)) {
+				setWidgetPosition(add(ivar12, ivar24), ivar25, 0, 0);
+			}
+			if (setWidgetRegister(new WidgetPointer(ivar6), ivar39)) {
+				setWidgetPosition(add(ivar18, ivar24), add(ivar19, ivar25), 0, 0);
+			}
+			if (setWidgetRegister(new WidgetPointer(ivar7), ivar39)) {
+				setWidgetPosition(add(ivar20, ivar24), add(ivar21, ivar25), 0, 0);
+			}
+			ivar38 = add(ivar38, 1);
+		}
+		ivar26 = add(ivar26, 1);
+	}
+	globalint_1517 = ivar38;
+	script_4318();
+	return;
+}

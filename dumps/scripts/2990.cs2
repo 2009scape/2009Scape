@@ -1,0 +1,5 @@
+void script_2990() {
+	setWidgetSprite(4031, new WidgetPointer(72,75));
+	setWidgetSprite(4031, new WidgetPointer(72,63));
+	return;
+}

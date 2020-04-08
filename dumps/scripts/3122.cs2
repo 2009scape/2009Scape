@@ -1,0 +1,12 @@
+void script_3122(int arg0) {
+	if (setWidgetRegister(new WidgetPointer(arg0), 1)) {
+		setWidgetHidden(1);
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), 2)) {
+		setWidgetHidden(1);
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), 4)) {
+		setWidgetSprite(1541);
+	}
+	return;
+}

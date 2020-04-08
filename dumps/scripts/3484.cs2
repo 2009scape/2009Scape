@@ -1,0 +1,77 @@
+int script_3484(int arg0) {
+	int ivar1;
+	ivar1 = 0;
+	if (bitconfig_7999 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8000 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8001 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8002 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8003 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8004 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8005 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8006 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8007 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8008 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8009 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8010 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8011 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8012 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8013 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8014 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8015 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8016 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8017 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8018 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8019 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8020 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8021 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	if (bitconfig_8022 == arg0) {
+		ivar1 = add(ivar1, 1);
+	}
+	return ivar1;
+}

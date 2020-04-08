@@ -1,0 +1,8 @@
+void script_3295(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	ivar4 = add(cs2method2601(new WidgetPointer(arg1)), multiply(arg3, 45));
+	if (setWidgetRegister(new WidgetPointer(arg0), 1)) {
+		script_3296(arg0, arg1, arg2, ivar4, 1);
+	}
+	return;
+}

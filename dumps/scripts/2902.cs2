@@ -1,0 +1,7 @@
+void script_2902(int arg0,int arg1,int arg2) {
+	if (globalint_1087 != arg2) {
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+	}
+	setWidgetText(new WidgetPointer(arg1), "");
+	return;
+}

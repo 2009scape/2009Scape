@@ -1,0 +1,294 @@
+void script_4(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,string arg8) {
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	int ivar22;
+	int ivar23;
+	int ivar24;
+	int ivar25;
+	int ivar26;
+	int ivar27;
+	int ivar28;
+	int ivar29;
+	int ivar30;
+	int ivar31;
+	int ivar32;
+	string svar1;
+	string svar2;
+	int stack_dump0;
+	opcStruct5224(2,0,0) structdump_1;
+	opcStruct5224(2,0,0) structdump_2;
+	opcStruct5224(2,0,0) structdump_3;
+	opcStruct5224(2,0,0) structdump_4;
+	if ((arg1 == -1) || ((boolean)arg1)) {
+		deleteAllExtraChilds(new WidgetPointer(arg0));
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+		return;
+	}
+	ivar8 = 0;
+	ivar9 = 0;
+	stack_dump0 = arg1;
+	structdump_1 = cs2method5224(stack_dump0);
+	ivar9 = structdump_1.intpart_1;
+	ivar8 = structdump_1.intpart_0;
+	if ((ivar8 < 0) || (ivar9 < 0)) {
+		arg1 = addToCoordinate(0, extractX(arg1), script_686(subtract(extractZ(arg1), 1), 4), extractY(arg1));
+		stack_dump0 = arg1;
+		structdump_2 = cs2method5224(stack_dump0);
+		ivar9 = structdump_2.intpart_1;
+		ivar8 = structdump_2.intpart_0;
+		if ((ivar8 < 0) || (ivar9 < 0)) {
+			arg1 = addToCoordinate(0, extractX(arg1), script_686(subtract(extractZ(arg1), 1), 4), extractY(arg1));
+			stack_dump0 = arg1;
+			structdump_3 = cs2method5224(stack_dump0);
+			ivar9 = structdump_3.intpart_1;
+			ivar8 = structdump_3.intpart_0;
+			if ((ivar8 < 0) || (ivar9 < 0)) {
+				arg1 = addToCoordinate(0, extractX(arg1), script_686(subtract(extractZ(arg1), 1), 4), extractY(arg1));
+				stack_dump0 = arg1;
+				structdump_4 = cs2method5224(stack_dump0);
+				ivar9 = structdump_4.intpart_1;
+				ivar8 = structdump_4.intpart_0;
+				if ((ivar8 < 0) || (ivar9 < 0)) {
+					deleteAllExtraChilds(new WidgetPointer(arg0));
+					setWidgetIsHidden(true, new WidgetPointer(arg0));
+					return;
+				}
+			}
+		}
+	}
+	setWidgetIsHidden(false, new WidgetPointer(arg0));
+	ivar10 = getWidgetActualWidth(new WidgetPointer(arg3));
+	ivar11 = getWidgetActualHeight(new WidgetPointer(arg3));
+	if (arg2 == -1) {
+		arg2 = 280;
+	}
+	ivar8 = multiplyDivide(ivar10, subtract(arg6, arg7), subtract(ivar8, arg7));
+	ivar9 = multiplyDivide(ivar11, subtract(arg4, arg5), subtract(ivar9, arg5));
+	ivar8 = max(min(ivar8, ivar10), 0);
+	ivar9 = max(min(ivar9, ivar11), 0);
+	ivar8 = subtract(ivar8, divide(ivar10, 2));
+	ivar9 = subtract(divide(ivar11, 2), ivar9);
+	setWidgetPosition(ivar8, ivar9, 1, 1, new WidgetPointer(arg0));
+	ivar12 = getOtherCommonData(arg2, 132);
+	ivar13 = getOtherCommonData(arg2, 133);
+	ivar14 = -1;
+	if (ivar8 <= subtract(0, divide(ivar10, 2))) {
+		if (ivar9 <= subtract(0, divide(ivar11, 2))) {
+			ivar14 = 3;
+		} else if (ivar9 >= divide(ivar11, 2)) {
+			ivar14 = 1;
+		} else {
+			ivar14 = 2;
+		}
+	} else if (ivar8 >= divide(ivar10, 2)) {
+		if (ivar9 <= subtract(0, divide(ivar11, 2))) {
+			ivar14 = 5;
+		} else if (ivar9 >= divide(ivar11, 2)) {
+			ivar14 = 7;
+		} else {
+			ivar14 = 6;
+		}
+	} else if (ivar9 <= subtract(0, divide(ivar11, 2))) {
+		ivar14 = 4;
+	} else {
+		if (ivar9 >= divide(ivar11, 2)) {
+			ivar14 = 0;
+		}
+	}
+	ivar15 = 0;
+	ivar16 = 0;
+	ivar17 = 0;
+	ivar18 = 0;
+	svar1 = "Scroll map";
+	svar2 = "";
+	if (strLength(arg8) > 0) {
+		if (arg0 == 49479716) {
+			svar2 = "Your position";
+		} else {
+			svar2 = strRemoveEntities(script_2332(arg8, "<br>", " "));
+		}
+		svar1 = "Scroll map:";
+	}
+	if (ivar14 == -1) {
+		script_2048(arg0, 0, getOtherCommonData(arg2, 130), ivar12, ivar13, 0, 0, 0, 0, 0, 0, 0, arg1, svar2, svar1);
+		ivar15 = divide(ivar13, 2);
+		ivar16 = divide(ivar13, 2);
+		ivar17 = divide(ivar12, 2);
+		ivar18 = divide(ivar12, 2);
+		script_2048(arg0, 1, getOtherCommonData(arg2, 131), ivar12, ivar13, 0, 0, 0, 0, 0, 0, 1, -1, "", "");
+	} else {
+		ivar12 = getOtherCommonData(arg2, 136);
+		ivar13 = getOtherCommonData(arg2, 645);
+		switch (ivar14) {
+			case 0:
+				script_2048(arg0, 0, getOtherCommonData(arg2, 134), ivar12, ivar13, 0, subtract(0, divide(ivar13, 2)), 49152, 0, 0, 0, 0, arg1, svar2, svar1);
+				ivar15 = ivar13;
+				ivar16 = 0;
+				ivar17 = divide(ivar12, 2);
+				ivar18 = divide(ivar12, 2);
+				break;
+			case 1:
+				script_2048(arg0, 0, getOtherCommonData(arg2, 135), ivar12, ivar13, divide(ivar12, 2), subtract(0, divide(ivar13, 2)), 32768, 0, 0, 0, 0, arg1, svar2, svar1);
+				ivar15 = ivar13;
+				ivar16 = 0;
+				ivar17 = 0;
+				ivar18 = ivar12;
+				break;
+			case 2:
+				script_2048(arg0, 0, getOtherCommonData(arg2, 134), ivar12, ivar13, divide(ivar12, 2), 0, 32768, 0, 0, 0, 0, arg1, svar2, svar1);
+				ivar15 = divide(ivar13, 2);
+				ivar16 = divide(ivar13, 2);
+				ivar17 = 0;
+				ivar18 = ivar12;
+				break;
+			case 3:
+				script_2048(arg0, 0, getOtherCommonData(arg2, 135), ivar12, ivar13, divide(ivar12, 2), divide(ivar13, 2), 16384, 0, 0, 0, 0, arg1, svar2, svar1);
+				ivar15 = 0;
+				ivar16 = ivar13;
+				ivar17 = 0;
+				ivar18 = ivar12;
+				break;
+			case 4:
+				script_2048(arg0, 0, getOtherCommonData(arg2, 134), ivar12, ivar13, 0, divide(ivar13, 2), 16384, 0, 0, 0, 0, arg1, svar2, svar1);
+				ivar15 = 0;
+				ivar16 = ivar13;
+				ivar17 = divide(ivar12, 2);
+				ivar18 = divide(ivar12, 2);
+				break;
+			case 5:
+				script_2048(arg0, 0, getOtherCommonData(arg2, 135), ivar12, ivar13, subtract(0, divide(ivar12, 2)), divide(ivar13, 2), 0, 0, 0, 0, 0, arg1, svar2, svar1);
+				ivar15 = 0;
+				ivar16 = ivar13;
+				ivar17 = ivar12;
+				ivar18 = 0;
+				break;
+			case 6:
+				script_2048(arg0, 0, getOtherCommonData(arg2, 134), ivar12, ivar13, subtract(0, divide(ivar12, 2)), 0, 0, 0, 0, 0, 0, arg1, svar2, svar1);
+				ivar15 = divide(ivar13, 2);
+				ivar16 = divide(ivar13, 2);
+				ivar17 = ivar12;
+				ivar18 = 0;
+				break;
+			case 7:
+				script_2048(arg0, 0, getOtherCommonData(arg2, 135), ivar12, ivar13, subtract(0, divide(ivar12, 2)), subtract(0, divide(ivar13, 2)), 49152, 0, 0, 0, 0, arg1, svar2, svar1);
+				ivar15 = ivar13;
+				ivar16 = 0;
+				ivar17 = ivar12;
+				ivar18 = 0;
+		}
+		script_2050(arg0, 1);
+	}
+	ivar19 = 0;
+	ivar20 = 0;
+	ivar21 = 0;
+	ivar22 = 0;
+	ivar23 = 0;
+	ivar24 = 0;
+	ivar25 = 0;
+	ivar26 = 0;
+	ivar27 = -1;
+	ivar28 = -1;
+	ivar29 = -1;
+	ivar30 = 0;
+	if (strLength(arg8) > 0) {
+		ivar23 = getOtherCommonData(arg2, 650);
+		ivar24 = getOtherCommonData(arg2, 651);
+		ivar27 = getOtherCommonData(arg2, 647);
+		ivar28 = getOtherCommonData(arg2, 648);
+		ivar29 = getOtherCommonData(arg2, 649);
+		ivar19 = add(add(getMaxLineWidth(ivar10, 591, arg8), ivar23), ivar23);
+		ivar20 = add(add(add(multiply(getLineCount(ivar19, 591, arg8), 13), 2), ivar24), ivar24);
+		if (add(ivar15, ivar20) < add(ivar9, divide(ivar11, 2))) {
+			ivar22 = subtract(0, add(ivar15, divide(ivar20, 2)));
+		} else {
+			ivar22 = add(ivar16, divide(ivar20, 2));
+		}
+		ivar30 = subtract(add(ivar8, divide(ivar10, 2)), divide(ivar19, 2));
+		if (ivar30 <= 0) {
+			ivar21 = subtract(0, ivar30);
+		} else {
+			ivar30 = add(add(ivar8, divide(ivar10, 2)), divide(ivar19, 2));
+			if (ivar30 >= ivar10) {
+				ivar21 = subtract(ivar10, ivar30);
+			}
+		}
+		ivar25 = divide(subtract(ivar19, ivar23), 2);
+		ivar26 = divide(subtract(ivar20, ivar24), 2);
+		script_2048(arg0, 2, getOtherCommonData(arg2, 646), subtract(ivar19, multiply(ivar23, 2)), subtract(ivar20, multiply(ivar24, 2)), ivar21, ivar22, 0, 1, 0, 0, 0, -1, "", "");
+		script_2048(arg0, 3, ivar28, subtract(ivar19, multiply(ivar23, 2)), ivar24, ivar21, subtract(ivar22, ivar26), 0, 1, 0, 0, 0, -1, "", "");
+		script_2048(arg0, 4, ivar28, subtract(ivar19, multiply(ivar23, 2)), ivar24, ivar21, add(ivar22, ivar26), 0, 1, 0, 1, 0, -1, "", "");
+		script_2048(arg0, 5, ivar29, ivar23, subtract(ivar20, multiply(ivar24, 2)), subtract(ivar21, ivar25), ivar22, 0, 1, 0, 0, 0, -1, "", "");
+		script_2048(arg0, 6, ivar29, ivar23, subtract(ivar20, multiply(ivar24, 2)), add(ivar21, ivar25), ivar22, 0, 1, 1, 0, 0, -1, "", "");
+		script_2048(arg0, 7, ivar27, ivar23, ivar24, subtract(ivar21, ivar25), subtract(ivar22, ivar26), 0, 0, 0, 0, 0, -1, "", "");
+		script_2048(arg0, 8, ivar27, ivar23, ivar24, add(ivar21, ivar25), subtract(ivar22, ivar26), 0, 0, 1, 0, 0, -1, "", "");
+		script_2048(arg0, 9, ivar27, ivar23, ivar24, subtract(ivar21, ivar25), add(ivar22, ivar26), 0, 0, 0, 1, 0, -1, "", "");
+		script_2048(arg0, 10, ivar27, ivar23, ivar24, add(ivar21, ivar25), add(ivar22, ivar26), 0, 0, 1, 1, 0, -1, "", "");
+		script_2051(arg0, 11, ivar19, ivar20, add(ivar21, 1), add(ivar22, 1), getOtherCommonData(arg2, 653), -1, arg8, "", "");
+		script_2051(arg0, 12, ivar19, ivar20, ivar21, ivar22, getOtherCommonData(arg2, 652), arg1, arg8, svar2, svar1);
+	} else {
+		if (setWidgetRegister(new WidgetPointer(arg0), 2)) {
+			deleteExtraChild();
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 3)) {
+			deleteExtraChild();
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 4)) {
+			deleteExtraChild();
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 5)) {
+			deleteExtraChild();
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 6)) {
+			deleteExtraChild();
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 7)) {
+			deleteExtraChild();
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 8)) {
+			deleteExtraChild();
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 9)) {
+			deleteExtraChild();
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 10)) {
+			deleteExtraChild();
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 11)) {
+			deleteExtraChild();
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), 12)) {
+			deleteExtraChild();
+		}
+	}
+	ivar31 = 0;
+	ivar32 = 0;
+	if (ivar21 < 0) {
+		ivar31 = max(subtract(0, subtract(ivar21, divide(ivar19, 2))), ivar17);
+	} else if (ivar19 > 0) {
+		ivar31 = max(add(ivar21, divide(ivar19, 2)), ivar18);
+	} else {
+		ivar31 = max(ivar17, ivar18);
+	}
+	if (ivar22 <= 0) {
+		ivar32 = max(add(ivar15, ivar20), ivar16);
+	} else {
+		ivar32 = add(ivar16, ivar20);
+	}
+	stack_dump0 = add(multiply(ivar31, 2), 2);
+	ivar32 = add(multiply(ivar32, 2), 2);
+	ivar31 = stack_dump0;
+	setWidgetSize(ivar31, ivar32, 0, 0, new WidgetPointer(arg0));
+	return;
+}

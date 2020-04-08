@@ -1,0 +1,5 @@
+void script_2600() {
+	playSoundEffect(6784, 1, 0);
+	setWidgetIsHidden(true, new WidgetPointer(292,130));
+	return;
+}

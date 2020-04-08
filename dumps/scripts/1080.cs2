@@ -1,0 +1,7 @@
+void script_1080(int arg0,int arg1) {
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		setWidgetHidden(0);
+		setWidgetRGB(new Color(87, 126, 69));
+	}
+	return;
+}

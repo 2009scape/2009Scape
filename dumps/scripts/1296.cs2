@@ -1,0 +1,7 @@
+void script_1296() {
+	if (getDisplayMode() >= 2) {
+		setWidget3DRotation(0, 0, 89, 67, 0, 300, new WidgetPointer(584,2));
+		setWidget3DRotation(0, 0, 89, 67, 0, 300, new WidgetPointer(584,1));
+	}
+	return;
+}

@@ -1,0 +1,27 @@
+void script_60() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = 3;
+	ivar1 = 5;
+	ivar2 = 0;
+	while (ivar0 < 255) {
+		while (ivar1 < 235) {
+			createExtraChild(new WidgetPointer(260,42), 5, ivar2);
+			setWidgetSize(36, 32, 0, 0);
+			setWidgetPosition(ivar1, ivar0, 0, 0);
+			if (getItemIdInSlot(514, ivar2) != -1) {
+				setItemOnWidgetMethod1200(getItemIdInSlot(514, ivar2), getItemAmtInSlot(514, ivar2));
+				cs2method1305(getItemName(getItemIdInSlot(514, ivar2)));
+				setWidgetContextMenuOption(1, "Withdraw");
+				setWidgetShadowColor(new Color(17, 17, 17));
+				setWidgetBorderThickness(1);
+			}
+			ivar1 = add(ivar1, 40);
+			ivar2 = add(ivar2, 1);
+		}
+		ivar0 = add(ivar0, 44);
+		ivar1 = 5;
+	}
+	return;
+}

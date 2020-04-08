@@ -1,0 +1,21 @@
+void script_3283(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	if (((boolean)arg3)) {
+		arg3 = 12;
+	}
+	ivar4 = getLineCount(add(getWidgetActualWidth(new WidgetPointer(arg1)), 16), arg2, getWidgetText(new WidgetPointer(arg1)));
+	ivar4 = multiply(ivar4, arg3);
+	messageType0("txt " + intToStr(ivar4) + ", layer " + intToStr(getWidgetActualHeight(new WidgetPointer(arg1))));
+	if (getWidgetActualHeight(new WidgetPointer(arg1)) >= ivar4) {
+		messageType0("No scroll txt " + intToStr(ivar4) + ", layer " + intToStr(getWidgetActualHeight(new WidgetPointer(arg1))));
+		setWidgetSize(add(getWidgetActualWidth(new WidgetPointer(arg1)), 16), getWidgetActualHeight(new WidgetPointer(arg1)), 0, 0, new WidgetPointer(arg1));
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+	} else {
+		ivar4 = getLineCount(getWidgetActualWidth(new WidgetPointer(arg1)), arg2, getWidgetText(new WidgetPointer(arg1)));
+		ivar4 = multiply(ivar4, arg3);
+		setWidgetScrollMax(0, add(ivar4, 10), new WidgetPointer(arg1));
+		messageType0("Scroll txt " + intToStr(ivar4) + ", layer " + intToStr(getWidgetActualHeight(new WidgetPointer(arg1))));
+		script_31(arg0, arg1, 792, 789, 790, 791, 773, 788);
+	}
+	return;
+}

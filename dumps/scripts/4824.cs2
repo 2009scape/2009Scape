@@ -1,0 +1,56 @@
+int script_4824(int arg0) {
+	switch (arg0) {
+		case 21:
+		case 23:
+		case 22:
+		case 25:
+		case 24:
+		case 27:
+		case 26:
+		case 28:
+			return 4048;
+		case 31:
+		case 34:
+		case 35:
+		case 32:
+		case 33:
+			return 4051;
+		case 42:
+		case 43:
+		case 41:
+		case 44:
+		case 45:
+			return 4054;
+		case 51:
+			return 4057;
+		case 100:
+			return 4063;
+		case 101:
+			return 4066;
+		case 102:
+			return 4069;
+		case 103:
+			return 4072;
+		case 104:
+			return 4075;
+		case 105:
+			return 4078;
+		case 106:
+			return 4081;
+		case 107:
+			return 4084;
+		case 108:
+			return 4087;
+		case 109:
+			return 4090;
+		case 110:
+			return 4093;
+		case 111:
+			return 4096;
+		case 112:
+			return 4099;
+		case 113:
+			return 4102;
+	}
+	return -1;
+}

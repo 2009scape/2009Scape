@@ -1,0 +1,6 @@
+void script_588() {
+	globalint_82 = 0;
+	globalint_83 = 0;
+	script_621();
+	return;
+}

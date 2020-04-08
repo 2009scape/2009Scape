@@ -853,9 +853,13 @@ final class Class47 {
                                                 var42 = Class38.getItemDefinition(var11.itemAmounts[var21] + -1, (byte)104);
                                                 RSString var40;
                                                 if(1 != var42.stackingType && 1 == var11.itemIds[var21]) {
-                                                   var40 = RenderAnimationDefinition.method903(new RSString[]{Class3_Sub13_Sub2.aClass94_3042, var42.name, Class3_Sub29.aClass94_2584}, (byte)-67);
+                                                   var40 = RenderAnimationDefinition.method903(new RSString[]{
+                                                           Class3_Sub13_Sub2.aClass94_3042, var42.name, Class3_Sub29.aClass94_2584
+                                                   }, (byte)-67);
                                                 } else {
-                                                   var40 = RenderAnimationDefinition.method903(new RSString[]{Class3_Sub13_Sub2.aClass94_3042, var42.name, Class3_Sub8.aClass94_2306, Class36.method1013((byte)-100, var11.itemIds[var21])}, (byte)-73);
+                                                   var40 = RenderAnimationDefinition.method903(new RSString[]{
+                                                           Class3_Sub13_Sub2.aClass94_3042, var42.name, Class3_Sub8.aClass94_2306, Class36.method1013((byte)-100, var11.itemIds[var21])
+                                                   }, (byte)-73);
                                                 }
 
                                                 var26 = var13 + var23 * (var11.anInt285 + 115);

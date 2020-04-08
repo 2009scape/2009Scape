@@ -1,0 +1,29 @@
+void script_3405(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	cs2func_script_3406_struct(3,0,0) structdump_0;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 0;
+	structdump_0 = script_3406();
+	ivar5 = structdump_0.intpart_2;
+	ivar4 = structdump_0.intpart_1;
+	ivar3 = structdump_0.intpart_0;
+	script_3054(arg0);
+	script_3173(arg1);
+	script_4567(arg2);
+	if (isWidgetHidden(new WidgetPointer(906,187)) && (ivar3 > globalint_1275)) {
+		setScriptCallOnGameloop(3407, getClientCycle(), new WidgetPointer(906,187), new WidgetPointer(-32768,3), "iII", new WidgetPointer(906,201));
+	}
+	if (isWidgetHidden(new WidgetPointer(906,189)) && (ivar4 > globalint_1276)) {
+		setScriptCallOnGameloop(3407, getClientCycle(), new WidgetPointer(906,189), new WidgetPointer(-32768,3), "iII", new WidgetPointer(906,203));
+	}
+	if (isWidgetHidden(new WidgetPointer(906,188)) && (ivar5 > globalint_1510)) {
+		setScriptCallOnGameloop(3407, getClientCycle(), new WidgetPointer(906,188), new WidgetPointer(-32768,3), "iII", new WidgetPointer(906,202));
+	}
+	globalint_1275 = ivar3;
+	globalint_1276 = ivar4;
+	globalint_1510 = ivar5;
+	return;
+}

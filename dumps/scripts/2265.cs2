@@ -1,0 +1,55 @@
+void script_2265(int arg0) {
+	setWidgetIsHidden(false, new WidgetPointer(arg0));
+	switch (arg0) {
+		case 61866061:
+			if (globalint_755 != -1) {
+				setItemOnWidgetMethod2208(globalint_755, -1, new WidgetPointer(arg0));
+			}
+			break;
+		case 61866008:
+			if (globalint_756 != -1) {
+				setItemOnWidgetMethod2208(globalint_756, -1, new WidgetPointer(arg0));
+			}
+			break;
+		case 61866014:
+			if (globalint_757 != -1) {
+				setItemOnWidgetMethod2208(globalint_757, -1, new WidgetPointer(arg0));
+			}
+			break;
+		case 61866020:
+			if (globalint_758 != -1) {
+				setItemOnWidgetMethod2208(globalint_758, -1, new WidgetPointer(arg0));
+			}
+			break;
+		case 61866026:
+			if (globalint_759 != -1) {
+				setItemOnWidgetMethod2208(globalint_759, -1, new WidgetPointer(arg0));
+			}
+			break;
+		case 61866032:
+			if (globalint_760 != -1) {
+				setItemOnWidgetMethod2208(globalint_760, -1, new WidgetPointer(arg0));
+			}
+			break;
+		case 61866038:
+			if (globalint_1139 != -1) {
+				setItemOnWidgetMethod2208(globalint_1139, -1, new WidgetPointer(arg0));
+			}
+			break;
+		case 61866044:
+			if (globalint_1140 != -1) {
+				setItemOnWidgetMethod2208(globalint_1140, -1, new WidgetPointer(arg0));
+			}
+			break;
+		case 61866050:
+			if (globalint_1141 != -1) {
+				setItemOnWidgetMethod2208(globalint_1141, -1, new WidgetPointer(arg0));
+			}
+			break;
+		case 61866056:
+			if (globalint_1142 != -1) {
+				setItemOnWidgetMethod2208(globalint_1142, -1, new WidgetPointer(arg0));
+			}
+	}
+	return;
+}

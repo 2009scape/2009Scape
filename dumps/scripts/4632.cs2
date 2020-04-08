@@ -1,0 +1,107 @@
+void script_4632(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	string svar4;
+	string svar5;
+	ivar1 = -1;
+	ivar2 = -1;
+	svar0 = "";
+	svar1 = "";
+	svar2 = "";
+	svar3 = "";
+	svar4 = "";
+	svar5 = "";
+	if (globalint_1520 > 2000000) {
+		svar1 = "over " + formatNumber(2000000, 1);
+	} else {
+		svar1 = formatNumber(globalint_1520, 1);
+	}
+	ivar1 = min(2147483647, divide(divide(multiply(1000, globalint_1520), max(1, globalint_1521)), 1000));
+	ivar2 = mod(divide(multiply(1000, globalint_1520), max(1, globalint_1521)), 1000);
+	if (((boolean)ivar2)) {
+		svar0 = intToStr(ivar1);
+	} else {
+		svar0 = concat(intToStr(ivar1), ".");
+		if (ivar2 < 100) {
+			svar0 = concat(svar0, "0");
+		}
+		if (ivar2 < 10) {
+			svar0 = concat(svar0, "0");
+		}
+		svar0 = concat(svar0, intToStr(ivar2));
+		if (((boolean)mod(ivar2, 10))) {
+			svar0 = substr(0, subtract(strLength(svar0), 2), svar0);
+		}
+		if (((boolean)mod(ivar2, 100))) {
+			svar0 = substr(0, subtract(strLength(svar0), 2), svar0);
+		}
+	}
+	svar3 = formatNumber(globalint_1522, 1);
+	if (((boolean)arg0)) {
+		if (globalint_1520 > 2000) {
+			svar5 = "Behold " + globalstring_127 + ", champion of " + svar1 + " bouts in the Duel Arena!";
+		} else if (((boolean)globalint_1520)) {
+			svar5 = "Here stands " + globalstring_127 + ", once victor of a duel.";
+		} else {
+			svar5 = "Here stands " + globalstring_127 + ", victor of " + svar1 + " duels.";
+		}
+		svar2 = globalstring_127 + " defeats " + svar0 + " opponents for every loss!";
+		if (globalint_1522 > 250) {
+			svar3 = "over " + formatNumber(250, 1);
+		}
+		svar4 = globalstring_127 + " has vanquished " + formatNumber(globalint_1522, 1) + " opponents in a row.";
+	} else {
+		if (((boolean)arg0)) {
+			if (globalint_1520 > 2000) {
+				svar5 = "Behold " + globalstring_127 + ", taker of " + svar1 + " heads in the Wilderness!";
+			} else {
+				svar5 = "Here stands " + globalstring_127 + ", who has killed " + svar1 + " opponents in the Wilderness.";
+			}
+			svar2 = "Vanquisher of " + svar0 + " foes for every fall!";
+			if (globalint_1522 > 250) {
+				svar3 = "Over " + formatNumber(250, 1);
+			}
+			svar4 = svar3 + " victims in succession have rendered their souls to " + globalstring_127 + ".";
+		}
+	}
+	setWidgetText(new WidgetPointer(21,1), svar5);
+	setWidgetText(new WidgetPointer(21,3), svar4);
+	setWidgetText(new WidgetPointer(21,2), svar2);
+	setWidgetText(new WidgetPointer(21,4), "Highest value Wilderness kill:" + "<br>" + formatNumber(standart_config_2185, 1) + " coins.");
+	setWidgetIsHidden(false, new WidgetPointer(21,18));
+	setWidgetIsHidden(false, new WidgetPointer(21,49));
+	setWidgetIsHidden(true, new WidgetPointer(21,2));
+	setWidgetIsHidden(true, new WidgetPointer(21,3));
+	if (((boolean)globalint_1524)) {
+		setWidgetIsHidden(false, new WidgetPointer(21,2));
+		if (globalint_1522 > 1) {
+			setWidgetIsHidden(false, new WidgetPointer(21,3));
+		}
+	}
+	setWidgetIsHidden(true, new WidgetPointer(21,4));
+	if (((boolean)arg0) && (standart_config_2185 > 0)) {
+		setWidgetIsHidden(false, new WidgetPointer(21,4));
+	}
+	ivar3 = getWidgetActualHeight(new WidgetPointer(21,17));
+	setWidgetPosition(getWidgetActualX(new WidgetPointer(21,18)), getWidgetActualY(new WidgetPointer(21,4)), 0, 0, new WidgetPointer(21,18));
+	if (isWidgetHidden(new WidgetPointer(21,4))) {
+		setWidgetIsHidden(true, new WidgetPointer(21,18));
+		setWidgetPosition(getWidgetActualX(new WidgetPointer(21,3)), 0, 0, 2, new WidgetPointer(21,3));
+		setWidgetPosition(getWidgetActualX(new WidgetPointer(21,2)), getWidgetActualHeight(new WidgetPointer(21,3)), 0, 2, new WidgetPointer(21,2));
+	} else {
+		ivar3 = subtract(ivar3, getWidgetActualHeight(new WidgetPointer(21,4)));
+	}
+	setWidgetPosition(getWidgetActualX(new WidgetPointer(21,18)), getWidgetActualY(new WidgetPointer(21,2)), 0, 0, new WidgetPointer(21,49));
+	if (isWidgetHidden(new WidgetPointer(21,3))) {
+		ivar3 = subtract(ivar3, add(getWidgetActualHeight(new WidgetPointer(21,3)), getWidgetActualHeight(new WidgetPointer(21,2))));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(21,49));
+	}
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(21,1)), ivar3, 0, 0, new WidgetPointer(21,1));
+	return;
+}

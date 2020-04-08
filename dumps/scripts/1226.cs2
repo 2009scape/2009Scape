@@ -1,0 +1,116 @@
+void script_1226(int arg0) {
+	setWidgetIsHidden(true, new WidgetPointer(308,15));
+	setWidgetIsHidden(true, new WidgetPointer(308,14));
+	setWidgetSprite(1134, new WidgetPointer(308,35));
+	setWidgetIsHidden(true, new WidgetPointer(308,13));
+	setWidgetIsHidden(true, new WidgetPointer(308,12));
+	setWidgetSprite(1134, new WidgetPointer(308,34));
+	setWidgetIsHidden(true, new WidgetPointer(308,11));
+	setWidgetIsHidden(true, new WidgetPointer(308,10));
+	setWidgetSprite(1134, new WidgetPointer(308,33));
+	setWidgetIsHidden(true, new WidgetPointer(308,9));
+	setWidgetIsHidden(true, new WidgetPointer(308,8));
+	setWidgetSprite(1134, new WidgetPointer(308,39));
+	setWidgetIsHidden(true, new WidgetPointer(308,7));
+	setWidgetIsHidden(true, new WidgetPointer(308,6));
+	setWidgetSprite(1134, new WidgetPointer(308,37));
+	setWidgetIsHidden(true, new WidgetPointer(308,5));
+	setWidgetIsHidden(true, new WidgetPointer(308,4));
+	setWidgetSprite(1134, new WidgetPointer(308,36));
+	setWidgetIsHidden(true, new WidgetPointer(308,3));
+	setWidgetIsHidden(true, new WidgetPointer(308,2));
+	setWidgetSprite(1134, new WidgetPointer(308,38));
+	if (IsFemale()) {
+		switch (arg0) {
+			case 0:
+				setWidgetIsHidden(false, new WidgetPointer(308,15));
+				setWidgetSprite(1135, new WidgetPointer(308,35));
+				break;
+			case 1:
+				setWidgetIsHidden(false, new WidgetPointer(308,13));
+				setWidgetSprite(1135, new WidgetPointer(308,34));
+				break;
+			case 2:
+				setWidgetIsHidden(false, new WidgetPointer(308,11));
+				setWidgetSprite(1135, new WidgetPointer(308,33));
+				break;
+			case 3:
+				setWidgetIsHidden(false, new WidgetPointer(308,9));
+				setWidgetSprite(1135, new WidgetPointer(308,39));
+				break;
+			case 4:
+				setWidgetIsHidden(false, new WidgetPointer(308,7));
+				setWidgetSprite(1135, new WidgetPointer(308,37));
+				break;
+			case 5:
+				setWidgetIsHidden(false, new WidgetPointer(308,5));
+				setWidgetSprite(1135, new WidgetPointer(308,36));
+				break;
+			case 6:
+				setWidgetIsHidden(false, new WidgetPointer(308,3));
+				setWidgetSprite(1135, new WidgetPointer(308,38));
+		}
+	} else {
+		switch (arg0) {
+			case 0:
+				setWidgetIsHidden(false, new WidgetPointer(308,14));
+				setWidgetSprite(1135, new WidgetPointer(308,35));
+				break;
+			case 1:
+				setWidgetIsHidden(false, new WidgetPointer(308,12));
+				setWidgetSprite(1135, new WidgetPointer(308,34));
+				break;
+			case 2:
+				setWidgetIsHidden(false, new WidgetPointer(308,10));
+				setWidgetSprite(1135, new WidgetPointer(308,33));
+				break;
+			case 3:
+				setWidgetIsHidden(false, new WidgetPointer(308,8));
+				setWidgetSprite(1135, new WidgetPointer(308,39));
+				break;
+			case 4:
+				setWidgetIsHidden(false, new WidgetPointer(308,6));
+				setWidgetSprite(1135, new WidgetPointer(308,37));
+				break;
+			case 5:
+				setWidgetIsHidden(false, new WidgetPointer(308,4));
+				setWidgetSprite(1135, new WidgetPointer(308,36));
+				break;
+			case 6:
+				setWidgetIsHidden(false, new WidgetPointer(308,2));
+				setWidgetSprite(1135, new WidgetPointer(308,38));
+		}
+	}
+	if (IsFemale()) {
+		setWidgetIsHidden(false, new WidgetPointer(308,20));
+		setWidgetIsHidden(false, new WidgetPointer(308,22));
+		setWidgetIsHidden(false, new WidgetPointer(308,24));
+		setWidgetIsHidden(false, new WidgetPointer(308,26));
+		setWidgetIsHidden(false, new WidgetPointer(308,28));
+		setWidgetIsHidden(false, new WidgetPointer(308,30));
+		setWidgetIsHidden(false, new WidgetPointer(308,32));
+		setWidgetIsHidden(true, new WidgetPointer(308,19));
+		setWidgetIsHidden(true, new WidgetPointer(308,21));
+		setWidgetIsHidden(true, new WidgetPointer(308,23));
+		setWidgetIsHidden(true, new WidgetPointer(308,25));
+		setWidgetIsHidden(true, new WidgetPointer(308,27));
+		setWidgetIsHidden(true, new WidgetPointer(308,29));
+		setWidgetIsHidden(true, new WidgetPointer(308,31));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(308,20));
+		setWidgetIsHidden(true, new WidgetPointer(308,22));
+		setWidgetIsHidden(true, new WidgetPointer(308,24));
+		setWidgetIsHidden(true, new WidgetPointer(308,26));
+		setWidgetIsHidden(true, new WidgetPointer(308,28));
+		setWidgetIsHidden(true, new WidgetPointer(308,30));
+		setWidgetIsHidden(true, new WidgetPointer(308,32));
+		setWidgetIsHidden(false, new WidgetPointer(308,19));
+		setWidgetIsHidden(false, new WidgetPointer(308,21));
+		setWidgetIsHidden(false, new WidgetPointer(308,23));
+		setWidgetIsHidden(false, new WidgetPointer(308,25));
+		setWidgetIsHidden(false, new WidgetPointer(308,27));
+		setWidgetIsHidden(false, new WidgetPointer(308,29));
+		setWidgetIsHidden(false, new WidgetPointer(308,31));
+	}
+	return;
+}

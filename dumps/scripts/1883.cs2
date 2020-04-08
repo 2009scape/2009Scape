@@ -1,0 +1,12 @@
+int script_1883(int arg0,int arg1,int arg2,int arg3,int arg4,string arg5) {
+	deleteAllExtraChilds(new WidgetPointer(arg4));
+	if (arg3 == -1) {
+		setWidgetIsHidden(true, new WidgetPointer(arg4));
+		return arg0;
+	}
+	script_1885(arg0, arg1, arg3, arg4, arg5);
+	setWidgetIsHidden(false, new WidgetPointer(arg4));
+	setScriptCallOnMouseEntered(1894, subtract(arg0, arg2), add(add(arg1, arg2), arg2), arg3, arg5, new WidgetPointer(arg4), "iiosI", new WidgetPointer(arg4));
+	setScriptCallOnMouseExit(1884, arg0, arg1, arg3, arg5, new WidgetPointer(arg4), "iiosI", new WidgetPointer(arg4));
+	return add(add(arg0, arg1), arg2);
+}

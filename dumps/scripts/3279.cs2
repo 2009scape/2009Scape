@@ -1,0 +1,48 @@
+void script_3279(int arg0,int arg1,int arg2,int arg3,string arg4) {
+	int ivar4;
+	int ivar5;
+	if ((arg0 == -1) || (arg1 == -1)) {
+		return;
+	}
+	ivar4 = 0;
+	ivar5 = 0;
+	switch (arg3) {
+		case 1:
+			ivar4 = divide(getWidgetActualWidth(new WidgetPointer(942,3)), 4);
+			ivar5 = divide(getWidgetActualHeight(new WidgetPointer(942,3)), 4);
+			break;
+		case 2:
+			ivar4 = divide(getWidgetActualWidth(new WidgetPointer(942,3)), 4);
+			break;
+	}
+	createExtraChild(new WidgetPointer(942,5), 5, globalint_1152);
+	globalint_1152 = add(globalint_1152, 1);
+	switch (arg2) {
+		case 1:
+			setWidgetSprite(2825);
+			setWidgetPosition(add(add(multiply(arg0, 32), 6), ivar4), add(add(multiply(arg1, 32), 20), ivar5), 0, 2);
+			break;
+		case 2:
+			setWidgetSprite(2826);
+			setWidgetPosition(add(add(multiply(arg0, 32), 20), ivar4), add(add(multiply(arg1, 32), 20), ivar5), 0, 2);
+			break;
+		case 3:
+			setWidgetSprite(2827);
+			setWidgetPosition(add(add(multiply(arg0, 32), 13), ivar4), add(add(multiply(arg1, 32), 13), ivar5), 0, 2);
+			break;
+		case 4:
+			setWidgetSprite(2828);
+			setWidgetPosition(add(add(multiply(arg0, 32), 6), ivar4), add(add(multiply(arg1, 32), 6), ivar5), 0, 2);
+			break;
+		case 5:
+			setWidgetSprite(2829);
+			setWidgetPosition(add(add(multiply(arg0, 32), 20), ivar4), add(add(multiply(arg1, 32), 6), ivar5), 0, 2);
+			break;
+	}
+	setWidgetSize(11, 11, 0, 0);
+	setScriptCallOnMouseOver(3282, new WidgetPointer(-32768,3), -2147483643, new WidgetPointer(942,7), arg4, "IiIs");
+	setScriptCallOnMouseExit(40, new WidgetPointer(942,7), "I");
+	setWidgetFilled(1);
+	setWidgetHidden(0);
+	return;
+}

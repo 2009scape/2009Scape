@@ -134,7 +134,7 @@ public final class GameReadEvent extends IoReadEvent {
 			}
 			return buffer.getShort() & 0xFFFF;
 		}
-		System.err.println("Invalid packet [opcode=" + opcode + ", last=" + last + ", queued=" + usedQueuedBuffer + "]!");
+		System.err.println("Invalid packet [opcode=" + opcode + ", last=" + last + ", queued=" + usedQueuedBuffer + "], header=" + header+"!");
 		return -1;
 	}
 

@@ -1,0 +1,5 @@
+void script_1556(int arg0,int arg1,int arg2) {
+	globalint_1029 = script_1504(arg0, 496, arg1, arg2, globalstring_22);
+	script_1557();
+	return;
+}

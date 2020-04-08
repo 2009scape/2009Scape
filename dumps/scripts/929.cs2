@@ -1,0 +1,109 @@
+int script_929(int arg0) {
+	int ivar1;
+	int ivar2;
+	flow_0:
+		ivar1 = getItemHashmapData(arg0, 823);
+		ivar2 = getItemHashmapData(arg0, 749);
+		if (ivar2 == -1) {
+			return 1;
+		}
+		IF (isBitFlagged(ivar1, 0)) 
+			GOTO	flow_3
+		GOTO	flow_4
+	flow_3:
+		IF (getSkillActualLvl(ivar2) < getItemHashmapData(arg0, 750)) 
+			GOTO	flow_6
+	flow_4:
+		IF (isBitFlagged(ivar1, 0) && (getSkillCurrentLvl(ivar2) < getItemHashmapData(arg0, 750))) 
+			GOTO	flow_6
+		GOTO	flow_7
+	flow_6:
+		return 0;
+	flow_7:
+		ivar2 = getItemHashmapData(arg0, 751);
+		if (ivar2 == -1) {
+			return 1;
+		}
+		IF (isBitFlagged(ivar1, 1)) 
+			GOTO	flow_10
+		GOTO	flow_11
+	flow_10:
+		IF (getSkillActualLvl(ivar2) < getItemHashmapData(arg0, 752)) 
+			GOTO	flow_13
+	flow_11:
+		IF (isBitFlagged(ivar1, 1) && (getSkillCurrentLvl(ivar2) < getItemHashmapData(arg0, 752))) 
+			GOTO	flow_13
+		GOTO	flow_14
+	flow_13:
+		return 0;
+	flow_14:
+		ivar2 = getItemHashmapData(arg0, 753);
+		if (ivar2 == -1) {
+			return 1;
+		}
+		IF (isBitFlagged(ivar1, 2)) 
+			GOTO	flow_17
+		GOTO	flow_18
+	flow_17:
+		IF (getSkillActualLvl(ivar2) < getItemHashmapData(arg0, 754)) 
+			GOTO	flow_20
+	flow_18:
+		IF (isBitFlagged(ivar1, 2) && (getSkillCurrentLvl(ivar2) < getItemHashmapData(arg0, 754))) 
+			GOTO	flow_20
+		GOTO	flow_21
+	flow_20:
+		return 0;
+	flow_21:
+		ivar2 = getItemHashmapData(arg0, 755);
+		if (ivar2 == -1) {
+			return 1;
+		}
+		IF (isBitFlagged(ivar1, 3)) 
+			GOTO	flow_24
+		GOTO	flow_25
+	flow_24:
+		IF (getSkillActualLvl(ivar2) < getItemHashmapData(arg0, 756)) 
+			GOTO	flow_27
+	flow_25:
+		IF (isBitFlagged(ivar1, 3) && (getSkillCurrentLvl(ivar2) < getItemHashmapData(arg0, 756))) 
+			GOTO	flow_27
+		GOTO	flow_28
+	flow_27:
+		return 0;
+	flow_28:
+		ivar2 = getItemHashmapData(arg0, 757);
+		if (ivar2 == -1) {
+			return 1;
+		}
+		IF (isBitFlagged(ivar1, 4)) 
+			GOTO	flow_31
+		GOTO	flow_32
+	flow_31:
+		IF (getSkillActualLvl(ivar2) < getItemHashmapData(arg0, 758)) 
+			GOTO	flow_34
+	flow_32:
+		IF (isBitFlagged(ivar1, 4) && (getSkillCurrentLvl(ivar2) < getItemHashmapData(arg0, 758))) 
+			GOTO	flow_34
+		GOTO	flow_35
+	flow_34:
+		return 0;
+	flow_35:
+		ivar2 = getItemHashmapData(arg0, 759);
+		if (ivar2 == -1) {
+			return 1;
+		}
+		IF (isBitFlagged(ivar1, 5)) 
+			GOTO	flow_38
+		GOTO	flow_39
+	flow_38:
+		IF (getSkillActualLvl(ivar2) < getItemHashmapData(arg0, 760)) 
+			GOTO	flow_41
+	flow_39:
+		IF (isBitFlagged(ivar1, 5) && (getSkillCurrentLvl(ivar2) < getItemHashmapData(arg0, 760))) 
+			GOTO	flow_41
+		GOTO	flow_42
+	flow_41:
+		return 0;
+	flow_42:
+		return 1;
+}

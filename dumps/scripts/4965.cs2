@@ -1,0 +1,9 @@
+int script_4965(int arg0) {
+	int ivar1;
+	ivar1 = -1;
+	if (citadelConfigsInitialized()) {
+		ivar1 = script_4948(arg0);
+		return script_4959(arg0);
+	}
+	return 0;
+}

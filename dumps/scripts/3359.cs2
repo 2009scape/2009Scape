@@ -1,0 +1,46 @@
+cs2func_script_3359_struct(2,1,0) script_3359() {
+	flow_0:
+		SWITCH (standart_config_448) {
+			case 17945:
+				 GOTO flow_1
+			case 17946:
+				 GOTO flow_2
+			case 17947:
+				 GOTO flow_3
+			case 17948:
+				 GOTO flow_4
+			case 17949:
+				 GOTO flow_5
+			case 17950:
+				 GOTO flow_6
+			case 17951:
+				 GOTO flow_7
+			case 17952:
+				 GOTO flow_8
+			case 17953:
+				 GOTO flow_9
+			case 17954:
+				 GOTO flow_10
+		}
+		return newstruct cs2func_script_3359_struct(3, 18047, "Snaring Wave (Tier 1)");
+	flow_1:
+		return newstruct cs2func_script_3359_struct(3, 18047, "Snaring Wave (Tier 1)");
+	flow_2:
+		return newstruct cs2func_script_3359_struct(13, 18048, "Snaring Wave (Tier 2)");
+	flow_3:
+		return newstruct cs2func_script_3359_struct(23, 18049, "Snaring Wave (Tier 3)");
+	flow_4:
+		return newstruct cs2func_script_3359_struct(33, 18050, "Snaring Wave (Tier 4)");
+	flow_5:
+		return newstruct cs2func_script_3359_struct(43, 18051, "Snaring Wave (Tier 5)");
+	flow_6:
+		return newstruct cs2func_script_3359_struct(53, 18052, "Snaring Wave (Tier 6)");
+	flow_7:
+		return newstruct cs2func_script_3359_struct(63, 18053, "Snaring Wave (Tier 7)");
+	flow_8:
+		return newstruct cs2func_script_3359_struct(73, 18054, "Snaring Wave (Tier 8)");
+	flow_9:
+		return newstruct cs2func_script_3359_struct(83, 18055, "Snaring Wave (Tier 9)");
+	flow_10:
+		return newstruct cs2func_script_3359_struct(93, 18056, "Snaring Wave (Tier 10)");
+}

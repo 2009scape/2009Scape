@@ -1,0 +1,34 @@
+cs2func_script_4341_struct(0,2,0) script_4341(int arg0,int arg1,int arg2) {
+	int ivar3;
+	string svar0;
+	string svar1;
+	string svar2;
+	svar0 = intToStr(arg1);
+	svar1 = intToStr(arg2);
+	ivar3 = 0;
+	svar2 = "";
+	ivar3 = add(add(multiply(60, arg1), arg0), arg2);
+	if (ivar3 < 0) {
+		ivar3 = add(1440, ivar3);
+	}
+	arg2 = mod(ivar3, 60);
+	arg1 = divide(ivar3, 60);
+	if (arg1 > 23) {
+		arg1 = subtract(arg1, 24);
+	} else {
+		if (arg1 < 0) {
+			arg1 = subtract(24, arg1);
+		}
+	}
+	if (arg1 < 10) {
+		svar0 = "0" + intToStr(arg1);
+	} else {
+		svar0 = intToStr(arg1);
+	}
+	if (arg2 < 10) {
+		svar1 = "0" + intToStr(arg2);
+	} else {
+		svar1 = intToStr(arg2);
+	}
+	return newstruct cs2func_script_4341_struct(svar0, svar1);
+}

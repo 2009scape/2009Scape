@@ -1,0 +1,7 @@
+void script_4235() {
+	if (globalint_1494 > 100) {
+		globalint_1494 = 100;
+	}
+	setWidgetSize(multiplyDivide(globalint_1494, 100, 16384), 16384, 2, 2, new WidgetPointer(481,15));
+	return;
+}

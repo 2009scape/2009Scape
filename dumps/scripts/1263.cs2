@@ -1,0 +1,7 @@
+void script_1263(int arg0,int arg1) {
+	setWidgetRGB(new Color(45, 36, 6), new WidgetPointer(arg0));
+	if (arg1 != -1) {
+		setWidgetRGB(new Color(45, 36, 6), new WidgetPointer(arg1));
+	}
+	return;
+}

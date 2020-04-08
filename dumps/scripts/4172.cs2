@@ -1,0 +1,18 @@
+void script_4172(int arg0) {
+	int ivar1;
+	ivar1 = getItemIdInSlot(94, arg0);
+	if (ivar1 != -1) {
+		setWidgetSize(36, 32, 0, 0);
+		setItemOnWidgetMethod1200(ivar1, getItemAmtInSlot(94, arg0));
+		setWidgetShadowColor(new Color(48, 32, 32));
+		setWidgetBorderThickness(1);
+		setWidgetPosition(2, 0, 1, 1);
+	} else {
+		setWidgetSize(32, 32, 0, 0);
+		setWidgetSprite(cs2method_3408(105, 100, 796, arg0));
+		setWidgetShadowColor(new Color(0, 0, 0));
+		setWidgetBorderThickness(0);
+		setWidgetPosition(0, 0, 1, 1);
+	}
+	return;
+}

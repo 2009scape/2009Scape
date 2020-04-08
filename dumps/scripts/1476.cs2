@@ -1,0 +1,9 @@
+void script_1476(int arg0) {
+	if (getClientCycle() >= arg0) {
+		if (globalint_5 == 11) {
+			script_1479(globalstring_138);
+		}
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(762,17));
+	}
+	return;
+}

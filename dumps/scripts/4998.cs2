@@ -1,0 +1,6 @@
+void script_4998() {
+	script_5001();
+	setWidgetIsHidden(false, new WidgetPointer(1092,234));
+	setWidgetIsHidden(false, new WidgetPointer(1092,602));
+	return;
+}

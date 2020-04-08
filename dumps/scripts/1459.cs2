@@ -1,0 +1,46 @@
+void script_1459() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = 2;
+	ivar1 = 0;
+	ivar2 = 0;
+	while (ivar0 <= 9) {
+		switch (ivar0) {
+			case 2:
+				ivar1 = bitconfig_4885;
+				break;
+			case 3:
+				ivar1 = bitconfig_4886;
+				break;
+			case 4:
+				ivar1 = bitconfig_4887;
+				break;
+			case 5:
+				ivar1 = bitconfig_4888;
+				break;
+			case 6:
+				ivar1 = bitconfig_4889;
+				break;
+			case 7:
+				ivar1 = bitconfig_4890;
+				break;
+			case 8:
+				ivar1 = bitconfig_4891;
+				break;
+			case 9:
+				ivar1 = bitconfig_4892;
+		}
+		if (ivar1 > 0) {
+			script_1460(ivar0, script_1470(ivar0));
+		} else if (((boolean)ivar2)) {
+			script_1461(ivar0);
+			ivar2 = 1;
+		} else {
+			script_1462(ivar0);
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	script_1463(bitconfig_4893);
+	return;
+}

@@ -1,0 +1,124 @@
+void script_4652() {
+	setWidgetIsHidden(true, new WidgetPointer(173,1));
+	setWidgetIsHidden(true, new WidgetPointer(173,2));
+	setWidgetIsHidden(false, new WidgetPointer(173,3));
+	setWidgetIsHidden(true, new WidgetPointer(173,4));
+	setWidgetIsHidden(true, new WidgetPointer(173,8));
+	setWidgetIsHidden(false, new WidgetPointer(173,9));
+	setWidgetIsHidden(false, new WidgetPointer(173,10));
+	setWidgetIsHidden(false, new WidgetPointer(173,33));
+	if (isBitFlagged(standart_config_2194, 0)) {
+		setWidgetIsHidden(false, new WidgetPointer(173,11));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(173,11));
+	}
+	if (isBitFlagged(standart_config_2194, 1)) {
+		setWidgetIsHidden(false, new WidgetPointer(173,12));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(173,12));
+	}
+	if (isBitFlagged(standart_config_2194, 2)) {
+		setWidgetIsHidden(false, new WidgetPointer(173,15));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(173,15));
+	}
+	if (isBitFlagged(standart_config_2194, 3)) {
+		setWidgetIsHidden(false, new WidgetPointer(173,16));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(173,16));
+	}
+	if (isBitFlagged(standart_config_2194, 4)) {
+		setWidgetIsHidden(false, new WidgetPointer(173,17));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(173,17));
+	}
+	if (isBitFlagged(standart_config_2194, 5)) {
+		setWidgetIsHidden(false, new WidgetPointer(173,18));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(173,18));
+	}
+	if (isBitFlagged(standart_config_2194, 6)) {
+		setWidgetIsHidden(false, new WidgetPointer(173,19));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(173,19));
+	}
+	if (isBitFlagged(standart_config_2194, 7)) {
+		setWidgetIsHidden(false, new WidgetPointer(173,20));
+		setWidgetIsHidden(false, new WidgetPointer(173,34));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(173,20));
+		setWidgetIsHidden(true, new WidgetPointer(173,34));
+	}
+	if (isBitFlagged(standart_config_2194, 8)) {
+		setWidgetIsHidden(false, new WidgetPointer(173,21));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(173,21));
+	}
+	if (isBitFlagged(standart_config_2194, 9)) {
+		setWidgetIsHidden(false, new WidgetPointer(173,22));
+		setWidgetIsHidden(false, new WidgetPointer(173,35));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(173,22));
+		setWidgetIsHidden(true, new WidgetPointer(173,35));
+	}
+	if (isBitFlagged(standart_config_2194, 10)) {
+		setWidgetIsHidden(false, new WidgetPointer(173,23));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(173,23));
+	}
+	if (isBitFlagged(standart_config_2194, 11)) {
+		setWidgetIsHidden(false, new WidgetPointer(173,24));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(173,24));
+	}
+	if (isBitFlagged(standart_config_2194, 12)) {
+		setWidgetIsHidden(false, new WidgetPointer(173,25));
+		setWidgetIsHidden(false, new WidgetPointer(173,26));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(173,25));
+		setWidgetIsHidden(true, new WidgetPointer(173,26));
+	}
+	if (isBitFlagged(standart_config_2194, 13)) {
+		setWidgetIsHidden(false, new WidgetPointer(173,27));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(173,27));
+	}
+	if (isBitFlagged(standart_config_2194, 14)) {
+		setWidgetIsHidden(false, new WidgetPointer(173,28));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(173,28));
+	}
+	if (isBitFlagged(standart_config_2194, 15)) {
+		setWidgetIsHidden(false, new WidgetPointer(173,31));
+		setWidgetIsHidden(false, new WidgetPointer(173,36));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(173,31));
+		setWidgetIsHidden(true, new WidgetPointer(173,36));
+	}
+	if (isBitFlagged(standart_config_2194, 16)) {
+		setWidgetIsHidden(false, new WidgetPointer(173,29));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(173,29));
+	}
+	if (isBitFlagged(standart_config_2194, 17)) {
+		setWidgetIsHidden(false, new WidgetPointer(173,30));
+		setWidgetIsHidden(false, new WidgetPointer(173,37));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(173,30));
+		setWidgetIsHidden(true, new WidgetPointer(173,37));
+	}
+	if (isBitFlagged(standart_config_2194, 18)) {
+		setWidgetIsHidden(false, new WidgetPointer(173,13));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(173,13));
+	}
+	if (isBitFlagged(standart_config_2194, 19)) {
+		setWidgetIsHidden(false, new WidgetPointer(173,14));
+		setWidgetIsHidden(false, new WidgetPointer(173,32));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(173,14));
+		setWidgetIsHidden(true, new WidgetPointer(173,32));
+	}
+	script_4653();
+	return;
+}

@@ -1,0 +1,54 @@
+void script_1318(int arg0) {
+	if (arg0 == 17170456) {
+		if (((boolean)globalint_163)) {
+			setWidgetModel(18796, new WidgetPointer(262,24));
+			globalint_163 = 1;
+		} else {
+			setWidgetModel(18794, new WidgetPointer(262,24));
+			globalint_163 = 0;
+		}
+	} else if (arg0 == 17170457) {
+		if (((boolean)globalint_164)) {
+			setWidgetModel(18796, new WidgetPointer(262,25));
+			globalint_164 = 1;
+		} else {
+			setWidgetModel(18794, new WidgetPointer(262,25));
+			globalint_164 = 0;
+		}
+	} else if (arg0 == 17170452) {
+		if (((boolean)globalint_162)) {
+			setWidgetModel(18796, new WidgetPointer(262,20));
+			globalint_162 = 1;
+		} else {
+			setWidgetModel(18794, new WidgetPointer(262,20));
+			globalint_162 = 0;
+		}
+	} else if (arg0 == 17170453) {
+		if (((boolean)globalint_165)) {
+			setWidgetModel(18792, new WidgetPointer(262,21));
+			globalint_165 = 1;
+		} else {
+			setWidgetModel(18790, new WidgetPointer(262,21));
+			globalint_165 = 0;
+		}
+	} else if (arg0 == 17170454) {
+		if (((boolean)globalint_166)) {
+			setWidgetModel(18792, new WidgetPointer(262,22));
+			globalint_166 = 1;
+		} else {
+			setWidgetModel(18790, new WidgetPointer(262,22));
+			globalint_166 = 0;
+		}
+	} else {
+		if (arg0 == 17170455) {
+			if (((boolean)globalint_167)) {
+				setWidgetModel(18792, new WidgetPointer(262,23));
+				globalint_167 = 1;
+			} else {
+				setWidgetModel(18790, new WidgetPointer(262,23));
+				globalint_167 = 0;
+			}
+		}
+	}
+	return;
+}

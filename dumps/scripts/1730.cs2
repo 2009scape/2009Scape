@@ -1,0 +1,20 @@
+void script_1730(int arg0,int arg1) {
+	flow_0:
+		IF (arg1 == -1) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		IF (setWidgetRegister(new WidgetPointer(arg0))) 
+			GOTO	flow_3
+	flow_2:
+		IF (setWidgetRegister(new WidgetPointer(arg0), arg1) && (globalint_198 != 1)) 
+			GOTO	flow_4
+		GOTO	flow_5
+	flow_3:
+	flow_4:
+		setWidgetHidden(0);
+		globalint_198 = 1;
+		setScriptCallOnGameloop(2196, new WidgetPointer(arg0), arg1, getWidgetText(), "Iis");
+	flow_5:
+		return;
+}

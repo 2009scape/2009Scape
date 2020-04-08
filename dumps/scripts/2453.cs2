@@ -1,0 +1,96 @@
+int script_2453(int arg0) {
+	int ivar1;
+	ivar1 = 16777215;
+	switch (arg0) {
+		case 0:
+			ivar1 = script_2454(bitconfig_6316);
+			break;
+		case 1:
+			ivar1 = script_2454(bitconfig_6317);
+			break;
+		case 2:
+			ivar1 = script_2454(bitconfig_6318);
+			break;
+		case 3:
+			ivar1 = script_2454(bitconfig_6319);
+			break;
+		case 4:
+			ivar1 = script_2454(bitconfig_6320);
+			break;
+		case 5:
+			ivar1 = script_2454(bitconfig_6321);
+			break;
+		case 6:
+			ivar1 = script_2454(bitconfig_6322);
+			break;
+		case 7:
+			ivar1 = script_2454(bitconfig_6323);
+			break;
+		case 8:
+			ivar1 = script_2454(bitconfig_6324);
+			break;
+		case 9:
+			ivar1 = script_2454(bitconfig_6325);
+			break;
+		case 10:
+			ivar1 = script_2454(bitconfig_6326);
+			break;
+		case 11:
+			ivar1 = script_2454(bitconfig_6327);
+			break;
+		case 12:
+			ivar1 = script_2454(bitconfig_6328);
+			break;
+		case 13:
+			ivar1 = script_2454(bitconfig_6329);
+			break;
+		case 14:
+			ivar1 = script_2454(bitconfig_6330);
+			break;
+		case 15:
+			ivar1 = script_2454(bitconfig_6331);
+			break;
+		case 16:
+			ivar1 = script_2454(bitconfig_6332);
+			break;
+		case 17:
+			ivar1 = script_2454(bitconfig_6333);
+			break;
+		case 18:
+			ivar1 = script_2454(bitconfig_6334);
+			break;
+		case 19:
+			ivar1 = script_2454(bitconfig_6335);
+			break;
+		case 20:
+			ivar1 = script_2454(bitconfig_6336);
+			break;
+		case 21:
+			ivar1 = script_2454(bitconfig_6337);
+			break;
+		case 22:
+			ivar1 = script_2454(bitconfig_6338);
+			break;
+		case 23:
+			ivar1 = script_2454(bitconfig_6339);
+			break;
+		case 24:
+			ivar1 = script_2454(bitconfig_6340);
+			break;
+		case 25:
+			ivar1 = script_2454(bitconfig_6341);
+			break;
+		case 26:
+			ivar1 = script_2454(bitconfig_6342);
+			break;
+		case 27:
+			ivar1 = script_2454(bitconfig_6343);
+			break;
+		case 28:
+			ivar1 = script_2454(bitconfig_6344);
+			break;
+		case 29:
+			ivar1 = script_2454(bitconfig_6345);
+	}
+	return ivar1;
+}

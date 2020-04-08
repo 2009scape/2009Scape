@@ -1,0 +1,6 @@
+void script_3187(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6) {
+	int ivar7;
+	ivar7 = getTextWidth(2710, getWidgetText(new WidgetPointer(arg1)));
+	setScriptCallOnGameloop(3188, new WidgetPointer(arg0), arg2, ivar7, new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), new WidgetPointer(arg6), "I1iIIII", new WidgetPointer(arg0));
+	return;
+}

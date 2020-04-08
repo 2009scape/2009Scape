@@ -1,0 +1,31 @@
+void script_1032(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	cs2method2100(0, 0, new WidgetPointer(157,25));
+	deleteAllExtraChilds(new WidgetPointer(157,24));
+	setWidgetIsHidden(false, new WidgetPointer(157,17));
+	setWidgetIsHidden(false, new WidgetPointer(157,35));
+	setScriptCallOnMousePressed(1028, "", new WidgetPointer(157,30));
+	setWidgetText(new WidgetPointer(157,30), "Shortcut keys");
+	deleteAllExtraChilds(new WidgetPointer(157,23));
+	deleteAllExtraChilds(new WidgetPointer(157,25));
+	script_1033(cs2method_3408(105, 115, arg0, arg1));
+	setWidgetText(new WidgetPointer(157,20), "Page " + intToStr(add(arg1, 1)) + " of " + intToStr(arg2));
+	ivar3 = add(arg1, 1);
+	ivar4 = subtract(arg1, 1);
+	if (arg1 != subtract(arg2, 1)) {
+		setScriptCallOnMousePressed(784, arg0, ivar3, arg2, "gii", new WidgetPointer(157,21));
+		cs2method2103(0, new WidgetPointer(157,21));
+	} else {
+		setScriptCallOnMousePressed(-1, "", new WidgetPointer(157,21));
+		cs2method2103(200, new WidgetPointer(157,21));
+	}
+	if (arg1 != 0) {
+		setScriptCallOnMousePressed(784, arg0, ivar4, arg2, "gii", new WidgetPointer(157,22));
+		cs2method2103(0, new WidgetPointer(157,22));
+	} else {
+		setScriptCallOnMousePressed(-1, "", new WidgetPointer(157,22));
+		cs2method2103(200, new WidgetPointer(157,22));
+	}
+	return;
+}

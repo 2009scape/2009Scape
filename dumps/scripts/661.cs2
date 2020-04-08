@@ -1,0 +1,59 @@
+void script_661(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,int arg11,int arg12,string arg13,string arg14) {
+	cs2func_script_3357_struct(2,1,0) structdump_0;
+	cs2func_script_3358_struct(2,1,0) structdump_1;
+	cs2func_script_3359_struct(2,1,0) structdump_2;
+	cs2func_script_3360_struct(2,1,0) structdump_3;
+	cs2func_script_3361_struct(2,1,0) structdump_4;
+	cs2func_script_3362_struct(2,1,0) structdump_5;
+	cs2func_script_775_struct(2,1,0) structdump_6;
+	if (setWidgetRegister(new WidgetPointer(arg0), 0)) {
+		switch (arg5) {
+			case 18027:
+				structdump_0 = script_3357();
+				arg5 = structdump_0.intpart_1;
+				arg13 = structdump_0.stringpart_0;
+				arg4 = structdump_0.intpart_0;
+				break;
+			case 18037:
+				structdump_1 = script_3358();
+				arg5 = structdump_1.intpart_1;
+				arg13 = structdump_1.stringpart_0;
+				arg4 = structdump_1.intpart_0;
+				break;
+			case 18047:
+				structdump_2 = script_3359();
+				arg5 = structdump_2.intpart_1;
+				arg13 = structdump_2.stringpart_0;
+				arg4 = structdump_2.intpart_0;
+				break;
+			case 18057:
+				structdump_3 = script_3360();
+				arg5 = structdump_3.intpart_1;
+				arg13 = structdump_3.stringpart_0;
+				arg4 = structdump_3.intpart_0;
+				break;
+			case 18067:
+				structdump_4 = script_3361();
+				arg5 = structdump_4.intpart_1;
+				arg13 = structdump_4.stringpart_0;
+				arg4 = structdump_4.intpart_0;
+				break;
+			case 18077:
+				structdump_5 = script_3362();
+				arg5 = structdump_5.intpart_1;
+				arg13 = structdump_5.stringpart_0;
+				arg4 = structdump_5.intpart_0;
+				break;
+			case 12461:
+				structdump_6 = script_775();
+				arg5 = structdump_6.intpart_1;
+				arg13 = structdump_6.stringpart_0;
+				arg4 = structdump_6.intpart_0;
+		}
+		arg13 = concat(arg13, " (" + intToStr(bitconfig_4288) + " Special Move points)");
+		script_664(43384906, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12);
+		setScriptCallOnMouseOver(10, new WidgetPointer(-32768,3), new WidgetPointer(662,73), arg4, arg13, arg14, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, "IIissoioioioi");
+		setScriptCallOnMouseExit(778, new WidgetPointer(662,73), "I");
+	}
+	return;
+}

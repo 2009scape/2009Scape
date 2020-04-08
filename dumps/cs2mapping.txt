@@ -1,0 +1,1472 @@
+Script 0 - [0,0,null,0]: null
+Script 1 - [0,0,null,0]: null
+Script 2 - [0,0,null,0]: null
+Script 3 - [0,0,null,0]: null
+Script 4 - [0,0,null,0]: null
+Script 5 - [0,0,null,0]: null
+Script 6 - [0,0,null,0]: null
+Script 7 - [0,0,null,0]: null
+Script 8 - [0,0,null,0]: null
+Script 9 - [0,0,null,0]: null
+Script 10 - [0,0,null,0]: null
+Script 11 - [0,0,null,0]: null
+Script 12 - [0,0,null,0]: null
+Script 13 - [0,0,null,0]: null
+Script 14 - [0,0,null,0]: null
+Script 15 - [0,0,null,0]: null
+Script 16 - [0,0,null,0]: null
+Script 17 - [0,0,null,0]: null
+Script 18 - [0,0,null,0]: null
+Script 19 - [0,0,null,0]: null
+Script 20 - [0,0,null,0]: null
+Script 21 - [0,0,null,0]: null
+Script 22 - [0,0,null,0]: null
+Script 23 - [0,0,null,0]: null
+Script 24 - [0,0,null,0]: null
+Script 25 - [0,0,null,0]: null
+Script 26 - [0,0,null,0]: null
+Script 27 - [0,0,null,0]: null
+Script 28 - [0,0,null,0]: null
+Script 29 - [0,0,null,0]: null
+Script 30 - [0,0,null,0]: null
+Script 31 - [0,0,null,0]: null
+Script 32 - [0,0,null,0]: null
+Script 33 - [0,0,null,0]: null
+Script 34 - [0,0,null,0]: null
+Script 35 - [0,0,null,0]: null
+Script 36 - [0,0,null,0]: null
+Script 37 - [0,0,null,0]: null
+Script 38 - [0,0,null,0]: null
+Script 39 - [0,0,null,0]: null
+Script 40 - [0,0,null,0]: null
+Script 41 - [0,0,null,0]: null
+Script 42 - [0,0,null,0]: null
+Script 43 - [0,0,null,0]: null
+Script 44 - [0,0,null,0]: null
+Script 45 - [0,0,null,0]: null
+Script 46 - [0,0,null,0]: null
+Script 47 - [0,0,null,0]: null
+Script 48 - [0,0,null,0]: null
+Script 49 - [0,0,null,0]: null
+Script 50 - [0,0,null,0]: null
+Script 51 - [0,0,null,0]: null
+Script 52 - [0,0,null,0]: null
+Script 53 - [0,0,null,0]: null
+Script 54 - [0,0,null,0]: null
+Script 55 - [0,0,null,0]: null
+Script 56 - [0,0,null,0]: null
+Script 57 - [0,0,null,0]: null
+Script 58 - [0,0,null,0]: null
+Script 59 - [0,0,null,0]: null
+Script 60 - [0,0,null,0]: null
+Script 61 - [0,0,null,0]: null
+Script 62 - [0,0,null,0]: null
+Script 63 - [0,0,null,0]: null
+Script 64 - [0,0,null,0]: null
+Script 65 - [0,0,null,0]: null
+Script 66 - [0,0,null,0]: null
+Script 67 - [0,0,null,0]: null
+Script 68 - [0,0,null,0]: null
+Script 69 - [0,0,null,0]: null
+Script 70 - [0,0,null,0]: null
+Script 71 - [0,0,null,0]: null
+Script 72 - [0,0,null,0]: null
+Script 73 - [0,0,null,0]: null
+Script 74 - [0,0,null,0]: null
+Script 75 - [0,0,null,0]: null
+Script 76 - [0,0,null,0]: null
+Script 77 - [0,0,null,0]: null
+Script 78 - [0,0,null,0]: null
+Script 79 - [0,0,null,0]: null
+Script 80 - [0,0,null,0]: null
+Script 81 - [0,0,null,0]: null
+Script 82 - [0,0,null,0]: null
+Script 83 - [0,0,null,0]: null
+Script 84 - [0,0,null,0]: null
+Script 85 - [0,0,null,0]: null
+Script 86 - [0,0,null,0]: null
+Script 87 - [0,0,null,0]: null
+Script 88 - [0,0,null,0]: null
+Script 89 - [0,0,null,0]: null
+Script 90 - [0,0,null,0]: null
+Script 91 - [0,0,null,0]: null
+Script 92 - [0,0,null,0]: null
+Script 93 - [0,0,null,0]: null
+Script 94 - [0,0,null,0]: null
+Script 95 - [0,0,null,0]: null
+Script 96 - [0,0,null,0]: null
+Script 97 - [0,0,null,0]: null
+Script 98 - [0,0,null,0]: null
+Script 99 - [0,0,null,0]: null
+Script 100 - [0,0,null,0]: null
+Script 101 - [0,0,null,0]: null
+Script 102 - [0,0,null,0]: null
+Script 103 - [0,0,null,0]: null
+Script 104 - [0,0,null,0]: null
+Script 105 - [0,0,null,0]: null
+Script 106 - [0,0,null,0]: null
+Script 107 - [0,0,null,0]: null
+Script 108 - [0,0,null,0]: null
+Script 109 - [0,0,null,0]: null
+Script 110 - [0,0,null,0]: null
+Script 111 - [0,0,null,0]: null
+Script 112 - [0,0,null,0]: null
+Script 113 - [0,0,null,0]: null
+Script 114 - [0,0,null,0]: null
+Script 115 - [0,0,null,0]: null
+Script 116 - [0,0,null,0]: null
+Script 117 - [0,0,null,0]: null
+Script 118 - [0,0,null,0]: null
+Script 119 - [0,0,null,0]: null
+Script 120 - [0,0,null,0]: null
+Script 121 - [0,0,null,0]: null
+Script 122 - [0,0,null,0]: null
+Script 123 - [0,0,null,0]: null
+Script 124 - [0,0,null,0]: null
+Script 125 - [0,0,null,0]: null
+Script 126 - [0,0,null,0]: null
+Script 127 - [0,0,null,0]: null
+Script 128 - [0,0,null,0]: null
+Script 129 - [0,0,null,0]: null
+Script 130 - [0,0,null,0]: null
+Script 131 - [0,0,null,0]: null
+Script 132 - [0,0,null,0]: null
+Script 133 - [0,0,null,0]: null
+Script 134 - [0,0,null,0]: null
+Script 135 - [0,0,null,0]: null
+Script 136 - [0,0,null,0]: null
+Script 137 - [0,0,null,0]: null
+Script 138 - [0,0,null,0]: null
+Script 139 - [0,0,null,0]: null
+Script 140 - [0,0,null,0]: null
+Script 141 - [0,0,null,0]: null
+Script 142 - [0,0,null,0]: null
+Script 143 - [0,0,null,0]: null
+Script 144 - [0,0,null,0]: null
+Script 145 - [0,0,null,0]: null
+Script 146 - [0,0,null,0]: null
+Script 147 - [0,0,null,0]: null
+Script 148 - [0,0,null,0]: null
+Script 149 - [0,0,null,0]: null
+Script 150 - [0,0,null,0]: null
+Script 151 - [0,0,null,0]: null
+Script 152 - [0,0,null,0]: null
+Script 153 - [0,0,null,0]: null
+Script 154 - [0,0,null,0]: null
+Script 155 - [0,0,null,0]: null
+Script 156 - [0,0,null,0]: null
+Script 157 - [0,0,null,0]: null
+Script 158 - [0,0,null,0]: null
+Script 159 - [0,0,null,0]: null
+Script 160 - [0,0,null,0]: null
+Script 161 - [0,0,null,0]: null
+Script 162 - [0,0,null,0]: null
+Script 163 - [0,0,null,0]: null
+Script 164 - [0,0,null,0]: null
+Script 165 - [0,0,null,0]: null
+Script 166 - [0,0,null,0]: null
+Script 167 - [0,0,null,0]: null
+Script 168 - [0,0,null,0]: null
+Script 169 - [0,0,null,0]: null
+Script 170 - [0,0,null,0]: null
+Script 171 - [0,0,null,0]: null
+Script 172 - [0,0,null,0]: null
+Script 173 - [0,0,null,0]: null
+Script 174 - [0,0,null,0]: null
+Script 175 - [0,0,null,0]: null
+Script 176 - [0,0,null,0]: null
+Script 177 - [0,0,null,0]: null
+Script 178 - [0,0,null,0]: null
+Script 179 - [0,0,null,0]: null
+Script 180 - [0,0,null,0]: null
+Script 181 - [0,0,null,0]: null
+Script 182 - [0,0,null,0]: null
+Script 183 - [0,0,null,0]: null
+Script 184 - [0,0,null,0]: null
+Script 185 - [0,0,null,0]: null
+Script 186 - [0,0,null,0]: null
+Script 187 - [0,0,null,0]: null
+Script 188 - [0,0,null,0]: null
+Script 189 - [0,0,null,0]: null
+Script 190 - [0,0,null,0]: null
+Script 191 - [0,0,null,0]: null
+Script 192 - [0,0,null,0]: null
+Script 193 - [0,0,null,0]: null
+Script 194 - [0,0,null,0]: null
+Script 195 - [0,0,null,0]: null
+Script 196 - [0,0,null,0]: null
+Script 197 - [0,0,null,0]: null
+Script 198 - [0,0,null,0]: null
+Script 199 - [0,0,null,0]: null
+Script 200 - [0,0,null,0]: null
+Script 201 - [0,0,null,0]: null
+Script 202 - [0,0,null,0]: null
+Script 203 - [0,0,null,0]: null
+Script 204 - [0,0,null,0]: null
+Script 205 - [0,0,null,0]: null
+Script 206 - [0,0,null,0]: null
+Script 207 - [0,0,null,0]: null
+ f11=17956908, 12=17956909, 13=17956910, 14=17956911, 15=17956912, 17=17956914, 16=17956913, 19=17956916, 18=17956915, 21=17956918, 20=17956917, 23=17956920, 22=17956919, 25=17956922, 24=17956921, 27=17956924, 26=17956923, 29=17956926, 28=17956925, 31=17956928, 30=17956927, 34=17956931, 35=17956932, 32=17956929, 33=17956930, 38=17956935, 39=17956936, 36=17956933, 37=17956934, 42=17956939, 43=17956940, 40=17956937, 41=17956938, 46=17956943, 47=17956944, 44=17956941, 45=17956942, 51=17956948, 50=17956947, 49=17956946, 48=17956945, 55=17956952, 54=17956951, 53=17956950, 52=17956949, 59=17956956, 58=1 7956955, 57=17956954, 56=17956953, 63=17956960, 62=17956959, 61=17956958, 60=17956957, 68=17956965, 69=17956966, 70=17956967, 71=17956968, 64=17956961, 65=17956962, 66=17956963, 67=17956964, 76=17956973, 77=17956974, 78=17956975, 79=17956976, 72=17956969, 73=17956970, 74=17956971, 75=17956972, 85=17956982, 84=17956981, 87=17956984, 86=17956983, 81=17956978, 80=17956977, 83=17956980, 82=17956979, 93=17956990, 92=17956989, 95=17956992, 94=17956991, 89=17956986, 88=17956985, 91=17956988, 90=17956987, 102=17956999, 103=17957000, 100=17956997, 101=17956998, 98=17956995, 99=17956996, 96=17956993, 97=17956994, 110=17957007, 111=17957008, 108=17957005, 109=17957006, 106=17957003, 107=17957004, 104=17957001, 105=17957002, 119=17957016, 118=17957015, 117=17957014, 116=17957013, 115=17957012, 114=17957011, 113=17957010, 112=17957009}
+Script 210 - [0,0,null,0]: null
+Script 211 - [0,0,null,0]: null
+Script 212 - [0,0,null,0]: null
+Script 213 - [0,0,null,0]: null
+Script 214 - [0,0,null,0]: null
+Script 215 - [0,0,null,0]: null
+Script 216 - [0,0,null,0]: null
+Script 217 - [0,0,null,0]: null
+Script 218 - [0,0,null,0]: null
+Script 219 - [0,0,null,0]: null
+Script 220 - [0,0,null,0]: null
+Script 221 - [0,0,null,0]: null
+Script 222 - [0,0,null,0]: null
+Script 223 - [0,0,null,0]: null
+Script 224 - [0,0,null,0]: null
+Script 225 - [0,0,null,0]: null
+Script 226 - [0,0,null,0]: null
+Script 227 - [0,0,null,0]: null
+Script 228 - [0,0,null,0]: null
+Script 229 - [0,0,null,0]: null
+Script 230 - [0,0,null,0]: null
+Script 231 - [0,0,null,0]: null
+Script 232 - [0,0,null,0]: null
+Script 233 - [0,0,null,0]: null
+Script 234 - [0,0,null,0]: null
+Script 235 - [0,0,null,0]: null
+Script 236 - [0,0,null,0]: null
+Script 237 - [0,0,null,0]: null
+Script 238 - [0,0,null,0]: null
+Script 239 - [0,0,null,0]: null
+Script 240 - [0,0,null,0]: null
+Script 241 - [0,0,null,0]: null
+Script 242 - [0,0,null,0]: null
+Script 243 - [0,0,null,0]: null
+Script 244 - [0,0,null,0]: null
+Script 245 - [0,0,null,0]: null
+Script 246 - [0,0,null,0]: null
+Script 247 - [0,0,null,0]: null
+Script 248 - [0,0,null,0]: null
+Script 249 - [0,0,null,0]: null
+Script 250 - [0,0,null,0]: null
+Script 251 - [0,0,null,0]: null
+Script 252 - [0,0,null,0]: null
+Script 253 - [0,0,null,0]: null
+Script 254 - [0,0,null,0]: null
+Script 255 - [0,0,null,0]: null
+Script 256 - [0,0,null,0]: null
+Script 257 - [0,0,null,0]: null
+Script 258 - [0,0,null,0]: null
+Script 259 - [0,0,null,0]: null
+Script 260 - [0,0,null,0]: null
+Script 261 - [0,0,null,0]: null
+Script 262 - [0,0,null,0]: null
+Script 263 - [0,0,null,0]: null
+Script 264 - [0,0,null,0]: null
+Script 265 - [0,0,null,0]: null
+Script 266 - [0,0,null,0]: null
+Script 267 - [0,0,null,0]: null
+Script 268 - [0,0,null,0]: null
+Script 269 - [0,0,null,0]: null
+Script 270 - [0,0,null,0]: null
+Script 271 - [0,0,null,0]: null
+Script 272 - [0,0,null,0]: null
+Script 273 - [0,0,null,0]: null
+Script 274 - [0,0,null,0]: null
+Script 275 - [0,0,null,0]: null
+Script 276 - [0,0,null,0]: null
+Script 277 - [0,0,null,0]: null
+Script 278 - [0,0,null,0]: null
+Script 279 - [0,0,null,0]: null
+Script 280 - [0,0,null,0]: null
+Script 281 - [0,0,null,0]: null
+Script 282 - [0,0,null,0]: null
+Script 283 - [0,0,null,0]: null
+Script 284 - [0,0,null,0]: null
+Script 285 - [0,0,null,0]: null
+Script 286 - [0,0,null,0]: null
+Script 287 - [0,0,null,0]: null
+Script 288 - [0,0,null,0]: null
+Script 289 - [0,0,null,0]: null
+Script 290 - [0,0,null,0]: null
+Script 291 - [0,0,null,0]: null
+Script 292 - [0,0,null,0]: null
+Script 293 - [0,0,null,0]: null
+Script 294 - [0,0,null,0]: null
+Script 295 - [0,0,null,0]: null
+Script 296 - [0,0,null,0]: null
+Script 297 - [0,0,null,0]: null
+Script 298 - [0,0,null,0]: null
+Script 299 - [0,0,null,0]: null
+Script 300 - [0,0,null,0]: null
+Script 301 - [0,0,null,0]: null
+Script 302 - [0,0,null,0]: null
+Script 303 - [0,0,null,0]: null
+Script 304 - [0,0,null,0]: null
+Script 305 - [0,0,null,0]: null
+Script 306 - [0,0,null,0]: null
+Script 307 - [0,0,null,0]: null
+Script 308 - [0,0,null,0]: null
+Script 309 - [0,0,null,0]: null
+Script 310 - [0,0,null,0]: null
+Script 311 - [0,0,null,0]: null
+Script 312 - [0,0,null,0]: null
+Script 313 - [0,0,null,0]: null
+Script 314 - [0,0,null,0]: null
+Script 315 - [0,0,null,0]: null
+Script 316 - [0,0,null,0]: null
+Script 317 - [0,0,null,0]: null
+Script 318 - [0,0,null,0]: null
+Script 319 - [0,0,null,0]: null
+Script 320 - [0,0,null,0]: null
+Script 321 - [0,0,null,0]: null
+Script 322 - [0,0,null,0]: null
+Script 323 - [0,0,null,0]: null
+Script 324 - [0,0,null,0]: null
+Script 325 - [0,0,null,0]: null
+Script 326 - [0,0,null,0]: null
+Script 327 - [0,0,null,0]: null
+Script 328 - [0,0,null,0]: null
+Script 329 - [0,0,null,0]: null
+Script 330 - [0,0,null,0]: null
+Script 331 - [0,0,null,0]: null
+Script 332 - [0,0,null,0]: null
+Script 333 - [0,0,null,0]: null
+Script 334 - [0,0,null,0]: null
+Script 335 - [0,0,null,0]: null
+Script 336 - [0,0,null,0]: null
+Script 337 - [0,0,null,0]: null
+Script 338 - [0,0,null,0]: null
+Script 339 - [0,0,null,0]: null
+Script 340 - [0,0,null,0]: null
+Script 341 - [0,0,null,0]: null
+Script 342 - [0,0,null,0]: null
+Script 343 - [0,0,null,0]: null
+Script 344 - [0,0,null,0]: null
+Script 345 - [0,0,null,0]: null
+Script 346 - [0,0,null,0]: null
+Script 347 - [0,0,null,0]: null
+Script 348 - [0,0,null,0]: null
+Script 349 - [0,0,null,0]: null
+Script 350 - [0,0,null,0]: null
+Script 351 - [0,0,null,0]: null
+Script 352 - [0,0,null,0]: null
+Script 353 - [0,0,null,0]: null
+Script 354 - [0,0,null,0]: null
+Script 355 - [0,0,null,0]: null
+Script 356 - [0,0,null,0]: null
+Script 357 - [0,0,null,0]: null
+Script 358 - [0,0,null,0]: null
+Script 359 - [0,0,null,0]: null
+Script 360 - [0,0,null,0]: null
+Script 361 - [0,0,null,0]: null
+Script 362 - [0,0,null,0]: null
+Script 363 - [0,0,null,0]: null
+Script 364 - [0,0,null,0]: null
+Script 365 - [0,0,null,0]: null
+Script 366 - [0,0,null,0]: null
+Script 367 - [0,0,null,0]: null
+Script 368 - [0,0,null,0]: null
+Script 369 - [0,0,null,0]: null
+Script 370 - [0,0,null,0]: null
+Script 371 - [0,0,null,0]: null
+Script 372 - [0,0,null,0]: null
+Script 373 - [0,0,null,0]: null
+Script 374 - [0,0,null,0]: null
+Script 375 - [0,0,null,0]: null
+Script 376 - [0,0,null,0]: null
+Script 377 - [0,0,null,0]: null
+Script 378 - [0,0,null,0]: null
+Script 379 - [0,0,null,0]: null
+Script 380 - [0,0,null,0]: null
+Script 381 - [0,0,null,0]: null
+Script 382 - [0,0,null,0]: null
+Script 383 - [0,0,null,0]: null
+Script 384 - [0,0,null,0]: null
+Script 385 - [0,0,null,0]: null
+Script 386 - [0,0,null,0]: null
+Script 387 - [0,0,null,0]: null
+Script 388 - [0,0,null,0]: null
+Script 389 - [0,0,null,0]: null
+Script 390 - [0,0,null,0]: null
+Script 391 - [0,0,null,0]: null
+Script 392 - [0,0,null,0]: null
+Script 393 - [0,0,null,0]: null
+Script 394 - [0,0,null,0]: null
+Script 395 - [0,0,null,0]: null
+Script 396 - [0,0,null,0]: null
+Script 397 - [0,0,null,0]: null
+Script 398 - [0,0,null,0]: null
+Script 399 - [0,0,null,0]: null
+Script 400 - [0,0,null,0]: null
+Script 401 - [0,0,null,0]: null
+Script 402 - [0,0,null,0]: null
+Script 403 - [0,0,null,0]: null
+Script 404 - [0,0,null,0]: null
+Script 405 - [0,0,null,0]: null
+Script 406 - [0,0,null,0]: null
+Script 407 - [0,0,null,0]: null
+Script 408 - [0,0,null,0]: null
+Script 409 - [0,0,null,0]: null
+Script 410 - [0,0,null,0]: null
+Script 411 - [0,0,null,0]: null
+Script 412 - [0,0,null,0]: null
+Script 413 - [0,0,null,0]: null
+Script 414 - [0,0,null,0]: null
+Script 415 - [0,0,null,0]: null
+Script 416 - [0,0,null,0]: null
+Script 417 - [0,0,null,0]: null
+Script 418 - [0,0,null,0]: null
+Script 419 - [0,0,null,0]: null
+Script 420 - [0,0,null,0]: null
+Script 421 - [0,0,null,0]: null
+Script 422 - [0,0,null,0]: null
+Script 423 - [0,0,null,0]: null
+Script 424 - [0,0,null,0]: null
+Script 425 - [0,0,null,0]: null
+Script 426 - [0,0,null,0]: null
+Script 427 - [0,0,null,0]: null
+Script 428 - [0,0,null,0]: null
+Script 429 - [0,0,null,0]: null
+Script 430 - [0,0,null,0]: null
+Script 431 - [0,0,null,0]: null
+Script 432 - [0,0,null,0]: null
+Script 433 - [0,0,null,0]: null
+Script 434 - [0,0,null,0]: null
+Script 435 - [0,0,null,0]: null
+Script 436 - [0,0,null,0]: null
+Script 437 - [0,0,null,0]: null
+Script 438 - [0,0,null,0]: null
+Script 439 - [0,0,null,0]: null
+Script 440 - [0,0,null,0]: null
+Script 441 - [0,0,null,0]: null
+Script 442 - [0,0,null,0]: null
+Script 443 - [0,0,null,0]: null
+Script 444 - [0,0,null,0]: null
+Script 445 - [0,0,null,0]: null
+Script 446 - [0,0,null,0]: null
+Script 447 - [0,0,null,0]: null
+Script 448 - [0,0,null,0]: null
+Script 449 - [0,0,null,0]: null
+Script 450 - [0,0,null,0]: null
+Script 451 - [0,0,null,0]: null
+Script 452 - [0,0,null,0]: null
+Script 453 - [0,0,null,0]: null
+Script 454 - [0,0,null,0]: null
+Script 455 - [0,0,null,0]: null
+Script 456 - [0,0,null,0]: null
+Script 457 - [0,0,null,0]: null
+Script 458 - [0,0,null,0]: null
+Script 459 - [0,0,null,0]: null
+Script 460 - [0,0,null,0]: null
+Script 461 - [0,0,null,0]: null
+Script 462 - [0,0,null,0]: null
+Script 463 - [0,0,null,0]: null
+Script 464 - [0,0,null,0]: null
+Script 465 - [0,0,null,0]: null
+Script 466 - [0,0,null,0]: null
+Script 467 - [0,0,null,0]: null
+Script 468 - [0,0,null,0]: null
+Script 469 - [0,0,null,0]: null
+Script 470 - [0,0,null,0]: null
+Script 471 - [0,0,null,0]: null
+Script 472 - [0,0,null,0]: null
+Script 473 - [0,0,null,0]: null
+Script 474 - [0,0,null,0]: null
+Script 475 - [0,0,null,0]: null
+Script 476 - [0,0,null,0]: null
+Script 477 - [0,0,null,0]: null
+Script 478 - [0,0,null,0]: null
+Script 479 - [0,0,null,0]: null
+Script 480 - [0,0,null,0]: null
+Script 481 - [0,0,null,0]: null
+Script 482 - [0,0,null,0]: null
+Script 483 - [0,0,null,0]: null
+Script 484 - [0,0,null,0]: null
+Script 485 - [0,0,null,0]: null
+Script 486 - [0,0,null,0]: null
+Script 487 - [0,0,null,0]: null
+Script 488 - [0,0,null,0]: null
+Script 489 - [0,0,null,0]: null
+Script 490 - [0,0,null,0]: null
+Script 491 - [0,0,null,0]: null
+Script 492 - [0,0,null,0]: null
+Script 493 - [0,0,null,0]: null
+Script 494 - [0,0,null,0]: null
+Script 495 - [0,0,null,0]: null
+Script 496 - [0,0,null,0]: null
+Script 497 - [0,0,null,0]: null
+Script 498 - [0,0,null,0]: null
+Script 499 - [0,0,null,0]: null
+Script 500 - [0,0,null,0]: null
+Script 501 - [0,0,null,0]: null
+Script 502 - [0,0,null,0]: null
+Script 503 - [0,0,null,0]: null
+Script 504 - [73,115,zzz,0]: {17956878=Black Knights' Fortress, 17956879=Cook's Assistant, 17956881=Doric's Quest, 17956880=Demon Slayer, 17956883=Ernest the Chicken, 17956882=Dragon Slayer, 17956885=Imp Catcher, 17956884=Goblin Diplomacy, 17956887=Pirate's Treasure, 17956886=Knight's Sword, The, 17956889=Restless Ghost, The, 17956888=Prince Ali Rescue, 17956891=Rune Mysteries, 17956890=Romeo & Juliet, 17956893=Shield of Arrav, 17956892=Sheep Shearer, 17956895=Witch's Potion, 17956894=Vampire Slayer, 17956898=Between a Rock..., 17956899=Big Chompy Bird Hunting, 17956897=Animal Magnetism, 17956902=Clock Tower, 17956903=Contact!, 17956900=Biohazard, 17956901=Cabin Fever, 17956906=Darkness of Hallowvale, 17956907=Death to the Dorgeshuun, 17956904=Zogre Flesh Eaters, 17956905=Creature of Fenkenstrain, 17956910=Devious Minds, 17956911=Dig Site, The, 17956908=Death Plateau, 17956909=Desert Treasure, 17956915=Eagles' Peak, 17956914=Eadgar's Ruse, 17956913=Dwarf Cannon, 17956912=Druidic Ritual, 17956919=Enlightened Journey, 17956918=Enakhra's Lament, 17956917=Elemental Workshop II, 17956916=Elemental Workshop I, 17956923=Family Crest, 17956922=Fairytale II - Cure a Queen, 17956921=Fairytale I - Growing Pains, 17956920=Eyes of Glouphrie, The, 17956927=Forgettable Tale..., 17956926=Fishing Contest, 17956925=Fight Arena, 17956924=Feud, The, 17956932=Ghosts Ahoy, 17956933=Giant Dwarf, The, 17956934=Golem, The, 17956935=Grand Tree, The, 17956928=Fremennik Trials, The, 17956929=Waterfall Quest, 17956930=Garden of Tranquillity, 17956931=Gertrude's Cat, 17956940=Holy Grail, 17956941=Horror from the Deep, 17956942=Icthlarin's Little Helper, 17956943=In Aid of the Myreque, 17956936=Hand in the Sand, The, 17956937=Haunted Mine, 17956938=Hazeel Cult, 17956939=Heroes' Quest, 17956949=Lunar Diplomacy, 17956948=Lost Tribe, The, 17956951=Merlin's Crystal, 17956950=Making History, 17956945=Jungle Potion, 17956944=In Search of the Myreque, 17956947=Lost City, 17956946=Legends' Quest, 17956957=Murder Mystery, 17956956=Mourning's Ends Part II, 17956959=Nature Spirit, 17956958=My Arm's Big Adventure, 17956953=Monk's Friend, 17956952=Monkey Madness, 17956955=Mourning's Ends Part I, 17956954=Mountain Daughter, 17956966=Recipe for Disaster, 17956967=Recruitment Drive, 17956964=Rag and Bone Man, 17956965=Ratcatchers, 17956962=Plague City, 17956963=Priest in Peril, 17956960=Observatory Quest, 17956961=One Small Favour, 17956974=Slug Menace, The, 17956975=Shades of Mort'ton, 17956972=Scorpion Catcher, 17956973=Sea Slug, 17956970=Royal Trouble, 17956971=Rum Deal, 17956968=Regicide, 17956969=Roving Elves, 17956983=Tail of Two Cats, A, 17956982=Tai Bwo Wannai Trio, 17956981=Swan Song, 17956980=Spirits of the Elid, 17956979=Soul's Bane, A, 17956978=Shilo Village, 17956977=Sheep Herder, 17956976=Shadow of the Storm, 17956991=Troll Romance, 17956990=Tribal Totem, 17956989=Tree Gnome Village, 17956988=Witch's House, 17956987=Tourist Trap, The, 17956986=Throne of Miscellania, 17956985=Temple of Ikov, 17956984=Tears of Guthix, 17957001=Olaf's Quest, 17957000=What Lies Below, 17957003=Dream Mentor, 17957002=Another Slice of H.A.M., 17957005=King's Ransom, 17957004=Grim Tales, 17957007=Back to my Roots, 17957006=Path of Glouphrie, The, 17956993=Underground Pass, 17956992=Troll Stronghold, 17956995=Watchtower, 17956994=Wanted!, 17956997=Fremennik Isles, The, 17956996=Cold War, 17956999=Great Brain Robbery, The, 17956998=Tower of Life, 17957016=TokTz-Ket-Dill, 17957008=Land of the Goblins, 17957009=Dealing with Scabaras, 17957010=Wolf Whistle, 17957011=As a First Resort..., 17957012=Catapult Construction, 17957013=Kennith's Concerns, 17957014=Legacy of Seergaze, 17957015=Perils of Ice Mountain}
+Script 505 - [0,0,null,0]: null
+Script 506 - [0,0,null,0]: null
+Script 507 - [0,0,null,0]: null
+Script 508 - [0,0,null,0]: null
+Script 509 - [0,0,null,0]: null
+Script 510 - [0,0,null,0]: null
+Script 511 - [0,0,null,0]: null
+Script 512 - [0,0,null,0]: null
+Script 513 - [0,0,null,0]: null
+Script 514 - [0,0,null,0]: null
+Script 515 - [0,0,null,0]: null
+Script 516 - [0,0,null,0]: null
+Script 517 - [0,0,null,0]: null
+Script 518 - [0,0,null,0]: null
+Script 519 - [0,0,null,0]: null
+Script 520 - [0,0,null,0]: null
+Script 521 - [0,0,null,0]: null
+Script 522 - [0,0,null,0]: null
+Script 523 - [0,0,null,0]: null
+Script 524 - [0,0,null,0]: null
+Script 525 - [0,0,null,0]: null
+Script 526 - [0,0,null,0]: null
+Script 527 - [0,0,null,0]: null
+Script 528 - [0,0,null,0]: null
+Script 529 - [0,0,null,0]: null
+Script 530 - [0,0,null,0]: null
+Script 531 - [0,0,null,0]: null
+Script 532 - [0,0,null,0]: null
+Script 533 - [0,0,null,0]: null
+Script 534 - [0,0,null,0]: null
+Script 535 - [0,0,null,0]: null
+Script 536 - [0,0,null,0]: null
+Script 537 - [0,0,null,0]: null
+Script 538 - [0,0,null,0]: null
+Script 539 - [0,0,null,0]: null
+Script 540 - [0,0,null,0]: null
+Script 541 - [0,0,null,0]: null
+Script 542 - [0,0,null,0]: null
+Script 543 - [0,0,null,0]: null
+Script 544 - [0,0,null,0]: null
+Script 545 - [0,0,null,0]: null
+Script 546 - [0,0,null,0]: null
+Script 547 - [0,0,null,0]: null
+Script 548 - [0,0,null,0]: null
+Script 549 - [0,0,null,0]: null
+Script 550 - [0,0,null,0]: null
+Script 551 - [0,0,null,0]: null
+Script 552 - [0,0,null,0]: null
+Script 553 - [0,0,null,0]: null
+Script 554 - [0,0,null,0]: null
+Script 555 - [0,0,null,0]: null
+Script 556 - [0,0,null,0]: null
+Script 557 - [0,0,null,0]: null
+Script 558 - [0,0,null,0]: null
+Script 559 - [0,0,null,0]: null
+Script 560 - [0,0,null,0]: null
+Script 561 - [0,0,null,0]: null
+Script 562 - [0,0,null,0]: null
+Script 563 - [0,0,null,0]: null
+Script 564 - [0,0,null,0]: null
+Script 565 - [0,0,null,0]: null
+Script 566 - [0,0,null,0]: null
+Script 567 - [0,0,null,0]: null
+Script 568 - [0,0,null,0]: null
+Script 569 - [0,0,null,0]: null
+Script 570 - [0,0,null,0]: null
+Script 571 - [0,0,null,0]: null
+Script 572 - [0,0,null,0]: null
+Script 573 - [0,0,null,0]: null
+Script 574 - [0,0,null,0]: null
+Script 575 - [0,0,null,0]: null
+Script 576 - [0,0,null,0]: null
+Script 577 - [0,0,null,0]: null
+Script 578 - [0,0,null,0]: null
+Script 579 - [105,73,null,-1]: {0=8978436, 1=8978437, 2=8978438, 3=8978439, 4=8978440, 5=8978441, 6=8978442, 7=8978443, 8=8978444, 9=8978445, 10=8978446, 11=8978447, 12=8978448, 13=8978449, 14=8978450, 15=8978451, 17=8978453, 16=8978452, 19=8978455, 18=8978454, 21=8978457, 20=8978456, 23=8978459, 22=8978458, 25=8978461, 24=8978460, 27=8978463, 26=8978462, 29=8978465, 28=8978464, 31=8978467, 30=8978466, 34=8978470, 35=8978471, 32=8978468, 33=8978469, 38=8978474, 39=8978475, 36=8978472, 37=8978473, 42=8978478, 43=8978479, 40=8978476, 41=8978477, 46=8978482, 47=8978483, 44=8978480, 45=8978481, 51=8978487, 50=8978486, 49=8978485, 48=8978484, 55=8978491, 54=8978490, 53=8978489, 52=8978488, 59=8978495, 58=8978494, 57=8978493, 56=8978492, 63=8978499, 62=8978498, 61=8978497, 60=8978496, 68=8978504, 69=8978505, 70=8978506, 71=8978507, 64=8978500, 65=8978501, 66=8978502, 67=8978503, 76=8978512, 77=8978513, 78=8978514, 79=8978515, 72=8978508, 73=8978509, 74=8978510, 75=8978511, 85=8978521, 84=8978520, 87=8978523, 86=8978522, 81=8978517, 80=8978516, 83=8978519, 82=8978518, 93=8978529, 92=8978528, 95=8978531, 94=8978530, 89=8978525, 88=8978524, 91=8978527, 90=8978526, 98=8978534, 99=8978535, 96=8978532, 97=8978533}
+Script 580 - [105,73,null,-1]: {0=35913812, 1=35913811, 2=35913810, 3=35913809, 4=35913808}
+Script 581 - [0,0,null,0]: null
+Script 582 - [0,0,null,0]: null
+Script 583 - [0,0,null,0]: null
+Script 584 - [0,0,null,0]: null
+Script 585 - [0,0,null,0]: null
+Script 586 - [0,0,null,0]: null
+Script 587 - [0,0,null,0]: null
+Script 588 - [0,0,null,0]: null
+Script 589 - [0,0,null,0]: null
+Script 590 - [0,0,null,0]: null
+Script 591 - [0,0,null,0]: null
+Script 592 - [0,0,null,0]: null
+Script 593 - [0,0,null,0]: null
+Script 594 - [0,0,null,0]: null
+Script 595 - [0,0,null,0]: null
+Script 596 - [0,0,null,0]: null
+Script 597 - [0,0,null,0]: null
+Script 598 - [0,0,null,0]: null
+Script 599 - [0,0,null,0]: null
+Script 600 - [0,0,null,0]: null
+Script 601 - [0,0,null,0]: null
+Script 602 - [0,0,null,0]: null
+Script 603 - [0,0,null,0]: null
+Script 604 - [0,0,null,0]: null
+Script 605 - [0,0,null,0]: null
+Script 606 - [0,0,null,0]: null
+Script 607 - [0,0,null,0]: null
+Script 608 - [0,0,null,0]: null
+Script 609 - [0,0,null,0]: null
+Script 610 - [0,0,null,0]: null
+Script 611 - [0,0,null,0]: null
+Script 612 - [0,0,null,0]: null
+Script 613 - [0,0,null,0]: null
+Script 614 - [0,0,null,0]: null
+Script 615 - [0,0,null,0]: null
+Script 616 - [111,105,null,0]: {7806=1, 7807=1, 8871=1, 4075=1, 1842=1, 5510=1, 7808=1, 5511=1, 7809=1, 10024=1, 431=1, 5509=1, 4657=1, 5514=1, 9067=1, 5515=1, 10023=1, 5512=1, 5513=1, 8949=1, 8950=1, 9433=1}
+Script 617 - [0,0,null,0]: null
+Script 618 - [0,0,null,0]: null
+Script 619 - [0,0,null,0]: null
+Script 620 - [0,0,null,0]: null
+Script 621 - [0,0,null,0]: null
+Script 622 - [0,0,null,0]: null
+Script 623 - [0,0,null,0]: null
+Script 624 - [0,0,null,0]: null
+Script 625 - [0,0,null,0]: null
+Script 626 - [0,0,null,0]: null
+Script 627 - [0,0,null,0]: null
+Script 628 - [0,0,null,0]: null
+Script 629 - [0,0,null,0]: null
+Script 630 - [0,0,null,0]: null
+Script 631 - [0,0,null,0]: null
+Script 632 - [0,0,null,0]: null
+Script 633 - [0,0,null,0]: null
+Script 634 - [0,0,null,0]: null
+Script 635 - [0,0,null,0]: null
+Script 636 - [0,0,null,0]: null
+Script 637 - [0,0,null,0]: null
+Script 638 - [0,0,null,0]: null
+Script 639 - [0,0,null,0]: null
+Script 640 - [0,0,null,0]: null
+Script 641 - [0,0,null,0]: null
+Script 642 - [0,0,null,0]: null
+Script 643 - [0,0,null,0]: null
+Script 644 - [0,0,null,0]: null
+Script 645 - [0,0,null,0]: null
+Script 646 - [0,0,null,0]: null
+Script 647 - [0,0,null,0]: null
+Script 648 - [0,0,null,0]: null
+Script 649 - [0,0,null,0]: null
+Script 650 - [0,0,null,0]: null
+Script 651 - [0,0,null,0]: null
+Script 652 - [0,0,null,0]: null
+Script 653 - [0,0,null,0]: null
+Script 654 - [0,0,null,0]: null
+Script 655 - [0,0,null,0]: null
+Script 656 - [0,0,null,0]: null
+Script 657 - [0,0,null,0]: null
+Script 658 - [0,0,null,0]: null
+Script 659 - [0,0,null,0]: null
+Script 660 - [0,0,null,0]: null
+Script 661 - [0,0,null,0]: null
+Script 662 - [0,0,null,0]: null
+Script 663 - [0,0,null,0]: null
+Script 664 - [0,0,null,0]: null
+Script 665 - [0,0,null,0]: null
+Script 666 - [0,0,null,0]: null
+Script 667 - [0,0,null,0]: null
+Script 668 - [0,0,null,0]: null
+Script 669 - [0,0,null,0]: null
+Script 670 - [0,0,null,0]: null
+Script 671 - [0,0,null,0]: null
+Script 672 - [0,0,null,0]: null
+Script 673 - [0,0,null,0]: null
+Script 674 - [0,0,null,0]: null
+Script 675 - [0,0,null,0]: null
+Script 676 - [0,0,null,0]: null
+Script 677 - [0,0,null,0]: null
+Script 678 - [0,0,null,0]: null
+Script 679 - [0,0,null,0]: null
+Script 680 - [83,115,this skill,0]: {0=Attack, 1=Defence, 2=Strength, 3=Hitpoints, 4=Ranged, 5=Prayer, 6=Magic, 7=Cooking, 8=Woodcutting, 9=Fletching, 10=Fishing, 11=Firemaking, 12=Crafting, 13=Smithing, 14=Mining, 15=Herblore, 17=Thieving, 16=Agility, 19=Farming, 18=Slayer, 21=Hunter, 20=Runecraft, 23=Summoning, 22=Construction}
+Script 681 - [0,0,null,0]: null
+Script 682 - [0,0,null,0]: null
+Script 683 - [105,73,null,-1]: {0=35913731, 1=35913734, 2=35913737, 3=35913741, 4=35913745, 5=35913749, 6=35913753}
+Script 684 - [105,73,null,-1]: {2=35913739, 3=35913743, 4=35913747, 5=35913751, 6=35913755}
+Script 685 - [0,0,null,0]: null
+Script 686 - [0,0,null,0]: null
+Script 687 - [0,0,null,0]: null
+Script 688 - [105,73,null,37617683]: {1=38207534, 2=38207540, 3=38207537, 4=38207536, 5=38207539, 6=38207538, 7=38207551, 8=38207550, 9=38207546, 10=38207547, 11=38207541, 12=38207549, 13=38207535, 14=38207542, 15=38207543, 17=38207548, 16=38207544, 19=38207552, 18=38207553, 21=38207558, 20=38207545, 23=38207554, 25=38207556, 24=38207555, 27=38207559, 26=38207557, 29=38207561, 28=38207560}
+Script 689 - [0,0,null,0]: null
+Script 690 - [0,0,null,0]: null
+Script 691 - [0,0,null,0]: null
+Script 692 - [0,0,null,0]: null
+Script 693 - [0,0,null,0]: null
+Script 694 - [0,0,null,0]: null
+Script 695 - [0,0,null,0]: null
+Script 696 - [0,0,null,0]: null
+Script 697 - [0,0,null,0]: null
+Script 698 - [0,0,null,0]: null
+Script 699 - [0,0,null,0]: null
+Script 700 - [0,0,null,0]: null
+Script 701 - [0,0,null,0]: null
+Script 702 - [0,0,null,0]: null
+Script 703 - [0,0,null,0]: null
+Script 704 - [0,0,null,0]: null
+Script 705 - [0,0,null,0]: null
+Script 706 - [0,0,null,0]: null
+Script 707 - [0,0,null,0]: null
+Script 708 - [0,0,null,0]: null
+Script 709 - [0,0,null,0]: null
+Script 710 - [0,0,null,0]: null
+Script 711 - [0,0,null,0]: null
+Script 712 - [0,0,null,0]: null
+Script 713 - [0,0,null,0]: null
+Script 714 - [0,0,null,0]: null
+Script 715 - [0,0,null,0]: null
+Script 716 - [105,105,null,0]: {2=83, 3=174, 4=276, 5=388, 6=512, 7=650, 8=801, 9=969, 10=1154, 11=1358, 12=1584, 13=1833, 14=2107, 15=2411, 17=3115, 16=2746, 19=3973, 18=3523, 21=5018, 20=4470, 23=6291, 22=5624, 25=7842, 24=7028, 27=9730, 26=8740, 29=12031, 28=10824, 31=14833, 30=13363, 34=20224, 35=22406, 32=16456, 33=18247, 38=30408, 39=33648, 36=24815, 37=27473, 42=45529, 43=50339, 40=37224, 41=41171, 46=67983, 47=75127, 44=55649, 45=61512, 51=111945, 50=101333, 49=91721, 48=83014, 55=166636, 54=150872, 53=136594, 52=123660, 59=247886, 58=224466, 57=203254, 56=184040, 63=368599, 62=333804, 61=302288, 60=273742, 68=605032, 69=668051, 70=737627, 71=814445, 64=407015, 65=449428, 66=496254, 67=547953, 76=1336443, 77=1475581, 78=1629200, 79=1798808, 72=899257, 73=992895, 74=1096278, 75=1210421, 85=3258594, 84=2951373, 87=3972294, 86=3597792, 81=2192818, 80=1986068, 83=2673114, 82=2421087, 93=7195629, 92=6517253, 95=8771558, 94=7944614, 89=4842295, 88=4385776, 91=5902831, 90=5346332, 98=11805606, 99=13034431, 96=9684577, 97=10692629}
+Script 717 - [0,0,null,0]: null
+Script 718 - [0,0,null,0]: null
+Script 719 - [0,0,null,0]: null
+Script 720 - [0,0,null,0]: null
+Script 721 - [0,0,null,0]: null
+Script 722 - [0,0,null,0]: null
+Script 723 - [0,0,null,0]: null
+Script 724 - [0,0,null,0]: null
+Script 725 - [0,0,null,0]: null
+Script 726 - [0,0,null,0]: null
+Script 727 - [105,79,null,11760]: {1=1931, 2=954, 3=1265, 4=1925, 5=590, 6=2347, 7=1061, 8=839, 9=882, 10=329, 11=2327, 12=2309, 13=2142}
+Script 728 - [105,79,null,11760]: {1=1205, 2=1203, 3=1207, 4=1209, 5=1211, 6=1213, 7=1321, 8=1323, 9=1325}
+Script 729 - [105,79,null,11760]: {4=1823, 1=2309, 2=1891, 3=1901}
+Script 730 - [105,79,null,11760]: {1=1755, 2=1592, 3=1597, 4=1595, 5=1733, 6=1734, 7=1599, 8=2976, 9=5523, 10=11065}
+Script 731 - [105,79,null,11760]: {1=1931, 2=2169, 3=175}
+Script 732 - [105,79,null,11760]: {1=4684, 2=1833, 3=1835, 4=1837, 5=950, 6=1734, 7=1733}
+Script 733 - [105,79,null,11760]: {1=8794, 2=8790, 3=4819, 4=4820, 5=1539}
+Script 734 - [105,79,null,11760]: {4=8788, 1=3420, 2=8786, 3=8784}
+Script 735 - [105,79,null,11760]: {1=8417, 2=8419, 3=8421, 4=8423, 5=8425, 6=8427, 7=8429, 8=8431, 9=8433, 10=8435, 11=8437, 12=8439, 13=8441, 14=8443, 15=8445, 17=8449, 16=8447, 19=8453, 18=8451, 21=8457, 20=8455, 23=8461, 22=8459}
+Script 736 - [105,79,null,11760]: {1=1931, 2=1935, 3=1735, 4=1925, 5=590, 6=1755, 7=2347, 8=3424, 9=227, 10=1933, 11=3678}
+Script 737 - [105,79,null,11760]: {1=3211, 2=3420, 3=8837, 4=1941, 5=960}
+Script 738 - [105,79,null,11760]: {1=303, 2=307, 3=309, 4=311, 5=301, 6=313, 7=314, 8=305, 9=327}
+Script 739 - [105,79,null,11760]: {1=1965, 2=1942, 3=1957, 4=1982, 5=1550}
+Script 740 - [105,79,null,11760]: {1=303, 2=307, 3=309, 4=311, 5=301, 6=313, 7=314, 8=305, 9=327}
+Script 741 - [105,79,null,11760]: {1=1965, 2=1942, 3=1957, 4=1982, 5=1550}
+Script 742 - [105,79,null,11760]: {4=353, 1=1351, 2=590, 3=3363}
+Script 743 - [105,79,null,11760]: {1=1931, 2=1935, 3=1735, 4=1925, 5=1923, 6=1887, 7=590, 8=1755, 9=2347}
+Script 744 - [105,79,null,11760]: {1=3767, 2=3769, 3=3771, 4=3773, 5=3775, 6=3793, 7=3795, 8=5050, 9=5052, 10=5038, 11=5040, 12=5044, 13=5046, 14=5026, 15=5028, 17=5034, 16=5032}
+Script 745 - [105,79,null,11760]: {4=1978, 1=1917, 2=5763, 3=1993}
+Script 746 - [105,79,null,11760]: {8=1927, 1=2309, 2=1985, 3=1965, 4=1942, 5=1957, 6=1933, 7=1973}
+Script 747 - [105,79,null,11760]: {1=1931, 2=1935, 3=1735, 4=1925, 5=590, 6=1755, 7=2347, 8=952, 9=946}
+Script 748 - [105,79,null,11760]: {1=1734, 2=1733, 3=1759, 4=1763, 5=1765, 6=1767, 7=1769, 8=1771, 9=1773}
+Script 749 - [105,79,null,11760]: {1=884, 2=886, 3=888, 4=890, 5=892, 6=877, 7=843, 8=845, 9=837, 10=849, 11=847}
+Script 750 - [105,79,null,11760]: {1=2309, 2=379, 3=1993, 4=1985, 5=1891}
+Script 751 - [105,79,null,11760]: {1=9640, 2=9642, 3=9644, 4=9634, 5=9636, 6=9638}
+Script 752 - [105,79,null,11760]: {1=1931, 2=1935, 3=1735, 4=590, 5=2309, 6=3190, 7=3192, 8=3194, 9=3196, 10=3198, 11=3200, 12=3202}
+Script 753 - [105,79,null,11760]: {1=1931, 2=1935, 3=1735, 4=590, 5=2309, 6=3190, 7=3192, 8=3194, 9=3196, 10=3198, 11=3200, 12=3202, 13=3204}
+Script 754 - [105,79,null,11760]: {1=954, 2=1523, 3=1755, 4=946, 5=5560, 6=864, 7=863, 8=865, 9=3095, 10=3096, 11=3097}
+Script 755 - [105,79,null,11760]: {1=954, 2=1523, 3=1755, 4=946, 5=5560, 6=864, 7=863, 8=865, 9=3095, 10=3096, 11=3097, 12=9777}
+Script 756 - [105,79,null,11760]: {1=954, 2=1523, 3=1755, 4=946, 5=5560, 6=864, 7=863, 8=865, 9=3095, 10=3096, 11=3097, 12=9778}
+Script 757 - [105,79,null,11760]: {1=4315, 2=4335, 3=4355, 4=4375, 5=4395}
+Script 758 - [105,79,null,11760]: {1=4317, 2=4337, 3=4357, 4=4377, 5=4397}
+Script 759 - [105,79,null,11760]: {1=4319, 2=4339, 3=4359, 4=4379, 5=4399}
+Script 760 - [105,79,null,11760]: {1=4321, 2=4341, 3=4361, 4=4381, 5=4401}
+Script 761 - [105,79,null,11760]: {1=4323, 2=4343, 3=4363, 4=4383, 5=4403}
+Script 762 - [105,79,null,11760]: {1=4325, 2=4345, 3=4365, 4=4385, 5=4405}
+Script 763 - [105,79,null,11760]: {1=4327, 2=4347, 3=4367, 4=4387, 5=4407}
+Script 764 - [105,79,null,11760]: {1=4329, 2=4349, 3=4369, 4=4389, 5=4409}
+Script 765 - [105,79,null,11760]: {1=4331, 2=4351, 3=4371, 4=4391, 5=4411}
+Script 766 - [105,79,null,11760]: {1=4333, 2=4353, 3=4373, 4=4393, 5=4413}
+Script 767 - [105,79,null,11760]: {1=9068, 2=9069, 3=9070, 4=9071, 5=9072, 6=9073, 7=9074, 8=1733, 9=1734}
+Script 768 - [105,79,null,11760]: {1=556, 2=555, 3=557, 4=554, 5=558, 6=559, 7=562, 8=561, 9=560, 10=563, 11=565, 12=566, 13=1387, 14=1383, 15=1381, 17=9078, 16=1385}
+Script 769 - [105,79,null,11760]: {1=556, 2=555, 3=557, 4=554, 5=558, 6=559, 7=562, 8=561, 9=560, 10=563, 11=565, 12=566, 13=9075, 14=1387, 15=1383, 17=1385, 16=1381, 18=9078}
+Script 770 - [105,79,null,11760]: {1=1931, 2=1935, 3=1735, 4=1925, 5=1923, 6=1887, 7=590, 8=1755, 9=2347, 10=9003}
+Script 771 - [105,79,null,11760]: {1=2518}
+Script 772 - [105,79,null,11760]: {1=1931, 2=1935, 3=1735, 4=1925, 5=1923, 6=1887, 7=590, 8=1755, 9=2347, 10=550, 11=9003, 12=954, 13=946, 14=1963, 15=1785, 17=307, 16=301, 19=9629, 18=1941, 21=1025, 20=3226}
+Script 773 - [105,79,null,11760]: {1=1931, 2=1935, 3=1735, 4=1925, 5=1923, 6=1887, 7=590, 8=1755, 9=2347}
+Script 774 - [105,79,null,11760]: {1=1093, 2=1079, 3=1113, 4=1099, 5=1065, 6=1193, 7=1151}
+Script 775 - [105,79,null,11760]: {2=1973, 1=6794}
+Script 776 - [105,79,null,11760]: {1=2309, 2=1891, 3=1901}
+Script 777 - [105,79,null,11760]: {1=1755, 2=1592, 3=1597, 4=1733, 5=1734, 6=1759}
+Script 778 - [105,79,null,11760]: {1=1714}
+Script 779 - [105,79,null,11760]: {1=5048, 2=5036, 3=5042, 4=5024, 5=5030, 6=950}
+Script 780 - [105,79,null,11760]: {1=1337, 2=1335, 3=1339, 4=1341, 5=1343, 6=1345}
+Script 781 - [105,79,null,11760]: {1=1365, 2=1369, 3=1285, 4=1287, 5=1325, 6=1297, 7=1303, 8=853, 9=851, 10=888, 11=890}
+Script 782 - [105,79,null,11760]: {1=1105, 2=1109, 3=1107, 4=1111, 5=1141, 6=1143, 7=1145, 8=1177, 9=1195}
+Script 783 - [105,79,null,11760]: {1=1935, 2=1925, 3=590, 4=1755, 5=2347, 6=36, 7=596, 8=973, 9=1059, 10=229, 11=233, 12=954}
+Script 784 - [105,79,null,11760]: {1=1265, 2=1269, 3=1273, 4=1271, 5=1275}
+Script 785 - [105,79,null,11760]: {1=5050, 2=5052, 3=5038, 4=5040, 5=5044, 6=5046, 7=5026, 8=5028, 9=5032, 10=5034}
+Script 786 - [105,79,null,11760]: {8=560, 1=554, 2=555, 3=556, 4=557, 5=558, 6=559, 7=562}
+Script 787 - [105,79,null,11760]: {8=565, 1=554, 2=555, 3=556, 4=557, 5=558, 6=562, 7=560}
+Script 788 - [105,79,null,11760]: {1=4844, 2=2878, 3=946}
+Script 789 - [105,79,null,11760]: {1=554, 2=555, 3=556, 4=557, 5=558, 6=559, 7=561, 8=562, 9=563, 10=564, 11=560}
+Script 790 - [105,79,null,11760]: {1=2415, 2=2416, 3=2417}
+Script 791 - [105,79,null,11760]: {1=1931, 2=1935, 3=1735, 4=1925, 5=590, 6=1755, 7=2347, 8=946, 9=1980}
+Script 792 - [105,79,null,11760]: {1=1905, 2=1907, 3=1913}
+Script 793 - [105,79,null,11760]: {1=1321, 2=1323, 3=1325, 4=1329, 5=2347}
+Script 794 - [105,79,null,11760]: {4=2003, 1=1917, 2=7157, 3=1993}
+Script 795 - [105,79,null,11760]: {1=317, 2=327, 3=345, 4=353, 5=341, 6=321}
+Script 796 - [105,79,null,11760]: {1=7114, 2=7110, 3=7112, 4=7116, 5=7122, 6=7124, 7=7126, 8=7128, 9=7130, 10=7132, 11=7134, 12=7136, 13=7138}
+Script 797 - [105,79,null,11760]: {1=8952, 2=8959, 3=8991, 4=8953, 5=8960, 6=8992, 7=8954, 8=8961, 9=8993, 10=8955, 11=8962, 12=8994, 13=8956, 14=8963, 15=8995, 17=8964, 16=8957, 19=8958, 18=8996, 21=8997, 20=8965, 23=8967, 22=8966, 25=8969, 24=8968, 27=8971, 26=8970, 29=8940, 28=8988, 30=8941}
+Script 798 - [105,79,null,11760]: {1=347, 2=339, 3=361, 4=379, 5=373, 6=3144}
+Script 799 - [105,79,null,11760]: {1=333, 2=365, 3=2289, 4=6705, 5=2003}
+Script 800 - [105,79,null,11760]: {1=1363, 2=1365, 3=1369, 4=1277, 5=1279, 6=1281, 7=1283, 8=1285, 9=1287, 10=1291, 11=1293, 12=1295, 13=1297, 14=1299, 15=1301, 17=1203, 16=1205, 19=1217, 18=1207, 21=1211, 20=1209, 23=1420, 22=1422, 25=1428, 24=1424, 27=1307, 26=1430, 29=1311, 28=1309, 31=1315, 30=1313, 34=1101, 35=1105, 32=1317, 33=1103, 38=1141, 36=1139, 37=1137}
+Script 801 - [105,79,null,11760]: {1=115, 2=121, 3=133}
+Script 802 - [105,79,null,11760]: {1=6341, 2=6343, 3=6345, 4=6349, 5=6347, 6=6313, 7=6315, 8=6317, 9=6351, 10=6353, 11=6355, 12=6357, 13=6359, 14=6361, 15=6363, 17=6367, 16=6365, 19=6371, 18=6369, 21=6375, 20=6373, 23=6379, 22=6377}
+Script 803 - [105,79,null,11760]: {1=2084, 2=2092, 3=2048, 4=2054, 5=2064, 6=2074, 7=2080}
+Script 804 - [105,79,null,11760]: {1=10010, 2=10012, 3=10025, 4=10150, 5=10006, 6=10008, 7=10029, 8=596, 9=10031}
+Script 805 - [105,79,null,11760]: {1=10010, 2=10012, 3=10025, 4=10150, 5=10006, 6=10008, 7=10029, 8=596, 9=10031}
+Script 806 - [105,79,null,11760]: {1=596, 2=5014, 3=590}
+Script 807 - [105,79,null,11760]: {1=10954, 2=10956, 3=10958}
+Script 808 - [105,79,null,11760]: {8=1785, 1=596, 2=590, 3=1931, 4=1935, 5=1923, 6=1887, 7=954}
+Script 809 - [105,79,null,11760]: null
+Script 810 - [105,79,null,11760]: {4=9668, 1=5574, 2=5576, 3=5575}
+Script 811 - [105,79,null,11760]: {1=5574, 2=5576, 3=5575, 4=9668, 5=9672, 6=9676, 7=9674, 8=9678, 9=9666, 10=9670}
+Script 812 - [105,79,null,11760]: {2=3157, 1=3142}
+Script 813 - [105,79,null,11760]: {1=3170, 2=3171, 3=3172, 4=3173, 5=3174, 6=3175, 7=3188}
+Script 814 - [105,79,null,11760]: {1=6408, 2=6412, 3=6418, 4=6416, 5=4600}
+Script 815 - [105,79,null,11760]: {1=6410, 2=6414, 3=6420, 4=6416, 5=4600}
+Script 816 - [105,79,null,11760]: {8=6406, 1=6392, 2=6394, 3=6396, 4=6398, 5=6400, 6=6402, 7=6404}
+Script 817 - [105,79,null,11760]: {1=6382, 2=6384, 3=6386, 4=6388, 5=6390}
+Script 818 - [105,79,null,11760]: {4=557, 1=554, 2=555, 3=556}
+Script 819 - [105,79,null,11760]: {1=561, 2=563, 3=562, 4=560, 5=558, 6=559, 7=565, 8=564, 9=566}
+Script 820 - [0,0,null,0]: null
+Script 821 - [105,79,null,11760]: {1=1265, 2=1351, 3=1349, 4=1353, 5=1363, 6=1365, 7=1369}
+Script 822 - [105,79,null,11760]: {1=1277, 2=1279, 3=1281, 4=1283, 5=1285, 6=1287, 7=1291, 8=1293, 9=1295, 10=1297, 11=1299, 12=1301, 13=1205, 14=1203, 15=1207, 17=1209, 16=1217, 18=1211}
+Script 823 - [105,79,null,11760]: {1=882, 2=884, 3=886, 4=888, 5=890, 6=877, 7=841, 8=839, 9=843, 10=845, 11=849, 12=847, 13=853, 14=851, 15=837}
+Script 824 - [105,79,null,11760]: {1=886, 2=888, 3=890, 4=843, 5=845, 6=849, 7=847, 8=853, 9=851}
+Script 825 - [105,79,null,11760]: {1=1379, 2=1389, 3=1381, 4=1383, 5=1385, 6=1387}
+Script 826 - [105,79,null,11760]: {4=1329, 1=1321, 2=1323, 3=1325}
+Script 827 - [105,79,null,11760]: {1=1422, 2=1420, 3=1424, 4=1428, 5=1430}
+Script 828 - [105,79,null,11760]: {1=1375, 2=1363, 3=1365, 4=1367, 5=1369, 6=1371}
+Script 829 - [105,79,null,11760]: {2=1215, 1=1305}
+Script 830 - [105,79,null,11760]: {1=1307, 2=1309, 3=1311, 4=1313, 5=1315, 6=1317}
+Script 831 - [105,79,null,11760]: {2=1434, 1=1377}
+Script 832 - [105,79,null,11760]: {1=877, 2=882, 3=884, 4=39, 5=40, 6=41, 7=42, 8=43, 9=44, 10=841, 11=839, 12=837, 13=843, 14=845, 15=1133, 16=1097}
+Script 833 - [105,79,null,11760]: {1=877, 2=882, 3=884, 4=39, 5=40, 6=41, 7=42, 8=43, 9=44, 10=841, 11=839, 12=837, 13=843, 14=845, 15=1133, 17=9783, 16=1097}
+Script 834 - [105,79,null,11760]: {1=877, 2=882, 3=884, 4=39, 5=40, 6=41, 7=42, 8=43, 9=44, 10=841, 11=839, 12=837, 13=843, 14=845, 15=1133, 17=9784, 16=1097}
+Script 835 - [105,79,null,11760]: {1=1379, 2=1389, 3=1381, 4=1383, 5=1385, 6=1387}
+Script 836 - [105,79,null,11760]: {1=882, 2=877, 3=841, 4=839, 5=837, 6=39, 7=40, 8=41, 9=42, 10=1349, 11=1353, 12=1363, 13=1365, 14=1369, 15=1307, 17=1311, 16=1309, 19=1315, 18=1313, 20=1317}
+Script 837 - [105,79,null,11760]: {1=1265, 2=1267, 3=1269, 4=1273, 5=1271, 6=1275}
+Script 838 - [105,79,null,11760]: {1=6, 2=8, 3=10, 4=12, 5=5, 6=4}
+Script 839 - [105,79,null,11760]: {1=52, 2=39, 3=40, 4=41, 5=42, 6=43, 7=44, 8=882, 9=884, 10=886, 11=888, 12=890, 13=892, 14=841, 15=843, 17=839, 16=849, 19=847, 18=845}
+Script 840 - [105,79,null,11760]: {1=825, 2=826, 3=827, 4=828, 5=829, 6=830, 7=800, 8=801, 9=802, 10=803, 11=804, 12=805}
+Script 841 - [105,79,null,11760]: {8=560, 1=554, 2=555, 3=556, 4=557, 5=558, 6=559, 7=562}
+Script 842 - [105,79,null,11760]: {1=554, 2=555, 3=556, 4=557, 5=558, 6=559, 7=562, 8=560, 9=9765}
+Script 843 - [105,79,null,11760]: {1=554, 2=555, 3=556, 4=557, 5=558, 6=559, 7=562, 8=560, 9=9766}
+Script 844 - [105,79,null,11760]: {1=554, 2=555, 3=556, 4=557, 5=558, 6=559, 7=562, 8=560, 9=221, 10=579, 11=1017}
+Script 845 - [105,79,null,11760]: {1=556, 2=555, 3=557, 4=554, 5=558, 6=559, 7=562, 8=561, 9=560, 10=563, 11=565, 12=566, 13=1387, 14=1383, 15=1381, 16=1385}
+Script 846 - [105,79,null,11760]: {1=4089, 2=4091, 3=4093, 4=4095, 5=4097}
+Script 847 - [105,79,null,11760]: {1=4089, 2=4091, 3=4093, 4=4095, 5=4097, 6=9762}
+Script 848 - [105,79,null,11760]: {1=4089, 2=4091, 3=4093, 4=4095, 5=4097, 6=9763}
+Script 849 - [105,79,null,11760]: {1=1103, 2=1101, 3=1105, 4=1109, 5=1117, 6=1115, 7=1119, 8=1125, 9=1121, 10=1067, 11=1133, 12=1097}
+Script 850 - [105,79,null,11760]: {1=1139, 2=1137, 3=1141, 4=1143, 5=1145, 6=1155, 7=1153, 8=1157, 9=1159, 10=1161}
+Script 851 - [105,79,null,11760]: {1=1075, 2=1067, 3=1069, 4=1077, 5=1071, 6=1073}
+Script 852 - [105,79,null,11760]: {8=1181, 1=1171, 2=1173, 3=1189, 4=1175, 5=1191, 6=1177, 7=1193}
+Script 853 - [105,79,null,11760]: {1=1087, 2=1081, 3=1083, 4=1089, 5=1085, 6=1091}
+Script 854 - [105,79,null,11760]: {1=1103, 2=1101, 3=1105, 4=1107, 5=1109, 6=1111}
+Script 855 - [105,79,null,11760]: {1=1093, 2=1079, 3=1432, 4=1113, 5=1303, 6=1289, 7=1099, 8=1065, 9=1169}
+Script 856 - [105,79,null,11760]: {2=1135, 1=1127}
+Script 857 - [105,79,null,11760]: {1=1117, 2=1115, 3=1119, 4=1125, 5=1121}
+Script 858 - [105,79,null,11760]: {8=1063, 1=1129, 2=1131, 3=1133, 4=1095, 5=1097, 6=1169, 7=1167}
+Script 859 - [105,79,null,11760]: {1=1129, 2=1131, 3=1133, 4=1095, 5=1097, 6=1169, 7=1167, 8=1063, 9=9756}
+Script 860 - [105,79,null,11760]: {1=1129, 2=1131, 3=1133, 4=1095, 5=1097, 6=1169, 7=1167, 8=1063, 9=9757}
+Script 861 - [105,79,null,11760]: {1=1931, 2=1935, 3=1735, 4=1925, 5=1923, 6=1887, 7=590, 8=1755, 9=2347, 10=550, 11=9003}
+Script 862 - [105,79,null,11760]: {1=1931, 2=1935, 3=1735, 4=1925, 5=1923, 6=1887, 7=590, 8=1755, 9=2347, 10=550, 11=9003}
+Script 863 - [105,79,null,11760]: {1=1931, 2=1935, 3=1735, 4=1925, 5=1923, 6=1887, 7=590, 8=1755, 9=2347, 10=550, 11=9003}
+Script 864 - [105,79,null,11760]: {1=1931, 2=1935, 3=1735, 4=1925, 5=1923, 6=1887, 7=590, 8=1755, 9=2347, 10=550, 11=9003}
+Script 865 - [105,79,null,11760]: {4=1123, 1=1021, 2=1165, 3=1077}
+Script 866 - [105,79,null,11760]: {1=1931, 2=1935, 3=1735, 4=1925, 5=590, 6=1755, 7=2347}
+Script 867 - [105,79,null,11760]: {1=1931, 2=1935, 3=1735, 4=1925, 5=1923, 6=1887, 7=590, 8=1755, 9=2347, 10=550, 11=9003}
+Script 868 - [105,79,null,11760]: {1=1931, 2=1935, 3=1735, 4=1925, 5=1923, 6=1887, 7=590, 8=1755, 9=2347, 10=550, 11=9003}
+Script 869 - [105,79,null,11760]: {1=1931, 2=1935, 3=1735, 4=1925, 5=1923, 6=1887, 7=590, 8=1755, 9=2347}
+Script 870 - [105,79,null,11760]: {1=1931, 2=1935, 3=1735, 4=1925, 5=1923, 6=1887, 7=590, 8=1755, 9=2347, 10=550, 11=9003}
+Script 871 - [105,79,null,11760]: {1=1931, 2=1935, 3=590, 4=1755, 5=2347, 6=1265, 7=1351}
+Script 872 - [105,79,null,11760]: {1=1925, 2=1265, 3=1923, 4=1887, 5=590, 6=1755, 7=2347, 8=954, 9=1931, 10=946}
+Script 873 - [105,79,null,11760]: {1=227, 2=1265, 3=1349, 4=2142, 5=590, 6=1759, 7=882, 8=954, 9=970, 10=946}
+Script 874 - [105,79,null,11760]: {1=1265, 2=1931, 3=1935, 4=1735, 5=1925, 6=590, 7=1755, 8=2347, 9=954, 10=1933, 11=583, 12=1941, 13=946}
+Script 875 - [105,79,null,11760]: {1=1931, 2=1265, 3=1935, 4=1735, 5=1925, 6=590, 7=1755, 8=2347, 9=882, 10=2142}
+Script 876 - [105,79,null,11760]: {1=590, 2=36, 3=596, 4=1931, 5=954, 6=1129, 7=1059, 8=1061, 9=2142, 10=2309, 11=229, 12=227, 13=233, 14=175, 15=970, 17=946, 16=973, 19=975, 18=2347, 21=952, 20=1755, 23=1265, 22=1351, 24=1349}
+Script 877 - [105,79,null,11760]: {1=590, 2=229, 3=233, 4=1931, 5=1351, 6=1265, 7=1349, 8=1129, 9=1059, 10=1061, 11=2142, 12=2309, 13=952, 14=36, 15=596, 17=2347, 16=1755, 19=973, 18=970, 21=975, 20=227, 22=954}
+Script 878 - [105,79,null,11760]: {1=1931, 2=1935, 3=946, 4=1925, 5=590, 6=1755, 7=2347}
+Script 879 - [105,79,null,11760]: {4=886, 1=373, 2=2323, 3=121}
+Script 880 - [105,79,null,11760]: {1=646, 2=648, 3=650, 4=652, 5=654, 6=656, 7=658, 8=660, 9=662, 10=664, 11=636, 12=638, 13=640, 14=642, 15=644, 17=628, 16=626, 19=632, 18=630, 20=634}
+Script 881 - [105,79,null,11760]: {1=882, 2=877, 3=841, 4=839, 5=837, 6=39, 7=40, 8=41, 9=42, 10=1349, 11=1353, 12=1363, 13=1365, 14=1369, 15=1307, 17=1311, 16=1309, 19=1315, 18=1313, 20=1317}
+Script 882 - [105,79,null,11760]: null
+Script 883 - [105,79,null,11760]: null
+Script 884 - [105,79,null,11760]: {8=327, 1=303, 2=307, 3=309, 4=311, 5=301, 6=313, 7=314}
+Script 885 - [105,79,null,11760]: {1=2283}
+Script 886 - [105,79,null,11760]: {1=303, 2=307, 3=311, 4=301, 5=313, 6=305}
+Script 887 - [105,79,null,11760]: {4=1973, 1=2309, 2=1891, 3=1901}
+Script 888 - [105,79,null,11760]: {4=1973, 1=2309, 2=1891, 3=1901}
+Script 889 - [105,79,null,11760]: {2=314, 1=313}
+Script 890 - [105,79,null,11760]: {1=2313, 2=1887, 3=1923, 4=1942, 5=590, 6=1935, 7=1931, 8=1973, 9=1933, 10=1980}
+Script 891 - [105,79,null,11760]: {1=1978}
+Script 892 - [105,79,null,11760]: {1=2007, 2=946, 3=1550}
+Script 893 - [105,79,null,11760]: {1=1933, 2=2132, 3=2138, 4=1965, 5=2309, 6=1973, 7=1985, 8=1982, 9=1942}
+Script 894 - [105,79,null,11760]: {4=314, 1=307, 2=309, 3=313}
+Script 895 - [105,79,null,11760]: {1=1917, 2=431, 3=1993}
+Script 896 - [105,79,null,11760]: {1=1635, 2=1637, 3=1639, 4=1641, 5=1643, 6=1654, 7=1656, 8=1658, 9=1660, 10=1662, 11=1692, 12=1694, 13=1696, 14=1698, 15=1700}
+Script 897 - [105,79,null,11760]: {1=1641}
+Script 898 - [105,79,null,11760]: {1=1718, 2=1727, 3=1729, 4=1725, 5=1731}
+Script 899 - [105,79,null,11760]: {1=1714}
+Script 900 - [105,79,null,11760]: {1=1005, 2=1129, 3=1059, 4=1061, 5=1757, 6=1013, 7=1015, 8=1011, 9=1007, 10=950, 11=428, 12=426}
+Script 901 - [105,79,null,11760]: {2=1265, 1=2347}
+Script 902 - [105,79,null,11760]: {1=1755, 2=1592, 3=1597, 4=1595, 5=1733, 6=1734, 7=1599, 8=2976, 9=5523, 10=9434, 11=11065}
+Script 903 - [105,79,null,11760]: {8=5523, 1=1755, 2=1592, 3=1597, 4=1595, 5=1733, 6=1734, 7=1599}
+Script 904 - [105,79,null,11760]: {1=1755, 2=1592, 3=1597, 4=1595, 5=1733, 6=1734, 7=1599, 8=2976, 9=5523, 10=9434, 11=11065}
+Script 905 - [105,79,null,11760]: {8=5523, 1=1755, 2=1592, 3=1597, 4=1595, 5=1733, 6=1734, 7=1599}
+Script 906 - [105,79,null,11760]: {1=229, 2=233, 3=221}
+Script 907 - [105,79,null,11760]: {1=36}
+Script 908 - [105,79,null,11760]: {1=229, 2=233, 3=221}
+Script 909 - [105,79,null,11760]: {1=579, 2=1023, 3=958, 4=948, 5=1733, 6=1734, 7=1059, 8=1061, 9=428, 10=426, 11=1757, 12=1013, 13=1015, 14=1011, 15=1007, 16=1025}
+Script 910 - [105,79,null,11760]: {1=229, 2=233, 3=221}
+Script 911 - [105,79,null,11760]: {2=958, 1=948}
+Script 912 - [105,79,null,11760]: {1=1823, 2=1831, 3=1937, 4=1921, 5=1929, 6=946, 7=2347}
+Script 913 - [105,79,null,11760]: {1=1823, 2=1831, 3=1937, 4=1921, 5=1929, 6=946, 7=1833, 8=1835, 9=1837, 10=314, 11=2347, 12=1925, 13=1923, 14=1935, 15=1854, 16=954}
+Script 914 - [105,79,null,11760]: {1=299, 2=1590, 3=1542, 4=2368, 5=1052}
+Script 915 - [105,79,null,11760]: {1=2520, 2=2522, 3=2524, 4=2526, 5=4613, 6=12844}
+Script 916 - [105,79,null,11760]: {1=5341, 2=5343, 3=5329, 4=952, 5=5325, 6=5331, 7=5354, 8=6032, 9=5418, 10=5376, 11=6036, 12=12622}
+Script 917 - [105,79,null,11760]: {1=5341, 2=5343, 3=5329, 4=952, 5=5325, 6=5331, 7=5354, 8=6032, 9=5418, 10=5376, 11=6036, 12=12622}
+Script 918 - [105,79,null,11760]: {1=5341, 2=5343, 3=5329, 4=952, 5=5325, 6=5331, 7=5354, 8=6032, 9=5418, 10=5376, 11=6036, 12=12622}
+Script 919 - [105,79,null,11760]: {1=5341, 2=5343, 3=5329, 4=952, 5=5325, 6=5331, 7=5354, 8=6032, 9=5418, 10=5376, 11=6036, 12=12622}
+Script 920 - [105,79,null,11760]: {1=5318, 2=5319, 3=5324, 4=5305, 5=5306, 6=5097, 7=5096, 8=5307, 9=5308, 10=5309}
+Script 921 - [118,105,null,0]: {343=1, 204=1, 139=1, 70=1, 138=1, 3=1, 279=1, 4=1, 65=1, 13=1, 17=1, 256=1, 18=1, 83=1, 23=1, 456=1, 159=1, 455=1, 145=1, 24=1, 264=1, 214=1, 391=1, 148=1, 389=1, 31=1, 211=1, 34=1, 441=1, 442=1, 38=1, 235=1, 174=1, 513=1, 233=1, 383=1, 160=1, 41=1, 227=1, 47=1, 254=1, 255=1, 416=1, 57=1, 536=1, 62=1, 301=1, 61=1}
+Script 922 - [105,79,null,11760]: null
+Script 923 - [0,0,null,0]: null
+Script 924 - [111,105,null,0]: {1038=1, 1057=1, 981=1, 1048=1, 1959=1, 1050=1, 1053=1, 1055=1, 1989=1, 1040=1, 962=1, 1042=1, 1961=1, 1044=1, 1046=1}
+Script 925 - [105,79,null,11760]: {1=303, 2=311, 3=2309, 4=1931, 5=1927, 6=1733, 7=1734, 8=1917, 9=1785, 10=946}
+Script 926 - [105,79,null,11760]: {1=4740}
+Script 927 - [105,79,null,11760]: {1=1931, 2=1925, 3=1735, 4=1935, 5=590, 6=1755, 7=2347}
+Script 928 - [105,79,null,11760]: {1=5341, 2=5343, 3=5329, 4=952, 5=5325, 6=5331, 7=6032, 8=6036, 9=2026, 10=1480}
+Script 929 - [105,79,null,11760]: {2=6625, 1=6615}
+Script 930 - [105,79,null,11760]: {4=6605, 1=6615, 2=6625, 3=6591}
+Script 931 - [105,79,null,11760]: {1=6615, 2=6625, 3=6627, 4=6621, 5=6631, 6=6591, 7=6605}
+Script 932 - [105,79,null,11760]: {1=6615, 2=6625, 3=6627, 4=6621, 5=6631, 6=6591, 7=6605, 8=6601, 9=6603, 10=6607}
+Script 933 - [105,79,null,11760]: {1=6615, 2=6625, 3=6627, 4=6621, 5=6631, 6=6623, 7=6633, 8=6617, 9=6619, 10=6629, 11=6591, 12=6605, 13=6601, 14=6603, 15=6607}
+Script 934 - [105,79,null,11760]: {1=6615, 2=6625, 3=6627, 4=6621, 5=6631, 6=6623, 7=6633, 8=6617, 9=6619, 10=6629, 11=6591, 12=6605, 13=6601, 14=6603, 15=6607, 17=6589, 16=6613, 19=6587, 18=6611, 21=6599, 20=6609}
+Script 935 - [105,79,null,11760]: {1=946, 2=2347, 3=1734, 4=1733, 5=4819, 6=1351, 7=1759}
+Script 936 - [105,79,null,11760]: {2=341, 1=331}
+Script 937 - [105,79,null,11760]: {2=339, 1=329}
+Script 938 - [105,79,null,11760]: {8=1121, 1=1109, 2=1143, 3=1159, 4=1181, 5=1197, 6=1071, 7=1085}
+Script 939 - [105,79,null,11760]: {1=1299, 2=1343, 3=1369, 4=3099, 5=1315}
+Script 940 - [105,79,null,11760]: {2=438, 1=436}
+Script 941 - [105,79,null,11760]: {1=10818, 2=10816, 3=10814}
+Script 942 - [105,79,null,11760]: {1=1993, 2=1935, 3=7919}
+Script 943 - [105,79,null,11760]: {4=1935, 1=1993, 2=7810, 3=7919}
+Script 944 - [105,79,null,11760]: {2=1935, 1=1993}
+Script 945 - [105,79,null,11760]: {1=825, 2=826, 3=827, 4=828, 5=829, 6=830, 7=39, 8=40, 9=41, 10=42, 11=43, 12=44}
+Script 946 - [105,79,null,11760]: {8=560, 1=554, 2=555, 3=556, 4=557, 5=558, 6=559, 7=562}
+Script 947 - [105,79,null,11760]: {1=1931, 2=1935, 3=1735, 4=1925, 5=1923, 6=1887, 7=590, 8=1755, 9=2347, 10=1351, 11=7934}
+Script 948 - [105,79,null,11760]: {1=954, 2=2347, 3=1755, 4=946, 5=952, 6=590, 7=36, 8=273, 9=233, 10=1931, 11=1925, 12=1929, 13=1935, 14=1937, 15=229, 17=2019, 16=227, 19=2015, 18=2021, 21=2017, 20=1915, 23=1913, 22=1909, 24=1907}
+Script 949 - [105,79,null,11760]: {1=5018, 2=5016, 3=8872, 4=8880, 5=8882}
+Script 950 - [105,79,null,11760]: {1=9440, 2=9442, 3=9444, 4=9446, 5=9448, 6=9420, 7=9423, 8=9425, 9=9427}
+Script 951 - [105,79,null,11760]: {1=9440, 2=9442, 3=9444, 4=9446, 5=9448, 6=9450, 7=9420, 8=9423, 9=9425, 10=9427, 11=9429}
+Script 952 - [105,79,null,11760]: {1=2518}
+Script 953 - [105,79,null,11760]: {1=3775, 2=3773, 3=3767, 4=3769, 5=3771, 6=3793, 7=3795, 8=3797, 9=3799, 10=3791, 11=3765, 12=3763, 13=3761, 14=3759, 15=3777, 17=3781, 16=3779, 19=3785, 18=3783, 21=3789, 20=3787}
+Script 954 - [105,79,null,11760]: {1=1917, 2=3803, 3=3801}
+Script 955 - [105,79,null,11760]: {1=1337, 2=1335, 3=1339, 4=1341, 5=1343, 6=1345, 7=3749, 8=3751, 9=3753, 10=3755}
+Script 956 - [105,79,null,11760]: {1=590, 2=954, 3=233, 4=1931, 5=2142, 6=2309, 7=952, 8=36, 9=1755, 10=2347, 11=229, 12=227, 13=1925, 14=1929, 15=1944, 17=1965, 16=1942}
+Script 957 - [105,79,null,11760]: {1=303, 2=307, 3=309, 4=311, 5=301, 6=313, 7=314, 8=305, 9=317, 10=327}
+Script 958 - [105,79,null,11760]: {2=958, 1=948}
+Script 959 - [105,79,null,11760]: {1=314, 2=884, 3=886, 4=40, 5=41}
+Script 960 - [105,79,null,11760]: {1=4684, 2=1833, 3=1835, 4=950, 5=1734, 6=1733}
+Script 961 - [105,79,null,11760]: {1=1931, 2=1935, 3=1825, 4=1833, 5=1837, 6=1925, 7=4593, 8=4591, 9=970, 10=946, 11=590, 12=1265, 13=2138}
+Script 962 - [105,79,null,11760]: {1=1931, 2=1935, 3=1825, 4=1833, 5=1837, 6=1925, 7=4593, 8=4591, 9=1985, 10=2120, 11=1982, 12=1937, 13=1921, 14=1929}
+Script 963 - [105,79,null,11760]: {1=1917, 2=2017, 3=1993, 4=2015, 5=2021, 6=1915}
+Script 964 - [105,79,null,11760]: {1=7162}
+Script 965 - [105,79,null,11760]: {1=2028, 2=2030, 3=2032, 4=2034, 5=2036, 6=2038, 7=2040}
+Script 966 - [105,79,null,11760]: {1=2227, 2=2219, 3=2221, 4=2225, 5=2223, 6=2233, 7=2231, 8=2235, 9=2229, 10=2237, 11=2243, 12=2239, 13=2241}
+Script 967 - [105,79,null,11760]: {1=4155, 2=4156, 3=4158, 4=4160, 5=4161, 6=4162, 7=4164, 8=4166, 9=4168, 10=4170, 11=4551, 12=6664, 13=6696, 14=6720, 15=7051, 17=7421, 16=7159, 19=8923, 18=7432, 20=10952}
+Script 968 - [105,79,null,11760]: {4=2136, 1=2132, 2=2138, 3=2134}
+Script 969 - [105,79,null,11760]: {1=2894, 2=2896, 3=2898, 4=2900, 5=2902, 6=2904, 7=2906, 8=2908, 9=2910, 10=2912, 11=2914, 12=2916, 13=2918, 14=2920, 15=2922, 17=2926, 16=2924, 19=2930, 18=2928, 21=2934, 20=2932, 23=2938, 22=2936, 25=2942, 24=2940, 27=1019, 26=1007, 29=1023, 28=1021, 30=1027}
+Script 970 - [105,79,null,11760]: {1=1733, 2=1734, 3=1931, 4=1925, 5=1935, 6=590, 7=1755, 8=2347, 9=3377, 10=946}
+Script 971 - [105,79,null,11760]: {8=4023, 1=554, 2=555, 3=556, 4=557, 5=563, 6=4008, 7=4006}
+Script 972 - [105,79,null,11760]: {4=1329, 1=1321, 2=1323, 3=1325}
+Script 973 - [105,79,null,11760]: {1=1321, 2=1323, 3=1325, 4=1329, 5=4587}
+Script 974 - [105,79,null,11760]: {4=4014, 1=4012, 2=1963, 3=4016}
+Script 975 - [105,79,null,11760]: {8=11065, 1=1755, 2=1592, 3=1597, 4=4020, 5=1733, 6=1734, 7=1759}
+Script 976 - [105,79,null,11760]: {1=1931, 2=1935, 3=954, 4=1925, 5=590, 6=2347}
+Script 977 - [105,79,null,11760]: {1=1823, 2=1831, 3=1937, 4=1921, 5=1929, 6=1935, 7=1923, 8=1925, 9=1837, 10=1833, 11=1835, 12=946}
+Script 978 - [105,79,null,11760]: {1=4627}
+Script 979 - [105,79,null,11760]: {1=1969, 2=2023, 3=660, 4=1215, 5=550, 6=583, 7=1941, 8=273, 9=970, 10=975, 11=1599, 12=2976, 13=1823, 14=1837, 15=1854, 17=3377, 16=2524, 19=1909, 18=2894, 21=3801, 20=3787, 23=3424, 22=3678, 25=5, 24=3420}
+Script 980 - [105,79,null,11760]: {8=6568, 1=6522, 2=6523, 3=6524, 4=6525, 5=6526, 6=6527, 7=6528}
+Script 981 - [105,79,null,11760]: null
+Script 982 - [105,79,null,11760]: {8=560, 1=554, 2=555, 3=556, 4=557, 5=558, 6=559, 7=562}
+Script 983 - [0,0,null,0]: null
+Script 984 - [111,105,null,9999]: {9075=330, 566=615, 565=825, 564=348, 563=567, 562=210, 561=558, 560=465, 558=26, 559=24, 556=26, 557=26, 554=26, 555=26}
+Script 985 - [0,0,null,0]: null
+Script 986 - [0,0,null,0]: null
+Script 987 - [111,105,null,9999]: {562=9, 560=18}
+Script 988 - [0,0,null,0]: null
+Script 989 - [0,0,null,0]: null
+Script 990 - [0,0,null,0]: null
+Script 991 - [0,0,null,0]: null
+Script 992 - [0,0,null,0]: null
+Script 993 - [0,0,null,0]: null
+Script 994 - [0,0,null,0]: null
+Script 995 - [0,0,null,0]: null
+Script 996 - [0,0,null,0]: null
+Script 997 - [0,0,null,0]: null
+Script 998 - [0,0,null,0]: null
+Script 999 - [0,0,null,0]: null
+Script 1000 - [0,0,null,0]: null
+Script 1001 - [0,0,null,0]: null
+Script 1002 - [0,0,null,0]: null
+Script 1003 - [0,0,null,0]: null
+Script 1004 - [0,0,null,0]: null
+Script 1005 - [0,0,null,0]: null
+Script 1006 - [0,0,null,0]: null
+Script 1007 - [0,0,null,0]: null
+Script 1008 - [0,0,null,0]: null
+Script 1009 - [0,0,null,0]: null
+Script 1010 - [0,0,null,0]: null
+Script 1011 - [0,0,null,0]: null
+Script 1012 - [0,0,null,0]: null
+Script 1013 - [0,0,null,0]: null
+Script 1014 - [0,0,null,0]: null
+Script 1015 - [0,0,null,0]: null
+Script 1016 - [0,0,null,0]: null
+Script 1017 - [0,0,null,0]: null
+Script 1018 - [0,0,null,0]: null
+Script 1019 - [0,0,null,0]: null
+Script 1020 - [0,0,null,0]: null
+Script 1021 - [0,0,null,0]: null
+Script 1022 - [0,0,null,0]: null
+Script 1023 - [0,0,null,0]: null
+Script 1024 - [0,0,null,0]: null
+Script 1025 - [0,0,null,0]: null
+Script 1026 - [0,0,null,0]: null
+Script 1027 - [0,0,null,0]: null
+Script 1028 - [0,0,null,0]: null
+Script 1029 - [0,0,null,0]: null
+Script 1030 - [0,0,null,0]: null
+Script 1031 - [0,0,null,0]: null
+Script 1032 - [0,0,null,0]: null
+Script 1033 - [0,0,null,0]: null
+Script 1034 - [0,0,null,0]: null
+Script 1035 - [0,0,null,0]: null
+Script 1036 - [0,0,null,0]: null
+Script 1037 - [0,0,null,0]: null
+Script 1038 - [0,0,null,0]: null
+Script 1039 - [0,0,null,0]: null
+Script 1040 - [0,0,null,0]: null
+Script 1041 - [0,0,null,0]: null
+Script 1042 - [0,0,null,0]: null
+Script 1043 - [0,0,null,0]: null
+Script 1044 - [0,0,null,0]: null
+Script 1045 - [0,0,null,0]: null
+Script 1046 - [0,0,null,0]: null
+Script 1047 - [0,0,null,0]: null
+Script 1048 - [0,0,null,0]: null
+Script 1049 - [0,0,null,0]: null
+Script 1050 - [0,0,null,0]: null
+Script 1051 - [0,0,null,0]: null
+Script 1052 - [0,0,null,0]: null
+Script 1053 - [0,0,null,0]: null
+Script 1054 - [0,0,null,0]: null
+Script 1055 - [0,0,null,0]: null
+Script 1056 - [0,0,null,0]: null
+Script 1057 - [0,0,null,0]: null
+Script 1058 - [0,0,null,0]: null
+Script 1059 - [0,0,null,0]: null
+Script 1060 - [0,0,null,0]: null
+Script 1061 - [73,105,null,0]: {28180512=1, 12582928=1, 12582940=1, 12582937=1, 12582917=1, 12582915=1, 12582925=1, 12582921=1, 28180481=1, 28180482=1, 28180483=1, 28180484=1, 12582963=1, 28180485=1, 28180486=1, 12582961=1, 28180487=1, 28180488=1, 28180489=1, 28180490=1, 12582973=1, 28180491=1, 28180492=1, 28180493=1, 28180495=1, 12582951=1, 12582948=1, 12582946=1, 12582947=1, 28180503=1, 28180502=1, 28180505=1, 12582958=1, 28180507=1, 28180506=1, 28180509=1, 12582952=1, 28180510=1}
+Script 1062 - [0,0,null,0]: null
+Script 1063 - [0,0,null,0]: null
+Script 1064 - [0,0,null,0]: null
+Script 1065 - [0,0,null,0]: null
+Script 1066 - [0,0,null,0]: null
+Script 1067 - [0,0,null,0]: null
+Script 1068 - [0,0,null,0]: null
+Script 1069 - [0,0,null,0]: null
+Script 1070 - [0,0,null,0]: null
+Script 1071 - [0,0,null,0]: null
+Script 1072 - [0,0,null,0]: null
+Script 1073 - [105,73,null,-1]: {0=6881298, 1=6881314, 2=6881330, 3=6881349, 4=6881368, 5=6881387}
+Script 1074 - [105,73,null,-1]: {0=6881313, 1=6881329, 2=6881345, 3=6881364, 4=6881383, 5=6881402}
+Script 1075 - [105,73,null,-1]: {0=6881312, 1=6881328, 2=6881344, 3=6881363, 4=6881382, 5=6881401}
+Script 1076 - [105,73,null,-1]: {0=6881299, 1=6881315, 2=6881331, 3=6881350, 4=6881369, 5=6881388}
+Script 1077 - [105,73,null,-1]: {4=6881384, 5=6881403, 2=6881346, 3=6881365}
+Script 1078 - [105,118,null,-1]: {0=517, 1=518, 2=519, 3=520, 4=521, 5=522}
+Script 1079 - [105,118,null,-1]: {0=523, 1=524, 2=525, 3=526, 4=527, 5=528}
+Script 1080 - [105,73,null,-1]: {0=7143442, 1=7143447, 2=7143452, 3=7143460, 4=7143468, 5=7143476}
+Script 1081 - [105,73,null,-1]: {0=7143444, 1=7143449, 2=7143454, 3=7143462, 4=7143470, 5=7143478}
+Script 1082 - [105,73,null,-1]: {4=7143471, 5=7143479, 2=7143455, 3=7143463}
+Script 1083 - [105,73,null,-1]: {0=6946834, 1=6946848, 2=6946862, 3=6946879, 4=6946896, 5=6946913}
+Script 1084 - [105,73,null,-1]: {0=6946835, 1=6946849, 2=6946863, 3=6946880, 4=6946897, 5=6946914}
+Script 1085 - [105,73,null,-1]: {4=6946910, 5=6946927, 2=6946876, 3=6946893}
+Script 1086 - [0,0,null,0]: null
+Script 1087 - [105,79,null,11760]: {1=11814, 2=11816, 3=11818, 4=11820, 5=11822, 6=11824, 7=11826, 8=11828, 9=11830, 10=11832, 11=11834, 12=11836, 13=11838, 14=11840, 15=11842, 17=11846, 16=11844, 19=11850, 18=11848, 21=11854, 20=11852, 23=11858, 22=11856, 25=11862, 24=11860, 27=11866, 26=11864, 29=11870, 28=11868, 31=11960, 30=11872, 34=11876, 35=11878, 32=11962, 33=11874, 38=11884, 39=11886, 36=11880, 37=11882, 42=11892, 43=11894, 40=11888, 41=11890, 46=11900, 47=11902, 44=11896, 45=11898, 51=11910, 50=11908, 49=11906, 48=11904, 55=11918, 54=11916, 53=11914, 52=11912, 59=11926, 58=11924, 57=11922, 56=11920, 63=11934, 62=11932, 61=11930, 60=11928, 68=11944, 69=11946, 70=11967, 64=11936, 65=11938, 66=11940, 67=11942}
+Script 1088 - [79,115,shop_dummy,0]: {11836=This item set is made up of adamant full helm, platebody, skirt and kiteshield., 11838=This item set is made up of rune full helm, platebody, legs and kiteshield., 11832=This item set is made up of mithril full helm, platebody, skirt and kiteshield., 11834=This item set is made up of adamant full helm, platebody, legs and kiteshield., 11828=This item set is made up of black full helm, platebody, skirt and kiteshield., 11967=This item set is made up of cannon base, stand, barrels and furnace., 11830=This item set is made up of mithril full helm, platebody, legs and kiteshield., 11960=This item set is made up of hat, top, bottoms, gloves and boots., 11824=This item set is made up of steel full helm, platebody, skirt and kiteshield., 11962=This item set is made up of hat, top, bottoms, gloves and boots., 11826=This item set is made up of black full helm, platebody, legs and kiteshield., 11820=This item set is made up of iron full helm, platebody, skirt and kiteshield., 11940=This item set is made up of full helm, platebody, skirt and kiteshield., 11822=This item set is made up of steel full helm, platebody, legs and kiteshield., 11942=This item set is made up of helm, platebody, legs, boots and gloves., 11816=This item set is made up of bronze full helm, platebody, skirt and kiteshield., 11936=This item set is made up of full helm, platebody, skirt and kiteshield., 11818=This item set is made up of iron full helm, platebody, legs and kiteshield., 11938=This item set is made up of full helm, platebody, legs and kiteshield., 11814=This item set is made up of bronze full helm, platebody, legs and kiteshield., 11944=This item set is made up of helm, body, chaps, boots and gloves., 11946=This item set is made up of helm, top, bottoms, boots and gloves., 11926=This item set is made up of full helm, platebody, legs and shield., 11924=This item set is made up of body, chaps, bracers and coif., 11922=This item set is made up of body, chaps, bracers and coif., 11920=This item set is made up of body, chaps, bracers and coif., 11934=This item set is made up of full helm, platebody, skirt and kiteshield., 11932=This item set is made up of full helm, platebody, skirt and kiteshield., 11930=This item set is made up of full helm, platebody, legs and kiteshield., 11928=This item set is made up of full helm, platebody, legs and kiteshield., 11910=This item set is made up of body and chaps., 11908=This item set is made up of body and chaps., 11906=This item set is made up of hat, robetop and bottoms., 11904=This item set is made up of hat, robetop and bottoms., 11918=This item set is made up of body and chaps., 11916=This item set is made up of body and chaps., 11914=This item set is made up of body and chaps., 11912=This item set is made up of body and chaps., 11896=This item set is made up of full helm, platebody, skirt and kiteshield., 11898=This item set is made up of full helm, platebody, legs and kiteshield., 11900=This item set is made up of full helm, platebody, skirt and kiteshield., 11902=This item set is made up of hat, robetop and bottoms., 11888=This item set is made up of full helm, platebody, skirt and kiteshield., 11890=This item set is made up of full helm, platebody, legs and kiteshield., 11892=This item set is made up of full helm, platebody, skirt and kiteshield., 11894=This item set is made up of full helm, platebody, legs and kiteshield., 11880=This item set is made up of full helm, platebody, skirt and kiteshield., 11882=This item set is made up of full helm, platebody, legs and kiteshield., 11884=This item set is made up of full helm, platebody, skirt and kiteshield., 11886=This item set is made up of full helm, platebody, legs and kiteshield., 11872=This item set is made up of hat, top, bottoms, gloves and boots., 11874=This item set is made up of hat, top, bottoms, gloves and boots., 11876=This item set is made up of helm, body, boots, gauntlets and legs., 11878=This item set is made up of full helm, platebody, legs and kiteshield., 11866=This item set is made up of body, chaps and vambraces., 11864=This item set is made up of body, chaps and vambraces., 11870=This item set is made up of body, chaps and vambraces., 11868=This item set is made up of body, chaps and vambraces., 11858=This item set is made up of helm, body, legs and shield., 11856=This item set is made up of Verac's helm, brassard, plateskirt and flail., 11862=This item set is made up of body, legs, amulet and hat., 11860=This item set is made up of coif, body, chaps and vambraces., 11850=This item set is made up of Guthan's helm, body, chainskirt and spear., 11848=This item set is made up of Dharok's helm, body, legs and greataxe., 11854=This item set is made up of Torag's helm, body, legs and hammers., 11852=This item set is made up of Karil's coif, leather top, leather skirt and crossbow., 11842=This item set is made up of dragon med helm, chainbody, legs., 11840=This item set is made up of rune full helm, platebody, skirt and kiteshield., 11846=This item set is made up of Ahrim's hood, robetop, robeskirt and staff., 11844=This item set is made up of dragon med helm, chainbody, skirt.}
+Script 1089 - [111,115,shop_dummy,0]: {11836=This item set is made up of adamant full helm, platebody, skirt and kiteshield., 11838=This item set is made up of rune full helm, platebody, legs and kiteshield., 11832=This item set is made up of mithril full helm, platebody, skirt and kiteshield., 11834=This item set is made up of adamant full helm, platebody, legs and kiteshield., 11828=This item set is made up of black full helm, platebody, skirt and kiteshield., 11967=This item set is made up of cannon base, stand, barrels and furnace., 11830=This item set is made up of mithril full helm, platebody, legs and kiteshield., 11960=This item set is made up of hat, top, bottoms, gloves and boots., 11824=This item set is made up of steel full helm, platebody, skirt and kiteshield., 11962=This item set is made up of hat, top, bottoms, gloves and boots., 11826=This item set is made up of black full helm, platebody, legs and kiteshield., 11820=This item set is made up of iron full helm, platebody, skirt and kiteshield., 11940=This item set is made up of full helm, platebody, skirt and kiteshield., 11822=This item set is made up of steel full helm, platebody, legs and kiteshield., 11942=This item set is made up of helm, platebody, legs, boots and gloves., 11816=This item set is made up of bronze full helm, platebody, skirt and kiteshield., 11936=This item set is made up of full helm, platebody, skirt and kiteshield., 11818=This item set is made up of iron full helm, platebody, legs and kiteshield., 11938=This item set is made up of full helm, platebody, legs and kiteshield., 11814=This item set is made up of bronze full helm, platebody, legs and kiteshield., 11944=This item set is made up of helm, body, chaps, boots and gloves., 11946=This item set is made up of helm, top, bottoms, boots and gloves., 11926=This item set is made up of full helm, platebody, legs and shield., 11924=This item set is made up of body, chaps, bracers and coif., 11922=This item set is made up of body, chaps, bracers and coif., 11920=This item set is made up of body, chaps, bracers and coif., 11934=This item set is made up of full helm, platebody, skirt and kiteshield., 11932=This item set is made up of full helm, platebody, skirt and kiteshield., 11930=This item set is made up of full helm, platebody, legs and kiteshield., 11928=This item set is made up of full helm, platebody, legs and kiteshield., 11910=This item set is made up of body and chaps., 11908=This item set is made up of body and chaps., 11906=This item set is made up of hat, robetop and bottoms., 11904=This item set is made up of hat, robetop and bottoms., 11918=This item set is made up of body and chaps., 11916=This item set is made up of body and chaps., 11914=This item set is made up of body and chaps., 11912=This item set is made up of body and chaps., 11896=This item set is made up of full helm, platebody, skirt and kiteshield., 11898=This item set is made up of full helm, platebody, legs and kiteshield., 11900=This item set is made up of full helm, platebody, skirt and kiteshield., 11902=This item set is made up of hat, robetop and bottoms., 11888=This item set is made up of full helm, platebody, skirt and kiteshield., 11890=This item set is made up of full helm, platebody, legs and kiteshield., 11892=This item set is made up of full helm, platebody, skirt and kiteshield., 11894=This item set is made up of full helm, platebody, legs and kiteshield., 11880=This item set is made up of full helm, platebody, skirt and kiteshield., 11882=This item set is made up of full helm, platebody, legs and kiteshield., 11884=This item set is made up of full helm, platebody, skirt and kiteshield., 11886=This item set is made up of full helm, platebody, legs and kiteshield., 11872=This item set is made up of hat, top, bottoms, gloves and boots., 11874=This item set is made up of hat, top, bottoms, gloves and boots., 11876=This item set is made up of helm, body, greaves, gauntlets and legs, 11878=This item set is made up of full helm, platebody, legs and kiteshield., 11866=This item set is made up of body, chaps and vambraces., 11864=This item set is made up of body, chaps and vambraces., 11870=This item set is made up of body, chaps and vambraces., 11868=This item set is made up of body, chaps and vambraces., 11858=This item set is made up of helm, body, legs and shield., 11856=This item set is made up of Verac's helm, brassard, plateskirt and flail., 11862=This item set is made up of body, legs, amulet and hat., 11860=This item set is made up of coif, body, chaps and vambraces., 11850=This item set is made up of Guthan's helm, body, chainskirt and spear, 11848=This item set is made up of Dharok's helm, body, legs and greataxe, 11854=This item set is made up of Torag's helm, body, legs and hammers., 11852=This item set is made up of Karil's coif, leather top, leather skirt and crossbow., 11842=This item set is made up of dragon med helm, chainbody, legs., 11840=This item set is made up of rune full helm, platebody, skirt and kiteshield., 11846=This item set is made up of Ahrim's hood, robetop, robeskirt and staff., 11844=This item set is made up of dragon med helm, chainbody, skirt.}
+Script 1090 - [0,0,null,0]: null
+Script 1091 - [0,0,null,0]: null
+Script 1092 - [0,0,null,0]: null
+Script 1093 - [0,0,null,0]: null
+Script 1094 - [0,0,null,0]: null
+Script 1095 - [0,0,null,0]: null
+Script 1096 - [0,0,null,0]: null
+Script 1097 - [0,0,null,0]: null
+Script 1098 - [105,110,null,6565]: {1=6568, 2=6571, 3=6574, 4=6577, 5=6580, 6=6583, 7=6586, 8=6589, 9=6592, 10=6595, 11=6598, 12=6601}
+Script 1099 - [105,115,,0]: {0=Memorial plaque, 1=Flag, 2=Small gravestone, 3=Ornate gravestone, 4=Font of Life, 5=Stele, 6=Symbol of Saradomin, 7=Symbol of Zamorak, 8=Symbol of Guthix, 9=Symbol of Bandos, 10=Symbol of Armadyl, 11=Ancient symbol, 12=Angel of Death}
+Script 1100 - [105,115,,0]: {0=A simple plaque, bearing the name of the deceased.<br><br>(Everyone has this by default.), 1=A dignified little flag flutters in the breeze., 2=A simple little gravestone., 3=An ornately carved gravestone., 4=An elaborate font. As water collects in the bowl, it symbolises new life and hope., 5=A monolithic memorial stone bearing a selection of emblems., 6=The four-pointed star is universally recognised as the symbol of Saradomin., 7=This serpentine sigil represents the ruthless Zamorak., 8=Favoured by humans of a mystical or druidic inclination., 9=Followers of Bandos are now scarce, but this symbol is still used by those who remember that violent god., 10=Armadyl's love of winged creatures is represented by this elegant symbol. Little else is remembered of him., 11=Adventurers often request this symbol, although its origin and meaning have become obscure in the centuries since the god wars., 12=The ultimate marker for a grave, this statue evokes intimations of mortality in all who are faced with it.}
+Script 1101 - [105,105,null,-1]: {0=0, 1=50, 2=500, 3=5000, 4=50000, 5=50000, 6=50000, 7=50000, 8=50000, 9=50000, 10=50000, 11=50000, 12=500000}
+Script 1102 - [0,0,null,0]: null
+Script 1103 - [0,0,null,0]: null
+Script 1104 - [0,0,null,0]: null
+Script 1105 - [0,0,null,0]: null
+Script 1106 - [0,0,null,0]: null
+Script 1107 - [0,0,null,0]: null
+Script 1108 - [0,0,null,0]: null
+Script 1109 - [0,0,null,0]: null
+Script 1110 - [0,0,null,0]: null
+Script 1111 - [0,0,null,0]: null
+Script 1112 - [0,0,null,0]: null
+Script 1113 - [0,0,null,0]: null
+Script 1114 - [0,0,null,0]: null
+Script 1115 - [0,0,null,0]: null
+Script 1116 - [0,0,null,0]: null
+Script 1117 - [0,0,null,0]: null
+Script 1118 - [0,0,null,0]: null
+Script 1119 - [0,0,null,0]: null
+Script 1120 - [0,0,null,0]: null
+Script 1121 - [0,0,null,0]: null
+Script 1122 - [0,0,null,0]: null
+Script 1123 - [0,0,null,0]: null
+Script 1124 - [0,0,null,0]: null
+Script 1125 - [105,75,null,0]: {1=1, 2=2, 3=3, 4=4, 5=5, 6=6, 7=7, 8=8, 9=91, 10=92, 11=93, 12=94, 13=95, 14=96, 15=97}
+Script 1126 - [105,75,null,45]: {1=46, 2=47, 3=48, 4=49, 5=50, 6=51, 7=52, 8=53, 9=54, 10=135, 11=136, 12=137, 13=138, 14=139, 15=140, 17=142, 16=141, 19=144, 18=143, 21=146, 20=145}
+Script 1127 - [105,75,null,10]: {1=11, 2=12, 3=13, 4=14, 5=15, 6=16, 7=17, 8=98, 9=99, 10=100, 11=101, 12=102, 13=103, 14=104}
+Script 1128 - [105,75,null,18]: {1=19, 2=20, 3=21, 4=22, 5=23, 6=24, 7=25, 8=111, 9=112, 10=113, 11=114, 12=115, 13=116}
+Script 1129 - [105,75,null,56]: {1=57, 2=58, 3=59, 4=60, 5=153, 6=154, 7=155, 8=156, 9=157, 10=158}
+Script 1130 - [105,75,null,26]: {1=27, 2=28, 3=29, 4=30, 5=31, 6=105, 7=106, 8=107, 9=108, 10=109, 11=110}
+Script 1131 - [105,75,null,61]: {1=62, 2=63, 3=64, 4=65, 5=147, 6=148, 7=149, 8=150, 9=151, 10=152}
+Script 1132 - [105,75,null,33]: {1=34, 2=84, 3=117, 4=118, 5=119, 6=120, 7=121, 8=122, 9=123, 10=124, 11=125, 12=126}
+Script 1133 - [105,75,null,67]: {1=68, 2=127, 3=159, 4=160, 5=161, 6=162, 7=163, 8=164, 9=165, 10=166, 11=167, 12=168}
+Script 1134 - [105,75,null,36]: {1=37, 2=38, 3=39, 4=40, 5=85, 6=86, 7=87, 8=88, 9=89, 10=90}
+Script 1135 - [105,75,null,70]: {1=71, 2=72, 3=73, 4=74, 5=75, 6=76, 7=77, 8=128, 9=129, 10=130, 11=131, 12=132, 13=133, 14=134}
+Script 1136 - [105,75,null,42]: {1=43}
+Script 1137 - [105,75,null,79]: {1=80}
+Script 1138 - [0,0,null,0]: null
+Script 1139 - [0,0,null,0]: null
+Script 1140 - [0,0,null,0]: null
+Script 1141 - [0,0,null,0]: null
+Script 1142 - [0,0,null,0]: null
+Script 1143 - [0,0,null,0]: null
+Script 1144 - [0,0,null,0]: null
+Script 1145 - [0,0,null,0]: null
+Script 1146 - [0,0,null,0]: null
+Script 1147 - [0,0,null,0]: null
+Script 1148 - [0,0,null,0]: null
+Script 1149 - [0,0,null,0]: null
+Script 1150 - [0,0,null,0]: null
+Script 1151 - [105,109,null,-1]: {1=31039, 2=31035, 3=31042, 4=31050, 5=31051, 6=31029, 7=31032, 8=31043, 9=31031, 10=31049, 11=31060, 12=31033}
+Script 1152 - [105,109,null,-1]: {1=31036, 2=31046, 3=31056, 4=31027, 5=31026, 6=31045, 7=31048, 8=31058, 9=31028, 10=31041, 11=31044, 12=31057}
+Script 1153 - [105,73,null,-1]: {1=17629192, 2=17629193, 3=17629194, 4=17629195, 5=17629196, 6=17629197, 7=17629198, 8=17629199, 9=17629200, 10=17629201, 11=17629202, 12=17629203, 13=17629204, 14=17629205, 15=17629206, 17=17629208, 16=17629207, 19=17629210, 18=17629209, 21=17629212, 20=17629211, 23=17629214, 22=17629213, 25=17629216, 24=17629215, 27=17629218, 26=17629217, 29=17629220, 28=17629219, 31=17629222, 30=17629221, 34=17629225, 35=17629226, 32=17629223, 33=17629224, 36=17629227}
+Script 1154 - [105,73,null,-1]: {0=17629186, 1=17629187, 2=17629188}
+Script 1155 - [105,109,null,-1]: {0=31054, 1=31038, 2=31055}
+Script 1156 - [105,105,null,0]: {0=80, 1=75, 2=60, 3=50}
+Script 1157 - [105,105,null,0]: {0=10, 1=10, 2=10, 3=10}
+Script 1158 - [105,105,null,0]: {0=95, 1=85, 2=75, 3=60}
+Script 1159 - [105,105,null,0]: {0=10, 1=10, 2=15, 3=15}
+Script 1160 - [105,105,null,0]: {0=70, 1=65, 2=55, 3=45}
+Script 1161 - [105,105,null,0]: {0=10, 1=10, 2=10, 3=5}
+Script 1162 - [105,105,null,0]: {0=1, 1=35, 2=70, 3=105}
+Script 1163 - [0,0,null,0]: null
+Script 1164 - [0,0,null,0]: null
+Script 1165 - [0,0,null,0]: null
+Script 1166 - [0,0,null,0]: null
+Script 1167 - [0,0,null,0]: null
+Script 1168 - [0,0,null,0]: null
+Script 1169 - [0,0,null,0]: null
+Script 1170 - [0,0,null,0]: null
+Script 1171 - [0,0,null,0]: null
+Script 1172 - [0,0,null,0]: null
+Script 1173 - [0,0,null,0]: null
+Script 1174 - [0,0,null,0]: null
+Script 1175 - [0,0,null,0]: null
+Script 1176 - [0,0,null,0]: null
+Script 1177 - [0,0,null,0]: null
+Script 1178 - [0,0,null,0]: null
+Script 1179 - [0,0,null,0]: null
+Script 1180 - [0,0,null,0]: null
+Script 1181 - [0,0,null,0]: null
+Script 1182 - [105,111,null,526]: {1=12047, 2=12043, 3=12059, 4=12019, 5=12009, 6=12778, 7=12049, 8=12055, 9=12808, 10=12067, 11=12063, 12=12091, 13=12800, 14=12053, 15=12065, 17=12818, 16=12021, 19=12798, 18=12780, 21=12087, 20=12814, 23=12051, 22=12071, 25=12097, 24=12095, 27=12101, 26=12099, 29=12105, 28=12103, 31=12816, 30=12107, 34=12007, 35=12035, 32=12041, 33=12061, 38=12812, 39=12784, 36=12027, 37=12531, 42=12085, 43=12037, 40=12810, 41=12023, 46=12123, 47=12031, 44=12015, 45=12045, 51=12057, 50=12820, 49=12033, 48=12029, 55=12782, 54=12011, 53=12069, 52=12792, 59=12804, 58=12802, 57=12013, 56=12794, 63=12788, 62=12017, 61=12025, 60=12806, 68=12079, 69=12081, 70=12083, 71=12039, 64=12776, 65=12073, 66=12075, 67=12077, 76=12093, 77=12790, 72=12786, 73=12089, 74=12796, 75=12822}
+Script 1183 - [105,111,null,526]: {1=12231, 2=12225, 3=12236, 4=12255, 5=12226, 6=12286, 7=12256, 8=12240, 9=12290, 10=12245, 11=12241, 12=12237, 13=12276, 14=12227, 15=12246, 17=12282, 16=12232, 19=12283, 18=12284, 21=12243, 20=12285, 23=12229, 22=12228, 25=12266, 24=12266, 27=12266, 26=12266, 29=12266, 28=12266, 31=12288, 30=12266, 34=12238, 35=12258, 32=12235, 33=12259, 38=12274, 39=12289, 36=12257, 37=12233, 42=12239, 43=12234, 40=12275, 41=12267, 46=12252, 47=12253, 44=12254, 45=12265, 51=12249, 50=12244, 49=12230, 48=12262, 55=12291, 54=12247, 53=12242, 52=12279, 59=12273, 58=12271, 57=12269, 56=12261, 63=12277, 62=12260, 61=12263, 60=12272, 68=12264, 69=12264, 70=12264, 71=12250, 64=12270, 65=12264, 66=12264, 67=12264, 76=12251, 77=12278, 72=12280, 73=12268, 74=12281, 75=12287}
+Script 1184 - [105,111,null,526]: {1=12377, 2=12293, 3=12353, 4=12359, 5=12355, 6=12409, 7=12381, 8=12357, 9=12415, 10=12351, 11=12327, 12=12313, 13=12395, 14=12375, 15=12321, 17=12407, 16=12303, 19=12407, 18=12407, 21=12301, 20=12407, 23=12371, 22=12335, 25=12311, 24=12311, 27=12311, 26=12311, 29=12311, 28=12311, 31=12411, 30=12311, 34=12345, 35=12299, 32=12337, 33=12347, 38=12391, 39=12419, 36=12325, 37=12363, 42=12317, 43=12297, 40=12393, 41=12329, 46=12367, 47=12369, 44=12361, 45=12365, 51=12349, 50=12333, 49=12319, 48=12309, 55=12417, 54=12339, 53=12331, 52=12401, 59=12389, 58=12389, 57=12385, 56=12343, 63=12397, 62=12295, 61=12323, 60=12389, 68=12341, 69=12341, 70=12341, 71=12373, 64=12387, 65=12341, 66=12341, 67=12341, 76=12383, 77=12399, 72=12405, 73=12379, 74=12403, 75=12413}
+Script 1185 - [111,105,null,0]: {12079=66, 12798=34, 12796=93, 12077=56, 12075=46, 12794=77, 12073=36, 12792=73, 12790=99, 12071=41, 12788=83, 12069=74, 12786=89, 12067=23, 12784=57, 12065=32, 12782=76, 12095=43, 12093=96, 12780=34, 12778=17, 12091=28, 12089=92, 12776=85, 12087=40, 12085=61, 12083=86, 12081=76, 12531=56, 12045=64, 12047=1, 12041=47, 12043=4, 12037=62, 12039=88, 12033=69, 12035=54, 12061=49, 12063=25, 12057=71, 12059=10, 12053=31, 12055=19, 12049=18, 12051=42, 12017=83, 12806=79, 12804=79, 12019=13, 12802=79, 12021=33, 12023=58, 12800=29, 12025=80, 12814=34, 12812=57, 12027=55, 12029=68, 12810=57, 12031=67, 12808=22, 12822=95, 12820=70, 12818=34, 12007=52, 12816=46, 12009=16, 12011=75, 12013=78, 12015=63, 12105=43, 12107=43, 12097=43, 12099=43, 12101=43, 12103=43, 12123=66}
+Script 1186 - [111,115,You may not check this pouch for its ingredients.,0]: {12079=This pouch requires 1 mithril bar, 1 blue charm and 152 spirit shards., 12798=This pouch requires 1 torcher charm, 1 blue charm and 74 spirit shards., 12796=This pouch requires 1 abyssal charm, 1 green charm and 113 spirit shards., 12077=This pouch requires 1 steel bar, 1 blue charm and 141 spirit shards., 12075=This pouch requires 1 iron bar, 1 blue charm and 125 spirit shards., 12794=This pouch requires 1 talon beast charm, 1 crimson charm and 174 spirit shards., 12073=This pouch requires 1 bronze bar, 1 blue charm and 102 spirit shards., 12792=This pouch requires 1 obsidian charm, 1 blue charm and 195 spirit shards., 12790=This pouch requires 1 steel platebody, 1 crimson charm and 178 spirit shards., 12071=This pouch requires 1 clean guam leaf, 1 green charm and 78 spirit shards., 12788=This pouch requires 1 obsidian charm, 1 blue charm and 219 spirit shards., 12069=This pouch requires one 500g block of granite, 1 crimson charm and 166 spirit shards., 12786=This pouch requires 1 water talisman, 1 blue charm and 222 spirit shards., 12067=This pouch requires 1 raw rat meat, 1 blue charm and 75 spirit shards., 12784=This pouch requires 1 perfect larupia fur, 1 blue charm and 155 spirit shards., 12065=This pouch requires 1 honeycomb, 1 crimson charm and 84 spirit shards., 12782=This pouch requires 1 ruby harvest butterfly, 1 green charm and 141 spirit shards., 12095=This pouch requires 1 cockatrice egg, 1 green charm and 88 spirit shards., 12093=This pouch requires 1 yak hide, 1 crimson charm and 211 spirit shards., 12780=This pouch requires 1 spinner charm, 1 blue charm and 74 spirit shards., 12778=This pouch requires 1 mosquito proboscis, 1 gold charm and 1 spirit shard., 12091=This pouch requires 1 bucket of compost, 1 green charm and 47 spirit shards., 12089=This pouch requires 1 raw rabbit, 1 wolf bones, 1 crimson charm and 203 spirit shards., 12776=This pouch requires 1 swamp lizard, 1 crimson charm and 150 spirit shards., 12087=This pouch requires 1 marigold, 1 gold charm and 11 spirit shards., 12085=This pouch requires 1 pile of goat horn dust, 1 crimson charm and 141 spirit shards., 12083=This pouch requires 1 runite bar, 1 blue charm and 1 spirit shard., 12081=This pouch requires 1 adamantite bar, 1 blue charm and 144 spirit shards., 12531=This pouch requires 1 harpoon, 1 green charm and 109 spirit shards., 12045=This pouch requires 1 bagged plant 1, 1 crimson charm and 128 spirit shards., 12047=This pouch requires 1 set of wolf bones, 1 gold charm and 7 spirit shards., 12041=This pouch requires 1 gold ring, 1 green charm and 88 spirit shards., 12043=This pouch requires 1 raw chicken, 1 gold charm and 8 spirit shards., 12037=This pouch requires 1 abyssal charm, 1 green charm and 119 spirit shards., 12039=This pouch requires 1 unicorn horn, 1 green charm and 140 spirit shards., 12033=This pouch requires 1 banana, 1 green charm and 130 spirit shards., 12035=This pouch requires 1 abyssal charm, 1 green charm and 106 spirit shards., 12061=This pouch requires 1 raw beef, 1 crimson charm and 117 spirit shards., 12063=This pouch requires 1 potato cactus, 1 blue charm and 51 spirit shards., 12057=This pouch requires 1 polar kebbit fur, 1 gold charm and 14 spirit shards., 12059=This pouch requires 1 spider carcass, 1 gold charm and 8 spirit shards., 12053=This pouch requires 1 vampire dust, 1 crimson charm and 81 spirit shards., 12055=This pouch requires 1 pair of bronze claws, 1 crimson charm and 57 spirit shards., 12049=This pouch requires 1 bucket of sand, 1 green charm and 45 spirit shards., 12051=This pouch requires 1 carved evil turnip, 1 crimson charm and 104 spirit shards., 12017=This pouch requires 1 dagannoth hide, 1 crimson charm and 1 spirit shard., 12806=This pouch requires 1 air talisman, 1 water talisman, 1 blue charm and 198 spirit shards., 12804=This pouch requires 1 earth talisman, 1 blue charm and 202 spirit shards., 12019=This pouch requires 1 uncooked thin snail, 1 gold charm and 9 spirit shards., 12802=This pouch requires 1 fire talisman, 1 blue charm and 198 spirit shards., 12021=This pouch requires 1 willow log, 1 green charm and 72 spirit shards., 12023=This pouch requires 1 empty fishbowl, 1 blue charm and 144 spirit shards., 12800=This pouch requires 1 chinchompa, 1 blue charm and 84 spirit shards., 12025=This pouch requires 1 water orb, 1 green charm and 128 spirit shards., 12814=This pouch requires 1 shifter charm, 1 blue charm and 74 spirit shards., 12812=This pouch requires 1 perfect kyatt fur, 1 blue charm and 153 spirit shards., 12027=This pouch requires 1 jug of water, 1 blue charm and 151 spirit shards., 12029=This pouch requires 1 raw shark, 1 green charm and 110 spirit shards., 12810=This pouch requires 1 perfect graahk fur, 1 blue charm and 154 spirit shards., 12031=This pouch requires 1 tortoise shell, 1 gold charm and 1 spirit shard., 12808=This pouch requires 1 obsidian charm, 1 crimson charm and 64 spirit shards., 12822=This pouch requires 1 iron platebody, 1 crimson charm and 198 spirit shards., 12820=This pouch requires 1 pot of flour, 1 crimson charm and 79 spirit shards., 12818=This pouch requires 1 ravager charm, 1 green charm and 74 spirit shards., 12007=This pouch requires 1 raw bird meat, 1 gold charm and 12 spirit shards., 12816=This pouch requires 1 tinderbox, 1 crimson charm and 111 spirit shards., 12009=This pouch requires 1 iron ore, 1 gold charm and 7 spirit shards., 12011=This pouch requires 1 bunch of red flowers, 1 crimson charm and 168 spirit shards., 12013=This pouch requires 1 willow branch, 1 green charm and 124 spirit shards., 12015=This pouch requires 1 snake hide, 1 crimson charm and 116 spirit shards., 12105=This pouch requires 1 coraxatrice egg, 1 green charm and 88 spirit shards., 12107=This pouch requires 1 vulatrice egg, 1 green charm and 88 spirit shards., 12292=This pouch is not yet available., 12097=This pouch requires 1 guthatrice egg, 1 green charm and 88 spirit shards., 12099=This pouch requires 1 saratrice egg, 1 green charm and 88 spirit shards., 12101=This pouch requires 1 zamatrice egg, 1 green charm and 88 spirit shards., 12103=This pouch requires 1 pengatrice egg, 1 green charm and 88 spirit shards., 12123=This pouch requires 1 swamp toad, 1 gold charm and 11 spirit shards.}
+Script 1187 - [111,115,Familiar,0]: {12017=Spirit dagannoth pouch, 12806=Ice titan pouch, 12804=Moss titan pouch, 12019=Thorny snail pouch, 12802=Fire titan pouch, 12021=Beaver pouch, 12023=Karamthulhu overlord pouch, 12800=Giant chinchompa pouch, 12025=Hydra pouch, 12814=Void shifter pouch, 12812=Spirit kyatt pouch, 12027=Spirit jelly pouch, 12029=Bunyip pouch, 12810=Spirit graahk pouch, 12031=War tortoise pouch, 12808=Spirit Tz-Kih pouch, 12822=Iron titan pouch, 12820=Ravenous locust pouch, 12818=Void ravager pouch, 12007=Spirit terrorbird pouch, 12816=Pyrelord pouch, 12830=Famine scroll, 12009=Granite crab pouch, 12831=Deadly Claw scroll, 12828=Iron Within scroll, 12011=Praying mantis pouch, 12829=Immense Heat scroll, 12826=Volcanic Strength scroll, 12013=Giant ent pouch, 12827=Essence Shipment scroll, 12824=Titan's Constitution scroll, 12015=Spirit cobra pouch, 12825=Steel of Legends scroll, 12837=Ebon Thunder scroll, 12836=Ambush scroll, 12839=Fireball Assault scroll, 12838=Pester scroll, 12833=Boil scroll, 12832=Swamp Plague scroll, 12835=Goad scroll, 12292=Reserved, 12834=Explode scroll, 12841=Inferno scroll, 12840=Rending scroll, 12079=Mithril minotaur pouch, 12798=Void torcher pouch, 12796=Abyssal titan pouch, 12077=Steel minotaur pouch, 12075=Iron minotaur pouch, 12794=Talon beast pouch, 12073=Bronze minotaur pouch, 12792=Obsidian golem pouch, 12790=Steel titan pouch, 12071=Macaw pouch, 12788=Lava titan pouch, 12069=Granite lobster pouch, 12786=Geyser titan pouch, 12067=Albino rat pouch, 12784=Spirit larupia pouch, 12065=Honey badger pouch, 12782=Forge regent pouch, 12095=Spirit cockatrice pouch, 12093=Pack yak pouch, 12780=Void spinner pouch, 12778=Spirit mosquito pouch, 12091=Compost mound pouch, 12089=Wolpertinger pouch, 12776=Swamp titan pouch, 12533=Stony Shell scroll, 12087=Bull ant pouch, 12085=Smoke devil pouch, 12083=Rune minotaur pouch, 12081=Adamant minotaur pouch, 12531=Ibis pouch, 12045=Stranger plant pouch, 12047=Spirit wolf pouch, 12041=Magpie pouch, 12043=Dreadfowl pouch, 12037=Abyssal lurker pouch, 12039=Unicorn stallion pouch, 12033=Fruit bat pouch, 12035=Abyssal parasite pouch, 12061=Bloated leech pouch, 12063=Spirit kalphite pouch, 12057=Arctic bear pouch, 12059=Spirit spider pouch, 12053=Vampire bat pouch, 12055=Spirit scorpion pouch, 12049=Desert wyrm pouch, 12051=Evil turnip pouch, 12456=Spike Shot scroll, 12457=Acorn Missile scroll, 12458=Petrifying Gaze scroll, 12459=Slime Spray scroll, 12460=Electric Lash scroll, 12461=Bronze Bull Rush scroll, 12462=Iron Bull Rush scroll, 12463=Steel Bull Rush scroll, 12448=Evil Flames scroll, 12449=Crushing Claw scroll, 12450=Mantis Strike scroll, 12451=Arctic Blast scroll, 12452=Toad Bark scroll, 12453=Dissolve scroll, 12454=Abyssal Drain scroll, 12455=Doomsphere Device scroll, 12465=Adamant Bull Rush scroll, 12464=Mithril Bull Rush scroll, 12467=Poisonous Blast scroll, 12466=Rune Bull Rush scroll, 12468=Dust Cloud scroll, 12426=Thieving Fingers scroll, 12427=Abyssal Stealth scroll, 12105=Spirit coraxatrice pouch, 12424=Fish Rain scroll, 12425=Howl scroll, 12107=Spirit vulatrice pouch, 12430=Cheese Feast scroll, 12431=Unburden scroll, 12428=Egg Spawn scroll, 12429=Multichop scroll, 12097=Spirit guthatrice pouch, 12099=Spirit saratrice pouch, 12422=Herbcall scroll, 12423=Fruitfall scroll, 12101=Spirit zamatrice pouch, 12421=Reserved, 12103=Spirit pengatrice pouch, 12443=Call to Arms scroll, 12442=Regrowth scroll, 12441=Tireless Run scroll, 12123=Barker toad pouch, 12440=Generate Compost scroll, 12447=Vampire Touch scroll, 12446=Sandstorm scroll, 12445=Dreadfowl Strike scroll, 12444=Blood Drain scroll, 12435=Winter Storage scroll, 12434=Healing Aura scroll, 12433=Insane Ferocity scroll, 12432=Venom Shot scroll, 12439=Testudo scroll, 12438=Swallow Whole scroll, 12437=Magic Focus scroll, 12436=Ophidian Incubation scroll}
+Script 1188 - [105,111,null,526]: {1=12425, 2=12445, 3=12428, 4=12459, 5=12533, 6=12838, 7=12460, 8=12432, 9=12839, 10=12430, 11=12446, 12=12440, 13=12834, 14=12447, 15=12433, 17=12443, 16=12429, 19=12443, 18=12443, 21=12431, 20=12443, 23=12448, 22=12422, 25=12458, 24=12458, 27=12458, 26=12458, 29=12458, 28=12458, 31=12829, 30=12458, 34=12441, 35=12454, 32=12426, 33=12444, 38=12836, 39=12840, 36=12453, 37=12424, 42=12468, 43=12427, 40=12835, 41=12455, 46=12452, 47=12439, 44=12436, 45=12467, 51=12451, 50=12830, 49=12423, 48=12438, 55=12841, 54=12450, 53=12449, 52=12826, 59=12824, 58=12824, 57=12457, 56=12831, 63=12837, 62=12456, 61=12442, 60=12824, 68=12464, 69=12465, 70=12466, 71=12434, 64=12832, 65=12461, 66=12462, 67=12463, 76=12435, 77=12825, 72=12833, 73=12437, 74=12827, 75=12828}
+Script 1189 - [111,105,null,0]: {12089=1, 12047=1}
+Script 1190 - [111,105,null,0]: {12123=1, 12019=1, 12047=1, 12057=1, 12778=1, 12007=1, 12059=1, 12043=1, 12087=1, 12009=1, 12031=1}
+Script 1191 - [111,105,null,0]: {12037=1, 12796=1, 12035=1}
+Script 1192 - [111,105,null,0]: {12043=1}
+Script 1193 - [111,105,null,0]: {12059=1}
+Script 1194 - [111,105,null,0]: {12105=1, 12796=1, 12107=1, 12041=1, 12021=1, 12025=1, 12037=1, 12097=1, 12071=1, 12039=1, 12099=1, 12033=1, 12029=1, 12101=1, 12035=1, 12103=1, 12782=1, 12095=1, 12818=1, 12091=1, 12013=1, 12049=1, 12531=1}
+Script 1195 - [111,105,null,0]: {12009=1}
+Script 1196 - [111,105,null,0]: {12049=1}
+Script 1197 - [111,105,null,0]: {12063=1}
+Script 1198 - [111,105,null,0]: {12053=1}
+Script 1199 - [111,105,null,0]: {12065=1}
+Script 1200 - [111,105,null,0]: {12051=1}
+Script 1201 - [111,105,null,0]: {12041=1}
+Script 1202 - [111,105,null,0]: {12013=1}
+Script 1203 - [111,105,null,0]: {12033=1}
+Script 1204 - [111,105,null,0]: {12069=1}
+Script 1205 - [111,105,null,0]: {12782=1}
+Script 1206 - [111,105,null,0]: {12039=1}
+Script 1207 - [111,105,null,0]: {12093=1}
+Script 1208 - [111,105,null,0]: {12031=1}
+Script 1209 - [111,105,null,0]: {12015=1}
+Script 1210 - [111,105,null,0]: {12079=1, 12806=1, 12798=1, 12077=1, 12804=1, 12075=1, 12802=1, 12073=1, 12792=1, 12023=1, 12800=1, 12814=1, 12788=1, 12812=1, 12027=1, 12786=1, 12810=1, 12067=1, 12784=1, 12780=1, 12063=1, 12083=1, 12081=1}
+Script 1211 - [111,105,null,0]: {12023=1}
+Script 1212 - [111,105,null,0]: {12089=1}
+Script 1213 - [0,0,null,0]: null
+Script 1214 - [111,105,null,0]: {12776=150, 12794=50}
+Script 1215 - [111,105,null,0]: {12794=1}
+Script 1216 - [111,105,null,0]: {12091=1}
+Script 1217 - [111,105,null,0]: {12019=1}
+Script 1218 - [111,105,null,0]: {12017=1, 12045=1, 12794=1, 12790=1, 12069=1, 12065=1, 12808=1, 12822=1, 12061=1, 12093=1, 12820=1, 12089=1, 12776=1, 12816=1, 12053=1, 12011=1, 12085=1, 12055=1, 12015=1, 12051=1}
+Script 1219 - [111,105,null,0]: {12095=1}
+Script 1220 - [111,105,null,0]: {12097=1}
+Script 1221 - [111,105,null,0]: {12099=1}
+Script 1222 - [111,105,null,0]: {12101=1}
+Script 1223 - [111,105,null,0]: {12103=1}
+Script 1224 - [111,105,null,0]: {12105=1}
+Script 1225 - [111,105,null,0]: {12107=1}
+Script 1226 - [111,105,null,0]: {12806=1, 12786=1}
+Script 1227 - [111,105,null,0]: null
+Script 1228 - [111,105,null,0]: {12029=1}
+Script 1229 - [111,105,null,0]: {12812=1}
+Script 1230 - [111,105,null,0]: {12810=1}
+Script 1231 - [111,105,null,0]: {12077=1}
+Script 1232 - [111,105,null,0]: {12788=1, 12792=1, 12808=1}
+Script 1233 - [111,105,null,0]: {12818=1}
+Script 1234 - [111,105,null,0]: {12814=1}
+Script 1235 - [111,105,null,0]: {12780=1}
+Script 1236 - [111,105,null,0]: {12798=1}
+Script 1237 - [111,105,null,0]: {12814=1}
+Script 1238 - [111,105,null,0]: {12778=1}
+Script 1239 - [111,105,null,0]: {12784=1}
+Script 1240 - [111,105,null,0]: {12075=1}
+Script 1241 - [111,105,null,0]: {12055=1}
+Script 1242 - [111,105,null,0]: {12067=1}
+Script 1243 - [111,105,null,0]: {12087=1}
+Script 1244 - [111,105,null,0]: {12820=1}
+Script 1245 - [111,105,null,0]: {12021=1}
+Script 1246 - [111,105,null,0]: {12816=1}
+Script 1247 - [111,105,null,0]: {12061=1}
+Script 1248 - [111,105,null,0]: null
+Script 1249 - [111,105,null,0]: {12071=1}
+Script 1250 - [111,105,null,0]: {12800=1}
+Script 1251 - [111,105,null,0]: {12007=1}
+Script 1252 - [111,105,null,0]: {12027=1}
+Script 1253 - [111,105,null,0]: {12531=1}
+Script 1254 - [111,105,null,0]: {12085=1}
+Script 1255 - [111,105,null,0]: {12045=1}
+Script 1256 - [111,105,null,0]: {12057=1}
+Script 1257 - [111,105,null,0]: {12011=1}
+Script 1258 - [111,105,null,0]: {12806=1}
+Script 1259 - [111,105,null,0]: {12804=1}
+Script 1260 - [111,105,null,0]: {12802=1}
+Script 1261 - [111,105,null,0]: {12025=1}
+Script 1262 - [111,105,null,0]: {12017=1}
+Script 1263 - [111,105,null,0]: {12776=1}
+Script 1264 - [111,105,null,0]: {12073=1}
+Script 1265 - [111,105,null,0]: {12079=1}
+Script 1266 - [111,105,null,0]: {12081=1}
+Script 1267 - [111,105,null,0]: {12083=1}
+Script 1268 - [111,105,null,0]: {12822=1}
+Script 1269 - [111,105,null,0]: {12790=1}
+Script 1270 - [111,105,null,0]: {12079=152, 12798=74, 12796=113, 12077=141, 12075=125, 12794=174, 12073=102, 12792=195, 12790=178, 12071=78, 12788=219, 12069=166, 12786=222, 12067=75, 12784=155, 12065=84, 12782=141, 12095=88, 12093=211, 12780=74, 12778=1, 12091=47, 12089=203, 12776=150, 12087=11, 12085=141, 12083=1, 12081=144, 12531=109, 12045=128, 12047=7, 12041=88, 12043=8, 12037=119, 12039=140, 12033=130, 12035=106, 12061=117, 12063=51, 12057=14, 12059=8, 12053=81, 12055=57, 12049=45, 12051=104, 12017=1, 12806=198, 12804=202, 12019=9, 12802=198, 12021=72, 12023=144, 12800=84, 12025=128, 12814=74, 12812=153, 12027=151, 12029=110, 12810=154, 12031=1, 12808=64, 12822=198, 12820=79, 12818=74, 12007=12, 12816=111, 12009=7, 12011=168, 12013=124, 12015=116, 12105=88, 12107=88, 12097=88, 12099=88, 12101=88, 12103=88, 12123=11}
+Script 1271 - [0,0,null,0]: null
+Script 1272 - [0,0,null,0]: null
+Script 1273 - [0,0,null,0]: null
+Script 1274 - [0,0,null,0]: null
+Script 1275 - [105,65,null,8374]: {1=4844, 2=6824, 3=8378, 4=8374, 5=5665, 6=8476, 7=6552, 8=7639, 9=8383, 10=4844, 11=8394, 12=8397, 13=8418, 14=8412, 15=8402, 17=8420, 16=8406, 19=8485, 18=8433, 21=8430, 20=8425, 23=8454, 22=8464, 25=8442, 24=8458, 27=8444, 26=8437, 29=8488, 28=8450, 31=8387, 30=8474, 34=8469, 32=8480, 33=8493}
+Script 1276 - [105,65,null,8373]: {1=4846, 2=8, 3=8376, 4=8373, 5=5661, 6=8477, 7=6551, 8=7637, 9=8381, 10=8390, 11=8392, 12=8396, 13=8416, 14=8413, 15=8399, 17=8421, 16=8404, 19=8483, 18=8431, 21=8429, 20=8423, 23=8452, 22=8463, 25=8440, 24=8456, 27=8445, 26=8436, 29=8487, 28=8448, 31=8385, 30=8473, 34=8467, 32=8482, 33=8491}
+Script 1277 - [105,111,null,526]: {1=12047, 2=12043, 3=12059, 4=12019, 5=12009, 6=12778, 7=12049, 8=12055, 9=12808, 10=12067, 11=12063, 12=12091, 13=12800, 14=12053, 15=12065, 17=12818, 16=12021, 19=12798, 18=12780, 21=12087, 20=12814, 23=12051, 22=12071, 25=12097, 24=12095, 27=12101, 26=12099, 29=12105, 28=12103, 31=12816, 30=12107, 34=12007, 35=12035, 32=12041, 33=12061, 38=12812, 39=12784, 36=12027, 37=12531, 42=12085, 43=12037, 40=12810, 41=12023, 46=12123, 47=12031, 44=12015, 45=12045, 51=12057, 50=12820, 49=12033, 48=12029, 55=12782, 54=12011, 53=12069, 52=12792, 59=12804, 58=12802, 57=12013, 56=12794, 63=12788, 62=12017, 61=12025, 60=12806, 68=12079, 69=12081, 70=12083, 71=12039, 64=12776, 65=12073, 66=12075, 67=12077, 76=12093, 77=12790, 72=12786, 73=12089, 74=12796, 75=12822}
+Script 1278 - [105,115,Animal,0]: {1=Spirit wolf, 2=Dreadfowl, 3=Desert wyrm, 4=Spirit spider, 5=Thorny snail, 6=Granite crab, 7=Spirit scorpion, 8=Spirit Tz-Kih, 9=Albino rat, 10=Spirit kalphite, 11=Compost mound, 12=Ravenous locust, 13=Vampire bat, 14=Honey badger, 15=Beaver, 17=Void spinner, 16=Void ravager, 19=Void torcher, 18=Void shifter, 21=Bull ant, 20=Mosquito, 23=Evil turnip, 22=Macaw, 25=Spirit guthatrice, 24=Spirit cockatrice, 27=Spirit zamatrice, 26=Spirit saratrice, 29=Spirit coraxatrice, 28=Spirit pengatrice, 30=Spirit vulatrice, 34=Bloated leech, 35=Giant chinchompa, 32=Pyrelord, 33=Magpie, 38=Spirit jelly, 39=Ibis, 36=Spirit terrorbird, 37=Abyssal parasite, 42=Spirit graahk, 43=Karamthulhu overlord, 40=Spirit kyatt, 41=Spirit larupia, 46=Spirit cobra, 47=Stranger plant, 44=Smoke devil, 45=Abyssal lurker, 51=Fruit bat, 50=Bunyip, 49=War tortoise, 48=Barker toad, 55=Praying mantis, 54=Obsidian golem, 53=Arctic bear, 52=Granite lobster, 59=Fire titan, 58=Giant ent, 57=Talon beast, 56=Forge regent, 63=Spirit dagannoth, 62=Hydra, 61=Moss titan, 60=Ice titan, 68=Steel minotaur, 69=Mithril minotaur, 70=Adamant minotaur, 71=Rune minotaur, 64=Lava titan, 65=Swamp titan, 66=Bronze minotaur, 67=Iron minotaur, 76=Iron titan, 77=Pack yak, 78=Steel titan, 72=Unicorn stallion, 73=Geyser titan, 74=Wolpertinger, 75=Abyssal titan}
+Script 1279 - [110,115,Animal,0]: {6813=Bunyip, 6815=War tortoise, 6809=Karamthulhu overlord, 6808=Beaver, 6811=Hydra, 6804=Spirit dagannoth, 6806=Thorny snail, 6800=Giant ent, 6802=Spirit cobra, 6796=Granite crab, 6798=Praying mantis, 6794=Spirit terrorbird, 6847=Albino rat, 6845=Honey badger, 6843=Bloated leech, 7377=Pyrelord, 6841=Spirit spider, 6839=Arctic bear, 6837=Spirit scorpion, 6835=Vampire bat, 6833=Evil turnip, 7365=Spirit kyatt, 6831=Desert wyrm, 7367=Void shifter, 6829=Spirit wolf, 6827=Stranger plant, 7361=Spirit Tz-Kih, 6824=Magpie, 7363=Spirit graahk, 6825=Dreadfowl, 6822=Unicorn stallion, 7372=Ravenous locust, 6820=Abyssal lurker, 7375=Iron titan, 6818=Abyssal parasite, 7370=Void ravager, 6817=Fruit bat, 6873=Pack yak, 7347=Talon beast, 7345=Obsidian golem, 6875=Spirit cockatrice, 6877=Spirit guthatrice, 7351=Void torcher, 7349=Abyssal titan, 6879=Spirit saratrice, 7355=Fire titan, 6865=Smoke devil, 7353=Giant chinchompa, 6867=Bull ant, 6869=Wolpertinger, 7359=Ice titan, 6991=Ibis, 7357=Moss titan, 6871=Compost mound, 6994=Spirit kalphite, 6857=Steel minotaur, 7331=Spirit mosquito, 6992=Spirit jelly, 6859=Mithril minotaur, 7329=Swamp titan, 6861=Adamant minotaur, 7335=Forge regent, 6863=Rune minotaur, 7333=Void spinner, 7339=Geyser titan, 6849=Granite lobster, 7337=Spirit larupia, 6851=Macaw, 7343=Steel titan, 6853=Bronze minotaur, 6855=Iron minotaur, 7341=Lava titan, 6889=Barker toad, 6883=Spirit pengatrice, 6881=Spirit zamatrice, 6887=Spirit vulatrice, 6885=Spirit coraxatrice}
+Script 1280 - [0,0,null,0]: null
+Script 1281 - [0,0,null,0]: null
+Script 1282 - [110,73,null,43384878]: {6813=43384984, 6815=43384948, 6809=43384966, 6808=43384920, 6811=43384976, 6804=43384978, 6806=43384950, 6800=43384970, 6802=43384946, 6796=43384906, 6798=43384926, 6794=43384960, 6847=43384934, 6845=43384936, 6843=43384962, 7377=43385016, 6841=43384914, 6839=43384940, 6837=43384932, 6835=43384902, 6833=43384908, 7365=43385000, 6831=43384952, 7367=43384988, 6829=43384898, 6827=43384972, 7361=43385010, 6824=43384912, 7363=43384998, 6825=43384900, 6822=43384944, 7372=43384928, 6820=43384918, 7375=43385014, 6818=43384956, 7370=43384988, 6817=43384910, 6873=43384942, 7347=43384974, 7345=43385004, 6875=43384958, 6877=43384958, 7351=43384988, 7349=43385006, 6879=43384958, 7355=43384990, 6865=43384964, 7353=43384996, 6867=43384922, 6869=43384982, 7359=43384990, 6991=43384916, 7357=43384990, 6871=43384968, 6994=43384930, 6857=43384980, 7331=43385008, 6992=43384954, 6859=43384980, 7329=43384986, 6861=43384980, 7335=43385018, 6863=43384980, 7333=43384988, 7339=43384992, 6849=43384924, 7337=43385012, 6851=43384904, 7343=43384994, 6853=43384980, 6855=43384980, 7341=43385002, 6889=43384938, 6883=43384958, 6881=43384958, 6887=43384958, 6885=43384958}
+Script 1283 - [111,111,null,526]: {12079=12464, 12798=12443, 12796=12827, 12077=12463, 12075=12462, 12794=12831, 12073=12461, 12792=12826, 12790=12825, 12071=12422, 12788=12837, 12069=12449, 12786=12833, 12067=12430, 12784=12840, 12065=12433, 12782=12841, 12095=12458, 12093=12435, 12780=12443, 12778=12838, 12091=12440, 12089=12437, 12776=12832, 12087=12431, 12085=12468, 12083=12466, 12081=12465, 12531=12424, 12045=12467, 12047=12425, 12041=12426, 12043=12445, 12037=12427, 12039=12434, 12033=12423, 12035=12454, 12061=12444, 12063=12446, 12057=12451, 12059=12428, 12053=12447, 12055=12432, 12049=12460, 12051=12448, 12017=12456, 12806=12824, 12804=12824, 12019=12459, 12802=12824, 12021=12429, 12023=12455, 12800=12834, 12025=12442, 12814=12443, 12812=12836, 12027=12453, 12029=12438, 12810=12835, 12031=12439, 12808=12839, 12822=12828, 12820=12830, 12818=12443, 12007=12441, 12816=12829, 12009=12533, 12011=12450, 12013=12457, 12015=12436, 12105=12458, 12107=12458, 12097=12458, 12099=12458, 12101=12458, 12103=12458, 12123=12452}
+Script 1284 - [0,0,null,0]: null
+Script 1285 - [0,0,null,0]: null
+Script 1286 - [105,79,null,11760]: {1=12130, 2=12125, 3=12127}
+Script 1287 - [105,79,null,11760]: {4=12207, 1=12155, 2=12183, 3=12204}
+Script 1288 - [0,0,null,0]: null
+Script 1289 - [0,0,null,0]: null
+Script 1290 - [0,0,null,0]: null
+Script 1291 - [0,0,null,0]: null
+Script 1292 - [0,0,null,0]: null
+Script 1293 - [0,0,null,0]: null
+Script 1294 - [0,0,null,0]: null
+Script 1295 - [0,0,null,0]: null
+Script 1296 - [0,0,null,0]: null
+Script 1297 - [0,0,null,0]: null
+Script 1298 - [0,0,null,0]: null
+Script 1299 - [0,0,null,0]: null
+Script 1300 - [0,0,null,0]: null
+Script 1301 - [0,0,null,0]: null
+Script 1302 - [0,0,null,0]: null
+Script 1303 - [0,0,null,0]: null
+Script 1304 - [0,0,null,0]: null
+Script 1305 - [0,0,null,0]: null
+Script 1306 - [0,0,null,0]: null
+Script 1307 - [0,0,null,0]: null
+Script 1308 - [0,0,null,0]: null
+Script 1309 - [0,0,null,0]: null
+Script 1310 - [0,0,null,0]: null
+Script 1311 - [0,0,null,0]: null
+Script 1312 - [0,0,null,0]: null
+Script 1313 - [0,0,null,0]: null
+Script 1314 - [0,0,null,0]: null
+Script 1315 - [0,0,null,0]: null
+Script 1316 - [0,0,null,0]: null
+Script 1317 - [111,105,null,0]: {12123=1}
+Script 1318 - [0,0,null,0]: null
+Script 1319 - [0,0,null,0]: null
+Script 1320 - [111,110,null,6988]: {12079=6859, 12798=7351, 12796=7349, 12077=6857, 12075=6855, 12794=7347, 12073=6853, 12792=7345, 12790=7343, 12071=6851, 12788=7341, 12069=6849, 12786=7339, 12067=6847, 12784=7337, 12065=6845, 12782=7335, 12095=6875, 12093=6873, 12780=7333, 12778=7331, 12091=6871, 12089=6869, 12776=7329, 12087=6867, 12085=6865, 12083=6863, 12081=6861, 12531=6991, 12045=6827, 12047=6829, 12041=6824, 12043=6825, 12037=6820, 12039=6822, 12033=6817, 12035=6818, 12061=6843, 12063=6994, 12057=6839, 12059=6841, 12053=6835, 12055=6837, 12049=6831, 12051=6833, 12017=6804, 12806=7359, 12804=7357, 12019=6806, 12802=7355, 12021=6808, 12023=6809, 12800=7353, 12025=6811, 12814=7367, 12812=7365, 12027=6992, 12029=6813, 12810=7363, 12031=6815, 12808=7361, 12822=7375, 12820=7372, 12818=7370, 12007=6794, 12816=7377, 12009=6796, 12011=6798, 12013=6800, 12015=6802, 12105=6885, 12107=6887, 12097=6877, 12099=6879, 12101=6881, 12103=6883, 12123=6889}
+Script 1321 - [105,79,null,11760]: {1=2134, 2=2132, 3=2136, 4=2138, 5=3226, 6=9978, 7=2876, 8=2142, 9=2140, 10=3228}
+Script 1322 - [0,0,null,0]: null
+Script 1323 - [0,0,null,0]: null
+Script 1324 - [0,0,null,0]: null
+Script 1325 - [0,0,null,0]: null
+Script 1326 - [0,0,null,0]: null
+Script 1327 - [105,79,null,11760]: {1=590, 2=2866, 3=2878, 4=314, 5=1351, 6=954, 7=1931, 8=1925, 9=2347, 10=946, 11=12561, 12=12563, 13=12565}
+Script 1328 - [0,0,null,0]: null
+Script 1329 - [0,0,null,0]: null
+Script 1330 - [0,0,null,0]: null
+Script 1331 - [0,0,null,0]: null
+Script 1332 - [0,0,null,0]: null
+Script 1333 - [0,0,null,0]: null
+Script 1334 - [0,0,null,0]: null
+Script 1335 - [0,0,null,0]: null
+Script 1336 - [0,0,null,0]: null
+Script 1337 - [0,0,null,0]: null
+Script 1338 - [0,0,null,0]: null
+Script 1339 - [0,0,null,0]: null
+Script 1340 - [0,0,null,0]: null
+Script 1341 - [0,0,null,0]: null
+Script 1342 - [0,0,null,0]: null
+Script 1343 - [0,0,null,0]: null
+Script 1344 - [0,0,null,0]: null
+Script 1345 - [105,115, ,0]: {0=Adventure, 1=Al Kharid, 2=Alone, 3=Ambient Jungle, 4=Arabian, 5=Arabian2, 6=Arabian3, 7=Arabique, 8=Army of Darkness, 9=Arrival, 10=Attack1, 11=Attack2, 12=Attack3, 13=Attack4, 14=Attack5, 15=Attack6, 17=Autumn Voyage, 16=Attention, 19=Ballad of Enchantment, 18=Background, 21=Beyond, 20=Baroque, 23=Book of Spells, 22=Big Chords, 25=Cave Background, 24=Camelot, 27=Chain of Command, 26=Cavern, 29=Crystal Sword, 28=Crystal Cave, 31=Dark, 30=Dangerous, 34=Doorways, 35=Dream, 32=Deep Wildy, 33=Desert Voyage, 38=Emotion, 39=Emperor, 36=Dunjun, 37=Egypt, 42=Expedition, 43=Faerie, 40=Expanse, 41=Expecting, 46=Fishing, 47=Flute Salad, 44=Fanfare, 45=Fanfare3, 51=Gnome King, 50=Garden, 49=Gaol, 48=Forever, 55=Goblin Village, 54=Gnome Village2, 53=Gnome Village, 52=Dwarf Theme, 59=High Seas, 58=Harmony, 57=Greatness, 56=Gnomeball, 63=Inspiration, 62=In the Manor, 61=Iban, 60=Horizon, 68=Jungly2, 69=Jungly3, 70=Knightly, 71=Lasting, 64=Intrepid, 65=Jolly-R, 66=Jungle Island, 67=Jungly1, 76=Long Way Home, 77=Lullaby, 78=Mage Arena, 79=Magic Dance, 72=Legion, 73=Lightness, 74=Lightwalk, 75=Long Ago, 85=Miracle Dance, 84=Miles Away, 87=Moody, 86=Monarch Waltz, 81=March, 80=Magical Journey, 83=Mellow, 82=Medieval, 93=Parade, 92=Overture, 95=Regal, 94=Quest, 89=Newbie Melody, 88=Neverland, 91=Oriental, 90=Nightfall, 102=Scape Cave, 103=Scape Original, 100=Rune Essence, 101=Sad Meadow, 98=Riverside, 99=Royale, 96=Reggae, 97=Reggae2, 110=Shine, 111=Soundscape, 108=Serenade, 109=Serene, 106=Sea Shanty, 107=Sea Shanty2, 104=Scape Sad, 105=Scape Wild, 119=Talking Forest, 118=Still Night, 117=Start, 116=Starlight, 115=Spookyjungle, 114=Spooky, 113=Splendour, 112=Spirit, 127=Tribal Background, 126=Tree Spirits, 125=Trawler Minor, 124=Trawler, 123=Theme, 122=The Tower, 121=The Shadow, 120=The Desert, 137=Vision, 136=Venture, 139=Voyage, 138=Voodoo Cult, 141=Waterfall, 140=Wander, 143=Wilderness2, 142=Wilderness, 129=Tribal2, 128=Tribal, 131=Troubled, 130=Trinity, 133=Unknown Land, 132=Underground, 135=Upcoming, 134=Underground Pass, 152=Scape Scared, 153=Scape Santa, 154=Land of Snow, 155=Shaping Up, 156=Exam Conditions, 157=Roots and Flutes, 158=Incarceration, 159=Scape Soft, 144=Wilderness3, 145=Witching, 146=Wonder, 147=Wonderous, 148=Workshop, 149=Lonesome, 150=Scape Main, 151=Ground Scape, 171=Nomad, 170=Undercurrent, 169=Landlubber, 168=Venture2, 175=Close Quarters, 174=Heart and Mind, 173=Cellar Song, 172=Zealot, 163=Tomorrow, 162=Fanfare2, 161=Yesteryear, 160=Shining, 167=Harmony2, 166=Wild Isle, 165=Ice Melody, 164=Duel Arena, 186=Cursed, 187=Understanding, 184=Mausoleum, 185=Forbidden, 190=Kingdom, 191=Hermit, 188=Principality, 189=Tremble, 178=Chompy Hunt, 179=Twilight, 176=Escape, 177=Grumpy, 182=Village, 183=Bone Dance, 180=Morytania, 181=Dead Quiet, 205=Meridian, 204=Lost Soul, 207=Overpass, 206=Woodland, 201=Aztec, 200=Artistry, 203=Forest, 202=Elven Mist, 197=Natural, 196=Time Out, 199=Waterlogged, 198=Grotto, 193=Stagnant, 192=La Mort, 195=Stratosphere, 194=Breeze, 220=Exposed, 221=Well of Voyage, 222=Haunted Mine, 223=Righteousness, 216=Bone Dry, 217=Competition, 218=Spooky2, 219=Everywhere, 212=Insect Queen, 213=Mad Eadgar, 214=Bandit Camp, 215=Sunburn, 208=Contest, 209=Sojourn, 210=Crystal Castle, 211=Marzipan, 239=Monkey Madness, 238=Technology, 237=Warrior, 236=Frostbite, 235=Legend, 234=Stranded, 233=Borderland, 232=Saga, 231=Rellekka, 230=Deadlands, 229=Lair, 228=Shadowland, 227=Etcetera, 226=Miscellania, 225=Chamber, 224=Deep Down, 254=Hell's Bells, 255=The Navigator, 252=Goblin Game, 253=Out of the Deep, 250=Stillness, 251=Lighthouse, 248=Melodrama, 249=Ready For Battle, 246=Find My Way, 247=Castlewars, 244=Suspicious, 245=Showdown, 242=Island Life, 243=Temple, 240=Anywhere, 241=Marooned, 275=Dynasty, 274=Barking Mad, 273=Fruits de Mer, 272=Monster Melee, 279=Settlement, 278=The Other Side, 277=Phasmatys, 276=Shipwrecked, 283=Sarcophagus, 282=Scarab, 281=Dragontooth Island, 280=Cave of Beasts, 287=Pathways, 286=Karamja Jam, 285=7th Realm, 284=Down Below, 258=Complication, 259=Down to Earth, 256=Wildwood, 257=Barbarianism, 262=Pirates of Peril, 263=Dangerous Road, 260=Courage, 261=Superstition, 266=Tiptoe, 267=The Terrible Tower, 264=Romancing the Crone, 265=Faithless, 270=Body Parts, 271=Fenkenstrain's Refrain, 268=Masquerade, 269=The Slayer, 305=Bish Bash Bosh, 304=Cave of the Goblins, 307=Path of Peril, 306=Zogre Dance, 309=Tale of Keldagrim, 308=Wayward, 311=Tears of Guthix, 310=Land of the Dwarves, 313=The Rogues' Den, 312=Romper Chomper, 315=The Lost Melody, 314=The Far Side, 317=Into the Abyss, 316=Evil Bob's Island, 319=The Power of Tears, 318=The Quiz Master, 288=Eagle Peak, 289=Time to Mine, 290=In Between, 291=Claustrophobia, 292=Far Away, 293=Fight or Flight, 294=Temple of Light, 295=The Golem, 296=Forgotten, 297=Throne of the Demon, 298=Dance of the Undead, 299=Dangerous Way, 300=City of the Dead, 301=Hypnotized, 302=Sphinx, 303=Mirage, 343=Jungle Troubles, 342=The Cellar Dwellers, 341=Dead Can Dance, 340=Wild Side, 339=TzHaar!, 338=Brew Hoo Hoo, 337=Strange Place, 336=Frogland, 351=Aye Car Rum Ba, 350=Homescape, 349=Rat Hunt, 348=Sarim's Vermin, 347=Bubble and Squeak, 346=The Noble Rodent, 345=Rat a Tat Tat, 344=Catch Me If You Can, 326=Forgettable Melody, 327=Right On Track, 324=The Chosen, 325=Have a Blast, 322=The Lost Tribe, 323=Corporal Punishment, 321=Pheasant Peasant, 334=Fire and Brimstone, 335=In the Pits, 332=The Genie, 333=Desert Heat, 330=The Desolate Isle, 331=Spirits of Elid, 328=Over To Nardah, 329=The Monsters Below, 373=Mind Over Matter, 372=Roll the Bones, 374=Golden Touch, 369=Woe of the Wyvern, 368=Victory is Mine, 371=Diango's Little Helpers, 370=In the Brine, 381=Lament, 380=Last Stand, 383=Scarabaeoidea, 382=Poles Apart, 377=Scape Hunter, 376=The Enchanter, 379=Cabin Fever, 378=Making Waves, 356=Land Down Under, 357=Meddling Kids, 358=Corridors of Power, 359=Slither and Thither, 352=Blistering Barnacles, 353=Distant Land, 354=Fangs For the Memory, 355=Pharaoh's Tomb, 364=Grip of the Talon, 365=Dagannoth Dawn, 366=Xenophobe, 367=Title Fight, 360=In the Clink, 361=Mudskipper Melody, 362=Subterranea, 363=Incantation, 410=Trouble Brewing, 411=Head to Head, 408=The Depths, 409=Distillery Hilarity, 414=Back to Life, 415=Labyrinth, 412=Pinball Wizard, 413=Beetle Juice, 402=Tomb Raider, 403=No Way Out, 400=Null and Void, 401=Pest Control, 406=Funny Bunnies, 407=Assault and Battery, 404=Method of Madness, 405=Fear and Loathing, 395=Chickened Out, 394=Davy Jones's Locker, 393=The Mad Mole, 392=Storm Brew, 399=Chef Surprize, 398=Too Many Cooks..., 397=Mastermindless, 396=Hot 'n' Bothered, 387=Dogs of War, 386=Joy of the Hunt, 385=Home Sweet Home, 384=Jungle Hunt, 391=Wrath and Ruin, 390=Dance of Death, 389=Malady, 388=Food For Thought, 440=Volcanic Vikings, 441=Island of the Trolls, 442=Pirates of Penance, 443=Brimstail's Scales, 444=My Arm's Journey, 445=Slug a Bug Ball, 446=Prime Time, 447=Rising Damp, 432=The Last Shanty, 433=Night of the Vampyre, 434=We are the Fairies, 435=Dimension X, 436=All's Fairy in Love and War, 437=Major Miner, 438=Jester Minute, 439=Norse Code, 425=On the Wing, 424=Life's a Beach!, 427=The Mollusc Menace, 426=Little Cave of Horrors, 429=H.A.M. Fisted, 428=The Galleon, 431=Sigmund's Showdown, 430=Lament of Meiyerditch, 417=Everlasting Fire, 416=Safety in Numbers, 419=Dreamstate, 418=Waking Dream, 421=Isle of Everywhere, 420=The Lunar Isle, 423=Warriors' Guild, 422=Way of the Enchanter, 478=Ham and Seek, 479=Venomous, 476=Ham Attack, 477=Slice of Silent Movie, 474=Impetuous, 475=Easter Jig, 472=Slice of Station, 473=Barb Wire, 470=Espionage, 471=Undead Dungeon, 468=Creature Cruelty, 469=Alternative Root, 466=Have an Ice Day, 467=Zombiism, 464=Garden of Winter, 465=Garden of Autumn, 463=Garden of Spring, 462=Garden of Summer, 461=Jungle Bells, 460=Sea Shanty XMAS, 459=Jungle Island XMAS, 458=Looking Back, 457=High Spirits, 456=Roc and Roll, 455=Floating Free, 454=Dorgeshuun Deep, 453=Dorgeshuun City, 452=Mutant Medley, 451=Magic Magic Magic, 450=Work Work Work, 449=Ogre the Top, 448=Where Eagles Lair, 508=Dusk in Yu'biusk, 509=Grimly Fiendish, 510=Tune from the Dune, 511=Spa Bizarre, 504=Animal Apogee, 505=Temple of Tribes, 506=Catacombs and Tombs, 507=Zanik's Theme, 500=Terrorbird Tussle, 501=Altar Ego, 502=Bolrie's Diary, 503=Healin' Feelin', 496=The Longramble Scramble, 497=Waste Defaced, 498=Knightmare, 499=Lore and Order, 493=Armadyl Alliance, 492=Bandos Battalion, 495=Storeroom Shuffle, 494=Armageddon, 489=Melzar's Maze, 488=On the Up, 491=Strength of Saradomin, 490=Zamorak Zoo, 485=Everlasting, 484=Illusive, 487=Down and Out, 486=Untouchable, 481=Fe Fi Fo Fum, 480=Mouse Trap, 483=Inadequacy, 482=School's Out, 550= , 551= , 548= , 549= , 546= , 547= , 544= , 545= , 558=Icy Trouble Ahead, 559=Icy a Worried Gnome, 556=Jungle Community, 557= , 554= , 555=The Trade Parade, 552= , 553= , 567= , 566= , 565= , 564= , 563= , 562= , 561= , 560= , 575= , 574= , 573= , 572= , 571= , 570= , 569= , 568= , 516=Charmin' Farmin', 517=Bounty Hunter Level 1, 518=Bounty Hunter Level 2, 519=Bounty Hunter Level 3, 512=Copris Lunaris, 513=Narnode's Theme, 514=Tournament!, 515=Clan Wars, 524= , 525= , 526= , 527= , 521=Creepy, 522=A New Menace, 523= , 533=Brain Battle, 532= , 535= , 534= , 529= , 528= , 531= , 530= , 541= , 540= , 543= , 542= , 537= , 536=Surok's Theme, 539= , 538= , 576= , 577=Distant Land, 578=Castle Wars, 579=Pest Control, 580=Competition, 581=Poles Apart, 582=Far Away, 583=Hell's Bells, 584=Bloodbath, 585=The Route of All Evil, 586=The Route of the Problem, 587=The Wrong Path, 588=The Columbarium, 589=The Terrible Tunnels, 590=The Terrible Caverns, 591=Dillo-gence is Key, 593=TokTz-Ket-Ek-Mack, 592=Arma Gonna Get You, 595=Bittersweet Bunny, 601=Conspiracy: Part 2, 600=Conspiracy: Part 1, 603=Guthix's Hunter, 602=Scape Summon, 604=Waiting for the Hunt}
+Script 1346 - [105,105,null,255]: {0=3, 1=8, 2=0, 3=10, 4=8, 5=8, 6=8, 7=33, 8=1, 9=14, 10=32, 11=32, 12=32, 13=32, 14=32, 15=32, 17=4, 16=14, 19=18, 18=14, 21=35, 20=18, 23=4, 22=17, 25=35, 24=19, 27=33, 26=33, 29=1, 28=23, 31=1, 30=1, 34=1, 35=4, 32=1, 33=8, 38=12, 39=14, 36=0, 37=8, 42=33, 43=23, 40=3, 41=17, 46=19, 47=4, 44=14, 45=15, 51=12, 50=3, 49=16, 48=3, 55=0, 54=12, 53=12, 52=0, 59=15, 58=4, 57=3, 56=12, 63=1, 62=17, 61=0, 60=14, 68=10, 69=10, 70=18, 71=19, 64=33, 65=15, 66=10, 67=10, 76=14, 77=19, 78=1, 79=17, 72=7, 73=1, 74=19, 75=17, 85=0, 84=14, 87=18, 86=19, 81=18, 80=19, 83=20, 82=3, 93=3, 92=19, 95=1, 94=0, 89=4, 88=12, 91=33, 90=14, 102=33, 103=0, 100=23, 101=18, 98=11, 99=33, 96=10, 97=10, 110=3, 111=33, 108=17, 109=0, 106=15, 107=15, 104=1, 105=1, 119=19, 118=3, 117=4, 116=22, 115=10, 114=5, 113=14, 112=3, 127=10, 126=12, 125=15, 124=15, 123=19, 122=18, 121=0, 120=8, 137=4, 136=3, 139=20, 138=0, 141=20, 140=14, 143=1, 142=1, 129=10, 128=10, 131=1, 130=18, 133=4, 132=33, 135=18, 134=33, 152=0, 153=27, 154=27, 155=0, 156=0, 157=10, 158=0, 159=14, 144=1, 145=1, 146=1, 147=18, 148=14, 149=33, 150=0, 151=0, 171=8, 170=1, 169=15, 168=3, 175=1, 174=0, 173=33, 172=0, 163=14, 162=15, 161=4, 160=1, 167=4, 166=1, 165=13, 164=0, 186=33, 187=0, 184=25, 185=1, 190=13, 191=13, 188=14, 189=13, 178=16, 179=0, 176=33, 177=16, 182=25, 183=16, 180=25, 181=25, 205=11, 204=31, 207=11, 206=11, 201=8, 200=0, 203=11, 202=11, 197=25, 196=0, 199=25, 198=33, 193=25, 192=0, 195=0, 194=11, 220=31, 221=31, 222=0, 223=0, 216=8, 217=0, 218=5, 219=11, 212=0, 213=0, 214=8, 215=8, 208=13, 209=13, 210=11, 211=35, 239=10, 238=0, 237=33, 236=30, 235=7, 234=30, 233=7, 232=7, 231=7, 230=25, 229=33, 228=25, 227=9, 226=9, 225=33, 224=33, 254=30, 255=7, 252=34, 253=0, 250=33, 251=0, 248=17, 249=32, 246=33, 247=0, 244=0, 245=0, 242=10, 243=33, 240=10, 241=10, 275=8, 274=0, 273=15, 272=0, 279=7, 278=25, 277=25, 276=15, 283=8, 282=8, 281=15, 280=0, 287=33, 286=10, 285=33, 284=33, 258=0, 259=0, 256=1, 257=7, 262=15, 263=33, 260=33, 261=33, 266=33, 267=25, 264=30, 265=1, 270=25, 271=25, 268=33, 269=33, 305=0, 304=34, 307=33, 306=16, 309=35, 308=33, 311=0, 310=35, 313=0, 312=16, 315=34, 314=0, 317=24, 316=0, 319=0, 318=0, 288=21, 289=35, 290=0, 291=0, 292=11, 293=33, 294=23, 295=8, 296=0, 297=0, 298=25, 299=25, 300=8, 301=0, 302=8, 303=8, 343=10, 342=0, 341=1, 340=1, 339=36, 338=0, 337=0, 336=0, 351=15, 350=0, 349=0, 348=0, 347=0, 346=0, 345=0, 344=0, 326=35, 327=35, 324=0, 325=35, 322=34, 323=0, 321=0, 334=36, 335=36, 332=0, 333=8, 330=9, 331=8, 328=8, 329=0, 373=0, 372=0, 374=0, 369=0, 368=0, 371=27, 370=15, 381=0, 380=0, 383=0, 382=30, 377=0, 376=0, 379=15, 378=21, 356=0, 357=0, 358=0, 359=0, 352=15, 353=25, 354=0, 355=0, 364=0, 365=0, 366=0, 367=0, 360=0, 361=15, 362=0, 363=33, 410=15, 411=0, 408=0, 409=15, 414=8, 415=33, 412=0, 413=0, 402=8, 403=0, 400=0, 401=0, 406=26, 407=0, 404=0, 405=0, 395=0, 394=15, 393=0, 392=0, 399=0, 398=0, 397=0, 396=8, 387=33, 386=21, 385=37, 384=21, 391=0, 390=0, 389=0, 388=0, 440=38, 441=13, 442=0, 443=0, 444=15, 445=0, 446=0, 447=0, 432=15, 433=25, 434=23, 435=0, 436=23, 437=0, 438=0, 439=38, 425=21, 424=15, 427=0, 426=0, 429=0, 428=15, 431=0, 430=25, 417=1, 416=33, 419=9, 418=9, 421=9, 420=9, 423=0, 422=9, 478=0, 479=1, 477=0, 474=0, 475=26, 472=0, 473=0, 470=0, 471=0, 468=0, 469=33, 466=22, 467=0, 464=0, 465=0, 463=0, 462=0, 461=27, 460=27, 459=27, 458=0, 457=28, 456=0, 455=0, 454=34, 453=0, 452=0, 451=0, 450=0, 449=13, 448=0, 508=0, 509=0, 510=0, 511=0, 504=0, 505=0, 506=0, 507=0, 500=0, 501=0, 502=0, 503=0, 496=31, 497=31, 498=0, 499=0, 493=0, 492=0, 495=0, 494=0, 489=0, 488=0, 491=0, 490=0, 485=0, 484=0, 487=0, 486=0, 481=0, 480=0, 483=0, 482=0, 550=0, 551=0, 548=0, 549=0, 546=0, 547=0, 544=0, 545=0, 558=0, 559=0, 556=10, 557=0, 554=0, 555=3, 552=0, 553=0, 567=0, 566=0, 565=0, 564=0, 563=0, 562=0, 561=0, 560=0, 575=0, 574=0, 573=0, 572=0, 571=0, 570=0, 569=0, 568=0, 516=0, 517=0, 518=0, 519=0, 512=0, 513=12, 514=0, 515=0, 524=0, 525=0, 526=0, 527=0, 520=0, 521=0, 522=0, 523=0, 533=0, 532=0, 535=0, 534=0, 529=0, 528=0, 531=10, 530=0, 541=0, 540=0, 543=0, 542=0, 537=0, 536=0, 539=0, 538=0, 576=0, 577=0, 578=0, 579=0, 580=0, 581=0, 582=0, 583=0, 584=0, 585=33, 586=33, 587=0, 588=0, 589=0, 590=33, 591=0, 593=0, 592=0, 595=0, 594=15, 597=0, 596=15, 599=0, 598=0, 601=0, 600=0, 603=0, 602=0, 604=0}
+Script 1347 - [105,115, ,0]: {0=adventure, 1=al kharid, 2=alone, 3=ambient jungle, 4=arabian, 5=arabian2, 6=arabian3, 7=arabique, 8=army of darkness, 9=arrival, 10=attack1, 11=attack2, 12=attack3, 13=attack4, 14=attack5, 15=attack6, 17=autumn voyage, 16=attention, 19=ballad of enchantment, 18=background, 21=beyond, 20=baroque, 23=book of spells, 22=big chords, 25=cave background, 24=camelot, 27=chain of command, 26=cavern, 29=crystal sword, 28=crystal cave, 31=dark, 30=dangerous, 34=doorways, 35=dream, 32=deep wildy, 33=desert voyage, 38=emotion, 39=emperor, 36=dunjun, 37=egypt, 42=expedition, 43=faerie, 40=expanse, 41=expecting, 46=fishing, 47=flute salad, 44=fanfare, 45=fanfare3, 51=gnome king, 50=garden, 49=gaol, 48=forever, 55=goblin village, 54=gnome village2, 53=gnome village, 52=dwarf theme, 59=high seas, 58=harmony, 57=greatness, 56=gnomeball, 63=inspiration, 62=in the manor, 61=iban, 60=horizon, 68=jungly2, 69=jungly3, 70=knightly, 71=lasting, 64=intrepid, 65=jolly-r, 66=jungle island, 67=jungly1, 76=long way home, 77=lullaby, 78=mage arena, 79=magic dance, 72=legion, 73=lightness, 74=lightwalk, 75=long ago, 85=miracle dance, 84=miles away, 87=moody, 86=monarch waltz, 81=march, 80=magical journey, 83=mellow, 82=medieval, 93=parade, 92=overture, 95=regal, 94=quest, 89=newbie melody, 88=neverland, 91=oriental, 90=nightfall, 102=scape cave, 103=Scape original, 100=rune essence, 101=sad meadow, 98=riverside, 99=royale, 96=reggae, 97=reggae2, 110=shine, 111=soundscape, 108=serenade, 109=serene, 106=sea shanty, 107=sea shanty2, 104=scape sad, 105=scape wild, 119=talking forest, 118=still night, 117=start, 116=starlight, 115=spookyjungle, 114=spooky, 113=splendour, 112=spirit, 127=tribal background, 126=tree spirits, 125=trawler minor, 124=trawler, 123=theme, 122=tower, 121=shadow, 120=desert, 137=vision, 136=venture, 139=voyage, 138=voodoo cult, 141=waterfall, 140=wander, 143=wilderness2, 142=wilderness, 129=tribal2, 128=tribal, 131=troubled, 130=trinity, 133=unknown land, 132=underground, 135=upcoming, 134=Underground Pass, 152=scape scared, 153=scape santa, 154=land of snow, 155=shaping up, 156=exam conditions, 157=roots and flutes, 158=incarceration, 159=scape soft, 144=wilderness3, 145=witching, 146=wonder, 147=wonderous, 148=workshop, 149=lonesome, 150=scape main, 151=ground scape, 171=nomad, 170=undercurrent, 169=landlubber, 168=venture2, 175=close quarters, 174=heart and mind, 173=cellar song, 172=zealot, 163=tomorrow, 162=fanfare2, 161=yesteryear, 160=shining, 167=harmony2, 166=wild isle, 165=ice melody, 164=duel arena, 186=cursed, 187=understanding, 184=mausoleum, 185=forbidden, 190=kingdom, 191=hermit, 188=principality, 189=tremble, 178=chompy hunt, 179=twilight, 176=escape, 177=grumpy, 182=village, 183=bone dance, 180=morytania, 181=dead quiet, 205=meridian, 204=lost soul, 207=overpass, 206=woodland, 201=aztec, 200=artistry, 203=forest, 202=elven mist, 197=natural, 196=time out, 199=waterlogged, 198=grotto, 193=stagnant, 192=la mort, 195=stratosphere, 194=breeze, 220=exposed, 221=well of voyage, 222=haunted mine, 223=righteousness, 216=bone dry, 217=competition, 218=spooky2, 219=everywhere, 212=insect queen, 213=mad eadgar, 214=bandit camp, 215=sunburn, 208=contest, 209=sojourn, 210=crystal castle, 211=marzipan, 239=monkey madness, 238=technology, 237=warrior, 236=frostbite, 235=legend, 234=stranded, 233=borderland, 232=saga, 231=rellekka, 230=deadlands, 229=lair, 228=shadowland, 227=etcetera, 226=miscellania, 225=chamber, 224=deep down, 254=hell's bells, 255=navigator the, 252=goblin game, 253=out of the deep, 250=stillness, 251=lighthouse, 248=melodrama, 249=ready for battle, 246=find my way, 247=castlewars, 244=suspicious, 245=showdown, 242=island life, 243=temple, 240=anywhere, 241=marooned, 275=dynasty, 274=barking mad, 273=fruits de mer, 272=monster melee, 279=settlement, 278=other side, 277=phasmatys, 276=shipwrecked, 283=sarcophagus, 282=scarab, 281=dragontooth island, 280=cave of beasts, 287=pathways, 286=karamja jam, 285=7th realm, 284=down below, 258=complication, 259=down to earth, 256=wildwood, 257=barbarianism, 262=pirates of peril, 263=dangerous road, 260=courage, 261=superstition, 266=tiptoe, 267=terrible tower, 264=romancing the crone, 265=faithless, 270=body parts, 271=fenkenstrain's refrain, 268=masquerade, 269=slayer the, 305=bish bash bosh, 304=cave of the goblins, 307=path of peril, 306=zogre dance, 309=tale of keldagrim, 308=wayward, 311=tears of guthix, 310=land of the dwarves, 313=rogues' den, 312=romper chomper, 315=lost melody, 314=far side, 317=into the abyss, 316=evil bob's island, 319=power of tears, 318=quiz master, 288=eagle peak, 289=time to mine, 290=in between, 291=claustrophobia, 292=far away, 293=fight or flight, 294=temple of light, 295=golem the, 296=forgotten, 297=throne of the demon, 298=dance of the undead, 299=dangerous way, 300=city of the dead, 301=hypnotized, 302=sphinx, 303=mirage, 343=jungle troubles, 342=cellar dwellers, 341=dead can dance, 340=wild side, 339=tzhaar!, 338=brew hoo hoo, 337=strange place, 336=frogland, 351=aye car rum ba, 350=homescape, 349=rat hunt, 348=sarim's vermin, 347=bubble and squeak, 346=noble rodent, 345=rat a tat tat, 344=catch me if you can, 326=forgettable melody, 327=right on track, 324=chosen, 325=have a blast, 322=lost tribe, 323=corporal punishment, 321=pheasant peasant, 334=fire and brimstone, 335=in the pits, 332=genie, 333=desert heat, 330=desolate isle, 331=spirits of elid, 328=over to nardah, 329=monsters below, 373=mind over matter, 372=roll the bones, 374=golden touch, 369=woe of the wyvern, 368=victory is mine, 371=diango's little helpers, 370=in the brine, 381=lament, 380=last stand, 383=scarabaeoidea, 382=poles apart, 377=scape hunter, 376=enchanter, 379=cabin fever, 378=making waves, 356=land down under, 357=meddling kids, 358=corridors of power, 359=slither and thither, 352=blistering barnacles, 353=distant land, 354=fangs for the memory, 355=pharaoh's tomb, 364=grip of the talon, 365=dagannoth dawn, 366=xenophobe, 367=title fight, 360=in the clink, 361=mudskipper melody, 362=subterranea, 363=incantation, 410=trouble brewing, 411=head to head, 408=depths the, 409=distillery hilarity, 414=back to life, 415=labyrinth, 412=pinball wizard, 413=beetle juice, 402=tomb raider, 403=no way out, 400=null and void, 401=pest control, 406=funny bunnies, 407=assault and battery, 404=method of madness, 405=fear and loathing, 395=chickened out, 394=davy jones's locker, 393=mad mole, 392=storm brew, 399=chef surprize, 398=too many cooks..., 397=mastermindless, 396=hot 'n' bothered, 387=dogs of war, 386=joy of the hunt, 385=home sweet home, 384=jungle hunt, 391=wrath and ruin, 390=dance of death, 389=malady, 388=food for thought, 440=volcanic vikings, 441=island of the trolls, 442=pirates of penance, 443=brimstail's scales, 444=my arm's journey, 445=slug a bug ball, 446=prime time, 447=rising damp, 432=last shanty the, 433=night of the vampyre, 434=we are the fairies, 435=dimension x, 436=all's fairy in love and war, 437=major miner, 438=jester minute, 439=norse code, 425=on the wing, 424=life's a beach!, 427=mollusc menace, 426=little cave of horrors, 429=h.a.m. fisted, 428=galleon, 431=sigmund's showdown, 430=lament of meiyerditch, 417=everlasting fire, 416=safety in numbers, 419=dreamstate, 418=waking dream, 421=isle of everywhere, 420=lunar isle, 423=warriors' guild, 422=way of the enchanter, 478=h.a.m. and seek, 479=venomous, 476=h.a.m. attack, 477=slice of silent movie, 474=impetuous, 475=easter jig, 472=slice of station, 473=barb wire, 470=espionage, 471=undead dungeon, 468=creature cruelty, 469=alternative root, 466=have an ice day, 467=zombiism, 464=garden of winter, 465=garden of autumn, 463=garden of spring, 462=garden of summer, 461=jungle bells, 460=sea shanty xmas, 459=jungle island xmas, 458=looking back, 457=high spirits, 456=roc and roll, 455=floating free, 454=dorgeshuun deep, 453=dorgeshuun city, 452=mutant medley, 451=magic magic magic, 450=work work work, 449=ogre the top, 448=where eagles lair, 508=dusk in yu'biusk, 509=grimly fiendish, 510=tune from the dune, 511=spa bizarre, 504=animal apogee, 505=temple of tribes, 506=catacombs and tombs, 507=zanik's theme, 500=terrorbird tussle, 501=altar ego, 502=bolrie's diary, 503=healin' feelin', 496=longramble scramble, 497=waste defaced, 498=knightmare, 499=lore and order, 493=armadyl alliance, 492=bandos battalion, 495=storeroom shuffle, 494=armageddon, 489=melzar's maze, 488=on the up, 491=strength of saradomin, 490=zamorak zoo, 485=everlasting, 484=illusive, 487=down and out, 486=untouchable, 481=fe fi fo fum, 480=mouse trap, 483=inadequacy, 482=school's out, 550=zzzzzzzzzzzzz, 551=zzzzzzzzzzzzz, 548=zzzzzzzzzzzzz, 549=zzzzzzzzzzzzz, 546=zzzzzzzzzzzzz, 547=zzzzzzzzzzzzz, 544=zzzzzzzzzzzzz, 545=zzzzzzzzzzzzz, 558=icy trouble ahead, 559=icy a worried gnome, 556=jungle community, 557=zzzzzzzzzzzzz, 554=zzzzzzzzzzzzz, 555=trade parade, 552=zzzzzzzzzzzzz, 553=zzzzzzzzzzzzz, 567=zzzzzzzzzzzzz, 566=zzzzzzzzzzzzz, 565=zzzzzzzzzzzzz, 564=zzzzzzzzzzzzz, 563=zzzzzzzzzzzzz, 562=zzzzzzzzzzzzz, 561=zzzzzzzzzzzzz, 560=zzzzzzzzzzzzz, 575=zzzzzzzzzzzzz, 574=zzzzzzzzzzzzz, 573=zzzzzzzzzzzzz, 572=zzzzzzzzzzzzz, 571=zzzzzzzzzzzzz, 570=zzzzzzzzzzzzz, 569=zzzzzzzzzzzzz, 568=zzzzzzzzzzzzz, 516=charmin' farmin', 517=bounty hunter level 1, 518=bounty hunter level 2, 519=bounty hunter level 3, 512=copris lunaris, 513=narnode's theme, 514=tournament!, 515=clan wars, 524=zzzzzzzzzzzzz, 525=zzzzzzzzzzzzz, 526=zzzzzzzzzzzzz, 527=zzzzzzzzzzzzz, 521=creepy, 522=a new menace, 523=zzzzzzzzzzzzz, 533=brain battle, 532=zzzzzzzzzzzzz, 535=zzzzzzzzzzzzz, 534=zzzzzzzzzzzzz, 529=zzzzzzzzzzzzz, 528=zzzzzzzzzzzzz, 531=zzzzzzzzzzzzz, 530=zzzzzzzzzzzzz, 541=zzzzzzzzzzzzz, 540=zzzzzzzzzzzzz, 543=zzzzzzzzzzzzz, 542=zzzzzzzzzzzzz, 537=zzzzzzzzzzzzz, 536=surok's theme, 539=zzzzzzzzzzzzz, 538=zzzzzzzzzzzzz, 576=zzzzzzzzzzzzz, 577=zzzzzzzzzzzzz, 578=zzzzzzzzzzzzz, 579=zzzzzzzzzzzzz, 580=zzzzzzzzzzzzz, 581=zzzzzzzzzzzzz, 582=zzzzzzzzzzzzz, 583=zzzzzzzzzzzzz, 584=bloodbath, 585=route of all evil, 586=route of the problem, 587=wrong path, 588=columbarium, 589=terrible tunnels, 590=terrible caverns, 591=dillo-gence is key, 593=toktz-ket-ek-mack, 592=arma gonna get you, 595=bittersweet bunny, 601=conspiracy: part 2, 600=conspiracy: part 1, 603=guthix's hunter, 602=scape summon, 604=waiting for the hunt}
+Script 1348 - [0,0,null,0]: null
+Script 1349 - [105,115,default info,0]: {0=at Varrock Palace., 1=at Al Kharid., 2=at the Clock Tower Dungeon., 3=at Shilo Village., 4=in the Kharidian Desert., 5=at Al Kharid mine., 6=at the desert entrance to the Kalphite Lair., 7=at the hellhounds in Taverley Dungeon., 8=at the Dark Warrior's Fortress., 9=at the gem trader in Falador., 10=at the Battlefield north of Tree Gnome Village., 11=at Elvarg's lair or during Grand Tree Quest., 12=to the north of the Lava Maze., 13=at the Fight Arena., 14=at the King Black Dragon., 15=at Gu'Tanoth Ogre Enclave., 17=at Lumbridge farm., 16=at the coastline below Rimmington., 19=at the Monastery., 18=on Entrana., 21=at the ice dungeon under Wolf Mountain., 20=in Ardougne., 23=at Lumbridge Swamp., 22=to the west of Yanille., 25=at the Dwarven Mine., 24=at Camelot Castle., 27=during Temple of Ikov., 26=at Yanille Agility Dungeon., 29=at the Wilderness, north of Varrock., 28=at Zanaris market., 31=in the south-east of the Wilderness., 30=to the north of Edgeville., 34=to the north of the Grand Exchange., 35=on the path between Lumbridge and Draynor., 32=in the north-west of the Wilderness., 33=around the Desert Mining Camp., 38=in the Tree Gnome Village maze., 39=in Melzar's Maze., 36=in Taverley Dungeon., 37=at Shantay Pass., 42=in the caverns below the Observatory., 43=at Zanaris., 40=at the stone circle in Varrock., 41=at the unholy altar north of the Observatory., 46=at Catherby beach., 47=at the Lumbridge windmill area., 44=at Falador Castle., 45=at Port Khazard., 51=at the Tree Gnome Stronghold., 50=at Varrock city centre., 49=to the north of the Bandit Camp in the Wilderness., 48=at Edgeville., 55=at Goblin Village., 54=to the south-west of the Tree Gnome Stronghold., 53=at the Tree Gnome Stronghold's Agility Training Area., 52=at the Dwarven Mine., 59=at Brimhaven., 58=at Lumbridge Castle., 57=at the Champions' Guild., 56=at the Gnome Ball Field., 63=at the area north of the Black Knights' Fortress., 62=at the ogre island, west of Yanille., 61=at Iban's lair in the Underground Pass., 60=in Taverley., 68=to the north-west of Brimhaven., 69=at Tai Bwo Wannai Village., 70=at Ardougne Castle., 71=at Hemenster., 64=in the Underground Pass caverns., 65=at the north dock of Brimhaven., 66=on Karamja., 67=at Cairn Isle., 76=at Rimmington., 77=at the area south-west of Rellekka., 78=at the Mage Arena., 79=in the east of Yanille., 72=at the Barbarian Outpost., 73=to the north of Edgeville., 74=at Keep Le Faye., 75=at the Fishing Platform., 85=at the Mind Altar., 84=at the Crafting Guild., 87=at the entrance to the Underground Pass., 86=at the Sinclair Mansion., 81=at King Lathas's Combat Training Camp., 80=at the Sorcerer's Tower., 83=at the Fishing Guild., 82=to the west of the Dig Site., 93=at the Jolly Boar Inn., 92=at Seers' Village., 95=at the Rogues' Castle., 94=at the Fire Altar., 89=on Tutorial Island., 88=to the south of Tree Gnome Village., 91=in the Waterfall Dungeon, East of Shilo Village., 90=to the north of Rimmington., 102=during the Lumbridge Tutorial and in Varrock Sewers., 103=automatically., 100=at the rune essence mine., 101=at West Ardougne., 98=to the west of Tyras Camp., 99=at the Black Knight base in Taverley Dungeon., 96=to the south-east of the Kharazi Jungle., 97=to the east of Karamja Jungle., 110=at the Duel Arena hospital., 111=at the Feldip Hills glider area., 108=at the Observatory., 109=at the Air Altar., 106=at Karamja port., 107=at Port Sarim., 104=at the Demonic Ruins in the Wilderness., 105=in the Wilderness., 119=at McGrubor's Wood., 118=at the Mining area south-east of Varrock., 117=at Draynor Village., 116=at the Asgarnian Ice Dungeon north of Mudskipper Point., 115=to the north-east of Karamja., 114=at Draynor Manor., 113=at the Heroes' Guild., 112=at the Cooks' Guild., 127=in the south-east Kharazi Jungle., 126=to the west of the Tree Gnome Stronghold., 125=during the Fishing Trawler minigame., 124=during the Fishing Trawler minigame., 123=at the Coal Trucks., 122=to the north-west of Ardougne., 121=on Crandor., 120=to the west of the Kharidian Desert., 137=at the Wizards' Tower., 136=at the Dig Site., 139=at the top of Baxtorian Falls., 138=at the cave under the Kharazi Jungle., 141=at Baxtorian Falls., 140=at the farm area south of Falador., 143=to the south of the Lava Maze in the Wilderness., 142=in the Wilderness., 129=at the gnome glider on Karamja., 128=to the east of Tai Bwo Wannai Village., 131=to the west of the Bandit Camp in the Wilderness., 130=at the Legends' Guild., 133=at Draynor Market., 132=at the dramen tree in Entrana Dungeon., 135=at the tower of the Necromancer., 134=during Underground Pass., 152=automatically., 153=automatically., 154=during or after the Christmas 2007 holiday event., 155=during As a First Resort..., 156=at the Stronghold of Player Safety., 157=during Back to my Roots., 158=at the Stronghold of Player Safety., 159=to the north of Falador., 144=to the west of Bounty Hunter in the Wilderness., 145=on the east side of the Wilderness., 146=to the north-west of the Black Knights' Fortress., 147=near the Legends' Guild., 148=at the Mining Guild in Falador., 149=at the Desert Mining Camp., 150=automatically., 151=automatically., 171=to the east of the Bedabin Camp., 170=in the south-east of the Wilderness., 169=to the west of Brimhaven., 168=during Dig Site., 175=at the entrance to Bounty Hunter in the Wilderness., 174=at the Body Altar., 173=at the bank vault west of Varrock., 172=at the Water Altar., 163=at the coastline south of Port Sarim., 162=at the Shipyard on Karamja., 161=to the east of Lumbridge Swamp., 160=at the Bone Yard in the Wilderness., 167=in Lumbridge Castle's basement., 166=to the south of Red Dragon Isle in the Wilderness., 165=at White Wolf Mountain., 164=at the Duel Arena., 186=during Underground Pass., 187=at the Nature Altar., 184=under Paterdomus., 185=to the north of the Lumber Yard., 190=on the way to Death Plateau., 191=at the hermit's cave north-west of Burthorpe., 188=at Burthorpe's training ground., 189=during Death Plateau., 178=at the chompy hunt area near Rantz the ogre., 179=during Elemental Workshop., 176=at the perfect gold mine under Ardougne., 177=at the swamp toad pond in the Feldip Hills., 182=at Canifis in Morytania., 183=to the west of Mort'ton., 180=to the east of Paterdomus., 181=to the north of the Mort Myre area., 205=at the area around Tyras Camp in Isafdar., 204=at the Poison Waste in south Isafdar., 207=at Arandar, east of Tirannwn., 206=at the Elf Camp in Tirannwn., 201=at the Brimhaven Agility Arena., 200=during the Mime random event., 203=to the south-east of Isafdar., 202=at the exit of the Underground Pass., 197=at the nature spirit's island in Mort Myre Swamp., 196=during the Maze random event., 199=to the south of Canifis., 198=at the nature spirit's grotto in Mort Myre Swamp., 193=at the Hollows in the Mort Myre Swamp., 192=at the Death Altar., 195=at the Cosmic Altar., 194=at Isafdar near the Underground Pass., 220=to the south of Tyras Camp in Isafdar., 221=in the passage between Iban's Temple and Isafdar., 222=at the boss area of the Haunted Mine., 223=at the Law Altar., 216=in the smoky well near Pollnivneach., 217=at Burthorpe Games Room., 218=at the entrance to the Haunted Mine., 219=to the south-west of Prifddinas., 212=at the Kalphite Queen., 213=at Eadgar's cave atop Trollheim., 214=at the Bandit Camp in the Kharidian Desert., 215=in the desert north of Jaldraocht Pyramid., 208=in Trollheim., 209=at the troll champion arena., 210=to the south-east of Prifddinas., 211=at the Trollheim cave., 239=on Ape Atoll., 238=at the gnome glider hanger., 237=during Fremennik Trials., 236=at the Ice Path north of Trollheim., 235=to the south-east of Rellekka., 234=at the gate to the Ice Path, north of Trollheim., 233=to the east of Rellekka., 232=to the south of Rellekka., 231=at Rellekka., 230=at the Haunted Woods of Morytania., 229=at the shade catacombs below Mort'ton., 228=to the east of Mort'ton., 227=on Etceteria., 226=on Miscellania., 225=on the middle floor of the Haunted Mine., 224=on the bottom floor of the Haunted Mine., 254=during the Troll Romance quest., 255=during Fremennik Trials., 252=at the goblin cave near the Fishing Guild., 253=at the dagannoth cave under the Lighthouse., 250=at the Myreque area under Mort Myre., 251=at the Lighthouse., 248=during the Castle Wars minigame., 249=during the Castle Wars minigame., 246=at the gnome tunnel in Monkey Madness., 247=during the Castle Wars minigame., 244=during Monkey Madness., 245=during the boss fight in Monkey Madness., 242=at the southern part of Ape Atoll., 243=on Ape Atoll., 240=at Marim's main gate., 241=on Crash Island during Monkey Madness., 275=at the town of Pollnivneach., 274=at the Werewolf Agility Course., 273=at the Fishing Platform., 272=at the H.A.M. cave., 279=at the Mountain Camp., 278=at Port Phasmatys., 277=at the pool of ectoplasm underneath the Ectofuntus., 276=at the shipwreck on the north coast of Morytania., 283=inside Jaldraocht, the pyramid visited in Desert Treasure., 282=at Jaldraocht, the pyramid visited in Desert Treasure., 281=on Dragontooth Island., 280=during Mountain Daughter., 287=at Brimhaven Dungeon's entrance., 286=at the dragon area of Brimhaven Dungeon., 285=at Brimhaven Dungeon., 284=at the dungeon below Draynor Village., 258=at the Chaos Altar., 259=at the Earth Altar., 256=to the south of Bounty Hunter., 257=at Barbarian Village., 262=at the Pirates' Hideout in the Wilderness., 263=at the caves below Crandor., 260=at Taverley Dungeon., 261=at the cave below the Kharazi Jungle., 266=at Draynor Manor's cellar., 267=at the Slayer Tower., 264=during the Troll Romance quest., 265=at the Chaos Temple in the Wilderness., 270=at the dungeon south-east of Fenkenstrain's Castle., 271=at Fenkenstrain's Castle., 268=on the west side of the Fremennik Slayer Dungeon., 269=on the east side of the Fremennik Slayer Dungeon., 305=during As a First Resort..., 304=at the caves beneath Lumbridge Swamp., 307=in Damis's Shadow Dungeon., 306=at the zogre area., 309=on the east side of Keldagrim., 308=at the zogre dungeon., 311=during Tears of Guthix., 310=on the west side of Keldagrim., 313=at the Rogues' Den., 312=at the ogre area south of Castle Wars., 315=at the Dorgesh-Kaan mine., 314=at the Rogues' Den training area., 317=in abyssal space., 316=during the Evil Bob random event., 319=during the Tears of Guthix quest., 318=during the Quiz Master random event., 288=during Eagles' Peak., 289=during Between a Rock..., 290=during Between a Rock..., 291=during Between a Rock..., 292=at Lletya., 293=at the slave mine under West Ardougne., 294=during Mourning's Ends Part II., 295=at the Ruins of Uzer., 296=during the Golem., 297=during Shadow of the Storm., 298=at the Barrows., 299=beneath the Barrows., 300=at Sophanem., 301=during Icthlarin's Little Helper., 302=to the north of Sophanem., 303=during Icthlarin's Little Helper., 343=in the jungle of north-east Karamja., 342=during the Hazeel Cult., 341=to the east of Bounty Hunter., 340=to the north of the Lava Maze in the Wilderness., 339=in the TzHaar Fight Cave minigame., 338=at Port Phasmatys brewery., 337=during the Tale of Two Cats., 336=during the Frog random event., 351=on Braindeath Island., 350=automatically., 349=during Rat Catchers., 348=at Port Sarim Rat Pits., 347=at the Keldagrim Rat Pits., 346=during Rat Catchers., 345=at the Varrock Rat Pits., 344=at the Ardougne Rat Pits., 326=during Forgettable Tale..., 327=during Forgettable Tale..., 324=during Recruitment Drive., 325=during the Blast Furnace minigame., 322=at the goblin mines under Lumbridge., 323=during the Drill Demon random event., 321=during the Freaky Forester random event., 334=in the TzHaar Fight Pit minigame., 335=in TzHaar., 332=at the genie's cave west of Nardah., 333=in the desert north of Nardah., 330=on Waterbirth Island., 331=during the Spirits of Elid., 328=at Nardah., 329=in Waterbirth Island Dungeon., 373=at the Mage Training Arena's Telekinetic Theatre., 372=at the Mage Training Arena's Creature Graveyard., 374=at the Mage Training Arena's Alchemists' Playground., 369=at the Asgarnian Ice Dungeon's wyvern area., 368=at the Champion's Challenge arena., 371=at Diango's Christmas workshop., 370=on Mos Le'Harmless., 381=during Enakhra's Lament., 380=during Swan Song., 383=during Dealing with Scabaras., 382=at the Trollweiss and Rellekka Hunter area., 377=automatically., 376=at the Mage Training Arena's Enchanting Chamber., 379=during Cabin Fever., 378=during Swan Song., 356=during Royal Trouble., 357=during Royal Trouble., 358=during Royal Trouble., 359=at the sea snake cave in Royal Trouble., 352=on Braindeath Island's mountain., 353=at Burgh de Rott., 354=during In Aid of the Myreque., 355=at the Agility Pyramid., 364=during Shadow of the Storm., 365=in Waterbirth Island Dungeon., 366=in Waterbirth Island Dungeon., 367=at the Champion's Challenge underground area., 360=during the Prison Pete random event., 361=at Mudskipper Point., 362=in Waterbirth Island Dungeon., 363=during Shadow of the Storm., 410=during the Trouble Brewing minigame., 411=during the Evil Twin random event., 408=during Contact!, 409=at Trouble Brewing's distillery., 414=during Contact!, 415=during Contact!, 412=during the Pinball random event., 413=during Contact!, 402=during the Pyramid Plunder minigame., 403=at the hopelessness room of Tolna's rift area., 400=at the Pest Control minigame landing area., 401=during the Pest Control minigame., 406=during or after the Easter 2006 holiday event., 407=during the Barbarian Assault minigame., 404=at the confusion room of Tolna's rift area., 405=at the fear room of Tolna's rift area., 395=at the Evil Chicken's lair., 394=during Recipe for Disaster., 393=at Falador Mole Lair., 392=at the killerwatt plane., 399=during Recipe for Disaster., 398=during Recipe for Disaster., 397=during Recipe for Disaster., 396=during As a First Resort..., 387=at the Vault of War in the Stronghold of Security., 386=at the Feldip Hunter area cave., 385=at your player-owned house., 384=at the Feldip Hunter area., 391=at the anger room of Tolna's rift., 390=at the Sepulchre of Death in the Stronghold of Security., 389=at the Pit of Pestilence in the Stronghold of Security., 388=at the Catacomb of Famine in the Stronghold of Security., 440=during Fremennik Isles., 441=during Fremennik Isles., 442=during the Barbarian Assault minigame., 443=at Brimstail's cave., 444=during My Arm's Big Adventure., 445=during the Slug Menace Quest., 446=during Elemental Workshop II., 447=during Olaf's Quest., 432=during the Darkness of Hallowvale., 433=during the Darkness of Hallowvale., 434=on the cosmic entity plane during Fairy Tale Part II., 435=on the gorak plane in Fairy Tale Part II., 436=at the fairy resistance hideout in Fairy Tale Part II., 437=during Fremennik Isles., 438=during Fremennik Isles., 439=during Fremennik Isles., 425=during Fairy Tale Part II., 424=at the coastal area of Mos Le'Harmless., 427=during Slug Menace., 426=in the cave horror dungeon beneath Mos Le'Harmless., 429=during Death to the Dorgeshuun., 428=during Lunar Diplomacy., 431=during Death to the Dorgeshuun., 430=during the Darkness of Hallowvale., 417=in the north-east corner of the Wilderness., 416=at the Stronghold of Player Safety., 419=during your dream in Lunar Diplomacy., 418=during your dream in Lunar Diplomacy., 421=on the east coast of Lunar Isle., 420=at Lunar Isle., 423=at the Warriors' Guild., 422=in the dungeon beneath Lunar Isle., 478=during Another Slice of H.A.M.., 479=at the Scorpion Pit in the Wilderness., 476=during Another Slice of H.A.M.., 477=during Another Slice of H.A.M.., 474=during the Impetuous Impulses minigame., 475=during or after the Easter 2007 holiday event., 472=during Another Slice of H.A.M.., 473=while learning barbarian skills., 470=during Cold War., 471=in Tarn's Lair., 468=during Tower of Life., 469=during What Lies Below., 466=during Cold War., 467=during Great Brain Robbery., 464=during the Sorceress's Garden minigame., 465=during the Sorceress's Garden minigame., 463=during the Sorceress's Garden minigame., 462=during the Sorceress's Garden minigame., 461=during or after the Christmas 2006 holiday event., 460=during or after the Christmas 2006 holiday event., 459=during or after the Christmas 2006 holiday event., 458=at Varrock Museum., 457=during or after the Halloween 2006 holiday event., 456=during My Arm's Big Adventure., 455=during An Enlightened Journey., 454=at the Dorgesh-Kaan caves., 453=at Dorgesh-Kaan., 452=during Tower of Life., 451=during Tower of Life., 450=during Tower of Life., 449=during Fremennik Isles., 448=during Eagles' Peak., 508=during Land of the Goblins., 509=during the Halloween 2007 holiday event., 510=during Dealing with Scabaras., 511=during As a First Resort..., 504=during Wolf Whistle., 505=during Land of the Goblins., 506=during Land of the Goblins., 507=during Land of the Goblins., 500=during Path of Glouphrie., 501=at Ourania Altar., 502=during Path of Glouphrie., 503=during Path of Glouphrie., 496=during Path of Glouphrie., 497=during Path of Glouphrie., 498=at the Black Knights' Fortress., 499=during King's Ransom., 493=in the God Wars Dungeon., 492=in the God Wars Dungeon., 495=during Path of Glouphrie., 494=in the God Wars Dungeon., 489=during Dragon Slayer., 488=during Dream Mentor., 491=in the God Wars Dungeon., 490=in the God Wars Dungeon., 485=during Dream Mentor., 484=during Dream Mentor., 487=during Dream Mentor., 486=during Dream Mentor., 481=during Grim Tales., 480=during Grim Tales., 483=during Dream Mentor., 482=during the Pattern Recognition random event., 550=not unlockable!, 551=not unlockable!, 548=not unlockable!, 549=not unlockable!, 546=not unlockable!, 547=not unlockable!, 544=not unlockable!, 545=not unlockable!, 558=during the Perils of Ice Mountain., 559=during the Perils of Ice Mountain., 556=to the north of Tai Bwo Wannai Village., 557=not unlockable!, 554=not unlockable!, 555=at the Grand Exchange., 552=not unlockable!, 553=not unlockable!, 567=not unlockable!, 566=not unlockable!, 565=not unlockable!, 564=not unlockable!, 563=not unlockable!, 562=not unlockable!, 561=not unlockable!, 560=not unlockable!, 575=not unlockable!, 574=not unlockable!, 573=not unlockable!, 572=not unlockable!, 571=not unlockable!, 570=not unlockable!, 569=not unlockable!, 568=not unlockable!, 516=during the Vinesweeper minigame., 517=while playing Bounty Hunter., 518=while playing Bounty Hunter., 519=while playing Bounty Hunter., 512=during Dealing with Scabaras., 513=beneath the Grand Tree., 514=during a Duel Arena Tournament., 515=during the Clan Wars minigame., 524=not unlockable!, 525=not unlockable!, 526=not unlockable!, 527=not unlockable!, 521=during Kennith's Concerns., 522=during Kennith's Concerns., 523=automatically., 533=on completion of Great Brain Robbery., 532=not unlockable!, 535=not unlockable!, 534=not unlockable!, 529=not unlockable!, 528=not unlockable!, 531=not unlockable!, 530=not unlockable!, 541=not unlockable!, 540=not unlockable!, 543=not unlockable!, 542=not unlockable!, 537=not unlockable!, 536=on completion of What Lies Below., 539=not unlockable!, 538=not unlockable!, 576=not unlockable!, 577=not unlockable!, 578=not unlockable!, 579=not unlockable!, 580=not unlockable!, 581=not unlockable!, 582=not unlockable!, 583=not unlockable!, 584=at the Blood Altar., 585=in the Chaos Tunnels., 586=in the Chaos Tunnels., 587=in the Chaos Tunnels., 588=during Myreque Part IV., 589=during Myreque Part IV., 590=during Myreque Part IV., 591=during TokTz-Ket-Dill., 593=during TokTz-Ket-Dill., 592=during TokTz-Ket-Dill., 595=during or after the Easter 2008 holiday event., 601=during Myreque Part IV., 600=during Myreque Part IV., 603=during the Fist of Guthix minigame., 602=automatically., 604=in the Fist of Guthix minigame waiting room.}
+Script 1350 - [105,105,null,0]: {550=1, 551=1, 548=1, 549=1, 546=1, 547=1, 544=1, 545=1, 557=1, 554=1, 552=1, 553=1, 567=1, 566=1, 565=1, 564=1, 563=1, 562=1, 561=1, 560=1, 575=1, 574=1, 573=1, 572=1, 571=1, 570=1, 569=1, 568=1, 524=1, 525=1, 526=1, 527=1, 523=1, 532=1, 535=1, 534=1, 529=1, 528=1, 531=1, 530=1, 541=1, 540=1, 543=1, 542=1, 537=1, 539=1, 538=1, 320=1, 576=1, 577=1, 578=1, 375=1, 579=1, 580=1, 581=1, 582=1, 583=1}
+Script 1351 - [105,77,null,147]: {0=177, 1=50, 2=102, 3=90, 4=36, 5=123, 6=124, 7=19, 8=160, 9=186, 10=24, 11=25, 12=26, 13=27, 14=28, 15=29, 17=2, 16=180, 19=152, 18=324, 21=100, 20=99, 23=64, 22=83, 25=325, 24=104, 27=63, 26=68, 29=169, 28=181, 31=326, 30=182, 34=56, 35=327, 32=37, 33=174, 38=148, 39=138, 36=173, 37=69, 42=153, 43=118, 40=106, 41=41, 46=119, 47=163, 44=72, 45=167, 51=22, 50=125, 49=159, 48=98, 55=313, 54=101, 53=33, 52=310, 59=55, 58=76, 57=116, 56=112, 63=96, 62=188, 61=1, 60=18, 68=115, 69=117, 70=191, 71=60, 64=95, 65=6, 66=172, 67=114, 76=12, 77=20, 78=13, 79=185, 72=66, 73=113, 74=74, 75=161, 85=65, 84=107, 87=10, 86=21, 81=328, 80=184, 83=193, 82=157, 93=93, 92=7, 95=329, 94=158, 89=62, 88=155, 91=103, 90=127, 102=144, 103=400, 100=57, 101=5, 98=91, 99=53, 96=78, 97=89, 110=122, 111=80, 108=110, 109=52, 106=92, 107=35, 104=331, 105=332, 119=140, 118=111, 117=151, 116=108, 115=129, 114=333, 113=77, 112=175, 127=162, 126=130, 125=51, 124=38, 123=109, 122=133, 121=170, 120=79, 137=85, 136=75, 139=32, 138=30, 141=82, 140=49, 143=42, 142=435, 129=94, 128=165, 131=183, 130=192, 133=3, 132=179, 135=70, 134=323, 152=321, 153=547, 154=189, 155=468, 156=492, 157=429, 158=494, 159=54, 144=43, 145=14, 146=34, 147=81, 148=15, 149=168, 150=16, 151=466, 171=58, 170=176, 169=164, 168=45, 175=67, 174=190, 173=330, 172=146, 163=105, 162=166, 161=145, 160=120, 167=46, 166=449, 165=87, 164=47, 186=59, 187=131, 184=156, 185=121, 190=9, 191=97, 188=149, 189=187, 178=71, 179=88, 176=17, 177=128, 182=61, 183=154, 180=48, 181=84, 205=254, 204=253, 207=256, 206=255, 201=248, 200=247, 203=251, 202=252, 197=245, 196=242, 199=244, 198=246, 193=241, 192=134, 195=243, 194=132, 220=270, 221=271, 222=277, 223=262, 216=266, 217=269, 218=11, 219=268, 212=260, 213=264, 214=263, 215=267, 208=258, 209=257, 210=259, 211=261, 239=303, 238=296, 237=295, 236=294, 235=293, 234=292, 233=291, 232=290, 231=289, 230=288, 229=287, 228=286, 227=285, 226=284, 225=282, 224=278, 254=4, 255=316, 252=346, 253=322, 250=319, 251=320, 248=317, 249=318, 246=312, 247=314, 244=308, 245=311, 242=306, 243=307, 240=305, 241=304, 275=351, 274=345, 273=347, 272=343, 279=356, 278=355, 277=354, 276=353, 283=359, 282=352, 281=358, 280=357, 287=364, 286=362, 285=363, 284=361, 258=142, 259=143, 256=8, 257=141, 262=334, 263=336, 260=178, 261=265, 266=338, 267=339, 264=335, 265=337, 270=342, 271=344, 268=340, 269=341, 305=474, 304=389, 307=393, 306=392, 309=395, 308=394, 311=397, 310=396, 313=402, 312=390, 315=407, 314=403, 317=412, 316=411, 319=398, 318=413, 288=366, 289=369, 290=370, 291=373, 292=372, 293=375, 294=376, 295=377, 296=378, 297=379, 298=380, 299=381, 300=383, 301=384, 302=387, 303=388, 343=479, 342=478, 341=476, 340=475, 339=473, 338=471, 337=470, 336=409, 351=497, 350=621, 349=491, 348=490, 347=489, 346=485, 345=482, 344=481, 326=436, 327=44, 324=425, 325=434, 322=420, 323=418, 321=419, 334=463, 335=469, 332=464, 333=465, 330=461, 331=462, 328=447, 329=448, 373=534, 372=533, 374=535, 369=529, 368=528, 371=532, 370=530, 381=542, 380=546, 383=455, 382=548, 377=207, 376=541, 379=545, 378=544, 356=506, 357=508, 358=509, 359=510, 352=498, 353=501, 354=504, 355=505, 364=520, 365=198, 366=524, 367=525, 360=511, 361=515, 362=517, 363=519, 410=611, 411=612, 408=606, 409=610, 414=616, 415=213, 412=614, 413=615, 402=591, 403=594, 400=587, 401=588, 406=603, 407=604, 404=600, 405=602, 395=575, 394=576, 393=573, 392=568, 399=583, 398=582, 397=577, 396=477, 387=537, 386=460, 385=454, 384=453, 391=565, 390=560, 389=559, 388=558, 440=225, 441=220, 442=211, 443=194, 444=203, 445=201, 446=202, 447=274, 432=643, 433=646, 434=126, 435=86, 436=73, 437=222, 438=221, 439=223, 425=633, 424=631, 427=200, 426=632, 429=638, 428=630, 431=640, 430=197, 417=586, 416=493, 419=623, 418=622, 421=627, 420=625, 423=634, 422=626, 478=276, 479=450, 476=279, 477=281, 474=349, 475=273, 472=275, 473=367, 470=216, 471=214, 468=234, 469=272, 466=217, 467=238, 464=231, 465=228, 463=229, 462=230, 461=209, 460=210, 459=208, 458=309, 457=205, 456=204, 455=206, 454=249, 453=240, 452=236, 451=235, 450=237, 449=224, 448=620, 508=433, 509=432, 510=451, 511=472, 504=456, 505=440, 506=439, 507=437, 500=417, 501=428, 502=427, 503=416, 496=414, 497=426, 498=374, 499=382, 493=404, 492=386, 495=421, 494=399, 489=365, 488=302, 491=408, 490=391, 485=283, 484=298, 487=301, 486=300, 481=23, 480=150, 483=299, 482=371, 550=430, 551=422, 548=368, 549=458, 546=480, 547=232, 544=212, 545=297, 558=523, 559=522, 556=483, 557=495, 554=446, 555=496, 552=423, 553=424, 567=174, 566=288, 565=260, 564=332, 563=79, 562=40, 561=39, 560=385, 575=33, 574=172, 573=241, 572=529, 571=347, 570=548, 569=165, 568=573, 516=487, 517=444, 518=443, 519=445, 512=452, 513=348, 514=441, 515=442, 524=350, 525=360, 526=195, 527=219, 521=499, 522=500, 523=147, 533=239, 532=574, 535=226, 534=406, 529=227, 528=218, 531=431, 530=196, 541=405, 540=410, 543=199, 542=484, 537=233, 536=250, 539=315, 538=215, 576=24, 577=501, 578=314, 579=588, 580=269, 581=548, 582=372, 583=4, 584=512, 585=459, 586=467, 587=488, 588=514, 589=518, 590=521, 591=527, 593=531, 592=526, 595=502, 601=516, 600=513, 603=507, 602=457, 604=503}
+Script 1352 - [0,0,null,0]: null
+Script 1353 - [0,0,null,0]: null
+Script 1354 - [105,73,null,44630126]: {0=44630034, 1=44630035, 2=44630036, 3=44630037, 4=44630038, 5=44630039, 6=44630040, 7=44630041, 8=44630042, 9=44630043}
+Script 1355 - [105,73,null,44630126]: {0=44630044, 1=44630045, 2=44630046, 3=44630047, 4=44630048, 5=44630049, 6=44630050, 7=44630051, 8=44630052, 9=44630053}
+Script 1356 - [105,73,null,44630126]: {0=44630064, 1=44630065, 2=44630066, 3=44630067, 4=44630068, 5=44630069, 6=44630070, 7=44630071, 8=44630072, 9=44630073}
+Script 1357 - [105,73,null,44630126]: {0=44630054, 1=44630055, 2=44630056, 3=44630057, 4=44630058, 5=44630059, 6=44630060, 7=44630061, 8=44630062, 9=44630063}
+Script 1358 - [105,73,null,44630126]: {0=44761112, 1=44761113, 2=44761114, 3=44761115, 4=44761116, 5=44761117, 6=44761118, 7=44761119, 8=44761120, 9=44761121}
+Script 1359 - [105,73,null,44630127]: {0=44630078, 1=44630083, 2=44630088, 3=44630093, 4=44630098, 5=44630103, 6=44630108, 7=44630113, 8=44630118, 9=44630123}
+Script 1360 - [105,73,null,44630127]: {0=44630079, 1=44630084, 2=44630089, 3=44630094, 4=44630099, 5=44630104, 6=44630109, 7=44630114, 8=44630119, 9=44630124}
+Script 1361 - [105,73,null,44630127]: {0=44630077, 1=44630082, 2=44630087, 3=44630092, 4=44630097, 5=44630102, 6=44630107, 7=44630112, 8=44630117, 9=44630122}
+Script 1362 - [105,73,null,44630127]: {0=44630076, 1=44630081, 2=44630086, 3=44630091, 4=44630096, 5=44630101, 6=44630106, 7=44630111, 8=44630116, 9=44630121}
+Script 1363 - [0,0,null,0]: null
+Script 1364 - [0,0,null,0]: null
+Script 1365 - [0,0,null,0]: null
+Script 1366 - [0,0,null,0]: null
+Script 1367 - [0,0,null,0]: null
+Script 1368 - [0,0,null,0]: null
+Script 1369 - [105,105,null,1]: {1=13, 2=13, 3=13, 4=13, 5=13, 6=13, 7=13, 8=13, 9=14, 10=15, 11=15, 12=16, 13=16, 14=16, 15=16, 17=19, 16=17, 19=22, 18=20, 21=26, 20=25, 23=30, 22=28, 25=35, 24=32, 27=40, 26=37, 29=47, 28=45, 31=55, 30=50, 34=70, 35=75, 32=60, 33=65, 38=90, 39=95, 36=80, 37=85}
+Script 1370 - [0,0,null,0]: null
+Script 1371 - [0,0,null,0]: null
+Script 1372 - [0,0,null,0]: null
+Script 1373 - [0,0,null,0]: null
+Script 1374 - [0,0,null,0]: null
+Script 1375 - [0,0,null,0]: null
+Script 1376 - [0,0,null,0]: null
+Script 1377 - [0,0,null,0]: null
+Script 1378 - [0,0,null,0]: null
+Script 1379 - [0,0,null,0]: null
+Script 1380 - [0,0,null,0]: null
+Script 1381 - [0,0,null,0]: null
+Script 1382 - [0,0,null,0]: null
+Script 1383 - [0,0,null,0]: null
+Script 1384 - [0,0,null,0]: null
+Script 1385 - [0,0,null,0]: null
+Script 1386 - [0,0,null,0]: null
+Script 1387 - [0,0,null,0]: null
+Script 1388 - [0,0,null,0]: null
+Script 1389 - [0,0,null,0]: null
+Script 1390 - [0,0,null,0]: null
+Script 1391 - [0,0,null,0]: null
+Script 1392 - [0,0,null,0]: null
+Script 1393 - [0,0,null,0]: null
+Script 1394 - [0,0,null,0]: null
+Script 1395 - [0,0,null,0]: null
+Script 1396 - [0,0,null,0]: null
+Script 1397 - [0,0,null,0]: null
+Script 1398 - [0,0,null,0]: null
+Script 1399 - [0,0,null,0]: null
+Script 1400 - [0,0,null,0]: null
+Script 1401 - [0,0,null,0]: null
+Script 1402 - [0,0,null,0]: null
+Script 1403 - [0,0,null,0]: null
+Script 1404 - [0,0,null,0]: null
+Script 1405 - [0,0,null,0]: null
+Script 1406 - [0,0,null,0]: null
+Script 1407 - [0,0,null,0]: null
+Script 1408 - [0,0,null,0]: null
+Script 1409 - [0,0,null,0]: null
+Script 1410 - [0,0,null,0]: null
+Script 1411 - [0,0,null,0]: null
+Script 1412 - [0,0,null,0]: null
+Script 1413 - [0,0,null,0]: null
+Script 1414 - [0,0,null,0]: null
+Script 1415 - [0,0,null,0]: null
+Script 1416 - [0,0,null,0]: null
+Script 1417 - [0,0,null,0]: null
+Script 1418 - [0,0,null,0]: null
+Script 1419 - [0,0,null,0]: null
+Script 1420 - [0,0,null,0]: null
+Script 1421 - [0,0,null,0]: null
+Script 1422 - [105,105,null,0]: {50=6, 70=14, 80=4, 60=11, 45=10}
+Script 1423 - [0,0,null,0]: null
+Script 1424 - [0,0,null,0]: null
+Script 1425 - [0,0,null,0]: null
+Script 1426 - [0,0,null,0]: null
+Script 1427 - [0,0,null,0]: null
+Script 1428 - [0,0,null,0]: null
+Script 1429 - [0,0,null,0]: null
+Script 1430 - [0,0,null,0]: null
+Script 1431 - [0,0,null,0]: null
+Script 1432 - [0,0,null,0]: null
+Script 1433 - [105,79,null,11760]: {1=1931, 2=1929, 3=1937, 4=2313, 5=1887, 6=590, 7=1735, 8=1951, 9=1969, 10=1949}
+Script 1434 - [0,0,null,0]: null
+Script 1435 - [0,0,null,0]: null
+Script 1436 - [0,0,null,0]: null
+Script 1437 - [0,0,null,0]: null
+Script 1438 - [0,0,null,0]: null
+Script 1439 - [0,0,null,0]: null
+Script 1440 - [0,0,null,0]: null
+Script 1441 - [0,0,null,0]: null
+Script 1442 - [105,73,null,-1]: {0=47513626, 1=47513646, 2=47513647, 3=47513652, 4=47513640, 5=47513641, 6=47513648, 7=47513658, 8=47513664, 9=47513659, 10=47513660, 11=47513642, 12=47513649, 13=47513650, 14=47513661, 15=47513643, 17=47513662, 16=47513644, 19=47513634, 18=47513651, 21=47513635, 20=47513663, 23=47513628, 22=47513645, 25=47513636, 24=47513629, 27=47513630, 26=47513637, 29=47513665, 28=47513631, 31=47513667, 30=47513666, 34=47513632, 35=47513633, 32=47513668, 33=47513669, 38=47513653, 39=47513654, 36=47513638, 37=47513639, 42=47513657, 40=47513655, 41=47513656}
+Script 1443 - [105,73,null,-1]: {0=47579257, 1=47579293, 2=47579301, 3=47579279, 4=47579285, 5=47579292, 6=47579299, 7=47579276, 8=47579277, 9=47579284, 10=47579275, 11=47579300, 12=47579288, 13=47579278, 14=47579296, 15=47579304, 17=47579283, 16=47579302, 19=47579280, 18=47579291, 21=47579272, 20=47579281, 23=47579282, 22=47579263, 25=47579303, 24=47579312, 27=47579289, 26=47579310, 29=47579317, 28=47579271, 31=47579297, 30=47579298, 34=47579319, 35=47579262, 32=47579290, 33=47579306, 38=47579305, 39=47579320, 36=47579261, 37=47579270, 42=47579265, 43=47579318, 40=47579269, 41=47579264, 46=47579307, 47=47579274, 44=47579311, 45=47579309, 51=47579266, 50=47579273, 49=47579322, 48=47579321, 55=47579315, 54=47579314, 53=47579313, 52=47579316, 59=47579260, 58=47579268, 57=47579267, 56=47579308, 60=47579259}
+Script 1444 - [0,0,null,0]: null
+Script 1445 - [0,0,null,0]: null
+Script 1446 - [0,0,null,0]: null
+Script 1447 - [0,0,null,0]: null
+Script 1448 - [0,0,null,0]: null
+Script 1449 - [0,0,null,0]: null
+Script 1450 - [0,0,null,0]: null
+Script 1451 - [0,0,null,0]: null
+Script 1452 - [0,0,null,0]: null
+Script 1453 - [0,0,null,0]: null
+Script 1454 - [0,0,null,0]: null
+Script 1455 - [0,0,null,0]: null
+Script 1456 - [0,0,null,0]: null
+Script 1457 - [0,0,null,0]: null
+Script 1458 - [0,0,null,0]: null
+Script 1459 - [0,0,null,0]: null
+Script 1460 - [0,0,null,0]: null
+Script 1461 - [0,0,null,0]: null
+Script 1462 - [0,0,null,0]: null
+Script 1463 - [0,0,null,0]: null
+Script 1464 - [0,0,null,0]: null
+Script 1465 - [0,0,null,0]: null
+Script 1466 - [73,115,,0]: {48168986=A L P, 48168987=A L Q, 48168984=A K R, 48168985=A K S, 48168990=B I P, 48168991=B I Q, 48168988=A L R, 48168989=A L S, 48168978=A J P, 48168979=A J Q, 48168976=A I R, 48168977=A I S, 48168982=A K P, 48168983=A K Q, 48168980=A J R, 48168981=A J S, 48169037=D L S, 48169036=D L R, 48169035=D L Q, 48168975=A I Q, 48169034=D L P, 48168974=A I P, 48169033=D K S, 48169032=D K R, 48169031=D K Q, 48169030=D K P, 48169029=D J S, 48169028=D J R, 48169027=D J Q, 48169026=D J P, 48169025=D I S, 48169024=D I R, 48169016=C K R, 48169017=C K S, 48169018=C L P, 48169019=C L Q, 48169020=C L R, 48169021=C L S, 48169022=D I P, 48169023=D I Q, 48169008=C I R, 48169009=C I S, 48169010=C J P, 48169011=C J Q, 48169012=C J R, 48169013=C J S, 48169014=C K P, 48169015=C K Q, 48169001=B K S, 48169000=B K R, 48169003=B L Q, 48169002=B L P, 48169005=B L S, 48169004=B L R, 48169007=C I Q, 48169006=C I P, 48168993=B I S, 48168992=B I R, 48168995=B J Q, 48168994=B J P, 48168997=B J S, 48168996=B J R, 48168999=B K Q, 48168998=B K P}
+Script 1467 - [105,73,null,-1]: {0=48168974, 1=48168977, 2=48168976, 3=48168975, 4=48168986, 5=48168989, 6=48168988, 7=48168987, 8=48168982, 9=48168985, 10=48168984, 11=48168983, 12=48168978, 13=48168981, 14=48168980, 15=48168979, 17=48169025, 16=48169022, 19=48169023, 18=48169024, 21=48169037, 20=48169034, 23=48169035, 22=48169036, 25=48169033, 24=48169030, 27=48169031, 26=48169032, 29=48169029, 28=48169026, 31=48169027, 30=48169028, 34=48169008, 35=48169007, 32=48169006, 33=48169009, 38=48169020, 39=48169019, 36=48169018, 37=48169021, 42=48169016, 43=48169015, 40=48169014, 41=48169017, 46=48169012, 47=48169011, 44=48169010, 45=48169013, 51=48168991, 50=48168992, 49=48168993, 48=48168990, 55=48169003, 54=48169004, 53=48169005, 52=48169002, 59=48168999, 58=48169000, 57=48169001, 56=48168998, 63=48168995, 62=48168996, 61=48168997, 60=48168994, 64=48169038}
+Script 1468 - [0,0,null,0]: null
+Script 1469 - [0,0,null,0]: null
+Script 1470 - [0,0,null,0]: null
+Script 1471 - [0,0,null,0]: null
+Script 1472 - [0,0,null,0]: null

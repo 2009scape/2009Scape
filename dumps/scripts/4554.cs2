@@ -1,0 +1,27 @@
+void script_4554(int arg0) {
+	setWidgetSize(subtract(getWidgetActualX(new WidgetPointer(589,45)), getWidgetActualX(new WidgetPointer(589,43))), 0, 0, 1, new WidgetPointer(589,55));
+	setWidgetSize(subtract(subtract(getWidgetActualWidth(new WidgetPointer(589,51)), getWidgetActualWidth(new WidgetPointer(589,55))), 2), 0, 0, 1, new WidgetPointer(589,57));
+	setWidgetScrollMax(0, 0, new WidgetPointer(589,51));
+	cs2method2100(0, 0, new WidgetPointer(589,51));
+	script_31(38600756, 38600755, 792, 789, 790, 791, 773, 788);
+	setWidgetScrollMax(0, 0, new WidgetPointer(589,23));
+	cs2method2100(0, 0, new WidgetPointer(589,23));
+	script_31(38600728, 38600727, 792, 789, 790, 791, 773, 788);
+	setScriptCallOnClanListChange(4558, new WidgetPointer(589,55), new WidgetPointer(589,56), new WidgetPointer(589,57), new WidgetPointer(589,53), new WidgetPointer(589,51), new WidgetPointer(589,52), "IIIIII", new WidgetPointer(589,51));
+	setScriptCallOnFriendListChange(4558, new WidgetPointer(589,55), new WidgetPointer(589,56), new WidgetPointer(589,57), new WidgetPointer(589,53), new WidgetPointer(589,51), new WidgetPointer(589,52), "IIIIII", new WidgetPointer(589,51));
+	script_4559(38600759, 38600760, 38600761, 38600757, 38600755, 38600756);
+	if (cs2method3612() > 0) {
+		setWidgetText(new WidgetPointer(589,41), "Leave chat channel");
+		setWidgetContextMenuOption(1, new WidgetPointer(589,39), "Leave chat channel");
+	} else {
+		setWidgetText(new WidgetPointer(589,41), "Join chat channel");
+		setWidgetContextMenuOption(1, new WidgetPointer(589,39), "Join chat channel");
+	}
+	globalstring_349 = "";
+	script_3024(38600735);
+	globalint_1507 = strLength(globalstring_349);
+	setScriptCallOnMousePressed(4570, -2147483647, new WidgetPointer(589,27), new WidgetPointer(589,28), "iII", new WidgetPointer(589,27));
+	script_4571(38600731, 38600732, globalstring_349);
+	setWidgetIsHidden(true, new WidgetPointer(589,28));
+	return;
+}

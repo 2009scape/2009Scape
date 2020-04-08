@@ -1,0 +1,15 @@
+void script_3627(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8) {
+	arg7 = add(arg7, 1);
+	if (arg7 == arg8) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+		setWidgetPosition(arg1, arg2, 0, 0, new WidgetPointer(arg0));
+		setItemOnWidgetMethod2200(arg5, -1, new WidgetPointer(arg0));
+		if (setWidgetRegister(new WidgetPointer(arg0))) {
+			setWidgetIntegerNode(1103, arg6);
+		}
+		return;
+	}
+	setWidgetPosition(add(arg1, divide(multiply(arg3, arg7), arg8)), add(arg2, divide(multiply(arg4, arg7), arg8)), 0, 0, new WidgetPointer(arg0));
+	setScriptCallOnGameloop(3627, new WidgetPointer(arg0), arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, "IiiiiOiii", new WidgetPointer(arg0));
+	return;
+}

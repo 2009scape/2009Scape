@@ -1,0 +1,7 @@
+void script_5090(int arg0) {
+	script_4534(72876034);
+	script_5092();
+	setScriptCallOnConfigChange(5091, 1736, 1735, 2, "Y", new WidgetPointer(arg0));
+	setScriptCallOnGlobalConfigChange(5091, 786, 788, 787, 3, "Y", new WidgetPointer(arg0));
+	return;
+}

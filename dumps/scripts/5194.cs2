@@ -1,0 +1,26 @@
+int script_5194() {
+	int ivar0;
+	int ivar1;
+	cs2func_script_5172_struct(2,0,0) structdump_0;
+	cs2func_script_5173_struct(2,0,0) structdump_1;
+	cs2func_script_5174_struct(2,0,0) structdump_2;
+	ivar0 = -1;
+	ivar1 = -1;
+	switch (bitconfig_9646) {
+		case 1:
+			structdump_0 = script_5172();
+			ivar1 = structdump_0.intpart_1;
+			ivar0 = structdump_0.intpart_0;
+			break;
+		case 2:
+			structdump_1 = script_5173();
+			ivar1 = structdump_1.intpart_1;
+			ivar0 = structdump_1.intpart_0;
+			break;
+		case 3:
+			structdump_2 = script_5174();
+			ivar1 = structdump_2.intpart_1;
+			ivar0 = structdump_2.intpart_0;
+	}
+	return ivar0;
+}

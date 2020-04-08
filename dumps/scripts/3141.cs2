@@ -1,0 +1,10 @@
+void script_3141(int arg0,string arg1) {
+	if (setWorldHost(arg0, arg1)) {
+		globalint_547 = 0;
+		script_3143(0, "Switched to game world " + intToStr(arg0));
+	} else {
+		script_3143(1, "Sorry, we couldn't contact world " + intToStr(arg0) + "." + "<br>" + "Please choose a different world.");
+	}
+	script_3116();
+	return;
+}

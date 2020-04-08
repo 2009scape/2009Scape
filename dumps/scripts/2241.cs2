@@ -1,0 +1,57 @@
+void script_2241() {
+	setWidgetText(new WidgetPointer(929,106), "+ " + intToStr(standart_config_1693) + " ( " + intToStr(standart_config_1687) + " )" + "<br>" + "+ " + intToStr(standart_config_1692) + " ( " + intToStr(standart_config_1686) + " )" + "<br>" + "+ " + intToStr(standart_config_1694) + " ( " + intToStr(standart_config_1688) + " )" + "<br>");
+	setWidgetText(new WidgetPointer(929,108), "+ " + intToStr(standart_config_1695) + " ( " + intToStr(standart_config_1689) + " )" + "<br>" + "+ " + intToStr(standart_config_1697) + " ( " + intToStr(standart_config_1690) + " )" + "<br>" + "+ " + intToStr(standart_config_1696) + " ( " + intToStr(standart_config_1691) + " )" + "<br>");
+	if (((boolean)bitconfig_7324)) {
+		setWidgetText(new WidgetPointer(929,113), "WORKING");
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(929,113));
+	} else {
+		playSoundEffect(8723, 10, 0);
+		setWidgetText(new WidgetPointer(929,113), "NEEDS REPAIR");
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(929,113));
+	}
+	if (((boolean)bitconfig_7326)) {
+		setWidgetText(new WidgetPointer(929,112), "WORKING");
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(929,112));
+	} else {
+		playSoundEffect(8723, 10, 1);
+		setWidgetText(new WidgetPointer(929,112), "NEEDS REPAIR");
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(929,112));
+	}
+	if (((boolean)bitconfig_7325)) {
+		setWidgetText(new WidgetPointer(929,114), "WORKING");
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(929,114));
+	} else {
+		playSoundEffect(8723, 10, 2);
+		setWidgetText(new WidgetPointer(929,114), "NEEDS REPAIR");
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(929,114));
+	}
+	setWidgetText(new WidgetPointer(929,102), intToStr(divide(globalint_1135, 5)));
+	switch (standart_config_1698) {
+		case 5:
+			setWidgetText(new WidgetPointer(929,104), "Your workers uncover a hidden stash and you receive");
+			setWidgetText(new WidgetPointer(929,105), "3 extra resources.");
+			playSoundEffect(8728, 1, 0);
+			break;
+		case 6:
+			setWidgetText(new WidgetPointer(929,104), "An accident at work has taken place. As a result you have");
+			setWidgetText(new WidgetPointer(929,105), "lost 3 resources.");
+			playSoundEffect(8723, 10, 0);
+			break;
+		case 7:
+			setWidgetText(new WidgetPointer(929,104), "The paint machine is out of glaze and requires a repair to work at full efficiency.");
+			setWidgetText(new WidgetPointer(929,105), "Painter needs repair.");
+			break;
+		case 8:
+			setWidgetText(new WidgetPointer(929,104), "The conveyor team needs re-training in order to work at full efficiency.");
+			setWidgetText(new WidgetPointer(929,105), "Conveyor needs repair.");
+			break;
+		case 9:
+			setWidgetText(new WidgetPointer(929,104), "The oven is coated in soot. It requires a repair to work at full efficiency.");
+			setWidgetText(new WidgetPointer(929,105), "Oven needs repair.");
+			break;
+		default:
+			setWidgetText(new WidgetPointer(929,104), "");
+			setWidgetText(new WidgetPointer(929,105), "Nothing unusual happened.");
+	}
+	return;
+}

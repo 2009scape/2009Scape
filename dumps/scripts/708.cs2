@@ -1,0 +1,10 @@
+void script_708(int arg0) {
+	if (bitconfig_5032 < 80) {
+		setScriptCallOnGameloop(709, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+	} else {
+		if (bitconfig_5331 < 35) {
+			setScriptCallOnGameloop(709, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+		}
+	}
+	return;
+}

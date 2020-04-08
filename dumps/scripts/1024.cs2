@@ -1,0 +1,652 @@
+int script_1024(int arg0) {
+	switch (arg0) {
+		case 0:
+			if (getSkillActualLvl(14) >= 10) {
+				return 1;
+			}
+			break;
+		case 1:
+			if ((getSkillActualLvl(0) >= 15) && (getSkillActualLvl(5) >= 25)) {
+				return 1;
+			}
+			break;
+		case 2:
+			if (((getSkillActualLvl(1) >= 30) && (getSkillActualLvl(14) >= 40)) && (getSkillActualLvl(13) >= 50)) {
+				return 1;
+			}
+			break;
+		case 3:
+			if (((getSkillActualLvl(7) >= 30) && (getSkillActualLvl(9) >= 5)) && (getSkillActualLvl(4) >= 30)) {
+				return 1;
+			}
+			break;
+		case 4:
+			if (((getSkillActualLvl(16) >= 42) && (getSkillActualLvl(12) >= 45)) && ((getSkillActualLvl(4) >= 40) && (getSkillActualLvl(13) >= 50))) {
+				return 1;
+			}
+			break;
+		case 5:
+			if ((getSkillActualLvl(12) >= 20) && (getSkillActualLvl(17) >= 25)) {
+				return 1;
+			}
+			break;
+		case 6:
+			if ((((getSkillActualLvl(16) >= 26) && (getSkillActualLvl(22) >= 5)) && ((getSkillActualLvl(12) >= 32) && (getSkillActualLvl(6) >= 33))) && (((getSkillActualLvl(14) >= 20) && (getSkillActualLvl(2) >= 40)) && (getSkillActualLvl(17) >= 22))) {
+				return 1;
+			}
+			break;
+		case 7:
+			if (((getSkillActualLvl(11) >= 50) && (getSkillActualLvl(6) >= 50)) && ((getSkillActualLvl(18) >= 10) && (getSkillActualLvl(17) >= 53))) {
+				return 1;
+			}
+			break;
+		case 8:
+			if (((getSkillActualLvl(9) >= 50) && (getSkillActualLvl(20) >= 50)) && (getSkillActualLvl(13) >= 65)) {
+				return 1;
+			}
+			break;
+		case 9:
+			if (((getSkillActualLvl(16) >= 10) && (getSkillActualLvl(15) >= 10)) && (getSkillActualLvl(17) >= 25)) {
+				return 1;
+			}
+			break;
+		case 10:
+			if (getSkillActualLvl(15) >= 31) {
+				return 1;
+			}
+			break;
+		case 11:
+			if (getSkillActualLvl(21) >= 27) {
+				return 1;
+			}
+			break;
+		case 12:
+			if (((getSkillActualLvl(12) >= 20) && (getSkillActualLvl(14) >= 20)) && (getSkillActualLvl(13) >= 20)) {
+				return 1;
+			}
+			break;
+		case 13:
+			if (((getSkillActualLvl(12) >= 50) && (getSkillActualLvl(11) >= 45)) && ((getSkillActualLvl(6) >= 39) && (getSkillActualLvl(5) >= 43))) {
+				return 1;
+			}
+			break;
+		case 14:
+			if (((getSkillActualLvl(19) >= 49) && (getSkillActualLvl(15) >= 57)) && (getSkillActualLvl(17) >= 40)) {
+				return 1;
+			}
+			break;
+		case 15:
+			if (((getSkillActualLvl(12) >= 40) && (getSkillActualLvl(6) >= 59)) && ((getSkillActualLvl(14) >= 40) && (getSkillActualLvl(13) >= 40))) {
+				return 1;
+			}
+			break;
+		case 16:
+			if (getSkillActualLvl(10) >= 10) {
+				return 1;
+			}
+			break;
+		case 17:
+			if ((getSkillActualLvl(7) >= 22) && (getSkillActualLvl(19) >= 17)) {
+				return 1;
+			}
+			break;
+		case 18:
+			if (((getSkillActualLvl(12) >= 40) && (getSkillActualLvl(9) >= 25)) && (getSkillActualLvl(8) >= 40)) {
+				return 1;
+			}
+			break;
+		case 19:
+			if (getSkillActualLvl(19) >= 25) {
+				return 1;
+			}
+			break;
+		case 20:
+			if ((getSkillActualLvl(16) >= 25) && (getSkillActualLvl(7) >= 20)) {
+				return 1;
+			}
+			break;
+		case 21:
+			if (((getSkillActualLvl(12) >= 12) && (getSkillActualLvl(11) >= 16)) && ((getSkillActualLvl(6) >= 33) && (getSkillActualLvl(17) >= 14))) {
+				return 1;
+			}
+			break;
+		case 22:
+			if ((getSkillActualLvl(12) >= 20) && (getSkillActualLvl(17) >= 25)) {
+				return 1;
+			}
+			break;
+		case 23:
+			if (getSkillActualLvl(16) >= 25) {
+				return 1;
+			}
+			break;
+		case 24:
+			if ((getSkillActualLvl(12) >= 49) && (getSkillActualLvl(17) >= 17)) {
+				return 1;
+			}
+			break;
+		case 25:
+			if ((getSkillActualLvl(16) >= 15) && (getSkillActualLvl(12) >= 35)) {
+				return 1;
+			}
+			break;
+		case 26:
+			if (((getSkillActualLvl(7) >= 53) && (getSkillActualLvl(10) >= 53)) && ((getSkillActualLvl(15) >= 25) && (getSkillActualLvl(14) >= 50))) {
+				return 1;
+			}
+			break;
+		case 27:
+			if (getSkillActualLvl(16) >= 35) {
+				return 1;
+			}
+			break;
+		case 28:
+			if (((getSkillActualLvl(12) >= 25) && (getSkillActualLvl(6) >= 7)) && (getSkillActualLvl(14) >= 15)) {
+				return 1;
+			}
+			break;
+		case 29:
+			if (getSkillActualLvl(15) >= 3) {
+				return 1;
+			}
+			break;
+		case 30:
+			if (((((getSkillActualLvl(16) >= 50) && (getSkillActualLvl(12) >= 50)) && ((getSkillActualLvl(15) >= 45) && (getSkillActualLvl(6) >= 56))) && (((getSkillActualLvl(14) >= 52) && (getSkillActualLvl(5) >= 42)) && ((getSkillActualLvl(13) >= 50) && (getSkillActualLvl(2) >= 50)))) && ((getSkillActualLvl(17) >= 50) && (getSkillActualLvl(8) >= 50))) {
+				return 1;
+			}
+			break;
+		case 31:
+			if ((getSkillActualLvl(12) >= 31) && (getSkillActualLvl(8) >= 36)) {
+				return 1;
+			}
+			break;
+		case 32:
+			if (((getSkillActualLvl(16) >= 13) && (getSkillActualLvl(14) >= 17)) && (getSkillActualLvl(17) >= 13)) {
+				return 1;
+			}
+			break;
+		case 33:
+			if ((((getSkillActualLvl(12) >= 61) && (getSkillActualLvl(1) >= 40)) && ((getSkillActualLvl(11) >= 49) && (getSkillActualLvl(15) >= 5))) && (((getSkillActualLvl(6) >= 65) && (getSkillActualLvl(14) >= 60)) && (getSkillActualLvl(8) >= 55))) {
+				return 1;
+			}
+			break;
+		case 34:
+			if (((getSkillActualLvl(12) >= 20) && (getSkillActualLvl(6) >= 7)) && (getSkillActualLvl(13) >= 40)) {
+				return 1;
+			}
+			break;
+		case 35:
+			if (getSkillActualLvl(17) >= 30) {
+				return 1;
+			}
+			break;
+		case 36:
+			if (getSkillActualLvl(16) >= 20) {
+				return 1;
+			}
+			break;
+		case 37:
+			if ((getSkillActualLvl(4) >= 60) && (getSkillActualLvl(17) >= 50)) {
+				return 1;
+			}
+			break;
+		case 38:
+			if (getSkillActualLvl(16) >= 25) {
+				return 1;
+			}
+			break;
+		case 39:
+			if ((getSkillActualLvl(19) >= 29) && (getSkillActualLvl(8) >= 10)) {
+				return 1;
+			}
+			break;
+		case 40:
+			if (getSkillActualLvl(12) >= 18) {
+				return 1;
+			}
+			break;
+		case 41:
+			if (((getSkillActualLvl(16) >= 36) && (getSkillActualLvl(12) >= 25)) && ((getSkillActualLvl(15) >= 18) && (getSkillActualLvl(13) >= 30))) {
+				return 1;
+			}
+			break;
+		case 42:
+			if (getSkillActualLvl(16) >= 56) {
+				return 1;
+			}
+			break;
+		case 43:
+			if ((getSkillActualLvl(16) >= 40) && (getSkillActualLvl(18) >= 40)) {
+				return 1;
+			}
+			break;
+		case 44:
+			if (getSkillActualLvl(5) >= 31) {
+				return 1;
+			}
+			break;
+		case 45:
+			if (getSkillActualLvl(11) >= 30) {
+				return 1;
+			}
+			break;
+		case 46:
+			if ((getSkillActualLvl(12) >= 20) && (getSkillActualLvl(15) >= 15)) {
+				return 1;
+			}
+			break;
+		case 47:
+			if (getSkillActualLvl(12) >= 30) {
+				return 1;
+			}
+			break;
+		case 48:
+			if ((getSkillActualLvl(16) >= 32) && (getSkillActualLvl(12) >= 20)) {
+				return 1;
+			}
+			break;
+		case 49:
+			if (((getSkillActualLvl(6) >= 33) && (getSkillActualLvl(14) >= 37)) && ((getSkillActualLvl(4) >= 37) && (getSkillActualLvl(17) >= 37))) {
+				return 1;
+			}
+			break;
+		case 50:
+			if ((((getSkillActualLvl(7) >= 62) && (getSkillActualLvl(12) >= 40)) && ((getSkillActualLvl(11) >= 42) && (getSkillActualLvl(10) >= 62))) && ((getSkillActualLvl(6) >= 66) && (getSkillActualLvl(13) >= 45))) {
+				return 1;
+			}
+			break;
+		case 51:
+			if (((getSkillActualLvl(16) >= 15) && (getSkillActualLvl(7) >= 30)) && (getSkillActualLvl(10) >= 5)) {
+				return 1;
+			}
+			break;
+		case 52:
+			if (((getSkillActualLvl(12) >= 20) && (getSkillActualLvl(11) >= 49)) && (getSkillActualLvl(14) >= 20)) {
+				return 1;
+			}
+			break;
+		case 53:
+			if ((getSkillActualLvl(4) >= 40) && (getSkillActualLvl(17) >= 42)) {
+				return 1;
+			}
+			break;
+		case 54:
+			if ((getSkillActualLvl(9) >= 10) && (getSkillActualLvl(13) >= 20)) {
+				return 1;
+			}
+			break;
+		case 55:
+			if (getSkillActualLvl(17) >= 21) {
+				return 1;
+			}
+			break;
+		case 56:
+			if (getSkillActualLvl(16) >= 28) {
+				return 1;
+			}
+			break;
+		case 57:
+			if (getSkillActualLvl(16) >= 15) {
+				return 1;
+			}
+			break;
+		case 58:
+			if (getSkillActualLvl(4) >= 25) {
+				return 1;
+			}
+			break;
+		case 59:
+			if ((((getSkillActualLvl(16) >= 25) && (getSkillActualLvl(15) >= 14)) && ((getSkillActualLvl(6) >= 14) && (getSkillActualLvl(14) >= 40))) && (getSkillActualLvl(17) >= 15)) {
+				return 1;
+			}
+			break;
+		case 60:
+			if (getSkillActualLvl(0) >= 20) {
+				return 1;
+			}
+			break;
+		case 61:
+			if ((getSkillActualLvl(22) >= 5) && (getSkillActualLvl(6) >= 46)) {
+				return 1;
+			}
+			break;
+		case 62:
+			if ((getSkillActualLvl(16) >= 23) && (getSkillActualLvl(17) >= 23)) {
+				return 1;
+			}
+			break;
+		case 63:
+			if (((getSkillActualLvl(12) >= 19) && (getSkillActualLvl(4) >= 30)) && ((getSkillActualLvl(18) >= 18) && (getSkillActualLvl(8) >= 35))) {
+				return 1;
+			}
+			break;
+		case 64:
+			if ((getSkillActualLvl(6) >= 20) && (getSkillActualLvl(13) >= 30)) {
+				return 1;
+			}
+			break;
+		case 65:
+			if (((getSkillActualLvl(12) >= 36) && (getSkillActualLvl(19) >= 30)) && (getSkillActualLvl(11) >= 20)) {
+				return 1;
+			}
+			break;
+		case 66:
+			if (((getSkillActualLvl(22) >= 30) && (getSkillActualLvl(12) >= 16)) && (getSkillActualLvl(5) >= 50)) {
+				return 1;
+			}
+			break;
+		case 67:
+			if (((getSkillActualLvl(12) >= 30) && (getSkillActualLvl(20) >= 30)) && ((getSkillActualLvl(18) >= 30) && (getSkillActualLvl(17) >= 30))) {
+				return 1;
+			}
+			break;
+		case 68:
+			if (((getSkillActualLvl(16) >= 30) && (getSkillActualLvl(22) >= 34)) && ((getSkillActualLvl(12) >= 30) && (getSkillActualLvl(21) >= 10))) {
+				return 1;
+			}
+			break;
+		case 69:
+			if (((getSkillActualLvl(16) >= 40) && (getSkillActualLvl(22) >= 20)) && ((getSkillActualLvl(12) >= 46) && (getSkillActualLvl(8) >= 56))) {
+				return 1;
+			}
+			break;
+		case 70:
+			if (getSkillActualLvl(22) >= 10) {
+				return 1;
+			}
+			break;
+		case 71:
+			if (getSkillActualLvl(20) >= 35) {
+				return 1;
+			}
+			break;
+		case 72:
+			if ((getSkillActualLvl(11) >= 40) && (getSkillActualLvl(8) >= 50)) {
+				return 1;
+			}
+			break;
+		case 73:
+			if ((((getSkillActualLvl(16) >= 59) && (getSkillActualLvl(19) >= 45)) && ((getSkillActualLvl(15) >= 52) && (getSkillActualLvl(17) >= 58))) && (getSkillActualLvl(8) >= 71)) {
+				return 1;
+			}
+			break;
+		case 74:
+			if ((getSkillActualLvl(6) >= 45) && (getSkillActualLvl(1) >= 65)) {
+				return 1;
+			}
+			break;
+		case 75:
+			if ((((getSkillActualLvl(16) >= 45) && (getSkillActualLvl(4) >= 47)) && ((getSkillActualLvl(18) >= 56) && (getSkillActualLvl(17) >= 56))) && (getSkillActualLvl(2) >= 60)) {
+				return 1;
+			}
+			break;
+		case 76:
+			if (((getSkillActualLvl(16) >= 55) && (getSkillActualLvl(19) >= 53)) && ((getSkillActualLvl(18) >= 59) && (getSkillActualLvl(8) >= 72))) {
+				return 1;
+			}
+			break;
+		case 77:
+			if ((((getSkillActualLvl(5) >= 30) && (getSkillActualLvl(16) >= 36)) && ((getSkillActualLvl(17) >= 36) && (getSkillActualLvl(10) >= 36))) && (getSkillActualLvl(15) >= 37)) {
+				return 1;
+			}
+			break;
+		case 78:
+			if (getSkillActualLvl(7) >= 10) {
+				return 1;
+			}
+			break;
+		case 79:
+			if (getSkillActualLvl(7) >= 31) {
+				return 1;
+			}
+			break;
+		case 80:
+			if (getSkillActualLvl(7) >= 40) {
+				return 1;
+			}
+			break;
+		case 81:
+			if (getSkillActualLvl(7) >= 25) {
+				return 1;
+			}
+			break;
+		case 82:
+			if ((getSkillActualLvl(7) >= 41) && (getSkillActualLvl(11) >= 20)) {
+				return 1;
+			}
+			break;
+		case 83:
+			if ((getSkillActualLvl(7) >= 70) && (getSkillActualLvl(16) >= 48)) {
+				return 1;
+			}
+			break;
+		case 84:
+			if (((getSkillActualLvl(21) >= 48) && (getSkillActualLvl(11) >= 51)) && (getSkillActualLvl(8) >= 58)) {
+				return 1;
+			}
+			break;
+		case 85:
+			if (getSkillActualLvl(14) >= 46) {
+				return 1;
+			}
+			break;
+		case 86:
+			if ((getSkillActualLvl(22) >= 44) && (getSkillActualLvl(9) >= 42)) {
+				return 1;
+			}
+			break;
+		case 87:
+			if (((getSkillActualLvl(16) >= 50) && (getSkillActualLvl(11) >= 21)) && ((getSkillActualLvl(17) >= 60) && (getSkillActualLvl(2) >= 60))) {
+				return 1;
+			}
+			break;
+		case 88:
+			if ((((getSkillActualLvl(12) >= 42) && (getSkillActualLvl(19) >= 40)) && ((getSkillActualLvl(10) >= 50) && (getSkillActualLvl(5) >= 47))) && (getSkillActualLvl(18) >= 42)) {
+				return 1;
+			}
+			break;
+		case 89:
+			if ((((getSkillActualLvl(22) >= 20) && (getSkillActualLvl(16) >= 29)) && ((getSkillActualLvl(12) >= 47) && (getSkillActualLvl(6) >= 49))) && (((getSkillActualLvl(14) >= 35) && (getSkillActualLvl(18) >= 31)) && (getSkillActualLvl(11) >= 40))) {
+				return 1;
+			}
+			break;
+		case 90:
+			if ((((getSkillActualLvl(0) >= 40) && (getSkillActualLvl(14) >= 41)) && ((getSkillActualLvl(12) >= 43) && (getSkillActualLvl(2) >= 45))) && (getSkillActualLvl(22) >= 50)) {
+				return 1;
+			}
+			break;
+		case 91:
+			if (((getSkillActualLvl(22) >= 10) && (getSkillActualLvl(19) >= 10)) && ((getSkillActualLvl(21) >= 10) && (getSkillActualLvl(17) >= 11))) {
+				return 1;
+			}
+			break;
+		case 92:
+			if (((getSkillActualLvl(18) >= 35) && (getSkillActualLvl(12) >= 25)) && (script_1432() >= 85)) {
+				return 1;
+			}
+			break;
+		case 93:
+			if (((getSkillActualLvl(16) >= 60) && (getSkillActualLvl(17) >= 63)) && ((getSkillActualLvl(12) >= 66) && (getSkillActualLvl(13) >= 69))) {
+				return 1;
+			}
+			break;
+		case 94:
+			if (((getSkillActualLvl(22) >= 40) && (getSkillActualLvl(19) >= 26)) && ((getSkillActualLvl(5) >= 35) && (getSkillActualLvl(23) >= 19))) {
+				return 1;
+			}
+			break;
+		case 95:
+			if (getSkillActualLvl(11) >= 43) {
+				return 1;
+			}
+			break;
+		case 96:
+			if ((((getSkillActualLvl(11) >= 47) && (getSkillActualLvl(21) >= 35)) && ((getSkillActualLvl(14) >= 45) && (getSkillActualLvl(5) >= 55))) && ((getSkillActualLvl(23) >= 23) && (getSkillActualLvl(8) >= 37))) {
+				return 1;
+			}
+			break;
+		case 97:
+			if (((getSkillActualLvl(21) >= 51) && (getSkillActualLvl(16) >= 51)) && ((getSkillActualLvl(13) >= 54) && (getSkillActualLvl(14) >= 59))) {
+				return 1;
+			}
+			break;
+		case 98:
+			if ((((getSkillActualLvl(1) >= 65) && (getSkillActualLvl(6) >= 75)) && ((getSkillActualLvl(15) >= 65) && (getSkillActualLvl(17) >= 60))) && (((getSkillActualLvl(21) >= 55) && (getSkillActualLvl(19) >= 65)) && ((getSkillActualLvl(23) >= 23) && ((boolean)script_395())))) {
+				return 1;
+			}
+			break;
+		case 99:
+			if (((getSkillActualLvl(11) >= 55) && (getSkillActualLvl(9) >= 53)) && (getSkillActualLvl(12) >= 52)) {
+				return 1;
+			}
+			break;
+		case 100:
+			if (((getSkillActualLvl(17) >= 46) && (getSkillActualLvl(16) >= 46)) && (getSkillActualLvl(2) >= 46)) {
+				return 1;
+			}
+			break;
+		case 101:
+			if (((getSkillActualLvl(21) >= 41) && (getSkillActualLvl(16) >= 50)) && ((getSkillActualLvl(6) >= 57) && (getSkillActualLvl(15) >= 43))) {
+				return 1;
+			}
+			break;
+		case 102:
+			if (((getSkillActualLvl(8) >= 10) && (getSkillActualLvl(6) >= 10)) && ((getSkillActualLvl(14) >= 8) && (getSkillActualLvl(11) >= 6))) {
+				return 1;
+			}
+			break;
+		case 103:
+			if ((((getSkillActualLvl(22) >= 35) && (getSkillActualLvl(7) >= 35)) && ((getSkillActualLvl(12) >= 35) && (getSkillActualLvl(5) >= 35))) && (getSkillActualLvl(6) >= 35)) {
+				return 1;
+			}
+			break;
+		case 104:
+			if (((getSkillActualLvl(17) >= 38) && (getSkillActualLvl(22) >= 45)) && (getSkillActualLvl(21) >= 45)) {
+				return 1;
+			}
+			break;
+		case 105:
+			if ((((getSkillActualLvl(23) >= 41) && (getSkillActualLvl(14) >= 64)) && ((getSkillActualLvl(18) >= 37) && (getSkillActualLvl(16) >= 61))) && (((getSkillActualLvl(2) >= 64) && (getSkillActualLvl(4) >= 64)) && (getSkillActualLvl(17) >= 66))) {
+				return 1;
+			}
+			break;
+		case 106:
+			if (((getSkillActualLvl(21) >= 61) && (getSkillActualLvl(11) >= 61)) && (getSkillActualLvl(2) >= 69)) {
+				return 1;
+			}
+			break;
+		case 107:
+			if (((getSkillActualLvl(16) >= 69) && (getSkillActualLvl(9) >= 70)) && ((getSkillActualLvl(4) >= 75) && (getSkillActualLvl(8) >= 75))) {
+				return 1;
+			}
+			break;
+		case 108:
+			if (getSkillActualLvl(5) >= 50) {
+				return 1;
+			}
+			break;
+		case 109:
+			if (((getSkillActualLvl(0) >= 75) && (getSkillActualLvl(2) >= 75)) && (getSkillActualLvl(18) >= 65)) {
+				return 1;
+			}
+			break;
+		case 110:
+			if ((((getSkillActualLvl(6) >= 75) && (getSkillActualLvl(5) >= 70)) && ((getSkillActualLvl(14) >= 66) && (getSkillActualLvl(21) >= 65))) && (getSkillActualLvl(22) >= 60)) {
+				return 1;
+			}
+			break;
+		case 111:
+			if (((getSkillActualLvl(6) >= 27) && (getSkillActualLvl(20) >= 20)) && (getSkillActualLvl(22) >= 25)) {
+				return 1;
+			}
+			break;
+		case 112:
+			if (getSkillActualLvl(17) >= 24) {
+				return 1;
+			}
+			break;
+		case 113:
+			if (getSkillActualLvl(17) >= 41) {
+				return 1;
+			}
+			break;
+		case 114:
+			if (((getSkillActualLvl(17) >= 62) && (getSkillActualLvl(15) >= 45)) && (getSkillActualLvl(16) >= 40)) {
+				return 1;
+			}
+			break;
+		case 115:
+			if ((((getSkillActualLvl(19) >= 54) && (getSkillActualLvl(17) >= 51)) && ((getSkillActualLvl(6) >= 59) && (getSkillActualLvl(23) >= 37))) && (getSkillActualLvl(12) >= 36)) {
+				return 1;
+			}
+			break;
+		case 116:
+			if ((getSkillActualLvl(1) >= 33) && (getSkillActualLvl(13) >= 33)) {
+				return 1;
+			}
+			break;
+		case 117:
+			if ((getSkillActualLvl(2) >= 42) && (getSkillActualLvl(0) >= 35)) {
+				return 1;
+			}
+			break;
+		case 118:
+			if (((getSkillActualLvl(6) >= 77) && (getSkillActualLvl(22) >= 68)) && ((getSkillActualLvl(13) >= 68) && (getSkillActualLvl(12) >= 67))) {
+				return 1;
+			}
+			break;
+		case 119:
+			if ((((getSkillActualLvl(22) >= 47) && (getSkillActualLvl(15) >= 49)) && ((getSkillActualLvl(21) >= 46) && (getSkillActualLvl(14) >= 47))) && (((getSkillActualLvl(23) >= 48) && (getSkillActualLvl(17) >= 54)) && (getSkillActualLvl(8) >= 52))) {
+				return 1;
+			}
+			break;
+		case 120:
+			if (((((getSkillActualLvl(0) >= 78) && (getSkillActualLvl(22) >= 70)) && ((getSkillActualLvl(12) >= 70) && (getSkillActualLvl(11) >= 71))) && (((getSkillActualLvl(6) >= 80) && (getSkillActualLvl(13) >= 70)) && ((getSkillActualLvl(2) >= 78) && (getSkillActualLvl(23) >= 55)))) && (getSkillActualLvl(1) >= 10)) {
+				return 1;
+			}
+			break;
+		case 121:
+			if (((getSkillActualLvl(2) >= 77) && (getSkillActualLvl(13) >= 70)) && (getSkillActualLvl(14) >= 68)) {
+				return 1;
+			}
+			break;
+		case 122:
+			if (((getSkillActualLvl(16) >= 64) && (getSkillActualLvl(17) >= 64)) && ((getSkillActualLvl(22) >= 62) && (getSkillActualLvl(20) >= 61))) {
+				return 1;
+			}
+			break;
+		case 123:
+			if ((((getSkillActualLvl(1) >= 40) && (getSkillActualLvl(12) >= 41)) && ((getSkillActualLvl(20) >= 39) && (getSkillActualLvl(13) >= 42))) && (getSkillActualLvl(17) >= 39)) {
+				return 1;
+			}
+			break;
+		case 124:
+			if ((((getSkillActualLvl(22) >= 62) && (getSkillActualLvl(24) >= 50)) && ((getSkillActualLvl(18) >= 61) && (getSkillActualLvl(23) >= 65))) && (((getSkillActualLvl(13) >= 74) && (getSkillActualLvl(1) >= 76)) && (getSkillActualLvl(17) >= 74))) {
+				return 1;
+			}
+			break;
+		case 125:
+			if (((getSkillActualLvl(10) >= 70) && (getSkillActualLvl(21) >= 67)) && (getSkillActualLvl(17) >= 70)) {
+				return 1;
+			}
+			break;
+		case 126:
+			if ((((getSkillActualLvl(1) >= 60) && (getSkillActualLvl(3) >= 50)) && ((getSkillActualLvl(15) >= 47) && (getSkillActualLvl(23) >= 45))) && (getSkillActualLvl(24) >= 35)) {
+				return 1;
+			}
+			break;
+		case 127:
+			if ((((getSkillActualLvl(16) >= 63) && (getSkillActualLvl(8) >= 76)) && ((getSkillActualLvl(19) >= 63) && (getSkillActualLvl(9) >= 70))) && (((getSkillActualLvl(12) >= 64) && (getSkillActualLvl(18) >= 67)) && (getSkillActualLvl(6) == 70))) {
+				return 1;
+			}
+			break;
+		case 128:
+			if (((getSkillActualLvl(16) >= 77) && (getSkillActualLvl(14) >= 76)) && (getSkillActualLvl(12) >= 76)) {
+				return 1;
+			}
+			break;
+		default:
+			return 0;
+	}
+	return 0;
+}

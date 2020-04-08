@@ -1,0 +1,73 @@
+void script_5371(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	if (arg0 < 1) {
+		setWidgetText(new WidgetPointer(951,53), "-");
+	}
+	if (arg0 < 2) {
+		setWidgetText(new WidgetPointer(951,55), "-");
+	}
+	if (arg0 < 3) {
+		setWidgetText(new WidgetPointer(951,57), "-");
+	}
+	if (arg0 < 4) {
+		setWidgetText(new WidgetPointer(951,59), "-");
+	}
+	if (arg0 < 5) {
+		setWidgetText(new WidgetPointer(951,61), "-");
+	}
+	if (arg0 < 6) {
+		setWidgetText(new WidgetPointer(951,63), "-");
+	}
+	switch (arg0) {
+		case 0:
+			setWidgetText(new WidgetPointer(951,25), intToStr(arg1));
+			break;
+		case 1:
+			setWidgetText(new WidgetPointer(951,53), intToStr(arg1));
+			break;
+		case 2:
+			setWidgetText(new WidgetPointer(951,55), intToStr(arg1));
+			break;
+		case 3:
+			setWidgetText(new WidgetPointer(951,57), intToStr(arg1));
+			break;
+		case 4:
+			setWidgetText(new WidgetPointer(951,59), intToStr(arg1));
+			break;
+		case 5:
+			setWidgetText(new WidgetPointer(951,61), intToStr(arg1));
+			break;
+		case 6:
+			setWidgetText(new WidgetPointer(951,63), intToStr(arg1));
+	}
+	switch (arg0) {
+		case 0:
+			script_5373(62324789, arg2);
+			break;
+		case 1:
+			script_5373(62324791, arg2);
+			break;
+		case 2:
+			script_5373(62324793, arg2);
+			break;
+		case 3:
+			script_5373(62324795, arg2);
+			break;
+		case 4:
+			script_5373(62324797, arg2);
+			break;
+		case 5:
+			script_5373(62324799, arg2);
+	}
+	ivar3 = subtract(multiply(63, arg0), 189);
+	ivar4 = add(ivar3, 63);
+	setScriptCallOnGameloop(5372, new WidgetPointer(951,36), ivar3, "Ii", new WidgetPointer(951,36));
+	setScriptCallOnGameloop(5372, new WidgetPointer(951,34), ivar4, "Ii", new WidgetPointer(951,34));
+	ivar5 = subtract(add(getWidgetActualX(new WidgetPointer(951,36)), divide(getWidgetActualWidth(new WidgetPointer(951,36)), 2)), divide(getWidgetActualWidth(new WidgetPointer(951,14)), 2));
+	if (ivar5 < ivar3) {
+		playSoundEffect2False(7717, 1, 0, 180);
+	}
+	return;
+}

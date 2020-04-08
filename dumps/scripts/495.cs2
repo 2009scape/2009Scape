@@ -1,0 +1,64 @@
+void script_495(int arg0) {
+	int ivar1;
+	flow_0:
+		ivar1 = 0;
+		SWITCH (arg0) {
+			case 66519184:
+				 GOTO flow_1
+			case 66519186:
+				 GOTO flow_2
+			case 66519188:
+				 GOTO flow_3
+			case 66519190:
+				 GOTO flow_4
+			case 66519192:
+				 GOTO flow_5
+			case 66519194:
+				 GOTO flow_6
+			case 66519196:
+				 GOTO flow_7
+			case 66519198:
+				 GOTO flow_8
+			case 66519200:
+				 GOTO flow_9
+			case 66519202:
+				 GOTO flow_10
+		}
+		return;
+	flow_1:
+		ivar1 = bitconfig_7520;
+		GOTO	flow_11
+	flow_2:
+		ivar1 = bitconfig_7521;
+		GOTO	flow_11
+	flow_3:
+		ivar1 = bitconfig_7526;
+		GOTO	flow_11
+	flow_4:
+		ivar1 = bitconfig_7527;
+		GOTO	flow_11
+	flow_5:
+		ivar1 = bitconfig_7530;
+		GOTO	flow_11
+	flow_6:
+		ivar1 = bitconfig_7531;
+		GOTO	flow_11
+	flow_7:
+		ivar1 = bitconfig_7532;
+		GOTO	flow_11
+	flow_8:
+		ivar1 = bitconfig_7533;
+		GOTO	flow_11
+	flow_9:
+		ivar1 = bitconfig_7534;
+		GOTO	flow_11
+	flow_10:
+		ivar1 = bitconfig_7535;
+	flow_11:
+		if (((boolean)ivar1)) {
+			setWidgetRGB(new Color(88, 80, 66), new WidgetPointer(arg0));
+		} else {
+			setWidgetRGB(new Color(230, 202, 152), new WidgetPointer(arg0));
+		}
+		return;
+}

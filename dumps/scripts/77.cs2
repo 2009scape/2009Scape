@@ -1,0 +1,9 @@
+void script_77(string arg0) {
+	script_78(globalint_4, arg0);
+	globalint_4 = add(globalint_4, 1);
+	if (globalint_4 >= 20) {
+		globalint_4 = 0;
+	}
+	globalint_3 = -1;
+	return;
+}

@@ -1,0 +1,13 @@
+cs2func_script_3011_struct(7,0,0) script_3011(int arg0) {
+	switch (arg0) {
+		case 0:
+			return newstruct cs2func_script_3011_struct(script_3012(arg0), 59441182, 59441183, 59441185, script_3013(arg0), 59441187, 59441184);
+		case 1:
+			return newstruct cs2func_script_3011_struct(script_3012(arg0), 59441170, 59441171, 59441173, script_3013(arg0), 59441175, 59441172);
+		case 2:
+			return newstruct cs2func_script_3011_struct(script_3012(arg0), 59441158, 59441159, 59441161, script_3013(arg0), 59441163, 59441160);
+		case 3:
+			return newstruct cs2func_script_3011_struct(script_3012(arg0), 59441196, 59441197, 59441199, script_3013(arg0), 59441201, 59441198);
+	}
+	return newstruct cs2func_script_3011_struct(-1, -1, -1, -1, -1, -1, -1);
+}

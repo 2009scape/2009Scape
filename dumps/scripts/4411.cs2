@@ -1,0 +1,45 @@
+void script_4411(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	if (arg0 == -1) {
+		return;
+	}
+	ivar4 = 0;
+	ivar5 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		ivar4 = cs2method1609();
+		if (((boolean)arg3)) {
+			flow_4:
+				if (((boolean)arg2)) {
+					ivar5 = add(ivar4, 22);
+				} else if (((boolean)arg2)) {
+					ivar5 = subtract(ivar4, 22);
+				} else {
+					setScriptCallOnGameloop(-1, "");
+					return;
+				}
+				ivar5 = max(ivar5, 0);
+				ivar5 = min(ivar5, 255);
+				cs2method2103(ivar5);
+				IF (((boolean)arg2)) 
+					GOTO	flow_10
+				GOTO	flow_11
+			flow_10:
+				IF (ivar5 == 255) 
+					GOTO	flow_13
+			flow_11:
+				IF (((boolean)arg2) && ((boolean)ivar5)) 
+					GOTO	flow_13
+				GOTO	flow_14
+			flow_13:
+				setScriptCallOnGameloop(-1, "");
+				GOTO	flow_15
+			flow_14:
+				setScriptCallOnGameloop(4411, new WidgetPointer(arg0), arg1, arg2, 0, "Iiii");
+			flow_15:
+		} else {
+			setScriptCallOnGameloop(4411, new WidgetPointer(arg0), arg1, arg2, subtract(arg3, 1), "Iiii", new WidgetPointer(arg0));
+		}
+	}
+	return;
+}

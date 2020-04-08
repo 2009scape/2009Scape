@@ -1,0 +1,10 @@
+void script_672() {
+	int ivar0;
+	script_673(0, 0, 2, 0, 0, 1381, 1281, 0, 0, -1);
+	ivar0 = 1;
+	while (ivar0 < 6) {
+		script_673(ivar0, 0, 0, 0, 0, -1, 0, 1, 0, -1);
+		ivar0 = add(ivar0, 1);
+	}
+	return;
+}

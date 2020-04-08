@@ -1,0 +1,50 @@
+void script_2508(int arg0) {
+	switch (arg0) {
+		case 55836719:
+			globalint_840 = 0;
+			break;
+		case 55836713:
+			if (((globalint_840 < subtract(2147483647, 10)) && (globalint_839 >= 10)) && ((boolean)script_2509(10))) {
+				globalint_840 = add(globalint_840, 10);
+				globalint_839 = subtract(globalint_839, 10);
+			}
+			break;
+		case 55836715:
+			if (((globalint_840 < subtract(2147483647, 100)) && (globalint_839 >= 100)) && ((boolean)script_2509(100))) {
+				globalint_840 = add(globalint_840, 100);
+				globalint_839 = subtract(globalint_839, 100);
+			}
+			break;
+		case 55836721:
+			if (((globalint_840 < subtract(2147483647, 500)) && (globalint_839 >= 500)) && ((boolean)script_2509(500))) {
+				globalint_840 = add(globalint_840, 500);
+				globalint_839 = subtract(globalint_839, 500);
+			}
+			break;
+		case 55836723:
+			if (((globalint_840 < subtract(2147483647, 1000)) && (globalint_839 >= 1000)) && ((boolean)script_2509(1000))) {
+				globalint_840 = add(globalint_840, 1000);
+				globalint_839 = subtract(globalint_839, 1000);
+			}
+			break;
+		case 55836725:
+			if (((globalint_840 < subtract(2147483647, 10000)) && (globalint_839 >= 10000)) && ((boolean)script_2509(10000))) {
+				globalint_840 = add(globalint_840, 10000);
+				globalint_839 = subtract(globalint_839, 10000);
+			}
+			break;
+		case 55836717:
+			if (globalint_839 < script_2687()) {
+				globalint_840 = globalint_839;
+				globalint_839 = 0;
+			} else {
+				if (globalint_840 < script_2687()) {
+					globalint_840 = script_2687();
+					globalint_839 = subtract(globalint_839, script_2687());
+				}
+			}
+	}
+	setWidgetText(new WidgetPointer(852,63), script_46(globalint_840, ","));
+	setWidgetText(new WidgetPointer(852,62), script_46(globalint_839, ","));
+	return;
+}

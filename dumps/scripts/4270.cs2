@@ -1,0 +1,31 @@
+void script_4270() {
+	setWidgetIsHidden(false, new WidgetPointer(1083,161));
+	setWidgetIsHidden(true, new WidgetPointer(1083,162));
+	setWidgetIsHidden(false, new WidgetPointer(1083,243));
+	setWidgetIsHidden(true, new WidgetPointer(1083,253));
+	setWidgetText(new WidgetPointer(1083,85), "Spells");
+	setWidgetText(new WidgetPointer(1083,87), "Select a reward for more information.");
+	setWidgetText(new WidgetPointer(1083,89), "");
+	setWidgetIsHidden(true, new WidgetPointer(1083,90));
+	setWidgetIsHidden(true, new WidgetPointer(1083,94));
+	setWidgetIsHidden(true, new WidgetPointer(1083,95));
+	setWidgetIsHidden(true, new WidgetPointer(1083,96));
+	setWidgetIsHidden(true, new WidgetPointer(1083,97));
+	setWidgetIsHidden(true, new WidgetPointer(1083,98));
+	setWidgetIsHidden(true, new WidgetPointer(1083,99));
+	setWidgetIsHidden(true, new WidgetPointer(1083,100));
+	setWidgetIsHidden(true, new WidgetPointer(1083,101));
+	setWidgetIsHidden(true, new WidgetPointer(1083,102));
+	setWidgetIsHidden(true, new WidgetPointer(1083,103));
+	setWidgetIsHidden(true, new WidgetPointer(1083,104));
+	setWidgetIsHidden(true, new WidgetPointer(1083,105));
+	setWidgetIsHidden(true, new WidgetPointer(1083,106));
+	setWidgetIsHidden(true, new WidgetPointer(1083,107));
+	setWidgetIsHidden(true, new WidgetPointer(1083,164));
+	setWidgetIsHidden(true, new WidgetPointer(1083,159));
+	setWidgetIsHidden(false, new WidgetPointer(1083,157));
+	setWidgetIsHidden(false, new WidgetPointer(1083,158));
+	setWidgetIsHidden(false, new WidgetPointer(1083,165));
+	setWidgetIsHidden(false, new WidgetPointer(1083,160));
+	return;
+}

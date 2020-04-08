@@ -1,0 +1,76 @@
+void script_5081(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6) {
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	if (((boolean)globalint_1095) || (globalint_1095 == -1)) {
+		script_5085(arg0);
+		return;
+	}
+	playSoundEffect2False(6185, 1, 0, 200);
+	setWidgetIsHidden(false, new WidgetPointer(1114,28));
+	globalint_160 = arg1;
+	ivar7 = multiply(arg1, 10);
+	if (setWidgetRegister(new WidgetPointer(arg0), ivar7)) {
+		setScriptCallOnGameloop(-1, "");
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), add(ivar7, 3))) {
+		setWidgetSprite(6138);
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), add(ivar7, 5))) {
+		setWidgetSprite(6137);
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), add(ivar7, 7))) {
+		setWidgetSprite(6139);
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), add(ivar7, 4))) {
+		cs2method2103(255);
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), add(ivar7, 6))) {
+		cs2method2103(255);
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), add(ivar7, 8))) {
+		cs2method2103(255);
+	}
+	deleteAllExtraChilds(new WidgetPointer(1114,32));
+	ivar8 = 0;
+	while (ivar8 < arg3) {
+		createExtraChild(new WidgetPointer(1114,32), 3, getExtraChildGap(new WidgetPointer(1114,32)));
+		setWidgetHidden(1);
+		ivar8 = add(ivar8, 1);
+	}
+	ivar9 = script_5089(arg2);
+	ivar10 = 0;
+	ivar8 = 0;
+	while (ivar8 < arg4) {
+		if (ivar9 != ivar8) {
+			createExtraChild(new WidgetPointer(1114,32), 4, getExtraChildGap(new WidgetPointer(1114,32)));
+			setWidgetSize(0, 12, 1, 0);
+			setWidgetPosition(0, ivar10, 0, 0);
+			setWidgetFont(494);
+			setWidgetTextAlignment(1, 1, 0);
+			setWidgetRGB(new Color(37, 30, 20));
+			setWidgetUnknownBoolean(false);
+			setWidgetText(cs2method_3408(105, 115, arg2, ivar8));
+			setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), -2147483643, 16777215, "Iii");
+			setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), -2147483643, 2432532, "Iii");
+			setWidgetContextMenuOption(1, "Select");
+			setScriptCallOnClickContextMenu(5084, new WidgetPointer(arg0), "I");
+			ivar10 = add(ivar10, getWidgetActualHeight());
+		} else {
+			createExtraChild(new WidgetPointer(1114,32), 3, getExtraChildGap(new WidgetPointer(1114,32)));
+			setWidgetHidden(1);
+		}
+		ivar8 = add(ivar8, 1);
+	}
+	setWidgetIntegerNode(1476, arg6, new WidgetPointer(1114,29));
+	setWidgetIntegerNode(1477, ivar10, new WidgetPointer(1114,29));
+	setWidgetScrollMax(0, ivar10, new WidgetPointer(1114,32));
+	script_5082(arg0);
+	if (arg4 > 4) {
+		script_31(73007137, 73007136, 6507, 6504, 6505, 6506, 6499, 6498);
+	} else {
+		deleteAllExtraChilds(new WidgetPointer(1114,33));
+	}
+	return;
+}

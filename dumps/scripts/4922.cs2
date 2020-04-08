@@ -1,0 +1,6 @@
+void script_4922(int arg0) {
+	if (((bitconfig_9570 != arg0) && (bitconfig_9579 != arg0)) && (bitconfig_9588 != arg0)) {
+		script_4942();
+	}
+	return;
+}

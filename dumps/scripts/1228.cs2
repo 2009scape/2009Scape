@@ -1,0 +1,35 @@
+void script_1228(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	ivar4 = getWidgetActualHeight(new WidgetPointer(arg0));
+	ivar5 = subtract(getClientCycle(), arg3);
+	ivar6 = 0;
+	if (ivar5 <= 30) {
+		if (ivar5 == 5) {
+			playSoundEffect(2871, 1, 0);
+		}
+		ivar6 = subtract(multiplyDivide(ivar5, 30, ivar4), ivar4);
+		setWidgetPosition(0, ivar6, 1, 1, new WidgetPointer(arg1));
+		setWidgetPosition(0, ivar6, 1, 1, new WidgetPointer(arg2));
+		return;
+	}
+	if (ivar5 < 170) {
+		return;
+	}
+	if (ivar5 < 200) {
+		if (ivar5 == 170) {
+			playSoundEffect(2871, 1, 0);
+		}
+		ivar6 = subtract(0, multiplyDivide(subtract(ivar5, 170), 30, ivar4));
+		setWidgetPosition(0, ivar6, 1, 1, new WidgetPointer(arg1));
+		setWidgetPosition(0, ivar6, 1, 1, new WidgetPointer(arg2));
+		return;
+	}
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+	setWidgetNoOptions(new WidgetPointer(arg1));
+	setWidgetIsHidden(true, new WidgetPointer(arg1));
+	setWidgetIsHidden(true, new WidgetPointer(arg2));
+	setWidgetIsHidden(true, new WidgetPointer(arg0));
+	return;
+}

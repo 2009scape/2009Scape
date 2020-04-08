@@ -1,0 +1,7 @@
+void script_4225() {
+	setScriptCallOnMouseOver(4226, "", new WidgetPointer(746,190));
+	setScriptCallOnMouseExit(40, new WidgetPointer(746,186), "I", new WidgetPointer(746,190));
+	setScriptCallOnMouseOver(4226, "", new WidgetPointer(548,27));
+	setScriptCallOnMouseExit(40, new WidgetPointer(548,23), "I", new WidgetPointer(548,27));
+	return;
+}

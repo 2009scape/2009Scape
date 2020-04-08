@@ -1,0 +1,6 @@
+void script_2177(int arg0) {
+	if (setWidgetRegister(new WidgetPointer(190,18), arg0)) {
+		setScriptCallOnGameloop(2178, arg0, getWidgetText(), "is");
+	}
+	return;
+}

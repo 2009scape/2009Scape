@@ -1,0 +1,279 @@
+void script_1439(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	string svar0;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	deleteAllExtraChilds(new WidgetPointer(arg1));
+	deleteAllExtraChilds(new WidgetPointer(arg2));
+	globalint_656 = min(globalint_656, subtract(globalint_657, 1));
+	ivar3 = 0;
+	if ((((((((((((((((globalint_658 > 0) || (globalint_659 > 0)) || (globalint_660 > 0)) || (globalint_661 > 0)) || (globalint_662 > 0)) || (globalint_663 > 0)) || (globalint_664 > 0)) || (globalint_665 > 0)) || (globalint_666 > 0)) || (globalint_667 > 0)) || (globalint_668 > 0)) || (globalint_669 > 0)) || (globalint_670 > 0)) || (globalint_658 > 13)) || (globalint_672 > 0)) || (globalint_673 > 0)) {
+		ivar3 = 1;
+	}
+	if (((boolean)ivar3) || (globalint_656 > 0)) {
+		createExtraChild(new WidgetPointer(arg2), 4, getExtraChildGap(new WidgetPointer(arg2)));
+		setWidgetSize(2, 14, 1, 0);
+		setWidgetPosition(0, 0, 1, 2);
+		setWidgetTextAlignment(1, 1, 0);
+		setWidgetFont(494);
+		setWidgetRGB(new Color(255, 152, 31));
+		if (((boolean)ivar3)) {
+			setWidgetText(intToStr(add(globalint_656, 1)) + " / " + intToStr(globalint_657));
+		} else {
+			setWidgetText(intToStr(globalint_656) + " / " + intToStr(subtract(globalint_657, 1)));
+		}
+	}
+	if (globalint_656 > 0) {
+		createExtraChild(new WidgetPointer(arg2), 4, getExtraChildGap(new WidgetPointer(arg2)));
+		setWidgetSize(2, 17, 1, 1);
+		setWidgetPosition(0, 1, 1, 0);
+		setWidgetTextAlignment(0, 0, 0);
+		setWidgetFont(495);
+		setWidgetRGB(new Color(255, 152, 31));
+		switch (globalint_656) {
+			case 1:
+				setWidgetText(globalstring_73);
+				break;
+			case 2:
+				setWidgetText(globalstring_74);
+				break;
+			case 3:
+				setWidgetText(globalstring_75);
+				break;
+			case 4:
+				setWidgetText(globalstring_76);
+				break;
+			case 5:
+				setWidgetText(globalstring_77);
+				break;
+			case 6:
+				setWidgetText(globalstring_78);
+				break;
+			case 7:
+				setWidgetText(globalstring_79);
+				break;
+			case 8:
+				setWidgetText(globalstring_80);
+				break;
+			case 9:
+				setWidgetText(globalstring_81);
+				break;
+			case 10:
+				setWidgetText(globalstring_82);
+				break;
+			case 11:
+				setWidgetText(globalstring_83);
+				break;
+			case 12:
+				setWidgetText(globalstring_84);
+				break;
+			case 13:
+				setWidgetText(globalstring_85);
+				break;
+			case 14:
+				setWidgetText(globalstring_86);
+				break;
+			case 15:
+				setWidgetText(globalstring_87);
+				break;
+			case 16:
+				setWidgetText(globalstring_88);
+				break;
+			case 17:
+				setWidgetText(globalstring_89);
+				break;
+			case 18:
+				setWidgetText(globalstring_90);
+				break;
+			case 19:
+				setWidgetText(globalstring_91);
+				break;
+			case 20:
+				setWidgetText(globalstring_92);
+				break;
+			case 21:
+				setWidgetText(globalstring_93);
+				break;
+			case 22:
+				setWidgetText(globalstring_94);
+				break;
+			case 23:
+				setWidgetText(globalstring_95);
+				break;
+			case 24:
+				setWidgetText(globalstring_96);
+				break;
+			case 25:
+				setWidgetText(globalstring_97);
+				break;
+			case 26:
+				setWidgetText(globalstring_98);
+				break;
+			case 27:
+				setWidgetText(globalstring_99);
+				break;
+			case 28:
+				setWidgetText(globalstring_100);
+				break;
+			case 29:
+				setWidgetText(globalstring_101);
+				break;
+			case 30:
+				setWidgetText(globalstring_102);
+				break;
+			case 31:
+				setWidgetText(globalstring_103);
+				break;
+			case 32:
+				setWidgetText(globalstring_104);
+				break;
+			case 33:
+				setWidgetText(globalstring_105);
+				break;
+			case 34:
+				setWidgetText(globalstring_106);
+				break;
+			case 35:
+				setWidgetText(globalstring_107);
+				break;
+			case 36:
+				setWidgetText(globalstring_108);
+				break;
+			case 37:
+				setWidgetText(globalstring_109);
+				break;
+			case 38:
+				setWidgetText(globalstring_110);
+				break;
+			case 39:
+				setWidgetText(globalstring_111);
+				break;
+			case 40:
+				setWidgetText(globalstring_112);
+				break;
+			case 41:
+				setWidgetText(globalstring_113);
+				break;
+			case 42:
+				setWidgetText(globalstring_114);
+				break;
+			case 43:
+				setWidgetText(globalstring_115);
+				break;
+			case 44:
+				setWidgetText(globalstring_116);
+				break;
+			case 45:
+				setWidgetText(globalstring_117);
+				break;
+			case 46:
+				setWidgetText(globalstring_118);
+				break;
+			case 47:
+				setWidgetText(globalstring_119);
+				break;
+			case 48:
+				setWidgetText(globalstring_120);
+				break;
+			case 49:
+				setWidgetText(globalstring_121);
+		}
+		return;
+	}
+	ivar4 = 0;
+	svar0 = "";
+	ivar5 = 0;
+	while (ivar4 < 16) {
+		switch (ivar4) {
+			case 0:
+				svar0 = globalstring_57;
+				ivar5 = globalint_658;
+				break;
+			case 1:
+				svar0 = globalstring_58;
+				ivar5 = globalint_659;
+				break;
+			case 2:
+				svar0 = globalstring_59;
+				ivar5 = globalint_660;
+				break;
+			case 3:
+				svar0 = globalstring_60;
+				ivar5 = globalint_661;
+				break;
+			case 4:
+				svar0 = globalstring_61;
+				ivar5 = globalint_662;
+				break;
+			case 5:
+				svar0 = globalstring_62;
+				ivar5 = globalint_663;
+				break;
+			case 6:
+				svar0 = globalstring_63;
+				ivar5 = globalint_664;
+				break;
+			case 7:
+				svar0 = globalstring_64;
+				ivar5 = globalint_665;
+				break;
+			case 8:
+				svar0 = globalstring_65;
+				ivar5 = globalint_666;
+				break;
+			case 9:
+				svar0 = globalstring_66;
+				ivar5 = globalint_667;
+				break;
+			case 10:
+				svar0 = globalstring_67;
+				ivar5 = globalint_668;
+				break;
+			case 11:
+				svar0 = globalstring_68;
+				ivar5 = globalint_669;
+				break;
+			case 12:
+				svar0 = globalstring_69;
+				ivar5 = globalint_670;
+				break;
+			case 13:
+				svar0 = globalstring_70;
+				ivar5 = globalint_671;
+				break;
+			case 14:
+				svar0 = globalstring_71;
+				ivar5 = globalint_672;
+				break;
+			case 15:
+				svar0 = globalstring_72;
+				ivar5 = globalint_673;
+				break;
+			default:
+				svar0 = "";
+				ivar5 = 0;
+		}
+		if (strLength(svar0) > 0) {
+			createExtraChild(new WidgetPointer(arg2), 4, getExtraChildGap(new WidgetPointer(arg2)));
+			if (ivar4 == subtract(16, 1)) {
+				setWidgetSize(6, 17, 1, 0);
+			} else {
+				setWidgetSize(2, 12, 1, 0);
+			}
+			setWidgetPosition(0, add(multiply(ivar4, 12), 1), 1, 0);
+			setWidgetTextAlignment(0, 0, 0);
+			setWidgetFont(495);
+			setWidgetRGB(new Color(255, 152, 31));
+			setWidgetText(svar0);
+			if (ivar5 > 0) {
+				setWidgetContextMenuOption(1, "Go");
+				setScriptCallOnClickContextMenu(2065, -2147483644, ivar5, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), "iiIII");
+				setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), -2147483643, 16777215, "Iii");
+				setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), -2147483643, 16750623, "Iii");
+			}
+		}
+		ivar4 = add(ivar4, 1);
+	}
+	return;
+}

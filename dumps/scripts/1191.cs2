@@ -1,0 +1,6 @@
+void script_1191(int arg0,int arg1) {
+	if (getLanguage() != 0) {
+		setWidgetFont(arg1, new WidgetPointer(arg0));
+	}
+	return;
+}

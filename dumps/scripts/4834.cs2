@@ -1,0 +1,11 @@
+void script_4834(int arg0) {
+	int ivar1;
+	ivar1 = subtract(getExtraChildGap(new WidgetPointer(arg0)), 1);
+	while (ivar1 >= 0) {
+		if (setWidgetRegister(new WidgetPointer(arg0), ivar1)) {
+			setWidgetSprite(6009);
+		}
+		ivar1 = subtract(ivar1, 1);
+	}
+	return;
+}

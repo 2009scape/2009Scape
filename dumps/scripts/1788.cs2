@@ -1,0 +1,23 @@
+void script_1788(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,int arg11,int arg12,int arg13,int arg14) {
+	int ivar15;
+	setWidgetSize(arg0, getWidgetActualHeight(new WidgetPointer(arg1)), 0, 0, new WidgetPointer(arg1));
+	setWidgetSize(arg0, getWidgetActualHeight(new WidgetPointer(arg2)), 0, 0, new WidgetPointer(arg2));
+	setWidgetSize(arg0, getWidgetActualHeight(new WidgetPointer(arg3)), 0, 0, new WidgetPointer(arg3));
+	setWidgetSize(arg0, getWidgetActualHeight(new WidgetPointer(arg4)), 0, 0, new WidgetPointer(arg4));
+	setWidgetSize(arg0, getWidgetActualHeight(new WidgetPointer(arg5)), 0, 0, new WidgetPointer(arg5));
+	setWidgetSize(arg0, getWidgetActualHeight(new WidgetPointer(arg6)), 0, 0, new WidgetPointer(arg6));
+	setWidgetSize(arg7, getWidgetActualHeight(new WidgetPointer(arg8)), 0, 0, new WidgetPointer(arg8));
+	setWidgetSize(arg7, getWidgetActualHeight(new WidgetPointer(arg9)), 0, 0, new WidgetPointer(arg9));
+	setWidgetSize(arg7, getWidgetActualHeight(new WidgetPointer(arg10)), 0, 0, new WidgetPointer(arg10));
+	setWidgetSize(arg7, getWidgetActualHeight(new WidgetPointer(arg11)), 0, 0, new WidgetPointer(arg11));
+	setWidgetSize(arg7, getWidgetActualHeight(new WidgetPointer(arg12)), 0, 0, new WidgetPointer(arg12));
+	setWidgetSize(arg7, getWidgetActualHeight(new WidgetPointer(arg13)), 0, 0, new WidgetPointer(arg13));
+	ivar15 = subtract(add(4, arg14), arg7);
+	setWidgetPosition(ivar15, getWidgetActualY(new WidgetPointer(arg8)), 0, 0, new WidgetPointer(arg8));
+	setWidgetPosition(ivar15, getWidgetActualY(new WidgetPointer(arg9)), 0, 0, new WidgetPointer(arg9));
+	setWidgetPosition(ivar15, getWidgetActualY(new WidgetPointer(arg10)), 0, 0, new WidgetPointer(arg10));
+	setWidgetPosition(ivar15, getWidgetActualY(new WidgetPointer(arg11)), 0, 0, new WidgetPointer(arg11));
+	setWidgetPosition(ivar15, getWidgetActualY(new WidgetPointer(arg12)), 0, 0, new WidgetPointer(arg12));
+	setWidgetPosition(ivar15, getWidgetActualY(new WidgetPointer(arg13)), 0, 0, new WidgetPointer(arg13));
+	return;
+}

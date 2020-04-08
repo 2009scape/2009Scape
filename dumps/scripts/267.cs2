@@ -1,0 +1,40 @@
+void script_267(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	if (script_269() >= 5) {
+		return;
+	}
+	globalarray_0 = new int[5];
+	globalarray_0[0] = globalint_1104;
+	globalarray_0[1] = globalint_1105;
+	globalarray_0[2] = globalint_1106;
+	globalarray_0[3] = globalint_1107;
+	globalarray_0[4] = globalint_1108;
+	globalarray_1 = new int[5];
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 3;
+	while (ivar3 > 0) {
+		if (arg0 == ivar3) {
+			globalarray_0[ivar2] = arg0;
+			ivar2 = add(ivar2, 1);
+		}
+		ivar1 = 0;
+		while (ivar1 < 5) {
+			if (globalarray_0[ivar1] == ivar3) {
+				globalarray_0[ivar2] = ivar3;
+				ivar2 = add(ivar2, 1);
+			}
+			ivar1 = add(ivar1, 1);
+		}
+		ivar3 = subtract(ivar3, 1);
+	}
+	globalint_1104 = globalarray_1[0];
+	globalint_1105 = globalarray_1[1];
+	globalint_1106 = globalarray_1[2];
+	globalint_1107 = globalarray_1[3];
+	globalint_1108 = globalarray_1[4];
+	script_261();
+	return;
+}

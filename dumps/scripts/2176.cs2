@@ -1,0 +1,23 @@
+void script_2176(int arg0) {
+	string svar0;
+	svar0 = "";
+	switch (arg0) {
+		case 12451850:
+		case 12451849:
+			if (((boolean)globalint_692)) {
+				svar0 = "Click to hide the quests you cannot start." + "<br>" + "<br>" + "Some recommended stats and abilities (such as combat levels) are left for you to decide.";
+			} else {
+				svar0 = "Click to show all quests regardless of requirements.";
+			}
+			break;
+		case 12451851:
+		case 12451852:
+			if (((boolean)globalint_692)) {
+				svar0 = "Click to hide the quests you have completed.";
+			} else {
+				svar0 = "Click to show all quests regardless of completion status.";
+			}
+	}
+	script_569(12451859, -1, 12451860, 25, 450, svar0);
+	return;
+}

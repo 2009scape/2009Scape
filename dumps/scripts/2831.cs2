@@ -1,0 +1,13 @@
+void script_2831(int arg0,int arg1,int arg2) {
+	if (arg0 != 1) {
+		return;
+	}
+	cs2method403(arg2, arg1);
+	if (((boolean)arg2)) {
+		globalint_1009 = arg1;
+	} else {
+		globalint_1008 = arg1;
+	}
+	script_2790();
+	return;
+}

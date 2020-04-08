@@ -1,0 +1,4 @@
+int script_2154(int arg0) {
+	globalint_699 = cs2method_3408(105, 74, 2252, arg0);
+	return script_2155();
+}

@@ -1,0 +1,6 @@
+void script_830(int arg0,int arg1) {
+	setWidgetAnimation(3320, new WidgetPointer(arg1));
+	setScriptCallOnConfigChange(831, new WidgetPointer(arg0), 425, 1, "IY", new WidgetPointer(arg0));
+	script_834(arg0);
+	return;
+}

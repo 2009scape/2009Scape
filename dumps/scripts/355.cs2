@@ -1,0 +1,103 @@
+void script_355(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int stack_dump0;
+	if (arg0 != 1) {
+		return;
+	}
+	ivar3 = -1;
+	ivar4 = -1;
+	switch (arg2) {
+		case 0:
+		case 7:
+			globalint_1008 = arg1;
+			cs2method403(arg2, arg1);
+			playSoundEffect(9860, 1, 0);
+			break;
+		case 1:
+		case 8:
+			globalint_1009 = arg1;
+			cs2method403(arg2, arg1);
+			playSoundEffect(9860, 1, 0);
+			break;
+		case 2:
+		case 3:
+		case 4:
+		case 9:
+		case 10:
+		case 11:
+			globalint_86 = 0;
+			cs2method411(2, 19713);
+			cs2method411(3, -1);
+			cs2method411(5, -1);
+			playSoundEffect(9819, 1, 0);
+			switch (arg2) {
+				case 9:
+				case 2:
+					stack_dump0 = arg1;
+					ivar4 = 3;
+					globalint_1010 = stack_dump0;
+					break;
+				case 10:
+				case 3:
+					stack_dump0 = arg1;
+					ivar4 = 4;
+					globalint_1011 = stack_dump0;
+					break;
+				case 11:
+				case 4:
+					stack_dump0 = arg1;
+					ivar4 = 5;
+					globalint_1012 = stack_dump0;
+			}
+			ivar3 = script_361(arg1, ivar4);
+			if (ivar3 != -1) {
+				if (IsFemale()) {
+					globalint_1010 = getOtherCommonData(ivar3, 1182);
+					cs2method403(9, globalint_1010);
+					globalint_1011 = getOtherCommonData(ivar3, 1183);
+					cs2method403(10, globalint_1011);
+					globalint_1012 = getOtherCommonData(ivar3, 1184);
+					cs2method403(11, globalint_1012);
+					script_392(-1, 1);
+				} else {
+					globalint_1010 = getOtherCommonData(ivar3, 1182);
+					cs2method403(2, globalint_1010);
+					globalint_1011 = getOtherCommonData(ivar3, 1183);
+					cs2method403(3, globalint_1011);
+					globalint_1012 = getOtherCommonData(ivar3, 1184);
+					cs2method403(4, globalint_1012);
+					script_392(-1, 0);
+				}
+			} else {
+				cs2method403(arg2, arg1);
+			}
+			break;
+		case 5:
+		case 12:
+			globalint_86 = 0;
+			cs2method411(2, 19713);
+			cs2method411(3, -1);
+			cs2method411(5, -1);
+			script_392(-1, script_734(((int)IsFemale())));
+			cs2method403(arg2, arg1);
+			globalint_1013 = arg1;
+			playSoundEffect(9819, 1, 0);
+			break;
+		case 6:
+		case 13:
+			globalint_86 = 0;
+			cs2method411(2, 19713);
+			cs2method411(3, -1);
+			cs2method411(5, -1);
+			script_392(-1, script_734(((int)IsFemale())));
+			cs2method403(arg2, arg1);
+			globalint_1014 = arg1;
+			playSoundEffect(9819, 1, 0);
+			break;
+		default:
+			return;
+	}
+	script_391();
+	return;
+}

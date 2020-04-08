@@ -1,0 +1,9 @@
+void script_1208(int arg0,int arg1,int arg2,int arg3) {
+	if (((boolean)arg3)) {
+		setWidgetScrollMax(0, add(arg2, getWidgetActualHeight(new WidgetPointer(arg1))), new WidgetPointer(arg1));
+	} else {
+		setWidgetScrollMax(0, arg2, new WidgetPointer(arg1));
+	}
+	script_72(arg0, arg1, cs2method2601(new WidgetPointer(arg1)));
+	return;
+}

@@ -1,0 +1,21 @@
+void script_3032(int arg0,int arg1,int arg2) {
+	int ivar3;
+	ivar3 = -1;
+	if (((boolean)arg2)) {
+		ivar3 = 59572267;
+	} else {
+		if (((boolean)arg2)) {
+			ivar3 = 59572309;
+		}
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		setWidgetIsHidden(false, new WidgetPointer(ivar3));
+		setWidgetPosition(getWidgetActualX(new WidgetPointer(ivar3)), getWidgetActualY(), 0, 0, new WidgetPointer(ivar3));
+	}
+	if (((boolean)arg2)) {
+		script_2470(59572256, 59572259);
+	} else {
+		script_2470(59572304, 59572307);
+	}
+	return;
+}

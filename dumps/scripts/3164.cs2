@@ -1,0 +1,14 @@
+void script_3164(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	if (cs2method3751()) {
+		script_3165(arg0, arg1, arg2, arg3, arg4, arg5);
+		if (isWidgetHidden(new WidgetPointer(906,189))) {
+			script_3161(1);
+		} else {
+			script_3161(0);
+		}
+	} else {
+		script_4547(arg0, arg1, arg2, arg3, arg4, arg5);
+		script_3161(0);
+	}
+	return;
+}

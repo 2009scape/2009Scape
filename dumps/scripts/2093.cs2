@@ -1,0 +1,13 @@
+void script_2093() {
+	if (globalint_654 < 100) {
+		globalint_654 = add(globalint_654, 1);
+	}
+	if (globalint_654 == 50) {
+		setWidgetIsHidden(true, new WidgetPointer(834,60));
+	}
+	if (globalint_654 == 100) {
+		setWidgetIsHidden(false, new WidgetPointer(834,60));
+		globalint_654 = 0;
+	}
+	return;
+}

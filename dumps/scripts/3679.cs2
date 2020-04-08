@@ -1,0 +1,6 @@
+void script_3679(int arg0,int arg1) {
+	setWidgetNoOptions(new WidgetPointer(arg0));
+	setWidgetContextMenuOption(5, new WidgetPointer(arg0), "Examine" + "<col=ff9040>");
+	cs2method2305(new WidgetPointer(arg0), "<col=ff981f>" + cs2method_3408(105, 115, 3274, arg1) + " Piece");
+	return;
+}

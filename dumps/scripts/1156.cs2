@@ -1,0 +1,10 @@
+void script_1156() {
+	if (cs2method6117()) {
+		setWidgetSprite(1134, new WidgetPointer(743,51));
+		setWidgetSprite(1135, new WidgetPointer(743,49));
+	} else {
+		setWidgetSprite(1134, new WidgetPointer(743,49));
+		setWidgetSprite(1135, new WidgetPointer(743,51));
+	}
+	return;
+}

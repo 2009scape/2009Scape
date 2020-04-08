@@ -1,0 +1,9 @@
+void script_3180() {
+	script_3181();
+	closeInterface(59375696);
+	setWidgetIsHidden(true, new WidgetPointer(906,45));
+	if (isWidgetHidden(cs2method_3408(105, 73, 941, 5))) {
+		script_3161(1);
+	}
+	return;
+}

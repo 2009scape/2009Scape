@@ -1,0 +1,19 @@
+void script_1755(int arg0,int arg1) {
+	if (globalint_227 > 2) {
+		if (getItemIdInSlot(94, 0) == 8950) {
+			setWidgetModel(15700, new WidgetPointer(arg0));
+		} else {
+			setWidgetModel(15674, new WidgetPointer(arg0));
+		}
+		setWidgetRGB(new Color(51, 255, 0), new WidgetPointer(arg1));
+	} else {
+		if (getItemIdInSlot(94, 0) == 8950) {
+			setWidgetModel(15699, new WidgetPointer(arg0));
+		} else {
+			setWidgetModel(15673, new WidgetPointer(arg0));
+		}
+		setWidgetRGB(new Color(145, 0, 0), new WidgetPointer(arg1));
+	}
+	setWidgetText(new WidgetPointer(arg1), intToStr(globalint_227));
+	return;
+}

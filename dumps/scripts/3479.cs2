@@ -1,0 +1,7 @@
+void script_3479(int arg0,int arg1,int arg2,int arg3) {
+	setWidgetIsHidden(true, new WidgetPointer(arg1));
+	setWidgetIsHidden(true, new WidgetPointer(arg2));
+	playSoundEffect(2871, 1, 0);
+	setScriptCallOnGameloop(3480, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), arg3, getClientCycle(), "III1i", new WidgetPointer(arg0));
+	return;
+}

@@ -213,6 +213,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
             Class3_Sub13_Sub6.aBoolean3078 = true;
             Class3_Sub28_Sub5.aBoolean3593 = false;
             AnimationDefinition.aLong1847 = Class5.method830((byte)-55);
+            Class3_Sub26.aBoolean2558  = true;
          }
       } catch (RuntimeException var4) {
          throw Class44.method1067(var4, "rc.BA(" + var1 + ')');

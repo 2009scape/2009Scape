@@ -1,0 +1,7 @@
+void script_3684() {
+	if (((boolean)bitconfig_4393) || ((boolean)bitconfig_542)) {
+		return;
+	}
+	script_39(12255242, 12255248, 25, 189, "Click here to search for a song");
+	return;
+}

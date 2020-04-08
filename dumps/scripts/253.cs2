@@ -1,0 +1,21 @@
+void script_253() {
+	setScriptCallOnGlobalConfigChange(260, 1104, 1105, 1106, 1107, 1108, 1109, 1110, 7, "Y", new WidgetPointer(923,0));
+	setItemOnWidgetMethod2205(15658, 0, new WidgetPointer(923,80));
+	setItemOnWidgetMethod2205(15661, 0, new WidgetPointer(923,81));
+	setItemOnWidgetMethod2205(15662, 0, new WidgetPointer(923,82));
+	setItemOnWidgetMethod2205(15664, 0, new WidgetPointer(923,83));
+	setItemOnWidgetMethod2205(15665, 0, new WidgetPointer(923,84));
+	setItemOnWidgetMethod2205(15663, 0, new WidgetPointer(923,85));
+	setItemOnWidgetMethod2205(15660, 0, new WidgetPointer(923,86));
+	setItemOnWidgetMethod2205(15659, 0, new WidgetPointer(923,87));
+	setScriptCallOnGlobalConfigChange(256, 1111, 1113, 1112, 1114, 1115, 1116, 1117, 7, "Y", new WidgetPointer(919,0));
+	globalint_1111 = 0;
+	globalint_1112 = 0;
+	globalint_1113 = 0;
+	globalint_1114 = 0;
+	globalint_1115 = 0;
+	globalint_1116 = 0;
+	globalint_1117 = -1;
+	setWidgetScrollMax(getWidgetActualWidth(new WidgetPointer(919,6)), getWidgetActualHeight(new WidgetPointer(919,6)), new WidgetPointer(919,6));
+	return;
+}

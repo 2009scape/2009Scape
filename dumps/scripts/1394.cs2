@@ -1,0 +1,53 @@
+void script_1394() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	string svar0;
+	svar0 = "";
+	ivar0 = 0;
+	ivar1 = 0;
+	if (((boolean)bitconfig_457)) {
+		svar0 = concat(svar0, "Ahrim" + "<br>");
+		ivar0 = add(ivar0, 1);
+		ivar1 = add(ivar1, 1);
+	}
+	if (((boolean)bitconfig_458)) {
+		svar0 = concat(svar0, "Dharok" + "<br>");
+		ivar0 = add(ivar0, 1);
+		ivar1 = add(ivar1, 1);
+	}
+	if (((boolean)bitconfig_459)) {
+		svar0 = concat(svar0, "Guthan" + "<br>");
+		ivar0 = add(ivar0, 1);
+		ivar1 = add(ivar1, 1);
+	}
+	if (((boolean)bitconfig_460)) {
+		svar0 = concat(svar0, "Karil" + "<br>");
+		ivar0 = add(ivar0, 1);
+		ivar1 = add(ivar1, 1);
+	}
+	if (((boolean)bitconfig_461)) {
+		svar0 = concat(svar0, "Torag" + "<br>");
+		ivar0 = add(ivar0, 1);
+		ivar1 = add(ivar1, 1);
+	}
+	if (((boolean)bitconfig_462)) {
+		svar0 = concat(svar0, "Verac" + "<br>");
+		ivar0 = add(ivar0, 1);
+		ivar1 = add(ivar1, 1);
+	}
+	if (((boolean)bitconfig_9873)) {
+		svar0 = concat(svar0, "Akrisae" + "<br>");
+		ivar0 = add(ivar0, 1);
+		ivar1 = add(ivar1, 1);
+	}
+	if (((boolean)stringMethod4107(svar0, ""))) {
+		svar0 = "None";
+		ivar0 = 1;
+	}
+	ivar2 = add(52, multiply(ivar0, 12));
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(24,1)), ivar2, 0, 0, new WidgetPointer(24,1));
+	setWidgetText(new WidgetPointer(24,3), svar0);
+	setWidgetText(new WidgetPointer(24,6), intToStr(max(0, subtract(bitconfig_464, ivar1))));
+	return;
+}

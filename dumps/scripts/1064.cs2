@@ -1,0 +1,29 @@
+void script_1064(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar1 = ((int)cs2method_3408(105, 73, 1550, arg0));
+	ivar2 = getWidgetParentId(new WidgetPointer(ivar1));
+	if (((boolean)getWidgetScrollMaxH(new WidgetPointer(ivar2)))) {
+		setWidgetScrollMax(getWidgetActualWidth(new WidgetPointer(ivar2)), 0, new WidgetPointer(ivar2));
+	}
+	ivar3 = getWidgetActualWidth(new WidgetPointer(ivar1));
+	ivar4 = getWidgetActualX(new WidgetPointer(ivar1));
+	while (arg0 > 0) {
+		arg0 = subtract(arg0, 1);
+		ivar1 = ((int)cs2method_3408(105, 73, 1550, arg0));
+		if (isWidgetHidden(new WidgetPointer(ivar1)) && (add(ivar3, getWidgetActualWidth(new WidgetPointer(ivar1))) <= getWidgetActualWidth(new WidgetPointer(ivar2)))) {
+			ivar3 = add(ivar3, getWidgetActualWidth(new WidgetPointer(ivar1)));
+			ivar4 = getWidgetActualX(new WidgetPointer(ivar1));
+		} else {
+			arg0 = -1;
+		}
+	}
+	if (cs2method2600(new WidgetPointer(ivar2)) == ivar4) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(ivar2));
+	} else {
+		setScriptCallOnGameloop(1065, new WidgetPointer(ivar2), ivar4, "Ii", new WidgetPointer(ivar2));
+	}
+	return;
+}

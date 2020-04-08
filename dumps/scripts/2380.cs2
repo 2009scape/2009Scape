@@ -1,0 +1,9 @@
+void script_2380(int arg0,int arg1) {
+	if (arg0 == -1) {
+		setWidgetIsHidden(true, new WidgetPointer(arg1));
+		return;
+	}
+	setWidgetIsHidden(false, new WidgetPointer(arg1));
+	setWidgetPosition(subtract(add(getWidgetActualX(new WidgetPointer(arg0)), getWidgetActualWidth(new WidgetPointer(arg0))), getWidgetActualWidth(new WidgetPointer(arg1))), subtract(add(getWidgetActualY(new WidgetPointer(arg0)), getWidgetActualHeight(new WidgetPointer(arg0))), getWidgetActualHeight(new WidgetPointer(arg1))), 0, 0, new WidgetPointer(arg1));
+	return;
+}

@@ -1,0 +1,22 @@
+void script_3496(int arg0) {
+	switch (arg0) {
+		case 65208432:
+			setWidgetIsHidden(false, new WidgetPointer(995,125));
+			break;
+		case 65208343:
+			setWidgetIsHidden(false, new WidgetPointer(995,39));
+			break;
+		case 65208415:
+			setWidgetIsHidden(false, new WidgetPointer(995,107));
+			break;
+		case 65208398:
+			setWidgetIsHidden(false, new WidgetPointer(995,90));
+			break;
+		case 65208381:
+			setWidgetIsHidden(false, new WidgetPointer(995,73));
+			break;
+		case 65208364:
+			setWidgetIsHidden(false, new WidgetPointer(995,57));
+	}
+	return;
+}

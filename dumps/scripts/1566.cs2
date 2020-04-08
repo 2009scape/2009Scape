@@ -1,0 +1,14 @@
+int script_1566(int arg0,int arg1) {
+	if ((arg0 == 7) && ((boolean)arg1)) {
+		return 1;
+	}
+	if (arg0 == 4) {
+		switch (arg1) {
+			case 0:
+			case 1:
+			case 2:
+				return 1;
+		}
+	}
+	return 0;
+}

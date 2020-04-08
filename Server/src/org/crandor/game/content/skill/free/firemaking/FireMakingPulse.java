@@ -130,7 +130,7 @@ public final class FireMakingPulse extends SkillPulse<Item> {
 		if (!groundItem.isActive()) {
 			return;
 		}
-		if (fire == Log.YEW && !player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(2, 2) && player.getLocation().withinDistance(new Location(3256, 3487, 2))) {
+		if (fire == Log.YEW && !player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(2, 2) && player.getLocation().withinDistance(new Location(3256, 3487, 3))) {
 			player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 2, 2, true);
 		}
 		// GameObject originalOnSpot =
@@ -139,11 +139,11 @@ public final class FireMakingPulse extends SkillPulse<Item> {
 		ObjectBuilder.add(object, fire.getLife(), getAsh(player, fire, object));
 		GroundItemManager.destroy(groundItem);
 		player.moveStep();
-		player.getSkills().addExperience(Skills.FIREMAKING, fire.getXp(), true);
 		player.faceLocation(FaceLocationFlag.getFaceLocation(player, object));
 		if (TutorialSession.getExtension(player).getStage() == 9) {
 			TutorialStage.load(player, 10, false);
 		}
+		player.getSkills().addExperience(Skills.FIREMAKING,fire.getXp());
 		setLastFire();
 	}
 

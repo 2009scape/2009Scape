@@ -1,0 +1,11 @@
+void script_597() {
+	string svar0;
+	svar0 = "null";
+	if (globalint_84 < 2147483647) {
+		globalint_84 = add(globalint_84, 1);
+		svar0 = formatNumber(globalint_84, 1);
+		setWidgetText(new WidgetPointer(105,148), svar0);
+		script_602();
+	}
+	return;
+}

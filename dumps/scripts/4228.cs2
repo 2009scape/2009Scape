@@ -1,0 +1,6 @@
+void script_4228(int arg0,int arg1,int arg2,string arg3) {
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		script_4229(arg2, arg3);
+	}
+	return;
+}

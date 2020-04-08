@@ -1,0 +1,40 @@
+void script_1068(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar2 = add(arg1, 1);
+	ivar3 = ((int)cs2method_3408(105, 73, 1550, ivar2));
+	ivar4 = ((int)cs2method_3408(105, 73, 1551, ivar2));
+	while (ivar3 != -1) {
+		deleteAllExtraChilds(new WidgetPointer(ivar3));
+		deleteAllExtraChilds(new WidgetPointer(ivar4));
+		setWidgetIsHidden(true, new WidgetPointer(ivar3));
+		setScriptCallOnKeyPress(-1, "", new WidgetPointer(ivar3));
+		ivar3 = ((int)cs2method_3408(105, 73, 1550, ivar2));
+		ivar4 = ((int)cs2method_3408(105, 73, 1551, ivar2));
+		ivar2 = add(ivar2, 1);
+	}
+	ivar2 = add(arg1, 1);
+	while (setWidgetRegister(new WidgetPointer(arg0), ivar2)) {
+		deleteExtraChild();
+		if (setWidgetRegister(new WidgetPointer(137,2), ivar2)) {
+			deleteExtraChild();
+		}
+		ivar2 = add(ivar2, 1);
+	}
+	ivar2 = 0;
+	ivar3 = ((int)cs2method_3408(105, 73, 1550, arg1));
+	ivar4 = ((int)cs2method_3408(105, 73, 1551, arg1));
+	while (setWidgetRegister(new WidgetPointer(ivar3), ivar2)) {
+		setScriptCallOnMouseEntered(1082, arg1, new WidgetPointer(ivar4), ivar2, "iIi");
+		setScriptCallOnMouseExit(1083, arg1, new WidgetPointer(ivar4), ivar2, "iIi");
+		if (setWidgetRegister(new WidgetPointer(ivar4), ivar2)) {
+			setWidgetHidden(1);
+		}
+		ivar2 = add(ivar2, 1);
+	}
+	globalint_128 = -1;
+	script_1064(arg1);
+	script_1066(arg0, arg1);
+	return;
+}

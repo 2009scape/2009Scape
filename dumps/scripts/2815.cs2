@@ -1,0 +1,19 @@
+void script_2815() {
+	cs2method5405(0, 4);
+	cs2method5405(1, 4);
+	cs2method5406(0, 0, script_2808(globalint_1065, 73750262, 74110714), 378, script_2808(globalint_1065, 73750262, 74077947), 378, 0);
+	cs2method5406(1, 0, script_2808(globalint_1065, 73750262, 74045178), 210, script_2808(globalint_1065, 73750262, 74028794), 210, 0);
+	cs2method5406(0, 1, script_2808(globalint_1065, 73750262, 74077946), 378, script_2808(globalint_1065, 73750262, 74061562), 378, 0);
+	cs2method5406(1, 1, script_2808(globalint_1065, 73750262, 74012410), 335, script_2808(globalint_1065, 73750262, 73996026), 325, 0);
+	cs2method5406(0, 2, script_2808(globalint_1065, 73750262, 74045176), 378, script_2808(globalint_1065, 73750262, 74045175), 378, 0);
+	cs2method5406(1, 2, script_2808(globalint_1065, 73750262, 73979640), 346, script_2808(globalint_1065, 73750262, 73979639), 346, 0);
+	cs2method5406(0, 3, script_2808(globalint_1065, 73750262, 73996016), 670, script_2808(globalint_1065, 73750262, 73963244), 785, 0);
+	cs2method5406(1, 3, script_2808(globalint_1065, 73750262, 73996022), 210, script_2808(globalint_1065, 73750262, 73996021), 210, 0);
+	globalint_1065 = -1;
+	globalint_1064 = 0;
+	globalint_1067 = 877;
+	script_2825(1);
+	script_2810(5832706);
+	setScriptCallOnMinimapRelatedSetting3(2824, 1, "i", new WidgetPointer(89,0));
+	return;
+}

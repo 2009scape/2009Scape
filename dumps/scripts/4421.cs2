@@ -1,0 +1,36 @@
+void script_4421(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,long arg10) {
+	int ivar10;
+	string svar0;
+	ivar10 = cs2method_3408(105, 103, 3689, arg6);
+	svar0 = "";
+	if (((arg2 >= getCurrentDaysSinceLaunch()) && (arg5 > 0)) && ((arg4 > 0) && (arg6 > 0))) {
+		svar0 = timeToStr(arg2) + "<br>" + cs2method_3408(105, 115, 3695, arg3);
+		if (((boolean)clanbitconfig_5)) {
+			svar0 = svar0 + " Game time:";
+		} else {
+			svar0 = svar0 + " Clan time:";
+		}
+		if (arg5 > 0) {
+			svar0 = svar0 + "<br>" + "World " + intToStr(arg5);
+		}
+		svar0 = svar0 + "<br>" + cs2method_3408(105, 115, 3696, arg4);
+		setWidgetText(new WidgetPointer(arg0), svar0);
+		svar0 = cs2method_3408(105, 115, 3687, arg6);
+		if ((ivar10 != -1) && (arg7 > 0)) {
+			svar0 = svar0 + "<br>" + cs2method_3408(105, 115, ivar10, arg7);
+		}
+		svar0 = svar0 + "<br>" + "Open to: " + cs2method_3408(105, 115, 3716, arg8);
+		if (((boolean)arg9)) {
+			svar0 = svar0 + "<br>" + "Attendance is mandatory.";
+		}
+		setWidgetText(new WidgetPointer(arg1), svar0);
+		if (arg10 != -1L) {
+			setWidgetIsHidden(false, new WidgetPointer(1107,146));
+			setScriptCallOnClickContextMenu(4330, arg10, "\u00a7", new WidgetPointer(1107,146));
+		} else {
+			setScriptCallOnMousePressed(-1, "", new WidgetPointer(1107,146));
+			setWidgetIsHidden(true, new WidgetPointer(1107,52));
+		}
+	}
+	return;
+}

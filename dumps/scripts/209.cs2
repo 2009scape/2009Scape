@@ -1,0 +1,22 @@
+void script_209() {
+	if (bitconfig_6101 < 8) {
+		setWidgetSprite(1785, new WidgetPointer(591,10));
+	} else if (bitconfig_6101 < 15) {
+		setWidgetSprite(1786, new WidgetPointer(591,10));
+	} else if (bitconfig_6101 < 23) {
+		setWidgetSprite(1787, new WidgetPointer(591,10));
+	} else if (bitconfig_6101 < 30) {
+		setWidgetSprite(1788, new WidgetPointer(591,10));
+	} else if (bitconfig_6101 < 38) {
+		setWidgetSprite(1789, new WidgetPointer(591,10));
+	} else if (bitconfig_6101 < 45) {
+		setWidgetSprite(1790, new WidgetPointer(591,10));
+	} else if (bitconfig_6101 < 53) {
+		setWidgetSprite(1791, new WidgetPointer(591,10));
+	} else if (bitconfig_6101 < 60) {
+		setWidgetSprite(1792, new WidgetPointer(591,10));
+	} else {
+		setWidgetSprite(1793, new WidgetPointer(591,10));
+	}
+	return;
+}

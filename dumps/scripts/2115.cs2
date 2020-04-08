@@ -1,0 +1,23 @@
+void script_2115(int arg0,int arg1) {
+	int ivar2;
+	if (((boolean)script_42(globalint_679))) {
+		return;
+	}
+	setWidgetIsHidden(false, new WidgetPointer(arg1));
+	if ((globalint_677 == -1) || (globalint_678 == -1)) {
+		return;
+	}
+	if ((globalint_675 == -1) || (globalint_676 == -1)) {
+		globalint_675 = 56070889;
+		globalint_676 = 56087272;
+	}
+	ivar2 = add(rnd(50), 50);
+	cs2method5405(0, 2);
+	cs2method5406(0, 0, globalint_675, 450, globalint_675, add(450, divide(ivar2, 2)), 0);
+	cs2method5406(0, 1, globalint_676, add(450, ivar2), globalint_676, add(450, multiply(ivar2, 2)), 0);
+	cs2method5405(1, 2);
+	cs2method5406(1, 0, globalint_677, 250, globalint_677, 250, 0);
+	cs2method5406(1, 1, globalint_678, 150, globalint_678, 150, 0);
+	cameraMethod5502(0, 0, 200, 200, 1, 0);
+	return;
+}

@@ -30,7 +30,7 @@ public class SlotSwitchPacket implements IncomingPacket {
 				if (withInterfaceId == 762) {
 					if (withChildId == 73) {
 						container = player.getBank();
-						switchItem(slot, secondSlot, container, player.getBank().isInsertItems());
+						switchItem(slot, secondSlot, container, player.getBank().isInsertItems(), player);
 						player.debug("Switching item [" + slot + ", " + interfaceId + ", " + childId + "] with [" + secondSlot + ", " + withInterfaceId + ", " + withChildId + "]!");
 					}
 					else {
@@ -54,7 +54,7 @@ public class SlotSwitchPacket implements IncomingPacket {
 				break;
 			default:
 				player.debug("Switching item slot [from=" + slot + ", to=" + secondSlot + ", child=" + childId + ", to child=" + withChildId + "].");
-				switchItem(slot, secondSlot, container, false);
+				switchItem(slot, secondSlot, container, false, player);
 				break;
 			}
 			return;
@@ -65,7 +65,7 @@ public class SlotSwitchPacket implements IncomingPacket {
 		boolean insert = buffer.get() == 1;
 		int interfaceId = interfaceHash >> 16;
 		Container container = interfaceId == 762 ? player.getBank() : (interfaceId == 15 || interfaceId == 149 || interfaceId == 763) ? player.getInventory() : null;
-		switchItem(slot, secondSlot, container, insert);
+		switchItem(slot, secondSlot, container, insert, player);
 	}
 	
 	/**
@@ -75,12 +75,19 @@ public class SlotSwitchPacket implements IncomingPacket {
 	 * @param container The container.
 	 * @param insert If inserting should happen.
 	 */
-	public void switchItem(int slot, int secondSlot, Container container, boolean insert) {
+	public void switchItem(int slot, int secondSlot, Container container, boolean insert, Player player) {
 		if (container == null || slot < 0 || slot >= container.toArray().length || secondSlot < 0 || secondSlot >= container.toArray().length) {
 			return;
 		}
+		
 		final Item item = container.get(slot);
 		final Item second = container.get(secondSlot);
+		if (player.getInterfaceManager().hasChatbox()) {
+			player.getInterfaceManager().closeChatbox();
+			switchItem(secondSlot,slot,container,insert,player);
+			container.refresh();
+			return;
+		}
 		if (item == null) {
 			return;
 		}

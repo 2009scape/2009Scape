@@ -1,0 +1,51 @@
+void script_3987(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	if (arg0 == 63) {
+		arg0 = bitconfig_8575;
+	} else {
+		if (arg0 == 999) {
+			arg0 = bitconfig_8582;
+		}
+	}
+	if (arg1 == 999) {
+		arg1 = bitconfig_8579;
+	}
+	if (arg2 == 999) {
+		arg2 = bitconfig_8580;
+	}
+	script_4017(arg0);
+	setWidgetSprite(cs2method_3408(105, 100, 3491, arg0), new WidgetPointer(917,120));
+	setWidgetText(new WidgetPointer(917,121), cs2method_3408(105, 115, 3487, arg0));
+	setWidgetIsHidden(false, new WidgetPointer(917,121));
+	if (setWidgetRegister(new WidgetPointer(917,105))) {
+		cs2method1309(1, 172);
+	}
+	if (setWidgetRegister(new WidgetPointer(917,117))) {
+		cs2method1309(1, 56);
+	}
+	if (setWidgetRegister(new WidgetPointer(917,121))) {
+		cs2method1309(1, 56);
+	}
+	globalint_1422 = -1;
+	ivar3 = cs2method_3408(105, 105, 3482, arg0);
+	deleteAllExtraChilds(new WidgetPointer(917,98));
+	setWidgetIsHidden(true, new WidgetPointer(917,119));
+	setWidgetIsHidden(true, new WidgetPointer(917,115));
+	ivar4 = 0;
+	setWidgetIsHidden(false, new WidgetPointer(917,91));
+	if (((boolean)bitconfig_9030)) {
+		ivar4 = script_4243();
+		setWidgetIsHidden(true, new WidgetPointer(917,91));
+	} else if (ivar3 == 4091) {
+		ivar4 = script_3988(arg0);
+	} else {
+		ivar4 = script_3989(ivar3, arg1, arg2);
+	}
+	ivar5 = add(ivar4, getWidgetActualHeight(new WidgetPointer(917,99)));
+	ivar5 = max(ivar5, getWidgetActualHeight(new WidgetPointer(917,98)));
+	setWidgetScrollMax(0, ivar5, new WidgetPointer(917,98));
+	script_31(60096612, 60096610, 4343, 4340, 4341, 4342, 4337, 4336);
+	return;
+}

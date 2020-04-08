@@ -1,0 +1,124 @@
+void script_5359(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	string svar4;
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 0;
+	ivar8 = 4;
+	ivar9 = getOtherCommonData(arg2, 1935);
+	ivar10 = 0;
+	ivar11 = 0;
+	ivar12 = 0;
+	svar0 = "";
+	svar1 = "";
+	svar2 = "";
+	svar3 = "";
+	svar4 = "";
+	ivar13 = 0;
+	ivar14 = 0;
+	if ((((boolean)arg3) && (getOtherCommonData(arg2, 1937) != 2)) && setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		ivar4 = getWidgetActualX();
+		ivar5 = getWidgetActualY();
+		ivar6 = getWidgetActualWidth();
+		ivar4 = add(ivar4, ivar6);
+		ivar5 = add(ivar5, ivar8);
+		setWidgetPosition(ivar4, ivar5, 0, 0, new WidgetPointer(1143,62));
+		setWidgetText(new WidgetPointer(1143,130), getOtherCommonData(arg2, 1931));
+		if (((boolean)getOtherCommonData(arg2, 1937))) {
+			ivar10 = divide(getItemHashmapData(ivar9, 1430), 100);
+			svar0 = "Duration: " + intToStr(ivar10) + " mins.";
+			ivar11 = divide(getItemHashmapData(ivar9, 1429), 100);
+			svar1 = "Recharge: " + intToStr(ivar11) + " mins.";
+			if (ivar10 > 60) {
+				ivar12 = mod(ivar10, 60);
+				ivar10 = divide(ivar10, 60);
+				if (ivar12 > 0) {
+					if (ivar10 > 1) {
+						svar0 = "Duration: " + intToStr(ivar10) + " hours, " + intToStr(ivar12) + " mins.";
+					} else {
+						svar0 = "Duration: 1 hour, " + intToStr(ivar12) + " mins.";
+					}
+				} else if (ivar10 > 1) {
+					svar0 = "Duration: " + intToStr(ivar10) + " hours.";
+				} else {
+					svar0 = "Duration: 1 hour.";
+				}
+			}
+			if (ivar11 > 60) {
+				ivar12 = mod(ivar11, 60);
+				ivar11 = divide(ivar11, 60);
+				if (ivar12 > 0) {
+					if (ivar11 > 1) {
+						svar1 = "Recharge: " + intToStr(ivar11) + " hours, " + intToStr(ivar12) + " mins.";
+					} else {
+						svar1 = "Recharge: 1 hour, " + intToStr(ivar12) + " mins.";
+					}
+				} else if (ivar11 > 1) {
+					svar1 = "Recharge: " + intToStr(ivar11) + " hours.";
+				} else {
+					svar1 = "Recharge: 1 hour.";
+				}
+			}
+			svar2 = "<br>" + "<br>" + svar0 + "<br>" + svar1;
+			setWidgetText(new WidgetPointer(1143,130), concat(getWidgetText(new WidgetPointer(1143,130)), svar2));
+		} else {
+			if (getOtherCommonData(arg2, 1937) == 4) {
+				while ((ivar13 < getCommonDefinitionSize(5184)) && ((boolean)ivar14)) {
+					if (cs2method_3408(105, 74, 5184, ivar13) == arg2) {
+						svar4 = cs2method_3408(105, 115, 5187, ivar13);
+						svar3 = cs2method_3408(105, 115, 5186, ivar13);
+						ivar14 = 1;
+					}
+					ivar13 = add(ivar13, 1);
+				}
+				svar3 = concat("Male Title: ", svar3);
+				svar4 = concat("Female Title: ", svar4);
+				setWidgetText(new WidgetPointer(1143,130), svar3 + "<br>" + svar4);
+			}
+		}
+		ivar7 = getLineCount(getWidgetActualWidth(new WidgetPointer(1143,130)), getWidgetFont(new WidgetPointer(1143,130)), getWidgetText(new WidgetPointer(1143,130)));
+		ivar7 = add(multiply(ivar7, 13), multiply(ivar8, 2));
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(1143,62)), ivar7, 0, 0, new WidgetPointer(1143,62));
+		setWidgetIsHidden(false, new WidgetPointer(1143,62));
+		if (add(getWidgetActualWidth(new WidgetPointer(1143,62)), getWidgetActualX(new WidgetPointer(1143,62))) > getWidgetActualWidth(new WidgetPointer(1143,126))) {
+			ivar4 = add(subtract(getWidgetActualX(), getWidgetActualWidth(new WidgetPointer(1143,62))), 2);
+			setWidgetPosition(ivar4, ivar5, 0, 0, new WidgetPointer(1143,62));
+			setWidgetPosition(12, getWidgetActualY(new WidgetPointer(1143,12)), 2, 0, new WidgetPointer(1143,12));
+			setWidgetPosition(10, getWidgetActualY(new WidgetPointer(1143,127)), 2, 0, new WidgetPointer(1143,127));
+			setWidgetPosition(11, getWidgetActualY(new WidgetPointer(1143,128)), 2, 0, new WidgetPointer(1143,128));
+			setWidgetPosition(14, getWidgetActualY(new WidgetPointer(1143,130)), 2, 0, new WidgetPointer(1143,130));
+			setWidgetPosition(0, 10, 2, 0, new WidgetPointer(1143,129));
+			setWidgetHFlip(1, new WidgetPointer(1143,129));
+		} else {
+			setWidgetPosition(12, getWidgetActualY(new WidgetPointer(1143,12)), 0, 0, new WidgetPointer(1143,12));
+			setWidgetPosition(10, getWidgetActualY(new WidgetPointer(1143,127)), 0, 0, new WidgetPointer(1143,127));
+			setWidgetPosition(11, getWidgetActualY(new WidgetPointer(1143,128)), 0, 0, new WidgetPointer(1143,128));
+			setWidgetPosition(14, getWidgetActualY(new WidgetPointer(1143,130)), 0, 0, new WidgetPointer(1143,130));
+			setWidgetPosition(0, 10, 0, 0, new WidgetPointer(1143,129));
+			setWidgetHFlip(0, new WidgetPointer(1143,129));
+		}
+		if (getWidgetActualHeight(new WidgetPointer(1143,62)) < add(getWidgetActualHeight(new WidgetPointer(1143,129)), 40)) {
+			setWidgetPosition(getWidgetActualX(new WidgetPointer(1143,129)), 0, 0, 1, new WidgetPointer(1143,129));
+		} else {
+			setWidgetPosition(getWidgetActualX(new WidgetPointer(1143,129)), 10, 0, 0, new WidgetPointer(1143,129));
+		}
+		return;
+	}
+	setWidgetIsHidden(true, new WidgetPointer(1143,62));
+	return;
+}

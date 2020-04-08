@@ -1,6 +1,7 @@
 package plugin.quest.witchs_house;
 
 import org.crandor.game.content.dialogue.DialoguePlugin;
+import org.crandor.game.content.dialogue.FacialExpression;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.link.quest.Quest;
@@ -15,6 +16,8 @@ import org.crandor.plugin.InitializablePlugin;
  */
 @InitializablePlugin
 public class BoyDialoguePlugin extends DialoguePlugin {
+
+    private static final Item BALL = new Item(2407);
 
     public BoyDialoguePlugin() {
     }
@@ -31,11 +34,22 @@ public class BoyDialoguePlugin extends DialoguePlugin {
     @Override
     public boolean open(Object... args) {
         final Quest quest = player.getQuestRepository().getQuest("Witch's House");
-        if (!quest.isStarted(player)) {
+        player.debug(quest.isStarted(player) + " " + quest.getStage(player) );
+        if (!quest.isStarted(player) && quest.getStage(player) < 10) {
             player("Hello young man.");
             setStage(1);
+            return true;
         }
-        npc("Have you gotten my ball back yet?");
+        if (quest.isCompleted(player) || quest.getStage(player) == 100) {
+            sendDialogue("The boy is too busy playing with his ball to talk.");
+            finish();
+            return true;
+        }
+        if (!player.getInventory().containsItem(BALL)) {
+            npc( FacialExpression.OSRS_NORMAL, "Have you gotten my ball back yet?");
+        } else {
+            player("Hi, I have got your ball back. It was MUCH harder", "than I thought it would be.");
+        }
         setStage(11);
         return true;
     }
@@ -72,7 +86,7 @@ public class BoyDialoguePlugin extends DialoguePlugin {
                 finish();
                 break;
             case 5:
-                npc("I've kicked my ball over that hedge, into that garden!", "The old lady who lives there is scary... She's locked the","ball in her wooden shed! Can you get my ball back for", "me please?");
+                npc(FacialExpression.OSRS_NORMAL, "I've kicked my ball over that hedge, into that garden!", "The old lady who lives there is scary... She's locked the","ball in her wooden shed! Can you get my ball back for", "me please?");
                 next();
                 break;
             case 6:
@@ -92,7 +106,7 @@ public class BoyDialoguePlugin extends DialoguePlugin {
                 }
                 break;
             case 8:
-                npc("You're a meany.");
+                npc(FacialExpression.OSRS_NORMAL, "You're a meany.");
                 next();
                 break;
             case 9:
@@ -100,21 +114,31 @@ public class BoyDialoguePlugin extends DialoguePlugin {
                 finish();
                 break;
             case 10:
-                npc("Thanks mister!");
+                npc(FacialExpression.OSRS_NORMAL, "Thanks mister!");
                 finish();
                 quest.start(player);
                 break;
             case 11:
-                if (!player.getInventory().containsItem(new Item(2407))) {
+                if (!player.getInventory().containsItem(BALL)) {
                     player("Not yet.");
                     next();
                 } else {
-                    player("Yes I have it here.");
-                    finish();//TODO
+                    if (player.getInventory().remove(BALL))
+                        sendDialogue("You give the ball back.");
+                    setStage(13);
                 }
                 break;
             case 12:
-                npc("Well it's in the shed in that garden.");
+                npc(FacialExpression.OSRS_NORMAL, "Well it's in the shed in that garden.");
+                finish();
+                break;
+            case 13:
+                npc(FacialExpression.OSRS_NORMAL, "Thank you so much!");
+                next();
+                break;
+            case 14:
+                quest.setStage(player, 100);
+                quest.finish(player);
                 finish();
                 break;
         }
@@ -123,6 +147,6 @@ public class BoyDialoguePlugin extends DialoguePlugin {
 
     @Override
     public int[] getIds() {
-        return new int[] {895};
+        return new int[] { 895 };
     }
 }

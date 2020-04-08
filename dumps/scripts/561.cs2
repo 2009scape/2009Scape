@@ -1,0 +1,13 @@
+void script_561() {
+	if (((boolean)bitconfig_4157)) {
+		setWidgetSprite(1135, new WidgetPointer(640,22));
+	} else {
+		setWidgetSprite(1134, new WidgetPointer(640,22));
+	}
+	if (bitconfig_4157 == 2) {
+		setWidgetSprite(1135, new WidgetPointer(640,21));
+	} else {
+		setWidgetSprite(1134, new WidgetPointer(640,21));
+	}
+	return;
+}

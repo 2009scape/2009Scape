@@ -1,0 +1,44 @@
+void script_2484() {
+	int ivar0;
+	ivar0 = 1;
+	globalint_838 = bitconfig_6347;
+	while ((ivar0 <= 4) && (((int)cs2method_3408(105, 73, 2383, ivar0)) != 42926100)) {
+		if (ivar0 <= globalint_838) {
+			setWidgetRGB(new Color(225, 152, 31), cs2method_3408(105, 73, 2384, ivar0));
+			setWidgetContextMenuOption(1, cs2method_3408(105, 73, 2383, ivar0), "Select");
+			switch (ivar0) {
+				case 1:
+					setWidgetText(cs2method_3408(105, 73, 2384, ivar0), "Conflict");
+					break;
+				case 2:
+					setWidgetText(cs2method_3408(105, 73, 2384, ivar0), "Siege");
+					break;
+				case 3:
+					setWidgetText(cs2method_3408(105, 73, 2384, ivar0), "Hoard");
+					break;
+				case 4:
+					setWidgetText(cs2method_3408(105, 73, 2384, ivar0), "Rescue");
+			}
+		} else {
+			setWidgetRGB(new Color(153, 102, 0), cs2method_3408(105, 73, 2384, ivar0));
+			setWidgetContextMenuOption(1, cs2method_3408(105, 73, 2383, ivar0), "Select");
+			switch (ivar0) {
+				case 2:
+					setWidgetText(cs2method_3408(105, 73, 2384, ivar0), "Siege" + "<br>" + "- Locked");
+					break;
+				case 3:
+					setWidgetText(cs2method_3408(105, 73, 2384, ivar0), "Hoard" + "<br>" + "- Locked");
+					break;
+				case 4:
+					setWidgetText(cs2method_3408(105, 73, 2384, ivar0), "Rescue" + "<br>" + "- Locked");
+			}
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	setWidgetRGB(new Color(153, 102, 0), new WidgetPointer(655,42));
+	setWidgetRGB(new Color(153, 102, 0), new WidgetPointer(655,31));
+	setWidgetRGB(new Color(153, 102, 0), new WidgetPointer(655,38));
+	setWidgetRGB(new Color(153, 102, 0), new WidgetPointer(655,26));
+	script_2486();
+	return;
+}

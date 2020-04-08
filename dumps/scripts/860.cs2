@@ -1,0 +1,4 @@
+void script_860() {
+	playSoundEffect(4502, 1, 0);
+	return;
+}

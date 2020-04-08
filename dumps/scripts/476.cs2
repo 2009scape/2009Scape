@@ -1,0 +1,5 @@
+void script_476() {
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(1011,386)), add(multiply(getLineCount(subtract(getWidgetActualWidth(new WidgetPointer(1011,386)), 10), 494, getWidgetText(new WidgetPointer(1011,387))), 10), 10), 0, 0, new WidgetPointer(1011,386));
+	setWidgetIsHidden(true, new WidgetPointer(1011,386));
+	return;
+}

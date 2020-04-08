@@ -1,0 +1,7 @@
+void script_1716() {
+	if (globalint_1063 != bitconfig_6840) {
+		globalint_1063 = bitconfig_6840;
+		script_1717();
+	}
+	return;
+}

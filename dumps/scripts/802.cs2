@@ -1,0 +1,154 @@
+cs2func_script_802_struct(1,1,0) script_802(int arg0,int arg1,int arg2,int arg3,string arg4) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	string svar1;
+	string svar2;
+	ivar4 = strLength(arg4);
+	if (arg0 <= -1) {
+		arg0 = ivar4;
+	} else {
+		arg0 = min(arg0, ivar4);
+	}
+	svar1 = "";
+	if (arg0 > 0) {
+		svar1 = substr(0, arg0, arg4);
+	}
+	svar2 = "";
+	if (arg0 < ivar4) {
+		svar2 = substr(arg0, ivar4, arg4);
+	}
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 0;
+	if (arg2 == 85) {
+		ivar5 = strLength(svar1);
+		if (ivar5 > 1) {
+			svar1 = substr(0, subtract(ivar5, 1), svar1);
+		} else {
+			svar1 = "";
+			ivar7 = 1;
+		}
+		arg4 = concat(svar1, svar2);
+		arg0 = max(subtract(arg0, 1), 0);
+	} else if (arg2 == 101) {
+		ivar5 = strLength(svar2);
+		if (ivar5 > 1) {
+			svar2 = substr(1, ivar5, svar2);
+		} else {
+			svar2 = "";
+			ivar7 = 1;
+		}
+		arg4 = concat(svar1, svar2);
+	} else {
+		if (isValidChar(((char)arg3))) {
+			switch (arg1) {
+				flow_19:
+					case 0:
+					if (((boolean)globalint_1650)) {
+						ivar6 = 255;
+					} else {
+						ivar6 = 80;
+					}
+					if (ivar4 < ivar6) {
+						arg4 = concat(concatChar(((char)arg3), svar1), svar2);
+						arg0 = add(arg0, 1);
+					} else {
+						ivar7 = 1;
+					}
+					break;
+					case 1:
+					if (isDigit(((char)arg3)) && (ivar4 < 10)) {
+						arg4 = concat(concatChar(((char)arg3), svar1), svar2);
+						arg0 = add(arg0, 1);
+					} else {
+						ivar7 = 1;
+					}
+					break;
+					case 2:
+					if (ivar4 < 12) {
+						arg4 = concat(concatChar(((char)arg3), svar1), svar2);
+						arg0 = add(arg0, 1);
+					} else {
+						ivar7 = 1;
+					}
+					break;
+					case 3:
+					if (ivar4 < 320) {
+						arg4 = concat(concatChar(((char)arg3), svar1), svar2);
+						arg0 = add(arg0, 1);
+					} else {
+						ivar7 = 1;
+					}
+					break;
+					case 4:
+					IF (isAlphaNumeric(((char)arg3))) 
+						GOTO	flow_40
+					IF ((strIndexof(((char)arg3), 0, " '&,.!-\u00e0\u00c0\u00e1\u00c1\u00e2\u00c2\u00e3\u00c3\u00e4\u00c4\u00e5\u00c5\u00e7\u00c7\u00e8\u00c8\u00e9\u00c9\u00ea\u00ca\u00eb\u00cb\u00ec\u00cc\u00ed\u00cd\u00ee\u00ce\u00ef\u00cf\u00f1\u00d1\u00f2\u00d2\u00f3\u00d3\u00f4\u00d4\u00f5\u00d5\u00f6\u00d6\u00f9\u00d9\u00fa\u00da\u00fb\u00db\u00fc\u00dc\u00fd\u00dd\u00ff") != -1) && (ivar4 < 50)) 
+						GOTO	flow_41
+					GOTO	flow_42
+				flow_40:
+				flow_41:
+					arg4 = concat(concatChar(((char)arg3), svar1), svar2);
+					arg0 = add(arg0, 1);
+					GOTO	flow_43
+				flow_42:
+					ivar7 = 1;
+				flow_43:
+					break;
+					case 5:
+					if (ivar4 < 50) {
+						arg4 = concat(concatChar(((char)arg3), svar1), svar2);
+						arg0 = add(arg0, 1);
+					} else {
+						ivar7 = 1;
+					}
+					break;
+					case 6:
+					switch (getLanguage()) {
+						flow_49:
+							case 1:
+							IF (isDigit(((char)arg3))) 
+								GOTO	flow_51
+							IF (((strIndexof(((char)arg3), 0, "KkMmTt") != -1) && (ivar4 > 0)) && (ivar4 < 10)) 
+								GOTO	flow_52
+							GOTO	flow_61
+						flow_51:
+						flow_52:
+							if ((((strIndexof(0, arg4, "K") == -1) && (strIndexof(0, arg4, "k") == -1)) && ((strIndexof(0, arg4, "M") == -1) && (strIndexof(0, arg4, "m") == -1))) && ((strIndexof(0, arg4, "T") == -1) && (strIndexof(0, arg4, "t") == -1))) {
+								arg4 = concat(concatChar(((char)arg3), svar1), svar2);
+								arg0 = add(arg0, 1);
+							} else {
+								ivar7 = 1;
+							}
+							GOTO	flow_62
+						flow_61:
+							ivar7 = 1;
+						flow_62:
+							break;
+					}
+					IF (isDigit(((char)arg3))) 
+						GOTO	flow_65
+					IF (((strIndexof(((char)arg3), 0, "KkMm") != -1) && (ivar4 > 0)) && (ivar4 < 10)) 
+						GOTO	flow_66
+					GOTO	flow_73
+				flow_65:
+				flow_66:
+					if (((strIndexof(0, arg4, "K") == -1) && (strIndexof(0, arg4, "k") == -1)) && ((strIndexof(0, arg4, "M") == -1) && (strIndexof(0, arg4, "m") == -1))) {
+						arg4 = concat(concatChar(((char)arg3), svar1), svar2);
+						arg0 = add(arg0, 1);
+					} else {
+						ivar7 = 1;
+					}
+					break;
+				flow_73:
+					ivar7 = 1;
+			}
+		}
+	}
+	if (((boolean)ivar7)) {
+		playSoundEffect2False(4173, 1, 0, 255);
+	}
+	return newstruct cs2func_script_802_struct(arg0, arg4);
+}

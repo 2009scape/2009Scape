@@ -1,0 +1,19 @@
+int script_185(int arg0) {
+	switch (arg0) {
+		case 1:
+			return bitconfig_6161;
+		case 2:
+			return cs2method5000();
+		case 3:
+			return cs2method5005();
+		case 4:
+			return standart_config_2159;
+		case 5:
+			return cs2method5016();
+		case 6:
+			return standart_config_1055;
+		case 7:
+			return standart_config_1054;
+	}
+	return 0;
+}

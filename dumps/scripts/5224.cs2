@@ -1,0 +1,6 @@
+int script_5224(int arg0) {
+	if (cs2method3701()) {
+		return script_5225(arg0);
+	}
+	return 0;
+}

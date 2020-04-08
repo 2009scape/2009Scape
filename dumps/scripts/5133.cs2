@@ -1,0 +1,226 @@
+void script_5133() {
+	int ivar0;
+	int ivar1;
+	string svar0;
+	ivar0 = 0;
+	ivar1 = script_4293();
+	if (((boolean)script_5131())) {
+		setWidgetIsHidden(true, new WidgetPointer(1096,417));
+		setWidgetIsHidden(true, new WidgetPointer(1096,425));
+		setWidgetIsHidden(true, new WidgetPointer(1096,433));
+		setWidgetIsHidden(true, new WidgetPointer(1096,441));
+		setWidgetIsHidden(true, new WidgetPointer(1096,449));
+		setWidgetIsHidden(true, new WidgetPointer(1096,457));
+		setWidgetIsHidden(true, new WidgetPointer(1096,465));
+		setWidgetIsHidden(true, new WidgetPointer(1096,473));
+		setWidgetIsHidden(true, new WidgetPointer(1096,481));
+		setWidgetIsHidden(true, new WidgetPointer(1096,489));
+		setWidgetIsHidden(true, new WidgetPointer(1096,497));
+		switch (globalint_1569) {
+			case 0:
+				setWidgetIsHidden(false, new WidgetPointer(1096,417));
+				if (ivar1 >= 100) {
+					ivar0 = 1;
+				}
+				break;
+			case 1:
+				setWidgetIsHidden(false, new WidgetPointer(1096,425));
+				if (ivar1 >= 100) {
+					ivar0 = 1;
+				}
+				break;
+			case 2:
+				setWidgetIsHidden(false, new WidgetPointer(1096,433));
+				if (ivar1 >= 100) {
+					ivar0 = 1;
+				}
+				break;
+			case 3:
+				setWidgetIsHidden(false, new WidgetPointer(1096,441));
+				if (ivar1 >= 100) {
+					ivar0 = 1;
+				}
+				break;
+			case 4:
+				setWidgetIsHidden(false, new WidgetPointer(1096,449));
+				if (ivar1 >= 100) {
+					ivar0 = 1;
+				}
+				break;
+			case 5:
+				setWidgetIsHidden(false, new WidgetPointer(1096,457));
+				if (ivar1 >= 100) {
+					ivar0 = 1;
+				}
+				break;
+			case 100:
+				setWidgetIsHidden(false, new WidgetPointer(1096,465));
+				if (ivar1 > globalint_1569) {
+					ivar0 = 1;
+				}
+				break;
+			case 101:
+				setWidgetIsHidden(false, new WidgetPointer(1096,473));
+				if (ivar1 > globalint_1569) {
+					ivar0 = 1;
+				}
+				break;
+			case 102:
+				setWidgetIsHidden(false, new WidgetPointer(1096,481));
+				if (ivar1 > globalint_1569) {
+					ivar0 = 1;
+				}
+				break;
+			case 103:
+				setWidgetIsHidden(false, new WidgetPointer(1096,489));
+				if (ivar1 > globalint_1569) {
+					ivar0 = 1;
+				}
+				break;
+			case 125:
+				setWidgetIsHidden(false, new WidgetPointer(1096,497));
+				if (ivar1 > globalint_1569) {
+					ivar0 = 1;
+				}
+				break;
+			case 126:
+				ivar0 = 0;
+				break;
+			case 127:
+				ivar0 = 0;
+				break;
+			default:
+				if (ivar1 >= 100) {
+					ivar0 = 1;
+				}
+		}
+	}
+	svar0 = "";
+	setWidgetIsHidden(false, new WidgetPointer(1096,584));
+	setWidgetIsHidden(false, new WidgetPointer(1096,596));
+	setWidgetIsHidden(false, new WidgetPointer(1096,629));
+	setWidgetIsHidden(false, new WidgetPointer(1096,640));
+	setWidgetIsHidden(false, new WidgetPointer(1096,662));
+	setWidgetIsHidden(false, new WidgetPointer(1096,509));
+	setWidgetIsHidden(false, new WidgetPointer(1096,618));
+	setWidgetIsHidden(false, new WidgetPointer(1096,607));
+	setWidgetIsHidden(false, new WidgetPointer(1096,651));
+	setWidgetIsHidden(false, new WidgetPointer(1096,573));
+	setWidgetIsHidden(false, new WidgetPointer(1096,560));
+	setWidgetIsHidden(false, new WidgetPointer(1096,778));
+	setWidgetIsHidden(false, new WidgetPointer(1096,765));
+	setWidgetIsHidden(false, new WidgetPointer(1096,674));
+	setWidgetIsHidden(false, new WidgetPointer(1096,685));
+	setWidgetIsHidden(false, new WidgetPointer(1096,697));
+	setWidgetIsHidden(false, new WidgetPointer(1096,710));
+	setWidgetIsHidden(false, new WidgetPointer(1096,722));
+	setWidgetIsHidden(false, new WidgetPointer(1096,819));
+	setWidgetIsHidden(false, new WidgetPointer(1096,734));
+	setWidgetIsHidden(false, new WidgetPointer(1096,808));
+	setWidgetIsHidden(false, new WidgetPointer(1096,746));
+	if (((boolean)ivar0)) {
+		setWidgetIsHidden(true, new WidgetPointer(1096,584));
+		setWidgetIsHidden(true, new WidgetPointer(1096,596));
+		if (globalint_1569 >= 100) {
+			setWidgetIsHidden(true, new WidgetPointer(1096,629));
+		} else {
+			svar0 = "Only admins and above may upgrade the citadel.";
+			setScriptCallOnMouseOver(5138, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,629));
+		}
+		if (globalint_1569 >= 100) {
+			setWidgetIsHidden(true, new WidgetPointer(1096,640));
+		} else {
+			svar0 = "Only admins and above may downgrade the citadel.";
+			setScriptCallOnMouseOver(5138, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,640));
+		}
+		if (globalint_1569 >= 100) {
+			setWidgetIsHidden(true, new WidgetPointer(1096,662));
+		}
+		setWidgetIsHidden(true, new WidgetPointer(1096,509));
+		if (globalint_1569 >= 100) {
+			setWidgetIsHidden(true, new WidgetPointer(1096,618));
+		} else {
+			svar0 = "Only admins and above may change the noticeboard.";
+			setScriptCallOnMouseOver(5138, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,618));
+		}
+		if (globalint_1569 >= 100) {
+			setWidgetIsHidden(true, new WidgetPointer(1096,607));
+		} else {
+			svar0 = "Only admins and above may change the signpost.";
+			setScriptCallOnMouseOver(5139, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,607));
+		}
+		setWidgetIsHidden(true, new WidgetPointer(1096,651));
+		if (globalint_1569 >= 100) {
+			setWidgetIsHidden(true, new WidgetPointer(1096,573));
+		} else {
+			svar0 = "Only admins and above may change who may lock the citadel.";
+			setScriptCallOnMouseOver(5138, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,573));
+		}
+		if (globalint_1569 >= 100) {
+			setWidgetIsHidden(true, new WidgetPointer(1096,560));
+		} else {
+			svar0 = "Only admins and above may change who may lock the keep.";
+			setScriptCallOnMouseOver(5138, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,560));
+		}
+		if (((boolean)script_5149(ivar1))) {
+			setWidgetIsHidden(true, new WidgetPointer(1096,778));
+		} else {
+			svar0 = "Your rank does not have permission to change citadel access.";
+			setScriptCallOnMouseOver(5138, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,778));
+		}
+		if (((boolean)script_5148(ivar1))) {
+			setWidgetIsHidden(true, new WidgetPointer(1096,765));
+		} else {
+			svar0 = "Your rank does not have permission to change keep access.";
+			setScriptCallOnMouseOver(5138, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,765));
+		}
+		setWidgetIsHidden(true, new WidgetPointer(1096,674));
+		setWidgetIsHidden(true, new WidgetPointer(1096,685));
+		setWidgetIsHidden(true, new WidgetPointer(1096,697));
+		setWidgetIsHidden(true, new WidgetPointer(1096,710));
+		setWidgetIsHidden(true, new WidgetPointer(1096,722));
+		setWidgetIsHidden(true, new WidgetPointer(1096,819));
+		if (globalint_1569 >= 100) {
+			setWidgetIsHidden(true, new WidgetPointer(1096,734));
+		} else {
+			svar0 = "Only admins and above may set gathering goals.";
+			setScriptCallOnMouseOver(5138, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,734));
+		}
+		if (globalint_1569 >= 103) {
+			setWidgetIsHidden(true, new WidgetPointer(1096,808));
+		} else {
+			svar0 = "Only overseers and above may set the citadel's language.";
+			setScriptCallOnMouseOver(5139, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,808));
+		}
+		if (globalint_1569 >= 103) {
+			setWidgetIsHidden(true, new WidgetPointer(1096,746));
+		} else {
+			svar0 = "Only overseers and above may move the build tick.";
+			setScriptCallOnMouseOver(5138, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,746));
+		}
+	} else {
+		svar0 = "Your rank is not high enough to alter this permission.";
+		setScriptCallOnMouseOver(5138, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,629));
+		setScriptCallOnMouseOver(5138, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,640));
+		setScriptCallOnMouseOver(5138, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,662));
+		setScriptCallOnMouseOver(5139, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,509));
+		setScriptCallOnMouseOver(5138, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,618));
+		setScriptCallOnMouseOver(5139, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,607));
+		setScriptCallOnMouseOver(5139, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,651));
+		setScriptCallOnMouseOver(5138, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,573));
+		setScriptCallOnMouseOver(5138, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,560));
+		setScriptCallOnMouseOver(5138, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,778));
+		setScriptCallOnMouseOver(5138, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,765));
+		setScriptCallOnMouseOver(5138, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,674));
+		setScriptCallOnMouseOver(5139, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,685));
+		setScriptCallOnMouseOver(5138, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,697));
+		setScriptCallOnMouseOver(5138, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,710));
+		setScriptCallOnMouseOver(5139, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,722));
+		setScriptCallOnMouseOver(5139, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,819));
+		setScriptCallOnMouseOver(5138, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,734));
+		setScriptCallOnMouseOver(5139, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,808));
+		setScriptCallOnMouseOver(5138, svar0, new WidgetPointer(-32768,3), "sI", new WidgetPointer(1096,746));
+	}
+	script_5135();
+	return;
+}

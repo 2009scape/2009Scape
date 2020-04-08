@@ -1,0 +1,9 @@
+void script_1217(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	cs2method2301(arg0, -1, new WidgetPointer(arg1));
+	ivar2 = subtract(getWidgetActualWidth(new WidgetPointer(arg0)), getWidgetActualWidth(new WidgetPointer(arg1)));
+	ivar3 = multiplyDivide(cs2method6118(), 127, ivar2);
+	setWidgetPosition(ivar3, 0, 0, 0, new WidgetPointer(arg1));
+	return;
+}

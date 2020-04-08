@@ -1,0 +1,10 @@
+void script_1904(int arg0,int arg1,int arg2) {
+	deleteAllExtraChilds(new WidgetPointer(arg1));
+	if (strLength(globalstring_30) > 0) {
+		script_1902(arg0, arg1, arg2);
+	} else {
+		setWidgetScrollMax(0, 0, new WidgetPointer(arg1));
+		script_1905(arg1, arg2);
+	}
+	return;
+}

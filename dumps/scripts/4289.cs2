@@ -1,0 +1,11 @@
+void script_4289() {
+	if (cs2method3701()) {
+		script_4291();
+	} else {
+		setScriptCallOnClanChatSettingsStuff(4290, "", new WidgetPointer(1096,151));
+	}
+	if (globalint_1516 == -1) {
+		globalint_1516 = 0;
+	}
+	return;
+}

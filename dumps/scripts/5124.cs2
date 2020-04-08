@@ -1,0 +1,4 @@
+void script_5124() {
+	setWidgetText(new WidgetPointer(1119,6), cs2method_3408(105, 115, 3725, globalint_696));
+	return;
+}

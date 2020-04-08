@@ -1,0 +1,27 @@
+cs2func_script_3995_struct(2,1,0) script_3995(int arg0) {
+	if (arg0 >= 4091) {
+		return newstruct cs2func_script_3995_struct(0, 0, "");
+	}
+	if ((arg0 >= 4000) && (arg0 <= 4027)) {
+		return newstruct cs2func_script_3995_struct(0, 0, "");
+	}
+	if (((boolean)getOtherCommonData(cs2method_3408(105, 74, 3483, arg0), 1294))) {
+		return newstruct cs2func_script_3995_struct(1, 65280, "There are no requirements for this Task.");
+	}
+	if (script_3227(arg0) == 2) {
+		return newstruct cs2func_script_3995_struct(2, 65280, "You have completed this Task.");
+	}
+	if (((boolean)script_3994(arg0))) {
+		if (((boolean)script_3999(arg0))) {
+			return newstruct cs2func_script_3995_struct(0, 65280, "");
+		}
+		return newstruct cs2func_script_3995_struct(1, 9393963, "You currently have this Task pinned.");
+	}
+	if (isMember() && (getOtherCommonData(cs2method_3408(105, 74, 3483, arg0), 1290) == 2)) {
+		return newstruct cs2func_script_3995_struct(0, 16711680, "This Task cannot be completed in the free game.");
+	}
+	if (((boolean)script_3224(arg0))) {
+		return newstruct cs2func_script_3995_struct(0, 16711680, "You lack one or more prerequisites needed to complete this Task.");
+	}
+	return newstruct cs2func_script_3995_struct(1, 65280, "You have the requirements to complete this Task.");
+}

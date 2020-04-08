@@ -1,0 +1,5 @@
+void script_2161(int arg0,int arg1,int arg2) {
+	int ivar3;
+	ivar3 = 0;
+	return;
+}

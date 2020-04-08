@@ -1,0 +1,10 @@
+void script_4147(int arg0,int arg1,int arg2,string arg3) {
+	setWidgetIsHidden(false, new WidgetPointer(arg0));
+	cs2method2310(new WidgetPointer(arg0), arg3);
+	setWidgetSize(16, arg1, 1, 0, new WidgetPointer(arg0));
+	setWidgetPosition(0, arg2, 1, 1, new WidgetPointer(arg0));
+	script_4149(arg0, 0, arg3);
+	setScriptCallOnMouseOver(4148, new WidgetPointer(arg0), arg3, 1, "Is1", new WidgetPointer(arg0));
+	setScriptCallOnMouseExit(4148, new WidgetPointer(arg0), arg3, 0, "Is1", new WidgetPointer(arg0));
+	return;
+}

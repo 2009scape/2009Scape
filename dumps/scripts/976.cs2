@@ -1,0 +1,25 @@
+cs2func_script_976_struct(2,1,0) script_976(int arg0) {
+	switch (arg0) {
+		case 0:
+			return newstruct cs2func_script_976_struct(3, 4155, "Members now have the Combat level required to request Slayer tasks from the Burthorpe Slayer Master.");
+		case 1:
+			return newstruct cs2func_script_976_struct(20, 4155, "Members now have the Combat level required to request Slayer tasks from Mazchna.");
+		case 2:
+			return newstruct cs2func_script_976_struct(40, 4155, "Members now have the Combat level required to request Slayer tasks from Vannaka.");
+		case 3:
+			return newstruct cs2func_script_976_struct(40, 11673, "Members now have the Combat level required to board the novice lander in Pest Control.");
+		case 4:
+			return newstruct cs2func_script_976_struct(70, 4155, "Members now have the Combat level required to request Slayer tasks from Chaeldar.");
+		case 5:
+			return newstruct cs2func_script_976_struct(70, 11673, "Members now have the Combat level required to board the intermediate lander in Pest Control.");
+		case 6:
+			return newstruct cs2func_script_976_struct(85, 6513, "Members now have the Combat level required to start Dream Mentor.");
+		case 7:
+			return newstruct cs2func_script_976_struct(85, 6513, "Members now have the Combat level required to start Smoking Kills.");
+		case 8:
+			return newstruct cs2func_script_976_struct(100, 4155, "Members now have the Combat level required to request Slayer tasks from the Shilo Village Slayer Master. (Level 50 Slayer is also required.)");
+		case 9:
+			return newstruct cs2func_script_976_struct(100, 11673, "Members now have the Combat level required to board the veteran lander in Pest Control.");
+	}
+	return newstruct cs2func_script_976_struct(-1, -1, "");
+}

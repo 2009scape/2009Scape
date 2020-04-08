@@ -1,0 +1,12 @@
+void script_2572() {
+	if (add(getContainerIntNodeCountIgnoreStacks(93, 803), getContainerIntNodeCountIgnoreStacks(93, 802)) < bitconfig_6429) {
+		return;
+	}
+	if ((bitconfig_6429 > 0) && (bitconfig_6429 < 11)) {
+		globalint_929 = subtract(bitconfig_6429, 1);
+	} else {
+		globalint_929 = 0;
+	}
+	script_2573();
+	return;
+}

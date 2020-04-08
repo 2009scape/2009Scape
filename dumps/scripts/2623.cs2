@@ -1,0 +1,25 @@
+void script_2623() {
+	int ivar0;
+	ivar0 = 1;
+	while (((int)cs2method_3408(105, 73, 2451, ivar0)) != 55705624) {
+		setWidgetText(cs2method_3408(105, 73, 2451, ivar0), "");
+		ivar0 = add(ivar0, 1);
+	}
+	setWidgetText(new WidgetPointer(850,25), "Welcome to Mobilising Armies.");
+	switch (bitconfig_6352) {
+		case 1:
+			setWidgetSprite(1906, new WidgetPointer(850,50));
+			break;
+		case 2:
+			setWidgetSprite(1904, new WidgetPointer(850,50));
+			break;
+		case 3:
+			setWidgetSprite(1905, new WidgetPointer(850,50));
+			break;
+		case 4:
+			setWidgetSprite(1907, new WidgetPointer(850,50));
+	}
+	script_157(55705645, 55705646, getWidgetScrollMaxV(new WidgetPointer(850,46)), 1);
+	setScriptCallOnKeyPress(2625, -2147483640, false, "iz", new WidgetPointer(850,48));
+	return;
+}

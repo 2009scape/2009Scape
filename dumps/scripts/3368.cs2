@@ -1,0 +1,7 @@
+void script_3368(int arg0) {
+	setWidgetText(new WidgetPointer(548,26), formatNumber(arg0, 1) + "xp");
+	setWidgetText(new WidgetPointer(746,189), formatNumber(arg0, 1) + "xp");
+	setScriptCallOnGameloop(3369, new WidgetPointer(548,22), getClientCycle(), "Ii", new WidgetPointer(548,22));
+	setScriptCallOnGameloop(3370, new WidgetPointer(746,184), getClientCycle(), "Ii", new WidgetPointer(746,184));
+	return;
+}

@@ -1,0 +1,6 @@
+int script_2509(int arg0) {
+	if (globalint_840 <= subtract(script_2687(), arg0)) {
+		return 1;
+	}
+	return 0;
+}

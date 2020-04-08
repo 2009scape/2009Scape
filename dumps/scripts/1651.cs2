@@ -1,0 +1,27 @@
+void script_1651(int arg0,int arg1) {
+	int ivar2;
+	if (((boolean)script_1653())) {
+		arg0 = subtract(getWidgetActualHeight(new WidgetPointer(746,3)), 172);
+		setWidgetIsHidden(true, new WidgetPointer(746,75));
+	} else {
+		if (globalint_41 != -1) {
+			setWidgetIsHidden(false, new WidgetPointer(746,75));
+		}
+	}
+	ivar2 = subtract(subtract(subtract(getWidgetActualHeight(new WidgetPointer(746,3)), 87), arg0), 30);
+	ivar2 = subtract(ivar2, mod(ivar2, 14));
+	if (ivar2 < 142) {
+		ivar2 = 142;
+	}
+	globalint_7 = subtract(globalint_7, subtract(ivar2, getWidgetActualHeight(new WidgetPointer(746,73))));
+	setWidgetSize(519, ivar2, 0, 0, new WidgetPointer(746,73));
+	setWidgetPosition(0, 23, 0, 2, new WidgetPointer(746,73));
+	if (((boolean)arg1)) {
+		globalint_1037 = ivar2;
+	}
+	setWidgetPosition(0, subtract(getWidgetActualY(new WidgetPointer(746,73)), 94), 0, 0, new WidgetPointer(746,75));
+	setWidgetPosition(0, subtract(getWidgetActualY(new WidgetPointer(746,73)), 69), 0, 0, new WidgetPointer(746,72));
+	script_1301(8978491, 8978490);
+	script_84();
+	return;
+}

@@ -1,0 +1,63 @@
+void script_480() {
+	setWidgetText(new WidgetPointer(1015,144), script_483(bitconfig_7520));
+	if (bitconfig_7520 > 0) {
+		setWidgetRGB(new Color(230, 202, 152), new WidgetPointer(1015,144));
+	} else {
+		setWidgetRGB(new Color(88, 80, 66), new WidgetPointer(1015,144));
+	}
+	setWidgetText(new WidgetPointer(1015,146), script_483(bitconfig_7521));
+	if (bitconfig_7521 > 0) {
+		setWidgetRGB(new Color(230, 202, 152), new WidgetPointer(1015,146));
+	} else {
+		setWidgetRGB(new Color(88, 80, 66), new WidgetPointer(1015,146));
+	}
+	setWidgetText(new WidgetPointer(1015,148), script_483(bitconfig_7526));
+	if (bitconfig_7526 > 0) {
+		setWidgetRGB(new Color(230, 202, 152), new WidgetPointer(1015,148));
+	} else {
+		setWidgetRGB(new Color(88, 80, 66), new WidgetPointer(1015,148));
+	}
+	setWidgetText(new WidgetPointer(1015,150), script_483(bitconfig_7527));
+	if (bitconfig_7527 > 0) {
+		setWidgetRGB(new Color(230, 202, 152), new WidgetPointer(1015,150));
+	} else {
+		setWidgetRGB(new Color(88, 80, 66), new WidgetPointer(1015,150));
+	}
+	setWidgetText(new WidgetPointer(1015,152), script_483(bitconfig_7530));
+	if (bitconfig_7530 > 0) {
+		setWidgetRGB(new Color(230, 202, 152), new WidgetPointer(1015,152));
+	} else {
+		setWidgetRGB(new Color(88, 80, 66), new WidgetPointer(1015,152));
+	}
+	setWidgetText(new WidgetPointer(1015,154), script_483(bitconfig_7531));
+	if (bitconfig_7531 > 0) {
+		setWidgetRGB(new Color(230, 202, 152), new WidgetPointer(1015,154));
+	} else {
+		setWidgetRGB(new Color(88, 80, 66), new WidgetPointer(1015,154));
+	}
+	setWidgetText(new WidgetPointer(1015,156), script_483(bitconfig_7532));
+	if (bitconfig_7532 > 0) {
+		setWidgetRGB(new Color(230, 202, 152), new WidgetPointer(1015,156));
+	} else {
+		setWidgetRGB(new Color(88, 80, 66), new WidgetPointer(1015,156));
+	}
+	setWidgetText(new WidgetPointer(1015,158), script_483(bitconfig_7533));
+	if (bitconfig_7533 > 0) {
+		setWidgetRGB(new Color(230, 202, 152), new WidgetPointer(1015,158));
+	} else {
+		setWidgetRGB(new Color(88, 80, 66), new WidgetPointer(1015,158));
+	}
+	setWidgetText(new WidgetPointer(1015,160), script_483(bitconfig_7534));
+	if (bitconfig_7534 > 0) {
+		setWidgetRGB(new Color(230, 202, 152), new WidgetPointer(1015,160));
+	} else {
+		setWidgetRGB(new Color(88, 80, 66), new WidgetPointer(1015,160));
+	}
+	setWidgetText(new WidgetPointer(1015,162), script_483(bitconfig_7535));
+	if (bitconfig_7535 > 0) {
+		setWidgetRGB(new Color(230, 202, 152), new WidgetPointer(1015,162));
+	} else {
+		setWidgetRGB(new Color(88, 80, 66), new WidgetPointer(1015,162));
+	}
+	return;
+}

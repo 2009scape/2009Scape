@@ -1,0 +1,8 @@
+void script_1687() {
+	if (globalint_1044 < subtract(cs2method5407(0), 1)) {
+		globalint_1044 = add(globalint_1044, 1);
+		cameraMethod5502(0, globalint_1044, 200, 200, 1, globalint_1044);
+		setScriptCallOnMinimapRelatedSetting3(1679, "", new WidgetPointer(85,0));
+	}
+	return;
+}

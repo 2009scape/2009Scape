@@ -5,6 +5,7 @@ import org.crandor.game.content.activity.ActivityManager;
 import org.crandor.game.interaction.OptionHandler;
 import org.crandor.game.node.Node;
 import org.crandor.game.node.entity.player.Player;
+import org.crandor.game.node.entity.player.ai.pvmbots.PvMBotsBuilder;
 import org.crandor.game.node.entity.player.info.Rights;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.node.object.GameObject;
@@ -15,11 +16,16 @@ import org.crandor.game.world.map.RegionManager;
 import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.plugin.Plugin;
 
+import java.util.ArrayList;
+
 /**
  * Handles pest control objects.
  * @author Emperor
  */
 public final class PCObjectHandler extends OptionHandler {
+
+	public boolean pcbotsSpawned = false;
+	public ArrayList<String> playersJoined = new ArrayList<>();
 
 	@Override
 	public Plugin<Object> newInstance(Object arg) throws Throwable {
@@ -91,6 +97,17 @@ public final class PCObjectHandler extends OptionHandler {
 			}
 			switch (object.getId()) {
 			case 14315: // Novice
+                if (!pcbotsSpawned) { //First person to join gets bots to play with
+                	pcbotsSpawned = true;
+					for (int pestBotsAmount = 0; pestBotsAmount < 20; pestBotsAmount++) {
+						PvMBotsBuilder.createPestControlTestBot(new Location(2657, 2640));
+					}
+				}
+                if (!playersJoined.contains(player.getUsername())) { //You also get +1 bot for every friend
+					playersJoined.add(player.getUsername());
+					PvMBotsBuilder.createPestControlTestBot(new Location(2657, 2640));
+				}
+
 				startActivity(player, "pest control novice", Location.create(2661, 2639, 0));
 				return true;
 			case 25631: // Intermediate

@@ -1,0 +1,4 @@
+void script_3435() {
+	globalint_1280 = 1;
+	return;
+}

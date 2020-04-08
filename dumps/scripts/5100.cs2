@@ -1,0 +1,32 @@
+void script_5100(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,int arg11,int arg12,int arg13,int arg14,int arg15,int arg16,int arg17,int arg18,int arg19,int arg20,string arg21) {
+	setWidgetIsHidden(true, new WidgetPointer(arg13));
+	setWidgetIsHidden(false, new WidgetPointer(arg12));
+	setWidgetIsHidden(true, new WidgetPointer(arg15));
+	setWidgetContextMenuOption(1, new WidgetPointer(arg14), "Details");
+	setWidgetText(new WidgetPointer(arg16), arg21);
+	switch (arg7) {
+		case -2:
+			setWidgetSprite(6194, new WidgetPointer(arg10));
+			break;
+		case -1:
+			setWidgetSprite(6195, new WidgetPointer(arg10));
+			break;
+		case 0:
+			setWidgetSprite(6196, new WidgetPointer(arg10));
+			break;
+		case 1:
+			setWidgetSprite(6197, new WidgetPointer(arg10));
+			break;
+		case 2:
+			setWidgetSprite(6198, new WidgetPointer(arg10));
+	}
+	setWidgetSprite(arg1, new WidgetPointer(arg17));
+	setWidgetSprite(arg2, new WidgetPointer(arg18));
+	setWidgetRGB(new Color(getColorRelatedMethod4020(arg3)), new WidgetPointer(arg17));
+	setWidgetRGB(new Color(getColorRelatedMethod4020(arg4)), new WidgetPointer(arg18));
+	setWidgetRGB(new Color(getColorRelatedMethod4020(arg5)), new WidgetPointer(arg19));
+	setWidgetRGB(new Color(getColorRelatedMethod4020(arg6)), new WidgetPointer(arg20));
+	setScriptCallOnClickContextMenu(5111, arg0, arg8, "i1", new WidgetPointer(arg14));
+	setWidgetIsHidden(true, new WidgetPointer(arg13));
+	return;
+}

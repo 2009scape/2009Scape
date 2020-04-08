@@ -1,0 +1,39 @@
+void script_558(int arg0) {
+	if (((boolean)arg0)) {
+		setWidgetSprite(181, new WidgetPointer(625,69));
+		setWidgetModel(29248, new WidgetPointer(625,39));
+	} else {
+		setWidgetSprite(180, new WidgetPointer(625,69));
+	}
+	if (arg0 == 2) {
+		setWidgetSprite(181, new WidgetPointer(625,72));
+		setWidgetModel(29242, new WidgetPointer(625,39));
+	} else {
+		setWidgetSprite(180, new WidgetPointer(625,72));
+	}
+	if (arg0 == 3) {
+		setWidgetSprite(181, new WidgetPointer(625,75));
+		setWidgetModel(29237, new WidgetPointer(625,39));
+	} else {
+		setWidgetSprite(180, new WidgetPointer(625,75));
+	}
+	if (arg0 == 4) {
+		setWidgetSprite(181, new WidgetPointer(625,78));
+		setWidgetModel(29245, new WidgetPointer(625,39));
+	} else {
+		setWidgetSprite(180, new WidgetPointer(625,78));
+	}
+	if (arg0 == 5) {
+		setWidgetSprite(181, new WidgetPointer(625,81));
+		setWidgetModel(29246, new WidgetPointer(625,39));
+	} else {
+		setWidgetSprite(180, new WidgetPointer(625,81));
+	}
+	if (arg0 == 6) {
+		setWidgetSprite(181, new WidgetPointer(625,84));
+		setWidgetModel(29241, new WidgetPointer(625,39));
+	} else {
+		setWidgetSprite(180, new WidgetPointer(625,84));
+	}
+	return;
+}

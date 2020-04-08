@@ -1,0 +1,21 @@
+cs2func_script_1001_struct(1,1,0) script_1001(int arg0) {
+	switch (arg0) {
+		case 0:
+			return newstruct cs2func_script_1001_struct(1, "Potions");
+		case 1:
+			return newstruct cs2func_script_1001_struct(1, "Herbs");
+		case 2:
+			return newstruct cs2func_script_1001_struct(1, "Barbarian potions");
+		case 3:
+			return newstruct cs2func_script_1001_struct(1, "Equipment");
+		case 4:
+			return newstruct cs2func_script_1001_struct(1, "Other");
+		case 5:
+			return newstruct cs2func_script_1001_struct(1, "Minigames");
+		case 6:
+			return newstruct cs2func_script_1001_struct(1, "Dungeoneering");
+		case 7:
+			return newstruct cs2func_script_1001_struct(1, "Milestones");
+	}
+	return newstruct cs2func_script_1001_struct(-1, "");
+}

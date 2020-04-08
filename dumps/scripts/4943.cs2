@@ -1,0 +1,23 @@
+void script_4943(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 71566040;
+	if (((boolean)arg0) && (bitconfig_9552 == 2)) {
+		ivar1 = add(getWidgetActualX(new WidgetPointer(ivar3)), 12);
+		ivar2 = 156;
+	} else {
+		ivar1 = subtract(getWidgetActualX(new WidgetPointer(ivar3)), 12);
+		ivar2 = -150;
+	}
+	ivar1 = max(ivar1, -150);
+	ivar1 = min(ivar1, 156);
+	setWidgetPosition(ivar1, getWidgetActualY(new WidgetPointer(ivar3)), 0, 0, new WidgetPointer(ivar3));
+	if (ivar1 == ivar2) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(ivar3));
+		script_5220();
+	}
+	return;
+}

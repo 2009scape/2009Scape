@@ -3,10 +3,12 @@ package plugin.activity.mta;
 import org.crandor.game.content.global.action.PickupHandler;
 import org.crandor.game.content.skill.free.magic.MagicSpell;
 import org.crandor.game.content.skill.free.magic.Runes;
+import org.crandor.game.interaction.SpecialGroundItems;
 import org.crandor.game.node.Node;
 import org.crandor.game.node.entity.Entity;
 import org.crandor.game.node.entity.combat.equipment.SpellType;
 import org.crandor.game.node.entity.impl.Projectile;
+import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.link.SpellBookManager.SpellBook;
 import org.crandor.game.node.entity.player.link.audio.Audio;
@@ -126,6 +128,10 @@ public final class TelekineticGrabSpell extends MagicSpell {
 				GroundItem g = GroundItemManager.get(ground.getId(), ground.getLocation(), player);
 				if (g == null) {
 					player.getPacketDispatch().sendMessage("Too late!");
+					return true;
+				}
+				if (g == SpecialGroundItems.AHAB_BEER.asGroundItem()){
+					player.getDialogueInterpreter().open(2692, new NPC(2692), true);
 					return true;
 				}
 				if (player == null) {

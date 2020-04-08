@@ -1,0 +1,14 @@
+void script_1600() {
+	int ivar0;
+	int ivar1;
+	ivar0 = 0;
+	ivar1 = 0;
+	if (((boolean)script_1891())) {
+		setWidgetIsHidden(false, new WidgetPointer(1109,20));
+		ivar0 = getWidgetActualY(new WidgetPointer(1109,18));
+		setWidgetPosition(134, ivar0, 0, 0, new WidgetPointer(1109,18));
+		return;
+	}
+	script_1632();
+	return;
+}

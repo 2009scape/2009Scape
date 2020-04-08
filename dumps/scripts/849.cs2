@@ -1,0 +1,63 @@
+void script_849(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	ivar2 = ((int)cs2method_3408(105, 73, 1354, arg0));
+	ivar3 = ((int)cs2method_3408(105, 73, 1355, arg0));
+	ivar4 = ((int)cs2method_3408(105, 73, 1358, arg0));
+	ivar5 = script_853(arg0);
+	ivar6 = script_854(arg0);
+	ivar7 = 0;
+	ivar8 = 0;
+	ivar9 = 0;
+	ivar10 = 0;
+	ivar11 = getWidgetActualX(new WidgetPointer(ivar2));
+	ivar12 = getWidgetActualY(new WidgetPointer(ivar2));
+	ivar13 = getWidgetActualX(new WidgetPointer(ivar3));
+	ivar14 = getWidgetActualY(new WidgetPointer(ivar3));
+	ivar15 = getWidgetRotateY(new WidgetPointer(ivar2));
+	if (arg0 != 10) {
+		playSoundEffect(4503, 1, 0);
+		if (((boolean)arg1)) {
+			ivar15 = add(ivar15, 512);
+			if (ivar15 >= 2047) {
+				ivar15 = 0;
+			}
+		} else {
+			ivar15 = subtract(ivar15, 512);
+			if (ivar15 < 0) {
+				ivar15 = 2047;
+			}
+		}
+		setWidget3DRotation(0, 0, 512, ivar15, 0, 3500, new WidgetPointer(ivar2));
+		setWidget3DRotation(0, 0, 512, ivar15, 0, 3500, new WidgetPointer(ivar3));
+		setWidget3DRotation(0, 0, 512, ivar15, 0, 3500, new WidgetPointer(ivar4));
+		if (script_850(ivar5) != script_850(ivar6)) {
+			if ((ivar15 == 512) || (ivar15 == 1536)) {
+				ivar9 = 9;
+				ivar10 = 9;
+			} else {
+				ivar9 = -9;
+				ivar10 = -9;
+			}
+			ivar11 = add(add(ivar11, ivar9), ivar7);
+			ivar12 = add(add(ivar12, ivar10), ivar8);
+			ivar13 = add(add(ivar13, ivar9), ivar7);
+			ivar14 = add(add(ivar14, ivar10), ivar8);
+		}
+		setWidgetPosition(ivar11, ivar12, 0, 0, new WidgetPointer(ivar2));
+		setWidgetPosition(ivar13, ivar14, 0, 0, new WidgetPointer(ivar3));
+	}
+	return;
+}

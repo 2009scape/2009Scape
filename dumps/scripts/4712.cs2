@@ -1,0 +1,11 @@
+void script_4712(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	if (setWidgetRegister(new WidgetPointer(arg0), arg4)) {
+		setWidgetVFlip(1);
+	}
+	if (arg3 != -1) {
+		setWidgetIsHidden(false, new WidgetPointer(arg3));
+	}
+	setWidgetIsHidden(false, new WidgetPointer(arg1));
+	setWidgetIsHidden(false, new WidgetPointer(arg2));
+	return;
+}

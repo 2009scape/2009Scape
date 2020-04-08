@@ -1,0 +1,10 @@
+void script_397() {
+	if ((globalint_743 == -1) && (standart_config_1109 != -1)) {
+		if (multiply(standart_config_1111, standart_config_1110) > getItemAmtInContainer(93, 995)) {
+			setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(449,25));
+		} else {
+			setWidgetRGB(new Color(globalint_1241), new WidgetPointer(449,25));
+		}
+	}
+	return;
+}

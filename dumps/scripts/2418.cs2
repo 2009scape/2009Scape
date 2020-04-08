@@ -1,0 +1,8 @@
+void script_2418(int arg0) {
+	if (globalint_805 == 6) {
+		setWidgetContextMenuOption(1, new WidgetPointer(arg0), "Fix");
+	} else {
+		setWidgetContextMenuOption(1, new WidgetPointer(arg0), "Inspect");
+	}
+	return;
+}

@@ -1,0 +1,21 @@
+void script_3436(int arg0,int arg1,int arg2,string arg3) {
+	setWidgetModel(arg0, new WidgetPointer(311,57));
+	setWidgetText(new WidgetPointer(311,59), arg3);
+	setWidgetIsHidden(true, new WidgetPointer(311,39));
+	setWidgetIsHidden(true, new WidgetPointer(311,11));
+	setWidgetIsHidden(true, new WidgetPointer(311,7));
+	setWidgetIsHidden(true, new WidgetPointer(311,3));
+	setWidgetIsHidden(true, new WidgetPointer(311,23));
+	setWidgetIsHidden(true, new WidgetPointer(311,19));
+	setWidgetIsHidden(true, new WidgetPointer(311,15));
+	setWidgetIsHidden(false, new WidgetPointer(arg1));
+	setWidgetSprite(4041, new WidgetPointer(311,24));
+	setWidgetSprite(4041, new WidgetPointer(311,20));
+	setWidgetSprite(4041, new WidgetPointer(311,16));
+	setWidgetSprite(4041, new WidgetPointer(311,12));
+	setWidgetSprite(4041, new WidgetPointer(311,8));
+	setWidgetSprite(4041, new WidgetPointer(311,4));
+	setWidgetSprite(4041, new WidgetPointer(311,0));
+	setWidgetSprite(4043, new WidgetPointer(arg2));
+	return;
+}

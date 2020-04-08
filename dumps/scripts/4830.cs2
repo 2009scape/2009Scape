@@ -1,0 +1,84 @@
+int script_4830(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	ivar1 = -1;
+	ivar2 = -1;
+	ivar3 = -1;
+	ivar4 = -1;
+	ivar5 = -1;
+	ivar6 = 0;
+	ivar7 = 0;
+	ivar8 = 0;
+	ivar9 = 0;
+	ivar10 = 0;
+	ivar11 = 0;
+	ivar12 = 0;
+	switch (arg0) {
+		case 1:
+			ivar6 = bitconfig_9562;
+			ivar7 = bitconfig_9563;
+			ivar9 = bitconfig_9567;
+			ivar10 = bitconfig_9568;
+			ivar11 = bitconfig_9569;
+			ivar12 = bitconfig_9566;
+			break;
+		case 2:
+			ivar6 = bitconfig_9571;
+			ivar7 = bitconfig_9572;
+			ivar9 = bitconfig_9576;
+			ivar10 = bitconfig_9577;
+			ivar11 = bitconfig_9578;
+			ivar12 = bitconfig_9575;
+			break;
+		case 3:
+			ivar6 = bitconfig_9580;
+			ivar7 = bitconfig_9581;
+			ivar9 = bitconfig_9585;
+			ivar10 = bitconfig_9586;
+			ivar11 = bitconfig_9587;
+			ivar12 = bitconfig_9584;
+	}
+	if (((boolean)ivar12)) {
+		return 5;
+	}
+	if (((boolean)ivar6)) {
+		return -1;
+	}
+	ivar1 = cs2method_3408(105, 103, 4043, ivar6);
+	if (ivar1 == -1) {
+		return -1;
+	}
+	if ((ivar7 > 0) && (ivar7 <= 3)) {
+		ivar2 = cs2method_3408(105, 103, ivar1, ivar7);
+		if (ivar2 != -1) {
+			ivar3 = cs2method_3408(105, 103, ivar2, 1);
+			ivar4 = cs2method_3408(105, 103, ivar2, 2);
+			ivar5 = cs2method_3408(105, 103, ivar2, 3);
+			if (ivar3 != -1) {
+				if ((ivar9 > 0) && (ivar9 <= getCommonDefinitionSize(ivar3))) {
+					/* 
+						mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+							at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+							at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+							at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+							at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+							at tests.Main.main(Main.java:45)
+						
+					 */
+				}
+				return 3;
+			}
+		}
+	}
+	return -1;
+}

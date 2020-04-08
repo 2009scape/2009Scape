@@ -1,0 +1,9 @@
+void script_273() {
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(919,1)), 185, 0, 0, new WidgetPointer(919,1));
+	setScriptCallOnClickContextMenu(274, "", new WidgetPointer(919,23));
+	setWidgetText(new WidgetPointer(919,31), "Hide");
+	script_31(60227589, 60227590, 792, 789, 790, 791, 773, 788);
+	setWidgetVFlip(1, new WidgetPointer(919,29));
+	setWidgetVFlip(1, new WidgetPointer(919,30));
+	return;
+}

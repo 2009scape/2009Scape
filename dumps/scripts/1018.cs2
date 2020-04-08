@@ -1,0 +1,514 @@
+cs2func_script_1018_struct(2,2,0) script_1018(int arg0,int arg1) {
+	switch (arg0) {
+		flow_1:
+			case 0:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1018_struct(1, 2142, "Meat", "You can now cook " + "<col=000080>" + "meat" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1018_struct(1, 9436, "Members: Sinew", "You can now make " + "<col=000080>" + "sinew" + "</col>" + " by drying beef or bear meat on a range.");
+				case 2:
+					return newstruct cs2func_script_1018_struct(1, 315, "Shrimp", "You can now cook " + "<col=000080>" + "shrimp" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1018_struct(1, 13433, "Crayfish", "You can now cook " + "<col=000080>" + "crayfish" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1018_struct(1, 2140, "Chicken", "You can now cook " + "<col=000080>" + "chicken" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1018_struct(1, 3228, "Members: Rabbit", "Members can now cook " + "<col=000080>" + "rabbits" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1018_struct(1, 319, "Anchovies", "You can now cook " + "<col=000080>" + "anchovies" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1018_struct(1, 325, "Sardine", "You can now cook " + "<col=000080>" + "sardines" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1018_struct(1, 3151, "Members: Karambwanji", "Members can now cook " + "<col=000080>" + "karambwanji" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1018_struct(1, 3146, "Members: Karambwan", "Members can now cook " + "<col=000080>" + "karambwan" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_1018_struct(1, 1885, "Members: Ugthanki kebab", "Members can now cook " + "<col=000080>" + "ugthanki kebabs" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_1018_struct(5, 347, "Herring", "You can now cook " + "<col=000080>" + "herring" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_1018_struct(10, 355, "Members: Mackerel", "Members can now cook " + "<col=000080>" + "mackerel" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_1018_struct(11, 9980, "Members: Roasted bird meat", "Members can now roast " + "<col=000080>" + "bird meat" + "</col>" + " on an iron spit.");
+				case 14:
+					return newstruct cs2func_script_1018_struct(12, 3369, "Members: Thin snail", "Members can now cook " + "<col=000080>" + "thin snails" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_1018_struct(15, 333, "Trout", "You can now cook " + "<col=000080>" + "trout" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_1018_struct(16, 6297, "Members: Spider", "Members can now cook " + "<col=000080>" + "spiders" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_1018_struct(16, 7223, "Members: Roasted rabbit", "Members can now roast " + "<col=000080>" + "rabbits" + "</col>" + " on a spit.");
+				case 18:
+					return newstruct cs2func_script_1018_struct(17, 3371, "Members: Lean snail", "Members can now cook " + "<col=000080>" + "lean snails" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_1018_struct(18, 339, "Members: Cod", "Members can now cook " + "<col=000080>" + "cod" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_1018_struct(20, 351, "Pike", "You can now cook " + "<col=000080>" + "pike" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_1018_struct(21, 9988, "Members: Roasted beast meat", "Members can now roast " + "<col=000080>" + "beast meat" + "</col>" + " on a spit.");
+				case 22:
+					return newstruct cs2func_script_1018_struct(21, 7521, "Members: Giant crab meat", "Members can now cook " + "<col=000080>" + "giant crab meat" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_1018_struct(22, 3373, "Members: Fat snail", "Members can now cook " + "<col=000080>" + "fat snails" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_1018_struct(25, 329, "Salmon", "You can now cook " + "<col=000080>" + "salmon" + "</col>" + ".");
+				case 25:
+					return newstruct cs2func_script_1018_struct(28, 3381, "Members: Slimy eel", "Members can now cook " + "<col=000080>" + "slimy eels" + "</col>" + ".");
+				case 26:
+					return newstruct cs2func_script_1018_struct(30, 361, "Tuna", "You can now cook " + "<col=000080>" + "tuna" + "</col>" + ".");
+				case 27:
+					return newstruct cs2func_script_1018_struct(30, 2878, "Members: Roasted chompy", "Members can now roast " + "<col=000080>" + "chompies" + "</col>" + " on a spit.");
+				case 28:
+					return newstruct cs2func_script_1018_struct(31, 7530, "Members: Fishcake", "Members can now cook " + "<col=000080>" + "fishcakes" + "</col>" + ".");
+				case 29:
+					return newstruct cs2func_script_1018_struct(35, 10136, "Members: Rainbow fish", "Members can now cook " + "<col=000080>" + "rainbow fish" + "</col>" + ".");
+				case 30:
+					return newstruct cs2func_script_1018_struct(38, 5003, "Members: Cave eel", "Members can now cook " + "<col=000080>" + "cave eels" + "</col>" + ".");
+				case 31:
+					return newstruct cs2func_script_1018_struct(40, 379, "Lobster", "You can now cook " + "<col=000080>" + "lobsters" + "</col>" + ".");
+				case 32:
+					return newstruct cs2func_script_1018_struct(41, 7568, "Members: Jubbly", "Members can now cook " + "<col=000080>" + "jubblies" + "</col>" + ".");
+				case 33:
+					return newstruct cs2func_script_1018_struct(43, 365, "Members: Bass", "Members can now cook " + "<col=000080>" + "bass" + "</col>" + ".");
+				case 34:
+					return newstruct cs2func_script_1018_struct(45, 373, "Swordfish", "You can now cook " + "<col=000080>" + "swordfish" + "</col>" + ".");
+				case 35:
+					return newstruct cs2func_script_1018_struct(50, 2343, "Members: Oomlie wrap", "Members can now cook " + "<col=000080>" + "oomlie wraps" + "</col>" + ".");
+				case 36:
+					return newstruct cs2func_script_1018_struct(53, 2149, "Members: Lava eel", "Members can now cook " + "<col=000080>" + "lava eels" + "</col>" + ".");
+				case 37:
+					return newstruct cs2func_script_1018_struct(62, 7946, "Members: Monkfish", "Members can now cook " + "<col=000080>" + "monkfish" + "</col>" + ".");
+				case 38:
+					return newstruct cs2func_script_1018_struct(80, 385, "Members: Shark", "Members can now cook " + "<col=000080>" + "sharks" + "</col>" + ".");
+				case 39:
+					return newstruct cs2func_script_1018_struct(82, 397, "Members: Sea turtle", "Members can now cook " + "<col=000080>" + "sea turtles" + "</col>" + ".");
+				case 40:
+					return newstruct cs2func_script_1018_struct(88, 15266, "Members: Cavefish", "Members can now cook " + "<col=000080>" + "cavefish" + "</col>" + ".");
+				case 41:
+					return newstruct cs2func_script_1018_struct(91, 391, "Members: Manta ray", "Members can now cook " + "<col=000080>" + "manta rays" + "</col>" + ".");
+				case 42:
+					return newstruct cs2func_script_1018_struct(93, 15272, "Members: Rocktail", "Members can now cook " + "<col=000080>" + "rocktails" + "</col>" + ".");
+				case 43:
+					return newstruct cs2func_script_1018_struct(95, 21521, "Members: Tiger shark", "Members can now cook " + "<col=000080>" + "tiger sharks" + "</col>" + ".");
+			}
+			break;
+			case 1:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1018_struct(1, 2309, "Bread", "You can now bake " + "<col=000080>" + "bread" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1018_struct(58, 1865, "Members: Pitta bread", "Members can now bake " + "<col=000080>" + "pitta bread" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "To make bread:", "");
+				case 3:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "1. Pick some grain and take it to a windmill to make flour.", "");
+				case 4:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "2. Use a pot to collect the flour you have made.", "");
+				case 5:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "3. Fill a bucket or jug with water from a sink or fountain.", "");
+				case 6:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "4. Mix the flour and water to make some bread dough.", "");
+				case 7:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "5. Cook the dough by using it with a stove.", "");
+			}
+			break;
+			case 2:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1018_struct(10, 2325, "Redberry pie", "You can now bake " + "<col=000080>" + "redberry pies" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1018_struct(20, 2327, "Meat pie", "You can now bake " + "<col=000080>" + "meat pies" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1018_struct(29, 7170, "Members: Mud pie", "Members can now bake " + "<col=000080>" + "mud pies" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1018_struct(30, 2323, "Apple pie", "You can now bake " + "<col=000080>" + "apple pies" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1018_struct(34, 7178, "Members: Garden pie", "Members can now bake " + "<col=000080>" + "garden pies" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1018_struct(47, 7188, "Members: Fish pie", "Members can now bake " + "<col=000080>" + "fish pies" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1018_struct(70, 7198, "Members: Admiral pie", "Members can now bake " + "<col=000080>" + "admiral pies" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1018_struct(85, 7208, "Members: Wild pie", "Members can now bake " + "<col=000080>" + "wild pies" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1018_struct(95, 7218, "Members: Summer pie", "Members can now bake " + "<col=000080>" + "summer pies" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "To make a pie:", "");
+				case 10:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "1. Mix flour and water to make pastry dough.", "");
+				case 11:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "2. Place the dough in an empty pie dish.", "");
+				case 12:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "3. Use your choice of filling with the empty pie (refer to pie recipe book).", "");
+				case 13:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "4. Cook the pie by using it with a stove.", "");
+			}
+			break;
+			case 3:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1018_struct(25, 2003, "Stew", "You can now make " + "<col=000080>" + "stews" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1018_struct(60, 2011, "Members: Curry", "Members can now make " + "<col=000080>" + "curries" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "To make stew:", "");
+				case 3:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "1. Obtain a bowl and fill it with water from a sink or fountain.", "");
+				case 4:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "2. Pick a potato and place it in the bowl.", "");
+				case 5:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "3. Cook some meat and place it in the bowl.", "");
+				case 6:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "4. Cook the stew by using it with a stove or fire.", "");
+				case 7:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "After completing Evil Dave's subquest from Recipe for Disaster, I can add spices to cooked stew.", "");
+				case 8:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "To make curry: make uncooked stew as above. Before cooking, add some spices or 3 curry leaves.", "");
+			}
+			break;
+			case 4:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1018_struct(35, 2289, "Plain pizza", "You can now cook " + "<col=000080>" + "plain pizzas" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1018_struct(45, 2293, "Meat pizza", "You can now cook " + "<col=000080>" + "meat pizzas" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1018_struct(55, 2297, "Anchovy pizza", "You can now cook " + "<col=000080>" + "anchovy pizzas" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1018_struct(65, 2301, "Members: Pineapple pizza", "Members can now make " + "<col=000080>" + "pineapple pizzas" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "To make a pizza:", "");
+				case 5:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "1. Mix flour and water to make a pizza base.", "");
+				case 6:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "2. Add a tomato to the pizza.", "");
+				case 7:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "3. Add some cheese to the pizza.", "");
+				case 8:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "4. Cook the pizza by using it with a stove.", "");
+				case 9:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "5. Add your choice of topping to the pizza.", "");
+			}
+			break;
+			case 5:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1018_struct(40, 1891, "Cake", "You can now bake " + "<col=000080>" + "cakes" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1018_struct(50, 1897, "Chocolate cake", "You can now bake " + "<col=000080>" + "chocolate cakes" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "To make a cake:", "");
+				case 3:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "1. Mix flour, eggs and milk together in a cake tin.", "");
+				case 4:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "2. Cook the cake by using it with a stove.", "");
+				case 5:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "3. Optional: Buy some chocolate and add it to the cake to make a chocolate cake.", "");
+			}
+			break;
+			case 6:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1018_struct(35, 1993, "Wine", "You can now ferment " + "<col=000080>" + "wine" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "To make wine:", "");
+				case 2:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "1. Fill a jug with water.", "");
+				case 3:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "2. Use grapes with the jug of water.", "");
+				case 4:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "3. Wait until the wine ferments.", "");
+				case 5:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "The wine will ferment while left in your inventory or the bank.", "");
+			}
+			break;
+			case 7:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1018_struct(20, 4242, "Nettle tea", "Members can now make " + "<col=000080>" + "nettle tea" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "To make nettle tea:", "");
+				case 2:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "1. Fill a bowl with water.", "");
+				case 3:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "2. Put some picked nettles into the bowl of water.", "");
+				case 4:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "3. Boil the nettle-water by using it with a range or a fire.", "");
+				case 5:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "4. Use the bowl of nettle tea with a cup.", "");
+				case 6:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "5. If you take milk, use a bucket of milk on the nettle tea.", "");
+			}
+			break;
+			case 8:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1018_struct(14, 5763, "Members: Cider" + "<br>" + "4 Apple mush", "Members can now make " + "<col=000080>" + "apple mush" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1018_struct(19, 1913, "Members: Dwarven Stout" + "<br>" + "4 Hammerstone hops", "Members can now brew " + "<col=000080>" + "Dwarven Stout" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1018_struct(24, 1905, "Members: Asgarnian Ale" + "<br>" + "4 Asgarnian hops", "Members can now brew " + "<col=000080>" + "Asgarnian Ale" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1018_struct(29, 1909, "Members: Greenman's Ale" + "<br>" + "4 Harralander leaves", "Members can now brew " + "<col=000080>" + "Greenman's Ale" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1018_struct(34, 1907, "Members: Wizard's mind bomb" + "<br>" + "4 Yanillian hops", "Members can now brew " + "<col=000080>" + "Wizard's Mind Bomb" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1018_struct(39, 1911, "Members: Dragon Bitter" + "<br>" + "4 Krandorian hops", "Members can now brew " + "<col=000080>" + "Dragon Bitter" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1018_struct(44, 2955, "Members: Moonlight Mead" + "<br>" + "4 Bittercap mushrooms", "Members can now brew " + "<col=000080>" + "Moonlight Mead" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1018_struct(49, 5751, "Members: Axeman's folly" + "<br>" + "1 Oak root", "Members can now brew " + "<col=000080>" + "Axeman's Folly" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1018_struct(54, 5755, "Members: Chef's Delight" + "<br>" + "4 Portions of chocolate dust", "Members can now brew " + "<col=000080>" + "Chef's Delight" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1018_struct(59, 5759, "Members: Slayer's Respite" + "<br>" + "4 Wildblood hops", "Members can now brew " + "<col=000080>" + "Slayer's Respite" + "</col>" + ".");
+			}
+			break;
+			case 9:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1018_struct(7, 6701, "Members: Baked potato", "Members can now cook " + "<col=000080>" + "baked potatoes" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1018_struct(9, 7072, "Members: Spicy sauce (topping ingredient)", "Members can now make " + "<col=000080>" + "spicy sauce" + "</col>" + " toppings.");
+				case 2:
+					return newstruct cs2func_script_1018_struct(11, 7062, "Members: Chilli con carne (topping)", "Members can now make " + "<col=000080>" + "chilli con carne" + "</col>" + " toppings.");
+				case 3:
+					return newstruct cs2func_script_1018_struct(13, 7078, "Members: Scrambled egg (topping ingredient)", "Members can now make " + "<col=000080>" + "scrambled egg" + "</col>" + " toppings.");
+				case 4:
+					return newstruct cs2func_script_1018_struct(23, 7064, "Members: Scrambled egg and tomato (topping)", "Members can now make " + "<col=000080>" + "scrambled egg and tomato" + "</col>" + " toppings.");
+				case 5:
+					return newstruct cs2func_script_1018_struct(28, 5988, "Members: Sweetcorn", "Members can now cook " + "<col=000080>" + "sweetcorn" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1018_struct(39, 6703, "Members: Baked potato with butter", "Members can now cook " + "<col=000080>" + "baked potatoes with butter" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1018_struct(41, 7054, "Members: Baked potato with chilli con carne", "Members can now cook " + "<col=000080>" + "baked potatoes with chilli con carne" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1018_struct(42, 7084, "Members: Fried onion (topping ingredient)", "Members can now make " + "<col=000080>" + "fried onion" + "</col>" + " toppings.");
+				case 9:
+					return newstruct cs2func_script_1018_struct(46, 7082, "Members: Fried mushroom (topping ingredient)", "Members can now make " + "<col=000080>" + "fried mushroom" + "</col>" + " toppings.");
+				case 10:
+					return newstruct cs2func_script_1018_struct(47, 6705, "Members: Baked potato with butter and cheese", "Members can now cook " + "<col=000080>" + "baked potatoes with butter and cheese" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_1018_struct(51, 7056, "Members: Baked potato with egg and tomato", "Members can now cook " + "<col=000080>" + "baked potatoes with egg and tomato" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_1018_struct(57, 7066, "Members: Fried mushroom and onion (topping)", "Members can now make " + "<col=000080>" + "fried mushroom and onion" + "</col>" + " toppings.");
+				case 13:
+					return newstruct cs2func_script_1018_struct(64, 7058, "Members: Baked potato with mushroom and onion", "Members can now cook " + "<col=000080>" + "baked potatoes with mushroom and onion" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_1018_struct(67, 7068, "Members: Tuna and sweetcorn (topping)", "Members can now make " + "<col=000080>" + "tuna and sweetcorn" + "</col>" + " toppings.");
+				case 15:
+					return newstruct cs2func_script_1018_struct(68, 7060, "Members: Baked potato with tuna and sweetcorn", "Members can now cook " + "<col=000080>" + "baked potatoes with tuna and sweetcorn" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "To make baked potatoes with toppings:", "");
+				case 17:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "1. Bake the potato on a range.", "");
+				case 18:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "2. Add some butter.", "");
+				case 19:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "3. If needed, combine topping ingredients by chopping them into a bowl.", "");
+				case 20:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "Ingredients for toppings:", "");
+				case 21:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "1. Chilli con carne: meat and spicy sauce (made from garlic and gnome spice)", "");
+				case 22:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "2. Egg and tomato: scrambled egg and tomato", "");
+				case 23:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "3. Mushroom and onion: fried bittercap mushroom and fried onion", "");
+				case 24:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "4. Tuna and sweetcorn: tuna and cooked sweetcorn", "");
+			}
+			break;
+			case 10:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1018_struct(4, 1977, "Members: Chocolate milk", "Members can now make " + "<col=000080>" + "chocolate milk" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1018_struct(21, 2130, "Members: Cream", "Members can now churn " + "<col=000080>" + "cream" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1018_struct(38, 6697, "Members: Butter", "Members can now churn " + "<col=000080>" + "butter" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1018_struct(48, 1985, "Members: Cheese", "Members can now churn " + "<col=000080>" + "cheese" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "To make churned dairy products:", " ");
+				case 5:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "1. Get a bucket of milk, a pot of cream or a pot of butter.", " ");
+				case 6:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "2. Use the milk, cream or butter in a churn.", " ");
+				case 7:
+					return newstruct cs2func_script_1018_struct(-1, 7620, "3. Milk can be churned into cream, then into butter, then into cheese.", " ");
+			}
+			break;
+			case 11:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1018_struct(6, 2084, "Members: Fruit Blast", "Members can now mix " + "<col=000080>" + "Fruit Blasts" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1018_struct(8, 2048, "Members: Pineapple punch", "Members can now mix " + "<col=000080>" + "pineapple punch" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1018_struct(10, 2217, "Members: Toad crunchies", "Members can now cook " + "<col=000080>" + "toad crunchies" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1018_struct(12, 2213, "Members: Spicy crunchies", "Members can now cook " + "<col=000080>" + "spicy crunchies" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1018_struct(14, 2205, "Members: Worm crunchies", "Members can now cook " + "<col=000080>" + "worm crunchies" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1018_struct(16, 2209, "Members: Chocolate chip crunchies", "Members can now cook " + "<col=000080>" + "chocolate chip crunchies" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1018_struct(18, 2054, "Members: Wizard Blizzard", "Members can now mix " + "<col=000080>" + "Wizard Blizzards" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1018_struct(20, 2080, "Members: Short Green Guy (SGG)", "Members can now mix " + "<col=000080>" + "Short Green Guys" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1018_struct(25, 2277, "Members: Fruit batta", "Members can now cook " + "<col=000080>" + "fruit battas" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1018_struct(26, 2255, "Members: Toad batta", "Members can now cook " + "<col=000080>" + "toad battas" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_1018_struct(27, 2253, "Members: Worm batta", "Members can now cook " + "<col=000080>" + "worm battas" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_1018_struct(28, 2281, "Members: Vegetable batta", "Members can now cook " + "<col=000080>" + "vegetable battas" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_1018_struct(29, 2259, "Members: Cheese and tomato batta", "Members can now cook " + "<col=000080>" + "cheese and tomato battas" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_1018_struct(30, 2191, "Members: Worm hole", "Members can now cook " + "<col=000080>" + "worm holes" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_1018_struct(32, 2092, "Members: Drunk Dragon", "Members can now mix " + "<col=000080>" + "Drunk Dragons" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_1018_struct(33, 2074, "Members: Chocolate Saturday", "Members can now mix " + "<col=000080>" + "Chocolate Saturdays" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_1018_struct(35, 2195, "Members: Vegetable ball", "Members can now cook " + "<col=000080>" + "vegetable balls" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_1018_struct(37, 2064, "Members: Blurberry Special", "Members can now mix " + "<col=000080>" + "Blurberry Specials" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_1018_struct(40, 2187, "Members: Tangled toads' legs", "Members can now cook " + "<col=000080>" + "tangled toads' legs" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_1018_struct(42, 2185, "Members: Chocolate bomb", "Members can now cook " + "<col=000080>" + "chocolate bombs" + "</col>" + ".");
+			}
+			break;
+			case 12:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1018_struct(91, 18778, "Members: Starved ancient effigies", "Members can now investigate " + "<col=000080>" + "starved ancient effigies" + "</col>" + " using their knowledge of Cooking.");
+				case 1:
+					return newstruct cs2func_script_1018_struct(93, 18779, "Members: Nourished ancient effigies", "Members can now investigate " + "<col=000080>" + "nourished ancient effigies" + "</col>" + " using their knowledge of Cooking." + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1018_struct(95, 18780, "Members: Sated ancient effigies", "Members can now investigate " + "<col=000080>" + "sated ancient effigies" + "</col>" + " using their knowledge of Cooking." + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1018_struct(97, 18781, "Members: Gorged ancient effigies", "Members can now investigate " + "<col=000080>" + "gorged ancient effigies" + "</col>" + " using their knowledge of Cooking." + "</col>" + ".");
+			}
+			break;
+			case 13:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1018_struct(1, 14162, "Members: Stealing Creation - class 1 food", "Members can now cook " + "<col=000080>" + "class 1 food" + "</col>" + " in Stealing Creation.");
+				case 1:
+					return newstruct cs2func_script_1018_struct(20, 14164, "Members: Stealing Creation - class 2 food", "Members can now cook " + "<col=000080>" + "class 2 food" + "</col>" + " in Stealing Creation.");
+				case 2:
+					return newstruct cs2func_script_1018_struct(40, 14166, "Members: Stealing Creation - class 3 food", "Members can now cook " + "<col=000080>" + "class 3 food" + "</col>" + " in Stealing Creation.");
+				case 3:
+					return newstruct cs2func_script_1018_struct(60, 14168, "Members: Stealing Creation - class 4 food", "Members can now cook " + "<col=000080>" + "class 4 food" + "</col>" + " in Stealing Creation.");
+				case 4:
+					return newstruct cs2func_script_1018_struct(80, 14170, "Members: Stealing Creation - class 5 food", "Members can now cook " + "<col=000080>" + "class 5 food" + "</col>" + " in Stealing Creation.");
+			}
+			break;
+			case 14:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1018_struct(-1, 15707, "Dungeoneering skill tasks" + "<br>" + "As your Cooking level increases, you will be able to attempt higher-level cooking tasks within Daemonheim. You will also be more likely to succeed when attempting cooking tasks within Daemonheim.", "");
+				case 1:
+					return newstruct cs2func_script_1018_struct(1, 18093, "Members: Cave potato", "Members can now cook " + "<col=000080>" + "cave potatoes" + "</col>" + " within Daemonheim.");
+				case 2:
+					return newstruct cs2func_script_1018_struct(1, 18159, "Heim crab (Tier 1)", "You can now cook " + "<col=000080>" + "heim crabs" + "</col>" + " within Daemonheim.");
+				case 3:
+					return newstruct cs2func_script_1018_struct(3, 18099, "Members: Heim crab potato (Tier 1)", "Members can now cook " + "<col=000080>" + "heim crab potatoes" + "</col>" + " within Daemonheim.");
+				case 4:
+					return newstruct cs2func_script_1018_struct(6, 18119, "Members: Heim crab & gissel potato (Tier 1)", "Members can now cook " + "<col=000080>" + "heim crab & gissel potatoes" + "</col>" + " within Daemonheim.");
+				case 5:
+					return newstruct cs2func_script_1018_struct(9, 18139, "Members: Heim crab & edicap potato (Tier 1)", "Members can now cook " + "<col=000080>" + "heim crab & edicap potatoes" + "</col>" + " within Daemonheim.");
+				case 6:
+					return newstruct cs2func_script_1018_struct(10, 18161, "Red-eye (Tier 2)", "You can now cook " + "<col=000080>" + "red-eyes" + "</col>" + " within Daemonheim.");
+				case 7:
+					return newstruct cs2func_script_1018_struct(13, 18101, "Members: Red-eye potato (Tier 2)", "Members can now cook " + "<col=000080>" + "red-eye potatoes" + "</col>" + " within Daemonheim.");
+				case 8:
+					return newstruct cs2func_script_1018_struct(16, 18121, "Members: Red-eye & gissel potato (Tier 2)", "Members can now cook " + "<col=000080>" + "red-eye & gissel potatoes" + "</col>" + " within Daemonheim.");
+				case 9:
+					return newstruct cs2func_script_1018_struct(19, 18141, "Members: Red-eye & edicap potato (Tier 2)", "Members can now cook " + "<col=000080>" + "red-eye & edicap potatoes" + "</col>" + " within Daemonheim.");
+				case 10:
+					return newstruct cs2func_script_1018_struct(20, 18163, "Dusk eel (Tier 3)", "You can now cook " + "<col=000080>" + "dusk eels" + "</col>" + " within Daemonheim.");
+				case 11:
+					return newstruct cs2func_script_1018_struct(23, 18103, "Members: Dusk eel potato (Tier 3)", "Members can now cook " + "<col=000080>" + "dusk eel potatoes" + "</col>" + " within Daemonheim.");
+				case 12:
+					return newstruct cs2func_script_1018_struct(26, 18123, "Members: Dusk eel & gissel potato (Tier 3)", "Members can now cook " + "<col=000080>" + "dusk eel & gissel potatoes" + "</col>" + " within Daemonheim.");
+				case 13:
+					return newstruct cs2func_script_1018_struct(29, 18143, "Members: Dusk eel & edicap potato (Tier 3)", "Members can now cook " + "<col=000080>" + "dusk eel & edicap potatoes" + "</col>" + " within Daemonheim.");
+				case 14:
+					return newstruct cs2func_script_1018_struct(30, 18165, "Giant flatfish (Tier 4)", "You can now cook " + "<col=000080>" + "giant flatfish" + "</col>" + " within Daemonheim.");
+				case 15:
+					return newstruct cs2func_script_1018_struct(33, 18105, "Members: Flatfish potato (Tier 4)", "Members can now cook " + "<col=000080>" + "flatfish potatoes" + "</col>" + " within Daemonheim.");
+				case 16:
+					return newstruct cs2func_script_1018_struct(36, 18125, "Members: Flatfish & gissel potato (Tier 4)", "Members can now cook " + "<col=000080>" + "flatfish & gissel potatoes" + "</col>" + " within Daemonheim.");
+				case 17:
+					return newstruct cs2func_script_1018_struct(39, 18145, "Members: Flatfish & edicap potato (Tier 4)", "Members can now cook " + "<col=000080>" + "flatfish & edicap potatoes" + "</col>" + " within Daemonheim.");
+				case 18:
+					return newstruct cs2func_script_1018_struct(40, 18167, "Short-finned eel (Tier 5)", "You can now cook " + "<col=000080>" + "short-finned eels" + "</col>" + " within Daemonheim.");
+				case 19:
+					return newstruct cs2func_script_1018_struct(43, 18107, "Members: Short-fin potato (Tier 5)", "Members can now cook " + "<col=000080>" + "short-fin potatoes" + "</col>" + " within Daemonheim.");
+				case 20:
+					return newstruct cs2func_script_1018_struct(46, 18127, "Members: Short-fin & gissel potato (Tier 5)", "Members can now cook " + "<col=000080>" + "short-fin & gissel potatoes" + "</col>" + " within Daemonheim.");
+				case 21:
+					return newstruct cs2func_script_1018_struct(49, 18147, "Members: Short-fin & edicap potato (Tier 5)", "Members can now cook " + "<col=000080>" + "short-fin & edicap potatoes" + "</col>" + " within Daemonheim.");
+				case 22:
+					return newstruct cs2func_script_1018_struct(50, 18169, "Members: Web snipper (Tier 6)", "Members can now cook " + "<col=000080>" + "web snippers" + "</col>" + " within Daemonheim.");
+				case 23:
+					return newstruct cs2func_script_1018_struct(53, 18109, "Members: Snipper potato (Tier 6)", "Members can now cook " + "<col=000080>" + "spinner potatoes" + "</col>" + " within Daemonheim.");
+				case 24:
+					return newstruct cs2func_script_1018_struct(56, 18129, "Members: Snipper & gissel potato (Tier 6)", "Members can now cook " + "<col=000080>" + "snipper & gissel potatoes" + "</col>" + " within Daemonheim.");
+				case 25:
+					return newstruct cs2func_script_1018_struct(59, 18149, "Members: Snipper & edicap potato (Tier 6)", "Members can now cook " + "<col=000080>" + "snipper & edicap potatoes" + "</col>" + " within Daemonheim.");
+				case 26:
+					return newstruct cs2func_script_1018_struct(60, 18171, "Members: Bouldabass (Tier 7)", "Members can now cook " + "<col=000080>" + "bouldabass" + "</col>" + " within Daemonheim.");
+				case 27:
+					return newstruct cs2func_script_1018_struct(63, 18111, "Members: Bouldabass potato (Tier 7)", "Members can now cook " + "<col=000080>" + "bouldabass potatoes" + "</col>" + " within Daemonheim.");
+				case 28:
+					return newstruct cs2func_script_1018_struct(66, 18131, "Members: Bouldabass & gissel potato (Tier 7)", "Members can now cook " + "<col=000080>" + "bouldabass & gissel potatoes" + "</col>" + " within Daemonheim.");
+				case 29:
+					return newstruct cs2func_script_1018_struct(69, 18151, "Members: Bouldabass & edicap potato (Tier 7)", "Members can now cook " + "<col=000080>" + "bouldabass & edicap potatoes" + "</col>" + " within Daemonheim.");
+				case 30:
+					return newstruct cs2func_script_1018_struct(70, 18173, "Members: Salve eel (Tier 8)", "Members can now cook " + "<col=000080>" + "salve eels" + "</col>" + " within Daemonheim.");
+				case 31:
+					return newstruct cs2func_script_1018_struct(73, 18113, "Members: Salve eel potato (Tier 8)", "Members can now cook " + "<col=000080>" + "salve eel potatoes" + "</col>" + " within Daemonheim.");
+				case 32:
+					return newstruct cs2func_script_1018_struct(76, 18133, "Members: Salve eel & gissel potato (Tier 8)", "Members can now cook " + "<col=000080>" + "salve eel & gissel potatoes" + "</col>" + " within Daemonheim.");
+				case 33:
+					return newstruct cs2func_script_1018_struct(79, 18153, "Members: Salve eel & edicap potato (Tier 8)", "Members can now cook " + "<col=000080>" + "salve eel & edicap potatoes" + "</col>" + " within Daemonheim.");
+				case 34:
+					return newstruct cs2func_script_1018_struct(80, 18175, "Members: Blue crab (Tier 9)", "Members can now cook " + "<col=000080>" + "blue crabs" + "</col>" + " within Daemonheim.");
+				case 35:
+					return newstruct cs2func_script_1018_struct(83, 18115, "Members: Blue crab potato (Tier 9)", "Members can now cook " + "<col=000080>" + "blue crab potatoes" + "</col>" + " within Daemonheim.");
+				case 36:
+					return newstruct cs2func_script_1018_struct(86, 18135, "Members: Blue crab & gissel potato (Tier 9)", "Members can now cook " + "<col=000080>" + "blue crab & gissel potatoes" + "</col>" + " within Daemonheim.");
+				case 37:
+					return newstruct cs2func_script_1018_struct(89, 18155, "Members: Blue crab & edicap potato (Tier 9)", "Members can now cook " + "<col=000080>" + "blue crab & edicap potatoes" + "</col>" + " within Daemonheim.");
+				case 38:
+					return newstruct cs2func_script_1018_struct(90, 18177, "Members: Cave moray (Tier 10)", "Members can now cook " + "<col=000080>" + "cave morays" + "</col>" + " within Daemonheim.");
+				case 39:
+					return newstruct cs2func_script_1018_struct(93, 18117, "Members: Moray potato (Tier 10)", "Members can now cook " + "<col=000080>" + "moray potatoes" + "</col>" + " within Daemonheim.");
+				case 40:
+					return newstruct cs2func_script_1018_struct(96, 18137, "Members: Moray & gissel potato (Tier 10)", "Members can now cook " + "<col=000080>" + "moray & gissel potatoes" + "</col>" + " within Daemonheim.");
+				case 41:
+					return newstruct cs2func_script_1018_struct(99, 18157, "Members: Moray & edicap potato (Tier 10)", "Members can now cook " + "<col=000080>" + "moray & edicap potatoes" + "</col>" + " within Daemonheim.");
+			}
+			break;
+			case 15:
+			SWITCH (arg1) {
+				case 0:
+					 GOTO flow_250
+				case 1:
+					 GOTO flow_251
+			}
+			break;
+		flow_250:
+			return newstruct cs2func_script_1018_struct(32, 1949, "Chefs' Guild", "You are now qualified to enter the prestigious " + "<col=000080>" + "Chefs' Guild" + "</col>" + ".");
+		flow_251:
+			return newstruct cs2func_script_1018_struct(99, 9801, "Skill mastery", "<col=000080>" + "Congratulations! You are now a master of " + "<col=800000>" + "Cooking" + "<col=000080>" + ". Members can visit the " + "<col=800000>" + "head chef" + "<col=000080>" + " at the " + "<col=800000>" + "Cooking Guild" + "<col=000080>" + ". He has something special that is only available to true masters of the " + "<col=800000>" + "Cooking" + "<col=000080>" + " skill!");
+	}
+	return newstruct cs2func_script_1018_struct(0, -1, "", "");
+}

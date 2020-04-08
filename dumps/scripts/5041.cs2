@@ -1,0 +1,94 @@
+void script_5041(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	string svar0;
+	setWidgetContextMenuOption(6, "Delete");
+	setWidgetIntegerNode(1474, arg1);
+	setWidgetIntegerNode(1475, arg2);
+	svar0 = getOtherCommonData(arg0, 1463);
+	cs2method1305("<col=ff9040>" + svar0);
+	ivar4 = -1;
+	switch (getOtherCommonData(arg0, 1466)) {
+		case 1:
+			setWidgetIntegerNode(1476, script_5020(arg3));
+			setWidgetIntegerNode(1477, script_5021(arg3));
+			ivar4 = getOtherCommonData(arg0, 1470);
+			if (ivar4 != -1) {
+				svar0 = concat(svar0, "<br>" + cs2method_3408(105, 115, ivar4, -1) + " " + cs2method_3408(105, 115, ivar4, script_5022(arg3)));
+			}
+			break;
+		case 2:
+			ivar4 = getOtherCommonData(arg0, 1470);
+			if (ivar4 != -1) {
+				svar0 = concat(svar0, "<br>" + cs2method_3408(105, 115, ivar4, -1) + " " + cs2method_3408(105, 115, ivar4, script_5023(arg3)));
+			}
+			ivar4 = getOtherCommonData(arg0, 1471);
+			if (ivar4 != -1) {
+				svar0 = concat(svar0, "<br>" + cs2method_3408(105, 115, ivar4, -1) + " " + cs2method_3408(105, 115, ivar4, script_5024(arg3)));
+			}
+			ivar4 = getOtherCommonData(arg0, 1472);
+			if (ivar4 != -1) {
+				svar0 = concat(svar0, "<br>" + cs2method_3408(105, 115, ivar4, -1) + " " + cs2method_3408(105, 115, ivar4, script_5025(arg3)));
+			}
+			break;
+		case 3:
+			ivar4 = getOtherCommonData(arg0, 1470);
+			if (ivar4 != -1) {
+				svar0 = concat(svar0, "<br>" + cs2method_3408(105, 115, ivar4, -1) + " " + cs2method_3408(105, 115, ivar4, script_5026(arg3)));
+			}
+			ivar4 = getOtherCommonData(arg0, 1471);
+			if (ivar4 != -1) {
+				svar0 = concat(svar0, "<br>" + cs2method_3408(105, 115, ivar4, -1) + " " + cs2method_3408(105, 115, ivar4, script_5027(arg3)));
+			}
+			ivar4 = getOtherCommonData(arg0, 1472);
+			if (ivar4 != -1) {
+				svar0 = concat(svar0, "<br>" + cs2method_3408(105, 115, ivar4, -1) + " " + cs2method_3408(105, 115, ivar4, script_5028(arg3)));
+			}
+			break;
+		case 4:
+			ivar4 = getOtherCommonData(arg0, 1470);
+			if (ivar4 != -1) {
+				svar0 = concat(svar0, "<br>" + cs2method_3408(105, 115, ivar4, -1) + " " + cs2method_3408(105, 115, ivar4, script_5029(arg3)));
+			}
+			ivar4 = getOtherCommonData(arg0, 1471);
+			if (ivar4 != -1) {
+				svar0 = concat(svar0, "<br>" + cs2method_3408(105, 115, ivar4, -1) + " " + cs2method_3408(105, 115, ivar4, script_5030(arg3)));
+			}
+			break;
+		case 5:
+			ivar4 = getOtherCommonData(arg0, 1470);
+			if (ivar4 != -1) {
+				svar0 = concat(svar0, "<br>" + cs2method_3408(105, 115, ivar4, -1) + " " + cs2method_3408(105, 115, ivar4, script_5031(arg3)));
+			}
+			ivar4 = getOtherCommonData(arg0, 1471);
+			if (ivar4 != -1) {
+				svar0 = concat(svar0, "<br>" + cs2method_3408(105, 115, ivar4, -1) + " " + cs2method_3408(105, 115, ivar4, script_5032(arg3)));
+			}
+			ivar4 = getOtherCommonData(arg0, 1472);
+			if (ivar4 != -1) {
+				svar0 = concat(svar0, "<br>" + cs2method_3408(105, 115, ivar4, -1) + " " + cs2method_3408(105, 115, ivar4, script_5033(arg3)));
+			}
+			break;
+		case 6:
+			ivar4 = getOtherCommonData(arg0, 1470);
+			if (ivar4 != -1) {
+				svar0 = concat(svar0, "<br>" + cs2method_3408(105, 115, ivar4, -1) + " " + cs2method_3408(105, 115, ivar4, script_5034(arg3)));
+			}
+			ivar4 = getOtherCommonData(arg0, 1471);
+			if (ivar4 != -1) {
+				svar0 = concat(svar0, "<br>" + cs2method_3408(105, 115, ivar4, -1) + " " + cs2method_3408(105, 115, ivar4, script_5035(arg3)));
+			}
+			ivar4 = getOtherCommonData(arg0, 1472);
+			if (ivar4 != -1) {
+				svar0 = concat(svar0, "<br>" + cs2method_3408(105, 115, ivar4, -1) + " " + cs2method_3408(105, 115, ivar4, script_5036(arg3)));
+			}
+			break;
+		default:
+			ivar4 = getOtherCommonData(arg0, 1470);
+			if (ivar4 != -1) {
+				svar0 = concat(svar0, "<br>" + cs2method_3408(105, 115, ivar4, -1) + " " + cs2method_3408(105, 115, ivar4, arg3));
+			}
+	}
+	setScriptCallOnMouseOver(5077, new WidgetPointer(-32768,3), -2147483643, svar0, -2147483647, -2147483646, "Iisii");
+	setScriptCallOnMouseExit(40, new WidgetPointer(1111,131), "I");
+	return;
+}

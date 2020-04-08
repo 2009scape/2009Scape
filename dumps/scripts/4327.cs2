@@ -1,0 +1,10 @@
+void script_4327(int arg0,int arg1) {
+	if (setWidgetRegister(new WidgetPointer(arg1), arg0)) {
+		if ((arg1 == 71368704) && (standart_config_2149 == arg0)) {
+			setWidgetSprite(6039);
+		} else {
+			setWidgetSprite(6036);
+		}
+	}
+	return;
+}

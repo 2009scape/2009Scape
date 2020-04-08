@@ -1,0 +1,58 @@
+void script_5347() {
+	int ivar0;
+	int ivar1;
+	flow_0:
+		ivar0 = -1;
+		ivar1 = -1;
+		SWITCH (getLanguage()) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_2
+			case 3:
+				 GOTO flow_3
+		}
+		ivar0 = 7790;
+		ivar1 = 7791;
+		GOTO	flow_4
+	flow_1:
+		ivar0 = 7794;
+		ivar1 = 7795;
+		GOTO	flow_4
+	flow_2:
+		ivar0 = 7792;
+		ivar1 = 7793;
+		GOTO	flow_4
+	flow_3:
+		ivar0 = 7796;
+		ivar1 = 7797;
+	flow_4:
+		SWITCH (globalint_1659) {
+			case 0:
+				 GOTO flow_5
+			case 1:
+				 GOTO flow_6
+			case 2:
+				 GOTO flow_7
+			case 3:
+				 GOTO flow_8
+		}
+		setWidgetText(new WidgetPointer(1143,11), "Sort By...");
+		GOTO	flow_9
+	flow_5:
+		setWidgetText(new WidgetPointer(1143,11), "Price: Low-High");
+		GOTO	flow_9
+	flow_6:
+		setWidgetText(new WidgetPointer(1143,11), "Price: High-Low");
+		GOTO	flow_9
+	flow_7:
+		setWidgetText(new WidgetPointer(1143,11), "Name: A-Z");
+		GOTO	flow_9
+	flow_8:
+		setWidgetText(new WidgetPointer(1143,11), "Name: Z-A");
+	flow_9:
+		setWidgetIsHidden(true, new WidgetPointer(1143,6));
+		setWidgetSprite(ivar0, new WidgetPointer(1143,70));
+		setWidgetSprite(ivar1, new WidgetPointer(1143,71));
+		return;
+}

@@ -1,0 +1,35 @@
+void script_4910(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar1 = 0;
+	ivar2 = 24;
+	ivar3 = 24;
+	if (getWidgetActualWidth(new WidgetPointer(arg0)) < ivar2) {
+		setWidgetSize(ivar2, getWidgetActualHeight(new WidgetPointer(arg0)), 0, 0, new WidgetPointer(arg0));
+	}
+	if (getWidgetActualHeight(new WidgetPointer(arg0)) < ivar3) {
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg0)), ivar3, 0, 0, new WidgetPointer(arg0));
+	}
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetSize(ivar2, ivar3, 0, 0);
+	setWidgetSprite(7599);
+	ivar1 = getExtraChildGap(new WidgetPointer(arg0));
+	createExtraChild(new WidgetPointer(arg0), 5, ivar1);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetSize(ivar2, ivar3, 0, 0);
+	setWidgetSprite(7600);
+	setScriptCallOnMouseEntered(4410, new WidgetPointer(arg0), ivar1, 0, "Iii");
+	setScriptCallOnMouseExit(4410, new WidgetPointer(arg0), ivar1, 1, "Iii");
+	cs2method2103(255);
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetSize(ivar2, ivar3, 0, 0);
+	setWidgetSprite(7601);
+	setScriptCallOnMousePressed(4207, new WidgetPointer(-32768,3), 0, "Ii");
+	setScriptCallOnMouseReleased(4207, new WidgetPointer(-32768,3), 1, "Ii");
+	cs2method2103(255);
+	return;
+}

@@ -1,0 +1,81 @@
+int script_4036(int arg0) {
+	int ivar1;
+	ivar1 = 0;
+	switch (arg0) {
+		case 1:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 2:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 3:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 4:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 5:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 6:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 7:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 8:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 9:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 10:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 11:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 12:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 13:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 14:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 15:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 16:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 17:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 18:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 19:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 20:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 21:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 22:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 23:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 24:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+			break;
+		case 25:
+			ivar1 = ((int)isBitFlagged(standart_config_1966, arg0));
+	}
+	return ivar1;
+}

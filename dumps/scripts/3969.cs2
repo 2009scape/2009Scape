@@ -1,0 +1,60 @@
+void script_3969() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	ivar0 = getWidgetShadeColor(new WidgetPointer(1055,13));
+	ivar1 = -1;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = -1;
+	if (isWidgetHidden(new WidgetPointer(1055,1))) {
+		if (ivar0 > 0) {
+			ivar2 = multiplyDivide(ivar0, 255, 100);
+			ivar2 = subtract(100, ivar2);
+			ivar3 = add(multiplyDivide(270, 100, ivar2), 10);
+			ivar4 = add(multiplyDivide(100, 100, ivar2), 10);
+			setWidgetSize(min(ivar3, 270), min(ivar4, 100), 0, 0, new WidgetPointer(1055,13));
+			ivar0 = max(subtract(ivar0, 8), 0);
+			cs2method2103(ivar0, new WidgetPointer(1055,13));
+		} else if (ivar1 != -1) {
+			setWidgetFilled(1, new WidgetPointer(1055,13));
+			cs2method2103(0, new WidgetPointer(1055,2));
+			cs2method2103(0, new WidgetPointer(1055,3));
+			cs2method2103(0, new WidgetPointer(1055,4));
+			cs2method2103(0, new WidgetPointer(1055,5));
+			cs2method2103(0, new WidgetPointer(1055,6));
+			cs2method2103(0, new WidgetPointer(1055,7));
+			cs2method2103(0, new WidgetPointer(1055,8));
+			cs2method2103(0, new WidgetPointer(1055,9));
+			cs2method2103(0, new WidgetPointer(1055,10));
+			cs2method2103(0, new WidgetPointer(1055,11));
+			setWidgetText(new WidgetPointer(1055,5), getOtherCommonData(ivar1, 1266));
+			if (getOtherCommonData(ivar1, 1270) != 4094) {
+				ivar5 = getOtherCommonData(cs2method_3408(105, 74, 2252, getOtherCommonData(ivar1, 1270)), 952);
+			} else {
+				ivar5 = getOtherCommonData(ivar1, 1271);
+			}
+			setWidgetSprite(ivar5, new WidgetPointer(1055,3));
+			setScriptCallOnGameloop(3970, "", new WidgetPointer(1055,0));
+			setWidgetIsHidden(false, new WidgetPointer(1055,1));
+		} else {
+			setScriptCallOnGameloop(-1, "", new WidgetPointer(1055,12));
+			setScriptCallOnGameloop(-1, "", new WidgetPointer(1055,0));
+			setWidgetIsHidden(true, new WidgetPointer(1055,1));
+			setWidgetIsHidden(true, new WidgetPointer(1055,12));
+		}
+		ivar1 = cs2method_3408(105, 74, 3483, globalint_1425);
+	} else if (ivar0 < 255) {
+		ivar0 = min(add(ivar0, 8), 255);
+		cs2method2103(ivar0, new WidgetPointer(1055,13));
+	} else {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(1055,12));
+		setWidgetFilled(0, new WidgetPointer(1055,13));
+		setWidgetIsHidden(true, new WidgetPointer(1055,12));
+	}
+	return;
+}

@@ -1,0 +1,16 @@
+void script_409() {
+	globalint_1364 = add(globalint_1364, 1);
+	if (globalint_1364 == 50) {
+		setWidgetText(new WidgetPointer(1010,41), "Opponent's Turn");
+	} else if (globalint_1364 == 100) {
+		setWidgetText(new WidgetPointer(1010,41), "Opponent's Turn.");
+	} else if (globalint_1364 == 150) {
+		setWidgetText(new WidgetPointer(1010,41), "Opponent's Turn..");
+	} else {
+		if (globalint_1364 >= 200) {
+			setWidgetText(new WidgetPointer(1010,41), "Opponent's Turn...");
+			globalint_1364 = 0;
+		}
+	}
+	return;
+}

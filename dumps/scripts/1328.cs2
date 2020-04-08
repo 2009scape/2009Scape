@@ -1,0 +1,107 @@
+void script_1328(int arg0) {
+	int ivar1;
+	int ivar2;
+	string svar0;
+	string svar1;
+	int stack_dump0;
+	previousAndCurrentName(0,2,0) structdump_1;
+	if ((((((isWidgetHidden(new WidgetPointer(906,41)) || isWidgetHidden(new WidgetPointer(906,42))) || isWidgetHidden(new WidgetPointer(906,43))) || isWidgetHidden(new WidgetPointer(906,29))) || isWidgetHidden(new WidgetPointer(906,45))) || isWidgetHidden(new WidgetPointer(906,55))) || isWidgetHidden(new WidgetPointer(906,56))) {
+		return;
+	}
+	ivar1 = -1;
+	if (arg0 == 80) {
+		if (isWidgetHidden(new WidgetPointer(906,185))) {
+			ivar1 = 0;
+		}
+		if (isWidgetHidden(new WidgetPointer(906,186))) {
+			ivar1 = 1;
+		}
+		if (isWidgetHidden(new WidgetPointer(906,187))) {
+			ivar1 = 2;
+		}
+		if (isWidgetHidden(new WidgetPointer(906,188))) {
+			ivar1 = 3;
+		}
+		if (isWidgetHidden(new WidgetPointer(906,189))) {
+			ivar1 = 5;
+		}
+		if (isWidgetHidden(new WidgetPointer(906,190))) {
+			ivar1 = 4;
+		}
+		if (isHoldingCtrl()) {
+			switch (ivar1) {
+				case 0:
+					script_3060(1);
+					return;
+				case 1:
+					script_3060(2);
+					return;
+				case 2:
+					script_3060(3);
+					return;
+				case 3:
+					script_3060(5);
+					return;
+				case 5:
+					script_3060(4);
+					return;
+				case 4:
+					script_3060(0);
+					return;
+			}
+			script_3060(0);
+			return;
+		}
+		switch (ivar1) {
+			case 0:
+				script_3060(4);
+				return;
+			case 1:
+				script_3060(0);
+				return;
+			case 2:
+				script_3060(1);
+				return;
+			case 3:
+				script_3060(2);
+				return;
+			case 5:
+				script_3060(3);
+				return;
+			case 4:
+				script_3060(5);
+				return;
+		}
+		script_3060(0);
+		return;
+	}
+	ivar2 = 0;
+	svar0 = "";
+	svar1 = "";
+	if ((arg0 == 84) && isWidgetHidden(new WidgetPointer(906,187))) {
+		if (strLength(globalstring_276) > 0) {
+			ivar2 = cs2method3628(globalstring_276);
+			if ((ivar2 != -1) && cs2method6900()) {
+				stack_dump0 = ivar2;
+				structdump_1 = getFriendName(stack_dump0);
+				svar1 = structdump_1.stringpart_1;
+				svar0 = structdump_1.stringpart_0;
+				script_3015(0, "Send message to " + svar0, "", globalstring_276, "");
+				return;
+			}
+			if (globalint_1271 > subtract(getClientCycle(), 100)) {
+				return;
+			}
+			messageType0("That player is not on your Friends list.");
+			globalint_1271 = getClientCycle();
+			return;
+		}
+		if (globalint_1271 > subtract(getClientCycle(), 100)) {
+			return;
+		}
+		messageType0("You haven't received any messages to which you can reply.");
+		globalint_1271 = getClientCycle();
+		return;
+	}
+	return;
+}

@@ -1,0 +1,60 @@
+void script_1540(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	string svar0;
+	string svar1;
+	string stack_dump0;
+	int stack_dump1;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar1 = divide(subtract(getWidgetActualWidth(new WidgetPointer(arg0)), multiply(36, 4)), 3);
+	ivar2 = divide(subtract(getWidgetActualHeight(new WidgetPointer(arg0)), multiply(32, 7)), 6);
+	ivar3 = 0;
+	ivar4 = getItemContainerLength(93);
+	ivar5 = -1;
+	ivar6 = 0;
+	svar0 = "";
+	svar1 = "";
+	while (ivar3 < ivar4) {
+		createExtraChild(new WidgetPointer(arg0), 5, ivar3);
+		setWidgetSize(36, 32, 0, 0);
+		setWidgetPosition(multiply(add(36, ivar1), mod(ivar3, 4)), multiply(divide(ivar3, 4), add(32, ivar2)), 0, 0);
+		ivar5 = getItemIdInSlot(93, ivar3);
+		if (ivar5 != -1) {
+			ivar6 = getItemAmtInContainer(93, ivar5);
+			stack_dump0 = getItemHashmapData(ivar5, 1264);
+			svar1 = getItemHashmapData(ivar5, 1265);
+			svar0 = stack_dump0;
+			if (strLength(svar0) <= 0) {
+				if (isBitFlagged(globalint_96, ivar3)) {
+					svar0 = getItemOption(ivar5, 2);
+				} else {
+					if (isBitFlagged(globalint_95, ivar3)) {
+						svar0 = "Eat";
+					}
+				}
+			}
+		} else {
+			stack_dump1 = 0;
+			stack_dump0 = "";
+			svar1 = "";
+			stack_dump1 = stack_dump1;
+			svar0 = stack_dump0;
+			ivar6 = stack_dump1;
+		}
+		if (ivar6 > 5) {
+			script_154(93, ivar3, arg0, ivar3, 1, -1, "Deposit-1", "Deposit-5", "Deposit-10", "Deposit-" + intToStr(standart_config_1249), "Deposit-X", "Deposit-All", "", svar0, svar1);
+		} else if (ivar6 > 1) {
+			script_154(93, ivar3, arg0, ivar3, 1, -1, "Deposit-1", "Deposit-5", "", "Deposit-" + intToStr(standart_config_1249), "Deposit-X", "Deposit-All", "", svar0, svar1);
+		} else {
+			script_154(93, ivar3, arg0, ivar3, 1, -1, "Deposit", "", "", "", "", "", "", svar0, svar1);
+		}
+		ivar3 = add(ivar3, 1);
+	}
+	return;
+}

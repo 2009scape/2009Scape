@@ -1,0 +1,32 @@
+void script_2676(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = 0;
+	switch (arg1) {
+		case 1:
+			ivar2 = standart_config_1485;
+			break;
+		case 2:
+			ivar2 = standart_config_1486;
+			break;
+		case 3:
+			ivar2 = standart_config_1487;
+			break;
+		case 4:
+			ivar2 = standart_config_1488;
+			break;
+		case 5:
+			ivar2 = standart_config_1489;
+			break;
+		case 6:
+			ivar2 = standart_config_1490;
+			break;
+		case 7:
+			ivar2 = standart_config_1491;
+	}
+	if (((boolean)ivar2)) {
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(arg0));
+	}
+	return;
+}

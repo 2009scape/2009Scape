@@ -1,0 +1,95 @@
+void script_2643() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	ivar0 = 900;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	globalint_842 = 2;
+	ivar4 = -1;
+	script_2645(56360984);
+	deleteAllExtraChilds(new WidgetPointer(860,23));
+	setWidgetText(new WidgetPointer(860,19), "A list of items you can trade with Mal for investment credit." + "<br>" + "Items highlighted with a green rectangle are present in your bank or inventory.");
+	ivar1 = divide(subtract(getWidgetActualWidth(new WidgetPointer(860,23)), multiply(36, 10)), 10);
+	ivar2 = divide(subtract(getWidgetActualHeight(new WidgetPointer(860,23)), 128), 3);
+	ivar5 = 3;
+	ivar6 = 3;
+	ivar7 = 0;
+	while ((((boolean)ivar3) && (ivar0 >= 900)) && (ivar0 < 1800)) {
+		ivar4 = cs2method_3408(105, 111, 1939, ivar0);
+		if ((ivar4 != 11760) && (ivar4 != -1)) {
+			createExtraChild(new WidgetPointer(860,23), 5, subtract(ivar0, 900));
+			setWidgetSize(36, 32, 0, 0);
+			setWidgetPosition(add(ivar5, multiply(add(36, ivar1), mod(subtract(ivar0, 900), 10))), add(ivar6, multiply(divide(subtract(ivar0, 900), 10), add(32, ivar2))), 0, 0);
+			setItemOnWidgetMethod1200(ivar4, -1);
+			cs2method1305("<col=ff981f>" + getItemName(ivar4));
+			setWidgetContextMenuOption(1, "Examine");
+			setWidgetShadowColor(new Color(51, 51, 51));
+			setWidgetBorderThickness(1);
+			ivar7 = getWidgetActualY();
+			ivar0 = add(ivar0, 1);
+		} else {
+			ivar3 = 1;
+		}
+	}
+	ivar8 = 0;
+	ivar9 = 9999;
+	ivar10 = 0;
+	ivar11 = 0;
+	while (ivar8 <= getItemContainerLength(93)) {
+		if (getItemIdInSlot(93, ivar8) != -1) {
+			ivar9 = cs2method_3408(111, 105, 1941, getItemIdInSlot(93, ivar8));
+			if ((ivar9 != 9999) && (ivar9 >= 900)) {
+				ivar9 = subtract(ivar9, 900);
+				if (setWidgetRegister(new WidgetPointer(860,23), ivar9)) {
+					ivar10 = getWidgetActualX();
+					ivar11 = getWidgetActualY();
+					setWidgetBorderThickness(2);
+					createExtraChild(new WidgetPointer(860,23), 3, subtract(ivar0, 900));
+					setWidgetSize(36, 32, 0, 0);
+					setWidgetPosition(subtract(ivar10, 1), subtract(ivar11, 1), 0, 0);
+					setWidgetRGB(new Color(102, 255, 102));
+					cs2method2103(150);
+					ivar0 = add(ivar0, 1);
+				}
+			}
+		}
+		ivar8 = add(ivar8, 1);
+	}
+	ivar8 = 0;
+	ivar9 = 9999;
+	while (ivar8 <= getItemContainerLength(95)) {
+		if (getItemIdInSlot(95, ivar8) != -1) {
+			ivar9 = cs2method_3408(111, 105, 1941, getItemIdInSlot(95, ivar8));
+			if ((ivar9 != 9999) && (ivar9 >= 900)) {
+				ivar9 = subtract(ivar9, 900);
+				if (setWidgetRegister(new WidgetPointer(860,23), ivar9)) {
+					ivar10 = getWidgetActualX();
+					ivar11 = getWidgetActualY();
+					setWidgetBorderThickness(2);
+					createExtraChild(new WidgetPointer(860,23), 3, subtract(ivar0, 900));
+					setWidgetSize(36, 32, 0, 0);
+					setWidgetPosition(subtract(ivar10, 1), subtract(ivar11, 1), 0, 0);
+					setWidgetRGB(new Color(102, 255, 102));
+					cs2method2103(150);
+					ivar0 = add(ivar0, 1);
+				}
+			}
+		}
+		ivar8 = add(ivar8, 1);
+	}
+	setWidgetScrollMax(getWidgetActualWidth(new WidgetPointer(860,23)), add(ivar7, 32), new WidgetPointer(860,23));
+	cs2method2100(0, 0, new WidgetPointer(860,23));
+	script_31(56360982, 56360983, 792, 789, 790, 791, 773, 788);
+	return;
+}

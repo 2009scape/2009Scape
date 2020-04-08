@@ -1,0 +1,10 @@
+void script_5052(int arg0,int arg1) {
+	if (setWidgetRegister(new WidgetPointer(arg0), 3)) {
+		if (((boolean)arg1)) {
+			cs2method3109(0, divide(getWidgetActualHeight(), 2));
+		} else {
+			cs2method3109(divide(getWidgetActualWidth(), 2), 0);
+		}
+	}
+	return;
+}

@@ -1,0 +1,8 @@
+void script_2580() {
+	setWidgetRGB(new Color(102, 102, 102), new WidgetPointer(292,116));
+	setWidgetNoOptions(new WidgetPointer(292,110));
+	setWidgetNoOptions(new WidgetPointer(292,111));
+	setScriptCallOnMousePressed(2606, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,110));
+	setScriptCallOnMousePressed(2606, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,111));
+	return;
+}

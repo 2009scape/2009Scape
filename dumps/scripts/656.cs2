@@ -1,0 +1,9 @@
+void script_656() {
+	if (setWidgetRegister(new WidgetPointer(662,74), 0)) {
+		deleteExtraChild();
+	}
+	if (setWidgetRegister(new WidgetPointer(747,17), 0)) {
+		deleteExtraChild();
+	}
+	return;
+}

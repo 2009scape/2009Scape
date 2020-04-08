@@ -1,0 +1,12 @@
+string script_940(int arg0) {
+	if (arg0 < 0) {
+		return "";
+	}
+	if (arg0 < 10000) {
+		return intToStr(arg0);
+	}
+	if (arg0 < 10000000) {
+		return concat(intToStr(divide(arg0, 1000)), "K");
+	}
+	return concat(intToStr(divide(arg0, 1000000)), "M");
+}

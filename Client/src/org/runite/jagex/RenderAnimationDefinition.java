@@ -454,7 +454,6 @@ final class RenderAnimationDefinition {
             if(var1 >= -57) {
                method897(-13, (Class3_Sub24_Sub4)null, (CacheIndex)null, (CacheIndex)null, (CacheIndex)null);
             }
-
             return Class67.method1261(0, var0.length, var0, 2774);
          } else {
             throw new IllegalArgumentException();

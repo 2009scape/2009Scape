@@ -1,0 +1,31 @@
+void script_2930(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9) {
+	int ivar10;
+	if (arg7 < arg8) {
+		arg7 = add(arg7, 1);
+		setScriptCallOnGameloop(2930, new WidgetPointer(arg0), arg1, arg2, new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), arg6, arg7, arg8, arg9, "I1iIIIiiii", new WidgetPointer(arg0));
+		return;
+	}
+	ivar10 = getWidgetActualWidth(new WidgetPointer(arg0));
+	if (((boolean)arg1)) {
+		if (subtract(ivar10, arg2) < arg6) {
+			setWidgetSize(min(add(ivar10, arg9), add(arg6, arg2)), 31, 0, 0, new WidgetPointer(arg0));
+		} else {
+			setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+			setWidgetSize(add(arg6, arg2), 31, 0, 0, new WidgetPointer(arg0));
+		}
+		setWidgetSprite(2569, new WidgetPointer(arg3));
+		setWidgetSprite(2568, new WidgetPointer(arg4));
+		setWidgetSprite(2568, new WidgetPointer(arg5));
+	} else {
+		if (ivar10 > 32) {
+			setWidgetSize(max(subtract(ivar10, arg9), 32), 31, 0, 0, new WidgetPointer(arg0));
+		} else {
+			setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+			setWidgetSize(32, 31, 0, 0, new WidgetPointer(arg0));
+		}
+		setWidgetSprite(2567, new WidgetPointer(arg3));
+		setWidgetSprite(2566, new WidgetPointer(arg4));
+		setWidgetSprite(2566, new WidgetPointer(arg5));
+	}
+	return;
+}

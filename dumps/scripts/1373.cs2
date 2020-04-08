@@ -1,0 +1,8 @@
+void script_1373() {
+	if (isWidgetHidden(new WidgetPointer(755,46))) {
+		script_1374(1);
+	} else {
+		script_1374(0);
+	}
+	return;
+}

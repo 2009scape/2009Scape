@@ -1,0 +1,26 @@
+void script_1235(int arg0) {
+	setWidgetIsHidden(false, new WidgetPointer(181,1));
+	switch (globalint_180) {
+		case 1:
+			setWidget3DRotation(0, 0, 510, 762, 0, 410, new WidgetPointer(arg0));
+			break;
+		case 2:
+			setWidget3DRotation(0, 0, 514, 1241, 0, 410, new WidgetPointer(arg0));
+			break;
+		case 3:
+			setWidget3DRotation(0, 0, 512, 1536, 1250, 410, new WidgetPointer(arg0));
+			break;
+		case 4:
+			setWidget3DRotation(0, 0, 512, 0, 1250, 410, new WidgetPointer(arg0));
+			break;
+		case 5:
+			setWidget3DRotation(0, 0, 512, 512, 1250, 410, new WidgetPointer(arg0));
+			break;
+		case 6:
+			setWidget3DRotation(0, 0, 512, 1024, 1250, 410, new WidgetPointer(arg0));
+			break;
+		default:
+			setWidgetIsHidden(true, new WidgetPointer(181,1));
+	}
+	return;
+}

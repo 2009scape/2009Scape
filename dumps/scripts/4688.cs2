@@ -1,0 +1,83 @@
+void script_4688() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = -1;
+	ivar3 = -1;
+	ivar4 = -1;
+	ivar5 = -1;
+	ivar6 = -1;
+	ivar7 = 1;
+	while (ivar7 < 5) {
+		switch (ivar7) {
+			case 1:
+				ivar6 = 36110354;
+				ivar0 = globalint_1549;
+				ivar1 = cs2method_3408(105, 105, 3856, ivar7);
+				ivar2 = 36110353;
+				ivar3 = 36110355;
+				ivar4 = 36110351;
+				ivar5 = 36110352;
+				break;
+			case 2:
+				ivar6 = 36110380;
+				ivar0 = globalint_1550;
+				ivar1 = cs2method_3408(105, 105, 3856, ivar7);
+				ivar2 = 36110379;
+				ivar3 = 36110381;
+				ivar4 = 36110377;
+				ivar5 = 36110378;
+				break;
+			case 3:
+				ivar6 = 36110394;
+				ivar0 = globalint_1551;
+				ivar1 = cs2method_3408(105, 105, 3856, ivar7);
+				ivar2 = 36110393;
+				ivar3 = 36110395;
+				ivar4 = 36110391;
+				ivar5 = 36110392;
+				break;
+			case 4:
+				ivar6 = 36110408;
+				ivar0 = globalint_1552;
+				ivar1 = cs2method_3408(105, 105, 3856, ivar7);
+				ivar2 = 36110407;
+				ivar3 = 36110409;
+				ivar4 = 36110405;
+				ivar5 = 36110406;
+				break;
+			default:
+				return;
+		}
+		if (setWidgetRegister(new WidgetPointer(ivar6))) {
+			if (ivar0 > 0) {
+				setWidgetHidden(0);
+				setWidgetFilled(1);
+				setWidgetSize(getWidgetActualWidth(), divide(multiply(ivar0, 26), 100), 0, 0);
+			} else {
+				setWidgetHidden(1);
+				setWidgetFilled(0);
+				setWidgetSize(getWidgetActualWidth(), 26, 0, 0);
+			}
+		}
+		if ((ivar0 > 0) || (bitconfig_9465 < ivar1)) {
+			setWidgetIsHidden(false, new WidgetPointer(ivar3));
+			setWidgetRGB(new Color(125, 125, 125), new WidgetPointer(ivar4));
+			setWidgetRGB(new Color(125, 125, 125), new WidgetPointer(ivar5));
+		} else {
+			setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(ivar2));
+			setWidgetIsHidden(true, new WidgetPointer(ivar3));
+			setWidgetRGB(new Color(235, 224, 188), new WidgetPointer(ivar4));
+			setWidgetRGB(new Color(235, 224, 188), new WidgetPointer(ivar5));
+		}
+		ivar7 = add(ivar7, 1);
+	}
+	return;
+}

@@ -1,0 +1,8 @@
+void script_2441() {
+	if (globalint_820 < 2) {
+		setWidgetText(new WidgetPointer(15,18), "Time Left: ~1 Min");
+	} else {
+		setWidgetText(new WidgetPointer(15,18), "Time Left: " + intToStr(globalint_820) + " Mins");
+	}
+	return;
+}

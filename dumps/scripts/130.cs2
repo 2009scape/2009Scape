@@ -1,0 +1,4 @@
+void script_130(string arg0) {
+	cs2method3608(strRemoveEntities(arg0));
+	return;
+}

@@ -1,0 +1,94 @@
+void script_3220() {
+	int ivar0;
+	int ivar1;
+	string svar0;
+	string svar1;
+	flow_0:
+		ivar0 = getAccountCreateRC();
+		if (ivar0 == -3) {
+			return;
+		}
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(673,26));
+		ivar1 = 0;
+		svar0 = "accountappeal";
+		svar1 = "passwordchoice.ws";
+		IF (ivar0 == 2) 
+			GOTO	flow_3
+		GOTO	flow_4
+	flow_3:
+		cs2method5430();
+		script_2223();
+		GOTO	flow_20
+	flow_4:
+		SWITCH (ivar0) {
+			case 3:
+				 GOTO flow_5
+			case -4:
+				 GOTO flow_5
+			case -1:
+				 GOTO flow_5
+			case -5:
+				 GOTO flow_6
+			case 7:
+				 GOTO flow_7
+			case 38:
+				 GOTO flow_8
+			case 9:
+				 GOTO flow_8
+			case 20:
+				 GOTO flow_9
+			case 21:
+				 GOTO flow_10
+			case 37:
+				 GOTO flow_11
+			case 30:
+				 GOTO flow_12
+			case 31:
+				 GOTO flow_18
+			case 32:
+				 GOTO flow_19
+			case 33:
+				 GOTO flow_19
+		}
+		script_3213(44105822, "Unexpected server response.");
+		GOTO	flow_20
+	flow_5:
+		script_3213(44105822, "Error contacting server.");
+		GOTO	flow_20
+	flow_6:
+		script_3213(44105822, "No response from server.");
+		GOTO	flow_20
+	flow_7:
+		script_3213(44105822, "The server is currently very busy. Please try again shortly.");
+		GOTO	flow_20
+	flow_8:
+		script_3213(44105822, "You cannot create an account at this time. Please try again later.");
+		GOTO	flow_20
+	flow_9:
+		script_3213(44105822, "Email already in use. Try a different email or click " + "<u=ebe0bc>" + "here" + "</u>" + " to recover this account.");
+		GOTO	flow_20
+	flow_10:
+		script_3213(44105822, "Please enter a valid Email address.");
+		GOTO	flow_20
+	flow_11:
+		script_3213(44105822, "RuneScape has been updated. Please reload this page.");
+		GOTO	flow_20
+	flow_12:
+		ivar1 = strLength(globalstring_124);
+		if (ivar1 < 5) {
+			script_3213(44105812, "Passwords must be at least 5 characters long.");
+		} else if (ivar1 > 20) {
+			script_3213(44105812, "Passwords must be no more than " + intToStr(20) + " characters long.");
+		} else {
+			script_3213(44105812, "Please supply a valid password.");
+		}
+		GOTO	flow_20
+	flow_18:
+		script_3213(44105812, "Passwords may only contain letters and numbers.");
+		GOTO	flow_20
+	flow_19:
+		script_3213(44105812, "Your password is too easy to guess.");
+	flow_20:
+		script_3208(0);
+		return;
+}

@@ -1,0 +1,22 @@
+void script_3953(int arg0) {
+	globalstring_327 = globalstring_326;
+	if (strLength(globalstring_326) <= 0) {
+		script_3213(44105841, "Please enter your Email address again here.");
+		return;
+	}
+	if (stringMethod4107(globalstring_122, globalstring_326) != 0) {
+		script_3213(44105841, "Please ensure both Email addresses match.");
+		return;
+	}
+	if (getWidgetSpriteId(new WidgetPointer(673,94)) == 4061) {
+		script_3213(44105841, getWidgetText(new WidgetPointer(673,137)));
+		return;
+	}
+	setWidgetSprite(4059, new WidgetPointer(673,113));
+	setWidgetIsHidden(true, new WidgetPointer(673,118));
+	setWidgetIsHidden(true, new WidgetPointer(673,31));
+	if (((boolean)arg0)) {
+		script_2714(7, 1);
+	}
+	return;
+}

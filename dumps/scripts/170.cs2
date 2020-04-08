@@ -1,0 +1,14 @@
+void script_170() {
+	if (((boolean)bitconfig_3905)) {
+		setWidgetText(new WidgetPointer(588,7), intToStr(bitconfig_3901) + "/5");
+	} else if (bitconfig_3905 == 2) {
+		setWidgetText(new WidgetPointer(588,7), intToStr(bitconfig_3902) + "/5");
+	} else if (bitconfig_3905 == 3) {
+		setWidgetText(new WidgetPointer(588,7), intToStr(bitconfig_3903) + "/5");
+	} else {
+		if (bitconfig_3905 == 4) {
+			setWidgetText(new WidgetPointer(588,7), intToStr(bitconfig_3904) + "/5");
+		}
+	}
+	return;
+}

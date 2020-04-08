@@ -1,0 +1,5 @@
+void script_3068(int arg0) {
+	setWidgetSprite(4662, new WidgetPointer(arg0));
+	script_3083(arg0, -1, "Click here to login to your favourite world");
+	return;
+}

@@ -1,0 +1,12 @@
+int script_807(int arg0) {
+	int ivar1;
+	ivar1 = 0;
+	if (getSkillActualLvl(arg0) > 0) {
+		if (arg0 == 5) {
+			ivar1 = divide(multiply(100, bitconfig_9816), script_5255());
+		} else {
+			ivar1 = divide(multiply(100, getSkillCurrentLvl(arg0)), getSkillActualLvl(arg0));
+		}
+	}
+	return ivar1;
+}

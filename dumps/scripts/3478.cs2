@@ -1,0 +1,8 @@
+void script_3478(int arg0,int arg1,int arg2,int arg3) {
+	createExtraChild(new WidgetPointer(arg0), 3, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(6, 6, 0, 0);
+	setWidgetRGB(new Color(arg3));
+	setWidgetFilled(1);
+	setWidgetPosition(multiply(arg1, 16), multiply(arg2, 16), 1, 1);
+	return;
+}

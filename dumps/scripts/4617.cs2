@@ -1,0 +1,15 @@
+int script_4617(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int stack_dump0;
+	int stack_dump1;
+	cs2func_script_4618_struct(2,0,0) structdump_2;
+	ivar2 = arg0;
+	ivar3 = arg1;
+	stack_dump0 = arg0;
+	stack_dump1 = arg1;
+	structdump_2 = script_4618(stack_dump0, stack_dump1);
+	ivar3 = structdump_2.intpart_1;
+	ivar2 = structdump_2.intpart_0;
+	return add(daysSinceReleaseToMillis(ivar2), ivar3);
+}

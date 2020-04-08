@@ -1,0 +1,57 @@
+void script_1465() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	string svar0;
+	string svar1;
+	string svar2;
+	svar0 = "Total number of " + "<col=ba1626>" + "free" + "</col>" + " bank slots used";
+	svar1 = "Total number of " + "<col=ba1626>" + "member" + "</col>" + " bank slots used";
+	svar2 = "Total number of " + "<col=ba1626>" + "demo" + "</col>" + " bank slots used";
+	ivar0 = 0;
+	ivar1 = 0;
+	if (((boolean)script_3287())) {
+		ivar0 = add(subtract(516, 439), 1);
+		ivar1 = subtract(516, ivar0);
+	} else {
+		ivar0 = subtract(add(subtract(516, 439), 1), 10);
+		ivar1 = subtract(subtract(516, 10), ivar0);
+	}
+	ivar2 = globalint_1038;
+	ivar3 = subtract(globalint_192, ivar2);
+	ivar4 = multiply(subtract(ivar0, ivar2), -1);
+	ivar5 = subtract(ivar3, subtract(439, 1));
+	setWidgetIsHidden(false, new WidgetPointer(762,22));
+	setWidgetIsHidden(true, new WidgetPointer(762,23));
+	if (ivar5 > 0) {
+		ivar2 = add(ivar2, ivar5);
+		ivar3 = subtract(439, 1);
+		if (((boolean)ivar5)) {
+			svar0 = "Total number of " + "<col=ba1626>" + "free" + "</col>" + " bank slots used" + "<br>" + "<col=ba1626>" + "Note: this includes an overflow of 1 member item" + "</col>";
+		} else {
+			svar0 = "Total number of " + "<col=ba1626>" + "free" + "</col>" + " bank slots used" + "<br>" + "<col=ba1626>" + "Note: this includes an overflow of " + intToStr(ivar5) + " member items" + "</col>";
+		}
+		svar1 = "Total number of " + "<col=ba1626>" + "member" + "</col>" + " bank slots used";
+	} else {
+		if (ivar4 > 0) {
+			ivar3 = add(ivar3, ivar4);
+			ivar2 = ivar0;
+			svar0 = "Total number of " + "<col=ba1626>" + "free" + "</col>" + " bank slots used";
+			if (((boolean)ivar4)) {
+				svar1 = "Total number of " + "<col=ba1626>" + "member" + "</col>" + " bank slots used" + "<br>" + "<col=ba1626>" + "Note: this includes an overflow of 1 free item" + "</col>";
+			} else {
+				svar1 = "Total number of " + "<col=ba1626>" + "member" + "</col>" + " bank slots used" + "<br>" + "<col=ba1626>" + "Note: this includes an overflow of " + intToStr(ivar4) + " free items" + "</col>";
+			}
+		}
+	}
+	setWidgetText(new WidgetPointer(762,29), intToStr(ivar2));
+	setWidgetText(new WidgetPointer(762,31), intToStr(ivar3));
+	setScriptCallOnMouseOver(1160, new WidgetPointer(-32768,3), -1, new WidgetPointer(762,119), svar0, 25, 150, "IiIsii", new WidgetPointer(762,29));
+	setScriptCallOnMouseOver(1160, new WidgetPointer(-32768,3), -1, new WidgetPointer(762,119), svar1, 25, 150, "IiIsii", new WidgetPointer(762,31));
+	setWidgetText(new WidgetPointer(762,30), intToStr(ivar0));
+	setWidgetText(new WidgetPointer(762,32), intToStr(ivar1));
+	return;
+}

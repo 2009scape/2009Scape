@@ -1,0 +1,62 @@
+void script_4019(int arg0) {
+	switch (arg0) {
+		case 0:
+			setWidgetIsHidden(false, new WidgetPointer(917,83));
+			setWidgetIsHidden(true, new WidgetPointer(917,84));
+			setWidgetIsHidden(true, new WidgetPointer(917,82));
+			setWidgetIsHidden(true, new WidgetPointer(917,86));
+			setWidgetSprite(4320, new WidgetPointer(917,26));
+			setWidgetSprite(4320, new WidgetPointer(917,28));
+			setWidgetSprite(4321, new WidgetPointer(917,27));
+			break;
+		case 1:
+			setWidgetIsHidden(true, new WidgetPointer(917,83));
+			setWidgetIsHidden(false, new WidgetPointer(917,84));
+			setWidgetIsHidden(true, new WidgetPointer(917,82));
+			setWidgetIsHidden(true, new WidgetPointer(917,86));
+			setWidgetSprite(4320, new WidgetPointer(917,22));
+			setWidgetSprite(4320, new WidgetPointer(917,24));
+			setWidgetSprite(4321, new WidgetPointer(917,23));
+			setWidgetScrollMax(0, max(globalint_1419, getWidgetActualHeight(new WidgetPointer(917,85))), new WidgetPointer(917,85));
+			script_31(60096655, 60096597, 4343, 4340, 4341, 4342, 4337, 4336);
+			if (globalint_1419 > getWidgetActualHeight(new WidgetPointer(917,85))) {
+				setWidgetIsHidden(false, new WidgetPointer(917,143));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(917,143));
+			}
+			break;
+		case 2:
+			setWidgetIsHidden(true, new WidgetPointer(917,83));
+			setWidgetIsHidden(true, new WidgetPointer(917,84));
+			setWidgetIsHidden(false, new WidgetPointer(917,82));
+			setWidgetIsHidden(true, new WidgetPointer(917,86));
+			setWidgetSprite(4320, new WidgetPointer(917,18));
+			setWidgetSprite(4320, new WidgetPointer(917,20));
+			setWidgetSprite(4321, new WidgetPointer(917,19));
+			setWidgetScrollMax(0, max(globalint_1418, getWidgetActualHeight(new WidgetPointer(917,61))), new WidgetPointer(917,61));
+			script_31(60096574, 60096573, 4343, 4340, 4341, 4342, 4337, 4336);
+			if (globalint_1418 > getWidgetActualHeight(new WidgetPointer(917,61))) {
+				setWidgetIsHidden(false, new WidgetPointer(917,62));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(917,62));
+			}
+			break;
+		case 3:
+			setWidgetIsHidden(true, new WidgetPointer(917,83));
+			setWidgetIsHidden(true, new WidgetPointer(917,84));
+			setWidgetIsHidden(true, new WidgetPointer(917,82));
+			setWidgetIsHidden(false, new WidgetPointer(917,86));
+			setWidgetSprite(4320, new WidgetPointer(917,14));
+			setWidgetSprite(4320, new WidgetPointer(917,16));
+			setWidgetSprite(4321, new WidgetPointer(917,15));
+			setWidgetScrollMax(0, max(globalint_1420, getWidgetActualHeight(new WidgetPointer(917,88))), new WidgetPointer(917,88));
+			script_31(60096601, 60096600, 4343, 4340, 4341, 4342, 4337, 4336);
+			if (globalint_1420 > getWidgetActualHeight(new WidgetPointer(917,88))) {
+				setWidgetIsHidden(false, new WidgetPointer(917,89));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(917,89));
+			}
+	}
+	script_4026(0);
+	return;
+}

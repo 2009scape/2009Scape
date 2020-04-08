@@ -1,0 +1,15 @@
+void script_3369(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	ivar2 = subtract(getClientCycle(), arg1);
+	ivar3 = 0;
+	if (ivar2 > 70) {
+		setWidgetIsHidden(true, new WidgetPointer(548,24));
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(548,22));
+		return;
+	}
+	ivar3 = min(70, multiply(ivar2, 2));
+	setWidgetPosition(7, ivar3, 0, 0, new WidgetPointer(548,24));
+	setWidgetIsHidden(false, new WidgetPointer(548,24));
+	return;
+}

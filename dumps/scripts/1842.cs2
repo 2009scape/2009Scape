@@ -1,0 +1,38 @@
+void script_1842(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	ivar3 = divide(add(arg1, arg2), 2);
+	ivar4 = globalarray_0[ivar3];
+	globalarray_0[ivar3] = globalarray_0[arg2];
+	globalarray_0[arg2] = ivar4;
+	ivar5 = arg1;
+	ivar6 = arg1;
+	ivar7 = 0;
+	ivar8 = -1;
+	ivar9 = -1;
+	while (ivar6 < arg2) {
+		ivar8 = cs2method_3408(105, 74, 1805, globalarray_0[ivar6]);
+		ivar9 = cs2method_3408(105, 74, 1805, ivar4);
+		if (stringMethod4107(lower(getOtherCommonData(ivar8, 596)), lower(getOtherCommonData(ivar9, 596))) < bitAnd(ivar6, 1)) {
+			ivar7 = globalarray_0[ivar6];
+			globalarray_0[ivar6] = globalarray_0[ivar5];
+			globalarray_0[ivar5] = ivar7;
+			ivar5 = add(ivar5, 1);
+		}
+		ivar6 = add(ivar6, 1);
+	}
+	globalarray_0[arg2] = globalarray_0[ivar5];
+	globalarray_0[ivar5] = ivar4;
+	if (arg1 < subtract(ivar5, 1)) {
+		script_1842(0, arg1, subtract(ivar5, 1));
+	}
+	if (add(ivar5, 1) < arg2) {
+		script_1842(0, add(ivar5, 1), arg2);
+	}
+	return;
+}

@@ -1,0 +1,11 @@
+void script_3183() {
+	if (strLength(globalstring_277) <= 0) {
+		return;
+	}
+	globalstring_279 = globalstring_277;
+	script_3180();
+	if (strLength(globalstring_279) > 0) {
+		script_3190();
+	}
+	return;
+}

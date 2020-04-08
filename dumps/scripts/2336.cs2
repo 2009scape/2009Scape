@@ -1,0 +1,7 @@
+void script_2336(int arg0,int arg1) {
+	if (getDisplayMode() != arg1) {
+		setScriptCallOnGameloop(2336, new WidgetPointer(arg0), getDisplayMode(), "Ii", new WidgetPointer(arg0));
+		script_2337(arg0);
+	}
+	return;
+}

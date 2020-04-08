@@ -1,0 +1,23 @@
+void script_2974(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	ivar1 = getWidgetRotateY(new WidgetPointer(arg0));
+	ivar2 = getWidgetRotateX(new WidgetPointer(arg0));
+	ivar3 = cs2method2607(new WidgetPointer(arg0));
+	ivar4 = getWidget3DDistance(new WidgetPointer(arg0));
+	ivar5 = cs2method2610(new WidgetPointer(arg0));
+	ivar6 = cs2method2611(new WidgetPointer(arg0));
+	ivar7 = 0;
+	if (ivar1 == 2047) {
+		ivar7 = 0;
+	} else {
+		ivar7 = add(ivar1, 1);
+	}
+	setWidget3DRotation(ivar5, ivar6, ivar2, ivar7, ivar3, ivar4, new WidgetPointer(arg0));
+	return;
+}

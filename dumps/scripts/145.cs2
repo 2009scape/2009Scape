@@ -1,0 +1,7 @@
+void script_145(int arg0,int arg1) {
+	if (getClientCycle() >= arg1) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+	}
+	return;
+}

@@ -1,0 +1,19 @@
+void script_2486() {
+	if (globalint_882 != -1) {
+		setWidgetText(new WidgetPointer(655,42), "Players: " + intToStr(globalint_882));
+	}
+	if (globalint_887 != -1) {
+		setWidgetText(new WidgetPointer(655,31), "Players: " + intToStr(globalint_887));
+	}
+	if (globalint_892 != -1) {
+		setWidgetText(new WidgetPointer(655,38), "Players: " + intToStr(globalint_892));
+	}
+	if (globalint_897 != -1) {
+		setWidgetText(new WidgetPointer(655,26), "Players: " + intToStr(globalint_897));
+	}
+	setWidgetRGB(new Color(225, 152, 31), new WidgetPointer(655,42));
+	setWidgetRGB(new Color(225, 152, 31), new WidgetPointer(655,31));
+	setWidgetRGB(new Color(225, 152, 31), new WidgetPointer(655,38));
+	setWidgetRGB(new Color(225, 152, 31), new WidgetPointer(655,26));
+	return;
+}

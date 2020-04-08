@@ -1,0 +1,55 @@
+void script_3196(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	int ivar6;
+	string svar0;
+	string svar1;
+	ivar6 = -1;
+	svar0 = "";
+	svar1 = "";
+	switch (arg0) {
+		case 1:
+			svar0 = "Help - selecting an offence";
+			svar1 = "Here you can select the offence that you believe the player has committed." + "<br>" + "<br>" + "Clicking one of the offence buttons will send recent chat to Player Support for investigation. You should act quickly to report the player, particularly in areas where there is a lot of chat, such as at the Grand Exchange." + "<br>" + "<br>" + "If you have selected the wrong player, you can use the 'Change player' button to return to the previous page and choose again." + "<br>" + "<br>" + "Once your report has been sent, you'll be asked if you want to temporarily add the offender to your Ignore List.";
+			break;
+		case 2:
+			svar0 = "Help - selecting an offence";
+			svar1 = "Here you can select the offence that you believe the player has committed." + "<br>" + "<br>" + "Clicking one of the offence buttons will send recent chat to Player Support for investigation. You should act quickly to report the player, particularly in areas where there is a lot of chat, such as at the Grand Exchange." + "<br>" + "<br>" + "If you have selected the wrong player, you can use the 'Change player' button to return to the chat list and choose again." + "<br>" + "<br>" + "You can only report players who have spoken recently." + "<br>" + "<br>" + "Once your report has been sent, you'll be asked if you want to temporarily add the offender to your Ignore List.";
+			break;
+		case 3:
+			svar0 = "Help - honour";
+			svar1 = "An item scam is defined as cheating another player during a trade. We don't consider it a scam to ask for large amounts of gp for an item, but it is not in the spirit of the game to overprice an item. It is your responsibility to make sure that you are paying a good price." + "<br>" + "<br>" + "Asking for someone's bank PIN or recovery answers is just as serious as asking for a password; giving out your bank PIN allows other players access to your bank space. Never tell another player your password, PIN number or any other account security details." + "<br>" + "<br>" + "If you notice a bug, please report it to us straight away. If, after noticing a bug, you continue to exploit it, you are likely to have action taken against your account." + "<br>" + "<br>" + "There are no cheats for any of our games. Anyone that approaches you in-game to offer you cheats should be reported under 'Encouraging rule-breaking'." + "<br>" + "<br>" + "Don't encourage rule-breaking, such as encouraging someone to try real-world trading, scamming or exploiting bugs." + "<br>" + "<br>" + "You should not swap your account with another player, or share your account with anyone else. Sharing your account makes it less secure, and is also unfair to other players.";
+			break;
+		case 4:
+			svar0 = "Help - respect";
+			svar1 = "There's no need to report anyone for using the term 'noob', it simply means 'new player'." + "<br>" + "<br>" + "Seriously offensive language includes racism and chat of a sexual nature." + "<br>" + "<br>" + "You don't need to report players for using abbreviations such as 'lmao', 'wtf', 'gtfo'." + "<br>" + "<br>" + "You shouldn't report any chat that has been starred out (like this: ****), as the censor has prevented anything that may have been offensive from being seen." + "<br>" + "<br>" + "Solicitation includes asking for a boyfriend or girlfriend in-game." + "<br>" + "<br>" + "Disruptive behaviour includes flooding the chat window with lines of unnecessary chat, but only if you feel it's impairing your gameplay." + "<br>" + "<br>" + "Beware of context when reporting players for real-life threats: they could be talking about in-game combat!";
+			break;
+		case 5:
+			svar0 = "Help - security";
+			svar1 = "Giving out your contact information in-game can put the security of your account at risk. There are some unscrupulous people out there, so, to protect your account and your privacy, it makes sense not to give your details to anyone you don't know." + "<br>" + "<br>" + "Contact information includes: full name, email addresses, instant messenger screen names, telephone numbers, your home/work address or age." + "<br>" + "<br>" + "Promoting a non-Jagex website in the forums or in-game could get you banned, even if you post the URL for your clan's site. We understand this rule may cause some inconvenience, but we want it to be impossible for people to send players to scam sites.";
+			break;
+		case 6:
+			svar0 = "Help - ignoring a player temporarily";
+			svar1 = "Now that your report has been sent, you can choose whether or not to ignore the offender. This is a temporary measure, and will only last until you log out. To permanently ignore a player, make a note of their name and add them to your Ignore List once the 'Report Abuse' windows are closed." + "<br>" + "<br>" + "You cannot ignore moderators or people on your Friends List.";
+	}
+	setWidgetText(new WidgetPointer(arg1), svar0);
+	setWidgetText(new WidgetPointer(arg2), svar1);
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg3)), add(multiply(getLineCount(getWidgetActualWidth(new WidgetPointer(arg2)), 3793, svar1), 12), 48), 0, 0, new WidgetPointer(arg3));
+	switch (arg5) {
+		case 59834368:
+			ivar6 = 59375680;
+			break;
+		case 59899904:
+			ivar6 = 59375696;
+			break;
+		case 64159744:
+			ivar6 = 59375670;
+			break;
+		case 59965458:
+			ivar6 = 59375688;
+	}
+	if (ivar6 != -1) {
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(ivar6)), getWidgetActualHeight(new WidgetPointer(arg3)), 0, 0, new WidgetPointer(ivar6));
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg5)), getWidgetActualHeight(new WidgetPointer(arg3)), 0, 0, new WidgetPointer(arg5));
+	}
+	setWidgetIsHidden(false, new WidgetPointer(arg4));
+	return;
+}

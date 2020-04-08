@@ -1,0 +1,4 @@
+void script_1396(int arg0,string arg1,string arg2) {
+	setScriptCallOnMousePressed(1338, arg1, arg2, arg0, "ss1", new WidgetPointer(445,2));
+	return;
+}

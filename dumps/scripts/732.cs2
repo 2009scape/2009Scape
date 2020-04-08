@@ -1,0 +1,10 @@
+void script_732(int arg0) {
+	if (((boolean)bitconfig_278)) {
+		setWidgetAnimation(1377, new WidgetPointer(arg0));
+	} else if (((boolean)bitconfig_278)) {
+		setWidgetAnimation(2114, new WidgetPointer(arg0));
+	} else {
+		setWidgetAnimation(2116, new WidgetPointer(arg0));
+	}
+	return;
+}

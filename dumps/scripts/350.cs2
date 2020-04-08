@@ -1,0 +1,41 @@
+void script_350(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	if (arg0 != 1) {
+		return;
+	}
+	if (((boolean)arg1)) {
+		if (IsFemale()) {
+			return;
+		}
+		cs2method403(0, -1);
+		cs2method403(1, -1);
+		cs2method403(7, getOtherCommonData(cs2method_3408(105, 74, 3302, bitconfig_8091), 788));
+		cs2method403(8, -1);
+	} else {
+		if (IsFemale()) {
+			return;
+		}
+		cs2method403(7, -1);
+		cs2method403(8, -1);
+		cs2method403(0, getOtherCommonData(cs2method_3408(105, 74, 3304, bitconfig_8091), 788));
+		cs2method403(1, cs2method_3408(105, 75, 3307, divide(bitconfig_8091, 2)));
+	}
+	playSoundEffect(9819, 1, 0);
+	cs2method410(script_42(arg1));
+	globalint_196 = ((int)IsFemale());
+	bitconfig_8093 = globalint_196;
+	script_387(arg1);
+	globalint_86 = 1;
+	bitconfig_8090 = 1;
+	ivar2 = cs2method_3408(105, 74, 3278, subtract(globalint_197, 1));
+	ivar3 = -1;
+	if (ivar2 != -1) {
+		ivar3 = script_384(0, ivar2, arg1);
+		if (ivar3 != -1) {
+			script_359(ivar3, arg1);
+		}
+	}
+	script_390(arg1);
+	return;
+}

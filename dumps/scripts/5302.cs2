@@ -1,0 +1,12 @@
+void script_5302(int arg0,int arg1) {
+	if (isWidgetHidden(new WidgetPointer(arg0))) {
+		script_5306();
+		setWidgetIsHidden(false, new WidgetPointer(arg0));
+		setWidgetSprite(6169, new WidgetPointer(arg1));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+		setWidgetSprite(6168, new WidgetPointer(arg1));
+		script_5219(54001697);
+	}
+	return;
+}

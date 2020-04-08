@@ -1,0 +1,4 @@
+void script_2018(int arg0,int arg1) {
+	script_2010(arg0, arg1, "Level 41 Agility");
+	return;
+}

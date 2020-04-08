@@ -1,0 +1,4 @@
+void script_1591() {
+	script_1592(26279945, 26279960, globalstring_223);
+	return;
+}

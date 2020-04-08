@@ -1,0 +1,8 @@
+void script_856() {
+	playSoundEffect(2605, 1, 0);
+	if (bitconfig_4400 < subtract(7, 1)) {
+		globalint_108 = add(bitconfig_4400, 1);
+		script_861();
+	}
+	return;
+}

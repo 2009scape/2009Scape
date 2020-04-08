@@ -1,0 +1,11 @@
+void script_1679() {
+	script_1678();
+	switch (globalint_1044) {
+		case 0:
+			script_1687();
+			break;
+		default:
+			setScriptCallOnMinimapRelatedSetting3(-1, "", new WidgetPointer(85,0));
+	}
+	return;
+}

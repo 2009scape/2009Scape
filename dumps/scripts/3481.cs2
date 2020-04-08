@@ -1,0 +1,6 @@
+void script_3481(int arg0) {
+	if (((boolean)arg0)) {
+		messageType0("Drag the tiles into the grid.");
+	}
+	return;
+}

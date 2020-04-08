@@ -1,0 +1,5 @@
+int script_1416(int arg0,int arg1) {
+	setWidgetPosition(getWidgetActualX(new WidgetPointer(arg0)), subtract(225, multiply(arg1, getWidgetActualHeight(new WidgetPointer(arg0)))), 0, 0, new WidgetPointer(arg0));
+	arg1 = add(arg1, 1);
+	return arg1;
+}

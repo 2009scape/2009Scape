@@ -1,0 +1,10 @@
+void script_4561(int arg0,int arg1,string arg2) {
+	int ivar2;
+	ivar2 = 38600758;
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		setWidgetIsHidden(false, new WidgetPointer(ivar2));
+		setWidgetPosition(getWidgetActualX(new WidgetPointer(ivar2)), getWidgetActualY(), 0, 0, new WidgetPointer(ivar2));
+		setScriptCallOnMouseOver(4562, new WidgetPointer(arg0), arg1, add(getClientCycle(), 25), arg2, -2147483647, -2147483646, "Iiisii");
+	}
+	return;
+}

@@ -1,0 +1,10 @@
+void script_958(int arg0,int arg1,int arg2) {
+	if (((boolean)bitconfig_4618)) {
+		script_959(arg0, arg1, 1);
+		setWidgetSprite(1157, new WidgetPointer(arg2));
+	} else {
+		script_959(arg0, arg1, 0);
+		setWidgetSprite(1156, new WidgetPointer(arg2));
+	}
+	return;
+}

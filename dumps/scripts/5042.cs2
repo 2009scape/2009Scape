@@ -1,0 +1,29 @@
+void script_5042(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int stack_dump0;
+	ivar2 = subtract(getLastMouseY(), script_3365(72810511));
+	ivar3 = subtract(getLastMouseX(), script_3366(72810511));
+	ivar4 = getWidgetActualWidth(new WidgetPointer(1111,15));
+	ivar5 = getWidgetActualHeight(new WidgetPointer(1111,15));
+	if ((((ivar2 > ivar4) || (ivar2 < 0)) || (ivar3 > ivar5)) || (ivar3 < 0)) {
+		stack_dump0 = divide(ivar4, 2);
+		ivar3 = divide(ivar5, 2);
+		ivar2 = stack_dump0;
+	}
+	ivar2 = add(ivar2, cs2method2600(new WidgetPointer(1111,15)));
+	ivar3 = add(ivar3, cs2method2601(new WidgetPointer(1111,15)));
+	ivar6 = multiply(globalint_1396, add(add(112, 2), 2));
+	globalint_1396 = max(min(subtract(globalint_1396, arg1), 21), 3);
+	ivar7 = multiply(globalint_1396, add(add(112, 2), 2));
+	ivar8 = subtract(multiplyDivide(ivar7, ivar6, ivar2), ivar2);
+	ivar9 = subtract(multiplyDivide(ivar7, ivar6, ivar3), ivar3);
+	script_5044(arg0, ivar8, ivar9);
+	return;
+}

@@ -1,0 +1,7 @@
+void script_873(int arg0) {
+	setWidgetModel(32408, new WidgetPointer(arg0));
+	setScriptCallOnMouseExit(-1, "", new WidgetPointer(arg0));
+	setWidgetIsHidden(true, new WidgetPointer(697,3));
+	setWidgetIsHidden(true, new WidgetPointer(697,5));
+	return;
+}

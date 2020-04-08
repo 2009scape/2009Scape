@@ -1,0 +1,127 @@
+void script_4227(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	string svar0;
+	string svar1;
+	string stack_dump0;
+	int stack_dump1;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar2 = 0;
+	ivar3 = divide(subtract(getWidgetActualWidth(new WidgetPointer(arg0)), multiply(125, 3)), 2);
+	ivar4 = getCommonDefinitionSize(828);
+	ivar5 = 0;
+	ivar6 = 0;
+	while (ivar2 < ivar4) {
+		createExtraChild(new WidgetPointer(arg0), 5, ivar2);
+		setWidgetSize(subtract(125, 4), subtract(125, 4), 0, 0);
+		if (((boolean)ivar5)) {
+			setWidgetPosition(2, add(ivar6, 2), 0, 0);
+			ivar5 = 1;
+		} else if (((boolean)ivar5)) {
+			setWidgetPosition(0, add(ivar6, 2), 1, 0);
+			ivar5 = 2;
+		} else {
+			setWidgetPosition(2, add(ivar6, 2), 2, 0);
+			ivar5 = 0;
+			ivar6 = add(add(ivar6, 125), ivar3);
+		}
+		setWidgetSprite(297);
+		cs2method1107(1);
+		ivar2 = add(ivar2, 1);
+	}
+	if (((boolean)ivar5)) {
+		ivar6 = max(subtract(ivar6, ivar3), 0);
+	}
+	setWidgetScrollMax(0, ivar6, new WidgetPointer(arg0));
+	script_31(arg1, arg0, 792, 789, 790, 791, 773, 788);
+	ivar7 = -1;
+	svar0 = "";
+	svar1 = "";
+	ivar8 = 0;
+	ivar9 = 0;
+	ivar10 = subtract(125, 18);
+	ivar2 = 0;
+	while (ivar2 < ivar4) {
+		ivar7 = cs2method_3408(105, 79, 828, ivar2);
+		if ((ivar7 != -1) && setWidgetRegister(new WidgetPointer(arg0), ivar2)) {
+			stack_dump0 = getItemHashmapData(ivar7, 1367);
+			svar1 = getItemHashmapData(ivar7, 1368);
+			svar0 = stack_dump0;
+			ivar3 = getItemHashmapData(ivar7, 1366);
+			stack_dump1 = subtract(getWidgetActualX(), 2);
+			ivar6 = subtract(getWidgetActualY(), 2);
+			ivar5 = stack_dump1;
+			ivar8 = subtract(add(ivar5, 125), 9);
+			ivar9 = subtract(add(ivar6, 125), 9);
+			createExtraChild(new WidgetPointer(arg0), 6, getExtraChildGap(new WidgetPointer(arg0)));
+			setWidgetSize(75, 75, 0, 0);
+			setWidgetPosition(add(ivar5, 25), add(ivar6, 20), 0, 0);
+			setItemOnWidgetMethod1205(ivar7, 1);
+			createExtraChild(new WidgetPointer(arg0), 4, getExtraChildGap(new WidgetPointer(arg0)));
+			setWidgetSize(125, 20, 0, 0);
+			setWidgetPosition(ivar5, add(ivar6, 5), 0, 0);
+			setWidgetFont(494);
+			setWidgetTextAlignment(1, 1, 0);
+			setWidgetRGB(new Color(255, 152, 31));
+			setWidgetUnknownBoolean(true);
+			setWidgetText(svar0);
+			createExtraChild(new WidgetPointer(arg0), 4, getExtraChildGap(new WidgetPointer(arg0)));
+			setWidgetSize(125, 20, 0, 0);
+			setWidgetPosition(ivar5, subtract(add(ivar6, 125), 25), 0, 0);
+			setWidgetFont(494);
+			setWidgetTextAlignment(1, 1, 0);
+			setWidgetRGB(new Color(255, 152, 31));
+			setWidgetUnknownBoolean(true);
+			script_4229(ivar3, svar1);
+			setScriptCallOnConfigChange(4228, new WidgetPointer(-32768,3), -2147483643, ivar3, svar1, 294, 1, "IiisY");
+			setScriptCallOnItemContainerUpdate(4228, new WidgetPointer(-32768,3), -2147483643, ivar3, svar1, 93, 94, 2, "IiisY");
+			createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+			setWidgetSize(9, 9, 0, 0);
+			setWidgetPosition(ivar5, ivar6, 0, 0);
+			setWidgetSprite(913);
+			createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+			setWidgetSize(9, 9, 0, 0);
+			setWidgetPosition(ivar8, ivar6, 0, 0);
+			setWidgetSprite(914);
+			createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+			setWidgetSize(9, 9, 0, 0);
+			setWidgetPosition(ivar5, ivar9, 0, 0);
+			setWidgetSprite(915);
+			createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+			setWidgetSize(9, 9, 0, 0);
+			setWidgetPosition(ivar8, ivar9, 0, 0);
+			setWidgetSprite(916);
+			createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+			setWidgetSize(9, ivar10, 0, 0);
+			setWidgetPosition(ivar5, add(ivar6, 9), 0, 0);
+			setWidgetSprite(917);
+			createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+			setWidgetSize(ivar10, 9, 0, 0);
+			setWidgetPosition(add(ivar5, 9), ivar6, 0, 0);
+			setWidgetSprite(918);
+			createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+			setWidgetSize(9, ivar10, 0, 0);
+			setWidgetPosition(ivar8, add(ivar6, 9), 0, 0);
+			setWidgetSprite(919);
+			createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+			setWidgetSize(ivar10, 9, 0, 0);
+			setWidgetPosition(add(ivar5, 9), ivar9, 0, 0);
+			setWidgetSprite(920);
+			setWidgetContextMenuOption(1, "Claim");
+			setWidgetContextMenuOption(10, "Examine");
+			svar0 = script_2332(svar0, "<br>", " ");
+			cs2method1305("<col=ff9040>" + svar0);
+			setScriptCallOnMouseEntered(688, new WidgetPointer(-32768,3), -2147483643, 897, "Iid");
+			setScriptCallOnMouseExit(688, new WidgetPointer(-32768,3), -2147483643, 297, "Iid");
+		}
+		ivar2 = add(ivar2, 1);
+	}
+	return;
+}

@@ -117,6 +117,40 @@ public final class BankContainer extends Container {
 		setTabConfigurations();
 	}
 	
+	public void open(Player player) {
+		if (open) {
+			return;
+		}
+		if (player.getIronmanManager().checkRestriction(IronmanMode.ULTIMATE)) {
+			return;
+		}
+		if (!player.getBankPinManager().isUnlocked() && !GameWorld.getSettings().isDevMode()) {
+			player.getBankPinManager().openType(1);
+			return;
+		}
+		player.getInterfaceManager().openComponent(762).setCloseEvent(new CloseEvent() {
+			@Override
+			public boolean close(Player player, Component c) {
+				BankContainer.this.close();
+				return true;
+			}
+		});
+		this.player.getBank().refresh(player.getBank().listener);
+		player.getInterfaceManager().openSingleTab(new Component(763));
+		player.getInventory().getListeners().add(player.getBank().listener);
+		player.getInventory().refresh();
+		player.getConfigManager().set(1249, lastAmountX);
+		player.getPacketDispatch().sendAccessMask(1278, 73, 762, 0, SIZE);
+		BitregisterAssembler assembly = new BitregisterAssembler(0, 1, 2, 3, 4, 5);
+		assembly.enableExamineOption();
+		assembly.enableSlotSwitch();
+		player.getPacketDispatch().sendAccessMask(assembly.calculateRegister(), 0, 763, 0, 27);
+		player.getPacketDispatch().sendRunScript(1451, "");
+		open = true;
+		this.player.getBank().setTabConfigurations(player);
+		
+	}
+	
 	@Override
 	public long save(ByteBuffer buffer) {
 		buffer.putInt(lastAmountX);
@@ -358,6 +392,25 @@ public final class BankContainer extends Container {
 	 * Sets the tab configs.
 	 */
 	public void setTabConfigurations() {
+		int value = getItemsInTab(1);
+		value += getItemsInTab(2) << 10;
+		value += getItemsInTab(3) << 20;
+		player.getConfigManager().set(1246, value);
+		value = getItemsInTab(4);
+		value += getItemsInTab(5) << 10;
+		value += getItemsInTab(6) << 20;
+		player.getConfigManager().set(1247, value);
+		value = -2013265920;
+		value += (134217728 * (tabIndex == 10 ? 0 : tabIndex));
+		value += getItemsInTab(7);
+		value += getItemsInTab(8) << 10;
+		player.getConfigManager().set(1248, value);
+	}
+	
+	/**
+	 * Sets the tab configs.
+	 */
+	public void setTabConfigurations(Player player) {
 		int value = getItemsInTab(1);
 		value += getItemsInTab(2) << 10;
 		value += getItemsInTab(3) << 20;

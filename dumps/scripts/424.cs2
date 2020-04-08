@@ -1,0 +1,18 @@
+void script_424() {
+	int ivar0;
+	int ivar1;
+	string svar0;
+	ivar0 = divide(multiply(globalint_1365, 6), 10);
+	ivar1 = 0;
+	svar0 = "1 minute";
+	if (ivar0 < 60) {
+		setWidgetText(new WidgetPointer(1027,24), "Your opponent has logged out." + "<br>" + "You may wait for them to return or end the Conquest now and be declared the winner.");
+		return;
+	}
+	if (ivar0 > 120) {
+		ivar1 = divide(ivar0, 60);
+		svar0 = intToStr(ivar1) + " minutes";
+	}
+	setWidgetText(new WidgetPointer(1027,24), "Your opponent has been logged out for " + svar0 + "." + "<br>" + "You may wait for them to return or end the Conquest now and be declared the winner.");
+	return;
+}

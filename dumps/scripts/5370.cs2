@@ -1,0 +1,37 @@
+void script_5370(int arg0,int arg1,string arg2,string arg3) {
+	int ivar2;
+	int ivar3;
+	if (((boolean)arg0)) {
+		setWidgetIsHidden(true, new WidgetPointer(951,14));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(951,14));
+	}
+	if (((boolean)arg1)) {
+		setWidgetIsHidden(true, new WidgetPointer(951,2));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(951,2));
+	}
+	setWidgetText(new WidgetPointer(951,48), arg2);
+	setWidgetText(new WidgetPointer(951,51), arg3);
+	ivar2 = getTextWidth(4040, arg3);
+	setWidgetSize(add(ivar2, 16), getWidgetActualHeight(new WidgetPointer(951,1)), 0, 0, new WidgetPointer(951,1));
+	ivar2 = getTextWidth(4040, arg2);
+	setWidgetSize(add(ivar2, 16), getWidgetActualHeight(new WidgetPointer(951,3)), 0, 0, new WidgetPointer(951,3));
+	ivar2 = max(getWidgetActualWidth(new WidgetPointer(951,1)), getWidgetActualWidth(new WidgetPointer(951,3)));
+	if (((boolean)arg1)) {
+		ivar2 = max(ivar2, getWidgetActualWidth(new WidgetPointer(951,2)));
+	}
+	if (((boolean)arg0)) {
+		ivar2 = max(ivar2, getWidgetActualWidth(new WidgetPointer(951,14)));
+	}
+	setWidgetSize(add(ivar2, 48), getWidgetActualHeight(new WidgetPointer(951,49)), 0, 0, new WidgetPointer(951,49));
+	ivar3 = add(getWidgetActualHeight(new WidgetPointer(951,1)), getWidgetActualHeight(new WidgetPointer(951,3)));
+	if (((boolean)arg1)) {
+		ivar3 = add(ivar3, getWidgetActualHeight(new WidgetPointer(951,2)));
+	}
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(951,49)), ivar3, 0, 0, new WidgetPointer(951,49));
+	if (((boolean)arg0)) {
+		setWidgetPosition(0, add(7, getWidgetActualHeight(new WidgetPointer(951,49))), 1, 0, new WidgetPointer(951,14));
+	}
+	return;
+}

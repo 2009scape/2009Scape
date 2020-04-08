@@ -1,0 +1,13 @@
+void script_730(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	ivar3 = getItemAmtInContainer(93, 13650);
+	ivar4 = cs2method_3408(111, 105, 1680, arg0);
+	setWidgetText(new WidgetPointer(arg1), intToStr(ivar4) + " tokens");
+	if ((ivar4 > ivar3) || (isMembersItem(arg0) && isMember())) {
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(arg2));
+	} else {
+		setWidgetRGB(new Color(1, 184, 1), new WidgetPointer(arg2));
+	}
+	return;
+}

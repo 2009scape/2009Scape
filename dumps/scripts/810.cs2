@@ -1,0 +1,21 @@
+void script_810() {
+	if (isMember() && ((boolean)bitconfig_4280)) {
+		setWidgetIsHidden(false, new WidgetPointer(747,2));
+		setWidgetIsHidden(false, new WidgetPointer(747,3));
+		setWidgetIsHidden(false, new WidgetPointer(747,6));
+		setWidgetIsHidden(false, new WidgetPointer(747,4));
+		setWidgetIsHidden(false, new WidgetPointer(747,7));
+		script_817(23);
+		setWidgetIsHidden(false, new WidgetPointer(747,5));
+		setWidgetRGB(new Color(script_805(23)), new WidgetPointer(747,5));
+		setWidgetText(new WidgetPointer(747,5), intToStr(getSkillCurrentLvl(23)));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(747,2));
+		setWidgetIsHidden(true, new WidgetPointer(747,3));
+		setWidgetIsHidden(true, new WidgetPointer(747,5));
+		setWidgetIsHidden(true, new WidgetPointer(747,6));
+		setWidgetIsHidden(true, new WidgetPointer(747,4));
+		setWidgetIsHidden(true, new WidgetPointer(747,7));
+	}
+	return;
+}

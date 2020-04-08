@@ -1,0 +1,6 @@
+int script_2727() {
+	if (isBitFlagged(cs2method6510(), 10)) {
+		return 1;
+	}
+	return 0;
+}

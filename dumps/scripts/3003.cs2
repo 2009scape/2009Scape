@@ -1,0 +1,23 @@
+void script_3003(int arg0) {
+	int ivar1;
+	if (((int)cs2method_3408(105, 73, 942, arg0)) == -1) {
+		return;
+	}
+	ivar1 = -1;
+	if (getWidgetActualHeight(new WidgetPointer(907,3)) > 30) {
+		ivar1 = 0;
+	} else if (getWidgetActualHeight(new WidgetPointer(907,4)) > 30) {
+		ivar1 = 1;
+	} else if (getWidgetActualHeight(new WidgetPointer(907,5)) > 30) {
+		ivar1 = 2;
+	} else {
+		if (getWidgetActualHeight(new WidgetPointer(907,43)) > 30) {
+			ivar1 = 3;
+		}
+	}
+	if (arg0 == ivar1) {
+		return;
+	}
+	script_3004(ivar1, arg0);
+	return;
+}

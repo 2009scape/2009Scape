@@ -1,0 +1,5 @@
+void script_774(int arg0,int arg1) {
+	setItemOnWidgetMethod2205(standart_config_851, 1, new WidgetPointer(arg0));
+	setItemOnWidgetMethod2205(standart_config_852, 1, new WidgetPointer(arg1));
+	return;
+}

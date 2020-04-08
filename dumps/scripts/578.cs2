@@ -1,0 +1,22 @@
+void script_578() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar0 = getWidgetActualHeight(new WidgetPointer(389,4));
+	ivar1 = getWidgetScrollMaxV(new WidgetPointer(389,4));
+	if (ivar1 < 15) {
+		ivar1 = 15;
+		setWidgetScrollMax(0, 15, new WidgetPointer(389,4));
+	}
+	ivar2 = subtract(ivar1, ivar0);
+	if (ivar2 < 0) {
+		ivar2 = 0;
+	}
+	ivar3 = cs2method2601(new WidgetPointer(389,4));
+	if (ivar3 > ivar2) {
+		ivar3 = ivar2;
+	}
+	script_72(25493512, 25493508, ivar3);
+	return;
+}

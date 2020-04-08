@@ -1,0 +1,5 @@
+void script_1219(int arg0,int arg1,int arg2) {
+	cs2method6017(((boolean)arg0));
+	script_1220(arg1, arg2);
+	return;
+}

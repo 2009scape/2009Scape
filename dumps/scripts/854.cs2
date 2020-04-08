@@ -1,0 +1,36 @@
+int script_854(int arg0) {
+	if (arg0 == 10) {
+		return 0;
+	}
+	if (((boolean)arg0)) {
+		return 1;
+	}
+	if (((boolean)arg0)) {
+		return 1;
+	}
+	if (arg0 == 2) {
+		return 1;
+	}
+	if (arg0 == 3) {
+		return 1;
+	}
+	if (arg0 == 4) {
+		return 2;
+	}
+	if (arg0 == 5) {
+		return 2;
+	}
+	if (arg0 == 6) {
+		return 2;
+	}
+	if (arg0 == 7) {
+		return 2;
+	}
+	if (arg0 == 8) {
+		return 2;
+	}
+	if (arg0 == 9) {
+		return 3;
+	}
+	return 0;
+}

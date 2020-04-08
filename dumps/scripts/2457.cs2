@@ -1,0 +1,16 @@
+void script_2457(int arg0,int arg1) {
+	if (isWidgetOpen(new WidgetPointer(746,87))) {
+		return;
+	}
+	if (isWidgetOpen(new WidgetPointer(script_8(95)))) {
+		return;
+	}
+	globalint_10 = 0;
+	script_1304(arg0);
+	if (globalint_168 == arg0) {
+		globalint_168 = -1;
+	} else {
+		globalint_168 = arg0;
+	}
+	return;
+}

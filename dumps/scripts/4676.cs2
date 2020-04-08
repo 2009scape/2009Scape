@@ -1,0 +1,73 @@
+void script_4676(int arg0) {
+	switch (arg0) {
+		case 1:
+			if (((boolean)bitconfig_9314)) {
+				setWidgetIsHidden(true, new WidgetPointer(102,15));
+				setWidgetIsHidden(true, new WidgetPointer(102,17));
+			} else {
+				if (((bitconfig_9298 == 10) && (getSkillActualLvl(6) >= 30)) && ((getSkillActualLvl(4) >= 30) && (getSkillActualLvl(0) >= 30))) {
+					setWidgetIsHidden(false, new WidgetPointer(102,70));
+					setWidgetIsHidden(false, new WidgetPointer(102,15));
+					setWidgetIsHidden(false, new WidgetPointer(102,17));
+					if (((boolean)bitconfig_9315)) {
+						setWidgetText(new WidgetPointer(102,70), "You receive two new books.");
+					}
+				}
+			}
+			if (((boolean)bitconfig_9315)) {
+				setWidgetIsHidden(true, new WidgetPointer(102,14));
+				setWidgetIsHidden(true, new WidgetPointer(102,16));
+			} else {
+				setWidgetIsHidden(false, new WidgetPointer(102,70));
+				setWidgetIsHidden(false, new WidgetPointer(102,14));
+				setWidgetIsHidden(false, new WidgetPointer(102,16));
+			}
+			break;
+		case 2:
+			if (((boolean)bitconfig_9316)) {
+				setWidgetIsHidden(true, new WidgetPointer(102,15));
+				setWidgetIsHidden(true, new WidgetPointer(102,17));
+			} else {
+				if (((bitconfig_9298 == 10) && (getSkillActualLvl(16) >= 55)) && (getSkillActualLvl(17) >= 55)) {
+					setWidgetIsHidden(false, new WidgetPointer(102,70));
+					setWidgetIsHidden(false, new WidgetPointer(102,15));
+					setWidgetIsHidden(false, new WidgetPointer(102,17));
+					if (((boolean)bitconfig_9317)) {
+						setWidgetText(new WidgetPointer(102,70), "You receive two new books.");
+					}
+				}
+			}
+			if (((boolean)bitconfig_9317)) {
+				setWidgetIsHidden(true, new WidgetPointer(102,14));
+				setWidgetIsHidden(true, new WidgetPointer(102,16));
+			} else {
+				setWidgetIsHidden(false, new WidgetPointer(102,70));
+				setWidgetIsHidden(false, new WidgetPointer(102,14));
+				setWidgetIsHidden(false, new WidgetPointer(102,16));
+			}
+			break;
+		case 4:
+			if (((boolean)bitconfig_9318)) {
+				setWidgetIsHidden(true, new WidgetPointer(102,15));
+				setWidgetIsHidden(true, new WidgetPointer(102,17));
+			} else {
+				if ((bitconfig_9298 == 10) && (getSkillActualLvl(2) >= 70)) {
+					setWidgetIsHidden(false, new WidgetPointer(102,70));
+					setWidgetIsHidden(false, new WidgetPointer(102,15));
+					setWidgetIsHidden(false, new WidgetPointer(102,17));
+					if (((boolean)bitconfig_9319)) {
+						setWidgetText(new WidgetPointer(102,70), "You receive two new books.");
+					}
+				}
+			}
+			if (((boolean)bitconfig_9319)) {
+				setWidgetIsHidden(true, new WidgetPointer(102,14));
+				setWidgetIsHidden(true, new WidgetPointer(102,16));
+			} else {
+				setWidgetIsHidden(false, new WidgetPointer(102,70));
+				setWidgetIsHidden(false, new WidgetPointer(102,14));
+				setWidgetIsHidden(false, new WidgetPointer(102,16));
+			}
+	}
+	return;
+}

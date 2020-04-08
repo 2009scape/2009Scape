@@ -1,0 +1,25 @@
+void script_3952(int arg0) {
+	globalstring_331 = globalstring_337;
+	globalstring_332 = globalstring_338;
+	globalstring_333 = globalstring_339;
+	globalstring_334 = globalstring_340;
+	globalstring_335 = globalstring_341;
+	globalstring_336 = globalstring_342;
+	if (((boolean)arg0)) {
+		setWidgetText(new WidgetPointer(1028,158), concat("<u=ebe0bc>", globalstring_331));
+		setWidgetText(new WidgetPointer(1028,159), concat("<u=ebe0bc>", globalstring_332));
+		setWidgetText(new WidgetPointer(1028,160), concat("<u=ebe0bc>", globalstring_333));
+		setWidgetText(new WidgetPointer(1028,161), concat("<u=ebe0bc>", globalstring_334));
+		setWidgetText(new WidgetPointer(1028,162), concat("<u=ebe0bc>", globalstring_335));
+		setWidgetText(new WidgetPointer(1028,163), concat("<u=ebe0bc>", globalstring_336));
+	} else {
+		setWidgetText(new WidgetPointer(890,37), concat("<u=ebe0bc>", globalstring_331));
+		setWidgetText(new WidgetPointer(890,38), concat("<u=ebe0bc>", globalstring_332));
+		setWidgetText(new WidgetPointer(890,39), concat("<u=ebe0bc>", globalstring_333));
+		setWidgetText(new WidgetPointer(890,40), concat("<u=ebe0bc>", globalstring_334));
+		setWidgetText(new WidgetPointer(890,41), concat("<u=ebe0bc>", globalstring_335));
+		setWidgetText(new WidgetPointer(890,42), concat("<u=ebe0bc>", globalstring_336));
+	}
+	script_3947(arg0, globalstring_331, globalstring_332, globalstring_333, globalstring_334, globalstring_335, globalstring_336);
+	return;
+}

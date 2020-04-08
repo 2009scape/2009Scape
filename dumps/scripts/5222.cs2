@@ -1,0 +1,39 @@
+void script_5222(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	string svar0;
+	string svar1;
+	ivar1 = script_4949(arg0);
+	ivar2 = script_4959(arg0);
+	ivar3 = script_4972(arg0);
+	if (ivar3 == -1) {
+		return;
+	}
+	ivar4 = getWidgetParentUid(new WidgetPointer(ivar3));
+	ivar5 = getWidgetParentUid(new WidgetPointer(ivar4));
+	svar0 = "";
+	svar1 = "Empty skill plot";
+	ivar6 = 3;
+	if (((boolean)arg0)) {
+		svar0 = "Citadel : Tier " + intToStr(ivar2);
+	} else if (arg0 == 2) {
+		svar0 = "Storehouse : Tier " + intToStr(ivar2);
+	} else if (arg0 == 3) {
+		svar0 = "Battlefield : Tier " + intToStr(ivar2);
+	} else if (ivar2 > 0) {
+		svar0 = svar1 + " : Tier " + intToStr(ivar2);
+	} else {
+		svar0 = "Empty skill plot";
+	}
+	svar1 = cs2method_3408(105, 115, 4287, ivar1);
+	if (getWidgetActualX(new WidgetPointer(ivar4)) < subtract(divide(getWidgetActualWidth(new WidgetPointer(ivar5)), 2), 50)) {
+		ivar6 = 1;
+	}
+	setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(ivar3), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, ivar6, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(ivar3));
+	setScriptCallOnMouseExit(40, new WidgetPointer(1092,327), "I", new WidgetPointer(ivar3));
+	return;
+}

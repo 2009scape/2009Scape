@@ -1,0 +1,15 @@
+void script_5184() {
+	script_5192();
+	script_5190(1, 0);
+	switch (bitconfig_9646) {
+		case 1:
+			setWidgetText(new WidgetPointer(1122,71), "Lumbridge herald cape");
+			break;
+		case 2:
+			setWidgetText(new WidgetPointer(1122,71), "Varrock herald cape");
+			break;
+		case 3:
+			setWidgetText(new WidgetPointer(1122,71), "Falador herald cape");
+	}
+	return;
+}

@@ -1,0 +1,35 @@
+void script_21(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,int arg11,int arg12) {
+	if (((getSkillCurrentLvl(6) < arg3) && (((boolean)arg4) || (getSkillActualLvl(6) < arg3))) && (((boolean)bitconfig_9071) || ((((arg0 != 28180504) && (arg0 != 28180507)) && ((arg0 != 28180513) && (arg0 != 28180525))) && (arg0 != 28180522)))) {
+		if (((boolean)bitconfig_4089)) {
+			if ((standart_config_1092 < arg3) || ((boolean)cs2method_3408(73, 105, 1061, arg0))) {
+				setWidgetSprite(arg2, new WidgetPointer(arg0));
+				return;
+			}
+		} else {
+			setWidgetSprite(arg2, new WidgetPointer(arg0));
+			return;
+		}
+	}
+	if ((arg5 != -1) && (script_19(arg5, arg0) < arg6)) {
+		setWidgetSprite(arg2, new WidgetPointer(arg0));
+		return;
+	}
+	if ((arg7 != -1) && (script_19(arg7, arg0) < arg8)) {
+		setWidgetSprite(arg2, new WidgetPointer(arg0));
+		return;
+	}
+	if ((arg9 != -1) && (script_19(arg9, arg0) < arg10)) {
+		setWidgetSprite(arg2, new WidgetPointer(arg0));
+		return;
+	}
+	if ((arg11 != -1) && (script_19(arg11, arg0) < arg12)) {
+		setWidgetSprite(arg2, new WidgetPointer(arg0));
+		return;
+	}
+	if ((arg0 == 12582939) && isMember()) {
+		setWidgetSprite(arg2, new WidgetPointer(arg0));
+		return;
+	}
+	setWidgetSprite(arg1, new WidgetPointer(arg0));
+	return;
+}

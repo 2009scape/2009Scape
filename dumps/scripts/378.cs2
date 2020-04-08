@@ -1,0 +1,6 @@
+void script_378(int arg0,int arg1,int arg2,string arg3) {
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1) || ((arg1 == -1) && setWidgetRegister(new WidgetPointer(arg0)))) {
+		script_379(script_1743(), getWidgetActualWidth(), script_1744(), arg2, arg3);
+	}
+	return;
+}

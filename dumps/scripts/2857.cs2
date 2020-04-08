@@ -1,0 +1,9 @@
+void script_2857() {
+	if (((boolean)script_2869(addToCoordinate(globalint_1070, -1, 0, 0)))) {
+		return;
+	}
+	if (script_2866(getMyPositionHash(), addToCoordinate(globalint_1070, -1, 0, 0)) < 31) {
+		globalint_1070 = addToCoordinate(globalint_1070, -1, 0, 0);
+	}
+	return;
+}

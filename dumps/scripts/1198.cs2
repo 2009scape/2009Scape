@@ -1,0 +1,38 @@
+void script_1198() {
+	if (((getItemAmtInContainer(93, 15249) > 0) || (getItemAmtInContainer(95, 15249) > 0)) || (bitconfig_6471 >= 44)) {
+		setWidgetIsHidden(true, new WidgetPointer(887,5));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(887,5));
+	}
+	if ((getItemAmtInContainer(93, 15253) > 0) || (getItemAmtInContainer(95, 15253) > 0)) {
+		setWidgetIsHidden(true, new WidgetPointer(887,6));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(887,6));
+	}
+	if (((getItemAmtInContainer(93, 15248) > 0) || (getItemAmtInContainer(95, 15248) > 0)) || (bitconfig_6471 == 42)) {
+		setWidgetIsHidden(true, new WidgetPointer(887,2));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(887,2));
+	}
+	if ((getItemAmtInContainer(93, 15247) > 0) || (getItemAmtInContainer(95, 15247) > 0)) {
+		setWidgetIsHidden(true, new WidgetPointer(887,4));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(887,4));
+	}
+	if ((((getItemAmtInContainer(93, 15251) > 0) || (getItemAmtInContainer(95, 15251) > 0)) || (bitconfig_6471 >= 52)) || ((boolean)bitconfig_6481)) {
+		setWidgetIsHidden(true, new WidgetPointer(887,8));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(887,8));
+	}
+	if ((((getItemAmtInContainer(93, 15250) > 0) || (getItemAmtInContainer(95, 15250) > 0)) || (bitconfig_6471 >= 52)) || (bitconfig_6481 == 2)) {
+		setWidgetIsHidden(true, new WidgetPointer(887,7));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(887,7));
+	}
+	if ((getItemAmtInContainer(93, 15252) > 0) || (getItemAmtInContainer(95, 15252) > 0)) {
+		setWidgetIsHidden(true, new WidgetPointer(887,3));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(887,3));
+	}
+	return;
+}

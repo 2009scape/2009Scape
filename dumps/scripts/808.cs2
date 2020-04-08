@@ -1,0 +1,42 @@
+void script_808() {
+	int ivar0;
+	int ivar1;
+	setWidgetIsHidden(false, new WidgetPointer(748,7));
+	ivar0 = multiplyDivide(bitconfig_7198, script_2916(), 100);
+	ivar1 = mod(getClientCycle(), 32);
+	if (ivar0 > 25) {
+		globalint_615 = 0;
+		if (((script_2916() < 200) && (bitconfig_7198 < 45)) && ((ivar0 < 100) && (getSkillActualLvl(3) > 0))) {
+			script_1888();
+		} else {
+			globalint_1025 = 0;
+		}
+		if (getWidgetShadeColor(new WidgetPointer(748,7)) != 0) {
+			cs2method2103(0, new WidgetPointer(748,7));
+		} else {
+			return;
+		}
+	} else {
+		if (((boolean)ivar1)) {
+			if (globalint_615 <= 0) {
+				globalint_615 = getClientCycle();
+			}
+			if (subtract(getClientCycle(), globalint_615) < 1500) {
+				playSoundEffect(5644, 1, 0);
+			}
+			if (getSkillActualLvl(3) > 0) {
+				script_1888();
+			}
+		}
+		if (ivar1 < 8) {
+			cs2method2103(0, new WidgetPointer(748,7));
+		} else if (ivar1 < 16) {
+			cs2method2103(85, new WidgetPointer(748,7));
+		} else if (ivar1 < 24) {
+			cs2method2103(255, new WidgetPointer(748,7));
+		} else {
+			cs2method2103(85, new WidgetPointer(748,7));
+		}
+	}
+	return;
+}

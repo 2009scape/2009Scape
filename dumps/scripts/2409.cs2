@@ -1,0 +1,4 @@
+void script_2409(int arg0,int arg1) {
+	script_2010(arg0, arg1, "Level 37 Ranged, level 19 Strength, level 8 Agility" + "<br>" + "Requires a grapple");
+	return;
+}

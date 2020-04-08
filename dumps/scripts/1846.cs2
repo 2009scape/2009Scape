@@ -1,0 +1,8 @@
+void script_1846() {
+	if ((((script_1305() != 8) && ((boolean)script_1569())) && (isWidgetOpen(new WidgetPointer(script_8(8))) && (bitconfig_6521 != 3))) && (bitconfig_6521 != 10)) {
+		script_736(script_1742(8), -1, script_121(8), -1);
+		setScriptCallOnGameloop(1847, "", new WidgetPointer(746,22));
+		setScriptCallOnGameloop(1847, "", new WidgetPointer(548,128));
+	}
+	return;
+}

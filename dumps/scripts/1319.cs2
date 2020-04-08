@@ -1,0 +1,45 @@
+void script_1319() {
+	if (((boolean)bitconfig_4834)) {
+		setWidgetModel(18796, new WidgetPointer(262,24));
+		globalint_163 = 1;
+	} else {
+		setWidgetModel(18794, new WidgetPointer(262,24));
+		globalint_163 = 0;
+	}
+	if (bitconfig_4834 == 2) {
+		setWidgetModel(18796, new WidgetPointer(262,25));
+		globalint_164 = 1;
+	} else {
+		setWidgetModel(18794, new WidgetPointer(262,25));
+		globalint_164 = 0;
+	}
+	if (bitconfig_4834 == 3) {
+		setWidgetModel(18796, new WidgetPointer(262,20));
+		globalint_162 = 1;
+	} else {
+		setWidgetModel(18794, new WidgetPointer(262,20));
+		globalint_162 = 0;
+	}
+	if (bitconfig_4834 == 4) {
+		setWidgetModel(18792, new WidgetPointer(262,21));
+		globalint_165 = 1;
+	} else {
+		setWidgetModel(18790, new WidgetPointer(262,21));
+		globalint_165 = 0;
+	}
+	if (bitconfig_4834 == 5) {
+		setWidgetModel(18792, new WidgetPointer(262,22));
+		globalint_166 = 1;
+	} else {
+		setWidgetModel(18790, new WidgetPointer(262,22));
+		globalint_166 = 0;
+	}
+	if (bitconfig_4834 == 6) {
+		setWidgetModel(18792, new WidgetPointer(262,23));
+		globalint_167 = 1;
+	} else {
+		setWidgetModel(18790, new WidgetPointer(262,23));
+		globalint_167 = 0;
+	}
+	return;
+}

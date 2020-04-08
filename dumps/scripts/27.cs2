@@ -1,0 +1,7 @@
+void script_27() {
+	setWidgetText(new WidgetPointer(197,8), intToStr(bitconfig_1485));
+	setWidgetText(new WidgetPointer(197,11), intToStr(bitconfig_1489));
+	setWidgetText(new WidgetPointer(197,9), intToStr(bitconfig_1488));
+	setWidgetText(new WidgetPointer(197,10), intToStr(bitconfig_1486));
+	return;
+}

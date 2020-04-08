@@ -1,0 +1,14 @@
+void script_392(int arg0,int arg1) {
+	if (arg0 == -1) {
+		arg0 = 1112;
+	}
+	setWidgetModel(getOtherCommonData(arg0, 1166), new WidgetPointer(1028,113));
+	if (((boolean)arg1)) {
+		setWidgetAnimation(getOtherCommonData(arg0, 1165), new WidgetPointer(1028,112));
+		setWidgetAnimation(getOtherCommonData(arg0, 1168), new WidgetPointer(1028,113));
+	} else {
+		setWidgetAnimation(getOtherCommonData(arg0, 1164), new WidgetPointer(1028,112));
+		setWidgetAnimation(getOtherCommonData(arg0, 1167), new WidgetPointer(1028,113));
+	}
+	return;
+}

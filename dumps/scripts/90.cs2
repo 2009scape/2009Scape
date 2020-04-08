@@ -1,0 +1,129 @@
+int script_90(int arg0,int arg1) {
+	switch (cs2method5004(arg0)) {
+		case -1:
+			return 0;
+		case 0:
+		case 1:
+		case 4:
+		case 27:
+		case 26:
+		case 29:
+		case 28:
+		case 31:
+		case 30:
+		case 110:
+		case 117:
+		case 116:
+		case 115:
+			return 1;
+		case 109:
+			if (((boolean)bitconfig_6161)) {
+				return 0;
+			}
+			return 1;
+		case 2:
+		case 17:
+			if (((boolean)cs2method5000())) {
+				return 1;
+			}
+			if (((boolean)cs2method5000()) && isFriend(cs2method5019(arg0))) {
+				return 1;
+			}
+			return 0;
+		case 3:
+		case 18:
+			if (((standart_config_287 > 0) && (globalint_41 >= 0)) && (((boolean)arg1) && ((boolean)script_506(arg0)))) {
+				return 0;
+			}
+			if (((boolean)cs2method5005())) {
+				return 1;
+			}
+			if (((boolean)cs2method5005()) && isFriend(cs2method5019(arg0))) {
+				return 1;
+			}
+			return 0;
+		case 100:
+		case 101:
+		case 111:
+		case 108:
+		case 106:
+		case 105:
+		case 118:
+		case 114:
+		case 113:
+		case 112:
+			if (((boolean)cs2method5016())) {
+				return 1;
+			}
+			if (((boolean)cs2method5016()) && isFriend(cs2method5019(arg0))) {
+				return 1;
+			}
+			return 0;
+		case 5:
+		case 6:
+		case 19:
+			if (((standart_config_287 > 0) && (globalint_41 >= 0)) && (((boolean)arg1) && ((boolean)script_506(arg0)))) {
+				return 0;
+			}
+			if (cs2method5005() < 2) {
+				return 1;
+			}
+			return 0;
+		case 7:
+			if (((standart_config_287 > 0) && (globalint_41 >= 0)) && (((boolean)arg1) && ((boolean)script_506(arg0)))) {
+				return 0;
+			}
+			return 1;
+		case 42:
+		case 41:
+		case 107:
+		case 44:
+		case 45:
+			if (((boolean)standart_config_1054)) {
+				return 1;
+			}
+			if (((boolean)standart_config_1054) && isFriend(cs2method5019(arg0))) {
+				return 1;
+			}
+			return 0;
+		case 9:
+		case 20:
+			if (((boolean)standart_config_2159)) {
+				return 1;
+			}
+			if (((boolean)standart_config_2159) && isFriend(cs2method5019(arg0))) {
+				return 1;
+			}
+			return 0;
+		case 102:
+			if (((boolean)standart_config_1055)) {
+				return 1;
+			}
+			if (((boolean)standart_config_1055) && isFriend(cs2method5019(arg0))) {
+				return 1;
+			}
+			return 0;
+		case 11:
+			if (standart_config_2159 < 2) {
+				return 1;
+			}
+			return 0;
+		case 43:
+		case 46:
+			if (standart_config_1054 < 2) {
+				return 1;
+			}
+			return 0;
+		case 103:
+			if (cs2method5016() < 2) {
+				return 1;
+			}
+			return 0;
+		case 104:
+			if (standart_config_1055 < 2) {
+				return 1;
+			}
+			return 0;
+	}
+	return 1;
+}

@@ -1,0 +1,34 @@
+void script_1223() {
+	if (IsFemale()) {
+		setWidgetIsHidden(false, new WidgetPointer(308,20));
+		setWidgetIsHidden(false, new WidgetPointer(308,22));
+		setWidgetIsHidden(false, new WidgetPointer(308,24));
+		setWidgetIsHidden(false, new WidgetPointer(308,26));
+		setWidgetIsHidden(false, new WidgetPointer(308,28));
+		setWidgetIsHidden(false, new WidgetPointer(308,30));
+		setWidgetIsHidden(false, new WidgetPointer(308,32));
+		setWidgetIsHidden(true, new WidgetPointer(308,19));
+		setWidgetIsHidden(true, new WidgetPointer(308,21));
+		setWidgetIsHidden(true, new WidgetPointer(308,23));
+		setWidgetIsHidden(true, new WidgetPointer(308,25));
+		setWidgetIsHidden(true, new WidgetPointer(308,27));
+		setWidgetIsHidden(true, new WidgetPointer(308,29));
+		setWidgetIsHidden(true, new WidgetPointer(308,31));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(308,20));
+		setWidgetIsHidden(true, new WidgetPointer(308,22));
+		setWidgetIsHidden(true, new WidgetPointer(308,24));
+		setWidgetIsHidden(true, new WidgetPointer(308,26));
+		setWidgetIsHidden(true, new WidgetPointer(308,28));
+		setWidgetIsHidden(true, new WidgetPointer(308,30));
+		setWidgetIsHidden(true, new WidgetPointer(308,32));
+		setWidgetIsHidden(false, new WidgetPointer(308,19));
+		setWidgetIsHidden(false, new WidgetPointer(308,21));
+		setWidgetIsHidden(false, new WidgetPointer(308,23));
+		setWidgetIsHidden(false, new WidgetPointer(308,25));
+		setWidgetIsHidden(false, new WidgetPointer(308,27));
+		setWidgetIsHidden(false, new WidgetPointer(308,29));
+		setWidgetIsHidden(false, new WidgetPointer(308,31));
+	}
+	return;
+}

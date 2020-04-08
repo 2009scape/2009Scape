@@ -1,0 +1,23 @@
+void script_2246(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	ivar4 = getItemIdInSlot(arg2, arg3);
+	if (ivar4 == -1) {
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+		setWidgetIsHidden(false, new WidgetPointer(arg1));
+	}
+	setWidgetIsHidden(false, new WidgetPointer(arg0));
+	setWidgetIsHidden(true, new WidgetPointer(arg1));
+	setItemOnWidgetMethod2200(ivar4, getItemAmtInSlot(94, arg3), new WidgetPointer(arg0));
+	setWidgetNoOptions(new WidgetPointer(arg0));
+	setScriptCallOnClickContextMenu(1620, new WidgetPointer(-32768,3), -1, 100, 0, 8, "Iiiii", new WidgetPointer(arg0));
+	if (getItemHashmapData(ivar4, 1047) > 0) {
+		if ((getItemHashmapData(ivar4, 1050) > 0) || (getItemHashmapData(ivar4, 1051) > 0)) {
+			setWidgetContextMenuOption(3, new WidgetPointer(arg0), "Destroy");
+		} else {
+			setWidgetContextMenuOption(3, new WidgetPointer(arg0), "Bind");
+		}
+	}
+	setWidgetContextMenuOption(10, new WidgetPointer(arg0), "Examine");
+	cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + getItemName(ivar4));
+	return;
+}

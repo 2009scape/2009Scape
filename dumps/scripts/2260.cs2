@@ -1,0 +1,175 @@
+void script_2260(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	ivar1 = getWidgetActualWidth(new WidgetPointer(arg0));
+	ivar2 = getWidgetActualHeight(new WidgetPointer(arg0));
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 2987;
+	ivar7 = 2988;
+	if (isMember()) {
+		if (globalint_1320 == 2) {
+			ivar6 = 2989;
+			ivar7 = 2990;
+		} else if (globalint_1320 == 3) {
+			ivar6 = 2991;
+			ivar7 = 2992;
+		} else if (globalint_1320 == 4) {
+			ivar6 = 2993;
+			ivar7 = 2994;
+		} else {
+			ivar6 = 2987;
+			ivar7 = 2988;
+		}
+	} else if (globalint_1320 == 2) {
+		ivar6 = 2997;
+		ivar7 = 2998;
+	} else if (globalint_1320 == 3) {
+		ivar6 = 2999;
+		ivar7 = 3000;
+	} else if (globalint_1320 == 4) {
+		ivar6 = 3001;
+		ivar7 = 3002;
+	} else {
+		ivar6 = 2995;
+		ivar7 = 2996;
+	}
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	deleteAllExtraChilds(new WidgetPointer(956,25));
+	createExtraChild(new WidgetPointer(arg0), 4, ivar3);
+	ivar3 = add(ivar3, 1);
+	setWidgetSize(31, 12, 0, 0);
+	setWidgetPosition(0, 0, 0, 0);
+	setWidgetFont(494);
+	setWidgetTextAlignment(0, 1, 0);
+	setWidgetText("Resources:");
+	setWidgetRGB(new Color(198, 155, 1));
+	setWidgetUnknownBoolean(true);
+	createExtraChild(new WidgetPointer(arg0), 5, ivar3);
+	ivar3 = add(ivar3, 1);
+	setWidgetSize(160, 12, 0, 0);
+	setWidgetPosition(0, 7, 0, 0);
+	setWidgetSprite(1074);
+	ivar5 = add(ivar5, 20);
+	ivar8 = ivar3;
+	while (subtract(ivar3, ivar8) < multiply(getCommonDefinitionSize(ivar6), 5)) {
+		createExtraChild(new WidgetPointer(arg0), 5, ivar3);
+		setWidgetSize(48, 52, 0, 0);
+		setWidgetPosition(ivar4, ivar5, 0, 0);
+		setWidgetSprite(2205);
+		cs2method1305("<col=ff981f>" + getItemName(cs2method_3408(105, 79, ivar6, divide(subtract(ivar3, ivar8), 5))) + "</col>");
+		setWidgetContextMenuOption(1, "Info");
+		setWidgetContextMenuOption(2, "Buy 1");
+		setWidgetContextMenuOption(3, "Buy 5");
+		setWidgetContextMenuOption(4, "Buy 10");
+		setWidgetContextMenuOption(5, "Buy 50");
+		setWidgetContextMenuOption(6, "Buy 250");
+		setWidgetContextMenuOption(10, "Examine");
+		setScriptCallOnMouseEntered(2261, new WidgetPointer(-32768,3), add(ivar3, 1), 0, "Ii1");
+		setScriptCallOnMouseExit(2261, new WidgetPointer(-32768,3), add(ivar3, 1), 1, "Ii1");
+		createExtraChild(new WidgetPointer(arg0), 5, add(ivar3, 1));
+		setWidgetSize(48, 52, 0, 0);
+		setWidgetPosition(ivar4, ivar5, 0, 0);
+		setWidgetSprite(2206);
+		setWidgetHidden(1);
+		createExtraChild(new WidgetPointer(arg0), 5, add(ivar3, 2));
+		setWidgetSize(36, 32, 0, 0);
+		setWidgetPosition(add(ivar4, 6), add(ivar5, 4), 0, 0);
+		setItemOnWidgetMethod1205(cs2method_3408(105, 79, ivar6, divide(subtract(ivar3, ivar8), 5)), 1);
+		setWidgetShadowColor(new Color(48, 32, 32));
+		setWidgetBorderThickness(1);
+		createExtraChild(new WidgetPointer(arg0), 5, add(ivar3, 3));
+		setWidgetSize(12, 12, 0, 0);
+		setWidgetPosition(add(ivar4, 2), add(ivar5, 38), 0, 0);
+		setWidgetSprite(2181);
+		createExtraChild(new WidgetPointer(arg0), 4, add(ivar3, 4));
+		setWidgetSize(31, 12, 0, 0);
+		setWidgetPosition(add(ivar4, 13), add(ivar5, 39), 0, 0);
+		setWidgetFont(494);
+		setWidgetTextAlignment(2, 1, 0);
+		setWidgetText(script_940(script_2262(cs2method_3408(105, 79, ivar6, divide(subtract(ivar3, ivar8), 5)))));
+		setWidgetRGB(new Color(226, 226, 162));
+		setWidgetUnknownBoolean(true);
+		ivar4 = add(ivar4, 50);
+		if (add(ivar4, 48) > ivar1) {
+			ivar4 = 0;
+			ivar5 = add(ivar5, 54);
+		}
+		ivar3 = add(ivar3, 5);
+	}
+	if (ivar4 != 0) {
+		ivar4 = 0;
+		ivar5 = add(ivar5, 52);
+	}
+	createExtraChild(new WidgetPointer(arg0), 4, ivar3);
+	ivar3 = add(ivar3, 1);
+	setWidgetSize(31, 12, 0, 0);
+	setWidgetPosition(0, add(ivar5, 10), 0, 0);
+	setWidgetFont(494);
+	setWidgetTextAlignment(0, 1, 0);
+	setWidgetText("Tools:");
+	setWidgetRGB(new Color(198, 155, 1));
+	setWidgetUnknownBoolean(true);
+	createExtraChild(new WidgetPointer(arg0), 5, ivar3);
+	ivar3 = add(ivar3, 1);
+	setWidgetSize(160, 12, 0, 0);
+	setWidgetPosition(0, add(ivar5, 17), 0, 0);
+	setWidgetSprite(1074);
+	ivar5 = add(ivar5, 30);
+	ivar8 = ivar3;
+	while (subtract(ivar3, ivar8) < multiply(getCommonDefinitionSize(ivar7), 5)) {
+		createExtraChild(new WidgetPointer(arg0), 5, ivar3);
+		setWidgetSize(48, 52, 0, 0);
+		setWidgetPosition(ivar4, ivar5, 0, 0);
+		setWidgetSprite(2205);
+		cs2method1305("<col=ff981f>" + getItemName(cs2method_3408(105, 79, ivar7, divide(subtract(ivar3, ivar8), 5))) + "</col>");
+		setWidgetContextMenuOption(1, "Info");
+		setWidgetContextMenuOption(2, "Buy 1");
+		setWidgetContextMenuOption(3, "Buy 5");
+		setWidgetContextMenuOption(4, "Buy 10");
+		setWidgetContextMenuOption(5, "Buy 50");
+		setWidgetContextMenuOption(6, "Buy 250");
+		setWidgetContextMenuOption(10, "Examine");
+		setScriptCallOnMouseEntered(2261, new WidgetPointer(-32768,3), add(ivar3, 1), 0, "Ii1");
+		setScriptCallOnMouseExit(2261, new WidgetPointer(-32768,3), add(ivar3, 1), 1, "Ii1");
+		createExtraChild(new WidgetPointer(arg0), 5, add(ivar3, 1));
+		setWidgetSize(48, 52, 0, 0);
+		setWidgetPosition(ivar4, ivar5, 0, 0);
+		setWidgetSprite(2206);
+		setWidgetHidden(1);
+		createExtraChild(new WidgetPointer(arg0), 5, add(ivar3, 2));
+		setWidgetSize(36, 32, 0, 0);
+		setWidgetPosition(add(ivar4, 6), add(ivar5, 4), 0, 0);
+		setItemOnWidgetMethod1205(cs2method_3408(105, 79, ivar7, divide(subtract(ivar3, ivar8), 5)), 1);
+		setWidgetShadowColor(new Color(48, 32, 32));
+		setWidgetBorderThickness(1);
+		createExtraChild(new WidgetPointer(arg0), 5, add(ivar3, 3));
+		setWidgetSize(12, 12, 0, 0);
+		setWidgetPosition(add(ivar4, 2), add(ivar5, 38), 0, 0);
+		setWidgetSprite(2181);
+		createExtraChild(new WidgetPointer(arg0), 4, add(ivar3, 4));
+		setWidgetSize(31, 12, 0, 0);
+		setWidgetPosition(add(ivar4, 13), add(ivar5, 39), 0, 0);
+		setWidgetFont(494);
+		setWidgetTextAlignment(2, 1, 0);
+		setWidgetText(script_940(script_2262(cs2method_3408(105, 79, ivar7, divide(subtract(ivar3, ivar8), 5)))));
+		setWidgetRGB(new Color(226, 226, 162));
+		setWidgetUnknownBoolean(true);
+		ivar4 = add(ivar4, 50);
+		if (add(ivar4, 48) > ivar1) {
+			ivar4 = 0;
+			ivar5 = add(ivar5, 54);
+		}
+		ivar3 = add(ivar3, 5);
+	}
+	setWidgetScrollMax(0, add(ivar5, 52), new WidgetPointer(arg0));
+	script_31(62652441, arg0, 792, 789, 790, 791, 773, 788);
+	return;
+}

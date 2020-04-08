@@ -1,0 +1,13 @@
+void script_5372(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	ivar2 = 3;
+	ivar3 = subtract(add(getWidgetActualX(new WidgetPointer(arg0)), divide(getWidgetActualWidth(new WidgetPointer(arg0)), 2)), divide(getWidgetActualWidth(new WidgetPointer(951,14)), 2));
+	if (ivar3 >= arg1) {
+		setWidgetPosition(arg1, getWidgetActualY(new WidgetPointer(arg0)), 1, 0, new WidgetPointer(arg0));
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+	} else {
+		setWidgetPosition(add(ivar3, ivar2), getWidgetActualY(new WidgetPointer(arg0)), 1, 0, new WidgetPointer(arg0));
+	}
+	return;
+}

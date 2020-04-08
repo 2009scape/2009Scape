@@ -1,0 +1,28 @@
+cs2func_script_4909_struct(2,0,0) script_4909(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 216;
+	ivar4 = 216;
+	ivar5 = 127;
+	if (arg0 == -1) {
+		return newstruct cs2func_script_4909_struct(0, 0);
+	}
+	ivar6 = extractX(arg0);
+	if ((ivar6 > ivar5) || (ivar6 < 0)) {
+		return newstruct cs2func_script_4909_struct(-1, -1);
+	}
+	ivar7 = subtract(ivar5, extractY(arg0));
+	if ((ivar7 > 127) || (ivar7 < 0)) {
+		return newstruct cs2func_script_4909_struct(-1, -1);
+	}
+	ivar1 = divide(multiply(ivar6, ivar3), ivar5);
+	ivar2 = divide(multiply(ivar7, ivar4), ivar5);
+	return newstruct cs2func_script_4909_struct(ivar1, ivar2);
+}

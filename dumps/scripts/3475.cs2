@@ -1,0 +1,19 @@
+void script_3475(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	script_1088(arg0, 0);
+	script_680(arg3);
+	script_680(arg5);
+	setScriptCallOnMouseEntered(95, new WidgetPointer(arg3), "I", new WidgetPointer(arg2));
+	setScriptCallOnMouseEntered(95, new WidgetPointer(arg5), "I", new WidgetPointer(arg4));
+	setScriptCallOnMouseExit(93, new WidgetPointer(arg3), "I", new WidgetPointer(arg2));
+	setScriptCallOnMouseExit(93, new WidgetPointer(arg5), "I", new WidgetPointer(arg4));
+	cs2method2100(0, 300, new WidgetPointer(arg1));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(arg1));
+	setWidgetIsHidden(false, new WidgetPointer(arg2));
+	setWidgetIsHidden(false, new WidgetPointer(arg4));
+	setScriptCallOnClickContextMenu(3479, new WidgetPointer(arg1), new WidgetPointer(arg2), new WidgetPointer(arg4), 1, "III1", new WidgetPointer(arg2));
+	setScriptCallOnClickContextMenu(3479, new WidgetPointer(arg1), new WidgetPointer(arg2), new WidgetPointer(arg4), 0, "III1", new WidgetPointer(arg4));
+	setScriptCallOnConfigChange(3476, 1506, 1507, 1508, 3, "Y", new WidgetPointer(arg0));
+	setScriptCallOnGlobalConfigChange(3476, 1317, 1318, 2, "Y", new WidgetPointer(arg0));
+	script_3477();
+	return;
+}

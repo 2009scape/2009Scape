@@ -1,0 +1,12 @@
+void script_1252(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = getWidgetShadeColor(new WidgetPointer(arg0));
+	ivar2 = min(add(ivar2, divide(multiply(255, arg1), 30)), 255);
+	cs2method2103(ivar2, new WidgetPointer(arg0));
+	if (ivar2 >= 255) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+		return;
+	}
+	return;
+}

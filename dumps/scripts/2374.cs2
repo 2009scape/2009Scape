@@ -1,0 +1,5 @@
+void script_2374(int arg0,int arg1) {
+	setWidgetNpcHead(arg1, new WidgetPointer(arg0));
+	setWidgetAnimation(9806, new WidgetPointer(arg0));
+	return;
+}

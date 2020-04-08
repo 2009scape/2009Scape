@@ -1,0 +1,27 @@
+void script_2853(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	ivar2 = subtract(getClientCycle(), arg1);
+	ivar3 = 0;
+	if (ivar2 <= 30) {
+		if (ivar2 == 5) {
+			playSoundEffect(2871, 1, 0);
+		}
+		ivar3 = subtract(multiply(11, ivar2), 325);
+		setWidgetPosition(ivar3, 5, 0, 0, new WidgetPointer(475,8));
+		return;
+	}
+	if (ivar2 < 170) {
+		return;
+	}
+	if (ivar2 < 201) {
+		if (ivar2 == 5) {
+			playSoundEffect(2871, 1, 0);
+		}
+		ivar3 = subtract(5, multiply(11, subtract(ivar2, 170)));
+		setWidgetPosition(ivar3, 5, 0, 0, new WidgetPointer(475,8));
+		return;
+	}
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+	return;
+}

@@ -1,0 +1,50 @@
+void script_2122(int arg0,int arg1,string arg2) {
+	int ivar2;
+	int ivar3;
+	ivar2 = multiply(divide(arg0, 10), 64);
+	createExtraChild(new WidgetPointer(arg1), 4, subtract(arg0, 1));
+	setWidgetSize(subtract(getWidgetActualWidth(new WidgetPointer(arg1)), 10), 17, 0, 0);
+	setWidgetPosition(5, add(ivar2, 2), 0, 0);
+	setWidgetFont(495);
+	setWidgetTextAlignment(0, 0, 0);
+	setWidgetRGB(new Color(255, 152, 31));
+	setWidgetText(arg2);
+	ivar3 = 0;
+	while (ivar3 < 7) {
+		script_2123(add(arg0, ivar3), ivar3, arg1, ivar2);
+		ivar3 = add(ivar3, 1);
+	}
+	createExtraChild(new WidgetPointer(arg1), 4, add(arg0, 7));
+	setWidgetSize(100, 64, 0, 0);
+	setWidgetPosition(subtract(getWidgetActualWidth(new WidgetPointer(arg1)), 100), ivar2, 0, 0);
+	setWidgetFont(495);
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetRGB(new Color(255, 152, 31));
+	switch (arg0) {
+		case 1:
+			setWidgetText("Points:" + "<br>" + intToStr(bitconfig_5903));
+			break;
+		case 11:
+			setWidgetText("Points:" + "<br>" + intToStr(bitconfig_5904));
+			break;
+		case 21:
+			setWidgetText("Points:" + "<br>" + intToStr(bitconfig_5905));
+			break;
+		case 31:
+			setWidgetText("Points:" + "<br>" + intToStr(bitconfig_5906));
+			break;
+		case 41:
+			setWidgetText("Points:" + "<br>" + intToStr(bitconfig_5907));
+			break;
+		default:
+			setWidgetText("");
+	}
+	if (add(arg0, 10) < 43) {
+		createExtraChild(new WidgetPointer(arg1), 5, add(arg0, 8));
+		setWidgetSprite(962);
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg1)), 32, 0, 0);
+		cs2method1107(1);
+		setWidgetPosition(0, add(ivar2, 58), 0, 0);
+	}
+	return;
+}

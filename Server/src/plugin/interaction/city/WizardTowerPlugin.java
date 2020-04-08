@@ -1134,7 +1134,7 @@ public final class WizardTowerPlugin extends OptionHandler {
 				stage = 911;
 				break;
 			case 911:
-				interpreter.sendDialogues(npc, null, "or these elemental altars. This is where you and", "Aubury come into this stroy. A few weeks back,", "Aubury discovered in a standard delivery of runes", "to his store, a parchment detailing a");
+				interpreter.sendDialogues(npc, null, "or these elemental altars. This is where you and", "Aubury come into this story. A few weeks back,", "Aubury discovered in a standard delivery of runes", "to his store, a parchment detailing a");
 				stage = 912;
 				break;
 			case 912:

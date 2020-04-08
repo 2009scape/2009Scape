@@ -1,0 +1,113 @@
+int script_2297(int arg0) {
+	int ivar1;
+	ivar1 = cs2method_3408(105, 74, 2279, arg0);
+	if (((boolean)bitconfig_6840)) {
+		ivar1 = cs2method_3408(105, 74, 863, arg0);
+		switch (ivar1) {
+			case 888:
+				return bitconfig_6862;
+			case 889:
+				return bitconfig_6863;
+			case 890:
+				return bitconfig_6864;
+			case 891:
+				return bitconfig_6865;
+			case 892:
+				return bitconfig_6866;
+			case 893:
+				return bitconfig_6867;
+			case 894:
+				return bitconfig_6868;
+			case 895:
+				return bitconfig_6869;
+			case 896:
+				return bitconfig_6870;
+			case 897:
+				return bitconfig_6871;
+			case 898:
+				return bitconfig_6872;
+			case 899:
+				return bitconfig_6873;
+			case 900:
+				return bitconfig_6874;
+			case 901:
+				return bitconfig_6875;
+			case 902:
+				return bitconfig_6876;
+			case 903:
+				return bitconfig_6877;
+			case 904:
+				return bitconfig_6878;
+			case 905:
+				return bitconfig_6879;
+			case 906:
+				return bitconfig_6880;
+			case 907:
+				return bitconfig_6881;
+		}
+		return 0;
+	}
+	switch (ivar1) {
+		case 660:
+			return bitconfig_5971;
+		case 661:
+			return bitconfig_5972;
+		case 662:
+			return bitconfig_5973;
+		case 663:
+			return bitconfig_5974;
+		case 664:
+			return bitconfig_5975;
+		case 665:
+			return bitconfig_5976;
+		case 666:
+			return bitconfig_5977;
+		case 667:
+			return bitconfig_5978;
+		case 668:
+			return bitconfig_5979;
+		case 669:
+			return bitconfig_5980;
+		case 670:
+			return bitconfig_5981;
+		case 671:
+			return bitconfig_5982;
+		case 672:
+			return bitconfig_5983;
+		case 673:
+			return bitconfig_5984;
+		case 674:
+			return bitconfig_5985;
+		case 675:
+			return bitconfig_5986;
+		case 676:
+			return bitconfig_5987;
+		case 677:
+			return bitconfig_5988;
+		case 678:
+			return bitconfig_5989;
+		case 679:
+			return bitconfig_5990;
+		case 680:
+			return bitconfig_5991;
+		case 681:
+			return bitconfig_5992;
+		case 682:
+			return bitconfig_5993;
+		case 683:
+			return bitconfig_5994;
+		case 684:
+			return bitconfig_5995;
+		case 685:
+			return bitconfig_5996;
+		case 1005:
+			return bitconfig_7770;
+		case 686:
+			return bitconfig_5997;
+		case 1006:
+			return bitconfig_7771;
+		case 1029:
+			return bitconfig_7382;
+	}
+	return 0;
+}

@@ -1,0 +1,53 @@
+void script_2312() {
+	int ivar0;
+	ivar0 = 0;
+	while (ivar0 < 31) {
+		createExtraChild(new WidgetPointer(137,75), 4, ivar0);
+		setWidgetSize(46, 20, 0, 0);
+		setWidgetPosition(4, multiply(ivar0, 20), 0, 0);
+		setWidgetFont(496);
+		setWidgetTextAlignment(1, 1, 0);
+		setWidgetText(intToStr(add(ivar0, 1)));
+		setWidgetRGB(new Color(255, 255, 255));
+		setWidgetContextMenuOption(1, "Select");
+		setScriptCallOnClickContextMenu(2316, ivar0, "i");
+		setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), -2147483643, 65280, "Iii");
+		setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), -2147483643, 16777215, "Iii");
+		ivar0 = add(ivar0, 1);
+	}
+	setWidgetScrollMax(0, multiply(ivar0, 20), new WidgetPointer(137,75));
+	script_31(8978508, 8978507, 792, 789, 790, 791, 773, 788);
+	ivar0 = 0;
+	while (ivar0 < 12) {
+		createExtraChild(new WidgetPointer(137,78), 4, ivar0);
+		setWidgetSize(158, 20, 0, 0);
+		setWidgetPosition(4, multiply(ivar0, 20), 0, 0);
+		setWidgetFont(496);
+		setWidgetTextAlignment(1, 1, 0);
+		setWidgetText(cs2method_3408(105, 115, 950, ivar0));
+		setWidgetRGB(new Color(255, 255, 255));
+		setWidgetContextMenuOption(1, "Select");
+		setScriptCallOnClickContextMenu(2334, ivar0, "i");
+		setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), -2147483643, 65280, "Iii");
+		setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), -2147483643, 16777215, "Iii");
+		ivar0 = add(ivar0, 1);
+	}
+	setWidgetScrollMax(0, multiply(ivar0, 20), new WidgetPointer(137,78));
+	script_31(8978511, 8978510, 792, 789, 790, 791, 773, 788);
+	setWidgetIsHidden(true, new WidgetPointer(137,75));
+	setWidgetIsHidden(true, new WidgetPointer(137,74));
+	setWidgetIsHidden(true, new WidgetPointer(137,76));
+	setWidgetIsHidden(true, new WidgetPointer(137,78));
+	setWidgetIsHidden(true, new WidgetPointer(137,77));
+	setWidgetIsHidden(true, new WidgetPointer(137,79));
+	setWidgetIsHidden(true, new WidgetPointer(137,81));
+	setWidgetIsHidden(true, new WidgetPointer(137,82));
+	setWidgetIsHidden(true, new WidgetPointer(137,80));
+	setWidgetIsHidden(true, new WidgetPointer(137,68));
+	setWidgetIsHidden(true, new WidgetPointer(137,69));
+	setWidgetIsHidden(true, new WidgetPointer(137,70));
+	setWidgetIsHidden(false, new WidgetPointer(137,71));
+	setWidgetIsHidden(false, new WidgetPointer(137,72));
+	setWidgetIsHidden(false, new WidgetPointer(137,73));
+	return;
+}

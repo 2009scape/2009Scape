@@ -1,0 +1,9 @@
+void script_2215() {
+	if (getWidgetActualY(new WidgetPointer(932,14)) < 180) {
+		setScriptCallOnGameloop(2215, "", new WidgetPointer(932,1));
+		setWidgetPosition(getWidgetActualX(new WidgetPointer(932,14)), add(2, getWidgetActualY(new WidgetPointer(932,14))), 0, 0, new WidgetPointer(932,14));
+	} else {
+		globalint_1137 = 0;
+	}
+	return;
+}

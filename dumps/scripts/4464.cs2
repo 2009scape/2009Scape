@@ -1,0 +1,17 @@
+int script_4464() {
+	int ivar0;
+	ivar0 = -1;
+	if (cs2method3701()) {
+		if (cs2method3751()) {
+			ivar0 = cs2method3717(strRemoveEntities(cs2method5020()));
+			if ((ivar0 != -1) && (cs2method3757(ivar0) >= cs2method3705())) {
+				return 1;
+			}
+		} else {
+			messageType0("You must be in a clan to do that.");
+		}
+	} else {
+		messageType0("You must be in a clan to do that.");
+	}
+	return 0;
+}

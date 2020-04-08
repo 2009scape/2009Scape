@@ -1,0 +1,68 @@
+void script_1558(int arg0) {
+	if (((boolean)script_2709()) && (standart_config_281 == 1000)) {
+		setWidgetText(new WidgetPointer(137,56), "");
+		setScriptCallOnMousePressed(-1, "", new WidgetPointer(137,56));
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(137,56));
+		setWidgetIsHidden(true, new WidgetPointer(137,57));
+		setWidgetPosition(0, 72, 0, 0, new WidgetPointer(137,58));
+		setWidgetSize(488, 72, 0, 1, new WidgetPointer(137,58));
+		setWidgetPosition(0, 72, 2, 0, new WidgetPointer(137,59));
+		setWidgetSize(16, 72, 0, 1, new WidgetPointer(137,59));
+		setWidgetIsHidden(true, new WidgetPointer(137,51));
+		setWidgetIsHidden(true, new WidgetPointer(137,52));
+		setWidgetIsHidden(true, new WidgetPointer(137,53));
+		setWidgetIsHidden(true, new WidgetPointer(137,56));
+		setWidgetIsHidden(false, new WidgetPointer(137,60));
+		return;
+	}
+	setWidgetIsHidden(false, new WidgetPointer(137,57));
+	setWidgetPosition(0, 0, 0, 0, new WidgetPointer(137,58));
+	setWidgetSize(488, 18, 0, 1, new WidgetPointer(137,58));
+	setWidgetPosition(0, 0, 2, 0, new WidgetPointer(137,59));
+	setWidgetSize(16, 18, 0, 1, new WidgetPointer(137,59));
+	setWidgetIsHidden(false, new WidgetPointer(137,51));
+	setWidgetIsHidden(false, new WidgetPointer(137,52));
+	setWidgetIsHidden(false, new WidgetPointer(137,53));
+	setWidgetIsHidden(false, new WidgetPointer(137,56));
+	setWidgetIsHidden(true, new WidgetPointer(137,60));
+	if (((boolean)arg0) && (cs2method6900() || isMuteRelatedMethod3329())) {
+		setWidgetText(new WidgetPointer(137,56), "Left-click here to enter Public Quick Chat or right-click for Friends Channel Quick Chat.");
+		setWidgetPosition(0, 0, 1, 1, new WidgetPointer(137,54));
+		setWidgetSize(0, 0, 1, 1, new WidgetPointer(137,54));
+		setScriptCallOnMousePressed(-1, "", new WidgetPointer(137,56));
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(137,56));
+		setWidgetIsHidden(true, new WidgetPointer(137,57));
+		return;
+	}
+	if (((boolean)globalint_1650)) {
+		setWidgetText(new WidgetPointer(137,54), "To " + globalstring_23 + ":");
+	} else if (globalint_1651 == 2) {
+		setWidgetText(new WidgetPointer(137,54), "Clan Chat" + "<img=3>" + ":");
+	} else if (globalint_1651 == 3) {
+		setWidgetText(new WidgetPointer(137,54), "Guest Clan Chat" + "<img=3>" + ":");
+	} else if (((boolean)globalint_1651)) {
+		setWidgetText(new WidgetPointer(137,54), "Friends Chat" + "<img=3>" + ":");
+	} else {
+		setWidgetText(new WidgetPointer(137,54), cs2method5015() + "<img=3>" + ":");
+	}
+	if (getDisplayMode() >= 2) {
+		setWidgetRGB(new Color(127, 169, 255), new WidgetPointer(137,56));
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(137,54));
+	} else {
+		setWidgetRGB(new Color(0, 0, 255), new WidgetPointer(137,56));
+		setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(137,54));
+	}
+	setWidgetText(new WidgetPointer(137,56), replaceLtGt(globalstring_1));
+	setWidgetSize(getTextWidth(495, getWidgetText(new WidgetPointer(137,54))), getWidgetActualHeight(new WidgetPointer(137,54)), 0, 0, new WidgetPointer(137,54));
+	setWidgetPosition(add(add(getWidgetActualX(new WidgetPointer(137,54)), getWidgetActualWidth(new WidgetPointer(137,54))), 2), 0, 0, 2, new WidgetPointer(137,55));
+	setWidgetSize(subtract(subtract(getWidgetActualWidth(new WidgetPointer(137,50)), getWidgetActualX(new WidgetPointer(137,55))), 5), getWidgetActualHeight(new WidgetPointer(137,55)), 0, 0, new WidgetPointer(137,55));
+	setScriptCallOnMousePressed(1554, -2147483647, 0, "ii", new WidgetPointer(137,56));
+	globalint_1028 = max(min(globalint_1028, strLength(replaceLtGt(globalstring_1))), 0);
+	script_1555(0);
+	if (strLength(cs2method5015()) > 0) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(137,58));
+	} else {
+		setScriptCallOnGameloop(4308, arg0, "1", new WidgetPointer(137,58));
+	}
+	return;
+}

@@ -1,0 +1,118 @@
+void script_2971(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	string svar0;
+	string svar1;
+	string svar2;
+	flow_0:
+		svar0 = "";
+		svar1 = "";
+		svar2 = "";
+		ivar2 = -1;
+		ivar3 = -1;
+		SWITCH (arg0) {
+			case 0:
+				 GOTO flow_1
+			case 1:
+				 GOTO flow_2
+			case 2:
+				 GOTO flow_3
+			case 3:
+				 GOTO flow_4
+			case 4:
+				 GOTO flow_5
+			case 5:
+				 GOTO flow_6
+			case 6:
+				 GOTO flow_7
+			case 7:
+				 GOTO flow_8
+		}
+		svar0 = "Unknown";
+		svar1 = "This should not get here.";
+		svar2 = "This should never get here.";
+		ivar2 = 62129;
+		ivar3 = 30081093;
+		GOTO	flow_9
+	flow_1:
+		svar0 = "Nothing.";
+		svar1 = "There are no requirements for building this feature.";
+		svar2 = "This feature is an abscence of anything. Oddly, some creatures prefer the minimalist approach.";
+		ivar2 = 62129;
+		ivar3 = 30081093;
+		GOTO	flow_9
+	flow_2:
+		svar0 = "Pond";
+		svar1 = "You need a Construction level of 65 to build a pond.";
+		svar2 = "Ponds attract creatures with an affinity for water. They are essentially very small, man-made lakes...or glorified puddles, depending on your view.";
+		ivar3 = 30081092;
+		ivar2 = 62128;
+		GOTO	flow_9
+	flow_3:
+		svar0 = "Tall grass";
+		svar1 = "You need a Construction level of 62 to build tall grass.";
+		svar2 = "Tall grass is favoured by creatures who sneak and hide. It's also a favourite with people too lazy to trim their lawn. Essentially, it's a patch of land allowed to grow wild.";
+		ivar3 = 30081094;
+		ivar2 = 62134;
+		GOTO	flow_9
+	flow_4:
+		svar0 = "Abandoned house";
+		svar1 = "You need a Construction level of 57 to build an abandoned house.";
+		svar2 = "Something approximating an abandoned house: popular amongst creatures that think they're domesticated.";
+		ivar3 = 30081095;
+		ivar2 = 62132;
+		GOTO	flow_9
+	flow_5:
+		svar0 = "Thermal vent";
+		svar1 = "You need a Construction level of 59 to build a thermal vent.";
+		svar2 = "A home-made volcano, or, at least, something that looks like one. These are popular among earthy creatures.";
+		ivar3 = 30081096;
+		ivar2 = 62133;
+		GOTO	flow_9
+	flow_6:
+		svar0 = "Standing stones";
+		svar1 = "You need a Construction level of 70 to build standing stones.";
+		svar2 = "A circle of home-made mystical stones, popular among creatures that are more magically inclined.";
+		ivar3 = 30081097;
+		ivar2 = 62136;
+		GOTO	flow_9
+	flow_7:
+		svar0 = "Dark pit";
+		svar1 = "You need a Construction level of 80 to build a dark pit.";
+		svar2 = "A deep, dark, endless pit, popular among the more sinister creatures. Don't look too closely: you might fall in.";
+		ivar3 = 30081098;
+		ivar2 = 62131;
+		GOTO	flow_9
+	flow_8:
+		svar0 = "Boneyard";
+		svar1 = "You need a Construction level of 56 to build a boneyard.";
+		svar2 = "An animal graveyard, or a collection of well-made bone mockeries. Popular among scavengers and sinister creatures.";
+		ivar3 = 30081099;
+		ivar2 = 62135;
+	flow_9:
+		script_2973();
+		if (getSkillCurrentLvl(22) < arg1) {
+			setWidgetRGB(new Color(204, 204, 0), new WidgetPointer(459,37));
+			svar2 = concat(svar2, "<br>" + "<br>" + "You can pay Papa Mambo to build this for you.");
+		} else {
+			setWidgetRGB(new Color(0, 204, 0), new WidgetPointer(459,37));
+		}
+		setWidgetText(new WidgetPointer(459,37), svar0);
+		setWidgetText(new WidgetPointer(459,38), svar1);
+		setWidgetText(new WidgetPointer(459,36), svar2);
+		setWidgetModel(ivar2, new WidgetPointer(459,35));
+		setWidgetIsHidden(true, new WidgetPointer(459,69));
+		setWidgetIsHidden(true, new WidgetPointer(459,68));
+		setWidgetIsHidden(true, new WidgetPointer(459,70));
+		setWidgetIsHidden(true, new WidgetPointer(459,71));
+		setWidgetIsHidden(true, new WidgetPointer(459,72));
+		setWidgetIsHidden(true, new WidgetPointer(459,73));
+		setWidgetIsHidden(true, new WidgetPointer(459,74));
+		setWidgetIsHidden(true, new WidgetPointer(459,75));
+		if (ivar3 != -1) {
+			setWidgetIsHidden(false, new WidgetPointer(ivar3));
+		} else {
+			setWidgetIsHidden(false, new WidgetPointer(459,69));
+		}
+		return;
+}

@@ -1,0 +1,6 @@
+int script_1(int arg0,int arg1) {
+	if (isMembersItem(arg1) && isMember()) {
+		return 0;
+	}
+	return getItemAmtInContainer(arg0, arg1);
+}

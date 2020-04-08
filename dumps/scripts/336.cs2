@@ -1,0 +1,292 @@
+void script_336() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	int stack_dump3;
+	cs2func_script_335_struct(2,0,0) structdump_4;
+	cs2func_script_335_struct(2,0,0) structdump_5;
+	cs2func_script_335_struct(2,0,0) structdump_6;
+	cs2func_script_335_struct(2,0,0) structdump_7;
+	cs2func_script_335_struct(2,0,0) structdump_8;
+	cs2func_script_335_struct(2,0,0) structdump_9;
+	cs2func_script_335_struct(2,0,0) structdump_10;
+	cs2func_script_335_struct(2,0,0) structdump_11;
+	cs2func_script_335_struct(2,0,0) structdump_12;
+	cs2func_script_335_struct(2,0,0) structdump_13;
+	cs2func_script_335_struct(2,0,0) structdump_14;
+	cs2func_script_335_struct(2,0,0) structdump_15;
+	cs2func_script_335_struct(2,0,0) structdump_16;
+	cs2func_script_335_struct(2,0,0) structdump_17;
+	cs2func_script_335_struct(2,0,0) structdump_18;
+	cs2func_script_335_struct(2,0,0) structdump_19;
+	cs2func_script_335_struct(2,0,0) structdump_20;
+	cs2func_script_335_struct(2,0,0) structdump_21;
+	cs2func_script_335_struct(2,0,0) structdump_22;
+	cs2func_script_335_struct(2,0,0) structdump_23;
+	cs2func_script_335_struct(2,0,0) structdump_24;
+	cs2func_script_335_struct(2,0,0) structdump_25;
+	cs2func_script_335_struct(2,0,0) structdump_26;
+	cs2func_script_335_struct(2,0,0) structdump_27;
+	cs2func_script_335_struct(2,0,0) structdump_28;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	if (globalint_1243 < getSkillXp(0)) {
+		ivar2 = subtract(getSkillXp(0), globalint_1243);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_4 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_4.intpart_1;
+		ivar0 = structdump_4.intpart_0;
+	}
+	if (globalint_1244 < getSkillXp(2)) {
+		ivar2 = subtract(getSkillXp(2), globalint_1244);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_5 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_5.intpart_1;
+		ivar0 = structdump_5.intpart_0;
+	}
+	if (globalint_1245 < getSkillXp(1)) {
+		ivar2 = subtract(getSkillXp(1), globalint_1245);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_6 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_6.intpart_1;
+		ivar0 = structdump_6.intpart_0;
+	}
+	if (globalint_1246 < getSkillXp(4)) {
+		ivar2 = subtract(getSkillXp(4), globalint_1246);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_7 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_7.intpart_1;
+		ivar0 = structdump_7.intpart_0;
+	}
+	if (globalint_1247 < getSkillXp(5)) {
+		ivar2 = subtract(getSkillXp(5), globalint_1247);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_8 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_8.intpart_1;
+		ivar0 = structdump_8.intpart_0;
+	}
+	if (globalint_1248 < getSkillXp(6)) {
+		ivar2 = subtract(getSkillXp(6), globalint_1248);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_9 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_9.intpart_1;
+		ivar0 = structdump_9.intpart_0;
+	}
+	if (globalint_1249 < getSkillXp(20)) {
+		ivar2 = subtract(getSkillXp(20), globalint_1249);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_10 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_10.intpart_1;
+		ivar0 = structdump_10.intpart_0;
+	}
+	if (globalint_1250 < getSkillXp(3)) {
+		ivar2 = subtract(getSkillXp(3), globalint_1250);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_11 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_11.intpart_1;
+		ivar0 = structdump_11.intpart_0;
+	}
+	if (globalint_1251 < getSkillXp(12)) {
+		ivar2 = subtract(getSkillXp(12), globalint_1251);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_12 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_12.intpart_1;
+		ivar0 = structdump_12.intpart_0;
+	}
+	if (globalint_1252 < getSkillXp(14)) {
+		ivar2 = subtract(getSkillXp(14), globalint_1252);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_13 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_13.intpart_1;
+		ivar0 = structdump_13.intpart_0;
+	}
+	if (globalint_1253 < getSkillXp(13)) {
+		ivar2 = subtract(getSkillXp(13), globalint_1253);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_14 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_14.intpart_1;
+		ivar0 = structdump_14.intpart_0;
+	}
+	if (globalint_1254 < getSkillXp(10)) {
+		ivar2 = subtract(getSkillXp(10), globalint_1254);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_15 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_15.intpart_1;
+		ivar0 = structdump_15.intpart_0;
+	}
+	if (globalint_1255 < getSkillXp(7)) {
+		ivar2 = subtract(getSkillXp(7), globalint_1255);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_16 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_16.intpart_1;
+		ivar0 = structdump_16.intpart_0;
+	}
+	if (globalint_1256 < getSkillXp(11)) {
+		ivar2 = subtract(getSkillXp(11), globalint_1256);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_17 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_17.intpart_1;
+		ivar0 = structdump_17.intpart_0;
+	}
+	if (globalint_1257 < getSkillXp(8)) {
+		ivar2 = subtract(getSkillXp(8), globalint_1257);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_18 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_18.intpart_1;
+		ivar0 = structdump_18.intpart_0;
+	}
+	if (globalint_1258 < getSkillXp(16)) {
+		ivar2 = subtract(getSkillXp(16), globalint_1258);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_19 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_19.intpart_1;
+		ivar0 = structdump_19.intpart_0;
+	}
+	if (globalint_1259 < getSkillXp(15)) {
+		ivar2 = subtract(getSkillXp(15), globalint_1259);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_20 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_20.intpart_1;
+		ivar0 = structdump_20.intpart_0;
+	}
+	if (globalint_1260 < getSkillXp(17)) {
+		ivar2 = subtract(getSkillXp(17), globalint_1260);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_21 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_21.intpart_1;
+		ivar0 = structdump_21.intpart_0;
+	}
+	if (globalint_1261 < getSkillXp(9)) {
+		ivar2 = subtract(getSkillXp(9), globalint_1261);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_22 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_22.intpart_1;
+		ivar0 = structdump_22.intpart_0;
+	}
+	if (globalint_1262 < getSkillXp(18)) {
+		ivar2 = subtract(getSkillXp(18), globalint_1262);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_23 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_23.intpart_1;
+		ivar0 = structdump_23.intpart_0;
+	}
+	if (globalint_1263 < getSkillXp(19)) {
+		ivar2 = subtract(getSkillXp(19), globalint_1263);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_24 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_24.intpart_1;
+		ivar0 = structdump_24.intpart_0;
+	}
+	if (globalint_1264 < getSkillXp(22)) {
+		ivar2 = subtract(getSkillXp(22), globalint_1264);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_25 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_25.intpart_1;
+		ivar0 = structdump_25.intpart_0;
+	}
+	if (globalint_1265 < getSkillXp(21)) {
+		ivar2 = subtract(getSkillXp(21), globalint_1265);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_26 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_26.intpart_1;
+		ivar0 = structdump_26.intpart_0;
+	}
+	if (globalint_1266 < getSkillXp(23)) {
+		ivar2 = subtract(getSkillXp(23), globalint_1266);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_27 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_27.intpart_1;
+		ivar0 = structdump_27.intpart_0;
+	}
+	if (globalint_1267 < getSkillXp(24)) {
+		ivar2 = subtract(getSkillXp(24), globalint_1267);
+		stack_dump0 = ivar0;
+		stack_dump1 = ivar1;
+		stack_dump2 = ivar2;
+		stack_dump3 = 0;
+		structdump_28 = script_335(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+		ivar1 = structdump_28.intpart_1;
+		ivar0 = structdump_28.intpart_0;
+	}
+	if (((boolean)ivar0)) {
+		return;
+	}
+	script_337(ivar0, ivar1, 0);
+	return;
+}

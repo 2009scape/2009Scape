@@ -1,0 +1,8 @@
+void script_2512() {
+	setWidgetText(new WidgetPointer(654,10), script_46(cs2method_3408(105, 105, 2454, 1), ","));
+	setWidgetText(new WidgetPointer(654,59), script_46(cs2method_3408(105, 105, 2454, 2), ","));
+	setWidgetText(new WidgetPointer(654,51), script_46(cs2method_3408(105, 105, 2454, 3), ","));
+	setWidgetText(new WidgetPointer(654,43), script_46(cs2method_3408(105, 105, 2454, 4), ","));
+	setWidgetText(new WidgetPointer(654,68), script_46(cs2method_3408(105, 105, 2454, 5), ","));
+	return;
+}

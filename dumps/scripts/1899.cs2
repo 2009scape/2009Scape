@@ -1,0 +1,55 @@
+void script_1899(int arg0,int arg1,int arg2) {
+	int stack_dump0;
+	switch (arg0) {
+		case 0:
+			stack_dump0 = arg1;
+			globalint_533 = arg2;
+			globalint_523 = stack_dump0;
+			break;
+		case 1:
+			stack_dump0 = arg1;
+			globalint_534 = arg2;
+			globalint_524 = stack_dump0;
+			break;
+		case 2:
+			stack_dump0 = arg1;
+			globalint_535 = arg2;
+			globalint_525 = stack_dump0;
+			break;
+		case 3:
+			stack_dump0 = arg1;
+			globalint_536 = arg2;
+			globalint_526 = stack_dump0;
+			break;
+		case 4:
+			stack_dump0 = arg1;
+			globalint_537 = arg2;
+			globalint_527 = stack_dump0;
+			break;
+		case 5:
+			stack_dump0 = arg1;
+			globalint_538 = arg2;
+			globalint_528 = stack_dump0;
+			break;
+		case 6:
+			stack_dump0 = arg1;
+			globalint_539 = arg2;
+			globalint_529 = stack_dump0;
+			break;
+		case 7:
+			stack_dump0 = arg1;
+			globalint_540 = arg2;
+			globalint_530 = stack_dump0;
+			break;
+		case 8:
+			stack_dump0 = arg1;
+			globalint_541 = arg2;
+			globalint_531 = stack_dump0;
+			break;
+		case 9:
+			stack_dump0 = arg1;
+			globalint_542 = arg2;
+			globalint_532 = stack_dump0;
+	}
+	return;
+}

@@ -1,0 +1,28 @@
+void script_438(int arg0) {
+	setWidgetSprite(1134, new WidgetPointer(1022,42));
+	setWidgetSprite(1134, new WidgetPointer(1022,43));
+	setWidgetSprite(1134, new WidgetPointer(1022,44));
+	setWidgetSprite(1134, new WidgetPointer(1022,45));
+	setWidgetSprite(1134, new WidgetPointer(1022,46));
+	setWidgetSprite(1134, new WidgetPointer(1022,47));
+	switch (arg0) {
+		case 66977840:
+			setWidgetSprite(1135, new WidgetPointer(1022,42));
+			break;
+		case 66977841:
+			setWidgetSprite(1135, new WidgetPointer(1022,43));
+			break;
+		case 66977842:
+			setWidgetSprite(1135, new WidgetPointer(1022,44));
+			break;
+		case 66977843:
+			setWidgetSprite(1135, new WidgetPointer(1022,45));
+			break;
+		case 66977844:
+			setWidgetSprite(1135, new WidgetPointer(1022,46));
+			break;
+		case 66977845:
+			setWidgetSprite(1135, new WidgetPointer(1022,47));
+	}
+	return;
+}

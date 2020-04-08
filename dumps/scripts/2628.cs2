@@ -1,0 +1,65 @@
+void script_2628() {
+	if (((boolean)globalint_906)) {
+		setWidgetSprite(1868, new WidgetPointer(859,25));
+		setWidgetText(new WidgetPointer(859,11), "Idle");
+	} else {
+		if (globalint_906 == 2) {
+			setWidgetSprite(1867, new WidgetPointer(859,25));
+			switch (globalint_907) {
+				case 0:
+					globalint_906 = 0;
+					setWidgetSprite(1868, new WidgetPointer(859,25));
+					setWidgetText(new WidgetPointer(859,11), "Idle");
+					break;
+				case 1:
+				case 2:
+					setWidgetText(new WidgetPointer(859,11), "Exploring");
+					break;
+				case 3:
+				case 4:
+					setWidgetText(new WidgetPointer(859,11), "Attacking wall");
+					break;
+				case 5:
+				case 6:
+				case 7:
+					setWidgetText(new WidgetPointer(859,11), "Rescuing TzHaar");
+					break;
+				case 8:
+				case 9:
+					setWidgetText(new WidgetPointer(859,11), "Collecting gold");
+					break;
+				case 10:
+				case 11:
+				case 12:
+					setWidgetText(new WidgetPointer(859,11), "Stealing TzHaar");
+					break;
+				case 13:
+				case 14:
+				case 15:
+					setWidgetText(new WidgetPointer(859,11), "Collecting parts");
+					break;
+				case 17:
+				case 16:
+				case 18:
+					setWidgetText(new WidgetPointer(859,11), "Collecting Rocks");
+					break;
+				case 19:
+				case 20:
+					setWidgetText(new WidgetPointer(859,11), "Attacking catapult");
+					break;
+				case 21:
+					setWidgetText(new WidgetPointer(859,11), "Retaliating");
+					break;
+				case 22:
+					setWidgetText(new WidgetPointer(859,11), "Moving to destination");
+					break;
+				case 23:
+					setWidgetText(new WidgetPointer(859,11), "Attacking");
+					break;
+				default:
+					setWidgetText(new WidgetPointer(859,11), "Busy");
+			}
+		}
+	}
+	return;
+}

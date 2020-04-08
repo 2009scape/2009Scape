@@ -1,0 +1,6 @@
+int script_2948() {
+	if (((boolean)cs2method5420())) {
+		return getGameloginRc();
+	}
+	return getLobbyRC();
+}

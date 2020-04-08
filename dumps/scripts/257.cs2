@@ -1,0 +1,113 @@
+void script_257() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	string svar0;
+	if ((((((((boolean)globalint_1111) || ((boolean)globalint_1112)) || ((boolean)globalint_1113)) || ((boolean)globalint_1114)) || ((boolean)globalint_1115)) || ((boolean)globalint_1116)) || (globalint_1117 == -1)) {
+		return;
+	}
+	ivar0 = multiply(getExtraChildGap(new WidgetPointer(919,7)), add(18, 4));
+	ivar1 = multiply(add(getExtraChildGap(new WidgetPointer(919,7)), 1), add(18, 4));
+	setWidgetScrollMax(getWidgetScrollMaxH(new WidgetPointer(919,6)), ivar1, new WidgetPointer(919,6));
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(919,8)), ivar1, 0, 0, new WidgetPointer(919,8));
+	createExtraChild(new WidgetPointer(919,8), 4, getExtraChildGap(new WidgetPointer(919,8)));
+	setWidgetRGB(new Color(164, 164, 103));
+	setWidgetSize(16384, 18, 2, 0);
+	setWidgetPosition(0, ivar0, 0, 2);
+	setWidgetFont(494);
+	setWidgetText(script_1668(globalint_1111));
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(919,7)), ivar1, 0, 0, new WidgetPointer(919,7));
+	createExtraChild(new WidgetPointer(919,7), 4, getExtraChildGap(new WidgetPointer(919,7)));
+	setWidgetRGB(new Color(164, 164, 103));
+	setWidgetSize(16384, 18, 2, 0);
+	setWidgetPosition(0, ivar0, 0, 2);
+	setWidgetFont(494);
+	setWidgetText(script_276(globalint_1113));
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(919,9)), ivar1, 0, 0, new WidgetPointer(919,9));
+	createExtraChild(new WidgetPointer(919,9), 4, getExtraChildGap(new WidgetPointer(919,9)));
+	setWidgetRGB(new Color(164, 164, 103));
+	setWidgetSize(16384, 18, 2, 0);
+	setWidgetPosition(0, ivar0, 0, 2);
+	setWidgetFont(494);
+	setWidgetText(intToStr(globalint_1112));
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(919,10)), ivar1, 0, 0, new WidgetPointer(919,10));
+	createExtraChild(new WidgetPointer(919,10), 5, getExtraChildGap(new WidgetPointer(919,10)));
+	setWidgetSize(20, 20, 0, 0);
+	setWidgetPosition(0, add(ivar0, 2), 1, 2);
+	svar0 = "";
+	ivar2 = -1;
+	switch (globalint_1114) {
+		case 1:
+			ivar2 = 15658;
+			svar0 = "Worm";
+			break;
+		case 2:
+			ivar2 = 15659;
+			svar0 = "Maggot";
+			break;
+		case 3:
+			ivar2 = 15662;
+			svar0 = "Cricket";
+			break;
+		case 4:
+			ivar2 = 15663;
+			svar0 = "Locust";
+			break;
+		case 5:
+			ivar2 = 15661;
+			svar0 = "Crayfish";
+			break;
+		case 6:
+			ivar2 = 15660;
+			svar0 = "Shrimp";
+			break;
+		case 7:
+			ivar2 = 15664;
+			svar0 = "Green moth";
+			break;
+		case 8:
+			ivar2 = 15665;
+			svar0 = "Grey moth";
+	}
+	setItemOnWidgetMethod1205(ivar2, 0);
+	setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(919,20), svar0, 25, 128, "IIsii");
+	setScriptCallOnMouseExit(40, new WidgetPointer(919,20), "I");
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(919,11)), ivar1, 0, 0, new WidgetPointer(919,11));
+	createExtraChild(new WidgetPointer(919,11), 4, getExtraChildGap(new WidgetPointer(919,11)));
+	setWidgetRGB(new Color(164, 164, 103));
+	setWidgetSize(16384, 18, 2, 0);
+	setWidgetPosition(0, ivar0, 0, 2);
+	setWidgetFont(494);
+	setWidgetText(script_278(globalint_1115));
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(919,12)), ivar1, 0, 0, new WidgetPointer(919,12));
+	createExtraChild(new WidgetPointer(919,12), 4, getExtraChildGap(new WidgetPointer(919,12)));
+	setWidgetRGB(new Color(164, 164, 103));
+	setWidgetSize(16384, 18, 2, 0);
+	setWidgetPosition(0, ivar0, 0, 2);
+	setWidgetFont(494);
+	setWidgetText(intToStr(globalint_1116));
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(919,13)), ivar1, 0, 0, new WidgetPointer(919,13));
+	createExtraChild(new WidgetPointer(919,13), 4, getExtraChildGap(new WidgetPointer(919,13)));
+	setWidgetRGB(new Color(164, 164, 103));
+	setWidgetSize(16384, 18, 2, 0);
+	setWidgetPosition(0, ivar0, 0, 2);
+	setWidgetFont(494);
+	setWidgetText(intToStr(globalint_1117) + "%");
+	setWidgetTextAlignment(1, 1, 0);
+	if (getWidgetActualHeight(new WidgetPointer(919,1)) == 185) {
+		script_31(60227589, 60227590, 792, 789, 790, 791, 773, 788);
+	}
+	globalint_1111 = 0;
+	globalint_1112 = 0;
+	globalint_1113 = 0;
+	globalint_1114 = 0;
+	globalint_1115 = 0;
+	globalint_1116 = 0;
+	globalint_1117 = -1;
+	return;
+}

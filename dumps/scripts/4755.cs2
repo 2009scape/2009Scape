@@ -1,0 +1,24 @@
+void script_4755(int arg0) {
+	int ivar1;
+	ivar1 = multiplyDivide(16384, 900, standart_config_2243);
+	ivar1 = min(max(ivar1, 0), 16384);
+	setWidgetSize(ivar1, 0, 2, 1, new WidgetPointer(642,66));
+	setWidgetText(new WidgetPointer(arg0), intToStr(standart_config_2243));
+	if (standart_config_2243 >= 700) {
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(642,67));
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(642,69));
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(642,68));
+		setWidgetAnimation(2602, new WidgetPointer(642,38));
+	} else if (standart_config_2243 <= 300) {
+		setWidgetRGB(new Color(255, 34, 102), new WidgetPointer(642,67));
+		setWidgetRGB(new Color(255, 34, 102), new WidgetPointer(642,69));
+		setWidgetRGB(new Color(255, 34, 102), new WidgetPointer(642,68));
+		setWidgetAnimation(2601, new WidgetPointer(642,38));
+	} else {
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(642,67));
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(642,69));
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(642,68));
+		setWidgetAnimation(9804, new WidgetPointer(642,38));
+	}
+	return;
+}

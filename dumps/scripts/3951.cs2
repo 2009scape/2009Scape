@@ -1,0 +1,9 @@
+void script_3951() {
+	globalstring_337 = globalstring_331;
+	globalstring_338 = globalstring_332;
+	globalstring_339 = globalstring_333;
+	globalstring_340 = globalstring_334;
+	globalstring_341 = globalstring_335;
+	globalstring_342 = globalstring_336;
+	return;
+}

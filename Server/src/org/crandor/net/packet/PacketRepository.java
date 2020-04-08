@@ -92,8 +92,7 @@ public final class PacketRepository {
 		INCOMING_PACKETS.put(134, packet);//item on object
 		INCOMING_PACKETS.put(115, packet);//on npc
 		INCOMING_PACKETS.put(27, packet);//item on item
-		INCOMING_PACKETS.put(248, packet);//on player
-		
+		INCOMING_PACKETS.put(248, packet);//on player	
 		INCOMING_PACKETS.put(3, packet = new InteractionPacket());
 		INCOMING_PACKETS.put(180, packet);//Player interact options v
 		INCOMING_PACKETS.put(68, packet);

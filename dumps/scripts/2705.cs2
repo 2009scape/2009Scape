@@ -1,0 +1,177 @@
+void script_2705(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	int ivar6;
+	string svar0;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	cs2func_script_2692_struct(2,0,0) structdump_3;
+	cs2func_script_2692_struct(2,0,0) structdump_4;
+	cs2func_script_2692_struct(2,0,0) structdump_5;
+	cs2func_script_2692_struct(2,0,0) structdump_6;
+	cs2func_script_2692_struct(2,0,0) structdump_7;
+	cs2func_script_2692_struct(2,0,0) structdump_8;
+	cs2func_script_2692_struct(2,0,0) structdump_9;
+	cs2func_script_2692_struct(2,0,0) structdump_10;
+	cs2func_script_2692_struct(2,0,0) structdump_11;
+	if (((boolean)arg2)) {
+		closeInterface(48889939);
+		closeInterface(35913749);
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(746,83));
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(548,21));
+		setWidgetIsHidden(true, new WidgetPointer(548,191));
+		setWidgetIsHidden(true, new WidgetPointer(548,69));
+		setWidgetIsHidden(true, new WidgetPointer(548,194));
+		setWidgetIsHidden(true, new WidgetPointer(548,203));
+		setWidgetIsHidden(true, new WidgetPointer(548,163));
+		setWidgetIsHidden(true, new WidgetPointer(548,115));
+	} else if (arg2 == 2) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(906,23));
+	} else {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(744,17));
+	}
+	ivar6 = 0;
+	if (((boolean)arg0)) {
+		cs2method6032(cs2method6131(), 1);
+		if (getDisplayMode() != 3) {
+			cs2method5309(getDisplayMode());
+		}
+		cs2method6024(cs2method6116());
+		if (isBitFlagged(arg1, 1)) {
+			globalint_994 = 2;
+		}
+		globalint_1240 = 3;
+		globalint_1277 = 0;
+	} else {
+		if (isBitFlagged(arg1, 0)) {
+			cs2method7006();
+			if (((boolean)arg4)) {
+				ivar6 = cs2method6132();
+				cs2method6031(ivar6);
+				script_2593(ivar6);
+			}
+		} else {
+			ivar6 = cs2method6131();
+		}
+		if (isBitFlagged(arg1, 1) && (getDisplayMode() != cs2method5308())) {
+			cs2method5307(cs2method5308());
+		}
+		if (isBitFlagged(arg1, 2)) {
+			cs2method6016(cs2method6124());
+		}
+		if (isBitFlagged(arg1, 3)) {
+			cs2method6027(0);
+		}
+		if (arg2 == 3) {
+			script_1174(0);
+			script_3384(arg2);
+			return;
+		}
+		if (((boolean)arg5)) {
+			stack_dump0 = ivar6;
+			stack_dump1 = getDisplayMode();
+			stack_dump2 = ivar6;
+			structdump_3 = script_2692(stack_dump2);
+			script_3387(stack_dump0, stack_dump1, structdump_3.intpart_0, structdump_3.intpart_1, arg2);
+		} else if (isBitFlagged(arg1, 1) || ((boolean)arg4)) {
+			stack_dump0 = ivar6;
+			stack_dump1 = getDisplayMode();
+			stack_dump2 = ivar6;
+			structdump_4 = script_2692(stack_dump2);
+			script_2596(stack_dump0, stack_dump1, structdump_4.intpart_0, structdump_4.intpart_1, arg2);
+		} else {
+			stack_dump0 = ivar6;
+			stack_dump1 = getDisplayMode();
+			stack_dump2 = ivar6;
+			structdump_5 = script_2692(stack_dump2);
+			script_3387(stack_dump0, stack_dump1, structdump_5.intpart_0, structdump_5.intpart_1, arg2);
+		}
+		if (((boolean)arg2) && ((boolean)arg3)) {
+			messageType0("The requested change has been cancelled.");
+		}
+	}
+	svar0 = "kbase/view.ws?guid=controls_display_options";
+	if (arg2 != 1) {
+		ivar6 = cs2method6131();
+		if (arg2 == 2) {
+			setWidgetIsHidden(true, new WidgetPointer(906,42));
+			if (((boolean)arg5)) {
+				stack_dump0 = ivar6;
+				stack_dump1 = getDisplayMode();
+				stack_dump2 = ivar6;
+				structdump_6 = script_2692(stack_dump2);
+				script_3387(stack_dump0, stack_dump1, structdump_6.intpart_0, structdump_6.intpart_1, arg2);
+			} else if (isBitFlagged(arg1, 1) || ((boolean)arg4)) {
+				stack_dump0 = ivar6;
+				stack_dump1 = getDisplayMode();
+				stack_dump2 = ivar6;
+				structdump_7 = script_2692(stack_dump2);
+				script_2596(stack_dump0, stack_dump1, structdump_7.intpart_0, structdump_7.intpart_1, arg2);
+			} else {
+				stack_dump0 = ivar6;
+				stack_dump1 = getDisplayMode();
+				stack_dump2 = ivar6;
+				structdump_8 = script_2692(stack_dump2);
+				script_3387(stack_dump0, stack_dump1, structdump_8.intpart_0, structdump_8.intpart_1, arg2);
+			}
+			if (((boolean)arg4) && ((boolean)arg3)) {
+				script_2190(0, -1, 0, "", "The change of detail mode has been cancelled." + "<br>" + "<br>" + "Perhaps different graphical settings would work better for you?", "", "Advanced info");
+				setScriptCallOnMousePressed(702, svar0, 1, "s1", new WidgetPointer(906,153));
+			}
+		} else if (arg2 == 3) {
+			if (hasSSKey()) {
+				script_1174(5);
+				if (((boolean)globalint_1273)) {
+					return;
+				}
+				setScriptCallOnGameloop(3381, new WidgetPointer(975,44), 0, "Ii", new WidgetPointer(975,44));
+			} else if (((boolean)script_3487(3))) {
+				script_1174(7);
+			} else {
+				script_1174(11);
+			}
+		} else {
+			if (((boolean)arg5)) {
+				stack_dump0 = ivar6;
+				stack_dump1 = getDisplayMode();
+				stack_dump2 = ivar6;
+				structdump_9 = script_2692(stack_dump2);
+				script_3387(stack_dump0, stack_dump1, structdump_9.intpart_0, structdump_9.intpart_1, arg2);
+			} else if (isBitFlagged(arg1, 1) || ((boolean)arg4)) {
+				stack_dump0 = ivar6;
+				stack_dump1 = getDisplayMode();
+				stack_dump2 = ivar6;
+				structdump_10 = script_2692(stack_dump2);
+				script_2596(stack_dump0, stack_dump1, structdump_10.intpart_0, structdump_10.intpart_1, arg2);
+			} else {
+				stack_dump0 = ivar6;
+				stack_dump1 = getDisplayMode();
+				stack_dump2 = ivar6;
+				structdump_11 = script_2692(stack_dump2);
+				script_3387(stack_dump0, stack_dump1, structdump_11.intpart_0, structdump_11.intpart_1, arg2);
+			}
+			if (((boolean)arg4) && ((boolean)arg3)) {
+				setWidgetText(new WidgetPointer(744,76), "The change of detail mode has been cancelled." + "<br>" + "<br>" + "Perhaps different graphical settings would work better for you?");
+				if (((boolean)arg5)) {
+					setScriptCallOnMousePressed(3452, 6, 0, 1, "i11", new WidgetPointer(744,79));
+				} else if (isBitFlagged(arg1, 1) || ((boolean)arg4)) {
+					setScriptCallOnMousePressed(1173, 6, "i", new WidgetPointer(744,79));
+				} else {
+					setScriptCallOnMousePressed(3452, 6, 0, 1, "i11", new WidgetPointer(744,79));
+				}
+				setWidgetText(new WidgetPointer(744,78), "Advanced info");
+				setScriptCallOnMousePressed(702, svar0, 1, "s1", new WidgetPointer(744,78));
+				script_1174(9);
+			} else if (((boolean)arg5)) {
+				script_3239(6, 0, 1);
+			} else if (isBitFlagged(arg1, 1) || ((boolean)arg4)) {
+				script_1174(6);
+			} else {
+				script_3239(6, 0, 1);
+			}
+		}
+	}
+	if (((boolean)arg0) && ((boolean)arg4)) {
+		script_3384(arg2);
+	}
+	return;
+}

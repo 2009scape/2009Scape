@@ -1,0 +1,32 @@
+void script_3198(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	ivar5 = -1;
+	ivar6 = 0;
+	setWidgetIsHidden(true, new WidgetPointer(arg3));
+	setWidgetText(new WidgetPointer(arg0), "");
+	setWidgetText(new WidgetPointer(arg1), "");
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg2)), 300, 0, 0, new WidgetPointer(arg2));
+	switch (arg4) {
+		case 59834368:
+			ivar5 = 59375680;
+			ivar6 = 300;
+			break;
+		case 59899904:
+			ivar5 = 59375696;
+			ivar6 = 122;
+			break;
+		case 64159744:
+			ivar5 = 59375670;
+			ivar6 = 303;
+			break;
+		case 59965458:
+			ivar5 = 59375688;
+			ivar6 = 312;
+	}
+	if (ivar5 != -1) {
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(ivar5)), ivar6, 0, 0, new WidgetPointer(ivar5));
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg4)), ivar6, 0, 0, new WidgetPointer(arg4));
+	}
+	return;
+}

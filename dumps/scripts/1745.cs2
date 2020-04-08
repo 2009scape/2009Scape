@@ -1,0 +1,16 @@
+void script_1745() {
+	if (globalint_217 < 1) {
+		globalint_217 = add(globalint_217, 1);
+		return;
+	}
+	globalint_217 = 0;
+	if (((boolean)globalint_216)) {
+		globalint_215 = subtract(globalint_215, 9);
+	} else {
+		globalint_215 = add(globalint_215, 9);
+	}
+	globalint_215 = min(globalint_215, 255);
+	globalint_215 = max(globalint_215, 0);
+	cs2method2103(globalint_215, new WidgetPointer(680,2));
+	return;
+}

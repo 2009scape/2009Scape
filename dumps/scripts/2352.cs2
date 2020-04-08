@@ -1,0 +1,10 @@
+void script_2352() {
+	if ((getLanguage() == 2) || (getLanguage() == 3)) {
+		setWidgetFont(494, new WidgetPointer(433,16));
+		setWidgetFont(494, new WidgetPointer(433,17));
+		setWidgetFont(494, new WidgetPointer(433,18));
+		setWidgetFont(494, new WidgetPointer(433,19));
+		setWidgetFont(494, new WidgetPointer(433,20));
+	}
+	return;
+}

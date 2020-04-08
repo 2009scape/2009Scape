@@ -38,11 +38,9 @@ public final class KingBlackDragonNPC extends AbstractNPC {
 	 */
 	private CombatSwingHandler combatHandler = new KBDCombatSwingHandler();
 
-	/**
-	 * Constructs a new {@code KingBlackDragonNPC} {@Code Object}.
-	 */
+	
 	public KingBlackDragonNPC() {
-		super(50, DEFAULT_SPAWN);
+		super(-1,null);
 	}
 
 	@Override
@@ -88,7 +86,6 @@ public final class KingBlackDragonNPC extends AbstractNPC {
 
 	@Override
 	public Plugin<Object> newInstance(Object arg) throws Throwable {
-		init();
 		return super.newInstance(arg);
 	}
 

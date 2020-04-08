@@ -1,0 +1,8 @@
+void script_120(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = add(rnd(25), 10);
+	ivar2 = add(rnd(25), 20);
+	setScriptCallOnGameloop(66, ivar1, ivar2, 0, new WidgetPointer(arg0), "iiiI", new WidgetPointer(arg0));
+	return;
+}

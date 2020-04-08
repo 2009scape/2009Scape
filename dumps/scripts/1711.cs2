@@ -1,0 +1,41 @@
+int script_1711(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	ivar1 = -25;
+	ivar2 = 15;
+	ivar3 = script_1695(arg0);
+	ivar4 = script_1696(arg0);
+	if (ivar3 == 4) {
+		ivar1 = subtract(0, 25);
+	} else {
+		if (((boolean)ivar3)) {
+			ivar1 = subtract(0, 20);
+		}
+	}
+	ivar5 = script_1714(arg0, script_1697(arg0));
+	ivar6 = script_1713(arg0);
+	ivar7 = script_1712(arg0);
+	ivar8 = 0;
+	if (getItemIdInSlot(94, 2) == 19892) {
+		ivar8 = 5;
+	}
+	if ((ivar6 < add(ivar8, 5)) && (ivar4 == 4)) {
+		ivar6 = add(ivar8, 5);
+	}
+	if ((ivar7 < 10) && (ivar3 == 4)) {
+		if (add(ivar7, ivar5) > subtract(0, 10)) {
+			ivar7 = subtract(0, 10);
+		}
+	} else {
+		if (((ivar7 < 10) && ((boolean)ivar3)) && (add(ivar7, ivar5) > subtract(0, 10))) {
+			ivar7 = subtract(0, 10);
+		}
+	}
+	return min(max(add(add(ivar5, ivar6), ivar7), ivar1), ivar2);
+}

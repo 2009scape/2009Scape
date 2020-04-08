@@ -1,0 +1,3 @@
+string script_2055(int arg0) {
+	return intToStr(extractZ(arg0)) + "_" + intToStr(divide(extractX(arg0), 64)) + "_" + intToStr(divide(extractY(arg0), 64)) + "_" + intToStr(mod(extractX(arg0), 64)) + "_" + intToStr(mod(extractY(arg0), 64));
+}

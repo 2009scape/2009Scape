@@ -1,0 +1,48 @@
+void script_1029(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	string svar0;
+	deleteAllExtraChilds(new WidgetPointer(157,23));
+	deleteAllExtraChilds(new WidgetPointer(157,25));
+	setWidgetText(new WidgetPointer(157,14), "Quick-chat - Shortcut Reference");
+	setWidgetIsHidden(false, new WidgetPointer(157,35));
+	setWidgetIsHidden(true, new WidgetPointer(157,17));
+	setScriptCallOnMousePressed(784, 1486, 0, 7, "gii", new WidgetPointer(157,30));
+	setWidgetText(new WidgetPointer(157,30), "User Guide");
+	ivar2 = 0;
+	ivar3 = 20;
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 0;
+	svar0 = "";
+	createExtraChild(new WidgetPointer(157,25), 5, ivar4);
+	setWidgetSprite(1074);
+	setWidgetPosition(35, subtract(ivar3, 22), 0, 0);
+	setWidgetSize(400, 32, 0, 0);
+	ivar4 = add(ivar4, 1);
+	while (ivar2 < arg1) {
+		ivar2 = add(ivar2, 1);
+		script_1034(ivar4, 35, ivar3, 400, 100, 16776960, cs2method_3408(105, 115, arg0, ivar5));
+		ivar4 = add(ivar4, 1);
+		ivar5 = add(ivar5, 1);
+		svar0 = cs2method_3408(105, 115, arg0, ivar5);
+		ivar6 = multiply(getLineCount(300, 495, svar0), 12);
+		script_1034(ivar4, 150, ivar3, 300, ivar6, 16777215, svar0);
+		ivar4 = add(ivar4, 1);
+		ivar5 = add(ivar5, 1);
+		ivar3 = add(add(ivar3, ivar6), 10);
+		createExtraChild(new WidgetPointer(157,25), 5, ivar4);
+		setWidgetSprite(1074);
+		setWidgetPosition(35, subtract(ivar3, 20), 0, 0);
+		setWidgetSize(400, 32, 0, 0);
+		ivar4 = add(ivar4, 1);
+	}
+	if (ivar3 > getWidgetActualHeight(new WidgetPointer(157,25))) {
+		setWidgetScrollMax(0, ivar3, new WidgetPointer(157,25));
+		script_31(10289176, 10289177, 792, 789, 790, 791, 773, 788);
+	}
+	return;
+}

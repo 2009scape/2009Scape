@@ -1,0 +1,29 @@
+int script_2617() {
+	int ivar0;
+	ivar0 = cameraGetHrot();
+	if ((ivar0 < 128) || (ivar0 >= 1920)) {
+		return 0;
+	}
+	if ((ivar0 < 384) && (ivar0 >= 128)) {
+		return 7;
+	}
+	if ((ivar0 >= 384) && (ivar0 < 650)) {
+		return 6;
+	}
+	if ((ivar0 < 896) && (ivar0 >= 650)) {
+		return 5;
+	}
+	if ((ivar0 >= 896) && (ivar0 < 1152)) {
+		return 4;
+	}
+	if ((ivar0 < 1408) && (ivar0 >= 1152)) {
+		return 3;
+	}
+	if ((ivar0 >= 1408) && (ivar0 < 1664)) {
+		return 2;
+	}
+	if ((ivar0 < 1920) && (ivar0 >= 1664)) {
+		return 1;
+	}
+	return 0;
+}

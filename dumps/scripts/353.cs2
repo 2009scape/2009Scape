@@ -1,0 +1,10 @@
+void script_353(int arg0) {
+	playSoundEffect(9824, 1, 0);
+	if (((boolean)arg0) && ((boolean)bitconfig_8246)) {
+		bitconfig_8247 = 1;
+		setWidgetIsHidden(false, new WidgetPointer(1028,117));
+		script_2741();
+	}
+	script_386(arg0);
+	return;
+}

@@ -1,0 +1,33 @@
+cs2func_script_4721_struct(0,10,0) script_4721() {
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	string svar4;
+	string svar5;
+	string svar6;
+	string svar7;
+	string svar8;
+	string svar9;
+	svar0 = "";
+	svar1 = "";
+	svar2 = "";
+	svar3 = "";
+	svar4 = "";
+	svar5 = "";
+	svar6 = "";
+	svar7 = "";
+	svar8 = "";
+	svar9 = "";
+	svar0 = script_4345(clanbitconfig_25, clanbitconfig_26);
+	svar1 = script_4345(clanbitconfig_27, clanbitconfig_28);
+	svar2 = script_4345(clanbitconfig_29, clanbitconfig_30);
+	svar3 = script_4345(clanbitconfig_31, clanbitconfig_32);
+	svar4 = script_4345(clanbitconfig_33, clanbitconfig_34);
+	svar5 = script_4345(clanbitconfig_35, clanbitconfig_36);
+	svar6 = script_4345(clanbitconfig_37, clanbitconfig_38);
+	svar7 = script_4345(clanbitconfig_39, clanbitconfig_40);
+	svar8 = script_4345(clanbitconfig_41, clanbitconfig_42);
+	svar9 = script_4345(clanbitconfig_43, clanbitconfig_44);
+	return newstruct cs2func_script_4721_struct(svar0, svar1, svar2, svar3, svar4, svar5, svar6, svar7, svar8, svar9);
+}

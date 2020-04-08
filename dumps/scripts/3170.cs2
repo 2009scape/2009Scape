@@ -1,0 +1,23 @@
+void script_3170(int arg0,string arg1) {
+	int ivar1;
+	int ivar2;
+	ivar1 = -1;
+	ivar2 = -1;
+	switch (arg0) {
+		case 6:
+			cs2method3605(strRemoveEntities(arg1));
+			break;
+		case 7:
+			cs2method3607(strRemoveEntities(arg1));
+			break;
+		case 8:
+			cs2method3606(strRemoveEntities(arg1));
+			break;
+		case 9:
+			cs2method3608(strRemoveEntities(arg1));
+			break;
+		case 10:
+			script_4465(arg1);
+	}
+	return;
+}

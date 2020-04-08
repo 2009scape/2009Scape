@@ -1,0 +1,108 @@
+void script_281() {
+	setItemOnWidgetMethod2200(globalint_1118, globalint_1119, new WidgetPointer(925,67));
+	cs2method2305(new WidgetPointer(925,67), getItemName(globalint_1118));
+	setItemOnWidgetMethod2200(globalint_1120, globalint_1121, new WidgetPointer(925,68));
+	cs2method2305(new WidgetPointer(925,68), getItemName(globalint_1120));
+	setWidgetText(new WidgetPointer(925,77), intToStr(bitconfig_7295));
+	switch (globalint_1118) {
+		case 384:
+			setWidgetText(new WidgetPointer(925,52), "Shark");
+			break;
+		case 372:
+			setWidgetText(new WidgetPointer(925,52), "Swordfish");
+			break;
+		case 378:
+			setWidgetText(new WidgetPointer(925,52), "Lobster");
+			break;
+		case 360:
+			setWidgetText(new WidgetPointer(925,52), "Tuna");
+			break;
+		case 332:
+			setWidgetText(new WidgetPointer(925,52), "Salmon");
+			break;
+		case 350:
+			setWidgetText(new WidgetPointer(925,52), "Pike");
+			break;
+		case 336:
+			setWidgetText(new WidgetPointer(925,52), "Trout");
+			break;
+		case 346:
+			setWidgetText(new WidgetPointer(925,52), "Herring");
+			break;
+		case 328:
+			setWidgetText(new WidgetPointer(925,52), "Sardine");
+			break;
+		case 318:
+			setWidgetText(new WidgetPointer(925,52), "Shrimp");
+			break;
+		default:
+			setWidgetText(new WidgetPointer(925,52), "");
+	}
+	switch (globalint_1120) {
+		case 384:
+			setWidgetText(new WidgetPointer(925,53), "Shark");
+			break;
+		case 372:
+			setWidgetText(new WidgetPointer(925,53), "Swordfish");
+			break;
+		case 378:
+			setWidgetText(new WidgetPointer(925,53), "Lobster");
+			break;
+		case 360:
+			setWidgetText(new WidgetPointer(925,53), "Tuna");
+			break;
+		case 332:
+			setWidgetText(new WidgetPointer(925,53), "Salmon");
+			break;
+		case 350:
+			setWidgetText(new WidgetPointer(925,53), "Pike");
+			break;
+		case 336:
+			setWidgetText(new WidgetPointer(925,53), "Trout");
+			break;
+		case 346:
+			setWidgetText(new WidgetPointer(925,53), "Herring");
+			break;
+		case 328:
+			setWidgetText(new WidgetPointer(925,53), "Sardine");
+			break;
+		case 318:
+			setWidgetText(new WidgetPointer(925,53), "Shrimp");
+			break;
+		default:
+			setWidgetText(new WidgetPointer(925,53), "");
+	}
+	switch (bitconfig_7306) {
+		case 0:
+			setWidgetText(new WidgetPointer(925,25), "Cost: " + intToStr(110) + " tokens");
+			setWidgetText(new WidgetPointer(925,26), "(Requires " + intToStr(20) + " medals)");
+			setItemOnWidgetMethod2200(15666, -1, new WidgetPointer(925,41));
+			break;
+		case 1:
+			setWidgetText(new WidgetPointer(925,25), "Cost: " + intToStr(230) + " tokens");
+			setWidgetText(new WidgetPointer(925,26), "(Requires " + intToStr(50) + " medals)");
+			setItemOnWidgetMethod2200(15667, -1, new WidgetPointer(925,41));
+			break;
+		case 2:
+			setWidgetText(new WidgetPointer(925,25), "Cost: " + intToStr(470) + " tokens");
+			setWidgetText(new WidgetPointer(925,26), "(Requires " + intToStr(110) + " medals)");
+			setItemOnWidgetMethod2200(15668, -1, new WidgetPointer(925,41));
+			break;
+		case 3:
+			setWidgetText(new WidgetPointer(925,25), "Cost: " + intToStr(900) + " tokens");
+			setWidgetText(new WidgetPointer(925,26), "(Requires " + intToStr(230) + " medals)");
+			setItemOnWidgetMethod2200(15669, -1, new WidgetPointer(925,41));
+			break;
+		case 4:
+			setWidgetText(new WidgetPointer(925,25), "Cost: " + intToStr(1860) + " tokens");
+			setWidgetText(new WidgetPointer(925,26), "(Requires " + intToStr(500) + " medals)");
+			setItemOnWidgetMethod2200(15669, -1, new WidgetPointer(925,41));
+			break;
+		case 5:
+			setWidgetText(new WidgetPointer(925,25), "You already own the best tackle box available.");
+			setWidgetText(new WidgetPointer(925,26), "(Unavailable)");
+			setItemOnWidgetMethod2200(-1, -1, new WidgetPointer(925,41));
+	}
+	setWidget3DRotation(0, 0, 250, 1666, 0, 1440, new WidgetPointer(925,41));
+	return;
+}

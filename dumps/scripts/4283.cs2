@@ -1,0 +1,8 @@
+void script_4283() {
+	setWidgetText(new WidgetPointer(1095,28), cs2method3702());
+	script_4332(71761970, 71761980);
+	script_4334(71761990, 71761991);
+	script_4329(71761949);
+	setWidgetIsHidden(true, new WidgetPointer(1095,5));
+	return;
+}

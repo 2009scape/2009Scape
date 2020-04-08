@@ -1,0 +1,12 @@
+void script_2046(int arg0) {
+	setScriptCallOnGameloop(2045, new WidgetPointer(arg0), new WidgetPointer(755,28), 0, 0, 0, "IIiii", new WidgetPointer(arg0));
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	deleteAllExtraChilds(new WidgetPointer(755,36));
+	deleteAllExtraChilds(new WidgetPointer(755,37));
+	deleteAllExtraChilds(new WidgetPointer(755,38));
+	deleteAllExtraChilds(new WidgetPointer(755,39));
+	deleteAllExtraChilds(new WidgetPointer(755,40));
+	deleteAllExtraChilds(new WidgetPointer(755,41));
+	deleteAllExtraChilds(new WidgetPointer(755,42));
+	return;
+}

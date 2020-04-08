@@ -1,0 +1,25 @@
+void script_1561() {
+	int ivar0;
+	int ivar1;
+	string svar0;
+	string svar1;
+	svar0 = cs2method5003(0);
+	ivar0 = 1;
+	ivar1 = 0;
+	svar1 = "";
+	while (((boolean)ivar1) && (ivar0 < cs2method5017())) {
+		svar1 = cs2method5003(ivar0);
+		if ((((cs2method5004(ivar0) != 0) && (cs2method5004(ivar0) != 4)) && ((cs2method5004(ivar0) != 27) && (cs2method5004(ivar0) != 28))) && (((cs2method5004(ivar0) != 29) && (cs2method5004(ivar0) != 26)) && ((cs2method5004(ivar0) != 30) && (cs2method5004(ivar0) != 31)))) {
+			ivar1 = 1;
+		} else if (cs2method5024(ivar0) <= globalint_1269) {
+			ivar1 = 1;
+		} else if (strLength(strRemoveEntities(svar1)) > 0) {
+			svar0 = concat(concat(svar1, "<br>"), svar0);
+		} else {
+			svar0 = concat("<br>", svar0);
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	script_102(svar0);
+	return;
+}

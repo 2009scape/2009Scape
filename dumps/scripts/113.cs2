@@ -1,0 +1,22 @@
+void script_113(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = 0;
+	ivar2 = 0;
+	if (((boolean)rndExcl(2))) {
+		ivar1 = add(5, rndExcl(12));
+	} else {
+		ivar1 = subtract(-5, rndExcl(12));
+	}
+	if (((boolean)rndExcl(2))) {
+		ivar2 = add(5, rndExcl(12));
+	} else {
+		ivar2 = subtract(-5, rndExcl(12));
+	}
+	if (((boolean)rndExcl(2))) {
+		setScriptCallOnGameloop(66, ivar1, ivar2, 0, new WidgetPointer(arg0), "iiiI", new WidgetPointer(arg0));
+	} else {
+		setScriptCallOnGameloop(66, ivar1, 0, ivar2, new WidgetPointer(arg0), "iiiI", new WidgetPointer(arg0));
+	}
+	return;
+}

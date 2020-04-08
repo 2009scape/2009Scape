@@ -1,0 +1,33 @@
+void script_3458(int arg0,int arg1) {
+	switch (globalint_1007) {
+		case 31:
+			cs2method5405(0, 3);
+			cs2method5405(1, 3);
+			cs2method5406(0, 0, script_3459(62363230, arg1), 500, script_3459(62363230, arg1), 500, 0);
+			cs2method5406(1, 0, script_3459(62297690, arg1), 350, script_3459(62297690, arg1), 350, 0);
+			cs2method5406(0, 1, script_3459(62363229, arg1), 450, script_3459(62363229, arg1), 450, 0);
+			cs2method5406(1, 1, script_3459(62314075, arg1), 350, script_3459(62314075, arg1), 350, 0);
+			cs2method5406(0, 2, script_3459(62330459, arg1), 550, script_3459(62330459, arg1), 550, 0);
+			cs2method5406(1, 2, script_3459(62330464, arg1), 350, script_3459(62281310, arg1), 350, 0);
+			cameraMethod5502(0, 0, 50, 10, 1, 0);
+			break;
+		case 32:
+			cameraMethod5502(0, 1, 500, 500, 1, 1);
+			break;
+		case 33:
+			script_2766(0, 50, arg0);
+			break;
+		case 34:
+			script_2768(25, arg0);
+			break;
+		case 35:
+			script_2766(0, 25, arg0);
+			break;
+		case 36:
+			script_2768(50, arg0);
+			break;
+		default:
+			cs2method5512();
+	}
+	return;
+}

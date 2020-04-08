@@ -1,0 +1,31 @@
+void script_5268(int arg0,string arg1,string arg2) {
+	int ivar1;
+	int ivar2;
+	ivar1 = getExtraChildGap(new WidgetPointer(1137,109));
+	ivar2 = multiply(divide(ivar1, 2), 20);
+	createExtraChild(new WidgetPointer(1137,109), 4, ivar1);
+	setWidgetText(arg1);
+	arg2 = concat(arg2, "<col=800000>" + chooseString(arg0, " Teams: Yes.", " Teams: No."));
+	setScriptCallOnMouseOver(1160, new WidgetPointer(-32768,3), -1, new WidgetPointer(1137,6), arg2, 25, 519, "IiIsii");
+	setWidgetSize(8100, 20, 2, 0);
+	setScriptCallOnClickContextMenu(5267, "");
+	if (((boolean)mod(ivar1, 2))) {
+		setWidgetPosition(2, ivar2, 0, 0);
+	} else {
+		setWidgetPosition(2, ivar2, 2, 0);
+	}
+	setWidgetFont(494);
+	setWidgetRGB(new Color(0, 255, 0));
+	setWidgetUnknownBoolean(true);
+	setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), -2147483643, 16777215, "Iii");
+	setScriptCallOnMouseExit(1949, new WidgetPointer(-32768,3), -2147483643, 65280, new WidgetPointer(1137,6), "IiiI");
+	setWidgetContextMenuOption(1, "Select");
+	if ((ivar1 >= 10) && ((boolean)mod(ivar1, 2))) {
+		setWidgetIsHidden(false, new WidgetPointer(1137,110));
+		setWidgetSize(18, 2, 1, 1, new WidgetPointer(1137,109));
+		setWidgetScrollMax(0, add(ivar2, 20), new WidgetPointer(1137,109));
+		script_31(74514542, 74514541, 792, 789, 790, 791, 773, 788);
+		script_72(74514542, 74514541, multiply(divide(subtract(bitconfig_9822, 1), 2), 20));
+	}
+	return;
+}

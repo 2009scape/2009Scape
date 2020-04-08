@@ -1,0 +1,51 @@
+void script_5114(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6) {
+	string svar0;
+	setWidgetIsHidden(true, new WidgetPointer(1116,85));
+	setWidgetText(new WidgetPointer(1116,600), getWidgetText(new WidgetPointer(arg0)));
+	setWidgetSprite(getWidgetSpriteId(new WidgetPointer(arg1)), new WidgetPointer(1116,602));
+	setWidgetSprite(getWidgetSpriteId(new WidgetPointer(arg2)), new WidgetPointer(1116,615));
+	setWidgetRGB(getWidgetRGB(new WidgetPointer(arg1)), new WidgetPointer(1116,602));
+	setWidgetRGB(getWidgetRGB(new WidgetPointer(arg2)), new WidgetPointer(1116,615));
+	setWidgetRGB(getWidgetRGB(new WidgetPointer(arg3)), new WidgetPointer(1116,611));
+	setWidgetRGB(getWidgetRGB(new WidgetPointer(arg4)), new WidgetPointer(1116,612));
+	svar0 = "";
+	switch (getWidgetSpriteId(new WidgetPointer(arg5))) {
+		case 6194:
+			setWidgetSprite(6199, new WidgetPointer(1116,591));
+			svar0 = "This clan is flagged as a nemesis.";
+			break;
+		case 6195:
+			setWidgetSprite(6200, new WidgetPointer(1116,591));
+			svar0 = "This clan is flagged as an enemy.";
+			break;
+		case 6196:
+			setWidgetSprite(6201, new WidgetPointer(1116,591));
+			svar0 = "This clan is flagged as neutral.";
+			break;
+		case 6197:
+			setWidgetSprite(6202, new WidgetPointer(1116,591));
+			svar0 = "This clan is flagged as a friend.";
+			break;
+		case 6198:
+			setWidgetSprite(6203, new WidgetPointer(1116,591));
+			svar0 = "This clan is flagged as an ally.";
+	}
+	setScriptCallOnMouseOver(4538, new WidgetPointer(1116,51), new WidgetPointer(1116,591), -1, svar0, 180, 3793, 3793, 16777215, 13, 4, 3, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1116,591));
+	setScriptCallOnMouseExit(40, new WidgetPointer(1116,51), "I", new WidgetPointer(1116,591));
+	script_5106();
+	if (((boolean)arg6)) {
+		if (isWidgetHidden(new WidgetPointer(1116,3))) {
+			setWidgetIsHidden(false, new WidgetPointer(1116,4));
+		} else {
+			setWidgetIsHidden(false, new WidgetPointer(1116,3));
+		}
+		setWidgetIsHidden(true, new WidgetPointer(1116,115));
+		setWidgetIsHidden(true, new WidgetPointer(1116,122));
+		setWidgetIsHidden(true, new WidgetPointer(1116,108));
+		setWidgetIsHidden(true, new WidgetPointer(1116,101));
+		setWidgetIsHidden(true, new WidgetPointer(1116,94));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(1116,40));
+	}
+	return;
+}

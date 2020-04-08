@@ -1,0 +1,50 @@
+void script_2521() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = -1;
+	ivar5 = -1;
+	ivar1 = divide(subtract(getWidgetActualWidth(new WidgetPointer(848,2)), 180), 4);
+	ivar2 = divide(subtract(getWidgetActualHeight(new WidgetPointer(848,2)), 128), 3);
+	while ((ivar0 < 5) && (cs2method_3408(105, 79, globalint_875, ivar0) != 11760)) {
+		ivar5 = cs2method_3408(105, 79, globalint_875, ivar0);
+		switch (ivar0) {
+			case 0:
+				setWidgetText(new WidgetPointer(848,19), getItemName(getRealItem(ivar5)));
+				ivar3 = globalint_876;
+				break;
+			case 1:
+				setWidgetText(new WidgetPointer(848,20), getItemName(getRealItem(ivar5)));
+				ivar3 = globalint_877;
+				break;
+			case 2:
+				setWidgetText(new WidgetPointer(848,21), getItemName(getRealItem(ivar5)));
+				ivar3 = globalint_878;
+				break;
+			case 3:
+				setWidgetText(new WidgetPointer(848,22), getItemName(getRealItem(ivar5)));
+				ivar3 = globalint_879;
+				break;
+			case 4:
+				setWidgetText(new WidgetPointer(848,23), getItemName(getRealItem(ivar5)));
+				ivar3 = globalint_880;
+		}
+		createExtraChild(new WidgetPointer(848,2), 5, ivar0);
+		setWidgetSize(36, 32, 0, 0);
+		setWidgetPosition(multiply(add(36, ivar1), mod(ivar0, 5)), multiply(divide(ivar0, 5), add(32, ivar2)), 0, 0);
+		setItemOnWidgetMethod1200(getRealItem(ivar5), ivar3);
+		cs2method1305("<col=ff981f>" + getItemName(getRealItem(ivar5)));
+		setWidgetContextMenuOption(1, "Select");
+		setWidgetContextMenuOption(2, "Examine");
+		setWidgetShadowColor(new Color(51, 51, 51));
+		ivar0 = add(ivar0, 1);
+	}
+	return;
+}

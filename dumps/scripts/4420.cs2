@@ -1,0 +1,45 @@
+void script_4420() {
+	setWidgetText(new WidgetPointer(1107,60), "Event");
+	setWidgetIsHidden(false, new WidgetPointer(1107,58));
+	setWidgetIsHidden(false, new WidgetPointer(1107,59));
+	switch (clanbitconfig_130) {
+		case 1:
+			script_4421(72548402, 72548403, clanbitconfig_98, clanbitconfig_106, clanbitconfig_82, clanbitconfig_90, clanbitconfig_74, clanbitconfig_114, clanconfig_65, clanbitconfig_132, clanlongconfig_122);
+			break;
+		case 2:
+			script_4421(72548402, 72548403, clanbitconfig_99, clanbitconfig_107, clanbitconfig_83, clanbitconfig_91, clanbitconfig_75, clanbitconfig_115, clanconfig_66, clanbitconfig_133, clanlongconfig_123);
+			break;
+		case 3:
+			script_4421(72548402, 72548403, clanbitconfig_100, clanbitconfig_108, clanbitconfig_84, clanbitconfig_92, clanbitconfig_76, clanbitconfig_116, clanconfig_67, clanbitconfig_134, clanlongconfig_124);
+			break;
+		case 4:
+			script_4421(72548402, 72548403, clanbitconfig_101, clanbitconfig_109, clanbitconfig_85, clanbitconfig_93, clanbitconfig_77, clanbitconfig_117, clanconfig_68, clanbitconfig_135, clanlongconfig_125);
+			break;
+		case 5:
+			script_4421(72548402, 72548403, clanbitconfig_102, clanbitconfig_110, clanbitconfig_86, clanbitconfig_94, clanbitconfig_78, clanbitconfig_118, clanconfig_69, clanbitconfig_136, clanlongconfig_126);
+			break;
+		case 6:
+			script_4421(72548402, 72548403, clanbitconfig_103, clanbitconfig_111, clanbitconfig_87, clanbitconfig_95, clanbitconfig_79, clanbitconfig_119, clanconfig_70, clanbitconfig_137, clanlongconfig_127);
+			break;
+		case 7:
+			script_4421(72548402, 72548403, clanbitconfig_104, clanbitconfig_112, clanbitconfig_88, clanbitconfig_96, clanbitconfig_80, clanbitconfig_120, clanconfig_71, clanbitconfig_138, clanlongconfig_128);
+			break;
+		case 8:
+			script_4421(72548402, 72548403, clanbitconfig_105, clanbitconfig_113, clanbitconfig_89, clanbitconfig_97, clanbitconfig_81, clanbitconfig_121, clanconfig_72, clanbitconfig_139, clanlongconfig_129);
+			break;
+		default:
+			setScriptCallOnMouseEntered(-1, "", new WidgetPointer(1107,54));
+			setScriptCallOnMouseExit(-1, "", new WidgetPointer(1107,54));
+			setScriptCallOnMouseEntered(-1, "", new WidgetPointer(1107,56));
+			setScriptCallOnMouseExit(-1, "", new WidgetPointer(1107,55));
+			setScriptCallOnMouseEntered(-1, "", new WidgetPointer(1107,56));
+			setScriptCallOnMouseExit(-1, "", new WidgetPointer(1107,56));
+			setWidgetText(new WidgetPointer(1107,60), "Events (none)");
+			setWidgetIsHidden(true, new WidgetPointer(1107,58));
+			setWidgetIsHidden(true, new WidgetPointer(1107,59));
+			setWidgetText(new WidgetPointer(1107,50), "");
+			setWidgetText(new WidgetPointer(1107,51), "");
+			setScriptCallOnMousePressed(-1, "", new WidgetPointer(1107,57));
+	}
+	return;
+}

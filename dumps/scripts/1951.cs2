@@ -1,0 +1,10 @@
+void script_1951() {
+	if (((boolean)globalint_616)) {
+		setWidgetIsHidden(false, new WidgetPointer(745,1));
+	} else {
+		globalint_616 = 0;
+		setWidgetIsHidden(true, new WidgetPointer(745,1));
+		script_1952();
+	}
+	return;
+}

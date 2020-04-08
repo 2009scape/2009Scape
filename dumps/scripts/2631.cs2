@@ -1,0 +1,8 @@
+void script_2631(int arg0,int arg1,int arg2) {
+	if (mod(getClientCycle(), 20) < 10) {
+		setWidgetSprite(arg2, new WidgetPointer(arg0));
+	} else {
+		setWidgetSprite(arg1, new WidgetPointer(arg0));
+	}
+	return;
+}

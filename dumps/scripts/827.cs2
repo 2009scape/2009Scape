@@ -1,0 +1,16 @@
+void script_827(int arg0) {
+	int ivar1;
+	ivar1 = 0;
+	if ((getClientCycle() >= add(arg0, 32)) && (getClientCycle() < add(arg0, 140))) {
+		setWidgetText(new WidgetPointer(465,2), "Varrock Herald");
+		setWidgetText(new WidgetPointer(465,3), "Covering all of Misthalin and beyond.");
+		setWidgetText(new WidgetPointer(465,4), "1 gp");
+		setWidgetText(new WidgetPointer(465,5), "Oo'glog Ogresses Open Health Spa!");
+	} else {
+		setWidgetText(new WidgetPointer(465,2), " ");
+		setWidgetText(new WidgetPointer(465,3), " ");
+		setWidgetText(new WidgetPointer(465,4), " ");
+		setWidgetText(new WidgetPointer(465,5), " ");
+	}
+	return;
+}

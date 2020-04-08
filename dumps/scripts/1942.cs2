@@ -1,0 +1,33 @@
+void script_1942() {
+	if (((boolean)globalint_560)) {
+		globalint_559 = min(255, add(globalint_559, 6));
+		if (globalint_559 == 255) {
+			globalint_560 = 1;
+		}
+	} else {
+		if (((boolean)globalint_560)) {
+			globalint_559 = max(60, subtract(globalint_559, 6));
+			if (globalint_559 == 60) {
+				globalint_560 = 0;
+			}
+		}
+	}
+	cs2method2103(globalint_559, new WidgetPointer(809,14));
+	if (globalint_561 < 4) {
+		if (isWidgetHidden(new WidgetPointer(809,18))) {
+			globalint_562 = min(20, add(globalint_562, 1));
+			if (globalint_562 == 20) {
+				globalint_562 = 0;
+				setWidgetIsHidden(false, new WidgetPointer(809,18));
+			}
+		} else {
+			globalint_562 = min(35, add(globalint_562, 1));
+			if (globalint_562 == 35) {
+				globalint_562 = 0;
+				setWidgetIsHidden(true, new WidgetPointer(809,18));
+				globalint_561 = min(4, add(globalint_561, 1));
+			}
+		}
+	}
+	return;
+}

@@ -1,0 +1,5 @@
+void script_2092(int arg0) {
+	script_41(arg0);
+	globalint_655 = 0;
+	return;
+}

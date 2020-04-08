@@ -1,0 +1,21 @@
+string script_74(int arg0,int arg1,int arg2,string arg3) {
+	int ivar3;
+	string svar1;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	int stack_dump3;
+	string stack_dump4;
+	cs2func_script_802_struct(1,1,0) structdump_5;
+	svar1 = "";
+	ivar3 = -1;
+	stack_dump0 = ivar3;
+	stack_dump1 = arg0;
+	stack_dump2 = arg1;
+	stack_dump3 = arg2;
+	stack_dump4 = arg3;
+	structdump_5 = script_802(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+	ivar3 = structdump_5.intpart_0;
+	svar1 = structdump_5.stringpart_0;
+	return svar1;
+}

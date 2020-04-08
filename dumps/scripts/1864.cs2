@@ -1,0 +1,170 @@
+void script_1864(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	if (arg0 != 1) {
+		return;
+	}
+	switch (arg2) {
+		case 12:
+			switch (arg3) {
+				case 0:
+					messageType0("Rick: " + intToStr(cs2method_3408(105, 105, 238, 1)) + " coins.");
+					break;
+				case 1:
+					messageType0("Maid: " + intToStr(cs2method_3408(105, 105, 238, 3)) + " coins.");
+					break;
+				case 2:
+					messageType0("Cook: " + intToStr(cs2method_3408(105, 105, 238, 5)) + " coins.");
+					break;
+				case 3:
+					messageType0("Butler: " + intToStr(cs2method_3408(105, 105, 238, 6)) + " coins.");
+					break;
+				case 4:
+					messageType0("Demon Butler: " + intToStr(cs2method_3408(105, 105, 238, 8)) + " coins.");
+			}
+			return;
+		case 0:
+			switch (arg1) {
+				case 8170:
+					arg1 = 8415;
+					break;
+				case 8315:
+					arg1 = 8395;
+					break;
+				case 8222:
+					arg1 = 8396;
+					break;
+				case 8121:
+					arg1 = 8397;
+					break;
+				case 8379:
+					arg1 = 8406;
+					break;
+				case 8037:
+					arg1 = 8398;
+					break;
+				case 8255:
+					arg1 = 8401;
+					break;
+				case 8163:
+					arg1 = 8399;
+					break;
+				case 8027:
+					arg1 = 8400;
+					break;
+				case 8259:
+					arg1 = 8403;
+					break;
+				case 8340:
+					arg1 = 8407;
+					break;
+				case 9822:
+					arg1 = 9842;
+					break;
+				case 8068:
+					arg1 = 8405;
+					break;
+				case 8333:
+					arg1 = 8408;
+					break;
+				case 8195:
+					arg1 = 8416;
+					break;
+				case 8363:
+					arg1 = 8409;
+					break;
+				case 8302:
+					arg1 = 8410;
+					break;
+				case 8123:
+					arg1 = 8411;
+					break;
+				case 8122:
+					arg1 = 18800;
+					break;
+				case 8151:
+					arg1 = 8414;
+			}
+			messageType0(getItemName(arg1) + ": " + formatNumber(getItemValue(arg1), 1) + " coins.");
+			return;
+		case 14:
+		case 15:
+			return;
+	}
+	globalarray_0 = new int[6];
+	globalarray_1 = new int[6];
+	ivar4 = 0;
+	if (getItemHashmapData(arg1, 211) != -1) {
+		globalarray_0[0] = getItemHashmapData(arg1, 211);
+		globalarray_0[0] = getItemHashmapData(arg1, 212);
+		ivar4 = add(ivar4, 1);
+	}
+	if (getItemHashmapData(arg1, 213) != -1) {
+		globalarray_0[1] = getItemHashmapData(arg1, 213);
+		globalarray_0[1] = getItemHashmapData(arg1, 214);
+		ivar4 = add(ivar4, 1);
+	}
+	if (getItemHashmapData(arg1, 215) != -1) {
+		globalarray_0[2] = getItemHashmapData(arg1, 215);
+		globalarray_0[2] = getItemHashmapData(arg1, 216);
+		ivar4 = add(ivar4, 1);
+	}
+	if (getItemHashmapData(arg1, 217) != -1) {
+		globalarray_0[3] = getItemHashmapData(arg1, 217);
+		globalarray_0[3] = getItemHashmapData(arg1, 218);
+		ivar4 = add(ivar4, 1);
+	}
+	if (getItemHashmapData(arg1, 219) != -1) {
+		globalarray_0[4] = getItemHashmapData(arg1, 219);
+		globalarray_0[4] = getItemHashmapData(arg1, 220);
+		ivar4 = add(ivar4, 1);
+	}
+	if (getItemHashmapData(arg1, 221) != -1) {
+		globalarray_0[5] = getItemHashmapData(arg1, 221);
+		globalarray_0[5] = getItemHashmapData(arg1, 222);
+		ivar4 = add(ivar4, 1);
+	}
+	switch (ivar4) {
+		case 1:
+			messageType0(getItemName(arg1) + ":");
+			messageType0(formatNumber(globalarray_1[0], 1) + " x " + getItemName(globalarray_0[0]));
+			break;
+		case 2:
+			messageType0(getItemName(arg1) + ":");
+			messageType0(formatNumber(globalarray_1[0], 1) + " x " + getItemName(globalarray_0[0]));
+			messageType0(formatNumber(globalarray_1[1], 1) + " x " + getItemName(globalarray_0[1]));
+			break;
+		case 3:
+			messageType0(getItemName(arg1) + ":");
+			messageType0(formatNumber(globalarray_1[0], 1) + " x " + getItemName(globalarray_0[0]));
+			messageType0(formatNumber(globalarray_1[1], 1) + " x " + getItemName(globalarray_0[1]));
+			messageType0(formatNumber(globalarray_1[2], 1) + " x " + getItemName(globalarray_0[2]));
+			break;
+		case 4:
+			messageType0(getItemName(arg1) + ":");
+			messageType0(formatNumber(globalarray_1[0], 1) + " x " + getItemName(globalarray_0[0]));
+			messageType0(formatNumber(globalarray_1[1], 1) + " x " + getItemName(globalarray_0[1]));
+			messageType0(formatNumber(globalarray_1[2], 1) + " x " + getItemName(globalarray_0[2]));
+			messageType0(formatNumber(globalarray_1[3], 1) + " x " + getItemName(globalarray_0[3]));
+			break;
+		case 5:
+			messageType0(getItemName(arg1) + ":");
+			messageType0(formatNumber(globalarray_1[0], 1) + " x " + getItemName(globalarray_0[0]));
+			messageType0(formatNumber(globalarray_1[1], 1) + " x " + getItemName(globalarray_0[1]));
+			messageType0(formatNumber(globalarray_1[2], 1) + " x " + getItemName(globalarray_0[2]));
+			messageType0(formatNumber(globalarray_1[3], 1) + " x " + getItemName(globalarray_0[3]));
+			messageType0(formatNumber(globalarray_1[4], 1) + " x " + getItemName(globalarray_0[4]));
+			break;
+		case 6:
+			messageType0(getItemName(arg1) + ":");
+			messageType0(formatNumber(globalarray_1[0], 1) + " x " + getItemName(globalarray_0[0]));
+			messageType0(formatNumber(globalarray_1[1], 1) + " x " + getItemName(globalarray_0[1]));
+			messageType0(formatNumber(globalarray_1[2], 1) + " x " + getItemName(globalarray_0[2]));
+			messageType0(formatNumber(globalarray_1[3], 1) + " x " + getItemName(globalarray_0[3]));
+			messageType0(formatNumber(globalarray_1[4], 1) + " x " + getItemName(globalarray_0[4]));
+			messageType0(formatNumber(globalarray_1[5], 1) + " x " + getItemName(globalarray_0[5]));
+			break;
+		default:
+			messageType0(getItemName(arg1));
+	}
+	return;
+}

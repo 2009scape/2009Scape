@@ -1,0 +1,34 @@
+cs2func_script_360_struct(3,0,0) script_360(int arg0) {
+	flow_0:
+		SWITCH (bitconfig_8091) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_2
+			case 3:
+				 GOTO flow_3
+			case 4:
+				 GOTO flow_4
+			case 5:
+				 GOTO flow_5
+			case 6:
+				 GOTO flow_6
+			case 7:
+				 GOTO flow_7
+		}
+		return newstruct cs2func_script_360_struct(getOtherCommonData(arg0, 1187), getOtherCommonData(arg0, 1188), getOtherCommonData(arg0, 1189));
+	flow_1:
+		return newstruct cs2func_script_360_struct(getOtherCommonData(arg0, 1190), getOtherCommonData(arg0, 1191), getOtherCommonData(arg0, 1192));
+	flow_2:
+		return newstruct cs2func_script_360_struct(getOtherCommonData(arg0, 1193), getOtherCommonData(arg0, 1194), getOtherCommonData(arg0, 1195));
+	flow_3:
+		return newstruct cs2func_script_360_struct(getOtherCommonData(arg0, 1196), getOtherCommonData(arg0, 1197), getOtherCommonData(arg0, 1198));
+	flow_4:
+		return newstruct cs2func_script_360_struct(getOtherCommonData(arg0, 1199), getOtherCommonData(arg0, 1200), getOtherCommonData(arg0, 1201));
+	flow_5:
+		return newstruct cs2func_script_360_struct(getOtherCommonData(arg0, 1202), getOtherCommonData(arg0, 1203), getOtherCommonData(arg0, 1204));
+	flow_6:
+		return newstruct cs2func_script_360_struct(getOtherCommonData(arg0, 1205), getOtherCommonData(arg0, 1206), getOtherCommonData(arg0, 1207));
+	flow_7:
+		return newstruct cs2func_script_360_struct(getOtherCommonData(arg0, 1208), getOtherCommonData(arg0, 1209), getOtherCommonData(arg0, 1210));
+}

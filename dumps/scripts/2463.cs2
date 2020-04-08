@@ -1,0 +1,17 @@
+void script_2463(string arg0,string arg1) {
+	if (getDisplayMode() >= 2) {
+		setWidgetIsHidden(false, new WidgetPointer(746,73));
+	}
+	setWidgetIsHidden(false, new WidgetPointer(752,3));
+	setWidgetIsHidden(true, new WidgetPointer(752,7));
+	setWidgetIsHidden(true, new WidgetPointer(752,8));
+	setWidgetText(new WidgetPointer(752,4), arg0);
+	globalint_5 = 13;
+	script_1564(arg1);
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(752,3));
+	script_2026();
+	setScriptCallOnKeyPress(112, -2147483640, false, "iz", new WidgetPointer(752,5));
+	setScriptCallOnWindowPaneRefresh(138, "", new WidgetPointer(752,5));
+	script_1188();
+	return;
+}

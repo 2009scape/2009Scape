@@ -1,0 +1,9 @@
+void script_1482(int arg0) {
+	int ivar1;
+	ivar1 = cs2method_3408(73, 105, 1613, arg0);
+	if ((ivar1 != -1) && (ivar1 != bitconfig_4893)) {
+		script_1463(ivar1);
+		setScriptCallOnGameloop(1483, add(getClientCycle(), 15), new WidgetPointer(-32768,3), "iI", new WidgetPointer(arg0));
+	}
+	return;
+}

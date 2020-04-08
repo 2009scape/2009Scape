@@ -1,0 +1,12 @@
+void script_740() {
+	globalint_106 = 0;
+	globalint_106 = 0;
+	globalint_99 = 0;
+	globalint_100 = 0;
+	globalint_101 = 0;
+	globalint_104 = 0;
+	globalint_102 = 0;
+	globalint_105 = 20;
+	script_738();
+	return;
+}

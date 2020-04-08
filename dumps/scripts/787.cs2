@@ -1,0 +1,23 @@
+void script_787(int arg0) {
+	deleteAllExtraChilds(new WidgetPointer(667,5));
+	script_1516(43712517, 375, 125);
+	script_2647(43712517);
+	script_2373(arg0, -1);
+	script_2947();
+	script_680(43712577);
+	setScriptCallOnMouseEntered(95, new WidgetPointer(-32768,3), "I", new WidgetPointer(667,65));
+	setScriptCallOnMouseExit(93, new WidgetPointer(-32768,3), "I", new WidgetPointer(667,65));
+	setScriptCallOnGlobalStringChange(2782, 321, 322, 323, 324, 325, 5, "Y", new WidgetPointer(arg0));
+	if (((boolean)bitconfig_4894)) {
+		setWidgetIsHidden(false, new WidgetPointer(667,49));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(667,49));
+	}
+	script_2957(43712562);
+	setScriptCallOnMouseEntered(1413, new WidgetPointer(-32768,3), "I", new WidgetPointer(667,50));
+	setScriptCallOnMouseExit(1414, new WidgetPointer(-32768,3), "I", new WidgetPointer(667,50));
+	setScriptCallOnConfigChange(2371, 1248, 1, "Y", new WidgetPointer(arg0));
+	setScriptCallOnGeneralDataChange(690, "", new WidgetPointer(667,25));
+	setScriptCallOnGeneralDataChange(690, "", new WidgetPointer(762,121));
+	return;
+}

@@ -1,0 +1,28 @@
+void script_440() {
+	setWidgetSprite(1134, new WidgetPointer(1016,24));
+	setWidgetSprite(1134, new WidgetPointer(1016,25));
+	setWidgetSprite(1134, new WidgetPointer(1016,26));
+	setWidgetSprite(1134, new WidgetPointer(1016,27));
+	setWidgetSprite(1134, new WidgetPointer(1016,28));
+	setWidgetSprite(1134, new WidgetPointer(1016,29));
+	switch (bitconfig_8087) {
+		case 0:
+			setWidgetSprite(1135, new WidgetPointer(1016,24));
+			break;
+		case 1:
+			setWidgetSprite(1135, new WidgetPointer(1016,25));
+			break;
+		case 2:
+			setWidgetSprite(1135, new WidgetPointer(1016,26));
+			break;
+		case 3:
+			setWidgetSprite(1135, new WidgetPointer(1016,27));
+			break;
+		case 4:
+			setWidgetSprite(1135, new WidgetPointer(1016,28));
+			break;
+		case 5:
+			setWidgetSprite(1135, new WidgetPointer(1016,29));
+	}
+	return;
+}

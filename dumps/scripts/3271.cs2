@@ -1,0 +1,16 @@
+void script_3271() {
+	if (((boolean)globalint_1202)) {
+		setWidgetSize(16384, subtract(getWidgetActualHeight(new WidgetPointer(933,296)), 1), 2, 0, new WidgetPointer(933,296));
+	} else if (((boolean)globalint_1201)) {
+		setWidgetSize(16384, subtract(getWidgetActualHeight(new WidgetPointer(933,286)), 1), 2, 0, new WidgetPointer(933,286));
+	} else if (((boolean)globalint_1200)) {
+		setWidgetSize(16384, subtract(getWidgetActualHeight(new WidgetPointer(933,276)), 1), 2, 0, new WidgetPointer(933,276));
+	} else if (((boolean)globalint_1199)) {
+		setWidgetSize(16384, subtract(getWidgetActualHeight(new WidgetPointer(933,266)), 1), 2, 0, new WidgetPointer(933,266));
+	} else {
+		if (((boolean)globalint_1198)) {
+			setWidgetSize(16384, subtract(getWidgetActualHeight(new WidgetPointer(933,265)), 1), 2, 0, new WidgetPointer(933,265));
+		}
+	}
+	return;
+}

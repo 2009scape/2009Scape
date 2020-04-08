@@ -1,0 +1,14 @@
+void script_1615(int arg0,int arg1,int arg2) {
+	if (((boolean)arg0)) {
+		if (setWidgetRegister(new WidgetPointer(arg1), arg2)) {
+			setWidgetBorderThickness(2);
+		}
+		globalint_1031 = add(1, arg2);
+	} else {
+		if (setWidgetRegister(new WidgetPointer(arg1), arg2)) {
+			setWidgetBorderThickness(1);
+		}
+		globalint_1031 = 0;
+	}
+	return;
+}

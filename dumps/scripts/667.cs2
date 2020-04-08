@@ -1,0 +1,10 @@
+void script_667(int arg0,int arg1,int arg2) {
+	if (setWidgetRegister(new WidgetPointer(arg1), arg2)) {
+		setWidgetFilled(1);
+		setWidgetSize(0, 0, 1, 1);
+		setWidgetPosition(0, 0, 1, 1);
+		cs2method2103(0);
+		setScriptCallOnGameloop(668, add(getClientCycle(), arg0), new WidgetPointer(arg1), arg2, "iIi");
+	}
+	return;
+}

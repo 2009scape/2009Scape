@@ -1,0 +1,276 @@
+void script_3387(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	int ivar22;
+	int ivar23;
+	int ivar24;
+	int ivar25;
+	int ivar26;
+	ivar5 = -1;
+	ivar6 = -1;
+	switch (arg4) {
+		case 1:
+			setWidgetText(new WidgetPointer(742,19), "Custom Graphics Options");
+			openInterface(48627718, 977);
+			ivar5 = 48627716;
+			ivar6 = 48627732;
+			setScriptCallOnMousePressed(3386, arg0, arg1, arg2, arg3, arg4, "iiiii", new WidgetPointer(742,18));
+			setWidgetContextMenuOption(1, new WidgetPointer(742,18), "Back");
+			break;
+		case 0:
+			openInterface(57802780, 977);
+			ivar5 = 57802756;
+			ivar6 = 57802757;
+			setWidgetIsHidden(true, new WidgetPointer(882,29));
+			setWidgetIsHidden(false, new WidgetPointer(882,23));
+			setScriptCallOnMousePressed(3386, arg0, arg1, arg2, arg3, arg4, "iiiii", new WidgetPointer(882,23));
+			setScriptCallOnWidgetResize(2917, 1, "1", new WidgetPointer(882,4));
+			setScriptCallOnWidgetResize(2919, 1, arg4, "1i", new WidgetPointer(744,50));
+			break;
+		case 2:
+			openInterface(59703298, 977);
+			ivar5 = 59703296;
+			ivar6 = 59703355;
+			setWidgetIsHidden(true, new WidgetPointer(911,5));
+			setWidgetIsHidden(false, new WidgetPointer(911,3));
+			setScriptCallOnMousePressed(3386, arg0, arg1, arg2, arg3, arg4, "iiiii", new WidgetPointer(911,3));
+			setScriptCallOnWidgetResize(2919, 1, arg4, "1i", new WidgetPointer(906,23));
+			script_4041();
+	}
+	setWidgetIsHidden(true, new WidgetPointer(ivar6));
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(ivar5));
+	ivar7 = 0;
+	ivar8 = 1;
+	ivar9 = -1;
+	ivar10 = -1;
+	ivar11 = -1;
+	ivar12 = -1;
+	ivar13 = -1;
+	setWidgetSprite(-1, new WidgetPointer(977,60));
+	setWidgetSprite(-1, new WidgetPointer(977,56));
+	setWidgetSprite(-1, new WidgetPointer(977,58));
+	setWidgetSprite(-1, new WidgetPointer(977,54));
+	setScriptCallOnMouseEntered(-1, "", new WidgetPointer(977,59));
+	setScriptCallOnMouseEntered(-1, "", new WidgetPointer(977,55));
+	setScriptCallOnMouseEntered(-1, "", new WidgetPointer(977,57));
+	setScriptCallOnMouseEntered(-1, "", new WidgetPointer(977,53));
+	setScriptCallOnMouseExit(-1, "", new WidgetPointer(977,59));
+	setScriptCallOnMouseExit(-1, "", new WidgetPointer(977,55));
+	setScriptCallOnMouseExit(-1, "", new WidgetPointer(977,57));
+	setScriptCallOnMouseExit(-1, "", new WidgetPointer(977,53));
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(977,59));
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(977,55));
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(977,57));
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(977,53));
+	if (cs2method7214()) {
+		switch (arg0) {
+			case 0:
+				script_1147(0, arg0, 64028721, 64028731, 64028732, arg4);
+				break;
+			case 2:
+				script_1147(2, arg0, 64028721, 64028731, 64028732, arg4);
+				break;
+			case 1:
+				script_1147(1, arg0, 64028721, 64028731, 64028732, arg4);
+				break;
+			case 3:
+				script_1147(3, arg0, 64028721, 64028731, 64028732, arg4);
+		}
+		setWidgetPosition(175, getWidgetActualY(new WidgetPointer(977,49)), 2, 0, new WidgetPointer(977,49));
+		setWidgetSize(350, getWidgetActualHeight(new WidgetPointer(977,47)), 0, 0, new WidgetPointer(977,46));
+	} else {
+		if (cs2method6147() || ((boolean)arg0)) {
+			ivar9 = 64028721;
+			script_1147(0, arg0, 64028721, 64028731, 64028732, arg4);
+			ivar7 = add(ivar7, 1);
+		}
+		while (ivar8 < 4) {
+			if (cs2method7314(ivar8) < 3) {
+				switch (ivar8) {
+					case 2:
+						ivar13 = 64028722;
+						script_1147(1, arg0, 64028722, 64028729, 64028730, arg4);
+						break;
+					case 1:
+						ivar13 = 64028723;
+						script_1147(2, arg0, 64028723, 64028727, 64028728, arg4);
+						break;
+					case 3:
+						ivar13 = 64028724;
+						script_1147(3, arg0, 64028724, 64028725, 64028726, arg4);
+				}
+				ivar7 = add(ivar7, 1);
+				if (ivar9 == -1) {
+					ivar9 = ivar13;
+				} else if (ivar10 == -1) {
+					ivar10 = ivar13;
+				} else if (ivar11 == -1) {
+					ivar11 = ivar13;
+				} else {
+					if (ivar12 == -1) {
+						ivar12 = ivar13;
+					}
+				}
+			}
+			ivar8 = add(ivar8, 1);
+		}
+		switch (ivar7) {
+			case 1:
+				setWidgetPosition(175, getWidgetActualY(new WidgetPointer(ivar9)), 2, 0, new WidgetPointer(ivar9));
+				setWidgetSize(350, getWidgetActualHeight(new WidgetPointer(977,47)), 0, 0, new WidgetPointer(977,46));
+				break;
+			case 2:
+				setWidgetPosition(90, getWidgetActualY(new WidgetPointer(ivar9)), 0, 0, new WidgetPointer(ivar9));
+				setWidgetPosition(90, getWidgetActualY(new WidgetPointer(ivar10)), 2, 0, new WidgetPointer(ivar10));
+				setWidgetSize(400, getWidgetActualHeight(new WidgetPointer(977,47)), 0, 0, new WidgetPointer(977,46));
+				break;
+			case 3:
+				setWidgetPosition(58, getWidgetActualY(new WidgetPointer(ivar9)), 0, 0, new WidgetPointer(ivar9));
+				setWidgetPosition(173, getWidgetActualY(new WidgetPointer(ivar10)), 2, 0, new WidgetPointer(ivar10));
+				setWidgetPosition(58, getWidgetActualY(new WidgetPointer(ivar11)), 2, 0, new WidgetPointer(ivar11));
+				setWidgetSize(400, getWidgetActualHeight(new WidgetPointer(977,47)), 0, 0, new WidgetPointer(977,46));
+		}
+	}
+	ivar14 = 0;
+	ivar15 = -1;
+	ivar16 = 64028700;
+	ivar17 = 64028699;
+	deleteAllExtraChilds(new WidgetPointer(ivar16));
+	deleteAllExtraChilds(new WidgetPointer(ivar17));
+	script_2601(0, ivar14, ivar16, "Brightness");
+	script_1185(64028704, 64028705);
+	cs2method2301(64028704, -1, new WidgetPointer(977,33));
+	ivar18 = 1;
+	ivar19 = add(arg3, 21);
+	ivar20 = -1;
+	ivar21 = -1;
+	ivar22 = -1;
+	ivar23 = 0;
+	ivar24 = 0;
+	ivar25 = 0;
+	ivar26 = -1;
+	while (ivar24 < getCommonDefinitionSize(201)) {
+		ivar21 = cs2method_3408(105, 74, 201, ivar24);
+		ivar20 = script_2601(ivar18, ivar14, ivar16, getOtherCommonData(ivar21, 845));
+		createExtraChild(new WidgetPointer(ivar16), 3, getExtraChildGap(new WidgetPointer(ivar16)));
+		setWidgetSize(ivar19, 16, 0, 0);
+		if (((boolean)ivar18)) {
+			setWidgetPosition(4, ivar14, 2, 0);
+		} else {
+			setWidgetPosition(subtract(233, ivar19), ivar14, 0, 0);
+		}
+		setWidgetFilled(1);
+		setWidgetRGB(new Color(46, 43, 38));
+		createExtraChild(new WidgetPointer(ivar16), 3, getExtraChildGap(new WidgetPointer(ivar16)));
+		setWidgetSize(getWidgetActualWidth(), getWidgetActualHeight(), 0, 0);
+		setWidgetPosition(getWidgetActualX(), getWidgetActualY(), 0, 0);
+		setWidgetFilled(0);
+		setWidgetRGB(new Color(95, 91, 82));
+		ivar15 = getWidgetCustomChildArrayIndex();
+		createExtraChild(new WidgetPointer(ivar16), 4, getExtraChildGap(new WidgetPointer(ivar16)));
+		setWidgetFont(494);
+		setWidgetTextAlignment(1, 1, 0);
+		ivar23 = script_2581(ivar21);
+		if (ivar23 <= -1) {
+			setWidgetSize(getWidgetActualWidth(), getWidgetActualHeight(), 0, 0);
+			setWidgetPosition(getWidgetActualX(), getWidgetActualY(), 0, 0);
+			setWidgetRGB(new Color(235, 224, 188));
+			setWidgetText("<col=646464>" + "N/A");
+		} else {
+			setWidgetSize(arg3, getWidgetActualHeight(), 0, 0);
+			setWidgetPosition(add(getWidgetActualX(), 2), getWidgetActualY(), 0, 0);
+			ivar22 = getOtherCommonData(ivar21, 683);
+			ivar25 = script_829(ivar21, ivar22);
+			if (ivar21 != 1009) {
+				if (ivar23 < ivar25) {
+					setWidgetRGB(new Color(235, 224, 188));
+				} else {
+					setWidgetRGB(new Color(0, 177, 225));
+				}
+			} else if (ivar23 > 0) {
+				setWidgetRGB(new Color(235, 224, 188));
+			} else {
+				setWidgetRGB(new Color(0, 177, 225));
+			}
+			if (((int)isBitFlagged(getOtherCommonData(ivar21, 682), arg0)) != 1) {
+				setWidgetText("<col=646464>" + "N/A");
+				setWidgetSize(getWidgetActualWidth(), getWidgetActualHeight(), 0, 0);
+				setWidgetPosition(getWidgetActualX(), getWidgetActualY(), 0, 0);
+			} else {
+				setWidgetText(cs2method_3408(105, 115, ivar22, ivar23));
+				createExtraChild(new WidgetPointer(ivar16), 5, getExtraChildGap(new WidgetPointer(ivar16)));
+				setWidgetSize(16, 16, 0, 0);
+				setWidgetPosition(subtract(add(getWidgetActualX(), getWidgetActualWidth()), add(getWidgetActualWidth(), 1)), add(ivar14, divide(subtract(16, getWidgetActualHeight()), 2)), 0, 0);
+				setWidgetSprite(2554);
+				setScriptCallOnMouseEntered(2691, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), 1, ivar15, 8419437, 1, "Ii1ii1");
+				setScriptCallOnMouseExit(2691, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), 0, ivar15, 6249298, 1, "Ii1ii1");
+				setScriptCallOnMousePressed(2695, new WidgetPointer(-32768,3), -2147483643, getWidgetCustomChildArrayIndex(), ivar15, ivar20, ivar21, arg2, arg3, arg0, arg1, arg4, "IiiiiJiiiii");
+			}
+		}
+		if (((boolean)ivar18)) {
+			ivar18 = 0;
+			ivar14 = add(ivar14, 20);
+			ivar26 = getExtraChildGap(new WidgetPointer(ivar17));
+			createExtraChild(new WidgetPointer(ivar17), 3, ivar26);
+			setWidgetSize(2, 1, 1, 0);
+			setWidgetPosition(1, add(ivar14, 3), 0, 0);
+			setWidgetFilled(1);
+			setWidgetRGB(new Color(128, 120, 109));
+		} else {
+			ivar18 = 1;
+		}
+		ivar24 = add(ivar24, 1);
+	}
+	if (((boolean)ivar18)) {
+		ivar14 = add(ivar14, 20);
+	}
+	if (((ivar26 != -1) && ((boolean)ivar18)) && setWidgetRegister(new WidgetPointer(ivar17), ivar26)) {
+		deleteExtraChild();
+	}
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(977,26)), add(ivar14, 5), 0, 0, new WidgetPointer(977,26));
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(977,24)), add(getWidgetActualY(new WidgetPointer(977,26)), getWidgetActualHeight(new WidgetPointer(977,26))), 0, 0, new WidgetPointer(977,24));
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(977,3)), add(getWidgetActualY(new WidgetPointer(977,24)), getWidgetActualHeight(new WidgetPointer(977,24))), 0, 0, new WidgetPointer(977,3));
+	switch (arg4) {
+		case 1:
+			setWidgetSize(getWidgetActualWidth(new WidgetPointer(742,4)), 334, 0, 0, new WidgetPointer(742,4));
+			setWidgetPosition(0, getWidgetActualY(new WidgetPointer(977,2)), 0, 0, new WidgetPointer(977,2));
+			setWidgetSize(20, subtract(getWidgetActualHeight(new WidgetPointer(742,6)), getWidgetActualHeight(new WidgetPointer(977,1))), 1, 0, new WidgetPointer(977,2));
+			setWidgetSize(getWidgetActualWidth(new WidgetPointer(977,0)), getWidgetActualHeight(new WidgetPointer(742,6)), 0, 0, new WidgetPointer(977,0));
+			setWidgetScrollMax(0, add(getWidgetActualHeight(new WidgetPointer(977,3)), 5), new WidgetPointer(977,2));
+			script_31(64028742, 64028674, 792, 789, 790, 791, 773, 788);
+			break;
+		case 0:
+			setWidgetPosition(0, 0, 1, 0, new WidgetPointer(977,0));
+			setWidgetPosition(0, 0, 1, 0, new WidgetPointer(882,28));
+			setWidgetSize(getWidgetActualWidth(new WidgetPointer(977,2)), getWidgetActualHeight(new WidgetPointer(977,3)), 0, 0, new WidgetPointer(977,2));
+			setWidgetSize(getWidgetActualWidth(new WidgetPointer(977,0)), add(getWidgetActualY(new WidgetPointer(977,2)), getWidgetActualHeight(new WidgetPointer(977,2))), 0, 0, new WidgetPointer(977,0));
+			setWidgetSize(getWidgetActualWidth(new WidgetPointer(882,28)), add(add(getWidgetActualHeight(new WidgetPointer(977,0)), 15), getWidgetActualHeight(new WidgetPointer(882,23))), 0, 0, new WidgetPointer(882,28));
+			setWidgetSize(getWidgetActualWidth(new WidgetPointer(882,22)), add(getWidgetActualHeight(new WidgetPointer(882,28)), 5), 0, 0, new WidgetPointer(882,22));
+			setWidgetSize(getWidgetActualWidth(new WidgetPointer(882,8)), add(40, getWidgetActualHeight(new WidgetPointer(882,22))), 0, 0, new WidgetPointer(882,8));
+			setWidgetPosition(0, 10, 1, 1, new WidgetPointer(882,22));
+			break;
+		case 2:
+			setWidgetPosition(0, 0, 1, 0, new WidgetPointer(977,0));
+			setWidgetSize(getWidgetActualWidth(new WidgetPointer(977,2)), getWidgetActualHeight(new WidgetPointer(977,3)), 0, 0, new WidgetPointer(977,2));
+			setWidgetSize(getWidgetActualWidth(new WidgetPointer(977,0)), add(getWidgetActualY(new WidgetPointer(977,2)), getWidgetActualHeight(new WidgetPointer(977,2))), 0, 0, new WidgetPointer(977,0));
+			setWidgetSize(getWidgetActualWidth(new WidgetPointer(911,2)), add(add(getWidgetActualHeight(new WidgetPointer(977,0)), 2), getWidgetActualHeight(new WidgetPointer(911,3))), 0, 0, new WidgetPointer(911,2));
+	}
+	script_3451(arg4, 1);
+	script_2918(1);
+	return;
+}

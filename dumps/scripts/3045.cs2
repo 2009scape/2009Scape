@@ -1,0 +1,13 @@
+void script_3045() {
+	switch (cs2method5005()) {
+		case 0:
+			setWidgetText(new WidgetPointer(909,66), "Everybody");
+			break;
+		case 1:
+			setWidgetText(new WidgetPointer(909,66), "Friends");
+			break;
+		case 2:
+			setWidgetText(new WidgetPointer(909,66), "Nobody");
+	}
+	return;
+}

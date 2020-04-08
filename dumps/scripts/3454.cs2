@@ -1,0 +1,52 @@
+void script_3454(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	switch (arg0) {
+		case 1:
+			globalint_1283 = arg1;
+			globalint_1284 = arg2;
+			globalint_1285 = arg3;
+			globalint_1286 = arg4;
+			break;
+		case 2:
+			globalint_1287 = arg1;
+			globalint_1288 = arg2;
+			globalint_1289 = arg3;
+			globalint_1290 = arg4;
+			break;
+		case 3:
+			globalint_1291 = arg1;
+			globalint_1292 = arg2;
+			globalint_1293 = arg3;
+			globalint_1294 = arg4;
+			break;
+		case 4:
+			globalint_1295 = arg1;
+			globalint_1296 = arg2;
+			globalint_1297 = arg3;
+			globalint_1298 = arg4;
+			break;
+		case 5:
+			globalint_1299 = arg1;
+			globalint_1300 = arg2;
+			globalint_1301 = arg3;
+			globalint_1302 = arg4;
+			break;
+		case 6:
+			globalint_1303 = arg1;
+			globalint_1304 = arg2;
+			globalint_1305 = arg3;
+			globalint_1306 = arg4;
+			break;
+		case 7:
+			globalint_1307 = arg1;
+			globalint_1308 = arg2;
+			globalint_1309 = arg3;
+			globalint_1310 = arg4;
+			break;
+		case 8:
+			globalint_1311 = arg1;
+			globalint_1312 = arg2;
+			globalint_1313 = arg3;
+			globalint_1314 = arg4;
+	}
+	return;
+}

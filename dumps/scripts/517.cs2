@@ -1,0 +1,23 @@
+void script_517() {
+	int ivar0;
+	string svar0;
+	svar0 = "<col=ff0000>" + "Lots!";
+	if ((standart_config_1801 >= -1) && (standart_config_1801 < 2147483647)) {
+		svar0 = formatNumber(divide(standart_config_1801, 10), 1);
+	}
+	ivar0 = getTextWidth(495, svar0);
+	setWidgetSize(max(add(ivar0, 38), 90), 106, 0, 0, new WidgetPointer(548,22));
+	setWidgetSize(max(add(ivar0, 40), 90), 106, 0, 0, new WidgetPointer(746,184));
+	setWidgetText(new WidgetPointer(746,201), svar0);
+	setWidgetText(new WidgetPointer(548,38), svar0);
+	if (((boolean)getLanguage())) {
+		setWidgetSprite(3066, new WidgetPointer(548,25));
+		setWidgetSprite(3066, new WidgetPointer(746,188));
+	}
+	if (((boolean)globalint_1602)) {
+	} else {
+		script_3367();
+	}
+	script_3337();
+	return;
+}

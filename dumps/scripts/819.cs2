@@ -1,0 +1,21 @@
+void script_819() {
+	if ((standart_config_1174 != -1) && (standart_config_1174 != 0)) {
+		setWidgetNpcHead(standart_config_1174, new WidgetPointer(663,3));
+	} else {
+		setWidgetModel(-1, new WidgetPointer(663,3));
+	}
+	if (((boolean)bitconfig_1049)) {
+		setWidgetText(new WidgetPointer(663,25), script_821());
+	} else if (standart_config_448 != -1) {
+		setWidgetText(new WidgetPointer(663,25), getItemName(standart_config_448));
+	} else {
+		setWidgetText(new WidgetPointer(663,25), "");
+	}
+	if (bitconfig_4282 > 50) {
+		bitconfig_4282 = subtract(bitconfig_4282, 50);
+		setWidgetAnimation(cs2method_3408(105, 65, 1275, bitconfig_4282), new WidgetPointer(663,3));
+	} else {
+		setWidgetAnimation(cs2method_3408(105, 65, 1276, bitconfig_4282), new WidgetPointer(663,3));
+	}
+	return;
+}

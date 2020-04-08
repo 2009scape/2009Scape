@@ -4,6 +4,7 @@ import org.crandor.ServerConstants;
 import org.crandor.game.interaction.Interaction;
 import org.crandor.game.interaction.MovementPulse;
 import org.crandor.game.interaction.Option;
+import org.crandor.game.interaction.SpecialGroundItems;
 import org.crandor.game.node.Node;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
@@ -288,6 +289,14 @@ public final class InteractionPacket implements IncomingPacket {
 	 */
 	private static void handleGroundItemInteraction(final Player player, int index, int itemId, Location location) {
 		final GroundItem item = GroundItemManager.get(itemId, location, player);
+		SpecialGroundItems[] groundItems = SpecialGroundItems.values();
+		for(SpecialGroundItems specialItem : groundItems){
+			if(specialItem.getItemid() == itemId && specialItem.getLocation().getX() == location.getX() && specialItem.getLocation().getY() == location.getY()){
+				player.debug("Using special ground item handler");
+				specialItem.getInteraction().handle(player,item.getInteraction().get(index));
+				return;
+			}
+		}
 		if (item == null) {
 			PacketRepository.send(ClearMinimapFlag.class, new PlayerContext(player));
 			return;

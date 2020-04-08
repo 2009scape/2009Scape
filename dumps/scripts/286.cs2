@@ -1,0 +1,23 @@
+void script_286(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,string arg6) {
+	if (arg0 != 1) {
+		return;
+	}
+	if (setWidgetRegister(new WidgetPointer(arg1), arg2)) {
+		setWidgetContextMenuOption(1, arg6);
+	}
+	if (setWidgetRegister(new WidgetPointer(arg1), arg3)) {
+		setWidgetContextMenuOption(1, arg6);
+	}
+	if (setWidgetRegister(new WidgetPointer(arg1), arg4)) {
+		if (((boolean)arg5)) {
+			setWidgetHidden(0);
+		} else {
+			setWidgetHidden(1);
+		}
+	}
+	if (arg2 == 11) {
+		cs2method5231(950, arg5);
+	}
+	playSoundEffect(2266, 1, 0);
+	return;
+}

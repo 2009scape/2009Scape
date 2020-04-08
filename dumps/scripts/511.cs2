@@ -1,0 +1,9 @@
+void script_511() {
+	if (globalint_51 > 170) {
+		globalint_51 = subtract(globalint_51, 1);
+		setWidget3DRotation(0, 0, 0, 0, 0, globalint_51, new WidgetPointer(605,0));
+	} else {
+		setWidgetModel(-1, new WidgetPointer(605,0));
+	}
+	return;
+}

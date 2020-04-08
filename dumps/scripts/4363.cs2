@@ -1,0 +1,54 @@
+void script_4363(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,string arg7,long arg8) {
+	setWidgetText(new WidgetPointer(1099,109), arg7);
+	setWidgetSprite(5933, new WidgetPointer(arg1));
+	if (arg8 != -1L) {
+		setScriptCallOnClickContextMenu(4330, arg8, "\u00a7", new WidgetPointer(1099,165));
+		setWidgetIsHidden(true, new WidgetPointer(1099,168));
+	} else {
+		setWidgetNoOptions(new WidgetPointer(1099,165));
+		setWidgetIsHidden(false, new WidgetPointer(1099,168));
+	}
+	if (cs2method3700()) {
+		if (((script_4616(arg2, arg3) > 0) && (arg4 > 0)) && ((arg5 > 0) && (arg6 > 0))) {
+			setWidgetIsHidden(false, new WidgetPointer(1099,110));
+		}
+		script_4621(72024064);
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1099,110));
+	}
+	standart_config_2128 = arg0;
+	switch (arg0) {
+		case 1:
+			setWidgetSprite(5935, new WidgetPointer(1099,6));
+			break;
+		case 2:
+			setWidgetSprite(5935, new WidgetPointer(1099,125));
+			break;
+		case 3:
+			setWidgetSprite(5935, new WidgetPointer(1099,128));
+			break;
+		case 4:
+			setWidgetSprite(5935, new WidgetPointer(1099,131));
+			break;
+		case 5:
+			setWidgetSprite(5935, new WidgetPointer(1099,134));
+			break;
+		case 6:
+			setWidgetSprite(5935, new WidgetPointer(1099,137));
+			break;
+		case 7:
+			setWidgetSprite(5935, new WidgetPointer(1099,140));
+			break;
+		case 8:
+			setWidgetSprite(5935, new WidgetPointer(1099,143));
+	}
+	script_4624(72024070, 1);
+	script_4624(72024189, 2);
+	script_4624(72024192, 3);
+	script_4624(72024195, 4);
+	script_4624(72024198, 5);
+	script_4624(72024201, 6);
+	script_4624(72024204, 7);
+	script_4624(72024207, 8);
+	return;
+}

@@ -1,0 +1,14 @@
+void script_2113(int arg0) {
+	setWidget3DRotation(0, 0, rndExcl(2048), rndExcl(2048), rndExcl(2048), getWidget3DDistance(new WidgetPointer(arg0)), new WidgetPointer(arg0));
+	switch (rndExcl(3)) {
+		case 0:
+			setScriptCallOnGameloop(66, add(rndExcl(3), 9), 0, add(rndExcl(3), 9), new WidgetPointer(arg0), "iiiI", new WidgetPointer(arg0));
+			break;
+		case 1:
+			setScriptCallOnGameloop(66, add(rndExcl(3), 9), add(rndExcl(3), 9), 0, new WidgetPointer(arg0), "iiiI", new WidgetPointer(arg0));
+			break;
+		default:
+			setScriptCallOnGameloop(66, 0, add(rndExcl(3), 9), add(rndExcl(3), 9), new WidgetPointer(arg0), "iiiI", new WidgetPointer(arg0));
+	}
+	return;
+}

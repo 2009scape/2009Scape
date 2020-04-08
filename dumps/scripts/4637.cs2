@@ -1,0 +1,79 @@
+void script_4637(int arg0) {
+	int ivar1;
+	int ivar2;
+	string svar0;
+	svar0 = "";
+	setWidgetIsHidden(false, new WidgetPointer(153,52));
+	setWidgetText(new WidgetPointer(153,50), "");
+	switch (arg0) {
+		case 1:
+			if (isWidgetHidden(new WidgetPointer(153,102))) {
+				return;
+			}
+			svar0 = "Three's Company" + "<br>" + "<br>";
+			if (((boolean)script_4643(1))) {
+				svar0 = concat(svar0, "<col=cb6b3d>" + "Attack 30, Ranged 30, Magic 30 required to play the unabridged version." + "<br>" + "<br>");
+			}
+			svar0 = concat(svar0, "Manage a party of adventurers in this saga. " + "<br>" + "<br>" + "+ Select 'Switch' to change to a target character. " + "<br>" + "+ Select 'Mark' on an enemy to focus your allies' attacks on that target." + "<br>" + "+ Human enemies will focus their attacks on you, animals will attack your allies.");
+			createExtraChild(new WidgetPointer(153,42), 4, 0);
+			break;
+		case 2:
+			if (isWidgetHidden(new WidgetPointer(153,115))) {
+				return;
+			}
+			svar0 = "Vengeance" + "<br>" + "<br>";
+			if (((boolean)script_4643(2))) {
+				svar0 = concat(svar0, "<col=cb6b3d>" + "Agility 55, Thieving 55 required to play the unabridged version." + "<br>" + "<br>");
+			}
+			svar0 = concat(svar0, "A tragic tale of grief, warped into furious vengeance." + "<br>" + "<br>" + "+ At some point in this saga, you will become poisoned. Keep an eye on your health. You will not take poison damage whilst in a conversation." + "<br>" + "+ Look for alternative methods of defeating your human foes. Your environment may offer more indirect solutions." + "<br>" + "+ Hellhounds will drop antipoison elixirs that will lessen your suffering temporarily." + "<br>" + "+ Spiders drop food, but their bites may negate the effect of an antipoison elixir." + "<br>" + "+ Choices you make in the saga will lead you towards 'noble' or 'ruthless' vengeance. Each has a different special attack. The further along that path you are, the more potent the special attack.");
+			break;
+		case 3:
+			if (isWidgetHidden(new WidgetPointer(153,141))) {
+				return;
+			}
+			svar0 = "Learn the story behind the lonely death of Tobias Scutter, adventurer.";
+			break;
+		case 4:
+			if (isWidgetHidden(new WidgetPointer(153,128))) {
+				return;
+			}
+			svar0 = "Thok It To 'Em" + "<br>" + "<br>";
+			if (((boolean)script_4643(4))) {
+				svar0 = concat(svar0, "<col=cb6b3d>" + "Stregth 70 required to play the unabridged version." + "<br>" + "<br>");
+			}
+			svar0 = concat(svar0, "Control mighty Thok, Fremennik warrior." + "<br>" + "<br>" + "+ Thok heals damage and recovers special attack by killing enemies. Bosses provide greater health and special attack boosts than normal enemies." + "<br>" + "+ Thok can eat food raw. He likes the taste." + "<br>" + "+ Thok will randomly choose a special attack when you perform one. These include the awe-inspiring 'Northern Kiss'.");
+			break;
+		case 5:
+			if (isWidgetHidden(new WidgetPointer(153,169))) {
+				return;
+			}
+			svar0 = "Love stories are so often tied to tragedy, and few are as tragic as this tale of two sorcerors.";
+			break;
+		case 6:
+			if (isWidgetHidden(new WidgetPointer(153,155))) {
+				return;
+			}
+			svar0 = "Sometimes it's good to be bad. The necrolord is a twisted and cruel individual with dark aspirations.";
+	}
+	setWidgetText(new WidgetPointer(153,44), svar0);
+	ivar1 = getLineCount(366, 495, svar0);
+	ivar2 = multiply(ivar1, 15);
+	if (setWidgetRegister(new WidgetPointer(153,42), 0)) {
+		if (((boolean)arg0)) {
+			setWidgetPosition(5, add(ivar2, 7), 0, 0);
+			setWidgetSize(366, 15, 0, 0);
+			setWidgetTextAlignment(1, 1, 0);
+			svar0 = "All three characters must survive.";
+			setWidgetText(svar0);
+			setWidgetFont(496);
+			setWidgetRGB(new Color(203, 107, 61));
+			ivar2 = add(ivar2, 24);
+		} else {
+			deleteExtraChild();
+		}
+	}
+	setWidgetScrollMax(0, ivar2, new WidgetPointer(153,42));
+	script_72(10027051, 10027050, 0);
+	script_4638(arg0);
+	return;
+}

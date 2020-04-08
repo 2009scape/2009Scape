@@ -1,0 +1,24 @@
+void script_2918(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = 0;
+	ivar2 = 33;
+	if (((boolean)arg0)) {
+		return;
+	}
+	ivar2 = 30;
+	if (getWidgetActualHeight(new WidgetPointer(882,4)) < add(getWidgetActualHeight(new WidgetPointer(882,22)), 146)) {
+		setWidgetPosition(0, 0, 1, 1, new WidgetPointer(882,8));
+		setWidgetPosition(0, add(getWidgetActualY(new WidgetPointer(882,8)), ivar2), 1, 0, new WidgetPointer(882,22));
+		setWidgetIsHidden(true, new WidgetPointer(744,23));
+	} else {
+		ivar1 = add(getWidgetActualY(new WidgetPointer(744,23)), getWidgetActualHeight(new WidgetPointer(744,23)));
+		setWidgetPosition(0, 0, 1, 1, new WidgetPointer(882,8));
+		if (subtract(getWidgetActualY(new WidgetPointer(882,8)), 2) < ivar1) {
+			setWidgetPosition(0, add(ivar1, 2), 1, 0, new WidgetPointer(882,8));
+		}
+		setWidgetPosition(0, add(getWidgetActualY(new WidgetPointer(882,8)), ivar2), 1, 0, new WidgetPointer(882,22));
+		setWidgetIsHidden(false, new WidgetPointer(744,23));
+	}
+	return;
+}

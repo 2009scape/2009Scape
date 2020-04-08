@@ -1,0 +1,94 @@
+void script_1135(int arg0) {
+	int ivar1;
+	flow_0:
+		ivar1 = script_284(getMyPositionHash());
+		SWITCH (globalint_1007) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_2
+			case 3:
+				 GOTO flow_3
+			case 4:
+				 GOTO flow_4
+			case 5:
+				 GOTO flow_8
+			case 6:
+				 GOTO flow_12
+			case 7:
+				 GOTO flow_16
+			case 8:
+				 GOTO flow_20
+		}
+		deleteAllExtraChilds(new WidgetPointer(arg0));
+		cs2method5512();
+		GOTO	flow_21
+	flow_1:
+		script_2766(16777215, 50, arg0);
+		playSoundEffect(3641, 1, 0);
+		GOTO	flow_21
+	flow_2:
+		cs2method5405(0, 2);
+		cs2method5405(1, 2);
+		cs2method5406(0, 0, script_1145(25, 25, ivar1), 750, script_1145(25, 25, ivar1), 750, 0);
+		cs2method5406(0, 1, script_1145(25, 26, ivar1), 750, script_1145(25, 26, ivar1), 750, 0);
+		cs2method5406(1, 0, script_1145(25, 29, ivar1), 600, script_1145(25, 29, ivar1), 600, 0);
+		cs2method5406(1, 1, script_1145(25, 30, ivar1), 600, script_1145(25, 30, ivar1), 600, 0);
+		cameraMethod5502(0, 0, 100, 0, 1, 0);
+		script_2768(45, arg0);
+		playSoundEffect(3641, 1, 0);
+		GOTO	flow_21
+	flow_3:
+		cs2method5405(0, 7);
+		cs2method5405(1, 7);
+		cs2method5406(0, 0, script_1145(25, 26, ivar1), 750, script_1145(25, 26, ivar1), 1200, 0);
+		cs2method5406(0, 1, script_1145(16, 9, ivar1), 2175, script_1145(18, 11, ivar1), 2175, 0);
+		cs2method5406(0, 2, script_1145(31, 9, ivar1), 2275, script_1145(31, 9, ivar1), 2450, 0);
+		cs2method5406(0, 3, script_1145(39, 20, ivar1), 1950, script_1145(39, 20, ivar1), 1950, 0);
+		cs2method5406(0, 4, script_1145(40, 34, ivar1), 1550, script_1145(40, 34, ivar1), 1550, 0);
+		cs2method5406(0, 5, script_1145(31, 40, ivar1), 1125, script_1145(31, 40, ivar1), 1125, 0);
+		cs2method5406(0, 6, script_1145(24, 38, ivar1), 900, script_1145(24, 38, ivar1), 900, 0);
+		cs2method5406(1, 0, script_1145(25, 30, ivar1), 600, script_1145(25, 30, ivar1), 600, 0);
+		cs2method5406(1, 1, script_1145(25, 23, ivar1), 1150, script_1145(25, 23, ivar1), 1150, 0);
+		cs2method5406(1, 2, script_1145(25, 23, ivar1), 1150, script_1145(25, 23, ivar1), 1150, 0);
+		cs2method5406(1, 3, script_1145(25, 23, ivar1), 950, script_1145(25, 23, ivar1), 950, 0);
+		cs2method5406(1, 4, script_1145(25, 23, ivar1), 950, script_1145(25, 23, ivar1), 950, 0);
+		cs2method5406(1, 5, script_1145(25, 23, ivar1), 850, script_1145(25, 23, ivar1), 850, 0);
+		cs2method5406(1, 6, script_1145(26, 23, ivar1), 725, script_1145(26, 23, ivar1), 725, 0);
+		cameraMethod5502(0, 0, 800, 400, 1, 0);
+		GOTO	flow_21
+	flow_4:
+		if (cs2method5407(0) == 7) {
+			cameraMethod5502(0, 1, 400, 400, 1, 1);
+		} else {
+			cs2method5512();
+		}
+		GOTO	flow_21
+	flow_8:
+		if (cs2method5407(0) == 7) {
+			cameraMethod5502(0, 2, 400, 400, 1, 2);
+		} else {
+			cs2method5512();
+		}
+		GOTO	flow_21
+	flow_12:
+		if (cs2method5407(0) == 7) {
+			cameraMethod5502(0, 3, 400, 400, 1, 3);
+		} else {
+			cs2method5512();
+		}
+		GOTO	flow_21
+	flow_16:
+		if (cs2method5407(0) == 7) {
+			cameraMethod5502(0, 4, 400, 600, 1, 4);
+			setScriptCallOnMinimapRelatedSetting3(1144, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+		} else {
+			cs2method5512();
+		}
+		GOTO	flow_21
+	flow_20:
+		script_2768(50, arg0);
+		playSoundEffect(3641, 1, 0);
+	flow_21:
+		return;
+}

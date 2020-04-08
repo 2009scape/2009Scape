@@ -1,0 +1,14 @@
+void script_2862() {
+	if (((boolean)globalint_1074)) {
+		if (globalint_1071 == 19) {
+			globalint_1071 = 0;
+		} else {
+			globalint_1071 = add(globalint_1071, 1);
+		}
+	} else if (((boolean)globalint_1074)) {
+		globalint_1072 = addToCoordinate(globalint_1072, 1, 0, 0);
+	} else {
+		cs2method5509();
+	}
+	return;
+}

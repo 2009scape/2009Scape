@@ -1,0 +1,26 @@
+void script_2838() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = subtract(extractX(getMyPositionHash()), mod(extractX(getMyPositionHash()), 64));
+	ivar1 = subtract(extractY(getMyPositionHash()), mod(extractY(getMyPositionHash()), 64));
+	ivar2 = addToCoordinate(0, ivar0, 0, ivar1);
+	cs2method5405(0, 6);
+	cs2method5405(1, 6);
+	cs2method5406(0, 0, script_2808(ivar2, 54662856, 55072469), 1025, script_2808(ivar2, 54662856, 55072469), 790, 0);
+	cs2method5406(1, 0, script_2808(ivar2, 54662856, 55072472), 355, script_2808(ivar2, 54662856, 55072472), 265, 0);
+	cs2method5406(0, 1, script_2808(ivar2, 54662856, 55072482), 506, script_2808(ivar2, 54662856, 55072482), 506, 0);
+	cs2method5406(1, 1, script_2808(ivar2, 54662856, 55072485), 190, script_2808(ivar2, 54662856, 55072485), 190, 0);
+	cs2method5406(0, 2, script_2808(ivar2, 54662856, 55072479), 506, script_2808(ivar2, 54662856, 55072479), 506, 0);
+	cs2method5406(1, 2, script_2808(ivar2, 54662856, 55072484), 195, script_2808(ivar2, 54662856, 55072484), 210, 0);
+	cs2method5406(0, 3, script_2808(ivar2, 54662856, 55072476), 506, script_2808(ivar2, 54662856, 55072475), 506, 0);
+	cs2method5406(1, 3, script_2808(ivar2, 54662856, 55072479), 115, script_2808(ivar2, 54662856, 55072478), 70, 0);
+	cs2method5406(0, 4, script_2808(ivar2, 54662856, 55072474), 506, script_2808(ivar2, 54662856, 55072473), 506, 0);
+	cs2method5406(1, 4, script_2808(ivar2, 54662856, 55072478), 240, script_2808(ivar2, 54662856, 55072477), 330, 0);
+	cs2method5406(0, 5, script_2808(ivar2, 54662856, 55072472), 506, script_2808(ivar2, 54662856, 55072471), 506, 0);
+	cs2method5406(1, 5, script_2808(ivar2, 54662856, 55072485), 350, script_2808(ivar2, 54662856, 55072487), 350, 0);
+	globalint_1068 = 0;
+	setScriptCallOnMinimapRelatedSetting3(2840, "", new WidgetPointer(384,0));
+	cameraMethod5502(0, globalint_1068, 100, 100, 1, globalint_1068);
+	return;
+}

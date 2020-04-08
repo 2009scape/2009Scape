@@ -1,0 +1,60 @@
+void script_4230(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	if (arg0 < 1) {
+		setWidgetModel(20542, new WidgetPointer(495,2));
+		setWidgetModel(20542, new WidgetPointer(495,15));
+		setWidgetModel(20542, new WidgetPointer(495,28));
+		setWidgetModel(20542, new WidgetPointer(495,41));
+	} else {
+		setWidgetModel(20544, new WidgetPointer(495,2));
+		setWidgetModel(20544, new WidgetPointer(495,15));
+		setWidgetModel(20544, new WidgetPointer(495,28));
+		setWidgetModel(20544, new WidgetPointer(495,41));
+	}
+	if (arg1 < 1) {
+		setWidgetModel(20542, new WidgetPointer(495,3));
+		setWidgetModel(20542, new WidgetPointer(495,16));
+		setWidgetModel(20542, new WidgetPointer(495,29));
+		setWidgetModel(20542, new WidgetPointer(495,42));
+	} else {
+		setWidgetModel(20545, new WidgetPointer(495,3));
+		setWidgetModel(20545, new WidgetPointer(495,16));
+		setWidgetModel(20545, new WidgetPointer(495,29));
+		setWidgetModel(20545, new WidgetPointer(495,42));
+	}
+	if (arg2 < 1) {
+		setWidgetModel(20542, new WidgetPointer(495,4));
+		setWidgetModel(20542, new WidgetPointer(495,17));
+		setWidgetModel(20542, new WidgetPointer(495,30));
+		setWidgetModel(20542, new WidgetPointer(495,43));
+	} else {
+		setWidgetModel(20543, new WidgetPointer(495,4));
+		setWidgetModel(20543, new WidgetPointer(495,17));
+		setWidgetModel(20543, new WidgetPointer(495,30));
+		setWidgetModel(20543, new WidgetPointer(495,43));
+	}
+	if (arg4 != 10) {
+		setWidgetModel(20542, new WidgetPointer(495,53));
+	} else {
+		if (arg3 < 1) {
+			setWidgetModel(20542, new WidgetPointer(495,53));
+		}
+	}
+	setWidgetText(new WidgetPointer(495,57), intToStr(arg0));
+	setWidgetText(new WidgetPointer(495,60), intToStr(arg0));
+	setWidgetText(new WidgetPointer(495,63), intToStr(arg0));
+	setWidgetText(new WidgetPointer(495,66), intToStr(arg0));
+	setWidgetText(new WidgetPointer(495,58), intToStr(arg1));
+	setWidgetText(new WidgetPointer(495,61), intToStr(arg1));
+	setWidgetText(new WidgetPointer(495,64), intToStr(arg1));
+	setWidgetText(new WidgetPointer(495,67), intToStr(arg1));
+	setWidgetText(new WidgetPointer(495,59), intToStr(arg2));
+	setWidgetText(new WidgetPointer(495,62), intToStr(arg2));
+	setWidgetText(new WidgetPointer(495,65), intToStr(arg2));
+	setWidgetText(new WidgetPointer(495,68), intToStr(arg2));
+	if (arg4 != 10) {
+		setWidgetText(new WidgetPointer(495,69), "0");
+	} else {
+		setWidgetText(new WidgetPointer(495,69), intToStr(arg3));
+	}
+	return;
+}

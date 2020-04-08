@@ -1,0 +1,136 @@
+void script_1309(int arg0) {
+	int ivar1;
+	ivar1 = script_1305();
+	if (((boolean)arg0)) {
+		if (ivar1 != 0) {
+			setWidgetSprite(-1, new WidgetPointer(746,39));
+			setWidgetSprite(-1, new WidgetPointer(746,132));
+			setWidgetSprite(-1, new WidgetPointer(746,133));
+		}
+		if (ivar1 != 2) {
+			setWidgetSprite(-1, new WidgetPointer(746,40));
+			setWidgetSprite(-1, new WidgetPointer(746,134));
+			setWidgetSprite(-1, new WidgetPointer(746,135));
+		}
+		if (ivar1 != 3) {
+			setWidgetSprite(-1, new WidgetPointer(746,41));
+			setWidgetSprite(-1, new WidgetPointer(746,136));
+			setWidgetSprite(-1, new WidgetPointer(746,137));
+		}
+		if (ivar1 != 1) {
+			setWidgetSprite(-1, new WidgetPointer(746,42));
+			setWidgetSprite(-1, new WidgetPointer(746,138));
+			setWidgetSprite(-1, new WidgetPointer(746,139));
+		}
+		if (ivar1 != 4) {
+			setWidgetSprite(-1, new WidgetPointer(746,43));
+			setWidgetSprite(-1, new WidgetPointer(746,140));
+			setWidgetSprite(-1, new WidgetPointer(746,141));
+		}
+		if (ivar1 != 5) {
+			setWidgetSprite(-1, new WidgetPointer(746,44));
+			setWidgetSprite(-1, new WidgetPointer(746,142));
+			setWidgetSprite(-1, new WidgetPointer(746,143));
+		}
+		if (ivar1 != 6) {
+			setWidgetSprite(-1, new WidgetPointer(746,45));
+			setWidgetSprite(-1, new WidgetPointer(746,144));
+			setWidgetSprite(-1, new WidgetPointer(746,145));
+		}
+		if (ivar1 != 7) {
+			setWidgetSprite(-1, new WidgetPointer(746,46));
+			setWidgetSprite(-1, new WidgetPointer(746,146));
+			setWidgetSprite(-1, new WidgetPointer(746,147));
+		}
+		if (ivar1 != 8) {
+			setWidgetSprite(-1, new WidgetPointer(746,47));
+			setWidgetSprite(-1, new WidgetPointer(746,148));
+			setWidgetSprite(-1, new WidgetPointer(746,149));
+		}
+		if (ivar1 != 9) {
+			setWidgetSprite(-1, new WidgetPointer(746,48));
+			setWidgetSprite(-1, new WidgetPointer(746,150));
+			setWidgetSprite(-1, new WidgetPointer(746,151));
+		}
+		if (ivar1 != 10) {
+			setWidgetSprite(-1, new WidgetPointer(746,49));
+			setWidgetSprite(-1, new WidgetPointer(746,152));
+			setWidgetSprite(-1, new WidgetPointer(746,153));
+		}
+		if (ivar1 != 11) {
+			setWidgetSprite(-1, new WidgetPointer(746,50));
+			setWidgetSprite(-1, new WidgetPointer(746,154));
+			setWidgetSprite(-1, new WidgetPointer(746,155));
+		}
+		if (ivar1 != 12) {
+			setWidgetSprite(-1, new WidgetPointer(746,51));
+			setWidgetSprite(-1, new WidgetPointer(746,156));
+			setWidgetSprite(-1, new WidgetPointer(746,157));
+		}
+		if (ivar1 != 13) {
+			setWidgetSprite(-1, new WidgetPointer(746,52));
+			setWidgetSprite(-1, new WidgetPointer(746,158));
+			setWidgetSprite(-1, new WidgetPointer(746,159));
+		}
+		if (ivar1 != 14) {
+			setWidgetSprite(-1, new WidgetPointer(746,53));
+			setWidgetSprite(-1, new WidgetPointer(746,160));
+			setWidgetSprite(-1, new WidgetPointer(746,161));
+		}
+		if (ivar1 != 15) {
+			setWidgetSprite(-1, new WidgetPointer(746,54));
+			setWidgetSprite(-1, new WidgetPointer(746,162));
+			setWidgetSprite(-1, new WidgetPointer(746,163));
+		}
+	} else {
+		setWidgetSprite(-1, new WidgetPointer(746,39));
+		setWidgetSprite(-1, new WidgetPointer(746,132));
+		setWidgetSprite(-1, new WidgetPointer(746,133));
+		setWidgetSprite(-1, new WidgetPointer(746,40));
+		setWidgetSprite(-1, new WidgetPointer(746,134));
+		setWidgetSprite(-1, new WidgetPointer(746,135));
+		setWidgetSprite(-1, new WidgetPointer(746,41));
+		setWidgetSprite(-1, new WidgetPointer(746,136));
+		setWidgetSprite(-1, new WidgetPointer(746,137));
+		setWidgetSprite(-1, new WidgetPointer(746,42));
+		setWidgetSprite(-1, new WidgetPointer(746,138));
+		setWidgetSprite(-1, new WidgetPointer(746,139));
+		setWidgetSprite(-1, new WidgetPointer(746,43));
+		setWidgetSprite(-1, new WidgetPointer(746,140));
+		setWidgetSprite(-1, new WidgetPointer(746,141));
+		setWidgetSprite(-1, new WidgetPointer(746,44));
+		setWidgetSprite(-1, new WidgetPointer(746,142));
+		setWidgetSprite(-1, new WidgetPointer(746,143));
+		setWidgetSprite(-1, new WidgetPointer(746,45));
+		setWidgetSprite(-1, new WidgetPointer(746,144));
+		setWidgetSprite(-1, new WidgetPointer(746,145));
+		setWidgetSprite(-1, new WidgetPointer(746,46));
+		setWidgetSprite(-1, new WidgetPointer(746,146));
+		setWidgetSprite(-1, new WidgetPointer(746,147));
+		setWidgetSprite(-1, new WidgetPointer(746,47));
+		setWidgetSprite(-1, new WidgetPointer(746,148));
+		setWidgetSprite(-1, new WidgetPointer(746,149));
+		setWidgetSprite(-1, new WidgetPointer(746,48));
+		setWidgetSprite(-1, new WidgetPointer(746,150));
+		setWidgetSprite(-1, new WidgetPointer(746,151));
+		setWidgetSprite(-1, new WidgetPointer(746,49));
+		setWidgetSprite(-1, new WidgetPointer(746,152));
+		setWidgetSprite(-1, new WidgetPointer(746,153));
+		setWidgetSprite(-1, new WidgetPointer(746,50));
+		setWidgetSprite(-1, new WidgetPointer(746,154));
+		setWidgetSprite(-1, new WidgetPointer(746,155));
+		setWidgetSprite(-1, new WidgetPointer(746,51));
+		setWidgetSprite(-1, new WidgetPointer(746,156));
+		setWidgetSprite(-1, new WidgetPointer(746,157));
+		setWidgetSprite(-1, new WidgetPointer(746,52));
+		setWidgetSprite(-1, new WidgetPointer(746,158));
+		setWidgetSprite(-1, new WidgetPointer(746,159));
+		setWidgetSprite(-1, new WidgetPointer(746,53));
+		setWidgetSprite(-1, new WidgetPointer(746,160));
+		setWidgetSprite(-1, new WidgetPointer(746,161));
+		setWidgetSprite(-1, new WidgetPointer(746,54));
+		setWidgetSprite(-1, new WidgetPointer(746,162));
+		setWidgetSprite(-1, new WidgetPointer(746,163));
+	}
+	return;
+}

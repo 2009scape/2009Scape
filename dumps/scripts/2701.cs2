@@ -1,0 +1,24 @@
+void script_2701(int arg0,int arg1,int arg2) {
+	if (((boolean)getDisplayMode())) {
+		openInterface(35913749, 883);
+	} else {
+		openInterface(48889939, 883);
+	}
+	setWidgetIsHidden(false, new WidgetPointer(746,83));
+	setWidgetIsHidden(false, new WidgetPointer(548,21));
+	script_1151(57868306);
+	script_1151(57868309);
+	setScriptCallOnMouseEntered(2702, 1, new WidgetPointer(883,18), new WidgetPointer(883,19), "1II", new WidgetPointer(883,17));
+	setScriptCallOnMouseExit(2702, 0, new WidgetPointer(883,18), new WidgetPointer(883,19), "1II", new WidgetPointer(883,17));
+	setScriptCallOnMouseEntered(2702, 1, new WidgetPointer(883,21), new WidgetPointer(883,22), "1II", new WidgetPointer(883,20));
+	setScriptCallOnMouseExit(2702, 0, new WidgetPointer(883,21), new WidgetPointer(883,22), "1II", new WidgetPointer(883,20));
+	setScriptCallOnMousePressed(2704, 1, arg0, 1, arg1, arg2, "1ii11", new WidgetPointer(883,17));
+	setScriptCallOnMousePressed(2704, 0, arg0, 1, arg1, arg2, "1ii11", new WidgetPointer(883,20));
+	setWidgetIsHidden(false, new WidgetPointer(548,191));
+	setWidgetIsHidden(false, new WidgetPointer(548,69));
+	setWidgetIsHidden(false, new WidgetPointer(548,194));
+	setWidgetIsHidden(false, new WidgetPointer(548,203));
+	setWidgetIsHidden(false, new WidgetPointer(548,163));
+	setWidgetIsHidden(false, new WidgetPointer(548,115));
+	return;
+}

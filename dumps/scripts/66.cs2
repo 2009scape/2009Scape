@@ -1,0 +1,4 @@
+void script_66(int arg0,int arg1,int arg2,int arg3) {
+	setWidget3DRotation(0, 0, bitAnd(add(getWidgetRotateX(new WidgetPointer(arg3)), arg0), 2047), bitAnd(add(getWidgetRotateY(new WidgetPointer(arg3)), arg1), 2047), bitAnd(add(cs2method2607(new WidgetPointer(arg3)), arg2), 2047), getWidget3DDistance(new WidgetPointer(arg3)), new WidgetPointer(arg3));
+	return;
+}

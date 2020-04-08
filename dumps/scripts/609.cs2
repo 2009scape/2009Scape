@@ -1,0 +1,9 @@
+void script_609() {
+	if (globalint_83 <= 0) {
+		globalint_83 = 100;
+	} else {
+		globalint_83 = add(globalint_83, 10);
+	}
+	setScriptCallOnGameloop(610, "", new WidgetPointer(105,153));
+	return;
+}

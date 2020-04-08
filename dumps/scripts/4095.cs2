@@ -1,0 +1,28 @@
+void script_4095(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	ivar5 = getWidgetActualWidth(new WidgetPointer(arg1));
+	ivar6 = add(arg2, divide(subtract(getWidgetActualWidth(new WidgetPointer(746,130)), ivar5), 2));
+	ivar7 = 0;
+	ivar8 = 0;
+	if (((boolean)arg4)) {
+		ivar7 = subtract(add(ivar6, ivar5), script_3365(48889942));
+		if (ivar7 > 0) {
+			ivar8 = min(ivar7, divide(getWidgetActualWidth(new WidgetPointer(746,40)), 2));
+			ivar6 = subtract(ivar6, ivar8);
+			ivar7 = subtract(ivar7, ivar8);
+			if (ivar7 > 0) {
+				ivar8 = min(ivar7, subtract(divide(subtract(ivar5, getWidgetActualWidth()), 2), 4));
+				ivar6 = subtract(ivar6, ivar8);
+			} else {
+				ivar8 = 0;
+			}
+		}
+	}
+	setWidgetPosition(ivar8, 0, 1, 2);
+	setWidgetPosition(ivar6, subtract(add(arg3, 5), getWidgetActualHeight(new WidgetPointer(arg1))), 0, 0, new WidgetPointer(arg1));
+	setScriptCallOnGameloop(4094, new WidgetPointer(arg0), new WidgetPointer(arg1), getWidgetCustomChildArrayIndex(), arg2, arg3, arg4, "IIiii1", new WidgetPointer(arg0));
+	return;
+}

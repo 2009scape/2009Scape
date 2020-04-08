@@ -25,7 +25,7 @@ public class ReadSignPostPlugin extends OptionHandler {
 	 * @author 'Vexia
 	 */
 	public enum Signs {
-		NEAR_LUMBRIDGE(18493, "North to farms and<br> Varrock.", "The River Lum lies to<br> the south.", "West to<br>Lumbridge.", "East to Al<br>Kharid - toll<br>gate; bring some<br>money."), NEAR_VARROCK(24263, "Varrock", "Lumbridge", "Draynor Manor", "Dig Site");
+		NEAR_LUMBRIDGE(18493, "North to farms and<br> Varrock.", "The River Lum lies to<br> the south.", "West to<br>Lumbridge.", "East to Al<br>Kharid - toll<br>gate; bring some<br>money."), NEAR_VARROCK(24263, "Sheep lay this way.", "South through farms<br> to Al Kharid and<br> Lumbridge", "West to Champion's Guild<br> and Varrock south<br> gate.", "East to Al Kharid mine and<br> follow the path north to<br> Varrock east gate.");
 
 		public static Signs forId(int id) {
 			for (Signs sign : Signs.values()) {
@@ -76,10 +76,17 @@ public class ReadSignPostPlugin extends OptionHandler {
 		if (sign == null) {
 			return false;
 		}
-		player.getPacketDispatch().sendString(sign.directions[0], 135, 3); // North
-		player.getPacketDispatch().sendString(sign.directions[1], 135, 9); // South
-		player.getPacketDispatch().sendString(sign.directions[2], 135, 12); // West
-		player.getPacketDispatch().sendString(sign.directions[3], 135, 8); // East
+		String[] dirs = sign.directions;
+		if (object.getLocation().getX() == 3107 && object.getLocation().getY() == 3296) {
+			dirs[0] = "North to Draynor<br> Manor";
+			dirs[1] = "South to Draynor<br> Village";
+			dirs[2] = "West to Port<br> Sarim";
+			dirs[3] = "East to<br> Lumbridge";
+		}
+		player.getPacketDispatch().sendString(dirs[0], 135, 3); // North
+		player.getPacketDispatch().sendString(dirs[1], 135, 9); // South
+		player.getPacketDispatch().sendString(dirs[2], 135, 12); // West
+		player.getPacketDispatch().sendString(dirs[3], 135, 8); // East
 		return true;
 	}
 
@@ -108,7 +115,7 @@ public class ReadSignPostPlugin extends OptionHandler {
 		ObjectDefinition.forId(31298).getConfigurations().put("option:read", this);
 		ObjectDefinition.forId(31299).getConfigurations().put("option:read", this);
 		ObjectDefinition.forId(31300).getConfigurations().put("option:read", this);
-		ObjectDefinition.forId(31301).getConfigurations().put("option:read", this);
+//		ObjectDefinition.forId(31301).getConfigurations().put("option:read", this);//goblin village
 		return this;
 	}
 }

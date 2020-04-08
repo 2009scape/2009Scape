@@ -1,0 +1,9 @@
+void script_4231(int arg0) {
+	if (setWidgetRegister(new WidgetPointer(arg0))) {
+		setScriptCallOnMousePressed(4209, new WidgetPointer(arg0), 0, "Ii");
+		setScriptCallOnMouseDraggedOver(4209, new WidgetPointer(arg0), 0, "Ii");
+		setScriptCallOnMouseReleased(4209, new WidgetPointer(arg0), 1, "Ii");
+		cs2method2103(255);
+	}
+	return;
+}

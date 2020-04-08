@@ -1,0 +1,60 @@
+void script_3677(int arg0,int arg1) {
+	int ivar2;
+	string svar0;
+	ivar2 = 0;
+	switch (arg0) {
+		case 65929230:
+			ivar2 = globalint_1336;
+			break;
+		case 65929231:
+			ivar2 = globalint_1337;
+			break;
+		case 65929232:
+			ivar2 = globalint_1338;
+			break;
+		case 65929233:
+			ivar2 = globalint_1339;
+			break;
+		case 65929234:
+			ivar2 = globalint_1340;
+			break;
+		case 65929235:
+			ivar2 = globalint_1341;
+			break;
+		case 65929236:
+			ivar2 = globalint_1342;
+			break;
+		case 65929237:
+			ivar2 = globalint_1343;
+			break;
+		case 65929238:
+			ivar2 = globalint_1344;
+			break;
+		case 65929239:
+			ivar2 = globalint_1345;
+			break;
+		case 65929240:
+			ivar2 = globalint_1346;
+			break;
+		case 65929241:
+			ivar2 = globalint_1347;
+			break;
+		case 65929242:
+			ivar2 = globalint_1348;
+			break;
+		case 65929243:
+			ivar2 = globalint_1349;
+			break;
+		case 65929244:
+			ivar2 = globalint_1350;
+			break;
+		case 65929245:
+			ivar2 = globalint_1605;
+			break;
+		case 65929246:
+			ivar2 = globalint_1351;
+	}
+	svar0 = "Current price: " + script_940(ivar2) + " gp";
+	script_569(arg0, arg1, 65929265, 25, getWidgetActualWidth(new WidgetPointer(getWidgetParentId(new WidgetPointer(1006,49)))), svar0);
+	return;
+}

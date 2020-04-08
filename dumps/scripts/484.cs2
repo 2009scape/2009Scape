@@ -1,0 +1,189 @@
+void script_484(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	string svar0;
+	flow_0:
+		ivar1 = -1;
+		ivar2 = -1;
+		ivar3 = 0;
+		ivar4 = 0;
+		ivar5 = 0;
+		svar0 = "";
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(arg0));
+		SWITCH (bitconfig_7512) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_2
+			case 3:
+				 GOTO flow_3
+			case 4:
+				 GOTO flow_4
+			case 5:
+				 GOTO flow_5
+			case 6:
+				 GOTO flow_6
+			case 7:
+				 GOTO flow_7
+			case 8:
+				 GOTO flow_8
+			case 9:
+				 GOTO flow_9
+			case 10:
+				 GOTO flow_10
+		}
+		return;
+	flow_1:
+		ivar1 = script_486(bitconfig_7520);
+		GOTO	flow_11
+	flow_2:
+		ivar1 = script_486(bitconfig_7521);
+		GOTO	flow_11
+	flow_3:
+		ivar1 = script_486(bitconfig_7526);
+		GOTO	flow_11
+	flow_4:
+		ivar1 = script_486(bitconfig_7527);
+		GOTO	flow_11
+	flow_5:
+		ivar1 = script_486(bitconfig_7530);
+		GOTO	flow_11
+	flow_6:
+		ivar1 = script_486(bitconfig_7531);
+		GOTO	flow_11
+	flow_7:
+		ivar1 = script_486(bitconfig_7532);
+		GOTO	flow_11
+	flow_8:
+		ivar1 = script_486(bitconfig_7533);
+		GOTO	flow_11
+	flow_9:
+		ivar1 = script_486(bitconfig_7534);
+		GOTO	flow_11
+	flow_10:
+		ivar1 = script_486(bitconfig_7535);
+	flow_11:
+		SWITCH (arg0) {
+			case 66519173:
+				 GOTO flow_12
+			case 66519159:
+				 GOTO flow_13
+			case 66519161:
+				 GOTO flow_14
+			case 66519163:
+				 GOTO flow_15
+			case 66519165:
+				 GOTO flow_16
+			case 66519167:
+				 GOTO flow_17
+			case 66519169:
+				 GOTO flow_18
+			case 66519171:
+				 GOTO flow_19
+		}
+		return;
+	flow_12:
+		ivar2 = script_486(0);
+		GOTO	flow_20
+	flow_13:
+		ivar2 = script_486(1);
+		GOTO	flow_20
+	flow_14:
+		ivar2 = script_486(2);
+		GOTO	flow_20
+	flow_15:
+		ivar2 = script_486(3);
+		GOTO	flow_20
+	flow_16:
+		ivar2 = script_486(4);
+		GOTO	flow_20
+	flow_17:
+		ivar2 = script_486(5);
+		GOTO	flow_20
+	flow_18:
+		ivar2 = script_486(6);
+		GOTO	flow_20
+	flow_19:
+		ivar2 = script_486(7);
+	flow_20:
+		if (ivar1 == -1) {
+			setWidgetIsHidden(true, new WidgetPointer(1015,135));
+			setWidgetIsHidden(false, new WidgetPointer(1015,115));
+			setWidgetSprite(getNpcNodemapData(ivar2, 1148), new WidgetPointer(1015,2));
+			setWidgetText(new WidgetPointer(1015,0), getNpcNodemapData(ivar2, 1139));
+			setWidgetText(new WidgetPointer(1015,138), "Movement: " + intToStr(getNpcNodemapData(ivar2, 1134)));
+			setWidgetText(new WidgetPointer(1015,139), "Damage: " + intToStr(multiply(getNpcNodemapData(ivar2, 1135), 100)));
+			setWidgetText(new WidgetPointer(1015,140), "Health: " + intToStr(multiply(getNpcNodemapData(ivar2, 1136), 100)));
+			setWidgetText(new WidgetPointer(1015,141), "Range: " + intToStr(getNpcNodemapData(ivar2, 1137)));
+			setWidgetText(new WidgetPointer(1015,142), "Cost: " + intToStr(getNpcNodemapData(ivar2, 1138)));
+		} else {
+			if (ivar1 != ivar2) {
+				setWidgetSprite(getNpcNodemapData(ivar2, 1148), new WidgetPointer(1015,2));
+				setWidgetText(new WidgetPointer(1015,0), concat(getWidgetText(new WidgetPointer(1015,0)), " ~ " + getNpcNodemapData(ivar2, 1139)));
+				ivar3 = getNpcNodemapData(ivar1, 1134);
+				ivar4 = getNpcNodemapData(ivar2, 1134);
+				if (ivar3 < ivar4) {
+					ivar5 = subtract(ivar4, ivar3);
+					svar0 = " ~ " + intToStr(getNpcNodemapData(ivar2, 1134)) + " (" + "<col=00c800>" + "+" + intToStr(ivar5) + "</col>" + ")";
+				} else if (ivar3 > ivar4) {
+					ivar5 = subtract(ivar3, ivar4);
+					svar0 = " ~ " + intToStr(getNpcNodemapData(ivar2, 1134)) + " (" + "<col=c80000>" + "-" + intToStr(ivar5) + "</col>" + ")";
+				} else {
+					svar0 = " ~ " + intToStr(getNpcNodemapData(ivar2, 1134));
+				}
+				setWidgetText(new WidgetPointer(1015,138), concat(getWidgetText(new WidgetPointer(1015,138)), svar0));
+				ivar3 = getNpcNodemapData(ivar1, 1135);
+				ivar4 = getNpcNodemapData(ivar2, 1135);
+				if (ivar3 < ivar4) {
+					ivar5 = subtract(ivar4, ivar3);
+					svar0 = " ~ " + intToStr(multiply(getNpcNodemapData(ivar2, 1135), 100)) + " (" + "<col=00c800>" + "+" + intToStr(multiply(ivar5, 100)) + "</col>" + ")";
+				} else if (ivar3 > ivar4) {
+					ivar5 = subtract(ivar3, ivar4);
+					svar0 = " ~ " + intToStr(multiply(getNpcNodemapData(ivar2, 1135), 100)) + " (" + "<col=c80000>" + "-" + intToStr(multiply(ivar5, 100)) + "</col>" + ")";
+				} else {
+					svar0 = " ~ " + intToStr(multiply(getNpcNodemapData(ivar2, 1135), 100));
+				}
+				setWidgetText(new WidgetPointer(1015,139), concat(getWidgetText(new WidgetPointer(1015,139)), svar0));
+				ivar3 = getNpcNodemapData(ivar1, 1136);
+				ivar4 = getNpcNodemapData(ivar2, 1136);
+				if (ivar3 < ivar4) {
+					ivar5 = subtract(ivar4, ivar3);
+					svar0 = " ~ " + intToStr(multiply(getNpcNodemapData(ivar2, 1136), 100)) + " (" + "<col=00c800>" + "+" + intToStr(multiply(ivar5, 100)) + "</col>" + ")";
+				} else if (ivar3 > ivar4) {
+					ivar5 = subtract(ivar3, ivar4);
+					svar0 = " ~ " + intToStr(multiply(getNpcNodemapData(ivar2, 1136), 100)) + " (" + "<col=c80000>" + "-" + intToStr(multiply(ivar5, 100)) + "</col>" + ")";
+				} else {
+					svar0 = " ~ " + intToStr(multiply(getNpcNodemapData(ivar2, 1136), 100));
+				}
+				setWidgetText(new WidgetPointer(1015,140), concat(getWidgetText(new WidgetPointer(1015,140)), svar0));
+				ivar3 = getNpcNodemapData(ivar1, 1137);
+				ivar4 = getNpcNodemapData(ivar2, 1137);
+				if (ivar3 < ivar4) {
+					ivar5 = subtract(ivar4, ivar3);
+					svar0 = " ~ " + intToStr(getNpcNodemapData(ivar2, 1137)) + " (" + "<col=00c800>" + "+" + intToStr(ivar5) + "</col>" + ")";
+				} else if (ivar3 > ivar4) {
+					ivar5 = subtract(ivar3, ivar4);
+					svar0 = " ~ " + intToStr(getNpcNodemapData(ivar2, 1137)) + " (" + "<col=c80000>" + "-" + intToStr(ivar5) + "</col>" + ")";
+				} else {
+					svar0 = " ~ " + intToStr(getNpcNodemapData(ivar2, 1137));
+				}
+				setWidgetText(new WidgetPointer(1015,141), concat(getWidgetText(new WidgetPointer(1015,141)), svar0));
+				ivar3 = getNpcNodemapData(ivar1, 1138);
+				ivar4 = getNpcNodemapData(ivar2, 1138);
+				if (ivar3 < ivar4) {
+					ivar5 = subtract(ivar4, ivar3);
+					svar0 = " ~ " + intToStr(getNpcNodemapData(ivar2, 1138)) + " (" + "<col=c80000>" + "+" + intToStr(ivar5) + "</col>" + ")";
+				} else if (ivar3 > ivar4) {
+					ivar5 = subtract(ivar3, ivar4);
+					svar0 = " ~ " + intToStr(getNpcNodemapData(ivar2, 1138)) + " (" + "<col=00c800>" + "-" + intToStr(ivar5) + "</col>" + ")";
+				} else {
+					svar0 = " ~ " + intToStr(getNpcNodemapData(ivar2, 1138));
+				}
+				setWidgetText(new WidgetPointer(1015,142), concat(getWidgetText(new WidgetPointer(1015,142)), svar0));
+			}
+		}
+		return;
+}

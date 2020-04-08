@@ -1,0 +1,11 @@
+void script_4556(int arg0) {
+	if (((boolean)arg0) && cs2method6900()) {
+		setScriptCallOnKeyPress(4555, -2147483640, false, "iz", new WidgetPointer(589,26));
+		setScriptCallOnGameloop(4572, getClientCycle(), new WidgetPointer(589,28), "iI", new WidgetPointer(589,27));
+	} else {
+		setScriptCallOnKeyPress(-1, "", new WidgetPointer(589,26));
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(589,27));
+		setWidgetText(new WidgetPointer(589,27), replaceLtGt(globalstring_349));
+	}
+	return;
+}

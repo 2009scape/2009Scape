@@ -1,0 +1,14 @@
+void script_3236(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	string svar0;
+	svar0 = "";
+	switch (arg3) {
+		case 3:
+			svar0 = globalstring_32;
+			break;
+		case 4:
+			svar0 = script_2949(globalstring_33);
+	}
+	globalint_1099 = script_1401(arg0, 3793, 0, svar0);
+	script_3237(arg4, arg1, arg2, arg3, svar0);
+	return;
+}

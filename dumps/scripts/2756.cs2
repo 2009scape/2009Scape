@@ -1,0 +1,14 @@
+void script_2756() {
+	if (bitconfig_3756 == add(16, 1)) {
+		script_736(48890035, -1, 35913914, -1);
+	} else if (bitconfig_3756 == add(17, 1)) {
+		script_736(48890031, -1, 35913912, -1);
+	} else if (bitconfig_3756 == add(18, 1)) {
+		script_736(48890037, -1, 35913908, -1);
+	} else if (bitconfig_3756 == add(19, 1)) {
+		script_736(48890030, -1, 35913906, -1);
+	} else {
+		script_736(script_1742(subtract(bitconfig_3756, 1)), -1, script_121(subtract(bitconfig_3756, 1)), -1);
+	}
+	return;
+}

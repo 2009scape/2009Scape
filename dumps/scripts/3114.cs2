@@ -1,0 +1,6 @@
+void script_3114(int arg0) {
+	if (getClientCycle() > arg0) {
+		script_3113();
+	}
+	return;
+}

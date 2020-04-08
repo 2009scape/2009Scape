@@ -1,0 +1,11 @@
+int script_5193() {
+	switch (bitconfig_9646) {
+		case 1:
+			return bitconfig_9647;
+		case 2:
+			return bitconfig_9648;
+		case 3:
+			return bitconfig_9649;
+	}
+	return -1;
+}

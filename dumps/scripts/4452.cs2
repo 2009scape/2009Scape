@@ -1,0 +1,6 @@
+void script_4452(int arg0) {
+	if (cs2method3751()) {
+		script_4436(72744974, arg0);
+	}
+	return;
+}

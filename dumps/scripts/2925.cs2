@@ -1,0 +1,12 @@
+void script_2925(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	if (arg0 != -1) {
+		setWidgetSprite(arg1, new WidgetPointer(arg0));
+	}
+	if (arg2 != -1) {
+		setWidgetSprite(arg3, new WidgetPointer(arg2));
+	}
+	if (arg4 != -1) {
+		setWidgetSprite(arg5, new WidgetPointer(arg4));
+	}
+	return;
+}

@@ -1,0 +1,42 @@
+void script_99() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = 5;
+	ivar1 = 5;
+	ivar2 = 0;
+	while (ivar0 < 125) {
+		while (ivar1 < 120) {
+			createExtraChild(new WidgetPointer(631,47), 5, ivar2);
+			setWidgetSize(36, 32, 0, 0);
+			setWidgetPosition(ivar1, ivar0, 0, 0);
+			if (getItemIdInSlot(134, ivar2) != -1) {
+				setItemOnWidgetMethod1200(getItemIdInSlot(134, ivar2), getItemAmtInSlot(134, ivar2));
+				cs2method1305("<col=ff981f>" + getItemName(getItemIdInSlot(134, ivar2)));
+				setWidgetContextMenuOption(1, "Remove 1");
+				setWidgetContextMenuOption(2, "Remove 5");
+				setWidgetContextMenuOption(3, "Remove 10");
+				setWidgetContextMenuOption(4, "Remove All");
+				setWidgetContextMenuOption(5, "Remove X");
+				setWidgetContextMenuOption(10, "Examine");
+				setWidgetShadowColor(new Color(48, 32, 32));
+				setWidgetBorderThickness(1);
+			}
+			createExtraChild(new WidgetPointer(631,49), 5, ivar2);
+			setWidgetSize(36, 32, 0, 0);
+			setWidgetPosition(ivar1, ivar0, 0, 0);
+			if (getItemIdInSlotSplit(134, ivar2) != -1) {
+				setItemOnWidgetMethod1200(getItemIdInSlotSplit(134, ivar2), getItemAmtInSlotSplit(134, ivar2));
+				cs2method1305("<col=ff981f>" + getItemName(getItemIdInSlotSplit(134, ivar2)));
+				setWidgetContextMenuOption(1, "Examine");
+				setWidgetShadowColor(new Color(48, 32, 32));
+				setWidgetBorderThickness(1);
+			}
+			ivar1 = add(ivar1, 40);
+			ivar2 = add(ivar2, 1);
+		}
+		ivar0 = add(ivar0, 42);
+		ivar1 = 5;
+	}
+	return;
+}

@@ -1,0 +1,88 @@
+void script_1839(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	flow_0:
+		deleteAllExtraChilds(new WidgetPointer(arg1));
+		ivar4 = 0;
+		ivar5 = 0;
+		ivar6 = 0;
+		ivar7 = script_285(arg1, ivar7);
+		createExtraChild(new WidgetPointer(arg1), 5, getExtraChildGap(new WidgetPointer(arg1)));
+		setWidgetPosition(0, ivar7, 0, 0);
+		setWidgetSize(0, 5, 1, 0);
+		setWidgetSprite(1121);
+		cs2method1107(1);
+		ivar7 = add(ivar7, 4);
+		globalarray_0 = new int[add(105, 1)];
+		ivar8 = -1;
+		ivar9 = -1;
+		IF (((boolean)arg0)) 
+			GOTO	flow_1
+		GOTO	flow_7
+	flow_1:
+		IF (ivar4 <= 105) 
+			GOTO	flow_2
+		GOTO	flow_6
+	flow_2:
+		ivar8 = cs2method_3408(105, 74, 1805, ivar4);
+		if ((ivar8 != -1) && (isMember() || ((boolean)getOtherCommonData(ivar8, 478)))) {
+			ivar7 = script_1840(arg1, ivar4, ivar7);
+		}
+		ivar4 = add(ivar4, 1);
+		GOTO	flow_1
+	flow_6:
+		setWidgetText(new WidgetPointer(arg3), "Key order:" + "<br>" + "Traditional");
+		GOTO	flow_28
+	flow_7:
+		IF (ivar4 <= 105) 
+			GOTO	flow_8
+		GOTO	flow_12
+	flow_8:
+		ivar8 = cs2method_3408(105, 74, 1805, ivar4);
+		if ((ivar8 != -1) && (isMember() || ((boolean)getOtherCommonData(ivar8, 478)))) {
+			globalarray_0[ivar6] = ivar4;
+			ivar6 = add(ivar6, 1);
+		}
+		ivar4 = add(ivar4, 1);
+		GOTO	flow_7
+	flow_12:
+		ivar6 = subtract(ivar6, 1);
+		ivar4 = 0;
+		if (((boolean)arg0)) {
+			script_1842(0, 0, ivar6);
+			while (ivar4 <= ivar6) {
+				ivar7 = script_1840(arg1, globalarray_0[ivar4], ivar7);
+				ivar4 = add(ivar4, 1);
+			}
+			setWidgetText(new WidgetPointer(arg3), "Key order:" + "<br>" + "Alphabetical");
+		} else {
+			if (arg0 == 2) {
+				script_1843(0, 0, ivar6);
+				while (ivar9 < getCommonDefinitionSize(1806)) {
+					ivar7 = script_1841(arg1, ivar9, ivar7);
+					while (getOtherCommonData(cs2method_3408(105, 74, 1805, globalarray_0[ivar5]), 597) == ivar9) {
+						ivar5 = add(ivar5, 1);
+					}
+					script_1842(0, ivar4, subtract(ivar5, 1));
+					while (ivar4 < ivar5) {
+						ivar7 = script_1840(arg1, globalarray_0[ivar4], ivar7);
+						ivar4 = add(ivar4, 1);
+					}
+					ivar9 = add(ivar9, 1);
+				}
+				setWidgetText(new WidgetPointer(arg3), "Key order:" + "<br>" + "Categorised");
+			}
+		}
+	flow_28:
+		ivar7 = add(ivar7, 5);
+		setWidgetScrollMax(0, ivar7, new WidgetPointer(arg1));
+		script_31(arg2, arg1, 792, 789, 790, 791, 773, 788);
+		if (setWidgetRegister(new WidgetPointer(arg2), 1)) {
+			script_37(arg2, arg1, cs2method2601(new WidgetPointer(arg1)), 1);
+		}
+		return;
+}

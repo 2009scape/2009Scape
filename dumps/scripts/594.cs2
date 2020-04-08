@@ -1,0 +1,121 @@
+void script_594(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	string svar0;
+	string svar1;
+	string svar2;
+	setItemOnWidgetMethod2200(arg1, -1, new WidgetPointer(105,139));
+	svar0 = "null";
+	svar1 = "null";
+	svar2 = "null";
+	if (((boolean)arg0)) {
+		setWidgetText(new WidgetPointer(105,134), "Buy Offer");
+		setWidgetSprite(1157, new WidgetPointer(105,135));
+		setWidgetText(new WidgetPointer(105,160), "+1");
+		setWidgetContextMenuOption(1, new WidgetPointer(105,160), "Add 1");
+		svar2 = "Add 1 to quantity";
+		setScriptCallOnMouseOver(649, new WidgetPointer(-32768,3), new WidgetPointer(105,210), svar2, 25, 300, "IIsii", new WidgetPointer(105,160));
+		setWidgetText(new WidgetPointer(105,162), "+10");
+		setWidgetContextMenuOption(1, new WidgetPointer(105,162), "Add 10");
+		svar2 = "Add 10 to quantity";
+		setScriptCallOnMouseOver(649, new WidgetPointer(-32768,3), new WidgetPointer(105,210), svar2, 25, 300, "IIsii", new WidgetPointer(105,162));
+		setWidgetText(new WidgetPointer(105,164), "+100");
+		setWidgetContextMenuOption(1, new WidgetPointer(105,164), "Add 100");
+		svar2 = "Add 100 to quantity";
+		setScriptCallOnMouseOver(649, new WidgetPointer(-32768,3), new WidgetPointer(105,210), svar2, 25, 300, "IIsii", new WidgetPointer(105,164));
+		setWidgetText(new WidgetPointer(105,166), "+1K");
+		setWidgetContextMenuOption(1, new WidgetPointer(105,166), "Add 1000");
+		svar2 = "Add 1,000 to quantity";
+		setScriptCallOnMouseOver(649, new WidgetPointer(-32768,3), new WidgetPointer(105,210), svar2, 25, 300, "IIsii", new WidgetPointer(105,166));
+	} else {
+		setWidgetText(new WidgetPointer(105,134), "Sell Offer");
+		setWidgetSprite(1156, new WidgetPointer(105,135));
+		setWidgetText(new WidgetPointer(105,160), "1");
+		setWidgetContextMenuOption(1, new WidgetPointer(105,160), "Sell 1");
+		svar2 = "Sell 1";
+		setScriptCallOnMouseOver(649, new WidgetPointer(-32768,3), new WidgetPointer(105,210), svar2, 25, 300, "IIsii", new WidgetPointer(105,160));
+		setWidgetText(new WidgetPointer(105,162), "10");
+		setWidgetContextMenuOption(1, new WidgetPointer(105,162), "Sell 10");
+		svar2 = "Sell 10";
+		setScriptCallOnMouseOver(649, new WidgetPointer(-32768,3), new WidgetPointer(105,210), svar2, 25, 300, "IIsii", new WidgetPointer(105,162));
+		setWidgetText(new WidgetPointer(105,164), "100");
+		setWidgetContextMenuOption(1, new WidgetPointer(105,164), "Sell 100");
+		svar2 = "Sell 100";
+		setScriptCallOnMouseOver(649, new WidgetPointer(-32768,3), new WidgetPointer(105,210), svar2, 25, 300, "IIsii", new WidgetPointer(105,164));
+		setWidgetText(new WidgetPointer(105,166), "ALL");
+		setWidgetContextMenuOption(1, new WidgetPointer(105,166), "Sell All");
+		svar2 = "Sell all";
+		setScriptCallOnMouseOver(649, new WidgetPointer(-32768,3), new WidgetPointer(105,210), svar2, 25, 300, "IIsii", new WidgetPointer(105,166));
+	}
+	if (arg1 == -1) {
+		setWidgetText(new WidgetPointer(105,142), "Choose an item to exchange");
+		setWidgetText(new WidgetPointer(105,141), "N/A");
+		setWidgetText(new WidgetPointer(105,143), "");
+		if (((boolean)standart_config_1113)) {
+			if (getWidgetShadeColor(new WidgetPointer(105,138)) == 255) {
+				setScriptCallOnGameloop(634, new WidgetPointer(105,138), 0, 255, 5, "Iiii", new WidgetPointer(105,138));
+			}
+		} else {
+			if (((boolean)standart_config_1113)) {
+				setWidgetIsHidden(false, new WidgetPointer(107,0));
+				cs2method2103(255, new WidgetPointer(105,138));
+				setScriptCallOnGameloop(-1, "", new WidgetPointer(105,138));
+				if (getWidgetShadeColor(new WidgetPointer(107,1)) == 245) {
+					setScriptCallOnGameloop(634, new WidgetPointer(107,1), 155, 255, 2, "Iiii", new WidgetPointer(107,1));
+					setScriptCallOnGameloop(634, new WidgetPointer(107,2), 155, 255, 2, "Iiii", new WidgetPointer(107,2));
+					setScriptCallOnGameloop(634, new WidgetPointer(107,3), 155, 255, 2, "Iiii", new WidgetPointer(107,3));
+					setScriptCallOnGameloop(634, new WidgetPointer(107,4), 155, 255, 2, "Iiii", new WidgetPointer(107,4));
+					setScriptCallOnGameloop(634, new WidgetPointer(107,5), 145, 245, 2, "Iiii", new WidgetPointer(107,5));
+					setScriptCallOnGameloop(634, new WidgetPointer(107,6), 145, 245, 2, "Iiii", new WidgetPointer(107,6));
+					setScriptCallOnGameloop(634, new WidgetPointer(107,7), 145, 245, 2, "Iiii", new WidgetPointer(107,7));
+					setScriptCallOnGameloop(634, new WidgetPointer(107,8), 135, 235, 2, "Iiii", new WidgetPointer(107,8));
+					setScriptCallOnGameloop(634, new WidgetPointer(107,9), 135, 235, 2, "Iiii", new WidgetPointer(107,9));
+					setScriptCallOnGameloop(634, new WidgetPointer(107,10), 135, 235, 2, "Iiii", new WidgetPointer(107,10));
+					setScriptCallOnGameloop(634, new WidgetPointer(107,11), 125, 225, 2, "Iiii", new WidgetPointer(107,11));
+					setScriptCallOnGameloop(634, new WidgetPointer(107,12), 125, 225, 2, "Iiii", new WidgetPointer(107,12));
+					setScriptCallOnGameloop(634, new WidgetPointer(107,13), 125, 225, 2, "Iiii", new WidgetPointer(107,13));
+					setScriptCallOnGameloop(634, new WidgetPointer(107,14), 115, 215, 2, "Iiii", new WidgetPointer(107,14));
+					setScriptCallOnGameloop(634, new WidgetPointer(107,15), 115, 215, 2, "Iiii", new WidgetPointer(107,15));
+					setScriptCallOnGameloop(634, new WidgetPointer(107,16), 115, 215, 2, "Iiii", new WidgetPointer(107,16));
+					setScriptCallOnGameloop(634, new WidgetPointer(107,17), 110, 210, 2, "Iiii", new WidgetPointer(107,17));
+				}
+			}
+		}
+	} else {
+		setWidgetText(new WidgetPointer(105,142), getItemName(arg1));
+		if (standart_config_1109 != -1) {
+			svar0 = formatNumber(standart_config_1114, 1);
+			setWidgetText(new WidgetPointer(105,141), svar0 + " gp");
+		} else {
+			setWidgetText(new WidgetPointer(105,143), "Retrieving details...");
+			setWidgetText(new WidgetPointer(105,141), "N/A");
+		}
+		cs2method2103(255, new WidgetPointer(105,138));
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(105,138));
+		setWidgetIsHidden(true, new WidgetPointer(107,0));
+	}
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 0;
+	if (setWidgetRegister(new WidgetPointer(105,141)) && setWidgetRegister(new WidgetPointer(105,140))) {
+		ivar5 = getWidgetActualWidth();
+		ivar6 = getMaxLineWidth(ivar5, 494, getWidgetText());
+		ivar7 = getWidgetActualWidth();
+		ivar4 = subtract(add(52, divide(subtract(ivar5, ivar6), 2)), subtract(ivar7, 5));
+		setWidgetPosition(ivar4, getWidgetActualY(), 0, 0);
+	}
+	if (globalint_82 <= 0) {
+		svar0 = formatNumber(arg2, 1);
+		setWidgetText(new WidgetPointer(105,148), svar0);
+		globalint_84 = standart_config_1110;
+	}
+	if (globalint_83 <= 0) {
+		svar0 = formatNumber(arg3, 1);
+		setWidgetText(new WidgetPointer(105,153), svar0 + " gp");
+		globalint_85 = standart_config_1111;
+	}
+	return;
+}

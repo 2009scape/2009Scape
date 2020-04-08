@@ -1,0 +1,11 @@
+void script_2433() {
+	if (((boolean)script_1431()) || ((boolean)stringMethod4107(globalstring_148, "null"))) {
+		return;
+	}
+	if (getDisplayMode() < 2) {
+		setWidgetText(new WidgetPointer(548,11), globalstring_148);
+	} else {
+		setWidgetText(new WidgetPointer(746,164), globalstring_148);
+	}
+	return;
+}

@@ -1,0 +1,5 @@
+void script_1137(int arg0,int arg1) {
+	setWidgetSize(multiplyDivide(standart_config_300, 1000, 143), 13, 0, 0, new WidgetPointer(arg0));
+	setWidgetText(new WidgetPointer(arg1), "Special Attack (" + intToStr(divide(standart_config_300, 10)) + "%)");
+	return;
+}

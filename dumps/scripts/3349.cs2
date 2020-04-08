@@ -1,0 +1,8 @@
+void script_3349() {
+	if (((boolean)globalint_1177)) {
+		script_1163(61538370, -1, 61538418, 25, 200, "P3: Shared XP is ON");
+	} else {
+		script_1163(61538370, -1, 61538418, 25, 200, "P3: Shared XP is OFF");
+	}
+	return;
+}

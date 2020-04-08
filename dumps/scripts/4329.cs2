@@ -1,0 +1,13 @@
+void script_4329(int arg0) {
+	if (clanlongconfig_2 != -1L) {
+		setWidgetText(new WidgetPointer(arg0), toBase36(clanlongconfig_2));
+		setScriptCallOnMouseEntered(45, new WidgetPointer(arg0), 255, "Ii", new WidgetPointer(arg0));
+		setScriptCallOnMouseExit(45, new WidgetPointer(arg0), 15393218, "Ii", new WidgetPointer(arg0));
+		cs2method2314(175, new WidgetPointer(arg0));
+		setScriptCallOnMousePressed(4330, clanlongconfig_2, "\u00a7", new WidgetPointer(arg0));
+		cs2method2305(new WidgetPointer(arg0), "Visit Clan Forum");
+	} else {
+		setWidgetText(new WidgetPointer(arg0), "");
+	}
+	return;
+}

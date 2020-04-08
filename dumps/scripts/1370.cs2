@@ -1,0 +1,93 @@
+void script_1370(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	opcStruct5208(2,0,0) structdump_0;
+	int stack_dump1;
+	opcStruct5209(2,0,0) structdump_2;
+	if (cs2method5220()) {
+		return;
+	}
+	ivar4 = 1;
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 0;
+	ivar8 = 0;
+	ivar9 = 0;
+	ivar10 = 0;
+	ivar11 = 0;
+	ivar12 = 0;
+	ivar13 = 0;
+	ivar14 = 0;
+	ivar15 = globalint_172;
+	if (arg2 > 0) {
+		switch (globalint_172) {
+			case 50:
+				globalint_172 = 37;
+				break;
+			case 75:
+				globalint_172 = 50;
+				break;
+			case 100:
+				globalint_172 = 75;
+				break;
+			case 200:
+				globalint_172 = 100;
+				break;
+			default:
+				globalint_172 = 37;
+				ivar4 = 0;
+		}
+	} else {
+		switch (globalint_172) {
+			case 37:
+				globalint_172 = 50;
+				break;
+			case 50:
+				globalint_172 = 75;
+				break;
+			case 75:
+				globalint_172 = 100;
+				break;
+			case 100:
+				globalint_172 = 200;
+				break;
+			default:
+				globalint_172 = 200;
+				ivar4 = 0;
+		}
+		if (((boolean)arg3) && (ivar15 < 200)) {
+			structdump_0 = cs2method5208();
+			ivar6 = structdump_0.intpart_1;
+			ivar5 = structdump_0.intpart_0;
+			stack_dump1 = getWidgetActualWidth(new WidgetPointer(arg1));
+			ivar10 = getWidgetActualHeight(new WidgetPointer(arg1));
+			ivar9 = stack_dump1;
+			if ((ivar5 > 0) && (ivar6 > 0)) {
+				structdump_2 = cs2method5209();
+				ivar8 = structdump_2.intpart_1;
+				ivar7 = structdump_2.intpart_0;
+				ivar11 = subtract(subtract(getLastMouseY(), script_3365(arg1)), divide(ivar9, 2));
+				ivar12 = subtract(subtract(getLastMouseX(), script_3366(arg1)), divide(ivar10, 2));
+				stack_dump1 = multiplyDivide(ivar5, ivar9, ivar11);
+				ivar14 = multiplyDivide(ivar6, ivar10, ivar12);
+				ivar13 = stack_dump1;
+				ivar7 = add(ivar7, ivar13);
+				ivar8 = subtract(ivar8, ivar14);
+				setScriptCallOnGameloop(2054, add(getClientCycle(), 1), new WidgetPointer(arg0), addToCoordinate(0, ivar7, 0, ivar8), "iIc", new WidgetPointer(arg0));
+			}
+		}
+	}
+	script_1372();
+	script_305(ivar4);
+	return;
+}

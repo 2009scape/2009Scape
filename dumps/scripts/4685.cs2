@@ -1,0 +1,26 @@
+void script_4685() {
+	int ivar0;
+	int ivar1;
+	string svar0;
+	string svar1;
+	svar0 = intToStr(bitconfig_9467);
+	svar1 = "Waiting for next wave...";
+	if (globalint_1537 != 0) {
+		setWidgetIsHidden(false, new WidgetPointer(447,14));
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(447,1)), 79, 0, 0, new WidgetPointer(447,1));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(447,14));
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(447,1)), 45, 0, 0, new WidgetPointer(447,1));
+	}
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar0 = script_4699(29294603, 29294604, 29294605, "Wave", svar0);
+	if (globalint_1537 != 0) {
+		ivar1 = script_4699(29294606, 29294608, 29294609, "Waiting?", svar1);
+	}
+	ivar0 = max(ivar0, ivar1);
+	if (ivar0 > getWidgetActualWidth(new WidgetPointer(447,1))) {
+		setWidgetSize(add(ivar0, 5), getWidgetActualHeight(new WidgetPointer(447,1)), 0, 0, new WidgetPointer(447,1));
+	}
+	return;
+}

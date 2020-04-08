@@ -1,0 +1,35 @@
+void script_1082(int arg0,int arg1,int arg2) {
+	int ivar3;
+	ivar3 = add(arg0, 1);
+	if (isWidgetHidden(cs2method_3408(105, 73, 1550, ivar3))) {
+		if (setWidgetRegister(new WidgetPointer(arg1), arg2)) {
+			setWidgetHidden(0);
+			setWidgetRGB(new Color(150, 151, 119));
+		}
+		if (globalint_128 >= 0) {
+			ivar3 = add(ivar3, 1);
+			while (isWidgetHidden(cs2method_3408(105, 73, 1550, ivar3))) {
+				ivar3 = add(ivar3, 1);
+			}
+			if (setWidgetRegister(cs2method_3408(105, 73, 1551, subtract(ivar3, 1)), globalint_128)) {
+				setWidgetHidden(1);
+			}
+			globalint_128 = -1;
+		}
+		return;
+	}
+	if (globalint_128 == arg2) {
+		return;
+	}
+	if ((globalint_128 >= 0) && setWidgetRegister(new WidgetPointer(arg1), globalint_128)) {
+		setWidgetHidden(1);
+	}
+	if (setWidgetRegister(new WidgetPointer(arg1), arg2)) {
+		if (isWidgetHidden()) {
+			setWidgetHidden(0);
+			setWidgetRGB(new Color(87, 126, 69));
+		}
+		globalint_128 = arg2;
+	}
+	return;
+}

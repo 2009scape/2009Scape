@@ -1,0 +1,18 @@
+void script_195(int arg0,int arg1) {
+	int ivar2;
+	setScriptCallOnClanListChange(203, new WidgetPointer(-32768,3), "I", new WidgetPointer(arg0));
+	setScriptCallOnFriendListChange(203, new WidgetPointer(-32768,3), "I", new WidgetPointer(arg0));
+	script_1600();
+	deleteAllExtraChilds(new WidgetPointer(1109,4));
+	ivar2 = 0;
+	while (ivar2 < 50) {
+		createExtraChild(new WidgetPointer(1109,4), 3, ivar2);
+		setWidgetSize(0, 19, 1, 0);
+		setWidgetPosition(0, multiply(multiply(ivar2, 2), 19), 1, 0);
+		setWidgetRGB(new Color(35, 34, 32));
+		setWidgetFilled(1);
+		cs2method2103(128);
+		ivar2 = add(ivar2, 1);
+	}
+	return;
+}

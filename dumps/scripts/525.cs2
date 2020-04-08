@@ -1,0 +1,4 @@
+void script_525(int arg0,int arg1) {
+	setWidgetText(new WidgetPointer(arg0), intToStr(getSkillCurrentLvl(arg1)));
+	return;
+}

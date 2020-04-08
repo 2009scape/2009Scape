@@ -1,0 +1,8 @@
+void script_3467(int arg0,int arg1,int arg2) {
+	if (subtract(getClientCycle(), arg1) < arg2) {
+		return;
+	}
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+	script_2766(0, 50, arg0);
+	return;
+}

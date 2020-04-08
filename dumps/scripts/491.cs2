@@ -1,0 +1,16 @@
+void script_491(int arg0) {
+	switch (arg0) {
+		case 66519136:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(1015,100));
+			break;
+		case 66519130:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(1015,92));
+			break;
+		case 66519124:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(1015,86));
+			break;
+		case 66519118:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(1015,80));
+	}
+	return;
+}

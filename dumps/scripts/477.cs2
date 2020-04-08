@@ -1,0 +1,17 @@
+void script_477(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = getWidgetActualX(new WidgetPointer(arg0));
+	ivar2 = add(getWidgetActualY(new WidgetPointer(arg0)), getWidgetActualHeight(new WidgetPointer(arg0)));
+	if (((((((getSkillActualLvl(0) < 42) || (getSkillActualLvl(2) < 42)) || (getSkillActualLvl(1) < 42)) || (getSkillActualLvl(3) < 42)) || (getSkillActualLvl(4) < 42)) || (getSkillActualLvl(6) < 42)) || (getSkillActualLvl(5) < 22)) {
+		if (add(ivar1, getWidgetActualWidth(new WidgetPointer(1011,386))) >= add(getWidgetActualX(new WidgetPointer(1011,55)), getWidgetActualWidth(new WidgetPointer(1011,55)))) {
+			ivar1 = subtract(getWidgetActualX(new WidgetPointer(arg0)), subtract(getWidgetActualWidth(new WidgetPointer(1011,386)), getWidgetActualWidth(new WidgetPointer(arg0))));
+		}
+		if (add(ivar2, getWidgetActualHeight(new WidgetPointer(1011,386))) >= add(getWidgetActualY(new WidgetPointer(1011,55)), getWidgetActualHeight(new WidgetPointer(1011,55)))) {
+			ivar2 = subtract(getWidgetActualY(new WidgetPointer(arg0)), getWidgetActualHeight(new WidgetPointer(1011,386)));
+		}
+		setWidgetPosition(ivar1, ivar2, 0, 0, new WidgetPointer(1011,386));
+		setWidgetIsHidden(false, new WidgetPointer(1011,386));
+	}
+	return;
+}

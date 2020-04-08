@@ -1,0 +1,6 @@
+void script_2839() {
+	globalint_1068 = 2;
+	cameraMethod5502(0, globalint_1068, 350, 400, 1, globalint_1068);
+	setScriptCallOnMinimapRelatedSetting3(2840, "", new WidgetPointer(384,0));
+	return;
+}

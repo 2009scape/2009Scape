@@ -1,0 +1,20 @@
+void script_2172(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = globalint_692;
+	ivar2 = globalint_1103;
+	script_41(12451860);
+	if (((boolean)arg0)) {
+		if (((boolean)globalint_692)) {
+			ivar1 = 0;
+		} else {
+			ivar1 = 1;
+		}
+	} else if (((boolean)globalint_1103)) {
+		ivar2 = 0;
+	} else {
+		ivar2 = 1;
+	}
+	script_2162(1, globalint_693, globalint_694, ivar1, ivar2);
+	return;
+}

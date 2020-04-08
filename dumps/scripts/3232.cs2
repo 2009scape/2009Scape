@@ -1,0 +1,120 @@
+void script_3232(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,string arg8,string arg9,string arg10) {
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	int ivar22;
+	ivar8 = 39059463;
+	ivar9 = 39059464;
+	ivar10 = 39059470;
+	ivar11 = 39059469;
+	ivar12 = 39059471;
+	ivar13 = 39059519;
+	ivar14 = 39059472;
+	ivar15 = 39059473;
+	ivar16 = 39059474;
+	ivar17 = 39059521;
+	ivar18 = 39059522;
+	ivar19 = 39059523;
+	if (hasSSKey()) {
+		ivar8 = 63897626;
+		ivar9 = 63897601;
+		ivar10 = 63897604;
+		ivar11 = 63897603;
+		ivar12 = 63897605;
+		ivar13 = 63897606;
+		ivar14 = 63897611;
+		ivar15 = 63897612;
+		ivar16 = 63897613;
+		ivar17 = 63897607;
+		ivar18 = 63897608;
+		ivar19 = 63897609;
+	}
+	if (isWidgetHidden(new WidgetPointer(ivar8))) {
+		return;
+	}
+	if (globalint_174 != 5) {
+		globalint_1089 = globalint_174;
+	}
+	globalint_174 = 5;
+	ivar20 = 250;
+	if (((boolean)arg4)) {
+		ivar20 = max(250, add(getTextWidth(3793, arg9), 36));
+		if (mod(ivar20, 2) > 0) {
+			ivar20 = add(ivar20, 1);
+		}
+	}
+	setWidgetSize(ivar20, 154, 0, 0, new WidgetPointer(ivar9));
+	ivar21 = add(multiply(getLineCount(getWidgetActualWidth(new WidgetPointer(ivar10)), 3793, arg8), 16), 5);
+	setWidgetSize(20, ivar21, 1, 0, new WidgetPointer(ivar10));
+	setWidgetText(new WidgetPointer(ivar10), arg8);
+	if (((boolean)arg2)) {
+		globalint_1092 = add(getClientCycle(), 5);
+		setWidgetSprite(4107, new WidgetPointer(ivar11));
+		setWidgetSize(111, 111, 0, 0, new WidgetPointer(ivar11));
+		setWidgetPosition(0, 7, 1, 0, new WidgetPointer(ivar11));
+		setWidgetPosition(0, 112, 1, 0, new WidgetPointer(ivar10));
+		setScriptCallOnGameloop(2951, "", new WidgetPointer(ivar11));
+	} else {
+		globalint_1092 = 0;
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(ivar11));
+		setWidgetSprite(arg3, new WidgetPointer(ivar11));
+		setWidgetSize(76, 63, 0, 0, new WidgetPointer(ivar11));
+		setWidgetPosition(0, 18, 1, 0, new WidgetPointer(ivar11));
+		setWidgetPosition(0, 123, 1, 0, new WidgetPointer(ivar10));
+		ivar21 = subtract(ivar21, 35);
+	}
+	ivar22 = 0;
+	ivar21 = add(getWidgetActualY(new WidgetPointer(ivar10)), ivar21);
+	if (((boolean)arg4) && ((boolean)arg6)) {
+		ivar22 = 12;
+		ivar21 = add(ivar21, ivar22);
+		setWidgetIsHidden(true, new WidgetPointer(ivar12));
+		setWidgetIsHidden(true, new WidgetPointer(ivar13));
+	} else if (((boolean)arg4) && ((boolean)arg6)) {
+		ivar22 = 41;
+		ivar21 = add(ivar21, ivar22);
+		setWidgetPosition(0, 8, 1, 2, new WidgetPointer(ivar12));
+		setWidgetIsHidden(false, new WidgetPointer(ivar12));
+		setWidgetIsHidden(true, new WidgetPointer(ivar13));
+		script_2955(ivar12, ivar14, ivar15, ivar16, arg5, arg9);
+	} else if (((boolean)arg4) && ((boolean)arg6)) {
+		ivar22 = 41;
+		ivar21 = add(ivar21, ivar22);
+		setWidgetPosition(0, 8, 1, 2, new WidgetPointer(ivar13));
+		setWidgetIsHidden(false, new WidgetPointer(ivar13));
+		setWidgetIsHidden(true, new WidgetPointer(ivar12));
+		script_2956(ivar13, ivar17, ivar18, ivar19, arg10);
+	} else {
+		ivar22 = 70;
+		ivar21 = add(ivar21, ivar22);
+		if (((boolean)arg7)) {
+			setWidgetPosition(0, 40, 1, 2, new WidgetPointer(ivar12));
+			setWidgetPosition(0, 10, 1, 2, new WidgetPointer(ivar13));
+		} else {
+			setWidgetPosition(0, 10, 1, 2, new WidgetPointer(ivar12));
+			setWidgetPosition(0, 40, 1, 2, new WidgetPointer(ivar13));
+		}
+		setWidgetIsHidden(false, new WidgetPointer(ivar13));
+		setWidgetIsHidden(false, new WidgetPointer(ivar12));
+		script_2955(ivar12, ivar14, ivar15, ivar16, arg5, arg9);
+		script_2956(ivar13, ivar17, ivar18, ivar19, arg10);
+	}
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(ivar9)), ivar21, 0, 0, new WidgetPointer(ivar9));
+	script_2952(ivar12, ivar13, arg0);
+	setWidgetPosition(0, ivar22, 1, 2, new WidgetPointer(ivar10));
+	setWidgetIsHidden(false, new WidgetPointer(ivar8));
+	setWidgetIsHidden(false, new WidgetPointer(ivar9));
+	setWidgetIsHidden(true, new WidgetPointer(596,6));
+	return;
+}

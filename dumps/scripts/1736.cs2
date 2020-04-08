@@ -1,0 +1,15 @@
+void script_1736(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		if (mod(getClientCycle(), 40) > 20) {
+			cs2method2103(0);
+			if (mod(getClientCycle(), 40) == 21) {
+				playSoundEffect(5009, 1, 0);
+			}
+		} else {
+			cs2method2103(255);
+		}
+	}
+	return;
+}

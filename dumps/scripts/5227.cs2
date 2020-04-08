@@ -1,0 +1,62 @@
+void script_5227() {
+	int ivar0;
+	int ivar1;
+	string svar0;
+	script_5228(4);
+	script_5228(5);
+	script_5228(6);
+	script_5228(7);
+	script_5228(8);
+	script_5228(9);
+	script_5228(10);
+	script_5228(11);
+	script_5228(12);
+	script_5228(13);
+	script_5228(14);
+	script_5228(15);
+	ivar0 = getWidgetParentUid(new WidgetPointer(1092,928));
+	if (ivar0 == -1) {
+		return;
+	}
+	ivar1 = 2;
+	if (getWidgetActualY(new WidgetPointer(1092,928)) > divide(getWidgetActualHeight(new WidgetPointer(ivar0)), 2)) {
+		ivar1 = 0;
+	}
+	svar0 = "Teleport to the keep.";
+	setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,928), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, ivar1, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,928));
+	setScriptCallOnMouseExit(40, new WidgetPointer(1092,327), "I", new WidgetPointer(1092,928));
+	setWidgetContextMenuOption(1, new WidgetPointer(1092,928), "Teleport to keep");
+	ivar1 = 2;
+	if (getWidgetActualY(new WidgetPointer(1092,931)) > divide(getWidgetActualHeight(new WidgetPointer(ivar0)), 2)) {
+		ivar1 = 0;
+	}
+	svar0 = "Teleport to the town square.";
+	setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,931), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, ivar1, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,931));
+	setScriptCallOnMouseExit(40, new WidgetPointer(1092,327), "I", new WidgetPointer(1092,931));
+	setWidgetContextMenuOption(1, new WidgetPointer(1092,931), "Teleport to town square");
+	ivar1 = 2;
+	if (getWidgetActualY(new WidgetPointer(1092,929)) > divide(getWidgetActualHeight(new WidgetPointer(ivar0)), 2)) {
+		ivar1 = 0;
+	}
+	svar0 = "Teleport to the portal.";
+	setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,929), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, ivar1, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,929));
+	setScriptCallOnMouseExit(40, new WidgetPointer(1092,327), "I", new WidgetPointer(1092,929));
+	setWidgetContextMenuOption(1, new WidgetPointer(1092,929), "Teleport to portal");
+	ivar1 = 2;
+	if (getWidgetActualY(new WidgetPointer(1092,930)) > divide(getWidgetActualHeight(new WidgetPointer(ivar0)), 2)) {
+		ivar1 = 0;
+	}
+	svar0 = "Teleport to the welcome area.";
+	setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,930), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, ivar1, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,930));
+	setScriptCallOnMouseExit(40, new WidgetPointer(1092,327), "I", new WidgetPointer(1092,930));
+	setWidgetContextMenuOption(1, new WidgetPointer(1092,930), "Teleport to welcome area");
+	ivar1 = 2;
+	if (getWidgetActualY(new WidgetPointer(1092,932)) > divide(getWidgetActualHeight(new WidgetPointer(ivar0)), 2)) {
+		ivar1 = 0;
+	}
+	svar0 = "Teleport to the battlefield.";
+	setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,932), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, ivar1, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,932));
+	setScriptCallOnMouseExit(40, new WidgetPointer(1092,327), "I", new WidgetPointer(1092,932));
+	setWidgetContextMenuOption(1, new WidgetPointer(1092,930), "Teleport to welcome area");
+	return;
+}

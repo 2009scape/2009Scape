@@ -1,0 +1,26 @@
+?? script_4889() {
+	string svar0;
+	svar0 = "";
+	setWidgetIsHidden(true, new WidgetPointer(1092,1493));
+	setWidgetIsHidden(true, new WidgetPointer(1092,1509));
+	setWidgetIsHidden(true, new WidgetPointer(1092,1501));
+	setWidgetIsHidden(true, new WidgetPointer(1092,1517));
+	setWidgetIsHidden(true, new WidgetPointer(1092,1525));
+	setWidgetIsHidden(true, new WidgetPointer(1092,1533));
+	setWidgetIsHidden(true, new WidgetPointer(1092,1541));
+	setWidgetIsHidden(true, new WidgetPointer(1092,1549));
+	setWidgetIsHidden(true, new WidgetPointer(1092,1557));
+	setWidgetIsHidden(true, new WidgetPointer(1092,1565));
+	setWidgetIsHidden(true, new WidgetPointer(1092,1573));
+	setWidgetIsHidden(true, new WidgetPointer(1092,1581));
+	setWidgetIsHidden(true, new WidgetPointer(1092,1589));
+	/* 
+		mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:107
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+			at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+			at tests.Main.main(Main.java:45)
+		
+	 */
+}

@@ -1,0 +1,4 @@
+void script_2943(int arg0) {
+	globalint_174 = arg0;
+	return;
+}

@@ -1,0 +1,7 @@
+void script_2376(int arg0,int arg1,int arg2,int arg3) {
+	if (arg0 != 1) {
+		return;
+	}
+	script_2377(arg1, arg2, arg3);
+	return;
+}

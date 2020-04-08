@@ -1,0 +1,26 @@
+void script_664(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,int arg11) {
+	if (isWidgetHidden(new WidgetPointer(arg0)) && setWidgetRegister(new WidgetPointer(arg0), 0)) {
+		if ((arg4 != -1) && (script_19(arg4, 43384906) < arg5)) {
+			setWidgetSprite(arg2);
+			return;
+		}
+		if ((arg6 != -1) && (script_19(arg6, 43384906) < arg7)) {
+			setWidgetSprite(arg2);
+			return;
+		}
+		if ((arg8 != -1) && (script_19(arg8, 43384906) < arg9)) {
+			setWidgetSprite(arg2);
+			return;
+		}
+		if ((arg10 != -1) && (script_19(arg10, 43384906) < arg11)) {
+			setWidgetSprite(arg2);
+			return;
+		}
+		if (getSkillActualLvl(23) < arg3) {
+			setWidgetSprite(arg2);
+		} else {
+			setWidgetSprite(arg1);
+		}
+	}
+	return;
+}

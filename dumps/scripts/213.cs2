@@ -1,0 +1,63 @@
+void script_213(int arg0,int arg1,int arg2,int arg3) {
+	flow_0:
+		SWITCH (bitconfig_278) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_2
+			case 3:
+				 GOTO flow_3
+		}
+		cs2method2103(255, new WidgetPointer(arg2));
+		GOTO	flow_4
+	flow_1:
+		cs2method2103(200, new WidgetPointer(arg2));
+		GOTO	flow_4
+	flow_2:
+		cs2method2103(150, new WidgetPointer(arg2));
+		GOTO	flow_4
+	flow_3:
+		cs2method2103(50, new WidgetPointer(arg2));
+	flow_4:
+		SWITCH (globalint_97) {
+			case 1:
+				 GOTO flow_5
+			case 2:
+				 GOTO flow_6
+			case 3:
+				 GOTO flow_7
+			case 4:
+				 GOTO flow_8
+			case 5:
+				 GOTO flow_9
+		}
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+		setWidgetIsHidden(false, new WidgetPointer(arg2));
+		GOTO	flow_10
+	flow_5:
+		script_2766(0, 20, arg3);
+		GOTO	flow_10
+	flow_6:
+		setWidgetIsHidden(false, new WidgetPointer(arg0));
+		setWidgetAnimation(10708, new WidgetPointer(arg1));
+		setWidgetIsHidden(true, new WidgetPointer(arg2));
+		script_2768(10, arg3);
+		GOTO	flow_10
+	flow_7:
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+		setWidgetIsHidden(true, new WidgetPointer(arg2));
+		script_2768(50, arg3);
+		GOTO	flow_10
+	flow_8:
+		setWidgetIsHidden(false, new WidgetPointer(arg0));
+		setWidgetAnimation(10712, new WidgetPointer(arg1));
+		setWidgetIsHidden(true, new WidgetPointer(arg2));
+		script_2768(115, arg3);
+		GOTO	flow_10
+	flow_9:
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+		setWidgetIsHidden(false, new WidgetPointer(arg2));
+		script_2768(50, arg3);
+	flow_10:
+		return;
+}

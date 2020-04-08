@@ -1,0 +1,17 @@
+void script_608() {
+	if (setWidgetRegister(new WidgetPointer(662,74), 0)) {
+		cs2method1305("<col=00ff00>" + globalstring_204);
+		cs2method1306("Cast");
+		if (((boolean)globalint_1436)) {
+			setWidgetContextMenuOption(1, "Cast");
+		}
+	}
+	if (setWidgetRegister(new WidgetPointer(747,17), 0)) {
+		cs2method1305("<col=00ff00>" + globalstring_204);
+		cs2method1306("Cast");
+		if (((boolean)globalint_1436)) {
+			setWidgetContextMenuOption(1, "Cast");
+		}
+	}
+	return;
+}

@@ -1,0 +1,12 @@
+void script_4573() {
+	int ivar0;
+	int ivar1;
+	ivar0 = 0;
+	ivar1 = 0;
+	if (((boolean)script_1891())) {
+		setWidgetIsHidden(false, new WidgetPointer(589,50));
+		return;
+	}
+	script_4574();
+	return;
+}

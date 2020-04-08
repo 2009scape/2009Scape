@@ -1,0 +1,100 @@
+void script_390(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	string svar0;
+	int stack_dump0;
+	ivar1 = getCommonDefinitionSize(3281);
+	ivar2 = -1;
+	ivar3 = subtract(ivar1, 1);
+	while (ivar3 >= 0) {
+		ivar2 = ((int)cs2method_3408(105, 73, 3281, ivar3));
+		if (ivar2 != -1) {
+			setWidgetIsHidden(true, new WidgetPointer(ivar2));
+		}
+		ivar3 = subtract(ivar3, 1);
+	}
+	deleteAllExtraChilds(new WidgetPointer(1028,82));
+	ivar4 = cs2method_3408(105, 74, 3278, subtract(globalint_197, 1));
+	deleteAllExtraChilds(new WidgetPointer(1028,71));
+	svar0 = "Please choose your character." + "<br>" + "<br>" + "Your choice will not affect your abilities." + "<br>" + "You can modify features like your hair style and clothing once you have chosen your character.";
+	if (ivar4 == -1) {
+		ivar1 = subtract(getWidgetActualWidth(new WidgetPointer(1028,82)), 16);
+		stack_dump0 = getMaxLineWidth(ivar1, 495, svar0);
+		ivar3 = add(multiply(getLineCount(ivar1, 495, svar0), 20), 3);
+		ivar1 = stack_dump0;
+		setWidgetSize(add(ivar1, 16), add(ivar3, 50), 0, 0, new WidgetPointer(1028,71));
+		createExtraChild(new WidgetPointer(1028,71), 4, getExtraChildGap(new WidgetPointer(1028,71)));
+		setWidgetSize(ivar1, ivar3, 0, 0);
+		setWidgetPosition(0, 22, 1, 0);
+		setWidgetFont(3793);
+		setWidgetRGB(new Color(0, 0, 0));
+		setWidgetUnknownBoolean(false);
+		setWidgetTextAlignment(1, 1, 20);
+		setWidgetText(svar0);
+		setWidgetIsHidden(false, new WidgetPointer(1028,71));
+		return;
+	}
+	setWidgetIsHidden(true, new WidgetPointer(1028,71));
+	ivar5 = 0;
+	ivar3 = 0;
+	ivar6 = script_384(0, ivar4, arg0);
+	ivar7 = subtract(globalint_86, 1);
+	ivar2 = ((int)cs2method_3408(105, 73, 3281, 0));
+	while ((ivar6 != -1) && (ivar2 != -1)) {
+		setWidgetSize(98, 17, 0, 1, new WidgetPointer(ivar2));
+		if (ivar3 == ivar7) {
+			ivar5 = 1;
+		} else {
+			ivar5 = 0;
+		}
+		script_363(ivar2, ivar7, 3281, getOtherCommonData(ivar6, 1181), 1, 85, 181, 1, ivar5, "", "");
+		setWidgetContextMenuOption(1, new WidgetPointer(ivar2), "Select outfit");
+		setScriptCallOnClickContextMenu(352, -2147483644, add(ivar3, 1), "ii", new WidgetPointer(ivar2));
+		ivar3 = add(ivar3, 1);
+		ivar6 = script_384(ivar3, ivar4, arg0);
+		ivar2 = ((int)cs2method_3408(105, 73, 3281, ivar3));
+	}
+	ivar8 = ivar3;
+	if (ivar8 <= 1) {
+		if (setWidgetRegister(new WidgetPointer(1028,37), subtract(getExtraChildGap(new WidgetPointer(1028,37)), 1))) {
+			setWidgetHidden(0);
+		}
+		if (setWidgetRegister(new WidgetPointer(1028,37), subtract(getExtraChildGap(new WidgetPointer(1028,37)), 2))) {
+			setWidgetHidden(1);
+		}
+		if (ivar8 <= 0) {
+			return;
+		}
+	} else {
+		if (setWidgetRegister(new WidgetPointer(1028,37), subtract(getExtraChildGap(new WidgetPointer(1028,37)), 1))) {
+			setWidgetHidden(1);
+		}
+		if (setWidgetRegister(new WidgetPointer(1028,37), subtract(getExtraChildGap(new WidgetPointer(1028,37)), 2))) {
+			setWidgetHidden(0);
+		}
+	}
+	ivar9 = min(divide(subtract(390, 98), max(subtract(ivar8, 1), 1)), multiplyDivide(33, 40, 89));
+	ivar3 = 0;
+	while (ivar3 < ivar8) {
+		ivar2 = ((int)cs2method_3408(105, 73, 3281, ivar3));
+		if (ivar3 == ivar7) {
+			setWidgetPosition(multiply(ivar3, ivar9), 0, 0, 0, new WidgetPointer(ivar2));
+		} else {
+			setWidgetPosition(multiply(ivar3, ivar9), 0, 0, 2, new WidgetPointer(ivar2));
+		}
+		if (ivar3 <= ivar7) {
+			cs2method202(ivar2);
+		} else {
+			cs2method203(ivar2);
+		}
+		ivar3 = add(ivar3, 1);
+	}
+	return;
+}

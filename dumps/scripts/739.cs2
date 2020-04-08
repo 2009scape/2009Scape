@@ -1,0 +1,38 @@
+int script_739(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	arg0 = subtract(arg0, 1);
+	ivar1 = 1;
+	ivar2 = 1;
+	ivar3 = 0;
+	globalarray_0 = new int[36];
+	ivar4 = 0;
+	if (globalint_103 != bitconfig_4227) {
+		globalint_103 = bitconfig_4227;
+	}
+	ivar3 = globalint_103;
+	while (ivar1 <= 12) {
+		while (ivar2 <= 3) {
+			ivar4 = mod(ivar3, 36);
+			while (globalarray_0[ivar4] != 0) {
+				ivar4 = add(ivar4, 1);
+				if (ivar4 == 36) {
+					ivar4 = 0;
+				}
+			}
+			if (ivar4 == arg0) {
+				return ivar1;
+			}
+			globalarray_0[ivar4] = ivar1;
+			ivar3 = multiply(ivar3, ivar3);
+			ivar3 = subtract(ivar3, multiply(divide(ivar3, 1000000), 1000000));
+			ivar3 = divide(ivar3, 100);
+			ivar2 = add(ivar2, 1);
+		}
+		ivar1 = add(ivar1, 1);
+		ivar2 = 1;
+	}
+	return 0;
+}

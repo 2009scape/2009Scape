@@ -1,0 +1,53 @@
+void script_1664(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int stack_dump0;
+	cs2func_script_1467_struct(2,0,0) structdump_1;
+	cs2func_script_1467_struct(2,0,0) structdump_2;
+	if (getClientCycle() < arg0) {
+		return;
+	}
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(762,93));
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = getItemContainerLength(95);
+	script_41(49938529);
+	stack_dump0 = bitconfig_4893;
+	structdump_1 = script_1467(stack_dump0);
+	ivar2 = structdump_1.intpart_1;
+	ivar1 = structdump_1.intpart_0;
+	while (ivar3 < ivar5) {
+		if (setWidgetRegister(new WidgetPointer(762,93), ivar3)) {
+			setWidgetHidden(1);
+			if (getItemIdInSlot(95, ivar3) != -1) {
+				script_1453(ivar3);
+			} else {
+				setItemOnWidgetMethod1200(-1, -1);
+				setWidgetNoOptions();
+			}
+		}
+		ivar3 = add(ivar3, 1);
+	}
+	if (((boolean)bitconfig_4893)) {
+		if (globalint_5 == 11) {
+			globalstring_138 = globalstring_22;
+		}
+		script_1479(globalstring_138);
+	} else if (((boolean)bitconfig_4893)) {
+		script_1456();
+	} else {
+		stack_dump0 = bitconfig_4893;
+		structdump_2 = script_1467(stack_dump0);
+		script_1457(structdump_2.intpart_0, structdump_2.intpart_1);
+	}
+	if ((bitconfig_4893 != 0) && ((boolean)globalint_188)) {
+		script_1474();
+	}
+	script_1459();
+	return;
+}

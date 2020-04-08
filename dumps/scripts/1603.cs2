@@ -1,0 +1,31 @@
+void script_1603(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	opcStruct5209(2,0,0) structdump_0;
+	if (cs2method5220()) {
+		return;
+	}
+	ivar2 = add(15, max(subtract(globalint_1030, getClientCycle()), 0));
+	globalint_1030 = min(max(add(globalint_1030, 2), add(getClientCycle(), 2)), add(getClientCycle(), 25));
+	switch (globalint_172) {
+		case 37:
+			ivar2 = multiply(ivar2, 5);
+			break;
+		case 50:
+			ivar2 = multiply(ivar2, 4);
+			break;
+		case 75:
+			ivar2 = multiply(ivar2, 3);
+			break;
+		case 100:
+			ivar2 = multiply(ivar2, 2);
+	}
+	ivar3 = 0;
+	ivar4 = 0;
+	structdump_0 = cs2method5209();
+	ivar4 = structdump_0.intpart_1;
+	ivar3 = structdump_0.intpart_0;
+	cs2method5221(addToCoordinate(0, max(add(ivar3, multiply(arg0, ivar2)), 0), 0, max(add(ivar4, multiply(arg1, ivar2)), 0)));
+	return;
+}

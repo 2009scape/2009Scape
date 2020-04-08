@@ -1,0 +1,17 @@
+cs2func_script_3354_struct(1,1,0) script_3354(int arg0) {
+	switch (arg0) {
+		case 0:
+			return newstruct cs2func_script_3354_struct(0, "Bosses");
+		case 1:
+			return newstruct cs2func_script_3354_struct(0, "Floors");
+		case 2:
+			return newstruct cs2func_script_3354_struct(0, "Item Binding");
+		case 3:
+			return newstruct cs2func_script_3354_struct(0, "Rewards");
+		case 4:
+			return newstruct cs2func_script_3354_struct(0, "Areas");
+		case 5:
+			return newstruct cs2func_script_3354_struct(0, "Milestones");
+	}
+	return newstruct cs2func_script_3354_struct(-1, "");
+}

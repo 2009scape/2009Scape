@@ -1,0 +1,206 @@
+cs2func_script_990_struct(2,2,0) script_990(int arg0,int arg1) {
+	switch (arg0) {
+		case 0:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_990_struct(1, 1511, "Normal tree", "You can now chop down " + "<col=000080>" + "normal trees" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_990_struct(1, 2862, "Members: Achey tree", "Members can now chop down " + "<col=000080>" + "achey trees" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_990_struct(10, 6281, "Members: Light jungle" + "<br>" + " (after Jungle Potion)", "Members now have the Woodcutting level required to clear " + "<col=000080>" + "light jungle" + "</col>" + " in Tai Bwo Wannai Clean-up (after Jungle Potion).");
+				case 3:
+					return newstruct cs2func_script_990_struct(15, 1521, "Oak tree", "You can now chop down " + "<col=000080>" + "oak trees" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_990_struct(20, 6283, "Members: Medium jungle" + "<br>" + " (after Jungle Potion)", "Members now have the Woodcutting level required to clear " + "<col=000080>" + "medium jungle" + "</col>" + " in Tai Bwo Wannai Clean-up (after Jungle Potion).");
+				case 5:
+					return newstruct cs2func_script_990_struct(30, 1519, "Willow tree", "You can now chop down " + "<col=000080>" + "willow trees" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_990_struct(35, 6285, "Members: Dense jungle" + "<br>" + " (after Jungle Potion)", "Members now have the Woodcutting level required to clear " + "<col=000080>" + "dense jungle" + "</col>" + " in Tai Bwo Wannai Clean-up (after Jungle Potion).");
+				case 7:
+					return newstruct cs2func_script_990_struct(35, 6333, "Members: Teak tree" + "<br>" + " (after Jungle Potion)", "Members now have the Woodcutting level required to chop down " + "<col=000080>" + "teak trees" + "</col>" + " (after Jungle Potion).");
+				case 8:
+					return newstruct cs2func_script_990_struct(37, 13756, "Members: Cursed willow tree roots" + "<br>" + " (after starting Summer's End)", "Members now have the Woodcutting level required to chop " + "<col=000080>" + "cursed willow tree roots" + "</col>" + " (after starting Summer's End).");
+				case 9:
+					return newstruct cs2func_script_990_struct(45, 1517, "Maple tree", "You can now chop down " + "<col=000080>" + "maple trees" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_990_struct(45, 3239, "Members: Hollow tree", "Members can now chop down " + "<col=000080>" + "hollow trees" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_990_struct(50, 6332, "Members: Mahogany tree" + "<br>" + " (after Jungle Potion)", "Members now have the Woodcutting level required to chop down " + "<col=000080>" + "mahogany trees" + "</col>" + " (after Jungle Potion).");
+				case 12:
+					return newstruct cs2func_script_990_struct(54, 10810, "Members: Arctic pine tree", "Members can now chop down " + "<col=000080>" + "arctic pine trees" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_990_struct(58, 12581, "Members: Eucalyptus tree", "Members can now chop down " + "<col=000080>" + "eucalyptus trees" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_990_struct(60, 1515, "Yew tree", "You can now chop down " + "<col=000080>" + "yew trees" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_990_struct(68, 15288, "Members: Choking ivy", "Members can now chop down " + "<col=000080>" + "choking ivy" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_990_struct(75, 1513, "Members: Magic tree", "Members can now chop down " + "<col=000080>" + "magic trees" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_990_struct(76, 21600, "Members: Blisterwood tree", "Members can now chop logs from the " + "<col=000080>" + "Blisterwood tree" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_990_struct(80, 8794, "Members: Sawmill training", "Members can now participate in " + "<col=000080>" + "sawmill training" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_990_struct(82, 13567, "Members: Cursed magic tree" + "<br>" + " (after Spirit of Summer)", "Members now have the Woodcutting level required to chop down " + "<col=000080>" + "cursed magic trees" + "</col>" + " (after Spirit of Summer).");
+				case 20:
+					return newstruct cs2func_script_990_struct(83, 21349, "Members: Straight root", "Members can now chop down " + "<col=000080>" + "straight roots" + "</col>" + " in the jadinko lair.");
+				case 21:
+					return newstruct cs2func_script_990_struct(83, 21350, "Members: Curly root", "Members can now chop down " + "<col=000080>" + "curly roots" + "</col>" + " in the jadinko lair.");
+				case 22:
+					return newstruct cs2func_script_990_struct(83, 21369, "Members: Mutated root", "Members can now chop down " + "<col=000080>" + "mutated roots" + "</col>" + " in the jadinko lair.");
+			}
+			break;
+		case 1:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_990_struct(1, 21340, "Members: Dwarven Army Axe", "Members can now use a " + "<col=000080>" + "Dwarven Army Axe" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_990_struct(1, 1351, "Bronze hatchet", "You can now use " + "<col=000080>" + "bronze hatchets" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_990_struct(1, 1349, "Iron hatchet", "You can now use " + "<col=000080>" + "iron hatchets" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_990_struct(6, 1353, "Steel hatchet", "You can now use " + "<col=000080>" + "steel hatchets" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_990_struct(6, 1361, "Black hatchet", "You can now use " + "<col=000080>" + "black hatchets" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_990_struct(21, 1355, "Mithril hatchet", "You can now use " + "<col=000080>" + "mithril hatchets" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_990_struct(31, 1357, "Adamant hatchet", "You can now use " + "<col=000080>" + "adamant hatchets" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_990_struct(40, 14108, "Members: Sacred clay hatchet", "Members can now use " + "<col=000080>" + "sacred clay hatchets" + "</col>");
+				case 8:
+					return newstruct cs2func_script_990_struct(40, 14100, "Members: Volatile hatchet", "Members can now use " + "<col=000080>" + "volatile hatchets" + "</col>");
+				case 9:
+					return newstruct cs2func_script_990_struct(41, 1359, "Rune hatchet", "You can now use " + "<col=000080>" + "rune hatchets" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_990_struct(61, 6739, "Members: Dragon hatchet", "Members can now use " + "<col=000080>" + "dragon hatchets" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_990_struct(61, 13661, "Members: Inferno Adze" + "<br>" + " (after All Fired Up, with 92 Firemaking)", "Members can now use the " + "<col=000080>" + "Inferno Adze" + "</col>" + " to chop down trees (after All Fired Up and with level 92 Firemaking).");
+			}
+			break;
+		case 2:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_990_struct(12, 7414, "Log canoe", "You can now make " + "<col=000080>" + "log canoes" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_990_struct(27, 7414, "Dugout canoe", "You can now make " + "<col=000080>" + "dugout canoes" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_990_struct(42, 7414, "Stable dugout canoe", "You can now make " + "<col=000080>" + "stable dugout canoes" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_990_struct(57, 7414, "Waka canoe", "You can now make " + "<col=000080>" + "waka canoes" + "</col>" + ".");
+			}
+			break;
+		case 3:
+			if (((boolean)arg1)) {
+				return newstruct cs2func_script_990_struct(44, 10939, "Lumberjack clothing", "Members can now wear the " + "<col=000080>" + "undead lumberjack" + "</col>" + " clothing.");
+			}
+			if (((boolean)arg1)) {
+				return newstruct cs2func_script_990_struct(54, 10826, "Fremennik round shield", "Members can now make " + "<col=000080>" + "Fremennik round shields" + "</col>" + ".");
+			}
+			if (arg1 == 2) {
+				return newstruct cs2func_script_990_struct(54, 10812, "Split arctic pine logs", "Members can now split " + "<col=000080>" + "arctic pine logs" + "</col>" + ".");
+			}
+			break;
+		case 4:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_990_struct(91, 18778, "Members: Starved ancient effigies", "Members can now investigate " + "<col=000080>" + "starved ancient effigies" + "</col>" + " using their knowledge of Woodcutting.");
+				case 1:
+					return newstruct cs2func_script_990_struct(93, 18779, "Members: Nourished ancient effigies", "Members can now investigate " + "<col=000080>" + "nourished ancient effigies" + "</col>" + " using their knowledge of Woodcutting.");
+				case 2:
+					return newstruct cs2func_script_990_struct(95, 18780, "Members: Sated ancient effigies", "Members can now investigate " + "<col=000080>" + "sated ancient effigies" + "</col>" + " using their knowledge of Woodcutting.");
+				case 3:
+					return newstruct cs2func_script_990_struct(97, 18781, "Members: Gorged ancient effigies", "Members can now investigate " + "<col=000080>" + "gorged ancient effigies" + "</col>" + " using their knowledge of Woodcutting.");
+			}
+			break;
+		case 5:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_990_struct(1, 14667, "Chop basic evil tree", "Members can now chop " + "<col=000080>" + "basic evil trees" + "</col>");
+				case 1:
+					return newstruct cs2func_script_990_struct(1, 14132, "Stealing Creation - class 1 hatchet", "Members can now use " + "<col=000080>" + "class 1 hatchets" + "</col>" + " in Stealing Creation.");
+				case 2:
+					return newstruct cs2func_script_990_struct(15, 14667, "Chop evil oak tree", "Members can now chop " + "<col=000080>" + "evil oak trees" + "</col>");
+				case 3:
+					return newstruct cs2func_script_990_struct(20, 14184, "Stealing Creation - woodcut class 2 sacred clay", "Members can now woodcut " + "<col=000080>" + "class 2 sacred clay" + "</col>" + " in Stealing Creation.");
+				case 4:
+					return newstruct cs2func_script_990_struct(20, 14134, "Stealing Creation - class 2 hatchet", "Members can now use " + "<col=000080>" + "class 2 hatchets" + "</col>" + " in Stealing Creation.");
+				case 5:
+					return newstruct cs2func_script_990_struct(30, 14667, "Chop evil willow tree", "Members can now chop " + "<col=000080>" + "evil willow trees" + "</col>");
+				case 6:
+					return newstruct cs2func_script_990_struct(40, 14186, "Stealing Creation - woodcut class 3 sacred clay", "Members can now woodcut " + "<col=000080>" + "class 3 sacred clay" + "</col>" + " in Stealing Creation.");
+				case 7:
+					return newstruct cs2func_script_990_struct(40, 14136, "Stealing Creation - class 3 hatchet", "Members can now use " + "<col=000080>" + "class 3 hatchets" + "</col>" + " in Stealing Creation.");
+				case 8:
+					return newstruct cs2func_script_990_struct(45, 14667, "Chop evil maple tree", "Members can now chop " + "<col=000080>" + "evil maple trees" + "</col>");
+				case 9:
+					return newstruct cs2func_script_990_struct(60, 14667, "Chop evil yew tree", "Members can now chop " + "<col=000080>" + "evil yew trees" + "</col>");
+				case 10:
+					return newstruct cs2func_script_990_struct(60, 14188, "Stealing Creation - woodcut class 4 sacred clay", "Members can now woodcut " + "<col=000080>" + "class 4 sacred clay" + "</col>" + " in Stealing Creation.");
+				case 11:
+					return newstruct cs2func_script_990_struct(60, 14138, "Stealing Creation - class 4 hatchet", "Members can now use " + "<col=000080>" + "class 4 hatchets" + "</col>" + " in Stealing Creation.");
+				case 12:
+					return newstruct cs2func_script_990_struct(75, 14667, "Chop evil magic tree", "Members can now chop " + "<col=000080>" + "evil magic trees" + "</col>");
+				case 13:
+					return newstruct cs2func_script_990_struct(80, 14190, "Stealing Creation - woodcut class 5 sacred clay", "Members can now woodcut " + "<col=000080>" + "class 5 sacred clay" + "</col>" + " in Stealing Creation.");
+				case 14:
+					return newstruct cs2func_script_990_struct(80, 14140, "Stealing Creation - class 5 hatchet", "Members can now use " + "<col=000080>" + "class 5 hatchets" + "</col>" + " in Stealing Creation.");
+				case 15:
+					return newstruct cs2func_script_990_struct(85, 14667, "Chop elder evil tree", "Members can now chop " + "<col=000080>" + "elder evil trees" + "</col>");
+			}
+			break;
+		case 6:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_990_struct(-1, 15707, "Dungeoneering skill tasks" + "<br>" + "As your Woodcutting level increases, you will be able to attempt higher-level woodcutting tasks within Daemonheim. You will also be more likely to succeed when attempting woodcutting tasks within Daemonheim.", "");
+				case 1:
+					return newstruct cs2func_script_990_struct(1, 17682, "Tangle gum tree (Tier 1)", "You can now chop down " + "<col=000080>" + "tangle gum trees" + "</col>" + " within Daemonheim.");
+				case 2:
+					return newstruct cs2func_script_990_struct(1, 16361, "Novite hatchet (Tier 1)", "You can now use " + "<col=000080>" + "novite hatchets" + "</col>" + " within Daemonheim.");
+				case 3:
+					return newstruct cs2func_script_990_struct(10, 17684, "Seeping elm tree (Tier 2)", "You can now chop " + "<col=000080>" + "seeping elm trees" + "</col>" + " within Daemonheim.");
+				case 4:
+					return newstruct cs2func_script_990_struct(10, 16363, "Bathus hatchet (Tier 2)", "You can now use " + "<col=000080>" + "bathus hatchets" + "</col>" + " within Daemonheim.");
+				case 5:
+					return newstruct cs2func_script_990_struct(20, 17686, "Blood spindle tree (Tier 3)", "You can now chop down " + "<col=000080>" + "blood spindle trees" + "</col>" + " within Daemonheim.");
+				case 6:
+					return newstruct cs2func_script_990_struct(20, 16365, "Marmaros hatchet (Tier 3)", "You can now use " + "<col=000080>" + "marmaros hatchets" + "</col>" + " within Daemonheim.");
+				case 7:
+					return newstruct cs2func_script_990_struct(30, 17688, "Utuku tree (Tier 4)", "You can now chop down " + "<col=000080>" + "utuku trees" + "</col>" + " within Daemonheim.");
+				case 8:
+					return newstruct cs2func_script_990_struct(30, 16367, "Kratonite hatchet (Tier 4)", "You can now use " + "<col=000080>" + "kratonite hatchets" + "</col>" + " within Daemonheim.");
+				case 9:
+					return newstruct cs2func_script_990_struct(40, 17690, "Spinebeam tree (Tier 5)", "You can now chop down " + "<col=000080>" + "spinebeam trees" + "</col>" + " within Daemonheim.");
+				case 10:
+					return newstruct cs2func_script_990_struct(40, 16369, "Fractite hatchet (Tier 5)", "You can now use " + "<col=000080>" + "fractite hatchets" + "</col>" + " within Daemonheim.");
+				case 11:
+					return newstruct cs2func_script_990_struct(50, 17692, "Members: Bovistrangler tree (Tier 6)", "Members can now chop down " + "<col=000080>" + "bovistrangler trees" + "</col>" + " within Daemonheim.");
+				case 12:
+					return newstruct cs2func_script_990_struct(50, 16371, "Members: Zephyrium hatchet (Tier 6)", "Members can now use " + "<col=000080>" + "zephyrium hatchets" + "</col>" + " within Daemonheim.");
+				case 13:
+					return newstruct cs2func_script_990_struct(60, 17694, "Members: Thigat tree (Tier 7)", "Members can now chop down " + "<col=000080>" + "thigat trees" + "</col>" + " within Daemonheim.");
+				case 14:
+					return newstruct cs2func_script_990_struct(60, 16373, "Members: Argonite hatchet (Tier 7)", "Members can now use " + "<col=000080>" + "argonite hatchets" + "</col>" + " within Daemonheim.");
+				case 15:
+					return newstruct cs2func_script_990_struct(70, 17696, "Members: Corpsethorn tree (Tier 8)", "Members can now chop down " + "<col=000080>" + "corpsethorn trees" + "</col>" + " within Daemonheim.");
+				case 16:
+					return newstruct cs2func_script_990_struct(70, 16375, "Members: Katagon hatchet (Tier 8)", "Members can now use " + "<col=000080>" + "katagon hatchets" + "</col>" + " within Daemonheim.");
+				case 17:
+					return newstruct cs2func_script_990_struct(80, 17698, "Members: Entgallow tree (Tier 9)", "Members can now chop down " + "<col=000080>" + "entgallow trees" + "</col>" + " within Daemonheim.");
+				case 18:
+					return newstruct cs2func_script_990_struct(80, 16377, "Members: Gorgonite hatchet (Tier 9)", "Members can now use " + "<col=000080>" + "gorgonite hatchets" + "</col>" + " within Daemonheim.");
+				case 19:
+					return newstruct cs2func_script_990_struct(90, 17700, "Members: Grave creeper tree (Tier 10)", "Members can now chop down " + "<col=000080>" + "grave creeper trees" + "</col>" + " within Daemonheim.");
+				case 20:
+					return newstruct cs2func_script_990_struct(90, 16379, "Members: Promethium hatchet (Tier 10)", "Members can now use " + "<col=000080>" + "promethium hatchets" + "</col>" + " within Daemonheim.");
+				case 21:
+					return newstruct cs2func_script_990_struct(99, 16381, "Members: Primal hatchet (Tier 11)", "Members can now use primal hatchets" + "</col>" + " within Daemonheim.");
+			}
+			break;
+		case 7:
+			if (((boolean)arg1)) {
+				return newstruct cs2func_script_990_struct(99, 9807, "Skill mastery", "<col=000080>" + "Congratulations! You are now a master of " + "<col=800000>" + "Woodcutting" + "<col=000080>" + ". Members can visit " + "<col=800000>" + "Wilfred" + "<col=000080>" + ", just to the north of " + "<col=800000>" + "Falador" + "<col=000080>" + ". He has something special that is only available to true masters of the " + "<col=800000>" + "Woodcutting" + "<col=000080>" + " skill!");
+			}
+	}
+	return newstruct cs2func_script_990_struct(0, -1, "", "");
+}

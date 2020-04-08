@@ -1,0 +1,9 @@
+void script_2604() {
+	playSoundEffect(6784, 1, 0);
+	setWidgetIsHidden(false, new WidgetPointer(292,130));
+	setWidgetText(new WidgetPointer(292,132), "Are you sure you wish to reset all your squad contract selections?");
+	setWidgetIsHidden(true, new WidgetPointer(292,135));
+	setWidgetIsHidden(true, new WidgetPointer(292,137));
+	setWidgetIsHidden(false, new WidgetPointer(292,134));
+	return;
+}

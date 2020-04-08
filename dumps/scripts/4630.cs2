@@ -1,0 +1,4 @@
+void script_4630() {
+	script_4465(globalstring_126);
+	return;
+}

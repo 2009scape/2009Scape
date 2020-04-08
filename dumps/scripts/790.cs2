@@ -1,0 +1,128 @@
+void script_790() {
+	if (((boolean)standart_config_261)) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,4));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,4));
+	}
+	if (standart_config_261 == 2) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,21));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,21));
+	}
+	if (standart_config_261 == 3) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,22));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,22));
+	}
+	if (standart_config_261 == 4) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,23));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,23));
+	}
+	if (standart_config_261 == 5) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,24));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,24));
+	}
+	if (standart_config_261 == 6) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,25));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,25));
+	}
+	if (standart_config_261 == 7) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,27));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,27));
+	}
+	if (standart_config_261 == 8) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,5));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,5));
+	}
+	if (standart_config_261 == 9) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,6));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,6));
+	}
+	if (standart_config_261 == 10) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,8));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,8));
+	}
+	if (standart_config_261 == 11) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,26));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,26));
+	}
+	if (standart_config_261 == 12) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,9));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,9));
+	}
+	if (standart_config_261 == 13) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,12));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,12));
+	}
+	if (standart_config_261 == 14) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,13));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,13));
+	}
+	if (standart_config_261 == 15) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,7));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,7));
+	}
+	if (standart_config_261 == 16) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,15));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,15));
+	}
+	if (standart_config_261 == 17) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,16));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,16));
+	}
+	if (standart_config_261 == 18) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,17));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,17));
+	}
+	if (standart_config_261 == 19) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,18));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,18));
+	}
+	if (standart_config_261 == 20) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,10));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,10));
+	}
+	if (standart_config_261 == 21) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,11));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,11));
+	}
+	if (standart_config_261 == 22) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,19));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,19));
+	}
+	if (standart_config_261 == 23) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,14));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,14));
+	}
+	if (standart_config_261 == 24) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,20));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,20));
+	}
+	if (standart_config_261 == 25) {
+		setWidgetIsHidden(false, new WidgetPointer(1139,28));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1139,28));
+	}
+	return;
+}

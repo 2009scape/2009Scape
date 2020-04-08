@@ -1,0 +1,41 @@
+int script_2879(int arg0,int arg1,int arg2) {
+	string svar0;
+	svar0 = "Remove from Playlist";
+	if (setWidgetRegister(new WidgetPointer(187,9), arg0) && setWidgetRegister(new WidgetPointer(187,9), add(arg0, 12))) {
+		if (arg1 == 32767) {
+			setWidgetHidden(1);
+			setWidgetHidden(1);
+			return arg2;
+		}
+		setWidgetPosition(15, arg2, 0, 0);
+		setWidgetTextAlignment(0, 1, 0);
+		if ((bitconfig_4388 == arg1) && ((boolean)bitconfig_7078)) {
+			setWidgetRGB(new Color(255, 255, 102));
+			setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), -2147483643, 16777062, "Iii");
+		} else {
+			setWidgetRGB(new Color(0, 255, 255));
+			setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), -2147483643, 65535, "Iii");
+		}
+		setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), -2147483643, 16777215, "Iii");
+		setWidgetText(getCommonString(1345, arg1));
+		setWidgetSize(150, 15, 0, 0);
+		setWidgetContextMenuOption(1, "Play");
+		setWidgetContextMenuOption(2, "Remove");
+		cs2method1305(getCommonString(1345, arg1));
+		cs2method1305(getCommonString(1345, arg1));
+		setWidgetUnknownBoolean(false);
+		setWidgetFont(494);
+		cs2method1301(12255241, -1);
+		cs2method1301(-1, -1);
+		cs2method1302(2);
+		setWidgetSize(12, 12, 0, 0);
+		setWidgetPosition(2, add(arg2, 1), 0, 0);
+		setWidgetContextMenuOption(2, "Remove");
+		setWidgetSprite(2430);
+		setScriptCallOnClickContextMenu(2885, new WidgetPointer(-32768,3), -2147483643, 150, 0, 20, -2147483644, "Iiiiii");
+		setScriptCallOnMouseOver(1160, new WidgetPointer(187,9), -2147483643, new WidgetPointer(187,16), svar0, 25, 189, "IiIsii");
+		setScriptCallOnMouseExit(40, new WidgetPointer(187,16), "I");
+		setScriptCallOnMousePressed(40, new WidgetPointer(187,16), "I");
+	}
+	return add(arg2, 15);
+}

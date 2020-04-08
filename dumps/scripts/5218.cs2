@@ -1,0 +1,32 @@
+void script_5218(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	ivar5 = 0;
+	ivar6 = 0;
+	setWidgetIsHidden(false, new WidgetPointer(getWidgetParentUid(new WidgetPointer(arg0))));
+	if (arg3 > 0) {
+		setScriptCallOnGameloop(5218, new WidgetPointer(arg0), new WidgetPointer(arg1), arg2, subtract(arg3, 1), new WidgetPointer(arg4), "IIiiI", new WidgetPointer(arg4));
+		return;
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), 0)) {
+		ivar5 = cs2method1609();
+		if (((boolean)arg2)) {
+			ivar6 = subtract(ivar5, 22);
+		} else {
+			ivar6 = add(ivar5, 22);
+		}
+		ivar6 = max(ivar6, 0);
+		ivar6 = min(ivar6, 255);
+	}
+	script_4161(arg0, ivar6);
+	script_4161(arg1, ivar6);
+	if (((boolean)ivar6) && ((boolean)arg2)) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg4));
+	} else if ((ivar6 == 255) && ((boolean)arg2)) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg4));
+		setWidgetIsHidden(true, new WidgetPointer(getWidgetParentUid(new WidgetPointer(arg0))));
+	} else {
+		setScriptCallOnGameloop(5218, new WidgetPointer(arg0), new WidgetPointer(arg1), arg2, 0, new WidgetPointer(arg4), "IIiiI", new WidgetPointer(arg4));
+	}
+	return;
+}

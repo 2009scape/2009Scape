@@ -1,0 +1,5 @@
+void script_4865() {
+	int ivar0;
+	ivar0 = add(0, 1);
+	return;
+}

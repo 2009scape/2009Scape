@@ -1,0 +1,22 @@
+void script_4629(int arg0) {
+	int ivar1;
+	ivar1 = 0;
+	if (setWidgetRegister(new WidgetPointer(1110,20))) {
+		if (((boolean)arg0)) {
+			ivar1 = add(getWidgetActualWidth(), 3);
+			ivar1 = min(31, ivar1);
+			if (ivar1 == 31) {
+				setScriptCallOnGameloop(-1, "");
+			}
+		} else {
+			ivar1 = subtract(getWidgetActualWidth(), 3);
+			ivar1 = max(1, ivar1);
+			if (((boolean)ivar1)) {
+				setScriptCallOnGameloop(-1, "");
+				setWidgetIsHidden(true, new WidgetPointer(1110,13));
+			}
+		}
+		setWidgetSize(ivar1, 19, 0, 0);
+	}
+	return;
+}

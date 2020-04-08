@@ -1,0 +1,9 @@
+void script_1800(int arg0) {
+	script_915(arg0);
+	if (standart_config_1149 != -1) {
+		script_1801();
+	} else {
+		script_1802();
+	}
+	return;
+}

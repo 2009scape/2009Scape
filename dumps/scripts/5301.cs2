@@ -1,0 +1,31 @@
+void script_5301() {
+	if (((boolean)bitconfig_9888)) {
+		setWidgetRGB(new Color(170, 170, 0), new WidgetPointer(824,13));
+		setWidgetText(new WidgetPointer(824,59), "On");
+	} else {
+		setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(824,13));
+		setWidgetText(new WidgetPointer(824,59), "Off");
+	}
+	if (((boolean)bitconfig_9889)) {
+		setWidgetRGB(new Color(170, 170, 0), new WidgetPointer(824,100));
+		setWidgetText(new WidgetPointer(824,101), "On");
+	} else {
+		setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(824,100));
+		setWidgetText(new WidgetPointer(824,101), "Off");
+	}
+	if (((boolean)bitconfig_9890)) {
+		setWidgetRGB(new Color(170, 170, 0), new WidgetPointer(824,153));
+		setWidgetText(new WidgetPointer(824,154), "On");
+	} else {
+		setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(824,153));
+		setWidgetText(new WidgetPointer(824,154), "Off");
+	}
+	if (((boolean)bitconfig_9891)) {
+		setWidgetRGB(new Color(170, 170, 0), new WidgetPointer(824,190));
+		setWidgetText(new WidgetPointer(824,191), "On");
+	} else {
+		setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(824,190));
+		setWidgetText(new WidgetPointer(824,191), "Off");
+	}
+	return;
+}

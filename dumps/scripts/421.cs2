@@ -1,0 +1,101 @@
+void script_421(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int stack_dump0;
+	int stack_dump1;
+	cs2func_script_422_struct(2,0,0) structdump_2;
+	cs2func_script_422_struct(2,0,0) structdump_3;
+	cs2func_script_422_struct(2,0,0) structdump_4;
+	cs2func_script_422_struct(2,0,0) structdump_5;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 5;
+	ivar6 = 5;
+	ivar7 = 0;
+	ivar8 = 0;
+	ivar9 = 0;
+	ivar10 = 0;
+	if (cameraGetVrot() < arg0) {
+		ivar9 = subtract(arg0, cameraGetVrot());
+	} else {
+		if (cameraGetVrot() > arg0) {
+			ivar9 = subtract(cameraGetVrot(), arg0);
+		}
+	}
+	if (cameraGetHrot() < arg1) {
+		ivar8 = subtract(arg1, cameraGetHrot());
+		ivar7 = add(subtract(2047, arg1), cameraGetHrot());
+		if (ivar7 > ivar8) {
+			ivar10 = ivar8;
+			stack_dump0 = ivar9;
+			stack_dump1 = ivar10;
+			structdump_2 = script_422(stack_dump0, stack_dump1);
+			ivar6 = structdump_2.intpart_1;
+			ivar5 = structdump_2.intpart_0;
+			cameraMethod5504(cameraGetVrot(), min(add(cameraGetHrot(), ivar6), arg1));
+		} else {
+			ivar10 = ivar7;
+			stack_dump0 = ivar9;
+			stack_dump1 = ivar10;
+			structdump_3 = script_422(stack_dump0, stack_dump1);
+			ivar6 = structdump_3.intpart_1;
+			ivar5 = structdump_3.intpart_0;
+			if (((boolean)arg2)) {
+				cameraMethod5504(cameraGetVrot(), max(subtract(cameraGetHrot(), ivar6), 0));
+			} else {
+				cameraMethod5504(cameraGetVrot(), max(subtract(cameraGetHrot(), ivar6), arg1));
+			}
+			if (((boolean)cameraGetHrot()) && ((boolean)arg2)) {
+				cameraMethod5504(cameraGetVrot(), 2047);
+				setScriptCallOnGameloop(421, arg0, arg1, 1, "iii", new WidgetPointer(1013,0));
+			}
+		}
+	} else if (cameraGetHrot() > arg1) {
+		ivar8 = add(subtract(2047, cameraGetHrot()), arg1);
+		ivar7 = subtract(cameraGetHrot(), arg1);
+		if (ivar7 > ivar8) {
+			ivar10 = ivar8;
+			stack_dump0 = ivar9;
+			stack_dump1 = ivar10;
+			structdump_4 = script_422(stack_dump0, stack_dump1);
+			ivar6 = structdump_4.intpart_1;
+			ivar5 = structdump_4.intpart_0;
+			if (((boolean)arg2)) {
+				cameraMethod5504(cameraGetVrot(), min(add(cameraGetHrot(), ivar6), 2047));
+			} else {
+				cameraMethod5504(cameraGetVrot(), min(add(cameraGetHrot(), ivar6), arg1));
+			}
+			if ((cameraGetHrot() == 2047) && ((boolean)arg2)) {
+				cameraMethod5504(cameraGetVrot(), 0);
+				setScriptCallOnGameloop(421, arg0, arg1, 1, "iii", new WidgetPointer(1013,0));
+			}
+		} else {
+			ivar10 = ivar7;
+			stack_dump0 = ivar9;
+			stack_dump1 = ivar10;
+			structdump_5 = script_422(stack_dump0, stack_dump1);
+			ivar6 = structdump_5.intpart_1;
+			ivar5 = structdump_5.intpart_0;
+			cameraMethod5504(cameraGetVrot(), max(subtract(cameraGetHrot(), ivar6), arg1));
+		}
+	} else {
+		ivar4 = 1;
+	}
+	if (cameraGetVrot() < arg0) {
+		cameraMethod5504(min(add(cameraGetVrot(), ivar5), arg0), cameraGetHrot());
+	} else if (cameraGetVrot() > arg0) {
+		cameraMethod5504(max(subtract(cameraGetVrot(), ivar5), arg0), cameraGetHrot());
+	} else {
+		ivar3 = 1;
+	}
+	if (((boolean)ivar3) && ((boolean)ivar4)) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(1013,0));
+	}
+	return;
+}

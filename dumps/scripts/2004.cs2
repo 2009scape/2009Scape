@@ -1,0 +1,13 @@
+void script_2004(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = cs2method6143();
+	if ((((boolean)ivar2) && (globalint_1394 > 0)) && (globalint_1394 <= 255)) {
+		cs2method6038(globalint_1394);
+	} else {
+		if (ivar2 > 0) {
+			cs2method6038(0);
+		}
+	}
+	script_2007(arg0, arg1, 0, 1);
+	return;
+}

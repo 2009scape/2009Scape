@@ -1,0 +1,10 @@
+void script_3215(int arg0) {
+	if (((boolean)arg0)) {
+		setWidgetContextMenuOption(1, new WidgetPointer(548,99), "Microtutorial");
+		setWidgetContextMenuOption(1, new WidgetPointer(746,47), "Microtutorial");
+	} else {
+		setWidgetContextMenuOption(1, new WidgetPointer(548,99), "");
+		setWidgetContextMenuOption(1, new WidgetPointer(746,47), "");
+	}
+	return;
+}

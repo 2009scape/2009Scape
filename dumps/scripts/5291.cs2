@@ -1,0 +1,16 @@
+void script_5291() {
+	script_5292(bitconfig_9887, 1, 25428071);
+	script_5292(bitconfig_9887, 2, 25428084);
+	script_5292(bitconfig_9887, 3, 25428098);
+	script_5292(bitconfig_9887, 4, 25428112);
+	script_5292(bitconfig_9887, 5, 25428126);
+	script_5292(bitconfig_9887, 6, 25428140);
+	script_5292(bitconfig_9887, 7, 25428154);
+	script_5292(bitconfig_9887, 8, 25428168);
+	script_5292(bitconfig_9896, 1, 25427981);
+	script_5292(bitconfig_9896, 2, 25427994);
+	script_5292(bitconfig_9896, 3, 25428007);
+	script_5292(bitconfig_9896, 4, 25428020);
+	script_5292(bitconfig_9896, 5, 25428033);
+	return;
+}

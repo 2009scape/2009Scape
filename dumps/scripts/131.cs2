@@ -1,0 +1,4 @@
+void script_131(string arg0) {
+	globalstring_24 = arg0;
+	return;
+}

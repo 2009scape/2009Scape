@@ -1,0 +1,12 @@
+void script_2416(int arg0) {
+	if ((globalint_805 == 2) || (globalint_805 == 8)) {
+		setWidgetContextMenuOption(1, new WidgetPointer(arg0), "Cut wire");
+	} else if ((globalint_805 == 3) || (globalint_805 == 9)) {
+		setWidgetContextMenuOption(1, new WidgetPointer(arg0), "Replace wire");
+	} else if ((globalint_805 == 4) || (globalint_805 == 10)) {
+		setWidgetContextMenuOption(1, new WidgetPointer(arg0), "Repair wire");
+	} else {
+		setWidgetContextMenuOption(1, new WidgetPointer(arg0), "Inspect");
+	}
+	return;
+}

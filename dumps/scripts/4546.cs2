@@ -1,0 +1,41 @@
+void script_4546(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	flow_0:
+		IF (((boolean)arg2)) 
+			GOTO	flow_1
+		IF (((boolean)arg2) && (add(getWidgetActualWidth(new WidgetPointer(arg0)), arg5) <= arg1)) 
+			GOTO	flow_2
+		GOTO	flow_5
+	flow_1:
+	flow_2:
+		setWidgetSize(arg1, getWidgetActualHeight(new WidgetPointer(arg0)), 0, 0, new WidgetPointer(arg0));
+		if (arg4 != -1) {
+			setWidgetSprite(arg4, new WidgetPointer(arg3));
+		}
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+		return;
+	flow_5:
+		IF (arg2 == 2) 
+			GOTO	flow_6
+		IF ((arg2 == 3) && (add(getWidgetActualHeight(new WidgetPointer(arg0)), arg5) <= arg1)) 
+			GOTO	flow_7
+		GOTO	flow_10
+	flow_6:
+	flow_7:
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg0)), arg1, 0, 0, new WidgetPointer(arg0));
+		if (arg4 != -1) {
+			setWidgetSprite(arg4, new WidgetPointer(arg3));
+		}
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+		return;
+	flow_10:
+		switch (arg2) {
+			case 0:
+			case 1:
+				setWidgetSize(subtract(getWidgetActualWidth(new WidgetPointer(arg0)), arg5), getWidgetActualHeight(new WidgetPointer(arg0)), 0, 0, new WidgetPointer(arg0));
+				break;
+			case 2:
+			case 3:
+				setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg0)), subtract(getWidgetActualHeight(new WidgetPointer(arg0)), arg5), 0, 0, new WidgetPointer(arg0));
+		}
+		return;
+}

@@ -1,0 +1,51 @@
+cs2func_script_1239_struct(2,0,0) script_1239(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int stack_dump0;
+	cs2func_script_3415_struct(2,0,0) structdump_1;
+	cs2func_script_3371_struct(2,0,0) structdump_2;
+	cs2func_script_3372_struct(2,0,0) structdump_3;
+	cs2func_script_3373_struct(2,0,0) structdump_4;
+	cs2func_script_3374_struct(2,0,0) structdump_5;
+	ivar1 = divide(globalint_176, 10);
+	if (ivar1 > 5) {
+		ivar1 = 1;
+		globalint_176 = multiply(ivar1, 10);
+	}
+	ivar2 = -1;
+	ivar3 = 0;
+	switch (ivar1) {
+		case 0:
+		case 1:
+			stack_dump0 = arg0;
+			structdump_1 = script_3415(stack_dump0);
+			ivar3 = structdump_1.intpart_1;
+			ivar2 = structdump_1.intpart_0;
+			break;
+		case 2:
+			stack_dump0 = arg0;
+			structdump_2 = script_3371(stack_dump0);
+			ivar3 = structdump_2.intpart_1;
+			ivar2 = structdump_2.intpart_0;
+			break;
+		case 3:
+			stack_dump0 = arg0;
+			structdump_3 = script_3372(stack_dump0);
+			ivar3 = structdump_3.intpart_1;
+			ivar2 = structdump_3.intpart_0;
+			break;
+		case 4:
+			stack_dump0 = arg0;
+			structdump_4 = script_3373(stack_dump0);
+			ivar3 = structdump_4.intpart_1;
+			ivar2 = structdump_4.intpart_0;
+			break;
+		case 5:
+			stack_dump0 = arg0;
+			structdump_5 = script_3374(stack_dump0);
+			ivar3 = structdump_5.intpart_1;
+			ivar2 = structdump_5.intpart_0;
+	}
+	return newstruct cs2func_script_1239_struct(ivar2, ivar3);
+}

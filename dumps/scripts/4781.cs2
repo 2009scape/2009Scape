@@ -1,0 +1,11 @@
+void script_4781(int arg0,int arg1,int arg2) {
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		if (((boolean)arg2)) {
+			setWidgetSprite(7543);
+		} else {
+			setWidgetSprite(7542);
+			script_41(73072826);
+		}
+	}
+	return;
+}

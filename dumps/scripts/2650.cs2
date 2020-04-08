@@ -1,0 +1,9 @@
+void script_2650() {
+	int ivar0;
+	ivar0 = 1093;
+	if (IsFemale()) {
+		ivar0 = 3872;
+	}
+	setWidgetSize(getTextWidth(495, cs2method_3408(105, 115, ivar0, standart_config_1442) + cs2method5015() + "<img=3>" + ":"), getWidgetActualHeight(new WidgetPointer(137,54)), 0, 0, new WidgetPointer(137,54));
+	return;
+}

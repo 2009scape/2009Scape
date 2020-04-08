@@ -1,0 +1,17 @@
+void script_1790(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = multiplyDivide(3, 5, globalint_265);
+	if (ivar1 <= 3) {
+		setWidgetText(new WidgetPointer(arg0), "<col=ff0000>" + "GET READY!" + "</col>");
+		return;
+	}
+	ivar2 = divide(ivar1, 60);
+	ivar1 = mod(ivar1, 60);
+	if (ivar1 >= 10) {
+		setWidgetText(new WidgetPointer(arg0), intToStr(ivar2) + "m " + intToStr(ivar1) + "s");
+	} else {
+		setWidgetText(new WidgetPointer(arg0), intToStr(ivar2) + "m 0" + intToStr(ivar1) + "s");
+	}
+	return;
+}

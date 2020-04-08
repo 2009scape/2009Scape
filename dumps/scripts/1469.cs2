@@ -1,0 +1,27 @@
+int script_1469() {
+	if (((boolean)bitconfig_4885)) {
+		return 2;
+	}
+	if (((boolean)bitconfig_4886)) {
+		return 3;
+	}
+	if (((boolean)bitconfig_4887)) {
+		return 4;
+	}
+	if (((boolean)bitconfig_4888)) {
+		return 5;
+	}
+	if (((boolean)bitconfig_4889)) {
+		return 6;
+	}
+	if (((boolean)bitconfig_4890)) {
+		return 7;
+	}
+	if (((boolean)bitconfig_4891)) {
+		return 8;
+	}
+	if (((boolean)bitconfig_4892)) {
+		return 9;
+	}
+	return -1;
+}

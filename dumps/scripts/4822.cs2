@@ -1,0 +1,11 @@
+int script_4822(int arg0) {
+	switch (arg0) {
+		case 1:
+			return script_4824(bitconfig_9570);
+		case 2:
+			return script_4824(bitconfig_9579);
+		case 3:
+			return script_4824(bitconfig_9588);
+	}
+	return -1;
+}

@@ -1,0 +1,10 @@
+void script_2369(int arg0,int arg1,int arg2) {
+	int ivar3;
+	ivar3 = cs2method2600(new WidgetPointer(905,13));
+	cs2method2100(add(cs2method2600(new WidgetPointer(905,13)), arg2), 0, new WidgetPointer(905,13));
+	if (ivar3 != cs2method2600(new WidgetPointer(905,13))) {
+		setWidgetSprite(arg1, new WidgetPointer(arg0));
+	}
+	script_2370();
+	return;
+}

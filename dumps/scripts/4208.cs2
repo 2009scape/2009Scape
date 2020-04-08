@@ -1,0 +1,8 @@
+void script_4208(int arg0,int arg1) {
+	if (((boolean)arg1)) {
+		cs2method2103(0, new WidgetPointer(arg0));
+	} else {
+		cs2method2103(255, new WidgetPointer(arg0));
+	}
+	return;
+}

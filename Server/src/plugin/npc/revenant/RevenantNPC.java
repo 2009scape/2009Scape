@@ -38,7 +38,7 @@ public class RevenantNPC extends AbstractNPC {
 	 * The possible PVP item drops.
 	 */
 	private static final int[] PVP_DROPS = new int[] { 13896, 13884, 13890, 13902, 13887, 13899, 13893, 13905, 13864, 13858, 13861, 13867, 13876, 13879, 13870, 13873, 13883, 13908, 13911, 13914, 13917, 13920, 13923, 13926, 13929, 13932, 13935, 13938, 13941, 13944, 13947, 13950, 13953, 13958, 13961, 13964, 13967, 13970, 13973, 13976, 13979, 13982, 13985, 13988 };
-	
+
 	/**
 	 * The swing handler.
 	 */
@@ -111,13 +111,6 @@ public class RevenantNPC extends AbstractNPC {
 		super.finalizeDeath(killer);
 		if (killer instanceof Player) {
 			killer.asPlayer().getAudioManager().send(4063, true);
-		}
-		int chance = RandomFunction.getRandom(120);
-		if (chance == 1) {
-			int item = RandomFunction.getRandom(PVP_DROPS.length - 1);
-			Item i = new Item(PVP_DROPS[item]);
-			GroundItemManager.create(i, itemLoc, killer.asPlayer());
-			Repository.sendNews(killer.getUsername() + " has just received a " + i.getName() + " from a " + getName() + ".");
 		}
 	}
 

@@ -1,0 +1,38 @@
+void script_4379(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	globalstring_345 = getWidgetText(new WidgetPointer(arg0));
+	switch (arg3) {
+		case 84:
+			script_4382();
+			break;
+		case 102:
+		case 103:
+		case 98:
+		case 99:
+		case 96:
+		case 97:
+			if (isHoldingCtrl()) {
+				return;
+			}
+			script_1553(arg3, globalint_1496, globalstring_345);
+			break;
+		case 85:
+			if (strLength(globalstring_345) > 0) {
+				globalstring_345 = substr(0, subtract(strLength(globalstring_345), 1), globalstring_345);
+			}
+			break;
+		default:
+			if (strLength(globalstring_345) < 80) {
+				globalstring_345 = script_74(0, arg3, arg2, globalstring_345);
+			}
+	}
+	globalint_1496 = script_1552(globalint_1496, 5631, arg0, -1, globalstring_345);
+	setWidgetPosition(globalint_1496, getWidgetActualY(new WidgetPointer(arg4)), 0, 0, new WidgetPointer(arg4));
+	setWidgetText(new WidgetPointer(arg1), intToStr(strLength(globalstring_345)) + "/80");
+	if (strLength(globalstring_345) >= 70) {
+		setWidgetRGB(new Color(221, 0, 0), new WidgetPointer(arg1));
+	} else {
+		setWidgetRGB(new Color(31, 29, 25), new WidgetPointer(arg1));
+	}
+	setWidgetText(new WidgetPointer(arg0), globalstring_345);
+	return;
+}

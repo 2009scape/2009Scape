@@ -1,0 +1,8 @@
+void script_5341() {
+	if (isWidgetOpen(new WidgetPointer(746,1)) || isWidgetOpen(new WidgetPointer(548,240))) {
+		return;
+	}
+	setWidgetIsHidden(true, new WidgetPointer(746,245));
+	setWidgetIsHidden(true, new WidgetPointer(548,240));
+	return;
+}

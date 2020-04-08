@@ -1,0 +1,12 @@
+void script_4750() {
+	int ivar0;
+	int ivar1;
+	if (getDisplayMode() <= 1) {
+		setWidgetPosition(0, 0, 1, 1, new WidgetPointer(933,1));
+		return;
+	}
+	ivar0 = divide(subtract(getWidgetActualWidth(new WidgetPointer(933,0)), getWidgetActualWidth(new WidgetPointer(933,1))), 2);
+	ivar1 = divide(subtract(getWidgetActualHeight(new WidgetPointer(933,0)), getWidgetActualHeight(new WidgetPointer(933,1))), 2);
+	setWidgetPosition(max(ivar0, 223), max(ivar1, 165), 2, 2, new WidgetPointer(933,1));
+	return;
+}

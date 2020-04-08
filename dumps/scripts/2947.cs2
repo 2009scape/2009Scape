@@ -1,0 +1,11 @@
+void script_2947() {
+	globalstring_321 = "";
+	globalstring_322 = "";
+	globalstring_323 = "";
+	globalstring_324 = "";
+	globalstring_325 = "";
+	setWidgetIsHidden(true, new WidgetPointer(667,52));
+	setWidgetIsHidden(true, new WidgetPointer(670,1));
+	setWidgetIsHidden(true, new WidgetPointer(763,3));
+	return;
+}

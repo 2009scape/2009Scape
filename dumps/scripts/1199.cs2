@@ -1,0 +1,13 @@
+void script_1199() {
+	switch (globalint_1401) {
+		case 0:
+			setWidgetRGB(new Color(255, 180, 0), new WidgetPointer(933,327));
+			break;
+		case 1:
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(933,327));
+			break;
+		case 2:
+			setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(933,327));
+	}
+	return;
+}

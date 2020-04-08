@@ -1,0 +1,8 @@
+void script_4737(int arg0) {
+	if (setWidgetRegister(new WidgetPointer(1144,0), 0)) {
+		script_4738(74973184, 74973185);
+	}
+	setWidgetIsHidden(true, new WidgetPointer(1144,45));
+	setWidgetIsHidden(true, new WidgetPointer(1144,9));
+	return;
+}

@@ -1,0 +1,21 @@
+void script_75() {
+	int ivar0;
+	string svar0;
+	ivar0 = globalint_3;
+	svar0 = "null";
+	if (ivar0 == -1) {
+		ivar0 = globalint_4;
+	}
+	if (globalint_3 != globalint_4) {
+		ivar0 = subtract(ivar0, 1);
+		if (ivar0 < 0) {
+			ivar0 = 19;
+		}
+		svar0 = script_79(ivar0);
+		if (strLength(svar0) > 0) {
+			globalstring_1 = svar0;
+			globalint_3 = ivar0;
+		}
+	}
+	return;
+}

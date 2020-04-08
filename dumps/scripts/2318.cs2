@@ -1,0 +1,9 @@
+void script_2318(int arg0) {
+	if (arg0 != 1) {
+		return;
+	}
+	playSoundEffect(2266, 1, 0);
+	bitconfig_8348 = subtract(1, bitconfig_8348);
+	script_2319();
+	return;
+}

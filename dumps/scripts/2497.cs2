@@ -1,0 +1,18 @@
+int script_2497() {
+	if (standart_config_1447 < 51) {
+		return 3;
+	}
+	if (standart_config_1447 < 101) {
+		return 4;
+	}
+	if (standart_config_1447 < 201) {
+		return 5;
+	}
+	if (standart_config_1447 < 301) {
+		return 7;
+	}
+	if (standart_config_1447 < 401) {
+		return 8;
+	}
+	return 9;
+}

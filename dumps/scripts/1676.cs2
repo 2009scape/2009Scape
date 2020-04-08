@@ -1,0 +1,19 @@
+void script_1676(int arg0,int arg1,int arg2) {
+	int stack_dump0;
+	cs2func_script_1674_struct(2,0,0) structdump_1;
+	if (arg0 != 1) {
+		return;
+	}
+	if (arg1 == arg2) {
+		return;
+	}
+	script_1675(arg1);
+	bitconfig_6768 = arg1;
+	deleteAllExtraChilds(new WidgetPointer(84,22));
+	stack_dump0 = arg1;
+	structdump_1 = script_1674(stack_dump0);
+	stack_dump0 = structdump_1.intpart_0;
+	structdump_1.intpart_1;
+	stack_dump0;
+	return;
+}

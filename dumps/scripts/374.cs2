@@ -1,0 +1,11 @@
+void script_374(int arg0,int arg1,string arg2) {
+	createExtraChild(new WidgetPointer(arg0), 4, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(0, 0, 1, 1);
+	setWidgetPosition(1, 1, 1, 1);
+	setWidgetFont(3793);
+	setWidgetRGB(new Color(205, 190, 154));
+	setWidgetUnknownBoolean(false);
+	setWidgetTextAlignment(1, 1, arg1);
+	setWidgetText(arg2);
+	return;
+}

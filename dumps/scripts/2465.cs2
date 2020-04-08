@@ -1,0 +1,6 @@
+int script_2465(int arg0) {
+	if (isWidgetOpen(new WidgetPointer(script_8(arg0)))) {
+		return 1;
+	}
+	return 0;
+}

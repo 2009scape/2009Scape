@@ -1,0 +1,11 @@
+void script_2127(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7) {
+	script_2128(arg0, bitconfig_5893);
+	script_2128(arg1, bitconfig_5894);
+	script_2128(arg2, bitconfig_5895);
+	script_2128(arg3, bitconfig_5896);
+	script_2128(arg4, bitconfig_5897);
+	script_2128(arg5, bitconfig_5898);
+	script_2128(arg6, bitconfig_5899);
+	script_2128(arg7, bitconfig_5900);
+	return;
+}

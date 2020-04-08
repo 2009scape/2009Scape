@@ -1,0 +1,20 @@
+void script_3004(int arg0,int arg1) {
+	int stack_dump0;
+	cs2func_script_3011_struct(7,0,0) structdump_1;
+	cs2func_script_3011_struct(7,0,0) structdump_2;
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(907,41));
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(907,29));
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(907,17));
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(907,55));
+	if (getWidgetSpriteId(new WidgetPointer(script_3013(arg1))) == 2669) {
+		stack_dump0 = arg1;
+		structdump_1 = script_3011(stack_dump0);
+		script_3007(structdump_1.intpart_0, structdump_1.intpart_1, structdump_1.intpart_2, structdump_1.intpart_3, structdump_1.intpart_4, structdump_1.intpart_5, structdump_1.intpart_6);
+	} else {
+		stack_dump0 = arg1;
+		structdump_2 = script_3011(stack_dump0);
+		script_3009(structdump_2.intpart_0, structdump_2.intpart_1, structdump_2.intpart_2, structdump_2.intpart_3, structdump_2.intpart_4, structdump_2.intpart_5, structdump_2.intpart_6);
+	}
+	setScriptCallOnGameloop(3005, arg1, arg0, "ii", new WidgetPointer(907,2));
+	return;
+}

@@ -1,0 +1,18 @@
+void script_2174() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = 0;
+	ivar1 = 141;
+	ivar2 = getCommonDefinitionSize(964);
+	while (ivar0 < ivar2) {
+		if (((boolean)script_2189(ivar0))) {
+			ivar1 = 255;
+		} else {
+			ivar1 = 141;
+		}
+		cs2method2103(ivar1, cs2method_3408(105, 73, 964, ivar0));
+		ivar0 = add(ivar0, 1);
+	}
+	return;
+}

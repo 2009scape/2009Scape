@@ -1,0 +1,127 @@
+void script_4409(int arg0) {
+	int ivar1;
+	ivar1 = script_284(getMyPositionHash());
+	switch (globalint_1007) {
+		case 1:
+			script_2766(0, 50, arg0);
+			break;
+		case 11:
+			if (getDisplayMode() >= 2) {
+				setScriptCallOnConfigChange(5210, new WidgetPointer(-32768,3), 466, 1, "IY", new WidgetPointer(746,7));
+				script_5211(1);
+			}
+			script_2768(50, arg0);
+			cs2method5405(0, 2);
+			cs2method5405(1, 2);
+			cs2method5406(0, 0, addToCoordinate(ivar1, 28, 0, 27), 900, addToCoordinate(ivar1, 28, 0, 27), 900, 0);
+			cs2method5406(0, 1, addToCoordinate(ivar1, 28, 0, 27), 750, addToCoordinate(ivar1, 28, 0, 27), 750, 0);
+			cs2method5406(1, 0, addToCoordinate(ivar1, 23, 0, 8), 200, addToCoordinate(ivar1, 23, 0, 8), 200, 0);
+			cs2method5406(1, 1, addToCoordinate(ivar1, 23, 0, 8), 250, addToCoordinate(ivar1, 23, 0, 8), 250, 0);
+			cameraMethod5502(0, 0, 50, 0, 1, 0);
+			break;
+		case 12:
+			script_2766(0, 50, arg0);
+			break;
+		case 21:
+			script_2768(50, arg0);
+			cs2method5405(0, 2);
+			cs2method5405(1, 2);
+			cs2method5406(0, 0, addToCoordinate(ivar1, 16, 0, 26), 900, addToCoordinate(ivar1, 16, 0, 26), 900, 0);
+			cs2method5406(0, 1, addToCoordinate(ivar1, 16, 0, 26), 900, addToCoordinate(ivar1, 16, 0, 26), 900, 0);
+			cs2method5406(1, 0, addToCoordinate(ivar1, 24, 0, 37), 500, addToCoordinate(ivar1, 24, 0, 37), 500, 0);
+			cs2method5406(1, 1, addToCoordinate(ivar1, 24, 0, 37), 500, addToCoordinate(ivar1, 24, 0, 37), 500, 0);
+			cameraMethod5502(0, 0, 100, 0, 1, 0);
+			break;
+		case 22:
+			script_2766(0, 50, arg0);
+			break;
+		case 31:
+			script_2768(50, arg0);
+			cs2method5405(0, 2);
+			cs2method5405(1, 2);
+			cs2method5406(0, 0, addToCoordinate(ivar1, 31, 0, 11), 700, addToCoordinate(ivar1, 31, 0, 11), 700, 0);
+			cs2method5406(0, 1, addToCoordinate(ivar1, 24, 0, 11), 800, addToCoordinate(ivar1, 24, 0, 11), 800, 0);
+			cs2method5406(1, 0, addToCoordinate(ivar1, 28, 0, 19), 350, addToCoordinate(ivar1, 28, 0, 19), 350, 0);
+			cs2method5406(1, 1, addToCoordinate(ivar1, 28, 0, 19), 350, addToCoordinate(ivar1, 28, 0, 19), 350, 0);
+			cameraMethod5502(0, 0, 50, 0, 1, 0);
+			break;
+		case 32:
+			script_2766(0, 50, arg0);
+			break;
+		case 41:
+			script_2768(50, arg0);
+			cs2method5405(0, 2);
+			cs2method5405(1, 2);
+			cs2method5406(0, 0, addToCoordinate(ivar1, 37, 0, 41), 1200, addToCoordinate(ivar1, 37, 0, 41), 1200, 0);
+			cs2method5406(0, 1, addToCoordinate(ivar1, 37, 0, 41), 800, addToCoordinate(ivar1, 37, 0, 41), 800, 0);
+			cs2method5406(1, 0, addToCoordinate(ivar1, 27, 0, 49), 700, addToCoordinate(ivar1, 27, 0, 49), 700, 0);
+			cs2method5406(1, 1, addToCoordinate(ivar1, 27, 0, 49), 650, addToCoordinate(ivar1, 27, 0, 49), 650, 0);
+			cameraMethod5502(0, 0, 50, 0, 1, 0);
+			break;
+		case 42:
+			script_2766(0, 50, arg0);
+			break;
+		case 51:
+			script_2768(50, arg0);
+			cs2method5405(0, 2);
+			cs2method5405(1, 2);
+			cs2method5406(0, 0, addToCoordinate(ivar1, 37, 0, 9), 1300, addToCoordinate(ivar1, 37, 0, 9), 1300, 0);
+			cs2method5406(0, 1, addToCoordinate(ivar1, 37, 0, 9), 1300, addToCoordinate(ivar1, 37, 0, 9), 1300, 0);
+			cs2method5406(1, 0, addToCoordinate(ivar1, 27, 0, 17), 700, addToCoordinate(ivar1, 27, 0, 17), 700, 0);
+			cs2method5406(1, 1, addToCoordinate(ivar1, 27, 0, 17), 700, addToCoordinate(ivar1, 27, 0, 17), 700, 0);
+			cameraMethod5502(0, 0, 50, 0, 1, 0);
+			break;
+		case 52:
+			script_2766(0, 50, arg0);
+			break;
+		case 61:
+			script_2768(50, arg0);
+			cs2method5405(0, 2);
+			cs2method5405(1, 2);
+			cs2method5406(0, 0, addToCoordinate(ivar1, 33, 0, 30), 600, addToCoordinate(ivar1, 33, 0, 30), 600, 0);
+			cs2method5406(0, 1, addToCoordinate(ivar1, 33, 0, 30), 550, addToCoordinate(ivar1, 33, 0, 30), 550, 0);
+			cs2method5406(1, 0, addToCoordinate(ivar1, 24, 0, 33), 180, addToCoordinate(ivar1, 24, 0, 33), 180, 0);
+			cs2method5406(1, 1, addToCoordinate(ivar1, 24, 0, 33), 180, addToCoordinate(ivar1, 24, 0, 33), 180, 0);
+			cameraMethod5502(0, 0, 30, 0, 1, 0);
+			break;
+		case 62:
+			script_2766(0, 50, arg0);
+			break;
+		case 71:
+			script_2768(50, arg0);
+			cs2method5405(0, 2);
+			cs2method5405(1, 2);
+			cs2method5406(0, 0, addToCoordinate(ivar1, 18, 1, 34), 1000, addToCoordinate(ivar1, 18, 1, 34), 1000, 0);
+			cs2method5406(0, 1, addToCoordinate(ivar1, 18, 1, 44), 1000, addToCoordinate(ivar1, 18, 1, 44), 1000, 0);
+			cs2method5406(1, 0, addToCoordinate(ivar1, 24, 1, 39), 800, addToCoordinate(ivar1, 24, 1, 39), 800, 0);
+			cs2method5406(1, 1, addToCoordinate(ivar1, 24, 1, 39), 700, addToCoordinate(ivar1, 24, 1, 39), 700, 0);
+			cameraMethod5502(0, 0, 80, 0, 1, 0);
+			break;
+		case 72:
+			script_2766(0, 50, arg0);
+			break;
+		case 81:
+			script_2768(50, arg0);
+			cs2method5405(0, 2);
+			cs2method5405(1, 2);
+			cs2method5406(0, 0, addToCoordinate(ivar1, 15, 1, 18), 700, addToCoordinate(ivar1, 15, 1, 18), 700, 0);
+			cs2method5406(0, 1, addToCoordinate(ivar1, 15, 1, 18), 700, addToCoordinate(ivar1, 15, 1, 18), 700, 0);
+			cs2method5406(1, 0, addToCoordinate(ivar1, 24, 1, 30), 300, addToCoordinate(ivar1, 24, 1, 30), 300, 0);
+			cs2method5406(1, 1, addToCoordinate(ivar1, 24, 1, 12), 600, addToCoordinate(ivar1, 24, 1, 12), 600, 0);
+			cameraMethod5502(0, 0, 300, 0, 1, 0);
+			break;
+		case 82:
+			script_2766(0, 50, arg0);
+			break;
+		case 999:
+			script_2766(0, 50, arg0);
+			break;
+		case 1000:
+			cs2method5512();
+			script_2768(50, arg0);
+			break;
+		default:
+			cs2method5512();
+	}
+	return;
+}

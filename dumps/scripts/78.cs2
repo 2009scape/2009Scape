@@ -1,0 +1,58 @@
+void script_78(int arg0,string arg1) {
+	if (arg0 < 10) {
+		if (arg0 < 5) {
+			if (((boolean)arg0)) {
+				globalstring_2 = arg1;
+			} else if (((boolean)arg0)) {
+				globalstring_3 = arg1;
+			} else if (arg0 == 2) {
+				globalstring_4 = arg1;
+			} else if (arg0 == 3) {
+				globalstring_5 = arg1;
+			} else {
+				if (arg0 == 4) {
+					globalstring_6 = arg1;
+				}
+			}
+		} else if (arg0 == 5) {
+			globalstring_7 = arg1;
+		} else if (arg0 == 6) {
+			globalstring_8 = arg1;
+		} else if (arg0 == 7) {
+			globalstring_9 = arg1;
+		} else if (arg0 == 8) {
+			globalstring_10 = arg1;
+		} else {
+			if (arg0 == 9) {
+				globalstring_11 = arg1;
+			}
+		}
+	} else if (arg0 < 15) {
+		if (arg0 == 10) {
+			globalstring_12 = arg1;
+		} else if (arg0 == 11) {
+			globalstring_13 = arg1;
+		} else if (arg0 == 12) {
+			globalstring_14 = arg1;
+		} else if (arg0 == 13) {
+			globalstring_15 = arg1;
+		} else {
+			if (arg0 == 14) {
+				globalstring_16 = arg1;
+			}
+		}
+	} else if (arg0 == 15) {
+		globalstring_17 = arg1;
+	} else if (arg0 == 16) {
+		globalstring_18 = arg1;
+	} else if (arg0 == 17) {
+		globalstring_19 = arg1;
+	} else if (arg0 == 18) {
+		globalstring_20 = arg1;
+	} else {
+		if (arg0 == 19) {
+			globalstring_21 = arg1;
+		}
+	}
+	return;
+}

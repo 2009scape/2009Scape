@@ -1,0 +1,446 @@
+int script_19(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = 0;
+	if (arg0 == 556) {
+		flow_1:
+			if (getItemAmtInContainer(94, 1381) > 0) {
+				return 99999999;
+			}
+			if (getItemAmtInContainer(94, 15598) > 0) {
+				return 99999999;
+			}
+			if (getItemAmtInContainer(94, 17009) > 0) {
+				return 99999999;
+			}
+			if (getItemAmtInContainer(94, 17011) > 0) {
+				return 99999999;
+			}
+			if (getItemAmtInContainer(94, 16169) > 0) {
+				return 99999999;
+			}
+			if (getItemAmtInContainer(94, 16170) > 0) {
+				return 99999999;
+			}
+			if (script_1(94, 1397) > 0) {
+				return 99999999;
+			}
+			if (script_1(94, 1405) > 0) {
+				return 99999999;
+			}
+			if (script_1(94, 19327) > 0) {
+				return 99999999;
+			}
+			if (script_1(94, 21777) > 0) {
+				return 99999999;
+			}
+			if (script_1(94, 21490) > 0) {
+				return 99999999;
+			}
+			if (script_1(94, 21496) > 0) {
+				return 99999999;
+			}
+			if (script_1(94, 21500) > 0) {
+				return 99999999;
+			}
+			ivar2 = add(add(add(add(add(add(getItemAmtInContainer(93, 556), getItemAmtInContainer(93, 17780)), getItemAmtInContainer(93, 16091)), script_1(93, 4697)), script_1(93, 4695)), script_1(93, 4696)), getItemAmtInContainer(93, 20941));
+			IF ((((((arg1 == 12582946) || (arg1 == 12582951)) || (arg1 == 12582954)) || (arg1 == 62259232)) || (arg1 == 62259237)) || (arg1 == 62259236)) 
+				GOTO	flow_28
+			GOTO	flow_31
+		flow_28:
+			IF ((getItemIdInSlot(94, 5) == 19671) || (getItemIdInSlot(94, 5) == 19867)) 
+				GOTO	flow_29
+			IF ((getItemIdInSlot(94, 5) == 19865) && (globalint_1334 > 0)) 
+				GOTO	flow_30
+			GOTO	flow_31
+		flow_29:
+		flow_30:
+			ivar2 = add(ivar2, multiply(globalint_1334, 2));
+		flow_31:
+			IF ((arg1 == 12582957) || (arg1 == 62259241)) 
+				GOTO	flow_32
+			GOTO	flow_35
+		flow_32:
+			IF ((getItemIdInSlot(94, 5) == 19671) || (getItemIdInSlot(94, 5) == 19867)) 
+				GOTO	flow_33
+			IF ((getItemIdInSlot(94, 5) == 19865) && (globalint_1334 > 0)) 
+				GOTO	flow_34
+			GOTO	flow_35
+		flow_33:
+		flow_34:
+			ivar2 = add(ivar2, multiply(globalint_1334, 3));
+		flow_35:
+			IF ((((((arg1 == 12582961) || (arg1 == 12582964)) || (arg1 == 12582970)) || (arg1 == 62259242)) || (arg1 == 62259245)) || (arg1 == 62259243)) 
+				GOTO	flow_36
+			GOTO	flow_39
+		flow_36:
+			IF ((getItemIdInSlot(94, 5) == 19671) || (getItemIdInSlot(94, 5) == 19867)) 
+				GOTO	flow_37
+			IF ((getItemIdInSlot(94, 5) == 19865) && (globalint_1335 > 0)) 
+				GOTO	flow_38
+			GOTO	flow_39
+		flow_37:
+		flow_38:
+			ivar2 = add(ivar2, multiply(globalint_1335, 3));
+		flow_39:
+			IF ((arg1 == 12582975) || (arg1 == 62259247)) 
+				GOTO	flow_40
+			GOTO	flow_43
+		flow_40:
+			IF ((getItemIdInSlot(94, 5) == 19671) || (getItemIdInSlot(94, 5) == 19867)) 
+				GOTO	flow_41
+			IF ((getItemIdInSlot(94, 5) == 19865) && (globalint_1335 > 0)) 
+				GOTO	flow_42
+			GOTO	flow_43
+		flow_41:
+		flow_42:
+			ivar2 = add(ivar2, multiply(globalint_1335, 4));
+		flow_43:
+			IF ((((((((arg1 == 12582982) || (arg1 == 12582985)) || (arg1 == 12582989)) || (arg1 == 12582992)) || (arg1 == 62259248)) || (arg1 == 62259254)) || (arg1 == 62259249)) || (arg1 == 62259258)) 
+				GOTO	flow_44
+			GOTO	flow_47
+		flow_44:
+			IF ((getItemIdInSlot(94, 5) == 19889) || (getItemIdInSlot(94, 5) == 19868)) 
+				GOTO	flow_45
+			IF ((getItemIdInSlot(94, 5) == 19866) && (globalint_1402 > 0)) 
+				GOTO	flow_46
+			GOTO	flow_47
+		flow_45:
+		flow_46:
+			ivar2 = add(ivar2, multiply(globalint_1402, 5));
+		flow_47:
+			IF ((((((((arg1 == 12582996) || (arg1 == 12582999)) || (arg1 == 12583001)) || (arg1 == 12583003)) || (arg1 == 62259261)) || (arg1 == 62259263)) || (arg1 == 62259262)) || (arg1 == 62259267)) 
+				GOTO	flow_48
+			GOTO	flow_51
+		flow_48:
+			IF ((getItemIdInSlot(94, 5) == 19889) || (getItemIdInSlot(94, 5) == 19868)) 
+				GOTO	flow_49
+			IF ((getItemIdInSlot(94, 5) == 19866) && (globalint_1403 > 0)) 
+				GOTO	flow_50
+			GOTO	flow_51
+		flow_49:
+		flow_50:
+			ivar2 = add(ivar2, multiply(globalint_1403, 7));
+		flow_51:
+			if ((((((((bitconfig_4540 == 2) || (bitconfig_4540 == 3)) || (bitconfig_5493 != 0)) || (getItemIdInSlot(94, 1) == 15445)) || (getItemIdInSlot(94, 1) == 15446)) || (getItemIdInSlot(94, 1) == 15447)) || (getItemIdInSlot(94, 1) == 15448)) || (getItemIdInSlot(94, 1) == 15449)) {
+				ivar2 = add(ivar2, getItemAmtInContainer(93, 12850));
+			}
+			return ivar2;
+	}
+	if (arg0 == 555) {
+		if (getItemAmtInContainer(94, 1383) > 0) {
+			return 99999999;
+		}
+		if (getItemAmtInContainer(94, 16997) > 0) {
+			return 99999999;
+		}
+		if (getItemAmtInContainer(94, 16999) > 0) {
+			return 99999999;
+		}
+		if (getItemAmtInContainer(94, 16163) > 0) {
+			return 99999999;
+		}
+		if (getItemAmtInContainer(94, 16164) > 0) {
+			return 99999999;
+		}
+		if (getItemAmtInContainer(94, 18346) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 1395) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 1403) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 6562) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 6563) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 11736) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 11738) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 19325) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 21491) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 21495) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 21499) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 21506) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 21507) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 21504) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 21505) > 0) {
+			return 99999999;
+		}
+		ivar2 = add(add(add(add(add(add(getItemAmtInContainer(93, 555), getItemAmtInContainer(93, 17781)), getItemAmtInContainer(93, 16092)), script_1(93, 4694)), script_1(93, 4695)), script_1(93, 4698)), getItemAmtInContainer(93, 20940));
+		if ((((((((bitconfig_4540 == 2) || (bitconfig_4540 == 3)) || (bitconfig_5493 != 0)) || (getItemIdInSlot(94, 1) == 15445)) || (getItemIdInSlot(94, 1) == 15446)) || (getItemIdInSlot(94, 1) == 15447)) || (getItemIdInSlot(94, 1) == 15448)) || (getItemIdInSlot(94, 1) == 15449)) {
+			ivar2 = add(ivar2, getItemAmtInContainer(93, 12850));
+		}
+		return ivar2;
+	}
+	if (arg0 == 557) {
+		if (getItemAmtInContainer(94, 1385) > 0) {
+			return 99999999;
+		}
+		if (getItemAmtInContainer(94, 17001) > 0) {
+			return 99999999;
+		}
+		if (getItemAmtInContainer(94, 17003) > 0) {
+			return 99999999;
+		}
+		if (getItemAmtInContainer(94, 16165) > 0) {
+			return 99999999;
+		}
+		if (getItemAmtInContainer(94, 16166) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 1399) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 1407) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 3053) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 3054) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 6562) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 6563) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 19329) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 21492) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 21497) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 21501) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 21502) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 21503) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 21504) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 21505) > 0) {
+			return 99999999;
+		}
+		ivar2 = add(add(add(add(add(add(getItemAmtInContainer(93, 557), getItemAmtInContainer(93, 17782)), getItemAmtInContainer(93, 16093)), script_1(93, 4696)), script_1(93, 4699)), script_1(93, 4698)), getItemAmtInContainer(93, 20942));
+		if ((((((((bitconfig_4540 == 2) || (bitconfig_4540 == 3)) || (bitconfig_5493 != 0)) || (getItemIdInSlot(94, 1) == 15445)) || (getItemIdInSlot(94, 1) == 15446)) || (getItemIdInSlot(94, 1) == 15447)) || (getItemIdInSlot(94, 1) == 15448)) || (getItemIdInSlot(94, 1) == 15449)) {
+			ivar2 = add(ivar2, getItemAmtInContainer(93, 12850));
+		}
+		return ivar2;
+	}
+	if (arg0 == 554) {
+		if (getItemAmtInContainer(94, 1387) > 0) {
+			return 99999999;
+		}
+		if (getItemAmtInContainer(94, 17005) > 0) {
+			return 99999999;
+		}
+		if (getItemAmtInContainer(94, 17007) > 0) {
+			return 99999999;
+		}
+		if (getItemAmtInContainer(94, 16167) > 0) {
+			return 99999999;
+		}
+		if (getItemAmtInContainer(94, 16168) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 1393) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 1401) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 3053) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 3054) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 11736) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 11738) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 19323) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 21493) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 21494) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 21498) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 21502) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 21503) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 21506) > 0) {
+			return 99999999;
+		}
+		if (script_1(94, 21507) > 0) {
+			return 99999999;
+		}
+		ivar2 = add(add(add(add(add(add(getItemAmtInContainer(93, 554), getItemAmtInContainer(93, 17783)), getItemAmtInContainer(93, 16094)), script_1(93, 4694)), script_1(93, 4697)), script_1(93, 4699)), getItemAmtInContainer(93, 20939));
+		if ((((((((bitconfig_4540 == 2) || (bitconfig_4540 == 3)) || (bitconfig_5493 != 0)) || (getItemIdInSlot(94, 1) == 15445)) || (getItemIdInSlot(94, 1) == 15446)) || (getItemIdInSlot(94, 1) == 15447)) || (getItemIdInSlot(94, 1) == 15448)) || (getItemIdInSlot(94, 1) == 15449)) {
+			ivar2 = add(ivar2, getItemAmtInContainer(93, 12850));
+		}
+		return ivar2;
+	}
+	if (arg0 == 8843) {
+		return add(script_1(94, 2416), script_1(94, 8841));
+	}
+	if (arg0 == 4170) {
+		return add(add(add(add(add(add(script_1(94, 4170), script_1(94, 15486)), script_1(94, 15502)), script_1(94, 22207)), script_1(94, 22213)), script_1(94, 22211)), script_1(94, 22209));
+	}
+	if (((arg0 == 1409) || (arg0 == 2415)) || (arg0 == 2417)) {
+		return script_1(94, arg0);
+	}
+	if (arg0 == 13867) {
+		if (script_1(94, 13869) > 0) {
+			return script_1(94, 13869);
+		}
+		if (script_1(94, 13941) > 0) {
+			return script_1(94, 13941);
+		}
+		if (script_1(94, 13943) > 0) {
+			return script_1(94, 13943);
+		}
+		return script_1(94, arg0);
+	}
+	if (arg0 == 21514) {
+		return script_1(94, 21514);
+	}
+	if (((((((((bitconfig_4540 == 2) || (bitconfig_4540 == 3)) || (bitconfig_5493 != 0)) || (getItemIdInSlot(94, 1) == 15445)) || (getItemIdInSlot(94, 1) == 15446)) || (getItemIdInSlot(94, 1) == 15447)) || (getItemIdInSlot(94, 1) == 15448)) || (getItemIdInSlot(94, 1) == 15449)) && ((((((((((arg0 == 559) || (arg0 == 558)) || (arg0 == 564)) || (arg0 == 562)) || (arg0 == 561)) || (arg0 == 560)) || (arg0 == 563)) || (arg0 == 566)) || (arg0 == 565)) || (arg0 == 9075))) {
+		return add(script_1(93, arg0), script_1(93, 12851));
+	}
+	switch (arg0) {
+		flow_202:
+			case 559:
+			return add(add(add(getItemAmtInContainer(93, 559), getItemAmtInContainer(93, 17788)), getItemAmtInContainer(93, 16099)), getItemAmtInContainer(93, 20944));
+			case 558:
+			return add(add(add(getItemAmtInContainer(93, 558), getItemAmtInContainer(93, 17784)), getItemAmtInContainer(93, 16095)), getItemAmtInContainer(93, 20943));
+			case 564:
+			return add(add(getItemAmtInContainer(93, 564), getItemAmtInContainer(93, 17789)), getItemAmtInContainer(93, 16100));
+			case 562:
+			IF ((((((((arg1 == 12582946) || (arg1 == 12582951)) || (arg1 == 12582954)) || (arg1 == 12582957)) || (arg1 == 62259232)) || (arg1 == 62259237)) || (arg1 == 62259236)) || (arg1 == 62259241)) 
+				GOTO	flow_206
+			GOTO	flow_209
+		flow_206:
+			IF ((getItemIdInSlot(94, 5) == 19671) || (getItemIdInSlot(94, 5) == 19867)) 
+				GOTO	flow_207
+			IF ((getItemIdInSlot(94, 5) == 19865) && (globalint_1334 > 0)) 
+				GOTO	flow_208
+			GOTO	flow_209
+		flow_207:
+		flow_208:
+			return add(add(add(add(getItemAmtInContainer(93, 562), getItemAmtInContainer(93, 17785)), getItemAmtInContainer(93, 16096)), globalint_1334), getItemAmtInContainer(93, 20947));
+		flow_209:
+			return add(add(add(getItemAmtInContainer(93, 562), getItemAmtInContainer(93, 17785)), getItemAmtInContainer(93, 16096)), getItemAmtInContainer(93, 20947));
+			case 561:
+			if ((getItemIdInSlot(94, 3) == 18341) && (globalint_1234 > 0)) {
+				return add(add(add(add(getItemAmtInContainer(93, 561), getItemAmtInContainer(93, 17791)), getItemAmtInContainer(93, 16102)), globalint_1234), getItemAmtInContainer(93, 20946));
+			}
+			return add(add(getItemAmtInContainer(93, 561), getItemAmtInContainer(93, 17791)), getItemAmtInContainer(93, 16102));
+			case 560:
+			IF ((((((((arg1 == 12582961) || (arg1 == 12582964)) || (arg1 == 12582970)) || (arg1 == 12582975)) || (arg1 == 62259242)) || (arg1 == 62259245)) || (arg1 == 62259243)) || (arg1 == 62259247)) 
+				GOTO	flow_217
+			GOTO	flow_220
+		flow_217:
+			IF ((getItemIdInSlot(94, 5) == 19671) || (getItemIdInSlot(94, 5) == 19867)) 
+				GOTO	flow_218
+			IF ((getItemIdInSlot(94, 5) == 19865) && (globalint_1335 > 0)) 
+				GOTO	flow_219
+			GOTO	flow_220
+		flow_218:
+		flow_219:
+			return add(add(add(add(getItemAmtInContainer(93, 560), getItemAmtInContainer(93, 17786)), getItemAmtInContainer(93, 16097)), globalint_1335), getItemAmtInContainer(93, 20945));
+		flow_220:
+			IF ((((((((arg1 == 12582996) || (arg1 == 12582999)) || (arg1 == 12583001)) || (arg1 == 12583003)) || (arg1 == 62259261)) || (arg1 == 62259263)) || (arg1 == 62259262)) || (arg1 == 62259267)) 
+				GOTO	flow_221
+			GOTO	flow_224
+		flow_221:
+			IF ((getItemIdInSlot(94, 5) == 19889) || (getItemIdInSlot(94, 5) == 19868)) 
+				GOTO	flow_222
+			IF ((getItemIdInSlot(94, 5) == 19866) && (globalint_1403 > 0)) 
+				GOTO	flow_223
+			GOTO	flow_224
+		flow_222:
+		flow_223:
+			return add(add(add(getItemAmtInContainer(93, 560), getItemAmtInContainer(93, 17786)), getItemAmtInContainer(93, 16097)), globalint_1403);
+		flow_224:
+			return add(add(add(getItemAmtInContainer(93, 560), getItemAmtInContainer(93, 17786)), getItemAmtInContainer(93, 16097)), getItemAmtInContainer(93, 20945));
+			case 563:
+			if ((getItemIdInSlot(94, 3) == 18342) && (globalint_1235 > 0)) {
+				return add(add(add(add(getItemAmtInContainer(93, 563), getItemAmtInContainer(93, 17792)), getItemAmtInContainer(93, 16103)), globalint_1235), getItemAmtInContainer(93, 20948));
+			}
+			return add(add(getItemAmtInContainer(93, 563), getItemAmtInContainer(93, 17792)), getItemAmtInContainer(93, 16103));
+			case 566:
+			return add(add(script_1(93, 566), script_1(93, 17793)), script_1(93, 16104));
+			case 565:
+			IF ((((((((arg1 == 12582982) || (arg1 == 12582985)) || (arg1 == 12582989)) || (arg1 == 12582992)) || (arg1 == 62259248)) || (arg1 == 62259254)) || (arg1 == 62259249)) || (arg1 == 62259258)) 
+				GOTO	flow_233
+			GOTO	flow_236
+		flow_233:
+			IF ((getItemIdInSlot(94, 5) == 19889) || (getItemIdInSlot(94, 5) == 19868)) 
+				GOTO	flow_234
+			IF ((getItemIdInSlot(94, 5) == 19866) && (globalint_1402 > 0)) 
+				GOTO	flow_235
+			GOTO	flow_236
+		flow_234:
+		flow_235:
+			return add(add(add(getItemAmtInContainer(93, 565), getItemAmtInContainer(93, 17787)), getItemAmtInContainer(93, 16098)), globalint_1402);
+		flow_236:
+			IF ((((((((arg1 == 12582996) || (arg1 == 12582999)) || (arg1 == 12583001)) || (arg1 == 12583003)) || (arg1 == 62259261)) || (arg1 == 62259263)) || (arg1 == 62259262)) || (arg1 == 62259267)) 
+				GOTO	flow_237
+			GOTO	flow_240
+		flow_237:
+			IF ((getItemIdInSlot(94, 5) == 19889) || (getItemIdInSlot(94, 5) == 19868)) 
+				GOTO	flow_238
+			IF ((getItemIdInSlot(94, 5) == 19866) && (globalint_1403 > 0)) 
+				GOTO	flow_239
+			GOTO	flow_240
+		flow_238:
+		flow_239:
+			return add(add(add(getItemAmtInContainer(93, 565), getItemAmtInContainer(93, 17787)), getItemAmtInContainer(93, 16098)), globalint_1403);
+		flow_240:
+			return add(add(script_1(93, 565), script_1(93, 17787)), script_1(93, 16098));
+			case 9075:
+			return add(add(script_1(93, 9075), script_1(93, 17790)), script_1(93, 16101));
+	}
+	return script_1(93, arg0);
+}

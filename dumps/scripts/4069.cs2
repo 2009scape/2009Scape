@@ -1,0 +1,5 @@
+void script_4069() {
+	globalint_1431 = 1;
+	setScriptCallOnGameloop(4070, getClientCycle(), "i", new WidgetPointer(1058,68));
+	return;
+}

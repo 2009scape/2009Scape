@@ -1,0 +1,15 @@
+void script_2075() {
+	int ivar0;
+	ivar0 = 0;
+	if (((boolean)globalint_632)) {
+		if (subtract(10, globalint_633) > 0) {
+			ivar0 = subtract(10, globalint_633);
+		} else {
+			ivar0 = 0;
+		}
+		setWidgetText(new WidgetPointer(837,3), intToStr(ivar0));
+	} else {
+		setWidgetText(new WidgetPointer(837,3), intToStr(globalint_637));
+	}
+	return;
+}

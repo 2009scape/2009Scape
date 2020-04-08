@@ -1,0 +1,11 @@
+void script_605() {
+	if (standart_config_1109 == -1) {
+		return;
+	}
+	if (globalint_85 < 2147483647) {
+		globalint_85 = add(globalint_85, 1);
+		setWidgetText(new WidgetPointer(105,153), formatNumber(globalint_85, 1) + " gp");
+		script_609();
+	}
+	return;
+}

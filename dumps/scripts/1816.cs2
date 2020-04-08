@@ -1,0 +1,56 @@
+void script_1816(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	switch (globalint_268) {
+		case 4:
+			script_1817(arg0, arg1, arg2, arg3, arg4, arg5);
+			setWidgetText(new WidgetPointer(arg2), "Your clan knocked the enemy right out of the arena.");
+			break;
+		case 5:
+			script_1817(arg0, arg1, arg2, arg3, arg4, arg5);
+			setWidgetText(new WidgetPointer(arg2), "Your clan reached the target kill-count.");
+			break;
+		case 6:
+			script_1817(arg0, arg1, arg2, arg3, arg4, arg5);
+			setWidgetText(new WidgetPointer(arg2), "Your clan had the highest kill-count when the time expired.");
+			break;
+		case 7:
+			script_1817(arg0, arg1, arg2, arg3, arg4, arg5);
+			setWidgetText(new WidgetPointer(arg2), "Your clan had the most survivors when the time expired.");
+			break;
+		case 8:
+			script_1818(arg0, arg1, arg2, arg3, arg4, arg5);
+			setWidgetText(new WidgetPointer(arg2), "Your clan was knocked right out of the arena.");
+			break;
+		case 9:
+			script_1818(arg0, arg1, arg2, arg3, arg4, arg5);
+			setWidgetText(new WidgetPointer(arg2), "Your enemy reached the target kill-count.");
+			break;
+		case 10:
+			script_1818(arg0, arg1, arg2, arg3, arg4, arg5);
+			setWidgetText(new WidgetPointer(arg2), "Your enemy had the highest kill-count when the time expired.");
+			break;
+		case 11:
+			script_1818(arg0, arg1, arg2, arg3, arg4, arg5);
+			setWidgetText(new WidgetPointer(arg2), "Your enemy had the most survivors when the time expired.");
+			break;
+		case 1:
+			script_1819(arg0, arg1, arg2, arg3, arg4, arg5);
+			setWidgetText(new WidgetPointer(arg2), "The match was aborted due to a lack of fighters.");
+			break;
+		case 2:
+			script_1819(arg0, arg1, arg2, arg3, arg4, arg5);
+			setWidgetText(new WidgetPointer(arg2), "Your kill-counts were equal.");
+			break;
+		case 3:
+			script_1819(arg0, arg1, arg2, arg3, arg4, arg5);
+			setWidgetText(new WidgetPointer(arg2), "You had equal numbers of survivors.");
+			break;
+		default:
+			setWidgetIsHidden(true, new WidgetPointer(arg0));
+			setWidgetIsHidden(true, new WidgetPointer(arg1));
+			setWidgetIsHidden(true, new WidgetPointer(arg2));
+			setWidgetIsHidden(true, new WidgetPointer(arg3));
+			setWidgetIsHidden(true, new WidgetPointer(arg4));
+			setWidgetIsHidden(true, new WidgetPointer(arg5));
+	}
+	return;
+}

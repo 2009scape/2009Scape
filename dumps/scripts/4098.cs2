@@ -1,0 +1,210 @@
+int script_4098() {
+	flow_0:
+		SWITCH (standart_config_281) {
+			case 7:
+				 GOTO flow_1
+			case 9:
+				 GOTO flow_2
+			case 10:
+				 GOTO flow_3
+			case 15:
+				 GOTO flow_4
+			case 20:
+				 GOTO flow_5
+			case 25:
+				 GOTO flow_6
+			case 30:
+				 GOTO flow_7
+			case 35:
+				 GOTO flow_8
+			case 40:
+				 GOTO flow_9
+			case 45:
+				 GOTO flow_10
+			case 46:
+				 GOTO flow_11
+			case 47:
+				 GOTO flow_12
+			case 48:
+				 GOTO flow_13
+			case 49:
+				 GOTO flow_14
+			case 50:
+				 GOTO flow_15
+			case 55:
+				 GOTO flow_16
+			case 56:
+				 GOTO flow_17
+			case 57:
+				 GOTO flow_18
+			case 60:
+				 GOTO flow_19
+			case 62:
+				 GOTO flow_20
+			case 65:
+				 GOTO flow_21
+			case 70:
+				 GOTO flow_22
+			case 75:
+				 GOTO flow_23
+			case 80:
+				 GOTO flow_24
+			case 82:
+				 GOTO flow_25
+			case 83:
+				 GOTO flow_26
+			case 90:
+				 GOTO flow_27
+			case 93:
+				 GOTO flow_28
+			case 95:
+				 GOTO flow_29
+			case 96:
+				 GOTO flow_30
+			case 98:
+				 GOTO flow_31
+			case 100:
+				 GOTO flow_32
+			case 105:
+				 GOTO flow_33
+			case 110:
+				 GOTO flow_34
+			case 115:
+				 GOTO flow_35
+			case 120:
+				 GOTO flow_36
+			case 123:
+				 GOTO flow_37
+			case 125:
+				 GOTO flow_38
+			case 126:
+				 GOTO flow_39
+			case 127:
+				 GOTO flow_40
+			case 128:
+				 GOTO flow_41
+			case 130:
+				 GOTO flow_42
+			case 135:
+				 GOTO flow_43
+			case 140:
+				 GOTO flow_44
+			case 145:
+				 GOTO flow_45
+			case 150:
+				 GOTO flow_46
+			case 155:
+				 GOTO flow_47
+			case 160:
+				 GOTO flow_48
+			case 165:
+				 GOTO flow_49
+			case 170:
+				 GOTO flow_50
+			case 1000:
+				 GOTO flow_51
+		}
+		return 4094;
+	flow_1:
+		return 3500;
+	flow_2:
+		return 3500;
+	flow_3:
+		return 3501;
+	flow_4:
+		return 3502;
+	flow_5:
+		return 3503;
+	flow_6:
+		return 3503;
+	flow_7:
+		return 3503;
+	flow_8:
+		return 3504;
+	flow_9:
+		return 3504;
+	flow_10:
+		return 3505;
+	flow_11:
+		return 3505;
+	flow_12:
+		return 3505;
+	flow_13:
+		return 3505;
+	flow_14:
+		return 3505;
+	flow_15:
+		return 3506;
+	flow_16:
+		return 3506;
+	flow_17:
+		return 3506;
+	flow_18:
+		return 3506;
+	flow_19:
+		return 3508;
+	flow_20:
+		return 3509;
+	flow_21:
+		return 3507;
+	flow_22:
+		return 3523;
+	flow_23:
+		return 3507;
+	flow_24:
+		return 3510;
+	flow_25:
+		return 3510;
+	flow_26:
+		return 3510;
+	flow_27:
+		return 3510;
+	flow_28:
+		return 3511;
+	flow_29:
+		return 3511;
+	flow_30:
+		return 3512;
+	flow_31:
+		return 3512;
+	flow_32:
+		return 3512;
+	flow_33:
+		return 3512;
+	flow_34:
+		return 3512;
+	flow_35:
+		return 3512;
+	flow_36:
+		return 3513;
+	flow_37:
+		return 3513;
+	flow_38:
+		return 3513;
+	flow_39:
+		return 3513;
+	flow_40:
+		return 3513;
+	flow_41:
+		return 3514;
+	flow_42:
+		return 3514;
+	flow_43:
+		return 3514;
+	flow_44:
+		return 3514;
+	flow_45:
+		return 3514;
+	flow_46:
+		return 3514;
+	flow_47:
+		return 3514;
+	flow_48:
+		return 3514;
+	flow_49:
+		return 3514;
+	flow_50:
+		return 3519;
+	flow_51:
+		return 3521;
+}

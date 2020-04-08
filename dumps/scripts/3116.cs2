@@ -1,0 +1,49 @@
+void script_3116() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	int stack_dump0;
+	opcStruct6506(4,3,0) structdump_1;
+	if (getWorldId() == -1) {
+		setWidgetIsHidden(true, new WidgetPointer(910,12));
+		setWidgetText(new WidgetPointer(910,11), "World: Auto");
+		return;
+	}
+	ivar0 = 0;
+	svar0 = "";
+	ivar1 = 0;
+	svar1 = "";
+	ivar2 = 0;
+	ivar3 = 0;
+	svar2 = "";
+	stack_dump0 = getWorldId();
+	structdump_1 = cs2method6506(stack_dump0);
+	svar2 = structdump_1.stringpart_2;
+	ivar3 = structdump_1.intpart_3;
+	ivar2 = structdump_1.intpart_2;
+	svar1 = structdump_1.stringpart_1;
+	ivar1 = structdump_1.intpart_1;
+	svar0 = structdump_1.stringpart_0;
+	ivar0 = structdump_1.intpart_0;
+	ivar4 = 0;
+	if (isBitFlagged(ivar0, 0)) {
+		ivar4 = 1;
+	} else {
+		ivar4 = 0;
+	}
+	svar3 = "World " + intToStr(getWorldId());
+	setWidgetText(new WidgetPointer(910,11), svar3);
+	setWidgetPosition(add(getTextWidth(3793, svar3), 5), 0, 2, 2, new WidgetPointer(910,12));
+	if (((boolean)ivar4)) {
+		setWidgetSprite(1531, new WidgetPointer(910,12));
+	} else {
+		setWidgetSprite(1532, new WidgetPointer(910,12));
+	}
+	return;
+}

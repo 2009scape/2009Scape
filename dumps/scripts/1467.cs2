@@ -1,0 +1,57 @@
+cs2func_script_1467_struct(2,0,0) script_1467(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int stack_dump0;
+	cs2func_script_1467_struct(2,0,0) structdump_1;
+	cs2func_script_1467_struct(2,0,0) structdump_2;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	if (((boolean)arg0)) {
+		stack_dump0 = 9;
+		structdump_1 = script_1467(stack_dump0);
+		ivar2 = structdump_1.intpart_1;
+		ivar1 = structdump_1.intpart_0;
+		ivar1 = ivar2;
+		stack_dump0 = 1;
+		structdump_2 = script_1467(stack_dump0);
+		ivar2 = structdump_2.intpart_1;
+		ivar3 = structdump_2.intpart_0;
+		return newstruct cs2func_script_1467_struct(ivar1, ivar2);
+	}
+	if (((boolean)arg0)) {
+		return newstruct cs2func_script_1467_struct(0, 516);
+	}
+	ivar1 = 0;
+	ivar2 = bitconfig_4885;
+	if (arg0 >= 3) {
+		ivar1 = ivar2;
+		ivar2 = add(ivar1, bitconfig_4886);
+	}
+	if (arg0 >= 4) {
+		ivar1 = ivar2;
+		ivar2 = add(ivar1, bitconfig_4887);
+	}
+	if (arg0 >= 5) {
+		ivar1 = ivar2;
+		ivar2 = add(ivar1, bitconfig_4888);
+	}
+	if (arg0 >= 6) {
+		ivar1 = ivar2;
+		ivar2 = add(ivar1, bitconfig_4889);
+	}
+	if (arg0 >= 7) {
+		ivar1 = ivar2;
+		ivar2 = add(ivar1, bitconfig_4890);
+	}
+	if (arg0 >= 8) {
+		ivar1 = ivar2;
+		ivar2 = add(ivar1, bitconfig_4891);
+	}
+	if (arg0 >= 9) {
+		ivar1 = ivar2;
+		ivar2 = add(ivar1, bitconfig_4892);
+	}
+	return newstruct cs2func_script_1467_struct(ivar1, ivar2);
+}

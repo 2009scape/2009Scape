@@ -1,0 +1,9 @@
+void script_1404(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	script_1839(bitconfig_5367, arg0, arg1, arg2);
+	if (arg5 != bitconfig_6175) {
+		setScriptCallOnConfigChange(1404, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), bitconfig_6175, 463, 1, "IIIIIiY", new WidgetPointer(arg4));
+		script_2046(arg3);
+	}
+	script_307();
+	return;
+}

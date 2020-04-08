@@ -1,0 +1,34 @@
+void script_2697(int arg0,int arg1) {
+	int ivar2;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	cs2func_script_2692_struct(2,0,0) structdump_3;
+	cs2func_script_2692_struct(2,0,0) structdump_4;
+	if (arg0 == cs2method6131()) {
+		return;
+	}
+	cs2method6031(arg0);
+	ivar2 = cs2method6131();
+	script_2593(ivar2);
+	if (arg0 != ivar2) {
+		cs2method6032(ivar2, 1);
+		script_2694(arg1, 1, "RuneScape was unable to enter that display mode." + "<br>" + "<br>" + "Please visit our Knowledge Base for more information.", "Consult Knowledge Base", "kbase/view.ws?guid=controls_display_options");
+		stack_dump0 = ivar2;
+		stack_dump1 = getDisplayMode();
+		stack_dump2 = ivar2;
+		structdump_3 = script_2692(stack_dump2);
+		script_3387(stack_dump0, stack_dump1, structdump_3.intpart_0, structdump_3.intpart_1, arg1);
+	}
+	stack_dump0 = ivar2;
+	stack_dump1 = getDisplayMode();
+	stack_dump2 = ivar2;
+	structdump_4 = script_2692(stack_dump2);
+	script_3387(stack_dump0, stack_dump1, structdump_4.intpart_0, structdump_4.intpart_1, arg1);
+	if (((boolean)ivar2) || (ivar2 == 3)) {
+		script_2700(1, arg1, 0, 1);
+	} else {
+		cs2method6032(ivar2, 0);
+	}
+	return;
+}

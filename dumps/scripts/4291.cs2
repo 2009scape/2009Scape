@@ -1,0 +1,81 @@
+void script_4291() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	int stack_dump3;
+	int stack_dump4;
+	setScriptCallOnClanChatSettingsStuff(4300, "", new WidgetPointer(1096,36));
+	setScriptCallOnGlobalConfigChange(4300, 1516, 1, "Y", new WidgetPointer(1096,36));
+	setScriptCallOnGameloop(4319, 0, 1, "ii", new WidgetPointer(1096,50));
+	setScriptCallOnClanChatSettingsStuff(4294, "", new WidgetPointer(1096,50));
+	setScriptCallOnClanChatDeltaStuff(4294, "", new WidgetPointer(1096,50));
+	setScriptCallOnGlobalConfigChange(118, 1500, 1501, 1502, 1503, 4, "Y", new WidgetPointer(1096,50));
+	setScriptCallOnGlobalStringChange(118, 347, 1, "Y", new WidgetPointer(1096,50));
+	switch (getLanguage()) {
+		case 1:
+			script_4499(3727, 1, getCommonDefinitionSize(3727), 10, 71827715, 71827725, 71827727, 71827726, 71827818, "");
+			break;
+		case 2:
+			script_4499(3728, 1, getCommonDefinitionSize(3727), 10, 71827715, 71827725, 71827727, 71827726, 71827818, "");
+			break;
+		case 3:
+			script_4499(3729, 1, getCommonDefinitionSize(3727), 10, 71827715, 71827725, 71827727, 71827726, 71827818, "");
+			break;
+		default:
+			script_4499(3720, 1, getCommonDefinitionSize(3720), 10, 71827715, 71827725, 71827727, 71827726, 71827818, "");
+	}
+	script_4328(71827829);
+	setScriptCallOnClanChatSettingsStuff(5226, "", new WidgetPointer(1096,373));
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(1096,50)), 115, 0, 0, new WidgetPointer(1096,50));
+	setWidgetIsHidden(true, new WidgetPointer(1096,363));
+	setWidgetIsHidden(false, new WidgetPointer(1096,108));
+	ivar0 = 71827491;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 218;
+	ivar5 = 23;
+	while (ivar1 < 500) {
+		if (mod(ivar1, 2) != 0) {
+			ivar2 = ivar4;
+		} else {
+			ivar2 = 0;
+		}
+		ivar3 = multiply(divide(ivar1, 2), ivar5);
+		createExtraChild(new WidgetPointer(ivar0), 3, ivar1);
+		setWidgetPosition(ivar2, ivar3, 0, 0);
+		setWidgetSize(divide(16384, 2), ivar5, 2, 0);
+		setWidgetFilled(1);
+		if (mod(divide(ivar1, 2), 2) != 0) {
+			setWidgetRGB(new Color(35, 34, 32));
+		} else {
+			setWidgetRGB(new Color(28, 27, 25));
+		}
+		ivar1 = add(ivar1, 1);
+	}
+	if (citadelConfigsInitialized()) {
+		stack_dump0 = 4514;
+		stack_dump1 = 0;
+		stack_dump2 = 105;
+		stack_dump3 = 115;
+		stack_dump4 = 4514;
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:106
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+				at tests.Main.main(Main.java:45)
+			
+		 */
+	}
+	script_4499(4514, 0, -1, 4, 71827675, 71827685, 71827687, 71827686, 71827818, "N/A");
+	script_4499(4255, 0, -1, 4, 71827660, 71827670, 71827672, 71827671, 71827818, "N/A");
+	return;
+}

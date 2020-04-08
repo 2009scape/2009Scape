@@ -1,0 +1,26 @@
+void script_2850() {
+	globalint_1069 = 500;
+	globalint_1070 = addToCoordinate(getMyPositionHash(), 0, 0, -8);
+	globalint_1071 = 0;
+	globalint_1072 = getMyPositionHash();
+	globalint_1073 = 450;
+	globalint_1074 = 0;
+	globalint_1282 = 25;
+	cameraMoveTo(globalint_1070, globalint_1069, 10, 3);
+	cameraPointAt(script_2865(globalint_1070, globalint_1071), globalint_1073, 10, 3);
+	globalint_1075 = 0;
+	globalint_1076 = 0;
+	setScriptCallOnKeyPress(2851, new WidgetPointer(-32768,3), -2147483640, 0, "Iii", new WidgetPointer(475,1));
+	setWidgetIsHidden(false, new WidgetPointer(475,54));
+	setWidgetIsHidden(false, new WidgetPointer(475,7));
+	setWidgetIsHidden(false, new WidgetPointer(475,58));
+	setWidgetIsHidden(true, new WidgetPointer(475,33));
+	setWidgetSprite(1232, new WidgetPointer(475,28));
+	setWidgetText(new WidgetPointer(475,29), "You are now in Aim Mode");
+	setScriptCallOnGameloop(2853, new WidgetPointer(475,1), getClientCycle(), "Ii", new WidgetPointer(475,1));
+	setScriptCallOnGameloop(2852, new WidgetPointer(475,7), "I", new WidgetPointer(475,7));
+	setWidgetIsHidden(false, new WidgetPointer(475,2));
+	setScriptCallOnGameloop(2870, new WidgetPointer(-32768,3), add(getClientCycle(), 150), "Ii", new WidgetPointer(475,2));
+	script_3455();
+	return;
+}

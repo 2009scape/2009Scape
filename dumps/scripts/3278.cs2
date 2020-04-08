@@ -1,0 +1,22 @@
+void script_3278(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	ivar4 = 0;
+	ivar5 = 0;
+	switch (arg3) {
+		case 1:
+			ivar4 = divide(getWidgetActualWidth(new WidgetPointer(942,3)), 4);
+			ivar5 = divide(getWidgetActualHeight(new WidgetPointer(942,3)), 4);
+			break;
+		case 2:
+			ivar4 = divide(getWidgetActualWidth(new WidgetPointer(942,3)), 4);
+			break;
+	}
+	createExtraChild(new WidgetPointer(942,3), 5, globalint_1149);
+	globalint_1149 = add(globalint_1149, 1);
+	setWidgetSize(32, 32, 0, 0);
+	setWidgetSprite(arg2);
+	setWidgetPosition(add(multiply(arg0, 32), ivar4), add(multiply(arg1, 32), ivar5), 0, 2);
+	setWidgetHidden(0);
+	return;
+}

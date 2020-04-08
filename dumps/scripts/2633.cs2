@@ -1,0 +1,8 @@
+void script_2633(int arg0) {
+	if (arg0 != 56295424) {
+		script_679(arg0);
+	}
+	setWidgetText(new WidgetPointer(859,28), "");
+	setWidgetText(new WidgetPointer(859,29), "");
+	return;
+}

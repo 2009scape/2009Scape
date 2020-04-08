@@ -1,0 +1,55 @@
+void script_3944(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	int stack_dump3;
+	string stack_dump4;
+	cs2func_script_802_struct(1,1,0) structdump_5;
+	if (((boolean)globalint_1412)) {
+		return;
+	}
+	ivar3 = 67371189;
+	ivar4 = 67371190;
+	ivar5 = 67371191;
+	if (((boolean)arg2)) {
+		ivar3 = 58327099;
+		ivar4 = 58327100;
+		ivar5 = 58327101;
+	}
+	switch (arg0) {
+		case 13:
+			return;
+		case 84:
+			globalint_1412 = 1;
+			return;
+		case 102:
+		case 103:
+		case 98:
+		case 99:
+		case 96:
+		case 97:
+			globalint_1099 = script_1553(arg0, globalint_1099, globalstring_330);
+			script_3218(ivar3, ivar4, ivar5, 16, globalstring_330);
+			return;
+	}
+	if (((strLength(globalstring_330) >= 12) && (arg0 != 85)) && (arg0 != 101)) {
+		return;
+	}
+	if (((strIndexof(((char)arg1), 0, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 _-") != -1) || (arg0 == 85)) || (arg0 == 101)) {
+		stack_dump0 = globalint_1099;
+		stack_dump1 = 2;
+		stack_dump2 = arg0;
+		stack_dump3 = arg1;
+		stack_dump4 = globalstring_330;
+		structdump_5 = script_802(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		stack_dump4 = structdump_5.stringpart_0;
+		globalint_1099 = structdump_5.intpart_0;
+		globalstring_330 = stack_dump4;
+		setWidgetText(new WidgetPointer(ivar4), globalstring_330);
+		script_3218(ivar3, ivar4, ivar5, 16, globalstring_330);
+	}
+	return;
+}

@@ -1,0 +1,12 @@
+void script_1455() {
+	int ivar0;
+	ivar0 = 0;
+	while (ivar0 < getItemContainerLength(95)) {
+		if (setWidgetRegister(new WidgetPointer(762,93), ivar0)) {
+			setWidgetHidden(1);
+			setWidgetPosition(0, 0, 0, 0);
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	return;
+}

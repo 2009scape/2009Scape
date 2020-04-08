@@ -1,0 +1,65 @@
+void script_4539(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,int arg11,string arg12) {
+	int ivar12;
+	int ivar13;
+	flow_0:
+		if (((boolean)script_4761(25))) {
+			return;
+		}
+		ivar12 = 0;
+		ivar13 = 0;
+		IF (setWidgetRegister(new WidgetPointer(arg0), subtract(getExtraChildGap(new WidgetPointer(arg0)), 1))) 
+			GOTO	flow_3
+		GOTO	flow_18
+	flow_3:
+		IF (setWidgetRegister(new WidgetPointer(arg1), arg2)) 
+			GOTO	flow_5
+		IF (((arg2 == -1) && setWidgetRegister(new WidgetPointer(arg1))) && (getWidgetSpriteId() == 5613)) 
+			GOTO	flow_6
+		GOTO	flow_18
+	flow_5:
+	flow_6:
+		switch (arg9) {
+			case 3:
+				if (((boolean)getWidgetModelId())) {
+					ivar13 = getWidgetActualHeight(new WidgetPointer(arg0));
+					ivar12 = subtract(add(script_1744(), arg11), add(script_3366(arg0), divide(ivar13, 2)));
+					ivar13 = divide(subtract(ivar13, 35), 2);
+					ivar12 = max(min(ivar12, ivar13), subtract(0, ivar13));
+					setWidgetPosition(0, ivar12, 2, 1);
+					return;
+				}
+				break;
+			case 1:
+				if (getWidgetModelId() == 32768) {
+					ivar13 = getWidgetActualHeight(new WidgetPointer(arg0));
+					ivar12 = subtract(add(script_1744(), arg11), add(script_3366(arg0), divide(ivar13, 2)));
+					ivar13 = divide(subtract(ivar13, 35), 2);
+					ivar12 = max(min(ivar12, ivar13), subtract(0, ivar13));
+					setWidgetPosition(0, ivar12, 0, 1);
+					return;
+				}
+				break;
+			case 0:
+				if (getWidgetModelId() == 49152) {
+					ivar13 = getWidgetActualWidth(new WidgetPointer(arg0));
+					ivar12 = subtract(add(script_1743(), arg10), add(script_3365(arg0), divide(ivar13, 2)));
+					ivar13 = divide(subtract(ivar13, 35), 2);
+					ivar12 = max(min(ivar12, ivar13), subtract(0, ivar13));
+					setWidgetPosition(ivar12, 0, 1, 2);
+					return;
+				}
+				break;
+			default:
+				if (getWidgetModelId() == 16384) {
+					ivar13 = getWidgetActualWidth(new WidgetPointer(arg0));
+					ivar12 = subtract(add(script_1743(), arg10), add(script_3365(arg0), divide(ivar13, 2)));
+					ivar13 = divide(subtract(ivar13, 35), 2);
+					ivar12 = max(min(ivar12, ivar13), subtract(0, ivar13));
+					setWidgetPosition(ivar12, 0, 1, 0);
+					return;
+				}
+		}
+	flow_18:
+		script_4540(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12);
+		return;
+}

@@ -1,0 +1,44 @@
+void script_2567() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = -1;
+	ivar5 = 5;
+	ivar1 = divide(subtract(getWidgetActualWidth(new WidgetPointer(842,17)), multiply(36, ivar5)), subtract(ivar5, 1));
+	ivar2 = divide(subtract(getWidgetActualHeight(new WidgetPointer(842,17)), 128), 3);
+	if (getItemAmtInContainer(93, 15001) > 0) {
+		ivar4 = 1991;
+	} else if (getItemAmtInContainer(93, 15002) > 0) {
+		ivar4 = 1995;
+	} else if (getItemAmtInContainer(93, 15003) > 0) {
+		ivar4 = 1998;
+	} else {
+		if (getItemAmtInContainer(93, 15004) > 0) {
+			ivar4 = 1999;
+		}
+	}
+	while (((boolean)ivar3)) {
+		if (cs2method_3408(105, 79, ivar4, ivar0) != 1511) {
+			createExtraChild(new WidgetPointer(842,17), 5, ivar0);
+			setWidgetSize(36, 32, 0, 0);
+			setWidgetPosition(multiply(add(36, ivar1), mod(ivar0, ivar5)), multiply(divide(ivar0, ivar5), add(32, ivar2)), 0, 0);
+			setItemOnWidgetMethod1200(cs2method_3408(105, 79, ivar4, ivar0), -1);
+			cs2method1305("<col=ff981f>" + getItemName(cs2method_3408(105, 79, ivar4, ivar0)));
+			setWidgetContextMenuOption(1, "Withdraw");
+			setWidgetContextMenuOption(2, "Examine");
+			setWidgetShadowColor(new Color(51, 51, 51));
+			setWidgetBorderThickness(1);
+			ivar0 = add(ivar0, 1);
+		} else {
+			ivar3 = 1;
+		}
+	}
+	return;
+}

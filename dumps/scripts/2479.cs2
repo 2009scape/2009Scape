@@ -1,0 +1,10 @@
+void script_2479() {
+	if (globalint_825 < 1) {
+		globalint_825 = 6;
+	}
+	if (globalint_825 > 0) {
+		globalint_825 = subtract(globalint_825, 1);
+	}
+	setWidgetText(new WidgetPointer(37,35), intToStr(globalint_825));
+	return;
+}

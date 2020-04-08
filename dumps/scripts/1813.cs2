@@ -1,0 +1,7 @@
+void script_1813(int arg0,int arg1) {
+	if (getClientCycle() >= arg0) {
+		setWidgetText(new WidgetPointer(arg1), "");
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg1));
+	}
+	return;
+}

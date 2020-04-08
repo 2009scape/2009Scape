@@ -1,0 +1,52 @@
+void script_4319(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 71827506;
+	ivar5 = 71827505;
+	ivar6 = 71827530;
+	ivar7 = 71827612;
+	ivar8 = 71827501;
+	ivar9 = 71827532;
+	if (arg0 > 0) {
+		ivar2 = subtract(arg0, 1);
+	} else {
+		ivar2 = 0;
+		ivar3 = getWidgetActualHeight(new WidgetPointer(ivar4));
+		if (((boolean)arg1)) {
+			ivar3 = add(ivar3, 6);
+			setWidgetVFlip(0, new WidgetPointer(ivar6));
+			setWidgetVFlip(0, new WidgetPointer(ivar7));
+			setWidgetContextMenuOption(1, new WidgetPointer(ivar8), "Hide");
+			setScriptCallOnClickContextMenu(4319, 0, 1, "ii", new WidgetPointer(ivar8));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1096,68));
+			ivar3 = subtract(ivar3, 6);
+			setWidgetVFlip(1, new WidgetPointer(ivar6));
+			setWidgetVFlip(1, new WidgetPointer(ivar7));
+			setWidgetContextMenuOption(1, new WidgetPointer(ivar8), "Show");
+			setScriptCallOnClickContextMenu(4319, 0, 0, "ii", new WidgetPointer(ivar8));
+		}
+		ivar3 = min(ivar3, 224);
+		ivar3 = max(ivar3, 115);
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(ivar4)), ivar3, 0, 0, new WidgetPointer(ivar4));
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(ivar5)), subtract(ivar3, 62), 0, 1, new WidgetPointer(ivar5));
+		if (((boolean)arg1) && (ivar3 >= 224)) {
+			setWidgetIsHidden(false, new WidgetPointer(1096,68));
+			setScriptCallOnGameloop(-1, "", new WidgetPointer(ivar4));
+		} else if (((boolean)arg1) && (ivar3 <= 115)) {
+			setScriptCallOnGameloop(-1, "", new WidgetPointer(ivar4));
+		} else {
+			setScriptCallOnGameloop(4319, ivar2, arg1, "ii", new WidgetPointer(ivar4));
+		}
+		script_4302();
+	}
+	return;
+}

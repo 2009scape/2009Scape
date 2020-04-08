@@ -1,0 +1,40 @@
+cs2func_script_942_struct(1,1,0) script_942(int arg0) {
+	if (standart_config_1469 == cs2method_3408(105, 99, 2536, arg0)) {
+		return newstruct cs2func_script_942_struct(0, "null");
+	}
+	switch (arg0) {
+		case 0:
+			return newstruct cs2func_script_942_struct(1, cs2method_3408(105, 115, 2535, 0));
+		case 1:
+			return newstruct cs2func_script_942_struct(1, cs2method_3408(105, 115, 2535, 1));
+		case 2:
+			return newstruct cs2func_script_942_struct(1, cs2method_3408(105, 115, 2535, 2));
+		case 3:
+			return newstruct cs2func_script_942_struct(1, cs2method_3408(105, 115, 2535, 3));
+		case 4:
+			return newstruct cs2func_script_942_struct(1, cs2method_3408(105, 115, 2535, 4));
+		case 5:
+			if (bitconfig_720 == 20) {
+				return newstruct cs2func_script_942_struct(1, cs2method_3408(105, 115, 2535, 5));
+			}
+			break;
+		case 6:
+			if (bitconfig_722 == 20) {
+				return newstruct cs2func_script_942_struct(1, cs2method_3408(105, 115, 2535, 6));
+			}
+			break;
+		case 7:
+			if (bitconfig_724 == 20) {
+				return newstruct cs2func_script_942_struct(1, cs2method_3408(105, 115, 2535, 7));
+			}
+			break;
+		case 8:
+			if (bitconfig_3959 >= 3) {
+				return newstruct cs2func_script_942_struct(1, cs2method_3408(105, 115, 2535, 8));
+			}
+			break;
+		default:
+			return newstruct cs2func_script_942_struct(-1, "null");
+	}
+	return newstruct cs2func_script_942_struct(0, "null");
+}

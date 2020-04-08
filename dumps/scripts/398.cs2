@@ -1,0 +1,44 @@
+void script_398() {
+	setWidgetNoOptions(new WidgetPointer(306,29));
+	globalint_767 = 0;
+	globalint_761 = -1;
+	globalint_762 = -1;
+	globalint_763 = -1;
+	globalint_764 = -1;
+	globalint_765 = 0;
+	globalint_766 = 0;
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(306,19));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(306,20));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(306,21));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(306,22));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(306,10));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(306,25));
+	setWidgetText(new WidgetPointer(306,3), "Correct: " + intToStr(globalint_767) + "/" + intToStr(10));
+	globalint_761 = cs2method_3408(105, 109, 208, 1);
+	if (globalint_761 != -1) {
+		setWidgetModel(globalint_761, new WidgetPointer(306,6));
+		setWidget3DRotation(0, 0, 512, 0, 0, 800, new WidgetPointer(306,6));
+	}
+	globalint_762 = cs2method_3408(105, 109, 208, 2);
+	if (globalint_762 != -1) {
+		setWidgetModel(globalint_762, new WidgetPointer(306,7));
+		setWidget3DRotation(0, 0, 512, 0, 0, 800, new WidgetPointer(306,7));
+	}
+	globalint_763 = cs2method_3408(105, 109, 208, 3);
+	if (globalint_763 != -1) {
+		setWidgetModel(globalint_763, new WidgetPointer(306,8));
+		setWidget3DRotation(0, 0, 512, 0, 0, 800, new WidgetPointer(306,8));
+	}
+	globalint_764 = cs2method_3408(105, 109, 208, 4);
+	if (globalint_764 != -1) {
+		setWidgetModel(globalint_764, new WidgetPointer(306,9));
+		setWidget3DRotation(0, 0, 512, 0, 0, 800, new WidgetPointer(306,9));
+	}
+	setWidgetPosition(subtract(0, getWidgetActualWidth(new WidgetPointer(306,6))), getWidgetActualY(new WidgetPointer(306,6)), 0, 0, new WidgetPointer(306,6));
+	setWidgetPosition(subtract(0, getWidgetActualWidth(new WidgetPointer(306,7))), getWidgetActualY(new WidgetPointer(306,7)), 0, 0, new WidgetPointer(306,7));
+	setWidgetPosition(subtract(0, getWidgetActualWidth(new WidgetPointer(306,8))), getWidgetActualY(new WidgetPointer(306,8)), 0, 0, new WidgetPointer(306,8));
+	setWidgetPosition(subtract(0, getWidgetActualWidth(new WidgetPointer(306,9))), getWidgetActualY(new WidgetPointer(306,9)), 0, 0, new WidgetPointer(306,9));
+	setWidgetPosition(getWidgetActualX(new WidgetPointer(306,5)), 200, 0, 0, new WidgetPointer(306,10));
+	setScriptCallOnGameloop(399, new WidgetPointer(306,6), "I", new WidgetPointer(306,19));
+	return;
+}

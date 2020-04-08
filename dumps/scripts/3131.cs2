@@ -1,0 +1,11 @@
+void script_3131(int arg0,int arg1,int arg2) {
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		setWidgetIsHidden(false, new WidgetPointer(910,65));
+		setWidgetIsHidden(false, new WidgetPointer(910,66));
+		setWidgetPosition(getWidgetActualX(new WidgetPointer(910,65)), getWidgetActualY(), 0, 0, new WidgetPointer(910,65));
+		setWidgetPosition(getWidgetActualX(new WidgetPointer(910,66)), getWidgetActualY(), 0, 0, new WidgetPointer(910,66));
+	}
+	setWidgetRGB(new Color(64, 64, 64), new WidgetPointer(910,66));
+	setWidgetRGB(new Color(96, 96, 96), new WidgetPointer(910,65));
+	return;
+}

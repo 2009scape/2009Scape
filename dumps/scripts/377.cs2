@@ -1,0 +1,22 @@
+void script_377(int arg0,int arg1) {
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		deleteExtraChild();
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 1))) {
+		deleteExtraChild();
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 2))) {
+		deleteExtraChild();
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 3))) {
+		deleteExtraChild();
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 4))) {
+		deleteExtraChild();
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 5))) {
+		deleteExtraChild();
+	}
+	script_383();
+	return;
+}

@@ -1,0 +1,11 @@
+cs2func_script_4957_struct(4,0,0) script_4957(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar1 = script_4960(arg0);
+	ivar2 = script_4980(arg0);
+	ivar3 = script_4954(arg0);
+	ivar4 = script_4955(arg0);
+	return newstruct cs2func_script_4957_struct(ivar1, ivar3, ivar4, ivar2);
+}

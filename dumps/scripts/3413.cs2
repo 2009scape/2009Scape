@@ -1,0 +1,9 @@
+void script_3413(int arg0) {
+	if (((boolean)arg0)) {
+		script_2694(arg0, 1, "This setting is not available in your current version of Java.", "", "");
+		script_2694(arg0, 1, "Please update to the latest version.", "", "");
+	} else {
+		script_2694(arg0, 1, "This setting is not available in your current version of Java." + "<br>" + "<br>" + "Please update to the latest version, or try our Windows Client available from the link below.", "Download Windows Client", "kbase/view.ws?guid=Downloads_and_Wallpapers");
+	}
+	return;
+}

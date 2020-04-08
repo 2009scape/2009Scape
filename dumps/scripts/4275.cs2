@@ -1,0 +1,7 @@
+void script_4275() {
+	setWidgetAnimation(8016, new WidgetPointer(1081,7));
+	setWidgetAnimation(8016, new WidgetPointer(1081,2));
+	setWidgetAnimation(4407, new WidgetPointer(1081,1));
+	setWidgetAnimation(8016, new WidgetPointer(1081,0));
+	return;
+}

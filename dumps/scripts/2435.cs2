@@ -1,0 +1,41 @@
+void script_2435() {
+	int ivar0;
+	int ivar1;
+	string svar0;
+	string svar1;
+	if (globalint_815 > 0) {
+		globalint_815 = subtract(globalint_815, 1);
+	} else {
+		script_2436();
+		return;
+	}
+	ivar0 = divide(globalint_815, 50);
+	ivar1 = divide(ivar0, 60);
+	ivar0 = subtract(ivar0, multiply(ivar1, 60));
+	svar0 = "";
+	svar1 = "";
+	if (((boolean)ivar1)) {
+		svar0 = "00";
+	} else if (ivar1 < 10) {
+		svar0 = "0" + intToStr(ivar1);
+	} else {
+		svar0 = intToStr(ivar1);
+	}
+	if (((boolean)ivar0)) {
+		svar1 = "00";
+	} else if (ivar0 < 10) {
+		svar1 = "0" + intToStr(ivar0);
+	} else {
+		svar1 = intToStr(ivar0);
+	}
+	if (getDisplayMode() < 2) {
+		setWidgetIsHidden(false, new WidgetPointer(548,14));
+		setWidgetIsHidden(false, new WidgetPointer(548,13));
+		setWidgetText(new WidgetPointer(548,14), svar0 + ":" + svar1);
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(746,169));
+		setWidgetIsHidden(false, new WidgetPointer(746,168));
+		setWidgetText(new WidgetPointer(746,169), svar0 + ":" + svar1);
+	}
+	return;
+}

@@ -1,0 +1,13 @@
+void script_4572(int arg0,int arg1) {
+	if (cs2method3612() <= 0) {
+		setWidgetText(new WidgetPointer(589,27), "");
+		setWidgetIsHidden(true, new WidgetPointer(arg1));
+		return;
+	}
+	if ((mod(subtract(getClientCycle(), arg0), 40) < 20) && hasWindowFocus()) {
+		setWidgetIsHidden(false, new WidgetPointer(arg1));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(arg1));
+	}
+	return;
+}

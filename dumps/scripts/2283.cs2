@@ -1,0 +1,15 @@
+void script_2283(int arg0,int arg1) {
+	globalstring_123 = globalstring_122;
+	if (strLength(globalstring_122) <= 0) {
+		script_3213(44105822, "Please enter your Email address here.");
+		return;
+	}
+	if (((boolean)script_3936(globalstring_122))) {
+		script_3213(44105822, "Please enter a valid Email address.");
+		return;
+	}
+	script_3208(1);
+	sendRequestAccount(globalstring_122);
+	setScriptCallOnGameloop(2284, arg0, arg1, "11", new WidgetPointer(673,20));
+	return;
+}

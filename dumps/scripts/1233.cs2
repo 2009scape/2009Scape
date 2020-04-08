@@ -1,0 +1,25 @@
+void script_1233(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	int ivar6;
+	int ivar7;
+	int stack_dump0;
+	ivar6 = 0;
+	ivar7 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		if (arg2 == arg0) {
+			if (setWidgetRegister(new WidgetPointer(arg2), arg3)) {
+				stack_dump0 = getWidgetActualX();
+				ivar7 = getWidgetActualY();
+				ivar6 = stack_dump0;
+				setWidgetPosition(getWidgetActualX(), getWidgetActualY(), 0, 0);
+				setWidgetPosition(ivar6, ivar7, 0, 0);
+			}
+			return;
+		}
+		if ((arg2 == arg4) || (arg2 == arg5)) {
+			setWidgetHidden(1);
+			return;
+		}
+		setWidgetPosition(getWidgetActualX(), getWidgetActualY(), 0, 0);
+	}
+	return;
+}

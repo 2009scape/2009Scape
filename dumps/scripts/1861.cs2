@@ -1,0 +1,10 @@
+void script_1861() {
+	setWidgetModel(cs2method_3408(105, 109, 1318, bitconfig_5470), new WidgetPointer(799,10));
+	setWidgetModel(cs2method_3408(105, 109, 1318, bitconfig_5471), new WidgetPointer(799,11));
+	setWidgetModel(cs2method_3408(105, 109, 1318, bitconfig_5472), new WidgetPointer(799,12));
+	setWidgetModel(cs2method_3408(105, 109, 1318, bitconfig_5473), new WidgetPointer(799,13));
+	setWidgetModel(cs2method_3408(105, 109, 1318, bitconfig_5474), new WidgetPointer(799,14));
+	setWidgetModel(cs2method_3408(105, 109, 1318, bitconfig_5475), new WidgetPointer(799,15));
+	setWidgetModel(cs2method_3408(105, 109, 1318, bitconfig_5476), new WidgetPointer(799,16));
+	return;
+}

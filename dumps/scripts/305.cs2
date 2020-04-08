@@ -1,0 +1,9 @@
+void script_305(int arg0) {
+	if (((boolean)arg0)) {
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(755,14));
+	} else {
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(755,14));
+	}
+	setScriptCallOnGameloop(306, getClientCycle(), new WidgetPointer(-32768,3), "iI", new WidgetPointer(755,14));
+	return;
+}

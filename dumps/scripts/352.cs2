@@ -1,0 +1,23 @@
+void script_352(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	if ((arg1 == globalint_86) || (arg0 != 1)) {
+		return;
+	}
+	playSoundEffect(9819, 1, 0);
+	ivar2 = cs2method_3408(105, 74, 3278, subtract(globalint_197, 1));
+	if (ivar2 == -1) {
+		return;
+	}
+	ivar3 = script_734(((int)IsFemale()));
+	ivar4 = script_384(subtract(arg1, 1), ivar2, ivar3);
+	if (ivar4 == -1) {
+		return;
+	}
+	globalint_86 = arg1;
+	bitconfig_8090 = arg1;
+	script_359(ivar4, ivar3);
+	script_390(ivar3);
+	return;
+}

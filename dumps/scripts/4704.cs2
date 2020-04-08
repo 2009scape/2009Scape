@@ -1,0 +1,190 @@
+void script_4704() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	loginResponse(3,0,0) structdump_0;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = -1;
+	structdump_0 = getLoginResponse();
+	ivar2 = structdump_0.intpart_2;
+	ivar1 = structdump_0.intpart_1;
+	ivar0 = structdump_0.intpart_0;
+	switch (ivar0) {
+		case 0:
+			break;
+		case 1:
+			break;
+		case 2:
+			break;
+		case 3:
+			messageType0("Your password has been updated. Please leave the world and log in again.");
+			break;
+		case 4:
+			messageType0("Your account has been disabled. Check your Message Centre for details.");
+			break;
+		case 5:
+			messageType0("Your account has not logged out from its last session. Try again in a few minutes.");
+			break;
+		case 6:
+			messageType0("RuneScape has been updated! Please try again in a few minutes.");
+			break;
+		case 7:
+			messageType0("This world is full. Please try back later.");
+			break;
+		case 8:
+			messageType0("Unable to connect: login server offline.");
+			break;
+		case 9:
+			messageType0("Login limit exceeded: too many connections from your address.");
+			break;
+		case 10:
+			messageType0("Unable to connect: bad session id.");
+			break;
+		case 11:
+			messageType0("Your password is an extremely common choice, and is not secure. You must change it.");
+			break;
+		case 12:
+			messageType0("You need a member's account to log in to this world.");
+			break;
+		case 13:
+			messageType0("Could not complete login. Please try back later.");
+			break;
+		case 14:
+			messageType0("The server is being updated. Please wait a few minutes and try again.");
+			break;
+		case 15:
+			break;
+		case 16:
+			messageType0("Too many incorrect logins from your address. Please wait 5 minutes before trying again.");
+			break;
+		case 17:
+			messageType0("You are standing in a members-only area. To play on this world, move to a free area first.");
+			break;
+		case 18:
+			messageType0("Your account has been locked. If you have not received an account recovery email, please select 'Recover Account'.");
+			break;
+		case 19:
+			messageType0("Fullscreen is currently a members-only feature. To log in, either exit fullscreen via the options menu or use a member's account.");
+			break;
+		case 20:
+			messageType0("Invalid loginserver requested. Please try back later.");
+			break;
+		case 21:
+			break;
+		case 22:
+			messageType0("Malformed login packet. Please try again.");
+			break;
+		case 23:
+			messageType0("No reply from login server. Please wait a minute and try again.");
+			break;
+		case 24:
+			messageType0("Error loading your profile. Please contact customer support.");
+			break;
+		case 25:
+			messageType0("Unexpected loginserver response. Please try back later.");
+			break;
+		case 26:
+			messageType0("This computer's address has been blocked, as it was used to break our rules.");
+			break;
+		case 27:
+			messageType0("Service unavailable.");
+			break;
+		case 28:
+			break;
+		case 29:
+			switch (getDetailedRC()) {
+				case 0:
+					messageType0("You must have a Combat Level of at least 20 (not including Summoning) to enter a PvP world.");
+					break;
+				case 1:
+					messageType0("You are currently carrying lent items and cannot enter a PvP world.");
+					break;
+				case 2:
+					messageType0("You must be standing in the Wilderness or Edgeville to enter this bounty world.");
+					break;
+				case 3:
+					messageType0("You must have a total skill level of 1,000 or greater to enter this world.");
+					break;
+				case 5:
+					messageType0("You must have a total skill level of 1,500 or greater to enter this world.");
+					break;
+				case 4:
+					messageType0("You must move to a safe area before you can log in to a PvP or bounty world.");
+					break;
+				default:
+					messageType0("Unexpected server response. Please try back later.");
+			}
+			break;
+		case 30:
+			messageType0("This is not a member's account. Please choose a 'free' world from the website to play on this account.");
+			break;
+		case 31:
+			break;
+		case 32:
+			messageType0("Your account has negative membership credit. Please log into the billing system to add credit to your account.");
+			break;
+		case 33:
+			break;
+		case 34:
+			break;
+		case 35:
+			break;
+		case 36:
+			break;
+		case 37:
+			messageType0("Your account is currently inaccessible. Please try again in a few minutes.");
+			break;
+		case 38:
+			break;
+		case 39:
+			messageType0("The instance you tried to join no longer exists. Please try back later.");
+			break;
+		case 40:
+			messageType0("You need a member's account to log in to this instance.");
+			break;
+		case 41:
+			messageType0("The instance you tried to join is full. Please try back later.");
+			break;
+		case 42:
+			break;
+		case 43:
+			break;
+		case 44:
+			messageType0("Our systems are currently unavailable. Please try again in a few minutes.");
+			break;
+		case 45:
+			switch (ivar2) {
+				case 0:
+					switch (ivar1) {
+						case 0:
+							messageType0("You must be near the TzHaar Fight Pits entrance to enter a global match.");
+							break;
+						default:
+							messageType0("Unable to log in. Please try back later.");
+					}
+					break;
+				case 1:
+					switch (ivar1) {
+						case 1:
+							messageType0("There was an error connecting to your meeting room. Please try again.");
+							break;
+						case 2:
+							messageType0("You need a higher rank to enter that private tent.");
+							break;
+						case 3:
+							messageType0("You need an invitation to enter that private room.");
+							break;
+						default:
+							messageType0("Unable to log in. Please try back later.");
+					}
+					break;
+				default:
+					messageType0("Unable to log in. Please try back later.");
+			}
+			break;
+		case 46:
+			messageType0("This instance is marked for deletion/rebuild. Please try again in a few minutes.");
+	}
+	return;
+}

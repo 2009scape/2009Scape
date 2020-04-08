@@ -1,0 +1,61 @@
+void script_328(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	string svar0;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar1 = 5;
+	ivar2 = 5;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 0;
+	svar0 = " ";
+	ivar7 = -1;
+	if (IsFemale()) {
+		ivar4 = getCommonDefinitionSize(2363);
+		if (((boolean)globalint_783)) {
+			ivar7 = 2362;
+		} else {
+			ivar7 = 2361;
+		}
+	} else if (((boolean)globalint_783)) {
+		ivar7 = 2129;
+	} else {
+		ivar7 = 1609;
+	}
+	ivar4 = getCommonDefinitionSize(2132);
+	ivar5 = multiply(ivar4, 2);
+	while (ivar3 < ivar4) {
+		createExtraChild(new WidgetPointer(arg0), 5, ivar3);
+		setWidgetSize(36, 36, 0, 0);
+		setWidgetPosition(ivar1, ivar2, 0, 0);
+		setWidgetSprite(180);
+		setWidgetContextMenuOption(1, "Select" + "<col=ff9040>");
+		setScriptCallOnClickContextMenu(331, new WidgetPointer(-32768,3), -2147483643, "Ii");
+		ivar3 = add(ivar3, 1);
+		ivar2 = add(28, ivar2);
+	}
+	ivar2 = 5;
+	while (ivar3 < ivar5) {
+		svar0 = cs2method_3408(105, 115, ivar7, ivar6);
+		createExtraChild(new WidgetPointer(arg0), 4, ivar3);
+		setWidgetText(svar0);
+		setWidgetSize(124, 16, 0, 0);
+		setWidgetPosition(add(ivar1, 20), ivar2, 0, 0);
+		setWidgetRGB(new Color(255, 255, 255));
+		setWidgetFont(494);
+		setWidgetUnknownBoolean(false);
+		setWidgetTextAlignment(0, 1, 0);
+		setWidgetContextMenuOption(1, "Select" + "<col=ff9040>");
+		setScriptCallOnClickContextMenu(331, new WidgetPointer(-32768,3), subtract(ivar3, ivar4), "Ii");
+		ivar3 = add(ivar3, 1);
+		ivar6 = add(ivar6, 1);
+		ivar2 = add(28, ivar2);
+	}
+	return;
+}

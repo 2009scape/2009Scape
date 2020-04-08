@@ -1,0 +1,8 @@
+void script_3650(int arg0) {
+	if (script_3666(4) == script_3668(12)) {
+		script_3633(arg0);
+	} else {
+		script_3634(arg0);
+	}
+	return;
+}

@@ -1,0 +1,8 @@
+void script_1131(int arg0) {
+	if (globalint_1000 > getMyCombat()) {
+		setWidgetText(new WidgetPointer(arg0), "Combat Lvl: " + intToStr(getMyCombat()) + "+" + intToStr(subtract(globalint_1000, getMyCombat())));
+	} else {
+		setWidgetText(new WidgetPointer(arg0), "Combat Lvl: " + intToStr(getMyCombat()));
+	}
+	return;
+}

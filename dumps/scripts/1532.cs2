@@ -1,0 +1,13 @@
+int script_1532() {
+	int ivar0;
+	ivar0 = 0;
+	ivar0 = add(ivar0, 1);
+	ivar0 = add(ivar0, 1);
+	ivar0 = add(ivar0, 1);
+	ivar0 = add(ivar0, 1);
+	ivar0 = add(ivar0, 1);
+	ivar0 = add(ivar0, 1);
+	ivar0 = add(ivar0, 1);
+	ivar0 = add(ivar0, 1);
+	return ivar0;
+}

@@ -1,0 +1,12 @@
+void script_2118(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = 0;
+	while (ivar2 < 7) {
+		createExtraChild(new WidgetPointer(arg1), 3, add(multiply(arg0, 7), ivar2));
+		setWidgetSize(0, 0, 0, 0);
+		setWidgetPosition(-1, -1, 0, 0);
+		setWidgetHidden(1);
+		ivar2 = add(ivar2, 1);
+	}
+	return;
+}

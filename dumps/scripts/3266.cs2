@@ -1,0 +1,20 @@
+cs2func_script_3266_struct(2,0,0) script_3266(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	if (((boolean)arg0) && (bitconfig_7554 != 0)) {
+		return newstruct cs2func_script_3266_struct(1, 0);
+	}
+	while (ivar1 < min(subtract(bitconfig_7554, 1), 15)) {
+		ivar2 = add(ivar2, subtract(22, ivar3));
+		ivar3 = min(add(ivar3, 3), 19);
+		if (arg0 == ivar2) {
+			return newstruct cs2func_script_3266_struct(1, add(ivar1, 1));
+		}
+		ivar1 = add(ivar1, 1);
+	}
+	return newstruct cs2func_script_3266_struct(0, 0);
+}

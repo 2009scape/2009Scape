@@ -1,0 +1,47 @@
+void script_5080(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar1 = 0;
+	ivar2 = getCommonDefinitionSize(3921);
+	ivar3 = -1;
+	while (ivar1 < ivar2) {
+		ivar3 = cs2method_3408(105, 103, 3921, ivar1);
+		if ((ivar3 != -1) && setWidgetRegister(new WidgetPointer(arg0), add(multiply(ivar1, 10), 9))) {
+			setWidgetText(cs2method_3408(105, 115, ivar3, script_5089(ivar3)));
+		}
+		ivar1 = add(ivar1, 1);
+	}
+	switch (bitconfig_9539) {
+		case 1:
+			if (((boolean)globalint_1095)) {
+				setWidgetText(new WidgetPointer(1114,8), "Press 'Confirm' when you've made your choices.");
+			} else {
+				setWidgetText(new WidgetPointer(1114,8), "Waiting for the battle's initiator to choose the rules...");
+			}
+			break;
+		case 2:
+			if (((boolean)globalint_1095)) {
+				setWidgetText(new WidgetPointer(1114,8), "Press 'Confirm' when you've made your choices.");
+			} else {
+				setWidgetText(new WidgetPointer(1114,8), "Waiting for " + globalstring_129 + " to choose the rules...");
+			}
+			break;
+		case 3:
+			setWidgetText(new WidgetPointer(1114,8), "Loading elements...");
+			break;
+		case 4:
+			setWidgetText(new WidgetPointer(1114,8), "Building elements...");
+			break;
+		case 5:
+			setWidgetText(new WidgetPointer(1114,8), "Failed to build battlefield.");
+			break;
+		case 6:
+			setWidgetText(new WidgetPointer(1114,8), "Initialising build mode.");
+			break;
+		default:
+			setWidgetText(new WidgetPointer(1114,8), "Loading...");
+	}
+	script_5085(arg0);
+	return;
+}

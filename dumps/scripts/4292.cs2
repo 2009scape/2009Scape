@@ -1,0 +1,11 @@
+int script_4292() {
+	int ivar0;
+	ivar0 = -1;
+	if (cs2method3751()) {
+		ivar0 = cs2method3760(strRemoveEntities(cs2method5020()));
+		if (cs2method3757(ivar0) >= 100) {
+			return 1;
+		}
+	}
+	return 0;
+}

@@ -1,0 +1,78 @@
+void script_2606(int arg0) {
+	int ivar1;
+	playSoundEffect(2277, 1, 0);
+	ivar1 = -1;
+	switch (globalint_929) {
+		case 0:
+			if (globalint_930 != -1) {
+				ivar1 = getItemIdInSlot(93, globalint_930);
+			}
+			break;
+		case 1:
+			if (globalint_931 != -1) {
+				ivar1 = getItemIdInSlot(93, globalint_931);
+			}
+			break;
+		case 2:
+			if (globalint_932 != -1) {
+				ivar1 = getItemIdInSlot(93, globalint_932);
+			}
+			break;
+		case 3:
+			if (globalint_933 != -1) {
+				ivar1 = getItemIdInSlot(93, globalint_933);
+			}
+			break;
+		case 4:
+			if (globalint_934 != -1) {
+				ivar1 = getItemIdInSlot(93, globalint_934);
+			}
+			break;
+		case 5:
+			if (globalint_935 != -1) {
+				ivar1 = getItemIdInSlot(93, globalint_935);
+			}
+			break;
+		case 6:
+			if (globalint_936 != -1) {
+				ivar1 = getItemIdInSlot(93, globalint_936);
+			}
+			break;
+		case 7:
+			if (globalint_937 != -1) {
+				ivar1 = getItemIdInSlot(93, globalint_937);
+			}
+			break;
+		case 8:
+			if (globalint_938 != -1) {
+				ivar1 = getItemIdInSlot(93, globalint_938);
+			}
+			break;
+		case 9:
+			if (globalint_939 != -1) {
+				ivar1 = getItemIdInSlot(93, globalint_939);
+			}
+	}
+	switch (arg0) {
+		case 19136631:
+			if (((boolean)getContainerIntNodeCountIgnoreStacks(93, 803))) {
+				messageType0("You have no squads that need resupplying.");
+			} else {
+				messageType0("You do not have sufficient investment credits to resupply all your squads.");
+			}
+			break;
+		case 19136634:
+			messageType0("You do not have sufficient investment credits to apply the selected changes.");
+			break;
+		case 19136615:
+		case 19136614:
+		case 19136623:
+		case 19136622:
+		case 19136616:
+			messageType0("You must resupply this squad first.");
+			break;
+		case 19136625:
+			messageType0("This squad does not need resupplying.");
+	}
+	return;
+}

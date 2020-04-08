@@ -1,0 +1,75 @@
+void script_2041() {
+	setWidgetText(new WidgetPointer(28,42), "Bronze: " + intToStr(bitconfig_941));
+	if (bitconfig_941 > 0) {
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(28,44));
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(28,42));
+	} else {
+		setWidgetRGB(new Color(153, 153, 153), new WidgetPointer(28,44));
+		setWidgetRGB(new Color(153, 153, 153), new WidgetPointer(28,42));
+	}
+	setWidgetText(new WidgetPointer(28,39), "Iron: " + intToStr(bitconfig_942));
+	if (bitconfig_942 > 0) {
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(28,41));
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(28,39));
+	} else {
+		setWidgetRGB(new Color(153, 153, 153), new WidgetPointer(28,41));
+		setWidgetRGB(new Color(153, 153, 153), new WidgetPointer(28,39));
+	}
+	setWidgetText(new WidgetPointer(28,37), "Steel: " + intToStr(bitconfig_943));
+	if (bitconfig_943 > 0) {
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(28,38));
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(28,37));
+	} else {
+		setWidgetRGB(new Color(153, 153, 153), new WidgetPointer(28,38));
+		setWidgetRGB(new Color(153, 153, 153), new WidgetPointer(28,37));
+	}
+	setWidgetText(new WidgetPointer(28,34), "Mithril: " + intToStr(bitconfig_944));
+	if (bitconfig_944 > 0) {
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(28,35));
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(28,34));
+	} else {
+		setWidgetRGB(new Color(153, 153, 153), new WidgetPointer(28,35));
+		setWidgetRGB(new Color(153, 153, 153), new WidgetPointer(28,34));
+	}
+	setWidgetText(new WidgetPointer(28,31), "Adamantite: " + intToStr(bitconfig_945));
+	if (bitconfig_945 > 0) {
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(28,32));
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(28,31));
+	} else {
+		setWidgetRGB(new Color(153, 153, 153), new WidgetPointer(28,32));
+		setWidgetRGB(new Color(153, 153, 153), new WidgetPointer(28,31));
+	}
+	setWidgetText(new WidgetPointer(28,28), "Runite: " + intToStr(bitconfig_946));
+	if (bitconfig_946 > 0) {
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(28,29));
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(28,28));
+	} else {
+		setWidgetRGB(new Color(153, 153, 153), new WidgetPointer(28,29));
+		setWidgetRGB(new Color(153, 153, 153), new WidgetPointer(28,28));
+	}
+	setWidgetText(new WidgetPointer(28,25), "Silver: " + intToStr(bitconfig_948));
+	if (bitconfig_948 > 0) {
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(28,26));
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(28,25));
+	} else {
+		setWidgetRGB(new Color(153, 153, 153), new WidgetPointer(28,26));
+		setWidgetRGB(new Color(153, 153, 153), new WidgetPointer(28,25));
+	}
+	setWidgetText(new WidgetPointer(28,22), "Gold: " + intToStr(bitconfig_947));
+	if (bitconfig_947 > 0) {
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(28,23));
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(28,22));
+	} else {
+		setWidgetRGB(new Color(153, 153, 153), new WidgetPointer(28,23));
+		setWidgetRGB(new Color(153, 153, 153), new WidgetPointer(28,22));
+	}
+	setWidgetText(new WidgetPointer(28,2), "Perfect Gold: " + intToStr(bitconfig_958));
+	if (bitconfig_958 > 0) {
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(28,4));
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(28,2));
+	} else {
+		setWidgetRGB(new Color(153, 153, 153), new WidgetPointer(28,4));
+		setWidgetRGB(new Color(153, 153, 153), new WidgetPointer(28,2));
+	}
+	return;
+}

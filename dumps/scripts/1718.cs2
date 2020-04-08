@@ -1,0 +1,3 @@
+int script_1718(int arg0,int arg1) {
+	return divide(multiply(getSkillActualLvl(arg0), arg1), 100);
+}

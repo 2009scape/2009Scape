@@ -1,0 +1,41 @@
+int script_5145(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = -1;
+	ivar1 = cs2method3717(strRemoveEntities(cs2method5020()));
+	if (ivar1 < 0) {
+		return 0;
+	}
+	if (arg0 == -1) {
+		arg0 = cs2method3711(ivar1);
+	}
+	ivar2 = 0;
+	if (citadelConfigsInitialized()) {
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:106
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+				at tests.Main.main(Main.java:45)
+			
+		 */
+	}
+	switch (arg0) {
+		case 100:
+			return clanbitconfig_248;
+		case 101:
+			return clanbitconfig_249;
+		case 102:
+			return clanbitconfig_250;
+		case 103:
+			return clanbitconfig_251;
+		case 125:
+			return clanbitconfig_252;
+		case 126:
+			return 1;
+		case 127:
+			return 1;
+	}
+	return 0;
+}

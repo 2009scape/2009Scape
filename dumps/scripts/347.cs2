@@ -1,0 +1,17 @@
+void script_347(int arg0,int arg1,int arg2) {
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		if (arg2 == -1) {
+			setScriptCallOnGameloop(1518, new WidgetPointer(-32768,3), -2147483643, 0, "Iii");
+			setScriptCallOnMousePressed(347, new WidgetPointer(-32768,3), -2147483643, -2147483647, "Iii");
+		} else {
+			arg2 = subtract(arg2, divide(getWidgetActualWidth(), 2));
+			if (arg2 >= 0) {
+				setScriptCallOnGameloop(1518, new WidgetPointer(-32768,3), -2147483643, 1, "Iii");
+			} else {
+				setScriptCallOnGameloop(1518, new WidgetPointer(-32768,3), -2147483643, -1, "Iii");
+			}
+			setScriptCallOnMousePressed(347, new WidgetPointer(-32768,3), -2147483643, -1, "Iii");
+		}
+	}
+	return;
+}

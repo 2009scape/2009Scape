@@ -1,0 +1,15 @@
+void script_2319() {
+	if (((boolean)bitconfig_8348)) {
+		setWidgetIsHidden(true, new WidgetPointer(762,0));
+		setWidgetIsHidden(true, new WidgetPointer(763,0));
+		setWidgetIsHidden(false, new WidgetPointer(667,0));
+		setWidgetIsHidden(false, new WidgetPointer(763,1));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(762,0));
+		setWidgetIsHidden(false, new WidgetPointer(763,0));
+		setWidgetIsHidden(true, new WidgetPointer(667,0));
+		setWidgetIsHidden(true, new WidgetPointer(763,1));
+	}
+	script_722();
+	return;
+}

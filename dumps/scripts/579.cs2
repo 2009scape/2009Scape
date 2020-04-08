@@ -1,0 +1,11 @@
+void script_579(int arg0,int arg1) {
+	if (setWidgetRegister(new WidgetPointer(389,4), 0)) {
+		setWidgetPosition(0, multiply(15, subtract(arg0, 1)), 0, 0);
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(389,4)), 15, 0, 0);
+		setWidgetRGB(new Color(0, 0, 0));
+		cs2method2103(220);
+		setWidgetFilled(1);
+	}
+	setItemOnWidgetMethod2200(arg1, -1, new WidgetPointer(389,15));
+	return;
+}

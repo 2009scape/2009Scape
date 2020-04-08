@@ -1,0 +1,8 @@
+void script_2308(int arg0,int arg1) {
+	if (getDisplayMode() >= 2) {
+		setWidgetSprite(1127, new WidgetPointer(arg0));
+	} else {
+		setWidgetSprite(784, new WidgetPointer(arg0));
+	}
+	return;
+}

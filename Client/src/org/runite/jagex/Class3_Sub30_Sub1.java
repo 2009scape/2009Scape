@@ -66,7 +66,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 					Class3_Sub9.anInt2330 = 0;
 					Class151.aClass11_1933 = Class7.getRSInterface((byte)120, var3);
 					KeyboardListener.anInt1918 = var2;
-					//System.out.println(Class110.anInt1473 + ", " + var3 + ", " + var2 + ", " + Class3_Sub28_Sub18.anInt3764 + ", " + Class164.anInt2050 + ", " + var5);
+					System.out.println(Class110.anInt1473 + ", " + var3 + ", " + var2 + ", " + Class3_Sub28_Sub18.anInt3764 + ", " + Class164.anInt2050 + ", " + var5);
 				}
 
 				NPC var11;
@@ -254,6 +254,19 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 				}
 
 				if(~var4 == -48) {
+					if (MouseWheel.shiftDown) {
+					
+							Class3_Sub13_Sub1.outgoingBuffer.putOpcode(135);
+							Class3_Sub13_Sub1.outgoingBuffer.putShortA(var5, -268435456);
+							++Class3_Sub13_Sub21.anInt3255;
+							Class3_Sub13_Sub1.outgoingBuffer.putShortA(var2, -268435456);
+							Class3_Sub13_Sub1.outgoingBuffer.putIntB(-68, var3);
+							Class3_Sub9.anInt2330 = 0;
+							Class151.aClass11_1933 = Class7.getRSInterface((byte)117, var3);
+							KeyboardListener.anInt1918 = var2;
+						
+						
+					} else {
 					Class3_Sub13_Sub1.outgoingBuffer.putOpcode(156);
 					Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(var2);
 					Class3_Sub13_Sub1.outgoingBuffer.putShortA(var5, -268435456);
@@ -261,6 +274,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 					Class3_Sub9.anInt2330 = 0;
 					Class151.aClass11_1933 = Class7.getRSInterface((byte)109, var3);
 					KeyboardListener.anInt1918 = var2;
+					}
 				}
 
 				if(-4 == ~var4) {
@@ -346,6 +360,17 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 				}
 
 				if(-6 == ~var4) {
+					if (MouseWheel.shiftDown) {
+							Class3_Sub13_Sub1.outgoingBuffer.putOpcode(135);
+							Class3_Sub13_Sub1.outgoingBuffer.putShortA(var5, -268435456);
+							++Class3_Sub13_Sub21.anInt3255;
+							Class3_Sub13_Sub1.outgoingBuffer.putShortA(var2, -268435456);
+							Class3_Sub13_Sub1.outgoingBuffer.putIntB(-68, var3);
+							Class3_Sub9.anInt2330 = 0;
+							Class151.aClass11_1933 = Class7.getRSInterface((byte)117, var3);
+							KeyboardListener.anInt1918 = var2;
+						
+					} else {
 					Class3_Sub13_Sub1.outgoingBuffer.putOpcode(55);
 					Class3_Sub13_Sub1.outgoingBuffer.putLEShort(-1, var5);
 					Class3_Sub13_Sub1.outgoingBuffer.putShortA(var2, -268435456);
@@ -354,6 +379,8 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 					Class3_Sub9.anInt2330 = 0;
 					Class151.aClass11_1933 = Class7.getRSInterface((byte)116, var3);
 					KeyboardListener.anInt1918 = var2;
+				
+					}
 				}
 
 				if(-22 == ~var4) {
@@ -527,7 +554,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 							Class3_Sub13_Sub1.outgoingBuffer.putLEShort(-1, Class110.anInt1473);
 							Class3_Sub13_Sub1.outgoingBuffer.putLEShort(var0 ^ -2598, var5);
 							Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(Class164.anInt2050);
-							//System.out.println(Class3_Sub28_Sub18.anInt3764 + ", " + Class110.anInt1473 + ", " + var5 + ", " + Class164.anInt2050);
+//							System.out.println(Class3_Sub28_Sub18.anInt3764 + ", " + Class110.anInt1473 + ", " + var5 + ", " + Class164.anInt2050);
 						}
 					}
 
@@ -849,9 +876,12 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 						Class164_Sub1.anInt3012 = 1;
 						Class164.anInt2050 = var5;
 						Class20.method909(var0 ^ -2612, var13);
-						RenderAnimationDefinition.aClass94_378 = RenderAnimationDefinition.method903(new RSString[]{Class3_Sub13_Sub2.aClass94_3042, Class38.getItemDefinition(var5, (byte)109).name, Class3_Sub26.CONTEXT_MENU_COLOR }, (byte)-113);
+						RenderAnimationDefinition.aClass94_378 = RenderAnimationDefinition.method903(new RSString[]{
+								Class3_Sub13_Sub2.aClass94_3042, Class38.getItemDefinition(var5, (byte)109).name, Class3_Sub26.CONTEXT_MENU_COLOR
+						}, (byte)-113);
 						if(RenderAnimationDefinition.aClass94_378 == null) {
 							RenderAnimationDefinition.aClass94_378 = Class50.aClass94_829;
+//							System.out.println(Class38.getItemDefinition(var5, (byte)109).name);
 						}
 
 					}

@@ -1,0 +1,5 @@
+void script_1999(int arg0) {
+	script_2001(arg0, standart_config_118);
+	setScriptCallOnConfigChange(2000, new WidgetPointer(arg0), standart_config_118, 1081, 1, "IvY", new WidgetPointer(arg0));
+	return;
+}

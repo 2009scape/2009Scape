@@ -1,0 +1,14 @@
+void script_54(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar1 = extractY(getMyPositionHash());
+	ivar2 = add(divide(subtract(ivar1, 9920), 8), 1);
+	ivar3 = add(divide(subtract(ivar1, 3520), 8), 1);
+	if (ivar1 > 6400) {
+		setWidgetText(new WidgetPointer(arg0), "Level: " + intToStr(ivar2));
+	} else {
+		setWidgetText(new WidgetPointer(arg0), "Level: " + intToStr(ivar3));
+	}
+	return;
+}

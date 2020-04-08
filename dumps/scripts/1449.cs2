@@ -1,0 +1,15 @@
+void script_1449() {
+	globalint_188 = 0;
+	script_1487();
+	script_1490();
+	script_1450();
+	script_1464();
+	script_1455();
+	script_1459();
+	script_1463(bitconfig_4893);
+	setScriptCallOnGlobalConfigChange(1472, 190, 1, "Y", new WidgetPointer(762,17));
+	setScriptCallOnGlobalConfigChange(1465, 192, 1038, 1324, 3, "Y", new WidgetPointer(762,21));
+	cs2method2100(0, script_704(bitconfig_4893), new WidgetPointer(762,93));
+	script_157(49938546, 49938525, cs2method2601(new WidgetPointer(762,93)), 1);
+	return;
+}

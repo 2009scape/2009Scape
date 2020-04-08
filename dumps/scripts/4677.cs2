@@ -1,0 +1,37 @@
+void script_4677() {
+	switch (bitconfig_9306) {
+		case 1:
+			if (bitconfig_9298 == 10) {
+				if (((getSkillActualLvl(6) >= 30) && (getSkillActualLvl(4) >= 30)) && (getSkillActualLvl(0) >= 30)) {
+					setWidgetText(new WidgetPointer(102,55), "Carn is no more, his behemoth has been dealt with, and Linza has her ore. The tales of Great Ozan can continue!");
+				} else {
+					setWidgetText(new WidgetPointer(102,55), "Carn has been defeated and Linza appreciates her new ore. The story still feels incomplete, somehow.");
+				}
+			} else {
+				setWidgetText(new WidgetPointer(102,55), "Carn's defeated, but the story still feels incomplete somehow.");
+			}
+			break;
+		case 2:
+			if (bitconfig_9298 == 10) {
+				if ((getSkillActualLvl(16) >= 55) && (getSkillActualLvl(17) >= 55)) {
+					setWidgetText(new WidgetPointer(102,55), "I have become Vengeance: death to those who callously disregard life. They, and everyone like them, will pay for what they have done.");
+				} else {
+					setWidgetText(new WidgetPointer(102,55), "Am I done now? No, there's more that must be done. Vengeance has not yet been satisfied.");
+				}
+			} else {
+				setWidgetText(new WidgetPointer(102,55), "I killed them...but in doing so I never thought to check for survivors. Am I a monster?");
+			}
+			break;
+		case 4:
+			if (bitconfig_9298 == 10) {
+				if (getSkillActualLvl(2) >= 70) {
+					setWidgetText(new WidgetPointer(102,55), "Ha! Thok stronger than squishy monsters in dungeon! None are as mighty as Thok.");
+				} else {
+					setWidgetText(new WidgetPointer(102,55), "Odd... Thok remember being much stronger in dungeon.");
+				}
+			} else {
+				setWidgetText(new WidgetPointer(102,55), "Thok save Marm, but Thok not show how mighty Thok is. Thok need to do more.");
+			}
+	}
+	return;
+}

@@ -1,0 +1,51 @@
+void script_2328(int arg0) {
+	if (((boolean)globalint_766)) {
+		if (getWidgetActualY(new WidgetPointer(arg0)) > 100) {
+			setWidgetPosition(getWidgetActualX(new WidgetPointer(arg0)), subtract(getWidgetActualY(new WidgetPointer(arg0)), 2), 0, 0, new WidgetPointer(arg0));
+			playSoundEffect(6422, 1, 0);
+			if (getWidgetActualY(new WidgetPointer(arg0)) < 170) {
+				switch (globalint_765) {
+					case 1:
+						setWidgetPosition(getWidgetActualX(new WidgetPointer(306,6)), subtract(getWidgetActualY(new WidgetPointer(306,6)), 2), 0, 0, new WidgetPointer(306,6));
+						break;
+					case 2:
+						setWidgetPosition(getWidgetActualX(new WidgetPointer(306,7)), subtract(getWidgetActualY(new WidgetPointer(306,7)), 2), 0, 0, new WidgetPointer(306,7));
+						break;
+					case 3:
+						setWidgetPosition(getWidgetActualX(new WidgetPointer(306,8)), subtract(getWidgetActualY(new WidgetPointer(306,8)), 2), 0, 0, new WidgetPointer(306,8));
+						break;
+					case 4:
+						setWidgetPosition(getWidgetActualX(new WidgetPointer(306,9)), subtract(getWidgetActualY(new WidgetPointer(306,9)), 2), 0, 0, new WidgetPointer(306,9));
+				}
+			}
+		} else {
+			setWidgetPosition(getWidgetActualX(new WidgetPointer(arg0)), 100, 0, 0, new WidgetPointer(arg0));
+			globalint_766 = 2;
+			switch (globalint_765) {
+				case 1:
+					script_1411();
+					break;
+				case 2:
+					script_2056();
+					break;
+				case 3:
+					script_2322();
+					break;
+				case 4:
+					script_2324();
+			}
+		}
+	} else {
+		if (globalint_766 == 2) {
+			if (getWidgetActualY(new WidgetPointer(arg0)) < 200) {
+				setWidgetPosition(getWidgetActualX(new WidgetPointer(arg0)), add(getWidgetActualY(new WidgetPointer(arg0)), 2), 0, 0, new WidgetPointer(arg0));
+			} else {
+				setWidgetPosition(getWidgetActualX(new WidgetPointer(arg0)), 200, 0, 0, new WidgetPointer(arg0));
+				globalint_766 = 0;
+				globalint_765 = 0;
+				setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+			}
+		}
+	}
+	return;
+}

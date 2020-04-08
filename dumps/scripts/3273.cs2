@@ -1,0 +1,82 @@
+cs2func_script_3273_struct(3,0,0) script_3273() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = 0;
+	ivar1 = divide(globalint_1191, 10);
+	ivar2 = subtract(globalint_1191, multiply(divide(globalint_1191, 10), 10));
+	switch (ivar1) {
+		flow_1:
+			case 1:
+			switch (ivar2) {
+				case 1:
+					ivar0 = 0;
+			}
+			break;
+			case 2:
+			switch (ivar2) {
+				case 1:
+					ivar0 = -760;
+					break;
+				case 2:
+					ivar0 = 507;
+			}
+			break;
+			case 3:
+			switch (ivar2) {
+				case 1:
+					ivar0 = -1520;
+					break;
+				case 2:
+					ivar0 = 190;
+					break;
+				case 3:
+					ivar0 = 950;
+			}
+			break;
+			case 4:
+			switch (ivar2) {
+				case 1:
+					ivar0 = -2280;
+					break;
+				case 2:
+					ivar0 = -760;
+					break;
+				case 3:
+					ivar0 = 633;
+					break;
+				case 4:
+					ivar0 = 1457;
+			}
+			break;
+			case 5:
+			SWITCH (ivar2) {
+				case 1:
+					 GOTO flow_20
+				case 2:
+					 GOTO flow_21
+				case 3:
+					 GOTO flow_22
+				case 4:
+					 GOTO flow_23
+				case 5:
+					 GOTO flow_24
+			}
+			break;
+		flow_20:
+			ivar0 = -3040;
+			break;
+		flow_21:
+			ivar0 = -1267;
+			break;
+		flow_22:
+			ivar0 = 380;
+			break;
+		flow_23:
+			ivar0 = 1140;
+			break;
+		flow_24:
+			ivar0 = 1900;
+	}
+	return newstruct cs2func_script_3273_struct(ivar1, ivar2, ivar0);
+}

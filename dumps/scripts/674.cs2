@@ -1,0 +1,51 @@
+void script_674(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,int arg11) {
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	createExtraChild(new WidgetPointer(arg5), 3, arg6);
+	setWidgetPosition(arg0, arg1, 0, 0);
+	setWidgetSize(arg2, arg3, 0, 0);
+	setWidgetRGB(new Color(0, 0, 0));
+	setWidgetFilled(0);
+	ivar12 = add(arg0, 1);
+	ivar13 = add(arg1, 1);
+	ivar14 = subtract(arg2, 2);
+	ivar15 = subtract(arg3, 2);
+	createExtraChild(new WidgetPointer(arg5), 3, add(arg6, 1));
+	setWidgetPosition(ivar12, ivar13, 0, 0);
+	setWidgetSize(ivar14, ivar15, 0, 0);
+	setWidgetRGB(new Color(48, 37, 32));
+	cs2method2103(100);
+	setWidgetFilled(1);
+	createExtraChild(new WidgetPointer(arg5), 3, add(arg6, 2));
+	if (((boolean)arg8)) {
+		setWidgetPosition(add(arg0, 1), add(arg1, 1), 0, 0);
+		cs2method2103(0);
+		setWidgetFilled(1);
+		if (((boolean)arg9)) {
+			setWidgetSize(ivar14, ivar15, 0, 0);
+			if (arg11 == arg10) {
+				setWidgetRGB(new Color(63, 130, 30));
+			} else {
+				setWidgetRGB(new Color(138, 0, 16));
+			}
+		} else {
+			setWidgetSize(multiplyDivide(arg11, arg10, ivar14), ivar15, 0, 0);
+			setWidgetRGB(new Color(198, 139, 1));
+		}
+	}
+	createExtraChild(new WidgetPointer(arg5), 3, add(arg6, 3));
+	setWidgetPosition(ivar12, ivar13, 0, 0);
+	setWidgetSize(ivar14, 3, 0, 0);
+	setWidgetFilled(1);
+	cs2method2103(200);
+	setWidgetRGB(new Color(0, 0, 0));
+	createExtraChild(new WidgetPointer(arg5), 3, add(arg6, 4));
+	setWidgetPosition(ivar12, add(ivar13, 3), 0, 0);
+	setWidgetSize(3, subtract(ivar15, 3), 0, 0);
+	setWidgetFilled(1);
+	cs2method2103(200);
+	setWidgetRGB(new Color(0, 0, 0));
+	return;
+}

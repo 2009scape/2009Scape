@@ -1,0 +1,2464 @@
+int script_3224(int arg0) {
+	int ivar1;
+	flow_0:
+		ivar1 = 0;
+		SWITCH (arg0) {
+			case 0:
+				 GOTO flow_1
+			case 1:
+				 GOTO flow_4
+			case 3:
+				 GOTO flow_7
+			case 5:
+				 GOTO flow_10
+			case 6:
+				 GOTO flow_13
+			case 7:
+				 GOTO flow_16
+			case 8:
+				 GOTO flow_21
+			case 9:
+				 GOTO flow_24
+			case 11:
+				 GOTO flow_27
+			case 12:
+				 GOTO flow_30
+			case 13:
+				 GOTO flow_33
+			case 14:
+				 GOTO flow_36
+			case 23:
+				 GOTO flow_39
+			case 25:
+				 GOTO flow_42
+			case 26:
+				 GOTO flow_49
+			case 27:
+				 GOTO flow_52
+			case 28:
+				 GOTO flow_57
+			case 29:
+				 GOTO flow_60
+			case 30:
+				 GOTO flow_65
+			case 31:
+				 GOTO flow_70
+			case 32:
+				 GOTO flow_73
+			case 33:
+				 GOTO flow_76
+			case 34:
+				 GOTO flow_81
+			case 35:
+				 GOTO flow_84
+			case 36:
+				 GOTO flow_87
+			case 37:
+				 GOTO flow_90
+			case 38:
+				 GOTO flow_93
+			case 39:
+				 GOTO flow_96
+			case 40:
+				 GOTO flow_99
+			case 41:
+				 GOTO flow_102
+			case 42:
+				 GOTO flow_105
+			case 44:
+				 GOTO flow_108
+			case 45:
+				 GOTO flow_113
+			case 46:
+				 GOTO flow_118
+			case 47:
+				 GOTO flow_121
+			case 48:
+				 GOTO flow_124
+			case 49:
+				 GOTO flow_129
+			case 50:
+				 GOTO flow_132
+			case 51:
+				 GOTO flow_137
+			case 52:
+				 GOTO flow_140
+			case 53:
+				 GOTO flow_143
+			case 54:
+				 GOTO flow_146
+			case 55:
+				 GOTO flow_149
+			case 56:
+				 GOTO flow_152
+			case 57:
+				 GOTO flow_155
+			case 58:
+				 GOTO flow_160
+			case 59:
+				 GOTO flow_163
+			case 60:
+				 GOTO flow_170
+			case 61:
+				 GOTO flow_175
+			case 84:
+				 GOTO flow_178
+			case 86:
+				 GOTO flow_181
+			case 88:
+				 GOTO flow_184
+			case 91:
+				 GOTO flow_189
+			case 97:
+				 GOTO flow_192
+			case 102:
+				 GOTO flow_195
+			case 103:
+				 GOTO flow_198
+			case 104:
+				 GOTO flow_201
+			case 105:
+				 GOTO flow_206
+			case 106:
+				 GOTO flow_209
+			case 107:
+				 GOTO flow_212
+			case 108:
+				 GOTO flow_216
+			case 109:
+				 GOTO flow_219
+			case 110:
+				 GOTO flow_222
+			case 112:
+				 GOTO flow_225
+			case 113:
+				 GOTO flow_228
+			case 114:
+				 GOTO flow_231
+			case 351:
+				 GOTO flow_234
+			case 352:
+				 GOTO flow_237
+			case 353:
+				 GOTO flow_240
+			case 354:
+				 GOTO flow_243
+			case 355:
+				 GOTO flow_246
+			case 356:
+				 GOTO flow_249
+			case 357:
+				 GOTO flow_252
+			case 118:
+				 GOTO flow_255
+			case 125:
+				 GOTO flow_258
+			case 129:
+				 GOTO flow_261
+			case 130:
+				 GOTO flow_264
+			case 131:
+				 GOTO flow_267
+			case 132:
+				 GOTO flow_270
+			case 133:
+				 GOTO flow_273
+			case 134:
+				 GOTO flow_280
+			case 136:
+				 GOTO flow_283
+			case 137:
+				 GOTO flow_286
+			case 138:
+				 GOTO flow_289
+			case 139:
+				 GOTO flow_292
+			case 140:
+				 GOTO flow_299
+			case 141:
+				 GOTO flow_302
+			case 142:
+				 GOTO flow_309
+			case 143:
+				 GOTO flow_312
+			case 144:
+				 GOTO flow_317
+			case 145:
+				 GOTO flow_322
+			case 146:
+				 GOTO flow_327
+			case 147:
+				 GOTO flow_330
+			case 148:
+				 GOTO flow_333
+			case 149:
+				 GOTO flow_336
+			case 150:
+				 GOTO flow_339
+			case 151:
+				 GOTO flow_342
+			case 309:
+				 GOTO flow_349
+			case 310:
+				 GOTO flow_352
+			case 311:
+				 GOTO flow_355
+			case 312:
+				 GOTO flow_358
+			case 313:
+				 GOTO flow_363
+			case 314:
+				 GOTO flow_368
+			case 315:
+				 GOTO flow_373
+			case 152:
+				 GOTO flow_378
+			case 160:
+				 GOTO flow_381
+			case 162:
+				 GOTO flow_384
+			case 163:
+				 GOTO flow_387
+			case 164:
+				 GOTO flow_390
+			case 165:
+				 GOTO flow_393
+			case 166:
+				 GOTO flow_398
+			case 167:
+				 GOTO flow_403
+			case 168:
+				 GOTO flow_406
+			case 169:
+				 GOTO flow_409
+			case 170:
+				 GOTO flow_412
+			case 171:
+				 GOTO flow_417
+			case 172:
+				 GOTO flow_422
+			case 173:
+				 GOTO flow_425
+			case 174:
+				 GOTO flow_428
+			case 175:
+				 GOTO flow_433
+			case 176:
+				 GOTO flow_439
+			case 177:
+				 GOTO flow_442
+			case 178:
+				 GOTO flow_449
+			case 179:
+				 GOTO flow_456
+			case 180:
+				 GOTO flow_461
+			case 181:
+				 GOTO flow_464
+			case 428:
+				 GOTO flow_467
+			case 316:
+				 GOTO flow_470
+			case 317:
+				 GOTO flow_477
+			case 318:
+				 GOTO flow_484
+			case 319:
+				 GOTO flow_489
+			case 320:
+				 GOTO flow_492
+			case 321:
+				 GOTO flow_495
+			case 322:
+				 GOTO flow_502
+			case 323:
+				 GOTO flow_507
+			case 417:
+				 GOTO flow_512
+			case 183:
+				 GOTO flow_521
+			case 184:
+				 GOTO flow_524
+			case 187:
+				 GOTO flow_527
+			case 193:
+				 GOTO flow_530
+			case 194:
+				 GOTO flow_533
+			case 195:
+				 GOTO flow_536
+			case 196:
+				 GOTO flow_539
+			case 197:
+				 GOTO flow_544
+			case 198:
+				 GOTO flow_547
+			case 199:
+				 GOTO flow_552
+			case 200:
+				 GOTO flow_555
+			case 201:
+				 GOTO flow_558
+			case 202:
+				 GOTO flow_563
+			case 203:
+				 GOTO flow_566
+			case 204:
+				 GOTO flow_569
+			case 205:
+				 GOTO flow_572
+			case 206:
+				 GOTO flow_575
+			case 207:
+				 GOTO flow_578
+			case 209:
+				 GOTO flow_581
+			case 210:
+				 GOTO flow_584
+			case 214:
+				 GOTO flow_589
+			case 215:
+				 GOTO flow_594
+			case 216:
+				 GOTO flow_599
+			case 217:
+				 GOTO flow_612
+			case 218:
+				 GOTO flow_619
+			case 219:
+				 GOTO flow_624
+			case 220:
+				 GOTO flow_631
+			case 324:
+				 GOTO flow_636
+			case 326:
+				 GOTO flow_639
+			case 327:
+				 GOTO flow_646
+			case 328:
+				 GOTO flow_649
+			case 329:
+				 GOTO flow_652
+			case 330:
+				 GOTO flow_657
+			case 331:
+				 GOTO flow_662
+			case 223:
+				 GOTO flow_669
+			case 226:
+				 GOTO flow_672
+			case 227:
+				 GOTO flow_675
+			case 229:
+				 GOTO flow_678
+			case 232:
+				 GOTO flow_681
+			case 233:
+				 GOTO flow_684
+			case 234:
+				 GOTO flow_687
+			case 235:
+				 GOTO flow_690
+			case 236:
+				 GOTO flow_693
+			case 237:
+				 GOTO flow_696
+			case 238:
+				 GOTO flow_699
+			case 239:
+				 GOTO flow_702
+			case 240:
+				 GOTO flow_705
+			case 241:
+				 GOTO flow_708
+			case 243:
+				 GOTO flow_715
+			case 244:
+				 GOTO flow_720
+			case 246:
+				 GOTO flow_723
+			case 247:
+				 GOTO flow_726
+			case 248:
+				 GOTO flow_729
+			case 249:
+				 GOTO flow_734
+			case 250:
+				 GOTO flow_737
+			case 251:
+				 GOTO flow_740
+			case 252:
+				 GOTO flow_743
+			case 253:
+				 GOTO flow_750
+			case 254:
+				 GOTO flow_753
+			case 255:
+				 GOTO flow_758
+			case 332:
+				 GOTO flow_761
+			case 333:
+				 GOTO flow_766
+			case 334:
+				 GOTO flow_773
+			case 335:
+				 GOTO flow_778
+			case 336:
+				 GOTO flow_783
+			case 257:
+				 GOTO flow_788
+			case 258:
+				 GOTO flow_791
+			case 261:
+				 GOTO flow_794
+			case 265:
+				 GOTO flow_797
+			case 267:
+				 GOTO flow_800
+			case 271:
+				 GOTO flow_803
+			case 272:
+				 GOTO flow_806
+			case 276:
+				 GOTO flow_809
+			case 277:
+				 GOTO flow_812
+			case 278:
+				 GOTO flow_815
+			case 280:
+				 GOTO flow_818
+			case 281:
+				 GOTO flow_821
+			case 282:
+				 GOTO flow_830
+			case 283:
+				 GOTO flow_835
+			case 284:
+				 GOTO flow_838
+			case 285:
+				 GOTO flow_841
+			case 287:
+				 GOTO flow_846
+			case 288:
+				 GOTO flow_849
+			case 289:
+				 GOTO flow_852
+			case 291:
+				 GOTO flow_855
+			case 292:
+				 GOTO flow_858
+			case 293:
+				 GOTO flow_861
+			case 294:
+				 GOTO flow_864
+			case 295:
+				 GOTO flow_867
+			case 296:
+				 GOTO flow_870
+			case 297:
+				 GOTO flow_873
+			case 299:
+				 GOTO flow_876
+			case 300:
+				 GOTO flow_879
+			case 301:
+				 GOTO flow_882
+			case 302:
+				 GOTO flow_885
+			case 304:
+				 GOTO flow_888
+			case 305:
+				 GOTO flow_891
+			case 306:
+				 GOTO flow_894
+			case 307:
+				 GOTO flow_897
+			case 308:
+				 GOTO flow_900
+			case 337:
+				 GOTO flow_903
+			case 338:
+				 GOTO flow_906
+			case 339:
+				 GOTO flow_909
+			case 340:
+				 GOTO flow_912
+			case 341:
+				 GOTO flow_919
+			case 342:
+				 GOTO flow_924
+			case 343:
+				 GOTO flow_927
+			case 344:
+				 GOTO flow_932
+			case 345:
+				 GOTO flow_937
+			case 381:
+				 GOTO flow_940
+			case 382:
+				 GOTO flow_943
+			case 392:
+				 GOTO flow_946
+			case 393:
+				 GOTO flow_949
+			case 397:
+				 GOTO flow_952
+			case 398:
+				 GOTO flow_955
+			case 99:
+				 GOTO flow_958
+			case 400:
+				 GOTO flow_961
+			case 401:
+				 GOTO flow_964
+			case 402:
+				 GOTO flow_967
+			case 403:
+				 GOTO flow_970
+			case 404:
+				 GOTO flow_973
+			case 405:
+				 GOTO flow_976
+			case 406:
+				 GOTO flow_979
+			case 407:
+				 GOTO flow_982
+			case 3000:
+				 GOTO flow_985
+			case 3001:
+				 GOTO flow_991
+			case 3002:
+				 GOTO flow_994
+			case 3003:
+				 GOTO flow_1001
+			case 3005:
+				 GOTO flow_1004
+			case 3007:
+				 GOTO flow_1007
+			case 3008:
+				 GOTO flow_1012
+			case 3009:
+				 GOTO flow_1017
+			case 3010:
+				 GOTO flow_1020
+			case 3011:
+				 GOTO flow_1025
+			case 3012:
+				 GOTO flow_1028
+			case 3013:
+				 GOTO flow_1031
+			case 3015:
+				 GOTO flow_1034
+			case 3016:
+				 GOTO flow_1040
+			case 3022:
+				 GOTO flow_1045
+			case 3023:
+				 GOTO flow_1050
+			case 3024:
+				 GOTO flow_1053
+			case 3026:
+				 GOTO flow_1056
+			case 3031:
+				 GOTO flow_1059
+			case 3025:
+				 GOTO flow_1062
+			case 3034:
+				 GOTO flow_1065
+			case 3500:
+				 GOTO flow_1070
+			case 3501:
+				 GOTO flow_1073
+			case 3505:
+				 GOTO flow_1076
+			case 3511:
+				 GOTO flow_1079
+			case 3502:
+				 GOTO flow_1082
+			case 3503:
+				 GOTO flow_1085
+			case 3504:
+				 GOTO flow_1088
+			case 3506:
+				 GOTO flow_1091
+			case 3508:
+				 GOTO flow_1094
+			case 3509:
+				 GOTO flow_1097
+			case 3507:
+				 GOTO flow_1100
+			case 3523:
+				 GOTO flow_1103
+			case 3510:
+				 GOTO flow_1106
+			case 3512:
+				 GOTO flow_1109
+			case 3513:
+				 GOTO flow_1112
+			case 3514:
+				 GOTO flow_1115
+			case 3515:
+				 GOTO flow_1118
+			case 3516:
+				 GOTO flow_1121
+			case 3517:
+				 GOTO flow_1124
+			case 3518:
+				 GOTO flow_1127
+			case 3519:
+				 GOTO flow_1130
+			case 3520:
+				 GOTO flow_1133
+			case 3521:
+				 GOTO flow_1136
+		}
+		return 1;
+	flow_1:
+		if (standart_config_63 < 6) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_4:
+		if (getSkillActualLvl(17) < 5) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_7:
+		if (standart_config_165 < 29) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_10:
+		if (getSkillActualLvl(10) < 15) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_13:
+		if (standart_config_68 < 16) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_16:
+		if (standart_config_165 < 29) {
+			return 0;
+		}
+		if (standart_config_180 < 6) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_21:
+		if (bitconfig_3337 < 18) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_24:
+		if (standart_config_165 < 29) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_27:
+		if (getSkillActualLvl(17) < 16) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_30:
+		if (((boolean)bitconfig_5277)) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_33:
+		if (bitconfig_4302 < 110) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_36:
+		if (standart_config_30 < 80) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_39:
+		if (((boolean)bitconfig_2328)) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_42:
+		if (getSkillActualLvl(16) < 39) {
+			return 0;
+		}
+		if (getSkillActualLvl(4) < 21) {
+			return 0;
+		}
+		if (getSkillActualLvl(2) < 38) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_49:
+		if (standart_config_63 < 6) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_52:
+		if (bitconfig_4505 < 100) {
+			return 0;
+		}
+		if (getSkillActualLvl(14) < 46) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_57:
+		if (getSkillActualLvl(19) < 47) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_60:
+		if (standart_config_212 < 14) {
+			return 0;
+		}
+		if (getSkillActualLvl(6) < 58) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_65:
+		if (bitconfig_2866 < 200) {
+			return 0;
+		}
+		if (getSkillActualLvl(11) < 50) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_70:
+		if (bitconfig_1527 < 160) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_73:
+		if (bitconfig_5075 < 20) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_76:
+		if (standart_config_159 < 12) {
+			return 0;
+		}
+		if (getSkillActualLvl(10) < 3) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_81:
+		if (getSkillActualLvl(16) < 33) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_84:
+		if (getSkillActualLvl(17) < 38) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_87:
+		if (getSkillActualLvl(17) < 28) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_90:
+		if (getSkillActualLvl(14) < 30) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_93:
+		if (bitconfig_3337 < 18) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_96:
+		if (standart_config_139 < 75) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_99:
+		if (standart_config_139 < 75) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_102:
+		if (getSkillActualLvl(6) < 66) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_105:
+		if (getSkillActualLvl(6) < 66) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_108:
+		if (bitconfig_2448 < 190) {
+			return 0;
+		}
+		if (getSkillActualLvl(6) < 71) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_113:
+		if (getSkillActualLvl(17) < 65) {
+			return 0;
+		}
+		if (getSkillActualLvl(21) < 54) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_118:
+		if (bitconfig_3337 < 18) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_121:
+		if (standart_config_365 < 9) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_124:
+		if (bitconfig_4055 < 65) {
+			return 0;
+		}
+		if (getSkillActualLvl(18) < 59) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_129:
+		if (((boolean)bitconfig_4394)) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_132:
+		if (standart_config_165 < 29) {
+			return 0;
+		}
+		if (getSkillActualLvl(6) < 51) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_137:
+		if (getSkillActualLvl(16) < 57) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_140:
+		if (getSkillActualLvl(21) < 59) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_143:
+		if (getSkillActualLvl(19) < 57) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_146:
+		if (getSkillActualLvl(17) < 59) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_149:
+		if (bitconfig_4396 < 60) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_152:
+		if (getSkillActualLvl(10) < 81) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_155:
+		if (bitconfig_4302 < 110) {
+			return 0;
+		}
+		if (getSkillActualLvl(23) < 93) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_160:
+		if (getSkillActualLvl(17) < 82) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_163:
+		if (standart_config_63 < 6) {
+			return 0;
+		}
+		if (standart_config_492 < 4) {
+			return 0;
+		}
+		if (getSkillActualLvl(20) < 75) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_170:
+		if (getSkillActualLvl(13) < 91) {
+			return 0;
+		}
+		if (getSkillActualLvl(9) < 69) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_175:
+		if (standart_config_107 < 5) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_178:
+		if (getSkillActualLvl(10) < 25) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_181:
+		if (getSkillActualLvl(13) < 30) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_184:
+		if (standart_config_63 < 6) {
+			return 0;
+		}
+		if (getSkillActualLvl(20) < 5) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_189:
+		if (standart_config_107 < 5) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_192:
+		if (standart_config_63 < 6) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_195:
+		if (getSkillActualLvl(14) < 15) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_198:
+		if (getSkillActualLvl(14) < 30) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_201:
+		if (standart_config_29 < 2) {
+			return 0;
+		}
+		if (getSkillActualLvl(7) < 40) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_206:
+		if (getSkillActualLvl(10) < 30) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_209:
+		if (getSkillActualLvl(8) < 30) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_212:
+		if ((standart_config_176 < 2) || (((boolean)bitconfig_3746) && (standart_config_176 < 10))) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_216:
+		if (getSkillActualLvl(13) < 36) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_219:
+		if (getSkillActualLvl(6) < 31) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_222:
+		if (getSkillActualLvl(11) < 30) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_225:
+		if (getSkillActualLvl(14) < 20) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_228:
+		if (getSkillActualLvl(13) < 20) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_231:
+		if (getSkillActualLvl(12) < 16) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_234:
+		if (getSkillActualLvl(13) < 68) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_237:
+		if (((getSkillActualLvl(6) < 49) || (getSkillActualLvl(12) < 50)) || (getSkillActualLvl(13) < 40)) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_240:
+		if (getSkillActualLvl(7) < 50) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_243:
+		if (getSkillActualLvl(6) < 59) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_246:
+		if (getSkillActualLvl(5) < 45) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_249:
+		if (getSkillActualLvl(20) < 57) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_252:
+		if (getSkillActualLvl(11) < 60) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_255:
+		if (getSkillActualLvl(22) < 16) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_258:
+		if (standart_config_63 < 6) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_261:
+		if (getSkillActualLvl(1) < 10) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_264:
+		if (getSkillActualLvl(12) < 36) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_267:
+		if (getSkillActualLvl(16) < 26) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_270:
+		if (bitconfig_961 < 60) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_273:
+		if (getSkillActualLvl(16) < 11) {
+			return 0;
+		}
+		if (getSkillActualLvl(4) < 19) {
+			return 0;
+		}
+		if (getSkillActualLvl(2) < 37) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_280:
+		if (bitconfig_1051 < 10) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_283:
+		if (getSkillActualLvl(11) < 49) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_286:
+		if (getSkillActualLvl(17) < 40) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_289:
+		if (getSkillActualLvl(19) < 23) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_292:
+		if (standart_config_122 < 7) {
+			return 0;
+		}
+		if (getSkillActualLvl(14) < 10) {
+			return 0;
+		}
+		if (getSkillActualLvl(13) < 13) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_299:
+		if (bitconfig_1404 < 127) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_302:
+		if (bitconfig_657 < 2) {
+			return 0;
+		}
+		if (getSkillActualLvl(1) < 20) {
+			return 0;
+		}
+		if (getSkillActualLvl(5) < 10) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_309:
+		if (bitconfig_1527 < 160) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_312:
+		if (getSkillActualLvl(5) < 70) {
+			return 0;
+		}
+		if (getSkillActualLvl(22) < 16) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_317:
+		if (standart_config_63 < 6) {
+			return 0;
+		}
+		if (getSkillActualLvl(20) < 56) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_322:
+		if (getSkillActualLvl(19) < 60) {
+			return 0;
+		}
+		if (getSkillActualLvl(8) < 60) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_327:
+		if (getSkillActualLvl(14) < 60) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_330:
+		if (((boolean)bitconfig_2328)) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_333:
+		if (getSkillActualLvl(18) < 32) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_336:
+		if (getSkillActualLvl(18) < 72) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_339:
+		if (getSkillActualLvl(23) < 56) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_342:
+		if (bitconfig_2610 < 14) {
+			return 0;
+		}
+		if (getSkillActualLvl(1) < 30) {
+			return 0;
+		}
+		if (getSkillActualLvl(5) < 20) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_349:
+		if (getSkillActualLvl(10) < 90) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_352:
+		if (getSkillActualLvl(7) < 93) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_355:
+		if (getSkillActualLvl(14) < 80) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_358:
+		if (getSkillActualLvl(19) < 75) {
+			return 0;
+		}
+		if (getSkillActualLvl(8) < 75) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_363:
+		if (bitconfig_4302 < 110) {
+			return 0;
+		}
+		if (getSkillActualLvl(23) < 80) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_368:
+		if (bitconfig_2448 < 190) {
+			return 0;
+		}
+		if (getSkillActualLvl(6) < 80) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_373:
+		if (getSkillActualLvl(5) < 95) {
+			return 0;
+		}
+		if (bitconfig_6775 < 90) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_378:
+		if (getSkillActualLvl(18) < 10) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_381:
+		if (bitconfig_4302 < 110) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_384:
+		if (standart_config_347 < 10) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_387:
+		if (standart_config_347 < 10) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_390:
+		if (standart_config_347 < 10) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_393:
+		if (standart_config_347 < 10) {
+			return 0;
+		}
+		if (getSkillActualLvl(12) < 33) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_398:
+		if (standart_config_347 < 10) {
+			return 0;
+		}
+		if (bitconfig_961 < 60) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_403:
+		if (((boolean)bitconfig_2328)) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_406:
+		if (standart_config_347 < 10) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_409:
+		if (getSkillActualLvl(21) < 55) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_412:
+		if (standart_config_347 < 10) {
+			return 0;
+		}
+		if (getSkillActualLvl(1) < 20) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_417:
+		if (standart_config_347 < 10) {
+			return 0;
+		}
+		if (getSkillActualLvl(7) < 48) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_422:
+		if (getSkillActualLvl(17) < 42) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_425:
+		if (standart_config_347 < 10) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_428:
+		if (standart_config_347 < 10) {
+			return 0;
+		}
+		if (getSkillActualLvl(1) < 40) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_433:
+		if ((standart_config_76 < 6) && ((boolean)bitconfig_3378)) {
+			return 0;
+		}
+		if (getSkillActualLvl(16) < 35) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_439:
+		if (bitconfig_2448 < 190) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_442:
+		if (((boolean)bitconfig_3764)) {
+			return 0;
+		}
+		if (getSkillActualLvl(12) < 52) {
+			return 0;
+		}
+		if (getSkillActualLvl(11) < 52) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_449:
+		if (((boolean)bitconfig_3757)) {
+			return 0;
+		}
+		if (getSkillActualLvl(2) < 35) {
+			return 0;
+		}
+		if (getSkillActualLvl(10) < 55) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_456:
+		if (bitconfig_2448 < 190) {
+			return 0;
+		}
+		if (getSkillActualLvl(6) < 65) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_461:
+		if (((boolean)bitconfig_3764)) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_464:
+		if (bitconfig_2140 < 30) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_467:
+		if ((((((bitconfig_2448 < 190) || (getSkillActualLvl(6) < 70)) || (getSkillActualLvl(19) < 60)) || (getSkillActualLvl(16) < 60)) || (getSkillActualLvl(12) < 60)) || (getSkillActualLvl(22) < 50)) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_470:
+		if (((boolean)bitconfig_3757)) {
+			return 0;
+		}
+		if (getSkillActualLvl(10) < 96) {
+			return 0;
+		}
+		if (getSkillActualLvl(2) < 76) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_477:
+		if (getSkillActualLvl(16) < 90) {
+			return 0;
+		}
+		if (getSkillActualLvl(3) < 35) {
+			return 0;
+		}
+		if (getSkillActualLvl(1) < 35) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_484:
+		if (bitconfig_2448 < 190) {
+			return 0;
+		}
+		if (getSkillActualLvl(20) < 82) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_489:
+		if (getSkillActualLvl(18) < 93) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_492:
+		if (getSkillActualLvl(16) < 81) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_495:
+		if (((boolean)bitconfig_3764)) {
+			return 0;
+		}
+		if (getSkillActualLvl(12) < 85) {
+			return 0;
+		}
+		if (getSkillActualLvl(11) < 85) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_502:
+		if (((boolean)bitconfig_3763)) {
+			return 0;
+		}
+		if (getSkillActualLvl(13) < 90) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_507:
+		if (((boolean)bitconfig_3761)) {
+			return 0;
+		}
+		if (getSkillActualLvl(15) < 80) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_512:
+		if (bitconfig_6883 < 147) {
+			return 0;
+		}
+		if (getSkillActualLvl(0) < 75) {
+			return 0;
+		}
+		if (getSkillActualLvl(2) < 75) {
+			return 0;
+		}
+		if (getSkillActualLvl(18) < 65) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_521:
+		if (getSkillActualLvl(16) < 10) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_524:
+		if (getSkillActualLvl(14) < 40) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_527:
+		if (getSkillActualLvl(16) < 15) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_530:
+		if (standart_config_176 < 8) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_533:
+		if (standart_config_176 < 8) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_536:
+		if (standart_config_116 < 15) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_539:
+		if (standart_config_175 < 12) {
+			return 0;
+		}
+		if (getSkillActualLvl(8) < 10) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_544:
+		if (getSkillActualLvl(7) < 16) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_547:
+		if (standart_config_116 < 15) {
+			return 0;
+		}
+		if (getSkillActualLvl(14) < 40) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_552:
+		if (getSkillActualLvl(8) < 35) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_555:
+		if (getSkillActualLvl(8) < 50) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_558:
+		if (standart_config_320 < 6) {
+			return 0;
+		}
+		if (getSkillActualLvl(10) < 65) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_563:
+		if (standart_config_175 < 12) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_566:
+		if (standart_config_150 < 160) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_569:
+		if (getSkillActualLvl(19) < 27) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_572:
+		if (getSkillActualLvl(21) < 41) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_575:
+		if (getSkillActualLvl(8) < 10) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_578:
+		if (getSkillActualLvl(16) < 12) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_581:
+		if (standart_config_116 < 15) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_584:
+		if (standart_config_150 < 160) {
+			return 0;
+		}
+		if (standart_config_365 < 9) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_589:
+		if (standart_config_63 < 6) {
+			return 0;
+		}
+		if (getSkillActualLvl(20) < 44) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_594:
+		if (standart_config_320 < 6) {
+			return 0;
+		}
+		if (getSkillActualLvl(7) < 30) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_599:
+		if (standart_config_139 < 75) {
+			return 0;
+		}
+		if (getSkillActualLvl(8) < 15) {
+			return 0;
+		}
+		if (getSkillActualLvl(16) < 50) {
+			return 0;
+		}
+		if (getSkillActualLvl(2) < 50) {
+			return 0;
+		}
+		if (getSkillActualLvl(17) < 50) {
+			return 0;
+		}
+		if (getSkillActualLvl(14) < 52) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_612:
+		if (getSkillActualLvl(16) < 53) {
+			return 0;
+		}
+		if (getSkillActualLvl(4) < 42) {
+			return 0;
+		}
+		if (getSkillActualLvl(2) < 21) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_619:
+		if (standart_config_139 < 75) {
+			return 0;
+		}
+		if (getSkillActualLvl(8) < 15) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_624:
+		if (standart_config_116 < 15) {
+			return 0;
+		}
+		if (getSkillActualLvl(18) < 50) {
+			return 0;
+		}
+		if (script_1432() < 100) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_631:
+		if (getSkillActualLvl(16) < 12) {
+			return 0;
+		}
+		if (getSkillActualLvl(8) < 34) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_636:
+		if (getSkillActualLvl(20) < 91) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_639:
+		if (bitconfig_4302 < 110) {
+			return 0;
+		}
+		if (getSkillActualLvl(23) < 95) {
+			return 0;
+		}
+		if (getSkillActualLvl(21) < 27) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_646:
+		if (getSkillActualLvl(15) < 63) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_649:
+		if (getSkillActualLvl(7) < 80) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_652:
+		if (bitconfig_4302 < 110) {
+			return 0;
+		}
+		if (getSkillActualLvl(23) < 90) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_657:
+		if (standart_config_116 < 15) {
+			return 0;
+		}
+		if (getSkillActualLvl(16) < 74) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_662:
+		if (getMyCombat() < 100) {
+			return 0;
+		}
+		if (getSkillActualLvl(18) < 50) {
+			return 0;
+		}
+		if (bitconfig_5491 < 910) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_669:
+		if (getSkillActualLvl(19) < 13) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_672:
+		if (getSkillActualLvl(12) < 10) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_675:
+		if (standart_config_192 < 2) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_678:
+		if (getSkillActualLvl(7) < 21) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_681:
+		if (getSkillActualLvl(10) < 16) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_684:
+		if (getSkillActualLvl(16) < 48) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_687:
+		if (standart_config_76 < 6) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_690:
+		if (getSkillActualLvl(14) < 30) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_693:
+		if (bitconfig_2067 < 1) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_696:
+		if (getSkillActualLvl(6) < 45) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_699:
+		if (getSkillActualLvl(4) < 40) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_702:
+		if (getSkillActualLvl(4) < 40) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_705:
+		if (standart_config_416 < 280) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_708:
+		if (bitconfig_4302 < 110) {
+			return 0;
+		}
+		if (getSkillActualLvl(11) < 45) {
+			return 0;
+		}
+		if (getSkillActualLvl(23) < 46) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_715:
+		if (getSkillActualLvl(10) < 46) {
+			return 0;
+		}
+		if (getSkillActualLvl(7) < 43) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_720:
+		if (getSkillActualLvl(4) < 40) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_723:
+		if (getSkillActualLvl(8) < 60) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_726:
+		if (getSkillActualLvl(9) < 80) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_729:
+		if (bitconfig_3909 < 8) {
+			return 0;
+		}
+		if (getSkillActualLvl(5) < 70) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_734:
+		if (((boolean)bitconfig_2328)) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_737:
+		if (getSkillActualLvl(11) < 75) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_740:
+		if (getSkillActualLvl(6) < 55) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_743:
+		if (getSkillActualLvl(2) < 22) {
+			return 0;
+		}
+		if (getSkillActualLvl(16) < 36) {
+			return 0;
+		}
+		if (getSkillActualLvl(4) < 39) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_750:
+		if (getSkillActualLvl(10) < 76) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_753:
+		if (standart_config_148 < 11) {
+			return 0;
+		}
+		if (getSkillActualLvl(7) < 80) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_758:
+		if (getSkillActualLvl(6) < 56) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_761:
+		if (getSkillActualLvl(10) < 35) {
+			return 0;
+		}
+		if (getSkillActualLvl(7) < 70) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_766:
+		if (getSkillActualLvl(13) < 73) {
+			return 0;
+		}
+		if (getSkillActualLvl(9) < 65) {
+			return 0;
+		}
+		if (getSkillActualLvl(6) < 57) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_773:
+		if (getSkillActualLvl(9) < 85) {
+			return 0;
+		}
+		if (getSkillActualLvl(12) < 10) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_778:
+		if (getSkillActualLvl(15) < 92) {
+			return 0;
+		}
+		if (getSkillActualLvl(4) < 40) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_783:
+		if (getSkillActualLvl(6) < 83) {
+			return 0;
+		}
+		if (bitconfig_2448 < 190) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_788:
+		if (standart_config_63 < 6) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_791:
+		if (getSkillActualLvl(14) < 15) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_794:
+		if (getSkillActualLvl(16) < 13) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_797:
+		if (getSkillActualLvl(12) < 8) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_800:
+		if (getSkillActualLvl(22) < 10) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_803:
+		if (getSkillActualLvl(14) < 10) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_806:
+		if (getSkillActualLvl(10) < 20) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_809:
+		if (standart_config_101 < 33) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_812:
+		if ((bitconfig_3523 < 150) || (getSkillActualLvl(14) < 42)) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_815:
+		if (bitconfig_1404 < 127) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_818:
+		if (standart_config_111 < 9) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_821:
+		if (bitconfig_2309 < 1) {
+			return 0;
+		}
+		if (bitconfig_2310 < 1) {
+			return 0;
+		}
+		if (bitconfig_2311 < 1) {
+			return 0;
+		}
+		if (bitconfig_2312 < 1) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_830:
+		if (standart_config_180 < 6) {
+			return 0;
+		}
+		if (bitconfig_961 < 60) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_835:
+		if (getSkillActualLvl(16) < 21) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_838:
+		if (bitconfig_2011 < 13) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_841:
+		if (bitconfig_3639 < 1) {
+			return 0;
+		}
+		if (getSkillActualLvl(6) < 49) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_846:
+		if (getSkillActualLvl(17) < 40) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_849:
+		if (getSkillActualLvl(6) < 25) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_852:
+		if (script_1432() < 40) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_855:
+		if (bitconfig_961 < 60) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_858:
+		if (bitconfig_2866 < 200) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_861:
+		if (standart_config_180 < 6) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_864:
+		if (((boolean)bitconfig_2328)) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_867:
+		if (standart_config_176 < 10) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_870:
+		if (getSkillActualLvl(19) < 70) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_873:
+		if (getSkillActualLvl(16) < 51) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_876:
+		if (getSkillActualLvl(13) < 73) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_879:
+		if (script_4035() < 153) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_882:
+		if (getSkillActualLvl(7) < 32) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_885:
+		if (getSkillActualLvl(12) < 66) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_888:
+		if (getSkillActualLvl(22) < 40) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_891:
+		if (getSkillActualLvl(6) < 25) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_894:
+		if (standart_config_148 < 11) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_897:
+		if (getSkillActualLvl(8) < 57) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_900:
+		if (bitconfig_358 < 15) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_903:
+		if (bitconfig_3523 < 150) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_906:
+		if (bitconfig_6962 < 12) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_909:
+		if (getSkillActualLvl(8) < 80) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_912:
+		if (bitconfig_5133 < 90) {
+			return 0;
+		}
+		if (getSkillActualLvl(11) < 92) {
+			return 0;
+		}
+		if (getSkillActualLvl(19) < 15) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_919:
+		if (bitconfig_3523 < 150) {
+			return 0;
+		}
+		if (getSkillActualLvl(6) < 80) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_924:
+		if (getSkillActualLvl(7) < 95) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_927:
+		if (bitconfig_6775 < 90) {
+			return 0;
+		}
+		if (getSkillActualLvl(5) < 92) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_932:
+		if (getSkillActualLvl(13) < 88) {
+			return 0;
+		}
+		if (getSkillActualLvl(9) < 69) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_937:
+		if (getSkillActualLvl(20) < 78) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_940:
+		if (standart_config_63 < 6) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_943:
+		if (standart_config_63 < 6) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_946:
+		if (getSkillActualLvl(0) < 5) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_949:
+		if (getSkillActualLvl(1) < 5) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_952:
+		if (getSkillActualLvl(13) < 2) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_955:
+		if (getSkillActualLvl(13) < 3) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_958:
+		if (getSkillActualLvl(12) < 4) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_961:
+		if (getSkillActualLvl(12) < 7) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_964:
+		if (getSkillActualLvl(10) < 5) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_967:
+		if (getSkillActualLvl(7) < 5) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_970:
+		if (getSkillActualLvl(6) < 3) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_973:
+		if (getSkillActualLvl(6) < 7) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_976:
+		if (getSkillActualLvl(4) < 5) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_979:
+		if (getSkillActualLvl(4) < 5) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_982:
+		if (getSkillActualLvl(7) < 10) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_985:
+		if (getMinute() < standart_config_451) {
+			return 0;
+		}
+		if ((standart_config_101 < bitconfig_456) && (script_4218() > 0)) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_991:
+		if (script_1432() < 40) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_994:
+		if (bitconfig_5276 == 10) {
+			return 0;
+		}
+		if (bitconfig_5275 == 50) {
+			return 0;
+		}
+		if (((boolean)bitconfig_5277)) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1001:
+		if (bitconfig_1545 >= 2) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1004:
+		if (getSkillCurrentLvl(21) < 17) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1007:
+		if (((bitconfig_5251 != 0) && (bitconfig_5252 != 0)) && (bitconfig_5253 != 0)) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1012:
+		if (bitconfig_3523 < 150) {
+			return 0;
+		}
+		if (standart_config_1199 == getCurrentDaysSinceLaunch()) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1017:
+		if (bitconfig_5133 < 90) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1020:
+		if (bitconfig_6307 < 12) {
+			return 0;
+		}
+		if (getMinute() < bitconfig_6305) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1025:
+		if (standart_config_101 < 33) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1028:
+		if (getSkillActualLvl(20) < 50) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1031:
+		if (script_1432() < 40) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1034:
+		if ((getSkillActualLvl(0) < 65) && (getSkillActualLvl(1) < 65)) {
+			return 0;
+		}
+		if (bitconfig_3888 < 90) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1040:
+		if (standart_config_175 < 12) {
+			return 0;
+		}
+		if (getSkillActualLvl(8) < 10) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1045:
+		if (standart_config_302 < 60) {
+			return 0;
+		}
+		if (standart_config_339 < 85) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1050:
+		if (standart_config_302 < 60) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1053:
+		if (getSkillActualLvl(17) < 21) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1056:
+		if (getSkillActualLvl(6) < 7) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1059:
+		if (script_1432() < 48) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1062:
+		if (standart_config_273 < 110) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1065:
+		if (((add(getSkillActualLvl(2), getSkillActualLvl(0)) < 130) && (getSkillActualLvl(0) < 99)) && (getSkillActualLvl(2) < 99)) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1070:
+		if (script_4098() != 3500) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1073:
+		if (script_4098() != 3501) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1076:
+		if (script_4098() != 3505) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1079:
+		if (script_4098() != 3511) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1082:
+		if (script_4098() != 3502) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1085:
+		if (script_4098() != 3503) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1088:
+		if (script_4098() != 3504) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1091:
+		if (script_4098() != 3506) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1094:
+		if (script_4098() != 3508) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1097:
+		if (script_4098() != 3509) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1100:
+		if (script_4098() != 3507) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1103:
+		if (script_4098() != 3523) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1106:
+		if (script_4098() != 3510) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1109:
+		if (script_4098() != 3512) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1112:
+		if (script_4098() != 3513) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1115:
+		if (script_4098() != 3514) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1118:
+		if ((((standart_config_281 < 135) || (standart_config_281 > 160)) || ((boolean)bitconfig_6495)) || ((boolean)bitconfig_6495)) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1121:
+		if ((((standart_config_281 < 135) || (standart_config_281 > 160)) || (bitconfig_6495 == 2)) || (bitconfig_6495 == 3)) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1124:
+		if ((((standart_config_281 < 140) || ((boolean)bitconfig_6495)) || ((boolean)bitconfig_6495)) || (getSkillActualLvl(8) > 1)) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1127:
+		if ((((standart_config_281 < 140) || (bitconfig_6495 == 2)) || (bitconfig_6495 == 3)) || (getSkillActualLvl(14) > 1)) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1130:
+		if (script_4098() != 3519) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1133:
+		if ((script_4098() != 3521) || (bitconfig_6494 > 2)) {
+			return 0;
+		}
+		GOTO	flow_1138
+	flow_1136:
+		if ((script_4098() != 3521) || (bitconfig_6494 != 5)) {
+			return 0;
+		}
+	flow_1138:
+		return 1;
+}

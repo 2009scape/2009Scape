@@ -1,0 +1,8 @@
+void script_4237() {
+	if (((boolean)globalint_1495) && (bitconfig_8960 > 0)) {
+		globalint_1495 = getClientCycle();
+	} else {
+		return;
+	}
+	return;
+}

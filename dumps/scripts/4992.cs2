@@ -1,0 +1,97 @@
+int script_4992(int arg0,int arg1) {
+	if (arg1 >= 1) {
+		switch (arg0) {
+			case 17:
+			case 1:
+			case 19:
+			case 18:
+				return 1;
+		}
+	}
+	if (arg1 >= 2) {
+		switch (arg0) {
+			case 17:
+			case 1:
+			case 2:
+			case 19:
+			case 18:
+			case 7:
+				return 1;
+		}
+	}
+	if (arg1 >= 3) {
+		switch (arg0) {
+			case 17:
+			case 1:
+			case 2:
+			case 19:
+			case 3:
+			case 18:
+			case 4:
+			case 5:
+			case 6:
+			case 7:
+				return 1;
+		}
+	}
+	if (arg1 >= 4) {
+		switch (arg0) {
+			case 17:
+			case 1:
+			case 2:
+			case 19:
+			case 3:
+			case 18:
+			case 4:
+			case 5:
+			case 6:
+			case 7:
+				return 1;
+		}
+	}
+	if (arg1 >= 5) {
+		switch (arg0) {
+			case 17:
+			case 1:
+			case 2:
+			case 19:
+			case 3:
+			case 18:
+			case 4:
+			case 5:
+			case 7:
+				return 1;
+		}
+	}
+	if (arg1 >= 6) {
+		switch (arg0) {
+			case 17:
+			case 1:
+			case 2:
+			case 19:
+			case 3:
+			case 18:
+			case 4:
+			case 5:
+			case 6:
+			case 7:
+				return 1;
+		}
+	}
+	if (arg1 >= 7) {
+		switch (arg0) {
+			case 17:
+			case 1:
+			case 2:
+			case 19:
+			case 3:
+			case 18:
+			case 4:
+			case 5:
+			case 6:
+			case 7:
+				return 1;
+		}
+	}
+	return 0;
+}

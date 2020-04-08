@@ -156,8 +156,12 @@ public final class MissSchismDialogue extends DialoguePlugin {
 			stage = 23;
 			break;
 		case 23:
-			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Well, now that I've cleared the vampire out of the manor,", "I guess you won't have to mutch trouble turning it into a", "museum.");
-			stage = 24;
+			if(player.getQuestRepository().isComplete("Vampire Slayer")) {
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Well, now that I've cleared the vampire out of the manor,", "I guess you won't have to mutch trouble turning it into a", "museum.");
+				stage = 24;
+			} else {
+				end();
+			}
 			break;
 		case 24:
 			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "That's all very well dear, but no vampire was ever going to", "stop me making it a museum.");

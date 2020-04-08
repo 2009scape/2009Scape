@@ -1,0 +1,146 @@
+void script_803() {
+	string svar0;
+	svar0 = cs2method_3408(105, 115, 1711, bitconfig_5145);
+	switch (bitconfig_5145) {
+		case 1:
+			setWidgetIsHidden(false, new WidgetPointer(575,17));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 130, "IIsii", new WidgetPointer(575,17));
+			break;
+		case 2:
+			setWidgetIsHidden(false, new WidgetPointer(575,18));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 160, "IIsii", new WidgetPointer(575,18));
+			break;
+		case 3:
+			setWidgetIsHidden(false, new WidgetPointer(575,19));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,19));
+			break;
+		case 4:
+			setWidgetIsHidden(false, new WidgetPointer(575,20));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,20));
+			break;
+		case 5:
+			setWidgetIsHidden(false, new WidgetPointer(575,21));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,21));
+			break;
+		case 6:
+			setWidgetIsHidden(false, new WidgetPointer(575,22));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,22));
+			break;
+		case 7:
+			setWidgetIsHidden(false, new WidgetPointer(575,23));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,23));
+			break;
+		case 8:
+			setWidgetIsHidden(false, new WidgetPointer(575,24));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,24));
+			break;
+		case 9:
+			setWidgetIsHidden(false, new WidgetPointer(575,25));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,25));
+			break;
+		case 10:
+			setWidgetIsHidden(false, new WidgetPointer(575,26));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,26));
+			break;
+		case 11:
+			setWidgetIsHidden(false, new WidgetPointer(575,27));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,27));
+			break;
+		case 12:
+			setWidgetIsHidden(false, new WidgetPointer(575,28));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,28));
+			break;
+		default:
+			return;
+	}
+	globalint_2 = 0;
+	switch (bitconfig_5145) {
+		case 1:
+			if (((boolean)bitconfig_5168)) {
+				script_804();
+			} else {
+				script_813(bitconfig_5145);
+			}
+			break;
+		case 2:
+			if (((boolean)bitconfig_5169)) {
+				script_804();
+			} else {
+				script_813(bitconfig_5145);
+			}
+			break;
+		case 3:
+			if (((boolean)bitconfig_5170)) {
+				script_804();
+			} else {
+				script_813(bitconfig_5145);
+			}
+			break;
+		case 4:
+			if (((boolean)bitconfig_5171)) {
+				script_804();
+			} else {
+				script_813(bitconfig_5145);
+			}
+			break;
+		case 5:
+			if (((boolean)bitconfig_5172)) {
+				script_804();
+			} else {
+				script_813(bitconfig_5145);
+			}
+			break;
+		case 6:
+			if (((boolean)bitconfig_5173)) {
+				script_804();
+			} else {
+				script_813(bitconfig_5145);
+			}
+			break;
+		case 7:
+			if (((boolean)bitconfig_5174)) {
+				script_804();
+			} else {
+				script_813(bitconfig_5145);
+			}
+			break;
+		case 8:
+			if (((boolean)bitconfig_5175)) {
+				script_804();
+			} else {
+				script_813(bitconfig_5145);
+			}
+			break;
+		case 9:
+			if (((boolean)bitconfig_5176)) {
+				script_804();
+			} else {
+				script_813(bitconfig_5145);
+			}
+			break;
+		case 10:
+			if (((boolean)bitconfig_5177)) {
+				script_804();
+			} else {
+				script_813(bitconfig_5145);
+			}
+			break;
+		case 11:
+			if (((boolean)bitconfig_5178)) {
+				script_804();
+			} else {
+				script_813(bitconfig_5145);
+			}
+			break;
+		case 12:
+			if (((boolean)bitconfig_5179)) {
+				script_804();
+			} else {
+				script_813(bitconfig_5145);
+			}
+			break;
+		default:
+			return;
+	}
+	return;
+}

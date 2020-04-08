@@ -1,0 +1,4 @@
+void script_2258(int arg0,int arg1) {
+	script_2010(arg0, arg1, "Level 65 Agility" + "<br>" + "Requires the Priest in Peril quest");
+	return;
+}

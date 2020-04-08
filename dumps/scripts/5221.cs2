@@ -1,0 +1,18 @@
+void script_5221() {
+	script_5222(1);
+	script_5222(2);
+	script_5222(3);
+	script_5222(4);
+	script_5222(5);
+	script_5222(6);
+	script_5222(7);
+	script_5222(8);
+	script_5222(9);
+	script_5222(10);
+	script_5222(11);
+	script_5222(12);
+	script_5222(13);
+	script_5222(14);
+	script_5222(15);
+	return;
+}

@@ -1,0 +1,16 @@
+void script_468(int arg0,int arg1) {
+	if (((((((getSkillActualLvl(0) < 42) || (getSkillActualLvl(2) < 42)) || (getSkillActualLvl(1) < 42)) || (getSkillActualLvl(3) < 42)) || (getSkillActualLvl(4) < 42)) || (getSkillActualLvl(6) < 42)) || (getSkillActualLvl(5) < 22)) {
+		setWidgetText(new WidgetPointer(arg0), "<col=c80000>" + "Higher levels required...(show)" + "</col>");
+		return;
+	}
+	if ((arg0 == 66257161) && (standart_config_1875 < 1250)) {
+		setWidgetText(new WidgetPointer(arg0), "<col=c80000>" + "1250 Conquest ranking required." + "</col>");
+		return;
+	}
+	if (bitconfig_2086 < arg1) {
+		setWidgetText(new WidgetPointer(arg0), "<col=c80000>" + intToStr(arg1) + " Commendations required." + "</col>");
+	} else {
+		setWidgetText(new WidgetPointer(arg0), intToStr(arg1) + " Commendations.");
+	}
+	return;
+}

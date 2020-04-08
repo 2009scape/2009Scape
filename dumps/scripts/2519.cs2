@@ -1,0 +1,37 @@
+void script_2519(int arg0) {
+	int ivar1;
+	ivar1 = script_2520();
+	switch (arg0) {
+		case 42860558:
+			if (globalint_847 > 0) {
+				globalint_847 = subtract(globalint_847, 1);
+				setWidgetText(new WidgetPointer(654,13), intToStr(globalint_847));
+			}
+			break;
+		case 42860606:
+			if (globalint_848 > 0) {
+				globalint_848 = subtract(globalint_848, 1);
+				setWidgetText(new WidgetPointer(654,61), intToStr(globalint_848));
+			}
+			break;
+		case 42860598:
+			if (globalint_849 > 0) {
+				globalint_849 = subtract(globalint_849, 1);
+				setWidgetText(new WidgetPointer(654,53), intToStr(globalint_849));
+			}
+			break;
+		case 42860590:
+			if (globalint_850 > 0) {
+				globalint_850 = subtract(globalint_850, 1);
+				setWidgetText(new WidgetPointer(654,45), intToStr(globalint_850));
+			}
+			break;
+		case 42860615:
+			if (globalint_851 > 0) {
+				globalint_851 = subtract(globalint_851, 1);
+				setWidgetText(new WidgetPointer(654,70), intToStr(globalint_851));
+			}
+	}
+	script_2517();
+	return;
+}

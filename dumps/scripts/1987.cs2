@@ -1,0 +1,6 @@
+int script_1987() {
+	if (add(add(add(script_1995(), script_1983()), script_1982()), script_1981()) == add(add(add(9, 11), 10), 9)) {
+		return 1;
+	}
+	return 0;
+}

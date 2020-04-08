@@ -1,0 +1,6 @@
+int script_395() {
+	if (add(getSkillActualLvl(0), getSkillActualLvl(2)) == 130) {
+		return 1;
+	}
+	return 0;
+}

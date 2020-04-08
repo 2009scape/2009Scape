@@ -1,0 +1,21 @@
+void script_4639() {
+	if (isBitFlagged(standart_config_2189, 1)) {
+		setWidgetIsHidden(false, new WidgetPointer(153,102));
+	}
+	if (isBitFlagged(standart_config_2189, 2)) {
+		setWidgetIsHidden(false, new WidgetPointer(153,115));
+	}
+	if (isBitFlagged(standart_config_2189, 3)) {
+		setWidgetIsHidden(false, new WidgetPointer(153,141));
+	}
+	if (isBitFlagged(standart_config_2189, 4)) {
+		setWidgetIsHidden(false, new WidgetPointer(153,128));
+	}
+	if (isBitFlagged(standart_config_2189, 5)) {
+		setWidgetIsHidden(false, new WidgetPointer(153,169));
+	}
+	if (isBitFlagged(standart_config_2189, 6)) {
+		setWidgetIsHidden(false, new WidgetPointer(153,155));
+	}
+	return;
+}

@@ -1,0 +1,95 @@
+void script_3054(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	string svar0;
+	string svar1;
+	string svar2;
+	if (cs2method5428(59572276, -1)) {
+		setScriptCallOnGameloop(3053, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+		return;
+	}
+	deleteAllExtraChilds(new WidgetPointer(909,52));
+	svar0 = "<col=ff5256>";
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	svar1 = "";
+	svar2 = "";
+	while (ivar2 < 100) {
+		ivar3 = cs2method5004(ivar2);
+		svar1 = cs2method5010(ivar2);
+		svar2 = cs2method5019(ivar2);
+		switch (ivar3) {
+			case 0:
+			case 4:
+			case 27:
+			case 26:
+			case 29:
+			case 28:
+			case 31:
+			case 30:
+				ivar1 = script_3055(ivar1, 0, ivar3, cs2method5003(ivar2), "", "");
+				break;
+			case 3:
+				ivar1 = script_3055(ivar1, 1, ivar3, "From " + svar1 + ": " + svar0 + cs2method5003(ivar2), svar1, svar2);
+				globalstring_276 = svar2;
+				break;
+			case 5:
+				ivar1 = script_3055(ivar1, 0, ivar3, svar0 + cs2method5003(ivar2), svar1, svar2);
+				break;
+			case 6:
+				ivar1 = script_3055(ivar1, 1, ivar3, "To " + svar1 + ": " + svar0 + cs2method5003(ivar2), svar1, svar2);
+				break;
+			case 7:
+				ivar1 = script_3055(ivar1, 1, ivar3, "From " + svar1 + ": " + svar0 + cs2method5003(ivar2), svar1, svar2);
+				globalstring_276 = svar2;
+				break;
+			case 18:
+				ivar1 = script_3055(ivar1, 1, ivar3, "From " + svar1 + ": " + svar0 + cs2method5003(ivar2), svar1, svar2);
+				globalstring_276 = svar2;
+				break;
+			case 19:
+				ivar1 = script_3055(ivar1, 1, ivar3, "To " + svar1 + ": " + svar0 + cs2method5003(ivar2), svar1, svar2);
+				break;
+			case 115:
+				ivar1 = script_3055(ivar1, 0, ivar3, "<col=ff0000>" + cs2method5003(ivar2) + "</col>", "", "");
+		}
+		ivar2 = add(ivar2, 1);
+	}
+	ivar4 = divide(getWidgetActualHeight(new WidgetPointer(909,52)), 15);
+	ivar2 = 0;
+	ivar5 = 0;
+	if (ivar1 < ivar4) {
+		ivar5 = subtract(ivar4, ivar1);
+		while (ivar2 < ivar5) {
+			ivar1 = script_3055(ivar1, 0, 0, "", "", "");
+			ivar2 = add(ivar2, 1);
+		}
+	}
+	ivar6 = 0;
+	ivar7 = 0;
+	while (ivar7 <= ivar1) {
+		if (setWidgetRegister(new WidgetPointer(909,52), ivar7)) {
+			ivar6 = add(ivar6, getWidgetActualHeight());
+		}
+		ivar7 = add(ivar7, 1);
+	}
+	ivar8 = max(ivar6, multiply(ivar4, 15));
+	if (ivar8 > getWidgetActualHeight(new WidgetPointer(909,52))) {
+		setWidgetScrollMax(0, ivar8, new WidgetPointer(909,52));
+		script_72(59572277, 59572276, subtract(add(globalint_1122, getWidgetScrollMaxV(new WidgetPointer(909,52))), globalint_1123));
+	} else {
+		setWidgetScrollMax(0, 0, new WidgetPointer(909,52));
+		cs2method2100(0, 0, new WidgetPointer(909,52));
+		script_72(59572277, 59572276, 0);
+	}
+	globalint_1122 = cs2method2601(new WidgetPointer(909,52));
+	globalint_1123 = getWidgetScrollMaxV(new WidgetPointer(909,52));
+	return;
+}

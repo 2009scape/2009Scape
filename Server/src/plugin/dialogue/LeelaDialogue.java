@@ -305,7 +305,7 @@ public final class LeelaDialogue extends DialoguePlugin {
 				stage = 21;
 				break;
 			case 21:
-				interpreter.sendDialogues(npc, null, "Get some soft clay and get her to sho you the key", "somehow. Then take the print, with bronze, to my", "father.");
+				interpreter.sendDialogues(npc, null, "Get some soft clay and get her to show you the key", "somehow. Then take the print, with bronze, to my", "father.");
 				stage = 22;
 				break;
 			case 22:

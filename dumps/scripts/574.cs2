@@ -1,0 +1,18 @@
+void script_574(int arg0,int arg1) {
+	string svar0;
+	if (arg0 == 84) {
+		globalint_81 = 0;
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(389,9));
+		script_576();
+		return;
+	}
+	svar0 = script_74(0, arg0, arg1, globalstring_22);
+	if (((boolean)stringMethod4107(globalstring_22, svar0))) {
+		return;
+	}
+	globalstring_22 = svar0;
+	setWidgetText(new WidgetPointer(389,9), replaceLtGt(globalstring_22) + "*");
+	globalint_81 = 50;
+	setScriptCallOnGameloop(575, "", new WidgetPointer(389,9));
+	return;
+}

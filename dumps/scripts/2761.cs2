@@ -1,0 +1,3 @@
+int script_2761() {
+	return add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(add(getSkillActualLvl(0), getSkillActualLvl(2)), getSkillActualLvl(1)), getSkillActualLvl(4)), getSkillActualLvl(5)), getSkillActualLvl(6)), getSkillActualLvl(20)), getSkillActualLvl(22)), getSkillActualLvl(3)), getSkillActualLvl(16)), getSkillActualLvl(15)), getSkillActualLvl(17)), getSkillActualLvl(12)), getSkillActualLvl(9)), getSkillActualLvl(18)), getSkillActualLvl(21)), getSkillActualLvl(14)), getSkillActualLvl(13)), getSkillActualLvl(10)), getSkillActualLvl(7)), getSkillActualLvl(11)), getSkillActualLvl(8)), getSkillActualLvl(19)), getSkillActualLvl(23)), getSkillActualLvl(24));
+}

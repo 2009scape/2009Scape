@@ -1,0 +1,77 @@
+void script_291(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	setWidgetText(new WidgetPointer(755,20), cs2method5207(cs2method5235()));
+	deleteAllExtraChilds(new WidgetPointer(arg2));
+	deleteAllExtraChilds(new WidgetPointer(arg3));
+	if (((boolean)arg0)) {
+		setWidgetIsHidden(true, new WidgetPointer(arg1));
+		setWidgetSprite(773, new WidgetPointer(755,21));
+		setScriptCallOnMousePressed(290, 1, new WidgetPointer(arg1), new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), "1IIIII", new WidgetPointer(755,21));
+		setScriptCallOnMousePressed(290, 1, new WidgetPointer(arg1), new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), "1IIIII", new WidgetPointer(755,20));
+		return;
+	}
+	setWidgetIsHidden(false, new WidgetPointer(arg1));
+	setWidgetSprite(788, new WidgetPointer(755,21));
+	setScriptCallOnMousePressed(290, 0, new WidgetPointer(arg1), new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), "1IIIII", new WidgetPointer(755,21));
+	setScriptCallOnMousePressed(290, 0, new WidgetPointer(arg1), new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), "1IIIII", new WidgetPointer(755,20));
+	globalarray_0 = new int[add(41, 1)];
+	globalarray_0[0] = 0;
+	ivar6 = 1;
+	ivar7 = 1;
+	ivar8 = -1;
+	while (ivar6 <= 41) {
+		ivar8 = cs2method_3408(105, 96, 708, ivar6);
+		if (ivar8 != -1) {
+			globalarray_0[ivar7] = ivar6;
+			ivar7 = add(ivar7, 1);
+		}
+		ivar6 = add(ivar6, 1);
+	}
+	script_293(0, 1, subtract(ivar7, 1));
+	createExtraChild(new WidgetPointer(arg2), 4, getExtraChildGap(new WidgetPointer(arg2)));
+	setWidgetPosition(0, 0, 1, 0);
+	setWidgetSize(0, 20, 1, 0);
+	setWidgetFont(496);
+	setWidgetTextAlignment(0, 1, 0);
+	setWidgetRGB(new Color(255, 255, 255));
+	setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), -2147483643, 11513775, "Iii");
+	setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), -2147483643, 16777215, "Iii");
+	ivar8 = cs2method_3408(105, 96, 708, globalarray_0[0]);
+	setWidgetText(cs2method5207(ivar8));
+	setScriptCallOnMousePressed(294, ivar8, new WidgetPointer(arg1), new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), "`IIIII");
+	script_309(ivar8, arg2, 0);
+	ivar9 = getWidgetActualHeight();
+	ivar10 = 0;
+	ivar6 = 1;
+	while (ivar6 < ivar7) {
+		createExtraChild(new WidgetPointer(arg2), 4, getExtraChildGap(new WidgetPointer(arg2)));
+		setWidgetPosition(0, ivar9, 1, 0);
+		setWidgetSize(0, 20, 1, 0);
+		setWidgetFont(495);
+		setWidgetTextAlignment(0, 1, 0);
+		setWidgetRGB(new Color(255, 255, 255));
+		setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), -2147483643, 11513775, "Iii");
+		setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), -2147483643, 16777215, "Iii");
+		ivar8 = cs2method_3408(105, 96, 708, globalarray_0[ivar6]);
+		setWidgetText(cs2method5207(ivar8));
+		setScriptCallOnMousePressed(294, ivar8, new WidgetPointer(arg1), new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), "`IIIII");
+		if (ivar8 == cs2method5235()) {
+			ivar10 = ivar9;
+		}
+		script_309(ivar8, arg2, ivar9);
+		ivar9 = add(ivar9, getWidgetActualHeight());
+		ivar6 = add(ivar6, 1);
+	}
+	setWidgetScrollMax(0, ivar9, new WidgetPointer(arg2));
+	ivar9 = max(ivar9, 20);
+	ivar9 = add(ivar9, 3);
+	ivar9 = min(ivar9, 150);
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg1)), ivar9, 0, 0, new WidgetPointer(arg1));
+	script_31(arg3, arg2, 792, 789, 790, 791, 773, 788);
+	script_157(arg3, arg2, ivar10, 1);
+	return;
+}

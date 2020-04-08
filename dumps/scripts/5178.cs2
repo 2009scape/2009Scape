@@ -1,0 +1,228 @@
+void script_5178(int arg0,int arg1) {
+	switch (arg1) {
+		case 1:
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 0))) {
+				setWidgetSprite(5528);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 1))) {
+				setWidgetSprite(5529);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 2))) {
+				setWidgetSprite(5528);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 3))) {
+				setWidgetSprite(5538);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 4))) {
+				setWidgetSprite(5539);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 5))) {
+				setWidgetSprite(5538);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 6))) {
+				setWidgetSprite(5548);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 7))) {
+				setWidgetSprite(5549);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 8))) {
+				setWidgetSprite(5548);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 9))) {
+				setWidgetSprite(5558);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 10))) {
+				setWidgetSprite(5559);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 11))) {
+				setWidgetSprite(5558);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 12))) {
+				setWidgetSprite(5552);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 13))) {
+				setWidgetSprite(5553);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 14))) {
+				setWidgetSprite(5552);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 15))) {
+				setWidgetSprite(5562);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 16))) {
+				setWidgetSprite(5563);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 17))) {
+				setWidgetSprite(5562);
+			}
+			break;
+		case 2:
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 0))) {
+				setWidgetSprite(5530);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 1))) {
+				setWidgetSprite(5531);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 2))) {
+				setWidgetSprite(5530);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 3))) {
+				setWidgetSprite(5540);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 4))) {
+				setWidgetSprite(5541);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 5))) {
+				setWidgetSprite(5540);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 6))) {
+				setWidgetSprite(5550);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 7))) {
+				setWidgetSprite(5551);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 8))) {
+				setWidgetSprite(5550);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 9))) {
+				setWidgetSprite(5560);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 10))) {
+				setWidgetSprite(5561);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 11))) {
+				setWidgetSprite(5560);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 12))) {
+				setWidgetSprite(5550);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 13))) {
+				setWidgetSprite(5551);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 14))) {
+				setWidgetSprite(5550);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 15))) {
+				setWidgetSprite(5560);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 16))) {
+				setWidgetSprite(5561);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 17))) {
+				setWidgetSprite(5560);
+			}
+			break;
+		case 3:
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 0))) {
+				setWidgetSprite(5532);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 1))) {
+				setWidgetSprite(5533);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 2))) {
+				setWidgetSprite(5532);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 3))) {
+				setWidgetSprite(5542);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 4))) {
+				setWidgetSprite(5543);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 5))) {
+				setWidgetSprite(5542);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 6))) {
+				setWidgetSprite(5552);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 7))) {
+				setWidgetSprite(5553);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 8))) {
+				setWidgetSprite(5552);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 9))) {
+				setWidgetSprite(5562);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 10))) {
+				setWidgetSprite(5563);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 11))) {
+				setWidgetSprite(5562);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 12))) {
+				setWidgetSprite(5556);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 13))) {
+				setWidgetSprite(5557);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 14))) {
+				setWidgetSprite(5556);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 15))) {
+				setWidgetSprite(5566);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 16))) {
+				setWidgetSprite(5567);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 17))) {
+				setWidgetSprite(5566);
+			}
+			break;
+		case 4:
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 0))) {
+				setWidgetSprite(5534);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 1))) {
+				setWidgetSprite(5535);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 2))) {
+				setWidgetSprite(5534);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 3))) {
+				setWidgetSprite(5544);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 4))) {
+				setWidgetSprite(5545);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 5))) {
+				setWidgetSprite(5544);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 6))) {
+				setWidgetSprite(5554);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 7))) {
+				setWidgetSprite(5555);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 8))) {
+				setWidgetSprite(5554);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 9))) {
+				setWidgetSprite(5564);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 10))) {
+				setWidgetSprite(5565);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 11))) {
+				setWidgetSprite(5564);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 12))) {
+				setWidgetSprite(5554);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 13))) {
+				setWidgetSprite(5555);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 14))) {
+				setWidgetSprite(5554);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 15))) {
+				setWidgetSprite(5564);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 16))) {
+				setWidgetSprite(5565);
+			}
+			if (setWidgetRegister(new WidgetPointer(1122,88), add(arg0, 17))) {
+				setWidgetSprite(5564);
+			}
+	}
+	return;
+}

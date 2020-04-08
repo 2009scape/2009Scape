@@ -1,0 +1,4 @@
+void script_4241() {
+	setWidgetSize(multiplyDivide(bitconfig_8959, 10, 16384), 16384, 2, 2, new WidgetPointer(1078,7));
+	return;
+}

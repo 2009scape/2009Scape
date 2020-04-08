@@ -1,0 +1,50 @@
+void script_161(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,string arg6,string arg7,string arg8,string arg9,string arg10,string arg11,string arg12,string arg13,string arg14) {
+	if (setWidgetRegister(new WidgetPointer(arg2), arg3)) {
+		if (getItemIdInSlotSplit(arg0, arg1) != -1) {
+			setItemOnWidgetMethod1200(getItemIdInSlotSplit(arg0, arg1), getItemAmtInSlotSplit(arg0, arg1));
+			cs2method1305(getItemName(getItemIdInSlotSplit(arg0, arg1)));
+			setWidgetContextMenuOption(1, arg6);
+			setWidgetContextMenuOption(2, arg7);
+			setWidgetContextMenuOption(3, arg8);
+			setWidgetContextMenuOption(4, arg9);
+			setWidgetContextMenuOption(5, arg10);
+			setWidgetContextMenuOption(6, arg11);
+			setWidgetContextMenuOption(7, arg12);
+			setWidgetContextMenuOption(8, arg13);
+			setWidgetContextMenuOption(9, arg14);
+			setWidgetContextMenuOption(10, "Examine" + "<col=ff9040>");
+			if (arg4 > 0) {
+				cs2method1303(5);
+				cs2method1304(10);
+			}
+			if (((boolean)arg4)) {
+				setScriptCallOnMouseDragReleased(155, arg0, -2147483643, -2147483641, new WidgetPointer(-32768,3), arg4, new WidgetPointer(arg5), arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, "viiIiIsssssssss");
+			} else {
+				if (arg4 == 2) {
+					setScriptCallOnMouseDragReleased(156, arg0, -2147483643, -2147483641, new WidgetPointer(-32768,3), arg4, new WidgetPointer(arg5), arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, "viiIiIsssssssss");
+				}
+			}
+			setWidgetShadowColor(new Color(51, 51, 51));
+			setWidgetBorderThickness(1);
+		} else {
+			setItemOnWidgetMethod1200(-1, 0);
+			cs2method1305("");
+			setWidgetContextMenuOption(1, "");
+			setWidgetContextMenuOption(2, "");
+			setWidgetContextMenuOption(3, "");
+			setWidgetContextMenuOption(4, "");
+			setWidgetContextMenuOption(5, "");
+			setWidgetContextMenuOption(6, "");
+			setWidgetContextMenuOption(7, "");
+			setWidgetContextMenuOption(8, "");
+			setWidgetContextMenuOption(9, "");
+			setWidgetContextMenuOption(10, "");
+			if (arg4 > 0) {
+				cs2method1303(0);
+				cs2method1304(0);
+			}
+			setScriptCallOnMouseDragReleased(-1, "");
+		}
+	}
+	return;
+}

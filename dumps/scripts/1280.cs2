@@ -1,0 +1,23 @@
+void script_1280(int arg0,int arg1,int arg2,int arg3) {
+	string svar0;
+	svar0 = "";
+	if (setWidgetRegister(new WidgetPointer(arg2), arg3)) {
+		if (getItemIdInSlot(arg0, arg1) != -1) {
+			svar0 = "<col=ff981f>" + getItemName(getItemIdInSlot(arg0, arg1));
+			setItemOnWidgetMethod1200(getItemIdInSlot(arg0, arg1), getItemAmtInSlot(arg0, arg1));
+			cs2method1305(svar0);
+			setWidgetContextMenuOption(10, "Examine" + "<col=ff9040>");
+			cs2method1303(5);
+			cs2method1304(10);
+			setWidgetShadowColor(new Color(51, 51, 51));
+			setWidgetBorderThickness(1);
+		} else {
+			setWidgetModel(-1);
+			setWidgetNoOptions();
+			cs2method1303(0);
+			cs2method1304(0);
+			setScriptCallOnMouseDragReleased(-1, "");
+		}
+	}
+	return;
+}

@@ -1,0 +1,69 @@
+void script_2132(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	flow_0:
+		ivar5 = add(getWidgetActualX(new WidgetPointer(arg0)), arg1);
+		ivar6 = add(getWidgetActualY(new WidgetPointer(arg0)), arg2);
+		if ((getWidgetActualX(new WidgetPointer(arg3)) >= ivar5) && (getWidgetActualX(new WidgetPointer(arg3)) < add(ivar5, getWidgetActualWidth(new WidgetPointer(arg0))))) {
+			if ((getWidgetActualY(new WidgetPointer(arg3)) >= ivar6) && (getWidgetActualY(new WidgetPointer(arg3)) < add(ivar6, getWidgetActualHeight(new WidgetPointer(arg0))))) {
+				ivar5 = subtract(ivar5, add(rndExcl(3), 2));
+				ivar6 = subtract(ivar6, add(rndExcl(3), 2));
+				if (arg4 <= getClientCycle()) {
+					playSoundEffect(819, 1, 0);
+					arg4 = add(add(getClientCycle(), 20), rndExcl(40));
+				}
+			}
+		} else {
+			if (((ivar5 >= getWidgetActualX(new WidgetPointer(arg3))) && (ivar5 < add(getWidgetActualX(new WidgetPointer(arg3)), getWidgetActualWidth(new WidgetPointer(arg3))))) && ((ivar6 >= getWidgetActualY(new WidgetPointer(arg3))) && (ivar6 < add(getWidgetActualY(new WidgetPointer(arg3)), getWidgetActualHeight(new WidgetPointer(arg3)))))) {
+				ivar5 = add(add(ivar5, rndExcl(3)), 2);
+				ivar6 = add(add(ivar6, rndExcl(3)), 2);
+				if (arg4 <= getClientCycle()) {
+					playSoundEffect(819, 1, 0);
+					arg4 = add(add(getClientCycle(), 20), rndExcl(40));
+				}
+			}
+		}
+		ivar5 = max(ivar5, 0);
+		ivar6 = max(ivar6, 0);
+		ivar7 = subtract(getWidgetActualWidth(new WidgetPointer(getWidgetParentId(new WidgetPointer(arg0)))), getWidgetActualWidth(new WidgetPointer(arg0)));
+		ivar5 = min(ivar5, ivar7);
+		ivar8 = subtract(getWidgetActualHeight(new WidgetPointer(getWidgetParentId(new WidgetPointer(arg0)))), getWidgetActualHeight(new WidgetPointer(arg0)));
+		ivar6 = min(ivar6, ivar8);
+		IF (ivar5 <= 0) 
+			GOTO	flow_14
+		GOTO	flow_15
+	flow_14:
+		IF (arg1 < 0) 
+			GOTO	flow_17
+	flow_15:
+		IF ((ivar5 >= ivar7) && (arg1 > 0)) 
+			GOTO	flow_17
+		GOTO	flow_18
+	flow_17:
+		arg1 = subtract(0, arg1);
+	flow_18:
+		IF (ivar6 <= 0) 
+			GOTO	flow_19
+		GOTO	flow_20
+	flow_19:
+		IF (arg2 < 0) 
+			GOTO	flow_22
+	flow_20:
+		IF ((ivar6 >= ivar8) && (arg2 > 0)) 
+			GOTO	flow_22
+		GOTO	flow_23
+	flow_22:
+		arg2 = subtract(0, arg2);
+	flow_23:
+		if (((boolean)arg1)) {
+			arg1 = add(rndExcl(3), 1);
+		}
+		if (((boolean)arg2)) {
+			arg2 = add(rndExcl(3), 1);
+		}
+		setWidgetPosition(ivar5, ivar6, 0, 0, new WidgetPointer(arg0));
+		setScriptCallOnGameloop(2132, new WidgetPointer(arg0), arg1, arg2, new WidgetPointer(arg3), arg4, "IiiIi", new WidgetPointer(arg0));
+		return;
+}

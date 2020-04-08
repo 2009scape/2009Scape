@@ -1,0 +1,26 @@
+void script_3957(int arg0) {
+	int ivar1;
+	flow_0:
+		ivar1 = getWidgetSpriteId(new WidgetPointer(arg0));
+		SWITCH (ivar1) {
+			case 4117:
+				 GOTO flow_1
+			case 4118:
+				 GOTO flow_2
+			case 4119:
+				 GOTO flow_3
+		}
+		return;
+	flow_1:
+		setWidgetSprite(4122, new WidgetPointer(arg0));
+		GOTO	flow_4
+	flow_2:
+		setWidgetSprite(4123, new WidgetPointer(arg0));
+		GOTO	flow_4
+	flow_3:
+		setWidgetSprite(4124, new WidgetPointer(arg0));
+	flow_4:
+		setWidgetSize(133, 16, 0, 0, new WidgetPointer(744,81));
+		setScriptCallOnGameloop(3961, 0, new WidgetPointer(744,7), "iI", new WidgetPointer(744,7));
+		return;
+}

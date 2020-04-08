@@ -101,8 +101,11 @@ public final class DialogueInterpreter {
         if (args.length > 0 && args[0] instanceof NPC) {
             NPC npc = (NPC) args[0];
             npc.setDialoguePlayer(player);
-            npc.getWalkingQueue().reset();
-            npc.getPulseManager().clear();
+            try { //this prevents the dialogue interpreter from dying when you try opening an NPC's dialogue without passing the NPC itself as an argument
+                npc.getWalkingQueue().reset();
+                npc.getPulseManager().clear();
+            } catch(Exception e){
+            }
         } else if (args.length < 1) {
             args = new Object[] { dialogueKey };
         }

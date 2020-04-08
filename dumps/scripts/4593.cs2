@@ -1,0 +1,7 @@
+int script_4593(int arg0,string arg1) {
+	int ivar1;
+	ivar1 = add(multiply(getLineCount(getWidgetActualWidth(new WidgetPointer(arg0)), 495, arg1), 15), 5);
+	setWidgetIsHidden(false, new WidgetPointer(arg0));
+	setWidgetText(new WidgetPointer(arg0), arg1);
+	return ivar1;
+}

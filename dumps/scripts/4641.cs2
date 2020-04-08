@@ -1,0 +1,25 @@
+void script_4641() {
+	script_4639();
+	if (isBitFlagged(standart_config_2189, 1)) {
+		setWidgetSprite(6268, new WidgetPointer(153,15));
+		setScriptCallOnClickContextMenu(4637, 1, "i", new WidgetPointer(153,98));
+		script_4645(1);
+	} else {
+		setWidgetSprite(6271, new WidgetPointer(153,15));
+	}
+	if (isBitFlagged(standart_config_2189, 2)) {
+		setWidgetSprite(6270, new WidgetPointer(153,12));
+		setScriptCallOnClickContextMenu(4637, 2, "i", new WidgetPointer(153,111));
+		script_4645(2);
+	} else {
+		setWidgetSprite(6271, new WidgetPointer(153,12));
+	}
+	if (isBitFlagged(standart_config_2189, 4)) {
+		setWidgetSprite(6269, new WidgetPointer(153,9));
+		setScriptCallOnClickContextMenu(4637, 4, "i", new WidgetPointer(153,124));
+		script_4645(4);
+	} else {
+		setWidgetSprite(6271, new WidgetPointer(153,9));
+	}
+	return;
+}

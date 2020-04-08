@@ -1,0 +1,24 @@
+void script_5288() {
+	playSoundEffect2False(7513, 1, 0, 200, cs2method_4019(20, 20));
+	if (((boolean)cs2method2613(new WidgetPointer(555,48)))) {
+		cs2method2106(49152, new WidgetPointer(555,49));
+		cs2method2106(49152, new WidgetPointer(555,48));
+		return;
+	}
+	if (cs2method2613(new WidgetPointer(555,48)) == 49152) {
+		cs2method2106(32768, new WidgetPointer(555,49));
+		cs2method2106(32768, new WidgetPointer(555,48));
+		return;
+	}
+	if (cs2method2613(new WidgetPointer(555,48)) == 32768) {
+		cs2method2106(16384, new WidgetPointer(555,49));
+		cs2method2106(16384, new WidgetPointer(555,48));
+		return;
+	}
+	if (cs2method2613(new WidgetPointer(555,48)) == 16384) {
+		cs2method2106(0, new WidgetPointer(555,49));
+		cs2method2106(0, new WidgetPointer(555,48));
+		return;
+	}
+	return;
+}

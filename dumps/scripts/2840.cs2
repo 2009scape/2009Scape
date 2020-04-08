@@ -1,0 +1,32 @@
+void script_2840() {
+	flow_0:
+		globalint_1068 = add(globalint_1068, 1);
+		SWITCH (globalint_1068) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_2
+			case 3:
+				 GOTO flow_3
+			case 5:
+				 GOTO flow_4
+		}
+		setScriptCallOnMinimapRelatedSetting3(2840, "", new WidgetPointer(384,0));
+		cameraMethod5502(0, globalint_1068, 400, 400, 1, globalint_1068);
+		GOTO	flow_5
+	flow_1:
+		setScriptCallOnMinimapRelatedSetting3(2840, "", new WidgetPointer(384,0));
+		cameraMethod5502(0, globalint_1068, 400, 0, 1, globalint_1068);
+		GOTO	flow_5
+	flow_2:
+		setScriptCallOnMinimapRelatedSetting3(-1, "", new WidgetPointer(384,0));
+		GOTO	flow_5
+	flow_3:
+		setScriptCallOnMinimapRelatedSetting3(2840, "", new WidgetPointer(384,0));
+		cameraMethod5502(0, globalint_1068, 650, 700, 1, globalint_1068);
+		GOTO	flow_5
+	flow_4:
+		setScriptCallOnMinimapRelatedSetting3(-1, "", new WidgetPointer(384,0));
+	flow_5:
+		return;
+}

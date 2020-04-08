@@ -1,0 +1,156 @@
+void script_3971() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	string svar0;
+	ivar0 = -1;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = -1;
+	ivar4 = -1;
+	ivar5 = 0;
+	ivar6 = -1;
+	ivar7 = -1;
+	ivar8 = -1;
+	ivar9 = -1;
+	ivar10 = -1;
+	ivar11 = -1;
+	ivar12 = 0;
+	svar0 = "null";
+	setWidgetSprite(cs2method_3408(105, 100, 3491, bitconfig_8575), new WidgetPointer(1056,112));
+	if (((boolean)bitconfig_9030)) {
+		setWidgetSprite(1820, new WidgetPointer(1056,112));
+	}
+	while (ivar2 < 6) {
+		switch (ivar2) {
+			case 0:
+				ivar1 = bitconfig_8587;
+				ivar0 = cs2method_3408(105, 74, 3483, bitconfig_8587);
+				ivar4 = 69206080;
+				ivar9 = 69206117;
+				ivar7 = 69206116;
+				ivar10 = 69206115;
+				setScriptCallOnClickContextMenu(3976, bitconfig_8587, 1, -2147483644, "iii", new WidgetPointer(ivar10));
+				break;
+			case 1:
+				ivar1 = bitconfig_8588;
+				ivar0 = cs2method_3408(105, 74, 3483, bitconfig_8588);
+				ivar4 = 69206160;
+				ivar9 = 69206162;
+				ivar7 = 69206161;
+				ivar10 = 69206158;
+				setScriptCallOnClickContextMenu(3976, bitconfig_8588, 2, -2147483644, "iii", new WidgetPointer(ivar10));
+				break;
+			case 2:
+				ivar1 = bitconfig_8589;
+				ivar0 = cs2method_3408(105, 74, 3483, bitconfig_8589);
+				ivar4 = 69206165;
+				ivar9 = 69206167;
+				ivar7 = 69206166;
+				ivar10 = 69206163;
+				setScriptCallOnClickContextMenu(3976, bitconfig_8589, 3, -2147483644, "iii", new WidgetPointer(ivar10));
+				break;
+			case 3:
+				ivar1 = bitconfig_8590;
+				ivar0 = cs2method_3408(105, 74, 3483, bitconfig_8590);
+				ivar4 = 69206170;
+				ivar9 = 69206172;
+				ivar7 = 69206171;
+				ivar10 = 69206168;
+				setScriptCallOnClickContextMenu(3976, bitconfig_8590, 4, -2147483644, "iii", new WidgetPointer(ivar10));
+				break;
+			case 4:
+				ivar1 = bitconfig_8591;
+				ivar0 = cs2method_3408(105, 74, 3483, bitconfig_8591);
+				ivar4 = 69206175;
+				ivar9 = 69206177;
+				ivar7 = 69206176;
+				ivar10 = 69206173;
+				setScriptCallOnClickContextMenu(3976, bitconfig_8591, 5, -2147483644, "iii", new WidgetPointer(ivar10));
+				break;
+			case 5:
+				ivar1 = bitconfig_8592;
+				ivar0 = cs2method_3408(105, 74, 3483, bitconfig_8592);
+				ivar4 = 69206181;
+				ivar9 = 69206183;
+				ivar7 = 69206182;
+				ivar10 = 69206178;
+				setScriptCallOnClickContextMenu(3976, bitconfig_8592, 6, -2147483644, "iii", new WidgetPointer(ivar10));
+		}
+		svar0 = " -" + "<br>";
+		svar0 = concat(getOtherCommonData(ivar0, 1266), svar0);
+		svar0 = concat(svar0, getOtherCommonData(ivar0, 1273));
+		if ((bitconfig_4895 == 3) && ((standart_config_281 < 1000) || (bitconfig_6494 < 5))) {
+			svar0 = getOtherCommonData(ivar0, 1266);
+		}
+		if (((boolean)script_3999(ivar1))) {
+			setScriptCallOnMouseOver(3981, new WidgetPointer(ivar10), svar0, "Is", new WidgetPointer(ivar10));
+		} else {
+			setScriptCallOnMouseOver(-1, "", new WidgetPointer(ivar10));
+		}
+		ivar12 = add(ivar2, 1);
+		if ((bitconfig_8577 == ivar12) && ((boolean)script_3999(bitconfig_8576))) {
+			ivar0 = cs2method_3408(105, 74, 3483, bitconfig_8576);
+			setScriptCallOnClickContextMenu(3976, bitconfig_8576, ivar12, -2147483644, "iii", new WidgetPointer(ivar10));
+			if (((boolean)script_3999(ivar1))) {
+				setScriptCallOnMouseOver(3981, new WidgetPointer(ivar10), svar0, "Is", new WidgetPointer(ivar10));
+			} else {
+				setScriptCallOnMouseOver(-1, "", new WidgetPointer(ivar10));
+			}
+		}
+		if (ivar0 != -1) {
+			ivar8 = cs2method_3408(105, 100, 3492, getOtherCommonData(ivar0, 1272));
+			if (((boolean)script_3996(ivar1)) && ((boolean)script_3999(ivar1))) {
+				ivar8 = 4346;
+			}
+			setWidgetSprite(ivar8, new WidgetPointer(ivar9));
+			ivar5 = getOtherCommonData(ivar0, 1293);
+			if ((ivar5 != 0) && (ivar5 != 63)) {
+				ivar6 = 4272;
+			} else {
+				ivar6 = -1;
+			}
+			setWidgetSprite(ivar6, new WidgetPointer(ivar7));
+			if (getOtherCommonData(ivar0, 1270) != 4094) {
+				ivar3 = getOtherCommonData(cs2method_3408(105, 74, 2252, getOtherCommonData(ivar0, 1270)), 952);
+			} else {
+				ivar3 = getOtherCommonData(ivar0, 1271);
+			}
+			setWidgetSprite(ivar3, new WidgetPointer(ivar4));
+			if (((ivar0 == 1645) || (ivar0 == 1642)) || (ivar0 == 1643)) {
+				setWidgetContextMenuOption(1, new WidgetPointer(ivar10), "");
+				setWidgetContextMenuOption(2, new WidgetPointer(ivar10), "");
+			} else {
+				setWidgetContextMenuOption(1, new WidgetPointer(ivar10), "Summary");
+				setWidgetContextMenuOption(2, new WidgetPointer(ivar10), "Pin/Unpin Task");
+			}
+			if (standart_config_281 < 1000) {
+				setWidgetContextMenuOption(2, new WidgetPointer(ivar10), "");
+			}
+		}
+		ivar2 = add(ivar2, 1);
+	}
+	setWidgetIsHidden(false, new WidgetPointer(1056,111));
+	setWidgetIsHidden(false, new WidgetPointer(1056,112));
+	if (bitconfig_8575 == 61) {
+		setWidgetText(new WidgetPointer(1056,110), "Quest Area");
+		setWidgetIsHidden(true, new WidgetPointer(1056,111));
+		setWidgetIsHidden(true, new WidgetPointer(1056,112));
+	} else if (((boolean)bitconfig_9030)) {
+		setWidgetText(new WidgetPointer(1056,110), "Introductory Tasks");
+	} else {
+		setWidgetText(new WidgetPointer(1056,110), cs2method_3408(105, 115, 3487, bitconfig_8575));
+	}
+	script_3975();
+	return;
+}

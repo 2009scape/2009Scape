@@ -1,0 +1,8 @@
+void script_910() {
+	if (((boolean)globalint_116) || ((boolean)globalint_117)) {
+		setWidgetBorderThickness(2, new WidgetPointer(716,31));
+	} else {
+		setWidgetBorderThickness(0, new WidgetPointer(716,31));
+	}
+	return;
+}

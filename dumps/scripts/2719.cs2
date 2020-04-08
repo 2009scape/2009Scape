@@ -1,0 +1,7 @@
+void script_2719(int arg0,int arg1) {
+	setWidgetPosition(getWidgetActualX(new WidgetPointer(arg0)), 46, 0, 0, new WidgetPointer(arg0));
+	setWidgetSize(464, 255, 0, 0, new WidgetPointer(arg0));
+	setWidgetPosition(474, 46, 0, 0, new WidgetPointer(arg1));
+	setWidgetSize(16, 255, 0, 0, new WidgetPointer(arg1));
+	return;
+}

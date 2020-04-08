@@ -1,0 +1,26 @@
+void script_309(int arg0,int arg1,int arg2) {
+	int ivar3;
+	ivar3 = 0;
+	if ((globalint_623 != -1) && (getDungeonmap(globalint_623) == arg0)) {
+		ivar3 = script_292(globalint_624, arg1, arg2, ivar3);
+	}
+	if ((globalint_625 != -1) && (getDungeonmap(globalint_625) == arg0)) {
+		ivar3 = script_292(globalint_626, arg1, arg2, ivar3);
+	}
+	if ((globalint_627 != -1) && (getDungeonmap(globalint_627) == arg0)) {
+		ivar3 = script_292(globalint_628, arg1, arg2, ivar3);
+	}
+	if ((globalint_629 != -1) && (getDungeonmap(globalint_629) == arg0)) {
+		ivar3 = script_292(globalint_630, arg1, arg2, ivar3);
+	}
+	if ((standart_config_1159 != -1) && (getDungeonmap(standart_config_1159) == arg0)) {
+		ivar3 = script_292(972, arg1, arg2, ivar3);
+	}
+	if ((globalint_940 != -1) && (getDungeonmap(globalint_940) == arg0)) {
+		ivar3 = script_292(globalint_941, arg1, arg2, ivar3);
+	}
+	if ((globalint_674 != -1) && (getDungeonmap(globalint_674) == arg0)) {
+		ivar3 = script_292(280, arg1, arg2, ivar3);
+	}
+	return;
+}

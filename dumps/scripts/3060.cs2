@@ -1,0 +1,73 @@
+void script_3060(int arg0) {
+	int stack_dump0;
+	if (((int)cs2method_3408(105, 73, 941, arg0)) == -1) {
+		return;
+	}
+	if (isWidgetHidden(cs2method_3408(105, 73, 941, arg0))) {
+		return;
+	}
+	setWidgetIsHidden(true, cs2method_3408(105, 73, 941, 0));
+	setWidgetIsHidden(true, cs2method_3408(105, 73, 941, 1));
+	setWidgetIsHidden(true, cs2method_3408(105, 73, 941, 2));
+	setWidgetIsHidden(true, cs2method_3408(105, 73, 941, 5));
+	setWidgetIsHidden(true, cs2method_3408(105, 73, 941, 3));
+	setWidgetIsHidden(true, cs2method_3408(105, 73, 941, 4));
+	setWidgetRGB(new Color(235, 224, 188), new WidgetPointer(906,216));
+	setWidgetRGB(new Color(235, 224, 188), new WidgetPointer(906,213));
+	setWidgetRGB(new Color(235, 224, 188), new WidgetPointer(906,211));
+	setWidgetRGB(new Color(235, 224, 188), new WidgetPointer(906,209));
+	setWidgetRGB(new Color(235, 224, 188), new WidgetPointer(906,266));
+	setWidgetRGB(new Color(235, 224, 188), new WidgetPointer(906,207));
+	setWidgetSprite(4672, new WidgetPointer(906,215));
+	setWidgetSprite(4672, new WidgetPointer(906,22));
+	setWidgetSprite(4672, new WidgetPointer(906,21));
+	setWidgetSprite(4672, new WidgetPointer(906,20));
+	setWidgetSprite(4672, new WidgetPointer(906,265));
+	setWidgetSprite(4672, new WidgetPointer(906,19));
+	setScriptCallOnMouseEntered(45, new WidgetPointer(906,216), 16448250, "Ii", new WidgetPointer(906,199));
+	setScriptCallOnMouseEntered(45, new WidgetPointer(906,213), 16448250, "Ii", new WidgetPointer(906,200));
+	setScriptCallOnMouseEntered(45, new WidgetPointer(906,211), 16448250, "Ii", new WidgetPointer(906,201));
+	setScriptCallOnMouseEntered(45, new WidgetPointer(906,209), 16448250, "Ii", new WidgetPointer(906,203));
+	setScriptCallOnMouseEntered(45, new WidgetPointer(906,266), 16448250, "Ii", new WidgetPointer(906,202));
+	setScriptCallOnMouseEntered(45, new WidgetPointer(906,207), 16448250, "Ii", new WidgetPointer(906,204));
+	setScriptCallOnMouseExit(45, new WidgetPointer(906,216), 15458492, "Ii", new WidgetPointer(906,199));
+	setScriptCallOnMouseExit(45, new WidgetPointer(906,213), 15458492, "Ii", new WidgetPointer(906,200));
+	setScriptCallOnMouseExit(45, new WidgetPointer(906,211), 15458492, "Ii", new WidgetPointer(906,201));
+	setScriptCallOnMouseExit(45, new WidgetPointer(906,209), 15458492, "Ii", new WidgetPointer(906,203));
+	setScriptCallOnMouseExit(45, new WidgetPointer(906,266), 15458492, "Ii", new WidgetPointer(906,202));
+	setScriptCallOnMouseExit(45, new WidgetPointer(906,207), 15458492, "Ii", new WidgetPointer(906,204));
+	if (arg0 != 5) {
+		script_3161(0);
+	}
+	if (arg0 != 3) {
+		script_4556(0);
+	}
+	if (((boolean)arg0)) {
+		setWidgetPosition(0, 3, 1, 2, new WidgetPointer(906,28));
+		setWidgetSize(655, 26, 0, 1, new WidgetPointer(906,27));
+		stack_dump0 = 1;
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: Unknown special opcode:6509
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeSpecialCall(FlowBlocksGenerator.java:348)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:249)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+				at tests.Main.main(Main.java:45)
+			
+		 */
+	}
+	setWidgetPosition(0, 241, 1, 1, new WidgetPointer(906,28));
+	setWidgetSize(655, 477, 0, 0, new WidgetPointer(906,27));
+	stack_dump0 = 0;
+	/* 
+		mgi.tools.jagdecs2.DecompilerException: Unknown special opcode:6509
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeSpecialCall(FlowBlocksGenerator.java:348)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:249)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+			at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+			at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+			at tests.Main.main(Main.java:45)
+		
+	 */
+}

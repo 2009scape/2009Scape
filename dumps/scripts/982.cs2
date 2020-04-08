@@ -1,0 +1,780 @@
+cs2func_script_982_struct(2,2,0) script_982(int arg0,int arg1) {
+	switch (arg0) {
+		flow_1:
+			case 0:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_982_struct(1, 1205, "Bronze dagger", "You can now wield " + "<col=000080>" + "bronze daggers" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_982_struct(1, 1351, "Bronze hatchet", "You can now wield " + "<col=000080>" + "bronze hatchets" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_982_struct(1, 1422, "Bronze mace", "You can now wield " + "<col=000080>" + "bronze maces" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_982_struct(1, 3095, "Members: Bronze claws", "Members can now wield " + "<col=000080>" + "bronze claws" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_982_struct(1, 1277, "Bronze sword", "You can now wield " + "<col=000080>" + "bronze swords" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_982_struct(1, 1291, "Bronze longsword", "You can now wield " + "<col=000080>" + "bronze longswords" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_982_struct(1, 1321, "Bronze scimitar", "You can now wield " + "<col=000080>" + "bronze scimitars" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_982_struct(1, 1237, "Members: Bronze spear", "Members can now wield " + "<col=000080>" + "bronze spears" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_982_struct(1, 1337, "Bronze warhammer", "You can now wield " + "<col=000080>" + "bronze warhammers" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_982_struct(1, 1375, "Bronze battleaxe", "You can now wield " + "<col=000080>" + "bronze battleaxes" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_982_struct(1, 1307, "Bronze two-handed sword", "You can now wield " + "<col=000080>" + "bronze two-handed swords" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_982_struct(1, 3190, "Members: Bronze halberd", "Members can now wield " + "<col=000080>" + "bronze halberds" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_982_struct(1, 8844, "Members: Bronze defender", "Members can now wield " + "<col=000080>" + "bronze defenders" + "</col>" + ".");
+			}
+			break;
+			case 1:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_982_struct(1, 1203, "Iron dagger", "You can now wield " + "<col=000080>" + "iron daggers" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_982_struct(1, 1349, "Iron hatchet", "You can now wield " + "<col=000080>" + "iron hatchets" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_982_struct(1, 1420, "Iron mace", "You can now wield " + "<col=000080>" + "iron maces" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_982_struct(1, 3096, "Members: Iron claws", "Members can now wield " + "<col=000080>" + "iron claws" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_982_struct(1, 1279, "Iron sword", "You can now wield " + "<col=000080>" + "iron swords" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_982_struct(1, 1293, "Iron longsword", "You can now wield " + "<col=000080>" + "iron longswords" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_982_struct(1, 1323, "Iron scimitar", "You can now wield " + "<col=000080>" + "iron scimitars" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_982_struct(1, 20533, "Members: Iron Ceremonial Sword", "Members can now wield " + "<col=000080>" + "iron ceremonial swords" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_982_struct(1, 1239, "Members: Iron spear", "Members can now wield " + "<col=000080>" + "iron spears" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_982_struct(1, 1335, "Iron warhammer", "You can now wield " + "<col=000080>" + "iron warhammers" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_982_struct(1, 1363, "Iron battleaxe", "You can now wield " + "<col=000080>" + "iron battleaxes" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_982_struct(1, 1309, "Iron two-handed sword", "You can now wield " + "<col=000080>" + "iron two-handed swords" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_982_struct(1, 3192, "Members: Iron halberd", "Members can now wield " + "<col=000080>" + "iron halberds" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_982_struct(1, 8845, "Members: Iron defender", "Members can now wield " + "<col=000080>" + "iron defenders" + "</col>" + ".");
+			}
+			break;
+			case 2:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_982_struct(5, 1207, "Steel dagger", "You can now wield " + "<col=000080>" + "steel daggers" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_982_struct(5, 1353, "Steel hatchet", "You can now wield " + "<col=000080>" + "steel hatchets" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_982_struct(5, 1424, "Steel mace", "You can now wield " + "<col=000080>" + "steel maces" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_982_struct(5, 3097, "Members: Steel claws", "Members can now wield " + "<col=000080>" + "steel claws" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_982_struct(5, 1281, "Steel sword", "You can now wield " + "<col=000080>" + "steel swords" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_982_struct(5, 1295, "Steel longsword", "You can now wield " + "<col=000080>" + "steel longswords" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_982_struct(5, 1325, "Steel scimitar", "You can now wield " + "<col=000080>" + "steel scimitars" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_982_struct(5, 20538, "Members: Steel Ceremonial Sword", "Members can now wield " + "<col=000080>" + "steel ceremonial swords" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_982_struct(5, 1241, "Members: Steel spear", "Members can now wield " + "<col=000080>" + "steel spears" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_982_struct(5, 1339, "Steel warhammer", "You can now wield " + "<col=000080>" + "steel warhammers" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_982_struct(5, 1365, "Steel battleaxe", "You can now wield " + "<col=000080>" + "steel battleaxes" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_982_struct(5, 1311, "Steel two-handed sword", "You can now wield " + "<col=000080>" + "steel two-handed swords" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_982_struct(5, 3194, "Members: Steel halberd", "Members can now wield " + "<col=000080>" + "steel halberds" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_982_struct(5, 8846, "Members: Steel defender" + "<br>" + " (with 5 Defence)", "Members now have the Attack level required to wield " + "<col=000080>" + "steel defenders" + "</col>" + ". (They also need level 5 Defence.)");
+			}
+			break;
+			case 3:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_982_struct(10, 1217, "Black dagger", "You can now wield " + "<col=000080>" + "black daggers" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_982_struct(10, 1361, "Black hatchet", "You can now wield " + "<col=000080>" + "black hatchets" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_982_struct(10, 1426, "Black mace", "You can now wield " + "<col=000080>" + "black maces" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_982_struct(10, 3098, "Members: Black claws", "Members can now wield " + "<col=000080>" + "black claws" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_982_struct(10, 1283, "Black sword", "You can now wield " + "<col=000080>" + "black swords" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_982_struct(10, 1297, "Black longsword", "You can now wield " + "<col=000080>" + "black longswords" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_982_struct(10, 1327, "Black scimitar", "You can now wield " + "<col=000080>" + "black scimitars" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_982_struct(10, 4580, "Members: Black spear", "Members can now wield " + "<col=000080>" + "black spears" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_982_struct(10, 1341, "Black warhammer", "You can now wield " + "<col=000080>" + "black warhammers" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_982_struct(10, 1367, "Black battleaxe", "You can now wield " + "<col=000080>" + "black battleaxes" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_982_struct(10, 1313, "Black two-handed sword", "You can now wield " + "<col=000080>" + "black two-handed swords" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_982_struct(10, 3196, "Members: Black halberd", "Members can now wield " + "<col=000080>" + "black halberds" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_982_struct(10, 8847, "Members: Black defender" + "<br>" + " (with 10 Defence)", "Members now have the Attack level required to wield " + "<col=000080>" + "black defenders" + "</col>" + ". (They also need level 10 Defence.)");
+			}
+			break;
+			case 4:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_982_struct(-1, 7620, "To wield any white equipment, you must have completed Wanted!.", "");
+				case 1:
+					return newstruct cs2func_script_982_struct(10, 6591, "Members: White dagger", "Members can now wield " + "<col=000080>" + "white daggers" + "</col>" + " (after finishing Wanted!).");
+				case 2:
+					return newstruct cs2func_script_982_struct(10, 6601, "Members: White mace", "Members can now wield " + "<col=000080>" + "white maces" + "</col>" + " (after finishing Wanted!).");
+				case 3:
+					return newstruct cs2func_script_982_struct(10, 6587, "Members: White claws", "Members can now wield " + "<col=000080>" + "white claws" + "</col>" + " (after finishing Wanted!).");
+				case 4:
+					return newstruct cs2func_script_982_struct(10, 6605, "Members: White sword", "Members can now wield " + "<col=000080>" + "white swords" + "</col>" + " (after finishing Wanted!).");
+				case 5:
+					return newstruct cs2func_script_982_struct(10, 6607, "Members: White longsword", "Members can now wield " + "<col=000080>" + "white longswords" + "</col>" + " (after finishing Wanted!).");
+				case 6:
+					return newstruct cs2func_script_982_struct(10, 6611, "Members: White scimitar", "Members can now wield " + "<col=000080>" + "white scimitars" + "</col>" + " (after finishing Wanted!).");
+				case 7:
+					return newstruct cs2func_script_982_struct(10, 6613, "Members: White warhammer", "Members can now wield " + "<col=000080>" + "white warhammers" + "</col>" + " (after finishing Wanted!).");
+				case 8:
+					return newstruct cs2func_script_982_struct(10, 6589, "Members: White battleaxe", "Members can now wield " + "<col=000080>" + "white battleaxes" + "</col>" + " (after finishing Wanted!).");
+				case 9:
+					return newstruct cs2func_script_982_struct(10, 6609, "Members: White two-handed sword", "Members can now wield " + "<col=000080>" + "white two-handed swords" + "</col>" + " (after finishing Wanted!).");
+				case 10:
+					return newstruct cs2func_script_982_struct(10, 6599, "Members: White halberd", "Members can now wield " + "<col=000080>" + "white halberds" + "</col>" + " (after finishing Wanted!).");
+			}
+			break;
+			case 5:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_982_struct(20, 1209, "Mithril dagger", "You can now wield mithril daggers" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_982_struct(20, 1355, "Mithril hatchet", "You can now wield mithril hatchets" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_982_struct(20, 1428, "Mithril mace", "You can now wield mithril maces" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_982_struct(20, 3099, "Members: Mithril claws", "Members can now wield mithril claws" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_982_struct(20, 1285, "Mithril sword", "You can now wield mithril swords" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_982_struct(20, 1299, "Mithril longsword", "You can now wield mithril longswords" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_982_struct(20, 1329, "Mithril scimitar", "You can now wield mithril scimitars" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_982_struct(20, 20543, "Members: Mithril Ceremonial Sword", "Members can now wield " + "<col=000080>" + "mithril ceremonial swords" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_982_struct(20, 1243, "Members: Mithril spear", "Members can now wield mithril spears" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_982_struct(20, 1343, "Mithril warhammer", "You can now wield mithril warhammers" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_982_struct(20, 1369, "Mithril battleaxe", "You can now wield mithril battleaxes" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_982_struct(20, 1315, "Mithril two-handed sword", "You can now wield mithril two-handed swords" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_982_struct(20, 3198, "Members: Mithril halberd", "Members can now wield mithril halberds" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_982_struct(20, 8848, "Members: Mithril defender" + "<br>" + " (with 20 Defence)", "Members now have the Attack level required to wield mithril defenders" + "</col>" + ". (They also need level 20 Defence.)");
+			}
+			break;
+			case 6:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_982_struct(30, 1211, "Adamant dagger", "You can now wield " + "<col=000080>" + "adamant daggers" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_982_struct(30, 1357, "Adamant hatchet", "You can now wield " + "<col=000080>" + "adamant hatchets" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_982_struct(30, 1430, "Adamant mace", "You can now wield " + "<col=000080>" + "adamant maces" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_982_struct(30, 3100, "Members: Adamant claws", "Members can now wield " + "<col=000080>" + "adamant claws" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_982_struct(30, 1287, "Adamant sword", "You can now wield " + "<col=000080>" + "adamant swords" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_982_struct(30, 1301, "Adamant longsword", "You can now wield " + "<col=000080>" + "adamant longswords" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_982_struct(30, 1331, "Adamant scimitar", "You can now wield " + "<col=000080>" + "adamant scimitars" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_982_struct(30, 20548, "Members: Adamant Ceremonial Sword", "Members can now wield " + "<col=000080>" + "adamant ceremonial swords" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_982_struct(30, 1245, "Members: Adamant spear", "Members can now wield " + "<col=000080>" + "adamant spears" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_982_struct(30, 1345, "Adamant warhammer", "You can now wield " + "<col=000080>" + "adamant warhammers" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_982_struct(30, 1371, "Adamant battleaxe", "You can now wield " + "<col=000080>" + "adamant battleaxes" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_982_struct(30, 1317, "Adamant two-handed sword", "You can now wield " + "<col=000080>" + "adamant two-handed swords" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_982_struct(30, 3200, "Members: Adamant halberd", "Members can now wield " + "<col=000080>" + "adamant halberds" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_982_struct(30, 8849, "Members: Adamant defender" + "<br>" + " (with 30 Defence)", "Members now have the Attack level required to wield " + "<col=000080>" + "adamant defenders" + "</col>" + ". (They also need level 30 Defence.)");
+			}
+			break;
+			case 7:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_982_struct(40, 1213, "Rune dagger", "You can now wield " + "<col=000080>" + "rune daggers" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_982_struct(40, 1359, "Rune hatchet", "You can now wield " + "<col=000080>" + "rune hatchets" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_982_struct(40, 1432, "Rune mace", "You can now wield " + "<col=000080>" + "rune maces" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_982_struct(40, 3101, "Members: Rune claws", "Members can now wield " + "<col=000080>" + "rune claws" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_982_struct(40, 1289, "Rune sword", "You can now wield " + "<col=000080>" + "rune swords" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_982_struct(40, 1303, "Rune longsword", "You can now wield " + "<col=000080>" + "rune longswords" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_982_struct(40, 1333, "Rune scimitar", "You can now wield " + "<col=000080>" + "rune scimitars" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_982_struct(40, 20553, "Members: Rune Ceremonial Sword", "Members can now wield " + "<col=000080>" + "rune ceremonial swords" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_982_struct(40, 1247, "Members: Rune spear", "Members can now wield " + "<col=000080>" + "rune spears" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_982_struct(40, 1347, "Rune warhammer", "You can now wield " + "<col=000080>" + "rune warhammers" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_982_struct(40, 1373, "Rune battleaxe", "You can now wield " + "<col=000080>" + "rune battleaxes" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_982_struct(40, 1319, "Rune two-handed sword", "You can now wield " + "<col=000080>" + "rune two-handed swords" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_982_struct(40, 3202, "Members: Rune halberd", "Members can now wield " + "<col=000080>" + "rune halberds" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_982_struct(40, 8850, "Members: Rune defender" + "<br>" + " (with 40 Defence)", "Members now have the Attack level required to wield " + "<col=000080>" + "rune defenders" + "</col>" + ". (They also need level 40 Defence.)");
+			}
+			break;
+			case 8:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_982_struct(60, 1215, "Members: Dragon dagger" + "<br>" + " (after Lost City)", "Members can now wield " + "<col=000080>" + "dragon daggers" + "</col>" + " (after Lost City).");
+				case 1:
+					return newstruct cs2func_script_982_struct(60, 6739, "Members: Dragon hatchet", "Members can now wield " + "<col=000080>" + "dragon hatchets" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_982_struct(60, 1434, "Members: Dragon mace" + "<br>" + " (after Heroes' Quest)", "Members can now wield " + "<col=000080>" + "dragon maces" + "</col>" + " (after Heroes' Quest).");
+				case 3:
+					return newstruct cs2func_script_982_struct(60, 14484, "Members: Dragon claws", "Members can now wield " + "<col=000080>" + "dragon claws" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_982_struct(60, 1305, "Members: Dragon longsword" + "<br>" + " (after Lost City)", "Members can now wield " + "<col=000080>" + "dragon longswords" + "</col>" + " (after Lost City).");
+				case 5:
+					return newstruct cs2func_script_982_struct(60, 4587, "Members: Dragon scimitar" + "<br>" + " (after Monkey Madness)", "Members can now wield " + "<col=000080>" + "dragon scimitars" + "</col>" + " (after Monkey Madness).");
+				case 6:
+					return newstruct cs2func_script_982_struct(60, 1249, "Members: Dragon spear", "Members can now wield " + "<col=000080>" + "dragon spears" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_982_struct(60, 1377, "Members: Dragon battleaxe" + "<br>" + " (after Heroes' Quest)", "Members can now wield " + "<col=000080>" + "dragon battleaxes" + "</col>" + " (after Heroes' Quest).");
+				case 8:
+					return newstruct cs2func_script_982_struct(60, 7158, "Members: Dragon two-handed sword", "Members can now wield " + "<col=000080>" + "dragon two-handed swords" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_982_struct(60, 3204, "Members: Dragon halberd" + "<br>" + " (after Regicide)", "Members can now wield " + "<col=000080>" + "dragon halberds" + "</col>" + " (after Regicide).");
+				case 10:
+					return newstruct cs2func_script_982_struct(60, 15259, "Members: Dragon pickaxe", "Members can now wield " + "<col=000080>" + "dragon pickaxes" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_982_struct(60, 20072, "Members: Dragon defender" + "<br>" + " (with 60 Defence)", "Members now have the Attack level required to wield " + "<col=000080>" + "dragon defenders" + "</col>" + ". (They also need level 60 Defence.)");
+				case 12:
+					return newstruct cs2func_script_982_struct(60, 13976, "Corrupt dragon dagger", "You can now wield " + "<col=000080>" + "corrupt dragon daggers" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_982_struct(60, 13985, "Corrupt dragon mace", "You can now wield " + "<col=000080>" + "corrupt dragon maces" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_982_struct(60, 13982, "Corrupt dragon longsword", "You can now wield " + "<col=000080>" + "corrupt dragon longswords" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_982_struct(60, 13979, "Corrupt dragon scimitar", "You can now wield " + "<col=000080>" + "corrupt dragon scimitars" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_982_struct(60, 13988, "Corrupt dragon spear", "You can now wield " + "<col=000080>" + "corrupt dragon spears" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_982_struct(60, 13973, "Corrupt dragon battleaxe", "You can now wield " + "<col=000080>" + "corrupt dragon battleaxes" + "</col>" + ".");
+			}
+			break;
+			case 9:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_982_struct(70, 4710, "Members: Ahrim's staff" + "<br>" + " (with 70 Magic)", "Members now have the Attack level required to wield " + "<col=000080>" + "Ahrim's staff" + "</col>" + ". (They also need level 70 Magic.)");
+				case 1:
+					return newstruct cs2func_script_982_struct(70, 4718, "Members: Dharok's greataxe" + "<br>" + " (with 70 Strength)", "Members now have the Attack level required to wield " + "<col=000080>" + "Dharok's greataxe" + "</col>" + ". (They also need level 70 Strength.)");
+				case 2:
+					return newstruct cs2func_script_982_struct(70, 4726, "Members: Guthan's spear", "Members can now wield " + "<col=000080>" + "Guthan's spear" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_982_struct(70, 4747, "Members: Torag's hammers" + "<br>" + " (with 70 Strength)", "Members now have the Attack level required to wield " + "<col=000080>" + "Torag's hammers" + "</col>" + ". (They also need level 70 Strength.)");
+				case 4:
+					return newstruct cs2func_script_982_struct(70, 4755, "Members: Verac's flail", "Members can now wield " + "<col=000080>" + "Verac's flail" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_982_struct(70, 21744, "Members: Akrisae's war mace" + "<br>" + " (After Ritual of the Mahjarrat and with level 70 Magic and 70 Prayer)", "Members now have the Attack level required to wield " + "<col=000080>" + "Akrisae's war mace" + "</col>" + " (after Ritual of the Mahjarrat and with 70 Magic and 70 Prayer).");
+			}
+			break;
+			case 10:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_982_struct(1, 21340, "Members: Dwarven Army Axe", "Members can now wield a " + "<col=000080>" + "Dwarven Army Axe" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_982_struct(1, 15596, "Reese's sword" + "<br>" + " (after The Blood Pact)", "You can now wield " + "<col=000080>" + "Reese's sword" + "</col>" + " (after starting The Blood Pact).");
+				case 2:
+					return newstruct cs2func_script_982_struct(1, 2402, "Silverlight" + "<br>" + " (after Demon Slayer)", "You can now wield " + "<col=000080>" + "Silverlight" + "</col>" + " (after starting Demon Slayer).");
+				case 3:
+					return newstruct cs2func_script_982_struct(1, 6746, "Members: Darklight" + "<br>" + " (after Shadow of the Storm)", "Members can now wield " + "<col=000080>" + "Darklight" + "</col>" + " (after Shadow of the Storm).");
+				case 4:
+					return newstruct cs2func_script_982_struct(1, 2952, "Members: Wolfbane Dagger" + "<br>" + " (after Priest in Peril)", "Members can now wield the " + "<col=000080>" + "Wolfbane Dagger" + "</col>" + " (after Priest in Peril.");
+				case 5:
+					return newstruct cs2func_script_982_struct(1, 746, "Members: Dark Dagger", "Members can now wield the " + "<col=000080>" + "Dark Dagger" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_982_struct(1, 667, "Faladian/Blurite Sword" + "<br>" + " (after starting The Knight's Sword)", "You can now wield the " + "<col=000080>" + "Faladian/Blurite Sword" + "</col>" + " (after starting The Knight's Sword).");
+				case 7:
+					return newstruct cs2func_script_982_struct(1, 10858, "Members: Shadow Sword", "Members can now wield the " + "<col=000080>" + "Shadow Sword" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_982_struct(1, 5016, "Members: Bone spear", "Members can now wield " + "<col=000080>" + "bone spears" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_982_struct(1, 5018, "Members: Bone club", "Members can now wield " + "<col=000080>" + "bone clubs" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_982_struct(1, 8872, "Members: Bone dagger", "Members can now wield " + "<col=000080>" + "bone daggers" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_982_struct(1, 6760, "Members: Guthix Mjolnir" + "<br>" + " (after Making History)", "Members can now wield the " + "<col=000080>" + "Guthix Mjolnir" + "</col>" + " (after Making History).");
+				case 12:
+					return newstruct cs2func_script_982_struct(1, 6762, "Members: Saradomin Mjolnir" + "<br>" + " (after Making History)", "Members can now wield the " + "<col=000080>" + "Saradomin Mjolnir" + "</col>" + " after completing Making History.");
+				case 13:
+					return newstruct cs2func_script_982_struct(1, 6764, "Members: Zamorak Mjolnir" + "<br>" + " (after Making History)", "Members can now wield the " + "<col=000080>" + "Zamorak Mjolnir" + "</col>" + " (after Making History).");
+				case 14:
+					return newstruct cs2func_script_982_struct(1, 7668, "Members: Gadderhammer" + "<br>" + " (after starting In Aid of the Myreque)", "Members can now wield the " + "<col=000080>" + "Gadderhammer" + "</col>" + " (after starting In Aid of the Myreque).");
+				case 15:
+					return newstruct cs2func_script_982_struct(1, 10491, "Members: Blessed Axe" + "<br>" + " (after starting Animal Magnetism)", "Members can now wield the " + "<col=000080>" + "Blessed Axe" + "</col>" + " (after starting Animal Magnetism).");
+				case 16:
+					return newstruct cs2func_script_982_struct(1, 13661, "Members: Inferno Adze" + "<br>" + " (after All Fired Up and with 92 Firemaking)", "Members can now wield the " + "<col=000080>" + "Inferno Adze" + "</col>" + " (after All Fired Up).");
+				case 17:
+					return newstruct cs2func_script_982_struct(5, 4068, "Members: Basic decorative sword", "Members can now wield " + "<col=000080>" + "basic decorative swords" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_982_struct(5, 12570, "Members: Ogre club", "Members can now wield " + "<col=000080>" + "ogre clubs" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_982_struct(15, 11061, "Members: Ancient Mace" + "<br>" + " (after Another Slice of H.A.M. and with 25 Prayer)", "Members now have the Attack level required to wield the " + "<col=000080>" + "Ancient Mace" + "</col>" + " (after Another Slice of H.A.M. and with level 25 Prayer).");
+				case 20:
+					return newstruct cs2func_script_982_struct(20, 35, "Members: Excalibur" + "<br>" + " (after starting Merlin's Crystal)", "Members can now wield " + "<col=000080>" + "Excalibur" + "</col>" + " (after starting Merlin's Crystal).");
+				case 21:
+					return newstruct cs2func_script_982_struct(20, 4503, "Members: Detailed decorative sword", "Members can now wield " + "<col=000080>" + "detailed decorative swords" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_982_struct(20, 13926, "Members: Corrupt Statius's warhammer", "Members now have the Attack level required to wield " + "<col=000080>" + "corrupt Statius's warhammer" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_982_struct(20, 13923, "Members: Corrupt Vesta's longsword", "Members now have the Attack level required to wield " + "<col=000080>" + "corrupt Vesta's longsword" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_982_struct(20, 13929, "Members: Corrupt Vesta's spear", "Members now have the Attack level required to wield " + "<col=000080>" + "corrupt Vesta's spear" + "</col>" + ".");
+				case 25:
+					return newstruct cs2func_script_982_struct(20, 13941, "Members: Corrupt Zuriel's staff" + "<br>" + " (with 20 Magic)", "Members now have the Attack level required to wield " + "<col=000080>" + "corrupt Zuriel's staff" + "</col>" + " (with level 20 Magic).");
+				case 26:
+					return newstruct cs2func_script_982_struct(30, 1397, "Members: Air battlestaff" + "<br>" + " (with 30 Magic)", "Members now have the Attack level required to wield " + "<col=000080>" + "air battlestaves" + "</col>" + ". (They also need level 30 Magic.)");
+				case 27:
+					return newstruct cs2func_script_982_struct(30, 1399, "Members: Earth battlestaff" + "<br>" + " (with 30 Magic)", "Members now have the Attack level required to wield " + "<col=000080>" + "earth battlestaves" + "</col>" + ". (They also need level 30 Magic.)");
+				case 28:
+					return newstruct cs2func_script_982_struct(30, 1393, "Members: Fire battlestaff" + "<br>" + " (with 30 Magic)", "Members now have the Attack level required to wield " + "<col=000080>" + "fire battlestaves" + "</col>" + ". (They also need level 30 Magic.)");
+				case 29:
+					return newstruct cs2func_script_982_struct(30, 1395, "Members: Water battlestaff" + "<br>" + " (with 30 Magic)", "Members now have the Attack level required to wield " + "<col=000080>" + "water battlestaves" + "</col>" + ". (They also need level 30 Magic.)");
+				case 30:
+					return newstruct cs2func_script_982_struct(30, 3053, "Members: Lava battlestaff" + "<br>" + " (with 30 Magic)", "Members now have the Attack level required to wield " + "<col=000080>" + "lava battlestaves" + "</col>" + ". (They also need level 30 Magic.)");
+				case 31:
+					return newstruct cs2func_script_982_struct(30, 6562, "Members: Mud battlestaff" + "<br>" + " (with 30 Magic)", "Members now have the Attack level required to wield " + "<col=000080>" + "mud battlestaves" + "</col>" + ". (They also need level 30 Magic.)");
+				case 32:
+					return newstruct cs2func_script_982_struct(30, 21502, "Members: Skeletal battlestaves" + "<br>" + " (with 30 Magic)", "Members now have the Attack level required to wield " + "<col=000080>" + "skeletal battlestaves" + "</col>" + ". (They also need level 30 Magic.)");
+				case 33:
+					return newstruct cs2func_script_982_struct(30, 4508, "Members: Intricate decorative sword", "Members can now wield " + "<col=000080>" + "intricate decorative swords" + "</col>" + ".");
+				case 34:
+					return newstruct cs2func_script_982_struct(30, 3757, "Members: Fremennik blade", "Members can now wield " + "<col=000080>" + "Fremennik blades" + "</col>" + ".");
+				case 35:
+					return newstruct cs2func_script_982_struct(30, 21536, "Members: Sceptre of the gods" + "<br>" + " (with 30 Magic)", "Members can now wield " + "<col=000080>" + "the Sceptre of the gods" + "</col>" + ". (They also need level 30 Magic.)");
+				case 36:
+					return newstruct cs2func_script_982_struct(40, 18341, "Nature staff" + "<br>" + " (with 53 Magic and 53 Dungeoneering)", "You can now use " + "<col=000080>" + "nature staves" + "</col>" + ". (You also need level 53 Magic and level 53 Dungeoneering.)");
+				case 37:
+					return newstruct cs2func_script_982_struct(40, 18342, "Law staff" + "<br>" + " (with 45 Magic and 45 Dungeoneering)", "You can now use " + "<col=000080>" + "law staves" + "</col>" + ". (You also need level 45 Magic and level 45 Dungeoneering.)");
+				case 38:
+					return newstruct cs2func_script_982_struct(40, 1405, "Members: Mystic air staff" + "<br>" + " (with 40 Magic)", "Members now have the Attack level required to wield " + "<col=000080>" + "mystic air staves" + "</col>" + ". (They also need level 40 Magic.)");
+				case 39:
+					return newstruct cs2func_script_982_struct(40, 1407, "Members: Mystic earth staff" + "<br>" + " (with 40 Magic)", "Members now have the Attack level required to wield " + "<col=000080>" + "mystic earth staves" + "</col>" + ". (They also need level 40 Magic.)");
+				case 40:
+					return newstruct cs2func_script_982_struct(40, 1401, "Members: Mystic fire staff" + "<br>" + " (with 40 Magic)", "Members now have the Attack level required to wield " + "<col=000080>" + "mystic fire staves" + "</col>" + ". (They also need level 40 Magic.)");
+				case 41:
+					return newstruct cs2func_script_982_struct(40, 1403, "Members: Mystic water staff" + "<br>" + " (with 40 Magic)", "Members now have the Attack level required to wield " + "<col=000080>" + "mystic water staves" + "</col>" + ". (They also need level 40 Magic.)");
+				case 42:
+					return newstruct cs2func_script_982_struct(40, 3054, "Members: Mystic lava staff" + "<br>" + " (with 40 Magic)", "Members now have the Attack level required to wield " + "<col=000080>" + "mystic lava staves" + "</col>" + ". (They also need level 40 Magic.)");
+				case 43:
+					return newstruct cs2func_script_982_struct(40, 6563, "Members: Mystic mud staff" + "<br>" + " (with 40 Magic)", "Members now have the Attack level required to wield " + "<col=000080>" + "mystic mud staves" + "</col>" + ". (They also need level 40 Magic.)");
+				case 44:
+					return newstruct cs2func_script_982_struct(40, 21498, "Members: Necromancer staves" + "<br>" + " (with 40 Magic)", "Members now have the Attack level required to wield " + "<col=000080>" + "necromancer staves" + "</col>" + ". (They also need level 40 Magic.)");
+				case 45:
+					return newstruct cs2func_script_982_struct(40, 11738, "Members: Mystic steam staff" + "<br>" + " (with 40 Magic)", "Members now have the Attack level required to wield " + "<col=000080>" + "mystic steam staves" + "</col>" + ". (They also need level 40 Magic.)");
+				case 46:
+					return newstruct cs2func_script_982_struct(40, 11037, "Members: Brine sabre", "Members can now wield " + "<col=000080>" + "brine sabres" + "</col>" + ".");
+				case 47:
+					return newstruct cs2func_script_982_struct(40, 14097, "Members: Sacred clay sword", "Members can now wield " + "<col=000080>" + "sacred clay swords" + "</col>" + ".");
+				case 48:
+					return newstruct cs2func_script_982_struct(40, 4508, "Members: Profound decorative sword", "Members can now wield " + "<col=000080>" + "profound decorative swords" + "</col>" + ".");
+				case 49:
+					return newstruct cs2func_script_982_struct(40, 19323, "Members: Dragon staff" + "<br>" + " (with 40 Magic, 60 Prayer and 20 Defence)", "Members now have the Attack level required to wield " + "<col=000080>" + "dragon staves" + "</col>" + ". (They also need level 40 Magic, level 60 Prayer and level 20 Defence.)");
+				case 50:
+					return newstruct cs2func_script_982_struct(40, 19325, "Members: Penguin staff" + "<br>" + " (with 40 Magic, 60 Prayer and 20 Defence)", "Members now have the Attack level required to wield " + "<col=000080>" + "penguin staves" + "</col>" + ". (They also need level 40 Magic, level 60 Prayer and level 20 Defence.)");
+				case 51:
+					return newstruct cs2func_script_982_struct(40, 19327, "Members: Bat staff" + "<br>" + " (with 40 Magic, 60 Prayer and 20 Defence)", "Members now have the Attack level required to wield " + "<col=000080>" + "bat staves" + "</col>" + ". (They also need level 40 Magic, level 60 Prayer and level 20 Defence.)");
+				case 52:
+					return newstruct cs2func_script_982_struct(40, 19329, "Members: Wolf staff" + "<br>" + " (with 40 Magic, 60 Prayer and 20 Defence)", "Members now have the Attack level required to wield " + "<col=000080>" + "wolf staves" + "</col>" + ". (They also need level 40 Magic, level 60 Prayer and level 20 Defence.)");
+				case 53:
+					return newstruct cs2func_script_982_struct(40, 19331, "Members: Cat staff" + "<br>" + " (with 40 Magic, 60 Prayer and 20 Defence)", "Members now have the Attack level required to wield " + "<col=000080>" + "cat staves" + "</col>" + ". (They also need level 40 Magic, level 60 Prayer and level 20 Defence.)");
+				case 54:
+					return newstruct cs2func_script_982_struct(40, 21777, "Members: Armadyl battlestaff" + "<br>" + " (with 77 Magic)", "Members now have the Attack level required to wield " + "<col=000080>" + "Armadyl battle staves" + "</col>" + ". (They also need level 77 Magic.)");
+				case 55:
+					return newstruct cs2func_script_982_struct(42, 11665, "Members: Void melee helm", "Members now have the Attack level required to wear " + "<col=000080>" + "Void melee helms" + "</col>" + ".");
+				case 56:
+					return newstruct cs2func_script_982_struct(42, 11664, "Members: Void ranger helm", "Members now have the Attack level required to wear " + "<col=000080>" + "Void ranger helms" + "</col>" + ".");
+				case 57:
+					return newstruct cs2func_script_982_struct(42, 11663, "Members: Void mage helm", "Members now have the Attack level required to wear " + "<col=000080>" + "Void mage helms" + "</col>" + ".");
+				case 58:
+					return newstruct cs2func_script_982_struct(42, 8839, "Members: Void knight top", "Members now have the Attack level required to wear " + "<col=000080>" + "Void knight tops" + "</col>" + ".");
+				case 59:
+					return newstruct cs2func_script_982_struct(42, 8840, "Members: Void knight robe", "Members now have the Attack level required to wear " + "<col=000080>" + "Void knight robes" + "</col>" + ".");
+				case 60:
+					return newstruct cs2func_script_982_struct(42, 8842, "Members: Void knight gloves", "Members now have the Attack level required to wear " + "<col=000080>" + "Void knight gloves" + "</col>" + ".");
+				case 61:
+					return newstruct cs2func_script_982_struct(42, 19712, "Members: Void knight deflector", "Members now have the Attack level required to wear " + "<col=000080>" + "Void knight deflectors" + "</col>" + ".");
+				case 62:
+					return newstruct cs2func_script_982_struct(42, 8841, "Members: Void knight mace", "Members now have the Attack level required to wield " + "<col=000080>" + "Void knight maces" + "</col>" + ".");
+				case 63:
+					return newstruct cs2func_script_982_struct(42, 7620, "Void knight equipment requires 42 Attack, Defence, Strength, Ranged, Magic and Constitution and 22 Prayer.", "<col=000080>" + "Void knight equipment" + "</col>" + " requires 42 Attack, Defence, Strength, Ranged, Magic and Constitution and 22 Prayer.");
+				case 64:
+					return newstruct cs2func_script_982_struct(45, 18365, "Gravite rapier" + "<br>" + " (with 45 Dungeoneering)", "You can now wield " + "<col=000080>" + "gravite rapiers" + "</col>" + ". (You also need level 45 Dungeoneering.)");
+				case 65:
+					return newstruct cs2func_script_982_struct(45, 18367, "Gravite longsword" + "<br>" + " (with 45 Dungeoneering)", "You can now wield " + "<col=000080>" + "gravite longswords" + "</col>" + ". (You also need level 45 Dungeoneering.)");
+				case 66:
+					return newstruct cs2func_script_982_struct(45, 18369, "Gravite two-handed sword" + "<br>" + " (with 45 Dungeoneering)", "You can now wield " + "<col=000080>" + "gravite two-handed swords" + "</col>" + ". (You also need level 45 Dungeoneering.)");
+				case 67:
+					return newstruct cs2func_script_982_struct(50, 4158, "Members: Leaf-bladed spear" + "<br>" + " (with 55 Slayer)", "Members now have the Attack level required to wield " + "<col=000080>" + "leaf-bladed spears" + "</col>" + ": melee weapons used for killing turoth and kurask. (They also need level 55 Slayer.)");
+				case 68:
+					return newstruct cs2func_script_982_struct(50, 4675, "Members: Ancient Staff" + "<br>" + " (after Desert Treasure and with 50 Magic)", "Members now have the Attack level required to wield the " + "<col=000080>" + "Ancient Staff" + "</col>" + " (after Desert Treasure and with level 50 Magic).");
+				case 69:
+					return newstruct cs2func_script_982_struct(50, 1409, "Members: Iban's Staff" + "<br>" + " (after Underground Pass and with 50 Magic)", "Members now have the Attack level required to wield " + "<col=000080>" + "Iban's Staff" + "</col>" + " (after Underground Pass and with level 50 Magic).");
+				case 70:
+					return newstruct cs2func_script_982_struct(50, 4153, "Members: Granite maul" + "<br>" + " (with 50 Strength)", "Members can now wield " + "<col=000080>" + "granite mauls" + "</col>" + ". (They also need level 50 Strength.)");
+				case 71:
+					return newstruct cs2func_script_982_struct(50, 14679, "Members: Granite mace" + "<br>" + " (with 50 Strength)", "Members can now wield " + "<col=000080>" + "granite maces" + "</col>" + ". (They also need level 50 Strength.)");
+				case 72:
+					return newstruct cs2func_script_982_struct(50, 10581, "Members: Keris" + "<br>" + " (after Contact!)", "Members can now wield " + "<col=000080>" + "Keris" + "</col>" + " (after Contact!).");
+				case 73:
+					return newstruct cs2func_script_982_struct(50, 13290, "Members: Leaf-bladed swords" + "<br>" + " (with 55 Slayer)", "Members can now wield " + "<col=000080>" + "leaf-bladed swords" + "</col>" + ". (They also need level 55 Slayer).");
+				case 74:
+					return newstruct cs2func_script_982_struct(60, 10887, "Members: Barrelchest Anchor" + "<br>" + " (after Great Brain Robbery and with 40 Strength)", "Members now have the Attack level required to wield the " + "<col=000080>" + "Barrelchest Anchor" + "</col>" + " (after Great Brain Robbery, with level 40 Strength).");
+				case 75:
+					return newstruct cs2func_script_982_struct(60, 6523, "Members: TokTz-Xil-Ak", "Members can now wield " + "<col=000080>" + "TokTz-Xil-Ak" + "</col>" + ".");
+				case 76:
+					return newstruct cs2func_script_982_struct(60, 6527, "Members: TzHaar-Ket-Em", "Members can now wield " + "<col=000080>" + "TzHaar-Ket-Em" + "</col>" + ".");
+				case 77:
+					return newstruct cs2func_script_982_struct(60, 6525, "Members: TokTz-Xil-Ek", "Members can now wield " + "<col=000080>" + "TokTz-Xil-Ek" + "</col>" + ".");
+				case 78:
+					return newstruct cs2func_script_982_struct(60, 6526, "Members: Toktz-Mej-Tal" + "<br>" + " (with 60 Magic)", "Members now have the Attack level required to wield " + "<col=000080>" + "Toktz-Mej-Tal" + "</col>" + ". (They also need level 60 Magic.)");
+				case 79:
+					return newstruct cs2func_script_982_struct(60, 20671, "Members: Brackish Blade", "Members can now wield " + "<col=000080>" + "Brackish Blades" + "</col>" + ".");
+				case 80:
+					return newstruct cs2func_script_982_struct(62, 19669, "Members: Ring of vigour" + "<br>" + " (with 62 Dungeoneering)", "Members can now wear " + "<col=000080>" + "rings of vigour" + "</col>" + ". (They also need level 62 Dungeoneering.)");
+				case 81:
+					return newstruct cs2func_script_982_struct(70, 4151, "Members: Abyssal whip", "Members can now wield " + "<col=000080>" + "abyssal whips" + "</col>" + ".");
+				case 82:
+					return newstruct cs2func_script_982_struct(70, 15485, "Members: Penance master trident (with 70 Magic)", "Members can now wield " + "<col=000080>" + "penance master tridents" + "</col>" + ". (They also need level 70 Magic.)");
+				case 83:
+					return newstruct cs2func_script_982_struct(70, 11730, "Members: Saradomin sword", "Members can now wield " + "<col=000080>" + "Saradomin swords" + "</col>" + ".");
+				case 84:
+					return newstruct cs2func_script_982_struct(70, 11716, "Members: Zamorakian spear", "Members can now wield " + "<col=000080>" + "Zamorakian spears" + "</col>" + ".");
+				case 85:
+					return newstruct cs2func_script_982_struct(70, 21582, "Members: Blisterwood polearm (after The Branches of Darkmeyer)", "Members can now wield " + "<col=000080>" + "blisterwood polearms" + "</col>" + " (after The Branches of Darkmeyer.)");
+				case 86:
+					return newstruct cs2func_script_982_struct(75, 11694, "Members: Armadyl godsword", "Members can now wield the " + "<col=000080>" + "Armadyl godsword" + "</col>" + ".");
+				case 87:
+					return newstruct cs2func_script_982_struct(75, 11696, "Members: Bandos godsword", "Members can now wield the " + "<col=000080>" + "Bandos godsword" + "</col>" + ".");
+				case 88:
+					return newstruct cs2func_script_982_struct(75, 11698, "Members: Saradomin godsword", "Members can now wield the " + "<col=000080>" + "Saradomin godsword" + "</col>" + ".");
+				case 89:
+					return newstruct cs2func_script_982_struct(75, 11700, "Members: Zamorak godsword", "Members can now wield the " + "<col=000080>" + "Zamorak godsword" + "</col>" + ".");
+				case 90:
+					return newstruct cs2func_script_982_struct(75, 15403, "Members: Balmung (after Blood Runs Deep and with 75 Strength)", "Members can now wield " + "<col=000080>" + "Balmung" + "</col>" + " (after Blood Runs Deep, with 75 Strength).");
+				case 91:
+					return newstruct cs2func_script_982_struct(75, 15486, "Members: Staff of Light (with 75 Magic)", "Members can now wield the " + "<col=000080>" + "Staff of Light" + "</col>" + " (with 75 Magic).");
+				case 92:
+					return newstruct cs2func_script_982_struct(75, 21787, "Members: Steadfast boots" + "<br>" + " (with 75 Defence)", "Members now have the Attack level required to wear " + "<col=000080>" + "steadfast boots" + "</col>" + " (with 75 Defence).");
+				case 93:
+					return newstruct cs2func_script_982_struct(78, 13902, "Members: Statius's warhammer", "Members now have the Attack level required to wield " + "<col=000080>" + "Statius's warhammer" + "</col>" + ".");
+				case 94:
+					return newstruct cs2func_script_982_struct(78, 13899, "Members: Vesta's longsword", "Members now have the Attack level required to wield " + "<col=000080>" + "Vesta's longsword" + "</col>" + ".");
+				case 95:
+					return newstruct cs2func_script_982_struct(78, 13905, "Members: Vesta's spear", "Members now have the Attack level required to wield " + "<col=000080>" + "Vesta's spear" + "</col>" + ".");
+				case 96:
+					return newstruct cs2func_script_982_struct(78, 13867, "Members: Zuriel's staff" + "<br>" + " (with 78 Magic)", "Members now have the Attack level required to wield " + "<col=000080>" + "Zuriel's staff" + "</col>" + " (with level 78 Magic).");
+				case 97:
+					return newstruct cs2func_script_982_struct(80, 18349, "Members: Chaotic rapier" + "<br>" + " (with 80 Dungeoneering)", "Members can now wield " + "<col=000080>" + "chaotic rapiers" + "</col>" + ". (They also need level 80 Dungeoneering.)");
+				case 98:
+					return newstruct cs2func_script_982_struct(80, 18351, "Members: Chaotic longsword" + "<br>" + " (with 80 Dungeoneering)", "Members can now wield " + "<col=000080>" + "chaotic longswords" + "</col>" + ". (They also need level 80 Dungeoneering.)");
+				case 99:
+					return newstruct cs2func_script_982_struct(80, 18353, "Members: Chaotic maul" + "<br>" + " (with 80 Dungeoneering)", "Members can now wield " + "<col=000080>" + "chaotic mauls" + "</col>" + ". (They also need level 80 Dungeoneering.)");
+				case 100:
+					return newstruct cs2func_script_982_struct(85, 21371, "Members: Abyssal vine whip" + "<br>" + " (with 80 Slayer)", "Members now have the Attack level required to wield " + "<col=000080>" + "abyssal vine whips" + "</col>" + ". (They also need level 80 Slayer.)");
+			}
+			break;
+			case 11:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_982_struct(30, 10149, "Members: Swamp lizard" + "<br>" + " (with 30 Magic and 30 Ranged)", "Members now have the Attack level required to wield " + "<col=000080>" + "swamp lizards" + "</col>" + ". (They also need level 30 Magic and level 30 Ranged.)");
+				case 1:
+					return newstruct cs2func_script_982_struct(50, 10146, "Members: Orange salamander" + "<br>" + " (with 50 Magic and 50 Ranged)", "Members now have the Attack level required to wield " + "<col=000080>" + "orange salamanders" + "</col>" + ". (They also need level 50 Magic and level 50 Ranged.)");
+				case 2:
+					return newstruct cs2func_script_982_struct(60, 10147, "Members: Red salamander" + "<br>" + " (with 60 Magic and 60 Ranged)", "Members now have the Attack level required to wield " + "<col=000080>" + "red salamanders" + "</col>" + ". (They also need level 60 Magic and level 60 Ranged.)");
+				case 3:
+					return newstruct cs2func_script_982_struct(70, 10148, "Members: Black salamander" + "<br>" + " (with 70 Magic and 70 Ranged)", "Members now have the Attack level required to wield " + "<col=000080>" + "black salamanders" + "</col>" + ". (They also need level 70 Magic and level 70 Ranged.)");
+			}
+			break;
+			case 12:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_982_struct(1, 14297, "Members: Stealing Creation - class 1 dagger", "Members can now wield " + "<col=000080>" + "class 1 daggers" + "</col>" + " in Stealing Creation.");
+				case 1:
+					return newstruct cs2func_script_982_struct(1, 14287, "Members: Stealing Creation - class 1 scimitar", "Members can now wield " + "<col=000080>" + "class 1 scimitars" + "</col>" + " in Stealing Creation.");
+				case 2:
+					return newstruct cs2func_script_982_struct(1, 14307, "Members: Stealing Creation - class 1 warhammer", "Members can now wield " + "<col=000080>" + "class 1 warhammers" + "</col>" + " in Stealing Creation.");
+				case 3:
+					return newstruct cs2func_script_982_struct(20, 14299, "Members: Stealing Creation - class 2 dagger", "Members can now wield " + "<col=000080>" + "class 2 daggers" + "</col>" + " in Stealing Creation.");
+				case 4:
+					return newstruct cs2func_script_982_struct(20, 14289, "Members: Stealing Creation - class 2 scimitar", "Members can now wield " + "<col=000080>" + "class 2 scimitars" + "</col>" + " in Stealing Creation.");
+				case 5:
+					return newstruct cs2func_script_982_struct(20, 14309, "Members: Stealing Creation - class 2 warhammer", "Members can now wield " + "<col=000080>" + "class 2 warhammers" + "</col>" + " in Stealing Creation.");
+				case 6:
+					return newstruct cs2func_script_982_struct(40, 14301, "Members: Stealing Creation - class 3 dagger", "Members can now wield " + "<col=000080>" + "class 3 daggers" + "</col>" + " in Stealing Creation.");
+				case 7:
+					return newstruct cs2func_script_982_struct(40, 14291, "Members: Stealing Creation - class 3 scimitar", "Members can now wield " + "<col=000080>" + "class 3 scimitars" + "</col>" + " in Stealing Creation.");
+				case 8:
+					return newstruct cs2func_script_982_struct(40, 14311, "Members: Stealing Creation - class 3 warhammer", "Members can now wield " + "<col=000080>" + "class 3 warhammers" + "</col>" + " in Stealing Creation.");
+				case 9:
+					return newstruct cs2func_script_982_struct(60, 14303, "Members: Stealing Creation - class 4 dagger", "Members can now wield " + "<col=000080>" + "class 4 daggers" + "</col>" + " in Stealing Creation.");
+				case 10:
+					return newstruct cs2func_script_982_struct(60, 14293, "Members: Stealing Creation - class 4 scimitar", "Members can now wield " + "<col=000080>" + "class 4 scimitars" + "</col>" + " in Stealing Creation.");
+				case 11:
+					return newstruct cs2func_script_982_struct(60, 14313, "Members: Stealing Creation - class 4 warhammer", "Members can now wield " + "<col=000080>" + "class 4 warhammers" + "</col>" + " in Stealing Creation.");
+				case 12:
+					return newstruct cs2func_script_982_struct(80, 14305, "Members: Stealing Creation - class 5 dagger", "Members can now wield " + "<col=000080>" + "class 5 daggers" + "</col>" + " in Stealing Creation.");
+				case 13:
+					return newstruct cs2func_script_982_struct(80, 14295, "Members: Stealing Creation - class 5 scimitar", "Members can now wield " + "<col=000080>" + "class 5 scimitars" + "</col>" + " in Stealing Creation.");
+				case 14:
+					return newstruct cs2func_script_982_struct(80, 14315, "Members: Stealing Creation - class 5 warhammer", "Members can now wield " + "<col=000080>" + "class 5 warhammers" + "</col>" + " in Stealing Creation.");
+			}
+			break;
+			case 13:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_982_struct(1, 16757, "Novite dagger (Tier 1)", "You can now wield " + "<col=000080>" + "novite daggers" + "</col>" + " within Daemonheim.");
+				case 1:
+					return newstruct cs2func_script_982_struct(1, 16935, "Novite rapier (Tier 1)", "You can now wield " + "<col=000080>" + "novite rapiers" + "</col>" + " within Daemonheim.");
+				case 2:
+					return newstruct cs2func_script_982_struct(1, 16383, "Novite longsword (Tier 1)", "You can now wield " + "<col=000080>" + "novite longswords" + "</col>" + " within Daemonheim.");
+				case 3:
+					return newstruct cs2func_script_982_struct(1, 15753, "Novite battleaxe (Tier 1)", "You can now wield " + "<col=000080>" + "novite battleaxes" + "</col>" + " within Daemonheim.");
+				case 4:
+					return newstruct cs2func_script_982_struct(1, 16889, "Novite 2h swords (Tier 1)", "You can now wield " + "<col=000080>" + "novite 2h swords" + "</col>" + " within Daemonheim.");
+				case 5:
+					return newstruct cs2func_script_982_struct(1, 17063, "Novite spears (Tier 1)", "You can now wield " + "<col=000080>" + "novite spears" + "</col>" + " within Daemonheim.");
+				case 6:
+					return newstruct cs2func_script_982_struct(1, 17019, "Novite warhammer (Tier 1)", "You can now wield " + "<col=000080>" + "novite warhammers" + "</col>" + " within Daemonheim.");
+				case 7:
+					return newstruct cs2func_script_982_struct(1, 16361, "Novite hatchet (Tier 1)", "You can now wield " + "<col=000080>" + "novite hatchets" + "</col>" + " within Daemonheim.");
+				case 8:
+					return newstruct cs2func_script_982_struct(1, 16295, "Novite pickaxe (Tier 1)", "You can now wield " + "<col=000080>" + "novite pickaxes" + "</col>" + " within Daemonheim.");
+				case 9:
+					return newstruct cs2func_script_982_struct(10, 16765, "Bathus dagger (Tier 2)", "You can now wield " + "<col=000080>" + "bathus daggers" + "</col>" + " within Daemonheim.");
+				case 10:
+					return newstruct cs2func_script_982_struct(10, 16937, "Bathus rapier (Tier 2)", "You can now wield " + "<col=000080>" + "bathus rapiers" + "</col>" + " within Daemonheim.");
+				case 11:
+					return newstruct cs2func_script_982_struct(10, 16385, "Bathus longsword (Tier 2)", "You can now wield " + "<col=000080>" + "bathus longswords" + "</col>" + " within Daemonheim.");
+				case 12:
+					return newstruct cs2func_script_982_struct(10, 15755, "Bathus battleaxe (Tier 2)", "You can now wield " + "<col=000080>" + "bathus battleaxes" + "</col>" + " within Daemonheim.");
+				case 13:
+					return newstruct cs2func_script_982_struct(10, 16891, "Bathus 2h swords (Tier 2)", "You can now wield " + "<col=000080>" + "bathus 2h swords" + "</col>" + " within Daemonheim.");
+				case 14:
+					return newstruct cs2func_script_982_struct(10, 17071, "Bathus spears (Tier 2)", "You can now wield " + "<col=000080>" + "bathus spears" + "</col>" + " within Daemonheim.");
+				case 15:
+					return newstruct cs2func_script_982_struct(10, 17021, "Bathus warhammer (Tier 2)", "You can now wield " + "<col=000080>" + "bathus warhammers" + "</col>" + " within Daemonheim.");
+				case 16:
+					return newstruct cs2func_script_982_struct(10, 16363, "Bathus hatchet (Tier 2)", "You can now wield " + "<col=000080>" + "bathus hatchets" + "</col>" + " within Daemonheim.");
+				case 17:
+					return newstruct cs2func_script_982_struct(10, 16297, "Bathus pickaxe (Tier 2)", "You can now wield " + "<col=000080>" + "bathus pickaxes" + "</col>" + " within Daemonheim.");
+				case 18:
+					return newstruct cs2func_script_982_struct(20, 16773, "Marmaros dagger (Tier 3)", "You can now wield " + "<col=000080>" + "marmaros daggers" + "</col>" + " within Daemonheim.");
+				case 19:
+					return newstruct cs2func_script_982_struct(20, 16939, "Marmaros rapier (Tier 3)", "You can now wield " + "<col=000080>" + "marmaros rapiers" + "</col>" + " within Daemonheim.");
+				case 20:
+					return newstruct cs2func_script_982_struct(20, 16387, "Marmaros longsword (Tier 3)", "You can now wield " + "<col=000080>" + "marmaros longswords" + "</col>" + " within Daemonheim.");
+				case 21:
+					return newstruct cs2func_script_982_struct(20, 15757, "Marmaros battleaxe (Tier 3)", "You can now wield " + "<col=000080>" + "marmaros battleaxes" + "</col>" + " within Daemonheim.");
+				case 22:
+					return newstruct cs2func_script_982_struct(20, 16893, "Marmaros 2h swords (Tier 3)", "You can now wield " + "<col=000080>" + "marmaros 2h swords" + "</col>" + " within Daemonheim.");
+				case 23:
+					return newstruct cs2func_script_982_struct(20, 17079, "Marmaros spears (Tier 3)", "You can now wield " + "<col=000080>" + "marmaros spears" + "</col>" + " within Daemonheim.");
+				case 24:
+					return newstruct cs2func_script_982_struct(20, 17023, "Marmaros warhammer (Tier 3)", "You can now wield " + "<col=000080>" + "marmaros warhammers" + "</col>" + " within Daemonheim.");
+				case 25:
+					return newstruct cs2func_script_982_struct(20, 16365, "Marmaros hatchet (Tier 3)", "You can now wield " + "<col=000080>" + "marmaros hatchets" + "</col>" + " within Daemonheim.");
+				case 26:
+					return newstruct cs2func_script_982_struct(20, 16299, "Marmaros pickaxe (Tier 3)", "You can now wield " + "<col=000080>" + "marmaros pickaxes" + "</col>" + " within Daemonheim.");
+				case 27:
+					return newstruct cs2func_script_982_struct(30, 16781, "Kratonite dagger (Tier 4)", "You can now wield " + "<col=000080>" + "kratonite daggers" + "</col>" + " within Daemonheim.");
+				case 28:
+					return newstruct cs2func_script_982_struct(30, 16941, "Kratonite rapier (Tier 4)", "You can now wield " + "<col=000080>" + "kratonite rapiers" + "</col>" + " within Daemonheim.");
+				case 29:
+					return newstruct cs2func_script_982_struct(30, 16389, "Kratonite longsword (Tier 4)", "You can now wield " + "<col=000080>" + "kratonite longswords" + "</col>" + " within Daemonheim.");
+				case 30:
+					return newstruct cs2func_script_982_struct(30, 15759, "Kratonite battleaxe (Tier 4)", "You can now wield " + "<col=000080>" + "kratonite battleaxes" + "</col>" + " within Daemonheim.");
+				case 31:
+					return newstruct cs2func_script_982_struct(30, 16895, "Kratonite 2h swords (Tier 4)", "You can now wield " + "<col=000080>" + "kratonite 2h swords" + "</col>" + " within Daemonheim.");
+				case 32:
+					return newstruct cs2func_script_982_struct(30, 17087, "Kratonite spears (Tier 4)", "You can now wield " + "<col=000080>" + "kratonite spears" + "</col>" + " within Daemonheim.");
+				case 33:
+					return newstruct cs2func_script_982_struct(30, 17025, "Kratonite warhammer (Tier 4)", "You can now wield " + "<col=000080>" + "kratonite warhammers" + "</col>" + " within Daemonheim.");
+				case 34:
+					return newstruct cs2func_script_982_struct(30, 16367, "Kratonite hatchet (Tier 4)", "You can now wield " + "<col=000080>" + "kratonite hatchets" + "</col>" + " within Daemonheim.");
+				case 35:
+					return newstruct cs2func_script_982_struct(30, 16301, "Kratonite pickaxe (Tier 4)", "You can now wield " + "<col=000080>" + "kratonite pickaxes" + "</col>" + " within Daemonheim.");
+				case 36:
+					return newstruct cs2func_script_982_struct(36, 17275, "Members: Frostbite dagger" + "<br>" + " (with 36 Magic)", "Members can now wield " + "<col=000080>" + "frostbite daggers" + "</col>" + " within Daemonheim. (They also need level 36 Magic.)");
+				case 37:
+					return newstruct cs2func_script_982_struct(40, 16789, "Fractite dagger (Tier 5)", "You can now wield " + "<col=000080>" + "fractite daggers" + "</col>" + " within Daemonheim.");
+				case 38:
+					return newstruct cs2func_script_982_struct(40, 16943, "Fractite rapier (Tier 5)", "You can now wield " + "<col=000080>" + "fractite rapiers" + "</col>" + " within Daemonheim.");
+				case 39:
+					return newstruct cs2func_script_982_struct(40, 16391, "Fractite longsword (Tier 5)", "You can now wield " + "<col=000080>" + "fractite longswords" + "</col>" + " within Daemonheim.");
+				case 40:
+					return newstruct cs2func_script_982_struct(40, 15761, "Fractite battleaxe (Tier 5)", "You can now wield " + "<col=000080>" + "fractite battleaxes" + "</col>" + " within Daemonheim.");
+				case 41:
+					return newstruct cs2func_script_982_struct(40, 16897, "Fractite 2h swords (Tier 5)", "You can now wield " + "<col=000080>" + "fractite 2h swords" + "</col>" + " within Daemonheim.");
+				case 42:
+					return newstruct cs2func_script_982_struct(40, 17095, "Fractite spears (Tier 5)", "You can now wield " + "<col=000080>" + "fractite spears" + "</col>" + " within Daemonheim.");
+				case 43:
+					return newstruct cs2func_script_982_struct(40, 17027, "Fractite warhammer (Tier 5)", "You can now wield " + "<col=000080>" + "fractite warhammers" + "</col>" + " within Daemonheim.");
+				case 44:
+					return newstruct cs2func_script_982_struct(40, 16369, "Fractite hatchet (Tier 5)", "You can now wield " + "<col=000080>" + "fractite hatchets" + "</col>" + " within Daemonheim.");
+				case 45:
+					return newstruct cs2func_script_982_struct(40, 16303, "Fractite pickaxe (Tier 5)", "You can now wield " + "<col=000080>" + "fractite pickaxes" + "</col>" + " within Daemonheim.");
+				case 46:
+					return newstruct cs2func_script_982_struct(50, 16797, "Members: Zephyrium dagger (Tier 6)", "Members can now wield " + "<col=000080>" + "zephyrium daggers" + "</col>" + " within Daemonheim.");
+				case 47:
+					return newstruct cs2func_script_982_struct(50, 16945, "Members: Zephyrium rapier (Tier 6)", "Members can now wield " + "<col=000080>" + "zephyrium rapiers" + "</col>" + " within Daemonheim.");
+				case 48:
+					return newstruct cs2func_script_982_struct(50, 16393, "Members: Zephyrium longsword (Tier 6)", "Members can now wield " + "<col=000080>" + "zephyrium longswords" + "</col>" + " within Daemonheim.");
+				case 49:
+					return newstruct cs2func_script_982_struct(50, 15763, "Members: Zephyrium battleaxe (Tier 6)", "Members can now wield " + "<col=000080>" + "zephyrium battleaxes" + "</col>" + " within Daemonheim.");
+				case 50:
+					return newstruct cs2func_script_982_struct(50, 16899, "Members: Zephyrium 2h swords (Tier 6)", "Members can now wield " + "<col=000080>" + "zephyrium 2h swords" + "</col>" + " within Daemonheim.");
+				case 51:
+					return newstruct cs2func_script_982_struct(50, 17103, "Members: Zephyrium spears (Tier 6)", "Members can now wield " + "<col=000080>" + "zephyrium spears" + "</col>" + " within Daemonheim.");
+				case 52:
+					return newstruct cs2func_script_982_struct(50, 17029, "Members: Zephyrium warhammer (Tier 6)", "Members can now wield " + "<col=000080>" + "zephyrium warhammers" + "</col>" + " within Daemonheim.");
+				case 53:
+					return newstruct cs2func_script_982_struct(50, 16371, "Members: Zephyrium hatchet (Tier 6)", "Members can now wield " + "<col=000080>" + "zephyrium hatchets" + "</col>" + " within Daemonheim.");
+				case 54:
+					return newstruct cs2func_script_982_struct(50, 16305, "Members: Zephyrium pickaxe (Tier 6)", "Members can now wield " + "<col=000080>" + "zephyrium pickaxes" + "</col>" + " within Daemonheim.");
+				case 55:
+					return newstruct cs2func_script_982_struct(60, 16805, "Members: Argonite dagger (Tier 7)", "Members can now wield " + "<col=000080>" + "argonite daggers" + "</col>" + " within Daemonheim.");
+				case 56:
+					return newstruct cs2func_script_982_struct(60, 16947, "Members: Argonite rapier (Tier 7)", "Members can now wield " + "<col=000080>" + "argonite rapiers" + "</col>" + " within Daemonheim.");
+				case 57:
+					return newstruct cs2func_script_982_struct(60, 16395, "Members: Argonite longsword (Tier 7)", "Members can now wield " + "<col=000080>" + "argonite longswords" + "</col>" + " within Daemonheim.");
+				case 58:
+					return newstruct cs2func_script_982_struct(60, 15765, "Members: Argonite battleaxe (Tier 7)", "Members can now wield " + "<col=000080>" + "argonite battleaxes" + "</col>" + " within Daemonheim.");
+				case 59:
+					return newstruct cs2func_script_982_struct(60, 16901, "Members: Argonite 2h swords (Tier 7)", "Members can now wield " + "<col=000080>" + "argonite 2h swords" + "</col>" + " within Daemonheim.");
+				case 60:
+					return newstruct cs2func_script_982_struct(60, 17111, "Members: Argonite spears (Tier 7)", "Members can now wield " + "<col=000080>" + "argonite spears" + "</col>" + " within Daemonheim.");
+				case 61:
+					return newstruct cs2func_script_982_struct(60, 17031, "Members: Argonite warhammer (Tier 7)", "Members can now wield " + "<col=000080>" + "argonite warhammers" + "</col>" + " within Daemonheim.");
+				case 62:
+					return newstruct cs2func_script_982_struct(60, 16373, "Members: Argonite hatchet (Tier 7)", "Members can now wield " + "<col=000080>" + "argonite hatchets" + "</col>" + " within Daemonheim.");
+				case 63:
+					return newstruct cs2func_script_982_struct(60, 16307, "Members: Argonite pickaxe (Tier 7)", "Members can now wield " + "<col=000080>" + "argonite pickaxes" + "</col>" + " within Daemonheim.");
+				case 64:
+					return newstruct cs2func_script_982_struct(68, 17275, "Members: Hailstorm dagger" + "<br>" + " (with 68 Magic)", "Members can now wield " + "<col=000080>" + "hailstorm daggers" + "</col>" + " within Daemonheim. (They also need level 68 Magic)");
+				case 65:
+					return newstruct cs2func_script_982_struct(68, 17293, "Members: Doomcore staff" + "<br>" + " (with 68 Magic)", "Members can now wield " + "<col=000080>" + "doomcore staves" + "</col>" + " within Daemonheim. (They also need level 68 Magic.)");
+				case 66:
+					return newstruct cs2func_script_982_struct(70, 16813, "Members: Katagon dagger (Tier 8)", "Members can now wield " + "<col=000080>" + "katagon daggers" + "</col>" + " within Daemonheim.");
+				case 67:
+					return newstruct cs2func_script_982_struct(70, 16949, "Members: Katagon rapier (Tier 8)", "Members can now wield " + "<col=000080>" + "katagon rapiers" + "</col>" + " within Daemonheim.");
+				case 68:
+					return newstruct cs2func_script_982_struct(70, 16397, "Members: Katagon longsword (Tier 8)", "Members can now wield " + "<col=000080>" + "katagon longswords" + "</col>" + " within Daemonheim.");
+				case 69:
+					return newstruct cs2func_script_982_struct(70, 15767, "Members: Katagon battleaxe (Tier 8)", "Members can now wield " + "<col=000080>" + "katagon battleaxes" + "</col>" + " within Daemonheim.");
+				case 70:
+					return newstruct cs2func_script_982_struct(70, 16903, "Members: Katagon 2h swords (Tier 8)", "Members can now wield " + "<col=000080>" + "katagon 2h swords" + "</col>" + " within Daemonheim.");
+				case 71:
+					return newstruct cs2func_script_982_struct(70, 17119, "Members: Katagon spears (Tier 8)", "Members can now wield " + "<col=000080>" + "katagon spears" + "</col>" + " within Daemonheim.");
+				case 72:
+					return newstruct cs2func_script_982_struct(70, 17033, "Members: Katagon warhammer (Tier 8)", "Members can now wield " + "<col=000080>" + "katagon warhammers" + "</col>" + " within Daemonheim.");
+				case 73:
+					return newstruct cs2func_script_982_struct(70, 16375, "Members: Katagon hatchet (Tier 8)", "Members can now wield " + "<col=000080>" + "katagon hatchets" + "</col>" + " within Daemonheim.");
+				case 74:
+					return newstruct cs2func_script_982_struct(70, 16309, "Members: Katagon pickaxe (Tier 8)", "Members can now wield " + "<col=000080>" + "katagon pickaxes" + "</col>" + " within Daemonheim.");
+				case 75:
+					return newstruct cs2func_script_982_struct(80, 16821, "Members: Gorgonite dagger (Tier 9)", "Members can now wield " + "<col=000080>" + "gorgonite daggers" + "</col>" + " within Daemonheim.");
+				case 76:
+					return newstruct cs2func_script_982_struct(80, 16951, "Members: Gorgonite rapier (Tier 9)", "Members can now wield " + "<col=000080>" + "gorgonite rapiers" + "</col>" + " within Daemonheim.");
+				case 77:
+					return newstruct cs2func_script_982_struct(80, 16399, "Members: Gorgonite longsword (Tier 9)", "Members can now wield " + "<col=000080>" + "gorgonite longswords" + "</col>" + " within Daemonheim.");
+				case 78:
+					return newstruct cs2func_script_982_struct(80, 15769, "Members: Gorgonite battleaxe (Tier 9)", "Members can now wield " + "<col=000080>" + "gorgonite battleaxes" + "</col>" + " within Daemonheim.");
+				case 79:
+					return newstruct cs2func_script_982_struct(80, 16905, "Members: Gorgonite 2h swords (Tier 9)", "Members can now wield " + "<col=000080>" + "gorgonite 2h swords" + "</col>" + " within Daemonheim.");
+				case 80:
+					return newstruct cs2func_script_982_struct(80, 17127, "Members: Gorgonite spears (Tier 9)", "Members can now wield " + "<col=000080>" + "gorgonite spears" + "</col>" + " within Daemonheim.");
+				case 81:
+					return newstruct cs2func_script_982_struct(80, 17035, "Members: Gorgonite warhammer (Tier 9)", "Members can now wield " + "<col=000080>" + "gorgonite warhammers" + "</col>" + " within Daemonheim.");
+				case 82:
+					return newstruct cs2func_script_982_struct(80, 16377, "Members: Gorgonite hatchet (Tier 9)", "Members can now wield " + "<col=000080>" + "gorgonite hatchets" + "</col>" + " within Daemonheim.");
+				case 83:
+					return newstruct cs2func_script_982_struct(80, 16311, "Members: Gorgonite pickaxe (Tier 9)", "Members can now wield " + "<col=000080>" + "gorgonite pickaxes" + "</col>" + " within Daemonheim.");
+				case 84:
+					return newstruct cs2func_script_982_struct(90, 16829, "Members: Promethium dagger (Tier 10)", "Members can now wield " + "<col=000080>" + "promethium daggers" + "</col>" + " within Daemonheim.");
+				case 85:
+					return newstruct cs2func_script_982_struct(90, 16953, "Members: Promethium rapier (Tier 10)", "Members can now wield " + "<col=000080>" + "promethium rapiers" + "</col>" + " within Daemonheim.");
+				case 86:
+					return newstruct cs2func_script_982_struct(90, 16401, "Members: Promethium longsword (Tier 10)", "Members can now wield " + "<col=000080>" + "promethium longswords" + "</col>" + " within Daemonheim.");
+				case 87:
+					return newstruct cs2func_script_982_struct(90, 15771, "Members: Promethium battleaxe (Tier 10)", "Members can now wield " + "<col=000080>" + "promethium battleaxes" + "</col>" + " within Daemonheim.");
+				case 88:
+					return newstruct cs2func_script_982_struct(90, 16907, "Members: Promethium 2h swords (Tier 10)", "Members can now wield " + "<col=000080>" + "promethium 2h swords" + "</col>" + " within Daemonheim.");
+				case 89:
+					return newstruct cs2func_script_982_struct(90, 17135, "Members: Promethium spears (Tier 10)", "Members can now wield " + "<col=000080>" + "promethium spears" + "</col>" + " within Daemonheim.");
+				case 90:
+					return newstruct cs2func_script_982_struct(90, 17037, "Members: Promethium warhammer (Tier 10)", "Members can now wield " + "<col=000080>" + "promethium warhammers" + "</col>" + " within Daemonheim.");
+				case 91:
+					return newstruct cs2func_script_982_struct(90, 16379, "Members: Promethium hatchet (Tier 10)", "Members can now wield " + "<col=000080>" + "promethium hatchets" + "</col>" + " within Daemonheim.");
+				case 92:
+					return newstruct cs2func_script_982_struct(90, 16313, "Members: Promethium pickaxe (Tier 10)", "Members can now wield " + "<col=000080>" + "promethium pickaxes" + "</col>" + " within Daemonheim.");
+				case 93:
+					return newstruct cs2func_script_982_struct(99, 16837, "Members: Primal dagger (Tier 11)", "Members can now wield " + "<col=000080>" + "primal daggers" + "</col>" + " within Daemonheim.");
+				case 94:
+					return newstruct cs2func_script_982_struct(99, 16955, "Members: Primal rapier (Tier 11)", "Members can now wield " + "<col=000080>" + "primal rapiers" + "</col>" + " within Daemonheim.");
+				case 95:
+					return newstruct cs2func_script_982_struct(99, 16403, "Members: Primal longsword (Tier 11)", "Members can now wield " + "<col=000080>" + "primal longswords" + "</col>" + " within Daemonheim.");
+				case 96:
+					return newstruct cs2func_script_982_struct(99, 15773, "Members: Primal battleaxe (Tier 11)", "Members can now wield " + "<col=000080>" + "primal battleaxes" + "</col>" + " within Daemonheim.");
+				case 97:
+					return newstruct cs2func_script_982_struct(99, 16909, "Members: Primal 2h swords (Tier 11)", "Members can now wield " + "<col=000080>" + "primal 2h swords" + "</col>" + " within Daemonheim.");
+				case 98:
+					return newstruct cs2func_script_982_struct(99, 17143, "Members: Primal spears (Tier 11)", "Members can now wield " + "<col=000080>" + "primal spears" + "</col>" + " within Daemonheim.");
+				case 99:
+					return newstruct cs2func_script_982_struct(99, 17039, "Members: Primal warhammer (Tier 11)", "Members can now wield " + "<col=000080>" + "primal warhammers" + "</col>" + " within Daemonheim.");
+				case 100:
+					return newstruct cs2func_script_982_struct(99, 16381, "Members: Primal hatchet (Tier 11)", "Members can now wield " + "<col=000080>" + "primal hatchets" + "</col>" + " within Daemonheim.");
+				case 101:
+					return newstruct cs2func_script_982_struct(99, 16315, "Members: Primal pickaxe (Tier 11)", "Members can now wield " + "<col=000080>" + "primal pickaxes" + "</col>" + " within Daemonheim.");
+			}
+			break;
+			case 14:
+			SWITCH (arg1) {
+				case 0:
+					 GOTO flow_383
+				case 1:
+					 GOTO flow_384
+			}
+			break;
+		flow_383:
+			return newstruct cs2func_script_982_struct(-1, 8855, "You can enter the Warriors' Guild when your Attack and Strength levels add up to 130 or more, or when you reach level 99 in either Attack or Strength.", "");
+		flow_384:
+			return newstruct cs2func_script_982_struct(99, 9747, "Skill mastery", "<col=000080>" + "Congratulations! You are now a master of " + "<col=800000>" + "Attack" + "<col=000080>" + ". Members can visit " + "<col=800000>" + "Ajjat" + "<col=000080>" + " at the " + "<col=800000>" + "Warriors' Guild" + "<col=000080>" + ". He has something special that is only available to true masters of the " + "<col=800000>" + "Attack" + "<col=000080>" + " skill!");
+	}
+	return newstruct cs2func_script_982_struct(0, -1, "", "");
+}

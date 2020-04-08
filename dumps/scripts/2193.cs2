@@ -1,0 +1,379 @@
+int script_2193(int arg0) {
+	switch (arg0) {
+		case 147:
+			return script_2157(standart_config_281, 1000);
+		case 159:
+			return script_2157(standart_config_130, 4);
+		case 1:
+			return script_2157(standart_config_29, 2);
+		case 2:
+			return script_2157(bitconfig_2561, 3);
+		case 3:
+			return script_2157(standart_config_31, 100);
+		case 4:
+			return script_2157(standart_config_176, 10);
+		case 5:
+			return script_2157(standart_config_32, 3);
+		case 6:
+			return script_2157(bitconfig_2378, 6);
+		case 7:
+			return script_2157(standart_config_160, 2);
+		case 8:
+			return script_2157(standart_config_122, 7);
+		case 9:
+			return script_2157(standart_config_71, 4);
+		case 10:
+			return script_2157(standart_config_273, 110);
+		case 11:
+			return script_2157(standart_config_107, 5);
+		case 13:
+			return script_2157(standart_config_63, 6);
+		case 15:
+			return script_2159(standart_config_145, 7, standart_config_146, 4);
+		case 16:
+			return script_2157(bitconfig_6914, 3);
+		case 18:
+			return script_2157(bitconfig_3185, 240);
+		case 19:
+			return script_2157(bitconfig_299, 110);
+		case 20:
+			return script_2157(standart_config_293, 65);
+		case 21:
+			return script_2157(standart_config_68, 16);
+		case 22:
+			return script_2157(standart_config_655, 140);
+		case 23:
+			return script_2157(standart_config_10, 8);
+		case 24:
+			return script_2157(bitconfig_3274, 130);
+		case 25:
+			return script_2157(bitconfig_487, 14);
+		case 26:
+			if (standart_config_399 > 6) {
+				return 2;
+			}
+			if (((boolean)standart_config_399) && ((boolean)bitconfig_203)) {
+				return 0;
+			}
+			return 1;
+		case 27:
+			return script_2157(bitconfig_2573, 320);
+		case 28:
+			return script_2157(bitconfig_2258, 13);
+		case 29:
+			return script_2157(standart_config_314, 80);
+		case 30:
+			return script_2157(bitconfig_358, 15);
+		case 31:
+			return script_2157(bitconfig_1465, 80);
+		case 32:
+			return script_2157(standart_config_131, 9);
+		case 33:
+			return script_2157(standart_config_80, 4);
+		case 34:
+			return script_2157(standart_config_0, 11);
+		case 35:
+			return script_2157(standart_config_335, 110);
+		case 36:
+			return script_2157(bitconfig_2780, 40);
+		case 37:
+			if (isBitFlagged(standart_config_299, 20)) {
+				return 2;
+			}
+			if (isBitFlagged(standart_config_299, 1)) {
+				return 0;
+			}
+			return 1;
+		case 38:
+			return script_2157(bitconfig_2639, 11);
+		case 39:
+			return script_2157(bitconfig_1560, 70);
+		case 40:
+			return script_2157(bitconfig_2866, 200);
+		case 41:
+			return script_2157(bitconfig_2497, 60);
+		case 42:
+			return script_2157(bitconfig_1803, 90);
+		case 43:
+			return script_2157(bitconfig_2326, 90);
+		case 44:
+			return script_2157(standart_config_148, 11);
+		case 45:
+			return script_2157(bitconfig_334, 28);
+		case 46:
+			return script_2157(standart_config_17, 14);
+		case 47:
+			return script_2157(standart_config_11, 5);
+		case 48:
+			return script_2157(bitconfig_822, 140);
+		case 49:
+			return script_2157(standart_config_347, 10);
+		case 50:
+			return script_2157(standart_config_65, 10);
+		case 51:
+			return script_2157(bitconfig_961, 60);
+		case 52:
+			return script_2157(standart_config_180, 6);
+		case 53:
+			return script_2157(bitconfig_217, 8);
+		case 54:
+			return script_2157(bitconfig_571, 50);
+		case 55:
+			return script_2157(bitconfig_346, 10);
+		case 56:
+			return script_2157(standart_config_150, 160);
+		case 57:
+			return script_2157(bitconfig_1527, 160);
+		case 58:
+			return script_2157(standart_config_382, 11);
+		case 59:
+			return script_2157(standart_config_223, 9);
+		case 60:
+			return script_2157(standart_config_188, 15);
+		case 61:
+			return script_2157(standart_config_5, 10);
+		case 62:
+			return script_2157(bitconfig_34, 10);
+		case 63:
+			return script_2157(bitconfig_418, 26);
+		case 64:
+			return script_2157(bitconfig_1990, 430);
+		case 65:
+			return script_2157(standart_config_387, 105);
+		case 66:
+			return script_2157(standart_config_175, 12);
+		case 67:
+			return script_2157(standart_config_139, 75);
+		case 68:
+			return script_2157(standart_config_147, 6);
+		case 69:
+			return script_2157(bitconfig_532, 11);
+		case 70:
+			return script_2157(bitconfig_2448, 190);
+		case 71:
+			return script_2157(bitconfig_1383, 4);
+		case 72:
+			return script_2157(standart_config_14, 7);
+		case 73:
+			return script_2158(standart_config_365, 1, 9);
+		case 74:
+			return script_2157(standart_config_30, 80);
+		case 75:
+			return script_2157(bitconfig_260, 70);
+		case 76:
+			return script_2157(standart_config_517, 8);
+		case 77:
+			return script_2158(bitconfig_1103, 9, 60);
+		case 78:
+			return script_2157(standart_config_192, 2);
+		case 79:
+			return script_2157(bitconfig_2790, 320);
+		case 80:
+			return script_2157(standart_config_307, 110);
+		case 81:
+			return script_2157(standart_config_112, 7);
+		case 82:
+			return script_2157(standart_config_416, 280);
+		case 83:
+			return script_2157(standart_config_165, 29);
+		case 84:
+			return script_2157(standart_config_302, 60);
+		case 85:
+			return script_2157(bitconfig_6178, 4);
+		case 86:
+			return script_2157(bitconfig_1404, 127);
+		case 87:
+			return script_2157(bitconfig_1850, 5);
+		case 88:
+			return script_2157(bitconfig_657, 2);
+		case 89:
+			return script_2157(standart_config_328, 15);
+		case 90:
+			return script_2157(standart_config_402, 6);
+		case 91:
+			return script_2157(bitconfig_2140, 30);
+		case 92:
+			return script_2157(standart_config_600, 19);
+		case 93:
+			return script_2157(standart_config_76, 6);
+		case 94:
+			return script_2157(standart_config_159, 12);
+		case 95:
+			return script_2157(bitconfig_2610, 14);
+		case 96:
+			return script_2157(standart_config_339, 85);
+		case 97:
+			return script_2157(bitconfig_1372, 125);
+		case 98:
+			return script_2157(standart_config_60, 3);
+		case 99:
+			return script_2157(standart_config_116, 15);
+		case 100:
+			return script_2157(bitconfig_2011, 13);
+		case 101:
+			return script_2157(bitconfig_1444, 60);
+		case 102:
+			return script_2157(bitconfig_2098, 200);
+		case 103:
+			return script_2158(standart_config_320, 3, 6);
+		case 104:
+			return script_2157(bitconfig_1028, 70);
+		case 105:
+			return script_2157(bitconfig_451, 2);
+		case 106:
+			return script_2157(standart_config_26, 80);
+		case 107:
+			return script_2157(standart_config_359, 100);
+		case 108:
+			return script_2157(standart_config_197, 30);
+		case 109:
+			return script_2157(standart_config_226, 7);
+		case 110:
+			return script_2157(standart_config_111, 9);
+		case 111:
+			return script_2157(standart_config_200, 5);
+		case 112:
+			return script_2157(standart_config_385, 45);
+		case 113:
+			return script_2157(standart_config_317, 50);
+		case 114:
+			if (standart_config_161 == 10) {
+				return 2;
+			}
+			if (isBitFlagged(standart_config_162, 11)) {
+				return 0;
+			}
+			return 1;
+		case 115:
+			return script_2157(bitconfig_1051, 11);
+		case 116:
+			return script_2157(standart_config_212, 13);
+		case 117:
+			return script_2157(bitconfig_3293, 135);
+		case 118:
+			return script_2157(bitconfig_3311, 340);
+		case 119:
+			return script_2157(bitconfig_3337, 18);
+		case 120:
+			return script_2157(standart_config_980, 130);
+		case 121:
+			return script_2157(bitconfig_3523, 150);
+		case 122:
+			return script_2157(bitconfig_3534, 80);
+		case 123:
+			return script_2157(bitconfig_3550, 11);
+		case 124:
+			return script_2157(bitconfig_3618, 28);
+		case 125:
+			return script_2157(bitconfig_2783, 60);
+		case 126:
+			return script_2157(bitconfig_3888, 90);
+		case 127:
+			return script_2157(bitconfig_3954, 200);
+		case 128:
+			return script_2157(bitconfig_4055, 65);
+		case 129:
+			return script_2157(bitconfig_4105, 18);
+		case 130:
+			return script_2157(bitconfig_4230, 700);
+		case 131:
+			return script_2157(bitconfig_4302, 110);
+		case 132:
+			return script_2158(bitconfig_4321, 10, 200);
+		case 133:
+			return script_2157(bitconfig_4396, 60);
+		case 134:
+			return script_2157(bitconfig_4505, 100);
+		case 135:
+			return script_2157(bitconfig_4569, 500);
+		case 136:
+			return script_2157(bitconfig_4684, 150);
+		case 137:
+			return script_2157(bitconfig_4700, 63);
+		case 138:
+			return script_2157(bitconfig_4764, 250);
+		case 139:
+			return script_2157(bitconfig_4797, 100);
+		case 140:
+			return script_2157(bitconfig_5032, 80);
+		case 141:
+			return script_2157(bitconfig_5075, 20);
+		case 142:
+			return script_2157(bitconfig_5133, 90);
+		case 143:
+			return script_2157(bitconfig_5331, 35);
+		case 144:
+			return script_2157(bitconfig_5387, 250);
+		case 145:
+			return script_2157(bitconfig_5491, 910);
+		case 146:
+			return script_2157(bitconfig_5761, 30);
+		case 148:
+			return script_2157(bitconfig_5733, 60);
+		case 149:
+			return script_2158(bitconfig_6001, 3, 45);
+		case 150:
+			return script_2158(bitconfig_6048, 10, 250);
+		case 155:
+			return script_2157(bitconfig_6112, 60);
+		case 156:
+			return script_2157(bitconfig_6289, 240);
+		case 157:
+			return script_2157(bitconfig_6775, 90);
+		case 151:
+			return script_2158(bitconfig_6180, 2, 140);
+		case 152:
+			return script_2157(bitconfig_1938, 110);
+		case 153:
+			return script_2157(bitconfig_5448, 50);
+		case 154:
+			return script_2158(bitconfig_6307, 2, 5);
+		case 158:
+			return script_2158(bitconfig_7826, 10, 180);
+		case 160:
+			return script_2157(bitconfig_6471, 90);
+		case 161:
+			return script_2157(bitconfig_6553, 46);
+		case 162:
+			return script_2157(bitconfig_6962, 12);
+		case 163:
+			return script_2158(bitconfig_6883, 3, 147);
+		case 165:
+			return script_2157(bitconfig_7050, 35);
+		case 167:
+			return script_2157(bitconfig_7793, 30);
+		case 168:
+			return script_2157(bitconfig_8045, 150);
+		case 170:
+			return script_2157(bitconfig_7238, 60);
+		case 171:
+			return script_2157(bitconfig_7958, 90);
+		case 172:
+			return script_2157(bitconfig_7871, 5);
+		case 173:
+			return script_2158(bitconfig_7451, 2, 63);
+		case 14:
+			return script_2157(bitconfig_8704, 90);
+		case 174:
+			return script_2157(bitconfig_8248, 40);
+		case 17:
+			return script_2157(bitconfig_5730, 100);
+		case 176:
+			return script_2157(bitconfig_9829, 400);
+		case 179:
+			return script_2158(bitconfig_8605, 10, 315);
+		case 12:
+			return script_2157(bitconfig_5332, 120);
+		case 180:
+			return script_2157(bitconfig_998, 9);
+		case 181:
+			return script_2158(bitconfig_8961, 10, 210);
+		case 182:
+			return script_2157(bitconfig_9369, 50);
+		case 183:
+			return script_2158(bitconfig_9491, 5, 250);
+		case 184:
+			return script_2157(bitconfig_9757, 170);
+	}
+	return 0;
+}

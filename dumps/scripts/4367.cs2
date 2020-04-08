@@ -1,0 +1,12 @@
+void script_4367() {
+	string svar0;
+	svar0 = replaceLtGt(cs2method5432());
+	if (strLength(svar0) <= 13) {
+		globalstring_346 = svar0;
+		globalint_1498 = strLength(globalstring_346);
+		globalint_1498 = script_1552(globalint_1498, 5631, 72089638, -1, globalstring_346);
+		setWidgetPosition(globalint_1498, getWidgetActualY(new WidgetPointer(1100,39)), 0, 0, new WidgetPointer(1100,39));
+		setWidgetText(new WidgetPointer(1100,38), globalstring_346);
+	}
+	return;
+}

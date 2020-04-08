@@ -1,0 +1,16 @@
+void script_607() {
+	int ivar0;
+	if (standart_config_1109 == -1) {
+		globalint_85 = 1;
+		return;
+	}
+	ivar0 = standart_config_1114;
+	if (ivar0 < 0) {
+		globalint_85 = 1;
+	} else {
+		globalint_85 = standart_config_1114;
+	}
+	setWidgetText(new WidgetPointer(105,153), formatNumber(globalint_85, 1) + " gp");
+	script_609();
+	return;
+}

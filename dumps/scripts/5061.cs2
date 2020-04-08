@@ -1,0 +1,7 @@
+void script_5061(int arg0,int arg1,int arg2,int arg3) {
+	script_5063(arg0, arg1, arg2);
+	if (((boolean)arg3)) {
+		script_5062(arg0, arg1, arg2);
+	}
+	return;
+}

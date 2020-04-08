@@ -1,0 +1,14 @@
+void script_4079(int arg0) {
+	if (setWidgetRegister(new WidgetPointer(1064,2), 0)) {
+		if (arg0 <= 30) {
+			setWidgetSize(multiply(arg0, 8), 8, 0, 0);
+		}
+	} else {
+		createExtraChild(new WidgetPointer(1064,2), 3, 0);
+		setWidgetPosition(44, 44, 0, 0);
+		setWidgetSize(multiply(8, 30), 8, 0, 0);
+		setWidgetRGB(new Color(201, 108, 62));
+		setWidgetFilled(1);
+	}
+	return;
+}

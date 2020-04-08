@@ -1,0 +1,25 @@
+void script_4125(int arg0,int arg1,int arg2,string arg3) {
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	int stack_dump3;
+	string stack_dump4;
+	if (setWidgetRegister(new WidgetPointer(arg0))) {
+		stack_dump0 = arg0;
+		stack_dump1 = arg1;
+		stack_dump2 = arg2;
+		stack_dump3 = 718;
+		stack_dump4 = arg3;
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: opcode 1613 not decompileable
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeSpecialCall(FlowBlocksGenerator.java:297)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:249)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+				at tests.Main.main(Main.java:45)
+			
+		 */
+	}
+	return;
+}

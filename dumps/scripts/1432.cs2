@@ -1,0 +1,23 @@
+int script_1432() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar0 = add(getSkillActualLvl(0), getSkillActualLvl(2));
+	ivar1 = divide(multiply(getSkillActualLvl(4), 3), 2);
+	ivar2 = divide(multiply(getSkillActualLvl(6), 3), 2);
+	ivar3 = ivar0;
+	if (ivar1 > ivar3) {
+		ivar3 = ivar1;
+	}
+	if (ivar2 > ivar3) {
+		ivar3 = ivar2;
+	}
+	ivar3 = divide(multiply(ivar3, 13), 10);
+	if (isMember()) {
+		ivar3 = divide(add(add(add(add(ivar3, getSkillActualLvl(1)), getSkillActualLvl(3)), divide(getSkillActualLvl(5), 2)), divide(getSkillActualLvl(23), 2)), 4);
+	} else {
+		ivar3 = divide(add(add(add(ivar3, getSkillActualLvl(1)), getSkillActualLvl(3)), divide(getSkillActualLvl(5), 2)), 4);
+	}
+	return ivar3;
+}

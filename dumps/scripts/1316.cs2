@@ -1,0 +1,5 @@
+void script_1316(int arg0) {
+	globalint_119 = standart_config_173;
+	script_1741(arg0);
+	return;
+}

@@ -1,0 +1,83 @@
+void script_4716(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	string svar0;
+	ivar6 = 48;
+	ivar7 = 48;
+	ivar8 = 0;
+	ivar9 = 0;
+	ivar10 = -1;
+	ivar11 = -1;
+	ivar12 = -1;
+	svar0 = "";
+	ivar13 = 1;
+	ivar14 = 0;
+	ivar15 = 0;
+	ivar16 = 0;
+	ivar17 = 0;
+	ivar18 = 1;
+	if (getWidgetScrollMaxH(new WidgetPointer(arg0)) > 0) {
+		ivar16 = getWidgetScrollMaxH(new WidgetPointer(arg0));
+	} else {
+		ivar16 = getWidgetActualWidth(new WidgetPointer(arg0));
+	}
+	ivar16 = divide(ivar16, add(ivar6, arg3));
+	while (ivar8 < getCommonDefinitionSize(arg2)) {
+		ivar18 = 0;
+		ivar10 = cs2method_3408(105, 74, arg2, ivar8);
+		if (setWidgetRegister(new WidgetPointer(arg0), ivar8)) {
+			ivar13 = script_4718(ivar10);
+			if (((boolean)arg5)) {
+				ivar18 = 1;
+			} else if (((boolean)arg5)) {
+				if (((boolean)ivar13)) {
+					ivar18 = 1;
+				}
+			} else if (arg5 == getOtherCommonData(ivar10, 1422)) {
+				ivar18 = 1;
+			} else if (arg5 == getOtherCommonData(ivar10, 1423)) {
+				ivar18 = 1;
+			} else if (arg5 == getOtherCommonData(ivar10, 1424)) {
+				ivar18 = 1;
+			} else if (arg5 == getOtherCommonData(ivar10, 1425)) {
+				ivar18 = 1;
+			} else {
+				if (arg5 == getOtherCommonData(ivar10, 1426)) {
+					ivar18 = 1;
+				}
+			}
+			if (((boolean)ivar18)) {
+				setWidgetHidden(0);
+				ivar14 = multiply(add(ivar6, arg3), mod(ivar9, ivar16));
+				ivar15 = multiply(divide(ivar9, ivar16), add(ivar7, arg4));
+				setWidgetPosition(ivar14, ivar15, 0, 0);
+				ivar9 = add(ivar9, 1);
+			} else {
+				setWidgetHidden(1);
+			}
+		}
+		ivar8 = add(ivar8, 1);
+	}
+	if (add(add(arg4, ivar15), ivar7) > getWidgetActualHeight(new WidgetPointer(arg0))) {
+		setWidgetScrollMax(0, add(ivar7, ivar15), new WidgetPointer(arg0));
+		setWidgetIsHidden(false, new WidgetPointer(arg1));
+		script_31(arg1, arg0, 792, 789, 790, 791, 773, 788);
+	} else {
+		setWidgetScrollMax(0, 0, new WidgetPointer(arg0));
+		cs2method2100(0, 0, new WidgetPointer(arg0));
+		deleteAllExtraChilds(new WidgetPointer(arg1));
+		setWidgetIsHidden(true, new WidgetPointer(arg1));
+	}
+	return;
+}

@@ -1,0 +1,16 @@
+int script_4754(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	ivar3 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg0), 1)) {
+		ivar3 = getWidgetActualHeight();
+	}
+	ivar4 = subtract(getWidgetActualHeight(new WidgetPointer(arg0)), ivar3);
+	arg1 = multiply(ivar4, divide(arg1, ivar4));
+	if (((boolean)arg2)) {
+		arg1 = add(arg1, ivar4);
+	} else {
+		arg1 = subtract(arg1, ivar4);
+	}
+	return arg1;
+}

@@ -1,0 +1,13 @@
+void script_590(int arg0,int arg1) {
+	if (((boolean)arg1)) {
+		standart_config_1112 = arg0;
+		standart_config_1109 = -1;
+		if (getGENotStarted(arg0)) {
+			standart_config_1113 = -1;
+			standart_config_1111 = 1;
+			standart_config_1110 = 0;
+		}
+		script_621();
+	}
+	return;
+}

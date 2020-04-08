@@ -1,0 +1,67 @@
+void script_2707(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,string arg7) {
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	if (((arg0 == -1) || (arg2 == -1)) || ((boolean)stringMethod4107(arg7, ""))) {
+		return;
+	}
+	if (globalint_1 < add(getClientCycle(), arg3)) {
+		if (globalint_1 < getClientCycle()) {
+			globalint_1 = getClientCycle();
+		}
+		globalint_1 = add(globalint_1, 2);
+		return;
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		arg5 = add(arg5, script_1743());
+		arg6 = add(arg6, script_1744());
+	}
+	globalint_1 = add(add(getClientCycle(), arg3), 10);
+	ivar7 = 0;
+	ivar8 = 0;
+	ivar9 = -1;
+	if (globalint_2 != 1) {
+		ivar9 = getWidgetParentId(new WidgetPointer(arg2));
+		if ((ivar9 != -1) && (arg4 >= getWidgetActualWidth(new WidgetPointer(ivar9)))) {
+			arg4 = getWidgetActualWidth(new WidgetPointer(ivar9));
+		}
+		ivar7 = add(6, getMaxLineWidth(subtract(arg4, 6), 495, arg7));
+		ivar8 = add(6, multiply(16, getLineCount(subtract(arg4, 6), 495, arg7)));
+		setWidgetSize(ivar7, ivar8, 0, 0, new WidgetPointer(arg2));
+		arg5 = subtract(subtract(arg5, 5), ivar7);
+		arg6 = subtract(subtract(arg6, 3), ivar8);
+		if (ivar9 != -1) {
+			if (add(arg5, ivar7) > getWidgetActualWidth(new WidgetPointer(ivar9))) {
+				arg5 = subtract(getWidgetActualWidth(new WidgetPointer(ivar9)), ivar7);
+			}
+			if (add(arg6, ivar8) > getWidgetActualHeight(new WidgetPointer(ivar9))) {
+				arg6 = subtract(getWidgetActualHeight(new WidgetPointer(ivar9)), ivar8);
+			}
+		}
+		if (arg5 < 0) {
+			arg5 = 0;
+		}
+		if (arg6 < 0) {
+			arg6 = 0;
+		}
+		setWidgetPosition(arg5, arg6, 0, 0, new WidgetPointer(arg2));
+		deleteAllExtraChilds(new WidgetPointer(arg2));
+		createExtraChild(new WidgetPointer(arg2), 3, 0);
+		setWidgetSize(ivar7, ivar8, 0, 0);
+		setWidgetFilled(1);
+		setWidgetRGB(new Color(255, 255, 160));
+		createExtraChild(new WidgetPointer(arg2), 3, 1);
+		setWidgetSize(ivar7, ivar8, 0, 0);
+		setWidgetFilled(0);
+		setWidgetRGB(new Color(0, 0, 0));
+		createExtraChild(new WidgetPointer(arg2), 4, 2);
+		setWidgetSize(subtract(arg4, 6), ivar8, 0, 0);
+		setWidgetPosition(0, 0, 1, 1);
+		setWidgetText(arg7);
+		setWidgetTextAlignment(1, 1, 16);
+		setWidgetFont(495);
+		setWidgetRGB(new Color(0, 0, 0));
+		globalint_2 = 1;
+	}
+	return;
+}

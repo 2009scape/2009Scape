@@ -1,0 +1,11 @@
+void script_2881() {
+	if (((boolean)bitconfig_4393) || ((boolean)bitconfig_542)) {
+		return;
+	}
+	if (((boolean)globalint_1077)) {
+		script_39(12255244, 12255248, 25, 189, "Click here to access full song list");
+	} else {
+		script_39(12255244, 12255248, 25, 189, "Click here to access playlist");
+	}
+	return;
+}

@@ -1,0 +1,21 @@
+void script_1450() {
+	int ivar0;
+	int ivar1;
+	ivar0 = 0;
+	ivar1 = getItemContainerLength(95);
+	while (ivar0 < ivar1) {
+		createExtraChild(new WidgetPointer(762,93), 5, ivar0);
+		setWidgetSize(36, 32, 0, 0);
+		setWidgetPosition(0, 0, 0, 0);
+		setWidgetHidden(1);
+		if (getItemIdInSlot(95, ivar0) != -1) {
+			script_1453(ivar0);
+		}
+		setWidgetBorderThickness(1);
+		setWidgetShadowColor(new Color(51, 51, 51));
+		setScriptCallOnMouseOver(1480, new WidgetPointer(762,93), ivar0, "Ii");
+		setScriptCallOnMouseExit(40, new WidgetPointer(762,97), "I");
+		ivar0 = add(ivar0, 1);
+	}
+	return;
+}

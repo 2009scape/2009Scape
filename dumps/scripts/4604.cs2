@@ -1,0 +1,27 @@
+void script_4604(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	setWidgetRGB(new Color(getColorRelatedMethod4020(standart_config_2174)), new WidgetPointer(arg2));
+	ivar3 = getWidgetActualHeight(new WidgetPointer(arg1));
+	ivar4 = 1;
+	if (bitconfig_9258 > 0) {
+		ivar4 = max(min(subtract(ivar3, multiply(bitconfig_9258, 2)), ivar3), 0);
+	}
+	script_4610(ivar4);
+	ivar5 = getWidgetActualHeight(new WidgetPointer(arg0));
+	ivar6 = 0;
+	if (bitconfig_9259 > 0) {
+		ivar6 = max(min(subtract(ivar5, multiply(bitconfig_9259, divide(ivar5, 8))), ivar5), 0);
+		ivar6 = max(min(subtract(ivar6, divide(ivar5, 16)), ivar5), 0);
+	}
+	ivar7 = 0;
+	if (bitconfig_9260 > 0) {
+		ivar7 = max(min(multiply(bitconfig_9260, divide(ivar5, 128)), ivar5), 0);
+	}
+	setWidgetRGB(new Color(bitconfig_9258), new WidgetPointer(arg0));
+	script_4609(ivar7, ivar6);
+	return;
+}

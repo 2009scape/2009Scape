@@ -1,0 +1,13 @@
+int script_975(int arg0,int arg1) {
+	setWidgetPosition(50, arg0, 0, 0);
+	setWidgetTextAlignment(0, 0, 16);
+	setWidgetRGB(new Color(70, 50, 10));
+	setWidgetFont(495);
+	setWidgetUnknownBoolean(false);
+	if (multiply(arg1, 16) < 32) {
+		arg0 = add(arg0, 32);
+	} else {
+		arg0 = add(arg0, add(multiply(arg1, 16), 5));
+	}
+	return arg0;
+}

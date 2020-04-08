@@ -1,0 +1,33 @@
+void script_4017(int arg0) {
+	string svar0;
+	string svar1;
+	setWidgetText(new WidgetPointer(917,121), cs2method_3408(105, 115, 3487, arg0));
+	svar0 = "Click to hide completed Tasks.";
+	svar1 = "Click to hide Tasks which are not in a set.";
+	if (((boolean)bitconfig_8579)) {
+		setScriptCallOnClickContextMenu(3983, 999, 0, 999, "iii", new WidgetPointer(917,106));
+		svar0 = "Click to show completed Tasks.";
+	} else {
+		setScriptCallOnClickContextMenu(3983, 999, 1, 999, "iii", new WidgetPointer(917,106));
+	}
+	setScriptCallOnMouseOver(38, new WidgetPointer(917,94), new WidgetPointer(917,97), svar0, 45, 150, "IIsii", new WidgetPointer(917,106));
+	if (((boolean)bitconfig_8580)) {
+		setScriptCallOnClickContextMenu(3983, 999, 999, 0, "iii", new WidgetPointer(917,114));
+		svar1 = "Click to show Tasks which are not in a set.";
+	} else {
+		setScriptCallOnClickContextMenu(3983, 999, 999, 1, "iii", new WidgetPointer(917,114));
+	}
+	setScriptCallOnMouseOver(38, new WidgetPointer(917,94), new WidgetPointer(917,97), svar1, 45, 150, "IIsii", new WidgetPointer(917,114));
+	if (((boolean)globalint_1429)) {
+		setWidgetSprite(4086, new WidgetPointer(917,142));
+		setScriptCallOnMouseEntered(4033, 0, 1, "ii", new WidgetPointer(917,142));
+		setScriptCallOnMouseExit(4033, 1, 1, "ii", new WidgetPointer(917,142));
+		setWidgetContextMenuOption(1, new WidgetPointer(917,142), "Turn-on");
+	} else {
+		setWidgetSprite(4084, new WidgetPointer(917,142));
+		setScriptCallOnMouseEntered(4033, 0, 0, "ii", new WidgetPointer(917,142));
+		setScriptCallOnMouseExit(4033, 1, 0, "ii", new WidgetPointer(917,142));
+		setWidgetContextMenuOption(1, new WidgetPointer(917,142), "Turn-off");
+	}
+	return;
+}

@@ -1,0 +1,30 @@
+void script_1415() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	while (ivar0 <= getItemContainerLength(93)) {
+		createExtraChild(new WidgetPointer(323,5), 5, ivar0);
+		setWidgetSize(36, 32, 0, 0);
+		setWidgetPosition(add(5, multiply(40, ivar1)), multiply(40, ivar2), 0, 0);
+		if (getItemIdInSlot(93, ivar0) != -1) {
+			setItemOnWidgetMethod1200(getItemIdInSlot(93, ivar0), getItemAmtInSlot(93, ivar0));
+			cs2method1305("<col=ff9040>" + getItemName(getItemIdInSlot(93, ivar0)));
+			setWidgetContextMenuOption(1, "<col=00ff00>" + "Value");
+			setWidgetContextMenuOption(2, "Pack " + "<col=ff0000>" + "1");
+			setWidgetContextMenuOption(3, "Pack " + "<col=ff0000>" + "5");
+			setWidgetContextMenuOption(4, "Pack " + "<col=ff0000>" + "All");
+			setWidgetContextMenuOption(5, "Pack " + "<col=ff0000>" + "X");
+			setWidgetContextMenuOption(10, "Examine");
+		}
+		ivar0 = add(ivar0, 1);
+		ivar1 = add(ivar1, 1);
+		if (ivar1 > 6) {
+			ivar1 = 0;
+			ivar2 = add(ivar2, 1);
+		}
+	}
+	return;
+}

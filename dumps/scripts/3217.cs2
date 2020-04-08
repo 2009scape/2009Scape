@@ -1,0 +1,32 @@
+void script_3217(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	string svar0;
+	if (getAccountCreateRC() == -3) {
+		return;
+	}
+	svar0 = "";
+	switch (arg4) {
+		case 6:
+			svar0 = globalstring_122;
+			break;
+		case 14:
+			svar0 = globalstring_326;
+			break;
+		case 7:
+			svar0 = script_2949(globalstring_124);
+			break;
+		case 8:
+			svar0 = script_2949(globalstring_125);
+			break;
+		case 15:
+			if (globalint_1407 > 0) {
+				svar0 = intToStr(globalint_1407);
+			}
+			break;
+		case 16:
+			svar0 = globalstring_330;
+	}
+	globalint_1099 = script_1401(arg0, 3793, 0, svar0);
+	script_3218(arg1, arg2, arg3, arg4, svar0);
+	script_2714(arg4, 0);
+	return;
+}

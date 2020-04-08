@@ -1,0 +1,14 @@
+int script_3265() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	while (ivar0 < min(bitconfig_7554, 15)) {
+		ivar1 = add(ivar1, subtract(22, ivar2));
+		ivar2 = min(add(ivar2, 3), 19);
+		ivar0 = add(ivar0, 1);
+	}
+	return ivar1;
+}

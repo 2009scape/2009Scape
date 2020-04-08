@@ -1,0 +1,27 @@
+void script_1698() {
+	string svar0;
+	setScriptCallOnConfigChange(1699, 1583, 1584, 1582, 1395, 4, "Y", new WidgetPointer(271,9));
+	setWidgetScrollMax(getWidgetActualWidth(new WidgetPointer(271,8)), getWidgetActualHeight(new WidgetPointer(271,8)), new WidgetPointer(271,5));
+	setScriptCallOnClickContextMenu(1701, "", new WidgetPointer(271,12));
+	svar0 = "This is the effect that prayers and curses have during combat. It includes curses that have used against you. The adjustment has no effect outside of combat. The percentage shown is relative to your skill level and may vary depending on the enemy you are fighting, and the prayers or curses used. Partial percentages are not shown.";
+	if (((boolean)globalint_1052)) {
+		setWidgetSize(16384, 63, 2, 0, new WidgetPointer(271,9));
+		setWidgetSize(16384, add(63, getWidgetActualHeight(new WidgetPointer(271,0))), 2, 1, new WidgetPointer(271,5));
+		setWidgetSize(16, add(add(63, getWidgetActualHeight(new WidgetPointer(271,0))), 2), 0, 1, new WidgetPointer(271,6));
+		setWidgetIsHidden(false, new WidgetPointer(271,24));
+		script_1700();
+		script_1704();
+		setScriptCallOnMouseOver(38, new WidgetPointer(271,13), new WidgetPointer(271,49), svar0, 25, 190, "IIsii", new WidgetPointer(271,13));
+		setScriptCallOnMouseExit(40, new WidgetPointer(271,49), "I", new WidgetPointer(271,13));
+	} else {
+		setWidgetSize(16384, 19, 2, 0, new WidgetPointer(271,9));
+		setWidgetSize(16384, add(19, getWidgetActualHeight(new WidgetPointer(271,0))), 2, 1, new WidgetPointer(271,5));
+		setWidgetSize(16, add(add(19, getWidgetActualHeight(new WidgetPointer(271,0))), 2), 0, 1, new WidgetPointer(271,6));
+		setWidgetIsHidden(true, new WidgetPointer(271,24));
+		script_1700();
+		script_1704();
+		setScriptCallOnMouseOver(-1, "", new WidgetPointer(271,13));
+		setScriptCallOnMouseExit(-1, "", new WidgetPointer(271,13));
+	}
+	return;
+}

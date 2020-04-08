@@ -1,0 +1,14 @@
+void script_5232(int arg0,int arg1) {
+	if ((cs2method5407(0) == 5) && (globalint_1007 == 2)) {
+		if (((boolean)arg1)) {
+			cameraMethod5502(0, 1, 800, 700, 1, 1);
+			setScriptCallOnMinimapRelatedSetting3(5232, new WidgetPointer(arg0), 2, "Ii", new WidgetPointer(arg0));
+			return;
+		}
+		if (arg1 == 2) {
+			cameraMethod5502(0, 2, 700, 40, 1, 2);
+		}
+	}
+	setScriptCallOnMinimapRelatedSetting3(-1, "", new WidgetPointer(arg0));
+	return;
+}

@@ -1,0 +1,11 @@
+void script_3143(int arg0,string arg1) {
+	if (((boolean)arg0)) {
+		setWidgetRGB(new Color(235, 224, 188), new WidgetPointer(910,8));
+	} else {
+		if (((boolean)arg0)) {
+			setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(910,8));
+		}
+	}
+	setWidgetText(new WidgetPointer(910,8), arg1);
+	return;
+}

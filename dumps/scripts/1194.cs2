@@ -1,0 +1,17 @@
+void script_1194() {
+	int ivar0;
+	int ivar1;
+	if (globalint_1002 == -1) {
+		return;
+	}
+	ivar0 = subtract(extractX(globalint_1002), extractX(getMyPositionHash()));
+	if ((ivar0 > 10) || (ivar0 < -10)) {
+		return;
+	}
+	ivar1 = subtract(extractY(globalint_1002), extractY(getMyPositionHash()));
+	if ((ivar1 > 10) || (ivar1 < -10)) {
+		return;
+	}
+	cameraMethod5511(globalint_1002);
+	return;
+}

@@ -1,0 +1,242 @@
+void script_4982(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	int ivar22;
+	int ivar23;
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 0;
+	ivar8 = 0;
+	ivar9 = 0;
+	ivar10 = 0;
+	ivar11 = 0;
+	ivar12 = 0;
+	ivar13 = 0;
+	ivar14 = 0;
+	ivar15 = 0;
+	ivar16 = 0;
+	ivar17 = 0;
+	ivar18 = 0;
+	ivar19 = 0;
+	ivar20 = 0;
+	ivar21 = 0;
+	ivar22 = 0;
+	ivar23 = subtract(arg2, arg4);
+	ivar23 = max(ivar23, 0);
+	if (citadelConfigsInitialized()) {
+		switch (arg2) {
+			case 0:
+				ivar17 = getOtherCommonData(arg0, 1483);
+				ivar18 = getOtherCommonData(arg0, 1490);
+				ivar19 = getOtherCommonData(arg0, 1497);
+				ivar20 = getOtherCommonData(arg0, 1504);
+				ivar21 = getOtherCommonData(arg0, 1511);
+				ivar22 = getOtherCommonData(arg0, 1518);
+				break;
+			case 1:
+				ivar17 = getOtherCommonData(arg0, 1484);
+				ivar18 = getOtherCommonData(arg0, 1491);
+				ivar19 = getOtherCommonData(arg0, 1498);
+				ivar20 = getOtherCommonData(arg0, 1505);
+				ivar21 = getOtherCommonData(arg0, 1512);
+				ivar22 = getOtherCommonData(arg0, 1519);
+				break;
+			case 2:
+				ivar17 = getOtherCommonData(arg0, 1485);
+				ivar18 = getOtherCommonData(arg0, 1492);
+				ivar19 = getOtherCommonData(arg0, 1499);
+				ivar20 = getOtherCommonData(arg0, 1506);
+				ivar21 = getOtherCommonData(arg0, 1513);
+				ivar22 = getOtherCommonData(arg0, 1520);
+				break;
+			case 3:
+				ivar17 = getOtherCommonData(arg0, 1486);
+				ivar18 = getOtherCommonData(arg0, 1493);
+				ivar19 = getOtherCommonData(arg0, 1500);
+				ivar20 = getOtherCommonData(arg0, 1507);
+				ivar21 = getOtherCommonData(arg0, 1514);
+				ivar22 = getOtherCommonData(arg0, 1521);
+				break;
+			case 4:
+				ivar17 = getOtherCommonData(arg0, 1487);
+				ivar18 = getOtherCommonData(arg0, 1494);
+				ivar19 = getOtherCommonData(arg0, 1501);
+				ivar20 = getOtherCommonData(arg0, 1508);
+				ivar21 = getOtherCommonData(arg0, 1515);
+				ivar22 = getOtherCommonData(arg0, 1522);
+				break;
+			case 5:
+				ivar17 = getOtherCommonData(arg0, 1488);
+				ivar18 = getOtherCommonData(arg0, 1495);
+				ivar19 = getOtherCommonData(arg0, 1502);
+				ivar20 = getOtherCommonData(arg0, 1509);
+				ivar21 = getOtherCommonData(arg0, 1516);
+				ivar22 = getOtherCommonData(arg0, 1523);
+				break;
+			case 6:
+				ivar17 = getOtherCommonData(arg0, 1489);
+				ivar18 = getOtherCommonData(arg0, 1496);
+				ivar19 = getOtherCommonData(arg0, 1503);
+				ivar20 = getOtherCommonData(arg0, 1510);
+				ivar21 = getOtherCommonData(arg0, 1517);
+				ivar22 = getOtherCommonData(arg0, 1524);
+		}
+		switch (arg2) {
+			case 1:
+				ivar5 = getOtherCommonData(arg1, 1483);
+				ivar6 = getOtherCommonData(arg1, 1490);
+				ivar7 = getOtherCommonData(arg1, 1497);
+				ivar8 = getOtherCommonData(arg1, 1504);
+				ivar9 = getOtherCommonData(arg1, 1511);
+				ivar10 = getOtherCommonData(arg1, 1518);
+				break;
+			case 2:
+				ivar5 = getOtherCommonData(arg1, 1484);
+				ivar6 = getOtherCommonData(arg1, 1491);
+				ivar7 = getOtherCommonData(arg1, 1498);
+				ivar8 = getOtherCommonData(arg1, 1505);
+				ivar9 = getOtherCommonData(arg1, 1512);
+				ivar10 = getOtherCommonData(arg1, 1519);
+				break;
+			case 3:
+				ivar5 = getOtherCommonData(arg1, 1485);
+				ivar6 = getOtherCommonData(arg1, 1492);
+				ivar7 = getOtherCommonData(arg1, 1499);
+				ivar8 = getOtherCommonData(arg1, 1506);
+				ivar9 = getOtherCommonData(arg1, 1513);
+				ivar10 = getOtherCommonData(arg1, 1520);
+				break;
+			case 4:
+				ivar5 = getOtherCommonData(arg1, 1486);
+				ivar6 = getOtherCommonData(arg1, 1493);
+				ivar7 = getOtherCommonData(arg1, 1500);
+				ivar8 = getOtherCommonData(arg1, 1507);
+				ivar9 = getOtherCommonData(arg1, 1514);
+				ivar10 = getOtherCommonData(arg1, 1521);
+				break;
+			case 5:
+				ivar5 = getOtherCommonData(arg1, 1487);
+				ivar6 = getOtherCommonData(arg1, 1494);
+				ivar7 = getOtherCommonData(arg1, 1501);
+				ivar8 = getOtherCommonData(arg1, 1508);
+				ivar9 = getOtherCommonData(arg1, 1515);
+				ivar10 = getOtherCommonData(arg1, 1522);
+				break;
+			case 6:
+				ivar5 = getOtherCommonData(arg1, 1488);
+				ivar6 = getOtherCommonData(arg1, 1495);
+				ivar7 = getOtherCommonData(arg1, 1502);
+				ivar8 = getOtherCommonData(arg1, 1509);
+				ivar9 = getOtherCommonData(arg1, 1516);
+				ivar10 = getOtherCommonData(arg1, 1523);
+				break;
+			case 7:
+				ivar5 = getOtherCommonData(arg1, 1489);
+				ivar6 = getOtherCommonData(arg1, 1496);
+				ivar7 = getOtherCommonData(arg1, 1503);
+				ivar8 = getOtherCommonData(arg1, 1510);
+				ivar9 = getOtherCommonData(arg1, 1517);
+				ivar10 = getOtherCommonData(arg1, 1524);
+		}
+		if (ivar23 > 0) {
+			switch (ivar23) {
+				case 1:
+					ivar11 = getOtherCommonData(arg1, 1483);
+					ivar12 = getOtherCommonData(arg1, 1490);
+					ivar13 = getOtherCommonData(arg1, 1497);
+					ivar14 = getOtherCommonData(arg1, 1504);
+					ivar15 = getOtherCommonData(arg1, 1511);
+					ivar16 = getOtherCommonData(arg1, 1518);
+					break;
+				case 2:
+					ivar11 = getOtherCommonData(arg1, 1484);
+					ivar12 = getOtherCommonData(arg1, 1491);
+					ivar13 = getOtherCommonData(arg1, 1498);
+					ivar14 = getOtherCommonData(arg1, 1505);
+					ivar15 = getOtherCommonData(arg1, 1512);
+					ivar16 = getOtherCommonData(arg1, 1519);
+					break;
+				case 3:
+					ivar11 = getOtherCommonData(arg1, 1485);
+					ivar12 = getOtherCommonData(arg1, 1492);
+					ivar13 = getOtherCommonData(arg1, 1499);
+					ivar14 = getOtherCommonData(arg1, 1506);
+					ivar15 = getOtherCommonData(arg1, 1513);
+					ivar16 = getOtherCommonData(arg1, 1520);
+					break;
+				case 4:
+					ivar11 = getOtherCommonData(arg1, 1486);
+					ivar12 = getOtherCommonData(arg1, 1493);
+					ivar13 = getOtherCommonData(arg1, 1500);
+					ivar14 = getOtherCommonData(arg1, 1507);
+					ivar15 = getOtherCommonData(arg1, 1514);
+					ivar16 = getOtherCommonData(arg1, 1521);
+					break;
+				case 5:
+					ivar11 = getOtherCommonData(arg1, 1487);
+					ivar12 = getOtherCommonData(arg1, 1494);
+					ivar13 = getOtherCommonData(arg1, 1501);
+					ivar14 = getOtherCommonData(arg1, 1508);
+					ivar15 = getOtherCommonData(arg1, 1515);
+					ivar16 = getOtherCommonData(arg1, 1522);
+					break;
+				case 6:
+					ivar11 = getOtherCommonData(arg1, 1488);
+					ivar12 = getOtherCommonData(arg1, 1495);
+					ivar13 = getOtherCommonData(arg1, 1502);
+					ivar14 = getOtherCommonData(arg1, 1509);
+					ivar15 = getOtherCommonData(arg1, 1516);
+					ivar16 = getOtherCommonData(arg1, 1523);
+			}
+		} else {
+			ivar11 = 0;
+			ivar12 = 0;
+			ivar13 = 0;
+			ivar14 = 0;
+			ivar15 = 0;
+			ivar16 = 0;
+		}
+		if (((boolean)arg3) && ((boolean)arg2)) {
+			ivar5 = multiply(ivar5, 2);
+			ivar6 = multiply(ivar6, 2);
+			ivar7 = multiply(ivar7, 2);
+			ivar8 = multiply(ivar8, 2);
+			ivar9 = multiply(ivar9, 2);
+			ivar10 = multiply(ivar10, 2);
+		}
+		setWidgetText(new WidgetPointer(1092,477), intToStr(ivar5));
+		setWidgetText(new WidgetPointer(1092,484), intToStr(ivar6));
+		setWidgetText(new WidgetPointer(1092,491), intToStr(ivar7));
+		setWidgetText(new WidgetPointer(1092,498), intToStr(ivar8));
+		setWidgetText(new WidgetPointer(1092,505), intToStr(ivar9));
+		setWidgetText(new WidgetPointer(1092,513), intToStr(ivar10));
+		setWidgetText(new WidgetPointer(1092,610), intToStr(ivar17));
+		setWidgetText(new WidgetPointer(1092,618), intToStr(ivar18));
+		setWidgetText(new WidgetPointer(1092,626), intToStr(ivar19));
+		setWidgetText(new WidgetPointer(1092,634), intToStr(ivar20));
+		setWidgetText(new WidgetPointer(1092,644), intToStr(ivar21));
+		setWidgetText(new WidgetPointer(1092,651), intToStr(ivar22));
+		setWidgetText(new WidgetPointer(1092,660), intToStr(ivar11));
+		setWidgetText(new WidgetPointer(1092,668), intToStr(ivar12));
+		setWidgetText(new WidgetPointer(1092,676), intToStr(ivar13));
+		setWidgetText(new WidgetPointer(1092,684), intToStr(ivar14));
+		setWidgetText(new WidgetPointer(1092,694), intToStr(ivar15));
+		setWidgetText(new WidgetPointer(1092,701), intToStr(ivar16));
+	}
+	return;
+}

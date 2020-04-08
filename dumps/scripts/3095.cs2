@@ -1,0 +1,47 @@
+void script_3095(int arg0,int arg1,int arg2) {
+	string svar0;
+	string svar1;
+	svar0 = "";
+	svar1 = "";
+	switch (arg2) {
+		case 4:
+			svar0 = "ticketing";
+			svar1 = "inbox.ws";
+			setScriptCallOnClickContextMenu(3088, svar0, svar1, 1, "ss1", new WidgetPointer(arg0));
+			break;
+		case 11:
+			svar0 = "password_history";
+			svar1 = "password.ws";
+			setScriptCallOnClickContextMenu(3088, svar0, svar1, 1, "ss1", new WidgetPointer(arg0));
+			break;
+		case 18:
+			svar0 = "accountappeal";
+			svar1 = "lockchoice.ws";
+			setScriptCallOnClickContextMenu(3089, svar0, svar1, 1, "ss1", new WidgetPointer(arg0));
+			break;
+		case 31:
+			svar0 = "displaynames";
+			svar1 = "name.ws";
+			setScriptCallOnClickContextMenu(3088, svar0, svar1, 1, "ss1", new WidgetPointer(arg0));
+			break;
+		case 19:
+		case 32:
+		case -2000:
+		case -3000:
+		case 40:
+		case 12:
+		case 30:
+			svar0 = "dob";
+			svar1 = "set_members_dob.ws";
+			setScriptCallOnClickContextMenu(3088, svar0, svar1, 1, "ss1", new WidgetPointer(arg0));
+			break;
+		case 21:
+			setScriptCallOnMousePressed(1872, "", new WidgetPointer(arg0));
+			setScriptCallOnMousePressed(-1, "", new WidgetPointer(arg1));
+			return;
+		default:
+			setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(arg0));
+	}
+	setScriptCallOnClickContextMenu(3096, "", new WidgetPointer(arg1));
+	return;
+}

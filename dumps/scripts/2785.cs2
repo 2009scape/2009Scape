@@ -1,0 +1,15 @@
+int script_2785(int arg0) {
+	switch (arg0) {
+		case 34:
+		case 32:
+		case 33:
+			if (standart_config_281 < 93) {
+				return 32;
+			}
+			if (standart_config_281 < 120) {
+				return 33;
+			}
+			return 34;
+	}
+	return arg0;
+}

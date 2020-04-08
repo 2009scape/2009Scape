@@ -1,0 +1,7 @@
+void script_654() {
+	setScriptCallOnItemContainerUpdate(4113, 523, 524, 525, 526, 527, 528, 540, 7, "Y", new WidgetPointer(109,16));
+	setScriptCallOnGrandExchangeUpdate(4113, "", new WidgetPointer(109,16));
+	setScriptCallOnConfigChange(4113, 1267, 1269, 2, "Y", new WidgetPointer(109,16));
+	script_4114();
+	return;
+}

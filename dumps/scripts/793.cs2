@@ -1,0 +1,127 @@
+void script_793(int arg0,int arg1,int arg2,int arg3,int arg4,string arg5,string arg6,string arg7,string arg8,string arg9) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	int ivar22;
+	int ivar23;
+	int ivar24;
+	int ivar25;
+	int ivar26;
+	int ivar27;
+	int ivar28;
+	int ivar29;
+	int ivar30;
+	int ivar31;
+	int ivar32;
+	int ivar33;
+	int ivar34;
+	string svar5;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar5 = 0;
+	ivar6 = 0;
+	setWidgetScrollMax(0, multiply(add(divide(subtract(arg4, arg3), arg1), 1), 57), new WidgetPointer(arg0));
+	ivar7 = 0;
+	ivar8 = 1;
+	ivar9 = 0;
+	ivar10 = 0;
+	ivar11 = -1;
+	ivar12 = 12525;
+	ivar13 = 12530;
+	ivar14 = 2859;
+	ivar15 = 12527;
+	ivar16 = -1;
+	ivar17 = -1;
+	ivar18 = -1;
+	ivar19 = -1;
+	ivar20 = -1;
+	ivar21 = -1;
+	ivar22 = 1;
+	ivar23 = 7;
+	ivar24 = 1;
+	ivar25 = 1;
+	ivar26 = 0;
+	ivar27 = 0;
+	ivar28 = 0;
+	ivar29 = 0;
+	ivar30 = 0;
+	ivar31 = 0;
+	svar5 = "hello";
+	ivar32 = 0;
+	globalarray_0 = new int[10];
+	ivar33 = -1;
+	ivar34 = 0;
+	while (ivar7 <= subtract(arg4, arg3)) {
+		ivar5 = add(add(16, multiply(mod(ivar7, arg1), 48)), multiply(mod(ivar7, arg1), 5));
+		ivar6 = add(multiply(divide(ivar7, arg1), 52), multiply(divide(ivar7, arg1), 5));
+		createExtraChild(new WidgetPointer(arg0), 5, ivar34);
+		ivar34 = add(ivar34, 1);
+		setWidgetSize(48, 52, 0, 0);
+		setWidgetPosition(ivar5, ivar6, 0, 0);
+		setWidgetSprite(2205);
+		setScriptCallOnMouseEntered(2724, new WidgetPointer(-32768,3), ivar34, 0, "Ii1");
+		setScriptCallOnMouseExit(2724, new WidgetPointer(-32768,3), ivar34, 1, "Ii1");
+		createExtraChild(new WidgetPointer(arg0), 5, ivar34);
+		ivar34 = add(ivar34, 1);
+		setWidgetSize(48, 52, 0, 0);
+		setWidgetPosition(ivar5, ivar6, 0, 0);
+		setWidgetSprite(2206);
+		setWidgetHidden(1);
+		createExtraChild(new WidgetPointer(arg0), 5, ivar34);
+		setWidgetSize(36, 32, 0, 0);
+		setWidgetPosition(add(ivar5, 6), add(ivar6, 4), 0, 0);
+		ivar33 = cs2method_3408(105, 111, 1182, ivar8);
+		if (((boolean)ivar8)) {
+			if (((boolean)script_795(ivar33))) {
+				script_794(ivar33, ivar33, arg0, ivar34, arg5, arg6, arg7, arg8, arg9);
+			} else {
+				script_794(cs2method_3408(105, 111, 1183, ivar8), ivar33, arg0, ivar34, arg5, arg6, arg7, arg8, arg9);
+			}
+		} else if (ivar33 == 12292) {
+			script_794(ivar33, ivar33, arg0, ivar34, arg5, arg6, arg7, arg8, arg9);
+		} else {
+			script_794(cs2method_3408(105, 111, 1183, ivar8), ivar33, arg0, ivar34, arg5, arg6, arg7, arg8, arg9);
+		}
+		svar5 = cs2method_3408(111, 115, 1187, ivar33);
+		ivar32 = cs2method_3408(111, 105, 1185, ivar33);
+		if (((boolean)ivar8)) {
+			setScriptCallOnMouseOver(770, -2147483643, new WidgetPointer(672,24), new WidgetPointer(672,16), ivar32, svar5, ivar12, 1, ivar13, ivar23, ivar14, ivar24, ivar15, ivar25, ivar16, ivar26, ivar17, ivar27, ivar18, ivar28, ivar19, ivar29, ivar20, ivar30, ivar21, ivar31, "iIIisoioioioioioioioioioi");
+			setScriptCallOnMouseExit(40, new WidgetPointer(672,24), "I");
+		} else {
+			svar5 = "You do not have access to this type of Summoning pouch.";
+			setScriptCallOnMouseOver(800, -2147483643, new WidgetPointer(672,24), new WidgetPointer(672,16), ivar32, svar5, "iIIis");
+			setScriptCallOnMouseExit(40, new WidgetPointer(672,24), "I");
+		}
+		ivar34 = add(ivar34, 1);
+		createExtraChild(new WidgetPointer(arg0), 5, ivar34);
+		ivar34 = add(ivar34, 1);
+		setWidgetSize(12, 12, 0, 0);
+		setWidgetPosition(add(ivar5, 2), add(ivar6, 38), 0, 0);
+		setItemOnWidgetMethod1205(12183, 1);
+		createExtraChild(new WidgetPointer(arg0), 4, ivar34);
+		ivar34 = add(ivar34, 1);
+		setWidgetSize(31, 12, 0, 0);
+		setWidgetPosition(add(ivar5, 13), add(ivar6, 39), 0, 0);
+		setWidgetFont(494);
+		setWidgetRGB(new Color(255, 255, 255));
+		setWidgetTextAlignment(2, 1, 0);
+		setWidgetText(script_940(getItemHashmapData(ivar33, 541)));
+		setWidgetUnknownBoolean(true);
+		ivar7 = add(ivar7, 1);
+		ivar8 = add(ivar8, 1);
+	}
+	return;
+}

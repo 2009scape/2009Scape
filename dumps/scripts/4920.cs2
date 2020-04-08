@@ -1,0 +1,39 @@
+void script_4920() {
+	string svar0;
+	string svar1;
+	flow_0:
+		svar0 = "";
+		IF ((((boolean)globalint_1557) && (globalint_1558 < 6)) && (((boolean)globalint_1558) && (globalint_1559 < 20))) 
+			GOTO	flow_4
+		GOTO	flow_5
+	flow_4:
+		GOTO	flow_5
+	flow_5:
+		if ((((boolean)globalint_1557) && ((boolean)globalint_1558)) && ((boolean)globalint_1559)) {
+			setWidgetText(new WidgetPointer(1092,1831), "Due!");
+			return;
+		}
+		if (globalint_1557 > 0) {
+			svar0 = concat(svar0, intToStr(globalint_1557) + "d ");
+		}
+		if (globalint_1558 > 0) {
+			svar0 = concat(svar0, intToStr(globalint_1558) + "h ");
+		}
+		if (globalint_1559 > 0) {
+			svar0 = concat(svar0, intToStr(globalint_1559) + "m");
+		}
+		setWidgetText(new WidgetPointer(1092,1831), svar0);
+		svar1 = "";
+		if (citadelConfigsInitialized()) {
+			/* 
+				mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:106
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+					at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+					at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+					at tests.Main.main(Main.java:45)
+				
+			 */
+		}
+		return;
+}

@@ -1,0 +1,8 @@
+void script_2899() {
+	int ivar0;
+	setWidgetIsHidden(false, new WidgetPointer(476,58));
+	cs2method2103(0, new WidgetPointer(476,58));
+	ivar0 = getClientCycle();
+	setScriptCallOnGameloop(2900, ivar0, "i", new WidgetPointer(476,58));
+	return;
+}

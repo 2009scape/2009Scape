@@ -1,0 +1,36 @@
+void script_4701(int arg0,int arg1,int arg2,string arg3) {
+	globalint_1553 = arg1;
+	globalint_1554 = arg2;
+	globalstring_128 = arg3;
+	if (((boolean)arg0)) {
+		if ((globalint_1100 == 43) || (globalint_1100 == 42)) {
+			script_2190(0, 12, 1, "Leave queue", "Are you sure you wish to leave the queue, you will lose your position if you do.", "", "");
+			return;
+		}
+		script_3141(arg2, arg3);
+		if ((arg1 > -1) && setWidgetRegister(new WidgetPointer(910,64), arg1)) {
+			setWidgetIsHidden(false, new WidgetPointer(910,67));
+			setWidgetPosition(0, getWidgetActualY(), 0, 0, new WidgetPointer(910,67));
+		}
+		if (getWorldId() == globalint_998) {
+			if (setWidgetRegister(new WidgetPointer(910,21), 3)) {
+				setWidgetHidden(0);
+			}
+		} else {
+			if (setWidgetRegister(new WidgetPointer(910,21), 3)) {
+				setWidgetHidden(1);
+			}
+		}
+		if (getWorldId() == globalint_999) {
+			if (setWidgetRegister(new WidgetPointer(910,22), 3)) {
+				setWidgetHidden(0);
+			}
+		} else {
+			if (setWidgetRegister(new WidgetPointer(910,22), 3)) {
+				setWidgetHidden(1);
+			}
+		}
+		script_3064(1);
+	}
+	return;
+}

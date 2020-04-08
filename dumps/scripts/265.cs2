@@ -1,0 +1,25 @@
+void script_265() {
+	string svar0;
+	svar0 = "None";
+	switch (globalint_1110) {
+		case 1:
+			svar0 = "Standard";
+			break;
+		case 3:
+			svar0 = "Large";
+			break;
+		case 2:
+			svar0 = "Slim";
+			break;
+		case 4:
+			svar0 = "Bone";
+			break;
+		case 5:
+			svar0 = "Wooden";
+			break;
+		case 6:
+			svar0 = "Double";
+	}
+	setWidgetText(new WidgetPointer(923,52), svar0);
+	return;
+}

@@ -1,0 +1,13 @@
+void script_2860() {
+	if (((boolean)globalint_1074)) {
+		globalint_1073 = add(globalint_1073, 25);
+		if (globalint_1073 > globalint_1069) {
+			globalint_1073 = globalint_1069;
+		}
+	} else if (((boolean)globalint_1074)) {
+		globalint_1072 = addToCoordinate(globalint_1072, 0, 0, 1);
+	} else {
+		cs2method5507();
+	}
+	return;
+}

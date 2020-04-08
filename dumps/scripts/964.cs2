@@ -1,0 +1,61 @@
+void script_964() {
+	flow_0:
+		SWITCH (bitconfig_2341) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_2
+			case 3:
+				 GOTO flow_3
+		}
+		globalint_122 = 0;
+		GOTO	flow_4
+	flow_1:
+		globalint_122 = 1536;
+		GOTO	flow_4
+	flow_2:
+		globalint_122 = 1024;
+		GOTO	flow_4
+	flow_3:
+		globalint_122 = 512;
+	flow_4:
+		SWITCH (bitconfig_2342) {
+			case 1:
+				 GOTO flow_5
+			case 2:
+				 GOTO flow_6
+			case 3:
+				 GOTO flow_7
+		}
+		globalint_123 = 0;
+		GOTO	flow_8
+	flow_5:
+		globalint_123 = 1536;
+		GOTO	flow_8
+	flow_6:
+		globalint_123 = 1024;
+		GOTO	flow_8
+	flow_7:
+		globalint_123 = 512;
+	flow_8:
+		SWITCH (bitconfig_2343) {
+			case 1:
+				 GOTO flow_9
+			case 2:
+				 GOTO flow_10
+			case 3:
+				 GOTO flow_11
+		}
+		globalint_124 = 0;
+		GOTO	flow_12
+	flow_9:
+		globalint_124 = 1536;
+		GOTO	flow_12
+	flow_10:
+		globalint_124 = 1024;
+		GOTO	flow_12
+	flow_11:
+		globalint_124 = 512;
+	flow_12:
+		return;
+}

@@ -1,0 +1,57 @@
+void script_4634(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	ivar1 = -1;
+	script_1174(11);
+	switch (arg0) {
+		case 1:
+			ivar1 = 0;
+	}
+	globalint_1100 = -1;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 0;
+	if ((((boolean)cs2method5420()) && ((boolean)script_2727())) && ((boolean)globalint_547)) {
+		globalint_174 = 12;
+		setWidgetIsHidden(false, new WidgetPointer(744,28));
+		playMusicEffect(349, 0);
+		script_3412(48758826, 48758827);
+		ivar4 = getWidgetActualWidth(new WidgetPointer(744,43));
+		ivar5 = getWidgetActualWidth(new WidgetPointer(744,43));
+		ivar2 = max(337, add(getTextWidth(591, getWidgetText(new WidgetPointer(744,42))), 31));
+		ivar5 = max(152, multiply(getLineCount(ivar4, 496, getWidgetText(new WidgetPointer(744,43))), 16));
+		ivar3 = max(252, add(ivar5, 100));
+		setWidgetSize(ivar4, ivar5, 0, 0, new WidgetPointer(744,43));
+		setWidgetSize(ivar2, ivar3, 0, 0, new WidgetPointer(744,28));
+		setWidgetIsHidden(true, new WidgetPointer(744,26));
+		setWidgetIsHidden(true, new WidgetPointer(744,27));
+		return;
+	}
+	globalint_200 = 0;
+	globalint_201 = 0;
+	ivar6 = 39059516;
+	ivar7 = 39059501;
+	if (hasSSKey()) {
+		ivar6 = 63897649;
+		ivar7 = 63897644;
+	}
+	setWidgetText(new WidgetPointer(ivar6), "Logging in...");
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(ivar7));
+	script_2950(-3, 0, 1, -1, 1, 1, 0, "Logging In - Please Wait", "Abort Login", "");
+	setScriptCallOnMousePressed(4635, "", new WidgetPointer(596,15));
+	setWidgetIsHidden(false, new WidgetPointer(596,9));
+	globalint_1100 = -3;
+	cs2method5632(ivar1);
+	if (hasSSKey()) {
+		setScriptCallOnGameloop(2946, arg0, "i", new WidgetPointer(975,26));
+	} else {
+		setScriptCallOnGameloop(2946, arg0, "i", new WidgetPointer(596,7));
+	}
+	return;
+}

@@ -1,0 +1,75 @@
+void script_4146() {
+	int ivar0;
+	ivar0 = 0;
+	if (isBitFlagged(globalint_98, 31)) {
+		setWidgetIsHidden(true, new WidgetPointer(14,13));
+		setWidgetIsHidden(false, new WidgetPointer(14,31));
+		script_915(917537);
+		script_915(917539);
+	} else {
+		flow_2:
+			setWidgetIsHidden(false, new WidgetPointer(14,13));
+			setWidgetIsHidden(true, new WidgetPointer(14,31));
+			script_1088(917518, 0);
+			script_1298(917520, 0, 0, 0);
+			script_1088(917525, 19);
+			ivar0 = subtract(getWidgetActualHeight(new WidgetPointer(14,16)), 14);
+			SWITCH (bitAnd(globalint_98, 3)) {
+				case 0:
+					 GOTO flow_3
+				case 3:
+					 GOTO flow_5
+			}
+			GOTO	flow_4
+		flow_3:
+			setWidgetText(new WidgetPointer(14,23), "No PIN set");
+			ivar0 = divide(ivar0, 2);
+			script_4147(917522, ivar0, divide(subtract(0, ivar0), 2), "Set a PIN");
+			script_4147(917523, ivar0, divide(ivar0, 2), "Change recovery delay");
+			setWidgetIsHidden(true, new WidgetPointer(14,20));
+			GOTO	flow_6
+		flow_4:
+			setWidgetText(new WidgetPointer(14,23), "You have a PIN");
+			ivar0 = divide(ivar0, 3);
+			script_4147(917522, ivar0, subtract(0, ivar0), "Change your PIN");
+			script_4147(917523, ivar0, 0, "Delete your PIN");
+			script_4147(917524, ivar0, ivar0, "Change recovery delay");
+			GOTO	flow_6
+		flow_5:
+			setWidgetText(new WidgetPointer(14,23), "PIN coming soon");
+			ivar0 = min(ivar0, 50);
+			script_4147(917522, ivar0, 0, "Cancel the PIN");
+			setWidgetIsHidden(true, new WidgetPointer(14,19));
+			setWidgetIsHidden(true, new WidgetPointer(14,20));
+		flow_6:
+			if (isBitFlagged(globalint_98, 10)) {
+				setWidgetText(new WidgetPointer(14,25), "7 days");
+			} else {
+				setWidgetText(new WidgetPointer(14,25), "3 days");
+			}
+	}
+	deleteAllExtraChilds(new WidgetPointer(14,28));
+	createExtraChild(new WidgetPointer(14,28), 4, 0);
+	setWidgetFont(495);
+	setWidgetRGB(new Color(255, 152, 31));
+	setWidgetUnknownBoolean(true);
+	setWidgetTextAlignment(0, 1, 0);
+	setWidgetText(globalstring_344);
+	if (add(multiply(getLineCount(subtract(getWidgetActualWidth(new WidgetPointer(getWidgetParentId(new WidgetPointer(14,28)))), 14), 495, globalstring_344), 12), 5) <= getWidgetActualHeight(new WidgetPointer(14,28))) {
+		setWidgetSize(14, 40, 1, 1, new WidgetPointer(14,28));
+		setWidgetScrollMax(0, 0, new WidgetPointer(14,28));
+		setWidgetPosition(0, 0, 1, 1);
+		setWidgetSize(0, 0, 1, 1);
+		setWidgetIsHidden(true, new WidgetPointer(14,29));
+		return;
+	}
+	setWidgetSize(31, 40, 1, 1, new WidgetPointer(14,28));
+	ivar0 = add(multiply(getLineCount(getWidgetActualWidth(new WidgetPointer(14,28)), 495, globalstring_344), 12), 5);
+	setWidgetScrollMax(0, ivar0, new WidgetPointer(14,28));
+	cs2method2100(0, 0, new WidgetPointer(14,28));
+	setWidgetPosition(0, 0, 1, 0);
+	setWidgetSize(0, ivar0, 1, 0);
+	setWidgetIsHidden(false, new WidgetPointer(14,29));
+	script_31(917533, 917532, 792, 789, 790, 791, 773, 788);
+	return;
+}

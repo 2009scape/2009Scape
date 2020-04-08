@@ -1,0 +1,8 @@
+void script_70() {
+	if (standart_config_560 < 1) {
+		setWidgetText(new WidgetPointer(373,1), "You're the Winner!");
+	} else {
+		setWidgetText(new WidgetPointer(373,1), "Foes Remaining: " + intToStr(standart_config_560));
+	}
+	return;
+}

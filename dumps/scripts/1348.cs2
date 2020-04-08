@@ -1,0 +1,50 @@
+void script_1348(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,int arg11,int arg12,int arg13,int arg14,int arg15,int arg16,int arg17,int arg18) {
+	int ivar19;
+	int ivar20;
+	string svar0;
+	if (setWidgetRegister(new WidgetPointer(arg6), arg12)) {
+		setWidgetVFlip(1);
+	}
+	createExtraChild(new WidgetPointer(arg2), 5, getExtraChildGap(new WidgetPointer(arg2)));
+	setWidgetPosition(0, 0, 0, 0);
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg2)), getWidgetActualHeight(new WidgetPointer(arg2)), 0, 0);
+	setWidgetSprite(arg3);
+	cs2method1107(1);
+	createExtraChild(new WidgetPointer(arg2), 3, getExtraChildGap(new WidgetPointer(arg2)));
+	setWidgetPosition(0, 0, 0, 0);
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg2)), getWidgetActualHeight(new WidgetPointer(arg2)), 0, 0);
+	setWidgetRGB(new Color(0, 0, 0));
+	setWidgetScrollMax(getWidgetActualWidth(new WidgetPointer(arg4)), multiply(arg1, 15), new WidgetPointer(arg4));
+	ivar19 = 0;
+	ivar20 = -1;
+	svar0 = "";
+	while (ivar19 <= arg1) {
+		ivar20 = getExtraChildGap(new WidgetPointer(arg4));
+		svar0 = cs2method_3408(105, 115, arg0, ivar19);
+		createExtraChild(new WidgetPointer(arg4), 4, ivar20);
+		setWidgetText(svar0);
+		setWidgetTextAlignment(0, 1, 0);
+		setWidgetPosition(5, multiply(ivar19, 15), 0, 0);
+		setWidgetSize(subtract(getWidgetActualWidth(new WidgetPointer(arg4)), 16), 15, 0, 0);
+		setWidgetUnknownBoolean(false);
+		setWidgetFont(arg10);
+		if (ivar19 >= arg1) {
+			setWidgetRGB(new Color(arg8));
+			setScriptCallOnMouseExit(1354, new WidgetPointer(arg4), ivar20, arg8, "Iii");
+			setScriptCallOnMousePressed(1350, new WidgetPointer(arg2), new WidgetPointer(arg4), new WidgetPointer(arg5), new WidgetPointer(arg6), arg11, arg12, svar0, arg8, "IIIIiisi");
+		} else {
+			setWidgetRGB(new Color(arg7));
+			setScriptCallOnMouseExit(1354, new WidgetPointer(arg4), ivar20, arg7, "Iii");
+			setScriptCallOnMousePressed(1350, new WidgetPointer(arg2), new WidgetPointer(arg4), new WidgetPointer(arg5), new WidgetPointer(arg6), arg11, arg12, svar0, arg7, "IIIIiisi");
+		}
+		setScriptCallOnMouseEntered(1353, new WidgetPointer(arg4), ivar20, arg9, "Iii");
+		ivar19 = add(ivar19, 1);
+	}
+	if (arg5 != -1) {
+		script_31(arg5, arg4, arg13, arg14, arg15, arg16, arg17, arg18);
+		setWidgetIsHidden(false, new WidgetPointer(arg5));
+	}
+	setWidgetIsHidden(false, new WidgetPointer(arg2));
+	setWidgetIsHidden(false, new WidgetPointer(arg4));
+	return;
+}

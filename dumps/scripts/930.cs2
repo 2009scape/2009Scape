@@ -1,0 +1,46 @@
+int script_930(int arg0) {
+	int ivar1;
+	ivar1 = getItemHashmapData(arg0, 743);
+	if (ivar1 == -1) {
+		return 1;
+	}
+	if (((boolean)script_2156(ivar1))) {
+		return 0;
+	}
+	ivar1 = getItemHashmapData(arg0, 744);
+	if (ivar1 == -1) {
+		return 1;
+	}
+	if (((boolean)script_2156(ivar1))) {
+		return 0;
+	}
+	ivar1 = getItemHashmapData(arg0, 745);
+	if (ivar1 == -1) {
+		return 1;
+	}
+	if (((boolean)script_2156(ivar1))) {
+		return 0;
+	}
+	ivar1 = getItemHashmapData(arg0, 746);
+	if (ivar1 == -1) {
+		return 1;
+	}
+	if (((boolean)script_2156(ivar1))) {
+		return 0;
+	}
+	ivar1 = getItemHashmapData(arg0, 747);
+	if (ivar1 == -1) {
+		return 1;
+	}
+	if (((boolean)script_2156(ivar1))) {
+		return 0;
+	}
+	ivar1 = getItemHashmapData(arg0, 748);
+	if (ivar1 == -1) {
+		return 1;
+	}
+	if (((boolean)script_2156(ivar1))) {
+		return 0;
+	}
+	return 1;
+}

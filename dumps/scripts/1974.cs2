@@ -1,0 +1,5 @@
+void script_1974(int arg0,int arg1,int arg2) {
+	setWidget3DRotation(0, 0, getWidgetRotateX(new WidgetPointer(arg0)), getWidgetRotateY(new WidgetPointer(arg0)), getWidgetRotateY(new WidgetPointer(arg0)), arg2, new WidgetPointer(arg0));
+	setItemOnWidgetMethod2200(arg1, 1, new WidgetPointer(arg0));
+	return;
+}

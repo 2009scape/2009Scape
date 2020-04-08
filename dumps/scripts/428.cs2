@@ -1,0 +1,4 @@
+void script_428() {
+	setWidgetText(new WidgetPointer(1024,5), "Command Points: " + intToStr(bitconfig_7514));
+	return;
+}

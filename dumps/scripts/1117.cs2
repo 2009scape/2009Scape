@@ -1,0 +1,116 @@
+void script_1117(int arg0) {
+	int ivar1;
+	string svar0;
+	ivar1 = -1;
+	svar0 = "";
+	switch (arg0) {
+		case 12582919:
+			if (((boolean)bitconfig_6459)) {
+				svar0 = "Hide combat spells.";
+			} else {
+				svar0 = "Show combat spells.";
+			}
+			ivar1 = 12583008;
+			break;
+		case 12582921:
+			if (((boolean)bitconfig_6462)) {
+				svar0 = "Hide teleport spells.";
+			} else {
+				svar0 = "Show teleport spells.";
+			}
+			ivar1 = 12583008;
+			break;
+		case 12582923:
+			if (((boolean)bitconfig_6461)) {
+				svar0 = "Hide miscellaneous spells.";
+			} else {
+				svar0 = "Show miscellaneous spells.";
+			}
+			ivar1 = 12583008;
+			break;
+		case 12582925:
+			if (((boolean)bitconfig_6460)) {
+				svar0 = "Hide skill spells.";
+			} else {
+				svar0 = "Show skill spells.";
+			}
+			ivar1 = 12583008;
+			break;
+		case 28180485:
+			if (((boolean)bitconfig_6463)) {
+				svar0 = "Hide combat spells.";
+			} else {
+				svar0 = "Show combat spells.";
+			}
+			ivar1 = 28180545;
+			break;
+		case 28180489:
+			if (((boolean)bitconfig_6464)) {
+				svar0 = "Hide miscellaneous spells.";
+			} else {
+				svar0 = "Show miscellaneous spells.";
+			}
+			ivar1 = 28180545;
+			break;
+		case 28180487:
+			if (((boolean)bitconfig_6465)) {
+				svar0 = "Hide teleport spells.";
+			} else {
+				svar0 = "Show teleport spells.";
+			}
+			ivar1 = 28180545;
+			break;
+		case 12648453:
+			if (((boolean)bitconfig_6466)) {
+				svar0 = "Hide combat spells.";
+			} else {
+				svar0 = "Show combat spells.";
+			}
+			ivar1 = 12648501;
+			break;
+		case 12648455:
+			if (((boolean)bitconfig_6467)) {
+				svar0 = "Hide teleport spells.";
+			} else {
+				svar0 = "Show teleport spells.";
+			}
+			ivar1 = 12648501;
+			break;
+		case 62259207:
+			if (((boolean)bitconfig_7348)) {
+				svar0 = "Hide combat spells.";
+			} else {
+				svar0 = "Show combat spells.";
+			}
+			ivar1 = 62259272;
+			break;
+		case 62259209:
+			if (((boolean)bitconfig_7351)) {
+				svar0 = "Hide teleport spells.";
+			} else {
+				svar0 = "Show teleport spells.";
+			}
+			ivar1 = 62259272;
+			break;
+		case 62259211:
+			if (((boolean)bitconfig_7350)) {
+				svar0 = "Hide miscellaneous spells.";
+			} else {
+				svar0 = "Show miscellaneous spells.";
+			}
+			ivar1 = 62259272;
+			break;
+		case 62259213:
+			if (((boolean)bitconfig_7349)) {
+				svar0 = "Hide skill spells.";
+			} else {
+				svar0 = "Show skill spells.";
+			}
+			ivar1 = 62259272;
+			break;
+		default:
+			return;
+	}
+	script_39(arg0, ivar1, 25, getWidgetActualWidth(new WidgetPointer(getWidgetParentId(new WidgetPointer(ivar1)))), svar0);
+	return;
+}

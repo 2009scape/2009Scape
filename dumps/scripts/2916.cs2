@@ -1,0 +1,6 @@
+int script_2916() {
+	if (((boolean)globalint_1533)) {
+		return multiply(max(getSkillCurrentLvl(3), 0), 10);
+	}
+	return multiply(max(getSkillActualLvl(3), 1), 10);
+}

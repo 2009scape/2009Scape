@@ -1,0 +1,13 @@
+void script_1471() {
+	setWidgetNoOptions(new WidgetPointer(762,17));
+	setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(762,17));
+	globalint_190 = 0;
+	if (((boolean)globalint_188)) {
+		bitconfig_4893 = 0;
+		script_1473();
+	} else {
+		bitconfig_4893 = 1;
+		script_1474();
+	}
+	return;
+}

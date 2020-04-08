@@ -1,0 +1,30 @@
+void script_88(int arg0,int arg1,string arg2) {
+	arg2 = strRemoveEntities(arg2);
+	switch (arg0) {
+		case 7:
+			if (((boolean)script_2709())) {
+				messageType0("You cannot add a friend until you have entered your date of birth");
+				return;
+			}
+			if (isFriend(arg2)) {
+				if (isMuteRelatedMethod3329() && cs2method6900()) {
+					globalint_1650 = 1;
+					globalstring_23 = arg2;
+					script_1558(0);
+					return;
+				}
+			} else {
+				cs2method3605(arg2);
+			}
+			break;
+		case 8:
+			cs2method3607(arg2);
+			break;
+		case 9:
+			script_1052(5, cs2method5012(arg1), arg2);
+			break;
+		case 10:
+			globalstring_24 = arg2;
+	}
+	return;
+}

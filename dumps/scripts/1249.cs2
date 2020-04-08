@@ -1,0 +1,41 @@
+void script_1249(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int stack_dump0;
+	cs2func_script_1239_struct(2,0,0) structdump_1;
+	cs2func_script_1239_struct(2,0,0) structdump_2;
+	if (getClientCycle() < globalint_177) {
+		return;
+	}
+	ivar3 = mod(globalint_176, 10);
+	ivar4 = -1;
+	ivar5 = 0;
+	if (((boolean)ivar3)) {
+		setWidgetIsHidden(false, new WidgetPointer(arg2));
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg2));
+		cs2method2103(0, new WidgetPointer(arg2));
+		stack_dump0 = 0;
+		structdump_1 = script_1239(stack_dump0);
+		ivar5 = structdump_1.intpart_1;
+		ivar4 = structdump_1.intpart_0;
+		cameraMoveTo(ivar4, 1000, 100, 100);
+		cameraPointAt(ivar4, 0, 100, 100);
+		globalint_177 = add(getClientCycle(), 30);
+		globalint_176 = add(globalint_176, 2);
+	} else {
+		if (ivar3 == 2) {
+			if (isWidgetHidden(new WidgetPointer(arg1))) {
+				setScriptCallOnGameloop(1252, new WidgetPointer(arg1), 3, "Ii", new WidgetPointer(arg1));
+			}
+			setScriptCallOnGameloop(1252, new WidgetPointer(arg2), 1, "Ii", new WidgetPointer(arg2));
+			stack_dump0 = 1;
+			structdump_2 = script_1239(stack_dump0);
+			ivar5 = structdump_2.intpart_1;
+			ivar4 = structdump_2.intpart_0;
+			script_1251(0, arg0, arg1, arg2, ivar5);
+			setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+		}
+	}
+	return;
+}

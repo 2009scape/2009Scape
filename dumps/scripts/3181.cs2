@@ -1,0 +1,10 @@
+void script_3181() {
+	setWidgetText(new WidgetPointer(914,27), "");
+	setScriptCallOnKeyPress(-1, "", new WidgetPointer(914,27));
+	setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(914,16));
+	setWidgetIsHidden(true, new WidgetPointer(914,21));
+	setWidgetSprite(4084, new WidgetPointer(914,23));
+	globalstring_277 = "";
+	globalint_1094 = 0;
+	return;
+}

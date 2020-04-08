@@ -1,0 +1,75 @@
+void script_4602(int arg0,int arg1) {
+	flow_0:
+		SWITCH (arg0) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_2
+			case 3:
+				 GOTO flow_3
+			case 4:
+				 GOTO flow_4
+			case 5:
+				 GOTO flow_5
+		}
+		setWidgetIsHidden(true, new WidgetPointer(16,1));
+		setWidgetIsHidden(true, new WidgetPointer(16,52));
+		setWidgetIsHidden(true, new WidgetPointer(16,59));
+		setWidgetIsHidden(true, new WidgetPointer(16,37));
+		setWidgetIsHidden(true, new WidgetPointer(16,4));
+		setWidgetIsHidden(true, new WidgetPointer(16,18));
+		setWidgetIsHidden(true, new WidgetPointer(16,64));
+		setWidgetIsHidden(true, new WidgetPointer(16,76));
+		GOTO	flow_6
+	flow_1:
+		setWidgetIsHidden(false, new WidgetPointer(16,1));
+		setWidgetIsHidden(false, new WidgetPointer(16,52));
+		setWidgetIsHidden(false, new WidgetPointer(16,59));
+		setWidgetIsHidden(true, new WidgetPointer(16,37));
+		setWidgetIsHidden(true, new WidgetPointer(16,4));
+		setWidgetIsHidden(true, new WidgetPointer(16,18));
+		setWidgetIsHidden(true, new WidgetPointer(16,64));
+		setWidgetIsHidden(true, new WidgetPointer(16,76));
+		GOTO	flow_6
+	flow_2:
+		setWidgetIsHidden(true, new WidgetPointer(16,1));
+		setWidgetIsHidden(true, new WidgetPointer(16,52));
+		setWidgetIsHidden(true, new WidgetPointer(16,59));
+		setWidgetIsHidden(true, new WidgetPointer(16,37));
+		setWidgetIsHidden(true, new WidgetPointer(16,4));
+		setWidgetIsHidden(true, new WidgetPointer(16,18));
+		setWidgetIsHidden(true, new WidgetPointer(16,64));
+		setWidgetIsHidden(false, new WidgetPointer(16,76));
+		GOTO	flow_6
+	flow_3:
+		setWidgetIsHidden(false, new WidgetPointer(16,1));
+		setWidgetIsHidden(false, new WidgetPointer(16,52));
+		setWidgetIsHidden(true, new WidgetPointer(16,59));
+		setWidgetIsHidden(false, new WidgetPointer(16,37));
+		setWidgetIsHidden(true, new WidgetPointer(16,4));
+		setWidgetIsHidden(true, new WidgetPointer(16,18));
+		setWidgetIsHidden(true, new WidgetPointer(16,64));
+		setWidgetIsHidden(true, new WidgetPointer(16,76));
+		GOTO	flow_6
+	flow_4:
+		setWidgetIsHidden(false, new WidgetPointer(16,1));
+		setWidgetIsHidden(false, new WidgetPointer(16,52));
+		setWidgetIsHidden(true, new WidgetPointer(16,59));
+		setWidgetIsHidden(false, new WidgetPointer(16,37));
+		setWidgetIsHidden(false, new WidgetPointer(16,4));
+		setWidgetIsHidden(false, new WidgetPointer(16,18));
+		setWidgetIsHidden(true, new WidgetPointer(16,64));
+		setWidgetIsHidden(true, new WidgetPointer(16,76));
+		GOTO	flow_6
+	flow_5:
+		setWidgetIsHidden(false, new WidgetPointer(16,1));
+		setWidgetIsHidden(false, new WidgetPointer(16,52));
+		setWidgetIsHidden(true, new WidgetPointer(16,59));
+		setWidgetIsHidden(false, new WidgetPointer(16,37));
+		setWidgetIsHidden(false, new WidgetPointer(16,4));
+		setWidgetIsHidden(false, new WidgetPointer(16,18));
+		setWidgetIsHidden(false, new WidgetPointer(16,64));
+		setWidgetIsHidden(true, new WidgetPointer(16,76));
+	flow_6:
+		return;
+}

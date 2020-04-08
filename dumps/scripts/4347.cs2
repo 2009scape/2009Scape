@@ -1,0 +1,17 @@
+void script_4347() {
+	int ivar0;
+	ivar0 = -1;
+	if (standart_config_2136 > 0) {
+		ivar0 = cs2method_3408(105, 103, 3703, standart_config_2136);
+		if (ivar0 != -1) {
+			setWidgetIsHidden(true, new WidgetPointer(1097,219));
+			cs2method2100(0, 0, new WidgetPointer(1097,224));
+			script_4499(ivar0, 1, getCommonDefinitionSize(ivar0), 7, 71893205, 71893215, 71893217, 71893216, 71893222, "Select a keyword");
+		}
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(1097,219));
+		script_4501(71893205, "Select a keyword");
+		script_4501(71893191, "Select a category");
+	}
+	return;
+}

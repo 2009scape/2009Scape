@@ -1,0 +1,16 @@
+cs2func_script_4705_struct(3,0,0) script_4705(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar3 = divide(multiply(arg0, 6), 10);
+	ivar2 = divide(ivar3, 60);
+	ivar3 = mod(ivar3, 60);
+	if (ivar2 > 59) {
+		ivar1 = divide(ivar2, 60);
+		ivar2 = mod(ivar2, 60);
+	}
+	return newstruct cs2func_script_4705_struct(ivar1, ivar2, ivar3);
+}

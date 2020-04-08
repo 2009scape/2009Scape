@@ -1,0 +1,63 @@
+void script_168() {
+	setWidgetSprite(-1, new WidgetPointer(559,86));
+	setWidgetSprite(-1, new WidgetPointer(559,72));
+	setWidgetSprite(-1, new WidgetPointer(559,73));
+	setWidgetSprite(-1, new WidgetPointer(559,74));
+	setWidgetSprite(-1, new WidgetPointer(559,75));
+	setWidgetSprite(-1, new WidgetPointer(559,76));
+	setWidgetSprite(-1, new WidgetPointer(559,77));
+	setWidgetSprite(-1, new WidgetPointer(559,78));
+	setWidgetSprite(-1, new WidgetPointer(559,79));
+	setWidgetSprite(-1, new WidgetPointer(559,80));
+	setWidgetSprite(-1, new WidgetPointer(559,81));
+	setWidgetSprite(-1, new WidgetPointer(559,82));
+	setWidgetSprite(-1, new WidgetPointer(559,83));
+	setWidgetSprite(-1, new WidgetPointer(559,84));
+	setWidgetSprite(-1, new WidgetPointer(559,85));
+	if (((boolean)bitconfig_3801)) {
+		setWidgetSprite(442, new WidgetPointer(559,86));
+	}
+	if (((boolean)bitconfig_3802)) {
+		setWidgetSprite(442, new WidgetPointer(559,72));
+	}
+	if (((boolean)bitconfig_3803)) {
+		setWidgetSprite(442, new WidgetPointer(559,73));
+	}
+	if (((boolean)bitconfig_3804)) {
+		setWidgetSprite(442, new WidgetPointer(559,74));
+	}
+	if (((boolean)bitconfig_3805)) {
+		setWidgetSprite(442, new WidgetPointer(559,75));
+	}
+	if (((boolean)bitconfig_3806)) {
+		setWidgetSprite(442, new WidgetPointer(559,76));
+	}
+	if (((boolean)bitconfig_3807)) {
+		setWidgetSprite(442, new WidgetPointer(559,77));
+	}
+	if (((boolean)bitconfig_3808)) {
+		setWidgetSprite(442, new WidgetPointer(559,78));
+	}
+	if (((boolean)bitconfig_3809)) {
+		setWidgetSprite(442, new WidgetPointer(559,79));
+	}
+	if (((boolean)bitconfig_3810)) {
+		setWidgetSprite(442, new WidgetPointer(559,80));
+	}
+	if (((boolean)bitconfig_3811)) {
+		setWidgetSprite(442, new WidgetPointer(559,81));
+	}
+	if (((boolean)bitconfig_3812)) {
+		setWidgetSprite(442, new WidgetPointer(559,82));
+	}
+	if (((boolean)bitconfig_3813)) {
+		setWidgetSprite(442, new WidgetPointer(559,83));
+	}
+	if (((boolean)bitconfig_3814)) {
+		setWidgetSprite(442, new WidgetPointer(559,84));
+	}
+	if (((boolean)bitconfig_3815)) {
+		setWidgetSprite(442, new WidgetPointer(559,85));
+	}
+	return;
+}

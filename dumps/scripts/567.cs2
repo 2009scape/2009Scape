@@ -1,0 +1,172 @@
+void script_567(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	if (arg0 == 70254793) {
+		switch (bitconfig_8876) {
+			case 0:
+				ivar1 = 1;
+				break;
+			case 1:
+				ivar1 = 9;
+				break;
+			case 2:
+				ivar1 = 12;
+				break;
+			case 3:
+				ivar1 = 75;
+		}
+		ivar3 = multiply(ivar1, bitconfig_8877);
+		if (subtract(bitconfig_8857, ivar3) > 0) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(1072,53));
+			ivar3 = subtract(bitconfig_8857, ivar3);
+		} else {
+			setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(1072,53));
+			ivar3 = 0;
+		}
+	} else if (arg0 == 70254805) {
+		switch (bitconfig_8876) {
+			case 0:
+				ivar1 = 1;
+				ivar2 = 2;
+				break;
+			case 1:
+				ivar1 = 4;
+				ivar2 = 7;
+				break;
+			case 2:
+				ivar1 = 9;
+				ivar2 = 17;
+				break;
+			case 3:
+				ivar1 = 40;
+				ivar2 = 80;
+		}
+		ivar3 = multiply(ivar1, bitconfig_8877);
+		if (subtract(bitconfig_8857, ivar3) > 0) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(1072,53));
+			ivar3 = subtract(bitconfig_8857, ivar3);
+		} else {
+			setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(1072,53));
+			ivar3 = 0;
+		}
+		ivar4 = multiply(ivar2, bitconfig_8877);
+		if (subtract(bitconfig_8865, ivar4) > 0) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(1072,49));
+			ivar4 = subtract(bitconfig_8865, ivar4);
+		} else {
+			setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(1072,49));
+			ivar4 = 0;
+		}
+	} else if (arg0 == 70254817) {
+		switch (bitconfig_8876) {
+			case 0:
+				ivar1 = 1;
+				ivar2 = 4;
+				break;
+			case 1:
+				ivar1 = 3;
+				ivar2 = 12;
+				break;
+			case 2:
+				ivar1 = 6;
+				ivar2 = 24;
+				break;
+			case 3:
+				ivar1 = 30;
+				ivar2 = 120;
+		}
+		ivar3 = multiply(ivar1, bitconfig_8877);
+		if (subtract(bitconfig_8859, ivar3) > 0) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(1072,57));
+			ivar3 = subtract(bitconfig_8859, ivar3);
+		} else {
+			setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(1072,57));
+			ivar3 = 0;
+		}
+		ivar4 = multiply(ivar2, bitconfig_8877);
+		if (subtract(bitconfig_8865, ivar4) > 0) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(1072,49));
+			ivar4 = subtract(bitconfig_8865, ivar4);
+		} else {
+			setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(1072,49));
+			ivar4 = 0;
+		}
+	} else if (arg0 == 70254829) {
+		switch (bitconfig_8876) {
+			case 0:
+				ivar1 = 1;
+				ivar2 = 6;
+				break;
+			case 1:
+				ivar1 = 3;
+				ivar2 = 14;
+				break;
+			case 2:
+				ivar1 = 4;
+				ivar2 = 22;
+				break;
+			case 3:
+				ivar1 = 25;
+				ivar2 = 150;
+		}
+		ivar3 = multiply(ivar1, bitconfig_8877);
+		if (subtract(bitconfig_8862, ivar3) > 0) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(1072,61));
+			ivar3 = subtract(bitconfig_8862, ivar3);
+		} else {
+			setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(1072,61));
+			ivar3 = 0;
+		}
+		ivar4 = multiply(ivar2, bitconfig_8877);
+		if (subtract(bitconfig_8865, ivar4) > 0) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(1072,49));
+			ivar4 = subtract(bitconfig_8865, ivar4);
+		} else {
+			setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(1072,49));
+			ivar4 = 0;
+		}
+	} else {
+		if (arg0 == 70254841) {
+			switch (bitconfig_8876) {
+				case 0:
+					ivar1 = 1;
+					ivar2 = 8;
+					break;
+				case 1:
+					ivar1 = 2;
+					ivar2 = 16;
+					break;
+				case 2:
+					ivar1 = 4;
+					ivar2 = 30;
+					break;
+				case 3:
+					ivar1 = 18;
+					ivar2 = 144;
+			}
+			ivar3 = multiply(ivar1, bitconfig_8877);
+			if (subtract(bitconfig_8863, ivar3) > 0) {
+				setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(1072,65));
+				ivar3 = subtract(bitconfig_8863, ivar3);
+			} else {
+				setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(1072,65));
+				ivar3 = 0;
+			}
+			ivar4 = multiply(ivar2, bitconfig_8877);
+			if (subtract(bitconfig_8865, ivar4) > 0) {
+				setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(1072,49));
+				ivar4 = subtract(bitconfig_8865, ivar4);
+			} else {
+				setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(1072,49));
+				ivar4 = 0;
+			}
+		}
+	}
+	return;
+}

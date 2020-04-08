@@ -1,0 +1,21 @@
+void script_2819() {
+	cs2method5405(0, 5);
+	cs2method5405(1, 5);
+	cs2method5406(0, 0, script_2808(globalint_1065, 9437888, 10207993), 378, script_2808(globalint_1065, 9437888, 10289912), 378, 0);
+	cs2method5406(1, 0, script_2808(globalint_1065, 9437888, 10191601), 210, script_2808(globalint_1065, 9437888, 10257133), 210, 0);
+	cs2method5406(0, 1, script_2808(globalint_1065, 9437888, 10371817), 378, script_2808(globalint_1065, 9437888, 10371810), 378, 0);
+	cs2method5406(1, 1, script_2808(globalint_1065, 9437888, 10240743), 210, script_2808(globalint_1065, 9437888, 10224357), 210, 0);
+	cs2method5406(0, 2, script_2808(globalint_1065, 9437888, 10240727), 378, script_2808(globalint_1065, 9437888, 10175188), 378, 0);
+	cs2method5406(1, 2, script_2808(globalint_1065, 9437888, 10109663), 210, script_2808(globalint_1065, 9437888, 10044126), 210, 0);
+	cs2method5406(0, 3, script_2808(globalint_1065, 9437888, 9994963), 435, script_2808(globalint_1065, 9437888, 9945813), 465, 0);
+	cs2method5406(1, 3, script_2808(globalint_1065, 9437888, 9945824), 210, script_2808(globalint_1065, 9437888, 9945824), 210, 0);
+	cs2method5406(0, 4, script_2808(globalint_1065, 9437888, 9945817), 545, script_2808(globalint_1065, 9437888, 9945818), 530, 0);
+	cs2method5406(1, 4, script_2808(globalint_1065, 9437888, 9945824), 210, script_2808(globalint_1065, 9437888, 9945824), 210, 0);
+	globalint_1065 = -1;
+	globalint_1064 = 0;
+	globalint_1067 = 876;
+	script_2825(1);
+	script_2810(5832706);
+	setScriptCallOnMinimapRelatedSetting3(2824, 1, "i", new WidgetPointer(89,0));
+	return;
+}

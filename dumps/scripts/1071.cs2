@@ -1,0 +1,12 @@
+void script_1071(int arg0,int arg1,int arg2) {
+	if (arg2 >= 0) {
+		script_1068(arg0, arg2);
+	}
+	globalint_134 = 0;
+	if (cs2method5066(arg1) > 0) {
+		script_1072(arg0, arg1);
+	} else {
+		script_1077(arg1);
+	}
+	return;
+}

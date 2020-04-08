@@ -1,0 +1,11 @@
+void script_4679() {
+	if (cs2method_3408(105, 105, 3839, globalint_1535) < 1) {
+		setWidgetPosition(10, 26, 0, 0, new WidgetPointer(302,23));
+		setWidgetIsHidden(true, new WidgetPointer(302,24));
+		setWidgetText(new WidgetPointer(302,11), "Difficulty: " + intToStr(globalint_1535) + "/10");
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(302,24));
+		setWidgetText(new WidgetPointer(302,11), "Difficulty: " + intToStr(globalint_1535) + "/10");
+	}
+	return;
+}

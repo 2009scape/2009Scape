@@ -1,0 +1,6 @@
+void script_1945() {
+	int ivar0;
+	ivar0 = add(add(add(standart_config_1332, standart_config_1334), standart_config_1337), multiply(2, subtract(standart_config_1333, standart_config_1335)));
+	setWidgetText(new WidgetPointer(802,8), "Score: " + intToStr(ivar0));
+	return;
+}

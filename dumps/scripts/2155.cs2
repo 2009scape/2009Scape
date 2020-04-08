@@ -1,0 +1,88 @@
+int script_2155() {
+	int ivar0;
+	ivar0 = getOtherCommonData(globalint_699, 859);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (((boolean)script_2156(ivar0))) {
+		return 0;
+	}
+	ivar0 = getOtherCommonData(globalint_699, 860);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (((boolean)script_2156(ivar0))) {
+		return 0;
+	}
+	ivar0 = getOtherCommonData(globalint_699, 861);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (((boolean)script_2156(ivar0))) {
+		return 0;
+	}
+	ivar0 = getOtherCommonData(globalint_699, 862);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (((boolean)script_2156(ivar0))) {
+		return 0;
+	}
+	ivar0 = getOtherCommonData(globalint_699, 863);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (((boolean)script_2156(ivar0))) {
+		return 0;
+	}
+	ivar0 = getOtherCommonData(globalint_699, 864);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (((boolean)script_2156(ivar0))) {
+		return 0;
+	}
+	ivar0 = getOtherCommonData(globalint_699, 865);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (((boolean)script_2156(ivar0))) {
+		return 0;
+	}
+	ivar0 = getOtherCommonData(globalint_699, 866);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (((boolean)script_2156(ivar0))) {
+		return 0;
+	}
+	ivar0 = getOtherCommonData(globalint_699, 867);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (((boolean)script_2156(ivar0))) {
+		return 0;
+	}
+	ivar0 = getOtherCommonData(globalint_699, 868);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (((boolean)script_2156(ivar0))) {
+		return 0;
+	}
+	ivar0 = getOtherCommonData(globalint_699, 869);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (((boolean)script_2156(ivar0))) {
+		return 0;
+	}
+	ivar0 = getOtherCommonData(globalint_699, 870);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (((boolean)script_2156(ivar0))) {
+		return 0;
+	}
+	return 1;
+}

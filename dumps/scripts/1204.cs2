@@ -1,0 +1,7 @@
+void script_1204(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	ivar4 = 100;
+	globalint_1186 = mod(add(globalint_1186, 1), 360);
+	setWidget3DRotation(cs2method2610(new WidgetPointer(arg0)), cs2method2611(new WidgetPointer(arg0)), arg1, mod(add(arg2, multiplyDivide(ivar4, 10000, cs2method_3408(105, 105, 3384, globalint_1186))), 2048), mod(add(arg3, multiplyDivide(ivar4, 10000, cs2method_3408(105, 105, 3385, globalint_1186))), 2048), getWidget3DDistance(new WidgetPointer(arg0)), new WidgetPointer(arg0));
+	return;
+}

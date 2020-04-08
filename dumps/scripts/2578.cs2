@@ -1,0 +1,8 @@
+void script_2578() {
+	setWidgetRGB(new Color(102, 102, 102), new WidgetPointer(292,114));
+	setWidgetSprite(941, new WidgetPointer(292,113));
+	setWidgetNoOptions(new WidgetPointer(292,113));
+	setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(292,113));
+	setScriptCallOnMousePressed(2606, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,113));
+	return;
+}

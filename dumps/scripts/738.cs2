@@ -1,0 +1,9 @@
+void script_738() {
+	string svar0;
+	string svar1;
+	svar0 = intToStr(divide(globalint_105, 10));
+	svar1 = intToStr(mod(globalint_105, 10));
+	setWidgetText(new WidgetPointer(269,48), svar0);
+	setWidgetText(new WidgetPointer(269,49), svar1);
+	return;
+}

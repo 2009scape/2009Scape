@@ -1,0 +1,73 @@
+int script_166(int arg0) {
+	switch (arg0) {
+		case 1:
+			return bitconfig_3851;
+		case 2:
+			return bitconfig_3852;
+		case 3:
+			return bitconfig_3853;
+		case 4:
+			return bitconfig_3854;
+		case 5:
+			return bitconfig_3855;
+		case 6:
+			return bitconfig_3856;
+		case 7:
+			return bitconfig_3857;
+		case 8:
+			return bitconfig_3858;
+		case 9:
+			return bitconfig_3859;
+		case 10:
+			return bitconfig_3860;
+		case 11:
+			return bitconfig_3861;
+		case 12:
+			return bitconfig_3862;
+		case 13:
+			return bitconfig_3863;
+		case 14:
+			return bitconfig_3864;
+		case 15:
+			return bitconfig_3865;
+		case 16:
+			return bitconfig_3866;
+		case 17:
+			return bitconfig_3867;
+		case 18:
+			return bitconfig_3868;
+		case 19:
+			return bitconfig_3869;
+		case 20:
+			return bitconfig_3870;
+		case 22:
+			if (((boolean)bitconfig_5294)) {
+				return 7;
+			}
+			return 0;
+		case 23:
+			return bitconfig_3871;
+		case 24:
+			return bitconfig_3872;
+		case 25:
+			return bitconfig_3946;
+		case 26:
+			return bitconfig_4132;
+		case 27:
+			return bitconfig_4307;
+		case 28:
+			return bitconfig_4308;
+		case 29:
+			return bitconfig_4309;
+		case 30:
+			return bitconfig_5366;
+		case 31:
+			if (((boolean)bitconfig_5295)) {
+				return 7;
+			}
+			return 0;
+		case 33:
+			return bitconfig_6500;
+	}
+	return 0;
+}

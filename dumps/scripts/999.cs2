@@ -1,0 +1,31 @@
+cs2func_script_999_struct(1,1,0) script_999(int arg0) {
+	switch (arg0) {
+		case 0:
+			return newstruct cs2func_script_999_struct(1, "Weaving");
+		case 1:
+			return newstruct cs2func_script_999_struct(0, "Armour");
+		case 2:
+			return newstruct cs2func_script_999_struct(0, "Spinning");
+		case 3:
+			return newstruct cs2func_script_999_struct(0, "Pottery");
+		case 4:
+			return newstruct cs2func_script_999_struct(1, "Glass");
+		case 5:
+			return newstruct cs2func_script_999_struct(0, "Jewellery");
+		case 6:
+			return newstruct cs2func_script_999_struct(1, "Weaponry");
+		case 7:
+			return newstruct cs2func_script_999_struct(1, "Pyre ships");
+		case 8:
+			return newstruct cs2func_script_999_struct(1, "Objects");
+		case 9:
+			return newstruct cs2func_script_999_struct(0, "Other");
+		case 10:
+			return newstruct cs2func_script_999_struct(1, "Minigames");
+		case 11:
+			return newstruct cs2func_script_999_struct(0, "Dungeoneering");
+		case 12:
+			return newstruct cs2func_script_999_struct(0, "Milestones");
+	}
+	return newstruct cs2func_script_999_struct(-1, "");
+}

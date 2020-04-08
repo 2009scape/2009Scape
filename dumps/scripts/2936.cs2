@@ -1,0 +1,16 @@
+void script_2936(int arg0) {
+	if (((boolean)cs2method5420())) {
+		globalint_547 = arg0;
+		script_2940(11);
+		setWidgetIsHidden(true, new WidgetPointer(744,28));
+		if (hasSSKey()) {
+			setWidgetIsHidden(false, new WidgetPointer(744,27));
+		} else {
+			setWidgetIsHidden(false, new WidgetPointer(744,26));
+		}
+		if (((boolean)globalint_547)) {
+			script_2945();
+		}
+	}
+	return;
+}

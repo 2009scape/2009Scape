@@ -1,0 +1,25 @@
+void script_4097(int arg0,int arg1,string arg2) {
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(8, arg1, 0, 0);
+	setWidgetPosition(0, 0, 0, 0);
+	setWidgetSprite(4514);
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(8, arg1, 0, 0);
+	setWidgetPosition(0, 0, 2, 0);
+	setWidgetSprite(4516);
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(16, arg1, 1, 0);
+	setWidgetPosition(0, 0, 1, 0);
+	setWidgetSprite(4515);
+	createExtraChild(new WidgetPointer(arg0), 4, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(20, arg1, 1, 0);
+	setWidgetPosition(0, 1, 1, 0);
+	setWidgetFont(494);
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetRGB(new Color(0, 0, 0));
+	setWidgetUnknownBoolean(false);
+	setWidgetText(arg2);
+	setWidgetIsHidden(false, new WidgetPointer(arg0));
+	return;
+}

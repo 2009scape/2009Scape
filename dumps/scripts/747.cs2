@@ -1,0 +1,9 @@
+void script_747(int arg0,int arg1,string arg2) {
+	if (arg0 != 1) {
+		return;
+	}
+	if (setWidgetRegister(new WidgetPointer(18,29), arg1)) {
+		setWidgetText(arg2);
+	}
+	return;
+}

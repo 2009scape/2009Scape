@@ -1,0 +1,10 @@
+void script_2440() {
+	int ivar0;
+	ivar0 = divide(globalint_819, 2);
+	if (ivar0 < 1) {
+		setWidgetText(new WidgetPointer(15,17), "Catch: Nothing");
+	} else {
+		setWidgetText(new WidgetPointer(15,17), "Catch: " + intToStr(ivar0) + " Fish");
+	}
+	return;
+}

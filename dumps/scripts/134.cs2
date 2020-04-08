@@ -1,0 +1,26 @@
+void script_134() {
+	if ((getBlackmarks() == 5) || (getBlackmarks() == 6)) {
+		setWidgetText(new WidgetPointer(594,83), "Suggest to mute this player for 48 hours");
+		setWidgetText(new WidgetPointer(594,10), "Suggest to mute this player for 48 hours");
+		setWidgetText(new WidgetPointer(594,60), "Suggest to mute this player for 48 hours");
+	} else {
+		setWidgetText(new WidgetPointer(594,83), "Mute this player for 48 hours");
+		setWidgetText(new WidgetPointer(594,10), "Mute this player for 48 hours");
+		setWidgetText(new WidgetPointer(594,60), "Mute this player for 48 hours");
+	}
+	if (((boolean)globalint_6)) {
+		globalint_6 = 0;
+	} else {
+		globalint_6 = 1;
+	}
+	if (((boolean)globalint_6)) {
+		setWidgetSprite(1768, new WidgetPointer(594,82));
+		setWidgetSprite(1768, new WidgetPointer(594,9));
+		setWidgetSprite(1768, new WidgetPointer(594,59));
+	} else {
+		setWidgetSprite(1770, new WidgetPointer(594,82));
+		setWidgetSprite(1770, new WidgetPointer(594,9));
+		setWidgetSprite(1770, new WidgetPointer(594,59));
+	}
+	return;
+}

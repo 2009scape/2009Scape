@@ -1,0 +1,4 @@
+void script_4451() {
+	script_4436(72744974, getWidgetActualX(new WidgetPointer(1110,27)));
+	return;
+}

@@ -1,0 +1,8 @@
+void script_3442(int arg0,int arg1,int arg2) {
+	if (((boolean)script_3441())) {
+		script_569(arg0, -1, arg1, 50, 150, script_3443(arg2));
+	} else {
+		script_569(arg0, -1, arg1, 50, 150, "A member of the Jury.");
+	}
+	return;
+}

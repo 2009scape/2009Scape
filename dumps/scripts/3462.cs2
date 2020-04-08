@@ -1,0 +1,43 @@
+void script_3462(int arg0,int arg1,int arg2,int arg3) {
+	switch (globalint_1007) {
+		case 21:
+			setWidgetIsHidden(true, new WidgetPointer(arg1));
+			deleteAllExtraChilds(new WidgetPointer(arg0));
+			script_2766(0, 75, arg0);
+			break;
+		case 22:
+			setWidgetIsHidden(false, new WidgetPointer(arg1));
+			deleteAllExtraChilds(new WidgetPointer(arg1));
+			script_1088(arg1, 0);
+			deleteAllExtraChilds(new WidgetPointer(arg2));
+			createExtraChild(new WidgetPointer(arg2), 6, 0);
+			setWidgetSize(0, 85, 1, 0);
+			setWidgetPosition(0, 0, 1, 0);
+			setWidgetSelfFull();
+			setWidget3DRotation(0, 30, 0, 0, 0, 850);
+			setWidgetAnimation(14230);
+			setScriptCallOnGameloop(3464, new WidgetPointer(-32768,3), -2147483643, "Ii");
+			script_2647(arg2);
+			setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg2)), add(multiply(getLineCount(getWidgetActualWidth(new WidgetPointer(arg3)), 494, getWidgetText(new WidgetPointer(arg3))), 10), 75), 0, 0, new WidgetPointer(arg2));
+			cameraMoveTo(addToCoordinate(getMyPositionHash(), 0, 0, -3), 1500, 1000, 100);
+			cameraPointAt(getMyPositionHash(), 0, 1000, 100);
+			script_2768(75, arg0);
+			setScriptCallOnGameloop(3463, new WidgetPointer(-32768,3), getMyPositionHash(), "Ic", new WidgetPointer(arg0));
+			break;
+		case 23:
+			setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+			script_2766(0, 25, arg0);
+			break;
+		case 24:
+			cs2method5512();
+			deleteAllExtraChilds(new WidgetPointer(arg1));
+			deleteAllExtraChilds(new WidgetPointer(arg2));
+			setWidgetIsHidden(true, new WidgetPointer(arg1));
+			script_2768(25, arg0);
+			break;
+		default:
+			setWidgetIsHidden(true, new WidgetPointer(arg1));
+			cs2method5512();
+	}
+	return;
+}

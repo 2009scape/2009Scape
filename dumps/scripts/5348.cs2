@@ -1,0 +1,12 @@
+void script_5348(int arg0) {
+	string svar0;
+	svar0 = "";
+	if (globalint_1648 > 0) {
+		svar0 = formatNumber(globalint_1648, 1);
+	} else {
+		globalint_1648 = 0;
+		svar0 = "0";
+	}
+	setWidgetText(new WidgetPointer(arg0), svar0);
+	return;
+}

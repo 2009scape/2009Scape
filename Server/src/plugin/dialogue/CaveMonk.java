@@ -2,6 +2,7 @@ package plugin.dialogue;
 
 import org.crandor.game.content.dialogue.DialoguePlugin;
 import org.crandor.game.content.dialogue.FacialExpression;
+import org.crandor.game.content.skill.Skills;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.link.quest.Quest;
@@ -104,6 +105,9 @@ public final class CaveMonk extends DialoguePlugin {
 			end();
 			break;
 		case 20:
+			if (player.getSkills().getLevel(Skills.PRAYER) > 2 && player.getSkills().getPrayerPoints() > 2) {
+				player.getSkills().decrementPrayerPoints(player.getSkills().getLevel(Skills.PRAYER) - 2);
+			}
 			player.getProperties().setTeleportLocation(DUNGEON);
 			end();
 			break;

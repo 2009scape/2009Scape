@@ -1,0 +1,23 @@
+void script_3208(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = 4055;
+	ivar2 = 4053;
+	if (((boolean)arg0)) {
+		script_3209();
+		setScriptCallOnMousePressed(-1, "", new WidgetPointer(673,64));
+		setScriptCallOnMouseEntered(-1, "", new WidgetPointer(673,64));
+		setWidgetText(new WidgetPointer(673,70), "Please wait...");
+		setWidgetText(new WidgetPointer(673,69), "Please wait...");
+		setScriptCallOnMousePressed(-1, "", new WidgetPointer(673,26));
+		setScriptCallOnMouseEntered(-1, "", new WidgetPointer(673,26));
+	} else {
+		setScriptCallOnMousePressed(2205, "", new WidgetPointer(673,64));
+		setScriptCallOnMouseEntered(45, new WidgetPointer(-32768,3), 16448250, "Ii", new WidgetPointer(673,64));
+		setWidgetText(new WidgetPointer(673,70), "Continue");
+		setWidgetText(new WidgetPointer(673,69), "Continue");
+		setScriptCallOnMousePressed(2252, "", new WidgetPointer(673,26));
+		setScriptCallOnMouseEntered(3937, new WidgetPointer(673,65), ivar1, new WidgetPointer(673,66), ivar2, new WidgetPointer(673,67), ivar2, new WidgetPointer(673,68), ivar1, "IdIdIdId", new WidgetPointer(673,26));
+	}
+	return;
+}

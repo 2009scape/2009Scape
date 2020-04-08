@@ -1,0 +1,52 @@
+void script_1799(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = -1;
+	while (ivar2 <= 4) {
+		ivar4 = cs2method_3408(105, 74, 1604, ivar2);
+		createExtraChild(new WidgetPointer(arg0), 5, multiply(ivar2, 4));
+		setWidgetPosition(4, ivar3, 0, 0);
+		setWidgetSize(17, 17, 0, 0);
+		if (isMember() && ((boolean)getOtherCommonData(ivar4, 557))) {
+			setWidgetSprite(698);
+		} else if (((boolean)ivar2)) {
+			setWidgetSprite(699);
+		} else {
+			setWidgetSprite(697);
+		}
+		createExtraChild(new WidgetPointer(arg0), 4, add(multiply(ivar2, 4), 1));
+		setWidgetPosition(25, ivar3, 0, 0);
+		setWidgetSize(25, 17, 1, 0);
+		setWidgetText(getOtherCommonData(ivar4, 555));
+		setWidgetFont(495);
+		setWidgetTextAlignment(0, 0, 0);
+		setWidgetRGB(new Color(200, 170, 100));
+		setWidgetUnknownBoolean(true);
+		createExtraChild(new WidgetPointer(arg0), 4, add(multiply(ivar2, 4), 2));
+		setWidgetPosition(4, add(ivar3, 17), 0, 0);
+		setWidgetSize(8, add(multiply(getLineCount(subtract(getWidgetActualWidth(new WidgetPointer(arg0)), 8), 494, getOtherCommonData(ivar4, 556)), 10), 3), 1, 0);
+		setWidgetText(getOtherCommonData(ivar4, 556));
+		setWidgetFont(494);
+		setWidgetTextAlignment(0, 0, 0);
+		setWidgetRGB(new Color(200, 170, 100));
+		setWidgetUnknownBoolean(true);
+		createExtraChild(new WidgetPointer(arg0), 3, add(multiply(ivar2, 4), 3));
+		setWidgetPosition(4, ivar3, 0, 0);
+		setWidgetSize(8, add(17, getWidgetActualHeight()), 1, 0);
+		cs2method2103(255);
+		setWidgetContextMenuOption(1, getOtherCommonData(ivar4, 555));
+		setScriptCallOnClickContextMenu(1833, -2147483644, ivar2, "ii");
+		ivar3 = add(ivar3, getWidgetActualHeight());
+		if (ivar2 < 4) {
+			ivar3 = add(ivar3, 3);
+		}
+		ivar2 = add(ivar2, 1);
+	}
+	setWidgetScrollMax(0, ivar3, new WidgetPointer(arg0));
+	cs2method2100(0, 0, new WidgetPointer(arg0));
+	script_31(arg1, arg0, 792, 789, 790, 791, 773, 788);
+	return;
+}

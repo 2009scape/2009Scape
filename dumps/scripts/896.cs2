@@ -1,0 +1,13 @@
+void script_896() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = divide(116, 12);
+	ivar1 = multiply(ivar0, bitconfig_4527);
+	ivar2 = multiply(ivar0, bitconfig_4526);
+	setWidgetPosition(getWidgetActualX(new WidgetPointer(717,8)), add(122, subtract(116, ivar1)), 0, 0, new WidgetPointer(717,8));
+	setWidgetPosition(getWidgetActualX(new WidgetPointer(717,7)), add(122, subtract(116, ivar2)), 0, 0, new WidgetPointer(717,7));
+	setWidgetSize(27, ivar1, 0, 0, new WidgetPointer(717,8));
+	setWidgetSize(27, ivar2, 0, 0, new WidgetPointer(717,7));
+	return;
+}

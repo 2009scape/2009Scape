@@ -1,0 +1,9 @@
+void script_2629(int arg0) {
+	if ((globalint_905 == arg0) && ((boolean)globalint_904)) {
+		script_2635();
+		return;
+	}
+	script_2635();
+	script_2630(arg0);
+	return;
+}

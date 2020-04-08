@@ -1,0 +1,20 @@
+void script_2354(int arg0) {
+	if (((boolean)globalint_772)) {
+		setWidgetText(new WidgetPointer(arg0), "Saving your game and loading QuestHelp");
+		globalint_772 = add(globalint_772, 1);
+	} else if (globalint_772 == 20) {
+		setWidgetText(new WidgetPointer(arg0), "Saving your game and loading QuestHelp.");
+		globalint_772 = add(globalint_772, 1);
+	} else if (globalint_772 == 40) {
+		setWidgetText(new WidgetPointer(arg0), "Saving your game and loading QuestHelp..");
+		globalint_772 = add(globalint_772, 1);
+	} else if (globalint_772 == 60) {
+		setWidgetText(new WidgetPointer(arg0), "Saving your game and loading QuestHelp.");
+		globalint_772 = add(globalint_772, 1);
+	} else if (globalint_772 == 80) {
+		globalint_772 = 1;
+	} else {
+		globalint_772 = add(globalint_772, 1);
+	}
+	return;
+}

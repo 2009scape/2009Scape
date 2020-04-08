@@ -1,0 +1,20 @@
+void script_514() {
+	int ivar0;
+	int ivar1;
+	ivar0 = 0;
+	ivar1 = 0;
+	if (getDisplayMode() >= 2) {
+		ivar0 = getWidgetActualWidth(new WidgetPointer(746,9));
+		ivar1 = getWidgetActualHeight(new WidgetPointer(746,9));
+		if (globalint_51 < ivar0) {
+			globalint_51 = add(globalint_51, 15);
+			setWidgetSize(globalint_51, ivar1, 0, 0, new WidgetPointer(610,1));
+		}
+	} else {
+		if (globalint_51 < 512) {
+			globalint_51 = add(globalint_51, 15);
+			setWidgetSize(globalint_51, 334, 0, 0, new WidgetPointer(610,1));
+		}
+	}
+	return;
+}

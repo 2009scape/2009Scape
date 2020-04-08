@@ -1,0 +1,107 @@
+cs2func_script_2788_struct(2,2,0) script_2788(int arg0,int arg1) {
+	switch (arg1) {
+		case 0:
+			return newstruct cs2func_script_2788_struct(-1, 2287, "You can see what each prayer does by selecting the Prayer icon on your side interface. Move your mouse over the icon of the prayer you want and a description will be available.", "");
+		case 1:
+			return newstruct cs2func_script_2788_struct(1, getOtherCommonData(660, 735), "Thick Skin", "You can now use the " + "<col=000080>" + "Thick Skin" + "</col>" + " prayer.");
+		case 2:
+			return newstruct cs2func_script_2788_struct(4, getOtherCommonData(661, 735), "Burst of Strength", "You can now use the " + "<col=000080>" + "Burst of Strength" + "</col>" + " prayer.");
+		case 3:
+			return newstruct cs2func_script_2788_struct(7, getOtherCommonData(662, 735), "Clarity of Thought", "You can now use the " + "<col=000080>" + "Clarity of Thought" + "</col>" + " prayer.");
+		case 4:
+			return newstruct cs2func_script_2788_struct(8, getOtherCommonData(678, 735), "Sharp Eye", "You can now use the " + "<col=000080>" + "Sharp Eye" + "</col>" + " prayer.");
+		case 5:
+			return newstruct cs2func_script_2788_struct(9, getOtherCommonData(679, 735), "Mystic Will", "You can now use the " + "<col=000080>" + "Mystic Will" + "</col>" + " prayer.");
+		case 6:
+			return newstruct cs2func_script_2788_struct(10, getOtherCommonData(663, 735), "Rock Skin", "You can now use the " + "<col=000080>" + "Rock Skin" + "</col>" + " prayer.");
+		case 7:
+			return newstruct cs2func_script_2788_struct(13, getOtherCommonData(664, 735), "Superhuman Strength", "You can now use the " + "<col=000080>" + "Superhuman Strength" + "</col>" + " prayer.");
+		case 8:
+			return newstruct cs2func_script_2788_struct(16, getOtherCommonData(665, 735), "Improved Reflexes", "You can now use the " + "<col=000080>" + "Improved Reflexes" + "</col>" + " prayer.");
+		case 9:
+			return newstruct cs2func_script_2788_struct(19, getOtherCommonData(666, 735), "Rapid Restore", "You can now use the " + "<col=000080>" + "Rapid Restore" + "</col>" + " prayer.");
+		case 10:
+			return newstruct cs2func_script_2788_struct(22, getOtherCommonData(667, 735), "Rapid Heal", "You can now use the " + "<col=000080>" + "Rapid Heal" + "</col>" + " prayer.");
+		case 11:
+			return newstruct cs2func_script_2788_struct(25, getOtherCommonData(668, 735), "Protect Item", "You can now use the " + "<col=000080>" + "Protect Item" + "</col>" + " prayer.");
+		case 12:
+			return newstruct cs2func_script_2788_struct(26, getOtherCommonData(680, 735), "Hawk Eye", "You can now use the " + "<col=000080>" + "Hawk Eye" + "</col>" + " prayer.");
+		case 13:
+			return newstruct cs2func_script_2788_struct(27, getOtherCommonData(681, 735), "Mystic Lore", "You can now use the " + "<col=000080>" + "Mystic Lore" + "</col>" + " prayer.");
+		case 14:
+			return newstruct cs2func_script_2788_struct(28, getOtherCommonData(669, 735), "Steel Skin", "You can now use the " + "<col=000080>" + "Steel Skin" + "</col>" + " prayer.");
+		case 15:
+			return newstruct cs2func_script_2788_struct(31, getOtherCommonData(670, 735), "Ultimate Strength", "You can now use the " + "<col=000080>" + "Ultimate Strength" + "</col>" + " prayer.");
+		case 16:
+			return newstruct cs2func_script_2788_struct(34, getOtherCommonData(671, 735), "Incredible Reflexes", "You can now use the " + "<col=000080>" + "Incredible Reflexes" + "</col>" + " prayer.");
+		case 17:
+			return newstruct cs2func_script_2788_struct(35, getOtherCommonData(684, 735), "Members: Protect from Summoning", "Members can now use the " + "<col=000080>" + "Protect from Summoning" + "</col>" + " prayer.");
+		case 18:
+			return newstruct cs2func_script_2788_struct(37, getOtherCommonData(672, 735), "Protect from Magic", "You can now use the " + "<col=000080>" + "Protect from Magic" + "</col>" + " prayer.");
+		case 19:
+			return newstruct cs2func_script_2788_struct(40, getOtherCommonData(673, 735), "Protect from Missiles", "You can now use the " + "<col=000080>" + "Protect from Missiles" + "</col>" + " prayer.");
+		case 20:
+			return newstruct cs2func_script_2788_struct(43, getOtherCommonData(674, 735), "Protect from Melee", "You can now use the " + "<col=000080>" + "Protect from Melee" + "</col>" + " prayer.");
+		case 21:
+			return newstruct cs2func_script_2788_struct(44, getOtherCommonData(682, 735), "Eagle Eye", "You can now use the " + "<col=000080>" + "Eagle Eye" + "</col>" + " prayer.");
+		case 22:
+			return newstruct cs2func_script_2788_struct(45, getOtherCommonData(683, 735), "Mystic Might", "You can now use the " + "<col=000080>" + "Mystic Might" + "</col>" + " prayer.");
+		case 23:
+			return newstruct cs2func_script_2788_struct(46, getOtherCommonData(675, 735), "Members: Retribution", "Members can now use the " + "<col=000080>" + "Retribution" + "</col>" + " prayer.");
+		case 24:
+			return newstruct cs2func_script_2788_struct(49, getOtherCommonData(676, 735), "Members: Redemption", "Members can now use the " + "<col=000080>" + "Redemption" + "</col>" + " prayer.");
+		case 25:
+			return newstruct cs2func_script_2788_struct(50, getOtherCommonData(888, 735), "Members: Protect Item (curse)", "Members can now use the " + "<col=000080>" + "Protect Item" + "</col>" + " curse (after The Temple at Senntisten).");
+		case 26:
+			return newstruct cs2func_script_2788_struct(50, getOtherCommonData(889, 735), "Members: Sap Warrior", "Members can now use the " + "<col=000080>" + "Sap Warrior" + "</col>" + " curse (after The Temple at Senntisten).");
+		case 27:
+			return newstruct cs2func_script_2788_struct(52, getOtherCommonData(677, 735), "Members: Smite", "Members can now use the " + "<col=000080>" + "Smite" + "</col>" + " prayer.");
+		case 28:
+			return newstruct cs2func_script_2788_struct(52, getOtherCommonData(890, 735), "Members: Sap Ranger", "Members can now use the " + "<col=000080>" + "Sap Ranger" + "</col>" + " curse (after The Temple at Senntisten).");
+		case 29:
+			return newstruct cs2func_script_2788_struct(54, getOtherCommonData(891, 735), "Members: Sap Mage", "Members can now use the " + "<col=000080>" + "Sap Mage" + "</col>" + " curse (after The Temple at Senntisten).");
+		case 30:
+			return newstruct cs2func_script_2788_struct(56, getOtherCommonData(892, 735), "Members: Sap Spirit", "Members can now use the " + "<col=000080>" + "Sap Spirit" + "</col>" + " curse (after The Temple at Senntisten).");
+		case 31:
+			return newstruct cs2func_script_2788_struct(59, getOtherCommonData(893, 735), "Members: Berserker", "Members can now use the " + "<col=000080>" + "Berserker" + "</col>" + " curse (after The Temple at Senntisten).");
+		case 32:
+			return newstruct cs2func_script_2788_struct(60, getOtherCommonData(685, 735), "Members: Chivalry" + "<br>" + " (after King's Ransom)", "Members now have the Prayer level required to use the " + "<col=000080>" + "Chivalry" + "</col>" + " prayer (after King's Ransom).");
+		case 33:
+			return newstruct cs2func_script_2788_struct(62, getOtherCommonData(894, 735), "Members: Deflect Summoning", "Members can now use the " + "<col=000080>" + "Deflect Summoning" + "</col>" + " curse (after The Temple at Senntisten).");
+		case 34:
+			return newstruct cs2func_script_2788_struct(65, getOtherCommonData(895, 735), "Members: Deflect Magic", "Members can now use the " + "<col=000080>" + "Deflect Magic" + "</col>" + " curse (after The Temple at Senntisten).");
+		case 35:
+			return newstruct cs2func_script_2788_struct(65, getOtherCommonData(1005, 735), "Members: Rapid Renewal" + "<br>" + " (with 65 Dungeoneering)", "Members can now use the " + "<col=000080>" + "Rapid Renewal" + "</col>" + " prayer (bought from Daemonheim). (They also need level 65 Dungeoneering.)");
+		case 36:
+			return newstruct cs2func_script_2788_struct(68, getOtherCommonData(896, 735), "Members: Deflect Missiles", "Members can now use the " + "<col=000080>" + "Deflect Missiles" + "</col>" + " curse (after The Temple at Senntisten).");
+		case 37:
+			return newstruct cs2func_script_2788_struct(70, getOtherCommonData(686, 735), "Members: Piety" + "<br>" + " (after King's Ransom)", "Members now have the Prayer level required to use the " + "<col=000080>" + "Piety" + "</col>" + " prayer (after King's Ransom).");
+		case 38:
+			return newstruct cs2func_script_2788_struct(71, getOtherCommonData(897, 735), "Members: Deflect Melee", "Members can now use the " + "<col=000080>" + "Deflect Melee" + "</col>" + " curse (after The Temple at Senntisten).");
+		case 39:
+			return newstruct cs2func_script_2788_struct(74, getOtherCommonData(1029, 735), "Members: Rigour" + "<br>" + " (with 74 Dungeoneering)", "Members can now use the " + "<col=000080>" + "Rigour" + "</col>" + " prayer (bought from Daemonheim). (They also need level 74 Dungeoneering.)");
+		case 40:
+			return newstruct cs2func_script_2788_struct(74, getOtherCommonData(898, 735), "Members: Leech Attack", "Members can now use the " + "<col=000080>" + "Leech Attack" + "</col>" + " curse (after The Temple at Senntisten).");
+		case 41:
+			return newstruct cs2func_script_2788_struct(76, getOtherCommonData(899, 735), "Members: Leech Ranged", "Members can now use the " + "<col=000080>" + "Leech Ranged" + "</col>" + " curse (after The Temple at Senntisten).");
+		case 42:
+			return newstruct cs2func_script_2788_struct(77, getOtherCommonData(1006, 735), "Members: Augury" + "<br>" + " (with 77 Dungeoneering)", "Members can now use the " + "<col=000080>" + "Augury" + "</col>" + " prayer (bought from Daemonheim). (They also need level 77 Dungeoneering.)");
+		case 43:
+			return newstruct cs2func_script_2788_struct(78, getOtherCommonData(900, 735), "Members: Leech Magic", "Members can now use the " + "<col=000080>" + "Leech Magic" + "</col>" + " curse (after The Temple at Senntisten).");
+		case 44:
+			return newstruct cs2func_script_2788_struct(80, getOtherCommonData(901, 735), "Members: Leech Defence", "Members can now use the " + "<col=000080>" + "Leech Defence" + "</col>" + " curse (after The Temple at Senntisten).");
+		case 45:
+			return newstruct cs2func_script_2788_struct(82, getOtherCommonData(902, 735), "Members: Leech Strength", "Members can now use the " + "<col=000080>" + "Leech Strength" + "</col>" + " curse (after The Temple at Senntisten).");
+		case 46:
+			return newstruct cs2func_script_2788_struct(84, getOtherCommonData(903, 735), "Members: Leech Energy", "Members can now use the " + "<col=000080>" + "Leech Energy" + "</col>" + " curse (after The Temple at Senntisten).");
+		case 47:
+			return newstruct cs2func_script_2788_struct(86, getOtherCommonData(904, 735), "Members: Leech Special Attack", "Members can now use the " + "<col=000080>" + "Leech Special Attack" + "</col>" + " curse (after The Temple at Senntisten).");
+		case 48:
+			return newstruct cs2func_script_2788_struct(89, getOtherCommonData(905, 735), "Members: Wrath", "Members can now use the " + "<col=000080>" + "Wrath" + "</col>" + " curse (after The Temple at Senntisten).");
+		case 49:
+			return newstruct cs2func_script_2788_struct(92, getOtherCommonData(906, 735), "Members: Soul Split", "Members can now use the " + "<col=000080>" + "Soul Split" + "</col>" + " curse (after The Temple at Senntisten).");
+		case 50:
+			return newstruct cs2func_script_2788_struct(95, getOtherCommonData(907, 735), "Members: Turmoil", "Members can now use the " + "<col=000080>" + "Turmoil" + "</col>" + " curse (after The Temple at Senntisten).");
+	}
+	return newstruct cs2func_script_2788_struct(0, -1, "", "");
+}

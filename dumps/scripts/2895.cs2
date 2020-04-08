@@ -1,0 +1,13 @@
+void script_2895(int arg0) {
+	if (globalint_1078 > bitconfig_7189) {
+		if (globalint_1079 != 1) {
+			setScriptCallOnGameloop(2896, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+			globalint_1079 = 1;
+		}
+	} else {
+		if (((boolean)globalint_1078)) {
+			globalint_1078 = bitconfig_7189;
+		}
+	}
+	return;
+}

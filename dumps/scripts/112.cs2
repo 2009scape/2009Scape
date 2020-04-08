@@ -1,0 +1,204 @@
+void script_112(int arg0,int arg1) {
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	int stack_dump3;
+	string stack_dump4;
+	cs2func_script_802_struct(1,1,0) structdump_5;
+	cs2func_script_802_struct(1,1,0) structdump_6;
+	cs2func_script_802_struct(1,1,0) structdump_7;
+	cs2func_script_802_struct(1,1,0) structdump_8;
+	cs2func_script_802_struct(1,1,0) structdump_9;
+	switch (arg0) {
+		flow_1:
+			case 84:
+			if (globalint_5 == 12) {
+				script_1806(globalstring_22);
+				return;
+			}
+			IF (strLength(globalstring_22) > 0) 
+				GOTO	flow_4
+			GOTO	flow_51
+		flow_4:
+			if (globalint_5 == 13) {
+				sendStringInput(globalstring_22);
+			} else if ((globalint_5 == 4) || (globalint_5 == 5)) {
+				if (getIgnoreCount() < 0) {
+					messageType0("Unable to update Ignore List: system busy");
+				} else if (globalint_5 == 4) {
+					cs2method3607(globalstring_22);
+				} else {
+					if (globalint_5 == 5) {
+						if (cs2method3623(script_4591(globalstring_22))) {
+							cs2method3608(script_4591(globalstring_22));
+						} else {
+							messageType0("That player is not on your ignore list.");
+						}
+					}
+				}
+			} else if (globalint_5 < 7) {
+				if (getFriendlistSize() < 0) {
+					messageType0("Unable to complete action - system busy");
+				} else if (globalint_5 == 2) {
+					cs2method3605(globalstring_22);
+				} else if (globalint_5 == 3) {
+					if (isFriend(script_4591(globalstring_22))) {
+						cs2method3606(script_4591(globalstring_22));
+					} else {
+						messageType0("That player is not on your friends list.");
+					}
+				} else {
+					if (globalint_5 == 6) {
+						if (cs2method5005() == 2) {
+							cs2method5001(cs2method5000(), 1, cs2method5016());
+							script_178();
+							script_84();
+							script_89();
+						}
+						cs2method5009(globalstring_23, globalstring_22);
+					}
+				}
+			} else if (globalint_5 == 11) {
+				script_1478();
+			} else if (globalint_5 == 7) {
+				globalstring_22 = script_2332(globalstring_22, "K", "000");
+				globalstring_22 = script_2332(globalstring_22, "k", "000");
+				globalstring_22 = script_2332(globalstring_22, "M", "000000");
+				globalstring_22 = script_2332(globalstring_22, "m", "000000");
+				if (((boolean)getLanguage())) {
+					globalstring_22 = script_2332(globalstring_22, "T", "000");
+					globalstring_22 = script_2332(globalstring_22, "t", "000");
+				}
+				sendIntegerInput(globalstring_22);
+			} else if (globalint_5 == 8) {
+				globalstring_201 = replaceLtGt(globalstring_22);
+				globalint_1026 = 1;
+				sendNameInput(globalstring_22);
+			} else if (globalint_5 == 9) {
+				if (stringMethod4107(lower(globalstring_22), lower(globalstring_33)) != 0) {
+					sendStringInput(globalstring_22);
+				} else {
+					messageType0("Please do not enter your password here!");
+				}
+			} else if (globalint_5 == 10) {
+				globalstring_202 = replaceLtGt(globalstring_22);
+				globalint_1027 = 1;
+				sendUnknownFriendPacketMethod3619(globalstring_22);
+			} else if (globalint_5 == 15) {
+				script_1633(globalstring_22);
+			} else {
+				if (globalint_5 == 16) {
+					script_4465(globalstring_22);
+				}
+			}
+			GOTO	flow_54
+		flow_51:
+			if (globalint_5 == 14) {
+				script_3683();
+				return;
+			}
+			IF (globalint_5 == 7) 
+				GOTO	flow_54
+			GOTO	flow_54
+		flow_54:
+			setWidgetIsHidden(true, new WidgetPointer(752,3));
+			setWidgetIsHidden(true, new WidgetPointer(752,7));
+			setWidgetIsHidden(false, new WidgetPointer(752,8));
+			globalint_5 = 0;
+			if (getDisplayMode() >= 2) {
+				script_1364();
+			}
+			return;
+			case 13:
+			if (globalint_5 == 12) {
+				script_1806(globalstring_38);
+				script_1548(0);
+			} else {
+				if (globalint_5 == 14) {
+					script_3683();
+				}
+			}
+			return;
+			case 102:
+			case 103:
+			case 98:
+			case 99:
+			case 96:
+			case 97:
+			if (isHoldingCtrl()) {
+				return;
+			}
+			globalint_1029 = script_1553(arg0, globalint_1029, globalstring_22);
+			break;
+			default:
+			switch (globalint_5) {
+				case 9:
+				case 11:
+				case 6:
+					stack_dump0 = globalint_1029;
+					stack_dump1 = 0;
+					stack_dump2 = arg0;
+					stack_dump3 = arg1;
+					stack_dump4 = globalstring_22;
+					structdump_5 = script_802(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+					stack_dump4 = structdump_5.stringpart_0;
+					globalint_1029 = structdump_5.intpart_0;
+					globalstring_22 = stack_dump4;
+					break;
+				case 7:
+					stack_dump0 = globalint_1029;
+					stack_dump1 = 6;
+					stack_dump2 = arg0;
+					stack_dump3 = arg1;
+					stack_dump4 = globalstring_22;
+					structdump_6 = script_802(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+					stack_dump4 = structdump_6.stringpart_0;
+					globalint_1029 = structdump_6.intpart_0;
+					globalstring_22 = stack_dump4;
+					break;
+				case 13:
+					stack_dump0 = globalint_1029;
+					stack_dump1 = 5;
+					stack_dump2 = arg0;
+					stack_dump3 = arg1;
+					stack_dump4 = globalstring_22;
+					structdump_7 = script_802(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+					stack_dump4 = structdump_7.stringpart_0;
+					globalint_1029 = structdump_7.intpart_0;
+					globalstring_22 = stack_dump4;
+					break;
+				case 14:
+					stack_dump0 = globalint_1029;
+					stack_dump1 = 4;
+					stack_dump2 = arg0;
+					stack_dump3 = arg1;
+					stack_dump4 = globalstring_22;
+					structdump_8 = script_802(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+					stack_dump4 = structdump_8.stringpart_0;
+					globalint_1029 = structdump_8.intpart_0;
+					globalstring_22 = stack_dump4;
+					break;
+			}
+			stack_dump0 = globalint_1029;
+			stack_dump1 = 2;
+			stack_dump2 = arg0;
+			stack_dump3 = arg1;
+			stack_dump4 = globalstring_22;
+			structdump_9 = script_802(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+			stack_dump4 = structdump_9.stringpart_0;
+			globalint_1029 = structdump_9.intpart_0;
+			globalstring_22 = stack_dump4;
+	}
+	setWidgetText(new WidgetPointer(752,5), replaceLtGt(globalstring_22));
+	script_1557();
+	if (globalint_5 == 11) {
+		script_1475();
+	} else {
+		if (globalint_5 == 14) {
+			globalstring_196 = lower(globalstring_22);
+			globalint_89 = 1;
+			script_3680();
+		}
+	}
+	return;
+}

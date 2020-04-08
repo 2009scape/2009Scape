@@ -1,0 +1,5 @@
+void script_3052(int arg0) {
+	setScriptCallOnFriendListChange(3053, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+	script_3054(arg0);
+	return;
+}

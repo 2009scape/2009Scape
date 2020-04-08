@@ -1,0 +1,23 @@
+void script_4988(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int stack_dump0;
+	cs2func_script_4957_struct(4,0,0) structdump_1;
+	ivar1 = -1;
+	ivar2 = -1;
+	ivar3 = -1;
+	ivar4 = -1;
+	if (citadelConfigsInitialized()) {
+		stack_dump0 = arg0;
+		structdump_1 = script_4957(stack_dump0);
+		ivar2 = structdump_1.intpart_3;
+		ivar4 = structdump_1.intpart_2;
+		ivar3 = structdump_1.intpart_1;
+		ivar1 = structdump_1.intpart_0;
+		script_4981(arg0, ivar1, ivar3, ivar4, ivar2);
+		script_4937();
+	}
+	return;
+}

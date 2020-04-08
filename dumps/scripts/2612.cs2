@@ -1,0 +1,20 @@
+void script_2612(int arg0,int arg1) {
+	cameraMethod5511(addToCoordinate(arg0, 16, 0, 16));
+	switch (arg1) {
+		case 0:
+			cs2method6201(144, 180);
+			break;
+		case 1:
+			cs2method6201(176, 220);
+			break;
+		case 2:
+			cs2method6201(208, 260);
+			break;
+		case 3:
+			cs2method6201(240, 300);
+			break;
+		case 4:
+			cs2method6201(272, 340);
+	}
+	return;
+}

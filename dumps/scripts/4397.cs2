@@ -1,0 +1,24 @@
+void script_4397(int arg0,int arg1) {
+	flow_0:
+		IF (setWidgetRegister(new WidgetPointer(arg1), arg0)) 
+			GOTO	flow_1
+		GOTO	flow_7
+	flow_1:
+		IF (arg1 == 72417345) 
+			GOTO	flow_2
+		GOTO	flow_3
+	flow_2:
+		IF (subtract(bitconfig_9086, 1) == arg0) 
+			GOTO	flow_5
+	flow_3:
+		IF ((arg1 == 72417342) && (subtract(bitconfig_9087, 1) == arg0)) 
+			GOTO	flow_5
+		GOTO	flow_6
+	flow_5:
+		setWidgetSprite(5526);
+		GOTO	flow_7
+	flow_6:
+		setWidgetSprite(5523);
+	flow_7:
+		return;
+}

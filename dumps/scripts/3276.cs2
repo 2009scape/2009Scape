@@ -1,0 +1,473 @@
+void script_3276() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	int ivar22;
+	int ivar23;
+	int ivar24;
+	int ivar25;
+	int ivar26;
+	int ivar27;
+	int ivar28;
+	int ivar29;
+	int ivar30;
+	int ivar31;
+	int ivar32;
+	int ivar33;
+	int ivar34;
+	int ivar35;
+	int ivar36;
+	int ivar37;
+	int ivar38;
+	int ivar39;
+	int ivar40;
+	int ivar41;
+	cs2func_script_3273_struct(3,0,0) structdump_0;
+	cs2func_script_3273_struct(3,0,0) structdump_1;
+	cs2func_script_3273_struct(3,0,0) structdump_2;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 0;
+	ivar8 = 100;
+	ivar9 = 25;
+	ivar10 = 25;
+	ivar11 = 50;
+	ivar12 = 25;
+	ivar13 = 25;
+	ivar14 = 50;
+	ivar15 = 25;
+	ivar16 = 25;
+	ivar17 = 50;
+	ivar18 = 100;
+	ivar19 = 50;
+	ivar20 = 25;
+	ivar21 = 150;
+	ivar22 = 25;
+	ivar23 = 100;
+	ivar24 = 25;
+	ivar25 = 100;
+	ivar26 = 25;
+	ivar27 = 50;
+	ivar28 = 25;
+	ivar29 = 50;
+	ivar30 = 25;
+	ivar31 = 25;
+	ivar32 = 25;
+	ivar33 = 150;
+	ivar34 = 100;
+	ivar35 = 200;
+	ivar36 = 100;
+	globalint_1186 = 2000;
+	globalint_1185 = max(subtract(globalint_1185, 2), 0);
+	cs2method2103(globalint_1185, new WidgetPointer(933,251));
+	cs2method2103(0, new WidgetPointer(933,297));
+	cs2method2103(0, new WidgetPointer(933,298));
+	cs2method2103(0, new WidgetPointer(933,299));
+	ivar37 = 0;
+	if (globalint_1188 == 2) {
+		ivar37 = 792;
+	} else {
+		if (globalint_1188 == 3) {
+			ivar37 = 1583;
+		}
+	}
+	ivar38 = multiplyDivide(globalint_1195, 10000, 1267);
+	structdump_0 = script_3273();
+	ivar5 = structdump_0.intpart_2;
+	ivar4 = structdump_0.intpart_1;
+	ivar3 = structdump_0.intpart_0;
+	ivar39 = ivar5;
+	ivar40 = script_3274();
+	ivar41 = subtract(10000, multiply(min(bitconfig_7554, 6), 1000));
+	setWidgetIsHidden(false, new WidgetPointer(933,192));
+	setWidgetIsHidden(false, new WidgetPointer(933,17));
+	setWidgetIsHidden(false, new WidgetPointer(933,187));
+	setWidgetIsHidden(false, new WidgetPointer(933,240));
+	if (globalint_1187 < globalint_1319) {
+		setWidgetText(new WidgetPointer(933,240), "Floor " + intToStr(globalint_1187) + ":");
+		setWidgetRGB(new Color(160, 0, 0), new WidgetPointer(933,240));
+	} else {
+		setWidgetText(new WidgetPointer(933,240), "Floor " + intToStr(globalint_1319) + ":");
+	}
+	setWidgetIsHidden(false, new WidgetPointer(933,22));
+	setWidgetSize(add(getWidgetActualWidth(new WidgetPointer(933,23)), 5), add(getWidgetActualHeight(new WidgetPointer(933,23)), 5), 0, 0, new WidgetPointer(933,23));
+	playSoundEffect(8802, 1, 0);
+	cs2method2103(min(255, add(getWidgetShadeColor(new WidgetPointer(933,23)), 30)), new WidgetPointer(933,23));
+	setWidgetIsHidden(false, new WidgetPointer(933,241));
+	setWidgetText(new WidgetPointer(933,241), intToStr(multiplyDivide(divide(add(globalint_1237, 5), 10), 100, ivar8)));
+	setWidgetIsHidden(false, new WidgetPointer(933,190));
+	cs2method2103(subtract(255, divide(multiply(ivar8, 255), 100)), new WidgetPointer(933,190));
+	setWidgetIsHidden(false, new WidgetPointer(933,188));
+	setWidgetIsHidden(false, new WidgetPointer(933,227));
+	if (isMember()) {
+		setWidgetText(new WidgetPointer(933,227), "Prestige " + intToStr(min(60, max(bitconfig_7550, bitconfig_7551))));
+	} else {
+		setWidgetText(new WidgetPointer(933,227), "Prestige " + intToStr(min(35, max(bitconfig_7550, bitconfig_7551))));
+	}
+	setWidgetIsHidden(false, new WidgetPointer(933,21));
+	setWidgetSize(add(getWidgetActualWidth(new WidgetPointer(933,24)), 5), add(getWidgetActualHeight(new WidgetPointer(933,24)), 5), 0, 0, new WidgetPointer(933,24));
+	cs2method2103(255, new WidgetPointer(933,24));
+	setWidgetIsHidden(false, new WidgetPointer(933,228));
+	setWidgetText(new WidgetPointer(933,228), intToStr(multiplyDivide(divide(add(globalint_1238, 5), 10), 100, ivar8)));
+	setWidgetIsHidden(false, new WidgetPointer(933,191));
+	cs2method2103(subtract(255, divide(multiply(ivar8, 255), 100)), new WidgetPointer(933,191));
+	setWidgetIsHidden(false, new WidgetPointer(933,189));
+	setWidgetIsHidden(false, new WidgetPointer(933,214));
+	setWidgetIsHidden(false, new WidgetPointer(933,20));
+	setWidgetSize(add(getWidgetActualWidth(new WidgetPointer(933,25)), 5), add(getWidgetActualHeight(new WidgetPointer(933,25)), 5), 0, 0, new WidgetPointer(933,25));
+	cs2method2103(0, new WidgetPointer(933,25));
+	setWidgetIsHidden(false, new WidgetPointer(933,215));
+	setWidgetText(new WidgetPointer(933,215), intToStr(multiplyDivide(divide(add(globalint_1239, 5), 10), 100, ivar8)));
+	setWidgetIsHidden(true, new WidgetPointer(933,186));
+	setWidgetIsHidden(false, new WidgetPointer(933,19));
+	setWidgetText(new WidgetPointer(933,39), intToStr(multiplyDivide(divide(add(globalint_1239, 5), 10), 100, ivar8)));
+	cs2method2103(255, new WidgetPointer(933,37));
+	setWidgetIsHidden(false, new WidgetPointer(933,83));
+	setWidgetIsHidden(false, new WidgetPointer(933,18));
+	setWidgetIsHidden(false, new WidgetPointer(933,53));
+	setWidgetIsHidden(false, new WidgetPointer(933,54));
+	setWidgetIsHidden(false, new WidgetPointer(933,68));
+	setWidgetIsHidden(false, new WidgetPointer(933,69));
+	setWidgetIsHidden(false, new WidgetPointer(933,70));
+	setWidgetIsHidden(false, new WidgetPointer(933,71));
+	setWidgetIsHidden(false, new WidgetPointer(933,72));
+	setWidgetIsHidden(false, new WidgetPointer(933,73));
+	setWidgetIsHidden(false, new WidgetPointer(933,74));
+	structdump_1 = script_3273();
+	ivar5 = structdump_1.intpart_2;
+	ivar4 = structdump_1.intpart_1;
+	ivar3 = structdump_1.intpart_0;
+	if (globalint_1188 <= 1) {
+		cs2method2103(0, new WidgetPointer(933,68));
+		setWidgetText(new WidgetPointer(933,74), "+0%");
+	} else if (globalint_1188 == 2) {
+		cs2method2103(0, new WidgetPointer(933,69));
+		setWidgetText(new WidgetPointer(933,74), "+" + intToStr(divide(792, 100)) + "%");
+	} else {
+		if (globalint_1188 > 2) {
+			cs2method2103(0, new WidgetPointer(933,70));
+			setWidgetText(new WidgetPointer(933,74), "+" + intToStr(divide(1583, 100)) + "%");
+		}
+	}
+	setWidgetIsHidden(false, new WidgetPointer(933,55));
+	setWidgetIsHidden(false, new WidgetPointer(933,64));
+	setWidgetIsHidden(false, new WidgetPointer(933,75));
+	setWidgetSize(multiplyDivide(multiplyDivide(globalint_1195, 10000, 16384), 100, ivar8), 16384, 2, 2, new WidgetPointer(933,172));
+	ivar0 = add(10000, ivar37);
+	ivar1 = add(add(10000, ivar37), ivar38);
+	if (ivar1 >= ivar0) {
+		setWidgetText(new WidgetPointer(933,75), "+" + intToStr(divide(add(multiplyDivide(ivar8, 100, subtract(ivar1, ivar0)), 50), 100)) + "%");
+	} else {
+		setWidgetText(new WidgetPointer(933,75), intToStr(divide(add(multiplyDivide(ivar8, 100, subtract(ivar1, ivar0)), 50), 100)) + "%");
+	}
+	setWidgetText(new WidgetPointer(933,96), intToStr(divide(add(add(ivar0, multiplyDivide(ivar8, 100, subtract(ivar1, ivar0))), 50), 100)) + "%");
+	setWidgetSize(multiplyDivide(8192, 100, divide(add(add(ivar0, multiplyDivide(ivar8, 100, subtract(ivar1, ivar0))), 50), 100)), 16384, 2, 2, new WidgetPointer(933,112));
+	setWidgetIsHidden(false, new WidgetPointer(933,56));
+	setWidgetIsHidden(false, new WidgetPointer(933,57));
+	setWidgetIsHidden(false, new WidgetPointer(933,78));
+	setWidgetIsHidden(false, new WidgetPointer(933,80));
+	setWidgetIsHidden(false, new WidgetPointer(933,59));
+	cs2method2103(subtract(255, divide(multiply(ivar8, 255), 100)), new WidgetPointer(933,78));
+	cs2method2103(subtract(255, divide(multiply(ivar8, 255), 100)), new WidgetPointer(933,80));
+	structdump_2 = script_3273();
+	ivar5 = structdump_2.intpart_2;
+	ivar4 = structdump_2.intpart_1;
+	ivar3 = structdump_2.intpart_0;
+	setWidgetText(new WidgetPointer(933,57), intToStr(ivar3) + " : " + intToStr(ivar4));
+	ivar0 = add(add(10000, ivar37), ivar38);
+	ivar1 = add(add(add(10000, ivar37), ivar38), ivar39);
+	if (ivar1 >= ivar0) {
+		setWidgetText(new WidgetPointer(933,59), "+" + intToStr(divide(add(multiplyDivide(ivar8, 100, subtract(ivar1, ivar0)), 50), 100)) + "%");
+	} else {
+		setWidgetText(new WidgetPointer(933,59), intToStr(divide(add(multiplyDivide(ivar8, 100, subtract(ivar1, ivar0)), 50), 100)) + "%");
+	}
+	setWidgetIsHidden(false, new WidgetPointer(933,61));
+	setWidgetIsHidden(false, new WidgetPointer(933,76));
+	ivar0 = add(add(add(10000, ivar37), ivar38), ivar39);
+	ivar1 = add(add(add(add(10000, ivar37), ivar38), ivar39), globalint_1236);
+	if (ivar1 >= ivar0) {
+		setWidgetText(new WidgetPointer(933,76), "+" + intToStr(divide(add(multiplyDivide(ivar8, 100, subtract(ivar1, ivar0)), 50), 100)) + "%");
+	} else {
+		setWidgetText(new WidgetPointer(933,76), intToStr(divide(add(multiplyDivide(ivar8, 100, subtract(ivar1, ivar0)), 50), 100)) + "%");
+	}
+	setWidgetIsHidden(false, new WidgetPointer(933,62));
+	setWidgetIsHidden(false, new WidgetPointer(933,58));
+	setWidgetIsHidden(false, new WidgetPointer(933,79));
+	setWidgetIsHidden(false, new WidgetPointer(933,81));
+	setWidgetIsHidden(false, new WidgetPointer(933,60));
+	cs2method2103(subtract(255, divide(multiply(ivar8, 255), 100)), new WidgetPointer(933,79));
+	cs2method2103(subtract(255, divide(multiply(ivar8, 255), 100)), new WidgetPointer(933,81));
+	setWidgetText(new WidgetPointer(933,58), intToStr(multiplyDivide(globalint_1320, 100, ivar8)));
+	ivar0 = add(add(add(add(10000, ivar37), ivar38), ivar39), globalint_1236);
+	ivar1 = multiplyDivide(add(add(add(add(10000, ivar37), ivar38), ivar39), globalint_1236), 10000, ivar40);
+	if (ivar1 >= ivar0) {
+		setWidgetText(new WidgetPointer(933,60), "+" + intToStr(divide(add(multiplyDivide(ivar8, 100, subtract(ivar1, ivar0)), 50), 100)) + "%");
+	} else {
+		setWidgetText(new WidgetPointer(933,60), intToStr(divide(add(multiplyDivide(ivar8, 100, subtract(ivar1, ivar0)), 50), 100)) + "%");
+	}
+	setWidgetIsHidden(false, new WidgetPointer(933,63));
+	setWidgetIsHidden(false, new WidgetPointer(933,77));
+	ivar0 = multiplyDivide(add(add(add(add(10000, ivar37), ivar38), ivar39), globalint_1236), 10000, ivar40);
+	ivar1 = multiplyDivide(multiplyDivide(add(add(add(add(10000, ivar37), ivar38), ivar39), globalint_1236), 10000, ivar40), 10000, script_3275());
+	if (ivar1 >= ivar0) {
+		setWidgetText(new WidgetPointer(933,77), "+" + intToStr(divide(add(multiplyDivide(ivar8, 100, subtract(ivar1, ivar0)), 50), 100)) + "%");
+	} else {
+		setWidgetText(new WidgetPointer(933,77), intToStr(divide(add(multiplyDivide(ivar8, 100, subtract(ivar1, ivar0)), 50), 100)) + "%");
+	}
+	setWidgetIsHidden(false, new WidgetPointer(933,65));
+	setWidgetIsHidden(false, new WidgetPointer(933,66));
+	setWidgetIsHidden(false, new WidgetPointer(933,67));
+	if (bitconfig_7554 != 0) {
+		switch (bitconfig_7554) {
+			case 1:
+				setWidgetIsHidden(false, new WidgetPointer(933,146));
+				setWidgetSprite(2849, new WidgetPointer(933,146));
+				break;
+			case 2:
+				setWidgetIsHidden(false, new WidgetPointer(933,146));
+				setWidgetIsHidden(false, new WidgetPointer(933,147));
+				setWidgetSprite(2850, new WidgetPointer(933,146));
+				setWidgetSprite(2849, new WidgetPointer(933,147));
+				break;
+			case 3:
+				setWidgetIsHidden(false, new WidgetPointer(933,146));
+				setWidgetIsHidden(false, new WidgetPointer(933,147));
+				setWidgetIsHidden(false, new WidgetPointer(933,148));
+				setWidgetSprite(2850, new WidgetPointer(933,147));
+				setWidgetSprite(2849, new WidgetPointer(933,148));
+				break;
+			case 4:
+				setWidgetIsHidden(false, new WidgetPointer(933,146));
+				setWidgetIsHidden(false, new WidgetPointer(933,147));
+				setWidgetIsHidden(false, new WidgetPointer(933,148));
+				setWidgetIsHidden(false, new WidgetPointer(933,149));
+				setWidgetSprite(2850, new WidgetPointer(933,148));
+				setWidgetSprite(2849, new WidgetPointer(933,149));
+				break;
+			case 5:
+				setWidgetIsHidden(false, new WidgetPointer(933,146));
+				setWidgetIsHidden(false, new WidgetPointer(933,147));
+				setWidgetIsHidden(false, new WidgetPointer(933,148));
+				setWidgetIsHidden(false, new WidgetPointer(933,149));
+				setWidgetIsHidden(false, new WidgetPointer(933,150));
+				setWidgetSprite(2850, new WidgetPointer(933,149));
+				setWidgetSprite(2849, new WidgetPointer(933,150));
+				break;
+			case 6:
+				setWidgetIsHidden(false, new WidgetPointer(933,146));
+				setWidgetIsHidden(false, new WidgetPointer(933,147));
+				setWidgetIsHidden(false, new WidgetPointer(933,148));
+				setWidgetIsHidden(false, new WidgetPointer(933,149));
+				setWidgetIsHidden(false, new WidgetPointer(933,150));
+				setWidgetIsHidden(false, new WidgetPointer(933,151));
+				setWidgetSprite(2850, new WidgetPointer(933,150));
+				setWidgetSprite(2849, new WidgetPointer(933,151));
+				break;
+			case 7:
+				setWidgetIsHidden(false, new WidgetPointer(933,146));
+				setWidgetIsHidden(false, new WidgetPointer(933,147));
+				setWidgetIsHidden(false, new WidgetPointer(933,148));
+				setWidgetIsHidden(false, new WidgetPointer(933,149));
+				setWidgetIsHidden(false, new WidgetPointer(933,150));
+				setWidgetIsHidden(false, new WidgetPointer(933,151));
+				setWidgetIsHidden(false, new WidgetPointer(933,152));
+				setWidgetSprite(2850, new WidgetPointer(933,151));
+				setWidgetSprite(2849, new WidgetPointer(933,152));
+				break;
+			case 8:
+				setWidgetIsHidden(false, new WidgetPointer(933,146));
+				setWidgetIsHidden(false, new WidgetPointer(933,147));
+				setWidgetIsHidden(false, new WidgetPointer(933,148));
+				setWidgetIsHidden(false, new WidgetPointer(933,149));
+				setWidgetIsHidden(false, new WidgetPointer(933,150));
+				setWidgetIsHidden(false, new WidgetPointer(933,151));
+				setWidgetIsHidden(false, new WidgetPointer(933,152));
+				setWidgetIsHidden(false, new WidgetPointer(933,153));
+				setWidgetSprite(2850, new WidgetPointer(933,152));
+				setWidgetSprite(2849, new WidgetPointer(933,153));
+				break;
+			case 9:
+				setWidgetIsHidden(false, new WidgetPointer(933,146));
+				setWidgetIsHidden(false, new WidgetPointer(933,147));
+				setWidgetIsHidden(false, new WidgetPointer(933,148));
+				setWidgetIsHidden(false, new WidgetPointer(933,149));
+				setWidgetIsHidden(false, new WidgetPointer(933,150));
+				setWidgetIsHidden(false, new WidgetPointer(933,151));
+				setWidgetIsHidden(false, new WidgetPointer(933,152));
+				setWidgetIsHidden(false, new WidgetPointer(933,153));
+				setWidgetIsHidden(false, new WidgetPointer(933,154));
+				setWidgetSprite(2850, new WidgetPointer(933,153));
+				setWidgetSprite(2849, new WidgetPointer(933,154));
+				break;
+			case 10:
+				setWidgetIsHidden(false, new WidgetPointer(933,146));
+				setWidgetIsHidden(false, new WidgetPointer(933,147));
+				setWidgetIsHidden(false, new WidgetPointer(933,148));
+				setWidgetIsHidden(false, new WidgetPointer(933,149));
+				setWidgetIsHidden(false, new WidgetPointer(933,150));
+				setWidgetIsHidden(false, new WidgetPointer(933,151));
+				setWidgetIsHidden(false, new WidgetPointer(933,152));
+				setWidgetIsHidden(false, new WidgetPointer(933,153));
+				setWidgetIsHidden(false, new WidgetPointer(933,154));
+				setWidgetIsHidden(false, new WidgetPointer(933,155));
+				setWidgetSprite(2850, new WidgetPointer(933,154));
+				setWidgetSprite(2849, new WidgetPointer(933,155));
+				break;
+			case 11:
+				setWidgetIsHidden(false, new WidgetPointer(933,146));
+				setWidgetIsHidden(false, new WidgetPointer(933,147));
+				setWidgetIsHidden(false, new WidgetPointer(933,148));
+				setWidgetIsHidden(false, new WidgetPointer(933,149));
+				setWidgetIsHidden(false, new WidgetPointer(933,150));
+				setWidgetIsHidden(false, new WidgetPointer(933,151));
+				setWidgetIsHidden(false, new WidgetPointer(933,152));
+				setWidgetIsHidden(false, new WidgetPointer(933,153));
+				setWidgetIsHidden(false, new WidgetPointer(933,154));
+				setWidgetIsHidden(false, new WidgetPointer(933,155));
+				setWidgetIsHidden(false, new WidgetPointer(933,156));
+				setWidgetSprite(2850, new WidgetPointer(933,155));
+				setWidgetSprite(2849, new WidgetPointer(933,156));
+				break;
+			case 12:
+				setWidgetIsHidden(false, new WidgetPointer(933,146));
+				setWidgetIsHidden(false, new WidgetPointer(933,147));
+				setWidgetIsHidden(false, new WidgetPointer(933,148));
+				setWidgetIsHidden(false, new WidgetPointer(933,149));
+				setWidgetIsHidden(false, new WidgetPointer(933,150));
+				setWidgetIsHidden(false, new WidgetPointer(933,151));
+				setWidgetIsHidden(false, new WidgetPointer(933,152));
+				setWidgetIsHidden(false, new WidgetPointer(933,153));
+				setWidgetIsHidden(false, new WidgetPointer(933,154));
+				setWidgetIsHidden(false, new WidgetPointer(933,155));
+				setWidgetIsHidden(false, new WidgetPointer(933,156));
+				setWidgetIsHidden(false, new WidgetPointer(933,157));
+				setWidgetSprite(2850, new WidgetPointer(933,156));
+				setWidgetSprite(2849, new WidgetPointer(933,157));
+				break;
+			case 13:
+				setWidgetIsHidden(false, new WidgetPointer(933,146));
+				setWidgetIsHidden(false, new WidgetPointer(933,147));
+				setWidgetIsHidden(false, new WidgetPointer(933,148));
+				setWidgetIsHidden(false, new WidgetPointer(933,149));
+				setWidgetIsHidden(false, new WidgetPointer(933,150));
+				setWidgetIsHidden(false, new WidgetPointer(933,151));
+				setWidgetIsHidden(false, new WidgetPointer(933,152));
+				setWidgetIsHidden(false, new WidgetPointer(933,153));
+				setWidgetIsHidden(false, new WidgetPointer(933,154));
+				setWidgetIsHidden(false, new WidgetPointer(933,155));
+				setWidgetIsHidden(false, new WidgetPointer(933,156));
+				setWidgetIsHidden(false, new WidgetPointer(933,157));
+				setWidgetIsHidden(false, new WidgetPointer(933,158));
+				setWidgetSprite(2850, new WidgetPointer(933,157));
+				setWidgetSprite(2849, new WidgetPointer(933,158));
+				break;
+			case 14:
+				setWidgetIsHidden(false, new WidgetPointer(933,146));
+				setWidgetIsHidden(false, new WidgetPointer(933,147));
+				setWidgetIsHidden(false, new WidgetPointer(933,148));
+				setWidgetIsHidden(false, new WidgetPointer(933,149));
+				setWidgetIsHidden(false, new WidgetPointer(933,150));
+				setWidgetIsHidden(false, new WidgetPointer(933,151));
+				setWidgetIsHidden(false, new WidgetPointer(933,152));
+				setWidgetIsHidden(false, new WidgetPointer(933,153));
+				setWidgetIsHidden(false, new WidgetPointer(933,154));
+				setWidgetIsHidden(false, new WidgetPointer(933,155));
+				setWidgetIsHidden(false, new WidgetPointer(933,156));
+				setWidgetIsHidden(false, new WidgetPointer(933,157));
+				setWidgetIsHidden(false, new WidgetPointer(933,158));
+				setWidgetIsHidden(false, new WidgetPointer(933,159));
+				setWidgetSprite(2850, new WidgetPointer(933,158));
+				setWidgetSprite(2849, new WidgetPointer(933,159));
+				break;
+			case 15:
+				setWidgetIsHidden(false, new WidgetPointer(933,146));
+				setWidgetIsHidden(false, new WidgetPointer(933,147));
+				setWidgetIsHidden(false, new WidgetPointer(933,148));
+				setWidgetIsHidden(false, new WidgetPointer(933,149));
+				setWidgetIsHidden(false, new WidgetPointer(933,150));
+				setWidgetIsHidden(false, new WidgetPointer(933,151));
+				setWidgetIsHidden(false, new WidgetPointer(933,152));
+				setWidgetIsHidden(false, new WidgetPointer(933,153));
+				setWidgetIsHidden(false, new WidgetPointer(933,154));
+				setWidgetIsHidden(false, new WidgetPointer(933,155));
+				setWidgetIsHidden(false, new WidgetPointer(933,156));
+				setWidgetIsHidden(false, new WidgetPointer(933,157));
+				setWidgetIsHidden(false, new WidgetPointer(933,158));
+				setWidgetIsHidden(false, new WidgetPointer(933,159));
+				setWidgetIsHidden(false, new WidgetPointer(933,160));
+				setWidgetSprite(2850, new WidgetPointer(933,159));
+				setWidgetSprite(2849, new WidgetPointer(933,160));
+		}
+	} else {
+		setWidgetText(new WidgetPointer(933,67), "n/a");
+		globalint_1186 = add(globalint_1186, 2);
+	}
+	ivar0 = multiplyDivide(multiplyDivide(add(add(add(add(10000, ivar37), ivar38), ivar39), globalint_1236), 10000, ivar40), 10000, script_3275());
+	ivar1 = multiplyDivide(multiplyDivide(multiplyDivide(add(add(add(add(10000, ivar37), ivar38), ivar39), globalint_1236), 10000, ivar40), 10000, script_3275()), 10000, ivar41);
+	if (ivar1 >= ivar0) {
+		setWidgetText(new WidgetPointer(933,67), "+" + intToStr(divide(add(multiplyDivide(ivar8, 100, subtract(ivar1, ivar0)), 50), 100)) + "%");
+	} else {
+		setWidgetText(new WidgetPointer(933,67), intToStr(divide(add(multiplyDivide(ivar8, 100, subtract(ivar1, ivar0)), 50), 100)) + "%");
+	}
+	setWidgetIsHidden(true, new WidgetPointer(933,53));
+	if (globalint_1321 > 0) {
+		setWidgetIsHidden(false, new WidgetPointer(933,84));
+		setWidgetText(new WidgetPointer(933,94), "Unbalanced party penalty: x" + intToStr(divide(add(subtract(10000, globalint_1321), 50), 100)) + "%");
+	}
+	ivar0 = multiplyDivide(multiplyDivide(multiplyDivide(add(add(add(add(10000, ivar37), ivar38), ivar39), globalint_1236), 10000, ivar40), 10000, script_3275()), 10000, ivar41);
+	ivar1 = multiplyDivide(multiplyDivide(multiplyDivide(multiplyDivide(add(add(add(add(10000, ivar37), ivar38), ivar39), globalint_1236), 10000, ivar40), 10000, script_3275()), 10000, ivar41), 10000, subtract(10000, globalint_1321));
+	setWidgetText(new WidgetPointer(933,96), intToStr(divide(add(add(ivar0, multiplyDivide(ivar8, 100, subtract(ivar1, ivar0))), 50), 100)) + "%");
+	setWidgetSize(multiplyDivide(8192, 100, divide(add(add(ivar0, multiplyDivide(ivar8, 100, subtract(ivar1, ivar0))), 50), 100)), 16384, 2, 2, new WidgetPointer(933,112));
+	setWidgetIsHidden(true, new WidgetPointer(933,13));
+	setWidgetIsHidden(true, new WidgetPointer(933,16));
+	setWidgetIsHidden(true, new WidgetPointer(933,14));
+	setWidgetIsHidden(true, new WidgetPointer(933,15));
+	setWidgetText(new WidgetPointer(933,39), intToStr(globalint_1239));
+	ivar0 = globalint_1239;
+	ivar1 = multiplyDivide(multiplyDivide(multiplyDivide(multiplyDivide(multiplyDivide(add(add(add(add(10000, ivar37), ivar38), ivar39), globalint_1236), 10000, ivar40), 10000, script_3275()), 10000, ivar41), 10000, subtract(10000, globalint_1321)), 10000, globalint_1239);
+	if (((boolean)mod(ivar8, 5)) && (getWidgetActualY(new WidgetPointer(933,84)) != 138)) {
+		setWidgetPosition(getWidgetActualX(new WidgetPointer(933,84)), add(getWidgetActualY(new WidgetPointer(933,84)), 1), 0, 0, new WidgetPointer(933,84));
+	}
+	setWidgetSize(183, multiplyDivide(80, 100, ivar8), 0, 0, new WidgetPointer(933,111));
+	setWidgetText(new WidgetPointer(933,39), intToStr(divide(add(add(ivar0, multiplyDivide(ivar8, 100, subtract(ivar1, ivar0))), 5), 10)) + "%");
+	ivar0 = globalint_1239;
+	ivar1 = multiplyDivide(multiplyDivide(multiplyDivide(multiplyDivide(multiplyDivide(add(add(add(add(10000, ivar37), ivar38), ivar39), globalint_1236), 10000, ivar40), 10000, script_3275()), 10000, ivar41), 10000, subtract(10000, globalint_1321)), 10000, globalint_1239);
+	setWidgetText(new WidgetPointer(933,41), intToStr(divide(add(add(ivar0, multiplyDivide(ivar8, 100, subtract(ivar1, ivar0))), 5), 100)) + "%");
+	setWidgetIsHidden(true, new WidgetPointer(933,16));
+	setWidgetIsHidden(true, new WidgetPointer(933,14));
+	setWidgetIsHidden(true, new WidgetPointer(933,15));
+	if (standart_config_1780 < 2000000000) {
+		setWidgetText(new WidgetPointer(933,41), intToStr(divide(add(add(ivar0, multiplyDivide(ivar8, 100, subtract(ivar1, ivar0))), 5), 100)) + "%");
+	} else {
+		setWidgetText(new WidgetPointer(933,41), "n/a");
+	}
+	setWidgetIsHidden(true, new WidgetPointer(933,20));
+	setWidgetIsHidden(true, new WidgetPointer(933,21));
+	setWidgetIsHidden(true, new WidgetPointer(933,22));
+	script_949();
+	return;
+}

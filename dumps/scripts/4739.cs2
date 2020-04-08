@@ -1,0 +1,19 @@
+void script_4739(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	ivar3 = 0;
+	ivar4 = -1;
+	ivar5 = -1;
+	if (bitconfig_9903 != 0) {
+		ivar5 = cs2method_3408(105, 118, 3879, bitconfig_9903);
+		if (((boolean)arg2) && setWidgetRegister(new WidgetPointer(1144,0), arg1)) {
+			ivar4 = getItemIdInSlot(ivar5, arg1);
+			if (ivar4 != -1) {
+				bitconfig_9904 = arg1;
+				script_4741();
+			}
+		}
+	}
+	return;
+}

@@ -1,0 +1,47 @@
+void script_1048(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	if (arg0 == 13) {
+		script_1054();
+		return;
+	}
+	if (arg0 == 102) {
+		script_1050(globalint_126, globalstring_27);
+		return;
+	}
+	ivar5 = strLength(intToStr(globalint_129));
+	ivar6 = strIndexof(((char)arg1), 0, "0123456789");
+	if (arg0 == 84) {
+		if (ivar5 > 0) {
+			script_1074(arg2, arg4, globalint_129);
+		} else {
+			script_1054();
+		}
+		return;
+	}
+	if (arg0 == 85) {
+		if (ivar5 > 0) {
+			globalint_129 = divide(globalint_129, 10);
+		} else if (((boolean)globalint_127)) {
+			script_1054();
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(137,7));
+			setWidgetIsHidden(true, new WidgetPointer(137,9));
+			setWidgetIsHidden(true, new WidgetPointer(137,13));
+			setWidgetIsHidden(false, new WidgetPointer(137,17));
+			setWidgetIsHidden(false, new WidgetPointer(137,1));
+			setWidgetIsHidden(true, new WidgetPointer(137,3));
+			return;
+		}
+	} else {
+		if (((ivar6 >= 0) && (ivar5 < 10)) && (add(multiply(globalint_129, 10), ivar6) > 0)) {
+			globalint_129 = add(multiply(globalint_129, 10), ivar6);
+		}
+	}
+	if (globalint_129 > 0) {
+		setWidgetText(new WidgetPointer(arg3), "Please enter a value: " + intToStr(globalint_129) + "*");
+	} else {
+		setWidgetText(new WidgetPointer(arg3), "Please enter a value: *");
+	}
+	return;
+}

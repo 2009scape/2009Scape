@@ -1,0 +1,33 @@
+void script_3343(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar1 = -1;
+	ivar2 = -1;
+	ivar3 = -1;
+	if (((boolean)getLanguage())) {
+		if (((boolean)globalint_1179)) {
+			ivar1 = 3068;
+			ivar2 = 3067;
+			ivar3 = 3069;
+		} else {
+			ivar1 = 3071;
+			ivar2 = 3070;
+			ivar3 = 3072;
+		}
+	} else if (((boolean)globalint_1179)) {
+		ivar1 = 3014;
+		ivar2 = 3013;
+		ivar3 = 3015;
+	} else {
+		ivar1 = 3017;
+		ivar2 = 3016;
+		ivar3 = 3018;
+	}
+	setWidgetSprite(ivar2, new WidgetPointer(arg0));
+	setScriptCallOnMouseEntered(44, new WidgetPointer(-32768,3), ivar1, "Id", new WidgetPointer(arg0));
+	setScriptCallOnMouseExit(44, new WidgetPointer(-32768,3), ivar2, "Id", new WidgetPointer(arg0));
+	setScriptCallOnMousePressed(44, new WidgetPointer(-32768,3), ivar3, "Id", new WidgetPointer(arg0));
+	script_41(61538418);
+	return;
+}

@@ -1,0 +1,28 @@
+void script_357(int arg0,int arg1,int arg2) {
+	if (arg0 != 1) {
+		return;
+	}
+	switch (arg2) {
+		case 0:
+			globalint_1015 = arg1;
+			break;
+		case 1:
+			globalint_1016 = arg1;
+			break;
+		case 2:
+			globalint_1017 = arg1;
+			break;
+		case 3:
+			globalint_1018 = arg1;
+			break;
+		case 4:
+			globalint_1019 = arg1;
+			break;
+		default:
+			return;
+	}
+	playSoundEffect(9830, 1, 0);
+	cs2method404(arg2, arg1);
+	script_391();
+	return;
+}

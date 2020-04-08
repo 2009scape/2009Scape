@@ -1,0 +1,26 @@
+void script_769() {
+	int ivar0;
+	int ivar1;
+	ivar0 = cs2method_3408(111, 111, 1283, standart_config_448);
+	if (ivar0 == 526) {
+		setWidgetText(new WidgetPointer(662,66), "0");
+		return;
+	}
+	ivar1 = getItemAmtInContainer(93, ivar0);
+	if (ivar1 > 0) {
+		if (ivar1 > 1000000) {
+			ivar1 = divide(ivar1, 1000000);
+			setWidgetText(new WidgetPointer(662,66), intToStr(ivar1) + "M");
+			return;
+		}
+		if (ivar1 > 1000) {
+			ivar1 = divide(ivar1, 1000);
+			setWidgetText(new WidgetPointer(662,66), intToStr(ivar1) + "K");
+			return;
+		}
+		setWidgetText(new WidgetPointer(662,66), intToStr(getItemAmtInContainer(93, ivar0)));
+		return;
+	}
+	setWidgetText(new WidgetPointer(662,66), "0");
+	return;
+}

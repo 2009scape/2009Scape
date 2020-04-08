@@ -1,0 +1,14 @@
+void script_1376(int arg0,int arg1,int arg2) {
+	if (((boolean)arg0)) {
+		setWidgetIsHidden(false, new WidgetPointer(755,47));
+		setWidgetContextMenuOption(1, new WidgetPointer(755,5), "Hide key");
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(755,47)), 0, 1, 1, new WidgetPointer(arg1));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(755,47));
+		setWidgetContextMenuOption(1, new WidgetPointer(755,5), "Show key");
+		setWidgetSize(0, 0, 1, 1, new WidgetPointer(arg1));
+	}
+	script_2046(arg1);
+	setScriptCallOnClickContextMenu(1375, new WidgetPointer(arg1), new WidgetPointer(arg2), "II", new WidgetPointer(755,5));
+	return;
+}

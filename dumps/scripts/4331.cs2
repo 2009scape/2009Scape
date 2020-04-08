@@ -1,0 +1,10 @@
+void script_4331(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	ivar2 = -1;
+	ivar3 = -1;
+	if (cs2method3700()) {
+		script_4332(arg0, arg1);
+	}
+	return;
+}

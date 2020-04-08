@@ -1,0 +1,408 @@
+cs2func_script_2787_struct(2,2,0) script_2787(int arg0,int arg1) {
+	switch (arg0) {
+		flow_1:
+			case 0:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_2787_struct(-1, 2287, "You can see what each spell does by selecting the spellbook icon on your side interface. Move your mouse over the icon of the spell you want and a description will be available.", " ");
+				case 1:
+					return newstruct cs2func_script_2787_struct(1, 3759, "Wind Rush", "You can now cast " + "<col=000080>" + "Wind Rush" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_2787_struct(1, 15, "Wind Strike", "You can now cast " + "<col=000080>" + "Wind Strike" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_2787_struct(3, 16, "Confuse", "You can now cast " + "<col=000080>" + "Confuse" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_2787_struct(5, 17, "Water Strike", "You can now cast " + "<col=000080>" + "Water Strike" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_2787_struct(9, 19, "Earth Strike", "You can now cast " + "<col=000080>" + "Earth Strike" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_2787_struct(10, 1564, "Members: Teleport to Mobilising Armies", "You can now cast " + "<col=000080>" + "Teleport to Mobilising Armies" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_2787_struct(11, 20, "Weaken", "You can now cast " + "<col=000080>" + "Weaken" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_2787_struct(13, 21, "Fire Strike", "You can now cast " + "<col=000080>" + "Fire Strike" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_2787_struct(15, 22, "Bones to Bananas", "You can now cast " + "<col=000080>" + "Bones to Bananas" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_2787_struct(17, 23, "Wind Bolt", "You can now cast " + "<col=000080>" + "Wind Bolt" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_2787_struct(19, 24, "Curse", "You can now cast " + "<col=000080>" + "Curse" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_2787_struct(20, 319, "Bind", "You can now cast " + "<col=000080>" + "Bind" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_2787_struct(21, 25, "Low Level Alchemy", "You can now cast " + "<col=000080>" + "Low Level Alchemy" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_2787_struct(23, 26, "Water Bolt", "You can now cast " + "<col=000080>" + "Water Bolt" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_2787_struct(25, 27, "Teleport to Varrock", "You can now cast " + "<col=000080>" + "Teleport to Varrock" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_2787_struct(29, 29, "Earth Bolt", "You can now cast " + "<col=000080>" + "Earth Bolt" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_2787_struct(31, 30, "Teleport to Lumbridge", "You can now cast " + "<col=000080>" + "Teleport to Lumbridge" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_2787_struct(33, 31, "Telekinetic Grab", "You can now cast " + "<col=000080>" + "Telekinetic Grab" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_2787_struct(35, 32, "Fire Bolt", "You can now cast " + "<col=000080>" + "Fire Bolt" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_2787_struct(37, 33, "Teleport to Falador", "You can now cast " + "<col=000080>" + "Teleport to Falador" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_2787_struct(39, 34, "Crumble Undead", "You can now cast " + "<col=000080>" + "Crumble Undead" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_2787_struct(40, 355, "Members: Teleport to House", "Members can now cast " + "<col=000080>" + "Teleport to House" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_2787_struct(41, 35, "Wind Blast", "You can now cast " + "<col=000080>" + "Wind Blast" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_2787_struct(43, 36, "Superheat Item", "You can now cast " + "<col=000080>" + "Superheat Item" + "</col>" + ".");
+				case 25:
+					return newstruct cs2func_script_2787_struct(45, 37, "Members: Teleport to Camelot", "Members can now cast " + "<col=000080>" + "Teleport to Camelot" + "</col>" + ".");
+				case 26:
+					return newstruct cs2func_script_2787_struct(47, 38, "Water Blast", "You can now cast " + "<col=000080>" + "Water Blast" + "</col>" + ".");
+				case 27:
+					return newstruct cs2func_script_2787_struct(50, 320, "Members: Snare", "Members can now cast " + "<col=000080>" + "Snare" + "</col>" + ".");
+				case 28:
+					return newstruct cs2func_script_2787_struct(50, 324, "Members: Magic Dart" + "<br>" + " (with level 55 Slayer)", "Members now have the Magic level required to cast " + "<col=000080>" + "Magic Dart" + "</col>" + ". (They also need level 55 Slayer.)");
+				case 29:
+					return newstruct cs2func_script_2787_struct(50, 53, "Members: Iban's Blast" + "<br>" + " (after Underground Pass)", "Members now have the Magic level required to cast " + "<col=000080>" + "Iban's Blast" + "</col>" + " (after Underground Pass).");
+				case 30:
+					return newstruct cs2func_script_2787_struct(51, 54, "Members: Teleport to Ardougne" + "<br>" + " (after Plague City)", "Members can now cast " + "<col=000080>" + "Teleport to Ardougne" + "</col>" + ".");
+				case 31:
+					return newstruct cs2func_script_2787_struct(53, 40, "Earth Blast", "You can now cast " + "<col=000080>" + "Earth Blast" + "</col>" + ".");
+				case 32:
+					return newstruct cs2func_script_2787_struct(55, 41, "High-level Alchemy", "You can now cast " + "<col=000080>" + "High-level Alchemy" + "</col>" + ".");
+				case 33:
+					return newstruct cs2func_script_2787_struct(58, 55, "Members: Teleport to the Watchtower" + "<br>" + " (after Watchtower)", "Members now have the Magic level required to cast " + "<col=000080>" + "Teleport to the Watchtower" + "</col>" + " (after Watchtower).");
+				case 34:
+					return newstruct cs2func_script_2787_struct(59, 44, "Fire Blast", "You can now cast " + "<col=000080>" + "Fire Blast" + "</col>" + ".");
+				case 35:
+					return newstruct cs2func_script_2787_struct(60, 354, "Members: Bones to Peaches" + "<br>" + " (after Mage Training Arena)", "Members can now learn " + "<col=000080>" + "Bones to Peaches" + "</col>" + " in the Mage Training Arena.");
+				case 36:
+					return newstruct cs2func_script_2787_struct(60, 61, "Members: Saradomin Strike" + "<br>" + " (after Mage Arena)", "Members can now learn " + "<col=000080>" + "Saradomin Strike" + "</col>" + " in the Mage Arena.");
+				case 37:
+					return newstruct cs2func_script_2787_struct(60, 60, "Members: Claws of Guthix" + "<br>" + " (after Mage Arena)", "Members can now learn " + "<col=000080>" + "Claws of Guthix" + "</col>" + " in the Mage Arena.");
+				case 38:
+					return newstruct cs2func_script_2787_struct(60, 59, "Members: Flames of Zamorak" + "<br>" + " (after Mage Arena)", "Members can now learn " + "<col=000080>" + "Flames of Zamorak" + "</col>" + " in the Mage Arena.");
+				case 39:
+					return newstruct cs2func_script_2787_struct(61, 323, "Members: Teleport to Trollheim" + "<br>" + " (after Eadgar's Ruse)", "Members now have the Magic level required to cast " + "<col=000080>" + "Teleport to Trollheim" + "</col>" + " (after Eadgar's Ruse).");
+				case 40:
+					return newstruct cs2func_script_2787_struct(62, 46, "Members: Wind Wave", "Members can now cast " + "<col=000080>" + "Wind Wave" + "</col>" + ".");
+				case 41:
+					return newstruct cs2func_script_2787_struct(64, 357, "Members: Teleport to Ape Atoll" + "<br>" + " (after saving Awowogei in Recipe for Disaster)", "Members now have the Magic level required to cast " + "<col=000080>" + "Teleport to Ape Atoll" + "</col>" + " (after saving Awowogei in Recipe for Disaster).");
+				case 42:
+					return newstruct cs2func_script_2787_struct(65, 48, "Members: Water Wave", "Members can now cast " + "<col=000080>" + "Water Wave" + "</col>" + ".");
+				case 43:
+					return newstruct cs2func_script_2787_struct(66, 56, "Members: Vulnerability", "Members can now cast " + "<col=000080>" + "Vulnerability" + "</col>" + ".");
+				case 44:
+					return newstruct cs2func_script_2787_struct(70, 51, "Members: Earth Wave", "Members can now cast " + "<col=000080>" + "Earth Wave" + "</col>" + ".");
+				case 45:
+					return newstruct cs2func_script_2787_struct(73, 57, "Members: Enfeeble", "Members can now cast " + "<col=000080>" + "Enfeeble" + "</col>" + ".");
+				case 46:
+					return newstruct cs2func_script_2787_struct(74, 349, "Members: Tele-other Lumbridge", "Members can now cast " + "<col=000080>" + "Tele-other to Lumbridge" + "</col>" + ".");
+				case 47:
+					return newstruct cs2func_script_2787_struct(75, 52, "Members: Fire Wave", "Members can now cast " + "<col=000080>" + "Fire Wave" + "</col>" + ".");
+				case 48:
+					return newstruct cs2func_script_2787_struct(77, 7699, "Members: Storm of Armadyl" + "<br>" + " (after Ritual of the Mahjarrat)", "Members can now cast " + "<col=000080>" + "Storm of Armadyl" + "</col>" + " (after Ritual of the Mahjarrat).");
+				case 49:
+					return newstruct cs2func_script_2787_struct(79, 321, "Members: Entangle", "Members can now cast " + "<col=000080>" + "Entangle" + "</col>" + ".");
+				case 50:
+					return newstruct cs2func_script_2787_struct(80, 58, "Members: Stun", "Members can now cast " + "<col=000080>" + "Stun" + "</col>" + ".");
+				case 51:
+					return newstruct cs2func_script_2787_struct(80, 322, "Members: Charge", "Members can now cast " + "<col=000080>" + "Charge" + "</col>" + ".");
+				case 52:
+					return newstruct cs2func_script_2787_struct(81, 500, "Members: Wind Surge", "Members can now cast " + "<col=000080>" + "Wind Surge" + "</col>" + ".");
+				case 53:
+					return newstruct cs2func_script_2787_struct(82, 350, "Members: Tele-other Falador", "Members can now cast " + "<col=000080>" + "Tele-other to Falador" + "</col>" + ".");
+				case 54:
+					return newstruct cs2func_script_2787_struct(85, 1565, "Teleport Block", "You can now cast " + "<col=000080>" + "Teleport Block" + "</col>" + ".");
+				case 55:
+					return newstruct cs2func_script_2787_struct(85, 501, "Members: Water Surge", "Members can now cast " + "<col=000080>" + "Water Surge" + "</col>" + ".");
+				case 56:
+					return newstruct cs2func_script_2787_struct(90, 811, "Members: Earth Surge", "Members can now cast " + "<col=000080>" + "Earth Surge" + "</col>" + ".");
+				case 57:
+					return newstruct cs2func_script_2787_struct(90, 351, "Members: Tele-other to Camelot", "Members can now cast " + "<col=000080>" + "Tele-other to Camelot" + "</col>" + ".");
+				case 58:
+					return newstruct cs2func_script_2787_struct(95, 814, "Members: Fire Surge", "Members can now cast " + "<col=000080>" + "Fire Surge" + "</col>" + ".");
+			}
+			break;
+			case 1:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_2787_struct(-1, 2287, "Once you have completed Desert Treasure, you will be able to access the Ancient Magicks spellbook.", "");
+				case 1:
+					return newstruct cs2func_script_2787_struct(-1, 356, "Members: Home teleport (to Edgeville)", "");
+				case 2:
+					return newstruct cs2func_script_2787_struct(50, 329, "Members: Smoke Rush", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Smoke Rush" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_2787_struct(52, 337, "Members: Shadow Rush", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Shadow Rush" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_2787_struct(54, 341, "Members: Teleport to Paddewwa", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Teleport to Paddewwa" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_2787_struct(56, 333, "Members: Blood Rush", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Blood Rush" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_2787_struct(58, 325, "Members: Ice Rush", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Ice Rush" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_2787_struct(60, 342, "Members: Teleport to Senntisten", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Teleport to Senntisten" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_2787_struct(61, 1568, "Members: Miasmic Rush", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Miasmic Rush" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_2787_struct(62, 330, "Members: Smoke Burst", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Smoke Burst" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_2787_struct(64, 338, "Members: Shadow Burst", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Shadow Burst" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_2787_struct(66, 343, "Members: Teleport to Kharyrll", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Teleport to Kharyrll" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_2787_struct(68, 334, "Members: Blood Burst", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Blood Burst" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_2787_struct(70, 326, "Members: Ice Burst", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Ice Burst" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_2787_struct(72, 344, "Members: Teleport to Lassar", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Teleport to Lassar" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_2787_struct(73, 1569, "Members: Miasmic Burst", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Miasmic Burst" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_2787_struct(74, 331, "Members: Smoke Blitz", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Smoke Blitz" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_2787_struct(76, 339, "Members: Shadow Blitz", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Shadow Blitz" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_2787_struct(78, 345, "Members: Teleport to Dareeyak", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Teleport to Dareeyak" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_2787_struct(80, 335, "Members: Blood Blitz", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Blood Blitz" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_2787_struct(82, 327, "Members: Ice Blitz", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Ice Blitz" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_2787_struct(84, 346, "Members: Teleport to Carrallangar", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Teleport to Carrallangar" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_2787_struct(85, 1567, "Members: Miasmic Blitz", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Miasmic Blitz" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_2787_struct(86, 332, "Members: Smoke Barrage", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Smoke Barrage" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_2787_struct(88, 340, "Members: Shadow Barrage", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Shadow Barrage" + "</col>" + ".");
+				case 25:
+					return newstruct cs2func_script_2787_struct(90, 347, "Members: Teleport to Annakarl", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Teleport to Annakarl" + "</col>" + ".");
+				case 26:
+					return newstruct cs2func_script_2787_struct(92, 336, "Members: Blood Barrage", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Blood Barrage" + "</col>" + ".");
+				case 27:
+					return newstruct cs2func_script_2787_struct(94, 328, "Members: Ice Barrage", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Ice Barrage" + "</col>" + ".");
+				case 28:
+					return newstruct cs2func_script_2787_struct(96, 348, "Members: Teleport to Ghorrock", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Teleport to Ghorrock" + "</col>" + ".");
+				case 29:
+					return newstruct cs2func_script_2787_struct(97, 1566, "Members: Miasmic Barrage", "Members using the Ancient Magicks spellbook can now cast " + "<col=000080>" + "Miasmic Barrage" + "</col>" + ".");
+			}
+			break;
+			case 2:
+			SWITCH (arg1) {
+				case 0:
+					 GOTO flow_95
+				case 1:
+					 GOTO flow_96
+				case 2:
+					 GOTO flow_97
+				case 3:
+					 GOTO flow_98
+				case 4:
+					 GOTO flow_99
+				case 5:
+					 GOTO flow_100
+				case 6:
+					 GOTO flow_101
+				case 7:
+					 GOTO flow_102
+				case 8:
+					 GOTO flow_103
+				case 9:
+					 GOTO flow_104
+				case 10:
+					 GOTO flow_105
+				case 11:
+					 GOTO flow_106
+				case 12:
+					 GOTO flow_107
+				case 13:
+					 GOTO flow_108
+				case 14:
+					 GOTO flow_109
+				case 15:
+					 GOTO flow_110
+				case 16:
+					 GOTO flow_111
+				case 17:
+					 GOTO flow_112
+				case 18:
+					 GOTO flow_113
+				case 19:
+					 GOTO flow_114
+				case 20:
+					 GOTO flow_115
+				case 21:
+					 GOTO flow_116
+				case 22:
+					 GOTO flow_117
+				case 23:
+					 GOTO flow_118
+				case 24:
+					 GOTO flow_119
+				case 25:
+					 GOTO flow_120
+				case 26:
+					 GOTO flow_121
+				case 27:
+					 GOTO flow_122
+				case 28:
+					 GOTO flow_123
+				case 29:
+					 GOTO flow_124
+				case 30:
+					 GOTO flow_125
+				case 31:
+					 GOTO flow_126
+				case 32:
+					 GOTO flow_127
+				case 33:
+					 GOTO flow_128
+				case 34:
+					 GOTO flow_129
+				case 35:
+					 GOTO flow_130
+				case 36:
+					 GOTO flow_131
+				case 37:
+					 GOTO flow_132
+				case 38:
+					 GOTO flow_133
+				case 39:
+					 GOTO flow_134
+				case 40:
+					 GOTO flow_135
+				case 41:
+					 GOTO flow_136
+				case 42:
+					 GOTO flow_137
+				case 43:
+					 GOTO flow_138
+				case 44:
+					 GOTO flow_139
+				case 45:
+					 GOTO flow_140
+				case 46:
+					 GOTO flow_141
+				case 47:
+					 GOTO flow_142
+				case 48:
+					 GOTO flow_143
+				case 49:
+					 GOTO flow_144
+				case 50:
+					 GOTO flow_145
+				case 51:
+					 GOTO flow_146
+				case 52:
+					 GOTO flow_147
+			}
+			break;
+		flow_95:
+			return newstruct cs2func_script_2787_struct(-1, 2287, "Once you have completed Lunar Diplomacy, you will be able to access the Lunar spellbook.", "");
+		flow_96:
+			return newstruct cs2func_script_2787_struct(-1, 356, "Members: Home teleport (to Lunar Isle)", "");
+		flow_97:
+			return newstruct cs2func_script_2787_struct(65, 543, "Members: Bake Pie", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Bake Pie" + "</col>" + ".");
+		flow_98:
+			return newstruct cs2func_script_2787_struct(66, 567, "Members: Cure Plant", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Cure Plant" + "</col>" + ".");
+		flow_99:
+			return newstruct cs2func_script_2787_struct(66, 577, "Members: Monster Examine" + "<br>" + " (after Dream Mentor)", "Members using the Lunar or Dungeoneering spellbook now have the Magic level required to cast " + "<col=000080>" + "Monster Examine" + "</col>" + " (after Dream Mentor).");
+		flow_100:
+			return newstruct cs2func_script_2787_struct(67, 568, "Members: Contact", "Members using the Lunar spellbook now have the Magic level required to cast " + "<col=000080>" + "Contact" + "</col>" + " (after Dream Mentor).");
+		flow_101:
+			return newstruct cs2func_script_2787_struct(68, 559, "Members: Cure Other", "Members using the Lunar or Dungeoneering spellbook can now cast " + "<col=000080>" + "Cure Other" + "</col>" + ".");
+		flow_102:
+			return newstruct cs2func_script_2787_struct(68, 578, "Members: Humidify" + "<br>" + " (after Dream Mentor)", "Members using the Lunar or Dungeoneering spellbook now have the Magic level required to cast " + "<col=000080>" + "Humidify" + "</col>" + " (after Dream Mentor).");
+		flow_103:
+			return newstruct cs2func_script_2787_struct(69, 544, "Members: Teleport to Moonclan Island", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Teleport to Moonclan Island" + "</col>" + ".");
+		flow_104:
+			return newstruct cs2func_script_2787_struct(70, 569, "Members: Group Teleport to Moonclan Island", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Group Teleport to Moonclan Island" + "</col>" + ".");
+		flow_105:
+			return newstruct cs2func_script_2787_struct(71, 562, "Members: Cure Me", "Members using the Lunar or Dungeoneering spellbook can now cast " + "<col=000080>" + "Cure Me" + "</col>" + ".");
+		flow_106:
+			return newstruct cs2func_script_2787_struct(71, 579, "Members: Hunter Kit" + "<br>" + " (after Dream Mentor)", "Members using the Lunar spellbook now have the Magic level required to cast " + "<col=000080>" + "Hunter Kit" + "</col>" + " (after Dream Mentor).");
+		flow_107:
+			return newstruct cs2func_script_2787_struct(71, 583, "Members: Teleport to Ourania", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Teleport to Ourania" + "</col>" + ".");
+		flow_108:
+			return newstruct cs2func_script_2787_struct(72, 545, "Members: Teleport to Waterbirth", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Teleport to Waterbirth" + "</col>" + ".");
+		flow_109:
+			return newstruct cs2func_script_2787_struct(72, 4585, "Members: Teleport to South Falador" + "<br>" + " (unlocked at the Livid Farm)", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Teleport to South Falador" + "</col>" + " (unlocked at the Livid Farm).");
+		flow_110:
+			return newstruct cs2func_script_2787_struct(73, 570, "Members: Group Teleport to Waterbirth", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Group Teleport to Waterbirth" + "</col>" + ".");
+		flow_111:
+			return newstruct cs2func_script_2787_struct(74, 565, "Members: Cure Group", "Members using the Lunar or Dungeoneering spellbook can now cast " + "<col=000080>" + "Cure Group" + "</col>" + ".");
+		flow_112:
+			return newstruct cs2func_script_2787_struct(75, 4586, "Members: Repair Rune Pouch" + "<br>" + " (unlocked at the Livid Farm)", "Members using the Lunar spellbook now have the Magic level required to cast " + "<col=000080>" + "Repair Rune Pouch" + "</col>" + " (unlocked at the Livid Farm).");
+		flow_113:
+			return newstruct cs2func_script_2787_struct(75, 547, "Members: Teleport to the Barbarian Outpost", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Teleport to the Barbarian Outpost" + "</col>" + ".");
+		flow_114:
+			return newstruct cs2func_script_2787_struct(75, 576, "Members: Stat Spy" + "<br>" + " (after Dream Mentor)", "Members using the Lunar spellbook now have the Magic level required to cast " + "<col=000080>" + "Stat Spy" + "</col>" + " (after Dream Mentor).");
+		flow_115:
+			return newstruct cs2func_script_2787_struct(76, 4587, "Members: Teleport to North Ardougne" + "<br>" + " (unlocked at the Livid Farm)", "Members using the Lunar spellbook now have the Magic level required to cast " + "<col=000080>" + "Teleport to North Ardougne" + "</col>" + " (unlocked at the Livid Farm).");
+		flow_116:
+			return newstruct cs2func_script_2787_struct(76, 571, "Members: Group Teleport to the Barbarian Outpost", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Group Teleport to the Barbarian Outpost" + "</col>" + ".");
+		flow_117:
+			return newstruct cs2func_script_2787_struct(77, 548, "Members: Superglass Make", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Superglass Make" + "</col>" + ".");
+		flow_118:
+			return newstruct cs2func_script_2787_struct(78, 4588, "Members: Remote Farming" + "<br>" + " (unlocked at the Livid Farm)", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Remote Farming" + "</col>" + " (unlocked at the Livid Farm).");
+		flow_119:
+			return newstruct cs2func_script_2787_struct(78, 549, "Members: Teleport to Port Khazard", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Teleport to Port Khazard" + "</col>" + ".");
+		flow_120:
+			return newstruct cs2func_script_2787_struct(79, 572, "Members: Group Teleport to Port Khazard", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Group Teleport to Port Khazard" + "</col>" + ".");
+		flow_121:
+			return newstruct cs2func_script_2787_struct(79, 580, "Members: Dream" + "<br>" + " (after Dream Mentor)", "Members using the Lunar spellbook now have the Magic level required to cast " + "<col=000080>" + "Dream" + "</col>" + " (after Dream Mentor).");
+		flow_122:
+			return newstruct cs2func_script_2787_struct(80, 4590, "Members: Spiritualise Food" + "<br>" + " (unlocked at the Livid Farm)", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Spiritualise Food" + "</col>" + " (unlocked at the Livid Farm).");
+		flow_123:
+			return newstruct cs2func_script_2787_struct(80, 550, "Members: String Jewellery", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "String Jewellery" + "</col>" + ".");
+		flow_124:
+			return newstruct cs2func_script_2787_struct(81, 554, "Members: Stat Restore Potion Share", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Stat Restore Potion Share" + "</col>" + ".");
+		flow_125:
+			return newstruct cs2func_script_2787_struct(82, 552, "Members: Magic Imbue", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Magic Imbue" + "</col>" + ".");
+		flow_126:
+			return newstruct cs2func_script_2787_struct(83, 4589, "Members: Make Leather" + "<br>" + " (unlocked at the Livid Farm)", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Make Leather" + "</col>" + " (unlocked at the Livid Farm).");
+		flow_127:
+			return newstruct cs2func_script_2787_struct(83, 553, "Members: Fertile Soil", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Fertile Soil" + "</col>" + ".");
+		flow_128:
+			return newstruct cs2func_script_2787_struct(84, 551, "Members: Boost Potion Share", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Boost Potion Share" + "</col>" + ".");
+		flow_129:
+			return newstruct cs2func_script_2787_struct(85, 555, "Members: Teleport to the Fishing Guild", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Teleport to the Fishing Guild" + "</col>" + ".");
+		flow_130:
+			return newstruct cs2func_script_2787_struct(86, 573, "Members: Group Teleport to the Fishing Guild", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Group Teleport to the Fishing Guild" + "</col>" + ".");
+		flow_131:
+			return newstruct cs2func_script_2787_struct(86, 581, "Members: Plank Make" + "<br>" + " (after Dream Mentor)", "Members using the Lunar spellbook now have the Magic level required to cast " + "<col=000080>" + "Plank Make" + "</col>" + " (after Dream Mentor).");
+		flow_132:
+			return newstruct cs2func_script_2787_struct(87, 556, "Members: Teleport to Catherby", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Teleport to Catherby" + "</col>" + ".");
+		flow_133:
+			return newstruct cs2func_script_2787_struct(87, 7684, "Members: Tune Bane Ore" + "<br>" + " (after Ritual of the Mahjarrat)", "Members using the Lunar spellbook now have the Magic level required to cast " + "<col=000080>" + "Tune Bane Ore" + "</col>" + " (after Ritual of the Mahjarrat).");
+		flow_134:
+			return newstruct cs2func_script_2787_struct(88, 574, "Members: Group Teleport to Catherby", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Group Teleport to Catherby" + "</col>" + ".");
+		flow_135:
+			return newstruct cs2func_script_2787_struct(89, 557, "Members: Teleport to the Ice Plateau", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Teleport to the Ice Plateau" + "</col>" + ".");
+		flow_136:
+			return newstruct cs2func_script_2787_struct(90, 4591, "Members: Disruption Shield" + "<br>" + " (unlocked at the Livid Farm)", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Disruption Shield" + "</col>" + " (unlocked at the Livid Farm).");
+		flow_137:
+			return newstruct cs2func_script_2787_struct(90, 575, "Members: Group Teleport to the Ice Plateau", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Group Teleport to the Ice Plateau" + "</col>" + ".");
+		flow_138:
+			return newstruct cs2func_script_2787_struct(91, 558, "Members: Energy Transfer", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Energy Transfer" + "</col>" + ".");
+		flow_139:
+			return newstruct cs2func_script_2787_struct(92, 560, "Members: Heal Other", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Heal Other" + "</col>" + ".");
+		flow_140:
+			return newstruct cs2func_script_2787_struct(92, 7685, "Members: Teleport to Trollheim" + "<br>" + " (unlocked at the Livid Farm)", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Teleport to Trollheim" + "</col>" + ". (unlocked at the Livid Farm).");
+		flow_141:
+			return newstruct cs2func_script_2787_struct(93, 561, "Members: Vengeance Other", "Members using the Lunar or Dungeoneering spellbook can now cast " + "<col=000080>" + "Vengeance Other" + "</col>" + ".");
+		flow_142:
+			return newstruct cs2func_script_2787_struct(93, 7686, "Members: Group Teleport to Trollheim" + "<br>" + " (unlocked at the Livid Farm)", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Group Teleport to Trollheim" + "</col>" + ". (unlocked at the Livid Farm).");
+		flow_143:
+			return newstruct cs2func_script_2787_struct(94, 564, "Members: Vengeance", "Members using the Lunar or Dungeoneering spellbook can now cast " + "<col=000080>" + "Vengeance" + "</col>" + ".");
+		flow_144:
+			return newstruct cs2func_script_2787_struct(95, 4592, "Members: Vengeance Group" + "<br>" + " (unlocked at the Livid Farm)", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Vengeance Group" + "</col>" + " (unlocked at the Livid Farm).");
+		flow_145:
+			return newstruct cs2func_script_2787_struct(95, 566, "Members: Heal Group", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Heal Group" + "</col>" + ".");
+		flow_146:
+			return newstruct cs2func_script_2787_struct(96, 582, "Members: Spellbook Swap" + "<br>" + " (after Dream Mentor)", "Members using the Lunar spellbook now have the Magic level required to cast " + "<col=000080>" + "Spellbook Swap" + "</col>" + " (after Dream Mentor).");
+		flow_147:
+			return newstruct cs2func_script_2787_struct(99, 7687, "Members: Borrowed Power" + "<br>" + " (unlocked at the Livid Farm)", "Members using the Lunar spellbook can now cast " + "<col=000080>" + "Borrowed Power" + "</col>" + ". (unlocked at the Livid Farm).");
+	}
+	return newstruct cs2func_script_2787_struct(0, -1, "", "");
+}

@@ -1,0 +1,70 @@
+void script_4717(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	string svar0;
+	string svar1;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar4 = 48;
+	ivar5 = 48;
+	ivar6 = 0;
+	ivar7 = -1;
+	ivar8 = -1;
+	ivar9 = -1;
+	svar0 = "";
+	svar1 = "";
+	ivar10 = 1;
+	ivar11 = -1;
+	ivar12 = 0;
+	setWidgetText(new WidgetPointer(590,20), "1");
+	switch (arg3) {
+		case 3874:
+			ivar11 = 3873;
+			break;
+		default:
+			ivar11 = 3873;
+	}
+	while (ivar6 < getCommonDefinitionSize(arg3)) {
+		ivar7 = cs2method_3408(105, 74, arg3, ivar6);
+		ivar8 = getOtherCommonData(ivar7, 1420);
+		ivar10 = script_4718(ivar7);
+		svar0 = getOtherCommonData(ivar7, 1419);
+		createExtraChild(new WidgetPointer(arg0), 5, ivar6);
+		setWidgetSize(ivar4, ivar5, 0, 0);
+		setWidgetPosition(0, 0, 0, 0);
+		if (((boolean)ivar10)) {
+			ivar8 = getOtherCommonData(ivar7, 1421);
+		}
+		if (ivar7 == 1783) {
+			if (((int)IsFemale()) > 0) {
+				ivar7 = 1789;
+				ivar8 = getOtherCommonData(ivar7, 1420);
+				svar0 = getOtherCommonData(ivar7, 1419);
+				svar1 = "Curtsy";
+				setWidgetContextMenuOption(1, "Curtsy");
+				setWidgetContextMenuOption(2, "Bow");
+				setScriptCallOnMouseOver(568, new WidgetPointer(-32768,3), -2147483643, new WidgetPointer(arg2), svar1, 25, 190, "IiIsii");
+			} else {
+				setWidgetContextMenuOption(1, "Bow");
+				setWidgetContextMenuOption(2, "Curtsy");
+				svar1 = "Bow";
+				setScriptCallOnMouseOver(568, new WidgetPointer(-32768,3), -2147483643, new WidgetPointer(arg2), svar1, 25, 190, "IiIsii");
+			}
+		} else {
+			setWidgetContextMenuOption(1, svar0);
+			setScriptCallOnMouseOver(568, new WidgetPointer(-32768,3), -2147483643, new WidgetPointer(arg2), svar0, 25, 190, "IiIsii");
+		}
+		setWidgetSprite(ivar8);
+		setScriptCallOnMouseExit(40, new WidgetPointer(arg2), "I");
+		ivar6 = add(ivar6, 1);
+	}
+	script_4716(38666248, 38666247, arg3, -5, 10, ivar12);
+	script_4709(arg3, ivar11, ivar12, 0, getCommonDefinitionSize(ivar11), 38666254, 38666252, 38666253, 38666255, 897, 788, 788, 1040, 16777215, 16711680, 16776960, 494, 792, 789, 790, 791, 773, 788);
+	return;
+}

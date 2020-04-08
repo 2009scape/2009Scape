@@ -1,0 +1,29 @@
+void script_2517() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = multiply(globalint_847, cs2method_3408(105, 105, 2454, 1));
+	ivar3 = multiply(globalint_848, cs2method_3408(105, 105, 2454, 2));
+	ivar4 = multiply(globalint_849, cs2method_3408(105, 105, 2454, 3));
+	ivar5 = multiply(globalint_850, cs2method_3408(105, 105, 2454, 4));
+	ivar6 = multiply(globalint_851, cs2method_3408(105, 105, 2454, 5));
+	setWidgetText(new WidgetPointer(654,11), script_46(ivar2, ","));
+	setWidgetText(new WidgetPointer(654,60), script_46(ivar3, ","));
+	setWidgetText(new WidgetPointer(654,52), script_46(ivar4, ","));
+	setWidgetText(new WidgetPointer(654,44), script_46(ivar5, ","));
+	setWidgetText(new WidgetPointer(654,69), script_46(ivar6, ","));
+	ivar1 = add(ivar2, ivar3);
+	ivar1 = add(ivar1, ivar4);
+	ivar1 = add(ivar1, ivar5);
+	ivar1 = add(ivar1, ivar6);
+	setWidgetText(new WidgetPointer(654,74), script_46(ivar1, ","));
+	ivar0 = subtract(globalint_839, ivar1);
+	setWidgetText(new WidgetPointer(654,77), script_46(ivar0, ","));
+	return;
+}

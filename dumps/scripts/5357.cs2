@@ -1,0 +1,7 @@
+void script_5357(int arg0,int arg1) {
+	if (setWidgetRegister(new WidgetPointer(arg1), arg0)) {
+		setWidgetSprite(7766);
+		setWidgetText(new WidgetPointer(1143,29), "");
+	}
+	return;
+}

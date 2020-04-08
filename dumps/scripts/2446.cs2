@@ -1,0 +1,56 @@
+string script_2446(string arg0) {
+	string svar1;
+	svar1 = lower(arg0);
+	if (((boolean)stringMethod4107(svar1, "all your base are belong to us"))) {
+		return "orly?";
+	}
+	if (((boolean)stringMethod4107(svar1, "orly"))) {
+		return "yarly";
+	}
+	if (((boolean)stringMethod4107(svar1, "bangin'"))) {
+		return "donk";
+	}
+	if (((boolean)stringMethod4107(svar1, "murder")) || ((boolean)stringMethod4107(svar1, "redrum"))) {
+		return "All rest and no play makes Guthix a dull boy.";
+	}
+	if (((boolean)stringMethod4107(svar1, "humperdinck")) || ((boolean)stringMethod4107(svar1, "humperdink"))) {
+		return "Have fun storming the castle!";
+	}
+	if (((boolean)stringMethod4107(svar1, "i am your father"))) {
+		return "Nooooooooooooooooooooooooo!";
+	}
+	if (((boolean)stringMethod4107(svar1, "i'll be back"))) {
+		return "Come with me if you want to live.";
+	}
+	if (((boolean)stringMethod4107(svar1, "there is no spoon"))) {
+		return "Then you will see, it is not the spoon that bends, it is only yourself.";
+	}
+	if (((boolean)stringMethod4107(svar1, "milton waddams"))) {
+		return "The ratio of people to cake is too big.";
+	}
+	if (((boolean)stringMethod4107(svar1, "you fight like a dairy farmer"))) {
+		return "How appropriate. You fight like a cow.";
+	}
+	if (((boolean)stringMethod4107(svar1, "finish the fight"))) {
+		return "They must love the smell of hero.";
+	}
+	if (((boolean)stringMethod4107(svar1, "r.i.p. runescape"))) {
+		return "Wanna bet?";
+	}
+	if (((boolean)stringMethod4107(svar1, "penso, logo existo"))) {
+		return "Borboletas salpicadas de goiabada...";
+	}
+	if (((boolean)stringMethod4107(svar1, "le temps passe"))) {
+		return "L'\u0153uf dur.";
+	}
+	if (((boolean)stringMethod4107(svar1, "paul"))) {
+		return "Rargh, I'm a lava monster!";
+	}
+	if (((boolean)stringMethod4107(svar1, "andrew"))) {
+		return "Cabbage.";
+	}
+	if (((boolean)stringMethod4107(svar1, "sevga"))) {
+		return "Marmaros had a close encounter with a prayer-eating behemoth.";
+	}
+	return arg0;
+}

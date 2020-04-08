@@ -1,0 +1,26 @@
+void script_4253() {
+	if (((boolean)bitconfig_9030)) {
+		setWidgetText(new WidgetPointer(917,169), "Tutorial is ON");
+	} else {
+		setWidgetText(new WidgetPointer(917,169), "Tutorial is OFF");
+	}
+	if ((bitconfig_9028 == getCommonDefinitionSize(3656)) || (bitconfig_8601 >= 60)) {
+		setWidgetIsHidden(true, new WidgetPointer(917,165));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(917,165));
+	}
+	switch (getLanguage()) {
+		case 0:
+			setWidgetSize(77, 18, 0, 0, new WidgetPointer(917,165));
+			break;
+		case 2:
+			setWidgetSize(112, 18, 0, 0, new WidgetPointer(917,165));
+			break;
+		case 1:
+			setWidgetSize(135, 18, 0, 0, new WidgetPointer(917,165));
+			break;
+		case 3:
+			setWidgetSize(109, 18, 0, 0, new WidgetPointer(917,165));
+	}
+	return;
+}

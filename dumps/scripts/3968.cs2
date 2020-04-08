@@ -1,0 +1,36 @@
+void script_3968() {
+	int ivar0;
+	int ivar1;
+	if (((boolean)globalint_1429) || (globalint_1425 == globalint_1426)) {
+		return;
+	}
+	globalint_1427 = 0;
+	ivar0 = cs2method_3408(105, 74, 3483, globalint_1425);
+	ivar1 = 1;
+	if (getDisplayMode() >= 2) {
+		if (isWidgetHidden(new WidgetPointer(746,26)) || (getWidgetSpriteId(new WidgetPointer(746,26)) == -1)) {
+			ivar1 = 0;
+		}
+	} else {
+		if (isWidgetHidden(new WidgetPointer(548,141)) || (getWidgetSpriteId(new WidgetPointer(548,141)) == -1)) {
+			ivar1 = 0;
+		}
+	}
+	if (standart_config_281 == 1000) {
+		setScriptCallOnClickContextMenu(3976, globalint_1425, 1, ivar1, "iii", new WidgetPointer(1055,2));
+	} else {
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(1055,2));
+	}
+	if (isWidgetHidden(new WidgetPointer(1055,12)) && isWidgetHidden(new WidgetPointer(1055,1))) {
+		if (ivar0 != -1) {
+			cs2method2103(255, new WidgetPointer(1055,13));
+			setScriptCallOnGameloop(3969, "", new WidgetPointer(1055,12));
+			setWidgetIsHidden(false, new WidgetPointer(1055,12));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1055,1));
+			setWidgetIsHidden(true, new WidgetPointer(1055,12));
+		}
+	}
+	globalint_1426 = globalint_1425;
+	return;
+}

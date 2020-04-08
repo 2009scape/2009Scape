@@ -1,0 +1,46 @@
+cs2func_script_3358_struct(2,1,0) script_3358() {
+	flow_0:
+		SWITCH (standart_config_448) {
+			case 17985:
+				 GOTO flow_1
+			case 17986:
+				 GOTO flow_2
+			case 17987:
+				 GOTO flow_3
+			case 17988:
+				 GOTO flow_4
+			case 17989:
+				 GOTO flow_5
+			case 17990:
+				 GOTO flow_6
+			case 17991:
+				 GOTO flow_7
+			case 17992:
+				 GOTO flow_8
+			case 17993:
+				 GOTO flow_9
+			case 17994:
+				 GOTO flow_10
+		}
+		return newstruct cs2func_script_3358_struct(2, 18037, "Poisonous Shot (Tier 1)");
+	flow_1:
+		return newstruct cs2func_script_3358_struct(2, 18037, "Poisonous Shot (Tier 1)");
+	flow_2:
+		return newstruct cs2func_script_3358_struct(12, 18038, "Poisonous Shot (Tier 2)");
+	flow_3:
+		return newstruct cs2func_script_3358_struct(22, 18039, "Poisonous Shot (Tier 3)");
+	flow_4:
+		return newstruct cs2func_script_3358_struct(32, 18040, "Poisonous Shot (Tier 4)");
+	flow_5:
+		return newstruct cs2func_script_3358_struct(42, 18041, "Poisonous Shot (Tier 5)");
+	flow_6:
+		return newstruct cs2func_script_3358_struct(52, 18042, "Poisonous Shot (Tier 6)");
+	flow_7:
+		return newstruct cs2func_script_3358_struct(62, 18043, "Poisonous Shot (Tier 7)");
+	flow_8:
+		return newstruct cs2func_script_3358_struct(72, 18044, "Poisonous Shot (Tier 8)");
+	flow_9:
+		return newstruct cs2func_script_3358_struct(82, 18045, "Poisonous Shot (Tier 9)");
+	flow_10:
+		return newstruct cs2func_script_3358_struct(92, 18046, "Poisonous Shot (Tier 10)");
+}

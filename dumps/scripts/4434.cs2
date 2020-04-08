@@ -1,0 +1,5 @@
+void script_4434() {
+	script_4436(72744974, globalint_1035);
+	script_4462();
+	return;
+}

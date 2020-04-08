@@ -1,0 +1,3 @@
+int script_5026(int arg0) {
+	return bitAnd(arg0, 255);
+}

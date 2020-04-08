@@ -1,0 +1,87 @@
+int script_3228(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	string svar0;
+	string svar1;
+	svar0 = "";
+	ivar3 = -1;
+	switch (arg0) {
+		case 7:
+			svar0 = globalstring_124;
+			ivar3 = 44105812;
+			globalstring_328 = globalstring_124;
+			break;
+		case 8:
+			svar0 = globalstring_125;
+			ivar3 = 44105802;
+			globalstring_329 = globalstring_125;
+	}
+	ivar4 = strLength(svar0);
+	if (ivar4 <= 0) {
+		switch (arg0) {
+			case 7:
+				script_3213(44105812, "Please enter your desired password here.");
+				break;
+			case 8:
+				script_3213(44105802, "Please enter your desired password again here.");
+		}
+		return 0;
+	}
+	if ((((boolean)arg1) && (stringMethod4107(globalstring_124, globalstring_125) != 0)) && ((strLength(globalstring_124) > 0) || (strLength(globalstring_125) > 0))) {
+		script_3213(44105802, "Please ensure both passwords match.");
+		return 0;
+	}
+	if (ivar4 < 5) {
+		script_3213(ivar3, "Passwords must be at least 5 characters long.");
+		return 0;
+	}
+	if (ivar4 > 20) {
+		script_3213(ivar3, "Passwords must be no more than " + intToStr(20) + " characters long.");
+		return 0;
+	}
+	if (((boolean)script_2202(svar0))) {
+		script_3213(ivar3, "Passwords may only contain letters and numbers.");
+		return 0;
+	}
+	if (strIndexof(0, globalstring_122, svar0) != -1) {
+		script_3213(ivar3, "Your password is too similar to your Email address.");
+		return 0;
+	}
+	svar1 = substr(0, 1, svar0);
+	ivar5 = strLength(svar0);
+	ivar6 = 0;
+	ivar7 = 0;
+	while (ivar6 < ivar5) {
+		if (strIndexof(ivar6, svar0, svar1) == ivar6) {
+			ivar7 = add(ivar7, 1);
+		}
+		ivar6 = add(ivar6, 1);
+	}
+	if (ivar7 == ivar5) {
+		script_3213(ivar3, "Your password is too easy to guess.");
+		return 0;
+	}
+	switch (arg0) {
+		case 7:
+			setWidgetSprite(4059, new WidgetPointer(673,84));
+			setWidgetIsHidden(true, new WidgetPointer(673,89));
+			break;
+		case 8:
+			setWidgetSprite(4059, new WidgetPointer(673,74));
+			setWidgetIsHidden(true, new WidgetPointer(673,79));
+	}
+	setWidgetIsHidden(true, new WidgetPointer(673,31));
+	if (((boolean)arg2)) {
+		switch (arg0) {
+			case 7:
+				script_2714(8, 1);
+				break;
+			case 8:
+				script_2714(15, 1);
+		}
+	}
+	return 1;
+}

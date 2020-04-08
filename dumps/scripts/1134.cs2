@@ -1,0 +1,8 @@
+void script_1134(int arg0,int arg1) {
+	if (standart_config_43 == arg1) {
+		setWidgetSprite(654, new WidgetPointer(arg0));
+	} else {
+		setWidgetSprite(653, new WidgetPointer(arg0));
+	}
+	return;
+}

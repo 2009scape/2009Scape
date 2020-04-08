@@ -1,0 +1,11 @@
+void script_2324() {
+	int ivar0;
+	ivar0 = 20054025;
+	globalint_764 = cs2method_3408(105, 109, 208, rndExcl(getCommonDefinitionSize(208)));
+	if (globalint_764 != -1) {
+		setWidgetModel(globalint_764, new WidgetPointer(ivar0));
+	}
+	setWidgetPosition(subtract(0, getWidgetActualWidth(new WidgetPointer(ivar0))), 120, 0, 0, new WidgetPointer(ivar0));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(306,22));
+	return;
+}

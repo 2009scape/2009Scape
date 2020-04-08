@@ -1,0 +1,9 @@
+void script_2493(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	setItemOnWidgetMethod2200(arg0, -1, new WidgetPointer(862,50));
+	setItemOnWidgetMethod2200(arg1, -1, new WidgetPointer(862,51));
+	setItemOnWidgetMethod2200(arg2, -1, new WidgetPointer(862,52));
+	setItemOnWidgetMethod2200(arg3, -1, new WidgetPointer(862,53));
+	setItemOnWidgetMethod2200(arg4, -1, new WidgetPointer(862,54));
+	setItemOnWidgetMethod2200(arg5, -1, new WidgetPointer(862,55));
+	return;
+}

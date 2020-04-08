@@ -1,0 +1,9 @@
+void script_4351(int arg0) {
+	if (bitconfig_9139 == standart_config_2128) {
+		bitconfig_9139 = 0;
+	} else {
+		bitconfig_9139 = standart_config_2128;
+	}
+	script_4353(arg0);
+	return;
+}

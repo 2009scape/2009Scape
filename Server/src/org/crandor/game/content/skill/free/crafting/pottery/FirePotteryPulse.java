@@ -54,6 +54,7 @@ public final class FirePotteryPulse extends SkillPulse<Item> {
 			return false;
 		}
 		if (!player.getInventory().containsItem(pottery.getUnfinished())) {
+			player.getPacketDispatch().sendMessage("You need a " + pottery.name().toLowerCase() + "in order to do this.");
 			return false;
 		}
 		return true;
@@ -80,7 +81,7 @@ public final class FirePotteryPulse extends SkillPulse<Item> {
 			Perks.addDouble(player, item);
 			player.getSkills().addExperience(Skills.CRAFTING, pottery.getFireExp(), true);
 			player.getPacketDispatch().sendMessage("You put the " + pottery.getUnfinished().getName().toLowerCase() + " in the oven.");
-			player.getPacketDispatch().sendMessage("You remove a " + pottery.getProduct().getName().toLowerCase() + "  from the oven.");
+			player.getPacketDispatch().sendMessage("You remove a " + pottery.getProduct().getName().toLowerCase() + " from the oven.");
 		}
 		amount--;
 		return amount < 1;

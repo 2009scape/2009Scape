@@ -1,0 +1,9 @@
+int script_1526() {
+	int ivar0;
+	ivar0 = 0;
+	ivar0 = add(add(add(add(add(add(add(add(add(add(bitconfig_5706, bitconfig_5707), bitconfig_5723), bitconfig_5710), bitconfig_5711), bitconfig_5712), bitconfig_5713), bitconfig_5714), bitconfig_5715), bitconfig_5716), bitconfig_5717);
+	if (bitconfig_5709 == 3) {
+		ivar0 = add(ivar0, 1);
+	}
+	return ivar0;
+}

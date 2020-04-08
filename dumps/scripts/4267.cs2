@@ -1,0 +1,50 @@
+void script_4267() {
+	int ivar0;
+	ivar0 = multiply(bitconfig_9065, 10);
+	setWidgetText(new WidgetPointer(1083,201), script_46(ivar0, ","));
+	if (bitconfig_9067 > 0) {
+		setWidgetSprite(-1, new WidgetPointer(1083,139));
+	}
+	if (bitconfig_9067 > 1) {
+		setWidgetSprite(-1, new WidgetPointer(1083,135));
+	}
+	if (bitconfig_9067 > 2) {
+		setWidgetSprite(-1, new WidgetPointer(1083,131));
+	}
+	if (bitconfig_9067 > 3) {
+		setWidgetSprite(-1, new WidgetPointer(1083,127));
+	}
+	if (bitconfig_9067 > 4) {
+		setWidgetSprite(-1, new WidgetPointer(1083,123));
+	}
+	if (bitconfig_9067 > 5) {
+		setWidgetSprite(-1, new WidgetPointer(1083,119));
+	}
+	if (bitconfig_9067 > 6) {
+		setWidgetSprite(-1, new WidgetPointer(1083,115));
+	}
+	if (bitconfig_9067 > 7) {
+		setWidgetSprite(-1, new WidgetPointer(1083,111));
+	}
+	if (bitconfig_9067 > 8) {
+		setWidgetSprite(-1, new WidgetPointer(1083,437));
+	}
+	if (bitconfig_9067 > 9) {
+		setWidgetSprite(-1, new WidgetPointer(1083,448));
+	}
+	if (bitconfig_9067 > 10) {
+		setWidgetSprite(-1, new WidgetPointer(1083,459));
+		setWidgetSprite(-1, new WidgetPointer(1083,135));
+		setWidgetSprite(-1, new WidgetPointer(1083,216));
+		setWidgetSprite(-1, new WidgetPointer(1083,220));
+		setWidgetSprite(-1, new WidgetPointer(1083,224));
+		setWidgetSprite(-1, new WidgetPointer(1083,228));
+		setWidgetSprite(-1, new WidgetPointer(1083,232));
+		setWidgetSprite(-1, new WidgetPointer(1083,236));
+		setWidgetSprite(-1, new WidgetPointer(1083,498));
+		setWidgetSprite(-1, new WidgetPointer(1083,507));
+		setWidgetSprite(-1, new WidgetPointer(1083,517));
+		setWidgetSprite(-1, new WidgetPointer(1083,557));
+	}
+	return;
+}

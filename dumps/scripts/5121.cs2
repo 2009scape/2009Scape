@@ -1,0 +1,72 @@
+void script_5121() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	deleteAllExtraChilds(new WidgetPointer(1119,19));
+	ivar0 = 0;
+	ivar1 = add(126, 1);
+	ivar2 = -1;
+	ivar3 = -1;
+	while (ivar0 <= ivar1) {
+		if (ivar0 > bitconfig_9545) {
+			if (setWidgetRegister(new WidgetPointer(1119,11), multiply(ivar0, 3)) && isWidgetHidden()) {
+				removeAllEventListeners();
+				if (setWidgetRegister(new WidgetPointer(1119,11), add(multiply(ivar0, 3), 1))) {
+					if (globalint_777 == ivar0) {
+						setWidgetSprite(5918);
+					} else {
+						setWidgetSprite(5922);
+					}
+				}
+				if (setWidgetRegister(new WidgetPointer(1119,11), add(multiply(ivar0, 3), 2))) {
+					setWidgetRGB(new Color(127, 127, 127));
+				}
+			}
+		} else if (globalint_777 == ivar0) {
+			ivar2 = 5917;
+			ivar3 = 5916;
+			if (setWidgetRegister(new WidgetPointer(1119,11), multiply(ivar0, 3)) && isWidgetHidden()) {
+				setScriptCallOnMouseEntered(5122, new WidgetPointer(-32768,3), -2147483643, ivar2, 16777215, "Iidi");
+				setScriptCallOnMouseExit(5122, new WidgetPointer(-32768,3), -2147483643, ivar3, 14671823, "Iidi");
+				if (setWidgetRegister(new WidgetPointer(1119,11), add(multiply(ivar0, 3), 1))) {
+					setWidgetSprite(ivar3);
+				}
+				if (setWidgetRegister(new WidgetPointer(1119,11), add(multiply(ivar0, 3), 2))) {
+					setWidgetRGB(new Color(223, 223, 207));
+				}
+			}
+		} else {
+			ivar2 = 5921;
+			ivar3 = 5920;
+			if (setWidgetRegister(new WidgetPointer(1119,11), multiply(ivar0, 3)) && isWidgetHidden()) {
+				setScriptCallOnMouseEntered(5122, new WidgetPointer(-32768,3), -2147483643, ivar2, 16777215, "Iidi");
+				setScriptCallOnMouseExit(5122, new WidgetPointer(-32768,3), -2147483643, ivar3, 13615023, "Iidi");
+				if (setWidgetRegister(new WidgetPointer(1119,11), add(multiply(ivar0, 3), 1))) {
+					setWidgetSprite(ivar3);
+				}
+				if (setWidgetRegister(new WidgetPointer(1119,11), add(multiply(ivar0, 3), 2))) {
+					setWidgetRGB(new Color(207, 191, 175));
+				}
+			}
+		}
+		if (ivar0 <= globalint_777) {
+			createExtraChild(new WidgetPointer(1119,19), 3, ivar0);
+			if (ivar0 == globalint_777) {
+				setWidgetSize(0, 0, 1, 1);
+				setWidgetPosition(0, 0, 1, 1);
+				cs2method2103(255);
+				setWidgetContextMenuOption(1, "Confirm");
+			} else {
+				setWidgetHidden(1);
+			}
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	if (globalint_777 >= 0) {
+		setWidgetIsHidden(true, new WidgetPointer(1119,22));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(1119,22));
+	}
+	return;
+}

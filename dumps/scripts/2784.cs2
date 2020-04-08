@@ -1,0 +1,77 @@
+void script_2784(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7) {
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	if (((boolean)arg0) || (((extractX(getMyPositionHash()) >= extractX(45094272)) && (extractX(getMyPositionHash()) <= extractX(852481535))) && ((extractY(getMyPositionHash()) >= extractY(45094272)) && (extractY(getMyPositionHash()) <= extractY(852481535))))) {
+		if (arg6 != -1) {
+			if (extractY(getMyPositionHash()) < add(extractY(45094272), 8)) {
+				setWidgetIsHidden(false, new WidgetPointer(arg6));
+				deleteAllExtraChilds(new WidgetPointer(arg6));
+				script_1086(arg6, 0, 0, 0);
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(arg6));
+			}
+		}
+		if (((boolean)arg7) && (mod(getClientCycle(), 50) != 0)) {
+			return;
+		}
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(arg4));
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(arg5));
+		setWidgetSprite(444, new WidgetPointer(arg2));
+		setWidgetText(new WidgetPointer(arg5), "ITEMS ARE" + "<br>" + "SAFE");
+	} else if (((boolean)arg0) || (((extractX(getMyPositionHash()) >= extractX(48240000)) && (extractX(getMyPositionHash()) <= extractX(855627263))) && ((extractY(getMyPositionHash()) >= extractY(48240000)) && (extractY(getMyPositionHash()) <= extractY(855627263))))) {
+		if (arg6 != -1) {
+			if (extractY(getMyPositionHash()) < add(extractY(48240000), 8)) {
+				setWidgetIsHidden(false, new WidgetPointer(arg6));
+				deleteAllExtraChilds(new WidgetPointer(arg6));
+				script_1086(arg6, 0, 0, 0);
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(arg6));
+			}
+		}
+		if (((boolean)arg7) && (mod(getClientCycle(), 50) != 0)) {
+			return;
+		}
+		setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(arg4));
+		setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(arg5));
+		setWidgetSprite(445, new WidgetPointer(arg2));
+		setWidgetText(new WidgetPointer(arg5), "ITEMS ARE" + "<br>" + "DROPPED");
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(arg4));
+		setWidgetIsHidden(true, new WidgetPointer(arg5));
+		setWidgetIsHidden(true, new WidgetPointer(arg2));
+		setWidgetIsHidden(true, new WidgetPointer(arg3));
+		if (arg6 != -1) {
+			setWidgetIsHidden(true, new WidgetPointer(arg6));
+		}
+		deleteAllExtraChilds(new WidgetPointer(arg1));
+		return;
+	}
+	setWidgetIsHidden(false, new WidgetPointer(arg4));
+	setWidgetIsHidden(false, new WidgetPointer(arg5));
+	setWidgetIsHidden(false, new WidgetPointer(arg2));
+	setWidgetIsHidden(false, new WidgetPointer(arg3));
+	cs2method2107(1, new WidgetPointer(arg2));
+	ivar8 = getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg4)));
+	ivar8 = max(getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg5))), ivar8);
+	ivar8 = add(ivar8, 8);
+	ivar9 = 5;
+	setWidgetPosition(0, ivar9, 0, 0, new WidgetPointer(arg4));
+	ivar10 = getLineCount(ivar8, 494, getWidgetText(new WidgetPointer(arg4)));
+	ivar10 = add(multiply(ivar10, 10), 3);
+	setWidgetSize(ivar8, ivar10, 0, 0, new WidgetPointer(arg4));
+	ivar9 = subtract(add(ivar9, ivar10), 1);
+	setWidgetPosition(divide(subtract(ivar8, getWidgetActualWidth(new WidgetPointer(arg3))), 2), ivar9, 0, 0, new WidgetPointer(arg3));
+	ivar9 = subtract(add(ivar9, getWidgetActualHeight(new WidgetPointer(arg3))), 1);
+	setWidgetPosition(0, ivar9, 0, 0, new WidgetPointer(arg5));
+	ivar11 = getLineCount(ivar8, 494, getWidgetText(new WidgetPointer(arg5)));
+	ivar11 = add(multiply(ivar11, 10), 3);
+	setWidgetSize(ivar8, ivar10, 0, 0, new WidgetPointer(arg5));
+	ivar9 = add(add(ivar9, ivar11), 3);
+	setWidgetSize(ivar8, ivar9, 0, 0, new WidgetPointer(arg1));
+	setWidgetSize(ivar8, ivar9, 0, 0, new WidgetPointer(arg2));
+	deleteAllExtraChilds(new WidgetPointer(arg1));
+	script_1086(arg1, 0, 0, 0);
+	return;
+}

@@ -1,0 +1,95 @@
+void script_3982(int arg0,string arg1) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 178;
+	ivar8 = 69206179;
+	ivar9 = 0;
+	ivar10 = 0;
+	ivar11 = -1;
+	if (setWidgetRegister(new WidgetPointer(arg0))) {
+		if (globalint_1 < add(getClientCycle(), 45)) {
+			if (globalint_1 < getClientCycle()) {
+				globalint_1 = getClientCycle();
+			}
+			globalint_1 = add(globalint_1, 2);
+			return;
+		}
+		globalint_1 = add(getClientCycle(), 55);
+		if (globalint_2 != 1) {
+			ivar1 = add(getWidgetActualX(), 5);
+			ivar2 = add(add(getWidgetActualY(), getWidgetActualHeight()), 5);
+			ivar11 = 69206114;
+			if ((ivar11 != -1) && (ivar7 >= getWidgetActualWidth(new WidgetPointer(ivar11)))) {
+				ivar7 = getWidgetActualWidth(new WidgetPointer(ivar11));
+			}
+			ivar9 = add(4, getMaxLineWidth(subtract(ivar7, 4), 495, arg1));
+			ivar10 = add(4, multiply(16, getLineCount(subtract(ivar7, 4), 495, arg1)));
+			if (ivar11 != -1) {
+				ivar3 = subtract(ivar1, cs2method2600(new WidgetPointer(ivar11)));
+				ivar4 = subtract(ivar2, cs2method2601(new WidgetPointer(ivar11)));
+				if (ivar3 < 0) {
+					ivar1 = cs2method2600(new WidgetPointer(ivar11));
+					ivar3 = 0;
+				}
+				if (ivar4 < 0) {
+					ivar2 = cs2method2601(new WidgetPointer(ivar11));
+					ivar4 = 0;
+				}
+				if (ivar3 > 0) {
+					ivar5 = add(subtract(ivar3, getWidgetActualWidth(new WidgetPointer(ivar11))), ivar9);
+					if (ivar5 > 0) {
+						ivar1 = subtract(ivar1, ivar5);
+					}
+				}
+				if (ivar4 > 0) {
+					ivar6 = add(subtract(ivar4, getWidgetActualHeight(new WidgetPointer(ivar11))), ivar10);
+					if (ivar6 > 0) {
+						ivar2 = subtract(subtract(subtract(ivar2, ivar6), getWidgetActualHeight()), 10);
+					}
+				}
+			}
+			if (ivar1 < 0) {
+				ivar1 = 0;
+			}
+			if (ivar2 < 0) {
+				ivar2 = 0;
+			}
+			setWidgetSize(ivar9, ivar10, 0, 0, new WidgetPointer(ivar8));
+			setWidgetPosition(ivar1, ivar2, 0, 0, new WidgetPointer(ivar8));
+			deleteAllExtraChilds(new WidgetPointer(ivar8));
+			createExtraChild(new WidgetPointer(ivar8), 3, 0);
+			setWidgetSize(getWidgetActualWidth(new WidgetPointer(ivar8)), getWidgetActualHeight(new WidgetPointer(ivar8)), 0, 0);
+			setWidgetFilled(1);
+			setWidgetRGB(new Color(0, 0, 0));
+			cs2method2103(80);
+			createExtraChild(new WidgetPointer(ivar8), 3, 1);
+			setWidgetSize(getWidgetActualWidth(new WidgetPointer(ivar8)), getWidgetActualHeight(new WidgetPointer(ivar8)), 0, 0);
+			setWidgetFilled(0);
+			setWidgetRGB(new Color(0, 0, 0));
+			createExtraChild(new WidgetPointer(ivar8), 4, 2);
+			setWidgetSize(subtract(ivar7, 4), getWidgetActualHeight(new WidgetPointer(ivar8)), 0, 0);
+			setWidgetPosition(2, 0, 0, 0);
+			setWidgetText(arg1);
+			setWidgetTextAlignment(0, 1, 16);
+			setWidgetFont(495);
+			setWidgetRGB(new Color(238, 238, 238));
+			globalint_2 = 1;
+		}
+	}
+	return;
+}

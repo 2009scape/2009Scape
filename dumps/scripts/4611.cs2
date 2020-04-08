@@ -1,0 +1,5 @@
+void script_4611() {
+	setScriptCallOnConfigChange(4612, new WidgetPointer(20,55), 2172, 2173, 2174, 3, "IY", new WidgetPointer(20,55));
+	script_4613(1310775);
+	return;
+}

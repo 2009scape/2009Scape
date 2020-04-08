@@ -1,0 +1,14 @@
+void script_731() {
+	setWidgetModel(-1, new WidgetPointer(781,15));
+	setWidgetModel(-1, new WidgetPointer(781,16));
+	setWidgetModel(-1, new WidgetPointer(781,17));
+	setWidgetModel(-1, new WidgetPointer(781,18));
+	setWidgetModel(-1, new WidgetPointer(781,19));
+	setWidgetModel(-1, new WidgetPointer(781,20));
+	setWidgetModel(-1, new WidgetPointer(781,21));
+	setWidgetModel(-1, new WidgetPointer(781,22));
+	setWidgetAnimation(10139, new WidgetPointer(781,33));
+	setWidgetAnimation(10139, new WidgetPointer(781,42));
+	setWidgetIsHidden(true, new WidgetPointer(781,1));
+	return;
+}

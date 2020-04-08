@@ -1,0 +1,56 @@
+void script_5002(int arg0) {
+	int ivar1;
+	int ivar2;
+	script_4408(arg0);
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	createExtraChild(new WidgetPointer(arg0), 3, 0);
+	setWidgetSize(20, 20, 0, 0);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetRGB(new Color(85, 51, 51));
+	setWidgetFilled(1);
+	cs2method2103(155);
+	createExtraChild(new WidgetPointer(arg0), 3, 1);
+	setWidgetSize(20, 20, 0, 0);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetRGB(new Color(238, 204, 238));
+	createExtraChild(new WidgetPointer(arg0), 5, 2);
+	setWidgetSize(18, 18, 0, 0);
+	setWidgetPosition(0, 0, 1, 1);
+	ivar1 = script_4964(arg0);
+	ivar2 = 0;
+	if (citadelConfigsInitialized()) {
+		ivar2 = script_4949(ivar1);
+		switch (ivar2) {
+			case 17:
+				setWidgetSprite(7431);
+				break;
+			case 18:
+				setWidgetSprite(7430);
+				break;
+			case 19:
+				setWidgetSprite(7433);
+				break;
+			case 1:
+				setWidgetSprite(7422);
+				break;
+			case 2:
+				setWidgetSprite(7423);
+				break;
+			case 3:
+				setWidgetSprite(7424);
+				break;
+			case 4:
+				setWidgetSprite(7425);
+				break;
+			case 5:
+				setWidgetSprite(7426);
+				break;
+			case 6:
+				setWidgetSprite(7427);
+				break;
+			case 7:
+				setWidgetSprite(7428);
+		}
+	}
+	return;
+}

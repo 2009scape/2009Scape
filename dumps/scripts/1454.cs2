@@ -1,0 +1,22 @@
+void script_1454(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar1 = 0;
+	ivar2 = subtract(getWidgetActualY(new WidgetPointer(762,93)), 25);
+	ivar3 = subtract(add(getWidgetActualY(new WidgetPointer(762,93)), getWidgetActualHeight(new WidgetPointer(762,93))), 16);
+	if ((arg0 > ivar2) && (arg0 < add(ivar2, 25))) {
+		ivar1 = -4;
+	} else if ((arg0 < ivar3) && (arg0 > subtract(ivar3, 30))) {
+		ivar1 = 4;
+	} else {
+		globalint_189 = 0;
+		return;
+	}
+	globalint_189 = add(globalint_189, 1);
+	if (globalint_189 > 5) {
+		script_705(bitconfig_4893, add(cs2method2601(new WidgetPointer(762,93)), ivar1));
+		script_157(49938546, 49938525, add(cs2method2601(new WidgetPointer(762,93)), ivar1), 1);
+	}
+	return;
+}

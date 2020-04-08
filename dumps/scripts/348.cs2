@@ -1,0 +1,20 @@
+void script_348(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	ivar3 = script_166(arg2);
+	ivar4 = 941;
+	if (ivar3 >= 7) {
+		setWidgetIsHidden(false, new WidgetPointer(arg0));
+		setWidgetSprite(942, new WidgetPointer(arg1));
+		setScriptCallOnMousePressed(44, new WidgetPointer(arg1), ivar4, "Id", new WidgetPointer(arg0));
+	} else if (ivar3 == 6) {
+		setWidgetIsHidden(false, new WidgetPointer(arg0));
+		setWidgetSprite(941, new WidgetPointer(arg1));
+		ivar4 = 942;
+		setScriptCallOnMousePressed(44, new WidgetPointer(arg1), ivar4, "Id", new WidgetPointer(arg0));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+		setScriptCallOnMousePressed(-1, "", new WidgetPointer(arg0));
+	}
+	return;
+}

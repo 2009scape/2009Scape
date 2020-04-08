@@ -1,0 +1,32 @@
+void script_812(int arg0) {
+	setWidgetHidden(1);
+	if (arg0 == -1) {
+		return;
+	}
+	if (getItemHashmapData(arg0, 740) > 1) {
+		if (((boolean)script_925(arg0)) && ((boolean)script_926(arg0))) {
+			return;
+		}
+		setWidgetHidden(0);
+		return;
+	}
+	if (((boolean)getItemHashmapData(arg0, 740))) {
+		if (((boolean)script_925(arg0))) {
+			return;
+		}
+		setWidgetHidden(0);
+		return;
+	}
+	if (((boolean)script_928(arg0))) {
+		if (((boolean)script_926(arg0))) {
+			return;
+		}
+		setWidgetHidden(0);
+		return;
+	}
+	if (((boolean)script_925(arg0))) {
+		return;
+	}
+	setWidgetHidden(0);
+	return;
+}

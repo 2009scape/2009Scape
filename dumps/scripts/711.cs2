@@ -1,0 +1,160 @@
+void script_711() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	string svar0;
+	string svar1;
+	setScriptCallOnClickContextMenu(2023, -2147483644, 1, "ii", new WidgetPointer(916,19));
+	setScriptCallOnClickContextMenu(2023, -2147483644, -1, "ii", new WidgetPointer(916,20));
+	script_2020(1, 41, 60030981, "1");
+	script_2020(5, 41, 60030982, "5");
+	script_2020(10, 41, 60030983, "10");
+	ivar0 = getWidgetActualWidth(new WidgetPointer(916,9));
+	ivar1 = getWidgetActualWidth(new WidgetPointer(905,3));
+	ivar2 = subtract(subtract(ivar1, ivar0), add(multiply(41, 3), multiply(5, 2)));
+	ivar3 = 0;
+	ivar4 = 0;
+	svar0 = "All";
+	svar1 = "Custom";
+	if (((boolean)script_1103())) {
+		ivar3 = add(max(getTextWidth(494, svar0), getTextWidth(494, svar1)), 20);
+		script_2020(bitconfig_8094, ivar3, 60030984, svar0);
+		script_2020(-1, ivar3, 59310086, svar1);
+		ivar2 = subtract(ivar2, add(multiply(ivar3, 2), 5));
+		ivar4 = multiplyDivide(2, 5, ivar2);
+		setWidgetPosition(ivar4, 0, 0, 1, new WidgetPointer(916,8));
+		ivar4 = add(add(ivar4, ivar3), 5);
+		setWidgetPosition(ivar4, 0, 0, 1, new WidgetPointer(905,6));
+		ivar4 = add(ivar4, ivar3);
+		ivar4 = add(ivar4, divide(ivar2, 5));
+		setWidgetPosition(ivar4, 0, 0, 1, new WidgetPointer(916,5));
+		ivar4 = add(add(ivar4, 41), 5);
+		setWidgetPosition(ivar4, 0, 0, 1, new WidgetPointer(916,6));
+		ivar4 = add(add(ivar4, 41), 5);
+		setWidgetPosition(ivar4, 0, 0, 1, new WidgetPointer(916,7));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(916,8));
+		setWidgetIsHidden(true, new WidgetPointer(905,6));
+		ivar4 = divide(ivar2, 2);
+		setWidgetPosition(ivar4, 0, 0, 1, new WidgetPointer(916,5));
+		ivar4 = add(add(ivar4, 41), 5);
+		setWidgetPosition(ivar4, 0, 0, 1, new WidgetPointer(916,6));
+		ivar4 = add(add(ivar4, 41), 5);
+		setWidgetPosition(ivar4, 0, 0, 1, new WidgetPointer(916,7));
+	}
+	setWidgetPosition(subtract(ivar0, 5), 0, 2, 1, new WidgetPointer(916,2));
+	setWidgetPosition(ivar0, 0, 2, 1, new WidgetPointer(905,5));
+	ivar5 = subtract(ivar1, ivar0);
+	if (((boolean)globalint_92)) {
+		setWidgetSize(add(ivar5, 5), 0, 0, 1, new WidgetPointer(916,2));
+		setWidgetSize(ivar5, 0, 0, 1, new WidgetPointer(905,5));
+		script_2192(0, ivar5);
+	} else {
+		setWidgetSize(5, 0, 0, 1, new WidgetPointer(916,2));
+		setWidgetSize(0, 0, 0, 1, new WidgetPointer(905,5));
+		script_2192(1, ivar5);
+	}
+	setWidgetSize(add(multiply(getWidgetActualX(new WidgetPointer(916,1)), 2), ivar0), 0, 1, 1, new WidgetPointer(916,1));
+	svar1 = "Show/Hide additional number buttons";
+	ivar6 = 3883;
+	setScriptCallOnMouseOver(1160, new WidgetPointer(-32768,3), -1, new WidgetPointer(905,29), svar1, 25, 519, "IiIsii", new WidgetPointer(916,21));
+	setScriptCallOnMouseExit(299, new WidgetPointer(905,29), new WidgetPointer(916,22), ivar6, "IId", new WidgetPointer(916,21));
+	ivar2 = divide(subtract(70, 56), 2);
+	ivar3 = 0;
+	if (globalint_755 != -1) {
+		ivar3 = getMaxLineWidth(2147483647, 494, globalstring_132);
+	}
+	if (globalint_756 != -1) {
+		ivar3 = max(getMaxLineWidth(2147483647, 494, globalstring_133), ivar3);
+	}
+	if (globalint_757 != -1) {
+		ivar3 = max(getMaxLineWidth(2147483647, 494, globalstring_134), ivar3);
+	}
+	if (globalint_758 != -1) {
+		ivar3 = max(getMaxLineWidth(2147483647, 494, globalstring_135), ivar3);
+	}
+	if (globalint_759 != -1) {
+		ivar3 = max(getMaxLineWidth(2147483647, 494, globalstring_136), ivar3);
+	}
+	if (globalint_760 != -1) {
+		ivar3 = max(getMaxLineWidth(2147483647, 494, globalstring_137), ivar3);
+	}
+	if (globalint_1139 != -1) {
+		ivar3 = max(getMaxLineWidth(2147483647, 494, globalstring_280), ivar3);
+	}
+	if (globalint_1140 != -1) {
+		ivar3 = max(getMaxLineWidth(2147483647, 494, globalstring_281), ivar3);
+	}
+	if (globalint_1141 != -1) {
+		ivar3 = max(getMaxLineWidth(2147483647, 494, globalstring_282), ivar3);
+	}
+	if (globalint_1142 != -1) {
+		ivar3 = max(getMaxLineWidth(2147483647, 494, globalstring_283), ivar3);
+	}
+	if (globalint_120 != -1) {
+		ivar3 = max(getMaxLineWidth(2147483647, 494, globalstring_275), ivar3);
+	}
+	if (globalint_185 != -1) {
+		ivar3 = max(getMaxLineWidth(2147483647, 494, globalstring_316), ivar3);
+	}
+	if (globalint_87 != -1) {
+		ivar3 = max(getMaxLineWidth(2147483647, 494, globalstring_317), ivar3);
+	}
+	if (globalint_90 != -1) {
+		ivar3 = max(getMaxLineWidth(2147483647, 494, globalstring_318), ivar3);
+	}
+	ivar3 = add(ivar3, 4);
+	ivar3 = max(add(ivar3, multiply(4, 2)), 56);
+	ivar4 = script_1883(ivar2, ivar3, ivar2, globalint_755, 59310094, globalstring_132);
+	ivar4 = script_1883(ivar4, ivar3, ivar2, globalint_756, 59310095, globalstring_133);
+	ivar4 = script_1883(ivar4, ivar3, ivar2, globalint_757, 59310096, globalstring_134);
+	ivar4 = script_1883(ivar4, ivar3, ivar2, globalint_758, 59310097, globalstring_135);
+	ivar4 = script_1883(ivar4, ivar3, ivar2, globalint_759, 59310098, globalstring_136);
+	ivar4 = script_1883(ivar4, ivar3, ivar2, globalint_760, 59310099, globalstring_137);
+	ivar4 = script_1883(ivar4, ivar3, ivar2, globalint_1139, 59310100, globalstring_280);
+	ivar4 = script_1883(ivar4, ivar3, ivar2, globalint_1140, 59310101, globalstring_281);
+	ivar4 = script_1883(ivar4, ivar3, ivar2, globalint_1141, 59310102, globalstring_282);
+	ivar4 = script_1883(ivar4, ivar3, ivar2, globalint_1142, 59310103, globalstring_283);
+	ivar4 = script_1883(ivar4, ivar3, ivar2, globalint_120, 59310104, globalstring_275);
+	ivar4 = script_1883(ivar4, ivar3, ivar2, globalint_185, 59310105, globalstring_316);
+	ivar4 = script_1883(ivar4, ivar3, ivar2, globalint_87, 59310106, globalstring_317);
+	ivar4 = script_1883(ivar4, ivar3, ivar2, globalint_90, 59310107, globalstring_318);
+	script_2047();
+	ivar3 = subtract(getWidgetActualWidth(new WidgetPointer(905,7)), 50);
+	ivar7 = 3877;
+	ivar6 = 3879;
+	ivar8 = 3878;
+	ivar9 = 3880;
+	if (ivar4 > ivar3) {
+		setWidgetSize(ivar3, 0, 0, 1, new WidgetPointer(905,13));
+		setWidgetScrollMax(ivar4, 0, new WidgetPointer(905,13));
+		cs2method2100(globalint_93, 0, new WidgetPointer(905,13));
+		setScriptCallOnMouseOver(2369, new WidgetPointer(-32768,3), ivar8, -4, "Idi", new WidgetPointer(905,11));
+		setScriptCallOnMouseOver(2369, new WidgetPointer(-32768,3), ivar9, 4, "Idi", new WidgetPointer(905,12));
+		setScriptCallOnMouseDraggedOver(2369, new WidgetPointer(-32768,3), ivar8, -6, "Idi", new WidgetPointer(905,11));
+		setScriptCallOnMouseDraggedOver(2369, new WidgetPointer(-32768,3), ivar9, 6, "Idi", new WidgetPointer(905,12));
+		setScriptCallOnMouseExit(44, new WidgetPointer(-32768,3), ivar7, "Id", new WidgetPointer(905,11));
+		setScriptCallOnMouseExit(44, new WidgetPointer(-32768,3), ivar6, "Id", new WidgetPointer(905,12));
+		script_2370();
+	} else {
+		setWidgetSize(ivar4, 0, 0, 1, new WidgetPointer(905,13));
+		setWidgetScrollMax(0, 0, new WidgetPointer(905,13));
+		cs2method2100(0, 0, new WidgetPointer(905,13));
+		removeAllEventListeners(new WidgetPointer(905,11));
+		removeAllEventListeners(new WidgetPointer(905,12));
+		cs2method2103(150, new WidgetPointer(905,11));
+		cs2method2103(150, new WidgetPointer(905,12));
+	}
+	setWidgetSprite(ivar7, new WidgetPointer(905,11));
+	setWidgetSprite(ivar6, new WidgetPointer(905,12));
+	setScriptCallOnGlobalConfigChange(711, 754, 1, "Y", new WidgetPointer(905,2));
+	setScriptCallOnConfigChange(2025, 1363, 1, "Y", new WidgetPointer(905,2));
+	return;
+}

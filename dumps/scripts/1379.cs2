@@ -1,0 +1,34 @@
+void script_1379() {
+	switch (bitconfig_5389) {
+		case 1:
+			setWidgetAnimation(10439, new WidgetPointer(796,10));
+			break;
+		case 2:
+			setWidgetIsHidden(true, new WidgetPointer(796,11));
+			setWidgetIsHidden(false, new WidgetPointer(796,7));
+			break;
+		case 3:
+			setWidgetAnimation(10439, new WidgetPointer(796,6));
+			break;
+		case 4:
+			setWidgetIsHidden(true, new WidgetPointer(796,7));
+			setWidgetIsHidden(false, new WidgetPointer(796,9));
+			break;
+		case 5:
+			setWidgetAnimation(10443, new WidgetPointer(796,8));
+			break;
+		case 6:
+			setWidgetIsHidden(true, new WidgetPointer(796,9));
+			setWidgetIsHidden(false, new WidgetPointer(796,5));
+			break;
+		case 7:
+			setWidgetAnimation(10437, new WidgetPointer(796,4));
+			break;
+		case 8:
+			setWidgetIsHidden(true, new WidgetPointer(796,5));
+			setWidgetIsHidden(true, new WidgetPointer(796,3));
+			setWidgetIsHidden(false, new WidgetPointer(796,30));
+			setWidgetIsHidden(false, new WidgetPointer(796,1));
+	}
+	return;
+}

@@ -1,0 +1,9 @@
+void script_2181() {
+	int ivar0;
+	ivar0 = 0;
+	while (ivar0 <= globalint_273) {
+		script_2180(ivar0);
+		ivar0 = add(ivar0, 1);
+	}
+	return;
+}

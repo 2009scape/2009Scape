@@ -1,0 +1,29 @@
+void script_741() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	flow_0:
+		ivar0 = standart_config_1163;
+		if (((boolean)ivar0)) {
+			return;
+		}
+		ivar1 = script_739(ivar0);
+		ivar2 = cs2method_3408(105, 109, 1151, ivar1);
+		if (isBitFlagged(globalint_104, ivar1)) {
+			return;
+		}
+		if (((ivar0 == globalint_99) || (ivar0 == globalint_100)) || (ivar0 == globalint_101)) {
+			return;
+		}
+		setWidgetModel(ivar2, cs2method_3408(105, 73, 1153, ivar0));
+		script_737(ivar0);
+		IF (globalint_102 == 12) 
+			GOTO	flow_7
+		GOTO	flow_7
+	flow_7:
+		if (((boolean)globalint_105)) {
+			messageType0("The mechanism issues forth a whine and shuts down.");
+			script_675();
+		}
+		return;
+}

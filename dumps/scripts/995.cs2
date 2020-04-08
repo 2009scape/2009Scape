@@ -1,0 +1,27 @@
+cs2func_script_995_struct(1,1,0) script_995(int arg0) {
+	switch (arg0) {
+		case 0:
+			return newstruct cs2func_script_995_struct(0, "Normal Spells");
+		case 1:
+			return newstruct cs2func_script_995_struct(1, "Ancient Magicks");
+		case 2:
+			return newstruct cs2func_script_995_struct(1, "Lunar Spells");
+		case 3:
+			return newstruct cs2func_script_995_struct(0, "Enchantment");
+		case 4:
+			return newstruct cs2func_script_995_struct(0, "Armour");
+		case 5:
+			return newstruct cs2func_script_995_struct(0, "Weapons");
+		case 6:
+			return newstruct cs2func_script_995_struct(0, "Books and wands");
+		case 7:
+			return newstruct cs2func_script_995_struct(1, "Salamanders");
+		case 8:
+			return newstruct cs2func_script_995_struct(0, "Minigames");
+		case 9:
+			return newstruct cs2func_script_995_struct(0, "Dungeoneering");
+		case 10:
+			return newstruct cs2func_script_995_struct(0, "Milestones");
+	}
+	return newstruct cs2func_script_995_struct(-1, "");
+}

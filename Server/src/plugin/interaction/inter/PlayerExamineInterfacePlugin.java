@@ -4,6 +4,8 @@ import org.crandor.game.component.Component;
 import org.crandor.game.component.ComponentDefinition;
 import org.crandor.game.component.ComponentPlugin;
 import org.crandor.game.node.entity.player.Player;
+import org.crandor.game.node.item.Item;
+import org.crandor.game.system.mysql.impl.ItemConfigSQLHandler;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.plugin.Plugin;
 import org.crandor.tools.StringUtils;
@@ -59,5 +61,14 @@ public class PlayerExamineInterfacePlugin extends ComponentPlugin {
         player.getPacketDispatch().sendString("" + examined.getInventory().getWealth(), 31, 17);
         player.getPacketDispatch().sendString("" + examined.getCustomState(), 31, 20);
         player.getPacketDispatch().sendString("Close", 31, 5);
+
+        for (int i = 0; i < 11; i++) {
+            Item item = examined.getEquipment().get(i);
+            if (item == null) {
+                continue;
+            }
+            System.out.println(item.getName());
+        }
+
     }
 }

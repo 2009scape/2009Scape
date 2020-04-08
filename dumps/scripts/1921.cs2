@@ -1,0 +1,18 @@
+void script_1921() {
+	if (globalint_551 > 0) {
+		setWidgetText(new WidgetPointer(812,5), concat(concat(globalint_551, concat(globalstring_40, " (")), ")"));
+	} else {
+		setWidgetText(new WidgetPointer(812,5), globalstring_40);
+	}
+	if (globalint_552 > 0) {
+		setWidgetText(new WidgetPointer(812,6), concat(concat(globalint_552, concat(globalstring_41, " (")), ")"));
+	} else {
+		setWidgetText(new WidgetPointer(812,6), globalstring_41);
+	}
+	if (globalint_553 > 0) {
+		setWidgetText(new WidgetPointer(812,7), concat(concat(globalint_553, concat(globalstring_42, " (")), ")"));
+	} else {
+		setWidgetText(new WidgetPointer(812,7), globalstring_42);
+	}
+	return;
+}

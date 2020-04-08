@@ -1,0 +1,78 @@
+int script_970(int arg0) {
+	if ((arg0 == 20971715) && ((boolean)bitconfig_4732)) {
+		return 1;
+	}
+	if ((arg0 == 20971526) && ((boolean)bitconfig_4733)) {
+		return 1;
+	}
+	if ((arg0 == 20971543) && ((boolean)bitconfig_4734)) {
+		return 1;
+	}
+	if ((arg0 == 20971567) && ((boolean)bitconfig_4735)) {
+		return 1;
+	}
+	if ((arg0 == 20971591) && ((boolean)bitconfig_4736)) {
+		return 1;
+	}
+	if ((arg0 == 20971608) && ((boolean)bitconfig_4737)) {
+		return 1;
+	}
+	if ((arg0 == 20971708) && ((boolean)bitconfig_4738)) {
+		return 1;
+	}
+	if ((arg0 == 20971534) && ((boolean)bitconfig_4739)) {
+		return 1;
+	}
+	if ((arg0 == 20971551) && ((boolean)bitconfig_4740)) {
+		return 1;
+	}
+	if ((arg0 == 20971575) && ((boolean)bitconfig_4741)) {
+		return 1;
+	}
+	if ((arg0 == 20971599) && ((boolean)bitconfig_4742)) {
+		return 1;
+	}
+	if ((arg0 == 20971616) && ((boolean)bitconfig_4743)) {
+		return 1;
+	}
+	if ((arg0 == 20971701) && ((boolean)bitconfig_4744)) {
+		return 1;
+	}
+	if ((arg0 == 20971694) && ((boolean)bitconfig_4745)) {
+		return 1;
+	}
+	if ((arg0 == 20971559) && ((boolean)bitconfig_4746)) {
+		return 1;
+	}
+	if ((arg0 == 20971583) && ((boolean)bitconfig_4747)) {
+		return 1;
+	}
+	if ((arg0 == 20971687) && ((boolean)bitconfig_4748)) {
+		return 1;
+	}
+	if ((arg0 == 20971680) && ((boolean)bitconfig_4749)) {
+		return 1;
+	}
+	if ((arg0 == 20971625) && ((boolean)bitconfig_4750)) {
+		return 1;
+	}
+	if ((arg0 == 20971633) && ((boolean)bitconfig_4751)) {
+		return 1;
+	}
+	if ((arg0 == 20971641) && ((boolean)bitconfig_4752)) {
+		return 1;
+	}
+	if ((arg0 == 20971649) && ((boolean)bitconfig_4753)) {
+		return 1;
+	}
+	if ((arg0 == 20971657) && ((boolean)bitconfig_4754)) {
+		return 1;
+	}
+	if ((arg0 == 20971665) && ((boolean)bitconfig_4755)) {
+		return 1;
+	}
+	if ((arg0 == 20971673) && ((boolean)bitconfig_7756)) {
+		return 1;
+	}
+	return 0;
+}

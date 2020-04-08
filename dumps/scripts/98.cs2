@@ -1,0 +1,8 @@
+void script_98(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6) {
+	createExtraChild(new WidgetPointer(arg0), 5, arg1);
+	setWidgetPosition(arg3, arg4, 0, 0);
+	setWidgetSize(arg5, arg6, 0, 0);
+	setWidgetSprite(arg2);
+	cs2method1107(1);
+	return;
+}

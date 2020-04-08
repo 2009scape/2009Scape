@@ -1,0 +1,716 @@
+cs2func_script_1000_struct(2,2,0) script_1000(int arg0,int arg1) {
+	switch (arg0) {
+		flow_1:
+			case 0:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1000_struct(10, 3224, "Members: Cloth", "Members can now weave " + "<col=000080>" + "cloth" + "</col>" + " on a loom.");
+				case 1:
+					return newstruct cs2func_script_1000_struct(10, 20754, "Members: Milestone cape (10)", "Members can now weave a " + "<col=000080>" + "Milestone cape (10)" + "</col>" + " on a loom.");
+				case 2:
+					return newstruct cs2func_script_1000_struct(20, 20755, "Members: Milestone cape (20)", "Members can now weave a " + "<col=000080>" + "Milestone cape (20)" + "</col>" + " on a loom.");
+				case 3:
+					return newstruct cs2func_script_1000_struct(21, 5418, "Members: Vegetable sack", "Members can now weave " + "<col=000080>" + "vegetable sacks" + "</col>" + " on a loom.");
+				case 4:
+					return newstruct cs2func_script_1000_struct(30, 20756, "Members: Milestone cape (30)", "Members can now weave a " + "<col=000080>" + "Milestone cape (30)" + "</col>" + " on a loom.");
+				case 5:
+					return newstruct cs2func_script_1000_struct(36, 5376, "Members: Fruit basket", "Members can now weave " + "<col=000080>" + "fruit baskets" + "</col>" + " on a loom.");
+				case 6:
+					return newstruct cs2func_script_1000_struct(40, 20757, "Members: Milestone cape (40)", "Members can now weave a " + "<col=000080>" + "Milestone cape (40)" + "</col>" + " on a loom.");
+				case 7:
+					return newstruct cs2func_script_1000_struct(50, 20758, "Members: Milestone cape (50)", "Members can now weave a " + "<col=000080>" + "Milestone cape (50)" + "</col>" + " on a loom.");
+				case 8:
+					return newstruct cs2func_script_1000_struct(52, 14859, "Members: Seaweed net", "Members can now weave " + "<col=000080>" + "seaweed nets" + "</col>" + " on a loom.");
+				case 9:
+					return newstruct cs2func_script_1000_struct(60, 20759, "Members: Milestone cape (60)", "Members can now weave a " + "<col=000080>" + "Milestone cape (60)" + "</col>" + " on a loom.");
+				case 10:
+					return newstruct cs2func_script_1000_struct(70, 20760, "Members: Milestone cape (70)", "Members can now weave a " + "<col=000080>" + "Milestone cape (70)" + "</col>" + " on a loom.");
+				case 11:
+					return newstruct cs2func_script_1000_struct(80, 20761, "Members: Milestone cape (80)", "Members can now weave a " + "<col=000080>" + "Milestone cape (80)" + "</col>" + " on a loom.");
+				case 12:
+					return newstruct cs2func_script_1000_struct(90, 20762, "Members: Milestone cape (90)", "Members can now weave a " + "<col=000080>" + "Milestone cape (90)" + "</col>" + " on a loom.");
+			}
+			break;
+			case 1:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1000_struct(1, 1059, "Leather gloves", "You can now craft " + "<col=000080>" + "leather gloves" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1000_struct(7, 1061, "Leather boots", "You can now craft " + "<col=000080>" + "leather boots" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1000_struct(9, 1167, "Leather cowl", "You can now craft " + "<col=000080>" + "leather cowls" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1000_struct(11, 1063, "Leather vambraces", "You can now craft " + "<col=000080>" + "leather vambraces" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1000_struct(14, 1129, "Leather body", "You can now craft " + "<col=000080>" + "leather bodies" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1000_struct(15, 3327, "Members: Snail helmet", "Members can now craft " + "<col=000080>" + "snail helmets" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1000_struct(15, 7539, "Members: Crab shell armour", "Members can now craft " + "<col=000080>" + "crab shell armour" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1000_struct(18, 1095, "Leather chaps", "You can now craft " + "<col=000080>" + "leather chaps" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1000_struct(28, 1131, "Hard leather body", "You can now craft " + "<col=000080>" + "hard leather bodies" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1000_struct(32, 10077, "Members: Spiked vambraces", "Members can now craft " + "<col=000080>" + "spiked vambraces" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_1000_struct(35, 6259, "Members: Broodoo shield", "Members can now craft " + "<col=000080>" + "broodoo shields" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_1000_struct(38, 1169, "Members: Coif", "Members can now craft " + "<col=000080>" + "coifs" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_1000_struct(41, 1133, "Members: Studded body", "Members can now craft " + "<col=000080>" + "studded bodies" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_1000_struct(43, 10824, "Members: Yak-hide leg armour", "Members can now craft " + "<col=000080>" + "yak-hide leg armour" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_1000_struct(44, 1097, "Members: Studded chaps", "Members can now craft " + "<col=000080>" + "studded chaps" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_1000_struct(45, 6328, "Members: Snakeskin boots", "Members can now craft " + "<col=000080>" + "snakeskin boots" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_1000_struct(46, 10822, "Members: Yak-hide body armour", "Members can now craft " + "<col=000080>" + "yak-hide body armour" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_1000_struct(47, 6330, "Members: Snakeskin vambraces", "Members can now craft " + "<col=000080>" + "snakeskin vambraces" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_1000_struct(48, 6326, "Members: Snakeskin bandana", "Members can now craft " + "<col=000080>" + "snakeskin bandanas" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_1000_struct(51, 6324, "Members: Snakeskin chaps", "Members can now craft " + "<col=000080>" + "snakeskin chaps" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_1000_struct(53, 6322, "Members: Snakeskin body", "Members can now craft " + "<col=000080>" + "snakeskin bodies" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_1000_struct(55, 13263, "Members: Slayer helmet" + "<br>" + " (after Smoking Kills)", "Members can now craft " + "<col=000080>" + "Slayer helmets" + "</col>" + " (after Smoking Kills).");
+				case 22:
+					return newstruct cs2func_script_1000_struct(57, 1065, "Members: Green dragonhide vambraces", "Members can now craft " + "<col=000080>" + "green dragonhide vambraces" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_1000_struct(60, 1099, "Members: Green dragonhide chaps", "Members can now craft " + "<col=000080>" + "green dragonhide chaps" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_1000_struct(63, 1135, "Members: Green dragonhide body", "Members can now craft " + "<col=000080>" + "green dragonhide bodies" + "</col>" + ".");
+				case 25:
+					return newstruct cs2func_script_1000_struct(64, 10075, "Members: Repairing gloves of silence", "Members can now repair " + "<col=000080>" + "gloves of silence" + "</col>" + " with dark kebbit fur.");
+				case 26:
+					return newstruct cs2func_script_1000_struct(66, 2487, "Members: Blue dragonhide vambraces", "Members can now craft " + "<col=000080>" + "blue dragonhide vambraces" + "</col>" + ".");
+				case 27:
+					return newstruct cs2func_script_1000_struct(68, 2493, "Members: Blue dragonhide chaps", "Members can now craft " + "<col=000080>" + "blue dragonhide chaps" + "</col>" + ".");
+				case 28:
+					return newstruct cs2func_script_1000_struct(71, 2499, "Members: Blue dragonhide body", "Members can now craft " + "<col=000080>" + "blue dragonhide bodies" + "</col>" + ".");
+				case 29:
+					return newstruct cs2func_script_1000_struct(73, 2489, "Members: Red dragonhide vambraces", "Members can now craft " + "<col=000080>" + "red dragonhide vambraces" + "</col>" + ".");
+				case 30:
+					return newstruct cs2func_script_1000_struct(75, 2495, "Members: Red dragonhide chaps", "Members can now craft " + "<col=000080>" + "red dragonhide chaps" + "</col>" + ".");
+				case 31:
+					return newstruct cs2func_script_1000_struct(77, 2501, "Members: Red dragonhide body", "Members can now craft " + "<col=000080>" + "red dragonhide bodies" + "</col>" + ".");
+				case 32:
+					return newstruct cs2func_script_1000_struct(79, 12210, "Members: Feathered headdress", "Members can now craft " + "<col=000080>" + "feathered headdresses" + "</col>" + ".");
+				case 33:
+					return newstruct cs2func_script_1000_struct(79, 2491, "Members: Black dragonhide vambraces", "Members can now craft " + "<col=000080>" + "black dragonhide vambraces" + "</col>" + ".");
+				case 34:
+					return newstruct cs2func_script_1000_struct(82, 2497, "Members: Black dragonhide chaps", "Members can now craft " + "<col=000080>" + "black dragonhide chaps" + "</col>" + ".");
+				case 35:
+					return newstruct cs2func_script_1000_struct(84, 2503, "Members: Black dragonhide body", "Members can now craft " + "<col=000080>" + "black dragonhide bodies" + "</col>" + ".");
+				case 36:
+					return newstruct cs2func_script_1000_struct(85, 21508, "Members: Necromancer robes", "Members can now craft " + "<col=000080>" + "necromancer robes" + "</col>" + " by using necromancer kits on Dagon'hai robes.");
+			}
+			break;
+			case 2:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1000_struct(1, 1759, "Wool", "You can now spin wool from a sheep into " + "<col=000080>" + "balls of wool" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1000_struct(10, 1777, "Members: Flax into bow strings", "Members can now spin flax into " + "<col=000080>" + "bow strings" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1000_struct(10, 9438, "Members: Sinew into crossbow strings", "Members can now spin sinew into " + "<col=000080>" + "crossbow strings" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1000_struct(19, 6038, "Members: Magic tree roots into magic strings", "Members can now spin magic tree roots into " + "<col=000080>" + "magic strings" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1000_struct(30, 954, "Members: Yak hair into rope", "Members can now spin yak hair into " + "<col=000080>" + "rope.");
+			}
+			break;
+			case 3:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1000_struct(1, 1931, "Pot", "You can now craft and fire " + "<col=000080>" + "clay pots" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1000_struct(1, 20382, "Cracked mining urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "cracked mining urns" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1000_struct(2, 20352, "Cracked cooking urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "cracked cooking urns" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1000_struct(2, 20322, "Cracked fishing urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "cracked fishing urns" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1000_struct(2, 20412, "Impious urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "impious urns" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1000_struct(4, 20053, "Clay ring", "You can now craft and fire " + "<col=000080>" + "clay rings" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1000_struct(4, 20298, "Cracked woodcutting urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "cracked woodcutting urns" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1000_struct(4, 20274, "Cracked smelting urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "cracked smelting urns" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1000_struct(7, 2313, "Pie dish", "You can now craft and fire " + "<col=000080>" + "clay pie dishes" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1000_struct(8, 1923, "Bowl", "You can now craft and fire " + "<col=000080>" + "clay bowls" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_1000_struct(12, 20358, "Fragile cooking urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "fragile cooking urns" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_1000_struct(15, 20328, "Fragile fishing urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "fragile fishing urns" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_1000_struct(15, 20304, "Fragile woodcutting urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "fragile woodcutting urns" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_1000_struct(17, 20388, "Fragile mining urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "fragile mining urns" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_1000_struct(17, 20280, "Fragile smelting urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "fragile smelting urns" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_1000_struct(19, 5350, "Members: Plant pot", "Members can now craft and fire " + "<col=000080>" + "clay plant pots" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_1000_struct(25, 4440, "Members: Pot lid" + "<br>" + " (after starting One Small Favour)", "Members can now craft and fire " + "<col=000080>" + "clay pot lids" + "</col>" + " (after starting One Small Favour.)");
+				case 17:
+					return newstruct cs2func_script_1000_struct(26, 20418, "Accursed urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "accursed urns" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_1000_struct(32, 20394, "Mining urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "mining urns" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_1000_struct(35, 20286, "Smelting urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "smelting urns" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_1000_struct(36, 20364, "Cooking urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "cooking urns" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_1000_struct(41, 20334, "Fishing urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "fishing urns" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_1000_struct(44, 20310, "Woodcutting urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "woodcutting urns" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_1000_struct(48, 20400, "Members: Strong mining urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "strong mining urns" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_1000_struct(49, 20292, "Members: Strong smelting urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "strong smelting urns" + "</col>" + ".");
+				case 25:
+					return newstruct cs2func_script_1000_struct(51, 20370, "Members: Strong cooking urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "strong cooking urns" + "</col>" + ".");
+				case 26:
+					return newstruct cs2func_script_1000_struct(53, 20340, "Members: Strong fishing urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "strong fishing urns" + "</col>" + ".");
+				case 27:
+					return newstruct cs2func_script_1000_struct(59, 20406, "Members: Decorated mining urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "decorated mining urns" + "</col>" + ".");
+				case 28:
+					return newstruct cs2func_script_1000_struct(61, 20316, "Members: Strong woodcutting urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "strong woodcutting urns" + "</col>" + ".");
+				case 29:
+					return newstruct cs2func_script_1000_struct(62, 20424, "Members: Infernal urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "infernal urns" + "</col>" + ".");
+				case 30:
+					return newstruct cs2func_script_1000_struct(76, 20346, "Members: Decorated fishing urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "decorated fishing urns" + "</col>" + ".");
+				case 31:
+					return newstruct cs2func_script_1000_struct(81, 20376, "Members: Decorated cooking urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "decorated cooking urns" + "</col>" + ".");
+			}
+			break;
+			case 4:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1000_struct(1, 1919, "Members: Beer glass", "Members can now craft " + "<col=000080>" + "beer glasses" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1000_struct(4, 4527, "Members: Candle lantern", "Members can now craft " + "<col=000080>" + "candle lanterns" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1000_struct(12, 4525, "Members: Oil lamp", "Members can now craft " + "<col=000080>" + "oil lamps" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1000_struct(26, 4535, "Members: Oil lantern", "Members can now craft " + "<col=000080>" + "oil lanterns" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1000_struct(33, 229, "Members: Vial", "Members can now craft " + "<col=000080>" + "vials" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1000_struct(42, 6667, "Members: Fishbowl", "Members can now craft " + "<col=000080>" + "fishbowls" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1000_struct(46, 567, "Members: Glass orb", "Members can now craft " + "<col=000080>" + "glass orbs" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1000_struct(49, 4542, "Members: Bullseye lantern lens", "Members can now craft " + "<col=000080>" + "bullseye lantern lenses" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1000_struct(87, 10973, "Members: Dorgeshuun light orb", "Members can now craft " + "<col=000080>" + "Dorgeshuun light orbs" + "</col>" + ".");
+			}
+			break;
+			case 5:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1000_struct(1, 21347, "Members: Lapis lazuli brooch", "Members can now craft a " + "<col=000080>" + "lapis lazuli brooch" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1000_struct(1, 1609, "Members: Cut opal", "Members can now cut " + "<col=000080>" + "opals" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1000_struct(3, 10496, "Polished buttons", "You can now craft " + "<col=000080>" + "polished buttons" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1000_struct(5, 1635, "Gold ring", "You can now craft " + "<col=000080>" + "gold rings" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1000_struct(6, 1654, "Gold necklace", "You can now craft " + "<col=000080>" + "gold necklaces" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1000_struct(7, 11069, "Members: Gold bracelet", "Members can now craft " + "<col=000080>" + "gold bracelets" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1000_struct(8, 1692, "Gold amulet", "You can now craft " + "<col=000080>" + "gold amulets" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1000_struct(13, 1611, "Members: Cut jade", "Members can now cut " + "<col=000080>" + "jade" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1000_struct(16, 1716, "Holy symbol", "You can now craft " + "<col=000080>" + "holy symbols" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1000_struct(16, 1613, "Members: Cut red topaz", "Members can now cut " + "<col=000080>" + "red topaz" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_1000_struct(17, 1722, "Members: Unholy symbol", "Members can now craft " + "<col=000080>" + "unholy symbols" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_1000_struct(20, 1607, "Cut sapphire", "You can now craft " + "<col=000080>" + "sapphires" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_1000_struct(20, 1637, "Sapphire ring", "You can now craft " + "<col=000080>" + "sapphire rings" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_1000_struct(22, 1656, "Sapphire necklace", "You can now craft " + "<col=000080>" + "sapphire necklaces" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_1000_struct(23, 5525, "Tiara", "You can now craft " + "<col=000080>" + "tiaras" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_1000_struct(23, 11072, "Members: Sapphire bracelet", "Members can now craft " + "<col=000080>" + "sapphire bracelets" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_1000_struct(24, 1694, "Sapphire amulet", "You can now craft " + "<col=000080>" + "sapphire amulets" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_1000_struct(27, 1605, "Cut emerald", "You can now cut " + "<col=000080>" + "emeralds" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_1000_struct(27, 1639, "Emerald ring", "You can now craft " + "<col=000080>" + "emerald rings" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_1000_struct(29, 1658, "Emerald necklace", "You can now craft " + "<col=000080>" + "emerald necklaces" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_1000_struct(30, 11076, "Members: Emerald bracelet", "Members can now craft " + "<col=000080>" + "emerald bracelets" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_1000_struct(31, 1696, "Emerald amulet", "You can now craft " + "<col=000080>" + "emerald amulets" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_1000_struct(34, 1603, "Cut ruby", "You can now cut " + "<col=000080>" + "rubies" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_1000_struct(34, 1641, "Ruby ring", "You can now craft " + "<col=000080>" + "ruby rings" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_1000_struct(37, 10132, "Members: Rabbit-foot necklaces", "Members can now craft " + "<col=000080>" + "rabbit-foot necklaces" + "</col>" + ".");
+				case 25:
+					return newstruct cs2func_script_1000_struct(40, 1660, "Ruby necklace", "You can now craft " + "<col=000080>" + "ruby necklaces" + "</col>" + ".");
+				case 26:
+					return newstruct cs2func_script_1000_struct(42, 11085, "Members: Ruby bracelet", "Members can now craft " + "<col=000080>" + "ruby bracelets" + "</col>" + ".");
+				case 27:
+					return newstruct cs2func_script_1000_struct(43, 1601, "Cut diamond", "You can now cut " + "<col=000080>" + "diamonds" + "</col>" + ".");
+				case 28:
+					return newstruct cs2func_script_1000_struct(43, 1643, "Diamond ring", "You can now craft " + "<col=000080>" + "diamond rings" + "</col>" + ".");
+				case 29:
+					return newstruct cs2func_script_1000_struct(50, 1698, "Ruby amulet", "You can now craft " + "<col=000080>" + "ruby amulets" + "</col>" + ".");
+				case 30:
+					return newstruct cs2func_script_1000_struct(55, 1615, "Members: Cut dragonstone", "Members can now cut " + "<col=000080>" + "dragonstones" + "</col>" + ".");
+				case 31:
+					return newstruct cs2func_script_1000_struct(55, 1645, "Members: Dragonstone ring", "Members can now craft " + "<col=000080>" + "dragonstone rings" + "</col>" + ".");
+				case 32:
+					return newstruct cs2func_script_1000_struct(56, 1662, "Diamond necklace", "You can now craft " + "<col=000080>" + "diamond necklaces" + "</col>" + ".");
+				case 33:
+					return newstruct cs2func_script_1000_struct(58, 11092, "Members: Diamond bracelet", "Members can now craft " + "<col=000080>" + "diamond bracelets" + "</col>" + ".");
+				case 34:
+					return newstruct cs2func_script_1000_struct(67, 6573, "Members: Cut onyx", "Members can now cut " + "<col=000080>" + "onyx" + "</col>" + ".");
+				case 35:
+					return newstruct cs2func_script_1000_struct(67, 6575, "Members: Onyx ring", "Members can now craft " + "<col=000080>" + "onyx rings" + "</col>" + ".");
+				case 36:
+					return newstruct cs2func_script_1000_struct(70, 1700, "Diamond amulet", "You can now craft " + "<col=000080>" + "diamond amulets" + "</col>" + ".");
+				case 37:
+					return newstruct cs2func_script_1000_struct(72, 1664, "Members: Dragonstone necklace", "Members can now craft " + "<col=000080>" + "dragonstone necklaces" + "</col>" + ".");
+				case 38:
+					return newstruct cs2func_script_1000_struct(74, 11115, "Members: Dragonstone bracelet", "Members can now craft " + "<col=000080>" + "dragonstone bracelets" + "</col>" + ".");
+				case 39:
+					return newstruct cs2func_script_1000_struct(75, 13281, "Members: Ring of slaying" + "<br>" + " (after Smoking Kills)", "Members can now craft " + "<col=000080>" + "rings of slaying" + "</col>" + " (after Smoking Kills).");
+				case 40:
+					return newstruct cs2func_script_1000_struct(80, 1702, "Members: Dragonstone amulet", "Members can now craft " + "<col=000080>" + "dragonstone amulets" + "</col>" + ".");
+				case 41:
+					return newstruct cs2func_script_1000_struct(82, 6577, "Members: Onyx necklace", "Members can now craft " + "<col=000080>" + "onyx necklaces" + "</col>" + ".");
+				case 42:
+					return newstruct cs2func_script_1000_struct(84, 11130, "Members: Onyx bracelet", "Members can now craft " + "<col=000080>" + "onyx bracelets" + "</col>" + ".");
+				case 43:
+					return newstruct cs2func_script_1000_struct(90, 6581, "Members: Onyx amulet", "Members can now craft " + "<col=000080>" + "onyx amulets" + "</col>" + ".");
+				case 44:
+					return newstruct cs2func_script_1000_struct(91, 21526, "Members: Shark's tooth necklace", "Members can now craft " + "<col=000080>" + "shark's tooth necklaces" + "</col>" + ".");
+			}
+			break;
+			case 6:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1000_struct(18, 2961, "Members: Silver sickle", "Members can now craft silver sickles.");
+				case 1:
+					return newstruct cs2func_script_1000_struct(21, 9145, "Silver crossbow bolt", "Members can now craft " + "<col=000080>" + "silver crossbow bolts" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1000_struct(54, 1395, "Members: Water battlestaff", "Members can now craft " + "<col=000080>" + "water battlestaves" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1000_struct(58, 1399, "Members: Earth battlestaff", "Members can now craft " + "<col=000080>" + "earth battlestaves" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1000_struct(62, 1393, "Members: Fire battlestaff", "Members can now craft " + "<col=000080>" + "fire battlestaves" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1000_struct(66, 1397, "Members: Air battlestaff", "Members can now craft " + "<col=000080>" + "air battlestaves" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1000_struct(77, 21777, "Members: Armadyl battlestaff" + "<br>" + " (after Ritual of the Mahjarrat)", "Members can now craft " + "<col=000080>" + "Armadyl battlestaves" + "</col>" + " (after Ritual of the Mahjarrat).");
+				case 7:
+					return newstruct cs2func_script_1000_struct(85, 21490, "Members: Skeletal and Necromancer Staves", "Members can now use shade skulls to create " + "<col=000080>" + "skeletal" + "</col>" + " and " + "<col=000080>" + "necromancer staves" + "</col>" + " from Shades of Mort'ton.");
+			}
+			break;
+			case 7:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1000_struct(-1, 7620, "To start Firemaking in the manner of the barbarians, talk to Otto Godblessed when you have level 35 Firemaking or higher. Pyre ships can only be constructed and burnt where the ground is charred around the lake next to Otto's hut.", "");
+				case 1:
+					return newstruct cs2func_script_1000_struct(11, 1511, "Members: Wood" + "<br>" + " (with 11 Firemaking)", "Members versed in the art of barbarian firemaking now have the Crafting level required to make " + "<col=000080>" + "wood pyre ships" + "</col>" + ". (They also need level 11 Firemaking.)");
+				case 2:
+					return newstruct cs2func_script_1000_struct(11, 2862, "Members: Achey" + "<br>" + " (with 11 Firemaking)", "Members versed in the art of barbarian firemaking now have the Crafting level required to make " + "<col=000080>" + "achey log pyre ships" + "</col>" + ". (They also need level 11 Firemaking.)");
+				case 3:
+					return newstruct cs2func_script_1000_struct(25, 1521, "Members: Oak" + "<br>" + " (with 25 Firemaking)", "Members versed in the art of barbarian firemaking now have the Crafting level required to make " + "<col=000080>" + "oak pyre ships" + "</col>" + ". (They also need level 25 Firemaking.)");
+				case 4:
+					return newstruct cs2func_script_1000_struct(40, 1519, "Members: Willow" + "<br>" + " (with 40 Firemaking)", "Members versed in the art of barbarian firemaking now have the Crafting level required to make " + "<col=000080>" + "willow pyre ships" + "</col>" + ". (They also need level 40 Firemaking.)");
+				case 5:
+					return newstruct cs2func_script_1000_struct(45, 6333, "Members: Teak" + "<br>" + " (with 45 Firemaking)", "Members versed in the art of barbarian firemaking now have the Crafting level required to make " + "<col=000080>" + "teak pyre ships" + "</col>" + ". (They also need level 45 Firemaking.)");
+				case 6:
+					return newstruct cs2func_script_1000_struct(52, 10810, "Members: Arctic pine" + "<br>" + " (with 52 Firemaking)", "Members versed in the art of barbarian firemaking now have the Crafting level required to make " + "<col=000080>" + "arctic pine pyre ships" + "</col>" + ". (They also need level 52 Firemaking.)");
+				case 7:
+					return newstruct cs2func_script_1000_struct(55, 1517, "Members: Maple" + "<br>" + " (with 55 Firemaking)", "Members versed in the art of barbarian firemaking now have the Crafting level required to make " + "<col=000080>" + "maple pyre ships" + "</col>" + ". (They also need level 55 Firemaking.)");
+				case 8:
+					return newstruct cs2func_script_1000_struct(60, 6332, "Members: Mahogany" + "<br>" + " (with 60 Firemaking)", "Members versed in the art of barbarian firemaking now have the Crafting level required to make " + "<col=000080>" + "mahogany pyre ships" + "</col>" + ". (They also need level 60 Firemaking.)");
+				case 9:
+					return newstruct cs2func_script_1000_struct(68, 12581, "Members: Eucalyptus" + "<br>" + " (with 68 Firemaking)", "Members versed in the art of barbarian firemaking now have the Crafting level required to make " + "<col=000080>" + "eucalyptus pyre ships" + "</col>" + ". (They also need level 68 Firemaking.)");
+				case 10:
+					return newstruct cs2func_script_1000_struct(70, 1515, "Members: Yew" + "<br>" + " (with 70 Firemaking)", "Members versed in the art of barbarian firemaking now have the Crafting level required to make " + "<col=000080>" + "yew pyre ships" + "</col>" + ". (They also need level 70 Firemaking.)");
+				case 11:
+					return newstruct cs2func_script_1000_struct(85, 1513, "Members: Magic" + "<br>" + " (with 85 Firemaking)", "Members versed in the art of barbarian firemaking now have the Crafting level required to make " + "<col=000080>" + "magic log pyre ships" + "</col>" + ". (They also need level 85 Firemaking.)");
+			}
+			break;
+			case 8:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1000_struct(8, 8792, "Members: Clockwork mechanism", "Members can now craft " + "<col=000080>" + "clockwork mechanisms" + "</col>" + " in the workshop of their player-owned house.");
+				case 1:
+					return newstruct cs2func_script_1000_struct(10, 2522, "Members: Toy horsey", "Members can now craft " + "<col=000080>" + "toy horseys" + "</col>" + " in the workshop of their player-owned house.");
+				case 2:
+					return newstruct cs2func_script_1000_struct(13, 7761, "Members: Clockwork soldier", "Members can now craft " + "<col=000080>" + "clockwork soldiers" + "</col>" + " in the workshop of their player-owned house.");
+				case 3:
+					return newstruct cs2func_script_1000_struct(18, 7765, "Members: Clockwork doll", "Members can now craft " + "<col=000080>" + "clockwork dolls" + "</col>" + " in the workshop of their player-owned house.");
+				case 4:
+					return newstruct cs2func_script_1000_struct(20, 4201, "Members: Conductor" + "<br>" + " (after starting Creature of Fenkenstrain)", "Members can now make " + "<col=000080>" + "lightning conductors" + "</col>" + " (after starting Creature of Fenkenstrain).");
+				case 5:
+					return newstruct cs2func_script_1000_struct(23, 2574, "Members: Sextant", "Members can now craft " + "<col=000080>" + "sextants" + "</col>" + " in the workshop of their player-owned house.");
+				case 6:
+					return newstruct cs2func_script_1000_struct(25, 18338, "Gem bag" + "<br>" + " (with 25 Dungeoneering)", "You can now use " + "<col=000080>" + "gem bags" + "</col>" + ". (You also need level 25 Dungeoneering.)");
+				case 7:
+					return newstruct cs2func_script_1000_struct(28, 2575, "Members: Watch", "Members can now craft " + "<col=000080>" + "watches" + "</col>" + " in the workshop of their player-owned house.");
+				case 8:
+					return newstruct cs2func_script_1000_struct(30, 10595, "Members: Clockwork penguins", "Members can now craft " + "<col=000080>" + "clockwork penguins" + "</col>" + " in the workshop of their player-owned house.");
+				case 9:
+					return newstruct cs2func_script_1000_struct(33, 7769, "Members: Clockwork mouse", "Members can now craft " + "<col=000080>" + "clockwork mice" + "</col>" + " in the workshop of their player-owned house.");
+				case 10:
+					return newstruct cs2func_script_1000_struct(43, 13246, "Members: Pillar" + "<br>" + " (after starting TokTz-Ket-Dill)", "Members can now make " + "<col=000080>" + "pillars" + "</col>" + " (after starting TokTz-Ket-Dill).");
+				case 11:
+					return newstruct cs2func_script_1000_struct(85, 7771, "Members: Clockwork cat", "Members can now craft " + "<col=000080>" + "clockwork cats" + "</col>" + " in the workshop of their player-owned house.");
+			}
+			break;
+			case 9:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1000_struct(60, 20704, "Members: access to the Livid Farm (with 70 Magic, 60 Agility, 60 Farming, 50 Construction and Lunar Diplomacy)", "Members can access " + "<col=000080>" + "Livid Farm" + "</col>" + " (with 70 Magic, 60 Agility, 60 Farming, 50 Construction and Lunar Diplomacy).");
+				case 1:
+					return newstruct cs2func_script_1000_struct(91, 18778, "Members: Starved ancient effigies", "Members can now investigate " + "<col=000080>" + "starved ancient effigies" + "</col>" + " using their knowledge of Crafting.");
+				case 2:
+					return newstruct cs2func_script_1000_struct(93, 18779, "Members: Nourished ancient effigies", "Members can now investigate " + "<col=000080>" + "nourished ancient effigies" + "</col>" + " using their knowledge of Crafting.");
+				case 3:
+					return newstruct cs2func_script_1000_struct(95, 18780, "Members: Sated ancient effigies", "Members can now investigate " + "<col=000080>" + "sated ancient effigies" + "</col>" + " using their knowledge of Crafting.");
+				case 4:
+					return newstruct cs2func_script_1000_struct(97, 18781, "Members: Gorged ancient effigies", "Members can now investigate " + "<col=000080>" + "gorged ancient effigies" + "</col>" + " using their knowledge of Crafting.");
+			}
+			break;
+			case 10:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1000_struct(1, 14152, "Members: Stealing Creation - class 1 butterfly net", "Members can now craft " + "<col=000080>" + "class 1 butterfly nets" + "</col>" + " in Stealing Creation.");
+				case 1:
+					return newstruct cs2func_script_1000_struct(1, 14142, "Members: Stealing Creation - class 1 harpoon", "Members can now craft " + "<col=000080>" + "class 1 harpoons" + "</col>" + " in Stealing Creation.");
+				case 2:
+					return newstruct cs2func_script_1000_struct(1, 14377, "Members: Stealing Creation - class 1 staff", "Members can now craft " + "<col=000080>" + "class 1 staves" + "</col>" + " in Stealing Creation.");
+				case 3:
+					return newstruct cs2func_script_1000_struct(1, 14391, "Members: Stealing Creation - class 1 leather body", "Members can now craft " + "<col=000080>" + "class 1 leather bodies" + "</col>" + " in Stealing Creation.");
+				case 4:
+					return newstruct cs2func_script_1000_struct(1, 14401, "Members: Stealing Creation - class 1 chaps", "Members can now craft " + "<col=000080>" + "class 1 chaps" + "</col>" + " in Stealing Creation.");
+				case 5:
+					return newstruct cs2func_script_1000_struct(1, 14411, "Members: Stealing Creation - class 1 coif", "Members can now craft " + "<col=000080>" + "class 1 coifs" + "</col>" + " in Stealing Creation.");
+				case 6:
+					return newstruct cs2func_script_1000_struct(1, 14317, "Members: Stealing Creation - class 1 robe top", "Members can now craft " + "<col=000080>" + "class 1 robe tops" + "</col>" + " in Stealing Creation.");
+				case 7:
+					return newstruct cs2func_script_1000_struct(1, 14327, "Members: Stealing Creation - class 1 robe bottom", "Members can now craft " + "<col=000080>" + "class 1 robe bottoms" + "</col>" + " in Stealing Creation.");
+				case 8:
+					return newstruct cs2func_script_1000_struct(1, 14337, "Members: Stealing Creation - class 1 hat", "Members can now craft " + "<col=000080>" + "class 1 hats" + "</col>" + " in Stealing Creation.");
+				case 9:
+					return newstruct cs2func_script_1000_struct(20, 14154, "Members: Stealing Creation - class 2 butterfly net", "Members can now craft " + "<col=000080>" + "class 2 butterfly nets" + "</col>" + " in Stealing Creation.");
+				case 10:
+					return newstruct cs2func_script_1000_struct(20, 14144, "Members: Stealing Creation - class 2 harpoon", "Members can now craft " + "<col=000080>" + "class 2 harpoons" + "</col>" + " in Stealing Creation.");
+				case 11:
+					return newstruct cs2func_script_1000_struct(20, 14379, "Members: Stealing Creation - class 2 staff", "Members can now craft " + "<col=000080>" + "class 2 staves" + "</col>" + " in Stealing Creation.");
+				case 12:
+					return newstruct cs2func_script_1000_struct(20, 14393, "Members: Stealing Creation - class 2 leather body", "Members can now craft " + "<col=000080>" + "class 2 leather bodies" + "</col>" + " in Stealing Creation.");
+				case 13:
+					return newstruct cs2func_script_1000_struct(20, 14403, "Members: Stealing Creation - class 2 chaps", "Members can now craft " + "<col=000080>" + "class 2 chaps" + "</col>" + " in Stealing Creation.");
+				case 14:
+					return newstruct cs2func_script_1000_struct(20, 14413, "Members: Stealing Creation - class 2 coif", "Members can now craft " + "<col=000080>" + "class 2 coifs" + "</col>" + " in Stealing Creation.");
+				case 15:
+					return newstruct cs2func_script_1000_struct(20, 14319, "Members: Stealing Creation - class 2 robe top", "Members can now craft " + "<col=000080>" + "class 2 robe tops" + "</col>" + " in Stealing Creation.");
+				case 16:
+					return newstruct cs2func_script_1000_struct(20, 14329, "Members: Stealing Creation - class 2 robe bottom", "Members can now craft " + "<col=000080>" + "class 2 robe bottoms" + "</col>" + " in Stealing Creation.");
+				case 17:
+					return newstruct cs2func_script_1000_struct(20, 14339, "Members: Stealing Creation - class 2 hat", "Members can now craft " + "<col=000080>" + "class 2 hats" + "</col>" + " in Stealing Creation.");
+				case 18:
+					return newstruct cs2func_script_1000_struct(40, 14156, "Members: Stealing Creation - class 3 butterfly net", "Members can now craft " + "<col=000080>" + "class 3 butterfly nets" + "</col>" + " in Stealing Creation.");
+				case 19:
+					return newstruct cs2func_script_1000_struct(40, 14146, "Members: Stealing Creation - class 3 harpoon", "Members can now craft " + "<col=000080>" + "class 3 harpoons" + "</col>" + " in Stealing Creation.");
+				case 20:
+					return newstruct cs2func_script_1000_struct(40, 14381, "Members: Stealing Creation - class 3 staff", "Members can now craft " + "<col=000080>" + "class 3 staves" + "</col>" + " in Stealing Creation.");
+				case 21:
+					return newstruct cs2func_script_1000_struct(40, 14395, "Members: Stealing Creation - class 3 leather body", "Members can now craft " + "<col=000080>" + "class 3 leather bodies" + "</col>" + " in Stealing Creation.");
+				case 22:
+					return newstruct cs2func_script_1000_struct(40, 14405, "Members: Stealing Creation - class 3 chaps", "Members can now craft " + "<col=000080>" + "class 3 chaps" + "</col>" + " in Stealing Creation.");
+				case 23:
+					return newstruct cs2func_script_1000_struct(40, 14415, "Members: Stealing Creation - class 3 coif", "Members can now craft " + "<col=000080>" + "class 3 coifs" + "</col>" + " in Stealing Creation.");
+				case 24:
+					return newstruct cs2func_script_1000_struct(40, 14321, "Members: Stealing Creation - class 3 robe top", "Members can now craft " + "<col=000080>" + "class 3 robe tops" + "</col>" + " in Stealing Creation.");
+				case 25:
+					return newstruct cs2func_script_1000_struct(40, 14331, "Members: Stealing Creation - class 3 robe bottom", "Members can now craft " + "<col=000080>" + "class 3 robe bottoms" + "</col>" + " in Stealing Creation.");
+				case 26:
+					return newstruct cs2func_script_1000_struct(40, 14341, "Members: Stealing Creation - class 3 hat", "Members can now craft " + "<col=000080>" + "class 3 hats" + "</col>" + " in Stealing Creation.");
+				case 27:
+					return newstruct cs2func_script_1000_struct(52, 14619, "Members: Phoenix lair - funeral pyre", "Members can now craft the phoenix's " + "<col=000080>" + "funeral pyre" + "</col>" + " in the phoenix lair.");
+				case 28:
+					return newstruct cs2func_script_1000_struct(60, 14158, "Members: Stealing Creation - class 4 butterfly net", "Members can now craft " + "<col=000080>" + "class 4 butterfly nets" + "</col>" + " in Stealing Creation.");
+				case 29:
+					return newstruct cs2func_script_1000_struct(60, 14148, "Members: Stealing Creation - class 4 harpoon", "Members can now craft " + "<col=000080>" + "class 4 harpoons" + "</col>" + " in Stealing Creation.");
+				case 30:
+					return newstruct cs2func_script_1000_struct(60, 14383, "Members: Stealing Creation - class 4 staff", "Members can now craft " + "<col=000080>" + "class 4 staves" + "</col>" + " in Stealing Creation.");
+				case 31:
+					return newstruct cs2func_script_1000_struct(60, 14397, "Members: Stealing Creation - class 4 leather body", "Members can now craft " + "<col=000080>" + "class 4 leather bodies" + "</col>" + " in Stealing Creation.");
+				case 32:
+					return newstruct cs2func_script_1000_struct(60, 14407, "Members: Stealing Creation - class 4 chaps", "Members can now craft " + "<col=000080>" + "class 4 chaps" + "</col>" + " in Stealing Creation.");
+				case 33:
+					return newstruct cs2func_script_1000_struct(60, 14417, "Members: Stealing Creation - class 4 coif", "Members can now craft " + "<col=000080>" + "class 4 coifs" + "</col>" + " in Stealing Creation.");
+				case 34:
+					return newstruct cs2func_script_1000_struct(60, 14323, "Members: Stealing Creation - class 4 robe top", "Members can now craft " + "<col=000080>" + "class 4 robe tops" + "</col>" + " in Stealing Creation.");
+				case 35:
+					return newstruct cs2func_script_1000_struct(60, 14333, "Members: Stealing Creation - class 4 robe bottom", "Members can now craft " + "<col=000080>" + "class 4 robe bottoms" + "</col>" + " in Stealing Creation.");
+				case 36:
+					return newstruct cs2func_script_1000_struct(60, 14343, "Members: Stealing Creation - class 4 hat", "Members can now craft " + "<col=000080>" + "class 4 hats" + "</col>" + " in Stealing Creation.");
+				case 37:
+					return newstruct cs2func_script_1000_struct(80, 14160, "Members: Stealing Creation - class 5 butterfly net", "Members can now craft " + "<col=000080>" + "class 5 butterfly nets" + "</col>" + " in Stealing Creation.");
+				case 38:
+					return newstruct cs2func_script_1000_struct(80, 14150, "Members: Stealing Creation - class 5 harpoon", "Members can now craft " + "<col=000080>" + "class 5 harpoons" + "</col>" + " in Stealing Creation.");
+				case 39:
+					return newstruct cs2func_script_1000_struct(80, 14385, "Members: Stealing Creation - class 5 staff", "Members can now craft " + "<col=000080>" + "class 5 staves" + "</col>" + " in Stealing Creation.");
+				case 40:
+					return newstruct cs2func_script_1000_struct(80, 14399, "Members: Stealing Creation - class 5 leather body", "Members can now craft " + "<col=000080>" + "class 5 leather bodies" + "</col>" + " in Stealing Creation.");
+				case 41:
+					return newstruct cs2func_script_1000_struct(80, 14409, "Members: Stealing Creation - class 5 chaps", "Members can now craft " + "<col=000080>" + "class 5 chaps" + "</col>" + " in Stealing Creation.");
+				case 42:
+					return newstruct cs2func_script_1000_struct(80, 14419, "Members: Stealing Creation - class 5 coif", "Members can now craft " + "<col=000080>" + "class 5 coifs" + "</col>" + " in Stealing Creation.");
+				case 43:
+					return newstruct cs2func_script_1000_struct(80, 14325, "Members: Stealing Creation - class 5 robe top", "Members can now craft " + "<col=000080>" + "class 5 robe tops" + "</col>" + " in Stealing Creation.");
+				case 44:
+					return newstruct cs2func_script_1000_struct(80, 14335, "Members: Stealing Creation - class 5 robe bottom", "Members can now craft " + "<col=000080>" + "class 5 robe bottoms" + "</col>" + " in Stealing Creation.");
+				case 45:
+					return newstruct cs2func_script_1000_struct(80, 14345, "Members: Stealing Creation - class 5 hat", "Members can now craft " + "<col=000080>" + "class 5 hats" + "</col>" + " in Stealing Creation.");
+			}
+			break;
+			case 11:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1000_struct(-1, 15707, "Dungeoneering skill tasks (Levels 1-99)" + "<br>" + "As your Crafting level increases, you will be able to attempt higher-level crafting tasks within Daemonheim. You will also be more likely to succeed when attempting crafting tasks within Daemonheim.", "");
+				case 1:
+					return newstruct cs2func_script_1000_struct(1, 17151, "Salve gloves (Tier 1)", "You can now craft " + "<col=000080>" + "salve gloves" + "</col>" + " within Daemonheim.");
+				case 2:
+					return newstruct cs2func_script_1000_struct(1, 17195, "Protoleather vambraces (Tier 1)", "You can now craft " + "<col=000080>" + "protoleather vambraces" + "</col>" + " within Daemonheim.");
+				case 3:
+					return newstruct cs2func_script_1000_struct(2, 16911, "Salve shoes (Tier 1)", "You can now craft " + "<col=000080>" + "salve shoes" + "</col>" + " within Daemonheim.");
+				case 4:
+					return newstruct cs2func_script_1000_struct(3, 17297, "Protoleather boots (Tier 1)", "You can now craft " + "<col=000080>" + "protoleather boots" + "</col>" + " within Daemonheim.");
+				case 5:
+					return newstruct cs2func_script_1000_struct(4, 16735, "Salve hood (Tier 1)", "You can now craft " + "<col=000080>" + "salve hoods" + "</col>" + " within Daemonheim.");
+				case 6:
+					return newstruct cs2func_script_1000_struct(5, 17041, "Protoleather coif (Tier 1)", "You can now craft " + "<col=000080>" + "protoleather coifs" + "</col>" + " within Daemonheim.");
+				case 7:
+					return newstruct cs2func_script_1000_struct(6, 16845, "Salve robe bottom (Tier 1)", "You can now craft " + "<col=000080>" + "salve robe bottoms" + "</col>" + " within Daemonheim.");
+				case 8:
+					return newstruct cs2func_script_1000_struct(7, 17319, "Protoleather chaps (Tier 1)", "You can now craft " + "<col=000080>" + "protoleather chaps" + "</col>" + " within Daemonheim.");
+				case 9:
+					return newstruct cs2func_script_1000_struct(8, 17217, "Salve robe top (Tier 1)", "You can now craft " + "<col=000080>" + "salve robe tops" + "</col>" + " within Daemonheim.");
+				case 10:
+					return newstruct cs2func_script_1000_struct(9, 17173, "Protoleather body (Tier 1)", "You can now craft " + "<col=000080>" + "protoleather bodies" + "</col>" + " within Daemonheim.");
+				case 11:
+					return newstruct cs2func_script_1000_struct(10, 17153, "Wildercress gloves (Tier 2)", "You can now craft " + "<col=000080>" + "wildercress gloves" + "</col>" + " within Daemonheim.");
+				case 12:
+					return newstruct cs2func_script_1000_struct(11, 17197, "Subleather vambraces (Tier 2)", "You can now craft " + "<col=000080>" + "subleather vambraces" + "</col>" + " within Daemonheim.");
+				case 13:
+					return newstruct cs2func_script_1000_struct(12, 16913, "Wildercress shoes (Tier 2)", "You can now craft " + "<col=000080>" + "wildercress shoes" + "</col>" + " within Daemonheim.");
+				case 14:
+					return newstruct cs2func_script_1000_struct(13, 17299, "Subleather boots (Tier 2)", "You can now craft " + "<col=000080>" + "subleather boots" + "</col>" + " within Daemonheim.");
+				case 15:
+					return newstruct cs2func_script_1000_struct(14, 16737, "Wildercress hood (Tier 2)", "You can now craft " + "<col=000080>" + "wildercress hoods" + "</col>" + " within Daemonheim.");
+				case 16:
+					return newstruct cs2func_script_1000_struct(15, 17043, "Subleather coif (Tier 2)", "You can now craft " + "<col=000080>" + "subleather coifs" + "</col>" + " within Daemonheim.");
+				case 17:
+					return newstruct cs2func_script_1000_struct(16, 16847, "Wildercress robe bottom (Tier 2)", "You can now craft " + "<col=000080>" + "wildercress robe bottoms" + "</col>" + " within Daemonheim.");
+				case 18:
+					return newstruct cs2func_script_1000_struct(17, 17321, "Subleather chaps (Tier 2)", "You can now craft " + "<col=000080>" + "subleather chaps" + "</col>" + " within Daemonheim.");
+				case 19:
+					return newstruct cs2func_script_1000_struct(18, 17219, "Wildercress robe top (Tier 2)", "You can now craft " + "<col=000080>" + "wildercress robe tops" + "</col>" + " within Daemonheim.");
+				case 20:
+					return newstruct cs2func_script_1000_struct(19, 17175, "Subleather body (Tier 2)", "You can now craft " + "<col=000080>" + "subleather bodies" + "</col>" + " within Daemonheim.");
+				case 21:
+					return newstruct cs2func_script_1000_struct(20, 17155, "Blightleaf gloves (Tier 3)", "You can now craft " + "<col=000080>" + "blightleaf gloves" + "</col>" + " within Daemonheim.");
+				case 22:
+					return newstruct cs2func_script_1000_struct(21, 17199, "Paraleather vambraces (Tier 3)", "You can now craft " + "<col=000080>" + "paraleather vambraces" + "</col>" + " within Daemonheim.");
+				case 23:
+					return newstruct cs2func_script_1000_struct(22, 16915, "Blightleaf shoes (Tier 3)", "You can now craft " + "<col=000080>" + "blightleaf shoes" + "</col>" + " within Daemonheim.");
+				case 24:
+					return newstruct cs2func_script_1000_struct(23, 17301, "Paraleather boots (Tier 3)", "You can now craft " + "<col=000080>" + "paraleather boots" + "</col>" + " within Daemonheim.");
+				case 25:
+					return newstruct cs2func_script_1000_struct(24, 16739, "Blightleaf hood (Tier 3)", "You can now craft " + "<col=000080>" + "blightleaf hoods" + "</col>" + " within Daemonheim.");
+				case 26:
+					return newstruct cs2func_script_1000_struct(25, 17045, "Paraleather coif (Tier 3)", "You can now craft " + "<col=000080>" + "paraleather coifs" + "</col>" + " within Daemonheim.");
+				case 27:
+					return newstruct cs2func_script_1000_struct(26, 16849, "Blightleaf robe bottom (Tier 3)", "You can now craft " + "<col=000080>" + "blightleaf robe bottoms" + "</col>" + " within Daemonheim.");
+				case 28:
+					return newstruct cs2func_script_1000_struct(27, 17323, "Paraleather chaps (Tier 3)", "You can now craft " + "<col=000080>" + "paraleather chaps" + "</col>" + " within Daemonheim.");
+				case 29:
+					return newstruct cs2func_script_1000_struct(28, 17221, "Blightleaf robe top (Tier 3)", "You can now craft " + "<col=000080>" + "blightleaf robe tops" + "</col>" + " within Daemonheim.");
+				case 30:
+					return newstruct cs2func_script_1000_struct(29, 17177, "Paraleather body (Tier 3)", "You can now craft " + "<col=000080>" + "paraleather bodies" + "</col>" + " within Daemonheim.");
+				case 31:
+					return newstruct cs2func_script_1000_struct(30, 17157, "Roseblood gloves (Tier 4)", "You can now craft " + "<col=000080>" + "roseblood gloves" + "</col>" + " within Daemonheim.");
+				case 32:
+					return newstruct cs2func_script_1000_struct(31, 17201, "Archleather vambraces (Tier 4)", "You can now craft " + "<col=000080>" + "archleather vambraces" + "</col>" + " within Daemonheim.");
+				case 33:
+					return newstruct cs2func_script_1000_struct(32, 16917, "Roseblood shoes (Tier 4)", "You can now craft " + "<col=000080>" + "roseblood shoes" + "</col>" + " within Daemonheim.");
+				case 34:
+					return newstruct cs2func_script_1000_struct(33, 17303, "Archleather boots (Tier 4)", "You can now craft " + "<col=000080>" + "archleather boots" + "</col>" + " within Daemonheim.");
+				case 35:
+					return newstruct cs2func_script_1000_struct(34, 16741, "Roseblood hood (Tier 4)", "You can now craft " + "<col=000080>" + "roseblood hoods" + "</col>" + " within Daemonheim.");
+				case 36:
+					return newstruct cs2func_script_1000_struct(35, 17047, "Archleather coif (Tier 4)", "You can now craft " + "<col=000080>" + "archleather coifs" + "</col>" + " within Daemonheim.");
+				case 37:
+					return newstruct cs2func_script_1000_struct(36, 16851, "Roseblood robe bottom (Tier 4)", "You can now craft " + "<col=000080>" + "roseblood robe bottoms" + "</col>" + " within Daemonheim.");
+				case 38:
+					return newstruct cs2func_script_1000_struct(37, 17325, "Archleather chaps (Tier 4)", "You can now craft " + "<col=000080>" + "archleather chaps" + "</col>" + " within Daemonheim.");
+				case 39:
+					return newstruct cs2func_script_1000_struct(38, 17223, "Roseblood robe top (Tier 4)", "You can now craft " + "<col=000080>" + "roseblood robe tops" + "</col>" + " within Daemonheim.");
+				case 40:
+					return newstruct cs2func_script_1000_struct(39, 17179, "Archleather body (Tier 4)", "You can now craft " + "<col=000080>" + "archleather bodies" + "</col>" + " within Daemonheim.");
+				case 41:
+					return newstruct cs2func_script_1000_struct(40, 17159, "Bryll gloves (Tier 5)", "You can now craft " + "<col=000080>" + "bryll gloves" + "</col>" + " within Daemonheim.");
+				case 42:
+					return newstruct cs2func_script_1000_struct(41, 17203, "Dromoleather vambraces (Tier 5)", "You can now craft " + "<col=000080>" + "dromoleather vambraces" + "</col>" + " within Daemonheim.");
+				case 43:
+					return newstruct cs2func_script_1000_struct(42, 16919, "Bryll shoes (Tier 5)", "You can now craft " + "<col=000080>" + "bryll shoes" + "</col>" + " within Daemonheim.");
+				case 44:
+					return newstruct cs2func_script_1000_struct(43, 17305, "Dromoleather boots (Tier 5)", "You can now craft " + "<col=000080>" + "dromoleather boots" + "</col>" + " within Daemonheim.");
+				case 45:
+					return newstruct cs2func_script_1000_struct(44, 16743, "Bryll hood (Tier 5)", "You can now craft " + "<col=000080>" + "bryll hoods" + "</col>" + " within Daemonheim.");
+				case 46:
+					return newstruct cs2func_script_1000_struct(45, 17049, "Dromoleather coif (Tier 5)", "You can now craft " + "<col=000080>" + "dromoleather coifs" + "</col>" + " within Daemonheim.");
+				case 47:
+					return newstruct cs2func_script_1000_struct(46, 16853, "Bryll robe bottom (Tier 5)", "You can now craft " + "<col=000080>" + "bryll robe bottoms" + "</col>" + " within Daemonheim.");
+				case 48:
+					return newstruct cs2func_script_1000_struct(47, 17327, "Dromoleather chaps (Tier 5)", "You can now craft " + "<col=000080>" + "dromoleather chaps" + "</col>" + " within Daemonheim.");
+				case 49:
+					return newstruct cs2func_script_1000_struct(48, 17225, "Bryll robe top (Tier 5)", "You can now craft " + "<col=000080>" + "bryll robe tops" + "</col>" + " within Daemonheim.");
+				case 50:
+					return newstruct cs2func_script_1000_struct(49, 17181, "Dromoleather body (Tier 5)", "You can now craft " + "<col=000080>" + "dromoleather bodies" + "</col>" + " within Daemonheim.");
+				case 51:
+					return newstruct cs2func_script_1000_struct(50, 17161, "Members: Duskweed gloves (Tier 6)", "Members can now craft " + "<col=000080>" + "duskweed gloves" + "</col>" + " within Daemonheim.");
+				case 52:
+					return newstruct cs2func_script_1000_struct(51, 17205, "Members: Spinoleather vambraces (Tier 6)", "Members can now craft " + "<col=000080>" + "spinoleather vambraces" + "</col>" + " within Daemonheim.");
+				case 53:
+					return newstruct cs2func_script_1000_struct(52, 16921, "Members: Duskweed shoes (Tier 6)", "Members can now craft " + "<col=000080>" + "duskweed shoes" + "</col>" + " within Daemonheim.");
+				case 54:
+					return newstruct cs2func_script_1000_struct(53, 17307, "Members: Spinoleather boots (Tier 6)", "Members can now craft " + "<col=000080>" + "spinoleather boots" + "</col>" + " within Daemonheim.");
+				case 55:
+					return newstruct cs2func_script_1000_struct(54, 16745, "Members: Duskweed hood (Tier 6)", "Members can now craft " + "<col=000080>" + "duskweed hoods" + "</col>" + " within Daemonheim.");
+				case 56:
+					return newstruct cs2func_script_1000_struct(55, 17051, "Members: Spinoleather coif (Tier 6)", "Members can now craft " + "<col=000080>" + "spinoleather coifs" + "</col>" + " within Daemonheim.");
+				case 57:
+					return newstruct cs2func_script_1000_struct(56, 16855, "Members: Duskweed robe bottom (Tier 6)", "Members can now craft " + "<col=000080>" + "duskweed robe bottoms" + "</col>" + " within Daemonheim.");
+				case 58:
+					return newstruct cs2func_script_1000_struct(57, 17329, "Members: Spinoleather chaps (Tier 6)", "Members can now craft " + "<col=000080>" + "spinoleather chaps" + "</col>" + " within Daemonheim.");
+				case 59:
+					return newstruct cs2func_script_1000_struct(58, 17227, "Members: Duskweed robe top (Tier 6)", "Members can now craft " + "<col=000080>" + "duskweed robe tops" + "</col>" + " within Daemonheim.");
+				case 60:
+					return newstruct cs2func_script_1000_struct(59, 17183, "Members: Spinoleather body (Tier 6)", "Members can now craft " + "<col=000080>" + "spinoleather bodies" + "</col>" + " within Daemonheim.");
+				case 61:
+					return newstruct cs2func_script_1000_struct(60, 17163, "Members: Soulbell gloves (Tier 7)", "Members can now craft " + "<col=000080>" + "soulbell gloves" + "</col>" + " within Daemonheim.");
+				case 62:
+					return newstruct cs2func_script_1000_struct(61, 17207, "Members: Gallileather vambraces (Tier 7)", "Members can now craft " + "<col=000080>" + "gallileather vambraces" + "</col>" + " within Daemonheim.");
+				case 63:
+					return newstruct cs2func_script_1000_struct(62, 16923, "Members: Soulbell shoes (Tier 7)", "Members can now craft " + "<col=000080>" + "soulbell shoes" + "</col>" + " within Daemonheim.");
+				case 64:
+					return newstruct cs2func_script_1000_struct(63, 17309, "Members: Gallileather boots (Tier 7)", "Members can now craft " + "<col=000080>" + "gallileather boots" + "</col>" + " within Daemonheim.");
+				case 65:
+					return newstruct cs2func_script_1000_struct(64, 16747, "Members: Soulbell hood (Tier 7)", "Members can now craft " + "<col=000080>" + "soulbell hoods" + "</col>" + " within Daemonheim.");
+				case 66:
+					return newstruct cs2func_script_1000_struct(65, 17053, "Members: Gallileather coif (Tier 7)", "Members can now craft " + "<col=000080>" + "gallileather coifs" + "</col>" + " within Daemonheim.");
+				case 67:
+					return newstruct cs2func_script_1000_struct(66, 16857, "Members: Soulbell robe bottom (Tier 7)", "Members can now craft " + "<col=000080>" + "soulbell robe bottoms" + "</col>" + " within Daemonheim.");
+				case 68:
+					return newstruct cs2func_script_1000_struct(67, 17331, "Members: Gallileather chaps (Tier 7)", "Members can now craft " + "<col=000080>" + "gallileather chaps" + "</col>" + " within Daemonheim.");
+				case 69:
+					return newstruct cs2func_script_1000_struct(68, 17229, "Members: Soulbell robe top (Tier 7)", "Members can now craft " + "<col=000080>" + "soulbell robe tops" + "</col>" + " within Daemonheim.");
+				case 70:
+					return newstruct cs2func_script_1000_struct(69, 17185, "Members: Gallileather body (Tier 7)", "Members can now craft " + "<col=000080>" + "gallileather bodies" + "</col>" + " within Daemonheim.");
+				case 71:
+					return newstruct cs2func_script_1000_struct(70, 17165, "Members: Ectogloves (Tier 8)", "Members can now craft " + "<col=000080>" + "ectogloves" + "</col>" + " within Daemonheim.");
+				case 72:
+					return newstruct cs2func_script_1000_struct(71, 17209, "Members: Stegoleather vambraces (Tier 8)", "Members can now craft " + "<col=000080>" + "stegoleather vambraces" + "</col>" + " within Daemonheim.");
+				case 73:
+					return newstruct cs2func_script_1000_struct(72, 16925, "Members: Ectoshoes (Tier 8)", "Members can now craft " + "<col=000080>" + "ectoshoes" + "</col>" + " within Daemonheim.");
+				case 74:
+					return newstruct cs2func_script_1000_struct(73, 17311, "Members: Stegoleather boots (Tier 8)", "Members can now craft " + "<col=000080>" + "stegoleather boots" + "</col>" + " within Daemonheim.");
+				case 75:
+					return newstruct cs2func_script_1000_struct(74, 16749, "Members: Ectohood (Tier 8)", "Members can now craft " + "<col=000080>" + "ectohoods" + "</col>" + " within Daemonheim.");
+				case 76:
+					return newstruct cs2func_script_1000_struct(75, 17055, "Members: Stegoleather coif (Tier 8)", "Members can now craft " + "<col=000080>" + "stegoleather coifs" + "</col>" + " within Daemonheim.");
+				case 77:
+					return newstruct cs2func_script_1000_struct(76, 16859, "Members: Ectorobe bottom (Tier 8)", "Members can now craft " + "<col=000080>" + "ectorobe bottoms" + "</col>" + " within Daemonheim.");
+				case 78:
+					return newstruct cs2func_script_1000_struct(77, 17333, "Members: Stegoleather chaps (Tier 8)", "Members can now craft " + "<col=000080>" + "stegoleather chaps" + "</col>" + " within Daemonheim.");
+				case 79:
+					return newstruct cs2func_script_1000_struct(78, 17231, "Members: Ectorobe top (Tier 8)", "Members can now craft " + "<col=000080>" + "ectorobe tops" + "</col>" + " within Daemonheim.");
+				case 80:
+					return newstruct cs2func_script_1000_struct(79, 17187, "Members: Stegoleather body (Tier 8)", "Members can now craft " + "<col=000080>" + "stegoleather bodies" + "</col>" + " within Daemonheim.");
+				case 81:
+					return newstruct cs2func_script_1000_struct(80, 17167, "Members: Runic gloves (Tier 9)", "Members can now craft " + "<col=000080>" + "runic gloves" + "</col>" + " within Daemonheim.");
+				case 82:
+					return newstruct cs2func_script_1000_struct(81, 17211, "Members: Megaleather vambraces (Tier 9)", "Members can now craft " + "<col=000080>" + "megaleather vambraces" + "</col>" + " within Daemonheim.");
+				case 83:
+					return newstruct cs2func_script_1000_struct(82, 16927, "Members: Runic shoes (Tier 9)", "Members can now craft " + "<col=000080>" + "runic shoes" + "</col>" + " within Daemonheim.");
+				case 84:
+					return newstruct cs2func_script_1000_struct(83, 17313, "Members: Megaleather boots (Tier 9)", "Members can now craft " + "<col=000080>" + "megaleather boots" + "</col>" + " within Daemonheim.");
+				case 85:
+					return newstruct cs2func_script_1000_struct(84, 16751, "Members: Runic hood (Tier 9)", "Members can now craft " + "<col=000080>" + "runic hoods" + "</col>" + " within Daemonheim.");
+				case 86:
+					return newstruct cs2func_script_1000_struct(85, 17057, "Members: Megaleather coif (Tier 9)", "Members can now craft " + "<col=000080>" + "megaleather coifs" + "</col>" + " within Daemonheim.");
+				case 87:
+					return newstruct cs2func_script_1000_struct(86, 16861, "Members: Runic robe bottom (Tier 9)", "Members can now craft " + "<col=000080>" + "runic robe bottoms" + "</col>" + " within Daemonheim.");
+				case 88:
+					return newstruct cs2func_script_1000_struct(87, 17335, "Members: Megaleather chaps (Tier 9)", "Members can now craft " + "<col=000080>" + "megaleather chaps" + "</col>" + " within Daemonheim.");
+				case 89:
+					return newstruct cs2func_script_1000_struct(88, 17233, "Members: Runic robe top (Tier 9)", "Members can now craft " + "<col=000080>" + "runic robe tops" + "</col>" + " within Daemonheim.");
+				case 90:
+					return newstruct cs2func_script_1000_struct(89, 17189, "Members: Megaleather body (Tier 9)", "Members can now craft " + "<col=000080>" + "megaleather bodies" + "</col>" + " within Daemonheim.");
+				case 91:
+					return newstruct cs2func_script_1000_struct(90, 17169, "Members: Spiritbloom gloves (Tier 10)", "Members can now craft " + "<col=000080>" + "spiritbloom gloves" + "</col>" + " within Daemonheim.");
+				case 92:
+					return newstruct cs2func_script_1000_struct(91, 17213, "Members: Tyrannoleather vambraces (Tier 10)", "Members can now craft " + "<col=000080>" + "tyrannoleather vambraces" + "</col>" + " within Daemonheim.");
+				case 93:
+					return newstruct cs2func_script_1000_struct(92, 16929, "Members: Spiritbloom shoes (Tier 10)", "Members can now craft " + "<col=000080>" + "spiritbloom shoes" + "</col>" + " within Daemonheim.");
+				case 94:
+					return newstruct cs2func_script_1000_struct(93, 17315, "Members: Tyrannoleather boots (Tier 10)", "Members can now craft " + "<col=000080>" + "tyrannoleather boots" + "</col>" + " within Daemonheim.");
+				case 95:
+					return newstruct cs2func_script_1000_struct(94, 16753, "Members: Spiritbloom hood (Tier 10)", "Members can now craft " + "<col=000080>" + "spiritbloom hoods" + "</col>" + " within Daemonheim.");
+				case 96:
+					return newstruct cs2func_script_1000_struct(95, 17059, "Members: Tyrannoleather coif (Tier 10)", "Members can now craft " + "<col=000080>" + "tyrannoleather coifs" + "</col>" + " within Daemonheim.");
+				case 97:
+					return newstruct cs2func_script_1000_struct(96, 16863, "Members: Spiritbloom robe bottom (Tier 10)", "Members can now craft " + "<col=000080>" + "spiritbloom robe bottoms" + "</col>" + " within Daemonheim.");
+				case 98:
+					return newstruct cs2func_script_1000_struct(97, 17337, "Members: Tyrannoleather chaps (Tier 10)", "Members can now craft " + "<col=000080>" + "tyrannoleather chaps" + "</col>" + " within Daemonheim.");
+				case 99:
+					return newstruct cs2func_script_1000_struct(98, 17235, "Members: Spiritbloom robe top (Tier 10)", "Members can now craft " + "<col=000080>" + "spiritbloom robe tops" + "</col>" + " within Daemonheim.");
+				case 100:
+					return newstruct cs2func_script_1000_struct(99, 17191, "Members: Tyrannoleather body (Tier 10)", "Members can now craft " + "<col=000080>" + "tyrannoleather bodies" + "</col>" + " within Daemonheim.");
+			}
+			break;
+			case 12:
+			SWITCH (arg1) {
+				case 0:
+					 GOTO flow_351
+				case 1:
+					 GOTO flow_352
+			}
+			break;
+		flow_351:
+			return newstruct cs2func_script_1000_struct(40, 1757, "Crafting Guild", "You can now enter the " + "<col=000080>" + "Crafting Guild" + "<col=000080>" + ".");
+		flow_352:
+			return newstruct cs2func_script_1000_struct(99, 9780, "Skill mastery", "<col=000080>" + "Congratulations! You are now a master of " + "<col=800000>" + "Crafting" + "<col=000080>" + ". Members can visit the " + "<col=800000>" + "Master Craftsman" + "<col=000080>" + " at the " + "<col=800000>" + "Crafting Guild" + "<col=000080>" + ". He has something special that is only available to true masters of the " + "<col=800000>" + "Crafting" + "<col=000080>" + " skill!");
+	}
+	return newstruct cs2func_script_1000_struct(0, -1, "", "");
+}

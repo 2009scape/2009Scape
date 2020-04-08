@@ -1,0 +1,29 @@
+void script_337(int arg0,int arg1,int arg2) {
+	flow_0:
+		IF (((boolean)arg2)) 
+			GOTO	flow_1
+		IF (((boolean)bitconfig_7232) && (arg1 > 0)) 
+			GOTO	flow_2
+		GOTO	flow_5
+	flow_1:
+	flow_2:
+		if (arg1 < 10) {
+			setWidgetText(new WidgetPointer(548,26), formatNumber(arg0, 1) + "<col=ffffff>" + "(+0." + intToStr(arg1) + ")" + "</col>" + "xp");
+			setWidgetText(new WidgetPointer(746,189), formatNumber(arg0, 1) + "<col=ffffff>" + "(+0." + intToStr(arg1) + ")" + "</col>" + "xp");
+			setScriptCallOnGameloop(3369, new WidgetPointer(548,22), getClientCycle(), "Ii", new WidgetPointer(548,22));
+			setScriptCallOnGameloop(3370, new WidgetPointer(746,184), getClientCycle(), "Ii", new WidgetPointer(746,184));
+			return;
+		}
+		arg1 = divide(arg1, 10);
+	flow_5:
+		if (arg1 < 1) {
+			setWidgetText(new WidgetPointer(548,26), formatNumber(arg0, 1) + "<col=ffffff>" + "</col>" + "xp");
+			setWidgetText(new WidgetPointer(746,189), formatNumber(arg0, 1) + "<col=ffffff>" + "</col>" + "xp");
+		} else {
+			setWidgetText(new WidgetPointer(548,26), formatNumber(arg0, 1) + "<col=ffffff>" + "(+" + intToStr(arg1) + ")" + "</col>" + "xp");
+			setWidgetText(new WidgetPointer(746,189), formatNumber(arg0, 1) + "<col=ffffff>" + "(+" + intToStr(arg1) + ")" + "</col>" + "xp");
+		}
+		setScriptCallOnGameloop(3369, new WidgetPointer(548,22), getClientCycle(), "Ii", new WidgetPointer(548,22));
+		setScriptCallOnGameloop(3370, new WidgetPointer(746,184), getClientCycle(), "Ii", new WidgetPointer(746,184));
+		return;
+}

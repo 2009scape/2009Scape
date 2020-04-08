@@ -1,0 +1,46 @@
+void script_154(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,string arg6,string arg7,string arg8,string arg9,string arg10,string arg11,string arg12,string arg13,string arg14) {
+	string svar9;
+	svar9 = "";
+	if (setWidgetRegister(new WidgetPointer(arg2), arg3)) {
+		if (getItemIdInSlot(arg0, arg1) != -1) {
+			svar9 = "<col=ff981f>" + getItemName(getItemIdInSlot(arg0, arg1));
+			setItemOnWidgetMethod1200(getItemIdInSlot(arg0, arg1), getItemAmtInSlot(arg0, arg1));
+			cs2method1305(svar9);
+			setWidgetContextMenuOption(1, arg6);
+			setWidgetContextMenuOption(2, arg7);
+			setWidgetContextMenuOption(3, arg8);
+			setWidgetContextMenuOption(4, arg9);
+			setWidgetContextMenuOption(5, arg10);
+			setWidgetContextMenuOption(6, arg11);
+			setWidgetContextMenuOption(7, arg12);
+			setWidgetContextMenuOption(8, arg13);
+			setWidgetContextMenuOption(9, arg14);
+			setWidgetContextMenuOption(10, "Examine" + "<col=ff9040>");
+			if (arg4 > 0) {
+				cs2method1303(5);
+				cs2method1304(10);
+			}
+			if (((boolean)arg4)) {
+				setScriptCallOnMouseDragReleased(155, arg0, -2147483643, -2147483641, new WidgetPointer(-32768,3), arg4, new WidgetPointer(arg5), arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, "viiIiIsssssssss");
+			} else {
+				if (arg4 == 2) {
+					setScriptCallOnMouseDragReleased(156, arg0, -2147483643, -2147483641, new WidgetPointer(-32768,3), arg4, new WidgetPointer(arg5), arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, "viiIiIsssssssss");
+				}
+			}
+			if ((arg4 != 0) && (arg5 != -1)) {
+				setScriptCallOnMouseDragged(162, arg1, new WidgetPointer(arg2), new WidgetPointer(arg5), -2147483646, "iIIi");
+			}
+			setWidgetShadowColor(new Color(48, 32, 32));
+			setWidgetBorderThickness(1);
+		} else {
+			setItemOnWidgetMethod1205(-1, 0);
+			setWidgetNoOptions();
+			if (arg4 > 0) {
+				cs2method1303(0);
+				cs2method1304(0);
+			}
+			setScriptCallOnMouseDragReleased(-1, "");
+		}
+	}
+	return;
+}

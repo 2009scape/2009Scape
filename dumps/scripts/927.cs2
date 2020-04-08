@@ -1,0 +1,12 @@
+int script_927(int arg0) {
+	if (getItemHashmapData(arg0, 749) != -1) {
+		return 1;
+	}
+	if (getItemHashmapData(arg0, 743) > -1) {
+		return 1;
+	}
+	if (((boolean)getItemHashmapData(arg0, 741))) {
+		return 1;
+	}
+	return 0;
+}

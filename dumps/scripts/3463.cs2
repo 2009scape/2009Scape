@@ -1,0 +1,14 @@
+void script_3463(int arg0,int arg1) {
+	if (globalint_1007 != 22) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+		return;
+	}
+	if (getMyPositionHash() == arg1) {
+		return;
+	}
+	playSoundEffect(4874, 1, 0);
+	cameraMoveTo(addToCoordinate(getMyPositionHash(), 0, 0, -3), 1500, 1, 75);
+	cameraPointAt(getMyPositionHash(), 0, 1, 15);
+	setScriptCallOnGameloop(3463, new WidgetPointer(-32768,3), getMyPositionHash(), "Ic", new WidgetPointer(arg0));
+	return;
+}

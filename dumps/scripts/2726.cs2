@@ -1,0 +1,76 @@
+void script_2726(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	setWidgetIsHidden(false, new WidgetPointer(620,26));
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar2 = 0;
+	ivar3 = getItemContainerLength(arg1);
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = -1;
+	ivar7 = 0;
+	while (ivar2 < ivar3) {
+		ivar6 = getItemIdInSlot(arg1, ivar2);
+		if (ivar6 != -1) {
+			ivar5 = add(multiply(mod(ivar2, 9), 48), multiply(mod(ivar2, 9), 4));
+			createExtraChild(new WidgetPointer(arg0), 5, ivar4);
+			ivar4 = add(ivar4, 1);
+			setWidgetSize(48, 52, 0, 0);
+			setWidgetPosition(ivar5, 0, 0, 0);
+			setWidgetSprite(2205);
+			cs2method1305("<col=ff981f>" + getItemName(ivar6) + "</col>");
+			setWidgetContextMenuOption(1, "Info");
+			setWidgetContextMenuOption(2, "Take 1");
+			setWidgetContextMenuOption(3, "Take 5");
+			setWidgetContextMenuOption(4, "Take 10");
+			setWidgetContextMenuOption(5, "Take 50");
+			setWidgetContextMenuOption(10, "Examine");
+			setScriptCallOnMouseEntered(2724, new WidgetPointer(-32768,3), ivar4, 0, "Ii1");
+			setScriptCallOnMouseExit(2724, new WidgetPointer(-32768,3), ivar4, 1, "Ii1");
+			createExtraChild(new WidgetPointer(arg0), 5, ivar4);
+			ivar4 = add(ivar4, 1);
+			setWidgetSize(48, 52, 0, 0);
+			setWidgetPosition(ivar5, 0, 0, 0);
+			setWidgetSprite(2206);
+			setWidgetHidden(1);
+			createExtraChild(new WidgetPointer(arg0), 5, ivar4);
+			ivar4 = add(ivar4, 1);
+			setWidgetSize(36, 32, 0, 0);
+			setWidgetPosition(add(ivar5, 6), 4, 0, 0);
+			setItemOnWidgetMethod1212(ivar6, getItemAmtInSlot(arg1, ivar2));
+			setWidgetShadowColor(new Color(48, 32, 32));
+			setWidgetBorderThickness(1);
+			createExtraChild(new WidgetPointer(arg0), 4, ivar4);
+			ivar4 = add(ivar4, 1);
+			setWidgetSize(32, 12, 0, 0);
+			setWidgetPosition(add(ivar5, 13), 39, 0, 0);
+			setWidgetFont(494);
+			setWidgetRGB(new Color(255, 255, 0));
+			setWidgetText("Free");
+			setWidgetTextAlignment(2, 1, 0);
+			setWidgetUnknownBoolean(true);
+		} else {
+			ivar7 = 0;
+			while (ivar7 < 4) {
+				createExtraChild(new WidgetPointer(arg0), 3, ivar4);
+				setWidgetHidden(1);
+				ivar4 = add(ivar4, 1);
+				ivar7 = add(ivar7, 1);
+			}
+		}
+		ivar2 = add(ivar2, 1);
+	}
+	setWidgetIsHidden(false, new WidgetPointer(620,27));
+	setWidgetIsHidden(false, new WidgetPointer(620,28));
+	setWidgetIsHidden(false, new WidgetPointer(620,29));
+	setWidgetIsHidden(false, new WidgetPointer(620,30));
+	setWidgetIsHidden(false, new WidgetPointer(620,31));
+	setWidgetIsHidden(false, new WidgetPointer(620,23));
+	setItemOnWidgetMethod2205(1931, 1, new WidgetPointer(620,28));
+	setWidgetSprite(cs2method_3408(111, 100, 200, standart_config_532), new WidgetPointer(620,29));
+	return;
+}

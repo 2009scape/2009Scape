@@ -1,0 +1,30 @@
+void script_2449(int arg0) {
+	int ivar1;
+	ivar1 = 0;
+	while (setWidgetRegister(new WidgetPointer(34,9), ivar1)) {
+		setWidgetContextMenuOption(1, "Select");
+		ivar1 = add(ivar1, 1);
+	}
+	if (setWidgetRegister(new WidgetPointer(34,9), standart_config_1439)) {
+		setWidgetContextMenuOption(1, "Unselect");
+		if (isWidgetHidden(new WidgetPointer(34,10))) {
+			setWidgetIsHidden(true, new WidgetPointer(34,14));
+			return;
+		}
+		setWidgetIsHidden(false, new WidgetPointer(34,14));
+		setWidgetPosition(getWidgetActualX(), getWidgetActualY(), 0, 0, new WidgetPointer(34,14));
+		setWidgetSize(getWidgetActualWidth(), getWidgetActualHeight(), 0, 0, new WidgetPointer(34,14));
+		if (((boolean)arg0)) {
+			if (getWidgetActualY() < cs2method2601(new WidgetPointer(34,9))) {
+				script_157(2228239, 2228233, subtract(getWidgetActualY(), 5), 1);
+			} else {
+				if (add(getWidgetActualY(), getWidgetActualHeight()) > add(cs2method2601(new WidgetPointer(34,9)), getWidgetActualHeight(new WidgetPointer(34,9)))) {
+					script_157(2228239, 2228233, add(add(subtract(getWidgetActualY(), getWidgetActualHeight(new WidgetPointer(34,9))), getWidgetActualHeight()), 5), 1);
+				}
+			}
+		}
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(34,14));
+	}
+	return;
+}

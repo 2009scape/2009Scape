@@ -1,0 +1,9 @@
+void script_3682() {
+	if (((boolean)strLength(globalstring_196)) && (globalint_5 != 14)) {
+		setWidgetSprite(3246, new WidgetPointer(187,17));
+		script_3685();
+	} else {
+		script_3683();
+	}
+	return;
+}

@@ -1,0 +1,91 @@
+void script_2610(int arg0) {
+	string svar0;
+	svar0 = "";
+	if (bitconfig_6357 == 2) {
+		setWidgetIsHidden(false, new WidgetPointer(arg0));
+		if (bitconfig_6372 == 15) {
+			if (bitconfig_6373 > 0) {
+				svar0 = "Collected " + intToStr(bitconfig_6373) + " out of 4 rocks";
+				setWidgetSprite(1985, new WidgetPointer(37,36));
+			} else {
+				svar0 = "Send a squad to collect rocks";
+				setWidgetSprite(1990, new WidgetPointer(37,36));
+			}
+			setScriptCallOnMouseOver(38, new WidgetPointer(37,0), new WidgetPointer(37,41), svar0, 50, 150, "IIsii", new WidgetPointer(37,0));
+			setScriptCallOnMouseExit(40, new WidgetPointer(37,41), "I", new WidgetPointer(37,0));
+			if (bitconfig_6373 > 1) {
+				svar0 = "Collected " + intToStr(bitconfig_6373) + " out of 4 rocks";
+				setWidgetSprite(1985, new WidgetPointer(37,39));
+			} else {
+				svar0 = "Send a squad to collect rocks.";
+				setWidgetSprite(1990, new WidgetPointer(37,39));
+			}
+			setScriptCallOnMouseOver(38, new WidgetPointer(37,3), new WidgetPointer(37,41), svar0, 50, 150, "IIsii", new WidgetPointer(37,3));
+			setScriptCallOnMouseExit(40, new WidgetPointer(37,41), "I", new WidgetPointer(37,3));
+			if (bitconfig_6373 > 2) {
+				svar0 = "Collected " + intToStr(bitconfig_6373) + " out of 4 rocks";
+				setWidgetSprite(1985, new WidgetPointer(37,38));
+			} else {
+				svar0 = "Send a squad to collect rocks.";
+				setWidgetSprite(1990, new WidgetPointer(37,38));
+			}
+			setScriptCallOnMouseOver(38, new WidgetPointer(37,4), new WidgetPointer(37,41), svar0, 50, 150, "IIsii", new WidgetPointer(37,4));
+			setScriptCallOnMouseExit(40, new WidgetPointer(37,41), "I", new WidgetPointer(37,4));
+			if (bitconfig_6373 > 3) {
+				svar0 = "Collected " + intToStr(bitconfig_6373) + " out of 4 rocks";
+				setWidgetSprite(1985, new WidgetPointer(37,37));
+			} else {
+				svar0 = "Send a squad to collect rocks.";
+				setWidgetSprite(1990, new WidgetPointer(37,37));
+			}
+			setScriptCallOnMouseOver(38, new WidgetPointer(37,5), new WidgetPointer(37,41), svar0, 50, 150, "IIsii", new WidgetPointer(37,5));
+			setScriptCallOnMouseExit(40, new WidgetPointer(37,41), "I", new WidgetPointer(37,5));
+		} else {
+			if (bitconfig_6368 > 0) {
+				svar0 = "Collected wheels";
+				setWidgetSprite(1981, new WidgetPointer(37,36));
+			} else {
+				svar0 = "Send a squad to collect wheels.";
+				setWidgetSprite(1986, new WidgetPointer(37,36));
+			}
+			setScriptCallOnMouseOver(38, new WidgetPointer(37,0), new WidgetPointer(37,41), svar0, 50, 150, "IIsii", new WidgetPointer(37,0));
+			setScriptCallOnMouseExit(40, new WidgetPointer(37,41), "I", new WidgetPointer(37,0));
+			if (bitconfig_6370 > 0) {
+				svar0 = "Collected logs";
+				setWidgetSprite(1982, new WidgetPointer(37,39));
+			} else {
+				svar0 = "Send a squad to collect logs.";
+				setWidgetSprite(1987, new WidgetPointer(37,39));
+			}
+			setScriptCallOnMouseOver(38, new WidgetPointer(37,3), new WidgetPointer(37,41), svar0, 50, 150, "IIsii", new WidgetPointer(37,3));
+			setScriptCallOnMouseExit(40, new WidgetPointer(37,41), "I", new WidgetPointer(37,3));
+			if (bitconfig_6371 > 0) {
+				svar0 = "Collected rope";
+				setWidgetSprite(1983, new WidgetPointer(37,38));
+			} else {
+				svar0 = "Send a squad to collect rope.";
+				setWidgetSprite(1988, new WidgetPointer(37,38));
+			}
+			setScriptCallOnMouseOver(38, new WidgetPointer(37,4), new WidgetPointer(37,41), svar0, 50, 150, "IIsii", new WidgetPointer(37,4));
+			setScriptCallOnMouseExit(40, new WidgetPointer(37,41), "I", new WidgetPointer(37,4));
+			if (bitconfig_6369 > 0) {
+				svar0 = "Collected metal limbs";
+				setWidgetSprite(1984, new WidgetPointer(37,37));
+			} else {
+				svar0 = "Send a squad to collect metal limbs.";
+				setWidgetSprite(1989, new WidgetPointer(37,37));
+			}
+			setScriptCallOnMouseOver(38, new WidgetPointer(37,5), new WidgetPointer(37,41), svar0, 50, 150, "IIsii", new WidgetPointer(37,5));
+			setScriptCallOnMouseExit(40, new WidgetPointer(37,41), "I", new WidgetPointer(37,5));
+		}
+	} else if (((boolean)bitconfig_6357)) {
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+	} else if (bitconfig_6357 == 3) {
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+	} else {
+		if (bitconfig_6357 == 4) {
+			setWidgetIsHidden(true, new WidgetPointer(arg0));
+		}
+	}
+	return;
+}

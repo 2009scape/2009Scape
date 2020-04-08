@@ -1,0 +1,27 @@
+int script_4643(int arg0) {
+	flow_0:
+		SWITCH (arg0) {
+			case 1:
+				 GOTO flow_1
+			case 4:
+				 GOTO flow_7
+			case 2:
+				 GOTO flow_11
+		}
+		return 0;
+	flow_1:
+		if (((getSkillActualLvl(0) >= 30) && (getSkillActualLvl(6) >= 30)) && (getSkillActualLvl(4) >= 30)) {
+			return 1;
+		}
+		return 0;
+	flow_7:
+		if (getSkillActualLvl(2) >= 70) {
+			return 1;
+		}
+		return 0;
+	flow_11:
+		if ((getSkillActualLvl(16) >= 55) && (getSkillActualLvl(17) >= 55)) {
+			return 1;
+		}
+		return 0;
+}

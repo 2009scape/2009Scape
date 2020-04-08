@@ -1,0 +1,63 @@
+void script_818(int arg0) {
+	string svar0;
+	svar0 = "No information is available about this beacon.";
+	switch (arg0) {
+		case 1:
+			setWidgetModel(41805, new WidgetPointer(575,3));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 130, "IIsii", new WidgetPointer(575,3));
+			break;
+		case 2:
+			setWidgetModel(41805, new WidgetPointer(575,4));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 160, "IIsii", new WidgetPointer(575,4));
+			break;
+		case 3:
+			setWidgetModel(41805, new WidgetPointer(575,5));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,5));
+			break;
+		case 4:
+			setWidgetModel(41805, new WidgetPointer(575,6));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,6));
+			break;
+		case 5:
+			setWidgetModel(41805, new WidgetPointer(575,7));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,7));
+			break;
+		case 6:
+			setWidgetModel(41805, new WidgetPointer(575,8));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,8));
+			break;
+		case 7:
+			setWidgetModel(41805, new WidgetPointer(575,9));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,9));
+			break;
+		case 8:
+			setWidgetModel(41805, new WidgetPointer(575,10));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,10));
+			break;
+		case 9:
+			setWidgetModel(41805, new WidgetPointer(575,11));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,11));
+			break;
+		case 10:
+			setWidgetModel(41805, new WidgetPointer(575,12));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,12));
+			break;
+		case 11:
+			setWidgetModel(41805, new WidgetPointer(575,13));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,13));
+			break;
+		case 12:
+			setWidgetModel(41805, new WidgetPointer(575,14));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,14));
+			break;
+		case 13:
+			setWidgetModel(41805, new WidgetPointer(575,15));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,15));
+			break;
+		case 14:
+			setWidgetModel(41805, new WidgetPointer(575,16));
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(575,2), svar0, 25, 200, "IIsii", new WidgetPointer(575,16));
+	}
+	globalint_2 = 0;
+	return;
+}

@@ -1,0 +1,8 @@
+void script_4551() {
+	setScriptCallOnFriendListChange(128, "", new WidgetPointer(550,4));
+	script_31(36044831, 36044803, 5666, 5663, 5664, 5665, 5686, 5685);
+	setWidgetScrollMax(0, 0, new WidgetPointer(550,3));
+	cs2method2100(0, 0, new WidgetPointer(550,3));
+	script_129();
+	return;
+}

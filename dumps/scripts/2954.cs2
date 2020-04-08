@@ -1,0 +1,69 @@
+void script_2954() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	ivar0 = 39059463;
+	ivar1 = 39059464;
+	ivar2 = 39059470;
+	ivar3 = 39059469;
+	ivar4 = 39059471;
+	ivar5 = 39059519;
+	ivar6 = 39059472;
+	ivar7 = 39059473;
+	ivar8 = 39059474;
+	ivar9 = 39059521;
+	ivar10 = 39059522;
+	ivar11 = 39059523;
+	ivar12 = 39059475;
+	ivar13 = 39059524;
+	if (hasSSKey()) {
+		ivar0 = 63897626;
+		ivar1 = 63897601;
+		ivar2 = 63897604;
+		ivar3 = 63897603;
+		ivar4 = 63897605;
+		ivar5 = 63897606;
+		ivar6 = 63897611;
+		ivar7 = 63897612;
+		ivar8 = 63897613;
+		ivar9 = 63897607;
+		ivar10 = 63897608;
+		ivar11 = 63897609;
+		ivar12 = 63897614;
+		ivar13 = 63897610;
+	}
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(ivar4));
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(ivar5));
+	setScriptCallOnMouseEntered(-1, "", new WidgetPointer(ivar5));
+	setScriptCallOnMouseExit(-1, "", new WidgetPointer(ivar5));
+	setScriptCallOnMouseEntered(-1, "", new WidgetPointer(ivar4));
+	setScriptCallOnMouseExit(-1, "", new WidgetPointer(ivar4));
+	setWidgetPosition(6, 5, 0, 2, new WidgetPointer(ivar4));
+	setWidgetPosition(6, 5, 0, 2, new WidgetPointer(ivar5));
+	setWidgetText(new WidgetPointer(ivar12), "");
+	setWidgetText(new WidgetPointer(ivar13), "");
+	setWidgetIsHidden(true, new WidgetPointer(ivar4));
+	setWidgetIsHidden(true, new WidgetPointer(ivar5));
+	setWidgetText(new WidgetPointer(ivar2), "");
+	globalint_1092 = 0;
+	setWidgetSprite(-1, new WidgetPointer(ivar3));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(ivar3));
+	setWidgetIsHidden(true, new WidgetPointer(ivar0));
+	setWidgetIsHidden(true, new WidgetPointer(ivar1));
+	if (hasSSKey()) {
+		return;
+	}
+	script_2940(11);
+	return;
+}

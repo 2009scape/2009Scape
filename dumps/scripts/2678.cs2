@@ -1,0 +1,155 @@
+void script_2678() {
+	flow_0:
+		SWITCH (globalint_943) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_2
+			case 3:
+				 GOTO flow_3
+			case 4:
+				 GOTO flow_4
+			case 5:
+				 GOTO flow_5
+			case 6:
+				 GOTO flow_6
+			case 7:
+				 GOTO flow_7
+		}
+		setWidgetModel(15185, new WidgetPointer(400,11));
+		setWidgetModel(15185, new WidgetPointer(400,8));
+		setWidgetModel(15179, new WidgetPointer(400,3));
+		setWidgetModel(15185, new WidgetPointer(400,10));
+		setWidgetModel(15185, new WidgetPointer(400,6));
+		setWidgetModel(15181, new WidgetPointer(400,4));
+		setWidgetModel(15185, new WidgetPointer(400,7));
+		setWidgetModel(15185, new WidgetPointer(400,9));
+		setWidgetModel(15202, new WidgetPointer(400,15));
+		setWidgetModel(15187, new WidgetPointer(400,12));
+		setWidgetModel(15196, new WidgetPointer(400,13));
+		setWidgetModel(15183, new WidgetPointer(400,5));
+		setWidgetModel(15177, new WidgetPointer(400,2));
+		setWidgetModel(15204, new WidgetPointer(400,16));
+		setWidgetModel(15200, new WidgetPointer(400,14));
+		GOTO	flow_8
+	flow_1:
+		setWidgetModel(15192, new WidgetPointer(400,11));
+		setWidgetModel(15185, new WidgetPointer(400,8));
+		setWidgetModel(15179, new WidgetPointer(400,3));
+		setWidgetModel(15185, new WidgetPointer(400,10));
+		setWidgetModel(15185, new WidgetPointer(400,6));
+		setWidgetModel(15181, new WidgetPointer(400,4));
+		setWidgetModel(15185, new WidgetPointer(400,7));
+		setWidgetModel(15185, new WidgetPointer(400,9));
+		setWidgetModel(15203, new WidgetPointer(400,15));
+		setWidgetModel(15187, new WidgetPointer(400,12));
+		setWidgetModel(15196, new WidgetPointer(400,13));
+		setWidgetModel(15183, new WidgetPointer(400,5));
+		setWidgetModel(15177, new WidgetPointer(400,2));
+		setWidgetModel(15204, new WidgetPointer(400,16));
+		setWidgetModel(15200, new WidgetPointer(400,14));
+		GOTO	flow_8
+	flow_2:
+		setWidgetModel(15192, new WidgetPointer(400,11));
+		setWidgetModel(15185, new WidgetPointer(400,8));
+		setWidgetModel(15179, new WidgetPointer(400,3));
+		setWidgetModel(15185, new WidgetPointer(400,10));
+		setWidgetModel(15185, new WidgetPointer(400,6));
+		setWidgetModel(15181, new WidgetPointer(400,4));
+		setWidgetModel(15185, new WidgetPointer(400,7));
+		setWidgetModel(15185, new WidgetPointer(400,9));
+		setWidgetModel(15203, new WidgetPointer(400,15));
+		setWidgetModel(15193, new WidgetPointer(400,12));
+		setWidgetModel(15197, new WidgetPointer(400,13));
+		setWidgetModel(15183, new WidgetPointer(400,5));
+		setWidgetModel(15177, new WidgetPointer(400,2));
+		setWidgetModel(15204, new WidgetPointer(400,16));
+		setWidgetModel(15200, new WidgetPointer(400,14));
+		GOTO	flow_8
+	flow_3:
+		setWidgetModel(15192, new WidgetPointer(400,11));
+		setWidgetModel(15189, new WidgetPointer(400,8));
+		setWidgetModel(15180, new WidgetPointer(400,3));
+		setWidgetModel(15185, new WidgetPointer(400,10));
+		setWidgetModel(15185, new WidgetPointer(400,6));
+		setWidgetModel(15181, new WidgetPointer(400,4));
+		setWidgetModel(15185, new WidgetPointer(400,7));
+		setWidgetModel(15185, new WidgetPointer(400,9));
+		setWidgetModel(15203, new WidgetPointer(400,15));
+		setWidgetModel(15187, new WidgetPointer(400,12));
+		setWidgetModel(15196, new WidgetPointer(400,13));
+		setWidgetModel(15183, new WidgetPointer(400,5));
+		setWidgetModel(15177, new WidgetPointer(400,2));
+		setWidgetModel(15204, new WidgetPointer(400,16));
+		setWidgetModel(15200, new WidgetPointer(400,14));
+		GOTO	flow_8
+	flow_4:
+		setWidgetModel(15192, new WidgetPointer(400,11));
+		setWidgetModel(15185, new WidgetPointer(400,8));
+		setWidgetModel(15179, new WidgetPointer(400,3));
+		setWidgetModel(15185, new WidgetPointer(400,10));
+		setWidgetModel(15185, new WidgetPointer(400,6));
+		setWidgetModel(15181, new WidgetPointer(400,4));
+		setWidgetModel(15185, new WidgetPointer(400,7));
+		setWidgetModel(15185, new WidgetPointer(400,9));
+		setWidgetModel(15203, new WidgetPointer(400,15));
+		setWidgetModel(15193, new WidgetPointer(400,12));
+		setWidgetModel(15197, new WidgetPointer(400,13));
+		setWidgetModel(15184, new WidgetPointer(400,5));
+		setWidgetModel(15178, new WidgetPointer(400,2));
+		setWidgetModel(15204, new WidgetPointer(400,16));
+		setWidgetModel(15200, new WidgetPointer(400,14));
+		GOTO	flow_8
+	flow_5:
+		setWidgetModel(15192, new WidgetPointer(400,11));
+		setWidgetModel(15189, new WidgetPointer(400,8));
+		setWidgetModel(15180, new WidgetPointer(400,3));
+		setWidgetModel(15191, new WidgetPointer(400,10));
+		setWidgetModel(15186, new WidgetPointer(400,6));
+		setWidgetModel(15181, new WidgetPointer(400,4));
+		setWidgetModel(15185, new WidgetPointer(400,7));
+		setWidgetModel(15185, new WidgetPointer(400,9));
+		setWidgetModel(15203, new WidgetPointer(400,15));
+		setWidgetModel(15187, new WidgetPointer(400,12));
+		setWidgetModel(15196, new WidgetPointer(400,13));
+		setWidgetModel(15183, new WidgetPointer(400,5));
+		setWidgetModel(15177, new WidgetPointer(400,2));
+		setWidgetModel(15204, new WidgetPointer(400,16));
+		setWidgetModel(15200, new WidgetPointer(400,14));
+		GOTO	flow_8
+	flow_6:
+		setWidgetModel(15192, new WidgetPointer(400,11));
+		setWidgetModel(15185, new WidgetPointer(400,8));
+		setWidgetModel(15179, new WidgetPointer(400,3));
+		setWidgetModel(15185, new WidgetPointer(400,10));
+		setWidgetModel(15185, new WidgetPointer(400,6));
+		setWidgetModel(15181, new WidgetPointer(400,4));
+		setWidgetModel(15185, new WidgetPointer(400,7));
+		setWidgetModel(15185, new WidgetPointer(400,9));
+		setWidgetModel(15203, new WidgetPointer(400,15));
+		setWidgetModel(15193, new WidgetPointer(400,12));
+		setWidgetModel(15197, new WidgetPointer(400,13));
+		setWidgetModel(15184, new WidgetPointer(400,5));
+		setWidgetModel(15178, new WidgetPointer(400,2));
+		setWidgetModel(15205, new WidgetPointer(400,16));
+		setWidgetModel(15201, new WidgetPointer(400,14));
+		GOTO	flow_8
+	flow_7:
+		setWidgetModel(15192, new WidgetPointer(400,11));
+		setWidgetModel(15189, new WidgetPointer(400,8));
+		setWidgetModel(15180, new WidgetPointer(400,3));
+		setWidgetModel(15191, new WidgetPointer(400,10));
+		setWidgetModel(15186, new WidgetPointer(400,6));
+		setWidgetModel(15182, new WidgetPointer(400,4));
+		setWidgetModel(15188, new WidgetPointer(400,7));
+		setWidgetModel(15190, new WidgetPointer(400,9));
+		setWidgetModel(15203, new WidgetPointer(400,15));
+		setWidgetModel(15187, new WidgetPointer(400,12));
+		setWidgetModel(15196, new WidgetPointer(400,13));
+		setWidgetModel(15183, new WidgetPointer(400,5));
+		setWidgetModel(15177, new WidgetPointer(400,2));
+		setWidgetModel(15204, new WidgetPointer(400,16));
+		setWidgetModel(15200, new WidgetPointer(400,14));
+	flow_8:
+		return;
+}

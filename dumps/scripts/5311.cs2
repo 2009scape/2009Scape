@@ -1,0 +1,51 @@
+void script_5311(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	ivar4 = 0;
+	ivar5 = getCommonDefinitionSize(5177);
+	ivar6 = getCommonDefinitionSize(5176);
+	globalarray_0 = new int[min(ivar5, ivar6)];
+	ivar7 = 0;
+	while (ivar4 < min(ivar5, ivar6)) {
+		if (setWidgetRegister(new WidgetPointer(arg1), ivar4) && (strLength(getWidgetText()) > 0)) {
+			globalarray_0[ivar7] = ivar4;
+			ivar7 = add(ivar7, 1);
+		}
+		ivar4 = add(ivar4, 1);
+	}
+	if (ivar7 > 1) {
+		if (((boolean)globalint_1607)) {
+			script_4425(0, arg1, 0, subtract(ivar7, 1));
+			globalint_1607 = -1;
+		} else {
+			script_4424(0, arg1, 0, subtract(ivar7, 1));
+			globalint_1607 = 1;
+		}
+	}
+	ivar8 = 15;
+	ivar4 = 0;
+	while (ivar4 < ivar7) {
+		if (setWidgetRegister(new WidgetPointer(arg1), globalarray_0[ivar4])) {
+			setWidgetPosition(2, multiply(ivar8, ivar4), 0, 0);
+			if (setWidgetRegister(new WidgetPointer(arg2), globalarray_0[ivar4])) {
+				setWidgetPosition(140, add(multiply(ivar8, ivar4), 1), 0, 0);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg3), globalarray_0[ivar4])) {
+				setWidgetPosition(152, add(multiply(ivar8, ivar4), 1), 0, 0);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg0), globalarray_0[ivar4])) {
+				setWidgetPosition(0, multiply(ivar8, ivar4), 0, 0);
+				if (((boolean)mod(ivar4, 2))) {
+					setWidgetRGB(new Color(34, 34, 34));
+				} else {
+					setWidgetRGB(new Color(17, 17, 17));
+				}
+			}
+		}
+		ivar4 = add(ivar4, 1);
+	}
+	return;
+}

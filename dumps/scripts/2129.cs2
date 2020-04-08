@@ -1,0 +1,18 @@
+void script_2129(int arg0,int arg1,int arg2) {
+	switch (arg1) {
+		case 27525135:
+		case 27525134:
+		case 27525133:
+		case 27525132:
+		case 27525138:
+		case 27525139:
+		case 27525136:
+		case 27525137:
+			setWidgetPosition(getWidgetActualX(new WidgetPointer(arg1)), getWidgetActualY(new WidgetPointer(arg1)), 0, 0, new WidgetPointer(arg0));
+			playSoundEffect(5507, 1, 0);
+			break;
+		default:
+			setWidgetPosition(getWidgetActualX(new WidgetPointer(arg2)), getWidgetActualY(new WidgetPointer(arg2)), 0, 0, new WidgetPointer(arg0));
+	}
+	return;
+}

@@ -1,0 +1,13 @@
+string script_276(int arg0) {
+	switch (arg0) {
+		case 1:
+			return "Lake";
+		case 2:
+			return "River";
+		case 3:
+			return "Beach";
+		case 4:
+			return "Docks";
+	}
+	return "Waterfront";
+}

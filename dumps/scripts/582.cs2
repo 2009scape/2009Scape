@@ -1,0 +1,32 @@
+void script_582(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	ivar1 = getWidgetActualWidth(new WidgetPointer(arg0));
+	ivar2 = getWidgetActualHeight(new WidgetPointer(arg0));
+	ivar3 = subtract(ivar1, 32);
+	ivar4 = subtract(ivar2, 32);
+	ivar5 = subtract(ivar1, 64);
+	ivar6 = subtract(ivar2, 64);
+	if (ivar5 < 0) {
+		ivar5 = 0;
+	}
+	if (ivar6 < 0) {
+		ivar6 = 0;
+	}
+	ivar7 = getExtraChildGap(new WidgetPointer(arg0));
+	script_98(arg0, ivar7, 1136, 7, 7, subtract(ivar1, 14), subtract(ivar2, 14));
+	script_98(arg0, add(ivar7, 1), 958, 0, 0, 32, 32);
+	script_98(arg0, add(ivar7, 2), 959, ivar3, 0, 32, 32);
+	script_98(arg0, add(ivar7, 3), 960, 0, ivar4, 32, 32);
+	script_98(arg0, add(ivar7, 4), 961, ivar3, ivar4, 32, 32);
+	script_98(arg0, add(ivar7, 5), 954, 32, 0, ivar5, 32);
+	script_98(arg0, add(ivar7, 6), 955, 0, 32, 32, ivar6);
+	script_98(arg0, add(ivar7, 7), 956, 32, ivar4, ivar5, 32);
+	script_98(arg0, add(ivar7, 8), 957, ivar3, 32, 32, ivar6);
+	return;
+}

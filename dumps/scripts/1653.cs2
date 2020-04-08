@@ -1,0 +1,17 @@
+int script_1653() {
+	flow_0:
+		IF (isWidgetHidden(new WidgetPointer(752,8))) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		IF (isWidgetHidden(new WidgetPointer(752,3)) || isWidgetHidden(new WidgetPointer(752,7))) 
+			GOTO	flow_3
+	flow_2:
+		IF ((((isWidgetOpen(new WidgetPointer(752,13)) || isWidgetOpen(new WidgetPointer(752,12))) || isWidgetOpen(new WidgetPointer(752,11))) || isWidgetOpen(new WidgetPointer(752,10))) || isWidgetHidden(new WidgetPointer(137,0))) 
+			GOTO	flow_3
+		GOTO	flow_4
+	flow_3:
+		return 1;
+	flow_4:
+		return 0;
+}

@@ -1,0 +1,6 @@
+void script_4407(int arg0,int arg1,int arg2) {
+	if ((arg1 >= 1) && (arg1 <= 10)) {
+		cs2method2309(arg1, arg2, new WidgetPointer(arg0));
+	}
+	return;
+}

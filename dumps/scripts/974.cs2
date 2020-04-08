@@ -1,0 +1,42 @@
+int script_974(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,string arg6) {
+	int ivar6;
+	int ivar7;
+	ivar6 = 0;
+	ivar7 = 2287;
+	createExtraChild(new WidgetPointer(741,2), 5, arg0);
+	if (((boolean)script_1566(arg4, arg5))) {
+		if (arg4 == 7) {
+			setWidgetSize(30, 30, 0, 0);
+		} else if (arg4 == 4) {
+			setWidgetSize(24, 24, 0, 0);
+		} else {
+			setWidgetSize(36, 32, 0, 0);
+		}
+		setWidgetBorderThickness(0);
+		if (arg3 != -1) {
+			setWidgetSprite(arg3);
+		} else {
+			setWidgetSprite(ivar7);
+		}
+	} else if ((arg2 == 18637) || (arg2 == 18638)) {
+		setWidgetSize(24, 24, 0, 0);
+		setWidgetBorderThickness(0);
+		if (arg2 == 18637) {
+			setWidgetSprite(3057);
+		} else {
+			setWidgetSprite(3056);
+		}
+	} else if (arg2 != -1) {
+		setItemOnWidgetMethod1200(arg2, -1);
+	} else {
+		setItemOnWidgetMethod1200(7620, -1);
+	}
+	setWidgetSize(36, 32, 0, 0);
+	setWidgetBorderThickness(1);
+	setWidgetShadowColor(new Color(96, 78, 50));
+	setWidgetPosition(0, arg1, 0, 0);
+	createExtraChild(new WidgetPointer(741,2), 4, add(arg0, 1));
+	ivar6 = getLineCount(300, 495, arg6);
+	setWidgetSize(300, multiply(ivar6, 16), 0, 0);
+	return ivar6;
+}

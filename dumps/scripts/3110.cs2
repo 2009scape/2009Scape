@@ -1,0 +1,4 @@
+void script_3110(int arg0) {
+	setWidgetRGB(new Color(69, 55, 24), new WidgetPointer(arg0));
+	return;
+}

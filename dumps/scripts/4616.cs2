@@ -1,0 +1,12 @@
+int script_4616(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = 0;
+	ivar2 = script_4617(arg0, arg1);
+	if (ivar2 == getMinute()) {
+		return 0;
+	}
+	if (ivar2 > getMinute()) {
+		return 1;
+	}
+	return -1;
+}

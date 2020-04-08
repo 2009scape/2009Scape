@@ -1,0 +1,23 @@
+void script_4318() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar0 = 71827531;
+	ivar1 = 71827532;
+	ivar2 = 23;
+	ivar3 = max(getWidgetActualHeight(new WidgetPointer(ivar1)), multiply(add(divide(globalint_1517, 2), 1), ivar2));
+	ivar4 = cs2method2601(new WidgetPointer(ivar1));
+	if (ivar3 > getWidgetActualHeight(new WidgetPointer(1096,76))) {
+		setWidgetScrollMax(getWidgetActualWidth(new WidgetPointer(ivar1)), ivar3, new WidgetPointer(ivar1));
+		cs2method2100(0, ivar4, new WidgetPointer(ivar1));
+		setWidgetIsHidden(false, new WidgetPointer(ivar0));
+		script_31(ivar0, ivar1, 5666, 5663, 5664, 5665, 5686, 5685);
+	} else {
+		setWidgetScrollMax(getWidgetActualWidth(new WidgetPointer(ivar1)), getWidgetActualHeight(new WidgetPointer(ivar1)), new WidgetPointer(ivar1));
+		cs2method2100(0, 0, new WidgetPointer(ivar1));
+		script_31(ivar0, ivar1, 5666, 5663, 5664, 5665, 5686, 5685);
+	}
+	return;
+}

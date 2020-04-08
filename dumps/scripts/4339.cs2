@@ -1,0 +1,4 @@
+void script_4339(int arg0,int arg1,int arg2) {
+	setScriptCallOnClanChatSettingsStuff(5230, arg0, new WidgetPointer(arg1), new WidgetPointer(arg2), "iII", new WidgetPointer(arg2));
+	return;
+}

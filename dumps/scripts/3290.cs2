@@ -1,0 +1,76 @@
+void script_3290(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8) {
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	ivar9 = getWidgetScrollMaxV(new WidgetPointer(arg1));
+	ivar10 = getWidgetActualHeight(new WidgetPointer(arg0));
+	ivar11 = subtract(ivar10, 32);
+	ivar12 = 0;
+	if (ivar9 > 0) {
+		ivar12 = multiplyDivide(ivar10, ivar9, ivar11);
+	} else {
+		ivar12 = ivar11;
+	}
+	ivar12 = max(ivar12, 10);
+	ivar13 = cs2method2601(new WidgetPointer(arg1));
+	ivar14 = 0;
+	ivar15 = 0;
+	if (ivar13 > 0) {
+		ivar14 = subtract(ivar9, getWidgetActualHeight(new WidgetPointer(arg1)));
+		if (((boolean)ivar14)) {
+			ivar14 = 1;
+		}
+		if (ivar13 > ivar14) {
+			cs2method2100(0, ivar14, new WidgetPointer(arg1));
+			cs2method2100(0, ivar14, new WidgetPointer(arg2));
+			ivar13 = ivar14;
+		}
+		ivar15 = multiplyDivide(ivar13, ivar14, subtract(ivar11, ivar12));
+		ivar15 = min(max(ivar15, 0), subtract(ivar11, ivar12));
+	}
+	createExtraChild(new WidgetPointer(arg0), 5, 0);
+	setWidgetPosition(0, 16, 0, 0);
+	setWidgetSize(16, 32, 0, 1);
+	setWidgetSprite(arg3);
+	cs2method1107(1);
+	setScriptCallOnMousePressed(3293, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), -2147483646, "IIIi");
+	createExtraChild(new WidgetPointer(arg0), 5, 1);
+	setWidgetPosition(0, add(16, ivar15), 0, 0);
+	setWidgetSprite(arg5);
+	cs2method1107(1);
+	cs2method1301(arg0, 0);
+	cs2method1302(1);
+	setWidgetSize(16, ivar12, 0, 0);
+	setScriptCallOnMouseDragged(3294, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), -2147483646, 0, "IIIi1");
+	setScriptCallOnMouseDragReleased(3294, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), -2147483646, 1, "IIIi1");
+	createExtraChild(new WidgetPointer(arg0), 5, 2);
+	setWidgetPosition(0, add(16, ivar15), 0, 0);
+	setWidgetSize(16, 5, 0, 0);
+	setWidgetSprite(arg4);
+	cs2method1107(0);
+	createExtraChild(new WidgetPointer(arg0), 5, 3);
+	setWidgetPosition(0, subtract(add(add(16, ivar15), ivar12), 5), 0, 0);
+	setWidgetSize(16, 5, 0, 0);
+	setWidgetSprite(arg6);
+	cs2method1107(0);
+	createExtraChild(new WidgetPointer(arg0), 5, 4);
+	setWidgetPosition(0, 0, 0, 0);
+	setWidgetSize(16, 16, 0, 0);
+	setWidgetSprite(arg7);
+	cs2method1107(0);
+	setScriptCallOnMouseDraggedOver(3291, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), "III");
+	createExtraChild(new WidgetPointer(arg0), 5, 5);
+	setWidgetPosition(0, 0, 0, 2);
+	setWidgetSize(16, 16, 0, 0);
+	setWidgetSprite(arg8);
+	cs2method1107(0);
+	setScriptCallOnMouseDraggedOver(3292, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), "III");
+	setScriptCallOnMouseScroll(3295, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), -2147483646, "IIIi", new WidgetPointer(arg0));
+	setScriptCallOnMouseScroll(3295, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), -2147483646, "IIIi", new WidgetPointer(arg1));
+	setScriptCallOnMouseScroll(3295, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), -2147483646, "IIIi", new WidgetPointer(arg2));
+	return;
+}

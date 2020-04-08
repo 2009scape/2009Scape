@@ -1,0 +1,21 @@
+void script_3490(int arg0) {
+	int ivar1;
+	ivar1 = arg0;
+	switch (arg0) {
+		case 65077432:
+			ivar1 = 65077505;
+			break;
+		case 65077433:
+			ivar1 = 65077490;
+			break;
+		case 65077434:
+			ivar1 = 65077475;
+			break;
+		case 65077435:
+			ivar1 = 65077460;
+	}
+	if (getWidgetShadeColor(new WidgetPointer(ivar1)) > 220) {
+		cs2method2103(subtract(getWidgetShadeColor(new WidgetPointer(ivar1)), 2), new WidgetPointer(ivar1));
+	}
+	return;
+}

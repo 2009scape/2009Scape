@@ -1,0 +1,93 @@
+void script_2329() {
+	setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(496,4));
+	setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(496,5));
+	setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(496,6));
+	setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(496,7));
+	setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(496,8));
+	setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(496,9));
+	setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(496,10));
+	setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(496,11));
+	setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(496,12));
+	setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(496,13));
+	if (((boolean)bitconfig_3264)) {
+		setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(496,4));
+	} else if (bitconfig_3264 == 2) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,4));
+		setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(496,5));
+	} else if (bitconfig_3264 == 3) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,4));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,5));
+		setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(496,6));
+	} else if (bitconfig_3264 == 4) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,4));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,5));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,6));
+		setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(496,7));
+	} else if (bitconfig_3264 == 5) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,4));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,5));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,6));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,7));
+		setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(496,8));
+	} else if (bitconfig_3264 == 6) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,4));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,5));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,6));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,7));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,8));
+		setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(496,9));
+	} else if (bitconfig_3264 == 7) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,4));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,5));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,6));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,7));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,8));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,9));
+		setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(496,10));
+	} else if (bitconfig_3264 == 8) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,4));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,5));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,6));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,7));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,8));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,9));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,10));
+		setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(496,11));
+	} else if (bitconfig_3264 == 9) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,4));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,5));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,6));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,7));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,8));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,9));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,10));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,11));
+		setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(496,12));
+	} else if (bitconfig_3264 == 10) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,4));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,5));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,6));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,7));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,8));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,9));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,10));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,11));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,12));
+		setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(496,13));
+	} else {
+		if (bitconfig_3264 == 11) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,4));
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,5));
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,6));
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,7));
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,8));
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,9));
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,10));
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,11));
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,12));
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,12));
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(496,13));
+		}
+	}
+	return;
+}

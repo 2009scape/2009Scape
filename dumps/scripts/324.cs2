@@ -1,0 +1,95 @@
+void script_324(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	ivar3 = min(bitconfig_2375, 500);
+	setWidgetSize(0, multiplyDivide(subtract(500, ivar3), 500, 16384), 1, 2, new WidgetPointer(arg0));
+	ivar4 = add(164, multiplyDivide(ivar3, 500, 91));
+	ivar5 = subtract(164, multiplyDivide(ivar3, 500, 164));
+	ivar6 = subtract(41, multiplyDivide(ivar3, 500, 41));
+	ivar7 = script_693(ivar4, ivar5, ivar6);
+	setWidgetRGB(new Color(ivar7), new WidgetPointer(arg0));
+	setWidgetRGB(new Color(ivar7), new WidgetPointer(arg1));
+	switch (multiplyDivide(add(ivar3, 5), 500, 25)) {
+		case 0:
+			setWidgetModel(16353, new WidgetPointer(arg2));
+			break;
+		case 1:
+			setWidgetModel(16354, new WidgetPointer(arg2));
+			break;
+		case 2:
+			setWidgetModel(16355, new WidgetPointer(arg2));
+			break;
+		case 3:
+			setWidgetModel(16356, new WidgetPointer(arg2));
+			break;
+		case 4:
+			setWidgetModel(16357, new WidgetPointer(arg2));
+			break;
+		case 5:
+			setWidgetModel(16358, new WidgetPointer(arg2));
+			break;
+		case 6:
+			setWidgetModel(16359, new WidgetPointer(arg2));
+			break;
+		case 7:
+			setWidgetModel(16360, new WidgetPointer(arg2));
+			break;
+		case 8:
+			setWidgetModel(16361, new WidgetPointer(arg2));
+			break;
+		case 9:
+			setWidgetModel(16362, new WidgetPointer(arg2));
+			break;
+		case 10:
+			setWidgetModel(16363, new WidgetPointer(arg2));
+			break;
+		case 11:
+			setWidgetModel(16364, new WidgetPointer(arg2));
+			break;
+		case 12:
+			setWidgetModel(16365, new WidgetPointer(arg2));
+			break;
+		case 13:
+			setWidgetModel(16366, new WidgetPointer(arg2));
+			break;
+		case 14:
+			setWidgetModel(16367, new WidgetPointer(arg2));
+			break;
+		case 15:
+			setWidgetModel(16368, new WidgetPointer(arg2));
+			break;
+		case 16:
+			setWidgetModel(16369, new WidgetPointer(arg2));
+			break;
+		case 17:
+			setWidgetModel(16370, new WidgetPointer(arg2));
+			break;
+		case 18:
+			setWidgetModel(16371, new WidgetPointer(arg2));
+			break;
+		case 19:
+			setWidgetModel(16372, new WidgetPointer(arg2));
+			break;
+		case 20:
+			setWidgetModel(16373, new WidgetPointer(arg2));
+			break;
+		case 21:
+			setWidgetModel(16374, new WidgetPointer(arg2));
+			break;
+		case 22:
+			setWidgetModel(16375, new WidgetPointer(arg2));
+			break;
+		case 23:
+			setWidgetModel(16376, new WidgetPointer(arg2));
+			break;
+		case 24:
+			setWidgetModel(16377, new WidgetPointer(arg2));
+			break;
+		default:
+			setWidgetModel(16378, new WidgetPointer(arg2));
+	}
+	return;
+}

@@ -1,0 +1,11 @@
+void script_564() {
+	if (globalint_1037 > subtract(getWidgetActualHeight(new WidgetPointer(746,3)), 117)) {
+		script_1652(1);
+	} else {
+		script_1650();
+	}
+	cs2method2301(48889930, -1, new WidgetPointer(746,75));
+	setScriptCallOnMouseDragged(1649, -2147483646, 0, "i1", new WidgetPointer(746,75));
+	setScriptCallOnMouseDragReleased(1649, -2147483646, 1, "i1", new WidgetPointer(746,75));
+	return;
+}

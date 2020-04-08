@@ -1,0 +1,15 @@
+void script_310(int arg0,int arg1,string arg2) {
+	int ivar2;
+	int ivar3;
+	int stack_dump0;
+	ivar2 = 0;
+	ivar3 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		stack_dump0 = add(add(getWidgetActualX(), getWidgetActualHeight()), 1);
+		ivar3 = add(add(getWidgetActualY(), getWidgetActualHeight()), 1);
+		ivar2 = stack_dump0;
+		ivar3 = subtract(ivar3, cs2method2601(new WidgetPointer(arg0)));
+		script_312(ivar2, ivar3, arg2);
+	}
+	return;
+}

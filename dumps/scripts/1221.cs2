@@ -1,0 +1,178 @@
+void script_1221(int arg0,int arg1) {
+	int ivar2;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	int stack_dump3;
+	string stack_dump4;
+	cs2func_script_802_struct(1,1,0) structdump_5;
+	cs2func_script_802_struct(1,1,0) structdump_6;
+	if (globalint_174 == 11) {
+		return;
+	}
+	ivar2 = script_2948();
+	switch (globalint_174) {
+		flow_3:
+			case 12:
+			if (arg0 == 13) {
+				script_2936(0);
+				return;
+			}
+			return;
+			case 2:
+			switch (ivar2) {
+				case 21:
+				case 1:
+				case -3:
+					return;
+			}
+			if (arg0 == 13) {
+				script_1174(11);
+				return;
+			}
+			return;
+			case 3:
+			switch (ivar2) {
+				case 21:
+				case 1:
+				case -3:
+					return;
+			}
+			switch (arg0) {
+				case 13:
+					script_1174(11);
+					return;
+				case 84:
+				case 80:
+					if (globalint_175 >= getClientCycle()) {
+						return;
+					}
+					globalint_174 = 4;
+					globalint_175 = getClientCycle();
+					globalint_1099 = strLength(script_2949(globalstring_33));
+					script_3237(39059534, 39059535, 39059536, 4, script_2949(globalstring_33));
+					return;
+				case 102:
+				case 103:
+				case 98:
+				case 99:
+				case 96:
+				case 97:
+					globalint_1099 = script_1553(arg0, globalint_1099, globalstring_32);
+					script_3237(39059528, 39059529, 39059530, 3, globalstring_32);
+					return;
+			}
+			IF ((strLength(globalstring_32) >= 320) && (arg0 != 85)) 
+				GOTO	flow_21
+			GOTO	flow_22
+		flow_21:
+			IF (arg0 != 101) 
+				GOTO	flow_23
+		flow_22:
+			IF (((boolean)strLength(strRemoveEntities(concatChar(((char)arg1), ""))))) 
+				GOTO	flow_23
+			GOTO	flow_24
+		flow_23:
+			return;
+		flow_24:
+			stack_dump0 = globalint_1099;
+			stack_dump1 = 0;
+			stack_dump2 = arg0;
+			stack_dump3 = arg1;
+			stack_dump4 = globalstring_32;
+			structdump_5 = script_802(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+			stack_dump4 = structdump_5.stringpart_0;
+			globalint_1099 = structdump_5.intpart_0;
+			globalstring_32 = stack_dump4;
+			setWidgetText(new WidgetPointer(596,73), globalstring_32);
+			script_3237(39059528, 39059529, 39059530, 3, globalstring_32);
+			return;
+			case 4:
+			switch (ivar2) {
+				case 21:
+				case 1:
+				case -3:
+					return;
+			}
+			switch (arg0) {
+				case 13:
+					script_1174(11);
+					return;
+				case 84:
+				case 80:
+					if (globalint_175 >= getClientCycle()) {
+						return;
+					}
+					if ((arg0 == 84) && (strLength(globalstring_32) > 0)) {
+						script_2945();
+						return;
+					}
+					globalint_174 = 3;
+					globalint_175 = getClientCycle();
+					globalint_1099 = strLength(globalstring_32);
+					script_3237(39059528, 39059529, 39059530, 3, globalstring_32);
+					return;
+				case 102:
+				case 103:
+				case 98:
+				case 99:
+				case 96:
+				case 97:
+					globalint_1099 = script_1553(arg0, globalint_1099, script_2949(globalstring_33));
+					script_3237(39059534, 39059535, 39059536, 4, script_2949(globalstring_33));
+					return;
+			}
+			if (((strLength(globalstring_33) >= 20) && (arg0 != 85)) && (arg0 != 101)) {
+				return;
+			}
+			stack_dump0 = globalint_1099;
+			stack_dump1 = 0;
+			stack_dump2 = arg0;
+			stack_dump3 = arg1;
+			stack_dump4 = globalstring_33;
+			structdump_6 = script_802(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+			stack_dump4 = structdump_6.stringpart_0;
+			globalint_1099 = structdump_6.intpart_0;
+			globalstring_33 = stack_dump4;
+			setWidgetText(new WidgetPointer(596,79), script_2949(globalstring_33));
+			script_3237(39059534, 39059535, 39059536, 4, script_2949(globalstring_33));
+			return;
+			case 5:
+			switch (ivar2) {
+				case -3:
+				case 1:
+					return;
+			}
+			if ((ivar2 == 21) && (arg0 == 13)) {
+				script_3235();
+				return;
+			}
+			if (arg0 == 13) {
+				script_2954();
+				return;
+			}
+			return;
+			case 10:
+			script_2222(arg0);
+			return;
+			case 6:
+			case 7:
+			case 8:
+			case 14:
+			case 15:
+			script_3216(arg0, arg1);
+			return;
+			case 13:
+			if (arg0 == 13) {
+				script_1174(globalint_1091);
+				return;
+			}
+			return;
+			case 17:
+			if (arg0 == 84) {
+				script_2206();
+			}
+			return;
+	}
+	return;
+}

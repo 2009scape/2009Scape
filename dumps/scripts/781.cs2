@@ -1,0 +1,6 @@
+string script_781(int arg0) {
+	if (arg0 >= 1000) {
+		return "*";
+	}
+	return intToStr(arg0);
+}

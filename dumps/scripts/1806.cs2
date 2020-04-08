@@ -1,0 +1,30 @@
+void script_1806(string arg0) {
+	int ivar0;
+	script_1548(12);
+	arg0 = lower(strRemoveEntities(arg0));
+	ivar0 = strLength(arg0);
+	arg0 = script_2332(arg0, "_", "\u00a0");
+	arg0 = script_2332(arg0, " ", "\u00a0");
+	while (((boolean)strIndexof(0, arg0, " ")) && (ivar0 > 0)) {
+		arg0 = substr(1, ivar0, arg0);
+		ivar0 = strLength(arg0);
+	}
+	while ((strIndexof(subtract(ivar0, 1), arg0, " ") == subtract(ivar0, 1)) && (ivar0 > 0)) {
+		arg0 = substr(0, subtract(ivar0, 1), arg0);
+		ivar0 = strLength(arg0);
+	}
+	if (((boolean)stringMethod4107(globalstring_38, arg0))) {
+		messageType0("Caller not changed.");
+		return;
+	}
+	globalstring_38 = arg0;
+	if (strLength(globalstring_38) > 0) {
+		messageType0("Caller set: " + script_1814(globalstring_38));
+	} else {
+		messageType0("Caller feature disabled.");
+	}
+	script_1809(17367062, 17367064, 17367065);
+	script_1809(51707918, 51707920, 51707921);
+	script_1809(72876037, 72876039, 72876040);
+	return;
+}

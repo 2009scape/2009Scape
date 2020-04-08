@@ -1,0 +1,10 @@
+void script_638(int arg0) {
+	int ivar1;
+	setWidgetSprite(1170, new WidgetPointer(arg0));
+	ivar1 = 0;
+	while (ivar1 < 6) {
+		script_41(((int)script_626(ivar1)));
+		ivar1 = add(ivar1, 1);
+	}
+	return;
+}

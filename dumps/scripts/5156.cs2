@@ -1,0 +1,19 @@
+void script_5156(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	if ((arg0 == -1) || (arg1 == -1)) {
+		return;
+	}
+	ivar2 = getOtherCommonData(arg1, 1351);
+	ivar3 = getOtherCommonData(arg1, 1358);
+	ivar4 = getOtherCommonData(arg1, 1872);
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetPosition(0, 0, 0, 0);
+	setWidgetSize(9, 60, 0, 0);
+	setWidgetSprite(ivar2);
+	cs2method2103(ivar3);
+	setWidgetHFlip(ivar4);
+	return;
+}

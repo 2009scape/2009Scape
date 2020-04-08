@@ -1,0 +1,22 @@
+void script_2835() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = subtract(extractX(getMyPositionHash()), mod(extractX(getMyPositionHash()), 64));
+	ivar1 = subtract(extractY(getMyPositionHash()), mod(extractY(getMyPositionHash()), 64));
+	ivar2 = addToCoordinate(0, ivar0, 0, ivar1);
+	cs2method5405(0, 4);
+	cs2method5405(1, 4);
+	cs2method5406(0, 0, script_2808(ivar2, 54662856, 55072476), 1185, script_2808(ivar2, 54662856, 55105244), 1030, 0);
+	cs2method5406(1, 0, script_2808(ivar2, 54662856, 55072467), 338, script_2808(ivar2, 54662856, 55072469), 338, 0);
+	cs2method5406(0, 1, script_2808(ivar2, 54662856, 55154393), 790, script_2808(ivar2, 54662856, 55154391), 705, 0);
+	cs2method5406(1, 1, script_2808(ivar2, 54662856, 55072473), 338, script_2808(ivar2, 54662856, 55072474), 338, 0);
+	cs2method5406(0, 2, script_2808(ivar2, 54662856, 55072470), 620, script_2808(ivar2, 54662856, 55072472), 580, 0);
+	cs2method5406(1, 2, script_2808(ivar2, 54662856, 55072477), 338, script_2808(ivar2, 54662856, 55072479), 338, 0);
+	cs2method5406(0, 3, script_2808(ivar2, 54662856, 55072483), 495, script_2808(ivar2, 54662856, 55072485), 445, 0);
+	cs2method5406(1, 3, script_2808(ivar2, 54662856, 55072486), 338, script_2808(ivar2, 54662856, 55072488), 338, 0);
+	globalint_1068 = 0;
+	setScriptCallOnMinimapRelatedSetting3(2836, "", new WidgetPointer(384,0));
+	cameraMethod5502(0, 0, 400, 400, 1, 0);
+	return;
+}

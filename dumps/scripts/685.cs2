@@ -1,0 +1,16 @@
+void script_685(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	arg3 = mod(add(arg3, arg5), multiply(arg4, 4));
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		if (arg3 <= arg4) {
+			setWidget3DRotation(0, 0, getWidgetRotateX(), mod(add(arg2, arg3), 2048), cs2method1607(), getWidget3DDistance());
+		} else if (arg3 <= multiply(arg4, 2)) {
+			setWidget3DRotation(0, 0, getWidgetRotateX(), mod(subtract(add(arg2, arg4), subtract(arg3, arg4)), 2048), cs2method1607(), getWidget3DDistance());
+		} else if (arg3 <= multiply(arg4, 3)) {
+			setWidget3DRotation(0, 0, getWidgetRotateX(), script_686(subtract(arg2, subtract(arg3, multiply(arg4, 2))), 2048), cs2method1607(), getWidget3DDistance());
+		} else {
+			setWidget3DRotation(0, 0, getWidgetRotateX(), script_686(add(subtract(arg2, arg4), subtract(arg3, multiply(arg4, 3))), 2048), cs2method1607(), getWidget3DDistance());
+		}
+		setScriptCallOnGameloop(685, new WidgetPointer(-32768,3), -2147483643, arg2, arg3, arg4, arg5, "Iiiiii");
+	}
+	return;
+}

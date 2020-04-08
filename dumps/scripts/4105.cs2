@@ -1,0 +1,68 @@
+void script_4105(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	string svar0;
+	if (globalint_729 > 1) {
+		setWidgetText(new WidgetPointer(arg0), formatNumber(globalint_729, 1) + " coins");
+	} else if (((boolean)globalint_729)) {
+		setWidgetText(new WidgetPointer(arg0), "1 coin");
+	} else if (((boolean)globalint_729)) {
+		setWidgetText(new WidgetPointer(arg0), "Nothing");
+	} else {
+		setWidgetText(new WidgetPointer(arg0), "Lots!");
+	}
+	if (globalint_697 > 1) {
+		setWidgetText(new WidgetPointer(arg1), formatNumber(globalint_697, 1) + " coins");
+	} else if (((boolean)globalint_697)) {
+		setWidgetText(new WidgetPointer(arg1), "1 coin");
+	} else if (((boolean)globalint_697)) {
+		setWidgetText(new WidgetPointer(arg1), "<col=ff0000>" + "Nothing" + "</col>");
+	} else {
+		setWidgetText(new WidgetPointer(arg1), "Lots!");
+	}
+	svar0 = "<col=ff0000>" + "Unknown" + "</col>";
+	ivar5 = 0;
+	if (globalint_729 < 0) {
+		if (globalint_697 < 0) {
+			setWidgetText(new WidgetPointer(arg2), svar0);
+			setWidgetIsHidden(true, new WidgetPointer(arg3));
+		} else {
+			setWidgetText(new WidgetPointer(arg2), svar0);
+			setWidgetIsHidden(false, new WidgetPointer(arg3));
+			setWidgetSprite(1174, new WidgetPointer(arg3));
+			setWidgetPosition(script_4106(arg4, svar0), 0, 0, 2, new WidgetPointer(arg3));
+		}
+	} else if (globalint_697 < 0) {
+		svar0 = "Unknown";
+		setWidgetText(new WidgetPointer(arg2), svar0);
+		setWidgetIsHidden(false, new WidgetPointer(arg3));
+		setWidgetSprite(1172, new WidgetPointer(arg3));
+		setWidgetPosition(script_4106(arg4, svar0), 0, 2, 2, new WidgetPointer(arg3));
+	} else if (ivar5 > 0) {
+		if (((boolean)ivar5)) {
+			svar0 = "<col=ff0000>" + "1 coin" + "</col>";
+		} else {
+			svar0 = "<col=ff0000>" + formatNumber(ivar5, 1) + " coins" + "</col>";
+		}
+		setWidgetText(new WidgetPointer(arg2), svar0);
+		setWidgetIsHidden(false, new WidgetPointer(arg3));
+		setWidgetSprite(1174, new WidgetPointer(arg3));
+		setWidgetPosition(script_4106(arg4, svar0), 0, 0, 2, new WidgetPointer(arg3));
+	} else if (ivar5 < 0) {
+		ivar5 = subtract(0, ivar5);
+		if (((boolean)ivar5)) {
+			svar0 = "1 coin";
+		} else {
+			svar0 = formatNumber(ivar5, 1) + " coins";
+		}
+		setWidgetText(new WidgetPointer(arg2), svar0);
+		setWidgetIsHidden(false, new WidgetPointer(arg3));
+		setWidgetSprite(1172, new WidgetPointer(arg3));
+		setWidgetPosition(script_4106(arg4, svar0), 0, 2, 2, new WidgetPointer(arg3));
+	} else {
+		svar0 = "No net transfer";
+		setWidgetText(new WidgetPointer(arg2), svar0);
+		setWidgetIsHidden(true, new WidgetPointer(arg3));
+	}
+	ivar5 = subtract(globalint_729, globalint_697);
+	return;
+}

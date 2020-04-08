@@ -1,0 +1,46 @@
+cs2func_script_3361_struct(2,1,0) script_3361() {
+	flow_0:
+		SWITCH (standart_config_448) {
+			case 17975:
+				 GOTO flow_1
+			case 17976:
+				 GOTO flow_2
+			case 17977:
+				 GOTO flow_3
+			case 17978:
+				 GOTO flow_4
+			case 17979:
+				 GOTO flow_5
+			case 17980:
+				 GOTO flow_6
+			case 17981:
+				 GOTO flow_7
+			case 17982:
+				 GOTO flow_8
+			case 17983:
+				 GOTO flow_9
+			case 17984:
+				 GOTO flow_10
+		}
+		return newstruct cs2func_script_3361_struct(7, 18067, "Second Wind (Tier 1)");
+	flow_1:
+		return newstruct cs2func_script_3361_struct(7, 18067, "Second Wind (Tier 1)");
+	flow_2:
+		return newstruct cs2func_script_3361_struct(17, 18068, "Second Wind (Tier 2)");
+	flow_3:
+		return newstruct cs2func_script_3361_struct(27, 18069, "Second Wind (Tier 3)");
+	flow_4:
+		return newstruct cs2func_script_3361_struct(37, 18070, "Second Wind (Tier 4)");
+	flow_5:
+		return newstruct cs2func_script_3361_struct(47, 18071, "Second Wind (Tier 5)");
+	flow_6:
+		return newstruct cs2func_script_3361_struct(57, 18072, "Second Wind (Tier 6)");
+	flow_7:
+		return newstruct cs2func_script_3361_struct(67, 18073, "Second Wind (Tier 7)");
+	flow_8:
+		return newstruct cs2func_script_3361_struct(77, 18074, "Second Wind (Tier 8)");
+	flow_9:
+		return newstruct cs2func_script_3361_struct(87, 18075, "Second Wind (Tier 9)");
+	flow_10:
+		return newstruct cs2func_script_3361_struct(97, 18076, "Second Wind (Tier 10)");
+}

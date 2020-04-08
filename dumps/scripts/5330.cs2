@@ -1,0 +1,18 @@
+void script_5330() {
+	globalstring_139 = "";
+	globalstring_141 = "";
+	globalstring_191 = "";
+	globalstring_192 = "";
+	globalstring_193 = "";
+	globalstring_289 = "";
+	globalstring_290 = "";
+	globalstring_291 = "";
+	globalstring_297 = "";
+	globalstring_298 = "";
+	globalstring_299 = "";
+	globalstring_300 = "";
+	globalstring_301 = "";
+	globalstring_302 = "";
+	globalstring_303 = "";
+	return;
+}

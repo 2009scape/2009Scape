@@ -1,0 +1,101 @@
+void script_2373(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	string svar0;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	cs2func_script_788_struct(2,0,0) structdump_3;
+	cs2func_script_788_struct(2,0,0) structdump_4;
+	deleteAllExtraChilds(new WidgetPointer(667,7));
+	ivar2 = 0;
+	ivar3 = -1;
+	ivar4 = -1;
+	svar0 = "";
+	while (ivar2 < getItemContainerLength(94)) {
+		switch (ivar2) {
+			case 0:
+				ivar3 = 43712525;
+				break;
+			case 1:
+				ivar3 = 43712527;
+				break;
+			case 2:
+				ivar3 = 43712528;
+				break;
+			case 3:
+				ivar3 = 43712530;
+				break;
+			case 4:
+				ivar3 = 43712531;
+				break;
+			case 5:
+				ivar3 = 43712532;
+				break;
+			case 7:
+				ivar3 = 43712533;
+				break;
+			case 9:
+				ivar3 = 43712535;
+				break;
+			case 10:
+				ivar3 = 43712534;
+				break;
+			case 12:
+				ivar3 = 43712536;
+				break;
+			case 13:
+				ivar3 = 43712529;
+				break;
+			case 14:
+				ivar3 = 43712526;
+				break;
+			default:
+				ivar3 = -1;
+		}
+		createExtraChild(new WidgetPointer(667,7), 5, ivar2);
+		if (ivar3 != -1) {
+			ivar4 = getItemIdInSlot(94, ivar2);
+			if (ivar4 != -1) {
+				setWidgetSize(36, 32, 0, 0);
+				stack_dump0 = ivar3;
+				stack_dump1 = 2;
+				stack_dump2 = 2;
+				structdump_3 = script_788(stack_dump0, stack_dump1, stack_dump2);
+				setWidgetPosition(structdump_3.intpart_0, structdump_3.intpart_1, 0, 0);
+				setItemOnWidgetMethod1200(ivar4, getItemAmtInSlot(94, ivar2));
+				cs2method1305(concat("<col=ff9040>", getItemName(ivar4)));
+				setWidgetContextMenuOption(1, "Remove");
+				setWidgetContextMenuOption(9, "Stats");
+				cs2method1306("Compare");
+				setWidgetContextMenuOption(10, "Examine");
+				setWidgetShadowColor(new Color(48, 32, 32));
+				if (arg1 == ivar2) {
+					setWidgetBorderThickness(2);
+				} else {
+					setWidgetBorderThickness(1);
+				}
+				setScriptCallOnClickContextMenu(1620, new WidgetPointer(-32768,3), -2147483643, 100, 0, 8, "Iiiii");
+				setScriptCallOnUse(2372, new WidgetPointer(arg0), ivar2, "Ii");
+				setScriptCallOnUseWith(2372, new WidgetPointer(arg0), -1, "Ii");
+			} else {
+				setWidgetSize(32, 32, 0, 0);
+				stack_dump0 = ivar3;
+				stack_dump1 = 2;
+				stack_dump2 = 2;
+				structdump_4 = script_788(stack_dump0, stack_dump1, stack_dump2);
+				setWidgetPosition(structdump_4.intpart_0, structdump_4.intpart_1, 0, 0);
+				setWidgetSprite(cs2method_3408(105, 100, 796, ivar2));
+			}
+		} else {
+			setWidgetHidden(1);
+		}
+		ivar2 = add(ivar2, 1);
+	}
+	if ((arg1 != -1) && (getItemIdInSlot(94, arg1) == -1)) {
+		arg1 = -1;
+	}
+	setScriptCallOnItemContainerUpdate(2372, new WidgetPointer(-32768,3), arg1, 94, 1, "IiY", new WidgetPointer(arg0));
+	return;
+}

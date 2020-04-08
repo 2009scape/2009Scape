@@ -1,0 +1,10 @@
+void script_2577(int arg0,int arg1,int arg2) {
+	if (getItemAmtInContainer(93, 995) < arg1) {
+		setWidgetRGB(new Color(204, 0, 0), new WidgetPointer(arg0));
+	} else if (getSkillActualLvl(22) < arg2) {
+		setWidgetRGB(new Color(204, 204, 0), new WidgetPointer(arg0));
+	} else {
+		setWidgetRGB(new Color(0, 204, 0), new WidgetPointer(arg0));
+	}
+	return;
+}

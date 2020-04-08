@@ -1,0 +1,11 @@
+string script_821() {
+	string svar0;
+	svar0 = "";
+	svar0 = script_822(bitconfig_1043, 1, svar0);
+	svar0 = script_822(bitconfig_1044, 0, svar0);
+	svar0 = script_822(bitconfig_1045, 0, svar0);
+	svar0 = script_822(bitconfig_1046, 0, svar0);
+	svar0 = script_822(bitconfig_1047, 0, svar0);
+	svar0 = script_822(bitconfig_1048, 0, svar0);
+	return svar0;
+}

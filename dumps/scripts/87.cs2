@@ -1,0 +1,9 @@
+void script_87(int arg0) {
+	setWidgetText(new WidgetPointer(arg0), "Score: " + intToStr(bitconfig_2121));
+	if (((boolean)bitconfig_2121)) {
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(arg0));
+	} else {
+		setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(arg0));
+	}
+	return;
+}

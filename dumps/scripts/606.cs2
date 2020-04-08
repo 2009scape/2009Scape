@@ -1,0 +1,15 @@
+void script_606() {
+	int ivar0;
+	int ivar1;
+	createExtraChild(new WidgetPointer(662,74), 5, 0);
+	setWidgetSize(32, 36, 0, 0);
+	setWidgetPosition(0, 0, 0, 0);
+	createExtraChild(new WidgetPointer(747,17), 5, 0);
+	setWidgetSize(57, 34, 0, 0);
+	setWidgetPosition(0, 0, 0, 0);
+	ivar0 = 1194;
+	ivar1 = 1195;
+	script_659(43384905, ivar0, ivar1, getItemHashmapData(standart_config_448, 394), cs2method_3408(111, 111, 1283, standart_config_448), 1, -1, 0, -1, 0, -1, 0, globalstring_204, globalstring_205);
+	script_608();
+	return;
+}

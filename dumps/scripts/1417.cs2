@@ -1,0 +1,50 @@
+void script_1417(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	if (((boolean)globalint_1387)) {
+		return;
+	}
+	ivar1 = script_1502(arg0);
+	ivar2 = -1;
+	ivar3 = getWidgetActualX(new WidgetPointer(arg0));
+	ivar4 = getWidgetActualY(new WidgetPointer(arg0));
+	if (bitconfig_7516 == ivar1) {
+		ivar2 = script_486(bitconfig_7520);
+	} else if (bitconfig_7517 == ivar1) {
+		ivar2 = script_486(bitconfig_7521);
+	} else if (bitconfig_7518 == ivar1) {
+		ivar2 = script_486(bitconfig_7526);
+	} else if (bitconfig_7519 == ivar1) {
+		ivar2 = script_486(bitconfig_7527);
+	} else if (bitconfig_7522 == ivar1) {
+		ivar2 = script_486(bitconfig_7530);
+	} else if (bitconfig_7523 == ivar1) {
+		ivar2 = script_486(bitconfig_7531);
+	} else if (bitconfig_7524 == ivar1) {
+		ivar2 = script_486(bitconfig_7532);
+	} else if (bitconfig_7525 == ivar1) {
+		ivar2 = script_486(bitconfig_7533);
+	} else if (bitconfig_7528 == ivar1) {
+		ivar2 = script_486(bitconfig_7534);
+	} else {
+		if (bitconfig_7529 == ivar1) {
+			ivar2 = script_486(bitconfig_7535);
+		}
+	}
+	if (ivar2 != -1) {
+		setWidgetText(new WidgetPointer(1017,241), getNpcNodemapData(ivar2, 1139));
+		setWidgetSize(add(getTextWidth(2710, getNpcNodemapData(ivar2, 1139)), 10), getWidgetActualHeight(new WidgetPointer(1017,226)), 0, 0, new WidgetPointer(1017,226));
+		ivar3 = subtract(add(ivar3, getWidgetActualWidth(new WidgetPointer(arg0))), 3);
+		ivar4 = subtract(ivar4, getWidgetActualHeight(new WidgetPointer(arg0)));
+		if (add(ivar3, getWidgetActualWidth(new WidgetPointer(1017,226))) >= add(getWidgetActualX(new WidgetPointer(1017,31)), getWidgetActualWidth(new WidgetPointer(1017,31)))) {
+			ivar3 = add(subtract(getWidgetActualX(new WidgetPointer(arg0)), getWidgetActualWidth(new WidgetPointer(1017,226))), 3);
+		}
+		setWidgetPosition(ivar3, ivar4, 0, 0, new WidgetPointer(1017,226));
+		setWidgetIsHidden(false, new WidgetPointer(1017,226));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(1017,226));
+	}
+	return;
+}

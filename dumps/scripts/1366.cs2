@@ -1,0 +1,10 @@
+void script_1366() {
+	if (standart_config_380 == 25) {
+		setWidgetText(new WidgetPointer(57,0), "Time until next game starts: 0");
+	} else if (standart_config_380 > 0) {
+		setWidgetText(new WidgetPointer(57,0), "Time until next game starts: " + intToStr(standart_config_380));
+	} else {
+		setWidgetText(new WidgetPointer(57,0), "Waiting for players to join the other team.");
+	}
+	return;
+}

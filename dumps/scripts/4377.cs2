@@ -1,0 +1,37 @@
+void script_4377() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	if (standart_config_2134 == globalint_1499) {
+		setWidgetText(new WidgetPointer(1101,82), "You have voted.");
+	} else {
+		setWidgetText(new WidgetPointer(1101,82), "You have not yet voted." + "<br>" + "How would you like to vote?");
+	}
+	if (((boolean)bitconfig_9151)) {
+		setWidgetText(new WidgetPointer(1101,12), "Results of last vote:");
+	} else if (((boolean)bitconfig_9154) || ((boolean)bitconfig_9154)) {
+		setWidgetText(new WidgetPointer(1101,12), "Vote open for less than a minute.");
+	} else {
+		setWidgetText(new WidgetPointer(1101,12), "Vote open for less than " + intToStr(bitconfig_9154) + " minutes.");
+	}
+	ivar0 = add(bitconfig_9149, bitconfig_9150);
+	ivar1 = 0;
+	ivar2 = 0;
+	if (ivar0 > 0) {
+		if (ivar0 == bitconfig_9149) {
+			ivar1 = 100;
+		} else if (ivar0 == bitconfig_9150) {
+			ivar2 = 100;
+		} else if (((boolean)bitconfig_9150)) {
+			ivar2 = 0;
+		} else {
+			ivar2 = subtract(100, ivar1);
+		}
+		ivar1 = divide(multiply(100, bitconfig_9149), ivar0);
+	}
+	setWidgetText(new WidgetPointer(1101,7), intToStr(bitconfig_9149));
+	setWidgetText(new WidgetPointer(1101,8), intToStr(bitconfig_9150));
+	script_4542(ivar1, 72155195, 72155200);
+	script_4542(ivar2, 72155205, 72155210);
+	return;
+}

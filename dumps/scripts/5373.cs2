@@ -1,0 +1,12 @@
+void script_5373(int arg0,int arg1) {
+	if (arg1 == -1) {
+		playSoundEffect2False(7715, 45, 0, 100);
+		setScriptCallOnGameloop(5369, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+	} else if (arg1 == -2) {
+		setWidgetText(new WidgetPointer(arg0), "-");
+	} else {
+		setWidgetText(new WidgetPointer(arg0), intToStr(arg1));
+	}
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+	return;
+}

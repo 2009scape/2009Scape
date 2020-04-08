@@ -1,0 +1,19 @@
+void script_4564(int arg0,string arg1) {
+	switch (arg0) {
+		case 6:
+			cs2method3605(strRemoveEntities(arg1));
+			break;
+		case 7:
+			cs2method3607(strRemoveEntities(arg1));
+			break;
+		case 8:
+			cs2method3606(strRemoveEntities(arg1));
+			break;
+		case 9:
+			cs2method3608(strRemoveEntities(arg1));
+			break;
+		case 10:
+			script_1633(arg1);
+	}
+	return;
+}

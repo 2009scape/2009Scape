@@ -1,0 +1,6 @@
+void script_2426(int arg0,int arg1,int arg2,int arg3) {
+	setWidgetText(new WidgetPointer(arg0), globalstring_143);
+	setWidgetText(new WidgetPointer(arg1), globalstring_144);
+	script_1585(arg2, arg3, globalstring_145);
+	return;
+}

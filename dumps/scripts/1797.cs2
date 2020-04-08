@@ -1,0 +1,65 @@
+void script_1797(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	ivar2 = 0;
+	ivar3 = 0;
+	while (ivar2 < 10) {
+		switch (ivar2) {
+			case 0:
+				setWidgetPosition(25, ivar3, 0, 0, new WidgetPointer(791,23));
+				setWidgetPosition(4, ivar3, 0, 0, new WidgetPointer(791,24));
+				setWidgetPosition(0, ivar3, 0, 0, new WidgetPointer(791,25));
+				break;
+			case 1:
+				setWidgetPosition(25, ivar3, 0, 0, new WidgetPointer(791,26));
+				setWidgetPosition(4, ivar3, 0, 0, new WidgetPointer(791,27));
+				setWidgetPosition(0, ivar3, 0, 0, new WidgetPointer(791,28));
+				break;
+			case 2:
+				setWidgetPosition(25, ivar3, 0, 0, new WidgetPointer(791,29));
+				setWidgetPosition(4, ivar3, 0, 0, new WidgetPointer(791,30));
+				setWidgetPosition(0, ivar3, 0, 0, new WidgetPointer(791,31));
+				break;
+			case 3:
+				setWidgetPosition(25, ivar3, 0, 0, new WidgetPointer(791,32));
+				setWidgetPosition(4, ivar3, 0, 0, new WidgetPointer(791,33));
+				setWidgetPosition(0, ivar3, 0, 0, new WidgetPointer(791,34));
+				break;
+			case 4:
+				setWidgetPosition(25, ivar3, 0, 0, new WidgetPointer(791,35));
+				setWidgetPosition(4, ivar3, 0, 0, new WidgetPointer(791,36));
+				setWidgetPosition(0, ivar3, 0, 0, new WidgetPointer(791,37));
+				break;
+			case 5:
+				setWidgetPosition(25, ivar3, 0, 0, new WidgetPointer(791,38));
+				setWidgetPosition(4, ivar3, 0, 0, new WidgetPointer(791,39));
+				setWidgetPosition(0, ivar3, 0, 0, new WidgetPointer(791,40));
+				break;
+			case 6:
+				setWidgetPosition(25, ivar3, 0, 0, new WidgetPointer(791,41));
+				setWidgetPosition(4, ivar3, 0, 0, new WidgetPointer(791,42));
+				setWidgetPosition(0, ivar3, 0, 0, new WidgetPointer(791,43));
+				break;
+			case 7:
+				setWidgetPosition(25, ivar3, 0, 0, new WidgetPointer(791,44));
+				setWidgetPosition(4, ivar3, 0, 0, new WidgetPointer(791,45));
+				setWidgetPosition(0, ivar3, 0, 0, new WidgetPointer(791,46));
+				break;
+			case 8:
+				setWidgetPosition(25, ivar3, 0, 0, new WidgetPointer(791,47));
+				setWidgetPosition(4, ivar3, 0, 0, new WidgetPointer(791,48));
+				setWidgetPosition(0, ivar3, 0, 0, new WidgetPointer(791,49));
+				break;
+			case 9:
+				setWidgetPosition(25, ivar3, 0, 0, new WidgetPointer(791,50));
+				setWidgetPosition(4, ivar3, 0, 0, new WidgetPointer(791,51));
+				setWidgetPosition(0, ivar3, 0, 0, new WidgetPointer(791,52));
+		}
+		ivar3 = add(ivar3, 17);
+		ivar2 = add(ivar2, 1);
+	}
+	setWidgetScrollMax(0, ivar3, new WidgetPointer(arg0));
+	cs2method2100(0, 0, new WidgetPointer(arg0));
+	script_31(arg1, arg0, 792, 789, 790, 791, 773, 788);
+	return;
+}

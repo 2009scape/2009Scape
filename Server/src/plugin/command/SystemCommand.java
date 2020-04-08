@@ -66,9 +66,6 @@ public final class SystemCommand extends CommandPlugin {
 			ResourceManager.addResource(toInteger(args[1]), toInteger(args[2]), sell);
 			System.out.println("Added " + (sell ? "selling" : "buying") + " resource " + args[1] + ", " + args[2] + "!");
 			return true;
-		case "kseco":
-			ResourceManager.kickStartEconomy();
-			return true;
 		case "resetrm":
 			ResourceManager.getStock().clear();
 			System.out.println("Fully reset resource manager!");

@@ -1,0 +1,10 @@
+string script_2949(string arg0) {
+	int ivar0;
+	ivar0 = strLength(arg0);
+	arg0 = "";
+	while (ivar0 > 0) {
+		arg0 = arg0 + "*";
+		ivar0 = subtract(ivar0, 1);
+	}
+	return arg0;
+}

@@ -1,0 +1,30 @@
+void script_5238(int arg0) {
+	int ivar1;
+	string svar0;
+	svar0 = "Ability";
+	ivar1 = cs2method_3408(105, 74, 5033, bitconfig_9712);
+	setWidgetIsHidden(true, new WidgetPointer(1126,4));
+	setWidgetIsHidden(true, new WidgetPointer(1126,5));
+	setWidgetIsHidden(true, new WidgetPointer(1126,6));
+	setWidgetIsHidden(true, new WidgetPointer(1126,7));
+	switch (arg0) {
+		case 1:
+			svar0 = getOtherCommonData(ivar1, 1900);
+			setWidgetIsHidden(false, new WidgetPointer(1126,4));
+			break;
+		case 2:
+			svar0 = getOtherCommonData(ivar1, 1903);
+			setWidgetIsHidden(false, new WidgetPointer(1126,5));
+			break;
+		case 3:
+			svar0 = getOtherCommonData(ivar1, 1906);
+			setWidgetIsHidden(false, new WidgetPointer(1126,6));
+			break;
+		case 4:
+			svar0 = getOtherCommonData(ivar1, 1909);
+			setWidgetIsHidden(false, new WidgetPointer(1126,7));
+	}
+	setWidgetText(new WidgetPointer(1126,49), svar0);
+	setWidgetIsHidden(false, new WidgetPointer(1126,47));
+	return;
+}

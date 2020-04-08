@@ -1,0 +1,12 @@
+void script_1701() {
+	if (((boolean)globalint_1052)) {
+		playSoundEffect(8123, 1, 0);
+		globalint_1052 = 0;
+	} else {
+		playSoundEffect(8096, 1, 0);
+		globalint_1052 = 1;
+	}
+	setScriptCallOnGameloop(1702, 0, "i", new WidgetPointer(271,9));
+	script_1700();
+	return;
+}

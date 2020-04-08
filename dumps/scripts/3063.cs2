@@ -1,0 +1,337 @@
+void script_3063(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	string svar4;
+	string svar5;
+	string svar6;
+	string svar7;
+	string svar8;
+	int stack_dump0;
+	opcStruct6506(4,3,0) structdump_1;
+	ivar2 = getGameloginRC();
+	if (ivar2 == -3) {
+		script_3064(0);
+		script_3093(ivar2, 0, 1, -1, 0, -1, 0, "Logging In - Please Wait", "", "", "", "");
+		globalint_1100 = -3;
+		return;
+	}
+	if (globalint_1100 == -3) {
+		script_3097();
+	}
+	ivar3 = 0;
+	svar0 = "";
+	ivar4 = 0;
+	svar1 = "";
+	ivar5 = 0;
+	svar2 = "";
+	ivar6 = 0;
+	ivar7 = 0;
+	svar3 = "";
+	if (ivar2 == 21) {
+		globalint_1100 = 21;
+		script_3064(0);
+		if (((boolean)globalint_200)) {
+			globalint_200 = getWorldswitchTimer();
+		}
+		globalint_200 = subtract(globalint_200, 1);
+		if (globalint_200 <= 0) {
+			if (cs2method6500()) {
+				globalint_200 = 1;
+				return;
+			}
+			if (arg1 > 0) {
+				stack_dump0 = arg1;
+				structdump_1 = cs2method6506(stack_dump0);
+				svar3 = structdump_1.stringpart_2;
+				ivar7 = structdump_1.intpart_3;
+				ivar6 = structdump_1.intpart_2;
+				svar2 = structdump_1.stringpart_1;
+				ivar5 = structdump_1.intpart_1;
+				svar1 = structdump_1.stringpart_0;
+				ivar4 = structdump_1.intpart_0;
+				if (setWorldHost(arg1, svar3)) {
+					ivar4 = 0;
+				}
+			}
+			setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+			script_3062(arg0);
+			return;
+		}
+		ivar3 = divide(globalint_200, 50);
+		if (((boolean)ivar3)) {
+			svar0 = "You have only just left another world. Your profile will be transferred in" + "<br>" + "1 second.";
+		} else {
+			svar0 = "You have only just left another world. Your profile will be transferred in" + "<br>" + intToStr(ivar3) + " seconds.";
+		}
+		if (isWidgetHidden(new WidgetPointer(906,29))) {
+			script_3093(ivar2, 0, 0, 2611, 1, 1, 0, svar0, "Abort Login", "Abort Login", "", "");
+		} else {
+			script_1871(svar0);
+		}
+		return;
+	}
+	if (ivar2 == 42) {
+		setWidgetIsHidden(false, new WidgetPointer(906,40));
+		setWidgetText(new WidgetPointer(906,5), intToStr(arg1));
+		setWidgetText(new WidgetPointer(906,6), intToStr(getReturncode42ExtraData()));
+		if (globalint_1100 != 42) {
+			script_3093(ivar2, 1, 0, 2611, 0, 0, 1, "World " + intToStr(arg1) + " is currently full." + "<br>" + "You have been added to the" + "<br>" + "queue for this world." + "<br>" + "You can track your progress in the" + "<br>" + "queue from lower left corner of this" + "<br>" + "screen.", "", "", "OK", "OK");
+		}
+		globalint_1100 = 42;
+		return;
+	}
+	if (ivar2 == 43) {
+		setWidgetText(new WidgetPointer(906,5), intToStr(arg1));
+		setWidgetText(new WidgetPointer(906,6), intToStr(getReturncode42ExtraData()));
+		globalint_1100 = 43;
+		return;
+	}
+	setWidgetIsHidden(true, new WidgetPointer(906,40));
+	if (arg0 == 59375639) {
+		script_1299(1, 1);
+	}
+	script_3097();
+	script_3064(1);
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+	svar4 = "";
+	ivar8 = 1;
+	ivar9 = 0;
+	ivar10 = 2608;
+	ivar11 = 0;
+	ivar12 = 0;
+	svar5 = "";
+	svar6 = "";
+	ivar13 = 1;
+	svar7 = "Back";
+	svar8 = "Back";
+	ivar14 = getDetailedRC();
+	ivar15 = getReturncodeExtraData();
+	switch (ivar2) {
+		case -2:
+			script_3097();
+			return;
+		case 29:
+			switch (ivar14) {
+				case 0:
+					svar4 = "You must have a Combat Level of at least 20 (not including Summoning) to enter a PvP world.";
+					break;
+				case 1:
+					svar4 = "You are currently carrying lent items and cannot enter a PvP world.";
+					break;
+				case 2:
+					svar4 = "You must be standing in the Wilderness or Edgeville to enter this bounty world.";
+					break;
+				case 3:
+					svar4 = "You must have a total skill level of 1,000 or greater to enter this world.";
+					break;
+				case 5:
+					svar4 = "You must have a total skill level of 1,500 or greater to enter this world.";
+					break;
+				case 4:
+					svar4 = "You must move to a safe area before you can log in to a PvP or bounty world.";
+					break;
+				default:
+					svar4 = "Unexpected server response. Please try using a different world.";
+			}
+			break;
+		case 46:
+			svar4 = "This instance is marked for deletion/rebuild. Please try using a different world.";
+			break;
+		case 45:
+			switch (ivar15) {
+				case 0:
+					switch (ivar14) {
+						case 0:
+							svar4 = "You must be near the TzHaar Fight Pits entrance to enter a global match.";
+							break;
+						default:
+							svar4 = "Unable to log in. Please try using a different world.";
+					}
+					break;
+				case 1:
+					switch (ivar14) {
+						case 1:
+							svar4 = "There was an error connecting to your meeting room. Please try again.";
+							break;
+						case 2:
+							svar4 = "You need a higher rank to enter that private tent.";
+							break;
+						case 3:
+							svar4 = "You need an invitation to enter that private room.";
+							break;
+						default:
+							svar4 = "Unable to log in. Please try using a different world.";
+					}
+					break;
+				default:
+					svar4 = "Unable to log in. Please try using a different world.";
+			}
+			break;
+		case -5:
+			svar4 = "Connection timed out. Please try using a different world.";
+			break;
+		case -4:
+			svar4 = "Error connecting to server.";
+			break;
+		case -1:
+			svar4 = "No response from server. Please try using a different world.";
+			break;
+		case 5:
+			svar4 = "Your account has not logged out from its last session. Try again in a few minutes.";
+			break;
+		case 7:
+			svar4 = "This world is full. Please use a different world.";
+			break;
+		case 8:
+			svar4 = "Unable to connect: login server offline.";
+			break;
+		case 9:
+			svar4 = "Login limit exceeded: too many connections from your address.";
+			break;
+		case 10:
+			svar4 = "Unable to connect: bad session id.";
+			break;
+		case 13:
+			svar4 = "Could not complete login. Please try using a different world.";
+			break;
+		case 16:
+			svar4 = "Too many incorrect logins from your address. Please wait 5 minutes before trying again.";
+			break;
+		case 17:
+			svar4 = "You are standing in a members-only area. To play on this world, move to a free area first.";
+			break;
+		case 20:
+			svar4 = "Invalid loginserver requested. Please try using a different world.";
+			break;
+		case 22:
+			svar4 = "Malformed login packet. Please try again.";
+			break;
+		case 23:
+			svar4 = "No reply from login server. Please wait a minute and try again.";
+			break;
+		case 24:
+			svar4 = "Error loading your profile. Please contact customer support.";
+			break;
+		case 25:
+			svar4 = "Unexpected loginserver response. Please try using a different world.";
+			break;
+		case 26:
+			svar4 = "This computer's address has been blocked, as it was used to break our rules.";
+			break;
+		case 27:
+			svar4 = "Service unavailable.";
+			break;
+		case 3:
+			svar4 = "Your password has been updated. Please leave the lobby and log in again.";
+			break;
+		case 36:
+			svar4 = "Unable to connect: authentication server offline.";
+			break;
+		case 37:
+			svar4 = "Your account is currently inaccessible. Please try again in a few minutes.";
+			break;
+		case 39:
+			svar4 = "The instance you tried to join no longer exists. Please try using a different world.";
+			break;
+		case 41:
+			svar4 = "The instance you tried to join is full. Please try back later or try using a different world.";
+			break;
+		case 44:
+			svar4 = "Our systems are currently unavailable. Please try again in a few minutes.";
+			break;
+		case 35:
+			svar4 = "Your session has expired. Please click 'Back' in your browser to renew it.";
+			svar7 = "Close";
+			svar8 = "Close";
+			break;
+		case 14:
+			ivar8 = 0;
+			ivar10 = 2610;
+			svar4 = "The server is being updated. Please wait a few minutes and try again.";
+			break;
+		case 6:
+			ivar8 = 0;
+			ivar10 = 2610;
+			svar4 = "RuneScape has been updated! Please reload this page.";
+			break;
+		case 4:
+			svar4 = "Your account has been disabled. Check your Message Centre for details.";
+			ivar11 = 1;
+			svar5 = "Message Centre";
+			svar6 = "Message Centre";
+			break;
+		case 11:
+			svar4 = "Your password is an extremely common choice, and is not secure. You must change it before you can log in.";
+			ivar11 = 1;
+			svar5 = "Change Password";
+			svar6 = "Change Password";
+			break;
+		case 18:
+			ivar10 = 2612;
+			svar4 = "Your account has been locked. If you have not received an account recovery email, please select 'Recover Account'.";
+			ivar11 = 1;
+			svar5 = "Recover Account";
+			svar6 = "Recover Account";
+			break;
+		case 31:
+			svar4 = "You must change your account's display name before you can log in.";
+			ivar11 = 1;
+			svar5 = "Change Display Name";
+			svar6 = "Change Display Name";
+			break;
+		case 30:
+			svar4 = "This is not a member's account. Please choose a 'free' world from the website to play on this account.";
+			ivar11 = 1;
+			svar5 = "Subscribe";
+			svar6 = "Subscribe";
+			break;
+		case 19:
+			svar4 = "Fullscreen is currently a members-only feature. To log in, either exit fullscreen via the options menu or use a member's account.";
+			ivar11 = 1;
+			svar5 = "Subscribe";
+			svar6 = "Subscribe";
+			break;
+		case 12:
+			ivar8 = 0;
+			ivar10 = 2607;
+			svar4 = "You need a member's account to log in to this world. Please subscribe or use a different world.";
+			ivar11 = 1;
+			svar5 = "Subscribe";
+			svar6 = "Subscribe";
+			break;
+		case 40:
+			ivar8 = 0;
+			ivar10 = 2607;
+			svar4 = "You need a member's account to log in to this instance. Please subscribe or use a different world.";
+			ivar11 = 1;
+			svar5 = "Subscribe";
+			svar6 = "Subscribe";
+			break;
+		case 32:
+			svar4 = "Your account has negative membership credit. Please log into the billing system to add credit to your account.";
+			ivar11 = 1;
+			svar5 = "Add Credit";
+			svar6 = "Add Credit";
+			break;
+		default:
+			svar4 = "Unexpected server response. Please try using a different world.";
+	}
+	script_3093(ivar2, ivar8, ivar9, ivar10, ivar11, ivar12, ivar13, svar4, svar5, svar6, svar7, svar8);
+	return;
+}

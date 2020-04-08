@@ -1,0 +1,38 @@
+void script_956() {
+	cs2method2305(new WidgetPointer(732,2), "<col=ff981f>" + "Druidic Mage Top" + "</col>");
+	cs2method2305(new WidgetPointer(732,7), "<col=ff981f>" + "Druidic Mage Bottom" + "</col>");
+	cs2method2305(new WidgetPointer(732,12), "<col=ff981f>" + "Druidic Mage Hood" + "</col>");
+	cs2method2305(new WidgetPointer(732,19), "<col=ff981f>" + "Combat Robe Top" + "</col>");
+	cs2method2305(new WidgetPointer(732,24), "<col=ff981f>" + "Combat Robe Bottom" + "</col>");
+	cs2method2305(new WidgetPointer(732,29), "<col=ff981f>" + "Combat Hood" + "</col>");
+	cs2method2305(new WidgetPointer(732,36), "<col=ff981f>" + "Battle Robe Top" + "</col>");
+	cs2method2305(new WidgetPointer(732,41), "<col=ff981f>" + "Battle Robe Bottom" + "</col>");
+	cs2method2305(new WidgetPointer(732,46), "<col=ff981f>" + "Battle Hood" + "</col>");
+	cs2method2305(new WidgetPointer(732,53), "<col=ff981f>" + "Green D'Hide Coif" + "</col>");
+	cs2method2305(new WidgetPointer(732,58), "<col=ff981f>" + "Blue D'Hide Coif" + "</col>");
+	cs2method2305(new WidgetPointer(732,63), "<col=ff981f>" + "Red D'Hide Coif" + "</col>");
+	cs2method2305(new WidgetPointer(732,68), "<col=ff981f>" + "Black D'Hide Coif" + "</col>");
+	cs2method2305(new WidgetPointer(732,75), "<col=ff981f>" + "Bronze Gauntlets" + "</col>");
+	cs2method2305(new WidgetPointer(732,80), "<col=ff981f>" + "Iron Gauntlets" + "</col>");
+	cs2method2305(new WidgetPointer(732,85), "<col=ff981f>" + "Steel Gauntlets" + "</col>");
+	cs2method2305(new WidgetPointer(732,90), "<col=ff981f>" + "Black Gauntlets" + "</col>");
+	cs2method2305(new WidgetPointer(732,95), "<col=ff981f>" + "Mithril Gauntlets" + "</col>");
+	cs2method2305(new WidgetPointer(732,100), "<col=ff981f>" + "Adamant Gauntlets" + "</col>");
+	cs2method2305(new WidgetPointer(732,105), "<col=ff981f>" + "Rune Gauntlets" + "</col>");
+	cs2method2305(new WidgetPointer(732,110), "<col=ff981f>" + "Dragon Gauntlets" + "</col>");
+	cs2method2305(new WidgetPointer(732,117), "<col=ff981f>" + "Adamant Spikeshield" + "</col>");
+	cs2method2305(new WidgetPointer(732,122), "<col=ff981f>" + "Adamant Berserker Shield" + "</col>");
+	cs2method2305(new WidgetPointer(732,127), "<col=ff981f>" + "Rune Spikeshield" + "</col>");
+	cs2method2305(new WidgetPointer(732,132), "<col=ff981f>" + "Rune Berserker Shield" + "</col>");
+	cs2method2305(new WidgetPointer(732,139), "<col=ff981f>" + "Irit Gloves" + "</col>");
+	cs2method2305(new WidgetPointer(732,144), "<col=ff981f>" + "Avantoe Gloves" + "</col>");
+	cs2method2305(new WidgetPointer(732,149), "<col=ff981f>" + "Kwuarm Gloves" + "</col>");
+	cs2method2305(new WidgetPointer(732,154), "<col=ff981f>" + "Cadantine Gloves" + "</col>");
+	cs2method2305(new WidgetPointer(732,161), "<col=ff981f>" + "Swordfish Gloves" + "</col>");
+	cs2method2305(new WidgetPointer(732,166), "<col=ff981f>" + "Shark Gloves" + "</col>");
+	cs2method2305(new WidgetPointer(732,171), "<col=ff981f>" + "Dragon Slayer Gloves" + "</col>");
+	cs2method2305(new WidgetPointer(732,176), "<col=ff981f>" + "Air Runecrafting Gloves" + "</col>");
+	cs2method2305(new WidgetPointer(732,181), "<col=ff981f>" + "Water Runecrafting Gloves" + "</col>");
+	cs2method2305(new WidgetPointer(732,186), "<col=ff981f>" + "Earth Runecrafting Gloves" + "</col>");
+	return;
+}

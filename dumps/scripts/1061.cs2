@@ -1,0 +1,25 @@
+void script_1061(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	int ivar6;
+	globalint_159 = 0;
+	globalint_158 = 0;
+	ivar6 = 0;
+	while (setWidgetRegister(new WidgetPointer(arg0), ivar6)) {
+		if (ivar6 == arg2) {
+			setScriptCallOnMouseEntered(-1, "");
+			setScriptCallOnMouseExit(-1, "");
+			if (setWidgetRegister(new WidgetPointer(arg1), ivar6)) {
+				setWidgetHidden(0);
+				setWidgetRGB(new Color(150, 151, 119));
+			}
+		} else {
+			setScriptCallOnMouseEntered(1082, subtract(arg4, 1), new WidgetPointer(arg1), ivar6, "iIi");
+			setScriptCallOnMouseExit(1083, subtract(arg4, 1), new WidgetPointer(arg1), ivar6, "iIi");
+			if (setWidgetRegister(new WidgetPointer(arg1), ivar6)) {
+				setWidgetHidden(1);
+			}
+		}
+		ivar6 = add(ivar6, 1);
+	}
+	script_1062(arg3, arg4, arg5, -1, 0);
+	return;
+}

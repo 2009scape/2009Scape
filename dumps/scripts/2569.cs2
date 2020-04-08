@@ -1,0 +1,10 @@
+void script_2569() {
+	setWidgetIsHidden(true, new WidgetPointer(292,130));
+	if (((boolean)getLanguage())) {
+		setWidgetFont(496, new WidgetPointer(292,124));
+	} else {
+		setWidgetFont(494, new WidgetPointer(292,124));
+	}
+	script_2570();
+	return;
+}

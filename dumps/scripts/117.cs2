@@ -1,0 +1,13 @@
+void script_117() {
+	if (((bitconfig_3756 < 1) || (bitconfig_3756 > 20)) || ((boolean)script_1314(subtract(bitconfig_3756, 1)))) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(746,22));
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(548,128));
+		script_736(-1, -1, -1, -1);
+		script_1364();
+		return;
+	}
+	script_2756();
+	setScriptCallOnGameloop(1420, "", new WidgetPointer(746,22));
+	setScriptCallOnGameloop(1420, "", new WidgetPointer(548,128));
+	return;
+}

@@ -1,0 +1,27 @@
+void script_529(int arg0) {
+	int ivar1;
+	string svar0;
+	string svar1;
+	int stack_dump0;
+	cs2func_script_530_struct(1,1,0) structdump_1;
+	svar0 = "null";
+	ivar1 = 0;
+	svar1 = "null";
+	if (arg0 == 19726347) {
+		svar0 = "This is the total XP you have gained through the Assist System in the past 24 hours. There is a limit to the XP you can gain within 24 hours, but this amount gets reset once the day has passed.";
+		script_39(arg0, 19726421, 25, 180, svar0);
+		return;
+	}
+	stack_dump0 = arg0;
+	structdump_1 = script_530(stack_dump0);
+	svar1 = structdump_1.stringpart_0;
+	ivar1 = structdump_1.intpart_0;
+	if (((boolean)ivar1)) {
+		svar0 = "Assist with " + svar1 + " while using the Assist System (ON).";
+	} else {
+		svar0 = "Assist with " + svar1 + " while using the Assist System (OFF).";
+	}
+	script_39(arg0, 19726421, 25, 180, svar0);
+	globalint_2 = 0;
+	return;
+}

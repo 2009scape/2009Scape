@@ -1,0 +1,20 @@
+void script_2700(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	ivar4 = add(getClientCycle(), 750);
+	if (((boolean)arg1)) {
+		setScriptCallOnGameloop(2703, ivar4, arg0, arg1, arg2, arg3, "iii11", new WidgetPointer(746,83));
+		setScriptCallOnGameloop(2703, ivar4, arg0, arg1, arg2, arg3, "iii11", new WidgetPointer(548,21));
+		script_2701(arg0, arg2, arg3);
+	} else if (arg1 == 2) {
+		setScriptCallOnGameloop(2703, ivar4, arg0, arg1, arg2, arg3, "iii11", new WidgetPointer(906,23));
+		script_3090();
+		setScriptCallOnClickContextMenu(2704, 1, arg0, arg1, arg2, arg3, "1ii11", new WidgetPointer(906,127));
+		setScriptCallOnClickContextMenu(2704, 0, arg0, arg1, arg2, arg3, "1ii11", new WidgetPointer(906,129));
+	} else {
+		setScriptCallOnGameloop(2703, ivar4, arg0, arg1, arg2, arg3, "iii11", new WidgetPointer(744,17));
+		script_1174(10);
+		setScriptCallOnMousePressed(2704, 1, arg0, arg1, arg2, arg3, "1ii11", new WidgetPointer(744,56));
+		setScriptCallOnMousePressed(2704, 0, arg0, arg1, arg2, arg3, "1ii11", new WidgetPointer(744,57));
+	}
+	return;
+}

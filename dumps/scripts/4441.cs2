@@ -1,0 +1,12 @@
+void script_4441(int arg0) {
+	string svar0;
+	string svar1;
+	script_4445();
+	svar0 = "";
+	svar1 = "";
+	if ((arg0 > 0) && (arg0 < 8)) {
+		return;
+	}
+	svar0 = concat(svar0, "To join a clan channel as a" + "<br>" + "guest, use the button in the top-left" + "<br>" + "and enter the name of" + "<br>" + "the clan you wish to chat in." + "<br>" + "<br>" + "To talk, start your chat with ///." + "<br>" + "If you belong to another clan, you" + "<br>" + "can still talk to them by" + "<br>" + "starting your chat with //.");
+	return;
+}

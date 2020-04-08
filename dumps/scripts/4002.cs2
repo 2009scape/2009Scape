@@ -1,0 +1,46 @@
+void script_4002() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	if (getDisplayMode() >= 2) {
+		if (isParent(new WidgetPointer(746,12), 917)) {
+			return;
+		}
+	} else {
+		if (isParent(new WidgetPointer(548,19), 917)) {
+			return;
+		}
+	}
+	svar0 = "Progress:  ";
+	ivar0 = globalint_1424;
+	svar1 = "";
+	ivar1 = globalint_1423;
+	svar2 = "";
+	svar3 = cs2method_3408(105, 115, 3487, bitconfig_8575);
+	if (((boolean)bitconfig_9030)) {
+		ivar0 = bitconfig_9028;
+		ivar1 = getCommonDefinitionSize(3656);
+		svar3 = "Introductory Tasks";
+	}
+	svar1 = intToStr(ivar0);
+	svar2 = intToStr(ivar1);
+	if (bitconfig_8575 == 61) {
+		svar3 = "Quest Area";
+		setWidgetIsHidden(true, new WidgetPointer(1056,111));
+		setWidgetIsHidden(true, new WidgetPointer(1056,112));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(1056,111));
+		setWidgetIsHidden(false, new WidgetPointer(1056,112));
+	}
+	ivar2 = divide(multiply(ivar0, subtract(getWidgetActualWidth(new WidgetPointer(1056,111)), 2)), max(1, ivar1));
+	svar0 = concat(svar0, svar1);
+	setWidgetText(new WidgetPointer(1056,108), svar2);
+	setWidgetText(new WidgetPointer(1056,106), svar0);
+	setWidgetText(new WidgetPointer(1056,110), svar3);
+	setWidgetSize(ivar2, 18, 0, 0, new WidgetPointer(1056,105));
+	return;
+}

@@ -1,0 +1,14 @@
+void script_2436() {
+	globalint_815 = 0;
+	script_1952();
+	if (getDisplayMode() < 2) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(548,12));
+		setWidgetIsHidden(true, new WidgetPointer(548,14));
+		setWidgetIsHidden(true, new WidgetPointer(548,13));
+	} else {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(746,14));
+		setWidgetIsHidden(true, new WidgetPointer(746,169));
+		setWidgetIsHidden(true, new WidgetPointer(746,168));
+	}
+	return;
+}

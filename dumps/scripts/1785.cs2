@@ -1,0 +1,16 @@
+cs2func_script_1785_struct(2,0,0) script_1785(int arg0,int arg1,int arg2,int arg3,string arg4) {
+	createExtraChild(new WidgetPointer(792,3), 4, arg1);
+	setWidgetPosition(0, arg0, 0, 0);
+	setWidgetFont(495);
+	setWidgetUnknownBoolean(true);
+	setWidgetSize(arg2, add(multiply(getLineCount(arg2, 495, arg4), 12), 5), 0, 0);
+	setWidgetText(arg4);
+	if (((boolean)arg3)) {
+		setWidgetTextAlignment(1, 0, 0);
+		setWidgetRGB(new Color(255, 152, 31));
+		return newstruct cs2func_script_1785_struct(add(add(arg0, getWidgetActualHeight()), 12), add(arg1, 1));
+	}
+	setWidgetTextAlignment(0, 0, 0);
+	setWidgetRGB(new Color(200, 170, 100));
+	return newstruct cs2func_script_1785_struct(add(add(arg0, getWidgetActualHeight()), 5), add(arg1, 1));
+}

@@ -1,0 +1,30 @@
+void script_2344() {
+	if (globalint_770 < cs2method5407(0)) {
+		flow_1:
+			globalint_770 = add(globalint_770, 1);
+			SWITCH (globalint_770) {
+				case 9:
+					 GOTO flow_2
+				case 10:
+					 GOTO flow_2
+				case 11:
+					 GOTO flow_2
+				case 12:
+					 GOTO flow_3
+			}
+			setScriptCallOnMinimapRelatedSetting3(-1, "", new WidgetPointer(558,0));
+			cameraMethod5502(0, globalint_770, 900, 500, 1, globalint_770);
+			GOTO	flow_4
+		flow_2:
+			setScriptCallOnMinimapRelatedSetting3(2344, "", new WidgetPointer(558,0));
+			cameraMethod5502(0, globalint_770, 900, 900, 1, globalint_770);
+			GOTO	flow_4
+		flow_3:
+			setScriptCallOnMinimapRelatedSetting3(-1, "", new WidgetPointer(558,0));
+			cameraMethod5502(0, globalint_770, 900, 100, 1, globalint_770);
+		flow_4:
+	} else {
+		globalint_770 = 0;
+	}
+	return;
+}

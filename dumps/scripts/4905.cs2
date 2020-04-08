@@ -1,0 +1,40 @@
+void script_4905() {
+	if (citadelConfigsInitialized()) {
+		script_4906(1);
+		script_4906(2);
+		script_4906(3);
+		script_4906(4);
+		script_4906(5);
+		script_4906(6);
+		script_4906(7);
+		script_4906(8);
+		script_4906(9);
+		script_4906(10);
+		script_4906(11);
+		script_4906(12);
+		script_4906(13);
+		script_4906(14);
+		script_4906(15);
+		script_4906(16);
+		script_4906(17);
+		script_4906(18);
+		script_4906(19);
+		script_4906(20);
+		script_4906(21);
+		script_4906(22);
+		script_4906(23);
+		script_4906(24);
+		script_4906(25);
+		script_4906(26);
+		script_4906(27);
+		script_4906(28);
+		script_4906(29);
+		script_4906(30);
+		script_4906(31);
+		script_4906(32);
+		script_4906(33);
+		script_4906(34);
+		script_5221();
+	}
+	return;
+}

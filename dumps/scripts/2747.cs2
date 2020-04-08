@@ -1,0 +1,27 @@
+void script_2747() {
+	if (isWidgetHidden(new WidgetPointer(204,110))) {
+		setWidgetVFlip(1, new WidgetPointer(204,76));
+		setWidgetIsHidden(false, new WidgetPointer(204,110));
+		setWidgetIsHidden(false, new WidgetPointer(204,101));
+		setWidgetIsHidden(false, new WidgetPointer(204,111));
+		setWidgetIsHidden(false, new WidgetPointer(204,28));
+	} else {
+		setWidgetVFlip(0, new WidgetPointer(204,76));
+		setWidgetIsHidden(true, new WidgetPointer(204,110));
+		setWidgetIsHidden(true, new WidgetPointer(204,101));
+		setWidgetIsHidden(true, new WidgetPointer(204,111));
+		setWidgetIsHidden(true, new WidgetPointer(204,28));
+	}
+	setWidgetVFlip(0, new WidgetPointer(204,44));
+	setWidgetIsHidden(true, new WidgetPointer(204,86));
+	setWidgetIsHidden(true, new WidgetPointer(204,77));
+	setWidgetIsHidden(true, new WidgetPointer(204,87));
+	setWidgetIsHidden(true, new WidgetPointer(204,26));
+	setWidgetVFlip(0, new WidgetPointer(204,60));
+	setWidgetIsHidden(true, new WidgetPointer(204,98));
+	setWidgetIsHidden(true, new WidgetPointer(204,89));
+	setWidgetIsHidden(true, new WidgetPointer(204,99));
+	setWidgetIsHidden(true, new WidgetPointer(204,27));
+	setWidgetIsHidden(true, new WidgetPointer(204,113));
+	return;
+}

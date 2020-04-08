@@ -1,0 +1,18 @@
+cs2func_script_4383_struct(2,0,0) script_4383(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	ivar3 = cs2method_3408(105, 120, 3685, arg0);
+	ivar4 = cs2method_3408(105, 120, 3685, arg1);
+	if (((boolean)arg2) && (((boolean)clanbitconfig_10) || (cs2method3709() < 5))) {
+		ivar3 = 1080;
+		ivar4 = 1017;
+	} else {
+		if (ivar3 == -1) {
+			ivar3 = 1080;
+		}
+		if (ivar4 == -1) {
+			ivar4 = 1017;
+		}
+	}
+	return newstruct cs2func_script_4383_struct(ivar3, ivar4);
+}

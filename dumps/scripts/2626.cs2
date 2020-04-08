@@ -1,0 +1,17 @@
+void script_2626() {
+	cs2method2308(0, 1, new WidgetPointer(859,13));
+	cs2method2308(2, 3, new WidgetPointer(859,14));
+	if (bitconfig_6357 == 2) {
+		cs2method2308(4, 5, new WidgetPointer(859,16));
+		cs2method2308(12, 13, new WidgetPointer(859,17));
+	} else if (bitconfig_6357 == 3) {
+		cs2method2308(6, 7, new WidgetPointer(859,16));
+	} else {
+		if (bitconfig_6357 == 4) {
+			cs2method2308(10, 11, new WidgetPointer(859,16));
+			cs2method2308(8, 9, new WidgetPointer(859,17));
+		}
+	}
+	script_2628();
+	return;
+}

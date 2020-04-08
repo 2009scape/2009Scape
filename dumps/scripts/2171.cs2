@@ -1,0 +1,6 @@
+void script_2171(int arg0) {
+	if (((boolean)arg0)) {
+		script_2172(0);
+	}
+	return;
+}

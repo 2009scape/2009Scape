@@ -1,9 +1,7 @@
 package plugin.consumable.food;
 
-import org.crandor.cache.def.impl.ItemDefinition;
 import org.crandor.game.content.global.consumable.ConsumableProperties;
 import org.crandor.game.content.global.consumable.Consumables;
-import org.crandor.game.content.global.consumable.CookingProperties;
 import org.crandor.game.content.global.consumable.Food;
 import org.crandor.game.content.skill.Skills;
 import org.crandor.game.node.entity.player.Player;
@@ -14,16 +12,12 @@ import org.crandor.tools.StringUtils;
 
 /**
  * Represents a generic pie food.
- * @author 'Vexia
+ * @author 'Vexia, rewritten by ceik.
  * @date 23/12/2013
  */
 @InitializablePlugin
 public class PiePlugin extends Food {
 
-	/**
-	 * Represents the burnt pie item.
-	 */
-	private static final Item BURNT_PIE = new Item(2329);
 
 	/**
 	 * Constructs a new {@code PiePlugin.java} {@code Object}.
@@ -36,24 +30,28 @@ public class PiePlugin extends Food {
 
 	@Override
 	public Plugin<Object> newInstance(Object arg) throws Throwable {
-		final PiePlugin[] PIES = new PiePlugin[] { new PiePlugin(2325, 2321, 5, 2333, 10, 78), new PiePlugin(2333, 5), new PiePlugin(2327, 2319, 5, 2331, 20, 110), new PiePlugin(2331, 5), new PiePlugin(7170, 7168, 0, 0, 29, 128), new PiePlugin(2323, 2317, 7, 2335, 30, 130), new PiePlugin(2335, 7), new GardenPie(7178, 7176, 0, 7180, 34, 138), new GardenPie(7180, 0), new FishPie(7188, 7186, 0, 7190, 47, 164), new FishPie(7190, 0), new AdmiralPie(7198, 7196, 7, 7200, 70, 210), new AdmiralPie(7200, 7), new WildPie(7208, 7206, 11, 7210, 85, 240), new WildPie(7210, 11), new SummerPie(7218, 7216, 11, 7220, 95, 260), new SummerPie(7220, 11) };
+		final PiePlugin[] PIES = new PiePlugin[] {
+				new PiePlugin( 2325, new ConsumableProperties(5, 2333)), //full redberry
+				new PiePlugin( 2327, new ConsumableProperties(5, 2331)), //full meat
+				new PiePlugin( 2323, new ConsumableProperties(7, 2335)), //full apple
+				new GardenPie( 7178,new ConsumableProperties( 0, 7180)), //full garden pie
+				new FishPie(   7188,new ConsumableProperties( 0, 7190)), //full fish pie
+				new AdmiralPie(7198,new ConsumableProperties( 7, 7200)), //full admiral pie
+				new WildPie(   7208,new ConsumableProperties( 11,7210)), //full wild pie
+				new SummerPie( 7218, new ConsumableProperties(11,7220)), //full summer pie
+				new PiePlugin( 2333, 5), //half redberry
+				new PiePlugin( 2331, 5), //half meat
+				new PiePlugin( 2335, 7), //half apple
+				new GardenPie( 7180,  0), //half garden pie
+				new FishPie(   7190,  0), //half fish pie
+				new AdmiralPie(7200, 7), //half admiral pie
+				new WildPie(   7210, 11),//half wild pie
+				new SummerPie( 7220, 11) //half summer pie
+		};
 		for (PiePlugin pie : PIES) {
 			Consumables.add(pie);
 		}
 		return this;
-	}
-
-	/**
-	 * Constructs a new {@code Pie} {@code Object}.
-	 * @param itemId the item id.
-	 * @param raw the raw item id.
-	 * @param healing the healing power.
-	 * @param newItem the new item.
-	 * @param level the level.
-	 * @param experience the experience.
-	 */
-	public PiePlugin(final int itemId, final int raw, final int healing, final int newItem, final int level, final int experience) {
-		super(new Item(itemId), new Item(raw), BURNT_PIE, new ConsumableProperties(healing, newItem), new CookingProperties(level, experience, (experience - 30) > 100 ? 96 : experience - 30, "You successfully bake a delicious " + ItemDefinition.forId(itemId).getName().toLowerCase() + ".", "You accidentally burn the pie."));
 	}
 
 	/**
@@ -62,8 +60,9 @@ public class PiePlugin extends Food {
 	 * @param health the health.
 	 */
 	public PiePlugin(final int itemId, final int health) {
-		super(new Item(itemId), new PieProperty(health), null);
+		super(itemId, new ConsumableProperties(health,2313));
 	}
+	public PiePlugin(final int itemId, ConsumableProperties properties) { super(itemId,properties);}
 
 	@Override
 	public String getEatMessage() {
@@ -79,25 +78,13 @@ public class PiePlugin extends Food {
 
 		/**
 		 * Constructs a new {@code GardenPie} {@code Object}.
-		 * @param itemId the item id.
-		 * @param raw the raw item id.
-		 * @param healing the healing amount.
-		 * @param newItem the new item.
-		 * @param level the level.
-		 * @param experience the experience.
-		 */
-		public GardenPie(int itemId, int raw, int healing, int newItem, int level, int experience) {
-			super(itemId, raw, healing, newItem, level, experience);
-		}
-
-		/**
-		 * Constructs a new {@code GardenPie} {@code Object}.
 		 * @param heal the healing amount.
 		 * @param itemId the new item id.
 		 */
-		public GardenPie(int heal, int itemId) {
-			super(heal, itemId);
+		public GardenPie(int itemId, int heal) {
+			super(itemId, heal);
 		}
+		public GardenPie(int itemId, ConsumableProperties properties){super(itemId,properties);}
 
 		@Override
 		public void consume(final Item item, final Player player) {
@@ -116,25 +103,14 @@ public class PiePlugin extends Food {
 
 		/**
 		 * Constructs a new {@code FishPie} {@code Object}.
-		 * @param itemId the item id.
-		 * @param raw the raw item id.
-		 * @param healing the healing amount.
-		 * @param newItem the new item.
-		 * @param level the level.
-		 * @param experience the experience.
-		 */
-		public FishPie(int itemId, int raw, int healing, int newItem, int level, int experience) {
-			super(itemId, raw, healing, newItem, level, experience);
-		}
-
-		/**
-		 * Constructs a new {@code FishPie} {@code Object}.
 		 * @param heal the healing amount.
 		 * @param itemId the new item id.
 		 */
-		public FishPie(int heal, int itemId) {
-			super(heal, itemId);
+		public FishPie(int itemId, int heal) {
+			super(itemId,heal);
 		}
+		public FishPie(int itemId, ConsumableProperties properties){super(itemId,properties);}
+
 
 		@Override
 		public void consume(final Item item, final Player player) {
@@ -150,28 +126,15 @@ public class PiePlugin extends Food {
 	 * @date 23/12/2013
 	 */
 	public class AdmiralPie extends PiePlugin {
-
-		/**
-		 * Constructs a new {@code AdmiralPie} {@code Object}.
-		 * @param itemId the item id.
-		 * @param raw the raw item id.
-		 * @param healing the healing amount.
-		 * @param newItem the new item.
-		 * @param level the level.
-		 * @param experience the experience.
-		 */
-		public AdmiralPie(int itemId, int raw, int healing, int newItem, int level, int experience) {
-			super(itemId, raw, healing, newItem, level, experience);
-		}
-
 		/**
 		 * Constructs a new {@code AdmiralPie} {@code Object}.
 		 * @param heal the healing amount.
 		 * @param itemId the new item id.
 		 */
-		public AdmiralPie(int heal, int itemId) {
-			super(heal, itemId);
+		public AdmiralPie(int itemId, int health) {
+			super(itemId, health);
 		}
+		public AdmiralPie(int itemId, ConsumableProperties properties){super(itemId,properties);}
 
 		@Override
 		public void consume(final Item item, final Player player) {
@@ -190,26 +153,15 @@ public class PiePlugin extends Food {
 	public class WildPie extends PiePlugin {
 
 		/**
-		 * Constructs a new {@code Wild} {@code Object}.
-		 * @param itemId the item id.
-		 * @param raw the raw item id.
-		 * @param healing the healing amount.
-		 * @param newItem the new item.
-		 * @param level the level.
-		 * @param experience the experience.
-		 */
-		public WildPie(int itemId, int raw, int healing, int newItem, int level, int experience) {
-			super(itemId, raw, healing, newItem, level, experience);
-		}
-
-		/**
 		 * Constructs a new {@code WildPie} {@code Object}.
 		 * @param heal the healing amount.
 		 * @param itemId the new item id.
 		 */
-		public WildPie(int heal, int itemId) {
-			super(heal, itemId);
+		public WildPie(int itemId, int health) {
+			super(itemId, health);
 		}
+		public WildPie(int itemId, ConsumableProperties properties){super(itemId,properties);}
+
 
 		@Override
 		public void consume(final Item item, final Player player) {
@@ -229,25 +181,13 @@ public class PiePlugin extends Food {
 
 		/**
 		 * Constructs a new {@code SummerPie} {@code Object}.
-		 * @param itemId the item id.
-		 * @param raw the raw item id.
-		 * @param healing the healing amount.
-		 * @param newItem the new item.
-		 * @param level the level.
-		 * @param experience the experience.
-		 */
-		public SummerPie(int itemId, int raw, int healing, int newItem, int level, int experience) {
-			super(itemId, raw, healing, newItem, level, experience);
-		}
-
-		/**
-		 * Constructs a new {@code SummerPie} {@code Object}.
 		 * @param heal the healing amount.
 		 * @param itemId the new item id.
 		 */
-		public SummerPie(int heal, int itemId) {
-			super(heal, itemId);
+		public SummerPie(int itemId, int health) {
+			super(itemId, health);
 		}
+		public SummerPie(int itemId, ConsumableProperties properties){super(itemId,properties);}
 
 		@Override
 		public void consume(final Item item, final Player player) {

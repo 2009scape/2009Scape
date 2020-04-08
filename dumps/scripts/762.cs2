@@ -1,0 +1,15 @@
+int script_762(int arg0) {
+	if (((boolean)arg0)) {
+		return 6;
+	}
+	if (((boolean)arg0)) {
+		return 117;
+	}
+	if (arg0 == 2) {
+		return 228;
+	}
+	if (arg0 == 3) {
+		return 340;
+	}
+	return 0;
+}

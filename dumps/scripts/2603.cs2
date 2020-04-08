@@ -1,0 +1,9 @@
+void script_2603() {
+	playSoundEffect(6784, 1, 0);
+	setWidgetIsHidden(false, new WidgetPointer(292,130));
+	setWidgetText(new WidgetPointer(292,132), "Are you sure you wish to resupply all defeated squads?");
+	setWidgetIsHidden(false, new WidgetPointer(292,135));
+	setWidgetIsHidden(true, new WidgetPointer(292,134));
+	setWidgetIsHidden(true, new WidgetPointer(292,137));
+	return;
+}

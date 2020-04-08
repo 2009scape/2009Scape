@@ -1,0 +1,47 @@
+void script_893() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	if (globalint_112 < 10) {
+		globalint_112 = add(globalint_112, 1);
+		return;
+	}
+	globalint_112 = 0;
+	ivar0 = subtract(20, 0);
+	ivar1 = subtract(80, 0);
+	ivar2 = divide(ivar1, ivar0);
+	ivar3 = multiply(bitconfig_4523, ivar2);
+	if (globalint_111 < ivar3) {
+		globalint_111 = add(globalint_111, 1);
+	} else {
+		if (globalint_111 > ivar3) {
+			globalint_111 = subtract(globalint_111, 1);
+		}
+	}
+	if (((boolean)globalint_114)) {
+		if (globalint_113 > 0) {
+			globalint_113 = subtract(globalint_113, 1);
+		} else {
+			globalint_114 = 1;
+		}
+	} else if (globalint_113 < 4) {
+		globalint_113 = add(globalint_113, 1);
+	} else {
+		globalint_114 = 0;
+	}
+	ivar4 = add(globalint_111, add(globalint_113, 2));
+	ivar5 = divide(1024, ivar1);
+	ivar4 = multiply(ivar4, ivar5);
+	ivar4 = add(ivar4, 512);
+	ivar4 = subtract(2048, ivar4);
+	setWidget3DRotation(0, 0, 0, 0, ivar4, 388, new WidgetPointer(717,4));
+	ivar6 = multiply(cs2method_3408(105, 105, 1422, bitconfig_4519), divide(1024, ivar0));
+	ivar6 = add(ivar6, 512);
+	ivar6 = subtract(2048, ivar6);
+	setWidget3DRotation(0, 0, 0, 0, ivar6, 365, new WidgetPointer(717,3));
+	return;
+}

@@ -1,0 +1,42 @@
+void script_4987(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int stack_dump0;
+	cs2func_script_4958_struct(5,0,0) structdump_1;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = -1;
+	ivar4 = -1;
+	ivar5 = 0;
+	ivar6 = script_4966(arg0);
+	if (citadelConfigsInitialized()) {
+		ivar1 = script_4949(ivar6);
+		bitconfig_9550 = ivar1;
+	}
+	if (((boolean)bitconfig_9552) || (bitconfig_9552 == 2)) {
+		stack_dump0 = ivar6;
+		structdump_1 = script_4958(stack_dump0);
+		ivar5 = structdump_1.intpart_4;
+		ivar4 = structdump_1.intpart_3;
+		ivar3 = structdump_1.intpart_2;
+		ivar2 = structdump_1.intpart_1;
+		ivar1 = structdump_1.intpart_0;
+		script_4988(bitconfig_9550);
+		script_4937();
+	} else {
+		if ((bitconfig_9552 == 4) || (bitconfig_9552 == 3)) {
+			bitconfig_9550 = script_4949(ivar6);
+			script_4988(bitconfig_9550);
+			script_4937();
+			script_4905();
+			script_4907();
+			bitconfig_9552 = 1;
+			script_4899(1);
+		}
+	}
+	return;
+}

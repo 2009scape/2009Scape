@@ -1,0 +1,15 @@
+void script_4089() {
+	int ivar0;
+	ivar0 = 35913927;
+	if (getDisplayMode() >= 2) {
+		ivar0 = 48889943;
+	}
+	if ((isParent(new WidgetPointer(script_8(1)), 1056) && isWidgetOpen(new WidgetPointer(ivar0))) && (((boolean)script_2728()) && (bitconfig_8587 != 419))) {
+		setWidgetIsHidden(false, new WidgetPointer(746,130));
+		setWidgetIsHidden(false, new WidgetPointer(548,137));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(746,130));
+		setWidgetIsHidden(true, new WidgetPointer(548,137));
+	}
+	return;
+}

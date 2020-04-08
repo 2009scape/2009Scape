@@ -1,0 +1,8 @@
+int script_1551(int arg0,int arg1,int arg2,string arg3) {
+	arg3 = script_1602(arg3);
+	arg0 = min(strLength(arg3), arg0);
+	if (arg0 <= 0) {
+		return arg2;
+	}
+	return add(getTextWidth(arg1, substr(0, arg0, arg3)), arg2);
+}

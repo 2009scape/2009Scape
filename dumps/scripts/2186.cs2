@@ -1,0 +1,57 @@
+void script_2186() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	ivar0 = 60293120;
+	deleteAllExtraChilds(new WidgetPointer(ivar0));
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar1 = divide(subtract(getWidgetActualWidth(new WidgetPointer(ivar0)), multiply(36, 4)), 3);
+	ivar2 = divide(subtract(getWidgetActualHeight(new WidgetPointer(ivar0)), multiply(32, 7)), 6);
+	deleteAllExtraChilds(new WidgetPointer(924,35));
+	ivar3 = getCommonDefinitionSize(962);
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 0;
+	ivar8 = -1;
+	ivar9 = -1;
+	while (ivar4 < ivar3) {
+		if (setWidgetRegister(cs2method_3408(105, 73, 962, ivar4))) {
+			ivar5 = getWidgetActualX();
+			ivar6 = getWidgetActualY();
+			ivar8 = cs2method_3408(105, 103, 963, ivar4);
+			ivar7 = script_2187(ivar4);
+			createExtraChild(new WidgetPointer(924,35), 5, ivar4);
+			setWidgetPosition(add(ivar5, 0), add(ivar6, 2), 0, 0);
+			setWidgetSize(36, 32, 0, 0);
+			setWidgetBorderThickness(1);
+			if (ivar7 != 0) {
+				ivar9 = cs2method_3408(105, 79, ivar8, ivar7);
+				cs2method1305(getItemName(ivar9));
+				setWidgetContextMenuOption(1, "Withdraw-1");
+				if (ivar8 == 958) {
+					setWidgetContextMenuOption(2, "Withdraw-5");
+					setWidgetContextMenuOption(3, "Withdraw-10");
+					setWidgetContextMenuOption(4, "Withdraw-All");
+					setWidgetContextMenuOption(5, "Withdraw-X");
+					setItemOnWidgetMethod1200(ivar9, script_2188(ivar4));
+				} else {
+					setItemOnWidgetMethod1205(ivar9, 1);
+				}
+			}
+		} else {
+			messageType0("Nothing happens, as if something is wrong.");
+			return;
+		}
+		ivar4 = add(ivar4, 1);
+	}
+	return;
+}

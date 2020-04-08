@@ -1,0 +1,16 @@
+int script_805(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = script_807(arg0);
+	ivar2 = 5592405;
+	if (ivar1 > 75) {
+		ivar2 = 65280;
+	} else if (ivar1 > 50) {
+		ivar2 = 16776960;
+	} else if (ivar1 > 25) {
+		ivar2 = 16750623;
+	} else {
+		ivar2 = 16711680;
+	}
+	return ivar2;
+}

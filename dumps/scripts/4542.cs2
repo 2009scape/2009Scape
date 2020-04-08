@@ -1,0 +1,12 @@
+void script_4542(int arg0,int arg1,int arg2) {
+	int ivar3;
+	arg0 = min(100, arg0);
+	arg0 = max(0, arg0);
+	if (arg1 == -1) {
+		return;
+	}
+	ivar3 = divide(multiply(arg0, 16384), 100);
+	setWidgetSize(ivar3, getWidgetActualHeight(new WidgetPointer(arg1)), 2, 0, new WidgetPointer(arg1));
+	script_4212(arg2, 3793, 14014931, 0, intToStr(arg0) + "%");
+	return;
+}

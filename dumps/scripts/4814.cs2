@@ -1,0 +1,249 @@
+void script_4814() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	string svar0;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	svar0 = "";
+	setWidgetText(new WidgetPointer(1092,1212), "");
+	setWidgetText(new WidgetPointer(1092,1138), "");
+	setWidgetText(new WidgetPointer(1092,1058), "");
+	setWidgetIsHidden(false, new WidgetPointer(1092,1210));
+	setWidgetIsHidden(false, new WidgetPointer(1092,1136));
+	setWidgetIsHidden(false, new WidgetPointer(1092,1056));
+	setWidgetIsHidden(true, new WidgetPointer(1092,1212));
+	setWidgetIsHidden(true, new WidgetPointer(1092,1138));
+	setWidgetIsHidden(true, new WidgetPointer(1092,1058));
+	setScriptCallOnMouseExit(40, new WidgetPointer(1092,327), "I", new WidgetPointer(1092,1223));
+	setScriptCallOnMouseExit(40, new WidgetPointer(1092,327), "I", new WidgetPointer(1092,1149));
+	setScriptCallOnMouseExit(40, new WidgetPointer(1092,327), "I", new WidgetPointer(1092,1069));
+	setScriptCallOnMouseExit(40, new WidgetPointer(1092,327), "I", new WidgetPointer(1092,1207));
+	setScriptCallOnMouseExit(40, new WidgetPointer(1092,327), "I", new WidgetPointer(1092,1133));
+	setScriptCallOnMouseExit(40, new WidgetPointer(1092,327), "I", new WidgetPointer(1092,1053));
+	setScriptCallOnMouseExit(40, new WidgetPointer(1092,327), "I", new WidgetPointer(1092,1220));
+	setScriptCallOnMouseExit(40, new WidgetPointer(1092,327), "I", new WidgetPointer(1092,1146));
+	setScriptCallOnMouseExit(40, new WidgetPointer(1092,327), "I", new WidgetPointer(1092,1066));
+	setScriptCallOnMouseExit(40, new WidgetPointer(1092,327), "I", new WidgetPointer(1092,1204));
+	setScriptCallOnMouseExit(40, new WidgetPointer(1092,327), "I", new WidgetPointer(1092,1130));
+	setScriptCallOnMouseExit(40, new WidgetPointer(1092,327), "I", new WidgetPointer(1092,1050));
+	if (citadelConfigsInitialized()) {
+		if (((boolean)script_5008()) || ((boolean)script_5144(-1))) {
+			setWidgetIsHidden(false, new WidgetPointer(1092,1223));
+			setWidgetIsHidden(false, new WidgetPointer(1092,1149));
+			setWidgetIsHidden(false, new WidgetPointer(1092,1069));
+			setWidgetIsHidden(false, new WidgetPointer(1092,1207));
+			setWidgetIsHidden(false, new WidgetPointer(1092,1133));
+			setWidgetIsHidden(false, new WidgetPointer(1092,1053));
+			svar0 = "Your rank may not currently make alterations to this item";
+			setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1223), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1223));
+			setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1149), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1149));
+			setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1069), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1069));
+			setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1207), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1207));
+			setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1133), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1133));
+			setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1053), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1053));
+		} else {
+			switch (bitconfig_9558) {
+				case 1:
+					ivar0 = bitconfig_9563;
+					break;
+				case 2:
+					ivar0 = bitconfig_9572;
+					break;
+				case 3:
+					ivar0 = bitconfig_9581;
+			}
+			switch (script_4829(bitconfig_9558)) {
+				flow_8:
+					case 1:
+					svar0 = "You may submit this customisation to the build queue.";
+					switch (ivar0) {
+						case 1:
+							setWidgetIsHidden(true, new WidgetPointer(1092,1212));
+							setWidgetIsHidden(false, new WidgetPointer(1092,1210));
+							setWidgetIsHidden(true, new WidgetPointer(1092,1223));
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1220), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1220));
+							break;
+						case 2:
+							setWidgetIsHidden(true, new WidgetPointer(1092,1138));
+							setWidgetIsHidden(false, new WidgetPointer(1092,1136));
+							setWidgetIsHidden(true, new WidgetPointer(1092,1149));
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1146), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1146));
+							break;
+						case 3:
+							setWidgetIsHidden(true, new WidgetPointer(1092,1058));
+							setWidgetIsHidden(false, new WidgetPointer(1092,1056));
+							setWidgetIsHidden(true, new WidgetPointer(1092,1069));
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1066), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1066));
+					}
+					break;
+					case 2:
+					switch (ivar0) {
+						case 1:
+							svar0 = "Your citadel can not produce the resouces with which to purchase this customisation.";
+							setWidgetText(new WidgetPointer(1092,1212), svar0);
+							setWidgetIsHidden(false, new WidgetPointer(1092,1223));
+							setWidgetIsHidden(false, new WidgetPointer(1092,1212));
+							setWidgetIsHidden(true, new WidgetPointer(1092,1210));
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1223), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1223));
+							svar0 = "You may cancel this customisation from the build queue but you will lose any resources already spent.";
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1204), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1204));
+							svar0 = "You do not have the rank to cancel this job.";
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1207), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1207));
+							break;
+						case 2:
+							svar0 = "Your citadel can not produce the resouces with which to purchase this customisation.";
+							setWidgetText(new WidgetPointer(1092,1138), svar0);
+							setWidgetIsHidden(false, new WidgetPointer(1092,1149));
+							setWidgetIsHidden(false, new WidgetPointer(1092,1138));
+							setWidgetIsHidden(true, new WidgetPointer(1092,1136));
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1149), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1149));
+							svar0 = "You may cancel this customisation from the build queue but you will lose any resources already spent.";
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1130), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1130));
+							svar0 = "You do not have the rank to cancel this job.";
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1133), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1133));
+							break;
+						case 3:
+							svar0 = "Your citadel can not produce the resouces with which to purchase this customisation.";
+							setWidgetText(new WidgetPointer(1092,1058), svar0);
+							setWidgetIsHidden(false, new WidgetPointer(1092,1069));
+							setWidgetIsHidden(false, new WidgetPointer(1092,1058));
+							setWidgetIsHidden(true, new WidgetPointer(1092,1056));
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1069), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1069));
+							svar0 = "You may cancel this customisation from the build queue but you will lose any resources already spent.";
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1050), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1050));
+							svar0 = "You do not have the rank to cancel this job.";
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1053), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1053));
+					}
+					break;
+					case 3:
+					switch (ivar0) {
+						case 1:
+							svar0 = "Select valid options for each part of the customisation before adding to the build queue.";
+							setWidgetText(new WidgetPointer(1092,1212), svar0);
+							setWidgetIsHidden(false, new WidgetPointer(1092,1223));
+							setWidgetIsHidden(false, new WidgetPointer(1092,1212));
+							setWidgetIsHidden(true, new WidgetPointer(1092,1210));
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1223), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1223));
+							svar0 = "You may cancel this customisation from the build queue but you will lose any resources already spent.";
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1204), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1204));
+							svar0 = "You do not have the rank to cancel this job.";
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1207), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1207));
+							break;
+						case 2:
+							svar0 = "You must select valid options for each part of the customisation before you can add it to the build queue.";
+							setWidgetText(new WidgetPointer(1092,1138), svar0);
+							setWidgetIsHidden(false, new WidgetPointer(1092,1149));
+							setWidgetIsHidden(false, new WidgetPointer(1092,1138));
+							setWidgetIsHidden(true, new WidgetPointer(1092,1136));
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1149), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1149));
+							svar0 = "You may cancel this customisation from the build queue but you will lose any resources already spent.";
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1130), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1130));
+							svar0 = "You do not have the rank to cancel this job.";
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1133), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1133));
+							break;
+						case 3:
+							svar0 = "You must select valid options for each part of the customisation before you can add it to the build queue.";
+							setWidgetText(new WidgetPointer(1092,1058), svar0);
+							setWidgetIsHidden(false, new WidgetPointer(1092,1069));
+							setWidgetIsHidden(false, new WidgetPointer(1092,1058));
+							setWidgetIsHidden(true, new WidgetPointer(1092,1056));
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1069), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1069));
+							svar0 = "You may cancel this customisation from the build queue but you will lose any resources already spent.";
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1050), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1050));
+							svar0 = "You do not have the rank to cancel this job.";
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1053), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1053));
+					}
+					break;
+					case 4:
+					switch (ivar0) {
+						case 1:
+							svar0 = "The selection you have chosen is already built in the citadel.";
+							setWidgetText(new WidgetPointer(1092,1212), svar0);
+							setWidgetIsHidden(false, new WidgetPointer(1092,1223));
+							setWidgetIsHidden(false, new WidgetPointer(1092,1212));
+							setWidgetIsHidden(true, new WidgetPointer(1092,1210));
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1223), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1223));
+							svar0 = "You may cancel this customisation from the build queue but you will lose any resources already spent.";
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1204), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1204));
+							svar0 = "You do not have the rank to cancel this job.";
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1207), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1207));
+							break;
+						case 2:
+							svar0 = "The selection you have chosen is already built in the citadel.";
+							setWidgetText(new WidgetPointer(1092,1138), svar0);
+							setWidgetIsHidden(false, new WidgetPointer(1092,1149));
+							setWidgetIsHidden(false, new WidgetPointer(1092,1138));
+							setWidgetIsHidden(true, new WidgetPointer(1092,1136));
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1149), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1149));
+							svar0 = "You may cancel this customisation from the build queue but you will lose any resources already spent.";
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1130), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1130));
+							svar0 = "You do not have the rank to cancel this job.";
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1133), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1133));
+							break;
+						case 3:
+							svar0 = "The selection you have chosen is already built in the citadel.";
+							setWidgetText(new WidgetPointer(1092,1058), svar0);
+							setWidgetIsHidden(false, new WidgetPointer(1092,1069));
+							setWidgetIsHidden(false, new WidgetPointer(1092,1058));
+							setWidgetIsHidden(true, new WidgetPointer(1092,1056));
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1069), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1069));
+							svar0 = "You may cancel this customisation from the build queue but you will lose any resources already spent.";
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1050), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1050));
+							svar0 = "You do not have the rank to cancel this job.";
+							setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1053), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1053));
+					}
+					break;
+					case 5:
+					SWITCH (ivar0) {
+						case 1:
+							 GOTO flow_29
+						case 2:
+							 GOTO flow_30
+						case 3:
+							 GOTO flow_31
+					}
+					break;
+				flow_29:
+					svar0 = "This hotspot is currently queued to be reset, you may cancel this reset at no cost.";
+					setWidgetText(new WidgetPointer(1092,1212), svar0);
+					setWidgetIsHidden(false, new WidgetPointer(1092,1223));
+					setWidgetIsHidden(false, new WidgetPointer(1092,1212));
+					setWidgetIsHidden(true, new WidgetPointer(1092,1210));
+					setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1149), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1223));
+					svar0 = "This hotspot is currently queued to be reset, you may cancel this reset at no cost.";
+					setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1204), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1204));
+					svar0 = "You do not have the rank to cancel this job.";
+					setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1207), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1207));
+					break;
+				flow_30:
+					svar0 = "This hotspot is currently queued to be reset, you may cancel this reset at no cost.";
+					setWidgetText(new WidgetPointer(1092,1138), svar0);
+					setWidgetIsHidden(false, new WidgetPointer(1092,1149));
+					setWidgetIsHidden(false, new WidgetPointer(1092,1138));
+					setWidgetIsHidden(true, new WidgetPointer(1092,1136));
+					setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1149), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1149));
+					svar0 = "This hotspot is currently queued to be reset, you may cancel this reset at no cost.";
+					setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1130), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1130));
+					svar0 = "You do not have the rank to cancel this job.";
+					setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1133), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1133));
+					break;
+				flow_31:
+					svar0 = "This hotspot is currently queued to be reset, you may cancel this reset at no cost.";
+					setWidgetText(new WidgetPointer(1092,1058), svar0);
+					setWidgetIsHidden(false, new WidgetPointer(1092,1069));
+					setWidgetIsHidden(false, new WidgetPointer(1092,1058));
+					setWidgetIsHidden(true, new WidgetPointer(1092,1056));
+					setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1069), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1069));
+					svar0 = "This hotspot is currently queued to be reset, you may cancel this reset at no cost.";
+					setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1050), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1050));
+					svar0 = "You do not have the rank to cancel this job.";
+					setScriptCallOnMouseOver(4538, new WidgetPointer(1092,327), new WidgetPointer(1092,1053), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1092,1053));
+			}
+		}
+	}
+	return;
+}

@@ -1,0 +1,86 @@
+void script_4725() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	string svar0;
+	ivar0 = 20316177;
+	ivar1 = 20316179;
+	ivar2 = 20316171;
+	ivar3 = 20316172;
+	ivar4 = 20316174;
+	ivar5 = 20316173;
+	ivar6 = 20316178;
+	svar0 = "";
+	deleteAllExtraChilds(new WidgetPointer(ivar2));
+	deleteAllExtraChilds(new WidgetPointer(ivar5));
+	ivar7 = 15;
+	ivar8 = 1;
+	ivar9 = 0;
+	ivar10 = -1;
+	ivar11 = -1;
+	while (ivar8 <= 15) {
+		ivar9 = getExtraChildGap(new WidgetPointer(ivar2));
+		createExtraChild(new WidgetPointer(ivar2), 4, ivar9);
+		setWidgetSize(5, ivar7, 1, 0);
+		setWidgetPosition(5, multiply(ivar9, ivar7), 0, 0);
+		setWidgetText(script_5329(ivar8));
+		setWidgetFont(3793);
+		setWidgetRGB(new Color(190, 178, 140));
+		setWidgetUnknownBoolean(true);
+		setWidgetTextAlignment(0, 1, 0);
+		ivar10 = 7715;
+		ivar11 = 7716;
+		createExtraChild(new WidgetPointer(ivar5), 5, ivar9);
+		setWidgetSprite(ivar10);
+		setWidgetContextMenuOption(1, "Target");
+		setWidgetSize(12, 13, 0, 0);
+		setWidgetPosition(18, add(1, multiply(ivar9, ivar7)), 2, 0);
+		setScriptCallOnMouseEntered(5336, new WidgetPointer(-32768,3), -2147483643, ivar11, "Iid");
+		setScriptCallOnMouseExit(5336, new WidgetPointer(-32768,3), -2147483643, ivar10, "Iid");
+		cs2method1306("Add Actor");
+		cs2method1308(176, -1);
+		createExtraChild(new WidgetPointer(ivar6), 3, getExtraChildGap(new WidgetPointer(ivar6)));
+		setWidgetSize(12, 13, 0, 0);
+		setWidgetPosition(18, add(1, multiply(ivar9, ivar7)), 2, 0);
+		svar0 = "Add someone to the actor list. Click this, then click on the person you would like to add.";
+		setScriptCallOnMouseOver(4538, new WidgetPointer(310,26), new WidgetPointer(-32768,3), -2147483643, svar0, 90, 3793, 3793, 16777215, 13, 4, 3, -2147483647, -2147483646, "IIisifdiiiiii");
+		setScriptCallOnMouseExit(40, new WidgetPointer(310,26), "I");
+		ivar10 = 7718;
+		ivar11 = 7719;
+		createExtraChild(new WidgetPointer(ivar4), 5, ivar9);
+		setWidgetSprite(ivar10);
+		setWidgetContextMenuOption(1, "Remove");
+		setWidgetSize(12, 13, 0, 0);
+		setWidgetPosition(3, add(1, multiply(ivar9, ivar7)), 2, 0);
+		setScriptCallOnMouseEntered(5336, new WidgetPointer(-32768,3), -2147483643, ivar11, "Iid");
+		setScriptCallOnMouseExit(5336, new WidgetPointer(-32768,3), -2147483643, ivar10, "Iid");
+		createExtraChild(new WidgetPointer(ivar6), 3, getExtraChildGap(new WidgetPointer(ivar6)));
+		setWidgetSize(12, 13, 0, 0);
+		setWidgetPosition(3, add(1, multiply(ivar9, ivar7)), 2, 0);
+		svar0 = "Add someone to the actor list. Click this, then click on the person you would like to add.";
+		svar0 = "Remove this person from the actor list.";
+		setScriptCallOnMouseOver(4538, new WidgetPointer(310,26), new WidgetPointer(-32768,3), -2147483643, svar0, 90, 3793, 3793, 16777215, 13, 4, 3, -2147483647, -2147483646, "IIisifdiiiiii");
+		setScriptCallOnMouseExit(40, new WidgetPointer(310,26), "I");
+		ivar8 = add(ivar8, 1);
+	}
+	if (((boolean)globalint_1606)) {
+		ivar10 = 6009;
+		ivar11 = 6010;
+	} else {
+		ivar10 = 6004;
+		ivar11 = 6005;
+	}
+	setWidgetSprite(ivar10, new WidgetPointer(310,20));
+	setScriptCallOnMouseEntered(44, new WidgetPointer(-32768,3), ivar11, "Id", new WidgetPointer(310,20));
+	setScriptCallOnMouseExit(44, new WidgetPointer(-32768,3), ivar10, "Id", new WidgetPointer(310,20));
+	return;
+}

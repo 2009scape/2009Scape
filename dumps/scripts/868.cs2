@@ -1,0 +1,44 @@
+void script_868(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,int arg11,int arg12,int arg13) {
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	ivar14 = script_718(globalint_1441);
+	ivar15 = script_718(globalint_1442);
+	ivar16 = script_715(ivar14, globalint_1443, ivar15, globalint_1444);
+	if (setWidgetRegister(new WidgetPointer(arg0))) {
+		setWidgetStringNode(718, script_4126(ivar16));
+		setWidgetRGB(new Color(ivar16));
+	}
+	if (setWidgetRegister(new WidgetPointer(arg8))) {
+		setWidgetStringNode(718, script_4126(ivar16));
+		setWidgetRGB(new Color(ivar16));
+	}
+	if (setWidgetRegister(new WidgetPointer(arg1))) {
+		setWidgetStringNode(718, script_4126(ivar14));
+		setWidgetRGB(new Color(ivar14));
+	}
+	if (setWidgetRegister(new WidgetPointer(arg2))) {
+		setWidgetStringNode(718, script_4126(ivar15));
+		setWidgetRGB(new Color(ivar15));
+	}
+	setWidgetModel(cs2method_3408(105, 109, 1595, divide(globalint_1450, 10)), new WidgetPointer(arg10));
+	setWidgetModel(cs2method_3408(105, 109, 1595, mod(globalint_1450, 10)), new WidgetPointer(arg11));
+	ivar17 = add(multiply(globalint_1441, globalint_1443), multiply(globalint_1442, globalint_1444));
+	if (globalint_1450 < ivar17) {
+		setWidgetSprite(4567, new WidgetPointer(arg13));
+	} else if (globalint_1450 > ivar17) {
+		setWidgetSprite(4568, new WidgetPointer(arg13));
+	} else {
+		setWidgetSprite(4565, new WidgetPointer(arg13));
+		playSoundEffect2False(3559, 1, 0, 255);
+	}
+	if (ivar16 == 16711935) {
+		setWidgetSprite(4565, new WidgetPointer(arg12));
+		playSoundEffect2False(3559, 1, 10, 255);
+	} else {
+		setWidgetSprite(4566, new WidgetPointer(arg12));
+	}
+	script_2472(arg3, arg4, arg5, arg6, arg7, arg9, standart_config_851, standart_config_852, 1109);
+	return;
+}

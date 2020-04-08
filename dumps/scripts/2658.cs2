@@ -1,0 +1,11 @@
+void script_2658() {
+	bitconfig_6302 = add(bitconfig_6302, 1);
+	if (bitconfig_6302 >= subtract(cs2method5407(0), 1)) {
+		bitconfig_6302 = 0;
+		setScriptCallOnMinimapRelatedSetting3(-1, "", new WidgetPointer(876,0));
+		return;
+	}
+	cameraMethod5502(0, bitconfig_6302, 600, 400, 1, bitconfig_6302);
+	setScriptCallOnMinimapRelatedSetting3(2658, "", new WidgetPointer(876,0));
+	return;
+}

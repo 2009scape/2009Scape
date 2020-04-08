@@ -1,0 +1,297 @@
+cs2func_script_992_struct(2,2,0) script_992(int arg0,int arg1) {
+	switch (arg0) {
+		case 0:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_992_struct(1, 3241, "Man", "You can now pickpocket " + "<col=000080>" + "men" + "</col>" + " and " + "<col=000080>" + "women" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_992_struct(10, 3243, "Farmer", "You can now pickpocket " + "<col=000080>" + "farmers" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_992_struct(15, 4295, "Female H.A.M. follower", "You can now pickpocket " + "<col=000080>" + "female H.A.M. followers" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_992_struct(20, 4297, "Male H.A.M. follower", "You can now pickpocket " + "<col=000080>" + "male H.A.M. followers" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_992_struct(25, 3245, "Warrior", "You can now pickpocket " + "<col=000080>" + "warriors" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_992_struct(32, 3247, "Rogue", "You can now pickpocket " + "<col=000080>" + "rogues" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_992_struct(36, 10998, "Cave goblin", "You can now pickpocket " + "<col=000080>" + "cave goblins" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_992_struct(38, 5068, "Master farmer", "You can now pickpocket " + "<col=000080>" + "master farmers" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_992_struct(40, 3249, "Guard", "You can now pickpocket " + "<col=000080>" + "guards" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_992_struct(45, 3686, "Fremennik citizen", "You can now pickpocket " + "<col=000080>" + "Fremennik citizens" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_992_struct(45, 6782, "Bearded Pollnivnian bandit", "You can now pickpocket " + "<col=000080>" + "bearded Pollnivnian bandits" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_992_struct(53, 4625, "Desert bandit", "You can now pickpocket " + "<col=000080>" + "desert bandits" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_992_struct(55, 3251, "Knight", "You can now pickpocket " + "<col=000080>" + "knights" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_992_struct(55, 6781, "Pollnivnian bandit", "You can now pickpocket " + "<col=000080>" + "Pollnivnian bandits" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_992_struct(65, 3253, "Watchman", "You can now pickpocket " + "<col=000080>" + "watchmen" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_992_struct(65, 6780, "Menaphite thug", "You can now pickpocket " + "<col=000080>" + "Menaphite thugs" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_992_struct(70, 3255, "Paladin", "You can now pickpocket " + "<col=000080>" + "paladins" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_992_struct(75, 3257, "Gnome", "You can now pickpocket " + "<col=000080>" + "gnomes" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_992_struct(80, 3259, "Hero", "You can now pickpocket " + "<col=000080>" + "heroes" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_992_struct(85, 6105, "Elf", "You can now pickpocket " + "<col=000080>" + "elves" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_992_struct(90, 15258, "Dwarf trader", "You can now pickpocket " + "<col=000080>" + "dwarven traders" + "</col>" + ".");
+			}
+			break;
+		case 1:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_992_struct(11, 3241, "Possibility of stealing double loot from a man", "You now have the Thieving level required to potentially steal double loot from " + "<col=000080>" + "men" + "</col>" + " and " + "<col=000080>" + "women" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_992_struct(20, 3243, "Possibility of stealing double loot from a farmer" + "<br>" + " (with 10 Agility)", "You now have the Thieving level required to potentially steal double loot from " + "<col=000080>" + "farmers" + "</col>" + ". (You also need level 10 Agility.)");
+				case 2:
+					return newstruct cs2func_script_992_struct(21, 3241, "Possibility of stealing triple loot from a man" + "<br>" + " (with 11 Agility)", "You now have the Thieving level required to potentially steal triple loot from " + "<col=000080>" + "men" + "</col>" + " and " + "<col=000080>" + "women" + "</col>" + ". (You also need level 11 Agility.)");
+				case 3:
+					return newstruct cs2func_script_992_struct(25, 4295, "Possibility of stealing double loot from a female H.A.M. follower" + "<br>" + " (with 15 Agility)", "You now have the Thieving level required to potentially steal double loot from " + "<col=000080>" + "female H.A.M. followers" + "</col>" + ". (You also need level 15 Agility.)");
+				case 4:
+					return newstruct cs2func_script_992_struct(30, 3243, "Possibility of stealing triple loot from a farmer" + "<br>" + " (with 20 Agility)", "You now have the Thieving level required to potentially steal triple loot from " + "<col=000080>" + "farmers" + "</col>" + ". (You also need level 20 Agility.)");
+				case 5:
+					return newstruct cs2func_script_992_struct(30, 4297, "Possibility of stealing double loot from a male H.A.M. follower" + "<br>" + " (with 20 Agility)", "You now have the Thieving level required to potentially steal double loot from " + "<col=000080>" + "male H.A.M. followers" + "</col>" + ". (You also need level 20 Agility.)");
+				case 6:
+					return newstruct cs2func_script_992_struct(31, 3241, "Possibility of stealing quadruple loot from a man" + "<br>" + " (with 21 Agility)", "You now have the Thieving level required to potentially steal quadruple loot from " + "<col=000080>" + "men" + "</col>" + " and " + "<col=000080>" + "women" + "</col>" + ". (You also need level 21 Agility.)");
+				case 7:
+					return newstruct cs2func_script_992_struct(35, 4295, "Possibility of stealing triple loot from a female H.A.M. follower" + "<br>" + " (with 25 Agility)", "You now have the Thieving level required to potentially steal triple loot from " + "<col=000080>" + "female H.A.M. followers" + "</col>" + ". (You also need level 25 Agility.)");
+				case 8:
+					return newstruct cs2func_script_992_struct(35, 3245, "Possibility of stealing double loot from a warrior" + "<br>" + " (with 25 Agility)", "You now have the Thieving level required to potentially steal double loot from " + "<col=000080>" + "warriors" + "</col>" + ". (You also need level 25 Agility.)");
+				case 9:
+					return newstruct cs2func_script_992_struct(40, 3243, "Possibility of stealing quadruple loot from a farmer" + "<br>" + " (with 30 Agility)", "You now have the Thieving level required to potentially steal quadruple loot from " + "<col=000080>" + "farmers" + "</col>" + ". (You also need level 30 Agility.)");
+				case 10:
+					return newstruct cs2func_script_992_struct(40, 4297, "Possibility of stealing triple loot from a male H.A.M. follower" + "<br>" + " (with 30 Agility)", "You now have the Thieving level required to potentially steal triple loot from " + "<col=000080>" + "male H.A.M. followers" + "</col>" + ". (You also need level 30 Agility.)");
+				case 11:
+					return newstruct cs2func_script_992_struct(42, 3247, "Possibility of stealing double loot from a rogue" + "<br>" + " (with 32 Agility)", "You now have the Thieving level required to potentially steal double loot from " + "<col=000080>" + "rogues" + "</col>" + ". (You also need level 32 Agility.)");
+				case 12:
+					return newstruct cs2func_script_992_struct(45, 4295, "Possibility of stealing quadruple loot from a female H.A.M. follower" + "<br>" + " (with 35 Agility)", "You now have the Thieving level required to potentially steal quadruple loot from " + "<col=000080>" + "female H.A.M. followers" + "</col>" + ". (You also need level 35 Agility.)");
+				case 13:
+					return newstruct cs2func_script_992_struct(45, 3245, "Possibility of stealing triple loot from a warrior" + "<br>" + " (with 35 Agility)", "You now have the Thieving level required to potentially steal triple loot from " + "<col=000080>" + "warriors" + "</col>" + ". (You also need level 35 Agility.)");
+				case 14:
+					return newstruct cs2func_script_992_struct(46, 10998, "Possibility of stealing double loot from a cave goblin" + "<br>" + " (with 36 Agility)", "You now have the Thieving level required to potentially steal double loot from " + "<col=000080>" + "cave goblins" + "</col>" + ". (You also need level 36 Agility.)");
+				case 15:
+					return newstruct cs2func_script_992_struct(48, 5068, "Possibility of stealing double loot from a master farmer" + "<br>" + " (with 38 Agility)", "You now have the Thieving level required to potentially steal double loot from " + "<col=000080>" + "master farmers" + "</col>" + ". (You also need level 38 Agility.)");
+				case 16:
+					return newstruct cs2func_script_992_struct(50, 4297, "Possibility of stealing quadruple loot from a male H.A.M. follower" + "<br>" + " (with 40 Agility)", "You now have the Thieving level required to potentially steal quadruple loot from " + "<col=000080>" + "male H.A.M. followers" + "</col>" + ". (You also need level 40 Agility.)");
+				case 17:
+					return newstruct cs2func_script_992_struct(50, 3249, "Possibility of stealing double loot from a guard" + "<br>" + " (with 40 Agility)", "You now have the Thieving level required to potentially steal double loot from " + "<col=000080>" + "guards" + "</col>" + ". (You also need level 40 Agility.)");
+				case 18:
+					return newstruct cs2func_script_992_struct(52, 3247, "Possibility of stealing triple loot from a rogue" + "<br>" + " (with 42 Agility)", "You now have the Thieving level required to potentially steal triple loot from " + "<col=000080>" + "rogues" + "</col>" + ". (You also need level 42 Agility.)");
+				case 19:
+					return newstruct cs2func_script_992_struct(55, 3245, "Possibility of stealing quadruple loot from a warrior" + "<br>" + " (with 45 Agility)", "You now have the Thieving level required to potentially steal quadruple loot from " + "<col=000080>" + "warriors" + "</col>" + ". (You also need level 45 Agility.)");
+				case 20:
+					return newstruct cs2func_script_992_struct(55, 3686, "Possibility of stealing double loot from a Fremennik citizen" + "<br>" + " (with 45 Agility)", "You now have the Thieving level required to potentially steal double loot from " + "<col=000080>" + "Fremennik citizens" + "</col>" + ". (You also need level 45 Agility.)");
+				case 21:
+					return newstruct cs2func_script_992_struct(55, 6782, "Possibility of stealing double loot from a bearded Pollnivnian bandit" + "<br>" + " (with 45 Agility)", "You now have the Thieving level required to potentially steal double loot from " + "<col=000080>" + "bearded Pollnivnian bandits" + "</col>" + ". (You also need level 45 Agility.)");
+				case 22:
+					return newstruct cs2func_script_992_struct(56, 10998, "Possibility of stealing triple loot from a cave goblin" + "<br>" + " (with 46 Agility)", "You now have the Thieving level required to potentially steal triple loot from " + "<col=000080>" + "cave goblins" + "</col>" + ". (You also need level 46 Agility.)");
+				case 23:
+					return newstruct cs2func_script_992_struct(58, 5068, "Possibility of stealing triple loot from a master farmer" + "<br>" + " (with 48 Agility)", "You now have the Thieving level required to potentially steal triple loot from " + "<col=000080>" + "master farmers" + "</col>" + ". (You also need level 48 Agility.)");
+				case 24:
+					return newstruct cs2func_script_992_struct(60, 3249, "Possibility of stealing triple loot from a guard" + "<br>" + " (with 50 Agility)", "You now have the Thieving level required to potentially steal triple loot from " + "<col=000080>" + "guards" + "</col>" + ". (You also need level 50 Agility.)");
+				case 25:
+					return newstruct cs2func_script_992_struct(62, 3247, "Possibility of stealing quadruple loot from a rogue" + "<br>" + " (with 52 Agility)", "You now have the Thieving level required to potentially steal quadruple loot from " + "<col=000080>" + "rogues" + "</col>" + ". (You also need level 52 Agility.)");
+				case 26:
+					return newstruct cs2func_script_992_struct(63, 4625, "Possibility of stealing double loot from a desert bandit" + "<br>" + " (with 53 Agility)", "You now have the Thieving level required to potentially steal double loot from " + "<col=000080>" + "desert bandits" + "</col>" + ". (You also need level 53 Agility.)");
+				case 27:
+					return newstruct cs2func_script_992_struct(65, 3686, "Possibility of stealing triple loot from a Fremennik citizen" + "<br>" + " (with 55 Agility)", "You now have the Thieving level required to potentially steal triple loot from " + "<col=000080>" + "Fremennik citizens" + "</col>" + ". (You also need level 55 Agility.)");
+				case 28:
+					return newstruct cs2func_script_992_struct(65, 6782, "Possibility of stealing triple loot from a bearded Pollnivnian bandit" + "<br>" + " (with 55 Agility)", "You now have the Thieving level required to potentially steal triple loot from " + "<col=000080>" + "bearded Pollnivnian bandits" + "</col>" + ". (You also need level 55 Agility.)");
+				case 29:
+					return newstruct cs2func_script_992_struct(65, 3251, "Possibility of stealing double loot from a knight" + "<br>" + " (with 55 Agility)", "You now have the Thieving level required to potentially steal double loot from " + "<col=000080>" + "knights" + "</col>" + ". (You also need level 55 Agility.)");
+				case 30:
+					return newstruct cs2func_script_992_struct(65, 6781, "Possibility of stealing double loot from a Pollnivnian bandit" + "<br>" + " (with 55 Agility)", "You now have the Thieving level required to potentially steal double loot from " + "<col=000080>" + "Pollnivnian bandits" + "</col>" + ". (You also need level 55 Agility.)");
+				case 31:
+					return newstruct cs2func_script_992_struct(66, 10998, "Possibility of stealing quadruple loot from a cave goblin" + "<br>" + " (with 56 Agility)", "You now have the Thieving level required to potentially steal quadruple loot from " + "<col=000080>" + "cave goblins" + "</col>" + ". (You also need level 56 Agility.)");
+				case 32:
+					return newstruct cs2func_script_992_struct(68, 5068, "Possibility of stealing quadruple loot from a master farmer" + "<br>" + " (with 58 Agility)", "You now have the Thieving level required to potentially steal quadruple loot from " + "<col=000080>" + "master farmers" + "</col>" + ". (You also need level 58 Agility.)");
+				case 33:
+					return newstruct cs2func_script_992_struct(70, 3249, "Possibility of stealing quadruple loot from a guard" + "<br>" + " (with 60 Agility)", "You now have the Thieving level required to potentially steal quadruple loot from " + "<col=000080>" + "guards" + "</col>" + ". (You also need level 60 Agility.)");
+				case 34:
+					return newstruct cs2func_script_992_struct(73, 4625, "Possibility of stealing triple loot from a desert bandit" + "<br>" + " (with 63 Agility)", "You now have the Thieving level required to potentially steal triple loot from " + "<col=000080>" + "desert bandits" + "</col>" + ". (You also need level 63 Agility.)");
+				case 35:
+					return newstruct cs2func_script_992_struct(75, 3686, "Possibility of stealing quadruple loot from a Fremennik citizen" + "<br>" + " (with 65 Agility)", "You now have the Thieving level required to potentially steal quadruple loot from " + "<col=000080>" + "Fremennik citizens" + "</col>" + ". (You also need level 65 Agility.)");
+				case 36:
+					return newstruct cs2func_script_992_struct(75, 6782, "Possibility of stealing quadruple loot from a bearded Pollnivnian bandit" + "<br>" + " (with 65 Agility)", "You now have the Thieving level required to potentially steal quadruple loot from " + "<col=000080>" + "bearded Pollnivnian bandits" + "</col>" + ". (You also need level 65 Agility.)");
+				case 37:
+					return newstruct cs2func_script_992_struct(75, 3251, "Possibility of stealing triple loot from a knight" + "<br>" + " (with 65 Agility)", "You now have the Thieving level required to potentially steal triple loot from " + "<col=000080>" + "knights" + "</col>" + ". (You also need level 65 Agility.)");
+				case 38:
+					return newstruct cs2func_script_992_struct(75, 6781, "Possibility of stealing triple loot from a Pollnivnian bandit" + "<br>" + " (with 65 Agility)", "You now have the Thieving level required to potentially steal triple loot from " + "<col=000080>" + "Pollnivnian bandits" + "</col>" + ". (You also need level 65 Agility.)");
+				case 39:
+					return newstruct cs2func_script_992_struct(75, 3253, "Possibility of stealing double loot from a watchman" + "<br>" + " (with 65 Agility)", "You now have the Thieving level required to potentially steal double loot from " + "<col=000080>" + "watchmen" + "</col>" + ". (You also need level 65 Agility.)");
+				case 40:
+					return newstruct cs2func_script_992_struct(75, 6780, "Possibility of stealing double loot from a Menaphite thug" + "<br>" + " (with 65 Agility)", "You now have the Thieving level required to potentially steal double loot from " + "<col=000080>" + "Menaphite thugs" + "</col>" + ". (You also need level 65 Agility.)");
+				case 41:
+					return newstruct cs2func_script_992_struct(80, 3255, "Possibility of stealing double loot from a paladin" + "<br>" + " (with 70 Agility)", "You now have the Thieving level required to potentially steal double loot from " + "<col=000080>" + "paladins" + "</col>" + ". (You also need level 70 Agility.)");
+				case 42:
+					return newstruct cs2func_script_992_struct(83, 4625, "Possibility of stealing quadruple loot from a desert bandit" + "<br>" + " (with 73 Agility)", "You now have the Thieving level required to potentially steal quadruple loot from " + "<col=000080>" + "desert bandits" + "</col>" + ". (You also need level 73 Agility.)");
+				case 43:
+					return newstruct cs2func_script_992_struct(85, 3251, "Possibility of stealing quadruple loot from a knight" + "<br>" + " (with 75 Agility)", "You now have the Thieving level required to potentially steal quadruple loot from " + "<col=000080>" + "knights" + "</col>" + ". (You also need level 75 Agility.)");
+				case 44:
+					return newstruct cs2func_script_992_struct(85, 6781, "Possibility of stealing quadruple loot from a Pollnivnian bandit" + "<br>" + " (with 75 Agility)", "You now have the Thieving level required to potentially steal quadruple loot from " + "<col=000080>" + "Pollnivnian bandits" + "</col>" + ". (You also need level 75 Agility.)");
+				case 45:
+					return newstruct cs2func_script_992_struct(85, 3253, "Possibility of stealing triple loot from a watchman" + "<br>" + " (with 75 Agility)", "You now have the Thieving level required to potentially steal triple loot from " + "<col=000080>" + "watchmen" + "</col>" + ". (You also need level 75 Agility.)");
+				case 46:
+					return newstruct cs2func_script_992_struct(85, 6780, "Possibility of stealing triple loot from a Menaphite thug" + "<br>" + " (with 75 Agility)", "You now have the Thieving level required to potentially steal triple loot from " + "<col=000080>" + "Menaphite thugs" + "</col>" + ". (You also need level 75 Agility.)");
+				case 47:
+					return newstruct cs2func_script_992_struct(85, 3257, "Possibility of stealing double loot from a gnome" + "<br>" + " (with 75 Agility)", "You now have the Thieving level required to potentially steal double loot from " + "<col=000080>" + "gnomes" + "</col>" + ". (You also need level 75 Agility.)");
+				case 48:
+					return newstruct cs2func_script_992_struct(90, 3255, "Possibility of stealing triple loot from a paladin" + "<br>" + " (with 80 Agility)", "You now have the Thieving level required to potentially steal triple loot from " + "<col=000080>" + "paladins" + "</col>" + ". (You also need level 80 Agility.)");
+				case 49:
+					return newstruct cs2func_script_992_struct(90, 3259, "Possibility of stealing double loot from a hero" + "<br>" + " (with 80 Agility)", "You now have the Thieving level required to potentially steal double loot from " + "<col=000080>" + "heroes" + "</col>" + ". (You also need level 80 Agility.)");
+				case 50:
+					return newstruct cs2func_script_992_struct(95, 3253, "Possibility of stealing quadruple loot from a watchman" + "<br>" + " (with 85 Agility)", "You now have the Thieving level required to potentially steal quadruple loot from " + "<col=000080>" + "watchmen" + "</col>" + ". (You also need level 85 Agility.)");
+				case 51:
+					return newstruct cs2func_script_992_struct(95, 6780, "Possibility of stealing quadruple loot from a Menaphite thug" + "<br>" + " (with 85 Agility)", "You now have the Thieving level required to potentially steal quadruple loot from " + "<col=000080>" + "Menaphite thugs" + "</col>" + ". (You also need level 85 Agility.)");
+				case 52:
+					return newstruct cs2func_script_992_struct(95, 3257, "Possibility of stealing triple loot from a gnome" + "<br>" + " (with 85 Agility)", "You now have the Thieving level required to potentially steal triple loot from " + "<col=000080>" + "gnomes" + "</col>" + ". (You also need level 85 Agility.)");
+				case 53:
+					return newstruct cs2func_script_992_struct(95, 6105, "Possibility of stealing double loot from an elf" + "<br>" + " (with 85 Agility)", "You now have the Thieving level required to potentially steal double loot from " + "<col=000080>" + "elves" + "</col>" + ". (You also need level 85 Agility.)");
+			}
+			break;
+		case 2:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_992_struct(2, 1965, "Vegetable stall" + "<br>" + " (after Fremennik Trials)", "You now have the Thieving level required to steal from " + "<col=000080>" + "vegetable stalls" + "</col>" + " (after Fremennik Trials).");
+				case 1:
+					return newstruct cs2func_script_992_struct(5, 1891, "Baker's stall", "You can now steal from " + "<col=000080>" + "bakers' stalls" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_992_struct(5, 1933, "Ape Atoll general stall" + "<br>" + " (after starting Monkey Madness)", "You now have the Thieving level required to steal from the " + "<col=000080>" + "general stall" + "</col>" + " on Ape Atoll (after starting Monkey Madness).");
+				case 3:
+					return newstruct cs2func_script_992_struct(5, 1978, "Tea stall", "You can now steal from " + "<col=000080>" + "tea stalls" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_992_struct(5, 1755, "Crafting stall", "You can now steal from the " + "<col=000080>" + "crafting stalls" + "</col>" + " in Keldagrim and, after starting Monkey Madness, the Ape Atoll.");
+				case 5:
+					return newstruct cs2func_script_992_struct(5, 1963, "Monkey food stall" + "<br>" + " (after starting Monkey Madness)", "You now have the Thieving level required to steal from the " + "<col=000080>" + "monkey food stall" + "</col>" + " (after starting Monkey Madness).");
+				case 6:
+					return newstruct cs2func_script_992_struct(15, 2379, "Rock cake stall", "You can now steal from " + "<col=000080>" + "rock cake stalls" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_992_struct(20, 950, "Silk stall", "You can now steal from " + "<col=000080>" + "silk stalls" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_992_struct(22, 7919, "Wine stall", "You can now steal from " + "<col=000080>" + "wine stalls" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_992_struct(27, 5171, "Seed stall", "You can now steal from " + "<col=000080>" + "seed stalls" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_992_struct(35, 948, "Fur stall", "You can now steal from " + "<col=000080>" + "fur stalls" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_992_struct(42, 331, "Fish stall", "You can now steal from " + "<col=000080>" + "fish stalls" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_992_struct(49, 9174, "Crossbow stall", "You can now steal from " + "<col=000080>" + "crossbow stalls" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_992_struct(50, 442, "Silver stall", "You can now steal from " + "<col=000080>" + "silver stalls" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_992_struct(63, 2773, "Customs evidence files" + "<br>" + " (after Rocking Out)", "You now have the Thieving level to steal from the " + "<col=000080>" + "customs evidence files" + "</col>" + " of " + "<col=000080>" + "Rock Island Prison" + "</col>" + " (after Rocking Out).");
+				case 15:
+					return newstruct cs2func_script_992_struct(65, 556, "Magic stall", "You can now steal from " + "<col=000080>" + "magic stalls" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_992_struct(65, 1323, "Scimitar stall", "You can now steal from " + "<col=000080>" + "scimitar stalls" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_992_struct(65, 2007, "Spice stall", "You can now steal from " + "<col=000080>" + "spice stalls" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_992_struct(75, 1607, "Gem stall", "You can now steal from " + "<col=000080>" + "gem stalls" + "</col>" + ".");
+			}
+			break;
+		case 3:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_992_struct(13, 1001, "Ardougne, Rellekka and the Wilderness", "You can now steal from certain " + "<col=000080>" + "chests" + "</col>" + " in " + "<col=000080>" + "Ardougne" + "</col>" + ", " + "<col=000080>" + "Rellekka" + "</col>" + " and the " + "<col=000080>" + "Wilderness" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_992_struct(28, 561, "Upstairs in Ardougne and Rellekka", "You can now steal from certain " + "<col=000080>" + "chests" + "</col>" + " upstairs in " + "<col=000080>" + "Ardougne" + "</col>" + " and " + "<col=000080>" + "Rellekka" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_992_struct(43, 1001, "Upstairs in Ardougne", "You can now steal from certain " + "<col=000080>" + "chests" + "</col>" + " upstairs in " + "<col=000080>" + "Ardougne" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_992_struct(47, 41, "Hemenster", "You can now steal from certain " + "<col=000080>" + "chests" + "</col>" + " in " + "<col=000080>" + "Hemenster" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_992_struct(47, 1001, "Rellekka", "You can now steal from certain " + "<col=000080>" + "chests" + "</col>" + " in " + "<col=000080>" + "Rellekka" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_992_struct(52, 4522, "Dorgesh-Kaan (average chests)", "You can now steal from " + "<col=000080>" + "average chests" + "</col>" + " in " + "<col=000080>" + "Dorgesh-Kaan" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_992_struct(59, 565, "Chaos Druid Tower, north of Ardougne", "You can now steal from " + "<col=000080>" + "chests" + "</col>" + " in the " + "<col=000080>" + "Chaos Druid Tower" + "</col>" + ", north of " + "<col=000080>" + "Ardougne" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_992_struct(72, 383, "King Lathas's castle in Ardougne", "You can now steal from " + "<col=000080>" + "chests" + "</col>" + " in " + "<col=000080>" + "King Lathas's castle" + "</col>" + " in " + "<col=000080>" + "Ardougne" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_992_struct(78, 1623, "Dorgesh-Kaan (rich chests)", "You can now steal from " + "<col=000080>" + "rich chests" + "</col>" + " in " + "<col=000080>" + "Dorgesh-Kaan" + "</col>" + ".");
+			}
+			break;
+		case 4:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_992_struct(15, 10593, "Cowbells from dairy cows (after starting Cold War)", "You now have the Thieving level required to steal " + "<col=000080>" + "cowbells" + "</col>" + " from " + "<col=000080>" + "dairy cows" + "</col>" + " (after starting Cold War).");
+				case 1:
+					return newstruct cs2func_script_992_struct(20, 4834, "Zogre coffins at Jiggig", "You can now pick locks in " + "<col=000080>" + "zogre coffins" + "</col>" + " at " + "<col=000080>" + "Jiggig" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_992_struct(21, 21534, "Black Ibis Gear" + "<br>" + " (from Pyramid Plunder)", "You now have the Thieving level required to wear " + "<col=000080>" + "Black Ibis clothing" + "</col>" + " found in Pyramid Plunder.");
+				case 3:
+					return newstruct cs2func_script_992_struct(30, 4599, "Blackjack lure and knockout" + "<br>" + " (after starting The Feud)", "Members now have the Thieving level required to use a " + "<col=000080>" + "blackjack" + "</col>" + " to lure and knockout a target (after starting The Feud).");
+				case 4:
+					return newstruct cs2func_script_992_struct(44, 10981, "Wire from the Dorgeshuun wire machine.", "You can now steal " + "<col=000080>" + "wire" + "</col>" + " from the " + "<col=000080>" + "Dorgeshuun wire machine" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_992_struct(82, 1523, "Pick lock to enter Agility Dungeon from Yanille", "You can now use your lock-picking skills to access the " + "<col=000080>" + "Agility Dungeon" + "</col>" + " from " + "<col=000080>" + "Yanille" + "</col>" + ".");
+			}
+			break;
+		case 5:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_992_struct(91, 18778, "Starved ancient effigies", "You can now investigate " + "<col=000080>" + "starved ancient effigies" + "</col>" + " using your knowledge of Thieving.");
+				case 1:
+					return newstruct cs2func_script_992_struct(93, 18779, "Nourished ancient effigies", "You can now investigate " + "<col=000080>" + "nourished ancient effigies" + "</col>" + " using your knowledge of Thieving.");
+				case 2:
+					return newstruct cs2func_script_992_struct(95, 18780, "Sated ancient effigies", "You can now investigate " + "<col=000080>" + "sated ancient effigies" + "</col>" + " using your knowledge of Thieving.");
+				case 3:
+					return newstruct cs2func_script_992_struct(97, 18781, "Gorged ancient effigies", "You can now investigate " + "<col=000080>" + "gorged ancient effigies" + "</col>" + " using your knowledge of Thieving.");
+			}
+			break;
+		case 6:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_992_struct(-1, 7620, "In Stealing Creation, you can pickpocket players 20 levels above your own.", "");
+				case 1:
+					return newstruct cs2func_script_992_struct(1, 10855, "Sorceress's Garden - Winter", "You can now enter the " + "<col=000080>" + "winter garden" + "</col>" + " in " + "<col=000080>" + "Sorceress's Garden" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_992_struct(21, 9026, "Pyramid Plunder - Room 1", "You can now enter the " + "<col=000080>" + "first chamber" + "</col>" + " of the " + "<col=000080>" + "Pyramid of Jalsavrah" + "</col>" + " in " + "<col=000080>" + "Pyramid Plunder" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_992_struct(25, 10853, "Sorceress's Garden - Spring", "You can now enter the " + "<col=000080>" + "spring garden" + "</col>" + " in " + "<col=000080>" + "Sorceress's Garden" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_992_struct(31, 9032, "Pyramid Plunder - Room 2", "You can now enter the " + "<col=000080>" + "second chamber" + "</col>" + " of the " + "<col=000080>" + "Pyramid of Jalsavrah" + "</col>" + " in " + "<col=000080>" + "Pyramid Plunder" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_992_struct(41, 9036, "Pyramid Plunder - Room 3", "You can now enter the " + "<col=000080>" + "third chamber" + "</col>" + " of the " + "<col=000080>" + "Pyramid of Jalsavrah" + "</col>" + " in " + "<col=000080>" + "Pyramid Plunder" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_992_struct(45, 10854, "Sorceress's Garden - Autumn", "You can now enter the " + "<col=000080>" + "autumn garden" + "</col>" + " in " + "<col=000080>" + "Sorceress's Garden" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_992_struct(50, 5559, "Rogues' Den" + "<br>" + " (with 50 Agility)", "You now have the Thieving level required to attempt the " + "<col=000080>" + "Rogues' Den" + "</col>" + ", located below the Toad and Chicken in " + "<col=000080>" + "Burthorpe" + "</col>" + ". (You also need level 50 Agility.)");
+				case 8:
+					return newstruct cs2func_script_992_struct(51, 9042, "Pyramid Plunder - Room 4", "You can now enter the " + "<col=000080>" + "fourth chamber" + "</col>" + " of the " + "<col=000080>" + "Pyramid of Jalsavrah" + "</col>" + " in " + "<col=000080>" + "Pyramid Plunder" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_992_struct(61, 9038, "Pyramid Plunder - Room 5", "You can now enter the " + "<col=000080>" + "fifth chamber" + "</col>" + " of the " + "<col=000080>" + "Pyramid of Jalsavrah" + "</col>" + " in " + "<col=000080>" + "Pyramid Plunder" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_992_struct(65, 10852, "Sorceress's Garden - Summer", "You can now enter the " + "<col=000080>" + "summer garden" + "</col>" + " in " + "<col=000080>" + "Sorceress's Garden" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_992_struct(71, 9040, "Pyramid Plunder - Room 6", "You can now enter the " + "<col=000080>" + "sixth chamber" + "</col>" + " of the " + "<col=000080>" + "Pyramid of Jalsavrah" + "</col>" + " in " + "<col=000080>" + "Pyramid Plunder" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_992_struct(81, 9028, "Pyramid Plunder - Room 7", "You can now enter the " + "<col=000080>" + "seventh chamber" + "</col>" + " of the " + "<col=000080>" + "Pyramid of Jalsavrah" + "</col>" + " in " + "<col=000080>" + "Pyramid Plunder" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_992_struct(91, 9034, "Pyramid Plunder - Room 8", "You can now enter the " + "<col=000080>" + "eighth chamber" + "</col>" + " of the " + "<col=000080>" + "Pyramid of Jalsavrah" + "</col>" + " in " + "<col=000080>" + "Pyramid Plunder" + "</col>" + ".");
+			}
+			break;
+		case 7:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_992_struct(-1, 15707, "Dungeoneering skill tasks" + "<br>" + "<br>" + "As your Thieving level increases, you will be able to attempt higher-level Thieving tasks within Daemonheim." + "<br>" + "<br>" + "You will be more likely to succeed when attempting Thieving tasks within Daemonheim." + "<br>" + "<br>" + "You will also be able to open higher level " + "<col=000080>" + "locked chests" + "</col>" + " within Daemonheim.", "");
+			}
+			break;
+		case 8:
+			if (((boolean)arg1)) {
+				return newstruct cs2func_script_992_struct(99, 9777, "Skill mastery", "<col=000080>" + "Congratulations! You are now a master thief. Why not visit " + "<col=800000>" + "Martin Thwait" + "<col=000080>" + ", who runs a shop at the " + "<col=800000>" + "Rogues' Den" + "<col=000080>" + ". He has something special that is only available to true masters of the " + "<col=800000>" + "Thieving" + "<col=000080>" + " skill!");
+			}
+	}
+	return newstruct cs2func_script_992_struct(0, -1, "", "");
+}

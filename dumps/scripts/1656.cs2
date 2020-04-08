@@ -1,0 +1,11 @@
+void script_1656() {
+	if (((boolean)bitconfig_6673)) {
+		setScriptCallOnClickContextMenu(29, "", new WidgetPointer(767,10));
+		setWidgetIsHidden(true, new WidgetPointer(767,54));
+	} else {
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(767,10));
+		setWidgetIsHidden(false, new WidgetPointer(767,54));
+		script_679(50266167);
+	}
+	return;
+}

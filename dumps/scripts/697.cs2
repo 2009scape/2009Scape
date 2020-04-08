@@ -1,0 +1,9 @@
+void script_697(int arg0) {
+	if (setWidgetRegister(new WidgetPointer(arg0))) {
+		setWidgetBorderThickness(2);
+	}
+	if (setWidgetRegister(new WidgetPointer(662,74), 0) && (bitAnd(getWidgetAMaskBit11to17(), 32) != 0)) {
+		script_71(4);
+	}
+	return;
+}

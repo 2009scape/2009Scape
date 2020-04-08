@@ -1,0 +1,15 @@
+void script_2346() {
+	globalint_769 = add(globalint_769, 1);
+	if (globalint_769 >= subtract(cs2method5407(0), 1)) {
+		globalint_769 = 0;
+		setScriptCallOnMinimapRelatedSetting3(-1, "", new WidgetPointer(582,0));
+		return;
+	}
+	if (globalint_769 == subtract(cs2method5407(0), 2)) {
+		cameraMethod5502(0, globalint_769, 200, 75, 1, globalint_769);
+	} else {
+		cameraMethod5502(0, globalint_769, 200, 200, 1, globalint_769);
+	}
+	setScriptCallOnMinimapRelatedSetting3(2346, "", new WidgetPointer(582,0));
+	return;
+}

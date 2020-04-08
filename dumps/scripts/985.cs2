@@ -1,0 +1,23 @@
+cs2func_script_985_struct(1,1,0) script_985(int arg0) {
+	switch (arg0) {
+		case 0:
+			return newstruct cs2func_script_985_struct(0, "Firemaking");
+		case 1:
+			return newstruct cs2func_script_985_struct(1, "Barbarian fires");
+		case 2:
+			return newstruct cs2func_script_985_struct(1, "Pyre ships");
+		case 3:
+			return newstruct cs2func_script_985_struct(0, "Equipment");
+		case 4:
+			return newstruct cs2func_script_985_struct(1, "Beacons");
+		case 5:
+			return newstruct cs2func_script_985_struct(0, "Other");
+		case 6:
+			return newstruct cs2func_script_985_struct(1, "Minigames");
+		case 7:
+			return newstruct cs2func_script_985_struct(0, "Dungeoneering");
+		case 8:
+			return newstruct cs2func_script_985_struct(0, "Milestones");
+	}
+	return newstruct cs2func_script_985_struct(-1, "");
+}

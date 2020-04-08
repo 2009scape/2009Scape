@@ -48,9 +48,14 @@ public final class SlayerManager implements SavingModule {
 	private int slayerPoints;
 
 	/**
-	 * The task count.
+	 * The task streak.
 	 */
 	private int taskCount;
+
+	/**
+	 * Total tasks completed
+	 */
+	private int taskTotal;
 
 	/**
 	 * The learned rewards.
@@ -69,6 +74,11 @@ public final class SlayerManager implements SavingModule {
 	public SlayerManager(Player player) {
 		this.player = player;
 	}
+
+	/**
+	 * If the player can earn points (taskTotal > 4)
+	 */
+	private boolean canEarnPoints = false;
 
 	@Override
 	public void parse(ByteBuffer buffer) {
@@ -105,6 +115,15 @@ public final class SlayerManager implements SavingModule {
 				size = buffer.get();
 				for (int i = 0; i < size; i++) {
 					removed.add(Tasks.values()[buffer.getInt()].getTask());
+				}
+				break;
+			case 8:
+				taskTotal = buffer.getInt();
+				break;
+			case 9:
+				int pointsEarnable = buffer.getInt();
+				if(pointsEarnable == 1){
+					canEarnPoints = true;
 				}
 				break;
 			default:
@@ -149,6 +168,14 @@ public final class SlayerManager implements SavingModule {
 				buffer.putInt(Tasks.forValue(task).ordinal());
 			}
 		}
+		if (taskTotal != 0){
+			buffer.put((byte) 8);
+			buffer.putInt(taskTotal);
+		}
+		if(canEarnPoints){
+			buffer.put((byte) 9);
+			buffer.putInt(1);
+		}
 		buffer.put((byte) 0);
 	}
 
@@ -163,7 +190,8 @@ public final class SlayerManager implements SavingModule {
 		if (!hasTask()) {
 			clear();
 			taskCount++;
-			if (taskCount > 4 && master != Master.TURAEL && slayerPoints < 64000) {
+			taskTotal++;
+			if ((taskCount > 4 || canEarnPoints ) && master != Master.TURAEL && slayerPoints < 64000) {
 				int points = master.getTaskPoints()[0];
 				if (taskCount % 10 == 0) {
 					points = master.getTaskPoints()[1];
@@ -174,9 +202,12 @@ public final class SlayerManager implements SavingModule {
 				if (slayerPoints > 64000) {
 					slayerPoints = 64000;
 				}
-				player.sendMessage("You've completed " + taskCount + " tasks in a row and received " + points + " points; return to a Slayer master.");
+				player.sendMessages("You've completed " + taskCount + " tasks in a row and received " + points + " points, with a total of " + player.getSlayer().getSlayerPoints(),"You have completed " + taskTotal + " tasks in total. Return to a Slayer master.");
+			} else if(taskCount == 4){
+				player.sendMessage("You've completed your task; you will start gaining points on your next task!");
+				canEarnPoints = true;
 			} else {
-				player.sendMessages("You've completed your task; Complete " + (4 - taskCount) + " more task(s) to start gaining points.", "return to a Slayer master.");
+				player.sendMessages("You've completed your task; Complete " + (4 - taskCount) + " more task(s) to start gaining points.", "Return to a Slayer master.");
 			}
 		} else {
 			//player.sendMessage("You're assigned to kill " + NPCDefinition.forId((player.getSlayer().getTask().getNpcs()[0])).getName().toLowerCase() + "s; Only " + getAmount() + " more to go.");
@@ -398,5 +429,7 @@ public final class SlayerManager implements SavingModule {
 	public List<Task> getRemoved() {
 		return removed;
 	}
+
+	public int getTotalTasks() {return taskTotal;}
 
 }

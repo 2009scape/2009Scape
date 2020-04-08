@@ -1,0 +1,28 @@
+void script_2356(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = getWidgetActualWidth(new WidgetPointer(905,5));
+	ivar2 = 0;
+	if (ivar1 < arg0) {
+		ivar2 = add(ivar1, 9);
+		if (ivar2 >= arg0) {
+			setWidgetSize(add(arg0, 5), 0, 0, 1, new WidgetPointer(916,2));
+			setWidgetSize(arg0, 0, 0, 1, new WidgetPointer(905,5));
+			setScriptCallOnGameloop(-1, "", new WidgetPointer(916,21));
+			return;
+		}
+		setWidgetSize(add(ivar2, 5), 0, 0, 1, new WidgetPointer(916,2));
+		setWidgetSize(ivar2, 0, 0, 1, new WidgetPointer(905,5));
+	} else {
+		ivar2 = subtract(ivar1, 9);
+		if (ivar2 <= arg0) {
+			setWidgetSize(add(arg0, 5), 0, 0, 1, new WidgetPointer(916,2));
+			setWidgetSize(arg0, 0, 0, 1, new WidgetPointer(905,5));
+			setScriptCallOnGameloop(-1, "", new WidgetPointer(916,21));
+			return;
+		}
+		setWidgetSize(add(ivar2, 5), 0, 0, 1, new WidgetPointer(916,2));
+		setWidgetSize(ivar2, 0, 0, 1, new WidgetPointer(905,5));
+	}
+	return;
+}

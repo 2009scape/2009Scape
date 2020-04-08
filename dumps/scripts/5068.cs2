@@ -1,0 +1,12 @@
+int script_5068(int arg0,string arg1) {
+	int ivar1;
+	createExtraChild(new WidgetPointer(1111,30), 4, getExtraChildGap(new WidgetPointer(1111,30)));
+	setWidgetFont(494);
+	setWidgetTextAlignment(0, 1, 0);
+	setWidgetRGB(new Color(223, 207, 191));
+	ivar1 = add(multiply(getLineCount(getWidgetActualWidth(new WidgetPointer(1111,30)), 494, arg1), 10), 2);
+	setWidgetSize(0, ivar1, 1, 0);
+	setWidgetText(arg1);
+	setWidgetPosition(0, arg0, 1, 0);
+	return ivar1;
+}

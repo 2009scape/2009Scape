@@ -1,0 +1,8 @@
+void script_1966(int arg0) {
+	if (standart_config_261 > 0) {
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(arg0));
+	} else {
+		setWidgetRGB(new Color(150, 150, 150), new WidgetPointer(arg0));
+	}
+	return;
+}

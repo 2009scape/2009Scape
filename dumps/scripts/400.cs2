@@ -1,0 +1,31 @@
+string script_400(string arg0,string arg1,string arg2) {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	string svar3;
+	string svar4;
+	ivar0 = 0;
+	ivar1 = 0;
+	svar3 = "";
+	svar4 = "";
+	ivar2 = strLength(arg0);
+	ivar3 = strLength(arg1);
+	if (ivar2 > 0) {
+		ivar1 = strIndexof(ivar1, arg0, arg1);
+		while (ivar1 != -1) {
+			svar4 = substr(ivar0, ivar1, arg0);
+			if (stringMethod4107(svar4, "") != 0) {
+				svar3 = svar3 + svar4 + arg2;
+			}
+			ivar1 = add(ivar1, ivar3);
+			ivar0 = ivar1;
+			ivar1 = strIndexof(ivar1, arg0, arg1);
+		}
+		svar4 = substr(ivar0, ivar2, arg0);
+		if (stringMethod4107(svar4, "") != 0) {
+			svar3 = svar3 + svar4;
+		}
+	}
+	return svar3;
+}

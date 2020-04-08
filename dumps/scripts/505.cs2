@@ -1,0 +1,13 @@
+void script_505() {
+	setWidgetText(new WidgetPointer(1017,156), script_483(bitconfig_7520));
+	setWidgetText(new WidgetPointer(1017,157), script_483(bitconfig_7521));
+	setWidgetText(new WidgetPointer(1017,158), script_483(bitconfig_7526));
+	setWidgetText(new WidgetPointer(1017,159), script_483(bitconfig_7527));
+	setWidgetText(new WidgetPointer(1017,160), script_483(bitconfig_7530));
+	setWidgetText(new WidgetPointer(1017,161), script_483(bitconfig_7531));
+	setWidgetText(new WidgetPointer(1017,162), script_483(bitconfig_7532));
+	setWidgetText(new WidgetPointer(1017,163), script_483(bitconfig_7533));
+	setWidgetText(new WidgetPointer(1017,164), script_483(bitconfig_7534));
+	setWidgetText(new WidgetPointer(1017,165), script_483(bitconfig_7535));
+	return;
+}

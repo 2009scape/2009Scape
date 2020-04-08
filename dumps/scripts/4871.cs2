@@ -1,0 +1,25 @@
+int script_4871(int arg0) {
+	switch (arg0) {
+		case 1:
+			return 71565381;
+		case 2:
+			return 71565399;
+		case 3:
+			return 71565397;
+		case 4:
+			return 71565383;
+		case 5:
+			return 71565387;
+		case 6:
+			return 71565395;
+		case 7:
+			return 71565391;
+		case 8:
+			return 71565389;
+		case 9:
+			return 71565385;
+		case 10:
+			return 71565393;
+	}
+	return -1;
+}

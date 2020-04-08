@@ -1,0 +1,33 @@
+void script_313(int arg0) {
+	string svar0;
+	script_333(67371038, 7627330, 15130810, 0, 0);
+	script_333(67371041, 13022863, 15130810, 0, 0);
+	setWidgetSprite(4129, new WidgetPointer(1028,118));
+	setWidgetSprite(4129, new WidgetPointer(1028,120));
+	script_2741();
+	setScriptCallOnClickContextMenu(353, 1, "1", new WidgetPointer(1028,115));
+	setScriptCallOnClickContextMenu(353, 0, "1", new WidgetPointer(1028,116));
+	setScriptCallOnClickContextMenu(350, -2147483644, 0, "i1", new WidgetPointer(1028,38));
+	setScriptCallOnClickContextMenu(350, -2147483644, 1, "i1", new WidgetPointer(1028,39));
+	script_385(-1);
+	svar0 = cs2method2801(1, new WidgetPointer(1028,102));
+	script_368(67371110, add(getTextWidth(495, svar0), 30), svar0, "");
+	setScriptCallOnClickContextMenu(358, -2147483644, "i", new WidgetPointer(1028,102));
+	setScriptCallOnClickContextMenu(354, -2147483644, 0, "ii", new WidgetPointer(1028,95));
+	setScriptCallOnClickContextMenu(354, -2147483644, 1, "ii", new WidgetPointer(1028,96));
+	setScriptCallOnClickContextMenu(354, -2147483644, 2, "ii", new WidgetPointer(1028,100));
+	setScriptCallOnClickContextMenu(354, -2147483644, 3, "ii", new WidgetPointer(1028,97));
+	setScriptCallOnClickContextMenu(354, -2147483644, 6, "ii", new WidgetPointer(1028,98));
+	setScriptCallOnClickContextMenu(354, -2147483644, 7, "ii", new WidgetPointer(1028,99));
+	setWidgetSelfFull(new WidgetPointer(1028,112));
+	setWidget3DRotation(-30, 135, 18, 4, 0, 325, new WidgetPointer(1028,112));
+	setWidget3DRotation(-30, 135, 18, 4, 0, 325, new WidgetPointer(1028,113));
+	globalint_196 = bitconfig_8093;
+	globalint_197 = bitconfig_8089;
+	globalint_86 = bitconfig_8090;
+	globalint_1020 = bitconfig_6501;
+	script_386(0);
+	setScriptCallOnConfigChange(315, 1158, 1363, 2, "Y", new WidgetPointer(arg0));
+	setScriptCallOnGlobalConfigChange(349, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 12, "Y", new WidgetPointer(arg0));
+	return;
+}

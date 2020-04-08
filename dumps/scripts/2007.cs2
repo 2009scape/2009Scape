@@ -1,0 +1,23 @@
+void script_2007(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	cs2method2301(arg0, -1, new WidgetPointer(arg1));
+	ivar4 = subtract(getWidgetActualWidth(new WidgetPointer(arg0)), getWidgetActualWidth(new WidgetPointer(arg1)));
+	ivar5 = multiplyDivide(cs2method6143(), 255, ivar4);
+	setWidgetPosition(ivar5, 0, 0, 0, new WidgetPointer(arg1));
+	if (cs2method6143() > 0) {
+		if (((boolean)arg3)) {
+			setWidgetSprite(4123, new WidgetPointer(744,108));
+		} else {
+			setWidgetSprite(4118, new WidgetPointer(744,108));
+		}
+	} else if (((boolean)arg3)) {
+		setWidgetSprite(4124, new WidgetPointer(744,108));
+	} else {
+		setWidgetSprite(4119, new WidgetPointer(744,108));
+	}
+	if (((boolean)arg2)) {
+		globalint_1394 = cs2method6143();
+	}
+	return;
+}

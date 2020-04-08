@@ -1,0 +1,21 @@
+void script_4238(int arg0,int arg1,int arg2) {
+	int ivar3;
+	ivar3 = 0;
+	if (globalint_1495 != 0) {
+		ivar3 = max(0, subtract(120, subtract(getClientCycle(), globalint_1495)));
+	}
+	if ((ivar3 >= 60) && (ivar3 <= 120)) {
+		cs2method2106(min(multiply(ivar3, 545), 65353), new WidgetPointer(arg2));
+		cs2method2106(0, new WidgetPointer(arg1));
+	} else if ((ivar3 > 0) && (ivar3 < 60)) {
+		cs2method2106(32768, new WidgetPointer(arg2));
+		cs2method2106(min(add(32768, multiply(ivar3, 545)), 65353), new WidgetPointer(arg1));
+	} else {
+		cs2method2106(32768, new WidgetPointer(arg2));
+		cs2method2106(32768, new WidgetPointer(arg1));
+		if (globalint_1495 != 0) {
+			globalint_1495 = 0;
+		}
+	}
+	return;
+}

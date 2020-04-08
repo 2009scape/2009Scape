@@ -1,0 +1,15 @@
+int script_2601(int arg0,int arg1,int arg2,string arg3) {
+	createExtraChild(new WidgetPointer(arg2), 4, getExtraChildGap(new WidgetPointer(arg2)));
+	setWidgetSize(211, 16, 0, 0);
+	if (((boolean)arg0)) {
+		setWidgetPosition(6, arg1, 2, 0);
+	} else {
+		setWidgetPosition(0, arg1, 0, 0);
+	}
+	setWidgetFont(495);
+	setWidgetTextAlignment(0, 1, 0);
+	setWidgetRGB(new Color(235, 224, 188));
+	setWidgetUnknownBoolean(true);
+	setWidgetText(arg3);
+	return getWidgetCustomChildArrayIndex();
+}

@@ -1,0 +1,11 @@
+void script_522(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar2 = getSkillXp(arg1);
+	ivar3 = getSkillXp(arg1);
+	ivar2 = script_523(arg1);
+	ivar4 = subtract(ivar3, ivar2);
+	setWidgetText(new WidgetPointer(arg0), intToStr(ivar4));
+	return;
+}

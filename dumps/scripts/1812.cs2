@@ -1,0 +1,12 @@
+void script_1812(int arg0,string arg1) {
+	if (((boolean)strLength(arg1))) {
+		setWidgetText(new WidgetPointer(arg0), "");
+		globalstring_39 = "";
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+		return;
+	}
+	setWidgetText(new WidgetPointer(arg0), arg1);
+	globalstring_39 = arg1;
+	setScriptCallOnGameloop(1813, add(getClientCycle(), 1000), new WidgetPointer(arg0), "iI", new WidgetPointer(arg0));
+	return;
+}

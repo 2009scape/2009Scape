@@ -1,0 +1,88 @@
+void script_2044() {
+	setWidgetIsHidden(true, new WidgetPointer(325,2));
+	setWidgetIsHidden(true, new WidgetPointer(325,3));
+	setWidgetIsHidden(true, new WidgetPointer(325,10));
+	setWidgetIsHidden(true, new WidgetPointer(325,8));
+	setWidgetIsHidden(true, new WidgetPointer(325,4));
+	setWidgetIsHidden(true, new WidgetPointer(325,6));
+	setWidgetIsHidden(true, new WidgetPointer(325,5));
+	setWidgetIsHidden(true, new WidgetPointer(325,11));
+	setWidgetIsHidden(true, new WidgetPointer(325,9));
+	setWidgetIsHidden(true, new WidgetPointer(325,7));
+	setWidgetIsHidden(true, new WidgetPointer(325,12));
+	setWidgetIsHidden(true, new WidgetPointer(325,31));
+	setWidgetIsHidden(true, new WidgetPointer(325,30));
+	setWidgetIsHidden(true, new WidgetPointer(325,29));
+	setWidgetIsHidden(true, new WidgetPointer(325,28));
+	setWidgetIsHidden(true, new WidgetPointer(325,27));
+	setWidgetIsHidden(true, new WidgetPointer(325,26));
+	setWidgetIsHidden(true, new WidgetPointer(325,25));
+	setWidgetIsHidden(true, new WidgetPointer(325,24));
+	setWidgetIsHidden(true, new WidgetPointer(325,23));
+	setWidgetIsHidden(true, new WidgetPointer(325,22));
+	switch (standart_config_158) {
+		case 0:
+			setWidgetIsHidden(false, new WidgetPointer(325,2));
+			break;
+		case 1:
+			setWidgetIsHidden(false, new WidgetPointer(325,3));
+			break;
+		case 2:
+			setWidgetIsHidden(false, new WidgetPointer(325,10));
+			break;
+		case 3:
+			setWidgetIsHidden(false, new WidgetPointer(325,8));
+			break;
+		case 4:
+			setWidgetIsHidden(false, new WidgetPointer(325,4));
+			break;
+		case 5:
+			setWidgetIsHidden(false, new WidgetPointer(325,6));
+			break;
+		case 6:
+			setWidgetIsHidden(false, new WidgetPointer(325,5));
+			break;
+		case 7:
+			setWidgetIsHidden(false, new WidgetPointer(325,11));
+			break;
+		case 8:
+			setWidgetIsHidden(false, new WidgetPointer(325,9));
+			break;
+		case 9:
+			setWidgetIsHidden(false, new WidgetPointer(325,7));
+			break;
+		case 10:
+			setWidgetIsHidden(false, new WidgetPointer(325,12));
+	}
+	if (standart_config_156 < 2) {
+		setWidgetIsHidden(false, new WidgetPointer(325,31));
+	}
+	if (standart_config_156 < 3) {
+		setWidgetIsHidden(false, new WidgetPointer(325,30));
+	}
+	if (standart_config_156 < 4) {
+		setWidgetIsHidden(false, new WidgetPointer(325,29));
+	}
+	if (standart_config_156 < 5) {
+		setWidgetIsHidden(false, new WidgetPointer(325,28));
+	}
+	if (standart_config_156 < 6) {
+		setWidgetIsHidden(false, new WidgetPointer(325,27));
+	}
+	if (standart_config_156 < 7) {
+		setWidgetIsHidden(false, new WidgetPointer(325,26));
+	}
+	if (standart_config_156 < 8) {
+		setWidgetIsHidden(false, new WidgetPointer(325,25));
+	}
+	if (standart_config_156 < 9) {
+		setWidgetIsHidden(false, new WidgetPointer(325,24));
+	}
+	if (standart_config_156 < 10) {
+		setWidgetIsHidden(false, new WidgetPointer(325,23));
+	}
+	if (standart_config_156 < 11) {
+		setWidgetIsHidden(false, new WidgetPointer(325,22));
+	}
+	return;
+}

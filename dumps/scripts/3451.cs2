@@ -1,0 +1,30 @@
+void script_3451(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	ivar2 = 64094244;
+	ivar3 = 64094245;
+	ivar4 = 64094246;
+	ivar5 = 64094247;
+	ivar6 = 64094248;
+	ivar7 = 64094209;
+	if (((boolean)arg1)) {
+		ivar2 = 64028682;
+		ivar3 = 64028683;
+		ivar4 = 64028684;
+		ivar5 = 64028685;
+		ivar6 = 64028686;
+	}
+	script_3932(arg0, arg1, ivar2, 1, add(getTextWidth(3793, "MIN"), 30), "MIN", "");
+	script_3932(arg0, arg1, ivar3, 2, add(getTextWidth(3793, "LOW"), 30), "LOW", "");
+	script_3932(arg0, arg1, ivar4, 3, add(getTextWidth(3793, "MID"), 30), "MID", "");
+	script_3932(arg0, arg1, ivar5, 4, add(getTextWidth(3793, "HIGH"), 30), "HIGH", "");
+	script_3932(arg0, arg1, ivar6, 0, add(getTextWidth(3793, "CUSTOM"), 30), "CUSTOM", "");
+	if (((boolean)arg1)) {
+		script_3932(arg0, arg1, ivar7, -1, add(getTextWidth(3793, "RE-RUN AUTO SETUP"), 30), "RE-RUN AUTO SETUP", "");
+	}
+	return;
+}

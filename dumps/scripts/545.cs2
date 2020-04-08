@@ -1,0 +1,5 @@
+void script_545(int arg0,int arg1,int arg2) {
+	globalint_80 = getSkillActualLvl(arg1);
+	script_547(arg0, arg1, arg2);
+	return;
+}

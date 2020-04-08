@@ -1,0 +1,63 @@
+void script_2444() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	string svar0;
+	if (((boolean)standart_config_1437)) {
+		return;
+	}
+	if (isWidgetHidden(new WidgetPointer(34,10))) {
+		setScriptCallOnGameloop(2443, "", new WidgetPointer(34,9));
+		return;
+	}
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(34,9));
+	script_1548(13);
+	setWidgetIsHidden(true, new WidgetPointer(34,16));
+	globalint_821 = 0;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	svar0 = "";
+	deleteAllExtraChilds(new WidgetPointer(34,9));
+	if (cs2method6900()) {
+		setWidgetText(new WidgetPointer(34,13), "The notes system is not available for users restricted to quick-chat.");
+		setWidgetIsHidden(false, new WidgetPointer(34,13));
+		return;
+	}
+	setWidgetText(new WidgetPointer(34,13), "");
+	setWidgetIsHidden(true, new WidgetPointer(34,13));
+	while (ivar1 < 30) {
+		svar0 = script_2452(ivar1);
+		if (stringMethod4107(svar0, "") != 0) {
+			ivar0 = script_2445(ivar0, ivar2, script_2453(ivar1), svar0);
+			ivar2 = add(ivar2, 1);
+		}
+		ivar1 = add(ivar1, 1);
+	}
+	if (ivar2 <= 0) {
+		setWidgetText(new WidgetPointer(34,13), "No notes");
+		setWidgetIsHidden(false, new WidgetPointer(34,13));
+		setWidgetText(new WidgetPointer(34,1), "Notes");
+	} else if ((ivar2 > 0) && (ivar2 <= 30)) {
+		setWidgetText(new WidgetPointer(34,1), "Notes (" + intToStr(ivar2) + "/" + "30" + ")");
+	} else {
+		setWidgetText(new WidgetPointer(34,1), "Notes");
+	}
+	if ((ivar0 > 0) && (ivar0 < 13)) {
+		if (setWidgetRegister(new WidgetPointer(34,9), subtract(ivar2, 1))) {
+			setWidgetSize(getWidgetActualWidth(), subtract(getWidgetActualHeight(new WidgetPointer(34,9)), add(getWidgetActualY(), getWidgetActualHeight())), 0, 0, new WidgetPointer(34,12));
+			setWidgetPosition(getWidgetActualX(), add(getWidgetActualY(), getWidgetActualHeight()), 0, 0, new WidgetPointer(34,12));
+			setWidgetIsHidden(false, new WidgetPointer(34,12));
+		}
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(34,12));
+	}
+	if (ivar0 < 1) {
+		setWidgetScrollMax(0, 0, new WidgetPointer(34,9));
+	} else {
+		setWidgetScrollMax(0, add(multiply(ivar0, 15), 10), new WidgetPointer(34,9));
+	}
+	script_72(2228239, 2228233, cs2method2601(new WidgetPointer(34,9)));
+	setWidgetIsHidden(true, new WidgetPointer(34,44));
+	return;
+}

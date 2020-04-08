@@ -1,0 +1,20 @@
+void script_1427(int arg0) {
+	int ivar1;
+	ivar1 = mod(getClientCycle(), 32);
+	if ((globalint_1024 == bitconfig_6521) && (globalint_1024 != 0)) {
+		if (ivar1 < 8) {
+			cs2method2103(0, new WidgetPointer(arg0));
+		} else if (ivar1 < 16) {
+			cs2method2103(85, new WidgetPointer(arg0));
+		} else if (ivar1 < 24) {
+			cs2method2103(255, new WidgetPointer(arg0));
+		} else {
+			cs2method2103(85, new WidgetPointer(arg0));
+		}
+	} else if (getWidgetShadeColor(new WidgetPointer(arg0)) != 0) {
+		cs2method2103(0, new WidgetPointer(arg0));
+	} else {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+	}
+	return;
+}

@@ -1,0 +1,17 @@
+void script_4504(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = getWidgetParentId(new WidgetPointer(arg0));
+	if (ivar1 == -1) {
+		return;
+	}
+	ivar2 = subtract(getExtraChildGap(new WidgetPointer(ivar1)), 1);
+	while (ivar2 >= 0) {
+		if (setWidgetRegister(new WidgetPointer(ivar1), ivar2)) {
+			setWidgetNoOptions();
+		}
+		ivar2 = subtract(ivar2, 1);
+	}
+	setWidgetIsHidden(true, new WidgetPointer(ivar1));
+	return;
+}

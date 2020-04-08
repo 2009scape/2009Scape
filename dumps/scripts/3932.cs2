@@ -1,0 +1,37 @@
+void script_3932(int arg0,int arg1,int arg2,int arg3,int arg4,string arg5,string arg6) {
+	deleteAllExtraChilds(new WidgetPointer(arg2));
+	setWidgetSize(arg4, 27, 0, 0, new WidgetPointer(arg2));
+	createExtraChild(new WidgetPointer(arg2), 5, getExtraChildGap(new WidgetPointer(arg2)));
+	setWidgetSize(6, 26, 1, 0);
+	setWidgetPosition(0, 0, 1, 1);
+	cs2method1107(1);
+	createExtraChild(new WidgetPointer(arg2), 5, getExtraChildGap(new WidgetPointer(arg2)));
+	setWidgetSize(26, 26, 0, 0);
+	setWidgetPosition(0, 0, 0, 1);
+	createExtraChild(new WidgetPointer(arg2), 5, getExtraChildGap(new WidgetPointer(arg2)));
+	setWidgetSize(26, 26, 0, 0);
+	setWidgetPosition(3, 0, 2, 1);
+	createExtraChild(new WidgetPointer(arg2), 4, getExtraChildGap(new WidgetPointer(arg2)));
+	setWidgetSize(0, 0, 1, 1);
+	setWidgetPosition(0, -3, 1, 1);
+	setWidgetFont(3793);
+	setWidgetRGB(new Color(235, 224, 188));
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetUnknownBoolean(false);
+	setWidgetText(arg5);
+	script_3929(arg2, arg3, 0);
+	if (arg3 == -1) {
+		setScriptCallOnMouseExit(3930, new WidgetPointer(arg2), arg3, 0, "Ii1", new WidgetPointer(arg2));
+		setScriptCallOnMouseEntered(3930, new WidgetPointer(arg2), arg3, 1, "Ii1", new WidgetPointer(arg2));
+	} else {
+		setScriptCallOnMouseExit(3928, new WidgetPointer(arg2), arg3, 0, "Ii1", new WidgetPointer(arg2));
+		setScriptCallOnMouseEntered(3928, new WidgetPointer(arg2), arg3, 1, "Ii1", new WidgetPointer(arg2));
+	}
+	if (((boolean)arg0)) {
+		setScriptCallOnMousePressed(3388, arg3, arg0, arg1, "ii1", new WidgetPointer(arg2));
+	} else {
+		setWidgetContextMenuOption(1, new WidgetPointer(arg2), arg5);
+		setScriptCallOnClickContextMenu(3388, arg3, arg0, arg1, "ii1", new WidgetPointer(arg2));
+	}
+	return;
+}

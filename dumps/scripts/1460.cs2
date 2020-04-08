@@ -1,0 +1,20 @@
+void script_1460(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	string svar0;
+	ivar2 = ((int)cs2method_3408(105, 73, 1614, arg0));
+	ivar3 = ((int)cs2method_3408(105, 73, 1615, arg0));
+	setWidgetIsHidden(false, new WidgetPointer(ivar2));
+	setWidgetIsHidden(false, new WidgetPointer(ivar3));
+	setItemOnWidgetMethod2205(getItemIdInSlot(95, arg1), getItemAmtInSlot(95, arg1), new WidgetPointer(ivar3));
+	setWidgetBorderThickness(1, new WidgetPointer(ivar3));
+	setWidgetShadowColor(new Color(51, 51, 51), new WidgetPointer(ivar3));
+	setWidgetNoOptions(new WidgetPointer(ivar2));
+	setWidgetContextMenuOption(1, new WidgetPointer(ivar2), "View tab " + intToStr(arg0));
+	setWidgetContextMenuOption(2, new WidgetPointer(ivar2), "Collapse tab " + intToStr(arg0));
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(ivar2));
+	svar0 = "Click here to select tab " + intToStr(arg0);
+	setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(762,119), svar0, 25, 150, "IIsii", new WidgetPointer(ivar2));
+	setScriptCallOnMouseExit(40, new WidgetPointer(762,119), "I", new WidgetPointer(ivar2));
+	return;
+}

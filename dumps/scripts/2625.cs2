@@ -1,0 +1,14 @@
+void script_2625(int arg0,int arg1) {
+	if (arg0 == 84) {
+		script_2621();
+	} else {
+		if (isWidgetHidden(new WidgetPointer(850,1))) {
+			if (strIndexof(((char)lower(((char)arg1))), 0, "abcdefghijklmnopqrst") != -1) {
+				script_2621();
+			} else {
+				return;
+			}
+		}
+	}
+	return;
+}

@@ -1,0 +1,31 @@
+void script_393() {
+	setWidgetIsHidden(true, new WidgetPointer(1010,4));
+	setWidgetIsHidden(true, new WidgetPointer(1010,20));
+	setWidgetText(new WidgetPointer(1010,1), "Command Options");
+	setWidgetPosition(0, 133, 0, 0, new WidgetPointer(1010,40));
+	setWidgetSize(190, 116, 0, 0, new WidgetPointer(1010,40));
+	setWidgetText(new WidgetPointer(1010,41), "Comm Orb Recharging");
+	setWidgetPosition(0, 133, 0, 0, new WidgetPointer(1010,41));
+	setWidgetSize(190, 116, 0, 0, new WidgetPointer(1010,41));
+	setWidgetTextAlignment(1, 1, 0, new WidgetPointer(1010,41));
+	setWidgetPosition(30, 152, 0, 0, new WidgetPointer(1010,34));
+	setWidgetPosition(30, 200, 0, 0, new WidgetPointer(1010,37));
+	setWidgetText(new WidgetPointer(1010,39), "Recharge");
+	setWidgetContextMenuOption(1, new WidgetPointer(1010,39), "Recharge");
+	setWidgetPosition(4, 148, 0, 0, new WidgetPointer(1010,31));
+	setWidgetPosition(15, 204, 0, 0, new WidgetPointer(1010,25));
+	setWidgetPosition(105, 204, 0, 0, new WidgetPointer(1010,28));
+	setWidgetIsHidden(true, new WidgetPointer(1010,32));
+	setWidgetIsHidden(true, new WidgetPointer(1019,5));
+	setWidgetIsHidden(true, new WidgetPointer(1019,6));
+	setWidgetIsHidden(true, new WidgetPointer(1019,9));
+	setWidgetIsHidden(true, new WidgetPointer(1019,8));
+	setWidgetText(new WidgetPointer(1019,3), "Retreat");
+	setWidgetIsHidden(true, new WidgetPointer(1019,12));
+	setWidgetText(new WidgetPointer(1019,16), "Retreat");
+	setWidgetContextMenuOption(1, new WidgetPointer(1019,16), "Retreat");
+	setWidgetPosition(30, 0, 0, 1, new WidgetPointer(1019,1));
+	setWidgetPosition(0, 50, 0, 1, new WidgetPointer(1019,0));
+	setWidgetText(new WidgetPointer(1019,0), "Force Savant to teleport you to safety and order your remaining troops to fall back.");
+	return;
+}

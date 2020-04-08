@@ -1,0 +1,24 @@
+void script_1124(int arg0) {
+	int ivar1;
+	ivar1 = getWidgetShadeColor(new WidgetPointer(arg0));
+	if (((boolean)globalint_992)) {
+		ivar1 = add(ivar1, 1);
+		if (ivar1 >= 255) {
+			globalint_992 = 0;
+		}
+	} else {
+		ivar1 = subtract(ivar1, 1);
+		if (ivar1 <= 0) {
+			globalint_992 = 1;
+		}
+	}
+	if (ivar1 > 255) {
+		ivar1 = 255;
+	} else {
+		if (ivar1 < 0) {
+			ivar1 = 0;
+		}
+	}
+	cs2method2103(ivar1, new WidgetPointer(arg0));
+	return;
+}

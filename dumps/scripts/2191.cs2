@@ -1,0 +1,22 @@
+void script_2191(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,int arg11) {
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	ivar12 = getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg1)));
+	ivar13 = getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg2)));
+	ivar14 = getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg3)));
+	ivar15 = getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg4)));
+	ivar16 = getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg5)));
+	ivar17 = getMaxLineWidth(512, 494, getWidgetText(new WidgetPointer(arg10)));
+	script_2337(arg0);
+	setScriptCallOnGameloop(2336, new WidgetPointer(arg0), getDisplayMode(), "Ii", new WidgetPointer(arg0));
+	script_2335(arg0, arg2, arg3, arg4, arg5, ivar12, ivar13, ivar14, ivar15, ivar16, arg6, arg7, arg8, arg9, arg10, arg11, ivar17);
+	setScriptCallOnConfigChange(2333, new WidgetPointer(arg0), new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), ivar12, ivar13, ivar14, ivar15, ivar16, new WidgetPointer(arg6), new WidgetPointer(arg7), new WidgetPointer(arg8), new WidgetPointer(arg9), new WidgetPointer(arg10), new WidgetPointer(arg11), ivar17, 1048, 1058, 2040, 3, "IIIIIiiiiiIIIIIIiY", new WidgetPointer(arg0));
+	setWidgetSize(100, 75, 0, 0, new WidgetPointer(601,0));
+	cs2method2103(255, new WidgetPointer(601,1));
+	globalint_1435 = 255;
+	return;
+}

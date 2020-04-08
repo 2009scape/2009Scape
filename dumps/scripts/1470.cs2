@@ -1,0 +1,21 @@
+int script_1470(int arg0) {
+	switch (arg0) {
+		case 2:
+			return 0;
+		case 3:
+			return bitconfig_4885;
+		case 4:
+			return add(bitconfig_4885, bitconfig_4886);
+		case 5:
+			return add(add(bitconfig_4885, bitconfig_4886), bitconfig_4887);
+		case 6:
+			return add(add(add(bitconfig_4885, bitconfig_4886), bitconfig_4887), bitconfig_4888);
+		case 7:
+			return add(add(add(add(bitconfig_4885, bitconfig_4886), bitconfig_4887), bitconfig_4888), bitconfig_4889);
+		case 8:
+			return add(add(add(add(add(bitconfig_4885, bitconfig_4886), bitconfig_4887), bitconfig_4888), bitconfig_4889), bitconfig_4890);
+		case 9:
+			return add(add(add(add(add(add(bitconfig_4885, bitconfig_4886), bitconfig_4887), bitconfig_4888), bitconfig_4889), bitconfig_4890), bitconfig_4891);
+	}
+	return 0;
+}

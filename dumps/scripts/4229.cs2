@@ -1,0 +1,15 @@
+void script_4229(int arg0,string arg1) {
+	flow_0:
+		IF (((getItemAmtInContainer(93, 2883) > 0) || (getItemIdInSlot(94, 3) == 2883)) || (getItemAmtInContainer(93, 4827) > 0)) 
+			GOTO	flow_1
+		IF ((getItemIdInSlot(94, 3) == 4827) && (standart_config_294 >= arg0)) 
+			GOTO	flow_2
+		GOTO	flow_3
+	flow_1:
+	flow_2:
+		setWidgetText(arg1 + "<br>" + "Kills: " + intToStr(arg0));
+		return;
+	flow_3:
+		setWidgetText(arg1 + "<br>" + "<col=ff0000>" + "Kills: " + intToStr(arg0));
+		return;
+}

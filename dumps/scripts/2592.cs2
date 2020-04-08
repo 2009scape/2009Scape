@@ -1,0 +1,9 @@
+void script_2592(int arg0) {
+	playSoundEffect(6784, 1, 0);
+	if (getWidgetSpriteId(new WidgetPointer(arg0)) == 941) {
+		setWidgetSprite(942, new WidgetPointer(arg0));
+	} else {
+		setWidgetSprite(941, new WidgetPointer(arg0));
+	}
+	return;
+}

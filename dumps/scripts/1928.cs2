@@ -1,0 +1,17 @@
+void script_1928() {
+	int ivar0;
+	ivar0 = 1;
+	while (ivar0 <= 6) {
+		if (ivar0 == globalint_544) {
+			setWidgetIsHidden(false, cs2method_3408(105, 73, 2031, ivar0));
+			setWidgetRGB(new Color(255, 255, 255), cs2method_3408(105, 73, 2030, ivar0));
+			setWidgetRGB(new Color(255, 255, 255), cs2method_3408(105, 73, 2029, ivar0));
+		} else {
+			setWidgetIsHidden(true, cs2method_3408(105, 73, 2031, ivar0));
+			setWidgetRGB(new Color(200, 170, 100), cs2method_3408(105, 73, 2030, ivar0));
+			setWidgetRGB(new Color(200, 170, 100), cs2method_3408(105, 73, 2029, ivar0));
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	return;
+}

@@ -1,0 +1,46 @@
+int script_1553(int arg0,int arg1,string arg2) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	switch (arg0) {
+		case 96:
+			return max(subtract(arg1, 1), 0);
+		case 97:
+			return min(add(arg1, 1), strLength(arg2));
+		case 98:
+			ivar2 = subtract(arg1, 1);
+			if ((arg1 > 0) && (strIndexof(ivar2, arg2, " ") == ivar2)) {
+				return ivar2;
+			}
+			ivar2 = -1;
+			ivar3 = -1;
+			while (ivar4 != 1) {
+				ivar2 = strIndexof(add(ivar2, 1), arg2, " ");
+				if ((ivar2 == -1) || (ivar2 >= subtract(arg1, 1))) {
+					ivar4 = 1;
+				} else {
+					ivar3 = ivar2;
+				}
+			}
+			return min(add(ivar3, 1), strLength(arg2));
+		case 99:
+			if (strIndexof(arg1, arg2, " ") == arg1) {
+				return min(add(arg1, 1), strLength(arg2));
+			}
+			ivar2 = strLength(arg2);
+			if (arg1 < ivar2) {
+				ivar3 = strIndexof(add(arg1, 1), arg2, " ");
+				if (ivar3 != -1) {
+					return ivar3;
+				}
+				return ivar2;
+			}
+			break;
+		case 102:
+			return 0;
+	}
+	return strLength(arg2);
+}

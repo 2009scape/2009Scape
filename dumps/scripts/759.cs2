@@ -1,0 +1,298 @@
+void script_759(int arg0,int arg1,int arg2,int arg3,int arg4,string arg5,string arg6,string arg7,string arg8,string arg9,string arg10) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	int ivar22;
+	int ivar23;
+	int ivar24;
+	int ivar25;
+	int ivar26;
+	int ivar27;
+	int ivar28;
+	int ivar29;
+	int ivar30;
+	int ivar31;
+	int ivar32;
+	int ivar33;
+	int ivar34;
+	int ivar35;
+	int ivar36;
+	string svar6;
+	int stack_dump0;
+	cs2func_script_767_struct(20,0,0) structdump_1;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	setWidgetScrollMax(0, multiply(add(divide(subtract(arg4, arg3), arg1), 1), 57), new WidgetPointer(arg0));
+	ivar5 = 0;
+	ivar6 = arg3;
+	ivar7 = 0;
+	ivar8 = arg4;
+	ivar9 = 0;
+	ivar10 = -1;
+	ivar11 = -1;
+	ivar12 = -1;
+	ivar13 = -1;
+	ivar14 = -1;
+	ivar15 = -1;
+	ivar16 = -1;
+	ivar17 = -1;
+	ivar18 = -1;
+	ivar19 = -1;
+	ivar20 = -1;
+	ivar21 = 0;
+	ivar22 = 0;
+	ivar23 = 0;
+	ivar24 = 0;
+	ivar25 = 0;
+	ivar26 = 0;
+	ivar27 = 0;
+	ivar28 = 0;
+	ivar29 = 0;
+	ivar30 = 0;
+	svar6 = "hello";
+	ivar31 = 0;
+	globalarray_0 = new int[10];
+	ivar32 = -1;
+	ivar33 = 0;
+	ivar34 = 0;
+	ivar35 = 0;
+	ivar36 = 1;
+	while (ivar5 <= subtract(arg4, arg3)) {
+		ivar36 = 1;
+		ivar32 = cs2method_3408(105, 111, 1182, ivar6);
+		if (((boolean)bitconfig_8701)) {
+			if (getItemHashmapData(ivar32, 697) != -1) {
+				switch (getItemHashmapData(ivar32, 697)) {
+					case 6287:
+						if (add(getItemAmtInContainer(93, 6287), getItemAmtInContainer(93, 7801)) < getItemHashmapData(ivar32, 698)) {
+							ivar36 = 0;
+						}
+						break;
+					case 6979:
+						if (add(add(getItemAmtInContainer(93, 6979), getItemAmtInContainer(93, 6981)), getItemAmtInContainer(93, 6983)) < getItemHashmapData(ivar32, 698)) {
+							ivar36 = 0;
+						}
+						break;
+					case 2462:
+						if (add(add(add(add(add(add(getItemAmtInContainer(93, 2462), getItemAmtInContainer(93, 2460)), getItemAmtInContainer(93, 2464)), getItemAmtInContainer(93, 2466)), getItemAmtInContainer(93, 2468)), getItemAmtInContainer(93, 2470)), getItemAmtInContainer(93, 2472)) < getItemHashmapData(ivar32, 698)) {
+							ivar36 = 0;
+						}
+						break;
+					default:
+						if (getItemAmtInContainer(93, getItemHashmapData(ivar32, 697)) < getItemHashmapData(ivar32, 698)) {
+							ivar36 = 0;
+						}
+				}
+			}
+			if ((getItemHashmapData(ivar32, 699) != -1) && ((boolean)ivar36)) {
+				switch (getItemHashmapData(ivar32, 699)) {
+					case 6287:
+						if (add(getItemAmtInContainer(93, 6287), getItemAmtInContainer(93, 7801)) < getItemHashmapData(ivar32, 700)) {
+							ivar36 = 0;
+						}
+						break;
+					case 6979:
+						if (add(add(getItemAmtInContainer(93, 6979), getItemAmtInContainer(93, 6981)), getItemAmtInContainer(93, 6983)) < getItemHashmapData(ivar32, 700)) {
+							ivar36 = 0;
+						}
+						break;
+					case 2462:
+						if (add(add(add(add(add(add(getItemAmtInContainer(93, 2462), getItemAmtInContainer(93, 2460)), getItemAmtInContainer(93, 2464)), getItemAmtInContainer(93, 2466)), getItemAmtInContainer(93, 2468)), getItemAmtInContainer(93, 2470)), getItemAmtInContainer(93, 2472)) < getItemHashmapData(ivar32, 700)) {
+							ivar36 = 0;
+						}
+						break;
+					default:
+						if (getItemAmtInContainer(93, getItemHashmapData(ivar32, 699)) < getItemHashmapData(ivar32, 700)) {
+							ivar36 = 0;
+						}
+				}
+			}
+			if ((getItemHashmapData(ivar32, 701) != -1) && ((boolean)ivar36)) {
+				switch (getItemHashmapData(ivar32, 701)) {
+					case 6287:
+						if (add(getItemAmtInContainer(93, 6287), getItemAmtInContainer(93, 7801)) < getItemHashmapData(ivar32, 702)) {
+							ivar36 = 0;
+						}
+						break;
+					case 6979:
+						if (add(add(getItemAmtInContainer(93, 6979), getItemAmtInContainer(93, 6981)), getItemAmtInContainer(93, 6983)) < getItemHashmapData(ivar32, 702)) {
+							ivar36 = 0;
+						}
+						break;
+					case 2462:
+						if (add(add(add(add(add(add(getItemAmtInContainer(93, 2462), getItemAmtInContainer(93, 2460)), getItemAmtInContainer(93, 2464)), getItemAmtInContainer(93, 2466)), getItemAmtInContainer(93, 2468)), getItemAmtInContainer(93, 2470)), getItemAmtInContainer(93, 2472)) < getItemHashmapData(ivar32, 702)) {
+							ivar36 = 0;
+						}
+						break;
+					default:
+						if (getItemAmtInContainer(93, getItemHashmapData(ivar32, 701)) < getItemHashmapData(ivar32, 702)) {
+							ivar36 = 0;
+						}
+				}
+			}
+			if ((getItemHashmapData(ivar32, 703) != -1) && ((boolean)ivar36)) {
+				switch (getItemHashmapData(ivar32, 703)) {
+					case 6287:
+						if (add(getItemAmtInContainer(93, 6287), getItemAmtInContainer(93, 7801)) < getItemHashmapData(ivar32, 704)) {
+							ivar36 = 0;
+						}
+						break;
+					case 6979:
+						if (add(add(getItemAmtInContainer(93, 6979), getItemAmtInContainer(93, 6981)), getItemAmtInContainer(93, 6983)) < getItemHashmapData(ivar32, 704)) {
+							ivar36 = 0;
+						}
+						break;
+					case 2462:
+						if (add(add(add(add(add(add(getItemAmtInContainer(93, 2462), getItemAmtInContainer(93, 2460)), getItemAmtInContainer(93, 2464)), getItemAmtInContainer(93, 2466)), getItemAmtInContainer(93, 2468)), getItemAmtInContainer(93, 2470)), getItemAmtInContainer(93, 2472)) < getItemHashmapData(ivar32, 704)) {
+							ivar36 = 0;
+						}
+						break;
+					default:
+						if (getItemAmtInContainer(93, getItemHashmapData(ivar32, 703)) < getItemHashmapData(ivar32, 704)) {
+							ivar36 = 0;
+						}
+				}
+			}
+			if ((getItemHashmapData(ivar32, 705) != -1) && ((boolean)ivar36)) {
+				switch (getItemHashmapData(ivar32, 705)) {
+					case 6287:
+						if (add(getItemAmtInContainer(93, 6287), getItemAmtInContainer(93, 7801)) < getItemHashmapData(ivar32, 706)) {
+							ivar36 = 0;
+						}
+						break;
+					case 6979:
+						if (add(add(getItemAmtInContainer(93, 6979), getItemAmtInContainer(93, 6981)), getItemAmtInContainer(93, 6983)) < getItemHashmapData(ivar32, 706)) {
+							ivar36 = 0;
+						}
+						break;
+					case 2462:
+						if (add(add(add(add(add(add(getItemAmtInContainer(93, 2462), getItemAmtInContainer(93, 2460)), getItemAmtInContainer(93, 2464)), getItemAmtInContainer(93, 2466)), getItemAmtInContainer(93, 2468)), getItemAmtInContainer(93, 2470)), getItemAmtInContainer(93, 2472)) < getItemHashmapData(ivar32, 706)) {
+							ivar36 = 0;
+						}
+						break;
+					default:
+						if (getItemAmtInContainer(93, getItemHashmapData(ivar32, 705)) < getItemHashmapData(ivar32, 706)) {
+							ivar36 = 0;
+						}
+				}
+			}
+			if ((getItemHashmapData(ivar32, 707) != -1) && ((boolean)ivar36)) {
+				switch (getItemHashmapData(ivar32, 707)) {
+					case 6287:
+						if (add(getItemAmtInContainer(93, 6287), getItemAmtInContainer(93, 7801)) < getItemHashmapData(ivar32, 708)) {
+							ivar36 = 0;
+						}
+						break;
+					case 6979:
+						if (add(add(getItemAmtInContainer(93, 6979), getItemAmtInContainer(93, 6981)), getItemAmtInContainer(93, 6983)) < getItemHashmapData(ivar32, 708)) {
+							ivar36 = 0;
+						}
+						break;
+					case 2462:
+						if (add(add(add(add(add(add(getItemAmtInContainer(93, 2462), getItemAmtInContainer(93, 2460)), getItemAmtInContainer(93, 2464)), getItemAmtInContainer(93, 2466)), getItemAmtInContainer(93, 2468)), getItemAmtInContainer(93, 2470)), getItemAmtInContainer(93, 2472)) < getItemHashmapData(ivar32, 708)) {
+							ivar36 = 0;
+						}
+						break;
+					default:
+						if (getItemAmtInContainer(93, getItemHashmapData(ivar32, 707)) < getItemHashmapData(ivar32, 708)) {
+							ivar36 = 0;
+						}
+				}
+			}
+		}
+		if (((boolean)ivar36)) {
+			ivar33 = add(add(16, multiply(mod(ivar7, arg1), 48)), multiply(mod(ivar7, arg1), 5));
+			ivar34 = add(multiply(divide(ivar7, arg1), 52), multiply(divide(ivar7, arg1), 5));
+			createExtraChild(new WidgetPointer(arg0), 5, ivar35);
+			ivar35 = add(ivar35, 1);
+			setWidgetSize(48, 52, 0, 0);
+			setWidgetPosition(ivar33, ivar34, 0, 0);
+			setWidgetSprite(2205);
+			setScriptCallOnMouseEntered(2724, new WidgetPointer(-32768,3), ivar35, 0, "Ii1");
+			setScriptCallOnMouseExit(2724, new WidgetPointer(-32768,3), ivar35, 1, "Ii1");
+			createExtraChild(new WidgetPointer(arg0), 5, ivar35);
+			ivar35 = add(ivar35, 1);
+			setWidgetSize(48, 52, 0, 0);
+			setWidgetPosition(ivar33, ivar34, 0, 0);
+			setWidgetSprite(2206);
+			setWidgetHidden(1);
+			createExtraChild(new WidgetPointer(arg0), 5, ivar35);
+			setWidgetSize(36, 32, 0, 0);
+			setWidgetPosition(add(ivar33, 6), add(ivar34, 4), 0, 0);
+			if (ivar32 == 12292) {
+				script_760(ivar32, ivar32, arg0, ivar35, arg5, arg6, arg7, arg8, arg9, arg10);
+			} else if (((boolean)script_766(ivar32)) && (getSkillActualLvl(23) >= cs2method_3408(111, 105, 1185, ivar32))) {
+				script_760(ivar32, ivar32, arg0, ivar35, arg5, arg6, arg7, arg8, arg9, arg10);
+			} else {
+				script_760(cs2method_3408(105, 111, 1183, ivar6), ivar32, arg0, ivar35, arg5, arg6, arg7, arg8, arg9, arg10);
+			}
+			if (ivar32 == 12292) {
+				setScriptCallOnMouseOver(782, -2147483643, new WidgetPointer(79,31), new WidgetPointer(79,16), ivar31, svar6, "iIIis");
+				setScriptCallOnMouseExit(40, new WidgetPointer(79,31), "I");
+			} else {
+				svar6 = cs2method_3408(111, 115, 1187, ivar32);
+				ivar31 = cs2method_3408(111, 105, 1185, ivar32);
+				stack_dump0 = ivar32;
+				structdump_1 = script_767(stack_dump0);
+				ivar30 = structdump_1.intpart_19;
+				ivar29 = structdump_1.intpart_18;
+				ivar28 = structdump_1.intpart_17;
+				ivar27 = structdump_1.intpart_16;
+				ivar26 = structdump_1.intpart_15;
+				ivar25 = structdump_1.intpart_14;
+				ivar24 = structdump_1.intpart_13;
+				ivar23 = structdump_1.intpart_12;
+				ivar22 = structdump_1.intpart_11;
+				ivar21 = structdump_1.intpart_10;
+				ivar20 = structdump_1.intpart_9;
+				ivar19 = structdump_1.intpart_8;
+				ivar18 = structdump_1.intpart_7;
+				ivar17 = structdump_1.intpart_6;
+				ivar16 = structdump_1.intpart_5;
+				ivar15 = structdump_1.intpart_4;
+				ivar14 = structdump_1.intpart_3;
+				ivar13 = structdump_1.intpart_2;
+				ivar12 = structdump_1.intpart_1;
+				ivar11 = structdump_1.intpart_0;
+				setScriptCallOnMouseOver(770, -2147483643, new WidgetPointer(79,31), new WidgetPointer(79,16), ivar31, svar6, ivar11, 1, ivar12, ivar22, ivar13, ivar23, ivar14, ivar24, ivar15, ivar25, ivar16, ivar26, ivar17, ivar27, ivar18, ivar28, ivar19, ivar29, ivar20, ivar30, "iIIisoioioioioioioioioioi");
+				setScriptCallOnMouseExit(40, new WidgetPointer(79,31), "I");
+			}
+			ivar35 = add(ivar35, 1);
+			createExtraChild(new WidgetPointer(arg0), 5, ivar35);
+			ivar35 = add(ivar35, 1);
+			setWidgetSize(12, 12, 0, 0);
+			setWidgetPosition(add(ivar33, 2), add(ivar34, 38), 0, 0);
+			setItemOnWidgetMethod1205(12183, 1);
+			createExtraChild(new WidgetPointer(arg0), 4, ivar35);
+			ivar35 = add(ivar35, 1);
+			setWidgetSize(31, 12, 0, 0);
+			setWidgetPosition(add(ivar33, 13), add(ivar34, 39), 0, 0);
+			setWidgetFont(494);
+			setWidgetRGB(new Color(255, 255, 255));
+			setWidgetTextAlignment(2, 1, 0);
+			if (getItemHashmapData(ivar32, 541) < 1) {
+				setWidgetText("--");
+			} else {
+				setWidgetText(script_940(getItemHashmapData(ivar32, 541)));
+			}
+			setWidgetUnknownBoolean(true);
+			ivar7 = add(ivar7, 1);
+		}
+		ivar5 = add(ivar5, 1);
+		ivar6 = add(ivar6, 1);
+	}
+	return;
+}

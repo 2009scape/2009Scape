@@ -1,0 +1,31 @@
+void script_2437() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	switch (globalint_816) {
+		case 0:
+			return;
+		case 1:
+			ivar2 = globalint_817;
+			break;
+		case 2:
+			ivar2 = multiplyDivide(globalint_817, 125, 100);
+			break;
+		case 3:
+			ivar2 = multiplyDivide(globalint_817, 150, 100);
+			break;
+		default:
+			ivar2 = multiplyDivide(globalint_817, 175, 100);
+	}
+	if (ivar2 > 100) {
+		ivar2 = 100;
+	}
+	ivar0 = cs2method_3408(105, 105, 1090, ivar2);
+	ivar1 = cs2method_3408(105, 105, 1091, ivar2);
+	setWidgetPosition(91, ivar0, 2, 0, new WidgetPointer(15,11));
+	setWidgetSize(18, ivar1, 0, 0, new WidgetPointer(15,11));
+	return;
+}

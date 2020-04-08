@@ -1,0 +1,25 @@
+void script_1069() {
+	globalint_126 = globalint_131;
+	globalstring_27 = globalstring_28;
+	globalint_127 = 0;
+	if (isWidgetHidden(new WidgetPointer(137,0))) {
+		if (getDisplayMode() >= 2) {
+			setWidgetSprite(1017, new WidgetPointer(752,1));
+			cs2method2122(0, 49283073);
+			setWidgetIsHidden(false, new WidgetPointer(752,1));
+			setWidgetIsHidden(false, new WidgetPointer(752,2));
+		}
+		setWidgetIsHidden(true, new WidgetPointer(137,50));
+		setScriptCallOnKeyPress(-1, "", new WidgetPointer(137,56));
+		setWidgetIsHidden(false, new WidgetPointer(137,0));
+		setWidgetIsHidden(true, new WidgetPointer(137,7));
+		setWidgetIsHidden(true, new WidgetPointer(137,9));
+		setWidgetIsHidden(true, new WidgetPointer(137,13));
+		setWidgetIsHidden(false, new WidgetPointer(137,17));
+		setWidgetIsHidden(false, new WidgetPointer(137,1));
+		setWidgetIsHidden(true, new WidgetPointer(137,3));
+		cs2method2100(0, 0, new WidgetPointer(137,17));
+	}
+	script_1071(8978433, globalint_130, -1);
+	return;
+}

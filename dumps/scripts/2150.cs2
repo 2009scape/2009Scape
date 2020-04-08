@@ -1,0 +1,9 @@
+int script_2150(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = cs2method_3408(105, 74, 169, arg0);
+	globalint_699 = cs2method_3408(105, 74, getOtherCommonData(ivar2, 61), arg1);
+	if (standart_config_101 < getOtherCommonData(globalint_699, 895)) {
+		return 0;
+	}
+	return 1;
+}

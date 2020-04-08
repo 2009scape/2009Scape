@@ -1,0 +1,53 @@
+int script_920(int arg0) {
+	int ivar1;
+	string svar0;
+	globalint_742 = 0;
+	svar0 = "";
+	ivar1 = 0;
+	if (globalint_741 != -1) {
+		if (((boolean)stringMethod4107(getItemOption(globalint_741, 2), "Wear")) || ((boolean)stringMethod4107(getItemOption(globalint_741, 2), "Wield"))) {
+			ivar1 = 1;
+		}
+		setItemOnWidgetMethod2205(globalint_741, -1, new WidgetPointer(449,13));
+		setItemOnWidgetMethod2205(globalint_741, -1, new WidgetPointer(449,14));
+		if (isMember() && isMembersItem(globalint_741)) {
+			script_922(1, arg0, "This is a members item. Additional information is not available on this world.");
+		} else {
+			svar0 = script_914();
+			if (stringMethod4107(svar0, "") != 0) {
+				script_922(1, arg0, svar0);
+				globalint_742 = add(globalint_742, 1);
+			}
+			script_921(1, arg0, globalstring_25);
+			if (stringMethod4107(getItemHashmapData(globalint_741, 690), "") != 0) {
+				script_921(1, arg0, " ");
+				script_921(1, arg0, getItemHashmapData(globalint_741, 690));
+			}
+			if (((boolean)mod(getItemHashmapData(globalint_741, 740), 2))) {
+				if ((stringMethod4107(globalstring_26, "") != 0) && ((boolean)ivar1)) {
+					script_921(0, arg0, globalstring_26);
+				}
+				if (stringMethod4107(globalstring_34, "") != 0) {
+					script_921(0, arg0, globalstring_34);
+				}
+			} else {
+				if (stringMethod4107(globalstring_34, "") != 0) {
+					script_921(0, arg0, globalstring_34);
+				}
+				if ((stringMethod4107(globalstring_26, "") != 0) && ((boolean)ivar1)) {
+					script_921(0, arg0, globalstring_26);
+				}
+			}
+			svar0 = script_912(globalint_741);
+			if (stringMethod4107(svar0, "") != 0) {
+				script_921(0, arg0, svar0);
+			}
+			if ((stringMethod4107(globalstring_35, "") != 0) && ((boolean)ivar1)) {
+				script_923(arg0, globalstring_35, globalstring_36, globalstring_52);
+			}
+		}
+	} else {
+		script_921(1, arg0, "Select an item to see its information.");
+	}
+	return add(multiply(6, 2), multiply(globalint_742, 11));
+}

@@ -1,0 +1,22 @@
+void script_1969() {
+	int ivar0;
+	int ivar1;
+	ivar0 = 1;
+	ivar1 = 0;
+	while (ivar0 <= getCommonDefinitionSize(2119)) {
+		if (((boolean)globalint_617)) {
+			ivar1 = cs2method_3408(105, 105, 2022, ivar0);
+			setWidgetText(cs2method_3408(105, 73, 2119, ivar0), intToStr(ivar1) + " Coins");
+		} else {
+			ivar1 = cs2method_3408(105, 105, 2021, ivar0);
+			setWidgetText(cs2method_3408(105, 73, 2119, ivar0), intToStr(ivar1) + " Coins");
+		}
+		if (getItemAmtInContainer(93, 995) >= ivar1) {
+			setWidgetRGB(new Color(0, 255, 0), cs2method_3408(105, 73, 2119, ivar0));
+		} else {
+			setWidgetRGB(new Color(255, 0, 0), cs2method_3408(105, 73, 2119, ivar0));
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	return;
+}

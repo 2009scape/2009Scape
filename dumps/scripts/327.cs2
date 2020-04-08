@@ -1,0 +1,6 @@
+void script_327(int arg0) {
+	globalint_783 = 0;
+	setWidgetModel(-1, new WidgetPointer(725,83));
+	script_328(arg0);
+	return;
+}

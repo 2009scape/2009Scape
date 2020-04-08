@@ -1,0 +1,12 @@
+void script_2624() {
+	int ivar0;
+	int ivar1;
+	ivar0 = 1;
+	ivar1 = -1;
+	while (((int)cs2method_3408(105, 73, 2450, ivar0)) != 55705624) {
+		ivar1 = ((int)cs2method_3408(105, 73, 2450, ivar0));
+		setWidgetText(new WidgetPointer(ivar1), "<col=800000>" + cs2method_3408(73, 115, 2449, ivar1) + "  " + "<col=000000>" + cs2method_3408(73, 115, 2448, ivar1));
+		ivar0 = add(ivar0, 1);
+	}
+	return;
+}

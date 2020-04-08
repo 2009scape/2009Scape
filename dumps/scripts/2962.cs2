@@ -1,0 +1,13 @@
+void script_2962(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6) {
+	if (getClientCycle() >= arg6) {
+		globalint_176 = add(globalint_176, 2);
+		setScriptCallOnGameloop(1249, new WidgetPointer(arg0), new WidgetPointer(arg2), new WidgetPointer(arg1), "III", new WidgetPointer(arg0));
+		globalint_177 = 0;
+		setScriptCallOnMousePressed(2713, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), "IIIIII", new WidgetPointer(arg3));
+		setScriptCallOnMouseOver(2961, new WidgetPointer(arg4), new WidgetPointer(arg5), 1, "II1", new WidgetPointer(arg3));
+		setScriptCallOnMouseExit(2961, new WidgetPointer(arg4), new WidgetPointer(arg5), 0, "II1", new WidgetPointer(arg3));
+		setWidgetSprite(2703, new WidgetPointer(arg4));
+		globalint_986 = 0;
+	}
+	return;
+}

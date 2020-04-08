@@ -1,0 +1,89 @@
+int script_2194(int arg0) {
+	switch (arg0) {
+		case 79:
+			if (((boolean)bitconfig_888)) {
+				return 0;
+			}
+			break;
+		case 144:
+			if (((boolean)bitconfig_5394)) {
+				return 0;
+			}
+			break;
+		case 145:
+			if (bitconfig_4310 < 10) {
+				return 0;
+			}
+			break;
+		case 35:
+			if (((boolean)bitconfig_0)) {
+				return 0;
+			}
+			break;
+		case 120:
+			if (bitconfig_1895 < 110) {
+				return 0;
+			}
+			break;
+		case 157:
+			if (bitconfig_3637 < 125) {
+				return 0;
+			}
+			break;
+		case 156:
+			if (script_2656() < 100) {
+				return 0;
+			}
+			break;
+		case 162:
+			if (bitconfig_3909 < 8) {
+				return 0;
+			}
+			if (((boolean)bitconfig_5834)) {
+				return 0;
+			}
+			if (((boolean)bitconfig_5830)) {
+				return 0;
+			}
+			break;
+		case 163:
+			if (((boolean)bitconfig_5686)) {
+				return 0;
+			}
+			break;
+		case 168:
+			if (bitconfig_1910 < 20) {
+				return 0;
+			}
+			break;
+		case 171:
+			if (((boolean)bitconfig_7973)) {
+				return 0;
+			}
+			break;
+		case 174:
+			if (((boolean)bitconfig_7544)) {
+				return 0;
+			}
+			break;
+		case 179:
+			if (script_2656() < 100) {
+				return 0;
+			}
+			if (bitconfig_1914 < 50) {
+				return 0;
+			}
+			if (bitconfig_8494 < 5) {
+				return 0;
+			}
+			break;
+		case 148:
+			if (bitconfig_8601 < 6) {
+				return 0;
+			}
+			break;
+		default:
+			return 1;
+	}
+	return 1;
+}

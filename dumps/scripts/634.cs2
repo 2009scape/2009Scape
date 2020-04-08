@@ -1,0 +1,9 @@
+void script_634(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	ivar4 = subtract(getWidgetShadeColor(new WidgetPointer(arg0)), arg3);
+	cs2method2103(ivar4, new WidgetPointer(arg0));
+	if (ivar4 <= arg1) {
+		setScriptCallOnGameloop(633, new WidgetPointer(arg0), arg1, arg2, arg3, "Iiii", new WidgetPointer(arg0));
+	}
+	return;
+}

@@ -1,0 +1,79 @@
+cs2func_script_4729_struct(0,8,0) script_4729() {
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	string svar4;
+	string svar5;
+	string svar6;
+	string svar7;
+	flow_0:
+		svar0 = "";
+		svar1 = "";
+		svar2 = "";
+		svar3 = "";
+		svar4 = "";
+		svar5 = "";
+		svar6 = "";
+		svar7 = "";
+		SWITCH (getLanguage()) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_2
+			case 3:
+				 GOTO flow_3
+			case 4:
+				 GOTO flow_4
+		}
+		svar0 = "/p";
+		svar1 = "/c";
+		svar2 = "/f";
+		svar3 = "/g";
+		svar4 = "\\p";
+		svar5 = "\\c";
+		svar6 = "\\f";
+		svar7 = "\\g";
+		GOTO	flow_5
+	flow_1:
+		svar0 = "/a";
+		svar1 = "/c";
+		svar2 = "/f";
+		svar3 = "/g";
+		svar4 = "\\a";
+		svar5 = "\\c";
+		svar6 = "\\f";
+		svar7 = "\\g";
+		GOTO	flow_5
+	flow_2:
+		svar0 = "/p";
+		svar1 = "/c";
+		svar2 = "/a";
+		svar3 = "/i";
+		svar4 = "\\p";
+		svar5 = "\\c";
+		svar6 = "\\a";
+		svar7 = "\\i";
+		GOTO	flow_5
+	flow_3:
+		svar0 = "/p";
+		svar1 = "/c";
+		svar2 = "/f";
+		svar3 = "/g";
+		svar4 = "\\p";
+		svar5 = "\\c";
+		svar6 = "\\f";
+		svar7 = "\\g";
+		GOTO	flow_5
+	flow_4:
+		svar0 = "/p";
+		svar1 = "/c";
+		svar2 = "/f";
+		svar3 = "/g";
+		svar4 = "\\p";
+		svar5 = "\\c";
+		svar6 = "\\f";
+		svar7 = "\\g";
+	flow_5:
+		return newstruct cs2func_script_4729_struct(svar0, svar4, svar1, svar5, svar2, svar6, svar3, svar7);
+}

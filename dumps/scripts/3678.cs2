@@ -1,0 +1,44 @@
+void script_3678(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 6;
+	ivar5 = 5;
+	if (ivar4 > 1) {
+		if (getWidgetScrollMaxH(new WidgetPointer(arg0)) > 0) {
+			ivar2 = divide(subtract(getWidgetScrollMaxH(new WidgetPointer(arg0)), multiply(36, ivar4)), subtract(ivar4, 1));
+		} else {
+			ivar2 = divide(subtract(getWidgetActualWidth(new WidgetPointer(arg0)), multiply(36, ivar4)), subtract(ivar4, 1));
+		}
+	}
+	if (ivar5 > 1) {
+		if (getWidgetScrollMaxV(new WidgetPointer(arg0)) > 0) {
+			ivar3 = divide(subtract(getWidgetScrollMaxV(new WidgetPointer(arg0)), multiply(32, ivar5)), subtract(ivar5, 1));
+		} else {
+			ivar3 = divide(subtract(getWidgetActualHeight(new WidgetPointer(arg0)), multiply(32, ivar5)), subtract(ivar5, 1));
+		}
+	}
+	while (ivar1 < 30) {
+		createExtraChild(new WidgetPointer(arg0), 5, ivar1);
+		setWidgetSize(36, 32, 0, 0);
+		setWidgetPosition(multiply(add(36, ivar2), mod(ivar1, ivar4)), multiply(divide(ivar1, ivar4), add(32, ivar3)), 0, 0);
+		setItemOnWidgetMethod1212(cs2method_3408(105, 79, 3272, ivar1), ((int)isBitFlagged(globalint_1352, ivar1)));
+		if (isBitFlagged(globalint_1352, ivar1)) {
+			setWidgetContextMenuOption(1, "Take" + "<col=ff9040>");
+			setWidgetBorderThickness(2);
+		} else {
+			cs2method2103(100);
+		}
+		setWidgetContextMenuOption(5, "Examine" + "<col=ff9040>");
+		cs2method1305("<col=ff981f>" + cs2method_3408(105, 115, 3274, ivar1) + " Piece");
+		setScriptCallOnClickContextMenu(3679, new WidgetPointer(-32768,3), ivar1, "Ii");
+		ivar1 = add(ivar1, 1);
+	}
+	return;
+}

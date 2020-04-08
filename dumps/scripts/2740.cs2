@@ -1,0 +1,59 @@
+void script_2740(int arg0) {
+	int ivar1;
+	ivar1 = script_284(getMyPositionHash());
+	switch (globalint_1007) {
+		case 1:
+			script_2766(0, 50, arg0);
+			break;
+		case 2:
+			script_2768(50, arg0);
+			cs2method5405(0, 2);
+			cs2method5405(1, 2);
+			cs2method5406(0, 0, addToCoordinate(ivar1, 31, 0, 37), 900, addToCoordinate(ivar1, 31, 0, 37), 900, 0);
+			cs2method5406(0, 1, addToCoordinate(ivar1, 31, 0, 39), 750, addToCoordinate(ivar1, 31, 0, 39), 750, 0);
+			cs2method5406(1, 0, addToCoordinate(ivar1, 31, 0, 43), 700, addToCoordinate(ivar1, 31, 0, 43), 700, 0);
+			cs2method5406(1, 1, addToCoordinate(ivar1, 31, 0, 43), 700, addToCoordinate(ivar1, 31, 0, 43), 700, 0);
+			cameraMethod5502(0, 0, 50, 0, 1, 0);
+			break;
+		case 3:
+			script_2768(50, arg0);
+			cs2method5405(0, 2);
+			cs2method5405(1, 2);
+			cs2method5406(0, 0, addToCoordinate(ivar1, 31, 0, 27), 900, addToCoordinate(ivar1, 31, 0, 27), 900, 0);
+			cs2method5406(0, 1, addToCoordinate(ivar1, 31, 0, 27), 1000, addToCoordinate(ivar1, 31, 0, 27), 1000, 0);
+			cs2method5406(1, 0, addToCoordinate(ivar1, 31, 0, 33), 750, addToCoordinate(ivar1, 31, 0, 33), 750, 0);
+			cs2method5406(1, 1, addToCoordinate(ivar1, 31, 0, 33), 750, addToCoordinate(ivar1, 31, 0, 33), 750, 0);
+			cameraMethod5502(0, 0, 50, 0, 1, 0);
+			break;
+		case 40:
+			script_2768(50, arg0);
+			cs2method5405(0, 2);
+			cs2method5405(1, 2);
+			cs2method5406(0, 0, addToCoordinate(ivar1, 36, 0, 29), 850, addToCoordinate(ivar1, 36, 0, 29), 850, 0);
+			cs2method5406(0, 1, addToCoordinate(ivar1, 36, 0, 29), 800, addToCoordinate(ivar1, 36, 0, 29), 800, 0);
+			cs2method5406(1, 0, addToCoordinate(ivar1, 33, 0, 36), 700, addToCoordinate(ivar1, 33, 0, 36), 700, 0);
+			cs2method5406(1, 1, addToCoordinate(ivar1, 33, 0, 36), 600, addToCoordinate(ivar1, 33, 0, 36), 600, 0);
+			cameraMethod5502(0, 0, 50, 0, 1, 0);
+			break;
+		case 50:
+			script_2768(50, arg0);
+			cs2method5405(0, 2);
+			cs2method5405(1, 2);
+			cs2method5406(0, 0, addToCoordinate(ivar1, 39, 0, 23), 1000, addToCoordinate(ivar1, 39, 0, 23), 1000, 0);
+			cs2method5406(0, 1, addToCoordinate(ivar1, 39, 0, 23), 950, addToCoordinate(ivar1, 39, 0, 23), 950, 0);
+			cs2method5406(1, 0, addToCoordinate(ivar1, 36, 0, 28), 750, addToCoordinate(ivar1, 36, 0, 28), 750, 0);
+			cs2method5406(1, 1, addToCoordinate(ivar1, 36, 0, 28), 650, addToCoordinate(ivar1, 36, 0, 28), 650, 0);
+			cameraMethod5502(0, 0, 50, 0, 1, 0);
+			break;
+		case 99:
+			script_2766(0, 50, arg0);
+			break;
+		case 100:
+			cs2method5512();
+			script_2768(50, arg0);
+			break;
+		default:
+			cs2method5512();
+	}
+	return;
+}

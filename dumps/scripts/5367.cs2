@@ -1,0 +1,19 @@
+void script_5367(int arg0,int arg1) {
+	if (setWidgetRegister(new WidgetPointer(951,24), arg0)) {
+		switch (arg1) {
+			case 0:
+				setWidgetHidden(1);
+				setScriptCallOnGameloop(-1, "");
+				break;
+			case 1:
+				setWidgetHidden(0);
+				setScriptCallOnGameloop(5368, -2147483643, "i");
+				break;
+			case 2:
+				setWidgetHidden(0);
+				setScriptCallOnGameloop(-1, "");
+				cs2method2103(0);
+		}
+	}
+	return;
+}

@@ -1,0 +1,6 @@
+void script_4368(int arg0,int arg1) {
+	setScriptCallOnKeyPress(4369, new WidgetPointer(arg0), false, -2147483640, new WidgetPointer(arg1), "IziI", new WidgetPointer(arg0));
+	setScriptCallOnMousePressed(4370, new WidgetPointer(arg0), new WidgetPointer(arg1), -2147483647, "IIi", new WidgetPointer(arg0));
+	setScriptCallOnGameloop(1400, getClientCycle(), new WidgetPointer(arg1), "iI", new WidgetPointer(arg0));
+	return;
+}

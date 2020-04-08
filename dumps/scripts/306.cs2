@@ -1,0 +1,8 @@
+void script_306(int arg0,int arg1) {
+	if (subtract(getClientCycle(), arg0) < 15) {
+		return;
+	}
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(arg1));
+	setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(arg1));
+	return;
+}

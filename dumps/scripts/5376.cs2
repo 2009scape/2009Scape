@@ -1,0 +1,17 @@
+void script_5376() {
+	int ivar0;
+	ivar0 = 0;
+	while (ivar0 < 8) {
+		if (setWidgetRegister(new WidgetPointer(951,24), add(multiply(ivar0, 6), 3))) {
+			setScriptCallOnGameloop(-1, "");
+		}
+		if (setWidgetRegister(new WidgetPointer(951,24), add(multiply(ivar0, 6), 4))) {
+			setScriptCallOnGameloop(-1, "");
+		}
+		if (setWidgetRegister(new WidgetPointer(951,24), add(multiply(ivar0, 6), 5))) {
+			setScriptCallOnGameloop(-1, "");
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	return;
+}

@@ -1,0 +1,16 @@
+void script_2200() {
+	switch (rndExcl(4)) {
+		case 0:
+			globalint_1136 = 61079558;
+			break;
+		case 1:
+			globalint_1136 = 61079559;
+			break;
+		case 2:
+			globalint_1136 = 61079560;
+			break;
+		case 3:
+			globalint_1136 = 61079561;
+	}
+	return;
+}

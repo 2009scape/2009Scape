@@ -1,0 +1,23 @@
+void script_4022(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = 0;
+	ivar2 = -1;
+	while (ivar1 <= getCommonDefinitionSize(3489)) {
+		ivar2 = ((int)cs2method_3408(105, 73, 3489, ivar1));
+		if (ivar2 != -1) {
+			setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(ivar2));
+		}
+		ivar1 = add(ivar1, 1);
+	}
+	ivar2 = ((int)cs2method_3408(105, 73, 3489, 62));
+	if (ivar2 != -1) {
+		setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(ivar2));
+	}
+	if ((arg0 > 60) && (arg0 != 62)) {
+		return;
+	}
+	ivar2 = ((int)cs2method_3408(105, 73, 3489, arg0));
+	setWidgetRGB(new Color(146, 125, 89), new WidgetPointer(ivar2));
+	return;
+}

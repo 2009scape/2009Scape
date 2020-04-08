@@ -1,0 +1,8 @@
+void script_307() {
+	if (((boolean)bitconfig_6176)) {
+		cs2method5231(950, 1);
+	} else {
+		cs2method5231(950, 0);
+	}
+	return;
+}

@@ -1,0 +1,17 @@
+void script_4672(int arg0) {
+	int ivar1;
+	ivar1 = -1;
+	switch (arg0) {
+		case 1:
+			ivar1 = 1823;
+			break;
+		case 2:
+			ivar1 = 55612;
+			setWidgetAnimation(9804, new WidgetPointer(102,54));
+			break;
+		case 4:
+			ivar1 = 55626;
+	}
+	setWidgetModel(ivar1, new WidgetPointer(102,54));
+	return;
+}

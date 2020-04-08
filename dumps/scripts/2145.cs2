@@ -1,0 +1,218 @@
+cs2func_script_2145_struct(2,1,0) script_2145(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	string svar0;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	int stack_dump3;
+	string stack_dump4;
+	cs2func_script_2146_struct(2,1,0) structdump_5;
+	cs2func_script_2146_struct(2,1,0) structdump_6;
+	cs2func_script_2146_struct(2,1,0) structdump_7;
+	cs2func_script_2146_struct(2,1,0) structdump_8;
+	cs2func_script_2146_struct(2,1,0) structdump_9;
+	cs2func_script_2146_struct(2,1,0) structdump_10;
+	cs2func_script_2146_struct(2,1,0) structdump_11;
+	cs2func_script_2146_struct(2,1,0) structdump_12;
+	cs2func_script_2146_struct(2,1,0) structdump_13;
+	cs2func_script_2146_struct(2,1,0) structdump_14;
+	cs2func_script_2146_struct(2,1,0) structdump_15;
+	cs2func_script_2146_struct(2,1,0) structdump_16;
+	ivar3 = cs2method_3408(105, 74, 169, arg1);
+	ivar4 = cs2method_3408(105, 74, getOtherCommonData(ivar3, 61), arg2);
+	ivar5 = getSkillActualLvl(arg0);
+	svar0 = "null";
+	ivar6 = -1;
+	ivar7 = 0;
+	if (ivar4 == -1) {
+		return newstruct cs2func_script_2145_struct(ivar6, 0, svar0);
+	}
+	if (((boolean)arg1) && (script_2193(arg2) == 2)) {
+		return newstruct cs2func_script_2145_struct(ivar6, 0, svar0);
+	}
+	if (getOtherCommonData(ivar4, 871) == -1) {
+		return newstruct cs2func_script_2145_struct(ivar6, 0, svar0);
+	}
+	if ((getOtherCommonData(ivar4, 871) == arg0) && (ivar5 == getOtherCommonData(ivar4, 872))) {
+		stack_dump0 = arg0;
+		stack_dump1 = arg1;
+		stack_dump2 = ivar5;
+		stack_dump3 = arg2;
+		stack_dump4 = getOtherCommonData(ivar4, 845);
+		structdump_5 = script_2146(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar7 = structdump_5.intpart_1;
+		ivar6 = structdump_5.intpart_0;
+		svar0 = structdump_5.stringpart_0;
+		return newstruct cs2func_script_2145_struct(ivar6, ivar7, svar0);
+	}
+	if (getOtherCommonData(ivar4, 873) == -1) {
+		return newstruct cs2func_script_2145_struct(ivar6, 0, svar0);
+	}
+	if ((getOtherCommonData(ivar4, 873) == arg0) && (ivar5 == getOtherCommonData(ivar4, 874))) {
+		stack_dump0 = arg0;
+		stack_dump1 = arg1;
+		stack_dump2 = ivar5;
+		stack_dump3 = arg2;
+		stack_dump4 = getOtherCommonData(ivar4, 845);
+		structdump_6 = script_2146(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar7 = structdump_6.intpart_1;
+		ivar6 = structdump_6.intpart_0;
+		svar0 = structdump_6.stringpart_0;
+		return newstruct cs2func_script_2145_struct(ivar6, ivar7, svar0);
+	}
+	if (getOtherCommonData(ivar4, 875) == -1) {
+		return newstruct cs2func_script_2145_struct(ivar6, 0, svar0);
+	}
+	if ((getOtherCommonData(ivar4, 875) == arg0) && (ivar5 == getOtherCommonData(ivar4, 876))) {
+		stack_dump0 = arg0;
+		stack_dump1 = arg1;
+		stack_dump2 = ivar5;
+		stack_dump3 = arg2;
+		stack_dump4 = getOtherCommonData(ivar4, 845);
+		structdump_7 = script_2146(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar7 = structdump_7.intpart_1;
+		ivar6 = structdump_7.intpart_0;
+		svar0 = structdump_7.stringpart_0;
+		return newstruct cs2func_script_2145_struct(ivar6, ivar7, svar0);
+	}
+	if (getOtherCommonData(ivar4, 877) == -1) {
+		return newstruct cs2func_script_2145_struct(ivar6, 0, svar0);
+	}
+	if ((getOtherCommonData(ivar4, 877) == arg0) && (ivar5 == getOtherCommonData(ivar4, 878))) {
+		stack_dump0 = arg0;
+		stack_dump1 = arg1;
+		stack_dump2 = ivar5;
+		stack_dump3 = arg2;
+		stack_dump4 = getOtherCommonData(ivar4, 845);
+		structdump_8 = script_2146(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar7 = structdump_8.intpart_1;
+		ivar6 = structdump_8.intpart_0;
+		svar0 = structdump_8.stringpart_0;
+		return newstruct cs2func_script_2145_struct(ivar6, ivar7, svar0);
+	}
+	if (getOtherCommonData(ivar4, 879) == -1) {
+		return newstruct cs2func_script_2145_struct(ivar6, 0, svar0);
+	}
+	if ((getOtherCommonData(ivar4, 879) == arg0) && (ivar5 == getOtherCommonData(ivar4, 880))) {
+		stack_dump0 = arg0;
+		stack_dump1 = arg1;
+		stack_dump2 = ivar5;
+		stack_dump3 = arg2;
+		stack_dump4 = getOtherCommonData(ivar4, 845);
+		structdump_9 = script_2146(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar7 = structdump_9.intpart_1;
+		ivar6 = structdump_9.intpart_0;
+		svar0 = structdump_9.stringpart_0;
+		return newstruct cs2func_script_2145_struct(ivar6, ivar7, svar0);
+	}
+	if (getOtherCommonData(ivar4, 881) == -1) {
+		return newstruct cs2func_script_2145_struct(ivar6, 0, svar0);
+	}
+	if ((getOtherCommonData(ivar4, 881) == arg0) && (ivar5 == getOtherCommonData(ivar4, 882))) {
+		stack_dump0 = arg0;
+		stack_dump1 = arg1;
+		stack_dump2 = ivar5;
+		stack_dump3 = arg2;
+		stack_dump4 = getOtherCommonData(ivar4, 845);
+		structdump_10 = script_2146(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar7 = structdump_10.intpart_1;
+		ivar6 = structdump_10.intpart_0;
+		svar0 = structdump_10.stringpart_0;
+		return newstruct cs2func_script_2145_struct(ivar6, ivar7, svar0);
+	}
+	if (getOtherCommonData(ivar4, 883) == -1) {
+		return newstruct cs2func_script_2145_struct(ivar6, 0, svar0);
+	}
+	if ((getOtherCommonData(ivar4, 883) == arg0) && (ivar5 == getOtherCommonData(ivar4, 884))) {
+		stack_dump0 = arg0;
+		stack_dump1 = arg1;
+		stack_dump2 = ivar5;
+		stack_dump3 = arg2;
+		stack_dump4 = getOtherCommonData(ivar4, 845);
+		structdump_11 = script_2146(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar7 = structdump_11.intpart_1;
+		ivar6 = structdump_11.intpart_0;
+		svar0 = structdump_11.stringpart_0;
+		return newstruct cs2func_script_2145_struct(ivar6, ivar7, svar0);
+	}
+	if (getOtherCommonData(ivar4, 885) == -1) {
+		return newstruct cs2func_script_2145_struct(ivar6, 0, svar0);
+	}
+	if ((getOtherCommonData(ivar4, 885) == arg0) && (ivar5 == getOtherCommonData(ivar4, 886))) {
+		stack_dump0 = arg0;
+		stack_dump1 = arg1;
+		stack_dump2 = ivar5;
+		stack_dump3 = arg2;
+		stack_dump4 = getOtherCommonData(ivar4, 845);
+		structdump_12 = script_2146(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar7 = structdump_12.intpart_1;
+		ivar6 = structdump_12.intpart_0;
+		svar0 = structdump_12.stringpart_0;
+		return newstruct cs2func_script_2145_struct(ivar6, ivar7, svar0);
+	}
+	if (getOtherCommonData(ivar4, 887) == -1) {
+		return newstruct cs2func_script_2145_struct(ivar6, 0, svar0);
+	}
+	if ((getOtherCommonData(ivar4, 887) == arg0) && (ivar5 == getOtherCommonData(ivar4, 888))) {
+		stack_dump0 = arg0;
+		stack_dump1 = arg1;
+		stack_dump2 = ivar5;
+		stack_dump3 = arg2;
+		stack_dump4 = getOtherCommonData(ivar4, 845);
+		structdump_13 = script_2146(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar7 = structdump_13.intpart_1;
+		ivar6 = structdump_13.intpart_0;
+		svar0 = structdump_13.stringpart_0;
+		return newstruct cs2func_script_2145_struct(ivar6, ivar7, svar0);
+	}
+	if (getOtherCommonData(ivar4, 889) == -1) {
+		return newstruct cs2func_script_2145_struct(ivar6, 0, svar0);
+	}
+	if ((getOtherCommonData(ivar4, 889) == arg0) && (ivar5 == getOtherCommonData(ivar4, 890))) {
+		stack_dump0 = arg0;
+		stack_dump1 = arg1;
+		stack_dump2 = ivar5;
+		stack_dump3 = arg2;
+		stack_dump4 = getOtherCommonData(ivar4, 845);
+		structdump_14 = script_2146(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar7 = structdump_14.intpart_1;
+		ivar6 = structdump_14.intpart_0;
+		svar0 = structdump_14.stringpart_0;
+		return newstruct cs2func_script_2145_struct(ivar6, ivar7, svar0);
+	}
+	if (getOtherCommonData(ivar4, 891) == -1) {
+		return newstruct cs2func_script_2145_struct(ivar6, 0, svar0);
+	}
+	if ((getOtherCommonData(ivar4, 891) == arg0) && (ivar5 == getOtherCommonData(ivar4, 892))) {
+		stack_dump0 = arg0;
+		stack_dump1 = arg1;
+		stack_dump2 = ivar5;
+		stack_dump3 = arg2;
+		stack_dump4 = getOtherCommonData(ivar4, 845);
+		structdump_15 = script_2146(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar7 = structdump_15.intpart_1;
+		ivar6 = structdump_15.intpart_0;
+		svar0 = structdump_15.stringpart_0;
+		return newstruct cs2func_script_2145_struct(ivar6, ivar7, svar0);
+	}
+	if (getOtherCommonData(ivar4, 893) == -1) {
+		return newstruct cs2func_script_2145_struct(ivar6, 0, svar0);
+	}
+	if ((getOtherCommonData(ivar4, 893) == arg0) && (ivar5 == getOtherCommonData(ivar4, 894))) {
+		stack_dump0 = arg0;
+		stack_dump1 = arg1;
+		stack_dump2 = ivar5;
+		stack_dump3 = arg2;
+		stack_dump4 = getOtherCommonData(ivar4, 845);
+		structdump_16 = script_2146(stack_dump0, stack_dump1, stack_dump2, stack_dump3, stack_dump4);
+		ivar7 = structdump_16.intpart_1;
+		ivar6 = structdump_16.intpart_0;
+		svar0 = structdump_16.stringpart_0;
+		return newstruct cs2func_script_2145_struct(ivar6, ivar7, svar0);
+	}
+	return newstruct cs2func_script_2145_struct(-1, 0, "");
+}

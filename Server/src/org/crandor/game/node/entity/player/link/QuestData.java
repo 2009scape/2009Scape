@@ -52,6 +52,12 @@ public final class QuestData implements SavingModule {
 	 */
 	private boolean talkedDrezel;
 
+	private int witchsExerimentStage;
+
+
+	private boolean witchsExerimentKilled;
+
+
 	/**
 	 * Constructs a new {@code QuestData} {@code Object}.
 	 */
@@ -70,6 +76,8 @@ public final class QuestData implements SavingModule {
 		SavedData.save(buffer, gardenerAttack, 6);
 		SavedData.save(buffer, talkedDrezel, 7);
 		saveDesertTreasureNode(buffer);
+		SavedData.save(buffer, witchsExerimentStage, 9);
+		SavedData.save(buffer, witchsExerimentKilled, 10);
 		buffer.put((byte) 0);
 	}
 
@@ -111,6 +119,12 @@ public final class QuestData implements SavingModule {
 				for (int i = 0; i < desertTreasure.length; i++) {
 					desertTreasure[i] = new Item(buffer.getShort(), buffer.get());
 				}
+				break;
+			case 9:
+				witchsExerimentStage = buffer.getInt();
+				break;
+			case 10:
+				witchsExerimentKilled = SavedData.getBoolean(buffer.get());
 				break;
 			}
 		}
@@ -291,4 +305,18 @@ public final class QuestData implements SavingModule {
 		desertTreasure[index] = item;
 	}
 
+	public int getWitchsExerimentStage() {
+		return witchsExerimentStage;
+	}
+
+	public void setWitchsExerimentStage(int witchsExerimentStage) {
+		this.witchsExerimentStage = witchsExerimentStage;
+	}
+	public boolean isWitchsExerimentKilled() {
+		return witchsExerimentKilled;
+	}
+
+	public void setWitchsExerimentKilled(boolean witchsExerimentKilled) {
+		this.witchsExerimentKilled = witchsExerimentKilled;
+	}
 }

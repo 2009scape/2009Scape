@@ -1,0 +1,76 @@
+void script_1231() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar0 = -1;
+	ivar1 = -1;
+	ivar2 = -1;
+	ivar3 = 0;
+	while (ivar3 < 81) {
+		flow_1:
+			ivar0 = getItemIdInSlot(308, ivar3);
+			switch (ivar0) {
+				case 556:
+				case 6422:
+					ivar1 = 8975;
+					break;
+				case 555:
+				case 6424:
+					ivar1 = 8987;
+					break;
+				case 557:
+				case 6426:
+					ivar1 = 8979;
+					break;
+				case 554:
+				case 6428:
+					ivar1 = 8980;
+					break;
+				case 6436:
+				case 558:
+					ivar1 = 8982;
+					break;
+				case 6438:
+				case 559:
+					ivar1 = 8976;
+					break;
+				case 6432:
+				case 560:
+					ivar1 = 8978;
+					break;
+				case 562:
+				case 6430:
+					ivar1 = 8977;
+					break;
+				case 6434:
+				case 563:
+					ivar1 = 8981;
+					break;
+				default:
+					ivar1 = -1;
+			}
+			ivar2 = ((int)cs2method_3408(105, 73, 2274, ivar3));
+			IF (setWidgetRegister(new WidgetPointer(ivar2))) 
+				GOTO	flow_14
+			GOTO	flow_15
+		flow_14:
+			setWidgetModel(ivar1);
+			GOTO	flow_15
+		flow_15:
+			IF ((((((((((ivar0 == 6422) || (ivar0 == 6422)) || (ivar0 == 6424)) || (ivar0 == 6426)) || (ivar0 == 6428)) || (ivar0 == 6436)) || (ivar0 == 6438)) || (ivar0 == 6432)) || (ivar0 == 6430)) || (ivar0 == 6434)) 
+				GOTO	flow_16
+			GOTO	flow_18
+		flow_16:
+			ivar2 = ((int)cs2method_3408(105, 73, 2275, ivar3));
+			IF (setWidgetRegister(new WidgetPointer(ivar2))) 
+				GOTO	flow_17
+			GOTO	flow_18
+		flow_17:
+			setWidgetRGB(new Color(68, 0, 0));
+			GOTO	flow_18
+		flow_18:
+			ivar3 = add(ivar3, 1);
+	}
+	return;
+}

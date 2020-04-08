@@ -1,0 +1,23 @@
+void script_2772(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = subtract(cs2method5407(0), 2);
+	if ((globalint_1007 != 2) || (arg1 > ivar2)) {
+		setScriptCallOnMinimapRelatedSetting3(-1, "", new WidgetPointer(arg0));
+		return;
+	}
+	switch (rnd(2)) {
+		case 0:
+			playSoundEffect(6645, 1, 0);
+			break;
+		case 1:
+			playSoundEffect(6644, 1, 0);
+			break;
+		case 2:
+			playSoundEffect(6643, 1, 0);
+	}
+	cameraMethod5502(0, arg1, 2500, 2400, 1, arg1);
+	if (arg1 < ivar2) {
+		setScriptCallOnMinimapRelatedSetting3(2772, new WidgetPointer(arg0), add(arg1, 1), "Ii", new WidgetPointer(arg0));
+	}
+	return;
+}

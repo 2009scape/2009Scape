@@ -1,0 +1,23 @@
+void script_2143(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	ivar2 = 1093;
+	if (IsFemale()) {
+		ivar2 = 3872;
+	}
+	ivar3 = 0;
+	while (ivar3 <= getCommonDefinitionSize(ivar2)) {
+		if (setWidgetRegister(new WidgetPointer(arg0), ivar3)) {
+			if (((boolean)script_2476(ivar3))) {
+				setWidgetRGB(new Color(17, 255, 0));
+			} else {
+				setWidgetRGB(new Color(255, 17, 0));
+			}
+		}
+		ivar3 = add(1, ivar3);
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		setWidgetRGB(new Color(255, 255, 255));
+	}
+	return;
+}

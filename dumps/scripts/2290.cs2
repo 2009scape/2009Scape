@@ -1,0 +1,17 @@
+void script_2290(int arg0,int arg1) {
+	if (((boolean)script_2297(arg1))) {
+		if (((boolean)script_2295(arg1))) {
+			return;
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+			setWidgetSprite(181);
+			setWidgetContextMenuOption(1, "Deselect");
+		}
+	} else {
+		if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+			setWidgetSprite(180);
+			setWidgetContextMenuOption(1, "Select");
+		}
+	}
+	return;
+}

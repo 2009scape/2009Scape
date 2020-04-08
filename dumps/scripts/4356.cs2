@@ -1,0 +1,60 @@
+void script_4356(int arg0) {
+	switch (standart_config_2128) {
+		case 1:
+			if (((boolean)bitconfig_9141)) {
+				setWidgetSprite(5920, new WidgetPointer(arg0));
+			} else {
+				setWidgetSprite(5916, new WidgetPointer(arg0));
+			}
+			break;
+		case 2:
+			if (((boolean)bitconfig_9142)) {
+				setWidgetSprite(5920, new WidgetPointer(arg0));
+			} else {
+				setWidgetSprite(5916, new WidgetPointer(arg0));
+			}
+			break;
+		case 3:
+			if (((boolean)bitconfig_9143)) {
+				setWidgetSprite(5920, new WidgetPointer(arg0));
+			} else {
+				setWidgetSprite(5916, new WidgetPointer(arg0));
+			}
+			break;
+		case 4:
+			if (((boolean)bitconfig_9144)) {
+				setWidgetSprite(5920, new WidgetPointer(arg0));
+			} else {
+				setWidgetSprite(5916, new WidgetPointer(arg0));
+			}
+			break;
+		case 5:
+			if (((boolean)bitconfig_9145)) {
+				setWidgetSprite(5920, new WidgetPointer(arg0));
+			} else {
+				setWidgetSprite(5916, new WidgetPointer(arg0));
+			}
+			break;
+		case 6:
+			if (((boolean)bitconfig_9146)) {
+				setWidgetSprite(5920, new WidgetPointer(arg0));
+			} else {
+				setWidgetSprite(5916, new WidgetPointer(arg0));
+			}
+			break;
+		case 7:
+			if (((boolean)bitconfig_9147)) {
+				setWidgetSprite(5920, new WidgetPointer(arg0));
+			} else {
+				setWidgetSprite(5916, new WidgetPointer(arg0));
+			}
+			break;
+		case 8:
+			if (((boolean)bitconfig_9148)) {
+				setWidgetSprite(5920, new WidgetPointer(arg0));
+			} else {
+				setWidgetSprite(5916, new WidgetPointer(arg0));
+			}
+	}
+	return;
+}

@@ -1,0 +1,11 @@
+void script_2353(int arg0) {
+	if (((boolean)globalint_771)) {
+		setScriptCallOnGameloop(2354, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+	} else {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+		setWidgetText(new WidgetPointer(arg0), "Saving your game and loading QuestHelp");
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+		setWidgetIsHidden(false, new WidgetPointer(275,14));
+	}
+	return;
+}

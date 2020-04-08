@@ -1,0 +1,4 @@
+void script_2134(int arg0) {
+	setWidgetAnimation(0, new WidgetPointer(arg0));
+	return;
+}

@@ -1,0 +1,5 @@
+void script_1273(int arg0) {
+	script_2410(getItemDefOpcode129Or130Method4209(arg0, 1), getItemDefOpcode129Or130Method4209(arg0, 2), getItemDefOpcode129Or130Method4209(arg0, 3), -1, getItemDefOpcode129Or130Method4209(arg0, 5), getItemOption(arg0, 1), getItemOption(arg0, 2), getItemOption(arg0, 3), "", getItemOption(arg0, 5), getItemName(arg0));
+	setScriptCallOnConfigChange(-1, "");
+	return;
+}

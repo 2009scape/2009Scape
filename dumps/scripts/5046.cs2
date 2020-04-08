@@ -1,0 +1,13 @@
+void script_5046(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	if (arg2 < 1) {
+		script_5047(arg1, 0, 40, arg3, arg4);
+		setScriptCallOnGameloop(5046, new WidgetPointer(arg0), globalint_1396, 1, arg3, arg4, "Iiiii", new WidgetPointer(arg0));
+	} else if (arg2 < 2) {
+		script_5047(arg1, 40, 80, arg3, arg4);
+		setScriptCallOnGameloop(5046, new WidgetPointer(arg0), globalint_1396, 2, arg3, arg4, "Iiiii", new WidgetPointer(arg0));
+	} else {
+		script_5047(arg1, 80, 112, arg3, arg4);
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+	}
+	return;
+}

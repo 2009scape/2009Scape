@@ -1,0 +1,55 @@
+void script_2630(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = -1;
+	ivar2 = -1;
+	globalint_905 = arg0;
+	globalint_904 = 1;
+	switch (arg0) {
+		case 56295437:
+			arg0 = 56295426;
+			ivar1 = 1914;
+			ivar2 = 1922;
+			break;
+		case 56295438:
+			arg0 = 56295432;
+			ivar1 = 1915;
+			ivar2 = 1923;
+			break;
+		case 56295439:
+			arg0 = 56295431;
+			ivar1 = 1916;
+			ivar2 = 1924;
+			break;
+		case 56295440:
+			if (bitconfig_6357 == 2) {
+				arg0 = 56295446;
+				ivar1 = 1917;
+				ivar2 = 1925;
+			}
+			if (bitconfig_6357 == 3) {
+				arg0 = 56295430;
+				ivar1 = 1918;
+				ivar2 = 1926;
+			}
+			if (bitconfig_6357 == 4) {
+				arg0 = 56295447;
+				ivar1 = 1921;
+				ivar2 = 1929;
+			}
+			break;
+		case 56295441:
+			if (bitconfig_6357 == 2) {
+				arg0 = 56295445;
+				ivar1 = 1920;
+				ivar2 = 1928;
+			}
+			if (bitconfig_6357 == 4) {
+				arg0 = 56295444;
+				ivar1 = 1919;
+				ivar2 = 1927;
+			}
+	}
+	setScriptCallOnGameloop(2631, new WidgetPointer(arg0), ivar1, ivar2, "Idd", new WidgetPointer(arg0));
+	return;
+}

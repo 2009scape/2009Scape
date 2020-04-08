@@ -1,0 +1,12 @@
+int script_2294(int arg0) {
+	if (((boolean)bitconfig_6840)) {
+		if (((boolean)getOtherCommonData(cs2method_3408(105, 74, 863, arg0), 739))) {
+			return 1;
+		}
+		return 0;
+	}
+	if (((boolean)getOtherCommonData(cs2method_3408(105, 74, 2279, arg0), 739))) {
+		return 1;
+	}
+	return 0;
+}

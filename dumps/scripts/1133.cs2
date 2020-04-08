@@ -1,0 +1,10 @@
+void script_1133(int arg0) {
+	int ivar1;
+	ivar1 = getItemIdInSlot(94, 3);
+	if ((ivar1 != -1) && (isMembersItem(ivar1) || isMember())) {
+		setWidgetText(new WidgetPointer(arg0), getItemName(ivar1));
+	} else {
+		setWidgetText(new WidgetPointer(arg0), "Unarmed");
+	}
+	return;
+}

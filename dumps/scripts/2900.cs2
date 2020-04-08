@@ -1,0 +1,11 @@
+void script_2900(int arg0) {
+	if (getClientCycle() > add(arg0, 200)) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(476,58));
+		setWidgetIsHidden(true, new WidgetPointer(476,58));
+	} else {
+		if (getClientCycle() > add(arg0, 150)) {
+			cs2method2103(min(add(getWidgetShadeColor(new WidgetPointer(476,58)), 10), 255), new WidgetPointer(476,58));
+		}
+	}
+	return;
+}

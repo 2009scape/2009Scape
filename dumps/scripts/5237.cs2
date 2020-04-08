@@ -1,0 +1,5 @@
+void script_5237() {
+	setWidgetSize(0, getWidgetActualHeight(new WidgetPointer(1126,124)), 0, 0, new WidgetPointer(1126,124));
+	setWidgetIsHidden(true, new WidgetPointer(1126,47));
+	return;
+}

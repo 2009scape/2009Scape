@@ -1,0 +1,18 @@
+void script_49(int arg0,int arg1,int arg2) {
+	if (((boolean)script_2296(arg2))) {
+		if (setWidgetRegister(new WidgetPointer(arg0), arg2)) {
+			setWidgetContextMenuOption(1, "Deactivate");
+		}
+		if (setWidgetRegister(new WidgetPointer(arg1), arg2)) {
+			setWidgetSprite(155);
+		}
+	} else {
+		if (setWidgetRegister(new WidgetPointer(arg0), arg2)) {
+			setWidgetContextMenuOption(1, "Activate");
+		}
+		if (setWidgetRegister(new WidgetPointer(arg1), arg2)) {
+			setWidgetSprite(-1);
+		}
+	}
+	return;
+}

@@ -1,0 +1,20 @@
+void script_5015() {
+	script_5016(102);
+	script_5016(103);
+	script_5016(100);
+	script_5016(101);
+	script_5016(3);
+	script_5016(4);
+	script_5016(5);
+	script_5016(6);
+	script_5016(7);
+	script_5016(8);
+	script_5016(9);
+	script_5016(10);
+	script_5016(11);
+	script_5016(12);
+	script_5016(13);
+	script_5016(14);
+	script_5016(15);
+	return;
+}

@@ -1,0 +1,46 @@
+void script_2713(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	int ivar6;
+	int ivar7;
+	int stack_dump0;
+	cs2func_script_1239_struct(2,0,0) structdump_1;
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(arg3));
+	setScriptCallOnMouseOver(-1, "", new WidgetPointer(arg3));
+	setScriptCallOnMouseOver(-1, "", new WidgetPointer(arg3));
+	ivar6 = -1;
+	ivar7 = 0;
+	if (((boolean)globalint_986)) {
+		cs2method2103(0, new WidgetPointer(arg1));
+		setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(arg1));
+		setWidgetIsHidden(false, new WidgetPointer(arg1));
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg1));
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg2));
+		globalint_176 = subtract(globalint_176, mod(globalint_176, 10));
+		stack_dump0 = 0;
+		structdump_1 = script_1239(stack_dump0);
+		ivar7 = structdump_1.intpart_1;
+		ivar6 = structdump_1.intpart_0;
+		cameraMoveTo(ivar6, 1000, 100, 100);
+		cameraPointAt(ivar6, 0, 100, 100);
+		setWidgetIsHidden(false, new WidgetPointer(arg0));
+		setScriptCallOnGameloop(2962, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), add(getClientCycle(), 30), "IIIIIIi", new WidgetPointer(arg0));
+		globalint_986 = 0;
+		globalint_994 = 2;
+	} else {
+		setScriptCallOnMinimapRelatedSetting3(-1, "", new WidgetPointer(arg0));
+		if (isWidgetHidden(new WidgetPointer(arg1))) {
+			cs2method2103(255, new WidgetPointer(arg1));
+			setWidgetIsHidden(false, new WidgetPointer(arg1));
+		}
+		setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(arg1));
+		setScriptCallOnGameloop(1253, new WidgetPointer(-32768,3), "I", new WidgetPointer(arg1));
+		if (isWidgetHidden(new WidgetPointer(arg2))) {
+			cs2method2103(255, new WidgetPointer(arg2));
+			setWidgetIsHidden(false, new WidgetPointer(arg2));
+		}
+		setScriptCallOnGameloop(1253, new WidgetPointer(-32768,3), "I", new WidgetPointer(arg2));
+		setScriptCallOnGameloop(2963, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), add(getClientCycle(), 30), "IIIIIIi", new WidgetPointer(arg0));
+		globalint_986 = 1;
+	}
+	script_3230();
+	return;
+}

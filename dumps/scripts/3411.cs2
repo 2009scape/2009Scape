@@ -1,0 +1,16 @@
+void script_3411() {
+	globalint_1240 = 3;
+	globalint_1277 = 0;
+	if (hasSSKey()) {
+		script_1174(5);
+		if (((boolean)globalint_1273)) {
+			return;
+		}
+		setScriptCallOnGameloop(3381, new WidgetPointer(975,44), 0, "Ii", new WidgetPointer(975,44));
+	} else if (((boolean)script_3487(3))) {
+		script_1174(7);
+	} else {
+		script_1174(11);
+	}
+	return;
+}

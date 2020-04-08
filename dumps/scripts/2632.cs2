@@ -1,0 +1,48 @@
+void script_2632(int arg0) {
+	if (arg0 != 56295424) {
+		script_1360(arg0);
+	}
+	switch (arg0) {
+		case 56295424:
+			setWidgetText(new WidgetPointer(859,28), "Go to");
+			setWidgetText(new WidgetPointer(859,29), "Click to view this squad.");
+			break;
+		case 56295437:
+			setWidgetText(new WidgetPointer(859,28), "Attack");
+			setWidgetText(new WidgetPointer(859,29), "Select the enemy squad you wish to attack.");
+			break;
+		case 56295438:
+			setWidgetText(new WidgetPointer(859,28), "Move");
+			setWidgetText(new WidgetPointer(859,29), "Select the destination for your squad.");
+			break;
+		case 56295439:
+			setWidgetText(new WidgetPointer(859,28), "Explore");
+			setWidgetText(new WidgetPointer(859,29), "Send the unit to explore for treasure.");
+			break;
+		case 56295440:
+			if (bitconfig_6357 == 2) {
+				setWidgetText(new WidgetPointer(859,28), "Attack wall/catapult");
+				setWidgetText(new WidgetPointer(859,29), "Select the wall or catapult you want your squad to attack.");
+			} else if (bitconfig_6357 == 3) {
+				setWidgetText(new WidgetPointer(859,28), "Collect gold");
+				setWidgetText(new WidgetPointer(859,29), "Select the cave entrance from which your squad should gather gold.");
+			} else {
+				if (bitconfig_6357 == 4) {
+					setWidgetText(new WidgetPointer(859,28), "Rescue");
+					setWidgetText(new WidgetPointer(859,29), "Select the fissure from which your squad should rescue TzHaar.");
+				}
+			}
+			break;
+		case 56295441:
+			if (bitconfig_6357 == 2) {
+				setWidgetText(new WidgetPointer(859,28), "Collect");
+				setWidgetText(new WidgetPointer(859,29), "Select a resource for your squad to collect.");
+			} else {
+				if (bitconfig_6357 == 4) {
+					setWidgetText(new WidgetPointer(859,28), "Steal");
+					setWidgetText(new WidgetPointer(859,29), "Select a lander to steal TzHaar from.");
+				}
+			}
+	}
+	return;
+}

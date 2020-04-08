@@ -1,0 +1,52 @@
+void script_4393(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	deleteAllExtraChilds(new WidgetPointer(arg1));
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 2;
+	ivar8 = 5;
+	ivar9 = 60;
+	ivar10 = 60;
+	ivar11 = 0;
+	ivar12 = 0;
+	ivar13 = divide(subtract(getWidgetActualWidth(new WidgetPointer(arg0)), ivar7), add(ivar7, ivar10));
+	ivar14 = 0;
+	ivar15 = getCommonDefinitionSize(arg4);
+	while (ivar5 < ivar15) {
+		ivar11 = multiply(add(ivar10, ivar7), subtract(ivar5, multiply(ivar6, ivar13)));
+		ivar12 = multiply(ivar6, add(ivar9, ivar8));
+		createExtraChild(new WidgetPointer(arg1), 5, ivar5);
+		setWidgetSize(ivar10, ivar9, 0, 0);
+		setWidgetPosition(ivar11, ivar12, 0, 0);
+		setWidgetSprite(5523);
+		setScriptCallOnConfigChange(4395, ivar15, 2093, 1, "iY");
+		setScriptCallOnMouseEntered(4396, -2147483643, new WidgetPointer(arg1), "iI");
+		setScriptCallOnMouseExit(4397, -2147483643, new WidgetPointer(arg1), "iI");
+		ivar14 = add(add(getWidgetActualY(), getWidgetActualHeight()), ivar8);
+		createExtraChild(new WidgetPointer(arg0), 5, ivar5);
+		setWidgetSize(subtract(ivar10, 10), subtract(ivar9, 10), 0, 0);
+		setWidgetPosition(add(ivar11, 5), add(ivar12, 5), 0, 0);
+		setWidgetSprite(cs2method_3408(105, 100, arg4, add(ivar5, 1)));
+		setWidgetContextMenuOption(1, "Select");
+		setScriptCallOnClickContextMenu(4394, -2147483643, new WidgetPointer(arg1), ivar15, "iIi");
+		ivar5 = add(ivar5, 1);
+		if (((boolean)mod(ivar5, ivar13))) {
+			ivar6 = add(ivar6, 1);
+		}
+	}
+	cs2method2100(0, 0, new WidgetPointer(arg2));
+	setWidgetScrollMax(0, ivar14, new WidgetPointer(arg2));
+	script_31(arg3, arg2, 5666, 5663, 5664, 5665, 5686, 5685);
+	return;
+}

@@ -1,0 +1,24 @@
+void script_749(int arg0) {
+	if (((boolean)arg0)) {
+		if (setWidgetRegister(new WidgetPointer(18,29), 0)) {
+			setWidgetSprite(6135);
+		}
+		if (setWidgetRegister(new WidgetPointer(18,29), 1)) {
+			setWidgetSprite(6134);
+		}
+		if (setWidgetRegister(new WidgetPointer(18,29), 2)) {
+			setWidgetSprite(6136);
+		}
+	} else {
+		if (setWidgetRegister(new WidgetPointer(18,29), 0)) {
+			setWidgetSprite(6132);
+		}
+		if (setWidgetRegister(new WidgetPointer(18,29), 1)) {
+			setWidgetSprite(6131);
+		}
+		if (setWidgetRegister(new WidgetPointer(18,29), 2)) {
+			setWidgetSprite(6133);
+		}
+	}
+	return;
+}

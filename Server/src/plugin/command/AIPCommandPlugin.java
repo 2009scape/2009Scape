@@ -1,6 +1,7 @@
 package plugin.command;
 
 import org.crandor.game.container.Container;
+import org.crandor.game.container.impl.EquipmentContainer;
 import org.crandor.game.content.skill.Skills;
 import org.crandor.game.interaction.Interaction;
 import org.crandor.game.node.entity.player.Player;
@@ -145,7 +146,7 @@ public final class AIPCommandPlugin extends CommandPlugin {
                     player.setAttribute("aip_legion", PVPAIPActions.pvp_players = new ArrayList<>());
                 }
                 for (int i = 0; i < size; i++) {
-                    final AIPlayer aip = AIPBuilder.create( generateLocation(player));
+                    final AIPlayer aip = AIPBuilder.create(generateLocation(player));
                     aip.setControler(player);
                     aip.getAppearance().setGender(RandomFunction.random(3) == 1 ? Gender.FEMALE : Gender.MALE);
 
@@ -216,6 +217,25 @@ public final class AIPCommandPlugin extends CommandPlugin {
             case "immersiveworld":
             case "immersive":
                 ResourceAIPManager.get().immerseWorld();
+                player.sendMessage("Started immersive world, 2");
+                return true;
+            case "botdataform":
+                //Dumps your current character info in the form used by data/botdata
+                //name:cblevel:helmet:cape:neck:weapon:chest:shield:unknown:legs:unknown:gloves:boots:
+                System.out.println(player.getUsername() + ":"
+                        + player.getProperties().getCurrentCombatLevel() + ":"
+                        + player.getEquipment().getAsId(EquipmentContainer.SLOT_HAT) + ":"
+                        + player.getEquipment().getAsId(EquipmentContainer.SLOT_CAPE) + ":"
+                        + player.getEquipment().getAsId(EquipmentContainer.SLOT_AMULET) + ":"
+                        + player.getEquipment().getAsId(EquipmentContainer.SLOT_WEAPON) + ":"
+                        + player.getEquipment().getAsId(EquipmentContainer.SLOT_CHEST) + ":"
+                        + player.getEquipment().getAsId(EquipmentContainer.SLOT_SHIELD) + ":"
+                        + "0" + ":"
+                        + player.getEquipment().getAsId(EquipmentContainer.SLOT_LEGS) + ":"
+                        + "0" + ":"
+                        + player.getEquipment().getAsId(EquipmentContainer.SLOT_HANDS) + ":"
+                        + player.getEquipment().getAsId(EquipmentContainer.SLOT_FEET) + ":"
+                );
                 return true;
             case "fishtest":
                 SkillingBotsBuilder.spawnTroutLumbridge(new Location(3241, 3242));
@@ -254,7 +274,7 @@ public final class AIPCommandPlugin extends CommandPlugin {
                 try {
                     arg2 = Integer.parseInt(args[1]);
                 } catch (Exception e) {
-                    arg2 = 123;
+                    arg2 = 20;
                 }
                 for (int pestBotsAmount = 0; pestBotsAmount < arg2; pestBotsAmount++) {
                     PvMBotsBuilder.createPestControlTestBot(player.getLocation());

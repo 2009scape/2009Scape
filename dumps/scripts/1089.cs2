@@ -1,0 +1,9 @@
+void script_1089() {
+	if (cs2method5005() == 2) {
+		cs2method5001(cs2method5000(), 1, cs2method5016());
+		script_178();
+		script_84();
+		script_89();
+	}
+	return;
+}

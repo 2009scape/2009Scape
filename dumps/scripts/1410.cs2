@@ -1,0 +1,26 @@
+void script_1410(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = 255;
+	ivar2 = 0;
+	if (globalint_814 < 256) {
+		ivar1 = subtract(255, globalint_814);
+	} else if (globalint_814 < 510) {
+		ivar1 = mod(globalint_814, 255);
+	} else {
+		ivar1 = 255;
+	}
+	if (globalint_119 == 4) {
+		ivar2 = 8;
+	} else if (globalint_119 == 3) {
+		ivar2 = 4;
+	} else {
+		ivar1 = 255;
+	}
+	cs2method2103(ivar1, new WidgetPointer(arg0));
+	globalint_814 = add(globalint_814, ivar2);
+	if (globalint_814 > 510) {
+		globalint_814 = 0;
+	}
+	return;
+}

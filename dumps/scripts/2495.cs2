@@ -1,0 +1,10 @@
+void script_2495() {
+	int ivar0;
+	ivar0 = 1;
+	globalint_837 = bitconfig_6350;
+	script_2496();
+	if ((globalint_837 > 0) && (globalint_837 <= 9)) {
+		script_2500(((int)cs2method_3408(105, 73, 2400, globalint_837)));
+	}
+	return;
+}

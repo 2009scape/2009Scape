@@ -1,0 +1,6 @@
+int script_42(int arg0) {
+	if (((boolean)arg0)) {
+		return 1;
+	}
+	return 0;
+}

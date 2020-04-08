@@ -1,0 +1,50 @@
+void script_1443() {
+	setWidgetText(new WidgetPointer(4,8), intToStr(bitconfig_455));
+	if (((boolean)bitconfig_455)) {
+		setWidgetModel(-1, new WidgetPointer(4,4));
+	} else if (((boolean)bitconfig_455)) {
+		setWidgetModel(6545, new WidgetPointer(4,4));
+	} else if (bitconfig_455 < 4) {
+		setWidgetModel(6547, new WidgetPointer(4,4));
+	} else if (bitconfig_455 < 7) {
+		setWidgetModel(6548, new WidgetPointer(4,4));
+	} else if (bitconfig_455 < 11) {
+		setWidgetModel(6549, new WidgetPointer(4,4));
+	} else if (bitconfig_455 < 16) {
+		setWidgetModel(6550, new WidgetPointer(4,4));
+	} else if (bitconfig_455 < 22) {
+		setWidgetModel(6551, new WidgetPointer(4,4));
+	} else if (bitconfig_455 < 29) {
+		setWidgetModel(6552, new WidgetPointer(4,4));
+	} else if (bitconfig_455 < 37) {
+		setWidgetModel(6553, new WidgetPointer(4,4));
+	} else if (bitconfig_455 < 46) {
+		setWidgetModel(6554, new WidgetPointer(4,4));
+	} else {
+		setWidgetModel(6546, new WidgetPointer(4,4));
+	}
+	if (((boolean)bitconfig_454)) {
+		setWidgetModel(-1, new WidgetPointer(4,2));
+	} else if (((boolean)bitconfig_454)) {
+		setWidgetModel(6557, new WidgetPointer(4,2));
+	} else if (bitconfig_454 == 2) {
+		setWidgetModel(6559, new WidgetPointer(4,2));
+	} else if (bitconfig_454 == 3) {
+		setWidgetModel(6560, new WidgetPointer(4,2));
+	} else if (bitconfig_454 == 4) {
+		setWidgetModel(6561, new WidgetPointer(4,2));
+	} else if (bitconfig_454 == 5) {
+		setWidgetModel(6562, new WidgetPointer(4,2));
+	} else if (bitconfig_454 == 6) {
+		setWidgetModel(6563, new WidgetPointer(4,2));
+	} else if (bitconfig_454 == 7) {
+		setWidgetModel(6564, new WidgetPointer(4,2));
+	} else if (bitconfig_454 == 8) {
+		setWidgetModel(6565, new WidgetPointer(4,2));
+	} else if (bitconfig_454 == 9) {
+		setWidgetModel(6566, new WidgetPointer(4,2));
+	} else {
+		setWidgetModel(6558, new WidgetPointer(4,2));
+	}
+	return;
+}

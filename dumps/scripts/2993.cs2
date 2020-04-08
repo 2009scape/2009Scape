@@ -1,0 +1,6 @@
+void script_2993(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6) {
+	createExtraChild(new WidgetPointer(arg1), arg0, arg2);
+	setWidgetSize(arg3, arg4, 0, 0);
+	setWidgetPosition(arg5, arg6, 0, 0);
+	return;
+}

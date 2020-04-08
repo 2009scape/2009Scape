@@ -1,0 +1,7 @@
+void script_2941() {
+	setScriptCallOnWidgetResize(-1, "", new WidgetPointer(744,26));
+	globalstring_33 = "";
+	globalint_1099 = 0;
+	resetRCs();
+	return;
+}

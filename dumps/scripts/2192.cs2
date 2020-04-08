@@ -1,0 +1,10 @@
+void script_2192(int arg0,int arg1) {
+	if (((boolean)arg0)) {
+		setScriptCallOnMousePressed(2355, 1, arg1, "1i", new WidgetPointer(916,21));
+		setWidgetHFlip(0, new WidgetPointer(916,22));
+	} else {
+		setScriptCallOnMousePressed(2355, 0, arg1, "1i", new WidgetPointer(916,21));
+		setWidgetHFlip(1, new WidgetPointer(916,22));
+	}
+	return;
+}

@@ -1,0 +1,4 @@
+void script_3404() {
+	script_3403(subtract(getWidgetActualHeight(new WidgetPointer(909,61)), getWidgetActualHeight(new WidgetPointer(909,62))), 1);
+	return;
+}

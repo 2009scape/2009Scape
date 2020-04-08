@@ -1,0 +1,7 @@
+void script_214(int arg0,int arg1) {
+	int ivar2;
+	ivar2 = getWidgetParentId(new WidgetPointer(arg0));
+	setScriptCallOnConfigChange(1660, new WidgetPointer(arg0), arg1, new WidgetPointer(ivar2), 281, 1255, 2, "IiIY", new WidgetPointer(ivar2));
+	script_1661(arg0, arg1, ivar2);
+	return;
+}

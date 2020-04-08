@@ -1,0 +1,21 @@
+void script_5309(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar1 = 7287;
+	ivar2 = 7706;
+	ivar3 = 7289;
+	ivar4 = 0;
+	while (ivar4 < getCommonDefinitionSize(840)) {
+		if (setWidgetRegister(new WidgetPointer(823,3), ivar4)) {
+			if (ivar4 != arg0) {
+				setWidgetSprite(ivar1);
+			} else {
+				setWidgetSprite(ivar1);
+			}
+		}
+		ivar4 = add(ivar4, 1);
+	}
+	return;
+}

@@ -1,0 +1,5 @@
+void script_3119(int arg0,int arg1) {
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	setWidgetIsHidden(true, new WidgetPointer(arg0));
+	return;
+}

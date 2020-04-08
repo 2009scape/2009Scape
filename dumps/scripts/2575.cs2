@@ -1,0 +1,10 @@
+void script_2575() {
+	int ivar0;
+	ivar0 = 0;
+	while (ivar0 < getCommonDefinitionSize(2428)) {
+		setWidgetRGB(new Color(102, 102, 102), cs2method_3408(105, 73, 2428, ivar0));
+		ivar0 = add(ivar0, 1);
+	}
+	setWidgetRGB(new Color(255, 0, 51), cs2method_3408(105, 73, 2428, globalint_929));
+	return;
+}

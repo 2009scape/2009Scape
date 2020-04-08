@@ -1,0 +1,10 @@
+void script_354(int arg0,int arg1) {
+	if ((arg0 != 1) || (arg1 == globalint_1020)) {
+		return;
+	}
+	playSoundEffect(9819, 1, 0);
+	globalint_1020 = arg1;
+	bitconfig_6501 = arg1;
+	script_391();
+	return;
+}

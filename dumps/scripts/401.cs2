@@ -1,0 +1,44 @@
+void script_401(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	string svar0;
+	svar0 = globalstring_320;
+	if ((strLength(globalstring_319) > 0) && ((boolean)standart_config_170)) {
+		svar0 = globalstring_319;
+	}
+	if (setWidgetRegister(new WidgetPointer(arg1), 0) && ((boolean)stringMethod4107(svar0, getWidgetText()))) {
+		return;
+	}
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	deleteAllExtraChilds(new WidgetPointer(arg1));
+	deleteAllExtraChilds(new WidgetPointer(arg2));
+	ivar3 = getWidgetActualWidth(new WidgetPointer(arg0));
+	ivar4 = 0;
+	cs2method2100(0, 0, new WidgetPointer(arg1));
+	setWidgetPosition(ivar4, 0, 0, 1, new WidgetPointer(arg1));
+	ivar5 = add(multiply(getLineCount(ivar3, 307, svar0), 12), 3);
+	if (ivar5 > getWidgetActualHeight(new WidgetPointer(arg0))) {
+		ivar3 = subtract(ivar3, add(getWidgetActualWidth(new WidgetPointer(arg2)), 5));
+		setWidgetSize(ivar3, 0, 0, 1, new WidgetPointer(arg1));
+		ivar5 = add(multiply(getLineCount(ivar3, 307, svar0), 12), 3);
+		setWidgetScrollMax(0, ivar5, new WidgetPointer(arg1));
+		setWidgetIsHidden(false, new WidgetPointer(arg2));
+		script_31(arg2, arg1, 792, 789, 790, 791, 773, 788);
+	} else {
+		ivar5 = getWidgetActualHeight(new WidgetPointer(arg0));
+		setWidgetSize(ivar3, 0, 0, 1, new WidgetPointer(arg1));
+		setWidgetScrollMax(0, 0, new WidgetPointer(arg1));
+		setWidgetIsHidden(true, new WidgetPointer(arg2));
+	}
+	createExtraChild(new WidgetPointer(arg1), 4, 0);
+	setWidgetSize(0, ivar5, 1, 0);
+	setWidgetPosition(0, 0, 1, 0);
+	setWidgetFont(307);
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetRGB(new Color(0, 0, 0));
+	setWidgetUnknownBoolean(false);
+	setWidgetText(svar0);
+	setWidgetFont(307, new WidgetPointer(200,4));
+	return;
+}

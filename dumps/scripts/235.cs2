@@ -1,0 +1,8 @@
+void script_235() {
+	if (stringMethod4107(globalstring_24, "") != 0) {
+		script_220();
+	} else {
+		message(26, 0, "You must first select a name from the list.");
+	}
+	return;
+}

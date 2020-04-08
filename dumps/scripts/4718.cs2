@@ -1,0 +1,241 @@
+int script_4718(int arg0) {
+	switch (arg0) {
+		case 1817:
+			if (((boolean)bitconfig_1368)) {
+				return 0;
+			}
+			return 1;
+		case 1818:
+			if (((boolean)bitconfig_1369)) {
+				return 0;
+			}
+			return 1;
+		case 1819:
+			if (((boolean)bitconfig_1370)) {
+				return 0;
+			}
+			return 1;
+		case 1806:
+			if (((boolean)bitconfig_1367)) {
+				return 0;
+			}
+			return 1;
+		case 1832:
+			if (((boolean)bitconfig_1371)) {
+				return 0;
+			}
+			return 1;
+		case 1837:
+			if (((boolean)bitconfig_2310)) {
+				return 0;
+			}
+			return 1;
+		case 1839:
+			if (((boolean)bitconfig_2312)) {
+				return 0;
+			}
+			return 1;
+		case 1836:
+			if (((boolean)bitconfig_2309)) {
+				return 0;
+			}
+			return 1;
+		case 1838:
+			if (((boolean)bitconfig_2311)) {
+				return 0;
+			}
+			return 1;
+		case 1834:
+			if (((boolean)bitconfig_1921)) {
+				return 0;
+			}
+			return 1;
+		case 1833:
+			if (((boolean)bitconfig_1920)) {
+				return 0;
+			}
+			return 1;
+		case 1840:
+			if (((boolean)bitconfig_2055)) {
+				return 0;
+			}
+			return 1;
+		case 1855:
+			if (((boolean)bitconfig_2787)) {
+				return 0;
+			}
+			return 1;
+		case 1835:
+			if (bitconfig_4075 != 12) {
+				return 0;
+			}
+			return 1;
+		case 1841:
+			if (((boolean)bitconfig_4202)) {
+				return 0;
+			}
+			return 1;
+		case 1842:
+			if (((boolean)bitconfig_4394)) {
+				return 0;
+			}
+			return 1;
+		case 1843:
+			if (((boolean)bitconfig_4476)) {
+				return 0;
+			}
+			return 1;
+		case 1844:
+			if (((boolean)bitconfig_4884)) {
+				return 0;
+			}
+			return 1;
+		case 1845:
+			if (((boolean)bitconfig_5490)) {
+				return 0;
+			}
+			return 1;
+		case 1846:
+			if (((boolean)bitconfig_5732)) {
+				return 0;
+			}
+			return 1;
+		case 1847:
+			if (((boolean)bitconfig_5641)) {
+				return 0;
+			}
+			return 1;
+		case 1849:
+			if (((boolean)bitconfig_6936)) {
+				return 0;
+			}
+			return 1;
+		case 1850:
+			if (((boolean)bitconfig_6095)) {
+				return 0;
+			}
+			return 1;
+		case 1851:
+			if (bitconfig_8300 != 20) {
+				return 0;
+			}
+			return 1;
+		case 1852:
+			if (((boolean)bitconfig_8688)) {
+				return 0;
+			}
+			return 1;
+		case 1853:
+			if (bitconfig_8601 != 428) {
+				return 0;
+			}
+			return 1;
+		case 1830:
+		case 1831:
+			if (bitconfig_532 < 7) {
+				return 0;
+			}
+			return 1;
+		case 1848:
+			if (((bitconfig_6014 < 85) && (bitconfig_7322 < 18)) && ((boolean)bitconfig_9194)) {
+				return 0;
+			}
+			return 1;
+		case 1854:
+			if (((boolean)bitconfig_9194)) {
+				return 0;
+			}
+			return 1;
+		case 2658:
+			if (isBitFlagged(standart_config_2230, 0)) {
+				return 0;
+			}
+			return 1;
+		case 2654:
+			if (isBitFlagged(standart_config_2230, 1)) {
+				return 0;
+			}
+			return 1;
+		case 2651:
+			if (isBitFlagged(standart_config_2230, 2)) {
+				return 0;
+			}
+			return 1;
+		case 2652:
+			if (isBitFlagged(standart_config_2230, 3)) {
+				return 0;
+			}
+			return 1;
+		case 2657:
+			if (isBitFlagged(standart_config_2230, 4)) {
+				return 0;
+			}
+			return 1;
+		case 2661:
+			if (isBitFlagged(standart_config_2230, 5)) {
+				return 0;
+			}
+			return 1;
+		case 2653:
+			if (isBitFlagged(standart_config_2230, 6)) {
+				return 0;
+			}
+			return 1;
+		case 2650:
+			if (isBitFlagged(standart_config_2230, 7)) {
+				return 0;
+			}
+			return 1;
+		case 2659:
+			if (isBitFlagged(standart_config_2230, 8)) {
+				return 0;
+			}
+			return 1;
+		case 2660:
+			if (isBitFlagged(standart_config_2230, 9)) {
+				return 0;
+			}
+			return 1;
+		case 2655:
+			if (isBitFlagged(standart_config_2230, 10)) {
+				return 0;
+			}
+			return 1;
+		case 2656:
+			if (isBitFlagged(standart_config_2230, 11)) {
+				return 0;
+			}
+			return 1;
+		case 2662:
+			if (isBitFlagged(standart_config_2230, 12)) {
+				return 0;
+			}
+			return 1;
+		case 2663:
+			if (isBitFlagged(standart_config_2230, 13)) {
+				return 0;
+			}
+			return 1;
+		case 2664:
+			if (isBitFlagged(standart_config_2230, 14)) {
+				return 0;
+			}
+			return 1;
+		case 2665:
+			if (isBitFlagged(standart_config_2230, 15)) {
+				return 0;
+			}
+			return 1;
+		case 2666:
+			if (isBitFlagged(standart_config_2230, 16)) {
+				return 0;
+			}
+			return 1;
+		case 2667:
+			if (isBitFlagged(standart_config_2230, 17)) {
+				return 0;
+			}
+			return 1;
+	}
+	return 1;
+}

@@ -1,0 +1,36 @@
+string script_1814(string arg0) {
+	int ivar0;
+	string svar1;
+	ivar0 = strLength(arg0);
+	if (ivar0 <= 0) {
+		return arg0;
+	}
+	svar1 = concat("\u00a0", arg0);
+	svar1 = script_2332(svar1, "\u00a0a", "\u00a0A");
+	svar1 = script_2332(svar1, "\u00a0b", "\u00a0B");
+	svar1 = script_2332(svar1, "\u00a0c", "\u00a0C");
+	svar1 = script_2332(svar1, "\u00a0d", "\u00a0D");
+	svar1 = script_2332(svar1, "\u00a0e", "\u00a0E");
+	svar1 = script_2332(svar1, "\u00a0f", "\u00a0F");
+	svar1 = script_2332(svar1, "\u00a0g", "\u00a0G");
+	svar1 = script_2332(svar1, "\u00a0h", "\u00a0H");
+	svar1 = script_2332(svar1, "\u00a0i", "\u00a0I");
+	svar1 = script_2332(svar1, "\u00a0j", "\u00a0J");
+	svar1 = script_2332(svar1, "\u00a0k", "\u00a0K");
+	svar1 = script_2332(svar1, "\u00a0l", "\u00a0L");
+	svar1 = script_2332(svar1, "\u00a0m", "\u00a0M");
+	svar1 = script_2332(svar1, "\u00a0n", "\u00a0N");
+	svar1 = script_2332(svar1, "\u00a0o", "\u00a0O");
+	svar1 = script_2332(svar1, "\u00a0p", "\u00a0P");
+	svar1 = script_2332(svar1, "\u00a0q", "\u00a0Q");
+	svar1 = script_2332(svar1, "\u00a0r", "\u00a0R");
+	svar1 = script_2332(svar1, "\u00a0s", "\u00a0S");
+	svar1 = script_2332(svar1, "\u00a0t", "\u00a0T");
+	svar1 = script_2332(svar1, "\u00a0u", "\u00a0U");
+	svar1 = script_2332(svar1, "\u00a0v", "\u00a0V");
+	svar1 = script_2332(svar1, "\u00a0w", "\u00a0W");
+	svar1 = script_2332(svar1, "\u00a0x", "\u00a0X");
+	svar1 = script_2332(svar1, "\u00a0y", "\u00a0Y");
+	svar1 = script_2332(svar1, "\u00a0z", "\u00a0Z");
+	return substr(1, add(ivar0, 1), svar1);
+}

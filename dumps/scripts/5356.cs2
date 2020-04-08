@@ -1,0 +1,7 @@
+void script_5356(int arg0,int arg1,int arg2) {
+	if (setWidgetRegister(new WidgetPointer(arg1), arg0)) {
+		setWidgetSprite(7767);
+		setWidgetText(new WidgetPointer(1143,29), getOtherCommonData(arg2, 1994));
+	}
+	return;
+}

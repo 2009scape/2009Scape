@@ -1,0 +1,3 @@
+int script_4106(int arg0,string arg1) {
+	return divide(add(getWidgetActualWidth(new WidgetPointer(arg0)), max(getTextWidth(495, arg1), getTextWidth(494, getWidgetText(new WidgetPointer(arg0))))), 2);
+}

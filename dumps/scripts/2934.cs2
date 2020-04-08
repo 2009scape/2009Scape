@@ -1,0 +1,6 @@
+void script_2934(int arg0,string arg1) {
+	if (stringMethod4107(arg1, "") != 0) {
+		cs2method5421(arg0, arg1);
+	}
+	return;
+}

@@ -1,0 +1,4 @@
+void script_3034() {
+	script_2276(globalint_1199, globalint_1214, 61145361);
+	return;
+}

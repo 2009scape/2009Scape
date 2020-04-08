@@ -1,0 +1,21 @@
+void script_138() {
+	switch (globalint_5) {
+		case 7:
+			script_1548(7);
+			break;
+		case 8:
+			script_1548(8);
+			break;
+		case 9:
+			script_1548(9);
+			break;
+		case 13:
+			script_1548(13);
+			break;
+		default:
+			if (getDisplayMode() >= 2) {
+				script_1364();
+			}
+	}
+	return;
+}

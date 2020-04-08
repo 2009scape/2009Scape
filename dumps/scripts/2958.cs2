@@ -1,0 +1,35 @@
+void script_2958(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	ivar4 = getWidgetParentId(new WidgetPointer(arg0));
+	ivar5 = 0;
+	switch (arg1) {
+		case 20024:
+			ivar5 = bitconfig_8399;
+			setWidgetText(new WidgetPointer(arg3), getItemName(arg1) + "<br>" + "(" + intToStr(ivar5) + "/" + intToStr(arg2) + ")");
+			break;
+		case 20012:
+			ivar5 = bitconfig_8400;
+			setWidgetText(new WidgetPointer(arg3), getItemName(arg1) + "<br>" + "(" + intToStr(ivar5) + "/" + intToStr(arg2) + ")");
+			break;
+		case 20032:
+			ivar5 = bitconfig_8403;
+			setWidgetText(new WidgetPointer(arg3), getItemName(arg1) + "<br>" + "(" + intToStr(ivar5) + "/" + intToStr(arg2) + ")");
+			break;
+		case 20036:
+			ivar5 = bitconfig_8402;
+			setWidgetText(new WidgetPointer(arg3), getItemName(arg1) + "<br>" + "(" + intToStr(ivar5) + "/" + intToStr(arg2) + ")");
+			break;
+		case 20040:
+			ivar5 = bitconfig_8404;
+			setWidgetText(new WidgetPointer(arg3), getItemName(arg1) + "<br>" + "(" + intToStr(ivar5) + "/" + intToStr(arg2) + ")");
+			break;
+		case 20028:
+			ivar5 = bitconfig_8401;
+			setWidgetText(new WidgetPointer(arg3), getItemName(arg1) + "<br>" + "(" + intToStr(ivar5) + "/" + intToStr(arg2) + ")");
+	}
+	setItemOnWidgetMethod2205(arg1, -1, new WidgetPointer(arg0));
+	setWidgetBorderThickness(1, new WidgetPointer(arg0));
+	cs2method2314(171, new WidgetPointer(arg3));
+	return;
+}

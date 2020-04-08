@@ -1,0 +1,4 @@
+void script_1867() {
+	cs2method5400(0, "www", "parents.ws");
+	return;
+}

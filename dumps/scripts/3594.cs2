@@ -1,0 +1,9 @@
+void script_3594() {
+	setItemOnWidgetMethod2200(cs2method_3408(105, 79, 3170, mod(add(script_3619(9), bitconfig_7387), getCommonDefinitionSize(3170))), -1, new WidgetPointer(1002,161));
+	setItemOnWidgetMethod2200(cs2method_3408(105, 79, 3170, mod(add(script_3621(6), bitconfig_7387), getCommonDefinitionSize(3170))), -1, new WidgetPointer(1002,162));
+	setItemOnWidgetMethod2200(cs2method_3408(105, 79, 3170, mod(add(script_3619(14), bitconfig_7387), getCommonDefinitionSize(3170))), -1, new WidgetPointer(1002,163));
+	setItemOnWidgetMethod2200(cs2method_3408(105, 79, 3170, mod(add(script_3620(1), bitconfig_7387), getCommonDefinitionSize(3170))), -1, new WidgetPointer(1002,164));
+	setItemOnWidgetMethod2200(cs2method_3408(105, 79, 3170, mod(add(script_3620(9), bitconfig_7387), getCommonDefinitionSize(3170))), -1, new WidgetPointer(1002,165));
+	setItemOnWidgetMethod2200(cs2method_3408(105, 79, 3170, mod(add(script_3621(1), bitconfig_7387), getCommonDefinitionSize(3170))), -1, new WidgetPointer(1002,166));
+	return;
+}

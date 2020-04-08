@@ -1,0 +1,7 @@
+void script_211() {
+	if (standart_config_448 == -1) {
+		script_656();
+	}
+	script_606();
+	return;
+}

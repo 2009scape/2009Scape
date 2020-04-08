@@ -1,0 +1,5 @@
+void script_691(int arg0,int arg1,int arg2,int arg3) {
+	setWidgetSprite(arg2, new WidgetPointer(arg0));
+	cs2method2103(arg3, new WidgetPointer(arg1));
+	return;
+}

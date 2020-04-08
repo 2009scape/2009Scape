@@ -8,7 +8,13 @@ import org.crandor.game.world.update.flag.context.Animation;
  * @author 'Vexia
  */
 public enum Limb {
-	WOODEN_STOCK(new Item(9440), new Item(9420), new Item(9454), 9, 12, new Animation(4436)), OAK_STOCK(new Item(9442), new Item(9422), new Item(9176), 24, 32, new Animation(4437)), WILLOW_STOCK(new Item(9444), new Item(9423), new Item(9457), 39, 44, new Animation(4438)), TEAK_STOCK(new Item(9446), new Item(9425), new Item(9459), 46, 54, new Animation(4439)), MAPLE_STOCK(new Item(9448), new Item(9427), new Item(9461), 54, 64, new Animation(4440)), MAHOGANY_STOCK(new Item(9450), new Item(9429), new Item(9463), 61, 82, new Animation(4441)), YEW_STOCK(new Item(9452), new Item(9431), new Item(9465), 69, 100, new Animation(4442));
+	WOODEN_STOCK(new Item(9440), new Item(9420), new Item(9454), 9, 12, new Animation(4436)),
+	OAK_STOCK(new Item(9442), new Item(9422), new Item(9176), 24, 32, new Animation(4437)),
+	WILLOW_STOCK(new Item(9444), new Item(9423), new Item(9457), 39, 44, new Animation(4438)),
+	TEAK_STOCK(new Item(9446), new Item(9425), new Item(9459), 46, 54, new Animation(4439)),
+	MAPLE_STOCK(new Item(9448), new Item(9427), new Item(9461), 54, 64, new Animation(4440)),
+	MAHOGANY_STOCK(new Item(9450), new Item(9429), new Item(9463), 61, 82, new Animation(4441)),
+	YEW_STOCK(new Item(9452), new Item(9431), new Item(9465), 69, 100, new Animation(4442));
 
 	/**
 	 * Constructs a new {@code StringcrosbowPlugin.java} {@code Object}.

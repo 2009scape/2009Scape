@@ -162,7 +162,10 @@ final class Class3_Sub28_Sub1 extends Node {
          }
 
          if(Class3_Sub13_Sub34.anInt3415 > 2) {
-            var1 = RenderAnimationDefinition.method903(new RSString[]{var1, Class1.aClass94_58, Class72.method1298((byte)9, Class3_Sub13_Sub34.anInt3415 - 2), Class3_Sub13_Sub36.aClass94_3426}, (byte)-62);
+            var1 = RenderAnimationDefinition.method903(new RSString[] {
+                    var1, Class1.aClass94_58, Class72.method1298((byte) 9, Class3_Sub13_Sub34.anInt3415 - 2), Class3_Sub13_Sub36.aClass94_3426
+            }, (byte)-62);
+//            System.out.println(var1.toString());
          }
 
          int var2 = -97 % ((var0 - 55) / 32);

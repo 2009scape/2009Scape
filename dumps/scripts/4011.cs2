@@ -1,0 +1,14 @@
+void script_4011() {
+	if (((boolean)globalint_1421)) {
+		globalint_1421 = 1;
+		setWidgetSprite(4086, new WidgetPointer(1056,173));
+		setScriptCallOnMouseEntered(4012, 0, 1, "ii", new WidgetPointer(1056,173));
+		setScriptCallOnMouseExit(4012, 1, 1, "ii", new WidgetPointer(1056,173));
+	} else {
+		globalint_1421 = 0;
+		setWidgetSprite(4084, new WidgetPointer(1056,173));
+		setScriptCallOnMouseEntered(4012, 0, 0, "ii", new WidgetPointer(1056,173));
+		setScriptCallOnMouseExit(4012, 1, 0, "ii", new WidgetPointer(1056,173));
+	}
+	return;
+}

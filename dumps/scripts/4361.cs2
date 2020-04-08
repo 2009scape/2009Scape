@@ -1,0 +1,15 @@
+void script_4361(int arg0) {
+	script_4332(72024111, 72024121);
+	script_4334(72024131, 72024132);
+	script_4336(72024078);
+	script_4362(1, 72024162, 72024070, 72024071, clanbitconfig_98, clanbitconfig_106, clanbitconfig_74, clanbitconfig_114, clanbitconfig_82, clanbitconfig_90, clanconfig_65, clanbitconfig_132, clanlongconfig_122);
+	script_4362(2, 72024188, 72024189, 72024190, clanbitconfig_99, clanbitconfig_107, clanbitconfig_75, clanbitconfig_115, clanbitconfig_83, clanbitconfig_91, clanconfig_66, clanbitconfig_133, clanlongconfig_123);
+	script_4362(3, 72024191, 72024192, 72024193, clanbitconfig_100, clanbitconfig_108, clanbitconfig_76, clanbitconfig_116, clanbitconfig_84, clanbitconfig_92, clanconfig_67, clanbitconfig_134, clanlongconfig_124);
+	script_4362(4, 72024194, 72024195, 72024196, clanbitconfig_101, clanbitconfig_109, clanbitconfig_77, clanbitconfig_117, clanbitconfig_85, clanbitconfig_93, clanconfig_68, clanbitconfig_135, clanlongconfig_125);
+	script_4362(5, 72024197, 72024198, 72024199, clanbitconfig_102, clanbitconfig_110, clanbitconfig_78, clanbitconfig_118, clanbitconfig_86, clanbitconfig_94, clanconfig_69, clanbitconfig_136, clanlongconfig_126);
+	script_4362(6, 72024200, 72024201, 72024202, clanbitconfig_103, clanbitconfig_111, clanbitconfig_79, clanbitconfig_119, clanbitconfig_87, clanbitconfig_95, clanconfig_70, clanbitconfig_137, clanlongconfig_127);
+	script_4362(7, 72024203, 72024204, 72024205, clanbitconfig_104, clanbitconfig_112, clanbitconfig_80, clanbitconfig_120, clanbitconfig_88, clanbitconfig_96, clanconfig_71, clanbitconfig_138, clanlongconfig_128);
+	script_4362(8, 72024206, 72024207, 72024208, clanbitconfig_105, clanbitconfig_113, clanbitconfig_81, clanbitconfig_121, clanbitconfig_89, clanbitconfig_97, clanconfig_72, clanbitconfig_139, clanlongconfig_129);
+	setWidgetIsHidden(true, new WidgetPointer(1099,13));
+	return;
+}

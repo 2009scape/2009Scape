@@ -1,0 +1,41 @@
+void script_1706() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 10;
+	while ((ivar0 != -1) && (ivar2 > 0)) {
+		ivar1 = script_1708(ivar0);
+		if (setWidgetRegister(new WidgetPointer(script_1707(ivar0)))) {
+			if (ivar1 > 0) {
+				setWidgetRGB(new Color(50, 255, 50));
+				setWidgetText(concat(concat(ivar1, "+"), "%"));
+			} else if (ivar1 < 0) {
+				setWidgetRGB(new Color(255, 50, 50));
+				setWidgetText(concat(intToStr(ivar1), "%"));
+			} else {
+				setWidgetRGB(new Color(255, 152, 31));
+				setWidgetText(concat(intToStr(ivar1), "%"));
+			}
+		}
+		switch (ivar0) {
+			case 0:
+				ivar0 = 2;
+				break;
+			case 2:
+				ivar0 = 1;
+				break;
+			case 1:
+				ivar0 = 4;
+				break;
+			case 4:
+				ivar0 = 6;
+				break;
+			case 6:
+				ivar0 = -1;
+		}
+		ivar2 = subtract(ivar2, 1);
+	}
+	return;
+}

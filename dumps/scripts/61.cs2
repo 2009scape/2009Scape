@@ -1,0 +1,63 @@
+void script_61() {
+	int ivar0;
+	ivar0 = 0;
+	while (ivar0 < 5) {
+		createExtraChild(new WidgetPointer(260,45), 5, ivar0);
+		setWidgetSize(36, 32, 0, 0);
+		if (((boolean)ivar0)) {
+			setWidgetPosition(0, 43, 0, 0);
+		}
+		if (((boolean)ivar0)) {
+			setWidgetPosition(50, 2, 0, 0);
+		}
+		if (ivar0 == 2) {
+			setWidgetPosition(50, 43, 0, 0);
+		}
+		if (ivar0 == 3) {
+			setWidgetPosition(50, 85, 0, 0);
+		}
+		if (ivar0 == 4) {
+			setWidgetPosition(50, 125, 0, 0);
+		}
+		if (getItemIdInSlot(515, ivar0) != -1) {
+			setItemOnWidgetMethod1200(getItemIdInSlot(515, ivar0), getItemAmtInSlot(515, ivar0));
+			cs2method1305(getItemName(getItemIdInSlot(515, ivar0)));
+			setWidgetContextMenuOption(1, "Deposit");
+			setWidgetShadowColor(new Color(17, 17, 17));
+			setWidgetBorderThickness(1);
+			if (((boolean)ivar0)) {
+				setWidgetSprite(-1, new WidgetPointer(260,40));
+			}
+			if (((boolean)ivar0)) {
+				setWidgetSprite(-1, new WidgetPointer(260,36));
+			}
+			if (ivar0 == 2) {
+				setWidgetSprite(-1, new WidgetPointer(260,37));
+			}
+			if (ivar0 == 3) {
+				setWidgetSprite(-1, new WidgetPointer(260,38));
+			}
+			if (ivar0 == 4) {
+				setWidgetSprite(-1, new WidgetPointer(260,39));
+			}
+		} else {
+			if (((boolean)ivar0)) {
+				setWidgetSprite(159, new WidgetPointer(260,40));
+			}
+			if (((boolean)ivar0)) {
+				setWidgetSprite(156, new WidgetPointer(260,36));
+			}
+			if (ivar0 == 2) {
+				setWidgetSprite(161, new WidgetPointer(260,37));
+			}
+			if (ivar0 == 3) {
+				setWidgetSprite(163, new WidgetPointer(260,38));
+			}
+			if (ivar0 == 4) {
+				setWidgetSprite(165, new WidgetPointer(260,39));
+			}
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	return;
+}

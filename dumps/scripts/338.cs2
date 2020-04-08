@@ -1,0 +1,66 @@
+int script_338(int arg0) {
+	if (arg0 == 23) {
+		return 1100;
+	}
+	if (bitconfig_7233 < 30) {
+		return 2700;
+	}
+	if (bitconfig_7233 < 60) {
+		return 2550;
+	}
+	if (bitconfig_7233 < 90) {
+		return 2400;
+	}
+	if (bitconfig_7233 < 120) {
+		return 2250;
+	}
+	if (bitconfig_7233 < 150) {
+		return 2100;
+	}
+	if (bitconfig_7233 < 180) {
+		return 2000;
+	}
+	if (bitconfig_7233 < 210) {
+		return 1900;
+	}
+	if (bitconfig_7233 < 240) {
+		return 1800;
+	}
+	if (bitconfig_7233 < 270) {
+		return 1700;
+	}
+	if (bitconfig_7233 < 300) {
+		return 1600;
+	}
+	if (bitconfig_7233 < 330) {
+		return 1500;
+	}
+	if (bitconfig_7233 < 360) {
+		return 1450;
+	}
+	if (bitconfig_7233 < 390) {
+		return 1400;
+	}
+	if (bitconfig_7233 < 420) {
+		return 1350;
+	}
+	if (bitconfig_7233 < 450) {
+		return 1300;
+	}
+	if (bitconfig_7233 < 480) {
+		return 1250;
+	}
+	if (bitconfig_7233 < 510) {
+		return 1200;
+	}
+	if (bitconfig_7233 < 540) {
+		return 1175;
+	}
+	if (bitconfig_7233 < 570) {
+		return 1150;
+	}
+	if (bitconfig_7233 < 600) {
+		return 1125;
+	}
+	return 1100;
+}

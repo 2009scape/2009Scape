@@ -1,0 +1,37 @@
+void script_2020(int arg0,int arg1,int arg2,string arg3) {
+	deleteAllExtraChilds(new WidgetPointer(arg2));
+	createExtraChild(new WidgetPointer(arg2), 5, 0);
+	setWidgetSize(10, 0, 1, 1);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetSprite(3859);
+	createExtraChild(new WidgetPointer(arg2), 5, 1);
+	setWidgetSize(6, 0, 0, 1);
+	setWidgetPosition(0, 0, 0, 1);
+	setWidgetSprite(3857);
+	createExtraChild(new WidgetPointer(arg2), 5, 2);
+	setWidgetSize(6, 0, 0, 1);
+	setWidgetPosition(0, 0, 2, 1);
+	setWidgetSprite(3858);
+	createExtraChild(new WidgetPointer(arg2), 4, 3);
+	setWidgetSize(0, 0, 1, 1);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetFont(494);
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetRGB(new Color(255, 152, 31));
+	setWidgetUnknownBoolean(true);
+	setWidgetText(arg3);
+	setWidgetSize(arg1, 26, 0, 0, new WidgetPointer(arg2));
+	setWidgetIsHidden(false, new WidgetPointer(arg2));
+	setScriptCallOnMouseEntered(2021, new WidgetPointer(-32768,3), 1, "I1", new WidgetPointer(arg2));
+	setScriptCallOnMouseExit(2021, new WidgetPointer(-32768,3), 0, "I1", new WidgetPointer(arg2));
+	if (arg0 == -1) {
+		setWidgetNoOptions(new WidgetPointer(arg2));
+		cs2method2310(new WidgetPointer(arg2), arg3);
+		setScriptCallOnMousePressed(2022, 1, arg0, "ii", new WidgetPointer(arg2));
+	} else {
+		setWidgetContextMenuOption(1, new WidgetPointer(arg2), arg3);
+		cs2method2310(new WidgetPointer(arg2), "");
+		setScriptCallOnClickContextMenu(2022, -2147483644, arg0, "ii", new WidgetPointer(arg2));
+	}
+	return;
+}

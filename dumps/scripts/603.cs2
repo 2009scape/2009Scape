@@ -1,0 +1,8 @@
+void script_603() {
+	if (globalint_82 <= 0) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(105,148));
+		script_621();
+	}
+	globalint_82 = subtract(globalint_82, 1);
+	return;
+}

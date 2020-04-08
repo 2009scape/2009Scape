@@ -1,0 +1,78 @@
+void script_621() {
+	int ivar0;
+	string svar0;
+	flow_0:
+		ivar0 = 0;
+		svar0 = "null";
+		script_622();
+		IF ((standart_config_1112 == -1) || (getGENotStarted(standart_config_1112) && (standart_config_1113 == -1))) 
+			GOTO	flow_2
+		GOTO	flow_3
+	flow_2:
+		script_41(6881490);
+		setWidgetIsHidden(false, new WidgetPointer(105,17));
+		script_628();
+		setScriptCallOnItemContainerUpdate(-1, "", new WidgetPointer(105,197));
+		globalint_83 = 0;
+		globalint_82 = 0;
+		GOTO	flow_26
+	flow_3:
+		IF (ivar0 < 6) 
+			GOTO	flow_4
+		GOTO	flow_5
+	flow_4:
+		script_41(((int)script_626(ivar0)));
+		ivar0 = add(ivar0, 1);
+		GOTO	flow_3
+	flow_5:
+		if (getGENotStarted(standart_config_1112)) {
+			setWidgetIsHidden(false, new WidgetPointer(105,127));
+			setWidgetIsHidden(false, new WidgetPointer(105,197));
+			script_594(getGEIsSelling(standart_config_1112), getGEItem(standart_config_1112), getGEItemAmt(standart_config_1112), getGEItemPrice(standart_config_1112));
+			script_593(standart_config_1112);
+			if (((boolean)getGEIsSelling(standart_config_1112))) {
+				svar0 = "Maximum total cost of purchase";
+			} else {
+				svar0 = "Minimum total value of sale";
+			}
+			setScriptCallOnMouseOver(649, new WidgetPointer(105,185), new WidgetPointer(105,210), svar0, 25, 300, "IIsii", new WidgetPointer(105,185));
+			svar0 = formatNumber(multiply(getGEItemAmt(standart_config_1112), getGEItemPrice(standart_config_1112)), 1);
+			setWidgetText(new WidgetPointer(105,185), svar0 + " gp");
+		} else {
+			setWidgetIsHidden(false, new WidgetPointer(105,127));
+			setWidgetIsHidden(false, new WidgetPointer(105,154));
+			if (((boolean)standart_config_1113)) {
+				setWidgetIsHidden(false, new WidgetPointer(105,188));
+				if (standart_config_1109 != -1) {
+					setWidgetIsHidden(true, new WidgetPointer(105,191));
+					setWidgetIsHidden(true, new WidgetPointer(105,192));
+				} else {
+					setWidgetIsHidden(false, new WidgetPointer(105,191));
+					setWidgetIsHidden(false, new WidgetPointer(105,192));
+				}
+				svar0 = "Maximum total cost of purchase";
+			} else {
+				setWidgetIsHidden(false, new WidgetPointer(105,193));
+				if (standart_config_1109 != -1) {
+					setWidgetIsHidden(true, new WidgetPointer(105,195));
+				} else {
+					setWidgetIsHidden(false, new WidgetPointer(105,195));
+				}
+				svar0 = "Minimum total value of sale";
+			}
+			setScriptCallOnMouseOver(649, new WidgetPointer(105,185), new WidgetPointer(105,210), svar0, 25, 300, "IIsii", new WidgetPointer(105,185));
+			if (standart_config_1111 > 0) {
+				if (standart_config_1110 > divide(2147483647, standart_config_1111)) {
+					setWidgetText(new WidgetPointer(105,185), "Too high!");
+				} else {
+					svar0 = formatNumber(multiply(standart_config_1110, standart_config_1111), 1);
+					setWidgetText(new WidgetPointer(105,185), svar0 + " gp");
+				}
+			} else {
+				setWidgetText(new WidgetPointer(105,185), "0 gp");
+			}
+			script_594(standart_config_1113, standart_config_1109, standart_config_1110, standart_config_1111);
+		}
+	flow_26:
+		return;
+}

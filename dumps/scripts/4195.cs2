@@ -1,0 +1,47 @@
+void script_4195(int arg0) {
+	if ((arg0 == 58392625) || (arg0 == 58392626)) {
+		if (setWidgetRegister(new WidgetPointer(891,61))) {
+			setWidgetHidden(0);
+		}
+		if (setWidgetRegister(new WidgetPointer(891,49))) {
+			setWidgetSprite(5414);
+		}
+		if (setWidgetRegister(new WidgetPointer(891,50))) {
+			setWidgetSprite(5414);
+		}
+	}
+	if ((arg0 == 58392627) || (arg0 == 58392629)) {
+		if (setWidgetRegister(new WidgetPointer(891,62))) {
+			setWidgetHidden(0);
+		}
+		if (setWidgetRegister(new WidgetPointer(891,51))) {
+			setWidgetSprite(5414);
+		}
+		if (setWidgetRegister(new WidgetPointer(891,53))) {
+			setWidgetSprite(5414);
+		}
+	}
+	if (arg0 == 58392628) {
+		if (setWidgetRegister(new WidgetPointer(891,63))) {
+			setWidgetHidden(0);
+		}
+		if (setWidgetRegister(new WidgetPointer(891,52))) {
+			setWidgetSprite(5414);
+		}
+		if (setWidgetRegister(new WidgetPointer(891,53))) {
+			setWidgetSprite(5414);
+		}
+	}
+	if ((arg0 == 58392630) || (arg0 == 58392631)) {
+		if (setWidgetRegister(new WidgetPointer(891,64))) {
+			setWidgetHidden(0);
+		}
+		if (setWidgetRegister(new WidgetPointer(891,54))) {
+			setWidgetSprite(5414);
+		}
+		if (setWidgetRegister(new WidgetPointer(891,55))) {
+			setWidgetSprite(5414);
+		}
+	}
+	return;
+}

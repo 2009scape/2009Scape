@@ -1,0 +1,187 @@
+void script_1953() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	ivar0 = getItemAmtInContainer(93, 2015);
+	ivar1 = getItemAmtInContainer(93, 2019);
+	ivar2 = getItemAmtInContainer(93, 2017);
+	ivar3 = getItemAmtInContainer(93, 2108);
+	ivar4 = getItemAmtInContainer(93, 2102);
+	ivar5 = getItemAmtInContainer(93, 2128);
+	ivar6 = getItemAmtInContainer(93, 2120);
+	ivar7 = getItemAmtInContainer(93, 1973);
+	ivar8 = getItemAmtInContainer(93, 2114);
+	ivar9 = getItemAmtInContainer(93, 2126);
+	ivar10 = getItemAmtInContainer(93, 1927);
+	ivar11 = getItemAmtInContainer(93, 2021);
+	if ((((ivar0 >= 2) && (ivar1 >= 1)) && ((ivar3 >= 1) && (ivar6 >= 1))) && (ivar4 >= 1)) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(436,81));
+	} else {
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(436,81));
+	}
+	if ((ivar0 >= 1) && (ivar6 >= 3)) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(436,82));
+	} else {
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(436,82));
+	}
+	if (((ivar8 >= 1) && (ivar4 >= 1)) && (ivar3 >= 1)) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(436,83));
+	} else {
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(436,83));
+	}
+	if (((ivar8 >= 2) && (ivar4 >= 1)) && (ivar3 >= 1)) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(436,84));
+	} else {
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(436,84));
+	}
+	if (((ivar0 >= 1) && (ivar1 >= 1)) && (ivar9 >= 1)) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(436,85));
+	} else {
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(436,85));
+	}
+	if (((ivar2 >= 1) && (ivar5 >= 1)) && ((ivar10 >= 1) && (ivar7 >= 1))) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(436,86));
+	} else {
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(436,86));
+	}
+	if ((((ivar0 >= 1) && (ivar1 >= 1)) && ((ivar11 >= 1) && (ivar4 >= 2))) && (ivar3 >= 1)) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(436,87));
+	} else {
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(436,87));
+	}
+	if (getItemAmtInContainer(93, 2114) > 0) {
+		setItemOnWidgetMethod2200(2114, 100, new WidgetPointer(436,24));
+	} else {
+		setItemOnWidgetMethod2200(9497, 100, new WidgetPointer(436,24));
+	}
+	if (getItemAmtInContainer(93, 2102) > 0) {
+		setItemOnWidgetMethod2200(2102, 140, new WidgetPointer(436,25));
+	} else {
+		setItemOnWidgetMethod2200(9492, 140, new WidgetPointer(436,25));
+	}
+	if (getItemAmtInContainer(93, 2108) > 0) {
+		setItemOnWidgetMethod2200(2108, 140, new WidgetPointer(436,26));
+	} else {
+		setItemOnWidgetMethod2200(9493, 140, new WidgetPointer(436,26));
+	}
+	if (getItemAmtInContainer(93, 2015) > 1) {
+		setItemOnWidgetMethod2200(2015, 120, new WidgetPointer(436,4));
+	} else {
+		setItemOnWidgetMethod2200(9491, 120, new WidgetPointer(436,4));
+	}
+	if (getItemAmtInContainer(93, 2019) > 0) {
+		setItemOnWidgetMethod2200(2019, 120, new WidgetPointer(436,5));
+	} else {
+		setItemOnWidgetMethod2200(9491, 120, new WidgetPointer(436,5));
+	}
+	if (getItemAmtInContainer(93, 2108) > 0) {
+		setItemOnWidgetMethod2200(2108, 140, new WidgetPointer(436,6));
+	} else {
+		setItemOnWidgetMethod2200(9493, 140, new WidgetPointer(436,6));
+	}
+	if (getItemAmtInContainer(93, 2120) > 0) {
+		setItemOnWidgetMethod2200(2120, 140, new WidgetPointer(436,7));
+	} else {
+		setItemOnWidgetMethod2200(9555, 140, new WidgetPointer(436,7));
+	}
+	if (getItemAmtInContainer(93, 2102) > 0) {
+		setItemOnWidgetMethod2200(2102, 140, new WidgetPointer(436,8));
+	} else {
+		setItemOnWidgetMethod2200(9492, 140, new WidgetPointer(436,8));
+	}
+	if (getItemAmtInContainer(93, 2015) > 0) {
+		setItemOnWidgetMethod2200(2015, 120, new WidgetPointer(436,17));
+	} else {
+		setItemOnWidgetMethod2200(9491, 120, new WidgetPointer(436,17));
+	}
+	if (getItemAmtInContainer(93, 2120) > 2) {
+		setItemOnWidgetMethod2200(2120, 120, new WidgetPointer(436,18));
+	} else {
+		setItemOnWidgetMethod2200(9555, 140, new WidgetPointer(436,18));
+	}
+	if (getItemAmtInContainer(93, 2015) > 0) {
+		setItemOnWidgetMethod2200(2015, 120, new WidgetPointer(436,62));
+	} else {
+		setItemOnWidgetMethod2200(9491, 120, new WidgetPointer(436,62));
+	}
+	if (getItemAmtInContainer(93, 2019) > 0) {
+		setItemOnWidgetMethod2200(2019, 120, new WidgetPointer(436,64));
+	} else {
+		setItemOnWidgetMethod2200(9491, 120, new WidgetPointer(436,64));
+	}
+	if (getItemAmtInContainer(93, 2021) > 0) {
+		setItemOnWidgetMethod2200(2021, 120, new WidgetPointer(436,63));
+	} else {
+		setItemOnWidgetMethod2200(9556, 120, new WidgetPointer(436,63));
+	}
+	if (getItemAmtInContainer(93, 2108) > 0) {
+		setItemOnWidgetMethod2200(2108, 140, new WidgetPointer(436,65));
+	} else {
+		setItemOnWidgetMethod2200(9493, 140, new WidgetPointer(436,65));
+	}
+	if (getItemAmtInContainer(93, 2102) > 1) {
+		setItemOnWidgetMethod2200(2102, 140, new WidgetPointer(436,66));
+	} else {
+		setItemOnWidgetMethod2200(9492, 140, new WidgetPointer(436,66));
+	}
+	if (getItemAmtInContainer(93, 2017) > 0) {
+		setItemOnWidgetMethod2200(2017, 120, new WidgetPointer(436,51));
+	} else {
+		setItemOnWidgetMethod2200(9491, 120, new WidgetPointer(436,51));
+	}
+	if (getItemAmtInContainer(93, 2128) > 0) {
+		setItemOnWidgetMethod2200(2128, 120, new WidgetPointer(436,52));
+	} else {
+		setItemOnWidgetMethod2200(9494, 120, new WidgetPointer(436,52));
+	}
+	if (getItemAmtInContainer(93, 1973) > 0) {
+		setItemOnWidgetMethod2200(1973, 140, new WidgetPointer(436,54));
+	} else {
+		setItemOnWidgetMethod2200(9507, 140, new WidgetPointer(436,54));
+	}
+	if (getItemAmtInContainer(93, 1927) > 0) {
+		setItemOnWidgetMethod2200(1927, 100, new WidgetPointer(436,53));
+	} else {
+		setItemOnWidgetMethod2200(9495, 100, new WidgetPointer(436,53));
+	}
+	if (getItemAmtInContainer(93, 2114) > 1) {
+		setItemOnWidgetMethod2200(2114, 100, new WidgetPointer(436,33));
+	} else {
+		setItemOnWidgetMethod2200(9497, 100, new WidgetPointer(436,33));
+	}
+	if (getItemAmtInContainer(93, 2102) > 0) {
+		setItemOnWidgetMethod2200(2102, 140, new WidgetPointer(436,34));
+	} else {
+		setItemOnWidgetMethod2200(9492, 140, new WidgetPointer(436,34));
+	}
+	if (getItemAmtInContainer(93, 2108) > 0) {
+		setItemOnWidgetMethod2200(2108, 140, new WidgetPointer(436,35));
+	} else {
+		setItemOnWidgetMethod2200(9493, 140, new WidgetPointer(436,35));
+	}
+	if (getItemAmtInContainer(93, 2015) > 0) {
+		setItemOnWidgetMethod2200(2015, 120, new WidgetPointer(436,42));
+	} else {
+		setItemOnWidgetMethod2200(9491, 120, new WidgetPointer(436,42));
+	}
+	if (getItemAmtInContainer(93, 2019) > 0) {
+		setItemOnWidgetMethod2200(2019, 120, new WidgetPointer(436,43));
+	} else {
+		setItemOnWidgetMethod2200(9491, 120, new WidgetPointer(436,43));
+	}
+	if (getItemAmtInContainer(93, 2126) > 0) {
+		setItemOnWidgetMethod2200(2126, 140, new WidgetPointer(436,44));
+	} else {
+		setItemOnWidgetMethod2200(9496, 140, new WidgetPointer(436,44));
+	}
+	return;
+}

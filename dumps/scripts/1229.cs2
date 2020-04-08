@@ -1,0 +1,12 @@
+void script_1229(int arg0,int arg1,int arg2,int arg3) {
+	if (arg0 != 1) {
+		return;
+	}
+	setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(arg2));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(arg1));
+	setWidgetNoOptions(new WidgetPointer(arg2));
+	setWidgetIsHidden(true, new WidgetPointer(arg2));
+	setWidgetIsHidden(true, new WidgetPointer(arg3));
+	setWidgetIsHidden(true, new WidgetPointer(arg1));
+	return;
+}

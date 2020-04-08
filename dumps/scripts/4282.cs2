@@ -1,0 +1,6 @@
+void script_4282() {
+	if (cs2method3700()) {
+		script_4283();
+	}
+	return;
+}

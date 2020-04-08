@@ -1,0 +1,18 @@
+void script_622() {
+	if (((boolean)standart_config_1118)) {
+		setWidgetIsHidden(false, new WidgetPointer(105,17));
+		setWidgetIsHidden(false, new WidgetPointer(105,127));
+		setWidgetIsHidden(false, new WidgetPointer(105,154));
+		setWidgetIsHidden(false, new WidgetPointer(105,188));
+		setWidgetIsHidden(false, new WidgetPointer(105,193));
+		setWidgetIsHidden(false, new WidgetPointer(105,197));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(105,17));
+		setWidgetIsHidden(true, new WidgetPointer(105,127));
+		setWidgetIsHidden(true, new WidgetPointer(105,154));
+		setWidgetIsHidden(true, new WidgetPointer(105,188));
+		setWidgetIsHidden(true, new WidgetPointer(105,193));
+		setWidgetIsHidden(true, new WidgetPointer(105,197));
+	}
+	return;
+}

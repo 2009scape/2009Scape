@@ -1,0 +1,43 @@
+void script_4549() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = -1;
+	ivar1 = -1;
+	ivar2 = -1;
+	if (cs2method3751()) {
+		ivar0 = cs2method3760(cs2method5015());
+		if (ivar0 == -1) {
+			return;
+		}
+		ivar1 = cs2method3757(ivar0);
+		ivar2 = cs2method3753();
+	} else {
+		messageType0("You must be in a clan to do that.");
+	}
+	if (ivar1 >= 0) {
+		if (ivar1 < ivar2) {
+			return;
+		}
+		if (((boolean)globalint_1413)) {
+			return;
+		}
+		if (((boolean)globalint_11)) {
+			script_675();
+		}
+		if (getDisplayMode() >= 2) {
+			setWidgetIsHidden(false, new WidgetPointer(746,73));
+		}
+		setWidgetIsHidden(false, new WidgetPointer(752,3));
+		setWidgetIsHidden(true, new WidgetPointer(752,7));
+		setWidgetIsHidden(true, new WidgetPointer(752,8));
+		setWidgetText(new WidgetPointer(752,4), "Enter the player to ban from the channel:");
+		globalint_5 = 16;
+		script_1564("");
+		setScriptCallOnMousePressed(-1, "", new WidgetPointer(752,3));
+		script_2026();
+		setScriptCallOnKeyPress(112, -2147483640, false, "iz", new WidgetPointer(752,5));
+		script_1188();
+	}
+	return;
+}

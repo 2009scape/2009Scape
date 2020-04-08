@@ -1,0 +1,20 @@
+void script_4234(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	ivar5 = 0;
+	ivar6 = divide(65353, arg4);
+	ivar5 = max(0, subtract(arg4, subtract(getClientCycle(), arg3)));
+	if ((ivar5 >= divide(arg4, 2)) && (ivar5 <= arg4)) {
+		cs2method2106(min(multiply(ivar5, ivar6), 65353), new WidgetPointer(arg2));
+		cs2method2106(0, new WidgetPointer(arg1));
+	} else if ((ivar5 > 0) && (ivar5 < divide(arg4, 2))) {
+		cs2method2106(32768, new WidgetPointer(arg2));
+		cs2method2106(min(add(32768, multiply(ivar5, ivar6)), 65353), new WidgetPointer(arg1));
+	} else {
+		cs2method2106(32768, new WidgetPointer(arg2));
+		cs2method2106(32768, new WidgetPointer(arg1));
+		setScriptCallOnClickContextMenu(4233, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), arg4, "IIIi", new WidgetPointer(arg0));
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+	}
+	return;
+}

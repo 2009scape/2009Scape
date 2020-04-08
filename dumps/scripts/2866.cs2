@@ -1,0 +1,18 @@
+int script_2866(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar2 = subtract(extractX(arg0), extractX(arg1));
+	if (ivar2 < 0) {
+		ivar2 = multiply(ivar2, -1);
+	}
+	ivar3 = subtract(extractY(arg0), extractY(arg1));
+	if (ivar3 < 0) {
+		ivar3 = multiply(ivar3, -1);
+	}
+	if (ivar2 > ivar3) {
+		return ivar2;
+	}
+	return ivar3;
+}

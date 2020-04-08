@@ -1,0 +1,21 @@
+cs2func_script_5175_struct(2,0,0) script_5175(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = -1;
+	while (ivar1 <= 428) {
+		ivar4 = cs2method_3408(105, 74, 3483, ivar1);
+		if ((getOtherCommonData(ivar4, 1267) == arg0) && ((boolean)getOtherCommonData(ivar4, 1322))) {
+			ivar3 = add(ivar3, 1);
+			if (script_3227(ivar1) == 2) {
+				ivar2 = add(ivar2, 1);
+			}
+		}
+		ivar1 = add(ivar1, 1);
+	}
+	return newstruct cs2func_script_5175_struct(ivar2, ivar3);
+}

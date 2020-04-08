@@ -1,0 +1,34 @@
+void script_111() {
+	if (((boolean)globalint_1413)) {
+		return;
+	}
+	if (((boolean)globalint_11)) {
+		script_675();
+	}
+	if (getDisplayMode() >= 2) {
+		setWidgetIsHidden(false, new WidgetPointer(746,73));
+	}
+	setWidgetIsHidden(false, new WidgetPointer(752,3));
+	setWidgetIsHidden(true, new WidgetPointer(752,7));
+	setWidgetIsHidden(true, new WidgetPointer(752,8));
+	setWidgetText(new WidgetPointer(752,4), "Enter the player name whose channel you wish to join:");
+	globalint_5 = 10;
+	script_1564("");
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(752,3));
+	script_2026();
+	setScriptCallOnKeyPress(112, -2147483640, false, "iz", new WidgetPointer(752,5));
+	createExtraChild(new WidgetPointer(752,3), 4, 0);
+	script_2752();
+	if (((boolean)globalint_1027) && (strLength(globalstring_202) > 0)) {
+		setWidgetText("Last name entered: " + globalstring_202);
+	} else {
+		globalstring_202 = strRemoveEntities(cs2method5015());
+		globalint_1027 = 1;
+		setWidgetText("Your name: " + globalstring_202);
+	}
+	setWidgetContextMenuOption(1, "Use:");
+	cs2method1305("<col=ff9040>" + strRemoveEntities(globalstring_202) + "</col>");
+	setScriptCallOnClickContextMenu(2753, globalint_5, -2147483644, new WidgetPointer(-32768,3), -2147483643, globalstring_202, "iiIis");
+	script_1188();
+	return;
+}

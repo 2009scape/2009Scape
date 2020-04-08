@@ -1,0 +1,8 @@
+void script_4182() {
+	setWidgetText(new WidgetPointer(1072,53), intToStr(bitconfig_8857) + "/" + intToStr(4000));
+	setWidgetText(new WidgetPointer(1072,57), intToStr(bitconfig_8859) + "/" + intToStr(4000));
+	setWidgetText(new WidgetPointer(1072,61), intToStr(bitconfig_8862) + "/" + intToStr(4000));
+	setWidgetText(new WidgetPointer(1072,65), intToStr(bitconfig_8863) + "/" + intToStr(4000));
+	setWidgetText(new WidgetPointer(1072,49), intToStr(bitconfig_8865) + "/" + intToStr(8000));
+	return;
+}

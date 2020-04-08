@@ -1,0 +1,10 @@
+void script_4257(int arg0) {
+	if (setWidgetRegister(new WidgetPointer(arg0))) {
+		setWidgetPosition(0, 0, 1, 1);
+		setWidgetSize(16, 15, 0, 0);
+		setWidgetSprite(5450);
+		setScriptCallOnClickContextMenu(29, "");
+		setWidgetContextMenuOption(1, "Close");
+	}
+	return;
+}

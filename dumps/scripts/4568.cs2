@@ -1,0 +1,46 @@
+int script_4568(int arg0,int arg1,int arg2,string arg3,string arg4,string arg5) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	ivar3 = getWidgetActualWidth(new WidgetPointer(589,23));
+	ivar4 = multiply(max(getLineCount(ivar3, 494, arg3), 1), 15);
+	createExtraChild(new WidgetPointer(589,23), 4, arg0);
+	setWidgetPosition(0, multiply(arg0, 15), 0, 2);
+	setWidgetSize(0, ivar4, 1, 0);
+	setWidgetRGB(new Color(255, 255, 255));
+	setWidgetFont(494);
+	setWidgetText(arg3);
+	setWidgetTextAlignment(0, 0, 15);
+	ivar5 = 0;
+	ivar6 = 0;
+	while (ivar6 < arg0) {
+		if (setWidgetRegister(new WidgetPointer(589,23), ivar6)) {
+			ivar5 = add(ivar5, getWidgetActualHeight());
+		}
+		ivar6 = add(ivar6, 1);
+	}
+	setWidgetPosition(0, ivar5, 0, 2);
+	if (((boolean)arg1)) {
+		cs2method1305(strRemoveEntities(arg4));
+		setScriptCallOnClickContextMenu(4569, -2147483644, arg4, arg5, "iss");
+		switch (arg2) {
+			case 9:
+			case 20:
+				if (stringMethod4107(strRemoveEntities(cs2method5020()), strRemoveEntities(arg5)) != 0) {
+					if (isFriend(strRemoveEntities(arg5)) && cs2method3623(strRemoveEntities(arg5))) {
+						setWidgetContextMenuOption(1, "Add friend");
+						setWidgetContextMenuOption(2, "Add ignore");
+					} else {
+						if (isFriend(strRemoveEntities(arg5)) && cs2method6900()) {
+							setWidgetContextMenuOption(3, "Message");
+						}
+					}
+					if (((boolean)script_1891())) {
+						setWidgetContextMenuOption(10, "Kick/ban");
+					}
+				}
+		}
+	}
+	return add(arg0, 1);
+}

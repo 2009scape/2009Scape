@@ -1,0 +1,9 @@
+int script_2808(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	ivar3 = addToCoordinate(0, multiply(8, divide(extractX(arg1), 8)), extractZ(arg1), multiply(8, divide(extractY(arg1), 8)));
+	ivar4 = subtract(extractX(arg2), extractX(ivar3));
+	ivar5 = subtract(extractY(arg2), extractY(ivar3));
+	return addToCoordinate(arg0, ivar4, 0, ivar5);
+}

@@ -1,0 +1,24 @@
+int script_2868(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 0;
+	ivar8 = 0;
+	ivar3 = extractX(arg1);
+	ivar4 = extractX(arg2);
+	ivar5 = extractY(arg1);
+	ivar6 = extractY(arg2);
+	ivar8 = extractX(arg0);
+	ivar7 = extractY(arg0);
+	if (((ivar8 <= ivar4) && (ivar8 >= ivar3)) && ((ivar7 <= ivar6) && (ivar7 >= ivar5))) {
+		return 1;
+	}
+	return 0;
+}

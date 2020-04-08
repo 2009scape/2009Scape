@@ -1,0 +1,10 @@
+void script_1700() {
+	if (((boolean)globalint_1052)) {
+		setWidgetText(new WidgetPointer(271,12), "Hide stat adjustments.");
+		setWidgetContextMenuOption(1, new WidgetPointer(271,12), "Hide stat adjustments");
+	} else {
+		setWidgetText(new WidgetPointer(271,12), "Show stat adjustments.");
+		setWidgetContextMenuOption(1, new WidgetPointer(271,12), "Show stat adjustments");
+	}
+	return;
+}

@@ -1,0 +1,6 @@
+void script_2503() {
+	if ((globalint_837 > 0) && (globalint_837 <= 9)) {
+		setWidgetText(new WidgetPointer(291,33), cs2method_3408(105, 115, 2403, globalint_837));
+	}
+	return;
+}

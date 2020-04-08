@@ -1,0 +1,11 @@
+int script_4761(int arg0) {
+	if (globalint_1 < add(getClientCycle(), arg0)) {
+		if (globalint_1 < getClientCycle()) {
+			globalint_1 = getClientCycle();
+		}
+		globalint_1 = add(globalint_1, 2);
+		return 0;
+	}
+	globalint_1 = add(add(getClientCycle(), arg0), 10);
+	return 1;
+}

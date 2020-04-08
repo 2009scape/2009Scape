@@ -1,0 +1,7 @@
+int script_5183(int arg0,int arg1,int arg2,int arg3) {
+	standart_config_2347 = arg0;
+	bitconfig_9642 = min(63, max(0, add(bitconfig_9642, arg1)));
+	bitconfig_9643 = min(7, max(0, add(bitconfig_9643, arg2)));
+	bitconfig_9644 = min(127, max(0, add(bitconfig_9644, arg3)));
+	return standart_config_2347;
+}

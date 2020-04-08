@@ -1,0 +1,12 @@
+void script_599() {
+	if (((boolean)standart_config_1113)) {
+		if (globalint_84 <= 2147483637) {
+			globalint_84 = add(globalint_84, 10);
+		}
+	} else {
+		globalint_84 = 10;
+	}
+	setWidgetText(new WidgetPointer(105,148), formatNumber(globalint_84, 1));
+	script_602();
+	return;
+}

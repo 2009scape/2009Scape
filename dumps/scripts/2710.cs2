@@ -1,0 +1,56 @@
+void script_2710(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	int ivar6;
+	int ivar7;
+	int stack_dump0;
+	cs2func_script_1239_struct(2,0,0) structdump_1;
+	cs2method2103(0, new WidgetPointer(arg2));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(arg2));
+	setWidgetIsHidden(false, new WidgetPointer(arg2));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+	setScriptCallOnMinimapRelatedSetting3(-1, "", new WidgetPointer(arg0));
+	setWidgetIsHidden(true, new WidgetPointer(arg0));
+	cs2method6021(true);
+	cs2method6035(true);
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(arg1));
+	setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(arg1));
+	cs2method2103(0, new WidgetPointer(arg1));
+	setWidgetIsHidden(false, new WidgetPointer(arg1));
+	if (((boolean)globalint_994)) {
+		globalint_986 = 1;
+	} else {
+		if (globalint_994 != 2) {
+			if (getBenchmarkToolkit() > 400) {
+				globalint_994 = 1;
+				globalint_986 = 1;
+				if (getDisplayMode() > 1) {
+					cs2method5307(1);
+				}
+				if (cs2method5308() > 1) {
+					cs2method5309(1);
+				}
+			} else {
+				globalint_994 = 2;
+			}
+		}
+	}
+	setScriptCallOnMousePressed(2713, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), "IIIIII", new WidgetPointer(arg3));
+	setScriptCallOnMouseOver(2961, new WidgetPointer(arg4), new WidgetPointer(arg5), 1, "II1", new WidgetPointer(arg3));
+	setScriptCallOnMouseExit(2961, new WidgetPointer(arg4), new WidgetPointer(arg5), 0, "II1", new WidgetPointer(arg3));
+	globalint_986 = 1;
+	if (((boolean)globalint_986)) {
+		setWidgetSprite(2700, new WidgetPointer(arg4));
+		return;
+	}
+	ivar6 = -1;
+	ivar7 = 0;
+	stack_dump0 = 0;
+	structdump_1 = script_1239(stack_dump0);
+	ivar7 = structdump_1.intpart_1;
+	ivar6 = structdump_1.intpart_0;
+	cameraMoveTo(ivar6, 1000, 100, 100);
+	cameraPointAt(ivar6, 0, 100, 100);
+	setWidgetSprite(2703, new WidgetPointer(arg4));
+	globalint_177 = add(add(getClientCycle(), 30), 30);
+	setScriptCallOnGameloop(2712, new WidgetPointer(arg0), new WidgetPointer(arg2), new WidgetPointer(arg1), "III", new WidgetPointer(arg2));
+	return;
+}

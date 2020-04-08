@@ -1,0 +1,14 @@
+void script_1458(int arg0) {
+	int ivar1;
+	ivar1 = multiply(divide(arg0, 10), 44);
+	if (mod(arg0, 10) != 0) {
+		ivar1 = add(ivar1, 44);
+	}
+	setWidgetScrollMax(getWidgetActualWidth(new WidgetPointer(762,93)), ivar1, new WidgetPointer(762,93));
+	deleteAllExtraChilds(new WidgetPointer(762,114));
+	if (ivar1 > getWidgetActualHeight(new WidgetPointer(762,93))) {
+		script_31(49938546, 49938525, 792, 789, 790, 791, 773, 788);
+	}
+	script_157(49938546, 49938525, cs2method2601(new WidgetPointer(762,93)), 1);
+	return;
+}

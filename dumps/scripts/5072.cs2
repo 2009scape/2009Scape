@@ -1,0 +1,6 @@
+void script_5072(int arg0) {
+	playSoundEffect2False(6185, 1, 0, 200);
+	script_5073(arg0);
+	script_5067();
+	return;
+}

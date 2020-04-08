@@ -1,0 +1,20 @@
+void script_5346(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = 74907756;
+	ivar2 = getWidgetShadeColor(new WidgetPointer(ivar1));
+	if (((boolean)arg0)) {
+		ivar2 = min(add(ivar2, 1), 255);
+		cs2method2103(ivar2, new WidgetPointer(ivar1));
+		if (ivar2 == 255) {
+			setScriptCallOnGameloop(5346, 0, "1", new WidgetPointer(ivar1));
+		}
+	} else {
+		ivar2 = max(subtract(ivar2, 1), 0);
+		cs2method2103(ivar2, new WidgetPointer(ivar1));
+		if (((boolean)ivar2)) {
+			setScriptCallOnGameloop(5346, 1, "1", new WidgetPointer(ivar1));
+		}
+	}
+	return;
+}

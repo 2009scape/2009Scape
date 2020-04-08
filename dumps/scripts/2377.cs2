@@ -1,0 +1,14 @@
+void script_2377(int arg0,int arg1,int arg2) {
+	if (((boolean)arg0)) {
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(arg1));
+		setWidgetUnknownBoolean(true, new WidgetPointer(arg1));
+		setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(arg2));
+		setWidgetUnknownBoolean(false, new WidgetPointer(arg2));
+	} else {
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(arg2));
+		setWidgetUnknownBoolean(true, new WidgetPointer(arg2));
+		setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(arg1));
+		setWidgetUnknownBoolean(false, new WidgetPointer(arg1));
+	}
+	return;
+}

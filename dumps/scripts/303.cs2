@@ -1,0 +1,9 @@
+void script_303(int arg0,int arg1) {
+	playSoundEffect(2266, 1, 0);
+	if (((boolean)arg1)) {
+		cs2method5214(arg0);
+	} else {
+		cs2method5221(arg0);
+	}
+	return;
+}

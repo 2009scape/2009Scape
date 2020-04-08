@@ -1,0 +1,159 @@
+void script_429(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	flow_0:
+		ivar1 = 0;
+		ivar2 = 0;
+		ivar3 = -1;
+		ivar4 = -1;
+		ivar5 = -1;
+		ivar6 = -1;
+		ivar7 = 0;
+		ivar8 = -1;
+		SWITCH (arg0) {
+			case 67108940:
+				 GOTO flow_1
+			case 67108942:
+				 GOTO flow_1
+			case 67108925:
+				 GOTO flow_5
+			case 67108923:
+				 GOTO flow_5
+			case 67108908:
+				 GOTO flow_9
+			case 67108906:
+				 GOTO flow_9
+			case 67108889:
+				 GOTO flow_13
+			case 67108891:
+				 GOTO flow_13
+		}
+		return;
+	flow_1:
+		if (((boolean)globalint_1388)) {
+			ivar1 = 1;
+		} else {
+			ivar1 = bitconfig_7539;
+		}
+		ivar3 = 67108941;
+		ivar4 = 67108943;
+		ivar5 = 67108939;
+		ivar6 = 67108940;
+		ivar8 = 67108942;
+		GOTO	flow_17
+	flow_5:
+		if (((boolean)globalint_1388)) {
+			ivar1 = 3;
+		} else {
+			ivar1 = bitconfig_7540;
+		}
+		ivar3 = 67108924;
+		ivar4 = 67108926;
+		ivar5 = 67108922;
+		ivar6 = 67108923;
+		ivar8 = 67108925;
+		GOTO	flow_17
+	flow_9:
+		if (((boolean)globalint_1388)) {
+			ivar1 = 5;
+		} else {
+			ivar1 = bitconfig_7541;
+		}
+		ivar3 = 67108907;
+		ivar4 = 67108909;
+		ivar5 = 67108905;
+		ivar6 = 67108906;
+		ivar8 = 67108908;
+		GOTO	flow_17
+	flow_13:
+		if (((boolean)globalint_1388)) {
+			ivar1 = 6;
+		} else {
+			ivar1 = bitconfig_7542;
+		}
+		ivar3 = 67108890;
+		ivar4 = 67108892;
+		ivar5 = 67108888;
+		ivar6 = 67108889;
+		ivar8 = 67108891;
+	flow_17:
+		SWITCH (ivar1) {
+			case 1:
+				 GOTO flow_18
+			case 2:
+				 GOTO flow_19
+			case 3:
+				 GOTO flow_20
+			case 4:
+				 GOTO flow_21
+			case 5:
+				 GOTO flow_22
+			case 6:
+				 GOTO flow_23
+			case 7:
+				 GOTO flow_24
+			case 8:
+				 GOTO flow_25
+			case 9:
+				 GOTO flow_26
+		}
+		return;
+	flow_18:
+		ivar2 = globalint_1378;
+		ivar7 = getOtherCommonData(293, 1154);
+		GOTO	flow_27
+	flow_19:
+		ivar2 = globalint_1379;
+		ivar7 = getOtherCommonData(299, 1154);
+		GOTO	flow_27
+	flow_20:
+		ivar2 = globalint_1380;
+		ivar7 = getOtherCommonData(300, 1154);
+		GOTO	flow_27
+	flow_21:
+		ivar2 = globalint_1386;
+		ivar7 = getOtherCommonData(301, 1154);
+		GOTO	flow_27
+	flow_22:
+		ivar2 = globalint_1381;
+		ivar7 = getOtherCommonData(305, 1154);
+		GOTO	flow_27
+	flow_23:
+		ivar2 = globalint_1383;
+		ivar7 = getOtherCommonData(1044, 1154);
+		GOTO	flow_27
+	flow_24:
+		ivar2 = globalint_1384;
+		ivar7 = getOtherCommonData(1045, 1154);
+		GOTO	flow_27
+	flow_25:
+		ivar2 = globalint_1385;
+		ivar7 = getOtherCommonData(1046, 1154);
+		GOTO	flow_27
+	flow_26:
+		ivar2 = globalint_1382;
+		ivar7 = getOtherCommonData(1047, 1154);
+	flow_27:
+		if ((ivar2 > 0) || (bitconfig_7514 < ivar7)) {
+			if (ivar2 > 0) {
+				setWidgetText(new WidgetPointer(ivar8), intToStr(ivar2));
+			}
+			setWidgetRGB(new Color(40, 40, 40), new WidgetPointer(ivar3));
+			setWidgetIsHidden(false, new WidgetPointer(ivar4));
+			setWidgetRGB(new Color(125, 125, 125), new WidgetPointer(ivar5));
+			setWidgetRGB(new Color(125, 125, 125), new WidgetPointer(ivar6));
+		} else {
+			setWidgetText(new WidgetPointer(ivar8), "");
+			setWidgetRGB(new Color(0, 0, 0), new WidgetPointer(ivar3));
+			setWidgetIsHidden(true, new WidgetPointer(ivar4));
+			setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(ivar5));
+			setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(ivar6));
+		}
+		return;
+}

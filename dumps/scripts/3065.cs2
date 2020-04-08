@@ -1,0 +1,5 @@
+void script_3065(int arg0) {
+	script_3066(globalint_998, 1, 59375792, 59375794, arg0);
+	script_3066(globalint_999, 2, 59375793, 59375795, arg0);
+	return;
+}

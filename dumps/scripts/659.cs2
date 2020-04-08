@@ -1,0 +1,15 @@
+void script_659(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,int arg11,string arg12,string arg13) {
+	if (setWidgetRegister(new WidgetPointer(662,74), 0)) {
+		setScriptCallOnUse(657, new WidgetPointer(-32768,3), "I");
+		setScriptCallOnUseWith(658, new WidgetPointer(-32768,3), "I");
+		setScriptCallOnItemContainerUpdate(660, new WidgetPointer(662,74), new WidgetPointer(arg0), arg1, arg2, arg3, arg12, arg13, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, 93, 1, "IIddissoioioioiY");
+		setScriptCallOnSkillChange(660, new WidgetPointer(662,74), new WidgetPointer(arg0), arg1, arg2, arg3, arg12, arg13, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, 23, 1, "IIddissoioioioiY");
+		setScriptCallOnConfigChange(660, new WidgetPointer(662,74), new WidgetPointer(arg0), arg1, arg2, arg3, arg12, arg13, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, 1175, 448, 2, "IIddissoioioioiY");
+		script_661(43384906, arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
+	}
+	if (setWidgetRegister(new WidgetPointer(747,17), 0)) {
+		setScriptCallOnUse(697, new WidgetPointer(747,6), "I");
+		setScriptCallOnUseWith(698, new WidgetPointer(747,6), "I");
+	}
+	return;
+}

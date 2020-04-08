@@ -1,0 +1,1700 @@
+0: Green blob shattering
+1: single dragon breath
+2: steel pickaxe
+3: lumber
+4: delright when defeated
+5: Cyan/blue/green flames
+6: rainbow ring goes upwards
+7: spiraling rainbow
+8: vines like at draynor manner ( they atk you )
+9: Iron arrow on ground
+10: Bronze arrow on ground
+11: Steel arrow on ground
+12: Mithril arrow on ground
+13: Adamant arrow on ground
+14: Mithril Grapple
+15: Rune arrow on ground
+16: Ice arrow on ground
+17: Fire arrow on ground
+18: Iron arrows draw back
+19: Bronze arrow draw back
+20: Steel arrow draw back
+21: Mith arrow draw back
+22: Addy arrow draw back
+23: Mithril Grapple
+24: Rune arrow draw back
+25: Ice arrow draw back
+26: Fire arrow draw
+27: Some type of bolt on ground
+28: Puff of smoke
+29: rotten tomatoe - projectile
+30: rotten tomatoe - throw
+31: rotten tomatoe - contact with target/White splash
+32: Tiny rock
+33: Tiny Rock
+34: Black dart on ground
+35: Iron throw axe
+36: Bronze throw axe
+37: Steel throwing axe
+38: Mith throwing axe
+39: Addy throwing axe
+40: Puff of red smoke
+41: Rune throwing axe
+42: Iron throwing axe
+43: Bronze throwing axe
+44: Steel throwing axe
+45: Mithril throwing axe
+46: Adamant throwing axe
+47: Green puff of smoke
+48: Rune throwing axe
+49: Spinning Vial
+50: Moving Vial
+51: Spinning exploding vial?
+52: Moving exploding vial?
+53: Boulder/stone
+54: Giant orange blast
+55: Gnome ball projectile
+56: Yellow puff of smoke
+57: Rope
+58: Ball of lava
+59: Nothing
+60: Falling rocks
+61: Nothing
+62: Nothing
+63: Nothing
+64: Nothing
+65: Spinning blue circles
+66: Spinning brown circles
+67: Rope going across river/long rope/pole shooting
+68: huge water splash
+69: huge water splash
+70: Grey boulder/stone
+71: Earth blast
+72: Seagull/bird flying over you
+73: Mud particles?
+74: Random event/puff of smoke
+75: Purple spikes
+76: Saradomin strike
+77: Claws of Guthix
+78: Flames of Zamorak
+79: 3 green blobs floating up
+0: 'stun' birdies above head
+81: bull roarer ( from legends quest )
+82: two purple squiggles in front of you, like what the spinners do in pest control
+83: giant tentical - blood red
+84: stars around you - monks healing
+85: magic spell splash
+86: puff of smoke, whan a random appears \ disapears
+87: Iban's blast
+88: iban blast - projectile skull
+89: iban blast - contact with target
+90: Weird tiny rocks (citadel teaser?)
+91: Tier 3 Duelist Cap (blue skulls)
+92: Tier 6 Duelist Cap (blue skulls/ghost)
+93: Blue spirals
+94: Blue spirals with yellow sparkles/stars
+95: Guthix Arrow drawback
+96: Saradomin Arrow drawback
+97: Zamorak Arrow drawback
+98: Guthix Arrow projectile
+99: Saradomin Arrow projectile
+100: Zamorak Arrow projecile
+101: Bat staff emote
+102: confuse cast
+103: confuse projectile
+104: confuse impact
+105: Weaken cast
+106: Weaken projectile
+107: Weaken impact
+108: Curse cast
+109: Curse projectile
+110: Curse impact
+111: Brown spiral
+112: Low alchemy
+114: enchant low level necklace
+115: enchant medium level necklace
+116: enchant high level necklace
+117: Cat staff emote
+118: Dragon staff emote
+119: Penguin staff emote
+120: Wolf staff emote
+121: Windstalker tier 5 (duelist stuff)
+122: Windstalker tier 6
+123: Blue stuff
+124: Double Guthix Arrow drawback
+125: Double Saradomin Arrow drawback
+126: Double Zamorak Arrow drawback
+127: Green points spiraling upwards (Guthix)
+128: Blue points spiraling upwards (Saradomin)
+129: Red points spiraling upwards (Zamorak)
+130: Shaking and breaking mysterious box (quest box from Falador)
+131: Shaking mysterious box (quest box from Falador)
+132: Clan citadel falling rock teaser
+133: Lot of purple/pink circles that glow
+134: Lightening and a purple/pink circle
+135: Projectile for purple/pink circle thing
+136: Lightening and a purple/pink circle
+137: Rope
+138: Rope
+139: Prayer book
+140: Prayer book projectile
+141: Bones to Bananas
+142: Telegrab cast
+143: Telegrab projectile
+144: Telegrab impact
+145: Crumble Undead cast
+146: Crumble Undead projectile
+147: Crumble Undead impact
+148: Super heat
+149: Powering water orb
+150: Powering air orb
+151: Powering earth orb
+152: Powering fire orb
+153: Enchant necklace - 1 glow 
+154: Enchant necklace - 2 glow
+155: Gold star sparkles
+156: Prayer book
+157: Prayer book projectile
+158: Blue sparkles/puff of smoke, delay of about 4-5 secs
+159: Prayer book
+160: Prayer book projectile
+161: Continuous splashes of sparkles/puffs of smoke, looks like water
+162: Prayer book
+163: Prayer book projectile
+164: Blue sparkles/puff of smoke
+165: Blue sphear with lightening?
+166: Blue sphear with lightening, eventually popping
+167: Vulnerability cast
+168: Vulnerability projectile
+169: Vulnerability impact
+170: Enfeeble cast
+171: Enfeeble projectile
+172: Enfeeble impact
+173: Stun cast
+174: Stun projectile
+175: Tiny rock/stone splitting/breaking
+176: Vial with red thing?
+177: Bind/Snare/Entangle cast
+178: Bind/Snare/Entangle projectile
+179: Entangle impact
+180: Snare impact
+181: Bind impact
+182: Spear projectile - giant gnome cross-bow
+183: Spear shattering - giant gnome cross-bow
+184: Puff of smoke
+185: Shooting star
+186: runecrafting graphic
+187: claws of guthix - yellow o.O
+188: big puff of smoke, fatter lol
+189: small puff of smoke, old detail
+190: Blues splashes of something
+191: massive teleport above head, round
+192: enchanted vial - projectile
+193: enchanted vial - pre-launch
+194: BLACK SPELL - pre-launch
+195: BLACK SPELL - projectile
+196: BLACK SPELL - contact
+197: Purple fire with orange flames
+198: big blue and white wave spell contact
+199: Fireworks ( when a lvl is gained )
+200: Bronze Javalin
+201: Iron Javalin on ground
+202: Steel Javalin on ground
+203: Mithril Javalin on ground
+204: Adamant Javalin on ground
+205: Rune Javalin on ground
+206: Bronze Javalin throw
+207: Iron Javalin throw
+208: Steel Javalin throw
+209: Mithril Javalin throw
+210: Adamant Javalin throw
+211: Rune Javalin throw
+212: Bronze knife on ground
+213: Iron knife on ground
+214: Steek knife on ground
+215: black knife on ground
+216: Mithril knife on ground
+217: Adamant knife on ground
+218: Rune knife on ground
+219: Nothing
+220: Nothing
+221: Nothing
+222: Nothing
+223: Nothing
+224: Nothing
+225: Nothing
+226: Bronze dart on ground
+232-237: throwing darts graphics
+238: enchant ring
+239: barrel falling apart
+240: exploding toad
+241: filling toad with bellows
+243: giant ogre arrow - draw back
+244: elemental shield appearing
+245: birdies above head
+246: Dragon Battle Axe special (Original Animation)
+247: blue purple glow - sara - Excaliber Special
+248: Dragon Longsword SPECIAL
+250: Magic Longbow SPECIAL
+251: Dragon Mace SPECIAL
+252: Dragon Dagger SPECIAL
+253: Dragon Spear SPECIAL
+254: Stun birdies again, from dragon spear special
+255: green protection graphic - from morytania swamps
+256: Magic Shortbow SPECIAL
+257: steel throwing axe - different attack mode
+258: Throwing Axe SPECIAL
+259: same as 255
+263: smalls stars - silver sickle(b)
+264: smalls stars 2 - silver sickle(b)
+265: white ghost flys in air - ghasts - morytania swamps
+266: big green blast - ghasts - morytania swamps
+267: bright green puff of stuff
+268: projectile - ghast atk's and you have a pouch - pouch attacks
+269: first contact - goes with above
+270: karamja agility course - poison darts
+271: karamja agility course - falling rocks
+274: Rune Claw SPECIAL
+275: big rock flying away? o.O
+277: "Zzz" l0l above your head
+278: huge blue jaws in front - like bug jaws
+279: small blue jaws above head - like bug
+280: small white star projectile - like weaken ( instead of purple its white )
+281: small white star contact - same as above
+282: Dragon Halberd SPECIAL - in front
+283: Dragon Halberd SPECIAL - behind you o.O
+284: Dragon Halberd SPECIAL - to your left
+285: Dragon Halberd SPECIAL - to your right
+286: big tar barrel - steaming
+287: big tar barrel - EXPLOSION - awsomenesssss
+291: more birdies
+292: dim'ish flames of zammy
+293: white ghost body - goes spread eagle - fades away
+301: light teleport graphic
+302: rocks falling on head
+303: medium sized stone falling down on head
+305: dark grey and greenish blast - ew
+306: Dragon Dagger SPECIAL - in PURPLE - pimp
+307: Completionist cape start
+308: teleport graphic
+309: spinning steel pickaxe
+310: dust cloud around head
+311: two blood red orbs go up then combine, almost like bones to bananas
+325: broad arrow drawback
+327: white stuff *looks like dandrif* falls out of air
+328: slayer dart - projectile
+329: slayer dart - contact
+330: slayer dart - projectile - slightly better looking
+331: slayer dart - contact - same as above - slight color change
+332: Purple portal glow
+333: redish looking special att thing that is all around you and rises into the air?
+334: small green glow
+335: medium green glow
+336: large green glow
+337: white bar or something goes through you?
+338: stick goes in air and falls
+339: big splash - magic spell failure
+340: Granite Maul special
+341: Abyssal Whip SPECIAL
+342: Teleother - person accepts teleport
+343: Teleother - person casts on another player
+344: Teleblock - Projectile
+345: Teleblock - Contact on target
+346: um.. fire blast with a ring around it?
+347: Dragon Scimitar SPECIAL
+348: once again.. birdies
+349: "Zzz" tired thing
+350: Flock of black birds
+351: zombie jumps in the air and lands and looks forward
+352: zombie laying down - jumps up - lands and looks forward
+353: white transparent cylinder above head
+354: two puffs of smoke above head, join together and go down body
+358: Breathe fire
+359: huge air wave - contact
+360-361: Ancients - Ice Rush
+362-363: Ancients - Ice Burst
+364: Snow emote
+365: Storm emote
+366-368: Ancients - Ice Blitz
+369: Ancients - Ice barrage (normal)
+370: Ancients - Ice barrage (huge)
+373-377: Ancients - Blood Spells
+378-382: Ancients - Shadow Spells
+383-391: Ancients - Smoke Spells
+392: Ancients - Teleport
+393: KBD: red projectile
+394: KBD: green projectile
+395: KBD: white projectile
+396: KBD: blue projectile
+398: Guthan Special
+399: Torags Special
+400: Ahrims Special
+401: Karils Special
+402: green puff of smoke
+405: dark green rocks falling
+406: Huge rock falls on you
+409: Abyssal demons teleport
+410: small water drops
+412: Big Apple barrel lol
+413: Big Rotten Apple barrel
+414: Big Apple barrel turns turns to mush
+415: Big rotten apple barrel turns to much
+416: Toad floating and spinning
+417: toad exploding
+418: blue toad floading a spinning
+419: blue toad exploding
+420: red toad spinning
+421: red toad exploding
+422: yellow toad spinning
+423: yellow toad exploding
+424: green toad spinning
+425: green toad exploding
+426: Stars spinning around head
+427: something exploding, small peices
+429: small bright green spell contact?
+430: small bright red spell contact
+431: small white spell contact
+432: skeleton dying - bank robbery vid
+433: old mans spell - bank robbery vid
+434: old mans spell - same as above
+435: old mans spell - same as above
+436: Redemption prayer
+437: Retribution prayer
+438: miniature dragon fire breath - sprays on your ass
+439: miniature dragon fire breath - sprays out of cock
+440: KBD - Big red ball
+441: Retribution - going upward
+442: Toktz-xil-ul( obby rings ) - projectile
+444: Healing graphic from a monster in fight pits
+445: 3 small fire gets shotting backward
+446: fire coming down from sky ( not as exciting as you think )
+447: another cock blast
+448: meteorite shotting forward
+449: smaller fireball directed forward
+450: even smaller fireball going forward
+451: big meteorite crashing down on you
+452: Onyx Ammy Enchanting?
+453: fire
+454: scanning area - from that quest
+455: Ancients - Backwards Teleport
+456: small splash
+457-464: Butter churns lol
+465: Huge North star-looking thing blinks above head
+466: zombie (splitting in half)
+467: zombie (head falls off)
+468: releasing inner zombie
+469: steam out of ears
+470: small puddle thing
+472: Bow special - WHITE?
+473: Sparkling spinning arrow tip
+474: colorless fireworks heading towards ground?
+479: Dragon Hatchet special
+480: big north star thing again
+481: awsome red shock wave under
+482: red rings around you
+483: Dark Light special
+486: bunny?
+492: red starts spinning under you
+497: two balls of fire on each side of you
+498: big ball of fire under you
+500: projectile water blast
+502: water bolt contact
+503: graphic from abyss thing
+504: same as above
+505: pink blast under you
+506: bones to bananas graphic i think
+507: Jump marionette: red
+508: Walk marionette: red
+509: Bow marionette: red
+510: Dance marionette: red
+511: Jump marionette: blue
+512: Walk marionette: blue
+513: Bow marionette: blue
+514: Dance marionette: blue
+515: Jump marionette: green
+516: Walk marionette: green
+517: Bow marionette: green
+518: Dance marionette: green
+519: in a door way
+520: bones drop on you
+524: white spikey ball under you?
+521: Same As 520 Dif Color Bones
+522: Same As 520, 521 Dif Color Bones
+523: Same As 520, 521, 522, Dif Color Bones
+524: White Spike Ball Pops
+536: entering clan citadel blue portal 
+537: Smoke Projectile <Ancients>
+538: Smoke Rize <Ancients>
+539: Ice Block <Ancients>
+540: Smoke Rize?? <Ancients?>
+541: Green Splash <Small>
+542: Explosion
+545: Barrow With A Lit Fuze
+546: Fuze Lit
+547: Barrow Explode
+548: tiny white feather?
+549: tiny white feather?
+550: Green Balls...
+551: Green Balls Spin
+552: Green Balls Sonicly Explode
+553: Red 550
+554: Red Flying
+555: Nothing
+556: MultiColors
+557: MultiColors 2
+558: MultiColors 3
+559: Blood Spell Finish <Ancients?>// dragon 2h special
+560: Skeleton Chained Up?
+563: Roasting Chicken On Rotater Over Fire
+566: Roasting Pig Same As 563
+567: Smoke Cloud
+568: Flowers above head
+569: Flowers Around Player
+570: Rolling Rock
+571: Buncha Smoke Brown Colored
+572: Hole opens In Ground
+573: 572 shorter
+574: Heart
+575: Blue Sparkles Everywhere
+576: Black Sparkles Everywhere
+577: Mushroom Dude
+578: Huge Mushroom Dude
+579: Weired Fire Ball
+580: Imp Teleport
+581: Couldren Spinning
+582: Explosion
+583: Egg? Crack Open?
+584: Egg? Lid Fall Off
+585: egg
+586: Egg lid
+587: explosion
+588: Huge Arrow?
+589: bunch of arrows stuck into you?
+590: Perminit Book
+591: Perminit Book Vanish
+592: Scroll?
+593: Flowers
+594: Jellow???
+595: IceCream Shake?
+596: Yellow Gay Thing...
+599: Bowl Of Food?
+600: Nothing
+601: White Rings
+602: Cake?
+603: White puff coming up
+604: Grey swivels
+605: Blue swivels
+606: A bit like collecting fist of guthix things
+607: Ghost flys upwards
+608: Man turns to ash
+609: Er, lantern?
+610: Jester box opening (house)
+611: Jester box closing (house)
+612: Hoops (house)
+613: white puffy slash?
+614: white balls come together
+615: Spike trap coming up (house)
+616: Snare trap coming up (house)
+617: Plant trap coming up (house)
+618: Plant trap going down (house)
+619: Plant trap struggle (house)
+620: Marbles? (lol)
+621: Marbles? (lol)
+622: Splah from falling into swamp (house)
+623: Sparkles from jester? Dunno
+624: Using bones on an altar (prayer)
+625: Puddle?
+626: Flashing portal/glow
+627: Yellow blob
+628: Nothing?
+629: Splash
+630: Nothing?
+631: Demon head lol
+632: Kenith dying (rift in varrock)
+633: Nothing?
+634: Nothing?
+635: Nothing?
+636: Nothing?
+637: Nothing?
+638: Nothing?
+639: Nothing?
+640: Nothing?
+641: Nothing?
+642: Nothing?
+643: Nothing?
+644: Nothing?
+645: Nothing?
+646: Nothing?
+647: Nothing?
+648: Nothing?
+649: Nothing?
+650: Nothing?
+651: Nothing?
+652: Nothing?
+653: Nothing?
+654: Nothing?
+655: Nothing?
+656: Nothing?
+657: Sepia line
+658: Turmoil??
+659: Explosion
+660: Explosion wire projectile
+661: wilderness obelisk teleport
+662: bubbles?
+663: black dots?
+664: pot with lid, explodes
+665: lightning?
+666: Molly machine grabber
+667: Nothing
+668: swirley grey smoke
+669: rope splitting??
+670: rope closing??
+671: glow
+672: rock falls
+673: rock falls
+674: rock falls
+675: rock falls
+676: green blob
+677: very quick black and red thing
+678: blue glow
+679: spikey ball from warriors guild catapult
+680: anvil from warriors guild catapult
+681: blades from warriors guild catapult
+682: orange ball from warriors guild catapult
+683: blue bubbles
+684: Kegs falling from failing the keg thing in warriors guild
+685: Kegs falling from failing the keg thing in warriors guild
+686: Kegs falling from failing the keg thing in warriors guild
+687: Kegs falling from failing the keg thing in warriors guild
+688: Kegs falling from failing the keg thing in warriors guild
+689: tiny puff of smoke
+690: rock.
+691: H.A.M member fading out
+692: bowl breaking
+693: zanik shooting from crate
+694: zanik's crossbow
+695: cloak with bones?
+696: bone bolt
+697: bone bolt
+698: bone bolt
+699: purple spinning balls
+700: brown spinning balls
+707: very weird smoke
+709: red monkey
+710: blue monkey
+712: light bulb/idea emote
+713: stomp emote
+715: white box with brown beads (teleport)
+721: bubble maker
+723: brain in a jar
+725: white vengeance skull
+726: red vengeance skull
+731: puff of smoke
+735: grapple
+738: vecnas skull
+739: explosion
+757: hole with zombies hands?
+760: mithril grapple
+761: clan tree marker thing disappearing
+762: clan tree marker thing appearing
+763: low alchemy by hand
+764: high alchemy by hand
+767: cactus plant thing comes up over you (teleport)
+768: grand tree pod (teleport)
+769: cactus plant thing comes up over you (teleport)
+780: dramatic point emote
+785: dark meyer quest thing, blood
+799: communicator/telecom orb thing?
+800: Home teleport circle drawing
+801: Home teleport circle finished
+802: Grab book
+803: Start Teleporting
+804: Outer rim of home port final step
+805: CRASHS CLIENT - UNKNOWN
+806: Training Bow Arrow pullback
+807: Electric chair
+808: Electric chair
+809: Elemental Shield, pulse brown
+810: Elemental Helmet, don't know brown
+811: Elemental Helmet, don't know purple
+812: Fletching Skillcape
+813: Magic Skillcape
+814: Mining  Skillcape
+815: Smithing  Skillcape
+816: Quest cape
+817: Runecrafting  Skillcape
+818: Crafting  Skillcape
+819: Fishing  Skillcape
+820: Construction  Skillcape
+821: Cooking  Skillcape
+822: Woodcutting  Skillcape
+823: Attack  Skillcape
+824: Defence  Skillcape
+825: Farming  Skillcape
+826: Thieving  Skillcape
+827: Slayer Skillcape
+828: Strength  Skillcape
+829: Prayer  Skillcape
+830: Agility Skillcape
+831: Firemaking  Skillcape
+832: Ranged  Skillcape
+833: Hitpoint  Skillcape (male)
+834: Hitpoint Skillcape (female)
+835: Herblore Skillcape
+836: Dragonplatelegs drop model
+837: Walking Troll
+838: Running Troll
+839: Spinning Vines/Bush - Tai bwo wanni cleanup maybe
+840: Spinning Rake head
+841: Dropping dirt
+842: Handing over a(n) 'Vial'
+843: Hold up, then put to side 'Vial'
+844: Dump 'Vial' contents on floor
+845: Hold up the empty 'Vial'
+846: Rake, then break the rake top, hold stick up
+847: Rake Stick, moves forward
+848: Flies, flying around head
+849: Bucket, scoops something, then vanishes
+850: Throwing Troll rock throw?
+851: Drunken Dwarf, Backflip
+852: Drunken Dwarf Backflip cont.
+853: Beer drop model
+854: Kebab drop model
+855: Dirt flies into the air
+856: Rolling boulder
+857: Boulder toss
+858: Small white water splash
+859: Rhudolf red nose (EMOTE GFX)
+860: Falling snow
+861: undescribable
+862: Snow crushes and falls
+863: Penance Healers poison smog attack
+864: Penance Healers healing smog attack
+865: Penance Rangers hit gfx/endgfx
+866: Penance Rangers projectile
+867: Green Egg explosion
+868: Red Egg explosion
+869: Blue Egg explosion
+870: Penance Queens attack projectile, purple ring
+871: Penance Queens hit gfx/endgfx
+872: Penance Queen hit gfx/endgfx cont.
+873: Green Egg splurt, when bad pickup for collector
+874: Red Egg splurt, when bad pickup for collector
+875: Blue Egg splurt, when bad pickup for collector
+876: Green Egg Explosion / Same as 867
+877: Hot Air Balloon, letting it float away, let it go
+878: Hot Air Balloon, flying
+879: Hot Air Balloon on fire, and falls
+880: Hot Air Balloon fly upwards
+881: Hot Air Balloon floating
+882: Hot Air Balloon flying, then bursts into fire and falls
+883: Yellow Hot Air Balloon fly upwards
+884: Yellow Hot Air Balloon floating
+885: Yellow Hot Air Balloon flying, then bursts into fire and falls
+886: Blue Hot Air Balloon fly upwards
+887: Blue Hot Air Balloon floating
+888: Blue Hot Air Balloon flying, then bursts into fire and falls
+889: Red Hot Air Balloon fly upwards
+890: Red Hot Air Balloon floating
+891: Red Hot Air Balloon flying, then bursts into fire and falls
+892: Orange Hot Air Balloon fly upwards
+893: Orange Hot Air Balloon floating
+894: Orange Hot Air Balloon flying, then bursts into fire and falls
+895: Green Hot Air Balloon fly upwards
+896: Green Hot Air Balloon floating
+897: Green Hot Air Balloon flying, then bursts into fire and falls
+898: Purple Hot Air Balloon fly upwards
+899: Purple Hot Air Balloon floating
+900: Purple Hot Air Balloon flying, then bursts into fire and falls
+901: Pink Hot Air Balloon fly upwards
+902: Pink Hot Air Balloon floating
+903: Pink Hot Air Balloon flying, then bursts into fire and falls
+904: Black Hot Air Balloon fly upwards
+905: Black Hot Air Balloon floating
+906: Black Hot Air Balloon flying, then bursts into fire and falls
+907: Hunter Skillcape Emote
+908: Regular Chinchompa projectile range
+909: Red Chinchompa projectile range
+910: Using/Releasing a butterfly - Black w/ swirling vortex
+911: Using/Releasing a butterfly - White w/ swirling vortex
+912: Using/Releasing a butterfly - Blue w/ swirling vortex
+913: Using/Releasing a butterfly - Red w/ swirling vortex
+914: Using/Releasing a butterfly - Black no vortex
+915: Using/Releasing a butterfly - White no vortex
+916: Using/Releasing a butterfly - Blue no vortex
+917: Using/Releasing a butterfly - Red no vortex
+918: Falconry - bird float off a bit
+919: Falconry - bird float off a bit
+920: Falconry - bird float off a bit
+921: Falconry - bird float off a bit
+922: Falconry - bird flying projectile
+923: Falconry - bird landing after good catch
+924: Falconry - bird landing after failed catch
+925: Falconry - bird landing after failed catch
+926: Falconry - bird landing after failed catch
+927: Falconry - bird landing after failed catch
+928: Brown hopping kebbit body
+929: Black hopping kebbit body
+930: Tan hopping kebbit body
+931: White puff of smoke fly upwards
+932: Imp getting caught by imp trap
+933: Pitfall trap
+934: Pitfall trap
+935: Pitfall trap
+936: Pitfall trap
+937: Polar sabre tooth falling into pitfall
+938: Polar sabre tooth jumping over pitfall
+939: Larupia falling into pitfall
+940: Larupia jumping over pitfall
+941: Graahk falling into pitfall
+942: Graahk jumping over pitfall
+943: Rabbit walking/running
+944: Rabbit caught by rabbit snare
+945: Rabbit caught by rabbit snare
+946: Rabbit caught by rabbit snare
+947: Brown hopping kebbit body
+948: Brown hopping kebbit body
+949: Polar kebbit hopping body
+950: Yellow/tan kebbit hopping body
+951: Spiked kebbit hopping body
+952: Dragon Fire Breath / regular
+953: Dragon Fire Breath / darker color
+954: exploding, star looking, dragon, breath
+955: Crossbow bolt shooting
+956: Bird statue
+957: Bird statue
+958: Bird statue
+959: Bird statue
+960: Bird above your head, looks like smaller version of statue
+961: Bird statue
+962: Bird statue, facing South, positioned south
+963: Bird statue, facing North, positioned north
+964: Bird statue, facing North, positioned south
+965: Giant kebbit, hopping, brown
+966: Giant kebbit, standing, brown
+967: Sleeping, zZzZzZ, Sleeping cap
+968: UNKNOWN - looks like a rolling pink diamond looking thing
+969: Big blue orb, shrinks downwards
+970: Green projectile
+971: Green projectile endGfx, hit, explosion
+972: Hold up Ghost Speak amulet, then looks like wield it
+973: Hold up undead chicken (green, sick looking)
+974: Puff of black smoke, looks like Egg Exploding in Barbarian Assault
+975: Cool looking implosion, unknown (Maybe Omega egg explosion)
+976: Yellow spike projectile, has a smoke trail
+977: Green Egg projectile, spinning
+978: Red Egg projectile, spinning
+979: Blue Egg projectile, spinning
+980: Omage Egg Projectile, spinning
+981: Confused Birds above head
+982: Looks like a 'bolt of lightning'(it's black) hitting the ground
+983: Looks like, "low alch" but the GFX is black
+984: Black Vortex above head, Spiked black stars floating downwards
+985: Black explosion, looks like a bolt spell hit/endGFX
+986: Black Spiked Star falling
+987: Scared Swarm floating upwards / Harbie bugs
+988: Scared Swarm/Harpie Bugs, GIANT swarm float upwards and expand
+989: Scared Swarm/Harpie Bugs, regular swarm float upwards and expand
+990: Scared Swarm/Harpie Bugs, regular swarm float downwards and shrink
+991: Scared Swarm/Harpie Bugs, GIANT swarm float downwards and shrink
+992: Scared Swarm/Harpie Bugs, float downwards
+993: Small bug/orb float and disappear
+994: Giant Arrow Throw/shot
+995: Giant Arrow projectile
+996: brown gfx, orb looking, unknown
+997: red gfx, orb looking, unknown
+998: Stun/Vulnerability/Enfeeble, player start GFX
+999: Green orb(s), big, they fly inwards and shrink
+1000: Green orb(s), big, they just stay there
+1001: Green orb(s), big, looks like it hits a wall?
+1002: Giant red orb with red tentacles coming out ot it
+1003: 2 red orbs on both hand sides, with tentacles coming out of it
+1004: BORK, growing
+1005: BORK, looks like a statue of him breaking
+1006: Yellow orb(s), big, they fly inwards and shrink
+1007: Yellow orb(s), big, they just stay there
+1008: Yellow orb(s), big, looks like it hits a wall?
+1009: 2 purple orbs on both hand sides, with tentacles coming out of it
+1010: Giant purple orb with tentacles coming out of it
+1011: Giant purple orb with tentacles, expands and disapears
+1012: Enchanting a necklace, ISN'T the original one
+1013: Giant red orb with tentacles coming out of it
+1014: Falling Ice shard, penguin quest/island
+1015: Enter clockwork penguin suit
+1016: Leave clockworkpenguin suit
+1017: 2 Ice shard projectiles
+1018: Snow chunks flipping
+1019: Snow particles flipping, looks like someone digging and tossing snow
+1020: Juggling 3 balls, one red, one blue, one green (jester controls, neitiznot quest, fremmy isles)
+1021: UNKNOWN
+1022: Throwing a giant ice ball?
+1023: CRASHS CLIENT - UNKNOWN
+1024: Flying human leg, spinning - Soul's Bane
+1025: UNKNOWN - looks like a pulsating web
+1026: Circular water puddle below feet, pulsating, water drops floating upwards
+1027: Barrelchest Anchor special GFX
+1028: Explosion, with a puff of smoke
+1029: Insects outer body shedding, like Kalphite Queens first form
+1030: An animal, looks like it dies, UNKNOWN
+1031: An animal, looks like it dies, UNKNOWN
+1032: An animal, looks like it dies, UNKNOWN
+1033: An animal, looks like it dies, UNKNOWN
+1034: Dorgshenkan Teleporting, breaking a teleport ORB
+1035: Bouncing red, ball looking thing
+1036: Mithril Grapple, about to shoot
+1037: Yellow Orb, with spiky trail, shoots into a piece of paper your holding
+1038: Yellow Orb, runes show above it, then get sucked into it, then disapears
+1039: Rabbit, floats upward slowly, then disapears (Rabbit egg?)
+1040: Blue Easter egg breaks open
+1041: Blue Easter egg breaks open
+1042: Green Easter egg breaks open
+1043: Red Easter egg breaks open
+1044: Pink/Purple Easter egg breaks open
+1045: Yellow  Easter egg breaks open
+1046: UNKNOWN - Can't see it
+1047: Easter Basket by your side
+1048: Brine Sabre, special attack GFX
+1049: Arrow shoots into the ground form a high height, then disapears
+1050: Arrow with purple feathers, pullback GFX
+1051: Arrow with purple feathers, projectile
+1052: Ancient Mace, special attack GFX
+1053: Arrow with purple feathers, UNKNOWN
+1054: Transparent brown orb forms infront of you
+1055: Kalphite Queen first form, outer shell breaking, after death
+1056: Sleeping, zZzZzZzZ
+1057: A snow hole forms below you, looks like a burrow
+1058: A snow hole forms below you, looks like a burrow
+1059: Stat Spy GFX
+1060: Stat Spy GFX
+1061: Humidify GFX
+1062: Spellbook Swap GFX
+1063: Plankmake GFX
+1064: Transparent purple slime falls, then forms The Inadequacy
+1065: Transparent purple slime expands, and pulses, then forms The Inadequacy
+1066: The Inadequacy magic Attack
+1067: The Inadequacy magic projectile
+1068: The Inadequacy Death GFX
+1069: A Doubt - It's spawning GFX
+1070: A Doubt - when it teleports
+1071: Transparent slime, forms into The Everlasting
+1072: The Everlasting Death GFX
+1073: The Illusive Death GFX
+1074: Make Hunter Kit
+1075: UNKNOWN
+1076: UNKNOWN
+1077: Brown hole forming below you
+1078: A beat spinning
+1079: Werewolf transformation
+1080: Werewolf transformation
+1081: Werewolf transformation
+1082: Werewolf transformation
+1083: Werewolf transformation
+1084: Werewolf transformation
+1085: Werewolf transformation
+1086: Werewolf transformation
+1087: Werewolf transformation
+1088: Werewolf transformation
+1089: Werewolf transformation
+1090: Werewolf transformation
+1091: Werewolf transformation
+1092: Werewolf transformation
+1093: Werewolf transformation
+1094: Werewolf transformation
+1095: Werewolf transformation
+1096: Werewolf transformation
+1097: Werewolf transformation
+1098: Werewolf transformation
+1099: Dark Bow dragon arrow special attack GFX
+1100: Dark Bow arrow impact small black explosion, endGFX/hit
+1101: Dark Bow arrow smoke trail
+1102: Dark Bow arrow smoke trail
+1103: Dark Bow arrow impact smoke hit, endGFX/hit
+1104: Double Arrow pullback - Bronze Arrows
+1105: Double Arrow pullback - Iron Arrows
+1106: Double Arrow pullback - Steel Arrows
+1107: Double Arrow pullback - Mithril Arrows
+1108: Double Arrow pullback - Adamant Arrows
+1109: Double Arrow pullback - Rune Arrows
+1110: Double Arrow pullback - Ice Arrows
+1111: Double Arrow pullback - Dragon Arrows
+1112: Double Arrow pullback - Broad Arrows
+1113: Double Arrow pullback - Fire Arrows or something
+1114: Double Arrow pullback - Fire Arrows or something
+1115: CLIENT CRASH - UNKNOWN
+1116: Single Arrow pullback - Dragon Arrow
+1117: Sachel emote
+1118: Teleport to Impetuous Implings Minigame - Wheat Field beam
+1119: Impling teleporting to a different location GFX - White smoke puff
+1120: Dragon Arrow w/ Fire projectile
+1121: Dragon Arrow w/ Fire projectile
+1122: UNKNOWN - makes character turn invisible for a second
+1123: Dragon Dart throwing
+1124: Impling jar breaking w/ impling inside
+1125: Impling jar breaking w/ impling inside
+1126: Impling jar breaking w/ impling inside
+1127: Impling jar breaking w/ impling inside
+1128: Impling jar breaking w/ impling inside
+1129: Impling jar breaking w/ impling inside
+1130: Impling jar breaking w/ impling inside
+1131: Impling jar breaking w/ impling inside
+1132: Impling jar breaking w/ impling inside
+1133: Impling jar breaking w/ impling inside
+1134: Exchanging an impling jar w/ impling inside
+1135: Exchanging an impling jar w/ impling inside
+1136: Exchanging an impling jar w/ impling inside
+1137: Exchanging an impling jar w/ impling inside
+1138: Exchanging an impling jar w/ impling inside
+1139: Exchanging an impling jar w/ impling inside
+1140: Exchanging an impling jar w/ impling inside
+1141: Exchanging an impling jar w/ impling inside
+1142: Exchanging an impling jar w/ impling inside
+1143: Exchanging an impling jar w/ impling inside
+1144: Spinning impling jar w/ impling inside
+1145: Spinning impling jar w/ impling inside
+1146: Spinning impling jar w/ impling inside
+1147: Spinning impling jar w/ impling inside
+1148: Spinning impling jar w/ impling inside
+1149: Spinning impling jar w/ impling inside
+1150: Spinning impling jar w/ impling inside
+1151: Spinning impling jar w/ impling inside
+1152: Spinning impling jar w/ impling inside
+1153: Spinning impling jar w/ impling inside
+1154: Burst of Fire below your feet - looks amazing!
+1155: Fireball GFX
+1156: Pet Rock - 
+1157: Pet Rock - Throw Stick
+1158: Throwing the Stick projectile
+1159: Stick falling and hitting the ground GFX, disapears
+1160: Dragonfire Shield - swirling fire around the shield, looks like its charging
+1161: Dragonfire Shield - swirling fire around the shield, looks like its charging
+1162: Dragonfire Shield - swirling fire around the shield, looks like its charging
+1163: Dragonfire Shield - swirling fire around the shield, looks like its charging
+1164: Dragonfire Shield - swirling fire around the shield, looks like its charging
+1165: Dragonfire Shield - Sucking in fire, getting ready to shoot projectile
+1166: Dragonfire Shield - projectile
+1167: Dragonfire Shield - burst from the shield
+1168: Dragonfire Shield - small swirling fire
+1169: Lighting a log with a stick and some rope, log lights on fire (barbarian firemaking)
+1170: Some bouncing red looking thing, circular LOOKS like a cupcake
+1171: Wierd green vines doing a, very, buggy looking animation
+1172: Picks up 2 parts of a 'bowl' and throws it behind yourself
+1173: Fire erupts from the ground upwards, till above the character
+1174: Completionist cape, middle
+1175: Completionist cape, end
+1176: Red swirling GFX encircles the character
+1177: Green swirling GFX encircles the chacracter
+1178: Broken Pest Control Barricades
+1179: Green something like glass, falls downwards
+1180: Giant circle of white smoke, like something vanished
+1181: Changing character clothes, dressing room falls downward
+1182: Changing character clothes, dressing room stays still
+1183: Changing character clothes, dressing room disappears
+1184: Saradomin: Minion: Growler: Start of it's magic attack GFX
+1185: Saradomin: Minion: Growler: Projectile
+1186: Saradomin: Minion: Growler: endGFX/hit GFX
+1187: Yellow 'Guthix Claws' grab below your feet
+1188: Saradomin: Minion: Bree: Ranging Projectile
+1189: Zamorak: Minion: Lava spot opens below you, and fire spews upwards
+1190: Armadyl: Minion: Aviansie javelin projectile
+1191: Armadyl: Minion: Aviansie throwing-axe projectile
+1192: Armadyl: Minion: Aviansie Dual Javelins, look like on fire
+1193: Looks like a brown fog around your head
+1194: Saradomin: Zilyana: Magic based: Lightning GFX - Sarasword GFX
+1195: Bandos Minion: Ranger: Throwing axe projectile
+1196: Armadyl: Kree'ara: Blue/lightning spinning tornado
+1197: Armadyl: Kree'ara: Brown/white spinning tornado
+1198: Armadyl: Kree'ara: Blue spinning tornado
+1199: Armadyl: Minion: UNKNOWN
+1200: Bandos: Graardor: Ranging projectile
+1201: Nex stuff
+1202: Bandos: Minion: Magic start GFX
+1203: Bandos: Minion: Magic projectile
+1204: Nex stuff
+1205: Bandos: Minion: Ranger minion GFX, looks like the NPC
+1206: Bandos: Minion: Throwing axe projectile
+1207: Wierd lightning pattern
+1208: Like something slid in the snow
+1209: Rolling snowball
+1210: Zamorak: K'ril: Ranging start GFX
+1211: Zamorak: K'ril: Ranging projectile
+1212: Zamorak: Minion: Mage start GFX
+1213: Zamorak: Minion: Mage projectile
+1214: Blue sword uppercut, looks like saradomin special, but isn't
+1215: Nex stuff
+1216: Nex stuff
+1217: Nex stuff
+1218: Bandos: Graardor: smash, small
+1219: Bandos: Graardor: smash, big
+1220: Saradomin Godsword special attack
+1221: Zamorak Godsword special attack
+1222: Armadyl Godsword special attack
+1223: Bandos Godsword special attack
+1224: Saradomin Sword special attack, PLAYER
+1225: Looks like Dragon 2h special, small red smash into the ground
+1226: Crossbow bolt shot, plays it 2 times
+1227: 4 white rings, pulse, looks like Growlers mage attack
+1228: Teleporting with the Grand Tree GFX Start
+1229: Teleporting with the Grand Tree GFX End
+1230: Teleporting using a Grand Tree Pod Start
+1231: 2 Spheres, white, look like lightning // Looks random
+1232: Teleporting using a Grand Tree Pod End
+1234: Throwing Dart - Bronze
+1235: Throwing Dart - Iron
+1236: Throwing Dart - Steel
+1237: Throwing Dart - Black
+1238: Throwing Dart - Mithril
+1239: Throwing Dart - Adamant
+1240: Throwing Dart - Rune
+1241: Spinning green looking thing, projectile //Looks random
+1242: Throwing Dart - Dragon
+1243: An explosion, makes a greenish white sphere, and a spikey looking explosion
+1244: Zombie Hand - Emote Tab
+1245: A Fish, flys downwards, then flys back upwards
+1246: Green circular ring forms below you
+1247: Assist Levels
+1248: Goblin sprouting up
+1249: Goblin sprouting up
+1250: Goblin sprouting up
+1251: Goblin sprouting up
+1252: Goblin sprouting up
+1253: Goblin sprouting up
+1254: Goblin sprouting down
+1255: Goblin sprouting down
+1256: Goblin sprouting down
+1257: Goblin sprouting down
+1258: Goblin sprouting down
+1259: Goblin sprouting down
+1260: White rings with yellow lines pouring down
+1261: White rings with yellow lines pouring down
+1262: White rings spinning
+1263: Tiny white lines beneath feet
+1264: Red lines hit and form a target
+1265: Blue circle above you and rains down
+1266: Blue lines
+1267: White and green lines forming a bow
+1268: Green arrow
+1269: White scattering ash?
+1270: White brushes?
+1271: Cloud of smoke
+1272: White explosion
+1273: White sparkly ball flying
+1274: Beams of light (rabbit hole area), Gravestone repair graphic.
+1275: Blue squiggles form a dragon shape figure
+1276: Puff of grey
+1277: Puff of dark grey
+1278: Bit of water
+1279: Ice and topples over
+1280: Gnome glider crashing (possibly MA)
+1281: Short white blast
+1282: Pelted snow melting off
+1283: 2010 Snowman spinning
+1284: Snow falling from snow globe
+1285: snow globe continued
+1286: snow globe continued
+1287: Seal of approval white smoke
+1288: Air spell
+1289: Air spell
+1290: White sword thing?
+1291: White thing
+1292: Snow going upwards
+1293: Iron arrow
+1294: Nothing
+1295: White Familiar graphic
+1296: Blue Familiar graphic
+1297: White Familiar graphic
+1298: White Familiar graphic
+1299: Orange Familiar graphic
+1300: White Familiar graphic
+1301: White Familiar graphic
+1302: Bronze Familiar graphic
+1303: White Familiar graphic
+1304: White Familiar graphic
+1305: White Familiar graphic
+1306: White Familiar graphic
+1307: Orange Familiar graphic
+1308: Green Familiar graphic
+1309: Pink Familiar graphic
+1310: Yellow Familiar graphic
+1311: Brown Familiar graphic
+1312: Brown smoke and a spade
+1313: White Familiar graphic
+1314: Small Blue summon familiar graphic
+1315: Big Blue summon familiar graphic
+1316: Fruit bat special
+1317: Silver stars float down?
+1318: Silver lines
+1319: Small Blue summon familiar graphic
+1320: Green orbs and lines
+1322: Stars floating up
+1333: Tornado
+1334: Tornado Continued
+1341: Confetti (for the confetti item)
+1349: Gold Tornado
+1350: Gold tornado, continued
+1351: White ice stuff in circle on ground
+1352: Two blackthingies projectiles
+1353: Something "electric" in head, can't exactly see
+1355: Purple ball rolling, projectile
+1356: electric ball over head
+1357: White ball at feet, projectile
+1358: Light beams in different directions
+1359: Stack of Green Squares spinning
+1360: Green blocks smashing into something, wierd o.0
+1361: Light green ball slowly raising into air
+1364: Shadow Sword Special :P
+1365: Ice Beast next to you
+1366: Ice Beast next to you
+1367: "" similar to above
+1368: Blue thingy comes from ground to surrond you
+1369: Ice beast attacking
+1384: Making cheese wheel 
+1390: Fire works blow around you?
+1391: Invoke spring
+1393: Raining Fire on you
+1414: Spinning Turtle Shell then goes flying
+1415: Smaller turtle shell projectile
+1443: Some Titan (summoning)
+1450: Flashing big skeleton thing?
+1458: Beaver Cutting Down tree
+1459: "" same as above
+1463: Raining Flames
+1466: Classic Cape
+1447: Classic Cape
+1471: Classic Cape
+1499: Pest Control Portal
+1500: Portal
+1501: pest control creature
+1502: Portal
+1503: Portal
+1504: Summoning, big
+1512: tele into mini?
+1515: Summoning skillcape emote
+1516: Fairy rings teleport
+1521: white seagals
+1524: dug hole
+1525: dug hole
+1529: platypus thing diving and retrieving a chest
+1530: platypus thing diving and retrieving an oyster
+1523: baby platypus thing diving and retrieving a chest
+1530: platypus thing diving and retrieving an oyster
+1533: Safety first emote
+1537: Air guitar
+1541: Farming minigame (minesweeper) placing flag
+1544: Zombie hand
+1545: Zombie hand
+1549: loads of tiny blue squares surround you
+1551: Crack
+1552: Fairy rings teleport
+1554: safety first emote
+1566: Chocatrice cape easter egg emote
+1567: Player transforms into a rabbit/bunny
+1576: Normal teleport, upwards
+1577: Normal teleport, downwards
+1578: King (yeti guy) growing
+1579: Yeti (king guy) growing
+1584: Fists of guthix, earning point rings
+1585: Taking damage in fist of guthix
+1587: Big ice block breaks
+1594: Mime spotlight
+1586: Winning fist of guthix
+1604: Sickle Enchantment
+1605: Imp relocation 
+1606: Pink spotlight
+1607: White bead being picked up and thrown
+1608: Green/white spotlight
+1609: White bead being picked up and thrown
+1610: Cat being lifted and moved
+1611: Cat being lifted and moved
+1612: Cat being lifted and moved
+1613: Cat being lifted and moved
+1614: Cat being lifted and moved
+1615: Cat being lifted and moved
+1616: Rocks pulled together?
+1617: Lava rock
+1618: Circle of fire and flames burst up
+1619: Red to orange bubbles
+1620: Red to orange bubbles
+1621: Pelting stars?
+1622: jad fight caves 360 atk
+1623: Tzhaar
+1624: Tzhaar
+1625: Jad stomp
+1626: Jad rock
+1627: Jad rock
+1628: Jad something lol
+1629: Rocks shattering
+1630: Small blue rocket speeding across floor (New level 99 graphics)
+1631: Bigger blue rocket speeding across floor (New level 99 graphics)
+1632: Blue Rocket speeding across floor (New level 99 graphics)
+1633: Blue rocket flying upwards (New level 99 graphics)
+1634: Sparkly blue rocket flying upwards (New level 99 graphics)
+1635: Sparkles (New level 99 graphics)
+1636: Sparkles and confetti (New level 99 graphics)
+1637: Sparkles and falling stars (New level 99 graphics)
+1638: Big red circle thing/pit curse
+1639: Smaller red circle thing
+1640: Fire and a burnt cockroach thing (those things in desert)
+1641: Red thing
+1642: Red thing
+1643: Red thing
+1644: Banshee head being used on red wall
+1645: Coffin opening and shutting
+1678: Green tele up
+1679: Green tele down
+1680: Tablet teleport
+1681: Ancients teleport
+1682: Lyre Teleport
+1683: Skull Sceptre teleport
+1684: Dueling Ring teleport
+1685: Lunar teleport
+1687: teleport
+1688: Ectofungus teleport
+1689: Monkey Madness teleport
+1691: alch
+1692: low alchemy
+1693: high alchemy
+1694: Crude Wood Chair (alch)
+1695: Crude Wood Chair (alch)
+1694: Wooden Chair (alch)
+1695: Wooden Chair (alch)
+1695: Rocking Chair (alch)
+1694: Oak Chair (alch)
+1695: Oak Chair (alch)
+1694: Oak ArmChair (alch)
+1695: Oak ArmChair (alch)
+1694: Teak Chair (alch)
+1695: Teak Chair (alch)
+1694: Mahogany ArmChair (alch)
+1695: Mahogany ArmChair (alch)
+1694: Wooden Dining Bench (alch)
+1694: Oak Dining Bench (alch)
+1694: Carved Oak Dining Bench (alch)
+1694: Carved Teak Dining Bench (alch)
+1694: Mahogany Dining Bench (alch)
+1694: Gilded Mahogany Dining Bench (alch)
+1694: Oak Throne (alch)
+1694: Teak Throne (alch)
+1694: Mahogany Throne (alch)
+1694: Gilded mahogany Throne (alch)
+1694: Skeleton Throne (alch)
+1694: Crystal Throne (alch)
+1694: Demonic Throne (alch)
+1702: Kiss emote (original)
+1729: korasi special attack
+1731: Cabbage teleport (explorer's ring)
+1732: Cabbage teleport (explorer's ring)
+1733: Recharge run
+1734: Explore emote
+1735: Explore emote
+1737: energy ball floats to you, disappears when close
+1738: corporal beast eats summoning creature
+1740: thunder thingy
+1744: cage made of light
+1745: purple bolts and white rings (teleport)
+1746: ring around you floats up
+1747: purple teleport ring thingy
+1760: Puff of smoke, leaves a black aura (disappear emote)
+1761: Head in sand emote
+1762: Ghost emote
+1763: Red aura thing
+1764: Green aura thing
+1765: Fireworks (deathcon)
+1766: Living on borrowed time emote
+1768: entering deathcon red portal
+1767: coming out of deathcon red portal
+1774: Runes floating around
+1778: summoning bird going to find fruit or whatever
+1781: Jugging balls
+1782: Juggling balls fail
+1783: Juggling knives
+1784: Juggling knives fail
+1785: Juggling torches
+1786: Juggling torches fail
+1787: Juggling cannonballs
+1788: Juggling cannonballs fail
+1789: Juggling plates
+1790: Juggling plates fail
+1791: Juggling soap
+1792: Juggling soap fail
+1793: Juggling spades
+1794: Juggling spades fail
+1795: Juggling tuna
+1796: Juggling tuna fail
+1797: Juggling eggs
+1798: Juggling eggs fail
+1799: Juggling chinchompas
+1800: Juggling chinchompas fail
+1801: Bronze arrow
+1802: Nothing
+1803: Tearing circus ticket
+1817: coming out of deathcon red portal
+1834: corp stomp
+1835: Vesta's Spear
+1836: Morrigan's javelin
+1837: Morrigan's javelin projectile
+1838: Morrigan's throwing axe
+1840: Statius's warhammer
+1847: purple, red and more around you?
+1845: Miasmic Spell?
+1847: Miasmic Spell?
+1848: Puff of red smoke up and down
+1849: Puff of red smoke up and down
+1853: Miasmic Barrage
+1854: Some Spell
+1855: Morrigans javelin drawback
+1856: Morrigans throwing axe
+1864: Scare emote
+1866: Dust broom emote
+1890: Wierd black Thing
+1896: Black Wierd thing comes down on you? 
+1897: Black Wierd thing comes down on you?
+1898: Death/Black skull swirl?
+1901: dark energy
+1918: Balance Elemental Range drawback
+1932: While Guthix Sleeps/lummy caves strange light npc
+1933: While Guthix Sleeps/lummy caves strange light creature/npc
+1935: dark energy
+1936: Balance Elemental rock drawback
+1937: Balance Elemental rock projectile
+1938: Balance Elemental rock impact
+1939: Balance Elemental Magic drawback
+1940: Balance Elemental Magic projectile
+1941: Balance Elemental Magic impact
+1943: balanced elemental
+1944: Balance Elemental Battle entrance?
+1946: Balance Elemental Death?
+1950: dragon claw special
+1964: falador shield pray restore
+1965: falador shield 3 emote
+1966: falador shield 1 emote
+1973: Freeze emote
+2000: Blue swirl
+2001: Blue and White Swirling at feet, spell?
+2002: Breaking Glass ball (Dorguushun teleport)
+2003: Dorguushun teleport
+2004: Dorguushun teleport
+2006: electric portal
+2007: bluish spike thingy
+2008: corp stomp on wall
+2009: wind blowing round you
+2011: wind blowing round you
+2015: blue shield with blue oval bouble
+2018: broken black bouble thing
+2019: black explosion
+2021: black tele thing that opens up
+2029: sand/bug type monster
+2035: bunny take head off
+2036: giant Easter egg
+2037: Around the world in eggty days
+2039: raining fire
+2040: light portal comes up
+2044: same as 2040
+2045: black spiral spike thingy falls down
+2047: giant saws falling (skeletons?)
+2048: Sleeping, zzz
+2049: Penguin head floating
+2050: Penguin sliding on ice
+2051: explosion from beneath
+2052: cannon
+2053: cannon
+2054: cannon
+2059: giant chin(mb)
+2060: Multi Color Squirl, then Puff of smoke
+2061: Multi Color Squirl, then Puff of smoke
+2062: tiny puff of smoke
+2063: black dot?
+2064: falling rocks?
+2065: falling rocks?
+2066: falling rocks?
+2067: falling rocks?
+2068: Dice
+2069: Dice
+2070: Dice 
+2071: Dice
+2072: Dice 
+2073: Dice 
+2074: Dice   
+2075: Dice 
+2076: Dice
+2077: Dice 
+2078: Dice 
+2079: Dice 
+2080: Dice
+2081: Dice
+2082: Dice
+2083: Dice
+2084: Dice
+2085: Dice
+2086: Dice
+2087: Dice
+2088: Dice
+2089: Dice
+2090: Dice
+2091: Dice
+2092: Dice
+2093: Dice
+2094: Dice
+2095: Dice
+2096: Dice
+2097: Dice
+2098: Dice
+2099: Dice
+2100: white slash
+2101: purple lightening ball
+2102: electrical shock and puff of smoke
+2103: mithril grapple
+2104: zamorak godsword ice special
+2105: zamorak godsword ice special attack
+2106: tiny arrow?
+2107: arrow
+2108: old abyssal whip special, red rings
+2109: saradomin godsword special attack
+2110: null
+2111: null
+2112: null
+2113: armadyl godsword special attack
+2114: bandos godsword special attack
+2115: saradomin sword special attack
+2116: zamorak spear/zamorakian spear special attack
+2117: dragon sword special attack
+2118: some sort of dragon special, idk
+2119: icey colored magic projectile
+2120: very quick icey colored ball
+2121: very quick icey colored ball
+2122: icey coloured splash
+2123: sparks from an anvil
+2124: nothing?
+2125: nothing?
+2126: white and black swirley ball?
+2127: white swirley ball?
+2128: white and black rings/spiral
+2129: null
+2130: white and black things
+2131: white thing
+2132: white thing
+2133: hole appears with a hand dragging you in (teleport)
+2134: hole appears with hand pushing you out (teleport)
+2135: fire
+2136: fire
+2140: hand cannon explode
+2141: hand cannon explode
+2143: Hand cannon ball projectile
+2144: red slash with explosion?
+2145: Squirrel Ears (holiday reward item)
+2146: ice
+2147: puff of smoke
+2148: fireball on floor
+2149: rocks falling
+2150: rocks falling
+2151: guard turns to ash and falls
+2152: null
+2153: null
+2154: null
+2155: null
+2156: weird stuff
+2157: wooden planks
+2158: wooden planks
+2159: wooden planks
+2160: wooden planks
+2161: wooden planks
+2162: wooden planks
+2163: wooden planks
+2164: wooden planks
+2165: weird rainbowy/white thing
+2166: streaks of light float upwards?
+2167: colorful little balls with 2 big white balls
+2168: colorful little balls with 1 big white ball
+2169: streaks of light flush towards you?
+2170: purple roots?
+2171: null
+2172: Ardougne Cape teleport
+2173: ardougne cape teleport return
+2174: Grand Tree teleport
+2175: Grand tree return
+2176: Ardougne Cape teleport
+2177: ardougne cape teleport return
+2177: null
+2178: eek the spider
+2179: eek the spider
+2180: Throwing Eek the spider
+2181: fire ball?
+2182: purple ball
+2183: purple spikey ball
+2184: small flash of light
+2185: medium flash of light
+2186: large flash of light
+2187: fire?
+2188: purple fire?
+2189: quick purple flames
+2190: purple puff of smoke
+2191: null
+2192: null
+2193: null
+2194: null
+2195: null
+2196: null
+2197: null
+2198: null
+2199: fire surge
+2200: null
+2201: fire surge
+2202: fire surge
+2203: fire surge
+2204: fire rings
+2205: yellow floating guy (explorer or something near piscatoris)
+2213: Protect Item
+2214: Sap Warrior Shoot
+2215: Sap Warrior Projectile
+2216: Sap Warrior Impact 
+2217: Sap Ranged Shoot
+2218: Sap Ranged Projectile
+2219: Sap Ranged Impact
+2220: Sap Mage Shoot
+2221: Sap Mage Projectile
+2222: Sap Mage Impact
+2223: Sap Spirit Shoot
+2224: Sap Spirit Projectile
+2225: Sap Spirit Impact
+2226: turmoil
+2227: Deflect Summoning
+2228: Deflect Magic
+2229: Deflect Ranged 
+2230: deflect melee
+2231: Leech Attack Projectile
+2232: Leech Attack Impact
+2233: Leech Attack Impact
+2236: Leech Range Projectile
+2237: Leech Range Impact 
+2238: Leech Range Impact
+2240: Leech Magic Projectile
+2241: Leech Magic Impact
+2242: Leech Magic Impact 
+2244: Leech Defence Projectile
+2245: Leech Defence Impact
+2246: Leech Defence Impact 
+2248: Leech Strength Projectile
+2249: Leech Strength Impact
+2250: Leech Strength Impact 
+2252: Leech Energy Projectile
+2253: Leech Energy Impact
+2254: Leech Energy Impact
+2256: Leech Special Projectile
+2257: Leech Special Impact 
+2258: Leech Special Impact 
+2263: Soulsplit Projectile
+2264: Soulsplit Impact 
+2266: Berserker
+2280: Green twirley vines?
+2281: Green twirley vines?
+2282: Green blast
+2283: White mage projectile
+2284: Barbarian assault defender icon
+2285: Barbarian assault attacker icon
+2286: Barbarian assault healer icon
+2287: Barbarian assault collector icon
+2288: Barbarian assault attacker and collector icon
+2289: Barbarian assault defender and attacker icon
+2290: Barbarian assault defender and collector icon
+2291: Barbarian assault defender and healer icon
+2292: Barbarian assault attacker and healer icon
+2293: Barbarian assault collector and healer icon
+2294: Barbarian assault collector, attacker and healer icon
+2295: Barbarian assault collector, defender and healer icon
+2296: Barbarian assault attacker, healer and defender icon
+2297: Barbarian assault collector, attacker and defender icon
+2298: Barbarian assault collector, attacker, healer and defender icon
+2299: butterfly?
+2300: butterfly?
+2301: butterfly?
+2302: butterfly?
+2303: rock golem?
+2304: rock golem?
+2305: rock golem?
+2306: rock golem?
+2307: purple bubbles/sparkles
+2308: rock golem pet?
+2319: staff of light special
+2320: staff of light special?
+2321: Staff of light
+2345: red stuff like blood barrage
+2350: rune guardian
+2391: blue spinning thingy that explodes
+2393: crystals around ur legs
+2436: orange explosion
+2437: orange explosion
+2437: white explosion
+2442: Dungeoneering skillcape
+2451: lighting around you
+2400+: dungeoneering
+2517: To Player Return (Dungoneernig teleport)
+2516: To Player(Dungeoneering teleport)
+2584: dungeoneering poison dropping
+2602: Home (Dungeoneering teleport)
+2603: Home Return (Dungoneering teleport)
+2688: red castle wars smoke
+2689: blue castle wars smoke
+2691: teletab?
+2692: effigy
+2693: Void stares back ghost
+2694: Void stares back ghost
+2695: Void stares back ghost
+2696: Void stares back ghost
+2697: Void stares back ghost
+2701: Water
+2702: Water
+2728: Fire
+2713: Earth
+2714: Earth
+2715: Earth
+2716: Earth
+2717: Earth
+2743: wise old man walking
+2744: very large summoning graphic
+2745: constitution skillcape male
+2746: constitution skillcape female
+2777: master dungeoneering cape
+2778: master dungeoneering cape
+2779: master dungeoneering cape
+2780: master dungeoneering cape
+2781: master dungeoneering cape
+2782: master dungeoneering cape
+2783: master dungeoneering cape
+2792: leveling up to 99?
+2795: korasi special attack
+2837: Puppet master
+2838: bone brooch
+2845: blue light
+2846: grey explode
+2898: jadinko
+2899: jadinko
+2900: jadinko
+2901: jadinko
+2902: jadinko
+2903: jadinko
+2904: jadinko
+2905: jadinko
+2906: jadinko
+2907: jadinko
+2908: jadinko
+2909: jadinko
+2910: jadinko
+2911: jadinko
+2912: jadinko
+2913: jadinko
+2914: jadinko
+2915: jadinko
+2916: jadinko
+2917: jadinko
+2918: jadinko
+2919: jadinko
+2920: jadinko
+2930: Task master emote
+2931: magic carpet taking off
+2932: magic carpet flying
+2933: magic carpet landing
+2952: golden cracker
+2953: golden hammer twirl
+2964: 10th anniversary cake
+2969: Rope
+2970: Rope
+2971: Grand tree pod

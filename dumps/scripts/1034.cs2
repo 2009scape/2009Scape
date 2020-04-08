@@ -1,0 +1,10 @@
+void script_1034(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,string arg6) {
+	createExtraChild(new WidgetPointer(157,25), 4, arg0);
+	setWidgetPosition(arg1, arg2, 0, 0);
+	setWidgetSize(arg3, arg4, 0, 0);
+	setWidgetRGB(new Color(arg5));
+	setWidgetUnknownBoolean(true);
+	setWidgetFont(495);
+	setWidgetText(arg6);
+	return;
+}

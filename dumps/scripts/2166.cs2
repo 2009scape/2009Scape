@@ -1,0 +1,4 @@
+void script_2166() {
+	setWidgetText(new WidgetPointer(190,2), "Quest Points: " + intToStr(standart_config_101) + " / " + intToStr(standart_config_904));
+	return;
+}

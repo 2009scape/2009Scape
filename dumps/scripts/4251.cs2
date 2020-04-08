@@ -1,0 +1,44 @@
+void script_4251() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	string svar0;
+	if (((boolean)bitconfig_9030)) {
+		return;
+	}
+	if (isWidgetHidden(new WidgetPointer(746,185))) {
+		return;
+	}
+	ivar0 = getWidgetActualX(new WidgetPointer(746,185));
+	ivar1 = getWidgetActualY(new WidgetPointer(746,185));
+	ivar2 = getWidgetActualWidth(new WidgetPointer(746,2));
+	svar0 = getWidgetText(new WidgetPointer(746,241));
+	if (ivar2 < 998) {
+		if (((boolean)stringMethod4107(svar0, "Click here to show the Task window."))) {
+			script_4248(51, 77, 2, 16777215, 5631, svar0);
+		} else if (((boolean)stringMethod4107(svar0, "Task complete! Click here to return to the task list."))) {
+			script_4248(158, 45, 1, 16777215, 5631, svar0);
+		} else if (((boolean)stringMethod4107(svar0, "Click on the first Task in the list for details of how to complete it.")) || ((boolean)stringMethod4107(svar0, "Click on the Task which is now first in the list."))) {
+			script_4248(180, 205, 1, 16777215, 5631, svar0);
+		} else if (((boolean)stringMethod4107(svar0, "Click on the Hints tab for more on how to complete this Task.")) || ((boolean)stringMethod4107(svar0, "Remember, the Hints tab provides more details about a Task."))) {
+			script_4248(196, 223, 1, 16777215, 5631, svar0);
+		} else {
+			if (((boolean)stringMethod4107(svar0, "The '?' icon will add an arrow to the screen which points to your destination."))) {
+				script_4248(196, 127, 1, 16777215, 5631, svar0);
+			}
+		}
+	} else if (((boolean)stringMethod4107(svar0, "Click here to show the Task window."))) {
+		script_4248(288, 39, 2, 16777215, 5631, svar0);
+	} else if (((boolean)stringMethod4107(svar0, "Task complete! Click here to return to the task list."))) {
+		script_4248(158, 5, 1, 16777215, 5631, svar0);
+	} else if (((boolean)stringMethod4107(svar0, "Click on the first Task in the list for details of how to complete it.")) || ((boolean)stringMethod4107(svar0, "Click on the Task which is now first in the list."))) {
+		script_4248(180, 165, 1, 16777215, 5631, svar0);
+	} else if (((boolean)stringMethod4107(svar0, "Click on the Hints tab for more on how to complete this Task.")) || ((boolean)stringMethod4107(svar0, "Remember, the Hints tab provides more details about a Task."))) {
+		script_4248(196, 183, 1, 16777215, 5631, svar0);
+	} else {
+		if (((boolean)stringMethod4107(svar0, "The '?' icon will add an arrow to the screen which points to your destination."))) {
+			script_4248(196, 87, 1, 16777215, 5631, svar0);
+		}
+	}
+	return;
+}

@@ -1,3 +1,4 @@
+/*
 package plugin.dialogue;
 
 import org.crandor.game.content.dialogue.DialoguePlugin;
@@ -8,27 +9,35 @@ import org.crandor.game.node.entity.player.link.RunScript;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.game.node.item.Item;
 
+*/
 /**
  * Represents the dialogue plugin used for making limbs.
  * @author 'Vexia
  * @version 1.0
- */
+ *//*
+
 @InitializablePlugin
 public final class LimbDialogue extends DialoguePlugin {
 
-	/**
+	*/
+/**
 	 * Constructs a new {@code LimbDialogue} {@code Object}.
-	 */
+	 *//*
+
 	public LimbDialogue() {
-		/**
+		*/
+/**
 		 * empty.
-		 */
+		 *//*
+
 	}
 
-	/**
+	*/
+/**
 	 * Constructs a new {@code LimbDialogue} {@code Object}.
 	 * @param player the player.
-	 */
+	 *//*
+
 	public LimbDialogue(Player player) {
 		super(player);
 	}
@@ -38,19 +47,25 @@ public final class LimbDialogue extends DialoguePlugin {
 		return new LimbDialogue(player);
 	}
 
-	/**
+	*/
+/**
 	 * The item.
-	 */
+	 *//*
+
 	private Item item;
 
-	/**
+	*/
+/**
 	 * The second item.
-	 */
+	 *//*
+
 	private Item second;
 
-	/**
+	*/
+/**
 	 * The string bow enum.
-	 */
+	 *//*
+
 	private Limb bow;
 
 	@Override
@@ -106,3 +121,4 @@ public final class LimbDialogue extends DialoguePlugin {
 		return new int[] { 84923 };
 	}
 }
+*/

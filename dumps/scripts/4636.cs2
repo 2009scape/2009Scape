@@ -1,0 +1,24 @@
+void script_4636() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = 39059516;
+	ivar1 = 39059501;
+	ivar2 = 39059515;
+	if (hasSSKey()) {
+		ivar0 = 63897649;
+		ivar1 = 63897644;
+	}
+	setWidgetText(new WidgetPointer(ivar0), "Log In");
+	setWidgetText(new WidgetPointer(ivar2), "Log In");
+	setScriptCallOnMousePressed(2944, "", new WidgetPointer(ivar1));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(ivar1));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(596,7));
+	if (isLoggingIn()) {
+		cancelLogin();
+	}
+	resetRCs();
+	script_2954();
+	script_2940(13);
+	return;
+}

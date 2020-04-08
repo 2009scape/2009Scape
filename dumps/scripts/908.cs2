@@ -1,0 +1,4 @@
+void script_908() {
+	globalint_117 = 1;
+	return;
+}

@@ -1,0 +1,6 @@
+void script_5102(int arg0,int arg1,int arg2) {
+	setWidgetIsHidden(false, new WidgetPointer(arg1));
+	setWidgetText(new WidgetPointer(arg2), "Clan settings prevent viewing this relationship");
+	setWidgetIsHidden(false, new WidgetPointer(arg0));
+	return;
+}

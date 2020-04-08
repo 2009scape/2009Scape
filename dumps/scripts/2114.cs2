@@ -1,0 +1,7 @@
+void script_2114(int arg0,int arg1) {
+	setWidgetIsHidden(false, new WidgetPointer(arg0));
+	setWidgetIsHidden(true, new WidgetPointer(arg1));
+	globalint_679 = 0;
+	setScriptCallOnGlobalConfigChange(2115, new WidgetPointer(arg0), new WidgetPointer(arg1), 679, 1, "IIY", new WidgetPointer(arg0));
+	return;
+}

@@ -1,0 +1,53 @@
+void script_5040() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int stack_dump0;
+	cs2func_script_5019_struct(4,0,0) structdump_1;
+	deleteAllExtraChilds(new WidgetPointer(1111,18));
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = -1;
+	ivar3 = -1;
+	ivar4 = -1;
+	ivar5 = -1;
+	ivar6 = 200;
+	if (citadelConfigsInitialized()) {
+		while (ivar0 < 200) {
+			createExtraChild(new WidgetPointer(1111,18), 5, ivar0);
+			stack_dump0 = ivar0;
+			structdump_1 = script_5019(stack_dump0);
+			ivar5 = structdump_1.intpart_3;
+			ivar4 = structdump_1.intpart_2;
+			ivar3 = structdump_1.intpart_1;
+			ivar1 = structdump_1.intpart_0;
+			if (ivar1 != 0) {
+				ivar2 = cs2method_3408(105, 74, 3943, ivar1);
+				if (ivar2 != -1) {
+					setWidgetSprite(getOtherCommonData(ivar2, 1465));
+					if (((boolean)getOtherCommonData(ivar2, 1466))) {
+						cs2method1107(1);
+					} else {
+						cs2method1107(0);
+					}
+					script_5041(ivar2, ivar3, ivar4, ivar5);
+					ivar6 = subtract(ivar6, 1);
+				} else {
+					setWidgetHidden(1);
+				}
+			} else {
+				setWidgetHidden(1);
+			}
+			ivar0 = add(ivar0, 1);
+		}
+		setWidgetText(new WidgetPointer(1111,93), intToStr(ivar6));
+	} else {
+		setWidgetText(new WidgetPointer(1111,93), "...");
+	}
+	script_41(72810627);
+	return;
+}

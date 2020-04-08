@@ -1,0 +1,13 @@
+void script_246() {
+	setScriptCallOnKeyPress(247, -2147483640, false, "iz", new WidgetPointer(594,53));
+	setScriptCallOnKeyPress(-1, "", new WidgetPointer(137,56));
+	globalint_6 = 0;
+	globalint_11 = 1;
+	if (isWidgetHidden(new WidgetPointer(752,3))) {
+		setWidgetIsHidden(true, new WidgetPointer(752,3));
+		setWidgetIsHidden(false, new WidgetPointer(752,8));
+		globalint_5 = 0;
+		globalstring_22 = "";
+	}
+	return;
+}

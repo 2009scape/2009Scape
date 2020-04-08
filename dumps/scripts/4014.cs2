@@ -1,0 +1,7 @@
+void script_4014(int arg0,int arg1) {
+	if (setWidgetRegister(new WidgetPointer(917,98), arg0) && isWidgetHidden(new WidgetPointer(917,119))) {
+		setWidgetSprite(arg1);
+	}
+	script_41(60096613);
+	return;
+}

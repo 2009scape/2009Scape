@@ -1,0 +1,34 @@
+void script_2878() {
+	int ivar0;
+	script_41(12255248);
+	globalint_1 = 0;
+	deleteAllExtraChilds(new WidgetPointer(187,9));
+	while (getExtraChildGap(new WidgetPointer(187,9)) < 12) {
+		createExtraChild(new WidgetPointer(187,9), 4, getExtraChildGap(new WidgetPointer(187,9)));
+	}
+	while (getExtraChildGap(new WidgetPointer(187,9)) < 24) {
+		createExtraChild(new WidgetPointer(187,9), 5, getExtraChildGap(new WidgetPointer(187,9)));
+	}
+	ivar0 = 5;
+	ivar0 = script_2879(0, bitconfig_7081, ivar0);
+	ivar0 = script_2879(1, bitconfig_7082, ivar0);
+	ivar0 = script_2879(2, bitconfig_7083, ivar0);
+	ivar0 = script_2879(3, bitconfig_7084, ivar0);
+	ivar0 = script_2879(4, bitconfig_7085, ivar0);
+	ivar0 = script_2879(5, bitconfig_7086, ivar0);
+	ivar0 = script_2879(6, bitconfig_7087, ivar0);
+	ivar0 = script_2879(7, bitconfig_7088, ivar0);
+	ivar0 = script_2879(8, bitconfig_7089, ivar0);
+	ivar0 = script_2879(9, bitconfig_7090, ivar0);
+	ivar0 = script_2879(10, bitconfig_7091, ivar0);
+	ivar0 = script_2879(11, bitconfig_7092, ivar0);
+	if ((bitconfig_7081 == 32767) && ((boolean)globalint_1077)) {
+		setWidgetIsHidden(false, new WidgetPointer(187,14));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(187,14));
+	}
+	createExtraChild(new WidgetPointer(187,9), 4, getExtraChildGap(new WidgetPointer(187,9)));
+	setWidgetPosition(15, ivar0, 0, 0);
+	setWidgetSize(150, ivar0, 0, 1);
+	return;
+}

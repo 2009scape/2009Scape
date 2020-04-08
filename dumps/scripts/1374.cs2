@@ -1,0 +1,11 @@
+void script_1374(int arg0) {
+	if (((boolean)arg0)) {
+		setWidgetIsHidden(false, new WidgetPointer(755,46));
+		setWidgetContextMenuOption(1, new WidgetPointer(755,6), "Hide overview");
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(755,46));
+		setWidgetContextMenuOption(1, new WidgetPointer(755,6), "Show overview");
+	}
+	setScriptCallOnClickContextMenu(1373, "", new WidgetPointer(755,6));
+	return;
+}

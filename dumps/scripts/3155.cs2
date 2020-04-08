@@ -1,0 +1,8 @@
+void script_3155(int arg0) {
+	script_2994(arg0, 0, 16, 16, 0, 0, 1547, 0, 0, 0, 0);
+	setScriptCallOnMouseEntered(3156, new WidgetPointer(arg0), "I");
+	setScriptCallOnMouseExit(3157, new WidgetPointer(arg0), "I");
+	script_2994(arg0, 1, 16, 16, 0, 0, 1548, 0, 0, 0, 0);
+	setWidgetHidden(1);
+	return;
+}

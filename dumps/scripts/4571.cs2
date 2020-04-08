@@ -1,0 +1,10 @@
+void script_4571(int arg0,int arg1,string arg2) {
+	setWidgetPosition(script_1551(globalint_1507, 494, getWidgetActualX(new WidgetPointer(arg0)), arg2), 1, 0, 1, new WidgetPointer(arg1));
+	if (hasWindowFocus()) {
+		setWidgetIsHidden(false, new WidgetPointer(arg1));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(arg1));
+	}
+	setScriptCallOnGameloop(4572, getClientCycle(), new WidgetPointer(arg1), "iI", new WidgetPointer(arg0));
+	return;
+}

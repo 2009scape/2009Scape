@@ -1,0 +1,8 @@
+void script_4433() {
+	if (cs2method3751()) {
+		script_4434();
+	} else {
+		script_4589();
+	}
+	return;
+}

@@ -1,0 +1,6 @@
+int script_768(int arg0,int arg1) {
+	if (getItemAmtInContainer(93, arg1) < 1) {
+		return 0;
+	}
+	return 1;
+}

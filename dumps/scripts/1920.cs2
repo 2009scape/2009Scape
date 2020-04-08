@@ -1,0 +1,15 @@
+void script_1920() {
+	setScriptCallOnGlobalStringChange(1921, 40, 1, "Y", new WidgetPointer(812,5));
+	setScriptCallOnGlobalStringChange(1921, 41, 1, "Y", new WidgetPointer(812,6));
+	setScriptCallOnGlobalStringChange(1921, 42, 1, "Y", new WidgetPointer(812,7));
+	setScriptCallOnGlobalConfigChange(1921, 551, 1, "Y", new WidgetPointer(812,5));
+	setScriptCallOnGlobalConfigChange(1921, 552, 1, "Y", new WidgetPointer(812,6));
+	setScriptCallOnGlobalConfigChange(1921, 553, 1, "Y", new WidgetPointer(812,7));
+	globalstring_40 = "You have no clan leader.";
+	globalstring_41 = "You have no allied clans.";
+	globalstring_42 = "";
+	globalint_551 = 0;
+	globalint_552 = 0;
+	globalint_553 = 0;
+	return;
+}

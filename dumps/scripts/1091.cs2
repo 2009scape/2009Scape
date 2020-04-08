@@ -1,0 +1,4 @@
+void script_1091(int arg0,int arg1) {
+	setWidgetText(new WidgetPointer(arg0), intToStr(getItemAmtInContainer(93, arg1)));
+	return;
+}

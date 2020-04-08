@@ -1,0 +1,24 @@
+void script_3973(int arg0) {
+	setWidgetIsHidden(true, new WidgetPointer(1056,92));
+	setWidgetIsHidden(true, new WidgetPointer(1056,94));
+	setWidgetIsHidden(false, new WidgetPointer(1056,125));
+	setWidgetIsHidden(false, new WidgetPointer(1056,122));
+	if (((boolean)arg0)) {
+		script_3977(globalint_1425);
+	} else if (((boolean)script_3999(bitconfig_8576))) {
+		if (((boolean)script_3999(bitconfig_8588)) && ((boolean)script_3999(bitconfig_8587))) {
+			script_3977(bitconfig_8587);
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(1056,122));
+		}
+	} else {
+		script_3977(bitconfig_8576);
+	}
+	script_3975();
+	if (((boolean)globalint_1421)) {
+		setWidgetIsHidden(true, new WidgetPointer(1056,171));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(1056,171));
+	}
+	return;
+}

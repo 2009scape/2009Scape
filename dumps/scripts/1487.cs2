@@ -1,0 +1,16 @@
+void script_1487() {
+	string svar0;
+	svar0 = "";
+	if (((boolean)standart_config_115)) {
+		setWidgetSprite(1431, new WidgetPointer(762,19));
+		setWidgetSprite(1427, new WidgetPointer(762,20));
+		svar0 = "Switch to note withdrawal mode";
+	} else {
+		setWidgetSprite(1433, new WidgetPointer(762,19));
+		setWidgetSprite(1428, new WidgetPointer(762,20));
+		svar0 = "Switch to item withdrawal mode";
+	}
+	setWidgetContextMenuOption(1, new WidgetPointer(762,19), svar0);
+	setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(762,119), svar0, 25, 150, "IIsii", new WidgetPointer(762,19));
+	return;
+}

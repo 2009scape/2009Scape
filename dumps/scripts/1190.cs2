@@ -1,0 +1,25 @@
+void script_1190() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	while (ivar0 < getItemContainerLength(482)) {
+		createExtraChild(new WidgetPointer(477,26), 5, ivar0);
+		setWidgetSize(36, 32, 0, 0);
+		ivar1 = script_1425(ivar0);
+		ivar2 = script_1426(ivar0);
+		setWidgetPosition(ivar1, ivar2, 0, 0);
+		if (getItemIdInSlot(482, ivar0) != -1) {
+			setItemOnWidgetMethod1200(getItemIdInSlot(482, ivar0), getItemAmtInSlot(482, ivar0));
+			cs2method1305(getItemName(getItemIdInSlot(482, ivar0)));
+			setWidgetContextMenuOption(1, "Value");
+			setWidgetContextMenuOption(2, "Buy 1");
+			setWidgetContextMenuOption(3, "Buy 5");
+			setWidgetContextMenuOption(4, "Buy 10");
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	return;
+}

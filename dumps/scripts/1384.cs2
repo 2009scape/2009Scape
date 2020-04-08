@@ -1,0 +1,754 @@
+void script_1384(int arg0,int arg1) {
+	switch (arg0) {
+		case 0:
+			globalint_0 = arg1;
+			break;
+		case 1:
+			globalint_274 = arg1;
+			break;
+		case 2:
+			globalint_275 = arg1;
+			break;
+		case 3:
+			globalint_276 = arg1;
+			break;
+		case 4:
+			globalint_277 = arg1;
+			break;
+		case 5:
+			globalint_278 = arg1;
+			break;
+		case 6:
+			globalint_279 = arg1;
+			break;
+		case 7:
+			globalint_280 = arg1;
+			break;
+		case 8:
+			globalint_281 = arg1;
+			break;
+		case 9:
+			globalint_282 = arg1;
+			break;
+		case 10:
+			globalint_283 = arg1;
+			break;
+		case 11:
+			globalint_284 = arg1;
+			break;
+		case 12:
+			globalint_285 = arg1;
+			break;
+		case 13:
+			globalint_286 = arg1;
+			break;
+		case 14:
+			globalint_287 = arg1;
+			break;
+		case 15:
+			globalint_288 = arg1;
+			break;
+		case 16:
+			globalint_289 = arg1;
+			break;
+		case 17:
+			globalint_290 = arg1;
+			break;
+		case 18:
+			globalint_291 = arg1;
+			break;
+		case 19:
+			globalint_292 = arg1;
+			break;
+		case 20:
+			globalint_293 = arg1;
+			break;
+		case 21:
+			globalint_294 = arg1;
+			break;
+		case 22:
+			globalint_295 = arg1;
+			break;
+		case 23:
+			globalint_296 = arg1;
+			break;
+		case 24:
+			globalint_297 = arg1;
+			break;
+		case 25:
+			globalint_298 = arg1;
+			break;
+		case 26:
+			globalint_299 = arg1;
+			break;
+		case 27:
+			globalint_300 = arg1;
+			break;
+		case 28:
+			globalint_301 = arg1;
+			break;
+		case 29:
+			globalint_302 = arg1;
+			break;
+		case 30:
+			globalint_303 = arg1;
+			break;
+		case 31:
+			globalint_304 = arg1;
+			break;
+		case 32:
+			globalint_305 = arg1;
+			break;
+		case 33:
+			globalint_306 = arg1;
+			break;
+		case 34:
+			globalint_307 = arg1;
+			break;
+		case 35:
+			globalint_308 = arg1;
+			break;
+		case 36:
+			globalint_309 = arg1;
+			break;
+		case 37:
+			globalint_310 = arg1;
+			break;
+		case 38:
+			globalint_311 = arg1;
+			break;
+		case 39:
+			globalint_312 = arg1;
+			break;
+		case 40:
+			globalint_313 = arg1;
+			break;
+		case 41:
+			globalint_314 = arg1;
+			break;
+		case 42:
+			globalint_315 = arg1;
+			break;
+		case 43:
+			globalint_316 = arg1;
+			break;
+		case 44:
+			globalint_317 = arg1;
+			break;
+		case 45:
+			globalint_318 = arg1;
+			break;
+		case 46:
+			globalint_319 = arg1;
+			break;
+		case 47:
+			globalint_320 = arg1;
+			break;
+		case 48:
+			globalint_321 = arg1;
+			break;
+		case 49:
+			globalint_322 = arg1;
+			break;
+		case 50:
+			globalint_323 = arg1;
+			break;
+		case 51:
+			globalint_324 = arg1;
+			break;
+		case 52:
+			globalint_325 = arg1;
+			break;
+		case 53:
+			globalint_326 = arg1;
+			break;
+		case 54:
+			globalint_327 = arg1;
+			break;
+		case 55:
+			globalint_328 = arg1;
+			break;
+		case 56:
+			globalint_329 = arg1;
+			break;
+		case 57:
+			globalint_330 = arg1;
+			break;
+		case 58:
+			globalint_331 = arg1;
+			break;
+		case 59:
+			globalint_332 = arg1;
+			break;
+		case 60:
+			globalint_333 = arg1;
+			break;
+		case 61:
+			globalint_334 = arg1;
+			break;
+		case 62:
+			globalint_335 = arg1;
+			break;
+		case 63:
+			globalint_336 = arg1;
+			break;
+		case 64:
+			globalint_337 = arg1;
+			break;
+		case 65:
+			globalint_338 = arg1;
+			break;
+		case 66:
+			globalint_339 = arg1;
+			break;
+		case 67:
+			globalint_340 = arg1;
+			break;
+		case 68:
+			globalint_341 = arg1;
+			break;
+		case 69:
+			globalint_342 = arg1;
+			break;
+		case 70:
+			globalint_343 = arg1;
+			break;
+		case 71:
+			globalint_344 = arg1;
+			break;
+		case 72:
+			globalint_345 = arg1;
+			break;
+		case 73:
+			globalint_346 = arg1;
+			break;
+		case 74:
+			globalint_347 = arg1;
+			break;
+		case 75:
+			globalint_348 = arg1;
+			break;
+		case 76:
+			globalint_349 = arg1;
+			break;
+		case 77:
+			globalint_350 = arg1;
+			break;
+		case 78:
+			globalint_351 = arg1;
+			break;
+		case 79:
+			globalint_352 = arg1;
+			break;
+		case 80:
+			globalint_353 = arg1;
+			break;
+		case 81:
+			globalint_354 = arg1;
+			break;
+		case 82:
+			globalint_355 = arg1;
+			break;
+		case 83:
+			globalint_356 = arg1;
+			break;
+		case 84:
+			globalint_357 = arg1;
+			break;
+		case 85:
+			globalint_358 = arg1;
+			break;
+		case 86:
+			globalint_359 = arg1;
+			break;
+		case 87:
+			globalint_360 = arg1;
+			break;
+		case 88:
+			globalint_361 = arg1;
+			break;
+		case 89:
+			globalint_362 = arg1;
+			break;
+		case 90:
+			globalint_363 = arg1;
+			break;
+		case 91:
+			globalint_364 = arg1;
+			break;
+		case 92:
+			globalint_365 = arg1;
+			break;
+		case 93:
+			globalint_366 = arg1;
+			break;
+		case 94:
+			globalint_367 = arg1;
+			break;
+		case 95:
+			globalint_368 = arg1;
+			break;
+		case 96:
+			globalint_369 = arg1;
+			break;
+		case 97:
+			globalint_370 = arg1;
+			break;
+		case 98:
+			globalint_371 = arg1;
+			break;
+		case 99:
+			globalint_372 = arg1;
+			break;
+		case 100:
+			globalint_373 = arg1;
+			break;
+		case 101:
+			globalint_374 = arg1;
+			break;
+		case 102:
+			globalint_375 = arg1;
+			break;
+		case 103:
+			globalint_376 = arg1;
+			break;
+		case 104:
+			globalint_377 = arg1;
+			break;
+		case 105:
+			globalint_378 = arg1;
+			break;
+		case 106:
+			globalint_379 = arg1;
+			break;
+		case 107:
+			globalint_380 = arg1;
+			break;
+		case 108:
+			globalint_381 = arg1;
+			break;
+		case 109:
+			globalint_382 = arg1;
+			break;
+		case 110:
+			globalint_383 = arg1;
+			break;
+		case 111:
+			globalint_384 = arg1;
+			break;
+		case 112:
+			globalint_385 = arg1;
+			break;
+		case 113:
+			globalint_386 = arg1;
+			break;
+		case 114:
+			globalint_387 = arg1;
+			break;
+		case 115:
+			globalint_388 = arg1;
+			break;
+		case 116:
+			globalint_389 = arg1;
+			break;
+		case 117:
+			globalint_390 = arg1;
+			break;
+		case 118:
+			globalint_391 = arg1;
+			break;
+		case 119:
+			globalint_392 = arg1;
+			break;
+		case 120:
+			globalint_393 = arg1;
+			break;
+		case 121:
+			globalint_394 = arg1;
+			break;
+		case 122:
+			globalint_395 = arg1;
+			break;
+		case 123:
+			globalint_396 = arg1;
+			break;
+		case 124:
+			globalint_397 = arg1;
+			break;
+		case 125:
+			globalint_398 = arg1;
+			break;
+		case 126:
+			globalint_399 = arg1;
+			break;
+		case 127:
+			globalint_400 = arg1;
+			break;
+		case 128:
+			globalint_401 = arg1;
+			break;
+		case 129:
+			globalint_402 = arg1;
+			break;
+		case 130:
+			globalint_403 = arg1;
+			break;
+		case 131:
+			globalint_404 = arg1;
+			break;
+		case 132:
+			globalint_405 = arg1;
+			break;
+		case 133:
+			globalint_406 = arg1;
+			break;
+		case 134:
+			globalint_407 = arg1;
+			break;
+		case 135:
+			globalint_408 = arg1;
+			break;
+		case 136:
+			globalint_409 = arg1;
+			break;
+		case 137:
+			globalint_410 = arg1;
+			break;
+		case 138:
+			globalint_411 = arg1;
+			break;
+		case 139:
+			globalint_412 = arg1;
+			break;
+		case 140:
+			globalint_413 = arg1;
+			break;
+		case 141:
+			globalint_414 = arg1;
+			break;
+		case 142:
+			globalint_415 = arg1;
+			break;
+		case 143:
+			globalint_416 = arg1;
+			break;
+		case 144:
+			globalint_417 = arg1;
+			break;
+		case 145:
+			globalint_418 = arg1;
+			break;
+		case 146:
+			globalint_419 = arg1;
+			break;
+		case 147:
+			globalint_420 = arg1;
+			break;
+		case 148:
+			globalint_421 = arg1;
+			break;
+		case 149:
+			globalint_422 = arg1;
+			break;
+		case 150:
+			globalint_423 = arg1;
+			break;
+		case 151:
+			globalint_424 = arg1;
+			break;
+		case 152:
+			globalint_425 = arg1;
+			break;
+		case 153:
+			globalint_426 = arg1;
+			break;
+		case 154:
+			globalint_427 = arg1;
+			break;
+		case 155:
+			globalint_428 = arg1;
+			break;
+		case 156:
+			globalint_429 = arg1;
+			break;
+		case 157:
+			globalint_430 = arg1;
+			break;
+		case 158:
+			globalint_431 = arg1;
+			break;
+		case 159:
+			globalint_432 = arg1;
+			break;
+		case 160:
+			globalint_433 = arg1;
+			break;
+		case 161:
+			globalint_434 = arg1;
+			break;
+		case 162:
+			globalint_435 = arg1;
+			break;
+		case 163:
+			globalint_436 = arg1;
+			break;
+		case 164:
+			globalint_437 = arg1;
+			break;
+		case 165:
+			globalint_438 = arg1;
+			break;
+		case 166:
+			globalint_439 = arg1;
+			break;
+		case 167:
+			globalint_440 = arg1;
+			break;
+		case 168:
+			globalint_441 = arg1;
+			break;
+		case 169:
+			globalint_442 = arg1;
+			break;
+		case 170:
+			globalint_443 = arg1;
+			break;
+		case 171:
+			globalint_444 = arg1;
+			break;
+		case 172:
+			globalint_445 = arg1;
+			break;
+		case 173:
+			globalint_446 = arg1;
+			break;
+		case 174:
+			globalint_447 = arg1;
+			break;
+		case 175:
+			globalint_448 = arg1;
+			break;
+		case 176:
+			globalint_449 = arg1;
+			break;
+		case 177:
+			globalint_450 = arg1;
+			break;
+		case 178:
+			globalint_451 = arg1;
+			break;
+		case 179:
+			globalint_452 = arg1;
+			break;
+		case 180:
+			globalint_453 = arg1;
+			break;
+		case 181:
+			globalint_454 = arg1;
+			break;
+		case 182:
+			globalint_455 = arg1;
+			break;
+		case 183:
+			globalint_456 = arg1;
+			break;
+		case 184:
+			globalint_457 = arg1;
+			break;
+		case 185:
+			globalint_458 = arg1;
+			break;
+		case 186:
+			globalint_459 = arg1;
+			break;
+		case 187:
+			globalint_460 = arg1;
+			break;
+		case 188:
+			globalint_461 = arg1;
+			break;
+		case 189:
+			globalint_462 = arg1;
+			break;
+		case 190:
+			globalint_463 = arg1;
+			break;
+		case 191:
+			globalint_464 = arg1;
+			break;
+		case 192:
+			globalint_465 = arg1;
+			break;
+		case 193:
+			globalint_466 = arg1;
+			break;
+		case 194:
+			globalint_467 = arg1;
+			break;
+		case 195:
+			globalint_468 = arg1;
+			break;
+		case 196:
+			globalint_469 = arg1;
+			break;
+		case 197:
+			globalint_470 = arg1;
+			break;
+		case 198:
+			globalint_471 = arg1;
+			break;
+		case 199:
+			globalint_472 = arg1;
+			break;
+		case 200:
+			globalint_473 = arg1;
+			break;
+		case 201:
+			globalint_474 = arg1;
+			break;
+		case 202:
+			globalint_475 = arg1;
+			break;
+		case 203:
+			globalint_476 = arg1;
+			break;
+		case 204:
+			globalint_477 = arg1;
+			break;
+		case 205:
+			globalint_478 = arg1;
+			break;
+		case 206:
+			globalint_479 = arg1;
+			break;
+		case 207:
+			globalint_480 = arg1;
+			break;
+		case 208:
+			globalint_481 = arg1;
+			break;
+		case 209:
+			globalint_482 = arg1;
+			break;
+		case 210:
+			globalint_483 = arg1;
+			break;
+		case 211:
+			globalint_484 = arg1;
+			break;
+		case 212:
+			globalint_485 = arg1;
+			break;
+		case 213:
+			globalint_486 = arg1;
+			break;
+		case 214:
+			globalint_487 = arg1;
+			break;
+		case 215:
+			globalint_488 = arg1;
+			break;
+		case 216:
+			globalint_489 = arg1;
+			break;
+		case 217:
+			globalint_490 = arg1;
+			break;
+		case 218:
+			globalint_491 = arg1;
+			break;
+		case 219:
+			globalint_492 = arg1;
+			break;
+		case 220:
+			globalint_493 = arg1;
+			break;
+		case 221:
+			globalint_494 = arg1;
+			break;
+		case 222:
+			globalint_495 = arg1;
+			break;
+		case 223:
+			globalint_496 = arg1;
+			break;
+		case 224:
+			globalint_497 = arg1;
+			break;
+		case 225:
+			globalint_498 = arg1;
+			break;
+		case 226:
+			globalint_499 = arg1;
+			break;
+		case 227:
+			globalint_500 = arg1;
+			break;
+		case 228:
+			globalint_501 = arg1;
+			break;
+		case 229:
+			globalint_502 = arg1;
+			break;
+		case 230:
+			globalint_503 = arg1;
+			break;
+		case 231:
+			globalint_504 = arg1;
+			break;
+		case 232:
+			globalint_505 = arg1;
+			break;
+		case 233:
+			globalint_506 = arg1;
+			break;
+		case 234:
+			globalint_507 = arg1;
+			break;
+		case 235:
+			globalint_508 = arg1;
+			break;
+		case 236:
+			globalint_509 = arg1;
+			break;
+		case 237:
+			globalint_510 = arg1;
+			break;
+		case 238:
+			globalint_511 = arg1;
+			break;
+		case 239:
+			globalint_512 = arg1;
+			break;
+		case 240:
+			globalint_513 = arg1;
+			break;
+		case 241:
+			globalint_514 = arg1;
+			break;
+		case 242:
+			globalint_515 = arg1;
+			break;
+		case 243:
+			globalint_516 = arg1;
+			break;
+		case 244:
+			globalint_517 = arg1;
+			break;
+		case 245:
+			globalint_518 = arg1;
+			break;
+		case 246:
+			globalint_519 = arg1;
+			break;
+		case 247:
+			globalint_520 = arg1;
+			break;
+		case 248:
+			globalint_521 = arg1;
+			break;
+		case 249:
+			globalint_522 = arg1;
+	}
+	return;
+}

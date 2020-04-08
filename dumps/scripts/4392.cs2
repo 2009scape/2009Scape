@@ -1,0 +1,15 @@
+void script_4392(int arg0) {
+	if (standart_config_2094 > 0) {
+		doWidgetType18Task(0, 31690, standart_config_2094, new WidgetPointer(arg0));
+	}
+	if (standart_config_2095 > 0) {
+		doWidgetType18Task(1, 60362, standart_config_2095, new WidgetPointer(arg0));
+	}
+	if (standart_config_2096 > 0) {
+		doWidgetType18Task(3, 55246, standart_config_2096, new WidgetPointer(arg0));
+	}
+	if (standart_config_2097 > 0) {
+		doWidgetType18Task(4, 17358, standart_config_2097, new WidgetPointer(arg0));
+	}
+	return;
+}

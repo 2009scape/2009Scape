@@ -1,0 +1,10 @@
+void script_3083(int arg0,int arg1,string arg2) {
+	if (arg1 < 0) {
+		setScriptCallOnMouseOver(3084, new WidgetPointer(arg0), arg1, add(getClientCycle(), 25), arg2, -2147483647, -2147483646, "Iiisii", new WidgetPointer(arg0));
+	} else {
+		if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+			setScriptCallOnMouseOver(3084, new WidgetPointer(arg0), arg1, add(getClientCycle(), 25), arg2, -2147483647, -2147483646, "Iiisii");
+		}
+	}
+	return;
+}

@@ -1,0 +1,28 @@
+void script_126(int arg0,int arg1,string arg2) {
+	string svar1;
+	if (((boolean)globalint_1413)) {
+		return;
+	}
+	svar1 = strRemoveEntities(arg2);
+	switch (arg0) {
+		case 1:
+			globalint_1650 = 1;
+			globalstring_23 = svar1;
+			script_1558(0);
+			return;
+		case 2:
+			if (cs2method3627(arg1)) {
+				script_1050(1, svar1);
+			} else {
+				script_1050(3, svar1);
+			}
+			break;
+		case 3:
+		case 4:
+			messageType0("That player is currently offline.");
+			break;
+		case 5:
+			cs2method3606(svar1);
+	}
+	return;
+}

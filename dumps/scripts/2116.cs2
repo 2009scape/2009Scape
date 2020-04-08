@@ -1,0 +1,36 @@
+void script_2116(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	deleteAllExtraChilds(new WidgetPointer(arg3));
+	setWidgetText(new WidgetPointer(arg4), "");
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = divide(subtract(getWidgetActualWidth(new WidgetPointer(arg0)), 320), 3);
+	while (ivar5 < getItemContainerLength(307)) {
+		if (getItemAmtInSlot(307, ivar5) > 0) {
+			script_2117(ivar5, ivar6, ivar7, arg0, arg3, arg4);
+			ivar6 = add(ivar6, 1);
+		} else {
+			script_2118(ivar5, arg0);
+		}
+		ivar5 = add(ivar5, 1);
+	}
+	ivar5 = add(ivar7, multiply(divide(add(ivar6, 1), 2), add(ivar7, 64)));
+	cs2method2100(0, 0, new WidgetPointer(arg0));
+	if (ivar5 > getWidgetActualHeight(new WidgetPointer(arg0))) {
+		setWidgetScrollMax(0, ivar5, new WidgetPointer(arg0));
+		script_31(arg1, arg0, 792, 789, 790, 791, 773, 788);
+		setWidgetPosition(392, getWidgetActualY(new WidgetPointer(arg4)), 0, 0, new WidgetPointer(arg4));
+		setWidgetPosition(392, getWidgetActualY(new WidgetPointer(arg3)), 0, 0, new WidgetPointer(arg3));
+		setWidgetIsHidden(false, new WidgetPointer(arg2));
+	} else {
+		setWidgetScrollMax(0, 0, new WidgetPointer(arg0));
+		deleteAllExtraChilds(new WidgetPointer(arg1));
+		setWidgetPosition(384, getWidgetActualY(new WidgetPointer(arg3)), 0, 0, new WidgetPointer(arg3));
+		setWidgetPosition(384, getWidgetActualY(new WidgetPointer(arg4)), 0, 0, new WidgetPointer(arg4));
+		setWidgetIsHidden(true, new WidgetPointer(arg2));
+	}
+	return;
+}

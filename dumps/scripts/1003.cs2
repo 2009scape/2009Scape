@@ -1,0 +1,13 @@
+cs2func_script_1003_struct(1,1,0) script_1003(int arg0) {
+	switch (arg0) {
+		case 0:
+			return newstruct cs2func_script_1003_struct(0, "Prayers");
+		case 1:
+			return newstruct cs2func_script_1003_struct(1, "Equipment");
+		case 2:
+			return newstruct cs2func_script_1003_struct(0, "Dungeoneering");
+		case 3:
+			return newstruct cs2func_script_1003_struct(0, "Milestones");
+	}
+	return newstruct cs2func_script_1003_struct(-1, "");
+}

@@ -1,0 +1,7 @@
+void script_2106(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	arg4 = max(min(subtract(add(arg4, rnd(1)), rnd(1)), 5), -5);
+	arg5 = max(min(subtract(add(arg5, rnd(1)), rnd(1)), 5), -5);
+	setWidgetPosition(add(arg2, arg4), add(arg3, arg5), 0, 0, new WidgetPointer(arg1));
+	setScriptCallOnGameloop(2106, new WidgetPointer(arg0), new WidgetPointer(arg1), arg2, arg3, arg4, arg5, "IIiiii", new WidgetPointer(arg0));
+	return;
+}

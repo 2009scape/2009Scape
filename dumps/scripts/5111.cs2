@@ -1,0 +1,10 @@
+void script_5111(int arg0,int arg1) {
+	standart_config_2317 = arg0;
+	if (((boolean)arg1)) {
+		script_5108(1);
+	} else {
+		script_5108(0);
+	}
+	script_5113(arg1);
+	return;
+}

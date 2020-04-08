@@ -1,0 +1,11 @@
+void script_1475() {
+	globalstring_138 = globalstring_22;
+	if (getClientCycle() > globalint_191) {
+		script_1479(globalstring_138);
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(762,17));
+		globalint_191 = add(getClientCycle(), 10);
+	} else {
+		setScriptCallOnGameloop(1476, globalint_191, "i", new WidgetPointer(762,17));
+	}
+	return;
+}

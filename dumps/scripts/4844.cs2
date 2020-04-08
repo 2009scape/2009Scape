@@ -1,0 +1,19 @@
+void script_4844(int arg0) {
+	switch (bitconfig_9558) {
+		case 1:
+			if (arg0 == bitconfig_9563) {
+				script_4846(arg0);
+			}
+			break;
+		case 2:
+			if (arg0 == bitconfig_9572) {
+				script_4846(arg0);
+			}
+			break;
+		case 3:
+			if (arg0 == bitconfig_9581) {
+				script_4846(arg0);
+			}
+	}
+	return;
+}

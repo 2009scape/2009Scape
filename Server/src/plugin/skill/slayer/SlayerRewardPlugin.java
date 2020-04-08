@@ -68,6 +68,7 @@ public class SlayerRewardPlugin extends ComponentPlugin {
 				}
 				if (purchase(player, 30)) {
 					player.getSlayer().clear();
+					player.getSlayer().setTaskCount(0);
 					player.sendMessage("You have canceled your current task.");
 				}
 				break;

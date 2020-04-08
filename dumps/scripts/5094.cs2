@@ -1,0 +1,27 @@
+string script_5094() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	string svar0;
+	string svar1;
+	int stack_dump0;
+	ivar0 = divide(globalint_995, 50);
+	ivar1 = divide(ivar0, 60);
+	ivar2 = divide(ivar1, 60);
+	stack_dump0 = mod(ivar1, 60);
+	ivar0 = mod(ivar0, 60);
+	ivar1 = stack_dump0;
+	svar0 = "";
+	svar1 = "";
+	if (ivar1 < 10) {
+		svar1 = "0" + intToStr(ivar1);
+	} else {
+		svar1 = intToStr(ivar1);
+	}
+	if (ivar0 < 10) {
+		svar0 = "0" + intToStr(ivar0);
+	} else {
+		svar0 = intToStr(ivar0);
+	}
+	return intToStr(ivar2) + ":" + svar1 + ":" + svar0;
+}

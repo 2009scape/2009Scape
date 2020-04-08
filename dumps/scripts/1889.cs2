@@ -1,0 +1,6 @@
+string script_1889() {
+	if (((boolean)script_1431())) {
+		return "World " + intToStr(getWorldId()) + " (PvP)";
+	}
+	return "World " + intToStr(getWorldId());
+}

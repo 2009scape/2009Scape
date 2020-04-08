@@ -1,0 +1,201 @@
+cs2func_script_988_struct(2,2,0) script_988(int arg0,int arg1) {
+	switch (arg0) {
+		case 0:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_988_struct(1, 4155, "Enchanted gem", "You can now use an " + "<col=000080>" + "enchanted gem" + "</col>" + " to communicate with your Slayer Master.");
+				case 1:
+					return newstruct cs2func_script_988_struct(1, 4161, "Bag of salt", "You can now use " + "<col=000080>" + "bags of salt" + "</col>" + " to finish off rock slugs.");
+				case 2:
+					return newstruct cs2func_script_988_struct(1, 6696, "Ice cooler", "You can now use " + "<col=000080>" + "ice coolers" + "</col>" + "to finish off desert lizards.");
+				case 3:
+					return newstruct cs2func_script_988_struct(1, 4551, "Spiny helmet" + "<br>" + " (with 5 Defence)", "You now have the Slayer level required to wear a " + "<col=000080>" + "spiny helmet" + "</col>" + " to fend off wall beast attacks. (You also need level 5 Defence.");
+				case 4:
+					return newstruct cs2func_script_988_struct(1, 4162, "Rock hammer", "You can now use " + "<col=000080>" + "rock hammers" + "</col>" + " to kill weakened gargoyles.");
+				case 5:
+					return newstruct cs2func_script_988_struct(1, 15490, "Members: Focus sight" + "<br>" + " (with 20 Ranged and 10 Defence)", "Members can now wear " + "<col=000080>" + "focus sights" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_988_struct(1, 15488, "Members: Hexcrest" + "<br>" + " (with 20 Magic and 10 Defence)", "Members can now wear " + "<col=000080>" + "hexcrests" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_988_struct(1, 8921, "Members: Black mask" + "<br>" + " (with 20 Strength and 10 Defence)", "Members can now wear " + "<col=000080>" + "black masks" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_988_struct(1, 13263, "Members: Slayer helmet" + "<br>" + " (after Smoking Kills)", "Members can now wear " + "<col=000080>" + "slayer helmets" + "</col>" + " (after Smoking Kills).");
+				case 9:
+					return newstruct cs2func_script_988_struct(1, 15492, "Members: Full Slayer helmet" + "<br>" + " (after Smoking Kills with 20 Ranged, Magic, Strength and 10 Defence)", "Members can now wear " + "<col=000080>" + "full slayer helmets" + "</col>" + " (after Smoking Kills with 20 Ranged, Magic, Strength and 10 Defence).");
+				case 10:
+					return newstruct cs2func_script_988_struct(10, 4164, "Face mask", "You can now wear the " + "<col=000080>" + "face mask" + "</col>" + " needed to kill dust devils.");
+				case 11:
+					return newstruct cs2func_script_988_struct(15, 4166, "Earmuffs", "You can now wear " + "<col=000080>" + "earmuffs" + "</col>" + " to protect yourself against banshees.");
+				case 12:
+					return newstruct cs2func_script_988_struct(25, 4156, "Mirror shield" + "<br>" + " (with 20 Defence)", "You now have the Slayer level required to wield " + "<col=000080>" + "mirror shields" + "</col>" + " to protect yourself from cockatrices and basilisks. (You also need level 20 Defence.)");
+				case 13:
+					return newstruct cs2func_script_988_struct(32, 6660, "Fishing explosive", "You can now use " + "<col=000080>" + "fishing explosives" + "</col>" + " to lure mogres.");
+				case 14:
+					return newstruct cs2func_script_988_struct(33, 7053, "Harpie bug lantern" + "<br>" + " (not a light source)", "You can now use " + "<col=000080>" + "harpie bug lanterns" + "</col>" + " to fend off harpie bug swarms so that you can attack.");
+				case 15:
+					return newstruct cs2func_script_988_struct(35, 8923, "Witchwood icon", "You can now wear " + "<col=000080>" + "witchwood icons" + "</col>" + " to protect yourself from cave horrors.");
+				case 16:
+					return newstruct cs2func_script_988_struct(37, 7159, "Insulated boots", "You can now wear " + "<col=000080>" + "insulated boots" + "</col>" + " to protect yourself from killerwatt shocks.");
+				case 17:
+					return newstruct cs2func_script_988_struct(39, 10952, "Slayer bell", "You can now use " + "<col=000080>" + "slayer bells" + "</col>" + ", which allow molanisks to be attacked.");
+				case 18:
+					return newstruct cs2func_script_988_struct(42, 6720, "Slayer gloves", "You can now wear " + "<col=000080>" + "slayer gloves" + "</col>" + " to protect yourself from fever spiders.");
+				case 19:
+					return newstruct cs2func_script_988_struct(55, 4158, "Leaf-bladed spear" + "<br>" + " (with 50 Attack)", "You now have the Slayer level required to wield " + "<col=000080>" + "leaf-bladed spears" + "</col>" + ", melee weapons used for killing turoth and kurask. (You also need level 50 Attack.)");
+				case 20:
+					return newstruct cs2func_script_988_struct(55, 4150, "Broad arrows" + "<br>" + " (with 50 Ranged)", "You now have the Slayer level required to fire " + "<col=000080>" + "broad arrows" + "</col>" + ", ranged weapons used for killing turoth and kurask. (You also need level 50 Ranged.)");
+				case 21:
+					return newstruct cs2func_script_988_struct(55, 13280, "Broad-tipped bolts" + "<br>" + " (with 50 Ranged)", "You now have the Slayer level required to fire " + "<col=000080>" + "broad bolts" + "</col>" + ", ranged weapons used for killing turoth and kurask. (You also need level 50 Ranged.)");
+				case 22:
+					return newstruct cs2func_script_988_struct(55, 4170, "Slayer's staff" + "<br>" + " (with 50 Magic)", "You now have the Slayer level required to wield " + "<col=000080>" + "slayer's staves" + "</col>" + ", magic weapons used for killing turoth and kurask. (You also need level 50 Magic.)");
+				case 23:
+					return newstruct cs2func_script_988_struct(55, 13290, "Leaf-bladed swords" + "<br>" + " (with 50 Attack)", "You now have the Slayer level required to wield " + "<col=000080>" + "leaf-bladed swords" + "</col>" + ", melee weapons used for killing turoth and kurask (with level 50 Attack).");
+				case 24:
+					return newstruct cs2func_script_988_struct(56, 11749, "Crystal chime", "You can now use a " + "<col=000080>" + "crystal chime" + "</col>" + " to kill warped terrorbirds and warped tortoises.");
+				case 25:
+					return newstruct cs2func_script_988_struct(57, 7432, "Fungicide spray", "You can now use " + "<col=000080>" + "fungicide spray" + "</col>" + " to finish off mutated zygomites.");
+				case 26:
+					return newstruct cs2func_script_988_struct(60, 4168, "Nose peg", "You can now wear a " + "<col=000080>" + "nosepeg" + "</col>" + " to protect yourself from aberrant spectres.");
+				case 27:
+					return newstruct cs2func_script_988_struct(70, 12862, "Dragon slayer gloves", "You can now wear " + "<col=000080>" + "dragon slayer gloves" + "</col>" + ".");
+				case 28:
+					return newstruct cs2func_script_988_struct(80, 21371, "Abyssal vine whip" + "<br>" + " (with 85 Attack)", "You now have the Slayer level required to wield " + "<col=000080>" + "abyssal vine whips" + "</col>" + ". (You also need level 85 Attack.)");
+			}
+			break;
+		case 1:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_988_struct(5, 4133, "Crawling hand", "You can now slay " + "<col=000080>" + "crawling hands" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_988_struct(7, 4521, "Cave bug", "You can now slay " + "<col=000080>" + "cave bugs" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_988_struct(10, 4134, "Cave crawler", "You can now slay " + "<col=000080>" + "cave crawlers" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_988_struct(15, 4135, "Banshee", "You can now slay " + "<col=000080>" + "banshees" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_988_struct(17, 4520, "Cave slime", "You can now slay " + "<col=000080>" + "cave slimes" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_988_struct(20, 4136, "Rockslug", "You can now slay " + "<col=000080>" + "rockslugs" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_988_struct(22, 6695, "Desert lizard", "You can now slay " + "<col=000080>" + "desert lizards" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_988_struct(25, 4137, "Cockatrice", "You can now slay " + "<col=000080>" + "cockatrices" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_988_struct(30, 4138, "Pyrefiend", "You can now slay " + "<col=000080>" + "pyrefiends" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_988_struct(32, 6661, "Mogre", "You can now slay " + "<col=000080>" + "mogres" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_988_struct(33, 7050, "Harpie bug swarm", "You can now slay " + "<col=000080>" + "harpie bug swarms" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_988_struct(35, 4519, "Wall beast", "You can now slay " + "<col=000080>" + "wall beasts" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_988_struct(37, 7160, "Killerwatt", "You can now slay " + "<col=000080>" + "killerwatts" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_988_struct(39, 10997, "Molanisk", "You can now slay " + "<col=000080>" + "molanisks" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_988_struct(40, 4139, "Basilisk", "You can now slay " + "<col=000080>" + "basilisks" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_988_struct(40, 10591, "Terror dog", "You can now slay " + "<col=000080>" + "terror dogs" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_988_struct(42, 6709, "Fever spider", "You can now slay " + "<col=000080>" + "fever spiders" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_988_struct(45, 4140, "Infernal mage", "You can now slay " + "<col=000080>" + "infernal mages" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_988_struct(47, 11047, "Brine rat", "You can now slay " + "<col=000080>" + "brine rats" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_988_struct(50, 4141, "Bloodveld", "You can now slay " + "<col=000080>" + "bloodvelds" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_988_struct(51, 14618, "Phoenix" + "<br>" + " (after In Pyre Need)", "You can now slay the " + "<col=000080>" + "phoenix" + "</col>" + "(after In Pyre Need).");
+				case 21:
+					return newstruct cs2func_script_988_struct(52, 4142, "Jelly", "You can now slay " + "<col=000080>" + "jellies" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_988_struct(55, 4143, "Turoth", "You can now slay " + "<col=000080>" + "turoths" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_988_struct(56, 11752, "Warped terrorbird", "You can now slay " + "<col=000080>" + "warped terrorbirds" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_988_struct(56, 11751, "Warped tortoise", "You can now slay " + "<col=000080>" + "warped tortoises" + "</col>" + ".");
+				case 25:
+					return newstruct cs2func_script_988_struct(57, 7420, "Mutated zygomite", "You can now slay " + "<col=000080>" + "mutated zygomites" + "</col>" + ".");
+				case 26:
+					return newstruct cs2func_script_988_struct(58, 8900, "Cave horror", "You can now slay " + "<col=000080>" + "cave horrors" + "</col>" + ".");
+				case 27:
+					return newstruct cs2func_script_988_struct(59, 11779, "Wild jade vine" + "<br>" + " (after Back to My Roots)", "You now have the Slayer level required to slay " + "<col=000080>" + "wild jade vines" + "</col>" + " (after Back to My Roots).");
+				case 28:
+					return newstruct cs2func_script_988_struct(60, 4144, "Aberrant spectre", "You can now slay " + "<col=000080>" + "aberrant spectres" + "</col>" + ".");
+				case 29:
+					return newstruct cs2func_script_988_struct(61, 12501, "'Rum'-pumped crab", "You can now slay " + "<col=000080>" + "'rum'-pumped crabs" + "</col>" + ".");
+				case 30:
+					return newstruct cs2func_script_988_struct(63, 11742, "Spiritual ranger", "You can now slay " + "<col=000080>" + "spiritual rangers" + "</col>" + ".");
+				case 31:
+					return newstruct cs2func_script_988_struct(65, 4145, "Dust devil", "You can now slay " + "<col=000080>" + "dust devils" + "</col>" + ".");
+				case 32:
+					return newstruct cs2func_script_988_struct(68, 11744, "Spiritual warrior", "You can now slay " + "<col=000080>" + "spiritual warriors" + "</col>" + ".");
+				case 33:
+					return newstruct cs2func_script_988_struct(70, 4146, "Kurask", "You can now slay " + "<col=000080>" + "kurask" + "</col>" + ".");
+				case 34:
+					return newstruct cs2func_script_988_struct(72, 6811, "Skeletal wyvern", "You can now slay " + "<col=000080>" + "skeletal wyverns" + "</col>" + ".");
+				case 35:
+					return newstruct cs2func_script_988_struct(73, 15499, "Jungle strykewyrm", "You can now slay " + "<col=000080>" + "jungle strykewyrms" + "</col>" + ".");
+				case 36:
+					return newstruct cs2func_script_988_struct(75, 4147, "Gargoyle", "You can now slay " + "<col=000080>" + "gargoyles" + "</col>" + ".");
+				case 37:
+					return newstruct cs2func_script_988_struct(77, 15498, "Desert strykewyrm", "You can now slay " + "<col=000080>" + "desert strykewyrms" + "</col>" + ".");
+				case 38:
+					return newstruct cs2func_script_988_struct(78, 15125, "Aquanite", "You can now slay " + "<col=000080>" + "aquanites" + "</col>" + ".");
+				case 39:
+					return newstruct cs2func_script_988_struct(80, 4148, "Nechryael", "You can now slay " + "<col=000080>" + "nechryaels" + "</col>" + ".");
+				case 40:
+					return newstruct cs2func_script_988_struct(80, 21366, "Mutated jadinko baby", "You can now slay " + "<col=000080>" + "mutated jadinko babies" + "</col>" + ".");
+				case 41:
+					return newstruct cs2func_script_988_struct(83, 11740, "Spiritual mage", "You can now slay " + "<col=000080>" + "spiritual mages" + "</col>" + ".");
+				case 42:
+					return newstruct cs2func_script_988_struct(85, 4149, "Abyssal demon", "You can now slay " + "<col=000080>" + "abyssal demons" + "</col>" + ".");
+				case 43:
+					return newstruct cs2func_script_988_struct(86, 21367, "Mutated jadinko guard", "You can now slay " + "<col=000080>" + "mutated jadinko guards" + "</col>" + ".");
+				case 44:
+					return newstruct cs2func_script_988_struct(90, 6637, "Dark beast", "You can now slay " + "<col=000080>" + "dark beasts" + "</col>" + ".");
+				case 45:
+					return newstruct cs2func_script_988_struct(91, 21368, "Mutated jadinko male", "You can now slay " + "<col=000080>" + "mutated jadinko males" + "</col>" + ".");
+				case 46:
+					return newstruct cs2func_script_988_struct(93, 15500, "Ice strykewyrm", "You can now slay " + "<col=000080>" + "ice strykewyrms" + "</col>" + ".");
+			}
+			break;
+		case 2:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_988_struct(1, 4155, "Burthorpe" + "<br>" + " (with level 3 Combat)", "You can now receive " + "<col=000080>" + "Slayer assignments" + "</col>" + " from the " + "<col=000080>" + "Burthorpe slayer master" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_988_struct(1, 4155, "Canifis" + "<br>" + " (with level 20 Combat)", "You now have the Slayer level required to receive " + "<col=000080>" + "slayer assignments" + "</col>" + " from the " + "<col=000080>" + "Canifis slayer master" + "</col>" + ". (You also need level 20 Combat.)");
+				case 2:
+					return newstruct cs2func_script_988_struct(1, 4155, "Edgeville Dungeon" + "<br>" + " (with level 40 Combat)", "You now have the Slayer level required to receive " + "<col=000080>" + "slayer assignments" + "</col>" + " from the " + "<col=000080>" + "Edgeville Dungeon slayer master" + "</col>" + ". (You also need level 40 Combat.)");
+				case 3:
+					return newstruct cs2func_script_988_struct(1, 4155, "Zanaris" + "<br>" + " (with level 70 Combat)", "You now have the Slayer level required to receive " + "<col=000080>" + "slayer assignments" + "</col>" + " from the " + "<col=000080>" + "Zanaris slayer master" + "</col>" + ". (You also need level 70 Combat.)");
+				case 4:
+					return newstruct cs2func_script_988_struct(35, 4155, "Pollnivneach" + "<br>" + " (after Smoking Kills)", "You now have the Slayer level required to receive " + "<col=000080>" + "slayer assignments" + "</col>" + " from the " + "<col=000080>" + "Pollnivneach slayer master" + "</col>" + " (after Smoking Kills).");
+				case 5:
+					return newstruct cs2func_script_988_struct(50, 4155, "Shilo Village" + "<br>" + " (with level 100 Combat)", "You now have the Slayer level required to receive " + "<col=000080>" + "slayer assignments" + "</col>" + " from the " + "<col=000080>" + "Shilo Village slayer master" + "</col>" + ". (You also need level 100 Combat.)");
+				case 6:
+					return newstruct cs2func_script_988_struct(75, 4155, "Ancient cavern" + "<br>" + " (with level 110 Combat)", "You now have the Slayer level required to receive " + "<col=000080>" + "slayer assignments" + "</col>" + " from the " + "<col=000080>" + "Ancient Cavern slayer master" + "</col>" + ". (You also need level 110 Combat.)");
+			}
+			break;
+		case 3:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_988_struct(41, 18504, "Night spider", "You can now slay " + "<col=000080>" + "night spiders" + "</col>" + " within Daemonheim.");
+				case 1:
+					return newstruct cs2func_script_988_struct(63, 18506, "Spiritual guardian", "You can now slay " + "<col=000080>" + "spiritual guardians" + "</col>" + " within Daemonheim.");
+				case 2:
+					return newstruct cs2func_script_988_struct(71, 18505, "Seeker", "You can now slay " + "<col=000080>" + "seekers" + "</col>" + " within Daemonheim.");
+				case 3:
+					return newstruct cs2func_script_988_struct(90, 18503, "Edimmu", "You can now slay " + "<col=000080>" + "edimmu" + "</col>" + " within Daemonheim.");
+				case 4:
+					return newstruct cs2func_script_988_struct(99, 18507, "Soulgazer", "You can now slay " + "<col=000080>" + "soulgazers" + "</col>" + " within Daemonheim.");
+			}
+			break;
+		case 4:
+			if (((boolean)arg1)) {
+				return newstruct cs2func_script_988_struct(99, 9786, "Skill mastery", "<col=000080>" + "Congratulations! You are now a master of " + "<col=800000>" + "Slayer" + "<col=000080>" + ". Why not visit the " + "<col=800000>" + "ancient cavern Slayer Master" + "<col=000080>" + "? She has something special that is only available to true masters of the " + "<col=800000>" + "Slayer" + "<col=000080>" + " skill!");
+			}
+	}
+	return newstruct cs2func_script_988_struct(0, -1, "", "");
+}

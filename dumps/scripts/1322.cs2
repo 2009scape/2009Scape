@@ -1,0 +1,24 @@
+void script_1322(int arg0,int arg1,int arg2) {
+	if (getItemIdInSlot(438, 0) != -1) {
+		setWidgetIsHidden(false, new WidgetPointer(arg0));
+		setItemOnWidgetMethod2205(getItemIdInSlot(438, 0), 1, new WidgetPointer(arg0));
+		cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + getItemName(getItemIdInSlot(438, 0)));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+	}
+	if (getItemIdInSlot(438, 1) != -1) {
+		setWidgetIsHidden(false, new WidgetPointer(arg1));
+		setItemOnWidgetMethod2205(getItemIdInSlot(438, 1), 1, new WidgetPointer(arg1));
+		cs2method2305(new WidgetPointer(arg1), "<col=ff9040>" + getItemName(getItemIdInSlot(438, 1)));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(arg1));
+	}
+	if (getItemIdInSlot(438, 2) != -1) {
+		setWidgetIsHidden(false, new WidgetPointer(arg2));
+		setItemOnWidgetMethod2205(getItemIdInSlot(438, 2), 1, new WidgetPointer(arg2));
+		cs2method2305(new WidgetPointer(arg2), "<col=ff9040>" + getItemName(getItemIdInSlot(438, 2)));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(arg2));
+	}
+	return;
+}

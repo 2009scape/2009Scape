@@ -1,0 +1,173 @@
+void script_729() {
+	script_730(1438, 51052561, 51052560);
+	script_730(1448, 51052575, 51052574);
+	script_730(1444, 51052579, 51052578);
+	script_730(1440, 51052569, 51052568);
+	script_730(1442, 51052571, 51052570);
+	script_730(1446, 51052563, 51052562);
+	script_730(1452, 51052565, 51052564);
+	script_730(1458, 51052573, 51052572);
+	script_730(1462, 51052577, 51052576);
+	script_730(1454, 51052567, 51052566);
+	script_730(13625, 51052597, 51052596);
+	script_730(13624, 51052603, 51052602);
+	script_730(13627, 51052609, 51052608);
+	script_730(13628, 51052615, 51052614);
+	script_730(13615, 51052599, 51052598);
+	script_730(13614, 51052605, 51052604);
+	script_730(13617, 51052611, 51052610);
+	script_730(13618, 51052617, 51052616);
+	script_730(13620, 51052601, 51052600);
+	script_730(13619, 51052607, 51052606);
+	script_730(13622, 51052613, 51052612);
+	script_730(13623, 51052619, 51052618);
+	script_730(13599, 51052635, 51052634);
+	script_730(13602, 51052645, 51052644);
+	script_730(13601, 51052657, 51052656);
+	script_730(13603, 51052647, 51052646);
+	script_730(13600, 51052651, 51052650);
+	script_730(13604, 51052637, 51052636);
+	script_730(13608, 51052649, 51052648);
+	script_730(13606, 51052639, 51052638);
+	script_730(13605, 51052641, 51052640);
+	script_730(13607, 51052653, 51052652);
+	script_730(13609, 51052643, 51052642);
+	script_730(13610, 51052659, 51052658);
+	script_730(13598, 51052661, 51052660);
+	script_730(13611, 51052655, 51052654);
+	script_730(13629, 51052665, 51052664);
+	script_730(1437, 51052667, 51052666);
+	setWidgetText(new WidgetPointer(779,123), "1 token each");
+	script_730(21517, 51052714, 51052713);
+	script_730(21516, 51052716, 51052715);
+	script_730(21518, 51052718, 51052717);
+	script_730(21519, 51052720, 51052719);
+	switch (standart_config_1278) {
+		case 1438:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,16));
+			break;
+		case 1440:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,24));
+			break;
+		case 1442:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,26));
+			break;
+		case 1444:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,34));
+			break;
+		case 1448:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,30));
+			break;
+		case 1446:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,18));
+			break;
+		case 1458:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,28));
+			break;
+		case 1452:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,20));
+			break;
+		case 1462:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,32));
+			break;
+		case 1454:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,22));
+			break;
+		case 13625:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,52));
+			break;
+		case 13624:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,58));
+			break;
+		case 13627:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,64));
+			break;
+		case 13628:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,70));
+			break;
+		case 13615:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,54));
+			break;
+		case 13614:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,60));
+			break;
+		case 13617:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,66));
+			break;
+		case 13618:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,72));
+			break;
+		case 13620:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,56));
+			break;
+		case 13619:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,62));
+			break;
+		case 13622:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,68));
+			break;
+		case 13623:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,74));
+			break;
+		case 13599:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,90));
+			break;
+		case 13601:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,112));
+			break;
+		case 13602:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,100));
+			break;
+		case 13603:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,102));
+			break;
+		case 13600:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,106));
+			break;
+		case 13604:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,92));
+			break;
+		case 13608:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,104));
+			break;
+		case 13606:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,94));
+			break;
+		case 13607:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,108));
+			break;
+		case 13605:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,96));
+			break;
+		case 13609:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,98));
+			break;
+		case 13610:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,114));
+			break;
+		case 13598:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,116));
+			break;
+		case 13611:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,110));
+			break;
+		case 13629:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,120));
+			break;
+		case 1437:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,122));
+			break;
+		case 21517:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,169));
+			break;
+		case 21516:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,171));
+			break;
+		case 21518:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,173));
+			break;
+		case 21519:
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(779,175));
+	}
+	return;
+}

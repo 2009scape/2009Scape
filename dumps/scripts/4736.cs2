@@ -1,0 +1,24 @@
+void script_4736(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar2 = getItemContainerLength(95);
+	ivar3 = -1;
+	if (bitconfig_9903 > 0) {
+		ivar3 = cs2method_3408(105, 118, 3879, bitconfig_9903);
+		if (ivar3 != -1) {
+			ivar2 = getItemContainerLength(ivar3);
+		}
+	}
+	cs2method2100(0, 0, new WidgetPointer(arg0));
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar4 = 0;
+	while (ivar4 < ivar2) {
+		createExtraChild(new WidgetPointer(arg0), 5, ivar4);
+		setWidgetSize(0, 0, 0, 0);
+		setWidgetPosition(0, 0, 0, 0);
+		setWidgetHidden(1);
+		ivar4 = add(ivar4, 1);
+	}
+	return;
+}

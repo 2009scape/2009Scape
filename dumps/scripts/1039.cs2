@@ -1,0 +1,75 @@
+void script_1039(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	string svar0;
+	globalint_128 = -1;
+	ivar4 = cs2method4210(globalint_161, globalstring_30);
+	ivar5 = getWidgetActualWidth(new WidgetPointer(arg1));
+	ivar6 = subtract(ivar5, 8);
+	if (ivar4 == -1) {
+		createExtraChild(new WidgetPointer(arg1), 4, 0);
+		setWidgetPosition(0, 48, 0, 0);
+		setWidgetSize(ivar5, 14, 0, 0);
+		setWidgetFont(495);
+		setWidgetText("Too many results. Please refine your search.");
+		setWidgetTextAlignment(1, 1, 0);
+		setWidgetRGB(new Color(0, 0, 0));
+		setWidgetUnknownBoolean(false);
+		setWidgetScrollMax(0, 0, new WidgetPointer(arg1));
+		script_1042(arg1, arg2);
+		return;
+	}
+	if (((boolean)ivar4)) {
+		createExtraChild(new WidgetPointer(arg1), 4, 0);
+		setWidgetPosition(0, 48, 0, 0);
+		setWidgetSize(ivar5, 14, 0, 0);
+		setWidgetFont(495);
+		setWidgetText("No matching items found.");
+		setWidgetTextAlignment(1, 1, 0);
+		setWidgetRGB(new Color(0, 0, 0));
+		setWidgetUnknownBoolean(false);
+		setWidgetScrollMax(0, 0, new WidgetPointer(arg1));
+		script_1042(arg1, arg2);
+		return;
+	}
+	ivar7 = 1;
+	ivar8 = cs2method4211();
+	svar0 = "";
+	createExtraChild(new WidgetPointer(arg1), 3, 0);
+	while (ivar8 != -1) {
+		if (((stringMethod4107(svar0, getItemName(ivar8)) != 0) && ((boolean)cs2method_3408(111, 105, 1547, ivar8))) && (stringMethod4107(lower(getItemName(ivar8)), "null") != 0)) {
+			svar0 = getItemName(ivar8);
+			createExtraChild(new WidgetPointer(arg1), 4, ivar7);
+			setWidgetPosition(4, multiply(14, subtract(ivar7, 1)), 0, 0);
+			setWidgetSize(ivar6, 14, 0, 0);
+			setWidgetRGB(new Color(0, 0, 0));
+			setWidgetText(getItemName(ivar8));
+			setWidgetFont(495);
+			setWidgetUnknownBoolean(false);
+			setScriptCallOnMouseEntered(1043, ivar7, new WidgetPointer(arg1), "iI");
+			setScriptCallOnMousePressed(1075, new WidgetPointer(arg0), arg3, ivar8, "Ieo");
+			ivar7 = add(ivar7, 1);
+		}
+		ivar8 = cs2method4211();
+	}
+	if (((boolean)ivar7)) {
+		createExtraChild(new WidgetPointer(arg1), 4, 0);
+		setWidgetPosition(0, 48, 0, 0);
+		setWidgetSize(ivar5, 14, 0, 0);
+		setWidgetFont(495);
+		setWidgetText("No matching items found.");
+		setWidgetTextAlignment(1, 1, 0);
+		setWidgetRGB(new Color(0, 0, 0));
+		setWidgetUnknownBoolean(false);
+		setWidgetScrollMax(0, 0, new WidgetPointer(arg1));
+		script_1042(arg1, arg2);
+		return;
+	}
+	setScriptCallOnKeyPress(1038, -2147483640, false, new WidgetPointer(137,1), new WidgetPointer(137,14), new WidgetPointer(137,16), new WidgetPointer(137,15), arg3, subtract(ivar7, 1), "izIIIIei", new WidgetPointer(137,13));
+	setWidgetScrollMax(0, multiply(14, subtract(ivar7, 1)), new WidgetPointer(arg1));
+	script_1042(arg1, arg2);
+	return;
+}

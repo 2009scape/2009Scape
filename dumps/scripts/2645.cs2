@@ -1,0 +1,12 @@
+void script_2645(int arg0) {
+	if (((boolean)globalint_842)) {
+		setWidgetText(new WidgetPointer(arg0), "Next page");
+		setScriptCallOnClickContextMenu(2641, "", new WidgetPointer(860,20));
+	} else {
+		if (globalint_842 == 2) {
+			setWidgetText(new WidgetPointer(arg0), "Previous page");
+			setScriptCallOnClickContextMenu(2640, "", new WidgetPointer(860,20));
+		}
+	}
+	return;
+}

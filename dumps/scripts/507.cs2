@@ -1,0 +1,8 @@
+void script_507(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6) {
+	setScriptCallOnItemContainerUpdate(712, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), new WidgetPointer(arg6), 541, 1, "IIIIIIIY", new WidgetPointer(arg0));
+	setScriptCallOnConfigChange(712, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), new WidgetPointer(arg6), 259, 1, "IIIIIIIY", new WidgetPointer(arg0));
+	script_1086(arg0, 0, 0, 0);
+	script_1086(arg4, 0, 0, 0);
+	script_713(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+	return;
+}

@@ -1,0 +1,13 @@
+void script_576() {
+	setItemOnWidgetMethod2200(-1, -1, new WidgetPointer(389,15));
+	deleteAllExtraChilds(new WidgetPointer(389,4));
+	if (strLength(globalstring_22) > 0) {
+		setWidgetIsHidden(true, new WidgetPointer(389,5));
+		script_577(globalstring_22);
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(389,5));
+		setWidgetScrollMax(0, 15, new WidgetPointer(389,4));
+		script_578();
+	}
+	return;
+}

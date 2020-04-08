@@ -1,0 +1,21 @@
+void script_2741() {
+	int ivar0;
+	string svar0;
+	string svar1;
+	svar0 = "Confirm";
+	svar1 = "Continue";
+	ivar0 = add(getTextWidth(495, svar0), 30);
+	script_3965(67371125, ivar0, svar0, "");
+	script_368(67371123, add(getTextWidth(495, svar1), 30), svar1, "");
+	svar1 = "Back";
+	ivar0 = add(ivar0, 55);
+	script_368(67371124, add(getTextWidth(495, svar1), 30), svar1, "");
+	if (((boolean)bitconfig_8246) && ((boolean)bitconfig_8247)) {
+		setWidgetPosition(20, 0, 2, 2, new WidgetPointer(1028,115));
+		setWidgetPosition(0, 0, 2, 2, new WidgetPointer(1028,116));
+	} else {
+		setWidgetPosition(ivar0, 0, 2, 2, new WidgetPointer(1028,115));
+		setWidgetPosition(ivar0, 0, 2, 2, new WidgetPointer(1028,116));
+	}
+	return;
+}

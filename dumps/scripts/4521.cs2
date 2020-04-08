@@ -1,0 +1,25 @@
+void script_4521(int arg0,int arg1,int arg2,int arg3) {
+	if (arg0 == -1) {
+		return;
+	}
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(16384, 16384, 2, 2);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetSprite(arg1);
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(16384, 16384, 2, 2);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetSprite(arg2);
+	cs2method2103(255);
+	setScriptCallOnMouseEntered(4209, new WidgetPointer(-32768,3), 0, "Ii");
+	setScriptCallOnMouseExit(4209, new WidgetPointer(-32768,3), 1, "Ii");
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(16384, 16384, 2, 2);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetSprite(arg3);
+	cs2method2103(255);
+	setScriptCallOnMousePressed(4207, new WidgetPointer(-32768,3), 0, "Ii");
+	setScriptCallOnMouseReleased(4207, new WidgetPointer(-32768,3), 255, "Ii");
+	return;
+}

@@ -1,0 +1,30 @@
+void script_1033(string arg0) {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	string svar1;
+	svar1 = "";
+	ivar0 = 0;
+	ivar0 = strIndexof(0, arg0, "|");
+	if (ivar0 != -1) {
+		svar1 = substr(add(ivar0, 1), strLength(arg0), arg0);
+	} else {
+		svar1 = arg0;
+	}
+	setWidgetText(new WidgetPointer(157,14), substr(0, ivar0, arg0));
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar1 = multiply(getLineCount(400, 495, svar1), 12);
+	ivar2 = getWidgetActualHeight(new WidgetPointer(157,25));
+	ivar2 = subtract(divide(getWidgetActualHeight(new WidgetPointer(157,25)), 2), divide(ivar1, 2));
+	script_1034(0, 35, ivar2, 400, 100, 16777215, svar1);
+	createExtraChild(new WidgetPointer(157,25), 5, 1);
+	setWidgetSprite(1074);
+	setWidgetPosition(35, subtract(ivar2, 25), 0, 0);
+	setWidgetSize(400, 32, 0, 0);
+	createExtraChild(new WidgetPointer(157,25), 5, 2);
+	setWidgetSprite(1074);
+	setWidgetPosition(35, add(ivar2, ivar1), 0, 0);
+	setWidgetSize(400, 32, 0, 0);
+	return;
+}

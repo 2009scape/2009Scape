@@ -1,0 +1,20 @@
+void script_786(int arg0) {
+	if (arg0 == 70254793) {
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(1072,53));
+	} else if (arg0 == 70254805) {
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(1072,53));
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(1072,49));
+	} else if (arg0 == 70254817) {
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(1072,57));
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(1072,49));
+	} else if (arg0 == 70254829) {
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(1072,61));
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(1072,49));
+	} else {
+		if (arg0 == 70254841) {
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(1072,65));
+			setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(1072,49));
+		}
+	}
+	return;
+}

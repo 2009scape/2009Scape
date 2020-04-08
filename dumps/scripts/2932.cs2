@@ -1,0 +1,6 @@
+void script_2932(int arg0,string arg1,string arg2) {
+	if ((stringMethod4107(arg1, "") != 0) && (stringMethod4107(arg2, "") != 0)) {
+		cs2method5421(arg0, "loginapplet/loginapplet.ws?ssl=1&expired=0&mod=" + arg1 + "&dest=" + arg2);
+	}
+	return;
+}

@@ -1,0 +1,114 @@
+int script_693(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 0;
+	ivar8 = 0;
+	ivar9 = 0;
+	ivar10 = 0;
+	if (arg0 > 255) {
+		ivar3 = 255;
+	} else if (arg0 < 0) {
+		ivar3 = 0;
+	} else {
+		ivar3 = arg0;
+	}
+	if (arg1 > 255) {
+		ivar4 = 255;
+	} else if (arg1 < 0) {
+		ivar4 = 0;
+	} else {
+		ivar4 = arg1;
+	}
+	if (arg2 > 255) {
+		ivar5 = 255;
+	} else if (arg2 < 0) {
+		ivar5 = 0;
+	} else {
+		ivar5 = arg2;
+	}
+	if (isBitFlagged(ivar3, 0)) {
+		ivar6 = flagBit(ivar6, 16);
+	}
+	if (isBitFlagged(ivar3, 1)) {
+		ivar6 = flagBit(ivar6, 17);
+	}
+	if (isBitFlagged(ivar3, 2)) {
+		ivar6 = flagBit(ivar6, 18);
+	}
+	if (isBitFlagged(ivar3, 3)) {
+		ivar6 = flagBit(ivar6, 19);
+	}
+	if (isBitFlagged(ivar3, 4)) {
+		ivar6 = flagBit(ivar6, 20);
+	}
+	if (isBitFlagged(ivar3, 5)) {
+		ivar6 = flagBit(ivar6, 21);
+	}
+	if (isBitFlagged(ivar3, 6)) {
+		ivar6 = flagBit(ivar6, 22);
+	}
+	if (isBitFlagged(ivar3, 7)) {
+		ivar6 = flagBit(ivar6, 23);
+	}
+	if (isBitFlagged(ivar4, 0)) {
+		ivar7 = flagBit(ivar7, 8);
+	}
+	if (isBitFlagged(ivar4, 1)) {
+		ivar7 = flagBit(ivar7, 9);
+	}
+	if (isBitFlagged(ivar4, 2)) {
+		ivar7 = flagBit(ivar7, 10);
+	}
+	if (isBitFlagged(ivar4, 3)) {
+		ivar7 = flagBit(ivar7, 11);
+	}
+	if (isBitFlagged(ivar4, 4)) {
+		ivar7 = flagBit(ivar7, 12);
+	}
+	if (isBitFlagged(ivar4, 5)) {
+		ivar7 = flagBit(ivar7, 13);
+	}
+	if (isBitFlagged(ivar4, 6)) {
+		ivar7 = flagBit(ivar7, 14);
+	}
+	if (isBitFlagged(ivar4, 7)) {
+		ivar7 = flagBit(ivar7, 15);
+	}
+	if (isBitFlagged(ivar5, 0)) {
+		ivar8 = flagBit(ivar8, 0);
+	}
+	if (isBitFlagged(ivar5, 1)) {
+		ivar8 = flagBit(ivar8, 1);
+	}
+	if (isBitFlagged(ivar5, 2)) {
+		ivar8 = flagBit(ivar8, 2);
+	}
+	if (isBitFlagged(ivar5, 3)) {
+		ivar8 = flagBit(ivar8, 3);
+	}
+	if (isBitFlagged(ivar5, 4)) {
+		ivar8 = flagBit(ivar8, 4);
+	}
+	if (isBitFlagged(ivar5, 5)) {
+		ivar8 = flagBit(ivar8, 5);
+	}
+	if (isBitFlagged(ivar5, 6)) {
+		ivar8 = flagBit(ivar8, 6);
+	}
+	if (isBitFlagged(ivar5, 7)) {
+		ivar8 = flagBit(ivar8, 7);
+	}
+	ivar9 = bitOr(ivar6, ivar7);
+	ivar10 = bitOr(ivar9, ivar8);
+	return ivar10;
+}

@@ -1,0 +1,8 @@
+void script_1963(int arg0,int arg1) {
+	if (standart_config_261 != arg1) {
+		setWidgetText(new WidgetPointer(arg0), "<col=ff981f>" + strRemoveEntities(getWidgetText(new WidgetPointer(arg0))) + "</col>");
+	} else {
+		setWidgetText(new WidgetPointer(arg0), strRemoveEntities(getWidgetText(new WidgetPointer(arg0))));
+	}
+	return;
+}

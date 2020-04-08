@@ -1,0 +1,13 @@
+string script_936(int arg0) {
+	int ivar1;
+	string svar0;
+	svar0 = "";
+	ivar1 = getItemHashmapData(arg0, 763);
+	switch (getItemHashmapData(arg0, 762)) {
+		case 1:
+			return script_913(standart_config_322, 10, "Part of quest: Tai Bwo Wannai Trio");
+		case 2:
+			return script_913(bitconfig_4310, 10, "Complete: Chaos Tunnels");
+	}
+	return "";
+}

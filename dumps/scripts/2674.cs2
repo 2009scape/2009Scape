@@ -1,0 +1,43 @@
+void script_2674(int arg0) {
+	if (arg0 != 0) {
+		setWidgetSprite(2034, new WidgetPointer(880,7));
+	} else {
+		setWidgetSprite(2035, new WidgetPointer(880,7));
+	}
+	if (arg0 != 1) {
+		setWidgetSprite(2034, new WidgetPointer(880,9));
+	} else {
+		setWidgetSprite(2035, new WidgetPointer(880,9));
+	}
+	if (arg0 != 2) {
+		setWidgetSprite(2034, new WidgetPointer(880,11));
+	} else {
+		setWidgetSprite(2035, new WidgetPointer(880,11));
+	}
+	if (arg0 != 3) {
+		setWidgetSprite(2034, new WidgetPointer(880,13));
+	} else {
+		setWidgetSprite(2035, new WidgetPointer(880,13));
+	}
+	if (arg0 != 4) {
+		setWidgetSprite(2034, new WidgetPointer(880,15));
+	} else {
+		setWidgetSprite(2035, new WidgetPointer(880,15));
+	}
+	if (arg0 != 5) {
+		setWidgetSprite(2034, new WidgetPointer(880,17));
+	} else {
+		setWidgetSprite(2035, new WidgetPointer(880,17));
+	}
+	if (arg0 != 6) {
+		setWidgetSprite(2034, new WidgetPointer(880,19));
+	} else {
+		setWidgetSprite(2035, new WidgetPointer(880,19));
+	}
+	if (arg0 != 7) {
+		setWidgetSprite(2034, new WidgetPointer(880,25));
+	} else {
+		setWidgetSprite(2035, new WidgetPointer(880,25));
+	}
+	return;
+}

@@ -1,0 +1,62 @@
+void script_1369(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9) {
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int stack_dump0;
+	opcStruct5224(2,0,0) structdump_1;
+	opcStruct5224(2,0,0) structdump_2;
+	opcStruct5224(2,0,0) structdump_3;
+	script_1088(arg0, 0);
+	ivar10 = -1;
+	if (globalint_622 != -1) {
+		ivar10 = getDungeonmap(globalint_622);
+		if (ivar10 == -1) {
+			ivar10 = 28;
+		}
+	}
+	ivar10 = script_2785(ivar10);
+	if (dungeonmapContains(globalint_622, ivar10)) {
+		cs2method5227(ivar10, globalint_622);
+	} else {
+		loadDungeonmap(ivar10);
+	}
+	globalint_172 = cs2method5218(ivar10);
+	script_1372();
+	script_1374(0);
+	script_1376(0, arg5, arg9);
+	script_291(0, arg6, arg7, arg8, arg4, arg5);
+	script_1839(bitconfig_5367, arg1, arg2, arg3);
+	setScriptCallOnGlobalConfigChange(1369, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), new WidgetPointer(arg6), new WidgetPointer(arg7), new WidgetPointer(arg8), new WidgetPointer(arg9), 622, 1, "IIIIIIIIIIY", new WidgetPointer(arg0));
+	setScriptCallOnConfigChange(1404, new WidgetPointer(arg1), new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg5), new WidgetPointer(arg0), bitconfig_6175, 463, 1159, 2, "IIIIIiY", new WidgetPointer(arg0));
+	setScriptCallOnKeyPress(1382, -2147483640, false, new WidgetPointer(arg4), -1, "izIc", new WidgetPointer(arg4));
+	globalstring_31 = "";
+	ivar11 = 0;
+	ivar12 = 0;
+	ivar13 = globalint_622;
+	if (ivar13 != -1) {
+		stack_dump0 = ivar13;
+		structdump_1 = cs2method5224(stack_dump0);
+		ivar12 = structdump_1.intpart_1;
+		ivar11 = structdump_1.intpart_0;
+		if ((ivar11 < 0) || (ivar12 < 0)) {
+			ivar13 = addToCoordinate(0, extractX(ivar13), script_686(subtract(extractZ(ivar13), 1), 4), extractY(ivar13));
+			stack_dump0 = ivar13;
+			structdump_2 = cs2method5224(stack_dump0);
+			ivar12 = structdump_2.intpart_1;
+			ivar11 = structdump_2.intpart_0;
+			if ((ivar11 < 0) || (ivar12 < 0)) {
+				ivar13 = addToCoordinate(0, extractX(ivar13), script_686(subtract(extractZ(ivar13), 1), 4), extractY(ivar13));
+				stack_dump0 = ivar13;
+				structdump_3 = cs2method5224(stack_dump0);
+				ivar12 = structdump_3.intpart_1;
+				ivar11 = structdump_3.intpart_0;
+				if ((ivar11 < 0) || (ivar12 < 0)) {
+					return;
+				}
+			}
+		}
+		setScriptCallOnGameloop(2054, add(getClientCycle(), 4), new WidgetPointer(arg0), ivar13, "iIc", new WidgetPointer(arg0));
+	}
+	return;
+}

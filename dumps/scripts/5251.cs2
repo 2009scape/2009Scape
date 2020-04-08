@@ -1,0 +1,5 @@
+void script_5251() {
+	setWidgetText(new WidgetPointer(1127,18), "You have received a piece of Hybrid Armour!");
+	setWidgetText(new WidgetPointer(1127,17), "Select which reward you would prefer");
+	return;
+}

@@ -1,0 +1,10 @@
+void script_423() {
+	if (globalint_1353 != -1) {
+		cameraMethod5511(globalint_1353);
+	} else {
+		if (globalint_1354 != -1) {
+			cameraMethod5511(globalint_1354);
+		}
+	}
+	return;
+}

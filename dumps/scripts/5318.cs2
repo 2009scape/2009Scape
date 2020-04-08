@@ -1,0 +1,124 @@
+void script_5318(int arg0,int arg1) {
+	switch (arg0) {
+		case 0:
+			globalint_1608 = arg1;
+			break;
+		case 1:
+			globalint_1609 = arg1;
+			break;
+		case 2:
+			globalint_1610 = arg1;
+			break;
+		case 3:
+			globalint_1611 = arg1;
+			break;
+		case 4:
+			globalint_1612 = arg1;
+			break;
+		case 5:
+			globalint_1613 = arg1;
+			break;
+		case 6:
+			globalint_1614 = arg1;
+			break;
+		case 7:
+			globalint_1615 = arg1;
+			break;
+		case 8:
+			globalint_1616 = arg1;
+			break;
+		case 9:
+			globalint_1617 = arg1;
+			break;
+		case 10:
+			globalint_1618 = arg1;
+			break;
+		case 11:
+			globalint_1619 = arg1;
+			break;
+		case 12:
+			globalint_1620 = arg1;
+			break;
+		case 13:
+			globalint_1621 = arg1;
+			break;
+		case 14:
+			globalint_1622 = arg1;
+			break;
+		case 15:
+			globalint_1623 = arg1;
+			break;
+		case 16:
+			globalint_1624 = arg1;
+			break;
+		case 17:
+			globalint_1625 = arg1;
+			break;
+		case 18:
+			globalint_1626 = arg1;
+			break;
+		case 19:
+			globalint_1627 = arg1;
+			break;
+		case 20:
+			globalint_1628 = arg1;
+			break;
+		case 21:
+			globalint_1629 = arg1;
+			break;
+		case 22:
+			globalint_1630 = arg1;
+			break;
+		case 23:
+			globalint_1631 = arg1;
+			break;
+		case 24:
+			globalint_1632 = arg1;
+			break;
+		case 25:
+			globalint_1633 = arg1;
+			break;
+		case 26:
+			globalint_1634 = arg1;
+			break;
+		case 27:
+			globalint_1635 = arg1;
+			break;
+		case 28:
+			globalint_1636 = arg1;
+			break;
+		case 29:
+			globalint_1637 = arg1;
+			break;
+		case 30:
+			globalint_1638 = arg1;
+			break;
+		case 31:
+			globalint_1639 = arg1;
+			break;
+		case 32:
+			globalint_1640 = arg1;
+			break;
+		case 33:
+			globalint_1641 = arg1;
+			break;
+		case 34:
+			globalint_1642 = arg1;
+			break;
+		case 35:
+			globalint_1643 = arg1;
+			break;
+		case 36:
+			globalint_1644 = arg1;
+			break;
+		case 37:
+			globalint_1645 = arg1;
+			break;
+		case 38:
+			globalint_1646 = arg1;
+			break;
+		case 39:
+			globalint_1647 = arg1;
+	}
+	return;
+}

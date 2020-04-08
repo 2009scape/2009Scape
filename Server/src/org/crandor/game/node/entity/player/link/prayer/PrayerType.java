@@ -12,6 +12,7 @@ import java.util.List;
  * Represents a prayer type.
  * @author Vexia
  * @author Emperor
+ * @author jamix77
  */
 public enum PrayerType {
 	THICK_SKIN(1, 12, 83, 5, PrayerCategory.BABY_BLUE, 10000, new SkillBonus(Skills.DEFENCE, 0.05)),
@@ -39,8 +40,8 @@ public enum PrayerType {
 	RETRIBUTION(46, 12, 98, 47, PrayerCategory.LIGHT_BROWN, PrayerCategory.MAGENTA, new Audio(10000)), 
 	REDEMPTION(49, 6, 99, 49, PrayerCategory.LIGHT_BROWN, PrayerCategory.MAGENTA, new Audio(2678)), 
 	SMITE(52, 2, 100, 51, PrayerCategory.LIGHT_BROWN, PrayerCategory.MAGENTA, new Audio(2685)), 
-	CHIVALRY(60, 2, 1052, 55, PrayerCategory.PINK, 1000, new SkillBonus(Skills.DEFENCE, 0.2), new SkillBonus(Skills.STRENGTH, 0.18), new SkillBonus(Skills.ATTACK, 0.15)), 
-	PIETY(70, 2, 1053, 57, PrayerCategory.PINK, 1000, new SkillBonus(Skills.DEFENCE, 0.25), new SkillBonus(Skills.STRENGTH, 0.23), new SkillBonus(Skills.ATTACK, 0.2));
+	CHIVALRY(60, 2, 1052, 55, PrayerCategory.PINK, 1000,65, new SkillBonus(Skills.DEFENCE, 0.2), new SkillBonus(Skills.STRENGTH, 0.18), new SkillBonus(Skills.ATTACK, 0.15)), 
+	PIETY(70, 2, 1053, 57, PrayerCategory.PINK, 1000, 70 , new SkillBonus(Skills.DEFENCE, 0.25), new SkillBonus(Skills.STRENGTH, 0.23), new SkillBonus(Skills.ATTACK, 0.2));
 
 	/**
 	 * Represents the a cache of objects related to prayers in order to decide
@@ -82,6 +83,11 @@ public enum PrayerType {
 	 * The sound.
 	 */
 	private Audio sound;
+	
+	/**
+	 * The required level of defence to use this prayer.
+	 */
+	private int defenceReq;
 
 	/**
 	 * The skill bonuses for this type.
@@ -99,6 +105,22 @@ public enum PrayerType {
 	PrayerType(int level, int drain, int config, int button, PrayerCategory restriction, int soundId, SkillBonus... bonuses) {
 		this(level, drain, config, button, restriction, null, new Audio(soundId), bonuses);
 	}
+	
+	/**
+	 * 
+	 * Constructs a new @{Code PrayerType} object.
+	 * @param level
+	 * @param drain
+	 * @param config
+	 * @param button
+	 * @param restriction
+	 * @param soundId
+	 * @param defenceReq
+	 * @param bonuses
+	 */
+	PrayerType(int level, int drain, int config, int button, PrayerCategory restriction, int soundId, int defenceReq, SkillBonus... bonuses) {
+		this(level, drain, config, button, restriction, null, new Audio(soundId), defenceReq,bonuses);
+	}
 
 	/**
 	 * Constructs a new {@code PrayerType} {@code Object}.
@@ -109,6 +131,23 @@ public enum PrayerType {
 	 * @param bonuses the skill bonuses for this type.
 	 */
 	PrayerType(int level, int drain, int config, int button, PrayerCategory restriction, PrayerCategory secondRestriction, Audio sound, SkillBonus... bonuses) {
+		this(level,drain,config,button,restriction,secondRestriction,sound,1,bonuses);
+	}
+	
+	/**
+	 * 
+	 * Constructs a new @{Code PrayerType} object.
+	 * @param level
+	 * @param drain
+	 * @param config
+	 * @param button
+	 * @param restriction
+	 * @param secondRestriction
+	 * @param sound
+	 * @param defenceReq
+	 * @param bonuses
+	 */
+	PrayerType(int level, int drain, int config, int button, PrayerCategory restriction, PrayerCategory secondRestriction, Audio sound, int defenceReq, SkillBonus... bonuses) {
 		this.level = level;
 		this.drain = drain;
 		this.config = config;
@@ -117,6 +156,7 @@ public enum PrayerType {
 		this.secondRestriction = secondRestriction;
 		this.sound = sound;
 		this.bonuses = bonuses;
+		this.defenceReq = defenceReq;
 	}
 
 	/**
@@ -174,9 +214,9 @@ public enum PrayerType {
 	 * @return <code>True</code> if it is permitted.
 	 */
 	public boolean permitted(final Player player) {
-		if (player.getSkills().getStaticLevel(Skills.PRAYER) < getLevel()) {
+		if (player.getSkills().getStaticLevel(Skills.PRAYER) < getLevel() || player.getSkills().getStaticLevel(Skills.DEFENCE) < defenceReq) {
 			player.getAudioManager().send(2673);
-			player.getDialogueInterpreter().sendDialogue("You need a <col=08088A>Prayer level of " + getLevel() + " to use " + StringUtils.formatDisplayName(name().toLowerCase().replace("_", " ")) + ".");
+			player.getDialogueInterpreter().sendDialogue("You need a <col=08088A>Prayer level of " + getLevel() + (player.getSkills().getStaticLevel(Skills.DEFENCE) < defenceReq ? (" and a Defence level of " + defenceReq) : "") + " to use " + StringUtils.formatDisplayName(name().toLowerCase().replace("_", " ")) + ".");
 			return false;
 		}
 		return true;
@@ -382,6 +422,14 @@ public enum PrayerType {
 	 */
 	public Audio getSound() {
 		return sound;
+	}
+
+	public int getDefenceReq() {
+		return defenceReq;
+	}
+
+	public void setDefenceReq(int defenceReq) {
+		this.defenceReq = defenceReq;
 	}
 
 }

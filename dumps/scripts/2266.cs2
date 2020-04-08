@@ -1,0 +1,54 @@
+void script_2266(int arg0) {
+	switch (arg0) {
+		case 61866061:
+			if (stringMethod4107("", globalstring_132) != 0) {
+				setWidgetText(new WidgetPointer(944,15), globalstring_132);
+			}
+			break;
+		case 61866008:
+			if (stringMethod4107("", globalstring_133) != 0) {
+				setWidgetText(new WidgetPointer(944,15), globalstring_133);
+			}
+			break;
+		case 61866014:
+			if (stringMethod4107("", globalstring_134) != 0) {
+				setWidgetText(new WidgetPointer(944,15), globalstring_134);
+			}
+			break;
+		case 61866020:
+			if (stringMethod4107("", globalstring_135) != 0) {
+				setWidgetText(new WidgetPointer(944,15), globalstring_135);
+			}
+			break;
+		case 61866026:
+			if (stringMethod4107("", globalstring_136) != 0) {
+				setWidgetText(new WidgetPointer(944,15), globalstring_136);
+			}
+			break;
+		case 61866032:
+			if (stringMethod4107("", globalstring_137) != 0) {
+				setWidgetText(new WidgetPointer(944,15), globalstring_137);
+			}
+			break;
+		case 61866038:
+			if (stringMethod4107("", globalstring_280) != 0) {
+				setWidgetText(new WidgetPointer(944,15), globalstring_280);
+			}
+			break;
+		case 61866044:
+			if (stringMethod4107("", globalstring_281) != 0) {
+				setWidgetText(new WidgetPointer(944,15), globalstring_281);
+			}
+			break;
+		case 61866050:
+			if (stringMethod4107("", globalstring_282) != 0) {
+				setWidgetText(new WidgetPointer(944,15), globalstring_282);
+			}
+			break;
+		case 61866056:
+			if (stringMethod4107("", globalstring_283) != 0) {
+				setWidgetText(new WidgetPointer(944,15), globalstring_283);
+			}
+	}
+	return;
+}

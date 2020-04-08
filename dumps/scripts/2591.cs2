@@ -1,0 +1,140 @@
+void script_2591() {
+	int ivar0;
+	int ivar1;
+	script_2590();
+	ivar0 = -1;
+	switch (globalint_929) {
+		case 0:
+			ivar0 = getItemIdInSlot(93, globalint_930);
+			break;
+		case 1:
+			ivar0 = getItemIdInSlot(93, globalint_931);
+			break;
+		case 2:
+			ivar0 = getItemIdInSlot(93, globalint_932);
+			break;
+		case 3:
+			ivar0 = getItemIdInSlot(93, globalint_933);
+			break;
+		case 4:
+			ivar0 = getItemIdInSlot(93, globalint_934);
+			break;
+		case 5:
+			ivar0 = getItemIdInSlot(93, globalint_935);
+			break;
+		case 6:
+			ivar0 = getItemIdInSlot(93, globalint_936);
+			break;
+		case 7:
+			ivar0 = getItemIdInSlot(93, globalint_937);
+			break;
+		case 8:
+			ivar0 = getItemIdInSlot(93, globalint_938);
+			break;
+		case 9:
+			ivar0 = getItemIdInSlot(93, globalint_939);
+	}
+	if (ivar0 == -1) {
+		return;
+	}
+	ivar1 = getItemHashmapData(ivar0, 806);
+	switch (globalint_929) {
+		case 0:
+			if (((boolean)bitconfig_6415)) {
+				if (((boolean)ivar1)) {
+					ivar1 = 1;
+				} else {
+					ivar1 = 0;
+				}
+			}
+			break;
+		case 1:
+			if (((boolean)bitconfig_6416)) {
+				if (((boolean)ivar1)) {
+					ivar1 = 1;
+				} else {
+					ivar1 = 0;
+				}
+			}
+			break;
+		case 2:
+			if (((boolean)bitconfig_6417)) {
+				if (((boolean)ivar1)) {
+					ivar1 = 1;
+				} else {
+					ivar1 = 0;
+				}
+			}
+			break;
+		case 3:
+			if (((boolean)bitconfig_6418)) {
+				if (((boolean)ivar1)) {
+					ivar1 = 1;
+				} else {
+					ivar1 = 0;
+				}
+			}
+			break;
+		case 4:
+			if (((boolean)bitconfig_6419)) {
+				if (((boolean)ivar1)) {
+					ivar1 = 1;
+				} else {
+					ivar1 = 0;
+				}
+			}
+			break;
+		case 5:
+			if (((boolean)bitconfig_6420)) {
+				if (((boolean)ivar1)) {
+					ivar1 = 1;
+				} else {
+					ivar1 = 0;
+				}
+			}
+			break;
+		case 6:
+			if (((boolean)bitconfig_6421)) {
+				if (((boolean)ivar1)) {
+					ivar1 = 1;
+				} else {
+					ivar1 = 0;
+				}
+			}
+			break;
+		case 7:
+			if (((boolean)bitconfig_6422)) {
+				if (((boolean)ivar1)) {
+					ivar1 = 1;
+				} else {
+					ivar1 = 0;
+				}
+			}
+			break;
+		case 8:
+			if (((boolean)bitconfig_6423)) {
+				if (((boolean)ivar1)) {
+					ivar1 = 1;
+				} else {
+					ivar1 = 0;
+				}
+			}
+			break;
+		case 9:
+			if (((boolean)bitconfig_6424)) {
+				if (((boolean)ivar1)) {
+					ivar1 = 1;
+				} else {
+					ivar1 = 0;
+				}
+			}
+	}
+	switch (ivar1) {
+		case 0:
+			setWidgetSprite(1135, new WidgetPointer(292,110));
+			break;
+		case 1:
+			setWidgetSprite(1135, new WidgetPointer(292,111));
+	}
+	return;
+}

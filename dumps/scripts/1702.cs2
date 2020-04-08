@@ -1,0 +1,42 @@
+void script_1702(int arg0) {
+	int ivar1;
+	string svar0;
+	ivar1 = getWidgetActualHeight(new WidgetPointer(271,9));
+	svar0 = "This is the effect that prayers and curses have during combat. It includes curses that have been used against you. The adjustment has no effect outside of combat. The percentage shown is relative to your skill level, and may vary depending on the enemy you are fighting, and the prayers or curses used. Partial percentages are not shown.";
+	if (arg0 >= 0) {
+		if (((boolean)globalint_1052)) {
+			if (ivar1 < 63) {
+				ivar1 = min(add(ivar1, 3), 63);
+				setScriptCallOnGameloop(1702, 0, "i", new WidgetPointer(271,9));
+				setWidgetSize(16384, ivar1, 2, 0, new WidgetPointer(271,9));
+				setWidgetSize(16384, add(ivar1, getWidgetActualHeight(new WidgetPointer(271,0))), 2, 1, new WidgetPointer(271,5));
+				setWidgetSize(16, add(add(ivar1, getWidgetActualHeight(new WidgetPointer(271,0))), 2), 0, 1, new WidgetPointer(271,6));
+			}
+			if (getWidgetActualHeight(new WidgetPointer(271,9)) >= 63) {
+				setScriptCallOnGameloop(-1, "", new WidgetPointer(271,9));
+				script_1704();
+				setWidgetIsHidden(false, new WidgetPointer(271,24));
+				setScriptCallOnMouseOver(38, new WidgetPointer(271,13), new WidgetPointer(271,49), svar0, 25, 190, "IIsii", new WidgetPointer(271,13));
+				setScriptCallOnMouseExit(40, new WidgetPointer(271,49), "I", new WidgetPointer(271,13));
+			}
+		} else {
+			if (ivar1 > 19) {
+				ivar1 = max(subtract(ivar1, 3), 19);
+				setScriptCallOnGameloop(1702, 0, "i", new WidgetPointer(271,9));
+				setWidgetSize(16384, ivar1, 2, 0, new WidgetPointer(271,9));
+				setWidgetSize(16384, add(ivar1, getWidgetActualHeight(new WidgetPointer(271,0))), 2, 1, new WidgetPointer(271,5));
+				setWidgetSize(16, add(add(ivar1, getWidgetActualHeight(new WidgetPointer(271,0))), 2), 0, 1, new WidgetPointer(271,6));
+				setScriptCallOnMouseOver(-1, "", new WidgetPointer(271,13));
+				setScriptCallOnMouseExit(-1, "", new WidgetPointer(271,13));
+			}
+			if (getWidgetActualHeight(new WidgetPointer(271,9)) <= 19) {
+				setScriptCallOnGameloop(-1, "", new WidgetPointer(271,9));
+				script_1704();
+				setWidgetIsHidden(true, new WidgetPointer(271,24));
+			}
+		}
+	} else {
+		setScriptCallOnGameloop(1702, add(arg0, 1), "i", new WidgetPointer(271,9));
+	}
+	return;
+}

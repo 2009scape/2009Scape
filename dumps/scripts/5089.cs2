@@ -1,0 +1,41 @@
+int script_5089(int arg0) {
+	switch (arg0) {
+		case 3922:
+			return bitconfig_9537;
+		case 3923:
+			return bitconfig_9533;
+		case 3924:
+			return bitconfig_9534;
+		case 3939:
+			return bitconfig_9532;
+		case 3925:
+			return bitconfig_9520;
+		case 3926:
+			return bitconfig_9521;
+		case 3927:
+			return bitconfig_9522;
+		case 3929:
+			return bitconfig_9523;
+		case 3931:
+			return bitconfig_9524;
+		case 3932:
+			return bitconfig_9525;
+		case 3933:
+			return bitconfig_9526;
+		case 3934:
+			return bitconfig_9527;
+		case 3935:
+			return bitconfig_9528;
+		case 3936:
+			return bitconfig_9529;
+		case 3937:
+			return bitconfig_9530;
+		case 3938:
+			return bitconfig_9531;
+		case 3941:
+			return bitconfig_9535;
+		case 3942:
+			return bitconfig_9536;
+	}
+	return 0;
+}

@@ -1,0 +1,5 @@
+void script_4702() {
+	cancelLogin();
+	globalint_1100 = -1;
+	return;
+}

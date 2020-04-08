@@ -1,0 +1,10 @@
+void script_3940() {
+	setScriptCallOnKeyPress(-1, "", new WidgetPointer(137,56));
+	setScriptCallOnKeyPress(3944, -2147483640, false, 0, "iz1", new WidgetPointer(890,55));
+	setScriptCallOnMousePressed(3217, -2147483647, new WidgetPointer(890,59), new WidgetPointer(890,60), new WidgetPointer(890,61), 16, "iIIIi", new WidgetPointer(890,60));
+	globalint_1099 = 0;
+	globalstring_330 = "";
+	globalint_1412 = 0;
+	script_3218(58327099, 58327100, 58327101, 16, globalstring_330);
+	return;
+}

@@ -1,0 +1,30 @@
+void script_3190() {
+	openInterface(59375688, 915);
+	setWidgetIsHidden(false, new WidgetPointer(906,55));
+	if (isWidgetHidden(cs2method_3408(105, 73, 941, 5))) {
+		script_3161(0);
+	}
+	if (strLength(globalstring_279) > 0) {
+		setWidgetText(new WidgetPointer(915,49), "Reporting: " + globalstring_279);
+	} else {
+		setWidgetText(new WidgetPointer(915,49), "Report Abuse");
+	}
+	if (hasMoreThen5Blackmarks() || (getClientRights() > 0)) {
+		if (((boolean)globalint_6)) {
+			setWidgetSprite(4084, new WidgetPointer(915,46));
+		} else {
+			setWidgetSprite(4086, new WidgetPointer(915,46));
+		}
+		if ((getBlackmarks() == 5) || (getBlackmarks() == 6)) {
+			setWidgetText(new WidgetPointer(915,47), "Suggest to mute this player for 48 hours");
+		} else {
+			setWidgetText(new WidgetPointer(915,47), "Mute this player for 48 hours");
+		}
+		setWidgetSize(add(getTextWidth(3793, getWidgetText(new WidgetPointer(915,47))), 18), getWidgetActualHeight(new WidgetPointer(915,45)), 0, 0, new WidgetPointer(915,45));
+		setWidgetIsHidden(false, new WidgetPointer(915,45));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(915,45));
+	}
+	setScriptCallOnKeyPress(3201, -2147483640, "i", new WidgetPointer(915,18));
+	return;
+}

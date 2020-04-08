@@ -1,0 +1,11 @@
+void script_2757(int arg0) {
+	if ((((boolean)globalint_173) || ((boolean)bitconfig_542)) || (arg0 != 1)) {
+		return;
+	}
+	if (cameraGetVrot() < 150) {
+		cameraMethod5504(150, 0);
+	} else {
+		cameraMethod5504(149, 0);
+	}
+	return;
+}

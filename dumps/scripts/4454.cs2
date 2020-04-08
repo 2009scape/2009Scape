@@ -1,0 +1,13 @@
+void script_4454(int arg0,int arg1) {
+	if (cs2method3750()) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(1110,52));
+		script_4444(globalint_1506);
+	} else {
+		setWidgetSprite(6256, new WidgetPointer(1110,96));
+		if (subtract(getClientCycle(), arg1) > 200) {
+			script_4445();
+			setScriptCallOnGameloop(4454, new WidgetPointer(arg0), getClientCycle(), "Ii", new WidgetPointer(1110,52));
+		}
+	}
+	return;
+}

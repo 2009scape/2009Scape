@@ -1,0 +1,23 @@
+string script_4337(int arg0) {
+	int ivar1;
+	int ivar2;
+	string svar0;
+	string svar1;
+	string svar2;
+	svar0 = "+";
+	if (arg0 < 0) {
+		svar0 = "-";
+		arg0 = subtract(0, arg0);
+	}
+	ivar1 = divide(arg0, 60);
+	ivar2 = mod(arg0, 60);
+	svar1 = intToStr(ivar1);
+	if (ivar1 < 10) {
+		svar1 = "0" + intToStr(ivar1);
+	}
+	svar2 = intToStr(ivar2);
+	if (ivar2 < 10) {
+		svar2 = "0" + intToStr(ivar2);
+	}
+	return svar0 + svar1 + ":" + svar2;
+}

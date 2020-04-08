@@ -1,0 +1,96 @@
+void script_4493(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,int arg11,int arg12,int arg13,int arg14,int arg15,int arg16,int arg17,int arg18,int arg19,int arg20,int arg21,int arg22,int arg23,int arg24,int arg25,int arg26,int arg27,int arg28,int arg29,int arg30) {
+	if (arg0 != -1) {
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+	}
+	if (arg1 != -1) {
+		script_4504(arg1);
+	}
+	if (arg2 != -1) {
+		script_4504(arg2);
+	}
+	if (arg3 != -1) {
+		script_4504(arg3);
+	}
+	if (arg4 != -1) {
+		script_4504(arg4);
+	}
+	if (arg5 != -1) {
+		script_4504(arg5);
+	}
+	if (arg6 != -1) {
+		script_4504(arg6);
+	}
+	if (arg7 != -1) {
+		script_4504(arg7);
+	}
+	if (arg8 != -1) {
+		script_4504(arg8);
+	}
+	if (arg9 != -1) {
+		script_4504(arg9);
+	}
+	if (arg10 != -1) {
+		script_4504(arg10);
+	}
+	if (arg11 != -1) {
+		script_4504(arg11);
+	}
+	if (arg12 != -1) {
+		script_4504(arg12);
+	}
+	if (arg13 != -1) {
+		script_4504(arg13);
+	}
+	if (arg14 != -1) {
+		script_4504(arg14);
+	}
+	if (arg15 != -1) {
+		script_4504(arg15);
+	}
+	if (arg16 != -1) {
+		script_4504(arg16);
+	}
+	if (arg17 != -1) {
+		script_4504(arg17);
+	}
+	if (arg18 != -1) {
+		script_4504(arg18);
+	}
+	if (arg19 != -1) {
+		script_4504(arg19);
+	}
+	if (arg20 != -1) {
+		script_4504(arg20);
+	}
+	if (arg21 != -1) {
+		script_4504(arg21);
+	}
+	if (arg22 != -1) {
+		script_4504(arg22);
+	}
+	if (arg23 != -1) {
+		script_4504(arg23);
+	}
+	if (arg24 != -1) {
+		script_4504(arg24);
+	}
+	if (arg25 != -1) {
+		script_4504(arg25);
+	}
+	if (arg26 != -1) {
+		script_4504(arg26);
+	}
+	if (arg27 != -1) {
+		script_4504(arg27);
+	}
+	if (arg28 != -1) {
+		script_4504(arg28);
+	}
+	if (arg29 != -1) {
+		script_4504(arg29);
+	}
+	if (arg30 != -1) {
+		script_4504(arg30);
+	}
+	return;
+}

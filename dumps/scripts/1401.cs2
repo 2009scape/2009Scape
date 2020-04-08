@@ -1,0 +1,53 @@
+int script_1401(int arg0,int arg1,int arg2,string arg3) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int stack_dump0;
+	arg3 = script_1602(arg3);
+	ivar3 = strLength(arg3);
+	arg0 = subtract(arg0, arg2);
+	if (arg0 <= 0) {
+		return 0;
+	}
+	if (arg0 >= getTextWidth(arg1, arg3)) {
+		return ivar3;
+	}
+	ivar4 = 0;
+	ivar5 = strLength(arg3);
+	ivar6 = -1;
+	ivar7 = 0;
+	ivar8 = 0;
+	while (ivar4 != ivar5) {
+		ivar6 = add(divide(subtract(ivar5, ivar4), 2), ivar4);
+		if (ivar6 == ivar4) {
+			ivar7 = getTextWidth(arg1, substr(0, ivar5, arg3));
+			if (ivar5 > 1) {
+				ivar8 = getTextWidth(arg1, substr(0, subtract(ivar5, 1), arg3));
+			}
+			if (subtract(ivar7, arg0) < subtract(arg0, ivar8)) {
+				return ivar5;
+			}
+			return subtract(ivar5, 1);
+		}
+		if (arg0 <= getTextWidth(arg1, substr(0, ivar6, arg3))) {
+			stack_dump0 = ivar4;
+			ivar5 = ivar6;
+			ivar4 = stack_dump0;
+		} else {
+			stack_dump0 = ivar6;
+			ivar5 = ivar5;
+			ivar4 = stack_dump0;
+		}
+	}
+	ivar7 = getTextWidth(arg1, substr(0, ivar5, arg3));
+	if (ivar5 > 1) {
+		ivar8 = getTextWidth(arg1, substr(0, subtract(ivar5, 1), arg3));
+	}
+	if (subtract(ivar7, arg0) < subtract(arg0, ivar8)) {
+		return ivar5;
+	}
+	return subtract(ivar5, 1);
+}

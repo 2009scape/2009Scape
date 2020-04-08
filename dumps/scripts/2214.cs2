@@ -1,0 +1,19 @@
+void script_2214() {
+	if (((boolean)globalint_1137)) {
+		if (getWidgetActualX(new WidgetPointer(globalint_1136)) < 256) {
+			setWidgetPosition(add(1, getWidgetActualX(new WidgetPointer(globalint_1136))), getWidgetActualY(new WidgetPointer(globalint_1136)), 0, 0, new WidgetPointer(globalint_1136));
+		}
+		if (getWidgetActualX(new WidgetPointer(globalint_1136)) > 256) {
+			setWidgetPosition(subtract(getWidgetActualX(new WidgetPointer(globalint_1136)), 1), getWidgetActualY(new WidgetPointer(globalint_1136)), 0, 0, new WidgetPointer(globalint_1136));
+		}
+		if (getWidgetActualY(new WidgetPointer(932,14)) > 70) {
+			setWidgetPosition(getWidgetActualX(new WidgetPointer(globalint_1136)), subtract(getWidgetActualY(new WidgetPointer(globalint_1136)), 2), 0, 0, new WidgetPointer(globalint_1136));
+			setWidgetPosition(getWidgetActualX(new WidgetPointer(932,14)), subtract(getWidgetActualY(new WidgetPointer(932,14)), 2), 0, 0, new WidgetPointer(932,14));
+			setScriptCallOnGameloop(2214, "", new WidgetPointer(932,1));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(globalint_1136));
+			setScriptCallOnGameloop(2215, "", new WidgetPointer(932,1));
+		}
+	}
+	return;
+}

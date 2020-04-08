@@ -1,0 +1,27 @@
+void script_3175(int arg0,string arg1,string arg2) {
+	int ivar1;
+	int ivar2;
+	ivar1 = -1;
+	ivar2 = -1;
+	switch (arg0) {
+		case 1:
+			if (isFriend(strRemoveEntities(arg2))) {
+				cs2method3605(strRemoveEntities(arg2));
+			}
+			break;
+		case 2:
+			if (isFriend(strRemoveEntities(arg2))) {
+				cs2method3607(strRemoveEntities(arg2));
+			}
+			break;
+		case 3:
+			script_3015(0, "Send message to " + arg1, "", arg2, "");
+			break;
+		case 5:
+			script_3177(0, arg1);
+			break;
+		case 10:
+			script_4465(arg2);
+	}
+	return;
+}

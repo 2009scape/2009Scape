@@ -1,0 +1,11 @@
+void script_4138(int arg0,int arg1,int arg2) {
+	createExtraChild(new WidgetPointer(arg2), 3, 0);
+	cs2method2103(255);
+	setWidgetFilled(1);
+	setWidgetRGB(new Color(arg0));
+	setWidgetSize(0, 0, 1, 1);
+	setWidgetPosition(0, 0, 1, 1);
+	arg1 = min(arg1, 250);
+	setScriptCallOnGameloop(4139, add(getClientCycle(), arg1), new WidgetPointer(arg2), "iI");
+	return;
+}

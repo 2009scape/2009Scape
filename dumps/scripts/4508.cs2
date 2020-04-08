@@ -1,0 +1,28 @@
+void script_4508(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar2 = 0;
+	globalarray_0 = new int[arg1];
+	ivar3 = 0;
+	ivar4 = 5;
+	while (ivar2 <= arg1) {
+		if (setWidgetRegister(new WidgetPointer(arg0), ivar2) && (strLength(getWidgetText()) > 0)) {
+			globalarray_0[ivar3] = ivar2;
+			ivar3 = add(ivar3, 1);
+		}
+		ivar2 = add(ivar2, 1);
+	}
+	if (ivar3 > 1) {
+		script_4424(0, arg0, 0, subtract(ivar3, 1));
+	}
+	ivar2 = 0;
+	while (ivar2 < ivar3) {
+		if (setWidgetRegister(new WidgetPointer(arg0), globalarray_0[ivar2])) {
+			setWidgetPosition(5, ivar4, 0, 0);
+			ivar4 = add(ivar4, getWidgetActualHeight());
+		}
+		ivar2 = add(ivar2, 1);
+	}
+	return;
+}

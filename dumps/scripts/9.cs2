@@ -1,0 +1,18 @@
+void script_9(int arg0,int arg1,int arg2) {
+	if (((boolean)globalint_169)) {
+		setWidgetIsHidden(false, new WidgetPointer(arg0));
+		setWidgetIsHidden(false, new WidgetPointer(arg1));
+		setWidgetIsHidden(false, new WidgetPointer(arg2));
+		script_680(arg0);
+		setScriptCallOnMouseEntered(95, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+		setScriptCallOnMouseExit(93, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+	} else {
+		deleteAllExtraChilds(new WidgetPointer(arg0));
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+		setWidgetIsHidden(true, new WidgetPointer(arg1));
+		setWidgetIsHidden(true, new WidgetPointer(arg2));
+		setScriptCallOnMouseEntered(-1, "", new WidgetPointer(arg0));
+		setScriptCallOnMouseExit(-1, "", new WidgetPointer(arg0));
+	}
+	return;
+}

@@ -1,0 +1,9 @@
+void script_2717(int arg0) {
+	if (standart_config_1496 != -1) {
+		script_2726(arg0, standart_config_1496);
+		setScriptCallOnItemContainerUpdate(2725, new WidgetPointer(arg0), standart_config_1496, standart_config_1496, 1, "IvY", new WidgetPointer(arg0));
+		setWidgetIsHidden(false, new WidgetPointer(620,22));
+		setWidgetIsHidden(false, new WidgetPointer(620,21));
+	}
+	return;
+}

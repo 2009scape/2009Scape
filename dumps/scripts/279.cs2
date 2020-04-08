@@ -1,0 +1,20 @@
+void script_279(int arg0,int arg1) {
+	string svar0;
+	svar0 = "";
+	switch (arg0) {
+		case 1:
+			svar0 = "Found the perfect tackle for three species.";
+			break;
+		case 2:
+			svar0 = "Found the perfect tackle for all six species.";
+			break;
+		case 3:
+			svar0 = "Achieved an average rating of at least 80%.";
+			break;
+		case 4:
+			svar0 = "At least 80% of fish caught were the heaviest species.";
+	}
+	setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(922,57), svar0, 25, 128, "IIsii", new WidgetPointer(arg1));
+	setScriptCallOnMouseExit(40, new WidgetPointer(922,57), "I", new WidgetPointer(arg1));
+	return;
+}

@@ -1,0 +1,16 @@
+void script_1515(int arg0,int arg1,int arg2) {
+	if (arg0 != 1) {
+		return;
+	}
+	if (((boolean)arg2)) {
+		cs2method404(1, arg1);
+		globalint_1016 = arg1;
+	} else {
+		if (arg2 == 2) {
+			cs2method404(2, arg1);
+			globalint_1017 = arg1;
+		}
+	}
+	script_1513();
+	return;
+}

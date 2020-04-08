@@ -1,0 +1,14 @@
+string script_4338(int arg0) {
+	string svar0;
+	svar0 = "";
+	if (arg0 < 10) {
+		svar0 = concat(arg0, "00:0");
+	} else if (arg0 < 60) {
+		svar0 = concat(arg0, "00:");
+	} else if (arg0 < 959) {
+		svar0 = "0" + intToStr(divide(arg0, 100)) + ":" + intToStr(mod(arg0, 100));
+	} else {
+		svar0 = intToStr(divide(arg0, 100)) + ":" + intToStr(mod(arg0, 100));
+	}
+	return svar0;
+}

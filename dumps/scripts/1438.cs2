@@ -1,0 +1,7 @@
+void script_1438(int arg0,int arg1,int arg2) {
+	if (globalint_657 <= 0) {
+		return;
+	}
+	script_1439(arg0, arg1, arg2);
+	return;
+}

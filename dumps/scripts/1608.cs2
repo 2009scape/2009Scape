@@ -1,0 +1,7 @@
+void script_1608() {
+	int ivar0;
+	ivar0 = getRenderEmoteMaxSomethingMethod4600(getItemHashmapData(getItemIdInSlot(94, 3), 644));
+	setWidgetAnimation(ivar0, new WidgetPointer(549,82));
+	setWidgetSelfFull(new WidgetPointer(549,82));
+	return;
+}

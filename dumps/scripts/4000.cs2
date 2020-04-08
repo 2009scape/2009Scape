@@ -1,0 +1,85 @@
+void script_4000(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	string svar0;
+	svar0 = "";
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	switch (arg0) {
+		case 0:
+			setWidgetIsHidden(true, new WidgetPointer(1056,92));
+			setWidgetIsHidden(true, new WidgetPointer(1056,94));
+			setWidgetIsHidden(false, new WidgetPointer(1056,125));
+			if (((boolean)stringMethod4107(getWidgetText(new WidgetPointer(1056,91)), getOtherCommonData(1753, 1266))) || (((boolean)stringMethod4107(getWidgetText(new WidgetPointer(1056,91)), getOtherCommonData(1752, 1266))) && (standart_config_281 == 1000))) {
+				svar0 = "Click on the Hints tab for more on how to complete this Task.";
+			} else {
+				if (((boolean)stringMethod4107(getWidgetText(new WidgetPointer(1056,91)), getOtherCommonData(1754, 1266))) || ((boolean)stringMethod4107(getWidgetText(new WidgetPointer(1056,91)), getOtherCommonData(1518, 1266)))) {
+					svar0 = "Remember, the Hints tab provides more details about a Task.";
+				}
+			}
+			if (getDisplayMode() >= 2) {
+				ivar1 = 196;
+				ivar2 = 183;
+				ivar3 = 1;
+				if (getWidgetActualWidth(new WidgetPointer(746,2)) < 997) {
+					ivar2 = add(ivar2, 40);
+				}
+			} else {
+				ivar1 = 217;
+				ivar2 = 177;
+			}
+			break;
+		case 1:
+			setWidgetIsHidden(true, new WidgetPointer(1056,92));
+			setWidgetIsHidden(false, new WidgetPointer(1056,94));
+			setWidgetIsHidden(true, new WidgetPointer(1056,125));
+			if (((boolean)stringMethod4107(getWidgetText(new WidgetPointer(1056,91)), getOtherCommonData(1753, 1266))) || (((boolean)stringMethod4107(getWidgetText(new WidgetPointer(1056,91)), getOtherCommonData(1752, 1266))) && (standart_config_281 == 1000))) {
+				svar0 = "Click on the Hints tab for more on how to complete this Task.";
+			} else {
+				if (((boolean)stringMethod4107(getWidgetText(new WidgetPointer(1056,91)), getOtherCommonData(1754, 1266))) || ((boolean)stringMethod4107(getWidgetText(new WidgetPointer(1056,91)), getOtherCommonData(1518, 1266)))) {
+					svar0 = "Remember, the Hints tab provides more details about a Task.";
+				}
+			}
+			if (getDisplayMode() >= 2) {
+				ivar1 = 196;
+				ivar2 = 183;
+				ivar3 = 1;
+				if (getWidgetActualWidth(new WidgetPointer(746,2)) < 997) {
+					ivar2 = add(ivar2, 40);
+				}
+			} else {
+				ivar1 = 217;
+				ivar2 = 177;
+			}
+			break;
+		case 2:
+			setWidgetIsHidden(false, new WidgetPointer(1056,92));
+			setWidgetIsHidden(true, new WidgetPointer(1056,94));
+			setWidgetIsHidden(true, new WidgetPointer(1056,125));
+			if (((boolean)stringMethod4107(getWidgetText(new WidgetPointer(1056,91)), getOtherCommonData(1753, 1266))) || ((boolean)stringMethod4107(getWidgetText(new WidgetPointer(1056,91)), getOtherCommonData(1754, 1266)))) {
+				svar0 = "The '?' icon will add an arrow to the screen which points to your destination.";
+			}
+			if (getDisplayMode() >= 2) {
+				ivar1 = 196;
+				ivar2 = 87;
+				ivar3 = 1;
+				if (getWidgetActualWidth(new WidgetPointer(746,2)) < 997) {
+					ivar2 = add(ivar2, 40);
+				}
+			} else {
+				ivar1 = 208;
+				ivar2 = 78;
+			}
+	}
+	if (((boolean)bitconfig_9030)) {
+		svar0 = "";
+	}
+	if (((boolean)ivar3)) {
+		script_4247(ivar1, ivar2, 1, 16777215, 5631, svar0);
+	} else {
+		script_4248(ivar1, ivar2, 1, 16777215, 5631, svar0);
+	}
+	return;
+}

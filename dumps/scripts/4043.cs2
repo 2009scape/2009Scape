@@ -1,0 +1,28 @@
+void script_4043() {
+	if (((boolean)bitconfig_8655)) {
+		setWidgetIsHidden(true, new WidgetPointer(1057,35));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(1057,35));
+	}
+	if (((boolean)bitconfig_8656)) {
+		setWidgetIsHidden(true, new WidgetPointer(1057,36));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(1057,36));
+	}
+	if (((boolean)bitconfig_8657)) {
+		setWidgetIsHidden(true, new WidgetPointer(1057,37));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(1057,37));
+	}
+	if (((boolean)bitconfig_8658)) {
+		setWidgetIsHidden(true, new WidgetPointer(1057,38));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(1057,38));
+	}
+	if (((boolean)bitconfig_8659)) {
+		setWidgetIsHidden(true, new WidgetPointer(1057,39));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(1057,39));
+	}
+	return;
+}

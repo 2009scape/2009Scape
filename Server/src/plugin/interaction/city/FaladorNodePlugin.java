@@ -83,19 +83,6 @@ public final class FaladorNodePlugin extends OptionHandler {
 		case 2290:
 			player.getDialogueInterpreter().open(id, node);
 			return true;
-		case 245:
-			if (node.getLocation().equals(new Location(2931, 3515, 0))) {
-				final List<NPC> npcs = RegionManager.getLocalNpcs(player);
-				for (NPC n : npcs) {
-					if (n.getId() == 188) {
-						n.sendChat("Hands off zamorak's wine!");
-						n.getProperties().getCombatPulse().attack(player);
-					}
-				}
-			} else {
-				return PickupHandler.take(player, (GroundItem) node);
-			}
-			break;
 		case 5020:
 			player.getDialogueInterpreter().sendDialogue("You must visit Keldagrim before you are allowed to ride mine carts.");
 			break;

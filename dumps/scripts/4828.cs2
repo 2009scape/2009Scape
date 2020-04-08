@@ -1,0 +1,19 @@
+int script_4828(int arg0) {
+	switch (bitconfig_9558) {
+		case 1:
+			if (((boolean)bitconfig_9559)) {
+				return 1;
+			}
+			break;
+		case 2:
+			if (((boolean)bitconfig_9560)) {
+				return 1;
+			}
+			break;
+		case 3:
+			if (((boolean)bitconfig_9561)) {
+				return 1;
+			}
+	}
+	return 0;
+}

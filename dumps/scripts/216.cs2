@@ -1,0 +1,24 @@
+void script_216() {
+	globalint_790 = 1;
+	setWidgetIsHidden(true, new WidgetPointer(594,61));
+	setWidgetIsHidden(true, new WidgetPointer(594,34));
+	setWidgetIsHidden(true, new WidgetPointer(594,33));
+	setWidgetIsHidden(true, new WidgetPointer(594,148));
+	setWidgetIsHidden(true, new WidgetPointer(594,149));
+	setWidgetIsHidden(true, new WidgetPointer(594,150));
+	setWidgetIsHidden(true, new WidgetPointer(594,151));
+	setWidgetIsHidden(true, new WidgetPointer(594,165));
+	setWidgetIsHidden(true, new WidgetPointer(594,166));
+	setWidgetIsHidden(true, new WidgetPointer(594,104));
+	setWidgetIsHidden(true, new WidgetPointer(594,120));
+	setWidgetIsHidden(true, new WidgetPointer(594,62));
+	setWidgetIsHidden(true, new WidgetPointer(594,117));
+	setWidgetIsHidden(true, new WidgetPointer(594,121));
+	if (((boolean)getLanguage())) {
+		setWidgetIsHidden(false, new WidgetPointer(594,61));
+		script_217();
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(594,33));
+	}
+	return;
+}

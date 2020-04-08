@@ -1,0 +1,37 @@
+void script_4038() {
+	int ivar0;
+	ivar0 = 0;
+	if (globalint_1407 < 9) {
+		switch (getAffid()) {
+			case 373:
+			case 254:
+			case 289:
+			case 290:
+			case 291:
+			case 257:
+			case 292:
+			case 293:
+			case 294:
+			case 295:
+			case 296:
+			case 13:
+				ivar0 = 0;
+				break;
+			default:
+				ivar0 = 1;
+		}
+		if (((boolean)ivar0)) {
+			cs2method5421(0, "redirect.ws?mod=create&ssl=true&dest=herotopia.ws#herotopia_info");
+			return;
+		}
+	}
+	globalint_174 = 17;
+	setWidgetIsHidden(true, new WidgetPointer(673,57));
+	setWidgetIsHidden(true, new WidgetPointer(673,56));
+	setWidgetIsHidden(false, new WidgetPointer(673,58));
+	setWidgetSprite(4129, new WidgetPointer(673,17));
+	setWidgetSprite(4129, new WidgetPointer(673,14));
+	setWidgetSprite(4129, new WidgetPointer(673,16));
+	setWidgetSprite(4129, new WidgetPointer(673,15));
+	return;
+}

@@ -1,0 +1,11 @@
+void script_2802(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	ivar2 = getWidgetShadeColor(new WidgetPointer(arg1));
+	ivar3 = min(max(add(ivar2, arg0), 0), 255);
+	cs2method2103(ivar3, new WidgetPointer(arg1));
+	if (((boolean)ivar3) || (ivar3 == 255)) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg1));
+	}
+	return;
+}

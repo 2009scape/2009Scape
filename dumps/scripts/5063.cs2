@@ -1,0 +1,29 @@
+void script_5063(int arg0,int arg1,int arg2) {
+	int ivar3;
+	ivar3 = multiply(arg1, 12);
+	if (((boolean)arg2)) {
+		if (setWidgetRegister(new WidgetPointer(arg0), add(ivar3, 5))) {
+			setWidgetSprite(7552);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(ivar3, 6))) {
+			setWidgetSprite(7551);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(ivar3, 7))) {
+			setWidgetSprite(7553);
+		}
+	} else {
+		if (setWidgetRegister(new WidgetPointer(arg0), add(ivar3, 5))) {
+			setWidgetSprite(7549);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(ivar3, 6))) {
+			setWidgetSprite(7548);
+		}
+		if (setWidgetRegister(new WidgetPointer(arg0), add(ivar3, 7))) {
+			setWidgetSprite(7550);
+		}
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), add(ivar3, 10))) {
+		setWidgetSprite(7409);
+	}
+	return;
+}

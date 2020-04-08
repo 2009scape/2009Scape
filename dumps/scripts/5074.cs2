@@ -1,0 +1,32 @@
+void script_5074(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int stack_dump0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		if (globalint_1065 == -1) {
+			setWidgetHidden(1);
+			return;
+		}
+		stack_dump0 = subtract(extractX(getMyPositionHash()), extractX(globalint_1065));
+		ivar3 = subtract(extractY(getMyPositionHash()), extractY(globalint_1065));
+		ivar2 = stack_dump0;
+		if ((((ivar2 < 0) || (ivar2 >= 112)) || (ivar3 < 0)) || (ivar3 >= 112)) {
+			setWidgetHidden(1);
+			return;
+		}
+		ivar4 = add(globalint_1396, 1);
+		setWidgetHidden(0);
+		setWidgetPosition(subtract(multiply(add(ivar2, 2), globalint_1396), 1), subtract(getWidgetScrollMaxV(new WidgetPointer(arg0)), add(multiply(add(ivar3, 2), globalint_1396), ivar4)), 0, 0);
+		setWidgetSize(ivar4, ivar4, 0, 0);
+		if (mod(getClientCycle(), 40) < 20) {
+			setWidgetRGB(new Color(143, 143, 143));
+		} else {
+			setWidgetRGB(new Color(221, 221, 0));
+		}
+	}
+	return;
+}

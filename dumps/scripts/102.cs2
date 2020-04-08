@@ -1,0 +1,31 @@
+void script_102(string arg0) {
+	if (globalint_5 > 1) {
+		return;
+	}
+	if (getDisplayMode() >= 2) {
+		setWidgetIsHidden(false, new WidgetPointer(746,73));
+	}
+	setWidgetFont(497, new WidgetPointer(752,4));
+	setWidgetFont(497, new WidgetPointer(752,5));
+	setWidgetSize(0, 20, 1, 1, new WidgetPointer(752,4));
+	setWidgetSize(0, 20, 1, 0, new WidgetPointer(752,5));
+	setWidgetPosition(0, 0, 1, 0, new WidgetPointer(752,4));
+	setWidgetPosition(0, 0, 1, 2, new WidgetPointer(752,5));
+	setWidgetIsHidden(false, new WidgetPointer(752,3));
+	setWidgetIsHidden(true, new WidgetPointer(752,7));
+	setWidgetIsHidden(true, new WidgetPointer(752,8));
+	setWidgetText(new WidgetPointer(752,4), arg0);
+	setWidgetText(new WidgetPointer(752,5), "Click here to continue");
+	globalint_5 = 1;
+	setScriptCallOnMousePressed(101, "", new WidgetPointer(752,3));
+	setScriptCallOnKeyPress(-1, "", new WidgetPointer(752,5));
+	setWidgetRGB(new Color(0, 0, 128), new WidgetPointer(752,5));
+	setScriptCallOnMouseOver(45, new WidgetPointer(-32768,3), 16777215, "Ii", new WidgetPointer(752,5));
+	setScriptCallOnMouseExit(45, new WidgetPointer(-32768,3), 128, "Ii", new WidgetPointer(752,5));
+	script_1188();
+	setWidgetIsHidden(true, new WidgetPointer(752,6));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(752,5));
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(752,5));
+	setScriptCallOnAnyWidgetOpenAndClose(3450, 1, "i", new WidgetPointer(752,5));
+	return;
+}

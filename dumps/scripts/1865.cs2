@@ -1,0 +1,7 @@
+void script_1865(int arg0,int arg1) {
+	if (arg0 != 1) {
+		return;
+	}
+	messageType0(cs2method_3408(111, 115, 2024, arg1));
+	return;
+}

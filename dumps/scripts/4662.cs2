@@ -1,0 +1,51 @@
+void script_4662(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	cs2func_script_4661_struct(2,0,0) structdump_0;
+	ivar2 = 0;
+	ivar3 = 0;
+	structdump_0 = script_4661();
+	ivar3 = structdump_0.intpart_1;
+	ivar2 = structdump_0.intpart_0;
+	if (((boolean)ivar2) && (ivar3 >= 3)) {
+		switch (arg0) {
+			case 1507330:
+				setWidgetRGB(new Color(arg1), new WidgetPointer(arg0));
+				break;
+			case 1507331:
+				setWidgetRGB(new Color(arg1), new WidgetPointer(arg0));
+				break;
+			case 1507332:
+				return;
+			case 1507333:
+				return;
+		}
+	} else if ((ivar2 == 2) && (ivar3 >= 3)) {
+		switch (arg0) {
+			case 1507332:
+				setWidgetRGB(new Color(arg1), new WidgetPointer(arg0));
+				break;
+			case 1507333:
+				setWidgetRGB(new Color(arg1), new WidgetPointer(arg0));
+				break;
+			case 1507330:
+				return;
+			case 1507331:
+				return;
+		}
+	} else {
+		switch (arg0) {
+			case 1507331:
+				setWidgetRGB(new Color(arg1), new WidgetPointer(arg0));
+				break;
+			case 1507332:
+				setWidgetRGB(new Color(arg1), new WidgetPointer(arg0));
+				break;
+			case 1507330:
+				return;
+			case 1507333:
+				return;
+		}
+	}
+	return;
+}

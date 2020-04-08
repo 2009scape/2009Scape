@@ -1,0 +1,74 @@
+void script_652(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8) {
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	string svar0;
+	createExtraChild(new WidgetPointer(arg5), 3, arg6);
+	setWidgetPosition(arg0, arg1, 0, 0);
+	setWidgetSize(arg2, arg3, 0, 0);
+	setWidgetRGB(new Color(0, 0, 0));
+	setWidgetFilled(0);
+	svar0 = "null";
+	if (getGENotStarted(arg4)) {
+		if (getGEIsDone(arg4)) {
+			if (getGEItemAmtTransfered(arg4) == getGEItemAmt(arg4)) {
+				svar0 = "Completed";
+			} else {
+				svar0 = "Aborted";
+			}
+		} else {
+			svar0 = "In progress";
+		}
+		if (arg7 != -1) {
+			if (((boolean)arg8)) {
+				setScriptCallOnMouseOver(648, new WidgetPointer(arg5), arg6, new WidgetPointer(arg7), svar0, 25, 106, "IiIsii");
+			} else if (arg8 == 2) {
+				setScriptCallOnMouseOver(649, new WidgetPointer(arg5), new WidgetPointer(arg7), svar0, 25, 106, "IIsii");
+			} else {
+				setScriptCallOnMouseOver(568, new WidgetPointer(arg5), arg6, new WidgetPointer(arg7), svar0, 25, 106, "IiIsii");
+			}
+			setScriptCallOnMouseExit(40, new WidgetPointer(arg7), "I");
+		}
+	}
+	ivar9 = add(arg0, 1);
+	ivar10 = add(arg1, 1);
+	ivar11 = subtract(arg2, 2);
+	ivar12 = subtract(arg3, 2);
+	createExtraChild(new WidgetPointer(arg5), 3, add(arg6, 1));
+	setWidgetPosition(ivar9, ivar10, 0, 0);
+	setWidgetSize(ivar11, ivar12, 0, 0);
+	setWidgetRGB(new Color(48, 37, 32));
+	cs2method2103(100);
+	setWidgetFilled(1);
+	createExtraChild(new WidgetPointer(arg5), 3, add(arg6, 2));
+	if (getGENotStarted(arg4)) {
+		setWidgetPosition(add(arg0, 1), add(arg1, 1), 0, 0);
+		cs2method2103(0);
+		setWidgetFilled(1);
+		if (getGEIsDone(arg4)) {
+			setWidgetSize(ivar11, ivar12, 0, 0);
+			if (getGEItemAmtTransfered(arg4) == getGEItemAmt(arg4)) {
+				setWidgetRGB(new Color(63, 130, 30));
+			} else {
+				setWidgetRGB(new Color(138, 0, 16));
+			}
+		} else {
+			setWidgetSize(multiplyDivide(getGEItemAmtTransfered(arg4), getGEItemAmt(arg4), ivar11), ivar12, 0, 0);
+			setWidgetRGB(new Color(198, 139, 1));
+		}
+	}
+	createExtraChild(new WidgetPointer(arg5), 3, add(arg6, 3));
+	setWidgetPosition(ivar9, ivar10, 0, 0);
+	setWidgetSize(ivar11, 3, 0, 0);
+	setWidgetFilled(1);
+	cs2method2103(200);
+	setWidgetRGB(new Color(0, 0, 0));
+	createExtraChild(new WidgetPointer(arg5), 3, add(arg6, 4));
+	setWidgetPosition(ivar9, add(ivar10, 3), 0, 0);
+	setWidgetSize(3, subtract(ivar12, 3), 0, 0);
+	setWidgetFilled(1);
+	cs2method2103(200);
+	setWidgetRGB(new Color(0, 0, 0));
+	return;
+}

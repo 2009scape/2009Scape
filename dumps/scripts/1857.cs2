@@ -1,0 +1,4 @@
+void script_1857(int arg0) {
+	globalint_998 = arg0;
+	return;
+}

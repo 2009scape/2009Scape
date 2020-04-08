@@ -1,0 +1,82 @@
+void script_4183(int arg0) {
+	if (arg0 == 70254730) {
+		setWidgetIsHidden(false, new WidgetPointer(1072,135));
+		setWidgetIsHidden(true, new WidgetPointer(1072,147));
+		setWidgetIsHidden(true, new WidgetPointer(1072,159));
+		setWidgetIsHidden(true, new WidgetPointer(1072,171));
+		setWidgetModel(63848, new WidgetPointer(1072,48));
+		setWidgetModel(63838, new WidgetPointer(1072,74));
+		setWidgetModel(63824, new WidgetPointer(1072,80));
+		setWidgetModel(63837, new WidgetPointer(1072,88));
+		setWidgetModel(63823, new WidgetPointer(1072,93));
+		setWidgetText(new WidgetPointer(1072,46), intToStr(1));
+		setWidgetText(new WidgetPointer(1072,71), intToStr(1));
+		setWidgetText(new WidgetPointer(1072,72), intToStr(2));
+		setWidgetText(new WidgetPointer(1072,12), intToStr(1));
+		setWidgetText(new WidgetPointer(1072,13), intToStr(4));
+		setWidgetText(new WidgetPointer(1072,6), intToStr(1));
+		setWidgetText(new WidgetPointer(1072,7), intToStr(6));
+		setWidgetText(new WidgetPointer(1072,2), intToStr(1));
+		setWidgetText(new WidgetPointer(1072,3), intToStr(8));
+	} else if (arg0 == 70254742) {
+		setWidgetIsHidden(true, new WidgetPointer(1072,135));
+		setWidgetIsHidden(false, new WidgetPointer(1072,147));
+		setWidgetIsHidden(true, new WidgetPointer(1072,159));
+		setWidgetIsHidden(true, new WidgetPointer(1072,171));
+		setWidgetModel(63835, new WidgetPointer(1072,48));
+		setWidgetModel(63825, new WidgetPointer(1072,74));
+		setWidgetModel(63845, new WidgetPointer(1072,80));
+		setWidgetModel(63828, new WidgetPointer(1072,88));
+		setWidgetModel(63841, new WidgetPointer(1072,93));
+		setWidgetText(new WidgetPointer(1072,46), intToStr(9));
+		setWidgetText(new WidgetPointer(1072,71), intToStr(4));
+		setWidgetText(new WidgetPointer(1072,72), intToStr(7));
+		setWidgetText(new WidgetPointer(1072,12), intToStr(3));
+		setWidgetText(new WidgetPointer(1072,13), intToStr(12));
+		setWidgetText(new WidgetPointer(1072,6), intToStr(3));
+		setWidgetText(new WidgetPointer(1072,7), intToStr(14));
+		setWidgetText(new WidgetPointer(1072,2), intToStr(2));
+		setWidgetText(new WidgetPointer(1072,3), intToStr(16));
+	} else if (arg0 == 70254754) {
+		setWidgetIsHidden(true, new WidgetPointer(1072,135));
+		setWidgetIsHidden(true, new WidgetPointer(1072,147));
+		setWidgetIsHidden(false, new WidgetPointer(1072,159));
+		setWidgetIsHidden(true, new WidgetPointer(1072,171));
+		setWidgetModel(63827, new WidgetPointer(1072,48));
+		setWidgetModel(63833, new WidgetPointer(1072,74));
+		setWidgetModel(63831, new WidgetPointer(1072,80));
+		setWidgetModel(63842, new WidgetPointer(1072,88));
+		setWidgetModel(63856, new WidgetPointer(1072,93));
+		setWidgetText(new WidgetPointer(1072,46), intToStr(12));
+		setWidgetText(new WidgetPointer(1072,71), intToStr(9));
+		setWidgetText(new WidgetPointer(1072,72), intToStr(17));
+		setWidgetText(new WidgetPointer(1072,12), intToStr(6));
+		setWidgetText(new WidgetPointer(1072,13), intToStr(24));
+		setWidgetText(new WidgetPointer(1072,6), intToStr(4));
+		setWidgetText(new WidgetPointer(1072,7), intToStr(22));
+		setWidgetText(new WidgetPointer(1072,2), intToStr(4));
+		setWidgetText(new WidgetPointer(1072,3), intToStr(30));
+	} else {
+		if (arg0 == 70254766) {
+			setWidgetIsHidden(true, new WidgetPointer(1072,135));
+			setWidgetIsHidden(true, new WidgetPointer(1072,147));
+			setWidgetIsHidden(true, new WidgetPointer(1072,159));
+			setWidgetIsHidden(false, new WidgetPointer(1072,171));
+			setWidgetModel(63836, new WidgetPointer(1072,48));
+			setWidgetModel(63851, new WidgetPointer(1072,74));
+			setWidgetModel(63855, new WidgetPointer(1072,80));
+			setWidgetModel(63832, new WidgetPointer(1072,88));
+			setWidgetModel(63834, new WidgetPointer(1072,93));
+			setWidgetText(new WidgetPointer(1072,46), intToStr(75));
+			setWidgetText(new WidgetPointer(1072,71), intToStr(40));
+			setWidgetText(new WidgetPointer(1072,72), intToStr(80));
+			setWidgetText(new WidgetPointer(1072,12), intToStr(30));
+			setWidgetText(new WidgetPointer(1072,13), intToStr(120));
+			setWidgetText(new WidgetPointer(1072,6), intToStr(25));
+			setWidgetText(new WidgetPointer(1072,7), intToStr(150));
+			setWidgetText(new WidgetPointer(1072,2), intToStr(18));
+			setWidgetText(new WidgetPointer(1072,3), intToStr(144));
+		}
+	}
+	return;
+}

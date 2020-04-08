@@ -1,0 +1,21 @@
+void script_3018() {
+	setWidgetText(new WidgetPointer(906,149), "");
+	setWidgetText(new WidgetPointer(906,151), "");
+	setScriptCallOnKeyPress(-1, "", new WidgetPointer(906,151));
+	setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(906,155));
+	setWidgetText(new WidgetPointer(906,159), "Ok");
+	setWidgetContextMenuOption(1, new WidgetPointer(906,159), "Ok");
+	setWidgetText(new WidgetPointer(906,161), "Close");
+	setWidgetContextMenuOption(1, new WidgetPointer(906,161), "Close");
+	setWidgetSize(265, 136, 0, 0, new WidgetPointer(906,147));
+	setWidgetSize(0, 0, 1, 1, new WidgetPointer(906,151));
+	setWidgetSize(8034, 0, 2, 1, new WidgetPointer(906,155));
+	setWidgetSize(8034, 0, 2, 1, new WidgetPointer(906,159));
+	setWidgetSize(8034, 0, 2, 1, new WidgetPointer(906,160));
+	setWidgetSize(8034, 0, 2, 1, new WidgetPointer(906,161));
+	setWidgetIsHidden(false, new WidgetPointer(906,160));
+	setWidgetIsHidden(false, new WidgetPointer(906,161));
+	globalstring_277 = "";
+	globalint_1650 = 0;
+	return;
+}

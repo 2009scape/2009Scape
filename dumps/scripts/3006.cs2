@@ -1,0 +1,30 @@
+void script_3006(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7) {
+	setWidgetSize(0, 88, 1, 0, new WidgetPointer(arg1));
+	if (getWidgetSpriteId(new WidgetPointer(arg5)) == 2669) {
+		script_3007(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+	} else {
+		script_3009(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+	}
+	switch (arg0) {
+		case 0:
+			setWidgetPosition(0, 88, 0, 0, new WidgetPointer(907,4));
+			setWidgetPosition(0, add(88, 30), 0, 0, new WidgetPointer(907,5));
+			setWidgetPosition(0, add(88, multiply(30, 2)), 0, 0, new WidgetPointer(907,43));
+			break;
+		case 1:
+			setWidgetPosition(0, 30, 0, 0, new WidgetPointer(907,4));
+			setWidgetPosition(0, add(88, 30), 0, 0, new WidgetPointer(907,5));
+			setWidgetPosition(0, add(88, multiply(30, 2)), 0, 0, new WidgetPointer(907,43));
+			break;
+		case 2:
+			setWidgetPosition(0, 30, 0, 0, new WidgetPointer(907,4));
+			setWidgetPosition(0, multiply(30, 2), 0, 0, new WidgetPointer(907,5));
+			setWidgetPosition(0, add(88, multiply(30, 2)), 0, 0, new WidgetPointer(907,43));
+			break;
+		case 3:
+			setWidgetPosition(0, 30, 0, 0, new WidgetPointer(907,4));
+			setWidgetPosition(0, multiply(30, 2), 0, 0, new WidgetPointer(907,5));
+			setWidgetPosition(0, multiply(30, 3), 0, 0, new WidgetPointer(907,43));
+	}
+	return;
+}

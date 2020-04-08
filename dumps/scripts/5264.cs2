@@ -1,0 +1,15 @@
+void script_5264(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	setWidgetSize(getTextWidth(495, intToStr(script_5255()) + " / " + intToStr(script_5255())), getWidgetActualHeight(new WidgetPointer(arg0)), 0, 0, new WidgetPointer(arg0));
+	ivar2 = 190;
+	ivar3 = 8;
+	ivar4 = add(add(getWidgetActualWidth(new WidgetPointer(arg0)), getWidgetActualWidth(new WidgetPointer(arg1))), ivar3);
+	ivar5 = divide(subtract(ivar2, ivar4), 2);
+	setWidgetPosition(ivar5, getWidgetActualY(new WidgetPointer(arg1)), 0, 0, new WidgetPointer(arg1));
+	ivar5 = add(add(ivar5, getWidgetActualWidth(new WidgetPointer(arg1))), ivar3);
+	setWidgetPosition(ivar5, getWidgetActualY(new WidgetPointer(arg0)), 0, 0, new WidgetPointer(arg0));
+	return;
+}

@@ -1,0 +1,25 @@
+void script_2647(int arg0) {
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetPosition(0, 0, 1, 0);
+	setWidgetSize(0, 32, 1, 0);
+	setWidgetSprite(1076);
+	cs2method1107(1);
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetPosition(0, 0, 1, 2);
+	setWidgetSize(0, 32, 1, 0);
+	setWidgetSprite(1076);
+	cs2method1107(1);
+	setWidgetVFlip(1);
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetPosition(0, 0, 0, 1);
+	setWidgetSize(32, 2, 0, 1);
+	setWidgetSprite(1077);
+	cs2method1107(1);
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetPosition(0, 0, 2, 1);
+	setWidgetSize(32, 2, 0, 1);
+	setWidgetSprite(1077);
+	cs2method1107(1);
+	setWidgetHFlip(1);
+	return;
+}

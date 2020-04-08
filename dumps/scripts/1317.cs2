@@ -1,0 +1,15 @@
+void script_1317() {
+	setWidgetModel(18789, new WidgetPointer(262,0));
+	setWidgetModel(18813, new WidgetPointer(262,28));
+	setWidgetModel(18814, new WidgetPointer(262,29));
+	if (bitconfig_4835 < 1) {
+		setWidgetModel(-1, new WidgetPointer(262,29));
+	}
+	if (bitconfig_4835 < 2) {
+		setWidgetModel(-1, new WidgetPointer(262,28));
+	}
+	if (bitconfig_4835 < 3) {
+		setWidgetModel(-1, new WidgetPointer(262,0));
+	}
+	return;
+}

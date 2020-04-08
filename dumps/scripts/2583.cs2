@@ -1,0 +1,7 @@
+void script_2583() {
+	setWidgetRGB(new Color(255, 153, 53), new WidgetPointer(292,114));
+	setWidgetContextMenuOption(1, new WidgetPointer(292,113), "Resupply");
+	setScriptCallOnClickContextMenu(2592, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,113));
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(292,113));
+	return;
+}

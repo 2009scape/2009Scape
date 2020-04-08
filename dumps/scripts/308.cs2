@@ -1,0 +1,6 @@
+void script_308(int arg0) {
+	setScriptCallOnKeyPress(1382, -2147483640, false, new WidgetPointer(arg0), -1, "izIc", new WidgetPointer(arg0));
+	setWidgetText(new WidgetPointer(arg0), "Search the map by typing here.");
+	setWidgetTextAlignment(0, 1, 0, new WidgetPointer(arg0));
+	return;
+}

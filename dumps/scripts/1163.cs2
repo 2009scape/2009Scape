@@ -1,0 +1,99 @@
+void script_1163(int arg0,int arg1,int arg2,int arg3,int arg4,string arg5) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	flow_0:
+		ivar5 = 0;
+		ivar6 = 0;
+		ivar7 = 0;
+		ivar8 = 0;
+		ivar9 = 0;
+		ivar10 = 0;
+		ivar11 = 0;
+		ivar12 = 0;
+		ivar13 = -1;
+		ivar14 = 0;
+		IF (arg1 == -1) 
+			GOTO	flow_1
+		GOTO	flow_2
+	flow_1:
+		IF (setWidgetRegister(new WidgetPointer(arg0))) 
+			GOTO	flow_3
+	flow_2:
+		IF (setWidgetRegister(new WidgetPointer(arg0), arg1)) 
+			GOTO	flow_3
+		GOTO	flow_24
+	flow_3:
+		if (((boolean)script_4761(arg3))) {
+			return;
+		}
+		if (globalint_2 != 1) {
+			ivar5 = add(script_1743(), 5);
+			ivar14 = script_1744();
+			ivar6 = add(add(ivar14, getWidgetActualHeight()), 5);
+			ivar13 = getWidgetParentId(new WidgetPointer(arg2));
+			if ((ivar13 != -1) && (arg4 >= getWidgetActualWidth(new WidgetPointer(ivar13)))) {
+				arg4 = getWidgetActualWidth(new WidgetPointer(ivar13));
+			}
+			ivar11 = add(4, getMaxLineWidth(subtract(arg4, 4), 495, arg5));
+			ivar12 = add(add(4, multiply(13, getLineCount(subtract(arg4, 4), 495, arg5))), 3);
+			if (ivar13 != -1) {
+				ivar7 = subtract(ivar5, cs2method2600(new WidgetPointer(ivar13)));
+				ivar8 = subtract(ivar6, cs2method2601(new WidgetPointer(ivar13)));
+				if (ivar7 < 0) {
+					ivar5 = cs2method2600(new WidgetPointer(ivar13));
+					ivar7 = 0;
+				}
+				if (ivar8 < 0) {
+					ivar6 = cs2method2601(new WidgetPointer(ivar13));
+					ivar8 = 0;
+				}
+				if (ivar7 > 0) {
+					ivar9 = add(subtract(ivar7, getWidgetActualWidth(new WidgetPointer(ivar13))), ivar11);
+					if (ivar9 > 0) {
+						ivar5 = subtract(ivar5, ivar9);
+					}
+				}
+				if (ivar8 > 0) {
+					ivar10 = add(subtract(ivar8, getWidgetActualHeight(new WidgetPointer(ivar13))), ivar12);
+					if (ivar10 > 0) {
+						if ((ivar14 > ivar12) && (getWidgetActualHeight() < ivar12)) {
+							ivar6 = subtract(ivar14, ivar12);
+						} else {
+							ivar6 = subtract(subtract(subtract(ivar6, ivar10), getWidgetActualHeight()), 10);
+						}
+					}
+				}
+			}
+			ivar5 = max(ivar5, 0);
+			ivar6 = max(ivar6, 0);
+			setWidgetSize(ivar11, ivar12, 0, 0, new WidgetPointer(arg2));
+			setWidgetPosition(ivar5, ivar6, 0, 0, new WidgetPointer(arg2));
+			deleteAllExtraChilds(new WidgetPointer(arg2));
+			createExtraChild(new WidgetPointer(arg2), 3, 0);
+			setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg2)), getWidgetActualHeight(new WidgetPointer(arg2)), 0, 0);
+			setWidgetFilled(1);
+			setWidgetRGB(new Color(255, 255, 160));
+			createExtraChild(new WidgetPointer(arg2), 3, 1);
+			setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg2)), getWidgetActualHeight(new WidgetPointer(arg2)), 0, 0);
+			setWidgetFilled(0);
+			setWidgetRGB(new Color(0, 0, 0));
+			createExtraChild(new WidgetPointer(arg2), 4, 2);
+			setWidgetSize(subtract(arg4, 4), getWidgetActualHeight(new WidgetPointer(arg2)), 0, 0);
+			setWidgetPosition(2, 0, 0, 0);
+			setWidgetText(arg5);
+			setWidgetTextAlignment(0, 1, 0);
+			setWidgetFont(495);
+			setWidgetRGB(new Color(0, 0, 0));
+			globalint_2 = 1;
+		}
+	flow_24:
+		return;
+}

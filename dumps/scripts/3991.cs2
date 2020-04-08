@@ -1,0 +1,240 @@
+void script_3991(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	string svar4;
+	string svar5;
+	string svar6;
+	int stack_dump0;
+	cs2func_script_3995_struct(2,1,0) structdump_1;
+	ivar1 = -1;
+	ivar2 = 0;
+	ivar3 = -1;
+	if (arg0 == 4095) {
+		arg0 = 4094;
+	}
+	svar0 = "";
+	svar1 = "";
+	svar2 = "";
+	ivar4 = -1;
+	svar3 = "";
+	ivar5 = -1;
+	svar4 = "";
+	ivar6 = -1;
+	ivar7 = 0;
+	ivar8 = 0;
+	ivar1 = cs2method_3408(105, 74, 3483, arg0);
+	if (ivar1 != -1) {
+		svar0 = getOtherCommonData(ivar1, 1266);
+		svar1 = getOtherCommonData(ivar1, 1273);
+		ivar8 = getOtherCommonData(ivar1, 1293);
+		ivar7 = script_3227(arg0);
+		ivar2 = add(multiply(subtract(getOtherCommonData(ivar1, 1293), 1), 5), getOtherCommonData(ivar1, 1272));
+		ivar3 = cs2method_3408(105, 74, 3494, ivar2);
+		ivar5 = cs2method_3408(105, 100, 3491, getOtherCommonData(ivar1, 1267));
+		ivar4 = cs2method_3408(105, 100, 3492, getOtherCommonData(ivar1, 1272));
+		svar3 = concat("Difficulty : ", cs2method_3408(105, 115, 3488, getOtherCommonData(ivar1, 1272)));
+		svar4 = concat("Area : ", cs2method_3408(105, 115, 3487, getOtherCommonData(ivar1, 1267)));
+		if (getOtherCommonData(ivar1, 1270) != 4094) {
+			ivar6 = getOtherCommonData(cs2method_3408(105, 74, 2252, getOtherCommonData(ivar1, 1270)), 952);
+			svar2 = getOtherCommonData(cs2method_3408(105, 74, 2252, getOtherCommonData(ivar1, 1270)), 951);
+		} else {
+			ivar6 = getOtherCommonData(ivar1, 1271);
+			svar2 = getOtherCommonData(ivar1, 1292);
+		}
+	} else {
+		svar0 = "Couldn't find the Task's struct.";
+		svar1 = "Couldn't find the Task's struct.";
+		svar2 = "Couldn't find the Task's struct.";
+	}
+	setWidgetText(new WidgetPointer(917,34), svar0);
+	setWidgetText(new WidgetPointer(917,63), svar1);
+	svar5 = "";
+	if (((boolean)stringMethod4107(svar2, ""))) {
+		if (bitconfig_8601 < 10) {
+			svar5 = "ten";
+		} else if (bitconfig_8601 < 25) {
+			svar5 = "forty";
+		} else if (bitconfig_8601 < 50) {
+			svar5 = "160";
+		} else if (bitconfig_8601 < 100) {
+			svar5 = "640";
+		} else {
+			svar5 = "2560";
+		}
+		svar2 = "Completing this Task will earn you " + svar5 + " coins.";
+	}
+	setWidgetText(new WidgetPointer(917,50), svar2);
+	setWidgetFont(495, new WidgetPointer(917,50));
+	setWidgetTextAlignment(0, 1, 0, new WidgetPointer(917,50));
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(917,50)), getLineCount(getWidgetActualWidth(new WidgetPointer(917,50)), 495, svar1), 0, 0, new WidgetPointer(917,50));
+	setWidgetSprite(ivar6, new WidgetPointer(917,37));
+	setWidgetSprite(ivar5, new WidgetPointer(917,39));
+	setWidgetSprite(ivar4, new WidgetPointer(917,36));
+	setWidgetText(new WidgetPointer(917,35), svar3);
+	setWidgetText(new WidgetPointer(917,38), svar4);
+	setWidgetIsHidden(true, new WidgetPointer(917,155));
+	setWidgetIsHidden(true, new WidgetPointer(917,156));
+	setWidgetIsHidden(true, new WidgetPointer(917,157));
+	setWidgetIsHidden(true, new WidgetPointer(917,158));
+	setWidgetIsHidden(true, new WidgetPointer(917,159));
+	setWidgetIsHidden(true, new WidgetPointer(917,160));
+	setWidgetIsHidden(true, new WidgetPointer(917,161));
+	setWidgetIsHidden(true, new WidgetPointer(917,162));
+	setWidgetIsHidden(true, new WidgetPointer(917,163));
+	setWidgetIsHidden(true, new WidgetPointer(917,164));
+	ivar9 = 0;
+	svar6 = "";
+	ivar10 = 0;
+	stack_dump0 = arg0;
+	structdump_1 = script_3995(stack_dump0);
+	ivar10 = structdump_1.intpart_1;
+	svar6 = structdump_1.stringpart_0;
+	ivar9 = structdump_1.intpart_0;
+	setWidgetText(new WidgetPointer(917,1), svar6);
+	setWidgetRGB(new Color(ivar10), new WidgetPointer(917,1));
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(917,1)), getLineCount(getWidgetActualWidth(new WidgetPointer(917,1)), 495, svar1), 0, 0, new WidgetPointer(917,1));
+	setWidgetPosition(9, 16, 0, 0, new WidgetPointer(917,1));
+	if (((boolean)ivar9) && (script_3227(arg0) != 2)) {
+		setWidgetIsHidden(false, new WidgetPointer(917,41));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(917,41));
+	}
+	ivar11 = 34;
+	ivar12 = ivar11;
+	ivar13 = 0;
+	while (ivar13 < 10) {
+		ivar12 = script_3222(ivar11, arg0, ivar13, ((int)cs2method_3408(105, 73, 3493, ivar13)));
+		if (ivar12 == ivar11) {
+			ivar13 = 10;
+		} else {
+			ivar13 = add(ivar13, 1);
+			ivar11 = ivar12;
+		}
+	}
+	globalint_1420 = add(ivar11, 3);
+	ivar14 = 4094;
+	setWidgetIsHidden(true, new WidgetPointer(917,2));
+	setWidgetIsHidden(true, new WidgetPointer(917,3));
+	setWidgetIsHidden(true, new WidgetPointer(917,4));
+	setWidgetIsHidden(true, new WidgetPointer(917,5));
+	setWidgetIsHidden(true, new WidgetPointer(917,6));
+	setWidgetIsHidden(true, new WidgetPointer(917,7));
+	setWidgetIsHidden(true, new WidgetPointer(917,8));
+	setWidgetIsHidden(true, new WidgetPointer(917,9));
+	setWidgetIsHidden(true, new WidgetPointer(917,10));
+	setWidgetIsHidden(true, new WidgetPointer(917,11));
+	setWidgetIsHidden(true, new WidgetPointer(917,12));
+	setWidgetIsHidden(true, new WidgetPointer(917,13));
+	ivar11 = 10;
+	if ((stringMethod4107(getOtherCommonData(ivar1, 1274), "") != 0) && (arg0 != 4095)) {
+		if (getOtherCommonData(ivar1, 1282) != -1) {
+			ivar14 = arg0;
+		}
+		ivar11 = script_3992(1, ivar11, 60096514, ivar14, 60096515, 60096593, getOtherCommonData(ivar1, 1274));
+	}
+	ivar14 = 4094;
+	if ((stringMethod4107(getOtherCommonData(ivar1, 1275), "") != 0) && (arg0 != 4095)) {
+		if (getOtherCommonData(ivar1, 1283) != -1) {
+			ivar14 = arg0;
+		}
+		ivar11 = script_3992(2, ivar11, 60096516, ivar14, 60096517, 60096593, getOtherCommonData(ivar1, 1275));
+	}
+	ivar14 = 4094;
+	if ((stringMethod4107(getOtherCommonData(ivar1, 1276), "") != 0) && (arg0 != 4095)) {
+		if (getOtherCommonData(ivar1, 1284) != -1) {
+			ivar14 = arg0;
+		}
+		ivar11 = script_3992(3, ivar11, 60096518, ivar14, 60096519, 60096593, getOtherCommonData(ivar1, 1276));
+	}
+	ivar14 = 4094;
+	if ((stringMethod4107(getOtherCommonData(ivar1, 1277), "") != 0) && (arg0 != 4095)) {
+		if (getOtherCommonData(ivar1, 1285) != -1) {
+			ivar14 = arg0;
+		}
+		ivar11 = script_3992(4, ivar11, 60096520, ivar14, 60096521, 60096593, getOtherCommonData(ivar1, 1277));
+	}
+	ivar14 = 4094;
+	if ((stringMethod4107(getOtherCommonData(ivar1, 1278), "") != 0) && (arg0 != 4095)) {
+		if (getOtherCommonData(ivar1, 1286) != -1) {
+			ivar14 = arg0;
+		}
+		ivar11 = script_3992(5, ivar11, 60096522, ivar14, 60096523, 60096593, getOtherCommonData(ivar1, 1278));
+	}
+	ivar14 = 4094;
+	if ((stringMethod4107(getOtherCommonData(ivar1, 1279), "") != 0) && (arg0 != 4095)) {
+		if (getOtherCommonData(ivar1, 1287) != -1) {
+			ivar14 = arg0;
+		}
+		ivar11 = script_3992(6, ivar11, 60096524, ivar14, 60096525, 60096593, getOtherCommonData(ivar1, 1279));
+	}
+	globalint_1418 = add(ivar11, 3);
+	setWidgetIsHidden(true, new WidgetPointer(917,51));
+	setWidgetIsHidden(true, new WidgetPointer(917,52));
+	setWidgetIsHidden(true, new WidgetPointer(917,53));
+	setWidgetIsHidden(true, new WidgetPointer(917,54));
+	setWidgetIsHidden(true, new WidgetPointer(917,55));
+	setWidgetIsHidden(true, new WidgetPointer(917,56));
+	setWidgetIsHidden(true, new WidgetPointer(917,57));
+	setWidgetIsHidden(true, new WidgetPointer(917,58));
+	ivar11 = 10;
+	ivar11 = script_3992(0, ivar11, 60096562, 4094, -1, 60096597, svar2);
+	if ((ivar3 != -1) && (ivar3 != 1645)) {
+		ivar11 = script_3992(0, ivar11, 60096563, 4094, -1, 60096597, getOtherCommonData(ivar3, 1273));
+		ivar11 = script_3992(0, ivar11, 60096564, 4094, -1, 60096597, getOtherCommonData(ivar3, 1292));
+		if (stringMethod4107(getOtherCommonData(ivar3, 1274), "") != 0) {
+			ivar11 = script_3992(0, ivar11, 60096565, 4094, -1, 60096597, getOtherCommonData(ivar3, 1274));
+		}
+		if (stringMethod4107(getOtherCommonData(ivar3, 1275), "") != 0) {
+			ivar11 = script_3992(0, ivar11, 60096566, 4094, -1, 60096597, getOtherCommonData(ivar3, 1275));
+		}
+		if (stringMethod4107(getOtherCommonData(ivar3, 1276), "") != 0) {
+			ivar11 = script_3992(0, ivar11, 60096567, 4094, -1, 60096597, getOtherCommonData(ivar3, 1276));
+		}
+		if (stringMethod4107(getOtherCommonData(ivar3, 1277), "") != 0) {
+			ivar11 = script_3992(0, ivar11, 60096568, 4094, -1, 60096597, getOtherCommonData(ivar3, 1277));
+		}
+		if (stringMethod4107(getOtherCommonData(ivar3, 1278), "") != 0) {
+			ivar11 = script_3992(0, ivar11, 60096569, 4094, -1, 60096597, getOtherCommonData(ivar3, 1278));
+		}
+		if (stringMethod4107(getOtherCommonData(ivar3, 1279), "") != 0) {
+			ivar11 = script_3992(0, ivar11, 60096570, 4094, -1, 60096597, getOtherCommonData(ivar3, 1279));
+		}
+	} else {
+		if (bitconfig_8601 > bitconfig_8602) {
+			svar2 = "You're already owed a reward! You may claim it from Explorer Jack or any other taskmaster, or increase it by completing more Tasks. ";
+			if (standart_config_1959 > 0) {
+				svar2 = concat(svar2, "You are also owed one or more items.");
+			}
+			ivar11 = script_3992(0, ivar11, 60096564, 4094, -1, 60096597, svar2);
+		}
+	}
+	globalint_1419 = ivar11;
+	if (((boolean)script_3999(arg0))) {
+		script_4019(0);
+		setWidgetIsHidden(false, new WidgetPointer(917,92));
+		setWidgetIsHidden(false, new WidgetPointer(917,83));
+		setWidgetSprite(4320, new WidgetPointer(917,26));
+		setWidgetSprite(4320, new WidgetPointer(917,28));
+		setWidgetSprite(4321, new WidgetPointer(917,27));
+		setWidgetIsHidden(true, new WidgetPointer(917,84));
+		setWidgetIsHidden(true, new WidgetPointer(917,82));
+		setWidgetIsHidden(true, new WidgetPointer(917,86));
+	}
+	return;
+}

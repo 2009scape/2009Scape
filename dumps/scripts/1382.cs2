@@ -1,0 +1,101 @@
+void script_1382(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	string svar0;
+	string svar1;
+	opcStruct5212(2,0,0) structdump_0;
+	string stack_dump1;
+	int stack_dump2;
+	opcStruct5213(2,0,0) structdump_3;
+	switch (arg0) {
+		case 84:
+			if (arg3 != -1) {
+				cs2method5221(arg3);
+			}
+			globalstring_31 = "";
+			script_308(arg2);
+			return;
+		case 96:
+			script_1603(-1, 0);
+			return;
+		case 97:
+			script_1603(1, 0);
+			return;
+		case 98:
+			script_1603(0, 1);
+			return;
+		case 99:
+			script_1603(0, -1);
+			return;
+	}
+	svar0 = strRemoveEntities(script_74(4, arg0, arg1, globalstring_31));
+	if (strIndexof(0, svar0, "  ") != -1) {
+		return;
+	}
+	if (((boolean)stringMethod4107(svar0, " "))) {
+		return;
+	}
+	if (getLineCount(getWidgetActualWidth(new WidgetPointer(arg2)), 494, svar0) > 1) {
+		return;
+	}
+	globalstring_31 = lower(svar0);
+	ivar4 = strLength(globalstring_31);
+	if (ivar4 <= 0) {
+		script_308(arg2);
+		return;
+	}
+	ivar5 = -1;
+	ivar6 = -1;
+	ivar7 = -1;
+	ivar8 = 0;
+	svar1 = "";
+	ivar9 = -1;
+	ivar10 = 2147483647;
+	ivar11 = 2147483647;
+	structdump_0 = cs2method5212();
+	ivar6 = structdump_0.intpart_1;
+	ivar5 = structdump_0.intpart_0;
+	while (ivar5 != -1) {
+		svar0 = strRemoveEntities(script_2332(getWorldmapLabelName(ivar5), "<br>", " "));
+		ivar7 = strIndexof(0, lower(svar0), globalstring_31);
+		if ((ivar7 != -1) && (ivar7 <= ivar10)) {
+			ivar8 = strLength(svar0);
+			if (ivar8 < ivar11) {
+				stack_dump1 = svar0;
+				ivar9 = ivar6;
+				svar1 = stack_dump1;
+				stack_dump2 = ivar7;
+				ivar11 = ivar8;
+				ivar10 = stack_dump2;
+			}
+		}
+		structdump_3 = cs2method5213();
+		ivar6 = structdump_3.intpart_1;
+		ivar5 = structdump_3.intpart_0;
+	}
+	if (ivar9 == -1) {
+		setScriptCallOnKeyPress(1382, -2147483640, false, new WidgetPointer(arg2), -1, "izIc", new WidgetPointer(arg2));
+		if (getMaxLineWidth(getWidgetActualWidth(new WidgetPointer(arg2)), 494, globalstring_31) > getWidgetActualWidth(new WidgetPointer(arg2))) {
+			setWidgetTextAlignment(2, 1, 0, new WidgetPointer(arg2));
+		} else {
+			setWidgetTextAlignment(0, 1, 0, new WidgetPointer(arg2));
+		}
+		setWidgetText(new WidgetPointer(arg2), "<col=ff0000>" + globalstring_31 + "</col>");
+		return;
+	}
+	svar0 = "";
+	if (ivar10 > 0) {
+		svar0 = substr(0, ivar10, svar1);
+	}
+	svar0 = concat(svar0, "<col=ffffff>" + substr(ivar10, add(ivar10, ivar4), svar1) + "</col>");
+	svar0 = concat(svar0, substr(add(ivar10, ivar4), strLength(svar1), svar1));
+	setWidgetText(new WidgetPointer(arg2), svar0);
+	setScriptCallOnKeyPress(1382, -2147483640, false, new WidgetPointer(arg2), ivar9, "izIc", new WidgetPointer(arg2));
+	return;
+}

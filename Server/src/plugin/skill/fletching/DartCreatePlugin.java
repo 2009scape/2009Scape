@@ -1,3 +1,4 @@
+/*
 package plugin.skill.fletching;
 
 import org.crandor.game.content.skill.member.fletching.items.darts.Dart;
@@ -7,17 +8,21 @@ import org.crandor.plugin.InitializablePlugin;
 import org.crandor.plugin.Plugin;
 import plugin.quest.touristrap.TouristTrap;
 
+*/
 /**
  * Represents the plugin used to create a dart.
  * @author 'Vexia
  * @version 1.0
- */
+ *//*
+
 @InitializablePlugin
 public final class DartCreatePlugin extends UseWithHandler {
 
-	/**
+	*/
+/**
 	 * Constructs a new {@code DartCreatePlugin} {@code Object}.
-	 */
+	 *//*
+
 	public DartCreatePlugin() {
 		super(314);
 	}
@@ -41,3 +46,4 @@ public final class DartCreatePlugin extends UseWithHandler {
 	}
 
 }
+*/

@@ -1,0 +1,6 @@
+void script_4264(int arg0) {
+	setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(arg0));
+	setScriptCallOnMouseEntered(4265, new WidgetPointer(arg0), 14516095, "Ii", new WidgetPointer(arg0));
+	setScriptCallOnMouseExit(4265, new WidgetPointer(arg0), 16711680, "Ii", new WidgetPointer(arg0));
+	return;
+}

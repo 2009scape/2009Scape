@@ -4,7 +4,7 @@ import org.crandor.game.content.skill.free.cooking.recipe.pizza.PizzaRecipe;
 import org.crandor.game.node.item.Item;
 
 /**
- * Represents the anchovy pizza. This recipe consists of adding ahcovies to a
+ * Represents the anchovy pizza. This recipe consists of adding anchovies to a
  * plain pizza.
  * @author 'Vexia
  * @date 22/12/2013

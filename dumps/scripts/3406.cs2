@@ -1,0 +1,30 @@
+cs2func_script_3406_struct(3,0,0) script_3406() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	while (ivar3 < 100) {
+		switch (cs2method5004(ivar3)) {
+			case 18:
+			case 3:
+			case 7:
+				ivar0 = add(ivar0, 1);
+				break;
+			case 20:
+			case 9:
+				ivar2 = add(ivar2, 1);
+				break;
+			case 42:
+			case 41:
+			case 44:
+			case 45:
+				ivar1 = add(ivar1, 1);
+		}
+		ivar3 = add(ivar3, 1);
+	}
+	return newstruct cs2func_script_3406_struct(ivar0, ivar1, ivar2);
+}

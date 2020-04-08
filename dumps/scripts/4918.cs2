@@ -1,0 +1,23 @@
+void script_4918() {
+	if (citadelConfigsInitialized()) {
+		script_4919();
+		script_4900();
+		script_4905();
+		script_4907();
+		script_5012();
+		script_4895();
+		script_4864();
+		script_4994();
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: No documentation for:CALL_CS2	4889
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:178)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+				at tests.Main.main(Main.java:45)
+			
+		 */
+	}
+	script_675();
+	return;
+}

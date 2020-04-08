@@ -1,0 +1,119 @@
+void script_2003() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int stack_dump0;
+	ivar0 = 0;
+	if (getSkillActualLvl(19) >= 40) {
+		ivar0 = bitconfig_4449;
+	} else {
+		ivar0 = divide(multiply(bitconfig_4449, cs2method_3408(105, 105, 1369, getSkillActualLvl(19))), 100);
+	}
+	if (((boolean)bitconfig_4449)) {
+		setWidgetText(new WidgetPointer(686,13), "Trade one point" + "<br>" + "for " + formatNumber(ivar0, 1) + " XP?");
+	} else {
+		setWidgetText(new WidgetPointer(686,13), "Trade " + formatNumber(bitconfig_4449, 1) + " points" + "<br>" + "for " + formatNumber(ivar0, 1) + " XP?");
+	}
+	deleteAllExtraChilds(new WidgetPointer(686,6));
+	ivar1 = getCommonDefinitionSize(1589);
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = -1;
+	ivar7 = 0;
+	ivar8 = 0;
+	while (ivar8 < ivar1) {
+		ivar6 = cs2method_3408(105, 79, 1589, ivar8);
+		ivar7 = cs2method_3408(111, 105, 1365, ivar6);
+		ivar2 = multiply(mod(ivar8, 9), 50);
+		ivar3 = multiply(divide(ivar8, 9), 54);
+		stack_dump0 = max(ivar4, ivar2);
+		ivar5 = max(ivar5, ivar3);
+		ivar4 = stack_dump0;
+		createExtraChild(new WidgetPointer(686,6), 5, getExtraChildGap(new WidgetPointer(686,6)));
+		setWidgetSize(48, 52, 0, 0);
+		setWidgetPosition(ivar2, ivar3, 0, 0);
+		setWidgetSprite(2205);
+		if (ivar6 == 11209) {
+			setWidgetContextMenuOption(1, "Trade points for XP");
+			setScriptCallOnClickContextMenu(69, 0, new WidgetPointer(686,9), "1I");
+		} else {
+			cs2method1305("<col=ff981f>" + getItemName(ivar6) + "</col>");
+			setWidgetContextMenuOption(1, "Value");
+			setWidgetContextMenuOption(2, "Buy 1");
+			setWidgetContextMenuOption(3, "Buy 5");
+			setWidgetContextMenuOption(4, "Buy 10");
+			if (ivar6 != 12625) {
+				setWidgetContextMenuOption(5, "Buy X");
+			}
+			setWidgetContextMenuOption(10, "Examine");
+		}
+		setScriptCallOnMouseEntered(2140, new WidgetPointer(-32768,3), add(getWidgetCustomChildArrayIndex(), 1), 0, "Iii");
+		setScriptCallOnMouseExit(2140, new WidgetPointer(-32768,3), add(getWidgetCustomChildArrayIndex(), 1), 255, "Iii");
+		createExtraChild(new WidgetPointer(686,6), 5, getExtraChildGap(new WidgetPointer(686,6)));
+		setWidgetSize(48, 52, 0, 0);
+		setWidgetPosition(ivar2, ivar3, 0, 0);
+		setWidgetSprite(2206);
+		cs2method2103(255);
+		createExtraChild(new WidgetPointer(686,6), 5, getExtraChildGap(new WidgetPointer(686,6)));
+		if (ivar6 == 11209) {
+			setWidgetSize(34, 34, 0, 0);
+			setWidgetPosition(add(ivar2, 7), add(ivar3, 2), 0, 0);
+			if (((boolean)getLanguage())) {
+				setWidgetSprite(2714);
+			} else {
+				setWidgetSprite(2730);
+			}
+		} else {
+			setWidgetSize(36, 32, 0, 0);
+			setWidgetPosition(add(ivar2, 6), add(ivar3, 4), 0, 0);
+			setItemOnWidgetMethod1205(ivar6, 5);
+			setWidgetBorderThickness(1);
+		}
+		setWidgetShadowColor(new Color(48, 32, 32));
+		createExtraChild(new WidgetPointer(686,6), 5, getExtraChildGap(new WidgetPointer(686,6)));
+		setWidgetSize(12, 12, 0, 0);
+		setWidgetPosition(add(ivar2, 2), add(ivar3, 38), 0, 0);
+		setItemOnWidgetMethod1205(12625, 1);
+		createExtraChild(new WidgetPointer(686,6), 4, getExtraChildGap(new WidgetPointer(686,6)));
+		setWidgetSize(31, 12, 0, 0);
+		setWidgetPosition(add(ivar2, 13), add(ivar3, 39), 0, 0);
+		setWidgetFont(494);
+		setWidgetTextAlignment(2, 1, 0);
+		if (ivar7 == -1) {
+			setWidgetText("N/A");
+		} else {
+			setWidgetText(script_940(ivar7));
+		}
+		if (ivar7 <= bitconfig_4449) {
+			setWidgetRGB(new Color(255, 255, 0));
+		} else {
+			setWidgetRGB(new Color(255, 0, 0));
+		}
+		setWidgetUnknownBoolean(true);
+		ivar8 = add(ivar8, 1);
+	}
+	stack_dump0 = add(ivar4, 48);
+	ivar5 = add(ivar5, 52);
+	ivar4 = stack_dump0;
+	ivar9 = getWidgetActualHeight(new WidgetPointer(686,6));
+	setWidgetSize(ivar4, ivar9, 0, 0, new WidgetPointer(686,6));
+	if (ivar5 > ivar9) {
+		setWidgetPosition(divide(subtract(subtract(getWidgetActualWidth(new WidgetPointer(686,5)), getWidgetActualWidth(new WidgetPointer(686,7))), ivar4), 2), 0, 0, 1, new WidgetPointer(686,6));
+		setWidgetIsHidden(false, new WidgetPointer(686,7));
+		setWidgetScrollMax(0, ivar5, new WidgetPointer(686,6));
+		script_31(44957703, 44957702, 792, 789, 790, 791, 773, 788);
+	} else {
+		setWidgetPosition(0, 0, 1, 1, new WidgetPointer(686,6));
+		setWidgetIsHidden(true, new WidgetPointer(686,7));
+	}
+	return;
+}

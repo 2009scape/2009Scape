@@ -1,0 +1,24 @@
+void script_1717() {
+	if (((boolean)globalint_181)) {
+		deleteAllExtraChilds(new WidgetPointer(271,7));
+		deleteAllExtraChilds(new WidgetPointer(271,8));
+		setWidgetIsHidden(false, new WidgetPointer(271,42));
+		setWidgetIsHidden(true, new WidgetPointer(271,0));
+		script_1388(17760298);
+		script_1237(17760264);
+		setWidgetIsHidden(true, new WidgetPointer(271,9));
+		deleteAllExtraChilds(new WidgetPointer(271,6));
+		cs2method2100(0, 0, new WidgetPointer(271,5));
+		setWidgetSize(16384, 16384, 2, 2, new WidgetPointer(271,5));
+	} else {
+		deleteAllExtraChilds(new WidgetPointer(271,42));
+		setWidgetIsHidden(true, new WidgetPointer(271,42));
+		setWidgetIsHidden(false, new WidgetPointer(271,0));
+		script_1237(17760264);
+		script_1293(17760263);
+		setWidgetIsHidden(false, new WidgetPointer(271,9));
+		setWidgetSize(16384, add(getWidgetActualHeight(new WidgetPointer(271,9)), getWidgetActualHeight(new WidgetPointer(271,0))), 2, 1, new WidgetPointer(271,5));
+		script_1704();
+	}
+	return;
+}

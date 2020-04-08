@@ -1,0 +1,7 @@
+void script_4696() {
+	setScriptCallOnGameloop(4697, 0, "i", new WidgetPointer(500,8));
+	if (isWidgetHidden(new WidgetPointer(500,11))) {
+		setScriptCallOnGameloop(4695, 0, 0, "ii", new WidgetPointer(500,11));
+	}
+	return;
+}

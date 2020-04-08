@@ -1,0 +1,16 @@
+void script_728() {
+	setWidgetIsHidden(true, new WidgetPointer(780,35));
+	setWidgetIsHidden(true, new WidgetPointer(780,36));
+	setWidgetIsHidden(true, new WidgetPointer(780,37));
+	setWidgetIsHidden(true, new WidgetPointer(780,38));
+	setWidgetIsHidden(true, new WidgetPointer(780,39));
+	setWidgetIsHidden(true, new WidgetPointer(780,40));
+	setWidgetIsHidden(true, new WidgetPointer(780,41));
+	setWidgetIsHidden(true, new WidgetPointer(780,42));
+	setWidgetIsHidden(true, new WidgetPointer(780,44));
+	setWidgetIsHidden(true, new WidgetPointer(780,47));
+	setWidgetIsHidden(true, new WidgetPointer(780,48));
+	setWidgetIsHidden(true, new WidgetPointer(780,43));
+	setWidgetText(new WidgetPointer(780,33), "Use a talisman to display the altar location.");
+	return;
+}

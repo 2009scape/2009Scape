@@ -1,0 +1,25 @@
+void script_4513(int arg0,int arg1) {
+	int ivar2;
+	if ((arg0 == -1) || (arg1 == -1)) {
+		return;
+	}
+	ivar2 = getOtherCommonData(arg1, 1346);
+	if (ivar2 == 2) {
+		setScriptCallOnMouseEntered(4159, new WidgetPointer(-32768,3), 0, 0, "Iii", new WidgetPointer(arg0));
+		setScriptCallOnMouseExit(4159, new WidgetPointer(-32768,3), 1, 0, "Iii", new WidgetPointer(arg0));
+	} else if (ivar2 == 3) {
+		setScriptCallOnMousePressed(4162, new WidgetPointer(-32768,3), "I", new WidgetPointer(arg0));
+		setScriptCallOnMouseReleased(4163, new WidgetPointer(-32768,3), "I", new WidgetPointer(arg0));
+		setScriptCallOnMouseExit(4163, new WidgetPointer(-32768,3), "I", new WidgetPointer(arg0));
+	} else {
+		if (ivar2 == 5) {
+			return;
+		}
+	}
+	script_4206(arg0, arg1);
+	if ((ivar2 == 4) || (ivar2 == 5)) {
+		script_4161(arg0, 0);
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+	}
+	return;
+}

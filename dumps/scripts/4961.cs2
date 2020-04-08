@@ -1,0 +1,105 @@
+int script_4961(int arg0,int arg1) {
+	if (((boolean)arg1)) {
+		switch (arg0) {
+			case 1:
+				return 1;
+			case 2:
+				return 3;
+			case 3:
+				return 2;
+			case 4:
+				return 4;
+			case 5:
+				return 5;
+			case 6:
+				return 6;
+			case 7:
+				return 7;
+			case 8:
+				return 8;
+			case 9:
+				return 9;
+			case 10:
+				return 10;
+			case 11:
+				return 11;
+			case 12:
+				return 12;
+			case 13:
+				return 13;
+			case 14:
+				return 14;
+			case 15:
+				return 15;
+		}
+	} else if (arg1 == 2) {
+		switch (arg0) {
+			case 1:
+				return 301;
+			case 2:
+				return 303;
+			case 3:
+				return 302;
+			case 4:
+				return 304;
+			case 5:
+				return 305;
+			case 6:
+				return 306;
+			case 7:
+				return 307;
+			case 8:
+				return 308;
+			case 9:
+				return 309;
+			case 10:
+				return 310;
+			case 11:
+				return 311;
+			case 12:
+				return 312;
+			case 13:
+				return 313;
+			case 14:
+				return 314;
+			case 15:
+				return 315;
+		}
+	} else {
+		if (arg1 == 3) {
+			switch (arg0) {
+				case 1:
+					return 601;
+				case 2:
+					return 603;
+				case 3:
+					return 602;
+				case 4:
+					return 604;
+				case 5:
+					return 605;
+				case 6:
+					return 606;
+				case 7:
+					return 607;
+				case 8:
+					return 608;
+				case 9:
+					return 609;
+				case 10:
+					return 610;
+				case 11:
+					return 611;
+				case 12:
+					return 612;
+				case 13:
+					return 613;
+				case 14:
+					return 614;
+				case 15:
+					return 615;
+			}
+		}
+	}
+	return -1;
+}

@@ -1,0 +1,99 @@
+void script_4981(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	int ivar22;
+	int ivar23;
+	int ivar24;
+	int ivar25;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	string svar4;
+	string svar5;
+	string svar6;
+	string svar7;
+	if (arg2 == -1) {
+		return;
+	}
+	if (arg3 == -1) {
+		return;
+	}
+	if ((arg1 < 0) || (arg1 > 7)) {
+		return;
+	}
+	ivar5 = 0;
+	switch (arg0) {
+		case 17:
+		case 1:
+		case 19:
+		case 18:
+			ivar5 = 1;
+	}
+	ivar6 = script_5169(arg0);
+	ivar7 = -1;
+	ivar8 = -1;
+	ivar9 = -1;
+	ivar10 = -1;
+	ivar11 = -1;
+	ivar12 = -1;
+	ivar13 = -1;
+	ivar14 = -1;
+	ivar15 = -1;
+	ivar16 = -1;
+	ivar17 = 0;
+	ivar18 = -1;
+	ivar19 = -1;
+	ivar20 = 0;
+	svar0 = "";
+	ivar21 = 1;
+	svar1 = "";
+	ivar22 = 0;
+	ivar23 = 0;
+	ivar24 = 0;
+	ivar25 = 0;
+	svar2 = "This building cannot be upgraded.";
+	svar3 = "This building cannot be downgraded.";
+	svar4 = "There is no upgrade to cancel.";
+	svar5 = "There is no downgrade to cancel.";
+	svar6 = "This building is already marked to be moved.";
+	svar7 = "There is no move order to cancel.";
+	setWidgetIsHidden(true, new WidgetPointer(1092,879));
+	setWidgetIsHidden(true, new WidgetPointer(1092,891));
+	setWidgetIsHidden(true, new WidgetPointer(1092,903));
+	setWidgetIsHidden(true, new WidgetPointer(1092,915));
+	setWidgetIsHidden(true, new WidgetPointer(1092,1804));
+	setWidgetIsHidden(true, new WidgetPointer(1092,1816));
+	if (citadelConfigsInitialized() && cs2method3701()) {
+		ivar18 = cs2method3717(cs2method5020());
+		if (ivar18 < 0) {
+			return;
+		}
+		ivar19 = cs2method3711(ivar18);
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: TODO citadel configs method:106
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:230)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+				at tests.Main.main(Main.java:45)
+			
+		 */
+	}
+	return;
+}

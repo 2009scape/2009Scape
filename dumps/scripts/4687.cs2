@@ -1,0 +1,4 @@
+void script_4687() {
+	setWidgetText(new WidgetPointer(551,22), "Morale: " + intToStr(bitconfig_9465));
+	return;
+}

@@ -1,0 +1,9 @@
+void script_2411(int arg0) {
+	if (((boolean)bitconfig_995)) {
+		script_2410(getItemDefOpcode129Or130Method4209(arg0, 1), getItemDefOpcode129Or130Method4209(arg0, 2), -1, getItemDefOpcode129Or130Method4209(arg0, 4), getItemDefOpcode129Or130Method4209(arg0, 5), getItemOption(arg0, 1), getItemOption(arg0, 2), "", getItemOption(arg0, 4), getItemOption(arg0, 5), getItemName(arg0));
+	} else {
+		script_2410(getItemDefOpcode129Or130Method4209(arg0, 1), getItemDefOpcode129Or130Method4209(arg0, 2), getItemDefOpcode129Or130Method4209(arg0, 1), getItemDefOpcode129Or130Method4209(arg0, 4), getItemDefOpcode129Or130Method4209(arg0, 5), "Lletya", getItemOption(arg0, 2), "Temple", getItemOption(arg0, 4), getItemOption(arg0, 5), getItemName(arg0));
+	}
+	setScriptCallOnConfigChange(2412, new WidgetPointer(-32768,3), -2147483643, arg0, 1560, 1, "IioY");
+	return;
+}

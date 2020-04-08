@@ -1,0 +1,33 @@
+cs2func_script_814_struct(3,0,0) script_814(int arg0) {
+	switch (arg0) {
+		case 1:
+			return newstruct cs2func_script_814_struct(bitconfig_5146, 37683203, cs2method_3408(105, 109, 1696, bitconfig_5146));
+		case 2:
+			return newstruct cs2func_script_814_struct(bitconfig_5147, 37683204, cs2method_3408(105, 109, 1696, bitconfig_5147));
+		case 3:
+			return newstruct cs2func_script_814_struct(bitconfig_5148, 37683205, cs2method_3408(105, 109, 1696, bitconfig_5148));
+		case 4:
+			return newstruct cs2func_script_814_struct(bitconfig_5149, 37683206, cs2method_3408(105, 109, 1696, bitconfig_5149));
+		case 5:
+			return newstruct cs2func_script_814_struct(bitconfig_5150, 37683207, cs2method_3408(105, 109, 1696, bitconfig_5150));
+		case 6:
+			return newstruct cs2func_script_814_struct(bitconfig_5151, 37683208, cs2method_3408(105, 109, 1696, bitconfig_5151));
+		case 7:
+			return newstruct cs2func_script_814_struct(bitconfig_5152, 37683209, cs2method_3408(105, 109, 1696, bitconfig_5152));
+		case 8:
+			return newstruct cs2func_script_814_struct(bitconfig_5153, 37683210, cs2method_3408(105, 109, 1696, bitconfig_5153));
+		case 9:
+			return newstruct cs2func_script_814_struct(bitconfig_5154, 37683211, cs2method_3408(105, 109, 1696, bitconfig_5154));
+		case 10:
+			return newstruct cs2func_script_814_struct(bitconfig_5155, 37683212, cs2method_3408(105, 109, 1696, bitconfig_5155));
+		case 11:
+			return newstruct cs2func_script_814_struct(bitconfig_5156, 37683213, cs2method_3408(105, 109, 1696, bitconfig_5156));
+		case 12:
+			return newstruct cs2func_script_814_struct(bitconfig_5157, 37683214, cs2method_3408(105, 109, 1696, bitconfig_5157));
+		case 13:
+			return newstruct cs2func_script_814_struct(bitconfig_5158, 37683215, cs2method_3408(105, 109, 1696, bitconfig_5158));
+		case 14:
+			return newstruct cs2func_script_814_struct(bitconfig_5159, 37683216, cs2method_3408(105, 109, 1696, bitconfig_5159));
+	}
+	return newstruct cs2func_script_814_struct(-1, -1, -1);
+}

@@ -1,0 +1,10 @@
+void script_727(int arg0,int arg1) {
+	if (isWidgetOpen(new WidgetPointer(arg1)) && (globalint_199 != -1)) {
+		return;
+	}
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	globalint_199 = -1;
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+	setScriptCallOnWidgetResize(-1, "", new WidgetPointer(arg0));
+	return;
+}

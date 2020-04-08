@@ -1,0 +1,10 @@
+void script_418() {
+	if (((globalint_1354 == -1) || (globalint_1357 < 0)) || (globalint_1358 < 0)) {
+		return;
+	}
+	cameraMethod5511(globalint_1354);
+	globalint_1355 = cameraGetVrot();
+	globalint_1356 = cameraGetHrot();
+	setScriptCallOnGameloop(421, globalint_1357, globalint_1358, 0, "iii", new WidgetPointer(1013,0));
+	return;
+}

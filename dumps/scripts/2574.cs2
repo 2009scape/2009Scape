@@ -1,0 +1,41 @@
+void script_2574() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = multiplyDivide(bitconfig_6457, 1000, 100);
+	if (ivar2 < 1) {
+		ivar2 = 1;
+	}
+	if (ivar2 > 100) {
+		ivar2 = 100;
+	}
+	ivar0 = cs2method_3408(105, 105, 197, ivar2);
+	ivar1 = cs2method_3408(105, 105, 198, ivar2);
+	if (((boolean)bitconfig_5095)) {
+		setWidgetPosition(481, ivar0, 0, 0, new WidgetPointer(781,46));
+		setWidgetSize(16, ivar1, 0, 0, new WidgetPointer(781,46));
+	} else {
+		if (bitconfig_5095 == 2) {
+			setWidgetPosition(481, ivar0, 0, 0, new WidgetPointer(781,37));
+			setWidgetSize(16, ivar1, 0, 0, new WidgetPointer(781,37));
+		}
+	}
+	if (ivar2 < 25) {
+		if (((boolean)bitconfig_5095)) {
+			setWidgetRGB(new Color(255, 153, 0), new WidgetPointer(781,46));
+		} else {
+			if (bitconfig_5095 == 2) {
+				setWidgetRGB(new Color(255, 153, 0), new WidgetPointer(781,37));
+			}
+		}
+	} else if (((boolean)bitconfig_5095)) {
+		setWidgetRGB(new Color(102, 102, 0), new WidgetPointer(781,46));
+	} else {
+		if (bitconfig_5095 == 2) {
+			setWidgetRGB(new Color(40, 70, 5), new WidgetPointer(781,37));
+		}
+	}
+	return;
+}

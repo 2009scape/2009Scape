@@ -1,0 +1,4 @@
+void script_5208() {
+	cs2method5400(1, "friend-referral", "splash.ws");
+	return;
+}

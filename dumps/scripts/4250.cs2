@@ -1,0 +1,9 @@
+void script_4250() {
+	int ivar0;
+	ivar0 = getWidgetActualWidth(new WidgetPointer(548,2));
+	if (getDisplayMode() >= 2) {
+		ivar0 = getWidgetActualWidth(new WidgetPointer(746,2));
+	}
+	messageType0(intToStr(ivar0) + ".");
+	return;
+}

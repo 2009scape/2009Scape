@@ -1,0 +1,15 @@
+int script_1697(int arg0) {
+	switch (arg0) {
+		case 0:
+			return subtract(bitconfig_6857, 30);
+		case 2:
+			return subtract(bitconfig_6858, 30);
+		case 1:
+			return subtract(bitconfig_6859, 30);
+		case 4:
+			return subtract(bitconfig_6860, 30);
+		case 6:
+			return subtract(bitconfig_6861, 30);
+	}
+	return 0;
+}

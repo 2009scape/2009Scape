@@ -1,0 +1,9 @@
+void script_1084(int arg0,int arg1,int arg2) {
+	if (isWidgetHidden(cs2method_3408(105, 73, 1550, add(arg0, 1)))) {
+		return;
+	}
+	if (setWidgetRegister(new WidgetPointer(arg1), arg2)) {
+		setWidgetHidden(1);
+	}
+	return;
+}

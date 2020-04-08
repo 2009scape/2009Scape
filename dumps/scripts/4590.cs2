@@ -1,0 +1,29 @@
+cs2func_script_4590_struct(6,0,0) script_4590() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	ivar0 = -1;
+	ivar1 = -1;
+	ivar2 = -1;
+	ivar3 = -1;
+	ivar4 = -1;
+	ivar5 = -1;
+	if (cs2method3751()) {
+		ivar2 = cs2method3754();
+		ivar0 = cs2method3760(strRemoveEntities(cs2method5020()));
+		if (ivar0 >= 0) {
+			ivar1 = cs2method3757(ivar0);
+		}
+	}
+	if (cs2method3750()) {
+		ivar5 = cs2method3754();
+		ivar3 = cs2method3760(strRemoveEntities(cs2method5020()));
+		if (ivar3 >= 0) {
+			ivar4 = cs2method3757(ivar3);
+		}
+	}
+	return newstruct cs2func_script_4590_struct(ivar0, ivar1, ivar2, ivar3, ivar4, ivar5);
+}

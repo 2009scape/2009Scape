@@ -1,0 +1,7 @@
+void script_3632(int arg0) {
+	if (setWidgetRegister(new WidgetPointer(arg0))) {
+		setWidgetIntegerNode(1101, getWidgetActualX());
+		setWidgetIntegerNode(1102, getWidgetActualY());
+	}
+	return;
+}

@@ -1,0 +1,8 @@
+void script_4628() {
+	globalint_1518 = -1;
+	globalstring_126 = "";
+	if (setWidgetRegister(new WidgetPointer(1110,20))) {
+		setScriptCallOnGameloop(4629, 0, "i");
+	}
+	return;
+}

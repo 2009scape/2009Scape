@@ -1,0 +1,76 @@
+void script_1292(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	ivar3 = getWidgetParentId(new WidgetPointer(arg0));
+	if (arg1 == 5329) {
+		if (getItemAmtInContainer(93, 7409) > 0) {
+			arg1 = 7409;
+		}
+	} else {
+		if (arg1 == 6797) {
+			if (getItemAmtInContainer(93, 18682) > 0) {
+				arg1 = 18682;
+				cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + "Magic watering can");
+			} else if (getItemAmtInContainer(93, 5340) > 0) {
+				arg1 = 5340;
+				cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + "Watering can (8)");
+			} else if (getItemAmtInContainer(93, 5339) > 0) {
+				arg1 = 5339;
+				cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + "Watering can (7)");
+			} else if (getItemAmtInContainer(93, 5338) > 0) {
+				arg1 = 5338;
+				cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + "Watering can (6)");
+			} else if (getItemAmtInContainer(93, 5337) > 0) {
+				arg1 = 5337;
+				cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + "Watering can (5)");
+			} else if (getItemAmtInContainer(93, 5336) > 0) {
+				arg1 = 5336;
+				cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + "Watering can (4)");
+			} else if (getItemAmtInContainer(93, 5335) > 0) {
+				arg1 = 5335;
+				cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + "Watering can (3)");
+			} else if (getItemAmtInContainer(93, 5334) > 0) {
+				arg1 = 5334;
+				cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + "Watering can (2)");
+			} else if (getItemAmtInContainer(93, 5333) > 0) {
+				arg1 = 5333;
+				cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + "Watering can (1)");
+			} else if (getItemAmtInContainer(93, 5331) > 0) {
+				arg1 = 5331;
+				cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + "Watering can (0)");
+			} else {
+				cs2method2305(new WidgetPointer(arg0), "<col=ff9040>" + "Watering can");
+			}
+		}
+	}
+	ivar4 = 0;
+	switch (arg1) {
+		case 5329:
+		case 7409:
+			ivar4 = add(getItemAmtInContainer(93, 5329), getItemAmtInContainer(93, 7409));
+			break;
+		case 5333:
+		case 6797:
+		case 5335:
+		case 5334:
+		case 5331:
+		case 5340:
+		case 5337:
+		case 5336:
+		case 5339:
+		case 5338:
+			ivar4 = add(add(add(add(add(add(add(add(add(getItemAmtInContainer(93, 18682), getItemAmtInContainer(93, 5340)), getItemAmtInContainer(93, 5339)), getItemAmtInContainer(93, 5338)), getItemAmtInContainer(93, 5337)), getItemAmtInContainer(93, 5336)), getItemAmtInContainer(93, 5335)), getItemAmtInContainer(93, 5334)), getItemAmtInContainer(93, 5333)), getItemAmtInContainer(93, 5331));
+			break;
+		default:
+			ivar4 = getItemAmtInContainer(93, arg1);
+	}
+	if (ivar4 > 0) {
+		setWidgetRGB(new Color(125, 215, 100), new WidgetPointer(arg2));
+		setItemOnWidgetMethod2200(arg1, ivar4, new WidgetPointer(arg0));
+	} else {
+		setWidgetRGB(new Color(135, 35, 0), new WidgetPointer(arg2));
+		setItemOnWidgetMethod2200(arg1, -1, new WidgetPointer(arg0));
+	}
+	setWidgetBorderThickness(1, new WidgetPointer(arg0));
+	return;
+}

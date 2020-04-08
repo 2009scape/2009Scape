@@ -1,0 +1,13 @@
+void script_2178(int arg0,string arg1) {
+	if (setWidgetRegister(new WidgetPointer(190,18), arg0)) {
+		if (mod(getClientCycle(), 20) > 9) {
+			setWidgetText("");
+			if (mod(getClientCycle(), 20) == 10) {
+				playSoundEffect(5009, 1, 0);
+			}
+		} else {
+			setWidgetText(arg1);
+		}
+	}
+	return;
+}

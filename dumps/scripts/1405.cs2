@@ -1,0 +1,21 @@
+void script_1405() {
+	if (((boolean)bitconfig_61)) {
+		setWidgetText(new WidgetPointer(756,10), "Draughts: Options");
+		script_1406(49545219);
+	} else if (bitconfig_61 == 2) {
+		setWidgetText(new WidgetPointer(756,10), "Runelink: Options");
+		script_1406(49545220);
+	} else if (bitconfig_61 == 3) {
+		setWidgetText(new WidgetPointer(756,10), "Runesquares: Options");
+		script_1406(49545224);
+	} else {
+		if (bitconfig_61 == 4) {
+			setWidgetText(new WidgetPointer(756,10), "Runeversi: Options");
+			script_1406(49545222);
+		}
+	}
+	script_1407();
+	script_1408();
+	script_1409();
+	return;
+}

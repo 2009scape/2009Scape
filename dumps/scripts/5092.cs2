@@ -1,0 +1,215 @@
+void script_5092() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	string svar4;
+	string svar5;
+	string svar6;
+	string svar7;
+	string stack_dump0;
+	int stack_dump1;
+	deleteAllExtraChilds(new WidgetPointer(1112,4));
+	svar0 = "";
+	svar1 = "";
+	svar2 = "";
+	svar3 = "";
+	svar4 = "";
+	svar5 = "";
+	svar6 = "";
+	svar7 = "";
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 0;
+	ivar8 = 0;
+	if (bitconfig_9540 != 3) {
+		if (bitconfig_9520 > 0) {
+			svar0 = "<br>" + "Members:" + "<br>" + "Score:";
+			svar3 = svar0;
+			svar1 = "<br>" + formatNumber(bitAnd(globalint_788, 1023), 1);
+			svar4 = "<br>" + formatNumber(bitAnd(divide(globalint_788, pow(2, 10)), 1023), 1);
+			svar1 = svar1 + "<br>" + formatNumber(bitAnd(globalint_786, 65535), 1);
+			ivar8 = divide(globalint_786, pow(2, 16));
+			if (ivar8 < 0) {
+				ivar8 = add(pow(2, 16), ivar8);
+			}
+			svar4 = svar4 + "<br>" + formatNumber(ivar8, 1);
+			ivar8 = cs2method_3408(105, 105, 3928, bitconfig_9521);
+			if (ivar8 < 2147483647) {
+				svar1 = svar1 + " / " + formatNumber(ivar8, 1);
+				svar4 = svar4 + " / " + formatNumber(ivar8, 1);
+			}
+			if (bitconfig_9520 < 2) {
+				svar6 = "<br>" + "<br>" + "<br>" + "Neutral players:";
+				svar7 = "<br>" + "<br>" + "<br>" + formatNumber(divide(globalint_788, pow(2, 20)), 1);
+			} else {
+				stack_dump0 = "<br>" + "<br>" + "<br>";
+				svar7 = "<br>" + "<br>" + "<br>";
+				svar6 = stack_dump0;
+			}
+			if (((boolean)bitconfig_9540)) {
+				stack_dump0 = "Your team:";
+				svar5 = "Blue team:";
+				svar2 = stack_dump0;
+			} else if (bitconfig_9540 == 2) {
+				stack_dump0 = "Red team:";
+				svar5 = "Your team:";
+				svar2 = stack_dump0;
+			} else {
+				stack_dump0 = "Red team:";
+				svar5 = "Blue team:";
+				svar2 = stack_dump0;
+				if (bitconfig_9520 < 2) {
+					svar6 = svar6 + "<br>" + "Your score:";
+					svar7 = svar7 + "<br>" + formatNumber(bitconfig_9541, 1);
+					ivar8 = cs2method_3408(105, 105, 3928, bitconfig_9522);
+					if (ivar8 < 2147483647) {
+						svar7 = svar7 + " / " + formatNumber(ivar8, 1);
+					}
+				}
+			}
+		} else {
+			stack_dump0 = "Score:";
+			svar7 = formatNumber(bitconfig_9541, 1);
+			svar6 = stack_dump0;
+		}
+		ivar8 = cs2method_3408(105, 105, 3940, bitconfig_9532);
+		if (ivar8 != 0) {
+			svar6 = svar6 + "<br>" + "Reward for pking:";
+			if (ivar8 > 0) {
+				svar7 = svar7 + "<br>" + intToStr(ivar8);
+			} else {
+				svar7 = svar7 + "<br>" + "A key";
+			}
+		}
+		if (globalint_787 < 0) {
+			svar6 = svar6 + "<br>" + "Scoring begins in:";
+			if (globalint_787 <= -2147483648) {
+				svar7 = svar7 + "<br>" + "-";
+			} else {
+				ivar6 = subtract(0, globalint_787);
+			}
+		}
+		if ((bitconfig_9523 > 0) && (globalint_787 > 0)) {
+			svar6 = svar6 + "<br>" + "Time remaining:";
+			ivar6 = globalint_787;
+		}
+		ivar5 = add(multiply(getLineCount(2147483647, 494, svar6), 10), 2);
+		ivar0 = add(add(getMaxLineWidth(2147483647, 494, svar0), 3), getMaxLineWidth(2147483647, 494, svar1));
+		ivar0 = max(ivar0, getMaxLineWidth(2147483647, 494, svar2));
+		ivar1 = add(add(getMaxLineWidth(2147483647, 494, svar3), 3), getMaxLineWidth(2147483647, 494, svar4));
+		ivar1 = max(ivar1, getMaxLineWidth(2147483647, 494, svar5));
+		ivar3 = add(add(getMaxLineWidth(2147483647, 494, svar6), 3), max(getMaxLineWidth(2147483647, 494, svar7), 40));
+		ivar2 = add(add(ivar0, 5), ivar1);
+		ivar4 = max(ivar3, ivar2);
+		ivar2 = divide(subtract(ivar4, ivar2), 2);
+		stack_dump1 = add(ivar0, ivar2);
+		ivar1 = add(ivar1, ivar2);
+		ivar0 = stack_dump1;
+		setWidgetSize(add(ivar4, 8), add(ivar5, 8), 0, 0, new WidgetPointer(1112,1));
+		createExtraChild(new WidgetPointer(1112,4), 4, getExtraChildGap(new WidgetPointer(1112,4)));
+		createExtraChild(new WidgetPointer(1112,4), 4, getExtraChildGap(new WidgetPointer(1112,4)));
+		setWidgetSize(ivar0, 0, 0, 1);
+		setWidgetSize(ivar0, 0, 0, 1);
+		setWidgetPosition(0, 0, 0, 1);
+		setWidgetPosition(0, 0, 0, 1);
+		setWidgetFont(494);
+		setWidgetFont(494);
+		setWidgetUnknownBoolean(true);
+		setWidgetUnknownBoolean(true);
+		setWidgetTextAlignment(0, 0, 0);
+		setWidgetTextAlignment(2, 0, 0);
+		setWidgetRGB(new Color(255, 0, 0));
+		setWidgetRGB(new Color(255, 0, 0));
+		setWidgetText(svar0);
+		setWidgetText(svar1);
+		createExtraChild(new WidgetPointer(1112,4), 4, getExtraChildGap(new WidgetPointer(1112,4)));
+		setWidgetSize(ivar0, 0, 0, 1);
+		setWidgetPosition(0, 0, 0, 1);
+		setWidgetFont(494);
+		setWidgetUnknownBoolean(true);
+		setWidgetTextAlignment(1, 0, 0);
+		setWidgetRGB(new Color(255, 0, 0));
+		setWidgetText(svar2);
+		createExtraChild(new WidgetPointer(1112,4), 4, getExtraChildGap(new WidgetPointer(1112,4)));
+		createExtraChild(new WidgetPointer(1112,4), 4, getExtraChildGap(new WidgetPointer(1112,4)));
+		setWidgetSize(ivar1, 0, 0, 1);
+		setWidgetSize(ivar1, 0, 0, 1);
+		setWidgetPosition(0, 0, 2, 1);
+		setWidgetPosition(0, 0, 2, 1);
+		setWidgetFont(494);
+		setWidgetFont(494);
+		setWidgetUnknownBoolean(true);
+		setWidgetUnknownBoolean(true);
+		setWidgetTextAlignment(0, 0, 0);
+		setWidgetTextAlignment(2, 0, 0);
+		setWidgetRGB(new Color(127, 127, 255));
+		setWidgetRGB(new Color(127, 127, 255));
+		setWidgetText(svar3);
+		setWidgetText(svar4);
+		createExtraChild(new WidgetPointer(1112,4), 4, getExtraChildGap(new WidgetPointer(1112,4)));
+		setWidgetSize(ivar1, 0, 0, 1);
+		setWidgetPosition(0, 0, 2, 1);
+		setWidgetFont(494);
+		setWidgetUnknownBoolean(true);
+		setWidgetTextAlignment(1, 0, 0);
+		setWidgetRGB(new Color(127, 127, 255));
+		setWidgetText(svar5);
+		if (strLength(svar0) > 0) {
+			createExtraChild(new WidgetPointer(1112,4), 9, getExtraChildGap(new WidgetPointer(1112,4)));
+			createExtraChild(new WidgetPointer(1112,4), 9, getExtraChildGap(new WidgetPointer(1112,4)));
+			setWidgetSize(0, 27, 0, 0);
+			setWidgetSize(0, 27, 0, 0);
+			setWidgetPosition(add(ivar0, 2), 3, 0, 0);
+			setWidgetPosition(add(getWidgetActualX(), 1), add(getWidgetActualY(), 1), 0, 0);
+			setWidgetRGB(new Color(127, 127, 127));
+			setWidgetRGB(new Color(63, 63, 63));
+		}
+		createExtraChild(new WidgetPointer(1112,4), 4, getExtraChildGap(new WidgetPointer(1112,4)));
+		createExtraChild(new WidgetPointer(1112,4), 4, getExtraChildGap(new WidgetPointer(1112,4)));
+		setWidgetSize(ivar3, 0, 0, 1);
+		setWidgetSize(ivar3, 0, 0, 1);
+		setWidgetPosition(0, 0, 1, 1);
+		setWidgetPosition(0, 0, 1, 1);
+		setWidgetFont(494);
+		setWidgetFont(494);
+		setWidgetUnknownBoolean(true);
+		setWidgetUnknownBoolean(true);
+		setWidgetTextAlignment(0, 0, 0);
+		setWidgetTextAlignment(2, 0, 0);
+		setWidgetRGB(new Color(207, 207, 207));
+		setWidgetRGB(new Color(207, 207, 207));
+		setWidgetText(svar6);
+		setWidgetText(svar7);
+		if (ivar6 > 0) {
+			createExtraChild(new WidgetPointer(1112,4), 4, getExtraChildGap(new WidgetPointer(1112,4)));
+			setWidgetSize(ivar3, 12, 0, 0);
+			setWidgetPosition(divide(max(subtract(ivar4, ivar3), 0), 2), 0, 2, 2);
+			setWidgetFont(494);
+			setWidgetUnknownBoolean(true);
+			setWidgetTextAlignment(2, 0, 0);
+			setWidgetRGB(new Color(207, 207, 207));
+			ivar7 = multiply(ivar6, 30);
+			if ((ivar7 > globalint_995) || (add(ivar7, 29) < globalint_995)) {
+				globalint_995 = add(ivar7, 15);
+			}
+			setWidgetText(script_5094());
+			setScriptCallOnGameloop(5093, new WidgetPointer(-32768,3), -2147483643, "Ii");
+		}
+	}
+	return;
+}

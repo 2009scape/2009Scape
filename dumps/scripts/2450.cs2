@@ -1,0 +1,46 @@
+void script_2450(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	ivar3 = 0;
+	ivar4 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		setWidgetIsHidden(true, new WidgetPointer(34,14));
+		setWidgetIsHidden(false, new WidgetPointer(34,10));
+		ivar4 = getWidgetActualHeight();
+		setWidgetPosition(getWidgetActualX(), arg2, 0, 0, new WidgetPointer(34,10));
+		setWidgetSize(getWidgetActualWidth(), ivar4, 0, 0, new WidgetPointer(34,10));
+		ivar3 = add(arg2, divide(ivar4, 2));
+	}
+	ivar5 = getWidgetActualY(new WidgetPointer(34,11));
+	ivar6 = add(ivar5, getWidgetActualHeight(new WidgetPointer(34,11)));
+	if ((ivar3 >= ivar5) && (ivar3 <= ivar6)) {
+		setWidgetSprite(1846, new WidgetPointer(34,8));
+	} else {
+		setWidgetSprite(1845, new WidgetPointer(34,8));
+	}
+	ivar7 = 0;
+	ivar8 = getWidgetActualY(new WidgetPointer(34,9));
+	ivar9 = add(ivar8, ivar4);
+	ivar10 = add(ivar8, getWidgetActualHeight(new WidgetPointer(34,9)));
+	ivar11 = subtract(ivar10, ivar4);
+	if ((ivar3 >= ivar8) && (ivar3 <= ivar9)) {
+		ivar7 = -4;
+	} else if ((ivar3 >= ivar11) && (ivar3 <= ivar10)) {
+		ivar7 = 4;
+	} else {
+		globalint_821 = 0;
+		return;
+	}
+	globalint_821 = add(globalint_821, 1);
+	if (globalint_821 > 5) {
+		script_157(2228239, 2228233, add(cs2method2601(new WidgetPointer(34,9)), ivar7), 1);
+	}
+	return;
+}

@@ -1,0 +1,9 @@
+void script_332(int arg0) {
+	int ivar1;
+	ivar1 = 2359;
+	if (((boolean)globalint_783)) {
+		ivar1 = 2360;
+	}
+	setWidgetModel(cs2method_3408(105, 109, ivar1, arg0), new WidgetPointer(725,83));
+	return;
+}

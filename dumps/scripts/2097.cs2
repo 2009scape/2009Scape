@@ -1,0 +1,8 @@
+void script_2097() {
+	if (globalint_645 <= 5) {
+		setWidgetRGB(new Color(51, 102, 255), new WidgetPointer(834,28));
+	} else {
+		setWidgetRGB(new Color(102, 102, 102), new WidgetPointer(834,28));
+	}
+	return;
+}

@@ -1,0 +1,28 @@
+void script_1923() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar0 = globalint_550;
+	ivar1 = globalint_554;
+	ivar2 = globalint_555;
+	ivar3 = 0;
+	if (((boolean)ivar0)) {
+		ivar1 = max(0, min(subtract(5, ivar1), 5));
+		ivar2 = max(0, min(subtract(5, ivar2), 5));
+		setWidgetText(new WidgetPointer(804,34), intToStr(ivar1));
+		setWidgetText(new WidgetPointer(804,33), intToStr(ivar2));
+		setWidgetIsHidden(false, new WidgetPointer(804,2));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(804,2));
+		if (mod(ivar0, 100) != 0) {
+			ivar3 = 1;
+		}
+		ivar0 = divide(divide(multiply(ivar0, 60), 100), 60);
+		if (((boolean)ivar3)) {
+			ivar0 = add(ivar0, 1);
+		}
+		setWidgetText(new WidgetPointer(804,1), "Game start : " + intToStr(ivar0) + " mins");
+	}
+	return;
+}

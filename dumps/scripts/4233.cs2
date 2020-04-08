@@ -1,0 +1,5 @@
+void script_4233(int arg0,int arg1,int arg2,int arg3) {
+	setScriptCallOnGameloop(4234, new WidgetPointer(arg0), new WidgetPointer(arg1), new WidgetPointer(arg2), getClientCycle(), arg3, "IIIii", new WidgetPointer(arg0));
+	setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(arg0));
+	return;
+}

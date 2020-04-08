@@ -1,0 +1,24 @@
+void script_5071(int arg0,int arg1,int arg2,int arg3) {
+	if ((arg0 != 1) || (arg3 == -1)) {
+		return;
+	}
+	if (arg2 >= min(getCommonDefinitionSize(arg3), 256)) {
+		return;
+	}
+	switch (arg1) {
+		case 1:
+			bitconfig_9517 = arg2;
+			break;
+		case 2:
+			bitconfig_9518 = arg2;
+			break;
+		case 3:
+			bitconfig_9519 = arg2;
+			break;
+		default:
+			return;
+	}
+	playSoundEffect2False(6185, 1, 0, 200);
+	script_5067();
+	return;
+}

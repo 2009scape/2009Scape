@@ -1,0 +1,342 @@
+void script_3268() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	int stack_dump3;
+	cs2func_script_3269_struct(4,0,0) structdump_4;
+	ivar0 = 1;
+	ivar1 = 18;
+	ivar2 = 255;
+	ivar3 = add(add(add(add(globalint_1198, globalint_1199), globalint_1200), globalint_1201), globalint_1202);
+	ivar4 = subtract(ivar2, multiply(ivar3, ivar1));
+	ivar4 = min(ivar4, 105);
+	ivar5 = 4;
+	ivar6 = 0;
+	ivar7 = 0;
+	ivar8 = 0;
+	ivar9 = 0;
+	stack_dump0 = globalint_1184;
+	stack_dump1 = ivar5;
+	stack_dump2 = ivar1;
+	stack_dump3 = ivar4;
+	structdump_4 = script_3269(stack_dump0, stack_dump1, stack_dump2, stack_dump3);
+	ivar9 = structdump_4.intpart_3;
+	ivar8 = structdump_4.intpart_2;
+	ivar7 = structdump_4.intpart_1;
+	ivar6 = structdump_4.intpart_0;
+	switch (globalint_1184) {
+		case 0:
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,265)), ivar5), 0, 0, new WidgetPointer(933,265));
+			if (((boolean)globalint_1198)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,265));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,265), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,317));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,265));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,265), "");
+			}
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,266)), ivar6), 0, 0, new WidgetPointer(933,266));
+			if (((boolean)globalint_1199)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,266));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,266), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,275));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,266));
+				setWidgetIsHidden(true, new WidgetPointer(933,316));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,266), "");
+			}
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,276)), ivar7), 0, 0, new WidgetPointer(933,276));
+			if (((boolean)globalint_1200)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,276));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,276), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,285));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,276));
+				setWidgetIsHidden(true, new WidgetPointer(933,274));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,276), "");
+			}
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,286)), ivar8), 0, 0, new WidgetPointer(933,286));
+			if (((boolean)globalint_1201)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,286));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,286), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,295));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,286));
+				setWidgetIsHidden(true, new WidgetPointer(933,284));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,286), "");
+			}
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,296)), ivar9), 0, 0, new WidgetPointer(933,296));
+			if (((boolean)globalint_1202)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,296));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,296), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,308));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,296));
+				setWidgetIsHidden(true, new WidgetPointer(933,294));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,296), "");
+			}
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,265)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,266)), getWidgetActualY(new WidgetPointer(933,265))), 5)), 2, 0, new WidgetPointer(933,265));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,266)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,276)), getWidgetActualY(new WidgetPointer(933,266))), 5)), 2, 0, new WidgetPointer(933,266));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,276)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,286)), getWidgetActualY(new WidgetPointer(933,276))), 5)), 2, 0, new WidgetPointer(933,276));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,286)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,296)), getWidgetActualY(new WidgetPointer(933,286))), 5)), 2, 0, new WidgetPointer(933,286));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,296)), subtract(subtract(ivar2, getWidgetActualY(new WidgetPointer(933,296))), 5)), 2, 0, new WidgetPointer(933,296));
+			break;
+		case 1:
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,265)), ivar5), 0, 0, new WidgetPointer(933,265));
+			setWidgetContextMenuOption(1, new WidgetPointer(933,265), "Shrink");
+			setWidgetSprite(2852, new WidgetPointer(933,317));
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,266)), ivar6), 0, 0, new WidgetPointer(933,266));
+			if (((boolean)globalint_1199)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,266));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,266), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,275));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,266));
+				setWidgetIsHidden(true, new WidgetPointer(933,316));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,266), "");
+			}
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,276)), ivar7), 0, 0, new WidgetPointer(933,276));
+			if (((boolean)globalint_1200)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,276));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,276), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,285));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,276));
+				setWidgetIsHidden(true, new WidgetPointer(933,274));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,276), "");
+			}
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,286)), ivar8), 0, 0, new WidgetPointer(933,286));
+			if (((boolean)globalint_1201)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,286));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,286), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,295));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,286));
+				setWidgetIsHidden(true, new WidgetPointer(933,284));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,286), "");
+			}
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,296)), ivar9), 0, 0, new WidgetPointer(933,296));
+			if (((boolean)globalint_1202)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,296));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,296), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,308));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,296));
+				setWidgetIsHidden(true, new WidgetPointer(933,294));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,296), "");
+			}
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,265)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,266)), getWidgetActualY(new WidgetPointer(933,265))), 2)), 2, 0, new WidgetPointer(933,265));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,266)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,276)), getWidgetActualY(new WidgetPointer(933,266))), 2)), 2, 0, new WidgetPointer(933,266));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,276)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,286)), getWidgetActualY(new WidgetPointer(933,276))), 2)), 2, 0, new WidgetPointer(933,276));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,286)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,296)), getWidgetActualY(new WidgetPointer(933,286))), 2)), 2, 0, new WidgetPointer(933,286));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,296)), subtract(subtract(ivar2, getWidgetActualY(new WidgetPointer(933,296))), 2)), 2, 0, new WidgetPointer(933,296));
+			break;
+		case 2:
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,265)), ivar5), 0, 0, new WidgetPointer(933,265));
+			if (((boolean)globalint_1198)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,265));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,265), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,317));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,265));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,265), "");
+			}
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,266)), ivar6), 0, 0, new WidgetPointer(933,266));
+			setWidgetContextMenuOption(1, new WidgetPointer(933,266), "Shrink");
+			setWidgetSprite(2852, new WidgetPointer(933,275));
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,276)), ivar7), 0, 0, new WidgetPointer(933,276));
+			if (((boolean)globalint_1200)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,276));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,276), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,285));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,276));
+				setWidgetIsHidden(true, new WidgetPointer(933,274));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,276), "");
+			}
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,286)), ivar8), 0, 0, new WidgetPointer(933,286));
+			if (((boolean)globalint_1201)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,286));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,286), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,295));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,286));
+				setWidgetIsHidden(true, new WidgetPointer(933,284));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,286), "");
+			}
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,296)), ivar9), 0, 0, new WidgetPointer(933,296));
+			if (((boolean)globalint_1202)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,296));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,296), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,308));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,296));
+				setWidgetIsHidden(true, new WidgetPointer(933,294));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,296), "");
+			}
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,265)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,266)), getWidgetActualY(new WidgetPointer(933,265))), 2)), 2, 0, new WidgetPointer(933,265));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,266)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,276)), getWidgetActualY(new WidgetPointer(933,266))), 2)), 2, 0, new WidgetPointer(933,266));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,276)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,286)), getWidgetActualY(new WidgetPointer(933,276))), 2)), 2, 0, new WidgetPointer(933,276));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,286)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,296)), getWidgetActualY(new WidgetPointer(933,286))), 2)), 2, 0, new WidgetPointer(933,286));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,296)), subtract(subtract(ivar2, getWidgetActualY(new WidgetPointer(933,296))), 2)), 2, 0, new WidgetPointer(933,296));
+			break;
+		case 3:
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,265)), ivar5), 0, 0, new WidgetPointer(933,265));
+			if (((boolean)globalint_1198)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,265));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,265), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,317));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,265));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,265), "");
+			}
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,266)), ivar6), 0, 0, new WidgetPointer(933,266));
+			if (((boolean)globalint_1199)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,266));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,266), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,275));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,266));
+				setWidgetIsHidden(true, new WidgetPointer(933,316));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,266), "");
+			}
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,276)), ivar7), 0, 0, new WidgetPointer(933,276));
+			setWidgetContextMenuOption(1, new WidgetPointer(933,276), "Shrink");
+			setWidgetSprite(2852, new WidgetPointer(933,285));
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,286)), ivar8), 0, 0, new WidgetPointer(933,286));
+			if (((boolean)globalint_1201)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,286));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,286), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,295));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,286));
+				setWidgetIsHidden(true, new WidgetPointer(933,284));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,286), "");
+			}
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,296)), ivar9), 0, 0, new WidgetPointer(933,296));
+			if (((boolean)globalint_1202)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,296));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,296), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,308));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,296));
+				setWidgetIsHidden(true, new WidgetPointer(933,294));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,296), "");
+			}
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,265)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,266)), getWidgetActualY(new WidgetPointer(933,265))), 2)), 2, 0, new WidgetPointer(933,265));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,266)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,276)), getWidgetActualY(new WidgetPointer(933,266))), 2)), 2, 0, new WidgetPointer(933,266));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,276)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,286)), getWidgetActualY(new WidgetPointer(933,276))), 2)), 2, 0, new WidgetPointer(933,276));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,286)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,296)), getWidgetActualY(new WidgetPointer(933,286))), 2)), 2, 0, new WidgetPointer(933,286));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,296)), subtract(subtract(ivar2, getWidgetActualY(new WidgetPointer(933,296))), 2)), 2, 0, new WidgetPointer(933,296));
+			break;
+		case 4:
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,265)), ivar5), 0, 0, new WidgetPointer(933,265));
+			if (((boolean)globalint_1198)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,265));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,265), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,317));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,265));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,265), "");
+			}
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,266)), ivar6), 0, 0, new WidgetPointer(933,266));
+			if (((boolean)globalint_1199)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,266));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,266), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,275));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,266));
+				setWidgetIsHidden(true, new WidgetPointer(933,316));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,266), "");
+			}
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,276)), ivar7), 0, 0, new WidgetPointer(933,276));
+			if (((boolean)globalint_1200)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,276));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,276), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,285));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,276));
+				setWidgetIsHidden(true, new WidgetPointer(933,274));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,276), "");
+			}
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,286)), ivar8), 0, 0, new WidgetPointer(933,286));
+			setWidgetContextMenuOption(1, new WidgetPointer(933,286), "Shrink");
+			setWidgetSprite(2852, new WidgetPointer(933,295));
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,296)), ivar9), 0, 0, new WidgetPointer(933,296));
+			if (((boolean)globalint_1202)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,296));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,296), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,308));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,296));
+				setWidgetIsHidden(true, new WidgetPointer(933,294));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,296), "");
+			}
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,265)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,266)), getWidgetActualY(new WidgetPointer(933,265))), 2)), 2, 0, new WidgetPointer(933,265));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,266)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,276)), getWidgetActualY(new WidgetPointer(933,266))), 2)), 2, 0, new WidgetPointer(933,266));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,276)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,286)), getWidgetActualY(new WidgetPointer(933,276))), 2)), 2, 0, new WidgetPointer(933,276));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,286)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,296)), getWidgetActualY(new WidgetPointer(933,286))), 2)), 2, 0, new WidgetPointer(933,286));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,296)), subtract(subtract(ivar2, getWidgetActualY(new WidgetPointer(933,296))), 2)), 2, 0, new WidgetPointer(933,296));
+			break;
+		case 5:
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,265)), ivar5), 0, 0, new WidgetPointer(933,265));
+			if (((boolean)globalint_1198)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,265));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,265), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,317));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,265));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,265), "");
+			}
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,266)), ivar6), 0, 0, new WidgetPointer(933,266));
+			if (((boolean)globalint_1199)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,266));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,266), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,275));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,266));
+				setWidgetIsHidden(true, new WidgetPointer(933,316));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,266), "");
+			}
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,276)), ivar7), 0, 0, new WidgetPointer(933,276));
+			if (((boolean)globalint_1200)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,276));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,276), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,285));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,276));
+				setWidgetIsHidden(true, new WidgetPointer(933,274));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,276), "");
+			}
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,286)), ivar8), 0, 0, new WidgetPointer(933,286));
+			if (((boolean)globalint_1201)) {
+				setWidgetIsHidden(false, new WidgetPointer(933,286));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,286), "Expand");
+				setWidgetSprite(2851, new WidgetPointer(933,295));
+			} else {
+				setWidgetIsHidden(true, new WidgetPointer(933,286));
+				setWidgetIsHidden(true, new WidgetPointer(933,284));
+				setWidgetContextMenuOption(1, new WidgetPointer(933,286), "");
+			}
+			setWidgetPosition(ivar0, script_3270(getWidgetActualY(new WidgetPointer(933,296)), ivar9), 0, 0, new WidgetPointer(933,296));
+			setWidgetContextMenuOption(1, new WidgetPointer(933,296), "Shrink");
+			setWidgetSprite(2852, new WidgetPointer(933,308));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,265)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,266)), getWidgetActualY(new WidgetPointer(933,265))), 2)), 2, 0, new WidgetPointer(933,265));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,266)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,276)), getWidgetActualY(new WidgetPointer(933,266))), 2)), 2, 0, new WidgetPointer(933,266));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,276)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,286)), getWidgetActualY(new WidgetPointer(933,276))), 2)), 2, 0, new WidgetPointer(933,276));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,286)), subtract(subtract(getWidgetActualY(new WidgetPointer(933,296)), getWidgetActualY(new WidgetPointer(933,286))), 2)), 2, 0, new WidgetPointer(933,286));
+			setWidgetSize(16384, script_3270(getWidgetActualHeight(new WidgetPointer(933,296)), subtract(subtract(ivar2, getWidgetActualY(new WidgetPointer(933,296))), 2)), 2, 0, new WidgetPointer(933,296));
+	}
+	script_3271();
+	return;
+}

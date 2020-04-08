@@ -1,0 +1,7 @@
+void script_4215() {
+	if (setWidgetRegister(new WidgetPointer(1071,0))) {
+		setWidgetSelfFull();
+		setWidgetAnimation(41);
+	}
+	return;
+}

@@ -1,0 +1,15 @@
+void script_783() {
+	if (bitconfig_4762 != globalint_155) {
+		globalint_155 = bitconfig_4762;
+		if (((boolean)bitconfig_4762)) {
+			script_1029(1484, 9);
+		} else if (bitconfig_4762 == 2) {
+			script_1032(1486, 0, 7);
+		} else {
+			if (bitconfig_4762 == 3) {
+				script_1030(1485);
+			}
+		}
+	}
+	return;
+}

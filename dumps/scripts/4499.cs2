@@ -1,0 +1,85 @@
+void script_4499(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,string arg9) {
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	if (arg2 == -1) {
+		arg2 = subtract(getCommonDefinitionSize(arg0), 1);
+	} else {
+		arg2 = arg2;
+	}
+	deleteAllExtraChilds(new WidgetPointer(arg7));
+	ivar9 = 0;
+	ivar10 = 5;
+	ivar11 = 0;
+	while (ivar9 <= arg2) {
+		createExtraChild(new WidgetPointer(arg7), 4, ivar9);
+		setWidgetText(cs2method_3408(105, 115, arg0, ivar9));
+		if (((boolean)strLength(cs2method_3408(105, 115, arg0, ivar9)))) {
+			setWidgetPosition(5, ivar10, 0, 0);
+			setWidgetSize(5, 0, 1, 0);
+			setWidgetHidden(1);
+		} else {
+			setWidgetPosition(5, ivar10, 0, 0);
+			setWidgetSize(5, 15, 1, 0);
+			setWidgetFont(3793);
+			setWidgetRGB(new Color(111, 99, 79));
+			setWidgetUnknownBoolean(true);
+			setScriptCallOnMouseEntered(4502, new WidgetPointer(arg6), new WidgetPointer(arg7), -2147483643, "IIi");
+			ivar11 = add(ivar11, 1);
+		}
+		ivar10 = add(ivar10, getWidgetActualHeight());
+		ivar9 = add(1, ivar9);
+	}
+	if (((boolean)arg1)) {
+		script_4508(arg7, subtract(ivar9, 1));
+	}
+	arg3 = min(ivar11, arg3);
+	arg3 = max(arg3, 1);
+	ivar12 = multiply(15, arg3);
+	ivar13 = add(ivar12, multiply(5, 2));
+	ivar14 = getWidgetParentId(new WidgetPointer(arg7));
+	if (ivar14 == -1) {
+		return;
+	}
+	ivar15 = getWidgetParentId(new WidgetPointer(ivar14));
+	if (ivar15 == -1) {
+		return;
+	}
+	ivar16 = getWidgetParentId(new WidgetPointer(ivar15));
+	if (ivar16 == -1) {
+		return;
+	}
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(ivar15)), add(ivar13, getWidgetActualHeight(new WidgetPointer(arg4))), 0, 0, new WidgetPointer(ivar15));
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(ivar15)), ivar13, 0, 0, new WidgetPointer(ivar14));
+	if (getWidgetParentId(new WidgetPointer(ivar15)) == -1) {
+		return;
+	}
+	if (getWidgetActualHeight(new WidgetPointer(ivar16)) < getWidgetActualHeight(new WidgetPointer(ivar15))) {
+		return;
+	}
+	if ((getWidgetActualHeight(new WidgetPointer(ivar16)) < add(getWidgetActualY(new WidgetPointer(ivar15)), getWidgetActualHeight(new WidgetPointer(ivar15)))) && (subtract(add(getWidgetActualY(new WidgetPointer(ivar15)), getWidgetActualHeight(new WidgetPointer(arg4))), getWidgetActualHeight(new WidgetPointer(ivar15))) < 0)) {
+		return;
+	}
+	if (add(getWidgetActualY(new WidgetPointer(ivar15)), ivar13) > getWidgetActualHeight(new WidgetPointer(getWidgetParentId(new WidgetPointer(ivar15))))) {
+		setWidgetPosition(getWidgetActualX(new WidgetPointer(ivar15)), subtract(getWidgetActualY(new WidgetPointer(ivar15)), subtract(getWidgetActualHeight(new WidgetPointer(ivar15)), getWidgetActualHeight(new WidgetPointer(arg4)))), 0, 0, new WidgetPointer(ivar15));
+		setWidgetPosition(0, 0, 0, 0, new WidgetPointer(ivar14));
+		setWidgetPosition(0, 0, 0, 2, new WidgetPointer(arg4));
+	} else {
+		setWidgetPosition(0, 0, 0, 0, new WidgetPointer(arg4));
+		setWidgetPosition(0, 0, 0, 2, new WidgetPointer(ivar14));
+	}
+	setWidgetIsHidden(true, new WidgetPointer(ivar14));
+	setScriptCallOnMousePressed(4505, new WidgetPointer(arg7), new WidgetPointer(arg4), new WidgetPointer(arg8), "III", new WidgetPointer(arg4));
+	setWidgetSize(0, 15, 1, 0, new WidgetPointer(arg6));
+	setWidgetIsHidden(true, new WidgetPointer(arg6));
+	setWidgetScrollMax(0, add(ivar10, 5), new WidgetPointer(arg7));
+	deleteAllExtraChilds(new WidgetPointer(arg5));
+	script_31(arg5, arg7, 5666, 5663, 5664, 5665, 5686, 5685);
+	script_4501(arg4, arg9);
+	return;
+}

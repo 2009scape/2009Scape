@@ -1,0 +1,141 @@
+void script_1059(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6) {
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	if (isWidgetHidden(cs2method_3408(105, 73, 1550, add(arg3, 1)))) {
+		return;
+	}
+	ivar7 = ((int)cs2method_3408(105, 73, 1551, arg3));
+	if (arg0 == 104) {
+		if (((boolean)arg6)) {
+			return;
+		}
+		if (setWidgetRegister(new WidgetPointer(ivar7), globalint_128)) {
+			setWidgetHidden(1);
+		}
+		if (globalint_128 <= 0) {
+			globalint_128 = subtract(arg6, 1);
+		} else {
+			globalint_128 = subtract(globalint_128, 1);
+		}
+		if (setWidgetRegister(new WidgetPointer(ivar7), globalint_128) && isWidgetHidden()) {
+			setWidgetHidden(0);
+			setWidgetRGB(new Color(87, 126, 69));
+		}
+		return;
+	}
+	if (arg0 == 105) {
+		if (((boolean)arg6)) {
+			return;
+		}
+		if (setWidgetRegister(new WidgetPointer(ivar7), globalint_128)) {
+			setWidgetHidden(1);
+		}
+		if (globalint_128 == subtract(arg6, 1)) {
+			globalint_128 = 0;
+		} else {
+			globalint_128 = add(globalint_128, 1);
+		}
+		if (setWidgetRegister(new WidgetPointer(ivar7), globalint_128) && isWidgetHidden()) {
+			setWidgetHidden(0);
+			setWidgetRGB(new Color(87, 126, 69));
+		}
+		return;
+	}
+	ivar8 = 0;
+	ivar9 = 0;
+	if (arg0 == 84) {
+		if (globalint_128 < 0) {
+			if ((arg4 != 32769) && ((boolean)arg3)) {
+				script_1900(((int)cs2method_3408(105, 73, 1550, arg3)), ((int)cs2method_3408(105, 73, 1551, arg3)), globalint_128, add(arg3, 1));
+			}
+		} else if (arg4 != -1) {
+			ivar8 = cs2method5051(arg4);
+			ivar9 = cs2method5053(arg4);
+			if (globalint_128 == add(ivar8, ivar9)) {
+				if ((((boolean)arg3) && (script_1036() != -1)) && setWidgetRegister(cs2method_3408(105, 73, 1550, arg3), globalint_128)) {
+					script_1061(((int)cs2method_3408(105, 73, 1550, arg3)), ((int)cs2method_3408(105, 73, 1551, arg3)), globalint_128, arg2, add(arg3, 1), script_1036());
+				}
+			} else if (globalint_128 < ivar8) {
+				script_1061(((int)cs2method_3408(105, 73, 1550, arg3)), ((int)cs2method_3408(105, 73, 1551, arg3)), globalint_128, arg2, add(arg3, 1), cs2method5052(arg4, globalint_128));
+			} else if (globalint_128 < add(ivar8, ivar9)) {
+				script_1071(arg2, cs2method5054(arg4, subtract(globalint_128, ivar8)), arg3);
+			} else {
+				script_1900(((int)cs2method_3408(105, 73, 1550, arg3)), ((int)cs2method_3408(105, 73, 1551, arg3)), globalint_128, add(arg3, 1));
+			}
+		} else {
+			if (arg5 != -1) {
+				ivar8 = 0;
+				ivar9 = cs2method5056(arg5);
+				script_1071(arg2, cs2method5057(arg5, globalint_128), arg3);
+			}
+		}
+		return;
+	}
+	if (arg0 == 102) {
+		script_1050(globalint_126, globalstring_27);
+		return;
+	}
+	if (arg0 == 13) {
+		script_1054();
+		return;
+	}
+	if ((arg0 == 85) && (arg3 > 0)) {
+		script_1068(arg2, subtract(arg3, 1));
+		return;
+	}
+	if (isAlphaNumeric(((char)arg1))) {
+		return;
+	}
+	arg1 = upper(((char)arg1));
+	ivar10 = 0;
+	ivar11 = 0;
+	ivar12 = -1;
+	if (arg4 != -1) {
+		ivar8 = cs2method5051(arg4);
+		ivar9 = cs2method5053(arg4);
+		if ((((boolean)arg3) && ((boolean)stringMethod4107("X", concatChar(((char)arg1), "")))) && (script_1036() != -1)) {
+			ivar10 = add(ivar8, ivar9);
+			if (setWidgetRegister(cs2method_3408(105, 73, 1550, arg3), ivar10)) {
+				script_1061(((int)cs2method_3408(105, 73, 1550, arg3)), ((int)cs2method_3408(105, 73, 1551, arg3)), ivar10, arg2, add(arg3, 1), script_1036());
+			}
+			return;
+		}
+		ivar10 = 0;
+		while (ivar11 < ivar8) {
+			ivar12 = upper(((char)cs2method5062(arg4, ivar11)));
+			if (ivar12 == arg1) {
+				script_1061(((int)cs2method_3408(105, 73, 1550, arg3)), ((int)cs2method_3408(105, 73, 1551, arg3)), ivar10, arg2, add(arg3, 1), cs2method5052(arg4, ivar10));
+				return;
+			}
+			ivar10 = add(ivar10, 1);
+			ivar11 = add(ivar11, 1);
+		}
+	} else {
+		ivar8 = 0;
+		ivar9 = cs2method5056(arg5);
+	}
+	if (isDigit(((char)arg1))) {
+		return;
+	}
+	ivar13 = strIndexof(((char)arg1), 0, "0123456789");
+	if (((boolean)ivar13)) {
+		ivar13 = 10;
+	}
+	if (ivar13 > ivar9) {
+		return;
+	}
+	ivar10 = subtract(ivar13, 1);
+	if (arg4 != -1) {
+		script_1071(arg2, cs2method5054(arg4, ivar10), arg3);
+	} else {
+		if (arg5 != -1) {
+			script_1071(arg2, cs2method5057(arg5, ivar10), arg3);
+		}
+	}
+	return;
+}

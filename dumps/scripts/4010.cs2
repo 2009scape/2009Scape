@@ -1,0 +1,54 @@
+void script_4010(int arg0) {
+	switch (arg0) {
+		case 0:
+			setWidgetSprite(4316, new WidgetPointer(1056,16));
+			setWidgetSprite(4316, new WidgetPointer(1056,18));
+			setWidgetSprite(4317, new WidgetPointer(1056,17));
+			setWidgetSprite(4316, new WidgetPointer(1056,11));
+			setWidgetSprite(4316, new WidgetPointer(1056,13));
+			setWidgetSprite(4317, new WidgetPointer(1056,12));
+			setWidgetSprite(4316, new WidgetPointer(1056,31));
+			setWidgetSprite(4316, new WidgetPointer(1056,33));
+			setWidgetSprite(4317, new WidgetPointer(1056,32));
+			setWidgetSprite(4316, new WidgetPointer(1056,21));
+			setWidgetSprite(4316, new WidgetPointer(1056,23));
+			setWidgetSprite(4317, new WidgetPointer(1056,22));
+			setWidgetSprite(4316, new WidgetPointer(1056,44));
+			setWidgetSprite(4316, new WidgetPointer(1056,46));
+			setWidgetSprite(4317, new WidgetPointer(1056,45));
+			setWidgetSprite(4316, new WidgetPointer(1056,39));
+			setWidgetSprite(4316, new WidgetPointer(1056,41));
+			setWidgetSprite(4317, new WidgetPointer(1056,40));
+			break;
+		case 1:
+			setWidgetSprite(4318, new WidgetPointer(1056,16));
+			setWidgetSprite(4318, new WidgetPointer(1056,18));
+			setWidgetSprite(4319, new WidgetPointer(1056,17));
+			break;
+		case 2:
+			setWidgetSprite(4318, new WidgetPointer(1056,11));
+			setWidgetSprite(4318, new WidgetPointer(1056,13));
+			setWidgetSprite(4319, new WidgetPointer(1056,12));
+			break;
+		case 3:
+			setWidgetSprite(4318, new WidgetPointer(1056,31));
+			setWidgetSprite(4318, new WidgetPointer(1056,33));
+			setWidgetSprite(4319, new WidgetPointer(1056,32));
+			break;
+		case 4:
+			setWidgetSprite(4318, new WidgetPointer(1056,21));
+			setWidgetSprite(4318, new WidgetPointer(1056,23));
+			setWidgetSprite(4319, new WidgetPointer(1056,22));
+			break;
+		case 5:
+			setWidgetSprite(4318, new WidgetPointer(1056,44));
+			setWidgetSprite(4318, new WidgetPointer(1056,46));
+			setWidgetSprite(4319, new WidgetPointer(1056,45));
+			break;
+		case 6:
+			setWidgetSprite(4318, new WidgetPointer(1056,39));
+			setWidgetSprite(4318, new WidgetPointer(1056,41));
+			setWidgetSprite(4319, new WidgetPointer(1056,40));
+	}
+	return;
+}

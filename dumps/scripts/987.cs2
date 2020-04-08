@@ -1,0 +1,15 @@
+cs2func_script_987_struct(1,1,0) script_987(int arg0) {
+	switch (arg0) {
+		case 0:
+			return newstruct cs2func_script_987_struct(1, "Equipment");
+		case 1:
+			return newstruct cs2func_script_987_struct(1, "Monsters");
+		case 2:
+			return newstruct cs2func_script_987_struct(1, "Slayer Masters");
+		case 3:
+			return newstruct cs2func_script_987_struct(1, "Dungeoneering");
+		case 4:
+			return newstruct cs2func_script_987_struct(1, "Milestones");
+	}
+	return newstruct cs2func_script_987_struct(-1, "");
+}

@@ -1,0 +1,4 @@
+void script_3427() {
+	setWidgetText(new WidgetPointer(60,92), "Items can be bought with Castle Wars tickets only.");
+	return;
+}

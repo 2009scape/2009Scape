@@ -1,0 +1,9 @@
+void script_2180(int arg0) {
+	int ivar1;
+	ivar1 = cs2method_3408(105, 74, 2252, arg0);
+	if (setWidgetRegister(new WidgetPointer(190,18), arg0)) {
+		setWidgetText(getOtherCommonData(ivar1, 845));
+		setScriptCallOnGameloop(-1, "");
+	}
+	return;
+}

@@ -1,0 +1,13 @@
+void script_692(int arg0,int arg1,int arg2) {
+	switch (bitconfig_5367) {
+		case 0:
+			script_1839(1, arg0, arg1, arg2);
+			break;
+		case 1:
+			script_1839(2, arg0, arg1, arg2);
+			break;
+		default:
+			script_1839(0, arg0, arg1, arg2);
+	}
+	return;
+}

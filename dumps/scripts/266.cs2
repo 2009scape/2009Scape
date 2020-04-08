@@ -1,0 +1,28 @@
+void script_266() {
+	string svar0;
+	globalarray_0 = new int[4];
+	globalarray_0[globalint_1104] = add(globalarray_0[globalint_1104], 1);
+	globalarray_0[globalint_1105] = add(globalarray_0[globalint_1105], 1);
+	globalarray_0[globalint_1106] = add(globalarray_0[globalint_1106], 1);
+	globalarray_0[globalint_1107] = add(globalarray_0[globalint_1107], 1);
+	globalarray_0[globalint_1108] = add(globalarray_0[globalint_1108], 1);
+	setWidgetText(new WidgetPointer(923,53), "Small x " + intToStr(globalarray_0[1]));
+	setWidgetText(new WidgetPointer(923,54), "Med. x " + intToStr(globalarray_0[2]));
+	setWidgetText(new WidgetPointer(923,55), "Large x " + intToStr(globalarray_0[3]));
+	svar0 = "";
+	if (globalarray_0[1] > 0) {
+		svar0 = "Remove-weight";
+	}
+	setWidgetContextMenuOption(1, new WidgetPointer(923,53), svar0);
+	svar0 = "";
+	if (globalarray_0[2] > 0) {
+		svar0 = "Remove-weight";
+	}
+	setWidgetContextMenuOption(1, new WidgetPointer(923,54), svar0);
+	svar0 = "";
+	if (globalarray_0[3] > 0) {
+		svar0 = "Remove-weight";
+	}
+	setWidgetContextMenuOption(1, new WidgetPointer(923,55), svar0);
+	return;
+}

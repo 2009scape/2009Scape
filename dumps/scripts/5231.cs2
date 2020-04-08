@@ -1,0 +1,47 @@
+void script_5231(int arg0) {
+	flow_0:
+		SWITCH (globalint_1007) {
+			case 0:
+				 GOTO flow_1
+			case 1:
+				 GOTO flow_2
+			case 2:
+				 GOTO flow_3
+			case 3:
+				 GOTO flow_6
+		}
+		deleteAllExtraChilds(new WidgetPointer(arg0));
+		cs2method5512();
+		GOTO	flow_8
+	flow_1:
+		script_2766(0, 30, arg0);
+		GOTO	flow_8
+	flow_2:
+		cs2method5405(0, 5);
+		cs2method5405(1, 5);
+		cs2method5406(0, 0, 51875191, 1600, 51875191, 1600, 0);
+		cs2method5406(1, 0, 51858819, 600, 51858818, 600, 0);
+		cs2method5406(0, 1, 51875206, 2100, 51875209, 2100, 0);
+		cs2method5406(1, 1, 51858831, 600, 51858836, 600, 0);
+		cs2method5406(0, 2, 51907986, 1400, 51907987, 1400, 0);
+		cs2method5406(1, 2, 51744156, 400, 51678621, 400, 0);
+		cs2method5406(0, 3, 51793308, 700, 51776926, 700, 0);
+		cs2method5406(1, 3, 51596695, 300, 51613076, 300, 0);
+		cs2method5406(0, 4, 51694999, 500, 51678614, 500, 0);
+		cs2method5406(1, 4, 51826061, 300, 51858830, 300, 0);
+		cameraMethod5502(0, 0, 0, 0, 1, 0);
+		script_2768(30, arg0);
+		GOTO	flow_8
+	flow_3:
+		if (cs2method5407(0) == 5) {
+			cameraMethod5502(0, 0, 300, 800, 1, 0);
+			setScriptCallOnMinimapRelatedSetting3(5232, new WidgetPointer(arg0), 1, "Ii", new WidgetPointer(arg0));
+		}
+		GOTO	flow_8
+	flow_6:
+		if (cs2method5407(0) == 5) {
+			cameraMethod5502(0, 3, 500, 400, 1, 3);
+		}
+	flow_8:
+		return;
+}

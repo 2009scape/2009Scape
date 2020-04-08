@@ -1,0 +1,7 @@
+void script_826() {
+	int ivar0;
+	ivar0 = getClientCycle();
+	setScriptCallOnGameloop(827, ivar0, "i", new WidgetPointer(465,2));
+	playSoundEffect(4437, 1, 58);
+	return;
+}

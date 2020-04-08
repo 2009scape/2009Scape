@@ -1,0 +1,51 @@
+void script_751() {
+	int ivar0;
+	int ivar1;
+	string svar0;
+	ivar0 = -1;
+	svar0 = "";
+	ivar1 = -1;
+	if ((standart_config_1174 != -1) && (standart_config_1174 != 0)) {
+		svar0 = cs2method_3408(110, 115, 1279, standart_config_1174);
+		setWidgetNpcHead(standart_config_1174, new WidgetPointer(662,1));
+	} else {
+		if (cs2method_3408(111, 110, 1320, standart_config_448) != 6988) {
+			standart_config_1174 = cs2method_3408(111, 110, 1320, standart_config_448);
+			svar0 = cs2method_3408(110, 115, 1279, standart_config_1174);
+			setWidgetNpcHead(standart_config_1174, new WidgetPointer(662,1));
+		}
+	}
+	if (((boolean)stringMethod4107(svar0, "Animal"))) {
+		setWidgetText(new WidgetPointer(662,54), getItemName(standart_config_448));
+	} else {
+		setWidgetText(new WidgetPointer(662,54), svar0);
+	}
+	if (bitconfig_4282 > 50) {
+		bitconfig_4282 = subtract(bitconfig_4282, 50);
+		ivar0 = cs2method_3408(105, 65, 1275, bitconfig_4282);
+		setWidgetAnimation(ivar0, new WidgetPointer(662,1));
+	} else {
+		ivar0 = cs2method_3408(105, 65, 1276, bitconfig_4282);
+		setWidgetAnimation(ivar0, new WidgetPointer(662,1));
+	}
+	if (cs2method_3408(111, 111, 1283, standart_config_448) != 526) {
+		setWidgetIsHidden(true, new WidgetPointer(662,71));
+		if (((int)cs2method_3408(110, 73, 1282, standart_config_1174)) != 43384877) {
+			setWidgetIsHidden(false, new WidgetPointer(662,72));
+			setWidgetIsHidden(false, new WidgetPointer(662,66));
+			setWidgetIsHidden(false, cs2method_3408(110, 73, 1282, standart_config_1174));
+			setWidgetIsHidden(false, cs2method_3408(110, 73, 1092, standart_config_1174));
+			setWidgetSprite(1802, new WidgetPointer(747,3));
+		} else {
+			setWidgetIsHidden(true, new WidgetPointer(662,66));
+		}
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(662,71));
+		setWidgetIsHidden(true, new WidgetPointer(662,66));
+		if ((standart_config_448 != -1) && (getItemHashmapData(standart_config_448, 394) != 0)) {
+			setWidgetIsHidden(false, cs2method_3408(110, 73, 1092, standart_config_1174));
+		}
+	}
+	script_2671();
+	return;
+}

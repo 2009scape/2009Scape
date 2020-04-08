@@ -1,0 +1,14 @@
+void script_2026() {
+	setWidgetFont(496, new WidgetPointer(752,4));
+	setWidgetFont(496, new WidgetPointer(752,5));
+	setWidgetSize(20, 40, 1, 0, new WidgetPointer(752,4));
+	setWidgetSize(20, 20, 1, 0, new WidgetPointer(752,5));
+	setWidgetPosition(0, 20, 1, 0, new WidgetPointer(752,4));
+	setWidgetPosition(0, 60, 1, 0, new WidgetPointer(752,5));
+	setScriptCallOnMouseOver(-1, "", new WidgetPointer(752,5));
+	setScriptCallOnMouseExit(-1, "", new WidgetPointer(752,5));
+	setScriptCallOnAnyWidgetOpenAndClose(-1, "", new WidgetPointer(752,5));
+	setWidgetRGB(new Color(0, 0, 128), new WidgetPointer(752,5));
+	deleteAllExtraChilds(new WidgetPointer(752,3));
+	return;
+}

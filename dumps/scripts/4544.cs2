@@ -1,0 +1,27 @@
+void script_4544(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7) {
+	int ivar8;
+	ivar8 = getWidgetParentId(new WidgetPointer(arg0));
+	if (ivar8 == -1) {
+		return;
+	}
+	if (((boolean)arg6) || ((boolean)arg6)) {
+		if (getWidgetActualWidth(new WidgetPointer(ivar8)) == arg4) {
+			setScriptCallOnGameloop(4545, new WidgetPointer(-32768,3), arg5, arg6, new WidgetPointer(arg1), arg2, arg7, "IiiIdi", new WidgetPointer(ivar8));
+		} else {
+			if (getWidgetActualWidth(new WidgetPointer(ivar8)) == arg5) {
+				setScriptCallOnGameloop(4546, new WidgetPointer(-32768,3), arg4, arg6, new WidgetPointer(arg1), arg3, arg7, "IiiIdi", new WidgetPointer(ivar8));
+			}
+		}
+	} else {
+		if ((arg6 == 2) || (arg6 == 3)) {
+			if (getWidgetActualHeight(new WidgetPointer(ivar8)) == arg4) {
+				setScriptCallOnGameloop(4545, new WidgetPointer(-32768,3), arg5, arg6, new WidgetPointer(arg1), arg2, arg7, "IiiIdi", new WidgetPointer(ivar8));
+			} else {
+				if (getWidgetActualHeight(new WidgetPointer(ivar8)) == arg5) {
+					setScriptCallOnGameloop(4546, new WidgetPointer(-32768,3), arg4, arg6, new WidgetPointer(arg1), arg3, arg7, "IiiIdi", new WidgetPointer(ivar8));
+				}
+			}
+		}
+	}
+	return;
+}

@@ -1,0 +1,80 @@
+void script_1066(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	ivar2 = getWidgetActualWidth(new WidgetPointer(arg0));
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 0;
+	while (setWidgetRegister(new WidgetPointer(arg0), ivar4)) {
+		ivar3 = add(ivar3, getWidgetActualWidth());
+		ivar4 = add(ivar4, 1);
+	}
+	if (ivar3 <= ivar2) {
+		ivar4 = 0;
+		ivar5 = 0;
+		while (setWidgetRegister(new WidgetPointer(arg0), ivar4)) {
+			setWidgetHidden(0);
+			setWidgetPosition(ivar5, 0, 0, 0);
+			if (setWidgetRegister(new WidgetPointer(137,2), ivar4)) {
+				setWidgetPosition(getWidgetActualX(), getWidgetActualY(), 0, 0);
+			}
+			ivar5 = add(ivar5, getWidgetActualWidth());
+			ivar4 = add(ivar4, 1);
+		}
+		return;
+	}
+	createExtraChild(new WidgetPointer(arg0), 4, add(arg1, 1));
+	setWidgetRGB(new Color(0, 0, 0));
+	setWidgetFont(495);
+	setWidgetTextAlignment(0, 1, 0);
+	setWidgetText(" ... " + "<img=2>");
+	setWidgetUnknownBoolean(false);
+	setWidgetSize(getMaxLineWidth(ivar2, 495, " ... " + "<img=2>"), getWidgetActualHeight(new WidgetPointer(arg0)), 0, 0);
+	ivar3 = getWidgetActualWidth();
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		ivar3 = add(ivar3, getWidgetActualWidth());
+	}
+	ivar4 = 0;
+	while (ivar4 < arg1) {
+		if (setWidgetRegister(new WidgetPointer(arg0), ivar4)) {
+			if (add(ivar3, getWidgetActualWidth()) <= ivar2) {
+				setWidgetHidden(0);
+				ivar3 = add(ivar3, getWidgetActualWidth());
+			} else {
+				setWidgetHidden(1);
+			}
+		}
+		ivar4 = add(ivar4, 1);
+	}
+	ivar4 = 0;
+	ivar5 = 0;
+	while (ivar4 < arg1) {
+		if (setWidgetRegister(new WidgetPointer(arg0), ivar4)) {
+			if (isWidgetHidden()) {
+				setWidgetPosition(ivar5, 0, 0, 0);
+				if (setWidgetRegister(new WidgetPointer(137,2), ivar4)) {
+					setWidgetPosition(getWidgetActualX(), getWidgetActualY(), 0, 0);
+				}
+				ivar5 = add(ivar5, getWidgetActualWidth());
+			} else {
+				if (setWidgetRegister(new WidgetPointer(137,2), ivar4)) {
+					setWidgetHidden(1);
+				}
+			}
+		}
+		ivar4 = add(ivar4, 1);
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 1))) {
+		setWidgetPosition(ivar5, 0, 0, 0);
+		ivar5 = add(ivar5, getWidgetActualWidth());
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		setWidgetPosition(ivar5, 0, 0, 0);
+		if (setWidgetRegister(new WidgetPointer(137,2), ivar4)) {
+			setWidgetPosition(getWidgetActualX(), getWidgetActualY(), 0, 0);
+		}
+	}
+	return;
+}

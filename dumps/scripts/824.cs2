@@ -1,0 +1,111 @@
+string script_824(int arg0,string arg1) {
+	if (((boolean)arg0)) {
+		arg1 = concat(arg1, " ");
+		return arg1;
+	}
+	if (((boolean)arg0)) {
+		arg1 = concat(arg1, "a");
+		return arg1;
+	}
+	if (arg0 == 2) {
+		arg1 = concat(arg1, "b");
+		return arg1;
+	}
+	if (arg0 == 3) {
+		arg1 = concat(arg1, "c");
+		return arg1;
+	}
+	if (arg0 == 4) {
+		arg1 = concat(arg1, "d");
+		return arg1;
+	}
+	if (arg0 == 5) {
+		arg1 = concat(arg1, "e");
+		return arg1;
+	}
+	if (arg0 == 6) {
+		arg1 = concat(arg1, "f");
+		return arg1;
+	}
+	if (arg0 == 7) {
+		arg1 = concat(arg1, "g");
+		return arg1;
+	}
+	if (arg0 == 8) {
+		arg1 = concat(arg1, "h");
+		return arg1;
+	}
+	if (arg0 == 9) {
+		arg1 = concat(arg1, "i");
+		return arg1;
+	}
+	if (arg0 == 10) {
+		arg1 = concat(arg1, "j");
+		return arg1;
+	}
+	if (arg0 == 11) {
+		arg1 = concat(arg1, "k");
+		return arg1;
+	}
+	if (arg0 == 12) {
+		arg1 = concat(arg1, "l");
+		return arg1;
+	}
+	if (arg0 == 13) {
+		arg1 = concat(arg1, "m");
+		return arg1;
+	}
+	if (arg0 == 14) {
+		arg1 = concat(arg1, "n");
+		return arg1;
+	}
+	if (arg0 == 15) {
+		arg1 = concat(arg1, "o");
+		return arg1;
+	}
+	if (arg0 == 16) {
+		arg1 = concat(arg1, "p");
+		return arg1;
+	}
+	if (arg0 == 17) {
+		arg1 = concat(arg1, "q");
+		return arg1;
+	}
+	if (arg0 == 18) {
+		arg1 = concat(arg1, "r");
+		return arg1;
+	}
+	if (arg0 == 19) {
+		arg1 = concat(arg1, "s");
+		return arg1;
+	}
+	if (arg0 == 20) {
+		arg1 = concat(arg1, "t");
+		return arg1;
+	}
+	if (arg0 == 21) {
+		arg1 = concat(arg1, "u");
+		return arg1;
+	}
+	if (arg0 == 22) {
+		arg1 = concat(arg1, "v");
+		return arg1;
+	}
+	if (arg0 == 23) {
+		arg1 = concat(arg1, "w");
+		return arg1;
+	}
+	if (arg0 == 24) {
+		arg1 = concat(arg1, "x");
+		return arg1;
+	}
+	if (arg0 == 25) {
+		arg1 = concat(arg1, "y");
+		return arg1;
+	}
+	if (arg0 == 26) {
+		arg1 = concat(arg1, "z");
+		return arg1;
+	}
+	return "";
+}

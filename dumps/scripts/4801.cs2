@@ -1,0 +1,29 @@
+void script_4801(int arg0) {
+	flow_0:
+		SWITCH (arg0) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_2
+			case 3:
+				 GOTO flow_3
+		}
+		globalint_1659 = 0;
+		setWidgetText(new WidgetPointer(1143,11), "Price: Low-High");
+		GOTO	flow_4
+	flow_1:
+		globalint_1659 = 1;
+		setWidgetText(new WidgetPointer(1143,11), "Price: High-Low");
+		GOTO	flow_4
+	flow_2:
+		globalint_1659 = 2;
+		setWidgetText(new WidgetPointer(1143,11), "Name: A-Z");
+		GOTO	flow_4
+	flow_3:
+		globalint_1659 = 3;
+		setWidgetText(new WidgetPointer(1143,11), "Name: Z-A");
+	flow_4:
+		setWidgetIsHidden(true, new WidgetPointer(1143,6));
+		script_5350(bitconfig_9487, 74907774);
+		return;
+}

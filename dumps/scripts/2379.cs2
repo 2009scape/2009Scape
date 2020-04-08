@@ -1,0 +1,8 @@
+void script_2379(int arg0,int arg1,int arg2,int arg3) {
+	if (arg0 != 1) {
+		return;
+	}
+	bitconfig_6099 = arg3;
+	script_2380(arg1, arg2);
+	return;
+}

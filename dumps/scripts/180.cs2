@@ -1,0 +1,14 @@
+void script_180(int arg0) {
+	if (arg0 == globalint_41) {
+		return;
+	}
+	if (((arg0 == 3) && (standart_config_287 > 0)) && (globalint_41 != -1)) {
+		return;
+	}
+	if (script_179(arg0) > 24) {
+		return;
+	}
+	script_183(arg0, 249);
+	setScriptCallOnGameloop(182, arg0, "i", cs2method_3408(105, 73, 683, arg0));
+	return;
+}

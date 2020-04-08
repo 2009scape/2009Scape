@@ -1,0 +1,36 @@
+int script_5271(int arg0,int arg1,int arg2,int arg3,string arg4) {
+	string svar1;
+	string svar2;
+	string svar3;
+	svar1 = "";
+	if (arg1 == -1) {
+		svar1 = "Your coord";
+	} else if (arg1 == -2) {
+		svar1 = "Safe Clanwars";
+	} else {
+		svar1 = script_2055(arg1);
+	}
+	svar2 = " - ";
+	if (getWidgetActualWidth(new WidgetPointer(arg0)) < 260) {
+		svar2 = "<br>";
+	}
+	svar3 = "max";
+	if (arg2 >= 0) {
+		svar3 = intToStr(arg2);
+	}
+	createExtraChild(new WidgetPointer(arg0), 4, arg3);
+	setWidgetText(arg4 + svar2 + "@ " + svar1 + " - Max: " + svar3);
+	setWidgetUnknownBoolean(true);
+	setWidgetRGB(new Color(204, 204, 204));
+	setWidgetTextAlignment(1, 1, 0);
+	setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), -2147483643, 16777215, "Iii");
+	setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), -2147483643, 13421772, "Iii");
+	setWidgetContextMenuOption(1, "Spawn");
+	setWidgetContextMenuOption(2, "Pick spawn number");
+	setWidgetContextMenuOption(3, "Kill");
+	createExtraChild(new WidgetPointer(arg0), 3, add(arg3, 1));
+	setWidgetRGB(new Color(255, 255, 255));
+	cs2method2103(226);
+	setWidgetFilled(1);
+	return add(arg3, 2);
+}

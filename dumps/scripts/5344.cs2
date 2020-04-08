@@ -1,0 +1,10 @@
+void script_5344(int arg0,int arg1,int arg2,int arg3) {
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		if (getWidgetSpriteId() == arg2) {
+			setWidgetSprite(arg3);
+		} else {
+			setWidgetSprite(arg2);
+		}
+	}
+	return;
+}

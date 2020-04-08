@@ -1,0 +1,8 @@
+void script_2562() {
+	if (globalint_846 < 10) {
+		globalint_846 = add(globalint_846, 1);
+	}
+	setWidgetText(new WidgetPointer(863,30), intToStr(globalint_846));
+	script_2565();
+	return;
+}

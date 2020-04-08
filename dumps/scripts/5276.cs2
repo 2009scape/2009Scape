@@ -1,0 +1,6 @@
+int script_5276(int arg0,int arg1) {
+	if (mod(arg0, arg1) > 0) {
+		return add(divide(arg0, arg1), 1);
+	}
+	return divide(arg0, arg1);
+}

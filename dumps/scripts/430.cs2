@@ -1,0 +1,122 @@
+void script_430(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	flow_0:
+		ivar2 = 0;
+		ivar3 = 0;
+		ivar4 = 0;
+		ivar5 = -1;
+		ivar6 = 0;
+		SWITCH (arg0) {
+			case 67108872:
+				 GOTO flow_1
+			case 67108873:
+				 GOTO flow_5
+			case 67108874:
+				 GOTO flow_9
+			case 67108875:
+				 GOTO flow_13
+		}
+		return;
+	flow_1:
+		if (((boolean)globalint_1388)) {
+			ivar2 = 1;
+		} else {
+			ivar2 = bitconfig_7539;
+		}
+		ivar5 = 67108939;
+		GOTO	flow_17
+	flow_5:
+		if (((boolean)globalint_1388)) {
+			ivar2 = 3;
+		} else {
+			ivar2 = bitconfig_7540;
+		}
+		ivar5 = 67108922;
+		GOTO	flow_17
+	flow_9:
+		if (((boolean)globalint_1388)) {
+			ivar2 = 5;
+		} else {
+			ivar2 = bitconfig_7541;
+		}
+		ivar5 = 67108905;
+		GOTO	flow_17
+	flow_13:
+		if (((boolean)globalint_1388)) {
+			ivar2 = 6;
+		} else {
+			ivar2 = bitconfig_7542;
+		}
+		ivar5 = 67108888;
+	flow_17:
+		SWITCH (ivar2) {
+			case 1:
+				 GOTO flow_18
+			case 2:
+				 GOTO flow_19
+			case 3:
+				 GOTO flow_20
+			case 4:
+				 GOTO flow_21
+			case 5:
+				 GOTO flow_22
+			case 6:
+				 GOTO flow_23
+			case 7:
+				 GOTO flow_24
+			case 8:
+				 GOTO flow_25
+			case 9:
+				 GOTO flow_26
+		}
+		return;
+	flow_18:
+		ivar4 = globalint_1378;
+		ivar6 = getOtherCommonData(293, 1154);
+		GOTO	flow_27
+	flow_19:
+		ivar4 = globalint_1379;
+		ivar6 = getOtherCommonData(299, 1154);
+		GOTO	flow_27
+	flow_20:
+		ivar4 = globalint_1380;
+		ivar6 = getOtherCommonData(300, 1154);
+		GOTO	flow_27
+	flow_21:
+		ivar4 = globalint_1386;
+		ivar6 = getOtherCommonData(301, 1154);
+		GOTO	flow_27
+	flow_22:
+		ivar4 = globalint_1381;
+		ivar6 = getOtherCommonData(305, 1154);
+		GOTO	flow_27
+	flow_23:
+		ivar4 = globalint_1383;
+		ivar6 = getOtherCommonData(1044, 1154);
+		GOTO	flow_27
+	flow_24:
+		ivar4 = globalint_1384;
+		ivar6 = getOtherCommonData(1045, 1154);
+		GOTO	flow_27
+	flow_25:
+		ivar4 = globalint_1385;
+		ivar6 = getOtherCommonData(1046, 1154);
+		GOTO	flow_27
+	flow_26:
+		ivar4 = globalint_1382;
+		ivar6 = getOtherCommonData(1047, 1154);
+	flow_27:
+		if (((boolean)ivar4) && (bitconfig_7514 >= ivar6)) {
+			if (((boolean)arg1)) {
+				ivar3 = 16777215;
+			} else {
+				ivar3 = 16750623;
+			}
+			setWidgetRGB(new Color(ivar3), new WidgetPointer(ivar5));
+		}
+		return;
+}

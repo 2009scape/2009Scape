@@ -1,0 +1,7 @@
+void script_1484() {
+	if (((boolean)globalint_188)) {
+		script_1474();
+	}
+	script_675();
+	return;
+}

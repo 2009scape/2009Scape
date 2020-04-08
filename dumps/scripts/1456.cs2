@@ -1,0 +1,79 @@
+void script_1456() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int stack_dump0;
+	cs2func_script_1467_struct(2,0,0) structdump_1;
+	cs2func_script_1467_struct(2,0,0) structdump_2;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 8;
+	ivar4 = 5;
+	ivar5 = 0;
+	ivar6 = getItemContainerLength(95);
+	script_1464();
+	stack_dump0 = ivar5;
+	structdump_1 = script_1467(stack_dump0);
+	ivar2 = structdump_1.intpart_1;
+	ivar1 = structdump_1.intpart_0;
+	while (ivar5 <= 9) {
+		ivar0 = ivar1;
+		if (ivar5 != 0) {
+			setWidgetIsHidden(false, cs2method_3408(105, 73, 1611, ivar5));
+			setWidgetPosition(subtract(ivar3, 2), subtract(ivar4, 2), 0, 0, cs2method_3408(105, 73, 1611, ivar5));
+		}
+		while (ivar0 < ivar2) {
+			if (setWidgetRegister(new WidgetPointer(762,93), ivar0)) {
+				if (getItemAmtInSlot(95, ivar0) != 0) {
+					setWidgetPosition(ivar3, ivar4, 0, 0);
+					setWidgetHidden(0);
+					ivar3 = add(ivar3, 44);
+					if (ivar3 >= multiply(44, 10)) {
+						ivar3 = 8;
+						ivar4 = add(ivar4, 44);
+					}
+				} else {
+					ivar0 = 1000;
+				}
+			}
+			ivar0 = add(ivar0, 1);
+		}
+		if (ivar3 != 8) {
+			setWidgetPosition(ivar3, ivar4, 0, 0, cs2method_3408(105, 73, 1612, ivar5));
+			setWidgetSize(subtract(multiply(44, 10), ivar3), 32, 0, 0, cs2method_3408(105, 73, 1612, ivar5));
+			setWidgetIsHidden(false, cs2method_3408(105, 73, 1612, ivar5));
+			ivar4 = add(ivar4, 44);
+		}
+		if (((boolean)ivar5)) {
+			ivar5 = 2;
+		} else {
+			ivar5 = add(ivar5, 1);
+		}
+		stack_dump0 = ivar5;
+		structdump_2 = script_1467(stack_dump0);
+		ivar2 = structdump_2.intpart_1;
+		ivar1 = structdump_2.intpart_0;
+		if (ivar1 == ivar2) {
+			ivar5 = 100;
+		}
+		if (((int)cs2method_3408(105, 73, 1610, ivar5)) != -1) {
+			setWidgetIsHidden(false, cs2method_3408(105, 73, 1610, ivar5));
+			setWidgetPosition(0, ivar4, 0, 0, cs2method_3408(105, 73, 1610, ivar5));
+			ivar4 = add(ivar4, 15);
+			ivar3 = 0;
+		}
+	}
+	setWidgetScrollMax(getWidgetActualWidth(new WidgetPointer(762,93)), ivar4, new WidgetPointer(762,93));
+	cs2method2100(0, globalint_203, new WidgetPointer(762,93));
+	deleteAllExtraChilds(new WidgetPointer(762,114));
+	if (ivar4 > getWidgetActualHeight(new WidgetPointer(762,93))) {
+		script_31(49938546, 49938525, 792, 789, 790, 791, 773, 788);
+		script_157(49938546, 49938525, cs2method2601(new WidgetPointer(762,93)), 1);
+	}
+	return;
+}

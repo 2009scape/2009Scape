@@ -2,14 +2,14 @@ package org.crandor.game.content.skill.member.fletching.items.gem;
 
 import org.crandor.game.content.skill.SkillPulse;
 import org.crandor.game.content.skill.Skills;
+import org.crandor.game.content.skill.member.fletching.Fletching;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.update.flag.context.Animation;
 
 /**
  * Represents the gem cutting pulse(gem to bolt).
- * @author 'Vexia
- * @date 01/12/2013
+ * @author Ceikry
  */
 public final class GemBoltCutPulse extends SkillPulse<Item> {
 
@@ -21,7 +21,7 @@ public final class GemBoltCutPulse extends SkillPulse<Item> {
 	/**
 	 * Represents the gem we're cutting.
 	 */
-	private final Gem gem;
+	private final Fletching.GemBolts gem;
 
 	/**
 	 * Represents the amount to make.
@@ -39,7 +39,7 @@ public final class GemBoltCutPulse extends SkillPulse<Item> {
 	 * @param node the node.
 	 * @param amount the amount.
 	 */
-	public GemBoltCutPulse(Player player, Item node, final Gem gem, final int amount) {
+	public GemBoltCutPulse(Player player, Item node, final Fletching.GemBolts gem, final int amount) {
 		super(player, node);
 		this.gem = gem;
 		this.amount = amount;
@@ -47,11 +47,11 @@ public final class GemBoltCutPulse extends SkillPulse<Item> {
 
 	@Override
 	public boolean checkRequirements() {
-		if (player.getSkills().getLevel(Skills.FLETCHING) < gem.getLevel()) {
-			player.getDialogueInterpreter().sendDialogue("You need a Fletching level of " + gem.getLevel() + " or above to do that.");
+		if (player.getSkills().getLevel(Skills.FLETCHING) < gem.level) {
+			player.getDialogueInterpreter().sendDialogue("You need a Fletching level of " + gem.level + " or above to do that.");
 			return false;
 		}
-		if (!player.getInventory().containsItem(gem.getGem())) {
+		if (!player.getInventory().containsItem(new Item(gem.gem))) {
 			return false;
 		}
 		return true;
@@ -59,7 +59,7 @@ public final class GemBoltCutPulse extends SkillPulse<Item> {
 
 	@Override
 	public void animate() {
-		if (ticks % 5 == 0) {
+		if (ticks % 6 == 0) {
 			player.animate(ANIMATION);
 		}
 	}
@@ -69,9 +69,10 @@ public final class GemBoltCutPulse extends SkillPulse<Item> {
 		if (++ticks % 5 != 0) {
 			return false;
 		}
-		if (player.getInventory().remove(gem.getGem())) {
-			player.getInventory().add(gem.getBolt());
-			player.getSkills().addExperience(Skills.FLETCHING, gem.getExperience(), true);
+		Item reward = new Item(gem.tip,12);
+		if (player.getInventory().remove(new Item(gem.gem))) {
+			player.getInventory().add(reward);
+			player.getSkills().addExperience(Skills.FLETCHING, gem.experience * reward.getAmount(), true);
 		}
 		amount--;
 		return amount <= 0;

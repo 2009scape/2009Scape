@@ -1,0 +1,6 @@
+void script_515() {
+	globalint_51 = 300;
+	globalint_50 = 0;
+	globalint_52 = 0;
+	return;
+}

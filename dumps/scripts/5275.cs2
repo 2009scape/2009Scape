@@ -1,0 +1,147 @@
+void script_5275(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	string svar0;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	cs2func_script_788_struct(2,0,0) structdump_3;
+	cs2func_script_788_struct(2,0,0) structdump_4;
+	ivar1 = 0;
+	ivar2 = -1;
+	ivar3 = -1;
+	ivar4 = 1;
+	svar0 = "";
+	ivar5 = -1;
+	ivar6 = -1;
+	ivar7 = -1;
+	ivar8 = -1;
+	switch (bitconfig_9828) {
+		case 0:
+			return;
+		case 1:
+			ivar5 = 52948;
+			ivar6 = 808;
+			ivar7 = 5138;
+			ivar8 = 5139;
+			break;
+		case 2:
+			ivar5 = 52954;
+			ivar6 = 808;
+			ivar7 = 5134;
+			ivar8 = 5135;
+			break;
+		case 3:
+			ivar5 = 52984;
+			ivar6 = 808;
+			ivar7 = 5136;
+			ivar8 = 5137;
+	}
+	deleteAllExtraChilds(new WidgetPointer(1138,5));
+	createExtraChild(new WidgetPointer(1138,5), 6, getExtraChildGap(new WidgetPointer(1138,5)));
+	setWidgetSize(0, 0, 1, 1);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetModel(ivar5);
+	setWidget3DRotation(0, 125, 0, 0, 0, 375);
+	setWidgetAnimation(ivar6);
+	script_2647(74579973);
+	deleteAllExtraChilds(new WidgetPointer(1138,7));
+	while (ivar1 < getItemContainerLength(94)) {
+		ivar4 = 1;
+		switch (ivar1) {
+			case 0:
+				ivar2 = 74579981;
+				break;
+			case 1:
+				ivar2 = 74579983;
+				break;
+			case 2:
+				ivar2 = 74579984;
+				break;
+			case 3:
+				ivar2 = 74579986;
+				break;
+			case 4:
+				ivar2 = 74579987;
+				break;
+			case 5:
+				ivar2 = 74579988;
+				break;
+			case 7:
+				ivar2 = 74579989;
+				break;
+			case 9:
+				ivar2 = 74579991;
+				break;
+			case 10:
+				ivar2 = 74579990;
+				break;
+			case 12:
+				ivar2 = 74579992;
+				break;
+			case 13:
+				ivar2 = 74579985;
+				ivar4 = 900;
+				break;
+			case 14:
+				ivar2 = 74579982;
+				break;
+			default:
+				ivar2 = -1;
+		}
+		createExtraChild(new WidgetPointer(1138,7), 5, ivar1);
+		if (ivar2 != -1) {
+			ivar3 = cs2method_3408(105, 111, ivar8, ivar1);
+			if (ivar3 != -1) {
+				setWidgetSize(36, 32, 0, 0);
+				stack_dump0 = ivar2;
+				stack_dump1 = 2;
+				stack_dump2 = 2;
+				structdump_3 = script_788(stack_dump0, stack_dump1, stack_dump2);
+				setWidgetPosition(structdump_3.intpart_0, structdump_3.intpart_1, 0, 0);
+				setItemOnWidgetMethod1200(ivar3, ivar4);
+				cs2method1305(concat("<col=ff9040>", getItemName(ivar3)));
+				setWidgetContextMenuOption(1, "Information");
+				setWidgetShadowColor(new Color(48, 32, 32));
+				setWidgetBorderThickness(1);
+				setScriptCallOnClickContextMenu(1620, new WidgetPointer(-32768,3), -2147483643, 100, 0, 8, "Iiiii");
+			} else {
+				setWidgetSize(32, 32, 0, 0);
+				stack_dump0 = ivar2;
+				stack_dump1 = 2;
+				stack_dump2 = 2;
+				structdump_4 = script_788(stack_dump0, stack_dump1, stack_dump2);
+				setWidgetPosition(structdump_4.intpart_0, structdump_4.intpart_1, 0, 0);
+				setWidgetSprite(cs2method_3408(105, 100, 796, ivar1));
+			}
+		} else {
+			setWidgetHidden(1);
+		}
+		ivar1 = add(ivar1, 1);
+	}
+	setWidgetText(new WidgetPointer(1138,29), concatSignedInt(cs2method_3408(105, 105, ivar7, 0), "Stab: "));
+	setWidgetText(new WidgetPointer(1138,30), concatSignedInt(cs2method_3408(105, 105, ivar7, 1), "Slash: "));
+	setWidgetText(new WidgetPointer(1138,31), concatSignedInt(cs2method_3408(105, 105, ivar7, 2), "Crush: "));
+	setWidgetText(new WidgetPointer(1138,32), concatSignedInt(cs2method_3408(105, 105, ivar7, 3), "Magic: "));
+	setWidgetText(new WidgetPointer(1138,33), concatSignedInt(cs2method_3408(105, 105, ivar7, 4), "Ranged: "));
+	setWidgetText(new WidgetPointer(1138,34), concatSignedInt(cs2method_3408(105, 105, ivar7, 5), "Stab: "));
+	setWidgetText(new WidgetPointer(1138,35), concatSignedInt(cs2method_3408(105, 105, ivar7, 6), "Slash: "));
+	setWidgetText(new WidgetPointer(1138,36), concatSignedInt(cs2method_3408(105, 105, ivar7, 7), "Crush: "));
+	setWidgetText(new WidgetPointer(1138,38), concatSignedInt(cs2method_3408(105, 105, ivar7, 9), "Ranged: "));
+	setWidgetText(new WidgetPointer(1138,39), concatSignedInt(cs2method_3408(105, 105, ivar7, 10), "Summoning: "));
+	setWidgetText(new WidgetPointer(1138,37), concatSignedInt(cs2method_3408(105, 105, ivar7, 8), "Magic: "));
+	setWidgetText(new WidgetPointer(1138,40), concat(concatSignedInt(cs2method_3408(105, 105, ivar7, 11), "Absorb Melee: "), "%"));
+	setWidgetText(new WidgetPointer(1138,41), concat(concatSignedInt(cs2method_3408(105, 105, ivar7, 12), "Absorb Magic: "), "%"));
+	setWidgetText(new WidgetPointer(1138,42), concat(concatSignedInt(cs2method_3408(105, 105, ivar7, 13), "Absorb Ranged: "), "%"));
+	setWidgetText(new WidgetPointer(1138,43), concatSignedInt(cs2method_3408(105, 105, ivar7, 14), "Strength: "));
+	setWidgetText(new WidgetPointer(1138,44), concatSignedInt(cs2method_3408(105, 105, ivar7, 15), "Ranged Strength: "));
+	setWidgetText(new WidgetPointer(1138,45), concatSignedInt(cs2method_3408(105, 105, ivar7, 16), "Prayer: "));
+	setWidgetText(new WidgetPointer(1138,46), concat(concatSignedInt(cs2method_3408(105, 105, ivar7, 17), "Magic Damage: "), "%"));
+	return;
+}

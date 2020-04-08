@@ -1,0 +1,4 @@
+void script_2391(int arg0,int arg1) {
+	script_2010(arg0, arg1, "Level 61 Agility" + "<br>" + "Wear a nosepeg or equivalent item");
+	return;
+}

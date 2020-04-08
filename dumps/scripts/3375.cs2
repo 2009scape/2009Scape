@@ -1,0 +1,5 @@
+void script_3375(int arg0,int arg1) {
+	setWidgetSize(arg0, arg1, 0, 0, new WidgetPointer(519,3));
+	setWidgetPosition(add(16, divide(subtract(64, arg0), 2)), add(16, divide(subtract(64, arg1), 2)), 0, 0, new WidgetPointer(519,3));
+	return;
+}

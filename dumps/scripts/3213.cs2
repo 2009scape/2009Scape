@@ -1,0 +1,127 @@
+void script_3213(int arg0,string arg1) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	string svar1;
+	string svar2;
+	flow_0:
+		ivar1 = 0;
+		ivar2 = 0;
+		ivar3 = 0;
+		ivar4 = 0;
+		ivar5 = 0;
+		svar1 = "accountappeal";
+		svar2 = "passwordchoice.ws";
+		SWITCH (arg0) {
+			case 44105822:
+				 GOTO flow_1
+			case 44105841:
+				 GOTO flow_9
+			case 44105812:
+				 GOTO flow_17
+			case 44105802:
+				 GOTO flow_25
+			case 44105777:
+				 GOTO flow_33
+		}
+		setWidgetIsHidden(true, new WidgetPointer(673,31));
+		return;
+	flow_1:
+		if (strLength(arg1) > 0) {
+			setWidgetSprite(4061, new WidgetPointer(673,94));
+			setWidgetIsHidden(false, new WidgetPointer(673,99));
+			setWidgetText(new WidgetPointer(673,30), arg1);
+			setWidgetText(new WidgetPointer(673,137), arg1);
+		} else if (getWidgetSpriteId(new WidgetPointer(arg0)) == 4061) {
+			setWidgetText(new WidgetPointer(673,30), getWidgetText(new WidgetPointer(673,137)));
+		} else if (getWidgetSpriteId(new WidgetPointer(arg0)) == 4059) {
+			setWidgetText(new WidgetPointer(673,30), "This email address is available for use.");
+		} else {
+			setWidgetText(new WidgetPointer(673,30), "Please enter your email address here.");
+		}
+		setWidgetSize(110, add(multiply(getLineCount(subtract(110, 20), 3793, getWidgetText(new WidgetPointer(673,30))), 12), 10), 0, 0, new WidgetPointer(673,31));
+		ivar2 = 99;
+		ivar4 = 450;
+		GOTO	flow_41
+	flow_9:
+		if (strLength(arg1) > 0) {
+			setWidgetSprite(4061, new WidgetPointer(673,113));
+			setWidgetIsHidden(false, new WidgetPointer(673,118));
+			setWidgetText(new WidgetPointer(673,30), arg1);
+			setWidgetText(new WidgetPointer(673,138), arg1);
+		} else if (getWidgetSpriteId(new WidgetPointer(arg0)) == 4061) {
+			setWidgetText(new WidgetPointer(673,30), getWidgetText(new WidgetPointer(673,138)));
+		} else if (getWidgetSpriteId(new WidgetPointer(arg0)) == 4059) {
+			setWidgetText(new WidgetPointer(673,30), "Both email addresses match.");
+		} else {
+			setWidgetText(new WidgetPointer(673,30), "Please enter your email address again here.");
+		}
+		setWidgetSize(110, add(multiply(getLineCount(subtract(110, 20), 3793, getWidgetText(new WidgetPointer(673,30))), 12), 10), 0, 0, new WidgetPointer(673,31));
+		ivar2 = 128;
+		ivar4 = 450;
+		GOTO	flow_41
+	flow_17:
+		if (strLength(arg1) > 0) {
+			setWidgetSprite(4061, new WidgetPointer(673,84));
+			setWidgetIsHidden(false, new WidgetPointer(673,89));
+			setWidgetText(new WidgetPointer(673,30), arg1);
+			setWidgetText(new WidgetPointer(673,139), arg1);
+		} else if (getWidgetSpriteId(new WidgetPointer(arg0)) == 4061) {
+			setWidgetText(new WidgetPointer(673,30), getWidgetText(new WidgetPointer(673,139)));
+		} else if (getWidgetSpriteId(new WidgetPointer(arg0)) == 4059) {
+			setWidgetText(new WidgetPointer(673,30), "You have entered your password.");
+		} else {
+			setWidgetText(new WidgetPointer(673,30), "Please enter your desired password here.");
+		}
+		setWidgetSize(110, add(multiply(getLineCount(subtract(110, 20), 3793, getWidgetText(new WidgetPointer(673,30))), 12), 10), 0, 0, new WidgetPointer(673,31));
+		ivar2 = 161;
+		ivar4 = 450;
+		GOTO	flow_41
+	flow_25:
+		if (strLength(arg1) > 0) {
+			setWidgetSprite(4061, new WidgetPointer(673,74));
+			setWidgetIsHidden(false, new WidgetPointer(673,79));
+			setWidgetText(new WidgetPointer(673,30), arg1);
+			setWidgetText(new WidgetPointer(673,140), arg1);
+		} else if (getWidgetSpriteId(new WidgetPointer(arg0)) == 4061) {
+			setWidgetText(new WidgetPointer(673,30), getWidgetText(new WidgetPointer(673,140)));
+		} else if (getWidgetSpriteId(new WidgetPointer(arg0)) == 4059) {
+			setWidgetText(new WidgetPointer(673,30), "Both passwords match.");
+		} else {
+			setWidgetText(new WidgetPointer(673,30), "Please enter your desired password again here.");
+		}
+		setWidgetSize(110, add(multiply(getLineCount(subtract(110, multiply(10, 2)), 3793, getWidgetText(new WidgetPointer(673,30))), 12), 10), 0, 0, new WidgetPointer(673,31));
+		ivar2 = 190;
+		ivar4 = 450;
+		GOTO	flow_41
+	flow_33:
+		if (strLength(arg1) > 0) {
+			setWidgetSprite(4061, new WidgetPointer(673,49));
+			setWidgetIsHidden(false, new WidgetPointer(673,125));
+			setWidgetText(new WidgetPointer(673,30), arg1);
+			setWidgetText(new WidgetPointer(673,141), arg1);
+		} else if (getWidgetSpriteId(new WidgetPointer(arg0)) == 4061) {
+			setWidgetText(new WidgetPointer(673,30), getWidgetText(new WidgetPointer(673,141)));
+		} else if (getWidgetSpriteId(new WidgetPointer(arg0)) == 4059) {
+			setWidgetText(new WidgetPointer(673,30), "You have entered your age.");
+		} else {
+			setWidgetText(new WidgetPointer(673,30), "Please enter your age, in years, here.");
+		}
+		ivar5 = subtract(getWidgetActualWidth(new WidgetPointer(673,38)), 277);
+		setWidgetSize(min(add(getMaxLineWidth(multiply(divide(getTextWidth(3793, getWidgetText(new WidgetPointer(673,30))), 4), 3), 3793, getWidgetText(new WidgetPointer(673,30))), multiply(10, 2)), ivar5), 30, 0, 0, new WidgetPointer(673,31));
+		ivar2 = 223;
+		ivar4 = 277;
+	flow_41:
+		ivar1 = divide(getWidgetActualHeight(new WidgetPointer(673,31)), 2);
+		ivar3 = subtract(ivar2, ivar1);
+		setWidgetPosition(ivar4, ivar3, 0, 0, new WidgetPointer(673,31));
+		setWidgetIsHidden(false, new WidgetPointer(673,31));
+		if (((boolean)stringMethod4107(getWidgetText(new WidgetPointer(673,30)), "Email already in use. Try a different email or click " + "<u=ebe0bc>" + "here" + "</u>" + " to recover this account."))) {
+			setScriptCallOnMousePressed(2931, svar1, svar2, 1, "ss1", new WidgetPointer(673,32));
+		} else {
+			setScriptCallOnMousePressed(-1, "", new WidgetPointer(673,32));
+		}
+		return;
+}

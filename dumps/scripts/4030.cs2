@@ -1,0 +1,9 @@
+void script_4030(int arg0) {
+	if (((boolean)arg0)) {
+		setWidgetSprite(4301, new WidgetPointer(917,106));
+	} else {
+		setWidgetSprite(4300, new WidgetPointer(917,106));
+		script_41(60096609);
+	}
+	return;
+}

@@ -1,0 +1,5 @@
+void script_4008(int arg0,int arg1) {
+	setScriptCallOnMouseEntered(4009, 0, arg0, new WidgetPointer(arg1), "iiI", new WidgetPointer(arg1));
+	setScriptCallOnMouseExit(4009, 1, arg0, new WidgetPointer(arg1), "iiI", new WidgetPointer(arg1));
+	return;
+}

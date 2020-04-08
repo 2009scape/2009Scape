@@ -1,0 +1,36 @@
+int script_694(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int stack_dump0;
+	cs2func_script_2413_struct(3,0,0) structdump_1;
+	cs2func_script_2413_struct(3,0,0) structdump_2;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 0;
+	stack_dump0 = arg0;
+	structdump_1 = script_2413(stack_dump0);
+	ivar4 = structdump_1.intpart_2;
+	ivar3 = structdump_1.intpart_1;
+	ivar2 = structdump_1.intpart_0;
+	stack_dump0 = arg1;
+	structdump_2 = script_2413(stack_dump0);
+	ivar7 = structdump_2.intpart_2;
+	ivar6 = structdump_2.intpart_1;
+	ivar5 = structdump_2.intpart_0;
+	ivar2 = add(ivar2, ivar5);
+	ivar3 = add(ivar3, ivar6);
+	ivar4 = add(ivar4, ivar7);
+	ivar8 = max(ivar2, max(ivar3, ivar4));
+	ivar5 = script_669(255, ivar8, ivar2);
+	ivar6 = script_669(255, ivar8, ivar3);
+	ivar7 = script_669(255, ivar8, ivar4);
+	return script_693(ivar5, ivar6, ivar7);
+}

@@ -1,0 +1,10 @@
+void script_2349(int arg0,int arg1,int arg2) {
+	if (script_19(arg1, -1) >= arg2) {
+		setWidgetRGB(new Color(0, 204, 0), new WidgetPointer(arg0));
+		setWidgetText(new WidgetPointer(arg0), intToStr(arg2) + "/" + intToStr(arg2));
+	} else {
+		setWidgetRGB(new Color(192, 0, 0), new WidgetPointer(arg0));
+		setWidgetText(new WidgetPointer(arg0), script_20(script_19(arg1, -1)) + "/" + intToStr(arg2));
+	}
+	return;
+}

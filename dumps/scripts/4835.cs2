@@ -1,0 +1,33 @@
+void script_4835() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	ivar0 = -1;
+	ivar1 = -1;
+	ivar2 = -1;
+	switch (bitconfig_9558) {
+		case 1:
+			ivar0 = script_4817(bitconfig_9563, 1);
+			ivar1 = script_4817(bitconfig_9563, 2);
+			ivar2 = script_4817(bitconfig_9563, 3);
+			break;
+		case 2:
+			ivar0 = script_4817(bitconfig_9572, 1);
+			ivar1 = script_4817(bitconfig_9572, 2);
+			ivar2 = script_4817(bitconfig_9572, 3);
+			break;
+		case 3:
+			ivar0 = script_4817(bitconfig_9581, 1);
+			ivar1 = script_4817(bitconfig_9581, 2);
+			ivar2 = script_4817(bitconfig_9581, 3);
+	}
+	ivar3 = subtract(getExtraChildGap(new WidgetPointer(ivar0)), 1);
+	while (ivar3 >= 0) {
+		if (setWidgetRegister(new WidgetPointer(ivar0), ivar3)) {
+			setWidgetSprite(6009);
+		}
+		ivar3 = subtract(ivar3, 1);
+	}
+	return;
+}

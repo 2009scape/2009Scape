@@ -1,0 +1,60 @@
+void script_1086(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	ivar4 = getWidgetActualWidth(new WidgetPointer(arg0));
+	ivar5 = getWidgetActualHeight(new WidgetPointer(arg0));
+	ivar6 = 0;
+	if (arg1 > 0) {
+		createExtraChild(new WidgetPointer(arg0), 5, ivar6);
+		setWidgetPosition(0, arg1, 0, 0);
+		setWidgetSize(ivar4, 32, 0, 0);
+		setWidgetSprite(1076);
+		cs2method1107(1);
+		ivar6 = add(ivar6, 1);
+	}
+	if (arg2 > 0) {
+		createExtraChild(new WidgetPointer(arg0), 5, ivar6);
+		setWidgetPosition(0, arg2, 0, 0);
+		setWidgetSize(ivar4, 32, 0, 0);
+		setWidgetSprite(1076);
+		cs2method1107(1);
+		ivar6 = add(ivar6, 1);
+	}
+	if (arg3 > 0) {
+		createExtraChild(new WidgetPointer(arg0), 5, ivar6);
+		setWidgetPosition(0, arg3, 0, 0);
+		setWidgetSize(ivar4, 32, 0, 0);
+		setWidgetSprite(1076);
+		cs2method1107(1);
+		ivar6 = add(ivar6, 1);
+	}
+	createExtraChild(new WidgetPointer(arg0), 5, ivar6);
+	setWidgetPosition(0, 0, 0, 0);
+	setWidgetSize(ivar4, 32, 0, 0);
+	setWidgetSprite(1076);
+	cs2method1107(1);
+	ivar6 = add(ivar6, 1);
+	createExtraChild(new WidgetPointer(arg0), 5, ivar6);
+	setWidgetPosition(0, subtract(ivar5, 32), 0, 0);
+	setWidgetSize(ivar4, 32, 0, 0);
+	setWidgetSprite(1076);
+	cs2method1107(1);
+	setWidgetVFlip(1);
+	ivar6 = add(ivar6, 1);
+	createExtraChild(new WidgetPointer(arg0), 5, ivar6);
+	setWidgetPosition(0, 1, 0, 0);
+	setWidgetSize(32, subtract(ivar5, 2), 0, 0);
+	setWidgetSprite(1077);
+	cs2method1107(1);
+	ivar6 = add(ivar6, 1);
+	createExtraChild(new WidgetPointer(arg0), 5, ivar6);
+	setWidgetPosition(subtract(ivar4, 32), 1, 0, 0);
+	setWidgetSize(32, subtract(ivar5, 2), 0, 0);
+	setWidgetSprite(1077);
+	cs2method1107(1);
+	setWidgetHFlip(1);
+	ivar6 = add(ivar6, 1);
+	return;
+}

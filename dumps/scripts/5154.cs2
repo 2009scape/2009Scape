@@ -1,0 +1,33 @@
+void script_5154(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	if ((arg0 == -1) || (arg1 == -1)) {
+		return;
+	}
+	ivar2 = getOtherCommonData(arg1, 1348);
+	ivar3 = getOtherCommonData(arg1, 1355);
+	ivar4 = getOtherCommonData(arg1, 1356);
+	ivar5 = getOtherCommonData(arg1, 1358);
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetPosition(0, 0, 0, 1);
+	setWidgetSize(8, 20, 0, 0);
+	setWidgetSprite(ivar2);
+	cs2method2103(ivar5);
+	cs2method1107(1);
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetSize(16, 20, 1, 0);
+	setWidgetSprite(ivar3);
+	cs2method2103(ivar5);
+	cs2method1107(1);
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetPosition(0, 0, 2, 1);
+	setWidgetSize(8, 20, 0, 0);
+	setWidgetSprite(ivar4);
+	cs2method2103(ivar5);
+	cs2method1107(1);
+	return;
+}

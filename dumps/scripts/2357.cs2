@@ -1,0 +1,18 @@
+void script_2357(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	cs2method202(arg0);
+	if (standart_config_1893 == -1) {
+		return;
+	}
+	ivar1 = ((int)cs2method_3408(73, 73, 1592, standart_config_1893));
+	ivar2 = getWidgetActualX(new WidgetPointer(arg0));
+	ivar3 = getWidgetActualY(new WidgetPointer(arg0));
+	if (arg0 == 69009490) {
+		ivar2 = subtract(add(ivar2, divide(getWidgetActualWidth(new WidgetPointer(arg0)), 2)), divide(getWidgetActualWidth(new WidgetPointer(ivar1)), 2));
+		ivar3 = subtract(add(ivar3, divide(getWidgetActualHeight(new WidgetPointer(arg0)), 2)), divide(getWidgetActualHeight(new WidgetPointer(ivar1)), 2));
+	}
+	setWidgetPosition(ivar2, ivar3, 0, 0, new WidgetPointer(ivar1));
+	return;
+}

@@ -1,0 +1,23 @@
+void script_2691(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	if (((boolean)arg5) && setWidgetRegister(new WidgetPointer(arg0), arg3)) {
+		setWidgetRGB(new Color(arg4));
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		if (((boolean)arg2)) {
+			if (getWidgetSpriteId() == 2554) {
+				setWidgetSprite(2555);
+			} else {
+				if (getWidgetSpriteId() == 2556) {
+					setWidgetSprite(2557);
+				}
+			}
+		} else if (getWidgetSpriteId() == 2555) {
+			setWidgetSprite(2554);
+		} else {
+			if (getWidgetSpriteId() == 2557) {
+				setWidgetSprite(2556);
+			}
+		}
+	}
+	return;
+}

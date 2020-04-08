@@ -1,0 +1,9 @@
+void script_5122(int arg0,int arg1,int arg2,int arg3) {
+	if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 1))) {
+		setWidgetSprite(arg2);
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0), add(arg1, 2))) {
+		setWidgetRGB(new Color(arg3));
+	}
+	return;
+}

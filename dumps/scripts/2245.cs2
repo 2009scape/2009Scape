@@ -1,0 +1,21 @@
+int script_2245(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	if (arg2 == arg0) {
+		return arg2;
+	}
+	if (arg2 < arg0) {
+		arg2 = add(arg2, divide(add(arg1, 49), 50));
+		if (arg2 > arg0) {
+			arg2 = arg0;
+		}
+	} else {
+		if (arg2 > arg0) {
+			arg2 = subtract(arg2, divide(add(arg1, 49), 50));
+			if (arg2 < arg0) {
+				arg2 = arg0;
+			}
+		}
+	}
+	setWidgetSize(add(1, divide(multiply(223, arg2), arg1)), 10, 0, 0, new WidgetPointer(arg3));
+	setWidgetText(new WidgetPointer(arg4), intToStr(arg2));
+	return arg2;
+}

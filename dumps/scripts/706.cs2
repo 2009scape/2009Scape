@@ -1,0 +1,26 @@
+int script_706(int arg0) {
+	if ((arg0 < 1) || (arg0 > 9)) {
+		return 0;
+	}
+	switch (arg0) {
+		case 1:
+			return subtract(subtract(subtract(subtract(subtract(subtract(subtract(subtract(516, bitconfig_4885), bitconfig_4886), bitconfig_4887), bitconfig_4888), bitconfig_4889), bitconfig_4890), bitconfig_4891), bitconfig_4892);
+		case 2:
+			return bitconfig_4885;
+		case 3:
+			return bitconfig_4886;
+		case 4:
+			return bitconfig_4887;
+		case 5:
+			return bitconfig_4888;
+		case 6:
+			return bitconfig_4889;
+		case 7:
+			return bitconfig_4890;
+		case 8:
+			return bitconfig_4891;
+		case 9:
+			return bitconfig_4892;
+	}
+	return 0;
+}

@@ -1,0 +1,14 @@
+int script_1090(string arg0) {
+	int ivar0;
+	ivar0 = cs2method3628(arg0);
+	if (ivar0 == -1) {
+		return -1;
+	}
+	if (((boolean)getFriendWorld(ivar0))) {
+		return 0;
+	}
+	if (cs2method3627(ivar0)) {
+		return 1;
+	}
+	return 2;
+}

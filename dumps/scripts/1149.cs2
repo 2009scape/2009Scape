@@ -1,0 +1,16 @@
+void script_1149(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8) {
+	if (arg1 == arg0) {
+		setWidgetRGB(new Color(235, 224, 188), new WidgetPointer(arg4));
+		setWidgetSprite(cs2method_3408(105, 100, 736, arg0), new WidgetPointer(arg3));
+		setScriptCallOnMouseEntered(3933, new WidgetPointer(arg4), 15458492, 1, arg0, new WidgetPointer(arg3), arg1, "Ii1iIi", new WidgetPointer(arg2));
+		setScriptCallOnMouseExit(3933, new WidgetPointer(arg4), 11709087, 0, arg0, new WidgetPointer(arg3), arg1, "Ii1iIi", new WidgetPointer(arg2));
+		setScriptCallOnMousePressed(-1, "", new WidgetPointer(arg2));
+	} else {
+		setWidgetRGB(new Color(178, 170, 159), new WidgetPointer(arg4));
+		setWidgetSprite(cs2method_3408(105, 100, 735, arg0), new WidgetPointer(arg3));
+		setScriptCallOnMouseEntered(3933, new WidgetPointer(arg4), 15458492, 1, arg0, new WidgetPointer(arg3), arg1, "Ii1iIi", new WidgetPointer(arg2));
+		setScriptCallOnMouseExit(3933, new WidgetPointer(arg4), 11709087, 0, arg0, new WidgetPointer(arg3), arg1, "Ii1iIi", new WidgetPointer(arg2));
+		setScriptCallOnMousePressed(2698, arg0, arg5, arg6, arg7, arg8, "iiiii", new WidgetPointer(arg2));
+	}
+	return;
+}

@@ -1,0 +1,7 @@
+void script_1095() {
+	opcStruct6203(2,0,0) structdump_0;
+	script_1097();
+	structdump_0 = cs2method6203();
+	setWidgetSize(structdump_0.intpart_0, structdump_0.intpart_1, 0, 0, new WidgetPointer(746,9));
+	return;
+}

@@ -1,0 +1,6 @@
+int script_4309() {
+	if ((((globalint_1500 != -1) && (globalint_1501 != -1)) && ((bitconfig_9591 != -1) && (bitconfig_9593 != -1))) && (((bitconfig_9592 != -1) && (bitconfig_9594 != -1)) && ((globalint_1568 != -1) && (stringMethod4107(globalstring_347, "") != 0)))) {
+		return 1;
+	}
+	return 0;
+}

@@ -1,0 +1,6 @@
+string script_913(int arg0,int arg1,string arg2) {
+	if (arg0 < arg1) {
+		return "<br>" + "<col=ff0000>" + arg2;
+	}
+	return "<br>" + "<col=00ff00>" + arg2;
+}

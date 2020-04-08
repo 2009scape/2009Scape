@@ -1,0 +1,34 @@
+string script_483(int arg0) {
+	flow_0:
+		SWITCH (arg0) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_2
+			case 3:
+				 GOTO flow_3
+			case 4:
+				 GOTO flow_4
+			case 5:
+				 GOTO flow_5
+			case 6:
+				 GOTO flow_6
+			case 7:
+				 GOTO flow_7
+		}
+		return "No Troop";
+	flow_1:
+		return "Scout";
+	flow_2:
+		return "Foot Soldier";
+	flow_3:
+		return "Halberdier";
+	flow_4:
+		return "Archer";
+	flow_5:
+		return "Mage";
+	flow_6:
+		return "Knight";
+	flow_7:
+		return "Champion";
+}

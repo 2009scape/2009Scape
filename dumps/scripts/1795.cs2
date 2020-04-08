@@ -1,0 +1,22 @@
+void script_1795(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	ivar2 = 697;
+	ivar3 = 699;
+	if (((boolean)bitconfig_5279)) {
+		if (((boolean)bitconfig_5295)) {
+			setWidgetSprite(ivar3, new WidgetPointer(arg1));
+			setScriptCallOnClickContextMenu(44, new WidgetPointer(arg1), ivar2, "Id", new WidgetPointer(arg0));
+		} else {
+			setWidgetSprite(ivar2, new WidgetPointer(arg1));
+			setScriptCallOnClickContextMenu(44, new WidgetPointer(arg1), ivar3, "Id", new WidgetPointer(arg0));
+		}
+	} else if (((boolean)bitconfig_5294)) {
+		setWidgetSprite(ivar3, new WidgetPointer(arg1));
+		setScriptCallOnClickContextMenu(44, new WidgetPointer(arg1), ivar2, "Id", new WidgetPointer(arg0));
+	} else {
+		setWidgetSprite(ivar2, new WidgetPointer(arg1));
+		setScriptCallOnClickContextMenu(44, new WidgetPointer(arg1), ivar3, "Id", new WidgetPointer(arg0));
+	}
+	return;
+}

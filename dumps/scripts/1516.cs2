@@ -1,0 +1,15 @@
+void script_1516(int arg0,int arg1,int arg2) {
+	createExtraChild(new WidgetPointer(arg0), 6, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(0, 0, 1, 1);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetSelfFull();
+	setWidget3DRotation(0, arg2, 0, 0, 0, arg1);
+	if (globalint_779 != -1) {
+		setWidgetAnimation(getRenderEmoteMaxSomethingMethod4600(globalint_779));
+	} else {
+		setWidgetAnimation(getRenderEmoteMaxSomethingMethod4600(1426));
+	}
+	setScriptCallOnGlobalConfigChange(1517, new WidgetPointer(-32768,3), -2147483643, 779, 1, "IiY");
+	setScriptCallOnMousePressed(347, new WidgetPointer(-32768,3), -2147483643, -2147483647, "Iii");
+	return;
+}

@@ -1,0 +1,71 @@
+cs2func_script_1692_struct(2,0,0) script_1692(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	string svar0;
+	string svar1;
+	ivar3 = cs2method_3408(105, 74, 845, arg2);
+	svar0 = getOtherCommonData(ivar3, 925);
+	ivar4 = add(multiply(getLineCount(subtract(getWidgetActualWidth(new WidgetPointer(arg0)), 22), 495, svar0), 12), 5);
+	ivar5 = add(add(32, ivar4), 10);
+	setWidgetSize(0, ivar5, 1, 0);
+	setWidgetPosition(0, arg1, 1, 0);
+	setWidgetFilled(1);
+	setWidgetRGB(new Color(0, 0, 0));
+	cs2method2103(255);
+	setScriptCallOnMouseEntered(2140, new WidgetPointer(-32768,3), -2147483643, 200, "Iii");
+	setScriptCallOnMouseExit(2140, new WidgetPointer(-32768,3), -2147483643, 255, "Iii");
+	setWidgetContextMenuOption(1, "Take");
+	setWidgetContextMenuOption(10, "Examine");
+	cs2method1305("<col=ff9040>" + getItemName(getOtherCommonData(ivar3, 813)));
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(36, 32, 0, 0);
+	setWidgetPosition(2, add(arg1, 4), 0, 0);
+	setItemOnWidgetMethod1205(getOtherCommonData(ivar3, 813), 1);
+	setWidgetBorderThickness(1);
+	setWidgetShadowColor(new Color(48, 32, 32));
+	createExtraChild(new WidgetPointer(arg0), 4, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetPosition(2, add(arg1, 4), 2, 0);
+	setWidgetRGB(new Color(255, 240, 140));
+	setWidgetTextAlignment(0, 1, 0);
+	setWidgetUnknownBoolean(true);
+	createExtraChild(new WidgetPointer(arg0), 4, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(add(36, 4), 12, 1, 0);
+	setWidgetPosition(2, add(add(arg1, 4), subtract(32, getWidgetActualHeight())), 2, 0);
+	setWidgetFont(494);
+	setWidgetRGB(new Color(255, 152, 31));
+	setWidgetTextAlignment(0, 1, 0);
+	setWidgetUnknownBoolean(true);
+	ivar6 = getOtherCommonData(ivar3, 923);
+	if (ivar6 != -1) {
+		setWidgetSize(add(36, 4), subtract(32, getWidgetActualHeight()), 1, 0);
+		setWidgetText(getOtherCommonData(ivar6, 845));
+	} else {
+		setWidgetSize(add(36, 4), 32, 1, 0);
+		setWidgetHidden(1);
+	}
+	svar1 = getOtherCommonData(ivar3, 924);
+	if (getLineCount(getWidgetActualWidth(), 496, svar1) <= 1) {
+		setWidgetFont(496);
+	} else if (getLineCount(getWidgetActualWidth(), 495, svar1) <= 1) {
+		setWidgetFont(495);
+	} else {
+		setWidgetFont(494);
+	}
+	setWidgetText(svar1);
+	createExtraChild(new WidgetPointer(arg0), 4, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(22, ivar4, 1, 0);
+	setWidgetPosition(2, add(add(arg1, 32), 6), 0, 0);
+	setWidgetFont(495);
+	setWidgetRGB(new Color(255, 240, 140));
+	setWidgetTextAlignment(0, 1, 0);
+	setWidgetUnknownBoolean(true);
+	setWidgetText(svar0);
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(0, 32, 1, 0);
+	setWidgetPosition(0, subtract(add(arg1, ivar5), 16), 0, 0);
+	setWidgetSprite(995);
+	cs2method1107(1);
+	return newstruct cs2func_script_1692_struct(add(arg1, ivar5), getWidgetCustomChildArrayIndex());
+}

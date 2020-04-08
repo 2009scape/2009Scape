@@ -1,0 +1,6 @@
+void script_4286(int arg0,int arg1,int arg2) {
+	globalstring_348 = getWidgetText(new WidgetPointer(arg0));
+	globalint_1504 = script_1552(arg2, 5631, arg0, -1, globalstring_348);
+	setWidgetPosition(globalint_1504, 5, 0, 0, new WidgetPointer(arg1));
+	return;
+}

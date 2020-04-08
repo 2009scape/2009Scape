@@ -1,0 +1,81 @@
+void script_687(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6) {
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	string svar0;
+	deleteAllExtraChilds(new WidgetPointer(arg3));
+	ivar7 = 0;
+	while (ivar7 <= 27) {
+		if (setWidgetRegister(new WidgetPointer(arg1), multiply(ivar7, 6))) {
+			cs2method2103(200);
+		}
+		ivar7 = add(ivar7, 1);
+	}
+	if (setWidgetRegister(new WidgetPointer(arg1), arg2)) {
+		cs2method2103(150);
+	}
+	setWidgetText(new WidgetPointer(arg5), cs2method_3408(105, 115, 1099, arg0));
+	ivar8 = cs2method_3408(105, 110, 1098, arg0);
+	ivar9 = 0;
+	ivar10 = 0;
+	svar0 = cs2method_3408(105, 115, 1100, arg0);
+	if (ivar8 != -1) {
+		ivar7 = getNpcNodemapData(ivar8, 356);
+		ivar9 = divide(ivar7, 100);
+		ivar10 = multiplyDivide(mod(ivar7, 100), 100, 60);
+		if (ivar10 < 10) {
+			svar0 = svar0 + "<br>" + "<br>" + "Initial duration: " + intToStr(ivar9) + ":0" + intToStr(ivar10);
+		} else {
+			svar0 = svar0 + "<br>" + "<br>" + "Initial duration: " + intToStr(ivar9) + ":" + intToStr(ivar10);
+		}
+	}
+	setWidgetText(new WidgetPointer(arg6), svar0);
+	ivar7 = cs2method_3408(105, 105, 1101, arg0);
+	if (ivar7 < 0) {
+		setWidgetText(new WidgetPointer(arg4), "<col=ff0000>" + "Unavailable" + "</col>");
+		return;
+	}
+	if (((boolean)ivar7)) {
+		svar0 = "(No charge)";
+	} else if (((boolean)ivar7)) {
+		if (getItemAmtInContainer(93, 995) >= 1) {
+			svar0 = "1 coin";
+		} else {
+			svar0 = "<col=ff0000>" + "1 coin" + "</col>";
+		}
+	} else if (getItemAmtInContainer(93, 995) >= ivar7) {
+		svar0 = formatNumber(ivar7, 1) + " coins";
+		if (getMaxLineWidth(getWidgetActualWidth(new WidgetPointer(arg4)), 496, svar0) > subtract(getWidgetActualWidth(new WidgetPointer(arg4)), 5)) {
+			svar0 = formatNumber(ivar7, 1) + "<br>" + "coins";
+		}
+	} else {
+		svar0 = "<col=ff0000>" + formatNumber(ivar7, 1) + " coins" + "</col>";
+		if (getMaxLineWidth(getWidgetActualWidth(new WidgetPointer(arg4)), 496, svar0) > subtract(getWidgetActualWidth(new WidgetPointer(arg4)), 5)) {
+			svar0 = "<col=ff0000>" + formatNumber(ivar7, 1) + "</col>" + "<br>" + "<col=ff0000>" + "coins" + "</col>";
+		}
+	}
+	setWidgetText(new WidgetPointer(arg4), concat("Confirm:" + "<br>", svar0));
+	ivar7 = 0;
+	ivar11 = -1;
+	while (ivar7 <= 27) {
+		createExtraChild(new WidgetPointer(arg3), 5, ivar7);
+		setWidgetPosition(0, 0, 0, 0);
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg3)), getWidgetActualHeight(new WidgetPointer(arg3)), 0, 0);
+		if (ivar7 == arg0) {
+			setWidgetSprite(833);
+			setWidgetHidden(0);
+			ivar11 = 834;
+			setScriptCallOnMouseEntered(688, new WidgetPointer(-32768,3), -2147483643, ivar11, "Iid");
+			ivar11 = 833;
+			setScriptCallOnMouseExit(688, new WidgetPointer(-32768,3), -2147483643, ivar11, "Iid");
+			setWidgetContextMenuOption(1, "Confirm:");
+			cs2method1305("<col=ff9040>" + cs2method_3408(105, 115, 1099, arg0) + "</col>");
+		} else {
+			setWidgetHidden(1);
+		}
+		ivar7 = add(ivar7, 1);
+	}
+	return;
+}

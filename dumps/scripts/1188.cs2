@@ -1,0 +1,11 @@
+void script_1188() {
+	if (getDisplayMode() >= 2) {
+		setWidgetSprite(1017, new WidgetPointer(752,1));
+		cs2method2122(1, 49283073);
+		setWidgetIsHidden(false, new WidgetPointer(752,1));
+		setWidgetIsHidden(false, new WidgetPointer(752,2));
+		script_1652(0);
+		setWidgetIsHidden(true, new WidgetPointer(746,75));
+	}
+	return;
+}

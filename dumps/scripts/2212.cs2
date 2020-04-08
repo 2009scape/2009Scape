@@ -1,0 +1,10 @@
+void script_2212() {
+	if (getWidgetActualX(new WidgetPointer(globalint_1136)) < subtract(getWidgetActualWidth(new WidgetPointer(932,1)), 1)) {
+		setScriptCallOnGameloop(2212, "", new WidgetPointer(932,1));
+		setWidgetPosition(add(1, getWidgetActualX(new WidgetPointer(globalint_1136))), getWidgetActualY(new WidgetPointer(globalint_1136)), 0, 0, new WidgetPointer(globalint_1136));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(globalint_1136));
+		setWidgetPosition(0, 120, 0, 0, new WidgetPointer(globalint_1136));
+	}
+	return;
+}

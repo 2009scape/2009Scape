@@ -1,0 +1,12 @@
+void script_162(int arg0,int arg1,int arg2,int arg3) {
+	if (setWidgetRegister(new WidgetPointer(arg1), arg0)) {
+		arg3 = subtract(arg3, cs2method2601(new WidgetPointer(arg1)));
+		if (arg3 < 10) {
+			script_157(arg2, arg1, subtract(cs2method2601(new WidgetPointer(arg1)), 4), 1);
+		}
+		if (add(arg3, getWidgetActualHeight()) > subtract(getWidgetActualHeight(new WidgetPointer(arg1)), 10)) {
+			script_157(arg2, arg1, add(cs2method2601(new WidgetPointer(arg1)), 4), 1);
+		}
+	}
+	return;
+}

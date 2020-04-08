@@ -1,0 +1,20 @@
+void script_1453(int arg0) {
+	int ivar1;
+	ivar1 = getItemIdInSlot(95, arg0);
+	setItemOnWidgetMethod1200(ivar1, getItemAmtInSlot(95, arg0));
+	cs2method1305("<col=ff981f>" + getItemName(getItemIdInSlot(95, arg0)));
+	setWidgetContextMenuOption(1, "Withdraw-1");
+	setWidgetContextMenuOption(2, "Withdraw-5");
+	setWidgetContextMenuOption(3, "Withdraw-10");
+	setWidgetContextMenuOption(4, "Withdraw-" + intToStr(standart_config_1249));
+	setWidgetContextMenuOption(5, "Withdraw-X");
+	setWidgetContextMenuOption(6, "Withdraw-All");
+	setWidgetContextMenuOption(7, "Withdraw-All but one");
+	setWidgetContextMenuOption(10, "Examine" + "<col=ff9040>");
+	cs2method1301(49938432, -1);
+	cs2method1303(5);
+	cs2method1304(5);
+	setScriptCallOnMouseDragged(1454, -2147483646, "i");
+	setScriptCallOnMouseDragReleased(1482, new WidgetPointer(-32768,6), "I");
+	return;
+}

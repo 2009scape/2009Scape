@@ -1,0 +1,23 @@
+void script_3066(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	if (arg0 > 0) {
+		setWidgetSprite(4661, new WidgetPointer(arg2));
+		setWidgetText(new WidgetPointer(arg3), intToStr(arg0));
+		if (((boolean)arg4)) {
+			setWidgetContextMenuOption(1, new WidgetPointer(arg2), "Click Here To Play");
+			setScriptCallOnClickContextMenu(3067, arg1, "i", new WidgetPointer(arg2));
+		} else {
+			setWidgetNoOptions(new WidgetPointer(arg2));
+			setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(arg2));
+		}
+		setScriptCallOnMouseEntered(3068, new WidgetPointer(arg2), "I", new WidgetPointer(arg2));
+		setScriptCallOnMouseExit(3069, new WidgetPointer(arg2), "I", new WidgetPointer(arg2));
+	} else {
+		setWidgetSprite(4660, new WidgetPointer(arg2));
+		setWidgetText(new WidgetPointer(arg3), "");
+		setScriptCallOnMouseEntered(-1, "", new WidgetPointer(arg2));
+		setScriptCallOnMouseExit(-1, "", new WidgetPointer(arg2));
+		setScriptCallOnClickContextMenu(-1, "", new WidgetPointer(arg2));
+		setWidgetNoOptions(new WidgetPointer(arg2));
+	}
+	return;
+}

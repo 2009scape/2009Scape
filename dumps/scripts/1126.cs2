@@ -1,0 +1,29 @@
+void script_1126(int arg0) {
+	globalint_993 = 0;
+	switch (arg0) {
+		case 12582914:
+			script_41(12583008);
+			if (((boolean)bitconfig_2668)) {
+				setWidgetSprite(1701, new WidgetPointer(arg0));
+			}
+			break;
+		case 12648466:
+			script_41(12648501);
+			if (((boolean)bitconfig_2668)) {
+				setWidgetSprite(1701, new WidgetPointer(arg0));
+			}
+			break;
+		case 28180500:
+			script_41(28180545);
+			if (((boolean)bitconfig_2668)) {
+				setWidgetSprite(1701, new WidgetPointer(arg0));
+			}
+			break;
+		case 62259202:
+			script_41(62259272);
+			if (((boolean)bitconfig_2668)) {
+				setWidgetSprite(1701, new WidgetPointer(arg0));
+			}
+	}
+	return;
+}

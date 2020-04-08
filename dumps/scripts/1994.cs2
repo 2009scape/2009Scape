@@ -1,0 +1,10 @@
+int script_1994() {
+	int ivar0;
+	ivar0 = 0;
+	ivar0 = add(ivar0, 1);
+	ivar0 = add(ivar0, 1);
+	ivar0 = add(ivar0, 1);
+	ivar0 = add(ivar0, 1);
+	ivar0 = add(ivar0, 1);
+	return ivar0;
+}

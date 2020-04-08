@@ -1,0 +1,7 @@
+void script_2107(int arg0,int arg1,int arg2,int arg3) {
+	setWidgetModel(7753, new WidgetPointer(arg0));
+	setWidgetModel(7752, new WidgetPointer(arg1));
+	setWidgetModel(20104, new WidgetPointer(arg2));
+	setWidgetModel(7751, new WidgetPointer(arg3));
+	return;
+}

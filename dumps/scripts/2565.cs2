@@ -1,0 +1,9 @@
+void script_2565() {
+	int ivar0;
+	ivar0 = 0;
+	globalint_846 = bitconfig_6380;
+	setWidgetText(new WidgetPointer(863,30), intToStr(bitconfig_6380));
+	ivar0 = subtract(globalint_839, multiply(100, globalint_846));
+	setWidgetText(new WidgetPointer(863,14), script_46(ivar0, ","));
+	return;
+}

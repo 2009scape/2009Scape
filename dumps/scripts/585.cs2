@@ -1,0 +1,6 @@
+void script_585() {
+	setScriptCallOnConfigChange(588, 1109, 1, "Y", new WidgetPointer(105,127));
+	setScriptCallOnGrandExchangeUpdate(586, "", new WidgetPointer(105,15));
+	script_621();
+	return;
+}

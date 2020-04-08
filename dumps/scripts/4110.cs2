@@ -1,0 +1,30 @@
+void script_4110() {
+	flow_0:
+		SWITCH (standart_config_1108) {
+			case 2:
+				 GOTO flow_1
+			case 5:
+				 GOTO flow_2
+		}
+		setWidgetIsHidden(false, new WidgetPointer(106,126));
+		setWidgetIsHidden(true, new WidgetPointer(106,131));
+		setWidgetIsHidden(true, new WidgetPointer(106,140));
+		script_670();
+		setWidgetText(new WidgetPointer(106,124), "First, you will see a selection of boxes. You can make several offers simultaneously, one in each box.");
+		GOTO	flow_3
+	flow_1:
+		setWidgetIsHidden(true, new WidgetPointer(106,126));
+		setWidgetIsHidden(false, new WidgetPointer(106,131));
+		setWidgetIsHidden(true, new WidgetPointer(106,140));
+		script_671();
+		setWidgetText(new WidgetPointer(106,124), "Each box has two buttons. One button is for offering to buy items, the other is for offering to sell items.");
+		GOTO	flow_3
+	flow_2:
+		setWidgetIsHidden(true, new WidgetPointer(106,126));
+		setWidgetIsHidden(true, new WidgetPointer(106,131));
+		setWidgetIsHidden(false, new WidgetPointer(106,140));
+		script_672();
+		setWidgetText(new WidgetPointer(106,124), "Now the offer is placed! You can return to the Grand Exchange at any time to check on the progress of your offers.");
+	flow_3:
+		return;
+}

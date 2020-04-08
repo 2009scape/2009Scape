@@ -1,0 +1,13 @@
+void script_2584() {
+	setWidgetRGB(new Color(255, 153, 53), new WidgetPointer(292,117));
+	setWidgetContextMenuOption(1, new WidgetPointer(292,102), "Select dwarf");
+	setWidgetContextMenuOption(1, new WidgetPointer(292,104), "Select goblin");
+	setWidgetContextMenuOption(1, new WidgetPointer(292,103), "Select elf");
+	setScriptCallOnClickContextMenu(2586, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,102));
+	setScriptCallOnClickContextMenu(2586, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,104));
+	setScriptCallOnClickContextMenu(2586, new WidgetPointer(-32768,3), "I", new WidgetPointer(292,103));
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(292,102));
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(292,104));
+	setScriptCallOnMousePressed(-1, "", new WidgetPointer(292,103));
+	return;
+}

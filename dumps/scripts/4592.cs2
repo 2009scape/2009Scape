@@ -1,0 +1,225 @@
+void script_4592() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	deleteAllExtraChilds(new WidgetPointer(17,17));
+	deleteAllExtraChilds(new WidgetPointer(17,20));
+	deleteAllExtraChilds(new WidgetPointer(17,22));
+	deleteAllExtraChilds(new WidgetPointer(17,15));
+	if (((boolean)bitconfig_9226)) {
+		setWidgetText(new WidgetPointer(17,12), "If you die in the Wilderness...");
+	} else {
+		setWidgetText(new WidgetPointer(17,12), "Items kept on death");
+	}
+	if (bitconfig_9226 == 2) {
+		createExtraChild(new WidgetPointer(17,15), 4, 0);
+		script_4595();
+		setWidgetText(globalstring_351);
+		setScriptCallOnGlobalStringChange(4596, new WidgetPointer(-32768,3), -2147483643, 351, 1, "IiY");
+		return;
+	}
+	if (((getContainerFreeSlots(93) >= getItemContainerLength(93)) && (getContainerFreeSlots(94) >= getItemContainerLength(94))) && ((getContainerFreeSlots(530) >= getItemContainerLength(530)) || isMember())) {
+		createExtraChild(new WidgetPointer(17,15), 4, 0);
+		script_4595();
+		setWidgetText("You have no items to lose.");
+		return;
+	}
+	ivar0 = getWidgetActualWidth(new WidgetPointer(17,15));
+	ivar1 = max(divide(ivar0, 36), 1);
+	ivar2 = max(divide(subtract(ivar0, multiply(36, ivar1)), max(subtract(ivar1, 1), 1)), 2);
+	ivar3 = max(divide(ivar2, 2), add(subtract(36, 32), 1));
+	globalarray_0 = new int[4];
+	globalarray_1 = new int[3];
+	globalarray_2 = new int[3];
+	globalarray_3 = new int[3];
+	if (bitconfig_9227 > 0) {
+		if (((boolean)bitconfig_9226)) {
+			if (((boolean)bitconfig_9229)) {
+				globalarray_0[0] = script_4593(1114128, "You may choose " + intToStr(bitconfig_9227) + " of the following items to keep, and all others will be dropped." + "<br>" + "The " + "<col=bebe00>" + "highlighted" + "</col>" + " items will be chosen by default.");
+			} else {
+				globalarray_0[0] = script_4593(1114128, "You may choose " + intToStr(bitconfig_9227) + " of the following items to keep, unless you become skulled, and all others will be dropped." + "<br>" + "The " + "<col=bebe00>" + "highlighted" + "</col>" + " items are chosen by default.");
+			}
+		} else if (((boolean)bitconfig_9229)) {
+			globalarray_0[0] = script_4593(1114128, "You will keep the following items:");
+		} else {
+			globalarray_0[0] = script_4593(1114128, "You will keep the following items, unless you become skulled:");
+		}
+	} else {
+		globalarray_0[0] = script_4593(1114128, "You will drop the following items:");
+	}
+	if (((boolean)bitconfig_9226)) {
+		globalarray_0[1] = script_4593(1114131, "You will keep the following items automatically:");
+	} else {
+		globalarray_0[1] = script_4593(1114131, "You will drop the following items:");
+	}
+	globalarray_0[2] = script_4593(1114133, "The following items are always lost:");
+	globalarray_4 = new int[4];
+	globalarray_0[0] = script_750(bitconfig_9222);
+	globalarray_0[1] = script_750(bitconfig_9223);
+	globalarray_0[2] = script_750(bitconfig_9224);
+	globalarray_0[3] = script_750(bitconfig_9225);
+	ivar4 = add(getItemContainerLength(93), getItemContainerLength(94));
+	deleteAllExtraChilds(new WidgetPointer(17,18));
+	ivar5 = 0;
+	while ((ivar5 < bitconfig_9227) && (ivar5 < 4)) {
+		if (globalarray_4[ivar5] != -1) {
+			createExtraChild(new WidgetPointer(17,18), 3, getExtraChildGap(new WidgetPointer(17,18)));
+			createExtraChild(new WidgetPointer(17,18), 3, getExtraChildGap(new WidgetPointer(17,18)));
+			setWidgetSize(36, 36, 0, 0);
+			setWidgetSize(36, 36, 0, 0);
+			setWidgetPosition(add(globalarray_1[0], 1), add(globalarray_2[0], 1), 0, 0);
+			setWidgetPosition(globalarray_1[0], globalarray_2[0], 0, 0);
+			setWidgetRGB(new Color(128, 128, 0));
+			setWidgetRGB(new Color(190, 190, 0));
+			setWidgetFilled(0);
+			setWidgetFilled(0);
+			cs2method2103(150);
+			cs2method2103(0);
+			script_4594(globalarray_4[ivar5], -1, globalarray_1[0], globalarray_2[0], 1114130);
+			globalarray_0[0] = add(add(globalarray_1[0], 36), ivar2);
+			if (add(globalarray_1[0], 36) >= ivar0) {
+				globalarray_0[0] = 0;
+				globalarray_0[0] = add(add(globalarray_2[0], 32), ivar3);
+			}
+			globalarray_0[0] = add(globalarray_3[0], 1);
+		} else {
+			createExtraChild(new WidgetPointer(17,18), 3, getExtraChildGap(new WidgetPointer(17,18)));
+			setWidgetHidden(1);
+			createExtraChild(new WidgetPointer(17,18), 3, getExtraChildGap(new WidgetPointer(17,18)));
+			setWidgetHidden(1);
+			createExtraChild(new WidgetPointer(17,18), 3, getExtraChildGap(new WidgetPointer(17,18)));
+			setWidgetHidden(1);
+		}
+		ivar5 = add(ivar5, 1);
+	}
+	ivar5 = 0;
+	ivar6 = -1;
+	ivar7 = 0;
+	ivar8 = 0;
+	ivar9 = 0;
+	while (ivar5 <= ivar4) {
+		ivar6 = script_750(ivar5);
+		if (ivar6 != -1) {
+			ivar7 = script_1393(ivar5);
+			ivar8 = 0;
+			while ((ivar8 < 4) && (ivar7 > 0)) {
+				if (globalarray_4[ivar8] == ivar6) {
+					ivar7 = subtract(ivar7, 1);
+					globalarray_0[ivar8] = -1;
+				}
+				ivar8 = add(ivar8, 1);
+			}
+			if (ivar7 > 0) {
+				ivar9 = getItemHashmapData(getRealItem(ivar6), 1397);
+				if (ivar9 == -1) {
+					script_4594(-1, -1, -1, -1, 1114129);
+					script_4594(-1, -1, -1, -1, 1114132);
+					script_4594(ivar6, ivar7, globalarray_1[2], globalarray_2[2], 1114134);
+					globalarray_0[2] = add(add(globalarray_1[2], 36), ivar2);
+					if (add(globalarray_1[2], 36) >= ivar0) {
+						globalarray_0[2] = 0;
+						globalarray_0[2] = add(add(globalarray_2[2], 32), ivar3);
+					}
+					globalarray_0[2] = add(globalarray_3[2], 1);
+				} else if (((boolean)ivar9) || (bitconfig_9226 != 0)) {
+					script_4594(-1, -1, -1, -1, 1114129);
+					script_4594(ivar6, ivar7, globalarray_1[1], globalarray_2[1], 1114132);
+					script_4594(-1, -1, -1, -1, 1114134);
+					globalarray_0[1] = add(add(globalarray_1[1], 36), ivar2);
+					if (add(globalarray_1[1], 36) >= ivar0) {
+						globalarray_0[1] = 0;
+						globalarray_0[1] = add(add(globalarray_2[1], 32), ivar3);
+					}
+					globalarray_0[1] = add(globalarray_3[1], 1);
+				} else {
+					script_4594(ivar6, ivar7, globalarray_1[0], globalarray_2[0], 1114129);
+					script_4594(-1, -1, -1, -1, 1114132);
+					script_4594(-1, -1, -1, -1, 1114134);
+					globalarray_0[0] = add(add(globalarray_1[0], 36), ivar2);
+					if (add(globalarray_1[0], 36) >= ivar0) {
+						globalarray_0[0] = 0;
+						globalarray_0[0] = add(add(globalarray_2[0], 32), ivar3);
+					}
+					globalarray_0[0] = add(globalarray_3[0], 1);
+				}
+			} else {
+				script_4594(-1, -1, -1, -1, 1114129);
+				script_4594(-1, -1, -1, -1, 1114132);
+				script_4594(-1, -1, -1, -1, 1114134);
+			}
+		} else {
+			script_4594(-1, -1, -1, -1, 1114129);
+			script_4594(-1, -1, -1, -1, 1114132);
+			script_4594(-1, -1, -1, -1, 1114134);
+		}
+		ivar5 = add(ivar5, 1);
+	}
+	if (globalarray_1[0] > 0) {
+		globalarray_0[0] = add(add(globalarray_2[0], 32), ivar3);
+	} else {
+		if (globalarray_3[0] <= 0) {
+			globalarray_0[0] = 0;
+			globalarray_0[0] = 0;
+		}
+	}
+	if (globalarray_1[1] > 0) {
+		globalarray_0[1] = add(add(globalarray_2[1], 32), ivar3);
+	} else {
+		if (globalarray_3[1] <= 0) {
+			globalarray_0[1] = 0;
+			globalarray_0[1] = 0;
+		}
+	}
+	if (globalarray_1[2] > 0) {
+		globalarray_0[2] = add(add(globalarray_2[2], 32), ivar3);
+	} else {
+		if (globalarray_3[2] <= 0) {
+			globalarray_0[2] = 0;
+			globalarray_0[2] = 0;
+		}
+	}
+	ivar10 = 0;
+	setWidgetSize(0, globalarray_0[0], 1, 0, new WidgetPointer(17,16));
+	setWidgetPosition(0, ivar10, 1, 0, new WidgetPointer(17,16));
+	ivar10 = add(ivar10, globalarray_0[0]);
+	setWidgetSize(0, globalarray_2[0], 1, 0, new WidgetPointer(17,17));
+	setWidgetPosition(0, ivar10, 1, 0, new WidgetPointer(17,17));
+	ivar10 = add(add(ivar10, globalarray_2[0]), 5);
+	setWidgetSize(0, globalarray_0[1], 1, 0, new WidgetPointer(17,19));
+	setWidgetPosition(0, ivar10, 1, 0, new WidgetPointer(17,19));
+	ivar10 = add(ivar10, globalarray_0[1]);
+	setWidgetSize(0, globalarray_2[1], 1, 0, new WidgetPointer(17,20));
+	setWidgetPosition(0, ivar10, 1, 0, new WidgetPointer(17,20));
+	ivar10 = add(add(ivar10, globalarray_2[1]), 5);
+	setWidgetSize(0, globalarray_0[2], 1, 0, new WidgetPointer(17,21));
+	setWidgetPosition(0, ivar10, 1, 0, new WidgetPointer(17,21));
+	ivar10 = add(ivar10, globalarray_0[2]);
+	setWidgetSize(0, globalarray_2[2], 1, 0, new WidgetPointer(17,22));
+	setWidgetPosition(0, ivar10, 1, 0, new WidgetPointer(17,22));
+	ivar10 = add(ivar10, globalarray_2[2]);
+	if ((getContainerFreeSlots(530) < getItemContainerLength(530)) && isMember()) {
+		globalarray_0[3] = script_4593(1114135, "You have items stored on your " + "<col=ffff00>" + "beast of burden" + "</col>" + " that will be dropped if either of you dies.");
+	}
+	setWidgetSize(0, globalarray_0[3], 1, 0, new WidgetPointer(17,23));
+	setWidgetPosition(0, ivar10, 1, 0, new WidgetPointer(17,23));
+	ivar10 = add(ivar10, globalarray_0[3]);
+	setWidgetScrollMax(0, ivar10, new WidgetPointer(17,15));
+	if (ivar10 > getWidgetActualHeight(new WidgetPointer(17,15))) {
+		script_31(1114136, 1114127, 792, 789, 790, 791, 773, 788);
+		setWidgetIsHidden(false, new WidgetPointer(17,24));
+		setWidgetPosition(0, 0, 0, 1, new WidgetPointer(17,15));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(17,24));
+		setWidgetPosition(0, 0, 1, 1, new WidgetPointer(17,15));
+		cs2method2100(0, 0, new WidgetPointer(17,15));
+	}
+	return;
+}

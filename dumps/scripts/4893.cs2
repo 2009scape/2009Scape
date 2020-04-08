@@ -1,0 +1,5 @@
+void script_4893() {
+	bitconfig_9549 = 1;
+	script_4895();
+	return;
+}

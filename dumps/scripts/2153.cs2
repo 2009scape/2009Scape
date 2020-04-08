@@ -1,0 +1,91 @@
+int script_2153() {
+	int ivar0;
+	ivar0 = getOtherCommonData(globalint_699, 871);
+	if (((boolean)getOtherCommonData(globalint_699, 897)) && (add(getSkillActualLvl(0), getSkillActualLvl(2)) < 130)) {
+		return 0;
+	}
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (getSkillActualLvl(ivar0) < getOtherCommonData(globalint_699, 872)) {
+		return 0;
+	}
+	ivar0 = getOtherCommonData(globalint_699, 873);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (getSkillActualLvl(ivar0) < getOtherCommonData(globalint_699, 874)) {
+		return 0;
+	}
+	ivar0 = getOtherCommonData(globalint_699, 875);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (getSkillActualLvl(ivar0) < getOtherCommonData(globalint_699, 876)) {
+		return 0;
+	}
+	ivar0 = getOtherCommonData(globalint_699, 877);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (getSkillActualLvl(ivar0) < getOtherCommonData(globalint_699, 878)) {
+		return 0;
+	}
+	ivar0 = getOtherCommonData(globalint_699, 879);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (getSkillActualLvl(ivar0) < getOtherCommonData(globalint_699, 880)) {
+		return 0;
+	}
+	ivar0 = getOtherCommonData(globalint_699, 881);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (getSkillActualLvl(ivar0) < getOtherCommonData(globalint_699, 882)) {
+		return 0;
+	}
+	ivar0 = getOtherCommonData(globalint_699, 883);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (getSkillActualLvl(ivar0) < getOtherCommonData(globalint_699, 884)) {
+		return 0;
+	}
+	ivar0 = getOtherCommonData(globalint_699, 885);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (getSkillActualLvl(ivar0) < getOtherCommonData(globalint_699, 886)) {
+		return 0;
+	}
+	ivar0 = getOtherCommonData(globalint_699, 887);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (getSkillActualLvl(ivar0) < getOtherCommonData(globalint_699, 888)) {
+		return 0;
+	}
+	ivar0 = getOtherCommonData(globalint_699, 889);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (getSkillActualLvl(ivar0) < getOtherCommonData(globalint_699, 890)) {
+		return 0;
+	}
+	ivar0 = getOtherCommonData(globalint_699, 891);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (getSkillActualLvl(ivar0) < getOtherCommonData(globalint_699, 892)) {
+		return 0;
+	}
+	ivar0 = getOtherCommonData(globalint_699, 893);
+	if (ivar0 == -1) {
+		return 1;
+	}
+	if (getSkillActualLvl(ivar0) < getOtherCommonData(globalint_699, 894)) {
+		return 0;
+	}
+	return 1;
+}

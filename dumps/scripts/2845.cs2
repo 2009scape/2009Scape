@@ -1,0 +1,316 @@
+void script_2845() {
+	int ivar0;
+	if (((boolean)bitconfig_3251)) {
+		setWidgetModel(20522, new WidgetPointer(473,43));
+		setWidgetText(new WidgetPointer(473,44), "Attacker level up to 2");
+		setWidgetText(new WidgetPointer(473,46), "+20 bonus damage");
+		setWidgetText(new WidgetPointer(473,45), "200 Attacker Honour Points");
+		if (bitconfig_3256 > 199) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,45));
+		}
+	} else if (bitconfig_3251 == 2) {
+		setWidgetModel(20523, new WidgetPointer(473,43));
+		setWidgetText(new WidgetPointer(473,44), "Attacker level up to 3");
+		setWidgetText(new WidgetPointer(473,46), "+30 bonus damage");
+		setWidgetText(new WidgetPointer(473,45), "300 Attacker Honour Points");
+		if (bitconfig_3256 > 299) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,45));
+		}
+	} else if (bitconfig_3251 == 3) {
+		setWidgetModel(20524, new WidgetPointer(473,43));
+		setWidgetText(new WidgetPointer(473,44), "Attacker level up to 4");
+		setWidgetText(new WidgetPointer(473,46), "+40 bonus damage");
+		setWidgetText(new WidgetPointer(473,45), "400 Attacker Honour Points");
+		if (bitconfig_3256 > 399) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,45));
+		}
+	} else if (bitconfig_3251 == 4) {
+		setWidgetModel(20525, new WidgetPointer(473,43));
+		setWidgetText(new WidgetPointer(473,44), "Attacker level up to 5");
+		setWidgetText(new WidgetPointer(473,46), "+50 bonus damage");
+		setWidgetText(new WidgetPointer(473,45), "500 Attacker Honour Points");
+		if (bitconfig_3256 > 499) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,45));
+		}
+	} else if (bitconfig_3251 == 5) {
+		setWidgetModel(20525, new WidgetPointer(473,43));
+		setWidgetText(new WidgetPointer(473,44), "Attacker level up complete");
+		setWidgetText(new WidgetPointer(473,46), " - Mastered - ");
+		setWidgetText(new WidgetPointer(473,45), " - Mastered - ");
+	} else {
+		bitconfig_3251 = 1;
+		setWidgetModel(20522, new WidgetPointer(473,43));
+		setWidgetText(new WidgetPointer(473,44), "Attacker level up to 2");
+		setWidgetText(new WidgetPointer(473,46), "+20 bonus damage");
+		setWidgetText(new WidgetPointer(473,45), "200 Attacker Honour Points");
+		if (bitconfig_3256 > 199) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,45));
+		}
+	}
+	if (((boolean)bitconfig_3253)) {
+		setWidgetModel(20531, new WidgetPointer(473,50));
+		setWidgetText(new WidgetPointer(473,51), "Defender level up to 2");
+		setWidgetText(new WidgetPointer(473,53), "Lure range 5");
+		setWidgetText(new WidgetPointer(473,52), "200 Defender Honour Points");
+		if (bitconfig_3263 > 199) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,52));
+		}
+	} else if (bitconfig_3253 == 2) {
+		setWidgetModel(20532, new WidgetPointer(473,50));
+		setWidgetText(new WidgetPointer(473,51), "Defender level up to 3");
+		setWidgetText(new WidgetPointer(473,53), "Lure range 6");
+		setWidgetText(new WidgetPointer(473,52), "300 Defender Honour Points");
+		if (bitconfig_3263 > 299) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,52));
+		}
+	} else if (bitconfig_3253 == 3) {
+		setWidgetModel(20533, new WidgetPointer(473,50));
+		setWidgetText(new WidgetPointer(473,51), "Defender level up to 4");
+		setWidgetText(new WidgetPointer(473,53), "Lure range 8");
+		setWidgetText(new WidgetPointer(473,52), "400 Defender Honour Points");
+		if (bitconfig_3263 > 399) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,52));
+		}
+	} else if (bitconfig_3253 == 4) {
+		setWidgetModel(20534, new WidgetPointer(473,50));
+		setWidgetText(new WidgetPointer(473,51), "Defender level up to 5");
+		setWidgetText(new WidgetPointer(473,53), "Lure range 10");
+		setWidgetText(new WidgetPointer(473,52), "500 Defender Honour Points");
+		if (bitconfig_3263 > 499) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,52));
+		}
+	} else if (bitconfig_3253 == 5) {
+		setWidgetModel(20534, new WidgetPointer(473,50));
+		setWidgetText(new WidgetPointer(473,51), "Defender level up complete");
+		setWidgetText(new WidgetPointer(473,53), " - Mastered - ");
+		setWidgetText(new WidgetPointer(473,52), " - Mastered - ");
+	} else {
+		bitconfig_3253 = 1;
+		setWidgetModel(20531, new WidgetPointer(473,50));
+		setWidgetText(new WidgetPointer(473,51), "Defender level up to 2");
+		setWidgetText(new WidgetPointer(473,53), "Lure range 5");
+		setWidgetText(new WidgetPointer(473,52), "200 Defender Honour Points");
+		if (bitconfig_3263 > 199) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,52));
+		}
+	}
+	if (((boolean)bitconfig_3254)) {
+		setWidgetModel(20526, new WidgetPointer(473,57));
+		setWidgetText(new WidgetPointer(473,58), "Collector level up to 2");
+		setWidgetText(new WidgetPointer(473,60), "Egg conversion");
+		setWidgetText(new WidgetPointer(473,59), "200 Collector Honour Points");
+		if (bitconfig_3261 > 199) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,59));
+		}
+	} else if (bitconfig_3254 == 2) {
+		setWidgetModel(20527, new WidgetPointer(473,57));
+		setWidgetText(new WidgetPointer(473,58), "Collector level up to 3");
+		setWidgetText(new WidgetPointer(473,60), "Egg convert success (80%)");
+		setWidgetText(new WidgetPointer(473,59), "300 Collector Honour Points");
+		if (bitconfig_3261 > 299) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,59));
+		}
+	} else if (bitconfig_3254 == 3) {
+		setWidgetModel(20528, new WidgetPointer(473,57));
+		setWidgetText(new WidgetPointer(473,58), "Collector level up to 4");
+		setWidgetText(new WidgetPointer(473,60), "Egg convert success (90%)");
+		setWidgetText(new WidgetPointer(473,59), "400 Collector Honour Points");
+		if (bitconfig_3261 > 399) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,59));
+		}
+	} else if (bitconfig_3254 == 4) {
+		setWidgetModel(20529, new WidgetPointer(473,57));
+		setWidgetText(new WidgetPointer(473,58), "Collector level up to 5");
+		setWidgetText(new WidgetPointer(473,60), "Egg convert success (100%)");
+		setWidgetText(new WidgetPointer(473,59), "500 Collector Honour Points");
+		if (bitconfig_3261 > 499) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,59));
+		}
+	} else if (bitconfig_3254 == 5) {
+		setWidgetModel(20529, new WidgetPointer(473,57));
+		setWidgetText(new WidgetPointer(473,58), "Collector level up complete");
+		setWidgetText(new WidgetPointer(473,60), " - Mastered - ");
+		setWidgetText(new WidgetPointer(473,59), " - Mastered - ");
+	} else {
+		bitconfig_3254 = 1;
+		setWidgetModel(20526, new WidgetPointer(473,57));
+		setWidgetText(new WidgetPointer(473,58), "Collector level up to 2");
+		setWidgetText(new WidgetPointer(473,60), "Egg conversion");
+		setWidgetText(new WidgetPointer(473,59), "200 Collector Honour Points");
+		if (bitconfig_3261 > 199) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,59));
+		}
+	}
+	if (((boolean)bitconfig_3255)) {
+		setWidgetModel(20538, new WidgetPointer(473,64));
+		setWidgetText(new WidgetPointer(473,65), "Healer level up to 2");
+		setWidgetText(new WidgetPointer(473,67), "Heal 150 points, more run energy");
+		setWidgetText(new WidgetPointer(473,66), "200 Healer Honour Points");
+		if (bitconfig_3262 > 199) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,66));
+		}
+	} else if (bitconfig_3255 == 2) {
+		setWidgetModel(20539, new WidgetPointer(473,64));
+		setWidgetText(new WidgetPointer(473,65), "Healer level up to 3");
+		setWidgetText(new WidgetPointer(473,67), "Heal 200 points, more run energy");
+		setWidgetText(new WidgetPointer(473,66), "300 Healer Honour Points");
+		if (bitconfig_3262 > 299) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,66));
+		}
+	} else if (bitconfig_3255 == 3) {
+		setWidgetModel(20540, new WidgetPointer(473,64));
+		setWidgetText(new WidgetPointer(473,65), "Healer level up to 4");
+		setWidgetText(new WidgetPointer(473,67), "Heal 250 points, more run energy");
+		setWidgetText(new WidgetPointer(473,66), "400 Healer Honour Points");
+		if (bitconfig_3262 > 399) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,66));
+		}
+	} else if (bitconfig_3255 == 4) {
+		setWidgetModel(20541, new WidgetPointer(473,64));
+		setWidgetText(new WidgetPointer(473,65), "Healer level up to 5");
+		setWidgetText(new WidgetPointer(473,67), "Heal 350 points, more run energy");
+		setWidgetText(new WidgetPointer(473,66), "500 Healer Honour Points");
+		if (bitconfig_3262 > 499) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,66));
+		}
+	} else if (bitconfig_3255 == 5) {
+		setWidgetModel(20541, new WidgetPointer(473,64));
+		setWidgetText(new WidgetPointer(473,65), "Healer level up complete");
+		setWidgetText(new WidgetPointer(473,67), " - Mastered - ");
+		setWidgetText(new WidgetPointer(473,66), " - Mastered - ");
+	} else {
+		bitconfig_3255 = 1;
+		setWidgetModel(20538, new WidgetPointer(473,64));
+		setWidgetText(new WidgetPointer(473,65), "Healer level up to 2");
+		setWidgetText(new WidgetPointer(473,67), "Heal 150 points and even more run energy");
+		setWidgetText(new WidgetPointer(473,66), "200 Healer Honour Points");
+		if (bitconfig_3262 > 199) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,66));
+		}
+	}
+	if (((bitconfig_3256 > 274) && (bitconfig_3263 > 274)) && ((bitconfig_3261 > 274) && (bitconfig_3262 > 274))) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,128));
+	}
+	if (((bitconfig_3256 > 274) && (bitconfig_3263 > 274)) && ((bitconfig_3261 > 274) && (bitconfig_3262 > 274))) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,121));
+	}
+	if (((bitconfig_3256 > 274) && (bitconfig_3263 > 274)) && ((bitconfig_3261 > 274) && (bitconfig_3262 > 274))) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,114));
+	}
+	if (((bitconfig_3256 > 274) && (bitconfig_3263 > 274)) && ((bitconfig_3261 > 274) && (bitconfig_3262 > 274))) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,107));
+	}
+	if (((bitconfig_3256 > 374) && (bitconfig_3263 > 374)) && ((bitconfig_3261 > 374) && (bitconfig_3262 > 374))) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,100));
+	}
+	if (((bitconfig_3256 > 374) && (bitconfig_3263 > 374)) && ((bitconfig_3261 > 374) && (bitconfig_3262 > 374))) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,93));
+	}
+	if (((bitconfig_3256 > 99) && (bitconfig_3263 > 99)) && ((bitconfig_3261 > 99) && (bitconfig_3262 > 99))) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,87));
+	}
+	if (((bitconfig_3256 > 149) && (bitconfig_3263 > 149)) && ((bitconfig_3261 > 149) && (bitconfig_3262 > 149))) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,81));
+	}
+	if (getItemAmtInContainer(93, 995) > 94999) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,212));
+	}
+	if (((boolean)bitconfig_3245)) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,95));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,102));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,109));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,116));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,123));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,130));
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,214));
+	}
+	if ((((bitconfig_3256 > 9) || (bitconfig_3263 > 9)) || (bitconfig_3261 > 9)) || (bitconfig_3262 > 9)) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,206));
+	}
+	if ((((bitconfig_3256 > 19) || (bitconfig_3263 > 19)) || (bitconfig_3261 > 19)) || (bitconfig_3262 > 19)) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,200));
+	}
+	if ((((bitconfig_3256 > 29) || (bitconfig_3263 > 29)) || (bitconfig_3261 > 29)) || (bitconfig_3262 > 29)) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,194));
+	}
+	if ((((getItemAmtInContainer(93, 15439) < 1) && (getItemAmtInContainer(95, 15439) < 1)) && ((getItemAmtInContainer(94, 15439) < 1) && (getItemAmtInContainer(530, 15439) < 1))) && (((getItemAmtInContainer(93, 15440) < 1) && (getItemAmtInContainer(95, 15440) < 1)) && ((getItemAmtInContainer(94, 15440) < 1) && (getItemAmtInContainer(530, 15440) < 1)))) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,219));
+	}
+	if ((((bitconfig_3251 == 5) || (bitconfig_3253 == 5)) || (bitconfig_3254 == 5)) || (bitconfig_3255 == 5)) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,183));
+	}
+	if ((((getItemAmtInContainer(93, 15440) < 1) && (getItemAmtInContainer(95, 15440) < 1)) && ((getItemAmtInContainer(94, 15440) < 1) && (getItemAmtInContainer(530, 15440) < 1))) && ((((getItemAmtInContainer(93, 15439) > 0) || (getItemAmtInContainer(95, 15439) > 0)) || (getItemAmtInContainer(94, 15439) > 0)) || (getItemAmtInContainer(530, 15439) > 0))) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,184));
+	}
+	if (((bitconfig_3256 > 389) && (bitconfig_3263 > 389)) && ((bitconfig_3261 > 389) && (bitconfig_3262 > 389))) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,146));
+	}
+	if ((getItemAmtInContainer(93, 15438) > 0) || (getItemAmtInContainer(94, 15438) > 0)) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,140));
+	}
+	ivar0 = 0;
+	if ((getItemAmtInContainer(93, 4151) > 0) || (getItemAmtInContainer(93, 11235) > 0)) {
+		ivar0 = 1;
+	}
+	if (((boolean)bitconfig_7342)) {
+		if ((((bitconfig_3256 > 49) || (bitconfig_3263 > 49)) || (bitconfig_3261 > 49)) || (bitconfig_3262 > 49)) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,162));
+		}
+	} else {
+		if (((boolean)ivar0)) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,162));
+		}
+	}
+	if (((boolean)bitconfig_7344)) {
+		if ((((bitconfig_3256 > 49) || (bitconfig_3263 > 49)) || (bitconfig_3261 > 49)) || (bitconfig_3262 > 49)) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,156));
+		}
+	} else {
+		if (((boolean)ivar0)) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,156));
+		}
+	}
+	if (((boolean)bitconfig_7341)) {
+		if ((((bitconfig_3256 > 49) || (bitconfig_3263 > 49)) || (bitconfig_3261 > 49)) || (bitconfig_3262 > 49)) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,174));
+		}
+	} else {
+		if (((boolean)ivar0)) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,174));
+		}
+	}
+	if (((boolean)bitconfig_7343)) {
+		if ((((bitconfig_3256 > 49) || (bitconfig_3263 > 49)) || (bitconfig_3261 > 49)) || (bitconfig_3262 > 49)) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,168));
+		}
+	} else {
+		if (((boolean)ivar0)) {
+			setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(473,168));
+		}
+	}
+	if (((boolean)bitconfig_7342)) {
+		setWidgetText(new WidgetPointer(473,162), "Carrying a valid weapon");
+		setWidgetText(new WidgetPointer(473,161), "Use Penance Egg Paint (White)");
+	}
+	if (((boolean)bitconfig_7344)) {
+		setWidgetText(new WidgetPointer(473,156), "Carrying a valid weapon");
+		setWidgetText(new WidgetPointer(473,155), "Use Penance Egg Paint (Green)");
+	}
+	if (((boolean)bitconfig_7343)) {
+		setWidgetText(new WidgetPointer(473,168), "Carrying a valid weapon");
+		setWidgetText(new WidgetPointer(473,167), "Use Penance Egg Paint (Blue)");
+	}
+	if (((boolean)bitconfig_7341)) {
+		setWidgetText(new WidgetPointer(473,174), "Carrying a valid weapon");
+		setWidgetText(new WidgetPointer(473,173), "Use Penance Egg Paint (Yellow)");
+	}
+	setItemOnWidgetMethod2200(10534, -1, new WidgetPointer(473,172));
+	setItemOnWidgetMethod2200(10531, -1, new WidgetPointer(473,154));
+	setItemOnWidgetMethod2200(15705, -1, new WidgetPointer(473,160));
+	setItemOnWidgetMethod2200(10533, -1, new WidgetPointer(473,166));
+	setWidgetText(new WidgetPointer(473,9), intToStr(bitconfig_3256));
+	setWidgetText(new WidgetPointer(473,10), intToStr(bitconfig_3263));
+	setWidgetText(new WidgetPointer(473,11), intToStr(bitconfig_3261));
+	setWidgetText(new WidgetPointer(473,12), intToStr(bitconfig_3262));
+	return;
+}

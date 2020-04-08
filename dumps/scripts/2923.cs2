@@ -1,0 +1,37 @@
+void script_2923(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5) {
+	int ivar6;
+	if (standart_config_102 > 0) {
+		setWidgetSprite(1801, new WidgetPointer(arg2));
+		setWidgetSprite(1801, new WidgetPointer(arg3));
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+		setWidgetIsHidden(false, new WidgetPointer(arg1));
+		setWidgetContextMenuOption(1, new WidgetPointer(arg1), "Use cure (p)");
+	} else if (standart_config_456 > 0) {
+		setWidgetSprite(1800, new WidgetPointer(arg2));
+		setWidgetSprite(1800, new WidgetPointer(arg3));
+		setWidgetIsHidden(true, new WidgetPointer(arg0));
+		setWidgetIsHidden(false, new WidgetPointer(arg1));
+		setWidgetContextMenuOption(1, new WidgetPointer(arg1), "Use cure (d)");
+	} else {
+		setWidgetSprite(1208, new WidgetPointer(arg2));
+		setWidgetSprite(1208, new WidgetPointer(arg3));
+		setWidgetIsHidden(false, new WidgetPointer(arg0));
+		setWidgetIsHidden(true, new WidgetPointer(arg1));
+		setWidgetNoOptions(new WidgetPointer(arg1));
+	}
+	setWidgetSize(0, subtract(16384, max(min(multiplyDivide(bitconfig_7198, script_2916(), 16384), 16384), 0)), 1, 2, new WidgetPointer(arg3));
+	setWidgetSize(0, subtract(16384, max(min(multiplyDivide(script_2915(), script_2916(), 16384), 16384), 0)), 1, 2, new WidgetPointer(arg4));
+	setWidgetText(new WidgetPointer(arg5), intToStr(bitconfig_7198));
+	ivar6 = multiplyDivide(bitconfig_7198, script_2916(), 100);
+	if (ivar6 > 75) {
+		setWidgetRGB(new Color(0, 255, 0), new WidgetPointer(arg5));
+	} else if (ivar6 > 50) {
+		setWidgetRGB(new Color(255, 255, 0), new WidgetPointer(arg5));
+	} else if (ivar6 > 25) {
+		setWidgetRGB(new Color(255, 152, 31), new WidgetPointer(arg5));
+	} else {
+		setWidgetRGB(new Color(255, 0, 0), new WidgetPointer(arg5));
+	}
+	script_2654();
+	return;
+}

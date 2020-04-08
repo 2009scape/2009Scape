@@ -1,0 +1,57 @@
+void script_497() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	svar0 = "";
+	svar1 = "";
+	svar2 = "";
+	svar3 = "";
+	if (globalint_1367 != -1) {
+		ivar0 = getNpcNodemapData(globalint_1367, 1134);
+		if (globalint_1368 > ivar0) {
+			svar0 = "Movement: " + "<col=00c800>" + intToStr(globalint_1368) + "<col=ff981f>" + "/" + intToStr(ivar0);
+		} else if (globalint_1368 < ivar0) {
+			svar0 = "Movement: " + "<col=c80000>" + intToStr(globalint_1368) + "<col=ff981f>" + "/" + intToStr(ivar0);
+		} else {
+			svar0 = "Movement: " + intToStr(globalint_1368) + "/" + intToStr(ivar0);
+		}
+		ivar1 = getNpcNodemapData(globalint_1367, 1135);
+		if (globalint_1369 > ivar1) {
+			svar1 = "Damage: " + "<col=00c800>" + intToStr(multiply(globalint_1369, 100)) + "<col=ff981f>" + "/" + intToStr(multiply(ivar1, 100));
+		} else if (globalint_1369 < ivar1) {
+			svar1 = "Damage: " + "<col=c80000>" + intToStr(multiply(globalint_1369, 100)) + "<col=ff981f>" + "/" + intToStr(multiply(ivar1, 100));
+		} else {
+			svar1 = "Damage: " + intToStr(multiply(globalint_1369, 100)) + "/" + intToStr(multiply(ivar1, 100));
+		}
+		ivar2 = getNpcNodemapData(globalint_1367, 1136);
+		if (globalint_1370 > ivar2) {
+			svar2 = "Health: " + "<col=00c800>" + intToStr(multiply(globalint_1370, 100)) + "<col=ff981f>" + "/" + intToStr(multiply(ivar2, 100));
+		} else if (globalint_1370 < ivar2) {
+			svar2 = "Health: " + "<col=c80000>" + intToStr(multiply(globalint_1370, 100)) + "<col=ff981f>" + "/" + intToStr(multiply(ivar2, 100));
+		} else {
+			svar2 = "Health: " + intToStr(multiply(globalint_1370, 100)) + "/" + intToStr(multiply(ivar2, 100));
+		}
+		ivar3 = getNpcNodemapData(globalint_1367, 1137);
+		if (globalint_1371 > ivar3) {
+			svar3 = "Range: " + "<col=00c800>" + intToStr(globalint_1371) + "<col=ff981f>" + "/" + intToStr(ivar3);
+		} else if (globalint_1371 < ivar3) {
+			svar3 = "Range: " + "<col=c80000>" + intToStr(globalint_1371) + "<col=ff981f>" + "/" + intToStr(ivar3);
+		} else {
+			svar3 = "Range: " + intToStr(globalint_1371) + "/" + intToStr(ivar3);
+		}
+		setWidgetText(new WidgetPointer(1012,8), svar0);
+		setWidgetText(new WidgetPointer(1012,9), svar1);
+		setWidgetText(new WidgetPointer(1012,10), svar2);
+		setWidgetText(new WidgetPointer(1012,11), svar3);
+	}
+	return;
+}

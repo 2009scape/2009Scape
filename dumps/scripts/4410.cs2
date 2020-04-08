@@ -1,0 +1,6 @@
+void script_4410(int arg0,int arg1,int arg2) {
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1)) {
+		setScriptCallOnGameloop(4411, new WidgetPointer(arg0), arg1, arg2, 0, "Iiii");
+	}
+	return;
+}

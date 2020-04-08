@@ -1,0 +1,23 @@
+void script_4745(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	string svar0;
+	ivar2 = -1;
+	ivar3 = -1;
+	svar0 = "null";
+	if (bitconfig_9903 != 0) {
+		ivar2 = cs2method_3408(105, 118, 3879, bitconfig_9903);
+		if (arg1 < getItemContainerLength(ivar2)) {
+			ivar3 = getItemIdInSlot(ivar2, arg1);
+			if (ivar3 != -1) {
+				svar0 = script_4747(ivar3);
+				if (strLength(svar0) > 0) {
+					setWidgetText(new WidgetPointer(1144,23), svar0);
+					setWidgetIsHidden(false, new WidgetPointer(1144,23));
+					setWidgetIsHidden(true, new WidgetPointer(1144,22));
+				}
+			}
+		}
+	}
+	return;
+}

@@ -1,0 +1,19 @@
+cs2func_script_1567_struct(2,2,0) script_1567(int arg0,int arg1,int arg2) {
+	int stack_dump0;
+	int stack_dump1;
+	cs2func_script_2788_struct(2,2,0) structdump_2;
+	cs2func_script_2787_struct(2,2,0) structdump_3;
+	if (arg0 == 7) {
+		stack_dump0 = arg1;
+		stack_dump1 = arg2;
+		structdump_2 = script_2788(stack_dump0, stack_dump1);
+		return newstruct cs2func_script_1567_struct(structdump_2.intpart_0, structdump_2.intpart_1, structdump_2.stringpart_0, structdump_2.stringpart_1);
+	}
+	if (arg0 == 4) {
+		stack_dump0 = arg1;
+		stack_dump1 = arg2;
+		structdump_3 = script_2787(stack_dump0, stack_dump1);
+		return newstruct cs2func_script_1567_struct(structdump_3.intpart_0, structdump_3.intpart_1, structdump_3.stringpart_0, structdump_3.stringpart_1);
+	}
+	return newstruct cs2func_script_1567_struct(0, -1, "", "");
+}

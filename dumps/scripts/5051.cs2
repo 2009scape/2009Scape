@@ -1,0 +1,27 @@
+void script_5051(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	ivar4 = getWidgetActualWidth(new WidgetPointer(1111,15));
+	if (setWidgetRegister(new WidgetPointer(arg0), 3)) {
+		if (((boolean)arg3)) {
+			if (setWidgetRegister(new WidgetPointer(arg0), 4)) {
+				setWidgetPosition(0, add(arg1, 16), 1, 0);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg0), 5)) {
+				setWidgetPosition(0, subtract(add(add(arg1, 16), getWidgetActualHeight()), getWidgetActualHeight()), 1, 0);
+			}
+			cs2method2100(cs2method2600(new WidgetPointer(1111,15)), multiplyDivide(arg1, max(subtract(subtract(ivar4, 32), getWidgetActualHeight()), 1), subtract(getWidgetScrollMaxV(new WidgetPointer(1111,15)), ivar4)), new WidgetPointer(1111,15));
+		} else {
+			if (setWidgetRegister(new WidgetPointer(arg0), 4)) {
+				setWidgetPosition(add(arg1, 16), 0, 0, 1);
+			}
+			if (setWidgetRegister(new WidgetPointer(arg0), 5)) {
+				setWidgetPosition(subtract(add(add(arg1, 16), getWidgetActualWidth()), getWidgetActualWidth()), 0, 0, 1);
+			}
+			cs2method2100(multiplyDivide(arg1, max(subtract(subtract(ivar4, 32), getWidgetActualWidth()), 1), subtract(getWidgetScrollMaxH(new WidgetPointer(1111,15)), ivar4)), cs2method2601(new WidgetPointer(1111,15)), new WidgetPointer(1111,15));
+		}
+	}
+	if (((boolean)arg2)) {
+		script_5053(0, 0);
+	}
+	return;
+}

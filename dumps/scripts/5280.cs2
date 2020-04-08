@@ -1,0 +1,15 @@
+int script_5280() {
+	if (isWidgetOpen(new WidgetPointer(906,80))) {
+		return 1;
+	}
+	if (isWidgetOpen(new WidgetPointer(906,54))) {
+		return 1;
+	}
+	if (isWidgetOpen(new WidgetPointer(906,72))) {
+		return 1;
+	}
+	if (isWidgetOpen(new WidgetPointer(906,64))) {
+		return 1;
+	}
+	return 0;
+}

@@ -1,0 +1,17 @@
+void script_2124(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8) {
+	globalint_681 = rndExcl(2048);
+	globalint_684 = rndExcl(2048);
+	globalint_687 = rndExcl(2048);
+	globalint_690 = rndExcl(2048);
+	globalint_680 = subtract(25, rnd(50));
+	globalint_682 = subtract(25, rnd(50));
+	globalint_683 = subtract(25, rnd(50));
+	globalint_685 = subtract(25, rnd(50));
+	globalint_686 = subtract(25, rnd(50));
+	globalint_688 = subtract(25, rnd(50));
+	globalint_689 = subtract(25, rnd(50));
+	globalint_691 = subtract(25, rnd(50));
+	script_2127(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+	setScriptCallOnGameloop(2126, new WidgetPointer(arg1), new WidgetPointer(arg2), new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), new WidgetPointer(arg6), new WidgetPointer(arg7), new WidgetPointer(arg8), "IIIIIIII", new WidgetPointer(arg0));
+	return;
+}

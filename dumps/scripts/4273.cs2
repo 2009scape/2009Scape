@@ -1,0 +1,56 @@
+void script_4273() {
+	setWidgetIsHidden(true, new WidgetPointer(1083,161));
+	setWidgetIsHidden(true, new WidgetPointer(1083,160));
+	setWidgetIsHidden(true, new WidgetPointer(1083,162));
+	setWidgetIsHidden(false, new WidgetPointer(1083,164));
+	setWidgetIsHidden(true, new WidgetPointer(1083,157));
+	setWidgetIsHidden(true, new WidgetPointer(1083,158));
+	setWidgetIsHidden(false, new WidgetPointer(1083,159));
+	setWidgetIsHidden(true, new WidgetPointer(1083,243));
+	setWidgetIsHidden(true, new WidgetPointer(1083,253));
+	setWidgetIsHidden(false, new WidgetPointer(1083,394));
+	setWidgetIsHidden(true, new WidgetPointer(1083,165));
+	setWidgetText(new WidgetPointer(1083,415), intToStr(multiply(2, 10)));
+	if (getSkillActualLvl(6) < 83) {
+		setWidgetText(new WidgetPointer(1083,416), intToStr(multiply(divide(2, 2), 10)) + " (halved)");
+	} else {
+		setWidgetText(new WidgetPointer(1083,416), intToStr(multiply(2, 10)));
+	}
+	if (getSkillActualLvl(6) < 80) {
+		setWidgetText(new WidgetPointer(1083,417), intToStr(multiply(divide(12, 2), 10)) + " (halved)");
+	} else {
+		setWidgetText(new WidgetPointer(1083,417), intToStr(multiply(12, 10)));
+	}
+	if (getSkillActualLvl(6) < 86) {
+		setWidgetText(new WidgetPointer(1083,418), intToStr(multiply(divide(2, 2), 10)) + " (halved)");
+	} else {
+		setWidgetText(new WidgetPointer(1083,418), intToStr(multiply(2, 10)));
+	}
+	if (getSkillActualLvl(6) < 91) {
+		setWidgetText(new WidgetPointer(1083,419), intToStr(multiply(divide(10, 2), 10)) + " (halved)");
+	} else {
+		setWidgetText(new WidgetPointer(1083,419), intToStr(multiply(10, 10)));
+	}
+	setWidgetText(new WidgetPointer(1083,420), "Magic and Farming");
+	if (getSkillActualLvl(6) < 83) {
+		setWidgetText(new WidgetPointer(1083,421), "Farming (no Magic)");
+	} else {
+		setWidgetText(new WidgetPointer(1083,421), "Magic and Farming");
+	}
+	if (getSkillActualLvl(6) < 80) {
+		setWidgetText(new WidgetPointer(1083,422), "Crafting (no Magic)");
+	} else {
+		setWidgetText(new WidgetPointer(1083,422), "Magic and Crafting");
+	}
+	if (getSkillActualLvl(6) < 86) {
+		setWidgetText(new WidgetPointer(1083,423), "Construction (no Magic)");
+	} else {
+		setWidgetText(new WidgetPointer(1083,423), "Magic and Construction");
+	}
+	if (getSkillActualLvl(6) < 91) {
+		setWidgetText(new WidgetPointer(1083,424), "Agility (no Magic)");
+	} else {
+		setWidgetText(new WidgetPointer(1083,424), "Magic and Agility");
+	}
+	return;
+}

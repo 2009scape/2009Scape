@@ -1,0 +1,6 @@
+void script_4200(int arg0) {
+	setWidgetSprite(5415, new WidgetPointer(arg0));
+	setWidgetIsHidden(true, new WidgetPointer(891,65));
+	setWidgetIsHidden(true, new WidgetPointer(891,76));
+	return;
+}

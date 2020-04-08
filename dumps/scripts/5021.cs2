@@ -1,0 +1,3 @@
+int script_5021(int arg0) {
+	return max(bitAnd(divide(arg0, pow(2, 7)), 127), 1);
+}

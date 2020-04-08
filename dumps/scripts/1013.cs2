@@ -1,0 +1,31 @@
+cs2func_script_1013_struct(1,1,0) script_1013(int arg0) {
+	switch (arg0) {
+		case 0:
+			return newstruct cs2func_script_1013_struct(1, "Allotments");
+		case 1:
+			return newstruct cs2func_script_1013_struct(1, "Hops");
+		case 2:
+			return newstruct cs2func_script_1013_struct(1, "Trees");
+		case 3:
+			return newstruct cs2func_script_1013_struct(1, "Fruit Trees");
+		case 4:
+			return newstruct cs2func_script_1013_struct(1, "Bushes");
+		case 5:
+			return newstruct cs2func_script_1013_struct(1, "Flowers");
+		case 6:
+			return newstruct cs2func_script_1013_struct(1, "Herbs");
+		case 7:
+			return newstruct cs2func_script_1013_struct(1, "Special");
+		case 8:
+			return newstruct cs2func_script_1013_struct(1, "Equipment");
+		case 9:
+			return newstruct cs2func_script_1013_struct(1, "Other");
+		case 10:
+			return newstruct cs2func_script_1013_struct(1, "Minigames");
+		case 11:
+			return newstruct cs2func_script_1013_struct(1, "Dungeoneering");
+		case 12:
+			return newstruct cs2func_script_1013_struct(1, "Milestones");
+	}
+	return newstruct cs2func_script_1013_struct(-1, "");
+}

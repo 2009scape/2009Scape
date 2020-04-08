@@ -1,0 +1,287 @@
+void script_2162(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	int ivar16;
+	int ivar17;
+	int ivar18;
+	int ivar19;
+	int ivar20;
+	int ivar21;
+	int ivar22;
+	int ivar23;
+	int ivar24;
+	int ivar25;
+	int ivar26;
+	string svar0;
+	string svar1;
+	do {
+		flow_17:
+			ivar10 = 0;
+			ivar23 = 0;
+			if (((boolean)arg2)) {
+				ivar23 = subtract(ivar18, 1);
+			}
+			ivar24 = 5;
+			ivar25 = 0;
+			ivar26 = -1;
+			if (((boolean)arg0)) {
+				ivar26 = bitconfig_6913;
+			} else if (getOtherCommonData(ivar5, 693) > 0) {
+				ivar26 = subtract(bitconfig_697, multiply(1000, subtract(getOtherCommonData(ivar5, 693), 1)));
+			} else {
+				ivar26 = subtract(bitconfig_697, multiply(1000, subtract(arg0, 1)));
+			}
+			while (true) {
+				flow_24:
+					IF (((boolean)arg2)) 
+						GOTO	flow_25
+					GOTO	flow_26
+				flow_25:
+					IF (ivar23 < ivar18) 
+						GOTO	flow_28
+				flow_26:
+					IF (((boolean)arg2) && (ivar23 >= 0)) 
+						GOTO	flow_28
+					break;
+				flow_28:
+					ivar21 = cs2method_3408(105, 105, ivar17, ivar23);
+					if (setWidgetRegister(new WidgetPointer(ivar7), add(add(globalint_273, ivar23), 1))) {
+						setWidgetPosition(0, ivar24, 0, 0);
+						svar0 = cs2method_3408(105, 115, ivar15, ivar21);
+						setWidgetText(svar0);
+						setWidgetHidden(0);
+						ivar24 = add(ivar24, getWidgetActualHeight());
+					}
+					ivar13 = 0;
+					while (ivar11 < globalint_272) {
+						globalint_699 = cs2method_3408(105, 74, ivar6, globalarray_0[ivar10]);
+						if (globalint_699 != -1) {
+							ivar11 = add(ivar11, 1);
+							switch (arg1) {
+								flow_34:
+									case 0:
+									ivar22 = getOtherCommonData(globalint_699, 856);
+									if ((ivar22 == 4) && (standart_config_281 == 1000)) {
+										ivar22 = 0;
+									}
+									break;
+									case 1:
+									switch (arg0) {
+										case 1:
+											ivar22 = globalarray_1[ivar10];
+											break;
+										case 3:
+											ivar22 = getOtherCommonData(globalint_699, 677);
+									}
+									break;
+									case 2:
+									SWITCH (arg0) {
+										case 1:
+											 GOTO flow_43
+										case 3:
+											 GOTO flow_44
+									}
+									break;
+								flow_43:
+									ivar22 = getOtherCommonData(globalint_699, 848);
+									break;
+								flow_44:
+									ivar22 = getOtherCommonData(globalint_699, 678);
+							}
+							if (ivar22 != ivar21) {
+								ivar14 = 0;
+							}
+							if ((((boolean)ivar14) && ((boolean)arg3)) && ((boolean)globalarray_1[ivar10])) {
+								ivar12 = script_2149();
+								if (((boolean)ivar12)) {
+									ivar14 = 0;
+								}
+							}
+							if ((((boolean)ivar14) && ((boolean)arg4)) && (globalarray_1[ivar10] == 2)) {
+								ivar14 = 0;
+							}
+							if (((boolean)ivar14) && setWidgetRegister(new WidgetPointer(ivar7), globalarray_0[ivar10])) {
+								setWidgetPosition(10, ivar24, 0, 0);
+								setWidgetHidden(0);
+								if (((boolean)getOtherCommonData(globalint_699, 694))) {
+									if (((boolean)globalarray_1[ivar10])) {
+										setWidgetContextMenuOption(1, "View Quest Overview");
+										setWidgetContextMenuOption(2, "View Quest Journal");
+										setWidgetContextMenuOption(3, "Toggle Map Hint");
+									} else if (((boolean)globalarray_1[ivar10])) {
+										setWidgetContextMenuOption(1, "View Quest Journal");
+										setWidgetContextMenuOption(2, "View Quest Overview");
+										setWidgetContextMenuOption(3, "Toggle Map Hints");
+									} else {
+										setWidgetContextMenuOption(1, "View Quest Journal");
+										setWidgetContextMenuOption(2, "View Quest Overview");
+										setWidgetContextMenuOption(3, "");
+									}
+								} else if (((boolean)globalarray_1[ivar10])) {
+									setWidgetContextMenuOption(2, "Toggle Map Hint");
+								} else {
+									setWidgetContextMenuOption(2, "");
+								}
+								setWidgetContextMenuOption(1, "View Quest Journal");
+								setWidgetContextMenuOption(3, "");
+								setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), -2147483643, 16777215, "Iii");
+								if (globalarray_0[ivar10] == ivar26) {
+									setWidgetRGB(new Color(0, 255, 255));
+									setScriptCallOnMouseExit(1949, new WidgetPointer(-32768,3), -2147483643, 65535, new WidgetPointer(ivar9), "IiiI");
+								} else if (((boolean)globalarray_1[ivar10])) {
+									setWidgetRGB(new Color(255, 0, 0));
+									setScriptCallOnMouseExit(1949, new WidgetPointer(-32768,3), -2147483643, 16711680, new WidgetPointer(ivar9), "IiiI");
+								} else if (((boolean)globalarray_1[ivar10])) {
+									setWidgetRGB(new Color(255, 255, 0));
+									setScriptCallOnMouseExit(1949, new WidgetPointer(-32768,3), -2147483643, 16776960, new WidgetPointer(ivar9), "IiiI");
+								} else {
+									setWidgetRGB(new Color(0, 255, 0));
+									setScriptCallOnMouseExit(1949, new WidgetPointer(-32768,3), -2147483643, 65280, new WidgetPointer(ivar9), "IiiI");
+								}
+								ivar24 = add(ivar24, getWidgetActualHeight());
+								ivar13 = add(ivar13, 1);
+								if ((((boolean)cs2method_3408(105, 105, ivar16, ivar21)) && (stringMethod4107(getOtherCommonData(globalint_699, 857), "") != 0)) && setWidgetRegister(new WidgetPointer(ivar7), add(add(globalint_273, ivar23), 1))) {
+									setWidgetText(getOtherCommonData(globalint_699, 857));
+								}
+								ivar25 = add(ivar25, 1);
+							}
+							ivar14 = 1;
+						}
+						ivar10 = add(ivar10, 1);
+					}
+					if (ivar13 != 0) {
+						ivar24 = add(ivar24, 10);
+					} else {
+						if (setWidgetRegister(new WidgetPointer(ivar7), add(add(globalint_273, ivar23), 1))) {
+							setWidgetText("");
+							setWidgetHidden(1);
+						}
+						ivar24 = subtract(ivar24, 20);
+					}
+					ivar10 = 0;
+					ivar11 = 0;
+					if (((boolean)arg2)) {
+						ivar23 = add(ivar23, 1);
+					} else {
+						ivar23 = subtract(ivar23, 1);
+					}
+			}
+			svar1 = "";
+			if (((boolean)arg0)) {
+				if (ivar25 == globalint_272) {
+					svar1 = "Showing all " + intToStr(globalint_272) + " items";
+				} else {
+					svar1 = "Showing " + intToStr(ivar25) + " of " + intToStr(globalint_272) + " items";
+				}
+				if (((boolean)arg2)) {
+					svar1 = concat(svar1, " (reversed)");
+				}
+				setWidgetText(new WidgetPointer(190,8), svar1);
+			}
+			IF (((boolean)globalint_695) || (ivar20 != add(ivar24, 5))) 
+				GOTO	flow_102
+			IF (((boolean)arg2)) 
+				GOTO	flow_99
+			GOTO	flow_100
+		flow_99:
+			IF (((boolean)globalint_694)) 
+				GOTO	flow_102
+		flow_100:
+			IF (((boolean)arg2) && ((boolean)globalint_694)) 
+				GOTO	flow_102
+			GOTO	flow_103
+		flow_102:
+			setWidgetScrollMax(getWidgetActualWidth(new WidgetPointer(ivar7)), add(ivar24, 5), new WidgetPointer(ivar7));
+			ivar20 = ivar24;
+			cs2method2100(0, 0, new WidgetPointer(ivar7));
+			script_31(ivar8, ivar7, 792, 789, 790, 791, 773, 788);
+			break;
+		flow_103:
+			cs2method2100(0, ivar19, new WidgetPointer(ivar7));
+	} while (false);
+	if ((((arg1 == -1) || (arg2 == -1)) || (arg3 == -1)) || (arg4 == -1)) {
+		return;
+	}
+	globalarray_0 = new int[add(globalint_273, 1)];
+	globalarray_1 = new int[add(globalint_273, 1)];
+	ivar5 = cs2method_3408(105, 74, 169, arg0);
+	if (ivar5 == -1) {
+		return;
+	}
+	ivar6 = getOtherCommonData(ivar5, 61);
+	ivar7 = getOtherCommonData(ivar5, 152);
+	ivar8 = getOtherCommonData(ivar5, 153);
+	ivar9 = getOtherCommonData(ivar5, 670);
+	globalint_698 = script_1432();
+	ivar10 = 0;
+	ivar11 = 0;
+	ivar12 = 1;
+	ivar13 = 0;
+	ivar14 = 1;
+	ivar15 = cs2method_3408(105, 103, getOtherCommonData(ivar5, 673), arg1);
+	ivar16 = cs2method_3408(105, 103, getOtherCommonData(ivar5, 676), arg1);
+	ivar17 = cs2method_3408(105, 103, getOtherCommonData(ivar5, 675), arg1);
+	if (ivar17 == -1) {
+		ivar17 = 223;
+	}
+	if (ivar15 == -1) {
+		return;
+	}
+	ivar18 = getCommonDefinitionSize(ivar15);
+	ivar19 = cs2method2601(new WidgetPointer(ivar7));
+	ivar20 = getWidgetScrollMaxV(new WidgetPointer(ivar7));
+	ivar21 = 0;
+	ivar22 = 0;
+	svar0 = "";
+	script_2164(arg0);
+	while (ivar10 <= globalint_273) {
+		globalarray_0[ivar10] = ivar10;
+		ivar10 = add(ivar10, 1);
+	}
+	ivar10 = 0;
+	script_2163(0, ivar6, 0, globalint_273);
+	switch (arg0) {
+		while (true) {
+			case 1:
+				if (ivar10 <= globalint_273) {
+					globalarray_0[ivar10] = script_2193(globalarray_0[ivar10]);
+					ivar10 = add(ivar10, 1);
+				}
+		}
+		flow_14:
+			GOTO	flow_17
+			while (true) {
+				case 3:
+					if (ivar10 <= globalint_273) {
+						globalarray_0[ivar10] = 0;
+						ivar10 = add(ivar10, 1);
+					}
+			}
+	}
+	if (((boolean)arg0)) {
+		globalint_692 = arg3;
+		globalint_1103 = arg4;
+		globalint_694 = arg2;
+		if (((boolean)globalint_692)) {
+			setWidgetSprite(699, new WidgetPointer(190,10));
+		} else {
+			setWidgetSprite(697, new WidgetPointer(190,10));
+		}
+		if (((boolean)globalint_1103)) {
+			setWidgetSprite(699, new WidgetPointer(190,12));
+		} else {
+			setWidgetSprite(697, new WidgetPointer(190,12));
+		}
+	}
+	globalint_695 = 0;
+	return;
+}

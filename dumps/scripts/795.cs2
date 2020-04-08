@@ -1,0 +1,15 @@
+int script_795(int arg0) {
+	if (getItemAmtInContainer(93, 2859) < 1) {
+		return 0;
+	}
+	if (getItemAmtInContainer(93, 12530) < 1) {
+		return 0;
+	}
+	if (getItemAmtInContainer(93, 12527) < 1) {
+		return 0;
+	}
+	if (getItemAmtInContainer(93, 12525) < 1) {
+		return 0;
+	}
+	return 1;
+}

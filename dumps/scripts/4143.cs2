@@ -1,0 +1,18 @@
+void script_4143() {
+	string svar0;
+	svar0 = "null";
+	if (((boolean)bitconfig_8780)) {
+		setWidgetSprite(4584, new WidgetPointer(261,3));
+		svar0 = "Toggle Profanity Filter" + "<br>" + "(filter is currently off)";
+		setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(261,22), svar0, 25, 180, "IIsii", new WidgetPointer(261,3));
+		globalint_2 = 0;
+	} else {
+		if (((boolean)bitconfig_8780)) {
+			setWidgetSprite(4583, new WidgetPointer(261,3));
+			svar0 = "Toggle Profanity Filter" + "<br>" + "(filter is currently on)";
+			setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(261,22), svar0, 25, 180, "IIsii", new WidgetPointer(261,3));
+			globalint_2 = 0;
+		}
+	}
+	return;
+}

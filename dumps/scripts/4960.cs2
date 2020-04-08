@@ -1,0 +1,12 @@
+int script_4960(int arg0) {
+	int ivar1;
+	ivar1 = 0;
+	if (citadelConfigsInitialized()) {
+		ivar1 = script_4948(arg0);
+		if (ivar1 <= 0) {
+			return 0;
+		}
+		return script_4959(ivar1);
+	}
+	return 0;
+}

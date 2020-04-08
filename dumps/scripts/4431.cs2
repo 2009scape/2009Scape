@@ -1,0 +1,18 @@
+void script_4431(int arg0) {
+	string svar0;
+	svar0 = "";
+	if (cs2method3751()) {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+		script_4434();
+		setScriptCallOnClanChatSettingsStuff(4433, "", new WidgetPointer(1110,3));
+		setScriptCallOnClanChatDeltaStuff(4433, "", new WidgetPointer(1110,3));
+		setWidgetSprite(6255, new WidgetPointer(1110,86));
+	} else {
+		script_4437();
+		svar0 = "Join Clan Chat channel.";
+		setScriptCallOnMouseOver(4538, new WidgetPointer(1110,60), new WidgetPointer(-32768,3), -1, svar0, 120, 3793, 3793, 16777215, 13, 4, 0, -2147483647, -2147483646, "IIisifdiiiiii", new WidgetPointer(1110,85));
+		setWidgetContextMenuOption(1, new WidgetPointer(1110,85), "Join Clan Chat channel");
+		script_4589();
+	}
+	return;
+}

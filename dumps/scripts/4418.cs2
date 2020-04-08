@@ -1,0 +1,11 @@
+void script_4418() {
+	string svar0;
+	svar0 = strRemoveEntities(getWidgetText(new WidgetPointer(1107,98)));
+	if (isFriend(svar0)) {
+		messageType0("Attempting to add " + svar0 + " to your Friends List.");
+		cs2method3605(svar0);
+	} else {
+		messageType0("You've already added " + svar0 + " to your friends list.");
+	}
+	return;
+}

@@ -1,0 +1,29 @@
+void script_334(int arg0) {
+	int ivar1;
+	ivar1 = 1777;
+	if (bitconfig_6090 == 2) {
+		setWidgetSprite(7435, new WidgetPointer(arg0));
+		setScriptCallOnMouseEntered(5115, new WidgetPointer(-32768,3), 1, "Ii", new WidgetPointer(arg0));
+		setScriptCallOnMouseExit(5115, new WidgetPointer(-32768,3), 0, "Ii", new WidgetPointer(arg0));
+		setWidgetContextMenuOption(1, new WidgetPointer(arg0), "Citadel Interface");
+	} else if (((boolean)bitconfig_6090)) {
+		setWidgetSprite(3046, new WidgetPointer(arg0));
+		ivar1 = 3047;
+		setScriptCallOnMouseEntered(44, new WidgetPointer(-32768,3), ivar1, "Id", new WidgetPointer(arg0));
+		ivar1 = 3046;
+		setScriptCallOnMouseExit(44, new WidgetPointer(-32768,3), ivar1, "Id", new WidgetPointer(arg0));
+		setWidgetNoOptions(new WidgetPointer(arg0));
+		setWidgetContextMenuOption(1, new WidgetPointer(arg0), "Daemonheim Map");
+	} else {
+		setWidgetSprite(1776, new WidgetPointer(arg0));
+		setScriptCallOnMouseEntered(44, new WidgetPointer(-32768,3), ivar1, "Id", new WidgetPointer(arg0));
+		ivar1 = 1776;
+		setScriptCallOnMouseExit(44, new WidgetPointer(-32768,3), ivar1, "Id", new WidgetPointer(arg0));
+		setWidgetNoOptions(new WidgetPointer(arg0));
+		setWidgetContextMenuOption(1, new WidgetPointer(arg0), "World Map");
+		if ((standart_config_1159 != -1) && (standart_config_1159 != 0)) {
+			setWidgetContextMenuOption(2, new WidgetPointer(arg0), "Clear your marker");
+		}
+	}
+	return;
+}

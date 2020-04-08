@@ -1,0 +1,18 @@
+void script_2222(int arg0) {
+	switch (arg0) {
+		case 13:
+			script_1174(11);
+			break;
+		case 84:
+			if (isWidgetHidden(new WidgetPointer(669,13))) {
+				if (((boolean)globalint_1088)) {
+					script_2932(0, "dob", "set_members_dob.ws");
+				} else {
+					script_1174(12);
+				}
+			} else {
+				script_2715();
+			}
+	}
+	return;
+}

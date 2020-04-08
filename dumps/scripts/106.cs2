@@ -1,0 +1,48 @@
+void script_106(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	if (arg2 != 1) {
+		return;
+	}
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 0;
+	while (ivar3 < getItemContainerLength(140)) {
+		if (setWidgetRegister(new WidgetPointer(arg0), ivar3) && isWidgetHidden()) {
+			ivar4 = ivar3;
+		}
+		ivar3 = add(ivar3, 1);
+	}
+	ivar6 = divide(arg1, 5);
+	ivar5 = subtract(arg1, multiply(ivar6, 5));
+	if (((ivar4 == subtract(arg1, 1)) && (ivar5 > 0)) && (setWidgetRegister(new WidgetPointer(arg0), arg1) && setWidgetRegister(new WidgetPointer(arg0), ivar4))) {
+		playSoundEffect(1859, 1, 0);
+		setWidgetPosition(multiply(56, subtract(ivar5, 1)), multiply(56, ivar6), 0, 0);
+		setWidgetPosition(multiply(56, ivar5), multiply(56, ivar6), 0, 0);
+		return;
+	}
+	if (((ivar4 == add(arg1, 1)) && (ivar5 < 5)) && (setWidgetRegister(new WidgetPointer(arg0), arg1) && setWidgetRegister(new WidgetPointer(arg0), ivar4))) {
+		playSoundEffect(1859, 1, 0);
+		setWidgetPosition(multiply(56, add(ivar5, 1)), multiply(56, ivar6), 0, 0);
+		setWidgetPosition(multiply(56, ivar5), multiply(56, ivar6), 0, 0);
+		return;
+	}
+	if (((ivar4 == subtract(arg1, 5)) && (ivar6 > 0)) && (setWidgetRegister(new WidgetPointer(arg0), arg1) && setWidgetRegister(new WidgetPointer(arg0), ivar4))) {
+		playSoundEffect(1859, 1, 0);
+		setWidgetPosition(multiply(56, ivar5), multiply(56, subtract(ivar6, 1)), 0, 0);
+		setWidgetPosition(multiply(56, ivar5), multiply(56, ivar6), 0, 0);
+		return;
+	}
+	if (((ivar4 == add(arg1, 5)) && (ivar6 < 5)) && (setWidgetRegister(new WidgetPointer(arg0), arg1) && setWidgetRegister(new WidgetPointer(arg0), ivar4))) {
+		playSoundEffect(1859, 1, 0);
+		setWidgetPosition(multiply(56, ivar5), multiply(56, add(ivar6, 1)), 0, 0);
+		setWidgetPosition(multiply(56, ivar5), multiply(56, ivar6), 0, 0);
+		return;
+	}
+	return;
+}

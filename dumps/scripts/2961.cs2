@@ -1,0 +1,18 @@
+void script_2961(int arg0,int arg1,int arg2) {
+	if (((boolean)arg2)) {
+		if (((boolean)globalint_986)) {
+			setWidgetSprite(2702, new WidgetPointer(arg0));
+		} else {
+			setWidgetSprite(2701, new WidgetPointer(arg0));
+		}
+		setWidgetRGB(new Color(235, 224, 188), new WidgetPointer(arg1));
+	} else {
+		if (((boolean)globalint_986)) {
+			setWidgetSprite(2700, new WidgetPointer(arg0));
+		} else {
+			setWidgetSprite(2703, new WidgetPointer(arg0));
+		}
+		setWidgetRGB(new Color(178, 170, 159), new WidgetPointer(arg1));
+	}
+	return;
+}

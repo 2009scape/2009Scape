@@ -1,0 +1,7 @@
+void script_5270(int arg0,int arg1,int arg2) {
+	setWidgetText(new WidgetPointer(1137,48), intToStr(arg0));
+	setWidgetText(new WidgetPointer(1137,39), intToStr(add(arg1, arg2)));
+	setWidgetText(new WidgetPointer(1137,67), intToStr(arg1));
+	setWidgetText(new WidgetPointer(1137,73), intToStr(arg2));
+	return;
+}

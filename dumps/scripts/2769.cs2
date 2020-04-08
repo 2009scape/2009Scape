@@ -1,0 +1,17 @@
+void script_2769(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	ivar2 = 0;
+	ivar3 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg1), 0)) {
+		ivar2 = subtract(arg0, getClientCycle());
+		if (ivar2 <= 0) {
+			setScriptCallOnGameloop(-1, "");
+			deleteExtraChild();
+			return;
+		}
+		ivar3 = subtract(255, cs2method1609());
+		cs2method2103(min(add(cs2method1609(), divide(ivar3, ivar2)), 254));
+	}
+	return;
+}

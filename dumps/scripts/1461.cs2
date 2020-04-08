@@ -1,0 +1,19 @@
+void script_1461(int arg0) {
+	int ivar1;
+	int ivar2;
+	string svar0;
+	ivar1 = ((int)cs2method_3408(105, 73, 1614, arg0));
+	ivar2 = ((int)cs2method_3408(105, 73, 1615, arg0));
+	setWidgetIsHidden(false, new WidgetPointer(ivar1));
+	setWidgetIsHidden(false, new WidgetPointer(ivar2));
+	setItemOnWidgetMethod2200(-1, -1, new WidgetPointer(ivar2));
+	setWidgetSprite(1435, new WidgetPointer(ivar2));
+	setWidgetBorderThickness(0, new WidgetPointer(ivar2));
+	setWidgetShadowColor(new Color(0, 0, 0), new WidgetPointer(ivar2));
+	setWidgetNoOptions(new WidgetPointer(ivar1));
+	setScriptCallOnMousePressed(1481, "", new WidgetPointer(ivar1));
+	svar0 = "Drag an item here to create a new tab";
+	setScriptCallOnMouseOver(38, new WidgetPointer(-32768,3), new WidgetPointer(762,119), svar0, 25, 150, "IIsii", new WidgetPointer(ivar1));
+	setScriptCallOnMouseExit(40, new WidgetPointer(762,119), "I", new WidgetPointer(ivar1));
+	return;
+}

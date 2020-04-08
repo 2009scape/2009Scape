@@ -1,0 +1,16 @@
+void script_4581(int arg0) {
+	int ivar1;
+	int ivar2;
+	ivar1 = -1;
+	ivar2 = -1;
+	if (cs2method3751() && cs2method3701()) {
+		ivar1 = cs2method3760(strRemoveEntities(cs2method5020()));
+		if (ivar1 >= 0) {
+			ivar2 = cs2method3757(ivar1);
+			if (ivar2 >= 100) {
+				globalstring_350 = cs2method3713(arg0);
+			}
+		}
+	}
+	return;
+}

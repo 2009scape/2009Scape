@@ -1,0 +1,21 @@
+void script_2864() {
+	int ivar0;
+	ivar0 = 0;
+	if (((boolean)globalint_1074)) {
+		cameraPointAt(script_2865(globalint_1070, globalint_1071), globalint_1073, 0, 25);
+		cameraMoveTo(globalint_1070, globalint_1069, 0, 25);
+		ivar0 = script_2867(globalint_1070, script_2865(globalint_1070, globalint_1071));
+	} else if (((boolean)globalint_1074)) {
+		cameraMoveTo(globalint_1070, globalint_1069, 20, 3);
+		cameraPointAt(globalint_1072, 50, 20, 3);
+		ivar0 = script_2867(globalint_1070, globalint_1072);
+	} else {
+		cameraMethod5511(globalint_1070);
+	}
+	if (((boolean)ivar0)) {
+		globalint_1075 = 0;
+	} else {
+		globalint_1075 = multiply(subtract(ivar0, 1), 8191);
+	}
+	return;
+}

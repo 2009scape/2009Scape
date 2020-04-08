@@ -1,0 +1,60 @@
+void script_4839(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int stack_dump0;
+	int stack_dump1;
+	ivar2 = 0;
+	ivar3 = -1;
+	switch (arg0) {
+		case 71566492:
+			ivar3 = 71566495;
+			ivar2 = getExtraChildGap(new WidgetPointer(1092,1188));
+			break;
+		case 71566416:
+			ivar3 = 71566419;
+			ivar2 = getExtraChildGap(new WidgetPointer(1092,1112));
+			break;
+		case 71566334:
+			ivar3 = 71566337;
+			ivar2 = getExtraChildGap(new WidgetPointer(1092,1030));
+			break;
+		case 71566480:
+			ivar3 = 71566483;
+			ivar2 = getExtraChildGap(new WidgetPointer(1092,1176));
+			break;
+		case 71566402:
+			ivar3 = 71566405;
+			ivar2 = getExtraChildGap(new WidgetPointer(1092,1098));
+			break;
+		case 71566318:
+			ivar3 = 71566321;
+			ivar2 = getExtraChildGap(new WidgetPointer(1092,1014));
+			break;
+		case 71566468:
+			ivar3 = 71566471;
+			ivar2 = getExtraChildGap(new WidgetPointer(1092,1164));
+			break;
+		case 71566388:
+			ivar3 = 71566391;
+			ivar2 = getExtraChildGap(new WidgetPointer(1092,1084));
+			break;
+		case 71566302:
+			ivar3 = 71566305;
+			ivar2 = getExtraChildGap(new WidgetPointer(1092,998));
+	}
+	if (setWidgetRegister(new WidgetPointer(arg0))) {
+		stack_dump0 = 0;
+		stack_dump1 = 1564;
+		/* 
+			mgi.tools.jagdecs2.DecompilerException: opcode 1613 not decompileable
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.analyzeSpecialCall(FlowBlocksGenerator.java:297)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processFlowBlock(FlowBlocksGenerator.java:249)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.processGeneration(FlowBlocksGenerator.java:52)
+				at mgi.tools.jagdecs2.FlowBlocksGenerator.generate(FlowBlocksGenerator.java:35)
+				at mgi.tools.jagdecs2.CS2Decompiler.decompile(CS2Decompiler.java:40)
+				at tests.Main.main(Main.java:45)
+			
+		 */
+	}
+	return;
+}

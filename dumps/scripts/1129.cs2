@@ -1,0 +1,11 @@
+void script_1129() {
+	cs2method5426(36, 41);
+	cs2method5427(46, -1);
+	if (((boolean)globalint_987) || ((boolean)globalint_987)) {
+		cs2method6028(((boolean)globalint_987));
+	} else {
+		globalint_987 = 1;
+		cs2method6028(((boolean)globalint_987));
+	}
+	return;
+}

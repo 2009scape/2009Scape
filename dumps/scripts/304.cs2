@@ -1,0 +1,23 @@
+void script_304(int arg0) {
+	int ivar1;
+	if (arg0 == -1) {
+		return;
+	}
+	playSoundEffect(2266, 1, 0);
+	ivar1 = getDungeonmap(arg0);
+	ivar1 = script_2785(ivar1);
+	if (ivar1 == -1) {
+		return;
+	}
+	script_2046(49479709);
+	globalstring_31 = "";
+	script_308(49479705);
+	setWidgetText(new WidgetPointer(755,20), cs2method5207(ivar1));
+	script_41(49479737);
+	cs2method5227(ivar1, arg0);
+	cs2method5214(arg0);
+	globalint_172 = cs2method5218(ivar1);
+	script_1372();
+	script_307();
+	return;
+}

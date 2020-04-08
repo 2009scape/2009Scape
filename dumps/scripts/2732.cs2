@@ -1,0 +1,31 @@
+void script_2732(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	createExtraChild(new WidgetPointer(arg0), 3, 0);
+	setWidgetSize(2, 2, 1, 1);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetFilled(1);
+	if (((boolean)arg3)) {
+		setWidgetRGB(new Color(cs2method_3408(105, 105, 3724, arg1)));
+	} else if (arg3 == 2) {
+		setWidgetRGB(new Color(cs2method_3408(105, 105, 3723, arg1)));
+	} else if (arg3 == 3) {
+		setWidgetRGB(new Color(cs2method_3408(105, 105, 3726, arg1)));
+	} else {
+		setWidgetRGB(new Color(cs2method_3408(105, 105, 3056, arg1)));
+	}
+	createExtraChild(new WidgetPointer(arg0), 5, 1);
+	setWidgetSize(20, 20, 0, 0);
+	setWidgetPosition(0, 0, 1, 1);
+	ivar4 = 2289;
+	ivar5 = 2288;
+	if (arg2 == arg1) {
+		setWidgetSprite(ivar4);
+	} else {
+		setWidgetSprite(ivar5);
+		setScriptCallOnMouseEntered(688, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), ivar4, "Iid", new WidgetPointer(arg0));
+		setScriptCallOnMouseExit(688, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), ivar5, "Iid", new WidgetPointer(arg0));
+	}
+	return;
+}

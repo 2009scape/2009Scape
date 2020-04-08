@@ -1,0 +1,3 @@
+int script_2915() {
+	return multiply(max(getSkillCurrentLvl(3), 0), 10);
+}

@@ -1,0 +1,28 @@
+void script_1663(int arg0,int arg1,int arg2) {
+	int ivar3;
+	ivar3 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1) && isWidgetHidden()) {
+		setWidgetHidden(0);
+		if (add(getWidgetActualY(), getWidgetActualHeight()) < cs2method2601(new WidgetPointer(arg0))) {
+			setWidget3DRotation(0, 0, 512, 1024, 0, 1500);
+			setWidgetPosition(0, getWidgetActualY(new WidgetPointer(arg0)), 1, 0);
+			return;
+		}
+		if (getWidgetActualY() >= add(cs2method2601(new WidgetPointer(arg0)), getWidgetActualHeight(new WidgetPointer(arg0)))) {
+			setWidget3DRotation(0, 0, 512, 0, 0, 1500);
+			setWidgetPosition(0, subtract(add(getWidgetActualY(new WidgetPointer(arg0)), getWidgetActualHeight(new WidgetPointer(arg0))), getWidgetActualHeight()), 1, 0);
+			return;
+		}
+		ivar3 = add(subtract(getWidgetActualY(), cs2method2601(new WidgetPointer(arg0))), getWidgetActualY(new WidgetPointer(arg0)));
+		if (ivar3 > subtract(getWidgetActualHeight(new WidgetPointer(arg2)), getWidgetActualHeight())) {
+			setWidget3DRotation(0, 0, 512, 256, 0, 1500);
+			setWidgetPosition(0, subtract(ivar3, getWidgetActualHeight()), 1, 0);
+		} else {
+			setWidget3DRotation(0, 0, 512, 768, 0, 1500);
+			setWidgetPosition(0, add(ivar3, getWidgetActualHeight()), 1, 0);
+		}
+		return;
+	}
+	setWidgetHidden(1);
+	return;
+}

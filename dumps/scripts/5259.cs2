@@ -1,0 +1,33 @@
+void script_5259(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	ivar1 = 74252290;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 126;
+	ivar5 = 99;
+	if (((boolean)arg0)) {
+		setWidgetSize(getWidgetActualWidth(new WidgetPointer(ivar1)), 0, 0, 0, new WidgetPointer(ivar1));
+	}
+	if (arg0 < 61) {
+		ivar2 = multiplyDivide(arg0, 61, 100);
+		ivar3 = multiplyDivide(ivar4, 100, ivar2);
+		if (((boolean)ivar3)) {
+			setWidgetSize(getWidgetActualWidth(new WidgetPointer(ivar1)), 1, 0, 0, new WidgetPointer(ivar1));
+		} else {
+			setScriptCallOnGameloop(5260, ivar3, "i", new WidgetPointer(ivar1));
+		}
+	} else {
+		arg0 = subtract(arg0, 60);
+		ivar2 = multiplyDivide(arg0, 140, 100);
+		ivar3 = add(ivar4, multiplyDivide(ivar5, 100, ivar2));
+		if (isWidgetHidden(new WidgetPointer(ivar1))) {
+			messageType0("Hidden.");
+		}
+		setScriptCallOnGameloop(5260, ivar3, "i", new WidgetPointer(ivar1));
+	}
+	return;
+}

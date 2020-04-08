@@ -1,0 +1,39 @@
+int script_5069(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	ivar4 = min(getCommonDefinitionSize(arg0), 256);
+	ivar5 = 0;
+	ivar6 = 0;
+	while (ivar5 < ivar4) {
+		createExtraChild(new WidgetPointer(arg1), 3, getExtraChildGap(new WidgetPointer(arg1)));
+		setWidgetSize(0, 14, 1, 0);
+		setWidgetPosition(0, ivar6, 1, 0);
+		cs2method2103(255);
+		setWidgetContextMenuOption(1, "Select");
+		createExtraChild(new WidgetPointer(arg1), 5, getExtraChildGap(new WidgetPointer(arg1)));
+		setWidgetSize(12, 12, 0, 0);
+		setWidgetPosition(0, add(ivar6, 1), 0, 0);
+		if (arg3 == ivar5) {
+			setWidgetSprite(5924);
+		} else {
+			setWidgetSprite(5928);
+		}
+		createExtraChild(new WidgetPointer(arg1), 4, getExtraChildGap(new WidgetPointer(arg1)));
+		setWidgetSize(17, 14, 1, 0);
+		setWidgetPosition(0, ivar6, 2, 0);
+		setWidgetFont(494);
+		setWidgetRGB(new Color(223, 207, 191));
+		setWidgetUnknownBoolean(true);
+		setWidgetTextAlignment(0, 1, 0);
+		setWidgetText(cs2method_3408(105, 115, arg0, ivar5));
+		setScriptCallOnMouseEntered(1356, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), 16777215, "Iii");
+		setScriptCallOnMouseExit(1356, new WidgetPointer(-32768,3), getWidgetCustomChildArrayIndex(), 14667711, "Iii");
+		setScriptCallOnClickContextMenu(5071, -2147483644, arg2, ivar5, arg0, "iiig");
+		ivar6 = add(ivar6, 15);
+		ivar5 = add(ivar5, 1);
+	}
+	ivar6 = max(subtract(ivar6, 1), 0);
+	setWidgetSize(0, ivar6, 1, 0, new WidgetPointer(arg1));
+	return ivar6;
+}

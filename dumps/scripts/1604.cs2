@@ -1,0 +1,196 @@
+void script_1604() {
+	int ivar0;
+	int stack_dump0;
+	int stack_dump1;
+	int stack_dump2;
+	cs2func_script_788_struct(2,0,0) structdump_3;
+	cs2func_script_788_struct(2,0,0) structdump_4;
+	cs2func_script_788_struct(2,0,0) structdump_5;
+	cs2func_script_788_struct(2,0,0) structdump_6;
+	cs2func_script_788_struct(2,0,0) structdump_7;
+	cs2func_script_788_struct(2,0,0) structdump_8;
+	cs2func_script_788_struct(2,0,0) structdump_9;
+	cs2func_script_788_struct(2,0,0) structdump_10;
+	cs2func_script_788_struct(2,0,0) structdump_11;
+	cs2func_script_788_struct(2,0,0) structdump_12;
+	cs2func_script_788_struct(2,0,0) structdump_13;
+	cs2func_script_788_struct(2,0,0) structdump_14;
+	cs2func_script_788_struct(2,0,0) structdump_15;
+	cs2func_script_788_struct(2,0,0) structdump_16;
+	cs2func_script_788_struct(2,0,0) structdump_17;
+	cs2func_script_788_struct(2,0,0) structdump_18;
+	cs2func_script_788_struct(2,0,0) structdump_19;
+	cs2func_script_788_struct(2,0,0) structdump_20;
+	cs2func_script_788_struct(2,0,0) structdump_21;
+	cs2func_script_788_struct(2,0,0) structdump_22;
+	cs2func_script_788_struct(2,0,0) structdump_23;
+	cs2func_script_788_struct(2,0,0) structdump_24;
+	deleteAllExtraChilds(new WidgetPointer(549,110));
+	setWidgetIsHidden(true, new WidgetPointer(549,15));
+	ivar0 = 0;
+	while (ivar0 < 14) {
+		createExtraChild(new WidgetPointer(549,110), 5, ivar0);
+		if (((ivar0 != 6) && (ivar0 != 8)) && (ivar0 != 11)) {
+			if (getItemIdInSlot(94, ivar0) != -1) {
+				setWidgetSize(36, 32, 0, 0);
+				if (((boolean)ivar0)) {
+					stack_dump0 = 35979380;
+					stack_dump1 = 2;
+					stack_dump2 = 2;
+					structdump_3 = script_788(stack_dump0, stack_dump1, stack_dump2);
+					setWidgetPosition(structdump_3.intpart_0, structdump_3.intpart_1, 0, 0);
+				} else if (((boolean)ivar0)) {
+					stack_dump0 = 35979381;
+					stack_dump1 = 2;
+					stack_dump2 = 2;
+					structdump_4 = script_788(stack_dump0, stack_dump1, stack_dump2);
+					setWidgetPosition(structdump_4.intpart_0, structdump_4.intpart_1, 0, 0);
+				} else if (ivar0 == 2) {
+					stack_dump0 = 35979382;
+					stack_dump1 = 2;
+					stack_dump2 = 2;
+					structdump_5 = script_788(stack_dump0, stack_dump1, stack_dump2);
+					setWidgetPosition(structdump_5.intpart_0, structdump_5.intpart_1, 0, 0);
+				} else if (ivar0 == 3) {
+					stack_dump0 = 35979384;
+					stack_dump1 = 2;
+					stack_dump2 = 2;
+					structdump_6 = script_788(stack_dump0, stack_dump1, stack_dump2);
+					setWidgetPosition(structdump_6.intpart_0, structdump_6.intpart_1, 0, 0);
+				} else if (ivar0 == 4) {
+					stack_dump0 = 35979385;
+					stack_dump1 = 2;
+					stack_dump2 = 2;
+					structdump_7 = script_788(stack_dump0, stack_dump1, stack_dump2);
+					setWidgetPosition(structdump_7.intpart_0, structdump_7.intpart_1, 0, 0);
+				} else if (ivar0 == 5) {
+					stack_dump0 = 35979386;
+					stack_dump1 = 2;
+					stack_dump2 = 2;
+					structdump_8 = script_788(stack_dump0, stack_dump1, stack_dump2);
+					setWidgetPosition(structdump_8.intpart_0, structdump_8.intpart_1, 0, 0);
+				} else if (ivar0 == 7) {
+					stack_dump0 = 35979387;
+					stack_dump1 = 2;
+					stack_dump2 = 2;
+					structdump_9 = script_788(stack_dump0, stack_dump1, stack_dump2);
+					setWidgetPosition(structdump_9.intpart_0, structdump_9.intpart_1, 0, 0);
+				} else if (ivar0 == 9) {
+					stack_dump0 = 35979389;
+					stack_dump1 = 2;
+					stack_dump2 = 2;
+					structdump_10 = script_788(stack_dump0, stack_dump1, stack_dump2);
+					setWidgetPosition(structdump_10.intpart_0, structdump_10.intpart_1, 0, 0);
+				} else if (ivar0 == 10) {
+					stack_dump0 = 35979388;
+					stack_dump1 = 2;
+					stack_dump2 = 2;
+					structdump_11 = script_788(stack_dump0, stack_dump1, stack_dump2);
+					setWidgetPosition(structdump_11.intpart_0, structdump_11.intpart_1, 0, 0);
+				} else if (ivar0 == 12) {
+					stack_dump0 = 35979390;
+					stack_dump1 = 2;
+					stack_dump2 = 2;
+					structdump_12 = script_788(stack_dump0, stack_dump1, stack_dump2);
+					setWidgetPosition(structdump_12.intpart_0, structdump_12.intpart_1, 0, 0);
+				} else {
+					if (ivar0 == 13) {
+						stack_dump0 = 35979383;
+						stack_dump1 = 2;
+						stack_dump2 = 2;
+						structdump_13 = script_788(stack_dump0, stack_dump1, stack_dump2);
+						setWidgetPosition(structdump_13.intpart_0, structdump_13.intpart_1, 0, 0);
+					}
+				}
+				setItemOnWidgetMethod1200(getItemIdInSlot(94, ivar0), getItemAmtInSlot(94, ivar0));
+				cs2method1305(getItemName(getItemIdInSlot(94, ivar0)));
+				setWidgetContextMenuOption(1, "Remove" + "<col=ff9040>");
+				setWidgetContextMenuOption(10, "Examine" + "<col=ff9040>");
+				setWidgetShadowColor(new Color(17, 17, 17));
+				setWidgetBorderThickness(1);
+			} else if (((boolean)ivar0)) {
+				stack_dump0 = 35979380;
+				stack_dump1 = 2;
+				stack_dump2 = 2;
+				structdump_14 = script_788(stack_dump0, stack_dump1, stack_dump2);
+				setWidgetPosition(structdump_14.intpart_0, structdump_14.intpart_1, 0, 0);
+				setWidgetSprite(156);
+			} else if (((boolean)ivar0)) {
+				stack_dump0 = 35979381;
+				stack_dump1 = 2;
+				stack_dump2 = 2;
+				structdump_15 = script_788(stack_dump0, stack_dump1, stack_dump2);
+				setWidgetPosition(structdump_15.intpart_0, structdump_15.intpart_1, 0, 0);
+				setWidgetSprite(157);
+			} else if (ivar0 == 2) {
+				stack_dump0 = 35979382;
+				stack_dump1 = 2;
+				stack_dump2 = 2;
+				structdump_16 = script_788(stack_dump0, stack_dump1, stack_dump2);
+				setWidgetPosition(structdump_16.intpart_0, structdump_16.intpart_1, 0, 0);
+				setWidgetSprite(158);
+			} else if (ivar0 == 3) {
+				stack_dump0 = 35979384;
+				stack_dump1 = 2;
+				stack_dump2 = 2;
+				structdump_17 = script_788(stack_dump0, stack_dump1, stack_dump2);
+				setWidgetPosition(structdump_17.intpart_0, structdump_17.intpart_1, 0, 0);
+				setWidgetSprite(159);
+			} else if (ivar0 == 4) {
+				stack_dump0 = 35979385;
+				stack_dump1 = 2;
+				stack_dump2 = 2;
+				structdump_18 = script_788(stack_dump0, stack_dump1, stack_dump2);
+				setWidgetPosition(structdump_18.intpart_0, structdump_18.intpart_1, 0, 0);
+				setWidgetSprite(161);
+			} else if (ivar0 == 5) {
+				stack_dump0 = 35979386;
+				stack_dump1 = 2;
+				stack_dump2 = 2;
+				structdump_19 = script_788(stack_dump0, stack_dump1, stack_dump2);
+				setWidgetPosition(structdump_19.intpart_0, structdump_19.intpart_1, 0, 0);
+				setWidgetSprite(162);
+			} else if (ivar0 == 7) {
+				stack_dump0 = 35979387;
+				stack_dump1 = 2;
+				stack_dump2 = 2;
+				structdump_20 = script_788(stack_dump0, stack_dump1, stack_dump2);
+				setWidgetPosition(structdump_20.intpart_0, structdump_20.intpart_1, 0, 0);
+				setWidgetSprite(163);
+			} else if (ivar0 == 9) {
+				stack_dump0 = 35979389;
+				stack_dump1 = 2;
+				stack_dump2 = 2;
+				structdump_21 = script_788(stack_dump0, stack_dump1, stack_dump2);
+				setWidgetPosition(structdump_21.intpart_0, structdump_21.intpart_1, 0, 0);
+				setWidgetSprite(164);
+			} else if (ivar0 == 10) {
+				stack_dump0 = 35979388;
+				stack_dump1 = 2;
+				stack_dump2 = 2;
+				structdump_22 = script_788(stack_dump0, stack_dump1, stack_dump2);
+				setWidgetPosition(structdump_22.intpart_0, structdump_22.intpart_1, 0, 0);
+				setWidgetSprite(165);
+			} else if (ivar0 == 12) {
+				stack_dump0 = 35979390;
+				stack_dump1 = 2;
+				stack_dump2 = 2;
+				structdump_23 = script_788(stack_dump0, stack_dump1, stack_dump2);
+				setWidgetPosition(structdump_23.intpart_0, structdump_23.intpart_1, 0, 0);
+				setWidgetSprite(160);
+			} else {
+				if (ivar0 == 13) {
+					stack_dump0 = 35979383;
+					stack_dump1 = 2;
+					stack_dump2 = 2;
+					structdump_24 = script_788(stack_dump0, stack_dump1, stack_dump2);
+					setWidgetPosition(structdump_24.intpart_0, structdump_24.intpart_1, 0, 0);
+					setWidgetSprite(166);
+				}
+			}
+			setWidgetSize(32, 32, 0, 0);
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	return;
+}

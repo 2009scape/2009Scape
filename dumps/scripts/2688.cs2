@@ -1,0 +1,24 @@
+void script_2688() {
+	if ((cs2method3612() > 0) && (cs2method3618() >= cs2method3616())) {
+		if (((boolean)globalint_1413)) {
+			return;
+		}
+		if (((boolean)globalint_11)) {
+			script_675();
+		}
+		if (getDisplayMode() >= 2) {
+			setWidgetIsHidden(false, new WidgetPointer(746,73));
+		}
+		setWidgetIsHidden(false, new WidgetPointer(752,3));
+		setWidgetIsHidden(true, new WidgetPointer(752,7));
+		setWidgetIsHidden(true, new WidgetPointer(752,8));
+		setWidgetText(new WidgetPointer(752,4), "Enter the player to ban from the channel:");
+		globalint_5 = 15;
+		script_1564("");
+		setScriptCallOnMousePressed(-1, "", new WidgetPointer(752,3));
+		script_2026();
+		setScriptCallOnKeyPress(112, -2147483640, false, "iz", new WidgetPointer(752,5));
+		script_1188();
+	}
+	return;
+}

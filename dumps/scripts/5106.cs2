@@ -1,0 +1,49 @@
+void script_5106() {
+	setWidgetIsHidden(true, new WidgetPointer(1116,33));
+	setWidgetIsHidden(true, new WidgetPointer(1116,161));
+	setWidgetIsHidden(true, new WidgetPointer(1116,210));
+	setWidgetIsHidden(true, new WidgetPointer(1116,259));
+	setWidgetIsHidden(true, new WidgetPointer(1116,308));
+	setWidgetIsHidden(true, new WidgetPointer(1116,357));
+	setWidgetIsHidden(true, new WidgetPointer(1116,406));
+	setWidgetIsHidden(true, new WidgetPointer(1116,455));
+	setWidgetIsHidden(true, new WidgetPointer(1116,504));
+	switch (standart_config_2317) {
+		case 1:
+			setWidgetIsHidden(false, new WidgetPointer(1116,33));
+			script_5107(standart_config_2307);
+			break;
+		case 2:
+			setWidgetIsHidden(false, new WidgetPointer(1116,161));
+			script_5107(standart_config_2308);
+			break;
+		case 3:
+			setWidgetIsHidden(false, new WidgetPointer(1116,210));
+			script_5107(standart_config_2309);
+			break;
+		case 4:
+			setWidgetIsHidden(false, new WidgetPointer(1116,259));
+			script_5107(standart_config_2310);
+			break;
+		case 5:
+			setWidgetIsHidden(false, new WidgetPointer(1116,308));
+			script_5107(standart_config_2311);
+			break;
+		case 6:
+			setWidgetIsHidden(false, new WidgetPointer(1116,357));
+			script_5107(standart_config_2312);
+			break;
+		case 7:
+			setWidgetIsHidden(false, new WidgetPointer(1116,406));
+			script_5107(standart_config_2313);
+			break;
+		case 8:
+			setWidgetIsHidden(false, new WidgetPointer(1116,455));
+			script_5107(standart_config_2314);
+			break;
+		case 9:
+			setWidgetIsHidden(false, new WidgetPointer(1116,504));
+			script_5107(standart_config_2315);
+	}
+	return;
+}

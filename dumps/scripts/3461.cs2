@@ -1,0 +1,40 @@
+void script_3461(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	if (globalint_1007 <= 0) {
+		setWidgetIsHidden(true, new WidgetPointer(arg1));
+		setWidgetIsHidden(true, new WidgetPointer(arg4));
+		cs2method5512();
+		return;
+	}
+	if (globalint_1007 <= 10) {
+		setWidgetIsHidden(true, new WidgetPointer(arg1));
+		setWidgetIsHidden(true, new WidgetPointer(arg4));
+		script_3470(arg0, script_284(getMyPositionHash()));
+		return;
+	}
+	if (globalint_1007 <= 20) {
+		setWidgetIsHidden(true, new WidgetPointer(arg1));
+		setWidgetIsHidden(true, new WidgetPointer(arg4));
+		script_3465(arg0, script_284(getMyPositionHash()));
+		return;
+	}
+	if (globalint_1007 <= 30) {
+		setWidgetIsHidden(true, new WidgetPointer(arg4));
+		script_3462(arg0, arg1, arg2, arg3);
+		return;
+	}
+	if (globalint_1007 <= 40) {
+		setWidgetIsHidden(true, new WidgetPointer(arg1));
+		setWidgetIsHidden(true, new WidgetPointer(arg4));
+		script_3458(arg0, script_284(getMyPositionHash()));
+		return;
+	}
+	if (globalint_1007 <= 100) {
+		setWidgetIsHidden(true, new WidgetPointer(arg1));
+		script_3472(arg0, arg4);
+		return;
+	}
+	setWidgetIsHidden(true, new WidgetPointer(arg1));
+	setWidgetIsHidden(true, new WidgetPointer(arg4));
+	script_3466(arg0, script_284(getMyPositionHash()));
+	return;
+}

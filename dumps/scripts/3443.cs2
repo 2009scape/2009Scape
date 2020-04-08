@@ -1,0 +1,29 @@
+string script_3443(int arg0) {
+	switch (arg0) {
+		case 1:
+			return "A ranger, he prefers the bow and arrow to all other combat. He's a straight arrow and hates evil do-ers.";
+		case 2:
+			return "A wizard, he researches the mysteries of life and performs magic.";
+		case 3:
+			return "A miner, works hard all day mining rock. Likes to party in the evenings.";
+		case 4:
+			return "A cook, he spends his day making bread and stopping people stealing his cakes. He hates stew.";
+		case 5:
+			return "A shady-looking gentleman. He's likely involved in the criminal underworld.";
+		case 6:
+			return "A young man. He's concerned with starting his own business and making money. Also enjoys a rowdy party.";
+		case 7:
+			return "A barbarian. He is sensitive to any disrespect of his culture.";
+		case 8:
+			return "An elderly gentleman. He's worried about his safety and a rise in crime.";
+		case 9:
+			return "A young woman. She's concerned with the safety of her children.";
+		case 10:
+			return "A shady-looking fellow. He covers up his face to hide his identity.";
+		case 11:
+			return "A desert citizen. She doesn't have much love for mainlanders.";
+		case 12:
+			return "An elderly gentleman. He doesn't like parties or noise.";
+	}
+	return "";
+}

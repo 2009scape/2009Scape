@@ -72,6 +72,11 @@ public class EquipHandler extends OptionHandler {
 		}
 		player.setAttribute("equipLock:" + item.getId(), GameWorld.getTicks() + 2);
 		if (player.getEquipment().add(item, item.getSlot(), true, true)) {
+			//check if a brawling glove is being equipped and register it
+			if(item.getId() >= 13845 && item.getId() <= 13857) {
+				player.debug("Registering gloves... ID: " + item.getId());
+				player.getBrawlingGlovesManager().registerGlove(item.getId());
+			}
 			player.getDialogueInterpreter().close();
 			player.getAudioManager().send(SOUND);
 		}

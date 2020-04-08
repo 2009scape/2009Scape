@@ -1,0 +1,35 @@
+void script_1509() {
+	string svar0;
+	deleteAllExtraChilds(new WidgetPointer(729,1));
+	script_1088(47775745, 22);
+	deleteAllExtraChilds(new WidgetPointer(729,11));
+	script_333(47775755, 4734771, 3156258, 0, 0);
+	script_2647(47775755);
+	deleteAllExtraChilds(new WidgetPointer(729,14));
+	script_333(47775758, 4734771, 3156258, 0, 0);
+	script_1516(47775758, 380, 100);
+	script_2647(47775758);
+	deleteAllExtraChilds(new WidgetPointer(729,16));
+	script_2647(47775760);
+	globalint_778 = bitconfig_6091;
+	script_1513();
+	setScriptCallOnConfigChange(1510, 1057, 1, "Y", new WidgetPointer(729,1));
+	setScriptCallOnGlobalConfigChange(1511, 1010, 1011, 1012, 1013, 1016, 1017, 6, "Y", new WidgetPointer(729,1));
+	setScriptCallOnClickContextMenu(1512, -2147483644, 0, "ii", new WidgetPointer(729,6));
+	setScriptCallOnClickContextMenu(1512, -2147483644, 1, "ii", new WidgetPointer(729,7));
+	setScriptCallOnClickContextMenu(1512, -2147483644, 2, "ii", new WidgetPointer(729,8));
+	setScriptCallOnClickContextMenu(1512, -2147483644, 3, "ii", new WidgetPointer(729,9));
+	svar0 = "Choose a top";
+	setScriptCallOnMouseOver(1160, new WidgetPointer(-32768,3), -1, new WidgetPointer(729,23), svar0, 25, 512, "IiIsii", new WidgetPointer(729,6));
+	setScriptCallOnMouseExit(40, new WidgetPointer(729,23), "I", new WidgetPointer(729,6));
+	svar0 = "Choose some sleeves";
+	setScriptCallOnMouseOver(1160, new WidgetPointer(-32768,3), -1, new WidgetPointer(729,23), svar0, 25, 512, "IiIsii", new WidgetPointer(729,7));
+	setScriptCallOnMouseExit(40, new WidgetPointer(729,23), "I", new WidgetPointer(729,7));
+	svar0 = "Decorate your wrists";
+	setScriptCallOnMouseOver(1160, new WidgetPointer(-32768,3), -1, new WidgetPointer(729,23), svar0, 25, 512, "IiIsii", new WidgetPointer(729,8));
+	setScriptCallOnMouseExit(40, new WidgetPointer(729,23), "I", new WidgetPointer(729,8));
+	svar0 = "Choose some leggings";
+	setScriptCallOnMouseOver(1160, new WidgetPointer(-32768,3), -1, new WidgetPointer(729,23), svar0, 25, 512, "IiIsii", new WidgetPointer(729,9));
+	setScriptCallOnMouseExit(40, new WidgetPointer(729,23), "I", new WidgetPointer(729,9));
+	return;
+}

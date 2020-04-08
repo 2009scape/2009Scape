@@ -1,0 +1,45 @@
+void script_178() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 8;
+	while (ivar0 < ivar2) {
+		if ((globalint_42 == ivar0) && (globalint_41 == ivar0)) {
+			setWidgetSprite(1023, cs2method_3408(105, 73, 683, ivar0));
+		} else if (globalint_42 == ivar0) {
+			setWidgetSprite(1020, cs2method_3408(105, 73, 683, ivar0));
+		} else if (globalint_41 == ivar0) {
+			setWidgetSprite(1022, cs2method_3408(105, 73, 683, ivar0));
+		} else if (((boolean)mod(divide(script_179(ivar0), 25), 2))) {
+			setWidgetSprite(1021, cs2method_3408(105, 73, 683, ivar0));
+		} else {
+			setWidgetSprite(1019, cs2method_3408(105, 73, 683, ivar0));
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	if (((boolean)script_185(1))) {
+		setWidgetText(cs2method_3408(105, 73, 684, 1), "<col=ffff00>" + "Filter");
+	} else {
+		setWidgetText(cs2method_3408(105, 73, 684, 1), "All");
+	}
+	ivar0 = 2;
+	while (ivar0 < ivar2) {
+		ivar1 = script_185(ivar0);
+		if (((ivar0 == 3) && ((boolean)ivar1)) && (getFriendlistSize() < 0)) {
+			setWidgetText(cs2method_3408(105, 73, 684, ivar0), "<col=ffff00>" + "Loading");
+		} else if (((boolean)ivar1)) {
+			setWidgetText(cs2method_3408(105, 73, 684, ivar0), "<col=ffff00>" + "Friends");
+		} else if (ivar1 == 2) {
+			setWidgetText(cs2method_3408(105, 73, 684, ivar0), "<col=ff0000>" + "Off");
+		} else if (ivar1 == 3) {
+			setWidgetText(cs2method_3408(105, 73, 684, ivar0), "<col=00ffff>" + "Hide");
+		} else {
+			setWidgetText(cs2method_3408(105, 73, 684, ivar0), "On");
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	setWidgetIsHidden(false, new WidgetPointer(751,1));
+	return;
+}

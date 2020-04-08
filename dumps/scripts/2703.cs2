@@ -1,0 +1,30 @@
+void script_2703(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	ivar5 = subtract(arg0, getClientCycle());
+	if (ivar5 <= 0) {
+		script_2705(0, arg1, arg2, 1, arg3, arg4);
+		return;
+	}
+	ivar6 = getDisplayMode();
+	if (isBitFlagged(arg1, 1) && (ivar6 != 3)) {
+		script_2705(0, arg1, arg2, 1, arg3, arg4);
+		return;
+	}
+	ivar7 = 48889939;
+	if (((boolean)arg2)) {
+		if (((boolean)ivar6)) {
+			ivar7 = 35913749;
+		}
+		if (isWidgetOpen(new WidgetPointer(ivar7))) {
+			script_2701(arg1, arg3, arg4);
+		}
+		setWidgetText(new WidgetPointer(883,16), "Reverting in: " + intToStr(divide(ivar5, 50)));
+	} else if (arg2 == 2) {
+		setWidgetText(new WidgetPointer(906,126), "Reverting in: " + intToStr(divide(ivar5, 50)));
+	} else {
+		setWidgetText(new WidgetPointer(744,54), "Reverting in: " + intToStr(divide(ivar5, 50)));
+	}
+	return;
+}

@@ -1,0 +1,48 @@
+void script_2220() {
+	if (((boolean)bitconfig_7324)) {
+		setWidgetIsHidden(true, new WidgetPointer(931,121));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(931,121));
+	}
+	if (((boolean)bitconfig_7325)) {
+		setWidgetIsHidden(true, new WidgetPointer(931,122));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(931,122));
+	}
+	if (((boolean)bitconfig_7326)) {
+		setWidgetIsHidden(true, new WidgetPointer(931,123));
+	} else {
+		setWidgetIsHidden(false, new WidgetPointer(931,123));
+	}
+	setWidgetText(new WidgetPointer(931,154), intToStr(globalint_1126));
+	setWidgetText(new WidgetPointer(931,148), intToStr(globalint_1127));
+	setWidgetText(new WidgetPointer(931,142), intToStr(globalint_1128));
+	setWidgetText(new WidgetPointer(931,112), intToStr(globalint_1129));
+	setWidgetText(new WidgetPointer(931,136), intToStr(globalint_1131));
+	setWidgetText(new WidgetPointer(931,130), intToStr(globalint_1130));
+	setWidgetText(new WidgetPointer(931,155), "Total Workers: " + intToStr(globalint_1135));
+	setWidgetText(new WidgetPointer(931,115), intToStr(standart_config_1687) + "/15");
+	setWidgetText(new WidgetPointer(931,117), intToStr(standart_config_1688) + "/15");
+	setWidgetText(new WidgetPointer(931,116), intToStr(standart_config_1686) + "/15");
+	setWidgetText(new WidgetPointer(931,120), intToStr(standart_config_1689) + "/7");
+	setWidgetText(new WidgetPointer(931,118), intToStr(standart_config_1690) + "/7");
+	setWidgetText(new WidgetPointer(931,119), intToStr(standart_config_1691) + "/7");
+	script_2221();
+	setWidgetText(new WidgetPointer(931,20), "Turn " + intToStr(standart_config_1674) + "/15");
+	if (((boolean)globalint_1132)) {
+		setWidgetSprite(941, new WidgetPointer(931,121));
+	} else {
+		setWidgetSprite(942, new WidgetPointer(931,121));
+	}
+	if (((boolean)globalint_1134)) {
+		setWidgetSprite(941, new WidgetPointer(931,122));
+	} else {
+		setWidgetSprite(942, new WidgetPointer(931,122));
+	}
+	if (((boolean)globalint_1133)) {
+		setWidgetSprite(941, new WidgetPointer(931,123));
+	} else {
+		setWidgetSprite(942, new WidgetPointer(931,123));
+	}
+	return;
+}

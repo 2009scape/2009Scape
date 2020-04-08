@@ -1,0 +1,8 @@
+void script_2337(int arg0) {
+	if (getDisplayMode() >= 2) {
+		setWidgetPosition(add(getWidgetActualWidth(new WidgetPointer(746,13)), 10), 10, 2, 0, new WidgetPointer(arg0));
+	} else {
+		setWidgetPosition(10, 10, 2, 0, new WidgetPointer(arg0));
+	}
+	return;
+}

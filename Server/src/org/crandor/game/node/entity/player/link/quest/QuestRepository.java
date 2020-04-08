@@ -115,6 +115,7 @@ public final class QuestRepository implements SavingModule {
         for (Quest quest : QUESTS.values()) {
             config = quest.getConfig(player, getStage(quest));
             player.getConfigManager().set(config[0], config[1]);
+//            System.out.println(quest.getName() + " - > stage =  " + getStage(quest) + " - configs = { " + config[0] + " " + config[1] + " }");
         }
     }
 

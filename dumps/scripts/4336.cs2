@@ -1,0 +1,8 @@
+void script_4336(int arg0) {
+	if (((boolean)clanbitconfig_9) && (cs2method3709() >= 5)) {
+		setWidgetText(new WidgetPointer(arg0), strRemoveEntities(clanstringconfig_1));
+		return;
+	}
+	setWidgetText(new WidgetPointer(arg0), "");
+	return;
+}

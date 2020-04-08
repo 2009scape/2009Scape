@@ -1,0 +1,31 @@
+void script_487() {
+	flow_0:
+		setWidgetSprite(3263, new WidgetPointer(1015,95));
+		setWidgetSprite(3263, new WidgetPointer(1015,89));
+		setWidgetSprite(3263, new WidgetPointer(1015,83));
+		setWidgetSprite(3263, new WidgetPointer(1015,77));
+		SWITCH (bitconfig_7515) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_2
+			case 3:
+				 GOTO flow_3
+			case 4:
+				 GOTO flow_4
+		}
+		return;
+	flow_1:
+		setWidgetSprite(3265, new WidgetPointer(1015,95));
+		GOTO	flow_5
+	flow_2:
+		setWidgetSprite(3265, new WidgetPointer(1015,89));
+		GOTO	flow_5
+	flow_3:
+		setWidgetSprite(3265, new WidgetPointer(1015,83));
+		GOTO	flow_5
+	flow_4:
+		setWidgetSprite(3265, new WidgetPointer(1015,77));
+	flow_5:
+		return;
+}

@@ -1,0 +1,9 @@
+void script_3203() {
+	openInterface(59375680, 913);
+	setWidgetIsHidden(false, new WidgetPointer(906,56));
+	if (isWidgetHidden(cs2method_3408(105, 73, 941, 5))) {
+		script_3161(0);
+	}
+	setScriptCallOnKeyPress(3206, -2147483640, "i", new WidgetPointer(913,0));
+	return;
+}

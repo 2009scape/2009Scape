@@ -1,0 +1,13 @@
+void script_703(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	ivar4 = 0;
+	ivar5 = 0;
+	if (setWidgetRegister(new WidgetPointer(arg0), arg1) && setWidgetRegister(new WidgetPointer(arg2), arg3)) {
+		ivar4 = getWidgetActualX();
+		ivar5 = getWidgetActualY();
+		setWidgetPosition(getWidgetActualX(), getWidgetActualY(), 0, 0);
+		setWidgetPosition(ivar4, ivar5, 0, 0);
+	}
+	return;
+}

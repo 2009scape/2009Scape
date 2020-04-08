@@ -1,0 +1,19 @@
+void script_5170() {
+	setWidgetIsHidden(false, new WidgetPointer(1092,184));
+	setWidgetIsHidden(false, new WidgetPointer(1092,185));
+	setWidgetIsHidden(false, new WidgetPointer(1092,186));
+	setWidgetIsHidden(false, new WidgetPointer(1092,187));
+	setWidgetIsHidden(false, new WidgetPointer(1092,188));
+	setWidgetIsHidden(false, new WidgetPointer(1092,189));
+	setWidgetIsHidden(false, new WidgetPointer(1092,190));
+	setWidgetIsHidden(false, new WidgetPointer(1092,191));
+	setWidgetIsHidden(false, new WidgetPointer(1092,192));
+	setWidgetIsHidden(false, new WidgetPointer(1092,193));
+	setWidgetIsHidden(false, new WidgetPointer(1092,194));
+	setWidgetIsHidden(false, new WidgetPointer(1092,195));
+	setWidgetIsHidden(false, new WidgetPointer(1092,186));
+	setWidgetIsHidden(false, new WidgetPointer(1092,213));
+	setWidgetIsHidden(false, new WidgetPointer(1092,214));
+	setWidgetIsHidden(false, new WidgetPointer(1092,215));
+	return;
+}

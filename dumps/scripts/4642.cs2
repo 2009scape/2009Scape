@@ -1,0 +1,23 @@
+void script_4642() {
+	string svar0;
+	if (((boolean)standart_config_2192)) {
+		return;
+	}
+	svar0 = "null";
+	switch (standart_config_2192) {
+		case 1:
+			svar0 = "Abridged: 750 Dungeoneering XP. 75 Dungeoneering tokens." + "<br>" + "Unabridged: 3750 XP in a choice of Attack, Ranged or Magic.";
+			break;
+		case 2:
+			svar0 = "Abridged: 2410 Dungeoneering XP. 241 Dungeoneering tokens." + "<br>" + "Unabridged: 25415 XP in either Agility or Thieving.";
+			break;
+		case 4:
+			svar0 = "Abridged: 37080 Dungeoneering XP. 3708 Dungeoneering tokens." + "<br>" + "Unabridged: 75765 Strength XP.";
+			break;
+		default:
+			return;
+	}
+	setWidgetIsHidden(true, new WidgetPointer(153,52));
+	setWidgetText(new WidgetPointer(153,50), svar0);
+	return;
+}

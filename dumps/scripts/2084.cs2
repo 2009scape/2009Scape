@@ -1,0 +1,8 @@
+void script_2084() {
+	if (globalint_640 > 0) {
+		setWidgetText(new WidgetPointer(836,15), intToStr(globalint_640) + "%");
+	} else {
+		setWidgetText(new WidgetPointer(836,15), "---");
+	}
+	return;
+}

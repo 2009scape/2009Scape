@@ -1,0 +1,14 @@
+void script_2263(int arg0,int arg1,string arg2,string arg3) {
+	if (arg1 != 1) {
+		setWidgetContextMenuOption(1, new WidgetPointer(arg0), "Make 1 " + arg3 + "(" + intToStr(arg1) + ") ");
+		setWidgetContextMenuOption(2, new WidgetPointer(arg0), "Make 5 " + arg3 + "(" + intToStr(multiply(arg1, 5)) + ")");
+		setWidgetContextMenuOption(3, new WidgetPointer(arg0), "Make X " + arg3);
+		setWidgetContextMenuOption(4, new WidgetPointer(arg0), "Make All " + arg3);
+		return;
+	}
+	setWidgetContextMenuOption(1, new WidgetPointer(arg0), "Make 1 " + arg2);
+	setWidgetContextMenuOption(2, new WidgetPointer(arg0), "Make 5 " + arg3);
+	setWidgetContextMenuOption(3, new WidgetPointer(arg0), "Make X " + arg3);
+	setWidgetContextMenuOption(4, new WidgetPointer(arg0), "Make All " + arg3);
+	return;
+}

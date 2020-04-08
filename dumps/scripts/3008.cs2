@@ -1,0 +1,26 @@
+void script_3008(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6) {
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	ivar7 = 4677;
+	ivar8 = 4678;
+	ivar9 = 4679;
+	ivar10 = 4680;
+	setWidgetSize(13, 30, 0, 0, new WidgetPointer(arg1));
+	setWidgetSprite(ivar7, new WidgetPointer(arg1));
+	setWidgetSize(26, 30, 1, 0, new WidgetPointer(arg2));
+	setWidgetSprite(ivar8, new WidgetPointer(arg2));
+	setWidgetSize(13, 30, 0, 0, new WidgetPointer(arg3));
+	setWidgetSprite(ivar10, new WidgetPointer(arg3));
+	setWidgetSprite(2670, new WidgetPointer(arg5));
+	setWidgetSize(13, 30, 0, 0, new WidgetPointer(arg6));
+	setWidgetSprite(ivar9, new WidgetPointer(arg6));
+	setScriptCallOnMouseExit(4164, new WidgetPointer(arg1), ivar7, new WidgetPointer(arg2), ivar8, new WidgetPointer(arg6), ivar9, new WidgetPointer(arg3), ivar10, "IdIdIdId", new WidgetPointer(arg0));
+	ivar7 = 4673;
+	ivar8 = 4674;
+	ivar9 = 4675;
+	ivar10 = 4676;
+	setScriptCallOnMouseEntered(4164, new WidgetPointer(arg1), ivar7, new WidgetPointer(arg2), ivar8, new WidgetPointer(arg6), ivar9, new WidgetPointer(arg3), ivar10, "IdIdIdId", new WidgetPointer(arg0));
+	return;
+}

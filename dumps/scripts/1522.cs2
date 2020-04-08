@@ -1,0 +1,96 @@
+void script_1522(int arg0) {
+	if (bitconfig_4895 != 2) {
+		return;
+	}
+	if (standart_config_281 == 1000) {
+		setWidgetRGB(new Color(153, 255, 0), new WidgetPointer(arg0));
+		return;
+	}
+	if (((boolean)standart_config_281)) {
+		setWidgetRGB(new Color(255, 30, 30), new WidgetPointer(arg0));
+		return;
+	}
+	switch (arg0) {
+		case 49872906:
+			if (standart_config_281 >= 90) {
+				setWidgetRGB(new Color(153, 255, 0), new WidgetPointer(arg0));
+			} else if (((boolean)standart_config_281)) {
+				setWidgetRGB(new Color(255, 30, 30), new WidgetPointer(arg0));
+			} else {
+				setWidgetRGB(new Color(255, 255, 102), new WidgetPointer(arg0));
+			}
+			break;
+		case 49872907:
+			if (standart_config_281 >= 180) {
+				setWidgetRGB(new Color(153, 255, 0), new WidgetPointer(arg0));
+			} else if (standart_config_281 < 100) {
+				setWidgetRGB(new Color(255, 30, 30), new WidgetPointer(arg0));
+			} else {
+				setWidgetRGB(new Color(255, 255, 102), new WidgetPointer(arg0));
+			}
+			break;
+		case 49872908:
+			if (bitconfig_4926 >= 50) {
+				setWidgetRGB(new Color(153, 255, 0), new WidgetPointer(arg0));
+			} else if (((boolean)bitconfig_4926)) {
+				setWidgetRGB(new Color(255, 30, 30), new WidgetPointer(arg0));
+			} else {
+				setWidgetRGB(new Color(255, 255, 102), new WidgetPointer(arg0));
+			}
+			break;
+		case 49872909:
+			if (bitconfig_4927 >= 20) {
+				setWidgetRGB(new Color(153, 255, 0), new WidgetPointer(arg0));
+			} else if (((boolean)bitconfig_4927)) {
+				setWidgetRGB(new Color(255, 30, 30), new WidgetPointer(arg0));
+			} else {
+				setWidgetRGB(new Color(255, 255, 102), new WidgetPointer(arg0));
+			}
+			break;
+		case 49872910:
+			if (bitconfig_4928 >= 25) {
+				setWidgetRGB(new Color(153, 255, 0), new WidgetPointer(arg0));
+			} else if (((boolean)bitconfig_4928)) {
+				setWidgetRGB(new Color(255, 30, 30), new WidgetPointer(arg0));
+			} else {
+				setWidgetRGB(new Color(255, 255, 102), new WidgetPointer(arg0));
+			}
+			break;
+		case 49872911:
+			if (bitconfig_4929 >= 25) {
+				setWidgetRGB(new Color(153, 255, 0), new WidgetPointer(arg0));
+			} else if (((boolean)bitconfig_4929)) {
+				setWidgetRGB(new Color(255, 30, 30), new WidgetPointer(arg0));
+			} else {
+				setWidgetRGB(new Color(255, 255, 102), new WidgetPointer(arg0));
+			}
+			break;
+		case 49872915:
+			if (bitconfig_4935 >= 15) {
+				setWidgetRGB(new Color(153, 255, 0), new WidgetPointer(arg0));
+			} else if (((boolean)bitconfig_4935)) {
+				setWidgetRGB(new Color(255, 30, 30), new WidgetPointer(arg0));
+			} else {
+				setWidgetRGB(new Color(255, 255, 102), new WidgetPointer(arg0));
+			}
+			break;
+		case 49872916:
+			if (bitconfig_4936 >= 20) {
+				setWidgetRGB(new Color(153, 255, 0), new WidgetPointer(arg0));
+			} else if (((boolean)bitconfig_4936)) {
+				setWidgetRGB(new Color(255, 30, 30), new WidgetPointer(arg0));
+			} else {
+				setWidgetRGB(new Color(255, 255, 102), new WidgetPointer(arg0));
+			}
+			break;
+		case 49872917:
+			if (standart_config_281 == 1000) {
+				setWidgetRGB(new Color(153, 255, 0), new WidgetPointer(arg0));
+			} else if (standart_config_281 < 190) {
+				setWidgetRGB(new Color(255, 30, 30), new WidgetPointer(arg0));
+			} else {
+				setWidgetRGB(new Color(255, 255, 102), new WidgetPointer(arg0));
+			}
+	}
+	return;
+}

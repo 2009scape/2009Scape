@@ -1,0 +1,19 @@
+void script_3099(int arg0,int arg1,int arg2,int arg3,string arg4,string arg5) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	ivar4 = 4044;
+	ivar5 = 4044;
+	ivar6 = 4046;
+	setScriptCallOnMouseExit(3071, new WidgetPointer(arg1), ivar4, new WidgetPointer(arg2), ivar6, new WidgetPointer(arg3), ivar5, "IdIdId", new WidgetPointer(arg0));
+	setWidgetSprite(ivar4, new WidgetPointer(arg1));
+	setWidgetSprite(ivar6, new WidgetPointer(arg2));
+	setWidgetSprite(ivar5, new WidgetPointer(arg3));
+	ivar4 = 4045;
+	ivar6 = 4047;
+	ivar5 = 4045;
+	setScriptCallOnMouseEntered(3071, new WidgetPointer(arg1), ivar4, new WidgetPointer(arg2), ivar6, new WidgetPointer(arg3), ivar5, "IdIdId", new WidgetPointer(arg0));
+	setWidgetText(new WidgetPointer(906,247), arg4);
+	setWidgetContextMenuOption(1, new WidgetPointer(906,242), arg5);
+	return;
+}

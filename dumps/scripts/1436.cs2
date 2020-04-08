@@ -1,0 +1,41 @@
+void script_1436(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6,int arg7,int arg8,int arg9,int arg10,int arg11,int arg12,int arg13,int arg14,int arg15,int arg16,int arg17,int arg18,int arg19,int arg20) {
+	int ivar21;
+	int ivar22;
+	deleteAllExtraChilds(new WidgetPointer(arg3));
+	createExtraChild(new WidgetPointer(arg3), 5, 0);
+	setWidgetPosition(0, 0, 0, 0);
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg3)), getWidgetActualHeight(new WidgetPointer(arg3)), 0, 0);
+	setWidgetSprite(arg7);
+	cs2method1107(1);
+	createExtraChild(new WidgetPointer(arg3), 3, getExtraChildGap(new WidgetPointer(arg3)));
+	setWidgetPosition(0, 0, 0, 0);
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg3)), getWidgetActualHeight(new WidgetPointer(arg3)), 0, 0);
+	setWidgetRGB(new Color(0, 0, 0));
+	ivar21 = 1;
+	createExtraChild(new WidgetPointer(arg3), 5, ivar21);
+	setWidgetPosition(subtract(getWidgetActualWidth(new WidgetPointer(arg3)), 16), 0, 0, 0);
+	setWidgetSize(16, getWidgetActualHeight(new WidgetPointer(arg3)), 0, 0);
+	setWidgetSprite(arg8);
+	cs2method1107(0);
+	setScriptCallOnMouseEntered(1351, new WidgetPointer(arg3), ivar21, arg9, "Iid");
+	setScriptCallOnMouseExit(1352, new WidgetPointer(arg3), ivar21, arg8, "Iid");
+	ivar22 = getExtraChildGap(new WidgetPointer(arg3));
+	setScriptCallOnMousePressed(1347, arg0, arg2, new WidgetPointer(arg4), arg10, new WidgetPointer(arg5), new WidgetPointer(arg6), new WidgetPointer(arg3), arg11, arg12, arg13, arg14, ivar22, ivar21, arg15, arg16, arg17, arg18, arg19, arg20, "giIdIIIiiidiidddddd");
+	createExtraChild(new WidgetPointer(arg3), 4, ivar22);
+	setWidgetText(cs2method_3408(105, 115, arg0, arg1));
+	setWidgetPosition(5, 0, 0, 0);
+	setWidgetSize(subtract(getWidgetActualWidth(new WidgetPointer(arg3)), 22), getWidgetActualHeight(new WidgetPointer(arg3)), 0, 0);
+	setWidgetUnknownBoolean(false);
+	setWidgetFont(arg14);
+	setWidgetTextAlignment(0, 1, 0);
+	if (arg1 >= arg2) {
+		setWidgetRGB(new Color(arg12));
+		setScriptCallOnMouseExit(1354, new WidgetPointer(arg3), ivar22, arg12, "Iii");
+	} else {
+		setWidgetRGB(new Color(arg11));
+		setScriptCallOnMouseExit(1354, new WidgetPointer(arg3), ivar22, arg11, "Iii");
+	}
+	setScriptCallOnMouseEntered(1353, new WidgetPointer(arg3), ivar22, arg13, "Iii");
+	setScriptCallOnMousePressed(1347, arg0, arg2, new WidgetPointer(arg4), arg10, new WidgetPointer(arg5), new WidgetPointer(arg6), new WidgetPointer(arg3), arg11, arg12, arg13, arg14, ivar22, ivar21, arg15, arg16, arg17, arg18, arg19, arg20, "giIdIIIiiidiidddddd");
+	return;
+}

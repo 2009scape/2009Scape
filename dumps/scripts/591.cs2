@@ -1,0 +1,7 @@
+void script_591() {
+	standart_config_1112 = -1;
+	standart_config_1113 = -1;
+	standart_config_1109 = -1;
+	script_621();
+	return;
+}

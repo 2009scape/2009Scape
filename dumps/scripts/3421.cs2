@@ -1,0 +1,13 @@
+void script_3421() {
+	if (globalint_1279 != 2) {
+		playSoundEffect(9445, 1, 0);
+	}
+	globalint_1279 = 2;
+	setWidgetIsHidden(true, new WidgetPointer(60,45));
+	setWidgetIsHidden(true, new WidgetPointer(60,46));
+	setWidgetIsHidden(false, new WidgetPointer(60,87));
+	setWidgetIsHidden(true, new WidgetPointer(60,20));
+	setWidgetIsHidden(true, new WidgetPointer(60,17));
+	setWidgetIsHidden(false, new WidgetPointer(60,14));
+	return;
+}

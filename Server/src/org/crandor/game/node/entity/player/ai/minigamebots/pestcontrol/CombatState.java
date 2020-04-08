@@ -66,10 +66,12 @@ public class CombatState {
             bot.tick--;
 
         bot.eat(379);
-        bot.getSkills().setLevel(Skills.PRAYER, 99);
-        bot.getSkills().setStaticLevel(Skills.PRAYER, 99);
-        if (!(bot.getPrayer().getActive().contains(PrayerType.PROTECT_FROM_MELEE)))
-            bot.getPrayer().toggle(PrayerType.PROTECT_FROM_MELEE);
+        if (bot.randomType < 30) {
+            bot.getSkills().setLevel(Skills.PRAYER, 99);
+            bot.getSkills().setStaticLevel(Skills.PRAYER, 99);
+            if (!(bot.getPrayer().getActive().contains(PrayerType.PROTECT_FROM_MELEE)))
+                bot.getPrayer().toggle(PrayerType.PROTECT_FROM_MELEE);
+        }
 
         if (!bot.inCombat())
         {

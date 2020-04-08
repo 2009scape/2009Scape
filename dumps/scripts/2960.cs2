@@ -1,0 +1,21 @@
+void script_2960(int arg0,int arg1,int arg2,int arg3,int arg4,string arg5) {
+	if (arg0 != -1) {
+		if (((boolean)arg4)) {
+			setWidgetSprite(2525, new WidgetPointer(arg0));
+		} else {
+			setWidgetSprite(2524, new WidgetPointer(arg0));
+		}
+	}
+	if (arg1 != -1) {
+		if (((boolean)arg4)) {
+			setWidgetText(new WidgetPointer(arg0), arg5);
+			setWidgetRGB(new Color(250, 215, 134), new WidgetPointer(arg2));
+			setWidgetSize(add(getTextWidth(arg3, arg5), 23), getWidgetActualHeight(new WidgetPointer(arg1)), 0, 0, new WidgetPointer(arg1));
+		} else {
+			setWidgetText(new WidgetPointer(arg2), arg5);
+			setWidgetRGB(new Color(231, 172, 36), new WidgetPointer(arg2));
+			setWidgetSize(add(getTextWidth(arg3, arg5), 23), getWidgetActualHeight(new WidgetPointer(arg1)), 0, 0, new WidgetPointer(arg1));
+		}
+	}
+	return;
+}

@@ -1,0 +1,10 @@
+void script_4334(int arg0,int arg1) {
+	if (cs2method3709() >= 5) {
+		setWidgetRGB(new Color(getColorRelatedMethod4020(clanconfig_18)), new WidgetPointer(arg0));
+		setWidgetRGB(new Color(getColorRelatedMethod4020(clanconfig_19)), new WidgetPointer(arg1));
+	} else {
+		setWidgetRGB(new Color(getColorRelatedMethod4020(42550)), new WidgetPointer(arg0));
+		setWidgetRGB(new Color(getColorRelatedMethod4020(39382)), new WidgetPointer(arg1));
+	}
+	return;
+}

@@ -1,0 +1,13 @@
+void script_1507(int arg0,int arg1) {
+	if (arg0 != 1) {
+		return;
+	}
+	if (IsFemale()) {
+		cs2method403(13, arg1);
+	} else {
+		cs2method403(6, arg1);
+	}
+	globalint_1014 = arg1;
+	script_1506();
+	return;
+}

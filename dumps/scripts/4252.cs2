@@ -1,0 +1,12 @@
+void script_4252(int arg0) {
+	if (((boolean)arg0)) {
+		setWidgetSprite(4318, new WidgetPointer(917,166));
+		setWidgetSprite(4318, new WidgetPointer(917,167));
+		setWidgetSprite(4319, new WidgetPointer(917,168));
+	} else {
+		setWidgetSprite(4316, new WidgetPointer(917,166));
+		setWidgetSprite(4316, new WidgetPointer(917,167));
+		setWidgetSprite(4317, new WidgetPointer(917,168));
+	}
+	return;
+}

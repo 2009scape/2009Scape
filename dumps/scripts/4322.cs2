@@ -1,0 +1,55 @@
+void script_4322(int arg0,int arg1,int arg2,int arg3) {
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	int ivar11;
+	int ivar12;
+	int ivar13;
+	int ivar14;
+	int ivar15;
+	deleteAllExtraChilds(new WidgetPointer(arg2));
+	deleteAllExtraChilds(new WidgetPointer(arg3));
+	ivar4 = 0;
+	ivar5 = 0;
+	ivar6 = 8;
+	ivar7 = 8;
+	ivar8 = 50;
+	ivar9 = 36;
+	ivar10 = 0;
+	ivar11 = 0;
+	ivar12 = divide(subtract(getWidgetActualWidth(new WidgetPointer(arg0)), multiply(ivar6, 2)), add(ivar6, ivar8));
+	ivar13 = getCommonDefinitionSize(3722);
+	ivar14 = getCommonDefinitionSize(3721);
+	ivar15 = min(ivar13, ivar14);
+	while (ivar4 < ivar15) {
+		ivar10 = add(ivar6, multiply(add(ivar8, ivar6), subtract(ivar4, multiply(ivar5, ivar12))));
+		ivar11 = add(ivar7, multiply(ivar5, add(ivar9, ivar7)));
+		createExtraChild(new WidgetPointer(arg2), 5, ivar4);
+		setWidgetSize(ivar8, ivar9, 0, 0);
+		setWidgetPosition(ivar10, ivar11, 0, 0);
+		setWidgetSprite(6036);
+		setScriptCallOnConfigChange(4324, ivar15, 2149, 1, "iY");
+		setScriptCallOnMouseEntered(4326, ivar4, new WidgetPointer(arg2), "iI");
+		setScriptCallOnMouseExit(4327, ivar4, new WidgetPointer(arg2), "iI");
+		createExtraChild(new WidgetPointer(arg3), 5, ivar4);
+		setWidgetSize(subtract(ivar8, 8), subtract(ivar9, 8), 0, 0);
+		setWidgetPosition(add(ivar10, 4), add(ivar11, 4), 0, 0);
+		setWidgetSprite(cs2method_3408(105, 100, 3721, ivar4));
+		setWidgetContextMenuOption(1, "Select");
+		setScriptCallOnClickContextMenu(4323, ivar4, new WidgetPointer(arg2), ivar15, "iIi");
+		setScriptCallOnMouseOver(568, new WidgetPointer(arg3), ivar4, new WidgetPointer(1089,37), cs2method_3408(105, 115, 3722, ivar4), 20, 350, "IiIsii");
+		setScriptCallOnMouseExit(40, new WidgetPointer(1089,37), "I");
+		ivar4 = add(ivar4, 1);
+		if (((boolean)mod(ivar4, ivar12))) {
+			ivar5 = add(ivar5, 1);
+		}
+	}
+	cs2method2100(0, 0, new WidgetPointer(arg0));
+	setWidgetScrollMax(0, add(ivar7, multiply(add(ivar5, 1), add(ivar7, ivar9))), new WidgetPointer(arg0));
+	script_31(arg1, arg0, 5666, 5663, 5664, 5665, 5686, 5685);
+	return;
+}

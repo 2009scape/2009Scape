@@ -1,0 +1,5 @@
+void script_323(int arg0,int arg1) {
+	setWidgetText(new WidgetPointer(arg0), "Room:" + "<br>" + intToStr(bitconfig_2377) + " / 8");
+	setWidgetText(new WidgetPointer(arg1), "Level:" + "<br>" + intToStr(bitconfig_2376));
+	return;
+}

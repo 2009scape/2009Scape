@@ -1,0 +1,99 @@
+void script_2597() {
+	int ivar0;
+	int ivar1;
+	ivar0 = -1;
+	ivar1 = 0;
+	switch (globalint_929) {
+		case 0:
+			ivar0 = getItemIdInSlot(93, globalint_930);
+			break;
+		case 1:
+			ivar0 = getItemIdInSlot(93, globalint_931);
+			break;
+		case 2:
+			ivar0 = getItemIdInSlot(93, globalint_932);
+			break;
+		case 3:
+			ivar0 = getItemIdInSlot(93, globalint_933);
+			break;
+		case 4:
+			ivar0 = getItemIdInSlot(93, globalint_934);
+			break;
+		case 5:
+			ivar0 = getItemIdInSlot(93, globalint_935);
+			break;
+		case 6:
+			ivar0 = getItemIdInSlot(93, globalint_936);
+			break;
+		case 7:
+			ivar0 = getItemIdInSlot(93, globalint_937);
+			break;
+		case 8:
+			ivar0 = getItemIdInSlot(93, globalint_938);
+			break;
+		case 9:
+			ivar0 = getItemIdInSlot(93, globalint_939);
+	}
+	if ((ivar0 == -1) || (getItemHashmapData(ivar0, 803) != 1)) {
+		return;
+	}
+	switch (globalint_929) {
+		case 0:
+			if (((boolean)bitconfig_6405)) {
+				ivar1 = 1;
+			}
+			break;
+		case 1:
+			if (((boolean)bitconfig_6406)) {
+				ivar1 = 1;
+			}
+			break;
+		case 2:
+			if (((boolean)bitconfig_6407)) {
+				ivar1 = 1;
+			}
+			break;
+		case 3:
+			if (((boolean)bitconfig_6408)) {
+				ivar1 = 1;
+			}
+			break;
+		case 4:
+			if (((boolean)bitconfig_6409)) {
+				ivar1 = 1;
+			}
+			break;
+		case 5:
+			if (((boolean)bitconfig_6410)) {
+				ivar1 = 1;
+			}
+			break;
+		case 6:
+			if (((boolean)bitconfig_6411)) {
+				ivar1 = 1;
+			}
+			break;
+		case 7:
+			if (((boolean)bitconfig_6412)) {
+				ivar1 = 1;
+			}
+			break;
+		case 8:
+			if (((boolean)bitconfig_6413)) {
+				ivar1 = 1;
+			}
+			break;
+		case 9:
+			if (((boolean)bitconfig_6414)) {
+				ivar1 = 1;
+			}
+	}
+	switch (ivar1) {
+		case 0:
+			setWidgetSprite(941, new WidgetPointer(292,113));
+			break;
+		case 1:
+			setWidgetSprite(942, new WidgetPointer(292,113));
+	}
+	return;
+}

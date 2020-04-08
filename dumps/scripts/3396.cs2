@@ -1,0 +1,13 @@
+void script_3396(int arg0) {
+	int ivar1;
+	string svar0;
+	svar0 = "";
+	ivar1 = -1;
+	if (setWidgetRegister(new WidgetPointer(979,27), arg0)) {
+		globalstring_279 = cs2method1802();
+		globalint_792 = globalint_791;
+		script_3395();
+		script_3397();
+	}
+	return;
+}

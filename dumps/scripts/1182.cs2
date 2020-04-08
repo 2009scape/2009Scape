@@ -1,0 +1,37 @@
+void script_1182(int arg0) {
+	int ivar1;
+	int ivar2;
+	string svar0;
+	string svar1;
+	int stack_dump0;
+	opcStruct6506(4,3,0) structdump_1;
+	if (cs2method6500()) {
+		setScriptCallOnGameloop(1181, arg0, "i", new WidgetPointer(909,14));
+		return;
+	}
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(909,14));
+	ivar1 = 0;
+	svar0 = "";
+	ivar2 = 0;
+	svar1 = "";
+	stack_dump0 = arg0;
+	structdump_1 = cs2method6506(stack_dump0);
+	svar1 = structdump_1.stringpart_2;
+	ivar1 = structdump_1.intpart_3;
+	ivar1 = structdump_1.intpart_2;
+	svar0 = structdump_1.stringpart_1;
+	ivar1 = structdump_1.intpart_1;
+	svar0 = structdump_1.stringpart_0;
+	ivar2 = structdump_1.intpart_0;
+	if (ivar2 == -1) {
+		messageType0("Sorry, you can't join that person.");
+	} else if (setWorldHost(arg0, svar1)) {
+		globalint_547 = 0;
+		script_3143(0, "Switched to game world " + intToStr(arg0));
+		script_3062(59375787);
+	} else {
+		script_3143(1, "Sorry, we couldn't contact world " + intToStr(arg0) + "." + "<br>" + "Please choose a different world.");
+		messageType0("Sorry, we couldn't contact world " + intToStr(arg0) + ". Please choose a different world.");
+	}
+	return;
+}

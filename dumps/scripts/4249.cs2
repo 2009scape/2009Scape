@@ -1,0 +1,72 @@
+void script_4249(int arg0) {
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	string svar0;
+	if (((boolean)bitconfig_9030)) {
+		script_4248(0, 0, 0, 0, 5631, "");
+		return;
+	}
+	if ((bitconfig_8587 == 419) && isWidgetHidden(new WidgetPointer(1056,130))) {
+		return;
+	}
+	svar0 = "";
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 1;
+	ivar4 = 0;
+	if (((boolean)arg0)) {
+		if ((bitconfig_8587 == 419) && isWidgetHidden(new WidgetPointer(1056,122))) {
+			svar0 = "Click on the first Task in the list for details of how to complete it.";
+		} else {
+			if ((bitconfig_8587 == 420) && isWidgetHidden(new WidgetPointer(1056,122))) {
+				svar0 = "Click on the Task which is now first in the list.";
+			}
+		}
+		if (getDisplayMode() >= 2) {
+			ivar1 = 180;
+			ivar2 = 165;
+			ivar4 = 1;
+			if (getWidgetActualWidth(new WidgetPointer(746,2)) < 997) {
+				ivar2 = add(ivar2, 40);
+			}
+		} else {
+			ivar1 = 207;
+			ivar2 = 156;
+		}
+	} else {
+		script_4089();
+		if (bitconfig_8587 == 419) {
+			svar0 = "Click here to show the Task window.";
+		}
+		if (getDisplayMode() >= 2) {
+			if (getWidgetActualWidth(new WidgetPointer(746,2)) > 997) {
+				ivar1 = 288;
+				ivar2 = 39;
+				ivar3 = 2;
+				ivar4 = 1;
+			} else {
+				ivar1 = 51;
+				ivar2 = 77;
+				ivar3 = 2;
+				ivar4 = 1;
+			}
+		} else {
+			ivar1 = 210;
+			ivar2 = 254;
+		}
+	}
+	if (((boolean)bitconfig_9030)) {
+		svar0 = "";
+	}
+	if (isParent(new WidgetPointer(548,8), 1079) || isParent(new WidgetPointer(746,9), 1079)) {
+		svar0 = "";
+	}
+	if (((boolean)ivar4)) {
+		script_4247(ivar1, ivar2, ivar3, 16777215, 5631, svar0);
+	} else {
+		script_4248(ivar1, ivar2, ivar3, 16777215, 5631, svar0);
+	}
+	return;
+}

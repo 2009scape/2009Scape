@@ -1,0 +1,24 @@
+void script_268(int arg0) {
+	int ivar1;
+	globalarray_0 = new int[5];
+	globalarray_0[0] = globalint_1104;
+	globalarray_0[1] = globalint_1105;
+	globalarray_0[2] = globalint_1106;
+	globalarray_0[3] = globalint_1107;
+	globalarray_0[4] = globalint_1108;
+	ivar1 = 0;
+	if (globalarray_0[arg0] != 0) {
+		ivar1 = arg0;
+		while (ivar1 < subtract(5, 1)) {
+			globalarray_0[ivar1] = globalarray_0[add(ivar1, 1)];
+		}
+		globalarray_0[subtract(5, 1)] = 0;
+	}
+	globalint_1104 = globalarray_0[0];
+	globalint_1105 = globalarray_0[1];
+	globalint_1106 = globalarray_0[2];
+	globalint_1107 = globalarray_0[3];
+	globalint_1108 = globalarray_0[4];
+	script_261();
+	return;
+}

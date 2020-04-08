@@ -1,0 +1,7 @@
+void script_2054(int arg0,int arg1,int arg2) {
+	if (getClientCycle() >= arg0) {
+		cs2method5214(arg2);
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg1));
+	}
+	return;
+}

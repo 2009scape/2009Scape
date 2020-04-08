@@ -1,0 +1,13 @@
+void script_4812(int arg0,int arg1,int arg2,string arg3) {
+	if (((boolean)script_4761(arg2))) {
+		return;
+	}
+	if (globalint_2 != 1) {
+		arg3 = arg3 + "<br>" + "Requires tier " + intToStr(arg1) + " resources.";
+		setWidgetSprite(arg0, new WidgetPointer(1092,1266));
+		setWidgetText(new WidgetPointer(1092,1267), arg3);
+		setWidgetIsHidden(false, new WidgetPointer(1092,1255));
+		globalint_2 = 1;
+	}
+	return;
+}

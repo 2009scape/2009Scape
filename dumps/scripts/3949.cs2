@@ -1,0 +1,10 @@
+void script_3949(int arg0,int arg1) {
+	if (((boolean)arg1)) {
+		setWidgetRGB(new Color(250, 250, 250), new WidgetPointer(arg0));
+		setWidgetText(new WidgetPointer(arg0), concat("<u=fafafa>", strRemoveEntities(getWidgetText(new WidgetPointer(arg0)))));
+	} else {
+		setWidgetRGB(new Color(235, 224, 188), new WidgetPointer(arg0));
+		setWidgetText(new WidgetPointer(arg0), concat("<u=ebe0bc>", strRemoveEntities(getWidgetText(new WidgetPointer(arg0)))));
+	}
+	return;
+}

@@ -1,0 +1,37 @@
+void script_1622(int arg0) {
+	switch (arg0) {
+		case 21561344:
+			if (setWidgetRegister(new WidgetPointer(329,2))) {
+				setWidgetSprite(6367);
+			}
+			if (setWidgetRegister(new WidgetPointer(329,3))) {
+				setWidgetSprite(6368);
+			}
+			if (setWidgetRegister(new WidgetPointer(329,4))) {
+				setWidgetSprite(6369);
+			}
+			break;
+		case 33947660:
+			if (setWidgetRegister(new WidgetPointer(518,0))) {
+				setWidgetSprite(6367);
+			}
+			if (setWidgetRegister(new WidgetPointer(518,1))) {
+				setWidgetSprite(6368);
+			}
+			if (setWidgetRegister(new WidgetPointer(518,2))) {
+				setWidgetSprite(6369);
+			}
+			break;
+		case 21561345:
+			if (setWidgetRegister(new WidgetPointer(329,40))) {
+				setWidgetSprite(6367);
+			}
+			if (setWidgetRegister(new WidgetPointer(329,41))) {
+				setWidgetSprite(6368);
+			}
+			if (setWidgetRegister(new WidgetPointer(329,42))) {
+				setWidgetSprite(6369);
+			}
+	}
+	return;
+}

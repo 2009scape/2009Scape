@@ -1,0 +1,8 @@
+void script_4465(string arg0) {
+	if (cs2method3751()) {
+		script_4466(arg0);
+	} else {
+		messageType0("You must be in your clan channel to do that.");
+	}
+	return;
+}

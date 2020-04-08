@@ -1,0 +1,19 @@
+void script_4277() {
+	int ivar0;
+	string svar0;
+	string svar1;
+	ivar0 = divide(multiply(bitconfig_9186, 6), 10);
+	svar0 = intToStr(divide(ivar0, 60));
+	svar1 = intToStr(mod(ivar0, 60));
+	if (strLength(svar1) < 2) {
+		svar1 = concat("0", svar1);
+	}
+	if (((boolean)bitconfig_9187)) {
+		setWidgetText(new WidgetPointer(1088,12), "Match Starts In:");
+		setWidgetText(new WidgetPointer(1088,13), svar0 + ":" + svar1);
+	} else {
+		setWidgetText(new WidgetPointer(1088,12), "Time Remaining:");
+		setWidgetText(new WidgetPointer(1088,13), svar0 + ":" + svar1);
+	}
+	return;
+}

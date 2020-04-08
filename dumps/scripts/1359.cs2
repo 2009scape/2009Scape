@@ -1,0 +1,16 @@
+void script_1359(int arg0) {
+	if ((globalint_1024 == bitconfig_6521) && (globalint_1024 != 0)) {
+		if ((arg0 == 12582937) || (arg0 == 12583010)) {
+			if (globalint_1024 == 28) {
+				setScriptCallOnGameloop(1427, new WidgetPointer(arg0), "I", new WidgetPointer(192,98));
+			} else {
+				setScriptCallOnGameloop(1427, new WidgetPointer(arg0), "I", new WidgetPointer(192,25));
+			}
+		} else {
+			setScriptCallOnGameloop(1427, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+		}
+	} else {
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+	}
+	return;
+}

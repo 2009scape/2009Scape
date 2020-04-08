@@ -1,0 +1,73 @@
+void script_4738(int arg0,int arg1) {
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	ivar2 = divide(36, 4);
+	ivar3 = 0;
+	ivar4 = -1;
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 0;
+	ivar8 = cs2method_3408(105, 118, 3879, bitconfig_9903);
+	ivar9 = 0;
+	while (ivar3 < getItemContainerLength(ivar8)) {
+		if (setWidgetRegister(new WidgetPointer(arg0), ivar3)) {
+			ivar4 = getItemIdInSlot(ivar8, ivar3);
+			ivar5 = getItemAmtInContainer(ivar8, ivar4);
+			if (((ivar4 != -1) && ((boolean)script_4733(ivar3))) && (ivar5 > 0)) {
+				ivar9 = add(ivar9, ivar5);
+				if (add(ivar7, 36) >= getWidgetActualWidth(new WidgetPointer(arg0))) {
+					ivar7 = 0;
+					ivar6 = add(add(ivar6, ivar2), 36);
+				}
+				setWidgetSize(36, 32, 0, 0);
+				setWidgetPosition(ivar7, ivar6, 0, 0);
+				setWidgetHidden(0);
+				setItemOnWidgetMethod1200(ivar4, ivar5);
+				setWidgetShadowColor(new Color(51, 51, 51));
+				setWidgetBorderThickness(1);
+				setWidgetContextMenuOption(1, "Delete");
+				setWidgetContextMenuOption(10, "Examine");
+				cs2method1305("<col=ff9040>" + getItemName(ivar4));
+				ivar7 = add(add(ivar7, ivar2), 36);
+				setScriptCallOnClickContextMenu(4739, new WidgetPointer(-32768,3), -2147483643, -2147483644, "Iii");
+				setScriptCallOnMouseEntered(4745, new WidgetPointer(-32768,3), -2147483643, "Ii");
+				setScriptCallOnMouseExit(4746, new WidgetPointer(-32768,3), -2147483643, "Ii");
+			} else {
+				setWidgetSize(0, 0, 0, 0);
+				setWidgetPosition(0, 0, 0, 0);
+				setWidgetHidden(1);
+				setScriptCallOnClickContextMenu(-1, "");
+			}
+		}
+		ivar3 = add(ivar3, 1);
+	}
+	ivar10 = 0;
+	if (((boolean)ivar9)) {
+		ivar10 = 1;
+	}
+	setWidgetText(new WidgetPointer(1144,22), "Found " + "<col=ffff80>" + intToStr(ivar9) + "</col>" + " " + chooseString(ivar10, "item", "items") + " of junk in your " + cs2method_3408(118, 115, 3882, ivar8));
+	if (ivar7 > 0) {
+		ivar6 = add(ivar6, 32);
+	}
+	if (ivar6 > getWidgetActualHeight(new WidgetPointer(arg0))) {
+		setWidgetScrollMax(0, ivar6, new WidgetPointer(arg0));
+		setWidgetPosition(-8, getWidgetActualY(new WidgetPointer(arg0)), 1, 0, new WidgetPointer(arg0));
+		script_31(arg1, arg0, 792, 789, 790, 791, 773, 788);
+		if (setWidgetRegister(new WidgetPointer(arg1), 1)) {
+			script_37(arg1, arg0, cs2method2601(new WidgetPointer(arg0)), 1);
+		}
+	} else {
+		setWidgetScrollMax(0, 0, new WidgetPointer(arg0));
+		cs2method2100(0, 0, new WidgetPointer(arg0));
+		deleteAllExtraChilds(new WidgetPointer(arg1));
+		setWidgetPosition(0, getWidgetActualY(new WidgetPointer(arg0)), 1, 0, new WidgetPointer(arg0));
+	}
+	return;
+}

@@ -1,0 +1,46 @@
+void script_682(int arg0,int arg1,int arg2,int arg3,int arg4,int arg5,int arg6) {
+	int ivar7;
+	int ivar8;
+	ivar7 = divide(subtract(getWidgetActualWidth(new WidgetPointer(arg0)), 164), 2);
+	ivar8 = add(ivar7, multiply(add(146, ivar7), arg2));
+	createExtraChild(new WidgetPointer(arg0), 3, multiply(arg2, 6));
+	setWidgetSize(164, 146, 0, 0);
+	setWidgetPosition(ivar7, ivar8, 0, 0);
+	if (bitconfig_4190 == arg1) {
+		setWidgetRGB(new Color(127, 0, 0));
+	} else {
+		setWidgetRGB(new Color(0, 0, 0));
+	}
+	cs2method2103(200);
+	setWidgetFilled(1);
+	setWidgetContextMenuOption(1, "Choose");
+	cs2method1305("<col=ff9040>" + cs2method_3408(105, 115, 1099, arg1) + "</col>");
+	setScriptCallOnClickContextMenu(687, arg1, new WidgetPointer(arg0), -2147483643, new WidgetPointer(arg3), new WidgetPointer(arg4), new WidgetPointer(arg5), new WidgetPointer(arg6), "iIiIIII");
+	createExtraChild(new WidgetPointer(arg0), 6, add(multiply(arg2, 6), 1));
+	setWidgetSize(164, 146, 0, 0);
+	setWidgetPosition(ivar7, ivar8, 0, 0);
+	script_683(arg1);
+	createExtraChild(new WidgetPointer(arg0), 5, add(multiply(arg2, 6), 2));
+	setWidgetSize(165, 32, 0, 0);
+	cs2method1107(1);
+	setWidgetSprite(1074);
+	setWidgetPosition(ivar7, subtract(ivar8, 17), 0, 0);
+	createExtraChild(new WidgetPointer(arg0), 5, add(multiply(arg2, 6), 3));
+	setWidgetSize(165, 32, 0, 0);
+	cs2method1107(1);
+	setWidgetVFlip(1);
+	setWidgetSprite(1074);
+	setWidgetPosition(ivar7, add(ivar8, 130), 0, 0);
+	createExtraChild(new WidgetPointer(arg0), 5, add(multiply(arg2, 6), 4));
+	setWidgetSize(32, 144, 0, 0);
+	cs2method1107(1);
+	setWidgetSprite(1075);
+	setWidgetPosition(subtract(ivar7, 14), add(ivar8, 1), 0, 0);
+	createExtraChild(new WidgetPointer(arg0), 5, add(multiply(arg2, 6), 5));
+	setWidgetSize(32, 144, 0, 0);
+	cs2method1107(1);
+	setWidgetHFlip(1);
+	setWidgetSprite(1075);
+	setWidgetPosition(add(ivar7, 147), add(ivar8, 1), 0, 0);
+	return;
+}

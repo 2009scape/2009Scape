@@ -1,0 +1,13 @@
+void script_573() {
+	deleteAllExtraChilds(new WidgetPointer(389,4));
+	setWidgetIsHidden(false, new WidgetPointer(752,8));
+	setWidgetIsHidden(true, new WidgetPointer(752,3));
+	setWidgetIsHidden(true, new WidgetPointer(752,7));
+	setScriptCallOnKeyPress(-1, "", new WidgetPointer(389,9));
+	setScriptCallOnWindowPaneRefresh(-1, "", new WidgetPointer(389,9));
+	setScriptCallOnGameloop(-1, "", new WidgetPointer(389,9));
+	if (getDisplayMode() >= 2) {
+		script_1364();
+	}
+	return;
+}

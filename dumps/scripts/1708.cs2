@@ -1,0 +1,3 @@
+int script_1708(int arg0) {
+	return add(script_1709(arg0), script_1710(arg0));
+}

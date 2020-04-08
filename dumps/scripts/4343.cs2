@@ -1,0 +1,95 @@
+void script_4343(int arg0) {
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	string svar4;
+	string svar5;
+	string svar6;
+	string svar7;
+	string svar8;
+	string svar9;
+	string svar10;
+	cs2func_script_4721_struct(0,10,0) structdump_0;
+	svar0 = "";
+	svar1 = "";
+	svar2 = "";
+	svar3 = "";
+	svar4 = "";
+	svar5 = "";
+	svar6 = "";
+	svar7 = "";
+	svar8 = "";
+	svar9 = "";
+	svar10 = "";
+	structdump_0 = script_4721();
+	svar9 = structdump_0.stringpart_9;
+	svar8 = structdump_0.stringpart_8;
+	svar7 = structdump_0.stringpart_7;
+	svar6 = structdump_0.stringpart_6;
+	svar5 = structdump_0.stringpart_5;
+	svar4 = structdump_0.stringpart_4;
+	svar3 = structdump_0.stringpart_3;
+	svar2 = structdump_0.stringpart_2;
+	svar1 = structdump_0.stringpart_1;
+	svar0 = structdump_0.stringpart_0;
+	if (stringMethod4107(svar0, "") != 0) {
+		svar10 = svar0;
+	}
+	if (stringMethod4107(svar1, "") != 0) {
+		if (strLength(svar10) > 0) {
+			svar10 = concat(svar10, ", ");
+		}
+		svar10 = concat(svar10, svar1);
+	}
+	if (stringMethod4107(svar2, "") != 0) {
+		if (strLength(svar10) > 0) {
+			svar10 = concat(svar10, ", ");
+		}
+		svar10 = concat(svar10, svar2);
+	}
+	if (stringMethod4107(svar3, "") != 0) {
+		if (strLength(svar10) > 0) {
+			svar10 = concat(svar10, ", ");
+		}
+		svar10 = concat(svar10, svar3);
+	}
+	if (stringMethod4107(svar4, "") != 0) {
+		if (strLength(svar10) > 0) {
+			svar10 = concat(svar10, ", ");
+		}
+		svar10 = concat(svar10, svar4);
+	}
+	if (stringMethod4107(svar5, "") != 0) {
+		if (strLength(svar10) > 0) {
+			svar10 = concat(svar10, ", ");
+		}
+		svar10 = concat(svar10, svar5);
+	}
+	if (stringMethod4107(svar6, "") != 0) {
+		if (strLength(svar10) > 0) {
+			svar10 = concat(svar10, ", ");
+		}
+		svar10 = concat(svar10, svar6);
+	}
+	if (stringMethod4107(svar7, "") != 0) {
+		if (strLength(svar10) > 0) {
+			svar10 = concat(svar10, ", ");
+		}
+		svar10 = concat(svar10, svar7);
+	}
+	if (stringMethod4107(svar8, "") != 0) {
+		if (strLength(svar10) > 0) {
+			svar10 = concat(svar10, ", ");
+		}
+		svar10 = concat(svar10, svar8);
+	}
+	if (stringMethod4107(svar9, "") != 0) {
+		if (strLength(svar10) > 0) {
+			svar10 = concat(svar10, ", ");
+		}
+		svar10 = concat(svar10, svar9);
+	}
+	setWidgetText(new WidgetPointer(arg0), svar10);
+	return;
+}

@@ -1,0 +1,16 @@
+void script_1503() {
+	deleteAllExtraChilds(new WidgetPointer(728,1));
+	script_1088(47710209, 22);
+	deleteAllExtraChilds(new WidgetPointer(728,6));
+	script_333(47710214, 4734771, 3156258, 0, 0);
+	script_2647(47710214);
+	deleteAllExtraChilds(new WidgetPointer(728,9));
+	script_333(47710217, 4734771, 3156258, 0, 0);
+	script_1516(47710217, 380, 100);
+	script_2647(47710217);
+	deleteAllExtraChilds(new WidgetPointer(728,11));
+	script_2647(47710219);
+	script_1506();
+	setScriptCallOnGlobalConfigChange(1505, 1014, 1018, 2, "Y", new WidgetPointer(728,1));
+	return;
+}

@@ -1,0 +1,44 @@
+void script_5047(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	int ivar8;
+	int ivar9;
+	int ivar10;
+	ivar5 = multiply(arg0, add(add(112, 2), 2));
+	setWidgetScrollMax(ivar5, ivar5, new WidgetPointer(1111,15));
+	ivar6 = subtract(ivar5, getWidgetActualWidth(new WidgetPointer(1111,15)));
+	if (cs2method2600(new WidgetPointer(1111,15)) > ivar6) {
+		cs2method2100(ivar6, cs2method2601(new WidgetPointer(1111,15)), new WidgetPointer(1111,15));
+	}
+	if (cs2method2601(new WidgetPointer(1111,15)) > ivar6) {
+		cs2method2100(cs2method2600(new WidgetPointer(1111,15)), ivar6, new WidgetPointer(1111,15));
+	}
+	setWidgetSize(ivar5, ivar5, 0, 0, new WidgetPointer(1111,16));
+	setWidgetSize(ivar5, ivar5, 0, 0, new WidgetPointer(1111,18));
+	ivar7 = 0;
+	ivar8 = subtract(arg0, 1);
+	ivar9 = 0;
+	ivar10 = arg1;
+	while (ivar10 < arg2) {
+		ivar9 = subtract(ivar5, multiply(add(add(ivar10, 2), 1), arg0));
+		while (ivar7 < 112) {
+			if (setWidgetRegister(new WidgetPointer(1111,16), add(multiply(ivar10, 112), ivar7))) {
+				setWidgetSize(ivar8, ivar8, 0, 0);
+				setWidgetPosition(multiply(add(ivar7, 2), arg0), ivar9, 0, 0);
+				cs2method1303(divide(arg0, 2));
+			}
+			ivar7 = add(ivar7, 1);
+		}
+		ivar7 = 0;
+		ivar10 = add(ivar10, 1);
+	}
+	if (arg1 <= 0) {
+		script_5053(arg3, arg4);
+		ivar9 = subtract(multiply(arg0, 2), 3);
+		setWidgetPosition(ivar9, ivar9, 0, 0, new WidgetPointer(1111,17));
+		ivar9 = add(multiply(arg0, 112), 5);
+		setWidgetSize(ivar9, ivar9, 0, 0, new WidgetPointer(1111,17));
+	}
+	return;
+}

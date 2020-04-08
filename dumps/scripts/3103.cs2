@@ -1,0 +1,17 @@
+void script_3103() {
+	script_3102();
+	script_3113();
+	script_3125(59637815, 1, 0, "Descending world number", "Ascending world number");
+	script_3125(59637790, 3, 2, "Descending player count", "Ascending player count");
+	script_3125(59637812, 5, 4, "Descending activity", "Ascending activity");
+	script_3125(59637809, 9, 8, "Descending type", "Ascending type");
+	script_3125(59637807, 7, 6, "Descending LootShare", "Ascending LootShare");
+	script_3125(59637805, 11, 10, "Descending ping", "Ascending ping");
+	script_3116();
+	if (((boolean)cs2method5420())) {
+		script_3143(0, "Please choose a game world from the list." + "<br>" + "This will cause the game applet to reload.");
+	} else {
+		script_3143(0, "Please choose a game world from the list.");
+	}
+	return;
+}

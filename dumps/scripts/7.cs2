@@ -1,0 +1,18 @@
+void script_7() {
+	int ivar0;
+	int ivar1;
+	ivar0 = subtract(globalint_10, 100);
+	globalint_10 = 0;
+	if ((ivar0 < -1) || (ivar0 == script_1305())) {
+		return;
+	}
+	ivar1 = script_8(ivar0);
+	if (ivar1 == -1) {
+		return;
+	}
+	if (isWidgetOpen(new WidgetPointer(ivar1))) {
+		return;
+	}
+	script_71(ivar0);
+	return;
+}

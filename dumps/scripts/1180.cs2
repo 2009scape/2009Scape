@@ -1,0 +1,18 @@
+void script_1180() {
+	if (((boolean)bitconfig_7232)) {
+		if (((boolean)getLanguage())) {
+			setWidgetSprite(5570, new WidgetPointer(548,0));
+			setWidgetSprite(5570, new WidgetPointer(746,229));
+		} else {
+			setWidgetSprite(5568, new WidgetPointer(548,0));
+			setWidgetSprite(5568, new WidgetPointer(746,229));
+		}
+	} else if (((boolean)getLanguage())) {
+		setWidgetSprite(2714, new WidgetPointer(548,0));
+		setWidgetSprite(2714, new WidgetPointer(746,229));
+	} else {
+		setWidgetSprite(2730, new WidgetPointer(548,0));
+		setWidgetSprite(2730, new WidgetPointer(746,229));
+	}
+	return;
+}

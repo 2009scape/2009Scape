@@ -1,0 +1,48 @@
+void script_789(int arg0) {
+	flow_0:
+		IF ((((((((arg0 == 74645541) || (arg0 == 74645542)) || (arg0 == 74645543)) || (arg0 == 74645545)) || (arg0 == 74645553)) || (arg0 == 74645555)) || (arg0 == 74645556)) || (arg0 == 74645554)) 
+			GOTO	flow_1
+		IF ((arg0 == 74645557) && isMember()) 
+			GOTO	flow_2
+		GOTO	flow_3
+	flow_1:
+	flow_2:
+		return;
+	flow_3:
+		if ((arg0 == 74645557) && (bitconfig_4302 < 110)) {
+			return;
+		}
+		if ((arg0 == 74645542) && (standart_config_80 < 4)) {
+			return;
+		}
+		if ((arg0 == 74645556) && ((boolean)bitconfig_2187)) {
+			return;
+		}
+		setWidgetIsHidden(true, new WidgetPointer(1139,4));
+		setWidgetIsHidden(true, new WidgetPointer(1139,21));
+		setWidgetIsHidden(true, new WidgetPointer(1139,22));
+		setWidgetIsHidden(true, new WidgetPointer(1139,23));
+		setWidgetIsHidden(true, new WidgetPointer(1139,24));
+		setWidgetIsHidden(true, new WidgetPointer(1139,25));
+		setWidgetIsHidden(true, new WidgetPointer(1139,27));
+		setWidgetIsHidden(true, new WidgetPointer(1139,5));
+		setWidgetIsHidden(true, new WidgetPointer(1139,6));
+		setWidgetIsHidden(true, new WidgetPointer(1139,8));
+		setWidgetIsHidden(true, new WidgetPointer(1139,26));
+		setWidgetIsHidden(true, new WidgetPointer(1139,9));
+		setWidgetIsHidden(true, new WidgetPointer(1139,12));
+		setWidgetIsHidden(true, new WidgetPointer(1139,13));
+		setWidgetIsHidden(true, new WidgetPointer(1139,7));
+		setWidgetIsHidden(true, new WidgetPointer(1139,15));
+		setWidgetIsHidden(true, new WidgetPointer(1139,16));
+		setWidgetIsHidden(true, new WidgetPointer(1139,17));
+		setWidgetIsHidden(true, new WidgetPointer(1139,18));
+		setWidgetIsHidden(true, new WidgetPointer(1139,10));
+		setWidgetIsHidden(true, new WidgetPointer(1139,11));
+		setWidgetIsHidden(true, new WidgetPointer(1139,19));
+		setWidgetIsHidden(true, new WidgetPointer(1139,14));
+		setWidgetIsHidden(true, new WidgetPointer(1139,20));
+		setWidgetIsHidden(true, new WidgetPointer(1139,28));
+		setWidgetIsHidden(false, new WidgetPointer(arg0));
+		return;
+}

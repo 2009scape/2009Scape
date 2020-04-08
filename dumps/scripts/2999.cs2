@@ -1,0 +1,236 @@
+void script_2999() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	int ivar7;
+	string svar0;
+	string svar1;
+	string svar2;
+	string svar3;
+	string svar4;
+	string svar5;
+	int stack_dump0;
+	cs2func_script_3011_struct(7,0,0) structdump_1;
+	cs2func_script_3011_struct(7,0,0) structdump_2;
+	cs2func_script_3011_struct(7,0,0) structdump_3;
+	cs2func_script_3011_struct(7,0,0) structdump_4;
+	cs2func_script_3011_struct(7,0,0) structdump_5;
+	cs2func_script_3011_struct(7,0,0) structdump_6;
+	cs2func_script_3011_struct(7,0,0) structdump_7;
+	cs2func_script_3011_struct(7,0,0) structdump_8;
+	cs2func_script_3011_struct(7,0,0) structdump_9;
+	cs2func_script_3011_struct(7,0,0) structdump_10;
+	opcStruct6901(3,0,0) structdump_11;
+	cs2func_script_3011_struct(7,0,0) structdump_12;
+	cs2func_script_3011_struct(7,0,0) structdump_13;
+	cs2func_script_3011_struct(7,0,0) structdump_14;
+	svar0 = "";
+	svar1 = "";
+	svar2 = "";
+	svar3 = "";
+	svar0 = "email-register";
+	switch (cs2method6906()) {
+		case 0:
+			setWidgetSprite(2672, new WidgetPointer(907,34));
+			stack_dump0 = 0;
+			structdump_1 = script_3011(stack_dump0);
+			script_3010(structdump_1.intpart_0, structdump_1.intpart_1, structdump_1.intpart_2, structdump_1.intpart_3, structdump_1.intpart_4, structdump_1.intpart_5, structdump_1.intpart_6);
+			setWidgetText(new WidgetPointer(907,39), "Unregistered");
+			svar2 = "You do not currently have an email address registered. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to register.";
+			svar3 = "You do not currently have an email address registered. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to register.";
+			setWidgetText(new WidgetPointer(907,40), svar2);
+			setScriptCallOnMouseEntered(68, new WidgetPointer(-32768,3), svar3, "Is", new WidgetPointer(907,40));
+			setScriptCallOnMouseExit(68, new WidgetPointer(-32768,3), svar2, "Is", new WidgetPointer(907,40));
+			svar1 = "set_address.ws";
+			break;
+		case 1:
+			setWidgetSprite(2672, new WidgetPointer(907,34));
+			stack_dump0 = 0;
+			structdump_2 = script_3011(stack_dump0);
+			script_3010(structdump_2.intpart_0, structdump_2.intpart_1, structdump_2.intpart_2, structdump_2.intpart_3, structdump_2.intpart_4, structdump_2.intpart_5, structdump_2.intpart_6);
+			setWidgetText(new WidgetPointer(907,39), "Pending Parental Confirmation");
+			svar2 = "You have registered your email address. We are currently waiting for your parent to confirm their email address. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to submit a confirmation code.";
+			svar3 = "You have registered your email address. We are currently waiting for your parent to confirm their email address. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to submit a confirmation code.";
+			setWidgetText(new WidgetPointer(907,40), svar2);
+			setScriptCallOnMouseEntered(68, new WidgetPointer(-32768,3), svar3, "Is", new WidgetPointer(907,40));
+			setScriptCallOnMouseExit(68, new WidgetPointer(-32768,3), svar2, "Is", new WidgetPointer(907,40));
+			svar1 = "enter_code.ws";
+			break;
+		case 2:
+			setWidgetSprite(2672, new WidgetPointer(907,34));
+			stack_dump0 = 0;
+			structdump_3 = script_3011(stack_dump0);
+			script_3010(structdump_3.intpart_0, structdump_3.intpart_1, structdump_3.intpart_2, structdump_3.intpart_3, structdump_3.intpart_4, structdump_3.intpart_5, structdump_3.intpart_6);
+			setWidgetText(new WidgetPointer(907,39), "Pending Confirmation");
+			svar2 = "Your email address is currently pending confirmation. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to submit a confirmation code.";
+			svar3 = "Your email address is currently pending confirmation. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to submit a confirmation code.";
+			setWidgetText(new WidgetPointer(907,40), svar2);
+			setScriptCallOnMouseEntered(68, new WidgetPointer(-32768,3), svar3, "Is", new WidgetPointer(907,40));
+			setScriptCallOnMouseExit(68, new WidgetPointer(-32768,3), svar2, "Is", new WidgetPointer(907,40));
+			svar1 = "enter_code.ws";
+			break;
+		case 3:
+			setWidgetSprite(2669, new WidgetPointer(907,34));
+			stack_dump0 = 0;
+			structdump_4 = script_3011(stack_dump0);
+			script_3008(structdump_4.intpart_0, structdump_4.intpart_1, structdump_4.intpart_2, structdump_4.intpart_3, structdump_4.intpart_4, structdump_4.intpart_5, structdump_4.intpart_6);
+			setWidgetText(new WidgetPointer(907,39), "Registered");
+			svar2 = "Your email address is now registered. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to view or change your email preferences.";
+			svar3 = "Your email address is now registered. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to view or change your email preferences.";
+			setWidgetText(new WidgetPointer(907,40), svar2);
+			setScriptCallOnMouseEntered(68, new WidgetPointer(-32768,3), svar3, "Is", new WidgetPointer(907,40));
+			setScriptCallOnMouseExit(68, new WidgetPointer(-32768,3), svar2, "Is", new WidgetPointer(907,40));
+			svar1 = "change_settings.ws";
+			break;
+		case 4:
+			setWidgetSprite(2669, new WidgetPointer(907,34));
+			stack_dump0 = 0;
+			structdump_5 = script_3011(stack_dump0);
+			script_3008(structdump_5.intpart_0, structdump_5.intpart_1, structdump_5.intpart_2, structdump_5.intpart_3, structdump_5.intpart_4, structdump_5.intpart_5, structdump_5.intpart_6);
+			setWidgetText(new WidgetPointer(907,39), "No longer registered");
+			svar2 = "Your account no longer has a registered email address. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to register again.";
+			svar3 = "Your account no longer has a registered email address. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to register again.";
+			setWidgetText(new WidgetPointer(907,40), svar2);
+			setScriptCallOnMouseEntered(68, new WidgetPointer(-32768,3), svar3, "Is", new WidgetPointer(907,40));
+			setScriptCallOnMouseExit(68, new WidgetPointer(-32768,3), svar2, "Is", new WidgetPointer(907,40));
+			svar1 = "set_address.ws";
+	}
+	setScriptCallOnMousePressed(3088, svar0, svar1, 1, "ss1", new WidgetPointer(907,40));
+	script_3376(59441192);
+	ivar0 = getRecoveryQuestionsDate();
+	svar0 = "recovery_questions";
+	if (((boolean)ivar0)) {
+		setWidgetSprite(2672, new WidgetPointer(907,22));
+		stack_dump0 = 1;
+		structdump_6 = script_3011(stack_dump0);
+		script_3010(structdump_6.intpart_0, structdump_6.intpart_1, structdump_6.intpart_2, structdump_6.intpart_3, structdump_6.intpart_4, structdump_6.intpart_5, structdump_6.intpart_6);
+		setWidgetText(new WidgetPointer(907,27), "Not Set");
+		svar2 = "You do not have any recovery questions set. It will be more difficult to recover your password if it gets stolen or you forget it. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to set your recovery questions.";
+		svar3 = "You do not have any recovery questions set. It will be more difficult to recover your password if it gets stolen or you forget it. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to set your recovery questions.";
+		setWidgetText(new WidgetPointer(907,28), svar2);
+		setScriptCallOnMouseEntered(68, new WidgetPointer(-32768,3), svar3, "Is", new WidgetPointer(907,28));
+		setScriptCallOnMouseExit(68, new WidgetPointer(-32768,3), svar2, "Is", new WidgetPointer(907,28));
+		svar1 = "add_recoveries.ws";
+	} else if (ivar0 < add(getCurrentDaysSinceLaunch(), 1)) {
+		setWidgetSprite(2669, new WidgetPointer(907,22));
+		stack_dump0 = 1;
+		structdump_7 = script_3011(stack_dump0);
+		script_3008(structdump_7.intpart_0, structdump_7.intpart_1, structdump_7.intpart_2, structdump_7.intpart_3, structdump_7.intpart_4, structdump_7.intpart_5, structdump_7.intpart_6);
+		setWidgetText(new WidgetPointer(907,27), "Set");
+		svar2 = "Recovery questions last set: " + timeToStr(ivar0) + ". Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to change your recovery questions.";
+		svar3 = "Recovery questions last set: " + timeToStr(ivar0) + ". Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to change your recovery questions.";
+		setWidgetText(new WidgetPointer(907,28), svar2);
+		setScriptCallOnMouseEntered(68, new WidgetPointer(-32768,3), svar3, "Is", new WidgetPointer(907,28));
+		setScriptCallOnMouseExit(68, new WidgetPointer(-32768,3), svar2, "Is", new WidgetPointer(907,28));
+		svar1 = "add_recoveries.ws";
+	} else {
+		setWidgetSprite(2672, new WidgetPointer(907,22));
+		stack_dump0 = 1;
+		structdump_8 = script_3011(stack_dump0);
+		script_3010(structdump_8.intpart_0, structdump_8.intpart_1, structdump_8.intpart_2, structdump_8.intpart_3, structdump_8.intpart_4, structdump_8.intpart_5, structdump_8.intpart_6);
+		setWidgetText(new WidgetPointer(907,27), "Changed");
+		svar2 = "Your new recovery questions will become active on " + timeToStr(ivar0) + ". If you didn't request this, cancel it and change your password immediately. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to cancel.";
+		svar3 = "Your new recovery questions will become active on " + timeToStr(ivar0) + ". If you didn't request this, cancel it and change your password immediately. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to cancel.";
+		setWidgetText(new WidgetPointer(907,28), svar2);
+		setScriptCallOnMouseEntered(68, new WidgetPointer(-32768,3), svar3, "Is", new WidgetPointer(907,28));
+		setScriptCallOnMouseExit(68, new WidgetPointer(-32768,3), svar2, "Is", new WidgetPointer(907,28));
+		svar1 = "cancel_recoveries.ws";
+	}
+	setScriptCallOnMousePressed(3088, svar0, svar1, 1, "ss1", new WidgetPointer(907,28));
+	script_3376(59441180);
+	ivar1 = cs2method6903();
+	if (((boolean)ivar1)) {
+		setWidgetSprite(2669, new WidgetPointer(907,10));
+		stack_dump0 = 2;
+		structdump_9 = script_3011(stack_dump0);
+		script_3008(structdump_9.intpart_0, structdump_9.intpart_1, structdump_9.intpart_2, structdump_9.intpart_3, structdump_9.intpart_4, structdump_9.intpart_5, structdump_9.intpart_6);
+		setWidgetText(new WidgetPointer(907,15), intToStr(ivar1) + " Unread");
+		svar2 = "You have no unread messages. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to open your Message Centre.";
+		svar3 = "You have no unread messages. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to open your Message Centre.";
+		setWidgetText(new WidgetPointer(907,16), svar2);
+		setScriptCallOnMouseEntered(68, new WidgetPointer(-32768,3), svar3, "Is", new WidgetPointer(907,16));
+		setScriptCallOnMouseExit(68, new WidgetPointer(-32768,3), svar2, "Is", new WidgetPointer(907,16));
+	} else {
+		setWidgetSprite(2672, new WidgetPointer(907,10));
+		stack_dump0 = 2;
+		structdump_10 = script_3011(stack_dump0);
+		script_3010(structdump_10.intpart_0, structdump_10.intpart_1, structdump_10.intpart_2, structdump_10.intpart_3, structdump_10.intpart_4, structdump_10.intpart_5, structdump_10.intpart_6);
+		setWidgetText(new WidgetPointer(907,15), intToStr(ivar1) + " Unread");
+		if (((boolean)ivar1)) {
+			svar2 = "You have 1 unread message. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to open your Message Centre.";
+			svar3 = "You have 1 unread message. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to open your Message Centre.";
+		} else {
+			svar2 = "You have " + intToStr(ivar1) + " unread messages. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to open your Message Centre.";
+			svar3 = "You have " + intToStr(ivar1) + " unread messages. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to open your Message Centre.";
+		}
+		setWidgetText(new WidgetPointer(907,16), svar2);
+		setScriptCallOnMouseEntered(68, new WidgetPointer(-32768,3), svar3, "Is", new WidgetPointer(907,16));
+		setScriptCallOnMouseExit(68, new WidgetPointer(-32768,3), svar2, "Is", new WidgetPointer(907,16));
+	}
+	script_3376(59441168);
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	structdump_11 = cs2method6901();
+	ivar2 = structdump_11.intpart_2;
+	ivar4 = structdump_11.intpart_1;
+	ivar3 = structdump_11.intpart_0;
+	svar4 = minutesToUtcTime(ivar3);
+	ivar5 = 0;
+	ivar6 = 0;
+	ivar7 = 0;
+	svar5 = "";
+	if (((boolean)ivar2)) {
+		setWidgetSprite(2669, new WidgetPointer(907,48));
+		stack_dump0 = 3;
+		structdump_12 = script_3011(stack_dump0);
+		script_3008(structdump_12.intpart_0, structdump_12.intpart_1, structdump_12.intpart_2, structdump_12.intpart_3, structdump_12.intpart_4, structdump_12.intpart_5, structdump_12.intpart_6);
+		setWidgetText(new WidgetPointer(907,53), "Subscription Active");
+		svar2 = "You have an active subscription. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to view your account information. Make sure you play on a members' world to enjoy all of your members' benefits.";
+		svar3 = "You have an active subscription. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to view your account information. Make sure you play on a members' world to enjoy all of your members' benefits.";
+		setWidgetText(new WidgetPointer(907,54), svar2);
+		setScriptCallOnMouseEntered(68, new WidgetPointer(-32768,3), svar3, "Is", new WidgetPointer(907,54));
+		setScriptCallOnMouseExit(68, new WidgetPointer(-32768,3), svar2, "Is", new WidgetPointer(907,54));
+		svar0 = "billing_core";
+		svar1 = "userdetails.ws";
+	} else if (isSiteSettingsMembers()) {
+		ivar5 = divide(ivar4, 1440);
+		ivar6 = divide(mod(ivar4, 1440), 60);
+		ivar7 = mod(ivar4, 60);
+		if (add(add(ivar5, ivar6), ivar7) != 0) {
+			svar5 = " (in " + script_4582(ivar5, ivar6, ivar7) + ")";
+		}
+		setWidgetSprite(2669, new WidgetPointer(907,48));
+		stack_dump0 = 3;
+		structdump_13 = script_3011(stack_dump0);
+		script_3008(structdump_13.intpart_0, structdump_13.intpart_1, structdump_13.intpart_2, structdump_13.intpart_3, structdump_13.intpart_4, structdump_13.intpart_5, structdump_13.intpart_6);
+		setWidgetText(new WidgetPointer(907,53), "Expires " + svar4);
+		svar2 = "Your membership will expire on " + svar4 + svar5 + ". Renew now to avoid losing member status. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to renew.";
+		svar3 = "Your membership will expire on " + svar4 + svar5 + ". Renew now to avoid losing member status. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to renew.";
+		setWidgetText(new WidgetPointer(907,54), svar2);
+		setScriptCallOnMouseEntered(68, new WidgetPointer(-32768,3), svar3, "Is", new WidgetPointer(907,54));
+		setScriptCallOnMouseExit(68, new WidgetPointer(-32768,3), svar2, "Is", new WidgetPointer(907,54));
+		svar0 = "dob";
+		svar1 = "set_members_dob.ws";
+	} else {
+		setWidgetSprite(2672, new WidgetPointer(907,48));
+		stack_dump0 = 3;
+		structdump_14 = script_3011(stack_dump0);
+		script_3010(structdump_14.intpart_0, structdump_14.intpart_1, structdump_14.intpart_2, structdump_14.intpart_3, structdump_14.intpart_4, structdump_14.intpart_5, structdump_14.intpart_6);
+		setWidgetText(new WidgetPointer(907,53), "Not a Member");
+		svar2 = "You are not a member. Members get loads of extra benefits and features. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to become a member.";
+		svar3 = "You are not a member. Members get loads of extra benefits and features. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to become a member.";
+		setWidgetText(new WidgetPointer(907,54), svar2);
+		setScriptCallOnMouseEntered(68, new WidgetPointer(-32768,3), svar3, "Is", new WidgetPointer(907,54));
+		setScriptCallOnMouseExit(68, new WidgetPointer(-32768,3), svar2, "Is", new WidgetPointer(907,54));
+		svar0 = "dob";
+		svar1 = "set_members_dob.ws";
+	}
+	setScriptCallOnMousePressed(3088, svar0, svar1, 1, "ss1", new WidgetPointer(907,54));
+	script_3376(59441206);
+	return;
+}

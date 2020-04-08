@@ -1,0 +1,35 @@
+string script_5329(int arg0) {
+	switch (arg0) {
+		case 1:
+			return globalstring_139;
+		case 2:
+			return globalstring_141;
+		case 3:
+			return globalstring_191;
+		case 4:
+			return globalstring_192;
+		case 5:
+			return globalstring_193;
+		case 6:
+			return globalstring_289;
+		case 7:
+			return globalstring_290;
+		case 8:
+			return globalstring_291;
+		case 9:
+			return globalstring_297;
+		case 10:
+			return globalstring_298;
+		case 11:
+			return globalstring_299;
+		case 12:
+			return globalstring_300;
+		case 13:
+			return globalstring_301;
+		case 14:
+			return globalstring_302;
+		case 15:
+			return globalstring_303;
+	}
+	return "";
+}

@@ -1,0 +1,18 @@
+void script_3077(int arg0,int arg1,int arg2,int arg3,int arg4) {
+	script_2994(arg0, 0, 16, 32, 0, 0, arg1, 0, 0, 0, 0);
+	script_2994(arg0, 1, 32, 32, 16, 0, arg2, 0, 0, 0, 0);
+	setWidgetSize(32, 32, 1, 0);
+	script_2994(arg0, 2, 16, 32, 0, 0, arg1, 1, 0, 0, 0);
+	setWidgetPosition(0, 0, 2, 0);
+	script_2994(arg0, 3, 16, 32, 0, 0, arg3, 0, 0, 0, 0);
+	setWidgetHidden(1);
+	script_2994(arg0, 4, 32, 32, 16, 0, arg4, 0, 0, 0, 0);
+	setWidgetSize(32, 32, 1, 0);
+	setWidgetHidden(1);
+	script_2994(arg0, 5, 16, 32, 0, 0, arg3, 1, 0, 0, 0);
+	setWidgetPosition(0, 0, 2, 0);
+	setWidgetHidden(1);
+	setScriptCallOnMouseEntered(3078, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+	setScriptCallOnMouseExit(3080, new WidgetPointer(arg0), "I", new WidgetPointer(arg0));
+	return;
+}

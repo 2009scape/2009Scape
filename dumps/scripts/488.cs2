@@ -1,0 +1,42 @@
+int script_488(int arg0) {
+	flow_0:
+		SWITCH (arg0) {
+			case 1:
+				 GOTO flow_1
+			case 2:
+				 GOTO flow_2
+			case 3:
+				 GOTO flow_3
+			case 4:
+				 GOTO flow_4
+			case 5:
+				 GOTO flow_5
+			case 6:
+				 GOTO flow_6
+			case 7:
+				 GOTO flow_7
+			case 8:
+				 GOTO flow_8
+			case 9:
+				 GOTO flow_9
+		}
+		return -1;
+	flow_1:
+		return 293;
+	flow_2:
+		return 299;
+	flow_3:
+		return 300;
+	flow_4:
+		return 301;
+	flow_5:
+		return 305;
+	flow_6:
+		return 1044;
+	flow_7:
+		return 1045;
+	flow_8:
+		return 1046;
+	flow_9:
+		return 1047;
+}

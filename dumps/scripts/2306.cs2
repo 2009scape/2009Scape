@@ -1,0 +1,15 @@
+void script_2306() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	ivar0 = 31;
+	ivar1 = 0;
+	ivar2 = 31;
+	if (getRunEnergy() >= 100) {
+		ivar1 = 0;
+	} else {
+		ivar1 = subtract(ivar0, divide(multiply(ivar0, getRunEnergy()), 100));
+	}
+	setWidgetSize(ivar2, ivar1, 0, 0, new WidgetPointer(750,4));
+	return;
+}

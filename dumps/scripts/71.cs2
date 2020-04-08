@@ -1,0 +1,35 @@
+void script_71(int arg0) {
+	int ivar1;
+	ivar1 = script_1305();
+	if ((arg0 == -1) && ((boolean)bitconfig_9030)) {
+		arg0 = 1;
+	}
+	globalint_168 = arg0;
+	if (arg0 == -1) {
+		if (getDisplayMode() >= 2) {
+			script_1306();
+		} else {
+			return;
+		}
+	}
+	if (((boolean)script_2709()) && (((arg0 == 9) || (arg0 == 11)) || (arg0 == 10))) {
+		return;
+	}
+	if (ivar1 > -1) {
+		if (ivar1 == arg0) {
+			if (getDisplayMode() >= 2) {
+				script_1306();
+				script_1387(arg0);
+			} else {
+				return;
+			}
+		} else {
+			script_1306();
+			script_1387(arg0);
+		}
+	} else {
+		script_1306();
+		script_1387(arg0);
+	}
+	return;
+}

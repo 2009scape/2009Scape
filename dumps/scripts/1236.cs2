@@ -1,0 +1,9 @@
+void script_1236() {
+	globalint_1063 = -1;
+	setScriptCallOnConfigChange(1716, 1584, 1, "Y", new WidgetPointer(271,8));
+	setScriptCallOnSkillChange(1705, 0, 2, 1, 4, 6, 5, "Y", new WidgetPointer(271,8));
+	script_1717();
+	deleteAllExtraChilds(new WidgetPointer(271,6));
+	script_1704();
+	return;
+}

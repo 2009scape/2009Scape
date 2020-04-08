@@ -1,0 +1,16 @@
+void script_1197(int arg0) {
+	if (arg0 >= 6) {
+		return;
+	}
+	if (((boolean)arg0)) {
+		cameraMethod5502(0, arg0, 100, 400, 1, arg0);
+		setScriptCallOnMinimapRelatedSetting3(1196, add(arg0, 1), getClientCycle(), "ii", new WidgetPointer(888,0));
+	} else if (arg0 == 5) {
+		cameraMethod5502(0, arg0, 400, 10, 1, arg0);
+		setScriptCallOnMinimapRelatedSetting3(1196, add(arg0, 1), getClientCycle(), "ii", new WidgetPointer(888,0));
+	} else {
+		cameraMethod5502(0, arg0, 400, 400, 1, arg0);
+		setScriptCallOnMinimapRelatedSetting3(1196, add(arg0, 1), getClientCycle(), "ii", new WidgetPointer(888,0));
+	}
+	return;
+}

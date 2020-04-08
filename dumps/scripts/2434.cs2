@@ -1,0 +1,17 @@
+void script_2434(int arg0) {
+	globalint_815 = divide(multiply(arg0, 300), 10);
+	if (globalint_815 > 0) {
+		if (getDisplayMode() < 2) {
+			setScriptCallOnGameloop(2435, "", new WidgetPointer(548,12));
+			setWidgetIsHidden(false, new WidgetPointer(548,13));
+			setWidgetIsHidden(false, new WidgetPointer(548,14));
+		} else {
+			setScriptCallOnGameloop(2435, "", new WidgetPointer(746,14));
+			setWidgetIsHidden(false, new WidgetPointer(746,169));
+			setWidgetIsHidden(false, new WidgetPointer(746,168));
+		}
+	} else {
+		script_2436();
+	}
+	return;
+}

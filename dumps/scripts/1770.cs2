@@ -1,0 +1,76 @@
+void script_1770() {
+	if (((boolean)globalint_246)) {
+		setWidgetSprite(699, new WidgetPointer(791,19));
+		script_1783(51838998, 51839029, -1, -1);
+	} else {
+		setWidgetSprite(697, new WidgetPointer(791,19));
+	}
+	if (((boolean)globalint_246)) {
+		setWidgetSprite(699, new WidgetPointer(791,24));
+		script_1783(51838998, 51839029, 51839000, -1);
+	} else {
+		setWidgetSprite(697, new WidgetPointer(791,24));
+	}
+	if (globalint_246 == 2) {
+		setWidgetSprite(699, new WidgetPointer(791,27));
+		script_1783(51838998, 51839029, 51839003, -1);
+	} else {
+		setWidgetSprite(697, new WidgetPointer(791,27));
+	}
+	if (globalint_246 == 3) {
+		setWidgetSprite(699, new WidgetPointer(791,30));
+		script_1783(51838998, 51839029, 51839006, -1);
+	} else {
+		setWidgetSprite(697, new WidgetPointer(791,30));
+	}
+	if (globalint_246 == 4) {
+		setWidgetSprite(699, new WidgetPointer(791,33));
+		script_1783(51838998, 51839029, 51839009, -1);
+	} else {
+		setWidgetSprite(697, new WidgetPointer(791,33));
+	}
+	if (globalint_246 == 5) {
+		setWidgetSprite(699, new WidgetPointer(791,36));
+		script_1783(51838998, 51839029, 51839012, -1);
+	} else {
+		setWidgetSprite(697, new WidgetPointer(791,36));
+	}
+	if (globalint_246 == 6) {
+		setWidgetSprite(699, new WidgetPointer(791,39));
+		script_1783(51838998, 51839029, 51839015, -1);
+	} else {
+		setWidgetSprite(697, new WidgetPointer(791,39));
+	}
+	if (globalint_246 == 7) {
+		setWidgetSprite(699, new WidgetPointer(791,42));
+		script_1783(51838998, 51839029, 51839018, -1);
+	} else {
+		setWidgetSprite(697, new WidgetPointer(791,42));
+	}
+	if (globalint_246 == 8) {
+		setWidgetSprite(699, new WidgetPointer(791,45));
+		script_1783(51838998, 51839029, 51839021, -1);
+	} else {
+		setWidgetSprite(697, new WidgetPointer(791,45));
+	}
+	if (globalint_246 == 9) {
+		setWidgetSprite(699, new WidgetPointer(791,48));
+		script_1783(51838998, 51839029, 51839024, -1);
+	} else {
+		setWidgetSprite(697, new WidgetPointer(791,48));
+	}
+	if (globalint_246 == 10) {
+		setWidgetSprite(699, new WidgetPointer(791,51));
+		script_1783(51838998, 51839029, 51839027, -1);
+	} else {
+		setWidgetSprite(697, new WidgetPointer(791,51));
+	}
+	if (globalint_246 == 15) {
+		setWidgetSprite(699, new WidgetPointer(791,55));
+		script_1783(51838998, 51839029, -1, -1);
+	} else {
+		setWidgetSprite(697, new WidgetPointer(791,55));
+	}
+	script_1784();
+	return;
+}

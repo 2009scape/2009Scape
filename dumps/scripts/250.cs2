@@ -1,0 +1,6 @@
+void script_250(int arg0) {
+	if (((boolean)mod(getClientCycle(), 5))) {
+		script_251(arg0);
+	}
+	return;
+}

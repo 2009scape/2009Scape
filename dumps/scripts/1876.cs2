@@ -1,0 +1,8 @@
+void script_1876(int arg0,int arg1) {
+	if ((mod(subtract(getClientCycle(), arg0), 40) < 20) && hasWindowFocus()) {
+		setWidgetIsHidden(false, new WidgetPointer(arg1));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(arg1));
+	}
+	return;
+}

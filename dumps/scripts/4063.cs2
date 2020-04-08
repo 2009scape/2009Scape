@@ -1,0 +1,22 @@
+void script_4063() {
+	if (((boolean)bitconfig_8669)) {
+		return;
+	}
+	switch (bitconfig_8668) {
+		case 1:
+			script_4065(69337113);
+			break;
+		case 4:
+			script_4065(69337112);
+			break;
+		case 5:
+			script_4065(69337110);
+			break;
+		case 3:
+			script_4065(69337111);
+			break;
+		case 2:
+			script_4065(69337114);
+	}
+	return;
+}

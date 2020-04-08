@@ -1,0 +1,6 @@
+int script_2709() {
+	if (cs2method6910() == 8388605) {
+		return 0;
+	}
+	return 1;
+}

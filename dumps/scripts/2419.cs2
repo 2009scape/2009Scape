@@ -1,0 +1,45 @@
+void script_2419() {
+	if (globalint_806 > 0) {
+		setWidgetIsHidden(true, new WidgetPointer(765,11));
+	}
+	if (globalint_806 > 1) {
+		setWidgetModel(46964, new WidgetPointer(765,5));
+	}
+	if (globalint_806 > 2) {
+		if (bitconfig_6180 == 75) {
+			setWidgetModel(46956, new WidgetPointer(765,5));
+			setWidgetIsHidden(true, new WidgetPointer(765,15));
+		} else {
+			setWidgetModel(46966, new WidgetPointer(765,5));
+			setWidgetIsHidden(true, new WidgetPointer(765,36));
+		}
+	}
+	if (globalint_806 > 3) {
+		if (bitconfig_6180 == 75) {
+			setWidgetModel(46965, new WidgetPointer(765,5));
+			setWidgetIsHidden(true, new WidgetPointer(765,17));
+		} else {
+			setWidgetModel(46957, new WidgetPointer(765,5));
+			setWidgetIsHidden(true, new WidgetPointer(765,37));
+			setWidgetContextMenuOption(1, new WidgetPointer(765,5), "Inspect");
+		}
+	}
+	if (((boolean)bitconfig_6194)) {
+		setWidgetAnimation(11762, new WidgetPointer(765,10));
+	} else if (((boolean)bitconfig_6194)) {
+		setWidgetAnimation(11761, new WidgetPointer(765,10));
+	} else if (bitconfig_6194 == 2) {
+		setWidgetAnimation(11760, new WidgetPointer(765,10));
+	} else if (bitconfig_6194 == 3) {
+		setWidgetAnimation(11759, new WidgetPointer(765,10));
+	} else if (bitconfig_6194 == 4) {
+		setWidgetAnimation(11763, new WidgetPointer(765,10));
+	} else if (bitconfig_6194 == 5) {
+		setWidgetAnimation(11764, new WidgetPointer(765,10));
+	} else {
+		if (bitconfig_6194 == 6) {
+			setWidgetAnimation(11765, new WidgetPointer(765,10));
+		}
+	}
+	return;
+}

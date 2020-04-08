@@ -1,0 +1,4 @@
+void script_2428(int arg0) {
+	setItemOnWidgetMethod2200(cs2method_3408(105, 111, 172, globalint_810), 72, new WidgetPointer(arg0));
+	return;
+}

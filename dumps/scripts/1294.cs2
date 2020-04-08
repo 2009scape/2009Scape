@@ -1,0 +1,59 @@
+void script_1294() {
+	if (isBitFlagged(standart_config_383, 1)) {
+		setWidgetModel(4912, new WidgetPointer(144,134));
+	}
+	if (isBitFlagged(standart_config_383, 2)) {
+		setWidgetModel(4912, new WidgetPointer(144,135));
+	}
+	if (isBitFlagged(standart_config_383, 3)) {
+		setWidgetModel(4913, new WidgetPointer(144,136));
+	}
+	if (isBitFlagged(standart_config_383, 4)) {
+		setWidgetModel(4912, new WidgetPointer(144,137));
+	}
+	if (isBitFlagged(standart_config_383, 5)) {
+		setWidgetModel(4912, new WidgetPointer(144,138));
+	}
+	if (isBitFlagged(standart_config_383, 6)) {
+		setWidgetModel(4913, new WidgetPointer(144,139));
+	}
+	if (isBitFlagged(standart_config_383, 7)) {
+		setWidgetModel(4913, new WidgetPointer(144,140));
+	}
+	if (isBitFlagged(standart_config_383, 8)) {
+		setWidgetModel(4912, new WidgetPointer(144,141));
+	}
+	if (standart_config_383 > 8191) {
+		setWidgetIsHidden(true, new WidgetPointer(144,186));
+		setWidgetSprite(296, new WidgetPointer(144,146));
+	}
+	if (isBitFlagged(standart_config_383, 14)) {
+		setWidgetModel(4910, new WidgetPointer(144,174));
+		setWidgetAnimation(1456, new WidgetPointer(144,174));
+	}
+	if (isBitFlagged(standart_config_383, 15)) {
+		setWidgetModel(4910, new WidgetPointer(144,172));
+		setWidgetAnimation(1456, new WidgetPointer(144,172));
+	}
+	if (isBitFlagged(standart_config_383, 16)) {
+		setWidgetModel(4910, new WidgetPointer(144,176));
+		setWidgetAnimation(1456, new WidgetPointer(144,176));
+	}
+	if (isBitFlagged(standart_config_383, 17)) {
+		setWidgetModel(4910, new WidgetPointer(144,178));
+		setWidgetAnimation(1455, new WidgetPointer(144,178));
+	}
+	if (isBitFlagged(standart_config_383, 18)) {
+		setWidgetModel(4910, new WidgetPointer(144,180));
+		setWidgetAnimation(1455, new WidgetPointer(144,180));
+	}
+	if (isBitFlagged(standart_config_383, 19)) {
+		setWidgetModel(4910, new WidgetPointer(144,183));
+		setWidgetAnimation(1453, new WidgetPointer(144,183));
+	}
+	if (isBitFlagged(standart_config_383, 20)) {
+		setWidgetModel(4910, new WidgetPointer(144,185));
+		setWidgetAnimation(1453, new WidgetPointer(144,185));
+	}
+	return;
+}

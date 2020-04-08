@@ -1,0 +1,43 @@
+void script_2920(int arg0,int arg1,string arg2) {
+	openInterface(59375696, 914);
+	script_3181();
+	if (strLength(arg2) > 0) {
+		globalstring_277 = strRemoveEntities(arg2);
+	} else {
+		globalstring_277 = "";
+	}
+	setWidgetText(new WidgetPointer(914,27), globalstring_277);
+	if (isWidgetHidden(cs2method_3408(105, 73, 941, 5))) {
+		script_3161(0);
+	}
+	setScriptCallOnKeyPress(3185, -2147483640, false, new WidgetPointer(-32768,3), "izI", new WidgetPointer(914,27));
+	setScriptCallOnClickContextMenu(3182, "", new WidgetPointer(914,16));
+	globalint_1097 = strLength(globalstring_277);
+	setScriptCallOnMousePressed(1878, -2147483647, new WidgetPointer(914,27), new WidgetPointer(914,28), "iII", new WidgetPointer(914,27));
+	script_1879(59899931, 59899932, globalstring_277);
+	setWidgetIsHidden(true, new WidgetPointer(914,28));
+	if (((boolean)arg0)) {
+		if (((boolean)globalint_6)) {
+			setWidgetSprite(4084, new WidgetPointer(914,23));
+		} else {
+			setWidgetSprite(4086, new WidgetPointer(914,23));
+		}
+		if ((arg1 == 5) || (arg1 == 6)) {
+			setWidgetText(new WidgetPointer(914,22), "Suggest to mute this player for 48 hours");
+		} else {
+			setWidgetText(new WidgetPointer(914,22), "Mute this player for 48 hours");
+		}
+		setWidgetSize(add(getTextWidth(3793, getWidgetText(new WidgetPointer(914,22))), 18), getWidgetActualHeight(new WidgetPointer(914,21)), 0, 0, new WidgetPointer(914,21));
+		setWidgetPosition(16, 32, 0, 0, new WidgetPointer(914,14));
+		setWidgetPosition(21, 62, 0, 0, new WidgetPointer(914,15));
+		setWidgetPosition(299, 60, 0, 0, new WidgetPointer(914,16));
+		setWidgetIsHidden(false, new WidgetPointer(914,21));
+	} else {
+		setWidgetPosition(16, 42, 0, 0, new WidgetPointer(914,14));
+		setWidgetPosition(21, 82, 0, 0, new WidgetPointer(914,15));
+		setWidgetPosition(299, 80, 0, 0, new WidgetPointer(914,16));
+		setWidgetIsHidden(true, new WidgetPointer(914,21));
+	}
+	setWidgetIsHidden(false, new WidgetPointer(906,45));
+	return;
+}

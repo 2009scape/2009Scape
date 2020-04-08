@@ -1,0 +1,6 @@
+void script_710() {
+	if (globalint_41 == 5) {
+		script_84();
+	}
+	return;
+}

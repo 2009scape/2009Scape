@@ -1,0 +1,39 @@
+void script_3272(int arg0) {
+	switch (arg0) {
+		case 61145353:
+			if ((globalint_1184 != 1) && ((boolean)globalint_1198)) {
+				globalint_1184 = 1;
+			} else {
+				globalint_1184 = 0;
+			}
+			break;
+		case 61145354:
+			if ((globalint_1184 != 2) && ((boolean)globalint_1199)) {
+				globalint_1184 = 2;
+			} else {
+				globalint_1184 = 0;
+			}
+			break;
+		case 61145364:
+			if ((globalint_1184 != 3) && ((boolean)globalint_1200)) {
+				globalint_1184 = 3;
+			} else {
+				globalint_1184 = 0;
+			}
+			break;
+		case 61145374:
+			if ((globalint_1184 != 4) && ((boolean)globalint_1201)) {
+				globalint_1184 = 4;
+			} else {
+				globalint_1184 = 0;
+			}
+			break;
+		case 61145384:
+			if ((globalint_1184 != 5) && ((boolean)globalint_1202)) {
+				globalint_1184 = 5;
+			} else {
+				globalint_1184 = 0;
+			}
+	}
+	return;
+}

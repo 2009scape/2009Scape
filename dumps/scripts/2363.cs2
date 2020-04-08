@@ -1,0 +1,6 @@
+void script_2363(int arg0,int arg1) {
+	setWidgetScrollMax(200, globalint_773, new WidgetPointer(arg1));
+	cs2method2100(0, 0, new WidgetPointer(arg1));
+	script_31(arg0, arg1, 792, 789, 790, 791, 773, 788);
+	return;
+}

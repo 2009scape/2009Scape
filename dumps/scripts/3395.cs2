@@ -1,0 +1,14 @@
+void script_3395() {
+	int ivar0;
+	ivar0 = 0;
+	while (ivar0 < getExtraChildGap(new WidgetPointer(979,25))) {
+		if (setWidgetRegister(new WidgetPointer(979,25), ivar0)) {
+			cs2method2103(255);
+		}
+		ivar0 = add(ivar0, 1);
+	}
+	if (setWidgetRegister(new WidgetPointer(979,25), globalint_792)) {
+		cs2method2103(0);
+	}
+	return;
+}

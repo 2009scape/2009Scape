@@ -1,0 +1,13 @@
+void script_2096() {
+	if (globalint_654 < 100) {
+		globalint_654 = add(globalint_654, 1);
+	}
+	if (globalint_654 == 50) {
+		setWidgetRGB(new Color(255, 255, 255), new WidgetPointer(834,13));
+	}
+	if (globalint_654 == 100) {
+		setWidgetRGB(new Color(255, 35, 35), new WidgetPointer(834,13));
+		globalint_654 = 0;
+	}
+	return;
+}

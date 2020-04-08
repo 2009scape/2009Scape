@@ -1,0 +1,36 @@
+void script_726(int arg0,int arg1) {
+	if (isWidgetOpen(new WidgetPointer(arg1)) || (globalint_199 == -1)) {
+		deleteAllExtraChilds(new WidgetPointer(arg0));
+		globalint_199 = -1;
+		setScriptCallOnGameloop(-1, "", new WidgetPointer(arg0));
+		setScriptCallOnWidgetResize(-1, "", new WidgetPointer(arg0));
+		return;
+	}
+	setScriptCallOnGameloop(727, new WidgetPointer(arg0), new WidgetPointer(arg1), "II", new WidgetPointer(arg0));
+	setScriptCallOnWidgetResize(726, new WidgetPointer(arg0), new WidgetPointer(arg1), "II", new WidgetPointer(arg0));
+	createExtraChild(new WidgetPointer(arg0), 3, 0);
+	setWidgetPosition(0, 0, 3, 3);
+	setWidgetSize(getWidgetActualX(new WidgetPointer(arg1)), 16384, 0, 2);
+	setWidgetRGB(new Color(globalint_199));
+	cs2method2103(globalint_213);
+	setWidgetFilled(1);
+	createExtraChild(new WidgetPointer(arg0), 3, 1);
+	setWidgetPosition(0, 0, 5, 3);
+	setWidgetSize(subtract(getWidgetActualWidth(new WidgetPointer(arg0)), add(getWidgetActualX(new WidgetPointer(arg1)), getWidgetActualWidth(new WidgetPointer(arg1)))), 16384, 0, 2);
+	setWidgetRGB(new Color(globalint_199));
+	cs2method2103(globalint_213);
+	setWidgetFilled(1);
+	createExtraChild(new WidgetPointer(arg0), 3, 2);
+	setWidgetPosition(getWidgetActualX(new WidgetPointer(arg1)), 0, 0, 3);
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg1)), getWidgetActualY(new WidgetPointer(arg1)), 0, 0);
+	setWidgetRGB(new Color(globalint_199));
+	cs2method2103(globalint_213);
+	setWidgetFilled(1);
+	createExtraChild(new WidgetPointer(arg0), 3, 3);
+	setWidgetPosition(getWidgetActualX(new WidgetPointer(arg1)), 0, 0, 5);
+	setWidgetSize(getWidgetActualWidth(new WidgetPointer(arg1)), subtract(getWidgetActualHeight(new WidgetPointer(arg0)), add(getWidgetActualY(new WidgetPointer(arg1)), getWidgetActualHeight(new WidgetPointer(arg1)))), 0, 0);
+	setWidgetRGB(new Color(globalint_199));
+	cs2method2103(globalint_213);
+	setWidgetFilled(1);
+	return;
+}

@@ -1,0 +1,32 @@
+void script_4506(int arg0,int arg1,int arg2) {
+	int ivar3;
+	int ivar4;
+	int ivar5;
+	int ivar6;
+	ivar3 = getWidgetParentId(new WidgetPointer(arg0));
+	if (ivar3 == -1) {
+		return;
+	}
+	ivar4 = getWidgetParentId(new WidgetPointer(ivar3));
+	if (ivar4 == -1) {
+		return;
+	}
+	ivar5 = getWidgetParentId(new WidgetPointer(arg1));
+	if (ivar5 == -1) {
+		return;
+	}
+	setWidgetIsHidden(false, new WidgetPointer(ivar3));
+	cs2method2005(1, new WidgetPointer(ivar3));
+	if (arg2 != -1) {
+		setWidgetIsHidden(false, new WidgetPointer(arg2));
+	}
+	ivar6 = subtract(getExtraChildGap(new WidgetPointer(arg0)), 1);
+	while (ivar6 >= 0) {
+		if (setWidgetRegister(new WidgetPointer(arg0), ivar6) && (strLength(getWidgetText()) > 0)) {
+			setWidgetContextMenuOption(1, "Select");
+			setScriptCallOnClickContextMenu(4507, -2147483643, new WidgetPointer(arg0), new WidgetPointer(arg1), "iII");
+		}
+		ivar6 = subtract(ivar6, 1);
+	}
+	return;
+}

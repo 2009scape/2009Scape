@@ -1,0 +1,1113 @@
+cs2func_script_1022_struct(2,2,0) script_1022(int arg0,int arg1) {
+	switch (arg0) {
+		flow_1:
+			case 0:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1022_struct(1, 2349, "Bronze" + "<br>" + " 1 tin ore and 1 copper ore", "You can now smelt " + "<col=000080>" + "bronze" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1022_struct(8, 9467, "Blurite" + "<br>" + " (after The Knight's Sword)", "You now have the Smithing level required to smelt " + "<col=000080>" + "blurite" + "</col>" + " (after The Knight's Sword).");
+				case 2:
+					return newstruct cs2func_script_1022_struct(15, 2351, "Iron" + "<br>" + " 50% chance of success, rising until level 45", "You can now smelt " + "<col=000080>" + "iron" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1022_struct(20, 2893, "Members: Elemental metal" + "<br>" + " (after Elemental Workshop)", "Members now have the Smithing level required to smelt " + "<col=000080>" + "elemental metal" + "</col>" + " (after Elemental Workshop).");
+				case 4:
+					return newstruct cs2func_script_1022_struct(20, 2355, "Silver", "You can now smelt " + "<col=000080>" + "silver" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1022_struct(30, 2353, "Steel" + "<br>" + " 2 coal and 1 iron ore", "You can now smelt " + "<col=000080>" + "steel" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1022_struct(40, 2357, "Gold", "You can now smelt " + "<col=000080>" + "gold" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1022_struct(45, 2351, "Iron" + "<br>" + " 80% chance of success", "Your chance of successfully smelting " + "<col=000080>" + "iron" + "</col>" + " has reached its maximum.");
+				case 8:
+					return newstruct cs2func_script_1022_struct(50, 2359, "Mithril" + "<br>" + " 4 coal and 1 mithril ore", "You can now smelt " + "<col=000080>" + "mithril" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1022_struct(70, 2361, "Adamant" + "<br>" + " 6 coal and 1 adamantite ore", "You can now smelt " + "<col=000080>" + "adamantite" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_1022_struct(77, 21778, "Members: Bane ore" + "<br>" + " (after Ritual of the Mahjarrat)", "Members now have the Smithing level required to smelt " + "<col=000080>" + "bane ore" + "</col>" + " (after Ritual of the Mahjarrat).");
+				case 11:
+					return newstruct cs2func_script_1022_struct(85, 2363, "Rune" + "<br>" + " 8 coal and 1 runite ore", "You can now smelt " + "<col=000080>" + "runite" + "</col>" + ".");
+			}
+			break;
+			case 1:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1022_struct(1, 1205, "Bronze dagger" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "bronze daggers" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1022_struct(1, 1351, "Bronze hatchet" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "bronze hatchets" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1022_struct(2, 1422, "Bronze mace" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "bronze maces" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1022_struct(3, 1139, "Bronze medium helm" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "bronze medium helms" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1022_struct(3, 9375, "Members: Bronze crossbow bolt" + "<br>" + " 1 bar makes 10", "Members can now smith " + "<col=000080>" + "bronze crossbow bolts" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1022_struct(4, 1277, "Bronze sword" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "bronze swords" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1022_struct(4, 819, "Members: Bronze dart tip" + "<br>" + " (after Tourist Trap)" + "<br>" + " 1 bar makes 10", "Members now have the Smithing level required to smith bronze dart tips" + "</col>" + " (after Tourist Trap).");
+				case 7:
+					return newstruct cs2func_script_1022_struct(4, 1794, "Members: Bronze wire" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "bronze wire" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1022_struct(4, 4819, "Members: Bronze nails" + "<br>" + " 1 bar makes 15", "Members can now smith " + "<col=000080>" + "bronze nails" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1022_struct(5, 1321, "Bronze scimitar" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "bronze scimitars" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_1022_struct(5, 1237, "Members: Bronze spear" + "<br>" + " (after Tai Bwo Wannai Trio and learning barbarian smithing)" + "<br>" + " 1 bar, 1 log", "Members who are versed in the art of barbarian smithing now have the Smithing level required to smith " + "<col=000080>" + "bronze spears" + "</col>" + " (after Tai Bwo Wannai Trio).");
+				case 11:
+					return newstruct cs2func_script_1022_struct(5, 11367, "Members: Bronze hasta" + "<br>" + " (after Tai Bwo Wannai Trio and learning barbarian smithing)" + "<br>" + " 1 bar, 1 log", "Members who are versed in the art of barbarian smithing now have the Smithing level required to smith " + "<col=000080>" + "bronze hastae" + "</col>" + " (after Tai Bwo Wannai Trio).");
+				case 12:
+					return newstruct cs2func_script_1022_struct(5, 39, "Members: Bronze arrowhead" + "<br>" + " 1 bar makes 15", "Members can now smith " + "<col=000080>" + "bronze arrowheads" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_1022_struct(5, 1265, "Members: Bronze pickaxe" + "<br>" + " (after Perils of Ice Mountain)" + "<br>" + " 2 bars", "Members now have the Smithing level required to smith bronze " + "<col=000080>" + "pickaxes" + "</col>" + " (after Perils of Ice Mountain).");
+				case 14:
+					return newstruct cs2func_script_1022_struct(6, 9420, "Members: Bronze crossbow limbs" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "bronze crossbow limbs" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_1022_struct(6, 1291, "Bronze longsword" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "bronze longswords" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_1022_struct(7, 1155, "Bronze full helm" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "bronze full helms" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_1022_struct(7, 864, "Members: Bronze throwing knife" + "<br>" + " 1 bar makes 5", "Members can now smith " + "<col=000080>" + "bronze throwing knives" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_1022_struct(8, 1173, "Bronze square shield" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "bronze square shields" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_1022_struct(9, 1337, "Bronze warhammer" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "bronze warhammers" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_1022_struct(10, 1375, "Bronze battleaxe" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "bronze battleaxes" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_1022_struct(11, 1103, "Bronze chainbody" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "bronze chainbodies" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_1022_struct(12, 1189, "Bronze kiteshield" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "bronze kiteshields" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_1022_struct(13, 3095, "Members: Bronze claws" + "<br>" + " (after Death Plateau)" + "<br>" + " 2 bars", "Members now have the Smithing level required to smith " + "<col=000080>" + "bronze claws" + "</col>" + " (after Death Plateau).");
+				case 24:
+					return newstruct cs2func_script_1022_struct(14, 1307, "Bronze two-handed sword" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "bronze two-handed swords" + "</col>" + ".");
+				case 25:
+					return newstruct cs2func_script_1022_struct(16, 1075, "Bronze platelegs" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "bronze platelegs" + "</col>" + ".");
+				case 26:
+					return newstruct cs2func_script_1022_struct(16, 1087, "Bronze plateskirt" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "bronze plateskirts" + "</col>" + ".");
+				case 27:
+					return newstruct cs2func_script_1022_struct(18, 1117, "Bronze platebody" + "<br>" + " 5 bars", "You can now smith " + "<col=000080>" + "bronze platebodies" + "</col>" + ".");
+			}
+			break;
+			case 2:
+			if (((boolean)arg1)) {
+				return newstruct cs2func_script_1022_struct(-1, 7620, "You will not be able to smith blurite until you have completed The Knight's Sword.", "");
+			}
+			if (((boolean)arg1)) {
+				return newstruct cs2func_script_1022_struct(8, 9376, "Blurite crossbow bolts" + "<br>" + " 1 bar makes 10", "Members now have the Smithing level required to smith " + "<col=000080>" + "blurite crossbow bolts" + "</col>" + " (after the Knight's Sword).");
+			}
+			if (arg1 == 2) {
+				return newstruct cs2func_script_1022_struct(13, 9422, "Blurite crossbow limbs" + "<br>" + " 1 bar", "Members now have the Smithing level required to smith " + "<col=000080>" + "blurite crossbow limbs" + "</col>" + " (after The Knight's Sword).");
+			}
+			break;
+			case 3:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1022_struct(15, 1203, "Iron dagger" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "iron daggers" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1022_struct(16, 1349, "Iron hatchet" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "iron hatchets" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1022_struct(17, 1420, "Iron mace" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "iron maces" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1022_struct(17, 7225, "Members: Iron spit" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "iron spits" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1022_struct(18, 1137, "Iron medium helm" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "iron medium helms" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1022_struct(18, 9377, "Members: Iron crossbow bolt" + "<br>" + " 1 bar makes 10", "Members can now smith " + "<col=000080>" + "iron crossbow bolts" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1022_struct(19, 1279, "Iron sword" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "iron swords" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1022_struct(19, 820, "Members: Iron dart tip" + "<br>" + " (after Tourist Trap)" + "<br>" + " 1 bar makes 10", "Members now have the Smithing level required to smith " + "<col=000080>" + "iron dart tips" + "</col>" + " (after Tourist Trap).");
+				case 8:
+					return newstruct cs2func_script_1022_struct(19, 4820, "Members: Iron nails" + "<br>" + " 1 bar makes 15", "Members can now smith " + "<col=000080>" + "iron nails" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1022_struct(20, 1323, "Iron scimitar" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "iron scimitars" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_1022_struct(20, 1239, "Members: Iron spear" + "<br>" + " (after Tai Bwo Wannai Trio and learning barbarian smithing)" + "<br>" + " 1 bar, 1 oak log", "Members who are versed in the art of barbarian smithing now have the Smithing level required to smith " + "<col=000080>" + "iron spears" + "</col>" + " (after Tai Bwo Wannai Trio).");
+				case 11:
+					return newstruct cs2func_script_1022_struct(20, 11369, "Members: Iron hasta" + "<br>" + " (after Tai Bwo Wannai Trio and learning barbarian smithing)" + "<br>" + " 1 bar, 1 oak log", "Members who are versed in the art of barbarian smithing now have the Smithing level required to smith " + "<col=000080>" + "iron hastae" + "</col>" + " (after Tai Bwo Wannai Trio).");
+				case 12:
+					return newstruct cs2func_script_1022_struct(20, 40, "Members: Iron arrowhead" + "<br>" + " 1 bar makes 15", "Members can now smith " + "<col=000080>" + "iron arrowheads" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_1022_struct(20, 1267, "Members: Iron pickaxe" + "<br>" + " (after Perils of Ice Mountain)" + "<br>" + " 2 bars", "Members now have the Smithing level required to smith " + "<col=000080>" + "iron pickaxes" + "</col>" + " (after Perils of Ice Mountain).");
+				case 14:
+					return newstruct cs2func_script_1022_struct(21, 1293, "Iron longsword" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "iron longswords" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_1022_struct(22, 1153, "Iron full helm" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "iron full helms" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_1022_struct(22, 863, "Members: Iron throwing knife" + "<br>" + " 1 bar makes 5", "Members can now smith " + "<col=000080>" + "iron throwing knives" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_1022_struct(23, 1175, "Iron square shield" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "iron square shields" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_1022_struct(23, 9423, "Members: Iron crossbow limbs" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "iron crossbow limbs" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_1022_struct(24, 1335, "Iron warhammer" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "iron warhammers" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_1022_struct(25, 1363, "Iron battleaxe" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "iron battleaxes" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_1022_struct(26, 1101, "Iron chainbody" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "iron chainbodies" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_1022_struct(26, 4540, "Members: Oil lantern frame" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "oil lantern frames" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_1022_struct(27, 1191, "Iron kiteshield" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "iron kiteshields" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_1022_struct(28, 3096, "Members: Iron claws" + "<br>" + " (after Death Plateau)" + "<br>" + " 2 bars", "Members now have the Smithing level required to smith " + "<col=000080>" + "iron claws" + "</col>" + " (after Death Plateau).");
+				case 25:
+					return newstruct cs2func_script_1022_struct(29, 1309, "Iron two-handed sword" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "iron two-handed swords" + "</col>" + ".");
+				case 26:
+					return newstruct cs2func_script_1022_struct(31, 1067, "Iron platelegs" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "iron platelegs" + "</col>" + ".");
+				case 27:
+					return newstruct cs2func_script_1022_struct(31, 1081, "Iron plateskirt" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "iron plateskirts" + "</col>" + ".");
+				case 28:
+					return newstruct cs2func_script_1022_struct(33, 1115, "Iron platebody" + "<br>" + " 5 bars", "You can now smith " + "<col=000080>" + "iron platebodies" + "</col>" + ".");
+			}
+			break;
+			case 4:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1022_struct(30, 1207, "Steel dagger" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "steel daggers" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1022_struct(31, 1353, "Steel hatchet" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "steel hatchets" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1022_struct(32, 1424, "Steel mace" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "steel maces" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1022_struct(33, 1141, "Steel medium helm" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "steel medium helms" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1022_struct(33, 9378, "Members: Steel crossbow bolt" + "<br>" + " 1 bar makes 10", "Members can now smith " + "<col=000080>" + "steel crossbow bolts" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1022_struct(34, 1281, "Steel sword" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "steel swords" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1022_struct(34, 1539, "Steel nails" + "<br>" + " 1 bar makes 15", "You can now smith " + "<col=000080>" + "steel nails" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1022_struct(34, 821, "Members: Steel dart tip" + "<br>" + " (after Tourist Trap)" + "<br>" + " 1 bar makes 10", "Members now have the Smithing level required to smith " + "<col=000080>" + "steel dart tips" + "</col>" + " (after Tourist Trap).");
+				case 8:
+					return newstruct cs2func_script_1022_struct(35, 1325, "Steel scimitar" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "steel scimitars" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1022_struct(35, 1241, "Members: Steel spear" + "<br>" + " (after Tai Bwo Wannai Trio and learning barbarian smithing)" + "<br>" + " 1 bar, 1 willow log", "Members who are versed in the art of barbarian smithing now have the Smithing level required to smith " + "<col=000080>" + "steel spears" + "</col>" + " (after Tai Bwo Wannai Trio).");
+				case 10:
+					return newstruct cs2func_script_1022_struct(35, 11371, "Members: Steel hasta" + "<br>" + " (after Tai Bwo Wannai Trio and learning barbarian smithing)" + "<br>" + " 1 bar, 1 willow log", "Members who are versed in the art of barbarian smithing now have the Smithing level required to smith " + "<col=000080>" + "steel hastae" + "</col>" + " (after Tai Bwo Wannai Trio).");
+				case 11:
+					return newstruct cs2func_script_1022_struct(35, 41, "Members: Steel arrowhead" + "<br>" + " 1 bar makes 15", "Members can now smith " + "<col=000080>" + "steel arrowheads" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_1022_struct(35, 2, "Members: Cannonball" + "<br>" + " (after Dwarf Cannon)" + "<br>" + " 1 bar makes 4", "Members now have the Smithing level required to smith " + "<col=000080>" + "steel cannonballs" + "</col>" + " (after Dwarf Cannon).");
+				case 13:
+					return newstruct cs2func_script_1022_struct(35, 1269, "Members: Steel pickaxe" + "<br>" + " (after Perils of Ice Mountain)" + "<br>" + " 2 bars", "Members now have the Smithing level required to smith " + "<col=000080>" + "steel pickaxes" + "</col>" + " (after Perils of Ice Mountain).");
+				case 14:
+					return newstruct cs2func_script_1022_struct(36, 9425, "Members: Steel crossbow limbs" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "steel crossbow limbs" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_1022_struct(36, 1295, "Steel longsword" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "steel longswords" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_1022_struct(36, 2370, "Members: Steel studs" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "steel studs" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_1022_struct(37, 1157, "Steel full helm" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "steel full helms" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_1022_struct(37, 865, "Members: Steel throwing knife" + "<br>" + " 1 bar makes 5", "Members can now smith " + "<col=000080>" + "steel throwing knives" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_1022_struct(38, 1177, "Steel square shield" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "steel square shields" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_1022_struct(39, 1339, "Steel warhammer" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "steel warhammers" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_1022_struct(40, 1365, "Steel battleaxe" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "steel battleaxes" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_1022_struct(41, 1105, "Steel chainbody" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "steel chainbodies" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_1022_struct(42, 1193, "Steel kiteshield" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "steel kiteshields" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_1022_struct(43, 3097, "Members: Steel claws" + "<br>" + " (after Death Plateau)" + "<br>" + " 2 bars", "Members now have the Smithing level required to smith " + "<col=000080>" + "steel claws" + "</col>" + " (after Death Plateau).");
+				case 25:
+					return newstruct cs2func_script_1022_struct(44, 1311, "Steel two-handed sword" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "steel two-handed swords" + "</col>" + ".");
+				case 26:
+					return newstruct cs2func_script_1022_struct(46, 1069, "Steel platelegs" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "steel platelegs" + "</col>" + ".");
+				case 27:
+					return newstruct cs2func_script_1022_struct(46, 1083, "Steel plateskirt" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "steel plateskirts" + "</col>" + ".");
+				case 28:
+					return newstruct cs2func_script_1022_struct(48, 1119, "Steel platebody" + "<br>" + " 5 bars", "You can now smith " + "<col=000080>" + "steel platebodies" + "</col>" + ".");
+				case 29:
+					return newstruct cs2func_script_1022_struct(49, 4544, "Members: Bullseye lantern frame" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "bullseye lantern frames" + "</col>" + ".");
+			}
+			break;
+			case 5:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1022_struct(50, 1209, "Mithril dagger" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "mithril daggers" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1022_struct(51, 1355, "Mithril hatchet" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "mithril hatchets" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1022_struct(52, 1428, "Mithril mace" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "mithril maces" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1022_struct(53, 1143, "Mithril medium helm" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "mithril medium helms" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1022_struct(53, 9379, "Members: Mithril crossbow bolt" + "<br>" + " 1 bar makes 10", "Members can now smith " + "<col=000080>" + "mithril crossbow bolts" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1022_struct(54, 1285, "Mithril sword" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "mithril swords" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1022_struct(54, 822, "Members: Mithril dart tip" + "<br>" + " (after Tourist Trap)" + "<br>" + " 1 bar makes 10", "Members now have the Smithing level required to smith " + "<col=000080>" + "mithril dart tips" + "</col>" + " (after Tourist Trap).");
+				case 7:
+					return newstruct cs2func_script_1022_struct(54, 4822, "Members: Mithril nail" + "<br>" + " 1 bar makes 15", "Members can now smith " + "<col=000080>" + "mithril nails" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1022_struct(55, 1329, "Mithril scimitar" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "mithril scimitars" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1022_struct(55, 1243, "Members: Mithril spear" + "<br>" + " (after Tai Bwo Wannai Trio and learning barbarian smithing)" + "<br>" + " 1 bar, 1 maple log", "Members who are versed in the art of barbarian smithing now have the Smithing level required to smith " + "<col=000080>" + "mithril spears" + "</col>" + " (after Tai Bwo Wannai Trio).");
+				case 10:
+					return newstruct cs2func_script_1022_struct(55, 11373, "Members: Mithril hasta" + "<br>" + " (after Tai Bwo Wannai Trio and learning barbarian smithing)" + "<br>" + " 1 bar, 1 maple log", "Members who are versed in the art of barbarian smithing now have the Smithing level required to smith " + "<col=000080>" + "mithril hastae" + "</col>" + " (after Tai Bwo Wannai Trio).");
+				case 11:
+					return newstruct cs2func_script_1022_struct(55, 42, "Members: Mithril arrowhead" + "<br>" + " 1 bar makes 15", "Members can now smith " + "<col=000080>" + "mithril arrowheads" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_1022_struct(55, 1273, "Members: Mithril pickaxe" + "<br>" + " (after Perils of Ice Mountain)" + "<br>" + " 2 bars", "Members now have the Smithing level required to smith " + "<col=000080>" + "mithril pickaxes" + "</col>" + " (after Perils of Ice Mountain).");
+				case 13:
+					return newstruct cs2func_script_1022_struct(56, 9427, "Members: Mithril crossbow limbs" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "mithril crossbow limbs" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_1022_struct(56, 1299, "Mithril longsword" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "mithril longswords" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_1022_struct(57, 1159, "Mithril full helm" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "mithril full helms" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_1022_struct(57, 866, "Members: Mithril throwing knife" + "<br>" + " 1 bar makes 5", "Members can now smith " + "<col=000080>" + "mithril throwing knives" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_1022_struct(58, 1181, "Mithril square shield" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "mithril square shields" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_1022_struct(59, 1343, "Mithril warhammer" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "mithril warhammers" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_1022_struct(59, 9416, "Members: Mithril crossbow grapple tip" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "mithril crossbow grapple tips" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_1022_struct(60, 1369, "Mithril battleaxe" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "mithril battleaxes" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_1022_struct(61, 1109, "Mithril chainbody" + "<br>" + " 3 bars", "You can now smith" + "<col=000080>" + " mithril chainbodies" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_1022_struct(62, 1197, "Mithril kiteshield" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "mithril kiteshields" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_1022_struct(63, 3099, "Members: Mithril claws" + "<br>" + " (after Death Plateau)" + "<br>" + " 2 bars", "Members now have the Smithing level required to smith " + "<col=000080>" + "mithril claws" + "</col>" + " (after Death Plateau).");
+				case 24:
+					return newstruct cs2func_script_1022_struct(64, 1315, "Mithril two-handed sword" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "mithril two-handed swords" + "</col>" + ".");
+				case 25:
+					return newstruct cs2func_script_1022_struct(66, 1071, "Mithril platelegs" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "mithril platelegs" + "</col>" + ".");
+				case 26:
+					return newstruct cs2func_script_1022_struct(66, 1085, "Mithril plateskirt" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "mithril plateskirts" + "</col>" + ".");
+				case 27:
+					return newstruct cs2func_script_1022_struct(68, 1121, "Mithril platebody" + "<br>" + " 5 bars", "You can now smith " + "<col=000080>" + "mithril platebodies" + "</col>" + ".");
+			}
+			break;
+			case 6:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1022_struct(70, 1211, "Adamant dagger" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "adamant daggers" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1022_struct(71, 1357, "Adamant hatchet" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "adamant hatchets" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1022_struct(72, 1430, "Adamant mace" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "adamant maces" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1022_struct(73, 1145, "Adamant medium helm" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "adamant medium helms" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1022_struct(73, 9380, "Members: Adamant crossbow bolt" + "<br>" + " 1 bar makes 10", "Members can now smith " + "<col=000080>" + "adamant crossbow bolts" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1022_struct(74, 1287, "Adamant sword" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "adamant swords" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1022_struct(74, 823, "Members: Adamant dart tip" + "<br>" + " (after Tourist Trap)" + "<br>" + " 1 bar makes 10", "Members now have the Smithing level required to smith " + "<col=000080>" + "adamant dart tips" + "</col>" + " (after Tourist Trap).");
+				case 7:
+					return newstruct cs2func_script_1022_struct(74, 4823, "Members: Adamant nail" + "<br>" + " 1 bar makes 15", "Members can now smith " + "<col=000080>" + "adamant nails" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1022_struct(75, 1331, "Adamant scimitar" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "adamant scimitars" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1022_struct(75, 1245, "Members: Adamant spear" + "<br>" + " (after Tai Bwo Wannai Trio and learning barbarian smithing)" + "<br>" + " 1 bar, 1 yew log", "Members who are versed in the art of barbarian smithing now have the Smithing level required to smith " + "<col=000080>" + "adamant spears" + "</col>" + " (after Tai Bwo Wannai Trio).");
+				case 10:
+					return newstruct cs2func_script_1022_struct(75, 11375, "Members: Adamant hasta" + "<br>" + " (after Tai Bwo Wannai Trio and learning barbarian smithing)" + "<br>" + " 1 bar, 1 yew log", "Members who are versed in the art of barbarian smithing now have the Smithing level required to smith " + "<col=000080>" + "adamant hastae" + "</col>" + " (after Tai Bwo Wannai Trio).");
+				case 11:
+					return newstruct cs2func_script_1022_struct(75, 43, "Members: Adamant arrowhead" + "<br>" + " 1 bar makes 15", "Members can now smith " + "<col=000080>" + "adamant arrowheads" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_1022_struct(75, 1271, "Members: Adamant pickaxe" + "<br>" + " (after Perils of Ice Mountain)" + "<br>" + " 2 bars", "Members now have the Smithing level required to smith " + "<col=000080>" + "adamant pickaxes" + "</col>" + " (after Perils of Ice Mountain).");
+				case 13:
+					return newstruct cs2func_script_1022_struct(76, 9429, "Members: Adamant crossbow limbs" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "adamant crossbow limbs" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_1022_struct(76, 1301, "Adamant longsword" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "adamant longswords" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_1022_struct(77, 1161, "Adamant full helm" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "adamant full helms" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_1022_struct(77, 867, "Member: Adamant throwing knives" + "<br>" + " 1 bar makes 5", "Members can now smith " + "<col=000080>" + "adamant throwing knives" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_1022_struct(78, 1183, "Adamant square shield" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "adamant square shields" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_1022_struct(79, 1345, "Adamant warhammer" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "adamant warhammers" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_1022_struct(80, 1371, "Adamant battleaxe" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "adamant battleaxes" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_1022_struct(81, 1111, "Adamant chainbody" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "adamant chainbodies" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_1022_struct(82, 1199, "Adamant kiteshield" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "adamant kiteshields" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_1022_struct(83, 3100, "Members: Adamant claws" + "<br>" + " (after Death Plateau)" + "<br>" + " 2 bars", "Members now have the Smithing level required to smith " + "<col=000080>" + "adamant claws" + "</col>" + " (after Death Plateau).");
+				case 23:
+					return newstruct cs2func_script_1022_struct(84, 1317, "Adamant two-handed sword" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "adamant two-handed swords" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_1022_struct(86, 1073, "Adamant platelegs" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "adamant platelegs" + "</col>" + ".");
+				case 25:
+					return newstruct cs2func_script_1022_struct(86, 1091, "Adamant plateskirt" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "adamant plateskirts" + "</col>" + ".");
+				case 26:
+					return newstruct cs2func_script_1022_struct(88, 1123, "Adamant platebody" + "<br>" + " 5 bars", "You can now smith " + "<col=000080>" + "adamant platebodies" + "</col>" + ".");
+			}
+			break;
+			case 7:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1022_struct(85, 1213, "Rune dagger" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "rune daggers" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1022_struct(86, 1359, "Rune hatchet" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "rune hatchets" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1022_struct(87, 1432, "Rune mace" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "rune maces" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1022_struct(88, 1147, "Rune medium helm" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "rune medium helms" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1022_struct(88, 9381, "Members: Rune crossbow bolt" + "<br>" + " 1 bar makes 10", "Members can now smith " + "<col=000080>" + "rune crossbow bolts" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1022_struct(89, 1289, "Rune sword" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "rune swords" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1022_struct(89, 824, "Members: Rune dart tip " + "<br>" + " (after Tourist Trap)" + "<br>" + " 1 bar makes 10", "Members now have the Smithing level required to smith " + "<col=000080>" + "rune dart tips" + "</col>" + " (after Tourist Trap).");
+				case 7:
+					return newstruct cs2func_script_1022_struct(89, 4824, "Members: Rune nails" + "<br>" + " 1 bar makes 15", "Members can now smith " + "<col=000080>" + "rune nails" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1022_struct(90, 1333, "Rune scimitar" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "rune scimitars" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1022_struct(90, 1247, "Members: Rune spear" + "<br>" + " (after Tai Bwo Wannai Trio and learning barbarian smithing)" + "<br>" + " 1 bar, 1 magic log", "Members who are versed in the art of barbarian smithing now have the Smithing level required to smith " + "<col=000080>" + "rune spears" + "</col>" + " (after Tai Bwo Wannai Trio).");
+				case 10:
+					return newstruct cs2func_script_1022_struct(90, 11377, "Members: Rune hasta" + "<br>" + " (after Tai Bwo Wannai Trio and learning barbarian smithing)" + "<br>" + " 1 bar, 1 magic log", "Members who are versed in the art of barbarian smithing now have the Smithing level required to smith " + "<col=000080>" + "rune hastae" + "</col>" + " (after Tai Bwo Wannai Trio).");
+				case 11:
+					return newstruct cs2func_script_1022_struct(90, 44, "Members: Rune arrowhead" + "<br>" + " 1 bar makes 15", "Members can now smith " + "<col=000080>" + "rune arrowheads" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_1022_struct(90, 1275, "Members: Rune pickaxe" + "<br>" + " (after Perils of Ice Mountain)" + "<br>" + " 2 bars", "Members now have the Smithing level required to smith " + "<col=000080>" + "rune pickaxes" + "</col>" + " (after Perils of Ice Mountain).");
+				case 13:
+					return newstruct cs2func_script_1022_struct(91, 9431, "Members: Rune crossbow limbs" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "rune crossbow limbs" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_1022_struct(91, 1303, "Rune longsword" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "rune longswords" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_1022_struct(92, 1163, "Rune full helm" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "rune full helms" + "</col>" + ".");
+				case 16:
+					return newstruct cs2func_script_1022_struct(92, 868, "Members: Rune throwing knife" + "<br>" + " 1 bar makes 5", "Members can now smith " + "<col=000080>" + "rune throwing knives" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_1022_struct(93, 1185, "Rune square shield" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "rune square shields" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_1022_struct(94, 1347, "Rune warhammer" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "rune warhammers" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_1022_struct(95, 1373, "Rune battleaxe" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "rune battleaxes" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_1022_struct(96, 1113, "Rune chainbody" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "rune chainbodies" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_1022_struct(97, 1201, "Rune kiteshield" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "rune kiteshields" + "</col>" + ".");
+				case 22:
+					return newstruct cs2func_script_1022_struct(98, 3101, "Members: Rune claws" + "<br>" + " (after Death Plateau)" + "<br>" + " 2 bars", "Members now have the Smithing level required to smith " + "<col=000080>" + "rune claws" + "</col>" + " (after Death Plateau).");
+				case 23:
+					return newstruct cs2func_script_1022_struct(99, 1319, "Rune two-handed sword" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "rune two-handed swords" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_1022_struct(99, 1079, "Rune platelegs" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "rune platelegs" + "</col>" + ".");
+				case 25:
+					return newstruct cs2func_script_1022_struct(99, 1093, "Rune plateskirt" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "rune plateskirts" + "</col>" + ".");
+				case 26:
+					return newstruct cs2func_script_1022_struct(99, 1127, "Rune platebody" + "<br>" + " 5 bars", "You can now smith " + "<col=000080>" + "rune platebodies" + "</col>" + ".");
+			}
+			break;
+			case 8:
+			if (((boolean)arg1)) {
+				return newstruct cs2func_script_1022_struct(50, 721, "Members: Gold bowl" + "<br>" + " (after starting Legends' Quest)", "Members now have the Smithing level required to smith " + "<col=000080>" + "gold bowls" + "</col>" + " (after starting Legends' Quest).");
+			}
+			if (((boolean)arg1)) {
+				return newstruct cs2func_script_1022_struct(50, 4567, "Members: Gold helmet" + "<br>" + " (after starting Between a Rock...)", "Members now have the Smithing level required to smith " + "<col=000080>" + "gold helmets" + "</col>" + " (after starting Between a Rock...).");
+			}
+			break;
+			case 9:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1022_struct(20, 2890, "Members: Elemental shield" + "<br>" + " (after Elemental Workshop I)", "Members now have the Smithing level required to smith " + "<col=000080>" + "elemental shields" + "</col>" + " (after Elemental Workshop I).");
+				case 1:
+					return newstruct cs2func_script_1022_struct(30, 9729, "Members: Elemental helmet" + "<br>" + " (after Elemental Workshop II)", "Members now have the Smithing level required to smith " + "<col=000080>" + "elemental helms" + "</col>" + " (after Elemental Workshop II).");
+				case 2:
+					return newstruct cs2func_script_1022_struct(30, 9731, "Members: Mind shield" + "<br>" + " (after Elemental Workshop II)", "Members now have the Smithing level required to smith " + "<col=000080>" + "mind shields" + "</col>" + " (after Elemental Workshop II).");
+				case 3:
+					return newstruct cs2func_script_1022_struct(30, 9733, "Members: Mind helmet" + "<br>" + " (after Elemental Workshop II)", "Members now have the Smithing level required to smith " + "<col=000080>" + "mind helmets" + "</col>" + " (after Elemental Workshop II).");
+				case 4:
+					return newstruct cs2func_script_1022_struct(33, 18691, "Members: Body shield" + "<br>" + " (after Elemental Workshop III)", "Members now have the Smithing level required to smith " + "<col=000080>" + "body shields" + "</col>" + " (after Elemental Workshop III).");
+				case 5:
+					return newstruct cs2func_script_1022_struct(33, 18693, "Members: Body helmet" + "<br>" + " (after Elemental Workshop III)", "Members now have the Smithing level required to smith " + "<col=000080>" + "body helmets" + "</col>" + " (after Elemental Workshop III).");
+				case 6:
+					return newstruct cs2func_script_1022_struct(33, 18699, "Members: Elemental body" + "<br>" + " (after Elemental Workshop III)", "Members now have the Smithing level required to smith " + "<col=000080>" + "elemental bodies" + "</col>" + " (after Elemental Workshop III).");
+				case 7:
+					return newstruct cs2func_script_1022_struct(33, 18697, "Members: Mind body" + "<br>" + " (after Elemental Workshop III)", "Members now have the Smithing level required to smith " + "<col=000080>" + "mind bodies" + "</col>" + " (after Elemental Workshop III).");
+				case 8:
+					return newstruct cs2func_script_1022_struct(33, 18695, "Members: Body body" + "<br>" + " (after Elemental Workshop III)", "Members now have the Smithing level required to smith " + "<col=000080>" + "body bodies" + "</col>" + " (after Elemental Workshop III).");
+				case 9:
+					return newstruct cs2func_script_1022_struct(38, 20458, "Members: Elemental gloves" + "<br>" + " (after Elemental Workshop IV)", "Members now have the Smithing level required to smith " + "<col=000080>" + "elemental gloves" + "</col>" + " (after Elemental Workshop IV).");
+				case 10:
+					return newstruct cs2func_script_1022_struct(38, 20460, "Members: Mind gloves" + "<br>" + " (after Elemental Workshop IV)", "Members now have the Smithing level required to smith " + "<col=000080>" + "mind gloves" + "</col>" + " (after Elemental Workshop IV).");
+				case 11:
+					return newstruct cs2func_script_1022_struct(38, 20462, "Members: Body gloves" + "<br>" + " (after Elemental Workshop IV)", "Members now have the Smithing level required to smith " + "<col=000080>" + "body gloves" + "</col>" + " (after Elemental Workshop IV).");
+				case 12:
+					return newstruct cs2func_script_1022_struct(38, 20436, "Members: Cosmic shield" + "<br>" + " (after Elemental Workshop IV)", "Members now have the Smithing level required to smith " + "<col=000080>" + "cosmic shields" + "</col>" + " (after Elemental Workshop IV).");
+				case 13:
+					return newstruct cs2func_script_1022_struct(38, 20440, "Members: Cosmic helmet" + "<br>" + " (after Elemental Workshop IV)", "Members now have the Smithing level required to smith " + "<col=000080>" + "cosmic helmets" + "</col>" + " (after Elemental Workshop IV).");
+				case 14:
+					return newstruct cs2func_script_1022_struct(38, 20444, "Members: Cosmic body" + "<br>" + " (after Elemental Workshop IV)", "Members now have the Smithing level required to smith " + "<col=000080>" + "cosmic bodies" + "</col>" + " (after Elemental Workshop IV).");
+				case 15:
+					return newstruct cs2func_script_1022_struct(38, 20464, "Members: Cosmic gloves" + "<br>" + " (after Elemental Workshop IV)", "Members now have the Smithing level required to smith " + "<col=000080>" + "cosmic gloves" + "</col>" + " (after Elemental Workshop IV).");
+				case 16:
+					return newstruct cs2func_script_1022_struct(42, 20448, "Members: Elemental boots" + "<br>" + " (after Elemental Workshop IV)", "Members now have the Smithing level required to smith " + "<col=000080>" + "elemental boots" + "</col>" + " (after Elemental Workshop IV).");
+				case 17:
+					return newstruct cs2func_script_1022_struct(42, 20450, "Members: Mind boots" + "<br>" + " (after Elemental Workshop IV)", "Members now have the Smithing level required to smith " + "<col=000080>" + "mind boots" + "</col>" + " (after Elemental Workshop IV).");
+				case 18:
+					return newstruct cs2func_script_1022_struct(42, 20452, "Members: Body boots" + "<br>" + " (after Elemental Workshop IV)", "Members now have the Smithing level required to smith " + "<col=000080>" + "body boots" + "</col>" + " (after Elemental Workshop IV).");
+				case 19:
+					return newstruct cs2func_script_1022_struct(42, 20454, "Members: Cosmic boots" + "<br>" + " (after Elemental Workshop IV)", "Members now have the Smithing level required to smith " + "<col=000080>" + "cosmic boots" + "</col>" + " (after Elemental Workshop IV).");
+				case 20:
+					return newstruct cs2func_script_1022_struct(42, 20438, "Members: Chaos shield" + "<br>" + " (after Elemental Workshop IV)", "Members now have the Smithing level required to smith " + "<col=000080>" + "chaos shields" + "</col>" + " (after Elemental Workshop IV).");
+				case 21:
+					return newstruct cs2func_script_1022_struct(42, 20442, "Members: Chaos helmet" + "<br>" + " (after Elemental Workshop IV)", "Members now have the Smithing level required to smith " + "<col=000080>" + "chaos helmets" + "</col>" + " (after Elemental Workshop IV).");
+				case 22:
+					return newstruct cs2func_script_1022_struct(42, 20446, "Members: Chaos body" + "<br>" + " (after Elemental Workshop IV)", "Members now have the Smithing level required to smith " + "<col=000080>" + "chaos bodies" + "</col>" + " (after Elemental Workshop IV).");
+				case 23:
+					return newstruct cs2func_script_1022_struct(42, 20466, "Members: Chaos gloves" + "<br>" + " (after Elemental Workshop IV)", "Members now have the Smithing level required to smith " + "<col=000080>" + "chaos gloves" + "</col>" + " (after Elemental Workshop IV).");
+				case 24:
+					return newstruct cs2func_script_1022_struct(42, 20456, "Members: Chaos boots" + "<br>" + " (after Elemental Workshop IV)", "Members now have the Smithing level required to smith " + "<col=000080>" + "chaos boots" + "</col>" + " (after Elemental Workshop IV).");
+			}
+			break;
+			case 10:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1022_struct(80, 21823, "Members: Dragonbane arrowtips (after Ritual of the Mahjarrat)", "Members now have the Smithing level required to smith " + "<col=000080>" + "dragonbane arrowtips" + "</col>" + " (after Ritual of the Mahjarrat).");
+				case 1:
+					return newstruct cs2func_script_1022_struct(80, 21828, "Members: Wallasalkibane arrowtips (after Ritual of the Mahjarrat)", "Members now have the Smithing level required to smith " + "<col=000080>" + "wallasalkibane arrowtips" + "</col>" + " (after Ritual of the Mahjarrat).");
+				case 2:
+					return newstruct cs2func_script_1022_struct(80, 21833, "Members: Basiliskbane arrowtips (after Ritual of the Mahjarrat)", "Members now have the Smithing level required to smith " + "<col=000080>" + "basiliskbane arrowtips" + "</col>" + " (after Ritual of the Mahjarrat).");
+				case 3:
+					return newstruct cs2func_script_1022_struct(80, 21838, "Members: Abyssalbane arrowtips (after Ritual of the Mahjarrat)", "Members now have the Smithing level required to smith " + "<col=000080>" + "abyssalbane arrowtips" + "</col>" + " (after Ritual of the Mahjarrat).");
+				case 4:
+					return newstruct cs2func_script_1022_struct(82, 21843, "Members: Dragonbane bolts (unf) (after Ritual of the Mahjarrat)", "Members now have the Smithing level required to smith " + "<col=000080>" + "dragonbane bolts" + "</col>" + " (after Ritual of the Mahjarrat).");
+				case 5:
+					return newstruct cs2func_script_1022_struct(82, 21853, "Members: Wallasalkibane bolts (unf) (after Ritual of the Mahjarrat)", "Members now have the Smithing level required to smith " + "<col=000080>" + "wallasalkibane bolts" + "</col>" + " (after Ritual of the Mahjarrat).");
+				case 6:
+					return newstruct cs2func_script_1022_struct(82, 21848, "Members: Basiliskbane bolts (unf) (after Ritual of the Mahjarrat)", "Members now have the Smithing level required to smith " + "<col=000080>" + "basiliskbane bolts" + "</col>" + " (after Ritual of the Mahjarrat).");
+				case 7:
+					return newstruct cs2func_script_1022_struct(82, 21858, "Members: Abyssalbane bolts (unf) (after Ritual of the Mahjarrat)", "Members now have the Smithing level required to smith " + "<col=000080>" + "abyssalbane bolts" + "</col>" + " (after Ritual of the Mahjarrat).");
+			}
+			break;
+			case 11:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1022_struct(1, 20506, "Bronze rails", "You can now smith " + "<col=000080>" + "bronze rails" + "</col>" + ".");
+				case 1:
+					return newstruct cs2func_script_1022_struct(2, 20507, "Bronze base plate", "You can now smith " + "<col=000080>" + "bronze base plates" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1022_struct(3, 20511, "Bronze track (40% complete)", "You can now combine bronze rails with bronze base plates to make " + "<col=000080>" + "bronze track (40% complete)" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1022_struct(5, 20508, "Bronze spikes", "You can now smith " + "<col=000080>" + "bronze spikes" + "</col>" + ".");
+				case 4:
+					return newstruct cs2func_script_1022_struct(6, 20512, "Bronze track (60% complete)", "You can now combine bronze track (40% complete) with bronze spikes to make " + "<col=000080>" + "bronze track (60% complete)" + "</col>" + ".");
+				case 5:
+					return newstruct cs2func_script_1022_struct(8, 20509, "Bronze joint", "You can now smith " + "<col=000080>" + "bronze joints" + "</col>" + ".");
+				case 6:
+					return newstruct cs2func_script_1022_struct(9, 20513, "Bronze track (80% complete)", "You can now combine bronze track (60% complete) with a bronze joint to make " + "<col=000080>" + "bronze track (80% complete)" + "</col>" + ".");
+				case 7:
+					return newstruct cs2func_script_1022_struct(11, 20510, "Bronze ties", "You can now smith " + "<col=000080>" + "bronze ties" + "</col>" + ".");
+				case 8:
+					return newstruct cs2func_script_1022_struct(12, 20514, "Bronze track (100% complete)", "You can now combine bronze track (80% complete) with bronze ties to make " + "<col=000080>" + "bronze track (100% complete)" + "</col>" + ".");
+				case 9:
+					return newstruct cs2func_script_1022_struct(15, 20515, "Iron rails", "You can now smith " + "<col=000080>" + "iron rails" + "</col>" + ".");
+				case 10:
+					return newstruct cs2func_script_1022_struct(19, 20516, "Iron base plate", "You can now smith " + "<col=000080>" + "iron base plates" + "</col>" + ".");
+				case 11:
+					return newstruct cs2func_script_1022_struct(20, 20525, "Iron track (40% complete)", "You can now combine iron rails with iron base plates to make " + "<col=000080>" + "iron track (40% complete)" + "</col>" + ".");
+				case 12:
+					return newstruct cs2func_script_1022_struct(24, 20517, "Iron spikes", "You can now smith " + "<col=000080>" + "iron spikes" + "</col>" + ".");
+				case 13:
+					return newstruct cs2func_script_1022_struct(25, 20526, "Iron track (60% complete)", "You can now combine iron track (40% complete) with iron spikes to make " + "<col=000080>" + "iron track (60% complete)" + "</col>" + ".");
+				case 14:
+					return newstruct cs2func_script_1022_struct(29, 20518, "Iron joint", "You can now smith " + "<col=000080>" + "iron joints" + "</col>" + ".");
+				case 15:
+					return newstruct cs2func_script_1022_struct(30, 20572, "Iron burial armour", "You can now smith iron burial armour for miners, warriors and smiths.");
+				case 16:
+					return newstruct cs2func_script_1022_struct(30, 20527, "Iron track (80% complete)", "You can now combine iron track (60% complete) with an iron joint to make " + "<col=000080>" + "iron track (80% complete)" + "</col>" + ".");
+				case 17:
+					return newstruct cs2func_script_1022_struct(34, 20519, "Iron ties", "You can now smith " + "<col=000080>" + "iron ties" + "</col>" + ".");
+				case 18:
+					return newstruct cs2func_script_1022_struct(35, 20528, "Iron track (100% complete)", "You can now combine iron track (80% complete) with iron ties to make " + "<col=000080>" + "iron track (100% complete)" + "</col>" + ".");
+				case 19:
+					return newstruct cs2func_script_1022_struct(39, 20520, "Members: Steel rails", "Members can now smith " + "<col=000080>" + "steel rails" + "</col>" + ".");
+				case 20:
+					return newstruct cs2func_script_1022_struct(44, 20521, "Members: Steel base plate", "Members can now smith " + "<col=000080>" + "steel base plates" + "</col>" + ".");
+				case 21:
+					return newstruct cs2func_script_1022_struct(45, 20573, "Steel burial armour", "You can now smith steel burial armour for miners, warriors and smiths.");
+				case 22:
+					return newstruct cs2func_script_1022_struct(45, 20529, "Members: Steel track (40% complete)", "Members can now combine steel rails with steel base plates to make " + "<col=000080>" + "steel track (40% complete)" + "</col>" + ".");
+				case 23:
+					return newstruct cs2func_script_1022_struct(49, 20522, "Members: Steel spikes", "Members can now smith " + "<col=000080>" + "steel spikes" + "</col>" + ".");
+				case 24:
+					return newstruct cs2func_script_1022_struct(50, 2347, "Members: Fix pipes", "Members can now fix burst pipes in the Artisans Workshop.");
+				case 25:
+					return newstruct cs2func_script_1022_struct(50, 20530, "Members: Steel track (60% complete)", "Members can now combine steel track (40% complete) with steel spikes to make " + "<col=000080>" + "steel track (60% complete)" + "</col>" + ".");
+				case 26:
+					return newstruct cs2func_script_1022_struct(54, 20523, "Members: Steel joint", "Members can now smith " + "<col=000080>" + "steel joints" + "</col>" + ".");
+				case 27:
+					return newstruct cs2func_script_1022_struct(55, 20531, "Members: Steel track (80% complete)", "Members can now combine steel track (60% complete) with a steel joint to make " + "<col=000080>" + "steel track (80% complete)" + "</col>" + ".");
+				case 28:
+					return newstruct cs2func_script_1022_struct(59, 20524, "Members: Steel ties", "Members can now smith " + "<col=000080>" + "steel ties" + "</col>" + ".");
+				case 29:
+					return newstruct cs2func_script_1022_struct(60, 20574, "Members: Mithril burial armour", "Members can now smith mithril burial armour for miners, warriors and smiths.");
+				case 30:
+					return newstruct cs2func_script_1022_struct(60, 20532, "Members: Steel track (100% complete)", "Members can now combine steel track (80% complete) with steel ties to make " + "<col=000080>" + "steel track (100% complete)" + "</col>" + ".");
+				case 31:
+					return newstruct cs2func_script_1022_struct(62, 20480, "Members: Cannon repair", "Members can now repair cannons in the cannon repair workshop.");
+				case 32:
+					return newstruct cs2func_script_1022_struct(70, 20560, "Members: Iron ceremonial swords", "Members can now smith iron ceremonial swords.");
+				case 33:
+					return newstruct cs2func_script_1022_struct(70, 20575, "Members: Adamant burial armour", "Members can now smith adamant burial armour for miners, warriors and smiths.");
+				case 34:
+					return newstruct cs2func_script_1022_struct(75, 20561, "Members: Steel ceremonial swords", "Members can now smith steel ceremonial swords.");
+				case 35:
+					return newstruct cs2func_script_1022_struct(78, 2347, "Members: Greater precision", "Members will now smith ceremonial swords more precisely, hitting fewer 0s and generally being more precise.");
+				case 36:
+					return newstruct cs2func_script_1022_struct(80, 20562, "Members: Mithril ceremonial swords", "Members can now smith mithril ceremonial swords.");
+				case 37:
+					return newstruct cs2func_script_1022_struct(83, 2347, "Members: Greater precision", "Members will now smith ceremonial swords more precisely, hitting fewer 0s and generally being more precise.");
+				case 38:
+					return newstruct cs2func_script_1022_struct(85, 20563, "Members: Adamant ceremonial swords", "Members can now smith adamant ceremonial swords.");
+				case 39:
+					return newstruct cs2func_script_1022_struct(88, 2347, "Members: Greater precision", "Members will now smith ceremonial swords more precisely, hitting fewer 0s and generally being more precise.");
+				case 40:
+					return newstruct cs2func_script_1022_struct(90, 20576, "Members: Rune burial armour", "Members can now smith rune burial armour for miners, warriors and smiths.");
+				case 41:
+					return newstruct cs2func_script_1022_struct(90, 20564, "Members: Rune ceremonial swords", "Members can now smith rune ceremonial swords");
+				case 42:
+					return newstruct cs2func_script_1022_struct(93, 2347, "Members: Greater precision", "Members will now smith ceremonial swords more precisely, hitting fewer 0s and generally being more precise.");
+				case 43:
+					return newstruct cs2func_script_1022_struct(97, 2347, "Members: Greater precision", "Members will now smith ceremonial swords more precisely, hitting fewer 0s and generally being more precise.");
+				case 44:
+					return newstruct cs2func_script_1022_struct(99, 2347, "Members: Greater precision", "Members will now smith ceremonial swords more precisely, hitting fewer 0s and generally being more precise.");
+			}
+			break;
+			case 12:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1022_struct(55, 19670, "Scroll of efficiency" + "<br>" + " (with 55 Dungeoneering)", "You can now use " + "<col=000080>" + "scrolls of efficiency" + "</col>" + ". (You also need level 55 Dungeoneering.)");
+				case 1:
+					return newstruct cs2func_script_1022_struct(60, 1187, "Members: Dragon square shield", "Members can now make " + "<col=000080>" + "dragon square shields" + "</col>" + ".");
+				case 2:
+					return newstruct cs2func_script_1022_struct(80, 11690, "Members: Godsword blade", "Members can now make " + "<col=000080>" + "godsword blades" + "</col>" + ".");
+				case 3:
+					return newstruct cs2func_script_1022_struct(85, 13746, "Members: Arcane spirit shields" + "<br>" + " (after Summer's End and with 90 Prayer)", "Members can now create " + "<col=000080>" + "arcane spirit shields" + "</col>" + " (after Summer's End, with level 90 Prayer).");
+				case 4:
+					return newstruct cs2func_script_1022_struct(85, 13748, "Members: Divine spirit shields" + "<br>" + " (after Summer's End and with 90 Prayer)", "Members can now create " + "<col=000080>" + "divine spirit shields" + "</col>" + " (after Summer's End, with level 90 Prayer).");
+				case 5:
+					return newstruct cs2func_script_1022_struct(85, 13750, "Members: Elysian spirit shields" + "<br>" + " (after Summer's End and with 90 Prayer)", "Members can now create " + "<col=000080>" + "elysian spirit shields" + "</col>" + " (after Summer's End, with level 90 Prayer).");
+				case 6:
+					return newstruct cs2func_script_1022_struct(85, 13752, "Members: Spectral spirit shields" + "<br>" + " (after Summer's End and with 90 Prayer)", "Members can now create " + "<col=000080>" + "spectral spirit shields" + "</col>" + " (after Summer's End, with level 90 Prayer).");
+				case 7:
+					return newstruct cs2func_script_1022_struct(90, 11283, "Members: Dragonfire shield", "Members can now make " + "<col=000080>" + "dragonfire shields" + "</col>" + " from anti-dragonbreath shields and draconic visages.");
+				case 8:
+					return newstruct cs2func_script_1022_struct(91, 18778, "Members: Starved ancient effigies", "Members can now investigate " + "<col=000080>" + "starved ancient effigies" + "</col>" + " using their knowledge of Smithing.");
+				case 9:
+					return newstruct cs2func_script_1022_struct(92, 14479, "Members: Repair dragon platebody", "Members can now repair " + "<col=000080>" + "dragon platebodies" + "</col>" + " (after While Guthix Sleeps).");
+				case 10:
+					return newstruct cs2func_script_1022_struct(93, 18779, "Members: Nourished ancient effigies", "Members can now investigate " + "<col=000080>" + "nourished ancient effigies" + "</col>" + " using their knowledge of Smithing.");
+				case 11:
+					return newstruct cs2func_script_1022_struct(95, 18780, "Members: Sated ancient effigies", "Members can now investigate " + "<col=000080>" + "sated ancient effigies" + "</col>" + " using their knowledge of Smithing.");
+				case 12:
+					return newstruct cs2func_script_1022_struct(97, 18781, "Members: Gorged ancient effigies", "Members can now investigate " + "<col=000080>" + "gorged ancient effigies" + "</col>" + " using their knowledge of Smithing.");
+			}
+			break;
+			case 13:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1022_struct(1, 14297, "Members: Stealing Creation - class 1 dagger", "Members can now make " + "<col=000080>" + "class 1 daggers" + "</col>" + " in Stealing Creation.");
+				case 1:
+					return newstruct cs2func_script_1022_struct(1, 14132, "Members: Stealing Creation - class 1 hatchet", "Members can now make " + "<col=000080>" + "class 1 hatchets" + "</col>" + " in Stealing Creation.");
+				case 2:
+					return newstruct cs2func_script_1022_struct(1, 14367, "Members: Stealing Creation - class 1 helmet", "Members can now make " + "<col=000080>" + "class 1 helmets" + "</col>" + " in Stealing Creation.");
+				case 3:
+					return newstruct cs2func_script_1022_struct(1, 14287, "Members: Stealing Creation - class 1 scimitar", "Members can now make " + "<col=000080>" + "class 1 scimitars" + "</col>" + " in Stealing Creation.");
+				case 4:
+					return newstruct cs2func_script_1022_struct(1, 14122, "Members: Stealing Creation - class 1 pickaxe", "Members can now make " + "<col=000080>" + "class 1 pickaxes" + "</col>" + " in Stealing Creation.");
+				case 5:
+					return newstruct cs2func_script_1022_struct(1, 14307, "Members: Stealing Creation - class 1 warhammer", "Members can now make " + "<col=000080>" + "class 1 warhammers" + "</col>" + " in Stealing Creation.");
+				case 6:
+					return newstruct cs2func_script_1022_struct(1, 14357, "Members: Stealing Creation - class 1 platelegs", "Members can now make " + "<col=000080>" + "class 1 platelegs" + "</col>" + " in Stealing Creation.");
+				case 7:
+					return newstruct cs2func_script_1022_struct(1, 14347, "Members: Stealing Creation - class 1 platebody", "Members can now make " + "<col=000080>" + "class 1 platebodies" + "</col>" + " in Stealing Creation.");
+				case 8:
+					return newstruct cs2func_script_1022_struct(20, 14299, "Members: Stealing Creation - class 2 dagger", "Members can now make " + "<col=000080>" + "class 2 daggers" + "</col>" + " in Stealing Creation.");
+				case 9:
+					return newstruct cs2func_script_1022_struct(20, 14134, "Members: Stealing Creation - class 2 hatchet", "Members can now make " + "<col=000080>" + "class 2 hatchets" + "</col>" + " in Stealing Creation.");
+				case 10:
+					return newstruct cs2func_script_1022_struct(20, 14369, "Members: Stealing Creation - class 2 helmet", "Members can now make " + "<col=000080>" + "class 2 helmets" + "</col>" + " in Stealing Creation.");
+				case 11:
+					return newstruct cs2func_script_1022_struct(20, 14289, "Members: Stealing Creation - class 2 scimitar", "Members can now make " + "<col=000080>" + "class 2 scimitars" + "</col>" + " in Stealing Creation.");
+				case 12:
+					return newstruct cs2func_script_1022_struct(20, 14124, "Members: Stealing Creation - class 2 pickaxe", "Members can now make " + "<col=000080>" + "class 2 pickaxes" + "</col>" + " in Stealing Creation.");
+				case 13:
+					return newstruct cs2func_script_1022_struct(20, 14309, "Members: Stealing Creation - class 2 warhammer", "Members can now make " + "<col=000080>" + "class 2 warhammers" + "</col>" + " in Stealing Creation.");
+				case 14:
+					return newstruct cs2func_script_1022_struct(20, 14359, "Members: Stealing Creation - class 2 platelegs", "Members can now make " + "<col=000080>" + "class 2 platelegs" + "</col>" + " in Stealing Creation.");
+				case 15:
+					return newstruct cs2func_script_1022_struct(20, 14349, "Members: Stealing Creation - class 2 platebody", "Members can now make " + "<col=000080>" + "class 2 platebodies" + "</col>" + " in Stealing Creation.");
+				case 16:
+					return newstruct cs2func_script_1022_struct(40, 14301, "Members: Stealing Creation - class 3 dagger", "Members can now make " + "<col=000080>" + "class 3 daggers" + "</col>" + " in Stealing Creation.");
+				case 17:
+					return newstruct cs2func_script_1022_struct(40, 14136, "Members: Stealing Creation - class 3 hatchet", "Members can now make " + "<col=000080>" + "class 3 hatchets" + "</col>" + " in Stealing Creation.");
+				case 18:
+					return newstruct cs2func_script_1022_struct(40, 14371, "Members: Stealing Creation - class 3 helmet", "Members can now make " + "<col=000080>" + "class 3 helmets" + "</col>" + " in Stealing Creation.");
+				case 19:
+					return newstruct cs2func_script_1022_struct(40, 14291, "Members: Stealing Creation - class 3 scimitar", "Members can now make " + "<col=000080>" + "class 3 scimitars" + "</col>" + " in Stealing Creation.");
+				case 20:
+					return newstruct cs2func_script_1022_struct(40, 14126, "Members: Stealing Creation - class 3 pickaxe", "Members can now make " + "<col=000080>" + "class 3 pickaxes" + "</col>" + " in Stealing Creation.");
+				case 21:
+					return newstruct cs2func_script_1022_struct(40, 14311, "Members: Stealing Creation - class 3 warhammer", "Members can now make " + "<col=000080>" + "class 3 warhammers" + "</col>" + " in Stealing Creation.");
+				case 22:
+					return newstruct cs2func_script_1022_struct(40, 14361, "Members: Stealing Creation - class 3 platelegs", "Members can now make " + "<col=000080>" + "class 3 platelegs" + "</col>" + " in Stealing Creation.");
+				case 23:
+					return newstruct cs2func_script_1022_struct(40, 14351, "Members: Stealing Creation - class 3 platebody", "Members can now make " + "<col=000080>" + "class 3 platebodies" + "</col>" + " in Stealing Creation.");
+				case 24:
+					return newstruct cs2func_script_1022_struct(60, 13256, "Members: Blast Furnace - Anvils", "Members can now use the " + "<col=000080>" + "anvils" + "</col>" + " at the Blast Furnace.");
+				case 25:
+					return newstruct cs2func_script_1022_struct(60, 14303, "Members: Stealing Creation - class 4 dagger", "Members can now make " + "<col=000080>" + "class 4 daggers" + "</col>" + " in Stealing Creation.");
+				case 26:
+					return newstruct cs2func_script_1022_struct(60, 14138, "Members: Stealing Creation - class 4 hatchet", "Members can now make " + "<col=000080>" + "class 4 hatchets" + "</col>" + " in Stealing Creation.");
+				case 27:
+					return newstruct cs2func_script_1022_struct(60, 14373, "Members: Stealing Creation - class 4 helmet", "Members can now make " + "<col=000080>" + "class 4 helmets" + "</col>" + " in Stealing Creation.");
+				case 28:
+					return newstruct cs2func_script_1022_struct(60, 14293, "Members: Stealing Creation - class 4 scimitar", "Members can now make " + "<col=000080>" + "class 4 scimitars" + "</col>" + " in Stealing Creation.");
+				case 29:
+					return newstruct cs2func_script_1022_struct(60, 14128, "Members: Stealing Creation - class 4 pickaxe", "Members can now make " + "<col=000080>" + "class 4 pickaxes" + "</col>" + " in Stealing Creation.");
+				case 30:
+					return newstruct cs2func_script_1022_struct(60, 14313, "Members: Stealing Creation - class 4 warhammer", "Members can now make " + "<col=000080>" + "class 4 warhammers" + "</col>" + " in Stealing Creation.");
+				case 31:
+					return newstruct cs2func_script_1022_struct(60, 14363, "Members: Stealing Creation - class 4 platelegs", "Members can now make " + "<col=000080>" + "class 4 platelegs" + "</col>" + " in Stealing Creation.");
+				case 32:
+					return newstruct cs2func_script_1022_struct(60, 14353, "Members: Stealing Creation - class 4 platebody", "Members can now make " + "<col=000080>" + "class 4 platebodies" + "</col>" + " in Stealing Creation.");
+				case 33:
+					return newstruct cs2func_script_1022_struct(80, 14305, "Members: Stealing Creation - class 5 dagger", "Members can now make " + "<col=000080>" + "class 5 daggers" + "</col>" + " in Stealing Creation.");
+				case 34:
+					return newstruct cs2func_script_1022_struct(80, 14140, "Members: Stealing Creation - class 5 hatchet", "Members can now make " + "<col=000080>" + "class 5 hatchets" + "</col>" + " in Stealing Creation.");
+				case 35:
+					return newstruct cs2func_script_1022_struct(80, 14375, "Members: Stealing Creation - class 5 helmet", "Members can now make " + "<col=000080>" + "class 5 helmets" + "</col>" + " in Stealing Creation.");
+				case 36:
+					return newstruct cs2func_script_1022_struct(80, 14295, "Members: Stealing Creation - class 5 scimitar", "Members can now make " + "<col=000080>" + "class 5 scimitars" + "</col>" + " in Stealing Creation.");
+				case 37:
+					return newstruct cs2func_script_1022_struct(80, 14130, "Members: Stealing Creation - class 5 pickaxe", "Members can now make " + "<col=000080>" + "class 5 pickaxes" + "</col>" + " in Stealing Creation.");
+				case 38:
+					return newstruct cs2func_script_1022_struct(80, 14315, "Members: Stealing Creation - class 5 warhammer", "Members can now make " + "<col=000080>" + "class 5 warhammers" + "</col>" + " in Stealing Creation.");
+				case 39:
+					return newstruct cs2func_script_1022_struct(80, 14365, "Members: Stealing Creation - class 5 platelegs", "Members can now make " + "<col=000080>" + "class 5 platelegs" + "</col>" + " in Stealing Creation.");
+				case 40:
+					return newstruct cs2func_script_1022_struct(80, 14355, "Members: Stealing Creation - class 5 platebody", "Members can now make " + "<col=000080>" + "class 5 platebodies" + "</col>" + " in Stealing Creation.");
+			}
+			break;
+			case 14:
+			switch (arg1) {
+				case 0:
+					return newstruct cs2func_script_1022_struct(-1, 15707, "Dungeoneering skill tasks" + "<br>" + "As your Smithing level increases, you will be able to attempt higher-level smithing tasks within Daemonheim. You will also be more likely to succeed when attempting smithing tasks within Daemonheim.", "");
+				case 1:
+					return newstruct cs2func_script_1022_struct(1, 17650, "Novite (Tier 1)", "You can now smelt " + "<col=000080>" + "novite" + "</col>" + " within Daemonheim.");
+				case 2:
+					return newstruct cs2func_script_1022_struct(1, 17885, "Novite arrowheads (Tier 1) (15)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "novite arrowheads" + "</col>" + " within Daemonheim.");
+				case 3:
+					return newstruct cs2func_script_1022_struct(1, 16757, "Novite dagger (Tier 1)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "novite daggers" + "</col>" + " within Daemonheim.");
+				case 4:
+					return newstruct cs2func_script_1022_struct(1, 16339, "Novite boots (Tier 1)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "novite boots" + "</col>" + " within Daemonheim.");
+				case 5:
+					return newstruct cs2func_script_1022_struct(1, 16273, "Novite gauntlets (Tier 1)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "novite gauntlets" + "</col>" + " within Daemonheim.");
+				case 6:
+					return newstruct cs2func_script_1022_struct(2, 16361, "Novite hatchet (Tier 1)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "novite hatchets" + "</col>" + " within Daemonheim.");
+				case 7:
+					return newstruct cs2func_script_1022_struct(2, 16295, "Novite pickaxe (Tier 1)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "novite pickaxes" + "</col>" + " within Daemonheim.");
+				case 8:
+					return newstruct cs2func_script_1022_struct(3, 17019, "Novite warhammer (Tier 1)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "novite warhammers" + "</col>" + " within Daemonheim.");
+				case 9:
+					return newstruct cs2func_script_1022_struct(3, 16935, "Novite rapier (Tier 1)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "novite rapiers" + "</col>" + " within Daemonheim.");
+				case 10:
+					return newstruct cs2func_script_1022_struct(4, 16383, "Novite longsword (Tier 1)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "novite longswords" + "</col>" + " within Daemonheim.");
+				case 11:
+					return newstruct cs2func_script_1022_struct(5, 16691, "Novite full helm (Tier 1)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "novite full helms" + "</col>" + " within Daemonheim.");
+				case 12:
+					return newstruct cs2func_script_1022_struct(5, 15753, "Novite battleaxe (Tier 1)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "novite battleaxes" + "</col>" + " within Daemonheim.");
+				case 13:
+					return newstruct cs2func_script_1022_struct(6, 17341, "Novite kiteshield (Tier 1)" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "novite kiteshields" + "</col>" + " within Daemonheim.");
+				case 14:
+					return newstruct cs2func_script_1022_struct(6, 16713, "Novite chainbody (Tier 1)" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "novite chainbodies" + "</col>" + " within Daemonheim.");
+				case 15:
+					return newstruct cs2func_script_1022_struct(7, 16669, "Novite platelegs (Tier 1)" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "novite platelegs" + "</col>" + " within Daemonheim.");
+				case 16:
+					return newstruct cs2func_script_1022_struct(7, 16647, "Novite plateskirt (Tier 1)" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "novite plateskirts" + "</col>" + " within Daemonheim.");
+				case 17:
+					return newstruct cs2func_script_1022_struct(7, 17063, "Novite spear (Tier 1)" + "<br>" + " 4 bars", "You can now smith " + "<col=000080>" + "novite spears" + "</col>" + " within Daemonheim.");
+				case 18:
+					return newstruct cs2func_script_1022_struct(8, 16405, "Novite maul (Tier 1)" + "<br>" + " 4 bars", "You can now smith " + "<col=000080>" + "novite mauls" + "</col>" + " within Daemonheim.");
+				case 19:
+					return newstruct cs2func_script_1022_struct(8, 16889, "Novite 2h sword (Tier 1)" + "<br>" + " 4 bars", "You can now smith " + "<col=000080>" + "novite 2h swords" + "</col>" + " within Daemonheim.");
+				case 20:
+					return newstruct cs2func_script_1022_struct(9, 17239, "Novite platebody (Tier 1)" + "<br>" + " 5 bars", "You can now smith " + "<col=000080>" + "novite platebodies" + "</col>" + " within Daemonheim.");
+				case 21:
+					return newstruct cs2func_script_1022_struct(10, 17652, "Bathus (Tier 2)", "You can now smelt " + "<col=000080>" + "bathus" + "</col>" + " within Daemonheim.");
+				case 22:
+					return newstruct cs2func_script_1022_struct(10, 17890, "Bathus arrowheads (Tier 2) (15)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "bathus arrowheads" + "</col>" + " within Daemonheim.");
+				case 23:
+					return newstruct cs2func_script_1022_struct(10, 16765, "Bathus dagger (Tier 2)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "bathus daggers" + "</col>" + " within Daemonheim.");
+				case 24:
+					return newstruct cs2func_script_1022_struct(11, 16341, "Bathus boots (Tier 2)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "bathus boots" + "</col>" + " within Daemonheim.");
+				case 25:
+					return newstruct cs2func_script_1022_struct(11, 16275, "Bathus gauntlets (Tier 2)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "bathus gauntlets" + "</col>" + " within Daemonheim.");
+				case 26:
+					return newstruct cs2func_script_1022_struct(12, 16363, "Bathus hatchet (Tier 2)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "bathus hatchets" + "</col>" + " within Daemonheim.");
+				case 27:
+					return newstruct cs2func_script_1022_struct(12, 16297, "Bathus pickaxe (Tier 2)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "bathus pickaxes" + "</col>" + " within Daemonheim.");
+				case 28:
+					return newstruct cs2func_script_1022_struct(13, 17021, "Bathus warhammer (Tier 2)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "bathus warhammers" + "</col>" + " within Daemonheim.");
+				case 29:
+					return newstruct cs2func_script_1022_struct(13, 16937, "Bathus rapier (Tier 2)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "bathus rapiers" + "</col>" + " within Daemonheim.");
+				case 30:
+					return newstruct cs2func_script_1022_struct(14, 16385, "Bathus longsword (Tier 2)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "bathus longswords" + "</col>" + " within Daemonheim.");
+				case 31:
+					return newstruct cs2func_script_1022_struct(15, 16693, "Bathus full helm (Tier 2)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "bathus full helms" + "</col>" + " within Daemonheim.");
+				case 32:
+					return newstruct cs2func_script_1022_struct(15, 15755, "Bathus battleaxe (Tier 2)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "bathus battleaxes" + "</col>" + " within Daemonheim.");
+				case 33:
+					return newstruct cs2func_script_1022_struct(16, 17343, "Bathus kiteshield (Tier 2)" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "bathus kiteshields" + "</col>" + " within Daemonheim.");
+				case 34:
+					return newstruct cs2func_script_1022_struct(16, 16715, "Bathus chainbody (Tier 2)" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "bathus chainbodies" + "</col>" + " within Daemonheim.");
+				case 35:
+					return newstruct cs2func_script_1022_struct(17, 16671, "Bathus platelegs (Tier 2)" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "bathus platelegs" + "</col>" + " within Daemonheim.");
+				case 36:
+					return newstruct cs2func_script_1022_struct(17, 16649, "Bathus plateskirt (Tier 2)" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "bathus plateskirts" + "</col>" + " within Daemonheim.");
+				case 37:
+					return newstruct cs2func_script_1022_struct(17, 17071, "Bathus spear (Tier 2)" + "<br>" + " 4 bars", "You can now smith " + "<col=000080>" + "bathus spears" + "</col>" + " within Daemonheim.");
+				case 38:
+					return newstruct cs2func_script_1022_struct(18, 16407, "Bathus maul (Tier 2)" + "<br>" + " 4 bars", "You can now smith " + "<col=000080>" + "bathus mauls" + "</col>" + " within Daemonheim.");
+				case 39:
+					return newstruct cs2func_script_1022_struct(18, 16891, "Bathus 2h sword (Tier 2)" + "<br>" + " 4 bars", "You can now smith " + "<col=000080>" + "bathus 2h swords" + "</col>" + " within Daemonheim.");
+				case 40:
+					return newstruct cs2func_script_1022_struct(19, 17241, "Bathus platebody (Tier 2)" + "<br>" + " 5 bars", "You can now smith " + "<col=000080>" + "bathus platebodies" + "</col>" + " within Daemonheim.");
+				case 41:
+					return newstruct cs2func_script_1022_struct(20, 17654, "Marmaros (Tier 3)", "You can now smelt " + "<col=000080>" + "marmaros" + "</col>" + " within Daemonheim.");
+				case 42:
+					return newstruct cs2func_script_1022_struct(20, 17895, "Marmaros arrowheads (Tier 3) (15)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "marmaros arrowheads" + "</col>" + " within Daemonheim.");
+				case 43:
+					return newstruct cs2func_script_1022_struct(20, 16773, "Marmaros dagger (Tier 3)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "marmaros daggers" + "</col>" + " within Daemonheim.");
+				case 44:
+					return newstruct cs2func_script_1022_struct(21, 16343, "Marmaros boots (Tier 3)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "marmaros boots" + "</col>" + " within Daemonheim.");
+				case 45:
+					return newstruct cs2func_script_1022_struct(21, 16277, "Marmaros gauntlets (Tier 3)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "marmaros gauntlets" + "</col>" + " within Daemonheim.");
+				case 46:
+					return newstruct cs2func_script_1022_struct(22, 16365, "Marmaros hatchet (Tier 3)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "marmaros hatchets" + "</col>" + " within Daemonheim.");
+				case 47:
+					return newstruct cs2func_script_1022_struct(22, 16299, "Marmaros pickaxe (Tier 3)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "marmaros pickaxes" + "</col>" + " within Daemonheim.");
+				case 48:
+					return newstruct cs2func_script_1022_struct(23, 17023, "Marmaros warhammer (Tier 3)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "marmaros warhammers" + "</col>" + " within Daemonheim.");
+				case 49:
+					return newstruct cs2func_script_1022_struct(23, 16939, "Marmaros rapier (Tier 3)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "marmaros rapiers" + "</col>" + " within Daemonheim.");
+				case 50:
+					return newstruct cs2func_script_1022_struct(24, 16387, "Marmaros longsword (Tier 3)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "marmaros longswords" + "</col>" + " within Daemonheim.");
+				case 51:
+					return newstruct cs2func_script_1022_struct(25, 16695, "Marmaros full helm (Tier 3)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "marmaros full helms" + "</col>" + " within Daemonheim.");
+				case 52:
+					return newstruct cs2func_script_1022_struct(25, 15757, "Marmaros battleaxe (Tier 3)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "marmaros battleaxes" + "</col>" + " within Daemonheim.");
+				case 53:
+					return newstruct cs2func_script_1022_struct(26, 17345, "Marmaros kiteshield (Tier 3)" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "marmaros kiteshields" + "</col>" + " within Daemonheim.");
+				case 54:
+					return newstruct cs2func_script_1022_struct(26, 16717, "Marmaros chainbody (Tier 3)" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "marmaros chainbodies" + "</col>" + " within Daemonheim.");
+				case 55:
+					return newstruct cs2func_script_1022_struct(27, 16673, "Marmaros platelegs (Tier 3)" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "marmaros platelegs" + "</col>" + " within Daemonheim.");
+				case 56:
+					return newstruct cs2func_script_1022_struct(27, 16651, "Marmaros plateskirt (Tier 3)" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "marmaros plateskirts" + "</col>" + " within Daemonheim.");
+				case 57:
+					return newstruct cs2func_script_1022_struct(27, 17079, "Marmaros spear (Tier 3)" + "<br>" + " 4 bars", "You can now smith " + "<col=000080>" + "marmaros spears" + "</col>" + " within Daemonheim.");
+				case 58:
+					return newstruct cs2func_script_1022_struct(28, 16409, "Marmaros maul (Tier 3)" + "<br>" + " 4 bars", "You can now smith " + "<col=000080>" + "marmaros mauls" + "</col>" + " within Daemonheim.");
+				case 59:
+					return newstruct cs2func_script_1022_struct(28, 16893, "Marmaros 2h sword (Tier 3)" + "<br>" + " 4 bars", "You can now smith " + "<col=000080>" + "marmaros 2h swords" + "</col>" + " within Daemonheim.");
+				case 60:
+					return newstruct cs2func_script_1022_struct(29, 17243, "Marmaros platebody (Tier 3)" + "<br>" + " 5 bars", "You can now smith " + "<col=000080>" + "marmaros platebodies" + "</col>" + " within Daemonheim.");
+				case 61:
+					return newstruct cs2func_script_1022_struct(30, 17656, "Kratonite (Tier 4)", "You can now smelt " + "<col=000080>" + "kratonite" + "</col>" + " within Daemonheim.");
+				case 62:
+					return newstruct cs2func_script_1022_struct(30, 17900, "Kratonite arrowheads (Tier 4) (15)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "kratonite arrowheads" + "</col>" + " within Daemonheim.");
+				case 63:
+					return newstruct cs2func_script_1022_struct(30, 16781, "Kratonite dagger (Tier 4)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "kratonite daggers" + "</col>" + " within Daemonheim.");
+				case 64:
+					return newstruct cs2func_script_1022_struct(31, 16345, "Kratonite boots (Tier 4)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "kratonite boots" + "</col>" + " within Daemonheim.");
+				case 65:
+					return newstruct cs2func_script_1022_struct(31, 16279, "Kratonite gauntlets (Tier 4)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "kratonite gauntlets" + "</col>" + " within Daemonheim.");
+				case 66:
+					return newstruct cs2func_script_1022_struct(32, 16367, "Kratonite hatchet (Tier 4)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "kratonite hatchets" + "</col>" + " within Daemonheim.");
+				case 67:
+					return newstruct cs2func_script_1022_struct(32, 16301, "Kratonite pickaxe (Tier 4)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "kratonite pickaxes" + "</col>" + " within Daemonheim.");
+				case 68:
+					return newstruct cs2func_script_1022_struct(33, 17025, "Kratonite warhammer (Tier 4)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "kratonite warhammers" + "</col>" + " within Daemonheim.");
+				case 69:
+					return newstruct cs2func_script_1022_struct(33, 16941, "Kratonite rapier (Tier 4)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "kratonite rapiers" + "</col>" + " within Daemonheim.");
+				case 70:
+					return newstruct cs2func_script_1022_struct(34, 16389, "Kratonite longsword (Tier 4)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "kratonite longswords" + "</col>" + " within Daemonheim.");
+				case 71:
+					return newstruct cs2func_script_1022_struct(35, 16697, "Kratonite full helm (Tier 4)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "kratonite full helms" + "</col>" + " within Daemonheim.");
+				case 72:
+					return newstruct cs2func_script_1022_struct(35, 15759, "Kratonite battleaxe (Tier 4)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "kratonite battleaxes" + "</col>" + " within Daemonheim.");
+				case 73:
+					return newstruct cs2func_script_1022_struct(36, 17347, "Kratonite kiteshield (Tier 4)" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "kratonite kiteshields" + "</col>" + " within Daemonheim.");
+				case 74:
+					return newstruct cs2func_script_1022_struct(36, 16719, "Kratonite chainbody (Tier 4)" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "kratonite chainbodies" + "</col>" + " within Daemonheim.");
+				case 75:
+					return newstruct cs2func_script_1022_struct(37, 16675, "Kratonite platelegs (Tier 4)" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "kratonite platelegs" + "</col>" + " within Daemonheim.");
+				case 76:
+					return newstruct cs2func_script_1022_struct(37, 16653, "Kratonite plateskirt (Tier 4)" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "kratonite plateskirts" + "</col>" + " within Daemonheim.");
+				case 77:
+					return newstruct cs2func_script_1022_struct(37, 17087, "Kratonite spear (Tier 4)" + "<br>" + " 4 bars", "You can now smith " + "<col=000080>" + "kratonite spears" + "</col>" + " within Daemonheim.");
+				case 78:
+					return newstruct cs2func_script_1022_struct(38, 16411, "Kratonite maul (Tier 4)" + "<br>" + " 4 bars", "You can now smith " + "<col=000080>" + "kratonite mauls" + "</col>" + " within Daemonheim.");
+				case 79:
+					return newstruct cs2func_script_1022_struct(38, 16895, "Kratonite 2h sword (Tier 4)" + "<br>" + " 4 bars", "You can now smith " + "<col=000080>" + "kratonite 2h swords" + "</col>" + " within Daemonheim.");
+				case 80:
+					return newstruct cs2func_script_1022_struct(39, 17245, "Kratonite platebody (Tier 4)" + "<br>" + " 5 bars", "You can now smith " + "<col=000080>" + "kratonite platebodies" + "</col>" + " within Daemonheim.");
+				case 81:
+					return newstruct cs2func_script_1022_struct(40, 17658, "Fractite (Tier 5)", "You can now smelt " + "<col=000080>" + "fractite" + "</col>" + " within Daemonheim.");
+				case 82:
+					return newstruct cs2func_script_1022_struct(40, 17905, "Fractite arrowheads (Tier 5) (15)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "fractite arrowheads" + "</col>" + " within Daemonheim.");
+				case 83:
+					return newstruct cs2func_script_1022_struct(40, 16789, "Fractite dagger (Tier 5)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "fractite daggers" + "</col>" + " within Daemonheim.");
+				case 84:
+					return newstruct cs2func_script_1022_struct(41, 16347, "Fractite boots (Tier 5)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "fractite boots" + "</col>" + " within Daemonheim.");
+				case 85:
+					return newstruct cs2func_script_1022_struct(41, 16281, "Fractite gauntlets (Tier 5)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "fractite gauntlets" + "</col>" + " within Daemonheim.");
+				case 86:
+					return newstruct cs2func_script_1022_struct(42, 16369, "Fractite hatchet (Tier 5)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "fractite hatchets" + "</col>" + " within Daemonheim.");
+				case 87:
+					return newstruct cs2func_script_1022_struct(42, 16303, "Fractite pickaxe (Tier 5)" + "<br>" + " 1 bar", "You can now smith " + "<col=000080>" + "fractite pickaxes" + "</col>" + " within Daemonheim.");
+				case 88:
+					return newstruct cs2func_script_1022_struct(43, 17027, "Fractite warhammer (Tier 5)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "fractite warhammers" + "</col>" + " within Daemonheim.");
+				case 89:
+					return newstruct cs2func_script_1022_struct(43, 16943, "Fractite rapier (Tier 5)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "fractite rapiers" + "</col>" + " within Daemonheim.");
+				case 90:
+					return newstruct cs2func_script_1022_struct(44, 16391, "Fractite longsword (Tier 5)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "fractite longswords" + "</col>" + " within Daemonheim.");
+				case 91:
+					return newstruct cs2func_script_1022_struct(45, 16699, "Fractite full helm (Tier 5)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "fractite full helms" + "</col>" + " within Daemonheim.");
+				case 92:
+					return newstruct cs2func_script_1022_struct(45, 15761, "Fractite battleaxe (Tier 5)" + "<br>" + " 2 bars", "You can now smith " + "<col=000080>" + "fractite battleaxes" + "</col>" + " within Daemonheim.");
+				case 93:
+					return newstruct cs2func_script_1022_struct(46, 17349, "Fractite kiteshield (Tier 5)" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "fractite kiteshields" + "</col>" + " within Daemonheim.");
+				case 94:
+					return newstruct cs2func_script_1022_struct(46, 16721, "Fractite chainbody (Tier 5)" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "fractite chainbodies" + "</col>" + " within Daemonheim.");
+				case 95:
+					return newstruct cs2func_script_1022_struct(47, 16677, "Fractite platelegs (Tier 5)" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "fractite platelegs" + "</col>" + " within Daemonheim.");
+				case 96:
+					return newstruct cs2func_script_1022_struct(47, 16655, "Fractite plateskirt (Tier 5)" + "<br>" + " 3 bars", "You can now smith " + "<col=000080>" + "fractite plateskirts" + "</col>" + " within Daemonheim.");
+				case 97:
+					return newstruct cs2func_script_1022_struct(47, 17095, "Fractite spear (Tier 5)" + "<br>" + " 4 bars", "You can now smith " + "<col=000080>" + "fractite spears" + "</col>" + " within Daemonheim.");
+				case 98:
+					return newstruct cs2func_script_1022_struct(48, 16413, "Fractite maul (Tier 5)" + "<br>" + " 4 bars", "You can now smith " + "<col=000080>" + "fractite mauls" + "</col>" + " within Daemonheim.");
+				case 99:
+					return newstruct cs2func_script_1022_struct(48, 16897, "Fractite 2h sword (Tier 5)" + "<br>" + " 4 bars", "You can now smith " + "<col=000080>" + "fractite 2h swords" + "</col>" + " within Daemonheim.");
+				case 100:
+					return newstruct cs2func_script_1022_struct(49, 17247, "Fractite platebody (Tier 5)" + "<br>" + " 5 bars", "You can now smith " + "<col=000080>" + "fractite platebodies" + "</col>" + " within Daemonheim.");
+				case 101:
+					return newstruct cs2func_script_1022_struct(50, 17660, "Members: Zephyrium (Tier 6)", "Members can now smelt " + "<col=000080>" + "zephyrium" + "</col>" + " within Daemonheim.");
+				case 102:
+					return newstruct cs2func_script_1022_struct(50, 17910, "Members: Zephyrium arrowheads (Tier 6) (15)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "zephyrium arrowheads" + "</col>" + " within Daemonheim.");
+				case 103:
+					return newstruct cs2func_script_1022_struct(50, 16797, "Members: Zephyrium dagger (Tier 6)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "zephyrium daggers" + "</col>" + " within Daemonheim.");
+				case 104:
+					return newstruct cs2func_script_1022_struct(51, 16349, "Members: Zephyrium boots (Tier 6)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "zephyrium boots" + "</col>" + " within Daemonheim.");
+				case 105:
+					return newstruct cs2func_script_1022_struct(51, 16283, "Members: Zephyrium gauntlets (Tier 6)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "zephyrium gauntlets" + "</col>" + " within Daemonheim.");
+				case 106:
+					return newstruct cs2func_script_1022_struct(52, 16371, "Members: Zephyrium hatchet (Tier 6)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "zephyrium hatchets" + "</col>" + " within Daemonheim.");
+				case 107:
+					return newstruct cs2func_script_1022_struct(52, 16305, "Members: Zephyrium pickaxe (Tier 6)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "zephyrium pickaxes" + "</col>" + " within Daemonheim.");
+				case 108:
+					return newstruct cs2func_script_1022_struct(53, 17029, "Members: Zephyrium warhammer (Tier 6)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "zephyrium warhammers" + "</col>" + " within Daemonheim.");
+				case 109:
+					return newstruct cs2func_script_1022_struct(53, 16945, "Members: Zephyrium rapier (Tier 6)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "zephyrium rapiers" + "</col>" + " within Daemonheim.");
+				case 110:
+					return newstruct cs2func_script_1022_struct(54, 16393, "Members: Zephyrium longsword (Tier 6)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "zephyrium longswords" + "</col>" + " within Daemonheim.");
+				case 111:
+					return newstruct cs2func_script_1022_struct(55, 16701, "Members: Zephyrium full helm (Tier 6)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "zephyrium full helms" + "</col>" + " within Daemonheim.");
+				case 112:
+					return newstruct cs2func_script_1022_struct(55, 15763, "Members: Zephyrium battleaxe (Tier 6)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "zephyrium battleaxes" + "</col>" + " within Daemonheim.");
+				case 113:
+					return newstruct cs2func_script_1022_struct(56, 17351, "Members: Zephyrium kiteshield (Tier 6)" + "<br>" + " 3 bars", "Members can now smith " + "<col=000080>" + "zephyrium kiteshields" + "</col>" + " within Daemonheim.");
+				case 114:
+					return newstruct cs2func_script_1022_struct(56, 16723, "Members: Zephyrium chainbody (Tier 6)" + "<br>" + " 3 bars", "Members can now smith " + "<col=000080>" + "zephyrium chainbodies" + "</col>" + " within Daemonheim.");
+				case 115:
+					return newstruct cs2func_script_1022_struct(57, 16679, "Members: Zephyrium platelegs (Tier 6)" + "<br>" + " 3 bars", "Members can now smith " + "<col=000080>" + "zephyrium platelegs" + "</col>" + " within Daemonheim.");
+				case 116:
+					return newstruct cs2func_script_1022_struct(57, 16657, "Members: Zephyrium plateskirt (Tier 6)" + "<br>" + " 3 bars", "Members can now smith " + "<col=000080>" + "zephyrium plateskirts" + "</col>" + " within Daemonheim.");
+				case 117:
+					return newstruct cs2func_script_1022_struct(57, 17103, "Members: Zephyrium spear (Tier 6)" + "<br>" + " 4 bars", "Members can now smith " + "<col=000080>" + "zephyrium spears" + "</col>" + " within Daemonheim.");
+				case 118:
+					return newstruct cs2func_script_1022_struct(58, 16415, "Members: Zephyrium maul (Tier 6)" + "<br>" + " 4 bars", "Members can now smith " + "<col=000080>" + "zephyrium mauls" + "</col>" + " within Daemonheim.");
+				case 119:
+					return newstruct cs2func_script_1022_struct(58, 16899, "Members: Zephyrium 2h sword (Tier 6)" + "<br>" + " 4 bars", "Members can now smith " + "<col=000080>" + "zephyrium 2h swords" + "</col>" + " within Daemonheim.");
+				case 120:
+					return newstruct cs2func_script_1022_struct(59, 17249, "Members: Zephyrium platebody (Tier 6)" + "<br>" + " 5 bars", "Members can now smith " + "<col=000080>" + "zephyrium platebodies" + "</col>" + " within Daemonheim.");
+				case 121:
+					return newstruct cs2func_script_1022_struct(60, 17662, "Members: Argonite (Tier 7)", "Members can now smelt " + "<col=000080>" + "argonite" + "</col>" + " within Daemonheim.");
+				case 122:
+					return newstruct cs2func_script_1022_struct(60, 17915, "Members: Argonite arrowheads (Tier 7) (15)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "argonite arrowheads" + "</col>" + " within Daemonheim.");
+				case 123:
+					return newstruct cs2func_script_1022_struct(60, 16805, "Members: Argonite dagger (Tier 7)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "argonite daggers" + "</col>" + " within Daemonheim.");
+				case 124:
+					return newstruct cs2func_script_1022_struct(61, 16351, "Members: Argonite boots (Tier 7)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "argonite boots" + "</col>" + " within Daemonheim.");
+				case 125:
+					return newstruct cs2func_script_1022_struct(61, 16285, "Members: Argonite gauntlets (Tier 7)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "argonite gauntlets" + "</col>" + " within Daemonheim.");
+				case 126:
+					return newstruct cs2func_script_1022_struct(62, 16373, "Members: Argonite hatchet (Tier 7)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "argonite hatchets" + "</col>" + " within Daemonheim.");
+				case 127:
+					return newstruct cs2func_script_1022_struct(62, 16307, "Members: Argonite pickaxe (Tier 7)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "argonite pickaxes" + "</col>" + " within Daemonheim.");
+				case 128:
+					return newstruct cs2func_script_1022_struct(63, 17031, "Members: Argonite warhammer (Tier 7)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "argonite warhammers" + "</col>" + " within Daemonheim.");
+				case 129:
+					return newstruct cs2func_script_1022_struct(63, 16947, "Members: Argonite rapier (Tier 7)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "argonite rapiers" + "</col>" + " within Daemonheim.");
+				case 130:
+					return newstruct cs2func_script_1022_struct(64, 16395, "Members: Argonite longsword (Tier 7)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "argonite longswords" + "</col>" + " within Daemonheim.");
+				case 131:
+					return newstruct cs2func_script_1022_struct(65, 16703, "Members: Argonite full helm (Tier 7)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "argonite full helms" + "</col>" + " within Daemonheim.");
+				case 132:
+					return newstruct cs2func_script_1022_struct(65, 15765, "Members: Argonite battleaxe (Tier 7)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "argonite battleaxes" + "</col>" + " within Daemonheim.");
+				case 133:
+					return newstruct cs2func_script_1022_struct(66, 17353, "Members: Argonite kiteshield (Tier 7)" + "<br>" + " 3 bars", "Members can now smith " + "<col=000080>" + "argonite kiteshields" + "</col>" + " within Daemonheim.");
+				case 134:
+					return newstruct cs2func_script_1022_struct(66, 16725, "Members: Argonite chainbody (Tier 7)" + "<br>" + " 3 bars", "Members can now smith " + "<col=000080>" + "argonite chainbodies" + "</col>" + " within Daemonheim.");
+				case 135:
+					return newstruct cs2func_script_1022_struct(67, 16681, "Members: Argonite platelegs (Tier 7)" + "<br>" + " 3 bars", "Members can now smith " + "<col=000080>" + "argonite platelegs" + "</col>" + " within Daemonheim.");
+				case 136:
+					return newstruct cs2func_script_1022_struct(67, 16659, "Members: Argonite plateskirt (Tier 7)" + "<br>" + " 3 bars", "Members can now smith " + "<col=000080>" + "argonite plateskirts" + "</col>" + " within Daemonheim.");
+				case 137:
+					return newstruct cs2func_script_1022_struct(67, 17111, "Members: Argonite spear (Tier 7)" + "<br>" + " 4 bars", "Members can now smith " + "<col=000080>" + "argonite spears" + "</col>" + " within Daemonheim.");
+				case 138:
+					return newstruct cs2func_script_1022_struct(68, 16417, "Members: Argonite maul (Tier 7)" + "<br>" + " 4 bars", "Members can now smith " + "<col=000080>" + "argonite mauls" + "</col>" + " within Daemonheim.");
+				case 139:
+					return newstruct cs2func_script_1022_struct(68, 16901, "Members: Argonite 2h sword (Tier 7)" + "<br>" + " 4 bars", "Members can now smith " + "<col=000080>" + "argonite 2h swords" + "</col>" + " within Daemonheim.");
+				case 140:
+					return newstruct cs2func_script_1022_struct(69, 17251, "Members: Argonite platebody (Tier 7)" + "<br>" + " 5 bars", "Members can now smith " + "<col=000080>" + "argonite platebodies" + "</col>" + " within Daemonheim.");
+				case 141:
+					return newstruct cs2func_script_1022_struct(70, 17664, "Members: Katagon (Tier 8)", "Members can now smelt " + "<col=000080>" + "katagon" + "</col>" + " within Daemonheim.");
+				case 142:
+					return newstruct cs2func_script_1022_struct(70, 17920, "Members: Katagon arrowheads (Tier 8) (15)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "katagon arrowheads" + "</col>" + " within Daemonheim.");
+				case 143:
+					return newstruct cs2func_script_1022_struct(70, 16813, "Members: Katagon dagger (Tier 8)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "katagon daggers" + "</col>" + " within Daemonheim.");
+				case 144:
+					return newstruct cs2func_script_1022_struct(71, 16353, "Members: Katagon boots (Tier 8)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "katagon boots" + "</col>" + " within Daemonheim.");
+				case 145:
+					return newstruct cs2func_script_1022_struct(71, 16287, "Members: Katagon gauntlets (Tier 8)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "katagon gauntlets" + "</col>" + " within Daemonheim.");
+				case 146:
+					return newstruct cs2func_script_1022_struct(72, 16375, "Members: Katagon hatchet (Tier 8)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "katagon hatchets" + "</col>" + " within Daemonheim.");
+				case 147:
+					return newstruct cs2func_script_1022_struct(72, 16309, "Members: Katagon pickaxe (Tier 8)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "katagon pickaxes" + "</col>" + " within Daemonheim.");
+				case 148:
+					return newstruct cs2func_script_1022_struct(73, 17033, "Members: Katagon warhammer (Tier 8)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "katagon warhammers" + "</col>" + " within Daemonheim.");
+				case 149:
+					return newstruct cs2func_script_1022_struct(73, 16949, "Members: Katagon rapier (Tier 8)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "katagon rapiers" + "</col>" + " within Daemonheim.");
+				case 150:
+					return newstruct cs2func_script_1022_struct(74, 16397, "Members: Katagon longsword (Tier 8)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "katagon longswords" + "</col>" + " within Daemonheim.");
+				case 151:
+					return newstruct cs2func_script_1022_struct(75, 16705, "Members: Katagon full helm (Tier 8)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "katagon full helms" + "</col>" + " within Daemonheim.");
+				case 152:
+					return newstruct cs2func_script_1022_struct(75, 15767, "Members: Katagon battleaxe (Tier 8)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "katagon battleaxes" + "</col>" + " within Daemonheim.");
+				case 153:
+					return newstruct cs2func_script_1022_struct(76, 17355, "Members: Katagon kiteshield (Tier 8)" + "<br>" + " 3 bars", "Members can now smith " + "<col=000080>" + "katagon kiteshields" + "</col>" + " within Daemonheim.");
+				case 154:
+					return newstruct cs2func_script_1022_struct(76, 16727, "Members: Katagon chainbody (Tier 8)" + "<br>" + " 3 bars", "Members can now smith " + "<col=000080>" + "katagon chainbodies" + "</col>" + " within Daemonheim.");
+				case 155:
+					return newstruct cs2func_script_1022_struct(77, 16683, "Members: Katagon platelegs (Tier 8)" + "<br>" + " 3 bars", "Members can now smith " + "<col=000080>" + "katagon platelegs" + "</col>" + " within Daemonheim.");
+				case 156:
+					return newstruct cs2func_script_1022_struct(77, 16661, "Members: Katagon plateskirt (Tier 8)" + "<br>" + " 3 bars", "Members can now smith " + "<col=000080>" + "katagon plateskirts" + "</col>" + " within Daemonheim.");
+				case 157:
+					return newstruct cs2func_script_1022_struct(77, 17119, "Members: Katagon spear (Tier 8)" + "<br>" + " 4 bars", "Members can now smith " + "<col=000080>" + "katagon spears" + "</col>" + " within Daemonheim.");
+				case 158:
+					return newstruct cs2func_script_1022_struct(78, 16419, "Members: Katagon maul (Tier 8)" + "<br>" + " 4 bars", "Members can now smith " + "<col=000080>" + "katagon mauls" + "</col>" + " within Daemonheim.");
+				case 159:
+					return newstruct cs2func_script_1022_struct(78, 16903, "Members: Katagon 2h sword (Tier 8)" + "<br>" + " 4 bars", "Members can now smith " + "<col=000080>" + "katagon 2h swords" + "</col>" + " within Daemonheim.");
+				case 160:
+					return newstruct cs2func_script_1022_struct(79, 17253, "Members: Katagon platebody (Tier 8)" + "<br>" + " 5 bars", "Members can now smith " + "<col=000080>" + "katagon platebodies" + "</col>" + " within Daemonheim.");
+				case 161:
+					return newstruct cs2func_script_1022_struct(80, 17666, "Members: Gorgonite (Tier 9)", "Members can now smelt " + "<col=000080>" + "gorgonite" + "</col>" + " within Daemonheim.");
+				case 162:
+					return newstruct cs2func_script_1022_struct(80, 17925, "Members: Gorgonite arrowheads (Tier 9) (15)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "gorgonite arrowheads" + "</col>" + " within Daemonheim.");
+				case 163:
+					return newstruct cs2func_script_1022_struct(80, 16821, "Members: Gorgonite dagger (Tier 9)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "gorgonite daggers" + "</col>" + " within Daemonheim.");
+				case 164:
+					return newstruct cs2func_script_1022_struct(81, 16355, "Members: Gorgonite boots (Tier 9)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "gorgonite boots" + "</col>" + " within Daemonheim.");
+				case 165:
+					return newstruct cs2func_script_1022_struct(81, 16289, "Members: Gorgonite gauntlets (Tier 9)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "gorgonite gauntlets" + "</col>" + " within Daemonheim.");
+				case 166:
+					return newstruct cs2func_script_1022_struct(82, 16377, "Members: Gorgonite hatchet (Tier 9)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "gorgonite hatchets" + "</col>" + " within Daemonheim.");
+				case 167:
+					return newstruct cs2func_script_1022_struct(82, 16311, "Members: Gorgonite pickaxe (Tier 9)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "gorgonite pickaxes" + "</col>" + " within Daemonheim.");
+				case 168:
+					return newstruct cs2func_script_1022_struct(83, 17035, "Members: Gorgonite warhammer (Tier 9)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "gorgonite warhammers" + "</col>" + " within Daemonheim.");
+				case 169:
+					return newstruct cs2func_script_1022_struct(83, 16951, "Members: Gorgonite rapier (Tier 9)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "gorgonite rapiers" + "</col>" + " within Daemonheim.");
+				case 170:
+					return newstruct cs2func_script_1022_struct(84, 16399, "Members: Gorgonite longsword (Tier 9)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "gorgonite longswords" + "</col>" + " within Daemonheim.");
+				case 171:
+					return newstruct cs2func_script_1022_struct(85, 16707, "Members: Gorgonite full helm (Tier 9)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "gorgonite full helms" + "</col>" + " within Daemonheim.");
+				case 172:
+					return newstruct cs2func_script_1022_struct(85, 15769, "Members: Gorgonite battleaxe (Tier 9)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "gorgonite battleaxes" + "</col>" + " within Daemonheim.");
+				case 173:
+					return newstruct cs2func_script_1022_struct(86, 17357, "Members: Gorgonite kiteshield (Tier 9)" + "<br>" + " 3 bars", "Members can now smith " + "<col=000080>" + "gorgonite kiteshields" + "</col>" + " within Daemonheim.");
+				case 174:
+					return newstruct cs2func_script_1022_struct(86, 16729, "Members: Gorgonite chainbody (Tier 9)" + "<br>" + " 3 bars", "Members can now smith " + "<col=000080>" + "gorgonite chainbodies" + "</col>" + " within Daemonheim.");
+				case 175:
+					return newstruct cs2func_script_1022_struct(87, 16685, "Members: Gorgonite platelegs (Tier 9)" + "<br>" + " 3 bars", "Members can now smith " + "<col=000080>" + "gorgonite platelegs" + "</col>" + " within Daemonheim.");
+				case 176:
+					return newstruct cs2func_script_1022_struct(87, 16663, "Members: Gorgonite plateskirt (Tier 9)" + "<br>" + " 3 bars", "Members can now smith " + "<col=000080>" + "gorgonite plateskirts" + "</col>" + " within Daemonheim.");
+				case 177:
+					return newstruct cs2func_script_1022_struct(87, 17127, "Members: Gorgonite spear (Tier 9)" + "<br>" + " 4 bars", "Members can now smith " + "<col=000080>" + "gorgonite spears" + "</col>" + " within Daemonheim.");
+				case 178:
+					return newstruct cs2func_script_1022_struct(88, 16421, "Members: Gorgonite maul (Tier 9)" + "<br>" + " 4 bars", "Members can now smith " + "<col=000080>" + "gorgonite mauls" + "</col>" + " within Daemonheim.");
+				case 179:
+					return newstruct cs2func_script_1022_struct(88, 16905, "Members: Gorgonite 2h sword (Tier 9)" + "<br>" + " 4 bars", "Members can now smith " + "<col=000080>" + "gorgonite 2h swords" + "</col>" + " within Daemonheim.");
+				case 180:
+					return newstruct cs2func_script_1022_struct(89, 17255, "Members: Gorgonite platebody (Tier 9)" + "<br>" + " 5 bars", "Members can now smith " + "<col=000080>" + "gorgonite platebodies" + "</col>" + " within Daemonheim.");
+				case 181:
+					return newstruct cs2func_script_1022_struct(90, 17668, "Members: Promethium (Tier 10)", "Members can now smelt " + "<col=000080>" + "Promethium" + "</col>" + " within Daemonheim.");
+				case 182:
+					return newstruct cs2func_script_1022_struct(90, 17930, "Members: Promethium arrowheads (Tier 10) (15)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "promethium arrowheads" + "</col>" + " within Daemonheim.");
+				case 183:
+					return newstruct cs2func_script_1022_struct(90, 16829, "Members: Promethium dagger (Tier 10)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "promethium daggers" + "</col>" + " within Daemonheim.");
+				case 184:
+					return newstruct cs2func_script_1022_struct(91, 16357, "Members: Promethium boots (Tier 10)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "promethium boots" + "</col>" + " within Daemonheim.");
+				case 185:
+					return newstruct cs2func_script_1022_struct(91, 16291, "Members: Promethium gauntlets (Tier 10)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "promethium gauntlets" + "</col>" + " within Daemonheim.");
+				case 186:
+					return newstruct cs2func_script_1022_struct(92, 16379, "Members: Promethium hatchet (Tier 10)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "promethium hatchets" + "</col>" + " within Daemonheim.");
+				case 187:
+					return newstruct cs2func_script_1022_struct(92, 16313, "Members: Promethium pickaxe (Tier 10)" + "<br>" + " 1 bar", "Members can now smith " + "<col=000080>" + "promethium pickaxes" + "</col>" + " within Daemonheim.");
+				case 188:
+					return newstruct cs2func_script_1022_struct(93, 17037, "Members: Promethium warhammer (Tier 10)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "promethium warhammers" + "</col>" + " within Daemonheim.");
+				case 189:
+					return newstruct cs2func_script_1022_struct(93, 16953, "Members: Promethium rapier (Tier 10)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "promethium rapiers" + "</col>" + " within Daemonheim.");
+				case 190:
+					return newstruct cs2func_script_1022_struct(94, 16401, "Members: Promethium longsword (Tier 10)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "promethium longswords" + "</col>" + " within Daemonheim.");
+				case 191:
+					return newstruct cs2func_script_1022_struct(95, 16709, "Members: Promethium full helm (Tier 10)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "promethium full helms" + "</col>" + " within Daemonheim.");
+				case 192:
+					return newstruct cs2func_script_1022_struct(95, 15771, "Members: Promethium battleaxe (Tier 10)" + "<br>" + " 2 bars", "Members can now smith " + "<col=000080>" + "promethium battleaxes" + "</col>" + " within Daemonheim.");
+				case 193:
+					return newstruct cs2func_script_1022_struct(96, 17359, "Members: Promethium kiteshield (Tier 10)" + "<br>" + " 3 bars", "Members can now smith " + "<col=000080>" + "promethium kiteshields" + "</col>" + " within Daemonheim.");
+				case 194:
+					return newstruct cs2func_script_1022_struct(96, 16731, "Members: Promethium chainbody (Tier 10)" + "<br>" + " 3 bars", "Members can now smith " + "<col=000080>" + "promethium chainbodies" + "</col>" + " within Daemonheim.");
+				case 195:
+					return newstruct cs2func_script_1022_struct(97, 16687, "Members: Promethium platelegs (Tier 10)" + "<br>" + " 3 bars", "Members can now smith " + "<col=000080>" + "promethium platelegs" + "</col>" + " within Daemonheim.");
+				case 196:
+					return newstruct cs2func_script_1022_struct(97, 16665, "Members: Promethium plateskirt (Tier 10)" + "<br>" + " 3 bars", "Members can now smith " + "<col=000080>" + "promethium plateskirts" + "</col>" + " within Daemonheim.");
+				case 197:
+					return newstruct cs2func_script_1022_struct(97, 17135, "Members: Promethium spear (Tier 10)" + "<br>" + " 4 bars", "Members can now smith " + "<col=000080>" + "promethium spears" + "</col>" + " within Daemonheim.");
+				case 198:
+					return newstruct cs2func_script_1022_struct(98, 16423, "Members: Promethium maul (Tier 10)" + "<br>" + " 4 bars", "Members can now smith " + "<col=000080>" + "promethium mauls" + "</col>" + " within Daemonheim.");
+				case 199:
+					return newstruct cs2func_script_1022_struct(98, 16907, "Members: Promethium 2h sword (Tier 10)" + "<br>" + " 4 bars", "Members can now smith " + "<col=000080>" + "promethium 2h swords" + "</col>" + " within Daemonheim.");
+				case 200:
+					return newstruct cs2func_script_1022_struct(99, 17257, "Members: Promethium platebody (Tier 10)" + "<br>" + " 5 bars", "Members can now smith " + "<col=000080>" + "promethium platebodies" + "</col>" + " within Daemonheim.");
+			}
+			break;
+			case 15:
+			SWITCH (arg1) {
+				case 0:
+					 GOTO flow_554
+			}
+			break;
+		flow_554:
+			return newstruct cs2func_script_1022_struct(99, 9795, "Skill mastery", "<col=000080>" + "Congratulations! You are now a master smith. Members can visit " + "<col=800000>" + "Thurgo" + "<col=000080>" + ", who lives near " + "<col=800000>" + "Mudskipper Point" + "<col=000080>" + ". He has something special that is only available to true masters of the " + "<col=800000>" + "Smithing" + "<col=000080>" + " skill!");
+	}
+	return newstruct cs2func_script_1022_struct(0, -1, "", "");
+}

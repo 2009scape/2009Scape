@@ -1,0 +1,39 @@
+void script_3965(int arg0,int arg1,string arg2,string arg3) {
+	deleteAllExtraChilds(new WidgetPointer(arg0));
+	setWidgetSize(arg1, 27, 0, 0, new WidgetPointer(arg0));
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(6, 25, 1, 0);
+	setWidgetPosition(0, 0, 1, 1);
+	cs2method1107(1);
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(25, 25, 0, 0);
+	setWidgetPosition(0, 0, 0, 1);
+	createExtraChild(new WidgetPointer(arg0), 5, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(25, 25, 0, 0);
+	setWidgetPosition(3, 0, 2, 1);
+	setWidgetHFlip(1);
+	createExtraChild(new WidgetPointer(arg0), 4, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(0, 0, 1, 1);
+	setWidgetPosition(1, 1, 1, 1);
+	setWidgetFont(3793);
+	setWidgetRGB(new Color(192, 177, 84));
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetUnknownBoolean(false);
+	setWidgetText(arg2);
+	createExtraChild(new WidgetPointer(arg0), 4, getExtraChildGap(new WidgetPointer(arg0)));
+	setWidgetSize(0, 0, 1, 1);
+	setWidgetPosition(0, 0, 1, 1);
+	setWidgetFont(3793);
+	setWidgetRGB(new Color(0, 0, 0));
+	setWidgetTextAlignment(1, 1, 0);
+	setWidgetUnknownBoolean(false);
+	setWidgetText(arg2);
+	script_3967(arg0, 0);
+	setWidgetContextMenuOption(1, new WidgetPointer(arg0), arg2);
+	setScriptCallOnMouseEntered(3966, new WidgetPointer(arg0), 1, "I1", new WidgetPointer(arg0));
+	if (strLength(arg3) > 0) {
+		setScriptCallOnMouseOver(378, arg3, new WidgetPointer(-32768,3), -1, -2147483647, "sIii", new WidgetPointer(arg0));
+	}
+	setScriptCallOnMouseExit(3966, new WidgetPointer(arg0), 0, "I1", new WidgetPointer(arg0));
+	return;
+}

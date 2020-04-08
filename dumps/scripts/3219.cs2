@@ -1,0 +1,8 @@
+void script_3219(int arg0,int arg1,int arg2) {
+	if (((globalint_174 == arg2) && (mod(subtract(getClientCycle(), arg0), 40) < 20)) && ((getAccountCreateRC() != -3) && hasWindowFocus())) {
+		setWidgetIsHidden(false, new WidgetPointer(arg1));
+	} else {
+		setWidgetIsHidden(true, new WidgetPointer(arg1));
+	}
+	return;
+}

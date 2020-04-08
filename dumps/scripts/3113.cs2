@@ -1,0 +1,4 @@
+void script_3113() {
+	setScriptCallOnGameloop(3115, "", new WidgetPointer(910,0));
+	return;
+}

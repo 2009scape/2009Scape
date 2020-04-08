@@ -3,6 +3,7 @@ package org.crandor.game.node.entity.player.ai.minigamebots.pestcontrol;
 import org.crandor.game.node.Node;
 import org.crandor.game.node.entity.Entity;
 import org.crandor.game.node.entity.player.ai.pvmbots.PvMBots;
+import org.crandor.game.node.entity.player.link.prayer.PrayerType;
 import org.crandor.game.world.map.Location;
 import org.crandor.net.packet.in.InteractionPacket;
 import org.crandor.tools.RandomFunction;
@@ -88,6 +89,7 @@ public class PestControlTestBot extends PvMBots {
 	}
 
 	private void attackNPCs() {
+		this.getWalkingQueue().setRunning(true);
 		List<Entity> creatures = FindTargets(this, 15);
 		if (creatures == null || creatures.isEmpty())
 		{
@@ -96,7 +98,11 @@ public class PestControlTestBot extends PvMBots {
 				this.setCustomState("Going to portals");
 				combathandler.goToPortals();
 			} else {
-				randomWalkAroundPoint(getMyPestControlSession(this).getSquire().getLocation(), 3);
+				try {
+					randomWalkAroundPoint(getMyPestControlSession(this).getSquire().getLocation(), 3);
+				} catch (NullPointerException e) {
+					//Do nothing, game just finished
+				}
 				movetimer = new Random().nextInt(15) + 6;
 			}
 		} else {
@@ -121,6 +127,10 @@ public class PestControlTestBot extends PvMBots {
 			if (new Random().nextInt(insideBoatWalks) <= 1)
 			{
 				insideBoatWalks *= 1.5;
+				if (new Random().nextInt(4) == 1)
+				{
+					this.getWalkingQueue().setRunning(!this.getWalkingQueue().isRunning());
+				}
 				if (new Random().nextInt(7) == 1)
 				{
 					this.walkToPosSmart(new Location(2660, 2638));
@@ -136,6 +146,10 @@ public class PestControlTestBot extends PvMBots {
 	}
 
 	private void enterBoat() {
+		if (getPrayer().getActive().contains(PrayerType.PROTECT_FROM_MELEE)) {
+			getPrayer().toggle(PrayerType.PROTECT_FROM_MELEE);
+		}
+
 		if (new Random().nextInt(3) <= 1) //Don't join instantly
 		{
 			return;

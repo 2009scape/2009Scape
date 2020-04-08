@@ -1,0 +1,6 @@
+void script_4429(int arg0,int arg1) {
+	setWidgetIsHidden(false, new WidgetPointer(1110,89));
+	setWidgetSprite(6244, new WidgetPointer(arg1));
+	setScriptCallOnUseWith(4430, new WidgetPointer(arg0), new WidgetPointer(arg1), "II", new WidgetPointer(arg0));
+	return;
+}

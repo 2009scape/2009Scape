@@ -1,0 +1,37 @@
+cs2func_script_1005_struct(1,1,0) script_1005(int arg0) {
+	switch (arg0) {
+		case 0:
+			return newstruct cs2func_script_1005_struct(1, "Traps");
+		case 1:
+			return newstruct cs2func_script_1005_struct(1, "Tracking");
+		case 2:
+			return newstruct cs2func_script_1005_struct(1, "Birds");
+		case 3:
+			return newstruct cs2func_script_1005_struct(1, "Butterfly net");
+		case 4:
+			return newstruct cs2func_script_1005_struct(1, "Deadfall");
+		case 5:
+			return newstruct cs2func_script_1005_struct(1, "Box trap");
+		case 6:
+			return newstruct cs2func_script_1005_struct(1, "Net trap");
+		case 7:
+			return newstruct cs2func_script_1005_struct(1, "Pitfalls");
+		case 8:
+			return newstruct cs2func_script_1005_struct(1, "Falconry");
+		case 9:
+			return newstruct cs2func_script_1005_struct(1, "Imp box");
+		case 10:
+			return newstruct cs2func_script_1005_struct(1, "Other");
+		case 11:
+			return newstruct cs2func_script_1005_struct(1, "Clothing");
+		case 12:
+			return newstruct cs2func_script_1005_struct(1, "Barehanded");
+		case 13:
+			return newstruct cs2func_script_1005_struct(1, "Minigames");
+		case 14:
+			return newstruct cs2func_script_1005_struct(1, "Dungeoneering");
+		case 15:
+			return newstruct cs2func_script_1005_struct(1, "Milestones");
+	}
+	return newstruct cs2func_script_1005_struct(-1, "");
+}

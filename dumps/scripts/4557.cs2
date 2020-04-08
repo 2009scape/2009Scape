@@ -1,0 +1,8 @@
+void script_4557() {
+	if (cs2method3612() > 0) {
+		sendUnknownVarByteEmptyFriendPacketMethod3620();
+	} else {
+		script_3015(5, "Join Chat Channel", "", "", "");
+	}
+	return;
+}

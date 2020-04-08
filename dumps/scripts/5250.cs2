@@ -1,0 +1,74 @@
+void script_5250(int arg0) {
+	switch (standart_config_2373) {
+		case 2:
+			if (((boolean)arg0)) {
+				setWidgetText(new WidgetPointer(1127,18), "Battle-mage Helm");
+				setWidgetText(new WidgetPointer(1127,17), "Strong against melee and magical attacks, weak against ranged.");
+			}
+			if (arg0 == 2) {
+				setWidgetText(new WidgetPointer(1127,18), "Trickster Hood");
+				setWidgetText(new WidgetPointer(1127,17), "Strong against ranged and magical attacks, weak against melee.");
+			}
+			if (arg0 == 3) {
+				setWidgetText(new WidgetPointer(1127,18), "Vanguard Helm");
+				setWidgetText(new WidgetPointer(1127,17), "Strong against melee and ranged attacks, weak against magic.");
+			}
+			break;
+		case 1:
+			if (((boolean)arg0)) {
+				setWidgetText(new WidgetPointer(1127,18), "Battle-mage robe legs");
+				setWidgetText(new WidgetPointer(1127,17), "Strong against melee and magical attacks, weak against ranged.");
+			}
+			if (arg0 == 2) {
+				setWidgetText(new WidgetPointer(1127,18), "Trickster robe legs");
+				setWidgetText(new WidgetPointer(1127,17), "Strong against ranged and magical attacks, weak against melee.");
+			}
+			if (arg0 == 3) {
+				setWidgetText(new WidgetPointer(1127,18), "Vanguard leg armour");
+				setWidgetText(new WidgetPointer(1127,17), "Strong against melee and ranged attacks, weak against magic.");
+			}
+			break;
+		case 3:
+			if (((boolean)arg0)) {
+				setWidgetText(new WidgetPointer(1127,18), "Battle-mage robe");
+				setWidgetText(new WidgetPointer(1127,17), "Strong against melee and magical attacks, weak against ranged.");
+			}
+			if (arg0 == 2) {
+				setWidgetText(new WidgetPointer(1127,18), "Trickster robe");
+				setWidgetText(new WidgetPointer(1127,17), "Strong against ranged and magical attacks, weak against melee.");
+			}
+			if (arg0 == 3) {
+				setWidgetText(new WidgetPointer(1127,18), "Vanguard body armour");
+				setWidgetText(new WidgetPointer(1127,17), "Strong against melee and ranged attacks, weak against magic.");
+			}
+			break;
+		case 5:
+			if (((boolean)arg0)) {
+				setWidgetText(new WidgetPointer(1127,18), "Battle-mage gloves");
+				setWidgetText(new WidgetPointer(1127,17), "Strong against melee and magical attacks, weak against ranged.");
+			}
+			if (arg0 == 2) {
+				setWidgetText(new WidgetPointer(1127,18), "Trickster gloves");
+				setWidgetText(new WidgetPointer(1127,17), "Strong against ranged and magical attacks, weak against melee.");
+			}
+			if (arg0 == 3) {
+				setWidgetText(new WidgetPointer(1127,18), "Vanguard gloves");
+				setWidgetText(new WidgetPointer(1127,17), "Strong against melee and ranged attacks, weak against magic.");
+			}
+			break;
+		case 4:
+			if (((boolean)arg0)) {
+				setWidgetText(new WidgetPointer(1127,18), "Battle-mage boots");
+				setWidgetText(new WidgetPointer(1127,17), "Strong against melee and magical attacks, weak against ranged.");
+			}
+			if (arg0 == 2) {
+				setWidgetText(new WidgetPointer(1127,18), "Trickster boots");
+				setWidgetText(new WidgetPointer(1127,17), "Strong against ranged and magical attacks, weak against melee.");
+			}
+			if (arg0 == 3) {
+				setWidgetText(new WidgetPointer(1127,18), "Vanguard boots");
+				setWidgetText(new WidgetPointer(1127,17), "Strong against melee and ranged attacks, weak against magic.");
+			}
+	}
+	return;
+}

@@ -1,0 +1,15 @@
+void script_1534(int arg0,int arg1) {
+	if (arg1 != 1) {
+		return;
+	}
+	if (((boolean)globalint_1413)) {
+		return;
+	}
+	if (((boolean)globalint_119)) {
+		globalint_119 = 0;
+	} else {
+		globalint_119 = 1;
+	}
+	script_1741(arg0);
+	return;
+}

@@ -174,6 +174,11 @@ public final class VisualCommand extends CommandPlugin {
 			ObjectBuilder.add(object);
 			SystemLogger.log("object = " + object);
 			return true;
+		case "objwithanim":
+			GameObject go = new GameObject(toInteger(args[1]), player.getLocation(), 0);
+			ObjectBuilder.add(go);
+			player.getPacketDispatch().sendObjectAnimation(go, Animation.create(toInteger(args[2])));
+			return true;
 		case "oa":
 		case "object_anim":
 		case "obj_anim":

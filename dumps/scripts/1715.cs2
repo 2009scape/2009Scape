@@ -1,0 +1,39 @@
+void script_1715() {
+	int ivar0;
+	ivar0 = -1;
+	if (globalint_1043 == -1) {
+		return;
+	}
+	switch (globalint_1043) {
+		case 4761:
+		case 4762:
+			ivar0 = 1572874;
+			break;
+		case 4764:
+		case 4763:
+			ivar0 = 1572872;
+			break;
+		case 4765:
+		case 4766:
+			ivar0 = 1572873;
+			break;
+		case 4767:
+		case 4768:
+			ivar0 = 1572875;
+			break;
+		case 4770:
+		case 4769:
+			ivar0 = 1572876;
+			break;
+		case 4772:
+		case 4771:
+			ivar0 = 1572877;
+	}
+	if (ivar0 == -1) {
+		return;
+	}
+	setItemOnWidgetMethod2200(globalint_1043, -1, new WidgetPointer(ivar0));
+	setWidget3DViewDistance(1600, new WidgetPointer(ivar0));
+	setWidgetAnimation(12554, new WidgetPointer(ivar0));
+	return;
+}

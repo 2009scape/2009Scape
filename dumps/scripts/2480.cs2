@@ -1,0 +1,61 @@
+void script_2480() {
+	int ivar0;
+	int ivar1;
+	int ivar2;
+	int ivar3;
+	int ivar4;
+	ivar0 = 0;
+	ivar1 = 0;
+	ivar2 = 0;
+	ivar3 = 0;
+	ivar4 = 0;
+	ivar2 = divide(subtract(getWidgetActualWidth(new WidgetPointer(41,15)), multiply(36, 10)), subtract(10, 1));
+	ivar3 = divide(subtract(getWidgetActualHeight(new WidgetPointer(41,15)), 128), 3);
+	deleteAllExtraChilds(new WidgetPointer(41,15));
+	deleteAllExtraChilds(new WidgetPointer(881,0));
+	while (((boolean)ivar4)) {
+		if (cs2method_3408(105, 79, globalint_875, ivar0) != 11760) {
+			createExtraChild(new WidgetPointer(41,15), 5, ivar0);
+			setWidgetSize(36, 32, 0, 0);
+			setWidgetPosition(multiply(add(36, ivar2), mod(ivar0, 10)), multiply(divide(ivar0, 10), add(32, ivar3)), 0, 0);
+			setItemOnWidgetMethod1200(cs2method_3408(105, 79, globalint_875, ivar0), -1);
+			cs2method1305("<col=ff981f>" + getItemName(cs2method_3408(105, 79, globalint_875, ivar0)));
+			setWidgetContextMenuOption(1, "Value");
+			setWidgetContextMenuOption(2, "Buy 1");
+			setWidgetContextMenuOption(3, "Examine");
+			setWidgetShadowColor(new Color(51, 51, 51));
+			setWidgetBorderThickness(1);
+			createExtraChild(new WidgetPointer(881,0), 5, ivar0);
+			setWidgetSize(36, 32, 0, 0);
+			setWidgetPosition(multiply(42, mod(ivar0, 4)), multiply(divide(ivar0, 4), 42), 0, 0);
+			setItemOnWidgetMethod1200(cs2method_3408(105, 79, globalint_875, ivar0), getItemAmtInContainer(93, cs2method_3408(105, 79, globalint_875, ivar0)));
+			cs2method1305("<col=ff981f>" + getItemName(cs2method_3408(105, 79, globalint_875, ivar0)));
+			setWidgetContextMenuOption(1, "Value");
+			setWidgetContextMenuOption(2, "Sell 1");
+			setWidgetContextMenuOption(3, "Sell X");
+			setWidgetContextMenuOption(4, "Examine");
+			setWidgetShadowColor(new Color(51, 51, 51));
+			setWidgetBorderThickness(1);
+			ivar0 = add(ivar0, 1);
+		} else {
+			ivar4 = 1;
+		}
+	}
+	ivar1 = ivar0;
+	ivar0 = 0;
+	ivar4 = 0;
+	while (((boolean)ivar4)) {
+		if (cs2method_3408(105, 79, globalint_875, ivar0) != 11760) {
+			createExtraChild(new WidgetPointer(41,15), 5, ivar1);
+			setWidgetSize(12, 6, 0, 0);
+			setWidgetPosition(multiply(add(36, ivar2), mod(ivar0, 10)), multiply(divide(ivar0, 10), add(32, ivar3)), 0, 0);
+			setWidgetSprite(1066);
+		} else {
+			ivar4 = 1;
+		}
+		ivar0 = add(ivar0, 1);
+		ivar1 = add(ivar1, 1);
+	}
+	setWidgetText(new WidgetPointer(41,17), script_46(standart_config_1448, ","));
+	return;
+}
