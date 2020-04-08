@@ -1,0 +1,53 @@
+key,Object - Example
+
+0,Integer - Stab attack bonus
+1,Integer - Slash attack bonus
+2,Integer - Crush attack bonus
+3,Integer - Magic attack bonus
+4,Integer - Range attack bonus
+5,Integer - Stab defense bonus
+6,Integer - Slash defense bonus
+7,Integer - Crush defense bonus
+8,Integer - Magic defense bonus
+9,Integer - Range defense bonus
+
+11,Integer - Prayer bonus
+
+14,Integer - Attack speed
+
+23,Integer - Ranged level requirement ? ( 20<- /40)
+
+277,Integer - Maxed skill requirement
+
+417,Integer - Summoning defense bonus
+
+528,String - Equipment tab Option (ActionButtons2)
+529,String - Equipment tab Option (ActionButtons3)
+530,String - Equipment tab Option (ActionButtons4)
+531,String - Equipment tab Option (ActionButtons5)
+
+641,Integer - Melee Strength bonus
+642,Integer - Magic Strength bonus
+643,Integer - Ranged Strength bonus
+644,Integer - Render Animation Id
+
+685,Integer - Magic damage
+686,Integer - Attack Styles Tab
+687,Integer - Special bar (1)
+
+749,Integer - Skill Id Requirment
+750,Integer - Skill Level Requirment
+751,Integer - Skill Id Requirment
+752,Integer - Skill Level Requirment
+753,Integer - Skill Id Requirment
+754,Integer - Skill Level Requirment
+755,Integer - Skill Id Requirment
+756,Integer - Skill Level Requirment
+757,Integer - Skill Id Requirment
+758,Integer - Skill Level Requirment
+
+861,Integer - Quest Id Requirement
+
+967,Integer - Absorve melee bonus
+968,Integer - Absorve range bonus
+969,Integer - Absorve magic bonus
