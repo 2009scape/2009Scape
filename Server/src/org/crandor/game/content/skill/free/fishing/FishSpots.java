@@ -2,10 +2,11 @@ package org.crandor.game.content.skill.free.fishing;
 
 import org.crandor.game.world.map.Location;
 
+import java.util.HashMap;
+
 /**
- * Represents the enum of handles fishing spots.
- * @author 'Vexia
- * @date Oct 5, 2013
+ * Fishing spot locations
+ * @author Ceikry
  */
 public enum FishSpots {
 	CATHERBY(Location.create(2844, 3429, 0), Location.create(2839, 3431, 0), new Location(2836, 3431, 0), new Location(2837, 3431, 0), new Location(2838, 3431, 0), new Location(2839, 3431, 0), new Location(2840, 3431, 0), new Location(2844, 3429, 0), new Location(2845, 3429, 0), new Location(2846, 3429, 0), new Location(2853, 3423, 0), new Location(2854, 3423, 0), new Location(2855, 3423, 0), new Location(2859, 3426, 0), new Location(2860, 3426, 0)), 
@@ -24,39 +25,32 @@ public enum FishSpots {
 	TUTORIAL_ISLAND(Location.create(3101,3092, 0)),
 	WILDERNESS_ARENA(Location.create(3187, 3927, 0),Location.create(3185, 3926, 0),Location.create(3183, 3926, 0), Location.create(3181, 3926, 0));
 
-	/**
-	 * Constructs a new {@code FishingSpotHandler} {@code Object}.
-	 * @param locations the locations.
-	 */
 	FishSpots(final Location... locations) {
 		this.locations = locations;
 	}
 
-	/**
-	 * Represents the locations the spot can be on.
-	 */
 	private final Location[] locations;
 
-	/**
-	 * @return the locations.
-	 */
 	public Location[] getLocations() {
 		return locations;
 	}
 
-	/**
-	 * Gets the fishing spot.
-	 * @param loc the loc.
-	 * @return the spot.
-	 */
-	public static FishSpots forLocation(Location loc) {
-		for (FishSpots spot : FishSpots.values()) {
-			for (Location l : spot.getLocations()) {
-				if (l.equals(loc)) {
-					return spot;
-				}
+	public static HashMap<Location,FishSpots> locationMap = new HashMap<>();
+
+	static{
+		FishSpots[] spots = values();
+		int spotsLength = spots.length;
+		for(int x = 0; x < spotsLength; x++){
+			Location[] locations = spots[x].locations;
+			int locationsLength = locations.length;
+			for(int y = 0; y < locationsLength; y++){
+				locationMap.putIfAbsent(locations[y],spots[x]);
 			}
 		}
-		return null;
+	}
+
+	//statically gets the fishing spot (loops suck btw)
+	public static FishSpots forLocation(Location loc) {
+		return locationMap.get(loc);
 	}
 }

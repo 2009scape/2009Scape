@@ -2,9 +2,11 @@ package org.crandor.game.content.skill.free.fishing;
 
 import org.crandor.game.node.item.Item;
 
+import java.util.HashMap;
+
 /**
  * Represents a type of fish to catch.
- * @author Vexia
+ * @author ceikry
  */
 public enum Fish {
 	SHRIMP(new Item(317), 1, 10), 
@@ -49,9 +51,12 @@ public enum Fish {
 		this.npcs = npcs;
 	}
 
-	/**
-	 * Represents the {@link Item} of this <code>Fish</code>.
-	 */
+	public static HashMap<Integer,Fish> fishMap = new HashMap<>();
+	static{
+		for(Fish fish : Fish.values()){
+			fishMap.putIfAbsent(fish.item.getId(),fish);
+		}
+	}
 	private final Item item;
 
 	/**
@@ -70,33 +75,12 @@ public enum Fish {
 	private final int[] npcs;
 
 	/**
-	 * Gets the fish for the id.
-	 * @param id the id.
-	 * @return the fish.
-	 */
-	public static Fish forNpc(int id) {
-		for (Fish f : Fish.values()) {
-			for (int npc : f.getNpcs()) {
-				if (npc == id) {
-					return f;
-				}
-			}
-		}
-		return null;
-	}
-
-	/**
 	 * Gets the fish.
 	 * @param item the item.
 	 * @return the fash.
 	 */
 	public static Fish forItem(Item item) {
-		for (Fish fish : values()) {
-			if (fish.getItem().getId() == item.getId()) {
-				return fish;
-			}
-		}
-		return null;
+		return fishMap.get(item.getId());
 	}
 
 	/**

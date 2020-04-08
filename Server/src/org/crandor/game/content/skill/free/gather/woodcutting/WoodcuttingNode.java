@@ -9,7 +9,7 @@ import java.util.HashMap;
  * Woodcutting nodes
  * @author ceik
  */
-public enum WC_NODE {
+public enum WoodcuttingNode {
     //standard trees
     STANDARD_TREE_1( 1276, 1342,  (byte) 1),
     STANDARD_TREE_2( 1277, 1343,  (byte) 1),
@@ -138,7 +138,7 @@ public enum WC_NODE {
     double experience,rate;
     byte identifier;
     boolean farming;
-    WC_NODE(int full, int empty,byte identifier){
+    WoodcuttingNode(int full, int empty,byte identifier){
         this.full = full;
         this.empty = empty;
         this.identifier = identifier;
@@ -268,7 +268,7 @@ public enum WC_NODE {
                 break;
         }
     }
-    WC_NODE(int full, int empty, byte identifier, boolean farming){
+    WoodcuttingNode(int full, int empty, byte identifier, boolean farming){
         this.full = full;
         this.empty = empty;
         this.identifier = identifier;
@@ -316,18 +316,16 @@ public enum WC_NODE {
                 break;
         }
     }
-    private static HashMap<Integer, WC_NODE> NODE_MAP = new HashMap<>();
+    private static HashMap<Integer, WoodcuttingNode> NODE_MAP = new HashMap<>();
     private static HashMap<Integer, Integer> EMPTY_MAP = new HashMap<>();
     static{
-        for(WC_NODE node : WC_NODE.values()){
+        for(WoodcuttingNode node : WoodcuttingNode.values()){
             NODE_MAP.putIfAbsent(node.full,node);
-        }
-        for(WC_NODE node : WC_NODE.values()){
             EMPTY_MAP.putIfAbsent(node.empty,node.full);
         }
     }
 
-    public static WC_NODE forId(int id){
+    public static WoodcuttingNode forId(int id){
         return NODE_MAP.get(id);
     }
 

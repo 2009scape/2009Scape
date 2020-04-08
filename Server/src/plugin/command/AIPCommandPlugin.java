@@ -23,6 +23,7 @@ import org.crandor.game.system.command.CommandPlugin;
 import org.crandor.game.system.command.CommandSet;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.ImmerseWorld;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.map.RegionManager;
 import org.crandor.game.world.map.path.Pathfinder;
@@ -216,7 +217,7 @@ public final class AIPCommandPlugin extends CommandPlugin {
             case "immerse":
             case "immersiveworld":
             case "immersive":
-                ResourceAIPManager.get().immerseWorld();
+                ImmerseWorld.init();
                 player.sendMessage("Started immersive world, 2");
                 return true;
             case "botdataform":

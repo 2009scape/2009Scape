@@ -1,8 +1,10 @@
 package org.crandor.game.content.skill.free.fishing;
 
+import java.util.HashMap;
+
 /**
  * Represents a fishing spot.
- * @author Emperor
+ * @author ceikry
  */
 public enum FishingSpot {
 
@@ -13,21 +15,25 @@ public enum FishingSpot {
 	HARPOON_NET(new int[] { 3848, 3849 }, FishingOption.HARPOON, FishingOption.H_NET, FishingOption.BARB_HARPOON),
 	CRAB_CAGE(new int[] {8665}, FishingOption.C_CAGE);
 
-	/**
-	 * Gets the FishingSpot for the given NPC id.
-	 * @param npcId The npc id.
-	 * @return The fishing spot.
-	 */
-	public static FishingSpot forId(int npcId) {
-		for (FishingSpot spot : FishingSpot.values()) {
-			for (int id : spot.ids) {
-				if (id == npcId) {
-					return spot;
-				}
+	public static HashMap<Integer,FishingSpot> spotMap = new HashMap<>();
+
+	static{
+		FishingSpot[] spots = values();
+		int spotsLength = spots.length;
+		for (int x = 0; x < spotsLength; x++) {
+			FishingSpot spot = spots[x];
+			int[] spotIds = spot.ids;
+			int spotIdsLength = spotIds.length;
+			for (int y = 0; y < spotIdsLength; y++) {
+				spotMap.putIfAbsent(spotIds[y],spot);
 			}
 		}
-		return null;
 	}
+
+	public static FishingSpot forId(int npcId) {
+		return spotMap.get(npcId);
+	}
+
 
 	/**
 	 * The NPC ids.

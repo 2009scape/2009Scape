@@ -37,13 +37,6 @@ public class ResourceAIPManager {
         return this;
     }
 
-    public void immerseWorld() { //There's probably a better place for this (it adds bot at bootup)
-        PvMBotsBuilder.immersiveSpawns();
-        LumbridgeBotHandler.immersiveLumbridge();
-        //SkillingBotsBuilder.immersiveSpawnsSkillingBots();
-        System.out.println("Loaded immerseWorld");
-    }
-
     public ResourceAIPManager runTask(Player player, String taskName) {
         for (Map.Entry<ResourceTask, Long> entry : getTasks().entrySet()) {
             if (entry.getKey().getTaskName().equalsIgnoreCase(taskName)) {

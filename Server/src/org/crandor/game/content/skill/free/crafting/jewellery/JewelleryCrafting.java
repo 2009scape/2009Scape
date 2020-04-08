@@ -6,10 +6,11 @@ import org.crandor.game.content.skill.Skills;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.item.Item;
 
+import java.util.HashMap;
+
 /**
  * Represents a useful class for jewellery crafting information.
- * @author 'Vexia
- * @since August-16-13
+ * @author Ceikry
  */
 public class JewelleryCrafting {
 
@@ -23,13 +24,53 @@ public class JewelleryCrafting {
 	 * @author 'Vexia
 	 */
 	public enum JewelleryItem {
-		
-		GOLD_RING(5, 15, 19, 1635, GOLD_BAR), SAPPIRE_RING(20, 40, 21, 1637, SAPPHIRE, GOLD_BAR), EMERALD_RING(27, 55, 23, 1639, EMERALD, GOLD_BAR), RUBY_RING(34, 70, 25, 1641, RUBY, GOLD_BAR), DIAMOND_RING(43, 85, 27, 1643, DIAMOND, GOLD_BAR), DRAGONSTONE_RING(55, 100, 29, 1645, DRAGONSTONE, GOLD_BAR), ONYX_RING(67, 115, 31, 6575, 6573, GOLD_BAR), 
-		GOLD_NECKLACE(6, 20, 41, 1654, 2357), SAPPHIRE_NECKLACE(22, 55, 43, 1656, 1607, 2357), EMERALD_NECKLACE(29, 60, 45, 1658, 1605, 2357), RUBY_NECKLACE(40, 75, 47, 1660, 1603, 2357), DIAMOND_NECKLACE(56, 90, 49, 1662, 1601, 2357), DRAGONSTONE_NECKLACE(72, 105, 51, 1664, 1615, 2357), ONYX_NECKLACE(82, 120, 53, 6577, 6573, 2357),
-		GOLD_AMULET(8, 30, 60, 1673, 2357), SAPPHIRE_AMULET(24, 65, 62, 1675, 1607, 2357), EMERALD_AMULET(31, 70, 64, 1677, 1605, 2357), RUBY_AMULET(50, 85, 66, 1679, 1603, 2357), DIAMOND_AMULET(70, 100, 68, 1681, 1601, 2357), DRAGONSTONE_AMULET(80, 150, 70, 1683, 1615, 2357), ONYX_AMULET(90, 165, 72, 6579, 6573, 2357),
-		GOLD_BRACELET(7, 25, 79, 11069, 2357), SAPPHIRE_BRACELET(23, 60, 81, 11072, 1607, 2357), EMERALD_BRACELET(30, 65, 83, 11076, 1605, 2357), RUBY_BRACELET(42, 80, 85, 11085, 1603, 2357), DIAMOND_BRACELET(58, 95, 87, 11092, 1601, 2357), DRAGONSTONE_BRACELET(74, 110, 89, 11115, 1615, 2357), ONYX_BRACELET(84, 125, 91, 11130, 6573, 2357),
-		SLAYER_RING(75, 15, 34, 13281, 4155, GOLD_BAR);
-		
+		//Ring
+		GOLD_RING(5, 15, 19, 1635, GOLD_BAR),
+		SAPPIRE_RING(20, 40, 21, 1637, SAPPHIRE, GOLD_BAR),
+		EMERALD_RING(27, 55, 23, 1639, EMERALD, GOLD_BAR),
+		RUBY_RING(34, 70, 25, 1641, RUBY, GOLD_BAR),
+		DIAMOND_RING(43, 85, 27, 1643, DIAMOND, GOLD_BAR),
+		DRAGONSTONE_RING(55, 100, 29, 1645, DRAGONSTONE, GOLD_BAR),
+		ONYX_RING(67, 115, 31, 6575, 6573, GOLD_BAR),
+
+		//Necklaces
+		GOLD_NECKLACE(6, 20, 41, 1654, 2357),
+		SAPPHIRE_NECKLACE(22, 55, 43, 1656, 1607, 2357),
+		EMERALD_NECKLACE(29, 60, 45, 1658, 1605, 2357),
+		RUBY_NECKLACE(40, 75, 47, 1660, 1603, 2357),
+		DIAMOND_NECKLACE(56, 90, 49, 1662, 1601, 2357),
+		DRAGONSTONE_NECKLACE(72, 105, 51, 1664, 1615, 2357),
+		ONYX_NECKLACE(82, 120, 53, 6577, 6573, 2357),
+		SLAYER_RING(75, 15, 34, 13281, 4155, GOLD_BAR),
+
+
+		//Amulet
+		GOLD_AMULET(8, 30, 60, 1673, 2357),
+		SAPPHIRE_AMULET(24, 65, 62, 1675, 1607, 2357),
+		EMERALD_AMULET(31, 70, 64, 1677, 1605, 2357),
+		RUBY_AMULET(50, 85, 66, 1679, 1603, 2357),
+		DIAMOND_AMULET(70, 100, 68, 1681, 1601, 2357),
+		DRAGONSTONE_AMULET(80, 150, 70, 1683, 1615, 2357),
+		ONYX_AMULET(90, 165, 72, 6579, 6573, 2357),
+
+		//Bracelet
+		GOLD_BRACELET(7, 25, 79, 11069, 2357),
+		SAPPHIRE_BRACELET(23, 60, 81, 11072, 1607, 2357),
+		EMERALD_BRACELET(30, 65, 83, 11076, 1605, 2357),
+		RUBY_BRACELET(42, 80, 85, 11085, 1603, 2357),
+		DIAMOND_BRACELET(58, 95, 87, 11092, 1601, 2357),
+		DRAGONSTONE_BRACELET(74, 110, 89, 11115, 1615, 2357),
+		ONYX_BRACELET(84, 125, 91, 11130, 6573, 2357);
+
+		public static HashMap<Integer, JewelleryItem> productMap = new HashMap<>();
+		static{
+			JewelleryItem[] jewelleryArray = JewelleryItem.values();
+			int length = jewelleryArray.length;
+			for(int i = 0; i < length; i++){
+				productMap.putIfAbsent(jewelleryArray[i].sendItem,jewelleryArray[i]);
+			}
+		}
+
 		/**
 		 * Represents the item ids.
 		 */
@@ -75,12 +116,7 @@ public class JewelleryCrafting {
 		 * @return the jewellery.
 		 */
 		public static JewelleryItem forProduct(int id) {
-			for (JewelleryItem d : JewelleryItem.values()) {
-				if (d.getSendItem() == id) {
-					return d;
-				}
-			}
-			return null;
+			return productMap.get(id);
 		}
 
 		/**

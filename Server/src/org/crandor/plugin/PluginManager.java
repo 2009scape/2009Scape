@@ -11,6 +11,7 @@ import org.reflections.Reflections;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Represents a class used to handle the loading of all plugins.
@@ -54,7 +55,11 @@ public final class PluginManager {
 			root = "plugin";
 		}
 		Reflections reflections = new Reflections(root);
-		for (Class c : reflections.getTypesAnnotatedWith(InitializablePlugin.class)) {
+		Set<Class<?>> reflectionsSet = reflections.getTypesAnnotatedWith(InitializablePlugin.class);
+		Object[] reflectionsArray = reflectionsSet.toArray();
+		int reflectionsLength = reflectionsArray.length;
+		for (int i = 0; i < reflectionsLength; i++) {
+			Class c = (Class) reflectionsArray[i];
 			try {
 				if (!c.isMemberClass() && !c.isAnonymousClass()) {
 					final Plugin plugin = (Plugin) c.newInstance();
@@ -137,7 +142,9 @@ public final class PluginManager {
 	 * @param plugins the plugins.
 	 */
 	public static void definePlugin(Plugin<?>... plugins) {
-		for (Plugin<?> p : plugins) {
+		int pluginsLength = plugins.length;
+		for (int i = 0; i < pluginsLength; i++) {
+			Plugin<?> p = plugins[i];
 			definePlugin(p);
 		}
 	}
@@ -155,17 +162,25 @@ public final class PluginManager {
 			}
 			if (manifest == null || manifest.type() == PluginType.ACTION) {
 				plugin.newInstance(null);
-			} else if (manifest.type() == PluginType.DIALOGUE) {
-				((DialoguePlugin) plugin).init();
-			} else if (manifest.type() == PluginType.ACTIVITY) {
-				ActivityManager.register((ActivityPlugin) plugin);
-			} else if (manifest.type() == PluginType.LOGIN) {
-				LoginConfiguration.getLoginPlugins().add((Plugin<Object>) plugin);
-			} else if (manifest.type() == PluginType.QUEST) {
-				plugin.newInstance(null);
-				QuestRepository.register((Quest) plugin);
 			} else {
-				System.out.println("Manifest: " + manifest.type());
+				switch (manifest.type()) {
+					case DIALOGUE:
+						((DialoguePlugin) plugin).init();
+						break;
+					case ACTIVITY:
+						ActivityManager.register((ActivityPlugin) plugin);
+						break;
+					case LOGIN:
+						LoginConfiguration.getLoginPlugins().add((Plugin<Object>) plugin);
+						break;
+					case QUEST:
+						plugin.newInstance(null);
+						QuestRepository.register((Quest) plugin);
+						break;
+					default:
+						System.out.println("Manifest: " + manifest.type());
+						break;
+				}
 			}
 			pluginCount++;
 		} catch (Throwable e) {

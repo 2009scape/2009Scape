@@ -245,6 +245,7 @@ public final class SlayerManager implements SavingModule {
 	public void generate(Master master) {
 		final List<Task> tasks = Arrays.asList(Tasks.getTasks(master));
 		Collections.shuffle(tasks, RandomFunction.RANDOM);
+
 		for (Task task : tasks) {
 			if (!task.canAssign(player, master)) {
 				continue;

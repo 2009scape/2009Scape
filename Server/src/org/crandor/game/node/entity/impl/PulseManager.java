@@ -41,8 +41,9 @@ public final class PulseManager {
 	public boolean clear(String... pulseType) {
 		if (current != null && current.isRunning()) {
 			if (pulseType.length > 0) {
-				for (String type : pulseType) {
-					if (!current.removeFor(type)) {
+				int length = pulseType.length;
+				for (int i = 0; i < length; i++) {
+					if (!current.removeFor(pulseType[i])) {
 						return false;
 					}
 				}

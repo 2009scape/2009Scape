@@ -21,7 +21,7 @@ import org.crandor.tools.RandomFunction;
 
 /**
  * Handles a fishing pulse.
- * @author Vexia
+ * @author Ceikry
  */
 public final class FishingPulse extends SkillPulse<NPC> {
 
@@ -106,7 +106,6 @@ public final class FishingPulse extends SkillPulse<NPC> {
 	public void animate() {
 		if (isBareHanded(player)) {
 			player.animate(new Animation(6709));
-			player.animate(new Animation(6709));
 			GameWorld.submit(new Pulse(1) {
 				int counter = 0;
 
@@ -131,55 +130,17 @@ public final class FishingPulse extends SkillPulse<NPC> {
 			super.setDelay(5);
 			return false;
 		}
-		if (node.getId() == 333 && player.getZoneMonitor().isInZone("karamja") && player.getLocation().withinDistance(new Location(2924, 3178, 0), 10) && !player.getAchievementDiaryManager().hasCompletedTask(DiaryType.KARAMJA, 0, 6)) {
-			player.getAchievementDiaryManager().updateTask(player, DiaryType.KARAMJA, 0, 6, true);
-		}
 		if (player.getFamiliarManager().hasFamiliar() && player.getFamiliarManager().getFamiliar() instanceof Forager) {
 			final Forager forager = (Forager) player.getFamiliarManager().getFamiliar();
 			forager.handlePassiveAction();
 		}
 		if (success()) {
 			if (player.getInventory().hasSpaceFor(fish.getItem()) && option.getBait() != null ? player.getInventory().remove(option.getBait()) : true) {
-				
-				if (fish == Fish.TROUT && player.getLocation().withinDistance(new Location(3105, 3429, 0)) && !player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(0, 11)) {
-					player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 0, 11, true);
+
+				if(player.getSkillTasks().hasTask()){
+					updateSkillTask();
 				}
-				if (fish == Fish.ANCHOVIE && player.getViewport().getRegion().getId() == 13105 && !player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).isComplete(0, 6)) {
-					player.getAchievementDiaryManager().updateTask(player, DiaryType.LUMBRIDGE, 0, 6, true);
-				}
-				if (fish == Fish.SALMON && player.getViewport().getRegion().getId() == 12850 && !player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).isComplete(1, 3)) {
-					player.getAchievementDiaryManager().updateTask(player, DiaryType.LUMBRIDGE, 1, 3, true);
-				}
-				
-				if (fish == Fish.ANCHOVIE) { 
-					player.getSkillTasks().decreaseTask(player, SkillTasks.FANCHOVIES1);
-					player.getSkillTasks().decreaseTask(player, SkillTasks.FANCHOVIES2);
-				} else if (fish == Fish.HERRING) {
-					player.getSkillTasks().decreaseTask(player, SkillTasks.FHERRING1);
-					player.getSkillTasks().decreaseTask(player, SkillTasks.FHERRING2);
-				} else if (fish == Fish.LOBSTER) {
-					player.getSkillTasks().decreaseTask(player, SkillTasks.FLOBSTER1);
-					player.getSkillTasks().decreaseTask(player, SkillTasks.FLOBSTER2);
-				} else if (fish == Fish.SALMON) {
-					player.getSkillTasks().decreaseTask(player, SkillTasks.FSALMON1);
-					player.getSkillTasks().decreaseTask(player, SkillTasks.FSALMON2);
-				} else if (fish == Fish.SHARK) {
-					player.getSkillTasks().decreaseTask(player, SkillTasks.FSHARK1);
-					player.getSkillTasks().decreaseTask(player, SkillTasks.FSHARK2);
-					player.getSkillTasks().decreaseTask(player, SkillTasks.FSHARK3);
-				} else if (fish == Fish.SHRIMP) {
-					player.getSkillTasks().decreaseTask(player, SkillTasks.FSHRIMP1);
-					player.getSkillTasks().decreaseTask(player, SkillTasks.FSHRIMP2);
-				} else if (fish == Fish.SWORDFISH) {
-					player.getSkillTasks().decreaseTask(player, SkillTasks.FSWORD1);
-					player.getSkillTasks().decreaseTask(player, SkillTasks.FSWORD2);
-				} else if (fish == Fish.TROUT) {
-					player.getSkillTasks().decreaseTask(player, SkillTasks.FTROUT1);
-					player.getSkillTasks().decreaseTask(player, SkillTasks.FTROUT2);
-				} else if (fish == Fish.TUNA) {
-					player.getSkillTasks().decreaseTask(player, SkillTasks.FTUNA1);
-					player.getSkillTasks().decreaseTask(player, SkillTasks.FTUNA2);
-				}
+				updateDiary();
 
 				SkillingPets.checkPetDrop(player, SkillingPets.HERON);
 				final Item item = fish.getItem();
@@ -197,13 +158,78 @@ public final class FishingPulse extends SkillPulse<NPC> {
 		}
 		return player.getInventory().freeSlots() == 0;
 	}
-	
+
+	public void updateDiary(){
+		switch(fish){
+			case TROUT:
+				if(player.getLocation().withinDistance(new Location(3105, 3429, 0)) && !player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(0, 11)){
+					player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 0, 11, true);
+				}
+				break;
+			case ANCHOVIE:
+				if (player.getViewport().getRegion().getId() == 13105 && !player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).isComplete(0, 6)) {
+					player.getAchievementDiaryManager().updateTask(player, DiaryType.LUMBRIDGE, 0, 6, true);
+				}
+				break;
+			case SALMON:
+				if (player.getViewport().getRegion().getId() == 12850 && !player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).isComplete(1, 3)) {
+					player.getAchievementDiaryManager().updateTask(player, DiaryType.LUMBRIDGE, 1, 3, true);
+				}
+				break;
+		}
+		if (node.getId() == 333 && player.getZoneMonitor().isInZone("karamja") && player.getLocation().withinDistance(new Location(2924, 3178, 0), 10) && !player.getAchievementDiaryManager().hasCompletedTask(DiaryType.KARAMJA, 0, 6)) {
+			player.getAchievementDiaryManager().updateTask(player, DiaryType.KARAMJA, 0, 6, true);
+		}
+	}
+
+	public void updateSkillTask() {
+		switch (fish) {
+			case ANCHOVIE:
+				player.getSkillTasks().decreaseTask(player, SkillTasks.FANCHOVIES1);
+				player.getSkillTasks().decreaseTask(player, SkillTasks.FANCHOVIES2);
+				break;
+			case HERRING:
+				player.getSkillTasks().decreaseTask(player, SkillTasks.FHERRING1);
+				player.getSkillTasks().decreaseTask(player, SkillTasks.FHERRING2);
+				break;
+			case LOBSTER:
+				player.getSkillTasks().decreaseTask(player, SkillTasks.FLOBSTER1);
+				player.getSkillTasks().decreaseTask(player, SkillTasks.FLOBSTER2);
+				break;
+			case SALMON:
+				player.getSkillTasks().decreaseTask(player, SkillTasks.FSALMON1);
+				player.getSkillTasks().decreaseTask(player, SkillTasks.FSALMON2);
+				break;
+			case SHARK:
+				player.getSkillTasks().decreaseTask(player, SkillTasks.FSHARK1);
+				player.getSkillTasks().decreaseTask(player, SkillTasks.FSHARK2);
+				player.getSkillTasks().decreaseTask(player, SkillTasks.FSHARK3);
+				break;
+			case SHRIMP:
+				player.getSkillTasks().decreaseTask(player, SkillTasks.FSHRIMP1);
+				player.getSkillTasks().decreaseTask(player, SkillTasks.FSHRIMP2);
+				break;
+			case SWORDFISH:
+				player.getSkillTasks().decreaseTask(player, SkillTasks.FSWORD1);
+				player.getSkillTasks().decreaseTask(player, SkillTasks.FSWORD2);
+				break;
+			case TROUT:
+				player.getSkillTasks().decreaseTask(player, SkillTasks.FTROUT1);
+				player.getSkillTasks().decreaseTask(player, SkillTasks.FTROUT2);
+				break;
+			case TUNA:
+				player.getSkillTasks().decreaseTask(player, SkillTasks.FTUNA1);
+				player.getSkillTasks().decreaseTask(player, SkillTasks.FTUNA2);
+				break;
+		}
+	}
+
 	private boolean isBareHanded(Player p) {
 		if (option == FishingOption.HARPOON) {
-			if (checkFish(p) > 0 && !player.getInventory().containsItem(option.getTool()) || !player.getEquipment().containsItem(option.getTool())) {
+			if (checkFish(p) > 0 && !(player.getInventory().containsItem(option.getTool()) || player.getEquipment().containsItem(option.getTool()))) {
 				return true;
 			}
-			if (checkFish(p) > 2 && !player.getInventory().containsItem(option.getTool()) || !player.getEquipment().containsItem(option.getTool())) {
+			if (checkFish(p) > 2 && !(player.getInventory().containsItem(option.getTool()) || player.getEquipment().containsItem(option.getTool()))) {
 				return true;
 			}
 		}

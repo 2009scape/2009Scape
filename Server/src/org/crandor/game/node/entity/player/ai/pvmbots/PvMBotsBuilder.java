@@ -1,6 +1,8 @@
 package org.crandor.game.node.entity.player.ai.pvmbots;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.concurrent.Executors;
 
 import org.crandor.game.container.impl.EquipmentContainer;
 import org.crandor.game.content.skill.Skills;
@@ -10,38 +12,47 @@ import org.crandor.game.node.entity.player.ai.minigamebots.pestcontrol.PestContr
 import org.crandor.game.node.entity.player.link.SpellBookManager;
 import org.crandor.game.node.entity.player.link.appearance.Gender;
 import org.crandor.game.node.item.Item;
+import org.crandor.game.world.GameWorld;
 import org.crandor.game.world.map.Location;
 import org.crandor.tools.RandomFunction;
+import sun.util.resources.CalendarData;
 
 public final class PvMBotsBuilder{
+	public static int botsSpawned;
 	
 	public static PestControlTestBot createPestControlTestBot(Location l)
 	{
+		botsSpawned++;
 		return new PestControlTestBot(l);
 	}
 	
 	public static PvMBots create(Location l)
 	{
+		botsSpawned++;
 		return new PvMBots(l);
 	}
 	
 	public static LowestBot createLowest(Location l)
 	{
+		botsSpawned++;
 		return new LowestBot(l);
 	}
 	
 	public static NoobBot createNoob(Location l)
 	{
+		botsSpawned++;
 		return new NoobBot(l);
 	}
 	
 	public static DragonKiller createDragonKiller(Location l)
 	{
+		botsSpawned++;
 		return new DragonKiller(l);
 	}
 	
 	public static GiantMoleBot createGiantMoleBot(Location l)
 	{
+		botsSpawned++;
 		return new GiantMoleBot(l);
 	}
 	
@@ -475,14 +486,12 @@ public final class PvMBotsBuilder{
 		final GiantMoleBot bot = PvMBotsBuilder.createGiantMoleBot(new Location(0, 0));
 		bot.teleport(loc);
 		bot.getAppearance().setGender(RandomFunction.random(3) == 1 ? Gender.FEMALE : Gender.MALE);
-
-
-		
 		generateGiantMoleBot(bot);
 	}
 	
 	public static void immersiveSpawns()
 	{
+		Executors.newSingleThreadExecutor().execute(() -> {
 		//Lumbridge
 		//GOBLINS
 		spawnLowest(new Location(3259, 3224));
@@ -573,6 +582,9 @@ public final class PvMBotsBuilder{
 		//Brimhaven dragons
 		spawnDragonKiller(new Location(2704, 9450));
 		spawnDragonKiller(new Location(2704, 9450));
+
+		System.out.println("[" + GameWorld.getName() + "]: PvMBotsBuilder: Spawned " + botsSpawned + " bots.");
+		});
 	}
 	public void randomItem()
 	{

@@ -9,7 +9,7 @@ import java.util.HashMap;
  * Mining nodes
  * @author ceik
  */
-public enum MINING_NODE{
+public enum MiningNode{
         //Copper
         COPPER_ORE_0( 2090, 450,   (byte) 1),
         COPPER_ORE_1( 2091, 452,   (byte) 1),
@@ -438,7 +438,7 @@ public enum MINING_NODE{
         double rate,experience;
         byte identifier;
 
-        MINING_NODE(int full, int empty, byte identifier){
+        MiningNode(int full, int empty, byte identifier){
             this.full = full;
             this.empty = empty;
             this.identifier = identifier;
@@ -557,18 +557,18 @@ public enum MINING_NODE{
                     level = 46;
             }
         }
-        private static HashMap<Integer, MINING_NODE> NODE_MAP = new HashMap<>();
+        private static HashMap<Integer, MiningNode> NODE_MAP = new HashMap<>();
         private static HashMap<Integer, Integer> EMPTY_MAP = new HashMap<>();
         static{
-            for(MINING_NODE node : MINING_NODE.values()){
+            for(MiningNode node : MiningNode.values()){
                 NODE_MAP.putIfAbsent(node.full,node);
             }
-            for(MINING_NODE node : MINING_NODE.values()){
+            for(MiningNode node : MiningNode.values()){
                 EMPTY_MAP.putIfAbsent(node.empty,node.full);
             }
         }
 
-        public static MINING_NODE forId(int id){
+        public static MiningNode forId(int id){
             return NODE_MAP.get(id);
         }
 

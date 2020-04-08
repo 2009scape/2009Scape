@@ -360,9 +360,12 @@ public class ShootingStarPlugin extends OptionHandler {
 		 * @return The {@code ShootingStar} object.
 		 */
 		public static ShootingStar forId(int objectId) {
-			for (ShootingStar star : ShootingStar.values()) {
-				if (star.getObjectId() == objectId) {
-					return star;
+			ShootingStar[] starArray = ShootingStar.values();
+			int starLength = starArray.length;
+			for (int i = 0; i < starLength; i++) {
+				ShootingStar ster = starArray[i];
+				if (ster.getObjectId() == objectId) {
+					return ster;
 				}
 			}
 			return null;

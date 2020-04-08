@@ -14,8 +14,8 @@ import org.crandor.plugin.Plugin;
 
 /**
  * Represents the plugin used to start fishing.
- * @author 'Vexia
- * @version 1.0
+ * @author Ceikry
+ * @version 1.2
  */
 @InitializablePlugin
 public final class FishingOptionPlugin extends OptionHandler {
@@ -37,13 +37,8 @@ public final class FishingOptionPlugin extends OptionHandler {
 		if (spot == null) {
 			return false;
 		}
-		FishingOption opt = null;
-		for (FishingOption o : spot.getOptions()) {
-			if (o.getName().equals(option)) {
-				opt = o;
-				break;
-			}
-		}
+		FishingOption opt = FishingOption.forName(option);
+
 		if (opt == null) {
 			return false;
 		}

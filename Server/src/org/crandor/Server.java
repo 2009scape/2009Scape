@@ -12,7 +12,6 @@ import org.crandor.net.amsc.WorldCommunicator;
 import org.crandor.tools.TimeStamp;
 import org.crandor.tools.backup.AutoBackup;
 
-import java.awt.*;
 import java.net.BindException;
 
 /**

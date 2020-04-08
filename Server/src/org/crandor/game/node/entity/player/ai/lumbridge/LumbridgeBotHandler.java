@@ -1,5 +1,6 @@
 package org.crandor.game.node.entity.player.ai.lumbridge;
 
+import org.crandor.game.world.GameWorld;
 import org.crandor.tools.RandomFunction;
 
 import java.util.concurrent.Executors;
@@ -12,7 +13,7 @@ public class LumbridgeBotHandler {
     public static void immersiveLumbridge()
     {
         //Generate a few random bots here and there
-
+        System.out.println("[" + GameWorld.getName() + "]: LumbridgeBotHandler: Initialized dead idlers.");
         generateDeadIdlers();
     }
 

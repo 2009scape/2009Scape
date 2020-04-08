@@ -40,8 +40,7 @@ public final class RegionManager {
 	 * Pulses the active regions.
 	 */
 	public static void pulse() {
-		for (Iterator<Region> it = REGION_CACHE.values().iterator(); it.hasNext();) {
-			Region r = it.next();
+		for (Region r : REGION_CACHE.values()) {
 			if (r != null && r.isActive()) {
 				for (RegionPlane plane : r.getPlanes()) {
 					plane.pulse();

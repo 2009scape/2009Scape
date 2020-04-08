@@ -14,26 +14,47 @@ public class Fletching {
     public static HashMap<Integer, String> stringMap = new HashMap<>();
     public static HashMap<Integer, Limb> limbMap = new HashMap<>();
     static{
-        for(Items item : Items.values()){
+        Items[] itemsArray = Items.values();
+        int thisLength = itemsArray.length;
+        for(int x = 0; x < thisLength; x++){
+            Items item = itemsArray[x];
             logMap.putIfAbsent(item.id, item.items);
         }
-        for(Bolts bolt : Bolts.values()){
+        Bolts[] boltArray = Bolts.values();
+        thisLength = boltArray.length;
+        for(int x = 0; x < thisLength; x++){
+            Bolts bolt = boltArray[x];
             boltMap.putIfAbsent(bolt.unfinished,bolt);
         }
-        for(Darts dart : Darts.values()){
+        Darts[] dartArray = Darts.values();
+        thisLength = dartArray.length;
+        for(int x = 0; x < thisLength; x++){
+            Darts dart = dartArray[x];
             dartMap.putIfAbsent(dart.unfinished,dart);
         }
-        for(ArrowHeads arrowhead : ArrowHeads.values()){
+        ArrowHeads[] ahArray = ArrowHeads.values();
+        thisLength = ahArray.length;
+        for(int x = 0; x < thisLength; x++){
+            ArrowHeads arrowhead = ahArray[x];
             arrowHeadMap.putIfAbsent(arrowhead.unfinished,arrowhead);
         }
-        for(GemBolts gem : GemBolts.values()){
+        GemBolts[] gbArray = GemBolts.values();
+        thisLength = gbArray.length;
+        for(int x = 0; x < thisLength; x++){
+            GemBolts gem = gbArray[x];
             gemMap.putIfAbsent(gem.gem,gem);
             tipMap.putIfAbsent(gem.tip,gem);
         }
-        for(String bow : String.values()){
+        String[] stringArray = String.values();
+        thisLength = stringArray.length;
+        for(int x = 0; x < thisLength; x++){
+            String bow = stringArray[x];
             stringMap.putIfAbsent(bow.unfinished,bow);
         }
-        for(Limb limb : Limb.values()){
+        Limb[] limbsArray = Limb.values();
+        thisLength = limbsArray.length;
+        for(int x = 0; x < thisLength; x++){
+            Limb limb = limbsArray[x];
             limbMap.putIfAbsent(limb.stock, limb);
         }
     }

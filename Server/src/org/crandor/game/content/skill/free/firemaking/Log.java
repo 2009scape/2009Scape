@@ -1,5 +1,7 @@
 package org.crandor.game.content.skill.free.firemaking;
 
+import java.util.HashMap;
+
 /**
  * Represents an enumeration of burnable logs.
  * @author 'Vexia
@@ -23,6 +25,16 @@ public enum Log {
 	GREEN(7405, 1, 200, 11405, 50), 
 	RED(7404, 1, 200, 11404, 50), 
 	JOGRE(3125, 1, 200, 3862, 50);
+
+	public static HashMap<Integer,Log> logMap = new HashMap<>();
+	static{
+		Log[] logArray = Log.values();
+		int logLength = logArray.length;
+		for(int i = 0; i < logLength; i++){
+			Log log = logArray[i];
+			logMap.putIfAbsent(log.logId,log);
+		}
+	}
 	
 	/**
 	 * The log id.
@@ -112,11 +124,6 @@ public enum Log {
 	 * @return the log.
 	 */
 	public static Log forId(int id) {
-		for (Log fire : Log.values()) {
-			if (fire.getLogId() == id) {
-				return fire;
-			}
-		}
-		return null;
+		return logMap.get(id);
 	}
 }

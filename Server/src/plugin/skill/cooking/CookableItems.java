@@ -96,7 +96,10 @@ public enum CookableItems {
     }
 
     static{
-        for(CookableItems item : CookableItems.values()){
+        CookableItems[] cookableItems = values();
+        int cookableItemsLength = cookableItems.length;
+        for(int x = 0; x < cookableItemsLength; x++){
+            CookableItems item = cookableItems[x];
             cookingMap.putIfAbsent(item.raw,item);
             intentionalBurnMap.putIfAbsent(item.cooked,item);
         }

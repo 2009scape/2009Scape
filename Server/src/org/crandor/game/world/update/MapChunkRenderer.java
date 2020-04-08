@@ -1,13 +1,16 @@
 package org.crandor.game.world.update;
 
 import org.crandor.game.node.entity.player.Player;
+import org.crandor.game.world.map.Region;
 import org.crandor.game.world.map.RegionChunk;
 import org.crandor.game.world.map.Viewport;
 import org.crandor.net.packet.PacketRepository;
 import org.crandor.net.packet.context.ClearChunkContext;
 import org.crandor.net.packet.out.ClearRegionChunk;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -24,30 +27,35 @@ public final class MapChunkRenderer {
 		Viewport v = player.getViewport();
 		RegionChunk[][] last = player.getPlayerFlags().getLastViewport();
 		List<RegionChunk> updated = new ArrayList<>();
-		for (int x = 0; x < last.length; x++) {
-			RegionChunk[] chunks = last[x];
-			for (int y = 0; y < chunks.length; y++) {
-				RegionChunk previous = chunks[y];
-				if (previous == null) {
-					continue;
-				}
-				if (!containsChunk(v.getChunks(), previous)) {
-					PacketRepository.send(ClearRegionChunk.class, new ClearChunkContext(player, previous));
-				} else {
-					updated.add(previous);
+		RegionChunk[][] current = v.getChunks();
+		if(!Arrays.equals(current,last)) { //don't update if the viewport hasn't changed
+			int sizeX = last.length;
+			for (int x = 0;  x < sizeX; x++) {
+				int sizeY = last[x].length;
+				for (int y = 0; y < sizeY; y++) {
+					RegionChunk previous = last[x][y];
+					if (previous == null) {
+						continue;
+					}
+					if (!containsChunk(current, previous)) {
+						PacketRepository.send(ClearRegionChunk.class, new ClearChunkContext(player, previous));
+					} else {
+						updated.add(previous);
+					}
 				}
 			}
-		}
-		for (int x = 0; x < v.getChunks().length; x++) {
-			RegionChunk[] chunks = v.getChunks()[x];
-			for (int y = 0; y < chunks.length; y++) {
-				RegionChunk chunk = chunks[y];
-				if (!updated.contains(chunk)) {
-					chunk.synchronize(player);
-				} else {
-					chunk.update(player);
+			sizeX = current.length;
+			for (int x = 0; x < sizeX; x++) {
+				int sizeY = current[x].length;
+				for (int y = 0; y < sizeY; y++) {
+					RegionChunk chunk = current[x][y];
+					if (!updated.contains(chunk)) {
+						chunk.synchronize(player);
+					} else {
+						chunk.update(player);
+					}
+					last[x][y] = current[x][y];
 				}
-				last[x][y] = chunk;
 			}
 		}
 	}
@@ -59,9 +67,11 @@ public final class MapChunkRenderer {
 	 * @return {@code True} if so.
 	 */
 	private static boolean containsChunk(RegionChunk[][] list, RegionChunk c) {
-		for (RegionChunk[] l : list) {
-			for (RegionChunk chunk : l) {
-				if (chunk == c) {
+		int sizeList = list.length;
+		for (int x = 0; x < sizeList; x++) {
+			int chunkSize = list[x].length;
+			for (int y = 0; y < chunkSize; y++) {
+				if (list[x][y] == c) {
 					return true;
 				}
 			}

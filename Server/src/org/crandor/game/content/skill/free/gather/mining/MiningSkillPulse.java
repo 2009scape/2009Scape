@@ -32,7 +32,7 @@ import java.util.List;
  * @author ceik
  */
 public class MiningSkillPulse extends Pulse {
-    private MINING_NODE resource;
+    private MiningNode resource;
     private boolean isMiningEssence = false;
     private boolean isMiningGems = false;
     private int ticks;
@@ -75,8 +75,8 @@ public class MiningSkillPulse extends Pulse {
 
     @Override
     public void start() {
-        resource = MINING_NODE.forId(node.getId());
-        if(MINING_NODE.isEmpty(node.getId())){
+        resource = MiningNode.forId(node.getId());
+        if(MiningNode.isEmpty(node.getId())){
             player.getPacketDispatch().sendMessage("This rock contains no ore.");
         }
         if(resource == null){
@@ -85,7 +85,7 @@ public class MiningSkillPulse extends Pulse {
         if(resource.getId() == 2491){
             isMiningEssence = true;
         }
-        if(resource.identifier == MINING_NODE.GEM_ROCK_0.identifier){
+        if(resource.identifier == MiningNode.GEM_ROCK_0.identifier){
             isMiningGems = true;
         }
         if (TutorialSession.getExtension(player).getStage() == 35) {
@@ -226,8 +226,8 @@ public class MiningSkillPulse extends Pulse {
 
     private int calculateReward(int reward) {
         // If the player is mining sandstone or granite, then get size of sandstone/granite and xp reward for that size
-        if (resource == MINING_NODE.SANDSTONE || resource == MINING_NODE.GRANITE) {
-            int value = RandomFunction.randomize(resource == MINING_NODE.GRANITE ? 3 : 4);
+        if (resource == MiningNode.SANDSTONE || resource == MiningNode.GRANITE) {
+            int value = RandomFunction.randomize(resource == MiningNode.GRANITE ? 3 : 4);
             reward += value << 1;
             player.getSkills().addExperience(Skills.MINING, value * 10, true);
         }

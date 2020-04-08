@@ -43,6 +43,7 @@ public final class DeathTask extends NodeTask {
 		e.setAttribute("state:death", true);
 		e.setAttribute("tick:death", GameWorld.getTicks());
 		e.lock(50);
+		e.faceLocation(e.getLocation());
 		Entity killer = n.length > 0 ? (Entity) n[0] : e;
 		if (e instanceof NPC) {
 			killer.removeAttribute("combat-time");

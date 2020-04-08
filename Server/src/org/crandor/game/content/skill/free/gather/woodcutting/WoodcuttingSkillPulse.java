@@ -29,7 +29,7 @@ import java.util.concurrent.TimeUnit;
  * @author ceik
  */
 public class WoodcuttingSkillPulse extends Pulse {
-    private WC_NODE resource;
+    private WoodcuttingNode resource;
     private int ticks;
     private Player player;
     private GameObject node;
@@ -73,7 +73,7 @@ public class WoodcuttingSkillPulse extends Pulse {
 
     @Override
     public void start() {
-        resource = WC_NODE.forId(node.getId());
+        resource = WoodcuttingNode.forId(node.getId());
         if(resource == null){
             return;
         }
@@ -149,7 +149,7 @@ public class WoodcuttingSkillPulse extends Pulse {
             player.getSkills().addExperience(Skills.WOODCUTTING, experience, true);
 
             //send the message for the resource reward
-            if (resource == WC_NODE.DRAMEN_TREE) {
+            if (resource == WoodcuttingNode.DRAMEN_TREE) {
                 player.getPacketDispatch().sendMessage("You cut a branch from the Dramen tree.");
             } else {
                 player.getPacketDispatch().sendMessage("You get some " + ItemDefinition.forId(reward).getName().toLowerCase() + ".");

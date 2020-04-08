@@ -6,6 +6,8 @@ import org.crandor.game.node.item.Item;
 import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.tools.RandomFunction;
 
+import java.util.HashMap;
+
 /**
  * Represents a fishing option.
  * @author Emperor
@@ -24,6 +26,16 @@ public enum FishingOption {
 	H_NET(new Item(303), 1, Animation.create(621), null, "net", Fish.MONKFISH),
 	C_CAGE(new Item(301), 85, Animation.create(619), new Item(14943), "cage", Fish.DARK_CRAB);
 
+	public static HashMap<String,FishingOption> nameMap = new HashMap<>();
+	static{
+		for(FishingOption option : FishingOption.values()){
+			nameMap.putIfAbsent(option.name,option);
+		}
+	}
+
+	public static FishingOption forName(String name){
+		return nameMap.get(name);
+	}
 	/**
 	 * The tool required.
 	 */

@@ -218,6 +218,9 @@ public final class Skills {
 		//check if a player has brawling gloves and, if equipped, modify xp
 		if(!player.getBrawlingGlovesManager().GloveCharges.isEmpty()){
 			Item gloves = BrawlingGloves.forSkill(slot) == null ? null : new Item(BrawlingGloves.forSkill(slot).getId());
+			if(gloves == null && (slot == Skills.STRENGTH || slot == Skills.DEFENCE)){
+				gloves = new Item (BrawlingGloves.forSkill(Skills.ATTACK).getId());
+			}
 			if(gloves != null && player.getEquipment().containsItem(gloves)){
 				experienceAdd += experienceAdd * player.getBrawlingGlovesManager().getExperienceBonus();
 				player.getBrawlingGlovesManager().updateCharges(gloves.getId(),1);
