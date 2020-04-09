@@ -26,7 +26,7 @@ public final class TeleportCommand extends CommandPlugin {
 
 	@Override
 	public Plugin<Object> newInstance(Object arg) throws Throwable {
-		link(CommandSet.ADMINISTRATOR);
+		link(CommandSet.PLAYER);
 		return this;
 	}
 
