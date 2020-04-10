@@ -197,7 +197,7 @@ public final class ElvargNPC extends AbstractNPC {
 		@Override
 		public void adjustBattleState(Entity entity, Entity victim, BattleState state) {
 			if (style == CombatStyle.RANGE) {
-				fireType.getTask().run(victim, entity);
+				fireType.getTask().exec(victim, entity);
 				if (victim.hasProtectionPrayer(CombatStyle.MAGIC)) {
 					state.setEstimatedHit((int) (state.getEstimatedHit() * 0.6));
 				}

@@ -103,8 +103,11 @@ public final class RegionPlane {
 	 * Called at the end of the update sequence, if the region is active.
 	 */
 	public void pulse() {
-		for (RegionChunk[] r : chunks) {
-			for (RegionChunk chunk : r) {
+		int length = chunks.length;
+		for (int i = 0; i < length; i++) {
+			int rlength = chunks[i].length;
+			for (int j = 0; j < rlength; j++ ) {
+				RegionChunk chunk = chunks[i][j];
 				if (chunk != null) {
 					chunk.resetFlags();
 				}

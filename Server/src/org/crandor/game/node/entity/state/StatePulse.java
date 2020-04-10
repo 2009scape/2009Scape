@@ -3,6 +3,7 @@ package org.crandor.game.node.entity.state;
 import org.crandor.game.node.entity.Entity;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 
 import java.nio.ByteBuffer;
 
@@ -83,7 +84,7 @@ public abstract class StatePulse extends Pulse {
 		}
 		restart();
 		start();
-		GameWorld.submit(this);
+		PulseRunner.submit(this);
 	}
 
 }

@@ -67,7 +67,10 @@ public enum CanoeStation {
 	 * @return the <code>CanoeStation</code>.
 	 */
 	public static CanoeStation forObject(final GameObject object) {
-		for (CanoeStation station : values()) {
+		CanoeStation[] stations = values();
+		int length = stations.length;
+		for (int i = 0; i < length; i++) {
+			CanoeStation station = stations[i];
 			if (station.getObjLocation() != null && station.getObjLocation().equals(object.getLocation())) {
 				return station;
 			}
@@ -128,10 +131,14 @@ public enum CanoeStation {
 	 * @return the station.
 	 */
 	public static CanoeStation forButton(final int button) {
-		for (CanoeStation canoe : values()) {
-			for (int i : canoe.getButtons()) {
-				if (i == button) {
-					return canoe;
+		CanoeStation[] stations = values();
+		int length = stations.length;
+		for (int j = 0; j < length; j++) {
+			int[] buttons = stations[j].getButtons();
+			int length2 = buttons.length;
+			for (int i = 0; i < length2; i++) {
+				if (buttons[i] == button) {
+					return stations[j];
 				}
 			}
 		}

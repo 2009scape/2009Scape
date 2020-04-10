@@ -40,11 +40,10 @@ public class WitchsExperimentNPC extends AbstractNPC {
         if (session == null) {
             return;
         }
-        if (!session.getPlayer().isActive() || session.getPlayer().getLocation().getDistance(getLocation()) > 15) {
-            session.getPlayer().setAttribute("exerimentAlive", false);
+        if (!session.getPlayer().isActive() || session.getPlayer().getLocation().getDistance(getLocation()) > 15 || session.getPlayer().getSavedData().getQuestData().isWitchsExerimentKilled()) {
+            session.getPlayer().removeAttribute("exerimentAlive");
             clear();
             session.close();
-
             return;
         }
         if (commenced && !getProperties().getCombatPulse().isAttacking()) {
@@ -145,11 +144,12 @@ public class WitchsExperimentNPC extends AbstractNPC {
                                 npc.getProperties().getCombatPulse().attack(player);
                             }
                             if (newType.getMessage() != null) {
-                                npc.sendChat(newType.getMessage()[0]);
+                                player.sendMessage(newType.getMessage()[0]);
+                                player.sendMessage(newType.getMessage()[1]);
                             }
                             if (newType == END) {
                                 player.getSavedData().getQuestData().setWitchsExerimentKilled(true);
-                                player.setAttribute("exerimentAlive", false);
+                                player.removeAttribute("exerimentAlive");
                                 return false;
                             }
                             player.unlock();
@@ -185,9 +185,6 @@ public class WitchsExperimentNPC extends AbstractNPC {
             return message;
         }
 
-        public boolean hasSession(final Player player) {
-            return ExperimentSession.getSession(player) != null;
-        }
     }
 
 }

@@ -11,6 +11,7 @@ import org.crandor.game.node.object.GameObject;
 import org.crandor.game.node.object.ObjectBuilder;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Direction;
 import org.crandor.game.world.map.Location;
 import org.crandor.plugin.InitializablePlugin;
@@ -195,7 +196,7 @@ public final class StaircasePlugin extends OptionHandler {
 				switch (buttonId) {
 				case 1:
 					player.lock(1);
-					GameWorld.submit(new Pulse(1) {
+					PulseRunner.submit(new Pulse(1) {
 						@Override
 						public boolean pulse() {
 							climb(player, 1, house, ladder);
@@ -206,7 +207,7 @@ public final class StaircasePlugin extends OptionHandler {
 					break;
 				case 2:
 					player.lock(1);
-					GameWorld.submit(new Pulse(1) {
+					PulseRunner.submit(new Pulse(1) {
 						@Override
 						public boolean pulse() {
 							climb(player, -1, house, ladder);

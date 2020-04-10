@@ -19,6 +19,7 @@ import org.crandor.game.node.item.GroundItemManager;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.repository.Repository;
 import org.crandor.game.world.update.flag.context.Animation;
@@ -287,7 +288,7 @@ public class BasketofEggsEvent extends HolidayEvent {
 						}
 					};
 					player.setAttribute("egg-pulse", pulse);
-					GameWorld.submit(pulse);
+					PulseRunner.submit(pulse);
 					break;
 				case 30:
 					npc("No you fool! I am an easter bunny!!");
@@ -342,7 +343,7 @@ public class BasketofEggsEvent extends HolidayEvent {
 						}
 					};
 					player.setAttribute("egg-pulse", pulse);
-					GameWorld.submit(pulse);
+					PulseRunner.submit(pulse);
 					break;
 				case 4:
 					end();

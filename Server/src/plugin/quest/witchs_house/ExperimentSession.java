@@ -24,7 +24,7 @@ public final class ExperimentSession {
 	 */
 	public ExperimentSession(final Player player) {
 		this.player = player;
-		this.npc = new WitchsExperimentNPC(WitchsExperimentNPC.ExperimentType.values()[player.getSavedData().getActivityData().getKolodionBoss()].getId(), Location.create(2936, 3463, 0), this);
+		this.npc = new WitchsExperimentNPC(WitchsExperimentNPC.ExperimentType.values()[0].getId(), Location.create(2936, 3463, 0), this);
 		if (player.getExtension(ExperimentSession.class) != null) {
 			player.removeExtension(ExperimentSession.class);
 		}
@@ -55,11 +55,10 @@ public final class ExperimentSession {
 
 			@Override
 			public boolean pulse() {
-				switch (++count) {
-					case 1:
-						npc.init();
-						npc.setCommenced(true);
-						return true;
+				if (++count == 1) {
+					npc.init();
+					npc.setCommenced(true);
+					return true;
 				}
 				return false;
 			}

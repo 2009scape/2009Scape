@@ -75,6 +75,7 @@ public final class BetaCommandPlugin extends CommandPlugin {
                     return true;
                 }
                 player.getQuestRepository().getQuest(name).setStage(player, 0);
+                player.getQuestRepository().dockPoints(player.getQuestRepository().getQuest(name).getQuestPoints());
                 player.getQuestRepository().syncronizeTab(player);
                 return true;
 

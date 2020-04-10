@@ -6,6 +6,7 @@ import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.link.quest.Quest;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.game.world.update.flag.context.Animation;
 
@@ -145,7 +146,7 @@ public final class GertrudesCatDialogue extends DialoguePlugin {
 				if (quest.getStage(player) == 40) {
 					return true;
 				}
-				GameWorld.submit(new Pulse(7, player) {
+				PulseRunner.submit(new Pulse(7, player) {
 					@Override
 					public boolean pulse() {
 						end();

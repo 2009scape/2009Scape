@@ -66,8 +66,10 @@ public final class WateringPulse extends ToolAction {
 	 */
 	private Item getNextCan() {
 		Item can = null;
-		for (int i = 0; i < PatchTool.WATERING_CAN.getTools().length; i++) {
-			if (PatchTool.WATERING_CAN.getTools()[i].getId() == tool.getId()) {
+		int length = PatchTool.WATERING_CAN.getTools().length;
+		Item[] tools = PatchTool.WATERING_CAN.getTools();
+		for (int i = 0; i < length; i++) {
+			if (tools[i].getId() == tool.getId()) {
 				return PatchTool.WATERING_CAN.getTools()[(i + 1)];
 			}
 		}

@@ -21,6 +21,7 @@ import org.crandor.game.node.item.Item;
 import org.crandor.game.node.object.GameObject;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Direction;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.map.zone.MapZone;
@@ -653,7 +654,7 @@ public final class TrollheimPlugin extends OptionHandler {
 			Location loc = Location.create(2849, 3597, 0);
 			PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.POSITION, loc.getX() - 2, loc.getY(), 1300, 1, 30));
 			PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.ROTATION, loc.getX() + 22, loc.getY() + 10, 1300, 1, 30));
-			GameWorld.submit(new Pulse(1, player) {
+			PulseRunner.submit(new Pulse(1, player) {
 				int count = 0;
 
 				@Override

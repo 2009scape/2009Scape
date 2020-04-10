@@ -7,6 +7,7 @@ import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.plugin.Plugin;
@@ -50,7 +51,7 @@ public final class CanafisWereWolfPlugin extends OptionHandler {
 			newN.setRespawn(false);
 			newN.setAttribute("original", n.getId());
 			newN.setAttribute("loc", n.getProperties().getSpawnLocation());
-			GameWorld.submit(new Pulse(2) {
+			PulseRunner.submit(new Pulse(2) {
 				@Override
 				public boolean pulse() {
 					newN.getProperties().getCombatPulse().attack(player);

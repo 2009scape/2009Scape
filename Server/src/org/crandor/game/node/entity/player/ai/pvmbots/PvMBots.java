@@ -35,7 +35,11 @@ public class PvMBots extends AIPlayer {
 
     public List<Entity> FindTargets(Entity entity, int radius) {
         List<Entity> targets = new ArrayList<>();
-        for (NPC npc : RegionManager.getLocalNpcs(entity, radius)) {
+        Object[] localNPCs = RegionManager.getLocalNpcs(entity,radius).toArray();
+        int length = localNPCs.length;
+        if(length > 5){length = 5;}
+        for (int i = 0; i < length; i++) {
+            NPC npc = (NPC) localNPCs[i];
             {
                 if (checkValidTargets(npc))
                     targets.add(npc);

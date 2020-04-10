@@ -15,6 +15,7 @@ import org.crandor.game.system.task.LocationLogoutTask;
 import org.crandor.game.system.task.LogoutTask;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Direction;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.update.flag.context.Animation;
@@ -96,7 +97,7 @@ public final class BrimhavenDungeonPlugin extends OptionHandler {
 			}
 			player.lock(12);
 			final Direction dir = AgilityHandler.forceWalk(player, -1, player.getLocation(), object.getLocation(), Animation.create(769), 10, 0, null).getDirection();
-			GameWorld.submit(new Pulse(3, player) {
+			PulseRunner.submit(new Pulse(3, player) {
 				int stage = dir == Direction.NORTH ? -1 : 0;
 				Direction direction = dir;
 

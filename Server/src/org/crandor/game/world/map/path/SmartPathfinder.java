@@ -214,46 +214,52 @@ public final class SmartPathfinder extends Pathfinder {
 				foundPath = true;
 				break;
 			}
-			int absX = location.getX() + curX;
-			int absY = location.getY() + curY;
-			if (type != 0) {
-				if ((type < 5 || type == 10) && canDoorInteract(absX, absY, 1, end.getX(), end.getY(), type - 1, rotation, z, clipMaskSupplier)) {
+			try {
+
+				int absX = location.getX() + curX;
+				int absY = location.getY() + curY;
+				if (type != 0) {
+					if ((type < 5 || type == 10) && canDoorInteract(absX, absY, 1, end.getX(), end.getY(), type - 1, rotation, z, clipMaskSupplier)) {
+						foundPath = true;
+						break;
+					}
+					if (type < 10 && canDecorationInteract(absX, absY, 1, end.getX(), end.getY(), type - 1, rotation, z, clipMaskSupplier)) {
+						foundPath = true;
+						break;
+					}
+				}
+				if (sizeX != 0 && sizeY != 0 && canInteract(absX, absY, 1, end.getX(), end.getY(), sizeX, sizeY, walkingFlag, z, clipMaskSupplier)) {
 					foundPath = true;
 					break;
 				}
-				if (type < 10 && canDecorationInteract(absX, absY, 1, end.getX(), end.getY(), type - 1, rotation, z, clipMaskSupplier)) {
-					foundPath = true;
-					break;
+				int thisCost = cost[curX][curY] + 1;
+				if (curY > 0 && via[curX][curY - 1] == 0 && (clipMaskSupplier.getClippingFlag(z, absX, absY - 1) & 0x12c0102) == 0) {
+					check(curX, curY - 1, SOUTH_FLAG, thisCost);
 				}
-			}
-			if (sizeX != 0 && sizeY != 0 && canInteract(absX, absY, 1, end.getX(), end.getY(), sizeX, sizeY, walkingFlag, z, clipMaskSupplier)) {
-				foundPath = true;
-				break;
-			}
-			int thisCost = cost[curX][curY] + 1;
-			if (curY > 0 && via[curX][curY - 1] == 0 && (clipMaskSupplier.getClippingFlag(z, absX, absY - 1) & 0x12c0102) == 0) {
-				check(curX, curY - 1, SOUTH_FLAG, thisCost);
-			}
-			if (curX > 0 && via[curX - 1][curY] == 0 && (clipMaskSupplier.getClippingFlag(z, absX - 1, absY) & 0x12c0108) == 0) {
-				check(curX - 1, curY, WEST_FLAG, thisCost);
-			}
-			if (curY < 103 && via[curX][curY + 1] == 0 && (clipMaskSupplier.getClippingFlag(z, absX, absY + 1) & 0x12c0120) == 0) {
-				check(curX, curY + 1, NORTH_FLAG, thisCost);
-			}
-			if (curX < 103 && via[curX + 1][curY] == 0 && (clipMaskSupplier.getClippingFlag(z, absX + 1, absY) & 0x12c0180) == 0) {
-				check(curX + 1, curY, EAST_FLAG, thisCost);
-			}
-			if (curX > 0 && curY > 0 && via[curX - 1][curY - 1] == 0 && (clipMaskSupplier.getClippingFlag(z, absX - 1, absY - 1) & 0x12c010e) == 0 && (clipMaskSupplier.getClippingFlag(z, absX - 1, absY) & 0x12c0108) == 0 && (clipMaskSupplier.getClippingFlag(z, absX, absY - 1) & 0x12c0102) == 0) {
-				check(curX - 1, curY - 1, SOUTH_WEST_FLAG, thisCost);
-			}
-			if (curX > 0 && curY < 103 && via[curX - 1][curY + 1] == 0 && (clipMaskSupplier.getClippingFlag(z, absX - 1, absY + 1) & 0x12c0138) == 0 && (clipMaskSupplier.getClippingFlag(z, absX - 1, absY) & 0x12c0108) == 0 && (clipMaskSupplier.getClippingFlag(z, absX, absY + 1) & 0x12c0120) == 0) {
-				check(curX - 1, curY + 1, NORTH_WEST_FLAG, thisCost);
-			}
-			if (curX < 103 && curY > 0 && via[curX + 1][curY - 1] == 0 && (clipMaskSupplier.getClippingFlag(z, absX + 1, absY - 1) & 0x12c0183) == 0 && (clipMaskSupplier.getClippingFlag(z, absX + 1, absY) & 0x12c0180) == 0 && (clipMaskSupplier.getClippingFlag(z, absX, absY - 1) & 0x12c0102) == 0) {
-				check(curX + 1, curY - 1, SOUTH_EAST_FLAG, thisCost);
-			}
-			if (curX < 103 && curY < 103 && via[curX + 1][curY + 1] == 0 && (clipMaskSupplier.getClippingFlag(z, absX + 1, absY + 1) & 0x12c01e0) == 0 && (clipMaskSupplier.getClippingFlag(z, absX + 1, absY) & 0x12c0180) == 0 && (clipMaskSupplier.getClippingFlag(z, absX, absY + 1) & 0x12c0120) == 0) {
-				check(curX + 1, curY + 1, NORTH_EAST_FLAG, thisCost);
+				if (curX > 0 && via[curX - 1][curY] == 0 && (clipMaskSupplier.getClippingFlag(z, absX - 1, absY) & 0x12c0108) == 0) {
+					check(curX - 1, curY, WEST_FLAG, thisCost);
+				}
+				if (curY < 103 && via[curX][curY + 1] == 0 && (clipMaskSupplier.getClippingFlag(z, absX, absY + 1) & 0x12c0120) == 0) {
+					check(curX, curY + 1, NORTH_FLAG, thisCost);
+				}
+				if (curX < 103 && via[curX + 1][curY] == 0 && (clipMaskSupplier.getClippingFlag(z, absX + 1, absY) & 0x12c0180) == 0) {
+					check(curX + 1, curY, EAST_FLAG, thisCost);
+				}
+				if (curX > 0 && curY > 0 && via[curX - 1][curY - 1] == 0 && (clipMaskSupplier.getClippingFlag(z, absX - 1, absY - 1) & 0x12c010e) == 0 && (clipMaskSupplier.getClippingFlag(z, absX - 1, absY) & 0x12c0108) == 0 && (clipMaskSupplier.getClippingFlag(z, absX, absY - 1) & 0x12c0102) == 0) {
+					check(curX - 1, curY - 1, SOUTH_WEST_FLAG, thisCost);
+				}
+				if (curX > 0 && curY < 103 && via[curX - 1][curY + 1] == 0 && (clipMaskSupplier.getClippingFlag(z, absX - 1, absY + 1) & 0x12c0138) == 0 && (clipMaskSupplier.getClippingFlag(z, absX - 1, absY) & 0x12c0108) == 0 && (clipMaskSupplier.getClippingFlag(z, absX, absY + 1) & 0x12c0120) == 0) {
+					check(curX - 1, curY + 1, NORTH_WEST_FLAG, thisCost);
+				}
+				if (curX < 103 && curY > 0 && via[curX + 1][curY - 1] == 0 && (clipMaskSupplier.getClippingFlag(z, absX + 1, absY - 1) & 0x12c0183) == 0 && (clipMaskSupplier.getClippingFlag(z, absX + 1, absY) & 0x12c0180) == 0 && (clipMaskSupplier.getClippingFlag(z, absX, absY - 1) & 0x12c0102) == 0) {
+					check(curX + 1, curY - 1, SOUTH_EAST_FLAG, thisCost);
+				}
+				if (curX < 103 && curY < 103 && via[curX + 1][curY + 1] == 0 && (clipMaskSupplier.getClippingFlag(z, absX + 1, absY + 1) & 0x12c01e0) == 0 && (clipMaskSupplier.getClippingFlag(z, absX + 1, absY) & 0x12c0180) == 0 && (clipMaskSupplier.getClippingFlag(z, absX, absY + 1) & 0x12c0120) == 0) {
+					check(curX + 1, curY + 1, NORTH_EAST_FLAG, thisCost);
+				}
+			} catch (Exception e){
+				e.printStackTrace();
+				System.out.println("curX " + curX + " curY" + curY + " via " + via[curX + 1] + via[curY + 1]);
 			}
 		}
 	}

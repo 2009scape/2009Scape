@@ -147,7 +147,10 @@ public final class ZoneBorders {
 		}
 		if (southWestX <= x && southWestY <= y && northEastX >= x && northEastY >= y) {
 			if (exceptions != null) {
-				for (ZoneBorders exception : exceptions) {
+				Object[] exceptArray = exceptions.toArray();
+				int length = exceptArray.length;
+				for (int i = 0; i < length; i++) {
+					ZoneBorders exception = (ZoneBorders) exceptArray[i];
 					if (exception.insideBorder(x, y, z)) {
 						return false;
 					}
@@ -164,8 +167,10 @@ public final class ZoneBorders {
 	 */
 	public List<Integer> getRegionIds() {
 		List<Integer> regionIds = new ArrayList<>();
-		for (int x = southWestX >> 6; x < (northEastX >> 6) + 1; x++) {
-			for (int y = southWestY >> 6; y < (northEastY >> 6) + 1; y++) {
+		int neX = (northEastX >> 6) + 1;
+		int neY = (northEastY >> 6) + 1;
+		for (int x = southWestX >> 6; x < neX; x++) {
+			for (int y = southWestY >> 6; y < neY; y++) {
 				int id = y | x << 8;
 				regionIds.add(id);
 			}

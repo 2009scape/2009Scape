@@ -6,6 +6,7 @@ import org.crandor.game.node.entity.npc.AbstractNPC;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Direction;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.map.RegionManager;
@@ -135,10 +136,11 @@ public class BurthorpeTrainNPC extends AbstractNPC {
 				}
 			}
 			final NPC sol = soldier;
-			GameWorld.submit(new Pulse(1) {
+			PulseRunner.submit(new Pulse(1) {
+				final NPC sold = sol;
 				@Override
 				public boolean pulse() {
-					sol.sendChat("Yes, sir!");
+					sold.sendChat("Yes, sir!");
 					return true;
 				}
 			});
@@ -160,7 +162,7 @@ public class BurthorpeTrainNPC extends AbstractNPC {
 			animate(animation);
 			delay = System.currentTimeMillis() + 3500;
 			faceLocation(getLocation().transform(0, -1, 0));
-			GameWorld.submit(new Pulse(2) {
+			PulseRunner.submit(new Pulse(2) {
 				@Override
 				public boolean pulse() {
 					final List<NPC> soldiers = RegionManager.getLocalNpcs(BurthorpeTrainNPC.this, 12);

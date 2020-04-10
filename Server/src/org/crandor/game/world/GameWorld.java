@@ -4,6 +4,8 @@ import org.crandor.ServerConstants;
 import org.crandor.cache.Cache;
 import org.crandor.cache.ServerStore;
 import org.crandor.game.content.eco.ge.GrandExchangeDatabase;
+import org.crandor.game.interaction.MovementPulse;
+import org.crandor.game.node.Node;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.ai.resource.ResourceAIPManager;
@@ -21,6 +23,7 @@ import org.crandor.game.world.map.Location;
 import org.crandor.game.world.map.RegionManager;
 import org.crandor.game.world.map.build.LandscapeParser;
 import org.crandor.game.world.repository.DisconnectionQueue;
+import org.crandor.game.world.repository.NodeList;
 import org.crandor.game.world.repository.Repository;
 import org.crandor.plugin.PluginManager;
 import org.crandor.tools.RandomFunction;
@@ -28,7 +31,7 @@ import org.crandor.tools.mysql.DatabaseManager;
 import org.crandor.worker.MajorUpdateWorker;
 
 import java.util.*;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -47,12 +50,18 @@ public final class GameWorld {
     /**
      * The lock object.
      */
-    private static final Lock LOCK = new ReentrantLock();
+    public static final Lock LOCK = new ReentrantLock();
 
     /**
      * The pulse tasks list.
      */
-    private static final List<Pulse> TASKS = new ArrayList<>();
+    public static final List<Pulse> TASKS = new ArrayList<>();
+
+    public static final ScheduledThreadPoolExecutor executer = (ScheduledThreadPoolExecutor)Executors.newScheduledThreadPool(100);
+
+    public static final ThreadPoolExecutor ThreadPool = (ThreadPoolExecutor) Executors.newFixedThreadPool(10);
+
+    public static int cores = Runtime.getRuntime().availableProcessors();
 
     /**
      * The game settings to use.
@@ -62,7 +71,7 @@ public final class GameWorld {
     /**
      * The current amount of (600ms) cycles elapsed.
      */
-    private static int ticks;
+    public static int ticks;
 
     private static DatabaseManager dbm = new DatabaseManager(ServerConstants.DATABASES);
 
@@ -84,51 +93,21 @@ public final class GameWorld {
      *
      * @param pulse the pulse.
      */
+    @Deprecated
     public static void submit(Pulse pulse) {
-        LOCK.lock();
-        try {
-            TASKS.add(pulse);
-        } finally {
-            LOCK.unlock();
-        }
+        PulseRunner.submit(pulse);
     }
 
-    /**
-     * Pulses all current pulses.
-     */
-    public static void pulse() {
-        LOCK.lock();
-        List<Pulse> pulses = null;
-        try {
-            pulses = new ArrayList<>(TASKS);
-        } finally {
-            LOCK.unlock();
-        }
-        Object[] pulseArray = pulses.toArray();
-        int pulsesLength = pulseArray.length;
-        for (int i = 0; i < pulsesLength; i++) {
-            Pulse pulse = (Pulse) pulseArray[i];
-            if (pulse == null) {
-                continue;
-            }
-            try {
-                if (pulse.update()) {
-                    TASKS.remove(pulse);
-                }
-            } catch (Throwable t) {
-                t.printStackTrace();
-                pulse.stop();
-                TASKS.remove(pulse);
-            }
-        }
-        pulses.clear();
-        ticks++;
-
-        if (ticks % 50 == 0) {
+    public static void pulse(){
+        GameWorld.ticks++;
+        if (GameWorld.ticks % 50 == 0) {
             TaskExecutor.execute(() -> {
+                NodeList<Player> player = Repository.getPlayers();
+                Node[] players = player.toArray();
+                int l = players.length;
                 try {
-                    for (Iterator<Player> it = Repository.getPlayers().iterator(); it.hasNext(); ) {
-                        Player p = it.next();
+                    for (int i = 0; i < l; i++) {
+                        Player p = (Player) players[i];
                         if (p != null && !p.isArtificial() && p.isPlaying()) {
                             DisconnectionQueue.save(p, false);
                         }
@@ -185,7 +164,7 @@ public final class GameWorld {
         ScriptManager.load();
         PluginManager.init();
         //ResourceAIPManager.get().init(); Commented out as we do not use Skilling Tasks, which is what this is for
-        ImmerseWorld.init();
+        //ImmerseWorld.init(); disabled until bots are rewritten to work with the new pulse system
         SQLManager.postPlugin();
         parseObjects();
         CallbackHub.call();
@@ -193,38 +172,11 @@ public final class GameWorld {
             SystemManager.flag(GameWorld.getSettings().isDevMode() ? SystemState.PRIVATE : SystemState.ACTIVE);
         }
         System.gc();
+        PulseRunner.init();
     }
 
     //39956
     private static void parseObjects() {
-        Executors.newSingleThreadExecutor().execute(() -> {
-        /*
-		Removed Objects from port phastmatsysy
-		LandscapeParser.removeGameObject(new GameObject(11484, 2338, 3689, 0));
-		LandscapeParser.removeGameObject(new GameObject(14963, 2339, 3688, 0));
-		LandscapeParser.removeGameObject(new GameObject(14962, 2340, 3688, 0));
-		LandscapeParser.removeGameObject(new GameObject(14963, 2341, 3688, 0));
-		LandscapeParser.removeGameObject(new GameObject(14953, 2342, 3689, 0));
-		LandscapeParser.removeGameObject(new GameObject(14962, 2341, 3689, 0));
-		LandscapeParser.removeGameObject(new GameObject(14962, 2340, 3689, 0));
-		LandscapeParser.removeGameObject(new GameObject(14962, 2339, 3689, 0));
-		LandscapeParser.removeGameObject(new GameObject(14963, 2338, 3690, 0));
-		LandscapeParser.removeGameObject(new GameObject(14962, 2339, 3690, 0));
-		LandscapeParser.removeGameObject(new GameObject(14962, 2340, 3690, 0));
-		LandscapeParser.removeGameObject(new GameObject(14962, 2341, 3690, 0));
-		LandscapeParser.removeGameObject(new GameObject(14963, 2342, 3690, 0));
-		LandscapeParser.removeGameObject(new GameObject(14965, 2340, 3691, 0));
-		LandscapeParser.removeGameObject(new GameObject(14951, 2341, 3692, 0));
-		LandscapeParser.removeGameObject(new GameObject(14965, 2344, 3688, 0));
-		LandscapeParser.removeGameObject(new GameObject(14951, 2336, 3691, 0));
-
-		
-		LandscapeParser.addGameObject(new GameObject(24716, new Location(2343, 3690, 0), 0));
-		LandscapeParser.addGameObject(new GameObject(10179, new Location(2335, 3676, 0), 0));
-		LandscapeParser.addGameObject(new GameObject(10179, new Location(2339, 3683, 0), 1));
-		LandscapeParser.addGameObject(new GameObject(10179, new Location(2333, 3688, 0), 2));
-		LandscapeParser.addGameObject(new GameObject(10179, new Location(2333, 3690, 0), 2));*/
-
         LandscapeParser.removeGameObject(new GameObject(1113, 2854, 2954, 0));//Table
         LandscapeParser.removeGameObject(new GameObject(620, 2854, 2953, 0));//Stool
         LandscapeParser.removeGameObject(new GameObject(1113, 2854, 2952, 0));//Stool
@@ -321,7 +273,6 @@ public final class GameWorld {
         for (NPC npc : npcs) {
             npc.setDirection(Direction.EAST);
         }
-        });
     }
 
 

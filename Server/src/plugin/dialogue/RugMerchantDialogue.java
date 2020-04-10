@@ -10,6 +10,7 @@ import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.plugin.Plugin;
@@ -273,7 +274,7 @@ public final class RugMerchantDialogue extends DialoguePlugin {
 			player.lock();
 			player.getConfigManager().set(499, 0);
 			player.getImpactHandler().setDisabledTicks(GameWorld.getTicks() + 200);
-			GameWorld.submit(new Pulse(1, player) {
+			PulseRunner.submit(new Pulse(1, player) {
 				int count;
 				int index;
 				Location[] locs = getLocData();

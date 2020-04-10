@@ -6,6 +6,7 @@ import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.tools.RandomFunction;
@@ -119,7 +120,7 @@ public final class TownCrierDialogue extends DialoguePlugin {
 			player.lock(4);
 			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "At once. Take a look at my book here.");
 			npc.animate(new Animation(6866));
-			GameWorld.submit(new Pulse(4) {
+			PulseRunner.submit(new Pulse(4) {
 				@Override
 				public boolean pulse() {
 					//player.getDialogueInterpreter().open(496107759);

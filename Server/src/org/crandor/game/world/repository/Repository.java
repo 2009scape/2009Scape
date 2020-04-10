@@ -8,10 +8,7 @@ import org.crandor.game.node.entity.player.info.login.PlayerParser;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.map.RegionManager;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
@@ -67,7 +64,10 @@ public final class Repository {
 	 * @param color The color of the text.
 	 */
 	public static void sendNews(String string, int icon, String color) {
-		for (Player player : PLAYER_NAMES.values()) {
+		Object[] players = PLAYER_NAMES.values().toArray();
+		int size = players.length;
+		for (int i = 0; i < size; i++) {
+			Player player = (Player) players[i];
 			if (player == null) {
 				continue;
 			}

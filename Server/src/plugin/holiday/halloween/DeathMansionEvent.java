@@ -37,6 +37,7 @@ import org.crandor.game.system.task.LocationLogoutTask;
 import org.crandor.game.system.task.LogoutTask;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Direction;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.map.RegionManager;
@@ -339,7 +340,7 @@ public class DeathMansionEvent extends HolidayEvent {
 				player.lock(3);
 				if (target.getLocation().equals(1624, 4822, 0)) {
 					player.sendChat("Weeeeee");
-					GameWorld.submit(new Pulse(1, player) {
+					PulseRunner.submit(new Pulse(1, player) {
 
 						@Override
 						public boolean pulse() {
@@ -361,7 +362,7 @@ public class DeathMansionEvent extends HolidayEvent {
 				}
 				player.getPacketDispatch().sendObjectAnimation(target.asObject(), Animation.create(7296));
 				AgilityHandler.walk(player, -1, player.getLocation(), target.getLocation(), null, 0.0, null);
-				GameWorld.submit(new Pulse(1, player) {
+				PulseRunner.submit(new Pulse(1, player) {
 
 					@Override
 					public boolean pulse() {
@@ -386,7 +387,7 @@ public class DeathMansionEvent extends HolidayEvent {
 				player.lock(10);
 				Location strt = player.getLocation().transform(0, -1, 0);
 				AgilityHandler.forceWalk(player, -1, player.getLocation(), strt, Animation.create(7274), 5, 0.0, null);
-				GameWorld.submit(new Pulse(1, player) {
+				PulseRunner.submit(new Pulse(1, player) {
 					int ticks;
 					int x = 1636;
 					int y = 4829;
@@ -455,7 +456,7 @@ public class DeathMansionEvent extends HolidayEvent {
 					p.getWalkingQueue().reset();
 					p.getLocks().lock();
 					p.sendMessage("You accidentally trigger a trap.");
-					GameWorld.submit(new Pulse(1, p) {
+					PulseRunner.submit(new Pulse(1, p) {
 						int ticks;
 
 						@Override
@@ -617,7 +618,7 @@ public class DeathMansionEvent extends HolidayEvent {
 			player.getPacketDispatch().sendObjectAnimation(second, Animation.create(7285));
 		}
 		player.sendMessage("You fail to pass through the gargoyles' judgement");
-		GameWorld.submit(new Pulse(1, player) {
+		PulseRunner.submit(new Pulse(1, player) {
 			@Override
 			public boolean pulse() {
 				player.getImpactHandler().manualHit(player, player.getSkills().getLifepoints(), HitsplatType.NORMAL);
@@ -677,7 +678,7 @@ public class DeathMansionEvent extends HolidayEvent {
 		reaper.setAggressive(false);
 		reaper.animate(Animation.create(392));
 		reaper.sendChat(RandomFunction.getRandomElement(GRIM_CHATS).replace("@name", player.getUsername()));
-		GameWorld.submit(new Pulse(4, reaper) {
+		PulseRunner.submit(new Pulse(4, reaper) {
 			@Override
 			public boolean pulse() {
 				reaper.clear();
@@ -1354,7 +1355,7 @@ public class DeathMansionEvent extends HolidayEvent {
 					player.getImpactHandler().manualHit(player, player.getSkills().getLifepoints(), HitsplatType.NORMAL);
 					close();
 					player.setAttribute("lo", true);
-					GameWorld.submit(new Pulse(5, player) {
+					PulseRunner.submit(new Pulse(5, player) {
 						@Override
 						public boolean pulse() {
 							player.setAttribute("lo", true);

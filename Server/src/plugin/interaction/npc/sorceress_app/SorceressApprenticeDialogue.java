@@ -7,6 +7,7 @@ import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.update.flag.context.Graphics;
 
@@ -241,7 +242,7 @@ public class SorceressApprenticeDialogue extends DialoguePlugin {
 		player.lock();
 		Projectile.create(npc, player, 109).send();
 		npc.sendChat("Senventior Disthinte Molesko!");
-		GameWorld.submit(new Pulse(1) {
+		PulseRunner.submit(new Pulse(1) {
 			int counter = 0;
 
 			@Override

@@ -1,13 +1,14 @@
 package org.crandor.game.system.task;
 
 import org.crandor.game.node.Node;
+import org.crandor.game.world.GameWorld;
 
 /**
  * Represents a pulse object (a task executed once every 600ms on the
  * MajorUpdateWorker thread).
  * @author Emperor
  */
-public abstract class Pulse {
+public abstract class Pulse implements Runnable {
 
 	/**
 	 * If the task is still running.
@@ -54,7 +55,14 @@ public abstract class Pulse {
 		this.checks = checks;
 	}
 
-	/**
+	@Override
+	public void run() {
+		if(update()){
+			GameWorld.TASKS.remove(this);
+		}
+	}
+
+	/**s
 	 * Called when the world pulses, once every 600ms.
 	 * @return {@code True} if this {@code Pulse} is finished and can be removed,
 	 * {@code false} if not.
@@ -84,7 +92,9 @@ public abstract class Pulse {
 	 */
 	public boolean hasInactiveNode() {
 		if (checks != null) {
-			for (Node n : checks) {
+			int size = checks.length;
+			for (int i = 0; i < size; i++) {
+				Node n = checks[i];
 				if (n != null && !n.isActive()) {
 					return true;
 				}

@@ -14,6 +14,8 @@ import org.crandor.net.packet.PacketRepository;
 import org.crandor.net.packet.context.PlayerContext;
 import org.crandor.net.packet.out.ClearMinimapFlag;
 
+import java.util.Deque;
+
 /**
  * Handles a movement task.
  * @author Emperor
@@ -158,9 +160,9 @@ public abstract class MovementPulse extends Pulse {
 	@Override
 	public boolean update() {
 //
-//		if (mover == null || destination == null || mover.getViewport().getRegion() == null || this == null) {
-//			return false;
-//		}
+		if (mover == null || destination == null || mover.getViewport().getRegion() == null || this == null) {
+			return false;
+		}
 
 		if (hasInactiveNode() || !mover.getViewport().getRegion().isActive()) {
 			stop();
@@ -218,6 +220,9 @@ public abstract class MovementPulse extends Pulse {
 		if (loc == null && inside) {
 			loc = findBorderLocation();
 		}
+		if(destination == null){
+			return;
+		}
 		Path path = Pathfinder.find(mover, loc != null ? loc : destination, true, pathfinder);
 		near = !path.isSuccessful() || path.isMoveNear();
 		interactLocation = mover.getLocation();
@@ -229,17 +234,19 @@ public abstract class MovementPulse extends Pulse {
 			} else {
 				mover.getWalkingQueue().reset();
 			}
-			while (!path.getPoints().isEmpty()) {
-				point = path.getPoints().poll();
+			int size = path.getPoints().toArray().length;
+			Deque points = path.getPoints();
+			for(int i = 0; i < size; i++) {
+				point = path.getPoints().pop();
 				mover.getWalkingQueue().addPath(point.getX(), point.getY());
+				if (destination instanceof Entity) {
+					mover.face((Entity) destination);
+				} else {
+					mover.face(null);
+				}
 			}
 		}
 		last = destination.getLocation();
-		if (destination instanceof Entity) {
-			mover.face((Entity) destination);
-		} else {
-			mover.face(null);
-		}
 	}
 
 	/**

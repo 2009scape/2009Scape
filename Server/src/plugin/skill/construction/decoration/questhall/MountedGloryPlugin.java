@@ -9,6 +9,7 @@ import org.crandor.game.node.Node;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.game.world.update.flag.context.Graphics;
@@ -79,7 +80,7 @@ public class MountedGloryPlugin extends OptionHandler {
 		player.lock();
 		player.visualize(ANIMATION, GRAPHICS);
 		player.getImpactHandler().setDisabledTicks(4);
-		GameWorld.submit(new Pulse(4, player) {
+		PulseRunner.submit(new Pulse(4, player) {
 			@Override
 			public boolean pulse() {
 				player.unlock();

@@ -1,6 +1,7 @@
 package org.crandor;
 
 import org.crandor.game.content.eco.ge.GEAutoStock;
+import org.crandor.game.content.eco.ge.ResourceManager;
 import org.crandor.game.system.SystemLogger;
 import org.crandor.game.system.SystemShutdownHook;
 import org.crandor.game.system.mysql.SQLManager;
@@ -12,6 +13,8 @@ import org.crandor.net.amsc.WorldCommunicator;
 import org.crandor.tools.TimeStamp;
 import org.crandor.tools.backup.AutoBackup;
 
+import javax.annotation.Resource;
+import java.awt.*;
 import java.net.BindException;
 
 /**
@@ -70,7 +73,9 @@ public final class Server {
 		reactor.start();
 		SystemLogger.log(GameWorld.getName() + " flags " + GameWorld.getSettings().toString());
 		SystemLogger.log(GameWorld.getName() + " started in " + t.duration(false, "") + " milliseconds.");
-		GEAutoStock.stock();
+//		GEAutoStock.stock();
+		// TODO Run the eco kick starter 1 time for the live server then comment it out
+//		ResourceManager.kickStartEconomy();
 
 	}
 

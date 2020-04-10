@@ -3,6 +3,7 @@ package org.crandor.game.node.entity.impl;
 import org.crandor.game.node.entity.Entity;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Direction;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.update.flag.context.Animation;
@@ -237,7 +238,7 @@ public class ForceMovement extends Pulse {
 		}
 		ForceMovement fm = new ForceMovement(e, start, destination, startAnim, animation, direction, commenceSpeed, pathSpeed);
 		fm.start();
-		GameWorld.submit(fm);
+		PulseRunner.submit(fm);
 		return fm;
 	}
 
@@ -255,7 +256,7 @@ public class ForceMovement extends Pulse {
 		this.pathSpeed = pathSpeed == 0 ? path : speed;
 		this.commenceSpeed = commence;
 		start();
-		GameWorld.submit(this);
+		PulseRunner.submit(this);
 	}
 
 	/**

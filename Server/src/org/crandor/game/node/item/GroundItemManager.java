@@ -135,13 +135,15 @@ public final class GroundItemManager {
 	 * Handles the ground items.
 	 */
 	public static void pulse() {
-		for (Iterator<GroundItem> it = GROUND_ITEMS.iterator(); it.hasNext();) {
-			GroundItem item = it.next();
+		Object[] giArray = GROUND_ITEMS.toArray();
+		int size = giArray.length;
+		for (int i = 0; i < size; i++) {
+			GroundItem item = (GroundItem) giArray[i];
 			if (item.isAutoSpawn()) {
 				continue;
 			}
 			if (!item.isActive()) {
-				it.remove();
+				GROUND_ITEMS.remove(item);
 				if (!item.isRemoved()) {
 					RegionManager.getRegionPlane(item.getLocation()).remove(item);
 				}

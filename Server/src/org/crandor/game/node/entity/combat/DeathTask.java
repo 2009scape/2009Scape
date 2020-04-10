@@ -62,7 +62,7 @@ public final class DeathTask extends NodeTask {
 	}
 
 	@Override
-	public boolean run(Node node, Node... n) {
+	public boolean exec(Node node, Node... n) {
 		Entity e = (Entity) node;
 		int ticks = e.getProperties().getDeathAnimation().getDuration();
 		if (ticks < 1 || ticks > 30) {

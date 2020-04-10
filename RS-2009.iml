@@ -4,6 +4,10 @@
   <component name="FacetManager">
     <facet type="JRebel" name="JRebel">
       <configuration>
+        <option name="deleteUnindexed" value="false" />
+        <option name="httpAuthEnabled" value="false" />
+        <option name="httpPassword" />
+        <option name="httpUsername" />
         <option name="ideModuleStorage">
           <map>
             <entry key="com.zeroturnaround.jrebel.FormatVersion" value="7.0.0" />
@@ -13,6 +17,13 @@
             <entry key="lastExternalPluginCheckTime" value="1584275600472" />
           </map>
         </option>
+        <option name="masterModuleName" />
+        <option name="overrideStandardXmlFolder" value="false" />
+        <option name="remotingEnabled" value="false" />
+        <option name="secure" value="true" />
+        <option name="url" />
+        <option name="useRelativePathsInXml" value="false" />
+        <option name="xmlDir" />
       </configuration>
     </facet>
   </component>

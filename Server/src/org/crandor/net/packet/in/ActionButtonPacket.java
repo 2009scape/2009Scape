@@ -11,6 +11,7 @@ import org.crandor.game.node.entity.player.link.request.assist.AssistSession;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.net.packet.IncomingPacket;
 import org.crandor.net.packet.IoBuffer;
 
@@ -260,7 +261,7 @@ public class ActionButtonPacket implements IncomingPacket {
 		case 95:
 			if (player.getAttribute("logging_in") != null) {
 				player.getInterfaceManager().close();
-				GameWorld.submit(new Pulse(1, player) {
+				PulseRunner.submit(new Pulse(1, player) {
 					@Override
 					public boolean pulse() {
 						player.removeAttribute("logging_in");

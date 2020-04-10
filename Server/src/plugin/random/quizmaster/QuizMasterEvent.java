@@ -100,7 +100,7 @@ public final class QuizMasterEvent extends AntiMacroEvent {
 		 * player.lock(5); quizMaster.lock(5); quizMaster.face(player);
 		 * quizMaster.graphics(Graphics.create(86));
 		 * quizMaster.sendChat("It's your lucky day!");
-		 * player.graphics(Graphics.create(86), 3); GameWorld.submit(new
+		 * player.graphics(Graphics.create(86), 3); PulseRunner.submit(new
 		 * Pulse(4, player, quizMaster) {
 		 * @Override public boolean pulse() { teleport(); setQuizMaster(true);
 		 * return true; } }); super.init(player); return true;

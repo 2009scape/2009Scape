@@ -15,6 +15,7 @@ import org.crandor.game.node.item.Item;
 import org.crandor.game.node.object.GameObject;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.plugin.InitializablePlugin;
@@ -92,7 +93,7 @@ public final class FurnaceOptionPlugin extends OptionHandler {
 	private final void handleTutorialIsland(final Player player) {
 		if (player.getInventory().containItems(438, 436)) {
 			player.animate(ANIMATION);
-			GameWorld.submit(new Pulse(2, player) {
+			PulseRunner.submit(new Pulse(2, player) {
 				@Override
 				public boolean pulse() {
 					player.getInventory().remove(ITEMS);

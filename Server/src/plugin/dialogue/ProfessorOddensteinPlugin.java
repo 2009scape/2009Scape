@@ -8,7 +8,7 @@ import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.link.quest.Quest;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.system.task.Pulse;
-import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.repository.Repository;
 import org.crandor.game.world.update.flag.context.Animation;
@@ -268,7 +268,7 @@ public class ProfessorOddensteinPlugin extends DialoguePlugin {
 				player.getPacketDispatch().sendMessage("and a can of oil to the professor.");
 				player.getPacketDispatch().sendMessage("Oddenstein starts up the machine.");
 				final NPC chicken = Repository.findNPC(288);
-				GameWorld.submit(new Pulse(1, player) {
+				PulseRunner.submit(new Pulse(1, player) {
 					int counter = 0;
 
 					@Override

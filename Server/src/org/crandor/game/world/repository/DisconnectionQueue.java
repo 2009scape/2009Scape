@@ -10,6 +10,7 @@ import org.crandor.game.world.GameWorld;
 
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -38,8 +39,11 @@ public final class DisconnectionQueue {
 			return;
 		}
 		int tickFlag = GameWorld.getTicks() - 3;
-		for (Iterator<String> it = queue.keySet().iterator(); it.hasNext();) {
-			String name = it.next();
+		Set<String> keySet = queue.keySet();
+		Object[] keys = keySet.toArray();
+		int length = keys.length;
+		for (int i = 0; i < length; i++) {
+			String name = (String) keys[i];
 			DisconnectionEntry entry = queue.get(name);
 			if (entry.getTimeStamp() < tickFlag && finish(entry, false)) {
 				queue.remove(name);

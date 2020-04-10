@@ -126,7 +126,7 @@ public final class KingBlackDragonNPC extends AbstractNPC {
 		@Override
 		public void adjustBattleState(Entity entity, Entity victim, BattleState state) {
 			if (style == CombatStyle.RANGE) {
-				fireType.getTask().run(victim, entity);
+				fireType.getTask().exec(victim, entity);
 				state.setStyle(null);
 				DRAGONFIRE.adjustBattleState(entity, victim, state);
 				state.setStyle(CombatStyle.RANGE);

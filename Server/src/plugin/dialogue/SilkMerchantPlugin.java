@@ -7,6 +7,7 @@ import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.game.world.map.RegionManager;
 
@@ -195,7 +196,7 @@ public class SilkMerchantPlugin extends DialoguePlugin {
 					break;
 				}
 			}
-			GameWorld.submit(new Pulse(1) {
+			PulseRunner.submit(new Pulse(1) {
 				int count = 0;
 
 				@Override

@@ -5,6 +5,8 @@ import org.crandor.game.content.skill.Skills;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.item.Item;
 
+import java.beans.FeatureDescriptor;
+
 /**
  * Represents the arrow pulse for creating unfinished arrows.
  * @author 'Vexia
@@ -117,9 +119,11 @@ public final class HeadlessArrowPulse extends SkillPulse<Item> {
 	 * @return the item.
 	 */
 	private Item getFeather() {
-		for (Item i : FEATHER) {
-			if (player.getInventory().containsItem(i)) {
-				return i;
+		int length = FEATHER.length;
+		for (int i = 0; i < length; i++) {
+			Item f = FEATHER[i];
+			if (player.getInventory().containsItem(f)) {
+				return f;
 			}
 		}
 		return null;

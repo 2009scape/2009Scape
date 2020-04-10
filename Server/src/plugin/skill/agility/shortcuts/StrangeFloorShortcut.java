@@ -7,6 +7,7 @@ import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.object.GameObject;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.plugin.InitializablePlugin;
@@ -38,14 +39,14 @@ public class StrangeFloorShortcut extends AgilityShortcut {
 
 	@Override
 	public void run(final Player player, GameObject object, String option, boolean failed) {
-		GameWorld.submit(new Pulse(1, player) {
+		PulseRunner.submit(new Pulse(1, player) {
 			@Override
 			public boolean pulse() {
 				player.getAnimator().forceAnimation(JUMP_ANIM);
 				return true;
 			}
 		});
-		GameWorld.submit(new Pulse(2, player) {
+		PulseRunner.submit(new Pulse(2, player) {
 
 			@Override
 			public boolean pulse() {

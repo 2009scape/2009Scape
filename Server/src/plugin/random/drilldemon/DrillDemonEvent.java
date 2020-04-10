@@ -10,6 +10,7 @@ import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.map.RegionManager;
 import org.crandor.game.world.update.flag.context.Graphics;
@@ -60,7 +61,7 @@ public final class DrillDemonEvent extends AntiMacroEvent {
 		sergeant.face(player);
 		player.graphics(Graphics.create(86), 3);
 		sergeant.sendChat("Private " + player.getUsername() + "! Get yourself to the parade ground ASAP!");
-		GameWorld.submit(new Pulse(3, player, sergeant) {
+		PulseRunner.submit(new Pulse(3, player, sergeant) {
 			@Override
 			public boolean pulse() {
 				return true;

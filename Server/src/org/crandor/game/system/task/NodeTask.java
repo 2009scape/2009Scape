@@ -51,7 +51,7 @@ public abstract class NodeTask {
 	 * @return {@code True} if the pulse (if this is used in a pulse) should
 	 * stop.
 	 */
-	public abstract boolean run(Node node, Node... n);
+	public abstract boolean exec(Node node, Node... n);
 
 	/**
 	 * Called when the pulse is stopped.
@@ -89,7 +89,7 @@ public abstract class NodeTask {
 
 			@Override
 			public boolean pulse() {
-				return run(node, n);
+				return exec(node, n);
 			}
 
 			@Override

@@ -5,6 +5,7 @@ import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.RegionManager;
 import org.crandor.game.world.map.path.Path;
 import org.crandor.game.world.map.path.Pathfinder;
@@ -89,7 +90,7 @@ public final class KittenInteractDialogue extends DialoguePlugin {
 					final Path path = Pathfinder.find(player.getFamiliarManager().getFamiliar(), rat);
 					path.walk(player.getFamiliarManager().getFamiliar());
 					rat.sendChat("Eeek!");
-					GameWorld.submit(new Pulse(5) {
+					PulseRunner.submit(new Pulse(5) {
 
 						@Override
 						public boolean pulse() {

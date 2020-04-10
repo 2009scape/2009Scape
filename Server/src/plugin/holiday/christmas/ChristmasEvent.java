@@ -33,6 +33,7 @@ import org.crandor.game.node.object.GameObject;
 import org.crandor.game.node.object.ObjectBuilder;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.map.RegionManager;
 import org.crandor.game.world.repository.Repository;
@@ -310,7 +311,7 @@ public class ChristmasEvent extends HolidayEvent {
 				player.lock(16);
 				player.animate(Animation.create(7535));
 				player.sendMessage("You shake the snow globe.");
-				GameWorld.submit(new Pulse(1, player) {
+				PulseRunner.submit(new Pulse(1, player) {
 					int ticks;
 					@Override
 					public boolean pulse() {
@@ -376,7 +377,7 @@ public class ChristmasEvent extends HolidayEvent {
 					int distance = (int) Location.getDistance(player.getLocation(), target.getLocation());
 					int projectileSpeed = delay + speed + distance * 5;
 					double hitDelay = projectileSpeed * .02857;
-					GameWorld.submit(new Pulse((int) hitDelay, target) {
+					PulseRunner.submit(new Pulse((int) hitDelay, target) {
 						@Override
 						public boolean pulse() {
 							target.getImpactHandler().manualHit(player, node instanceof NPC ? 1 : 0, HitsplatType.MISS);
@@ -448,7 +449,7 @@ public class ChristmasEvent extends HolidayEvent {
 					HolidayEvent.getCurrent().setStage(player, 2);
 				}
 				if (!weapon) {
-					GameWorld.submit(new Pulse(200) {
+					PulseRunner.submit(new Pulse(200) {
 						@Override
 						public boolean pulse() {
 							snowman.clear();

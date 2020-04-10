@@ -24,6 +24,7 @@ import org.crandor.game.system.command.CommandSet;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
 import org.crandor.game.world.ImmerseWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.map.RegionManager;
 import org.crandor.game.world.map.path.Pathfinder;
@@ -127,7 +128,7 @@ public final class AIPCommandPlugin extends CommandPlugin {
                             player.getCommunication().getClan().getClanWar().fireEvent("join", aip);
                         }
                     }
-                    GameWorld.submit(new Pulse(1) {
+                    PulseRunner.submit(new Pulse(1) {
                         @Override
                         public boolean pulse() {
                             aip.follow(l);

@@ -8,6 +8,7 @@ import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.map.path.Pathfinder;
 import org.crandor.plugin.InitializablePlugin;
@@ -124,7 +125,7 @@ public final class ShantayGuard extends DialoguePlugin {
 				final Location dest = player.getLocation().getY() < 3304 ? Location.create(3303, 3117, 0) : Location.create(3305, 3117, 0);
 				Pathfinder.find(player, dest).walk(player);
 				player.lock();
-				GameWorld.submit(new Pulse(1, player) {
+				PulseRunner.submit(new Pulse(1, player) {
 					@Override
 					public boolean pulse() {
 						if (player.getLocation().equals(dest)) {

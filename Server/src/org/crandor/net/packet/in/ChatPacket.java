@@ -4,6 +4,7 @@ import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.system.monitor.PlayerMonitor;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.update.flag.context.ChatMessage;
 import org.crandor.game.world.update.flag.player.ChatFlag;
 import org.crandor.net.amsc.MSPacketRepository;
@@ -41,7 +42,7 @@ public class ChatPacket implements IncomingPacket {
 				return;
 			}
 			player.getMonitor().log(message, PlayerMonitor.PUBLIC_CHAT_LOG);
-			GameWorld.submit(new Pulse(1, player) {
+			PulseRunner.submit(new Pulse(1, player) {
 				@Override
 				public boolean pulse() {
 					player.getUpdateMasks().register(new ChatFlag(new ChatMessage(player, message, effects, numChars)));

@@ -13,6 +13,7 @@ import org.crandor.game.node.object.GameObject;
 import org.crandor.game.node.object.ObjectBuilder;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Direction;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.update.flag.context.Animation;
@@ -378,7 +379,7 @@ public final class ThievableChestPlugin extends OptionHandler {
 			}
 			player.sendMessage("You find a trap on the chest...");
 			player.getImpactHandler().setDisabledTicks(6);
-			GameWorld.submit(new Pulse(1, player) {
+			PulseRunner.submit(new Pulse(1, player) {
 				int counter;
 
 				@Override

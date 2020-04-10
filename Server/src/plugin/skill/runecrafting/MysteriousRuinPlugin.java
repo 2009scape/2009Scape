@@ -9,6 +9,7 @@ import org.crandor.game.node.entity.player.info.Rights;
 import org.crandor.game.node.object.GameObject;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.plugin.Plugin;
 
@@ -70,7 +71,7 @@ public final class MysteriousRuinPlugin extends UseWithHandler {
 		player.animate(ANIMATION);
 		player.getPacketDispatch().sendMessage("You hold the " + event.getUsedItem().getName() + " towards the mysterious ruins.");
 		player.getPacketDispatch().sendMessage("You feel a powerful force take hold of you.");
-		GameWorld.submit(new Pulse(3, player) {
+		PulseRunner.submit(new Pulse(3, player) {
 			@Override
 			public boolean pulse() {
 				player.getProperties().setTeleportLocation(ruin.getEnd());

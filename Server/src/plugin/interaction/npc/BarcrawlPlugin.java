@@ -11,6 +11,7 @@ import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.net.packet.PacketRepository;
 import org.crandor.net.packet.context.CameraContext;
 import org.crandor.net.packet.context.CameraContext.CameraType;
@@ -200,7 +201,7 @@ public final class BarcrawlPlugin extends OptionHandler {
 					player.getPacketDispatch().sendMessages("The barmaid giggles.", "The barmaid signs your card.");
 				} else {
 					PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.SHAKE, 4, 4, 1, 4, 4));
-					GameWorld.submit(new Pulse(3, player) {
+					PulseRunner.submit(new Pulse(3, player) {
 						@Override
 						public boolean pulse() {
 							PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.RESET, 4, 4, 1, 4, 4));
@@ -451,7 +452,7 @@ public final class BarcrawlPlugin extends OptionHandler {
 				player.getInventory().remove(type.getCoins());
 				player.getBarcrawlManager().complete(type.ordinal());
 				player.lock(6);
-				GameWorld.submit(new Pulse(6, player) {
+				PulseRunner.submit(new Pulse(6, player) {
 					@Override
 					public boolean pulse() {
 						type.message(player, false);

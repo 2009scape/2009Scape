@@ -6,6 +6,7 @@ import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.game.world.update.flag.context.Animation;
 
@@ -88,7 +89,7 @@ public final class AablaDialogue extends DialoguePlugin {
 			npc.animate(ANIMATION);
 			player.lock(4);
 			close();
-			GameWorld.submit(new Pulse(3, player) {
+			PulseRunner.submit(new Pulse(3, player) {
 				@Override
 				public boolean pulse() {
 					if (player.getSkills().getLifepoints() == player.getSkills().getStaticLevel(Skills.HITPOINTS)) {

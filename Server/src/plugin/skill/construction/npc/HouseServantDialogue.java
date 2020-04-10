@@ -14,6 +14,7 @@ import org.crandor.game.node.entity.player.link.IronmanMode;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.map.path.Pathfinder;
 import plugin.interaction.inter.SawmillPlankInterface.Plank;
@@ -481,7 +482,7 @@ public class HouseServantDialogue extends DialoguePlugin {
 					manager.getServant().setItem(new Item(plank.getPlank().getId(), amt));
 					servant.setInvisible(true);
 					servant.getLocks().lockMovement(100);
-					GameWorld.submit(new Pulse((int) (type.getTimer() / 0.6)){
+					PulseRunner.submit(new Pulse((int) (type.getTimer() / 0.6)){
 
 						@Override
 						public boolean pulse() {
@@ -519,7 +520,7 @@ public class HouseServantDialogue extends DialoguePlugin {
 		end();
 		servant.setInvisible(true);
 		servant.getLocks().lockMovement(100);
-		GameWorld.submit(new Pulse((int) (type.getTimer() / 0.6)) {
+		PulseRunner.submit(new Pulse((int) (type.getTimer() / 0.6)) {
 
 			@Override
 			public boolean pulse() {

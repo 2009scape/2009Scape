@@ -15,6 +15,7 @@ import org.crandor.game.node.entity.state.EntityState;
 import org.crandor.game.node.entity.state.StateManager;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.map.Viewport;
 import org.crandor.game.world.map.path.Path;
@@ -320,7 +321,7 @@ public abstract class Entity extends Node {
 	 * @param ticks the ticks.
 	 */
 	public void teleport(final Location location, int ticks) {
-		GameWorld.submit(new Pulse(ticks, this) {
+		PulseRunner.submit(new Pulse(ticks, this) {
 			@Override
 			public boolean pulse() {
 				teleport(location);
@@ -406,7 +407,7 @@ public abstract class Entity extends Node {
 	 * @return {@code True} if so.
 	 */
 	public boolean graphics(final Graphics graphics, int delay) {
-		GameWorld.submit(new Pulse(delay, this) {
+		PulseRunner.submit(new Pulse(delay, this) {
 			@Override
 			public boolean pulse() {
 				graphics(graphics);
@@ -433,7 +434,7 @@ public abstract class Entity extends Node {
 	 * @return {@code True} if succesful.
 	 */
 	public boolean animate(final Animation animation, int delay) {
-		GameWorld.submit(new Pulse(delay, this) {
+		PulseRunner.submit(new Pulse(delay, this) {
 			@Override
 			public boolean pulse() {
 				animate(animation);
@@ -489,7 +490,7 @@ public abstract class Entity extends Node {
 	 */
 	public boolean faceTemporary(Entity entity, final Entity reset, int ticks) {
 		if (face(entity)) {
-			GameWorld.submit(new Pulse(ticks + 1, this) {
+			PulseRunner.submit(new Pulse(ticks + 1, this) {
 				@Override
 				public boolean pulse() {
 					face(reset);
@@ -597,7 +598,7 @@ public abstract class Entity extends Node {
 	 * @param ticks the ticks.
 	 */
 	public void sendChat(final String string, int ticks) {
-		GameWorld.submit(new Pulse(ticks, this) {
+		PulseRunner.submit(new Pulse(ticks, this) {
 			@Override
 			public boolean pulse() {
 				sendChat(string);

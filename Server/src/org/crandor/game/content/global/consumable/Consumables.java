@@ -109,6 +109,9 @@ public enum Consumables {
 	AGILITY_POTION(new Potion(PotionEffect.AGILITY_POTION)),
 	HUNTER_POTION(new Potion(PotionEffect.HUNTER_POTION));
 
+	public static HashMap<Item,Food> foodMap = new HashMap<>();
+
+
 	/**
 	 * Represents the consumable.
 	 */
@@ -190,13 +193,16 @@ public enum Consumables {
 	 * @param item the item.
 	 * @return the food.
 	 */
-	public static Food forFood(final Item item) {
-		for (Food food : FOODS) {
-			if (food.getItem().getId() == item.getId()) {
-				return food;
-			}
+	static{
+		Object[] consumeArray = FOODS.toArray();
+		int length = consumeArray.length;
+		for(int i = 0; i < length; i++){
+			Food f = (Food) consumeArray[i];
+			foodMap.putIfAbsent(f.getItem(),f);
 		}
-		return null;
+	}
+	public static Food forFood(final Item item) {
+		return foodMap.get(item);
 	}
 
 

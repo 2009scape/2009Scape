@@ -44,6 +44,7 @@ import org.crandor.game.system.mysql.impl.NPCDropSQLHandler;
 import org.crandor.game.system.script.ScriptManager;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.map.RegionManager;
 import org.crandor.game.world.map.RegionPlane;
@@ -166,7 +167,7 @@ public final class DeveloperCommandPlugin extends CommandPlugin {
                     dump(player, player.getEquipment());
                 }
                 TutorialSession.extend(player);
-                GameWorld.submit(new Pulse(1, player) {
+                PulseRunner.submit(new Pulse(1, player) {
                     @Override
                     public boolean pulse() {
                         TutorialSession.getExtension(player).init();
@@ -251,7 +252,7 @@ public final class DeveloperCommandPlugin extends CommandPlugin {
 
             case "em":
                 final int[] y = new int[]{16044, 16045, 16256, 16259, 16260, 16334, 16381, 16556, 16564, 16638, 16642, 16673, 16710, 16713, 16715, 16722, 16796, 16797, 16805, 16831, 16886, 16890, 16926, 16938, 16942};
-                GameWorld.submit(new Pulse(3) {
+                PulseRunner.submit(new Pulse(3) {
                     int anim = 0;
 
                     @Override
@@ -273,7 +274,7 @@ public final class DeveloperCommandPlugin extends CommandPlugin {
             	player.getPacketDispatch().sendTempMusic(Integer.parseInt(args[1]));
             	break;
             case "loopsounds":
-            	GameWorld.submit(new Pulse(5) {
+            	PulseRunner.submit(new Pulse(5) {
             		int i = Integer.parseInt(args[2]);
             		int j = Integer.parseInt(args[1]);
             		@Override

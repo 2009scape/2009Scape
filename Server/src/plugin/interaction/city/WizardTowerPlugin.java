@@ -27,6 +27,7 @@ import org.crandor.game.node.item.Item;
 import org.crandor.game.node.object.GameObject;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.game.world.update.flag.context.Graphics;
@@ -469,7 +470,7 @@ public final class WizardTowerPlugin extends OptionHandler {
 						player.lock(7);
 						npc.faceLocation(Location.create(3102, 3163, 2));
 						npc.animate(ANIMATION);
-						GameWorld.submit(new Pulse(3, player) {
+						PulseRunner.submit(new Pulse(3, player) {
 							@Override
 							public boolean pulse() {
 								quest.finish(player);
@@ -1254,7 +1255,7 @@ public final class WizardTowerPlugin extends OptionHandler {
 				close();
 				npc.graphics(GRAPHIC);
 				player.lock(3);
-				GameWorld.submit(new Pulse(2) {
+				PulseRunner.submit(new Pulse(2) {
 					@Override
 					public boolean pulse() {
 						interpreter.sendDialogues(npc, null, "Ok, I have retrieved it. Luckily it doesn't appear to", "have been damaged. Now please take it to Aubury, ", "and try not to lose it again.");

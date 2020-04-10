@@ -6,6 +6,7 @@ import org.crandor.game.node.entity.Entity;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Location;
 
 /**
@@ -43,7 +44,7 @@ public final class RickTurpentineNPC extends AntiMacroNPC {
 	@Override
 	public void handlePlayerLeave() {
 		sendChat("What a dismal little spot this is");
-		GameWorld.submit(new Pulse(3) {
+		PulseRunner.submit(new Pulse(3) {
 			@Override
 			public boolean pulse() {
 				clear();

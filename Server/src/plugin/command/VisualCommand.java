@@ -16,6 +16,7 @@ import org.crandor.game.system.command.CommandPlugin;
 import org.crandor.game.system.command.CommandSet;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.map.RegionManager;
 import org.crandor.game.world.repository.Repository;
@@ -238,7 +239,7 @@ public final class VisualCommand extends CommandPlugin {
 		case "loop_inter":
 			final int st = toInteger(args[1]);
 			final int en = args.length > 2 ? toInteger(args[2]) : 740;
-			GameWorld.submit(new Pulse(3, player) {
+			PulseRunner.submit(new Pulse(3, player) {
 				int id = st;
 
 				@Override
@@ -282,7 +283,7 @@ public final class VisualCommand extends CommandPlugin {
 		case "loop_oa":
 			final int startId = toInteger(args[1]);
 			final int endId = args.length > 2 ? toInteger(args[2]) : 11000;
-			GameWorld.submit(new Pulse(3, player) {
+			PulseRunner.submit(new Pulse(3, player) {
 				int id = startId;
 
 				@Override
@@ -301,7 +302,7 @@ public final class VisualCommand extends CommandPlugin {
 		case "loop_anim":
 			final int start = toInteger(args[1]);
 			final int end = args.length > 2 ? toInteger(args[2]) : 11000;
-			GameWorld.submit(new Pulse(3, player) {
+			PulseRunner.submit(new Pulse(3, player) {
 				int id = start;
 
 				@Override
@@ -315,7 +316,7 @@ public final class VisualCommand extends CommandPlugin {
 		case "loop_gfx":
 			final int s = toInteger(args[1]);
 			final int e = args.length > 2 ? toInteger(args[2]) : 11000;
-			GameWorld.submit(new Pulse(3, player) {
+			PulseRunner.submit(new Pulse(3, player) {
 				int id = s;
 
 				@Override

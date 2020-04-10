@@ -165,7 +165,10 @@ public class RegionChunk {
 	public void update(Player player) {
 		if (isUpdated()) {
 			IoBuffer buffer = UpdateAreaPosition.getChunkUpdateBuffer(player, currentBase);
-			for (UpdateFlag<?> flag : flags) {
+			Object[] flagsArray = flags.toArray();
+			int size = flagsArray.length;
+			for (int i = 0; i < size; i++) {
+				UpdateFlag<?> flag = (UpdateFlag<?>) flagsArray[i];
 				flag.writeDynamic(buffer, player);
 			}
 			player.getSession().write(buffer);

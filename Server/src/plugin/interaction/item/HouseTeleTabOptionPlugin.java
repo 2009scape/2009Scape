@@ -11,13 +11,16 @@ import org.crandor.game.world.map.Location;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.plugin.Plugin;
 import org.crandor.tools.RandomFunction;
+
 @InitializablePlugin
 public class HouseTeleTabOptionPlugin extends OptionHandler {
+
 	@Override
 	public Plugin<Object> newInstance(Object arg) throws Throwable {
 		ItemDefinition.forId(8013).getConfigurations().put("option:break", this);
 		return this;
 	}
+
 	@Override
 	public boolean handle(Player player, Node node, String option) {
 		if (player.getHouseManager().getLocation().getExitLocation() == null) {
@@ -35,4 +38,5 @@ public class HouseTeleTabOptionPlugin extends OptionHandler {
 		}
 		return false;
 	}
+
 }

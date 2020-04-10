@@ -5,6 +5,7 @@ import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.link.diary.DiaryType;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.plugin.InitializablePlugin;
@@ -102,7 +103,7 @@ public final class GnomeSpiritTreeDialogue extends DialoguePlugin {
 	 */
 	private void sendTeleport(final Player player, final Location location) {
 		end();
-		GameWorld.submit(new Pulse(1, player) {
+		PulseRunner.submit(new Pulse(1, player) {
 			int loop;
 
 			@Override

@@ -139,6 +139,13 @@ public final class QuestRepository implements SavingModule {
     }
 
     /**
+     * Decrease the points by the value.
+     *
+     * @param value the value.
+     */
+    public void dockPoints(int value) { points -= value; }
+
+    /**
      * Syncronizes the quest points.
      */
     public void syncPoints() {

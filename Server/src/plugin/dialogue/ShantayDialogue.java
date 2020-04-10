@@ -7,6 +7,7 @@ import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.game.world.map.Location;
 
@@ -163,7 +164,7 @@ public final class ShantayDialogue extends DialoguePlugin {
 			player.getPacketDispatch().sendMessage("The guards arrest you and place you in the jail.");
 			close();
 			player.lock(10);
-			GameWorld.submit(new Pulse(3, player) {
+			PulseRunner.submit(new Pulse(3, player) {
 				@Override
 				public boolean pulse() {
 					player.setAttribute("/save:shantay-jail", true);

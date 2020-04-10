@@ -20,7 +20,7 @@ public enum FireType {
 	 */
 	FIERY_BREATH(new Animation(81, Priority.HIGH), 393, new NodeTask(0) {
 		@Override
-		public boolean run(Node node, Node... n) {
+		public boolean exec(Node node, Node... n) {
 			return true;
 		}
 	}),
@@ -30,7 +30,7 @@ public enum FireType {
 	 */
 	SHOCKING_BREATH(new Animation(84, Priority.HIGH), 396, new NodeTask(0) {
 		@Override
-		public boolean run(Node node, Node... n) {
+		public boolean exec(Node node, Node... n) {
 			if (RandomFunction.random(10) < 3) {
 				((Entity) node).getSkills().updateLevel(RandomFunction.random(3), -5, 0);
 				if (node instanceof Player) {
@@ -46,7 +46,7 @@ public enum FireType {
 	 */
 	TOXIC_BREATH(new Animation(82, Priority.HIGH), 394, new NodeTask(0) {
 		@Override
-		public boolean run(Node node, Node... n) {
+		public boolean exec(Node node, Node... n) {
 			((Entity) node).getStateManager().register(EntityState.POISONED, false, 80, (Entity) n[0]);
 			return true;
 		}
@@ -57,7 +57,7 @@ public enum FireType {
 	 */
 	ICY_BREATH(new Animation(83, Priority.HIGH), 395, new NodeTask(0) {
 		@Override
-		public boolean run(Node node, Node... n) {
+		public boolean exec(Node node, Node... n) {
 			((Entity) node).getStateManager().set(EntityState.FROZEN, 7);
 			return true;
 		}

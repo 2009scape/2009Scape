@@ -39,7 +39,7 @@ public final class WildernessZone extends MapZone {
 	/**
 	 * The wilderness zone.
 	 */
-	private static final WildernessZone INSTANCE = new WildernessZone(new ZoneBorders(2055, 2405, 3970, 3818), new ZoneBorders(3070, 9924, 3135, 10002), ZoneBorders.forRegion(12193), ZoneBorders.forRegion(11937));
+	private static final WildernessZone INSTANCE = new WildernessZone(new ZoneBorders(2944, 3525, 3400, 3975), new ZoneBorders(3070, 9924, 3135, 10002), ZoneBorders.forRegion(12193), ZoneBorders.forRegion(11937));
 
 	/**
 	 * The zone borders.
@@ -221,7 +221,7 @@ public final class WildernessZone extends MapZone {
 		}
 		p.getInterfaceManager().openOverlay(new Component(381));
 		p.getSkullManager().setLevel(getWilderness(p));
-		p.getPacketDispatch().sendString("<col=800000>FREE FOR ALL", 381, 1);
+		p.getPacketDispatch().sendString("Level: " + p.getSkullManager().getLevel(), 381, 1);
 		p.getInteraction().set(Option._P_ATTACK);
 		p.getSkullManager().setWilderness(true);
 	}
@@ -230,7 +230,7 @@ public final class WildernessZone extends MapZone {
 	public boolean teleport(Entity e, int type, Node node) {
 		if (e instanceof Player) {
 			Player p = (Player) e;
-			if (p.getDetails().getRights() == Rights.REGULAR_PLAYER) {
+			if (p.getDetails().getRights() == Rights.ADMINISTRATOR) {
 				return true;
 			}
 			if (!checkTeleport(p, (node != null && node instanceof Item && (((Item) node).getName().contains("glory") || ((Item) node).getName().contains("slaying")) ? 30 : 20))) {
@@ -265,7 +265,7 @@ public final class WildernessZone extends MapZone {
 			}
 			int combat = p.getProperties().getCurrentCombatLevel();
 			int targetCombat = t.getProperties().getCurrentCombatLevel();
-			if (combat < 0) {
+			if (combat - level > targetCombat || combat + level < targetCombat) {
 				if (message) {
 					p.getPacketDispatch().sendMessage("The level difference between you and your opponent is too great.");
 				}
@@ -274,7 +274,6 @@ public final class WildernessZone extends MapZone {
 		}
 		return true;
 	}
-
 
 	@Override
 	public void locationUpdate(Entity e, Location last) {
@@ -286,7 +285,7 @@ public final class WildernessZone extends MapZone {
 				show(p);
 			}
 			if (!p.getSkullManager().isWildernessDisabled()) {
-				p.getPacketDispatch().sendString("<col=800000>FREE FOR ALL", 381, 1);
+				p.getPacketDispatch().sendString("Level: " + p.getSkullManager().getLevel(), 381, 1);
 			}
 		}
 	}

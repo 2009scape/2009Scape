@@ -205,6 +205,8 @@ public class NodeList<E extends Node> implements Collection<E>, Iterable<E> {
 		return size;
 	}
 
+	public int length(){ return nodes.length;}
+
 	@Override
 	public Node[] toArray() {
 		synchronized (this) {

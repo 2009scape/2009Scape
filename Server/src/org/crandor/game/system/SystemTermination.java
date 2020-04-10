@@ -82,7 +82,7 @@ public final class SystemTermination {
 				t.printStackTrace();
 			}
 		}
-		ServerStore.dump(directory + "store/");
+//		ServerStore.dump(directory + "store/");
 		SystemLogger.log("[SystemTerminator] Saved player accounts!");
 	}
 

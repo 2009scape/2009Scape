@@ -16,6 +16,7 @@ import org.crandor.game.node.object.GameObject;
 import org.crandor.game.node.object.ObjectBuilder;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Direction;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.map.build.DynamicRegion;
@@ -117,7 +118,7 @@ public final class EvilTwinRandomEvent extends AntiMacroEvent {
 		molly.face(player);
 		player.lock(4);
 		player.setAttribute("ame:location", player.getLocation());
-		GameWorld.submit(new Pulse(3) {
+		PulseRunner.submit(new Pulse(3) {
 			@Override
 			public boolean pulse() {
 				teleport(player, molly, hash);
@@ -228,7 +229,7 @@ public final class EvilTwinRandomEvent extends AntiMacroEvent {
 						player.lock(10);
 						player.getLocks().lockComponent(15);
 						updateCraneCam(10, 4);
-						GameWorld.submit(new Pulse(5, player) {
+						PulseRunner.submit(new Pulse(5, player) {
 							int cycle = 0;
 
 							@Override
@@ -394,7 +395,7 @@ public final class EvilTwinRandomEvent extends AntiMacroEvent {
 	 * @param direction The current direction.
 	 */
 	private void moveCrane(final Direction direction) {
-		GameWorld.submit(new Pulse(1, player) {
+		PulseRunner.submit(new Pulse(1, player) {
 			@Override
 			public boolean pulse() {
 				if (!direction.canMove(currentCrane.getLocation().transform(direction))) {

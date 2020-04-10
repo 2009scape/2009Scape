@@ -33,6 +33,9 @@ public final class ModeratorCommand extends CommandPlugin {
 	@Override
 	public boolean parse(final Player player, String name, String[] args) {
 		switch (name) {
+		case "announce":
+			Repository.sendNews(getArgumentLine(args));
+			break;
 		case "clear":
 		case "kick":
 			Player target = Repository.getPlayer(args[1]);

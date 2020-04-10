@@ -7,6 +7,7 @@ import org.crandor.game.node.object.GameObject;
 import org.crandor.game.node.object.ObjectBuilder;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.game.world.update.flag.player.FaceLocationFlag;
@@ -66,7 +67,7 @@ public final class MithrilSeedsDialogue extends DialoguePlugin {
 				player.lock(2);
 				player.faceLocation(FaceLocationFlag.getFaceLocation(player, flower));
 				player.animate(ANIMATION);
-				GameWorld.submit(new Pulse(2, player, flower) {
+				PulseRunner.submit(new Pulse(2, player, flower) {
 					@Override
 					public boolean pulse() {
 						Item reward = new Item(2460 + ((flower.getId() - 2980) << 1));

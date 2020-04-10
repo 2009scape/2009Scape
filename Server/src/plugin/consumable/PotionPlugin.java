@@ -12,6 +12,7 @@ import org.crandor.game.node.entity.state.EntityState;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.plugin.Plugin;
@@ -153,7 +154,7 @@ public final class PotionPlugin implements Plugin<Object> {
 				if (pulse != null) {
 					pulse.stop();
 				}
-				GameWorld.submit(pulse = new Pulse(2, player) {
+				PulseRunner.submit(pulse = new Pulse(2, player) {
 					int count = 0;
 
 					@Override

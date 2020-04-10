@@ -6,6 +6,7 @@ import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.game.world.map.Location;
 import org.crandor.net.packet.PacketRepository;
 import org.crandor.net.packet.context.MinimapStateContext;
@@ -110,7 +111,7 @@ public class LokarSearunnerDialogue extends DialoguePlugin {
 	 */
 	private void travel(final Player player, final Location location) {
 		player.lock();
-		GameWorld.submit(new Pulse(1, player) {
+		PulseRunner.submit(new Pulse(1, player) {
 			int counter;
 
 			@Override

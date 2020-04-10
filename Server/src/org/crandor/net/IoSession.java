@@ -6,6 +6,7 @@ import org.crandor.game.node.entity.player.info.ClientInfo;
 import org.crandor.game.node.entity.player.info.login.Response;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
+import org.crandor.game.world.PulseRunner;
 import org.crandor.net.producer.HSEventProducer;
 import org.crandor.net.producer.LoginEventProducer;
 
@@ -201,7 +202,7 @@ public class IoSession {
 			channel.socket().close();
 			if (object instanceof Player) {
 				final Player p = getPlayer();
-				GameWorld.submit(new Pulse(0) {
+				PulseRunner.submit(new Pulse(0) {
 					@Override
 					public boolean pulse() {
 						if (p.isActive() && !p.getSession().active) {

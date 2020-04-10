@@ -22,6 +22,9 @@ import java.util.concurrent.TimeUnit;
  */
 public final class UpdateSequence {
 
+	Object[] lobbyArray, playersArray, npcArray;
+	int lobbySize, playerSize, npcSize;
+
 	/**
 	 * The list of active players.
 	 */
@@ -46,17 +49,26 @@ public final class UpdateSequence {
 	 * @return {@code True} if we should continue.
 	 */
 	public void start() {
-		for (Player p : Repository.getLobbyPlayers()) {
+		lobbyArray = Repository.getLobbyPlayers().toArray();
+		playersArray = getRenderablePlayers().toArray();
+		npcArray = Repository.getRenderableNpcs().toArray();
+		lobbySize = lobbyArray.length;
+		playerSize = playersArray.length;
+		npcSize = npcArray.length;
+		for (int i = 0; i < lobbySize; i++) {
+			Player p = (Player) lobbyArray[i];
 			PacketRepository.send(ClearMinimapFlag.class, new PlayerContext(p));
 		}
-		for (Player p : getRenderablePlayers()) {
+		for (int i = 0; i < playerSize; i++) {
+			Player p = (Player) playersArray[i];
 			try {
 				p.tick();
 			} catch (Throwable t) {
 				t.printStackTrace();
 			}
 		}
-		for (NPC n : Repository.getRenderableNpcs()) {
+		for (int i = 0; i < npcSize; i++) {
+			NPC n = (NPC) npcArray[i];
 			try {
 				n.tick();
 			} catch (Throwable t) {
@@ -70,7 +82,8 @@ public final class UpdateSequence {
 	 */
 	public void run() {
 		final CountDownLatch latch = new CountDownLatch(getRenderablePlayers().size());
-		for (final Player p : getRenderablePlayers()) {
+		for (int i = 0; i < playerSize; i++) {
+			Player p = (Player) playersArray[i];
 			EXECUTOR.execute(new Runnable() {
 				@Override
 				public void run() {
@@ -94,10 +107,12 @@ public final class UpdateSequence {
 	 * Ends the sequence, calls the {@link Entity#reset()} method..
 	 */
 	public void end() {
-		for (Player p : getRenderablePlayers()) {
+		for (int i = 0; i < playerSize; i++) {
+			Player p = (Player) playersArray[i];
 			p.reset();
 		}
-		for (NPC npc : Repository.getRenderableNpcs()) {
+		for (int i = 0; i < npcSize; i++) {
+			NPC npc = (NPC) npcArray[i];
 			npc.reset();
 		}
 		getRenderablePlayers().sync();

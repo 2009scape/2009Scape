@@ -19,7 +19,7 @@ public final class DrainTask extends NodeTask {
 	}
 
 	@Override
-	public boolean run(Node node, Node... n) {
+	public boolean exec(Node node, Node... n) {
 		if (((Player) node).getPrayer().getActive().isEmpty()) {
 			return true;
 		}
