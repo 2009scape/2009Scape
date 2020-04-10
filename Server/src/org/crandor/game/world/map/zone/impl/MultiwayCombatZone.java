@@ -34,30 +34,7 @@ public final class MultiwayCombatZone extends MapZone {
 
 	@Override
 	public void configure() {
-		register(new ZoneBorders(3210, 9333, 3339, 9424));
-		register(new ZoneBorders(2607, 3296, 2644, 3332));
-		register(new ZoneBorders(2949, 3370, 3001, 3392));
-		register(new ZoneBorders(3250, 9800, 3342, 9870));
-		register(new ZoneBorders(3190, 3648, 3327, 3839));
-		register(new ZoneBorders(3200, 3840, 3390, 3967));
-		register(new ZoneBorders(2992, 3912, 3007, 3967));
-		register(new ZoneBorders(2946, 3816, 2959, 3831));
-		register(new ZoneBorders(3008, 3856, 3199, 3903));
-		register(new ZoneBorders(3008, 3600, 3071, 3711));
-		register(new ZoneBorders(3072, 3608, 3327, 3647));
-		register(new ZoneBorders(2624, 2550, 2690, 2619));
-		register(new ZoneBorders(2371, 5062, 2422, 5117));
-		register(new ZoneBorders(2896, 3595, 2927, 3630));
-		register(new ZoneBorders(2820, 5250, 2955, 5370));
-		register(new ZoneBorders(2892, 4435, 2932, 4464));
-		register(new ZoneBorders(2724, 5071, 2747, 5109));
-		register(new ZoneBorders(2256, 4680, 2287, 4711));
-		register(new ZoneBorders(3107, 3234, 3134, 3259));
-		register(new ZoneBorders(2931, 3514, 2940, 3518));
-		register(new ZoneBorders(2869, 3687, 2940, 3839));
-		register(new ZoneBorders(1728, 5120, 1791, 5247));
-		register(new ZoneBorders(3136, 3523, 3328, 3710));
-		registerRegion(13105, new ZoneBorders(3282, 3159, 3303, 3177));
+		register(new ZoneBorders(2055, 2405, 3970, 3818));
 		registerRegion(12341);
 		// Kalphite queen lair
 		registerRegion(13972);

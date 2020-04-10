@@ -1,7 +1,0 @@
-ID - Type of wear
-
-0 - As-is
-5 - 2 Handed Weapons
-6 - Full Torso Wear
-8 - Head Wear
-11 - Face Wear

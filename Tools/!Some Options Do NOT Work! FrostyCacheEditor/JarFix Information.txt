@@ -1,2 +1,0 @@
-Run jarfix.exe if you are unable to execute .jar files.
-This will re-associate the .jar with JRE.

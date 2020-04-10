@@ -42,32 +42,32 @@ public class ShootingStarPlugin extends OptionHandler {
 	private static final Object[][] CRASH_SITES = new Object[][] {
 		{"Canifis Bank", Location.create(3504, 3487, 0)},
 		{"Crafting Guild", Location.create(2940, 3280, 0)},
-		{"Falador East Bank", Location.create(3030, 3349, 0)},
-		{"Rimmington mining site", Location.create(2975, 3237, 0)},
-		{"Rimmington mine", Location.create(2975, 3240, 0)},
-		{"Karamja mining site", Location.create(2737, 3223, 0)},
-		{"Brimhaven mining site", Location.create(2743, 3143, 0)},
-		{"South Crandor mining site", Location.create(2822, 3239, 0)},
-		{"Karamja mining site", Location.create(2854, 3032, 0)},
-		{"Shilo Village mining site", Location.create(2826, 2997, 0)},
-		{"Relleka mining site", Location.create(2682, 3700, 0)},
-		{"Ardougne mining site", Location.create(2600, 3232, 0)},
-		{"Yanille Bank", Location.create(2603, 3087, 0)},
-		{"Al Kharid bank", Location.create(3276, 3176, 0)},
-		{"Al Kharid mining site", Location.create(3296, 3297, 0)},
-		{"Duel Arena bank chest", Location.create(3342, 3267, 0)},
-		{"Nardah mining site", Location.create(3320, 2872, 0)},
-		{"Nardah bank", Location.create(3434, 2888, 0)},
-		{"South-east Varrock mine", Location.create(3292, 3353, 0)},
-		{"South-west Varrock mine", Location.create(3176, 3362, 0)},
-		{"Varrock east bank", Location.create(3259, 3407, 0)},
-		{"Lumbridge Swamp mine", Location.create(3227, 3150, 0)},
-		{"Gnome stronghold Bank", Location.create(2460, 3432, 0)},
-		{"North Edgeville mining site", Location.create(3101, 3569, 0)},
-		{"Southern wilderness mine", Location.create(3025, 3591, 0)},
-		{"Pirates' Hideout mine", Location.create(3059, 3940, 0)},
-		{"Lava Maze mining site", Location.create(3062, 3885, 0)},
-		{"Mage Arena bank", Location.create(3093, 3962, 0)}
+		{"Falador Housing District", Location.create(3030, 3349, 0)},
+		{"Rimmington Square", Location.create(2975, 3237, 0)},
+		{"Rimmington Square", Location.create(2975, 3240, 0)},
+		{"Karamja", Location.create(2737, 3223, 0)},
+		{"Brimhaven", Location.create(2743, 3143, 0)},
+		{"Port Sarim", Location.create(2822, 3239, 0)},
+		{"Karamja", Location.create(2854, 3032, 0)},
+		{"Shilo Village", Location.create(2826, 2997, 0)},
+		{"Relleka", Location.create(2682, 3700, 0)},
+		{"Ardougne", Location.create(2600, 3232, 0)},
+		{"Yanille", Location.create(2603, 3087, 0)},
+		{"Al Kharid", Location.create(3276, 3176, 0)},
+		{"Al Kharid", Location.create(3296, 3297, 0)},
+		{"Duel Arena", Location.create(3342, 3267, 0)},
+		{"Nardah", Location.create(3320, 2872, 0)},
+		{"Nardah", Location.create(3434, 2888, 0)},
+		{"Varrock Slums", Location.create(3292, 3353, 0)},
+		{"Varrock Castle", Location.create(3176, 3362, 0)},
+		{"Varrock Museum", Location.create(3259, 3407, 0)},
+		{"Lumbridge", Location.create(3227, 3150, 0)},
+		{"Gnome Stronghold", Location.create(2460, 3432, 0)},
+		{"Edgeville", Location.create(3101, 3569, 0)},
+		{"Barbarian village", Location.create(3025, 3591, 0)},
+		{"Pest Control", Location.create(3059, 3940, 0)},
+		{"Lava Maze", Location.create(3062, 3885, 0)},
+		{"Lunar Island", Location.create(3093, 3962, 0)}
 	};
 
 	/**
@@ -118,11 +118,11 @@ public class ShootingStarPlugin extends OptionHandler {
 
 		@Override
 		public boolean pulse() {
-			if (++ticks == (GameWorld.getSettings().isDevMode() ? 200 : 7200) && star == null && object == null) {
+			if (++ticks == (GameWorld.getSettings().isDevMode() ? 200 : 1500) && star == null && object == null) {
 				ShootingStar.submit();
 				return false;
 			}
-			if (star != null && object != null && crashSite != null && topTier != null && star == topTier && (star.getTotalStardust() - star.getMinedStardust() == star.getTotalStardust()) && ticks == 5000) {
+			if (star != null && object != null && crashSite != null && topTier != null && star == topTier && (star.getTotalStardust() - star.getMinedStardust() == star.getTotalStardust()) && ticks == 1500) {
 				ShootingStar.remove();
 			}
 			if (sprite != null && ticks == (GameWorld.getSettings().isDevMode() ? 100 : 1000)) {
@@ -201,7 +201,7 @@ public class ShootingStarPlugin extends OptionHandler {
 			break;
 		case "observe":
 			if (ShootingStarPlugin.star != null && crashSite != null && object != null) {
-				player.getDialogueInterpreter().sendDialogue("A shooting star (Level " + (ShootingStarPlugin.star.ordinal() + 1) + ")", "is currently crashed near the " + crashSite + ".");
+				player.getDialogueInterpreter().sendDialogue("A shooting star has completely devastated " + crashSite + ". There are no survivors.");
 			} else {
 				int tickDiff = (GameWorld.getSettings().isDevMode() ? 200 : 7200) - ticks;
 				int seconds = (int) Math.ceil((float) ((float) tickDiff / (float) 1000) * 600);
@@ -249,7 +249,7 @@ public class ShootingStarPlugin extends OptionHandler {
 		public Plugin<Player> newInstance(Player arg) throws Throwable {
 			if (arg instanceof Player) {
 				if (star != null && object != null && object.isActive() && crashSite != null) {
-					((Player) arg).sendMessage("<img=12><col=CC6600>News: A shooting star (Level " + (star.ordinal() + 1) + ") has just crashed near the " + crashSite + "!");
+					((Player) arg).sendMessage("<img=12><col=800000>News: A shooting star has completely devastated " + crashSite + "! Seek immediate shelter!");
 				}
 				return this;
 			}
@@ -335,7 +335,7 @@ public class ShootingStarPlugin extends OptionHandler {
 			star.setMinedStardust(0);
 			crashSite = (String) crashData[0];
 			ObjectBuilder.add(object = new GameObject(star.getObjectId(), (Location) crashData[1]));
-			Repository.sendNews("A shooting star (Level " + (star.ordinal() + 1) + ") has just crashed near the " + crashSite + "!");
+			Repository.sendNews("A shooting star has completely devastated " + crashSite + "! God save us all.");
 			ticks = 0;
 		}
 

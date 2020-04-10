@@ -147,7 +147,7 @@ public final class AIPBuilder {
 
             new Item(839), //Longbow
 
-            new Item(841), //Shortbow
+            //new Item(841), //Shortbow
 
             new Item(843), //Oak shortbow
 

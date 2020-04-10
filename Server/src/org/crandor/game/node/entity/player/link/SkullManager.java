@@ -23,7 +23,7 @@ public final class SkullManager {
 	/**
 	 * Represents if the player is in the wilderness.
 	 */
-	private boolean wilderness = false;
+	private boolean wilderness = true;
 
 	/**
 	 * If the wilderness zone is currently disabled.

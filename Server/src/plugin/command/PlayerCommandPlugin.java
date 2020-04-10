@@ -342,10 +342,6 @@ public final class PlayerCommandPlugin extends CommandPlugin {
 
 			case "master":
 			case "max":
-					if (player.inCombat() || player.getLocks().isInteractionLocked() || player.getSkullManager().isWilderness()) {
-						player.getPacketDispatch().sendMessage("You can't do that right now.");
-						return true;
-					}
 				for (int i = 0; i < Skills.SKILL_NAME.length; i++) {
 					player.getSkills().setLevel(i, 99);
 					player.getSkills().setStaticLevel(i, 99);

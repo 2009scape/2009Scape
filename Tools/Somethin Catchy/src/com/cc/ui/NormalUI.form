@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jTabbedPane1" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="backToMainButton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="packButton" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+              <Component id="jTabbedPane1" max="32767" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="backToMainButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="packButton" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="backToMainButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Back to Main UI"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backToMainButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/com/cc/ui/normalcachepacking.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel1">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Main Configuration">
+                <Property name="tabTitle" type="java.lang.String" value="Main Configuration"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="skeletons" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="skins" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="config" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="interfaces" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="soundEffects" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="maps" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="music" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="models" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="sprites" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="textures" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="huffmanEncoding" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="interfaceScripts" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="fonts" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="objects" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="clientscripts" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="npcs" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="items" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="animations" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="graphics" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="clientVarpBits" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="mapEffects" min="-2" max="-2" attributes="0"/>
+                          <Component id="vorbis" min="-2" max="-2" attributes="0"/>
+                          <Component id="theora" min="-2" max="-2" attributes="0"/>
+                          <Component id="gameTips" min="-2" max="-2" attributes="0"/>
+                          <Component id="p11FontsImages" min="-2" max="-2" attributes="0"/>
+                          <Component id="graphicShaders" min="-2" max="-2" attributes="0"/>
+                          <Component id="nativeLibs" min="-2" max="-2" attributes="0"/>
+                          <Component id="qcMenus" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="worldMap" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="qcMessages" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="graphicConfigurations" min="-2" max="-2" attributes="0"/>
+                                  <Component id="index29" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="skeletons" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="huffmanEncoding" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="worldMap" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="index29" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="skins" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="interfaceScripts" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="qcMessages" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="graphicConfigurations" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="config" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="fonts" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="qcMenus" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="interfaces" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="objects" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="nativeLibs" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="soundEffects" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="clientscripts" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="graphicShaders" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="maps" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="npcs" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="p11FontsImages" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="music" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="items" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="gameTips" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="models" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="animations" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="theora" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="sprites" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="graphics" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="vorbis" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="textures" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="clientVarpBits" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="mapEffects" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="26" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JCheckBox" name="skeletons">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Skeletons"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="skins">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Skins"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="config">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Config"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="interfaces">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Interfaces"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="soundEffects">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Sound Effects"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="maps">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Maps"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="music">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Music"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="models">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Models"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="sprites">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Sprites"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="textures">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Textures"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="huffmanEncoding">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Huffman Encoding"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="interfaceScripts">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Interface Scripts"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="fonts">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Fonts"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="objects">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Objects"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="clientscripts">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Clientscripts"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="npcs">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="NPCs"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="items">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Items"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="animations">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Animations"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="graphics">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Graphics"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="clientVarpBits">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ClientVarpBits"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="worldMap">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="World Map"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="qcMessages">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="QC Messages"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="qcMenus">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="QC Menus"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="nativeLibs">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Native Libs"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="graphicShaders">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Graphic Shaders"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="p11FontsImages">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="P11 Fonts/Images"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="gameTips">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Game Tips"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="theora">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Theora"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="vorbis">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Vorbis"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="mapEffects">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Map Effects"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="index29">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Index 29"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="graphicConfigurations">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Graphic Configurations"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Additional Options">
+                <Property name="tabTitle" type="java.lang.String" value="Additional Options"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="addOption2" min="-2" max="-2" attributes="0"/>
+                          <Component id="addOption1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="addOption0" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="487" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="addOption0" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="addOption1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="addOption2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="187" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JCheckBox" name="addOption1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pack xTeas"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="addOption2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Overwrite Backgrounds &amp; Logos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="addOption0">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pack Only New Items"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel3">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Output">
+                <Property name="tabTitle" type="java.lang.String" value="Output"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" pref="723" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" pref="240" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="output">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="packButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Pack Cache"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="packButtonActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
