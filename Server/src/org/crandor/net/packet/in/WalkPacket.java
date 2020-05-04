@@ -49,7 +49,7 @@ public final class WalkPacket implements IncomingPacket {
 		}
 		player.face((Entity) null);
 		player.faceLocation((Location) null);
-		player.getWalkingQueue().reset(running);
+		//player.getWalkingQueue().reset(running);
 		player.getPulseManager().run(new MovementPulse(player, Location.create(x, y, player.getLocation().getZ()), running) {
 			@Override
 			public boolean pulse() {
