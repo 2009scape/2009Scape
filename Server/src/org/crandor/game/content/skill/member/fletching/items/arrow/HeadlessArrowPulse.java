@@ -56,7 +56,7 @@ public final class HeadlessArrowPulse extends SkillPulse<Item> {
 	@Override
 	public boolean checkRequirements() {
 		if (!player.getInventory().containsItem(ARROW_SHAFT)) {
-			player.getDialogueInterpreter().sendDialogue("You dont have any arrow shafts.");
+			player.getDialogueInterpreter().sendDialogue("You don't have any arrow shafts.");
 			return false;
 		}
 		feather = getFeather();
