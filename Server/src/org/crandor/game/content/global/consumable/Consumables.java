@@ -14,12 +14,14 @@ import java.util.List;
 public enum Consumables {
 	/** meats */
 	CHICKEN(new Food(2140, 3)),
+	COOKED_MEAT(new Food(2142, 3)),
 	UGTHANKI(new Food(1861, 2)),
 	RABBIT(new Food(3228,5)),
 	DARK_CRAB(new Food(14939, 22)),
 	CRAB(new Food(7521, 10)),
 	/** fish */
 	KARAMBWANJI(new Food(3151, 3)),
+	SHRIMPS(new Food(315, 4)),
 	SARDINE(new Food(325, 4)),
 	ANCHOVIES(new Food(319, 1)),
 	HERRING(new Food(347, 5)),
@@ -109,7 +111,7 @@ public enum Consumables {
 	AGILITY_POTION(new Potion(PotionEffect.AGILITY_POTION)),
 	HUNTER_POTION(new Potion(PotionEffect.HUNTER_POTION));
 
-	public static HashMap<Item,Food> foodMap = new HashMap<>();
+	public static HashMap<Integer,Food> foodMap = new HashMap<>();
 
 
 	/**
@@ -193,16 +195,8 @@ public enum Consumables {
 	 * @param item the item.
 	 * @return the food.
 	 */
-	static{
-		Object[] consumeArray = FOODS.toArray();
-		int length = consumeArray.length;
-		for(int i = 0; i < length; i++){
-			Food f = (Food) consumeArray[i];
-			foodMap.putIfAbsent(f.getItem(),f);
-		}
-	}
-	public static Food forFood(final Item item) {
-		return foodMap.get(item);
+	public static Food forFood(final int itemID) {
+		return foodMap.get(itemID);
 	}
 
 
@@ -235,8 +229,10 @@ public enum Consumables {
 	public static void add(final Consumable consumable) {
 		if (consumable.isDrink()) {
 			DRINKS.add(consumable.asDrink());
-		} else {
-			FOODS.add(consumable.asFood());
+		} else if (consumable.isFood()) {
+			Food f = consumable.asFood();
+			FOODS.add(f);
+			foodMap.putIfAbsent(f.getItem().getId(),f);
 		}
 		CONSUMABLES.add(consumable);
 	}
@@ -246,12 +242,7 @@ public enum Consumables {
 	 */
 	static {
 		for (Consumables consumable : Consumables.values()) {
-			if (consumable.getConsumable().isFood()) {
-				FOODS.add(consumable.getConsumable().asFood());
-			} else if (consumable.getConsumable().isDrink()) {
-				DRINKS.add(consumable.getConsumable().asDrink());
-			}
-			CONSUMABLES.add(consumable.getConsumable());
+			add(consumable.consumable);
 		}
 	}
 }
