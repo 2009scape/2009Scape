@@ -34,7 +34,7 @@ public class TutorialItemHandler extends UseWithHandler {
 		final Player player = event.getPlayer();
 		if (player.getInventory().containItems(438, 436)) {
 			player.animate(new Animation(833));
-			GameWorld.submit(new Pulse(2) {
+			GameWorld.Pulser.submit(new Pulse(2) {
 				@Override
 				public boolean pulse() {
 					player.getInventory().remove(new Item(438, 1));

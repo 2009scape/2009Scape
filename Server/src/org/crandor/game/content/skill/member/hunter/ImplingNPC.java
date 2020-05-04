@@ -71,7 +71,7 @@ public final class ImplingNPC extends AbstractNPC {
 		if (nextTeleport > -1 && GameWorld.getTicks() > nextTeleport) {
 			setAttribute("nextTeleport", GameWorld.getTicks() + 600);
 			graphics(new Graphics(590));
-			GameWorld.submit(new Pulse(1) {
+			GameWorld.Pulser.submit(new Pulse(1) {
 				@Override
 				public boolean pulse() {
 					teleport(ImpetuousImpulses.LOCATIONS[RandomFunction.random(ImpetuousImpulses.LOCATIONS.length)]);

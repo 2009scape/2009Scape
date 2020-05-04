@@ -143,7 +143,7 @@ public final class PartyRoomPlugin extends OptionHandler {
 			npc.init();
 			npcs.add(npc);
 		}
-		GameWorld.submit(new Pulse(1) {
+		GameWorld.Pulser.submit(new Pulse(1) {
 			int count = 0;
 
 			@Override

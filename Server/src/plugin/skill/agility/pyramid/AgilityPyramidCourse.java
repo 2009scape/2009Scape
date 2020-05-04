@@ -246,7 +246,7 @@ public final class AgilityPyramidCourse extends AgilityCourse {
 		if (fail) {
 			player.lock(4);
 			AgilityHandler.walk(player, -1, player.getLocation(), end, Animation.create(157 - diff), 0.0, "You slip and fall to the level below.");
-			GameWorld.submit(new Pulse(3, player) {
+			GameWorld.Pulser.submit(new Pulse(3, player) {
 				@Override
 				public boolean pulse() {
 					Location dest = end;
@@ -292,7 +292,7 @@ public final class AgilityPyramidCourse extends AgilityCourse {
 		final Location end = object.getLocation().transform(object.getId() != 10868 ? dir : dir.getOpposite(), fail ? 2 : 5);
 		AgilityHandler.walk(player, fail ? -1 : 1, player.getLocation(), end, Animation.create(155), fail ? 0.0 : 56.4, fail ? null : "You walk carefully across the slippery plank...");
 		if (fail) {
-			GameWorld.submit(new Pulse(2, player) {
+			GameWorld.Pulser.submit(new Pulse(2, player) {
 				@Override
 				public boolean pulse() {
 					final Location dest = transformLevel(end.transform(!custom ? 2 : 0, custom ? -2 : 0, 0));
@@ -349,7 +349,7 @@ public final class AgilityPyramidCourse extends AgilityCourse {
 			AgilityHandler.walk(player, -1, player.getLocation(), end, animation, 10, null);
 			AgilityHandler.fail(player, 3, transformLevel(dest), null, 8, null);
 			// player.animate(Animation.create(3056 - mod), 2);
-			GameWorld.submit(new Pulse(3, player) {
+			GameWorld.Pulser.submit(new Pulse(3, player) {
 				@Override
 				public boolean pulse() {
 					player.getAppearance().setDefaultAnimations();
@@ -373,7 +373,7 @@ public final class AgilityPyramidCourse extends AgilityCourse {
 			return;
 		} else {
 			player.animate(Animation.create(3063));
-			GameWorld.submit(new Pulse(3, player) {
+			GameWorld.Pulser.submit(new Pulse(3, player) {
 				@Override
 				public boolean pulse() {
 					player.getSkills().addExperience(Skills.AGILITY, 1000);

@@ -281,7 +281,7 @@ public final class TzhaarFightPitsPlugin extends ActivityPlugin {
 	public void configure() {
 		register(new ZoneBorders(2368, 5120, 2420, 5176));
 		PULSE.start();
-		GameWorld.submit(PULSE);
+		GameWorld.Pulser.submit(PULSE);
 	}
 
 	@Override
@@ -331,7 +331,7 @@ public final class TzhaarFightPitsPlugin extends ActivityPlugin {
 					}
 				};
 				p.setAttribute("fp_pulse", pl);
-				GameWorld.submit(pl);
+				GameWorld.Pulser.submit(pl);
 			}
 			break;
 		}

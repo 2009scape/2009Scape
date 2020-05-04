@@ -295,7 +295,7 @@ public class TelekineticZone extends MTAZone {
 			return;
 		}
 		player.lock();
-		GameWorld.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			boolean win = false;
 
 			@Override

@@ -100,7 +100,7 @@ public final class FaladorNodePlugin extends OptionHandler {
 				}
 			};
 			movement.run(player, 8);
-			GameWorld.submit(new Pulse(7, player) {
+			GameWorld.Pulser.submit(new Pulse(7, player) {
 
 				@Override
 				public boolean pulse() {

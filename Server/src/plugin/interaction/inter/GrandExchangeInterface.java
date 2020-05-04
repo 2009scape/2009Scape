@@ -79,7 +79,7 @@ public class GrandExchangeInterface extends ComponentPlugin {
 
 	@Override
 	public boolean handle(final Player player, final Component component, final int opcode, final int button, final int slot, final int itemId) {
-		GameWorld.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			@Override
 			public boolean pulse() {
 				switch (component.getId()) {

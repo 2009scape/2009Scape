@@ -201,7 +201,7 @@ public final class BarcrawlPlugin extends OptionHandler {
 					player.getPacketDispatch().sendMessages("The barmaid giggles.", "The barmaid signs your card.");
 				} else {
 					PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.SHAKE, 4, 4, 1, 4, 4));
-					PulseRunner.submit(new Pulse(3, player) {
+					GameWorld.Pulser.submit(new Pulse(3, player) {
 						@Override
 						public boolean pulse() {
 							PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.RESET, 4, 4, 1, 4, 4));
@@ -452,7 +452,7 @@ public final class BarcrawlPlugin extends OptionHandler {
 				player.getInventory().remove(type.getCoins());
 				player.getBarcrawlManager().complete(type.ordinal());
 				player.lock(6);
-				PulseRunner.submit(new Pulse(6, player) {
+				GameWorld.Pulser.submit(new Pulse(6, player) {
 					@Override
 					public boolean pulse() {
 						type.message(player, false);

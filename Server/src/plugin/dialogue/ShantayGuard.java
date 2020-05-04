@@ -125,7 +125,7 @@ public final class ShantayGuard extends DialoguePlugin {
 				final Location dest = player.getLocation().getY() < 3304 ? Location.create(3303, 3117, 0) : Location.create(3305, 3117, 0);
 				Pathfinder.find(player, dest).walk(player);
 				player.lock();
-				PulseRunner.submit(new Pulse(1, player) {
+				GameWorld.Pulser.submit(new Pulse(1, player) {
 					@Override
 					public boolean pulse() {
 						if (player.getLocation().equals(dest)) {

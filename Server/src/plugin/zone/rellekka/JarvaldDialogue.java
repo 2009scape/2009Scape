@@ -200,7 +200,7 @@ public final class JarvaldDialogue extends DialoguePlugin {
 		player.lock();
 		player.getInterfaceManager().open(new Component(224));
 		player.addExtension(LogoutTask.class, new LocationLogoutTask(5, to ? Location.create(2544, 3759, 0) : Location.create(2620, 3685, 0)));
-		GameWorld.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			int count;
 
 			@Override

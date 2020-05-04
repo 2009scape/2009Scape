@@ -57,7 +57,7 @@ public final class GodwarsEntranceHandler extends OptionHandler {
 			player.lock(2);
 			player.getPacketDispatch().sendMessage("You climb down the rope.");
 			player.animate(Animation.create(828));
-			GameWorld.submit(new Pulse(1, player) {
+			GameWorld.Pulser.submit(new Pulse(1, player) {
 				@Override
 				public boolean pulse() {
 					player.getProperties().setTeleportLocation(Location.create(2882, 5311, 2));
@@ -76,7 +76,7 @@ public final class GodwarsEntranceHandler extends OptionHandler {
 			} else {
 				ForceMovement.run(player, Location.create(2898, 3719, 0), Location.create(2898, 3715, 0), new Animation(6979), 3);
 			}
-			GameWorld.submit(new Pulse(12, player) {
+			GameWorld.Pulser.submit(new Pulse(12, player) {
 				@Override
 				public boolean pulse() {
 					player.getPacketDispatch().sendObjectAnimation(RegionManager.getObject(0, 2898, 3716), Animation.create(6981));

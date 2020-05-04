@@ -126,7 +126,7 @@ public class WitchsExperimentNPC extends AbstractNPC {
             npc.getPulseManager().clear();
             npc.getWalkingQueue().reset();
             player.getSavedData().getQuestData().setWitchsExerimentStage(newType.ordinal());
-            GameWorld.submit(new Pulse(1, npc, player) {
+            GameWorld.Pulser.submit(new Pulse(1, npc, player) {
                 int counter;
 
                 @Override

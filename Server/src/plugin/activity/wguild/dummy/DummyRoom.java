@@ -101,7 +101,7 @@ public final class DummyRoom extends OptionHandler {
 		for (Dummy dummy : Dummy.values()) {
 			ObjectDefinition.forId(dummy.getObject().getId()).getConfigurations().put("option:hit", this);
 		}
-		GameWorld.submit(new Pulse(10) {
+		GameWorld.Pulser.submit(new Pulse(10) {
 			boolean activeDummy;
 			GameObject controlled;
 

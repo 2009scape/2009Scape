@@ -176,7 +176,7 @@ public final class AnimalMagnetismPlugin extends OptionHandler {
 			final Player player = event.getPlayer();
 			player.animate(ANIMATION);
 			player.lock(ANIMATION.getDefinition().getDurationTicks());
-			GameWorld.submit(new Pulse(ANIMATION.getDefinition().getDurationTicks(), player) {
+			GameWorld.Pulser.submit(new Pulse(ANIMATION.getDefinition().getDurationTicks(), player) {
 				@Override
 				public boolean pulse() {
 					if (!player.getZoneMonitor().isInZone("rimmington mine")) {

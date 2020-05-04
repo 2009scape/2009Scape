@@ -68,7 +68,7 @@ public class MTAShop {
 	public MTAShop() {
 		container.add(ITEMS);
 		component.setPlugin(shopPlugin);
-		GameWorld.submit(new Pulse(100) {
+		GameWorld.Pulser.submit(new Pulse(100) {
 			@Override
 			public boolean pulse() {
 				for (int i = 0; i < container.toArray().length; i++) {
@@ -98,7 +98,7 @@ public class MTAShop {
 		player.getInterfaceManager().open(component);
 		update();
 		updatePoints(player);
-		GameWorld.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 
 			@Override
 			public boolean pulse() {

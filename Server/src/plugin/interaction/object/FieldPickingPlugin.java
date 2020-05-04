@@ -69,7 +69,7 @@ public final class FieldPickingPlugin extends OptionHandler {
 		if (plant.respawn != -1 && plant != PickingPlant.FLAX) {
 			object.setActive(false);
 		}
-		GameWorld.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			@Override
 			public boolean pulse() {
 				if (!player.getInventory().add(reward)) {

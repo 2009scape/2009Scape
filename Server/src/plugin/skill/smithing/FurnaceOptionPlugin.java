@@ -93,7 +93,7 @@ public final class FurnaceOptionPlugin extends OptionHandler {
 	private final void handleTutorialIsland(final Player player) {
 		if (player.getInventory().containItems(438, 436)) {
 			player.animate(ANIMATION);
-			PulseRunner.submit(new Pulse(2, player) {
+			GameWorld.Pulser.submit(new Pulse(2, player) {
 				@Override
 				public boolean pulse() {
 					player.getInventory().remove(ITEMS);

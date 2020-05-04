@@ -52,7 +52,7 @@ public class SpiritKalphiteNPC extends BurdenBeast {
 		}
 		final List<Entity> entitys = RegionManager.getLocalEntitys(owner, 6);
 		visualize(Animation.create(8517), Graphics.create(1350));
-		GameWorld.submit(new Pulse(1, owner) {
+		GameWorld.Pulser.submit(new Pulse(1, owner) {
 			@Override
 			public boolean pulse() {
 				int count = 0;

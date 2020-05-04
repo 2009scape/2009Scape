@@ -15,7 +15,7 @@ import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
-import org.crandor.game.world.PulseRunner;
+import org.crandor.game.node.entity.impl.PulseManager;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.map.MapDistance;
 import org.crandor.game.world.map.RegionManager;
@@ -88,7 +88,7 @@ public final class ChainhitSpecialHandler extends RangeSwingHandler implements P
 					int speed = (int) (32 + (victim.getLocation().getDistance(n.getLocation()) * 5));
 					Projectile.create(victim, n, 258, 40, 36, 32, speed, 5, 11).send();
 					n.getSkills().heal(100);
-					PulseRunner.submit(new Pulse(3) {
+					GameWorld.Pulser.submit(new Pulse(3) {
 
 						@Override
 						public boolean pulse() {
@@ -130,7 +130,7 @@ public final class ChainhitSpecialHandler extends RangeSwingHandler implements P
 	 * @param hit The hit.
 	 */
 	public void handleHit(final Entity entity, final Entity victim, final Player player, final BattleState state) {
-		PulseRunner.submit(new Pulse(1, player, victim) {
+		GameWorld.Pulser.submit(new Pulse(1, player, victim) {
 			@Override
 			public boolean pulse() {
 				ChainhitSpecialHandler.super.onImpact(player, victim, state);
@@ -152,7 +152,7 @@ public final class ChainhitSpecialHandler extends RangeSwingHandler implements P
 				double distance = victim.getLocation().getDistance(e.getLocation());
 				int speed = (int) (32 + (distance * 5));
 				Projectile.create(victim, e, 258, 40, 36, 32, speed, 5, 11).send();
-				PulseRunner.submit(new Pulse((int) (distance / 3), entity, victim, e) {
+				GameWorld.Pulser.submit(new Pulse((int) (distance / 3), entity, victim, e) {
 					@Override
 					public boolean pulse() {
 						BattleState bs = new BattleState(entity, e);

@@ -379,7 +379,7 @@ public final class ThievableChestPlugin extends OptionHandler {
 			}
 			player.sendMessage("You find a trap on the chest...");
 			player.getImpactHandler().setDisabledTicks(6);
-			PulseRunner.submit(new Pulse(1, player) {
+			GameWorld.Pulser.submit(new Pulse(1, player) {
 				int counter;
 
 				@Override

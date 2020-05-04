@@ -49,7 +49,7 @@ public final class OrganCutScene extends CutscenePlugin {
 		PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.POSITION, player.getLocation().getX() + 2, player.getLocation().getY() - 7, 405, 1, 100));
 		PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.ROTATION, player.getLocation().getX() + 1, player.getLocation().getY(), 405, 1, 100));
 		player.lock();
-		GameWorld.submit(new Pulse(3) {
+		GameWorld.Pulser.submit(new Pulse(3) {
 			@Override
 			public boolean pulse() {
 				player.getPacketDispatch().sendObjectAnimation(RegionManager.getObject(base.transform(42, 14, 0)), new Animation(9841));
@@ -58,7 +58,7 @@ public final class OrganCutScene extends CutscenePlugin {
 				return true;
 			}
 		});
-		GameWorld.submit(new Pulse(30) {
+		GameWorld.Pulser.submit(new Pulse(30) {
 			@Override
 			public boolean pulse() {
 				unpause();

@@ -654,7 +654,7 @@ public final class TrollheimPlugin extends OptionHandler {
 			Location loc = Location.create(2849, 3597, 0);
 			PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.POSITION, loc.getX() - 2, loc.getY(), 1300, 1, 30));
 			PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.ROTATION, loc.getX() + 22, loc.getY() + 10, 1300, 1, 30));
-			PulseRunner.submit(new Pulse(1, player) {
+			GameWorld.Pulser.submit(new Pulse(1, player) {
 				int count = 0;
 
 				@Override

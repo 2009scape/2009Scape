@@ -172,7 +172,7 @@ public final class CombatPulse extends Pulse {
 		}
 		handler.visualizeAudio(entity, victim, state);
 		entity.getProperties().getCombatPulse().setNextAttack(4);
-		GameWorld.submit(new Pulse(delay - 1, entity, victim) {
+		GameWorld.Pulser.submit(new Pulse(delay - 1, entity, victim) {
 			boolean impact;
 
 			@Override
@@ -235,7 +235,7 @@ public final class CombatPulse extends Pulse {
 		if (set != null && set.effect(entity, victim, state)) {
 			set.visualize(entity, victim);
 		}
-		GameWorld.submit(new Pulse(delay - 1, entity, victim) {
+		GameWorld.Pulser.submit(new Pulse(delay - 1, entity, victim) {
 			boolean impact;
 
 			@Override

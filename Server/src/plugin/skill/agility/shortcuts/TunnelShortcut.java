@@ -78,7 +78,7 @@ public class TunnelShortcut extends AgilityShortcut {
 			offset = 1;
 		}
 		ForceMovement.run(player, start, o.getLocation(), CLIMB_DOWN, 8);
-		PulseRunner.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			int count;
 
 			@Override

@@ -98,7 +98,7 @@ public final class WildernessCourse extends AgilityCourse {
 	 * @param object the object.
 	 */
 	private void handleEntranceObstacle(final Player player, final GameObject object) {
-		GameWorld.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			int counter;
 			final boolean fail = AgilityHandler.hasFailed(player, 1, 0.3);
 
@@ -144,7 +144,7 @@ public final class WildernessCourse extends AgilityCourse {
 			return;
 		}
 		player.lock(12);
-		GameWorld.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			@Override
 			public boolean pulse() {
 				int x = 3004;
@@ -188,7 +188,7 @@ public final class WildernessCourse extends AgilityCourse {
 	private void handleSteppingStones(final Player player, final GameObject object) {
 		final boolean fail = AgilityHandler.hasFailed(player, 1, 0.3);
 		player.addExtension(LogoutTask.class, new LocationLogoutTask(12, player.getLocation()));
-		GameWorld.submit(new Pulse(2, player) {
+		GameWorld.Pulser.submit(new Pulse(2, player) {
 			int counter;
 
 			@Override
@@ -219,7 +219,7 @@ public final class WildernessCourse extends AgilityCourse {
 		player.getPacketDispatch().sendMessage("You walk carefully across the slippery log...");
 		AgilityHandler.walk(player, failed ? -1 : 3, player.getLocation(), end, Animation.create(155), failed ? 0.0 : 20, failed ? null : "You skillfully edge across the gap.");
 		if (failed) {
-			GameWorld.submit(new Pulse(5, player) {
+			GameWorld.Pulser.submit(new Pulse(5, player) {
 				@Override
 				public boolean pulse() {
 					player.faceLocation(Location.create(2998, 3944, 0));
@@ -238,7 +238,7 @@ public final class WildernessCourse extends AgilityCourse {
 	 */
 	private void handleRockClimb(final Player player, final GameObject object) {
 		AgilityHandler.walk(player, 4, player.getLocation(), player.getLocation().transform(0, -4, 0), Animation.create(740), 0, "You reach the top.");
-		GameWorld.submit(new Pulse(4, player) {
+		GameWorld.Pulser.submit(new Pulse(4, player) {
 			@Override
 			public boolean pulse() {
 				player.getAnimator().reset();

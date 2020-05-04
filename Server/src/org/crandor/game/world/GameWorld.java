@@ -4,11 +4,9 @@ import org.crandor.ServerConstants;
 import org.crandor.cache.Cache;
 import org.crandor.cache.ServerStore;
 import org.crandor.game.content.eco.ge.GrandExchangeDatabase;
-import org.crandor.game.interaction.MovementPulse;
 import org.crandor.game.node.Node;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.ai.resource.ResourceAIPManager;
 import org.crandor.game.node.object.GameObject;
 import org.crandor.game.system.SystemLogger;
 import org.crandor.game.system.SystemManager;
@@ -79,6 +77,12 @@ public final class GameWorld {
 
     private static int cfTicks;
 
+    // The multithreaded pulsemanagers
+    public static PulseRunner FastPulser = new PulseRunner();
+
+    public static PulseRunner Pulser = new PulseRunner();
+
+
     /**
      * Constructs a new {@Code GameWorld} {@Code Object}
      */
@@ -95,7 +99,7 @@ public final class GameWorld {
      */
     @Deprecated
     public static void submit(Pulse pulse) {
-        PulseRunner.submit(pulse);
+        GameWorld.Pulser.submit(pulse);
     }
 
     public static void pulse(){
@@ -172,7 +176,8 @@ public final class GameWorld {
             SystemManager.flag(GameWorld.getSettings().isDevMode() ? SystemState.PRIVATE : SystemState.ACTIVE);
         }
         System.gc();
-        PulseRunner.init();
+        FastPulser.init(20);
+        Pulser.init(600);
     }
 
     //39956

@@ -76,7 +76,7 @@ public final class SystemUpdate extends Pulse {
 		super.start();
 		if (GameWorld.getMajorUpdateWorker().isStarted()) {
 			notifyPlayers();
-			GameWorld.submit(this);
+			GameWorld.Pulser.submit(this);
 			return;
 		}
 		Executors.newSingleThreadExecutor().submit(new Runnable() {

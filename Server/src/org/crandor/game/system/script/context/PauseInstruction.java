@@ -46,7 +46,7 @@ public final class PauseInstruction extends ScriptContext {
 
 	@Override
 	public boolean execute(final Object... args) {
-		GameWorld.submit(new Pulse(ticks) {
+		GameWorld.Pulser.submit(new Pulse(ticks) {
 			@Override
 			public boolean pulse() {
 				ScriptManager.run(PauseInstruction.this, args);

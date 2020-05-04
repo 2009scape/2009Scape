@@ -85,7 +85,7 @@ public final class PyramidOptionHandler extends OptionHandler {
 				player.lock();
 				player.animate(new Animation(7299));
 				player.getImpactHandler().setDisabledTicks(4);
-				GameWorld.submit(new Pulse(4, player) {
+				GameWorld.Pulser.submit(new Pulse(4, player) {
 					@Override
 					public boolean pulse() {
 						player.unlock();

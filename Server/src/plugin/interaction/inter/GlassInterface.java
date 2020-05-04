@@ -100,7 +100,7 @@ public final class GlassInterface extends ComponentPlugin {
 	public static void make(final Player player, final GlassProduct glass, final int amount) {
 		player.getInterfaceManager().close();
 		player.animate(ANIMATION);
-		GameWorld.submit(new Pulse(2, player) {
+		GameWorld.Pulser.submit(new Pulse(2, player) {
 			int amt = amount;
 
 			@Override

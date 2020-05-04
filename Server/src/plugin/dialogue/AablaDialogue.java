@@ -89,7 +89,7 @@ public final class AablaDialogue extends DialoguePlugin {
 			npc.animate(ANIMATION);
 			player.lock(4);
 			close();
-			PulseRunner.submit(new Pulse(3, player) {
+			GameWorld.Pulser.submit(new Pulse(3, player) {
 				@Override
 				public boolean pulse() {
 					if (player.getSkills().getLifepoints() == player.getSkills().getStaticLevel(Skills.HITPOINTS)) {

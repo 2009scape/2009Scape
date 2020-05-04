@@ -78,7 +78,7 @@ public final class BalloonManager extends OptionHandler {
 		}
 		countdown = GameWorld.getTicks() + getDropDelay();
 		final NPC partyPete = RegionManager.getNpc(new Location(3052, 3373, 0), 659, 1);
-		GameWorld.submit(new Pulse(1) {
+		GameWorld.Pulser.submit(new Pulse(1) {
 			@Override
 			public boolean pulse() {
 				int realCount = --countdown - GameWorld.getTicks();
@@ -104,7 +104,7 @@ public final class BalloonManager extends OptionHandler {
 		PartyRoomPlugin.getPartyChest().addAll(PartyRoomPlugin.getChestQueue());
 		PartyRoomPlugin.getChestQueue().clear();
 		PartyRoomPlugin.update();
-		GameWorld.submit(new Pulse(1) {
+		GameWorld.Pulser.submit(new Pulse(1) {
 			int waves;
 
 			@Override
@@ -242,7 +242,7 @@ public final class BalloonManager extends OptionHandler {
 			ObjectBuilder.add(popped);
 			getBalloons().remove(object);
 			player.animate(Animation.create(10017));
-			GameWorld.submit(new Pulse(1) {
+			GameWorld.Pulser.submit(new Pulse(1) {
 				int counter;
 
 				@Override

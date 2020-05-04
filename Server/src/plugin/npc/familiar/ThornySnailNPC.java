@@ -57,7 +57,7 @@ public class ThornySnailNPC extends BurdenBeast {
 		int ticks = 2 + (int) Math.floor(getLocation().getDistance(target.getLocation()) * 0.5);
 		getProperties().getCombatPulse().setNextAttack(4);
 		faceTemporary(target, 2);
-		GameWorld.submit(new Pulse(ticks, this, target) {
+		GameWorld.Pulser.submit(new Pulse(ticks, this, target) {
 			@Override
 			public boolean pulse() {
 				BattleState state = new BattleState(ThornySnailNPC.this, target);

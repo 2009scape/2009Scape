@@ -111,7 +111,7 @@ public final class SpiritWolfNPC extends Familiar {
 		faceTemporary(npc, owner, 2);
 		super.visualize(Animation.create(8293), new Graphics(1334, 96));
 		Projectile.magic(this, npc, 1333, 40, 36, 50, 5).send();
-		GameWorld.submit(new Pulse(2, this, npc) {
+		GameWorld.Pulser.submit(new Pulse(2, this, npc) {
 			@Override
 			public boolean pulse() {
 				npc.faceTemporary(SpiritWolfNPC.this, 2);

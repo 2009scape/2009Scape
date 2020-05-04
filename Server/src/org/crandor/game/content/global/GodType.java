@@ -79,7 +79,7 @@ public enum GodType {
 			public void handle(final Player player, int buttonId) {
 				player.lock();
 				player.animate(Animation.create(645));
-				GameWorld.submit(new Pulse(3, player) {
+				GameWorld.Pulser.submit(new Pulse(3, player) {
 					@Override
 					public boolean pulse() {
 						Location loc = statue.getLocation().transform(0, -1, 0);

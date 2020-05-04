@@ -105,7 +105,7 @@ public final class GnomeCopterActivity extends ActivityPlugin {
 		player.lock();
 		player.faceLocation(player.getLocation().transform(0, 3, 0));
 		object.setCharge(88);
-		GameWorld.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			int stage = 0;
 
 			@Override
@@ -161,7 +161,7 @@ public final class GnomeCopterActivity extends ActivityPlugin {
 		final int pad = index;
 		player.setDirection(Direction.SOUTH);
 		player.getProperties().setTeleportLocation(Location.create(3162, 3352, 0));
-		GameWorld.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			int stage = 0;
 			int tick = 0;
 

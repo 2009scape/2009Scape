@@ -92,7 +92,7 @@ public class WLBelowPlugin extends OptionHandler {
 				}
 				player.lock();
 				player.animate(tool.getAnimation());
-				GameWorld.submit(new Pulse(1, player) {
+				GameWorld.Pulser.submit(new Pulse(1, player) {
 					int count;
 
 					@Override

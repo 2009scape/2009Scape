@@ -70,7 +70,7 @@ public class AliTheCamelHandler extends OptionHandler {
                     player.lock();
                     player.animate(new Animation(7299));
                     player.getImpactHandler().setDisabledTicks(3);
-                    GameWorld.submit(new Pulse(4, player) {
+                    GameWorld.Pulser.submit(new Pulse(4, player) {
                         @Override
                         public boolean pulse() {
                             player.unlock();

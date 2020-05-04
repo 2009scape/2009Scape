@@ -67,7 +67,7 @@ public final class MithrilSeedsDialogue extends DialoguePlugin {
 				player.lock(2);
 				player.faceLocation(FaceLocationFlag.getFaceLocation(player, flower));
 				player.animate(ANIMATION);
-				PulseRunner.submit(new Pulse(2, player, flower) {
+				GameWorld.Pulser.submit(new Pulse(2, player, flower) {
 					@Override
 					public boolean pulse() {
 						Item reward = new Item(2460 + ((flower.getId() - 2980) << 1));

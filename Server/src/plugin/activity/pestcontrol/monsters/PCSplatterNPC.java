@@ -94,7 +94,7 @@ public final class PCSplatterNPC extends AbstractNPC {
 	public void commenceDeath(Entity killer) {
 		exploding = true;
 		visualize(new Animation(3888, Priority.VERY_HIGH), Graphics.create(649 + (getId() - 3727)));
-		GameWorld.submit(new Pulse(1, this) {
+		GameWorld.Pulser.submit(new Pulse(1, this) {
 			@Override
 			public boolean pulse() {
 				explode();

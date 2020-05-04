@@ -72,7 +72,7 @@ public final class KalphiteEntranceHandler extends OptionHandler {
 		final Location dest = destination;
 		player.lock(2);
 		player.animate(Animation.create(828));
-		GameWorld.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			@Override
 			public boolean pulse() {
 				player.getProperties().setTeleportLocation(dest);

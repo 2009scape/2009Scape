@@ -137,7 +137,7 @@ public final class GEOfferDispatch extends Pulse implements CallBack {
 	public boolean call() {
 		init();
 		setDelay(1);
-		GameWorld.submit(this);
+		GameWorld.Pulser.submit(this);
 		return true;
 	}
 

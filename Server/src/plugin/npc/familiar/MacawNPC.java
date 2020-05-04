@@ -72,7 +72,7 @@ public class MacawNPC extends Forager {
 		final Item herb = HERBS[RandomFunction.random(HERBS.length)];
 		animate(Animation.create(8013));
 		graphics(Graphics.create(1321), 2);
-		GameWorld.submit(new Pulse(5, owner) {
+		GameWorld.Pulser.submit(new Pulse(5, owner) {
 			@Override
 			public boolean pulse() {
 				GroundItemManager.create(herb, getLocation(), owner);

@@ -411,7 +411,7 @@ public final class AliceHusbandDialogue extends DialoguePlugin {
 				player.face(scene.chicken);
 				scene.walk(scene.husband, 46, 9);
 				scene.walk(scene.chicken, 46, 9);
-				GameWorld.submit(new Pulse(1, player) {
+				GameWorld.Pulser.submit(new Pulse(1, player) {
 					int counter;
 
 					@Override
@@ -440,7 +440,7 @@ public final class AliceHusbandDialogue extends DialoguePlugin {
 				scene.husband.getAnimator().forceAnimation(new Animation(5377, Priority.HIGH));
 				scene.walk(scene.husband, 51, 8);
 				scene.walk(scene.chicken, 45, 10);
-				GameWorld.submit(new Pulse(1, player) {
+				GameWorld.Pulser.submit(new Pulse(1, player) {
 					int counter;
 
 					@Override
@@ -479,7 +479,7 @@ public final class AliceHusbandDialogue extends DialoguePlugin {
 				scene.walk(scene.cowKiller, 46, 9);
 				scene.walk(scene.cow, 46, 10);
 				scene.walk(scene.husband, 44, 10);
-				GameWorld.submit(new Pulse(1, player) {
+				GameWorld.Pulser.submit(new Pulse(1, player) {
 					int counter;
 
 					@Override
@@ -524,7 +524,7 @@ public final class AliceHusbandDialogue extends DialoguePlugin {
 				stage++;
 				scene.allice.face(scene.husband);
 				scene.walk(scene.cowKiller, 46, 10);
-				GameWorld.submit(new Pulse(1, player) {
+				GameWorld.Pulser.submit(new Pulse(1, player) {
 					int count;
 
 					@Override
@@ -558,7 +558,7 @@ public final class AliceHusbandDialogue extends DialoguePlugin {
 			case 23:
 				close();
 				stage++;
-				GameWorld.submit(new Pulse(1, player) {
+				GameWorld.Pulser.submit(new Pulse(1, player) {
 					int counter;
 
 					@Override

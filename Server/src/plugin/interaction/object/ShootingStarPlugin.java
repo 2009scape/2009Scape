@@ -142,7 +142,7 @@ public class ShootingStarPlugin extends OptionHandler {
 		}
 		ObjectDefinition.forId(13656).getConfigurations().put("option:observe", this);
 		pulse.start();
-		GameWorld.submit(pulse);
+		GameWorld.Pulser.submit(pulse);
 		PluginManager.definePlugin(new CommandPlugin() {
 
 			@Override

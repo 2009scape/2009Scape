@@ -108,7 +108,7 @@ public class PrinceAliDialogue extends DialoguePlugin {
 		case 4:
 			// NPC 921 start dialogue.921
 			npc.transform(921);
-			PulseRunner.submit(new Pulse(50) {
+			GameWorld.Pulser.submit(new Pulse(50) {
 				@Override
 				public boolean pulse() {
 					npc.transform(920);
@@ -124,7 +124,7 @@ public class PrinceAliDialogue extends DialoguePlugin {
 			break;
 		case 6:
 			npc.setInvisible(true);
-			PulseRunner.submit(new Pulse(20) {
+			GameWorld.Pulser.submit(new Pulse(20) {
 				@Override
 				public boolean pulse() {
 					npc.transform(920);

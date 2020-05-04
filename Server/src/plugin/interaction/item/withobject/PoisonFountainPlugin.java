@@ -53,7 +53,7 @@ public class PoisonFountainPlugin extends UseWithHandler {
 			player.setAttribute("/save:piranhas-killed", true);
 			player.animate(SEARCH_ANIM);
 			player.getPacketDispatch().sendMessage("You pour the poisoned fish food into the fountain.");
-			GameWorld.submit(new Pulse(1) {
+			GameWorld.Pulser.submit(new Pulse(1) {
 				int counter = 0;
 
 				@Override

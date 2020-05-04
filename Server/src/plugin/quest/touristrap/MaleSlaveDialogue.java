@@ -257,7 +257,7 @@ public final class MaleSlaveDialogue extends DialoguePlugin {
 				case 24:
 					player.lock();
 					interpreter.sendDialogues(getIds()[0], null, true, "Oh oh!");
-					GameWorld.submit(new Pulse(4, player) {
+					GameWorld.Pulser.submit(new Pulse(4, player) {
 						int counter;
 
 						@Override

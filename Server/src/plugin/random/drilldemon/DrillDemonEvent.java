@@ -61,7 +61,7 @@ public final class DrillDemonEvent extends AntiMacroEvent {
 		sergeant.face(player);
 		player.graphics(Graphics.create(86), 3);
 		sergeant.sendChat("Private " + player.getUsername() + "! Get yourself to the parade ground ASAP!");
-		PulseRunner.submit(new Pulse(3, player, sergeant) {
+		GameWorld.Pulser.submit(new Pulse(3, player, sergeant) {
 			@Override
 			public boolean pulse() {
 				return true;

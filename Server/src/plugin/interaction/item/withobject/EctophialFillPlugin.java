@@ -35,7 +35,7 @@ public class EctophialFillPlugin extends UseWithHandler {
 		final Player player = event.getPlayer();
 		player.lock(3);
 		player.animate(Animation.create(1652));
-		GameWorld.submit(new Pulse(3, player) {
+		GameWorld.Pulser.submit(new Pulse(3, player) {
 			@Override
 			public boolean pulse() {
 				if (player.getInventory().remove(new Item(4252))) {

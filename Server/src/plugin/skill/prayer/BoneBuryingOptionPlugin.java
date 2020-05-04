@@ -64,7 +64,7 @@ public final class BoneBuryingOptionPlugin extends OptionHandler {
 		player.getPacketDispatch().sendMessage("You dig a hole in the ground...");
 		player.getAudioManager().send(SOUND);
 		final Bones bonee = bone;
-		GameWorld.submit(new Pulse(2, player) {
+		GameWorld.Pulser.submit(new Pulse(2, player) {
 			@Override
 			public boolean pulse() {
 				player.getPacketDispatch().sendMessage("You bury the bones.");

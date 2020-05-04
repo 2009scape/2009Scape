@@ -82,7 +82,7 @@ public final class SilverInterface extends ComponentPlugin {
 			return;
 		}
 		player.getInterfaceManager().close();
-		GameWorld.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			int amt = ammount;
 
 			@Override

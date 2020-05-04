@@ -55,7 +55,7 @@ public final class RovingElvesPlugin extends OptionHandler {
 				} else {
 					player.animate(ANIMATION_DIG);
 					player.getPacketDispatch().sendMessage("You dig a small hole with your spade.");
-					GameWorld.submit(new Pulse(1, player) {
+					GameWorld.Pulser.submit(new Pulse(1, player) {
 						int counter;
 
 						@Override

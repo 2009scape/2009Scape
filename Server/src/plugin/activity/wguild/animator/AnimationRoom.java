@@ -122,7 +122,7 @@ public final class AnimationRoom extends MapZone implements Plugin<Object> {
 		player.lock(10);
 		player.animate(Animation.create(827));
 		player.getDialogueInterpreter().sendPlainMessage(true, "You place your armour on the platform where it", "disappears...");
-		GameWorld.submit(new Pulse(5, player) {
+		GameWorld.Pulser.submit(new Pulse(5, player) {
 			boolean spawn;
 
 			@Override

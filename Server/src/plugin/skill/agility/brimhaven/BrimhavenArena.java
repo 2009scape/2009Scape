@@ -227,7 +227,7 @@ public final class BrimhavenArena extends MapZone implements Plugin<Object> {
 				DISPENSERS[index++] = Location.create(x, y, 3);
 			}
 		}
-		GameWorld.submit(new Pulse(1) {
+		GameWorld.Pulser.submit(new Pulse(1) {
 			@Override
 			public boolean pulse() {
 				Region r = RegionManager.forId(11157);

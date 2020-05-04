@@ -59,7 +59,7 @@ public class SpellbookSwapSpell extends MagicSpell {
 		player.getDialogueInterpreter().open(3264731);
 		final int id = RandomFunction.random(1, 500000);
 		player.setAttribute("spell:swap", id);
-		GameWorld.submit(new Pulse(20, player) {
+		GameWorld.Pulser.submit(new Pulse(20, player) {
 			@Override
 			public boolean pulse() {
 				if (player.getAttribute("spell:swap", 0) == id) {

@@ -79,7 +79,7 @@ public abstract class NodeTask {
 	 * @return The pulse used for this task.
 	 */
 	public Pulse schedule(final Node node, final Node... n) {
-		GameWorld.submit(pulse = new Pulse(ticks, node) {
+		GameWorld.Pulser.submit(pulse = new Pulse(ticks, node) {
 
 			@Override
 			public void start() {

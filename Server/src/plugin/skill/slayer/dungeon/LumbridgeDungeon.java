@@ -144,7 +144,7 @@ public final class LumbridgeDungeon extends MapZone implements Plugin<Object> {
 			if (!isProtected) {
 				animate(NPCDefinition.forId(7823).getCombatAnimation(3));
 				player.animate(Animation.create(1810));
-				GameWorld.submit(new Pulse(8, player) {
+				GameWorld.Pulser.submit(new Pulse(8, player) {
 					@Override
 					public boolean pulse() {
 						getAnimator().reset();

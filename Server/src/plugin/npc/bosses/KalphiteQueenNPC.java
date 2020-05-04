@@ -368,7 +368,7 @@ public final class KalphiteQueenNPC extends AbstractNPC {
 			final int targetIndex = index;
 			t.getVictim().graphics(MAGIC_END_GFX);
 			Projectile.create(victim, t.getVictim(), 280, 41, 36, 0, 30, 15, 11).send();
-			GameWorld.submit(new Pulse(1, t.getVictim()) {
+			GameWorld.Pulser.submit(new Pulse(1, t.getVictim()) {
 				@Override
 				public boolean pulse() {
 					handleMagicImpact(e, victim, t.getVictim(), targets, targetIndex);

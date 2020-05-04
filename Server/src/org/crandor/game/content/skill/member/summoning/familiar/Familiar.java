@@ -380,7 +380,7 @@ public abstract class Familiar extends NPC implements Plugin<Object> {
 	public void sendFamiliarHit(final Entity target, final int maxHit, final Graphics graphics) {
 		final int ticks = 2 + (int) Math.floor(getLocation().getDistance(target.getLocation()) * 0.5);
 		getProperties().getCombatPulse().setNextAttack(4);
-		GameWorld.submit(new Pulse(ticks, this, target) {
+		GameWorld.Pulser.submit(new Pulse(ticks, this, target) {
 			@Override
 			public boolean pulse() {
 				BattleState state = new BattleState(Familiar.this, target);

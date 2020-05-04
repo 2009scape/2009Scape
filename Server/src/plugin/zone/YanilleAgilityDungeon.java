@@ -132,7 +132,7 @@ public class YanilleAgilityDungeon extends MapZone implements Plugin<Object> {
 		double xp = 0.0;
 		if (AgilityHandler.hasFailed(player, 40, 0.01)) {
 			player.lock(3);
-			GameWorld.submit(new Pulse(2, player) {
+			GameWorld.Pulser.submit(new Pulse(2, player) {
 				@Override
 				public boolean pulse() {
 					AgilityHandler.fail(player, 1, new Location(2572, 9570, 0), Animation.create(761 - diff), RandomFunction.random(1, 3), "You lost your balance!");

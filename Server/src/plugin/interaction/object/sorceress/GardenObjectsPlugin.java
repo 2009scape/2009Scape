@@ -109,7 +109,7 @@ public final class GardenObjectsPlugin extends OptionHandler {
 				player.animate(PICK_FRUIT);
 				player.getSkills().addExperience(Skills.THIEVING, def.getExp(), true);
 				player.getSkills().addExperience(Skills.FARMING, def.getFarmExp(), true);
-				GameWorld.submit(new Pulse(2, player) {
+				GameWorld.Pulser.submit(new Pulse(2, player) {
 					int delay = 0;
 
 					@Override
@@ -137,7 +137,7 @@ public final class GardenObjectsPlugin extends OptionHandler {
 			}
 		} else if (option.equals("drink-from")) {
 			player.lock();
-			GameWorld.submit(new Pulse(1, player) {
+			GameWorld.Pulser.submit(new Pulse(1, player) {
 				int counter = 0;
 
 				@Override
@@ -187,7 +187,7 @@ public final class GardenObjectsPlugin extends OptionHandler {
 	player.addExtension(LogoutTask.class, new LocationLogoutTask(99, herbDef.getRespawn()));
 	player.animate(ANIMATION);
 	player.getSkills().addExperience(Skills.FARMING, herbDef.getExp(), true);
-	GameWorld.submit(new Pulse(2, player) {
+	GameWorld.Pulser.submit(new Pulse(2, player) {
 	    int delay = 0;
 
 	    @Override

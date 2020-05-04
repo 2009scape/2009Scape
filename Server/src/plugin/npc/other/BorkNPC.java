@@ -136,7 +136,7 @@ public class BorkNPC extends AbstractNPC {
 		if (player.getDialogueInterpreter().getDialogue() != null) {
 			player.getDialogueInterpreter().getDialogue().end();
 		}
-		GameWorld.submit(new Pulse(10, player) {
+		GameWorld.Pulser.submit(new Pulse(10, player) {
 
 			@Override
 			public boolean pulse() {
@@ -193,14 +193,14 @@ public class BorkNPC extends AbstractNPC {
 		getProperties().getCombatPulse().stop();
 		player.getProperties().getCombatPulse().stop();
 		getAnimator().forceAnimation(Animation.create(8757));
-		GameWorld.submit(new Pulse(1, player, this) {
+		GameWorld.Pulser.submit(new Pulse(1, player, this) {
 
 			@Override
 			public boolean pulse() {
 				getAnimator().forceAnimation(Animation.create(8757));
 				sendChat("Come to my aid, brothers!");
 				player.sendMessage("Bork strikes the ground with his axe.");
-				GameWorld.submit(new Pulse(4, player) {
+				GameWorld.Pulser.submit(new Pulse(4, player) {
 
 					@Override
 					public boolean pulse() {
@@ -209,7 +209,7 @@ public class BorkNPC extends AbstractNPC {
 					}
 
 				});
-				GameWorld.submit(new Pulse(13, player) {
+				GameWorld.Pulser.submit(new Pulse(13, player) {
 
 					@Override
 					public boolean pulse() {
@@ -499,7 +499,7 @@ public class BorkNPC extends AbstractNPC {
 			bork.cutscene.player = player;
 			player.lock();
 			player.getInterfaceManager().open(new Component(692));
-			GameWorld.submit(new Pulse(13, player) {
+			GameWorld.Pulser.submit(new Pulse(13, player) {
 
 				@Override
 				public boolean pulse() {

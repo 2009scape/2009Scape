@@ -75,7 +75,7 @@ public final class GnomeStrongholdPlugin extends OptionHandler {
 		object.setCharge(88);
 		ObjectBuilder.replace(object, object.transform(object.getId() == 1967 ? 1969 : 1970), 4);
 		AgilityHandler.walk(player, -1, player.getLocation(), player.getLocation().transform(0, player.getLocation().getY() <= 3491 ? 2 : -2, 0), new Animation(1426), 0, null);
-		GameWorld.submit(new Pulse(4) {
+		GameWorld.Pulser.submit(new Pulse(4) {
 			@Override
 			public boolean pulse() {
 				object.setCharge(1000);
@@ -104,7 +104,7 @@ public final class GnomeStrongholdPlugin extends OptionHandler {
 			end = s;
 		}
 		AgilityHandler.walk(player, -1, start, end, new Animation(1426), 0, null);
-		GameWorld.submit(new Pulse(4) {
+		GameWorld.Pulser.submit(new Pulse(4) {
 			@Override
 			public boolean pulse() {
 				object.setCharge(1000);

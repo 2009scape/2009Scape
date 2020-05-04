@@ -7,7 +7,7 @@ import org.crandor.game.interaction.UseWithHandler;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.GameWorld;
-import org.crandor.game.world.PulseRunner;
+import org.crandor.game.node.entity.impl.PulseManager;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.plugin.Plugin;
 
@@ -56,7 +56,7 @@ public final class WineFermentPlugin extends UseWithHandler {
 		}
 		if (player.getInventory().remove(GRAPES, JUG_OF_WATER)) {
 			player.getInventory().add(UNFERMENTED_WINE);
-			PulseRunner.submit(new WineFermentingPulse(1, player));
+			GameWorld.Pulser.submit(new WineFermentingPulse(1, player));
 		}
 		return true;
 	}

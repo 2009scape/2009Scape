@@ -72,7 +72,7 @@ public final class BKFortressPlugin extends OptionHandler {
 		switch (id) {
 		case 2342:// listen at grill.
 			player.animate(LISTEN_ANIM);
-			GameWorld.submit(new Pulse(2, player) {
+			GameWorld.Pulser.submit(new Pulse(2, player) {
 				@Override
 				public boolean pulse() {
 					player.animate(LOWER_ANIM);
@@ -150,7 +150,7 @@ public final class BKFortressPlugin extends OptionHandler {
 			case "read":// 4549, 4551
 				if (player.getInventory().remove((Item) node)) {
 					player.lock();
-					GameWorld.submit(new Pulse(1) {
+					GameWorld.Pulser.submit(new Pulse(1) {
 						int counter = 0;
 
 						@Override

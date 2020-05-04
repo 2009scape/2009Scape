@@ -57,7 +57,7 @@ public final class MinotaurFamiliarNPC implements Plugin<Object> {
 		familiar.visualize(Animation.create(8026), Graphics.create(1496));
 		if (!(familiar instanceof BronzeMinotaurNPC && familiar instanceof RuneMinotaurNPC) && RandomFunction.random(10) < 6) {
 			final int ticks = 2 + (int) Math.floor(familiar.getLocation().getDistance(target.getLocation()) * 0.5);
-			GameWorld.submit(new Pulse(ticks) {
+			GameWorld.Pulser.submit(new Pulse(ticks) {
 				@Override
 				public boolean pulse() {
 					target.getStateManager().set(EntityState.STUNNED, 4);

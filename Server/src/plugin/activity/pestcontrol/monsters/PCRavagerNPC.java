@@ -109,7 +109,7 @@ public class PCRavagerNPC extends AbstractNPC {
 					int type = destroyed ? 22 : target.getType();
 					final GameObject o = target;
 					final GameObject newTarget = o.transform(newId, o.getRotation(), type);
-					GameWorld.submit(new Pulse(1, this, o) {
+					GameWorld.Pulser.submit(new Pulse(1, this, o) {
 						@Override
 						public boolean pulse() {
 							if (getViewport().getRegion().isActive() && session.getBarricades().remove(o)) {

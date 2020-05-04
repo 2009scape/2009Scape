@@ -73,7 +73,7 @@ public class IbisNPC extends Forager {
 	@Override
 	protected boolean specialMove(FamiliarSpecial special) {
 		animate(Animation.create(8201));
-		GameWorld.submit(new Pulse(3, owner, this) {
+		GameWorld.Pulser.submit(new Pulse(3, owner, this) {
 			@Override
 			public boolean pulse() {
 				Location loc = null;

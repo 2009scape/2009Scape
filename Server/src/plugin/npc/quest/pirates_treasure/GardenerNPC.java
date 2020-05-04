@@ -52,7 +52,7 @@ public final class GardenerNPC extends AbstractNPC {
 				getProperties().getCombatPulse().attack(target);
 			}
 			if (!target.isActive() || target.getLocation().getDistance(getLocation()) > 16) {
-				GameWorld.submit(new Pulse(2) {
+				GameWorld.Pulser.submit(new Pulse(2) {
 					@Override
 					public boolean pulse() {
 						clear();

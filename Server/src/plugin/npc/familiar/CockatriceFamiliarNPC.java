@@ -60,7 +60,7 @@ public final class CockatriceFamiliarNPC implements Plugin<Object> {
 		}
 		familiar.faceTemporary(target, 2);
 		familiar.visualize(Animation.create(7762), Graphics.create(1467));
-		GameWorld.submit(new Pulse(1, familiar.getOwner(), familiar, target) {
+		GameWorld.Pulser.submit(new Pulse(1, familiar.getOwner(), familiar, target) {
 			@Override
 			public boolean pulse() {
 				target.getSkills().updateLevel(skill, -3, 0);

@@ -28,7 +28,7 @@ public class BrokenCartBypass extends OptionHandler {
         player.lock();
         player.animate(new Animation(839));
         player.getImpactHandler().setDisabledTicks(4);
-        GameWorld.submit(new Pulse(1, player) {
+        GameWorld.Pulser.submit(new Pulse(1, player) {
             @Override
             public boolean pulse() {
                 player.unlock();

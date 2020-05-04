@@ -117,7 +117,7 @@ public final class BarbarianOutpostCourse extends AgilityCourse {
 			return;
 		}
 		AgilityHandler.forceWalk(player, 0, player.getLocation(), player.getLocation().transform(0, getPipeTransform(player), 0), Animation.create(746), 25, 22, null, 1);
-		GameWorld.submit(new Pulse(2, player) {
+		GameWorld.Pulser.submit(new Pulse(2, player) {
 			@Override
 			public boolean pulse() {
 				player.faceLocation(object.getLocation());
@@ -161,7 +161,7 @@ public final class BarbarianOutpostCourse extends AgilityCourse {
 		AgilityHandler.walk(player, failed ? -1 : 1, Location.create(2551, 3546, 0), end, Animation.create(155), failed ? 0.0 : 13.5, failed ? null : "...You make it safely to the other side.");
 		if (failed) {
 			AgilityHandler.walk(player, -1, player.getLocation(), Location.create(2545, 3546, 0), Animation.create(155), 0.0, null);
-			GameWorld.submit(getSwimPulse(player));
+			GameWorld.Pulser.submit(getSwimPulse(player));
 			return;
 		}
 	}

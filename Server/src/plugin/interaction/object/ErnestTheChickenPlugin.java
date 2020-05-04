@@ -131,7 +131,7 @@ public final class ErnestTheChickenPlugin extends OptionHandler {
 			final boolean up = isUp(lever);
 			levers[lever.ordinal()] = !up;
 			player.animate(!up ? UP_ANIMATION : DOWN_ANIMATION);
-			GameWorld.submit(new Pulse(1) {
+			GameWorld.Pulser.submit(new Pulse(1) {
 				@Override
 				public boolean pulse() {
 					updateConfigs();
@@ -156,7 +156,7 @@ public final class ErnestTheChickenPlugin extends OptionHandler {
 		 */
 		public final void walk(final GameObject object) {
 			player.lock(4);
-			GameWorld.submit(new Pulse(1, player, object) {
+			GameWorld.Pulser.submit(new Pulse(1, player, object) {
 				@Override
 				public boolean pulse() {
 					Point p = (Point) getWalkData()[0];

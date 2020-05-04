@@ -80,7 +80,7 @@ public final class ImpactHandler {
 	public Impact manualHit(final Entity source, int hit, final HitsplatType type, int ticks) {
 		if (ticks > 0) {
 			final int damage = hit;
-			GameWorld.submit(new Pulse(ticks, entity) {
+			GameWorld.Pulser.submit(new Pulse(ticks, entity) {
 				@Override
 				public boolean pulse() {
 					manualHit(source, damage, type);

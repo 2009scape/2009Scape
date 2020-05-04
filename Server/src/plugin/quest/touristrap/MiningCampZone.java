@@ -54,7 +54,7 @@ public final class MiningCampZone extends MapZone implements Plugin<Object> {
 		case "Equip":
 		case "Wear":
 			final Player player = (Player) e;
-			GameWorld.submit(new Pulse(1, player) {
+			GameWorld.Pulser.submit(new Pulse(1, player) {
 				@Override
 				public boolean pulse() {
 					if (TouristTrap.isJailable(player)) {

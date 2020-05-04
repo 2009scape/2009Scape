@@ -18,7 +18,7 @@ public class GeneralBotCreator {
 
         botScript.init();
 
-        GameWorld.submit(new Pulse(1, botScript.bot) {
+        GameWorld.Pulser.submit(new Pulse(1, botScript.bot) {
             int ticks = 0;
             @Override
             public boolean pulse() {

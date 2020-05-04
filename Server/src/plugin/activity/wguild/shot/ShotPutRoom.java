@@ -52,7 +52,7 @@ public final class ShotPutRoom extends DialoguePlugin {
 				}
 				player.lock(4);
 				player.animate(Animation.create(827));
-				GameWorld.submit(new Pulse(2) {
+				GameWorld.Pulser.submit(new Pulse(2) {
 					@Override
 					public boolean pulse() {
 						player.faceLocation(player.getLocation().transform(3, 0, 0));
@@ -158,7 +158,7 @@ public final class ShotPutRoom extends DialoguePlugin {
 		final boolean failed = distance < 2;
 		final int tiles = distance;
 		player.getPacketDispatch().sendMessage("You take a deep breath and prepare yourself.");
-		GameWorld.submit(new Pulse(delay, player) {
+		GameWorld.Pulser.submit(new Pulse(delay, player) {
 			Location loc = player.getLocation();
 			boolean thrown;
 

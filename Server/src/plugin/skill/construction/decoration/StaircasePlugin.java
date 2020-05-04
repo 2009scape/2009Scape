@@ -196,7 +196,7 @@ public final class StaircasePlugin extends OptionHandler {
 				switch (buttonId) {
 				case 1:
 					player.lock(1);
-					PulseRunner.submit(new Pulse(1) {
+					GameWorld.Pulser.submit(new Pulse(1) {
 						@Override
 						public boolean pulse() {
 							climb(player, 1, house, ladder);
@@ -207,7 +207,7 @@ public final class StaircasePlugin extends OptionHandler {
 					break;
 				case 2:
 					player.lock(1);
-					PulseRunner.submit(new Pulse(1) {
+					GameWorld.Pulser.submit(new Pulse(1) {
 						@Override
 						public boolean pulse() {
 							climb(player, -1, house, ladder);

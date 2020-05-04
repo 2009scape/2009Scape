@@ -50,7 +50,7 @@ public final class SeedlingManager implements SavingModule {
 		getSeedling(player.getBank());
 		if (seedlings.size() > 0) {
 			pulse.setActive(true);
-			GameWorld.submit(pulse);
+			GameWorld.Pulser.submit(pulse);
 		}
 	}
 
@@ -65,7 +65,7 @@ public final class SeedlingManager implements SavingModule {
 			pulse.stop();
 			pulse.start();
 			pulse.restart();
-			GameWorld.submit(pulse);
+			GameWorld.Pulser.submit(pulse);
 		}
 	}
 

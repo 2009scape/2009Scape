@@ -42,7 +42,7 @@ public class ChatPacket implements IncomingPacket {
 				return;
 			}
 			player.getMonitor().log(message, PlayerMonitor.PUBLIC_CHAT_LOG);
-			PulseRunner.submit(new Pulse(1, player) {
+			GameWorld.Pulser.submit(new Pulse(1, player) {
 				@Override
 				public boolean pulse() {
 					player.getUpdateMasks().register(new ChatFlag(new ChatMessage(player, message, effects, numChars)));

@@ -278,7 +278,7 @@ public final class GodwarsMapzone extends MapZone implements Plugin<Object> {
 	private void handleRopeClimb(final Player player, final Location destination) {
 		player.lock(2);
 		player.animate(Animation.create(828));
-		GameWorld.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			@Override
 			public boolean pulse() {
 				player.getProperties().setTeleportLocation(destination);
@@ -323,7 +323,7 @@ public final class GodwarsMapzone extends MapZone implements Plugin<Object> {
 	private void handleBigDoor(final Player player, final GameObject object, boolean checkLocation) {
 		player.lock(4);
 		if (checkLocation && player.getLocation().getX() > object.getLocation().getX()) {
-			GameWorld.submit(new MovementPulse(player, object.getLocation()) {
+			GameWorld.Pulser.submit(new MovementPulse(player, object.getLocation()) {
 				@Override
 				public boolean pulse() {
 					handleBigDoor(player, object, false);
@@ -342,7 +342,7 @@ public final class GodwarsMapzone extends MapZone implements Plugin<Object> {
 		}
 		player.getPacketDispatch().sendMessage("You bang on the big door.");
 		player.animate(Animation.create(7002));
-		GameWorld.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			@Override
 			public boolean pulse() {
 				object.getDefinition().getOptions()[1] = "open";
@@ -396,7 +396,7 @@ public final class GodwarsMapzone extends MapZone implements Plugin<Object> {
 			return;
 		}
 		player.lock(7);
-		GameWorld.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			@Override
 			public boolean pulse() {
 				player.visualize(Animation.create(6988), Graphics.create(68));
@@ -407,7 +407,7 @@ public final class GodwarsMapzone extends MapZone implements Plugin<Object> {
 				player.getProperties().setTeleportLocation(player.getLocation().transform(0, diffY, 0));
 				player.getInterfaceManager().openOverlay(new Component(115));
 				player.setAttribute("cross_bridge_loc", player.getLocation());
-				GameWorld.submit(new Pulse(1, player) {
+				GameWorld.Pulser.submit(new Pulse(1, player) {
 					int counter = 0;
 
 					@Override

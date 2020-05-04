@@ -208,7 +208,7 @@ public final class CommunicationInfo {
 					return true;
 				}
 			};
-			GameWorld.submit(lootSharePulse);
+			GameWorld.Pulser.submit(lootSharePulse);
 		}
 	}
 

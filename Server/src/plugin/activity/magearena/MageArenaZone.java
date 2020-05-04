@@ -48,7 +48,7 @@ public final class MageArenaZone extends MapZone implements Plugin<Object> {
 		if (e instanceof Player) {
 			final Player p = (Player) e;
 			if (!logout) {
-				GameWorld.submit(new Pulse(1, e) {
+				GameWorld.Pulser.submit(new Pulse(1, e) {
 					@Override
 					public boolean pulse() {
 						if (!p.getZoneMonitor().isInZone("mage arena")) {

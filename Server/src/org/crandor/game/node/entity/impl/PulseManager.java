@@ -26,12 +26,20 @@ public final class PulseManager {
 	 * @param pulseType The pulse type we're trying to run.
 	 */
 	public void run(Pulse pulse, String... pulseType) {
+		run(pulse, false, pulseType);
+	}
+
+	public void run(Pulse pulse, boolean fast, String... pulseType) {
 		if (!clear(pulseType)) {
 			return;
 		}
 		pulse.start();
 		if (pulse.isRunning()) {
-			PulseRunner.submit(current = pulse);
+			if (fast) {
+				GameWorld.FastPulser.submit(current = pulse);
+			} else {
+				GameWorld.Pulser.submit(current = pulse);
+			}
 		}
 	}
 

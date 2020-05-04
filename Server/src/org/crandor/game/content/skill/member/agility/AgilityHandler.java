@@ -68,7 +68,7 @@ public final class AgilityHandler {
 		}
 		movement.start();
 		movement.setDelay(delay);
-		GameWorld.submit(movement);
+		GameWorld.Pulser.submit(movement);
 		return movement;
 	}
 
@@ -102,7 +102,7 @@ public final class AgilityHandler {
 		if (anim != null) {
 			player.animate(anim);
 		}
-		GameWorld.submit(new Pulse(delay, player) {
+		GameWorld.Pulser.submit(new Pulse(delay, player) {
 			@Override
 			public boolean pulse() {
 				player.getProperties().setTeleportLocation(dest);
@@ -144,7 +144,7 @@ public final class AgilityHandler {
 			}
 		};
 		movement.start();
-		GameWorld.submit(movement);
+		GameWorld.Pulser.submit(movement);
 		return movement;
 	}
 
@@ -175,11 +175,11 @@ public final class AgilityHandler {
 				setObstacleFlag(player, courseIndex);
 			}
 		};
-		GameWorld.submit(new Pulse(delay, player) {
+		GameWorld.Pulser.submit(new Pulse(delay, player) {
 			@Override
 			public boolean pulse() {
 				movement.start();
-				GameWorld.submit(movement);
+				GameWorld.Pulser.submit(movement);
 				return true;
 			}
 		});
@@ -209,7 +209,7 @@ public final class AgilityHandler {
 	public static void climb(final Player player, final int courseIndex, Animation animation, final Location destination, final double experience, final String message, int delay) {
 		player.lock(delay + 1);
 		player.animate(animation);
-		GameWorld.submit(new Pulse(delay) {
+		GameWorld.Pulser.submit(new Pulse(delay) {
 			@Override
 			public boolean pulse() {
 				if (message != null) {
@@ -259,7 +259,7 @@ public final class AgilityHandler {
 		if (animation != null) {
 			player.getAppearance().setAnimations(animation);
 		}
-		GameWorld.submit(new Pulse(ticks, player) {
+		GameWorld.Pulser.submit(new Pulse(ticks, player) {
 			@Override
 			public boolean pulse() {
 				if (animation != null) {

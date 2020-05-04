@@ -62,7 +62,7 @@ public final class MovingBlockNPC extends AbstractNPC {
 				checkBlock(p);
 			}
 			moving = true;
-			GameWorld.submit(new Pulse(1, this) {
+			GameWorld.Pulser.submit(new Pulse(1, this) {
 				int counter;
 
 				@Override
@@ -114,7 +114,7 @@ public final class MovingBlockNPC extends AbstractNPC {
 		Location[] locs = getTileLocations();
 		for (int i = 0; i < 4; i++) {
 			if (locs[i].equals(player.getLocation())) {
-				GameWorld.submit(new Pulse(1, player) {
+				GameWorld.Pulser.submit(new Pulse(1, player) {
 					@Override
 					public boolean pulse() {
 						boolean close = getProperties().getSpawnLocation().getDistance(player.getLocation()) > (getId() == 3124 ? 2 : 2.3);

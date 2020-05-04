@@ -121,7 +121,7 @@ public class PyreLordNPC extends Familiar {
 			familiar.animate(FIREMAKE_ANIMATION);
 			if (player.getInventory().remove(event.getUsedItem())) {
 				final GroundItem ground = GroundItemManager.create(event.getUsedItem(), familiar.getLocation(), player);
-				GameWorld.submit(new Pulse(ticks, player, familiar) {
+				GameWorld.Pulser.submit(new Pulse(ticks, player, familiar) {
 					@Override
 					public boolean pulse() {
 						if (!ground.isActive()) {

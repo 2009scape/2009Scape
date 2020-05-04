@@ -340,7 +340,7 @@ public class DeathMansionEvent extends HolidayEvent {
 				player.lock(3);
 				if (target.getLocation().equals(1624, 4822, 0)) {
 					player.sendChat("Weeeeee");
-					PulseRunner.submit(new Pulse(1, player) {
+					GameWorld.Pulser.submit(new Pulse(1, player) {
 
 						@Override
 						public boolean pulse() {
@@ -362,7 +362,7 @@ public class DeathMansionEvent extends HolidayEvent {
 				}
 				player.getPacketDispatch().sendObjectAnimation(target.asObject(), Animation.create(7296));
 				AgilityHandler.walk(player, -1, player.getLocation(), target.getLocation(), null, 0.0, null);
-				PulseRunner.submit(new Pulse(1, player) {
+				GameWorld.Pulser.submit(new Pulse(1, player) {
 
 					@Override
 					public boolean pulse() {
@@ -387,7 +387,7 @@ public class DeathMansionEvent extends HolidayEvent {
 				player.lock(10);
 				Location strt = player.getLocation().transform(0, -1, 0);
 				AgilityHandler.forceWalk(player, -1, player.getLocation(), strt, Animation.create(7274), 5, 0.0, null);
-				PulseRunner.submit(new Pulse(1, player) {
+				GameWorld.Pulser.submit(new Pulse(1, player) {
 					int ticks;
 					int x = 1636;
 					int y = 4829;
@@ -456,7 +456,7 @@ public class DeathMansionEvent extends HolidayEvent {
 					p.getWalkingQueue().reset();
 					p.getLocks().lock();
 					p.sendMessage("You accidentally trigger a trap.");
-					PulseRunner.submit(new Pulse(1, p) {
+					GameWorld.Pulser.submit(new Pulse(1, p) {
 						int ticks;
 
 						@Override
@@ -618,7 +618,7 @@ public class DeathMansionEvent extends HolidayEvent {
 			player.getPacketDispatch().sendObjectAnimation(second, Animation.create(7285));
 		}
 		player.sendMessage("You fail to pass through the gargoyles' judgement");
-		PulseRunner.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			@Override
 			public boolean pulse() {
 				player.getImpactHandler().manualHit(player, player.getSkills().getLifepoints(), HitsplatType.NORMAL);
@@ -678,7 +678,7 @@ public class DeathMansionEvent extends HolidayEvent {
 		reaper.setAggressive(false);
 		reaper.animate(Animation.create(392));
 		reaper.sendChat(RandomFunction.getRandomElement(GRIM_CHATS).replace("@name", player.getUsername()));
-		PulseRunner.submit(new Pulse(4, reaper) {
+		GameWorld.Pulser.submit(new Pulse(4, reaper) {
 			@Override
 			public boolean pulse() {
 				reaper.clear();
@@ -1355,7 +1355,7 @@ public class DeathMansionEvent extends HolidayEvent {
 					player.getImpactHandler().manualHit(player, player.getSkills().getLifepoints(), HitsplatType.NORMAL);
 					close();
 					player.setAttribute("lo", true);
-					PulseRunner.submit(new Pulse(5, player) {
+					GameWorld.Pulser.submit(new Pulse(5, player) {
 						@Override
 						public boolean pulse() {
 							player.setAttribute("lo", true);
@@ -1544,7 +1544,7 @@ public class DeathMansionEvent extends HolidayEvent {
 					switch (stage) {
 					case 0:
 						player.teleport(START);
-						GameWorld.submit(new Pulse(1, player) {
+						GameWorld.Pulser.submit(new Pulse(1, player) {
 
 							@Override
 							public boolean pulse() {
@@ -1674,7 +1674,7 @@ public class DeathMansionEvent extends HolidayEvent {
 					player.lock(a.getDuration());
 					npc.faceTemporary(player, 2);
 					npc.animate(Animation.create(6578));
-					GameWorld.submit(new Pulse(a.getDuration(), player) {
+					GameWorld.Pulser.submit(new Pulse(a.getDuration(), player) {
 						@Override
 						public boolean pulse() {
 							player("Okay, touching him seems to be a bad idea.");
@@ -1687,7 +1687,7 @@ public class DeathMansionEvent extends HolidayEvent {
 					Animation anim = new Animation(866);
 					player.animate(anim);
 					player.lock(anim.getDuration());
-					GameWorld.submit(new Pulse(anim.getDuration(), player) {
+					GameWorld.Pulser.submit(new Pulse(anim.getDuration(), player) {
 						@Override
 						public boolean pulse() {
 							player("If it's possible for a skeletal dog to smile, I think he", "would be now.");
@@ -1700,7 +1700,7 @@ public class DeathMansionEvent extends HolidayEvent {
 					player.animate(Animation.create(2110));
 					npc.faceTemporary(player, 3);
 					player.lock(4);
-					GameWorld.submit(new Pulse(3, player) {
+					GameWorld.Pulser.submit(new Pulse(3, player) {
 						@Override
 						public boolean pulse() {
 							npc.animate(Animation.create(6579));

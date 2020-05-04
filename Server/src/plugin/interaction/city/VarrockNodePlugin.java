@@ -187,7 +187,7 @@ public final class VarrockNodePlugin extends OptionHandler {
 			case 0:
 				player.lock(3);
 				interpreter.sendPlainMessage(true, "<col=08088A>Knock knock...");
-				GameWorld.submit(new Pulse(3, player) {
+				GameWorld.Pulser.submit(new Pulse(3, player) {
 					@Override
 					public boolean pulse() {
 						interpreter.sendDialogues(npcId, null, "Who's there?");

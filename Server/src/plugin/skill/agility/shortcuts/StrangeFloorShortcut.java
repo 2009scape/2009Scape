@@ -39,14 +39,14 @@ public class StrangeFloorShortcut extends AgilityShortcut {
 
 	@Override
 	public void run(final Player player, GameObject object, String option, boolean failed) {
-		PulseRunner.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			@Override
 			public boolean pulse() {
 				player.getAnimator().forceAnimation(JUMP_ANIM);
 				return true;
 			}
 		});
-		PulseRunner.submit(new Pulse(2, player) {
+		GameWorld.Pulser.submit(new Pulse(2, player) {
 
 			@Override
 			public boolean pulse() {

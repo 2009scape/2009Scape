@@ -69,7 +69,7 @@ public final class DreamSpell extends MagicSpell {
 		}
 		p.animate(START);
 		p.lock();
-		GameWorld.submit(new Pulse(4, p) {
+		GameWorld.Pulser.submit(new Pulse(4, p) {
 			@Override
 			public boolean pulse() {
 				p.animate(DREAMING);

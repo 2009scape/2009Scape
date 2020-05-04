@@ -107,7 +107,7 @@ public final class DesertWyrmNPC extends Forager {
 				player.lock(9);
 				familiar.lock(8);
 				familiar.visualize(new Animation(7800), new Graphics(1412));
-				GameWorld.submit(new Pulse(1, player, familiar) {
+				GameWorld.Pulser.submit(new Pulse(1, player, familiar) {
 					int counter;
 
 					@Override

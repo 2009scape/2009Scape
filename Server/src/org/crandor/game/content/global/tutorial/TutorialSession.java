@@ -60,7 +60,7 @@ public final class TutorialSession {
 		delayPulse = new DelayPulse();
 		player.setAttribute("tut-island", true);
 		player.getInterfaceManager().openOverlay(new Component(371));
-		GameWorld.submit(delayPulse);
+		GameWorld.Pulser.submit(delayPulse);
 		PacketRepository.send(InterfaceConfig.class, new InterfaceConfigContext(player, 371, 25, true));
 		TutorialStage.load(player, getStage(), true);
 	}

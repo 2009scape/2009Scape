@@ -41,7 +41,7 @@ public final class EssenceTeleport {
 		player.getAudioManager().send(195);
 		Projectile.create(npc, player, 109).send();
 		npc.sendChat("Senventior Disthinte Molesko!");
-		GameWorld.submit(new Pulse(1) {
+		GameWorld.Pulser.submit(new Pulse(1) {
 			int counter = 0;
 
 			@Override

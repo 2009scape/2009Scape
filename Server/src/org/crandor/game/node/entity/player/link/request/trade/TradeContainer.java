@@ -193,7 +193,7 @@ public final class TradeContainer extends Container {
 	 * @param save if we should cache the icon.
 	 */
 	private void alert(final int slot, final boolean save) {
-		GameWorld.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			@Override
 			public boolean pulse() {
 				if (TradeModule.getExtension(player) != null) {

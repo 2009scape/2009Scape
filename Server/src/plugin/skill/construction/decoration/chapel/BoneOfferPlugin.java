@@ -12,7 +12,7 @@ import org.crandor.game.node.item.Item;
 import org.crandor.game.node.object.GameObject;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
-import org.crandor.game.world.PulseRunner;
+import org.crandor.game.node.entity.impl.PulseManager;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.map.RegionManager;
 import org.crandor.game.world.update.flag.context.Animation;
@@ -89,7 +89,7 @@ public class BoneOfferPlugin extends UseWithHandler {
 			return;
 		}
 		final Location start = player.getLocation();
-		PulseRunner.submit(new Pulse(1) {
+		GameWorld.Pulser.submit(new Pulse(1) {
 			int counter = 0;
 			
 			@Override

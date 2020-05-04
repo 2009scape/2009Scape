@@ -174,7 +174,7 @@ public final class ClimbActionHandler {
 	public static void climb(final Player player, Animation animation, final Location destination, final String... messages) {
 		player.lock(2);
 		player.animate(animation);
-		GameWorld.submit(new Pulse(1) {
+		GameWorld.Pulser.submit(new Pulse(1) {
 			@Override
 			public boolean pulse() {
 				player.getProperties().setTeleportLocation(destination);
@@ -298,7 +298,7 @@ public final class ClimbActionHandler {
 				switch (buttonId) {
 				case 1:
 					player.lock(1);
-					GameWorld.submit(new Pulse(1) {
+					GameWorld.Pulser.submit(new Pulse(1) {
 						@Override
 						public boolean pulse() {
 							climbLadder(player, object, "climb-up");
@@ -309,7 +309,7 @@ public final class ClimbActionHandler {
 					break;
 				case 2:
 					player.lock(1);
-					GameWorld.submit(new Pulse(1) {
+					GameWorld.Pulser.submit(new Pulse(1) {
 						@Override
 						public boolean pulse() {
 							climbLadder(player, object, "climb-down");

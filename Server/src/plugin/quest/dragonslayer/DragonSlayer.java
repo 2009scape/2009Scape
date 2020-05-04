@@ -325,7 +325,7 @@ public final class DragonSlayer extends Quest {
 		final GameObject object = RegionManager.getObject(new Location(3050, 9839, 0));
 		player.faceLocation(object.getLocation());
 		player.getPacketDispatch().sendObjectAnimation(object, new Animation(6636));
-		GameWorld.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			int counter = 0;
 
 			@Override

@@ -221,7 +221,7 @@ public final class StrongHoldSecurityPlugin extends MapZone implements Plugin<Ob
 	private static void openDoor(final Player player, final GameObject object) {
 		player.lock(3);
 		player.animate(Animation.create(4282));
-		GameWorld.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			int counter;
 
 			@Override

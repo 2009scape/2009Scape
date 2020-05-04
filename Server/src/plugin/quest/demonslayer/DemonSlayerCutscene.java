@@ -412,7 +412,7 @@ public final class DemonSlayerCutscene extends CutscenePlugin {
 				interpreter.sendPlainMessage(true, "Delrith is sucked into the vortex...");
 				cutscene.delrith.animate(new Animation(4624));
 				player.lock();
-				GameWorld.submit(new Pulse(10) {
+				GameWorld.Pulser.submit(new Pulse(10) {
 					@Override
 					public boolean pulse() {
 						cutscene.delrith.clear();
@@ -503,7 +503,7 @@ public final class DemonSlayerCutscene extends CutscenePlugin {
 				PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.POSITION, player.getLocation().getX() - 1, player.getLocation().getY() + 2, 380, 1, 98));
 				PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.ROTATION, player.getLocation().getX() + 19, player.getLocation().getY() - 55, 380, 1, 98));
 				interpreter.sendPlainMessage(true, "The wizards cast an evil spell...");
-				GameWorld.submit(new Pulse(1, player) {
+				GameWorld.Pulser.submit(new Pulse(1, player) {
 					int counter = 0;
 
 					@SuppressWarnings("deprecation")

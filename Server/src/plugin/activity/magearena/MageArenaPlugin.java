@@ -78,7 +78,7 @@ public final class MageArenaPlugin extends OptionHandler {
 				return true;
 			}
 			player.lock(1);
-			GameWorld.submit(new Pulse(1, player) {
+			GameWorld.Pulser.submit(new Pulse(1, player) {
 				@Override
 				public boolean pulse() {
 					handlePool(player, false, destination, (GameObject) node);
@@ -172,7 +172,7 @@ public final class MageArenaPlugin extends OptionHandler {
 			final Location middle = object.getId() == 2879 ? Location.create(2509, 4687, 0) : Location.create(2542, 4720, 0);
 			player.lock();
 			AgilityHandler.walk(player, -1, start, middle, new Animation(1426), 0.0, null);
-			GameWorld.submit(new Pulse(1, player) {
+			GameWorld.Pulser.submit(new Pulse(1, player) {
 				int counter;
 
 				@Override
@@ -194,7 +194,7 @@ public final class MageArenaPlugin extends OptionHandler {
 		}
 		player.sendMessage("You step into the pool.");
 		AgilityHandler.walk(player, -1, start, end, new Animation(1426), 0.0, "Your boots get wet.");
-		GameWorld.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 
 			@Override
 			public boolean pulse() {

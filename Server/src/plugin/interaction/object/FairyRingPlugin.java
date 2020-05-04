@@ -222,7 +222,7 @@ public class FairyRingPlugin extends OptionHandler {
 			if (!RegionManager.isTeleportPermitted(tile) || RegionManager.getObject(tile) != null) {
 				tile = Location.create(2412, 4431, 0);
 			}
-			GameWorld.submit(new Pulse(4, player) {
+			GameWorld.Pulser.submit(new Pulse(4, player) {
 
 				@Override
 				public boolean pulse() {

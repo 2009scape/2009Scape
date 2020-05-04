@@ -147,7 +147,7 @@ public final class PestControlActivityPlugin extends ActivityPlugin {
 				p.getStateManager().remove(EntityState.POISONED);
 			}
 			PulseManager.cancelDeathTask(p);
-			GameWorld.submit(new Pulse(1, p) {
+			GameWorld.Pulser.submit(new Pulse(1, p) {
 				@Override
 				public boolean pulse() {
 					p.getSkills().restore();
@@ -229,7 +229,7 @@ public final class PestControlActivityPlugin extends ActivityPlugin {
 			ZoneBuilder.configure(new PCIslandZone());
 		}
 		pulse.start();
-		GameWorld.submit(pulse);
+		GameWorld.Pulser.submit(pulse);
 	}
 
 	@Override

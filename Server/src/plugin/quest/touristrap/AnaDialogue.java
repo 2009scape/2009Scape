@@ -194,7 +194,7 @@ public final class AnaDialogue extends DialoguePlugin {
 					player.getInventory().add(TouristTrap.ANNA_BARREL);
 					close();
 					player.lock(3);
-					GameWorld.submit(new Pulse(3, player) {
+					GameWorld.Pulser.submit(new Pulse(3, player) {
 						@Override
 						public boolean pulse() {
 							interpreter.sendDialogues(823, null, "<col=08088A>-- You manage to squeeze Ana into the barrel, --", "<col=08088A>-- despite her many complaints. --", "I djont fit in dis bawwel... Wet me out!!");

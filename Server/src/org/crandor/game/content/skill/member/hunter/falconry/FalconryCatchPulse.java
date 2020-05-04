@@ -123,7 +123,7 @@ public final class FalconryCatchPulse extends SkillPulse<NPC> {
 			falcon.setAttribute("falcon:catch", falconCatch);
 			falcon.init();
 			HintIconManager.registerHintIcon(player, falcon);
-			GameWorld.submit(new Pulse(100, falcon) {
+			GameWorld.Pulser.submit(new Pulse(100, falcon) {
 				@Override
 				public boolean pulse() {
 					if (!falcon.isActive()) {

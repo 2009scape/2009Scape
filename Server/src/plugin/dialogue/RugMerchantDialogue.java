@@ -274,7 +274,7 @@ public final class RugMerchantDialogue extends DialoguePlugin {
 			player.lock();
 			player.getConfigManager().set(499, 0);
 			player.getImpactHandler().setDisabledTicks(GameWorld.getTicks() + 200);
-			PulseRunner.submit(new Pulse(1, player) {
+			GameWorld.Pulser.submit(new Pulse(1, player) {
 				int count;
 				int index;
 				Location[] locs = getLocData();

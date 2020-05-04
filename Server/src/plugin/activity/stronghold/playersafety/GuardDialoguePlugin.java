@@ -96,7 +96,7 @@ public class GuardDialoguePlugin extends DialoguePlugin {
 		case 10:
 			if (read) {
 				player.getInterfaceManager().open(new Component(700));
-				GameWorld.submit(new Pulse(5) {
+				GameWorld.Pulser.submit(new Pulse(5) {
 
 					@Override
 					public boolean pulse() {

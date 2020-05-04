@@ -43,7 +43,7 @@ public final class WallShortcut extends OptionHandler {
         final GameObject o = (GameObject) node;
         if (o.getId() == 6620) {
             ForceMovement.run(player, Location.create(3320, 2796, 0), o.getLocation(), CLIMB_DOWN);
-            GameWorld.submit(new Pulse(1, player) {
+            GameWorld.Pulser.submit(new Pulse(1, player) {
                 int count;
 
                 @Override

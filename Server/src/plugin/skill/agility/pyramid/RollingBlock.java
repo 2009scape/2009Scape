@@ -32,7 +32,7 @@ public final class RollingBlock implements MovementHook {
 		AgilityPyramidCourse.addConfig(player, stone, 1, false);
 		e.addExtension(LogoutTask.class, new LocationLogoutTask(5, player.getLocation()));
 		if (fail) {
-			GameWorld.submit(new Pulse(1, player) {
+			GameWorld.Pulser.submit(new Pulse(1, player) {
 				int counter;
 
 				@Override
@@ -57,7 +57,7 @@ public final class RollingBlock implements MovementHook {
 			return false;
 		}
 		AgilityHandler.forceWalk(player, -1, dest, dest.transform(player.getDirection(), 2), Animation.create(1115), 20, 12, null);
-		GameWorld.submit(new Pulse(3, player) {
+		GameWorld.Pulser.submit(new Pulse(3, player) {
 			@Override
 			public boolean pulse() {
 				AgilityPyramidCourse.addConfig(player, stone, 0, true);

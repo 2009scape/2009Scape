@@ -46,7 +46,7 @@ public class FenceJumpShortcut extends AgilityShortcut {
 	@Override
 	public void run(final Player player, GameObject object, String option, boolean failed) {
 		player.faceLocation(object.getLocation());
-		PulseRunner.submit(new Pulse(2, player) {
+		GameWorld.Pulser.submit(new Pulse(2, player) {
 			@Override
 			public boolean pulse() {
 				player.animate(JUMP_ANIM);

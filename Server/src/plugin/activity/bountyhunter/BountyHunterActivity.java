@@ -255,7 +255,7 @@ public final class BountyHunterActivity extends ActivityPlugin {
 			updateSkull(player);
 			if (!gamePulse.isRunning()) {
 				gamePulse.start();
-				GameWorld.submit(gamePulse);
+				GameWorld.Pulser.submit(gamePulse);
 			}
 		}
 		return super.enter(e);
@@ -464,7 +464,7 @@ public final class BountyHunterActivity extends ActivityPlugin {
 			}
 			if (!waitRoomPulse.isRunning()) {
 				waitRoomPulse.start();
-				GameWorld.submit(waitRoomPulse);
+				GameWorld.Pulser.submit(waitRoomPulse);
 			}
 		} else if (waitingRoom.size() > MINIMUM_PLAYERS) {
 			player.getPacketDispatch().sendString((int) Math.round(waitingTime * 0.6) + " Sec", 656, 10);

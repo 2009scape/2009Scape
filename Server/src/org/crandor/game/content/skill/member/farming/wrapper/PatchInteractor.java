@@ -194,7 +194,7 @@ public final class PatchInteractor {
 			player.lock(3);
 			wrapper.setNode(node);
 			player.animate(tree ? SPADE_ANIMATION : DIBBER_ANIMATION);
-			GameWorld.submit(new Pulse(1, player) {
+			GameWorld.Pulser.submit(new Pulse(1, player) {
 				@Override
 				public boolean pulse() {
 					player.getSkills().addExperience(Skills.FARMING, node.getExperiences()[0], true);

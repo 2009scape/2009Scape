@@ -9,7 +9,7 @@ import org.crandor.game.node.entity.impl.Animator.Priority;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
-import org.crandor.game.world.PulseRunner;
+import org.crandor.game.node.entity.impl.PulseManager;
 import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.game.world.update.flag.context.Graphics;
 import org.crandor.plugin.Plugin;
@@ -88,7 +88,7 @@ public final class SnapshotSpecialHandler extends RangeSwingHandler implements P
 				victim.getImpactHandler().handleImpact(entity, hitt, CombatStyle.RANGE, state);
 				return;
 			}
-			PulseRunner.submit(new Pulse(1, victim) {
+			GameWorld.Pulser.submit(new Pulse(1, victim) {
 				@Override
 				public boolean pulse() {
 					victim.getImpactHandler().handleImpact(entity, hitt, CombatStyle.RANGE, state);

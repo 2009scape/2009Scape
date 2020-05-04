@@ -254,7 +254,7 @@ public class GodBookPlugin extends OptionHandler {
 			final Animation animation = ANIMATIONS[book.ordinal()];
 			player.animate(animation);
 			player.lock();
-			GameWorld.submit(new Pulse(2, player) {
+			GameWorld.Pulser.submit(new Pulse(2, player) {
 				int index = 0;
 
 				@Override

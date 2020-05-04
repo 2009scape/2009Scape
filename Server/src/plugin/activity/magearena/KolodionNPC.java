@@ -254,7 +254,7 @@ public final class KolodionNPC extends AbstractNPC {
 				player.lock();
 			}
 			player.lock(2);
-			GameWorld.submit(new Pulse(1, kolodion, player) {
+			GameWorld.Pulser.submit(new Pulse(1, kolodion, player) {
 				int counter;
 
 				@Override

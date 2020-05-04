@@ -65,7 +65,7 @@ public final class WildernessLeverPlugin extends OptionHandler {
 		player.lock(2);
 		player.animate(lever.getAnimation());
 		player.getAudioManager().send(new Audio(2400));
-		GameWorld.submit(new Pulse(2, player) {
+		GameWorld.Pulser.submit(new Pulse(2, player) {
 			@Override
 			public boolean pulse() {
 				lever.message(player, index);

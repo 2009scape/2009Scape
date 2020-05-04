@@ -118,7 +118,7 @@ public final class BarrelRoom extends MapZone implements Plugin<Object> {
 				lock.lock();
 				player.getLocks().setEquipmentLock(lock);
 				player.getPacketDispatch().sendMessage("You pick up the keg and balance it on your head carefully.");
-				GameWorld.submit(new Pulse(3, player) {
+				GameWorld.Pulser.submit(new Pulse(3, player) {
 					@Override
 					public boolean pulse() {
 						player.getEquipment().replace(new Item(barrelId), EquipmentContainer.SLOT_HAT);
@@ -133,7 +133,7 @@ public final class BarrelRoom extends MapZone implements Plugin<Object> {
 							if (!pulse.isRunning()) {
 								pulse.restart();
 								pulse.start();
-								GameWorld.submit(pulse);
+								GameWorld.Pulser.submit(pulse);
 							}
 						}
 						return true;

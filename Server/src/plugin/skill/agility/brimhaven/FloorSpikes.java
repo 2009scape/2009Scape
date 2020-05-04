@@ -27,7 +27,7 @@ public final class FloorSpikes implements MovementHook {
 		final Location start = l.transform(-dir.getStepX(), -dir.getStepY(), 0);
 		e.lock(5);
 		e.addExtension(LogoutTask.class, new LocationLogoutTask(5, start));
-		GameWorld.submit(new Pulse(3, e) {
+		GameWorld.Pulser.submit(new Pulse(3, e) {
 			@Override
 			public boolean pulse() {
 				player.getPacketDispatch().sendObjectAnimation(RegionManager.getObject(l), Animation.create(1111));

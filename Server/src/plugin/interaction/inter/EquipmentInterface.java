@@ -49,7 +49,7 @@ public final class EquipmentInterface extends ComponentPlugin {
 			switch (opcode) {
 			case 155:
 				p.getPulseManager().clear();
-				GameWorld.submit(new Pulse(1, p) {
+				GameWorld.Pulser.submit(new Pulse(1, p) {
 					@Override
 					public boolean pulse() {
 						EquipHandler.unequip(p, slot, itemId);
@@ -61,7 +61,7 @@ public final class EquipmentInterface extends ComponentPlugin {
 				p.sendMessage(p.getEquipment().get(slot).getDefinition().getExamine());
 				return true;
 			case 196:
-				GameWorld.submit(new Pulse(1, p) {
+				GameWorld.Pulser.submit(new Pulse(1, p) {
 					@Override
 					public boolean pulse() {
 						operate(p, slot, itemId);
@@ -77,7 +77,7 @@ public final class EquipmentInterface extends ComponentPlugin {
 			case 155:
 				p.getPulseManager().clear();
 				final Item item = p.getInventory().get(slot);
-				GameWorld.submit(new Pulse(1, p) {
+				GameWorld.Pulser.submit(new Pulse(1, p) {
 					@Override
 					public boolean pulse() {
 						EquipHandler.SINGLETON.handle(p, item, "equip");
@@ -95,7 +95,7 @@ public final class EquipmentInterface extends ComponentPlugin {
 			if (button != 28) {
 				return false;
 			}
-			GameWorld.submit(new Pulse(1, p) {
+			GameWorld.Pulser.submit(new Pulse(1, p) {
 				@Override
 				public boolean pulse() {
 					operate(p, slot, itemId);
@@ -127,7 +127,7 @@ public final class EquipmentInterface extends ComponentPlugin {
 			case 28:
 				if (opcode == 81) {
 					p.getPulseManager().clear();
-					GameWorld.submit(new Pulse(1, p) {
+					GameWorld.Pulser.submit(new Pulse(1, p) {
 						@Override
 						public boolean pulse() {
 							EquipHandler.unequip(p, slot, itemId);

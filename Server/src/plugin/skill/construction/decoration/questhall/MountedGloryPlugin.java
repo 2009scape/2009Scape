@@ -80,7 +80,7 @@ public class MountedGloryPlugin extends OptionHandler {
 		player.lock();
 		player.visualize(ANIMATION, GRAPHICS);
 		player.getImpactHandler().setDisabledTicks(4);
-		PulseRunner.submit(new Pulse(4, player) {
+		GameWorld.Pulser.submit(new Pulse(4, player) {
 			@Override
 			public boolean pulse() {
 				player.unlock();

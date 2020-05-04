@@ -15,7 +15,7 @@ import org.crandor.game.node.item.Item;
 import org.crandor.game.node.object.GameObject;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
-import org.crandor.game.world.PulseRunner;
+import org.crandor.game.node.entity.impl.PulseManager;
 import org.crandor.game.world.map.Location;
 import org.crandor.net.packet.PacketRepository;
 import org.crandor.net.packet.context.MinimapStateContext;
@@ -150,7 +150,7 @@ public final class LostFoundRandomEvent extends AntiMacroEvent {
 				GameObject object = (GameObject) node;
 				player.lock(2);
 				if (isOddAppendage(player, object)) {
-					PulseRunner.submit(new Pulse(4) {
+					GameWorld.Pulser.submit(new Pulse(4) {
 						@Override
 						public boolean pulse() {
 							player.getDialogueInterpreter().sendPlainMessage(false, "The Abyssal Services Department apologises for the inconvenience.");

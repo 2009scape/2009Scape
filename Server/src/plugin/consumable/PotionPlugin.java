@@ -154,7 +154,7 @@ public final class PotionPlugin implements Plugin<Object> {
 				if (pulse != null) {
 					pulse.stop();
 				}
-				PulseRunner.submit(pulse = new Pulse(2, player) {
+				GameWorld.Pulser.submit(pulse = new Pulse(2, player) {
 					int count = 0;
 
 					@Override

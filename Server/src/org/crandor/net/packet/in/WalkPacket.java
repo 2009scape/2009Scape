@@ -55,7 +55,7 @@ public final class WalkPacket implements IncomingPacket {
 			public boolean pulse() {
 				return true;
 			}
-		}, "movement");
+		}, true, "movement");
 		if (opcode == 39) {
 			buffer.get(); // The x-coordinate of where we clicked on the
 			// minimap.

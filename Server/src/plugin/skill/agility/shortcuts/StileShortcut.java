@@ -50,7 +50,7 @@ public class StileShortcut extends AgilityShortcut {
 	public static void climb(final Player player, final GameObject object) {
 		player.lock(1);
 		int delay = 0;
-		GameWorld.submit(new Pulse(delay, player) {
+		GameWorld.Pulser.submit(new Pulse(delay, player) {
 			@Override
 			public boolean pulse() {
 				ForceMovement movement = new ForceMovement(player, getLocation(player, object, true), getLocation(player, object, false), Animation.create(839)) {

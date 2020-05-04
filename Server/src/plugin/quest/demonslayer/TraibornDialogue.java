@@ -209,7 +209,7 @@ public class TraibornDialogue extends DialoguePlugin {
 					interpreter.sendItemMessage(DemonSlayer.THIRD_KEY.getId(), "Traiborn hands you a key.");
 					stage = 387;
 				}
-				GameWorld.submit(new Pulse(1) {
+				GameWorld.Pulser.submit(new Pulse(1) {
 					int counter = 0;
 
 					@Override

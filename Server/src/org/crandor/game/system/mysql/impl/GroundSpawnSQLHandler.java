@@ -168,7 +168,7 @@ public class GroundSpawnSQLHandler extends SQLEntryHandler<GroundSpawn> {
 
 		@Override
 		public void respawn() {
-			GameWorld.submit(new Pulse(getRespawnDuration()) {
+			GameWorld.Pulser.submit(new Pulse(getRespawnDuration()) {
 				@Override
 				public boolean pulse() {
 					GroundItemManager.create(GroundSpawn.this);

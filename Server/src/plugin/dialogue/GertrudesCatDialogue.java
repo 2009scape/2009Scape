@@ -146,7 +146,7 @@ public final class GertrudesCatDialogue extends DialoguePlugin {
 				if (quest.getStage(player) == 40) {
 					return true;
 				}
-				PulseRunner.submit(new Pulse(7, player) {
+				GameWorld.Pulser.submit(new Pulse(7, player) {
 					@Override
 					public boolean pulse() {
 						end();

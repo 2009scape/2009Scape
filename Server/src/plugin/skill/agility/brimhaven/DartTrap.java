@@ -33,7 +33,7 @@ public final class DartTrap implements MovementHook {
 		e.lock(6);
 		e.addExtension(LogoutTask.class, new LocationLogoutTask(13, start));
 		final Location startProj = l.transform(dir.getStepX() * 5, dir.getStepY() * 5, 0);
-		GameWorld.submit(new Pulse(2, e) {
+		GameWorld.Pulser.submit(new Pulse(2, e) {
 			boolean failed;
 			int count;
 

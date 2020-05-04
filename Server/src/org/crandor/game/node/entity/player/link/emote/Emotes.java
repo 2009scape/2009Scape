@@ -140,7 +140,7 @@ public enum Emotes {
 	GIVE_THANKS(46, "This emote can be unlocked by playing a Thanksgiving holiday event."){
 		@Override
 		public void play(final Player player){
-			GameWorld.submit(new Pulse(1, player) {
+			GameWorld.Pulser.submit(new Pulse(1, player) {
 			    int counter;
 			    @Override
 			    public boolean pulse() {

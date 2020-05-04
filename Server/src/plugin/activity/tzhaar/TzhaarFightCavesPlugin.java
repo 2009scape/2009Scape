@@ -132,7 +132,7 @@ public final class TzhaarFightCavesPlugin extends ActivityPlugin {
 			};
 		}
 		player.setAttribute("fc:pulse", pulse);
-		GameWorld.submit(pulse);
+		GameWorld.Pulser.submit(pulse);
 		return true;
 	}
 
@@ -228,7 +228,7 @@ public final class TzhaarFightCavesPlugin extends ActivityPlugin {
 							}
 						};
 						player.setAttribute("fc:pulse", pulse);
-						GameWorld.submit(pulse);
+						GameWorld.Pulser.submit(pulse);
 					}
 				}
 			}

@@ -27,7 +27,7 @@ public final class PressurePad implements MovementHook {
 		final Location start = dest.transform(-dir.getStepX(), -dir.getStepY(), 0);
 		e.lock(5);
 		e.addExtension(LogoutTask.class, new LocationLogoutTask(5, start));
-		GameWorld.submit(new Pulse(3, e) {
+		GameWorld.Pulser.submit(new Pulse(3, e) {
 			@Override
 			public boolean pulse() {
 				Graphics.send(Graphics.create(271), dest);

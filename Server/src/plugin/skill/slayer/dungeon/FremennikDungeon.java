@@ -58,7 +58,7 @@ public final class FremennikDungeon extends MapZone implements Plugin<Object> {
 					return true;
 				}
 				player.lock();
-				GameWorld.submit(new Pulse(1, player) {
+				GameWorld.Pulser.submit(new Pulse(1, player) {
 					int count;
 
 					@Override

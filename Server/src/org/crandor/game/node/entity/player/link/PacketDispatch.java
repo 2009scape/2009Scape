@@ -77,7 +77,7 @@ public final class PacketDispatch {
 	 * @param ticks the ticks.
 	 */
 	public void sendMessage(final String message, int ticks) {
-		GameWorld.submit(new Pulse(ticks, player) {
+		GameWorld.Pulser.submit(new Pulse(ticks, player) {
 			@Override
 			public boolean pulse() {
 				sendMessage(message);

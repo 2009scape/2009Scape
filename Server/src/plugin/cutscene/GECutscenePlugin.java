@@ -222,7 +222,7 @@ public final class GECutscenePlugin extends CutscenePlugin {
 			case 100:
 				close();
 				camera(player, 3149, 3470, 1, 1, 870, 10);
-				GameWorld.submit(new Pulse(16, player) {
+				GameWorld.Pulser.submit(new Pulse(16, player) {
 					@Override
 					public boolean pulse() {
 						npc("Welcome, my friend to the Grand Exchange! From", "here you can simply tell us what you want to buy or", "sell and for how much, and we'll pair you up with", "another player and make the trade!");

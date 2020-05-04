@@ -102,7 +102,7 @@ public final class PortSarimPlugin extends OptionHandler {
 		case "talk-to":
 			player.lock(2);
 			((NPC) node).sendChat(MESSAGES[RandomFunction.random(MESSAGES.length)]);
-			GameWorld.submit(new Pulse(1) {
+			GameWorld.Pulser.submit(new Pulse(1) {
 				@Override
 				public boolean pulse() {
 					player.getDialogueInterpreter().sendDialogues(player, null, "Maybe I should let him sleep.");
@@ -117,7 +117,7 @@ public final class PortSarimPlugin extends OptionHandler {
 			}
 			player.getPacketDispatch().sendMessage("There are lots of bananas in the crate.");
 			player.lock(2);
-			GameWorld.submit(new Pulse(1) {
+			GameWorld.Pulser.submit(new Pulse(1) {
 				@Override
 				public boolean pulse() {
 					if (player.getAttribute("wydin-rum", false)) {

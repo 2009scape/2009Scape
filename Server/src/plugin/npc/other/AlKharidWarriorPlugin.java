@@ -80,7 +80,7 @@ public final class AlKharidWarriorPlugin extends AbstractNPC {
 
 		@Override
 		public boolean handle(final Player player, final Node node, String option) {
-			GameWorld.submit(new Pulse(1, player) {
+			GameWorld.Pulser.submit(new Pulse(1, player) {
 				@Override
 				public boolean pulse() {
 					for (NPC n : RegionManager.getLocalNpcs(((NPC) node), 5)) {

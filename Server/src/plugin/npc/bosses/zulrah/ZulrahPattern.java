@@ -80,7 +80,7 @@ public class ZulrahPattern {
 		hp = zulrah.getSkills().getLifepoints();
 		final ZulrahSpot spot = getCurrentSpot();
 		zulrah.animate(ZulrahNPC.DOWN_ANIMATION);
-		GameWorld.submit(new Pulse(4, zulrah) {
+		GameWorld.Pulser.submit(new Pulse(4, zulrah) {
 			@Override
 			public boolean pulse() {
 				zulrah.transform(spot.getType().getNpcId());
@@ -103,7 +103,7 @@ public class ZulrahPattern {
 	 */
 	public void toxic(final ZulrahNPC zulrah) {
 		final ZulrahSpot spot = getCurrentSpot();
-		GameWorld.submit(new Pulse(5, zulrah) {
+		GameWorld.Pulser.submit(new Pulse(5, zulrah) {
 			int index = -1;
 			@Override
 			public boolean pulse() {
@@ -119,7 +119,7 @@ public class ZulrahPattern {
 					Projectile pp = Projectile.create(zulrah, null, ZulrahNPC.TOXIC_PROJECTILE, 100, 20, 30, 100);
 					pp.setEndLocation(loc);
 					pp.send();
-					GameWorld.submit(new Pulse(4, zulrah) {
+					GameWorld.Pulser.submit(new Pulse(4, zulrah) {
 						int count = 0;
 						@Override
 						public boolean pulse() {
@@ -163,7 +163,7 @@ public class ZulrahPattern {
 	 */
 	public void snakeling(final ZulrahNPC zulrah) {
 		final ZulrahSpot spot = getCurrentSpot();
-		GameWorld.submit(new Pulse(5, zulrah) {
+		GameWorld.Pulser.submit(new Pulse(5, zulrah) {
 			int index = -1;
 			@Override
 			public boolean pulse() {
@@ -178,7 +178,7 @@ public class ZulrahPattern {
 				Projectile snake =  Projectile.create(zulrah, null, ZulrahNPC.SNAKELING_PROJECTILE, 100, 20, 30, 100);
 				snake.setEndLocation(loc);
 				snake.send();
-				GameWorld.submit(new Pulse(4) {
+				GameWorld.Pulser.submit(new Pulse(4) {
 
 					@Override
 					public boolean pulse() {

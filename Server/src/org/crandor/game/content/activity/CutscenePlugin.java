@@ -74,7 +74,7 @@ public abstract class CutscenePlugin extends ActivityPlugin {
 		player.removeAttribute("real-end");
 		player.setAttribute("real-end", player.getLocation());
 		if (isFade()) {
-			GameWorld.submit(getStartPulse());
+			GameWorld.Pulser.submit(getStartPulse());
 		} else {
 			PacketRepository.send(MinimapState.class, new MinimapStateContext(player, getMapState()));
 			player.getInterfaceManager().hideTabs(getRemovedTabs());
@@ -117,7 +117,7 @@ public abstract class CutscenePlugin extends ActivityPlugin {
 	 */
 	public void stop(boolean fade) {
 		if (fade) {
-			GameWorld.submit(endPulse);
+			GameWorld.Pulser.submit(endPulse);
 		} else {
 			end();
 		}

@@ -317,7 +317,7 @@ public final class DesertGuardDialogue extends DialoguePlugin {
 				if (!TouristTrap.hasSlaveClothes(player)) {
 					player.setAttribute("guard-warning", GameWorld.getTicks() + 300);
 					player.lock();
-					GameWorld.submit(new Pulse(1, this, player) {
+					GameWorld.Pulser.submit(new Pulse(1, this, player) {
 						int count;
 
 						@Override

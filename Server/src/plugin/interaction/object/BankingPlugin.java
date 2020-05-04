@@ -382,7 +382,7 @@ public final class BankingPlugin extends OptionHandler {
 					}
 					if (amount > 0) {
 						final int withdraw = amount;
-						GameWorld.submit(new Pulse(1, p) {
+						GameWorld.Pulser.submit(new Pulse(1, p) {
 							@Override
 							public boolean pulse() {
 								if (item == null) {

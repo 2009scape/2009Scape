@@ -115,7 +115,7 @@ public final class CatapultRoom extends MapZone implements Plugin<Object> {
 		@Override
 		public boolean pulse() {
 			attack = RandomFunction.getRandomElement(CatapultAttack.values());
-			GameWorld.submit(new Pulse(7) {
+			GameWorld.Pulser.submit(new Pulse(7) {
 				@Override
 				public boolean pulse() {
 					for (Player p : players) {
@@ -234,7 +234,7 @@ public final class CatapultRoom extends MapZone implements Plugin<Object> {
 			if (!pulse.isRunning()) {
 				pulse.restart();
 				pulse.start();
-				GameWorld.submit(pulse);
+				GameWorld.Pulser.submit(pulse);
 			}
 		}
 		return super.enter(e);

@@ -302,7 +302,7 @@ public final class ElementalWizardNPC extends AbstractNPC {
 			player.graphics(Graphics.create(453));
 			player.lock(8);
 			player.getLocks().lockMovement(10000);
-			GameWorld.submit(new Pulse(12) {
+			GameWorld.Pulser.submit(new Pulse(12) {
 				@Override
 				public boolean pulse() {
 					player.getWalkingQueue().reset();

@@ -75,7 +75,7 @@ public class MonkeyBarShortcut extends AgilityShortcut {
 		final Direction dir = direct;
 		ForceMovement.run(player, start.transform(dir), start.transform(dir.getStepX() << 1, dir.getStepY() << 1, 0), Animation.create(742), Animation.create(744));
 		player.addExtension(LogoutTask.class, new LocationLogoutTask(5, start));
-		GameWorld.submit(new Pulse(2, player) {
+		GameWorld.Pulser.submit(new Pulse(2, player) {
 			int count;
 			boolean failed;
 

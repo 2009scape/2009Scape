@@ -126,7 +126,7 @@ public class DuelArea extends MapZone {
 		session.getOther().setAttribute("duel:ammo", new ArrayList<GroundItem>());
 		session.getPlayer().setAttribute("vengeance", false);
 		session.getOther().setAttribute("vengeance", false);
-		GameWorld.submit(new Pulse(4, session.getPlayer(), session.getOther()) {
+		GameWorld.Pulser.submit(new Pulse(4, session.getPlayer(), session.getOther()) {
 			int count;
 
 			@Override

@@ -56,7 +56,7 @@ public final class KolodionSession {
 			player.getAnimator().reset();
 			return;
 		}
-		GameWorld.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			int count;
 
 			@Override

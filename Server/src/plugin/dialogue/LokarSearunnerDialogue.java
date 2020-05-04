@@ -111,7 +111,7 @@ public class LokarSearunnerDialogue extends DialoguePlugin {
 	 */
 	private void travel(final Player player, final Location location) {
 		player.lock();
-		PulseRunner.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			int counter;
 
 			@Override

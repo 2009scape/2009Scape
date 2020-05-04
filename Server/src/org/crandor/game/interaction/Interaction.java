@@ -91,7 +91,7 @@ public class Interaction {
 			return;
 		}
 		player.getPulseManager().clear("interaction:" + option.getName() + ":" + node.hashCode());
-		GameWorld.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			@Override
 			public boolean pulse() {
 				if (player.getLocks().isInteractionLocked() || player.getZoneMonitor().interact(node, option)) {

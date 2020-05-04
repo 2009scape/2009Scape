@@ -261,7 +261,7 @@ public class ActionButtonPacket implements IncomingPacket {
 		case 95:
 			if (player.getAttribute("logging_in") != null) {
 				player.getInterfaceManager().close();
-				PulseRunner.submit(new Pulse(1, player) {
+				GameWorld.Pulser.submit(new Pulse(1, player) {
 					@Override
 					public boolean pulse() {
 						player.removeAttribute("logging_in");

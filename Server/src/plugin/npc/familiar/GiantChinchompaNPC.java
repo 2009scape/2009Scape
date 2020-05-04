@@ -64,7 +64,7 @@ public class GiantChinchompaNPC extends Familiar {
 		sendChat("Squeak!");
 		animate(Animation.create(7758));
 		graphics(Graphics.create(1364));
-		GameWorld.submit(new Pulse(3, owner, this) {
+		GameWorld.Pulser.submit(new Pulse(3, owner, this) {
 			@Override
 			public boolean pulse() {
 				for (Entity entity : entitys) {

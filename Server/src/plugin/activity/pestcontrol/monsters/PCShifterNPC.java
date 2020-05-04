@@ -143,7 +143,7 @@ public final class PCShifterNPC extends AbstractNPC {
 		entity.getWalkingQueue().reset();
 		entity.getLocks().lockMovement(2);
 		entity.lock(3);
-		GameWorld.submit(new Pulse(1, entity) {
+		GameWorld.Pulser.submit(new Pulse(1, entity) {
 			@Override
 			public boolean pulse() {
 				entity.animate(Animation.create(3904));

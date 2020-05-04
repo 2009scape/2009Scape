@@ -70,7 +70,7 @@ public final class GertrudeCatUsePlugin extends UseWithHandler {
 			if (player.getInventory().remove(event.getUsedItem())) {
 				quest.setStage(player, 60);
 				player.lock(5);
-				GameWorld.submit(new Pulse(1) {
+				GameWorld.Pulser.submit(new Pulse(1) {
 					int count = 0;
 					final NPC kitten = NPC.create(761, player.getLocation());
 

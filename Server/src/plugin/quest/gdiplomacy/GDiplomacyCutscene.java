@@ -448,7 +448,7 @@ public final class GDiplomacyCutscene extends CutscenePlugin {
 		 */
 		public void sendGrubFoot(final GrubFoot grubFoot, final int endStage) {
 			Pathfinder.find(grubfoot, grubfoot.getLocation().transform(-4, 0, 0)).walk(grubfoot);
-			GameWorld.submit(new Pulse(1, player) {
+			GameWorld.Pulser.submit(new Pulse(1, player) {
 				int counter;
 
 				@Override

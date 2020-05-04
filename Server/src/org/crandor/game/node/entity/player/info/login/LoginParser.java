@@ -106,7 +106,7 @@ public final class LoginParser implements Runnable {
 		}
 		PlayerParser.parse(player);
 		Repository.getPlayerNames().put(player.getName(), player);
-		GameWorld.submit(new Pulse(1) {
+		GameWorld.Pulser.submit(new Pulse(1) {
 			@Override
 			public boolean pulse() {
 				try {
@@ -160,7 +160,7 @@ public final class LoginParser implements Runnable {
 		player.getConfigManager().init();
 		LoginConfiguration.configureGameWorld(player);
 		Repository.getPlayerNames().put(player.getName(), player);
-		GameWorld.submit(new Pulse(1) {
+		GameWorld.Pulser.submit(new Pulse(1) {
 			@Override
 			public boolean pulse() {
 				if (!Repository.getPlayers().contains(player)) {

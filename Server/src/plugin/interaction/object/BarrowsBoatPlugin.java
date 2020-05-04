@@ -33,7 +33,7 @@ public class BarrowsBoatPlugin extends OptionHandler {
 			final String name = node.getId() == 6970 ? "Mort'on." : "the swamp";
 			player.lock();
 			player.getInterfaceManager().open(new Component(321));
-			GameWorld.submit(new Pulse(7, player) {
+			GameWorld.Pulser.submit(new Pulse(7, player) {
 
 				@Override
 				public boolean pulse() {

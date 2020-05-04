@@ -47,7 +47,7 @@ public final class DarkZone extends MapZone {
 					return false;
 				}
 			};
-			GameWorld.submit(pulse);
+			GameWorld.Pulser.submit(pulse);
 			player.addExtension(DarkZone.class, pulse);
 			super.open(player);
 		}

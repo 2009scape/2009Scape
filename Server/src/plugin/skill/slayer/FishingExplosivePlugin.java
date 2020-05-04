@@ -116,7 +116,7 @@ public final class FishingExplosivePlugin extends OptionHandler {
 			player.animate(ANIMATION);
 			player.getPacketDispatch().sendMessage("You hurl the shuddering vial into the water...");
 			sendProjectile(player, (GameObject) event.getUsedWith());
-			GameWorld.submit(new Pulse(delay, player) {
+			GameWorld.Pulser.submit(new Pulse(delay, player) {
 				@Override
 				public boolean pulse() {
 					Direction dir = event.getUsedWith().getDirection();

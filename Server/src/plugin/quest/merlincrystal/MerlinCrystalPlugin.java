@@ -86,7 +86,7 @@ public final class MerlinCrystalPlugin extends OptionHandler {
 				final NPC merlin = NPC.create(249, Location.create(2767, 3493, 2));
 				merlin.init();
 				player.getDialogueInterpreter().open(merlin.getId(), merlin);
-				GameWorld.submit(new Pulse(100, player, merlin) {
+				GameWorld.Pulser.submit(new Pulse(100, player, merlin) {
 
 					@Override
 					public boolean pulse() {

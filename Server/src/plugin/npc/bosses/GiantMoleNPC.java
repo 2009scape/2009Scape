@@ -119,7 +119,7 @@ public final class GiantMoleNPC extends AbstractNPC {
 			dest = DIG_LOCATIONS[(index + 1) % DIG_LOCATIONS.length];
 		}
 		final Location destination = dest;
-		GameWorld.submit(new Pulse(1, this) {
+		GameWorld.Pulser.submit(new Pulse(1, this) {
 			int count = 0;
 			Location hole;
 
@@ -274,7 +274,7 @@ public final class GiantMoleNPC extends AbstractNPC {
 			public boolean handle(final Player player, Node node, String option) {
 				player.animate(Animation.create(828));
 				player.lock(2);
-				GameWorld.submit(new Pulse(1, player) {
+				GameWorld.Pulser.submit(new Pulse(1, player) {
 					@Override
 					public boolean pulse() {
 						player.getProperties().setTeleportLocation(Location.create(2985, 3316, 0));

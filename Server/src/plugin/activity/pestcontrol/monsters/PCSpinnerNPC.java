@@ -102,7 +102,7 @@ public final class PCSpinnerNPC extends AbstractNPC {
 			p.setAttribute("/save:poison_damage", 18);
 			p.getStateManager().register(EntityState.POISONED, false, 18, this);
 		}
-		GameWorld.submit(new Pulse(1, this) {
+		GameWorld.Pulser.submit(new Pulse(1, this) {
 			@Override
 			public boolean pulse() {
 				clear();

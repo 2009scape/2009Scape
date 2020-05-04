@@ -128,7 +128,7 @@ public final class AIPCommandPlugin extends CommandPlugin {
                             player.getCommunication().getClan().getClanWar().fireEvent("join", aip);
                         }
                     }
-                    PulseRunner.submit(new Pulse(1) {
+                    GameWorld.Pulser.submit(new Pulse(1) {
                         @Override
                         public boolean pulse() {
                             aip.follow(l);

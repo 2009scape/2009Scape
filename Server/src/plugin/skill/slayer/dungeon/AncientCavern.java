@@ -68,7 +68,7 @@ public final class AncientCavern extends MapZone implements Plugin<Object> {
 			@Override
 			public boolean handle(final Player player, Node node, String option) {
 				AgilityHandler.forceWalk(player, -1, player.getLocation(), player.getLocation().transform(0, -6, 0), Animation.create(6723), 10, 0.0, null);
-				GameWorld.submit(new Pulse(1, player) {
+				GameWorld.Pulser.submit(new Pulse(1, player) {
 					int count;
 
 					@Override
@@ -128,7 +128,7 @@ public final class AncientCavern extends MapZone implements Plugin<Object> {
 		player.removeAttribute("canClose");
 		player.lock(14);
 		player.getImpactHandler().setDisabledTicks(14);
-		GameWorld.submit(new Pulse(1) {
+		GameWorld.Pulser.submit(new Pulse(1) {
 			int count = 0;
 
 			@Override
@@ -209,7 +209,7 @@ public final class AncientCavern extends MapZone implements Plugin<Object> {
 	 */
 	private void removeSkeleton(final GameObject object, final NPC spawn) {
 		ObjectBuilder.remove(object);
-		GameWorld.submit(new Pulse(200) {
+		GameWorld.Pulser.submit(new Pulse(200) {
 			@Override
 			public boolean pulse() {
 				if (spawn != null && spawn.isActive()) {

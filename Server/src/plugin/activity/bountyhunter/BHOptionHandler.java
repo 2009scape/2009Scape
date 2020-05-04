@@ -58,7 +58,7 @@ public final class BHOptionHandler extends OptionHandler {
 				return true;
 			}
 			player.lock(2);
-			GameWorld.submit(new Pulse(1) {
+			GameWorld.Pulser.submit(new Pulse(1) {
 				@Override
 				public boolean pulse() {
 					player.getProperties().setTeleportLocation(activity.getType().getExitLocation());

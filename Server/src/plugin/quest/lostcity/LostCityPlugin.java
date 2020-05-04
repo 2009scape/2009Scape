@@ -128,7 +128,7 @@ public final class LostCityPlugin extends OptionHandler {
 		}
 		SHAMUS.setInvisible(false);
 		SHAMUS.getProperties().setTeleportLocation(SHAMUS.getProperties().getSpawnLocation());
-		GameWorld.submit(new Pulse(100, SHAMUS) {
+		GameWorld.Pulser.submit(new Pulse(100, SHAMUS) {
 			@Override
 			public boolean pulse() {
 				if (SHAMUS.getDialoguePlayer() != null) {

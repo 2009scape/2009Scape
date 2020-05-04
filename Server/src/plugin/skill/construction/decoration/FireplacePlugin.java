@@ -11,7 +11,7 @@ import org.crandor.game.node.object.GameObject;
 import org.crandor.game.node.object.ObjectBuilder;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
-import org.crandor.game.world.PulseRunner;
+import org.crandor.game.node.entity.impl.PulseManager;
 import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.plugin.Plugin;
@@ -46,7 +46,7 @@ public final class FireplacePlugin extends OptionHandler {
 		final GameObject obj = (GameObject) node.asObject();
 		player.lock(2);
 		player.animate(ANIMATION);
-		PulseRunner.submit(new Pulse(2, player) {
+		GameWorld.Pulser.submit(new Pulse(2, player) {
 			@Override
 			public boolean pulse() {
 				if (!obj.isActive()) {

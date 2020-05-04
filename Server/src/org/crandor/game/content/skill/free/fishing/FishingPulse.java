@@ -106,7 +106,7 @@ public final class FishingPulse extends SkillPulse<NPC> {
 	public void animate() {
 		if (isBareHanded(player)) {
 			player.animate(new Animation(6709));
-			GameWorld.submit(new Pulse(1) {
+			GameWorld.Pulser.submit(new Pulse(1) {
 				int counter = 0;
 
 				@Override

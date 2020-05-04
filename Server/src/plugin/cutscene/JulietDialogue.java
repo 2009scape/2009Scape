@@ -141,7 +141,7 @@ public final class JulietDialogue extends DialoguePlugin {
 			break;
 		case 2003:
 			close();
-			GameWorld.submit(new Pulse(1) {
+			GameWorld.Pulser.submit(new Pulse(1) {
 				int counter = 0;
 
 				@Override
@@ -163,7 +163,7 @@ public final class JulietDialogue extends DialoguePlugin {
 		case 2004:
 			close();
 			npc.animate(new Animation(836));
-			GameWorld.submit(new Pulse(1) {
+			GameWorld.Pulser.submit(new Pulse(1) {
 				int counter = 0;
 
 				@Override

@@ -109,7 +109,7 @@ public final class SmokeDungeon extends MapZone implements Plugin<Object> {
 			if (!pulse.isRunning()) {
 				pulse.restart();
 				pulse.start();
-				GameWorld.submit(pulse);
+				GameWorld.Pulser.submit(pulse);
 			}
 			p.getInterfaceManager().openOverlay(new Component(118));
 		}

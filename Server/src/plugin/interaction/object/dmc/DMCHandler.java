@@ -158,7 +158,7 @@ public final class DMCHandler {
 		}
 		firingPulse.restart();
 		firingPulse.start();
-		GameWorld.submit(firingPulse);
+		GameWorld.Pulser.submit(firingPulse);
 	}
 
 	/**
@@ -198,7 +198,7 @@ public final class DMCHandler {
 		player.getWalkingQueue().reset();
 		player.lock(9);
 		player.faceLocation(spawn.transform(Direction.NORTH_EAST));
-		GameWorld.submit(new Pulse(2, player) {
+		GameWorld.Pulser.submit(new Pulse(2, player) {
 			int count = 0;
 			GameObject object = null;
 
@@ -247,7 +247,7 @@ public final class DMCHandler {
 				if (!player.getDetails().getShop().hasPerk(Perks.DWARF_BEFRIENDER)) {
 					handler.decayPulse.restart();
 					handler.decayPulse.start();
-					GameWorld.submit(handler.decayPulse);
+					GameWorld.Pulser.submit(handler.decayPulse);
 				}
 				ObjectBuilder.remove(object);
 				ObjectBuilder.add(object = object.transform(object.getId() + 1));

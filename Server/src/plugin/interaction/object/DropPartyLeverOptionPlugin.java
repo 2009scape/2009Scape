@@ -37,7 +37,7 @@ public final class DropPartyLeverOptionPlugin extends OptionHandler {
 		player.lock(2);
 		player.faceLocation(object.getLocation());
 		player.getDialogueInterpreter().open(1 << 16 | 2);
-		GameWorld.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			@Override
 			public boolean pulse() {
 				player.animate(ANIMATION);

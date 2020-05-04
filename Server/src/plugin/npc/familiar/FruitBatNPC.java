@@ -64,7 +64,7 @@ public class FruitBatNPC extends Forager {
 		graphics(new Graphics(1331), 4);
 		owner.setAttribute("fruit-bat", GameWorld.getTicks() + 5);
 		lock(4);
-		GameWorld.submit(new Pulse(4, this) {
+		GameWorld.Pulser.submit(new Pulse(4, this) {
 			@Override
 			public boolean pulse() {
 				for (int i = 0; i < fruitAmount; i++) {

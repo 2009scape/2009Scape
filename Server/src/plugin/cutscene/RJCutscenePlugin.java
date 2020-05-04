@@ -677,7 +677,7 @@ public final class RJCutscenePlugin extends CutscenePlugin {
 				rot = new CameraContext(player, CameraType.ROTATION, x - 1, y - 2, height, other, speed);
 				PacketRepository.send(CameraViewPacket.class, pos);
 				PacketRepository.send(CameraViewPacket.class, rot);
-				GameWorld.submit(new Pulse(5) {
+				GameWorld.Pulser.submit(new Pulse(5) {
 					@Override
 					public boolean pulse() {
 						int x = player.getLocation().getX();
@@ -715,7 +715,7 @@ public final class RJCutscenePlugin extends CutscenePlugin {
 				close();
 				npc.getWalkingQueue().reset();
 				npc.getWalkingQueue().addPath(cutscene.getBase().transform(19, 35, 0).getX(), cutscene.getBase().transform(19, 35, 0).getY());
-				GameWorld.submit(new Pulse(12) {
+				GameWorld.Pulser.submit(new Pulse(12) {
 					@Override
 					public boolean pulse() {
 						interpreter.sendDialogues(npc, null, "Hey...Juliet...");

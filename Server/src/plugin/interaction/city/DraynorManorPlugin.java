@@ -162,7 +162,7 @@ public final class DraynorManorPlugin extends OptionHandler {
 		}
 		final Location destination = dest;
 		if (object.getId() == 160) {
-			GameWorld.submit(new Pulse(1, player) {
+			GameWorld.Pulser.submit(new Pulse(1, player) {
 				int counter = 0;
 
 				@Override
@@ -202,7 +202,7 @@ public final class DraynorManorPlugin extends OptionHandler {
 			});
 			return;
 		}
-		GameWorld.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			int count = 0;
 
 			@Override

@@ -65,7 +65,7 @@ public class ShopSQLHandler extends SQLEntryHandler<Object> {
 			parseShop(set);
 		}
 		SQLManager.close(statement.getConnection());
-		GameWorld.submit(new Pulse(100) {
+		GameWorld.Pulser.submit(new Pulse(100) {
 
 			@Override
 			public boolean pulse() {

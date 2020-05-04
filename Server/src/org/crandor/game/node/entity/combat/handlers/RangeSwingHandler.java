@@ -382,7 +382,7 @@ public class RangeSwingHandler extends CombatSwingHandler {
 		victim.getImpactHandler().handleImpact(entity, hit, CombatStyle.RANGE, state);
 		if (state.getSecondaryHit() > -1) {
 			final int hitt = state.getSecondaryHit();
-			GameWorld.submit(new Pulse(1, victim) {
+			GameWorld.Pulser.submit(new Pulse(1, victim) {
 				@Override
 				public boolean pulse() {
 					victim.getImpactHandler().handleImpact(entity, hitt, CombatStyle.RANGE, state);

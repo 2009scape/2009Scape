@@ -39,7 +39,7 @@ public class CombatTabInterface extends ComponentPlugin {
 		case 24:
 		case 26:
 		case 27:
-			GameWorld.submit(new Pulse(1, p) {
+			GameWorld.Pulser.submit(new Pulse(1, p) {
 				@Override
 				public boolean pulse() {
 					p.getSettings().toggleRetaliating();
@@ -51,7 +51,7 @@ public class CombatTabInterface extends ComponentPlugin {
 		case 10:
 		case 8:
 		case 85:
-			GameWorld.submit(new Pulse(1, p) {
+			GameWorld.Pulser.submit(new Pulse(1, p) {
 				@Override
 				public boolean pulse() {
 					WeaponInterface inter = p.getExtension(WeaponInterface.class);

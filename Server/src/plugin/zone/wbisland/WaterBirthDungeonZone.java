@@ -101,7 +101,7 @@ public final class WaterBirthDungeonZone extends MapZone implements Plugin<Objec
 					}
 					npc.setAttribute("transforming", GameWorld.getTicks() + 3);
 				}
-				GameWorld.submit(new Pulse(1) {
+				GameWorld.Pulser.submit(new Pulse(1) {
 					int counter;
 
 					@Override
@@ -124,7 +124,7 @@ public final class WaterBirthDungeonZone extends MapZone implements Plugin<Objec
 								spawn.attack(p);
 								spawns.add(spawn);
 							}
-							GameWorld.submit(new Pulse(GameWorld.getSettings().isDevMode() ? 10 : 45) {
+							GameWorld.Pulser.submit(new Pulse(GameWorld.getSettings().isDevMode() ? 10 : 45) {
 
 								@Override
 								public boolean pulse() {

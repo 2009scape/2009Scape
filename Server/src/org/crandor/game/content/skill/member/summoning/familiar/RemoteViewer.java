@@ -82,7 +82,7 @@ public final class RemoteViewer {
 		player.lock();
 		familiar.animate(animation);
 		player.getPacketDispatch().sendMessage("You send the " + familiar.getName().toLowerCase() + " to fly " + (type == ViewType.STRAIGHT_UP ? "directly up" : "to the " + type.name().toLowerCase()) + "...");
-		GameWorld.submit(new Pulse(5) {
+		GameWorld.Pulser.submit(new Pulse(5) {
 			@Override
 			public boolean pulse() {
 				view();
@@ -102,7 +102,7 @@ public final class RemoteViewer {
 			return;
 		}
 		sendCamera(type.getXOffset(), type.getYOffset(), type.getXRot(), type.getYRot());
-		GameWorld.submit(new Pulse(13) {
+		GameWorld.Pulser.submit(new Pulse(13) {
 			@Override
 			public boolean pulse() {
 				reset();

@@ -216,7 +216,7 @@ public class DwarfCannonPlugin extends OptionHandler {
 		player.sendMessages("You search the crate...", "Inside you see a dwarf child, tied up!", "You untie the child.");
 		lollk.setInvisible(false);
 		lollk.sendChat("Hooray!");
-		GameWorld.submit(new Pulse(150, lollk) {
+		GameWorld.Pulser.submit(new Pulse(150, lollk) {
 
 			@Override
 			public boolean pulse() {
@@ -303,7 +303,7 @@ public class DwarfCannonPlugin extends OptionHandler {
 				player.getConfigManager().set(0, 8, true);
 				player.getQuestRepository().getQuest(DwarfCannon.NAME).setStage(player, 60);
 				player.sendMessage("Well done! You've fixed the cannon! Better go and tell Captain Lawgof.");
-				GameWorld.submit(new Pulse(5, player) {
+				GameWorld.Pulser.submit(new Pulse(5, player) {
 					@Override
 					public boolean pulse() {
 						player.getInterfaceManager().close();

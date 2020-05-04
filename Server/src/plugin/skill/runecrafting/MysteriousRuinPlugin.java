@@ -71,7 +71,7 @@ public final class MysteriousRuinPlugin extends UseWithHandler {
 		player.animate(ANIMATION);
 		player.getPacketDispatch().sendMessage("You hold the " + event.getUsedItem().getName() + " towards the mysterious ruins.");
 		player.getPacketDispatch().sendMessage("You feel a powerful force take hold of you.");
-		PulseRunner.submit(new Pulse(3, player) {
+		GameWorld.Pulser.submit(new Pulse(3, player) {
 			@Override
 			public boolean pulse() {
 				player.getProperties().setTeleportLocation(ruin.getEnd());

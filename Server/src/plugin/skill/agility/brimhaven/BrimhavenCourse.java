@@ -40,7 +40,7 @@ public final class BrimhavenCourse extends OptionHandler {
 				return true;
 			}
 			AgilityHandler.forceWalk(player, -1, start, end, Animation.create(751), 25, getExp(player, 20.0), null);
-			GameWorld.submit(new Pulse(1, player) {
+			GameWorld.Pulser.submit(new Pulse(1, player) {
 				boolean finish;
 
 				@Override
@@ -124,7 +124,7 @@ public final class BrimhavenCourse extends OptionHandler {
 		player.getAppearance().sync();
 		AgilityHandler.climb(player, -1, new Animation(1117 + m), start.transform(dir), 0.0, null);
 		player.addExtension(LogoutTask.class, new LocationLogoutTask(22, start));
-		GameWorld.submit(new Pulse(3, player) {
+		GameWorld.Pulser.submit(new Pulse(3, player) {
 			Location last = start.transform(dir);
 			int count;
 
@@ -162,7 +162,7 @@ public final class BrimhavenCourse extends OptionHandler {
 		if (failed) {
 			Location end = player.getLocation().transform(dir);
 			AgilityHandler.forceWalk(player, -1, player.getLocation(), end, Animation.create(762), 10, 0.0, null);
-			GameWorld.submit(new Pulse(2, player) {
+			GameWorld.Pulser.submit(new Pulse(2, player) {
 				@Override
 				public boolean pulse() {
 					Direction d = Direction.get((dir.toInteger() + 3) % 4);
@@ -187,7 +187,7 @@ public final class BrimhavenCourse extends OptionHandler {
 		final Location start = player.getLocation();
 		ForceMovement.run(player, start.transform(dir), start.transform(dir.getStepX() << 1, dir.getStepY() << 1, 0), Animation.create(742), Animation.create(744));
 		player.addExtension(LogoutTask.class, new LocationLogoutTask(5, start));
-		GameWorld.submit(new Pulse(2, player) {
+		GameWorld.Pulser.submit(new Pulse(2, player) {
 			boolean failed;
 			int count;
 
@@ -230,7 +230,7 @@ public final class BrimhavenCourse extends OptionHandler {
 		double xp = 0.0;
 		if (AgilityHandler.hasFailed(player, 1, 0.15)) {
 			player.lock(3);
-			GameWorld.submit(new Pulse(2, player) {
+			GameWorld.Pulser.submit(new Pulse(2, player) {
 				@Override
 				public boolean pulse() {
 					Direction d = Direction.get((dir.toInteger() + 1) % 4);
@@ -258,7 +258,7 @@ public final class BrimhavenCourse extends OptionHandler {
 		if (object.getCharge() == 500) { // Plank is broken
 			player.lock(7);
 			AgilityHandler.walk(player, -1, start, start.transform(dir.getStepX() * 2, dir.getStepY() * 2, 0), new Animation(1426), 0.0, null);
-			GameWorld.submit(new Pulse(3) {
+			GameWorld.Pulser.submit(new Pulse(3) {
 				boolean finish;
 
 				@Override
@@ -290,7 +290,7 @@ public final class BrimhavenCourse extends OptionHandler {
 		final Location start = player.getLocation();
 		player.addExtension(LogoutTask.class, new LocationLogoutTask(12, start));
 		player.lock(12);
-		GameWorld.submit(new Pulse(2, player) {
+		GameWorld.Pulser.submit(new Pulse(2, player) {
 			int count = 0;
 
 			@Override
@@ -319,7 +319,7 @@ public final class BrimhavenCourse extends OptionHandler {
 		if (failed) {
 			Location end = player.getLocation().transform(dir);
 			AgilityHandler.forceWalk(player, -1, player.getLocation(), end, Animation.create(762), 10, 0.0, null);
-			GameWorld.submit(new Pulse(2, player) {
+			GameWorld.Pulser.submit(new Pulse(2, player) {
 				@Override
 				public boolean pulse() {
 					Direction d = Direction.get((dir.toInteger() + 3) % 4);

@@ -103,7 +103,7 @@ public final class GnomeSpiritTreeDialogue extends DialoguePlugin {
 	 */
 	private void sendTeleport(final Player player, final Location location) {
 		end();
-		PulseRunner.submit(new Pulse(1, player) {
+		GameWorld.Pulser.submit(new Pulse(1, player) {
 			int loop;
 
 			@Override

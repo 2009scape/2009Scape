@@ -100,7 +100,7 @@ public class LTRDragonFightCutscene extends CutscenePlugin {
     public void open() {
         ZoneBuilder.configure(CellarMapZone.get());
         setNpcs();
-        GameWorld.submit(fightPulse);
+        GameWorld.Pulser.submit(fightPulse);
         player.lock();
         player.getLocks().lockMovement(1000000);
         camera(31, 12, -45, 0, 300, 95);
@@ -314,7 +314,7 @@ public class LTRDragonFightCutscene extends CutscenePlugin {
      * Method used to clear all the npcs.
      */
     private void clearNpcs() {
-        GameWorld.submit(new Pulse(5) {
+        GameWorld.Pulser.submit(new Pulse(5) {
             @Override
             public boolean pulse() {
                 for (NPC n : region.getPlanes()[0].getNpcs()) {

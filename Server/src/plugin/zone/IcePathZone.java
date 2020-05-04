@@ -60,7 +60,7 @@ public final class IcePathZone extends MapZone implements Plugin<Object> {
 				}
 			};
 			player.setAttribute("ice_path_pulse", pulse);
-			GameWorld.submit(pulse);
+			GameWorld.Pulser.submit(pulse);
 		}
 		return true;
 	}

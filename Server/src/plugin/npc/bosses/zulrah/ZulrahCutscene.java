@@ -55,7 +55,7 @@ public class ZulrahCutscene extends CutscenePlugin {
 		PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.POSITION, x, y,  630, 1, 100));
 		PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.ROTATION, x + 3, y + 3, 630, 1, 100));
 		player.unlock();
-		GameWorld.submit(new Pulse(6, player) {
+		GameWorld.Pulser.submit(new Pulse(6, player) {
 			@Override
 			public boolean pulse() {
 				PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.RESET, player.getLocation().getX(), player.getLocation().getY(),  630, 1, 100));

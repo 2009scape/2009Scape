@@ -6,7 +6,7 @@ import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
-import org.crandor.game.world.PulseRunner;
+import org.crandor.game.node.entity.impl.PulseManager;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.game.world.map.Location;
 
@@ -135,7 +135,7 @@ public class SorcceresDialouge extends DialoguePlugin {
 	public void tele() {
 		npc.sendChat("Be gone intruder!");
 		player.lock();
-		PulseRunner.submit(new Pulse(2, player) {
+		GameWorld.Pulser.submit(new Pulse(2, player) {
 			@Override
 			public boolean pulse() {
 				player.unlock();

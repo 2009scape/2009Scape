@@ -133,7 +133,7 @@ public final class DraynorNodePlugin extends OptionHandler {
 			PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.POSITION, x, y, height, 1, 2));
 			PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.ROTATION, x - 1, y + 230, height, 1, 1));
 			player.getInterfaceManager().open(INTERFACE);
-			GameWorld.submit(new Pulse(22, player) {
+			GameWorld.Pulser.submit(new Pulse(22, player) {
 				@Override
 				public boolean pulse() {
 					TelescopeCutscene.this.stop(true);

@@ -192,7 +192,7 @@ public final class CorporealBeastNPC extends AbstractNPC {
 			npc.darkEnergyCore = NPC.create(8127, l, npc);
 			npc.darkEnergyCore.setActive(true);
 			Projectile.create(npc.getLocation().transform(2, 2, 0), l, 1828, 60, 0, 0, 60, 20, 0).send();
-			GameWorld.submit(new Pulse(2, npc) {
+			GameWorld.Pulser.submit(new Pulse(2, npc) {
 				@Override
 				public boolean pulse() {
 					npc.darkEnergyCore.init();
@@ -210,7 +210,7 @@ public final class CorporealBeastNPC extends AbstractNPC {
 			entity.animate(current.getAnimation());
 			Projectile.create(entity, null, 1824, 60, 0, 41, 0).transform(entity, location, true, 46, 10).send();
 			int ticks = 1 + (int) Math.ceil(entity.getLocation().getDistance(location) * 0.5);
-			GameWorld.submit(new Pulse(ticks) {
+			GameWorld.Pulser.submit(new Pulse(ticks) {
 				boolean secondStage = false;
 				List<Player> players = RegionManager.getLocalPlayers(entity);
 				Location[] locations = null;

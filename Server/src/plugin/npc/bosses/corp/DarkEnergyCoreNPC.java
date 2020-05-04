@@ -106,7 +106,7 @@ public final class DarkEnergyCoreNPC extends AbstractNPC {
 	private void jump(final Location location) {
 		setInvisible(true);
 		Projectile.create(getLocation(), location, 1828, 0, 0, 0, 60, 20, 0).send();
-		GameWorld.submit(new Pulse(2, this) {
+		GameWorld.Pulser.submit(new Pulse(2, this) {
 			@Override
 			public boolean pulse() {
 				getProperties().setTeleportLocation(location);

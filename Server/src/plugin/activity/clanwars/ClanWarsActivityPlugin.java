@@ -136,7 +136,7 @@ public final class ClanWarsActivityPlugin extends ActivityPlugin {
 			offset = (offset + 1) % 3;
 			ObjectBuilder.add(new GameObject(28174 + offset, base.transform(x, 64, 0)));
 		}
-		GameWorld.submit(pulse = new Pulse(200) {
+		GameWorld.Pulser.submit(pulse = new Pulse(200) {
 			@Override
 			public boolean pulse() {
 				for (int x = 5; x < 54; x++) {
@@ -148,7 +148,7 @@ public final class ClanWarsActivityPlugin extends ActivityPlugin {
 						RegionManager.getRegionChunk(l).flag(new AnimateObjectUpdateFlag(anim));
 					}
 				}
-				GameWorld.submit(new Pulse(5) {
+				GameWorld.Pulser.submit(new Pulse(5) {
 					@Override
 					public boolean pulse() {
 						for (int x = 5; x < 54; x++) {
