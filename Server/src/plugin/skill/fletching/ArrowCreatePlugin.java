@@ -36,7 +36,17 @@ public class ArrowCreatePlugin extends UseWithHandler {
 
 	@Override
 	public Plugin<Object> newInstance(Object arg) throws Throwable {
-		addHandler(52, ITEM_TYPE, this);
+		// Feathers plus colored feathers
+		addHandler(314, ITEM_TYPE, this);
+		addHandler(10087, ITEM_TYPE, this);
+		addHandler(10088, ITEM_TYPE, this);
+		addHandler(10089, ITEM_TYPE, this);
+		addHandler(10090, ITEM_TYPE, this);
+		addHandler(10091, ITEM_TYPE, this);
+
+		// Headless Arrows
+		addHandler(53, ITEM_TYPE, this);
+		// Arrow heads
 		for (Fletching.ArrowHeads head : Fletching.ArrowHeads.values()) {
 			addHandler(head.unfinished, ITEM_TYPE, this);
 		}
@@ -46,26 +56,44 @@ public class ArrowCreatePlugin extends UseWithHandler {
 	@Override
 	public boolean handle(final NodeUsageEvent event) {
 		event.getPlayer().debug("Trying to handle: " + event.getUsedItem() + " with " + event.getUsedWith());
-		final Fletching.ArrowHeads head = Fletching.arrowHeadMap.get((event.getUsedItem().getName().contains("tip") || event.getUsedItem().getName().contains("head")) ? event.getUsedItem().getId() : event.getUsedWith().asItem().getId());
 		final Player player = event.getPlayer();
-		SkillDialogueHandler handler = new SkillDialogueHandler(player, SkillDialogue.ONE_OPTION, head == null ? HEADLESS_ARROW : head.getFinished()) {
+		// If the player uses a feather on headless arrows, do headless arrow crafting
+		int itemID = event.getUsedItem().getId();
+		int otherID = event.getUsedWith().getId();
+		// If the item used was feathers and the target was arrow shafts
+		if ( ((itemID == 314 || (itemID >= 10087 && itemID <= 10091) && otherID == 52)) ||
+				// Or if the target was feathers and the item used was arrow shafts
+				((otherID == 314 || (otherID >= 10087 && otherID <= 10091) && itemID == 52))) {
+			// Creating headless arrows
+			SkillDialogueHandler handler = new SkillDialogueHandler(player, SkillDialogue.ONE_OPTION, HEADLESS_ARROW) {
+				@Override
+				public void create(final int amount, int index) {
+					player.getPulseManager().run(new HeadlessArrowPulse(player, event.getUsedItem(), amount));
+				}
+				@Override
+				public int getAll(int index) {
+					return player.getInventory().getAmount(HEADLESS_ARROW);
+				}
+			};
+			handler.open();
+			PacketRepository.send(RepositionChild.class, new ChildPositionContext(player, 309, 2, 210, 10));
+			return true;
+		}
+		// Otherwise, fletch normally
+		final Fletching.ArrowHeads head = Fletching.arrowHeadMap.get((event.getUsedItem().getName().contains("tip") || event.getUsedItem().getName().contains("head")) ? event.getUsedItem().getId() : event.getUsedWith().asItem().getId());
+		SkillDialogueHandler handler = new SkillDialogueHandler(player, SkillDialogue.ONE_OPTION, head.getFinished()) {
 			@Override
 			public void create(final int amount, int index) {
-				if (head == null) {
-					player.getPulseManager().run(new HeadlessArrowPulse(player, event.getUsedItem(), amount));
-				} else{
-					player.getPulseManager().run(new ArrowHeadPulse(player, event.getUsedItem(), head, amount));
-				}
+				player.getPulseManager().run(new ArrowHeadPulse(player, event.getUsedItem(), head, amount));
 			}
-
 			@Override
 			public int getAll(int index) {
-				return player.getInventory().getAmount(head == null ? HEADLESS_ARROW : head.getUnfinished());
+				return player.getInventory().getAmount(head.getUnfinished());
 			}
-
 		};
 		handler.open();
 		PacketRepository.send(RepositionChild.class, new ChildPositionContext(player, 309, 2, 210, 10));
+
 		return true;
 	}
 
