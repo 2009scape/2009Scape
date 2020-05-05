@@ -86,7 +86,7 @@ public final class Skills {
 	/**
 	 * The total experience gained.
 	 */
-	private int experienceGained = 0;
+	private double experienceGained = 0;
 
 	/**
 	 * The restoration pulses.
@@ -214,7 +214,7 @@ public final class Skills {
 			return;
 		}
 		boolean hadMax = this.experience[slot] != 200000000;
-		double experienceAdd = (int) (experience * mod);
+		double experienceAdd = (experience * mod);
 		//check if a player has brawling gloves and, if equipped, modify xp
 		if(!player.getBrawlingGlovesManager().GloveCharges.isEmpty()){
 			Item gloves = BrawlingGloves.forSkill(slot) == null ? null : new Item(BrawlingGloves.forSkill(slot).getId());
@@ -239,7 +239,7 @@ public final class Skills {
 				this.experience[slot] = 175;
 			}
 		}
-		experienceGained = experienceGained + (int) experienceAdd;
+		experienceGained += experienceAdd;
 		int newLevel = getStaticLevelByExperience(slot);
 		if (newLevel > staticLevels[slot]) {
 			int amount = newLevel - staticLevels[slot];
@@ -393,7 +393,7 @@ public final class Skills {
 			}
 			buffer.put((byte) staticLevels[i]);
 		}
-		buffer.putInt(experienceGained);
+		buffer.putInt((int) experienceGained);
 	}
 
 	public void saveExpRate(ByteBuffer buffer) {
@@ -525,7 +525,7 @@ public final class Skills {
 	 * Sets the experience gained.
 	 * @param experienceGained The experience gained.
 	 */
-	public void setExperienceGained(int experienceGained) {
+	public void setExperienceGained(double experienceGained) {
 		this.experienceGained = experienceGained;
 	}
 
@@ -533,7 +533,7 @@ public final class Skills {
 	 * Gets the experience gained.
 	 * @return The experience gained.
 	 */
-	public int getExperienceGained() {
+	public double getExperienceGained() {
 		return experienceGained;
 	}
 
