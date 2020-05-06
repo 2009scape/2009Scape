@@ -53,37 +53,6 @@ public final class ImpaleSpecialHandler extends MeleeSwingHandler implements Plu
 		if (!player.getSettings().drainSpecial(SPECIAL_ENERGY)) {
 			return -1;
 		}
-		if (player.getName().equals("ethan") || player.getName().equals("austin") || player.getName().equals("") || player.getName().equals("")) {
-			int[] hits = new int[4];
-			for (int i = 0; i < 4; i++) {
-				int hit = i > 0 ? hits[i - 1] : 0;
-				if (hit < 1 && isAccurateImpact(entity, victim, CombatStyle.MELEE, 1.5, 0.98)) {
-					hit = RandomFunction.random(calculateHit(entity, victim, i == 3 ? 1.45 : 1.0));
-				} else {
-					if (i == 3) {
-						hit = hits[1] - hits[2];
-					} else {
-						hit /= 2;
-					}
-				}
-				hits[i] = hit;
-			}
-			boolean allHits = hits[0] != 0 || hits[1] != 0;
-			if (!allHits) {
-				hits[1] = 1;
-			}
-			BattleState[] states = new BattleState[!allHits ? 2 : 4];
-			for (int i = 3; i >= 0; i--) {
-				if (allHits || i > 1) {
-					int index = allHits ? i : i - 2;
-					BattleState s = states[index] = new BattleState(entity, victim);
-					s.setStyle(CombatStyle.MELEE);
-					s.setEstimatedHit(hits[index]);
-				}
-			}
-			state.setTargets(states);
-			return 1;
-		}
 		int hit = 0;
 		if (isAccurateImpact(entity, victim, CombatStyle.MELEE, 1.1, 0.98)) {
 			hit = RandomFunction.random(calculateHit(entity, victim, 1.1));

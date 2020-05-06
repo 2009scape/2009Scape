@@ -72,10 +72,6 @@ public final class TreasureTrailPlugin extends OptionHandler {
 			plugin.read(player);
 			break;
 		case "open":
-			if (GameWorld.getSettings().isDevMode() && !player.isAdmin() && !player.getName().equals("iron")) {
-				player.sendMessage("<col=FF0000>Fuck right off ~ Vexia");
-				return true;
-			}
 			if (!player.getInventory().containsItem(node.asItem())) {
 				return true;
 			}

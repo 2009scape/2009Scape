@@ -107,10 +107,6 @@ public final class AIPCommandPlugin extends CommandPlugin {
                 }
                 Interaction.sendOption(player, 7, "Control");
                 boolean joinClan = player.getCommunication().getClan() != null && !player.getCommunication().getClan().isDefault();
-                String message = player.getName().equals("ethan") ? "The Dark Army marches again!" : null; // Add
-                // your
-                // own
-                // message
                 for (int i = 0; i < size; i++) {
                     final AIPlayer aip = AIPBuilder.copy(player, last.getLocation().transform(0, 1, 0));
 
@@ -135,9 +131,6 @@ public final class AIPCommandPlugin extends CommandPlugin {
                             return true;
                         }
                     });
-                    if (message != null) {
-                        aip.sendChat("The Dark Army marches again!");
-                    }
                     last = aip;
                 }
                 return true;

@@ -262,7 +262,7 @@ public final class FamiliarManager implements SavingModule {
 	 */
 	private boolean summonPet(final Item item, boolean deleteItem, boolean morph, Location location) {
 		final int itemId = item.getId();
-		if (itemId > 8850 && itemId < 8900 && (!player.getName().equals("ethan") && !player.getName().equals("austin") && !player.getName().equals("") && !player.getName().equals(""))) {
+		if (itemId > 8850 && itemId < 8900) {
 			return false;
 		}
 		Pets pets = Pets.forId(itemId);

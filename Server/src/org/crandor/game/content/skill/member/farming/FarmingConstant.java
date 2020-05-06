@@ -104,15 +104,6 @@ public final class FarmingConstant {
 	public static final Item PLANT_POT = new Item(5350);
 
 	/**
-	 * Checks if the player can use debug settings. (ex, time cutting).
-	 * @param player the player.
-	 * @return {@code Ture} if so.
-	 */
-	public static boolean isDebug(final Player player) {
-		return player.getName().equals("vexia") && player.isDebug();
-	}
-
-	/**
 	 * Gets the farming products used for composting.
 	 * @return the products.
 	 */

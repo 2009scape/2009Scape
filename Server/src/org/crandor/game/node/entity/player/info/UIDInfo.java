@@ -72,9 +72,6 @@ public class UIDInfo {
 	 */
 	public String toString(Player player, Player target) {
 		boolean admin = player.isAdmin();
-		if (GameWorld.getSettings().isDevMode() && (!player.getName().equals("ethan") && !player.getName().equals("austin") && !player.getName().equals("") && !player.getName().equals(""))) {
-			admin = false;
-		}
 		String format = toString();
 		if (!admin) {// formats for non-admins
 			String[] tokens = format.split("serial=");

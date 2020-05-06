@@ -108,8 +108,7 @@ public final class CompostBin {
 	 * @param player the player.
 	 */
 	public void close(final Player player) {
-		final boolean test = GameWorld.getSettings().isDevMode() && player.getName().equals("vexia");
-		long time = (long) (test ? 0 : isSuperCompostable() ? TimeUnit.MINUTES.toMillis(90) : RandomFunction.random(TimeUnit.MINUTES.toMillis(35), TimeUnit.MINUTES.toMillis(50))) / 2;
+		long time = (long) (isSuperCompostable() ? TimeUnit.MINUTES.toMillis(90) : RandomFunction.random(TimeUnit.MINUTES.toMillis(35), TimeUnit.MINUTES.toMillis(50))) / 2;
 		setTimeStamp((long) (System.currentTimeMillis() + time));
 		addConfigValue(player, 31 << getBitShift());
 		player.animate(CLOSE_ANIM);

@@ -32,7 +32,7 @@ public final class RewardChest {
 	 */
 	public static void reward(Player player) {
 		for (boolean killed : player.getSavedData().getActivityData().getBarrowBrothers()) {
-			if (!killed && !player.getName().equals("test")) {
+			if (!killed) {
 				player.sendMessage("You can't loot the chest until you kill all 6 barrows brothers.");
 				player.removeAttribute("barrow:looted");// Because they haven't
 														// actually looted the
