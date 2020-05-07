@@ -17,7 +17,7 @@ import org.crandor.plugin.Plugin;
 
 /**
  * Represents the plugin used to create arrows.
- * @author Vexia
+ * @author Angle
  */
 @InitializablePlugin
 public class ArrowCreatePlugin extends UseWithHandler {
@@ -53,6 +53,14 @@ public class ArrowCreatePlugin extends UseWithHandler {
 		return this;
 	}
 
+	public boolean hasFeather(int id1, int id2) {
+		return (id1 == 314 || (id1 >= 10087 && id1 <= 10091)) || (id2 == 314 || (id2 >= 10087 && id2 <= 10091));
+	}
+
+	public boolean hasShaft(int id1, int id2) {
+		return (id1 == 52 || id2 == 52);
+	}
+
 	@Override
 	public boolean handle(final NodeUsageEvent event) {
 		event.getPlayer().debug("Trying to handle: " + event.getUsedItem() + " with " + event.getUsedWith());
@@ -60,10 +68,10 @@ public class ArrowCreatePlugin extends UseWithHandler {
 		// If the player uses a feather on headless arrows, do headless arrow crafting
 		int itemID = event.getUsedItem().getId();
 		int otherID = event.getUsedWith().getId();
+		boolean hasFeather = hasFeather(itemID, otherID);
+		boolean hasShaft = hasShaft(itemID, otherID);
 		// If the item used was feathers and the target was arrow shafts
-		if ( ((itemID == 314 || (itemID >= 10087 && itemID <= 10091) && otherID == 52)) ||
-				// Or if the target was feathers and the item used was arrow shafts
-				((otherID == 314 || (otherID >= 10087 && otherID <= 10091) && itemID == 52))) {
+		if (hasFeather && hasShaft) {
 			// Creating headless arrows
 			SkillDialogueHandler handler = new SkillDialogueHandler(player, SkillDialogue.ONE_OPTION, HEADLESS_ARROW) {
 				@Override
@@ -80,7 +88,16 @@ public class ArrowCreatePlugin extends UseWithHandler {
 			return true;
 		}
 		// Otherwise, fletch normally
-		final Fletching.ArrowHeads head = Fletching.arrowHeadMap.get((event.getUsedItem().getName().contains("tip") || event.getUsedItem().getName().contains("head")) ? event.getUsedItem().getId() : event.getUsedWith().asItem().getId());
+		boolean firstIsHead = Fletching.isArrowHead(itemID);
+		if (!firstIsHead && !Fletching.isArrowHead(otherID)) {
+			return false;
+		} else if (hasFeather || hasShaft) {
+			// Disallow crafting feathers with arrowheads or shafts with arrowheads.
+			// It will fail anyway but this makes sure
+			// that the gui doesn't pop up on the client.
+			return true;
+		}
+		final Fletching.ArrowHeads head = Fletching.arrowHeadMap.get(firstIsHead ? itemID : otherID);
 		SkillDialogueHandler handler = new SkillDialogueHandler(player, SkillDialogue.ONE_OPTION, head.getFinished()) {
 			@Override
 			public void create(final int amount, int index) {

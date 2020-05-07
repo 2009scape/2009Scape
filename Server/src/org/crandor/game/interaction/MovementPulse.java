@@ -175,7 +175,6 @@ public abstract class MovementPulse extends Pulse {
 		if (mover.getLocation().equals(interactLocation)) {
 			if (near || pulse()) {
 				if (mover instanceof Player) {
-					mover.getWalkingQueue().reset();
 					if (near) {
 						((Player) mover).getPacketDispatch().sendMessage("I can't reach that.");
 					}
