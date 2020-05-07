@@ -53,14 +53,6 @@ public class ArrowCreatePlugin extends UseWithHandler {
 		return this;
 	}
 
-	public boolean hasFeather(int id1, int id2) {
-		return (id1 == 314 || (id1 >= 10087 && id1 <= 10091)) || (id2 == 314 || (id2 >= 10087 && id2 <= 10091));
-	}
-
-	public boolean hasShaft(int id1, int id2) {
-		return (id1 == 52 || id2 == 52);
-	}
-
 	@Override
 	public boolean handle(final NodeUsageEvent event) {
 		event.getPlayer().debug("Trying to handle: " + event.getUsedItem() + " with " + event.getUsedWith());
@@ -68,8 +60,8 @@ public class ArrowCreatePlugin extends UseWithHandler {
 		// If the player uses a feather on headless arrows, do headless arrow crafting
 		int itemID = event.getUsedItem().getId();
 		int otherID = event.getUsedWith().getId();
-		boolean hasFeather = hasFeather(itemID, otherID);
-		boolean hasShaft = hasShaft(itemID, otherID);
+		boolean hasFeather = (itemID == 314 || (itemID >= 10087 && itemID <= 10091)) || (otherID == 314 || (otherID >= 10087 && otherID <= 10091));
+		boolean hasShaft = (itemID == 52 || otherID == 52);
 		// If the item used was feathers and the target was arrow shafts
 		if (hasFeather && hasShaft) {
 			// Creating headless arrows
