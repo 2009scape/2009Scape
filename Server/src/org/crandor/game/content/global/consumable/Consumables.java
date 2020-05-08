@@ -373,7 +373,6 @@ public enum Consumables {
 
 	public static HashMap<Integer,Food> foodMap = new HashMap<>();
 
-
 	/**
 	 * Represents the consumable.
 	 */
@@ -398,7 +397,7 @@ public enum Consumables {
 
 	/**
 	 * Constructs a new {@code Consumables} {@code Object}.
-	 * @param consumable the consumbale.
+	 * @param consumable the consumable.
 	 */
 	Consumables(Consumable consumable) {
 		this.consumable = consumable;
@@ -406,16 +405,15 @@ public enum Consumables {
 
 	/**
 	 * Constructs a new {@code Consumables} {@code Object}.
-	 * @param consumable the consumable.
-	 * @param drinkSet the drinkset.
+	 * @param drink the drink.
 	 */
 	Consumables(Drink drink) {
 		this.consumable = drink;
 	}
 
 	/**
-	 * Gets the food.
-	 * @return The food.
+	 * Gets the consumable.
+	 * @return the consumable.
 	 */
 	public Consumable getConsumable() {
 		return consumable;
@@ -431,7 +429,7 @@ public enum Consumables {
 
 	/**
 	 * Method used to get the {@link Consumable} by the item associated with it.
-	 * @param raw the raw item.
+	 * @param item the raw item.
 	 * @return the consumable.
 	 */
 	public static Consumable getConsumableByItem(final Item item) {
@@ -450,9 +448,9 @@ public enum Consumables {
 	}
 
 	/**
-	 * Method used to get the {@link Food} by the item associated with it.
+	 * Method used to get the {@link Food} by the item ID associated with it.
 	 * @note this is a more direct search.
-	 * @param item the item.
+	 * @param itemID the item ID.
 	 * @return the food.
 	 */
 	public static Food getFoodByItemID(final int itemID) {
@@ -461,8 +459,8 @@ public enum Consumables {
 
 
 	/**
-	 * Method used to get the {@link Drink} by the item id.
-	 * @param item the item.
+	 * Method used to get the {@link Drink} by the item ID.
+	 * @param itemID the item ID.
 	 * @return the drink.
 	 */
 	public static Drink getDrinkByItemID(final int itemID) {

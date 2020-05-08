@@ -19,11 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfca1f7e-8542-4720-8cd4-dc28d3685749" name="Default Changelist" comment="Add 200+ new consumables to Consumables enum">
+    <list default="true" id="dfca1f7e-8542-4720-8cd4-dc28d3685749" name="Default Changelist" comment="Rename forConsumable, forFood and forDrink methods">
       <change beforePath="$PROJECT_DIR$/Server/src/org/crandor/game/content/global/consumable/Consumables.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/org/crandor/game/content/global/consumable/Consumables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/plugin/interaction/item/ConsumableOptionPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/plugin/interaction/item/ConsumableOptionPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/plugin/skill/magic/lunar/StatBoostSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/plugin/skill/magic/lunar/StatBoostSpell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/plugin/skill/magic/lunar/StatRestoreSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/plugin/skill/magic/lunar/StatRestoreSpell.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +189,21 @@
       <option name="project" value="LOCAL" />
       <updated>1588909460645</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Change type of forDrink method parameter Item (item) to int (itemID)">
+      <created>1588910049265</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588910049265</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Rename forConsumable, forFood and forDrink methods">
+      <created>1588910164181</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1588910164181</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -221,7 +232,9 @@
     <MESSAGE value="More Witch's house" />
     <MESSAGE value="Fixed kelda error" />
     <MESSAGE value="Add 200+ new consumables to Consumables enum" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add 200+ new consumables to Consumables enum" />
+    <MESSAGE value="Change type of forDrink method parameter Item (item) to int (itemID)" />
+    <MESSAGE value="Rename forConsumable, forFood and forDrink methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename forConsumable, forFood and forDrink methods" />
   </component>
   <component name="masterDetails">
     <states>
