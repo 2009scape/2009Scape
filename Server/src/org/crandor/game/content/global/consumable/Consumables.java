@@ -437,7 +437,7 @@ public enum Consumables {
 	public static Consumable forConsumable(final Item item) {
 		for (Consumable consumable : CONSUMABLES) {
 			if (consumable.isDrink()) {
-				Consumable d = forDrink(item);
+				Consumable d = forDrink(item.getId());
 				if (d != null) {
 					return d;
 				}
@@ -465,16 +465,16 @@ public enum Consumables {
 	 * @param item the item.
 	 * @return the drink.
 	 */
-	public static Drink forDrink(final Item item) {
+	public static Drink forDrink(final int itemID) {
 		for (Drink drink : DRINKS) {
-			if (item.getId() == drink.getItem().getId()) {
+			if (itemID == drink.getItem().getId()) {
 				return drink;
 			}
 			if (drink.getDrinks() == null) {
 				continue;
 			}
 			for (Item i : drink.getDrinks()) {
-				if (i.getId() == item.getId()) {
+				if (i.getId() == itemID) {
 					return drink;
 				}
 			}
