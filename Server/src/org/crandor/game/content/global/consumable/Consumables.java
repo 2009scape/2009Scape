@@ -434,10 +434,10 @@ public enum Consumables {
 	 * @param raw the raw item.
 	 * @return the consumable.
 	 */
-	public static Consumable forConsumable(final Item item) {
+	public static Consumable getConsumableByItem(final Item item) {
 		for (Consumable consumable : CONSUMABLES) {
 			if (consumable.isDrink()) {
-				Consumable d = forDrink(item.getId());
+				Consumable d = getDrinkByItemID(item.getId());
 				if (d != null) {
 					return d;
 				}
@@ -455,7 +455,7 @@ public enum Consumables {
 	 * @param item the item.
 	 * @return the food.
 	 */
-	public static Food forFood(final int itemID) {
+	public static Food getFoodByItemID(final int itemID) {
 		return foodMap.get(itemID);
 	}
 
@@ -465,7 +465,7 @@ public enum Consumables {
 	 * @param item the item.
 	 * @return the drink.
 	 */
-	public static Drink forDrink(final int itemID) {
+	public static Drink getDrinkByItemID(final int itemID) {
 		for (Drink drink : DRINKS) {
 			if (itemID == drink.getItem().getId()) {
 				return drink;
