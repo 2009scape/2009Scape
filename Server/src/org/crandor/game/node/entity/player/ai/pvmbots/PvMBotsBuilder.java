@@ -15,7 +15,7 @@ import org.crandor.game.node.item.Item;
 import org.crandor.game.world.GameWorld;
 import org.crandor.game.world.map.Location;
 import org.crandor.tools.RandomFunction;
-import sun.util.resources.CalendarData;
+// import sun.util.resources.CalendarData;
 
 public final class PvMBotsBuilder{
 	public static int botsSpawned;
