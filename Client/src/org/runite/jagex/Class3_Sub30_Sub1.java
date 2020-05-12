@@ -869,21 +869,35 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 
 						}
 					} else {
-						Class25.method958((byte)-86);
-						var13 = Class7.getRSInterface((byte)123, var3);
-						Class3_Sub28_Sub18.anInt3764 = var3;
-						Class110.anInt1473 = var2;
-						Class164_Sub1.anInt3012 = 1;
-						Class164.anInt2050 = var5;
-						Class20.method909(var0 ^ -2612, var13);
-						RenderAnimationDefinition.aClass94_378 = RenderAnimationDefinition.method903(new RSString[]{
-								Class3_Sub13_Sub2.aClass94_3042, Class38.getItemDefinition(var5, (byte)109).name, Class3_Sub26.CONTEXT_MENU_COLOR
-						}, (byte)-113);
-						if(RenderAnimationDefinition.aClass94_378 == null) {
-							RenderAnimationDefinition.aClass94_378 = Class50.aClass94_829;
-//							System.out.println(Class38.getItemDefinition(var5, (byte)109).name);
-						}
 
+						if (MouseWheel.shiftDown) {
+							Class3_Sub13_Sub1.outgoingBuffer.putOpcode(135);
+							Class3_Sub13_Sub1.outgoingBuffer.putShortA(var5, -268435456);
+							++Class3_Sub13_Sub21.anInt3255;
+							Class3_Sub13_Sub1.outgoingBuffer.putShortA(var2, -268435456);
+							Class3_Sub13_Sub1.outgoingBuffer.putIntB(-68, var3);
+							Class3_Sub9.anInt2330 = 0;
+							Class151.aClass11_1933 = Class7.getRSInterface((byte)117, var3);
+							KeyboardListener.anInt1918 = var2;
+
+						} else {
+
+							Class25.method958((byte)-86);
+							var13 = Class7.getRSInterface((byte)123, var3);
+							Class3_Sub28_Sub18.anInt3764 = var3;
+							Class110.anInt1473 = var2;
+							Class164_Sub1.anInt3012 = 1;
+							Class164.anInt2050 = var5;
+							Class20.method909(var0 ^ -2612, var13);
+							RenderAnimationDefinition.aClass94_378 = RenderAnimationDefinition.method903(new RSString[]{
+									Class3_Sub13_Sub2.aClass94_3042, Class38.getItemDefinition(var5, (byte)109).name, Class3_Sub26.CONTEXT_MENU_COLOR
+							}, (byte)-113);
+							if(RenderAnimationDefinition.aClass94_378 == null) {
+								RenderAnimationDefinition.aClass94_378 = Class50.aClass94_829;
+//								System.out.println(Class38.getItemDefinition(var5, (byte)109).name);
+							}
+
+						}
 					}
 				}
 			}
