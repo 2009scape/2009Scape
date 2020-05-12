@@ -79,7 +79,7 @@ public class PlayerDetails {
 	/**
 	 * The rights of the player.
 	 */
-	private Rights rights = Rights.ADMINISTRATOR;
+	private Rights rights = Rights.REGULAR_PLAYER;
 	
 	/**
 	 * The donator type value.
@@ -233,7 +233,7 @@ public class PlayerDetails {
 	 * @return The rights.
 	 */
 	public Rights getRights() {
-		return Rights.ADMINISTRATOR;
+		return rights;
 	}
 
 	/**
