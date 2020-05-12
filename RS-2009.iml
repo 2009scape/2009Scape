@@ -34,7 +34,12 @@
       <sourceFolder url="file://$MODULE_DIR$/Server/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Client/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/Client/src/main" />
+      <excludeFolder url="file://$MODULE_DIR$/Client/src/main/java" />
+      <excludeFolder url="file://$MODULE_DIR$/Client/src/main/java/org" />
       <excludeFolder url="file://$MODULE_DIR$/Client/src/main/java/org/runite" />
+      <excludeFolder url="file://$MODULE_DIR$/Server/src/main" />
+      <excludeFolder url="file://$MODULE_DIR$/Server/src/main/java" />
       <excludeFolder url="file://$MODULE_DIR$/Server/src/main/java/Server" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
     </content>
