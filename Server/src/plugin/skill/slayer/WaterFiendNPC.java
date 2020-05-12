@@ -53,7 +53,7 @@ public final class WaterFiendNPC extends AbstractNPC {
 
 	@Override
 	public int[] getIds() {
-		return Tasks.WATERFIENDS.getTask().getNpcs();
+		return Tasks.WATERFIENDS.getNpcs();
 	}
 
 }

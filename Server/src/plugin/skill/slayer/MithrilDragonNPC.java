@@ -93,6 +93,6 @@ public final class MithrilDragonNPC extends AbstractNPC {
 
 	@Override
 	public int[] getIds() {
-		return Tasks.MITHRIL_DRAGON.getTask().getNpcs();
+		return Tasks.MITHRIL_DRAGON.getNpcs();
 	}
 }

@@ -12,9 +12,12 @@ import org.crandor.game.content.skill.free.gather.SkillingResource;
 import org.crandor.game.content.skill.free.gather.SkillingTool;
 import org.crandor.game.node.Node;
 import org.crandor.game.node.entity.impl.Animator;
+import org.crandor.game.node.entity.npc.drop.DropFrequency;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.link.diary.DiaryType;
+import org.crandor.game.node.item.ChanceItem;
 import org.crandor.game.node.item.Item;
+import org.crandor.game.node.item.WeightedChanceItem;
 import org.crandor.game.node.object.GameObject;
 import org.crandor.game.node.object.ObjectBuilder;
 import org.crandor.game.system.task.Pulse;
@@ -26,6 +29,7 @@ import org.crandor.tools.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Mining skill pulse
@@ -36,7 +40,7 @@ public class MiningSkillPulse extends Pulse {
     private boolean isMiningEssence = false;
     private boolean isMiningGems = false;
     private int ticks;
-    private static final Item[] GEM_REWARDS = { new Item(1623), new Item(1621), new Item(1619), new Item(1617) };
+    private static final ChanceItem[] GEM_REWARDS = { new ChanceItem(1623,1, DropFrequency.COMMON), new ChanceItem(1621,1,DropFrequency.COMMON), new ChanceItem(1619,1,DropFrequency.UNCOMMON), new ChanceItem(1617,1,DropFrequency.RARE) };
     private Player player;
     private Node node;
     protected boolean resetAnimation = true;
@@ -180,7 +184,7 @@ public class MiningSkillPulse extends Pulse {
                     altered = true;
                 }
                 if (RandomFunction.random(chance) == chance / 2) {
-                    Item gem = RandomFunction.getRandomElement(GEM_REWARDS);
+                    Item gem = RandomFunction.rollChanceTable(true, GEM_REWARDS).get(0);
                     player.getPacketDispatch().sendMessage("You find a " + gem.getName() + "!");
                     if (!player.getInventory().add(gem, player)) {
                         player.getPacketDispatch().sendMessage("You do not have enough space in your inventory, so you drop the gem on the floor.");
@@ -254,21 +258,7 @@ public class MiningSkillPulse extends Pulse {
 
         // Calculate a random gem for the player if mining gem rocks
         else if (isMiningGems) {
-            int random = RandomFunction.random(100);
-            List<Integer> gems = new ArrayList<>();
-            if (random < 2) {
-                gems.add(1617);
-            } else if (random < 25) {
-                gems.add(1619);
-                gems.add(1623);
-                gems.add(1621);
-            } else if (random < 40) {
-                gems.add(1629);
-            } else {
-                gems.add(1627);
-                gems.add(1625);
-            }
-            reward = gems.get(RandomFunction.random(gems.size()));
+            reward = RandomFunction.rollWeightedChanceTable(MiningNode.gemRockGems).getId();
         }
 
         return reward;

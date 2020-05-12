@@ -103,7 +103,7 @@ public final class NechryaelNPC extends AbstractNPC {
 
 	@Override
 	public int[] getIds() {
-		return Tasks.NECHRYAELS.getTask().getNpcs();
+		return Tasks.NECHRYAELS.getNpcs();
 	}
 
 	/**

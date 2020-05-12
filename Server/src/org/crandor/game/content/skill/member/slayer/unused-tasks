@@ -1,0 +1,92 @@
+	/*WALL_BEASTS(new Task(new int[] { 7823 }, new String[] { "A spiny helmet or equivalent is required to start fighting one " }, 35, new Master[] { Master.MAZCHNA }, false, Equipment.SPINY_HELMET) {
+		@Override
+		public boolean isDisabled() {
+			return true;
+		}
+	}),
+	WARPED_TERRORBIRDS(new Task(new int[] { 6285, 6286, 6287, 6288, 6289, 6290, 6291, 6292, 6293, 6294, 6295, 6322, 6323, 6324, 6325, 6326, 6327, 6328, 6329, 6330, 6331, 6332, }, new String[] { "They require 56 Slayer and a Crystal chime to be killed. " }, 56, new Master[] { Master.DURADEL }, false) {
+		@Override
+		public boolean isDisabled() {
+			return true;
+		}
+	}),
+	WARPED_TORTOISES(new Task(new int[] { 6296, 6297 }, new String[] { "A warped tortoise is not as slow as they look." }, 56, new Master[] { Master.DURADEL }, false) {
+		@Override
+		public boolean isDisabled() {
+			return true;
+		}
+	}),*/
+/*CERBERUS(new Task(new int[] {8632, 8634}, new String[] {"Cerberus is about the best guard dog there is!"}, 91, new Master[] {Master.VANNAKA, Master.CHAELDAR, Master.NIEVE, Master.DURADEL}, false, 20 | 25 << 16) {
+		@Override
+		public boolean isDisabled() {
+			return true;
+		}
+	})*/
+/*ZYGOMITES(new Task(new int[] { 3346, 3347 }, new String[] { "Mutated zygomites are monsters that appear as Fungi until provoked." }, 57, new Master[] { Master.CHAELDAR }, false) {
+		@Override
+		public boolean isDisabled() {
+			return true;
+		}
+	}),*/
+/*SUQAHS(new Task(new int[] { 4527, 4528, 4529, 4530, 4531, 4532, 4533 }, new String[] {}, 1, new Master[] { Master.DURADEL }, false) {
+		@Override
+		public boolean isDisabled() {
+			return true;
+		}
+	}),
+	TERROR_DOG(new Task(new int[] { 5417, 5418 }, new String[] { "Terror Dogs are much like Wolves, they are pack creatures which will hunt in groups." }, 1, new Master[] { Master.VANNAKA, Master.DURADEL }, false) {
+		@Override
+		public boolean isDisabled() {
+			return true;
+		}
+	}),*/
+/*SHADOW_WARRIORS(new Task(new int[] { 158 }, new String[] { "Shadow warriors are dark and mysterious, they hide in the shadows so be wary of ambushes." }, 1, new Master[] { Master.VANNAKA, Master.CHAELDAR }, false) {
+		@Override
+		public boolean isDisabled() {
+			return true;
+		}
+	}),*/
+//MOGRES(new Task(new int[] { 114 }, new String[] { "Mogres are Slayer monsters and require level 32 Slayer to kill. " }, 32, new Master[] { Master.MAZCHNA, Master.VANNAKA }, false)),
+	/*MOLANISKS(new Task(new int[] { 5751 }, new String[] { "Molanisks are found attached to cave walls and must be lured", "off with a Slayer bell" }, 39, new Master[] { Master.VANNAKA }, false) {
+		@Override
+		public boolean isDisabled() {
+			return true;
+		}
+	}),*/
+
+	/*RED_DRAGONS(new Task(new int[] { 53, 4669, 4670, 4671, 4672, 1589, 3588, 4667, 4668, }, new String[] { "Red dragons aren't as strong as other dragons but they're still", "very powerful, watch out for their firey breath." }, 1, new Master[] { Master.DURADEL }, false) {
+		@Override
+		public boolean isDisabled() {
+			return true;
+		}
+	}),*/
+	/*SCABARITES(new Task(new int[] { 2009 }, new String[] { "The Scabarites are fairly strong monsters, and can hit pretty hard." }, 1, new Master[] { Master.CHAELDAR }, false) {
+		@Override
+		public boolean isDisabled() {
+			return true;
+		}
+	}),*/
+	/*SEA_SNAKES(new Task(new int[] { 3943, 3939, }, new String[] { "They are quick, make sure you don't let your", "eye off of them for 1 second." }, 1, new Master[] { Master.VANNAKA }, false) {
+		@Override
+		public boolean isDisabled() {
+			return true;
+		}
+	}),*/
+/*ELVES(new Task(new int[] { 1184, 1183, 1185 }, new String[] { "Elves are quick, agile and vicious fighters which", "often favour bows and polearms." }, 1, new Master[] { Master.VANNAKA, Master.CHAELDAR, Master.NIEVE }, false) {
+		@Override
+		public boolean isDisabled() {
+			return true;
+		}
+	}),
+	FEVER_SPIDERS(new Task(new int[] { 2850 }, new String[] { "Fever Spiders are giant spiders that carry the deadly Spider Fever.", "If you don't want to catch it I suggest you wear Slayer Gloves to fight them." }, 1, new Master[] { Master.CHAELDAR, Master.DURADEL }, false) {
+		@Override
+		public boolean isDisabled() {
+			return true;
+		}
+	}),*/
+	/*KILLERWATTS(new Task(new int[] { 3201, 3202 }, new String[] { "Vexia halfassed this... (this was shadow knight text)" }, 37, new Master[] { Master.VANNAKA }, false) {
+		@Override
+		public boolean isDisabled() {
+			return true;
+		}
+	}),*/

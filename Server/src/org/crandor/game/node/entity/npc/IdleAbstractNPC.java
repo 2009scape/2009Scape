@@ -32,7 +32,7 @@ public abstract class IdleAbstractNPC extends AbstractNPC {
 	
 	/**
 	 * Constructs a new {@code IdleAbstractNPC} {@code Object}.
-	 * @param id The NPC id.
+	 * @param idleId The NPC id.
 	 * @param location The location.
 	 */
 	public IdleAbstractNPC(int idleId, int activeId, Location location) {
@@ -61,7 +61,7 @@ public abstract class IdleAbstractNPC extends AbstractNPC {
 		if (isInvisible()) {
 			return false;
 		}
-		if (getTask() != null && entity instanceof Player && getTask().getLevel() > entity.getSkills().getStaticLevel(Skills.SLAYER)) {
+		if (getTask() != null && entity instanceof Player && getTask().levelReq > entity.getSkills().getStaticLevel(Skills.SLAYER)) {
 			((Player) entity).getPacketDispatch().sendMessage("You need a higher slayer level to know how to wound this monster.");
 		}
 		if (DeathTask.isDead(this)) {

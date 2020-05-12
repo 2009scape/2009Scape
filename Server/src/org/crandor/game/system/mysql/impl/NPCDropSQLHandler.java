@@ -75,7 +75,6 @@ public class NPCDropSQLHandler extends SQLEntryHandler<Object> {
 		tables.getDefaultTable().addAll(parseTable(defaultTable));
 		tables.getMainTable().addAll(parseTable(mainTable));
 		tables.getCharmTable().addAll(parseTable(charmTable));
-		tables.prepare();
 	}
 
 	/**

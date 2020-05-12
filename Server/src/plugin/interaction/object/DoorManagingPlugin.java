@@ -22,9 +22,9 @@ public final class DoorManagingPlugin extends OptionHandler {
 
 	@Override
 	public Plugin<Object> newInstance(Object arg) throws Throwable {
-		ObjectDefinition.setOptionHandler("open", this);
+		/*ObjectDefinition.setOptionHandler("open", this);
 		ObjectDefinition.setOptionHandler("close", this);
-		ObjectDefinition.setOptionHandler("shut", this);
+		ObjectDefinition.setOptionHandler("shut", this);*/
 		return this;
 	}
 

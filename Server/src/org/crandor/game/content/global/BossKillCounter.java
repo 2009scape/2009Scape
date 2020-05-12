@@ -136,7 +136,7 @@ public enum BossKillCounter {
 		int number = 5000;
 		if (npcid == 2745) {
 			number = 200;
-			if (Tasks.forValue(killer.getSlayer().getTask()) == Tasks.JAD) {
+			if (killer.getSlayer().getTask() == Tasks.JAD) {
 				number = 100;
 			}
 		} else if (npcid == 3200) {

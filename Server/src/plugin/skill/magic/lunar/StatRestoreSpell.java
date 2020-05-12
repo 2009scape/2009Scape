@@ -59,7 +59,7 @@ public class StatRestoreSpell extends MagicSpell {
 	public boolean cast(Entity entity, Node target) {
 		final Player player = ((Player) entity);
 		Item item = ((Item) target);
-		final Drink drink = Consumables.forDrink(item);
+		final Drink drink = Consumables.getDrinkByItemID(item.getId());
 		player.getInterfaceManager().setViewedTab(6);
 		if (drink == null || !(drink instanceof Potion)) {
 			player.getPacketDispatch().sendMessage("For use of this spell use only one a potion.");

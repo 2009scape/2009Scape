@@ -1,3 +1,4 @@
+/*
 package plugin.skill.slayer.dungeon;
 
 import org.crandor.game.content.dialogue.FacialExpression;
@@ -22,28 +23,36 @@ import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.plugin.Plugin;
 
+*/
 /**
  * Handles the stronghold slayer cave.
  * @author Vexia
  * @author Empathy
  *
- */
+ *//*
+
 @InitializablePlugin
 public class StrongholdSlayerCave extends MapZone implements Plugin<Object> {
 	
-	/**
+	*/
+/**
 	 * The step over animation.
-	 */
+	 *//*
+
 	private final Animation stepOver = new Animation(1603);
 	
-	/**
+	*/
+/**
 	 * The climb animation.
-	 */
+	 *//*
+
 	private final Animation climb = new Animation(3063);
 	
-	/**
+	*/
+/**
 	 * Constructs a new @{Code StrongholdSlayerCave} object.
-	 */
+	 *//*
+
 	public StrongholdSlayerCave() {
 		super("Slayer stronghold zone", true);
 	}
@@ -210,11 +219,13 @@ public class StrongholdSlayerCave extends MapZone implements Plugin<Object> {
 		return false;
 	}
 	
-	/**
+	*/
+/**
 	 * Gets the location for the player to move to.
 	 * @param player The player.
 	 * @param object The object.
-	 */
+	 *//*
+
 	private Location getRootLocation(Player player, GameObject object) {
 		Location obj = object.getLocation();
 		Location play = player.getLocation();
@@ -227,3 +238,4 @@ public class StrongholdSlayerCave extends MapZone implements Plugin<Object> {
 	}
 
 }
+*/

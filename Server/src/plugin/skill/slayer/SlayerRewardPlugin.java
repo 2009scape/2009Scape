@@ -7,7 +7,7 @@ import org.crandor.game.component.ComponentDefinition;
 import org.crandor.game.component.ComponentPlugin;
 import org.crandor.game.content.skill.Skills;
 import org.crandor.game.content.skill.member.slayer.Master;
-import org.crandor.game.content.skill.member.slayer.Task;
+import org.crandor.game.content.skill.member.slayer.Tasks;
 import org.crandor.game.interaction.NodeUsageEvent;
 import org.crandor.game.interaction.OptionHandler;
 import org.crandor.game.interaction.UseWithHandler;
@@ -245,7 +245,7 @@ public class SlayerRewardPlugin extends ComponentPlugin {
 	/**
 	 * Update the current points text.
 	 * @param player the player.
-	 * @param component the component.
+	 * @param open the component.
 	 */
 	private void updateInterface(Player player, Component open) {
 		if (open == null) {
@@ -262,7 +262,7 @@ public class SlayerRewardPlugin extends ComponentPlugin {
 		case 161://assignment
 			int childs[] = new int[] {35, 30, 31, 32};
 			String[] letters = new String[] {"A", "B", "C", "D"};
-			Task task = null;
+			Tasks task = null;
 			for (int i = 0; i < 4; i++) {
 				task = i > player.getSlayer().getRemoved().size() - 1 ? null : player.getSlayer().getRemoved().get(i);
 				player.getPacketDispatch().sendString(task == null ? letters[i] : task.getName(), open.getId(), childs[i]);

@@ -51,7 +51,7 @@ public final class ConsumableOptionPlugin extends OptionHandler {
 		if (player.getInventory().get(item.getSlot()) != item) {
 			return false;
 		}
-		Consumable consumable = food ? Consumables.forFood(item.getId()) : Consumables.forDrink(item);
+		Consumable consumable = food ? Consumables.getFoodByItemID(item.getId()) : Consumables.getDrinkByItemID(item.getId());
 		if (consumable == null) {
 			consumable = food ? new Food(item.getId(), new ConsumableProperties(1)) : new Drink(item.getId(), new ConsumableProperties(1));
 		}

@@ -43,7 +43,7 @@ public final class InfernalMageNPC extends AbstractNPC {
 
 	@Override
 	public int[] getIds() {
-		return Tasks.INFERNAL_MAGES.getTask().getNpcs();
+		return Tasks.INFERNAL_MAGES.getNpcs();
 	}
 
 }

@@ -1,9 +1,12 @@
 package org.crandor.game.content.skill.free.gather.mining;
 
 import org.crandor.ServerConstants;
+import org.crandor.game.node.item.WeightedChanceItem;
 import org.crandor.game.world.repository.Repository;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * Mining nodes
@@ -433,7 +436,16 @@ public enum MiningNode{
 
 
 
-
+        public static List<WeightedChanceItem> gemRockGems = new ArrayList<>();
+        static {
+                gemRockGems.add(new WeightedChanceItem(1625, 1, 60)); //uncut Opal
+                gemRockGems.add(new WeightedChanceItem(1627, 1, 30)); //uncut Jade
+                gemRockGems.add(new WeightedChanceItem(1629, 1, 15)); //uncut Red Topaz
+                gemRockGems.add(new WeightedChanceItem(1623, 1, 9));  //uncut Sapphire
+                gemRockGems.add(new WeightedChanceItem(1621, 1, 5));  //uncut Emerald
+                gemRockGems.add(new WeightedChanceItem(1619, 1, 5));  //uncut Ruby
+                gemRockGems.add(new WeightedChanceItem(1617, 1, 4));  //uncut Diamond
+        }
         int full,empty,respawnRate,reward,level;
         double rate,experience;
         byte identifier;

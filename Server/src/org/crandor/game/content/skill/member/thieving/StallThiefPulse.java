@@ -2,6 +2,7 @@ package org.crandor.game.content.skill.member.thieving;
 
 import org.crandor.game.content.skill.SkillPulse;
 import org.crandor.game.content.skill.Skills;
+import org.crandor.game.node.entity.lock.ActionLocks;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.info.portal.Perks;
@@ -90,6 +91,7 @@ public final class StallThiefPulse extends SkillPulse<GameObject> {
 	public boolean reward() {
 		if (ticks == 0) {
 			player.animate(ANIMATION);
+			player.getLocks().lockInteractions(2);
 		}
 		if (++ticks % 3 != 0) {
 			return false;
@@ -103,7 +105,7 @@ public final class StallThiefPulse extends SkillPulse<GameObject> {
 				player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 0, 12, true);
 			}
 			if (node.isActive()) {
-				ObjectBuilder.replace(((GameObject) node), ((GameObject) node).transform(stall.getTemporary()), stall.getDelay());
+				ObjectBuilder.replace(((GameObject) node), ((GameObject) node).transform(stall.getEmpty(node.getId())), stall.getDelay());
 			}
 			final Item item = stall.getRandomLoot();
 		    player.getInventory().add(item);
@@ -113,7 +115,7 @@ public final class StallThiefPulse extends SkillPulse<GameObject> {
 				player.getPacketDispatch().sendMessage("You steal grapes from the grape stall.");
 				return true;
 			}
-			player.getPacketDispatch().sendMessage("You steal " + (StringUtils.isPlusN(item.getName()) ? "an" : "a") + " " + item.getName().toLowerCase() + " from the " + node.getName().toLowerCase() + ".");
+			player.getPacketDispatch().sendMessage("You steal " + (StringUtils.isPlusN(item.getName()) ? "an" : "a") + " " + item.getName().toLowerCase() + " from the " + stall.name().toLowerCase().replace('_',' ') + ".");
 		}
 		return true;
 	}
@@ -122,7 +124,7 @@ public final class StallThiefPulse extends SkillPulse<GameObject> {
 	public void message(int type) {
 		switch (type) {
 		case 0:
-			player.getPacketDispatch().sendMessage("You attempt to steal " + stall.getMessage() + "");
+			player.getPacketDispatch().sendMessage("You attempt to steal some " + stall.msgItem +  " from the " + stall.name().toLowerCase().replace('_',' '));
 			break;
 		}
 	}
@@ -133,9 +135,6 @@ public final class StallThiefPulse extends SkillPulse<GameObject> {
 	 */
 	private boolean success() {
 		int mod = 0;
-		if (player.getDetails().getShop().hasPerk(Perks.SLEIGHT_OF_HAND)) {
-			mod = 8;
-		}
 		if (RandomFunction.random(15 + mod) < 4) {
 			for (NPC npc : RegionManager.getLocalNpcs(player.getLocation(), 8)) {
 				if (!npc.getProperties().getCombatPulse().isAttacking() && (npc.getId() == 32 || npc.getId() == 2236)) {

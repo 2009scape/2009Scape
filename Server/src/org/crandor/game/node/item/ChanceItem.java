@@ -4,11 +4,17 @@ import org.crandor.game.node.entity.npc.drop.DropFrequency;
 import org.crandor.game.node.entity.npc.drop.NPCDropTables;
 import org.crandor.tools.RandomFunction;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Represents an item with a chance-rate.
  * @author Emperor
  */
 public final class ChanceItem extends Item {
+
+	public static final int[] DROP_RATES = { 5,15,150,750 };
 
 	/**
 	 * The chance rate of this item.
@@ -77,7 +83,7 @@ public final class ChanceItem extends Item {
 	 * @param frequency the frequency.
 	 */
 	public ChanceItem(int id, int minimumAmount, int maximumAmount, DropFrequency frequency) {
-		this(id, minimumAmount, maximumAmount, 1000, NPCDropTables.DROP_RATES[frequency.ordinal() - 1]);
+		this(id, minimumAmount, maximumAmount, 1000, DropFrequency.rate(frequency));
 	}
 
 	/**
@@ -85,7 +91,9 @@ public final class ChanceItem extends Item {
 	 * @param id The item id.
 	 * @param minimumAmount The minimum amount.
 	 * @param maximumAmount The maximum amount.
-	 * @param charge The charge.
+	 * @param charge The charge.		if(frequency == DropFrequency.ALWAYS){
+
+		}
 	 * @param chanceRatio The chance rate.
 	 */
 	public ChanceItem(int id, int minimumAmount, int maximumAmount, int charge, double chanceRate) {
@@ -122,6 +130,10 @@ public final class ChanceItem extends Item {
 		this.chanceRate = chanceRate;
 		this.dropFrequency = frequency;
 		this.setRate = setRate;
+	}
+
+	public ChanceItem(int id, int amount, DropFrequency frequency){
+		this(id, amount, amount, frequency);
 	}
 
 	/**

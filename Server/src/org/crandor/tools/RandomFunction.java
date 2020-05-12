@@ -1,11 +1,13 @@
 package org.crandor.tools;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
+import org.crandor.game.node.entity.npc.drop.DropFrequency;
 import org.crandor.game.node.item.ChanceItem;
+import org.crandor.game.node.item.Item;
+import org.crandor.game.node.item.WeightedChanceItem;
 
 /**
  * Represents a class used for random methods.
@@ -169,6 +171,80 @@ public class RandomFunction {
 				return i;
 			}
 		}
+		return null;
+	}
+
+	public static List<Item> rollChanceTable(boolean atLeastOne,List<ChanceItem> table){
+		final List<Item> rewards = new ArrayList<>();
+		final List<Item> always_rewards = new ArrayList<>();
+		final List<ChanceItem> chanceTable = new ArrayList<ChanceItem>(table);
+		boolean isAllAlways = false;
+		if(table.stream().filter(item -> item.getChanceRate() == 1).count() == table.size()){
+			isAllAlways = true;
+		}
+		if(table.size() == 1){
+			atLeastOne = false;
+		}
+		if(!isAllAlways) {
+			if (atLeastOne) {
+				while (rewards.isEmpty()) {
+					Collections.shuffle(chanceTable);
+					for (ChanceItem item : chanceTable) {
+						if (item.getChanceRate() == 0.0) {
+							item.setChanceRate(DropFrequency.rate(item.getDropFrequency()));
+						}
+						boolean roll = RandomFunction.random(1, (int) item.getChanceRate()) == 1;
+						if (item.getChanceRate() != 1) {
+							if (roll) {
+								rewards.add(item.getRandomItem());
+								break;
+							}
+						}
+					}
+				}
+			} else {
+				Collections.shuffle(chanceTable);
+				for (ChanceItem item : chanceTable) {
+					if (item.getChanceRate() == 0.0) {
+						item.setChanceRate(DropFrequency.rate(item.getDropFrequency()));
+					}
+					boolean roll = RandomFunction.random(1, (int) item.getChanceRate()) == 1;
+					if (item.getChanceRate() != 1) {
+						if (roll) {
+							rewards.add(item.getRandomItem());
+							break;
+						}
+					}
+				}
+			}
+		}
+		table.stream().filter(item -> item.getChanceRate() == 1).forEach(item -> {
+			if(item.getChanceRate() == 0.0){
+				item.setChanceRate(DropFrequency.rate(item.getDropFrequency()));
+			}
+			always_rewards.add(item.getRandomItem());
+		});
+		return Stream.concat(rewards.stream(),always_rewards.stream()).collect(Collectors.toList());
+	}
+
+	public static List<Item> rollChanceTable(boolean atLeastOne,ChanceItem... table){
+		return rollChanceTable(atLeastOne,Arrays.asList(table));
+	}
+
+	public static Item rollWeightedChanceTable(WeightedChanceItem... table){
+		return rollWeightedChanceTable(new ArrayList<>(Arrays.asList(table)));
+	}
+
+	public static Item rollWeightedChanceTable(List<WeightedChanceItem> table){
+		int sumOfWeights = table.stream().mapToInt(item -> item.weight).sum();
+		int rand = random(sumOfWeights);
+		Collections.shuffle(table);
+		for(WeightedChanceItem item : table){
+			if(rand < item.weight)
+				return item.getItem();
+			rand -= item.weight;
+		}
+		System.out.println("ERROR ROLLING WEIGHTED CHANCE: WEIGHT SUM AND INDIVIDUAL WEIGHTS DO NOT MATCH!!");
 		return null;
 	}
 

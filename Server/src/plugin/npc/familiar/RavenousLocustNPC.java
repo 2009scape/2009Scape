@@ -54,7 +54,7 @@ public class RavenousLocustNPC extends Familiar {
 				if (item == null) {
 					continue;
 				}
-				Food food = Consumables.forFood(item.getId());
+				Food food = Consumables.getFoodByItemID(item.getId());
 				if (food != null) {
 					p.getInventory().remove(item);
 					break;

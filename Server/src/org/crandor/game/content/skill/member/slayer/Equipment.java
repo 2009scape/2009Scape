@@ -40,8 +40,11 @@ public enum Equipment {
 	LUMBER_PATCH(new Item(8932, 1)),
 	SLAYER_BELL(new Item(10952, 1)), 
 	WITCHWOOD_ICON(new Item(8923, 1)),
-	LIT_BUG_LANTERN(new Item(7053, 1));
-	
+	LIT_BUG_LANTERN(new Item(7053, 1)),
+
+	//null equipment for when none is needed
+	NONE(new Item(0));
+
 	/**
 	 * The slayer helmet item.
 	 */

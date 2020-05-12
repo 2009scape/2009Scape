@@ -2,6 +2,7 @@ package org.crandor.game.node.entity.npc.drop;
 
 import org.crandor.cache.ServerStore;
 import org.crandor.game.node.item.ChanceItem;
+import org.crandor.game.node.item.Item;
 import org.crandor.tools.RandomFunction;
 
 import java.io.BufferedReader;
@@ -15,6 +16,8 @@ import java.util.List;
  * @author Emperor
  */
 public final class RareDropTable {
+
+	public static final String RDT_LOCATION = "./data/rare_drop_table.txt";
 
 	/**
 	 * The item id of the item representing the rare drop table slot in a drop
@@ -37,23 +40,23 @@ public final class RareDropTable {
 	 */
 	public static void init() {
 		try {
-			BufferedReader br = new BufferedReader(new FileReader("./data/rare_drop_table.txt"));
+			BufferedReader br = new BufferedReader(new FileReader(RDT_LOCATION));
 			String s;
 			while ((s = br.readLine()) != null) {
 				if (s.contains(" //")) {
 					s = s.substring(0, s.indexOf(" //"));
 				}
-				String[] arg = s.replaceAll(" - ", ";").split(";");
-				int id = Integer.parseInt(arg[1]);
+				String[] arg = s.replaceAll(", ", ";").split(";");
+				int id = Integer.parseInt(arg[0]);
 				int amount = 1;
 				int amount2 = amount;
-				System.out.println("Rare drop table: " + id);
+				//System.out.println("Rare drop table: " + id);
 				if (arg[2].contains("-")) {
 					String[] amt = arg[2].split("-");
-					amount = Integer.parseInt(amt[0]);
+					amount = Integer.parseInt(amt[2]);
 					amount2 = Integer.parseInt(amt[1]);
 				} else {
-					amount = Integer.parseInt(arg[2]);
+					amount = Integer.parseInt(arg[1]);
 				}
 				DropFrequency df = DropFrequency.RARE;
 				switch (arg[3].toLowerCase()) {
@@ -124,13 +127,7 @@ public final class RareDropTable {
 	 * Retrieves a drop from the rare drop table.
 	 * @return The chance item to drop (<b>can be null!</b>).
 	 */
-	public static ChanceItem retrieve() {
-		int slot = RandomFunction.random(tableRarityRatio);
-		for (ChanceItem item : TABLE) {
-			if ((item.getTableSlot() & 0xFFFF) <= slot && (item.getTableSlot() >> 16) > slot) {
-				return item;
-			}
-		}
-		return null;
+	public static Item retrieve() {
+		return RandomFunction.rollChanceTable(false,TABLE).get(0);
 	}
 }

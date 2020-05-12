@@ -82,7 +82,7 @@ public final class AberrantSpectreNPC extends AbstractNPC {
 
 	@Override
 	public int[] getIds() {
-		return Tasks.ABERRANT_SPECTRES.getTask().getNpcs();
+		return Tasks.ABERRANT_SPECTRES.getNpcs();
 	}
 
 }

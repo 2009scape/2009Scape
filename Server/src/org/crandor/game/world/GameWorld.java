@@ -6,6 +6,7 @@ import org.crandor.cache.ServerStore;
 import org.crandor.game.content.eco.ge.GrandExchangeDatabase;
 import org.crandor.game.node.Node;
 import org.crandor.game.node.entity.npc.NPC;
+import org.crandor.game.node.entity.npc.drop.RareDropTable;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.object.GameObject;
 import org.crandor.game.system.SystemLogger;
@@ -167,6 +168,8 @@ public final class GameWorld {
         SQLManager.prePlugin();
         ScriptManager.load();
         PluginManager.init();
+        RareDropTable.init();
+        //SystemLogger.log("Initialized Rare Drop Table from " + RareDropTable.RDT_LOCATION);
         //ResourceAIPManager.get().init(); Commented out as we do not use Skilling Tasks, which is what this is for
         //ImmerseWorld.init(); disabled until bots are rewritten to work with the new pulse system
         SQLManager.postPlugin();
@@ -315,7 +318,7 @@ public final class GameWorld {
      */
     public static GameSettings getSettings() {
         if (settings == null) {
-            return (settings = GameSettings.parse("server.properties"));
+            return (settings = GameSettings.parse("worldprops/server.properties"));
         }
         return settings;
     }

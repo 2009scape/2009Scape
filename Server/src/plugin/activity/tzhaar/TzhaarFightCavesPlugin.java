@@ -150,7 +150,7 @@ public final class TzhaarFightCavesPlugin extends ActivityPlugin {
 			}
 			player.getPacketDispatch().sendMessage("You were victorious!");
 			BossKillCounter.addtoKillcount(player, 2745);
-			if (Tasks.forValue(player.getSlayer().getTask()) == Tasks.JAD) {
+			if (player.getSlayer().getTask() == Tasks.JAD) {
 				player.getSkills().addExperience(Skills.SLAYER, 25000);
 				player.getSlayer().clear();
 				player.sendMessage("You receive 25,000 slayer experience for defeating TzTok-Jad.");

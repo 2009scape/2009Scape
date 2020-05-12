@@ -16,7 +16,6 @@ import org.crandor.game.node.entity.player.link.prayer.PrayerType;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.map.RegionManager;
-import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.tools.RandomFunction;
 
 public class PvMBots extends AIPlayer {
@@ -135,7 +134,7 @@ public class PvMBots extends AIPlayer {
             //this.animate(new Animation(829));
             Item food = this.getInventory().getItem(foodItem);
 
-            Consumable consumable = Consumables.forFood(food.getId());
+            Consumable consumable = Consumables.getFoodByItemID(food.getId());
 
             if (consumable == null) {
                 consumable = new Food(food.getId(), new ConsumableProperties(1));

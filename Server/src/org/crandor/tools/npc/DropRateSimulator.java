@@ -1,3 +1,4 @@
+/*
 package org.crandor.tools.npc;
 
 import java.util.HashMap;
@@ -15,33 +16,43 @@ import org.crandor.game.node.item.ChanceItem;
 import org.crandor.game.world.GameWorld;
 import org.crandor.tools.RandomFunction;
 
+*/
 /**
  * Used for simulating the drop rates (so we don't fuck up our economy when
  * changing an NPC's drops).
  * @author Emperor
- */
+ *//*
+
 public final class DropRateSimulator {
 
-	/**
+	*/
+/**
 	 * The NPC id to drop test.
-	 */
+	 *//*
+
 	private static final int NPC_ID = 8614;
 
-	/**
+	*/
+/**
 	 * The drop log.
-	 */
+	 *//*
+
 	private static final Map<Integer, Integer> DROP_LOG = new HashMap<>();
 
-	/**
+	*/
+/**
 	 * If testing <just> the rare drop table.
-	 */
+	 *//*
+
 	private static boolean RDT = false;
 
-	/**
+	*/
+/**
 	 * The main method.
 	 * @param args The arguments cast on runtime.
 	 * @throws Throwable
-	 */
+	 *//*
+
 	public static void main(String[] args) throws Throwable {
 		GameWorld.prompt(false);
 		NPC npc = NPC.create(6148, ServerConstants.HOME_LOCATION);
@@ -137,10 +148,12 @@ public final class DropRateSimulator {
 		System.exit(0);
 	}
 
-	/**
+	*/
+/**
 	 * Logs a drop.
 	 * @param id The item id.
-	 */
+	 *//*
+
 	private static void log(int id) {
 		Integer value = DROP_LOG.get(id);
 		if (value == null) {
@@ -150,3 +163,4 @@ public final class DropRateSimulator {
 	}
 
 }
+*/

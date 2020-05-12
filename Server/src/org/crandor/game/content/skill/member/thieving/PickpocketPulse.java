@@ -12,10 +12,13 @@ import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.entity.player.link.audio.Audio;
 import org.crandor.game.node.entity.player.link.diary.DiaryType;
 import org.crandor.game.node.entity.state.EntityState;
+import org.crandor.game.node.item.GroundItemManager;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.GameWorld;
 import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.tools.RandomFunction;
+
+import java.util.List;
 
 /**
  * Represents the pulse used to pickpocket an npc.
@@ -74,6 +77,10 @@ public final class PickpocketPulse extends SkillPulse<NPC> {
 			player.getPacketDispatch().sendMessage("You need to be a level " + type.getLevel() + " thief in order to pick this pocket.");
 			return false;
 		}
+		if(player.getInventory().isFull()){
+			player.getPacketDispatch().sendMessage("You do not have enough space in your inventory to pick this pocket.");
+			return false;
+		}
 		player.lock(1);
 		player.faceTemporary(node, 2);
 		node.getWalkingQueue().reset();
@@ -102,9 +109,12 @@ public final class PickpocketPulse extends SkillPulse<NPC> {
 				player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).updateTask(player, 1, 6, true);
 			}
 		    player.getSkills().addExperience(Skills.THIEVING, type.getExperience(), true);
-		    Item loot = type.getRandomLoot(player);
-		    player.getInventory().add(loot);
-		    Perks.addDouble(player, loot, true);
+		    List<Item> loot = type.getRandomLoot(player);
+		    loot.stream().forEach(item -> {
+		    	if(!player.getInventory().add(item)){
+					GroundItemManager.create(item,player.getLocation(),player);
+				}
+			});
 		    player.getPacketDispatch().sendMessage(type.getRewardMessage().replace("@name", node.getName().toLowerCase()));
 		} else {
 			node.animate(NPC_ANIM);

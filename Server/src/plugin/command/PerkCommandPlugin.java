@@ -1,7 +1,6 @@
 package plugin.command;
 
-import org.crandor.game.content.skill.member.slayer.Master;
-import org.crandor.game.content.skill.member.slayer.Task;
+import org.crandor.game.content.skill.member.slayer.Tasks;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.info.Rights;
 import org.crandor.game.node.entity.player.info.portal.Perks;
@@ -80,12 +79,8 @@ public class PerkCommandPlugin extends CommandPlugin {
 				player.sendMessage("You don't have a slayer task!");
 				return true;
 			}
-			if (player.getSlayer().getMaster() == Master.WISE_OLD_MAN) {
-				player.sendMessage("You can't do this with tasks from the Wise Old Man.");
-				return true;
-			}
-			Task task = player.getSlayer().getTask();
-			if (task.isDisabled() || player.getDetails().getShop().hasPerk(Perks.SLAYER_BETRAYER)) {
+			Tasks task = player.getSlayer().getTask();
+			if (false) {
 				player.sendMessage("You have reset your task.");
 				player.getSlayer().clear();		
 				return true;

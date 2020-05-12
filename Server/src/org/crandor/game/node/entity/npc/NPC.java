@@ -4,7 +4,6 @@ import org.crandor.cache.def.impl.NPCDefinition;
 import org.crandor.game.content.global.jobs.impl.SlayingJob;
 import org.crandor.game.content.global.shop.Shop;
 import org.crandor.game.content.skill.Skills;
-import org.crandor.game.content.skill.member.slayer.Task;
 import org.crandor.game.content.skill.member.slayer.Tasks;
 import org.crandor.game.content.skill.member.summoning.familiar.Familiar;
 import org.crandor.game.interaction.Interaction;
@@ -18,6 +17,7 @@ import org.crandor.game.node.entity.combat.equipment.DefaultCombatSpell;
 import org.crandor.game.node.entity.combat.equipment.WeaponInterface;
 import org.crandor.game.node.entity.npc.agg.AggressiveBehavior;
 import org.crandor.game.node.entity.npc.agg.AggressiveHandler;
+import org.crandor.game.node.entity.npc.drop.RareDropTable;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.link.SpellBookManager;
 import org.crandor.game.node.entity.player.link.audio.Audio;
@@ -126,7 +126,7 @@ public class NPC extends Entity {
 	/**
 	 * The slayer task.
 	 */
-	private Task task;
+	private Tasks task;
 
 	/**
 	 * If the npc can never walk.
@@ -369,7 +369,7 @@ public class NPC extends Entity {
 	public void checkImpact(BattleState state) {
 		super.checkImpact(state);
 		Entity entity = state.getAttacker();
-		if (task != null && entity instanceof Player && task.getLevel() > entity.getSkills().getStaticLevel(Skills.SLAYER)) {
+		if (task != null && entity instanceof Player && task.levelReq > entity.getSkills().getStaticLevel(Skills.SLAYER)) {
 			state.neutralizeHits();
 		}
 	}
@@ -379,7 +379,7 @@ public class NPC extends Entity {
 		if ((entity instanceof Player && !definition.hasAction("attack")) || isInvisible()) {
 			return false;
 		}
-		if (task != null && entity instanceof Player && task.getLevel() > entity.getSkills().getStaticLevel(Skills.SLAYER)) {
+		if (task != null && entity instanceof Player && task.levelReq > entity.getSkills().getStaticLevel(Skills.SLAYER)) {
 			((Player) entity).getPacketDispatch().sendMessage("You need a higher slayer level to know how to wound this monster.");
 		}
 		return super.isAttackable(entity, style);
@@ -942,7 +942,7 @@ public class NPC extends Entity {
 	 * Gets the task.
 	 * @return The task.
 	 */
-	public Task getTask() {
+	public Tasks getTask() {
 		return task;
 	}
 
@@ -950,7 +950,7 @@ public class NPC extends Entity {
 	 * Sets the task.
 	 * @param task The task to set.
 	 */
-	public void setTask(Task task) {
+	public void setTask(Tasks task) {
 		this.task = task;
 	}
 

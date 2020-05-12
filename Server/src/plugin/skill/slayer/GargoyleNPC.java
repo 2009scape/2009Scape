@@ -77,7 +77,7 @@ public final class GargoyleNPC extends AbstractNPC {
 
 	@Override
 	public int[] getIds() {
-		return Tasks.GARGOYLES.getTask().getNpcs();
+		return Tasks.GARGOYLES.getNpcs();
 	}
 
 	/**

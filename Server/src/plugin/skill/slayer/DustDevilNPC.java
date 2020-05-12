@@ -91,7 +91,7 @@ public final class DustDevilNPC extends AbstractNPC {
 
 	@Override
 	public int[] getIds() {
-		return Tasks.DUST_DEVILS.getTask().getNpcs();
+		return Tasks.DUST_DEVILS.getNpcs();
 	}
 
 }

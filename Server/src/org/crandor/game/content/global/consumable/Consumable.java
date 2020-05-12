@@ -144,7 +144,7 @@ public abstract class Consumable implements Plugin<Object> {
 				player.getInventory().add(getEmptyItem());
 				return true;
 			}
-			Consumable c = Consumables.forConsumable(item);
+			Consumable c = Consumables.getConsumableByItem(item);
 			if (c != null) {
 				if (c.getEmptyItem() != null) {
 					player.getInventory().add(c.getEmptyItem());

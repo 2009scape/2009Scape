@@ -34,7 +34,7 @@ public final class CrumbleUndead extends CombatSpell {
 	@Override
 	public boolean cast(Entity entity, Node target) {
 		NPC npc = target instanceof NPC ? (NPC) target : null;
-		if (npc == null || npc.getTask() == null || !npc.getTask().isUndead()) {
+		if (npc == null || npc.getTask() == null || !npc.getTask().undead) {
 			((Player) entity).getPacketDispatch().sendMessage("This spell only affects the undead.");
 			return false;
 		}

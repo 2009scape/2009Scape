@@ -90,7 +90,7 @@ public class BunyipNPC extends Familiar {
 			player.sendMessage("You can't use this special on an object like that.");
 			return false;
 		}
-		Food food = Consumables.forFood(special.getItem().getId() + 2);
+		Food food = Consumables.getFoodByItemID(special.getItem().getId() + 2);
 		if (food == null) {
 			player.sendMessage("Error: Report to admin.");
 			return false;
@@ -129,7 +129,7 @@ public class BunyipNPC extends Familiar {
 			public boolean handle(NodeUsageEvent event) {
 				Player player = event.getPlayer();
 				Fish fish = Fish.forItem(event.getUsedItem());
-				Food food = Consumables.forFood(fish.getItem().getId() + 2);
+				Food food = Consumables.getFoodByItemID(fish.getItem().getId() + 2);
 				if (food == null) {
 					return true;
 				}

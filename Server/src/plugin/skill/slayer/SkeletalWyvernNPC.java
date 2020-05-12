@@ -85,7 +85,7 @@ public final class SkeletalWyvernNPC extends AbstractNPC {
 
 	@Override
 	public int[] getIds() {
-		return Tasks.SKELETAL_WYVERN.getTask().getNpcs();
+		return Tasks.SKELETAL_WYVERN.getNpcs();
 	}
 
 }

@@ -2,7 +2,6 @@ package plugin.skill.slayer.dungeon;
 
 import org.crandor.cache.def.impl.NPCDefinition;
 import org.crandor.game.content.skill.member.slayer.Equipment;
-import org.crandor.game.content.skill.member.slayer.Tasks;
 import org.crandor.game.interaction.Option;
 import org.crandor.game.node.Node;
 import org.crandor.game.node.entity.Entity;

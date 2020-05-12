@@ -187,7 +187,7 @@ public enum BoltEffect {
 			}
 			if (state.getVictim() instanceof NPC) {
 				NPC n = (NPC) state.getVictim();
-				if (n.getTask() != null && n.getTask().isUndead()) {
+				if (n.getTask() != null && n.getTask().undead) {
 					return false;
 				}
 			}

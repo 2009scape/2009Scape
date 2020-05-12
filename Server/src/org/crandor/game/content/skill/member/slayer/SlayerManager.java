@@ -11,7 +11,6 @@ import org.crandor.tools.RandomFunction;
 
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -35,7 +34,7 @@ public final class SlayerManager implements SavingModule {
 	/**
 	 * The current task.
 	 */
-	private Task task;
+	private Tasks task;
 
 	/**
 	 * The amount of the hunted killed.
@@ -65,7 +64,7 @@ public final class SlayerManager implements SavingModule {
 	/**
 	 * The removed tasks.
 	 */
-	private final List<Task> removed = new ArrayList<>(4);
+	private final List<Tasks> removed = new ArrayList<>(4);
 
 	/**
 	 * Constructs a new {@Code SlayerManager} {@Code Object}
@@ -94,7 +93,7 @@ public final class SlayerManager implements SavingModule {
 					System.err.println("Invalid task i for " + player.getUsername() + " taskId = " + taskId);
 					break;
 				}
-				task = Tasks.values()[taskId].getTask();
+				task = Tasks.values()[taskId];
 				break;
 			case 3:
 				amount = buffer.getInt();
@@ -114,7 +113,7 @@ public final class SlayerManager implements SavingModule {
 			case 7:
 				size = buffer.get();
 				for (int i = 0; i < size; i++) {
-					removed.add(Tasks.values()[buffer.getInt()].getTask());
+					removed.add(Tasks.values()[buffer.getInt()]);
 				}
 				break;
 			case 8:
@@ -141,7 +140,7 @@ public final class SlayerManager implements SavingModule {
 		}
 		if (task != null) {
 			buffer.put((byte) 2);
-			buffer.putInt(Tasks.forValue(task).ordinal());
+			buffer.putInt(task.ordinal());
 		}
 		if (task != null) {
 			buffer.put((byte) 3);
@@ -164,8 +163,8 @@ public final class SlayerManager implements SavingModule {
 		}
 		if (!removed.isEmpty()) {
 			buffer.put((byte) 7).put((byte) removed.size());
-			for (Task task : removed)  {
-				buffer.putInt(Tasks.forValue(task).ordinal());
+			for (Tasks task : removed)  {
+				buffer.putInt(task.ordinal());
 			}
 		}
 		if (taskTotal != 0){
@@ -219,7 +218,7 @@ public final class SlayerManager implements SavingModule {
 	 * @param task the task.
 	 * @param master the master.
 	 */
-	public void assign(Task task, final Master master) {
+	public void assign(Tasks task, final Master master) {
 		if (master == Master.DURADEL) {
 			if (!player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).isComplete(2, 3)) {
 				player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).updateTask(player, 2, 3, true);
@@ -235,7 +234,7 @@ public final class SlayerManager implements SavingModule {
 		}
 		setMaster(master);
 		setTask(task);
-		setAmount(getRandomAmount(task.getRanges(master)));
+		setAmount(getRandomAmount(master.assignment_range));
 	}
 
 	/**
@@ -243,16 +242,23 @@ public final class SlayerManager implements SavingModule {
 	 * @param master the master to give the task.
 	 */
 	public void generate(Master master) {
-		final List<Task> tasks = Arrays.asList(Tasks.getTasks(master));
+		final List<Master.Task> tasks = new ArrayList<>();
+		final int[] taskWeightSum = {0};
+		master.tasks.stream().filter(task -> canBeAssigned(task.task) && task.task.combatCheck <= player.getProperties().getCurrentCombatLevel()).forEach(task -> {
+					taskWeightSum[0] += task.weight;
+					tasks.add(task);
+		});
 		Collections.shuffle(tasks, RandomFunction.RANDOM);
-
-		for (Task task : tasks) {
-			if (!task.canAssign(player, master)) {
-				continue;
-			}
-			assign(task, master);
-			break;
+		int rnd = RandomFunction.random(taskWeightSum[0]);
+		for(Master.Task task : tasks){
+			if(rnd < task.weight)
+				assign(task.task,master);
+			rnd -= task.weight;
 		}
+	}
+
+	public boolean canBeAssigned(Tasks task){
+		return player.getSkills().getLevel(Skills.SLAYER) >= task.levelReq && !removed.contains(task);
 	}
 
 	/**
@@ -293,7 +299,7 @@ public final class SlayerManager implements SavingModule {
 	 * Gets the task.
 	 * @return The task.
 	 */
-	public Task getTask() {
+	public Tasks getTask() {
 		return task;
 	}
 
@@ -301,7 +307,7 @@ public final class SlayerManager implements SavingModule {
 	 * Sets the task.
 	 * @param task The task to set.
 	 */
-	public void setTask(Task task) {
+	public void setTask(Tasks task) {
 		this.task = task;
 	}
 
@@ -427,7 +433,7 @@ public final class SlayerManager implements SavingModule {
 	 * Gets the removed.
 	 * @return the removed.
 	 */
-	public List<Task> getRemoved() {
+	public List<Tasks> getRemoved() {
 		return removed;
 	}
 

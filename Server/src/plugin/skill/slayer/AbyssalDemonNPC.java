@@ -70,7 +70,7 @@ public class AbyssalDemonNPC extends AbstractNPC {
 
 	@Override
 	public int[] getIds() {
-		return Tasks.ABYSSAL_DEMONS.getTask().getNpcs();
+		return Tasks.ABYSSAL_DEMONS.getNpcs();
 	}
 
 }

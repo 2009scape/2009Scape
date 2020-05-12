@@ -1,6 +1,5 @@
 package org.crandor.game.node.entity.player.ai.pvp;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.crandor.game.container.impl.EquipmentContainer;
@@ -9,14 +8,11 @@ import org.crandor.game.content.global.consumable.ConsumableProperties;
 import org.crandor.game.content.global.consumable.Consumables;
 import org.crandor.game.content.global.consumable.Food;
 import org.crandor.game.content.skill.Skills;
-import org.crandor.game.node.entity.Entity;
-import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.ai.AIPlayer;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
-import org.crandor.game.world.map.RegionManager;
 import org.crandor.game.world.map.path.Pathfinder;
 import org.crandor.game.world.update.flag.context.ChatMessage;
 import org.crandor.game.world.update.flag.player.ChatFlag;
@@ -171,7 +167,7 @@ public class PVPAIPActions {
 		if((bot.getSkills().getStaticLevel(Skills.HITPOINTS) > bot.getSkills().getLifepoints() * 3) && bot.getInventory().containsItem(shark)) {
 			bot.lock(3);
 			Item food = bot.getInventory().getItem(shark);
-			Consumable consumable = Consumables.forFood(food.getId());
+			Consumable consumable = Consumables.getFoodByItemID(food.getId());
 			if (consumable == null) {
 				consumable = new Food(food.getId(), new ConsumableProperties(1));
 			}

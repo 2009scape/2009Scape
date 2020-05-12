@@ -6,10 +6,7 @@ import org.crandor.game.node.item.GroundItemManager;
 import org.crandor.game.node.item.Item;
 
 import java.nio.ByteBuffer;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Represents a container which contains items.
@@ -123,6 +120,11 @@ public class Container {
         }
         update();
         return addedAll;
+    }
+
+    public void addList(List<Item> items){
+        items.stream().filter(Objects::nonNull).forEach(this::add);
+        update();
     }
 
     /**

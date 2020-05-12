@@ -25,6 +25,7 @@ import org.crandor.tools.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Holds and handles the NPC drop tables.
@@ -86,75 +87,30 @@ public final class NPCDropTables {
 	 * @param looter The entity gaining the loot.
 	 */
 	public void drop(NPC npc, Entity looter) {
-		if(npc.getId() == 8614) {
-			npc.getDropLocation().setLocation(new Location(3696, 5807, 0));
-		}
 		Player p = looter instanceof Player ? (Player) looter : null;
-		for (ChanceItem item : defaultTable) {
-			int amount = RandomFunction.random(item.getMinimumAmount(), item.getMaximumAmount() + 1);
-			if (npc.getName().startsWith("Revenant") && item.getName().equalsIgnoreCase("coins")) {
-				break;
-			}
-			createDrop(new Item(item.getId(), amount), p, npc, npc.getDropLocation());
-		}
+
 		if (!charmTable.isEmpty()) {
-			int slot = RandomFunction.random(1000);
-			for (ChanceItem item : charmTable) {
-				if ((item.getTableSlot() & 0xFFFF) <= slot && (item.getTableSlot() >> 16) > slot) {
-					if (p != null && item != null && item.getId() != 0) {
-						if (p.hasPerk(Perks.CHARM_COLLECTOR) && p.getSavedData().getGlobalData().isEnableCharmCollector() && p.getInventory().hasSpaceFor(item)) {
-							p.getInventory().add(item);
-							if (item.getAmount() == 1) {
-								p.sendMessage("<col=990000>You have collected a charm!");
-							} else {
-								p.sendMessage("<col=990000>You have collected some charms!");
-							}
-							break;
-						}
-					}
+			boolean rollCharms = RandomFunction.random(5) == 3;
+			if(rollCharms) {
+				List<Item> reward = RandomFunction.rollChanceTable(false, charmTable);
+				reward.stream().forEach(item -> {
 					createDrop(item, p, npc, npc.getDropLocation());
-					break;
-				}
+				});
 			}
 		}
-		if (!mainTable.isEmpty()) {
-			if (mainTable.size() == 1 && RandomFunction.random(400) > 10 && npc.getId() != 49) {
-				return;// temp for npcs with 1 drop size table.
+		RandomFunction.rollChanceTable(false,defaultTable).stream().forEach(item -> {
+			createDrop(item, p, npc, npc.getDropLocation());
+		});
+		RandomFunction.rollChanceTable(false,mainTable).stream().forEach(item -> {
+			//boolean hasWealthRing = p != null && p.getEquipment().getNew(EquipmentContainer.SLOT_RING).getId() == 2572;
+			boolean isRDTSlot = item.getId() == RareDropTable.SLOT_ITEM_ID;
+			if (isRDTSlot) {
+				item = RareDropTable.retrieve();
 			}
-			if (p != null && npc.getDefinition().getConfigurations().containsKey(NPCConfigSQLHandler.CLUE_LEVEL) && p.hasPerk(Perks.DETECTIVE) && RandomFunction.random(100) <= 5) {
-				Item item = new Item(2677);
+			if (item != null && p != null && npc != null) {
 				createDrop(item, p, npc, npc.getDropLocation());
-				return;
 			}
-			boolean hasWealthRing = p != null && p.getEquipment().getNew(EquipmentContainer.SLOT_RING).getId() == 2572;
-			int slot = RandomFunction.random(mainTableSize);
-			for (ChanceItem item : mainTable) {
-				if (item.getSetRate() != -1) {
-					//p.sendMessage("Rate is <col=CC0000>1/"+item.getSetRate()+"</col> for <col=CC0000>"+item.getName()+"</col>.");
-					int rand = RandomFunction.random(item.getSetRate());
-					if (rand == 1) {						
-						createDrop(item.getRandomItem(), p, npc, npc.getDropLocation());
-						return;
-					}
-				}
-			}
-			for (ChanceItem item : mainTable) {
-				boolean isRDTSlot = item.getId() == RareDropTable.SLOT_ITEM_ID;
-				boolean create = false;
-				if (item.getSetRate() == -1) {
-					create = ((item.getTableSlot() & 0xFFFF) <= slot && (item.getTableSlot() >> 16) > slot) || (isRDTSlot && hasWealthRing && RandomFunction.random(8) == 1);
-				}
-				if (create) {
-					if (isRDTSlot) {
-						item = RareDropTable.retrieve();
-					}
-					if (item != null && p != null && npc != null) {
-						createDrop(item.getRandomItem(), p, npc, npc.getDropLocation());
-					}
-					break;
-				}
-			}
-		}
+		});
 		if (RandomFunction.randomize(45) == 1) {
 		    createDrop(new Item(6199, 1), p, npc, npc.getDropLocation());
 		}
@@ -206,95 +162,6 @@ public final class NPCDropTables {
 				GroundItemManager.create(item, l);
 			}
 		}
-	}
-
-	/**
-	 * Prepares the tables for use in the game.
-	 */
-	public void prepare(double modRate) {
-		// Prepare the charms drop table.
-		this.setModRate(modRate);
-		int slot = 0;
-		int index = -1;
-		int amount = 0;
-		for (int i = 0; i < charmTable.size(); i++) {
-			ChanceItem charm = charmTable.get(i);
-			int rate = (int) (charm.getChanceRate() * 1000);
-			if (rate > amount) {
-				index = i;
-				amount = rate;
-			}
-			slot += rate;
-		}
-		amount = 1000 - slot;
-		slot = 0;
-		for (ChanceItem charm : charmTable) {
-			int rate = (int) (charm.getChanceRate() * 1000.0);
-			if (index-- == 0) {
-				rate += amount;
-			}
-			charm.setTableSlot(slot | (int) (slot += rate) << 16);
-		}
-		if (!charmTable.isEmpty() && slot != 1000) {
-			if (slot == 0) {
-				charmTable.clear();
-			} else {
-				System.err.println("Charm percentage incorrect! [" + (slot * .1) + "%, " + def.getId() + "]");
-			}
-		}
-		// Prepare the main drop table.
-		slot = 0;
-		if (!mainTable.isEmpty()) {
-			double ratio = getStabilizerRatio();
-			int commonAmount = 0;
-			for (ChanceItem item : mainTable) {
-				if (item.getDropFrequency() == DropFrequency.COMMON) {
-					commonAmount++;
-					continue;
-				}
-				double rate = 1.0;
-				if (item.getChanceRate() > 0.0) {
-					rate = item.getChanceRate();
-				}
-				
-				if (modRate != 0.0) {
-					rate += modRate;
-				}
-				int rarity = (int) (DROP_RATES[item.getDropFrequency().ordinal() - 1] * rate);
-				item.setTableSlot(slot | ((slot += rarity) << 16));
-			}
-			mainTableSize = (int) (10_000 * ratio);
-			if (slot >= mainTableSize) {
-				mainTableSize = (int) (slot + ((1 - (commonAmount / mainTable.size())) * mainTableSize));
-			}
-			if (commonAmount > 0) {
-				int count = commonAmount;
-				int rarity = (mainTableSize - slot) / commonAmount;
-				if (rarity < DROP_RATES[0]) {
-					mainTableSize = slot + (commonAmount * DROP_RATES[0]);
-					rarity = DROP_RATES[0];
-				}
-				for (ChanceItem item : mainTable) {
-					if (item.getDropFrequency() == DropFrequency.COMMON) {
-						if (--count == 0) {
-							rarity = mainTableSize - slot;
-						}
-						item.setTableSlot(slot | ((slot += rarity) << 16));
-					}
-				}
-			}
-		}
-	}
-
-	/**
-	 * Prepares the table.
-	 */
-	public void prepare() {
-		double rate = 0.0;
-		if (EconomyManagement.getEcoState() == EcoStatus.BOOSTING) {
-			rate = EconomyManagement.getModificationRate();
-		}
-		prepare(rate);
 	}
 
 	/**
