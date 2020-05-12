@@ -12,3 +12,9 @@ CompiledServer/*
 *.class
 CompiledServer/
 *.class
+Server/gradle/
+Server/build/
+Server/.gradle/
+Client/gradle/
+Client/build/
+Client/.gradle/
