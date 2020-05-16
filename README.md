@@ -13,7 +13,8 @@ Requirements:
 Be sure to check the debugging section when something goes wrong.
 
 ## Step 1:
-- Fork this repository to your repo
+-**If you are trying to develop for this project/commit code, then it is preferrable that you fork Ceikry/RS-2009's Development branch and only create pull requests for Ceikry's RS-2009/development branch.**
+If you are not interested in developing on this project and only intend to have your own copy, then fork this repository to your repo.
 
 ## Step 2: Setting up IntelliJ
 - Open IntelliJ
@@ -23,6 +24,7 @@ Be sure to check the debugging section when something goes wrong.
 - Click `File` > `Project Structure` > `Modules` > `RS-2009` > `Paths` > `Inherit project compile output path`
   - Hit `OK`
 - Click `File` > `Project Structure` > `Project` > Change the Project Compiler Output to the folder where the project exists on your computer
+- In the bottom right of IntelliJ, where it specifies the branch, **make sure you are developing on the development branch. **
   
 ## Step 3: Setting up the Database
 Since this portion of the guide is operating-system specific, you will either need basic database knowledge or a bit of help. Below are the things that need to be configured.
