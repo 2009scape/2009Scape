@@ -24,7 +24,8 @@ If you are not interested in developing on this project and only intend to have 
 - Click `File` > `Project Structure` > `Modules` > `RS-2009` > `Paths` > `Inherit project compile output path`
   - Hit `OK`
 - Click `File` > `Project Structure` > `Project` > Change the Project Compiler Output to the folder where the project exists on your computer
-- In the bottom right of IntelliJ, where it specifies the branch, **make sure you are developing on the development branch. **
+- In the bottom right of IntelliJ, where it specifies the branch, 
+**make sure you are developing on the development branch.**
   
 ## Step 3: Setting up the Database
 Since this portion of the guide is operating-system specific, you will either need basic database knowledge or a bit of help. Below are the things that need to be configured.
