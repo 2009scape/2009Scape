@@ -82,7 +82,7 @@ public final class CanoeExtension {
 	/**
 	 * Represents the distances to travel(indexes)
 	 */
-	private static final int distances[] = new int[] { 1, 2, 4, 4 };
+	private static final int distances[] = new int[] { 1, 2, 3, 4 };
 
 	/**
 	 * Represents the player instance.
