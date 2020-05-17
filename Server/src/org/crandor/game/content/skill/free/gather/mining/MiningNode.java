@@ -220,6 +220,7 @@ public enum MiningNode{
         SILVER_ORE_35(11948,11555, (byte) 7),
         SILVER_ORE_36(11949,11556, (byte) 7),
         SILVER_ORE_37(11950,11557, (byte) 7),
+        SILVER_ORE_38(2311, 11552, (byte) 7),
 
         //Coal
         COAL_0( 2097, 452,   (byte) 8),

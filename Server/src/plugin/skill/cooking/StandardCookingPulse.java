@@ -1,5 +1,6 @@
 package plugin.skill.cooking;
 
+import org.crandor.game.content.ItemNames;
 import org.crandor.game.content.global.SkillcapePerks;
 import org.crandor.game.content.global.tutorial.TutorialSession;
 import org.crandor.game.content.global.tutorial.TutorialStage;
@@ -45,7 +46,7 @@ public class StandardCookingPulse extends Pulse {
     public void start() {
         if(checkRequirements()) {
             super.start();
-            cook(player,object,CookableItems.cookingMap.get(initial) == null ? false : isBurned(player,object,initial),initial,product);
+            cook(player,object, CookableItems.cookingMap.get(initial) != null && isBurned(player, object, initial),initial,product);
             amount--;
         }
     }
@@ -108,7 +109,11 @@ public class StandardCookingPulse extends Pulse {
     }
 
     public boolean isBurned(final Player player, final GameObject object, int food) {
+        boolean hasGauntlets = player.getEquipment().containsItem(new Item(ItemNames.COOKING_GAUNTLETS_775));
         double burn_stop = (double)CookableItems.getBurnLevel(food);
+        if(hasGauntlets && (food == ItemNames.RAW_SWORDFISH || food == ItemNames.RAW_LOBSTER || food == ItemNames.RAW_SHARK)){
+            burn_stop -= 6;
+        }
         if (SkillcapePerks.hasSkillcapePerk(player, SkillcapePerks.COOKING)) {
             return false;
         }

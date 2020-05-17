@@ -27,7 +27,7 @@ public final class CanoeOptionPlugin extends OptionHandler {
 			if (station == CanoeStation.WILDERNESS) {
 				continue;
 			}
-			int[] ids = new int[] { 12140, 12141, 12142, 12143, 12145, 12146, 12147, 12148, 12151, 12152, 12153, 12154, 12155, 12156, 12157, 12158, 12144, 12146, 12149, 12150, 12157 };
+			int ids[] = new int[] { 12140, 12141, 12142, 12143, 12145, 12146, 12147, 12148, 12151, 12152, 12153, 12154, 12155, 12156, 12157, 12158, 12144, 12146, 12149, 12150, 12157 };
 			for (String option : options) {
 				for (int i : ids) {
 					ObjectDefinition.forId(i).getConfigurations().put("option:" + option, this);

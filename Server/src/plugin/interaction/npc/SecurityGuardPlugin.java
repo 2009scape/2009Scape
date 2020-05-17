@@ -9,7 +9,7 @@ import org.crandor.game.node.item.Item;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.plugin.Plugin;
 import org.crandor.plugin.PluginManager;
-import org.crandor.tools.ItemNames;
+import org.crandor.game.content.ItemNames;
 
 @InitializablePlugin
 public final class SecurityGuardPlugin extends OptionHandler {

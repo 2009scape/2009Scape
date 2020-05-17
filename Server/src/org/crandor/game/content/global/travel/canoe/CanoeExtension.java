@@ -244,7 +244,7 @@ public final class CanoeExtension {
 
 	/**
 	 * Method used to travel to a canoe station.
-	 * @param destinationStation the station to travel to.
+   * @param destinationStation the station to travel to.
 	 */
 	public final void travel(final CanoeStation destinationStation) {
 		player.getInterfaceManager().close();
@@ -267,7 +267,7 @@ public final class CanoeExtension {
 					player.getInterfaceManager().hideTabs(0, 1, 2, 3, 4, 5, 6, 11, 12);
 					break;
 				case 16:
-					player.getProperties().setTeleportLocation(destinationStation.getDestination());
+          player.getProperties().setTeleportLocation(destinationStation.getDestination());
 					break;
 				case 17:
 					if (getCurrentStation() == CanoeStation.LUMBRIDGE && destinationStation == CanoeStation.EDGEVILLE && canoe == Canoe.WAKA && !player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).isComplete(2, 2)) {

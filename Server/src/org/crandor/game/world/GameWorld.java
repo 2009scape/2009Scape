@@ -269,7 +269,8 @@ public final class GameWorld {
         LandscapeParser.addGameObject(new GameObject(2646, new Location(2445, 3413, 0), 10,0)); // Gnome Stronghold flax
         LandscapeParser.addGameObject(new GameObject(2646, new Location(2447, 3414, 0), 10,2)); // Gnome Stronghold flax
         LandscapeParser.addGameObject(new GameObject(2646, new Location(2447, 3421, 0), 10,0));// Gnome Stronhold flax
-
+        LandscapeParser.removeGameObject(new GameObject(37670, new Location(3292,3299,0),10,0));
+        LandscapeParser.addGameObject(new GameObject(37304, new Location(3292,3299,0),10,0));
         NPC[] npcs = new NPC[]{new NPC(494, new Location(2327, 3687, 0))};
         Arrays.stream(npcs).forEach(npc -> npc.setDirection(Direction.EAST));
     }
