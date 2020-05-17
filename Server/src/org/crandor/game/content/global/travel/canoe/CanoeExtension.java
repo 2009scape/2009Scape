@@ -28,9 +28,9 @@ public final class CanoeExtension {
 	private static final Component shape = new Component(52);
 
 	/**
-	 * Represents the destination component.
+	 * Represents the destination selection interface component.
 	 */
-	private static final Component destination = new Component(53);
+	private static final Component destinationSelector = new Component(53);
 
 	/**
 	 * Represents the animation of pushing a canoe.
@@ -60,7 +60,7 @@ public final class CanoeExtension {
 	private static final Animation SINK = new Animation(3305);
 
 	/**
-	 * Represents multiple config base id's of different states of canoes.
+	 * Represents multiple config base ids of different states of canoes.
 	 */
 	private static final int[] CONFIGS = new int[] { 9, 10, 1, 5, 11 };
 
@@ -72,17 +72,17 @@ public final class CanoeExtension {
 	/**
 	 * Represents the boat childs (indexes)
 	 */
-	private static final int boatChilds[] = new int[] { 47, 48, 3, 6, 49 };
+	private static final int[] boatChilds = new int[] { 47, 48, 3, 6, 49 };
 
 	/**
 	 * Represents the location childs (indexes)
 	 */
-	private static final int locationChilds[] = new int[] { 50, 47, 44, 36 };
+	private static final int[] locationChilds = new int[] { 50, 47, 44, 36 };
 
 	/**
-	 * Represents the distances to travel(indexes)
+	 * Represents the maximum distances that every canoe type can travel (indexes)
 	 */
-	private static final int distances[] = new int[] { 1, 2, 3, 4 };
+	private static final int[] maxDistances = new int[] { 1, 2, 3, 4 };
 
 	/**
 	 * Represents the player instance.
@@ -98,7 +98,7 @@ public final class CanoeExtension {
 	/**
 	 * Represents the current canoe station the {@link #player} is at.
 	 */
-	private CanoeStation station;
+	private CanoeStation currentStation;
 
 	/**
 	 * Represents the current canoe.
@@ -132,8 +132,8 @@ public final class CanoeExtension {
 	 * Method used to chop down a tree.
 	 * @param object the object.
 	 */
-	public final void chop(final GameObject object) {
-		final CanoeStation station = CanoeStation.forObject(object);
+	public final void chopTree(final GameObject object) {
+		final CanoeStation station = CanoeStation.getStationByObject(object);
 		final SkillingTool axe = getTool();
 		if (axe == null) {
 			player.getPacketDispatch().sendMessage("You do not have an axe which you have the woodcutting level to use.");
@@ -153,7 +153,7 @@ public final class CanoeExtension {
 				player.getConfigManager().set(674, CONFIGS[0] << (station.ordinal() * 8));
 				player.getConfigManager().set(674, CONFIGS[1] << (station.ordinal() * 8));
 				player.getPacketDispatch().sendObjectAnimation(object, FALL, false);
-				setStation(station);
+				setCurrentStation(station);
 				setStage(1);
 				return true;
 			}
@@ -162,12 +162,11 @@ public final class CanoeExtension {
 
 	/**
 	 * Method used to shape a canoe.
-	 * @param object the object.
 	 */
-	public final void shape(final GameObject object) {
+	public final void shapeCanoe() {
 		player.getInterfaceManager().open(shape);
 		for (int i = 0; i < shapeConfigs.length; i++) {
-			if (player.getSkills().getLevel(Skills.WOODCUTTING) < Canoe.values()[i].getLevel()) {
+			if (player.getSkills().getLevel(Skills.WOODCUTTING) < Canoe.values()[i].getRequiredLevel()) {
 				continue;
 			}
 			player.getPacketDispatch().sendInterfaceConfig(52, shapeConfigs[i][0], true);
@@ -179,9 +178,9 @@ public final class CanoeExtension {
 	 * Method used to craft a canoe.
 	 * @param canoe the canoe.
 	 */
-	public final void craft(final Canoe canoe) {
-		if (player.getSkills().getLevel(Skills.WOODCUTTING) < canoe.getLevel()) {
-			player.getPacketDispatch().sendMessage("You need a woodcutting level of at least " + canoe.getLevel() + " to make this canoe.");
+	public final void craftCanoe(final Canoe canoe) {
+		if (player.getSkills().getLevel(Skills.WOODCUTTING) < canoe.getRequiredLevel()) {
+			player.getPacketDispatch().sendMessage("You need a woodcutting level of at least " + canoe.getRequiredLevel() + " to make this canoe.");
 			return;
 		}
 		player.getInterfaceManager().close();
@@ -196,11 +195,11 @@ public final class CanoeExtension {
 			@Override
 			public boolean pulse() {
 				if (RandomFunction.random(canoe == Canoe.WAKA ? 8 : 6) == 1) {
-					if (station == CanoeStation.EDGEVILLE && canoe == Canoe.WAKA && !player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(2, 0)) {
+					if (currentStation == CanoeStation.EDGEVILLE && canoe == Canoe.WAKA && !player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(2, 0)) {
 						player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 2, 0, true);
 					}
-					player.getConfigManager().set(674, station == CanoeStation.BARBARIAN_VILLAGE ? station.getCraftConfig(canoe, false) : (CONFIGS[2] << (station.ordinal() * 8)) + station.getCraftConfig(canoe, false));
-					player.getConfigManager().set(675, (station.ordinal() + 1) << 17);
+					player.getConfigManager().set(674, currentStation == CanoeStation.BARBARIAN_VILLAGE ? currentStation.getCraftConfig(canoe, false) : (CONFIGS[2] << (currentStation.ordinal() * 8)) + currentStation.getCraftConfig(canoe, false));
+					player.getConfigManager().set(675, (currentStation.ordinal() + 1) << 17);
 					player.getSkills().addExperience(Skills.WOODCUTTING, canoe.getExperience());
 					setCanoe(canoe);
 					setStage(2);
@@ -221,12 +220,12 @@ public final class CanoeExtension {
 	}
 
 	/**
-	 * Method used to float the canoe.
+	 * Method used to set afloat the canoe.
 	 * @param object the object.
 	 */
-	public final void floatCanoe(final GameObject object) {
+	public final void setAfloat(final GameObject object) {
 		player.animate(PUSH);
-		player.getConfigManager().set(674, (CONFIGS[3] << (station.ordinal() * 8)) + station.getCraftConfig(canoe, true));
+		player.getConfigManager().set(674, (CONFIGS[3] << (currentStation.ordinal() * 8)) + currentStation.getCraftConfig(canoe, true));
 		GameWorld.Pulser.submit(new Pulse(1) {
 			int counter = 0;
 
@@ -234,7 +233,7 @@ public final class CanoeExtension {
 			public boolean pulse() {
 				if (counter == 1) {
 					player.getPacketDispatch().sendObjectAnimation(object, FLOAT, false);
-					player.getConfigManager().set(674, (CONFIGS[4] << (station.ordinal() * 8)) + station.getFloatConfig(canoe));
+					player.getConfigManager().set(674, (CONFIGS[4] << (currentStation.ordinal() * 8)) + currentStation.getFloatConfig(canoe));
 					setStage(3);
 				}
 				counter += 1;
@@ -245,9 +244,9 @@ public final class CanoeExtension {
 
 	/**
 	 * Method used to travel to a canoe station.
-	 * @param station the station to travel to.
+	 * @param destinationStation the station to travel to.
 	 */
-	public final void travel(final CanoeStation station) {
+	public final void travel(final CanoeStation destinationStation) {
 		player.getInterfaceManager().close();
 		if (player.getFamiliarManager().hasFamiliar()) {
 			player.getPacketDispatch().sendMessage("You can't take a follower on a canoe.");
@@ -268,22 +267,22 @@ public final class CanoeExtension {
 					player.getInterfaceManager().hideTabs(0, 1, 2, 3, 4, 5, 6, 11, 12);
 					break;
 				case 16:
-					player.getProperties().setTeleportLocation(station.getDestination());
+					player.getProperties().setTeleportLocation(destinationStation.getDestination());
 					break;
 				case 17:
-					if (getStation() == CanoeStation.LUMBRIDGE && station == CanoeStation.EDGEVILLE && canoe == Canoe.WAKA && !player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).isComplete(2, 2)) {
+					if (getCurrentStation() == CanoeStation.LUMBRIDGE && destinationStation == CanoeStation.EDGEVILLE && canoe == Canoe.WAKA && !player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).isComplete(2, 2)) {
 						player.getAchievementDiaryManager().updateTask(player, DiaryType.LUMBRIDGE, 2, 2, true);
 					}
 					player.getInterfaceManager().close();
 					player.getInterfaceManager().restoreTabs();
 					PacketRepository.send(MinimapState.class, new MinimapStateContext(player, 0));
-					player.getPacketDispatch().sendMessage("You arrive " + (station != CanoeStation.WILDERNESS ? "at " + station.getName() + "." : "in the wilderness. There are no trees suitable to make a canoe."));
-					player.getPacketDispatch().sendMessage(station != CanoeStation.WILDERNESS ? "Your canoe sinks into the water after the hard journey." : "Your canoe sinks into the water after the hard journey. Looks like you're");
-					if (station == CanoeStation.WILDERNESS) {
+					player.getPacketDispatch().sendMessage("You arrive " + (destinationStation != CanoeStation.WILDERNESS ? "at " + destinationStation.getName() + "." : "in the wilderness. There are no trees suitable to make a canoe."));
+					player.getPacketDispatch().sendMessage(destinationStation != CanoeStation.WILDERNESS ? "Your canoe sinks into the water after the hard journey." : "Your canoe sinks into the water after the hard journey. Looks like you're");
+					if (destinationStation == CanoeStation.WILDERNESS) {
 						player.getPacketDispatch().sendMessage("walking back.");
 					}
 					setCanoe(null);
-					setStation(null);
+					setCurrentStation(null);
 					setStage(0);
 					player.unlock();
 					player.getConfigManager().set(674, 0);
@@ -297,22 +296,21 @@ public final class CanoeExtension {
 	}
 
 	/**
-	 * Method used to paddle the canoe.
-	 * @param object the object.
+	 * Method used to select the destination.
 	 */
-	public final void paddle(final GameObject object) {
-		player.getInterfaceManager().open(destination);
-		int index = station.ordinal();
-		player.getPacketDispatch().sendInterfaceConfig(53, boatChilds[index], true);
-		player.getPacketDispatch().sendInterfaceConfig(53, locationChilds[index], false);
-		int distance = distances[canoe.ordinal()];
-		for (int i = 0; i < 5; i++) {
-			if (Math.abs(station.ordinal() - i) > distance) {
+	public final void selectDestination() {
+		player.getInterfaceManager().open(destinationSelector);
+		int stationIndex = currentStation.ordinal();
+		player.getPacketDispatch().sendInterfaceConfig(53, boatChilds[stationIndex], true);
+		player.getPacketDispatch().sendInterfaceConfig(53, locationChilds[stationIndex], false);
+		int maxDistance = maxDistances[canoe.ordinal()];
+		for (int i = 0; i < CanoeStation.values().length; i++) {
+			if (Math.abs(currentStation.ordinal() - i) > maxDistance) {
 				player.getPacketDispatch().sendInterfaceConfig(53, boatChilds[i], true);
 			}
 		}
 		if (canoe != Canoe.WAKA) {
-			player.getPacketDispatch().sendInterfaceConfig(53, 31, true);
+			player.getPacketDispatch().sendInterfaceConfig(53, 49, true);
 		}
 	}
 
@@ -361,7 +359,7 @@ public final class CanoeExtension {
 	 * @param tool the tool.
 	 * @return the animation.
 	 */
-	private final Animation getAnimation(final SkillingTool tool) {
+	private Animation getAnimation(final SkillingTool tool) {
 		Animation animation = null;
 		switch (tool) {
 		case BRONZE_AXE:
@@ -398,16 +396,16 @@ public final class CanoeExtension {
 	 * Gets the station.
 	 * @return The station.
 	 */
-	public CanoeStation getStation() {
-		return station;
+	public CanoeStation getCurrentStation() {
+		return currentStation;
 	}
 
 	/**
 	 * Sets the station.
-	 * @param station The station to set.
+	 * @param currentStation The station to set.
 	 */
-	public void setStation(CanoeStation station) {
-		this.station = station;
+	public void setCurrentStation(CanoeStation currentStation) {
+		this.currentStation = currentStation;
 	}
 
 	/**

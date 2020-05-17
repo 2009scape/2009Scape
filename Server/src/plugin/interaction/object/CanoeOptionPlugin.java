@@ -27,7 +27,7 @@ public final class CanoeOptionPlugin extends OptionHandler {
 			if (station == CanoeStation.WILDERNESS) {
 				continue;
 			}
-			int ids[] = new int[] { 12140, 12141, 12142, 12143, 12145, 12146, 12147, 12148, 12151, 12152, 12153, 12154, 12155, 12156, 12157, 12158, 12144, 12146, 12149, 12150, 12157 };
+			int[] ids = new int[] { 12140, 12141, 12142, 12143, 12145, 12146, 12147, 12148, 12151, 12152, 12153, 12154, 12155, 12156, 12157, 12158, 12144, 12146, 12149, 12150, 12157 };
 			for (String option : options) {
 				for (int i : ids) {
 					ObjectDefinition.forId(i).getConfigurations().put("option:" + option, this);
@@ -41,7 +41,7 @@ public final class CanoeOptionPlugin extends OptionHandler {
 	public boolean handle(Player player, Node node, String option) {
 		final GameObject object = ((GameObject) node);
 		final CanoeExtension extension = CanoeExtension.extension(player);
-		if (extension.getStage() != 0 && extension.getStation() != null && extension.getStation() != CanoeStation.forObject(object)) {
+		if (extension.getStage() != 0 && extension.getCurrentStation() != null && extension.getCurrentStation() != CanoeStation.getStationByObject(object)) {
 			extension.setStage(0);
 		}
 		if (extension.getStage() != 0) {
@@ -52,16 +52,16 @@ public final class CanoeOptionPlugin extends OptionHandler {
 		}
 		switch (extension.getStage()) {
 		case 0:
-			extension.chop(object);
+			extension.chopTree(object);
 			break;
 		case 1:
-			extension.shape(object);
+			extension.shapeCanoe();
 			break;
 		case 2:
-			extension.floatCanoe(object);
+			extension.setAfloat(object);
 			break;
 		case 3:
-			extension.paddle(object);
+			extension.selectDestination();
 			break;
 		}
 		return true;

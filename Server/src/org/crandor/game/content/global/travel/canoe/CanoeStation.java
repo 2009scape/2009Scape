@@ -10,17 +10,22 @@ import org.crandor.tools.StringUtils;
  * @date 09/11/2013
  */
 public enum CanoeStation {
-	LUMBRIDGE(12163, new int[] { 47 }, Location.create(3240, 3242, 0), new Location(3241, 3235, 0)), CHAMPIONS_GUILD(12164, new int[] { 48 }, Location.create(3199, 3344, 0), new Location(3200, 3341, 0)), BARBARIAN_VILLAGE(12165, new int[] { 3 }, Location.create(3109, 3415, 0), new Location(3110, 3409, 0)), EDGEVILLE(12166, new int[] { 6 }, Location.create(3132, 3510, 0), new Location(3130, 3508, 0)), WILDERNESS(-1, new int[] { 49 }, Location.create(3139, 3796, 0), null);
+	LUMBRIDGE(12163, 47, Location.create(3240, 3242, 0), new Location(3241, 3235, 0)),
+	CHAMPIONS_GUILD(12164, 48, Location.create(3199, 3344, 0), new Location(3200, 3341, 0)),
+	BARBARIAN_VILLAGE(12165, 3, Location.create(3109, 3415, 0), new Location(3110, 3409, 0)),
+	EDGEVILLE(12166, 6, Location.create(3132, 3510, 0), new Location(3130, 3508, 0)),
+	WILDERNESS(-1, 49, Location.create(3139, 3796, 0), null);
 
 	/**
 	 * Constructs a new {@code CanoeStation} {@code Object}.
-	 * @param object the object.
-	 * @param location the location.
-	 * @param object location.
+	 * @param objectId the object id of the station.
+	 * @param button the button representing the station.
+	 * @param location the location of the station.
+	 * @param destination the location to end at when the station is the destination.
 	 */
-	CanoeStation(final int object, final int[] buttons, final Location destination, final Location location) {
-		this.object = object;
-		this.buttons = buttons;
+	CanoeStation(final int objectId, final int button, final Location destination, final Location location) {
+		this.object = objectId;
+		this.button = button;
 		this.destination = destination;
 		this.objLocation = location;
 	}
@@ -31,22 +36,22 @@ public enum CanoeStation {
 	private final int object;
 
 	/**
-	 * Represents the buttons.
+	 * Represents the button.
 	 */
-	private final int[] buttons;
+	private final int button;
 
 	/**
-	 * Represents the destination to end at.
+	 * Represents the location to end at when the station is the destination.
 	 */
 	private final Location destination;
 
 	/**
-	 * Represents the object location.
+	 * Represents the location of the canoe station object.
 	 */
 	private final Location objLocation;
 
 	/**
-	 * Gets the object.
+	 * Gets the object id of the station.
 	 * @return The object.
 	 */
 	public int getObject() {
@@ -54,7 +59,7 @@ public enum CanoeStation {
 	}
 
 	/**
-	 * Method used to get the formated name of the station.
+	 * Method used to get the formatted name of the station.
 	 * @return the name.
 	 */
 	public String getName() {
@@ -66,11 +71,9 @@ public enum CanoeStation {
 	 * @param object the object.
 	 * @return the <code>CanoeStation</code>.
 	 */
-	public static CanoeStation forObject(final GameObject object) {
+	public static CanoeStation getStationByObject(final GameObject object) {
 		CanoeStation[] stations = values();
-		int length = stations.length;
-		for (int i = 0; i < length; i++) {
-			CanoeStation station = stations[i];
+		for (CanoeStation station : stations) {
 			if (station.getObjLocation() != null && station.getObjLocation().equals(object.getLocation())) {
 				return station;
 			}
@@ -126,20 +129,15 @@ public enum CanoeStation {
 	}
 
 	/**
-	 * Method used to get the canoe station for the buttons.
-	 * @param buttons the buttons.
+	 * Method used to get the canoe station from the button.
+	 * @param button the button.
 	 * @return the station.
 	 */
-	public static CanoeStation forButton(final int button) {
+	public static CanoeStation getStationFromButton(final int button) {
 		CanoeStation[] stations = values();
-		int length = stations.length;
-		for (int j = 0; j < length; j++) {
-			int[] buttons = stations[j].getButtons();
-			int length2 = buttons.length;
-			for (int i = 0; i < length2; i++) {
-				if (buttons[i] == button) {
-					return stations[j];
-				}
+		for (CanoeStation station : stations) {
+			if (station.button == button) {
+				return station;
 			}
 		}
 		return null;
@@ -149,8 +147,8 @@ public enum CanoeStation {
 	 * Gets the buttons.
 	 * @return the buttons.
 	 */
-	public int[] getButtons() {
-		return buttons;
+	public int getButton() {
+		return button;
 	}
 
 	/**

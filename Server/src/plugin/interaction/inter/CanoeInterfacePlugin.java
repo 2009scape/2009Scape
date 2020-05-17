@@ -30,14 +30,14 @@ public final class CanoeInterfacePlugin extends ComponentPlugin {
 		final CanoeExtension extension = CanoeExtension.extension(player);
 		switch (component.getId()) {
 		case 52:
-			final Canoe canoe = Canoe.forChild(button);
+			final Canoe canoe = Canoe.getCanoeFromChild(button);
 			if (canoe == null) {
 				return true;
 			}
-			extension.craft(canoe);
+			extension.craftCanoe(canoe);
 			break;
 		case 53:
-			final CanoeStation station = CanoeStation.forButton(button);
+			final CanoeStation station = CanoeStation.getStationFromButton(button);
 			if (station == null) {
 				return true;
 			}
