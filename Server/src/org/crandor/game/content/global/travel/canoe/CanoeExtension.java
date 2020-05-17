@@ -72,7 +72,7 @@ public final class CanoeExtension {
 	/**
 	 * Represents the boat childs (indexes)
 	 */
-	private static final int boatChilds[] = new int[] { 11, 13, 15, 38, 31 };
+	private static final int boatChilds[] = new int[] { 47, 48, 3, 6, 49 };
 
 	/**
 	 * Represents the location childs (indexes)
