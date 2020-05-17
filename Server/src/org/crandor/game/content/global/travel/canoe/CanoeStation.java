@@ -10,7 +10,7 @@ import org.crandor.tools.StringUtils;
  * @date 09/11/2013
  */
 public enum CanoeStation {
-	LUMBRIDGE(12163, new int[] { 47 }, Location.create(3240, 3242, 0), new Location(3241, 3235, 0)), CHAMPIONS_GUILD(12164, new int[] { 33, 13 }, Location.create(3199, 3344, 0), new Location(3200, 3341, 0)), BARBARIAN_VILLAGE(12165, new int[] { 3 }, Location.create(3109, 3415, 0), new Location(3110, 3409, 0)), EDGEVILLE(12166, new int[] { 6 }, Location.create(3132, 3510, 0), new Location(3130, 3508, 0)), WILDERNESS(-1, new int[] { 49 }, Location.create(3139, 3796, 0), null);
+	LUMBRIDGE(12163, new int[] { 47 }, Location.create(3240, 3242, 0), new Location(3241, 3235, 0)), CHAMPIONS_GUILD(12164, new int[] { 48 }, Location.create(3199, 3344, 0), new Location(3200, 3341, 0)), BARBARIAN_VILLAGE(12165, new int[] { 3 }, Location.create(3109, 3415, 0), new Location(3110, 3409, 0)), EDGEVILLE(12166, new int[] { 6 }, Location.create(3132, 3510, 0), new Location(3130, 3508, 0)), WILDERNESS(-1, new int[] { 49 }, Location.create(3139, 3796, 0), null);
 
 	/**
 	 * Constructs a new {@code CanoeStation} {@code Object}.
