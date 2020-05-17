@@ -15,6 +15,7 @@ import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.ChanceItem;
 import org.crandor.game.node.item.GroundItemManager;
 import org.crandor.game.node.item.Item;
+import org.crandor.game.system.SystemLogger;
 import org.crandor.game.system.mysql.impl.ItemConfigSQLHandler;
 import org.crandor.game.system.mysql.impl.NPCConfigSQLHandler;
 import org.crandor.game.world.map.Location;
@@ -136,6 +137,10 @@ public final class NPCDropTables {
 		}
 		if (handleBoneCrusher(player, item)) {
 			return;
+		}
+		if (item.getId() == RareDropTable.SLOT_ITEM_ID){
+			item = RareDropTable.retrieve();
+			SystemLogger.log("Rare Drop Table Roll: "  + item.getName());
 		}
 		if (item.getId() == 995 && player.getBank().hasSpaceFor(item) && ( player.getGlobalData().isEnableCoinMachine() )) {
 			item = new Item(995, (int) (item.getAmount() + (item.getAmount() * 0.25)));
