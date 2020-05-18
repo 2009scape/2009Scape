@@ -2,10 +2,8 @@ package org.crandor.game.content.global;
 
 import org.crandor.game.content.skill.Skills;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.repository.Repository;
-import org.crandor.tools.RandomFunction;
 
 /**
  * Represents the skilling pets obtained randomly.
@@ -58,7 +56,7 @@ public enum SkillingPets {
 		int defaultChance = 15000;
 		int newChance = (defaultChance / player.getSkills().getStaticLevel(pet.getSkill()) * 55);
 		int outOf = (newChance > defaultChance ? defaultChance : newChance);
-		int getChance = RandomFunction.random(player.hasPerk(Perks.PET_BEFRIENDER) ? outOf / 2 : outOf);
+		int getChance = outOf;
 		if (getChance != 1) {
 			return;
 		}

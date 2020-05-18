@@ -4,11 +4,9 @@ import org.crandor.game.content.skill.SkillPulse;
 import org.crandor.game.content.skill.Skills;
 import org.crandor.game.content.skill.free.crafting.armour.LeatherCrafting.SoftLeather;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.entity.player.link.diary.DiaryType;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.update.flag.context.Animation;
-import org.crandor.tools.RandomFunction;
 import org.crandor.tools.StringUtils;
 
 /**
@@ -83,12 +81,6 @@ public final class SoftCraftPulse extends SkillPulse<Item> {
 		if (++ticks % 5 != 0) {
 			return false;
 		}
-		if (!player.getDetails().getShop().hasPerk(Perks.GOLDEN_NEEDLE) && RandomFunction.random(30) == 5) {
-			if (player.getInventory().remove(new Item(LeatherCrafting.NEEDLE))) {
-				player.getPacketDispatch().sendMessage("Your needle broke.");
-				return true;
-			}
-		}
 		if (player.getInventory().remove(new Item(LeatherCrafting.LEATHER))) {
 			if (soft == SoftLeather.COIF && (player.getViewport().getRegion().getId() == 12851 || player.getViewport().getRegion().getId() == 12850) && !player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).isComplete(1, 4)) {
 				player.getAchievementDiaryManager().updateTask(player, DiaryType.LUMBRIDGE, 1, 4, true);
@@ -100,11 +92,6 @@ public final class SoftCraftPulse extends SkillPulse<Item> {
 			}
 			Item item = soft.getProduct();
 		    player.getInventory().add(item);
-			Perks.addDouble(player, item);
-			if (player.getDetails().getShop().hasPerk(Perks.GOLDEN_NEEDLE) && RandomFunction.random(100) <= 10) {
-				player.getSkills().addExperience(Skills.CRAFTING, (soft.getExperience() * 0.35), true);
-				player.sendMessage("Your golden needle rewards you with some extra XP!");
-			}
 			player.getSkills().addExperience(Skills.CRAFTING, soft.getExperience(), true);
 			LeatherCrafting.decayThread(player);
 			if (LeatherCrafting.isLastThread(player)) {

@@ -3,7 +3,6 @@ package org.crandor.game.content.skill.member.summoning.pet;
 import org.crandor.game.content.skill.member.summoning.familiar.Familiar;
 import org.crandor.game.content.skill.member.summoning.familiar.FamiliarSpecial;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 
 /**
  * Represents a pet.
@@ -63,10 +62,6 @@ public final class Pet extends Familiar {
 		double hunger = petDetails.getHunger();
 		if (hunger >= 90.0 && hunger < 90.025) {
 			owner.getPacketDispatch().sendMessage("<col=ff0000>Your pet is starving, feed it before it runs off.</col>");
-		} else if (hunger == 100.0 && !owner.getDetails().getShop().hasPerk(Perks.FAMILIAR_WHISPERER)) {
-			owner.getFamiliarManager().dismiss(false);
-			owner.getPacketDispatch().sendMessage("Your pet has ran away to find some food!");
-			return;
 		}
 		double growth = petDetails.getGrowth();
 		if (pet.getGrowthRate() > 0.000) {

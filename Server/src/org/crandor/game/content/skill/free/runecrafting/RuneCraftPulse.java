@@ -5,7 +5,6 @@ import org.crandor.game.content.skill.SkillPulse;
 import org.crandor.game.content.skill.Skills;
 import org.crandor.game.node.entity.impl.Animator.Priority;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.entity.player.link.diary.DiaryType;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.GameWorld;
@@ -176,7 +175,6 @@ public final class RuneCraftPulse extends SkillPulse<Item> {
 					player.getAchievementDiaryManager().updateTask(player, DiaryType.LUMBRIDGE, 2, 1, true);
 				}
 			    player.getInventory().add(i);
-				Perks.addDouble(player, i);
 				player.getSkills().addExperience(Skills.RUNECRAFTING, rune.getExperience() * amount, true);
 			}
 		} else {
@@ -196,7 +194,6 @@ public final class RuneCraftPulse extends SkillPulse<Item> {
 					player.getSkills().addExperience(Skills.RUNECRAFTING, rune.getExperience() * 2, true);
 					Item runeItem = rune.getRune();
 					player.getInventory().add(runeItem);
-					Perks.addDouble(player, runeItem);
 				}
 			}
 		}
@@ -302,10 +299,6 @@ public final class RuneCraftPulse extends SkillPulse<Item> {
 			if (player.getSkills().getLevel(Skills.RUNECRAFTING) >= level) {
 				i++;
 			}
-		}
-		
-		if (player.hasPerk(Perks.RUNESTONE_KNOWLEDGE) && (altar == Altar.DEATH || altar == Altar.LAW || altar == Altar.COSMIC || altar == Altar.BLOOD || altar == Altar.NATURE)) {
-			i *= 2;
 		}
 
 		return i != 0 ? i : 1;

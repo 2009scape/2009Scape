@@ -22,7 +22,6 @@ import org.crandor.game.world.map.Location;
 import org.crandor.game.world.map.Region;
 import org.crandor.game.world.map.RegionManager;
 import org.crandor.game.world.map.build.DynamicRegion;
-import org.crandor.game.world.map.zone.impl.DonatorZone;
 import org.crandor.game.world.repository.Repository;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.plugin.Plugin;
@@ -100,10 +99,6 @@ public final class BetaCommandPlugin extends CommandPlugin {
                 StringSelection stringSelection = new StringSelection(loc);
                 Clipboard clpbrd = Toolkit.getDefaultToolkit().getSystemClipboard();
                 clpbrd.setContents(stringSelection, null);
-                return true;
-
-            case "dz":
-                DonatorZone.getInstance().invite(player, null);
                 return true;
 
             case "setquest":

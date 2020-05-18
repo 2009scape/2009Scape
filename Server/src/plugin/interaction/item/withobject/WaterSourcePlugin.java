@@ -46,9 +46,6 @@ public final class WaterSourcePlugin extends UseWithHandler {
 	@Override
 	public boolean handle(NodeUsageEvent event) {
 		final WaterRecipient recipient = WaterRecipient.forItem(event.getUsedItem());
-		if (event.getUsedWith().getId() == 16302 && !event.getPlayer().isDonator() && !event.getPlayer().getZoneMonitor().isInZone("Donator Zone")) {
-			return false;
-		}
 		recipient.handle(event.getUsedWith().asObject(), event.getPlayer());
 		return true;
 	}
@@ -102,7 +99,7 @@ public final class WaterSourcePlugin extends UseWithHandler {
 		 * @param player the player.
 		 */
 		public final void handle(final GameObject object, final Player player) {
-			if (object.getId() == 16302 && player.isDonator()) {
+			if (object.getId() == 16302) {//Is donator was here unsure
 				player.animate(ANIMATION);
 				player.getPacketDispatch().sendMessage("You fill all the water holders in your inventory!");
 				if (player.getInventory().containsItem(getRequired())) {

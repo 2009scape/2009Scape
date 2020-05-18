@@ -8,7 +8,6 @@ import org.crandor.game.interaction.UseWithHandler;
 import org.crandor.game.node.Node;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.info.Rights;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 import org.crandor.plugin.Plugin;
 import org.crandor.plugin.InitializablePlugin;
@@ -39,7 +38,7 @@ public final class DwarfMultiCannonPlugin extends OptionHandler {
 			public boolean handle(NodeUsageEvent event) {
 				DMCHandler handler = event.getPlayer().getAttribute("dmc");
 				if (handler != null && handler.getCannon() == event.getUsedWith()) {
-					int maxAmount = event.getPlayer().getDetails().getShop().hasPerk(Perks.DWARF_BEFRIENDER) ? 60 : 30;
+					int maxAmount = 30;
 					int amount = maxAmount - handler.getCannonballs();
 					if (amount > 0) {
 						if (amount > event.getUsedItem().getAmount()) {

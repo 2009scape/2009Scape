@@ -11,7 +11,6 @@ import org.crandor.game.node.entity.Entity;
 import org.crandor.game.node.entity.combat.CombatStyle;
 import org.crandor.game.node.entity.npc.AbstractNPC;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.entity.player.link.HintIconManager;
 import org.crandor.game.node.entity.player.link.grave.GraveManager;
 import org.crandor.game.node.entity.player.link.grave.GraveType;
@@ -217,9 +216,6 @@ public class GraveStoneNPC extends AbstractNPC {
 		}
 		int seconds = type.getDecay() * 60;
 		int ticks = (1000 * seconds) / 600;
-		if (player.getDetails().getShop().hasPerk(Perks.OUT_OF_GRAVE_DANGER)) {
-			ticks *= 2;
-		}
 		reTransform();
 		updateItems(ticks);
 		setLife(GameWorld.getTicks() + ticks);

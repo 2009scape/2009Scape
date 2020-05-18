@@ -211,9 +211,6 @@ public class SpawnData implements SavingModule {
 			case 13:
 				p.sendChat("<col=FF0000>PK Points: " + p.getSavedData().getSpawnData().getPkPoints() + "!");
 				break;
-			case 12:
-				p.sendChat("<col=FF0000>Keldagrim Credits: " + p.getDetails().getShop().getCredits() + "!");
-				break;
 			case 17:
 				PKTitle[] titles = PKTitle.getTitles(p);
 				PKTitle t;

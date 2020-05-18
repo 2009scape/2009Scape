@@ -2,10 +2,8 @@ package org.crandor.game.content.skill.member.thieving;
 
 import org.crandor.game.content.skill.SkillPulse;
 import org.crandor.game.content.skill.Skills;
-import org.crandor.game.node.entity.lock.ActionLocks;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.entity.player.link.diary.DiaryType;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.node.object.GameObject;
@@ -109,7 +107,6 @@ public final class StallThiefPulse extends SkillPulse<GameObject> {
 			}
 			final Item item = stall.getRandomLoot();
 		    player.getInventory().add(item);
-			Perks.addDouble(player, item, true);
 			player.getSkills().addExperience(Skills.THIEVING, stall.getExperience(), true);
 			if (item.getId() == 1987) {
 				player.getPacketDispatch().sendMessage("You steal grapes from the grape stall.");

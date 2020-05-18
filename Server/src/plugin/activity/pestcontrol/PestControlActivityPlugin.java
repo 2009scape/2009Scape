@@ -13,7 +13,6 @@ import org.crandor.game.node.entity.Entity;
 import org.crandor.game.node.entity.impl.PulseManager;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.info.Rights;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.entity.state.EntityState;
 import org.crandor.game.node.item.GroundItemManager;
 import org.crandor.game.node.item.Item;
@@ -125,10 +124,6 @@ public final class PestControlActivityPlugin extends ActivityPlugin {
 				// default
 			} else if (success && p.getAttribute("pc_zeal", 0) >= 50) {
 				int amount = type.ordinal() + 2;
-				if (p.hasPerk(Perks.POWERPOINT)) {
-					amount *= 2;
-					p.sendMessage("<col=FF0000>You receive double the points!");
-				}
 				p.getSavedData().getActivityData().increasePestPoints(amount);
 				Item coins = new Item(995, p.getProperties().getCurrentCombatLevel() * 10);
 				if (!p.getInventory().add(coins)) {

@@ -128,6 +128,6 @@ public final class RareDropTable {
 	 * @return The chance item to drop (<b>can be null!</b>).
 	 */
 	public static Item retrieve() {
-		return RandomFunction.rollChanceTable(false,TABLE).get(0);
+		return RandomFunction.rollChanceTable(true,TABLE).get(0);
 	}
 }

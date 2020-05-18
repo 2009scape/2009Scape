@@ -92,8 +92,7 @@ public class ClientLoader extends Applet {
 			this.frame = new JFrame(GameLaunch.SETTINGS.getName());
 			this.frame.setLayout(new BorderLayout());
 			this.frame.setBackground(Color.BLACK);
-			if (!GameLaunch.SETTINGS.isSwiftKit())
-				this.frame.setResizable(true);
+			this.frame.setResizable(true);
 			this.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			this.jp.setLayout(new BorderLayout());
 			this.jp.add(this);
@@ -102,9 +101,7 @@ public class ClientLoader extends Applet {
 			//this.frame.setIconImage(Toolkit.getDefaultToolkit().getImage("./res/favicon.png"));
 			this.frame.getContentPane().add(this.jp, "Center");
 			this.frame.pack();
-			if (!GameLaunch.SETTINGS.isSwiftKit()) {
-				this.frame.setVisible(true);
-			}
+			this.frame.setVisible(true);
 			this.frame.setLocationRelativeTo(null);
 			props.put("worldid", "" + GameLaunch.SETTINGS.getWorld());
 			props.put("members", "1");

@@ -5,7 +5,6 @@ import org.crandor.game.component.Component;
 import org.crandor.game.content.skill.SkillPulse;
 import org.crandor.game.content.skill.Skills;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.node.object.GameObject;
 import org.crandor.game.world.map.Location;
@@ -170,7 +169,6 @@ public final class SummoningCreator {
 				if (player.getInventory().remove(type.getRequired())) {
 					final Item item = type.getProduct();
 				    player.getInventory().add(item);
-					Perks.addDouble(player, item);
 					player.getSkills().addExperience(Skills.SUMMONING, type.getExperience(), true);
 				}
 			}

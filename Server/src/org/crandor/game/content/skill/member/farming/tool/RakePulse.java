@@ -4,7 +4,6 @@ import org.crandor.game.content.skill.Skills;
 import org.crandor.game.content.skill.member.farming.FarmingConstant;
 import org.crandor.game.content.skill.member.farming.wrapper.PatchWrapper;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.tools.RandomFunction;
@@ -52,11 +51,8 @@ public final class RakePulse extends ToolAction {
 			return false;
 		}
 		player.animate(ANIMATION);
-		if (!player.hasPerk(Perks.GREEN_THUMB) && !player.getInventory().hasSpaceFor(FarmingConstant.WEEDS)) {
-			return true;
-		}
 		if (((RandomFunction.getRandom(3) * player.getSkills().getLevel(Skills.FARMING)) / 3) > ((player.getSkills().getLevel(Skills.FARMING) > 5 ? player.getSkills().getLevel(Skills.FARMING) - 5 : 0) / 2)) {
-			if (player.hasPerk(Perks.GREEN_THUMB) || player.getInventory().add(FarmingConstant.WEEDS)) {
+			if (player.getInventory().add(FarmingConstant.WEEDS)) {
 				wrapper.addConfigValue(wrapper.getState() + 1);
 				player.getSkills().addExperience(Skills.FARMING, 4, true);
 				wrapper.getCycle().getGrowthHandler().setGrowthUpdate();

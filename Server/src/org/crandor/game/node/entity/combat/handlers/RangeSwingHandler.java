@@ -16,7 +16,6 @@ import org.crandor.game.node.entity.combat.equipment.*;
 import org.crandor.game.node.entity.impl.Projectile;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.entity.state.EntityState;
 import org.crandor.game.node.item.GroundItem;
 import org.crandor.game.node.item.GroundItemManager;
@@ -309,9 +308,6 @@ public class RangeSwingHandler extends CombatSwingHandler {
 	 * @param amount The amount of shots to degrade.
 	 */
 	private static void degrade(Player p, BattleState state, int amount) {
-		if (p.hasPerk(Perks.UNBREAKABLE_CRYSTAL)) {
-			return;
-		}
 		if (state.getWeapon().getItem().getId() == 4212) { // New crystal bow.
 			p.getPacketDispatch().sendMessage("Your crystal bow has degraded!");
 			p.getEquipment().replace(new Item(4214, 1, 996), 3);

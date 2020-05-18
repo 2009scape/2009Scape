@@ -19,7 +19,7 @@ public class GameLaunch {
 	NOTICE: IF YOU'RE A DEVELOPER, THE EASIEST WAY TO CONNECT TO THE LIVESERVER IS WITH CLIENT.JAVA. THIS CLASS IS FOR LOCAL SERVER CONNECTING!
 
 	 */
-	public static GameSetting SETTINGS = new GameSetting("2009Scape", Configurations.LOCAL_SERVER ? "127.0.0.1" : PUBLIC_IP_ADDRESS/*"34.68.75.237"*/, 1, "live", false, false);
+	public static GameSetting SETTINGS = new GameSetting("2009Scape", Configurations.LOCAL_SERVER ? "127.0.0.1" : PUBLIC_IP_ADDRESS/*"34.68.75.237"*/, 1, "live", false);
 	
 	/**
 	 * The main method.
@@ -37,15 +37,10 @@ public class GameLaunch {
 				break;
 			}
 		}
-		launch(false);
-	}
-	
-	/**
-	 * Launches the client in a determined mode.
-	 * @param swiftkit If we're launching swift kit.
-	 */
-	public static void launch(boolean swiftkit) {
+		/**
+		 * Launches the client
+		 */
 		GameShell.launchDesktop();
 	}
-	
+
 }

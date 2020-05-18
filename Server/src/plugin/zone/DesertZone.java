@@ -8,7 +8,6 @@ import org.crandor.game.content.global.tutorial.TutorialSession;
 import org.crandor.game.node.entity.Entity;
 import org.crandor.game.node.entity.combat.ImpactHandler.HitsplatType;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
@@ -73,9 +72,6 @@ public final class DesertZone extends MapZone implements Plugin<Object> {
 	 */
 	private static void effect(Player p) {
 		p.setAttribute("desert-delay", GameWorld.getTicks() + getDelay(p));
-		if (p.getDetails().getShop().hasPerk(Perks.THIRST_QUENCHER)) {
-			return;
-		}
 		evaporate(p);
 		if (drink(p)) {
 			return;

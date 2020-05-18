@@ -40,8 +40,6 @@ import org.crandor.game.node.entity.player.info.RenderInfo;
 import org.crandor.game.node.entity.player.info.Rights;
 import org.crandor.game.node.entity.player.info.UIDInfo;
 import org.crandor.game.node.entity.player.info.login.LoginConfiguration;
-import org.crandor.game.node.entity.player.info.portal.DonatorType;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.entity.player.link.BankPinManager;
 import org.crandor.game.node.entity.player.link.BarcrawlManager;
 import org.crandor.game.node.entity.player.link.ConfigurationManager;
@@ -571,9 +569,6 @@ public class Player extends Entity {
 			boolean gravestone = graveManager.generateable() && getIronmanManager().getMode() != IronmanMode.ULTIMATE;
 			int seconds = graveManager.getType().getDecay() * 60;
 			int ticks = (1000 * seconds) / 600;
-			if (getDetails().getShop().hasPerk(Perks.OUT_OF_GRAVE_DANGER)) {
-				ticks *= 2;
-			}
 			List<GroundItem> items = new ArrayList<>();
 			for (Item item : c[1].toArray()) {
 				if (item != null) {
@@ -766,23 +761,14 @@ public class Player extends Entity {
 	}
 
 	/**
-	 * Checks if the player has a perk.
-	 * @param perk the perk.
+	 * Checks if the player can spawn. & Location
 	 * @return {@code True} if so.
 	 */
-	public boolean hasPerk(Perks perk) {
-		return details.getShop().hasPerk(perk);
-	}
-
 	public boolean spawnZone() {
 		return (getLocation().getX() > 3090 && getLocation().getY() < 3500
 				&& getLocation().getX() < 3099 && getLocation().getY() > 3487);
 	}
 
-	/**
-	 * Checks if the player can spawn.
-	 * @return {@code True} if so.
-	 */
 	public boolean canSpawn() {
 		if (!spawnZone()) {
 			sendMessage("You can only spawn items inside the edgeville bank.");
@@ -829,11 +815,7 @@ public class Player extends Entity {
 	@SuppressWarnings("deprecation")
 	public void updateDetails(PlayerDetails details) {
 		if (this.details != null) {
-			details.getShop().setCredits(this.details.getShop().getCredits());
-			details.getShop().getPerks().clear();
-			details.getShop().getPerks().addAll(this.details.getShop().getPerks());
 			details.setBanTime(this.details.getBanTime());
-			details.setDonatorType(this.details.getDonatorType());
 			details.setMuteTime(this.details.getMuteTime());
 			details.setIcon(this.details.getIcon());
 		}
@@ -888,14 +870,6 @@ public class Player extends Entity {
 	 */
 	public boolean isDebug() {
 		return details.getRights() == Rights.ADMINISTRATOR && getAttribute("debug", false);
-	}
-
-	/**
-	 * Used to check if the player is a donator.
-	 * @return {@code True} if so.
-	 */
-	public boolean isDonator() {
-		return getDetails().isDonator();
 	}
 
 	/**
@@ -1260,14 +1234,6 @@ public class Player extends Entity {
 	 */
 	public AchievementDiaryManager getAchievementDiaryManager() {
 		return achievementDiaryManager;
-	}
-
-	/**
-	 * Gets the donator type.
-	 * @return the type.
-	 */
-	public DonatorType getDonatorType() {
-		return details.getDonatorType();
 	}
 
 	/**

@@ -13,7 +13,6 @@ import org.crandor.game.node.Node;
 import org.crandor.game.node.entity.Entity;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.entity.player.link.diary.DiaryType;
 import org.crandor.game.node.item.GroundItemManager;
 import org.crandor.game.node.item.Item;
@@ -99,7 +98,7 @@ public final class TzhaarFightCavesPlugin extends ActivityPlugin {
 		player.getProperties().setTeleportLocation(getBase().transform(offsetX, offsetY, 0));
 		Pulse pulse;
 		if (!login) {
-			final int wave = player.hasPerk(Perks.FIGHT_CAVE_FANATIC) ? 25 : 0;
+			final int wave = 0;
 			player.setAttribute("fc_wave", wave);
 			player.getWalkingQueue().reset();
 			pulse = new Pulse(1, player) {
@@ -163,10 +162,6 @@ public final class TzhaarFightCavesPlugin extends ActivityPlugin {
 			player.getDialogueInterpreter().sendDialogues(2617, null, "Well done in the cave, here, take TokKul as reward.");
 		}
 		int amount = wave << 7;
-		if (player.hasPerk(Perks.POWERPOINT)) {
-			amount *= 2;
-			player.sendMessage("<col=FF0000>You receive double the tokkul!");
-		}
 		if (amount > 0 && !player.getInventory().add(new Item(6529, amount))) {
 			GroundItemManager.create(new Item(6529, amount), getSpawnLocation(), player);
 		}

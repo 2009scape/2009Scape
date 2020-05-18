@@ -5,10 +5,8 @@ import org.crandor.game.content.skill.SkillPulse;
 import org.crandor.game.content.skill.Skills;
 import org.crandor.game.content.skill.free.crafting.armour.LeatherCrafting.DragonHide;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.update.flag.context.Animation;
-import org.crandor.tools.RandomFunction;
 import org.crandor.tools.StringUtils;
 
 /**
@@ -88,12 +86,6 @@ public final class DragonCraftPulse extends SkillPulse<Item> {
 		if (++ticks % 5 != 0) {
 			return false;
 		}
-		if (!player.getDetails().getShop().hasPerk(Perks.GOLDEN_NEEDLE) && RandomFunction.random(30) == 5) {
-			if (player.getInventory().remove(new Item(LeatherCrafting.NEEDLE))) {
-				player.getPacketDispatch().sendMessage("Your needle broke.");
-				return true;
-			}
-		}
 		if (player.getInventory().remove(new Item(hide.getLeather(), hide.getAmount()))) {
 			if (hide.name().contains("VAMBS")) {
 				player.getPacketDispatch().sendMessage("You make a pair of " + ItemDefinition.forId(hide.getProduct()).getName().toLowerCase() + "'s.");
@@ -102,12 +94,6 @@ public final class DragonCraftPulse extends SkillPulse<Item> {
 			}
 			Item item = new Item(hide.getProduct());
 			player.getInventory().add(item);
-			Perks.addDouble(player, item);
-
-			if (player.getDetails().getShop().hasPerk(Perks.GOLDEN_NEEDLE) && RandomFunction.random(100) <= 10) {
-				player.getSkills().addExperience(Skills.CRAFTING, (hide.getExperience() * 0.35), true);
-				player.sendMessage("Your golden needle rewards you with some extra XP!");
-			}
 			player.getSkills().addExperience(Skills.CRAFTING, hide.getExperience(), true);
 			LeatherCrafting.decayThread(player);
 			if (LeatherCrafting.isLastThread(player)) {

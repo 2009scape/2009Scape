@@ -15,7 +15,6 @@ import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.npc.agg.AggressiveBehavior;
 import org.crandor.game.node.entity.npc.agg.AggressiveHandler;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.entity.player.link.ActivityData;
 import org.crandor.game.node.object.GameObject;
 import org.crandor.game.system.task.Pulse;
@@ -103,9 +102,6 @@ public final class BarrowsActivityPlugin extends ActivityPlugin {
 					if (killed) {
 						drain += 1;
 					}
-				}
-				if (p.hasPerk(Perks.BARROWS_BEFRIENDER)) {
-					drain /= 2;
 				}
 				p.getSkills().decrementPrayerPoints(drain);
 				p.getLocks().lock("barrow:drain", (3 + RandomFunction.random(15)) * 3);
@@ -306,12 +302,6 @@ public final class BarrowsActivityPlugin extends ActivityPlugin {
 				if (player.getAttribute("barrow:looted", false)) {
 					player.getPacketDispatch().sendMessage("The chest is empty.");
 					return true;
-				}
-				if ((!player.hasPerk(Perks.CRUSADER) || player.getAttribute("crusader", 0) > GameWorld.getTicks()) || (player.hasPerk(Perks.CRUSADER) && RandomFunction.random(100) > 25)) {
-					player.setAttribute("/save:barrow:looted", true);
-				} else {
-					player.setAttribute("crusader", GameWorld.getTicks() + 500);
-					player.sendMessage("You are given the chance for a second loot.");
 				}
 				RewardChest.reward(player);
 				PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.SHAKE, 3, 2, 2, 2, 2));

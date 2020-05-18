@@ -6,7 +6,6 @@ import org.crandor.game.interaction.OptionHandler;
 import org.crandor.game.node.Node;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.entity.player.link.TeleportManager.TeleportType;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.map.Location;
@@ -181,9 +180,6 @@ public final class TeleportCrystalPlugin extends OptionHandler {
 	     * @param item  the crystal used
 	     */
 	    private static void degrade(Player p, Item item) {
-	        if (p.hasPerk(Perks.UNBREAKABLE_CRYSTAL)) {
-	            return;
-	        }
 	        int id = item.getId();
 	        int newItem = item.getId() + 1;
 	        if (id < 6102) {

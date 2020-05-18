@@ -1,9 +1,7 @@
 package org.crandor.game.node.entity.player.info;
 
-import org.crandor.game.node.entity.player.info.portal.DonatorType;
 import org.crandor.game.node.entity.player.info.portal.Icon;
 import org.crandor.game.node.entity.player.info.portal.PlayerSQLManager;
-import org.crandor.game.node.entity.player.info.portal.PortalShop;
 import org.crandor.game.system.communication.CommunicationInfo;
 import org.crandor.net.IoSession;
 
@@ -25,11 +23,7 @@ public class PlayerDetails {
 	 * The communication info.
 	 */
 	private final CommunicationInfo communicationInfo = new CommunicationInfo();
-	
-	/**
-	 * The manager for the accounts online shopping data.
-	 */
-	private final PortalShop shop = new PortalShop(this);
+
 
 	/**
 	 * The unique id info.
@@ -80,12 +74,7 @@ public class PlayerDetails {
 	 * The rights of the player.
 	 */
 	private Rights rights = Rights.REGULAR_PLAYER;
-	
-	/**
-	 * The donator type value.
-	 */
-	private DonatorType donatorType;
-	
+
 	/**
 	 * The chat icon value.
 	 */
@@ -178,46 +167,6 @@ public class PlayerDetails {
 	 */
 	public boolean isMuted() {
 		return muteTime > System.currentTimeMillis();
-	}
-	
-	/**
-	 * Checks if the player is a donator.
-	 * @return {@code True} if so.
-	 */
-	public boolean isDonator() {
-		return donatorType != null;
-	}
-	
-	/**
-	 * Gets the donator value.
-	 * @return the value as an integer.
-	 */
-	public int getDonatorValue() {
-		return donatorType == null ? -1 : donatorType.ordinal();
-	}
-	
-	/**
-	 * Sets the donator type. 
-	 * @param type the type.
-	 */
-	public void setDonatorType(DonatorType type) {
-		this.donatorType = type;
-	}
-
-	/**
-	 * Gets the donator type.
-	 * @return the donator type.
-	 */
-	public DonatorType getDonatorType() {
-		return donatorType;
-	}
-
-	/**
-	 * Gets the shop.
-	 * @return the shop.
-	 */
-	public PortalShop getShop() {
-		return shop;
 	}
 
 	/**
@@ -442,7 +391,7 @@ public class PlayerDetails {
 
 	@Override
 	public String toString() {
-		return "PlayerDetails [sqlManager=" + sqlManager + ", communicationInfo=" + communicationInfo + ", shop=" + shop + ", info=" + info + ", username=" + username + ", password=" + password + ", uid=" + uid + ", lastLogin=" + lastLogin + ", muteTime=" + muteTime + ", parsed=" + parsed + ", rights=" + rights + ", donatorType=" + donatorType + ", icon=" + icon + ", session=" + session + "]";
+		return "PlayerDetails [sqlManager=" + sqlManager + ", communicationInfo=" + communicationInfo + ", info=" + info + ", username=" + username + ", password=" + password + ", uid=" + uid + ", lastLogin=" + lastLogin + ", muteTime=" + muteTime + ", parsed=" + parsed + ", rights=" + rights + ", icon=" + icon + ", session=" + session + "]";
 	}
 
 }

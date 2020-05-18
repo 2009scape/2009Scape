@@ -19,7 +19,6 @@ import org.crandor.game.node.entity.combat.ImpactHandler.HitsplatType;
 import org.crandor.game.node.entity.impl.ForceMovement;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.entity.player.link.diary.DiaryType;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.node.object.GameObject;
@@ -415,10 +414,6 @@ public final class TzhaarFightPitsPlugin extends ActivityPlugin {
 		int amount = tokkulAmount;
 		if (p.getEquipment().getNew(EquipmentContainer.SLOT_CAPE).getId() == 6570) {
 			amount *= 2;
-		}
-		if (p.hasPerk(Perks.POWERPOINT)) {
-			amount *= 2;
-			p.sendMessage("<col=FF0000>You receive double the tokkul!");
 		}
 		if (amount > 0) {
 			if (!p.getInventory().add(new Item(6529, amount))) {

@@ -13,12 +13,10 @@ import org.crandor.game.interaction.OptionHandler;
 import org.crandor.game.node.Node;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.GroundItem;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.node.item.ItemPlugin;
 import org.crandor.game.system.mysql.impl.NPCConfigSQLHandler;
-import org.crandor.game.world.GameWorld;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.plugin.Plugin;
@@ -141,13 +139,10 @@ public final class TreasureTrailPlugin extends OptionHandler {
 			if ((npc.getId() == 49 || npc.getId() == 3586)) {
 				return true;
 			}
-			if (npc.getDefinition().getDropTables().getMainTable().size() < 3 && RandomFunction.random(player.hasPerk(Perks.DETECTIVE) ? 50 : 100) != 6) {
+			if (npc.getDefinition().getDropTables().getMainTable().size() < 3) {
 				return false;
 			}
 			if (!hasClue(player)) {
-				if (player.hasPerk(Perks.DETECTIVE)) {
-					player.sendMessage("<col=FF0000>A clue scroll was dropped.");
-				}
 				return true;
 			}
 			return false;

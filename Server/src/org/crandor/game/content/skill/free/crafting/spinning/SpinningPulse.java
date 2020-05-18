@@ -4,7 +4,6 @@ import org.crandor.cache.def.impl.ItemDefinition;
 import org.crandor.game.content.skill.SkillPulse;
 import org.crandor.game.content.skill.Skills;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.update.flag.context.Animation;
 
@@ -74,7 +73,6 @@ public final class SpinningPulse extends SkillPulse<Item> {
 	if (player.getInventory().remove(new Item(type.getNeed(), 1))) {
 		final Item item = new Item(type.getProduct(), 1);
 	    player.getInventory().add(item);
-		Perks.addDouble(player, item);
 	    player.getSkills().addExperience(Skills.CRAFTING, type.getExp(), true);
 	}
 		ammount--;

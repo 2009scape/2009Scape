@@ -2,7 +2,6 @@ package org.crandor.game.node.entity.player.link.prayer;
 
 import org.crandor.game.node.Node;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.system.task.NodeTask;
 
 /**
@@ -72,9 +71,6 @@ public final class DrainTask extends NodeTask {
 			drain = drain * (1 + bonus);
 			drain = 0.6 / drain;
 			amountDrain += drain;
-		}
-		if (!prayer.getPlayer().getSkullManager().isWilderness() && prayer.getPlayer().hasPerk(Perks.PRAYER_BETRAYER)) {
-			amountDrain -= amountDrain * 0.50;
 		}
 		return amountDrain;
 	}

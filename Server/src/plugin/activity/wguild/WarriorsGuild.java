@@ -9,7 +9,6 @@ import org.crandor.game.content.skill.Skills;
 import org.crandor.game.interaction.OptionHandler;
 import org.crandor.game.node.Node;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.node.object.GameObject;
 import org.crandor.game.world.map.Location;
@@ -124,9 +123,6 @@ public final class WarriorsGuild extends OptionHandler {
 		@Override
 		public boolean handle(int interfaceId, int buttonId) {
 			int tokens = player.getSavedData().getActivityData().getWarriorGuildTokens();
-			if (player.hasPerk(Perks.POWERPOINT)) {
-				tokens *= 2;
-			}
 			switch (stage) {
 			case 0:
 				if (tokens < 1) {

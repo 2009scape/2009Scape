@@ -7,7 +7,6 @@ import org.crandor.game.interaction.OptionHandler;
 import org.crandor.game.node.Node;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.item.Item;
-import org.crandor.game.world.map.zone.impl.DonatorZone;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.plugin.Plugin;
 
@@ -108,32 +107,12 @@ public final class EnchantedJewelleryPlugin extends OptionHandler {
 				jewellery.use(player, item, 0, operate);
 				return true;
 			}
-			if (player.isDonator()) {
-				if (jewellery == EnchantedJewellery.AMULET_OF_GLORY || jewellery == EnchantedJewellery.AMULET_OF_GLORY_T) {
-					options("Donator Zone", "Other");
-					stage = -1;
-					return true;
-				}
-			}
 			interpreter.sendOptions("Where would you like to go?", jewellery.getOptions());
 			return true;
 		}
 
 		@Override
 		public boolean handle(int interfaceId, int buttonId) {
-			if (stage == -1) {
-				switch (buttonId) {
-				case 1:
-					end();
-					DonatorZone.getInstance().invite(player, null);
-					break;
-				case 2:
-					interpreter.sendOptions("Where would you like to go?", jewellery.getOptions());
-					break;
-				}
-				stage = 0;
-				return true;
-			}
 			if (player.getInterfaceManager().isOpened()) {
 				end();
 				return true;

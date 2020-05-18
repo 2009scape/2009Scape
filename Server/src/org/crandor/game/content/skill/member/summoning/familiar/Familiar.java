@@ -15,7 +15,6 @@ import org.crandor.game.node.entity.combat.equipment.WeaponInterface;
 import org.crandor.game.node.entity.impl.Projectile;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
@@ -124,11 +123,6 @@ public abstract class Familiar extends NPC implements Plugin<Object> {
 	 */
 	public Familiar(Player owner, int id, int ticks, int pouchId, int specialCost, final int attackStyle) {
 		super(id, null);
-		if (owner != null) {
-			if (owner.getDetails().getShop().hasPerk(Perks.FAMILIAR_WHISPERER)) {
-				ticks *= 2;
-			}
-		}
 		this.owner = owner;
 		this.maximumTicks = ticks;
 		this.ticks = ticks;
@@ -168,11 +162,6 @@ public abstract class Familiar extends NPC implements Plugin<Object> {
 			call();
 		}
 		owner.getInterfaceManager().openInfoBars();
-		if (owner.getDetails().getShop().hasPerk(Perks.FAMILIAR_WHISPERER) && (ticks == maximumTicks)) {
-			getSkills().setLifepoints(getSkills().getLifepoints() + (getSkills().getLifepoints() / 4));
-			owner.sendMessage("Your " + getName() + " has recieved a boost of +" + getSkills().getLifepoints() / 5 + " to its hitpoints because of the");
-			owner.sendMessage("Familiar Whisperer perk. Your familiar's health is now " + getSkills().getLifepoints() + ".");
-		}
 		if (getZoneMonitor().isInZone("Wilderness")) {
 			transform();
 		}

@@ -4,7 +4,6 @@ import org.crandor.game.content.skill.member.farming.FarmingConstant;
 import org.crandor.game.content.skill.member.farming.FarmingPatch;
 import org.crandor.game.content.skill.member.farming.wrapper.PatchWrapper;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.game.world.update.flag.context.Graphics;
@@ -53,9 +52,6 @@ public final class WateringPulse extends ToolAction {
 		}
 		if (wrapper.getCycle().getGrowthHandler().isGrowing()) {
 			wrapper.getCycle().getWaterHandler().setWatered();
-			if (!player.hasPerk(Perks.GREEN_THUMB)) {
-				player.getInventory().replace(getNextCan(), tool.getSlot());
-			}
 		}
 		return true;
 	}

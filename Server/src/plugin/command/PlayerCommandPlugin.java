@@ -33,19 +33,12 @@ import org.crandor.plugin.Plugin;
 import org.crandor.tools.RandomFunction;
 import org.crandor.tools.StringUtils;
 
-import plugin.zone.GrandExchangeZone.CreditStore;
-
 /**
  * Handles a player command.
  * @author Vexia
  */
 @InitializablePlugin
 public final class PlayerCommandPlugin extends CommandPlugin {
-
-	/**
-	 * The store that sells items in exchange for credits.
-	 */
-	private static final CreditStore CREDIT_STORE = new CreditStore();
 
 	@Override
 	public Plugin<Object> newInstance(Object arg) throws Throwable {
@@ -89,15 +82,6 @@ public final class PlayerCommandPlugin extends CommandPlugin {
 			
 			
 			break;
-
-			case "shop":
-				CREDIT_STORE.open(player);
-				break;
-
-			case "credits":
-				int credits = CREDIT_STORE.getPoints(player);
-				player.sendMessage("<col=3498db>You currently have " + credits + " credits to spend.");
-				break;
 
 			case "bank":
 				if (!player.isAdmin()) {
@@ -167,8 +151,8 @@ public final class PlayerCommandPlugin extends CommandPlugin {
 				return player.getRights() == Rights.REGULAR_PLAYER;
 
 			case "yell":
-				if (!player.isDonator() && !player.isAdmin()) {
-					player.sendMessages("Join clan chat \"" + GameWorld.getName() + "\" to talk globally, or become a donator to have access to", "this benefit.");
+				if (!player.isAdmin()) {
+					player.sendMessages("Join clan chat \"" + GameWorld.getName() + "\" to talk globally.");
 					return true;
 				}
 				if (player.getDetails().isMuted()) {
@@ -180,10 +164,6 @@ public final class PlayerCommandPlugin extends CommandPlugin {
 						player.sendMessages("<col=e74c3c>You are temporarily unable to yell as you are banned from the main clan chat.", "Don't be annoying!");
 						return true;
 					}
-				}
-				if (player.getAttribute("yell-delay", 0.0) > GameWorld.getTicks()) {
-					player.sendMessages("<col=e74c3c>You have yelled in the last " + player.getDonatorType().getCooldown() + " seconds. Upgrade to an extreme donator to have", "unlimited yelling abilities.");
-					return true;
 				}
 				String text = getArgumentLine(arguments);
 				if(text.contains("<img=") || text.contains("<br>") || text.contains("<col=") || text.contains("<shad=")){
@@ -204,9 +184,6 @@ public final class PlayerCommandPlugin extends CommandPlugin {
 							p.getPacketDispatch().sendMessage(text);
 						}
 					}
-					if (player.getDonatorType().getCooldown() > 0 && !player.isStaff()) {
-						player.setAttribute("yell-delay", (int) GameWorld.getTicks() + (player.getDonatorType().getCooldown() / 0.6));
-					}
 				} else {
 					player.sendMessage("<col=e74c3c>Your message was too short.");
 				}
@@ -225,10 +202,6 @@ public final class PlayerCommandPlugin extends CommandPlugin {
 
 			case "quests":
 				sendQuests(player);
-				return true;
-
-			case "donate":
-				sendDonationInfo(player);
 				return true;
 			case "roll":
 				rollSkill(player);
@@ -401,21 +374,6 @@ public final class PlayerCommandPlugin extends CommandPlugin {
 	}
 
 	/**
-	 * Sends information about donating.
-	 * @param player The player.
-	 */
-	private void sendDonationInfo(Player player) {
-		player.getInterfaceManager().open(new Component(275));
-		for (int i = 0; i < 311; i++) {
-			player.getPacketDispatch().sendString("", 275, i);
-		}
-		int lineId = 11;
-		player.getPacketDispatch().sendString("<col=ecf0f1>" + "Donation Information" + "</col>", 275, 2);
-		for (String s : ServerConstants.MESSAGES) {
-			player.getPacketDispatch().sendString("<col=2c3e50>" + s + "<br><br></col>", 275, lineId++);
-		}
-	}
-	/**
 	 * Sends the quests.
 	 * @param player the player.
 	 */
@@ -452,9 +410,6 @@ public final class PlayerCommandPlugin extends CommandPlugin {
 				default:
 					break;
 			}
-		}
-		if (player.isDonator() && !player.isStaff()) {
-			color = "<col=" + player.getDonatorType().getColor() + ">";
 		}
 		int icon = Rights.getChatIcon(player);
 		if (icon > 0) {

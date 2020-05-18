@@ -8,7 +8,6 @@ import org.crandor.game.content.skill.member.farming.patch.PatchProtection;
 import org.crandor.game.content.skill.member.farming.wrapper.PatchCycle;
 import org.crandor.game.content.skill.member.farming.wrapper.PatchWrapper;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.node.object.GameObject;
 import org.crandor.game.world.map.Location;
@@ -173,11 +172,6 @@ public class FarmingNode {
 		final int random = RandomFunction.random(100);
 		int mod = cycle.getWaterHandler().isWatered() ? 0 : (cycle.getCompostThreshold() > 1 ? 10 : RandomFunction.random(30, 50));
 		mod -= 8;
-		if (cycle.getPlayer() != null) {
-			if (cycle.getPlayer().getDetails().getShop().hasPerk(Perks.GREEN_THUMB)) {
-				mod -= 35;
-			}
-		}
 		return cycle.getState() != cycle.getNode().getBase() && random < mod;
 	}
 
@@ -210,9 +204,6 @@ public class FarmingNode {
 		double difference = (max - min) / 2;
 		difference *= 1 + (cycle.getPlayer().getSkills().getLevel(Skills.FARMING) * 0.01);
 		int mod = 0;
-		if (cycle.getPlayer().getDetails().getShop().hasPerk(Perks.GREEN_THUMB)) {
-			mod += RandomFunction.random(3, 12);
-		}
 		if (SkillcapePerks.hasSkillcapePerk(cycle.getPlayer(), SkillcapePerks.FARMING)) {
 			mod += RandomFunction.random(1, 2);
 		}

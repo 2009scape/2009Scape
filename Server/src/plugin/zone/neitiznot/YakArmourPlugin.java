@@ -8,11 +8,9 @@ import org.crandor.game.content.skill.free.crafting.armour.LeatherCrafting;
 import org.crandor.game.interaction.NodeUsageEvent;
 import org.crandor.game.interaction.UseWithHandler;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.plugin.Plugin;
-import org.crandor.tools.RandomFunction;
 
 /**
  * Handles the crafting of yak armour.
@@ -131,20 +129,9 @@ public class YakArmourPlugin extends UseWithHandler {
 			if (++ticks % 5 != 0) {
 				return false;
 			}
-			if (!player.getDetails().getShop().hasPerk(Perks.GOLDEN_NEEDLE) && RandomFunction.random(30) == 5) {
-				if (player.getInventory().remove(new Item(LeatherCrafting.NEEDLE))) {
-					player.getPacketDispatch().sendMessage("Your needle broke.");
-					return true;
-				}
-			}
 			int reqAmount = index == 1 ? 1 : 2;
 			if (player.getInventory().remove(new Item(10820, reqAmount))) {
 			    player.getInventory().add(node);
-				Perks.addDouble(player, node);
-				if (player.getDetails().getShop().hasPerk(Perks.GOLDEN_NEEDLE) && RandomFunction.random(100) <= 10) {
-					player.getSkills().addExperience(Skills.CRAFTING, (32 * 0.35), true);
-					player.sendMessage("Your golden needle rewards you with some extra XP!");
-				}
 				player.getSkills().addExperience(Skills.CRAFTING, 32, true);
 				LeatherCrafting.decayThread(player);
 				if (LeatherCrafting.isLastThread(player)) {

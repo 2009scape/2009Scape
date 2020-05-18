@@ -4,7 +4,6 @@ import org.crandor.game.content.global.SkillcapePerks;
 import org.crandor.game.content.skill.SkillPulse;
 import org.crandor.game.content.skill.Skills;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.entity.player.link.diary.DiaryType;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.update.flag.context.Animation;
@@ -161,17 +160,6 @@ public class SmeltingPulse extends SkillPulse<Item> {
 	public boolean success(Player player) {
 		if (bar == Bar.IRON && !superHeat) {
 			if (hasForgingRing(player) && bar == Bar.IRON) {
-				if (!player.getDetails().getShop().hasPerk(Perks.UNBREAKABLE_FORGE)) {
-					int uses = player.getSavedData().getGlobalData().getForgingUses();
-					player.getSavedData().getGlobalData().setForgingUses(uses + 1);
-					if (uses > 139) {
-						if (!player.getDetails().getShop().hasPerk(Perks.UNBREAKABLE_FORGE)) {
-							player.getEquipment().remove(RING_OF_FORGING);
-						}
-						player.getSavedData().getGlobalData().setForgingUses(0);
-
-					}
-				}
 				return true;
 			} else {
 				return RandomFunction.getRandom(100) <= (player.getSkills().getLevel(Skills.SMITHING) >= 45 ? 80 : 50);

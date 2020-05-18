@@ -14,7 +14,6 @@ import org.crandor.game.node.entity.combat.equipment.SwitchAttack;
 import org.crandor.game.node.entity.combat.handlers.DragonfireSwingHandler;
 import org.crandor.game.node.entity.impl.Projectile;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.node.item.ItemPlugin;
 import org.crandor.game.world.GameWorld;
@@ -57,7 +56,7 @@ public final class DragonfireShieldPlugin extends OptionHandler {
 				return true;
 			}
 			boolean notCharged = item.getId() == 11284 || item.getCharge() < 20;
-			if (player.hasPerk(Perks.OVERCHARGE) && player.getSavedData().getGlobalData().getOverChargeDelay() <= System.currentTimeMillis()) {
+			if (player.getSavedData().getGlobalData().getOverChargeDelay() <= System.currentTimeMillis()) {
 				item.setCharge(1020);
 				player.sendMessage("You use the power from the overcharge lords & charge your shield.");
 				notCharged = false;
@@ -92,7 +91,7 @@ public final class DragonfireShieldPlugin extends OptionHandler {
 							player.getEquipment().replace(new Item(11284), EquipmentContainer.SLOT_SHIELD);
 						}
 						EquipmentContainer.updateBonuses(player);
-						player.getLocks().lock("dfs_recharge", player.hasPerk(Perks.OVERCHARGE) ? 25 : 50);
+						player.getLocks().lock("dfs_recharge",50);
 					}
 					return super.swing(entity, victim, state);
 				}

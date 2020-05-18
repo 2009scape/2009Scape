@@ -1,23 +1,17 @@
 package org.crandor.game.node.entity.npc.drop;
 
-import org.crandor.cache.def.impl.ItemDefinition;
 import org.crandor.cache.def.impl.NPCDefinition;
-import org.crandor.game.container.impl.EquipmentContainer;
-import org.crandor.game.content.eco.EcoStatus;
-import org.crandor.game.content.eco.EconomyManagement;
 import org.crandor.game.content.eco.ge.GrandExchangeDatabase;
 import org.crandor.game.content.global.Bones;
 import org.crandor.game.content.skill.Skills;
 import org.crandor.game.node.entity.Entity;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.ChanceItem;
 import org.crandor.game.node.item.GroundItemManager;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.system.SystemLogger;
 import org.crandor.game.system.mysql.impl.ItemConfigSQLHandler;
-import org.crandor.game.system.mysql.impl.NPCConfigSQLHandler;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.map.RegionManager;
 import org.crandor.game.world.repository.Repository;
@@ -26,7 +20,6 @@ import org.crandor.tools.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 /**
  * Holds and handles the NPC drop tables.
@@ -246,9 +239,6 @@ public final class NPCDropTables {
 	private boolean handleBoneCrusher(Player player, Item item) {
 		Bones bone = Bones.forId(item.getId());
 		if (bone == null || item == null) {
-			return false;
-		}
-		if (!player.hasPerk(Perks.BONECRUSHER) && !player.isAdmin()) {
 			return false;
 		}
 		if (!player.getGlobalData().isEnableBoneCrusher()) {

@@ -5,7 +5,6 @@ import org.crandor.game.interaction.Option;
 import org.crandor.game.node.Node;
 import org.crandor.game.node.entity.Entity;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.entity.player.link.request.RequestType;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.map.Location;
@@ -134,10 +133,6 @@ public class MTAZone extends MapZone {
 	 * @param amount the amount.
 	 */
 	public void incrementPoints(Player player, int index, int amount) {
-		if (player.hasPerk(Perks.POWERPOINT)) {
-			amount *= 2;
-			player.sendMessage("<col=FF0000>You receive double the points!");
-		}
 		player.getSavedData().getActivityData().incrementPizazz(index, amount);
 		update(player);
 	}

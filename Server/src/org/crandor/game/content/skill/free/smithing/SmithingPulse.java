@@ -6,7 +6,6 @@ import org.crandor.game.content.global.tutorial.TutorialStage;
 import org.crandor.game.content.skill.SkillPulse;
 import org.crandor.game.content.skill.Skills;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.entity.player.link.diary.DiaryType;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.update.flag.context.Animation;
@@ -86,7 +85,6 @@ public class SmithingPulse extends SkillPulse<Item> {
 		player.getInventory().remove(new Item(bar.getBarType().getBarType(), bar.getSmithingType().getRequired()));
 		final Item item = new Item(node.getId(), bar.getSmithingType().getProductAmount());
 	    player.getInventory().add(item);
-		Perks.addDouble(player, item);
 		player.getSkills().addExperience(Skills.SMITHING, bar.getBarType().getExperience() * bar.getSmithingType().getRequired(), true);
 		String message = StringUtils.isPlusN(ItemDefinition.forId(bar.getProduct()).getName().toLowerCase()) == true ? "an" : "a";
 		player.getPacketDispatch().sendMessage("You hammer the " + bar.getBarType().getBarName().toLowerCase().replace("smithing", "") + "and make " + message + " " + ItemDefinition.forId(bar.getProduct()).getName().toLowerCase() + ".");

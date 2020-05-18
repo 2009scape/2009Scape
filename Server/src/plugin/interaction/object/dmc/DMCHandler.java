@@ -7,7 +7,6 @@ import org.crandor.game.node.entity.combat.ImpactHandler.HitsplatType;
 import org.crandor.game.node.entity.impl.Projectile;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.node.object.GameObject;
 import org.crandor.game.node.object.ObjectBuilder;
@@ -147,10 +146,6 @@ public final class DMCHandler {
 				player.getPacketDispatch().sendMessage("Your cannon is out of cannonballs.");
 				return;
 			}
-			int maxAmount = player.getDetails().getShop().hasPerk(Perks.DWARF_BEFRIENDER) ? 60 : 30;
-			if (amount > maxAmount) {
-				amount = maxAmount;
-			}
 			if (player.getInventory().remove(new Item(2, amount))) {
 				cannonballs = amount;
 				player.getPacketDispatch().sendMessage("You load the cannon with " + amount + " cannonballs.");
@@ -243,11 +238,6 @@ public final class DMCHandler {
 					ObjectBuilder.remove(object);
 					handler.configure(ObjectBuilder.add(object = object.transform(6)));
 					return true;
-				}
-				if (!player.getDetails().getShop().hasPerk(Perks.DWARF_BEFRIENDER)) {
-					handler.decayPulse.restart();
-					handler.decayPulse.start();
-					GameWorld.Pulser.submit(handler.decayPulse);
 				}
 				ObjectBuilder.remove(object);
 				ObjectBuilder.add(object = object.transform(object.getId() + 1));

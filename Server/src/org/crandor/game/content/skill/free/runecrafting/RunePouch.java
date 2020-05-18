@@ -3,7 +3,6 @@ package org.crandor.game.content.skill.free.runecrafting;
 import org.crandor.game.content.global.action.DropItemHandler;
 import org.crandor.game.content.skill.Skills;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 
 /**
@@ -246,9 +245,6 @@ public enum RunePouch {
 	 * @param pouch the pouch.
 	 */
 	public void decay(Player player, Item pouch) {
-		if (this == SMALL || player.getDetails().getShop().hasPerk(Perks.ABYSS_BEFRIENDER)) {
-			return;
-		}
 		incrementDecay(player);
 		if (getDecay(player) >= uses) {
 			String message = "";

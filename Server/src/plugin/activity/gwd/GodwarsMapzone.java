@@ -14,7 +14,6 @@ import org.crandor.game.node.entity.impl.ForceMovement;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.info.Rights;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.GroundItemManager;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.node.object.GameObject;
@@ -247,9 +246,6 @@ public final class GodwarsMapzone extends MapZone implements Plugin<Object> {
 		player.getSkills().decrementPrayerPoints(player.getSkills().getPrayerPoints() - total);
 		player.getPacketDispatch().sendMessage("You recharge your Prayer points.");
 		int time = 600_000;
-		if (player.getDetails().getShop().hasPerk(Perks.GWD_BEFRIENDER)) {
-			time /= 2;
-		}
 		player.setAttribute("/save:gwd:altar-recharge", System.currentTimeMillis() + time);
 	}
 
@@ -375,7 +371,7 @@ public final class GodwarsMapzone extends MapZone implements Plugin<Object> {
 		}
 		GodWarsFaction faction = GodWarsFaction.values()[index];
 		String name = faction.name().toLowerCase();
-		int required = player.hasPerk(Perks.GWD_BEFRIENDER) ? (int) Perks.GWD_BEFRIENDER.getData()[0] : 40;
+		int required = 40;
 		if (player.getAttribute("gwd:" + name + "kc", 0) < required) {
 			player.getPacketDispatch().sendMessage("You need " + required + " " + StringUtils.formatDisplayName(name) + " kills to enter this.");
 			return true;

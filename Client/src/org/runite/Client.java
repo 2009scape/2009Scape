@@ -20,7 +20,7 @@ public class Client {
 	/**
 	 * The game settings.
 	 */
-	public static GameSetting SETTINGS = new GameSetting("2009Scape", PUBLIC_IP_ADDRESS, 1, "live", false, false);
+	public static GameSetting SETTINGS = new GameSetting("2009Scape", PUBLIC_IP_ADDRESS, 1, "live", false);
 	
 	/**
 	 * The main method.
@@ -45,14 +45,9 @@ public class Client {
 				break;
 			}
 		}
-		launch(false);
-	}
-	
-	/**
-	 * Launches the client in a determined mode.
-	 * @param swiftkit If we're launching swift kit.
-	 */
-	public static void launch(boolean swiftkit) {
+		/**
+		 * Launches the client
+		 */
 		GameShell.launchDesktop();
 	}
 	

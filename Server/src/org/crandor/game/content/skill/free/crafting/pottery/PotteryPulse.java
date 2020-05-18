@@ -3,7 +3,6 @@ package org.crandor.game.content.skill.free.crafting.pottery;
 import org.crandor.game.content.skill.SkillPulse;
 import org.crandor.game.content.skill.Skills;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.tools.StringUtils;
@@ -83,7 +82,6 @@ public final class PotteryPulse extends SkillPulse<Item> {
 			}
 			final Item item = pottery.getUnfinished();
 		    player.getInventory().add(item);
-			Perks.addDouble(player, item);
 			player.getSkills().addExperience(Skills.CRAFTING, pottery.getExp(), true);
 			player.getPacketDispatch().sendMessage("You make the soft clay into " + (StringUtils.isPlusN(pottery.getUnfinished().getName()) ? "an" : "a") + " " + pottery.getUnfinished().getName().toLowerCase() + ".");
 		}

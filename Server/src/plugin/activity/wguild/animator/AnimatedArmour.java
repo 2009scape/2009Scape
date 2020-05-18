@@ -5,7 +5,6 @@ import org.crandor.game.node.entity.combat.BattleState;
 import org.crandor.game.node.entity.combat.CombatStyle;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.entity.player.link.HintIconManager;
 import org.crandor.game.node.item.GroundItemManager;
 import org.crandor.game.node.item.Item;
@@ -118,10 +117,6 @@ public final class AnimatedArmour extends NPC {
 			if (killer != null) { // Indicates the player actually killed the
 				// armour.
 				int amount = set.getTokenAmount();
-				if (player.hasPerk(Perks.POWERPOINT)) {
-					amount *= 2;
-					player.sendMessage("<col=FF0000>You receive double the tokens!");
-				}
 				GroundItemManager.create(new Item(8851, amount), location, player);
 			}
 			player.removeAttribute("animated_set");

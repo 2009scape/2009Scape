@@ -69,11 +69,6 @@ public abstract class MapZone implements Zone {
 	public boolean enter(Entity e) {
 		if (e instanceof Player) {
 			Player p = (Player) e;
-			if (isRestricted(ZoneRestriction.MEMBERS.getFlag()) && !p.isDonator()) {
-				p.getPacketDispatch().sendMessage("You need to be a member to enter this area.");
-				p.getWalkingQueue().walkBack();
-				return false;
-			}
 		} else if (e instanceof NPC) {
 			NPC npc = (NPC) e;
 			if (e instanceof Familiar && isRestricted(ZoneRestriction.FOLLOWERS.getFlag())) {

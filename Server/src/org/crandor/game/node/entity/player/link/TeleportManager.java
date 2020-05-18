@@ -343,9 +343,6 @@ public class TeleportManager {
 						switch (count) {
 						case 18:
 							player.getProperties().setTeleportLocation(location);
-							if (!player.isDonator()) {
-								player.getSavedData().getGlobalData().setHomeTeleportDelay(System.currentTimeMillis() + 1200000);
-							}
 							return true;
 							default:
 								entity.asPlayer().getAudioManager().send(getAudio(count));

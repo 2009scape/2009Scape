@@ -11,7 +11,6 @@ import org.crandor.game.node.Node;
 import org.crandor.game.node.entity.combat.ImpactHandler.HitsplatType;
 import org.crandor.game.node.entity.impl.Animator.Priority;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.ChanceItem;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.node.object.GameObject;
@@ -169,7 +168,6 @@ public class ThievingGuidePlugin extends OptionHandler {
 			tries++;
 		}
 	    player.getInventory().add(item);
-		Perks.addDouble(player, item);
 	}
 
 	/**
@@ -181,9 +179,6 @@ public class ThievingGuidePlugin extends OptionHandler {
 		double level = player.getSkills().getLevel(skill);
 		double req = 50;
 		int mod = player.getInventory().containsItem(SETHOSCOPE) ? 8 : 17;
-		if (player.getDetails().getShop().hasPerk(Perks.SLEIGHT_OF_HAND)) {
-			mod += RandomFunction.random(1, 11);
-		}
 		double successChance = Math.ceil((level * 50 - req * mod) / req / 3 * 4);
 		int roll = RandomFunction.random(99);
 		if (successChance >= roll) {

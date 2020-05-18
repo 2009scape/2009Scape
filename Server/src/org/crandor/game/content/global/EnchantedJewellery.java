@@ -1,7 +1,6 @@
 package org.crandor.game.content.global;
 
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;
@@ -117,10 +116,6 @@ public enum EnchantedJewellery {
 			player.sendMessage("Ooops, you don't have it anymore ;)");
 			return;
 		}
-		if (player.getDetails().getShop().hasPerk(Perks.CHARGE_BEFRIENDER)) {
-			teleport(player, 0, item, getLocation(index));
-			return;
-		}
 		if (teleport(player, itemIndex, replace, getLocation(index))) {
 			if (!isLast(itemIndex) && !(isCrumble() && itemIndex == getIds().length - 1)) {
 				if (operate) {
@@ -168,9 +163,6 @@ public enum EnchantedJewellery {
 			public boolean pulse() {
 				player.unlock();
 				player.getProperties().setTeleportLocation(location);
-				if (!player.getDetails().getShop().hasPerk(Perks.CHARGE_BEFRIENDER)) {
-					player.getPacketDispatch().sendMessage(isCrumble() && itemIndex == getIds().length - 1 || isLast(getItemIndex(item)) ? "<col=7f03ff>You use your " + getNameType(item) + "'s last charge." : "<col=7f03ff>Your " + getName(item) + " has " + Integer.parseInt(getCharges(item)) + " use" + (Integer.parseInt(getCharges(item)) > 1 ? "s" : "") + " left.");
-				}
 				player.getAnimator().reset();
 				return true;
 			}

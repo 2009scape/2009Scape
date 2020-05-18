@@ -13,7 +13,6 @@ import org.crandor.game.content.skill.Skills;
 import org.crandor.game.content.skill.member.farming.wrapper.PatchWrapper;
 import org.crandor.game.node.entity.impl.Projectile;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.entity.player.link.diary.DiaryType;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.node.object.GameObject;
@@ -25,7 +24,6 @@ import org.crandor.tools.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -165,7 +163,6 @@ public final class GatheringSkillPulse extends SkillPulse<GameObject> {
 			int rewardAmount = calculateRewardAmount(reward);
 			Item item = new Item(reward, rewardAmount);
 			player.getInventory().add(item);
-			Perks.addDouble(player, item);
 			// Apply the experience points
 			double experience = calculateExperience(reward, rewardAmount);
 			player.getSkills().addExperience(resource.getSkillId(), experience, true);
@@ -199,9 +196,6 @@ public final class GatheringSkillPulse extends SkillPulse<GameObject> {
 					chance /= 1.5;
 					altered = true;
 				}
-				if (!altered && player.getDetails().getShop().hasPerk(Perks.STONER)) {
-					chance /= 1.5;
-				}
 				if (RandomFunction.random(chance) == 0) {
 					Item gem = RandomFunction.getRandomElement(GEM_REWARDS);
 					player.getPacketDispatch().sendMessage("You find a " + gem.getName() + "!");
@@ -213,9 +207,6 @@ public final class GatheringSkillPulse extends SkillPulse<GameObject> {
 			// Calculate if the player should receive a bonus birds nest
 			if (isWoodcutting) {
 				int chance = 282;
-				if (player.getDetails().getShop().hasPerk(Perks.BIRD_MAN)) {
-					chance /= 1.5;
-				}
 				if (SkillcapePerks.hasSkillcapePerk(player, SkillcapePerks.WOODCUTTING)) {
 					chance /= 1.88;
 				}

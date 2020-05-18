@@ -3,7 +3,6 @@ package org.crandor.game.content.skill.free.crafting.gem;
 import org.crandor.game.content.skill.SkillPulse;
 import org.crandor.game.content.skill.Skills;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 
 /**
@@ -75,7 +74,6 @@ public final class GemCutPulse extends SkillPulse<Item> {
 		if (player.getInventory().remove(gem.getUncut())) {
 			final Item item = gem.getGem();
 		    player.getInventory().add(item);
-			Perks.addDouble(player, item);
 			player.getSkills().addExperience(Skills.CRAFTING, gem.getExp(), true);
 		}
 		amount--;

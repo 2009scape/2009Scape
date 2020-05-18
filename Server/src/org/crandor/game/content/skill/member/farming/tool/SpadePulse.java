@@ -8,7 +8,6 @@ import org.crandor.game.content.skill.member.farming.patch.TreeNode;
 import org.crandor.game.content.skill.member.farming.patch.Trees;
 import org.crandor.game.content.skill.member.farming.wrapper.PatchWrapper;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.entity.player.link.diary.DiaryType;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.map.Location;
@@ -180,7 +179,6 @@ public final class SpadePulse extends ToolAction {
 	private boolean harvestPatch() {
 		final Item item = wrapper.getNode().getProduct();
 	    player.getInventory().add(item);
-		Perks.addDouble(player, item);
 		player.getSkills().addExperience(Skills.FARMING, wrapper.getNode().getExperiences()[1], true);
 		wrapper.getCycle().setHarvestAmount(wrapper.getCycle().getHarvestAmount() - 1);
 		if (wrapper.getCycle().getHarvestAmount() < 1) {

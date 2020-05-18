@@ -19,7 +19,6 @@ import org.crandor.game.node.entity.combat.BattleState;
 import org.crandor.game.node.entity.npc.AbstractNPC;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.GameWorld;
 import org.crandor.game.world.map.Location;
@@ -237,7 +236,6 @@ public class WildernessAreaZone extends MapZone implements Plugin<Object> {
 			node.setAttribute("reward-tick", GameWorld.getTicks() + resource.getRespawnDuration());
 			final Item item = new Item(resource.getReward());
 		    player.getInventory().add(item);
-			Perks.addDouble(player, item);
 			player.getSkills().addExperience(resource.getSkillId(), resource.getExperience(), true);
 			return true;
 		}

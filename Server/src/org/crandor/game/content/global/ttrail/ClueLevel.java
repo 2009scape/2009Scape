@@ -5,7 +5,6 @@ import org.crandor.game.component.Component;
 import org.crandor.game.container.access.InterfaceContainer;
 import org.crandor.game.node.entity.npc.drop.DropFrequency;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.ChanceItem;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.GameWorld;
@@ -223,9 +222,6 @@ public enum ClueLevel {
 	public List<Item> getLoot(Player player) {
 		List<ChanceItem> items = new ArrayList<>();
 		List<Integer> ids = new ArrayList<>();
-		if (RandomFunction.random(player.hasPerk(Perks.DETECTIVE) ? 6 : 10) < 5) {
-			items.addAll(Arrays.asList(rewards));
-		}
 		items.addAll(Arrays.asList(DEFAULT_REWARDS));
 		List<Item> rewards = new ArrayList<>();
 		int size = RandomFunction.random(1, 6);
@@ -241,9 +237,7 @@ public enum ClueLevel {
 			ids.add(item.getId());
 			rewards.add(item);
 		}
-		int rand = RandomFunction.random(player.hasPerk(Perks.DETECTIVE) ? 1000 : 1400);// 2000
-																						// :
-																						// 4000
+		int rand = 1400;// 2000
 		if (this == HARD && rand == 11) {
 			rewards.remove(0);
 			rewards.add(RandomFunction.getChanceItem(SUPER_RARE).getRandomItem());

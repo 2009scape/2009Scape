@@ -10,7 +10,6 @@ import org.crandor.game.node.entity.player.Player;
 import org.crandor.game.node.entity.player.info.Rights;
 import org.crandor.game.node.entity.player.link.IronmanMode;
 import org.crandor.game.world.GameWorld;
-import org.crandor.game.world.map.zone.impl.DonatorZone;
 import org.crandor.game.world.map.zone.impl.ModeratorZone;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.net.amsc.MSPacketRepository;
@@ -62,7 +61,7 @@ public final class LumbridgeGuideDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			if (!player.isDonator() && !player.isStaff() && !player.getIronmanManager().isIronman()) {
+			if (!player.isStaff() && !player.getIronmanManager().isIronman()) {
 				interpreter.sendOptions("Select an Option", "Where can I find a quest to go on?", "What monsters should I fight?", "Where can I make money?", "I'd like to know more about security.", "Where can I find a bank?");
 				stage = 103;
 				return true;
@@ -71,9 +70,6 @@ public final class LumbridgeGuideDialogue extends DialoguePlugin {
 			options.add("Yes please.");
 			if (player.getRights() == Rights.PLAYER_MODERATOR && ModeratorZone.isOpen() || player.isAdmin()) {
 				options.add("I would like to access the P-Mod room.");
-			}
-			if (player.isDonator() || player.isAdmin()) {
-				options.add("I would like to access the Donator Zone.");
 			}
 			if (player.getIronmanManager().isIronman()) {
 				options.add("Would you like to remove Ironman Mode?");
@@ -132,10 +128,6 @@ public final class LumbridgeGuideDialogue extends DialoguePlugin {
 			player.getIronmanManager().setMode(IronmanMode.NONE);
 			MSPacketRepository.sendInfoUpdate(player);
 			end();
-			break;
-		case 901:
-			end();
-			DonatorZone.getInstance().invite(player, npc);
 			break;
 		case 10:
 			interpreter.sendOptions("Select an Option", "Tell me about the town of Lumbridge.", "I'm fine for now, thanks.");

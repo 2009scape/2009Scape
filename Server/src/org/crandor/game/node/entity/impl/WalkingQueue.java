@@ -3,7 +3,6 @@ package org.crandor.game.node.entity.impl;
 import org.crandor.game.content.skill.Skills;
 import org.crandor.game.node.entity.Entity;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.world.map.Direction;
 import org.crandor.game.world.map.Location;
 import org.crandor.game.world.map.Point;
@@ -166,9 +165,6 @@ public final class WalkingQueue {
 		if (player.getSettings().getWeight() > 0.0) {
 			rate *= 1 + (player.getSettings().getWeight() / 100);
 		}
-		if (player.getDetails().getShop().hasPerk(Perks.STAMINA_BOOST)) {
-			rate -= 0.2486 + 0.100;
-		}
 		return rate;
 	}
 
@@ -179,10 +175,6 @@ public final class WalkingQueue {
 	 */
 	private double getEnergyRestore(Player player) {
 		double rate = 100 / ((175 - (player.getSkills().getLevel(Skills.AGILITY))) / 0.6);
-		if (player.getDetails().getShop().hasPerk(Perks.STAMINA_BOOST)) {
-			double percentage = player.getSkills().getLevel(Skills.AGILITY) * 0.40;
-			rate += percentage / 100 + 0.30;
-		}
 		return rate;
 	}
 

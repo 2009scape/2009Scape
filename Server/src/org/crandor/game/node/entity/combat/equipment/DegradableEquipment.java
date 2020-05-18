@@ -3,7 +3,6 @@ package org.crandor.game.node.entity.combat.equipment;
 import org.crandor.game.container.impl.EquipmentContainer;
 import org.crandor.game.node.entity.Entity;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 import org.crandor.plugin.Plugin;
 
@@ -68,9 +67,6 @@ public abstract class DegradableEquipment implements Plugin<Object> {
 	 */
 	public static void checkDegrade(Player player, Entity entity, int slot) {
 		Item item = player.getEquipment().get(slot);
-		if (item == null || EQUIPMENT[slot] == null || player.getDetails().getShop().hasPerk(Perks.BARROWS_BEFRIENDER)) {
-			return;
-		}
 		roar: {
 			for (DegradableEquipment e : EQUIPMENT[slot]) {
 				for (int itemId : e.itemIds) {

@@ -31,6 +31,7 @@ public final class MSPacketRepository {
 
 	/**
 	 * Handles a player info update.
+	 *
 	 * @param parser the player.
 	 */
 	public static void sendInfoUpdate(Player player) {
@@ -43,6 +44,7 @@ public final class MSPacketRepository {
 
 	/**
 	 * Registers a player on the management server.
+	 *
 	 * @param parser The login.
 	 */
 	public static void sendPlayerRegistry(LoginParser parser) {
@@ -61,6 +63,7 @@ public final class MSPacketRepository {
 
 	/**
 	 * Sends the player removal packet.
+	 *
 	 * @param username The name of the player to remove.
 	 */
 	public static void sendPlayerRemoval(String username) {
@@ -74,12 +77,13 @@ public final class MSPacketRepository {
 
 	/**
 	 * Sends the punishment packet to the MS.
-	 * @param player The player punishing the other player.
-	 * @param name The name of the player to punish.
-	 * @param type The punishment type (0: mute, 1: ban, 2: ip-ban, 3: mac-ban,
-	 * 4: msk-ban)
+	 *
+	 * @param player   The player punishing the other player.
+	 * @param name     The name of the player to punish.
+	 * @param type     The punishment type (0: mute, 1: ban, 2: ip-ban, 3: mac-ban,
+	 *                 4: msk-ban)
 	 * @param duration The duration of the punishment (in milliseconds, -1 =
-	 * permanent).
+	 *                 permanent).
 	 */
 	public static void sendPunishment(Player player, String name, int type, long duration) {
 		IoBuffer buffer = new IoBuffer(2, PacketHeader.BYTE);
@@ -92,6 +96,7 @@ public final class MSPacketRepository {
 
 	/**
 	 * Requests the communication info for the given player.
+	 *
 	 * @param username The username.
 	 */
 	public static void requestCommunicationInfo(String username) {
@@ -102,11 +107,12 @@ public final class MSPacketRepository {
 
 	/**
 	 * Sends a contact update.
+	 *
 	 * @param username The username.
-	 * @param contact The contact's username.
-	 * @param remove If we're removing the contact from the list.
-	 * @param block If the contact list is for the blocked players.
-	 * @param rank The new clan rank (or null when not updating clan rank!).
+	 * @param contact  The contact's username.
+	 * @param remove   If we're removing the contact from the list.
+	 * @param block    If the contact list is for the blocked players.
+	 * @param rank     The new clan rank (or null when not updating clan rank!).
 	 */
 	public static void sendContactUpdate(String username, String contact, boolean remove, boolean block, ClanRank rank) {
 		IoBuffer buffer = new IoBuffer(block ? 5 : 4, PacketHeader.BYTE);
@@ -123,8 +129,9 @@ public final class MSPacketRepository {
 
 	/**
 	 * Joins a clan.
+	 *
 	 * @param player The player joining a clan.
-	 * @param name The clan's owner name.
+	 * @param name   The clan's owner name.
 	 */
 	public static void sendJoinClan(Player player, String name) {
 		if (name.length() > 0 && !ClanRepository.getClans().containsKey(name)) {
@@ -138,7 +145,8 @@ public final class MSPacketRepository {
 
 	/**
 	 * Sends the clan rename packet.
-	 * @param player The player.
+	 *
+	 * @param player   The player.
 	 * @param clanName The clan name.
 	 */
 	public static void sendClanRename(Player player, String clanName) {
@@ -150,9 +158,10 @@ public final class MSPacketRepository {
 
 	/**
 	 * Sets a clan setting.
+	 *
 	 * @param player The player.
-	 * @param type The setting type.
-	 * @param rank The rank to set.
+	 * @param type   The setting type.
+	 * @param rank   The rank to set.
 	 */
 	public static void setClanSetting(Player player, int type, ClanRank rank) {
 		if (!WorldCommunicator.isEnabled()) {
@@ -169,8 +178,9 @@ public final class MSPacketRepository {
 
 	/**
 	 * Sends the kicking a clan member packet.
+	 *
 	 * @param username The player's username.
-	 * @param name The name.
+	 * @param name     The name.
 	 */
 	public static void sendClanKick(String username, String name) {
 		IoBuffer buffer = new IoBuffer(9, PacketHeader.BYTE);
@@ -181,7 +191,8 @@ public final class MSPacketRepository {
 
 	/**
 	 * Sends a clan message.
-	 * @param player The player sending the message.
+	 *
+	 * @param player  The player sending the message.
 	 * @param message The message to send.
 	 */
 	public static void sendClanMessage(Player player, String message) {
@@ -193,8 +204,9 @@ public final class MSPacketRepository {
 
 	/**
 	 * Sends a private message.
-	 * @param player The player.
-	 * @param name The target name.
+	 *
+	 * @param player  The player.
+	 * @param name    The target name.
 	 * @param message The message.
 	 */
 	public static void sendPrivateMessage(Player player, String name, String message) {
@@ -207,6 +219,7 @@ public final class MSPacketRepository {
 
 	/**
 	 * Requests clan information.
+	 *
 	 * @param name The clan's owner name.
 	 */
 	public static void requestClanInfo(String name) {
@@ -217,10 +230,11 @@ public final class MSPacketRepository {
 
 	/**
 	 * Sends the chat settings.
-	 * @param player The player.
-	 * @param publicSetting The public chat setting.
+	 *
+	 * @param player         The player.
+	 * @param publicSetting  The public chat setting.
 	 * @param privateSetting The private chat setting.
-	 * @param tradeSetting The trade setting.
+	 * @param tradeSetting   The trade setting.
 	 */
 	public static void sendChatSetting(Player player, int publicSetting, int privateSetting, int tradeSetting) {
 		IoBuffer buffer = new IoBuffer(13, PacketHeader.BYTE);
@@ -233,56 +247,58 @@ public final class MSPacketRepository {
 
 	/**
 	 * Handles an incoming packet from the management server.
+	 *
 	 * @param opcode The opcode.
-	 * @param b The buffer.
+	 * @param b      The buffer.
 	 */
 	public static void handleIncoming(int opcode, ByteBuffer b) {
 		IoBuffer buffer = new IoBuffer(opcode, PacketHeader.NORMAL, b);
 		switch (opcode) {
-		case 0:
-			handleRegistryResponse(buffer);
-			break;
-		case 2:
-			handlePlayerMessage(buffer);
-			break;
-		case 3:
-			handleContactInformation(buffer);
-			break;
-		case 4:
-			handleContactUpdate(buffer);
-			break;
-		case 5:
-			handleMessage(buffer);
-			break;
-		case 6:
-			handleClanInformation(buffer);
-			break;
-		case 7:
-			handleLeaveClan(buffer);
-			break;
-		case 8:
-			handleContactNotification(buffer);
-			break;
-		case 9:
-			handlePlayerLogout(buffer);
-			break;
-		case 10:
-			handleUpdate(buffer);
-			break;
-		case 11:
-			handlePunishmentUpdate(buffer);
-			break;
-		case 15:
-			SystemManager.getSystemConfig().parse();
-			SystemLogger.log("System configurations reloaded.");
-			break;
-		default:
-			System.out.println("Handling incoming packet [opcode=" + opcode + ", size=" + b.limit() + "].");
+			case 0:
+				handleRegistryResponse(buffer);
+				break;
+			case 2:
+				handlePlayerMessage(buffer);
+				break;
+			case 3:
+				handleContactInformation(buffer);
+				break;
+			case 4:
+				handleContactUpdate(buffer);
+				break;
+			case 5:
+				handleMessage(buffer);
+				break;
+			case 6:
+				handleClanInformation(buffer);
+				break;
+			case 7:
+				handleLeaveClan(buffer);
+				break;
+			case 8:
+				handleContactNotification(buffer);
+				break;
+			case 9:
+				handlePlayerLogout(buffer);
+				break;
+			case 10:
+				handleUpdate(buffer);
+				break;
+			case 11:
+				handlePunishmentUpdate(buffer);
+				break;
+			case 15:
+				SystemManager.getSystemConfig().parse();
+				SystemLogger.log("System configurations reloaded.");
+				break;
+			default:
+				System.out.println("Handling incoming packet [opcode=" + opcode + ", size=" + b.limit() + "].");
 		}
 	}
 
 	/**
 	 * Handles the player registry response packet.
+	 *
 	 * @param buffer The buffer.
 	 */
 	private static void handleRegistryResponse(IoBuffer buffer) {
@@ -294,41 +310,39 @@ public final class MSPacketRepository {
 			Response response = Response.get(opcode);
 			Player player = null;
 			switch (response) {
-			case ALREADY_ONLINE:
-				player = Repository.getPlayer(username);
-				if (player == null  || player.getSession().isActive() || !player.getSession().getAddress().equals(details.getSession().getAddress())) {
+				case ALREADY_ONLINE:
+					player = Repository.getPlayer(username);
+					if (player == null || player.getSession().isActive() || !player.getSession().getAddress().equals(details.getSession().getAddress())) {
+						details.getSession().write(response, true);
+						break;
+					}
+					player.getPacketDispatch().sendLogout();
+				case SUCCESSFUL:
+					if (!details.getSession().isActive()) {
+						sendPlayerRemoval(username);
+						break;
+					}
+					if (player == null) {
+						player = new Player(details);
+					} else {
+						player.updateDetails(details);
+					}
+					parser.initialize(player, response == Response.ALREADY_ONLINE);
+					break;
+
+				case MOVING_WORLD:
+					details.getSession().setServerKey(buffer.get());
+				default:
 					details.getSession().write(response, true);
 					break;
-				}
-				player.getPacketDispatch().sendLogout();
-			case SUCCESSFUL:
-				if (!details.getSession().isActive()) {
-					sendPlayerRemoval(username);
-					break;
-				}
-				if (player == null) {
-					player = new Player(details);
-				} else {
-					player.updateDetails(details);
-				}
-				parser.initialize(player, response == Response.ALREADY_ONLINE);
-				break;
-				
-			case MOVING_WORLD:
-				details.getSession().setServerKey(buffer.get());
-			default:
-				details.getSession().write(response, true);
-				break;
 			}
 		}
 	}
-	
+
 	/**
-	 * 
 	 * Sends global message to all player nodes.
-	 * 
-	 * @param message
-	 * 			The message.
+	 *
+	 * @param message The message.
 	 */
 	public static void sendWorldMessage(String message) {
 		IoBuffer buffer = new IoBuffer(12, PacketHeader.BYTE);
@@ -338,6 +352,7 @@ public final class MSPacketRepository {
 
 	/**
 	 * Handles sending a message to a player.
+	 *
 	 * @param buffer The buffer to read from.
 	 */
 	private static void handlePlayerMessage(IoBuffer buffer) {
@@ -351,6 +366,7 @@ public final class MSPacketRepository {
 
 	/**
 	 * Handles the contact information packet.
+	 *
 	 * @param buffer The buffer to read from.
 	 */
 	private static void handleContactInformation(IoBuffer buffer) {
@@ -395,48 +411,49 @@ public final class MSPacketRepository {
 			return;
 		}
 		switch (type) {
-		case 0:
-			if (block) {
-				player.getCommunication().getBlocked().add(contactName);
-				PacketRepository.send(ContactPackets.class, new ContactContext(player, ContactContext.IGNORE_LIST_TYPE));
+			case 0:
+				if (block) {
+					player.getCommunication().getBlocked().add(contactName);
+					PacketRepository.send(ContactPackets.class, new ContactContext(player, ContactContext.IGNORE_LIST_TYPE));
+					break;
+				}
+				int worldId = buffer.get() & 0xFF;
+				Contact contact = player.getCommunication().getContacts().get(contactName);
+				if (contact == null) {
+					player.getCommunication().getContacts().put(contactName, contact = new Contact(contactName));
+				}
+				contact.setWorldId(worldId);
+				PacketRepository.send(ContactPackets.class, new ContactContext(player, contactName, worldId));
 				break;
-			}
-			int worldId = buffer.get() & 0xFF;
-			Contact contact = player.getCommunication().getContacts().get(contactName);
-			if (contact == null) {
-				player.getCommunication().getContacts().put(contactName, contact = new Contact(contactName));
-			}
-			contact.setWorldId(worldId);
-			PacketRepository.send(ContactPackets.class, new ContactContext(player, contactName, worldId));
-			break;
-		case 1:
-			if (block) {
-				player.getCommunication().getBlocked().remove(contactName);
-				PacketRepository.send(ContactPackets.class, new ContactContext(player, ContactContext.IGNORE_LIST_TYPE));
+			case 1:
+				if (block) {
+					player.getCommunication().getBlocked().remove(contactName);
+					PacketRepository.send(ContactPackets.class, new ContactContext(player, ContactContext.IGNORE_LIST_TYPE));
+					break;
+				}
+				player.getCommunication().getContacts().remove(contactName);
 				break;
-			}
-			player.getCommunication().getContacts().remove(contactName);
-			break;
-		default:
-			ClanRank rank = ClanRank.values()[type - 2];
-			contact = player.getCommunication().getContacts().get(contactName);
-			if (contact == null) {
-				// System.err.println("Invalid contact specified [name=" +
-				// contact + "]!");
+			default:
+				ClanRank rank = ClanRank.values()[type - 2];
+				contact = player.getCommunication().getContacts().get(contactName);
+				if (contact == null) {
+					// System.err.println("Invalid contact specified [name=" +
+					// contact + "]!");
+					break;
+				}
+				contact.setRank(rank);
+				ClanRepository clan = ClanRepository.get(username);
+				if (clan != null) {
+					clan.rank(contactName, rank);
+				}
+				PacketRepository.send(ContactPackets.class, new ContactContext(player, contactName, contact.getWorldId()));
 				break;
-			}
-			contact.setRank(rank);
-			ClanRepository clan = ClanRepository.get(username);
-			if (clan != null) {
-				clan.rank(contactName, rank);
-			}
-			PacketRepository.send(ContactPackets.class, new ContactContext(player, contactName, contact.getWorldId()));
-			break;
 		}
 	}
 
 	/**
 	 * Handles the message packet.
+	 *
 	 * @param buffer The buffer.
 	 */
 	private static void handleMessage(IoBuffer buffer) {
@@ -451,18 +468,19 @@ public final class MSPacketRepository {
 		}
 		int opcode = MessageContext.SEND_MESSAGE;
 		switch (type) {
-		case 1:
-			opcode = MessageContext.RECIEVE_MESSAGE;
-			break;
-		case 2:
-			opcode = MessageContext.CLAN_MESSAGE;
-			break;
+			case 1:
+				opcode = MessageContext.RECIEVE_MESSAGE;
+				break;
+			case 2:
+				opcode = MessageContext.CLAN_MESSAGE;
+				break;
 		}
 		PacketRepository.send(CommunicationMessage.class, new MessageContext(player, sender, icon, opcode, message));
 	}
 
 	/**
 	 * Handles the clan information packet.
+	 *
 	 * @param buffer The buffer.
 	 */
 	private static void handleClanInformation(IoBuffer buffer) {
@@ -499,6 +517,7 @@ public final class MSPacketRepository {
 
 	/**
 	 * Handles the clan information packet.
+	 *
 	 * @param buffer The buffer.
 	 */
 	private static void handleLeaveClan(IoBuffer buffer) {
@@ -516,6 +535,7 @@ public final class MSPacketRepository {
 
 	/**
 	 * Handles a contact notification packet.
+	 *
 	 * @param buffer The buffer.
 	 */
 	private static void handleContactNotification(IoBuffer buffer) {
@@ -539,6 +559,7 @@ public final class MSPacketRepository {
 
 	/**
 	 * Handles a player logout notification packet.
+	 *
 	 * @param buffer The buffer.
 	 */
 	private static void handlePlayerLogout(IoBuffer buffer) {
@@ -552,6 +573,7 @@ public final class MSPacketRepository {
 
 	/**
 	 * Handles the update packet.
+	 *
 	 * @param buffer The buffer.
 	 */
 	private static void handleUpdate(IoBuffer buffer) {
@@ -566,6 +588,7 @@ public final class MSPacketRepository {
 
 	/**
 	 * Handles the punishment update packet.
+	 *
 	 * @param buffer The buffer.
 	 */
 	private static void handlePunishmentUpdate(IoBuffer buffer) {
@@ -573,60 +596,61 @@ public final class MSPacketRepository {
 		int type = buffer.get();
 		long duration = buffer.getLong();
 		switch (type) {
-		case 0:
-			Player player = Repository.getPlayer(key);
-			if (player != null && player.isActive()) {
-				player.getPacketDispatch().sendMessages((duration > 0L ? new String[] { "You have been muted.", "To prevent further mutes please read the rules." } : new String[] { "You have been unmuted." }));
-			}
-			player.getDetails().setMuteTime(duration);
-			break;
-		case 1:
-			player = Repository.getPlayer(key);
-			if (player != null && player.isActive() && duration > System.currentTimeMillis()) {
-				player.getSession().disconnect();
-			}
-			break;
-		case 2:
-			for (Player p : Repository.getPlayers()) {
-				if (p.getDetails().getIpAddress().equals(key)) {
-					p.getSession().disconnect();
+			case 0:
+				Player player = Repository.getPlayer(key);
+				if (player != null && player.isActive()) {
+					player.getPacketDispatch().sendMessages((duration > 0L ? new String[]{"You have been muted.", "To prevent further mutes please read the rules."} : new String[]{"You have been unmuted."}));
 				}
-			}
-			break;
-		case 3:
-			for (Player p : Repository.getPlayers()) {
-				if (p == null || key == null || p.getDetails() == null) {
-					return;
+				player.getDetails().setMuteTime(duration);
+				break;
+			case 1:
+				player = Repository.getPlayer(key);
+				if (player != null && player.isActive() && duration > System.currentTimeMillis()) {
+					player.getSession().disconnect();
 				}
-				if (p.getDetails().getMacAddress().equals(key)) {
-					p.getSession().disconnect();
+				break;
+			case 2:
+				for (Player p : Repository.getPlayers()) {
+					if (p.getDetails().getIpAddress().equals(key)) {
+						p.getSession().disconnect();
+					}
 				}
-			}
-			break;
-		case 4:
-			for (Player p : Repository.getPlayers()) {
-				if (p == null || key == null || p.getDetails() == null) {
-					return;
+				break;
+			case 3:
+				for (Player p : Repository.getPlayers()) {
+					if (p == null || key == null || p.getDetails() == null) {
+						return;
+					}
+					if (p.getDetails().getMacAddress().equals(key)) {
+						p.getSession().disconnect();
+					}
 				}
-				if (p.getDetails().getSerial().equals(key)) {
-					p.getSession().disconnect();
+				break;
+			case 4:
+				for (Player p : Repository.getPlayers()) {
+					if (p == null || key == null || p.getDetails() == null) {
+						return;
+					}
+					if (p.getDetails().getSerial().equals(key)) {
+						p.getSession().disconnect();
+					}
 				}
-			}
-			break;
-		case 6:
-			player = Repository.getPlayer(key);
-			if (player != null) {
-				player.getPacketDispatch().sendLogout();
-				player.clear(true);
-				player.getSession().disconnect();
-			}
-			break;
+				break;
+			case 6:
+				player = Repository.getPlayer(key);
+				if (player != null) {
+					player.getPacketDispatch().sendLogout();
+					player.clear(true);
+					player.getSession().disconnect();
+				}
+				break;
 		}
 	}
 
 
 	/**
 	 * Gets the icon to send.
+	 *
 	 * @param d the details.
 	 * @return the icon.
 	 */
@@ -634,8 +658,6 @@ public final class MSPacketRepository {
 		int icon = 0;
 		if (d.getRights() != Rights.REGULAR_PLAYER) {
 			icon = d.getRights().toInteger();
-		} else if (d.isDonator()) {
-			icon = d.getIcon().getIndexId();
 		}
 		return icon;
 	}

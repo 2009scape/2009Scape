@@ -18,7 +18,6 @@ public class ZoneBuilder implements CallBack {
 		configure(new DarkZone());
 		configure(new KaramjaZone());
 		configure(new BankZone());
-		configure(DonatorZone.getInstance());
 		return true;
 	}
 

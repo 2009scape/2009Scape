@@ -82,10 +82,7 @@ public final class PlayerSQLManager {
 		details.setBanTime((long) table.getColumn("banTime").getValue());
 		details.setMuteTime((long) table.getColumn("muteTime").getValue());
 		details.setIcon(Icon.forId((int) table.getColumn("icon").getValue()));
-		details.getShop().setCredits((int) table.getColumn("credits").getValue());
-		details.getShop().parsePerks((String) table.getColumn("perks").getValue());
 		details.setRights(Rights.forId((int) table.getColumn("rights").getValue()));
-		details.setDonatorType(DonatorType.forId((int) table.getColumn("donatorType").getValue()));
 		details.setLastLogin(System.currentTimeMillis());
 		details.setTimePlayed((long) table.getColumn("timePlayed").getValue());
 		return true;

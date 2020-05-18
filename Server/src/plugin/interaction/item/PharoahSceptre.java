@@ -5,7 +5,6 @@ import org.crandor.game.content.dialogue.DialoguePlugin;
 import org.crandor.game.interaction.OptionHandler;
 import org.crandor.game.node.Node;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.system.task.Pulse;
 import org.crandor.game.world.GameWorld;

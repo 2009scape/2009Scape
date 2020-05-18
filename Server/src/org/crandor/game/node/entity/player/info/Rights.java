@@ -27,9 +27,6 @@ public enum Rights {
 		if (player.getIronmanManager().isIronman()) {
 			return player.getIronmanManager().getMode().getIcon();
 		}
-		if (player.getDetails().isDonator()) {
-			return player.getDetails().getIcon().getIndexId();
-		}
 		return 0;
 	}
 

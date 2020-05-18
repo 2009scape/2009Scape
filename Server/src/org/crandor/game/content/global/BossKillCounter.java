@@ -2,7 +2,6 @@ package org.crandor.game.content.global;
 
 import org.crandor.game.content.skill.member.slayer.Tasks;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.repository.Repository;
 import org.crandor.tools.RandomFunction;
@@ -142,7 +141,7 @@ public enum BossKillCounter {
 		} else if (npcid == 3200) {
 			number = 300;
 		}
-		int rand = RandomFunction.random(killer.hasPerk(Perks.PET_BEFRIENDER) ? number / 2 : number);
+		int rand = number;
 		if(rand == 10){
 			for (int i = 0; i < killer.getFamiliarManager().getInsuredPets().size(); i++) {
 				if (killer.getFamiliarManager().getInsuredPets().get(i).getBabyItemId() == boss.getPetId()) {

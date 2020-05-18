@@ -8,7 +8,6 @@ import org.crandor.game.content.skill.Skills;
 import org.crandor.game.content.skill.member.summoning.familiar.Forager;
 import org.crandor.game.node.entity.npc.NPC;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.entity.player.link.diary.DiaryType;
 import org.crandor.game.node.entity.player.link.skillertasks.SkillTasks;
 import org.crandor.game.node.item.Item;
@@ -145,7 +144,6 @@ public final class FishingPulse extends SkillPulse<NPC> {
 				SkillingPets.checkPetDrop(player, SkillingPets.HERON);
 				final Item item = fish.getItem();
 			    player.getInventory().add(item);
-				Perks.addDouble(player, item);
 				player.getSkills().addExperience(Skills.FISHING, fish.getExperience(), true);
 				message(2);
 				if (TutorialSession.getExtension(player).getStage() == 13) {

@@ -3,7 +3,6 @@ package org.crandor.game.content.skill.member.herblore;
 import org.crandor.game.content.skill.SkillPulse;
 import org.crandor.game.content.skill.Skills;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 import org.crandor.game.world.update.flag.context.Animation;
 import org.crandor.tools.StringUtils;
@@ -117,7 +116,6 @@ public final class HerblorePulse extends SkillPulse<Item> {
 		if ((player.getInventory().containsItem(potion.getBase()) && player.getInventory().containsItem(potion.getIngredient())) && player.getInventory().remove(potion.getBase(), potion.getIngredient())) {
 			final Item item = potion.getProduct();
 		    player.getInventory().add(item);
-			Perks.addDouble(player, item);
 			player.getPacketDispatch().sendMessage("You put the" + StringUtils.formatDisplayName(potion.getIngredient().getName().replace("Clean", "")) + " Leaf into the vial of water.");
 			if (cycles++ == 3) {
 				player.animate(ANIMATION);
@@ -133,7 +131,6 @@ public final class HerblorePulse extends SkillPulse<Item> {
 		if ((player.getInventory().containsItem(potion.getBase()) && player.getInventory().containsItem(potion.getIngredient())) && player.getInventory().remove(potion.getBase(), potion.getIngredient())) {
 			final Item item = potion.getProduct();
 		    player.getInventory().add(item);
-			Perks.addDouble(player, item);
 			player.getSkills().addExperience(Skills.HERBLORE, potion.getExperience(), true);
 			player.getPacketDispatch().sendMessage("You mix the " + potion.getIngredient().getName().toLowerCase() + " into your potion.");
 			player.animate(ANIMATION);

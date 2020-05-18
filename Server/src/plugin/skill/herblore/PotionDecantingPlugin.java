@@ -4,7 +4,6 @@ import org.crandor.cache.def.impl.ItemDefinition;
 import org.crandor.game.interaction.NodeUsageEvent;
 import org.crandor.game.interaction.UseWithHandler;
 import org.crandor.game.node.entity.player.Player;
-import org.crandor.game.node.entity.player.info.portal.Perks;
 import org.crandor.game.node.item.Item;
 import org.crandor.plugin.InitializablePlugin;
 import org.crandor.plugin.Plugin;
@@ -208,9 +207,6 @@ public final class PotionDecantingPlugin extends UseWithHandler {
 		for (Item item : player.getInventory().toArray()) {
 			if (item != null) {
 				if (getPotionDose(item) > 0 && isPot(item.getId())) {
-					if (!item.getDefinition().isUnnoted() && !player.hasPerk(Perks.DECANTER) && !player.isAdmin()) {
-						continue;
-					}
 					String itemName = formatName(item);
 					item.setAmount(item.getAmount());
 					totalVials += item.getAmount();
