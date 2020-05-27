@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Management Server" type="Application" factoryName="Application" singleton="false">
-    <option name="MAIN_CLASS_NAME" value="org.keldagrim.Management" />
+    <option name="MAIN_CLASS_NAME" value="ms.Management" />
     <module name="RS-2009" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Management-Server" />
     <method v="2">

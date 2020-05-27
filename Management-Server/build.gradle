@@ -4,7 +4,7 @@ targetCompatibility = 1.8
 
 apply plugin: 'application'
 
-mainClassName = 'org.keldagrim.Management'
+mainClassName = 'ms.Management'
 
 repositories {
     flatDir {
