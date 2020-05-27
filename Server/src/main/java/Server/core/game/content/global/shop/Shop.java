@@ -3,6 +3,7 @@ package core.game.content.global.shop;
 import core.cache.def.impl.ItemDefinition;
 import core.game.container.Container;
 import core.game.container.ContainerType;
+import core.game.content.ItemNames;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.diary.DiaryType;
 import core.game.node.item.Item;
@@ -24,7 +25,19 @@ public class Shop {
     /**
      * Represents the general store items.
      */
-    public final static Item[] GENERAL_STORE_ITEMS = {new Item(1931, 30), new Item(1935, 30), new Item(1735, 10), new Item(1925, 10), new Item(1923, 10), new Item(1887, 10), new Item(590, 10), new Item(1755, 10), new Item(2347, 10), new Item(550, 10), new Item(9003, 10)};
+    public final static Item[] GENERAL_STORE_ITEMS = new Item[]{
+            new Item(ItemNames.POT_1931,5),
+            new Item(ItemNames.JUG_1935,5),
+            new Item(ItemNames.SHEARS_1735,2),
+            new Item(ItemNames.BUCKET_1925,3),
+            new Item(ItemNames.BOWL_1923,2),
+            new Item(ItemNames.CAKE_TIN_1887,2),
+            new Item(ItemNames.TINDERBOX,2),
+            new Item(ItemNames.CHISEL_1755,2),
+            new Item(ItemNames.HAMMER,5),
+            new Item(ItemNames.NEWCOMER_MAP_550,5),
+            new Item(ItemNames.SECURITY_BOOK_9003,5)
+    };
     /**
      * Represents the coins item.
      */

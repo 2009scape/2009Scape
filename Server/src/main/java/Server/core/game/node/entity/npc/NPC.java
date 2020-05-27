@@ -4,6 +4,7 @@ import core.cache.def.impl.NPCDefinition;
 import plugin.dialogue.DialoguePlugin;
 import plugin.jobs.impl.SlayingJob;
 import core.game.content.global.shop.Shop;
+import plugin.shops.Shops;
 import plugin.skill.Skills;
 import plugin.skill.slayer.Tasks;
 import plugin.skill.summoning.familiar.Familiar;
@@ -307,6 +308,10 @@ public class NPC extends Entity {
 	 * @return {@code True} if so.
 	 */
 	public boolean openShop(Player player) {
+		shop = Shops.forId(id);
+		if(shop != null){
+			player.debug("testing new shop for: " + name);
+		}
 		if (shop == null) {
 			shop = ShopSQLHandler.getShops().get(getId());
 			if (shop == null) {

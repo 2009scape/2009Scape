@@ -244,6 +244,10 @@ public final class DeveloperCommandPlugin extends CommandPlugin {
             case "chins":
                 player.getInventory().add(new Item(ItemNames.RED_CHINCHOMPA_10034,Integer.MAX_VALUE));
                 break;
+            case "shop":
+                int npc = Integer.parseInt(args[1]);
+                new NPC(npc).openShop(player);
+                break;
             case "simdrops":
                 Executors.newSingleThreadExecutor().execute(()->{
                     int npc_id = Integer.parseInt(args[1]);
