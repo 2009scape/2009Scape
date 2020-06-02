@@ -7,6 +7,7 @@ import java.nio.channels.SocketChannel;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -135,7 +136,13 @@ public class IoSession {
 	 * @param buffer The buffer.
 	 */
 	public void queue(ByteBuffer buffer) {
-		writingLock.lock();
+		try {
+			writingLock.tryLock(1000L, TimeUnit.MILLISECONDS);
+		} catch (Exception e){
+			System.out.println(e);
+			writingLock.unlock();
+			return;
+		}
 		writingQueue.add(buffer);
 		writingLock.unlock();
 		write();

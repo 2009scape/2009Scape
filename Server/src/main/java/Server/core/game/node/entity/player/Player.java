@@ -117,6 +117,8 @@ public class Player extends Entity {
 	 */
 	private PlayerDetails details;
 
+	public boolean newPlayer = getSkills().getTotalLevel() < 50;
+
 	public BankContainer dropLog = new BankContainer(this);
 
 	/**

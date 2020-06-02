@@ -11,6 +11,7 @@ import core.net.amsc.MSPacketRepository;
 import core.net.amsc.ManagementServerState;
 import core.net.amsc.WorldCommunicator;
 
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -59,7 +60,13 @@ public final class LoginParser implements Runnable {
 
 	@Override
 	public void run() {
-		LOCK.lock();
+		try {
+			LOCK.tryLock(1000L, TimeUnit.MILLISECONDS);
+		} catch (Exception e){
+			System.out.println(e);
+			LOCK.unlock();
+			return;
+		}
 		try {
 			if (validateRequest()) {
 				handleLogin();

@@ -12,7 +12,7 @@ import java.util.List;
  */
 public enum Bones {
 	
-	BONES(526, 4.5), 
+	BONES(2530, 4.5),
 	WOLF_BONES(2859, 4.5), 
 	BURNST_BONES(528, 4.5), 
 	MONKEY_BONES(3183, 5), 

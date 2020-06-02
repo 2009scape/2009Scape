@@ -49,7 +49,13 @@ public final class JS5Queue {
 	 * @param highPriority If the request is high priority.
 	 */
 	public void queue(int container, int archive, boolean highPriority) {
-		lock.lock();
+		try {
+			lock.tryLock(1000L, TimeUnit.MILLISECONDS);
+		} catch (Exception e){
+			System.out.println(e);
+			lock.unlock();
+			return;
+		}
 		int key = container << 16 | archive;
 		if (queue.containsKey(key)) {
 			// System.err.println("Queue already contained request " + container

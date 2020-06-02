@@ -71,7 +71,7 @@ public final class HansDialoguePlugin extends DialoguePlugin {
 						stage = 50;
 						break;
 					case 4:
-						interpreter.sendOptions("Select an Option", "Have you been here as long as me?", "I'd like to learn faster!", "About Iron Man mode...","About random events...", "Go Back...");
+						interpreter.sendOptions("Select an Option", "Have you been here as long as me?", "About my xp rate...", "About Iron Man mode...","About random events...", "Go Back...");
 						stage = 10;
 						break;
 				}
@@ -84,14 +84,8 @@ public final class HansDialoguePlugin extends DialoguePlugin {
 						stage = 41;
 						break;
 					case 2:
-						//I'd Like to Learn Faster
-						if (player.getSkills().experienceMutiplier == 10.0) {
-							interpreter.sendDialogues(npc, FacialExpression.GUILTY, "Sorry, but you're already at the fastest experience", "rate. It's only a one way operation, and", "you can't learn faster yet I'm afraid!");
-							stage = 50;
-						} else {
-							interpreter.sendDialogues(npc, FacialExpression.HAPPY, "That's great! I can help you with that, but", "I must warn you it's only a one-way thing. There's no", "going back!");
-							stage = 200;
-						}
+						npc("Your current XP rate is: " + player.getSkills().experienceMutiplier);
+						stage = 11;
 						break;
 					case 3:
 						//About Iron Man Mode...
@@ -105,7 +99,7 @@ public final class HansDialoguePlugin extends DialoguePlugin {
 						}
 						break;
 					case 4:
-						if(player.getAntiMacroHandler().isDisabled == true){
+						if(player.getAntiMacroHandler().isDisabled){
 							interpreter.sendOptions("Select an Option","I want to enable random events.","Nevermind.");
 							stage = 130;
 							break;
@@ -121,7 +115,54 @@ public final class HansDialoguePlugin extends DialoguePlugin {
 				}
 				break;
 
-			//Have you been here as long as me?
+			case 11:
+				if(player.getSkills().experienceMutiplier == 5.0) {
+					player.newPlayer = player.getSkills().getTotalLevel() < 50;
+					options("Change xp rate", "Nevermind.");
+					stage++;
+				} else {
+					npc("You can only change your rate once, sorry.");
+					stage = 131;
+				}
+				break;
+			case 12:
+				switch(buttonId){
+					case 1:
+						options("2.5x","10x");
+						stage++;
+						break;
+					case 2:
+						stage = 131;
+						break;
+				}
+				break;
+			case 13:
+				switch(buttonId){
+					case 1:
+						if(player.newPlayer) {
+							player.getSkills().experienceMutiplier = 2.5;
+							stage = 14;
+						} else {
+							stage = 15;
+							break;
+						}
+						break;
+					case 2:
+						player.getSkills().experienceMutiplier = 10.0;
+						stage = 14;
+						break;
+				}
+				npc("One moment, please...");
+				break;
+			case 14:
+				npc("Tada, your xp rate is now " + player.getSkills().experienceMutiplier);
+				stage = 131;
+				break;
+			case 15:
+				npc("Sorry, only new accounts can select 2.5x.");
+				stage = 131;
+				break;
+				//Have you been here as long as me?
 			case 41:
 				interpreter.sendDialogues(player, FacialExpression.THINKING, "You must be old then?");
 				stage++;
@@ -139,6 +180,7 @@ public final class HansDialoguePlugin extends DialoguePlugin {
 				player.sendMessage("Feature not currently available.");
 				stage = 50;
 				break;
+				//TODO:
 			/*case 45:
 				getTimePlayed();
 
