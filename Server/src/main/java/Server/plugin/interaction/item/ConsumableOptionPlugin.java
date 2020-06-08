@@ -12,6 +12,7 @@ import core.game.node.entity.player.Player;
 import core.game.node.item.Item;
 import core.plugin.InitializablePlugin;
 import core.plugin.Plugin;
+import plugin.consumable.potion.Potions;
 
 /**
  * Represents the plugin used to consume a consumable item.
@@ -50,6 +51,11 @@ public final class ConsumableOptionPlugin extends OptionHandler {
 		Item item = (Item) node;
 		if (player.getInventory().get(item.getSlot()) != item) {
 			return false;
+		}
+		if(Potions.forId(node.getId()) != null){
+			Potions potion = Potions.forId(node.getId());
+			potion.consume(player,node.getId());
+			return true;
 		}
 		Consumable consumable = food ? Consumables.getFoodByItemID(item.getId()) : Consumables.getDrinkByItemID(item.getId());
 		if (consumable == null) {

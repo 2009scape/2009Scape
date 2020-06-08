@@ -1,8 +1,9 @@
+/*
 package plugin.skill.magic.lunar;
 
 import plugin.consumable.Consumables;
 import plugin.consumable.Drink;
-import plugin.consumable.Potion;
+
 import plugin.skill.magic.MagicSpell;
 import plugin.skill.magic.Runes;
 import core.game.node.Node;
@@ -20,31 +21,41 @@ import core.plugin.Plugin;
 
 import java.util.List;
 
+*/
 /**
  * The stat restore spell.
  * @author 'Vexia
- */
+ *//*
+
 @InitializablePlugin
 public class StatRestoreSpell extends MagicSpell {
 
-	/**
+	*/
+/**
 	 * Represents the animation of this spell.
-	 */
+	 *//*
+
 	private static final Animation ANIMATION = new Animation(4413);
 
-	/**
+	*/
+/**
 	 * Represents the graphics.
-	 */
+	 *//*
+
 	private static final Graphics GRAPHICS = new Graphics(733, 130);
 
-	/**
+	*/
+/**
 	 * The ids of the spell.
-	 */
+	 *//*
+
 	private static final int[] IDS = new int[] { 2430, 127, 129, 131, 3024, 3026, 3028, 3030 };
 
-	/**
+	*/
+/**
 	 * Constructs a new {@code StatRestoreSpell} {@code Object}.
-	 */
+	 *//*
+
 	public StatRestoreSpell() {
 		super(SpellBook.LUNAR, 81, 84, null, null, null, new Item[] { new Item(Runes.ASTRAL_RUNE.getId(), 2), new Item(Runes.EARTH_RUNE.getId(), 10), new Item(Runes.WATER_RUNE.getId(), 10) });
 	}
@@ -112,11 +123,13 @@ public class StatRestoreSpell extends MagicSpell {
 		return true;
 	}
 
-	/**
+	*/
+/**
 	 * Checks if it is a restore item.
 	 * @param id the id.
 	 * @return {@code True} if so.
-	 */
+	 *//*
+
 	private boolean isRestore(int id) {
 		for (int i : IDS) {
 			if (i == id) {
@@ -127,3 +140,4 @@ public class StatRestoreSpell extends MagicSpell {
 	}
 
 }
+*/

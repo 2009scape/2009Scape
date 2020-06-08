@@ -1,6 +1,7 @@
 package plugin.consumable;
 
 import core.game.node.item.Item;
+import plugin.consumable.potion.PotionEffect;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -348,18 +349,6 @@ public enum Consumables {
 	GUTHIX_REST_3(new Drink(4419, new ConsumableProperties(5, 4421))),
 	GUTHIX_REST_2(new Drink(4421, new ConsumableProperties(5, 4423))),
 	GUTHIX_REST_1(new Drink(4423, new ConsumableProperties(5, 1980))),
-
-	/** Potions */
-	STRENGTH_POTION(new Potion(PotionEffect.STRENGTH_POTION)),
-	ATTACK_POTION(new Potion(PotionEffect.ATTACK_POTION)),
-	DEFENCE_POTION(new Potion(PotionEffect.DEFENCE_POTION)),
-	RANGING_POTION(new Potion(PotionEffect.RANGING_POTION)),
-	MAGIC_POTION(new Potion(PotionEffect.MAGIC_POTION)),
-	SUPER_STRENGTH_POTION(new Potion(PotionEffect.SUPER_STRENGTH)),
-	SUPER_ATTACK_POTION(new Potion(PotionEffect.SUPER_ATTACK)),
-	SUPER_DEFENCE_POTION(new Potion(PotionEffect.SUPER_DEFENCE)),
-	AGILITY_POTION(new Potion(PotionEffect.AGILITY_POTION)),
-	HUNTER_POTION(new Potion(PotionEffect.HUNTER_POTION)),
 
 	/** Miscellaneous */
 	CHOCOLATE_BAR(new Food(1973, 3)),

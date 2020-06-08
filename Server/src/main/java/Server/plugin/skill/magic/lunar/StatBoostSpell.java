@@ -1,8 +1,9 @@
+/*
 package plugin.skill.magic.lunar;
 
 import plugin.consumable.Consumables;
 import plugin.consumable.Drink;
-import plugin.consumable.Potion;
+
 import plugin.skill.magic.MagicSpell;
 import plugin.skill.magic.Runes;
 import core.game.node.Node;
@@ -20,32 +21,42 @@ import core.plugin.Plugin;
 
 import java.util.List;
 
+*/
 /**
  * The stat boost spell.
  * @author 'Vexia
  * @note emp do this.
- */
+ *//*
+
 @InitializablePlugin
 public final class StatBoostSpell extends MagicSpell {
 
-	/**
+	*/
+/**
 	 * Represents the animation of this spell.
-	 */
+	 *//*
+
 	private static final Animation ANIMATION = new Animation(4413);
 
-	/**
+	*/
+/**
 	 * Represents the graphics.
-	 */
+	 *//*
+
 	private static final Graphics GRAPHICS = new Graphics(733, 130);
 
-	/**
+	*/
+/**
 	 * The vial item id.
-	 */
+	 *//*
+
 	public static final int VIAL = 229;
 
-	/**
+	*/
+/**
 	 * Constructs a new {@code StatRestoreSpell} {@code Object}.
-	 */
+	 *//*
+
 	public StatBoostSpell() {
 		super(SpellBook.LUNAR, 84, 88, null, null, null, new Item[] { new Item(Runes.ASTRAL_RUNE.getId(), 3), new Item(Runes.EARTH_RUNE.getId(), 12), new Item(Runes.WATER_RUNE.getId(), 10) });
 	}
@@ -113,3 +124,4 @@ public final class StatBoostSpell extends MagicSpell {
 		return true;
 	}
 }
+*/

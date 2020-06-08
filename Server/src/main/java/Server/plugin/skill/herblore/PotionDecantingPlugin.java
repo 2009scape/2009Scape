@@ -26,7 +26,7 @@ public final class PotionDecantingPlugin extends UseWithHandler {
 	/**
 	 * Represents the array of potions to utilitize.
 	 */
-	private static final int[] POTIONS = new int[] {
+	public static final int[] POTIONS = new int[] {
 	/* empty vial */229,
 	/* Strength potion(4) */113,
 	/* Strength potion(3) */115,
