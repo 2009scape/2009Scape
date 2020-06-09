@@ -67,7 +67,7 @@ public enum Potions {
         }
     }
     PotionEffect effect;
-    int[] ids;
+    public int[] ids;
 
     Potions(int[] ids, PotionEffect effect){
         this.effect = effect;
@@ -98,6 +98,12 @@ public enum Potions {
             if (ids[i] == potion_id && i != (ids.length - 1)) return ids[i + 1];
         }
         return -1;
+    }
+
+    public static int getFull(int potion_id){
+        if(potMap.get(potion_id) != null)
+            return potMap.get(potion_id).ids[0];
+        return 0;
     }
 
     protected static final Animation ANIMATION = new Animation(829);
