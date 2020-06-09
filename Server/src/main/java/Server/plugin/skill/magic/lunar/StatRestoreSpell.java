@@ -1,9 +1,6 @@
-/*
 package plugin.skill.magic.lunar;
 
-import plugin.consumable.Consumables;
-import plugin.consumable.Drink;
-
+import plugin.consumable.potion.Potions;
 import plugin.skill.magic.MagicSpell;
 import plugin.skill.magic.Runes;
 import core.game.node.Node;
@@ -21,40 +18,13 @@ import core.plugin.Plugin;
 
 import java.util.List;
 
-*/
-/**
- * The stat restore spell.
- * @author 'Vexia
- *//*
-
 @InitializablePlugin
 public class StatRestoreSpell extends MagicSpell {
 
-	*/
-/**
-	 * Represents the animation of this spell.
-	 *//*
-
 	private static final Animation ANIMATION = new Animation(4413);
-
-	*/
-/**
-	 * Represents the graphics.
-	 *//*
-
 	private static final Graphics GRAPHICS = new Graphics(733, 130);
 
-	*/
-/**
-	 * The ids of the spell.
-	 *//*
-
 	private static final int[] IDS = new int[] { 2430, 127, 129, 131, 3024, 3026, 3028, 3030 };
-
-	*/
-/**
-	 * Constructs a new {@code StatRestoreSpell} {@code Object}.
-	 *//*
 
 	public StatRestoreSpell() {
 		super(SpellBook.LUNAR, 81, 84, null, null, null, new Item[] { new Item(Runes.ASTRAL_RUNE.getId(), 2), new Item(Runes.EARTH_RUNE.getId(), 10), new Item(Runes.WATER_RUNE.getId(), 10) });
@@ -70,9 +40,9 @@ public class StatRestoreSpell extends MagicSpell {
 	public boolean cast(Entity entity, Node target) {
 		final Player player = ((Player) entity);
 		Item item = ((Item) target);
-		final Drink drink = Consumables.getDrinkByItemID(item.getId());
+		final Potions potion = Potions.forId(item.getId());
 		player.getInterfaceManager().setViewedTab(6);
-		if (drink == null || !(drink instanceof Potion)) {
+		if (potion == null) {
 			player.getPacketDispatch().sendMessage("For use of this spell use only one a potion.");
 			return false;
 		}
@@ -80,7 +50,6 @@ public class StatRestoreSpell extends MagicSpell {
 			player.getPacketDispatch().sendMessage("You can't cast this spell on that item.");
 			return false;
 		}
-		final Potion potion = (Potion) drink;
 		List<Player> pl = RegionManager.getLocalPlayers(player, 1);
 		int plSize = pl.size() - 1;
 		int doses = potion.getDose(item);
@@ -107,7 +76,7 @@ public class StatRestoreSpell extends MagicSpell {
 				continue;
 			}
 			o.graphics(GRAPHICS);
-			potion.effect(o, item);
+			potion.effect.activate(o);
 			size++;
 		}
 		if (size == 1) {
@@ -115,20 +84,13 @@ public class StatRestoreSpell extends MagicSpell {
 			return false;
 		}
 		super.meetsRequirements(player, true, true);
-		potion.effect(player, item);
-		potion.message(player, item, player.getSkills().getLifepoints());
+		potion.effect.activate(player);
 		player.animate(ANIMATION);
 		player.graphics(GRAPHICS);
-		potion.remove(player, item, size - 1, true);
+		player.getInventory().remove(item);
+		player.getInventory().add(new Item(potion.ids[size - 1]));
 		return true;
 	}
-
-	*/
-/**
-	 * Checks if it is a restore item.
-	 * @param id the id.
-	 * @return {@code True} if so.
-	 *//*
 
 	private boolean isRestore(int id) {
 		for (int i : IDS) {
@@ -140,4 +102,3 @@ public class StatRestoreSpell extends MagicSpell {
 	}
 
 }
-*/

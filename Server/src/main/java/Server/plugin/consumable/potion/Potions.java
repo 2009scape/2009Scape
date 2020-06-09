@@ -66,7 +66,7 @@ public enum Potions {
             }
         }
     }
-    PotionEffect effect;
+    public PotionEffect effect;
     public int[] ids;
 
     Potions(int[] ids, PotionEffect effect){
@@ -100,10 +100,8 @@ public enum Potions {
         return -1;
     }
 
-    public static int getFull(int potion_id){
-        if(potMap.get(potion_id) != null)
-            return potMap.get(potion_id).ids[0];
-        return 0;
+    public static int getDose(Item potion){
+        return Integer.parseInt(potion.getName().replaceAll("[^\\d.]",""));
     }
 
     protected static final Animation ANIMATION = new Animation(829);
