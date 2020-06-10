@@ -1,0 +1,841 @@
+Cassie - Cassie's Shield Shop
+
+Consists of
+
+10 of each
+Wooden shield(20), Bronze sq shield(48), bronze kiteshield(68)
+iron sq shield(168), iron kiteshield(238), steel sq shield(600)
+steel kiteshield(850), mithril sq shield(1560)
+
+----------------------------------------------------------------
+
+Cassie
+
+I buy and sell shields; do you want to trade?
+
+
+----
+Options
+
+Yes, please.
+
+No, thank you.
+
+____________________________________________________________________________
+
+
+Emily (bartender, Falador)
+
+---
+Options
+
+What would you like to say?
+
+What ales are you serving?
+
+What can you tell me about dwarves and ale? [QUEST] P2P
+
+- - -
+Emily
+ 
+Well, we've got Asgarnian Ale, Wizard's Mind Bomb and Dwarven Stout, all for 3 coins.
+
+---
+Options
+
+One Asgarnian Ale, please.
+I'll try the Mind Bomb.
+Can I have a Dwarven Stout?
+I don't feel like any of those.
+What can you tell me about dwarves and ale [Quest] P2P
+
+
+Thanks, Emily.
+
+{
+
+Kaylee/ Tina into is
+
+
+
+Hi! What can I get you?
+
+}
+
+
+________________________________
+
+
+Drunken Man
+
+
+---
+Hello.
+
+- - -
+
+... whassup?
+
+---
+Are you alright? (confuse)
+
+- - -
+... see... two of you... why there two of you?
+
+---
+There's only one of me, friend. (confused)
+
+- - -
+... no, two of you... you can't count...
+ ...maybe you drunk too much...
+
+---
+Whatever you say, friend. (laughter)
+
+- - -
+... giant hairy cabbages...(shocked)
+
+[END]
+
+___________________________________________________
+
+HairDresser (Has a mullet)
+
+Good afternoon, (madam/sir). Are you interested in a new haircut?
+
+
+---
+Yes, please.
+
+No, thank you.
+
+
+
+____________________________________________________
+Herquin (Jewelry)
+
+---
+Do you wish to trade?
+
+Sorry, I don't want to talk to you, actually.
+
+- - -
+Why, yes, this is a jewel shop after all.
+
+
+
+
+Herqiuin's Gems {
+
+0 of each
+Uncut Sapphire(25) Emerald(50) Ruby(100)
+Diamond(200) Sapphire(250) Emerald(500)
+Ruby(1000) Diamond(2000)
+
+}
+
+________________________________________________________
+Wayne 
+
+Welcome to Wayne's Chains, Do you wanna buy or sell some chainmail?
+
+---
+
+Yes, please.
+No, thanks.
+
+Wayne's Chains - Chainmail Specialist {
+
+10 of each
+
+Chainbody
+bronze(60), iron(210), steel(750),
+black(1440), mithril(1950), adamant(4800)
+
+}
+
+________________________________________________________
+
+Falador Gardener(s)
+
+---
+Hello.
+
+- - -
+
+(pissed)
+Oi'm Busy. If tha' wants owt, tha' can go find Wyson. He's
+ ta boss 'round here. And KEEP YER TRAMPIN' FEET ORFF
+MA' FLOWERS
+
+---
+Right... (surprised)
+_________________________________________________________
+
+Wyson the gardener
+
+
+I'm the head gardener around here.
+If you're looking for woad leaves, or if you need help with
+owt, I'm yer man.
+
+
+---
+Yes please, I need woad leaves.
+Sorry, but I'm not interested.
+
+- - -
+How much are you willing to pay? (Shady shaking)
+
+---
+{
+How about 5 coins? 
+How about 10 coins?
+
+
+No no, that's far too little. Woad leaves are hard to get. I
+used to have plenty but someone kept stealing them of
+me.
+
+}
+How about 15 coins? {
+Mmmm... ok, that sounds fair.
+
+---
+Thanks.
+- - -
+I'll be around if you have any more gardening needs.
+
+}
+How about 20 coins?
+{
+(Boner)
+Ok that's more than fair.
+
+Here, have two, you're a generous person.
+---
+Thanks.
+}
+
+______________________________
+
+
+
+Dwarfe (mining guild, gold shield) && without
+
+- - -
+Welcome to the mining guild.
+Can I help you with anything?
+
+---
+
+What have you got in the Guild?
+
+What do you dwarves do with the ore you mine?
+
+No thanks, I'm fine.
+
+- - -
+1)
+Ooh, it's WONDERFUL! There are lots of coal rocks,
+and even a few mithril rocks in the guild,
+all exclusively for people with at least 60 mining
+There's no better mining site anywhere near here.
+
+---
+
+It's a good thing I have level - mining. (excited)
+//Find low persons response
+ - - -
+
+Yes, that's pretty good. Did you want anything else?(smiley cunt)
+
+---
+
+
+What do you dwarves do with the ore you mine? (smiley cunt)
+
+
+No thanks, I'm fine.
+
+
+- - -
+1)
+What do you think? We smelt it into bars, smith the metal
+ to make armour and weapons, then we exchange them for 
+goods and services. (hahaha)
+
+---
+
+I don't see many dwarves
+sellin armour or weapons here. (shady shaking)
+
+- - -
+No, this is only a mining outpost. We dwarves don't much
+like to settle in human cities. Most of the ore is carted off
+to Keldagrim, the great dwarven city. They've got a
+ special blast furnace up there - it makes smelting the ore
+
+so much easier. There are plenty of dwarven traders
+working in Keldagrim. Anyway, can I help you with anything 
+else?
+
+(smiley cunt)
+
+//FINISHed
+
+Mining cape dwarfe
+
+Can you tell me about your skillcape? (confused) {
+	Sure, this is a Skillcape of Mining. It shows my stature as
+	  a master minger! It has all sorts of uses including a skill
+	  boost to my mining skill. When you get to level 99 come
+	and talk to me and I'll sell you one. Is there anything else I
+
+	>
+		can help you with?
+
+	---
+	Yes. {
+		(happy_
+		So what can I help you with, then?
+	}
+	No.
+
+}
+_____________________________
+
+Man (blue cap - between fally castle and garden)
+
+
+PISSED
+
+What are you doing in my house?
+
+---
+
+I was just exploring. (happy)
+
+- - -
+
+You're exploring my house? (up and down confused thinking)
+
+---
+You don't mind, do you?
+
+- - -
+
+But... why are you exploring in my house?
+
+---
+
+Oh, I don't know. I just wandered in, saw you and thought
+It'd be fun to speak to you.
+
+- - -
+... you are very strange...
+
+---
+Perhaps I should go now.
+
+- - -
+Yes, please go away now. (sad, looks like he got cock blocked)
+
+
+_____________________________________________________________________
+
+Permit Officer/Real estage agent
+
+Can't you see I'm busy? (grind teeth)
+
+__________________________________________
+
+
+Flynn's Mace Market
+
+Mace {
+10 of each
+
+Bronze(18), iron(63), Steel(225)
+Mithril(585), Adamant(1440)
+}
+
+- - -
+Hello. Do you want to buy or sell any maces? (friendly)
+
+---
+
+No, thanks.
+Well, I'll have a look, at least.
+
+
+___________________________________________
+Gen store
+
+Can I help you at all?
+
+---
+Yes, please. What are you selling?
+
+How should I use your shop? {
+
+I'm glad you ask! You can buy as many of the items
+ stocked as you wish. You can also sell most items to the
+shop.
+
+}
+
+No, thanks.
+
+
+______________________________________________________
+
+
+
+Squire Asrol (sounds like ass role)
+
+Hello. I am the squire to Sir Vyvin. (calm)
+
+---
+And how is life as a squire? {
+Well, Sir Vyvin is a good guy to work for, however, I'm in
+ a spot of trouble today. I've gone and lost Sir Vyvin's sword! (depressed)
+
+	---
+Do you know where you lost it? {
+ (confused)
+ Well now, if I knew THAT it wouldn't be lost, now would it?
+}
+
+I can make a new sword if you like..
+	
+ Is he angry? {
+	He doesn't know yet. I was hoping I could think of
+something to do before he does find out, But I find myself
+at a loss.(Depressed)
+
+}		
+
+ ===========================================================================
+ Well, do you know the VAGUE AREA you lost it? {
+	(Depressed)
+  No, I was carrying it for him all the way from where he
+ had it stored in Lumbridge. It must have slipped from my
+ pack during the trip, and you know what people are like
+these days...
+
+>
+
+Someone will have just picked it up and kept it for
+themselves.
+ }
+
+ I can make a new sword if you like... {
+	//TODO knights sword
+ }
+
+
+
+ Well, the kingdom is fairly abundant with swords... {
+	Yes. You can get bronze swords anywhere, But THIS isn't 
+		any old sword.
+ >
+	The thing is, this sword is a family heirloom. It has been
+	passed down through Vyvin's family for five generations!
+	It was originally made by the Imcando dwarves, who were
+ >
+	a particularly skilled tribe of dwarven smiths. I doubt
+		anyone could make it in the style they do.
+ }
+
+ Well, I hope you find it soon. {
+		Yes, me too. I'm not looking forward to telling Vyvin I've
+		lost it. He's going to want it for the parade next week as
+					well.
+		[END]
+ }
+
+ }
+
+}
+
+Wouldn't you prefer to be a squire for me? {
+
+No, sorry, I'm loyal to Sir Vyvin. (fine)
+
+}
+
+________________________________________________________
+
+Silif
+
+Who are you?
+
+- - -
+Who, me? Oh, no one, I assure you. No one that you want
+	to tangle with.
+[end]
+
+_________________________________________________________
+Akrisae
+
+Hello, adventurer.
+
+---
+
+Hello, cleric. (joyous)
+ [END]
+
+
+___________________________________________________________
+Ambassador Spanfipple
+
+- - -
+
+It's all very white round here, isn't it?
+
+---
+
+Well, it is the White Knight's Castle.
+
+- - -
+
+I think it would all look better in pink. At least then I
+	wouldn't be squinting all the time.
+---
+
+Yes, but then they'd have to become the Pink Knights. I
+	think they'd have some problems recruiting then.
+- - -
+
+You're probably right. Maybe brown, then.
+
+---
+
+I think that may be worse...
+- - -
+
+Bah, humans have no sense of style...
+[END]
+
+____________________________________________________________
+
+
+Sir Vyvin
+
+--- 
+Hello.
+
+- - -
+Greetings traveller.
+
+---
+
+Do you have anything to trade? {
+
+	No, I'm sorry.
+
+}
+
+Why are there so many knights in this city? {
+
+	We are the White Knights of Falador. We are the most
+	powerful order of knights in the land. We are helping the
+	king Valliance rule the kingdom as he is getting old and
+				tired.
+}
+
+Can I just distract you for a minute? {
+
+	Can I just talk to you very slowly for a few minutes, while
+	I distract you, so that my friend over there can do 
+	something while you're busy being distracted by me?
+
+	- - -
+	... ...what? (confused)
+
+	>
+
+ 	I'm... not sure what you're asking me... you want to join
+			 the White Knights?
+
+	---
+
+	Nope. I'm just trying to distract you. (happy)
+
+	- - -
+
+	... ...you are very odd.
+
+	---
+
+	So can I distract you some more?
+	- - -
+
+	... ...I don't think I want to talk to you anymore.
+	---
+
+	Ok. My work here is done. 'Bye!
+
+	[END]
+}
+
+______________________________________________________________________
+
+Sir Amik Varze
+
+
+---
+
+I seek a quest!
+
+I don't, I'm just looking around.
+
+Do you know anything about the seige of Falador? {
+
+
+Ah yes, the Kinshra siege was a close-run thing indeed. (astonishment)
+
+>
+ 
+All hope seemed lost. Then she returned - Kara-Meir - with
+		Sir Theodore at her side. (happy talk)
+
+---
+
+Sir Theodore? I haven't seen anyone of that name around here.(confused)
+- - -
+
+No, you wouldn't have. He is...no longer with us. (remorsful bowing)
+
+---
+
+Oh, I'm sorry. (sad)
+
+- - -
+So am I, young man. So am I.
+[END]
+
+_______________________________________________________________________
+
+Woman (red head green skirt pink blouse)
+
+Hello.
+
+- - -
+
+Greetings! Have you come to gaze in rapture at the
+	natural beauty of Falador's parkland? (happy)
+---
+Um, yes, very nice. Lots of... trees and stuff.
+
+- - -
+Trees! I do so love trees! And flowers! And squirrels!
+
+---
+
+Sorry, I have a strange urge to be somewhere else. (confused)
+
+- - -
+
+|force walk south of garden|
+
+Come back to me soon and we can talk about trees!(sad)
+
+---
+
+...[END]
+
+____________________________________________________________________
+Ikis Krum
+
+---
+
+Hello.
+
+- - -
+
+Good day, sir. What brings you to this end of town? (confused)
+
+--- 
+
+Well, what is there to do around here?
+
+- - -
+
+If you're into Mining, plenty!! The dwarves have on of the
+largest mines in the world just under our feet. There's an
+entrance in the building just north-east of my house.
+
+>
+
+If you're one of these young, loud, hipster sorts you could
+	visit the Party Room, just north of here. That blasted 
+	Pete parties all night and I never get any sleep!(pissed)
+
+---
+
+Thanks. (confused)
+
+
+______________________________________________________________________
+Town crier
+
+Hear ye!Hear ye! Player Moderators massive help to
+		RuneSc
+
+>
+	Oh, hello citizen. Are you here to find out about Player
+      Moderators? Or perhaps would you like to know about the 
+			laws of the land?
+
+---
+
+Tell me about Player Moderators. (confused) {
+	Of course. What would you like to know?(happy)
+
+	--- (confused questions)
+	What is a Player Moderator? {
+
+	Player Moderators are the normal players of the game, just
+	like you. However, since they have shown themselves to be
+	trustworthy and active reporters, they have been invited
+	by Jagex to monitor the game and take appropriate
+	
+	>
+	
+	action when they see rule breaking. You can spot a Player
+	Moderator in game by looking at the chat screen - when a
+	Player Moderator speaks, a silver crown appears to the
+	left of their name. Remember, if there's no silver crown
+
+	>
+
+	there, they are not a Player Moderator! You can check
+	out the website if you'd like more information.
+
+	--- 
+	Thanks!(happy)
+	}//fuck
+	
+	What can Player Moderators do? {
+	Player Moderators, or 'P-mods', have the ability to mute
+       rule breakers and Jagex view their reports as a priority so
+	that action is taken as quickly as possible. P-Mods also
+	have access to the Player Moderator Centre. Within the	
+
+	>
+	
+	Centre are tools to help them Moderate RuneScape.
+		These tools include dedicated forums, the Player
+	Moderator Guidelines and the Player Moderator Code of
+			Conduct.
+	--- 
+	Thanks!(happy)
+	
+	} //not bad
+		
+	How do I become a Player Moderator? {
+	Jagex picks players who spend their time and effort to
+	help better the RuneScape community. To increase your
+		chances of becomming a Player Moderator:
+	>
+
+	Keep your account secure! This is very important, as a
+	player with poor security will never be a P-Mod. Read our
+		Security Tips for more information.
+
+	>
+
+	Play by the rules! The rules of RuneScape are enforced
+		for a reason, to make the game a fair and enjoyable
+		environment for all.
+	
+	>
+
+	Report accurately! When Jagex consider an account for
+	review they look for quality, not quantity. Ensure your
+	reports are of a high qualit by following the report
+		guidelines. 
+
+	>
+
+	Be excellent to each Other! Treat others as you would
+	want to be treated yourself. Respect your fellow player.
+	More information can be found on the website.
+	
+	
+	--- 
+	Thanks!(happy)
+	}//jesus christ
+
+	What can Player Moderators not do? { 
+	
+	P-Mods cannot ban your account - they can only report
+	offences. Jagex then take action based on the evidence
+	received. If you lose your password or get scammed by
+	another player, P-Mods cannot help you get your account
+
+	>
+
+	back. All they can do is recommend you to go to Player
+	Support. They cannot retrieve any items you may have lost
+	and they certainly do not recieve any free items
+	from Jagex for moderating the game. They are players
+
+	>
+
+	who give their all to help the community, out of the
+	goodness of their hearts! P-mods do not work for Jagex
+	and so cannot make you a Moderator, or recommend
+	other accounts to become Moderators. If you wish to
+
+	>
+
+	become a Moderator, feel free to ask me!
+
+
+	--- 
+	Thanks!(happy)
+	}//$#%%^%%$^ Diabeetus
+		Something else.
+
+	Is there anything else you'd like to know? (confused)
+
+		Tell me about Player Moderators.
+		
+		Tell me about something else.
+
+		No thanks.
+
+}
+
+Tell me about the Rules of RuneScape. (happy)
+{
+At once. Take a look at my book here.
+|does animation with book outward|
+|player reads book|
+
+
+}
+
+Can you give me a handy tip please? (happy)
+{
+Did you know you burn food less often on the range in
+	Lumbridge castle than other ranges?
+
+Be careful when fighting wizards! Wearing heavy armour
+	can lower your magic resistance!
+
+Don't use your RuneScape password on other sites. Keep
+	your account safe!
+
+There are no cheats in RuneScape! Never visit websites
+	promising otherwise!
+
+Melee armour actually gives you disadvantages when using
+magic attacks. It may be better to take off your armour
+	entirely!
+
+
+}

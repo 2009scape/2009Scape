@@ -1,0 +1,491 @@
+(Thanks to Cjay0091 on Rune-server)
+(May work with our revision have to implement to test)
+
+All available quests:
+/* 
+ * Script decompiled by jagdecs2 v3.5
+ * Decompiler opts:
+ * --------------
+ * t1LocalAnalyzer:true
+ * t2LocalAnalyzer:true
+ * beautifier:true
+ * --------------
+ * Made by mgi125 ;)
+ */
+
+
+int script_2193(int a0) {
+	switch (a0) {
+		case 147:
+			return script_2157(vars['cfg1295'], 1000);
+		case 159:
+			return script_2157(vars['cfg3820'].bitcfg19966, 170);
+		case 1:
+			return script_2157(vars['cfg2492'], 2);
+		case 2:
+			return script_2157(vars['cfg3518'].bitcfg17841, 9);
+		case 4:
+			return script_2157(vars['cfg2268'], 10);
+		case 5:
+			return script_2157(vars['cfg2183'], 3);
+		case 6:
+			return script_2157(vars['cfg2137'].bitcfg9363, 6);
+		case 7:
+			return script_2157(vars['cfg2669'], 2);
+		case 8:
+			return script_2157(vars['cfg2547'], 7);
+		case 9:
+			return script_2157(vars['cfg2227'], 4);
+		case 11:
+			return script_2157(vars['cfg2324'], 5);
+		case 13:
+			return script_2157(vars['cfg2689'], 6);
+		case 15:
+			return script_2159(vars['cfg2738'], 7, vars['cfg2739'], 4);
+		case 16:
+			return script_2157(vars['cfg2170'].bitcfg9655, 3);
+		case 18:
+			return script_2157(vars['cfg2409'].bitcfg11411, 240);
+		case 19:
+			return script_2157(vars['cfg2598'].bitcfg12797, 110);
+		case 20:
+			return script_2157(vars['cfg2772'], 65);
+		case 21:
+			return script_2157(vars['cfg2535'], 16);
+		case 22:
+			return script_2157(vars['cfg2326'], 140);
+		case 23:
+			return script_2157(vars['cfg2197'], 8);
+		case 24:
+			return script_2157(vars['cfg2260'].bitcfg10292, 130);
+		case 25:
+			return script_2157(vars['cfg2272'].bitcfg10448, 14);
+		case 26:
+			if (vars['cfg2615'] > 6) 
+				return 2;
+			if (vars['cfg2615'] == 0 && vars['cfg2616'].bitcfg12894 == 0) 
+				return 0;
+			return 1;
+		case 27:
+			return script_2157(vars['cfg2250'].bitcfg10204, 320);
+		case 28:
+			return script_2157(vars['cfg2422'].bitcfg11533, 13);
+		case 29:
+			if (vars['cfg2339'] >= 80) 
+				return 2;
+			return script_2157(vars['cfg2337'].bitcfg10848, 65);
+		case 30:
+			return script_2157(vars['cfg2151'].bitcfg9482, 15);
+		case 31:
+			return script_2157(vars['cfg2453'].bitcfg11914, 80);
+		case 32:
+			return script_2157(vars['cfg2205'], 9);
+		case 33:
+			if (vars['cfg2695'] >= 4) 
+				return 2;
+			return script_2157(vars['cfg2694'].bitcfg13366, 8);
+		case 34:
+			return script_2157(vars['cfg2732'], 11);
+		case 35:
+			return script_2157(vars['cfg2549'], 110);
+		case 36:
+			return script_2157(vars['cfg2785'].bitcfg13931, 40);
+		case 37:
+			if (_testbit(vars['cfg2675'], 20) == 1) 
+				return 2;
+			if (_testbit(vars['cfg2675'], 1) == 0) 
+				return 0;
+			return 1;
+		case 38:
+			return script_2157(vars['cfg2744'].bitcfg13674, 11);
+		case 39:
+			return script_2157(vars['cfg2187'].bitcfg9740, 70);
+		case 40:
+			return script_2157(vars['cfg2541'].bitcfg12529, 200);
+		case 41:
+			return script_2157(vars['cfg2599'].bitcfg12813, 60);
+		case 42:
+			return script_2157(vars['cfg2680'].bitcfg13286, 90);
+		case 43:
+			return script_2157(vars['cfg2474'].bitcfg12056, 90);
+		case 44:
+			return script_2157(vars['cfg2663'], 11);
+		case 45:
+			return script_2157(vars['cfg2181'].bitcfg9712, 28);
+		case 46:
+			return script_2157(vars['cfg2595'], 14);
+		case 47:
+			return script_2157(vars['cfg2331'], 5);
+		case 48:
+			return script_2157(vars['cfg2454'].bitcfg11917, 140);
+		case 49:
+			return script_2157(vars['cfg2262'], 10);
+		case 50:
+			return script_2157(vars['cfg2353'], 10);
+		case 51:
+			return script_2157(vars['cfg2703'].bitcfg13397, 60);
+		case 52:
+			return script_2157(vars['cfg2175'], 6);
+		case 53:
+			return script_2157(vars['cfg2715'].bitcfg13497, 8);
+		case 54:
+			return script_2157(vars['cfg2676'].bitcfg13266, 50);
+		case 55:
+			return script_2157(vars['cfg2728'].bitcfg13639, 10);
+		case 56:
+			return script_2157(vars['cfg2740'], 160);
+		case 57:
+			return script_2157(vars['cfg2799'].bitcfg14030, 160);
+		case 58:
+			return script_2157(vars['cfg2201'], 11);
+		case 59:
+			return script_2157(vars['cfg2592'], 9);
+		case 60:
+			return script_2157(vars['cfg2618'], 15);
+		case 61:
+			return script_2157(vars['cfg2330'], 10);
+		case 62:
+			return script_2157(vars['cfg2411'].bitcfg11413, 10);
+		case 63:
+			return script_2157(vars['cfg2357'].bitcfg10987, 26);
+		case 64:
+			return script_2157(vars['cfg2417'].bitcfg11498, 430);
+		case 65:
+			return script_2157(vars['cfg2696'], 105);
+		case 66:
+			return script_2157(vars['cfg2484'], 12);
+		case 67:
+			return script_2157(vars['cfg2265'], 75);
+		case 68:
+			return script_2157(vars['cfg2551'], 6);
+		case 69:
+			return script_2157(vars['cfg2787'].bitcfg13963, 11);
+		case 70:
+			return script_2157(vars['cfg2253'].bitcfg10236, 190);
+		case 71:
+			return script_2157(vars['cfg2173'].bitcfg9664, 4);
+		case 72:
+			return script_2157(vars['cfg2178'], 7);
+		case 73:
+			return script_2158(vars['cfg2762'], 1, 9);
+		case 74:
+			return script_2157(vars['cfg2370'], 80);
+		case 75:
+			return script_2157(vars['cfg2690'].bitcfg13349, 70);
+		case 76:
+			return script_2157(vars['cfg2777'], 8);
+		case 77:
+			return script_2158(vars['cfg2303'].bitcfg10560, 9, 60);
+		case 78:
+			return script_2157(vars['cfg2364'], 2);
+		case 79:
+			return script_2157(vars['cfg2230'].bitcfg9987, 320);
+		case 80:
+			return script_2157(vars['cfg2355'], 110);
+		case 81:
+			return script_2157(vars['cfg2796'], 7);
+		case 82:
+			return script_2157(vars['cfg2671'], 280);
+		case 83:
+			return script_2157(vars['cfg2386'], 29);
+		case 84:
+			return script_2157(vars['cfg2171'], 60);
+		case 85:
+			return script_2157(vars['cfg2612'].bitcfg12837, 4);
+		case 86:
+			return script_2157(vars['cfg2460'].bitcfg11975, 127);
+		case 87:
+			return script_2157(vars['cfg2579'].bitcfg12708, 5);
+		case 88:
+			return script_2157(vars['cfg2508'].bitcfg12355, 2);
+		case 89:
+			return script_2157(vars['cfg2102'], 15);
+		case 90:
+			return script_2157(vars['cfg2286'], 6);
+		case 91:
+			return script_2157(vars['cfg2515'].bitcfg12425, 30);
+		case 92:
+			return script_2157(vars['cfg2100'], 19);
+		case 93:
+			return script_2157(vars['cfg2747'], 6);
+		case 94:
+			return script_2157(vars['cfg2700'], 12);
+		case 95:
+			return script_2157(vars['cfg2554'].bitcfg12626, 14);
+		case 96:
+			return script_2157(vars['cfg2620'], 85);
+		case 97:
+			return script_2157(vars['cfg2290'].bitcfg10495, 125);
+		case 98:
+			return script_2157(vars['cfg2274'], 3);
+		case 99:
+			return script_2157(vars['cfg2793'], 15);
+		case 100:
+			return script_2157(vars['cfg2511'].bitcfg12392, 13);
+		case 101:
+			return script_2157(vars['cfg2548'].bitcfg12609, 60);
+		case 102:
+			return script_2157(vars['cfg2390'].bitcfg11269, 200);
+		case 103:
+			return script_2158(vars['cfg2523'], 3, 6);
+		case 104:
+			return script_2157(vars['cfg2369'].bitcfg11085, 70);
+		case 105:
+			return script_2157(vars['cfg1573'].bitcfg4909, 2);
+		case 106:
+			return script_2157(vars['cfg2148'], 80);
+		case 107:
+			return script_2157(vars['cfg2236'], 100);
+		case 108:
+			return script_2157(vars['cfg2501'], 30);
+		case 109:
+			return script_2157(vars['cfg2276'], 7);
+		case 110:
+			return script_2157(vars['cfg2661'], 9);
+		case 111:
+			return script_2157(vars['cfg2783'], 5);
+		case 112:
+			return script_2157(vars['cfg2135'], 45);
+		case 113:
+			return script_2157(vars['cfg2347'], 50);
+		case 114:
+			if (vars['cfg2426'] == 10) 
+				return 2;
+			if (_testbit(vars['cfg2427'], 11) == 0) 
+				return 0;
+			return 1;
+		case 115:
+			return script_2157(vars['cfg2628'].bitcfg12923, 11);
+		case 116:
+			return script_2157(vars['cfg2397'], 13);
+		case 117:
+			return script_2157(vars['cfg2270'].bitcfg10430, 135);
+		case 118:
+			return script_2157(vars['cfg2666'].bitcfg13178, 340);
+		case 119:
+			return script_2157(vars['cfg2190'].bitcfg9803, 18);
+		case 120:
+			return script_2157(vars['cfg2082'], 130);
+		case 121:
+			return script_2157(vars['cfg2352'].bitcfg10939, 150);
+		case 122:
+			return script_2157(vars['cfg2419'].bitcfg11517, 80);
+		case 123:
+			return script_2157(vars['cfg2729'].bitcfg13650, 11);
+		case 124:
+			return script_2157(vars['cfg2155'].bitcfg9530, 28);
+		case 125:
+			return script_2157(vars['cfg2726'].bitcfg13606, 60);
+		case 126:
+			return script_2157(vars['cfg2392'].bitcfg11298, 90);
+		case 127:
+			return script_2157(vars['cfg2277'].bitcfg10474, 200);
+		case 128:
+			return script_2157(vars['cfg2670'].bitcfg13194, 65);
+		case 129:
+			return script_2157(vars['cfg2682'].bitcfg13322, 18);
+		case 130:
+			return script_2157(vars['cfg2706'].bitcfg13430, 700);
+		case 131:
+			if (vars['cfg2507'].bitcfg12349 >= 110) 
+				return 2;
+			return script_2157(vars['cfg2506'].bitcfg12334, 35);
+		case 132:
+			return script_2158(vars['cfg2802'].bitcfg14041, 10, 200);
+		case 133:
+			return script_2157(vars['cfg2494'].bitcfg12210, 60);
+		case 134:
+			return script_2157(vars['cfg2395'].bitcfg11334, 100);
+		case 135:
+			return script_2157(vars['cfg2788'].bitcfg13978, 500);
+		case 136:
+			return script_2157(vars['cfg2371'].bitcfg11095, 150);
+		case 137:
+			return script_2157(vars['cfg2407'].bitcfg11386, 63);
+		case 138:
+			return script_2157(vars['cfg2091'].bitcfg9054, 250);
+		case 139:
+			return script_2157(vars['cfg2531'].bitcfg12462, 100);
+		case 140:
+			return script_2157(vars['cfg2470'].bitcfg12013, 80);
+		case 141:
+			return script_2157(vars['cfg2749'].bitcfg13718, 20);
+		case 142:
+			return script_2157(vars['cfg2719'].bitcfg13518, 90);
+		case 143:
+			return script_2157(vars['cfg2412'].bitcfg11428, 35);
+		case 144:
+			return script_2157(vars['cfg2485'].bitcfg12163, 250);
+		case 145:
+			return script_2157(vars['cfg2441'].bitcfg11858, 910);
+		case 146:
+			return script_2157(vars['cfg2248'].bitcfg10188, 30);
+		case 148:
+			return script_2157(vars['cfg2774'].bitcfg13876, 60);
+		case 149:
+			return script_2158(vars['cfg2627'].bitcfg12906, 3, 45);
+		case 150:
+			return script_2158(vars['cfg2383'].bitcfg11228, 10, 250);
+		case 155:
+			return script_2157(vars['cfg2379'].bitcfg11167, 60);
+		case 156:
+			return script_2157(vars['cfg2377'].bitcfg11151, 240);
+		case 157:
+			return script_2157(vars['cfg2372'].bitcfg11105, 90);
+		case 151:
+			return script_2158(vars['cfg2759'].bitcfg13734, 2, 140);
+		case 152:
+			return script_2157(vars['cfg2107'].bitcfg9136, 110);
+		case 153:
+			return script_2157(vars['cfg2198'].bitcfg9847, 50);
+		case 154:
+			return script_2158(vars['cfg2612'].bitcfg9902, 2, 5);
+		case 158:
+			return script_2158(vars['cfg2214'].bitcfg9928, 10, 180);
+		case 160:
+			return script_2157(vars['cfg2300'].bitcfg10544, 90);
+		case 161:
+			return script_2157(vars['cfg2297'].bitcfg10506, 46);
+		case 162:
+			return script_2157(vars['cfg2243'].bitcfg10095, 12);
+		case 163:
+			return script_2158(vars['cfg2342'].bitcfg10871, 3, 147);
+		case 165:
+			return script_2157(vars['cfg2349'].bitcfg10919, 35);
+		case 167:
+			return script_2157(vars['cfg2085'].bitcfg9023, 30);
+		case 168:
+			return script_2157(vars['cfg2543'].bitcfg12598, 150);
+		case 170:
+			return script_2157(vars['cfg2334'].bitcfg10826, 60);
+		case 171:
+			return script_2157(vars['cfg2635'].bitcfg13034, 90);
+		case 172:
+			return script_2157(vars['cfg2539'].bitcfg12504, 5);
+		case 173:
+			return script_2158(vars['cfg2638'].bitcfg13080, 2, 63);
+		case 14:
+			return script_2157(vars['cfg2780'].bitcfg13904, 90);
+		case 174:
+			return script_2157(vars['cfg2657'].bitcfg13118, 40);
+		case 17:
+			return script_2157(vars['cfg2111'].bitcfg9188, 100);
+		case 176:
+			return script_2157(vars['cfg2430'].bitcfg11610, 400);
+		case 179:
+			return script_2158(vars['cfg2130'].bitcfg9324, 10, 315);
+		case 12:
+			return script_2157(vars['cfg2160'].bitcfg9547, 120);
+		case 180:
+			return script_2157(vars['cfg2487'].bitcfg12170, 9);
+		case 181:
+			return script_2158(vars['cfg2165'].bitcfg9602, 10, 210);
+		case 182:
+			return script_2157(vars['cfg2124'].bitcfg9212, 50);
+		case 183:
+			return script_2158(vars['cfg2112'].bitcfg9199, 5, 250);
+		case 184:
+			return script_2157(vars['cfg2360'].bitcfg11020, 170);
+		case 187:
+			return script_2157(vars['cfg2498'].bitcfg12258, 100);
+		case 188:
+			return script_2157(vars['cfg2674'].bitcfg13240, 40);
+		case 190:
+			return script_2157(vars['cfg2095'].bitcfg9091, 170);
+		case 191:
+			return script_2157(vars['cfg2437'].bitcfg11683, 270);
+		case 178:
+			return script_2158(vars['cfg2632'].bitcfg12989, 5, 100);
+		case 164:
+			return 2;
+		case 192:
+			return script_2157(vars['cfg2570'].bitcfg12689, 75);
+		case 193:
+			return script_2158(vars['cfg2141'].bitcfg9391, 5, 175);
+		case 175:
+			return script_2157(vars['cfg2449'].bitcfg11870, 105);
+		case 177:
+			return script_2157(vars['cfg2449'].bitcfg9429, 120);
+		case 3:
+			return script_2158(vars['cfg2231'].bitcfg9998, 4, 55);
+		case 194:
+			return script_2157(vars['cfg3294'].bitcfg16863, 170);
+		case 195:
+			return script_2157(vars['cfg3289'].bitcfg16834, 120);
+		case 196:
+			return script_2157(vars['cfg3299'].bitcfg16905, 225);
+		case 197:
+			return script_2157(vars['cfg3527'].bitcfg18021, 250);
+		case 198:
+			return script_2157(vars['cfg3631'].bitcfg18565, 75);
+		case 199:
+			return script_2157(vars['cfg3872'].bitcfg20561, 300);
+		case 200:
+			return script_2157(vars['cfg3885'].bitcfg20621, 100);
+		case 201:
+			return script_2157(vars['cfg4170'].bitcfg21714, 190);
+		case 10:
+			return script_2158(vars['cfg4260'].bitcfg21841, 5, 175);
+		case 202:
+			return script_2157(vars['cfg4390'].bitcfg22270, 100);
+		case 203:
+			return script_2157(vars['cfg4484'].bitcfg4291, 200);
+		case 204:
+			return script_2157(vars['cfg4670'].bitcfg23198, 400);
+		case 205:
+			return script_2157(vars['cfg4854'].bitcfg25561, 50);
+		case 206:
+			return script_2158(vars['cfg5015'].bitcfg26245, 10, 200);
+		case 207:
+			return script_2157(vars['cfg5114'].bitcfg27012, 120);
+		case 208:
+			return script_2158(vars['cfg5157'].bitcfg27209, 5, 50);
+		case 209:
+			return script_2158(vars['cfg5157'].bitcfg27209, 5, 40);
+		case 210:
+			return script_2158(vars['cfg5159'].bitcfg27264, 5, 15);
+		case 211:
+			return script_2158(vars['cfg5160'].bitcfg27272, 5, 70);
+		case 212:
+			return script_2158(vars['cfg5161'].bitcfg27284, 5, 45);
+		case 213:
+			return script_2158(vars['cfg5162'].bitcfg27291, 5, 110);
+		case 214:
+			return script_2157(vars['cfg5743'].bitcfg28509, 105);
+		case 215:
+			return script_2157(vars['cfg5840'].bitcfg29077, 120);
+		case 216:
+			return script_2157(vars['cfg5869'].bitcfg29424, 250);
+		case 217:
+			return script_2157(vars['cfg5892'].bitcfg20929, 200);
+		case 218:
+			return script_2157(vars['cfg5952'].bitcfg30071, 200);
+		case 219:
+			return script_2157(vars['cfg6120'].bitcfg30520, 170);
+	}
+	return 0;
+}
+
+
+
+Test Bit Code:
+
+
+	public void sendTestBit(int shift, int var, int value) {
+		for (int id = VarbitDef.size() - 1; id >= 0; id--) {
+			VarbitDef def = VarbitDef.get(id);
+			
+			if (def.baseVar == var && def.startBit == shift && def.endBit == shift) {
+		            sendVarBit(id, value);
+                            return;
+                        }
+		}
+		
+                sendVar(var, getValue(var) ^ (1 << shift)); // This just inverts the bit.
+	}
+
+
+Var values and what they represent:
+0 - Unstarted
+1 - Started
+2 - Completed
