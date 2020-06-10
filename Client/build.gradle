@@ -31,6 +31,11 @@ dependencies {
 
 
 jar {
+    manifest {
+        attributes(
+                'Main-Class': 'org.runite.Client'
+        )
+    }
     archiveBaseName = 'client'
     archiveVersion =  '1.0.0'
 }
