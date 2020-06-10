@@ -23,6 +23,7 @@ import core.game.world.map.zone.ZoneBorders;
 import core.game.world.repository.Repository;
 import core.tools.RandomFunction;
 import plugin.interaction.item.brawling_gloves.BrawlingGloves;
+import plugin.ttrail.UriNPC;
 
 /**
  * Handles the wilderness zone.
@@ -81,6 +82,9 @@ public final class WildernessZone extends MapZone {
 	 */
 	@Override
 	public boolean death(Entity e, Entity killer) {
+		if(e instanceof UriNPC){
+			e.finalizeDeath(killer);
+		}
 		if(e instanceof NPC && killer instanceof Player && (e.asNpc().getName().contains("Revenant") || e.asNpc().getName().equals("Chaos elemental"))){
 			int combatLevel = e.asNpc().getDefinition().getCombatLevel();
 			int dropRate = getNewDropRate(combatLevel);
