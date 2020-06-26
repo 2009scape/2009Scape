@@ -27,7 +27,37 @@ public enum Pickpocket {
 					new ChanceItem(995,  9, DropFrequency.COMMON),
 					new ChanceItem(5318, 1, DropFrequency.UNCOMMON)
 	}),
-	HAM_MEMBER(new int[] { 1714, 1715 }, 15, 18.5, 1, new ChanceItem[] {
+	MALE_HAM_MEMBER(new int[] { 1714 }, 20, 18.5, 1, new ChanceItem[] {
+			new ChanceItem(995, 20, DropFrequency.COMMON),
+			new ChanceItem(995, 3,  DropFrequency.COMMON),
+			new ChanceItem(590, 1,  DropFrequency.COMMON),
+			new ChanceItem(697, 1,  DropFrequency.COMMON),
+			new ChanceItem(1511,1,  DropFrequency.COMMON),
+			new ChanceItem(201, 1,  DropFrequency.COMMON),
+			new ChanceItem(203, 1,  DropFrequency.COMMON),
+			new ChanceItem(205, 1,  DropFrequency.COMMON),
+			new ChanceItem(688, 1,  DropFrequency.COMMON),
+			new ChanceItem(1269,1,  DropFrequency.COMMON),
+			new ChanceItem(1267,1,  DropFrequency.COMMON),
+			new ChanceItem(1353,1,  DropFrequency.COMMON),
+			new ChanceItem(199, 1,  DropFrequency.COMMON),
+			new ChanceItem(321, 1,  DropFrequency.COMMON),
+			new ChanceItem(2138,1,  DropFrequency.COMMON),
+			new ChanceItem(1621,1,  DropFrequency.UNCOMMON),
+			new ChanceItem(1623,1,  DropFrequency.UNCOMMON),
+			new ChanceItem(995, 50, DropFrequency.UNCOMMON),
+			new ChanceItem(453, 1,  DropFrequency.UNCOMMON),
+			new ChanceItem(4298,1,  DropFrequency.RARE),
+			new ChanceItem(4300,1,  DropFrequency.RARE),
+			new ChanceItem(4302,1,  DropFrequency.RARE),
+			new ChanceItem(4304,1,  DropFrequency.RARE),
+			new ChanceItem(4306,1,  DropFrequency.RARE),
+			new ChanceItem(4308,1,  DropFrequency.RARE),
+			new ChanceItem(995, 100,DropFrequency.RARE),
+			new ChanceItem(4310,1,  DropFrequency.RARE),
+			new ChanceItem(1625,1,  DropFrequency.RARE)
+	}),
+	FEMALE_HAM_MEMBER(new int[] { 1715 }, 15, 18.5, 1, new ChanceItem[] {
 					new ChanceItem(995, 20, DropFrequency.COMMON),
 					new ChanceItem(995, 3,  DropFrequency.COMMON),
 					new ChanceItem(590, 1,  DropFrequency.COMMON),
@@ -284,7 +314,7 @@ public enum Pickpocket {
 
 	public List<Item> getRandomLoot(Player player) {
 		// 5/250 chance for easy clue scroll
-		if ((this == HAM_MEMBER) && RandomFunction.random(250) <= 5 && !player.getTreasureTrailManager().hasClue()) {
+		if ((this == MALE_HAM_MEMBER || this == FEMALE_HAM_MEMBER) && RandomFunction.random(250) <= 5 && !player.getTreasureTrailManager().hasClue()) {
 			return new ArrayList<Item>(Arrays.asList(new Item[]{ClueScrollPlugin.getClue(ClueLevel.EASY)}));
 		}
 		List<Item> loot = RandomFunction.rollChanceTable(true,getLoot());
