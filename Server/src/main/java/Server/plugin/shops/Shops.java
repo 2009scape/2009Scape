@@ -4,6 +4,7 @@ import core.game.content.ItemNames;
 import core.game.content.global.shop.Shop;
 import core.game.node.item.Item;
 
+import javax.imageio.ImageTranscoder;
 import java.util.Arrays;
 import java.util.HashMap;
 
@@ -40,6 +41,64 @@ public enum Shops{
     BOLKOY(new Shop("Bolkoy's Village Shop",true,ItemNames.COINS,false),new int[]{471}),
     VARROCK(new Shop("Varrock General Store",true,ItemNames.COINS,false),new int[]{522,523}),
     ZANARIS(new Shop("Zanaris General Store",true,ItemNames.COINS,false),new int[]{534}),
+    DODGY_MIKE(new Shop("Dodgy Mike's Second Hand Clothing",new Item[]{
+            new Item(ItemNames.PIRATE_BOOTS_7114,15),
+            new Item(ItemNames.STRIPY_PIRATE_SHIRT_7110,10),
+            new Item(ItemNames.PIRATE_BANDANA_7112,20),
+            new Item(ItemNames.PIRATE_LEGGINGS_7116,10),
+            new Item(ItemNames.STRIPY_PIRATE_SHIRT_7122,10),
+            new Item(ItemNames.PIRATE_BANDANA_7124,20),
+            new Item(ItemNames.PIRATE_LEGGINGS_7126,10),
+            new Item(ItemNames.STRIPY_PIRATE_SHIRT_7128,10),
+            new Item(ItemNames.PIRATE_BANDANA_7130,20),
+            new Item(ItemNames.PIRATE_LEGGINGS_7132,10),
+            new Item(ItemNames.STRIPY_PIRATE_SHIRT_7134,10),
+            new Item(ItemNames.PIRATE_BANDANA_7136,20),
+            new Item(ItemNames.PIRATE_LEGGINGS_7138,10)
+    },false,ItemNames.COINS,false),new int[]{3166}),
+    LLETYA_SEAMSTRESS(new Shop("Lletya Seamstress",new Item[]{
+            new Item(ItemNames.THREAD,8),
+            new Item(ItemNames.NEEDLE_1733,3),
+            new Item(ItemNames.BALL_OF_WOOL_1759,5),
+            new Item(ItemNames.RED_DYE_1763,10),
+            new Item(ItemNames.YELLOW_DYE_1765,10),
+            new Item(ItemNames.BLUE_DYE_1767,10),
+            new Item(ItemNames.ORANGE_DYE_1769,10),
+            new Item(ItemNames.GREEN_DYE_1771,10),
+            new Item(ItemNames.PURPLE_DYE_1773,10)
+    },false,ItemNames.COINS,false),new int[]{2353}),
+    BARKER_HABER(new Shop("Barker's Haberdashery",new Item[]{
+            new Item(ItemNames.GREY_BOOTS_2894,5),
+            new Item(ItemNames.GREY_ROBE_TOP_2896,5),
+            new Item(ItemNames.GREY_ROBE_BOTTOMS_2898,5),
+            new Item(ItemNames.GREY_HAT_2900,5),
+            new Item(ItemNames.GREY_GLOVES_2902,5),
+            new Item(ItemNames.RED_BOOTS_2904,5),
+            new Item(ItemNames.RED_ROBE_TOP_2906,5),
+            new Item(ItemNames.RED_ROBE_BOTTOMS_2908,5),
+            new Item(ItemNames.RED_HAT_2910,5),
+            new Item(ItemNames.RED_GLOVES_2912,5),
+            new Item(ItemNames.YELLOW_BOOTS_2914,5),
+            new Item(ItemNames.YELLOW_ROBE_TOP_2916,5),
+            new Item(ItemNames.YELLOW_ROBE_BOTTOMS_2918,5),
+            new Item(ItemNames.YELLOW_HAT_2920,5),
+            new Item(ItemNames.YELLOW_GLOVES_2922,5),
+            new Item(ItemNames.TEAL_BOOTS_2924,5),
+            new Item(ItemNames.TEAL_ROBE_TOP_2926,5),
+            new Item(ItemNames.TEAL_ROBE_BOTTOMS_2928,5),
+            new Item(ItemNames.TEAL_HAT_2930,5),
+            new Item(ItemNames.TEAL_GLOVES_2932,5),
+            new Item(ItemNames.PURPLE_BOOTS_2934,5),
+            new Item(ItemNames.PURPLE_ROBE_TOP_2936,5),
+            new Item(ItemNames.PURPLE_ROBE_BOTTOMS_2938,5),
+            new Item(ItemNames.PURPLE_HAT_2940,5),
+            new Item(ItemNames.PURPLE_GLOVES_2942,5),
+            new Item(ItemNames.RED_CAPE,5),
+            new Item(ItemNames.BLACK_CAPE,5),
+            new Item(ItemNames.BLUE_CAPE,5),
+            new Item(ItemNames.YELLOW_CAPE,5),
+            new Item(ItemNames.GREEN_CAPE_1027,5)
+    },false,ItemNames.COINS,false),new int[]{1039}),
     ACCOUTREMENTS(new Shop("Yrsa's Accoutrements",new Item[]{
             new Item(ItemNames.FREMENNIK_BLUE_SHIRT_3775,5),
             new Item(ItemNames.FREMENNIK_RED_SHIRT_3773,5),
