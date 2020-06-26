@@ -60,6 +60,11 @@ public final class ClimbActionHandler {
 	public static void climbLadder(Player player, GameObject object, String option) {
 		GameObject newLadder = null;
 		Animation animation = CLIMB_UP;
+		if(SpecialLadders.forLocation(object.getLocation()) != null){
+			Location destination = SpecialLadders.forLocation(object.getLocation());
+			climb(player,animation,destination);
+			return;
+		}
 		switch (option) {
 		case "climb-up":
 			newLadder = getLadder(object, false);
