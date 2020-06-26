@@ -1,6 +1,7 @@
 package core.game.node.entity.npc.drop;
 
 import core.cache.def.impl.NPCDefinition;
+import plugin.drops.DropPlugins;
 import plugin.ge.GrandExchangeDatabase;
 import core.game.content.global.Bones;
 import plugin.skill.Skills;
@@ -87,6 +88,7 @@ public final class NPCDropTables {
 		if(table != null){
 			System.out.println("Testing " + npc.getName());
 			table.getDrops().forEach(drop -> createDrop(drop,p,npc,npc.getDropLocation()));
+			DropPlugins.getDrops(npc.getId()).forEach(drop -> createDrop(drop,p,npc,npc.getDropLocation()));
 			return;
 		}
 
@@ -112,9 +114,6 @@ public final class NPCDropTables {
 				createDrop(item, p, npc, npc.getDropLocation());
 			}
 		});
-		if (RandomFunction.randomize(45) == 1) {
-		    createDrop(new Item(6199, 1), p, npc, npc.getDropLocation());
-		}
 	}
 
 	/**
