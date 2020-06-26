@@ -818,7 +818,7 @@ public abstract class Entity extends Node {
 	 * @return {@code True} if so.
 	 */
 	public boolean hasFireResistance() {
-		return stateManager.hasState(EntityState.FIRE_RESISTANT);
+		return getAttribute("fire:immune",0) >= GameWorld.getTicks();
 	}
 
 	/**
