@@ -8,6 +8,7 @@ import core.game.world.GameWorld;
 import core.game.world.repository.Repository;
 import core.game.world.update.UpdateSequence;
 import core.gui.tab.StatisticsTab;
+import plugin.CorePluginTypes.Managers;
 
 /**
  * The major update worker, this handles the game updating etc.
@@ -66,6 +67,7 @@ public final class MajorUpdateWorker implements Runnable {
 				//GameWorld.threadPool.
 				GameWorld.pulse();
 				Repository.getDisconnectionQueue().update();
+				Managers.tick();
 				sleep();
 			} catch (Throwable t) {
 				t.printStackTrace();

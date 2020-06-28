@@ -101,6 +101,7 @@ public final class LoginConfiguration {
         player.getConfigManager().reset();
         sendGameConfiguration(player);
         Repository.getLobbyPlayers().remove(player);
+        Repository.getPlayerNames().put(player.getUsername(),player);
         player.setPlaying(true);
         UpdateSequence.getRenderablePlayers().add(player);
         RegionManager.move(player);

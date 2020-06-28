@@ -36,7 +36,7 @@ public final class Repository {
 	/**
 	 * A mapping holding the players sorted by their names.
 	 */
-	private static final Map<String, Player> PLAYER_NAMES = new HashMap<String, Player>();
+	public static final Map<String, Player> PLAYER_NAMES = new HashMap<String, Player>();
 
 	/**
 	 * Represents the list of players in lobby.
