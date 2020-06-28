@@ -1,5 +1,8 @@
 package plugin.ge;
 
+import core.cache.def.impl.ItemDefinition;
+import core.game.system.SystemLogger;
+
 import java.io.File;
 import java.io.RandomAccessFile;
 import java.util.HashMap;
@@ -46,9 +49,11 @@ public final class GrandExchangeDatabase {
 			dump("data/");
 			System.err.println("ge db wasn't found!");
 		}
+		SystemLogger.log("Found GE DB... attempting to load.");
 		try (RandomAccessFile raf = new RandomAccessFile(path + "grand_exchange_db.emp", "rw")) {
 			nextUpdate = raf.readLong();
 			int length = raf.readInt();
+			SystemLogger.log("Reading DB File... length: " + length);
 			for (int i = 0; i < length; i++) {
 				int itemId = raf.readShort() & 0xFFFF;
 				GrandExchangeEntry entry = new GrandExchangeEntry(itemId);
@@ -64,6 +69,7 @@ public final class GrandExchangeDatabase {
 				entry.setUniqueTrades(raf.readShort());
 				entry.setTotalValue(raf.readLong());
 				entry.setLastUpdate(raf.readLong());
+				SystemLogger.log("Putting " + itemId + " to the DB hashmap");
 				DATABASE.put(itemId, entry);
 			}
 			checkUpdate();
@@ -93,6 +99,13 @@ public final class GrandExchangeDatabase {
 			f.delete();
 		}
 		try (RandomAccessFile raf = new RandomAccessFile(directory + "eco/grand_exchange_db.emp", "rw")) {
+			if(DATABASE.size() == 0){
+				for(ItemDefinition d : ItemDefinition.getDefinitions().values()){
+					if(d.isTradeable()) {
+						DATABASE.put(d.getId(), new GrandExchangeEntry(d.getId()));
+					}
+				}
+			}
 			raf.writeLong(nextUpdate);
 			raf.writeInt(DATABASE.size());
 			for (GrandExchangeEntry entry : DATABASE.values()) {

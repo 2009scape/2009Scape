@@ -10,6 +10,7 @@ import core.net.NioReactor;
 import core.net.amsc.WorldCommunicator;
 import core.tools.TimeStamp;
 import core.tools.backup.AutoBackup;
+import plugin.ge.GEAutoStock;
 
 import java.net.BindException;
 
@@ -69,7 +70,7 @@ public final class Server {
 		reactor.start();
 		SystemLogger.log(GameWorld.getName() + " flags " + GameWorld.getSettings().toString());
 		SystemLogger.log(GameWorld.getName() + " started in " + t.duration(false, "") + " milliseconds.");
-//		GEAutoStock.stock();
+		GEAutoStock.stock();
 		// TODO Run the eco kick starter 1 time for the live server then comment it out
 //		ResourceManager.kickStartEconomy();
 
