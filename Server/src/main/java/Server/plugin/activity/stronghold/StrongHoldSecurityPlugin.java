@@ -589,7 +589,7 @@ public final class StrongHoldSecurityPlugin extends MapZone implements Plugin<Ob
 					stage = 99;
 					break;
 				case 3:
-					interpreter.sendDialogues(npcId, FacialExpression.OSRS_NORMAL, "Correct! We only contact our players via the game", "Inbox which you can acces from our " + GameWorld.getName() + "", "website.");
+					interpreter.sendDialogues(npcId, FacialExpression.OSRS_NORMAL, "Correct! We only contact our players via the game", "Inbox which you can access from our " + GameWorld.getName() + "", "website.");
 					stage = 69;
 					break;
 				}
