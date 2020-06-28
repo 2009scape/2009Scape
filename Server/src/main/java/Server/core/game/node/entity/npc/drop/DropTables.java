@@ -20,7 +20,8 @@ public enum DropTables {
             new WeightedChanceItem[]{
                     new WeightedChanceItem(ItemNames.FEATHER,3,5),
                     new WeightedChanceItem(ItemNames.FEATHER,5,3),
-                    new WeightedChanceItem(ItemNames.FEATHER,15,3)
+                    new WeightedChanceItem(ItemNames.FEATHER,15,3),
+                    new WeightedChanceItem(0,1,4)
             }),
     MAN_AND_THIEF(new int[]{1, 2, 3, 4, 5, 6, 8}, 0, 0, 0, 0, 0, 0, 23, 0,
             new Item[]{new Item(ItemNames.BONES_2530)}, //always drops
