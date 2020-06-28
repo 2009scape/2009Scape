@@ -1,4 +1,4 @@
-package plugin.interaction.object;
+package plugin.agilityshortcuts;
 
 import core.cache.def.impl.ObjectDefinition;
 import core.game.component.Component;
