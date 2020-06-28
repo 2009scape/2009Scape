@@ -14,6 +14,14 @@ import java.util.stream.IntStream;
 
 public enum DropTables {
     //FORMAT NPC(int[] ids, int.... shared table weights, new Item[] always drops, new ChanceItem[] charms, new WeightedChanceItem[] main drop table)
+    CHICKEN(new int[] {41,288,951,1017,1401,1402,2313,2314,2315},0,0,0,0,0,0,0,0,
+            new Item[]{new Item(ItemNames.BONES_2530),new Item(ItemNames.RAW_CHICKEN)},
+            new ChanceItem[]{},
+            new WeightedChanceItem[]{
+                    new WeightedChanceItem(ItemNames.FEATHER,3,5),
+                    new WeightedChanceItem(ItemNames.FEATHER,5,3),
+                    new WeightedChanceItem(ItemNames.FEATHER,15,3)
+            }),
     MAN_AND_THIEF(new int[]{1, 2, 3, 4, 5, 6, 8}, 0, 0, 0, 0, 0, 0, 23, 0,
             new Item[]{new Item(ItemNames.BONES_2530)}, //always drops
             new ChanceItem[]{}, // charms
