@@ -334,7 +334,7 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
 
    static final void method347(boolean var0) {
       try {
-         WorldListEntry.anInt2622 = 0;
+         WorldListEntry.inTutorialIsland = 0;
          if(!var0) {
             method347(true);
          }
@@ -342,15 +342,15 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
          int var1 = Class131.anInt1716 + (Class102.player.anInt2819 >> 7);
          int var2 = (Class102.player.anInt2829 >> 7) - -Class82.anInt1152;
          if(-3054 >= ~var1 && -3157 <= ~var1 && -3057 >= ~var2 && var2 <= 3136) {
-            WorldListEntry.anInt2622 = 1;
+            WorldListEntry.inTutorialIsland = 1;
          }
 
          if(var1 >= 3072 && var1 <= 3118 && var2 >= 9492 && var2 <= 9535) {
-            WorldListEntry.anInt2622 = 1;
+            WorldListEntry.inTutorialIsland = 1;
          }
 
-         if(~WorldListEntry.anInt2622 == -2 && -3140 >= ~var1 && -3200 <= ~var1 && var2 >= 3008 && 3062 >= var2) {
-            WorldListEntry.anInt2622 = 0;
+         if(WorldListEntry.inTutorialIsland == 1 && -3140 >= ~var1 && -3200 <= ~var1 && var2 >= 3008 && 3062 >= var2) {
+            WorldListEntry.inTutorialIsland = 0;
          }
 
       } catch (RuntimeException var3) {

@@ -331,7 +331,7 @@ final class Class15 implements Runnable {
          int var7 = Class3_Sub28_Sub5.aCalendar3581.get(11);
          int var8 = Class3_Sub28_Sub5.aCalendar3581.get(12);
          int var9 = Class3_Sub28_Sub5.aCalendar3581.get(13);
-         return RenderAnimationDefinition.method903(new RSString[]{Class3_Sub13_Sub31.aClass94Array3376[var3 + -1], Class3_Sub13_Sub12.aClass94_3145, Class72.method1298((byte)9, var4 / 10), Class72.method1298((byte)9, var4 % 10), Class161.aClass94_2025, NPC.aClass94Array3985[var5], Class161.aClass94_2025, Class72.method1298((byte)9, var6), Class24.aClass94_465, Class72.method1298((byte)9, var7 / 10), Class72.method1298((byte)9, var7 % 10), Class155.aClass94_1970, Class72.method1298((byte)9, var8 / 10), Class72.method1298((byte)9, var8 % 10), Class155.aClass94_1970, Class72.method1298((byte)9, var9 / 10), Class72.method1298((byte)9, var9 % 10), WorldListCountry.aClass94_500}, (byte)-96);
+         return RenderAnimationDefinition.method903(new RSString[]{Class3_Sub13_Sub31.aClass94Array3376[var3 + -1], Class3_Sub13_Sub12.aClass94_3145, Class72.method1298((byte)9, var4 / 10), Class72.method1298((byte)9, var4 % 10), Class161.aClass94_2025, NPC.aClass94Array3985[var5], Class161.aClass94_2025, Class72.method1298((byte)9, var6), Class24.aClass94_465, Class72.method1298((byte)9, var7 / 10), Class72.method1298((byte)9, var7 % 10), Class155.char_colon, Class72.method1298((byte)9, var8 / 10), Class72.method1298((byte)9, var8 % 10), Class155.char_colon, Class72.method1298((byte)9, var9 / 10), Class72.method1298((byte)9, var9 % 10), WorldListCountry.aClass94_500}, (byte)-96);
       } catch (RuntimeException var10) {
          throw Class44.method1067(var10, "cj.F(" + var0 + ',' + var2 + ')');
       }

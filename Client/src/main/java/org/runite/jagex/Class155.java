@@ -5,7 +5,7 @@ class Class155 {
 
    private int anInt1968 = 32;
    static int[] anIntArray1969 = new int[100];
-   static RSString aClass94_1970 = RSString.createRSString(":");
+   static RSString char_colon = RSString.createRSString(":");
    static int anInt1971;
    private long aLong1972 = Class5.method830((byte)-55);
    private Class3_Sub24 aClass3_Sub24_1973;
@@ -409,7 +409,7 @@ class Class155 {
 
    public static void method2165(int var0) {
       try {
-         aClass94_1970 = null;
+         char_colon = null;
          aClass94_1974 = null;
          anIntArray1976 = null;
          if(var0 != 0) {

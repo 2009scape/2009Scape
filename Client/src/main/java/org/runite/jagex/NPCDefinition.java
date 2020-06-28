@@ -534,7 +534,7 @@ final class NPCDefinition {
 
          for(int var5 = 0; ~var5 > ~Class3_Sub13_Sub23.itemDefinitionSize; ++var5) {
             ItemDefinition var6 = Class38.getItemDefinition(var5, (byte)93);
-            if((!var0 || var6.aBoolean807) && var6.anInt791 == -1 && -1 == var6.anInt762 && -1 == ~var6.anInt800 && var6.name.method1534(-98).method1551(var1, 116) != -1) {
+            if((!var0 || var6.aBoolean807) && var6.anInt791 == -1 && -1 == var6.anInt762 && -1 == ~var6.anInt800 && var6.name.method1534(-98).indexOf(var1, 116) != -1) {
                if(~var4 <= -251) {
                   Class99.aShortArray1398 = null;
                   Class62.anInt952 = -1;

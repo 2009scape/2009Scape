@@ -9,7 +9,7 @@ final class Class30 {
    private byte[] aByteArray564;
    static RSString aClass94_565 = RSString.createRSString("::fpsoff");
    private int anInt566 = 0;
-   static RSString aClass94_567 = RSString.createRSString(":chalreq:");
+   static RSString cmdChalReq = RSString.createRSString(":chalreq:");
    private long aLong568;
    private long aLong569;
    private long aLong570;
@@ -29,7 +29,7 @@ final class Class30 {
          aClass94_577 = null;
          if(var0) {
             anIntArray574 = null;
-            aClass94_567 = null;
+            cmdChalReq = null;
             aClass94_565 = null;
          }
       } catch (RuntimeException var2) {

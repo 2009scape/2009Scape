@@ -237,24 +237,24 @@ static boolean aBoolean1080 = false;
 
    static final RSString method1303(RSInterface var0, RSString var1, int var2) {
       try {
-         if(~var1.method1551(Class24.aClass94_468, 102) != var2) {
+         if(~var1.indexOf(Class24.aClass94_468, 102) != var2) {
             while(true) {
-               int var3 = var1.method1551(Class12.aClass94_331, 55);
+               int var3 = var1.indexOf(Class12.aClass94_331, 55);
                if(0 == ~var3) {
                   while(true) {
-                     var3 = var1.method1551(Class166.aClass94_2080, 106);
+                     var3 = var1.indexOf(Class166.aClass94_2080, 106);
                      if(var3 == -1) {
                         while(true) {
-                           var3 = var1.method1551(Class91.aClass94_1301, 95);
+                           var3 = var1.indexOf(Class91.aClass94_1301, 95);
                            if(0 == ~var3) {
                               while(true) {
-                                 var3 = var1.method1551(Class52.aClass94_852, 57);
+                                 var3 = var1.indexOf(Class52.aClass94_852, 57);
                                  if(~var3 == 0) {
                                     while(true) {
-                                       var3 = var1.method1551(Class3_Sub13_Sub35.aClass94_3418, 113);
+                                       var3 = var1.indexOf(Class3_Sub13_Sub35.aClass94_3418, 113);
                                        if(0 == ~var3) {
                                           while(true) {
-                                             var3 = var1.method1551(Class70.aClass94_1051, var2 ^ 50);
+                                             var3 = var1.indexOf(Class70.aClass94_1051, var2 ^ 50);
                                              if(~var3 == 0) {
                                                 return var1;
                                              }
@@ -386,7 +386,7 @@ static boolean aBoolean1080 = false;
 
                var6 = Runtime.getRuntime();
                var3 = (int)((var6.totalMemory() - var6.freeMemory()) / 1024L);
-               Class3_Sub30_Sub1.sendMessage((RSString)null, 0, RenderAnimationDefinition.method903(new RSString[]{Class3_Sub13_Sub29.aClass94_3360, Class72.method1298((byte)9, var3), Class151_Sub1.aClass94_2951}, (byte)-95), -1);
+               Class3_Sub30_Sub1.addChatMessage((RSString)null, 0, RenderAnimationDefinition.method903(new RSString[]{Class3_Sub13_Sub29.aClass94_3360, Class72.method1298((byte)9, var3), Class151_Sub1.aClass94_2951}, (byte)-95), -1);
             }
 
             int var4;
@@ -399,7 +399,7 @@ static boolean aBoolean1080 = false;
 
                var6 = Runtime.getRuntime();
                var3 = (int)((var6.totalMemory() + -var6.freeMemory()) / 1024L);
-               Class3_Sub30_Sub1.sendMessage((RSString)null, 0, RenderAnimationDefinition.method903(new RSString[]{Class119.aClass94_1625, Class72.method1298((byte)9, var3), Class151_Sub1.aClass94_2951}, (byte)-94), -1);
+               Class3_Sub30_Sub1.addChatMessage((RSString)null, 0, RenderAnimationDefinition.method903(new RSString[]{Class119.aClass94_1625, Class72.method1298((byte)9, var3), Class151_Sub1.aClass94_2951}, (byte)-94), -1);
                Class3_Sub1.method90(1);
                Class3_Sub13_Sub17.method246(8);
 
@@ -408,11 +408,11 @@ static boolean aBoolean1080 = false;
                }
 
                var3 = (int)((var6.totalMemory() + -var6.freeMemory()) / 1024L);
-               Class3_Sub30_Sub1.sendMessage((RSString)null, 0, RenderAnimationDefinition.method903(new RSString[]{Class161.aClass94_2033, Class72.method1298((byte)9, var3), Class151_Sub1.aClass94_2951}, (byte)-104), -1);
+               Class3_Sub30_Sub1.addChatMessage((RSString)null, 0, RenderAnimationDefinition.method903(new RSString[]{Class161.aClass94_2033, Class72.method1298((byte)9, var3), Class151_Sub1.aClass94_2951}, (byte)-104), -1);
             }
 
             if(command.equals(-113, Class139.aClass94_1830)) {
-               Class3_Sub30_Sub1.sendMessage((RSString)null, 0, RenderAnimationDefinition.method903(new RSString[]{Class21.aClass94_442, Class72.method1298((byte)9, Class118.method1727((byte)123))}, (byte)-94), -1);
+               Class3_Sub30_Sub1.addChatMessage((RSString)null, 0, RenderAnimationDefinition.method903(new RSString[]{Class21.aClass94_442, Class72.method1298((byte)9, Class118.method1727((byte)123))}, (byte)-94), -1);
             }
 
             if(HDToolKit.highDetail && command.equals(-113, Class3_Sub28_Sub16.aClass94_3700)) {
@@ -458,13 +458,13 @@ static boolean aBoolean1080 = false;
             	boolean on = !Properties.get().isInstantAttack();
             	Properties.get().setInstantAttack(on);
 				Properties.get().save();
-                Class3_Sub30_Sub1.sendMessage((RSString)null, 0, RSString.createRSString("Left click attack option mode toggled " + (on ? "on." : "off.")), -1);
+                Class3_Sub30_Sub1.addChatMessage((RSString)null, 0, RSString.createRSString("Left click attack option mode toggled " + (on ? "on." : "off.")), -1);
             }
             if (command.equals(-120, TOGGLE_FK)) {
             	boolean on = !Properties.get().isModernHotkeys();
             	Properties.get().setModernHotkeys(on);
 				Properties.get().save();
-                Class3_Sub30_Sub1.sendMessage((RSString)null, 0, RSString.createRSString("Modern hotkeys mode toggled " + (on ? "on." : "off.")), -1);
+                Class3_Sub30_Sub1.addChatMessage((RSString)null, 0, RSString.createRSString("Modern hotkeys mode toggled " + (on ? "on." : "off.")), -1);
             }
 
             if(command.equals(-120, Class52.aClass94_856)) {
@@ -509,7 +509,7 @@ static boolean aBoolean1080 = false;
 
             if(command.method1558(GameShell.aClass94_10, 0)) {
                Class3_Sub28_Sub15.anInt3689 = command.method1556(12, (byte)-74).trim(1).method1552((byte)-120);
-               Class3_Sub30_Sub1.sendMessage((RSString)null, 0, RenderAnimationDefinition.method903(new RSString[]{Class166.aClass94_2075, Class72.method1298((byte)9, Class3_Sub28_Sub15.anInt3689)}, (byte)-75), -1);
+               Class3_Sub30_Sub1.addChatMessage((RSString)null, 0, RenderAnimationDefinition.method903(new RSString[]{Class166.aClass94_2075, Class72.method1298((byte)9, Class3_Sub28_Sub15.anInt3689)}, (byte)-75), -1);
             }
 
             if(command.equals(104, Class108.aClass94_1456)) {
@@ -519,10 +519,10 @@ static boolean aBoolean1080 = false;
             if(command.equals(104, Class3_Sub15.aClass94_2432)) {
                if(!Class3_Sub26.aBoolean2558) {
                   Class3_Sub26.aBoolean2558 = true;
-                  Class3_Sub30_Sub1.sendMessage((RSString)null, 0, Player.aClass94_3961, -1);
+                  Class3_Sub30_Sub1.addChatMessage((RSString)null, 0, Player.aClass94_3961, -1);
                } else {
                   Class3_Sub26.aBoolean2558 = false;
-                  Class3_Sub30_Sub1.sendMessage((RSString)null, 0, Class164.aClass94_2061, -1);
+                  Class3_Sub30_Sub1.addChatMessage((RSString)null, 0, Class164.aClass94_2061, -1);
                }
             }
 

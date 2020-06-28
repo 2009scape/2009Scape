@@ -889,7 +889,7 @@ final class Class47 {
 
                                        RSString var44;
                                        while(-1 > ~var43.length(-58)) {
-                                          var25 = var43.method1551(RSByteBuffer.aClass94_2598, 62);
+                                          var25 = var43.indexOf(RSByteBuffer.aClass94_2598, 62);
                                           if(var25 != -1) {
                                              var44 = var43.method1557(var25, 0, 0);
                                              var43 = var43.method1556(var25 + 4, (byte)-74);
@@ -933,7 +933,7 @@ final class Class47 {
                                        var47 = 2 + (var26 - -var35.anInt3727);
 
                                        for(var43 = Class73.method1303(var11, var43, 0); ~var43.length(-102) < -1; var47 += var35.anInt3727 + 1) {
-                                          var28 = var43.method1551(RSByteBuffer.aClass94_2598, 86);
+                                          var28 = var43.indexOf(RSByteBuffer.aClass94_2598, 86);
                                           if(0 == ~var28) {
                                              var44 = var43;
                                              var43 = Class3_Sub28_Sub14.aClass94_3672;

@@ -106,7 +106,7 @@ final class Class166 {
          }
 
          if(!var4) {
-            Class3_Sub30_Sub1.sendMessage(Class3_Sub28_Sub14.aClass94_3672, 0, RenderAnimationDefinition.method903(new RSString[]{Class43.aClass94_691, var3}, (byte)-77), -1);
+            Class3_Sub30_Sub1.addChatMessage(Class3_Sub28_Sub14.aClass94_3672, 0, RenderAnimationDefinition.method903(new RSString[]{Class43.aClass94_691, var3}, (byte)-77), -1);
          }
 
       } catch (RuntimeException var7) {

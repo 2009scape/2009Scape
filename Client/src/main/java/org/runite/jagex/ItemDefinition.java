@@ -752,7 +752,7 @@ final class ItemDefinition {
 												if (~j1 > -3201) {
 													if (-3101 == ~j1) {
 														RSString class94_3 = Class3.aClass94Array75[--l];
-														Class3_Sub30_Sub1.sendMessage(Class3_Sub9.aClass94_2331, 0, class94_3, -1);
+														Class3_Sub30_Sub1.addChatMessage(Class3_Sub9.aClass94_2331, 0, class94_3, -1);
 														continue;
 													}
 													if (-3102 == ~j1) {
@@ -1233,7 +1233,7 @@ final class ItemDefinition {
 														if (Class96.anInt1357 == 0 || Class3_Sub28_Sub5.anInt3591 <= k15)
 															Class3.aClass94Array75[l++] = Class3_Sub9.aClass94_2331;
 														else
-															Class3.aClass94Array75[l++] = Class41.method1052(-29664, Class114.aLongArray1574[k15]).method1545((byte) -50);
+															Class3.aClass94Array75[l++] = Class41.method1052(-29664, Class114.ignores[k15]).method1545((byte) -50);
 														continue;
 													}
 													if (3623 == j1) {

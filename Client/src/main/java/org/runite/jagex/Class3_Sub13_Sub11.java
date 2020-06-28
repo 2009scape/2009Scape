@@ -148,7 +148,7 @@ final class Class3_Sub13_Sub11 extends Class3_Sub13 {
 
    static final void method221(int var0, RSString var1, RSString var2, RSString var3, int var4) {
       try {
-         Class3_Sub28_Sub12.sendGameMessage(var0, var4, var1, var3, (byte)50, var2);
+         Class3_Sub28_Sub12.sendGameMessage(var0, var4, var1, var3, var2);
       } catch (RuntimeException var6) {
          throw Class44.method1067(var6, "fm.F(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
       }

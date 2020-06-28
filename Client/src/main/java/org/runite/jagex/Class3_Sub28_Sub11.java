@@ -300,7 +300,7 @@ final class Class3_Sub28_Sub11 extends Node {
          Class3_Sub13_Sub12.aClass94_3142 = Class3_Sub2.aClass94_2215;
          Class143.aClass94_1879 = Class3_Sub13_Sub36.aClass94_3432;
          Class3_Sub28_Sub10_Sub2.aClass94_4071 = Class29.aClass94_560;
-         Class3_Sub6.aClass94_2285 = Class29.aClass94_559;
+         Class3_Sub6.suffixWishesToTradeWithYou = Class29.aClass94_559;
          NPC.aClass94_3988 = Class38_Sub1.aClass94_2616;
          Class163_Sub2_Sub1.aClass94_4024 = Class39.aClass94_669;
          Class95.aClass94_1335 = Class3_Sub13_Sub27.aClass94_3344;
