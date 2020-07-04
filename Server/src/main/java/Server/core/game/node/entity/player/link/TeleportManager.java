@@ -133,10 +133,6 @@ public class TeleportManager {
 	public static void fireRandom(Entity entity, Location location) {
 		if (entity instanceof Player && entity.getTeleporter().getTeleportType() == 0) {
 			Player p = (Player) entity;
-			if (p.getAntiMacroHandler().getChanceRatio(Skills.MAGIC) > AntiMacroHandler.FIRE_RATIO / 2) {
-				// p.getAntiMacroHandler().fireEvent("Lost and found",
-				// location);
-			}
 		}
 	}
 	

@@ -146,7 +146,8 @@ public abstract class UseWithHandler implements Plugin<Object> {
                         break;
                     }
                     if (!handled) {
-                        event.getPlayer().debug("Handler=none, used item=" + event.getUsedItem() + ", used with=" + event.getUsedWith());
+                        event.getPlayer().debug("Handler=none, used item=" + event.getUsedItem());
+                        event.getPlayer().debug("used with=" + event.getUsedWith());
                         event.getPlayer().getPacketDispatch().sendMessage("Nothing interesting happens.");
                     }
                     return true;

@@ -20,6 +20,7 @@ import core.net.packet.IoBuffer;
 import core.net.packet.PacketRepository;
 import core.net.packet.context.PlayerContext;
 import core.net.packet.out.ClearMinimapFlag;
+import plugin.quest.QuestInteractionManager;
 
 import java.util.List;
 
@@ -177,6 +178,9 @@ public final class InteractionPacket implements IncomingPacket {
 		player.debug("option=" + option.getName() + ", slot=" + option.getIndex() + ", id=" + shown.getId() + " original=" + npc.getId() + ", location=" + npc.getLocation() + "");
 		player.debug("spawn=" + npc.getProperties().getSpawnLocation() + ".");
 		handleAIPLegion(player, 0, optionIndex, index);
+		if(QuestInteractionManager.handle(player,shown,option)){
+			return;
+		}
 		npc.getInteraction().handle(player, option);
 	}
 
@@ -252,6 +256,9 @@ public final class InteractionPacket implements IncomingPacket {
 			player.debug("Object handler: " + option.getHandler().getClass().getSimpleName());
 		}
 		handleAIPLegion(player, 1, optionIndex, x, y, objectId);
+		if(QuestInteractionManager.handle(player,object)){
+			return;
+		}
 		object.getInteraction().handle(player, option);
 	}
 

@@ -136,7 +136,7 @@ public abstract class Quest implements Plugin<Object> {
 	 * @param line The line.
 	 */
 	public void line(Player player, String message, int line) {
-		String send = message.replace("<n>", "<br><br>").replace("<blue>", BLUE).replace("<red>", RED);
+		String send = BLUE + "" + message.replace("<n>", "<br><br>").replace("<blue>", BLUE).replace("<red>", RED);
 		if (send.contains("<br><br>") || send.contains("<n>")) {
 			String[] lines = send.split(send.contains("<br><br>") ? "<br><br>" : "<n>");
 			for (int i = 0; i < lines.length; i++) {
@@ -144,6 +144,7 @@ public abstract class Quest implements Plugin<Object> {
 				line++;
 			}
 		} else {
+			send = send.replace("!!",RED).replace("??",BLUE);
 			line(player, send, line, false);
 		}
 	}

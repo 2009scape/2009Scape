@@ -14,7 +14,7 @@ import core.game.world.map.Location;
 public enum MysteriousRuin {
 	AIR(new int[] { 2452, 7103, 7104 }, Location.create(2983, 3292, 0), Location.create(2841, 4829, 0), Talisman.AIR, Tiara.AIR),
 	MIND(new int[] { 2453, 7105, 7106 }, Location.create(2980, 3514, 0), Location.create(2793, 4828, 0), Talisman.MIND, Tiara.MIND),
-	WATER(new int[] { 2454, 7107, 7108 }, Location.create(3183, 3163, 0), Location.create(2726, 4832, 0), Talisman.WATER, Tiara.WATER),
+	WATER(new int[] { 2454, 7107, 7108 }, Location.create(3183, 3163, 0), Location.create(3482 ,4838,0), Talisman.WATER, Tiara.WATER),
 	EARTH(new int[] { 2455, 7109, 7110 }, Location.create(3304, 3475, 0), Location.create(2655, 4830, 0), Talisman.EARTH, Tiara.EARTH),
 	FIRE(new int[] { 2456, 7111, 7112 }, Location.create(3312, 3253, 0), Location.create(2574, 4849, 0), Talisman.FIRE, Tiara.FIRE),
 	BODY(new int[] { 2457, 7113, 7114 }, Location.create(3051, 3443, 0), Location.create(2521, 4834, 0), Talisman.BODY, Tiara.BODY), 

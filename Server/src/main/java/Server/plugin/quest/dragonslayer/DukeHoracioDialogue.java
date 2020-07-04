@@ -44,7 +44,7 @@ public final class DukeHoracioDialogue extends DialoguePlugin {
 
 	@Override
 	public boolean handle(int interfaceId, int buttonId) {
-		if (player.getQuestRepository().getQuest("Dragon Slayer").getStage(player) == 20 && !player.getInventory().containsItem(DragonSlayer.SHIELD) && !player.getBank().containsItem(DragonSlayer.SHIELD) && !player.getEquipment().containsItem(DragonSlayer.SHIELD)) {
+		if (player.getQuestRepository().getQuest("Dragon Slayer").getStage(player) >= 20 && !player.getInventory().containsItem(DragonSlayer.SHIELD) && !player.getBank().containsItem(DragonSlayer.SHIELD) && !player.getEquipment().containsItem(DragonSlayer.SHIELD)) {
 			switch (stage) {
 			case 0:
 				player("I seek a shield that will protect me from dragonbreath.");

@@ -8,6 +8,7 @@ import core.game.container.Container;
 import core.game.container.impl.EquipmentContainer;
 import core.game.content.eco.EconomyManagement;
 import core.game.content.global.shop.Shop;
+import core.game.system.SystemLogger;
 import plugin.tutorial.TutorialSession;
 import core.game.content.holiday.HolidayItem;
 import core.game.content.holiday.ItemLimitation;
@@ -112,11 +113,14 @@ public final class DeveloperCommandPlugin extends CommandPlugin {
         		player.getSkills().setLevel(Integer.parseInt(args[1]), Integer.parseInt(args[2]));
         		player.getSkills().setStaticLevel(Integer.parseInt(args[1]), Integer.parseInt(args[2]));
         		break;
-        	
         	case "playsong":
         		player.getMusicPlayer().play(MusicEntry.getSongs().get(Integer.parseInt(args[1])));
         		player.sendMessage("Playing song: " + MusicEntry.getSongs().get(Integer.parseInt(args[1])).getName());
         		break;
+            case "doyellow":
+                player.sendMessage("Running quest..");
+                player.getQuestRepository().getQuest("What Quest").finish(player);
+                break;
             case "find":
                 try {
                     player.getAttributes().put("spawning_items", true);
