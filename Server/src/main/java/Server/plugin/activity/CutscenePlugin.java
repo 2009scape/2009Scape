@@ -330,4 +330,6 @@ public abstract class CutscenePlugin extends ActivityPlugin {
 	public Pulse getStartPulse() {
 		return startPulse;
 	}
+
+	public Pulse getEndPulse(){return new EndPulse();}
 }

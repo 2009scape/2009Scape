@@ -156,8 +156,15 @@ public abstract class Quest implements Plugin<Object> {
 	 * @param line The line number.
 	 * @param crossed True if the message should be crossed out.
 	 */
-	public void line(Player player, String message, final int line, final boolean crossed) {
-		player.getPacketDispatch().sendString(crossed ? "<str>" + message + "</str>" : message, JOURNAL_COMPONENT, line);
+	public void line(Player player, String message, int line, final boolean crossed) {
+		String send = message;
+		if(!crossed){
+			send = BLUE + "" + message.replace("<n>", "<br><br>").replace("<blue>", BLUE).replace("<red>", RED);
+			send = send.replace("!!",RED).replace("??",BLUE);
+		} else {
+			send = BLUE + "" + message.replace("??","").replace("!!","");
+		}
+		player.getPacketDispatch().sendString(crossed ? "<str>" + send + "</str>" : send, JOURNAL_COMPONENT, line);
 	}
 
 	/**

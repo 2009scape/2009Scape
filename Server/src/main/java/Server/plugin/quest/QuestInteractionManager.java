@@ -6,13 +6,14 @@ import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
 import core.game.node.item.Item;
 import core.game.node.object.GameObject;
+import plugin.quest.fishingcontest.FishingContest;
 
 import java.util.HashMap;
 
 public class QuestInteractionManager{
     private static final HashMap<Integer,QuestInteraction> npcInteractions = new HashMap<>();
     private static final HashMap<Integer,QuestInteraction> objectInteractions = new HashMap<>();
-    private static final HashMap<Item,QuestInteraction> useWithInteractions = new HashMap<>();
+    private static final HashMap<Integer,QuestInteraction> useWithInteractions = new HashMap<>();
 
     public static void register(QuestInteraction interaction, InteractionType type){
         switch(type){
@@ -22,7 +23,7 @@ public class QuestInteractionManager{
                 }
                 break;
             case USEWITH:
-                useWithInteractions.putIfAbsent(interaction.item,interaction);
+                useWithInteractions.putIfAbsent(interaction.ids[0],interaction);
                 break;
             case NPC:
                 for(int i = 0; i < interaction.ids.length; i++){
@@ -41,7 +42,7 @@ public class QuestInteractionManager{
     }
 
     public static boolean handle(Player player, NodeUsageEvent event){
-        QuestInteraction i = useWithInteractions.get(event.getUsedItem());
+        QuestInteraction i = useWithInteractions.get(event.getUsed().asItem().getId());
         if(i == null) {
             return false;
         } else {
