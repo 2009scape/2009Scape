@@ -264,7 +264,6 @@ public final class GameWorld {
         //LandscapeParser.addGameObject(new GameObject(6097, new Location(2343, 3690, 0), 10, 0));
         LandscapeParser.addGameObject(new GameObject(1317, new Location(2343, 3690, 0), 10, 3));
         LandscapeParser.addGameObject(new GameObject(1814, new Location(3090, 3475, 0), 4, 0));//edgeville lever
-        LandscapeParser.addGameObject(new GameObject(1293, new Location(2461, 3446, 0), 10,0)); // Gnome Stronghold Spirit Tree
         LandscapeParser.addGameObject(new GameObject(2646, new Location(2445, 3413, 0), 10,0)); // Gnome Stronghold flax
         LandscapeParser.addGameObject(new GameObject(2646, new Location(2447, 3414, 0), 10,2)); // Gnome Stronghold flax
         LandscapeParser.addGameObject(new GameObject(2646, new Location(2447, 3421, 0), 10,0));// Gnome Stronhold flax
@@ -273,6 +272,9 @@ public final class GameWorld {
         LandscapeParser.addGameObject(new GameObject(37304, new Location(3292,3299,0),10,0));
 
         LandscapeParser.addGameObject(new GameObject(20987,new Location(2821,2996,0),10,0));
+
+        LandscapeParser.removeGameObject(new GameObject(356,new Location(2804,3428,0),10,1));
+        LandscapeParser.addGameObject(new GameObject(356,new Location(2805,3427,0),10,1));
 
         NPC[] npcs = new NPC[]{new NPC(494, new Location(2327, 3687, 0))};
         Arrays.stream(npcs).forEach(npc -> npc.setDirection(Direction.EAST));

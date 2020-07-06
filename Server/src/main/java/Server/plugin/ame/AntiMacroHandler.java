@@ -1,6 +1,7 @@
 package plugin.ame;
 
 import core.cache.misc.buffer.ByteBufferUtils;
+import core.game.system.SystemLogger;
 import plugin.skill.Skills;
 import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
@@ -10,29 +11,33 @@ import core.game.world.map.zone.ZoneRestriction;
 import core.tools.RandomFunction;
 
 import java.nio.ByteBuffer;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Handles anti-macroing.
  * @author Emperor
+ * @author ceik
  */
 public final class AntiMacroHandler implements SavingModule {
 
 	/**
-	 * The update frequency.
+	 * The delay between periods in which it attempts to spawn a random event.
+	 * For example, if delay is 500, it will wait 500 ticks before it starts trying to spawn a random event.
 	 */
-	private static final int UPDATE_FREQUENCY = 50;
+	private static final int DELAY = 2000; // 2000 ticks = 20 minutes
+
+	/**
+	 * The chance that, after the delay has passed, a random event has of occuring each tick. Takes the form of (1 / CHANCE)
+	 */
+	private static final int CHANCE = 500; // 1/500 chance, average of 500 ticks (roughly 5 minutes) before a random will spawn.
 
 	/**
 	 * Whether randoms are disabled for this player
 	 */
 	public boolean isDisabled;
-
-	/**
-	 * The ratio of firing events, the higher the less frequent.
-	 */
-	public static int FIRE_RATIO = 250;
 
 	/**
 	 * The list of anti-macro events.
@@ -45,7 +50,7 @@ public final class AntiMacroHandler implements SavingModule {
 	private final Player player;
 
 	/**
-	 * The last pulse tick.
+	 * The time at which the next series of attempts to spawn a random will occur. Usually GameWorld.getTicks() + DELAY
 	 */
 	private int nextPulse;
 
@@ -54,15 +59,7 @@ public final class AntiMacroHandler implements SavingModule {
 	 */
 	private AntiMacroEvent event;
 
-	/**
-	 * The experience monitors.
-	 */
 	public ExperienceMonitor[] monitors = new ExperienceMonitor[Skills.SKILL_NAME.length];
-
-	/**
-	 * The chance ratio of firing random events.
-	 */
-	private final int[] chanceRatio = new int[Skills.SKILL_NAME.length];
 
 	/**
 	 * Constructs a new {@code AntiMacroHandler} {@code Object}.
@@ -124,53 +121,35 @@ public final class AntiMacroHandler implements SavingModule {
 			return;
 		}
 		if (!player.getLocks().isInteractionLocked() && !player.getLocks().isTeleportLocked() && !player.getLocks().isMovementLocked()) {
-			for (int i = 0; i < monitors.length; i++) {
-				FIRE_RATIO = 250;
-				if (chanceRatio[i] > FIRE_RATIO && !isDisabled) {
-					fireEvent(i);
+			int roll = RandomFunction.random(0,CHANCE);
+			int neededRoll = 1 + (CHANCE - RandomFunction.random(CHANCE - 10));
+			boolean spawnEvent = roll ==  neededRoll; //checks if the chance is hit this tick
+			SystemLogger.log("roll: " + roll + " needed roll: " + neededRoll);
+			int highestIndex = 0;
+			int highestAmount = 0;
+			if(spawnEvent){
+				SystemLogger.log("Anti-Macro: Trying to get event for " + player.getUsername());
+				for(int i = 0; i < monitors.length; i++){
+					try {
+						if (monitors[i].getExperienceAmount() > highestAmount) {
+							highestIndex = i;
+							highestAmount = monitors[i].getExperienceAmount();
+							monitors[i].setExperienceAmount(0);
+						}
+					} catch (Exception e){}
 				}
-				ExperienceMonitor monitor = monitors[i];
-				if (monitor.getExperienceAmount() > 0) {
-					double modifier = monitor.getExperienceAmount() / UPDATE_FREQUENCY;
-					chanceRatio[i] += modifier;
-					monitor.setExperienceAmount(0);
-				} else if ((chanceRatio[i] -= 5) < 0) {
-					chanceRatio[i] = 0;
-				}
+				fireEvent(highestIndex);
 			}
 		}
-		nextPulse = GameWorld.getTicks() + UPDATE_FREQUENCY;
 	}
-
-	/**
-	 * Resets the trigger chance ratio.
-	 */
-	public void resetTrigger() {
-		for (int j = 0; j < chanceRatio.length; j++) {
-			chanceRatio[j] = 0;
-		}
-	}
-
-	/**
-	 * Gets the chance ratio.
-	 * @param skillId The skill id.
-	 * @return The chance ratio.
-	 */
-	public int getChanceRatio(int skillId) {
-		return chanceRatio[skillId];
-	}
-
 	/**
 	 * Initializes the anti macro event handler.
 	 */
 	public void init() {
-		for (int i = 0; i < monitors.length; i++) {
-			monitors[i] = new ExperienceMonitor(i);
-		}
 		if(isDisabled){
 			nextPulse = -1;
 		} else {
-			nextPulse = GameWorld.getTicks() + UPDATE_FREQUENCY;
+			nextPulse = GameWorld.getTicks() + DELAY;
 		}
 		if (event != null) {
 			event.start(player, true);
@@ -178,6 +157,7 @@ public final class AntiMacroHandler implements SavingModule {
 		if(!player.isArtificial() && !isDisabled) {
 			System.out.println("Anti-Macro: Initialized anti-macro handler for " + player.getUsername());
 		}
+		SystemLogger.log("Monitors: " + monitors.length);
 	}
 
 	/**
@@ -187,15 +167,6 @@ public final class AntiMacroHandler implements SavingModule {
 	public static void register(AntiMacroEvent event) {
 		event.register();
 		EVENTS.put(event.getName(), event);
-	}
-
-	/**
-	 * Registers experience gain.
-	 * @param skill The skill id.
-	 * @param experience The experience gained.
-	 */
-	public void registerExperience(int skill, double experience) {
-		monitors[skill].setExperienceAmount((int) (monitors[skill].getExperienceAmount() + experience));
 	}
 
 	/**
@@ -228,6 +199,7 @@ public final class AntiMacroHandler implements SavingModule {
 	 * @return {@code True} if the event has been fired.
 	 */
 	public boolean fireEvent(String name, Object... args) {
+		nextPulse = GameWorld.getTicks() + DELAY;
 		if (hasEvent() || player.getZoneMonitor().isRestricted(ZoneRestriction.RANDOM_EVENTS) || player.isArtificial()) {
 			return false;
 		}
@@ -243,7 +215,7 @@ public final class AntiMacroHandler implements SavingModule {
 		if (!event.start(player, false, args)) {
 			return false;
 		}
-		resetTrigger();
+		//resetTrigger();
 		this.event = event;
 		return true;
 	}
@@ -255,6 +227,7 @@ public final class AntiMacroHandler implements SavingModule {
 	 * @return {@code True} if the event has been fired.
 	 */
 	public boolean fireEvent(int skillId, Object... args) {
+		nextPulse = DELAY + GameWorld.getTicks();
 		if (hasEvent() || EVENTS.isEmpty() || player.getZoneMonitor().isRestricted(ZoneRestriction.RANDOM_EVENTS) || player.isArtificial()) {
 			return false;
 		}
@@ -262,7 +235,7 @@ public final class AntiMacroHandler implements SavingModule {
 		if (event != null) {
 			if ((event = event.create(player)).start(player, false, args)) {
 				System.out.println("Anti-Macro: Firing event " + event.getName() + " for player: " + player.getUsername());
-				resetTrigger();
+				//resetTrigger();
 				return true;
 			}
 			event = null;

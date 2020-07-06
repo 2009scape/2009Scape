@@ -53,7 +53,7 @@ public class GertrudesCat extends Quest {
 			player.getPacketDispatch().sendString("<str>I spoke to Shilop, Gertrude's Son.", 275, 5+ 7);
 			player.getPacketDispatch().sendString("<str>I found the lost cat but it won't come back.</str>", 275, 6+ 7);
 			player.getPacketDispatch().sendString("<str>I gave the cat milk and sardines.</str>", 275, 7+ 7);
-			player.getPacketDispatch().sendString(BLUE+ "I still need " + RED + "get her to follow me home.", 275, 9+ 7);
+			player.getPacketDispatch().sendString(BLUE+ "I still need to" + RED + "get her to follow me home.", 275, 9+ 7);
 			break;
 		case 60:
 			player.getPacketDispatch().sendString("<str>I accepted the challenge of finding Gertrude's lost cat.", 275, 4+ 7);

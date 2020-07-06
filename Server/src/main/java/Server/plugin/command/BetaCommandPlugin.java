@@ -39,6 +39,7 @@ import java.awt.datatransfer.StringSelection;
  */
 @InitializablePlugin
 public final class BetaCommandPlugin extends CommandPlugin {
+    String sqlLog = "";
 
     @Override
     public boolean parse(Player player, String name, String[] args) {
@@ -236,6 +237,28 @@ public final class BetaCommandPlugin extends CommandPlugin {
                 item = new Item(toInteger(args[1]), toInteger(args[2]));
                 item.setAmount(toInteger(args[2]));
                 recipient.getInventory().add(item);
+                return true;
+
+            case "logsql":
+                final Location lsql = player.getLocation();
+                player.getPacketDispatch().sendMessage("Absolute: " + lsql);
+                sqlLog += "{" + lsql.getX() + "," + lsql.getY() + "," + lsql.getZ() + ",0,0}";
+                return true;
+
+            case "sqldone":
+                stringSelection = new StringSelection(sqlLog);
+                clpbrd = Toolkit.getDefaultToolkit().getSystemClipboard();
+                clpbrd.setContents(stringSelection, null);
+                sqlLog = "";
+                return true;
+
+            case "locsql":
+                final Location lsqlatom = player.getLocation();
+                player.getPacketDispatch().sendMessage("Absolute: " + lsqlatom);
+                String locql = "{" + lsqlatom.getX() + "," + lsqlatom.getY() + "," + lsqlatom.getZ() + ",0,0}";
+                stringSelection = new StringSelection(locql);
+                clpbrd = Toolkit.getDefaultToolkit().getSystemClipboard();
+                clpbrd.setContents(stringSelection, null);
                 return true;
 
             // Get item by name

@@ -19,42 +19,33 @@ import core.plugin.InitializablePlugin;
 public class WitchsExperimentNPC extends AbstractNPC {
 
     private ExperimentType type;
-    private ExperimentSession session;
     private boolean commenced;
+    Player p;
 
     public WitchsExperimentNPC() {
         super(0, null);
     }
 
-    WitchsExperimentNPC(int id, Location location, ExperimentSession session) {
+    WitchsExperimentNPC(int id, Location location, Player player) {
         super(id, location);
         this.setWalks(true);
-        this.session = session;
         this.setRespawn(false);
         this.type = WitchsExperimentNPC.ExperimentType.forId(id);
+        p = player;
     }
 
     @Override
     public void handleTickActions() {
         super.handleTickActions();
-        if (session == null) {
-            return;
-        }
-        if (!session.getPlayer().isActive() || session.getPlayer().getLocation().getDistance(getLocation()) > 15 || session.getPlayer().getSavedData().getQuestData().isWitchsExerimentKilled()) {
-            session.getPlayer().removeAttribute("exerimentAlive");
-            clear();
-            session.close();
-            return;
-        }
-        if (commenced && !getProperties().getCombatPulse().isAttacking()) {
-            getProperties().getCombatPulse().attack(session.getPlayer());
+        if (!getProperties().getCombatPulse().isAttacking()) {
+            getProperties().getCombatPulse().attack(p);
         }
     }
 
     @Override
     public void startDeath(Entity killer) {
-        if (killer == session.getPlayer()) {
-            type.transform(this, session.getPlayer());
+        if (killer == p) {
+            type.transform(this, p);
             return;
         }
         super.startDeath(killer);
@@ -62,17 +53,14 @@ public class WitchsExperimentNPC extends AbstractNPC {
 
     @Override
     public boolean isAttackable(Entity entity, CombatStyle style) {
-        if (session == null) {
-            return false;
-        }
-        return session.getPlayer() == entity;
+        return p == entity;
     }
 
     @Override
     public boolean canSelectTarget(Entity target) {
         if (target instanceof Player) {
             Player p = (Player) target;
-            return p == session.getPlayer();
+            return p == this.p;
         }
         return true;
     }
@@ -125,7 +113,7 @@ public class WitchsExperimentNPC extends AbstractNPC {
             npc.lock();
             npc.getPulseManager().clear();
             npc.getWalkingQueue().reset();
-            player.getSavedData().getQuestData().setWitchsExerimentStage(newType.ordinal());
+            player.setAttribute("/save:witchs_house:experiment_id",this.id);
             GameWorld.Pulser.submit(new Pulse(1, npc, player) {
                 int counter;
 
@@ -143,13 +131,13 @@ public class WitchsExperimentNPC extends AbstractNPC {
                             if (newType != END) {
                                 npc.getProperties().getCombatPulse().attack(player);
                             }
-                            if (newType.getMessage() != null) {
+                            if (newType.getMessage() != null && newType != END) {
                                 player.sendMessage(newType.getMessage()[0]);
                                 player.sendMessage(newType.getMessage()[1]);
                             }
                             if (newType == END) {
-                                player.getSavedData().getQuestData().setWitchsExerimentKilled(true);
-                                player.removeAttribute("exerimentAlive");
+                                player.setAttribute("witchs_house:experiment_killed",true);
+                                npc.clear();
                                 return false;
                             }
                             player.unlock();
@@ -174,7 +162,7 @@ public class WitchsExperimentNPC extends AbstractNPC {
 
         public ExperimentType next()
         {
-            return experimentTypes[(this.ordinal()+1) % experimentTypes.length];
+            return experimentTypes[this.ordinal() + 1];
         }
 
         public int getId() {

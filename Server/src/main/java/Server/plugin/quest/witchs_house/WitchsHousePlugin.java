@@ -47,12 +47,12 @@ public class WitchsHousePlugin extends OptionHandler {
         final Quest quest = player.getQuestRepository().getQuest("Witch's House");
         final GroundItem ball = GroundItemManager.get(2407, new Location(2935, 3460, 0), null);
         final int id = node instanceof Item ? ((Item) node).getId() : node instanceof GameObject ? ((GameObject) node).getId() : node instanceof NPC ? ((NPC) node).getId() : node.getId();
-        boolean killedExperiment = player.getSavedData().getQuestData().isWitchsExerimentKilled();
-        boolean experimentAlive = player.getAttribute("exerimentAlive", false);
+        boolean killedExperiment = player.getAttribute("witchs_house:experiment_killed",false);
+        boolean experimentAlive = !player.getAttribute("witchs_house:experiment_killed", false);
         boolean readBook = player.getAttribute("readWitchsBook", false);
         boolean magnetAttatched = player.getAttribute("attached_magnet", false);
         switch (id) {
-            case 2407:
+            /*case 2407:
                 player.debug("Killed experiment " + killedExperiment);
                 if (killedExperiment) {
                     if (player.getInventory().containsItem(BALL)) {
@@ -73,7 +73,7 @@ public class WitchsHousePlugin extends OptionHandler {
                     player.getPacketDispatch().sendMessage("<col=ff0000>The experiment glares at you, and you feel yourself weaken.</col>");
                     startFight(player);
                 }
-                break;
+                break;*/
             case 897:
             case 898:
             case 899:
@@ -212,7 +212,6 @@ public class WitchsHousePlugin extends OptionHandler {
         ObjectDefinition.forId(2869).getConfigurations().put("option:search", this);
         ObjectDefinition.forId(2863).getConfigurations().put("option:open", this);
         ObjectDefinition.forId(2864).getConfigurations().put("option:check", this);
-        ItemDefinition.forId(2407).getConfigurations().put("option:take", this);
         ItemDefinition.forId(2408).getConfigurations().put("option:read", this);
 
         return this;
@@ -221,7 +220,7 @@ public class WitchsHousePlugin extends OptionHandler {
     private void startFight(final Player player) {
         player.setAttribute("exerimentAlive", true);
         player.getSavedData().getQuestData().setWitchsExerimentKilled(false);
-        ExperimentSession.create(player).start();
+        //ExperimentSession.create(player).start();
     }
 
     public static class WitchsHouseUseWithHandler extends UseWithHandler {

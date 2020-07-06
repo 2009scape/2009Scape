@@ -1,6 +1,7 @@
 package plugin.skill.magic;
 
 import core.game.component.Component;
+import core.game.system.SystemLogger;
 import plugin.skill.Skills;
 import core.game.node.Node;
 import core.game.node.entity.Entity;
@@ -240,7 +241,10 @@ public abstract class MagicSpell implements Plugin<SpellType> {
 				}
 			}
 			if (remove) {
-				p.getInventory().remove(toRemove.toArray(new Item[0]));
+				toRemove.forEach(i -> {
+					SystemLogger.log("Removing " + i.getAmount() + " of " + i.getId());
+					p.getInventory().remove(i);
+				});
 			}
 			return true;
 		}
@@ -273,11 +277,32 @@ public abstract class MagicSpell implements Plugin<SpellType> {
 	 */
 	public boolean hasRune(Player p, Item item, List<Item> toRemove, boolean message) {
 		if (!usingStaff(p, item.getId())) {
-			if (!p.getInventory().contains(item.getId(), item.getAmount())) {
-				if (message) {
-					p.getPacketDispatch().sendMessage("You don't have enough " + item.getName() + "s to cast this spell.");
+			boolean hasBaseRune = p.getInventory().contains(item.getId(),item.getAmount());
+			if(!hasBaseRune){
+				int baseAmt = p.getInventory().getAmount(item.getId());
+				if(baseAmt > 0){
+					toRemove.add(new Item(item.getId(),p.getInventory().getAmount(item.getId())));
 				}
-				return false;
+				int amtRemaining = item.getAmount() - baseAmt;
+				List<CombinationRune> possibleComboRunes = CombinationRune.eligibleFor(Runes.forId(item.getId()));
+				for(CombinationRune r : possibleComboRunes){
+					if(p.getInventory().containsItem(new Item(r.id)) && amtRemaining > 0){
+						int amt = p.getInventory().getAmount(r.id);
+						if(amtRemaining < amt){
+							toRemove.add(new Item(r.id,amtRemaining));
+							amtRemaining = 0;
+							continue;
+						}
+						amtRemaining -= p.getInventory().getAmount(r.id);
+						toRemove.add(new Item(r.id,p.getInventory().getAmount(r.id)));
+					}
+				}
+				if(amtRemaining <= 0){
+					return true;
+				} else {
+					p.getPacketDispatch().sendMessage("You don't have enough " + item.getName() + "s to cast this spell.");
+					return false;
+				}
 			}
 			toRemove.add(item);
 			return true;

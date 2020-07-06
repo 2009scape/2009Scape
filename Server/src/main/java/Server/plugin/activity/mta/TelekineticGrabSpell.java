@@ -1,6 +1,7 @@
 package plugin.activity.mta;
 
 import core.game.content.global.action.PickupHandler;
+import plugin.SpellBlocks;
 import plugin.skill.magic.MagicSpell;
 import plugin.skill.magic.Runes;
 import core.game.interaction.SpecialGroundItems;
@@ -180,6 +181,12 @@ public final class TelekineticGrabSpell extends MagicSpell {
 			if (!PickupHandler.canTake(player, item, 1)) {
 				return false;
 			}
+		}
+		if(SpellBlocks.isBlocked(SPELL_ID,(Node) item)){
+			if(entity instanceof Player){
+				entity.asPlayer().getDialogueInterpreter().sendDialogue("You can't do that.");
+			}
+			return false;
 		}
 		return super.meetsRequirements(entity, true, true);
 	}

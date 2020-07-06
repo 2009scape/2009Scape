@@ -21,7 +21,7 @@ public final class GertrudeCatPlugin extends OptionHandler {
 	/**
 	 * Represents the kitten item.
 	 */
-	private static final Item KITTEN = new Item(1555);
+	private static final Item KITTEN = new Item(13236);
 
 	@Override
 	public Plugin<Object> newInstance(Object arg) throws Throwable {
@@ -47,7 +47,7 @@ public final class GertrudeCatPlugin extends OptionHandler {
 			} else {
 				if (player.getAttribute("findkitten", false) && player.getInventory().freeSlots() > 0) {
 					quest.setStage(player, 50);
-					player.getDialogueInterpreter().sendDialogue("You find a kitten! You carefully place it in your backpack.");
+					player.getDialogueInterpreter().sendDialogue("You find some kittens! You carefully place them into your backpack.");
 					player.getInventory().add(KITTEN);
 					return true;
 				}
