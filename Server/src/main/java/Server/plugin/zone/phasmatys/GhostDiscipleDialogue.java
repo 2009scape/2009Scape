@@ -36,6 +36,23 @@ public final class GhostDiscipleDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
+		if(args.length > 1){
+			final int amount = player.getSavedData().getGlobalData().getEctoCharges() * 5;
+			final Item tokens = new Item(4278, amount);
+			if (!player.getInventory().hasSpaceFor(tokens)) {
+				player("Sorry, I don't have enough inventory space.");
+				return true;
+			}
+			if(amount > 0) {
+				player.getInventory().add(tokens);
+				player.getSavedData().getGlobalData().setEctoCharges(0);
+				npc("Certainly, mortal. Here's " + (amount) + " ectotokens.");
+			} else {
+				npc("I'm sorry, but you haven't earned any.");
+			}
+			stage = 81;
+			return true;
+		}
 		if (player.getSavedData().getGlobalData().getEctoCharges() > 0) {
 			player("Can I have the tokens I have earned?");
 			stage = 80;
@@ -143,7 +160,7 @@ public final class GhostDiscipleDialogue extends DialoguePlugin {
 		case 72:
 			end();
 			break;
-		case 80:
+		case 80: {
 			final int amount = player.getSavedData().getGlobalData().getEctoCharges() * 5;
 			final Item tokens = new Item(4278, amount);
 			if (!player.getInventory().hasSpaceFor(tokens)) {
@@ -156,6 +173,7 @@ public final class GhostDiscipleDialogue extends DialoguePlugin {
 			player.getSavedData().getGlobalData().setEctoCharges(0);
 			npc("Certainly, mortal. Here's " + (amount) + " ectotokens.");
 			break;
+		}
 		case 81:
 			end();
 			break;
