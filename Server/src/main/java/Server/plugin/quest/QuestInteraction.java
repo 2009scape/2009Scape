@@ -20,6 +20,7 @@ public abstract class QuestInteraction implements Plugin<Object> {
     public boolean handle(Player player, NPC npc, Option option){
         return false;
     }
+    public boolean handle(Player player, Item item, Option option){return false;}
     public QuestInteraction(int... ids){
         this.ids = ids;
     }

@@ -314,6 +314,10 @@ public final class InteractionPacket implements IncomingPacket {
 			Interaction.handleInvalidInteraction(player, item, Option.NULL);
 			return;
 		}
+		if(QuestInteractionManager.handle(player,item,option)){
+			player.debug("Handled by quest interaction manager.");
+			return;
+		}
 		item.getInteraction().handle(player, option);
 	}
 

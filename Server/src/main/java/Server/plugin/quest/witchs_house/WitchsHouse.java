@@ -50,7 +50,7 @@ public class WitchsHouse extends Quest {
     public void finish(Player player) {
         super.finish(player);
         player.getConfigManager().set(101, player.getQuestRepository().getPoints());
-        player.getPacketDispatch().sendString("4 Quest Point", 277, 8 + 2);
+        player.getPacketDispatch().sendString("4 Quest Points", 277, 8 + 2);
         player.getPacketDispatch().sendString("6325 Hitpoints XP", 277, 9 + 2);
         player.getSkills().addExperience(Skills.HITPOINTS, 6325);
         player.getInterfaceManager().closeChatbox();
