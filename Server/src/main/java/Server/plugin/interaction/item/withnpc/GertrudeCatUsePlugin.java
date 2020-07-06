@@ -37,7 +37,7 @@ public final class GertrudeCatUsePlugin extends UseWithHandler {
 	 * Constructs a new {@code GertrudeCatUsePlugin} {@code Object}.
 	 */
 	public GertrudeCatUsePlugin() {
-		super(1927, 1552, 327, 1555);
+		super(1927, 1552, 327, 13236);
 	}
 
 	@Override
@@ -66,7 +66,7 @@ public final class GertrudeCatUsePlugin extends UseWithHandler {
 			}
 		} else if (event.getUsedItem().getId() == 327 && quest.getStage(player) == 50) {
 			player.getDialogueInterpreter().sendDialogue("The cat doesn't seem interested in that.");
-		} else if (event.getUsedItem().getId() == 1555) {
+		} else if (event.getUsedItem().getId() == 13236) {
 			if (player.getInventory().remove(event.getUsedItem())) {
 				quest.setStage(player, 60);
 				player.lock(5);

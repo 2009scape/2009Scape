@@ -27,7 +27,7 @@ public final class AntiMacroHandler implements SavingModule {
 	 * The delay between periods in which it attempts to spawn a random event.
 	 * For example, if delay is 500, it will wait 500 ticks before it starts trying to spawn a random event.
 	 */
-	private static final int DELAY = 200; // 2000 ticks = 20 minutes
+	private static final int DELAY = 2000; // 2000 ticks = 20 minutes
 
 	/**
 	 * The chance that, after the delay has passed, a random event has of occuring each tick. Takes the form of (1 / CHANCE)
@@ -199,6 +199,7 @@ public final class AntiMacroHandler implements SavingModule {
 	 * @return {@code True} if the event has been fired.
 	 */
 	public boolean fireEvent(String name, Object... args) {
+		nextPulse = GameWorld.getTicks() + DELAY;
 		if (hasEvent() || player.getZoneMonitor().isRestricted(ZoneRestriction.RANDOM_EVENTS) || player.isArtificial()) {
 			return false;
 		}
@@ -215,7 +216,6 @@ public final class AntiMacroHandler implements SavingModule {
 			return false;
 		}
 		//resetTrigger();
-		nextPulse = GameWorld.getTicks() + DELAY;
 		this.event = event;
 		return true;
 	}
@@ -227,6 +227,7 @@ public final class AntiMacroHandler implements SavingModule {
 	 * @return {@code True} if the event has been fired.
 	 */
 	public boolean fireEvent(int skillId, Object... args) {
+		nextPulse = DELAY + GameWorld.getTicks();
 		if (hasEvent() || EVENTS.isEmpty() || player.getZoneMonitor().isRestricted(ZoneRestriction.RANDOM_EVENTS) || player.isArtificial()) {
 			return false;
 		}
