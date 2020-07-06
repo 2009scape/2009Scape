@@ -26,7 +26,7 @@ public class StandardCookingPulse extends Pulse {
     private static final Animation FIRE_ANIMATION = new Animation(897, Animator.Priority.HIGH);
 
     //Cooking sound
-    public static final Audio SOUND = new Audio(2393, 1, 1);
+    public static final Audio SOUND = new Audio(2577, 1, 1);
 
     private int initial,product,amount,level;
     private GameObject object;

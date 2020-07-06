@@ -252,6 +252,15 @@ public final class BetaCommandPlugin extends CommandPlugin {
                 sqlLog = "";
                 return true;
 
+            case "locsql":
+                final Location lsqlatom = player.getLocation();
+                player.getPacketDispatch().sendMessage("Absolute: " + lsqlatom);
+                String locql = "{" + lsqlatom.getX() + "," + lsqlatom.getY() + "," + lsqlatom.getZ() + ",0,0}";
+                stringSelection = new StringSelection(locql);
+                clpbrd = Toolkit.getDefaultToolkit().getSystemClipboard();
+                clpbrd.setContents(stringSelection, null);
+                return true;
+
             // Get item by name
             case "itemn":
                 if (args.length < 2) {
