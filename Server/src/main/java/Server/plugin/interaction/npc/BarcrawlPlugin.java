@@ -211,7 +211,7 @@ public final class BarcrawlPlugin extends OptionHandler {
 				}
 			}
 		},
-		RUSTY_ANCHOR_INN(734, 8, "Black Skull Ale", new String[] { "Ok one Black Skull Ale coming up, 8 coins please." }) {
+		RUSTY_ANCHOR_INN(734, 8, "Black Skull Ale", new String[] { "Okay, one Black Skull Ale coming up. Eight coins, please." }) {
 			@Override
 			public void effect(final Player player) {
 				player.sendChat("Hiccup!");

@@ -72,7 +72,7 @@ public final class DoorPerilDialogue extends DialoguePlugin {
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogue("(Psst... Hey... Who's Roald? Who's drezel?)(Uh... isn't Drezel that", "dude upstairs? Oh, wait, Roald's the King of Varrock right?)(He is???", "Aw man... Hey, you deal with this okay?) He's just coming! Wait a", "second!Hello, my name is Drevil. (Drezel!) I mean Drezel.");
+			interpreter.sendDialogue("(Psst... Hey... Who's Roald? Who's Drezel?)(Uh... isn't Drezel that", "dude upstairs? Oh, wait, Roald's the King of Varrock right?)(He is???", "Aw man... Hey, you deal with this okay?) He's just coming! Wait a", "second!Hello, my name is Drevil. (Drezel!) I mean Drezel.");
 			stage = 3;
 			break;
 		case 3:
@@ -96,7 +96,7 @@ public final class DoorPerilDialogue extends DialoguePlugin {
 			stage = 8;
 			break;
 		case 8:
-			interpreter.sendDialogue("HAHAHAHA! Really? Thanks buddy! You see that mausoleum out", "there? There's a horrible big dog underneath it that I'd like you to", "kill for me! It's been really bugging me! Braking all the time and", "stuff! Please kill it for me buddy!");
+			interpreter.sendDialogue("HAHAHAHA! Really? Thanks buddy! You see that mausoleum out", "there? There's a horrible big dog underneath it that I'd like you to", "kill for me! It's been really bugging me! Barking all the time and", "stuff! Please kill it for me buddy!");
 			stage = 9;
 			break;
 		case 9:

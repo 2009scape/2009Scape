@@ -520,7 +520,7 @@ public final class DemonSlayerCutscene extends CutscenePlugin {
 							PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.ROTATION, player.getLocation().getX() + 30, player.getLocation().getY() - 55, 390, 1, 100));
 							player.getConfigManager().set(222, 14194946, true);
 							ObjectBuilder.replace(cutscene.stoneTable, cutscene.stoneTable.transform(17438));
-							npc("Ha ha ha! At last you are free, my demonic brother!", "Rest now, and then have your revenge on this pitful", "city!");
+							npc("Ha ha ha! At last you are free, my demonic brother!", "Rest now, and then have your revenge on this pitiful", "city!");
 							stage = 2;
 							return true;
 						}

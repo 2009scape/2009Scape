@@ -401,7 +401,7 @@ public class RatBurgissDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 6:
-				npc("I am not really a trader. I am the Commander of", "the Varrock Palace Secret Guard VPSG for short.");
+				npc("I am not really a trader. I am the Commander of", "the Varrock Palace Secret Guard, VPSG for short.");
 				stage++;
 				break;
 			case 7:
@@ -445,7 +445,7 @@ public class RatBurgissDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 17:
-				npc("His name is Zaff. He runs a staff shop in Varrock. Go", "and speak to him and he will telly ou what you should", "do. I will send word to him to let him know that", "you are coming.");
+				npc("His name is Zaff. He runs a staff shop in Varrock. Go", "and speak to him and he will tell you what you should", "do. I will send word to him to let him know that", "you are coming.");
 				stage++;
 				break;
 			case 18:
