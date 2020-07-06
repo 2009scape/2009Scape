@@ -216,7 +216,7 @@ public final class ZaffPlugin extends OptionHandler {
 				stage++;
 				break;
 			case 82:
-				npc("I very must expect so. It may turn nasty, so be on your", "guard. I hope we can stop him before he can cast his", "spell!", "Make sure you have that ring I gave you.");
+				npc("I very much expect so. It may turn nasty, so be on your", "guard. I hope we can stop him before he can cast his", "spell!", "Make sure you have that ring I gave you.");
 				stage++;
 				break;
 			case 83:

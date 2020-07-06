@@ -323,7 +323,7 @@ public class DemonSlayer extends Quest {
 				stage = 611;
 				break;
 			case 611:
-				npc("Only because the king ordered him to! The king", "couldn't get Sir Prysin to part with his precious", "ancestral sword, but he made him lock it up so he", "couldn't loose it.");
+				npc("Only because the king ordered him to! The king", "couldn't get Sir Prysin to part with his precious", "ancestral sword, but he made him lock it up so he", "couldn't lose it.");
 				stage = 612;
 				break;
 			case 612:

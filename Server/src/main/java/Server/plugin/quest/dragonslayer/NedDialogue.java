@@ -418,7 +418,7 @@ public final class NedDialogue extends DialoguePlugin {
 			stage = 46;
 			break;
 		case 50:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well... That's an interesting though. Yes, I think I", "could do something. Give me 3 balls of wool and I", "might be able to do it.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well... That's an interesting thought. Yes, I think I", "could do something. Give me 3 balls of wool and I", "might be able to do it.");
 			stage = 51;
 			break;
 		case 51:
@@ -456,7 +456,7 @@ public final class NedDialogue extends DialoguePlugin {
 					GroundItemManager.create(WIG, player);
 				}
 			}
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Here you go, how's that for a quick effort?", "Not nad I think!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Here you go, how's that for a quick effort?", "Not bad I think!");
 			stage = 56;
 			break;
 		case 56:
