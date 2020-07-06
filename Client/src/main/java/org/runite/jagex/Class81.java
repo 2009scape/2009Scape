@@ -77,31 +77,31 @@ final class Class81 {
 
                int var5;
                for(var5 = 0; ~Class3_Sub28_Sub5.anInt3591 < ~var5; ++var5) {
-                  if(Class114.aLongArray1574[var5] == var1) {
-                     Class3_Sub30_Sub1.sendMessage(Class3_Sub28_Sub14.aClass94_3672, 0, RenderAnimationDefinition.method903(new RSString[]{var4, Class3_Sub13_Sub25.aClass94_3311}, (byte)-108), -1);
+                  if(Class114.ignores[var5] == var1) {
+                     Class3_Sub30_Sub1.addChatMessage(Class3_Sub28_Sub14.aClass94_3672, 0, RenderAnimationDefinition.method903(new RSString[]{var4, Class3_Sub13_Sub25.aClass94_3311}, (byte)-108), -1);
                      return;
                   }
                }
 
                for(var5 = 0; Class8.anInt104 > var5; ++var5) {
                   if(~Class50.aLongArray826[var5] == ~var1) {
-                     Class3_Sub30_Sub1.sendMessage(Class3_Sub28_Sub14.aClass94_3672, 0, RenderAnimationDefinition.method903(new RSString[]{Class38.aClass94_666, var4, Class3_Sub28_Sub10_Sub2.aClass94_4071}, (byte)-65), -1);
+                     Class3_Sub30_Sub1.addChatMessage(Class3_Sub28_Sub14.aClass94_3672, 0, RenderAnimationDefinition.method903(new RSString[]{Class38.aClass94_666, var4, Class3_Sub28_Sub10_Sub2.aClass94_4071}, (byte)-65), -1);
                      return;
                   }
                }
 
                if(var4.method1528((byte)-42, Class102.player.displayName)) {
-                  Class3_Sub30_Sub1.sendMessage(Class3_Sub28_Sub14.aClass94_3672, 0, Class95.aClass94_1335, -1);
+                  Class3_Sub30_Sub1.addChatMessage(Class3_Sub28_Sub14.aClass94_3672, 0, Class95.aClass94_1335, -1);
                } else {
                   ++Class3_Sub13_Sub22.anInt3267;
-                  Class114.aLongArray1574[Class3_Sub28_Sub5.anInt3591] = var1;
+                  Class114.ignores[Class3_Sub28_Sub5.anInt3591] = var1;
                   Class3_Sub13_Sub27.aClass94Array3341[Class3_Sub28_Sub5.anInt3591++] = Class41.method1052(-29664, var1);
                   Class110.anInt1472 = Class3_Sub13_Sub17.anInt3213;
                   Class3_Sub13_Sub1.outgoingBuffer.putOpcode(34);
                   Class3_Sub13_Sub1.outgoingBuffer.putLong(var1, -2037491440);
                }
             } else {
-               Class3_Sub30_Sub1.sendMessage(Class3_Sub28_Sub14.aClass94_3672, 0, Class144.aClass94_1884, -1);
+               Class3_Sub30_Sub1.addChatMessage(Class3_Sub28_Sub14.aClass94_3672, 0, Class144.aClass94_1884, -1);
             }
          }
       } catch (RuntimeException var6) {

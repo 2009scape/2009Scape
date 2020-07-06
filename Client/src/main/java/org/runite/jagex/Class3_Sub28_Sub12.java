@@ -76,32 +76,28 @@ public final class Class3_Sub28_Sub12 extends Node {
     * Sends a default chatbox game message.
     */
    static final void sendMessage(String str){
-	   sendGameMessage(-1, 11, RSString.createRSString(str), RSString.createRSString(""), (byte) 50, RSString.createRSString(""));
+	   sendGameMessage(-1, 11, RSString.createRSString(str), RSString.createRSString(""), RSString.createRSString(""));
    }
 
-   static final void sendGameMessage(int var0, int var1, RSString message, RSString var3, byte var4, RSString var5) {
+   static final void sendGameMessage(int var0, int type, RSString message, RSString var3, RSString var5) {
       try {
-         if(var4 != 50) {
-            aShortArrayArray3654 = (short[][])((short[][])null);
-         }
-
-         for(int var6 = 99; var6 > 0; --var6) {
-            Class3_Sub13_Sub6.anIntArray3082[var6] = Class3_Sub13_Sub6.anIntArray3082[var6 - 1];
-            Class3_Sub13_Sub19.aClass94Array3226[var6] = Class3_Sub13_Sub19.aClass94Array3226[var6 - 1];
-            Class3_Sub29.aClass94Array2580[var6] = Class3_Sub29.aClass94Array2580[-1 + var6];
-            Class163_Sub3.aClass94Array3003[var6] = Class163_Sub3.aClass94Array3003[var6 + -1];
-            GameObject.anIntArray1835[var6] = GameObject.anIntArray1835[var6 - 1];
+         for(int i = 99; i > 0; --i) {
+            Class3_Sub13_Sub6.anIntArray3082[i] = Class3_Sub13_Sub6.anIntArray3082[i - 1];
+            Class3_Sub13_Sub19.aClass94Array3226[i] = Class3_Sub13_Sub19.aClass94Array3226[i - 1];
+            Class3_Sub29.aClass94Array2580[i] = Class3_Sub29.aClass94Array2580[-1 + i];
+            Class163_Sub3.aClass94Array3003[i] = Class163_Sub3.aClass94Array3003[i + -1];
+            GameObject.anIntArray1835[i] = GameObject.anIntArray1835[i - 1];
          }
 
          ++Class3_Sub13_Sub9.anInt3114;
-         Class3_Sub13_Sub6.anIntArray3082[0] = var1;
+         Class3_Sub13_Sub6.anIntArray3082[0] = type;
          Class3_Sub13_Sub19.aClass94Array3226[0] = var5;
          Class24.anInt472 = Class3_Sub13_Sub17.anInt3213;
          GameObject.anIntArray1835[0] = var0;
          Class3_Sub29.aClass94Array2580[0] = message;
          Class163_Sub3.aClass94Array3003[0] = var3;
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "md.D(" + var0 + ',' + var1 + ',' + (message != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ')');
+         throw Class44.method1067(var7, "md.D(" + var0 + ',' + type + ',' + (message != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (byte) 50 + ',' + (var5 != null?"{...}":"null") + ')');
       }
    }
 

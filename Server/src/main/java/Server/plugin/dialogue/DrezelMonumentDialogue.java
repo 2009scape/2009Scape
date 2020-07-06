@@ -52,7 +52,7 @@ public final class DrezelMonumentDialogue extends DialoguePlugin {
 		}
 		if (quest.getStage(player) == 18) {
 			if (player.getInventory().contains(1436, 1) || player.getInventory().contains(7936, 1)) {
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I bought you some Rune Essence.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I brought you some Rune Essence.");
 				stage = 100;
 			} else {
 				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "How many more essence do I need to bring you?");
@@ -166,7 +166,7 @@ public final class DrezelMonumentDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 900:
-			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Why, what's happend?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Why, what happened?");
 			stage = 901;
 			break;
 		case 901:
@@ -226,7 +226,7 @@ public final class DrezelMonumentDialogue extends DialoguePlugin {
 			stage = 915;
 			break;
 		case 915:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well I have no knowledge of these ores other than", "speculation and gossip, but if the things I hear are true", "around fifty should be sufficient for the task.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well, I have no knowledge of these ores other than", "speculation and gossip, but if the things I hear are true", "around fifty should be sufficient for the task.");
 			stage = 916;
 			break;
 		case 916:

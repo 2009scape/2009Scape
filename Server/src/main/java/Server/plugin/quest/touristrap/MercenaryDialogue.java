@@ -132,7 +132,7 @@ public final class MercenaryDialogue extends DialoguePlugin {
 				stage = 12;
 				break;
 			case 12:
-				npc("<col=08088A>-- The guard looks around nervously. --</col> You'd better", "go soon the Captain orders us to kill you.");
+				npc("<col=08088A>-- The guard looks around nervously. --</col> You'd better", "go soon before the Captain orders us to kill you.");
 				stage++;
 				break;
 			case 13:

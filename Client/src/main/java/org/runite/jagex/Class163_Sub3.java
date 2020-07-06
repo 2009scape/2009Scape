@@ -88,20 +88,20 @@ final class Class163_Sub3 extends Class163 {
                int var4;
                for(var4 = 0; Class8.anInt104 > var4; ++var4) {
                   if(~Class50.aLongArray826[var4] == ~var0) {
-                     Class3_Sub30_Sub1.sendMessage(Class3_Sub28_Sub14.aClass94_3672, 0, RenderAnimationDefinition.method903(new RSString[]{var3, Class3_Sub28_Sub11.aClass94_3645}, (byte)-93), -1);
+                     Class3_Sub30_Sub1.addChatMessage(Class3_Sub28_Sub14.aClass94_3672, 0, RenderAnimationDefinition.method903(new RSString[]{var3, Class3_Sub28_Sub11.aClass94_3645}, (byte)-93), -1);
                      return;
                   }
                }
 
                for(var4 = 0; ~Class3_Sub28_Sub5.anInt3591 < ~var4; ++var4) {
-                  if(~var0 == ~Class114.aLongArray1574[var4]) {
-                     Class3_Sub30_Sub1.sendMessage(Class3_Sub28_Sub14.aClass94_3672, 0, RenderAnimationDefinition.method903(new RSString[]{Class38.aClass94_662, var3, GameShell.aClass94_4}, (byte)-66), -1);
+                  if(~var0 == ~Class114.ignores[var4]) {
+                     Class3_Sub30_Sub1.addChatMessage(Class3_Sub28_Sub14.aClass94_3672, 0, RenderAnimationDefinition.method903(new RSString[]{Class38.aClass94_662, var3, GameShell.aClass94_4}, (byte)-66), -1);
                      return;
                   }
                }
 
                if(var3.method1528((byte)-42, Class102.player.displayName)) {
-                  Class3_Sub30_Sub1.sendMessage(Class3_Sub28_Sub14.aClass94_3672, 0, Class62.aClass94_957, -1);
+                  Class3_Sub30_Sub1.addChatMessage(Class3_Sub28_Sub14.aClass94_3672, 0, Class62.aClass94_957, -1);
                } else {
                   ++GraphicDefinition.anInt544;
                   Class70.aClass94Array1046[Class8.anInt104] = var3;
@@ -116,7 +116,7 @@ final class Class163_Sub3 extends Class163 {
                   Class3_Sub13_Sub1.outgoingBuffer.putLong(var0, var2 ^ 2037491381);
                }
             } else {
-               Class3_Sub30_Sub1.sendMessage(Class3_Sub28_Sub14.aClass94_3672, 0, Class163_Sub2_Sub1.aClass94_4024, -1);
+               Class3_Sub30_Sub1.addChatMessage(Class3_Sub28_Sub14.aClass94_3672, 0, Class163_Sub2_Sub1.aClass94_4024, -1);
             }
          }
       } catch (RuntimeException var5) {

@@ -745,7 +745,7 @@ final class RSString implements Interface3 {
       }
    }
 
-   final boolean method1550(byte var1, RSString var2) {
+   final boolean endsWith(byte var1, RSString var2) {
       try {
          if(var2.length > this.length) {
             return false;
@@ -768,7 +768,7 @@ final class RSString implements Interface3 {
       }
    }
 
-   final int method1551(RSString var1, int var2) {
+   final int indexOf(RSString var1, int var2) {
       try {
          return var2 <= 49?-20:this.method1566(var1, 0, -1);
       } catch (RuntimeException var4) {
