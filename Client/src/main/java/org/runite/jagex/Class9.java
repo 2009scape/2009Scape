@@ -169,7 +169,7 @@ final class Class9 {
          Class3_Sub22.aClass94_2526 = Class117.aClass94_1612;
          RenderAnimationDefinition.aClass94_361 = GraphicDefinition.aClass94_550;
          Class3_Sub13_Sub7.aClass94_3097 = Class3_Sub28_Sub12.aClass94_3650;
-         Class3_Sub6.aClass94_2285 = Class65.aClass94_988;
+         Class3_Sub6.suffixWishesToTradeWithYou = Class65.aClass94_988;
          Class3_Sub28_Sub2.aClass94_3544 = Class3_Sub13_Sub36.aClass94_3436;
          GameShell.aClass94_4 = ISAACCipher.aClass94_973;
          Class2.aClass94_62 = Class73.aClass94_1085;

@@ -10,11 +10,11 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 	static RSString aClass94_3807 = RSString.createRSString("m");
 
 
-	static final void sendMessage(RSString var0, int var1, RSString var2, int var3) {
+	static final void addChatMessage(RSString var0, int type, RSString message, int var3) {
 		try {
-			Class3_Sub28_Sub12.sendGameMessage(var3, var1, var2, (RSString)null, (byte)50, var0);
+			Class3_Sub28_Sub12.sendGameMessage(var3, type, message, (RSString)null, var0);
 		} catch (RuntimeException var5) {
-			throw Class44.method1067(var5, "i.W(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+			throw Class44.method1067(var5, "i.W(" + (var0 != null?"{...}":"null") + ',' + type + ',' + (message != null?"{...}":"null") + ',' + var3 + ')');
 		}
 	}
 
@@ -197,7 +197,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 				if(~var4 == -1007) {
 					var13 = Class7.getRSInterface((byte)119, var3);
 					if(null != var13 && ~var13.itemIds[var2] <= -100001) {
-						sendMessage(Class3_Sub28_Sub14.aClass94_3672, 0, RenderAnimationDefinition.method903(new RSString[]{Class72.method1298((byte)9, var13.itemIds[var2]), Class3_Sub28_Sub19.aClass94_3777, Class38.getItemDefinition(var5, (byte)125).name}, (byte)-84), -1);
+						addChatMessage(Class3_Sub28_Sub14.aClass94_3672, 0, RenderAnimationDefinition.method903(new RSString[]{Class72.method1298((byte)9, var13.itemIds[var2]), Class3_Sub28_Sub19.aClass94_3777, Class38.getItemDefinition(var5, (byte)125).name}, (byte)-84), -1);
 					} else {
 						Class3_Sub13_Sub1.outgoingBuffer.putOpcode(92);
 						++Class130.anInt1701;
@@ -1011,7 +1011,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 	final void method811(byte var1, int var2, byte[] var3, int var4) {
 		try {
 			if(var1 < 16) {
-				sendMessage((RSString)null, 126, (RSString)null, -28);
+				addChatMessage((RSString)null, 126, (RSString)null, -28);
 			}
 
 			for(int var5 = 0; var5 < var4; ++var5) {

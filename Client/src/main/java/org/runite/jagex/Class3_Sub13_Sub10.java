@@ -99,12 +99,12 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
       try {
          if(0L != var0) {
             for(int var3 = var2; ~var3 > ~Class3_Sub28_Sub5.anInt3591; ++var3) {
-               if(Class114.aLongArray1574[var3] == var0) {
+               if(Class114.ignores[var3] == var0) {
                   ++Class137.anInt1781;
                   --Class3_Sub28_Sub5.anInt3591;
 
                   for(int var4 = var3; ~Class3_Sub28_Sub5.anInt3591 < ~var4; ++var4) {
-                     Class114.aLongArray1574[var4] = Class114.aLongArray1574[var4 + 1];
+                     Class114.ignores[var4] = Class114.ignores[var4 + 1];
                      Class3_Sub13_Sub27.aClass94Array3341[var4] = Class3_Sub13_Sub27.aClass94Array3341[1 + var4];
                   }
 

@@ -5,7 +5,7 @@ final class WorldListEntry extends Class44 {
    private static RSString aClass94_2619 = RSString.createRSString("Loaded update list");
    RSString activity;
    int worldId;
-   static int anInt2622 = 0;
+   static int inTutorialIsland = 0; // could be boolean
    static boolean aBoolean2623 = true;
    static RSString aClass94_2624 = aClass94_2619;
    RSString address;

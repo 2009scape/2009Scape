@@ -363,11 +363,11 @@ public final class DrezelDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 800:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Excellent work adventurer! I am free at las! Let me", "ensure that evil vampire is trapped for good. I will", "meet you down by the monument.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Excellent work adventurer! I am free at last! Let me", "ensure that evil vampire is trapped for good. I will", "meet you down by the monument.");
 			stage = 801;
 			break;
 		case 801:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Look for me down there, I need to asses what damage", "has been done to our holy barrier by those evil", "Zamorakians!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Look for me down there, I need to assess what damage", "has been done to our holy barrier by those evil", "Zamorakians!");
 			stage = 802;
 			break;
 		case 802:

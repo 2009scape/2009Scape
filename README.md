@@ -1,4 +1,4 @@
-# 2009Scape - The most complete Runescape Emulation server. Pull requests welcome!
+# 2009Scape - The most complete Runescape Emulation server. Pull requests welcome! ![Gameplay image](https://i.imgur.com/31b6KpU.png)
 
 Join our Discord server: https://discord.gg/43YPGND
 

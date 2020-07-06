@@ -369,7 +369,7 @@ final class HDToolKit {
          aBoolean1818 = gl.isExtensionAvailable("GL_ARB_vertex_program");
          aBoolean1802 = gl.isExtensionAvailable("GL_EXT_texture3D");
          RSString var13 = method1820(aString1786).method1534(-98);
-         if(var13.method1551(aClass94_1819, 57) != -1) {
+         if(var13.indexOf(aClass94_1819, 57) != -1) {
             int var6 = 0;
             RSString[] var7 = var13.method1565(32, 40, 47).method1567(32, (byte)-98);
 

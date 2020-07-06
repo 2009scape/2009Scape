@@ -275,7 +275,6 @@ public final class GameWorld {
 
         LandscapeParser.removeGameObject(new GameObject(356,new Location(2804,3428,0),10,1));
         LandscapeParser.addGameObject(new GameObject(356,new Location(2805,3427,0),10,1));
-
         NPC[] npcs = new NPC[]{new NPC(494, new Location(2327, 3687, 0))};
         Arrays.stream(npcs).forEach(npc -> npc.setDirection(Direction.EAST));
     }

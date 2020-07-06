@@ -117,7 +117,7 @@ final class Class3_Sub28_Sub3 extends Node {
 
          for(int var8 = var6; var8 < var7; ++var8) {
             Class3_Sub28_Sub4 var9 = Class3_Sub29.method733(12345678, var8);
-            if(var9.aBoolean3568 && var9.method554(-1).method1534(-98).method1551(var2, 112) != -1) {
+            if(var9.aBoolean3568 && var9.method554(-1).method1534(-98).indexOf(var2, 112) != -1) {
                if(var4 >= 50) {
                   Class62.anInt952 = -1;
                   Class99.aShortArray1398 = null;

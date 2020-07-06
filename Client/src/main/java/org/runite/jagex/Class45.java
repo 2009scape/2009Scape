@@ -33,7 +33,7 @@ final class Class45 {
 							var11 = true;
 						} else {
 							for(int var12 = 0; var12 < Class3_Sub28_Sub5.anInt3591; ++var12) {
-								if(Class114.aLongArray1574[var12] == var9) {
+								if(Class114.ignores[var12] == var9) {
 									var11 = true;
 									break;
 								}
@@ -41,7 +41,7 @@ final class Class45 {
 						}
 					}
 
-					if(!var11 && 0 == WorldListEntry.anInt2622) {
+					if(!var11 && 0 == WorldListEntry.inTutorialIsland) {
 						Class161.aClass3_Sub30_2030.index = 0;
 						GraphicDefinition.incomingBuffer.method774(2, var6, Class161.aClass3_Sub30_2030.buffer, 0);
 						Class161.aClass3_Sub30_2030.index = 0;
@@ -61,11 +61,11 @@ final class Class45 {
 						var3.textCycle = 150;
 						var3.textColor = var4 >> 8;
 						if (chatIcon == 2) {
-							Class3_Sub28_Sub12.sendGameMessage(var13, var8?17:1, message, (RSString)null, (byte)50, RenderAnimationDefinition.method903(new RSString[]{RSString.createRSString("<img=" + (chatIcon-1) + ">"), var3.getName(var2 + 79)}, (byte)-116));
+							Class3_Sub28_Sub12.sendGameMessage(var13, var8?17:1, message, (RSString)null, RenderAnimationDefinition.method903(new RSString[]{RSString.createRSString("<img=" + (chatIcon-1) + ">"), var3.getName(var2 + 79)}, (byte)-116));
 						} else if (chatIcon == 1) {
-							Class3_Sub28_Sub12.sendGameMessage(var13, var8?17:1, message, (RSString)null, (byte)50, RenderAnimationDefinition.method903(new RSString[]{Class32.aClass94_592, var3.getName(0)}, (byte)-127));
+							Class3_Sub28_Sub12.sendGameMessage(var13, var8?17:1, message, (RSString)null, RenderAnimationDefinition.method903(new RSString[]{Class32.aClass94_592, var3.getName(0)}, (byte)-127));
 						} else {
-							Class3_Sub28_Sub12.sendGameMessage(var13, var8?17:2, message, (RSString)null, (byte)50, var3.getName(0));
+							Class3_Sub28_Sub12.sendGameMessage(var13, var8?17:2, message, (RSString)null, var3.getName(0));
 						}
 					}
 				}
@@ -128,9 +128,9 @@ final class Class45 {
 				var3.textSpoken = GraphicDefinition.incomingBuffer.getString();
 				if(~var3.textSpoken.charAt(0, (byte)-45) == -127) {
 					var3.textSpoken = var3.textSpoken.method1556(1, (byte)-74);
-					Class3_Sub30_Sub1.sendMessage(var3.getName(0), 2, var3.textSpoken, var2 ^ 78);
+					Class3_Sub30_Sub1.addChatMessage(var3.getName(0), 2, var3.textSpoken, var2 ^ 78);
 				} else if(var3 == Class102.player) {
-					Class3_Sub30_Sub1.sendMessage(var3.getName(0), 2, var3.textSpoken, var2 + 78);
+					Class3_Sub30_Sub1.addChatMessage(var3.getName(0), 2, var3.textSpoken, var2 + 78);
 				}
 
 				var3.textEffect = 0;
