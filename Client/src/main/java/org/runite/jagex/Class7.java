@@ -14,7 +14,7 @@ final class Class7 implements Interface4 {
 
 
    static final void method831(int var0, String var1) {
-      System.out.println("Error: " + Class3_Sub28_Sub6.a("%0a", "\n", 105, var1));
+      System.out.println("Error in Class7: " + Class3_Sub28_Sub6.a("%0a", "\n", 105, var1));
       if(var0 < 33) {
          aClass94_2163 = (RSString)null;
       }

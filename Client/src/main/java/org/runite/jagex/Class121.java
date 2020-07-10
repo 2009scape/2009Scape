@@ -161,7 +161,6 @@ final class Class121 {
                }
 
                var2 = Class3_Sub15.aClass89_2429.readByte(var0 ^ 29984);
-               //System.out.println(var2); //Not sure what this was debugging
                if(WorldListEntry.aClass155_2627 != null) {
                   WorldListEntry.aClass155_2627.method2159(55);
                }

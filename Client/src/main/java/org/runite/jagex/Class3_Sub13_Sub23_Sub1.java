@@ -198,7 +198,6 @@ final class Class3_Sub13_Sub23_Sub1 extends Class3_Sub13_Sub23 {
          if(var0 != -1) {
             method285(-95, 48, true, (Component)null);
          }
-         //System.out.println("Class3_Sub13_Sub_23_Sub1 " + var2);
          return !Class75_Sub4.method1351(var3, var1, var2, -30901)?null:Class15.method891(var0 ^ 4);
       } catch (RuntimeException var5) {
          throw Class44.method1067(var5, "kd.F(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');

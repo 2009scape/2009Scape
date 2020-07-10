@@ -47,7 +47,6 @@ public class Client {
 			System.out.println("Can't find config file " + CONF_FILE + " defaulting to IP 127.0.0.1");
 			PUBLIC_IP_ADDRESS = "127.0.0.1";
 		}
-		System.out.println("Running liveserver client");
 		Configurations.LOCAL_SERVER = false;
 		Configurations.LOCAL_MS = false;
 		Configurations.MS_IP = Configurations.LOCAL_MS ? "127.0.0.1" : PUBLIC_IP_ADDRESS; //Needs to be done because of order it's otherwise set

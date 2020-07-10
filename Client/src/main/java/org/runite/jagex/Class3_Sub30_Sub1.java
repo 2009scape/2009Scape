@@ -892,10 +892,6 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 							RenderAnimationDefinition.aClass94_378 = RenderAnimationDefinition.method903(new RSString[]{
 									Class3_Sub13_Sub2.aClass94_3042, Class38.getItemDefinition(var5, (byte)109).name, Class3_Sub26.CONTEXT_MENU_COLOR
 							}, (byte)-113);
-							if(RenderAnimationDefinition.aClass94_378 == null) {
-								RenderAnimationDefinition.aClass94_378 = Class50.aClass94_829;
-//								System.out.println(Class38.getItemDefinition(var5, (byte)109).name);
-							}
 
 						}
 					}

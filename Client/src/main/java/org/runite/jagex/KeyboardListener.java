@@ -55,7 +55,6 @@ final class KeyboardListener implements KeyListener, FocusListener {
             }
             if(0 <= var2 && Class117.anIntArray1611.length > var2) {
                var2 = Class117.anIntArray1611[var2];
-               // System.out.println(var2);
                if(0 != (var2 & 128)) {
                   var2 = -1;
                }

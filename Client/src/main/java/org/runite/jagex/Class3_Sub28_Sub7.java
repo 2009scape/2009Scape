@@ -15,7 +15,6 @@ abstract class Class3_Sub28_Sub7 extends Node {
 
    static final Class3_Sub28_Sub16_Sub2 method562(CacheIndex var0, int var1, int var2, byte var3) {
       try {
-    	//  System.out.println("Class 3_Sub28_Sub16_Sub2 " + var2);
          return Class75_Sub4.method1351(var0, var1, var2, -30901)?(var3 != 39?(Class3_Sub28_Sub16_Sub2)null:Class3_Sub28_Sub9.method578(var3 ^ 84)):null;
       } catch (RuntimeException var5) {
          throw Class44.method1067(var5, "gf.O(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ')');
@@ -24,7 +23,7 @@ abstract class Class3_Sub28_Sub7 extends Node {
 
    public static void method563(int var0) {
       try {
-         anIntArrayArrayArray3605 = (int[][][])null;
+         anIntArrayArrayArray3605 = null;
          aClass94_3601 = null;
          anIntArray3607 = null;
          if(var0 != 3) {

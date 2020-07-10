@@ -381,17 +381,14 @@ public final class Client extends GameShell {
 
 			CS2Script.anInt2451 = ObjectDefinition.worldId;
 			Class3_Sub28_Sub7.method564(Class38.aClass87_665, 0);
-			System.out.println("port = " + Class53.anInt867);
-			System.out.println("Here: Config.MSIP = " + Configurations.MS_IP);
+			System.out.println("Connecting to Management server IP " + Configurations.MS_IP);
 			if(Class44.anInt718 != 0) {
 				if(Class44.anInt718 == 1) {
 					RuntimeException_Sub1.worldListHost = this.getCodeBase().getHost();
-					//System.out.println("port = " + Class53.anInt867);
 					Class53.anInt867 = ObjectDefinition.worldId + 50000;
 					Class3_Sub28_Sub19.anInt3773 = 40000 + ObjectDefinition.worldId;
 				} else if(Class44.anInt718 == 2) {
 					RuntimeException_Sub1.worldListHost = "127.0.0.1";
-					System.out.println("Setting worldListHost to 127.0.0.1, port = " + Class53.anInt867);
 					Class53.anInt867 = ObjectDefinition.worldId + '\uc350';
 					Class3_Sub28_Sub19.anInt3773 = ObjectDefinition.worldId + '\u9c40';
 				}

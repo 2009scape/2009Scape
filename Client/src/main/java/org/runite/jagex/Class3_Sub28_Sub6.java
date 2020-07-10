@@ -195,7 +195,6 @@ final class Class3_Sub28_Sub6 extends Node {
 
    static final void a(int var0, int var1, int var2, int var3, RSString var4, long var5, int var7, RSString name) {
       try {
-    	  System.out.println("Class3_Sub28_Sub6 " + var0 + ", " + var1 + ", " + var2 + ", " + var3 + ", " + var4 + ", " + var5 + ", " + var7);
          RSByteBuffer var8 = new RSByteBuffer(128);
          var8.putByte((byte)-101, 10);
          var8.putShort((int)(Math.random() * 99999.0D));

@@ -101,7 +101,6 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
                      Class3_Sub21.aClass155_2491.method2159(66);
                   }
                   response = Class3_Sub15.aClass89_2429.readByte(0);
-                  System.out.println("Response = " + response);
                   if(WorldListEntry.aClass155_2627 != null) {
                      WorldListEntry.aClass155_2627.method2159(64);
                   }

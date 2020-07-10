@@ -81,7 +81,6 @@ static RSString aClass94_1995 = aClass94_1998;
 
    static final Class3_Sub28_Sub16_Sub2[] method2176(int var0, int var1, int var2, CacheIndex var3) {
       try {
-    	  //System.out.println("Class 157 " + var2);
          if(Class75_Sub4.method1351(var3, var0, var2, -30901)) {
             if(var1 != 32767) {
                method2176(-111, 55, -18, (CacheIndex)null);

@@ -18,7 +18,7 @@ final class Class131 {
    static int[] anIntArray1729 = new int[]{12543016, 15504954, 15914854, 16773818};
    byte[] aByteArray1730;
    static RSString aClass94_1731 = aClass94_1717;
-static RSString aClass94_1722 = aClass94_1726;
+   static RSString aClass94_1722 = aClass94_1726;
 
    static final void addLocalPlayers(int var0) {
       try {
@@ -79,7 +79,7 @@ static RSString aClass94_1722 = aClass94_1726;
    final boolean method1787(int var1, byte var2) {
       try {
          if(var2 != -124) {
-            method1793((RSString)null, (RSString)null, -17, (byte)94);
+            method1793(null, null, -17, (byte)94);
          }
 
          return (this.aByteArray1730[var1] & 8) != 0;
@@ -118,7 +118,7 @@ static RSString aClass94_1722 = aClass94_1726;
    static final void method1790(int var0, int var1, int var2) {
       try {
          if(var2 < 90) {
-            aClass94_1731 = (RSString)null;
+            aClass94_1731 = null;
          }
 
          Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(4, 5, var0);

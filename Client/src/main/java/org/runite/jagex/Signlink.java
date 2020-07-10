@@ -201,7 +201,6 @@ public class Signlink implements Runnable {
                if(~aLong1221 < ~Class5.method830((byte)-55)) {
                   throw new IOException();
                }
-//               System.out.println("Roar " + (String)var1.anObject977 + ", port " + var1.anInt979);
                var1.anObject974 = new Socket(InetAddress.getByName((String)var1.anObject977), var1.anInt979);
             } else if(2 != var2) {
                if(-5 != ~var2) {

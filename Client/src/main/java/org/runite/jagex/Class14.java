@@ -13,9 +13,8 @@ final class Class14 {
    private static final LDIndexedSprite[] method885(boolean var0, int var1, CacheIndex var2, int var3) {
       try {
          if(!var0) {
-            aClass94_338 = (RSString)null;
+            aClass94_338 = null;
          }
-       //  System.out.println("Class 14 " + var1);
          return !Class75_Sub4.method1351(var2, var3, var1, -30901)?null:Class69.method1281(0);
       } catch (RuntimeException var5) {
          throw Class44.method1067(var5, "cg.C(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
@@ -25,7 +24,7 @@ final class Class14 {
    public static void method886(byte var0) {
       try {
          if(var0 < 26) {
-            aClass94_339 = (RSString)null;
+            aClass94_339 = null;
          }
 
          aClass94_338 = null;

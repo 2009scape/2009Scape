@@ -3924,7 +3924,7 @@ final class ItemDefinition {
 					boolean flag2 = 0 != Class140_Sub7.anIntArray2929[--k];
 					Class102.player.class52.method1159(flag2, true);
 				} catch (Exception e) {
-					System.out.println(e);
+					System.out.println("ItemDef exception: " + e);
 				}
 			} while (true);
 			throw new IllegalStateException();

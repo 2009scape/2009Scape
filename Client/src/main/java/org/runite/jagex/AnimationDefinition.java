@@ -57,14 +57,12 @@ final class AnimationDefinition {
 			if(var2 != -102) {
 				this.method2055((Model)null, (byte)88, 7, 103, 54);
 			}
-		//	System.out.print("Animation " + animId + " - parsed [");
+			//	System.out.print("Animation " + animId + " - parsed [");
 			while(true) {
 				int var3 = var1.getByte((byte)-46);
 				if(var3 == 0) {
-					//System.out.println("].");
 					return;
 				}
-				//System.out.print(var3 + ", ");
 				this.method2060(var3, (byte)-73, var1);
 			}
 		} catch (RuntimeException var4) {
