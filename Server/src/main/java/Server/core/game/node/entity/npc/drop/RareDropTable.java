@@ -1,23 +1,28 @@
 package core.game.node.entity.npc.drop;
 
-import core.cache.ServerStore;
-import core.game.node.item.ChanceItem;
 import core.game.node.item.Item;
+import core.game.node.item.WeightedChanceItem;
+import core.game.system.SystemLogger;
 import core.tools.RandomFunction;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.nio.ByteBuffer;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Handles the rare drop table.
- * @author Emperor
+ * @author Ceikry
  */
 public final class RareDropTable {
 
-	public static final String RDT_LOCATION = "./data/rare_drop_table.txt";
+	public static final String RDT_LOCATION = "data" + File.separator + "RDT.xml";
 
 	/**
 	 * The item id of the item representing the rare drop table slot in a drop
@@ -26,108 +31,65 @@ public final class RareDropTable {
 	public static final int SLOT_ITEM_ID = 31;
 
 	/**
-	 * The table rarity ratio.
-	 */
-	private static int tableRarityRatio;
-
-	/**
 	 * The rare drop table.
 	 */
-	private static final List<ChanceItem> TABLE = new ArrayList<>();
+	private static final List<WeightedChanceItem> TABLE = new ArrayList<>();
+
+
+	/**
+	 * Initialize needed objects for xml reading/writing
+	 */
+	static DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+	static DocumentBuilder builder;
+
+	static {
+		try {
+			builder = factory.newDocumentBuilder();
+		} catch (ParserConfigurationException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public RareDropTable() throws ParserConfigurationException {}
 
 	/**
 	 * Initializes the rare drop table.
 	 */
-	public static void init() {
+	public static void init(){
+		if(!new File(RDT_LOCATION).exists()){
+			SystemLogger.log("Can't locate RDT file at " + RDT_LOCATION);
+			return;
+		}
+		parse(RDT_LOCATION);
+	}
+
+	/**
+	 * Parses the xml file for the RDT.
+	 * @param file the .xml file containing the RDT.
+	 */
+	public static void parse(String file){
 		try {
-			BufferedReader br = new BufferedReader(new FileReader(RDT_LOCATION));
-			String s;
-			while ((s = br.readLine()) != null) {
-				if (s.contains(" //")) {
-					s = s.substring(0, s.indexOf(" //"));
+			Document doc = builder.parse(file);
+
+			NodeList itemNodes = doc.getElementsByTagName("item");
+			for(int i = 0; i < itemNodes.getLength(); i++){
+				Node itemNode = itemNodes.item(i);
+				if(itemNode.getNodeType() == Node.ELEMENT_NODE){
+					Element item = (Element) itemNode;
+					int itemId = Integer.parseInt(item.getAttribute("id"));
+					int minAmt = Integer.parseInt(item.getAttribute("minAmt"));
+					int maxAmt = Integer.parseInt(item.getAttribute("maxAmt"));
+					int weight = Integer.parseInt(item.getAttribute("weight"));
+
+					TABLE.add(new WeightedChanceItem(itemId,minAmt,maxAmt,weight));
 				}
-				String[] arg = s.replaceAll(", ", ";").split(";");
-				int id = Integer.parseInt(arg[0]);
-				int amount = 1;
-				int amount2 = amount;
-				//System.out.println("Rare drop table: " + id);
-				if (arg[2].contains("-")) {
-					String[] amt = arg[2].split("-");
-					amount = Integer.parseInt(amt[2]);
-					amount2 = Integer.parseInt(amt[1]);
-				} else {
-					amount = Integer.parseInt(arg[1]);
-				}
-				DropFrequency df = DropFrequency.RARE;
-				switch (arg[3].toLowerCase()) {
-				case "common":
-					df = DropFrequency.COMMON;
-					break;
-				case "uncommon":
-					df = DropFrequency.UNCOMMON;
-					break;
-				case "rare":
-					df = DropFrequency.RARE;
-					break;
-				case "very rare":
-					df = DropFrequency.VERY_RARE;
-					break;
-				}
-				TABLE.add(new ChanceItem(id, amount, amount2, 1000, 0.0, df));
 			}
-			br.close();
-		} catch (Throwable t) {
-			t.printStackTrace();
+		} catch (Exception e){
+			e.printStackTrace();
 		}
-		int slot = 0;
-		for (ChanceItem item : TABLE) {
-			int rarity = 1000 / item.getDropFrequency().ordinal();
-			item.setTableSlot(slot | ((slot += rarity) << 16));
-		}
-		tableRarityRatio = (int) (slot * 1.33);
 	}
 
-	/**
-	 * Parses the table.
-	 */
-	public static void parse() {
-		ByteBuffer buffer = ServerStore.getArchive("rare_drop_table");
-		int size = buffer.get();
-		for (int i = 0; i < size; i++) {
-			TABLE.add(new ChanceItem(buffer.getInt(), buffer.getInt(), buffer.getInt(), 1000, 0.0, DropFrequency.values()[buffer.get()]));
-		}
-		int slot = 0;
-		for (ChanceItem item : TABLE) {
-			int rarity = 1000 / item.getDropFrequency().ordinal();
-			if (item.getId() == 985 || item.getId() == 987) {
-				rarity = 9900;
-			}
-			item.setTableSlot(slot | ((slot += rarity) << 16));
-		}
-		tableRarityRatio = (int) (slot);
-	}
-
-	/**
-	 * Writes the table to the buffer.
-	 */
-	public static void write() {
-		final ByteBuffer buffer = ByteBuffer.allocate(100000);
-		buffer.put((byte) TABLE.size());
-		for (ChanceItem item : TABLE) {
-			buffer.putInt(item.getId());
-			buffer.putInt(item.getMinimumAmount());
-			buffer.putInt(item.getMaximumAmount());
-			buffer.put((byte) item.getDropFrequency().ordinal());
-		}
-		buffer.flip();
-		ServerStore.setArchive("rare_drop_table", buffer, false);
-	}
-
-	/**
-	 * Retrieves a drop from the rare drop table.
-	 * @return The chance item to drop (<b>can be null!</b>).
-	 */
-	public static Item retrieve() {
-		return RandomFunction.rollChanceTable(true,TABLE).get(0);
+	public static Item retrieve(){
+		return RandomFunction.rollWeightedChanceTable(TABLE);
 	}
 }

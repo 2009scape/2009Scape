@@ -276,7 +276,7 @@ public final class CharacterDesign {
 			changeColor(player, 0, HAIR_COLORS, 100, RandomFunction.random(100, 124));
 			changeColor(player, 4, SKIN_COLORS, 158, RandomFunction.random(158, 151));
 		} else {
-			for (int i = 2; i < player.getAppearance().getAppearanceCache().length; i++) {
+			for (int i = 0; i < player.getAppearance().getAppearanceCache().length; i++) {
 				changeLook(player, i, RandomFunction.random(2) == 1);
 			}
 			changeColor(player, 2, TORSO_COLORS, 189, RandomFunction.random(189, 217));

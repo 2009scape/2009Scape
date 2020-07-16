@@ -2,6 +2,7 @@ package plugin.ame;
 
 import core.cache.misc.buffer.ByteBufferUtils;
 import core.game.system.SystemLogger;
+import core.game.world.map.zone.impl.WildernessZone;
 import plugin.skill.Skills;
 import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
@@ -120,7 +121,7 @@ public final class AntiMacroHandler implements SavingModule {
 		if (GameWorld.getTicks() < nextPulse) {
 			return;
 		}
-		if (!player.getLocks().isInteractionLocked() && !player.getLocks().isTeleportLocked() && !player.getLocks().isMovementLocked()) {
+		if (!player.getLocks().isInteractionLocked() && !player.getLocks().isTeleportLocked() && !player.getLocks().isMovementLocked() && !isDisabled) {
 			int roll = RandomFunction.random(0,CHANCE);
 			int neededRoll = 1 + (CHANCE - RandomFunction.random(CHANCE - 10));
 			boolean spawnEvent = roll ==  neededRoll; //checks if the chance is hit this tick
@@ -146,8 +147,10 @@ public final class AntiMacroHandler implements SavingModule {
 	 * Initializes the anti macro event handler.
 	 */
 	public void init() {
+		isDisabled = player.getAttribute("randoms:disabled",false);
 		if(isDisabled){
 			nextPulse = -1;
+			return;
 		} else {
 			nextPulse = GameWorld.getTicks() + DELAY;
 		}
@@ -200,6 +203,9 @@ public final class AntiMacroHandler implements SavingModule {
 	 */
 	public boolean fireEvent(String name, Object... args) {
 		nextPulse = GameWorld.getTicks() + DELAY;
+		if(WildernessZone.isInZone(player)){
+			return false;
+		}
 		if (hasEvent() || player.getZoneMonitor().isRestricted(ZoneRestriction.RANDOM_EVENTS) || player.isArtificial()) {
 			return false;
 		}

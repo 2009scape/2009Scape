@@ -64,8 +64,8 @@ public final class SystemTermination {
 		if (!file.isDirectory()) {
 			file.mkdir();
 		}
-		GrandExchangeDatabase.dump(directory);
-		GEOfferDispatch.dump(directory);
+		GrandExchangeDatabase.save(directory + File.separator + "eco" + File.separator);
+		GEOfferDispatch.dump();
 		SystemLogger.log("[SystemTerminator] Saved Grand Exchange databases!");
 		Repository.getDisconnectionQueue().clear();
 		for (Iterator<Player> it = Repository.getPlayers().iterator(); it.hasNext();) {

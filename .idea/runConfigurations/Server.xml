@@ -2,6 +2,7 @@
   <configuration default="false" name="Server" type="Application" factoryName="Application" singleton="false">
     <option name="MAIN_CLASS_NAME" value="core.Server" />
     <module name="RS-2009" />
+    <option name="PROGRAM_PARAMETERS" value="worldprops/server1.xml" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Server" />
     <method v="2">
       <option name="Make" enabled="true" />

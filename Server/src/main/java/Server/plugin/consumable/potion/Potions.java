@@ -56,7 +56,8 @@ public enum Potions {
     FISH_MIX(new int[]{11477,11479},new MultiEffect(new IncrementSkillEffect(Skills.FISHING,3,0),new HealingEffect(6))),
     SUPER_ENERGY_MIX(new int[]{11481,11483},new MultiEffect(new EnergyEffect(20),new HealingEffect(6))),
     HUNTING_MIX(new int[]{11517,11519},new MultiEffect(new IncrementSkillEffect(Skills.HUNTER,3,0),new HealingEffect(6))),
-    SUPER_STR_MIX(new int[]{11485,11487},new MultiEffect(new IncrementSkillEffect(Skills.STRENGTH,5,0.15),new HealingEffect(6)));
+    SUPER_STR_MIX(new int[]{11485,11487},new MultiEffect(new IncrementSkillEffect(Skills.STRENGTH,5,0.15),new HealingEffect(6))),
+    SUPER_ENERGY(new int[]{3016,3018,3020,3022},new EnergyEffect(-1) );
 
     public static HashMap<Integer, Potions> potMap = new HashMap<>();
     static{

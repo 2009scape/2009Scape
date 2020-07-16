@@ -296,8 +296,8 @@ public final class HansDialoguePlugin extends DialoguePlugin {
 				switch(buttonId){
 					case 1:
 						npc("Voila, you should now get random events!");
-						player.getGlobalData().setMacroDisabled(false);
 						player.getAntiMacroHandler().isDisabled = false;
+						player.setAttribute("randoms:disabled",false);
 						player.getAntiMacroHandler().init();
 						stage = 131;
 						break;
@@ -314,8 +314,8 @@ public final class HansDialoguePlugin extends DialoguePlugin {
 				switch(buttonId){
 					case 1:
 						npc("Voila, you shouldn't get random events now!");
-						player.getGlobalData().setMacroDisabled(true);
 						player.getAntiMacroHandler().isDisabled = true;
+						player.setAttribute("/save:randoms:disabled",true);
 						stage = 131;
 						break;
 					case 2:

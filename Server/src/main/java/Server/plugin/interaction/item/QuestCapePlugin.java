@@ -14,7 +14,7 @@ import core.plugin.Plugin;
  */
 @InitializablePlugin
 public final class QuestCapePlugin extends OptionHandler {
-	final int MAX_QP = 67;
+	final int MAX_QP = 72;
 
 	@Override
 	public Plugin<Object> newInstance(Object arg) throws Throwable {

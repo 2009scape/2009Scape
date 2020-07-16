@@ -1,5 +1,7 @@
 package org.runite.jagex;
 import javax.media.opengl.GL;
+
+import org.runite.Configurations;
 import org.runite.GameLaunch;
 
 final class Class104 implements Interface5 {
@@ -56,7 +58,7 @@ final class Class104 implements Interface5 {
             } else {
                GameLaunch.SETTINGS.setIp(var2.address.toString());
                byte[] var3 = var2.address.method1568(0);
-               Class38_Sub1.accRegistryIp = new String(var3, 0, var3.length);
+               Class38_Sub1.accRegistryIp = Configurations.MS_IP;
                CS2Script.anInt2451 = var2.worldId;
                if(-1 != ~Class44.anInt718) {
                   Class162.anInt2036 = '\u9c40' + CS2Script.anInt2451;

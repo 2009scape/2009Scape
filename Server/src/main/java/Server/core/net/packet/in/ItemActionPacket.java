@@ -52,6 +52,10 @@ public class ItemActionPacket implements IncomingPacket {
 				return;
 			}
 			event = new NodeUsageEvent(player, interfaceId, item, npc);
+			if(QuestInteractionManager.handle(player,event)){
+				return;
+			}
+			event = new NodeUsageEvent(player, interfaceId, item, npc);
 			UseWithHandler.run(event);
 			return;
 		case 248: // Item on Player
@@ -62,6 +66,10 @@ public class ItemActionPacket implements IncomingPacket {
 			Player target = Repository.getPlayers().get(playerIndex);
 			item = player.getInventory().get(slotId);
 			if (target == null || item == null || item.getId() != itemId) {
+				return;
+			}
+			event = new NodeUsageEvent(player, interfaceId, item, target);
+			if(QuestInteractionManager.handle(player,event)){
 				return;
 			}
 			event = new NodeUsageEvent(player, interfaceId, item, target);
@@ -87,6 +95,10 @@ public class ItemActionPacket implements IncomingPacket {
 				item = used;
 				used = with;
 				with = item;
+			}
+			event = new NodeUsageEvent(player, interfaceId1, used, with);
+			if(QuestInteractionManager.handle(player,event)){
+				return;
 			}
 			event = new NodeUsageEvent(player, interfaceId1, used, with);
 			UseWithHandler.run(event);

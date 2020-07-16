@@ -417,7 +417,7 @@ public final class Client extends GameShell {
 
 			WorldListCountry.anInt506 = Class53.anInt867;
 			Class162.anInt2036 = Class3_Sub28_Sub19.anInt3773;
-			Class38_Sub1.accRegistryIp = RuntimeException_Sub1.worldListHost;
+			Class38_Sub1.accRegistryIp = Configurations.MS_IP;
 			Class123.anInt1658 = Class3_Sub28_Sub19.anInt3773;
 			Class3_Sub13_Sub38.aShortArray3455 = Class3_Sub13_Sub9.aShortArray3110 = Class136.aShortArray1779 = Class3_Sub13_Sub38.aShortArray3453 = new short[256];
 			if(var1 != 2) {

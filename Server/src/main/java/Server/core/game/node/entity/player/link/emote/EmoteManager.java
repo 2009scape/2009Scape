@@ -103,12 +103,10 @@ public class EmoteManager implements SavingModule {
 		if (isUnlocked(Emotes.BUNNY_HOP)) {
 			value2 += 128;
 		}
-		if (isUnlocked(Emotes.SKILLCAPE) || player.getSkills().getMasteredSkills() > 0) {
-			if (player.getSkills().getMasteredSkills() > 0 && !isUnlocked(Emotes.SKILLCAPE)) {
-				unlock(Emotes.SKILLCAPE);
-			}
-			value2 += 256;
+		if (!isUnlocked(Emotes.SKILLCAPE)) {
+			unlock(Emotes.SKILLCAPE);
 		}
+		value2 += 256;
 		if (isUnlocked(Emotes.SNOWMAN_DANCE)) {
 			value2 += 512;
 		}

@@ -8,7 +8,7 @@ import core.game.interaction.SpecialGroundItems;
 import core.game.node.Node;
 import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
-import core.game.node.entity.player.ai.AIPlayer;
+import plugin.ai.AIPlayer;
 import core.game.node.item.GroundItem;
 import core.game.node.item.GroundItemManager;
 import core.game.node.object.GameObject;

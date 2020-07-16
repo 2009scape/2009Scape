@@ -4,6 +4,8 @@ import core.game.system.mysql.SQLManager;
 import core.game.world.map.Location;
 import core.tools.mysql.Database;
 
+import java.io.File;
+
 /**
  * A class holding constants of the server.
  * @author Emperor
@@ -26,6 +28,8 @@ public final class ServerConstants {
 	 * The player account path.
 	 */
 	public static final String PLAYER_SAVE_PATH = "data/players/";
+
+	public static final String PLAYER_ATTRIBUTE_PATH = "data" + File.separator + "players" + File.separator + "attributes" + File.separator;
 
 	/**
 	 * The maximum amount of players.

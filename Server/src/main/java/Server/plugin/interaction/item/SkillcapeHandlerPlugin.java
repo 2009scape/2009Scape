@@ -29,7 +29,7 @@ public class SkillcapeHandlerPlugin extends OptionHandler {
 	/**
 	 * The skillcapes you can operate.
 	 */
-	public static final int[] SKILLCAPES = new int[] { 9948, 9949, 9750, 9751, 9780, 9781, 9774, 9775, 9783, 9784, 9762, 9763 };
+	public static final int[] SKILLCAPES = new int[] { 9948, 9949, 9750, 9751, 9780, 9781, 9774, 9775, 9783, 9784, 9762, 9763, 9813 };
 
 	@Override
 	public Plugin<Object> newInstance(Object arg) throws Throwable {

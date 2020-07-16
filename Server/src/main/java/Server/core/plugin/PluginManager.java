@@ -10,6 +10,7 @@ import core.game.system.SystemLogger;
 import org.reflections.Reflections;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
 
@@ -18,6 +19,8 @@ import java.util.Set;
  * @author Emperor
  */
 public final class PluginManager {
+
+	public static HashMap<String,Boolean> disabledPlugins = new HashMap<>();
 
 	/**
 	 * The amount of plugins loaded.
@@ -86,6 +89,10 @@ public final class PluginManager {
 			PluginManifest manifest = plugin.getClass().getAnnotation(PluginManifest.class);
 			if (manifest == null) {
 				manifest = plugin.getClass().getSuperclass().getAnnotation(PluginManifest.class);
+			} else {
+				if(disabledPlugins.get(manifest.name()) != null){
+					return;
+				}
 			}
 			if (manifest == null || manifest.type() == PluginType.ACTION) {
 				plugin.newInstance(null);

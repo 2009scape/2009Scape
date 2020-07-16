@@ -6,7 +6,7 @@ import core.game.component.ComponentPlugin;
 import core.game.interaction.Option;
 import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
-import core.game.node.entity.player.ai.AIPBuilder;
+import plugin.ai.AIPBuilder;
 import core.game.node.item.Item;
 import core.game.node.object.GameObject;
 import core.game.world.GameWorld;

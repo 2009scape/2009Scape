@@ -1,5 +1,6 @@
 package core.game.node.entity.player.info.login;
 
+import core.ServerConstants;
 import core.game.node.entity.combat.CombatSpell;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.SpellBookManager;
@@ -26,7 +27,10 @@ public final class PlayerParser {
 	 */
 	@SuppressWarnings("deprecation")
 	public static void parse(Player player) {
-		final File file = new File(("data/players/" + player.getName() + ".save"));
+		player.getGameAttributes().parse(player.getName() + ".xml");
+		final File file = new File((ServerConstants.PLAYER_SAVE_PATH + player.getName() + ".save"));
+
+
 		if (!file.exists()) {
 			dump(player);
 		}
@@ -66,7 +70,6 @@ public final class PlayerParser {
 						}
 						break;
 					case 10:
-						player.getGameAttributes().parse(buffer);
 						break;
 					case 14:
 						player.getSlayer().parse(buffer);
@@ -215,9 +218,8 @@ public final class PlayerParser {
 		player.getSettings().save(buffer.put((byte) 6));
 
 		// Attributes
-		if (!player.getGameAttributes().getSavedAttributes().isEmpty()) {
-			player.getGameAttributes().dump(buffer.put((byte) 10));
-		}
+		player.getGameAttributes().dump(player.getName() + ".xml");
+
 		// Slayer
 		player.getSlayer().save(buffer.put((byte) 14));
 

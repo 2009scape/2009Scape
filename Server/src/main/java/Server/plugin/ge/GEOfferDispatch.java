@@ -3,13 +3,22 @@ package plugin.ge;
 import core.game.content.eco.EcoStatus;
 import core.game.content.eco.EconomyManagement;
 import core.game.node.entity.player.Player;
+import core.game.node.entity.player.info.PlayerDetails;
 import core.game.node.entity.player.link.audio.Audio;
 import core.game.node.item.Item;
 import core.game.system.task.Pulse;
 import core.game.system.task.TaskExecutor;
 import core.game.world.GameWorld;
 import core.game.world.callback.CallBack;
+import org.w3c.dom.*;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
@@ -20,6 +29,7 @@ import java.util.Map;
 
 /**
  * Handles the Grand Exchange offers.
+ * @author Ceikry
  * @author Emperor
  */
 public final class GEOfferDispatch extends Pulse implements CallBack {
@@ -32,7 +42,7 @@ public final class GEOfferDispatch extends Pulse implements CallBack {
 	/**
 	 * The database path.
 	 */
-	private static final String DB_PATH = "eco/offer_dispatch_db.emp";
+	private static final String DB_PATH = "data" + File.separator + "eco" + File.separator + "offer_dispatch.xml";
 
 	/**
 	 * The offset of the offer UIDs.
@@ -53,84 +63,155 @@ public final class GEOfferDispatch extends Pulse implements CallBack {
 	 * Initializes the Grand Exchange.
 	 */
 	public static void init() {
-		File file = new File("data/" + DB_PATH);
-		if (!file.exists()) {
-			System.err.println("[GEOfferDispatch]: Could not locate database! [path=" + file.getAbsolutePath() + "]");
+		File file = new File(DB_PATH);
+		if(!file.exists()){
 			return;
 		}
-		try (RandomAccessFile raf = new RandomAccessFile(file, "rw"); FileChannel c = raf.getChannel()) {
-			ByteBuffer b = c.map(MapMode.READ_WRITE, 0, c.size());
-			offsetUID = b.getLong();
-			long uid;
-			while ((uid = b.getLong()) != 0) {
-				int itemId = b.getShort();
-				boolean sale = b.get() == 1;
-				GrandExchangeOffer offer = new GrandExchangeOffer(itemId, sale);
-				offer.setUid(uid);
-				offer.setAmount(b.getInt());
-				offer.setCompletedAmount(b.getInt());
-				offer.setOfferedValue(b.getInt());
-				offer.setTimeStamp(b.getLong());
-				offer.setState(OfferState.values()[b.get()]);
-				offer.setTotalCoinExchange(b.getInt());
-				offer.setPlayerUID(b.getInt());
-				int idx = -1;
-				while ((idx = b.get()) != -1) {
-					offer.getWithdraw()[idx] = new Item(b.getShort(), b.getInt());
+		try {
+			DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder builder = documentBuilderFactory.newDocumentBuilder();
+			Document doc = builder.parse(file);
+
+			doc.getDocumentElement().normalize();
+
+			offsetUID = Long.parseLong(doc.getElementsByTagName("offsetUID").item(0).getTextContent());
+
+			NodeList offers = doc.getElementsByTagName("offer");
+			for(int i = 0; i < offers.getLength(); i++){
+				Node offer = offers.item(i);
+				if(offer.getNodeType() == Node.ELEMENT_NODE){
+					Element offerElement = (Element) offer;
+					long uid = Long.parseLong(offerElement.getElementsByTagName("uid").item(0).getTextContent());
+					int itemId = Integer.parseInt(offerElement.getElementsByTagName("itemId").item(0).getTextContent());
+					boolean sale = Boolean.parseBoolean(offerElement.getElementsByTagName("sale").item(0).getTextContent());
+					int amount = Integer.parseInt(offerElement.getElementsByTagName("amount").item(0).getTextContent());
+					int completedAmount = Integer.parseInt(offerElement.getElementsByTagName("completedAmount").item(0).getTextContent());
+					int offeredValue = Integer.parseInt(offerElement.getElementsByTagName("offeredValue").item(0).getTextContent());
+					long timeStamp = Long.parseLong(offerElement.getElementsByTagName("timeStamp").item(0).getTextContent());
+					int offerState = Integer.parseInt(offerElement.getElementsByTagName("offerState").item(0).getTextContent());
+					int totalCoinExchange = Integer.parseInt(offerElement.getElementsByTagName("totalCoinExchange").item(0).getTextContent());
+					int playerUID = Integer.parseInt(offerElement.getElementsByTagName("playerUID").item(0).getTextContent());
+
+					GrandExchangeOffer o = new GrandExchangeOffer(itemId,sale);
+					o.setUid(uid);
+					o.setAmount(amount);
+					o.setCompletedAmount(completedAmount);
+					o.setOfferedValue(offeredValue);
+					o.setTimeStamp(timeStamp);
+					o.setState(OfferState.values()[offerState]);
+					o.setTotalCoinExchange(totalCoinExchange);
+					o.setPlayerUID(playerUID);
+					NodeList withdrawItems = offerElement.getElementsByTagName("withdrawItem");
+					for(int j = 0; j < withdrawItems.getLength(); j++){
+						Node item = withdrawItems.item(i);
+						if(item.getNodeType() == Node.ELEMENT_NODE){
+							Element itemElement = (Element) item;
+							Item newItem = new Item(Integer.parseInt(itemElement.getAttribute("id")),Integer.parseInt(itemElement.getAttribute("amount")));
+							o.getWithdraw()[i] = newItem;
+						}
+					}
+					OFFER_MAPPING.put(uid,o);
 				}
-				OFFER_MAPPING.put(uid, offer);
 			}
-			raf.close();
-			c.close();
-		} catch (Throwable t) {
-			t.printStackTrace();
+
+		} catch (Exception e){
+			e.printStackTrace();
 		}
-		ResourceManager.init();
 	}
 
 	/**
 	 * Dumps the grand exchange offers.
 	 * @param directory The directory to save to.
 	 */
-	public static void dump(String directory) {
-		File file = new File(directory + DB_PATH);
-		ByteBuffer b = ByteBuffer.allocate(50_000_000);
-		b.putLong(offsetUID);
-		for (long uid : OFFER_MAPPING.keySet()) {
-			GrandExchangeOffer offer = OFFER_MAPPING.get(uid);
-			if (offer == null) {
-				continue;
-			}
-			b.putLong(uid);
-			b.putShort((short) offer.getItemId());
-			b.put((byte) (offer.isSell() ? 1 : 0));
-			b.putInt(offer.getAmount());
-			b.putInt(offer.getCompletedAmount());
-			b.putInt(offer.getOfferedValue());
-			b.putLong(offer.getTimeStamp());
-			b.put((byte) offer.getState().ordinal());
-			b.putInt(offer.getTotalCoinExchange());
-			b.putInt(offer.getPlayerUID());
-			for (int i = 0; i < 2; i++) {
-				Item item;
-				if ((item = offer.getWithdraw()[i]) != null) {
-					b.put((byte) i);
-					b.putShort((short) item.getId());
-					b.putInt(item.getAmount());
+	public static void dump() {
+		File file = new File(DB_PATH);
+
+		try{
+			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder builder = dbFactory.newDocumentBuilder();
+			Document doc = builder.newDocument();
+
+			Element root = doc.createElement("database");
+			doc.appendChild(root);
+
+			for(long uid : OFFER_MAPPING.keySet()){
+				GrandExchangeOffer o = OFFER_MAPPING.get(uid);
+				if(o == null){
+					continue;
+				}
+
+				Element offer = doc.createElement("offer");
+				root.appendChild(offer);
+
+				Element uidElement = doc.createElement("uid");
+				uidElement.setTextContent("" + uid);
+				offer.appendChild(uidElement);
+
+				Element itemId = doc.createElement("itemId");
+				itemId.setTextContent("" + o.getItemId());
+				offer.appendChild(itemId);
+
+				Element sale = doc.createElement("sale");
+				sale.setTextContent("" + o.isSell());
+				offer.appendChild(sale);
+
+				Element amount = doc.createElement("amount");
+				amount.setTextContent("" + o.getAmount());
+				offer.appendChild(amount);
+
+				Element completedAmount = doc.createElement("completedAmount");
+				completedAmount.setTextContent("" + o.getCompletedAmount());
+				offer.appendChild(completedAmount);
+
+				Element offeredValue = doc.createElement("offeredValue");
+				offeredValue.setTextContent("" + o.getOfferedValue());
+				offer.appendChild(offeredValue);
+
+				Element timeStamp = doc.createElement("timeStamp");
+				timeStamp.setTextContent("" + o.getTimeStamp());
+				offer.appendChild(timeStamp);
+
+				Element offerState = doc.createElement("offerState");
+				offerState.setTextContent("" + o.getState().ordinal());
+				offer.appendChild(offerState);
+
+				Element totalCoinExchange = doc.createElement("totalCoinExchange");
+				totalCoinExchange.setTextContent("" + o.getTotalCoinExchange());
+				offer.appendChild(totalCoinExchange);
+
+				Element playerUID = doc.createElement("playerUID");
+				playerUID.setTextContent("" + o.getPlayerUID());
+				offer.appendChild(playerUID);
+
+				Attr idAttr = doc.createAttribute("id");
+				Attr amtAttr = doc.createAttribute("amount");
+
+				for(int i = 0; i < o.getWithdraw().length; i++) {
+					Item item = o.getWithdraw()[i];
+					if(item == null){
+						continue;
+					}
+					Element withdrawItem = doc.createElement("withdrawItem");
+					idAttr.setValue("" + item.getId());
+					amtAttr.setValue("" + item.getAmount());
+					withdrawItem.setAttributeNode(idAttr);
+					withdrawItem.setAttributeNode(amtAttr);
+					offer.appendChild(withdrawItem);
 				}
 			}
-			b.put((byte) -1);
+			Element offsetUIDElement = doc.createElement("offsetUID");
+			offsetUIDElement.setTextContent("" + offsetUID);
+			root.appendChild(offsetUIDElement);
+			TransformerFactory factory = TransformerFactory.newInstance();
+			Transformer transformer = factory.newTransformer();
+			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+			transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
+			DOMSource source = new DOMSource(doc);
+			StreamResult result = new StreamResult(file);
+			transformer.transform(source,result);
+		} catch (Exception e){
+			e.printStackTrace();
 		}
-		b.putLong(0);
-		try (RandomAccessFile raf = new RandomAccessFile(file, "rw"); FileChannel c = raf.getChannel()) {
-			b.flip();
-			c.write(b);
-			raf.close();
-			c.close();
-		} catch (Throwable t) {
-			t.printStackTrace();
-		}
-		ResourceManager.dump(directory);
 	}
 
 	@Override
@@ -150,17 +231,6 @@ public final class GEOfferDispatch extends Pulse implements CallBack {
 				}
 			}
 			BuyingLimitation.clear();
-		}
-		if (dumpDatabase) {
-			TaskExecutor.execute(new Runnable() {
-				@Override
-				public void run() {
-					synchronized (GEOfferDispatch.this) {
-						dump("data/");
-					}
-				}
-			});
-			dumpDatabase = false;
 		}
 		return false;
 	}
@@ -213,7 +283,7 @@ public final class GEOfferDispatch extends Pulse implements CallBack {
 			}
 		}
 		if (offer.getState() != OfferState.COMPLETED) {
-			for (GrandExchangeOffer o : ResourceManager.getStock()) {
+			for (GrandExchangeOffer o : GEAutoStock.getStock()) {
 				if (o.isSell() != offer.isSell() && o.getItemId() == offer.getItemId() && o.isActive()) {
 					exchange(offer, o);
 					if (offer.getState() == OfferState.COMPLETED) {
@@ -285,10 +355,10 @@ public final class GEOfferDispatch extends Pulse implements CallBack {
 	 * @param coinDifference The difference in prices.
 	 */
 	private static void addCoinDifference(GrandExchangeOffer offer, GrandExchangeOffer o, int coinDifference, int amount) {
-		if (!offer.isSell()) {
-			offer.addWithdraw(995, coinDifference * amount);
-		} else {
+		if (offer.isSell()) {
 			o.addWithdraw(995, coinDifference * amount);
+		} else {
+			offer.addWithdraw(995, coinDifference * amount);
 		}
 	}
 

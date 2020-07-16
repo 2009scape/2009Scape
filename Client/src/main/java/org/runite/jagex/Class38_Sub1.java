@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import org.runite.Configurations;
+
 final class Class38_Sub1 extends Class38 {
 
    static int[][][] anIntArrayArrayArray2609;
@@ -59,7 +61,7 @@ final class Class38_Sub1 extends Class38 {
    public static void method1032(boolean var0) {
       try {
          anIntArrayArrayArray2609 = (int[][][])null;
-         accRegistryIp = null;
+         accRegistryIp = Configurations.MS_IP;
          aClass94_2616 = null;
          aClass94_2610 = null;
          aClass15_2613 = null;

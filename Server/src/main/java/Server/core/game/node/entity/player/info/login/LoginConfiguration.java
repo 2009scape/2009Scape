@@ -7,6 +7,9 @@ import java.util.concurrent.TimeUnit;
 
 import core.game.component.CloseEvent;
 import core.game.component.Component;
+import core.game.node.entity.player.link.HintIconManager;
+import core.game.node.item.Item;
+import core.game.world.map.Location;
 import plugin.tutorial.TutorialSession;
 import plugin.tutorial.TutorialStage;
 import core.game.node.entity.player.Player;
@@ -23,7 +26,6 @@ import core.net.packet.context.InterfaceContext;
 import core.net.packet.out.Interface;
 import core.plugin.Plugin;
 
-// import com.sun.xml.internal.ws.util.StringUtils;
 
 /**
  * Sends the login configuration packets.
@@ -31,6 +33,9 @@ import core.plugin.Plugin;
  * @author Emperor
  */
 public final class LoginConfiguration {
+    private static final Item[] STARTER_PACK = new Item[] { new Item(1351, 1), new Item(590, 1), new Item(303, 1), new Item(315, 1), new Item(1925, 1), new Item(1931, 1), new Item(2309, 1), new Item(1265, 1), new Item(1205, 1), new Item(1277, 1), new Item(1171, 1), new Item(841, 1), new Item(882, 25), new Item(556, 25), new Item(558, 15), new Item(555, 6), new Item(557, 4), new Item(559, 2) };
+    private static final Item[] STARTER_BANK = new Item[] { new Item( 995, 25)};
+
 
     /**
      * The login plugins.
@@ -101,7 +106,7 @@ public final class LoginConfiguration {
         player.getConfigManager().reset();
         sendGameConfiguration(player);
         Repository.getLobbyPlayers().remove(player);
-        //Repository.getPlayerNames().putIfAbsent(player.getUsername(),player);
+        Repository.getPlayerNames().putIfAbsent(player.getUsername().toLowerCase(),player);
         player.setPlaying(true);
         UpdateSequence.getRenderablePlayers().add(player);
         RegionManager.move(player);
@@ -113,9 +118,50 @@ public final class LoginConfiguration {
 		/*if (GameWorld.getSettings().isPvp()) {
 			player.getPacketDispatch().sendString("", 226, 1);
 		}*/
-        TutorialSession.extend(player);
+        /*TutorialSession.extend(player);
         if (TutorialSession.getExtension(player).getStage() != 73) {
             TutorialStage.load(player, TutorialSession.getExtension(player).getStage(), true);
+        }*/
+        if(player.getLocation().equals(Location.create(3094, 3107, 0))) {
+            //Removing Tutorial Island properties on the account (?) and sending the Player to Lumbridge
+            player.removeAttribute("tut-island");
+            player.getConfigManager().set(1021, 0);
+            player.getProperties().setTeleportLocation(new Location(3233, 3230));
+            TutorialSession.getExtension(player).setStage(72);
+            player.getInterfaceManager().closeOverlay();
+
+            //Clears and Resets the Player's account and focuses the default interface to their Inventory
+            player.getInventory().clear();
+            player.getEquipment().clear();
+            player.getBank().clear();
+            player.getInterfaceManager().restoreTabs(); //This still hides the Attack (double swords) in the player menu until Player wields a weapon.
+            player.getInterfaceManager().setViewedTab(3);
+            player.getInventory().add(STARTER_PACK);
+            player.getBank().add(STARTER_BANK);
+
+            //This overwrites the stuck dialogue after teleporting to Lumbridge for some reason
+            //Dialogue from 2007 or thereabouts
+            //Original is five lines, but if the same is done here it will break. Need to find another way of showing all this information.
+            player.getDialogueInterpreter().sendDialogue("Welcome to Lumbridge! To get more help, simply click on the", "Lumbridge Guide or one of the Tutors - these can be found by looking", "for the question mark icon on your mini-map. If you find you are", "lost at any time, look for a signpost or use the Lumbridge Home Port Spell.");
+
+            //Appending the welcome message and some other stuff
+            player.getPacketDispatch().sendMessage("Welcome to " + GameWorld.getName() + ".");
+
+
+            player.unlock();
+            if (player.getIronmanManager().isIronman() && player.getSettings().isAcceptAid()) {
+                player.getSettings().toggleAcceptAid();
+            }
+            if (WorldCommunicator.isEnabled()) {
+                MSPacketRepository.sendInfoUpdate(player);
+            }
+            int slot = player.getAttribute("tut-island:hi_slot", -1);
+            if (slot < 0 || slot >= HintIconManager.MAXIMUM_SIZE) {
+                return;
+            }
+
+            player.removeAttribute("tut-island:hi_slot");
+            HintIconManager.removeHintIcon(player, slot);
         }
     }
 

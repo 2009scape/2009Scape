@@ -1,0 +1,14 @@
+<parsing>
+    <ObjectAction mode="add" id="1814" x="3090" y="3475" z="0" type="4" direction="nw"/>
+    <ObjectAction mode="add" id="2646" x="2445" y="3413" z="0" direction="nw"/>
+    <ObjectAction mode="add" id="2646" x="2447" y="3414" z="0" direction="e"/>
+    <ObjectAction mode="add" id="2646" x="2447" y="3421" z="0" direction="nw"/>
+
+    <ObjectAction mode="remove" id="37670" x="3292" y="3299" z="0"/>
+    <ObjectAction mode="add" id="37304" x="3292" y="3299" z="0"/>
+
+    <ObjectAction mode="add" id="20987" x="3821" y="2996" z="0"/>
+
+    <ObjectAction mode="remove" id="356" x="2804" y="3428" z="0"/>
+    <ObjectAction mode="add" id="356" x="2804" y="3428" z="0"/>
+</parsing>

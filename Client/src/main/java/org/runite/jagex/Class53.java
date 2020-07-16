@@ -152,7 +152,7 @@ final class Class53 {
             var5.activity = buffer.getGJString2(98);
             var5.address = buffer.getGJString2(79);
             GameLaunch.SETTINGS.setWorld(worldId);
-            //System.out.println(GameLaunch.SETTINGS.getWorld());
+            System.out.println(GameLaunch.SETTINGS.getWorld());
          }
          Class3_Sub28_Sub7.updateStamp = buffer.getInt();
          Class30.loadedWorldList = true;

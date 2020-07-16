@@ -1,7 +1,7 @@
 package core.game.system.script;
 
-import core.game.node.entity.player.ai.AIPBuilder;
-import core.game.node.entity.player.ai.AIPlayer;
+import plugin.ai.AIPBuilder;
+import plugin.ai.AIPlayer;
 import core.game.system.script.exc.InvalidGOTOException;
 import core.game.system.script.exc.InvalidInstructionException;
 import core.game.system.script.exc.InvalidInterpreterException;

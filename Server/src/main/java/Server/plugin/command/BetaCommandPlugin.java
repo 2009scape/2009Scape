@@ -9,7 +9,7 @@ import plugin.ge.GrandExchangeEntry;
 import plugin.skill.Skills;
 import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
-import core.game.node.entity.player.ai.resource.ResourceAIPManager;
+import plugin.ai.resource.ResourceAIPManager;
 import core.game.node.entity.player.info.Rights;
 import core.game.node.entity.player.link.TeleportManager.TeleportType;
 import core.game.node.entity.player.link.quest.Quest;

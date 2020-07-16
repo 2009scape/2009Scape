@@ -1,0 +1,26 @@
+<RDT>
+    <item id="995" minAmt="3000" maxAmt="3000" weight="12"/>
+    <item id="2363" minAmt="1" maxAmt="1" weight="7"/>
+    <item id="1615" minAmt="1" maxAmt="1" weight="7"/>
+    <item id="443" minAmt="100" maxAmt="100" weight="7"/>
+    <item id="561" minAmt="1" maxAmt="67" weight="7"/>
+    <item id="892" minAmt="1" maxAmt="20" weight="7"/>
+    <item id="886" minAmt="150" maxAmt="150" weight="7"/>
+    <item id="1319" minAmt="1" maxAmt="1" weight="7"/>
+    <item id="1373" minAmt="1" maxAmt="1" weight="7"/>
+    <item id="1185" minAmt="1" maxAmt="1" weight="7"/>
+    <item id="1623" minAmt="1" maxAmt="1" weight="12"/>
+    <item id="1621" minAmt="1" maxAmt="1" weight="12"/>
+    <item id="1619" minAmt="1" maxAmt="1" weight="12"/>
+    <item id="1452" minAmt="1" maxAmt="1" weight="7"/>
+    <item id="1462" minAmt="1" maxAmt="1" weight="7"/>
+    <item id="1601" minAmt="1" maxAmt="1" weight="7"/>
+    <item id="830" minAmt="5" maxAmt="5" weight="3"/>
+    <item id="987" minAmt="1" maxAmt="1" weight="3"/>
+    <item id="985" minAmt="1" maxAmt="1" weight="3"/>
+    <item id="1149" minAmt="1" maxAmt="1" weight="3"/>
+    <item id="1201" minAmt="1" maxAmt="1" weight="3"/>
+    <item id="1247" minAmt="1" maxAmt="1" weight="1"/>
+    <item id="2366" minAmt="1" maxAmt="1" weight="1"/>
+    <item id="1249" minAmt="1" maxAmt="1" weight="1"/>
+</RDT>

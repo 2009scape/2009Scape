@@ -6,6 +6,7 @@ import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
 import core.game.node.item.Item;
 import core.game.node.object.GameObject;
+import core.game.system.SystemLogger;
 
 import java.util.HashMap;
 
@@ -23,7 +24,9 @@ public class QuestInteractionManager{
                 }
                 break;
             case USEWITH:
-                useWithInteractions.putIfAbsent(interaction.ids[0],interaction);
+                for(int i = 0; i < interaction.ids.length; i++){
+                    useWithInteractions.putIfAbsent(interaction.ids[i],interaction);
+                }
                 break;
             case NPC:
                 for(int i = 0; i < interaction.ids.length; i++){
@@ -39,6 +42,7 @@ public class QuestInteractionManager{
     }
 
     public static boolean handle(Player player, GameObject object){
+        SystemLogger.log("Trying to run...");
         QuestInteraction i = objectInteractions.get(object.getId());
         if(i == null) {
             return false;
@@ -48,6 +52,7 @@ public class QuestInteractionManager{
     }
 
     public static boolean handle(Player player, NodeUsageEvent event){
+        SystemLogger.log("Trying to handle: used: " + event.getUsed().getId() + " with: " + event.getUsedWith().getId() );
         QuestInteraction i = useWithInteractions.get(event.getUsed().asItem().getId());
         if(i == null) {
             return false;

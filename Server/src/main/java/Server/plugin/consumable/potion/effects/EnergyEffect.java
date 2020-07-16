@@ -10,6 +10,10 @@ public class EnergyEffect extends PotionEffect {
     }
     @Override
     public void activate(Player p) {
-        p.getSettings().updateRunEnergy(-amt);
+        if(amt == -1){
+            p.getSettings().updateRunEnergy(-Math.floor(p.getSettings().getRunEnergy() * 0.2));
+        } else {
+            p.getSettings().updateRunEnergy(-amt);
+        }
     }
 }

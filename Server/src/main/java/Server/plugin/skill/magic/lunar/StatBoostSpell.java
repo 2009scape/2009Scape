@@ -7,7 +7,7 @@ import core.game.node.Node;
 import core.game.node.entity.Entity;
 import core.game.node.entity.combat.equipment.SpellType;
 import core.game.node.entity.player.Player;
-import core.game.node.entity.player.ai.AIPlayer;
+import plugin.ai.AIPlayer;
 import core.game.node.entity.player.link.SpellBookManager.SpellBook;
 import core.game.node.item.Item;
 import core.game.world.map.RegionManager;

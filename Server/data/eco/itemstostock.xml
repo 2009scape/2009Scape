@@ -1,0 +1,16 @@
+<stocklist>
+    <player>2009scape</player>
+    <AutoStock itemId="453" amount="1000" modifier="2"/>  <!--coal-->
+    <AutoStock itemId="227" amount="10000" modifier="2"/> <!--vial-->
+    <AutoStock itemId="229" amount="10000" modifier="2"/> <!--vial of water-->
+    <AutoStock itemId="379" amount="10000" modifier="2"/> <!--Cooked Lobster-->
+    <AutoStock itemId="592" amount="1000" modifier="2"/>  <!--Ashes-->
+    <AutoStock itemId="2970" amount="1000" modifier="2"/> <!--Mort Myre Fungi-->
+    <AutoStock itemId="6018" amount="1000" modifier="2"/> <!--Poison Ivy Berries-->
+    <AutoStock itemId="3138" amount="1000" modifier="2"/> <!--Potato cactus-->
+    <AutoStock itemId="237" amount="1000" modifier="2"/>  <!--Unicorn Horn-->
+    <AutoStock itemId="223" amount="1000" modifier="2"/>  <!--Red Spider's Eggs-->
+    <AutoStock itemId="6693" amount="1000" modifier="2"/> <!--Bird nest-->
+    <AutoStock itemId="1975" amount="1000" modifier="2"/> <!--Chocolate Dust-->
+    <AutoStock itemId="225" amount="1000" modifier="2"/> <!--Limpwurt Root-->
+</stocklist>

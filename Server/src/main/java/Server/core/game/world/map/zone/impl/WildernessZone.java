@@ -70,7 +70,7 @@ public final class WildernessZone extends MapZone {
 		double x = combatLevel;
 		double A = 44044.5491;
 		double B = -7360.19548;
-		return (int) (A + (B * Math.log(x)));
+		return (int) (A + (B * Math.log(x))) / 2;
 	}
 
 	/**

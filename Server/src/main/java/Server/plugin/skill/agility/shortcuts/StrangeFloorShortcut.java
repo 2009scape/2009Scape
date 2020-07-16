@@ -1,5 +1,7 @@
 package plugin.skill.agility.shortcuts;
 
+import core.cache.def.impl.ObjectDefinition;
+import core.plugin.Plugin;
 import plugin.skill.agility.AgilityShortcut;
 import core.game.node.Node;
 import core.game.node.entity.impl.ForceMovement;
@@ -33,7 +35,7 @@ public class StrangeFloorShortcut extends AgilityShortcut {
 	 * Object}
 	 */
 	public StrangeFloorShortcut() {
-		super(new int[] { 42334 }, 80, 0.0, "jump-over");
+		super(new int[] { 9294 }, 80, 0.0, "jump-over");
 	}
 
 	@Override
@@ -63,4 +65,14 @@ public class StrangeFloorShortcut extends AgilityShortcut {
 		return node.getLocation().getX() >= 2880 ? Location.create(2881, 9813, 0) : Location.create(2877, 9813, 0);
 	}
 
+	@Override
+	public Plugin<Object> newInstance(Object arg) throws Throwable {
+		configure(this);
+		return this;
+	}
+
+	@Override
+	public void configure(AgilityShortcut shortcut) {
+		ObjectDefinition.forId(getIds()[0]).getConfigurations().put("option:jump-over",this);
+	}
 }

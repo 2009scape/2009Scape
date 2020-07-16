@@ -15,5 +15,5 @@ public @interface PluginManifest {
 	 * @return The plugin type.
 	 */
 	public PluginType type() default PluginType.ACTION;
-
+	public String name() default "";
 }

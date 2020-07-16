@@ -27,7 +27,7 @@ public class Client {
 	/**
 	 * The game settings.
 	 */
-	public static GameSetting SETTINGS = new GameSetting("2009Scape", PUBLIC_IP_ADDRESS, 1, "live", false);
+	public static GameSetting SETTINGS = new GameSetting("2009Scape", "127.0.0.1", 1, "live", false);
 	
 	/**
 	 * The main method.
@@ -37,12 +37,7 @@ public class Client {
 	 */
 	public static void main(String[]args) {
 		try {
-			InputStream inp = ClassLoader.getSystemClassLoader().getResourceAsStream("client.conf");
-			BufferedReader rd = new BufferedReader(new InputStreamReader(inp));
-			String s = rd.readLine();
-			if(s.contains("target_ip_addr:")){
-				PUBLIC_IP_ADDRESS = s.replace("target_ip_addr:","");
-			}
+			PUBLIC_IP_ADDRESS = "127.0.0.1";
 		} catch (Exception e){
 			System.out.println("Can't find config file " + CONF_FILE + " defaulting to IP 127.0.0.1");
 			PUBLIC_IP_ADDRESS = "127.0.0.1";

@@ -214,11 +214,11 @@ public final class GrandExchange implements SavingModule {
         while ((index = buffer.get()) != -1) {
             long key = buffer.getLong();
             o = offers[index] = GEOfferDispatch.forUID(key);
-            if (o != null) {
-                o.setIndex(index);
-            } else {
+            if (o == null) {
                 System.out.println("Could not locate G.E offer for key " +
                         key + "!");
+            } else {
+                o.setIndex(index);
             }
         }
         for (int i = 0; i < history.length; i++) {
@@ -570,7 +570,7 @@ public final class GrandExchange implements SavingModule {
                         }
                 }
 
-                for (GrandExchangeOffer o : ResourceManager.getStock()) {
+                for (GrandExchangeOffer o : GEAutoStock.getStock()) {
                     if (o != null)
                         if (o.isSell() != offer.isSell() && o.getItemId() == offer.getItemId() && o.isActive()) {
                             foundOffers.add(o.getOfferedValue());

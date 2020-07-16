@@ -173,7 +173,7 @@ public final class WorldList {
 			buffer.put(w.getLocation());
 			buffer.putInt(w.getFlag());
 			buffer.putJagString(w.getActivity());
-			buffer.putJagString("127.0.0.1");
+			buffer.putJagString(w.getIp());
 		}
 		buffer.putInt(updateStamp);
 	}

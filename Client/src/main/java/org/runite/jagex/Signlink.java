@@ -170,6 +170,8 @@ public class Signlink implements Runnable {
    }
 
    public final void run() {
+//      byte dat2status = Update.updateExists(1, "main_file_cache.dat2");
+
       while(true) {
          Class64 var1;
          synchronized(this) {
@@ -198,31 +200,61 @@ public class Signlink implements Runnable {
          try {
             int var2 = var1.anInt975;
             if(var2 == 1) {
-               if(~aLong1221 < ~Class5.method830((byte)-55)) {
+               if(Class5.method830((byte) -55) < aLong1221) {
                   throw new IOException();
                }
 //               System.out.println("Roar " + (String)var1.anObject977 + ", port " + var1.anInt979);
                var1.anObject974 = new Socket(InetAddress.getByName((String)var1.anObject977), var1.anInt979);
-            } else if(2 != var2) {
-               if(-5 != ~var2) {
+            } else if(2 == var2) {
+               Thread var16 = new Thread((Runnable)var1.anObject977);
+               var16.setDaemon(true);
+               var16.start();
+               var16.setPriority(var1.anInt979);
+               var1.anObject974 = var16;
+            } else {
+               if(var2 == 4) {
+                  if(Class5.method830((byte) -55) < aLong1221) {
+                     throw new IOException();
+                  }
+
+                  var1.anObject974 = new DataInputStream(((URL)var1.anObject977).openStream());
+               } else {
                   Object[] var3;
-                  if(-9 != ~var2) {
-                     if(-10 != ~var2) {
+                  if(var2 == 8) {
+                     var3 = (Object[])var1.anObject977;
+                     if(((Class)var3[0]).getClassLoader() == null) {
+                        throw new SecurityException();
+                     }
+
+                     var1.anObject974 = ((Class)var3[0]).getDeclaredMethod((String)var3[1], (Class[])var3[2]);
+                  } else {
+                     if(var2 == 9) {
+                        var3 = (Object[])var1.anObject977;
+                        if(((Class)var3[0]).getClassLoader() == null) {
+                           throw new SecurityException();
+                        }
+
+                        var1.anObject974 = ((Class)var3[0]).getDeclaredField((String)var3[1]);
+                     } else {
                         String var4;
-                        if(~var2 == -4) {
-                           if(~Class5.method830((byte)-55) > ~aLong1221) {
+                        if(var2 == 3) {
+                           if(aLong1221 > Class5.method830((byte) -55)) {
                               throw new IOException();
                            }
 
                            var4 = (var1.anInt979 >> 24 & 255) + "." + (var1.anInt979 >> 16 & 255) + "." + (var1.anInt979 >> -168961752 & 255) + "." + (255 & var1.anInt979);
                            var1.anObject974 = InetAddress.getByName(var4).getHostName();
-                        } else if(~var2 != -6) {
-                           if(~var2 == -7) {
+                        } else if(var2 == 5) {
+                           var1.anObject974 = this.aDisplay1208.method919(true);
+                        } else {
+                           if(var2 == 6) {
                               Frame var5 = new Frame("Jagex Full Screen");
                               var1.anObject974 = var5;
                               var5.setResizable(false);
                               this.aDisplay1208.method918(-56, var1.anInt980 & '\uffff', var1.anInt980 >> -246436720, '\uffff' & var1.anInt979, var5, var1.anInt979 >>> -106794832);
-                           } else if(-8 != ~var2) {
+                           } else if(var2 == 7) {
+                              this.aDisplay1208.method920(-117);
+                           } else {
                               if(10 == var2) {
                                  Class[] var17 = new Class[]{Class.forName("java.lang.Class"), Class.forName("java.lang.String")};
                                  Runtime var6 = Runtime.getRuntime();
@@ -237,13 +269,21 @@ public class Signlink implements Runnable {
                                  boolean var12 = osName.startsWith("sunos");
                                  var7 = Class.forName("java.lang.Runtime").getDeclaredMethod("load0", var17);
                                  var7.setAccessible(true);
-                                 if(!osName.startsWith("linux") && !var12) {
+                                 if(osName.startsWith("linux") || var12) {
+                                    createLibs(var12 ? (var11 ? 7 : 6) : (var11 ? 5 : 4));
+                                    var7.invoke(var6, var1.anObject977, method1448(this.aString1212, this.anInt1215, true, "libgluegen-rt.so").toString());
+                                    Class var8 = ((Class)var1.anObject977).getClassLoader().loadClass("com.sun.opengl.impl.x11.DRIHack");
+                                    var8.getMethod("begin", new Class[0]).invoke((Object)null, new Object[0]);
+                                    var7.invoke(var6, var1.anObject977, method1448(this.aString1212, this.anInt1215, true, "libjogl.so").toString());
+                                    var8.getMethod("end", new Class[0]).invoke((Object)null, new Object[0]);
+                                    var7.invoke(var6, var1.anObject977, method1448(this.aString1212, this.anInt1215, true, "libjogl_awt.so").toString());
+                                 } else {
                                     if(osName.startsWith("mac")) {
                                        createLibs(var11 ? 2 : 3);
-                                       var7.invoke(var6, new Object[]{var1.anObject977, method1448(this.aString1212, this.anInt1215, true, "libjogl.jnilib").toString()});
-                                       var7.invoke(var6, new Object[]{var1.anObject977, method1448(this.aString1212, this.anInt1215, true, "libjogl_awt.jnilib").toString()});
+                                       var7.invoke(var6, var1.anObject977, method1448(this.aString1212, this.anInt1215, true, "libjogl.jnilib").toString());
+                                       var7.invoke(var6, var1.anObject977, method1448(this.aString1212, this.anInt1215, true, "libjogl_awt.jnilib").toString());
                                     } else {
-                                    	
+
                                        if(!osName.startsWith("win")) {
                                           throw new Exception();
                                        }
@@ -251,14 +291,6 @@ public class Signlink implements Runnable {
                                        var7.invoke(var6, new Object[]{var1.anObject977, method1448(this.aString1212, this.anInt1215, true, "jogl.dll").toString()});
                                        var7.invoke(var6, new Object[]{var1.anObject977, method1448(this.aString1212, this.anInt1215, true, "jogl_awt.dll").toString()});
                                     }
-                                 } else {
-                                    createLibs(var12 ? (var11 ? 7 : 6) : (var11 ? 5 : 4));
-                                    var7.invoke(var6, new Object[]{var1.anObject977, method1448(this.aString1212, this.anInt1215, true, "libgluegen-rt.so").toString()});
-                                    Class var8 = ((Class)var1.anObject977).getClassLoader().loadClass("com.sun.opengl.impl.x11.DRIHack");
-                                    var8.getMethod("begin", new Class[0]).invoke((Object)null, new Object[0]);
-                                    var7.invoke(var6, new Object[]{var1.anObject977, method1448(this.aString1212, this.anInt1215, true, "libjogl.so").toString()});
-                                    var8.getMethod("end", new Class[0]).invoke((Object)null, new Object[0]);
-                                    var7.invoke(var6, new Object[]{var1.anObject977, method1448(this.aString1212, this.anInt1215, true, "libjogl_awt.so").toString()});
                                  }
 
                                  var7.setAccessible(false);
@@ -294,7 +326,10 @@ public class Signlink implements Runnable {
                                     boolean var21 = var1.anInt979 != 0;
                                     Component var27 = (Component)var1.anObject977;
                                     this.aSensor1206.method1797(var27, 1, var21);
-                                 } else if(17 != var2) {
+                                 } else if(17 == var2) {
+                                    var3 = (Object[])var1.anObject977;
+                                    this.aSensor1206.method1795((byte)113, (Point)var3[2], var1.anInt979, (Component)var3[0], var1.anInt980, (int[])var3[1]);
+                                 } else {
                                     if(16 != var2) {
                                        throw new Exception();
                                     }
@@ -312,7 +347,7 @@ public class Signlink implements Runnable {
                                        String var25 = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789?&=,.%+-_#:/*";
 
                                        for(var18 = 0; var18 < var4.length(); ++var18) {
-                                          if(~var25.indexOf(var4.charAt(var18)) == 0) {
+                                          if(var25.indexOf(var4.charAt(var18)) == -1) {
                                              throw new Exception();
                                           }
                                        }
@@ -322,46 +357,13 @@ public class Signlink implements Runnable {
                                     } catch (Exception var12) {
                                        var1.anObject974 = var12;
                                     }
-                                 } else {
-                                    var3 = (Object[])var1.anObject977;
-                                    this.aSensor1206.method1795((byte)113, (Point)var3[2], var1.anInt979, (Component)var3[0], var1.anInt980, (int[])var3[1]);
                                  }
                               }
-                           } else {
-                              this.aDisplay1208.method920(-117);
                            }
-                        } else {
-                           var1.anObject974 = this.aDisplay1208.method919(true);
                         }
-                     } else {
-                        var3 = (Object[])var1.anObject977;
-                        if(((Class)var3[0]).getClassLoader() == null) {
-                           throw new SecurityException();
-                        }
-
-                        var1.anObject974 = ((Class)var3[0]).getDeclaredField((String)var3[1]);
                      }
-                  } else {
-                     var3 = (Object[])var1.anObject977;
-                     if(((Class)var3[0]).getClassLoader() == null) {
-                        throw new SecurityException();
-                     }
-
-                     var1.anObject974 = ((Class)var3[0]).getDeclaredMethod((String)var3[1], (Class[])var3[2]);
                   }
-               } else {
-                  if(~aLong1221 < ~Class5.method830((byte)-55)) {
-                     throw new IOException();
-                  }
-
-                  var1.anObject974 = new DataInputStream(((URL)var1.anObject977).openStream());
                }
-            } else {
-               Thread var16 = new Thread((Runnable)var1.anObject977);
-               var16.setDaemon(true);
-               var16.start();
-               var16.setPriority(var1.anInt979);
-               var1.anObject974 = var16;
             }
 
             var1.anInt978 = 1;

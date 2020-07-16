@@ -3,69 +3,67 @@ package plugin.ge;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Scanner;
 
+import core.cache.def.impl.ItemDefinition;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.info.PlayerDetails;
+import core.game.node.entity.player.info.portal.PlayerSQLManager;
 import core.game.node.item.Item;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
 
 /**
  * Auto stocking feature for the grand exchange. 
- * @author jamix77
+ * @author Ceikry
  *
  */
 public class GEAutoStock {
-	
-	/**
-	 * Should the auto stock feature be enabled in the game?
-	 */
-	public static final boolean toStock = true;
-	
-	/**
-	 * The items to auto stock in the grand exchange.
-	 */
-	public static final ArrayList<Item> itemsToStock = new ArrayList<Item>();
-	
-	/**
-	 * The values to modify the price by
-	 */
-	public static final ArrayList<Double> modValues = new ArrayList<Double>();
-	
-	/**
-	 * Time to auto stock.
-	 */
-	public static void stock() {
-		if (itemsToStock.isEmpty()) {
-			try {
-			      File file = new File("data/eco/itemstostock.txt");
-			      Scanner myReader = new Scanner(file);
-			      while (myReader.hasNextLine()) {
-			        String data = myReader.nextLine();
-			        if (data.startsWith("#")) {
-			        	continue;
-			        }
-			        itemsToStock.add(new Item(Integer.parseInt(data.split(":")[0]), Integer.parseInt(data.split(":")[1])));
-			        modValues.add(Double.parseDouble(data.split(":")[2]));
-			      }
-			      myReader.close();
-			    } catch (FileNotFoundException e) {
-			      System.out.println("An error occurred.");
-			      e.printStackTrace();
-			    }
-;		}
-		
-		
-		for (int i = 0; i < itemsToStock.size(); i++) {
-			Item item = itemsToStock.get(i);
-			double markup = modValues.get(i);
-			System.out.println("Stocking " + item.getName() + " id: " + item.getId() + " for " + (int)((item.getValue() * markup)/item.getAmount()) + " x" + item.getAmount() + " at " + markup + "x markup");
-			GrandExchangeOffer offer = new GrandExchangeOffer(item.getId(), true);
-			offer.setOfferedValue((int) ((item.getValue() * markup)/ item.getAmount()));
-			offer.setAmount(item.getAmount());
-			System.out.println(GEOfferDispatch.dispatch(new Player(PlayerDetails.getDetails("2009scape")), offer));
+
+	public static List<GrandExchangeOffer> STOCK = new ArrayList<>();
+
+	public static void parse(String file){
+		try {
+			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			Document doc = builder.parse(file);
+
+			doc.getDocumentElement().normalize();
+
+			Player p = new Player(PlayerDetails.getDetails(doc.getElementsByTagName("player").item(0).getTextContent()));
+
+			NodeList entries = doc.getElementsByTagName("AutoStock");
+
+			for(int i = 0; i < entries.getLength(); i++){
+				Node node = entries.item(i);
+				if(node.getNodeType() == Node.ELEMENT_NODE){
+					Element entry = (Element) node;
+					int amount = Integer.parseInt(entry.getAttribute("amount"));
+					int itemId = Integer.parseInt(entry.getAttribute("itemId"));
+					double modifier = Double.parseDouble(entry.getAttribute("modifier"));
+					int value = (int) new Item(itemId).getValue();
+					value *= modifier;
+					GrandExchangeOffer o = new GrandExchangeOffer(itemId,true);
+					o.setAmount(amount);
+					o.setOfferedValue(value);
+					STOCK.add(o);
+					System.out.println("Stocked " + new Item(itemId).getName() + " x" + amount + " at " + value + " each.");
+				}
+			}
+
+		} catch (Exception e){
+			e.printStackTrace();
 		}
 	}
-	
-	
-	
+
+	public static List<GrandExchangeOffer> getStock(){
+		return STOCK;
+	}
 }

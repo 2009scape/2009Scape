@@ -8,7 +8,6 @@ import core.game.container.Container;
 import core.game.container.impl.EquipmentContainer;
 import core.game.content.eco.EconomyManagement;
 import core.game.content.global.shop.Shop;
-import core.game.system.SystemLogger;
 import plugin.tutorial.TutorialSession;
 import core.game.content.holiday.HolidayItem;
 import core.game.content.holiday.ItemLimitation;
@@ -21,7 +20,7 @@ import core.game.node.entity.npc.NPC;
 import core.game.node.entity.npc.drop.DropTables;
 import core.game.node.entity.npc.drop.RareDropTable;
 import core.game.node.entity.player.Player;
-import core.game.node.entity.player.ai.resource.ResourceAIPManager;
+import plugin.ai.resource.ResourceAIPManager;
 import core.game.node.entity.player.info.PlayerDetails;
 import core.game.node.entity.player.info.login.PlayerParser;
 import core.game.node.entity.player.link.IronmanMode;
@@ -113,6 +112,19 @@ public final class DeveloperCommandPlugin extends CommandPlugin {
         		player.getSkills().setLevel(Integer.parseInt(args[1]), Integer.parseInt(args[2]));
         		player.getSkills().setStaticLevel(Integer.parseInt(args[1]), Integer.parseInt(args[2]));
         		break;
+            case "attr":
+                player.setAttribute("/save:test",true);
+                break;
+            case "testattr":
+                if(player.getAttribute("test",false)){
+                    player.sendMessage("Attribute success");
+                } else {
+                    player.sendMessage("Attribute failed" + " attribute value seen: " + player.getAttribute("test"));
+                }
+                break;
+            case "remattr":
+                player.removeAttribute("test");
+                break;
         	case "playsong":
         		player.getMusicPlayer().play(MusicEntry.getSongs().get(Integer.parseInt(args[1])));
         		player.sendMessage("Playing song: " + MusicEntry.getSongs().get(Integer.parseInt(args[1])).getName());

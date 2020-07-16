@@ -1,0 +1,14 @@
+In which skill do you use logs and a tinderbox to start fires?::firemaking
+In this skill you can go around planting and harvesting your own plants, herbs, and even trees!::farming
+This skill includes making such items as platebodies and full helms.::smithing
+This skill affects how often a player gets hit::defense
+In this skill, you can track and capture animals.::hunter
+In this skill you can make your own food.::cooking
+In this skill you can make bows, arrows, bolts, and crossbows.::fletching
+In which skill you can steal from NPCs?::thieving
+You can find moss giants in the Varrock sewers.::true
+What town can you find Cassie in?::falador
+Where was the Christmas special in 2005?::draynor
+What level is Elvarg the dragon?::83
+What is the name of the dragon in 'Dragon Slayer'?::elvarg
+How many metals are there to wield as weapons?::8

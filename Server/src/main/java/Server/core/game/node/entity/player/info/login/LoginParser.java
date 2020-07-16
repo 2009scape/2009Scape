@@ -112,7 +112,7 @@ public final class LoginParser implements Runnable {
 			return;
 		}
 		PlayerParser.parse(player);
-		Repository.getPlayerNames().put(player.getName(), player);
+		//Repository.getPlayerNames().put(player.getName(), player);
 		GameWorld.Pulser.submit(new Pulse(1) {
 			@Override
 			public boolean pulse() {

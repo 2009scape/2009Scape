@@ -242,7 +242,6 @@ public abstract class MagicSpell implements Plugin<SpellType> {
 			}
 			if (remove) {
 				toRemove.forEach(i -> {
-					SystemLogger.log("Removing " + i.getAmount() + " of " + i.getId());
 					p.getInventory().remove(i);
 				});
 			}

@@ -1,7 +1,16 @@
 package core.game.world;
 
+import core.game.system.SystemLogger;
 import core.net.Constants;
+import core.plugin.PluginManager;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -113,23 +122,49 @@ public final class GameSettings {
 	 * @return the settings.
 	 */
 	public static GameSettings parse(final String path) {
-		final Properties properties = getProperties(path);
-		String address = Constants.DEFAULT_MS_IP;
-		if (properties.containsKey("msip")) {
-			address = properties.getProperty("msip");
+		File f = new File(path);
+		if(!f.exists()){
+			SystemLogger.log("Could not find server config at " + path);
+			return null;
 		}
-		return new GameSettings(properties.getProperty("name"), 
-				Boolean.parseBoolean(properties.getProperty("beta")), 
-				Boolean.parseBoolean(properties.getProperty("devMode")), 
-				Boolean.parseBoolean(properties.getProperty("gui")),
-				Integer.parseInt(properties.getProperty("worldId")), 
-				Integer.parseInt(properties.getProperty("country")), 
-				properties.getProperty("activity"),
-				Boolean.parseBoolean(properties.getProperty("members")), 
-				Boolean.parseBoolean(properties.getProperty("pvp")),
-				Boolean.parseBoolean(properties.getProperty("quickChat")),
-				Boolean.parseBoolean(properties.getProperty("lootshare")),
-				address);
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		try {
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			Document doc = builder.parse(path);
+
+			Element settings = (Element) doc.getElementsByTagName("GameSettings").item(0);
+
+			String name = settings.getAttribute("name");
+			boolean beta = Boolean.parseBoolean(settings.getAttribute("beta"));
+			boolean devMode = Boolean.parseBoolean(settings.getAttribute("dev"));
+			boolean startGui = Boolean.parseBoolean(settings.getAttribute("startGui"));
+			int worldId = Integer.parseInt(settings.getAttribute("worldID"));
+			int countryId = Integer.parseInt(settings.getAttribute("countryID"));
+			String activity = (settings.getAttribute("activity"));
+			boolean pvp = Boolean.parseBoolean(settings.getAttribute("pvpWorld"));
+			String ipAddress = settings.getAttribute("msip");
+
+			NodeList pluginSettings = doc.getElementsByTagName("PluginSetting");
+			for(int i = 0; i < pluginSettings.getLength(); i++){
+				Node settingsNode = pluginSettings.item(i);
+
+				if(settingsNode.getNodeType() == Node.ELEMENT_NODE){
+					Element pluginSetting = (Element) settingsNode;
+
+					String pName = pluginSetting.getAttribute("name");
+					boolean enabled = Boolean.parseBoolean(pluginSetting.getAttribute("enabled"));
+
+					if(!enabled){
+						System.out.println("Setting " + pName + " as disabled.");
+						PluginManager.disabledPlugins.putIfAbsent(pName,false);
+					}
+				}
+			}
+			return new GameSettings(name,beta,devMode,startGui,worldId,countryId,activity,true,pvp,false,false,ipAddress);
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 	/**

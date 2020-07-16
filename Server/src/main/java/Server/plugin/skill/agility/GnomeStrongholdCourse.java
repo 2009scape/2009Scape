@@ -51,47 +51,47 @@ public final class GnomeStrongholdCourse extends AgilityCourse {
 		switch (object.getId()) {
 
 			//Log Cross
-			case 44109:
+			case 2295:
 				TRAINERS[0].sendChat("Okay get over that log, quick quick!");
 				player.getPacketDispatch().sendMessage("You walk carefully across the slippery log...");
 				AgilityHandler.walk(player, 0, Location.create(2474, 3436, 0), Location.create(2474, 3429, 0), Animation.create(155), 7.5, "...You make it safely to the other side.");
 				return true;
 
 			//Net Climb
-			case 44103:
+			case 2285:
 				TRAINERS[1].sendChat("Move it, move it, move it!");
 				player.getPacketDispatch().sendMessage("You climb the netting...");
 				AgilityHandler.climb(player, 1, Animation.create(828), object.getLocation().transform(0, -1, 1), 7.5, null);
 				return true;
 
 			//branch climb
-			case 44112:
+			case 35970:
 				TRAINERS[2].sendChat("That's it - straight up.");
 				player.getPacketDispatch().sendMessage("You climb the tree..");
 				AgilityHandler.climb(player, 2, Animation.create(828), Location.create(2473, 3420, 2), 5.0, "...To the platform above.");
 				return true;
 
 			//tight-rope
-			case 44110:
+			case 2312:
 				TRAINERS[3].sendChat("Come on scaredy cat, get across that rope!");
 				player.getPacketDispatch().sendMessage("You carefully cross the tightrope.");
 				AgilityHandler.walk(player, 3, Location.create(2477, 3420, 2), Location.create(2483, 3420, 2), Animation.create(155), 7.5, null);
 				return true;
 
 			//Other side of tight-rope
-			case 44111:
+			case 4059:
 				player.getPacketDispatch().sendMessage("You can't do that from here.");
 				return true;
 
 			//Branches on the other side of tight-rope
-			case 44113:
-			case 44114:
+			case 2314:
+			case 2315:
 				player.getPacketDispatch().sendMessage("You climb down the tree..");
 				AgilityHandler.climb(player, 4, Animation.create(828), Location.create(2487, 3420, 0), 5.0, "You land on the ground.");
 				return true;
 
 			//Second Net Climb
-			case 44104:
+			case 2286:
 				TRAINERS[4].sendChat("My Granny can move faster than you.");
 				player.faceLocation(player.getLocation().transform(0, 2, 0));
 				player.getPacketDispatch().sendMessage("You climb the netting...");
@@ -99,9 +99,9 @@ public final class GnomeStrongholdCourse extends AgilityCourse {
 				return true;
 
 			//Pipe Squeeze
-			case 44105:
-			case 44106:
-				final int index = object.getId() == 44105 ? 0 : 1; //If the player clicks on the left pipe, set index to 0, otherwise 1
+			case 4058:
+			case 154:
+				final int index = object.getId() == 154 ? 0 : 1; //If the player clicks on the left pipe, set index to 0, otherwise 1
 				final int x = 2484 + (index * 3); //change the x coordinates for walking/animations depending on index multiplier
 				if (object.getLocation().getY() == 3435) {
 					player.getPacketDispatch().sendMessage("You can't do that from here.");
@@ -129,9 +129,9 @@ public final class GnomeStrongholdCourse extends AgilityCourse {
 	public Location getDestination(Node node, Node n) {
 		GameObject object = (GameObject) n;
 		switch (object.getId()) {
-		case 44109:
+		case 2295:
 			return Location.create(2474, 3436, 0);
-		case 44104:
+		case 2286:
 			int x = node.getLocation().getX();
 			if (x < n.getLocation().getX()) {
 				x = n.getLocation().getX();
@@ -139,8 +139,8 @@ public final class GnomeStrongholdCourse extends AgilityCourse {
 				x = n.getLocation().getX() + 1;
 			}
 			return Location.create(x, n.getLocation().getY() - 1, 0);
-		case 44105:
-		case 44106:
+		case 4058:
+		case 154:
 			if (n.getLocation().getY() == 3431) {
 				return n.getLocation().transform(0, -1, 0);
 			}
@@ -159,16 +159,16 @@ public final class GnomeStrongholdCourse extends AgilityCourse {
 			npc.init();
 			npc.setWalkRadius(3);
 		}
-		ObjectDefinition.forId(44109).getConfigurations().put("option:walk-across", this);
-		ObjectDefinition.forId(44103).getConfigurations().put("option:climb-over", this);
-		ObjectDefinition.forId(44112).getConfigurations().put("option:climb", this);
-		ObjectDefinition.forId(44110).getConfigurations().put("option:walk-on", this);
-		ObjectDefinition.forId(44111).getConfigurations().put("option:walk-on", this);
-		ObjectDefinition.forId(44113).getConfigurations().put("option:climb-down", this);
-		ObjectDefinition.forId(44114).getConfigurations().put("option:climb-down", this);
-		ObjectDefinition.forId(44104).getConfigurations().put("option:climb-over", this);
-		ObjectDefinition.forId(44105).getConfigurations().put("option:squeeze-through", this);
-		ObjectDefinition.forId(44106).getConfigurations().put("option:squeeze-through", this);
+		ObjectDefinition.forId(2295).getConfigurations().put("option:walk-across", this);
+		ObjectDefinition.forId(2285).getConfigurations().put("option:climb-over", this);
+		ObjectDefinition.forId(35970).getConfigurations().put("option:climb", this);
+		ObjectDefinition.forId(2312).getConfigurations().put("option:walk-on", this);
+		ObjectDefinition.forId(4059).getConfigurations().put("option:walk-on", this);
+		ObjectDefinition.forId(2314).getConfigurations().put("option:climb-down", this);
+		ObjectDefinition.forId(2315).getConfigurations().put("option:climb-down", this);
+		ObjectDefinition.forId(2286).getConfigurations().put("option:climb-over", this);
+		ObjectDefinition.forId(4058).getConfigurations().put("option:squeeze-through", this);
+		ObjectDefinition.forId(154).getConfigurations().put("option:squeeze-through", this);
 	}
 
 	@Override
