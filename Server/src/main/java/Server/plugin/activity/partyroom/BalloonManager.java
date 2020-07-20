@@ -129,7 +129,7 @@ public final class BalloonManager extends OptionHandler {
 	 * @return the balloon.
 	 */
 	private GameObject getBalloon() {
-		final Location location = new Location(3045 + RandomFunction.getRandomizer(RandomFunction.getRandom(8)), 3378 + RandomFunction.getRandomizer(RandomFunction.getRandom(6)), 0);
+		final Location location = new Location(3045 + RandomFunction.randomSign(RandomFunction.getRandom(8)), 3378 + RandomFunction.randomSign(RandomFunction.getRandom(6)), 0);
 		if (!RegionManager.isTeleportPermitted(location) || RegionManager.getObject(location) != null) {
 			return null;
 		}

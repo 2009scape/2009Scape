@@ -21,43 +21,35 @@ public class RandomFunction {
 	public static final Random RANDOM = new Random();
 
 	/**
-	 * Constructs a new {@code RandomFunction} {@code Object}.
-	 */
-	private RandomFunction() {
-		/**
-		 * empty.
-		 */
-	}
-
-	/**
 	 * Method used to ease the access of the random class.
-	 * @param min the minium random value.
-	 * @param max the maximum random value.
+	 * @param a the minimum random value.
+	 * @param b the maximum random value.
 	 * @return the value as an {@link Double}.
 	 */
-	public static final double random(double min, double max) {
-		final double n = Math.abs(max - min);
-		return Math.min(min, max) + (n == 0 ? 0 : random((int) n));
+	public static final double random(double a, double b) {
+		final double min = Math.min(a, b);
+		final double max = Math.max(a, b);
+		return min + (max - min) * RANDOM.nextDouble();
 	}
 
 	/**
 	 * Method used to ease the access of the random class.
-	 * @param min the minium random value.
-	 * @param max the maximum random value.
+	 * @param a the minimum random value.
+	 * @param b the maximum random value.
 	 * @return the value as an {@link Integer}.
 	 */
-	public static final int random(int min, int max) {
-		final int n = Math.abs(max - min);
-		return Math.min(min, max) + (n == 0 ? 0 : random(n));
+	public static final int random(int a, int b) {
+		final int n = Math.abs(b - a);
+		return Math.min(a, b) + (n == 0 ? 0 : random(n));
 	}
 
 	/**
-	 * Method used to return a random integer.
+	 * Returns either the supplied integer, or -1 times the supplied integer.
 	 * @param value the value.
 	 * @return the integer.
 	 */
-	public static int getRandomizer(int value) {
-		return getRandom(1) == 0 ? value : -value;
+	public static int randomSign(int value) {
+		return RANDOM.nextBoolean() ? value : -value;
 	}
 
 	/**
@@ -92,7 +84,7 @@ public class RandomFunction {
 
 	public static int nextInt(int val)
 	{
-		return RANDOM.nextInt(val);
+		return random(val);
 	}
 
 	/**
@@ -139,7 +131,7 @@ public class RandomFunction {
 		return (int) (seed*modifier*max);
 	}
 
-	/*
+	/**
 	 * Generates a random number likely in the area above val (I think)
 	 */
 	public static int normalPlusWeightRandDist(int val, int weight)
@@ -228,7 +220,7 @@ public class RandomFunction {
 	}
 
 	public static List<Item> rollChanceTable(boolean atLeastOne,ChanceItem... table){
-		return rollChanceTable(atLeastOne,Arrays.asList(table));
+		return rollChanceTable(atLeastOne, Arrays.asList(table));
 	}
 
 	public static Item rollWeightedChanceTable(WeightedChanceItem... table){
