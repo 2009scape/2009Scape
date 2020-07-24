@@ -72,7 +72,7 @@ public final class GemBoltCutPulse extends SkillPulse<Item> {
 		Item reward = new Item(gem.tip,12);
 		if (player.getInventory().remove(new Item(gem.gem))) {
 			player.getInventory().add(reward);
-			player.getSkills().addExperience(Skills.FLETCHING, gem.experience * reward.getAmount(), true);
+			player.getSkills().addExperience(Skills.FLETCHING, gem.experience, true);
 		}
 		amount--;
 		return amount <= 0;

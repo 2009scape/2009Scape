@@ -182,6 +182,7 @@ public class Fletching {
             this.base = base;
             this.product = product;
             this.level = level;
+            this.experience = experience;
         }
 
     }

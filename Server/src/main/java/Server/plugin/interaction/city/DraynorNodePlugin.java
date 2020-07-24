@@ -53,7 +53,11 @@ public final class DraynorNodePlugin extends OptionHandler {
 			ActivityManager.start(player, "draynor telescope", false);
 			break;
 		case 6434:
-			ClimbActionHandler.climb(player, null, Location.create(3085, 9672, 0));
+			if(node.getLocation().equals(3084, 3272, 0)) { // NW corner of draynor sewer
+				ClimbActionHandler.climb(player, null, Location.create(3085, 9672, 0));
+			} else if (node.getLocation().equals(3118,3244,0)) { // SE corner of draynor sewer
+				ClimbActionHandler.climb(player, null, Location.create(3118, 9643, 0));
+			}
 			break;
 		case 32016:
 			ClimbActionHandler.climb(player, null, Location.create(3084, 3271, 0));

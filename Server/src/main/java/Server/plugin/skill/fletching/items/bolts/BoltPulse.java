@@ -1,5 +1,7 @@
 package plugin.skill.fletching.items.bolts;
 
+import core.game.content.ItemNames;
+import core.game.world.update.flag.context.Animation;
 import plugin.skill.SkillPulse;
 import plugin.skill.Skills;
 import plugin.skill.fletching.Fletching;
@@ -15,7 +17,19 @@ public final class BoltPulse extends SkillPulse<Item> {
 	/**
 	 * Represents the feather item.
 	 */
-	private final Item feather = new Item(314);
+	private Item feather;
+
+	/**
+	 * Represents possible feather Items
+	 */
+	private static final Item[] FEATHER = new Item[] {
+			new Item(ItemNames.FEATHER),
+			new Item(ItemNames.STRIPY_FEATHER_10087),
+			new Item(ItemNames.RED_FEATHER_10088),
+			new Item(ItemNames.BLUE_FEATHER_10089),
+			new Item(ItemNames.YELLOW_FEATHER_10090),
+			new Item(ItemNames.ORANGE_FEATHER_10091)
+	};
 
 	/**
 	 * Represents the bolt.
@@ -37,10 +51,11 @@ public final class BoltPulse extends SkillPulse<Item> {
 	 * @param player the player.
 	 * @param node the node.
 	 */
-	public BoltPulse(Player player, Item node, final Fletching.Bolts bolt, final int sets) {
+	public BoltPulse(Player player, Item node, final Fletching.Bolts bolt, final Item feather, final int sets) {
 		super(player, node);
 		this.bolt = bolt;
 		this.sets = sets;
+		this.feather = feather;
 	}
 
 	@Override

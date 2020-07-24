@@ -1,5 +1,6 @@
 package plugin.skill.fletching.items.arrow;
 
+import core.game.content.ItemNames;
 import plugin.skill.SkillPulse;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
@@ -14,17 +15,24 @@ public final class HeadlessArrowPulse extends SkillPulse<Item> {
 	/**
 	 * Represents the headless arrow item.
 	 */
-	private final Item HEADLESS_ARROW = new Item(53);
+	private final Item HEADLESS_ARROW = new Item(ItemNames.HEADLESS_ARROW_53);
 
 	/**
 	 * Represents the arrow shaft item.
 	 */
-	private final Item ARROW_SHAFT = new Item(52);
+	private final Item ARROW_SHAFT = new Item(ItemNames.ARROW_SHAFT_52);
 
 	/**
 	 * Represents the feather items.
 	 */
-	private static final Item[] FEATHER = new Item[] { new Item(314), new Item(10087), new Item(10088), new Item(10089), new Item(10090), new Item(10091) };
+	private static final Item[] FEATHER = new Item[] {
+			new Item(ItemNames.FEATHER),
+			new Item(ItemNames.STRIPY_FEATHER_10087),
+			new Item(ItemNames.RED_FEATHER_10088),
+			new Item(ItemNames.BLUE_FEATHER_10089),
+			new Item(ItemNames.YELLOW_FEATHER_10090),
+			new Item(ItemNames.ORANGE_FEATHER_10091)
+	};
 
 	/**
 	 * The feather being used.
@@ -46,9 +54,10 @@ public final class HeadlessArrowPulse extends SkillPulse<Item> {
 	 * @param player the player.
 	 * @param node the node.
 	 */
-	public HeadlessArrowPulse(Player player, Item node, int sets) {
+	public HeadlessArrowPulse(Player player, Item node, Item feather, int sets) {
 		super(player, node);
 		this.sets = sets;
+		this.feather = feather;
 	}
 
 	@Override
@@ -57,8 +66,7 @@ public final class HeadlessArrowPulse extends SkillPulse<Item> {
 			player.getDialogueInterpreter().sendDialogue("You don't have any arrow shafts.");
 			return false;
 		}
-		feather = getFeather();
-		if (feather == null) {
+		if (feather == null || !player.getInventory().containsItem(feather)) {
 			player.getDialogueInterpreter().sendDialogue("You don't have any feathers.");
 			return false;
 		}
@@ -76,23 +84,25 @@ public final class HeadlessArrowPulse extends SkillPulse<Item> {
 
 	@Override
 	public boolean reward() {
+		int featherAmount = player.getInventory().getAmount(feather);
+		int shaftAmount = player.getInventory().getAmount(ARROW_SHAFT);
 		if (getDelay() == 1) {
 			super.setDelay(3);
-			return false;
 		}
-		if (useSets) {
-			HEADLESS_ARROW.setAmount(15);
+		if (featherAmount >= 15 && shaftAmount >= 15) {
 			feather.setAmount(15);
 			ARROW_SHAFT.setAmount(15);
 			player.getPacketDispatch().sendMessage("You attach feathers to 15 arrow shafts.");
 		} else {
-			HEADLESS_ARROW.setAmount(1);
-			feather.setAmount(1);
-			ARROW_SHAFT.setAmount(1);
-			player.getPacketDispatch().sendMessage("You attach a feather to an arrow shaft.");
+			int amount = featherAmount > shaftAmount ? shaftAmount : featherAmount;
+			feather.setAmount(amount);
+			ARROW_SHAFT.setAmount(amount);
+			player.getPacketDispatch().sendMessage(amount == 1
+					? "You attach a feathers to a shaft." : "You attach feathers to " + amount + " arrow shafts.");
 		}
-		if (player.getInventory().remove(ARROW_SHAFT, feather)) {
-			player.getSkills().addExperience(Skills.FLETCHING, useSets ? 15 : 1, true);
+		if (player.getInventory().remove(feather, ARROW_SHAFT)) {
+			HEADLESS_ARROW.setAmount(feather.getAmount());
+			player.getSkills().addExperience(Skills.FLETCHING, HEADLESS_ARROW.getAmount(), true);
 			player.getInventory().add(HEADLESS_ARROW);
 		}
 		HEADLESS_ARROW.setAmount(1);
@@ -105,7 +115,7 @@ public final class HeadlessArrowPulse extends SkillPulse<Item> {
 			return true;
 		}
 		sets--;
-		return sets == 0;
+		return sets <= 0;
 	}
 
 	@Override
