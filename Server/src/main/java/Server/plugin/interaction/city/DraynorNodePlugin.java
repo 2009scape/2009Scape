@@ -3,6 +3,7 @@ package plugin.interaction.city;
 import core.cache.def.impl.NPCDefinition;
 import core.cache.def.impl.ObjectDefinition;
 import core.game.component.Component;
+import core.game.node.object.ObjectBuilder;
 import plugin.activity.ActivityManager;
 import plugin.activity.ActivityPlugin;
 import plugin.activity.CutscenePlugin;
@@ -52,15 +53,11 @@ public final class DraynorNodePlugin extends OptionHandler {
 		case 7092:
 			ActivityManager.start(player, "draynor telescope", false);
 			break;
-		case 6434:
-			if(node.getLocation().equals(3084, 3272, 0)) { // NW corner of draynor sewer
-				ClimbActionHandler.climb(player, null, Location.create(3085, 9672, 0));
-			} else if (node.getLocation().equals(3118,3244,0)) { // SE corner of draynor sewer
-				ClimbActionHandler.climb(player, null, Location.create(3118, 9643, 0));
+		case 6434: // Trapdoors above NW and SE corners of Draynor sewer
+			if (option.equalsIgnoreCase("open")) {
+				ObjectBuilder.replace(node.asObject(), node.asObject().transform(6435), 500);
 			}
 			break;
-		case 32016:
-			ClimbActionHandler.climb(player, null, Location.create(3084, 3271, 0));
 		}
 		return true;
 	}
