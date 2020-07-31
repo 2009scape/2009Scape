@@ -41,6 +41,9 @@ object Server {
     @Throws(Throwable::class)
     @JvmStatic
     fun main(args: Array<String>) {
+        if (GameWorld.getSettings() == null) {
+            println("WARNING: Can't find config file. Make sure starting dir is set to 2009scape/Server!")
+        }
         if (args.isNotEmpty()) {
             try {
                 GameWorld.setSettings(parse(args))
