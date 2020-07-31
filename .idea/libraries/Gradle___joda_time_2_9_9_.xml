@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: :joda-time-2.9.9:">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Management-Server/lib/joda-time-2.9.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: :twitter4j-core-4.0.3-SNAPSHOT:">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Management-Server/lib/twitter4j-core-4.0.3-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

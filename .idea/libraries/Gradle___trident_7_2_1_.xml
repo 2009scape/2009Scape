@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: :trident-7.2.1:">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Management-Server/lib/trident-7.2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

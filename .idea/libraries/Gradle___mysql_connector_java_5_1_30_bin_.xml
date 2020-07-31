@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: :mysql-connector-java-5.1.30-bin:">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Management-Server/lib/mysql-connector-java-5.1.30-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

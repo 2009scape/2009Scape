@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="ExternalSystem" externalSystem="GRADLE" externalSystemModuleGroup="" externalSystemModuleType="sourceSet" externalSystemModuleVersion="unspecified" linkedProjectId="Management-Server:test" linkedProjectPath="$MODULE_DIR$/../../Management-Server" rootProjectPath="$MODULE_DIR$/../../Management-Server" />
+  <component name="TestModuleProperties" production-module="Management-Server.main" />
+</module>
