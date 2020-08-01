@@ -50,14 +50,14 @@ class LobsterCatcher : Script() {
 
 
             State.FISHING -> {
-                val spot = scriptAPI.getNearestNode(333, false)
+                val spot = scriptAPI.getNode(333, false)
                 spot!!.interaction.handle(bot, spot.interaction[0])
                 state = State.FIND_BANK
             }
 
 
             State.FIND_SPOT -> {
-                val spot = scriptAPI.getNearestNode(333, false)
+                val spot = scriptAPI.getNode(333, false)
                 if (spot != null) {
                     bot.walkingQueue.reset()
                     state = State.FISHING

@@ -43,64 +43,74 @@ class ScriptAPI(private val bot: Player) {
         return sqrt((n1.location.x - n2.location.x.toDouble()).pow(2.0) + (n2.location.y - n1.location.y.toDouble()).pow(2.0))
     }
 
-    fun getNearestNode(entityName: String): Node? {
+    fun getNode(entityName: String, nearest: Boolean = true): Node? {
         var entity: Node? = null
         var minDistance = Double.MAX_VALUE
         for (node in RegionManager.forId(bot.location.regionId).planes[bot.location.z].entities) {
             if (node != null && node.name == entityName && distance(bot, node) < minDistance && !Pathfinder.find(bot, node).isMoveNear) {
-                entity = node
-                minDistance = distance(bot, node)
+                if (nearest || RandomFunction.random(2) == 0) {
+                    entity = node
+                    minDistance = distance(bot, node)
+                }
             }
         }
         return entity
     }
 
-    fun getNearestNode(id: Int, `object`: Boolean): Node? {
+    fun getNode(id: Int, `object`: Boolean, nearest: Boolean = true): Node? {
         if (`object`) {
             var entity: Node? = null
             var minDistance = Double.MAX_VALUE
             for (objects in RegionManager.forId(bot.location.regionId).planes[bot.location.z].objects) {
-                for(e in objects) {
+                for (e in objects) {
                     if (e != null && e.id == id && distance(bot, e) < minDistance && !Pathfinder.find(bot, e).isMoveNear && e.isActive) {
-                        entity = e
-                        minDistance = distance(bot, e)
+                        if (nearest || RandomFunction.random(2) == 0) {
+                            entity = e
+                            minDistance = distance(bot, e)
+                        }
                     }
                 }
             }
-            return if(entity == null) null else entity as GameObject
+            return if (entity == null) null else entity as GameObject
         } else {
             var entity: Node? = null
             var minDistance = Double.MAX_VALUE
             for (e in RegionManager.forId(bot.location.regionId).planes[bot.location.z].entities) {
                 if (e != null && e.id == id && distance(bot, e) < minDistance && !Pathfinder.find(bot, e).isMoveNear) {
-                    entity = e
-                    minDistance = distance(bot, e)
+                    if (nearest || RandomFunction.random(2) == 0) {
+                        entity = e
+                        minDistance = distance(bot, e)
+                    }
                 }
             }
             return entity
         }
     }
 
-    fun getNearestNode(name: String, `object`: Boolean): Node? {
+    fun getNode(name: String, `object`: Boolean, nearest: Boolean = true): Node? {
         if (`object`) {
             var entity: Node? = null
             var minDistance = Double.MAX_VALUE
             for (objects in RegionManager.forId(bot.location.regionId).planes[bot.location.z].objects) {
-                for(e in objects) {
+                for (e in objects) {
                     if (e != null && e.name.toLowerCase() == name.toLowerCase() && distance(bot, e) < minDistance && !Pathfinder.find(bot, e).isMoveNear && e.isActive) {
-                        entity = e
-                        minDistance = distance(bot, e)
+                        if (nearest || RandomFunction.random(2) == 0) {
+                            entity = e
+                            minDistance = distance(bot, e)
+                        }
                     }
                 }
             }
-            return if(entity == null) null else entity as GameObject
+            return if (entity == null) null else entity as GameObject
         } else {
             var entity: Node? = null
             var minDistance = Double.MAX_VALUE
             for (e in RegionManager.forId(bot.location.regionId).planes[bot.location.z].entities) {
                 if (e != null && e.name.toLowerCase() == name.toLowerCase() && distance(bot, e) < minDistance && !Pathfinder.find(bot, e).isMoveNear) {
-                    entity = e
-                    minDistance = distance(bot, e)
+                    if (nearest || RandomFunction.random(2) == 0) {
+                        entity = e
+                        minDistance = distance(bot, e)
+                    }
                 }
             }
             return entity
@@ -110,9 +120,9 @@ class ScriptAPI(private val bot: Player) {
     private fun getNearestGroundItem(id: Int): GroundItem? {
         var distance = 11.0
         var closest: GroundItem? = null
-        if(AIRepository.getItems(bot) == null) return null
-        for(item in AIRepository.getItems(bot)!!.filter { it.distance(bot.location) < 10 }){
-            if(item.id == id){
+        if (AIRepository.getItems(bot) == null) return null
+        for (item in AIRepository.getItems(bot)!!.filter { it.distance(bot.location) < 10 }) {
+            if (item.id == id) {
                 //distance = item.distance(bot.location)
                 closest = item
             }
@@ -120,10 +130,10 @@ class ScriptAPI(private val bot: Player) {
         return closest
     }
 
-    fun takeNearestGroundItem(id: Int){
+    fun takeNearestGroundItem(id: Int) {
         val item = getNearestGroundItem(id)
-        if(item != null)
-            item.interaction?.handle(bot,item.interaction[2])
+        if (item != null)
+            item.interaction?.handle(bot, item.interaction[2])
     }
 
     fun getNearestGameObject(loc: Location, objectId: Int): GameObject? {
@@ -150,20 +160,20 @@ class ScriptAPI(private val bot: Player) {
         }
         for (i in 0 until length) {
             val npc = localNPCs[i] as NPC
-            run { if (checkValidTargets(npc,name)) targets.add(npc) }
+            run { if (checkValidTargets(npc, name)) targets.add(npc) }
         }
         return if (targets.size == 0) null else targets
     }
 
-    private fun checkValidTargets(target: NPC,name: String?): Boolean {
+    private fun checkValidTargets(target: NPC, name: String?): Boolean {
         if (!target.isActive) {
             return false
         }
         if (!target.properties.isMultiZone && target.inCombat()) {
             return false
         }
-        if (name != null){
-            if(target.name != name)
+        if (name != null) {
+            if (target.name != name)
                 return false
         }
         return target.definition.hasAction("attack")
@@ -185,36 +195,36 @@ class ScriptAPI(private val bot: Player) {
         }
     }
 
-    fun walkTo(loc: Location){
-        if(!bot.walkingQueue.isMoving) {
+    fun walkTo(loc: Location) {
+        if (!bot.walkingQueue.isMoving) {
             Executors.newSingleThreadExecutor().execute {
                 walkToIterator(loc)
             }
         }
     }
 
-    private fun walkToIterator(loc: Location){
+    private fun walkToIterator(loc: Location) {
         var diffX = loc.x - bot.location.x
         var diffY = loc.y - bot.location.y
-        while(!bot.location.transform(diffX,diffY,0).withinDistance(bot.location)) {
+        while (!bot.location.transform(diffX, diffY, 0).withinDistance(bot.location)) {
             diffX /= 2
             diffY /= 2
         }
-        GameWorld.Pulser.submit(object : MovementPulse(bot,bot.location.transform(diffX,diffY,0), Pathfinder.SMART){
+        GameWorld.Pulser.submit(object : MovementPulse(bot, bot.location.transform(diffX, diffY, 0), Pathfinder.SMART) {
             override fun pulse(): Boolean {
                 return true
             }
         })
     }
 
-    fun attackNpcInRadius(bot: Player,name: String, radius: Int): Boolean {
+    fun attackNpcInRadius(bot: Player, name: String, radius: Int): Boolean {
         if (bot.inCombat()) return true
-        var creatures: List<Entity>? = findTargets(bot, radius,name) ?: return false
+        var creatures: List<Entity>? = findTargets(bot, radius, name) ?: return false
         bot.attack(creatures!![RandomFunction.getRandom(creatures.size - 1)])
         return if (creatures.isNotEmpty()) {
             true
         } else {
-            creatures = findTargets(bot, radius,name)
+            creatures = findTargets(bot, radius, name)
             if (!creatures!!.isEmpty()) {
                 bot.attack(creatures.random())
                 return true
@@ -223,11 +233,11 @@ class ScriptAPI(private val bot: Player) {
         }
     }
 
-    fun GroundItem.distance(loc: Location): Double{
+    fun GroundItem.distance(loc: Location): Double {
         return location.getDistance(loc)
     }
 
-    fun teleportToGE(){
+    fun teleportToGE() {
         bot.lock()
         bot.visualize(ANIMATIONUP, GRAPHICSUP)
         bot.impactHandler.disabledTicks = 4
@@ -242,16 +252,16 @@ class ScriptAPI(private val bot: Player) {
         })
     }
 
-    fun sellOnGE(id: Int){
-        class toCounterPulse : MovementPulse(bot,Location.create(3165, 3487, 0) ){
+    fun sellOnGE(id: Int) {
+        class toCounterPulse : MovementPulse(bot, Location.create(3165, 3487, 0)) {
             override fun pulse(): Boolean {
-                val offer = GrandExchangeOffer(id,true)
+                val offer = GrandExchangeOffer(id, true)
                 val itemAmt = bot.bank.getAmount(id)
                 offer.amount = itemAmt
                 offer.offeredValue = ItemDefinition.forId(id).value
                 SystemLogger.log("Offered " + offer.amount)
-                GEOfferDispatch.dispatch(bot,offer)
-                bot.bank.remove(Item(id,itemAmt))
+                GEOfferDispatch.dispatch(bot, offer)
+                bot.bank.remove(Item(id, itemAmt))
                 bot.bank.refresh()
                 SystemLogger.log("Banked fish: " + bot.bank.getAmount(ItemNames.RAW_LOBSTER))
                 return true
@@ -260,16 +270,16 @@ class ScriptAPI(private val bot: Player) {
         bot.pulseManager.run(toCounterPulse())
     }
 
-    fun sellOnGE(id: Int, value: Int){
-        class toCounterPulseWithPrice : MovementPulse(bot,Location.create(3165, 3487, 0) ){
+    fun sellOnGE(id: Int, value: Int) {
+        class toCounterPulseWithPrice : MovementPulse(bot, Location.create(3165, 3487, 0)) {
             override fun pulse(): Boolean {
-                val offer = GrandExchangeOffer(id,true)
+                val offer = GrandExchangeOffer(id, true)
                 val itemAmt = bot.bank.getAmount(id)
                 offer.amount = itemAmt
                 offer.offeredValue = value
                 SystemLogger.log("Offered " + offer.amount)
-                GEOfferDispatch.dispatch(bot,offer)
-                bot.bank.remove(Item(id,itemAmt))
+                GEOfferDispatch.dispatch(bot, offer)
+                bot.bank.remove(Item(id, itemAmt))
                 bot.bank.refresh()
                 SystemLogger.log("Banked fish: " + bot.bank.getAmount(ItemNames.RAW_LOBSTER))
                 return true
@@ -278,7 +288,7 @@ class ScriptAPI(private val bot: Player) {
         bot.pulseManager.run(toCounterPulseWithPrice())
     }
 
-    fun teleport(loc: Location){
+    fun teleport(loc: Location) {
         bot.lock()
         bot.visualize(ANIMATIONUP, GRAPHICSUP)
         bot.impactHandler.disabledTicks = 4
@@ -293,12 +303,12 @@ class ScriptAPI(private val bot: Player) {
         })
     }
 
-    fun bankItem(item: Int){
-        class BankingPulse() : Pulse(20){
+    fun bankItem(item: Int) {
+        class BankingPulse() : Pulse(20) {
             override fun pulse(): Boolean {
                 val logs = bot.inventory.getAmount(item)
-                bot.inventory.remove(Item(item,logs))
-                bot.bank.add(Item(item,logs))
+                bot.inventory.remove(Item(item, logs))
+                bot.bank.add(Item(item, logs))
                 SystemLogger.log("${bot.username}: Banked $logs ${ItemDefinition.forId(item).name.toLowerCase()}")
                 SystemLogger.log("${bot.username}: Bank currently contains ${bot.bank.getAmount(item)} ${ItemDefinition.forId(item).name.toLowerCase()}")
                 return true

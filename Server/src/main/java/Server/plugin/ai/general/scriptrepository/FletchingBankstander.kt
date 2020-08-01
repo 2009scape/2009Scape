@@ -10,7 +10,7 @@ import plugin.skill.fletching.FletchingPulse
 class FletchingBankstander : Script(){
     var state = State.FLETCHING
     override fun tick() {
-        val bank = scriptAPI.getNearestNode("Bank booth")
+        val bank = scriptAPI.getNode("Bank booth")
         bot.faceLocation(bank?.location)
         state = when(state){
             State.FLETCHING -> {

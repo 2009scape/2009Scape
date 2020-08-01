@@ -5,42 +5,41 @@ import core.game.interaction.MovementPulse
 import core.game.node.item.Item
 import core.game.world.map.zone.ZoneBorders
 import core.tools.ItemNames
-import core.tools.RandomFunction
 import plugin.ai.skillingbot.SkillingBotAssembler
 import plugin.skill.Skills
 
-class DraynorWillows : Script(){
-    val willowZone = ZoneBorders(3084, 3225,3091, 3239)
+class DraynorWillows : Script() {
+    val willowZone = ZoneBorders(3084, 3225, 3091, 3239)
 
 
-    val bankZone = ZoneBorders(3092, 3240,3094, 3246)
+    val bankZone = ZoneBorders(3092, 3240, 3094, 3246)
     var state = State.CHOPPING
 
 
     override fun tick() {
-        when(state){
+        when (state) {
             State.CHOPPING -> {
-                if(!willowZone.insideBorder(bot))
+                if (!willowZone.insideBorder(bot))
                     scriptAPI.walkTo(willowZone.randomLoc)
-                else{
-                    val willowtree = scriptAPI.getNearestNode("willow",true)
-                    if(willowtree != null)
-                        willowtree.interaction.handle(bot,willowtree.interaction[0])
-                    if(bot.inventory.getAmount(Item(ItemNames.WILLOW_LOGS_1519)) > 22)
+                else {
+                    val willowtree = scriptAPI.getNode("willow", `object` = true)
+                    if (willowtree != null)
+                        willowtree.interaction.handle(bot, willowtree.interaction[0])
+                    if (bot.inventory.getAmount(Item(ItemNames.WILLOW_LOGS_1519)) > 22)
                         state = State.BANKING
                 }
             }
 
             State.BANKING -> {
-                if(!bankZone.insideBorder(bot))
+                if (!bankZone.insideBorder(bot))
                     scriptAPI.walkTo(bankZone.randomLoc)
-                else{
-                    val bank = scriptAPI.getNearestNode("Bank Booth",true)
-                    if(bank != null){
-                        bot.pulseManager.run(object : MovementPulse(bot,bank, DestinationFlag.OBJECT){
+                else {
+                    val bank = scriptAPI.getNode("Bank Booth", `object` = true)
+                    if (bank != null) {
+                        bot.pulseManager.run(object : MovementPulse(bot, bank, DestinationFlag.OBJECT) {
                             override fun pulse(): Boolean {
                                 val logs = bot.inventory.getAmount(Item(ItemNames.WILLOW_LOGS_1519))
-                                bot.inventory.remove(Item(ItemNames.WILLOW_LOGS_1519,logs))
+                                bot.inventory.remove(Item(ItemNames.WILLOW_LOGS_1519, logs))
                                 state = State.CHOPPING
                                 return true
                             }
@@ -48,7 +47,6 @@ class DraynorWillows : Script(){
                     }
                 }
             }
-
 
 
         }
@@ -61,7 +59,7 @@ class DraynorWillows : Script(){
 
     override fun newInstance(): Script {
         val script = DraynorWillows()
-        script.bot = SkillingBotAssembler().produce(SkillingBotAssembler.Wealth.values().random(),bot.startLocation)
+        script.bot = SkillingBotAssembler().produce(SkillingBotAssembler.Wealth.values().random(), bot.startLocation)
         return script
     }
 

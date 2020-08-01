@@ -2,17 +2,12 @@ package plugin.ai.general.scriptrepository
 
 import core.game.interaction.DestinationFlag
 import core.game.interaction.MovementPulse
-import core.game.node.item.Item
 import core.game.system.SystemLogger
 import core.game.system.task.Pulse
 import core.game.world.map.Location
-import core.game.world.map.path.Pathfinder
-import core.game.world.map.zone.Zone
 import core.game.world.map.zone.ZoneBorders
 import core.tools.ItemNames
-import plugin.ai.AIPlayer
 import plugin.ai.pvmbots.CombatBotAssembler
-import java.net.Proxy
 
 class CowKiller : Script() {
     var state = State.TELE_GE
@@ -51,7 +46,7 @@ class CowKiller : Script() {
                 if(cowZone.insideBorder(bot))
                     scriptAPI.walkTo(Location.create(3253, 3267, 0))
                 else{
-                    val closedGate = scriptAPI.getNearestNode(15516,true)
+                    val closedGate = scriptAPI.getNode(15516,true)
                     if(closedGate != null && closedGate.location.withinDistance(bot.location,2)){
                         closedGate.interaction.handle(bot,closedGate.interaction[0])
                     } else {
@@ -61,7 +56,7 @@ class CowKiller : Script() {
                                 stairs?.interaction?.handle(bot, stairs.interaction[0])
                             }
                             Location.create(3206, 3229, 1) -> {
-                                val stairs = scriptAPI.getNearestNode(36777, true)
+                                val stairs = scriptAPI.getNode(36777, true)
                                 stairs?.interaction?.handle(bot, stairs.interaction[1])
                             }
                             Location.create(3206, 3229, 2) -> {
@@ -76,7 +71,7 @@ class CowKiller : Script() {
 
             State.BANKING -> {
                 if(bankZone.insideBorder(bot)) {
-                    val bank = scriptAPI.getNearestNode(36786, true)
+                    val bank = scriptAPI.getNode(36786, true)
                     bot.pulseManager.run(object : MovementPulse(bot, bank, DestinationFlag.OBJECT) {
                         override fun pulse(): Boolean {
                             scriptAPI.bankItem(ItemNames.COWHIDE)
@@ -99,15 +94,15 @@ class CowKiller : Script() {
                 else {
                     when (bot.location) {
                         Location.create(3206, 3229, 2) -> {
-                            val stairs = scriptAPI.getNearestNode(36778, true)
+                            val stairs = scriptAPI.getNode(36778, true)
                             stairs?.interaction?.handle(bot, stairs.interaction[0])
                         }
                         Location.create(3206, 3229, 1) -> {
-                            val stairs = scriptAPI.getNearestNode(36777, true)
+                            val stairs = scriptAPI.getNode(36777, true)
                             stairs?.interaction?.handle(bot, stairs.interaction[2])
                         }
                         Location.create(3252, 3267, 0) -> {
-                            val closedGate = scriptAPI.getNearestNode(15516, true)
+                            val closedGate = scriptAPI.getNode(15516, true)
                             if (closedGate != null && closedGate.location.withinDistance(bot.location, 2)) {
                                 SystemLogger.log("Opening closed gate.")
                                 closedGate.interaction.handle(bot, closedGate.interaction[0])

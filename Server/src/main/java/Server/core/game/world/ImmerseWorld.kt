@@ -52,11 +52,12 @@ object ImmerseWorld {
         GeneralBotCreator(Idler(), skillingBotAssembler.produce(SkillingBotAssembler.Wealth.RICH,WestBankIdlerBorders.randomLoc))
         GeneralBotCreator(GlassBlowingBankstander(), skillingBotAssembler.produce(SkillingBotAssembler.Wealth.POOR,Location.create(3256, 3420, 0)))
         GeneralBotCreator(VarrockEssenceMiner(), skillingBotAssembler.produce(SkillingBotAssembler.Wealth.POOR,Location.create(3253, 3420, 0)))
-        GeneralBotCreator(VarrockSmither(), skillingBotAssembler.produce(SkillingBotAssembler.Wealth.RICH,Location.create(3189, 3436, 0)))
+        GeneralBotCreator(Smither(), skillingBotAssembler.produce(SkillingBotAssembler.Wealth.RICH,Location.create(3189, 3436, 0)))
         GeneralBotCreator(NonBankingMiner(), skillingBotAssembler.produce(SkillingBotAssembler.Wealth.POOR,Location.create(3182, 3374, 0)))
     }
 
     fun immersePestControl() {
         GeneralBotCreator(FletchingBankstander(), skillingBotAssembler.produce(SkillingBotAssembler.Wealth.AVERAGE,Location.create(RandomFunction.random(2665,2669), 2653, 0)))
+        GeneralBotCreator(Smither(), skillingBotAssembler.produce(SkillingBotAssembler.Wealth.POOR,Location.create(2665, 2653, 0)))
     }
 }

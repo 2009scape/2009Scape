@@ -7,7 +7,7 @@ import plugin.skill.Skills
 
 class NonBankingMiner : Script() {
     override fun tick() {
-        val rock = scriptAPI.getNearestNode(11957,true)
+        val rock = scriptAPI.getNode(11957,true)
         if(rock != null){
             rock.interaction.handle(bot,rock.interaction[0])
             if(bot.inventory.isFull)

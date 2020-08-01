@@ -159,7 +159,7 @@ public abstract class MovementPulse extends Pulse {
 
 	@Override
 	public boolean update() {
-//
+
 		mover.face(null);
 		if (mover == null || destination == null || mover.getViewport().getRegion() == null || this == null) {
 			return false;

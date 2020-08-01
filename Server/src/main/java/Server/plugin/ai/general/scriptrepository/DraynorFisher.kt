@@ -20,7 +20,7 @@ class DraynorFisher  : Script() {
                 if(!fishingZone.insideBorder(bot))
                     scriptAPI.walkTo(fishingZone.randomLoc)
                 else {
-                    val spot = scriptAPI.getNearestNode(316,false)
+                    val spot = scriptAPI.getNode(316,false)
                     spot?.interaction?.handle(bot,spot.interaction[0]) ?: scriptAPI.walkTo(fishingZone.randomLoc)
                     if(bot.inventory.getMaximumAdd(Item(4151)) < 5)
                         state = State.BANKING
@@ -31,7 +31,7 @@ class DraynorFisher  : Script() {
                 if(!bankZone.insideBorder(bot))
                     scriptAPI.walkTo(bankZone.randomLoc)
                 else {
-                    val bank = scriptAPI.getNearestNode("Bank booth")
+                    val bank = scriptAPI.getNode("Bank booth")
                     if (bank != null){
                         bot.pulseManager.run(object : MovementPulse(bot,bank, DestinationFlag.OBJECT){
                             override fun pulse(): Boolean {

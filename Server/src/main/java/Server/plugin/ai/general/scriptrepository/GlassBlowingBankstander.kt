@@ -10,7 +10,7 @@ import plugin.skill.crafting.GlassProduct
 class GlassBlowingBankstander : Script(){
     var state = State.BLOWING
     override fun tick() {
-        val bank = scriptAPI.getNearestNode("Bank booth")
+        val bank = scriptAPI.getNode("Bank booth")
         bot.faceLocation(bank?.location)
         state = when(state){
             State.BLOWING -> {

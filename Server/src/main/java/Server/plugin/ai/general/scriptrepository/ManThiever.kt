@@ -1,13 +1,12 @@
 package plugin.ai.general.scriptrepository
 
 import core.game.node.item.Item
-import core.game.world.map.Location
 import plugin.ai.skillingbot.SkillingBotAssembler
 import java.util.*
 
 class ManThiever : Script() {
     override fun tick() {
-        val man = scriptAPI.getNearestNode("Man")
+        val man = scriptAPI.getNode("Man")
         man?.interaction?.handle(bot, man.interaction[2])
     }
 

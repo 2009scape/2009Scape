@@ -5,29 +5,28 @@ import core.game.interaction.MovementPulse
 import core.game.node.item.Item
 import core.game.system.SystemLogger
 import core.game.world.map.Location
-import core.game.world.map.path.Pathfinder
 import core.game.world.map.zone.ZoneBorders
 import core.tools.ItemNames
 import plugin.ai.skillingbot.SkillingBotAssembler
 import plugin.skill.Skills
 
-class VarrockEssenceMiner : Script(){
+class VarrockEssenceMiner : Script() {
 
     var state = State.TO_ESSENCE
     val auburyZone = ZoneBorders(3252, 3398, 3254, 3402)
-    val bankZone = ZoneBorders(3251, 3420,3254, 3422)
+    val bankZone = ZoneBorders(3251, 3420, 3254, 3422)
     override fun tick() {
-        if(!bot.questRepository.isComplete("Rune Mysteries")) {
+        if (!bot.questRepository.isComplete("Rune Mysteries")) {
             bot.questRepository.getQuest("Rune Mysteries").finish(bot)
         }
 
-        when(state){
+        when (state) {
             State.TO_ESSENCE -> {
-                if(!auburyZone.insideBorder(bot))
+                if (!auburyZone.insideBorder(bot))
                     scriptAPI.walkTo(auburyZone.randomLoc)
                 else {
-                    val aubury = scriptAPI.getNearestNode("Aubury")
-                    aubury?.interaction?.handle(bot,aubury.interaction[3])
+                    val aubury = scriptAPI.getNode("Aubury")
+                    aubury?.interaction?.handle(bot, aubury.interaction[3])
                     state = State.MINING
                 }
                 /*val bank = scriptAPI.getNearestNode("Bank booth",true)
@@ -49,18 +48,18 @@ class VarrockEssenceMiner : Script(){
             }
 
             State.MINING -> {
-                val essence = scriptAPI.getNearestNode(2491,true)
-                essence?.interaction?.handle(bot,essence.interaction[0])
-                if(bot.inventory.getAmount(ItemNames.PURE_ESSENCE_7936) > 25)
+                val essence = scriptAPI.getNode(2491, true)
+                essence?.interaction?.handle(bot, essence.interaction[0])
+                if (bot.inventory.getAmount(ItemNames.PURE_ESSENCE_7936) > 25)
                     state = State.TO_BANK
             }
 
             State.TO_BANK -> {
-                val portal = scriptAPI.getNearestNode("Portal",true)
-                if(portal != null && portal.location.withinDistance(bot.location,20))
-                    portal.interaction.handle(bot,portal.interaction[0])
+                val portal = scriptAPI.getNode("Portal", `object` = true)
+                if (portal != null && portal.location.withinDistance(bot.location, 20))
+                    portal.interaction.handle(bot, portal.interaction[0])
                 else {
-                    if(!bankZone.insideBorder(bot)){
+                    if (!bankZone.insideBorder(bot)) {
                         scriptAPI.walkTo(bankZone.randomLoc)
                     } else {
                         state = State.BANKING
@@ -69,13 +68,13 @@ class VarrockEssenceMiner : Script(){
             }
 
             State.BANKING -> {
-                val bank = scriptAPI.getNearestNode("bank booth",true)
-                if(bank != null){
-                    bot.pulseManager.run(object : MovementPulse(bot,bank, DestinationFlag.OBJECT){
+                val bank = scriptAPI.getNode("bank booth", `object` = true)
+                if (bank != null) {
+                    bot.pulseManager.run(object : MovementPulse(bot, bank, DestinationFlag.OBJECT) {
                         override fun pulse(): Boolean {
                             bot.faceLocation(bank.location)
                             scriptAPI.bankItem(ItemNames.PURE_ESSENCE_7936)
-                            if(bot.bank.getAmount(ItemNames.PURE_ESSENCE_7936) > 500){
+                            if (bot.bank.getAmount(ItemNames.PURE_ESSENCE_7936) > 500) {
                                 SystemLogger.log("Should tele")
                                 state = State.TELE_GE
                                 return true
@@ -88,14 +87,14 @@ class VarrockEssenceMiner : Script(){
             }
 
             State.TELE_GE -> {
-                if(bot.location != Location.create(3165, 3482, 0))
+                if (bot.location != Location.create(3165, 3482, 0))
                     scriptAPI.walkTo(Location.create(3165, 3482, 0))
                 else
                     state = State.SELL_GE
             }
 
             State.SELL_GE -> {
-                scriptAPI.sellOnGE(ItemNames.PURE_ESSENCE_7936,50)
+                scriptAPI.sellOnGE(ItemNames.PURE_ESSENCE_7936, 50)
                 state = State.TO_ESSENCE
             }
 
@@ -103,7 +102,7 @@ class VarrockEssenceMiner : Script(){
 
     }
 
-    enum class State{
+    enum class State {
         TO_ESSENCE,
         TO_BANK,
         MINING,
@@ -119,7 +118,7 @@ class VarrockEssenceMiner : Script(){
 
     override fun newInstance(): Script {
         val script = VarrockEssenceMiner()
-        script.bot = SkillingBotAssembler().produce(SkillingBotAssembler.Wealth.POOR,bot.startLocation)
+        script.bot = SkillingBotAssembler().produce(SkillingBotAssembler.Wealth.POOR, bot.startLocation)
         return script
     }
 }

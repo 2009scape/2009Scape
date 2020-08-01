@@ -4,11 +4,9 @@ import core.game.content.ItemNames
 import core.game.interaction.DestinationFlag
 import core.game.interaction.MovementPulse
 import core.game.node.item.Item
-import core.game.system.task.Pulse
 import core.game.world.map.Location
 import core.game.world.map.path.Pathfinder
 import core.tools.RandomFunction
-import plugin.ai.AIPlayer
 import plugin.ai.skillingbot.SkillingBotAssembler
 import plugin.skill.Skills
 
@@ -19,7 +17,7 @@ class SeersMagicTrees : Script(){
     override fun tick() {
         when(state){
             State.CHOPPING -> {
-                val tree = scriptAPI.getNearestNode(1306,true)
+                val tree = scriptAPI.getNode(1306,true)
                 tree?.interaction?.handle(bot,tree.interaction[0])
                 if(bot.inventory.getAmount(1513) > 25){
                     state = State.FIND_BANK
@@ -37,7 +35,7 @@ class SeersMagicTrees : Script(){
             }
 
             State.BANKING -> {
-                val bank = scriptAPI.getNearestNode(25808,true)
+                val bank = scriptAPI.getNode(25808,true)
                 if(bank != null)
                     bot.pulseManager.run(object: MovementPulse(bot,bank, DestinationFlag.OBJECT){
                         override fun pulse(): Boolean {
