@@ -2,6 +2,7 @@ package core.game.world
 
 import core.game.world.map.Location
 import core.game.world.map.zone.ZoneBorders
+import core.tools.RandomFunction
 import plugin.ai.general.GeneralBotCreator
 import plugin.ai.general.scriptrepository.*
 import plugin.ai.pvmbots.CombatBotAssembler
@@ -17,6 +18,7 @@ object ImmerseWorld {
             immerseSeersAndCatherby()
             immerseLumbridgeDraynor()
             immerseVarrock()
+            immersePestControl()
         }
     }
 
@@ -52,5 +54,9 @@ object ImmerseWorld {
         GeneralBotCreator(VarrockEssenceMiner(), skillingBotAssembler.produce(SkillingBotAssembler.Wealth.POOR,Location.create(3253, 3420, 0)))
         GeneralBotCreator(VarrockSmither(), skillingBotAssembler.produce(SkillingBotAssembler.Wealth.RICH,Location.create(3189, 3436, 0)))
         GeneralBotCreator(NonBankingMiner(), skillingBotAssembler.produce(SkillingBotAssembler.Wealth.POOR,Location.create(3182, 3374, 0)))
+    }
+
+    fun immersePestControl() {
+        GeneralBotCreator(FletchingBankstander(), skillingBotAssembler.produce(SkillingBotAssembler.Wealth.AVERAGE,Location.create(RandomFunction.random(2665,2669), 2653, 0)))
     }
 }

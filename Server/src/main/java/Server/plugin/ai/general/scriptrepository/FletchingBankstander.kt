@@ -14,7 +14,7 @@ class FletchingBankstander : Script(){
         bot.faceLocation(bank?.location)
         state = when(state){
             State.FLETCHING -> {
-                bot.inventory.add(Item(ItemNames.KNIFE))
+                bot.inventory.add(Item(ItemNames.KNIFE_946))
                 bot.inventory.add(Item(ItemNames.LOGS_1511,27))
                 bot.pulseManager.run(FletchingPulse(bot, Item(ItemNames.LOGS_1511),27,Fletching.FletchingItems.ARROW_SHAFT))
                 State.BANKING

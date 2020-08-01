@@ -34,13 +34,13 @@ public class RandomFunction {
 
 	/**
 	 * Method used to ease the access of the random class.
-	 * @param a the minimum random value.
-	 * @param b the maximum random value.
+	 * @param min the minimum random value.
+	 * @param max the maximum random value.
 	 * @return the value as an {@link Integer}.
 	 */
-	public static final int random(int a, int b) {
-		final int n = Math.abs(b - a);
-		return Math.min(a, b) + (n == 0 ? 0 : random(n));
+	public static final int random(int min, int max) {
+		final int n = Math.abs(max - min);
+		return Math.min(min, max) + (n == 0 ? 0 : random(n));
 	}
 
 	/**

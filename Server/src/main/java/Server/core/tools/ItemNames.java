@@ -910,7 +910,7 @@ public class ItemNames {
 	    public static final int WORM_943 = 943;
 	    public static final int WORM_NOTED_944 = 944;
 	    public static final int THROWING_ROPE_945 = 945;
-	    public static final int KNIFE = 946;
+		public static final int KNIFE_946 = 946;
 	    public static final int KNIFE_NOTED_947 = 947;
 	    public static final int BEAR_FUR_948 = 948;
 	    public static final int BEAR_FUR_NOTED_949 = 949;
