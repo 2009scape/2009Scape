@@ -20,7 +20,7 @@ class DraynorFisher  : Script() {
                 if(!fishingZone.insideBorder(bot))
                     scriptAPI.walkTo(fishingZone.randomLoc)
                 else {
-                    val spot = scriptAPI.getNode(316,false)
+                    val spot = scriptAPI.getNode(316,`object`=false)
                     spot?.interaction?.handle(bot,spot.interaction[0]) ?: scriptAPI.walkTo(fishingZone.randomLoc)
                     if(bot.inventory.getMaximumAdd(Item(4151)) < 5)
                         state = State.BANKING

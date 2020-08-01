@@ -12,7 +12,7 @@ class FarmerThiever : Script() {
         if(!pickpocketZone.insideBorder(bot))
             scriptAPI.walkTo(pickpocketZone.randomLoc)
         else{
-            val farmer = scriptAPI.getNode(2234,false)
+            val farmer = scriptAPI.getNode(2234,`object`=false)
             farmer?.interaction?.handle(bot,farmer.interaction[2]) ?: scriptAPI.walkTo(pickpocketZone.randomLoc)
 
         }

@@ -17,7 +17,7 @@ class SeersMagicTrees : Script(){
     override fun tick() {
         when(state){
             State.CHOPPING -> {
-                val tree = scriptAPI.getNode(1306,true)
+                val tree = scriptAPI.getNode(1306,`object`=true)
                 tree?.interaction?.handle(bot,tree.interaction[0])
                 if(bot.inventory.getAmount(1513) > 25){
                     state = State.FIND_BANK
@@ -35,7 +35,7 @@ class SeersMagicTrees : Script(){
             }
 
             State.BANKING -> {
-                val bank = scriptAPI.getNode(25808,true)
+                val bank = scriptAPI.getNode(25808,`object`=true)
                 if(bank != null)
                     bot.pulseManager.run(object: MovementPulse(bot,bank, DestinationFlag.OBJECT){
                         override fun pulse(): Boolean {

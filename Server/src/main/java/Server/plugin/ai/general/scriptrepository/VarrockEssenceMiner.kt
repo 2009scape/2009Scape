@@ -48,7 +48,7 @@ class VarrockEssenceMiner : Script() {
             }
 
             State.MINING -> {
-                val essence = scriptAPI.getNode(2491, true)
+                val essence = scriptAPI.getNode(2491, `object`=true)
                 essence?.interaction?.handle(bot, essence.interaction[0])
                 if (bot.inventory.getAmount(ItemNames.PURE_ESSENCE_7936) > 25)
                     state = State.TO_BANK
