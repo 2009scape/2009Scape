@@ -8,25 +8,13 @@ mainClassName = 'org.runite.Client'
 
 repositories {
     flatDir {
-        dirs 'lib'
+        dirs 'libs'
     }
 }
 
 
 dependencies {
     implementation name: 'clientlibs'
-    implementation name: 'commons-io-2.4'
-    implementation name: 'guava-18.0'
-    implementation name: 'javassist-3.20.0-GA'
-    implementation name: 'joda-time-2.9.9'
-    implementation name: 'json-simple-1.1.1'
-    implementation name: 'laf-plugin-7.2.1'
-    implementation name: 'laf-widget-7.2.1'
-    implementation name: 'mysql-connector-java-5.1.30-bin'
-    implementation name: 'reflections-0.9.10'
-    implementation name: 'substance-7.2.1'
-    implementation name: 'trident-7.2.1'
-    implementation name: 'twitter4j-core-4.0.3-SNAPSHOT'
 }
 
 
