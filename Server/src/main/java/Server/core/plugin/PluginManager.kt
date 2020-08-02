@@ -52,7 +52,7 @@ object PluginManager {
     }
 
     fun load() {
-        val result = ClassGraph().disableJarScanning().enableClassInfo().enableAnnotationInfo().scan()
+        val result = ClassGraph().enableClassInfo().enableAnnotationInfo().scan()
         result.getClassesWithAnnotation("core.plugin.InitializablePlugin").forEach(Consumer { p: ClassInfo ->
             try {
                 definePlugin(p.loadClass().newInstance() as Plugin<JvmType.Object>)
