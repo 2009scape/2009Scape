@@ -18,7 +18,7 @@ repositories {
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
     implementation name: 'clientlibs'
     implementation name: 'guava-18.0'
     implementation name: 'javassist-3.20.0-GA'
@@ -40,3 +40,8 @@ sourceSets {
     main.kotlin.srcDirs = ['src/main/java/Server']
 }
 
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
