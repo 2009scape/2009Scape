@@ -14,6 +14,7 @@
     msip="127.0.0.1"
     default_xp_rate="5"
     allow_slayer_reroll="false"
+    enable_default_clan="true"
     enable_bots="true"
     autostock_ge="true"
     allow_token_purchase="true"

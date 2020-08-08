@@ -76,6 +76,7 @@ class GameSettings
         val msAddress: String,
         val default_xp_rate: Double,
         val allow_slayer_reroll: Boolean,
+        val enable_default_clan: Boolean,
         val enable_bots: Boolean,
         val autostock_ge: Boolean,
         val allow_token_purchase: Boolean
@@ -123,6 +124,7 @@ class GameSettings
                 val ipAddress = settings.getAttribute("msip")
                 val defaultXpRate = settings.getAttribute("default_xp_rate").toDouble()
                 val allowSlayerReroll = settings.getAttribute("allow_slayer_reroll")!!.toBoolean()
+                val enableDefaultClan = settings.getAttribute("enable_default_clan")!!.toBoolean()
                 val enableBots = settings.getAttribute("enable_bots")!!.toBoolean()
                 val autostockGe = settings.getAttribute("autostock_ge")!!.toBoolean()
                 val allow_token_purchase = settings.getAttribute("allow_token_purchase")!!.toBoolean()
@@ -139,7 +141,7 @@ class GameSettings
                         }
                     }
                 }
-                return GameSettings(name, beta, devMode, startGui, worldId, countryId, activity, true, pvp, false, false, ipAddress,defaultXpRate,allowSlayerReroll,enableBots,autostockGe,allow_token_purchase)
+                return GameSettings(name, beta, devMode, startGui, worldId, countryId, activity, true, pvp, false, false, ipAddress,defaultXpRate,allowSlayerReroll,enableDefaultClan,enableBots,autostockGe,allow_token_purchase)
             } catch (e: Exception) {
                 e.printStackTrace()
             }

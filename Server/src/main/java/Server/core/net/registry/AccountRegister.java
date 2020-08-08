@@ -16,6 +16,7 @@ import core.game.system.SystemManager;
 import core.game.system.mysql.SQLEntryHandler;
 import core.game.system.mysql.SQLManager;
 import core.game.system.task.TaskExecutor;
+import core.game.world.GameWorld;
 import core.net.Constants;
 import core.net.IoSession;
 import core.net.event.LoginReadEvent;
@@ -165,16 +166,8 @@ public class AccountRegister extends SQLEntryHandler<RegistryDetails> {
 		statement.setInt(5, entry.getCountry());
 		statement.setTimestamp(6, new Timestamp(System.currentTimeMillis()));
 
-		//If the management server's settings register new users with the server's clan chat
-		//I believe if there was no entry there would be errors during the registration, hence a null entry if the setting is off
-		if(ServerConstants.NEW_PLAYER_DEFAULT_CLAN)
-		{
-			statement.setString(7,ServerConstants.SERVER_NAME.toLowerCase());
-		}else{
-			statement.setString(7,null);
-		}
-		
-		statement.setString(7, "2009scape");
+		statement.setString(7, GameWorld.getSettings().getEnable_default_clan() ? ServerConstants.SERVER_NAME.toLowerCase(): null);
+
 		statement.executeUpdate();
 		SQLManager.close(statement.getConnection());
 	}
