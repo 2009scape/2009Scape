@@ -725,7 +725,6 @@ class PlayerSaver (val player: Player){
                 item.put("charge", it.charge.toString())
                 json.add(item)
             }
-            slot++
         }
         return json
     }
@@ -734,7 +733,6 @@ class PlayerSaver (val player: Player){
         val coreData = JSONObject()
         val inventory = saveContainer(player.inventory)
         coreData.put("inventory",inventory)
-        slot = 0
 
         val bank = saveContainer(player.bank)
         coreData.put("bank",bank)
