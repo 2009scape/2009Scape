@@ -1,7 +1,7 @@
-package plugin.consumable.potion.effects;
+package plugin.consumable.effects;
 
 import core.game.node.entity.player.Player;
-import plugin.consumable.potion.PotionEffect;
+import plugin.consumable.PotionEffect;
 
 public class HealingEffect extends PotionEffect {
     int amt;

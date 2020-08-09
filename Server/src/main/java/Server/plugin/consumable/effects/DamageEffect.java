@@ -1,8 +1,8 @@
-package plugin.consumable.potion.effects;
+package plugin.consumable.effects;
 
 import core.game.node.entity.combat.ImpactHandler;
 import core.game.node.entity.player.Player;
-import plugin.consumable.potion.PotionEffect;
+import plugin.consumable.PotionEffect;
 
 public class DamageEffect extends PotionEffect {
     final double amt;

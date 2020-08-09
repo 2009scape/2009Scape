@@ -7,7 +7,8 @@ import core.game.world.update.flag.context.Animation;
 import core.tools.ItemNames;
 import core.tools.RandomFunction;
 import plugin.consumable.Drink;
-import plugin.consumable.potion.effects.*;
+import plugin.consumable.PotionEffect;
+import plugin.consumable.effects.*;
 import plugin.skill.Skills;
 
 import java.util.HashMap;
