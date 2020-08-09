@@ -1,5 +1,6 @@
 package plugin.npc.familiar;
 
+import plugin.consumable.Consumable;
 import plugin.consumable.Consumables;
 import plugin.consumable.Food;
 import plugin.skill.summoning.familiar.Familiar;
@@ -54,8 +55,8 @@ public class RavenousLocustNPC extends Familiar {
 				if (item == null) {
 					continue;
 				}
-				Food food = Consumables.getFoodByItemID(item.getId());
-				if (food != null) {
+				Consumable consumable = Consumables.getConsumableById(item.getId());
+				if (consumable != null) {
 					p.getInventory().remove(item);
 					break;
 				}

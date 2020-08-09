@@ -114,48 +114,6 @@ public abstract class Consumable implements Plugin<Object> {
 	}
 
 	/**
-	 * Method used to handle the interaction between food and a node.
-	 * @note override if needed.
-	 * @param player the player.
-	 * @param node the node.
-	 */
-	public boolean interact(final Player player, final Node node) {
-		return interact(player, node, "");
-	}
-
-	/**
-	 * Method used to handle the interaction between food and a node.
-	 * @note override if needed.
-	 * @param player the player.
-	 * @param node the node.
-	 * @param option the option (if any)
-	 */
-	public boolean interact(final Player player, final Node node, String option) {
-		switch (option) {
-		case "empty":
-			Item item = (Item) node;
-			if (item.getSlot() < 0) {
-				return false;
-			}
-			if (player.getInventory().remove(item, item.getSlot(), true)) {
-				player.getPacketDispatch().sendMessage(getEmptyMessage(item));
-			}
-			if (getEmptyItem() != null) {
-				player.getInventory().add(getEmptyItem());
-				return true;
-			}
-			Consumable c = Consumables.getConsumableByItem(item);
-			if (c != null) {
-				if (c.getEmptyItem() != null) {
-					player.getInventory().add(c.getEmptyItem());
-				}
-			}
-			break;
-		}
-		return true;
-	}
-
-	/**
 	 * Method used to add a skill bonus to a player.
 	 * @param player the player.
 	 * @param b the bonus.

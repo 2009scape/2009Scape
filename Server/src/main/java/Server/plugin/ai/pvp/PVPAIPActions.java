@@ -167,7 +167,7 @@ public class PVPAIPActions {
 		if((bot.getSkills().getStaticLevel(Skills.HITPOINTS) > bot.getSkills().getLifepoints() * 3) && bot.getInventory().containsItem(shark)) {
 			bot.lock(3);
 			Item food = bot.getInventory().getItem(shark);
-			Consumable consumable = Consumables.getFoodByItemID(food.getId());
+			Consumable consumable = Consumables.getConsumableById(food.getId());
 			if (consumable == null) {
 				consumable = new Food(food.getId(), new ConsumableProperties(1));
 			}

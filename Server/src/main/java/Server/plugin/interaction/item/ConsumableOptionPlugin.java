@@ -57,7 +57,7 @@ public final class ConsumableOptionPlugin extends OptionHandler {
 			potion.consume(player,node.getId());
 			return true;
 		}
-		Consumable consumable = food ? Consumables.getFoodByItemID(item.getId()) : Consumables.getDrinkByItemID(item.getId());
+		Consumable consumable = food ? Consumables.getConsumableById(item.getId()) : Consumables.getConsumableById(item.getId());
 		if (consumable == null) {
 			consumable = food ? new Food(item.getId(), new ConsumableProperties(1)) : new Drink(item.getId(), new ConsumableProperties(1));
 		}
