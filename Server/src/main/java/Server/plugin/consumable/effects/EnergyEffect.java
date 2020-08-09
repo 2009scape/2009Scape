@@ -1,9 +1,9 @@
 package plugin.consumable.effects;
 
 import core.game.node.entity.player.Player;
-import plugin.consumable.PotionEffect;
+import plugin.consumable.ConsumableEffect;
 
-public class EnergyEffect extends PotionEffect {
+public class EnergyEffect extends ConsumableEffect {
     double amt;
     public EnergyEffect(int amt){
         this.amt = amt;

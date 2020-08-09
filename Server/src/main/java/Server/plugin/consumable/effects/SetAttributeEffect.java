@@ -2,9 +2,9 @@ package plugin.consumable.effects;
 
 import core.game.node.entity.player.Player;
 import core.game.world.GameWorld;
-import plugin.consumable.PotionEffect;
+import plugin.consumable.ConsumableEffect;
 
-public class SetAttributeEffect extends PotionEffect {
+public class SetAttributeEffect extends ConsumableEffect {
     String attrString;
     Object attrValue;
     boolean isTicks;

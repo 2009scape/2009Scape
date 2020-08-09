@@ -1,10 +1,10 @@
 package plugin.consumable.effects;
 
 import core.game.node.entity.player.Player;
-import plugin.consumable.PotionEffect;
+import plugin.consumable.ConsumableEffect;
 import plugin.skill.Skills;
 
-public class RestoreEffect extends PotionEffect {
+public class RestoreEffect extends ConsumableEffect {
     double base,bonus;
     public RestoreEffect(double base, double bonus){
         this.base = base;

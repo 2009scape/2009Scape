@@ -1,10 +1,10 @@
 package plugin.consumable.effects;
 
 import core.game.node.entity.player.Player;
-import plugin.consumable.PotionEffect;
+import plugin.consumable.ConsumableEffect;
 import plugin.skill.Skills;
 
-public class IncrementSkillEffect extends PotionEffect {
+public class IncrementSkillEffect extends ConsumableEffect {
     private final int skill_slot;
     private final double base;
     private final double bonus;

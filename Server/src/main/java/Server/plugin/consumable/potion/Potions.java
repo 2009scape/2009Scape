@@ -6,8 +6,8 @@ import core.game.node.item.Item;
 import core.game.world.update.flag.context.Animation;
 import core.tools.ItemNames;
 import core.tools.RandomFunction;
+import plugin.consumable.ConsumableEffect;
 import plugin.consumable.Drink;
-import plugin.consumable.PotionEffect;
 import plugin.consumable.effects.*;
 import plugin.skill.Skills;
 
@@ -68,10 +68,10 @@ public enum Potions {
             }
         }
     }
-    public PotionEffect effect;
+    public ConsumableEffect effect;
     public int[] ids;
 
-    Potions(int[] ids, PotionEffect effect){
+    Potions(int[] ids, ConsumableEffect effect){
         this.effect = effect;
         this.ids = ids;
     }

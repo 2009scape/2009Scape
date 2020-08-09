@@ -2,9 +2,9 @@ package plugin.consumable.effects;
 
 import core.game.node.entity.player.Player;
 import core.game.node.entity.state.EntityState;
-import plugin.consumable.PotionEffect;
+import plugin.consumable.ConsumableEffect;
 
-public class RemoveStateEffect extends PotionEffect {
+public class RemoveStateEffect extends ConsumableEffect {
     int state;
     public RemoveStateEffect(int state){
         this.state = state;

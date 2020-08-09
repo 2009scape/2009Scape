@@ -1,9 +1,9 @@
 package plugin.consumable.effects;
 
 import core.game.node.entity.player.Player;
-import plugin.consumable.PotionEffect;
+import plugin.consumable.ConsumableEffect;
 
-public class HealingEffect extends PotionEffect {
+public class HealingEffect extends ConsumableEffect {
     int amt;
     public HealingEffect(int amount){
         this.amt = amount;

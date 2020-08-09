@@ -2,9 +2,9 @@ package plugin.consumable.effects;
 
 import core.game.node.entity.combat.ImpactHandler;
 import core.game.node.entity.player.Player;
-import plugin.consumable.PotionEffect;
+import plugin.consumable.ConsumableEffect;
 
-public class DamageEffect extends PotionEffect {
+public class DamageEffect extends ConsumableEffect {
     final double amt;
     final boolean isPercent;
 

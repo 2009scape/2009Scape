@@ -1,9 +1,9 @@
-package plugin.consumable.potion;
+package plugin.consumable;
 
 
 import core.game.node.entity.player.Player;
 
-public abstract class PotionEffect {
+public abstract class ConsumableEffect {
 	public abstract void activate(Player p);
 }
 
@@ -23,12 +23,12 @@ import java.util.Map;
  * @author Emperor
  *//*
 
-public enum PotionEffect {
+public enum ConsumableEffect {
 
 
 	*/
 /**
-	 * Constructs a new {@code PotionEffect} {@code Object}.
+	 * Constructs a new {@code ConsumableEffect} {@code Object}.
 	 * @param name The potion name (as it appears in the message).
 	 * @param itemIds The item ids of all the doses (starting from full potion
 	 * to 1 dose).
@@ -36,7 +36,7 @@ public enum PotionEffect {
 	 *//*
 
 	private
-	PotionEffect(final Effect effect) {
+	ConsumableEffect(final Effect effect) {
 		this.effect = effect;
 	}
 
@@ -52,7 +52,7 @@ public enum PotionEffect {
 	 * The potions mapping.
 	 *//*
 
-	private static Map<Integer, PotionEffect> potions = new HashMap<>();
+	private static Map<Integer, ConsumableEffect> potions = new HashMap<>();
 
 	*/
 /**
@@ -60,7 +60,7 @@ public enum PotionEffect {
 	 *//*
 
 	static {
-		for (PotionEffect p : PotionEffect.values())
+		for (ConsumableEffect p : ConsumableEffect.values())
 			for (int id : p.effect.getItemIds()) {
 				potions.put(id, p);
 			}
@@ -121,7 +121,7 @@ public enum PotionEffect {
 	 * @return The potion.
 	 *//*
 
-	public static PotionEffect forId(int itemId) {
+	public static ConsumableEffect forId(int itemId) {
 		return potions.get(itemId);
 	}
 
@@ -157,7 +157,7 @@ public enum PotionEffect {
 
 		*/
 /**
-		 * Constructs a new {@code PotionEffect} {@code Object}.
+		 * Constructs a new {@code ConsumableEffect} {@code Object}.
 		 * @param name the name.
 		 * @param itemIds the item ids.
 		 * @param skillBonus the bonus.
