@@ -66,6 +66,7 @@ object Server {
             }
         }
         timer.schedule(task, 0, 1000 * 60 * 5)
+        autoReconnect()
         GameWorld.prompt(true)
         SQLManager.init()
         Runtime.getRuntime().addShutdownHook(Thread(SystemShutdownHook()))
@@ -73,7 +74,7 @@ object Server {
         try {
             NioReactor.configure(43594 + GameWorld.getSettings()!!.worldId).start()
         } catch (e: BindException) {
-            println("Port " + 43594 + GameWorld.getSettings()!!.worldId + " is already in use!")
+            println("Port " + (43594 + GameWorld.getSettings()!!.worldId) + " is already in use!")
             throw e
         }
         SystemLogger.log(GameWorld.getName() + " flags " + GameWorld.getSettings().toString())
