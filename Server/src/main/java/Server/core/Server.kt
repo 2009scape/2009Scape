@@ -59,14 +59,6 @@ object Server {
         startTime = System.currentTimeMillis()
         val t = TimeStamp()
         //		backup = new AutoBackup();
-        val timer = java.util.Timer()
-        val task = object : TimerTask() {
-            override fun run() {
-                autoReconnect()
-            }
-        }
-        timer.schedule(task, 0, 1000 * 60 * 5)
-        autoReconnect()
         GameWorld.prompt(true)
         SQLManager.init()
         Runtime.getRuntime().addShutdownHook(Thread(SystemShutdownHook()))
@@ -77,6 +69,13 @@ object Server {
             println("Port " + (43594 + GameWorld.getSettings()!!.worldId) + " is already in use!")
             throw e
         }
+        val timer = java.util.Timer()
+        val task = object : TimerTask() {
+            override fun run() {
+                autoReconnect()
+            }
+        }
+        timer.schedule(task, 0, 1000 * 60 * 5)
         SystemLogger.log(GameWorld.getName() + " flags " + GameWorld.getSettings().toString())
         SystemLogger.log(GameWorld.getName() + " started in " + t.duration(false, "") + " milliseconds.")
         GEAutoStock.parse("data" + File.separator + "eco" + File.separator + "itemstostock.xml")
