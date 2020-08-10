@@ -141,7 +141,7 @@ public class WorldDatabase {
 	 */
 	public static GameServer register(WorldInfo info) {
 		GameServer server = DATABASE[info.getWorldId()];
-		if (server != null && server.getSession().isActive()) {
+		if (server != null && server.getSession().isActive() && !server.getSession().getAddress().equals(info.getAddress())) {
 			throw new IllegalStateException("World " + info.getWorldId() + " is already registered!");
 		}
 		flagUpdate();
