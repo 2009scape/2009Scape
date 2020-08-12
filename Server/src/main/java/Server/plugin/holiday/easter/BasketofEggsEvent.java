@@ -1,7 +1,7 @@
 package plugin.holiday.easter;
 
+import plugin.consumable.effects.HealingEffect;
 import plugin.dialogue.DialoguePlugin;
-import plugin.consumable.ConsumableProperties;
 import plugin.consumable.Consumables;
 import plugin.consumable.Food;
 import core.game.content.holiday.HolidayEvent;
@@ -522,14 +522,7 @@ public class BasketofEggsEvent extends HolidayEvent {
 		 * Constructs a new {@code CupofTeaPlugin} {@code Object}.
 		 */
 		public ChocolateEggPlugin(int id) {
-			super(id, new ConsumableProperties(0));
+			super(new int[] {id}, new HealingEffect(0), new Animation(1835));
 		}
-
-		@Override
-		public void consume(final Item item, final Player player) {
-			super.remove(player, item);
-			player.animate(Animation.create(1835));
-		}
-
 	}
 }

@@ -1,8 +1,5 @@
 package plugin.consumable;
 
-import plugin.skill.SkillBonus;
-import plugin.skill.Skills;
-import core.game.node.Node;
 import core.game.node.entity.player.Player;
 import core.game.node.item.Item;
 import core.game.world.update.flag.context.Animation;
@@ -15,83 +12,33 @@ import core.plugin.Plugin;
  */
 public abstract class Consumable implements Plugin<Object> {
 
-	/**
-	 * Represents the animation when consuming.
-	 */
-	protected static final Animation ANIMATION = new Animation(829);
+	private final int[] ids;
 
-	/**
-	 * Represents the empty vial item.
-	 */
-	protected static final Item VIAL = new Item(229);
-
-	/**
-	 * Represents the empty bucket item.
-	 */
-	protected static final Item BUCKET = new Item(1925);
-
-	/**
-	 * Represents the empty jug item.
-	 */
-	protected static final Item JUG = new Item(1935);
-
-	/**
-	 * Represents the empty bowl item.
-	 */
-	protected static final Item BOWL = new Item(1923);
-
-	/**
-	 * Represents the beer glass item.
-	 */
-	protected static final Item BEER_GLASS = new Item(1919);
-
-	/**
-	 * Represents the message used when emptying the consumable.
-	 */
-	protected static final String EMPTY_MESSAGE = "You empty the contents of the @name on the floor.";
-
-	/**
-	 * Represents the consumable item.
-	 */
-	private Item item;
-
-	/**
-	 * Represents the food properties of this food.
-	 */
-	private ConsumableProperties properties;
-
-	/**
-	 * Represents the item the player gets when emptying this item.
-	 */
-	protected Item emptyItem;
-
-	/**
-	 * Represents the message displayed when emptying the consumable.
-	 */
-	protected String emptyMessage;
+	private final ConsumableEffect effect;
 
 	/**
 	 * Represents the messages to display when consumed.
 	 */
-	protected String[] messages = null;
+	protected final String[] messages;
+
+	protected Animation animation = null;
 
 	/**
 	 * Constructs a new {@code Consumable} {@code Object}.
 	 * @param item the item.
 	 * @parma properties the properties.
 	 */
-	public Consumable(final Item item, final ConsumableProperties properties) {
-		this.item = item;
-		this.properties = properties;
+	public Consumable(final int[] ids, final ConsumableEffect effect, final String... messages) {
+		this.ids = ids;
+		this.effect = effect;
+		this.messages = messages;
 	}
 
-	/**
-	 * Constructs a new {@code Consumable} {@code Object}.
-	 */
-	public Consumable() {
-		/**
-		 * empty.
-		 */
+	public Consumable(final int[] ids, final ConsumableEffect effect, final Animation animation, final String... messages) {
+		this.ids = ids;
+		this.effect = effect;
+		this.animation = animation;
+		this.messages = messages;
 	}
 
 	/**
@@ -99,81 +46,25 @@ public abstract class Consumable implements Plugin<Object> {
 	 * @param player the player.
 	 */
 	public void consume(final Item item, final Player player) {
-		consume(item, player, properties.getHealing());
-	}
-
-	/**
-	 * Method called when this consumable is consumed.
-	 * @note override if needed, generally for extra effects.
-	 * @param player the player consuming this consumable.
-	 * @param the healing amount used to override, (generally to alter amt)
-	 * @param messages the messages to show.
-	 */
-	public void consume(final Item item, final Player player, int heal, String... messages) {
-
-	}
-
-	/**
-	 * Method used to add a skill bonus to a player.
-	 * @param player the player.
-	 * @param b the bonus.
-	 */
-	public void addBonus(final Player player, final SkillBonus b) {
-		int level = player.getSkills().getStaticLevel(b.getSkillId());
-		level = (int) (b.getBaseBonus() + level + (level * b.getBonus()));
-		if (b.getBonus() < 0) {
-			player.getSkills().setLevel(b.getSkillId(), level);
-			return;
-		}
-		if (player.getSkills().getLevel(b.getSkillId()) <= level) {
-			if (b.getSkillId() == Skills.HITPOINTS) {
-				if (player.getSkills().getLifepoints() > player.getSkills().getStaticLevel(Skills.HITPOINTS)) {
-					return;
-				}
-				int difference = level - player.getSkills().getStaticLevel(b.getSkillId());
-				player.getSkills().setLevel(b.getSkillId(), player.getSkills().getLifepoints() + difference);
-			} else {
-				player.getSkills().setLevel(b.getSkillId(), level);
-			}
-		}
-	}
-
-	/**
-	 * Method used to remove the item and heal the player.
-	 * @param player the player.
-	 * @param item the item.
-	 */
-	public void remove(final Player player, final Item item) {
-		if (getProperties() == null) {
-			System.err.println("VEXIA SUCKS, PROPERTIES ARE NULL " + item.getId());
-			return;
-		}
-		if (!removed(item, player)) {
-			return;
-		}
-		player.animate(ANIMATION);
-		player.getSkills().heal(getProperties().getHealing());
-		player.getAudioManager().send(this instanceof Drink ? Drink.SOUND : Food.SOUND);
-	}
-
-	/**
-	 * Checks if an item is removed.
-	 * @param item t he item.
-	 * @param player the player.
-	 * @return {@code True} if so.
-	 */
-	public boolean removed(Item item, Player player) {
-		if (getProperties().hasNewItem()) {
-			if (player.getInventory().replace(getProperties().getNewItem(), item.getSlot()) == null) {
-				;
-				return false;
-			}
+		executeConsumptionActions(player);
+		final int nextItemId = getNextItemId(item.getId());
+		if (nextItemId != -1) {
+			player.getInventory().replace(new Item(nextItemId), item.getSlot());
 		} else {
-			if (!player.getInventory().remove(item, item.getSlot(), true)) {
-				return false;
+			player.getInventory().remove(item);
+		}
+		Consumables.getConsumableById(item.getId()).effect.activate(player);
+	}
+
+	protected abstract void executeConsumptionActions(Player player);
+
+	private int getNextItemId(final int currentConsumableId) {
+		for (int i = 0; i < ids.length; i++) {
+			if (ids[i] == currentConsumableId && i != ids.length - 1) {
+				return ids[i + 1];
 			}
 		}
-		return true;
+		return -1;
 	}
 
 	/**
@@ -197,25 +88,6 @@ public abstract class Consumable implements Plugin<Object> {
 				player.getPacketDispatch().sendMessage(message);
 			}
 		}
-	}
-
-	/**
-	 * Gets the item.
-	 * @return The item.
-	 */
-	public Item getItem() {
-		if (item != null) {
-			return item;
-		}
-		return item;
-	}
-
-	/**
-	 * Gets the properties.
-	 * @return The properties.
-	 */
-	public ConsumableProperties getProperties() {
-		return properties;
 	}
 
 	/**
@@ -259,22 +131,6 @@ public abstract class Consumable implements Plugin<Object> {
 		return item.getName().replace("(4)", "").replace("(3)", "").replace("(2)", "").replace("(1)", "").trim().toLowerCase();
 	}
 
-	/**
-	 * Gets the emptying item.
-	 * @return the item.
-	 */
-	public Item getEmptyItem() {
-		return emptyItem;
-	}
-
-	/**
-	 * Gets the empty message.
-	 * @return the message.
-	 */
-	public String getEmptyMessage(final Item item) {
-		return emptyMessage == null ? EMPTY_MESSAGE.replace("@name", getName(item)) : emptyMessage;
-	}
-
 	@Override
 	public Plugin<Object> newInstance(Object arg) throws Throwable {
 		Consumables.add(this);
@@ -284,5 +140,13 @@ public abstract class Consumable implements Plugin<Object> {
 	@Override
 	public Object fireEvent(String identifier, Object... args) {
 		return null;
+	}
+
+	public int getHealthEffectValue(Player player) {
+		return effect.getHealthEffectValue(player);
+	}
+
+	public int[] getIds() {
+		return ids;
 	}
 }

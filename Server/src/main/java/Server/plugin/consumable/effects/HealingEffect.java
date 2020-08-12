@@ -12,4 +12,9 @@ public class HealingEffect extends ConsumableEffect {
     public void activate(Player p) {
         p.getSkills().heal(amt);
     }
+
+    @Override
+    public int getHealthEffectValue(Player player) {
+        return amt;
+    }
 }

@@ -2,7 +2,7 @@ package plugin.consumable;
 
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.audio.Audio;
-import core.game.node.item.Item;
+import core.game.world.update.flag.context.Animation;
 
 /**
  * Represents a drink.
@@ -16,74 +16,22 @@ public class Drink extends Consumable {
 	 */
 	public static final Audio SOUND = new Audio(4580, 1, 0);
 
-	/**
-	 * Represents the drink consumtions.
-	 */
-	private Item[] drinks;
-
-	/**
-	 * Constructs a new {@code Drink} {@code Object}.
-	 */
-	public Drink() {
-		/**
-		 * empty.
-		 */
+	public Drink(int[] ids, ConsumableEffect effect, String... messages) {
+		super(ids, effect, messages);
+		animation = new Animation(1327);
 	}
 
-	/**
-	 * Constructs a new {@code Drink} {@code Object}.
-	 * @param item the item.
-	 * @param properties the properties.
-	 */
-	public Drink(Item item, ConsumableProperties properties, final Item[] drinks, final String... messages) {
-		super(item, properties);
-		this.drinks = drinks;
-		this.messages = messages;
-	}
-
-	/**
-	 * Constructs a new {@code Drink} {@code Object}.
-	 * @param item the item.
-	 * @param properties the properties.
-	 */
-	public Drink(final int item, final ConsumableProperties properties) {
-		super(new Item(item), properties);
-	}
-
-	/**
-	 * Constructs a new {@code Drink} {@code Object}.
-	 * @param item the item.
-	 * @param properties the properties.
-	 * @param messages the messages
-	 */
-	public Drink(Item item, ConsumableProperties properties, final String... messages) {
-		super(item, properties);
-		this.messages = messages;
-	}
-
-	/**
-	 * Constructs a new {@code Drink} {@code Object}.
-	 * @param item the item.
-	 * @param properties the properties.
-	 * @param messages the messages
-	 */
-	public Drink(final int item, final ConsumableProperties properties, final String... messages) {
-		this(new Item(item), properties, messages);
+	public Drink(int[] ids, ConsumableEffect effect, Animation animation, String... messages) {
+		super(ids, effect, animation, messages);
 	}
 
 	@Override
-	public void consume(final Item item, final Player player) {
-		final int initial = player.getSkills().getLifepoints();
-		remove(player, item);
-		message(player, item, initial);
+	protected void executeConsumptionActions(Player player) {
+		player.animate(animation);
+		playDrinkingSound(player);
 	}
 
-	/**
-	 * Gets the drink consumtions.
-	 * @return the drinks.
-	 */
-	public Item[] getDrinks() {
-		return drinks;
+	protected void playDrinkingSound(Player player) {
+		player.getAudioManager().send(SOUND);
 	}
-
 }

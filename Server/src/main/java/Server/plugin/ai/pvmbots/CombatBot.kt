@@ -8,9 +8,9 @@ import core.game.world.map.Location
 import core.tools.RandomFunction
 import plugin.ai.AIPlayer
 import plugin.consumable.Consumable
-import plugin.consumable.ConsumableProperties
 import plugin.consumable.Consumables
 import plugin.consumable.Food
+import plugin.consumable.effects.HealingEffect
 import plugin.skill.Skills
 import java.util.*
 
@@ -46,7 +46,7 @@ class CombatBot(location: Location) : AIPlayer(location) {
             val food = inventory.getItem(foodItem)
             var consumable: Consumable? = Consumables.getConsumableById(food.id)
             if (consumable == null) {
-                consumable = Food(food.id, ConsumableProperties(1))
+                consumable = Food(IntArray(food.id), HealingEffect(1))
             }
             consumable.consume(food, this)
             properties.combatPulse.delayNextAttack(3)

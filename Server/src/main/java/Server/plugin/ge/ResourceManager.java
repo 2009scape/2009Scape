@@ -2,6 +2,7 @@ package plugin.ge;
 
 import core.cache.def.impl.ItemDefinition;
 import core.game.system.config.ItemConfigParser;
+import plugin.consumable.Consumable;
 import plugin.consumable.Consumables;
 import plugin.consumable.Food;
 import plugin.skill.cooking.recipe.Recipe;
@@ -183,14 +184,11 @@ public final class ResourceManager {
 			}
 		}
 		for (Consumables c : Consumables.values()) {
-			if (c.getConsumable() instanceof Food) {
-				Food f = c.getConsumable().asFood();
-				if (f.getItem() != null && !handledResources.contains(id = f.getItem().getId())) {
+			final Consumable consumable = c.getConsumable();
+			for (int i = 0; i < consumable.getIds().length; i++) {
+				if (!handledResources.contains(id = consumable.getIds()[i])) {
 					handledResources.add(id);
 				}
-			}
-			if (!handledResources.contains(id = c.getConsumable().getItem().getId())) {
-				handledResources.add(id);
 			}
 		}
 		for (Recipe r : Recipe.RECIPES) {

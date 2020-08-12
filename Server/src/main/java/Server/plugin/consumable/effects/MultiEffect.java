@@ -14,4 +14,13 @@ public class MultiEffect extends ConsumableEffect {
             e.activate(p);
         }
     }
+
+    @Override
+    public int getHealthEffectValue(Player player) {
+        int healing = 0;
+        for (ConsumableEffect effect : effects) {
+            healing += effect.getHealthEffectValue(player);
+        }
+        return healing;
+    }
 }
