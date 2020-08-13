@@ -33,7 +33,7 @@ class CooksAssistant : Quest("Cook's Assistant",15, 14, 1, 29, 0, 1, 2){
 
             //MILK
             if (player.getAttribute("cooks_assistant:milk_submitted", false) || player.getAttribute("cooks_assistant:all_submitted", false)) { //If the player has handed in the bucket of milk
-                line(player,"<str>I have given the cook a bucket of milk.</str>", line++)
+                line(player,"---I have given the cook a bucket of milk./--", line++)
             } else if (player.inventory.contains(MILK, 1)){ // If the player has a bucket of milk in their inventory
                 line(player, "I have found a !!bucket of milk?? to give to the cook.", line++)
             } else { //If the player satisfies none of the above
@@ -44,7 +44,7 @@ class CooksAssistant : Quest("Cook's Assistant",15, 14, 1, 29, 0, 1, 2){
 
             //FLOUR
             if (player.getAttribute("cooks_assistant:flour_submitted", false) || player.getAttribute("cooks_assistant:all_submitted", false)) { //If the player has handed in the pot of flour
-                line(player,"<str>I have given the cook a pot of flour.</str>", line++)
+                line(player,"---I have given the cook a pot of flour./--", line++)
             } else if (player.inventory.contains(FLOUR, 1)){ // If the player has a pot of flour in their inventory
                 line(player, "I have found a !!pot of flour?? to give to the cook.", line++)
             } else { //If the player satisfies none of the above
@@ -54,7 +54,7 @@ class CooksAssistant : Quest("Cook's Assistant",15, 14, 1, 29, 0, 1, 2){
 
             //EGG
             if (player.getAttribute("cooks_assistant:egg_submitted", false) || player.getAttribute("cooks_assistant:all_submitted", false)) { //If the player has handed in the egg
-                line(player,"<str>I have given the cook an egg.</str>", line++)
+                line(player,"---I have given the cook an egg./--", line++)
             } else if (player.inventory.contains(EGG, 1)){ // If the player has an egg in their inventory
                 line(player, "I have found an !!egg?? to give to the cook.", line++)
             } else { //If the player satisfies none of the above
@@ -69,14 +69,14 @@ class CooksAssistant : Quest("Cook's Assistant",15, 14, 1, 29, 0, 1, 2){
             }
 
         } else if (stage >= 100) { //If the player has completed the quest
-            line(player,"<str>It was the Duke of Lumbridge's birthday,  but his cook had</str>", line++)
-            line(player,"<str>forgotten to buy the ingredients he needed to make him a</str>", line++)
-            line(player,"<str>cake. I brought the cook an egg, some flour and some milk</str>", line++)
-            line(player,"<str>and then cook made a delicious looking cake with them.</str>", line++)
+            line(player,"---It was the Duke of Lumbridge's birthday,  but his cook had/--", line++)
+            line(player,"---forgotten to buy the ingredients he needed to make him a/--", line++)
+            line(player,"---cake. I brought the cook an egg, some flour and some milk/--", line++)
+            line(player,"---and then cook made a delicious looking cake with them./--", line++)
             line += 1
-            line(player,"<str>As a reward he now lets me use his high quality range</str>", line++)
-            line(player,"<str>which lets me burn things less whenever I wish to cook</str>",line++)
-            line(player,"<str>there.</str>", line++)
+            line(player,"---As a reward he now lets me use his high quality range/--", line++)
+            line(player,"---which lets me burn things less whenever I wish to cook/--",line++)
+            line(player,"---there./--", line++)
             line += 1
             line(player,"<col=FF0000>QUEST COMPLETE!</col>",line)
         }
