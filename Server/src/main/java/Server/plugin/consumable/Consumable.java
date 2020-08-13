@@ -12,7 +12,7 @@ import core.plugin.Plugin;
  */
 public abstract class Consumable implements Plugin<Object> {
 
-	private final int[] ids;
+	protected final int[] ids;
 
 	protected final ConsumableEffect effect;
 
@@ -53,8 +53,33 @@ public abstract class Consumable implements Plugin<Object> {
 		} else {
 			player.getInventory().remove(item);
 		}
+		final int initialLifePoints = player.getSkills().getLifepoints();
 		Consumables.getConsumableById(item.getId()).effect.activate(player);
+		sendMessages(player, initialLifePoints, item, messages);
 	}
+
+	protected void sendMessages(final Player player, final int initialLifePoints, final Item item, String[] messages) {
+		if (messages.length == 0) {
+			sendDefaultMessages(player, item);
+		} else {
+			sendCustomMessages(player, messages);
+		}
+		sendHealingMessage(player, initialLifePoints);
+	}
+
+	protected void sendHealingMessage(final Player player, final int initialLifePoints) {
+		if (player.getSkills().getLifepoints() > initialLifePoints) {
+			player.getPacketDispatch().sendMessage("It heals some health.");
+		}
+	}
+
+	protected void sendCustomMessages(final Player player, final String[] messages) {
+		for (String message : messages) {
+			player.getPacketDispatch().sendMessage(message);
+		}
+	}
+
+	protected abstract void sendDefaultMessages(final Player player, final Item item);
 
 	protected abstract void executeConsumptionActions(Player player);
 
@@ -65,29 +90,6 @@ public abstract class Consumable implements Plugin<Object> {
 			}
 		}
 		return -1;
-	}
-
-	/**
-	 * Method used to message the player.
-	 * @param player the player.
-	 * @param item the item.
-	 * @param initial the initial hp amount.
-	 */
-	public void message(final Player player, final Item item, final int initial, final String... messages) {
-		if (messages == null || messages.length == 0) {
-			if (this instanceof Food) {
-				player.getPacketDispatch().sendMessage("You eat the " + item.getName().trim().toLowerCase() + ".");
-			} else if (this instanceof Drink) {
-				player.getPacketDispatch().sendMessage("You drink some of " + (item.getName().contains("brew") ? "the foul liquid" : "your " + item.getName().replace("(4)", "").replace("(3)", "").replace("(2)", "").replace("(1)", "").trim().toLowerCase()) + ".");
-			}
-			if (player.getSkills().getLifepoints() > initial) {
-				player.getPacketDispatch().sendMessage("It heals some health.");
-			}
-		} else {
-			for (String message : messages) {
-				player.getPacketDispatch().sendMessage(message);
-			}
-		}
 	}
 
 	/**
@@ -127,7 +129,7 @@ public abstract class Consumable implements Plugin<Object> {
 	 * @param item the item.
 	 * @return the name.
 	 */
-	public String getName(Item item) {
+	public String getFormattedName(Item item) {
 		return item.getName().replace("(4)", "").replace("(3)", "").replace("(2)", "").replace("(1)", "").trim().toLowerCase();
 	}
 
@@ -148,9 +150,5 @@ public abstract class Consumable implements Plugin<Object> {
 
 	public int[] getIds() {
 		return ids;
-	}
-
-	public ConsumableEffect getEffect() {
-		return effect;
 	}
 }

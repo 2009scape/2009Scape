@@ -27,7 +27,14 @@ public class Potion extends Drink {
                 player.getInventory().replace(new Item(VIAL), item.getSlot());
             }
         }
+        final int initialLifePoints = player.getSkills().getLifepoints();
         Consumables.getConsumableById(item.getId()).effect.activate(player);
+        if (messages.length == 0) {
+            sendDefaultMessages(player, item);
+        } else {
+            sendCustomMessages(player, messages);
+        }
+        sendHealingMessage(player, initialLifePoints);
     }
 
     @Override
@@ -36,7 +43,34 @@ public class Potion extends Drink {
         player.getAudioManager().send(SOUND);
     }
 
+    @Override
+    protected void sendDefaultMessages(Player player, Item item) {
+        int consumedDoses = 1;
+        int i = 0;
+        while (ids[i] != item.getId()) {
+            consumedDoses++;
+            i++;
+        }
+        final int dosesLeft = ids.length - consumedDoses;
+        player.getPacketDispatch().sendMessage("You drink some of your " + getFormattedName(item) + ".");
+        if (dosesLeft > 1) {
+            player.getPacketDispatch().sendMessage("You have " + dosesLeft + " doses of your potion left.");
+        } else if (dosesLeft == 1) {
+            player.getPacketDispatch().sendMessage("You have 1 dose of your potion left.");
+        } else {
+            player.getPacketDispatch().sendMessage("You have finished your potion.");
+        }
+    }
+
     public static int getDose(Item potion){
         return Integer.parseInt(potion.getName().replaceAll("[^\\d.]",""));
+    }
+
+    public int[] getIds() {
+        return ids;
+    }
+
+    public ConsumableEffect getEffect() {
+        return effect;
     }
 }

@@ -4,7 +4,6 @@ import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.audio.Audio;
 import core.game.node.item.Item;
 import core.game.world.update.flag.context.Animation;
-import plugin.consumable.effects.HealingEffect;
 
 /**
  * Represents a consumable food.
@@ -12,7 +11,6 @@ import plugin.consumable.effects.HealingEffect;
  * @date 22/12/2013
  */
 public class Food extends Consumable {
-	private String eatMessage;
 
 	/**
 	 * Represents the food consumtion sound.
@@ -26,6 +24,11 @@ public class Food extends Consumable {
 
 	public Food(int[] ids, ConsumableEffect effect, Animation animation, String... messages) {
 		super(ids, effect, animation, messages);
+	}
+
+	@Override
+	protected void sendDefaultMessages(Player player, Item item) {
+		player.getPacketDispatch().sendMessage("You eat the " + getFormattedName(item) + ".");
 	}
 
 	@Override
