@@ -21,7 +21,11 @@ public class Potion extends Drink {
         if (nextItemId != -1) {
             player.getInventory().replace(new Item(nextItemId), item.getSlot());
         } else {
-            player.getInventory().replace(new Item(VIAL), item.getSlot());
+            if (player.getBarcrawlManager().isFinished()) {
+                player.getInventory().remove(item);
+            } else {
+                player.getInventory().replace(new Item(VIAL), item.getSlot());
+            }
         }
         Consumables.getConsumableById(item.getId()).effect.activate(player);
     }
