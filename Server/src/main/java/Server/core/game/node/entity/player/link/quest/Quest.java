@@ -27,6 +27,11 @@ public abstract class Quest implements Plugin<Object> {
 	public static final String BLUE = "<col=08088A>";
 
 	/**
+	 * Represents the black string.
+	 */
+	public static final String BLACK = "<col=000000>";
+
+	/**
 	 * The constant representing the journal component.
 	 */
 	public static final int JOURNAL_COMPONENT = 275;
@@ -144,7 +149,7 @@ public abstract class Quest implements Plugin<Object> {
 				line++;
 			}
 		} else {
-			send = send.replace("!!",RED).replace("??",BLUE);
+			send = send.replace("!!",RED).replace("??",BLUE).replace("---",BLACK + "<str>").replace("/--", BLUE);
 			line(player, send, line, false);
 		}
 	}
