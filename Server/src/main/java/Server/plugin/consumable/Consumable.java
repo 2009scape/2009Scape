@@ -14,7 +14,7 @@ public abstract class Consumable implements Plugin<Object> {
 
 	private final int[] ids;
 
-	private final ConsumableEffect effect;
+	protected final ConsumableEffect effect;
 
 	/**
 	 * Represents the messages to display when consumed.
@@ -58,7 +58,7 @@ public abstract class Consumable implements Plugin<Object> {
 
 	protected abstract void executeConsumptionActions(Player player);
 
-	private int getNextItemId(final int currentConsumableId) {
+	protected int getNextItemId(final int currentConsumableId) {
 		for (int i = 0; i < ids.length; i++) {
 			if (ids[i] == currentConsumableId && i != ids.length - 1) {
 				return ids[i + 1];
@@ -148,5 +148,9 @@ public abstract class Consumable implements Plugin<Object> {
 
 	public int[] getIds() {
 		return ids;
+	}
+
+	public ConsumableEffect getEffect() {
+		return effect;
 	}
 }

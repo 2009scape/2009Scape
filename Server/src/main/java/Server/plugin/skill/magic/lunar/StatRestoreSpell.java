@@ -1,6 +1,7 @@
 package plugin.skill.magic.lunar;
 
-import plugin.consumable.potion.Potions;
+import plugin.consumable.Consumables;
+import plugin.consumable.Potion;
 import plugin.skill.magic.MagicSpell;
 import plugin.skill.magic.Runes;
 import core.game.node.Node;
@@ -40,7 +41,7 @@ public class StatRestoreSpell extends MagicSpell {
 	public boolean cast(Entity entity, Node target) {
 		final Player player = ((Player) entity);
 		Item item = ((Item) target);
-		final Potions potion = Potions.forId(item.getId());
+		final Potion potion = (Potion) Consumables.getConsumableById(item.getId());
 		player.getInterfaceManager().setViewedTab(6);
 		if (potion == null) {
 			player.getPacketDispatch().sendMessage("For use of this spell use only one a potion.");
@@ -76,7 +77,7 @@ public class StatRestoreSpell extends MagicSpell {
 				continue;
 			}
 			o.graphics(GRAPHICS);
-			potion.effect.activate(o);
+			potion.getEffect().activate(o);
 			size++;
 		}
 		if (size == 1) {
@@ -84,11 +85,11 @@ public class StatRestoreSpell extends MagicSpell {
 			return false;
 		}
 		super.meetsRequirements(player, true, true);
-		potion.effect.activate(player);
+		potion.getEffect().activate(player);
 		player.animate(ANIMATION);
 		player.graphics(GRAPHICS);
 		player.getInventory().remove(item);
-		player.getInventory().add(new Item(potion.ids[size - 1]));
+		player.getInventory().add(new Item(potion.getIds()[size - 1]));
 		return true;
 	}
 

@@ -1,10 +1,7 @@
 package plugin.interaction.item;
 
 import core.cache.def.impl.ItemDefinition;
-import plugin.consumable.Consumable;
-import plugin.consumable.Consumables;
-import plugin.consumable.Drink;
-import plugin.consumable.Food;
+import plugin.consumable.*;
 import core.game.interaction.OptionHandler;
 import core.game.node.Node;
 import core.game.node.entity.player.Player;
@@ -12,7 +9,6 @@ import core.game.node.item.Item;
 import core.plugin.InitializablePlugin;
 import core.plugin.Plugin;
 import plugin.consumable.effects.HealingEffect;
-import plugin.consumable.potion.Potions;
 
 /**
  * Represents the plugin used to consume a consumable item.
@@ -52,12 +48,11 @@ public final class ConsumableOptionPlugin extends OptionHandler {
 		if (player.getInventory().get(item.getSlot()) != item) {
 			return false;
 		}
-		if(Potions.forId(node.getId()) != null){
-			Potions potion = Potions.forId(node.getId());
-			potion.consume(player,node.getId());
+		Consumable consumable = Consumables.getConsumableById(item.getId());
+		if (consumable instanceof Potion) {
+			consumable.consume((Item) node, player);
 			return true;
 		}
-		Consumable consumable = food ? Consumables.getConsumableById(item.getId()) : Consumables.getConsumableById(item.getId());
 		if (consumable == null) {
 			consumable = food ? new Food(consumable.getIds(), new HealingEffect(1)) : new Drink(consumable.getIds(), new HealingEffect(1));
 		}

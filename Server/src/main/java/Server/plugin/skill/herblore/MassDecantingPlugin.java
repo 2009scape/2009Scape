@@ -9,7 +9,9 @@ import core.game.node.item.Item;
 
 import core.plugin.InitializablePlugin;
 import core.plugin.Plugin;
-import plugin.consumable.potion.Potions;
+import plugin.consumable.Consumable;
+import plugin.consumable.Consumables;
+import plugin.consumable.Potion;
 
 import java.util.HashMap;
 import java.util.List;
@@ -30,10 +32,10 @@ public class MassDecantingPlugin extends OptionHandler {
     }
 
     public void decant(Player p){
-        HashMap<Potions,Integer> potcounts = new HashMap<>();
+        HashMap<Potion,Integer> potcounts = new HashMap<>();
         final List<Item> results;
         for(int i = 0; i < 28; i++){
-            Potions pot = Potions.forId(p.getInventory().getId(i));
+            Potion pot = (Potion) Consumables.getConsumableById(p.getInventory().getId(i));
             if(pot != null){
                 int dosage = Integer.parseInt(p.getInventory().get(i).getName().replaceAll("[^\\d.]",""));
                 if(potcounts.get(pot) != null){
@@ -45,10 +47,10 @@ public class MassDecantingPlugin extends OptionHandler {
             }
         }
         potcounts.keySet().forEach(pot -> {
-            int full_count = (potcounts.get(pot) / pot.ids.length);
-            int partial_dose_amt = (potcounts.get(pot) % pot.ids.length);
-            p.getInventory().add(new Item(pot.ids[0],full_count));
-            if(partial_dose_amt > 0) p.getInventory().add(new Item(pot.ids[pot.ids.length - partial_dose_amt]));
+            int full_count = (potcounts.get(pot) / pot.getIds().length);
+            int partial_dose_amt = (potcounts.get(pot) % pot.getIds().length);
+            p.getInventory().add(new Item(pot.getIds()[0],full_count));
+            if(partial_dose_amt > 0) p.getInventory().add(new Item(pot.getIds()[pot.getIds().length - partial_dose_amt]));
         });
     }
 }

@@ -28,10 +28,6 @@ public class Drink extends Consumable {
 	@Override
 	protected void executeConsumptionActions(Player player) {
 		player.animate(animation);
-		playDrinkingSound(player);
-	}
-
-	protected void playDrinkingSound(Player player) {
 		player.getAudioManager().send(SOUND);
 	}
 }
