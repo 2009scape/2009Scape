@@ -15,7 +15,7 @@ public class Drink extends Consumable {
 	/**
 	 * Represents the sound of drinking.
 	 */
-	public static final Audio SOUND = new Audio(4580, 1, 0);
+	public static final Audio SOUND = new Audio(4580, 1, 1);
 
 	public Drink(int[] ids, ConsumableEffect effect, String... messages) {
 		super(ids, effect, messages);
