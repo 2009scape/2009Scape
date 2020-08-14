@@ -4,11 +4,11 @@ import core.game.node.entity.player.Player;
 import plugin.consumable.ConsumableEffect;
 import plugin.skill.Skills;
 
-public class IncrementSkillEffect extends ConsumableEffect {
+public class SkillEffect extends ConsumableEffect {
     private final int skill_slot;
     private final double base;
     private final double bonus;
-    public IncrementSkillEffect(int skill_slot, double base, double bonus){
+    public SkillEffect(int skill_slot, double base, double bonus){
         this.skill_slot = skill_slot;
         this.base = base;
         this.bonus = bonus;

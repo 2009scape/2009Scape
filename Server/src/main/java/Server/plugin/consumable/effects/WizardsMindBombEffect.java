@@ -14,7 +14,7 @@ public class WizardsMindBombEffect extends ConsumableEffect {
         if (p.getSkills().getLevel(Skills.MAGIC) > 50) {
             magicLevelBoost++;
         }
-        final MultiEffect effect = new MultiEffect(new IncrementSkillEffect(Skills.MAGIC, magicLevelBoost, 0), new HealingEffect(healing), new IncrementSkillEffect(Skills.ATTACK, -3, 0), new IncrementSkillEffect(Skills.STRENGTH, -4, 0), new IncrementSkillEffect(Skills.DEFENCE, -4, 0));
+        final MultiEffect effect = new MultiEffect(new SkillEffect(Skills.MAGIC, magicLevelBoost, 0), new HealingEffect(healing), new SkillEffect(Skills.ATTACK, -3, 0), new SkillEffect(Skills.STRENGTH, -4, 0), new SkillEffect(Skills.DEFENCE, -4, 0));
         effect.activate(p);
     }
 

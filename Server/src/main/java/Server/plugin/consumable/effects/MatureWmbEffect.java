@@ -14,7 +14,7 @@ public class MatureWmbEffect extends ConsumableEffect {
         if (p.getSkills().getLevel(Skills.MAGIC) > 50) {
             magicLevelBoost++;
         }
-        final MultiEffect effect = new MultiEffect(new IncrementSkillEffect(Skills.MAGIC, magicLevelBoost, 0), new HealingEffect(healing), new IncrementSkillEffect(Skills.ATTACK, -5, 0), new IncrementSkillEffect(Skills.STRENGTH, -5, 0), new IncrementSkillEffect(Skills.DEFENCE, -5, 0));
+        final MultiEffect effect = new MultiEffect(new SkillEffect(Skills.MAGIC, magicLevelBoost, 0), new HealingEffect(healing), new SkillEffect(Skills.ATTACK, -5, 0), new SkillEffect(Skills.STRENGTH, -5, 0), new SkillEffect(Skills.DEFENCE, -5, 0));
         effect.activate(p);
     }
 

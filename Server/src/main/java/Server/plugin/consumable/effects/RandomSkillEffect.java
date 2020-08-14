@@ -16,7 +16,7 @@ public class RandomSkillEffect extends ConsumableEffect {
 
     @Override
     public void activate(Player p) {
-        final IncrementSkillEffect effect = new IncrementSkillEffect(skillSlot, RandomFunction.random(a, b), 0);
+        final SkillEffect effect = new SkillEffect(skillSlot, RandomFunction.random(a, b), 0);
         effect.activate(p);
     }
 }
