@@ -22,7 +22,7 @@ public enum Consumables {
 	COOKED_RABBIT(new Food(new int[] {3228}, new HealingEffect(5))),
 	ANCHOVIES(new Food(new int[] {319}, new HealingEffect(1))),
 	SARDINE(new Food(new int[] {325}, new HealingEffect(4))),
-	POISON_KARAMBWAN(new Food(new int[] {3142}, new PoisonKarambwanEffect())),
+	POISON_KARAMBWAN(new Food(new int[] {3146}, new PoisonKarambwanEffect())),
 	UGTHANKI_MEAT(new Food(new int[] {1861}, new HealingEffect(3))),
 	HERRING(new Food(new int[] {347}, new HealingEffect(5))),
 	MACKEREL(new Food(new int[] {355}, new HealingEffect(6))),
@@ -68,7 +68,7 @@ public enum Consumables {
 	FISH_PIE(new HalfableFood(new int[] {7188, 7190, 2313}, new MultiEffect(new HealingEffect(6), new IncrementSkillEffect(Skills.FISHING, 3, 0)))),
 	ADMIRAL_PIE(new HalfableFood(new int[] {7198, 7200, 2313}, new MultiEffect(new HealingEffect(8), new IncrementSkillEffect(Skills.FISHING, 5, 0)))),
 	WILD_PIE(new HalfableFood(new int[] {7208, 7210, 2313}, new MultiEffect(new IncrementSkillEffect(Skills.SLAYER, 5, 0), new IncrementSkillEffect(Skills.RANGE, 4, 0), new HealingEffect(11)))),
-	SUMMER_PIE(new HalfableFood(new int[] {7218, 7220}, new MultiEffect(new HealingEffect(11), new IncrementSkillEffect(Skills.AGILITY, 5, 0), new EnergyEffect(10)))),
+	SUMMER_PIE(new HalfableFood(new int[] {7218, 7220, 2313}, new MultiEffect(new HealingEffect(11), new IncrementSkillEffect(Skills.AGILITY, 5, 0), new EnergyEffect(10)))),
 
 	/** Stews */
 	STEW(new Food(new int[] {1923, 2003}, new HealingEffect(11))),
@@ -246,8 +246,8 @@ public enum Consumables {
 
 	/** Tea */
 	CUP_OF_TEA(new Drink(new int[] {712, 1980}, new MultiEffect(new HealingEffect(3), new IncrementSkillEffect(Skills.ATTACK, 3, 0)), "Aaah, nothing like a nice cuppa tea!")),
-	CUP_OF_TEA_NETTLE(new Drink(new int[] {4242, 1980}, new EnergyEffect(5))),
-	CUP_OF_TEA_MILKY_NETTLE(new Drink(new int[] {4243, 1980}, new EnergyEffect(5))),
+	CUP_OF_TEA_NETTLE(new Drink(new int[] {4242, 1980}, new EnergyEffect(10))),
+	CUP_OF_TEA_MILKY_NETTLE(new Drink(new int[] {4243, 1980}, new EnergyEffect(10))),
 	NETTLE_TEA(new Drink(new int[] {4239, 1980}, new NettleTeaEffect())),
 	NETTLE_TEA_MILKY(new Drink(new int[] {4240, 1980}, new NettleTeaEffect())),
 	CUP_OF_TEA_CLAY(new Drink(new int[] {7730, 7728}, new IncrementSkillEffect(Skills.CONSTRUCTION, 1, 0), "You feel refreshed and ready for more building.")),
