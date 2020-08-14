@@ -39,6 +39,6 @@ public class Drink extends Consumable {
 
 	@Override
 	public String getFormattedName(Item item) {
-		return item.getName().replace("(4)", "").replace("(3)", "").replace("(2)", "").replace("(1)", "").replace("(m4)", "").replace("(m3)", "").replace("(m2)", "").replace("(m1)", "").trim().toLowerCase();
+		return item.getName().replace("(4)", "").replace("(3)", "").replace("(2)", "").replace("(1)", "").replace("(m4)", "").replace("(m3)", "").replace("(m2)", "").replace("(m1)", "").replace("(m)", "").trim().toLowerCase();
 	}
 }
