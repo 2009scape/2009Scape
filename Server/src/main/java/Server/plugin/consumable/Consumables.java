@@ -22,7 +22,7 @@ public enum Consumables {
 	COOKED_RABBIT(new Food(new int[] {3228}, new HealingEffect(5))),
 	ANCHOVIES(new Food(new int[] {319}, new HealingEffect(1))),
 	SARDINE(new Food(new int[] {325}, new HealingEffect(4))),
-	POISON_KARAMBWAN(new Food(new int[] {3142}, new DamageEffect(-5, false))),
+	POISON_KARAMBWAN(new Food(new int[] {3142}, new PoisonKarambwanEffect())),
 	UGTHANKI_MEAT(new Food(new int[] {1861}, new HealingEffect(3))),
 	HERRING(new Food(new int[] {347}, new HealingEffect(5))),
 	MACKEREL(new Food(new int[] {355}, new HealingEffect(6))),
@@ -291,7 +291,7 @@ public enum Consumables {
 	FISHING(new Potion(new int[] {2438, 151, 153, 155}, new IncrementSkillEffect(Skills.FISHING, 3, 0))),
 	PRAYER(new Potion(new int[] {2434, 139, 141, 143}, new PrayerEffect(7, 0.25))),
 	SUPER_RESTO(new Potion(new int[] {3024, 3026, 3028, 3030}, new MultiEffect(new RestoreEffect(8, 0.25), new PrayerEffect(8, 0.25)))),
-	ZAMMY_BREW(new Potion(new int[] {2450, 189, 191, 193}, new MultiEffect(new DamageEffect(0.1, true), new IncrementSkillEffect(Skills.ATTACK, 0, 0.15), new IncrementSkillEffect(Skills.STRENGTH, 0, 0.25), new IncrementSkillEffect(Skills.DEFENCE, 0, -0.1), new PrayerEffect(RandomFunction.random(0, 10), 0)))),
+	ZAMMY_BREW(new Potion(new int[] {2450, 189, 191, 193}, new MultiEffect(new DamageEffect(0.1, true), new IncrementSkillEffect(Skills.ATTACK, 0, 0.15), new IncrementSkillEffect(Skills.STRENGTH, 0, 0.25), new IncrementSkillEffect(Skills.DEFENCE, 0, -0.1), new RandomPrayerEffect(0, 10)))),
 	ANTIFIRE(new Potion(new int[] {2452, 2454, 2456, 2458}, new SetAttributeEffect("fire:immune", 600, true))),
 	GUTH_REST(new Potion(new int[] {4417, 4419, 4421, 4423}, new MultiEffect(new RemoveStateEffect(EntityState.POISONED.ordinal()), new EnergyEffect(5), new HealingEffect(5)))),
 	MAGIC_ESS(new Potion(new int[] {11491, 11489}, new IncrementSkillEffect(Skills.MAGIC,3,0))),
@@ -300,7 +300,7 @@ public enum Consumables {
 
 	/** Barbarian Mixes */
 	PRAYERMIX(new BarbarianMix(new int[] {11467, 11465}, new MultiEffect(new PrayerEffect(7, 0.25), new HealingEffect(6)))),
-	ZAMMY_MIX(new BarbarianMix(new int[] {11523, 11521}, new MultiEffect(new IncrementSkillEffect(Skills.HITPOINTS, 0, -0.10), new IncrementSkillEffect(Skills.ATTACK, 0, 0.15), new IncrementSkillEffect(Skills.STRENGTH, 0, 0.25), new IncrementSkillEffect(Skills.DEFENCE, 0, -0.1), new PrayerEffect(RandomFunction.random(0, 10), 0)))),
+	ZAMMY_MIX(new BarbarianMix(new int[] {11523, 11521}, new MultiEffect(new IncrementSkillEffect(Skills.HITPOINTS, 0, -0.10), new IncrementSkillEffect(Skills.ATTACK, 0, 0.15), new IncrementSkillEffect(Skills.STRENGTH, 0, 0.25), new IncrementSkillEffect(Skills.DEFENCE, 0, -0.1), new RandomPrayerEffect(0, 10)))),
 	ATT_MIX(new BarbarianMix(new int[] {11431, 11429}, new MultiEffect(new IncrementSkillEffect(Skills.ATTACK, 3, 0.1), new HealingEffect(3)))),
 	ANTIP_MIX(new BarbarianMix(new int[] {11435, 11433}, new MultiEffect(new RemoveStateEffect(EntityState.POISONED.ordinal()), new SetAttributeEffect("poison:immunity", 143), new HealingEffect(3)))),
 	RELIC_MIX(new BarbarianMix(new int[] {11439, 11437}, new MultiEffect(new RemoveStateEffect(EntityState.DISEASED.ordinal()), new SetAttributeEffect("disease:immunity", 300), new HealingEffect(3)))),
