@@ -33,6 +33,7 @@ class LumbridgeCookDialogue (player: Player? = null) : DialoguePlugin(player){
                 return true
             } else { //If the player has not handed all the items to the chef
                 npc(FacialExpression.SAD, "How are you getting on with finding the ingredients?")
+                gave = false //Resetting to false here to prevent dialogue skipping later
                 stage = 100
                 return true
             }
@@ -128,68 +129,51 @@ class LumbridgeCookDialogue (player: Player? = null) : DialoguePlugin(player){
                 4 -> player(FacialExpression.NEUTRAL,"I've got all the information I need. Thanks.").also { stage = 1000 }
             }
 
-            //Code for checking the ingredients
             100 ->
-                gave = false.also {//Default false to ensure that it checks the items
+                if (!player.getAttribute("cooks_assistant:milk_submitted", false) && player.inventory.contains(MILK, 1)) {
+                    player.setAttribute("/save:cooks_assistant:milk_submitted", true).also {
+                        player(FacialExpression.HAPPY, "Here's a bucket of milk.");
+                        player.inventory.remove(Item(MILK));
+                        gave = true
+                        stage = 100
+                    }
+                } else if (!player.getAttribute("cooks_assistant:flour_submitted", false) && player.inventory.contains(FLOUR, 1)) {
+                    player.setAttribute("/save:cooks_assistant:flour_submitted", true).also {
+                        player(FacialExpression.HAPPY, "Here's a pot of flour.");
+                        player.inventory.remove(Item(FLOUR));
+                        gave = true
+                        stage = 100
+                    }
+                } else if (!player.getAttribute("cooks_assistant:egg_submitted", false) && player.inventory.contains(EGG, 1)) {
+                    player.setAttribute("/save:cooks_assistant:egg_submitted", true).also {
+                        player(FacialExpression.HAPPY, "Here's a fresh egg.");
+                        player.inventory.remove(Item(EGG));
+                        gave = true
+                        stage = 100
+                    }
+                } else {
+                    if (gave) {
 
-                    //If the player has not submitted the item but has it in their inventory
-                    if (!player.getAttribute("cooks_assistant:milk_submitted", false) && player.inventory.contains(MILK, 1)) {
-                        player.setAttribute("/save:cooks_assistant:milk_submitted", true).also {
-                            player(FacialExpression.HAPPY, "Here's a bucket of milk.")
-                            player.inventory.remove(Item(MILK))
-                            gave = true
+                        //If this is the first time the player gave an item (or items) to the Lumbridge cook
+                        if (!player.getAttribute("cooks_assistant:submitted_some_items", false)) {
+                            player.setAttribute("/save:cooks_assistant:submitted_some_items", true)
                         }
-                    }
-                    stage++
-                }
-            101 ->
-                gave = gave.also {
 
-                    if (!player.getAttribute("cooks_assistant:flour_submitted", false) && player.inventory.contains(FLOUR, 1)) {
-                        player.setAttribute("/save:cooks_assistant:flour_submitted", true).also {
-                            player(FacialExpression.HAPPY, "Here's a pot of flour.");
-                            player.inventory.remove(Item(FLOUR));
-                            gave = true
-
+                        //If the player has now handed in all the ingredients
+                        if (player.getAttribute("cooks_assistant:milk_submitted", false) && player.getAttribute("cooks_assistant:flour_submitted", false) && player.getAttribute("cooks_assistant:egg_submitted", false)) {
+                            npc(FacialExpression.HAPPY, "You've brought me everything I need! I am saved!", "Thank you!").also { player.setAttribute("/save:cooks_assistant:all_submitted",true); stage = 200 }
+                        } else {
+                            npc(FacialExpression.WORRIED,"Thanks for the ingredients you have got so far, please get","the rest quickly. I'm running out of time! The Duke","will throw me into the streets!").also { stage = 151 }
                         }
-                    }
-                    stage++
-                }
-            102 ->
-                gave = gave.also {
 
-                    if (!player.getAttribute("cooks_assistant:egg_submitted", false) && player.inventory.contains(EGG, 1)) {
-                        player.setAttribute("/save:cooks_assistant:egg_submitted", true).also {
-                            player(FacialExpression.HAPPY, "Here's a fresh egg.");
-                            player.inventory.remove(Item(EGG));
-                            gave = true
+                    } else { //If the player did not give an item to the Lumbridge cook
+
+                        //If the player also has never submitted anything before
+                        if (!player.getAttribute("cooks_assistant:submitted_some_items", false)) {
+                            player(FacialExpression.NEUTRAL, "I haven't gotten any of them yet, I'm still looking.").also { stage = 155 }
+                        } else {
+                            options("I'll get right on it.", "Can you remind me how to find these things again?").also { stage = 161 }
                         }
-                    }
-                    stage++
-                }
-            103 ->
-                //If the player gave an item to the Lumbridge cook
-                if (gave) {
-
-                    //If this is the first time the player gave an item (or items) to the Lumbridge cook
-                    if (!player.getAttribute("cooks_assistant:submitted_some_items", false)) {
-                        player.setAttribute("/save:cooks_assistant:submitted_some_items", true)
-                    }
-
-                    //If the player has now handed in all the ingredients
-                    if (player.getAttribute("cooks_assistant:milk_submitted", false) && player.getAttribute("cooks_assistant:flour_submitted", false) && player.getAttribute("cooks_assistant:egg_submitted", false)) {
-                        npc(FacialExpression.HAPPY, "You've brought me everything I need! I am saved!", "Thank you!").also { player.setAttribute("/save:cooks_assistant:all_submitted",true); stage = 200 }
-                    } else {
-                        npc(FacialExpression.WORRIED,"Thanks for the ingredients you have got so far, please get","the rest quickly. I'm running out of time! The Duke","will throw me into the streets!").also { stage = 151 }
-                    }
-
-                } else { //If the player did not give an item to the Lumbridge cook
-
-                    //If the player also has never submitted anything before
-                    if (!player.getAttribute("cooks_assistant:submitted_some_items",false)) {
-                        player(FacialExpression.NEUTRAL,"I haven't gotten any of them yet, I'm still looking.").also { stage = 155 }
-                    } else {
-                        options("I'll get right on it.","Can you remind me how to find these things again?").also { stage = 161 }
                     }
                 }
 

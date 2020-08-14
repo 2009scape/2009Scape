@@ -64,7 +64,7 @@ class CooksAssistant : Quest("Cook's Assistant",15, 14, 1, 29, 0, 1, 2){
             }
 
             //If the player has handed everything in but was interrupted the final dialogue
-            if (player.getAttribute("cooks_assistant:all_submitted", false)) {
+            if (player.getAttribute("cooks_assistant:all_submitted", false) || (player.getAttribute("cooks_assistant:milk_submitted", false) && player.getAttribute("cooks_assistant:flour_submitted", false) && player.getAttribute("cooks_assistant:egg_submitted", false))) {
                 line(player,"I should return to the !!Cook.??", line)
             }
 
