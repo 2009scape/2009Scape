@@ -42,7 +42,6 @@ public enum Consumables {
 	TUNA(new Food(new int[] {361}, new HealingEffect(10))),
 	COOKED_KARAMBWAN(new Food(new int[] {3144}, new HealingEffect(18))),
 	COOKED_CHOMPY(new Food(new int[] {2878}, new HealingEffect(10))),
-	COOKED_FISHCAKE(new Food(new int[] {7530}, new HealingEffect(11))),
 	RAINBOW_FISH(new Food(new int[] {10136}, new HealingEffect(11))),
 	CAVE_EEL(new Food(new int[] {5003}, new HealingEffect(7))),
 	LOBSTER(new Food(new int[] {379}, new HealingEffect(12))),
@@ -55,9 +54,16 @@ public enum Consumables {
 	SEA_TURTLE(new Food(new int[] {397}, new HealingEffect(21))),
 	MANTA_RAY(new Food(new int[] {391}, new HealingEffect(22))),
 	KARAMBWANJI(new Food(new int[] {3151}, new HealingEffect(3))),
+	STUFFED_SNAKE(new Food(new int[] {7579}, new HealingEffect(20), "You eat the stuffed snake-it's quite a meal! It tastes like chicken.")),
 
 	/** Bread */
 	BREAD(new Food(new int[] {2309}, new HealingEffect(5))),
+
+	/** Kebabs */
+	UGTHANKI_KEBAB(new Food(new int[] {1883}, new UgthankiKebabEffect())),
+	UGTHANKI_KEBAB_SMELLING(new Food(new int[] {1885}, new SmellingUgthankiKebabEffect())),
+	KEBAB(new Food(new int[] {1971}, new KebabEffect())),
+	SUPER_KEBAB(new Food(new int[] {4608}, new SuperKebabEffect())),
 
 	/** Pies */
 	REDBERRY_PIE(new HalfableFood(new int[] {2325, 2333, 2313}, new HealingEffect(5))),
@@ -84,6 +90,9 @@ public enum Consumables {
 	CAKE(new Cake(new int[] {1891, 1893, 1895}, new HealingEffect(4), "You eat part of the cake.", "You eat some more cake.", "You eat the slice of cake.")),
 	CHOCOLATE_CAKE(new Cake(new int[] {1897, 1899, 1901}, new HealingEffect(5), "You eat part of the chocolate cake.", "You eat some more of the chocolate cake.", "You eat the slice of cake.")),
 	ROCK_CAKE(new Food(new int[] {2379}, new RockCakeEffect(), "The rock cake resists all attempts to eat it.")),
+	DWARVEN_ROCK_CAKE(new Food(new int[] {7510, 7510}, new DwarvenRockCakeEffect())),
+	HOT_DWARVEN_ROCK_CAKE(new Food(new int[] {7509, 7509}, new DwarvenRockCakeEffect())),
+	COOKED_FISHCAKE(new Food(new int[] {7530}, new HealingEffect(11))),
 	MINT_CAKE(new Food(new int[] {9475}, new EnergyEffect(50))),
 
 	/** Vegetables */
@@ -106,6 +115,7 @@ public enum Consumables {
 	TUNA_POTATO(new Food(new int[] {7060}, new HealingEffect(22))),
 	ONION(new Food(new int[] {1957}, new HealingEffect(2), "It's always sad to see a grown man/woman cry.")),
 	CABBAGE(new Food(new int[] {1965}, new HealingEffect(2), "You eat the cabbage. Yuck!")),
+	DRAYNOR_CABBAGE(new Food(new int[] {1967}, new DraynorCabbageEffect(), "You eat the cabbage.", "It seems to taste nicer than normal.")),
 	EVIL_TURNIP(new Food(new int[] {12134, 12136, 12138}, new HealingEffect(6))),
 
 	/** Dairies */
@@ -122,12 +132,15 @@ public enum Consumables {
 	ORANGE_CHUNKS(new Food(new int[] {2110}, new HealingEffect(2))),
 	ORANGE_SLICES(new Food(new int[] {2112}, new HealingEffect(2))),
 	PAPAYA_FRUIT(new Food(new int[] {5972}, new HealingEffect(2))),
+	TENTI_PINEAPPLE(new FakeConsumable(1851, new String[] {"Try using a knife to slice it into pieces."})),
+	PINEAPPLE(new FakeConsumable(2114, new String[] {"Try using a knife to slice it into pieces."})),
 	PINEAPPLE_CHUNKS(new Food(new int[] {2116}, new HealingEffect(2))),
 	PINEAPPLE_RING(new Food(new int[] {2118}, new HealingEffect(2))),
 	DWELLBERRIES(new Food(new int[] {2126}, new HealingEffect(2))),
 	JANGERBERRIES(new Food(new int[] {247}, new MultiEffect(new SkillEffect(Skills.ATTACK, 2, 0), new SkillEffect(Skills.STRENGTH, 1, 0), new PrayerEffect(1, 0), new SkillEffect(Skills.DEFENCE, -1, 0)))),
-	STRAWBERRY(new Food(new int[] {5504}, new HealingEffect(2))),
+	STRAWBERRY(new Food(new int[] {5504}, new MultiEffect(new HealingEffect(1), new PercentageHealthEffect(6)))),
 	TOMATO(new Food(new int[] {1982}, new HealingEffect(2))),
+	WATERMELON(new FakeConsumable(5982, new String[] {"Try using a knife to slice it into pieces."})),
 	WATERMELON_SLICE(new Food(new int[] {5984}, new PercentageHealthEffect(5))),
 	LEMON(new Food(new int[] {2102}, new HealingEffect(2))),
 	LEMON_CHUNKS(new Food(new int[] {2104}, new HealingEffect(2))),
@@ -168,6 +181,7 @@ public enum Consumables {
 	PREMADE_CHOC_BOMB(new Food(new int[] {2229}, new HealingEffect(15))),
 
 	/** Ales */
+	ASGOLDIAN_ALE(new FakeConsumable(7508, new String[] {"I don't think I'd like gold in beer thanks. Leave it for the dwarves."})),
 	ASGARNIAN_ALE(new Drink(new int[] {1905, 1919}, new MultiEffect(new HealingEffect(2), new SkillEffect(Skills.STRENGTH, 2, 0), new SkillEffect(Skills.ATTACK, -4, 0)), "You drink the ale. You feel slightly reinvigorated...", "...and slightly dizzy too.")),
 	ASGARNIAN_ALE_KEG(new Drink(new int[] {5785, 5783, 5781, 5779, 5769}, new MultiEffect(new SkillEffect(Skills.STRENGTH, 2, 0), new SkillEffect(Skills.ATTACK, -4, 0)), new Animation(2289), "You drink the ale. You feel slightly reinvigorated...", "...and slightly dizzy too.")),
 	ASGARNIAN_ALE_M(new Drink(new int[] {5739, 1919}, new MultiEffect(new SkillEffect(Skills.STRENGTH, 3, 0), new SkillEffect(Skills.ATTACK, -6, 0)))),
@@ -261,6 +275,8 @@ public enum Consumables {
 	PURPLE_SWEETS(new Food(new int[] {4561}, new HealingEffect(0))),
 	PURPLE_SWEETS_STACKABLE(new Food(new int[] {10476, 10476}, new MultiEffect(new EnergyEffect(10), new RandomHealthEffect(1, 3)), "The sugary goodness heals some energy.", "The sugary goodness is yummy.")),
 	FIELD_RATION(new Food(new int[] {7934}, new HealingEffect(10))),
+	TCHIKI_MONKEY_NUTS(new Food(new int[] {7573}, new HealingEffect(5), "You eat the Tchiki monkey nuts. They taste nutty.")),
+	TCHIKI_MONKEY_PASTE(new Food(new int[] {7575}, new HealingEffect(5), "You eat the Tchiki monkey nut paste. It sticks to the roof of your mouth.")),
 
 	/** Special Events */
 	PUMPKIN(new Food(new int[] {1959}, new HealingEffect(14))),
