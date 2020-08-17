@@ -14,12 +14,17 @@ public class KebabEffect extends ConsumableEffect {
         String message;
         if (randomNumber < 66) {
             effect = new PercentageHealthEffect(10);
+            final int initialLifePoints = p.getSkills().getLifepoints();
             effect.activate(p);
-            message = "It heals some health.";
+            if (p.getSkills().getLifepoints() > initialLifePoints) {
+                message = "It heals some health.";
+                p.getPacketDispatch().sendMessage(message);
+            }
         } else if (randomNumber < 87) {
             effect = new RandomHealthEffect(10, 20);
             effect.activate(p);
             message = "That was a good kebab. You feel a lot better.";
+            p.getPacketDispatch().sendMessage(message);
         } else if (randomNumber < 96) {
             if (RandomFunction.nextInt(100) < 50) {
                 final int affectedSkillSlot = RandomFunction.nextInt(Skills.NUM_SKILLS - 1);
@@ -33,15 +38,17 @@ public class KebabEffect extends ConsumableEffect {
                         effect = new SkillEffect(affectedSkillSlot, -3, 0);
                 }
                 message = "That tasted a bit dodgy. You feel a bit ill.";
+                p.getPacketDispatch().sendMessage(message);
                 effect.activate(p);
             } else {
                 message = "That kebab didn't seem to do a lot.";
+                p.getPacketDispatch().sendMessage(message);
             }
         } else {
             effect = new MultiEffect(new HealingEffect(30), new RandomSkillEffect(Skills.ATTACK, 1, 3), new RandomSkillEffect(Skills.DEFENCE, 1, 3), new RandomSkillEffect(Skills.STRENGTH, 1, 3));
             effect.activate(p);
             message = "Wow, that was an amazing kebab! You feel really invigorated.";
+            p.getPacketDispatch().sendMessage(message);
         }
-        p.getPacketDispatch().sendMessage(message);
     }
 }

@@ -5,10 +5,10 @@ import plugin.consumable.ConsumableEffect;
 
 public class PercentageHealthEffect extends ConsumableEffect {
 
-    private final int percentage;
+    private final double percentage;
 
     public PercentageHealthEffect(final int percentage) {
-        this.percentage = percentage / 100;
+        this.percentage = percentage * 0.01;
     }
 
     @Override
@@ -19,6 +19,6 @@ public class PercentageHealthEffect extends ConsumableEffect {
 
     @Override
     public int getHealthEffectValue(Player player) {
-        return player.getSkills().getMaximumLifepoints() * percentage;
+        return (int) (player.getSkills().getMaximumLifepoints() * percentage);
     }
 }

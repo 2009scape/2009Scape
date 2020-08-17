@@ -15,10 +15,16 @@ public class DamageEffect extends ConsumableEffect {
 
     @Override
     public void activate(Player p) {
+        p.getImpactHandler().manualHit(p,-getHealthEffectValue(p), ImpactHandler.HitsplatType.NORMAL);
+    }
+
+    @Override
+    public int getHealthEffectValue(Player player) {
         double amount = amt;
-        if(isPercent){
-            amount *= p.getSkills().getLifepoints();
+        if (isPercent) {
+            amount /= 100;
+            return (int) -(amount * player.getSkills().getLifepoints());
         }
-        p.getImpactHandler().manualHit(p,(int)amount, ImpactHandler.HitsplatType.NORMAL);
+        return (int) -amt;
     }
 }

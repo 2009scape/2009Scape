@@ -9,12 +9,7 @@ public class NettleTeaEffect extends ConsumableEffect {
 
     @Override
     public void activate(Player p) {
-        ConsumableEffect effect;
-        if (p.getSkills().getLifepoints() < p.getSkills().getMaximumLifepoints()) {
-            effect = new MultiEffect(new HealingEffect(3), new EnergyEffect(5));
-        } else {
-            effect = new HealingEffect(3);
-        }
+        final ConsumableEffect effect = p.getSkills().getLifepoints() < p.getSkills().getMaximumLifepoints() ? new MultiEffect(new HealingEffect(3), new EnergyEffect(5)) : new HealingEffect(3);
         effect.activate(p);
     }
 

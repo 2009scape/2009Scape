@@ -16,6 +16,6 @@ public class RockCakeEffect extends ConsumableEffect {
 
     @Override
     public int getHealthEffectValue(Player player) {
-        return (int) (player.getSkills().getLifepoints() * 0.1);
+        return (int) (player.getSkills().getLifepoints() * -0.1);
     }
 }

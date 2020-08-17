@@ -13,4 +13,9 @@ public class DwarvenRockCakeEffect extends ConsumableEffect {
             effect.activate(p);
         }
     }
+
+    @Override
+    public int getHealthEffectValue(Player player) {
+        return player.getSkills().getLifepoints() > 2 ? -1 : 0;
+    }
 }

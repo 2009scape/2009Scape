@@ -13,4 +13,9 @@ public class PoisonKarambwanEffect extends ConsumableEffect {
             effect.activate(p);
         }
     }
+
+    @Override
+    public int getHealthEffectValue(Player player) {
+        return -5;
+    }
 }
