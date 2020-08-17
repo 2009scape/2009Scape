@@ -61,10 +61,10 @@ public abstract class Consumable implements Plugin<Object> {
 	protected void sendMessages(final Player player, final int initialLifePoints, final Item item, String[] messages) {
 		if (messages.length == 0) {
 			sendDefaultMessages(player, item);
+			sendHealingMessage(player, initialLifePoints);
 		} else {
 			sendCustomMessages(player, messages);
 		}
-		sendHealingMessage(player, initialLifePoints);
 	}
 
 	protected void sendHealingMessage(final Player player, final int initialLifePoints) {
