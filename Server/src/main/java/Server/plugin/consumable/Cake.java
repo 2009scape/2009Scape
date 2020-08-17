@@ -3,6 +3,9 @@ package plugin.consumable;
 import core.game.node.entity.player.Player;
 import core.game.node.item.Item;
 
+/**
+ * Represents any cake item that is made of three even slices.
+ */
 public class Cake extends Food {
 
     public Cake(int[] ids, ConsumableEffect effect, String... messages) {

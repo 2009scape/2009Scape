@@ -3,6 +3,9 @@ package plugin.consumable;
 import core.game.node.entity.player.Player;
 import core.game.node.item.Item;
 
+/**
+ * Represents any food that is consumed in two parts such as pies and pizzas.
+ */
 public class HalfableFood extends Food {
 
     public HalfableFood(int[] ids, ConsumableEffect effect, String... messages) {

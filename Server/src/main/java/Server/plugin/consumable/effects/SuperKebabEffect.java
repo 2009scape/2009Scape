@@ -5,6 +5,7 @@ import core.tools.RandomFunction;
 import plugin.consumable.ConsumableEffect;
 import plugin.skill.Skills;
 
+
 public class SuperKebabEffect extends ConsumableEffect {
 
     private static final MultiEffect healingEffect = new MultiEffect(new HealingEffect(3), new PercentageHealthEffect(7));

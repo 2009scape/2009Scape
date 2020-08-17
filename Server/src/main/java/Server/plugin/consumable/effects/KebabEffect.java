@@ -5,6 +5,14 @@ import core.tools.RandomFunction;
 import plugin.consumable.ConsumableEffect;
 import plugin.skill.Skills;
 
+/**
+ * According to the OSRS wiki, a kebab has the following possible outcomes:
+ *     66% chance to heal 10% of total Hitpoints level, rounded down. Accompanied with the message "It heals some health."
+ *     21% chance to heal 10–20 Hitpoints. Accompanied with the message "That was a good kebab. You feel a lot better."
+ *     9% chance to heal nothing. Accompanied with the message "That kebab didn't seem to do a lot."
+ *         In addition, there is a chance that a non-combat skill is lowered by 3 (with the message "That tasted a bit dodgy. You feel a bit ill."), or that melee skills are lowered by 3 (with the message "That tasted very dodgy. You feel very ill.").
+ *     4% chance to heal 30 Hitpoints and gain 1–3 levels in Attack, Strength and Defence. Accompanied with the message "Wow, that was an amazing kebab! You feel really invigorated."
+ */
 public class KebabEffect extends ConsumableEffect {
 
     @Override
@@ -26,7 +34,7 @@ public class KebabEffect extends ConsumableEffect {
             message = "That was a good kebab. You feel a lot better.";
             p.getPacketDispatch().sendMessage(message);
         } else if (randomNumber < 96) {
-            if (RandomFunction.nextInt(100) < 50) {
+            if (RandomFunction.nextInt(100) < 50) { // As the probability of lowering by 3 a non-combat skill or all melee skills is not specified, 50% is the percentage that was chosen.
                 final int affectedSkillSlot = RandomFunction.nextInt(Skills.NUM_SKILLS - 1);
                 switch (affectedSkillSlot) {
                     case Skills.ATTACK:

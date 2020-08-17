@@ -9,8 +9,6 @@ import java.util.HashMap;
 
 /**
  * Represents a repository of active consumables in the framework.
- * @author 'Vexia
- * @date 22/12/2013
  */
 public enum Consumables {
 
@@ -333,49 +331,28 @@ public enum Consumables {
 
 	public static HashMap<Integer,Consumable> consumables = new HashMap<>();
 
-	/**
-	 * Represents the consumable.
-	 */
 	private final Consumable consumable;
 
-	/**
-	 * Constructs a new {@code Consumables} {@code Object}.
-	 * @param consumable the consumable.
-	 */
 	Consumables(Consumable consumable) {
 		this.consumable = consumable;
 	}
 
-	/**
-	 * Gets the consumable.
-	 * @return the consumable.
-	 */
 	public Consumable getConsumable() {
 		return consumable;
 	}
 
-	/**
-	 * Method used to get the {@link Food} by the item ID associated with it.
-	 * @note this is a more direct search.
-	 * @param itemId the item ID.
-	 * @return the food.
-	 */
 	public static Consumable getConsumableById(final int itemId) {
 		return consumables.get(itemId);
 	}
 
-	/**
-	 * Method used to add a consumable to its search engine.
-	 * @param consumable the consumable.
-	 */
 	public static void add(final Consumable consumable) {
 		for (int id : consumable.getIds()) {
 			consumables.putIfAbsent(id, consumable);
 		}
 	}
 
-	/**
-	 * Static modifier used to populate search engine lists.
+	/*
+	  Static modifier used to populate search engine lists.
 	 */
 	static {
 		for (Consumables consumable : Consumables.values()) {

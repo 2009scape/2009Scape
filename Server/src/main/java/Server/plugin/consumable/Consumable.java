@@ -6,28 +6,30 @@ import core.game.world.update.flag.context.Animation;
 import core.plugin.Plugin;
 
 /**
- * Represents a dynamic consumable item.
- * @author 'Vexia
- * @date 22/12/2013
+ * Represents any item that has a consumption option such as 'Eat' or 'Drink'.
  */
 public abstract class Consumable implements Plugin<Object> {
 
+	/**
+	 * Represents the item IDs of all the variants of a consumable where the last one is often the empty container, if it has any.
+	 */
 	protected final int[] ids;
 
+	/**
+	 * Represents the effect to apply on the player once the item is consumed.
+	 */
 	protected final ConsumableEffect effect;
 
 	/**
-	 * Represents the messages to display when consumed.
+	 * Represents the messages to send to the player when it consumes the item.
 	 */
 	protected final String[] messages;
 
+	/**
+	 * Represents the animation that the player will execute when consuming the item.
+	 */
 	protected Animation animation = null;
 
-	/**
-	 * Constructs a new {@code Consumable} {@code Object}.
-	 * @param item the item.
-	 * @parma properties the properties.
-	 */
 	public Consumable(final int[] ids, final ConsumableEffect effect, final String... messages) {
 		this.ids = ids;
 		this.effect = effect;
@@ -41,10 +43,6 @@ public abstract class Consumable implements Plugin<Object> {
 		this.messages = messages;
 	}
 
-	/**
-	 * Method called when this consumables is consumed.
-	 * @param player the player.
-	 */
 	public void consume(final Item item, final Player player) {
 		executeConsumptionActions(player);
 		final int nextItemId = getNextItemId(item.getId());
@@ -92,43 +90,6 @@ public abstract class Consumable implements Plugin<Object> {
 		return -1;
 	}
 
-	/**
-	 * Gets the value if this consumable is a food.
-	 * @return the <code>True</code> if so.
-	 */
-	public boolean isFood() {
-		return this instanceof Food;
-	}
-
-	/**
-	 * Gets the value if this consumable is a drink.
-	 * @return the <code>True</code> if so.
-	 */
-	public boolean isDrink() {
-		return this instanceof Drink;
-	}
-
-	/**
-	 * Gets this consumable as a drink.
-	 * @return the drink.
-	 */
-	public Drink asDrink() {
-		return ((Drink) this);
-	}
-
-	/**
-	 * Gets the consumable as a food instance.
-	 * @return the food consumable.
-	 */
-	public Food asFood() {
-		return ((Food) this);
-	}
-
-	/**
-	 * Gets the formated name of the item.
-	 * @param item the item.
-	 * @return the name.
-	 */
 	public String getFormattedName(Item item) {
 		return item.getName().replace("(4)", "").replace("(3)", "").replace("(2)", "").replace("(1)", "").trim().toLowerCase();
 	}

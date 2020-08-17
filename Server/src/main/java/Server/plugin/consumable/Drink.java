@@ -5,16 +5,8 @@ import core.game.node.entity.player.link.audio.Audio;
 import core.game.node.item.Item;
 import core.game.world.update.flag.context.Animation;
 
-/**
- * Represents a drink.
- * @author 'Vexia
- * @date 23/12/2013
- */
 public class Drink extends Consumable {
 
-	/**
-	 * Represents the sound of drinking.
-	 */
 	public static final Audio SOUND = new Audio(4580, 1, 1);
 
 	public Drink(int[] ids, ConsumableEffect effect, String... messages) {

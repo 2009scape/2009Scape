@@ -5,16 +5,8 @@ import core.game.node.entity.player.link.audio.Audio;
 import core.game.node.item.Item;
 import core.game.world.update.flag.context.Animation;
 
-/**
- * Represents a consumable food.
- * @author 'Vexia
- * @date 22/12/2013
- */
 public class Food extends Consumable {
 
-	/**
-	 * Represents the food consumtion sound.
-	 */
 	public static final Audio SOUND = new Audio(2393, 1, 1);
 
 	public Food(final int[] ids, final ConsumableEffect effect, final String... messages) {
