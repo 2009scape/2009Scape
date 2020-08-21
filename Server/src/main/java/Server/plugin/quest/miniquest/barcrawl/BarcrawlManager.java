@@ -4,6 +4,7 @@ import core.game.component.Component;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.info.login.SavingModule;
 import core.game.node.item.Item;
+import core.plugin.InitializablePlugin;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
@@ -13,6 +14,7 @@ import java.nio.ByteBuffer;
  * Manages the players barcrawl quest.
  * @author 'Vexia
  */
+@InitializablePlugin
 public final class BarcrawlManager implements SavingModule {
 
 	/**

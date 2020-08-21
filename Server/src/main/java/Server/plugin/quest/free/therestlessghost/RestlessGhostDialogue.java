@@ -1,8 +1,10 @@
-package plugin.dialogue;
+package plugin.quest.free.therestlessghost;
 
 import core.game.node.entity.npc.NPC;
 import core.plugin.InitializablePlugin;
 import core.game.node.entity.player.Player;
+import plugin.dialogue.DialoguePlugin;
+import plugin.dialogue.FacialExpression;
 
 /**
  * Handles the RestlessGhostDialogue dialogue.

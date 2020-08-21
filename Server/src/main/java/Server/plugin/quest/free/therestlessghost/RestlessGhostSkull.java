@@ -1,4 +1,4 @@
-package plugin.interaction.item.withobject;
+package plugin.quest.free.therestlessghost;
 
 import core.game.interaction.NodeUsageEvent;
 import core.game.interaction.UseWithHandler;

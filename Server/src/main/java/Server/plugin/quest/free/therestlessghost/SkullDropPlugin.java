@@ -1,4 +1,4 @@
-package plugin.interaction.item;
+package plugin.quest.free.therestlessghost;
 
 import core.cache.def.impl.ItemDefinition;
 import core.game.interaction.OptionHandler;

@@ -1,4 +1,4 @@
-package plugin.quest.free.therestlessghost;
+package plugin.quest.members.animalmagnetism;
 
 import plugin.dialogue.DialoguePlugin;
 import plugin.dialogue.FacialExpression;
@@ -6,6 +6,7 @@ import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
 import core.game.node.item.Item;
+import plugin.quest.free.therestlessghost.RestlessGhost;
 
 /**
  * Handles the dialogue used for the old crone.
