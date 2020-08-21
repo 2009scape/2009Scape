@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import core.cache.def.impl.ItemDefinition;
-import plugin.tutorial.TutorialSession;
+import plugin.quest.tutorials.tutorialisland.TutorialSession;
 import core.game.node.entity.Entity;
 import core.game.node.entity.combat.ImpactHandler.HitsplatType;
 import core.game.node.entity.player.Player;

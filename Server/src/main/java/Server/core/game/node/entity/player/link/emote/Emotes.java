@@ -1,8 +1,8 @@
 package core.game.node.entity.player.link.emote;
 
 import core.game.container.impl.EquipmentContainer;
-import plugin.tutorial.TutorialSession;
-import plugin.tutorial.TutorialStage;
+import plugin.quest.tutorials.tutorialisland.TutorialSession;
+import plugin.quest.tutorials.tutorialisland.TutorialStage;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.diary.DiaryType;
 import core.game.node.item.Item;

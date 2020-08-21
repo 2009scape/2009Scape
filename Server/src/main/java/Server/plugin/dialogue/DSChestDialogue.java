@@ -3,7 +3,7 @@ package plugin.dialogue;
 import core.game.node.entity.player.Player;
 import core.game.node.item.GroundItemManager;
 
-import plugin.quest.dragonslayer.DragonSlayer;
+import plugin.quest.free.dragonslayer.DragonSlayer;
 
 /**
  * Represents the dialogue plugin used for the dragon slayer chest.

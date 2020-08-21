@@ -49,7 +49,7 @@ import plugin.skill.construction.HouseLocation;
 import plugin.skill.herblore.PotionDecantingPlugin;
 import plugin.skill.smithing.smelting.Bar;
 import plugin.skill.summoning.pet.Pets;
-import plugin.tutorial.TutorialSession;
+import plugin.quest.tutorials.tutorialisland.TutorialSession;
 
 import java.awt.*;
 import java.awt.datatransfer.Clipboard;

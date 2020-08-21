@@ -11,7 +11,7 @@ import core.game.world.GameWorld;
 import core.game.world.map.Location;
 import core.game.world.update.flag.context.Animation;
 
-import plugin.quest.demonslayer.DemonSlayer;
+import plugin.quest.free.demonslayer.DemonSlayer;
 
 /**
  * Represents the dialogue used to handle the Traiborn NPC.

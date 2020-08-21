@@ -16,8 +16,8 @@ import core.game.node.entity.state.EntityState
 import core.game.world.map.path.Pathfinder
 import core.tools.RandomFunction
 import plugin.skill.Skills
-import plugin.tutorial.TutorialSession
-import plugin.tutorial.TutorialStage
+import plugin.quest.tutorials.tutorialisland.TutorialSession
+import plugin.quest.tutorials.tutorialisland.TutorialStage
 import kotlin.math.floor
 
 /**

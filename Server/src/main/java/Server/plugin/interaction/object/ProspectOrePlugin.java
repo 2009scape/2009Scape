@@ -2,8 +2,8 @@ package plugin.interaction.object;
 
 import core.cache.def.impl.ItemDefinition;
 import core.cache.def.impl.ObjectDefinition;
-import plugin.tutorial.TutorialSession;
-import plugin.tutorial.TutorialStage;
+import plugin.quest.tutorials.tutorialisland.TutorialSession;
+import plugin.quest.tutorials.tutorialisland.TutorialStage;
 import plugin.skill.gather.SkillingResource;
 import core.game.interaction.OptionHandler;
 import core.game.node.Node;

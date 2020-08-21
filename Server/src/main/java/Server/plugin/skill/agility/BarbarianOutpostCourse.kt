@@ -9,7 +9,7 @@ import core.game.node.Node
 import core.game.node.`object`.GameObject
 import core.game.node.entity.combat.ImpactHandler.HitsplatType
 import core.game.node.entity.player.Player
-import core.game.node.entity.player.link.BarcrawlManager
+import plugin.quest.miniquest.barcrawl.BarcrawlManager
 import core.game.system.task.Pulse
 import core.game.world.GameWorld
 import core.game.world.map.Location
@@ -18,7 +18,6 @@ import core.game.world.update.flag.context.Graphics
 import core.plugin.InitializablePlugin
 import core.plugin.PluginManager
 import plugin.dialogue.DialoguePlugin
-import plugin.skill.Skills
 
 /**
  * Handles the barbarian outpost course.

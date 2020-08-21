@@ -1,7 +1,7 @@
 package plugin.skill.firemaking;
 
-import plugin.tutorial.TutorialSession;
-import plugin.tutorial.TutorialStage;
+import plugin.quest.tutorials.tutorialisland.TutorialSession;
+import plugin.quest.tutorials.tutorialisland.TutorialStage;
 import plugin.skill.SkillPulse;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;

@@ -1,8 +1,8 @@
 package plugin.skill.fishing;
 
 import core.game.content.global.SkillingPets;
-import plugin.tutorial.TutorialSession;
-import plugin.tutorial.TutorialStage;
+import plugin.quest.tutorials.tutorialisland.TutorialSession;
+import plugin.quest.tutorials.tutorialisland.TutorialStage;
 import plugin.skill.SkillPulse;
 import plugin.skill.Skills;
 import plugin.skill.summoning.familiar.Forager;

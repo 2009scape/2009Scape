@@ -2,8 +2,8 @@ package plugin.skill.smithing;
 
 import core.game.component.Component;
 import core.game.container.access.InterfaceContainer;
-import plugin.tutorial.TutorialSession;
-import plugin.tutorial.TutorialStage;
+import plugin.quest.tutorials.tutorialisland.TutorialSession;
+import plugin.quest.tutorials.tutorialisland.TutorialStage;
 import plugin.skill.Skills;
 import plugin.skill.smithing.smelting.Bar;
 import core.game.node.entity.player.Player;

@@ -5,7 +5,7 @@ import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
 
 import core.plugin.InitializablePlugin;
-import plugin.quest.SheepShearer;
+import plugin.quest.free.SheepShearer;
 
 /**
  * Represents the dialogue plugin used for fred the farmer npc.

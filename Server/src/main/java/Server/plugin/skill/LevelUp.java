@@ -2,7 +2,7 @@ package plugin.skill;
 
 import core.game.component.Component;
 import core.game.content.global.Skillcape;
-import plugin.tutorial.TutorialSession;
+import plugin.quest.tutorials.tutorialisland.TutorialSession;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.emote.Emotes;
 import core.game.world.repository.Repository;

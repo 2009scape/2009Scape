@@ -2,8 +2,8 @@ package core.game.node.entity.combat;
 
 import core.game.container.Container;
 import core.game.container.ContainerType;
-import plugin.tutorial.TutorialSession;
-import plugin.tutorial.TutorialStage;
+import plugin.quest.tutorials.tutorialisland.TutorialSession;
+import plugin.quest.tutorials.tutorialisland.TutorialStage;
 import core.game.node.Node;
 import core.game.node.entity.Entity;
 import core.game.node.entity.impl.Animator;

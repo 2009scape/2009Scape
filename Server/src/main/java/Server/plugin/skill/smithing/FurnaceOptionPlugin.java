@@ -1,8 +1,8 @@
 package plugin.skill.smithing;
 
 import core.cache.def.impl.ObjectDefinition;
-import plugin.tutorial.TutorialSession;
-import plugin.tutorial.TutorialStage;
+import plugin.quest.tutorials.tutorialisland.TutorialSession;
+import plugin.quest.tutorials.tutorialisland.TutorialStage;
 import plugin.skill.Skills;
 import plugin.skill.smithing.smelting.Bar;
 import core.game.interaction.NodeUsageEvent;

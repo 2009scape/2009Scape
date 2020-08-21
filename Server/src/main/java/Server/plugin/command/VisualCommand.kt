@@ -21,7 +21,7 @@ import core.game.world.update.flag.context.Animation
 import core.game.world.update.flag.context.Graphics
 import core.plugin.InitializablePlugin
 import core.plugin.Plugin
-import plugin.tutorial.CharacterDesign
+import plugin.quest.tutorials.tutorialisland.CharacterDesign
 import java.awt.Toolkit
 import java.awt.datatransfer.StringSelection
 

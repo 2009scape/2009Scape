@@ -14,8 +14,8 @@ import core.game.node.entity.npc.NPC
 import core.game.node.entity.player.Player
 import core.tools.RandomFunction
 import plugin.skill.Skills
-import plugin.tutorial.TutorialSession
-import plugin.tutorial.TutorialStage
+import plugin.quest.tutorials.tutorialisland.TutorialSession
+import plugin.quest.tutorials.tutorialisland.TutorialStage
 import kotlin.math.floor
 
 /**

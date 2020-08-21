@@ -24,8 +24,8 @@ import core.game.world.map.RegionManager
 import core.game.world.update.flag.context.Graphics
 import core.tools.RandomFunction
 import plugin.skill.Skills
-import plugin.tutorial.TutorialSession
-import plugin.tutorial.TutorialStage
+import plugin.quest.tutorials.tutorialisland.TutorialSession
+import plugin.quest.tutorials.tutorialisland.TutorialStage
 import java.util.*
 import kotlin.math.ceil
 import kotlin.math.floor

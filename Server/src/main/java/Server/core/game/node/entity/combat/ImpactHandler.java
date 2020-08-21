@@ -3,7 +3,7 @@ package core.game.node.entity.combat;
 import core.ServerConstants;
 import core.game.container.impl.EquipmentContainer;
 import core.game.content.global.SkillcapePerks;
-import plugin.tutorial.TutorialSession;
+import plugin.quest.tutorials.tutorialisland.TutorialSession;
 import plugin.skill.Skills;
 import plugin.skill.summoning.familiar.Familiar;
 import plugin.skill.summoning.pet.Pet;

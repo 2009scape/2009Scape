@@ -2,7 +2,6 @@ package core.game.node.entity.player.link;
 
 import core.game.system.config.ItemConfigParser;
 import org.json.simple.JSONObject;
-import plugin.tutorial.TutorialSession;
 import core.game.node.entity.player.Player;
 import core.game.node.item.Item;
 import core.game.system.communication.CommunicationInfo;

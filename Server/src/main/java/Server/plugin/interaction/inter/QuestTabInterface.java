@@ -3,7 +3,7 @@ package plugin.interaction.inter;
 import core.game.component.Component;
 import core.game.component.ComponentDefinition;
 import core.game.component.ComponentPlugin;
-import plugin.tutorial.TutorialSession;
+import plugin.quest.tutorials.tutorialisland.TutorialSession;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.diary.AchievementDiary;
 import core.game.node.entity.player.link.diary.DiaryType;

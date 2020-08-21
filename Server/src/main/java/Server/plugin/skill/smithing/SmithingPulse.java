@@ -1,8 +1,8 @@
 package plugin.skill.smithing;
 
 import core.cache.def.impl.ItemDefinition;
-import plugin.tutorial.TutorialSession;
-import plugin.tutorial.TutorialStage;
+import plugin.quest.tutorials.tutorialisland.TutorialSession;
+import plugin.quest.tutorials.tutorialisland.TutorialStage;
 import plugin.skill.SkillPulse;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;

@@ -5,7 +5,7 @@ import core.game.world.GameWorld;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import plugin.ame.ExperienceMonitor;
-import plugin.tutorial.TutorialSession;
+import plugin.quest.tutorials.tutorialisland.TutorialSession;
 import core.game.node.entity.Entity;
 import core.game.node.entity.combat.ImpactHandler;
 import core.game.node.entity.npc.NPC;

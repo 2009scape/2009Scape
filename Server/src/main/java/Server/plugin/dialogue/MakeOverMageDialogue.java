@@ -1,6 +1,6 @@
 package plugin.dialogue;
 
-import plugin.tutorial.CharacterDesign;
+import plugin.quest.tutorials.tutorialisland.CharacterDesign;
 import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
 import core.plugin.InitializablePlugin;

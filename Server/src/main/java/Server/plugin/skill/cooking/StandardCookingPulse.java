@@ -2,8 +2,8 @@ package plugin.skill.cooking;
 
 import core.game.content.ItemNames;
 import core.game.content.global.SkillcapePerks;
-import plugin.tutorial.TutorialSession;
-import plugin.tutorial.TutorialStage;
+import plugin.quest.tutorials.tutorialisland.TutorialSession;
+import plugin.quest.tutorials.tutorialisland.TutorialStage;
 import plugin.skill.Skills;
 import core.game.node.entity.impl.Animator;
 import core.game.node.entity.player.Player;

@@ -3,7 +3,7 @@ package plugin.interaction.inter;
 import core.game.component.Component;
 import core.game.component.ComponentDefinition;
 import core.game.component.ComponentPlugin;
-import plugin.tutorial.CharacterDesign;
+import plugin.quest.tutorials.tutorialisland.CharacterDesign;
 import core.game.node.entity.player.Player;
 import core.plugin.InitializablePlugin;
 import core.plugin.Plugin;
