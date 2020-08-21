@@ -6,6 +6,11 @@ import core.plugin.InitializablePlugin
 import plugin.dialogue.DialoguePlugin
 import plugin.dialogue.FacialExpression
 
+/**
+ * Dialogue for the Lumbridge Cook.
+ * @author Qweqker
+ */
+
 @InitializablePlugin
 class LumbridgeCookDialogue (player: Player? = null) : DialoguePlugin(player){
 

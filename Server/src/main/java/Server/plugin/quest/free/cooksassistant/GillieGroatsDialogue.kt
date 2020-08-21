@@ -5,6 +5,11 @@ import core.plugin.InitializablePlugin
 import plugin.dialogue.DialoguePlugin
 import plugin.dialogue.FacialExpression
 
+/**
+ * Dialogue for Gillie Groats.
+ * @author Qweqker
+ */
+
 @InitializablePlugin
 class GillieGroatsDialogue (player: Player? = null) : DialoguePlugin(player){
 

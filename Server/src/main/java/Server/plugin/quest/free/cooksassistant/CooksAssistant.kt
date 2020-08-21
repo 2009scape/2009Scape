@@ -5,6 +5,11 @@ import core.game.node.entity.player.link.quest.Quest
 import core.plugin.InitializablePlugin
 import plugin.skill.Skills
 
+/**
+ * The Quest Journal and Configuration for the Cook's Assistant Quest.
+ * @author Qweqker
+ */
+
 @InitializablePlugin
 class CooksAssistant : Quest("Cook's Assistant",15, 14, 1, 29, 0, 1, 2){
     val MILK = 1927
