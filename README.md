@@ -36,8 +36,8 @@ Since this portion of the guide is operating-system specific, you will either ne
 - Download and install [xampp](https://www.apachefriends.org/download.html)
 - Start the `Apache` and `MySQL` modules
 - Navigate to http://localhost/phpmyadmin/
-- Create 2 new databases named `server` and `global`
-- Import `Server/server.sql` and `Server/global.sql` into their respective databases
+- Create a new database called `global`
+- Import`Server/global.sql` into that database
   - _Refer [here](https://www.thecodedeveloper.com/import-large-sql-files-xampp/) for help importing the `.sql` files_
 
 ### Linux Command Line
@@ -46,11 +46,12 @@ Since this portion of the guide is operating-system specific, you will either ne
 
 ## Step 4: Running the Server & Client
 - Run the management-server
-  - In IntelliJ, select the Management Server configuration, click Run
+  - In IntelliJ, navigate to `Management-Server/src/main/java/ms/Management.java`, right click > Run [Image](https://i.imgur.com/KXxxeYK.png)
 - Run the server
-  - In IntelliJ, select the Server configuration, click Run
+  - In IntelliJ, navigate to `Server/src/main/java/Server/core/Server.kt`, right click > Run [Image](https://i.imgur.com/XOSN7LK.png)
+  - At the top right, click the Server config > edit > set the Working directory to the Server/ folder [Image](https://i.imgur.com/Kn6fyxz.png)
 - Run the client
-  - In IntelliJ, select the client configuration, click Run
+  - In IntelliJ, navigate to `Client/src/main/java/org/runite/GameLaunch.java`, right click > Run [Image](https://i.imgur.com/ZZE7FU1.png)
   
 You should now be set up!
 
