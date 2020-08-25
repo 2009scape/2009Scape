@@ -1,4 +1,4 @@
-**Describe what changes you made in this pull request, preferrably with bullet points.**
+**Describe what changes you made in this pull request, preferably with bullet points.**
 * like
 * this
 
