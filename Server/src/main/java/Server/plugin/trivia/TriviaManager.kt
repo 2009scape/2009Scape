@@ -1,6 +1,5 @@
 package plugin.trivia
 
-import core.ServerConstants
 import core.game.node.entity.player.Player
 import core.game.node.item.WeightedChanceItem
 import core.game.world.GameWorld
@@ -23,6 +22,7 @@ class TriviaManager : ManagerPlugin(){
     var question: QuestionLoader.TriviaQuestion? = null
     private val rewards = arrayListOf<WeightedChanceItem>()
     private var nextQuestion = 0
+    val CONFIG_DIR = "Server" + File.separator + "data" + File.separator + "plugin" + File.separator + "Trivia" + File.separator
     var questions = QuestionLoader().loadQuestions()
     val DELAY = 30
 
@@ -34,7 +34,7 @@ class TriviaManager : ManagerPlugin(){
     }
 
     fun dumpExample(){
-        val xmlFile = File(ServerConstants.TRIVIA_CONFIG_PATH + "TriviaRewards.xml")
+        val xmlFile = File(CONFIG_DIR + "TriviaRewards.xml")
         val factory = DocumentBuilderFactory.newInstance()
         val builder = factory.newDocumentBuilder()
         val doc = builder.newDocument()
@@ -64,9 +64,9 @@ class TriviaManager : ManagerPlugin(){
     }
 
     fun parseRewards(){
-        var xmlFile = File(ServerConstants.TRIVIA_CONFIG_PATH)
+        var xmlFile = File(CONFIG_DIR)
         if (!xmlFile.exists()) {xmlFile.mkdirs(); dumpExample()}
-        xmlFile = File(ServerConstants.TRIVIA_CONFIG_PATH + "TriviaRewards.xml")
+        xmlFile = File(CONFIG_DIR + "TriviaRewards.xml")
 
         val factory = DocumentBuilderFactory.newInstance()
         val builder = factory.newDocumentBuilder()

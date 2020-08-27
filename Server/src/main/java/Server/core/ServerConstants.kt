@@ -42,6 +42,9 @@ class ServerConstants {
 		@JvmField
 		var OBJECT_PARSER_PATH: String? = null
 
+		@JvmField
+		var DIALOGUE_SCRIPTS_PATH: String? = null
+
 		//the max number of players.
 		@JvmField
 		var MAX_PLAYERS = 0
@@ -152,10 +155,10 @@ class ServerConstants {
 			PLAYER_SAVE_PATH = JSONUtils.parsePath(data["save_path"].toString())
 			CONFIG_PATH = JSONUtils.parsePath(data["configs_path"].toString())
 			PLAYER_ATTRIBUTE_PATH = PLAYER_SAVE_PATH + "attributes" + File.separator
-			TRIVIA_CONFIG_PATH = JSONUtils.parsePath(data["trivia_config_path"].toString())
 			GRAND_EXCHANGE_DATA_PATH = JSONUtils.parsePath(data["grand_exchange_data_path"].toString())
 			RDT_DATA_PATH = JSONUtils.parsePath(data["rare_drop_table_path"].toString())
 			OBJECT_PARSER_PATH = JSONUtils.parsePath(data["object_parser_path"].toString())
+			DIALOGUE_SCRIPTS_PATH = JSONUtils.parsePath(data["dialogue_scripts_path"].toString())
 
 			DATABASE_NAME = data["database_name"].toString()
 			DATABASE_USER = data["database_username"].toString()
