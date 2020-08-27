@@ -32,6 +32,7 @@ class GEOfferDispatch : Pulse(), CallBack {
         init()
         delay = 1
         GameWorld.Pulser.submit(this)
+        BotGrandExchange.loadOffersFromDB()
         return true
     }
 
@@ -337,6 +338,22 @@ class GEOfferDispatch : Pulse(), CallBack {
                 nextUID()
             } else id
         }
+
+        /**
+         * Sets the offer mapping
+         */
+        @JvmStatic
+        fun setOfferMap(offer: GrandExchangeOffer) {
+            OFFER_MAPPING[offer.uid] = offer
+        }
+
+        /**
+         * Gets the current UID without incrementing for use in BotGrandExchange
+         * @return The UID
+         */
+        @JvmStatic
+        val lastItemUID: Long
+            get() = this.offsetUID
 
         /**
          * Gets the offerMapping.

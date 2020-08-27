@@ -24,6 +24,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 /**
  * Auto stocking feature for the grand exchange. 
  * @author Ceikry
+ * @author Angle
  *
  */
 public class GEAutoStock {
