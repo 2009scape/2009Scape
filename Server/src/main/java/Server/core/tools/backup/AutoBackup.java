@@ -21,7 +21,7 @@ import java.util.zip.ZipOutputStream;
 public class AutoBackup {
 
     public AutoBackup() {
-        File f1 = new File("./src/");
+        File f1 = new File("./Server/src/");
         File f2 = new File((System.getProperty("user.name").equalsIgnoreCase("ethan") ? System.getProperty("user.home") + "/ Desktop/Keldagrim-Backups/src-backups/SRC-" + getDate() + ".zip" : "./Server/data/backups/src-backups/SRC-" + getDate() + ".zip"));
         if (!f2.exists()) {
             try {

@@ -13,6 +13,7 @@ import java.util.Map;
 
 /**
  * Created by Jonathan on 10/18/2015.
+ * 08/27/2020 update: This file isn't used anywhere.
  */
 public final class PluginFixer {
 
@@ -27,7 +28,7 @@ public final class PluginFixer {
                 continue;
             }
             String input = l;
-            input = "src." + input;
+            input = "Server/src." + input;
             input = input.replace(".", "/") + ".java";
             Path path = null;
             try {
