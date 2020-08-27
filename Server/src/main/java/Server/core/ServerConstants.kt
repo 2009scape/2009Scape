@@ -31,9 +31,6 @@ class ServerConstants {
 		var CONFIG_PATH: String? = null
 
 		@JvmField
-		var TRIVIA_CONFIG_PATH: String? = null
-
-		@JvmField
 		var GRAND_EXCHANGE_DATA_PATH: String? = null
 
 		@JvmField
