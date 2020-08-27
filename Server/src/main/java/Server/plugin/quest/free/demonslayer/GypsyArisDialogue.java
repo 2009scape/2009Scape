@@ -139,7 +139,7 @@ public final class GypsyArisDialogue extends DialoguePlugin {
 				stage = 2;
 				break;
 			case 2:
-				options("What is the magical inantation?", "Well I'd better press on with it", "Where can I find the demon?");
+				options("What is the magical incantation?", "Well I'd better press on with it", "Where can I find the demon?");
 				stage = 3;
 				break;
 			case 3:
@@ -304,7 +304,7 @@ public final class GypsyArisDialogue extends DialoguePlugin {
 				end();
 				break;
 			case 200:
-				npc("I would imagine an evil sorceror is already starting on", "the rituals to summon Delrith as we speak.");
+				npc("I would imagine an evil sorcerer is already starting on", "the rituals to summon Delrith as we speak.");
 				stage = 201;
 				break;
 			case 201:
