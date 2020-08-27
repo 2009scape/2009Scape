@@ -22,7 +22,7 @@ class TriviaManager : ManagerPlugin(){
     var question: QuestionLoader.TriviaQuestion? = null
     private val rewards = arrayListOf<WeightedChanceItem>()
     private var nextQuestion = 0
-    val CONFIG_DIR = "data" + File.separator + "plugin" + File.separator + "Trivia" + File.separator
+    val CONFIG_DIR = "Server" + File.separator + "data" + File.separator + "plugin" + File.separator + "Trivia" + File.separator
     var questions = QuestionLoader().loadQuestions()
     val DELAY = 30
 

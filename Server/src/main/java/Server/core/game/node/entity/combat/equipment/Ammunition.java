@@ -79,7 +79,7 @@ public final class Ammunition {
 		try {
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
-			doc = builder.parse(new File("./data/convert/ammunition_data.xml"));
+			doc = builder.parse(new File("./Server/data/convert/ammunition_data.xml"));
 		} catch (Throwable e) {
 			e.printStackTrace();
 			return false;

@@ -19,12 +19,12 @@ public final class SystemTermination {
 	/**
 	 * The data directory.
 	 */
-	private static final String DATA_DIRECTORY = "data/";
+	private static final String DATA_DIRECTORY = "Server/data/";
 
 	/**
 	 * The backup directory.
 	 */
-	private static final String BACKUP_DIRECTORY = "data/backup/";
+	private static final String BACKUP_DIRECTORY = "Server/data/backup/";
 
 	/**
 	 * Constructs a new {@code SystemTermination} {@code Object}.

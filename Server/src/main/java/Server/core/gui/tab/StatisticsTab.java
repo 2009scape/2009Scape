@@ -574,7 +574,7 @@ public class StatisticsTab extends ConsoleTab {
                 totalCycleTime += performanceQueue[i];
             }
             if (lagSpikes > 350 || memoryUsageSpikes > 350) {
-                logQueues(new File("./data/logs/system/Performance-log.txt"));
+                logQueues(new File("./Server/data/logs/system/Performance-log.txt"));
             }
             //System.out.println("Average cycle time: " + (600 + (totalCycleTime / (QUEUE_SIZE - 500))) + "ms.");
             //System.out.println("Average memory usage: " + (totalMemory / (QUEUE_SIZE - 500)) + "Mb.");

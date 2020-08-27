@@ -89,7 +89,7 @@ public final class RangeWeapon {
 		try {
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
-			doc = builder.parse(new File("./data/convert/range_weapon_data.xml"));
+			doc = builder.parse(new File("./Server/data/convert/range_weapon_data.xml"));
 		} catch (Throwable e) {
 			e.printStackTrace();
 			return false;

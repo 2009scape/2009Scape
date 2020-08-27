@@ -142,7 +142,7 @@ public class PlayerTab extends ConsoleTab {
     public void populatePlayerSearch() {
         playerNames.clear();
         model.clear();
-        File f = new File("./data/players/");
+        File f = new File("./Server/data/players/");
         if (f.listFiles() == null) {
             System.out.println("Player directory was null!");
             return;

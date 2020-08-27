@@ -195,8 +195,8 @@ public final class PlayerParser {
 		InputStream is = null;
 		OutputStream os = null;
 		try {
-			is = new FileInputStream("data/players/template/template.json");
-			os = new FileOutputStream("data/players/" + player.getName() + ".json");
+			is = new FileInputStream("Server/data/players/template/template.json");
+			os = new FileOutputStream("Server/data/players/" + player.getName() + ".json");
 			byte[] buffer = new byte[1024];
 			int length;
 			while ((length = is.read(buffer)) > 0) {

@@ -22,7 +22,7 @@ import java.util.List;
  */
 public final class RareDropTable {
 
-	public static final String RDT_LOCATION = "data" + File.separator + "RDT.xml";
+	public static final String RDT_LOCATION = "Server" + File.separator + "data" + File.separator + "RDT.xml";
 
 	/**
 	 * The item id of the item representing the rare drop table slot in a drop

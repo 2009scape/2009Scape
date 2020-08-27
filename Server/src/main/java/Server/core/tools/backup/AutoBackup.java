@@ -22,7 +22,7 @@ public class AutoBackup {
 
     public AutoBackup() {
         File f1 = new File("./src/");
-        File f2 = new File((System.getProperty("user.name").equalsIgnoreCase("ethan") ? System.getProperty("user.home") + "/ Desktop/Keldagrim-Backups/src-backups/SRC-" + getDate() + ".zip" : "./data/backups/src-backups/SRC-" + getDate() + ".zip"));
+        File f2 = new File((System.getProperty("user.name").equalsIgnoreCase("ethan") ? System.getProperty("user.home") + "/ Desktop/Keldagrim-Backups/src-backups/SRC-" + getDate() + ".zip" : "./Server/data/backups/src-backups/SRC-" + getDate() + ".zip"));
         if (!f2.exists()) {
             try {
                 SystemLogger.log("[Auto-Backup] The mainsave has been automatically backed up.");

@@ -19,7 +19,7 @@ import java.io.File;
 @InitializablePlugin
 @PluginManifest(name="ObjectParser")
 public class ObjectParser extends StartupPlugin {
-    private static final String path = "data" + File.separator + "ObjectParser.xml";
+    private static final String path = "Server" + File.separator + "data" + File.separator + "ObjectParser.xml";
 
     public void parseObjects(String path){
         File f = new File(path);

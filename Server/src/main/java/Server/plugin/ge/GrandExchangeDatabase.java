@@ -52,7 +52,7 @@ public final class GrandExchangeDatabase {
 	 */
 	private static boolean initialized;
 
-	static String path = "data" + File.separator + "eco" + File.separator;
+	static String path = "Server" + File.separator + "data" + File.separator + "eco" + File.separator;
 
 
 	/**

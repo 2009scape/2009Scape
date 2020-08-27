@@ -188,7 +188,7 @@ public class AIPlayer extends Player {
         Random rand = new Random();
         int n = 0;
         try {
-            for (Scanner sc = new Scanner(new File("./data/botdata/" + fileName)); sc.hasNext(); ) {
+            for (Scanner sc = new Scanner(new File("./Server/data/botdata/" + fileName)); sc.hasNext(); ) {
                 ++n;
                 String line = sc.nextLine();
                 if (rand.nextInt(n) == 0) { //Chance of overwriting line is lower and lower

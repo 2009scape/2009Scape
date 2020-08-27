@@ -6,7 +6,7 @@ import java.io.File
 class QuestionLoader{
     class TriviaQuestion(val question:  String?,val answer: String?)
 
-    val qfile = System.getProperty("user.dir") + "/src/main/java/Server/plugin/trivia/questions.txt"
+    val qfile = "Server/src/main/java/Server/plugin/trivia/questions.txt"
     val questions = arrayListOf<TriviaQuestion>()
 
     fun loadQuestions(): List<TriviaQuestion> {

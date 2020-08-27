@@ -40,7 +40,7 @@ public final class SystemUpdate extends Pulse {
 	public boolean pulse() {
 		if (getDelay() >= BACKUP_TICK && createBackup) {
 			try {
-				SystemManager.getTerminator().save("data/");
+				SystemManager.getTerminator().save("Server/data/");
 			} catch (Throwable e) {
 				e.printStackTrace();
 			}

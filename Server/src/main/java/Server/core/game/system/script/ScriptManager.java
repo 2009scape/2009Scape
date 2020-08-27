@@ -14,7 +14,7 @@ public final class ScriptManager {
 	/**
 	 * The directory to load scripts from.
 	 */
-	private static final String DIRECTORY = "scripts/";
+	private static final String DIRECTORY = "Server/scripts/";
 
 	/**
 	 * The amount of scripts loaded.
