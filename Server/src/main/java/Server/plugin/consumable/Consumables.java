@@ -100,7 +100,7 @@ public enum Consumables {
 	MINT_CAKE(new Food(new int[] {9475}, new EnergyEffect(50))),
 
 	/** Vegetables */
-	BAKED_POTATO(new Food(new int[] {}, new HealingEffect(2))),
+	BAKED_POTATO(new Food(new int[] {6701}, new HealingEffect(2))),
 	SPICY_SAUCE(new Food(new int[] {7072, 1923}, new HealingEffect(2))),
 	CHILLI_CON_CARNE(new Food(new int[] {7062, 1923}, new HealingEffect(5))),
 	SCRAMBLED_EGG(new Food(new int[] {7078, 1923}, new HealingEffect(5))),
