@@ -1,3094 +1,3092 @@
-{
-  "door_configs": [
-    {
-      "id": "3",
-      "replaceId": "1531",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4",
-      "replaceId": "3271",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "24",
-      "replaceId": "8791",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "59",
-      "replaceId": "1534",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "71",
-      "replaceId": "1517",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "72",
-      "replaceId": "1520",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "73",
-      "replaceId": "4425",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "74",
-      "replaceId": "4426",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "81",
-      "replaceId": "11712",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "82",
-      "replaceId": "11715",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "89",
-      "replaceId": "1560",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "90",
-      "replaceId": "1560",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "92",
-      "replaceId": "17317",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "93",
-      "replaceId": "12445",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "94",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "95",
-      "replaceId": "1560",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "99",
-      "replaceId": "14750",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "102",
-      "replaceId": "13002",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "166",
-      "replaceId": "1556",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "167",
-      "replaceId": "1552",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "883",
-      "replaceId": "7051",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "1512",
-      "replaceId": "1515",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "1513",
-      "replaceId": "1514",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "1516",
-      "replaceId": "1517",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "1519",
-      "replaceId": "1520",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "1530",
-      "replaceId": "1531",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "1533",
-      "replaceId": "1534",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "1536",
-      "replaceId": "1537",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "1539",
-      "replaceId": "1540",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "1542",
-      "replaceId": "1543",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "1544",
-      "replaceId": "1545",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "1551",
-      "replaceId": "1552",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "1553",
-      "replaceId": "1552",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "1557",
-      "replaceId": "1560",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "1558",
-      "replaceId": "1560",
-      "fence": "true",
-      "metal": "true"
-    },
-    {
-      "id": "1573",
-      "replaceId": "1574",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "1575",
-      "replaceId": "1576",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "1589",
-      "replaceId": "1561",
-      "fence": "true",
-      "metal": "true"
-    },
-    {
-      "id": "1590",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "1591",
-      "replaceId": "1531",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "1595",
-      "replaceId": "1531",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "1596",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "1597",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "1598",
-      "replaceId": "1556",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "1599",
-      "replaceId": "1556",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "1804",
-      "replaceId": "1531",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "1805",
-      "replaceId": "15535",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "1991",
-      "replaceId": "1545",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2000",
-      "replaceId": "1537",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2002",
-      "replaceId": "1537",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2025",
-      "replaceId": "1534",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2034",
-      "replaceId": "1531",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2036",
-      "replaceId": "1531",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2039",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2041",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2050",
-      "replaceId": "15511",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2051",
-      "replaceId": "15513",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2054",
-      "replaceId": "24375",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2058",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2060",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2069",
-      "replaceId": "23339",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2115",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2116",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2154",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2155",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2184",
-      "replaceId": "7260",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2307",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2308",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2309",
-      "replaceId": "1540",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2338",
-      "replaceId": "35631",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2391",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2392",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2397",
-      "replaceId": "24383",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2398",
-      "replaceId": "24379",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2399",
-      "replaceId": "36319",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2406",
-      "replaceId": "2407",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2416",
-      "replaceId": "2417",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2427",
-      "replaceId": "36864",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2428",
-      "replaceId": "36359",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2429",
-      "replaceId": "36343",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2430",
-      "replaceId": "36853",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2431",
-      "replaceId": "36848",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2432",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2433",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2438",
-      "replaceId": "3728",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2439",
-      "replaceId": "3727",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2526",
-      "replaceId": "24377",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2528",
-      "replaceId": "24935",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2534",
-      "replaceId": "2998",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2535",
-      "replaceId": "2998",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2537",
-      "replaceId": "24932",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2546",
-      "replaceId": "2547",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2548",
-      "replaceId": "2549",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2550",
-      "replaceId": "27989",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2551",
-      "replaceId": "30865",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2552",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2553",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2554",
-      "replaceId": "26916",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2555",
-      "replaceId": "1537",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2556",
-      "replaceId": "25417",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2557",
-      "replaceId": "1543",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2558",
-      "replaceId": "25717",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2559",
-      "replaceId": "25820",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2595",
-      "replaceId": "3271",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2621",
-      "replaceId": "3271",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2622",
-      "replaceId": "3271",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2624",
-      "replaceId": "2549",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2625",
-      "replaceId": "2549",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2626",
-      "replaceId": "3271",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2627",
-      "replaceId": "3271",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2628",
-      "replaceId": "3271",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2631",
-      "replaceId": "1545",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2673",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2674",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2705",
-      "replaceId": "25643",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2706",
-      "replaceId": "25719",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2712",
-      "replaceId": "36865",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2786",
-      "replaceId": "20088",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2787",
-      "replaceId": "20087",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2788",
-      "replaceId": "20090",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2789",
-      "replaceId": "20089",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2814",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2815",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2861",
-      "replaceId": "15535",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2862",
-      "replaceId": "24815",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2863",
-      "replaceId": "3271",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "2865",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2866",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2882",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2883",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "2997",
-      "replaceId": "2998",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "3014",
-      "replaceId": "3271",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "3015",
-      "replaceId": "3727",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "3016",
-      "replaceId": "3727",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "3017",
-      "replaceId": "3271",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "3018",
-      "replaceId": "3271",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "3019",
-      "replaceId": "3271",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "3020",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "3021",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "3022",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "3023",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "3024",
-      "replaceId": "3271",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "3025",
-      "replaceId": "3271",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "3026",
-      "replaceId": "3271",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "3027",
-      "replaceId": "3271",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "3197",
-      "replaceId": "3727",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "3198",
-      "replaceId": "3727",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "3270",
-      "replaceId": "3271",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "3506",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "3507",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "3725",
-      "replaceId": "3727",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "3726",
-      "replaceId": "3727",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "3743",
-      "replaceId": "17090",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "3745",
-      "replaceId": "3271",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "3746",
-      "replaceId": "3271",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "3747",
-      "replaceId": "1534",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "3763",
-      "replaceId": "3764",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "3776",
-      "replaceId": "3777",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4148",
-      "replaceId": "4248",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4165",
-      "replaceId": "4697",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4166",
-      "replaceId": "7374",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4247",
-      "replaceId": "21342",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4311",
-      "replaceId": "4139",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "4312",
-      "replaceId": "4140",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4423",
-      "replaceId": "4429",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4424",
-      "replaceId": "11382",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4427",
-      "replaceId": "11380",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4428",
-      "replaceId": "4430",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4487",
-      "replaceId": "4492",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4490",
-      "replaceId": "4491",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4629",
-      "replaceId": "4630",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4631",
-      "replaceId": "4630",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4632",
-      "replaceId": "4634",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4633",
-      "replaceId": "4634",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4636",
-      "replaceId": "4639",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4637",
-      "replaceId": "4639",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4638",
-      "replaceId": "4639",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4640",
-      "replaceId": "4639",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4696",
-      "replaceId": "21343",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4962",
-      "replaceId": "3271",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4963",
-      "replaceId": "17092",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "4964",
-      "replaceId": "17094",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "5126",
-      "replaceId": "5128",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "5172",
-      "replaceId": "1545",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "5183",
-      "replaceId": "5188",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "5186",
-      "replaceId": "5187",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "5244",
-      "replaceId": "5245",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "5501",
-      "replaceId": "8821",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "5667",
-      "replaceId": "26207",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "5803",
-      "replaceId": "4173",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "5804",
-      "replaceId": "5132",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "5805",
-      "replaceId": "7435",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "5806",
-      "replaceId": "5268",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "6100",
-      "replaceId": "6101",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "6102",
-      "replaceId": "6103",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "6104",
-      "replaceId": "6105",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "6106",
-      "replaceId": "6107",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "6108",
-      "replaceId": "6107",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "6110",
-      "replaceId": "6111",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "6112",
-      "replaceId": "6113",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "6114",
-      "replaceId": "6113",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "6451",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "6452",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "6624",
-      "replaceId": "6626",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "6625",
-      "replaceId": "6627",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "6975",
-      "replaceId": "6976",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "6977",
-      "replaceId": "6109",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "7049",
-      "replaceId": "7051",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "7050",
-      "replaceId": "23919",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "7222",
-      "replaceId": "7260",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "7259",
-      "replaceId": "7260",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "7274",
-      "replaceId": "5245",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "7302",
-      "replaceId": "5245",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "7317",
-      "replaceId": "5245",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "7320",
-      "replaceId": "5245",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "7323",
-      "replaceId": "5245",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "7326",
-      "replaceId": "5245",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "7354",
-      "replaceId": "5245",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "7373",
-      "replaceId": "7374",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "8695",
-      "replaceId": "8696",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "8786",
-      "replaceId": "11708",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "8787",
-      "replaceId": "10261",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "8788",
-      "replaceId": "1545",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "8789",
-      "replaceId": "11710",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "8810",
-      "replaceId": "8812",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "8811",
-      "replaceId": "8813",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "8818",
-      "replaceId": "8819",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "8820",
-      "replaceId": "8821",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "9562",
-      "replaceId": "9564",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "9563",
-      "replaceId": "9564",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "10260",
-      "replaceId": "10261",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "10262",
-      "replaceId": "10263",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "10264",
-      "replaceId": "10265",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "10325",
-      "replaceId": "10327",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "10431",
-      "replaceId": "37996",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "10527",
-      "replaceId": "10528",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "10529",
-      "replaceId": "10530",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "11196",
-      "replaceId": "10327",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "11197",
-      "replaceId": "4639",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "11379",
-      "replaceId": "11380",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "11381",
-      "replaceId": "11380",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "11483",
-      "replaceId": "11708",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "11616",
-      "replaceId": "11617",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "11707",
-      "replaceId": "11708",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "11709",
-      "replaceId": "11710",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "11711",
-      "replaceId": "11710",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "11713",
-      "replaceId": "11712",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "11714",
-      "replaceId": "11715",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "11716",
-      "replaceId": "11722",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "11721",
-      "replaceId": "11723",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "11993",
-      "replaceId": "11994",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "12045",
-      "replaceId": "12046",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "12047",
-      "replaceId": "12048",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "12348",
-      "replaceId": "10327",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "12349",
-      "replaceId": "11382",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "12350",
-      "replaceId": "11382",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "12444",
-      "replaceId": "12445",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "12446",
-      "replaceId": "12447",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "12448",
-      "replaceId": "12449",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "12761",
-      "replaceId": "11617",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "12816",
-      "replaceId": "12988",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "12817",
-      "replaceId": "12989",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "12986",
-      "replaceId": "7051",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "12987",
-      "replaceId": "7052",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "13001",
-      "replaceId": "34353",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "13006",
-      "replaceId": "13008",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "13007",
-      "replaceId": "13009",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "13015",
-      "replaceId": "13018",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "13016",
-      "replaceId": "13017",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "13094",
-      "replaceId": "13095",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "13096",
-      "replaceId": "13097",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "13100",
-      "replaceId": "13103",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "13101",
-      "replaceId": "13102",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "13107",
-      "replaceId": "13108",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "13109",
-      "replaceId": "13110",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "13118",
-      "replaceId": "13120",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "13119",
-      "replaceId": "13121",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "13314",
-      "replaceId": "13315",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "13317",
-      "replaceId": "13318",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "13320",
-      "replaceId": "13321",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "13323",
-      "replaceId": "13324",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "13326",
-      "replaceId": "13327",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "13344",
-      "replaceId": "13350",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "13345",
-      "replaceId": "13351",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "13346",
-      "replaceId": "13352",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "13347",
-      "replaceId": "13353",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "13348",
-      "replaceId": "13354",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "13349",
-      "replaceId": "13355",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "14233",
-      "replaceId": "14234",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "14235",
-      "replaceId": "14236",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "14237",
-      "replaceId": "14238",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "14239",
-      "replaceId": "14240",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "14241",
-      "replaceId": "14242",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "14243",
-      "replaceId": "14244",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "14245",
-      "replaceId": "14248",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "14247",
-      "replaceId": "14246",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "14749",
-      "replaceId": "14750",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "14751",
-      "replaceId": "14754",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "14752",
-      "replaceId": "14753",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "14923",
-      "replaceId": "17115",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "14982",
-      "replaceId": "24930",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "15056",
-      "replaceId": "14924",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "15204",
-      "replaceId": "15205",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "15510",
-      "replaceId": "15511",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "15512",
-      "replaceId": "15513",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "15514",
-      "replaceId": "15515",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "15516",
-      "replaceId": "15517",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "15536",
-      "replaceId": "15535",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "15641",
-      "replaceId": "15642",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "15644",
-      "replaceId": "15645",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "15647",
-      "replaceId": "15648",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "15650",
-      "replaceId": "15645",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "15653",
-      "replaceId": "15654",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "15759",
-      "replaceId": "14750",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "16774",
-      "replaceId": "16777",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "16776",
-      "replaceId": "16777",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "16778",
-      "replaceId": "16779",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "17089",
-      "replaceId": "17090",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "17091",
-      "replaceId": "17092",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "17093",
-      "replaceId": "17092",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "17114",
-      "replaceId": "17115",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "17316",
-      "replaceId": "17317",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "17600",
-      "replaceId": "18031",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "17601",
-      "replaceId": "18032",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "17973",
-      "replaceId": "18031",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "18091",
-      "replaceId": "18032",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "18092",
-      "replaceId": "18032",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "18168",
-      "replaceId": "11617",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "18489",
-      "replaceId": "18490",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "18698",
-      "replaceId": "18699",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "18700",
-      "replaceId": "18701",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "20391",
-      "replaceId": "28518",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "21065",
-      "replaceId": "21161",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "21160",
-      "replaceId": "21161",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "21162",
-      "replaceId": "21161",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "21164",
-      "replaceId": "21161",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "21340",
-      "replaceId": "21342",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "21341",
-      "replaceId": "21342",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "21397",
-      "replaceId": "21398",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "21399",
-      "replaceId": "21402",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "21400",
-      "replaceId": "21401",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "21403",
-      "replaceId": "21404",
-      "fence": "true",
-      "metal": "true"
-    },
-    {
-      "id": "21405",
-      "replaceId": "21406",
-      "fence": "true",
-      "metal": "true"
-    },
-    {
-      "id": "21505",
-      "replaceId": "21506",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "21507",
-      "replaceId": "21508",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "21600",
-      "replaceId": "21601",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "22435",
-      "replaceId": "22436",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "22437",
-      "replaceId": "22438",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "22779",
-      "replaceId": "22778",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "22914",
-      "replaceId": "22913",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "22921",
-      "replaceId": "22920",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "23056",
-      "replaceId": "24685",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "23216",
-      "replaceId": "23217",
-      "fence": "true",
-      "metal": "true"
-    },
-    {
-      "id": "23338",
-      "replaceId": "23339",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "23340",
-      "replaceId": "23341",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "23342",
-      "replaceId": "23343",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "23378",
-      "replaceId": "23339",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "23917",
-      "replaceId": "23918",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "24369",
-      "replaceId": "24373",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "24370",
-      "replaceId": "24374",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "24376",
-      "replaceId": "24377",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "24378",
-      "replaceId": "24377",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "24381",
-      "replaceId": "24379",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "24384",
-      "replaceId": "24383",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "24560",
-      "replaceId": "15515",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "24561",
-      "replaceId": "15517",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "24565",
-      "replaceId": "36316",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "24567",
-      "replaceId": "36318",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "24686",
-      "replaceId": "24685",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "24816",
-      "replaceId": "24815",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "24931",
-      "replaceId": "24930",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "24933",
-      "replaceId": "24932",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "24936",
-      "replaceId": "24935",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "25418",
-      "replaceId": "25417",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "25594",
-      "replaceId": "25639",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "25595",
-      "replaceId": "25639",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "25638",
-      "replaceId": "25639",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "25640",
-      "replaceId": "25641",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "25642",
-      "replaceId": "25643",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "25716",
-      "replaceId": "25717",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "25718",
-      "replaceId": "25719",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "25748",
-      "replaceId": "25791",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "25750",
-      "replaceId": "25789",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "25788",
-      "replaceId": "25641",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "25790",
-      "replaceId": "25639",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "25799",
-      "replaceId": "25800",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "25804",
-      "replaceId": "25805",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "25806",
-      "replaceId": "25807",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "25813",
-      "replaceId": "25816",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "25814",
-      "replaceId": "25815",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "25819",
-      "replaceId": "25820",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "25825",
-      "replaceId": "25826",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "25827",
-      "replaceId": "25828",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "25876",
-      "replaceId": "25877",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "26130",
-      "replaceId": "26132",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "26131",
-      "replaceId": "26133",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "26425",
-      "replaceId": "2521",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "26426",
-      "replaceId": "26852",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "26427",
-      "replaceId": "26851",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "26428",
-      "replaceId": "2520",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "26560",
-      "replaceId": "26561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "26706",
-      "replaceId": "26707",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "26787",
-      "replaceId": "8821",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "26808",
-      "replaceId": "26916",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "26810",
-      "replaceId": "26916",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "26906",
-      "replaceId": "26907",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "26908",
-      "replaceId": "26909",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "26910",
-      "replaceId": "26911",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "26913",
-      "replaceId": "26914",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "26917",
-      "replaceId": "26916",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "27065",
-      "replaceId": "1561",
-      "fence": "true",
-      "metal": "true"
-    },
-    {
-      "id": "27066",
-      "replaceId": "1561",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "27846",
-      "replaceId": "27851",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "27848",
-      "replaceId": "27853",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "27852",
-      "replaceId": "27851",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "27854",
-      "replaceId": "27853",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "27988",
-      "replaceId": "27989",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "28407",
-      "replaceId": "28408",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "28409",
-      "replaceId": "28410",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "28514",
-      "replaceId": "28518",
-      "fence": "true",
-      "metal": "true"
-    },
-    {
-      "id": "28589",
-      "replaceId": "28588",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "28690",
-      "replaceId": "28692",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "28691",
-      "replaceId": "28693",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "29261",
-      "replaceId": "29262",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "29315",
-      "replaceId": "29317",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "29316",
-      "replaceId": "29322",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "29319",
-      "replaceId": "29318",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "29320",
-      "replaceId": "29321",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "29575",
-      "replaceId": "30865",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "29732",
-      "replaceId": "30865",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "30116",
-      "replaceId": "30117",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "30118",
-      "replaceId": "30119",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "30120",
-      "replaceId": "30121",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "30122",
-      "replaceId": "30123",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "30124",
-      "replaceId": "30125",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "30126",
-      "replaceId": "30127",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "30128",
-      "replaceId": "30129",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "30130",
-      "replaceId": "30131",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "30503",
-      "replaceId": "18031",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "30864",
-      "replaceId": "30865",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "31340",
-      "replaceId": "31341",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "31342",
-      "replaceId": "31343",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "31534",
-      "replaceId": "31535",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "31808",
-      "replaceId": "31809",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "31811",
-      "replaceId": "31812",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "31814",
-      "replaceId": "31816",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "31815",
-      "replaceId": "31816",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "31818",
-      "replaceId": "31816",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "31819",
-      "replaceId": "31817",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "31820",
-      "replaceId": "31821",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "31822",
-      "replaceId": "31823",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "31825",
-      "replaceId": "31824",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "31827",
-      "replaceId": "31826",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "31830",
-      "replaceId": "31829",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "31832",
-      "replaceId": "31831",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "31838",
-      "replaceId": "31839",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "31841",
-      "replaceId": "31842",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "31844",
-      "replaceId": "31845",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "33060",
-      "replaceId": "31828",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "34005",
-      "replaceId": "31845",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "34042",
-      "replaceId": "34043",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "34044",
-      "replaceId": "34045",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "34046",
-      "replaceId": "6115",
-      "fence": "false",
-      "metal": "true"
-    },
-    {
-      "id": "34234",
-      "replaceId": "34808",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "34312",
-      "replaceId": "34313",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "34354",
-      "replaceId": "34353",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "34779",
-      "replaceId": "34777",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "34780",
-      "replaceId": "34778",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "34805",
-      "replaceId": "34808",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "34806",
-      "replaceId": "34808",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "34807",
-      "replaceId": "34808",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "34809",
-      "replaceId": "34808",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "34811",
-      "replaceId": "34813",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "34812",
-      "replaceId": "34813",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "34816",
-      "replaceId": "34818",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "34817",
-      "replaceId": "34813",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "34819",
-      "replaceId": "34820",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "34822",
-      "replaceId": "34823",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "34825",
-      "replaceId": "34826",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "34827",
-      "replaceId": "34828",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "35241",
-      "replaceId": "35242",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "35243",
-      "replaceId": "15651",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "35540",
-      "replaceId": "35541",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "35630",
-      "replaceId": "35631",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "35991",
-      "replaceId": "36021",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "36022",
-      "replaceId": "36021",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "36315",
-      "replaceId": "36342",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "36317",
-      "replaceId": "36340",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "36320",
-      "replaceId": "36319",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "36339",
-      "replaceId": "36358",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "36341",
-      "replaceId": "36356",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "36344",
-      "replaceId": "36343",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "36355",
-      "replaceId": "36356",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "36357",
-      "replaceId": "36356",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "36360",
-      "replaceId": "36359",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "36844",
-      "replaceId": "36845",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "36846",
-      "replaceId": "36848",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "36847",
-      "replaceId": "36848",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "36851",
-      "replaceId": "36853",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "36852",
-      "replaceId": "36853",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "36856",
-      "replaceId": "36858",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "36857",
-      "replaceId": "36859",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "36862",
-      "replaceId": "36864",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "36863",
-      "replaceId": "36864",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "36913",
-      "replaceId": "36912",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "36915",
-      "replaceId": "36914",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "36917",
-      "replaceId": "36916",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "36919",
-      "replaceId": "36918",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "36999",
-      "replaceId": "37000",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "37002",
-      "replaceId": "37003",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "37352",
-      "replaceId": "37351",
-      "fence": "true",
-      "metal": "false"
-    },
-    {
-      "id": "37354",
-      "replaceId": "37353",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "37995",
-      "replaceId": "37996",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "38124",
-      "replaceId": "38123",
-      "fence": "false",
-      "metal": "false"
-    },
-    {
-      "id": "38141",
-      "replaceId": "38142",
-      "fence": "false",
-      "metal": "false"
-    }
-  ]
-}
+[
+  {
+    "id": "3",
+    "replaceId": "1531",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4",
+    "replaceId": "3271",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "24",
+    "replaceId": "8791",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "59",
+    "replaceId": "1534",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "71",
+    "replaceId": "1517",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "72",
+    "replaceId": "1520",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "73",
+    "replaceId": "4425",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "74",
+    "replaceId": "4426",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "81",
+    "replaceId": "11712",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "82",
+    "replaceId": "11715",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "89",
+    "replaceId": "1560",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "90",
+    "replaceId": "1560",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "92",
+    "replaceId": "17317",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "93",
+    "replaceId": "12445",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "94",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "95",
+    "replaceId": "1560",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "99",
+    "replaceId": "14750",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "102",
+    "replaceId": "13002",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "166",
+    "replaceId": "1556",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "167",
+    "replaceId": "1552",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "883",
+    "replaceId": "7051",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "1512",
+    "replaceId": "1515",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "1513",
+    "replaceId": "1514",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "1516",
+    "replaceId": "1517",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "1519",
+    "replaceId": "1520",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "1530",
+    "replaceId": "1531",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "1533",
+    "replaceId": "1534",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "1536",
+    "replaceId": "1537",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "1539",
+    "replaceId": "1540",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "1542",
+    "replaceId": "1543",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "1544",
+    "replaceId": "1545",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "1551",
+    "replaceId": "1552",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "1553",
+    "replaceId": "1552",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "1557",
+    "replaceId": "1560",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "1558",
+    "replaceId": "1560",
+    "fence": "true",
+    "metal": "true"
+  },
+  {
+    "id": "1573",
+    "replaceId": "1574",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "1575",
+    "replaceId": "1576",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "1589",
+    "replaceId": "1561",
+    "fence": "true",
+    "metal": "true"
+  },
+  {
+    "id": "1590",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "1591",
+    "replaceId": "1531",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "1595",
+    "replaceId": "1531",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "1596",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "1597",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "1598",
+    "replaceId": "1556",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "1599",
+    "replaceId": "1556",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "1804",
+    "replaceId": "1531",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "1805",
+    "replaceId": "15535",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "1991",
+    "replaceId": "1545",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2000",
+    "replaceId": "1537",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2002",
+    "replaceId": "1537",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2025",
+    "replaceId": "1534",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2034",
+    "replaceId": "1531",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2036",
+    "replaceId": "1531",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2039",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2041",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2050",
+    "replaceId": "15511",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2051",
+    "replaceId": "15513",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2054",
+    "replaceId": "24375",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2058",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2060",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2069",
+    "replaceId": "23339",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2115",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2116",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2154",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2155",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2184",
+    "replaceId": "7260",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2307",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2308",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2309",
+    "replaceId": "1540",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2338",
+    "replaceId": "35631",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2391",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2392",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2397",
+    "replaceId": "24383",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2398",
+    "replaceId": "24379",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2399",
+    "replaceId": "36319",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2406",
+    "replaceId": "2407",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2416",
+    "replaceId": "2417",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2427",
+    "replaceId": "36864",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2428",
+    "replaceId": "36359",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2429",
+    "replaceId": "36343",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2430",
+    "replaceId": "36853",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2431",
+    "replaceId": "36848",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2432",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2433",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2438",
+    "replaceId": "3728",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2439",
+    "replaceId": "3727",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2526",
+    "replaceId": "24377",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2528",
+    "replaceId": "24935",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2534",
+    "replaceId": "2998",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2535",
+    "replaceId": "2998",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2537",
+    "replaceId": "24932",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2546",
+    "replaceId": "2547",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2548",
+    "replaceId": "2549",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2550",
+    "replaceId": "27989",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2551",
+    "replaceId": "30865",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2552",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2553",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2554",
+    "replaceId": "26916",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2555",
+    "replaceId": "1537",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2556",
+    "replaceId": "25417",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2557",
+    "replaceId": "1543",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2558",
+    "replaceId": "25717",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2559",
+    "replaceId": "25820",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2595",
+    "replaceId": "3271",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2621",
+    "replaceId": "3271",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2622",
+    "replaceId": "3271",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2624",
+    "replaceId": "2549",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2625",
+    "replaceId": "2549",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2626",
+    "replaceId": "3271",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2627",
+    "replaceId": "3271",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2628",
+    "replaceId": "3271",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2631",
+    "replaceId": "1545",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2673",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2674",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2705",
+    "replaceId": "25643",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2706",
+    "replaceId": "25719",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2712",
+    "replaceId": "36865",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2786",
+    "replaceId": "20088",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2787",
+    "replaceId": "20087",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2788",
+    "replaceId": "20090",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2789",
+    "replaceId": "20089",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2814",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2815",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2861",
+    "replaceId": "15535",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2862",
+    "replaceId": "24815",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2863",
+    "replaceId": "3271",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "2865",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2866",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2882",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2883",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "2997",
+    "replaceId": "2998",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "3014",
+    "replaceId": "3271",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "3015",
+    "replaceId": "3727",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "3016",
+    "replaceId": "3727",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "3017",
+    "replaceId": "3271",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "3018",
+    "replaceId": "3271",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "3019",
+    "replaceId": "3271",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "3020",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "3021",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "3022",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "3023",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "3024",
+    "replaceId": "3271",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "3025",
+    "replaceId": "3271",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "3026",
+    "replaceId": "3271",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "3027",
+    "replaceId": "3271",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "3197",
+    "replaceId": "3727",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "3198",
+    "replaceId": "3727",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "3270",
+    "replaceId": "3271",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "3506",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "3507",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "3725",
+    "replaceId": "3727",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "3726",
+    "replaceId": "3727",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "3743",
+    "replaceId": "17090",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "3745",
+    "replaceId": "3271",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "3746",
+    "replaceId": "3271",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "3747",
+    "replaceId": "1534",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "3763",
+    "replaceId": "3764",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "3776",
+    "replaceId": "3777",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4148",
+    "replaceId": "4248",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4165",
+    "replaceId": "4697",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4166",
+    "replaceId": "7374",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4247",
+    "replaceId": "21342",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4311",
+    "replaceId": "4139",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "4312",
+    "replaceId": "4140",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4423",
+    "replaceId": "4429",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4424",
+    "replaceId": "11382",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4427",
+    "replaceId": "11380",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4428",
+    "replaceId": "4430",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4487",
+    "replaceId": "4492",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4490",
+    "replaceId": "4491",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4629",
+    "replaceId": "4630",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4631",
+    "replaceId": "4630",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4632",
+    "replaceId": "4634",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4633",
+    "replaceId": "4634",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4636",
+    "replaceId": "4639",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4637",
+    "replaceId": "4639",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4638",
+    "replaceId": "4639",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4640",
+    "replaceId": "4639",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4696",
+    "replaceId": "21343",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4962",
+    "replaceId": "3271",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4963",
+    "replaceId": "17092",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "4964",
+    "replaceId": "17094",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "5126",
+    "replaceId": "5128",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "5172",
+    "replaceId": "1545",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "5183",
+    "replaceId": "5188",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "5186",
+    "replaceId": "5187",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "5244",
+    "replaceId": "5245",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "5501",
+    "replaceId": "8821",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "5667",
+    "replaceId": "26207",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "5803",
+    "replaceId": "4173",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "5804",
+    "replaceId": "5132",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "5805",
+    "replaceId": "7435",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "5806",
+    "replaceId": "5268",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "6100",
+    "replaceId": "6101",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "6102",
+    "replaceId": "6103",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "6104",
+    "replaceId": "6105",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "6106",
+    "replaceId": "6107",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "6108",
+    "replaceId": "6107",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "6110",
+    "replaceId": "6111",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "6112",
+    "replaceId": "6113",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "6114",
+    "replaceId": "6113",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "6451",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "6452",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "6624",
+    "replaceId": "6626",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "6625",
+    "replaceId": "6627",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "6975",
+    "replaceId": "6976",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "6977",
+    "replaceId": "6109",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "7049",
+    "replaceId": "7051",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "7050",
+    "replaceId": "23919",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "7222",
+    "replaceId": "7260",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "7259",
+    "replaceId": "7260",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "7274",
+    "replaceId": "5245",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "7302",
+    "replaceId": "5245",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "7317",
+    "replaceId": "5245",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "7320",
+    "replaceId": "5245",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "7323",
+    "replaceId": "5245",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "7326",
+    "replaceId": "5245",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "7354",
+    "replaceId": "5245",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "7373",
+    "replaceId": "7374",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "8695",
+    "replaceId": "8696",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "8786",
+    "replaceId": "11708",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "8787",
+    "replaceId": "10261",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "8788",
+    "replaceId": "1545",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "8789",
+    "replaceId": "11710",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "8810",
+    "replaceId": "8812",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "8811",
+    "replaceId": "8813",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "8818",
+    "replaceId": "8819",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "8820",
+    "replaceId": "8821",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "9562",
+    "replaceId": "9564",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "9563",
+    "replaceId": "9564",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "10260",
+    "replaceId": "10261",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "10262",
+    "replaceId": "10263",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "10264",
+    "replaceId": "10265",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "10325",
+    "replaceId": "10327",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "10431",
+    "replaceId": "37996",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "10527",
+    "replaceId": "10528",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "10529",
+    "replaceId": "10530",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "11196",
+    "replaceId": "10327",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "11197",
+    "replaceId": "4639",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "11379",
+    "replaceId": "11380",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "11381",
+    "replaceId": "11380",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "11483",
+    "replaceId": "11708",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "11616",
+    "replaceId": "11617",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "11707",
+    "replaceId": "11708",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "11709",
+    "replaceId": "11710",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "11711",
+    "replaceId": "11710",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "11713",
+    "replaceId": "11712",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "11714",
+    "replaceId": "11715",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "11716",
+    "replaceId": "11722",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "11721",
+    "replaceId": "11723",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "11993",
+    "replaceId": "11994",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "12045",
+    "replaceId": "12046",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "12047",
+    "replaceId": "12048",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "12348",
+    "replaceId": "10327",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "12349",
+    "replaceId": "11382",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "12350",
+    "replaceId": "11382",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "12444",
+    "replaceId": "12445",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "12446",
+    "replaceId": "12447",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "12448",
+    "replaceId": "12449",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "12761",
+    "replaceId": "11617",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "12816",
+    "replaceId": "12988",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "12817",
+    "replaceId": "12989",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "12986",
+    "replaceId": "7051",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "12987",
+    "replaceId": "7052",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "13001",
+    "replaceId": "34353",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "13006",
+    "replaceId": "13008",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "13007",
+    "replaceId": "13009",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "13015",
+    "replaceId": "13018",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "13016",
+    "replaceId": "13017",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "13094",
+    "replaceId": "13095",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "13096",
+    "replaceId": "13097",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "13100",
+    "replaceId": "13103",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "13101",
+    "replaceId": "13102",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "13107",
+    "replaceId": "13108",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "13109",
+    "replaceId": "13110",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "13118",
+    "replaceId": "13120",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "13119",
+    "replaceId": "13121",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "13314",
+    "replaceId": "13315",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "13317",
+    "replaceId": "13318",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "13320",
+    "replaceId": "13321",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "13323",
+    "replaceId": "13324",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "13326",
+    "replaceId": "13327",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "13344",
+    "replaceId": "13350",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "13345",
+    "replaceId": "13351",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "13346",
+    "replaceId": "13352",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "13347",
+    "replaceId": "13353",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "13348",
+    "replaceId": "13354",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "13349",
+    "replaceId": "13355",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "14233",
+    "replaceId": "14234",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "14235",
+    "replaceId": "14236",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "14237",
+    "replaceId": "14238",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "14239",
+    "replaceId": "14240",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "14241",
+    "replaceId": "14242",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "14243",
+    "replaceId": "14244",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "14245",
+    "replaceId": "14248",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "14247",
+    "replaceId": "14246",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "14749",
+    "replaceId": "14750",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "14751",
+    "replaceId": "14754",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "14752",
+    "replaceId": "14753",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "14923",
+    "replaceId": "17115",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "14982",
+    "replaceId": "24930",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "15056",
+    "replaceId": "14924",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "15204",
+    "replaceId": "15205",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "15510",
+    "replaceId": "15511",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "15512",
+    "replaceId": "15513",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "15514",
+    "replaceId": "15515",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "15516",
+    "replaceId": "15517",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "15536",
+    "replaceId": "15535",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "15641",
+    "replaceId": "15642",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "15644",
+    "replaceId": "15645",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "15647",
+    "replaceId": "15648",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "15650",
+    "replaceId": "15645",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "15653",
+    "replaceId": "15654",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "15759",
+    "replaceId": "14750",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "16774",
+    "replaceId": "16777",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "16776",
+    "replaceId": "16777",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "16778",
+    "replaceId": "16779",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "17089",
+    "replaceId": "17090",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "17091",
+    "replaceId": "17092",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "17093",
+    "replaceId": "17092",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "17114",
+    "replaceId": "17115",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "17316",
+    "replaceId": "17317",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "17600",
+    "replaceId": "18031",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "17601",
+    "replaceId": "18032",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "17973",
+    "replaceId": "18031",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "18091",
+    "replaceId": "18032",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "18092",
+    "replaceId": "18032",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "18168",
+    "replaceId": "11617",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "18489",
+    "replaceId": "18490",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "18698",
+    "replaceId": "18699",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "18700",
+    "replaceId": "18701",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "20391",
+    "replaceId": "28518",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "21065",
+    "replaceId": "21161",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "21160",
+    "replaceId": "21161",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "21162",
+    "replaceId": "21161",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "21164",
+    "replaceId": "21161",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "21340",
+    "replaceId": "21342",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "21341",
+    "replaceId": "21342",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "21397",
+    "replaceId": "21398",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "21399",
+    "replaceId": "21402",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "21400",
+    "replaceId": "21401",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "21403",
+    "replaceId": "21404",
+    "fence": "true",
+    "metal": "true"
+  },
+  {
+    "id": "21405",
+    "replaceId": "21406",
+    "fence": "true",
+    "metal": "true"
+  },
+  {
+    "id": "21505",
+    "replaceId": "21506",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "21507",
+    "replaceId": "21508",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "21600",
+    "replaceId": "21601",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "22435",
+    "replaceId": "22436",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "22437",
+    "replaceId": "22438",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "22779",
+    "replaceId": "22778",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "22914",
+    "replaceId": "22913",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "22921",
+    "replaceId": "22920",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "23056",
+    "replaceId": "24685",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "23216",
+    "replaceId": "23217",
+    "fence": "true",
+    "metal": "true"
+  },
+  {
+    "id": "23338",
+    "replaceId": "23339",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "23340",
+    "replaceId": "23341",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "23342",
+    "replaceId": "23343",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "23378",
+    "replaceId": "23339",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "23917",
+    "replaceId": "23918",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "24369",
+    "replaceId": "24373",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "24370",
+    "replaceId": "24374",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "24376",
+    "replaceId": "24377",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "24378",
+    "replaceId": "24377",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "24381",
+    "replaceId": "24379",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "24384",
+    "replaceId": "24383",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "24560",
+    "replaceId": "15515",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "24561",
+    "replaceId": "15517",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "24565",
+    "replaceId": "36316",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "24567",
+    "replaceId": "36318",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "24686",
+    "replaceId": "24685",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "24816",
+    "replaceId": "24815",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "24931",
+    "replaceId": "24930",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "24933",
+    "replaceId": "24932",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "24936",
+    "replaceId": "24935",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "25418",
+    "replaceId": "25417",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "25594",
+    "replaceId": "25639",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "25595",
+    "replaceId": "25639",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "25638",
+    "replaceId": "25639",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "25640",
+    "replaceId": "25641",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "25642",
+    "replaceId": "25643",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "25716",
+    "replaceId": "25717",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "25718",
+    "replaceId": "25719",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "25748",
+    "replaceId": "25791",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "25750",
+    "replaceId": "25789",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "25788",
+    "replaceId": "25641",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "25790",
+    "replaceId": "25639",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "25799",
+    "replaceId": "25800",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "25804",
+    "replaceId": "25805",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "25806",
+    "replaceId": "25807",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "25813",
+    "replaceId": "25816",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "25814",
+    "replaceId": "25815",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "25819",
+    "replaceId": "25820",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "25825",
+    "replaceId": "25826",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "25827",
+    "replaceId": "25828",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "25876",
+    "replaceId": "25877",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "26130",
+    "replaceId": "26132",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "26131",
+    "replaceId": "26133",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "26425",
+    "replaceId": "2521",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "26426",
+    "replaceId": "26852",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "26427",
+    "replaceId": "26851",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "26428",
+    "replaceId": "2520",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "26560",
+    "replaceId": "26561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "26706",
+    "replaceId": "26707",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "26787",
+    "replaceId": "8821",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "26808",
+    "replaceId": "26916",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "26810",
+    "replaceId": "26916",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "26906",
+    "replaceId": "26907",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "26908",
+    "replaceId": "26909",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "26910",
+    "replaceId": "26911",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "26913",
+    "replaceId": "26914",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "26917",
+    "replaceId": "26916",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "27065",
+    "replaceId": "1561",
+    "fence": "true",
+    "metal": "true"
+  },
+  {
+    "id": "27066",
+    "replaceId": "1561",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "27846",
+    "replaceId": "27851",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "27848",
+    "replaceId": "27853",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "27852",
+    "replaceId": "27851",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "27854",
+    "replaceId": "27853",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "27988",
+    "replaceId": "27989",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "28407",
+    "replaceId": "28408",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "28409",
+    "replaceId": "28410",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "28514",
+    "replaceId": "28518",
+    "fence": "true",
+    "metal": "true"
+  },
+  {
+    "id": "28589",
+    "replaceId": "28588",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "28690",
+    "replaceId": "28692",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "28691",
+    "replaceId": "28693",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "29261",
+    "replaceId": "29262",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "29315",
+    "replaceId": "29317",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "29316",
+    "replaceId": "29322",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "29319",
+    "replaceId": "29318",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "29320",
+    "replaceId": "29321",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "29575",
+    "replaceId": "30865",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "29732",
+    "replaceId": "30865",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "30116",
+    "replaceId": "30117",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "30118",
+    "replaceId": "30119",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "30120",
+    "replaceId": "30121",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "30122",
+    "replaceId": "30123",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "30124",
+    "replaceId": "30125",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "30126",
+    "replaceId": "30127",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "30128",
+    "replaceId": "30129",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "30130",
+    "replaceId": "30131",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "30503",
+    "replaceId": "18031",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "30864",
+    "replaceId": "30865",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "31340",
+    "replaceId": "31341",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "31342",
+    "replaceId": "31343",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "31534",
+    "replaceId": "31535",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "31808",
+    "replaceId": "31809",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "31811",
+    "replaceId": "31812",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "31814",
+    "replaceId": "31816",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "31815",
+    "replaceId": "31816",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "31818",
+    "replaceId": "31816",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "31819",
+    "replaceId": "31817",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "31820",
+    "replaceId": "31821",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "31822",
+    "replaceId": "31823",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "31825",
+    "replaceId": "31824",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "31827",
+    "replaceId": "31826",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "31830",
+    "replaceId": "31829",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "31832",
+    "replaceId": "31831",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "31838",
+    "replaceId": "31839",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "31841",
+    "replaceId": "31842",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "31844",
+    "replaceId": "31845",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "33060",
+    "replaceId": "31828",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "34005",
+    "replaceId": "31845",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "34042",
+    "replaceId": "34043",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "34044",
+    "replaceId": "34045",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "34046",
+    "replaceId": "6115",
+    "fence": "false",
+    "metal": "true"
+  },
+  {
+    "id": "34234",
+    "replaceId": "34808",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "34312",
+    "replaceId": "34313",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "34354",
+    "replaceId": "34353",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "34779",
+    "replaceId": "34777",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "34780",
+    "replaceId": "34778",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "34805",
+    "replaceId": "34808",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "34806",
+    "replaceId": "34808",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "34807",
+    "replaceId": "34808",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "34809",
+    "replaceId": "34808",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "34811",
+    "replaceId": "34813",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "34812",
+    "replaceId": "34813",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "34816",
+    "replaceId": "34818",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "34817",
+    "replaceId": "34813",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "34819",
+    "replaceId": "34820",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "34822",
+    "replaceId": "34823",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "34825",
+    "replaceId": "34826",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "34827",
+    "replaceId": "34828",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "35241",
+    "replaceId": "35242",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "35243",
+    "replaceId": "15651",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "35540",
+    "replaceId": "35541",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "35630",
+    "replaceId": "35631",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "35991",
+    "replaceId": "36021",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "36022",
+    "replaceId": "36021",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "36315",
+    "replaceId": "36342",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "36317",
+    "replaceId": "36340",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "36320",
+    "replaceId": "36319",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "36339",
+    "replaceId": "36358",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "36341",
+    "replaceId": "36356",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "36344",
+    "replaceId": "36343",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "36355",
+    "replaceId": "36356",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "36357",
+    "replaceId": "36356",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "36360",
+    "replaceId": "36359",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "36844",
+    "replaceId": "36845",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "36846",
+    "replaceId": "36848",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "36847",
+    "replaceId": "36848",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "36851",
+    "replaceId": "36853",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "36852",
+    "replaceId": "36853",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "36856",
+    "replaceId": "36858",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "36857",
+    "replaceId": "36859",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "36862",
+    "replaceId": "36864",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "36863",
+    "replaceId": "36864",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "36913",
+    "replaceId": "36912",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "36915",
+    "replaceId": "36914",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "36917",
+    "replaceId": "36916",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "36919",
+    "replaceId": "36918",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "36999",
+    "replaceId": "37000",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "37002",
+    "replaceId": "37003",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "37352",
+    "replaceId": "37351",
+    "fence": "true",
+    "metal": "false"
+  },
+  {
+    "id": "37354",
+    "replaceId": "37353",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "37995",
+    "replaceId": "37996",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "38124",
+    "replaceId": "38123",
+    "fence": "false",
+    "metal": "false"
+  },
+  {
+    "id": "38141",
+    "replaceId": "38142",
+    "fence": "false",
+    "metal": "false"
+  }
+]

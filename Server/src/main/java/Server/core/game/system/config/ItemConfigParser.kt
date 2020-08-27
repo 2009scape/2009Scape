@@ -215,8 +215,7 @@ class ItemConfigParser {
     fun load(){
         var count = 0
         reader = FileReader(ServerConstants.CONFIG_PATH + "item_configs.json")
-        val obj = parser.parse(reader) as JSONObject
-        val configlist = obj["item_configs"] as JSONArray
+        val configlist = parser.parse(reader) as JSONArray
         for(config in configlist){
             val e = config as JSONObject
             val def = ItemDefinition.forId(e["id"].toString().toInt())

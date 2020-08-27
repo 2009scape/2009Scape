@@ -14,8 +14,7 @@ class InterfaceConfigParser{
     fun load() {
         var count = 0
         reader = FileReader(ServerConstants.CONFIG_PATH + "interface_configs.json")
-        val obj = parser.parse(reader) as JSONObject
-        val configlist = obj["interface_configs"] as JSONArray
+        val configlist = parser.parse(reader) as JSONArray
         for(config in configlist){
             val e = config as JSONObject
             val id = e["id"].toString().toInt()

@@ -1,5 +1,4 @@
-{
-  "item_configs": [
+[
     {
       "id": "0",
       "name": "Dwarf remains",
@@ -137448,5 +137447,4 @@
       "archery_ticket_price": "0",
       "durability": null
     }
-  ]
-}
+]

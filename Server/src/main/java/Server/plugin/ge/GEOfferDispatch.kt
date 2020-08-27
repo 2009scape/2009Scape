@@ -339,6 +339,22 @@ class GEOfferDispatch : Pulse(), CallBack {
         }
 
         /**
+         * Sets the offer mapping
+         */
+        @JvmStatic
+        fun setOfferMap(offer: GrandExchangeOffer) {
+            OFFER_MAPPING[offer.uid] = offer
+        }
+
+        /**
+         * Gets the current UID without incrementing for use in BotGrandExchange
+         * @return The UID
+         */
+        @JvmStatic
+        val lastItemUID: Long
+            get() = this.offsetUID
+
+        /**
          * Gets the offerMapping.
          * @return the offerMapping
          */

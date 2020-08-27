@@ -197,8 +197,7 @@ class NPCConfigParser {
     fun load(){
         var count = 0
         reader = FileReader(ServerConstants.CONFIG_PATH + "npc_configs.json")
-        val obj = parser.parse(reader) as JSONObject
-        val configlist = obj["npc_configs"] as JSONArray
+        val configlist = parser.parse(reader) as JSONArray
         for(config in configlist){
             val e = config as JSONObject
             val def = NPCDefinition.forId(e["id"].toString().toInt())

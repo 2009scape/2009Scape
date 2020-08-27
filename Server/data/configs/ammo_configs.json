@@ -1,1732 +1,1730 @@
-{
-  "ammo_configs": [
-    {
-      "itemId": "78",
-      "name": "Ice arrows",
-      "start_graphic": "25,96",
-      "darkbow_graphic": "1110,96",
-      "projectile": "16,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "598",
-      "name": "Bronze fire arrows",
-      "start_graphic": "26,96",
-      "darkbow_graphic": "1113,96",
-      "projectile": "17,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "732",
-      "name": "Holy water",
-      "start_graphic": "193,0",
-      "darkbow_graphic": "",
-      "projectile": "192,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "800",
-      "name": "Bronze thrownaxe",
-      "start_graphic": "43,96",
-      "darkbow_graphic": "",
-      "projectile": "36,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "801",
-      "name": "Iron thrownaxe",
-      "start_graphic": "42,96",
-      "darkbow_graphic": "",
-      "projectile": "35,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "802",
-      "name": "Steel thrownaxe",
-      "start_graphic": "44,96",
-      "darkbow_graphic": "",
-      "projectile": "37,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "803",
-      "name": "Mithril thrownaxe",
-      "start_graphic": "45,96",
-      "darkbow_graphic": "",
-      "projectile": "38,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "804",
-      "name": "Adamant thrownaxe",
-      "start_graphic": "46,96",
-      "darkbow_graphic": "",
-      "projectile": "39,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "805",
-      "name": "Rune thrownaxe",
-      "start_graphic": "48,96",
-      "darkbow_graphic": "",
-      "projectile": "41,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "806",
-      "name": "Bronze dart",
-      "start_graphic": "232,96",
-      "darkbow_graphic": "",
-      "projectile": "226,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "807",
-      "name": "Iron dart",
-      "start_graphic": "233,96",
-      "darkbow_graphic": "",
-      "projectile": "227,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "808",
-      "name": "Steel dart",
-      "start_graphic": "234,96",
-      "darkbow_graphic": "",
-      "projectile": "228,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "809",
-      "name": "Mithril dart",
-      "start_graphic": "235,96",
-      "darkbow_graphic": "",
-      "projectile": "229,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "810",
-      "name": "Adamant dart",
-      "start_graphic": "236,96",
-      "darkbow_graphic": "",
-      "projectile": "230,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "811",
-      "name": "Rune dart",
-      "start_graphic": "237,96",
-      "darkbow_graphic": "",
-      "projectile": "231,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "812",
-      "name": "Bronze dart(p)",
-      "start_graphic": "232,96",
-      "darkbow_graphic": "",
-      "projectile": "226,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "813",
-      "name": "Iron dart(p)",
-      "start_graphic": "233,96",
-      "darkbow_graphic": "",
-      "projectile": "227,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "814",
-      "name": "Steel dart(p)",
-      "start_graphic": "234,96",
-      "darkbow_graphic": "",
-      "projectile": "228,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "815",
-      "name": "Mithril dart(p)",
-      "start_graphic": "235,96",
-      "darkbow_graphic": "",
-      "projectile": "229,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "816",
-      "name": "Adamant dart(p)",
-      "start_graphic": "236,96",
-      "darkbow_graphic": "",
-      "projectile": "230,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "817",
-      "name": "Rune dart(p)",
-      "start_graphic": "237,96",
-      "darkbow_graphic": "",
-      "projectile": "231,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "825",
-      "name": "Bronze javelin",
-      "start_graphic": "206,96",
-      "darkbow_graphic": "",
-      "projectile": "200,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "826",
-      "name": "Iron javelin",
-      "start_graphic": "207,96",
-      "darkbow_graphic": "",
-      "projectile": "201,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "827",
-      "name": "Steel javelin",
-      "start_graphic": "208,96",
-      "darkbow_graphic": "",
-      "projectile": "202,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "828",
-      "name": "Mithril javelin",
-      "start_graphic": "209,96",
-      "darkbow_graphic": "",
-      "projectile": "203,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "829",
-      "name": "Adamant javelin",
-      "start_graphic": "210,96",
-      "darkbow_graphic": "",
-      "projectile": "204,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "830",
-      "name": "Rune javelin",
-      "start_graphic": "211,96",
-      "darkbow_graphic": "",
-      "projectile": "205,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "831",
-      "name": "Bronze javelin(p)",
-      "start_graphic": "206,96",
-      "darkbow_graphic": "",
-      "projectile": "200,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "832",
-      "name": "Iron javelin(p)",
-      "start_graphic": "207,96",
-      "darkbow_graphic": "",
-      "projectile": "201,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "833",
-      "name": "Steel javelin(p)",
-      "start_graphic": "208,96",
-      "darkbow_graphic": "",
-      "projectile": "202,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "834",
-      "name": "Mithril javelin(p)",
-      "start_graphic": "209,96",
-      "darkbow_graphic": "",
-      "projectile": "203,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "835",
-      "name": "Adamant javelin(p)",
-      "start_graphic": "210,96",
-      "darkbow_graphic": "",
-      "projectile": "204,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "836",
-      "name": "Rune javelin(p)",
-      "start_graphic": "211,96",
-      "darkbow_graphic": "",
-      "projectile": "205,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "863",
-      "name": "Iron knife",
-      "start_graphic": "220,96",
-      "darkbow_graphic": "",
-      "projectile": "213,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "864",
-      "name": "Bronze knife",
-      "start_graphic": "219,96",
-      "darkbow_graphic": "",
-      "projectile": "212,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "865",
-      "name": "Steel knife",
-      "start_graphic": "221,96",
-      "darkbow_graphic": "",
-      "projectile": "214,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "866",
-      "name": "Mithril knife",
-      "start_graphic": "223,96",
-      "darkbow_graphic": "",
-      "projectile": "216,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "867",
-      "name": "Adamant knife",
-      "start_graphic": "224,96",
-      "darkbow_graphic": "",
-      "projectile": "217,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "868",
-      "name": "Rune knife",
-      "start_graphic": "225,96",
-      "darkbow_graphic": "",
-      "projectile": "218,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "869",
-      "name": "Black knife",
-      "start_graphic": "222,96",
-      "darkbow_graphic": "",
-      "projectile": "215,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "870",
-      "name": "Bronze knife(p)",
-      "start_graphic": "219,96",
-      "darkbow_graphic": "",
-      "projectile": "212,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "871",
-      "name": "Iron knife(p)",
-      "start_graphic": "220,96",
-      "darkbow_graphic": "",
-      "projectile": "213,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "872",
-      "name": "Steel knife(p)",
-      "start_graphic": "221,96",
-      "darkbow_graphic": "",
-      "projectile": "214,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "873",
-      "name": "Mithril knife(p)",
-      "start_graphic": "223,96",
-      "darkbow_graphic": "",
-      "projectile": "216,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "874",
-      "name": "Black knife(p)",
-      "start_graphic": "222,96",
-      "darkbow_graphic": "",
-      "projectile": "215,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "875",
-      "name": "Adamant knife(p)",
-      "start_graphic": "224,96",
-      "darkbow_graphic": "",
-      "projectile": "217,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "876",
-      "name": "Rune knife(p)",
-      "start_graphic": "225,96",
-      "darkbow_graphic": "",
-      "projectile": "218,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "877",
-      "name": "Bronze bolts",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "878",
-      "name": "Bronze bolts(p)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "879",
-      "name": "Opal bolts",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "880",
-      "name": "Pearl bolts",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "882",
-      "name": "Bronze arrow",
-      "start_graphic": "19,96",
-      "darkbow_graphic": "1104,96",
-      "projectile": "10,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "883",
-      "name": "Bronze arrow(p)",
-      "start_graphic": "19,96",
-      "darkbow_graphic": "1104,96",
-      "projectile": "10,40,36,41,46,5,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "884",
-      "name": "Iron arrow",
-      "start_graphic": "18,96",
-      "darkbow_graphic": "1105,96",
-      "projectile": "9,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "885",
-      "name": "Iron arrow(p)",
-      "start_graphic": "18,96",
-      "darkbow_graphic": "1105,96",
-      "projectile": "9,40,36,41,46,5,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "886",
-      "name": "Steel arrow",
-      "start_graphic": "20,96",
-      "darkbow_graphic": "1106,96",
-      "projectile": "11,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "887",
-      "name": "Steel arrow(p)",
-      "start_graphic": "20,96",
-      "darkbow_graphic": "1106,96",
-      "projectile": "11,40,36,41,46,5,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "888",
-      "name": "Mithril arrow",
-      "start_graphic": "21,96",
-      "darkbow_graphic": "1107,96",
-      "projectile": "12,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "889",
-      "name": "Mithril arrow(p)",
-      "start_graphic": "21,96",
-      "darkbow_graphic": "1107,96",
-      "projectile": "12,40,36,41,46,5,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "890",
-      "name": "Adamant arrow",
-      "start_graphic": "22,96",
-      "darkbow_graphic": "1108,96",
-      "projectile": "13,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "891",
-      "name": "Adamant arrow(p)",
-      "start_graphic": "22,96",
-      "darkbow_graphic": "1108,96",
-      "projectile": "13,40,36,41,46,5,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "892",
-      "name": "Rune arrow",
-      "start_graphic": "24,96",
-      "darkbow_graphic": "1109,96",
-      "projectile": "15,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "893",
-      "name": "Rune arrow(p)",
-      "start_graphic": "24,96",
-      "darkbow_graphic": "1109,96",
-      "projectile": "15,40,36,41,46,5,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "2532",
-      "name": "Iron fire arrows",
-      "start_graphic": "26,96",
-      "darkbow_graphic": "1113,96",
-      "projectile": "17,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "2534",
-      "name": "Steel fire arrows",
-      "start_graphic": "26,96",
-      "darkbow_graphic": "1113,96",
-      "projectile": "17,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "2536",
-      "name": "Mithril fire arrows",
-      "start_graphic": "26,96",
-      "darkbow_graphic": "1113,96",
-      "projectile": "17,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "2538",
-      "name": "Adamant fire arrows",
-      "start_graphic": "26,96",
-      "darkbow_graphic": "1113,96",
-      "projectile": "17,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "2540",
-      "name": "Rune fire arrows",
-      "start_graphic": "26,96",
-      "darkbow_graphic": "1113,96",
-      "projectile": "17,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "2866",
-      "name": "Ogre arrow",
-      "start_graphic": "243,96",
-      "darkbow_graphic": "",
-      "projectile": "242,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "3093",
-      "name": "Black dart",
-      "start_graphic": "273,96",
-      "darkbow_graphic": "",
-      "projectile": "227,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "3094",
-      "name": "Black dart(p)",
-      "start_graphic": "273,96",
-      "darkbow_graphic": "",
-      "projectile": "227,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "4160",
-      "name": "Broad arrow",
-      "start_graphic": "325,96",
-      "darkbow_graphic": "1112,96",
-      "projectile": "326,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "4212",
-      "name": "New crystal bow",
-      "start_graphic": "250,96",
-      "darkbow_graphic": "",
-      "projectile": "249,40,36,45,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "4214",
-      "name": "Crystal bow full",
-      "start_graphic": "250,96",
-      "darkbow_graphic": "",
-      "projectile": "249,40,36,45,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "4215",
-      "name": "Crystal bow 9/10",
-      "start_graphic": "250,96",
-      "darkbow_graphic": "",
-      "projectile": "249,40,36,45,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "4216",
-      "name": "Crystal bow 8/10",
-      "start_graphic": "250,96",
-      "darkbow_graphic": "",
-      "projectile": "249,40,36,45,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "4217",
-      "name": "Crystal bow 7/10",
-      "start_graphic": "250,96",
-      "darkbow_graphic": "",
-      "projectile": "249,40,36,45,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "4218",
-      "name": "Crystal bow 6/10",
-      "start_graphic": "250,96",
-      "darkbow_graphic": "",
-      "projectile": "249,40,36,45,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "4219",
-      "name": "Crystal bow 5/10",
-      "start_graphic": "250,96",
-      "darkbow_graphic": "",
-      "projectile": "249,40,36,45,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "4220",
-      "name": "Crystal bow 4/10",
-      "start_graphic": "250,96",
-      "darkbow_graphic": "",
-      "projectile": "249,40,36,45,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "4221",
-      "name": "Crystal bow 3/10",
-      "start_graphic": "250,96",
-      "darkbow_graphic": "",
-      "projectile": "249,40,36,45,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "4222",
-      "name": "Crystal bow 2/10",
-      "start_graphic": "250,96",
-      "darkbow_graphic": "",
-      "projectile": "249,40,36,45,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "4223",
-      "name": "Crystal bow 1/10",
-      "start_graphic": "250,96",
-      "darkbow_graphic": "",
-      "projectile": "249,40,36,45,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "4740",
-      "name": "Bolt rack",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "4778",
-      "name": "Iron brutal",
-      "start_graphic": "18,96",
-      "darkbow_graphic": "",
-      "projectile": "9,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "4783",
-      "name": "Steel brutal",
-      "start_graphic": "20,96",
-      "darkbow_graphic": "",
-      "projectile": "11,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "4788",
-      "name": "Black brutal",
-      "start_graphic": "18,96",
-      "darkbow_graphic": "",
-      "projectile": "9,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "4793",
-      "name": "Mithril brutal",
-      "start_graphic": "21,96",
-      "darkbow_graphic": "",
-      "projectile": "12,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "4798",
-      "name": "Adamant brutal",
-      "start_graphic": "22,96",
-      "darkbow_graphic": "",
-      "projectile": "13,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "4803",
-      "name": "Rune brutal",
-      "start_graphic": "24,96",
-      "darkbow_graphic": "",
-      "projectile": "15,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "5616",
-      "name": "Bronze arrow(p+)",
-      "start_graphic": "19,96",
-      "darkbow_graphic": "1104,96",
-      "projectile": "10,40,36,41,46,5,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5617",
-      "name": "Iron arrow(p+)",
-      "start_graphic": "18,96",
-      "darkbow_graphic": "1105,96",
-      "projectile": "9,40,36,41,46,5,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5618",
-      "name": "Steel arrow(p+)",
-      "start_graphic": "20,96",
-      "darkbow_graphic": "1106,96",
-      "projectile": "11,40,36,41,46,5,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5619",
-      "name": "Mithril arrow(p+)",
-      "start_graphic": "21,96",
-      "darkbow_graphic": "1107,96",
-      "projectile": "12,40,36,41,46,5,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5620",
-      "name": "Adamant arrow(p+)",
-      "start_graphic": "22,96",
-      "darkbow_graphic": "1108,96",
-      "projectile": "13,40,36,41,46,5,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5621",
-      "name": "Rune arrow(p+)",
-      "start_graphic": "19,96",
-      "darkbow_graphic": "",
-      "projectile": "10,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "5622",
-      "name": "Bronze arrow(p++)",
-      "start_graphic": "19,96",
-      "darkbow_graphic": "1104,96",
-      "projectile": "10,40,36,41,46,5,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5623",
-      "name": "Iron arrow(p++)",
-      "start_graphic": "18,96",
-      "darkbow_graphic": "1105,96",
-      "projectile": "9,40,36,41,46,5,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5624",
-      "name": "Steel arrow(p++)",
-      "start_graphic": "20,96",
-      "darkbow_graphic": "1106,96",
-      "projectile": "11,40,36,41,46,5,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5625",
-      "name": "Mithril arrow(p++)",
-      "start_graphic": "21,96",
-      "darkbow_graphic": "1107,96",
-      "projectile": "12,40,36,41,46,5,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5626",
-      "name": "Adamant arrow(p++)",
-      "start_graphic": "22,96",
-      "darkbow_graphic": "1108,96",
-      "projectile": "13,40,36,41,46,5,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5627",
-      "name": "Rune arrow(p++)",
-      "start_graphic": "24,96",
-      "darkbow_graphic": "1109,96",
-      "projectile": "15,40,36,41,46,5,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5628",
-      "name": "Bronze dart(p+)",
-      "start_graphic": "232,96",
-      "darkbow_graphic": "",
-      "projectile": "226,40,36,32,32,15,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5629",
-      "name": "Iron dart(p+)",
-      "start_graphic": "233,96",
-      "darkbow_graphic": "",
-      "projectile": "227,40,36,32,32,15,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5630",
-      "name": "Steel dart(p+)",
-      "start_graphic": "235,96",
-      "darkbow_graphic": "",
-      "projectile": "229,40,36,32,32,15,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5631",
-      "name": "Black dart(p+)",
-      "start_graphic": "273,96",
-      "darkbow_graphic": "",
-      "projectile": "227,40,36,32,32,15,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5633",
-      "name": "Adamant dart(p+)",
-      "start_graphic": "236,96",
-      "darkbow_graphic": "",
-      "projectile": "230,40,36,32,32,15,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5634",
-      "name": "Rune dart(p+)",
-      "start_graphic": "237,96",
-      "darkbow_graphic": "",
-      "projectile": "231,40,36,32,32,15,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5635",
-      "name": "Bronze dart(p++)",
-      "start_graphic": "232,96",
-      "darkbow_graphic": "",
-      "projectile": "226,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5636",
-      "name": "Iron dart(p++)",
-      "start_graphic": "233,96",
-      "darkbow_graphic": "",
-      "projectile": "227,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5637",
-      "name": "Steel dart(p++)",
-      "start_graphic": "234,96",
-      "darkbow_graphic": "",
-      "projectile": "228,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5638",
-      "name": "Black dart(p++)",
-      "start_graphic": "273,96",
-      "darkbow_graphic": "",
-      "projectile": "227,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5639",
-      "name": "Mithril dart(p++)",
-      "start_graphic": "235,96",
-      "darkbow_graphic": "",
-      "projectile": "229,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5640",
-      "name": "Adamant dart(p++)",
-      "start_graphic": "236,96",
-      "darkbow_graphic": "",
-      "projectile": "230,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5641",
-      "name": "Rune dart(p++)",
-      "start_graphic": "237,96",
-      "darkbow_graphic": "",
-      "projectile": "231,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5642",
-      "name": "Bronze javelin(p+)",
-      "start_graphic": "206,96",
-      "darkbow_graphic": "",
-      "projectile": "200,40,36,32,32,15,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5643",
-      "name": "Iron javelin(p+)",
-      "start_graphic": "207,96",
-      "darkbow_graphic": "",
-      "projectile": "201,40,36,32,32,15,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5644",
-      "name": "Steel javelin(p+)",
-      "start_graphic": "208,96",
-      "darkbow_graphic": "",
-      "projectile": "202,40,36,32,32,15,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5645",
-      "name": "Mithril javelin(p+)",
-      "start_graphic": "209,96",
-      "darkbow_graphic": "",
-      "projectile": "203,40,36,32,32,15,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5646",
-      "name": "Adamant javelin(p+)",
-      "start_graphic": "210,96",
-      "darkbow_graphic": "",
-      "projectile": "204,40,36,32,32,15,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5647",
-      "name": "Rune javelin(p+)",
-      "start_graphic": "211,96",
-      "darkbow_graphic": "",
-      "projectile": "205,40,36,32,32,15,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5648",
-      "name": "Bronze jav\\'n(p++)",
-      "start_graphic": "206,96",
-      "darkbow_graphic": "",
-      "projectile": "200,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5649",
-      "name": "Iron javelin(p++)",
-      "start_graphic": "207,96",
-      "darkbow_graphic": "",
-      "projectile": "201,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5650",
-      "name": "Steel javelin(p++)",
-      "start_graphic": "208,96",
-      "darkbow_graphic": "",
-      "projectile": "202,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5651",
-      "name": "Mithril javelin(p++)",
-      "start_graphic": "209,96",
-      "darkbow_graphic": "",
-      "projectile": "203,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5652",
-      "name": "Adamant javelin(p++)",
-      "start_graphic": "210,96",
-      "darkbow_graphic": "",
-      "projectile": "204,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5653",
-      "name": "Rune javelin(p++)",
-      "start_graphic": "211,96",
-      "darkbow_graphic": "",
-      "projectile": "205,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5654",
-      "name": "Bronze knife(p+)",
-      "start_graphic": "219,96",
-      "darkbow_graphic": "",
-      "projectile": "212,40,36,32,32,15,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5655",
-      "name": "Iron knife(p+)",
-      "start_graphic": "220,96",
-      "darkbow_graphic": "",
-      "projectile": "213,40,36,32,32,15,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5656",
-      "name": "Steel knife(p+)",
-      "start_graphic": "221,96",
-      "darkbow_graphic": "",
-      "projectile": "214,40,36,32,32,15,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5657",
-      "name": "Mithril knife(p+)",
-      "start_graphic": "223,96",
-      "darkbow_graphic": "",
-      "projectile": "216,40,36,32,32,15,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5658",
-      "name": "Black knife(p+)",
-      "start_graphic": "222,96",
-      "darkbow_graphic": "",
-      "projectile": "215,40,36,32,32,15,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5659",
-      "name": "Adamant knife(p+)",
-      "start_graphic": "224,96",
-      "darkbow_graphic": "",
-      "projectile": "217,40,36,32,32,15,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5660",
-      "name": "Rune knife(p+)",
-      "start_graphic": "225,96",
-      "darkbow_graphic": "",
-      "projectile": "218,40,36,32,32,15,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "5661",
-      "name": "Bronze knife(p++)",
-      "start_graphic": "219,96",
-      "darkbow_graphic": "",
-      "projectile": "212,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5662",
-      "name": "Iron knife(p++)",
-      "start_graphic": "220,96",
-      "darkbow_graphic": "",
-      "projectile": "213,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5663",
-      "name": "Steel knife(p++)",
-      "start_graphic": "221,96",
-      "darkbow_graphic": "",
-      "projectile": "214,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5664",
-      "name": "Mithril knife(p++)",
-      "start_graphic": "223,96",
-      "darkbow_graphic": "",
-      "projectile": "216,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5665",
-      "name": "Black knife(p++)",
-      "start_graphic": "222,96",
-      "darkbow_graphic": "",
-      "projectile": "215,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5666",
-      "name": "Adamant knife(p++)",
-      "start_graphic": "224,96",
-      "darkbow_graphic": "",
-      "projectile": "217,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "5667",
-      "name": "Rune knife(p++)",
-      "start_graphic": "225,96",
-      "darkbow_graphic": "",
-      "projectile": "218,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "6061",
-      "name": "Bronze bolts(p+)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "6062",
-      "name": "Bronze bolts(p++)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "6522",
-      "name": "Toktz-xil-ul",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "442,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "8882",
-      "name": "Bone bolts",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9139",
-      "name": "Blurite bolts",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9140",
-      "name": "Iron bolts",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9141",
-      "name": "Steel bolts",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9142",
-      "name": "Mithril bolts",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9143",
-      "name": "Adamant bolts",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9144",
-      "name": "Rune bolts",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9236",
-      "name": "Opal bolts (e)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9237",
-      "name": "Jade bolts (e)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9238",
-      "name": "Pearl bolts (e)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9239",
-      "name": "Topaz bolts (e)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9240",
-      "name": "Sapphire bolts (e)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9241",
-      "name": "Emerald bolts (e)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9242",
-      "name": "Ruby bolts (e)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9243",
-      "name": "Diamond bolts (e)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9244",
-      "name": "Dragon bolts (e)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9245",
-      "name": "Onyx bolts (e)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9286",
-      "name": "Blurite bolts(p)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "9287",
-      "name": "Iron bolts (p)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "9288",
-      "name": "Steel bolts (p)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "9289",
-      "name": "Mithril bolts (p)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "9290",
-      "name": "Adamant bolts (p)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "9291",
-      "name": "Runite bolts (p)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "9293",
-      "name": "Blurite bolts(p+)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "9294",
-      "name": "Iron bolts(p+)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "9295",
-      "name": "Steel bolts(p+)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "9296",
-      "name": "Mithril bolts(p+)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "9297",
-      "name": "Adamant bolts(p+)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "9298",
-      "name": "Runite bolts(p+)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "9300",
-      "name": "Blurite bolts(p++)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "9301",
-      "name": "Iron bolts(p++)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "9302",
-      "name": "Steel bolts(p++)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "9303",
-      "name": "Mithril bolts(p++)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "9304",
-      "name": "Adamant bolts(p++)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "9305",
-      "name": "Runite bolts(p++)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "9335",
-      "name": "Jade bolts",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9336",
-      "name": "Topaz bolts",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9337",
-      "name": "Sapphire bolts",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9338",
-      "name": "Emerald bolts",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9339",
-      "name": "Ruby bolts",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9340",
-      "name": "Diamond bolts",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9341",
-      "name": "Dragon bolts",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9342",
-      "name": "Onyx bolts",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "9706",
-      "name": "Training arrows",
-      "start_graphic": "806,96",
-      "darkbow_graphic": "806,96",
-      "projectile": "805,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "10033",
-      "name": "Chinchompa",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "908,40,36,45,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "10034",
-      "name": "Red chinchompa",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "909,40,36,45,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "10158",
-      "name": "Kebbit bolts",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "10159",
-      "name": "Long kebbit bolts",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "11212",
-      "name": "Dragon arrow",
-      "start_graphic": "1116,96",
-      "darkbow_graphic": "1114,96",
-      "projectile": "1120,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "11217",
-      "name": "Dragon fire arrows",
-      "start_graphic": "26,96",
-      "darkbow_graphic": "1113,96",
-      "projectile": "17,40,36,41,46,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "11227",
-      "name": "Dragon arrow(p)",
-      "start_graphic": "1116,96",
-      "darkbow_graphic": "1114,96",
-      "projectile": "1120,40,36,41,46,5,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "11228",
-      "name": "Dragon arrow(p+)",
-      "start_graphic": "1116,96",
-      "darkbow_graphic": "1114,96",
-      "projectile": "1120,40,36,41,46,5,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "11229",
-      "name": "Dragon arrow(p++)",
-      "start_graphic": "1116,96",
-      "darkbow_graphic": "1114,96",
-      "projectile": "1120,40,36,41,46,5,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "11230",
-      "name": "Dragon dart",
-      "start_graphic": "1123,96",
-      "darkbow_graphic": "",
-      "projectile": "1122,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "11231",
-      "name": "Dragon dart(p)",
-      "start_graphic": "1123,96",
-      "darkbow_graphic": "",
-      "projectile": "1122,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "11233",
-      "name": "Dragon dart(p+)",
-      "start_graphic": "1123,96",
-      "darkbow_graphic": "",
-      "projectile": "1122,40,36,32,32,15,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "11234",
-      "name": "Dragon dart(p++)",
-      "start_graphic": "1123,96",
-      "darkbow_graphic": "",
-      "projectile": "1122,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "13083",
-      "name": "Black bolts",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "13084",
-      "name": "Black bolts(p)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "13085",
-      "name": "Black bolts(p+)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "13086",
-      "name": "Black bolts(p++)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "13280",
-      "name": "Broad-tipped bolts",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "27,38,36,41,32,5,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "13879",
-      "name": "Morrigan\\'s javelin",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "1837,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "13880",
-      "name": "Morrigan\\'s javelin(p)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "1837,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "13881",
-      "name": "Morrigan\\'s javelin(p+)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "1837,40,36,32,32,15,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "13882",
-      "name": "Morrigan\\'s javelin(p++)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "1837,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "13883",
-      "name": "Morrigan\\'s throwing axe",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "1839,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "13953",
-      "name": "Corrupt morrigan\\'s javelin",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "1837,40,36,32,32,15,0",
-      "poison_damage": "0"
-    },
-    {
-      "itemId": "13954",
-      "name": "C. morrigan\\'s javelin (p)",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "1837,40,36,32,32,15,0",
-      "poison_damage": "28"
-    },
-    {
-      "itemId": "13955",
-      "name": "C. morrigan\\'s javelin (p+)",
-      "start_graphic": "1837,96",
-      "darkbow_graphic": "",
-      "projectile": "1840,40,36,32,32,15,0",
-      "poison_damage": "38"
-    },
-    {
-      "itemId": "13956",
-      "name": "C. morrigan\\'s javelin (p++)",
-      "start_graphic": "1837,96",
-      "darkbow_graphic": "",
-      "projectile": "1840,40,36,32,32,15,0",
-      "poison_damage": "48"
-    },
-    {
-      "itemId": "13957",
-      "name": "C. morrigan\\'s throwing axe",
-      "start_graphic": "-1,0",
-      "darkbow_graphic": "",
-      "projectile": "1839,40,36,32,32,15,0",
-      "poison_damage": "0"
-    }
-  ]
-}
+[
+  {
+    "itemId": "78",
+    "name": "Ice arrows",
+    "start_graphic": "25,96",
+    "darkbow_graphic": "1110,96",
+    "projectile": "16,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "598",
+    "name": "Bronze fire arrows",
+    "start_graphic": "26,96",
+    "darkbow_graphic": "1113,96",
+    "projectile": "17,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "732",
+    "name": "Holy water",
+    "start_graphic": "193,0",
+    "darkbow_graphic": "",
+    "projectile": "192,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "800",
+    "name": "Bronze thrownaxe",
+    "start_graphic": "43,96",
+    "darkbow_graphic": "",
+    "projectile": "36,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "801",
+    "name": "Iron thrownaxe",
+    "start_graphic": "42,96",
+    "darkbow_graphic": "",
+    "projectile": "35,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "802",
+    "name": "Steel thrownaxe",
+    "start_graphic": "44,96",
+    "darkbow_graphic": "",
+    "projectile": "37,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "803",
+    "name": "Mithril thrownaxe",
+    "start_graphic": "45,96",
+    "darkbow_graphic": "",
+    "projectile": "38,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "804",
+    "name": "Adamant thrownaxe",
+    "start_graphic": "46,96",
+    "darkbow_graphic": "",
+    "projectile": "39,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "805",
+    "name": "Rune thrownaxe",
+    "start_graphic": "48,96",
+    "darkbow_graphic": "",
+    "projectile": "41,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "806",
+    "name": "Bronze dart",
+    "start_graphic": "232,96",
+    "darkbow_graphic": "",
+    "projectile": "226,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "807",
+    "name": "Iron dart",
+    "start_graphic": "233,96",
+    "darkbow_graphic": "",
+    "projectile": "227,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "808",
+    "name": "Steel dart",
+    "start_graphic": "234,96",
+    "darkbow_graphic": "",
+    "projectile": "228,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "809",
+    "name": "Mithril dart",
+    "start_graphic": "235,96",
+    "darkbow_graphic": "",
+    "projectile": "229,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "810",
+    "name": "Adamant dart",
+    "start_graphic": "236,96",
+    "darkbow_graphic": "",
+    "projectile": "230,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "811",
+    "name": "Rune dart",
+    "start_graphic": "237,96",
+    "darkbow_graphic": "",
+    "projectile": "231,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "812",
+    "name": "Bronze dart(p)",
+    "start_graphic": "232,96",
+    "darkbow_graphic": "",
+    "projectile": "226,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "813",
+    "name": "Iron dart(p)",
+    "start_graphic": "233,96",
+    "darkbow_graphic": "",
+    "projectile": "227,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "814",
+    "name": "Steel dart(p)",
+    "start_graphic": "234,96",
+    "darkbow_graphic": "",
+    "projectile": "228,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "815",
+    "name": "Mithril dart(p)",
+    "start_graphic": "235,96",
+    "darkbow_graphic": "",
+    "projectile": "229,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "816",
+    "name": "Adamant dart(p)",
+    "start_graphic": "236,96",
+    "darkbow_graphic": "",
+    "projectile": "230,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "817",
+    "name": "Rune dart(p)",
+    "start_graphic": "237,96",
+    "darkbow_graphic": "",
+    "projectile": "231,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "825",
+    "name": "Bronze javelin",
+    "start_graphic": "206,96",
+    "darkbow_graphic": "",
+    "projectile": "200,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "826",
+    "name": "Iron javelin",
+    "start_graphic": "207,96",
+    "darkbow_graphic": "",
+    "projectile": "201,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "827",
+    "name": "Steel javelin",
+    "start_graphic": "208,96",
+    "darkbow_graphic": "",
+    "projectile": "202,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "828",
+    "name": "Mithril javelin",
+    "start_graphic": "209,96",
+    "darkbow_graphic": "",
+    "projectile": "203,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "829",
+    "name": "Adamant javelin",
+    "start_graphic": "210,96",
+    "darkbow_graphic": "",
+    "projectile": "204,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "830",
+    "name": "Rune javelin",
+    "start_graphic": "211,96",
+    "darkbow_graphic": "",
+    "projectile": "205,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "831",
+    "name": "Bronze javelin(p)",
+    "start_graphic": "206,96",
+    "darkbow_graphic": "",
+    "projectile": "200,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "832",
+    "name": "Iron javelin(p)",
+    "start_graphic": "207,96",
+    "darkbow_graphic": "",
+    "projectile": "201,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "833",
+    "name": "Steel javelin(p)",
+    "start_graphic": "208,96",
+    "darkbow_graphic": "",
+    "projectile": "202,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "834",
+    "name": "Mithril javelin(p)",
+    "start_graphic": "209,96",
+    "darkbow_graphic": "",
+    "projectile": "203,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "835",
+    "name": "Adamant javelin(p)",
+    "start_graphic": "210,96",
+    "darkbow_graphic": "",
+    "projectile": "204,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "836",
+    "name": "Rune javelin(p)",
+    "start_graphic": "211,96",
+    "darkbow_graphic": "",
+    "projectile": "205,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "863",
+    "name": "Iron knife",
+    "start_graphic": "220,96",
+    "darkbow_graphic": "",
+    "projectile": "213,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "864",
+    "name": "Bronze knife",
+    "start_graphic": "219,96",
+    "darkbow_graphic": "",
+    "projectile": "212,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "865",
+    "name": "Steel knife",
+    "start_graphic": "221,96",
+    "darkbow_graphic": "",
+    "projectile": "214,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "866",
+    "name": "Mithril knife",
+    "start_graphic": "223,96",
+    "darkbow_graphic": "",
+    "projectile": "216,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "867",
+    "name": "Adamant knife",
+    "start_graphic": "224,96",
+    "darkbow_graphic": "",
+    "projectile": "217,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "868",
+    "name": "Rune knife",
+    "start_graphic": "225,96",
+    "darkbow_graphic": "",
+    "projectile": "218,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "869",
+    "name": "Black knife",
+    "start_graphic": "222,96",
+    "darkbow_graphic": "",
+    "projectile": "215,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "870",
+    "name": "Bronze knife(p)",
+    "start_graphic": "219,96",
+    "darkbow_graphic": "",
+    "projectile": "212,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "871",
+    "name": "Iron knife(p)",
+    "start_graphic": "220,96",
+    "darkbow_graphic": "",
+    "projectile": "213,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "872",
+    "name": "Steel knife(p)",
+    "start_graphic": "221,96",
+    "darkbow_graphic": "",
+    "projectile": "214,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "873",
+    "name": "Mithril knife(p)",
+    "start_graphic": "223,96",
+    "darkbow_graphic": "",
+    "projectile": "216,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "874",
+    "name": "Black knife(p)",
+    "start_graphic": "222,96",
+    "darkbow_graphic": "",
+    "projectile": "215,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "875",
+    "name": "Adamant knife(p)",
+    "start_graphic": "224,96",
+    "darkbow_graphic": "",
+    "projectile": "217,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "876",
+    "name": "Rune knife(p)",
+    "start_graphic": "225,96",
+    "darkbow_graphic": "",
+    "projectile": "218,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "877",
+    "name": "Bronze bolts",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "878",
+    "name": "Bronze bolts(p)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "879",
+    "name": "Opal bolts",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "880",
+    "name": "Pearl bolts",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "882",
+    "name": "Bronze arrow",
+    "start_graphic": "19,96",
+    "darkbow_graphic": "1104,96",
+    "projectile": "10,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "883",
+    "name": "Bronze arrow(p)",
+    "start_graphic": "19,96",
+    "darkbow_graphic": "1104,96",
+    "projectile": "10,40,36,41,46,5,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "884",
+    "name": "Iron arrow",
+    "start_graphic": "18,96",
+    "darkbow_graphic": "1105,96",
+    "projectile": "9,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "885",
+    "name": "Iron arrow(p)",
+    "start_graphic": "18,96",
+    "darkbow_graphic": "1105,96",
+    "projectile": "9,40,36,41,46,5,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "886",
+    "name": "Steel arrow",
+    "start_graphic": "20,96",
+    "darkbow_graphic": "1106,96",
+    "projectile": "11,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "887",
+    "name": "Steel arrow(p)",
+    "start_graphic": "20,96",
+    "darkbow_graphic": "1106,96",
+    "projectile": "11,40,36,41,46,5,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "888",
+    "name": "Mithril arrow",
+    "start_graphic": "21,96",
+    "darkbow_graphic": "1107,96",
+    "projectile": "12,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "889",
+    "name": "Mithril arrow(p)",
+    "start_graphic": "21,96",
+    "darkbow_graphic": "1107,96",
+    "projectile": "12,40,36,41,46,5,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "890",
+    "name": "Adamant arrow",
+    "start_graphic": "22,96",
+    "darkbow_graphic": "1108,96",
+    "projectile": "13,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "891",
+    "name": "Adamant arrow(p)",
+    "start_graphic": "22,96",
+    "darkbow_graphic": "1108,96",
+    "projectile": "13,40,36,41,46,5,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "892",
+    "name": "Rune arrow",
+    "start_graphic": "24,96",
+    "darkbow_graphic": "1109,96",
+    "projectile": "15,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "893",
+    "name": "Rune arrow(p)",
+    "start_graphic": "24,96",
+    "darkbow_graphic": "1109,96",
+    "projectile": "15,40,36,41,46,5,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "2532",
+    "name": "Iron fire arrows",
+    "start_graphic": "26,96",
+    "darkbow_graphic": "1113,96",
+    "projectile": "17,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "2534",
+    "name": "Steel fire arrows",
+    "start_graphic": "26,96",
+    "darkbow_graphic": "1113,96",
+    "projectile": "17,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "2536",
+    "name": "Mithril fire arrows",
+    "start_graphic": "26,96",
+    "darkbow_graphic": "1113,96",
+    "projectile": "17,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "2538",
+    "name": "Adamant fire arrows",
+    "start_graphic": "26,96",
+    "darkbow_graphic": "1113,96",
+    "projectile": "17,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "2540",
+    "name": "Rune fire arrows",
+    "start_graphic": "26,96",
+    "darkbow_graphic": "1113,96",
+    "projectile": "17,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "2866",
+    "name": "Ogre arrow",
+    "start_graphic": "243,96",
+    "darkbow_graphic": "",
+    "projectile": "242,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "3093",
+    "name": "Black dart",
+    "start_graphic": "273,96",
+    "darkbow_graphic": "",
+    "projectile": "227,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "3094",
+    "name": "Black dart(p)",
+    "start_graphic": "273,96",
+    "darkbow_graphic": "",
+    "projectile": "227,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "4160",
+    "name": "Broad arrow",
+    "start_graphic": "325,96",
+    "darkbow_graphic": "1112,96",
+    "projectile": "326,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "4212",
+    "name": "New crystal bow",
+    "start_graphic": "250,96",
+    "darkbow_graphic": "",
+    "projectile": "249,40,36,45,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "4214",
+    "name": "Crystal bow full",
+    "start_graphic": "250,96",
+    "darkbow_graphic": "",
+    "projectile": "249,40,36,45,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "4215",
+    "name": "Crystal bow 9/10",
+    "start_graphic": "250,96",
+    "darkbow_graphic": "",
+    "projectile": "249,40,36,45,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "4216",
+    "name": "Crystal bow 8/10",
+    "start_graphic": "250,96",
+    "darkbow_graphic": "",
+    "projectile": "249,40,36,45,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "4217",
+    "name": "Crystal bow 7/10",
+    "start_graphic": "250,96",
+    "darkbow_graphic": "",
+    "projectile": "249,40,36,45,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "4218",
+    "name": "Crystal bow 6/10",
+    "start_graphic": "250,96",
+    "darkbow_graphic": "",
+    "projectile": "249,40,36,45,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "4219",
+    "name": "Crystal bow 5/10",
+    "start_graphic": "250,96",
+    "darkbow_graphic": "",
+    "projectile": "249,40,36,45,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "4220",
+    "name": "Crystal bow 4/10",
+    "start_graphic": "250,96",
+    "darkbow_graphic": "",
+    "projectile": "249,40,36,45,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "4221",
+    "name": "Crystal bow 3/10",
+    "start_graphic": "250,96",
+    "darkbow_graphic": "",
+    "projectile": "249,40,36,45,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "4222",
+    "name": "Crystal bow 2/10",
+    "start_graphic": "250,96",
+    "darkbow_graphic": "",
+    "projectile": "249,40,36,45,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "4223",
+    "name": "Crystal bow 1/10",
+    "start_graphic": "250,96",
+    "darkbow_graphic": "",
+    "projectile": "249,40,36,45,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "4740",
+    "name": "Bolt rack",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "4778",
+    "name": "Iron brutal",
+    "start_graphic": "18,96",
+    "darkbow_graphic": "",
+    "projectile": "9,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "4783",
+    "name": "Steel brutal",
+    "start_graphic": "20,96",
+    "darkbow_graphic": "",
+    "projectile": "11,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "4788",
+    "name": "Black brutal",
+    "start_graphic": "18,96",
+    "darkbow_graphic": "",
+    "projectile": "9,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "4793",
+    "name": "Mithril brutal",
+    "start_graphic": "21,96",
+    "darkbow_graphic": "",
+    "projectile": "12,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "4798",
+    "name": "Adamant brutal",
+    "start_graphic": "22,96",
+    "darkbow_graphic": "",
+    "projectile": "13,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "4803",
+    "name": "Rune brutal",
+    "start_graphic": "24,96",
+    "darkbow_graphic": "",
+    "projectile": "15,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "5616",
+    "name": "Bronze arrow(p+)",
+    "start_graphic": "19,96",
+    "darkbow_graphic": "1104,96",
+    "projectile": "10,40,36,41,46,5,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5617",
+    "name": "Iron arrow(p+)",
+    "start_graphic": "18,96",
+    "darkbow_graphic": "1105,96",
+    "projectile": "9,40,36,41,46,5,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5618",
+    "name": "Steel arrow(p+)",
+    "start_graphic": "20,96",
+    "darkbow_graphic": "1106,96",
+    "projectile": "11,40,36,41,46,5,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5619",
+    "name": "Mithril arrow(p+)",
+    "start_graphic": "21,96",
+    "darkbow_graphic": "1107,96",
+    "projectile": "12,40,36,41,46,5,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5620",
+    "name": "Adamant arrow(p+)",
+    "start_graphic": "22,96",
+    "darkbow_graphic": "1108,96",
+    "projectile": "13,40,36,41,46,5,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5621",
+    "name": "Rune arrow(p+)",
+    "start_graphic": "19,96",
+    "darkbow_graphic": "",
+    "projectile": "10,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "5622",
+    "name": "Bronze arrow(p++)",
+    "start_graphic": "19,96",
+    "darkbow_graphic": "1104,96",
+    "projectile": "10,40,36,41,46,5,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5623",
+    "name": "Iron arrow(p++)",
+    "start_graphic": "18,96",
+    "darkbow_graphic": "1105,96",
+    "projectile": "9,40,36,41,46,5,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5624",
+    "name": "Steel arrow(p++)",
+    "start_graphic": "20,96",
+    "darkbow_graphic": "1106,96",
+    "projectile": "11,40,36,41,46,5,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5625",
+    "name": "Mithril arrow(p++)",
+    "start_graphic": "21,96",
+    "darkbow_graphic": "1107,96",
+    "projectile": "12,40,36,41,46,5,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5626",
+    "name": "Adamant arrow(p++)",
+    "start_graphic": "22,96",
+    "darkbow_graphic": "1108,96",
+    "projectile": "13,40,36,41,46,5,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5627",
+    "name": "Rune arrow(p++)",
+    "start_graphic": "24,96",
+    "darkbow_graphic": "1109,96",
+    "projectile": "15,40,36,41,46,5,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5628",
+    "name": "Bronze dart(p+)",
+    "start_graphic": "232,96",
+    "darkbow_graphic": "",
+    "projectile": "226,40,36,32,32,15,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5629",
+    "name": "Iron dart(p+)",
+    "start_graphic": "233,96",
+    "darkbow_graphic": "",
+    "projectile": "227,40,36,32,32,15,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5630",
+    "name": "Steel dart(p+)",
+    "start_graphic": "235,96",
+    "darkbow_graphic": "",
+    "projectile": "229,40,36,32,32,15,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5631",
+    "name": "Black dart(p+)",
+    "start_graphic": "273,96",
+    "darkbow_graphic": "",
+    "projectile": "227,40,36,32,32,15,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5633",
+    "name": "Adamant dart(p+)",
+    "start_graphic": "236,96",
+    "darkbow_graphic": "",
+    "projectile": "230,40,36,32,32,15,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5634",
+    "name": "Rune dart(p+)",
+    "start_graphic": "237,96",
+    "darkbow_graphic": "",
+    "projectile": "231,40,36,32,32,15,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5635",
+    "name": "Bronze dart(p++)",
+    "start_graphic": "232,96",
+    "darkbow_graphic": "",
+    "projectile": "226,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5636",
+    "name": "Iron dart(p++)",
+    "start_graphic": "233,96",
+    "darkbow_graphic": "",
+    "projectile": "227,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5637",
+    "name": "Steel dart(p++)",
+    "start_graphic": "234,96",
+    "darkbow_graphic": "",
+    "projectile": "228,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5638",
+    "name": "Black dart(p++)",
+    "start_graphic": "273,96",
+    "darkbow_graphic": "",
+    "projectile": "227,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5639",
+    "name": "Mithril dart(p++)",
+    "start_graphic": "235,96",
+    "darkbow_graphic": "",
+    "projectile": "229,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5640",
+    "name": "Adamant dart(p++)",
+    "start_graphic": "236,96",
+    "darkbow_graphic": "",
+    "projectile": "230,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5641",
+    "name": "Rune dart(p++)",
+    "start_graphic": "237,96",
+    "darkbow_graphic": "",
+    "projectile": "231,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5642",
+    "name": "Bronze javelin(p+)",
+    "start_graphic": "206,96",
+    "darkbow_graphic": "",
+    "projectile": "200,40,36,32,32,15,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5643",
+    "name": "Iron javelin(p+)",
+    "start_graphic": "207,96",
+    "darkbow_graphic": "",
+    "projectile": "201,40,36,32,32,15,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5644",
+    "name": "Steel javelin(p+)",
+    "start_graphic": "208,96",
+    "darkbow_graphic": "",
+    "projectile": "202,40,36,32,32,15,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5645",
+    "name": "Mithril javelin(p+)",
+    "start_graphic": "209,96",
+    "darkbow_graphic": "",
+    "projectile": "203,40,36,32,32,15,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5646",
+    "name": "Adamant javelin(p+)",
+    "start_graphic": "210,96",
+    "darkbow_graphic": "",
+    "projectile": "204,40,36,32,32,15,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5647",
+    "name": "Rune javelin(p+)",
+    "start_graphic": "211,96",
+    "darkbow_graphic": "",
+    "projectile": "205,40,36,32,32,15,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5648",
+    "name": "Bronze jav\\'n(p++)",
+    "start_graphic": "206,96",
+    "darkbow_graphic": "",
+    "projectile": "200,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5649",
+    "name": "Iron javelin(p++)",
+    "start_graphic": "207,96",
+    "darkbow_graphic": "",
+    "projectile": "201,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5650",
+    "name": "Steel javelin(p++)",
+    "start_graphic": "208,96",
+    "darkbow_graphic": "",
+    "projectile": "202,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5651",
+    "name": "Mithril javelin(p++)",
+    "start_graphic": "209,96",
+    "darkbow_graphic": "",
+    "projectile": "203,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5652",
+    "name": "Adamant javelin(p++)",
+    "start_graphic": "210,96",
+    "darkbow_graphic": "",
+    "projectile": "204,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5653",
+    "name": "Rune javelin(p++)",
+    "start_graphic": "211,96",
+    "darkbow_graphic": "",
+    "projectile": "205,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5654",
+    "name": "Bronze knife(p+)",
+    "start_graphic": "219,96",
+    "darkbow_graphic": "",
+    "projectile": "212,40,36,32,32,15,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5655",
+    "name": "Iron knife(p+)",
+    "start_graphic": "220,96",
+    "darkbow_graphic": "",
+    "projectile": "213,40,36,32,32,15,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5656",
+    "name": "Steel knife(p+)",
+    "start_graphic": "221,96",
+    "darkbow_graphic": "",
+    "projectile": "214,40,36,32,32,15,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5657",
+    "name": "Mithril knife(p+)",
+    "start_graphic": "223,96",
+    "darkbow_graphic": "",
+    "projectile": "216,40,36,32,32,15,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5658",
+    "name": "Black knife(p+)",
+    "start_graphic": "222,96",
+    "darkbow_graphic": "",
+    "projectile": "215,40,36,32,32,15,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5659",
+    "name": "Adamant knife(p+)",
+    "start_graphic": "224,96",
+    "darkbow_graphic": "",
+    "projectile": "217,40,36,32,32,15,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5660",
+    "name": "Rune knife(p+)",
+    "start_graphic": "225,96",
+    "darkbow_graphic": "",
+    "projectile": "218,40,36,32,32,15,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "5661",
+    "name": "Bronze knife(p++)",
+    "start_graphic": "219,96",
+    "darkbow_graphic": "",
+    "projectile": "212,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5662",
+    "name": "Iron knife(p++)",
+    "start_graphic": "220,96",
+    "darkbow_graphic": "",
+    "projectile": "213,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5663",
+    "name": "Steel knife(p++)",
+    "start_graphic": "221,96",
+    "darkbow_graphic": "",
+    "projectile": "214,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5664",
+    "name": "Mithril knife(p++)",
+    "start_graphic": "223,96",
+    "darkbow_graphic": "",
+    "projectile": "216,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5665",
+    "name": "Black knife(p++)",
+    "start_graphic": "222,96",
+    "darkbow_graphic": "",
+    "projectile": "215,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5666",
+    "name": "Adamant knife(p++)",
+    "start_graphic": "224,96",
+    "darkbow_graphic": "",
+    "projectile": "217,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "5667",
+    "name": "Rune knife(p++)",
+    "start_graphic": "225,96",
+    "darkbow_graphic": "",
+    "projectile": "218,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "6061",
+    "name": "Bronze bolts(p+)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "6062",
+    "name": "Bronze bolts(p++)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "6522",
+    "name": "Toktz-xil-ul",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "442,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "8882",
+    "name": "Bone bolts",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9139",
+    "name": "Blurite bolts",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9140",
+    "name": "Iron bolts",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9141",
+    "name": "Steel bolts",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9142",
+    "name": "Mithril bolts",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9143",
+    "name": "Adamant bolts",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9144",
+    "name": "Rune bolts",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9236",
+    "name": "Opal bolts (e)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9237",
+    "name": "Jade bolts (e)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9238",
+    "name": "Pearl bolts (e)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9239",
+    "name": "Topaz bolts (e)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9240",
+    "name": "Sapphire bolts (e)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9241",
+    "name": "Emerald bolts (e)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9242",
+    "name": "Ruby bolts (e)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9243",
+    "name": "Diamond bolts (e)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9244",
+    "name": "Dragon bolts (e)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9245",
+    "name": "Onyx bolts (e)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9286",
+    "name": "Blurite bolts(p)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "9287",
+    "name": "Iron bolts (p)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "9288",
+    "name": "Steel bolts (p)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "9289",
+    "name": "Mithril bolts (p)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "9290",
+    "name": "Adamant bolts (p)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "9291",
+    "name": "Runite bolts (p)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "9293",
+    "name": "Blurite bolts(p+)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "9294",
+    "name": "Iron bolts(p+)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "9295",
+    "name": "Steel bolts(p+)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "9296",
+    "name": "Mithril bolts(p+)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "9297",
+    "name": "Adamant bolts(p+)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "9298",
+    "name": "Runite bolts(p+)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "9300",
+    "name": "Blurite bolts(p++)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "9301",
+    "name": "Iron bolts(p++)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "9302",
+    "name": "Steel bolts(p++)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "9303",
+    "name": "Mithril bolts(p++)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "9304",
+    "name": "Adamant bolts(p++)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "9305",
+    "name": "Runite bolts(p++)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "9335",
+    "name": "Jade bolts",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9336",
+    "name": "Topaz bolts",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9337",
+    "name": "Sapphire bolts",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9338",
+    "name": "Emerald bolts",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9339",
+    "name": "Ruby bolts",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9340",
+    "name": "Diamond bolts",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9341",
+    "name": "Dragon bolts",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9342",
+    "name": "Onyx bolts",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "9706",
+    "name": "Training arrows",
+    "start_graphic": "806,96",
+    "darkbow_graphic": "806,96",
+    "projectile": "805,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "10033",
+    "name": "Chinchompa",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "908,40,36,45,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "10034",
+    "name": "Red chinchompa",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "909,40,36,45,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "10158",
+    "name": "Kebbit bolts",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "10159",
+    "name": "Long kebbit bolts",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "11212",
+    "name": "Dragon arrow",
+    "start_graphic": "1116,96",
+    "darkbow_graphic": "1114,96",
+    "projectile": "1120,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "11217",
+    "name": "Dragon fire arrows",
+    "start_graphic": "26,96",
+    "darkbow_graphic": "1113,96",
+    "projectile": "17,40,36,41,46,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "11227",
+    "name": "Dragon arrow(p)",
+    "start_graphic": "1116,96",
+    "darkbow_graphic": "1114,96",
+    "projectile": "1120,40,36,41,46,5,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "11228",
+    "name": "Dragon arrow(p+)",
+    "start_graphic": "1116,96",
+    "darkbow_graphic": "1114,96",
+    "projectile": "1120,40,36,41,46,5,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "11229",
+    "name": "Dragon arrow(p++)",
+    "start_graphic": "1116,96",
+    "darkbow_graphic": "1114,96",
+    "projectile": "1120,40,36,41,46,5,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "11230",
+    "name": "Dragon dart",
+    "start_graphic": "1123,96",
+    "darkbow_graphic": "",
+    "projectile": "1122,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "11231",
+    "name": "Dragon dart(p)",
+    "start_graphic": "1123,96",
+    "darkbow_graphic": "",
+    "projectile": "1122,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "11233",
+    "name": "Dragon dart(p+)",
+    "start_graphic": "1123,96",
+    "darkbow_graphic": "",
+    "projectile": "1122,40,36,32,32,15,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "11234",
+    "name": "Dragon dart(p++)",
+    "start_graphic": "1123,96",
+    "darkbow_graphic": "",
+    "projectile": "1122,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "13083",
+    "name": "Black bolts",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "13084",
+    "name": "Black bolts(p)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "13085",
+    "name": "Black bolts(p+)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "13086",
+    "name": "Black bolts(p++)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "13280",
+    "name": "Broad-tipped bolts",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "27,38,36,41,32,5,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "13879",
+    "name": "Morrigan\\'s javelin",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "1837,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "13880",
+    "name": "Morrigan\\'s javelin(p)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "1837,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "13881",
+    "name": "Morrigan\\'s javelin(p+)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "1837,40,36,32,32,15,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "13882",
+    "name": "Morrigan\\'s javelin(p++)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "1837,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "13883",
+    "name": "Morrigan\\'s throwing axe",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "1839,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "13953",
+    "name": "Corrupt morrigan\\'s javelin",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "1837,40,36,32,32,15,0",
+    "poison_damage": "0"
+  },
+  {
+    "itemId": "13954",
+    "name": "C. morrigan\\'s javelin (p)",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "1837,40,36,32,32,15,0",
+    "poison_damage": "28"
+  },
+  {
+    "itemId": "13955",
+    "name": "C. morrigan\\'s javelin (p+)",
+    "start_graphic": "1837,96",
+    "darkbow_graphic": "",
+    "projectile": "1840,40,36,32,32,15,0",
+    "poison_damage": "38"
+  },
+  {
+    "itemId": "13956",
+    "name": "C. morrigan\\'s javelin (p++)",
+    "start_graphic": "1837,96",
+    "darkbow_graphic": "",
+    "projectile": "1840,40,36,32,32,15,0",
+    "poison_damage": "48"
+  },
+  {
+    "itemId": "13957",
+    "name": "C. morrigan\\'s throwing axe",
+    "start_graphic": "-1,0",
+    "darkbow_graphic": "",
+    "projectile": "1839,40,36,32,32,15,0",
+    "poison_damage": "0"
+  }
+]

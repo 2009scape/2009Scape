@@ -27,8 +27,7 @@ class ShopParser{
     fun load(){
         var count = 0
         reader = FileReader(ServerConstants.CONFIG_PATH + "shops.json")
-        val obj = parser.parse(reader) as JSONObject
-        val configlist = obj["shops"] as JSONArray
+        val configlist = parser.parse(reader) as JSONArray
         for(config in configlist){
             var shop: Shop? = null
             val e = config as JSONObject
