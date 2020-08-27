@@ -21,8 +21,7 @@ class DoorConfigLoader {
     fun load(){
         var count = 0
         reader = FileReader(ServerConstants.CONFIG_PATH + "door_configs.json")
-        var obj = parser.parse(reader) as JSONObject
-        var configs = obj["door_configs"] as JSONArray
+        var configs = parser.parse(reader) as JSONArray
         for(config in configs){
             val e = config as JSONObject
             val door = Door(e["id"].toString().toInt())
