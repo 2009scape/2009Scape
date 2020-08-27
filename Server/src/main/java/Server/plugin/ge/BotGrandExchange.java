@@ -20,13 +20,16 @@ public class BotGrandExchange {
         Collection<GrandExchangeOffer> offers = GEOfferDispatch.getOfferMapping().values();
         List<Long> offersToRemove = new ArrayList<Long>();
         for (GrandExchangeOffer o : offers){
-            if (o.getPlayerUID() == MAGIC_UID) {
+            if (o.getPlayerUID() == MAGIC_UID && o.isSell()) {
                 if (botOffers.containsKey(o.getItemId())) {
                     GrandExchangeOffer bo = botOffers.get(o.getItemId());
                     bo.setAmount(bo.getAmount() + o.getAmountLeft());
                     botOffers.put(o.getItemId(), bo);
                 } else {
-                    botOffers.put(o.getItemId(), o);
+                    GrandExchangeOffer bo = new GrandExchangeOffer(o.getItemId(), true);
+                    bo.setAmount(o.getAmountLeft());
+                    bo.setOfferedValue(o.getOfferedValue());
+                    botOffers.put(bo.getItemId(), bo);
                 }
                 offersToRemove.add(o.getUid());
             }
