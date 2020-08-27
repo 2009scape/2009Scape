@@ -49,7 +49,7 @@ public final class DuplicationLog extends MessageLog {
 		case 2:
 			priority = "mid";
 		}
-		super.write("server/data/logs/duplicationflags/" + priority + "prior/" + playerName + ".log");
+		super.write("Server/data/logs/duplicationflags/" + priority + "prior/" + playerName + ".log");
 	}
 
 	/**
