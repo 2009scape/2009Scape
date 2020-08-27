@@ -1,5 +1,6 @@
 package core.game.system;
 
+import core.ServerConstants;
 import plugin.ge.GEOfferDispatch;
 import plugin.ge.GrandExchangeDatabase;
 import core.game.node.entity.player.Player;
@@ -17,16 +18,6 @@ import java.util.Iterator;
 public final class SystemTermination {
 
 	/**
-	 * The data directory.
-	 */
-	private static final String DATA_DIRECTORY = "Server/data/";
-
-	/**
-	 * The backup directory.
-	 */
-	private static final String BACKUP_DIRECTORY = "Server/data/backup/";
-
-	/**
 	 * Constructs a new {@code SystemTermination} {@code Object}.
 	 */
 	protected SystemTermination() {
@@ -41,14 +32,9 @@ public final class SystemTermination {
 	public void terminate() {
 		SystemLogger.log("[SystemTerminator] Initializing termination sequence - do not shutdown!");
 		try {
-			save(getDataDirectory());
+			save(ServerConstants.DATA_PATH);
 		} catch (Throwable e) {
 			e.printStackTrace();
-			try {
-				save(getBackupDirectory());
-			} catch (Throwable t) {
-				t.printStackTrace();
-			}
 		}
 		SystemLogger.log("[SystemTerminator] Server successfully terminated!");
 	}
@@ -56,9 +42,8 @@ public final class SystemTermination {
 	/**
 	 * Saves all system data on the directory.
 	 * @param directory The base directory.
-	 * @throws Throwable When an exception occurs.
 	 */
-	public void save(String directory) throws Throwable {
+	public void save(String directory) {
 		File file = new File(directory);
 		SystemLogger.log("[SystemTerminator] Saving data [dir=" + file.getAbsolutePath() + "]...");
 		if (!file.isDirectory()) {
@@ -83,21 +68,5 @@ public final class SystemTermination {
 		}
 //		ServerStore.dump(directory + "store/");
 		SystemLogger.log("[SystemTerminator] Saved player accounts!");
-	}
-
-	/**
-	 * Gets the data directory.
-	 * @return the directory.
-	 */
-	public static String getDataDirectory() {
-		return DATA_DIRECTORY;
-	}
-
-	/**
-	 * Gets the backup directory.
-	 * @return the directory.
-	 */
-	public static String getBackupDirectory() {
-		return BACKUP_DIRECTORY;
 	}
 }

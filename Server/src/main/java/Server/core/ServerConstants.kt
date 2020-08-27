@@ -12,6 +12,9 @@ import java.io.File
  */
 class ServerConstants {
 	companion object {
+        @JvmField
+		var DATA_PATH: String? = null
+
 		//path to the cache
 		@JvmField
 		var CACHE_PATH: String? = null
@@ -40,7 +43,16 @@ class ServerConstants {
 		var OBJECT_PARSER_PATH: String? = null
 
 		@JvmField
+		var SCRIPTS_PATH: String? = null
+
+		@JvmField
 		var DIALOGUE_SCRIPTS_PATH: String? = null
+
+		@JvmField
+		var LOGS_PATH: String? = null
+
+		@JvmField
+		var BOT_DATA_PATH: String? = null
 
 		//the max number of players.
 		@JvmField
@@ -147,6 +159,7 @@ class ServerConstants {
 			START_LOCATION = JSONUtils.parseLocation(data["new_player_location"].toString())
 			HOME_LOCATION = JSONUtils.parseLocation(data["home_location"].toString())
 
+			DATA_PATH = JSONUtils.parsePath(data["data_path"].toString())
 			CACHE_PATH = JSONUtils.parsePath(data["cache_path"].toString())
 			STORE_PATH = JSONUtils.parsePath(data["store_path"].toString())
 			PLAYER_SAVE_PATH = JSONUtils.parsePath(data["save_path"].toString())
@@ -155,6 +168,7 @@ class ServerConstants {
 			GRAND_EXCHANGE_DATA_PATH = JSONUtils.parsePath(data["grand_exchange_data_path"].toString())
 			RDT_DATA_PATH = JSONUtils.parsePath(data["rare_drop_table_path"].toString())
 			OBJECT_PARSER_PATH = JSONUtils.parsePath(data["object_parser_path"].toString())
+			SCRIPTS_PATH = JSONUtils.parsePath(data["scripts_path"].toString())
 			DIALOGUE_SCRIPTS_PATH = JSONUtils.parsePath(data["dialogue_scripts_path"].toString())
 
 			DATABASE_NAME = data["database_name"].toString()

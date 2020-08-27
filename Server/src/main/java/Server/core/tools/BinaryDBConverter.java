@@ -1,5 +1,6 @@
 package core.tools;
 
+import core.ServerConstants;
 import core.game.node.item.Item;
 import core.game.system.SystemLogger;
 import org.w3c.dom.Attr;
@@ -23,12 +24,11 @@ import java.nio.channels.FileChannel;
 import java.util.HashMap;
 
 public class BinaryDBConverter {
-    private static final String path = "Server/data/eco/";
     private static HashMap<Long, GrandExchangeOffer> OFFER_MAPPING = new HashMap<>();
 
     public static void main(String[] args) {
         System.out.println("Found GE DB... attempting to load.");
-        File file = new File(path + "offer_dispatch_db.emp");
+        File file = new File(ServerConstants.GRAND_EXCHANGE_DATA_PATH + "offer_dispatch_db.emp");
         Long offsetUID = null;
         if (!file.exists()) {
             System.err.println("[GEOfferDispatch]: Could not locate database! [path=" + file.getAbsolutePath() + "]");
@@ -62,7 +62,7 @@ public class BinaryDBConverter {
             t.printStackTrace();
         }
 
-        File f = new File(path + "offer_dispatch.xml");
+        File f = new File(ServerConstants.GRAND_EXCHANGE_DATA_PATH + "offer_dispatch.xml");
         if(f.exists()){
             f.delete();
         }

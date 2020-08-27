@@ -1,5 +1,6 @@
 package core.game.system;
 
+import core.ServerConstants;
 import core.game.node.entity.player.Player;
 import core.game.system.task.Pulse;
 import core.game.world.GameWorld;
@@ -40,7 +41,7 @@ public final class SystemUpdate extends Pulse {
 	public boolean pulse() {
 		if (getDelay() >= BACKUP_TICK && createBackup) {
 			try {
-				SystemManager.getTerminator().save("Server/data/");
+				SystemManager.getTerminator().save(ServerConstants.DATA_PATH);
 			} catch (Throwable e) {
 				e.printStackTrace();
 			}

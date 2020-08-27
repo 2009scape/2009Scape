@@ -1,6 +1,7 @@
 package core.gui.tab;
 
 
+import core.ServerConstants;
 import core.gui.ConsoleTab;
 import core.gui.component.PlayerViewer;
 
@@ -142,7 +143,7 @@ public class PlayerTab extends ConsoleTab {
     public void populatePlayerSearch() {
         playerNames.clear();
         model.clear();
-        File f = new File("./Server/data/players/");
+        File f = new File(ServerConstants.PLAYER_SAVE_PATH);
         if (f.listFiles() == null) {
             System.out.println("Player directory was null!");
             return;

@@ -1,5 +1,6 @@
 package plugin.ai;
 
+import core.ServerConstants;
 import core.game.container.impl.EquipmentContainer;
 import core.game.interaction.DestinationFlag;
 import core.game.interaction.MovementPulse;
@@ -188,7 +189,7 @@ public class AIPlayer extends Player {
         Random rand = new Random();
         int n = 0;
         try {
-            for (Scanner sc = new Scanner(new File("./Server/data/botdata/" + fileName)); sc.hasNext(); ) {
+            for (Scanner sc = new Scanner(new File(ServerConstants.BOT_DATA_PATH + fileName)); sc.hasNext(); ) {
                 ++n;
                 String line = sc.nextLine();
                 if (rand.nextInt(n) == 0) { //Chance of overwriting line is lower and lower

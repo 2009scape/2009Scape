@@ -1,5 +1,6 @@
 package core.game.node.entity.player.info.login;
 
+import core.Server;
 import core.ServerConstants;
 import core.game.node.entity.combat.CombatSpell;
 import core.game.node.entity.player.Player;
@@ -195,8 +196,8 @@ public final class PlayerParser {
 		InputStream is = null;
 		OutputStream os = null;
 		try {
-			is = new FileInputStream("Server/data/players/template/template.json");
-			os = new FileOutputStream("Server/data/players/" + player.getName() + ".json");
+			is = new FileInputStream(ServerConstants.PLAYER_SAVE_PATH + "template/template.json");
+			os = new FileOutputStream(ServerConstants.PLAYER_SAVE_PATH + player.getName() + ".json");
 			byte[] buffer = new byte[1024];
 			int length;
 			while ((length = is.read(buffer)) > 0) {

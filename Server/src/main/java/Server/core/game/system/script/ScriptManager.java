@@ -1,5 +1,6 @@
 package core.game.system.script;
 
+import core.ServerConstants;
 import core.game.system.SystemLogger;
 import core.game.world.GameWorld;
 
@@ -10,11 +11,6 @@ import java.io.File;
  * @author 'Vexia
  */
 public final class ScriptManager {
-
-	/**
-	 * The directory to load scripts from.
-	 */
-	private static final String DIRECTORY = "Server/scripts/";
 
 	/**
 	 * The amount of scripts loaded.
@@ -73,7 +69,7 @@ public final class ScriptManager {
 	 */
 	public static void load() {
 		amount = 0;
-		load(new File(DIRECTORY));
+		load(new File(ServerConstants.SCRIPTS_PATH));
 		SystemLogger.log("Parsed " + amount + " " + GameWorld.getName() + " script" + (amount == 1 ? "" : "s") + "...");
 	}
 
