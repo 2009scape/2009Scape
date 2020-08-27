@@ -18,6 +18,7 @@ public class BotGrandExchange {
 
     public static void loadOffersFromDB() {
         Collection<GrandExchangeOffer> offers = GEOfferDispatch.getOfferMapping().values();
+        List<Long> offersToRemove = new ArrayList<Long>();
         for (GrandExchangeOffer o : offers){
             if (o.getPlayerUID() == MAGIC_UID) {
                 if (botOffers.containsKey(o.getItemId())) {
@@ -27,8 +28,11 @@ public class BotGrandExchange {
                 } else {
                     botOffers.put(o.getItemId(), o);
                 }
-                GEOfferDispatch.remove(o.getUid());
+                offersToRemove.add(o.getUid());
             }
+        }
+        for (Long i : offersToRemove) {
+            GEOfferDispatch.remove(i);
         }
         SystemLogger.log("Extracted " + botOffers.size() + " unique items from DB. Saving...");
         for (GrandExchangeOffer o : botOffers.values()) {
