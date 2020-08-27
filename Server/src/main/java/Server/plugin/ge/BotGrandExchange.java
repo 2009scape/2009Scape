@@ -12,7 +12,7 @@ import java.util.*;
  * @author eli
  */
 public class BotGrandExchange {
-    private static HashMap<Integer, GrandExchangeOffer> botOffers;
+    private static HashMap<Integer, GrandExchangeOffer> botOffers = new HashMap<Integer, GrandExchangeOffer>();
 
     private static final int MAGIC_UID = -1031243425;
 
