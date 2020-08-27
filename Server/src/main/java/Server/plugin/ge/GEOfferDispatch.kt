@@ -32,7 +32,6 @@ class GEOfferDispatch : Pulse(), CallBack {
         init()
         delay = 1
         GameWorld.Pulser.submit(this)
-        BotGrandExchange.loadOffersFromDB()
         return true
     }
 
