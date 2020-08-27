@@ -166,6 +166,7 @@ class ServerConstants {
 			CONFIG_PATH = JSONUtils.parsePath(data["configs_path"].toString())
 			PLAYER_ATTRIBUTE_PATH = PLAYER_SAVE_PATH + "attributes" + File.separator
 			GRAND_EXCHANGE_DATA_PATH = JSONUtils.parsePath(data["grand_exchange_data_path"].toString())
+			BOT_DATA_PATH = JSONUtils.parsePath(data["bot_data_path"].toString())
 			RDT_DATA_PATH = JSONUtils.parsePath(data["rare_drop_table_path"].toString())
 			OBJECT_PARSER_PATH = JSONUtils.parsePath(data["object_parser_path"].toString())
 			SCRIPTS_PATH = JSONUtils.parsePath(data["scripts_path"].toString())

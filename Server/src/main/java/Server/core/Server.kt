@@ -79,7 +79,7 @@ object Server {
         timer.schedule(task, 0, 1000 * 60 * 5)
         SystemLogger.log(GameWorld.getName() + " flags " + GameWorld.getSettings().toString())
         SystemLogger.log(GameWorld.getName() + " started in " + t.duration(false, "") + " milliseconds.")
-        GEAutoStock.parse("data" + File.separator + "eco" + File.separator + "itemstostock.xml")
+        GEAutoStock.parse(ServerConstants.GRAND_EXCHANGE_DATA_PATH + "itemstostock.xml")
         BotGrandExchange.loadOffersFromDB()
         // TODO Run the eco kick starter 1 time for the live server then comment it out
 //		ResourceManager.kickStartEconomy();
