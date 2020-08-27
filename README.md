@@ -52,7 +52,6 @@ Since this portion of the guide is operating-system specific, you will either ne
   - In IntelliJ, navigate to `Management-Server/src/main/java/ms/Management.java`, right click > Run [Image](https://i.imgur.com/KXxxeYK.png)
 - Run the server
   - In IntelliJ, navigate to `Server/src/main/java/Server/core/Server.kt`, right click > Run [Image](https://i.imgur.com/XOSN7LK.png)
-  - At the top right, click the Server config > edit > set the Working directory to the Server/ folder [Image](https://i.imgur.com/Kn6fyxz.png)
 - Run the client
   - In IntelliJ, navigate to `Client/src/main/java/org/runite/Client.java`, right click > Run [Image](https://i.imgur.com/ZZE7FU1.png)
   
