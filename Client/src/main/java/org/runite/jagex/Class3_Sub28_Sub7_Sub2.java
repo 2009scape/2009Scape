@@ -3,7 +3,7 @@ import java.lang.ref.SoftReference;
 
 final class Class3_Sub28_Sub7_Sub2 extends Class3_Sub28_Sub7 {
 
-   private SoftReference aSoftReference4053;
+   private final SoftReference aSoftReference4053;
 
 
    final Object method567() {

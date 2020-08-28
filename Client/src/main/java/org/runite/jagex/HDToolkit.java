@@ -4,6 +4,7 @@ import java.awt.Canvas;
 import java.io.UnsupportedEncodingException;
 import java.nio.ByteOrder;
 import java.nio.IntBuffer;
+import java.nio.charset.StandardCharsets;
 import javax.media.opengl.GL;
 import javax.media.opengl.GLCapabilities;
 import javax.media.opengl.GLCapabilitiesChooser;
@@ -52,13 +53,9 @@ final class HDToolKit {
 
    private static RSString method1820(String var0) {
       byte[] var1;
-      try {
-         var1 = var0.getBytes("ISO-8859-1");
-      } catch (UnsupportedEncodingException var3) {
-         var1 = var0.getBytes();
-      }
+       var1 = var0.getBytes(StandardCharsets.ISO_8859_1);
 
-      return Class3_Sub13_Sub3.method178(var1, var1.length, 0);
+       return Class3_Sub13_Sub3.method178(var1, var1.length, 0);
    }
 
    static void method1821(int var0, int var1, int var2, int var3) {

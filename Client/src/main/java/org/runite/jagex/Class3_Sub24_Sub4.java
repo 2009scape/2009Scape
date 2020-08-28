@@ -4,11 +4,11 @@ import java.util.Objects;
 
 final class Class3_Sub24_Sub4 extends Class3_Sub24 {
 
-   private int[] anIntArray3497 = new int[16];
-   private int[] anIntArray3498 = new int[16];
+   private final int[] anIntArray3497 = new int[16];
+   private final int[] anIntArray3498 = new int[16];
    private final int[] anIntArray3499 = new int[16];
    private final int[] anIntArray3500 = new int[16];
-   private int[] anIntArray3501 = new int[16];
+   private final int[] anIntArray3501 = new int[16];
    private final int[] anIntArray3502 = new int[16];
    static boolean[] aBooleanArray3503;
    private final int[] anIntArray3504 = new int[16];
@@ -21,7 +21,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
    private final int anInt3511 = 1000000;
    private final Class3_Sub22[][] aClass3_Sub22ArrayArray3512 = new Class3_Sub22[16][128];
    private final Class3_Sub22[][] aClass3_Sub22ArrayArray3513 = new Class3_Sub22[16][128];
-   private int[] anIntArray3514 = new int[16];
+   private final int[] anIntArray3514 = new int[16];
    private final int[] anIntArray3515 = new int[16];
    private final int[] anIntArray3516 = new int[16];
    static int anInt3517;
@@ -839,7 +839,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
                this.aClass3_Sub22ArrayArray3513[var3.anInt2514][var3.anInt2517] = null;
             }
 
-            return true;
+            return false;
          } else {
             int var6 = var3.anInt2502;
 
@@ -922,10 +922,10 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
                   }
                }
 
-               return true;
+               return false;
             } else {
                var3.aClass3_Sub24_Sub1_2507.method450(var3.anInt2512, this.method508(var3), this.method496(var3));
-               return false;
+               return true;
             }
          }
       } catch (RuntimeException var11) {
@@ -1217,9 +1217,9 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
                }
             }
 
-            return true;
-         } else {
             return false;
+         } else {
+            return true;
          }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "va.WA(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');

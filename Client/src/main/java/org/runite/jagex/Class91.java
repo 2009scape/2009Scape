@@ -12,7 +12,7 @@ final class Class91 {
    private final int anInt1306;
    static int anInt1307;
    static byte aByte1308;
-   private int anInt1309;
+   private final int anInt1309;
    static long aLong1310 = 0L;
    static short[] aShortArray1311;
 
@@ -343,7 +343,7 @@ final class Class91 {
             return true;
          }
 
-         if (!false) {
+         if (true) {
             var4 -= this.anInt1306;
             var5 -= this.anInt1309;
             var1 -= this.anInt1306;
@@ -988,7 +988,7 @@ final class Class91 {
             if(var4 >= var2 && var10 >= var4 && var8 <= var3 && var11 >= var3) {
                return true;
             } else {
-               if(!true) {
+               if(false) {
                   this.method1501((byte)-85, 4, 106, -39);
                }
 

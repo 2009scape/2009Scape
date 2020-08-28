@@ -259,7 +259,7 @@ final class Class145 {
                      var2.anInt2232 = 9 - var2.anInt2229;
                   }
 
-                  if((var26.anInt1055 & var11) != 0 && !Class164_Sub1.method2239(var6, var3, var4, var26.anInt1055)) {
+                  if((var26.anInt1055 & var11) != 0 && Class164_Sub1.method2239(var6, var3, var4, var26.anInt1055)) {
                      if(HDToolKit.highDetail) {
                         Class68.method1268(Class129_Sub1.anInt2697, Class3_Sub28_Sub13.anInt3657, Class3_Sub13_Sub30.anInt3363, var5, var3, var4);
                      }
@@ -267,7 +267,7 @@ final class Class145 {
                      var26.aClass140_1049.animate(0, Class60.anInt936, Class69.anInt1037, Class3_Sub13_Sub34.anInt3417, Class3_Sub13_Sub13.anInt3153, var26.anInt1054 - Class129_Sub1.anInt2697, var26.anInt1057 - Class3_Sub28_Sub13.anInt3657, var26.anInt1045 - Class3_Sub13_Sub30.anInt3363, var26.aLong1048, var5, (Class127_Sub1)null);
                   }
 
-                  if((var26.anInt1059 & var11) != 0 && !Class164_Sub1.method2239(var6, var3, var4, var26.anInt1059)) {
+                  if((var26.anInt1059 & var11) != 0 && Class164_Sub1.method2239(var6, var3, var4, var26.anInt1059)) {
                      if(HDToolKit.highDetail) {
                         Class68.method1268(Class129_Sub1.anInt2697, Class3_Sub28_Sub13.anInt3657, Class3_Sub13_Sub30.anInt3363, var5, var3, var4);
                      }
@@ -276,7 +276,7 @@ final class Class145 {
                   }
                }
 
-               if(var13 != null && !Class166.method2256(var6, var3, var4, var13.aClass140_429.method1871())) {
+               if(var13 != null && Class166.method2256(var6, var3, var4, var13.aClass140_429.method1871())) {
                   if(HDToolKit.highDetail) {
                      HDToolKit.method1832(var8 - 0.5F);
                   }
@@ -407,7 +407,7 @@ final class Class145 {
 
                if(var22) {
                   var23 = var2.aClass70_2234;
-                  if(!Class164_Sub1.method2239(var6, var3, var4, var23.anInt1055)) {
+                  if(Class164_Sub1.method2239(var6, var3, var4, var23.anInt1055)) {
                      if(HDToolKit.highDetail) {
                         label736: {
                            if((var23.aLong1048 & 1032192L) == 16384L) {
@@ -643,7 +643,7 @@ final class Class145 {
 
                if(var2.anInt2241 != 0) {
                   Class19 var36 = var2.aClass19_2233;
-                  if(var36 != null && !Class166.method2256(var6, var3, var4, var36.aClass140_429.method1871())) {
+                  if(var36 != null && Class166.method2256(var6, var3, var4, var36.aClass140_429.method1871())) {
                      if((var36.anInt432 & var2.anInt2241) != 0) {
                         if(HDToolKit.highDetail) {
                            Class68.method1268(Class129_Sub1.anInt2697, Class3_Sub28_Sub13.anInt3657, Class3_Sub13_Sub30.anInt3363, var5, var3, var4);
@@ -685,7 +685,7 @@ final class Class145 {
 
                   Class70 var31 = var2.aClass70_2234;
                   if(var31 != null) {
-                     if((var31.anInt1059 & var2.anInt2241) != 0 && !Class164_Sub1.method2239(var6, var3, var4, var31.anInt1059)) {
+                     if((var31.anInt1059 & var2.anInt2241) != 0 && Class164_Sub1.method2239(var6, var3, var4, var31.anInt1059)) {
                         if(HDToolKit.highDetail) {
                            Class68.method1263(var31.anInt1059, Class129_Sub1.anInt2697, Class3_Sub28_Sub13.anInt3657, Class3_Sub13_Sub30.anInt3363, var6, var3, var4);
                         }
@@ -693,7 +693,7 @@ final class Class145 {
                         var31.aClass140_1052.animate(0, Class60.anInt936, Class69.anInt1037, Class3_Sub13_Sub34.anInt3417, Class3_Sub13_Sub13.anInt3153, var31.anInt1054 - Class129_Sub1.anInt2697, var31.anInt1057 - Class3_Sub28_Sub13.anInt3657, var31.anInt1045 - Class3_Sub13_Sub30.anInt3363, var31.aLong1048, var5, (Class127_Sub1)null);
                      }
 
-                     if((var31.anInt1055 & var2.anInt2241) != 0 && !Class164_Sub1.method2239(var6, var3, var4, var31.anInt1055)) {
+                     if((var31.anInt1055 & var2.anInt2241) != 0 && Class164_Sub1.method2239(var6, var3, var4, var31.anInt1055)) {
                         if(HDToolKit.highDetail) {
                            Class68.method1263(var31.anInt1055, Class129_Sub1.anInt2697, Class3_Sub28_Sub13.anInt3657, Class3_Sub13_Sub30.anInt3363, var6, var3, var4);
                         }

@@ -10,7 +10,7 @@ final class Class66 {
 	static int maskUpdateCount = 0;
 	static int anInt998 = 0;
 	static int anInt999 = -1;
-	private NodeList aClass13_1000 = new NodeList();
+	private final NodeList aClass13_1000 = new NodeList();
 	private final NodeList lowPriorityRequests = new NodeList();
 	static int wlPacketSize = 0;
 	private final NodeList aClass13_1003 = new NodeList();

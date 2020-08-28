@@ -2,6 +2,7 @@ package org.runite.jagex;
 import org.runite.Properties;
 
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 
 final class Class73 implements Runnable {
@@ -22,8 +23,7 @@ static boolean aBoolean1080 = false;
 
    private void method1299(Class3_Sub28_Sub10_Sub1 var1) {
       try {
-         NodeList var3 = this.aClass13_1086;
-         synchronized(var3) {
+         synchronized(this.aClass13_1086) {
 
             this.aClass13_1086.method879(var1, (byte)-127);
             ++this.anInt1087;
@@ -199,11 +199,7 @@ static boolean aBoolean1080 = false;
    static Class3_Sub28_Sub6 method1302() {
       try {
          Class3_Sub28_Sub6 var1 = (Class3_Sub28_Sub6)Class126.aClass13_1666.method876((byte)100);
-         if(var1 != null) {
-            var1.method86(-1024);
-            var1.method524();
-            return var1;
-         } else {
+         if(var1 == null) {
             do {
                var1 = (Class3_Sub28_Sub6)Class81.aClass13_1139.method876((byte)63);
                if(var1 == null) {
@@ -218,6 +214,10 @@ static boolean aBoolean1080 = false;
                var1.method524();
             } while((Long.MIN_VALUE & var1.aLong2569) == 0L);
 
+            return var1;
+         } else {
+            var1.method86(-1024);
+            var1.method524();
             return var1;
          }
       } catch (RuntimeException var2) {
@@ -255,13 +255,10 @@ static boolean aBoolean1080 = false;
                                              if(null != Class136.aClass64_1778) {
                                                 var4 = Class108.method1653(Class136.aClass64_1778.anInt979);
 
-                                                try {
-                                                   if(null != Class136.aClass64_1778.anObject974) {
-                                                      byte[] var5 = ((String)Class136.aClass64_1778.anObject974).getBytes("ISO-8859-1");
-                                                      var4 = Class3_Sub13_Sub3.method178(var5, var5.length, 0);
-                                                   }
-                                                } catch (UnsupportedEncodingException var6) {
-                                                }
+                                                 if(null != Class136.aClass64_1778.anObject974) {
+                                                    byte[] var5 = ((String)Class136.aClass64_1778.anObject974).getBytes(StandardCharsets.ISO_8859_1);
+                                                    var4 = Class3_Sub13_Sub3.method178(var5, var5.length, 0);
+                                                 }
                                              }
 
                                              var1 = RenderAnimationDefinition.method903(new RSString[]{var1.method1557(var3, 0, 0), var4, var1.method1556(4 + var3)}, (byte)-94);
@@ -295,8 +292,7 @@ static boolean aBoolean1080 = false;
    final void method1304() {
       try {
          this.aBoolean1091 = true;
-         NodeList var2 = this.aClass13_1086;
-         synchronized(var2) {
+         synchronized(this.aClass13_1086) {
             this.aClass13_1086.notifyAll();
          }
 
@@ -530,8 +526,7 @@ static boolean aBoolean1080 = false;
       try {
          Class3_Sub28_Sub10_Sub1 var4 = new Class3_Sub28_Sub10_Sub1();
          var4.anInt4061 = 1;
-         NodeList var5 = this.aClass13_1086;
-         synchronized(var5) {
+         synchronized(this.aClass13_1086) {
             if(var2 < 39) {
                return (Class3_Sub28_Sub10_Sub1)null;
             }
@@ -562,9 +557,8 @@ static boolean aBoolean1080 = false;
    public final void run() {
       try {
          while(!this.aBoolean1091) {
-            NodeList var2 = this.aClass13_1086;
             Class3_Sub28_Sub10_Sub1 var1;
-            synchronized(var2) {
+            synchronized(this.aClass13_1086) {
                var1 = (Class3_Sub28_Sub10_Sub1)this.aClass13_1086.method877();
                if(null == var1) {
                   try {

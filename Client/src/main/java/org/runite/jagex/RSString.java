@@ -4,9 +4,9 @@ import org.runite.GameLaunch;
 import java.applet.Applet;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
-import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 
 final class RSString implements Interface3 {
@@ -139,7 +139,7 @@ final class RSString implements Interface3 {
                      var15[var16 + 1539] = var14;
                   }
                }
-            } else if (!Class15.method888(var1, var13, var0, 0, var3, var10)) {
+            } else if (Class15.method888(var1, var13, var0, 0, var3, var10)) {
                return false;
             }
          }
@@ -151,7 +151,7 @@ final class RSString implements Interface3 {
             var12 = (int)(var8 >>> 32) & Integer.MAX_VALUE;
             var13 = Class162.getObjectDefinition(var12);
             if(var13.anInt1516 != -1) {
-               if(!Class15.method888(var1, var13, var0, 0, var3, var10)) {
+               if(Class15.method888(var1, var13, var0, 0, var3, var10)) {
                   return false;
                }
             } else if(var11 == 9) {
@@ -181,9 +181,7 @@ final class RSString implements Interface3 {
             var10 = (int)var8 >> 20 & 3;
             var11 = (int)(var8 >>> 32) & Integer.MAX_VALUE;
             ObjectDefinition var18 = Class162.getObjectDefinition(var11);
-            if(var18.anInt1516 != -1 && !Class15.method888(var1, var18, var0, 0, var3, var10)) {
-               return false;
-            }
+            return var18.anInt1516 == -1 || !Class15.method888(var1, var18, var0, 0, var3, var10);
          }
 
          return true;
@@ -289,11 +287,7 @@ final class RSString implements Interface3 {
       try {
          if(var4 < -85) {
             String string;
-            try {
-               string = new String(this.byteArray, 0, this.length, "ISO-8859-1");
-            } catch (UnsupportedEncodingException var7) {
-               string = new String(this.byteArray, 0, this.length);
-            }
+            string = new String(this.byteArray, 0, this.length, StandardCharsets.ISO_8859_1);
             var3.drawString(string, x, y);
          }
       } catch (RuntimeException var8) {
@@ -856,7 +850,7 @@ final class RSString implements Interface3 {
                         Objects.requireNonNull(var10).method1572(255 & this.byteArray[var6++], (byte)117);
                      }
 
-                     if(!true) {
+                     if(false) {
                         this.method1567(-5, (byte)-91);
                      }
 
@@ -1338,11 +1332,7 @@ final class RSString implements Interface3 {
    final int method1575(FontMetrics var2) {
       try {
          String var3;
-         try {
-            var3 = new String(this.byteArray, 0, this.length, "ISO-8859-1");
-         } catch (UnsupportedEncodingException var5) {
-            var3 = new String(this.byteArray, 0, this.length);
-         }
+         var3 = new String(this.byteArray, 0, this.length, StandardCharsets.ISO_8859_1);
 
          return var2.stringWidth(var3);
       } catch (RuntimeException var6) {

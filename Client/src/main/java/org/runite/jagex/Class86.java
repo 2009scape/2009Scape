@@ -23,7 +23,7 @@ final class Class86 {
       try {
          if(-1 == var1 && !Class83.aBoolean1158) {
             GameObject.method1870();
-         } else if(var1 != -1 && (Class129.anInt1691 != var1 || !Class79.method1391(-1)) && Class9.anInt120 != 0 && !Class83.aBoolean1158) {
+         } else if(var1 != -1 && (Class129.anInt1691 != var1 || Class79.method1391(-1)) && Class9.anInt120 != 0 && !Class83.aBoolean1158) {
             Class151.method2099(var1, Class75_Sub2.aClass153_2645, Class9.anInt120);
          }
          Class129.anInt1691 = var1;

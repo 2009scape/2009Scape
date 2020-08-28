@@ -12,14 +12,14 @@ final class Class55 {
    final Class3_Sub28_Sub16_Sub2 method1179() {
       try {
          Class3_Sub28_Sub16_Sub2 var2 = (Class3_Sub28_Sub16_Sub2)Class163_Sub1.aClass93_2984.get((long)this.anInt883);
-         if(null != var2) {
-            return var2;
-         } else {
+         if(null == var2) {
             var2 = Class3_Sub28_Sub7.method562(AnimationDefinition.aClass153_1852, this.anInt883);
             if(var2 != null) {
                Class163_Sub1.aClass93_2984.put((byte)-87, var2, (long)this.anInt883);
             }
 
+            return var2;
+         } else {
             return var2;
          }
       } catch (RuntimeException var3) {

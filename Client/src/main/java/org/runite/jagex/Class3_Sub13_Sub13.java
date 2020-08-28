@@ -400,7 +400,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                   Class3_Sub13_Sub1.outgoingBuffer.putLEShort(GraphicDefinition.CAMERA_DIRECTION);
                }
 
-               if(!!Class3_Sub13_Sub6.aBoolean3078 && !Class140_Sub4.aBoolean2774) {
+               if(Class3_Sub13_Sub6.aBoolean3078 && !Class140_Sub4.aBoolean2774) {
                   ++Class3_Sub13_Sub15.anInt3187;
                   Class140_Sub4.aBoolean2774 = true;
                   Class3_Sub13_Sub1.outgoingBuffer.putOpcode(22);

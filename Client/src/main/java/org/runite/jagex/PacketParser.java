@@ -1,6 +1,7 @@
 package org.runite.jagex;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 
 final class PacketParser {
@@ -1158,7 +1159,7 @@ final class PacketParser {
                                                                         } else {
                                                                             Class3_Sub13_Sub24.aClass94_3295 = playerName;
                                                                             RSString.aBoolean2154 = true;
-                                                                            Class15.aClass64_351 = Class38.aClass87_665.method1452(new String(playerName.method1568(), "ISO-8859-1"), true);
+                                                                            Class15.aClass64_351 = Class38.aClass87_665.method1452(new String(playerName.method1568(), StandardCharsets.ISO_8859_1), true);
                                                                         }
 
                                                                         RSString.incomingOpcode = -1;

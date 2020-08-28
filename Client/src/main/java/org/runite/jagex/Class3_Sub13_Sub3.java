@@ -158,7 +158,7 @@ final class Class3_Sub13_Sub3 extends Class3_Sub13 {
 
    static void method182() {
       try {
-         if(!true) {
+         if(false) {
             method179((byte)120, -73);
          }
 

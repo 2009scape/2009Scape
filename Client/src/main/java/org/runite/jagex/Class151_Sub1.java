@@ -105,9 +105,7 @@ final class Class151_Sub1 extends Class151 {
 
    final Class62 method2094() {
       try {
-         if(this.aClass62_2944 != null) {
-            return this.aClass62_2944;
-         } else {
+         if(this.aClass62_2944 == null) {
             if(null == this.aClass3_Sub28_Sub10_2950) {
                if(this.aClass66_2953.method1251((byte)73)) {
                   return null;
@@ -172,6 +170,8 @@ final class Class151_Sub1 extends Class151 {
                this.aClass3_Sub28_Sub10_2950 = null;
                return this.aClass62_2944;
             }
+         } else {
+            return this.aClass62_2944;
          }
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "bg.B(" + 0 + ')');

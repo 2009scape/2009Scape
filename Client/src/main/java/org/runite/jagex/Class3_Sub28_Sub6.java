@@ -14,7 +14,7 @@ final class Class3_Sub28_Sub6 extends Node {
    final void a() {
       try {
          this.aLong2569 = Class5.method830((byte)-55) - -500L | Long.MIN_VALUE & this.aLong2569;
-         if(!true) {
+         if(false) {
             f((int)-42);
          }
 
@@ -105,7 +105,7 @@ final class Class3_Sub28_Sub6 extends Node {
 
    static AbstractIndexedSprite a(int var0, CacheIndex var1) {
       try {
-         return !Class140_Sub7.method2029((byte)-127, var1, var0)?null:(false ?(AbstractIndexedSprite)null:Class166.method2259());
+         return !Class140_Sub7.method2029((byte)-127, var1, var0)?null:(Class166.method2259());
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "da.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + true + ')');
       }

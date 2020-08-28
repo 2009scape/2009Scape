@@ -1,5 +1,6 @@
 package org.runite.jagex;
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 
 final class Class3_Sub29 extends Class3 {
 
@@ -121,13 +122,9 @@ final class Class3_Sub29 extends Class3 {
       try {
 
          byte[] var2;
-         try {
-            var2 = var0.getBytes("ISO-8859-1");
-         } catch (UnsupportedEncodingException var5) {
-            var2 = var0.getBytes();
-         }
+          var2 = var0.getBytes(StandardCharsets.ISO_8859_1);
 
-         RSString var3 = new RSString();
+          RSString var3 = new RSString();
          var3.byteArray = var2;
          var3.length = 0;
 

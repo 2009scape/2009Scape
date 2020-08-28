@@ -217,10 +217,10 @@ final class Class3_Sub24_Sub1 extends Class3_Sub24 {
             this.anInt3471 = 0;
             this.anInt3476 = this.anInt3484 = this.anInt3481 = 0;
             this.method86(-1024);
-            return true;
+            return false;
          } else {
             this.method449();
-            return false;
+            return true;
          }
       } else {
          if(this.anInt3476 < var1) {
@@ -261,7 +261,7 @@ final class Class3_Sub24_Sub1 extends Class3_Sub24 {
             this.anInt3483 = 0;
          }
 
-         return false;
+         return true;
       }
    }
 
@@ -334,7 +334,7 @@ final class Class3_Sub24_Sub1 extends Class3_Sub24 {
                return var2;
             }
 
-            if(!this.method416()) {
+            if(this.method416()) {
                continue;
             }
 
@@ -1048,7 +1048,7 @@ final class Class3_Sub24_Sub1 extends Class3_Sub24 {
                return var2;
             }
 
-            if(!this.method416()) {
+            if(this.method416()) {
                continue;
             }
 

@@ -311,7 +311,7 @@ final class Class24 {
             }
          }
 
-         return var2;
+         return !var2;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "dm.B(" + 18991 + ')');
       }

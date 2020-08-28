@@ -27,7 +27,7 @@ final class Class3_Sub13_Sub33 extends Class3_Sub13 {
 
    static int method322(byte var1) {
       try {
-         return false ?104:255 & var1;
+         return 255 & var1;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "si.C(" + true + ',' + var1 + ')');
       }

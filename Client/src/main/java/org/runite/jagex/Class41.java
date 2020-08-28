@@ -4,13 +4,13 @@ import java.io.IOException;
 
 final class Class41 {
 
-   private Class30 aClass30_681;
+   private final Class30 aClass30_681;
    int cacheIndex;
-   private Class30 aClass30_683;
+   private final Class30 aClass30_683;
    static Class93 aClass93_684 = new Class93(64);
    static int anInt685;
    static int[] anIntArray686 = new int[2];
-   private int anInt687;
+   private final int anInt687;
    static int anInt688 = 0;
    static int anInt689;
 

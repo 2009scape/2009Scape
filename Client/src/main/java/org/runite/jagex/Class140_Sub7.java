@@ -271,8 +271,7 @@ final class Class140_Sub7 extends GameObject {
 
             byte[] var4 = new byte[var3];
             var0.index += Class3_Sub13_Sub9.aClass36_3112.method1017(0, var3, var4, var0.buffer, var0.index);
-            RSString var5 = Class3_Sub13_Sub3.method178(var4, var3, 0);
-            return var5;
+            return Class3_Sub13_Sub3.method178(var4, var3, 0);
          } catch (Exception var6) {
             return Class159.aClass94_2018;
          }

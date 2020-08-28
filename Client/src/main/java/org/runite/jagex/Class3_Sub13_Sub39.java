@@ -10,7 +10,7 @@ final class Class3_Sub13_Sub39 extends Class3_Sub13 {
    private int anInt3462 = 0;
    static int anInt3463;
    static int anInt3464 = 0;
-   private short[] aShortArray3465 = new short[257];
+   private final short[] aShortArray3465 = new short[257];
    static int anInt3466;
    private int[] anIntArray3467;
    static boolean[][] aBooleanArrayArray3468 = new boolean[][]{{true, true, true}, {false, false}, {false, true}, {true, false}, {false, true, true}, {true, false, true}, {false, true, false}, {true, false, false}};

@@ -445,12 +445,7 @@ final class Class140_Sub3 extends GameObject {
    }
 
    final int method1871() {
-      try {
-         int anInt2741 = -32768;
-         return anInt2741;
-      } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "dc.MA()");
-      }
+      return -32768;
    }
 
    static void renderLocalPlayers() {

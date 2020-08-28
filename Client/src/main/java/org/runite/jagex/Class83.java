@@ -8,7 +8,7 @@ final class Class83 {
    static int anInt1156 = 0;
    private final CacheIndex aClass153_1157;
    static boolean aBoolean1158 = false;
-   private Class130 aClass130_1159 = new Class130(256);
+   private final Class130 aClass130_1159 = new Class130(256);
 
 
    static void method1410(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10) {

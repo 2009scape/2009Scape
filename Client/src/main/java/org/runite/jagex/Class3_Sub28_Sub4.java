@@ -132,7 +132,7 @@ final class Class3_Sub28_Sub4 extends Node {
 
    final int method552() {
       try {
-         return false ?-22:(this.anIntArray3566 != null?this.anIntArray3566.length:0);
+         return (this.anIntArray3566 != null?this.anIntArray3566.length:0);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "cb.E(" + true + ')');
       }

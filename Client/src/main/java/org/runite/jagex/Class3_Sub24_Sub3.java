@@ -148,14 +148,14 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
          this.aClass3_Sub24_Sub2_3495.method415(var1);
 
          for(Class3_Sub22 var3 = (Class3_Sub22)this.aClass61_3489.method1222(); var3 != null; var3 = (Class3_Sub22)this.aClass61_3489.method1221()) {
-            if(!this.aClass3_Sub24_Sub4_3493.method504(var3, 121)) {
+            if(this.aClass3_Sub24_Sub4_3493.method504(var3, 121)) {
                int var2 = var1;
 
                while(true) {
                   if(var2 > var3.anInt2512) {
                      this.method464(var3, var3.anInt2512);
                      var2 -= var3.anInt2512;
-                     if(!this.aClass3_Sub24_Sub4_3493.method492(var2, 0, var3, (int[])null)) {
+                     if(this.aClass3_Sub24_Sub4_3493.method492(var2, 0, var3, (int[]) null)) {
                         continue;
                      }
                      break;
@@ -178,7 +178,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
          this.aClass3_Sub24_Sub2_3495.method413(var1, var2, var3);
 
          for(Class3_Sub22 var6 = (Class3_Sub22)this.aClass61_3489.method1222(); var6 != null; var6 = (Class3_Sub22)this.aClass61_3489.method1221()) {
-            if(!this.aClass3_Sub24_Sub4_3493.method504(var6, 126)) {
+            if(this.aClass3_Sub24_Sub4_3493.method504(var6, 126)) {
                int var5 = var3;
                int var4 = var2;
 
@@ -187,7 +187,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
                      this.method469(var1, var6, var4, var6.anInt2512, var5 + var4);
                      var5 -= var6.anInt2512;
                      var4 += var6.anInt2512;
-                     if(!this.aClass3_Sub24_Sub4_3493.method492(var5, var4, var6, var1)) {
+                     if(this.aClass3_Sub24_Sub4_3493.method492(var5, var4, var6, var1)) {
                         continue;
                      }
                      break;

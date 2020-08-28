@@ -1,6 +1,7 @@
 package org.runite.jagex;
 import java.awt.Component;
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Objects;
@@ -111,7 +112,7 @@ final class ItemDefinition {
 	static void method1104(byte byte0, int i, CS2Script script)
 	{
 		try {
-			Object aobj[] = script.arguments;
+			Object[] aobj = script.arguments;
 			int j = ((Integer) aobj[0]).intValue();
 			//System.out.println("CS opcode: " + j);
 			Class3_Sub28_Sub15 class3_sub28_sub15 = Class3_Sub28_Sub8.method572(j);
@@ -121,8 +122,8 @@ final class ItemDefinition {
 			int l = 0;
 			int k = 0;
 			int i1 = -1;
-			int ai1[] = class3_sub28_sub15.anIntArray3690;
-			int ai[] = class3_sub28_sub15.anIntArray3683;
+			int[] ai1 = class3_sub28_sub15.anIntArray3690;
+			int[] ai = class3_sub28_sub15.anIntArray3683;
 			if (byte0 > -9)
 				aClass94_811 = (RSString) null;
 			Class126.anIntArray1662 = new int[class3_sub28_sub15.anInt3680];
@@ -284,8 +285,8 @@ final class ItemDefinition {
 					if (j1 == 40) {
 						int i4 = ai1[i1];
 						Class3_Sub28_Sub15 class3_sub28_sub15_1 = Class3_Sub28_Sub8.method572(i4);
-						int ai2[] = new int[class3_sub28_sub15_1.anInt3680];
-						RSString aclass94[] = new RSString[class3_sub28_sub15_1.anInt3687];
+						int[] ai2 = new int[class3_sub28_sub15_1.anInt3680];
+						RSString[] aclass94 = new RSString[class3_sub28_sub15_1.anInt3687];
 						if (class3_sub28_sub15_1.anInt3678 >= 0)
 							System.arraycopy(Class140_Sub7.anIntArray2929, 0 + (k - class3_sub28_sub15_1.anInt3678), ai2, 0, class3_sub28_sub15_1.anInt3678);
 
@@ -389,7 +390,7 @@ final class ItemDefinition {
 						if (null == class11_21.aClass11Array262)
 							class11_21.aClass11Array262 = new RSInterface[k66 + 1];
 						if (k66 >= class11_21.aClass11Array262.length) {
-							RSInterface aclass11[] = new RSInterface[k66 + 1];
+							RSInterface[] aclass11 = new RSInterface[k66 + 1];
 							if (class11_21.aClass11Array262.length >= 0)
 								System.arraycopy(class11_21.aClass11Array262, 0, aclass11, 0, class11_21.aClass11Array262.length);
 
@@ -2121,13 +2122,13 @@ final class ItemDefinition {
 																		continue;
 																	}
 																	if (5302 == j1) {
-																		Class106 aclass106[] = Class3.method88();
+																		Class106[] aclass106 = Class3.method88();
 																		Class140_Sub7.anIntArray2929[k++] = aclass106.length;
 																		continue;
 																	}
 																	if (5303 == j1) {
 																		int i32 = Class140_Sub7.anIntArray2929[--k];
-																		Class106 aclass106_1[] = Class3.method88();
+																		Class106[] aclass106_1 = Class3.method88();
 																		Class140_Sub7.anIntArray2929[k++] = aclass106_1[i32].anInt1447;
 																		Class140_Sub7.anIntArray2929[k++] = aclass106_1[i32].anInt1449;
 																		continue;
@@ -2136,7 +2137,7 @@ final class ItemDefinition {
 																		int j59 = Class3_Sub13_Sub5.anInt3071;
 																		int j32 = Class3_Sub13.anInt2378;
 																		int j71 = -1;
-																		Class106 aclass106_2[] = Class3.method88();
+																		Class106[] aclass106_2 = Class3.method88();
 																		int i80 = 0;
 																		do {
 																			if (aclass106_2.length <= i80)
@@ -2245,13 +2246,8 @@ final class ItemDefinition {
 																		if (null != Class136.aClass64_1778) {
 																			class94_24 = Class108.method1653(Class136.aClass64_1778.anInt979);
 																			if (Class136.aClass64_1778.anObject974 != null) {
-																				byte abyte0[] = null;
-																				try {
-																					abyte0 = ((String) Class136.aClass64_1778.anObject974).getBytes("ISO-8859-1");
-																				} catch (UnsupportedEncodingException e) {
-																					// TODO Auto-generated catch block
-																					e.printStackTrace();
-																				}
+																				byte[] abyte0 = null;
+																				abyte0 = ((String) Class136.aClass64_1778.anObject974).getBytes(StandardCharsets.ISO_8859_1);
 																				class94_24 = Class3_Sub13_Sub3.method178(abyte0, abyte0.length, 0);
 																			}
 																		}
@@ -2275,12 +2271,7 @@ final class ItemDefinition {
 																		} else {
 																			RSString.aBoolean2154 = flag5;
 																			Class3_Sub13_Sub24.aClass94_3295 = class94_64;
-																			try {
-																				Class15.aClass64_351 = Class38.aClass87_665.method1452(new String(class94_64.method1568(), "ISO-8859-1"), true);
-																			} catch (UnsupportedEncodingException e) {
-																				// TODO Auto-generated catch block
-																				e.printStackTrace();
-																			}
+																			Class15.aClass64_351 = Class38.aClass87_665.method1452(new String(class94_64.method1568(), StandardCharsets.ISO_8859_1), true);
 																		}
 																		continue;
 																	}
@@ -3479,7 +3470,7 @@ final class ItemDefinition {
 									j1 -= 1000;
 									class11_14 = Class7.getRSInterface((byte) 115, Class140_Sub7.anIntArray2929[--k]);
 								}
-								int ai3[] = null;
+								int[] ai3 = null;
 								RSString class94_62 = Class3.aClass94Array75[--l];
 								if (class94_62.length(-127) > 0 && class94_62.charAt(class94_62.length(-92) + -1, (byte) -96) == 89) {
 									int i79 = Class140_Sub7.anIntArray2929[--k];
@@ -3490,7 +3481,7 @@ final class ItemDefinition {
 									}
 									class94_62 = class94_62.method1557(class94_62.length(-79) - 1, 0, 0);
 								}
-								Object aobj1[] = new Object[class94_62.length(-48) - -1];
+								Object[] aobj1 = new Object[class94_62.length(-48) - -1];
 								for (int i81 = -1 + aobj1.length; 1 <= i81; i81--)
 									if (115 != class94_62.charAt(i81 + -1, (byte) -43))
 										aobj1[i81] = new Integer(Class140_Sub7.anIntArray2929[--k]);

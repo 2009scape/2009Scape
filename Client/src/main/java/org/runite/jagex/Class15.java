@@ -23,7 +23,7 @@ final class Class15 implements Runnable {
       try {
          Class2 var7 = Class3_Sub28_Sub6.c(var1.anInt1516);
          if(var7.anInt64 == -1) {
-            return true;
+            return false;
          } else {
             if(var1.aBoolean1537) {
                var6 += var1.anInt1478;
@@ -34,7 +34,7 @@ final class Class15 implements Runnable {
 
             LDIndexedSprite var8 = var7.method77(var6, (byte)-111);
             if(var8 == null) {
-               return false;
+               return true;
             } else {
                int var9 = var1.SizeX;
                int var10 = var1.SizeY;
@@ -56,7 +56,7 @@ final class Class15 implements Runnable {
                   var8.method1669(48 + 4 * var0, 4 * (-var10 + -var5 + 104) + 48, var11, var12, var7.anInt61);
                }
 
-               return true;
+               return false;
             }
          }
       } catch (RuntimeException var13) {

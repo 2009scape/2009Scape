@@ -5,6 +5,7 @@ import org.runite.GameLaunch;
 import java.awt.*;
 import java.io.IOException;
 import java.net.Socket;
+import java.nio.charset.StandardCharsets;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Objects;
@@ -1039,7 +1040,7 @@ public final class Client extends GameShell {
 				Class3_Sub28_Sub19.aBoolean3779 = false;
 
 				try {
-					byte[] var2 = var0[2].getBytes("ISO-8859-1");
+					byte[] var2 = var0[2].getBytes(StandardCharsets.ISO_8859_1);
 					var1 = Class3_Sub13_Sub16.method243(Class3_Sub13_Sub3.method178(var2, var2.length, 0));
 				} catch (Exception var3) {
 				}

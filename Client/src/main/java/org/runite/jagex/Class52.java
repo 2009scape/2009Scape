@@ -27,7 +27,7 @@ final class Class52 {
          if(null == var11) {
             Model_Sub1[] var12 = new Model_Sub1[3];
             int var13 = 0;
-            if(!Class3_Sub13_Sub13.method231(var3).method948() || !Class3_Sub13_Sub13.method231(var7).method948() || !Class3_Sub13_Sub13.method231(var2).method948()) {
+            if(Class3_Sub13_Sub13.method231(var3).method948() || Class3_Sub13_Sub13.method231(var7).method948() || Class3_Sub13_Sub13.method231(var2).method948()) {
                return null;
             }
 
@@ -827,7 +827,7 @@ final class Class52 {
                for(int var8 = 0; var8 < 12; ++var8) {
                   var9 = this.lookInfo[var8];
                   if(0 == (1073741824 & var9)) {
-                     if(var9 < 0 && !Class3_Sub13_Sub13.method231(var9 & 1073741823).method948()) {
+                     if(var9 < 0 && Class3_Sub13_Sub13.method231(var9 & 1073741823).method948()) {
                         var7 = true;
                      }
                   } else if(!Class38.getItemDefinition(1073741823 & var9, (byte)127).method1102(this.aBoolean864)) {

@@ -4,7 +4,7 @@ import java.util.Objects;
 
 final class Class82 {
 
-   private int[] anIntArray1144;
+   private final int[] anIntArray1144;
    private final Class3_Sub13 aClass3_Sub13_1145;
    static Class93 aClass93_1146 = new Class93(64);
    private final Class3_Sub13[] aClass3_Sub13Array1147;
