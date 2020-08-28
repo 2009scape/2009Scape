@@ -37,7 +37,7 @@ class Class163_Sub2 extends Class163 {
    static void method2219(RSByteBuffer var0) {
       try {
 
-          while(~var0.index > ~var0.buffer.length) {
+          while(var0.buffer.length > var0.index) {
             int var4 = 0;
             boolean var3 = false;
             int var5 = 0;
@@ -53,15 +53,15 @@ class Class163_Sub2 extends Class163 {
             int var8 = var6 * 64 + -Class3_Sub13_Sub21.anInt3256;
             byte var2;
             int var10;
-            if(var8 >= 0 && var9 + -63 >= 0 && ~(var8 - -63) > ~Class23.anInt455 && var9 < Class108.anInt1460) {
+            if(var8 >= 0 && (var9 - 63) >= 0 && Class23.anInt455 > (var8 + 63) && var9 < Class108.anInt1460) {
                var10 = var8 >> 6;
                int var11 = var9 >> 6;
 
-               for(int var12 = 0; ~var12 > -65; ++var12) {
+               for(int var12 = 0; var12 < 64; ++var12) {
                   for(int var13 = 0; var13 < 64; ++var13) {
-                     if(!var3 || ~var12 <= ~(8 * var4) && var12 < 8 + var4 * 8 && var13 >= var5 * 8 && ~var13 > ~(8 + var5 * 8)) {
+                     if(!var3 || (8 * var4) <= var12 && var12 < 8 + var4 * 8 && var13 >= var5 * 8 && (8 + var5 * 8) > var13) {
                         var2 = var0.getByte();
-                        if(-1 != ~var2) {
+                        if(var2 != 0) {
                            if(RenderAnimationDefinition.aByteArrayArrayArray383[var10][var11] == null) {
                               RenderAnimationDefinition.aByteArrayArrayArray383[var10][var11] = new byte[4096];
                            }
@@ -78,7 +78,7 @@ class Class163_Sub2 extends Class163 {
                   }
                }
             } else {
-               for(var10 = 0; ~(var3?64:4096) < ~var10; ++var10) {
+               for(var10 = 0; var10 < (var3 ? 64 : 4096); ++var10) {
                   var2 = var0.getByte();
                   if(0 != var2) {
                      ++var0.index;

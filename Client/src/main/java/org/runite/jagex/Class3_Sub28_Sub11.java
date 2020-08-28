@@ -138,7 +138,7 @@ final class Class3_Sub28_Sub11 extends Node {
                var3.anInt193 = 5;
                var3.anInt168 = 5;
             } else {
-               if(~var3.anInt168 >= -1) {
+               if(var3.anInt168 <= 0) {
                   var3.anInt168 = 5;
                }
 
@@ -235,7 +235,7 @@ final class Class3_Sub28_Sub11 extends Node {
                      if(!var1.aClass3_Sub24_Sub1_2315.method82()) {
                         var1.aClass3_Sub24_Sub1_2315 = null;
                      }
-                  } else if(var1.anIntArray2333 != null && ~(var1.anInt2316 -= var3) >= -1) {
+                  } else if(var1.anIntArray2333 != null && ((var1.anInt2316 -= var3) <= 0)) {
                      int var13 = (int)((double)var1.anIntArray2333.length * Math.random());
                      Class135 var14 = Class135.method1811(Class146.aClass153_1902, var1.anIntArray2333[var13], 0);
                      if(null != var14) {
