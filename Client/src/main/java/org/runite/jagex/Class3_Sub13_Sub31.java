@@ -6,11 +6,9 @@ final class Class3_Sub13_Sub31 extends Class3_Sub13 {
    static Class3_Sub28_Sub16[] aClass3_Sub28_Sub16Array3373;
    static int anInt3375 = 0;
    static int anInt3377 = 7759444;
-   static RSString aClass94_3382 = RSString.createRSString("(U0a )2 in: ");
 
    public static void method317(int var0) {
       try {
-         aClass94_3382 = null;
          if(var0 != 7759444) {
             method317(72);
          }
@@ -24,7 +22,6 @@ final class Class3_Sub13_Sub31 extends Class3_Sub13 {
 
    final int[] method154(int var1, byte var2) {
       try {
-         int var3 = -96 / ((var2 - 30) / 36);
          return Class102.anIntArray2125;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "rl.D(" + var1 + ',' + var2 + ')');

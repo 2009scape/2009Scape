@@ -180,9 +180,6 @@ final class Model_Sub1 extends GameObject {
    }
 
    private void method1996(int[][] var1, int var2, int var3, int var4, int var5, int var6) {
-      boolean var7 = false;
-      boolean var8 = false;
-      boolean var9 = false;
       int var10 = -var5 / 2;
       int var11 = -var6 / 2;
       int var12 = method2009(var1, var2 + var10, var4 + var11);
@@ -1276,7 +1273,6 @@ final class Model_Sub1 extends GameObject {
       var45 += var17;
       int var33 = var45;
       var45 += var18;
-      int var10000 = var45 + var19;
       this.anInt2887 = var9;
       this.anInt2849 = var10;
       this.anInt2862 = var11;
@@ -1541,8 +1537,6 @@ final class Model_Sub1 extends GameObject {
       this.anInt2887 = 0;
       this.anInt2849 = 0;
       this.anInt2862 = 0;
-      byte var9 = 0;
-      byte var10 = 0;
       this.aByte2848 = -1;
 
       int var11;
@@ -1624,8 +1618,6 @@ final class Model_Sub1 extends GameObject {
       this.anInt2887 = 0;
       this.anInt2849 = 0;
       this.anInt2862 = 0;
-      boolean var16 = false;
-      boolean var17 = false;
 
       for(var11 = 0; var11 < var2; ++var11) {
          short var18 = (short)(1 << var11);

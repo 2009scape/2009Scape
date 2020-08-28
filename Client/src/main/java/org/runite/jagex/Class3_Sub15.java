@@ -22,7 +22,6 @@ final class Class3_Sub15 extends Class3 {
 
    final void method369() {
       try {
-         int var2 = 0;
          this.anIntArray2423 = null;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "jk.A(" + (byte) -124 + ')');
@@ -552,8 +551,6 @@ final class Class3_Sub15 extends Class3 {
 
                this.aByteArray2422[var44] = (byte)var45;
             }
-
-            Object var42 = null;
          }
 
          for(var27 = 0; var12 > var27; ++var27) {

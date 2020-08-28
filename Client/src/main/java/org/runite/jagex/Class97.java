@@ -5,7 +5,6 @@ import java.util.Objects;
 final class Class97 {
 
    private int[][][] anIntArrayArrayArray1362;
-   static RSString aClass94_1363 = RSString.createRSString("Clientscript error in: ");
    static byte[] aByteArray1364 = new byte['\u8080'];
    private int anInt1365 = -1;
    private Class61 aClass61_1366 = new Class61();
@@ -19,7 +18,6 @@ final class Class97 {
    static RSString aClass94_1374;
    static int anInt1375;
    static CacheIndex aClass153_1376;
-   static RSString aClass94_1377;
    static CacheIndex aClass153_1378;
    boolean aBoolean1379 = false;
    static RSString aClass94_1380;
@@ -83,10 +81,8 @@ final class Class97 {
          aClass153_1376 = null;
          aClass153_1378 = null;
          anIntArrayArray1373 = (int[][])null;
-         aClass94_1363 = null;
          aClass3_Sub28_Sub16_Sub2_1381 = null;
          if(var0 > 25) {
-            aClass94_1377 = null;
             aClass94_1380 = null;
             aClass153_1372 = null;
             aClass153_1370 = null;

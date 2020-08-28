@@ -37,24 +37,8 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
    static RSString aClass94_10 = RSString.createRSString("::rect_debug");
    static boolean aBoolean11 = false;
    public static int anInt12;
-   public static boolean aBoolean13;
 
-   /**
-    * Represents the current canvas.
-    */
-   private static Canvas canvas;
-    private static boolean desktop;
-
-    /**
-    * @return the canvas
-    */
-   public static Canvas getCanvas() {
-      return canvas;
-   }
-
-   public static void setDesktop(boolean desktop) {
-      GameShell.desktop = desktop;
-   }
+   private static boolean desktop;
 
 
    public final void focusLost(FocusEvent var1) {

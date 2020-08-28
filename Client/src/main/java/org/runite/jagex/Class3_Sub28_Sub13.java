@@ -52,7 +52,6 @@ final class Class3_Sub28_Sub13 extends Node {
 
    final RSString method616(int var1, byte var2) {
       try {
-         int var3 = 10 / ((var2 - 68) / 50);
          if(null == this.aClass130_3663) {
             return this.aClass94_3664;
          } else {
@@ -141,7 +140,6 @@ final class Class3_Sub28_Sub13 extends Node {
    private void method622() {
       try {
          this.aClass130_3666 = new Class130(this.aClass130_3663.method1785(93));
-         int var3 = -48 % ((26 - 109) / 58);
 
          for(Class3_Sub18 var2 = (Class3_Sub18)this.aClass130_3663.method1776(123); null != var2; var2 = (Class3_Sub18)this.aClass130_3663.method1778(-88)) {
             Class3_Sub18 var4 = new Class3_Sub18((int)var2.aLong71);

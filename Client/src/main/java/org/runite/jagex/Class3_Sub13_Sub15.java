@@ -43,7 +43,6 @@ final class Class3_Sub13_Sub15 extends Class3_Sub13 {
 
    private void method239(int var1, int var2, int var4) {
       try {
-         int var6 = 32 / ((15 - 107) / 45);
          int var5 = var1 <= 2048?var1 * (4096 + var2) >> 12:-(var1 * var2 >> 12) + var1 + var2;
          if(var5 > 0) {
             var4 *= 6;

@@ -69,10 +69,9 @@ final class Class54 {
 
    public static void method1178(byte var0) {
       try {
-         int var1 = 103 / ((var0 - -13) / 52);
          aClass153_878 = null;
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "hj.B(" + var0 + ')');
+         throw Class44.clientError(var2, "hj.B(" + ')');
       }
    }
 

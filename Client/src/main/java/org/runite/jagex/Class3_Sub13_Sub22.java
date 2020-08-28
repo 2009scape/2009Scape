@@ -101,7 +101,6 @@ final class Class3_Sub13_Sub22 extends Class3_Sub13 {
 
    final int[] method154(int var1, byte var2) {
       try {
-         int var3 = 14 / ((30 - var2) / 36);
          int[] var4 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
             Class76.method1359(var4, 0, Class113.anInt1559, this.anInt3276);

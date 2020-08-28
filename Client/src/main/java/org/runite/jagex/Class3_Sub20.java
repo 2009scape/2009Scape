@@ -3,8 +3,7 @@ package org.runite.jagex;
 final class Class3_Sub20 extends Class3 {
 
    static int[] anIntArray2480 = new int[25];
-   
-   static RSString aClass94_2482 = RSString.createRSString(":clan:");
+
    int anInt2483;
    static int wlPacketIndex = 0;
    static int language = 0;
@@ -105,7 +104,6 @@ final class Class3_Sub20 extends Class3 {
             method388((byte)-58);
          }
 
-         aClass94_2482 = null;
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "lb.B(" + var0 + ')');
       }

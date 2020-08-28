@@ -37,7 +37,6 @@ abstract class Class3_Sub28_Sub10 extends Node {
             var2 = 10;
          }
 
-         int var3 = -59 % ((var0 - 26) / 55);
          if(var2 >= 5 && var2 <= 8) {
             var2 = 4;
          }

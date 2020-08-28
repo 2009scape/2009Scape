@@ -48,7 +48,6 @@ final class Class3_Sub13_Sub7 extends Class3_Sub13 {
    static int method201(int var0, int var1, int var2) {
       try {
          int var3 = var1 + -1 & var0 >> 31;
-         int var4 = -95 % ((33 - var2) / 54);
          return var3 + (var0 + (var0 >>> 31)) % var1;
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "d.C(" + var0 + ',' + var1 + ',' + var2 + ')');
@@ -101,7 +100,6 @@ final class Class3_Sub13_Sub7 extends Class3_Sub13 {
 
    final int[] method154(int var1, byte var2) {
       try {
-         int var4 = -12 / ((30 - var2) / 36);
          int[] var3 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
             int var5 = Class163_Sub3.anIntArray2999[var1];

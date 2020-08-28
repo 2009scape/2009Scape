@@ -125,7 +125,6 @@ final class ItemDefinition {
 			int ai[] = class3_sub28_sub15.anIntArray3683;
 			if (byte0 > -9)
 				aClass94_811 = (RSString) null;
-			byte byte1 = -1;
 			Class126.anIntArray1662 = new int[class3_sub28_sub15.anInt3680];
 			int k1 = 0;
 			Class107.aClass94Array1454 = new RSString[class3_sub28_sub15.anInt3687];
@@ -3883,7 +3882,6 @@ final class ItemDefinition {
 
 	final ItemDefinition method1106(int var1) {
 		try {
-			int var3 = 58 % ((-28 - 78) / 48);
 			if(this.anIntArray804 != null && var1 > 1) {
 				int var4 = -1;
 
@@ -3924,7 +3922,6 @@ final class ItemDefinition {
 		try {
 			int var4 = this.anInt771;
 			int var3 = this.anInt793;
-			int var6 = 0;
 			int var5 = this.anInt769;
 			if(var2) {
 				var5 = this.anInt776;
@@ -4115,7 +4112,6 @@ final class ItemDefinition {
 
 	private void parseOpcode(RSByteBuffer buffer, int opcode) {
 		try {
-			int var4 = -118 % (((byte) -72 - 48) / 61);
 			if(opcode == 1) {
 				this.anInt755 = buffer.getShort(1);
 			} else if (opcode == 2) {
@@ -4280,7 +4276,6 @@ final class ItemDefinition {
 
 	final int method1115(int var1, int var2, int var3) {
 		try {
-			int var4 = -82 % ((-63 - var2) / 55);
 			if(this.aClass130_798 == null) {
 				return var1;
 			} else {

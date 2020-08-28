@@ -18,7 +18,6 @@ final class Class3_Sub29 extends Class3 {
    static void method727() {
       try {
          KeyboardListener.aClass93_1911.method1524();
-         int var1 = 56;
          Class80.aClass93_1131.method1524();
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "sj.O(" + 91 + ')');
@@ -96,7 +95,6 @@ final class Class3_Sub29 extends Class3 {
 
    static void method730(int var0, int var1, int var3, int var4, int var5) {
       try {
-         int var6 = 19 % (((byte) 121 - -44) / 47);
          if(Class101.anInt1425 <= var0 && var4 <= Class3_Sub28_Sub18.anInt3765 && Class159.anInt2020 <= var5 && Class57.anInt902 >= var3) {
             Class104.method1632(95, var3, var4, var5, var0, var1);
          } else {
@@ -110,7 +108,6 @@ final class Class3_Sub29 extends Class3 {
 
    static void method731(CacheIndex var0) {
       try {
-         int var2 = 3 / (((byte) -113 - -62) / 37);
          Class3_Sub13_Sub13.aClass153_3154 = var0;
          Class95.anInt1344 = Class3_Sub13_Sub13.aClass153_3154.getFileAmount(16, (byte)71);
       } catch (RuntimeException var3) {

@@ -79,7 +79,6 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
 
    final boolean method279(int var1) {
       try {
-         int var2 = 62 / ((var1 - 2) / 62);
          if(null == this.anIntArray3284) {
             if(this.anInt3278 < 0) {
                return false;

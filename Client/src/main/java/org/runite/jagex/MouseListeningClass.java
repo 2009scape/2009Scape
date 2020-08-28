@@ -15,10 +15,8 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	  static int anInt1925 = 0;
 	  static int anInt1926;
 	  static int anInt1927 = 0;
-	  public int distX;
-	  public int distY;
-	  
-	  public final synchronized void mouseMoved(MouseEvent var1)
+
+	public final synchronized void mouseMoved(MouseEvent var1)
 	  {
 	    try
 	    {
@@ -40,7 +38,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    try
 	    {
 	      Class3_Sub4 var1 = (Class3_Sub4)Class3_Sub13_Sub6.aClass61_3075.method1222();
-	      for (int var2 = -37; var1 != null; var1 = (Class3_Sub4)Class3_Sub13_Sub6.aClass61_3075.method1221())
+	      for (; var1 != null; var1 = (Class3_Sub4)Class3_Sub13_Sub6.aClass61_3075.method1221())
 	      {
 	        if (var1.anInt2259 > 0) {
 	          var1.anInt2259 -= 1;

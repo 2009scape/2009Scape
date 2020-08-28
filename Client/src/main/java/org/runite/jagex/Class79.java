@@ -9,7 +9,6 @@ final class Class79 {
    static int anInt1126;
    static int anInt1127 = 0;
    int anInt1128;
-   static RSString aClass94_1129 = RSString.createRSString("Clientscript error )2 check log for details");
 
 
    static void method1385(int var0, int var1) {
@@ -56,7 +55,6 @@ final class Class79 {
 
    public static void method1388(boolean var0) {
       try {
-         aClass94_1129 = null;
          if(!var0) {
             anInt1126 = 8;
          }

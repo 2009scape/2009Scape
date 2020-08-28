@@ -308,7 +308,6 @@ final class Class3_Sub28_Sub20 extends Node {
 
    static void method725() {
       try {
-         int var1 = 67 / ((-60 - -118) / 41);
          if(Class137.method1817() == 2) {
             byte var2 = (byte)(255 & Class79.anInt1127 + -4);
             int var3 = Class79.anInt1127 % 104;

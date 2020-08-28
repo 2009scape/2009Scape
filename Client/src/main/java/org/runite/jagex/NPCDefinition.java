@@ -543,7 +543,6 @@ final class NPCDefinition {
             var10[var11] = Class38.getItemDefinition(var3[var11], (byte)112).name;
          }
 
-         int var12 = -44 / ((45 - 102) / 33);
          Class3_Sub13_Sub29.method307(var10, Class99.aShortArray1398, 77);
       } catch (RuntimeException var9) {
          throw Class44.clientError(var9, "me.J(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + 102 + ')');
@@ -551,11 +550,7 @@ final class NPCDefinition {
    }
 
    final void method1481() {
-      try {
-         int var2 = 36 % ((12 - 98) / 41);
-      } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "me.D(" + 98 + ')');
-      }
+
    }
 
    final Model getChatModel(AnimationDefinition var1, int var2, int var3, int var4, int var5) {
@@ -616,7 +611,6 @@ final class NPCDefinition {
                   var12 = var1.method2055(var12, (byte)-75, var3, var2, var5);
                }
 
-               int var13 = 5 % ((var4 - -64) / 36);
                return var12;
             }
          } else {

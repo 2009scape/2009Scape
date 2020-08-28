@@ -29,7 +29,6 @@ final class Class3_Sub13_Sub26 extends Class3_Sub13 {
 			aByteArrayArray3335 = (byte[][])null;
 			anIntArray3329 = null;
 			anIntArray3336 = null;
-			int var1 = -62 % ((-59 - var0) / 47);
 			anIntArray3321 = null;
 			anIntArray3318 = null;
 			anIntArray3331 = null;
@@ -44,7 +43,6 @@ final class Class3_Sub13_Sub26 extends Class3_Sub13 {
 
 	final int[] method154(int var1, byte var2) {
 		try {
-			int var3 = 42 / ((30 - var2) / 36);
 			int[] var4 = this.aClass114_2382.method1709(var1);
 			if(this.aClass114_2382.aBoolean1580) {
 				int[] var5 = this.method152(0, var1 - 1 & Class3_Sub20.anInt2487, 32755);

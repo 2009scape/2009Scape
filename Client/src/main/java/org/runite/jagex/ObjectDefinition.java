@@ -72,7 +72,6 @@ final class ObjectDefinition {
 
    final boolean method1684(int var2) {
       try {
-         int var3 = -1 % ((31 - 115) / 41);
          if(this.configuration != null) {
             for(int var7 = 0; var7 < this.configuration.length; ++var7) {
                if(this.configuration[var7] == var2) {

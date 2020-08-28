@@ -102,7 +102,6 @@ final class Class99 {
    static int method1599(int var0, int var1, byte[] var2, byte var3) {
       try {
          int var4 = -1;
-         int var5 = -16 % ((var3 - 61) / 57);
 
          for(int var6 = var0; var1 > var6; ++var6) {
             var4 = var4 >>> 8 ^ Class36.anIntArray634[255 & (var4 ^ var2[var6])];

@@ -1110,7 +1110,6 @@ final class Class47 {
          }
 
          this.aClass130_745.method1779(var1, var2);
-         int var7 = -76 % ((var4 - -5) / 35);
          this.aClass13_747.method879(var1, (byte)-126);
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "gn.L(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var4 + ')');

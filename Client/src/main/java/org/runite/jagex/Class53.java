@@ -23,7 +23,6 @@ final class Class53 {
 
    static int method1170(byte var0, int var1) {
       try {
-         int var2 = -77 / ((-34 - var0) / 52);
          return var1 >>> 8;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "hi.E(" + var0 + ',' + var1 + ')');
@@ -84,7 +83,6 @@ final class Class53 {
       while(true) {
          String var8 = var6.readLine();
          if(var8 == null) {
-            int var14 = -107 % ((-95 - 31) / 34);
             var2 = var2 + "| " + var7;
             return var2;
          }
@@ -150,7 +148,6 @@ final class Class53 {
 
    static RSString method1174(RSInterface var0, byte var1) {
       try {
-         int var2 = 49 % ((var1 - 22) / 46);
          return Client.method44(var0).method101(-69) != 0 ?(null != var0.aClass94_245 && var0.aClass94_245.trim(1).length(-45) != 0?var0.aClass94_245:(Class69.aBoolean1040?RuntimeException_Sub1.aClass94_2116:null)):null;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "hi.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');

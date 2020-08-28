@@ -94,7 +94,6 @@ final class Class3_Sub28_Sub3 extends Node {
       try {
          var2 = var2.method1534();
          int var4 = 0;
-         int var5 = -26 / ((62 - (byte) 123) / 58);
          short[] var3 = new short[16];
          int var6 = !var1?0:'\u8000';
          int var7 = (!var1?Class83.anInt1156:RenderAnimationDefinition.anInt377) + var6;

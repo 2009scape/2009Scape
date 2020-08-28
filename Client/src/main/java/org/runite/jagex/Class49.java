@@ -175,7 +175,6 @@ final class Class49 {
    static void method1126(int var1) {
       try {
          Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(2, var1);
-         int var3 = -67 % ((-94 - -37) / 48);
          var2.a();
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ha.I(" + -94 + ',' + var1 + ')');

@@ -63,13 +63,6 @@ public final class Class3_Sub28_Sub12 extends Node {
          throw Class44.clientError(var4, "md.E(" + (var1 != null?"{...}":"null") + ',' + 0 + ')');
       }
    }
-   
-   /**
-    * Sends a default chatbox game message.
-    */
-   static void sendMessage(String str){
-	   sendGameMessage(-1, 11, RSString.createRSString(str), RSString.createRSString(""), RSString.createRSString(""));
-   }
 
    static void sendGameMessage(int var0, int type, RSString message, RSString var3, RSString var5) {
       try {

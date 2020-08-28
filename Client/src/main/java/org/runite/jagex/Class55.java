@@ -300,7 +300,6 @@ final class Class55 {
 
    static int method1184(int var0, byte var1) {
       try {
-         int var2 = 91 / ((var1 - 28) / 39);
          int var3 = var0 & 63;
          int var4 = (var0 & 217) >> 6;
          if(var3 == 18) {

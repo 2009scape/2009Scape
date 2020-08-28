@@ -468,7 +468,6 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
       try {
          Class168 var2 = (Class168)Class163_Sub2_Sub1.aClass93_4015.get((long)var1);
          if(null == var2) {
-            int var3 = 70 % ((var0 - 43) / 57);
             byte[] var4 = Class3_Sub28_Sub5.aClass153_3580.getFile(4, var1);
             var2 = new Class168();
             if(var4 != null) {

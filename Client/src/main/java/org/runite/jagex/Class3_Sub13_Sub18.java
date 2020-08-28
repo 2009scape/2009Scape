@@ -113,7 +113,6 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
 
    final int[] method154(int var1, byte var2) {
       try {
-         int var3 = -89 / ((30 - var2) / 36);
          int[] var4 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
             int[] var5 = this.method152(1, var1, 32755);
@@ -195,7 +194,6 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
       try {
          anIntArray3218 = null;
          anIntArrayArray3215 = (int[][])null;
-         int var1 = -20 % ((-31 - var0) / 39);
          aClass153_3214 = null;
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "ke.B(" + var0 + ')');

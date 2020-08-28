@@ -41,7 +41,6 @@ abstract class Class3_Sub13 extends Class3 {
 
    int[] method154(int var1, byte var2) {
       try {
-         int var3 = -71 / ((30 - var2) / 36);
          throw new IllegalStateException("This operation does not have a monochrome output");
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "j.D(" + var1 + ',' + var2 + ')');

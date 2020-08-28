@@ -5,7 +5,6 @@ final class RSInterface {
    boolean hidden = false;
    Object[] anObjectArray156;
    boolean aBoolean157;
-   static long aLong1489;
    Object[] anObjectArray158;
    Object[] anObjectArray159;
    int anInt160 = 1;
@@ -277,7 +276,6 @@ final class RSInterface {
          }
 
          this.aClass94Array171[var3] = var2;
-         int var7 = -124 % ((-10 - (byte) 112) / 60);
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "be.B(" + (byte) 112 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }

@@ -318,9 +318,6 @@ abstract class Model extends GameObject {
    abstract Model method1894(boolean var1, boolean var2, boolean var3);
 
    final void method1895(int[][] var1, int var2, int var3, int var4, int var5, int var6) {
-      boolean var7 = false;
-      boolean var8 = false;
-      boolean var9 = false;
       int var10 = -var5 / 2;
       int var11 = -var6 / 2;
       int var12 = method1878(var1, var2 + var10, var4 + var11);

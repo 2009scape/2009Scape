@@ -132,7 +132,6 @@ final class Class3_Sub23 extends Class3 {
       try {
          int var6 = var0 * var3[1 + var4][var2] + (128 - var0) * var3[var4][var2] >> 7;
          int var7 = var3[var4][1 + var2] * (-var0 + 128) + var3[var4 - -1][var2 - -1] * var0 >> 7;
-         int var8 = -121 / ((var1 - 5) / 46);
          return var6 * (128 + -var5) - -(var5 * var7) >> 7;
       } catch (RuntimeException var9) {
          throw Class44.clientError(var9, "oj.A(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ')');

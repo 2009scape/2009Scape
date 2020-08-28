@@ -125,7 +125,6 @@ final class Class3_Sub28_Sub6 extends Node {
 
    final int f() {
       try {
-         int var2 = -88;
          return (int)this.aLong71;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "da.P(" + (byte) 117 + ')');
@@ -156,7 +155,6 @@ final class Class3_Sub28_Sub6 extends Node {
          var3 = var3.substring(0, var4) + var1 + var3.substring(var0.length() + var4);
       }
 
-      int var5 = -20 % ((var2 - 59) / 46);
       return var3;
    }
 

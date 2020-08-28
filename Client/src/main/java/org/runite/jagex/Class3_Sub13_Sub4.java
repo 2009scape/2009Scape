@@ -270,7 +270,6 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
 
    static int method190(int var0, int var1, byte var2, int var3) {
       try {
-         int var4 = -42 % ((-14 - var2) / 60);
          int var5 = Class51.anIntArray834[Class140_Sub1_Sub2.method1940(var1, var3)];
          if(var0 > 0) {
             int var6 = Class51.anInterface2_838.method19(111, var0 & '\uffff');
@@ -432,7 +431,6 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
 
    final int[] method154(int var1, byte var2) {
       try {
-         int var4 = 111 % ((30 - var2) / 36);
          int[] var3 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
             this.method186(var1, var3);

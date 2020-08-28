@@ -108,15 +108,6 @@ public class Signlink implements Runnable {
       return this.method1435(7, 0, var1, 0, -112);
    }
 
-   public final Class64 method1437(int var1, int var2, Component var3, int var4) {
-      if(var1 == 14) {
-         Point var5 = var3.getLocationOnScreen();
-         return this.method1435(14, var4 - -var5.y, (Object)null, var5.x + var2, var1 + -105);
-      } else {
-         return null;
-      }
-   }
-
    private static Class122 method1438(boolean var0, String var1) {
       if(var0) {
          method1438(true, (String)null);
@@ -146,7 +137,6 @@ public class Signlink implements Runnable {
    }
 
    public final Class64 method1440(boolean var1, int var2, Component var3) {
-      int var4 = 34 % ((-10 - var2) / 52);
       return this.method1435(15, 0, var3, var1?1:0, -84);
    }
 
@@ -533,7 +523,6 @@ public class Signlink implements Runnable {
    }
 
    public final Class64 method1450(int var1, int var2, int var3, int var4, int var5) {
-      int var6 = -68 % ((var5 - 4) / 53);
       return this.method1435(6, var1 + (var2 << 16), (Object)null, (var4 << 16) + var3, -49);
    }
 

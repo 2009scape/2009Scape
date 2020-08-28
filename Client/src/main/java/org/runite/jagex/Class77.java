@@ -60,7 +60,6 @@ final class Class77 {
    static void method1368() {
       try {
          ++Class163_Sub3.anInt3001;
-         int var1 = -126;
          Class3_Sub13_Sub1.outgoingBuffer.putOpcode(104);
          Class3_Sub13_Sub1.outgoingBuffer.putLong(0L, -2037491440);
       } catch (RuntimeException var2) {

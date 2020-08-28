@@ -49,7 +49,6 @@ final class Class3_Sub13_Sub17 extends Class3_Sub13 {
 
    static void method247(byte var0) {
       try {
-         int var1 = 105 % ((var0 - -39) / 41);
          if(Class140_Sub2.aBoolean2713) {
             AnimationDefinition.aClass109_1856 = null;
             Class140_Sub2.aBoolean2713 = false;
@@ -179,7 +178,6 @@ final class Class3_Sub13_Sub17 extends Class3_Sub13 {
 
    final int[] method154(int var1, byte var2) {
       try {
-         int var3 = -113 % ((30 - var2) / 36);
          int[] var4 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
             for(int var5 = 0; var5 < Class113.anInt1559; ++var5) {

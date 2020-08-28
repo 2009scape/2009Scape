@@ -104,7 +104,6 @@ final class Class3_Sub13_Sub34 extends Class3_Sub13 {
          int var30 = var16 << 2;
          int var31 = var17 * 3;
          int var32 = (var21 + -3) * var18;
-         int var34 = -113 % (((byte) -54 - 56) / 41);
          int var29 = var15 << 2;
          int var33 = var19 * 3;
          int var35 = (-3 + var22) * var20;

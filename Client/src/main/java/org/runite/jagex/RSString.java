@@ -201,9 +201,8 @@ final class RSString implements Interface3 {
          boolean var3 = false;
          boolean var4 = false;
          int var5 = 0;
-         int var6 = 0;
 
-         for(int var7 = 29 / ((-47 - var1) / 37); this.length > var6; ++var6) {
+         for(int var6 = 0; this.length > var6; ++var6) {
             int var8 = 255 & this.byteArray[var6];
             if(var6 == 0) {
                if(45 == var8) {
@@ -260,7 +259,6 @@ final class RSString implements Interface3 {
          if(var2 == null) {
             return false;
          } else if(this.length == var2.length) {
-            int var4 = -54 / ((var1 - -43) / 61);
 
             for(int var3 = 0; var3 < this.length; ++var3) {
                byte var5 = this.byteArray[var3];
@@ -1139,9 +1137,8 @@ final class RSString implements Interface3 {
          } else {
             int var5 = 0;
             int var6 = 0;
-            int var7 = 0;
 
-            for(int var8 = 88 / ((var2 - -12) / 33); var3 > var7; ++var7) {
+            for(int var7 = 0; var3 > var7; ++var7) {
                int var9;
                for(var9 = 0; this.byteArray[var9 + var6] != var1; ++var9) {
                }
@@ -1170,7 +1167,6 @@ final class RSString implements Interface3 {
 
    final int charAt(int var1, byte var2) {
       try {
-         int var3 = 53 / ((var2 - 9) / 32);
          return this.byteArray[var1] & 255;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "na.SA(" + var1 + ',' + var2 + ')');
@@ -1246,7 +1242,6 @@ final class RSString implements Interface3 {
                var15.method668(var0);
             }
 
-            int var19 = 73 / ((-56 - var1) / 47);
             if(item.anInt791 != -1) {
                Objects.requireNonNull(var22).method643(0, 0);
             } else if(-1 != item.anInt762) {

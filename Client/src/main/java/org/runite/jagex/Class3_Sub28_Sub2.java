@@ -7,11 +7,6 @@ final class Class3_Sub28_Sub2 extends Node {
 
 
    public static void method534(int var0) {
-      try {
-         int var1 = 101 % ((-29 - var0) / 45);
-      } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "bk.B(" + var0 + ')');
-      }
    }
 
    static void method535(byte var0, int var1) {

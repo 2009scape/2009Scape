@@ -27,7 +27,6 @@ abstract class Class44 {
 			if(97 <= var0 && var0 <= 122) {
 				return true;
 			} else {
-				int var2 = 52 % ((56 - -32) / 43);
 				return var0 >= 65 && 90 >= var0 || 48 <= var0 && 57 >= var0;
 			}
 		} catch (RuntimeException var3) {

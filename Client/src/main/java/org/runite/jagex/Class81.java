@@ -67,7 +67,6 @@ final class Class81 {
       try {
          if(var1 != 0L) {
             if(Class3_Sub28_Sub5.anInt3591 < 100) {
-               int var3 = -103;
                RSString var4 = Objects.requireNonNull(Class41.method1052(var1)).method1545();
 
                int var5;

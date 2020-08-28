@@ -46,7 +46,6 @@ final class Class7 implements Interface4 {
          aShortArray2167 = null;
          aClass153_2160 = null;
          aClass94_2168 = null;
-         int var1 = 124 / ((var0 - 28) / 41);
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "af.E(" + var0 + ')');
       }

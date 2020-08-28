@@ -27,7 +27,6 @@ class Sensor {
    Sensor() throws Exception {}
 
    void method1796(int var1, int var3) {
-      int var4 = -58 / ((-112 - -29) / 57);
       this.aRobot1732.mouseMove(var1, var3);
    }
 

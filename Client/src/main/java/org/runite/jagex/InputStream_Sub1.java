@@ -13,7 +13,6 @@ final class InputStream_Sub1 extends InputStream {
 
    public static void method61(int var0) {
       try {
-         int var1 = 10 / ((-37 - var0) / 33);
          js5Connection = null;
          aClass94_38 = null;
          aClass94_37 = null;

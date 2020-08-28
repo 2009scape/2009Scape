@@ -133,11 +133,7 @@ final class Class3_Sub5 extends Class3 {
    }
 
    public static void method113(byte var0) {
-      try {
-         int var1 = -100 % ((var0 - -43) / 46);
-      } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "cn.D(" + var0 + ')');
-      }
+
    }
 
    static void method114(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {

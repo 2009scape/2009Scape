@@ -329,7 +329,6 @@ final class Class45 {
 	static void method1083(byte var0) {
 		try {
 			Class3_Sub13_Sub9.anIntArray3107 = InputStream_Sub1.method62();
-			int var1 = -5 / ((var0 - 45) / 59);
 		} catch (RuntimeException var2) {
 			throw Class44.clientError(var2, "gk.C(" + var0 + ')');
 		}

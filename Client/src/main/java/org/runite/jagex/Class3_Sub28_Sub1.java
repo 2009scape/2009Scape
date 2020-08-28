@@ -101,7 +101,6 @@ final class Class3_Sub28_Sub1 extends Node {
 
    final int method529(int var2) {
       try {
-         int var3 = 45;
          if (null != this.anIntArray3534) {
             for (int var4 = 0; this.anIntArray3534.length > var4; ++var4) {
                if (var2 == this.anIntArray3535[var4]) {
@@ -152,7 +151,6 @@ final class Class3_Sub28_Sub1 extends Node {
 //            System.out.println(var1.toString());
          }
 
-         int var2 = 0;
          return var1;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "bc.F(" + (byte) 94 + ')');

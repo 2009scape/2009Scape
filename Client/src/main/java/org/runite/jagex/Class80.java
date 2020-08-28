@@ -53,7 +53,6 @@ final class Class80 {
    public static void method1394(byte var0) {
       try {
          anIntArray1138 = null;
-         int var1 = 118 / ((-33 - var0) / 45);
          aClass93_1131 = null;
          aClass94_1133 = null;
          aClass93_1135 = null;

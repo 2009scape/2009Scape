@@ -16,7 +16,6 @@ final class Class3_Sub26 extends Class3 {
 
    public static void method511(byte var0) {
       try {
-         int var1 = -59 / ((var0 - 67) / 36);
          aClass3_Sub28_Sub16_2560 = null;
          anIntArray2559 = null;
          aClass61_2557 = null;

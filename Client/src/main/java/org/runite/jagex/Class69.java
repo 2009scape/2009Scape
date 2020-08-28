@@ -49,9 +49,7 @@ final class Class69 {
 
    static void method1282(int var0, byte var1, int var2, int var3, int var4) {
       try {
-         int var5 = 0;
-
-         for(int var6 = 58 / ((56 - var1) / 49); var5 < Class3_Sub28_Sub3.anInt3557; ++var5) {
+         for(int var5 = 0; var5 < Class3_Sub28_Sub3.anInt3557; ++var5) {
             if(var0 < Class155.anIntArray1969[var5] - -Class3_Sub28_Sub18.anIntArray3768[var5] && var0 + var4 > Class155.anIntArray1969[var5] && var2 < Player.anIntArray3954[var5] - -Class140_Sub4.anIntArray2794[var5] && var3 + var2 > Player.anIntArray3954[var5]) {
                Class163_Sub1_Sub1.aBooleanArray4008[var5] = true;
             }
@@ -66,7 +64,6 @@ final class Class69 {
       try {
          aClass153_1043 = null;
          aClass30_1039 = null;
-         int var1 = -9 / ((var0 - 64) / 53);
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "jg.B(" + var0 + ')');
       }

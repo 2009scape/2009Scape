@@ -108,7 +108,6 @@ abstract class GameObject {
       try {
          Class139.aBoolean1827 = true;
          Class3_Sub29.aClass153_2581 = var4;
-         int var6 = -127 / (((byte) -126 - -87) / 32);
          Class97.aClass153_1370 = var2;
          int var5 = Class97.aClass153_1370.method2121() - 1;
          Class3_Sub13_Sub23.itemDefinitionSize = Class97.aClass153_1370.getFileAmount(var5, (byte)101) + var5 * 256;
@@ -154,7 +153,6 @@ abstract class GameObject {
                var7 = -var7;
             }
 
-            int var8 = -102 / ((-53 - var0) / 38);
             boolean var9 = var6 > var7;
             int var10;
             int var11;

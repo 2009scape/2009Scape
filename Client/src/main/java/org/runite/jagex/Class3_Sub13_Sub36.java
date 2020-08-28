@@ -128,7 +128,6 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
          if(HDToolKit.highDetail) {
             HDToolKit.method1846();
             HDToolKit.method1831(true);
-            boolean var18 = false;
             HDToolKit.method1827(true);
             if(Class143.loadingStage == 10) {
                var12 = Class3_Sub30_Sub1.method809(Class106.anInt1446, Class77.anInt1111 >> 10, Class3_Sub28_Sub10.anInt3625, NPC.anInt3995 >> 10);
@@ -250,7 +249,6 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
 
    static int method340(int var0) {
       try {
-         int var2 = 0;
          return var0 >>> 8;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "ui.NA(" + var0 + ',' + -51 + ')');

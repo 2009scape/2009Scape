@@ -128,8 +128,6 @@ final class Class96 {
                   ++var11;
                }
             }
-
-            int var4 = -58 % (((byte) -83 - 42) / 32);
             return;
          }
       } catch (RuntimeException var17) {

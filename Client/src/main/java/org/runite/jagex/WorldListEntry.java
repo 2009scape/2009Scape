@@ -16,7 +16,6 @@ final class WorldListEntry extends Class44 {
    static void method1076() {
       try {
          Class154.aClass93_1964.method1524();
-         int var1 = -86 % ((88 - -55) / 41);
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "ba.C(" + 88 + ')');
       }
@@ -35,7 +34,6 @@ final class WorldListEntry extends Class44 {
 
    final WorldListCountry method1078(int var1) {
       try {
-         int var2 = -35 / ((var1) / 56);
          return Class119.countries[this.countryIndex];
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "ba.B(" + var1 + ')');

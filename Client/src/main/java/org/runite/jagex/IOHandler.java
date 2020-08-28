@@ -213,7 +213,6 @@ final class IOHandler implements Runnable {
 
     final void method1466() throws IOException {
         try {
-            int var2 = -97 % ((52 - 127) / 50);
             if(!this.aBoolean1241) {
                 if(this.aBoolean1243) {
                     this.aBoolean1243 = false;

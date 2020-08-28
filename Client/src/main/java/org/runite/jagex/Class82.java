@@ -471,7 +471,6 @@ final class Class82 {
 
    static int method1406() {
       try {
-         int var1 = -21 % ((63 - (byte) -43) / 49);
          return Class3_Sub28_Sub7_Sub1.anInt4045;
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "lc.E(" + (byte) -43 + ')');

@@ -54,7 +54,6 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
 
    public static void method261(int var0) {
       try {
-         int var1 = -31 / ((-43 - var0) / 55);
          aClass153_3227 = null;
          aClass94_3243 = null;
          aClass94_3232 = null;

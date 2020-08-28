@@ -9,7 +9,6 @@ final class Class42 {
    }
 
    static Object method1056(Applet var0, Object[] var2) throws Throwable {
-      int var4 = -90;
       return JSObject.getWindow(var0).call("openjs", var2);
    }
 

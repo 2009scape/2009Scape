@@ -897,7 +897,6 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 	final void setBitAccess(byte var1) {
 		try {
 			this.anInt3806 = this.index * 8;
-			int var2 = -12 % ((-32 - var1) / 54);
 		} catch (RuntimeException var3) {
 			throw Class44.clientError(var3, "i.R(" + var1 + ')');
 		}

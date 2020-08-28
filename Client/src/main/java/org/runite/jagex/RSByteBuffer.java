@@ -186,7 +186,6 @@ class RSByteBuffer extends Class3 {
 
 	final int getByteA(byte var1) {
 		try {
-			int var2 = 122 / ((30 - var1) / 63);
 			return 255 & this.buffer[this.index++] - 128;
 		} catch (RuntimeException var3) {
 			throw Class44.clientError(var3, "wa.DC(" + var1 + ')');
@@ -233,7 +232,6 @@ class RSByteBuffer extends Class3 {
 	final int getTriByte2() {
 		try {
 			this.index += 3;
-			int var2 = 40 % ((-7 - (byte) -118) / 47);
 			return ((this.buffer[this.index + -2] & 255) << 8) + ((this.buffer[-1 + this.index] & 255) << 16) + (this.buffer[-3 + this.index] & 255);
 		} catch (RuntimeException var3) {
 			throw Class44.clientError(var3, "wa.BA(" + (byte) -118 + ')');
@@ -272,7 +270,6 @@ class RSByteBuffer extends Class3 {
 	final int getShortA(int var1) {
 		try {
 			this.index += 2;
-			int var2 = -90 / ((var1 - -58) / 43);
 			return (this.buffer[-1 + this.index] - 128 & 255) + ('\uff00' & this.buffer[-2 + this.index] << 8);
 		} catch (RuntimeException var3) {
 			throw Class44.clientError(var3, "wa.LC(" + var1 + ')');
@@ -423,7 +420,6 @@ class RSByteBuffer extends Class3 {
 	final void method769(byte var1, int var2) {
 		try {
 			this.buffer[-1 + -var2 + this.index] = (byte)var2;
-			int var3 = 120 % ((-78 - var1) / 48);
 		} catch (RuntimeException var4) {
 			throw Class44.clientError(var4, "wa.MB(" + var1 + ',' + var2 + ')');
 		}
@@ -1034,7 +1030,6 @@ class RSByteBuffer extends Class3 {
 
 	final int getIntB(byte var1) {
 		try {
-			int var2 = -83 / ((16 - var1) / 50);
 			this.index += 4;
 			return ((this.buffer[-3 + this.index] & 255) << -1597905000) - -(16711680 & this.buffer[this.index + -4] << 861399376) + (((this.buffer[this.index + -1] & 255) << 979767016) - -(255 & this.buffer[this.index + -2]));
 		} catch (RuntimeException var3) {

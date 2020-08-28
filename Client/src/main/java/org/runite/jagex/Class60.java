@@ -9,11 +9,7 @@ final class Class60 {
 
 
    public static void method1206(byte var0) {
-      try {
-         int var1 = 50 % ((-41 - var0) / 57);
-      } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "ig.C(" + var0 + ')');
-      }
+
    }
 
    static void method1207() {
@@ -49,7 +45,6 @@ final class Class60 {
                      }
                   }
 
-                  int var4 = 43 / ((-70 - var0) / 47);
                   if(var2) {
                      GameObject.aClass11ArrayArray1834[var1] = null;
                   }

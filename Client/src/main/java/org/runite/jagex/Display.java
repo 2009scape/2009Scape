@@ -119,7 +119,6 @@ public class Display {
       }
 
       this.method917((Frame)null);
-      int var2 = -121 / ((-64 - var1) / 47);
    }
 
    public Display() throws Exception {

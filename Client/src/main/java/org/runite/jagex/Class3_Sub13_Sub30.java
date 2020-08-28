@@ -82,7 +82,6 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
                      if(null != Class91.aClass94Array1299[var12]) {
                         ++Class55.anInt880;
                         short var14 = 0;
-                        boolean var16 = false;
                         if(Class158.anInt2014 == 0 && Class91.aClass94Array1299[var12].equals(-123, TextCore.HasAttack)) {
                          //If other player level greater than my level, then right click to attack.
                            if(playerUsername.COMBAT_LEVEL > Class102.player.COMBAT_LEVEL && !Properties.get().isInstantAttack()) {
@@ -213,7 +212,6 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
 
    final int[] method154(int var1, byte var2) {
       try {
-         int var4 = 104 % ((30 - var2) / 36);
          int[] var3 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
             int var5 = Class163_Sub3.anIntArray2999[var1];

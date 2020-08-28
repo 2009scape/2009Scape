@@ -6,7 +6,6 @@ import java.awt.event.MouseWheelListener;
 final class MouseWheel extends Class146 implements MouseWheelListener {
 
    private int anInt2941 = 0;
-   static boolean isMoved = false;
    static int moveAmt = 0;
 
    static boolean shiftDown = false;
@@ -21,15 +20,13 @@ final class MouseWheel extends Class146 implements MouseWheelListener {
    final synchronized int method2078() {
       int var2 = this.anInt2941;
       this.anInt2941 = 0;
-      isMoved = false;
 
-       return var2;
+      return var2;
    }
 
    public final synchronized void mouseWheelMoved(MouseWheelEvent var1) {
       this.anInt2941 += var1.getWheelRotation();
       moveAmt = var1.getWheelRotation();
-      isMoved = true;
 
       // Client scroll
       if(shiftDown || ctrlDown){

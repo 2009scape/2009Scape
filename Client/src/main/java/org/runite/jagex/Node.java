@@ -42,7 +42,6 @@ class Node extends Class3 {
 
    static Class3_Sub28_Sub3 method520(byte var0) {
       try {
-         int var1 = -122 % ((var0 - -48) / 33);
          return RSByteBuffer.aClass3_Sub28_Sub3_2600;
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "rg.OA(" + var0 + ')');

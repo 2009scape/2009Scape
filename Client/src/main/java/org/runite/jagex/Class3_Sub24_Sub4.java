@@ -46,9 +46,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
          boolean var6 = true;
          int[] var7 = null;
          var7 = new int[]{22050};
-
-         int var8 = 7 / ((-122 - -20) / 50);
-
          for(Class3_Sub6 var9 = (Class3_Sub6)var1.aClass130_2564.method1776(20); var9 != null; var9 = (Class3_Sub6)var1.aClass130_2564.method1778(-107)) {
             int var10 = (int)var9.aLong71;
             Class3_Sub15 var11 = (Class3_Sub15)this.aClass130_3508.method1780((long)var10, 0);
@@ -90,7 +87,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
 
    private void method472() {
       try {
-         int var4 = 0;
          this.anIntArray3501[9] = 128;
          this.anIntArray3506[9] = Class3_Sub28_Sub15.method633(128, -128);
          this.method484(128, 9);
@@ -431,7 +427,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
 
    private void method481(byte var1, int var2) {
       try {
-         int var3 = -86 % ((11 - var1) / 41);
 
          for(Class3_Sub22 var4 = (Class3_Sub22)this.aClass3_Sub24_Sub3_3527.aClass61_3489.method1222(); null != var4; var4 = (Class3_Sub22)this.aClass3_Sub24_Sub3_3527.aClass61_3489.method1221()) {
             if(var2 < 0 || var4.anInt2514 == var2) {
@@ -502,7 +497,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
             var2.method86(-1024);
          }
 
-         int var3 = 7 % ((-110 - 35) / 33);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "va.DA(" + -110 + ')');
       }
@@ -542,7 +536,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
                var7.anInt2510 = -(32767 & var11.aShortArray2434[var4]) + (var4 << 8);
                var7.anInt2506 = -1;
                var7.anInt2511 = 0;
-               int var8 = -43;
                var7.anInt2519 = 0;
                var7.anInt2523 = 0;
                var7.anInt2501 = 0;
@@ -1095,7 +1088,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
 
    private void method497(int var1, int var2) {
       try {
-         int var3 = -75 % ((-44 - var2) / 45);
          if(0 != (4 & this.anIntArray3518[var1])) {
             for(Class3_Sub22 var4 = (Class3_Sub22)this.aClass3_Sub24_Sub3_3527.aClass61_3489.method1222(); null != var4; var4 = (Class3_Sub22)this.aClass3_Sub24_Sub3_3527.aClass61_3489.method1221()) {
                if(var1 == var4.anInt2514) {
@@ -1222,7 +1214,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
 
    final boolean method504(Class3_Sub22 var1, int var2) {
       try {
-         int var3 = -114 % ((76 - var2) / 45);
          if(var1.aClass3_Sub24_Sub1_2507 == null) {
             if(var1.anInt2506 >= 0) {
                var1.method86(-1024);

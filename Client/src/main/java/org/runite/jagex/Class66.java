@@ -93,8 +93,6 @@ final class Class66 {
 						this.aClass13_1003.method879(var21, (byte)-128);
 					}
 
-					int var22 = 0;
-
 					for(int var3 = 0; 100 > var3; ++var3) {
 						var4 = this.aClass89_1005.availableBytes(-18358);
 						if(var4 < 0) {
@@ -416,7 +414,6 @@ final class Class66 {
 
 	final boolean method1251(byte var1) {
 		try {
-			int var2 = 33 % ((2 - var1) / 58);
 			return 20 <= this.method1253();
 		} catch (RuntimeException var3) {
 			throw Class44.clientError(var3, "jb.L(" + var1 + ')');
@@ -425,8 +422,6 @@ final class Class66 {
 
 	final void method1252(byte var1) {
 		try {
-			int var2 = -116 / ((var1 - 45) / 51);
-
 			try {
 				this.aClass89_1005.close(14821);
 			} catch (Exception var4) {
@@ -468,7 +463,6 @@ final class Class66 {
 			var8.aBoolean3628 = highPriority;
 			var8.aLong2569 = var6;
 			var8.aByte4064 = var3;
-			int var9 = 120 / ((63 - var1) / 47);
 			if(highPriority) {
 				if(this.method1253() >= 20) {
 					throw new RuntimeException();

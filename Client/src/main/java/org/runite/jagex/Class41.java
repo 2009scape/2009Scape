@@ -135,7 +135,6 @@ final class Class41 {
                this.aClass30_683.method984(-35, (long)(6 * var1));
                this.aClass30_683.method978(0, Class162.aByteArray2040, 6);
                int var5 = ((255 & Class162.aByteArray2040[3]) << 16) - (-(Class162.aByteArray2040[4] << 8 & '\uff00') + -(255 & Class162.aByteArray2040[5]));
-               int var6 = 24 / ((-4 - var2) / 40);
                int var4 = (Class162.aByteArray2040[2] & 255) + ('\uff00' & Class162.aByteArray2040[1] << 8) + (16711680 & Class162.aByteArray2040[0] << 16);
                if(this.anInt687 < var4) {
                   var10000 = null;
@@ -233,7 +232,6 @@ final class Class41 {
    static void method1053(CacheIndex var1) {
       try {
          Class97.aClass153_1372 = var1;
-         int var2 = -52 / (((byte) -117 - -55) / 36);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "ge.F(" + (byte) -117 + ',' + (var1 != null?"{...}":"null") + ')');
       }

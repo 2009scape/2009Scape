@@ -204,7 +204,6 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
 
    final int[] method154(int var1, byte var2) {
       try {
-         int var4 = 15 % ((30 - var2) / 36);
          int[] var3 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
             int var5 = -2048 + Class163_Sub3.anIntArray2999[var1];

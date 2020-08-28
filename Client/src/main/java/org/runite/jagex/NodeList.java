@@ -23,7 +23,6 @@ final class NodeList {
 
    public static void method875(byte var0) {
       try {
-         int var1 = -102 / ((var0 - 35) / 48);
          aClass153_332 = null;
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "ce.C(" + var0 + ')');
@@ -66,7 +65,6 @@ final class NodeList {
    final Node method878(int var1) {
       try {
          Node var2 = this.aClass3_Sub28_335;
-         int var3 = 101 / ((74 - var1) / 44);
          if(var2 == this.aClass3_Sub28_333) {
             this.aClass3_Sub28_335 = null;
             return null;
@@ -81,7 +79,6 @@ final class NodeList {
 
    final void method879(Node var1, byte var2) {
       try {
-         int var3 = 88 / ((-90 - var2) / 35);
          if(var1.aClass3_Sub28_2570 != null) {
             var1.method524();
          }
@@ -185,7 +182,7 @@ final class NodeList {
       try {
          Class3_Sub28_Sub3 var3 = (Class3_Sub28_Sub3)Class134.aClass61_1758.method1222();
 
-         for(int var4 = -82 % ((var1 - 11) / 32); var3 != null; var3 = (Class3_Sub28_Sub3)Class134.aClass61_1758.method1221()) {
+         for(; var3 != null; var3 = (Class3_Sub28_Sub3)Class134.aClass61_1758.method1221()) {
             if(var3.aBoolean3553 && var3.method537(var2, var0)) {
                return var3;
             }

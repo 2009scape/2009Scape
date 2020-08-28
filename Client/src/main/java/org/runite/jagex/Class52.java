@@ -188,7 +188,6 @@ final class Class52 {
 
    final Model method1165(Class145[] var1, int var2, AnimationDefinition var3, AnimationDefinition var4, int var5, int var6, int var7, int var8, int var10, int var11) {
       try {
-         int var12 = 102 % ((var7 - -39) / 61);
          if(0 == ~this.pnpcId) {
             int[] var15 = this.lookInfo;
             long var13 = this.aLong860;

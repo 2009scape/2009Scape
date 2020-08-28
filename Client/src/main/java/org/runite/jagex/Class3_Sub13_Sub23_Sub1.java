@@ -46,7 +46,6 @@ final class Class3_Sub13_Sub23_Sub1 extends Class3_Sub13_Sub23 {
 
    static void method282(int[] var0, int var1, int var2, int var3, int var4) {
       try {
-         int var5 = 116 / ((24 - var2) / 63);
          --var1;
          --var3;
 

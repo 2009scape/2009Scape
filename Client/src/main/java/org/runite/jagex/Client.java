@@ -19,7 +19,6 @@ public final class Client extends GameShell {
 	static int anInt2195;
 	static Class3_Sub11[][] aClass3_Sub11ArrayArray2199;
 	static int[] anIntArray2200;
-	public static boolean aBoolean2201;
 	static int ZOOM = 600;
 
 	
@@ -721,7 +720,6 @@ public final class Client extends GameShell {
 		}
 
 		if(GameShell.anInt12 != 0) {
-			aBoolean2201 = true;
 		}
 
 	}

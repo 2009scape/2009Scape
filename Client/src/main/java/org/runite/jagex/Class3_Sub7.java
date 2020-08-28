@@ -37,7 +37,6 @@ final class Class3_Sub7 extends Class3 {
 
    static void method122(int var0) {
       try {
-         int var1 = -101 / ((var0 - 10) / 59);
          GameObject.aClass11ArrayArray1834 = new RSInterface[Class3_Sub13_Sub29.aClass153_3361.method2121()][];
          Class130.aBooleanArray1703 = new boolean[Class3_Sub13_Sub29.aClass153_3361.method2121()];
       } catch (RuntimeException var2) {

@@ -37,7 +37,6 @@ final class Class3_Sub28_Sub19 extends Node {
    public static void method717(int var0) {
       try {
          aClass94_3777 = null;
-         int var1 = 54 % ((48 - var0) / 56);
          anIntArray3780 = null;
          aClass153_3772 = null;
          aClass47_3776 = null;

@@ -29,7 +29,6 @@ final class Class43 {
 
    static void method1058(int var0, int var1, int var2, int var3) {
       try {
-         int var5 = 25 % ((25 - (byte) -47) / 52);
          if(Class101.anInt1425 <= var1 + -var0 && Class3_Sub28_Sub18.anInt3765 >= var0 + var1 && var3 + -var0 >= Class159.anInt2020 && Class57.anInt902 >= var0 + var3) {
             Class24.method949(var1, var0, var2, var3);
          } else {
@@ -53,7 +52,6 @@ final class Class43 {
          this.anInt694 = var2;
          this.anInt702 = var4;
          this.anInt693 = var5;
-         int var6 = -4 % ((var1 - 7) / 62);
          this.anInt709 = var3;
       } catch (RuntimeException var7) {
          throw Class44.clientError(var7, "gi.F(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
@@ -64,7 +62,6 @@ final class Class43 {
       try {
          int var2 = (this.anInt698 << 7) - -64;
          this.aFloat710 = 1.0F / (float)(var2 * var2);
-         int var3 = 9 % ((9 - 66) / 57);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "gi.C(" + 66 + ')');
       }

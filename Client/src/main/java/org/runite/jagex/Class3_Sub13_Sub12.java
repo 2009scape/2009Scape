@@ -35,7 +35,6 @@ final class Class3_Sub13_Sub12 extends Class3_Sub13 {
       try {
          GameObject.aClass109Array1831[0].method1667(var3, var4);
          GameObject.aClass109Array1831[1].method1667(var3, -16 + var5 + var4);
-         int var8 = 0;
          int var6 = var5 * (var5 + -32) / var2;
          if(var6 < 8) {
             var6 = 8;
@@ -130,7 +129,6 @@ final class Class3_Sub13_Sub12 extends Class3_Sub13 {
 
    final int[] method154(int var1, byte var2) {
       try {
-         int var3 = -42 / ((30 - var2) / 36);
          int[] var10 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
             int[][] var4 = this.method162(var1, 0, (byte)-126);

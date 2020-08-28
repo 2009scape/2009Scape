@@ -13,7 +13,6 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 	static RSString aClass2323;
 	static String aString2324;
 	static RSString aClass2325;
-	static RSString aClass16_1543;
 	static RSString aClass94_3039 = RSString.createRSString("0");
 	static Class3_Sub28_Sub5[] aClass3_Sub28_Sub5Array3041 = new Class3_Sub28_Sub5[14];
 

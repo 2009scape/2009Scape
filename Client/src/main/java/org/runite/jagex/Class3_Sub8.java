@@ -339,7 +339,6 @@ final class Class3_Sub8 extends Class3 {
    static WorldListEntry getWorld(int var0, int index) {
       try {
          if(Class30.loadedWorldList && Class3_Sub13_Sub4.worldListOffset <= index && Class100.worldListArraySize >= index) {
-            int var2 = 120 / ((-var0) / 32);
             GameLaunch.SETTINGS.setWorld(index);
             return Class117.worldList[index - Class3_Sub13_Sub4.worldListOffset];
          } else {

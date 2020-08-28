@@ -19,7 +19,6 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
             Class76.method1359(var3, 0, Class113.anInt1559, Class163_Sub3.anIntArray2999[var1]);
          }
 
-         int var4 = -123 % ((30 - var2) / 36);
          return var3;
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "qg.D(" + var1 + ',' + var2 + ')');
@@ -38,7 +37,6 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
 
    static void method305(Signlink var0, RSByteBuffer var1, int var2) {
       try {
-         int var5 = 123 % (((byte) -126 - -66) / 57);
          Class3_Sub8 var4 = new Class3_Sub8();
          var4.anInt2296 = var1.getByte((byte)-54);
          var4.anInt2305 = var1.getInt();
@@ -55,7 +53,18 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
                String var8;
                String var9;
                int var10;
-               if(var7 != 0 && var7 != 1 && var7 != 2) {
+               if (var7 == 0 || var7 == 1 || var7 == 2) {
+                  var8 = new String(var1.getString().method1568());
+                  var10 = 0;
+                  var9 = new String(var1.getString().method1568());
+                  if(var7 == 1) {
+                     var10 = var1.getInt();
+                  }
+
+                  var4.anIntArray2301[var6] = var7;
+                  var4.anIntArray2299[var6] = var10;
+                  var4.aClass64Array2303[var6] = var0.method1447(-41, var9, Class3_Sub13_Sub1.method170(var8));
+               } else {
                   if(var7 == 3 || var7 == 4) {
                      var8 = new String(var1.getString().method1568());
                      var9 = new String(var1.getString().method1568());
@@ -86,17 +95,6 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
                      var4.aClass64Array2298[var6] = var0.method1443(Class3_Sub13_Sub1.method170(var8), var22, -80, var9);
                      var4.aByteArrayArrayArray2302[var6] = var21;
                   }
-               } else {
-                  var8 = new String(var1.getString().method1568());
-                  var10 = 0;
-                  var9 = new String(var1.getString().method1568());
-                  if(var7 == 1) {
-                     var10 = var1.getInt();
-                  }
-
-                  var4.anIntArray2301[var6] = var7;
-                  var4.anIntArray2299[var6] = var10;
-                  var4.aClass64Array2303[var6] = var0.method1447(-41, var9, Class3_Sub13_Sub1.method170(var8));
                }
             } catch (ClassNotFoundException var15) {
                var4.anIntArray2300[var6] = -1;
@@ -138,7 +136,6 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
    static void method307(RSString[] var0, short[] var1, int var2) {
       try {
          Class3_Sub8.method127(var1, -1 + var0.length, var0, 0);
-         int var3 = 91 % ((var2 - -1) / 63);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "qg.C(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
