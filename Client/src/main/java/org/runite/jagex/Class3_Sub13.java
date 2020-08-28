@@ -152,8 +152,7 @@ abstract class Class3_Sub13 extends Class3 {
             return (int[][])((int[][])null);
          } else if(this.aClass3_Sub13Array2377[var2].aBoolean2375) {
             int[] var4 = this.aClass3_Sub13Array2377[var2].method154(var1, (byte)-105);
-            int[][] var5 = new int[][]{var4, var4, var4};
-            return var5;
+            return new int[][]{var4, var4, var4};
          } else {
             return this.aClass3_Sub13Array2377[var2].method166(-1, var1);
          }

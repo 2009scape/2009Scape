@@ -52,14 +52,10 @@ final class Class100 {
 
             if(var11 == var3) {
                var14 = (-var7 + var5) / (-var9 + var11);
-            } else {
-               if(var5 == var11) {
-                  var14 = (var7 - var3) / (var11 - var9) + 2.0D;
-               } else {
-                  if(var7 == var11) {
-                     var14 = 4.0D + (-var5 + var3) / (-var9 + var11);
-                  }
-               }
+            } else if (var5 == var11) {
+               var14 = (var7 - var3) / (var11 - var9) + 2.0D;
+            } else if (var7 == var11) {
+               var14 = 4.0D + (-var5 + var3) / (-var9 + var11);
             }
 
             if(0.5D <= var18) {
@@ -166,19 +162,15 @@ final class Class100 {
          if(var2 == 1) {
             this.anInt1404 = var3.getTriByte((byte)93);
             this.method1600(this.anInt1404);
-         } else {
-            if(var2 == 2) {
-               this.anInt1412 = var3.getShort(1);
-               if(this.anInt1412 == 65535) {
-                  this.anInt1412 = -1;
-               }
-            } else {
-               if(3 == var2) {
-                  this.anInt1414 = var3.getShort(1);
-               } else if(var2 == 4) {
-                  this.aBoolean1411 = false;
-               }
+         } else if (var2 == 2) {
+            this.anInt1412 = var3.getShort(1);
+            if (this.anInt1412 == 65535) {
+               this.anInt1412 = -1;
             }
+         } else if (3 == var2) {
+            this.anInt1414 = var3.getShort(1);
+         } else if (var2 == 4) {
+            this.aBoolean1411 = false;
          }
 
          if((byte) -52 != -52) {

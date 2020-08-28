@@ -81,10 +81,8 @@ final class Class114 {
                   Class67.aClass93_1013.put((byte)-79, var10, var8);
                }
 
-               return var10;
-            } else {
-               return var10;
             }
+            return var10;
          } else {
             return (Class3_Sub28_Sub16)null;
          }
@@ -115,33 +113,31 @@ final class Class114 {
             this.aBoolean1580 = this.aClass3_Sub26Array1571[var2] == null;
             this.aClass3_Sub26Array1571[var2] = Class56.aClass3_Sub26_884;
             return this.anIntArrayArray1573[var2];
+         } else if (this.anInt1579 == 1) {
+            this.aBoolean1580 = this.anInt1576 != var2;
+            this.anInt1576 = var2;
+            return this.anIntArrayArray1573[0];
          } else {
-            if(this.anInt1579 == 1) {
-               this.aBoolean1580 = this.anInt1576 != var2;
-               this.anInt1576 = var2;
-               return this.anIntArrayArray1573[0];
-            } else {
-               Class3_Sub26 var3 = this.aClass3_Sub26Array1571[var2];
-               if(null == var3) {
-                  this.aBoolean1580 = true;
-                  if(this.anInt1570 < this.anInt1579) {
-                     var3 = new Class3_Sub26(var2, this.anInt1570);
-                     ++this.anInt1570;
-                  } else {
-                     Class3_Sub26 var4 = (Class3_Sub26)this.aClass61_1577.method1212();
-                     var3 = new Class3_Sub26(var2, var4.anInt2555);
-                     this.aClass3_Sub26Array1571[var4.anInt2553] = null;
-                     var4.method86(-1024);
-                  }
-
-                  this.aClass3_Sub26Array1571[var2] = var3;
+            Class3_Sub26 var3 = this.aClass3_Sub26Array1571[var2];
+            if (null == var3) {
+               this.aBoolean1580 = true;
+               if (this.anInt1570 < this.anInt1579) {
+                  var3 = new Class3_Sub26(var2, this.anInt1570);
+                  ++this.anInt1570;
                } else {
-                  this.aBoolean1580 = false;
+                  Class3_Sub26 var4 = (Class3_Sub26) this.aClass61_1577.method1212();
+                  var3 = new Class3_Sub26(var2, var4.anInt2555);
+                  this.aClass3_Sub26Array1571[var4.anInt2553] = null;
+                  var4.method86(-1024);
                }
 
-               this.aClass61_1577.method1216(var3);
-               return this.anIntArrayArray1573[var3.anInt2555];
+               this.aClass3_Sub26Array1571[var2] = var3;
+            } else {
+               this.aBoolean1580 = false;
             }
+
+            this.aClass61_1577.method1216(var3);
+            return this.anIntArrayArray1573[var3.anInt2555];
          }
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "pf.C(" + -16409 + ',' + var2 + ')');

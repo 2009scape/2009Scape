@@ -75,11 +75,7 @@ abstract class Class146 {
                   if(Class23.aBooleanArrayArray457[var14 - Class97.anInt1375 + Class3_Sub13_Sub39.anInt3466][var15 - Class3_Sub13_Sub27.anInt3340 + Class3_Sub13_Sub39.anInt3466] && (var3 == null || var12 < var4 || var3[var12][var14][var15] != var5)) {
                      var16.aBoolean2222 = true;
                      var16.aBoolean2225 = true;
-                     if(var16.anInt2223 > 0) {
-                        var16.aBoolean2236 = true;
-                     } else {
-                        var16.aBoolean2236 = false;
-                     }
+                     var16.aBoolean2236 = var16.anInt2223 > 0;
 
                      ++GameShell.anInt3;
                   } else {

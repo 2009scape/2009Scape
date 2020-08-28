@@ -39,11 +39,7 @@ final class Class54 {
             }
 
 
-            if(var0.equals((byte) -82 + -46, Class102.player.displayName)) {
-               return true;
-            } else {
-               return false;
-            }
+            return var0.equals((byte) -82 + -46, Class102.player.displayName);
          }
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "hj.A(" + (var0 != null?"{...}":"null") + ',' + (byte) -82 + ')');

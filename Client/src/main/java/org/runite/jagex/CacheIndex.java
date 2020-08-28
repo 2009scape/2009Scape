@@ -300,7 +300,7 @@ final class CacheIndex {
          if(this.method2122(3)) {
             var2 = var2.method1534(-98);
             int var3 = this.aClass62_1949.aClass69_949.method1280(var2.method1574(), (byte) -83 + 84);
-            return (byte) -83 != -83?true:this.method2117(-104, var3);
+            return (byte) -83 != -83 || this.method2117(-104, var3);
          } else {
             return false;
          }
@@ -408,11 +408,9 @@ final class CacheIndex {
                }
             }
 
-            if(var7) {
-               return true;
-            } else {
+            if (!var7) {
                byte[] var21;
-               if(null != xteaKeys && (xteaKeys[0] != 0 || 0 != xteaKeys[1] || 0 != xteaKeys[2] || xteaKeys[3] != 0)) {
+               if (null != xteaKeys && (xteaKeys[0] != 0 || 0 != xteaKeys[1] || 0 != xteaKeys[2] || xteaKeys[3] != 0)) {
                   var21 = NPC.method1985(-124, this.files[archive], true);
                   RSByteBuffer var22 = new RSByteBuffer(var21);
                   var22.method770(xteaKeys, var22.buffer.length);
@@ -422,17 +420,17 @@ final class CacheIndex {
 
                byte[] var23;
                try {
-                  var23 = Class3_Sub28_Sub13.method623((byte)-125, var21);
+                  var23 = Class3_Sub28_Sub13.method623((byte) -125, var21);
                } catch (Throwable var19) {
                   throw Class44.clientError(var19, "T3 - " + (xteaKeys != null) + "," + archive + "," + var21.length + "," + Class38.method1026(var21, var21.length) + "," + Class38.method1026(var21, var21.length - 2) + "," + this.aClass62_1949.archiveCRCs[archive] + "," + this.aClass62_1949.anInt964);
                }
 
-               if(this.aBoolean1945) {
+               if (this.aBoolean1945) {
                   this.files[archive] = null;
                }
 
                int var10;
-               if(var4 > 1) {
+               if (var4 > 1) {
                   var10 = var23.length;
                   --var10;
                   int var11 = 255 & var23[var10];
@@ -443,12 +441,12 @@ final class CacheIndex {
 
                   int var15;
                   int var16;
-                  for(int var14 = 0; var11 > var14; ++var14) {
+                  for (int var14 = 0; var11 > var14; ++var14) {
                      var15 = 0;
 
-                     for(var16 = 0; var16 < var4; ++var16) {
+                     for (var16 = 0; var16 < var4; ++var16) {
                         var15 += var12.getInt();
-                        if(null == var5) {
+                        if (null == var5) {
                            ;
                         }
 
@@ -458,7 +456,7 @@ final class CacheIndex {
 
                   byte[][] var24 = new byte[var4][];
 
-                  for(var15 = 0; var4 > var15; ++var15) {
+                  for (var15 = 0; var4 > var15; ++var15) {
                      var24[var15] = new byte[var13[var15]];
                      var13[var15] = 0;
                   }
@@ -467,10 +465,10 @@ final class CacheIndex {
                   var15 = 0;
 
                   int var17;
-                  for(var16 = 0; var11 > var16; ++var16) {
+                  for (var16 = 0; var11 > var16; ++var16) {
                      var17 = 0;
 
-                     for(int var18 = 0; var18 < var4; ++var18) {
+                     for (int var18 = 0; var18 < var4; ++var18) {
                         var17 += var12.getInt();
                         Class76.method1357(var23, var15, var24[var18], var13[var18], var17);
                         var15 += var17;
@@ -478,35 +476,35 @@ final class CacheIndex {
                      }
                   }
 
-                  for(var16 = 0; var16 < var4; ++var16) {
-                     if(var5 == null) {
+                  for (var16 = 0; var16 < var4; ++var16) {
+                     if (var5 == null) {
                         var17 = var16;
                      } else {
                         var17 = var5[var16];
                      }
 
-                     if(this.aBoolean1946) {
+                     if (this.aBoolean1946) {
                         var6[var17] = var24[var16];
                      } else {
                         var6[var17] = Class15.method890(-114, var24[var16]);
                      }
                   }
                } else {
-                  if(null == var5) {
+                  if (null == var5) {
                      var10 = 0;
                   } else {
                      var10 = var5[0];
                   }
 
-                  if(this.aBoolean1946) {
+                  if (this.aBoolean1946) {
                      var6[var10] = var23;
                   } else {
                      var6[var10] = Class15.method890(-80, var23);
                   }
                }
 
-               return true;
             }
+            return true;
          }
       } catch (RuntimeException var20) {
          throw Class44.clientError(var20, "ve.I(" + archive + ',' + false + ',' + (xteaKeys != null?"{...}":"null") + ')');
@@ -617,12 +615,10 @@ final class CacheIndex {
             return null;
          } else if(this.aClass62_1949.archiveLengths[var1] == 1) {
             return this.getFile(var1, 0);
+         } else if (0 == 0) {
+            throw new RuntimeException();
          } else {
-            if(0 == 0) {
-               throw new RuntimeException();
-            } else {
-               return (byte[])null;
-            }
+            return (byte[]) null;
          }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ve.HA(" + var1 + ',' + 0 + ')');
@@ -661,8 +657,7 @@ final class CacheIndex {
                }
             }
 
-            byte[] var6 = NPC.method1985(-126, this.anObjectArrayArray1952[archive][file], false);
-            return var6;
+            return NPC.method1985(-126, this.anObjectArrayArray1952[archive][file], false);
          } else {
             return null;
          }

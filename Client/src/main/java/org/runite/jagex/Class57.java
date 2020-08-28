@@ -35,14 +35,12 @@ final class Class57 {
       try {
          if(1 == var1) {
             this.anInt896 = var2.getByte((byte)-78);
-         } else {
-            if(var1 == 2) {
-               this.anInt908 = var2.getShort(1);
-            } else if(var1 == 3) {
-               this.anInt899 = var2.getShort(1);
-            } else if(4 == var1) {
-               this.anInt907 = var2.getShort((byte)46);
-            }
+         } else if (var1 == 2) {
+            this.anInt908 = var2.getShort(1);
+         } else if (var1 == 3) {
+            this.anInt899 = var2.getShort(1);
+         } else if (4 == var1) {
+            this.anInt907 = var2.getShort((byte) 46);
          }
 
          if(!true) {

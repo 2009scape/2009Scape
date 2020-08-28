@@ -34,10 +34,8 @@ class Sensor {
    void method1797(Component var1, boolean var3) {
       if(var3) {
          var1 = null;
-      } else {
-         if(var1 == null) {
-            throw new NullPointerException();
-         }
+      } else if (var1 == null) {
+         throw new NullPointerException();
       }
 
        if(var1 != this.aComponent1733) {

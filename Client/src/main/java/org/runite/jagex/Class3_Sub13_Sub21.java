@@ -30,16 +30,12 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
             this.anInt3258 = var2.getShort(1);
          } else if(var1 == 3) {
             this.anInt3262 = var2.getShort(1);
-         } else {
-            if(var1 == 4) {
-               this.anInt3257 = var2.getShort(1);
-            } else {
-               if(var1 == 5) {
-                  this.anInt3254 = var2.getShort(1);
-               } else if(var1 == 6) {
-                  this.anInt3266 = var2.getShort(1);
-               }
-            }
+         } else if (var1 == 4) {
+            this.anInt3257 = var2.getShort(1);
+         } else if (var1 == 5) {
+            this.anInt3254 = var2.getShort(1);
+         } else if (var1 == 6) {
+            this.anInt3266 = var2.getShort(1);
          }
 
          if(!var3) {

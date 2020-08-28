@@ -98,10 +98,8 @@ final class Class162 {
             }
 
             Canvas_Sub1.aClass93_21.put((byte)-114, var2, (long)objectId);
-            return var2;
-         } else {
-            return var2;
          }
+         return var2;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "wc.D(" + var0 + ',' + objectId + ')');
       }

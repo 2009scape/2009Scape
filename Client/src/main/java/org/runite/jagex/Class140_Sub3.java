@@ -49,12 +49,10 @@ final class Class140_Sub3 extends GameObject {
                var17 = 12;
             } else if(var7 == 3) {
                var17 = 15;
+            } else if (4 == var7) {
+               var17 = 18;
             } else {
-               if(4 == var7) {
-                  var17 = 18;
-               } else {
-                  var17 = 21;
-               }
+               var17 = 21;
             }
 
             int[] var19 = new int[]{64, 96, 128};
@@ -392,10 +390,8 @@ final class Class140_Sub3 extends GameObject {
                int[][] var18 = (int[][])null;
                if(var3) {
                   var18 = Class58.anIntArrayArrayArray914[0];
-               } else {
-                  if(this.anInt2732 < 3) {
-                     var18 = Class44.anIntArrayArrayArray723[1 + this.anInt2732];
-                  }
+               } else if (this.anInt2732 < 3) {
+                  var18 = Class44.anIntArrayArrayArray723[1 + this.anInt2732];
                }
 
                if(HDToolKit.highDetail && var13) {
@@ -512,29 +508,25 @@ final class Class140_Sub3 extends GameObject {
                         if(var8 == 1) {
                            Class21.maskUpdateIndexes[Class66.maskUpdateCount++] = var3;
                         }
-                     } else {
-                        if(type == 2) {
-                           Class56.localPlayerIndexes[Class159.localPlayerCount++] = var3;
-                           var4.anInt2838 = Class44.anInt719;
-                           if(GraphicDefinition.incomingBuffer.getBits((byte) -11, 1) == 1) {
-                              var7 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 3);
-                              var4.walkStep(2, (byte)-92, var7);
-                              var8 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 3);
-                              var4.walkStep(2, (byte)88, var8);
-                           } else {
-                              var7 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 3);
-                              var4.walkStep(0, (byte)113, var7);
-                           }
-
-                           var7 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 1);
-                           if(1 == var7) {
-                              Class21.maskUpdateIndexes[Class66.maskUpdateCount++] = var3;
-                           }
+                     } else if (type == 2) {
+                        Class56.localPlayerIndexes[Class159.localPlayerCount++] = var3;
+                        var4.anInt2838 = Class44.anInt719;
+                        if (GraphicDefinition.incomingBuffer.getBits((byte) -11, 1) == 1) {
+                           var7 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 3);
+                           var4.walkStep(2, (byte) -92, var7);
+                           var8 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 3);
+                           var4.walkStep(2, (byte) 88, var8);
                         } else {
-                           if(type == 3) {
-                              Class3_Sub7.anIntArray2292[Class139.anInt1829++] = var3;
-                           }
+                           var7 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 3);
+                           var4.walkStep(0, (byte) 113, var7);
                         }
+
+                        var7 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 1);
+                        if (1 == var7) {
+                           Class21.maskUpdateIndexes[Class66.maskUpdateCount++] = var3;
+                        }
+                     } else if (type == 3) {
+                        Class3_Sub7.anIntArray2292[Class139.anInt1829++] = var3;
                      }
                   }
                }

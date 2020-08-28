@@ -28,7 +28,6 @@ final class Canvas_Sub2 extends Canvas {
                int fileLength = Class3_Sub13_Sub29.aClass153_3361.getFileAmount(archive, (byte)94);
                if(0 == fileLength) {
                   Class130.aBooleanArray1703[archive] = true;
-                  return true;
                } else {
                   if(null == GameObject.aClass11ArrayArray1834[archive]) {
                      GameObject.aClass11ArrayArray1834[archive] = new RSInterface[fileLength];
@@ -54,8 +53,8 @@ final class Canvas_Sub2 extends Canvas {
                      parsePlayerMasks(100);
                   }
 
-                  return true;
                }
+               return true;
             } else {
                return false;
             }

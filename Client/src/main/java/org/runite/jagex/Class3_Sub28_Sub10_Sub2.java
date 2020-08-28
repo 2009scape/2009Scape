@@ -248,11 +248,7 @@ final class Class3_Sub28_Sub10_Sub2 extends Class3_Sub28_Sub10 {
 	                  Class3_Sub20.method389();
 	               }
 
-	               if(var1 >= 2) {
-	                  Class3_Sub15.aBoolean2427 = true;
-	               } else {
-	                  Class3_Sub15.aBoolean2427 = false;
-	               }
+					Class3_Sub15.aBoolean2427 = var1 >= 2;
 
 	               if(-1 != Class3_Sub28_Sub12.anInt3655) {
 	                  Class124.method1746(true, (byte)-107);

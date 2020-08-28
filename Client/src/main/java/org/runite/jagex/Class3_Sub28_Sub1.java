@@ -39,17 +39,15 @@ final class Class3_Sub28_Sub1 extends Node {
 
    final int method526(int var1, int var2) {
       try {
-         if(this.anIntArray3540 == null) {
-            return -1;
-         } else {
-            for(int var3 = var2; this.anIntArray3540.length > var3; ++var3) {
-               if(var1 == this.anIntArray3533[var3]) {
+         if (this.anIntArray3540 != null) {
+            for (int var3 = var2; this.anIntArray3540.length > var3; ++var3) {
+               if (var1 == this.anIntArray3533[var3]) {
                   return this.anIntArray3540[var3];
                }
             }
 
-            return -1;
          }
+         return -1;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "bc.Q(" + var1 + ',' + var2 + ')');
       }
@@ -75,19 +73,17 @@ final class Class3_Sub28_Sub1 extends Node {
                   this.anIntArray3534[var5] = var1.getShort(1);
                   this.anIntArray3535[var5] = Class3_Sub13_Sub33.method322(var1.getByte());
                }
-            } else {
-               if(var3 == 3) {
-                  var4 = var1.getByte((byte)-114);
-                  this.anIntArray3540 = new int[var4];
-                  this.anIntArray3533 = new int[var4];
+            } else if (var3 == 3) {
+               var4 = var1.getByte((byte) -114);
+               this.anIntArray3540 = new int[var4];
+               this.anIntArray3533 = new int[var4];
 
-                  for(var5 = 0; var5 < var4; ++var5) {
-                     this.anIntArray3540[var5] = var1.getShort(0 + 1);
-                     this.anIntArray3533[var5] = Class3_Sub13_Sub33.method322(var1.getByte());
-                  }
-               } else if(var3 == 4) {
-                  ;
+               for (var5 = 0; var5 < var4; ++var5) {
+                  this.anIntArray3540[var5] = var1.getShort(0 + 1);
+                  this.anIntArray3533[var5] = Class3_Sub13_Sub33.method322(var1.getByte());
                }
+            } else if (var3 == 4) {
+               ;
             }
          }
 
@@ -111,17 +107,15 @@ final class Class3_Sub28_Sub1 extends Node {
    final int method529(int var2) {
       try {
          int var3 = 45 / (((byte) 50 - -30) / 49);
-         if(null == this.anIntArray3534) {
-            return -1;
-         } else {
-            for(int var4 = 0; this.anIntArray3534.length > var4; ++var4) {
-               if(var2 == this.anIntArray3535[var4]) {
+         if (null != this.anIntArray3534) {
+            for (int var4 = 0; this.anIntArray3534.length > var4; ++var4) {
+               if (var2 == this.anIntArray3535[var4]) {
                   return this.anIntArray3534[var4];
                }
             }
 
-            return -1;
          }
+         return -1;
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "bc.P(" + (byte) 50 + ',' + var2 + ')');
       }

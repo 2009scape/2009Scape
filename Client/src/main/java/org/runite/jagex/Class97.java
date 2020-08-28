@@ -125,33 +125,31 @@ final class Class97 {
             this.aBoolean1379 = null == this.aClass3_Sub20Array1371[var2];
             this.aClass3_Sub20Array1371[var2] = Class3_Sub28_Sub1.aClass3_Sub20_3532;
             return this.anIntArrayArrayArray1362[var2];
+         } else if (1 == this.anInt1367) {
+            this.aBoolean1379 = this.anInt1365 != var2;
+            this.anInt1365 = var2;
+            return this.anIntArrayArrayArray1362[0];
          } else {
-            if(1 == this.anInt1367) {
-               this.aBoolean1379 = this.anInt1365 != var2;
-               this.anInt1365 = var2;
-               return this.anIntArrayArrayArray1362[0];
-            } else {
-               Class3_Sub20 var4 = this.aClass3_Sub20Array1371[var2];
-               if(null == var4) {
-                  this.aBoolean1379 = true;
-                  if(this.anInt1367 > this.anInt1368) {
-                     var4 = new Class3_Sub20(var2, this.anInt1368);
-                     ++this.anInt1368;
-                  } else {
-                     Class3_Sub20 var5 = (Class3_Sub20)this.aClass61_1366.method1212();
-                     var4 = new Class3_Sub20(var2, var5.anInt2483);
-                     this.aClass3_Sub20Array1371[var5.anInt2489] = null;
-                     var5.method86(-1024);
-                  }
-
-                  this.aClass3_Sub20Array1371[var2] = var4;
+            Class3_Sub20 var4 = this.aClass3_Sub20Array1371[var2];
+            if (null == var4) {
+               this.aBoolean1379 = true;
+               if (this.anInt1367 > this.anInt1368) {
+                  var4 = new Class3_Sub20(var2, this.anInt1368);
+                  ++this.anInt1368;
                } else {
-                  this.aBoolean1379 = false;
+                  Class3_Sub20 var5 = (Class3_Sub20) this.aClass61_1366.method1212();
+                  var4 = new Class3_Sub20(var2, var5.anInt2483);
+                  this.aClass3_Sub20Array1371[var5.anInt2489] = null;
+                  var5.method86(-1024);
                }
 
-               this.aClass61_1366.method1216(var4);
-               return this.anIntArrayArrayArray1362[var4.anInt2483];
+               this.aClass3_Sub20Array1371[var2] = var4;
+            } else {
+               this.aBoolean1379 = false;
             }
+
+            this.aClass61_1366.method1216(var4);
+            return this.anIntArrayArrayArray1362[var4.anInt2483];
          }
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "nd.D(" + var1 + ',' + var2 + ')');

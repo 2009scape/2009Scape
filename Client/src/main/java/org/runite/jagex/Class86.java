@@ -77,10 +77,8 @@ final class Class86 {
                var2 = new Class3_Sub28_Sub17_Sub1(var3);
                var2.method697(Class3_Sub13_Sub22.aClass109Array3270, (int[])null);
                Class80.aClass93_1135.put((byte)-96, var2, (long)var1);
-               return var2;
-            } else {
-               return var2;
             }
+            return var2;
          } else {
             return (Class3_Sub28_Sub17_Sub1)null;
          }

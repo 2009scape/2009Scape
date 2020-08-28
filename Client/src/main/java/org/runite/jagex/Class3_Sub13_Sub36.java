@@ -315,10 +315,8 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
             }
 
             Class129_Sub1.aClass47_2686.method1097(var2, (long)var0, (byte)-115);
-            return var2;
-         } else {
-            return var2;
          }
+         return var2;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ui.IA(" + var0 + ',' + true + ')');
       }

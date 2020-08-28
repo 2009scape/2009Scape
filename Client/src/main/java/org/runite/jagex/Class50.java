@@ -35,18 +35,14 @@ final class Class50 {
 						var9 = (int)(var12.aLong428 >>> 32) & Integer.MAX_VALUE;
 						if(var3 == 4 || var3 == 5) {
 							var12.aClass140_429 = new Class140_Sub3(var9, 4, var2, var0, var6, var4, var7, false, var12.aClass140_429);
-						} else {
-							if(var3 == 6) {
-								var12.aClass140_429 = new Class140_Sub3(var9, 4, var2 - -4, var0, var6, var4, var7, false, var12.aClass140_429);
-							} else {
-								if(7 == var3) {
-									var12.aClass140_429 = new Class140_Sub3(var9, 4, (var2 - -2 & 3) - -4, var0, var6, var4, var7, false, var12.aClass140_429);
-								} else if(var3 == 8) {
-									var12.aClass140_429 = new Class140_Sub3(var9, 4, 4 + var2, var0, var6, var4, var7, false, var12.aClass140_429);
-									var12.aClass140_423 = new Class140_Sub3(var9, 4, (2 + var2 & 3) + 4, var0, var6, var4, var7, false, var12.aClass140_423);
-								}
-							}
-						}
+						} else if (var3 == 6) {
+                            var12.aClass140_429 = new Class140_Sub3(var9, 4, var2 - -4, var0, var6, var4, var7, false, var12.aClass140_429);
+                        } else if (7 == var3) {
+                            var12.aClass140_429 = new Class140_Sub3(var9, 4, (var2 - -2 & 3) - -4, var0, var6, var4, var7, false, var12.aClass140_429);
+                        } else if (var3 == 8) {
+                            var12.aClass140_429 = new Class140_Sub3(var9, 4, 4 + var2, var0, var6, var4, var7, false, var12.aClass140_429);
+                            var12.aClass140_423 = new Class140_Sub3(var9, 4, (2 + var2 & 3) + 4, var0, var6, var4, var7, false, var12.aClass140_423);
+                        }
 					}
 				}
 

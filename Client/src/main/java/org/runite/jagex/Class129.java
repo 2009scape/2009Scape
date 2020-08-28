@@ -208,13 +208,6 @@ abstract class Class129 {
                                  var32 = var23 > var34 && var35 > var23;
                               }
 
-                              if(var31 && var32) {
-                                 var29 = Class134.anIntArrayArray1763[0];
-                              } else if(var31) {
-                                 var29 = Class134.anIntArrayArray1763[1];
-                              } else if(var32) {
-                                 var29 = Class134.anIntArrayArray1763[1];
-                              }
                            } else {
                               var31 = var21 <= -1 + var23;
                               var32 = var22 >= var23 + 1;
@@ -232,15 +225,13 @@ abstract class Class129 {
                                  var32 = var23 > var34 && var23 < var35;
                               }
 
-                              if(var31 && var32) {
-                                 var29 = Class134.anIntArrayArray1763[0];
-                              } else if(var31) {
-                                 var29 = Class134.anIntArrayArray1763[1];
-                              } else {
-                                 if(var32) {
-                                    var29 = Class134.anIntArrayArray1763[1];
-                                 }
-                              }
+                           }
+                           if(var31 && var32) {
+                              var29 = Class134.anIntArrayArray1763[0];
+                           } else if(var31) {
+                              var29 = Class134.anIntArrayArray1763[1];
+                           } else if(var32) {
+                              var29 = Class134.anIntArrayArray1763[1];
                            }
 
                            if(null != var29) {
@@ -306,18 +297,16 @@ abstract class Class129 {
                            Class3_Sub13_Sub23_Sub1.method284(var0, var9, var23, var6, var19, Class134.anIntArrayArray1763[var7[var23][var19]], var14, (byte)-88, var13, var11, var2[var23][var19]);
                            continue;
                         }
-                     } else {
-                        if(var43 != 0) {
-                           var46 = Class3_Sub13_Sub37.method350((byte)113, -1 + var43);
-                           if(-1 == var46.anInt2103) {
-                              Class3_Sub13_Sub23_Sub1.method284(var0, var9, var23, var6, var19, Class25.anIntArrayArray499[var7[var23][var19]], var14, (byte)116, var13, var11, var2[var23][var19]);
-                              continue;
-                           }
+                     } else if (var43 != 0) {
+                        var46 = Class3_Sub13_Sub37.method350((byte) 113, -1 + var43);
+                        if (-1 == var46.anInt2103) {
+                           Class3_Sub13_Sub23_Sub1.method284(var0, var9, var23, var6, var19, Class25.anIntArrayArray499[var7[var23][var19]], var14, (byte) 116, var13, var11, var2[var23][var19]);
+                           continue;
+                        }
 
-                           byte var48 = var7[var23][var19];
-                           if(var48 != 0) {
-                              var39 = true;
-                           }
+                        byte var48 = var7[var23][var19];
+                        if (var48 != 0) {
+                           var39 = true;
                         }
                      }
 
@@ -378,11 +367,9 @@ abstract class Class129 {
                               } else if(var32) {
                                  var38 = 0;
                                  var45 = Class134.anIntArrayArray1763[1];
-                              } else {
-                                 if(var51) {
-                                    var45 = Class134.anIntArrayArray1763[1];
-                                    var38 = 2;
-                                 }
+                              } else if (var51) {
+                                 var45 = Class134.anIntArrayArray1763[1];
+                                 var38 = 2;
                               }
                            }
 

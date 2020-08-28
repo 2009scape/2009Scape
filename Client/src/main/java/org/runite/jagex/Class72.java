@@ -28,10 +28,8 @@ final class Class72 {
             }
 
             Class3_Sub13_Sub34.aClass47_3407.method1097(var2, (long)var1, (byte)59);
-            return var2;
-         } else {
-            return var2;
          }
+         return var2;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "jj.D(" + var0 + ',' + var1 + ')');
       }

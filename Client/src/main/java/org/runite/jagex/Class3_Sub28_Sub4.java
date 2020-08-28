@@ -168,26 +168,22 @@ final class Class3_Sub28_Sub4 extends Node {
                for(var5 = 0; var5 < var4; ++var5) {
                   this.anIntArray3567[var5] = var1.getShort(1);
                }
-            } else {
-               if(var2 == 3) {
-                  var4 = var1.getByte((byte)-34);
-                  this.anIntArray3566 = new int[var4];
-                  this.anIntArrayArray3570 = new int[var4][];
+            } else if (var2 == 3) {
+               var4 = var1.getByte((byte) -34);
+               this.anIntArray3566 = new int[var4];
+               this.anIntArrayArray3570 = new int[var4][];
 
-                  for(var5 = 0; var4 > var5; ++var5) {
-                     int var6 = var1.getShort(1);
-                     this.anIntArray3566[var5] = var6;
-                     this.anIntArrayArray3570[var5] = new int[Class155.anIntArray1976[var6]];
+               for (var5 = 0; var4 > var5; ++var5) {
+                  int var6 = var1.getShort(1);
+                  this.anIntArray3566[var5] = var6;
+                  this.anIntArrayArray3570[var5] = new int[Class155.anIntArray1976[var6]];
 
-                     for(int var7 = 0; Class155.anIntArray1976[var6] > var7; ++var7) {
-                        this.anIntArrayArray3570[var5][var7] = var1.getShort(1);
-                     }
-                  }
-               } else {
-                  if(var2 == 4) {
-                     this.aBoolean3568 = false;
+                  for (int var7 = 0; Class155.anIntArray1976[var6] > var7; ++var7) {
+                     this.anIntArrayArray3570[var5][var7] = var1.getShort(1);
                   }
                }
+            } else if (var2 == 4) {
+               this.aBoolean3568 = false;
             }
          }
 

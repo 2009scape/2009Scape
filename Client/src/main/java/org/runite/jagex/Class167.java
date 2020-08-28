@@ -145,12 +145,10 @@ final class Class167 {
                if(var9 == 0) {
                   if(var2) {
                      Class44.anIntArrayArrayArray723[0][var5][var4] = Class58.anIntArrayArrayArray914[0][var5][var4];
+                  } else if (var8 == 0) {
+                     Class44.anIntArrayArrayArray723[0][var5][var4] = 8 * -Class32.method993(var4 + 556238 + var1, 125, var0 + var5 + 932731);
                   } else {
-                     if(var8 == 0) {
-                        Class44.anIntArrayArrayArray723[0][var5][var4] = 8 * -Class32.method993(var4 + 556238 + var1, 125, var0 + var5 + 932731);
-                     } else {
-                        Class44.anIntArrayArrayArray723[var8][var5][var4] = -240 + Class44.anIntArrayArrayArray723[var8 - 1][var5][var4];
-                     }
+                     Class44.anIntArrayArrayArray723[var8][var5][var4] = -240 + Class44.anIntArrayArrayArray723[var8 - 1][var5][var4];
                   }
                   break;
                }

@@ -36,40 +36,30 @@ final class Class62 {
       try {
          if(0 == var0.aByte162) {
             var0.anInt210 = var0.y;
+         } else if (var0.aByte162 == 1) {
+            var0.anInt210 = (var2 - var0.anInt193) / 2 + var0.y;
+         } else if (2 == var0.aByte162) {
+            var0.anInt210 = var2 - var0.anInt193 - var0.y;
+         } else if (var0.aByte162 == 3) {
+            var0.anInt210 = var0.y * var2 >> 14;
+         } else if (4 == var0.aByte162) {
+            var0.anInt210 = (var2 * var0.y >> 14) + (-var0.anInt193 + var2) / 2;
          } else {
-            if(var0.aByte162 == 1) {
-               var0.anInt210 = (var2 - var0.anInt193) / 2 + var0.y;
-            } else {
-               if(2 == var0.aByte162) {
-                  var0.anInt210 = var2 - var0.anInt193 - var0.y;
-               } else if(var0.aByte162 == 3) {
-                  var0.anInt210 = var0.y * var2 >> 14;
-               } else {
-                  if(4 == var0.aByte162) {
-                     var0.anInt210 = (var2 * var0.y >> 14) + (-var0.anInt193 + var2) / 2;
-                  } else {
-                     var0.anInt210 = -(var2 * var0.y >> 14) + -var0.anInt193 + var2;
-                  }
-               }
-            }
+            var0.anInt210 = -(var2 * var0.y >> 14) + -var0.anInt193 + var2;
          }
 
          if(0 == var0.aByte273) {
             var0.anInt306 = var0.x;
          } else if(var0.aByte273 == 1) {
             var0.anInt306 = var0.x + (var3 - var0.anInt168) / 2;
+         } else if (var0.aByte273 == 2) {
+            var0.anInt306 = -var0.x + -var0.anInt168 + var3;
+         } else if (3 == var0.aByte273) {
+            var0.anInt306 = var0.x * var3 >> 14;
+         } else if (4 == var0.aByte273) {
+            var0.anInt306 = (var0.x * var3 >> 14) + (var3 - var0.anInt168) / 2;
          } else {
-            if(var0.aByte273 == 2) {
-               var0.anInt306 = -var0.x + -var0.anInt168 + var3;
-            } else if(3 == var0.aByte273) {
-               var0.anInt306 = var0.x * var3 >> 14;
-            } else {
-               if(4 == var0.aByte273) {
-                  var0.anInt306 = (var0.x * var3 >> 14) + (var3 - var0.anInt168) / 2;
-               } else {
-                  var0.anInt306 = -(var3 * var0.x >> 14) + var3 + -var0.anInt168;
-               }
-            }
+            var0.anInt306 = -(var3 * var0.x >> 14) + var3 + -var0.anInt168;
          }
 
          if(Class69.aBoolean1040 && (Client.method44(var0).anInt2205 != 0 || var0.type == 0)) {

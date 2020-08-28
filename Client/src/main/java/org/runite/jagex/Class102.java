@@ -314,10 +314,8 @@ final class Class102 implements Interface2 {
          if(null == var4) {
             var4 = new Class3_Sub28_Sub18(this.aShortArray2137[var2] & '\uffff');
             this.aClass47_2138.method1097(var4, (long)var2, (byte)69);
-            return var4;
-         } else {
-            return var4;
          }
+         return var4;
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "nk.U(" + 48 + ',' + var2 + ')');
       }
@@ -330,7 +328,7 @@ final class Class102 implements Interface2 {
          }
 
          Class3_Sub28_Sub20 var3 = this.method1613(var2);
-         return null != var3?var3.method722(this, this.aClass153_2123):false;
+         return null != var3 && var3.method722(this, this.aClass153_2123);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "nk.H(" + var1 + ',' + var2 + ')');
       }
@@ -394,11 +392,9 @@ final class Class102 implements Interface2 {
                for(var8 = var4; var2 >= var8; ++var8) {
                   Class38.anIntArrayArray663[var8][var1] = var0;
                }
-            } else {
-               if(var7) {
-                  for(var8 = var4; var8 <= var2; ++var8) {
-                     Class38.anIntArrayArray663[var8][var3] = var0;
-                  }
+            } else if (var7) {
+               for (var8 = var4; var8 <= var2; ++var8) {
+                  Class38.anIntArrayArray663[var8][var3] = var0;
                }
             }
          }
@@ -460,7 +456,7 @@ final class Class102 implements Interface2 {
 
    public final boolean method14(byte var1, int var2) {
       try {
-         return var1 >= -97?true:this.aBoolean2134 || this.aBooleanArray2122[var2];
+         return var1 >= -97 || (this.aBoolean2134 || this.aBooleanArray2122[var2]);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "nk.J(" + var1 + ',' + var2 + ')');
       }

@@ -79,10 +79,8 @@ final class Class3_Sub13_Sub33 extends Class3_Sub13 {
                   this.aClass75Array3392[var4] = Class3_Sub28_Sub2.method536(var2);
                } else if(var5 == 2) {
                   this.aClass75Array3392[var4] = Class3_Sub22.method404(var2);
-               } else {
-                  if(3 == var5) {
-                     this.aClass75Array3392[var4] = Class3_Sub19.method384(var2);
-                  }
+               } else if (3 == var5) {
+                  this.aClass75Array3392[var4] = Class3_Sub19.method384(var2);
                }
             }
          } else if(1 == var1) {

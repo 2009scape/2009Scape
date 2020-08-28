@@ -231,17 +231,15 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
                         var9 = var8.getInt((Object)null);
                         var0.putByte((byte)-102, 0);
                         var0.putInt(-122, var9);
-                     } else {
-                        if(var7 == 1) {
-                           var8 = (Field)var3.aClass64Array2303[var6].anObject974;
-                           var8.setInt((Object)null, var3.anIntArray2299[var6]);
-                           var0.putByte((byte)-98, 0);
-                        } else if(2 == var7) {
-                           var8 = (Field)var3.aClass64Array2303[var6].anObject974;
-                           var9 = var8.getModifiers();
-                           var0.putByte((byte)-26, 0);
-                           var0.putInt(-124, var9);
-                        }
+                     } else if (var7 == 1) {
+                        var8 = (Field) var3.aClass64Array2303[var6].anObject974;
+                        var8.setInt((Object) null, var3.anIntArray2299[var6]);
+                        var0.putByte((byte) -98, 0);
+                     } else if (2 == var7) {
+                        var8 = (Field) var3.aClass64Array2303[var6].anObject974;
+                        var9 = var8.getModifiers();
+                        var0.putByte((byte) -26, 0);
+                        var0.putInt(-124, var9);
                      }
 
                      Method var26;
@@ -261,13 +259,11 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
                         } else if(var28 instanceof Number) {
                            var0.putByte((byte)-94, 1);
                            var0.putLong(((Number)var28).longValue(), -2037491440);
+                        } else if (var28 instanceof RSString) {
+                           var0.putByte((byte) -52, 2);
+                           var0.putString((RSString) var28);
                         } else {
-                           if(var28 instanceof RSString) {
-                              var0.putByte((byte)-52, 2);
-                              var0.putString((RSString)var28);
-                           } else {
-                              var0.putByte((byte)-94, 4);
-                           }
+                           var0.putByte((byte) -94, 4);
                         }
                      } else if(var7 == 4) {
                         var26 = (Method)var3.aClass64Array2298[var6].anObject974;

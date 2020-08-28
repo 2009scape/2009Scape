@@ -39,7 +39,6 @@ final class Class3_Sub28_Sub17_Sub2 extends Class3_Sub28_Sub17 {
          var8.glColor3ub((byte)(var6 >> 16), (byte)(var6 >> 8), (byte)var6);
          var8.glTranslatef((float)var2, (float)(HDToolKit.anInt1811 - var3), 0.0F);
          var8.glCallList(this.anIntArray4085[var1]);
-         var8.glLoadIdentity();
       } else {
          HDToolKit.method1824();
          var8 = HDToolKit.gl;
@@ -78,8 +77,8 @@ final class Class3_Sub28_Sub17_Sub2 extends Class3_Sub28_Sub17 {
          var8.glTexEnvi(8960, '\u8580', 5890);
          var8.glDisable(3553);
          var8.glActiveTexture('\u84c0');
-         var8.glLoadIdentity();
       }
+       var8.glLoadIdentity();
 
    }
 

@@ -86,18 +86,16 @@ final class Class3_Sub28_Sub5 extends Node {
 
    static final long method557(int var0, int var1, int var2) {
       Class3_Sub2 var3 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var0][var1][var2];
-      if(var3 == null) {
-         return 0L;
-      } else {
-         for(int var4 = 0; var4 < var3.anInt2223; ++var4) {
+      if (var3 != null) {
+         for (int var4 = 0; var4 < var3.anInt2223; ++var4) {
             Class25 var5 = var3.aClass25Array2221[var4];
-            if((var5.aLong498 >> 29 & 3L) == 2L && var5.anInt483 == var1 && var5.anInt478 == var2) {
+            if ((var5.aLong498 >> 29 & 3L) == 2L && var5.anInt483 == var1 && var5.anInt478 == var2) {
                return var5.aLong498;
             }
          }
 
-         return 0L;
       }
+      return 0L;
    }
 
    public static void method558(int var0) {
@@ -116,7 +114,7 @@ final class Class3_Sub28_Sub5 extends Node {
 
    final boolean method559(int var2) {
       try {
-         return 1317095745 != 1317095745?false:this.animations[var2].aBoolean1386;
+         return 1317095745 == 1317095745 && this.animations[var2].aBoolean1386;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "cl.D(" + 1317095745 + ',' + var2 + ')');
       }
@@ -308,7 +306,7 @@ final class Class3_Sub28_Sub5 extends Node {
 
    final boolean method561(int var1, byte var2) {
       try {
-         return var2 < 114?true:this.animations[var1].aBoolean1382;
+         return var2 < 114 || this.animations[var1].aBoolean1382;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "cl.F(" + var1 + ',' + var2 + ')');
       }

@@ -99,25 +99,23 @@ final class Class3_Sub13_Sub16 extends Class3_Sub13 {
                      int var12;
                      if(var19 == 1) {
                         var12 = var11 * var11 + var10 * var10 >> 12;
+                     } else if (3 == var19) {
+                         var10 = var10 < 0 ? -var10 : var10;
+                         var11 = var11 >= 0 ? var11 : -var11;
+                         var12 = var11 >= var10 ? var11 : var10;
+                     } else if (4 == var19) {
+                         var10 = (int) (Math.sqrt((double) ((float) (0 > var10 ? -var10 : var10) / 4096.0F)) * 4096.0D);
+                         var11 = (int) (Math.sqrt((double) ((float) (var11 >= 0 ? var11 : -var11) / 4096.0F)) * 4096.0D);
+                         var12 = var11 + var10;
+                         var12 = var12 * var12 >> 12;
+                     } else if (var19 == 5) {
+                         var10 *= var10;
+                         var11 *= var11;
+                         var12 = (int) (Math.sqrt(Math.sqrt((double) ((float) (var11 + var10) / 1.6777216E7F))) * 4096.0D);
+                     } else if (2 == var19) {
+                         var12 = (var10 >= 0 ? var10 : -var10) - -(var11 < 0 ? -var11 : var11);
                      } else {
-                        if(3 == var19) {
-                           var10 = var10 < 0?-var10:var10;
-                           var11 = var11 >= 0 ?var11:-var11;
-                           var12 = var11 >= var10?var11:var10;
-                        } else if(4 == var19) {
-                           var10 = (int)(Math.sqrt((double)((float)(0 > var10?-var10:var10) / 4096.0F)) * 4096.0D);
-                           var11 = (int)(Math.sqrt((double)((float)(var11 >= 0 ?var11:-var11) / 4096.0F)) * 4096.0D);
-                           var12 = var11 + var10;
-                           var12 = var12 * var12 >> 12;
-                        } else if(var19 == 5) {
-                           var10 *= var10;
-                           var11 *= var11;
-                           var12 = (int)(Math.sqrt(Math.sqrt((double)((float)(var11 + var10) / 1.6777216E7F))) * 4096.0D);
-                        } else if(2 == var19) {
-                           var12 = (var10 >= 0 ?var10:-var10) - -(var11 < 0 ?-var11:var11);
-                        } else {
-                           var12 = (int)(4096.0D * Math.sqrt((double)((float)(var11 * var11 + var10 * var10) / 1.6777216E7F)));
-                        }
+                         var12 = (int) (4096.0D * Math.sqrt((double) ((float) (var11 * var11 + var10 * var10) / 1.6777216E7F)));
                      }
 
                      if(var12 >= Class3_Sub28_Sub5.anInt3589) {
@@ -147,14 +145,12 @@ final class Class3_Sub13_Sub16 extends Class3_Sub13 {
                   var3[var15] = Class3_Sub28_Sub5.anInt3589;
                } else if(var19 == 1) {
                   var3[var15] = Class69.anInt1042;
-               } else {
-                  if(var19 == 3) {
-                     var3[var15] = KeyboardListener.anInt1914;
-                  } else if(var19 == 4) {
-                     var3[var15] = Class3_Sub13_Sub36.anInt3422;
-                  } else if(var19 == 2) {
-                     var3[var15] = Class69.anInt1042 + -Class3_Sub28_Sub5.anInt3589;
-                  }
+               } else if (var19 == 3) {
+                   var3[var15] = KeyboardListener.anInt1914;
+               } else if (var19 == 4) {
+                   var3[var15] = Class3_Sub13_Sub36.anInt3422;
+               } else if (var19 == 2) {
+                   var3[var15] = Class69.anInt1042 + -Class3_Sub28_Sub5.anInt3589;
                }
             }
          }
@@ -199,16 +195,14 @@ final class Class3_Sub13_Sub16 extends Class3_Sub13 {
             this.anInt3197 = var2.getByte((byte)-57);
          } else if(2 == var1) {
             this.anInt3193 = var2.getShort(1);
-         } else {
-            if(var1 == 3) {
-               this.anInt3191 = var2.getByte((byte)-55);
-            } else if(var1 == 4) {
-               this.anInt3194 = var2.getByte((byte)-124);
-            } else if(var1 == 5) {
-               this.anInt3203 = var2.getByte((byte)-51);
-            } else if(var1 == 6) {
-               this.anInt3204 = var2.getByte((byte)-64);
-            }
+         } else if (var1 == 3) {
+             this.anInt3191 = var2.getByte((byte) -55);
+         } else if (var1 == 4) {
+             this.anInt3194 = var2.getByte((byte) -124);
+         } else if (var1 == 5) {
+             this.anInt3203 = var2.getByte((byte) -51);
+         } else if (var1 == 6) {
+             this.anInt3204 = var2.getByte((byte) -64);
          }
 
       } catch (RuntimeException var5) {

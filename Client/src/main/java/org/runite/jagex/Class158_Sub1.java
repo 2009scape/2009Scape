@@ -885,11 +885,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
             if(var15 > 0) {
                Class3_Sub13_Sub27.method299(100, var15, var5);
                return true;
-            } else if(var5 == 1) {
-               return false;
-            } else {
-               return true;
-            }
+            } else return var5 != 1;
          } else {
             return false;
          }

@@ -269,11 +269,7 @@ final class Class105 {
          int var35;
          for(var35 = 0; var35 < 16; ++var35) {
             var1 = method1639(var0);
-            if(var1 == 1) {
-               var0.aBooleanArray124[var35] = true;
-            } else {
-               var0.aBooleanArray124[var35] = false;
-            }
+            var0.aBooleanArray124[var35] = var1 == 1;
          }
 
          for(var35 = 0; var35 < 256; ++var35) {
@@ -564,11 +560,7 @@ final class Class105 {
          ++var0.anInt131;
          var0.anInt121 = var47;
          method1634(var0);
-         if(var0.anInt131 == var0.anInt121 + 1 && var0.anInt143 == 0) {
-            var26 = true;
-         } else {
-            var26 = false;
-         }
+         var26 = var0.anInt131 == var0.anInt121 + 1 && var0.anInt143 == 0;
       }
 
    }

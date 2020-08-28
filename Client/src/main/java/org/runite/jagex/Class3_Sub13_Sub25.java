@@ -341,34 +341,22 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
 
          if(var1 == 0) {
             this.anInt3312 = var2.getByte((byte)-104);
-         } else {
-            if(var1 == 1) {
-               this.anInt3300 = var2.getShort(1);
-            } else if(2 == var1) {
-               this.anInt3308 = var2.getShort(1);
-            } else {
-               if(var1 == 3) {
-                  this.anInt3310 = var2.getShort(1);
-               } else {
-                  if(var1 == 4) {
-                     this.anInt3301 = var2.getShort(1);
-                  } else if(var1 == 5) {
-                     this.anInt3303 = var2.getShort(1);
-                  } else {
-                     if(var1 == 6) {
-                        this.anInt3309 = var2.getByte((byte)-114);
-                     } else {
-                        if(var1 == 7) {
-                           this.anInt3299 = var2.getShort(1);
-                        } else {
-                           if(var1 == 8) {
-                              this.anInt3316 = var2.getShort(1);
-                           }
-                        }
-                     }
-                  }
-               }
-            }
+         } else if (var1 == 1) {
+             this.anInt3300 = var2.getShort(1);
+         } else if (2 == var1) {
+             this.anInt3308 = var2.getShort(1);
+         } else if (var1 == 3) {
+             this.anInt3310 = var2.getShort(1);
+         } else if (var1 == 4) {
+             this.anInt3301 = var2.getShort(1);
+         } else if (var1 == 5) {
+             this.anInt3303 = var2.getShort(1);
+         } else if (var1 == 6) {
+             this.anInt3309 = var2.getByte((byte) -114);
+         } else if (var1 == 7) {
+             this.anInt3299 = var2.getShort(1);
+         } else if (var1 == 8) {
+             this.anInt3316 = var2.getShort(1);
          }
 
       } catch (RuntimeException var5) {
@@ -377,7 +365,7 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
    }
 
    static final boolean method292(int var0, int var1, int var2, int var3, GameObject var4, int var5, long var6, int var8, int var9, int var10, int var11) {
-      return var4 == null?true:Class56.method1189(var0, var8, var9, var10 - var8 + 1, var11 - var9 + 1, var1, var2, var3, var4, var5, true, var6);
+      return var4 == null || Class56.method1189(var0, var8, var9, var10 - var8 + 1, var11 - var9 + 1, var1, var2, var3, var4, var5, true, var6);
    }
 
    static final int method293(int var0, int var1, int var3) {

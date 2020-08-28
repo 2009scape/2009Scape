@@ -147,29 +147,27 @@ final class Class131 {
          Class3_Sub28_Sub14.username = var0;
          if(Class3_Sub28_Sub14.username.method1528(Class3_Sub28_Sub14.aClass94_3672) || Class3_Sub28_Sub14.password.method1528(Class3_Sub28_Sub14.aClass94_3672)) {
             Class158.anInt2005 = 3;
+         } else if (CS2Script.anInt2451 == -1) {
+            Class3_Sub2.anInt2246 = 0;
+            Class117.anInt1616 = 0;
+            Class158.anInt2005 = -3;
+            Class3_Sub13_Sub31.anInt3375 = 1;
+            RSByteBuffer var4 = new RSByteBuffer(128);
+            var4.putByte((byte) -97, 10);
+            var4.putShort((int) (Math.random() * 99999.0D));
+            var4.putShort(530);
+            var4.putLong(Class3_Sub28_Sub14.username.toLong(-117), -2037491440);
+            var4.putInt(-123, (int) (Math.random() * 9.9999999E7D));
+            var4.putString(Class3_Sub28_Sub14.password);
+            var4.putInt(-128, (int) (Math.random() * 9.9999999E7D));
+            int var5 = 9 / ((var3 - 29) / 60);
+            var4.encryptRSA(Class3_Sub13_Sub14.aBigInteger3162, Class3_Sub13_Sub37.aBigInteger3441, -296);
+            Class3_Sub13_Sub1.outgoingBuffer.index = 0;
+            Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -29, 210);
+            Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -121, var4.index);
+            Class3_Sub13_Sub1.outgoingBuffer.putBytes(var4.buffer, var4.index, 125);
          } else {
-            if(CS2Script.anInt2451 == -1) {
-               Class3_Sub2.anInt2246 = 0;
-               Class117.anInt1616 = 0;
-               Class158.anInt2005 = -3;
-               Class3_Sub13_Sub31.anInt3375 = 1;
-               RSByteBuffer var4 = new RSByteBuffer(128);
-               var4.putByte((byte)-97, 10);
-               var4.putShort((int)(Math.random() * 99999.0D));
-               var4.putShort(530);
-               var4.putLong(Class3_Sub28_Sub14.username.toLong(-117), -2037491440);
-               var4.putInt(-123, (int)(Math.random() * 9.9999999E7D));
-               var4.putString(Class3_Sub28_Sub14.password);
-               var4.putInt(-128, (int)(Math.random() * 9.9999999E7D));
-               int var5 = 9 / ((var3 - 29) / 60);
-               var4.encryptRSA(Class3_Sub13_Sub14.aBigInteger3162, Class3_Sub13_Sub37.aBigInteger3441, -296);
-               Class3_Sub13_Sub1.outgoingBuffer.index = 0;
-               Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-29, 210);
-               Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-121, var4.index);
-               Class3_Sub13_Sub1.outgoingBuffer.putBytes(var4.buffer, var4.index, 125);
-            } else {
-               Class24.method951();
-            }
+            Class24.method951();
          }
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "se.C(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');

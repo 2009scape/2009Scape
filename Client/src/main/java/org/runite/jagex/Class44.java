@@ -28,7 +28,7 @@ abstract class Class44 {
 				return true;
 			} else {
 				int var2 = 52 % ((56 - -32) / 43);
-				return var0 >= 65 && 90 >= var0?true:48 <= var0 && 57 >= var0;
+				return var0 >= 65 && 90 >= var0 || 48 <= var0 && 57 >= var0;
 			}
 		} catch (RuntimeException var3) {
 			throw clientError(var3, "gj.K(" + var0 + ',' + -32 + ')');
@@ -122,7 +122,7 @@ abstract class Class44 {
 
 	final boolean method1072() {
 		try {
-			return false ?false:(this.settings & 4) != 0;
+			return true && (this.settings & 4) != 0;
 		} catch (RuntimeException var3) {
 			throw clientError(var3, "gj.G(" + false + ')');
 		}

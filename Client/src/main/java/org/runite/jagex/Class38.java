@@ -43,10 +43,8 @@ class Class38 {
             }
 
             Class3_Sub28_Sub4.aClass93_3572.put((byte)-107, var2, (long)itemId);
-            return var2;
-         } else {
-            return var2;
          }
+         return var2;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "fk.F(" + itemId + ',' + var1 + ')');
       }

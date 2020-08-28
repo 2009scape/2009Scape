@@ -186,11 +186,7 @@ final class Class3_Sub13_Sub11 extends Class3_Sub13 {
                int var10 = (var4 << 7) - 1;
                if(!Class3_Sub13_Sub37.method349(var6, var8, var10)) {
                   return false;
-               } else if(Class3_Sub13_Sub37.method349(var9, var8, var10)) {
-                  return true;
-               } else {
-                  return false;
-               }
+               } else return Class3_Sub13_Sub37.method349(var9, var8, var10);
             } else {
                return false;
             }

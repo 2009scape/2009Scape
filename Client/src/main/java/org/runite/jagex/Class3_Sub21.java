@@ -88,10 +88,7 @@ final class Class3_Sub21 extends Class3 {
             }
 
             if(!HDToolKit.highDetail && !var7) {
-               Class51.aBoolean849 = false;
-               if(var13 < 0 || var14 < 0 || var15 < 0 || var13 > Class51.anInt847 || var14 > Class51.anInt847 || var15 > Class51.anInt847) {
-                  Class51.aBoolean849 = true;
-               }
+               Class51.aBoolean849 = var13 < 0 || var14 < 0 || var15 < 0 || var13 > Class51.anInt847 || var14 > Class51.anInt847 || var15 > Class51.anInt847;
 
                if(var0.anIntArray616 != null && var0.anIntArray616[var9] != -1) {
                   if(Class3_Sub13_Sub22.aBoolean3275) {

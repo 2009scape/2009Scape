@@ -47,12 +47,10 @@ final class Class3_Sub13_Sub9 extends Class3_Sub13 {
          if(var3) {
             if(var1 == 0) {
                this.anInt3108 = var2.getByte((byte)-86);
-            } else {
-               if(var1 == 1) {
-                  this.anInt3113 = var2.getByte((byte)-118);
-               } else if(var1 == 2) {
-                  this.anInt3109 = var2.getShort(1);
-               }
+            } else if (var1 == 1) {
+                this.anInt3113 = var2.getByte((byte) -118);
+            } else if (var1 == 2) {
+                this.anInt3109 = var2.getShort(1);
             }
 
          }

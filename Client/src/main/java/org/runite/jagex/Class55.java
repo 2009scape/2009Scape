@@ -148,11 +148,9 @@ final class Class55 {
             if(2 == var1.aByteArray2795[var1.anInt2816 - 1]) {
                var9 <<= 1;
                var11 = 2;
-            } else {
-               if(var1.aByteArray2795[-1 + var1.anInt2816] == 0) {
-                  var11 = 0;
-                  var9 >>= 1;
-               }
+            } else if (var1.aByteArray2795[-1 + var1.anInt2816] == 0) {
+               var11 = 0;
+               var9 >>= 1;
             }
 
             if(var9 >= 8 && -1 != var2.anInt393) {
@@ -296,11 +294,9 @@ final class Class55 {
 
          if(var3 == 1) {
             this.anInt883 = var4.getShort(1);
-         } else {
-            if(2 == var3) {
-               this.anInt881 = var4.getByte((byte)-80);
-               this.anInt879 = var4.getByte((byte)-109);
-            }
+         } else if (2 == var3) {
+            this.anInt881 = var4.getByte((byte) -80);
+            this.anInt879 = var4.getByte((byte) -109);
          }
 
       } catch (RuntimeException var6) {
@@ -329,23 +325,21 @@ final class Class55 {
             if(3 == var4) {
                return 8;
             }
-         } else {
-            if(var3 == 19 || var3 == 21) {
-               if(var4 == 0) {
-                  return 16;
-               }
+         } else if (var3 == 19 || var3 == 21) {
+            if (var4 == 0) {
+               return 16;
+            }
 
-               if(1 == var4) {
-                  return 32;
-               }
+            if (1 == var4) {
+               return 32;
+            }
 
-               if(var4 == 2) {
-                  return 64;
-               }
+            if (var4 == 2) {
+               return 64;
+            }
 
-               if(var4 == 3) {
-                  return 128;
-               }
+            if (var4 == 3) {
+               return 128;
             }
          }
 

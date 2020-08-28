@@ -180,12 +180,10 @@ final class Class3_Sub8 extends Class3 {
                      Class38_Sub1.method1030(var4, Class80.aClass3_Sub28_Sub16Array1136[3], var12, var11, var2, var3);
                   } else if(var31) {
                      Class38_Sub1.method1030(var4, Class80.aClass3_Sub28_Sub16Array1136[5], var12, var11, var2, var3);
+                  } else if (var32) {
+                     Class38_Sub1.method1030(var4, Class80.aClass3_Sub28_Sub16Array1136[4], var12, var11, var2, var3);
                   } else {
-                     if(var32) {
-                        Class38_Sub1.method1030(var4, Class80.aClass3_Sub28_Sub16Array1136[4], var12, var11, var2, var3);
-                     } else {
-                        Class38_Sub1.method1030(var4, Class80.aClass3_Sub28_Sub16Array1136[2], var12, var11, var2, var3);
-                     }
+                     Class38_Sub1.method1030(var4, Class80.aClass3_Sub28_Sub16Array1136[2], var12, var11, var2, var3);
                   }
                }
             }

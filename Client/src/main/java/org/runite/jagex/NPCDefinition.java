@@ -499,16 +499,12 @@ final class NPCDefinition {
             NPC.aFloat3979 = 3.0F;
          } else if(50 == var0) {
             NPC.aFloat3979 = 4.0F;
-         } else {
-            if(var0 == 75) {
-               NPC.aFloat3979 = 6.0F;
-            } else if(var0 == 100) {
-               NPC.aFloat3979 = 8.0F;
-            } else {
-               if(var0 == 200) {
-                  NPC.aFloat3979 = 16.0F;
-               }
-            }
+         } else if (var0 == 75) {
+            NPC.aFloat3979 = 6.0F;
+         } else if (var0 == 100) {
+            NPC.aFloat3979 = 8.0F;
+         } else if (var0 == 200) {
+            NPC.aFloat3979 = 16.0F;
          }
 
          Class3_Sub13_Sub30.anInt3362 = -1;
@@ -656,215 +652,183 @@ final class NPCDefinition {
             }
          } else if(opcode == 2) {
             this.aClass94_1273 = buffer.getString();
+         } else if (opcode == 12) {
+            this.size = buffer.getByte((byte) -48);
+         } else if (opcode >= 30 && opcode < 35) {
+            this.options[-30 + opcode] = buffer.getString();
+            if (this.options[-30 + opcode].equals(-122, TextCore.HasHidden)) {
+               this.options[opcode - 30] = null;
+            }
+         } else if (opcode == 40) {
+            var4 = buffer.getByte((byte) -125);
+            this.aShortArray1254 = new short[var4];
+            this.aShortArray1248 = new short[var4];
+
+            for (var5 = 0; var4 > var5; ++var5) {
+               this.aShortArray1248[var5] = (short) buffer.getShort(1);
+               this.aShortArray1254[var5] = (short) buffer.getShort(1);
+            }
+         } else if (opcode == 41) {
+            var4 = buffer.getByte((byte) -66);
+            this.aShortArray1246 = new short[var4];
+            this.aShortArray1271 = new short[var4];
+
+            for (var5 = 0; var5 < var4; ++var5) {
+               this.aShortArray1271[var5] = (short) buffer.getShort(1);
+               this.aShortArray1246[var5] = (short) buffer.getShort(1);
+            }
+         } else if (opcode == 42) {
+            var4 = buffer.getByte((byte) -116);
+            this.aByteArray1247 = new byte[var4];
+
+            for (var5 = 0; var4 > var5; ++var5) {
+               this.aByteArray1247[var5] = buffer.getByte();
+            }
+         } else if (opcode == 60) {
+            var4 = buffer.getByte((byte) -69);
+            this.anIntArray1250 = new int[var4];
+
+            for (var5 = 0; var5 < var4; ++var5) {
+               this.anIntArray1250[var5] = buffer.getShort(1);
+            }
+         } else if (93 == opcode) {
+            this.aBoolean1285 = false;
+         } else if (opcode == 95) {
+            this.anInt1260 = buffer.getShort(1);
+         } else if (opcode == 97) {
+            this.anInt1264 = buffer.getShort(1);
+         } else if (opcode == 98) {
+            this.anInt1266 = buffer.getShort(1);
+         } else if (opcode == 99) {
+            this.aBoolean1263 = true;
+         } else if (opcode == 100) {
+            this.anInt1251 = buffer.getByte();
+         } else if (opcode == 101) {
+            this.anInt1282 = buffer.getByte() * 5;
+         } else if (opcode == 102) {
+            this.anInt1269 = buffer.getShort(1);
+         } else if (103 == opcode) {
+            this.anInt1274 = buffer.getShort(1);
          } else {
-            if(opcode == 12) {
-               this.size = buffer.getByte((byte)-48);
-            } else {
-               if(opcode >= 30 && opcode < 35) {
-                  this.options[-30 + opcode] = buffer.getString();
-                  if(this.options[-30 + opcode].equals(-122, TextCore.HasHidden)) {
-                     this.options[opcode - 30] = null;
-                  }
-               } else if(opcode == 40) {
-                  var4 = buffer.getByte((byte)-125);
-                  this.aShortArray1254 = new short[var4];
-                  this.aShortArray1248 = new short[var4];
+            int var6;
+            if (106 == opcode || opcode == 118) {
+               this.configId = buffer.getShort(1);
+               var4 = -1;
+               if (this.configId == 65535) {
+                  this.configId = -1;
+               }
 
-                  for(var5 = 0; var4 > var5; ++var5) {
-                     this.aShortArray1248[var5] = (short)buffer.getShort(1);
-                     this.aShortArray1254[var5] = (short)buffer.getShort(1);
-                  }
-               } else {
-                  if(opcode == 41) {
-                     var4 = buffer.getByte((byte)-66);
-                     this.aShortArray1246 = new short[var4];
-                     this.aShortArray1271 = new short[var4];
+               this.configFileId = buffer.getShort(1);
+               if (this.configFileId == 65535) {
+                  this.configFileId = -1;
+               }
 
-                     for(var5 = 0; var5 < var4; ++var5) {
-                        this.aShortArray1271[var5] = (short)buffer.getShort(1);
-                        this.aShortArray1246[var5] = (short)buffer.getShort(1);
-                     }
+               if (opcode == 118) {
+                  var4 = buffer.getShort(1);
+                  if (var4 == 65535) {
+                     var4 = -1;
+                  }
+               }
+
+               var5 = buffer.getByte((byte) -93);
+               this.childNPCs = new int[2 + var5];
+
+               for (var6 = 0; var6 <= var5; ++var6) {
+                  this.childNPCs[var6] = buffer.getShort(1);
+                  if (this.childNPCs[var6] == 65535) {
+                     this.childNPCs[var6] = -1;
+                  }
+               }
+
+               this.childNPCs[1 + var5] = var4;
+            } else if (opcode == 107) {
+               this.aBoolean1270 = false;
+            } else if (opcode == 109) {
+               this.aBoolean1255 = false;
+            } else if (opcode == 111) {
+               this.aBoolean1249 = false;
+            } else if (opcode == 113) {
+               this.aShort1286 = (short) buffer.getShort(1);
+               this.aShort1256 = (short) buffer.getShort(1);
+            } else if (opcode == 114) {
+               this.aByte1287 = buffer.getByte();
+               this.aByte1275 = buffer.getByte();
+            } else if (opcode == 115) {
+               buffer.getByte((byte) -23);
+               buffer.getByte((byte) -106);
+            } else if (119 == opcode) {
+               this.aByte1267 = buffer.getByte();
+            } else if (121 == opcode) {
+               this.anIntArrayArray1261 = new int[this.models.length][];
+               var4 = buffer.getByte((byte) -41);
+
+               for (var5 = 0; var5 < var4; ++var5) {
+                  var6 = buffer.getByte((byte) -109);
+                  int[] var7 = this.anIntArrayArray1261[var6] = new int[3];
+                  var7[0] = buffer.getByte();
+                  var7[1] = buffer.getByte();
+                  var7[2] = buffer.getByte();
+               }
+            } else if (122 == opcode) {
+               this.anInt1279 = buffer.getShort(1);
+            } else if (opcode == 123) {
+               this.anInt1265 = buffer.getShort(1);
+            } else if (opcode == 125) {
+               this.aByte1268 = buffer.getByte();
+            } else if (126 == opcode) {
+               this.anInt1283 = buffer.getShort(1);
+            } else if (127 == opcode) {
+               this.renderAnimationId = buffer.getShort(1);
+            } else if (128 == opcode) {
+               buffer.getByte((byte) -125);
+            } else if (opcode == 134) {
+               this.anInt1262 = buffer.getShort(1);
+               if (this.anInt1262 == '\uffff') {
+                  this.anInt1262 = -1;
+               }
+
+               this.anInt1290 = buffer.getShort(1);
+               if (this.anInt1290 == 65535) {
+                  this.anInt1290 = -1;
+               }
+
+               this.anInt1293 = buffer.getShort(1);
+               if (this.anInt1293 == 65535) {
+                  this.anInt1293 = -1;
+               }
+
+               this.anInt1276 = buffer.getShort(1);
+               if (this.anInt1276 == 65535) {
+                  this.anInt1276 = -1;
+               }
+
+               this.anInt1291 = buffer.getByte((byte) -113);
+            } else if (opcode == 135) {
+               this.anInt1296 = buffer.getByte((byte) -38);
+               this.anInt1253 = buffer.getShort(1);
+            } else if (opcode == 136) {
+               this.anInt1289 = buffer.getByte((byte) -89);
+               this.anInt1278 = buffer.getShort(1);
+            } else if (opcode == 137) {
+               this.anInt1298 = buffer.getShort(1);
+            } else if (opcode == 249) {
+               var4 = buffer.getByte((byte) -98);
+               if (null == this.aClass130_1272) {
+                  var5 = Class95.method1585((byte) 109, var4);
+                  this.aClass130_1272 = new Class130(var5);
+               }
+
+               for (var5 = 0; var4 > var5; ++var5) {
+                  boolean var11 = 1 == buffer.getByte((byte) -95);
+                  int var10 = buffer.getTriByte((byte) 83);
+                  Object var8;
+                  if (var11) {
+                     var8 = new Class3_Sub29(buffer.getString());
                   } else {
-                     if(opcode == 42) {
-                        var4 = buffer.getByte((byte)-116);
-                        this.aByteArray1247 = new byte[var4];
-
-                        for(var5 = 0; var4 > var5; ++var5) {
-                           this.aByteArray1247[var5] = buffer.getByte();
-                        }
-                     } else if(opcode == 60) {
-                        var4 = buffer.getByte((byte)-69);
-                        this.anIntArray1250 = new int[var4];
-
-                        for(var5 = 0; var5 < var4; ++var5) {
-                           this.anIntArray1250[var5] = buffer.getShort(1);
-                        }
-                     } else if(93 == opcode) {
-                        this.aBoolean1285 = false;
-                     } else {
-                        if(opcode == 95) {
-                           this.anInt1260 = buffer.getShort(1);
-                        } else {
-                           if(opcode == 97) {
-                              this.anInt1264 = buffer.getShort(1);
-                           } else {
-                              if(opcode == 98) {
-                                 this.anInt1266 = buffer.getShort(1);
-                              } else if(opcode == 99) {
-                                 this.aBoolean1263 = true;
-                              } else {
-                                 if(opcode == 100) {
-                                    this.anInt1251 = buffer.getByte();
-                                 } else {
-                                    if(opcode == 101) {
-                                       this.anInt1282 = buffer.getByte() * 5;
-                                    } else if(opcode == 102) {
-                                       this.anInt1269 = buffer.getShort(1);
-                                    } else if(103 == opcode) {
-                                       this.anInt1274 = buffer.getShort(1);
-                                    } else {
-                                       int var6;
-                                       if(106 == opcode || opcode == 118) {
-                                          this.configId = buffer.getShort(1);
-                                          var4 = -1;
-                                          if(this.configId == 65535) {
-                                             this.configId = -1;
-                                          }
-
-                                          this.configFileId = buffer.getShort(1);
-                                          if(this.configFileId == 65535) {
-                                             this.configFileId = -1;
-                                          }
-
-                                          if(opcode == 118) {
-                                             var4 = buffer.getShort(1);
-                                             if(var4 == 65535) {
-                                                var4 = -1;
-                                             }
-                                          }
-
-                                          var5 = buffer.getByte((byte)-93);
-                                          this.childNPCs = new int[2 + var5];
-
-                                          for(var6 = 0; var6 <= var5; ++var6) {
-                                             this.childNPCs[var6] = buffer.getShort(1);
-                                             if(this.childNPCs[var6] == 65535) {
-                                                this.childNPCs[var6] = -1;
-                                             }
-                                          }
-
-                                          this.childNPCs[1 + var5] = var4;
-                                       } else {
-                                          if(opcode == 107) {
-                                             this.aBoolean1270 = false;
-                                          } else if(opcode == 109) {
-                                             this.aBoolean1255 = false;
-                                          } else {
-                                             if(opcode == 111) {
-                                                this.aBoolean1249 = false;
-                                             } else if(opcode == 113) {
-                                                this.aShort1286 = (short)buffer.getShort(1);
-                                                this.aShort1256 = (short)buffer.getShort(1);
-                                             } else if(opcode == 114) {
-                                                this.aByte1287 = buffer.getByte();
-                                                this.aByte1275 = buffer.getByte();
-                                             } else if(opcode == 115) {
-                                                buffer.getByte((byte)-23);
-                                                buffer.getByte((byte)-106);
-                                             } else {
-                                                if(119 == opcode) {
-                                                   this.aByte1267 = buffer.getByte();
-                                                } else if(121 == opcode) {
-                                                   this.anIntArrayArray1261 = new int[this.models.length][];
-                                                   var4 = buffer.getByte((byte)-41);
-
-                                                   for(var5 = 0; var5 < var4; ++var5) {
-                                                      var6 = buffer.getByte((byte)-109);
-                                                      int[] var7 = this.anIntArrayArray1261[var6] = new int[3];
-                                                      var7[0] = buffer.getByte();
-                                                      var7[1] = buffer.getByte();
-                                                      var7[2] = buffer.getByte();
-                                                   }
-                                                } else if(122 == opcode) {
-                                                   this.anInt1279 = buffer.getShort(1);
-                                                } else if(opcode == 123) {
-                                                   this.anInt1265 = buffer.getShort(1);
-                                                } else if(opcode == 125) {
-                                                   this.aByte1268 = buffer.getByte();
-                                                } else {
-                                                   if(126 == opcode) {
-                                                      this.anInt1283 = buffer.getShort(1);
-                                                   } else {
-                                                      if(127 == opcode) {
-                                                         this.renderAnimationId = buffer.getShort(1);
-                                                      } else if(128 == opcode) {
-                                                         buffer.getByte((byte)-125);
-                                                      } else if(opcode == 134) {
-                                                         this.anInt1262 = buffer.getShort(1);
-                                                         if(this.anInt1262 == '\uffff') {
-                                                            this.anInt1262 = -1;
-                                                         }
-
-                                                         this.anInt1290 = buffer.getShort(1);
-                                                         if(this.anInt1290 == 65535) {
-                                                            this.anInt1290 = -1;
-                                                         }
-
-                                                         this.anInt1293 = buffer.getShort(1);
-                                                         if(this.anInt1293 == 65535) {
-                                                            this.anInt1293 = -1;
-                                                         }
-
-                                                         this.anInt1276 = buffer.getShort(1);
-                                                         if(this.anInt1276 == 65535) {
-                                                            this.anInt1276 = -1;
-                                                         }
-
-                                                         this.anInt1291 = buffer.getByte((byte)-113);
-                                                      } else {
-                                                         if(opcode == 135) {
-                                                            this.anInt1296 = buffer.getByte((byte)-38);
-                                                            this.anInt1253 = buffer.getShort(1);
-                                                         } else if(opcode == 136) {
-                                                            this.anInt1289 = buffer.getByte((byte)-89);
-                                                            this.anInt1278 = buffer.getShort(1);
-                                                         } else if(opcode == 137) {
-                                                            this.anInt1298 = buffer.getShort(1);
-                                                         } else {
-                                                            if(opcode == 249) {
-                                                               var4 = buffer.getByte((byte)-98);
-                                                               if(null == this.aClass130_1272) {
-                                                                  var5 = Class95.method1585((byte)109, var4);
-                                                                  this.aClass130_1272 = new Class130(var5);
-                                                               }
-
-                                                               for(var5 = 0; var4 > var5; ++var5) {
-                                                                  boolean var11 = 1 == buffer.getByte((byte)-95);
-                                                                  int var10 = buffer.getTriByte((byte)83);
-                                                                  Object var8;
-                                                                  if(var11) {
-                                                                     var8 = new Class3_Sub29(buffer.getString());
-                                                                  } else {
-                                                                     var8 = new Class3_Sub18(buffer.getInt());
-                                                                  }
-
-                                                                  this.aClass130_1272.method1779(1, (Class3)var8, (long)var10);
-                                                               }
-                                                            }
-                                                         }
-                                                      }
-                                                   }
-                                                }
-                                             }
-                                          }
-                                       }
-                                    }
-                                 }
-                              }
-                           }
-                        }
-                     }
+                     var8 = new Class3_Sub18(buffer.getInt());
                   }
+
+                  this.aClass130_1272.method1779(1, (Class3) var8, (long) var10);
                }
             }
          }

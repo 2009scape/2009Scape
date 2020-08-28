@@ -181,32 +181,30 @@ final class Class3_Sub27 extends Class3 {
          var28 = var28 + var1.getByte((byte)-80) & 127;
          if(var28 == 0 || var28 == 32) {
             ++var12;
+         } else if (var28 == 1) {
+            ++var16;
+         } else if (var28 == 33) {
+            ++var17;
+         } else if (var28 == 7) {
+            ++var18;
+         } else if (var28 == 39) {
+            ++var19;
+         } else if (var28 == 10) {
+            ++var20;
+         } else if (var28 == 42) {
+            ++var21;
+         } else if (var28 == 99) {
+            ++var22;
+         } else if (var28 == 98) {
+            ++var23;
+         } else if (var28 == 101) {
+            ++var24;
+         } else if (var28 == 100) {
+            ++var25;
+         } else if (var28 != 64 && var28 != 65 && var28 != 120 && var28 != 121 && var28 != 123) {
+            ++var27;
          } else {
-            if(var28 == 1) {
-               ++var16;
-            } else if(var28 == 33) {
-               ++var17;
-            } else if(var28 == 7) {
-               ++var18;
-            } else if(var28 == 39) {
-               ++var19;
-            } else if(var28 == 10) {
-               ++var20;
-            } else if(var28 == 42) {
-               ++var21;
-            } else if(var28 == 99) {
-               ++var22;
-            } else if(var28 == 98) {
-               ++var23;
-            } else if(var28 == 101) {
-               ++var24;
-            } else if(var28 == 100) {
-               ++var25;
-            } else if(var28 != 64 && var28 != 65 && var28 != 120 && var28 != 121 && var28 != 123) {
-               ++var27;
-            } else {
-               ++var26;
-            }
+            ++var26;
          }
       }
 
@@ -336,32 +334,30 @@ final class Class3_Sub27 extends Class3 {
                   byte var66;
                   if(var28 == 0 || var28 == 32) {
                      var66 = var1.buffer[var44++];
+                  } else if (var28 == 1) {
+                     var66 = var1.buffer[var34++];
+                  } else if (var28 == 33) {
+                     var66 = var1.buffer[var41++];
+                  } else if (var28 == 7) {
+                     var66 = var1.buffer[var35++];
+                  } else if (var28 == 39) {
+                     var66 = var1.buffer[var42++];
+                  } else if (var28 == 10) {
+                     var66 = var1.buffer[var36++];
+                  } else if (var28 == 42) {
+                     var66 = var1.buffer[var43++];
+                  } else if (var28 == 99) {
+                     var66 = var1.buffer[var46++];
+                  } else if (var28 == 98) {
+                     var66 = var1.buffer[var47++];
+                  } else if (var28 == 101) {
+                     var66 = var1.buffer[var48++];
+                  } else if (var28 == 100) {
+                     var66 = var1.buffer[var49++];
+                  } else if (var28 != 64 && var28 != 65 && var28 != 120 && var28 != 121 && var28 != 123) {
+                     var66 = var1.buffer[var39++];
                   } else {
-                     if(var28 == 1) {
-                        var66 = var1.buffer[var34++];
-                     } else if(var28 == 33) {
-                        var66 = var1.buffer[var41++];
-                     } else if(var28 == 7) {
-                        var66 = var1.buffer[var35++];
-                     } else if(var28 == 39) {
-                        var66 = var1.buffer[var42++];
-                     } else if(var28 == 10) {
-                        var66 = var1.buffer[var36++];
-                     } else if(var28 == 42) {
-                        var66 = var1.buffer[var43++];
-                     } else if(var28 == 99) {
-                        var66 = var1.buffer[var46++];
-                     } else if(var28 == 98) {
-                        var66 = var1.buffer[var47++];
-                     } else if(var28 == 101) {
-                        var66 = var1.buffer[var48++];
-                     } else if(var28 == 100) {
-                        var66 = var1.buffer[var49++];
-                     } else if(var28 != 64 && var28 != 65 && var28 != 120 && var28 != 121 && var28 != 123) {
-                        var66 = var1.buffer[var39++];
-                     } else {
-                        var66 = var1.buffer[var30++];
-                     }
+                     var66 = var1.buffer[var30++];
                   }
 
                    int var67 = var66 + var59[var28];

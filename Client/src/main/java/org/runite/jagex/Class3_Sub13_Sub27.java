@@ -40,71 +40,59 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
                for(var8 = 0; var8 < Class113.anInt1559; ++var8) {
                   var3[var8] = -var7[var8] + var6[var8];
                }
+            } else if (var8 == 3) {
+               for (var8 = 0; Class113.anInt1559 > var8; ++var8) {
+                  var3[var8] = var7[var8] * var6[var8] >> 12;
+               }
             } else {
-               if(var8 == 3) {
-                  for(var8 = 0; Class113.anInt1559 > var8; ++var8) {
-                     var3[var8] = var7[var8] * var6[var8] >> 12;
+               int var5;
+               if (var8 == 4) {
+                  for (var8 = 0; Class113.anInt1559 > var8; ++var8) {
+                     var5 = var7[var8];
+                     var3[var8] = var5 != 0 ? (var6[var8] << 12) / var5 : 4096;
                   }
-               } else {
-                  int var5;
-                  if(var8 == 4) {
-                     for(var8 = 0; Class113.anInt1559 > var8; ++var8) {
-                        var5 = var7[var8];
-                        var3[var8] = var5 != 0 ?(var6[var8] << 12) / var5:4096;
-                     }
-                  } else {
-                     if(var8 == 5) {
-                        for(var8 = 0; var8 < Class113.anInt1559; ++var8) {
-                           var3[var8] = 4096 - ((-var6[var8] + 4096) * (-var7[var8] + 4096) >> 12);
-                        }
-                     } else if(var8 == 6) {
-                        for(var8 = 0; var8 < Class113.anInt1559; ++var8) {
-                           var5 = var7[var8];
-                           var3[var8] = var5 >= 2048 ?-((-var6[var8] + 4096) * (4096 + -var5) >> 11) + 4096:var5 * var6[var8] >> 11;
-                        }
-                     } else {
-                        if(var8 == 7) {
-                           for(var8 = 0; Class113.anInt1559 > var8; ++var8) {
-                              var4 = var6[var8];
-                              var3[var8] = var4 == 4096?4096:(var7[var8] << 12) / (4096 - var4);
-                           }
-                        } else {
-                           if(var8 == 8) {
-                              for(var8 = 0; var8 < Class113.anInt1559; ++var8) {
-                                 var4 = var6[var8];
-                                 var3[var8] = var4 != 0 ?4096 - (-var7[var8] + 4096 << 12) / var4:0;
-                              }
-                           } else {
-                              if(var8 == 9) {
-                                 for(var8 = 0; Class113.anInt1559 > var8; ++var8) {
-                                    var5 = var7[var8];
-                                    var4 = var6[var8];
-                                    var3[var8] = var5 > var4 ?var4:var5;
-                                 }
-                              } else if(10 == var8) {
-                                 for(var8 = 0; var8 < Class113.anInt1559; ++var8) {
-                                    var5 = var7[var8];
-                                    var4 = var6[var8];
-                                    var3[var8] = var5 < var4 ?var4:var5;
-                                 }
-                              } else if(var8 == 11) {
-                                 for(var8 = 0; var8 < Class113.anInt1559; ++var8) {
-                                    var4 = var6[var8];
-                                    var5 = var7[var8];
-                                    var3[var8] = var4 > var5 ?var4 + -var5:var5 - var4;
-                                 }
-                              } else {
-                                 if(var8 == 12) {
-                                    for(var8 = 0; Class113.anInt1559 > var8; ++var8) {
-                                       var4 = var6[var8];
-                                       var5 = var7[var8];
-                                       var3[var8] = var5 + (var4 - (var4 * var5 >> 11));
-                                    }
-                                 }
-                              }
-                           }
-                        }
-                     }
+               } else if (var8 == 5) {
+                  for (var8 = 0; var8 < Class113.anInt1559; ++var8) {
+                     var3[var8] = 4096 - ((-var6[var8] + 4096) * (-var7[var8] + 4096) >> 12);
+                  }
+               } else if (var8 == 6) {
+                  for (var8 = 0; var8 < Class113.anInt1559; ++var8) {
+                     var5 = var7[var8];
+                     var3[var8] = var5 >= 2048 ? -((-var6[var8] + 4096) * (4096 + -var5) >> 11) + 4096 : var5 * var6[var8] >> 11;
+                  }
+               } else if (var8 == 7) {
+                  for (var8 = 0; Class113.anInt1559 > var8; ++var8) {
+                     var4 = var6[var8];
+                     var3[var8] = var4 == 4096 ? 4096 : (var7[var8] << 12) / (4096 - var4);
+                  }
+               } else if (var8 == 8) {
+                  for (var8 = 0; var8 < Class113.anInt1559; ++var8) {
+                     var4 = var6[var8];
+                     var3[var8] = var4 != 0 ? 4096 - (-var7[var8] + 4096 << 12) / var4 : 0;
+                  }
+               } else if (var8 == 9) {
+                  for (var8 = 0; Class113.anInt1559 > var8; ++var8) {
+                     var5 = var7[var8];
+                     var4 = var6[var8];
+                     var3[var8] = var5 > var4 ? var4 : var5;
+                  }
+               } else if (10 == var8) {
+                  for (var8 = 0; var8 < Class113.anInt1559; ++var8) {
+                     var5 = var7[var8];
+                     var4 = var6[var8];
+                     var3[var8] = var5 < var4 ? var4 : var5;
+                  }
+               } else if (var8 == 11) {
+                  for (var8 = 0; var8 < Class113.anInt1559; ++var8) {
+                     var4 = var6[var8];
+                     var5 = var7[var8];
+                     var3[var8] = var4 > var5 ? var4 + -var5 : var5 - var4;
+                  }
+               } else if (var8 == 12) {
+                  for (var8 = 0; Class113.anInt1559 > var8; ++var8) {
+                     var4 = var6[var8];
+                     var5 = var7[var8];
+                     var3[var8] = var5 + (var4 - (var4 * var5 >> 11));
                   }
                }
             }
@@ -230,45 +218,41 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
                         var13[var21] = var5 >= var8?var8:var5;
                         var14[var21] = var6 < var9?var6:var9;
                      }
-                  } else {
-                     if(10 == var21) {
-                        for(var21 = 0; var21 < Class113.anInt1559; ++var21) {
-                           var9 = var20[var21];
-                           var6 = var17[var21];
-                           var8 = var19[var21];
-                           var4 = var15[var21];
-                           var5 = var16[var21];
-                           var7 = var18[var21];
-                           var12[var21] = var7 < var4?var4:var7;
-                           var13[var21] = var5 > var8?var5:var8;
-                           var14[var21] = var6 > var9 ?var6:var9;
-                        }
-                     } else {
-                        if(var21 == 11) {
-                           for(var21 = 0; Class113.anInt1559 > var21; ++var21) {
-                              var8 = var19[var21];
-                              var7 = var18[var21];
-                              var5 = var16[var21];
-                              var4 = var15[var21];
-                              var6 = var17[var21];
-                              var9 = var20[var21];
-                              var12[var21] = var7 < var4 ?var4 + -var7:-var4 + var7;
-                              var13[var21] = var5 > var8?-var8 + var5:-var5 + var8;
-                              var14[var21] = var9 < var6?var6 + -var9:-var6 + var9;
-                           }
-                        } else if(var21 == 12) {
-                           for(var21 = 0; Class113.anInt1559 > var21; ++var21) {
-                              var4 = var15[var21];
-                              var9 = var20[var21];
-                              var7 = var18[var21];
-                              var8 = var19[var21];
-                              var6 = var17[var21];
-                              var5 = var16[var21];
-                              var12[var21] = -(var7 * var4 >> 11) + var7 + var4;
-                              var13[var21] = var8 + var5 + -(var5 * var8 >> 11);
-                              var14[var21] = var9 + (var6 - (var6 * var9 >> 11));
-                           }
-                        }
+                  } else if (10 == var21) {
+                     for (var21 = 0; var21 < Class113.anInt1559; ++var21) {
+                        var9 = var20[var21];
+                        var6 = var17[var21];
+                        var8 = var19[var21];
+                        var4 = var15[var21];
+                        var5 = var16[var21];
+                        var7 = var18[var21];
+                        var12[var21] = var7 < var4 ? var4 : var7;
+                        var13[var21] = var5 > var8 ? var5 : var8;
+                        var14[var21] = var6 > var9 ? var6 : var9;
+                     }
+                  } else if (var21 == 11) {
+                     for (var21 = 0; Class113.anInt1559 > var21; ++var21) {
+                        var8 = var19[var21];
+                        var7 = var18[var21];
+                        var5 = var16[var21];
+                        var4 = var15[var21];
+                        var6 = var17[var21];
+                        var9 = var20[var21];
+                        var12[var21] = var7 < var4 ? var4 + -var7 : -var4 + var7;
+                        var13[var21] = var5 > var8 ? -var8 + var5 : -var5 + var8;
+                        var14[var21] = var9 < var6 ? var6 + -var9 : -var6 + var9;
+                     }
+                  } else if (var21 == 12) {
+                     for (var21 = 0; Class113.anInt1559 > var21; ++var21) {
+                        var4 = var15[var21];
+                        var9 = var20[var21];
+                        var7 = var18[var21];
+                        var8 = var19[var21];
+                        var6 = var17[var21];
+                        var5 = var16[var21];
+                        var12[var21] = -(var7 * var4 >> 11) + var7 + var4;
+                        var13[var21] = var8 + var5 + -(var5 * var8 >> 11);
+                        var14[var21] = var9 + (var6 - (var6 * var9 >> 11));
                      }
                   }
                }

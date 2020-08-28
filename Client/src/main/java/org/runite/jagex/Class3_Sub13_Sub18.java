@@ -142,10 +142,8 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
       try {
          if(var1 == 0) {
             this.anInt3217 = var2.getShort(1) << 4;
-         } else {
-            if(var1 == 1) {
-               this.aBoolean2375 = var2.getByte((byte) -107) == 1;
-            }
+         } else if (var1 == 1) {
+            this.aBoolean2375 = var2.getByte((byte) -107) == 1;
          }
 
          if(!var3) {
@@ -265,10 +263,7 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
                      }
 
                      if(!HDToolKit.highDetail && !var8) {
-                        Class51.aBoolean849 = false;
-                        if(var26 < 0 || var28 < 0 || var24 < 0 || var26 > Class51.anInt847 || var28 > Class51.anInt847 || var24 > Class51.anInt847) {
-                           Class51.aBoolean849 = true;
-                        }
+                        Class51.aBoolean849 = var26 < 0 || var28 < 0 || var24 < 0 || var26 > Class51.anInt847 || var28 > Class51.anInt847 || var24 > Class51.anInt847;
 
                         if(var0.anInt1670 == -1) {
                            if(var0.anInt1664 != 12345678) {
@@ -294,10 +289,7 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
                      }
 
                      if(!HDToolKit.highDetail && !var8) {
-                        Class51.aBoolean849 = false;
-                        if(var22 < 0 || var24 < 0 || var28 < 0 || var22 > Class51.anInt847 || var24 > Class51.anInt847 || var28 > Class51.anInt847) {
-                           Class51.aBoolean849 = true;
-                        }
+                        Class51.aBoolean849 = var22 < 0 || var24 < 0 || var28 < 0 || var22 > Class51.anInt847 || var24 > Class51.anInt847 || var28 > Class51.anInt847;
 
                         if(var0.anInt1670 == -1) {
                            if(var0.anInt1675 != 12345678) {

@@ -109,10 +109,8 @@ final class Class3_Sub13_Sub35 extends Class3_Sub13 {
             }
 
             Class3_Sub13_Sub11.aClass47_3137.method1097(var2, (long)fileId, (byte)40);
-            return var2;
-         } else {
-            return var2;
          }
+         return var2;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "tb.B(" + fileId + ',' + (byte) -54 + ')');
       }

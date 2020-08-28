@@ -32,11 +32,7 @@ final class Class3_Sub28_Sub6 extends Node {
             Class163_Sub2_Sub1.anInt4020 += var1;
             if(Class163_Sub2_Sub1.anInt4020 >= 65535) {
                Class163_Sub2_Sub1.anInt4020 = '\uffff';
-               if(Class3_Sub28_Sub14.aBoolean3668) {
-                  Class3_Sub28_Sub1.aBoolean3531 = false;
-               } else {
-                  Class3_Sub28_Sub1.aBoolean3531 = true;
-               }
+               Class3_Sub28_Sub1.aBoolean3531 = !Class3_Sub28_Sub14.aBoolean3668;
 
                Class3_Sub28_Sub14.aBoolean3668 = true;
             } else {
@@ -154,10 +150,8 @@ final class Class3_Sub28_Sub6 extends Node {
             }
 
             Class3_Sub13_Sub34.aClass93_3412.put((byte)-86, var2, (long)var0);
-            return var2;
-         } else {
-            return var2;
          }
+         return var2;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "da.R(" + var0 + ',' + 0 + ')');
       }

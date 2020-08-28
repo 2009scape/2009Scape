@@ -19,18 +19,12 @@ final class Class3_Sub13_Sub14 extends Class3_Sub13 {
       try {
          if(var1 == 0) {
             this.anInt3164 = var2.getShort(1);
-         } else {
-            if(var1 == 1) {
-               this.anInt3163 = var2.getShort(1);
-            } else {
-               if(var1 == 2) {
-                  this.anInt3160 = var2.getShort(1);
-               } else {
-                  if(var1 == 3) {
-                     this.anInt3165 = var2.getShort(1);
-                  }
-               }
-            }
+         } else if (var1 == 1) {
+            this.anInt3163 = var2.getShort(1);
+         } else if (var1 == 2) {
+            this.anInt3160 = var2.getShort(1);
+         } else if (var1 == 3) {
+            this.anInt3165 = var2.getShort(1);
          }
 
       } catch (RuntimeException var5) {
@@ -104,17 +98,15 @@ final class Class3_Sub13_Sub14 extends Class3_Sub13 {
             for(int var5 = 0; var5 < Class113.anInt1559; ++var5) {
                int var7 = this.anInt3165 + (Class163_Sub3.anIntArray2999[var1] << 12) / this.anInt3164;
                int var6 = this.anInt3160 + (Class102.anIntArray2125[var5] << 12) / this.anInt3164;
-               int var8 = var6;
                int var10 = var6;
-               int var9 = var7;
                int var11 = var7;
                int var14 = 0;
                int var12 = var6 * var6 >> 12;
 
                for(int var13 = var7 * var7 >> 12; var12 - -var13 < 16384 && var14 < this.anInt3163; var12 = var10 * var10 >> 12) {
-                  var11 = (var10 * var11 >> 12) * 2 + var9;
+                  var11 = (var10 * var11 >> 12) * 2 + var7;
                   ++var14;
-                  var10 = var12 + -var13 + var8;
+                  var10 = var12 + -var13 + var6;
                   var13 = var11 * var11 >> 12;
                }
 

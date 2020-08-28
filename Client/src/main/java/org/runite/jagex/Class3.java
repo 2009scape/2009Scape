@@ -13,7 +13,7 @@ class Class3 {
 
    final boolean method82() {
       try {
-         return 0 != 0?false:null != this.aClass3_76;
+         return 0 == 0 && null != this.aClass3_76;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "ab.I(" + 0 + ')');
       }

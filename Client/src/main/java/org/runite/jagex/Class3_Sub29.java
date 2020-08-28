@@ -177,10 +177,8 @@ final class Class3_Sub29 extends Class3 {
             }
 
             Class3_Sub28_Sub19.aClass47_3776.method1097(var2, (long)var1, (byte)-117);
-            return var2;
-         } else {
-            return var2;
          }
+         return var2;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "sj.Q(" + var0 + ',' + var1 + ')');
       }

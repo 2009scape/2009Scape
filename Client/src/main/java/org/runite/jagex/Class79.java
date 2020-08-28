@@ -92,32 +92,26 @@ final class Class79 {
                   var3 = 33;
                } else if(var2 == 10) {
                   var3 = 32;
+               } else if (var2 == 9) {
+                  var3 = 31;
+               } else if (var2 == 8) {
+                  var3 = 30;
+               } else if (var2 == 7) {
+                  var3 = 29;
+               } else if (var2 == 6) {
+                  var3 = 28;
+               } else if (var2 == 5) {
+                  var3 = 28;
+               } else if (var2 == 4) {
+                  var3 = 24;
+               } else if (var2 == 3) {
+                  var3 = 23;
+               } else if (var2 == 2) {
+                  var3 = 22;
+               } else if (1 == var2) {
+                  var3 = 23;
                } else {
-                  if(var2 == 9) {
-                     var3 = 31;
-                  } else if(var2 == 8) {
-                     var3 = 30;
-                  } else if(var2 == 7) {
-                     var3 = 29;
-                  } else if(var2 == 6) {
-                     var3 = 28;
-                  } else {
-                     if(var2 == 5) {
-                        var3 = 28;
-                     } else if(var2 == 4) {
-                        var3 = 24;
-                     } else {
-                        if(var2 == 3) {
-                           var3 = 23;
-                        } else if(var2 == 2) {
-                           var3 = 22;
-                        } else if(1 == var2) {
-                           var3 = 23;
-                        } else {
-                           var3 = 19;
-                        }
-                     }
-                  }
+                  var3 = 19;
                }
 
                if(var3 <= var0.buffer.length - var0.index) {

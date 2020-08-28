@@ -205,7 +205,7 @@ final class NPC extends Class140_Sub4 {
 				method1984(-48, 88, 31);
 			}
 
-			return HDToolKit.highDetail?true:Class3_Sub28_Sub13.aBoolean3665;
+			return HDToolKit.highDetail || Class3_Sub28_Sub13.aBoolean3665;
 		} catch (RuntimeException var2) {
 			throw Class44.clientError(var2, "km.O(" + var0 + ')');
 		}

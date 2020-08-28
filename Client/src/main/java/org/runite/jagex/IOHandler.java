@@ -382,21 +382,19 @@ final class IOHandler implements Runnable {
                             Class3_Sub13_Sub6.method199(var8, var7, 0);
                         }
 
-                    } else {
-                        if(0 != Class14.anInt340) {
-                            Class3_Sub25.anIntArray2550[Class113.anInt1552] = var7;
-                            Class166.anIntArray2068[Class113.anInt1552] = var8;
-                            int var11 = (-64 + var0) / 128;
-                            var10 = (var3 + -64) / 128;
-                            RSString.anIntArray2157[Class113.anInt1552] = 0;
-                            Class102.aClass135Array2131[Class113.anInt1552] = null;
-                            Class3_Sub13_Sub6.anIntArray3083[Class113.anInt1552] = var9 + (var10 << 16) + (var11 << 8);
-                            if(var2 != 183921384) {
-                                aClass33_1238 = (Class33)null;
-                            }
-
-                            ++Class113.anInt1552;
+                    } else if (0 != Class14.anInt340) {
+                        Class3_Sub25.anIntArray2550[Class113.anInt1552] = var7;
+                        Class166.anIntArray2068[Class113.anInt1552] = var8;
+                        int var11 = (-64 + var0) / 128;
+                        var10 = (var3 + -64) / 128;
+                        RSString.anIntArray2157[Class113.anInt1552] = 0;
+                        Class102.aClass135Array2131[Class113.anInt1552] = null;
+                        Class3_Sub13_Sub6.anIntArray3083[Class113.anInt1552] = var9 + (var10 << 16) + (var11 << 8);
+                        if (var2 != 183921384) {
+                            aClass33_1238 = (Class33) null;
                         }
+
+                        ++Class113.anInt1552;
                     }
                 }
             }

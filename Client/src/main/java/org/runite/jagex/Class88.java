@@ -96,7 +96,6 @@ final class Class88 {
          var0.glTexParameteri('\u806f', 10241, 9729);
          var0.glTexParameteri('\u806f', 10240, 9729);
          anInt1228 = var1[0];
-         Class31.anInt580 += aByteBuffer1226.limit() * 2;
       } else {
          anIntArray1224 = new int[64];
          var0.glGenTextures(64, anIntArray1224, 0);
@@ -109,8 +108,8 @@ final class Class88 {
             var0.glTexParameteri(3553, 10240, 9729);
          }
 
-         Class31.anInt580 += aByteBuffer1226.limit() * 2;
       }
+      Class31.anInt580 += aByteBuffer1226.limit() * 2;
 
    }
 
@@ -125,7 +124,6 @@ final class Class88 {
          var0.glTexParameteri('\u806f', 10241, 9729);
          var0.glTexParameteri('\u806f', 10240, 9729);
          anInt1229 = var1[0];
-         Class31.anInt580 += aByteBuffer1225.limit() * 2;
       } else {
          anIntArray1223 = new int[64];
          var0.glGenTextures(64, anIntArray1223, 0);
@@ -138,8 +136,8 @@ final class Class88 {
             var0.glTexParameteri(3553, 10240, 9729);
          }
 
-         Class31.anInt580 += aByteBuffer1225.limit() * 2;
       }
+      Class31.anInt580 += aByteBuffer1225.limit() * 2;
 
    }
 

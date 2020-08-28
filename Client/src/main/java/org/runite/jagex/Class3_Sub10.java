@@ -33,7 +33,7 @@ final class Class3_Sub10 extends Class3 {
    static final boolean method140(int var0) {
       try {
          int var2 = -11 / ((-29 - 20) / 49);
-         return var0 >= 0 && Class3_Sub24_Sub4.aBooleanArray3503.length > var0?Class3_Sub24_Sub4.aBooleanArray3503[var0]:false;
+         return (var0 >= 0 && Class3_Sub24_Sub4.aBooleanArray3503.length > var0) && Class3_Sub24_Sub4.aBooleanArray3503[var0];
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "hb.A(" + var0 + ',' + 20 + ')');
       }
@@ -55,10 +55,8 @@ final class Class3_Sub10 extends Class3 {
 
             def.method899();
             Class154.aClass93_1955.put((byte)-96, def, (long)renderAnimationId);
-            return def;
-         } else {
-            return def;
          }
+         return def;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "hb.E(" + false + ',' + renderAnimationId + ')');
       }

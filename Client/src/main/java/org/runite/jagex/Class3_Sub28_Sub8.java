@@ -69,12 +69,10 @@ final class Class3_Sub28_Sub8 extends Node {
                   var10 = var4.getShort((byte) -91 ^ -92);
                   if(var10 == 3) {
                      var2.aClass94Array3688[var9] = var4.getString();
+                  } else if (var10 < 100 && 21 != var10 && var10 != 38 && 39 != var10) {
+                     var2.anIntArray3690[var9] = var4.getInt();
                   } else {
-                     if(var10 < 100 && 21 != var10 && var10 != 38 && 39 != var10) {
-                        var2.anIntArray3690[var9] = var4.getInt();
-                     } else {
-                        var2.anIntArray3690[var9] = var4.getByte((byte)-67);
-                     }
+                     var2.anIntArray3690[var9] = var4.getByte((byte) -67);
                   }
                }
 
@@ -138,18 +136,16 @@ final class Class3_Sub28_Sub8 extends Node {
       try {
          if(Class119.aClass131_1624 == null || var0.length(-65) == 0) {
             return -1;
+         } else if (false) {
+            return -117;
          } else {
-            if(false) {
-               return -117;
-            } else {
-               for(int var2 = 0; var2 < Class119.aClass131_1624.anInt1720; ++var2) {
-                  if(Class119.aClass131_1624.aClass94Array1721[var2].method1560(Class3_Sub13_Sub16.aClass94_3192, !false, Class3_Sub28_Sub10_Sub2.aClass94_4066).method1528(var0)) {
-                     return var2;
-                  }
+            for (int var2 = 0; var2 < Class119.aClass131_1624.anInt1720; ++var2) {
+               if (Class119.aClass131_1624.aClass94Array1721[var2].method1560(Class3_Sub13_Sub16.aClass94_3192, !false, Class3_Sub28_Sub10_Sub2.aClass94_4066).method1528(var0)) {
+                  return var2;
                }
-
-               return -1;
             }
+
+            return -1;
          }
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "hc.F(" + (var0 != null?"{...}":"null") + ',' + false + ')');

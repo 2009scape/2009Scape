@@ -186,8 +186,7 @@ final class Class41 {
                      ++var9;
                   }
 
-                  byte[] var20 = var7;
-                  return var20;
+                  return var7;
                }
 
                var10000 = null;

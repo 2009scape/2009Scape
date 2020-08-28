@@ -77,13 +77,11 @@ final class Class99 {
             Frame var11 = (Frame)var10.anObject974;
             if(null == var11) {
                return null;
+            } else if (2 == var10.anInt978) {
+               Class3_Sub28_Sub10_Sub1.method593(var11, var5);
+               return null;
             } else {
-               if(2 == var10.anInt978) {
-                  Class3_Sub28_Sub10_Sub1.method593(var11, var5);
-                  return null;
-               } else {
-                  return var11;
-               }
+               return var11;
             }
          } else {
             return null;

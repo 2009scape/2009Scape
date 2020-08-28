@@ -187,10 +187,8 @@ abstract class Class144 {
                }
 
                Class49.aClass47_818.method1097(var2, (long)var0, (byte)58);
-               return var2;
-            } else {
-               return var2;
             }
+            return var2;
          }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "u.C(" + var0 + ',' + var1 + ')');

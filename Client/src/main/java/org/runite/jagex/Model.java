@@ -285,32 +285,30 @@ abstract class Model extends GameObject {
       if(var2 != -1) {
          if(debugArray530 == null || var8 == -1) {
             this.method1880(var1, var2, var3, var4, var5, var6, var14);
-         } else {
-            if(this.method1873()) {
-               AnimationHeader var15 = var1.animations[var2];
-               Class3_Sub17 var16 = var15.skins;
-               AnimationHeader var17 = null;
-               if(var3 != null) {
-                  var17 = var3.animations[var4];
-                  if(var17.skins != var16) {
-                     var17 = null;
-                  }
+         } else if (this.method1873()) {
+            AnimationHeader var15 = var1.animations[var2];
+            Class3_Sub17 var16 = var15.skins;
+            AnimationHeader var17 = null;
+            if (var3 != null) {
+               var17 = var3.animations[var4];
+               if (var17.skins != var16) {
+                  var17 = null;
                }
-
-               AnimationHeader var18 = var7.animations[var8];
-               AnimationHeader var19 = null;
-               if(var9 != null) {
-                  var19 = var9.animations[var10];
-                  if(var19.skins != var16) {
-                     var19 = null;
-                  }
-               }
-
-               this.method1875(var16, var15, var17, var5, var6, debugArray530, false, var14, '\uffff', (int[])null);
-               this.method1891(0, new int[0], 0, 0, 0, var14);
-               this.method1875(var16, var18, var19, var11, var12, debugArray530, true, var14, '\uffff', (int[])null);
-               this.method1879();
             }
+
+            AnimationHeader var18 = var7.animations[var8];
+            AnimationHeader var19 = null;
+            if (var9 != null) {
+               var19 = var9.animations[var10];
+               if (var19.skins != var16) {
+                  var19 = null;
+               }
+            }
+
+            this.method1875(var16, var15, var17, var5, var6, debugArray530, false, var14, '\uffff', (int[]) null);
+            this.method1891(0, new int[0], 0, 0, 0, var14);
+            this.method1875(var16, var18, var19, var11, var12, debugArray530, true, var14, '\uffff', (int[]) null);
+            this.method1879();
          }
       }
    }

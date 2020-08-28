@@ -118,17 +118,15 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
 
    static final boolean method467(RSString var0) {
       try {
-         if(var0 == null) {
-            return false;
-         } else {
-            for(int var2 = 0; var2 < Class3_Sub28_Sub5.anInt3591; ++var2) {
-               if(var0.equals(63, Class3_Sub13_Sub27.aClass94Array3341[var2])) {
-                  return true;
-               }
-            }
+          if (var0 != null) {
+              for (int var2 = 0; var2 < Class3_Sub28_Sub5.anInt3591; ++var2) {
+                  if (var0.equals(63, Class3_Sub13_Sub27.aClass94Array3341[var2])) {
+                      return true;
+                  }
+              }
 
-            return false;
-         }
+          }
+          return false;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "te.A(" + (var0 != null?"{...}":"null") + ',' + 0 + ')');
       }

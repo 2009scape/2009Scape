@@ -212,23 +212,21 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 				if(var4 == 60) {
 					if(var5 == 0) {
 						Class3_Sub28_Sub10.method589(WorldListCountry.localPlane, var2, var3);
-					} else {
-						if(var5 == 1) {
-							if(0 < Class3_Sub13_Sub26.rights && ObjectDefinition.aBooleanArray1490[82] && ObjectDefinition.aBooleanArray1490[81]) {
-								Class30.method979(Class131.anInt1716 + var2, Class82.anInt1152 + var3, WorldListCountry.localPlane, (byte)-4);
-							} else if(Class3_Sub28_Sub9.method582(Class102.player.anIntArray2755[0], 0, 0, true, 0, 2, var2, 0, 0, 1, var3, Class102.player.anIntArray2767[0])) {
-								Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-32, Class1.anInt56);
-								Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-108, Class58.anInt916);
-								Class3_Sub13_Sub1.outgoingBuffer.putShort(GraphicDefinition.CAMERA_DIRECTION);
-								Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-12, 57);
-								Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-118, Class3_Sub13_Sub8.anInt3102);
-								Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-116, Class164_Sub2.anInt3020);
-								Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-57, 89);
-								Class3_Sub13_Sub1.outgoingBuffer.putShort(Class102.player.anInt2819);
-								Class3_Sub13_Sub1.outgoingBuffer.putShort(Class102.player.anInt2829);
-								Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-103, Class129.anInt1692);
-								Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-59, 63);
-							}
+					} else if (var5 == 1) {
+						if (0 < Class3_Sub13_Sub26.rights && ObjectDefinition.aBooleanArray1490[82] && ObjectDefinition.aBooleanArray1490[81]) {
+							Class30.method979(Class131.anInt1716 + var2, Class82.anInt1152 + var3, WorldListCountry.localPlane, (byte) -4);
+						} else if (Class3_Sub28_Sub9.method582(Class102.player.anIntArray2755[0], 0, 0, true, 0, 2, var2, 0, 0, 1, var3, Class102.player.anIntArray2767[0])) {
+							Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -32, Class1.anInt56);
+							Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -108, Class58.anInt916);
+							Class3_Sub13_Sub1.outgoingBuffer.putShort(GraphicDefinition.CAMERA_DIRECTION);
+							Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -12, 57);
+							Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -118, Class3_Sub13_Sub8.anInt3102);
+							Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -116, Class164_Sub2.anInt3020);
+							Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -57, 89);
+							Class3_Sub13_Sub1.outgoingBuffer.putShort(Class102.player.anInt2819);
+							Class3_Sub13_Sub1.outgoingBuffer.putShort(Class102.player.anInt2829);
+							Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -103, Class129.anInt1692);
+							Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -59, 63);
 						}
 					}
 				}
@@ -263,9 +261,8 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 							Class3_Sub13_Sub1.outgoingBuffer.putIntB(-68, var3);
 							Class3_Sub9.anInt2330 = 0;
 							Class151.aClass11_1933 = Class7.getRSInterface((byte)117, var3);
-							KeyboardListener.anInt1918 = var2;
-						
-						
+
+
 					} else {
 					Class3_Sub13_Sub1.outgoingBuffer.putOpcode(156);
 					Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(var2);
@@ -273,8 +270,8 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 					Class3_Sub13_Sub1.outgoingBuffer.putLEInt(var3, (byte)-120);
 					Class3_Sub9.anInt2330 = 0;
 					Class151.aClass11_1933 = Class7.getRSInterface((byte)109, var3);
-					KeyboardListener.anInt1918 = var2;
 					}
+					KeyboardListener.anInt1918 = var2;
 				}
 
 				if(var4 == 3) {
@@ -368,8 +365,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 							Class3_Sub13_Sub1.outgoingBuffer.putIntB(-68, var3);
 							Class3_Sub9.anInt2330 = 0;
 							Class151.aClass11_1933 = Class7.getRSInterface((byte)117, var3);
-							KeyboardListener.anInt1918 = var2;
-						
+
 					} else {
 					Class3_Sub13_Sub1.outgoingBuffer.putOpcode(55);
 					Class3_Sub13_Sub1.outgoingBuffer.putLEShort(-1, var5);
@@ -378,9 +374,9 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 					Class3_Sub13_Sub1.outgoingBuffer.putIntA(var3);
 					Class3_Sub9.anInt2330 = 0;
 					Class151.aClass11_1933 = Class7.getRSInterface((byte)116, var3);
-					KeyboardListener.anInt1918 = var2;
-				
+
 					}
+					KeyboardListener.anInt1918 = var2;
 				}
 
 				if(var4 == 21) {
@@ -604,15 +600,13 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 						if(var5 == 0) {
 							CS2Script.anInt2440 = 1;
 							Class3_Sub28_Sub10.method589(WorldListCountry.localPlane, var2, var3);
-						} else {
-							if(1 == var5) {
-								Class3_Sub13_Sub1.outgoingBuffer.putOpcode(131);
-								++Class66.anInt994;
-								Class3_Sub13_Sub1.outgoingBuffer.putIntB(-57, Class54.anInt872);
-								Class3_Sub13_Sub1.outgoingBuffer.putShortA(Class131.anInt1716 + var2, 2597 + -268438053);
-								Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(RSInterface.anInt278);
-								Class3_Sub13_Sub1.outgoingBuffer.putShortA(var3 + Class82.anInt1152, -268435456);
-							}
+						} else if (1 == var5) {
+							Class3_Sub13_Sub1.outgoingBuffer.putOpcode(131);
+							++Class66.anInt994;
+							Class3_Sub13_Sub1.outgoingBuffer.putIntB(-57, Class54.anInt872);
+							Class3_Sub13_Sub1.outgoingBuffer.putShortA(Class131.anInt1716 + var2, 2597 + -268438053);
+							Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(RSInterface.anInt278);
+							Class3_Sub13_Sub1.outgoingBuffer.putShortA(var3 + Class82.anInt1152, -268435456);
 						}
 					}
 
@@ -823,15 +817,13 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 								if(var5 == 0) {
 									ObjectDefinition.anInt1521 = 1;
 									Class3_Sub28_Sub10.method589(WorldListCountry.localPlane, var2, var3);
+								} else if (Class3_Sub13_Sub26.rights > 0 && ObjectDefinition.aBooleanArray1490[82] && ObjectDefinition.aBooleanArray1490[81]) {
+									Class30.method979(var2 + Class131.anInt1716, Class82.anInt1152 - -var3, WorldListCountry.localPlane, (byte) -4);
 								} else {
-									if(Class3_Sub13_Sub26.rights > 0 && ObjectDefinition.aBooleanArray1490[82] && ObjectDefinition.aBooleanArray1490[81]) {
-										Class30.method979(var2 + Class131.anInt1716, Class82.anInt1152 - -var3, WorldListCountry.localPlane, (byte)-4);
-									} else {
-										++Class3_Sub19.anInt2479;
-										Class3_Sub13_Sub1.outgoingBuffer.putOpcode(179);
-										Class3_Sub13_Sub1.outgoingBuffer.putShort(var3 + Class82.anInt1152);
-										Class3_Sub13_Sub1.outgoingBuffer.putShort(var2 + Class131.anInt1716);
-									}
+									++Class3_Sub19.anInt2479;
+									Class3_Sub13_Sub1.outgoingBuffer.putOpcode(179);
+									Class3_Sub13_Sub1.outgoingBuffer.putShort(var3 + Class82.anInt1152);
+									Class3_Sub13_Sub1.outgoingBuffer.putShort(var2 + Class131.anInt1716);
 								}
 							}
 

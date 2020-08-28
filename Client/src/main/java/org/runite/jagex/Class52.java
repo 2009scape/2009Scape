@@ -209,9 +209,7 @@ final class Class52 {
    final Model method1165(Class145[] var1, int var2, AnimationDefinition var3, AnimationDefinition var4, int var5, int var6, int var7, int var8, int var10, int var11) {
       try {
          int var12 = 102 % ((var7 - -39) / 61);
-         if(0 != ~this.pnpcId) {
-            return Node.method522(this.pnpcId, 27112).method1476(var1, var6, (byte)-128, var11, var2, var8, var10, var3, var5, var4);
-         } else {
+         if(0 == ~this.pnpcId) {
             int[] var15 = this.lookInfo;
             long var13 = this.aLong860;
             if(var4 != null && (~var4.anInt1854 <= -1 || ~var4.anInt1849 <= -1)) {
@@ -232,12 +230,12 @@ final class Class52 {
                }
 
                if(~var4.anInt1849 <= -1) {
-                  if(-65536 != ~var4.anInt1849) {
-                     var15[3] = Class3_Sub13_Sub29.bitwiseOr(1073741824, var4.anInt1849);
-                     var13 ^= (long)var15[3];
-                  } else {
+                  if(-65536 == ~var4.anInt1849) {
                      var15[3] = 0;
                      var13 ^= 4294967295L;
+                  } else {
+                     var15[3] = Class3_Sub13_Sub29.bitwiseOr(1073741824, var4.anInt1849);
+                     var13 ^= (long)var15[3];
                   }
                }
             }
@@ -460,10 +458,10 @@ final class Class52 {
                      var28 = var23 >>> 16;
                      var23 &= '\uffff';
                      var24 = var4.duration[var10];
-                     if(~var47 != ~var28) {
-                        var48 = Class3_Sub9.method133(var23 >>> 16, 0);
-                     } else {
+                     if(~var47 == ~var28) {
                         var48 = var46;
+                     } else {
+                        var48 = Class3_Sub9.method133(var23 >>> 16, 0);
                      }
 
                      if(null != var48) {
@@ -494,10 +492,10 @@ final class Class52 {
                      var28 = var3.frames[var6];
                      var33 = var28 >>> 16;
                      var28 &= '\uffff';
-                     if(~var32 != ~var33) {
-                        var50 = Class3_Sub9.method133(var28 >>> 16, 0);
-                     } else {
+                     if(~var32 == ~var33) {
                         var50 = var49;
+                     } else {
+                        var50 = Class3_Sub9.method133(var28 >>> 16, 0);
                      }
 
                      if(null != var50) {
@@ -536,6 +534,8 @@ final class Class52 {
 
                return var51;
             }
+         } else {
+            return Node.method522(this.pnpcId, 27112).method1476(var1, var6, (byte)-128, var11, var2, var8, var10, var3, var5, var4);
          }
       } catch (RuntimeException var36) {
          throw Class44.clientError(var36, "hh.D(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + true + ',' + var10 + ',' + var11 + ')');
@@ -558,9 +558,7 @@ final class Class52 {
          Class84.anIntArrayArray1160[var9][var12] = 99;
          Class97.anIntArrayArray1373[var9][var12] = 0;
          byte var15 = 0;
-         if((byte) 34 != 34) {
-            return true;
-         } else {
+         if((byte) 34 == 34) {
             Class3_Sub13_Sub38.anIntArray3456[var15] = var9;
             int var28 = var15 + 1;
             Class45.anIntArray729[var15] = var12;
@@ -837,15 +835,13 @@ final class Class52 {
             }
 
             if(0 >= var16) {
-               if(var3 == 1) {
-                  return false;
-               } else {
-                  return true;
-               }
+               return var3 != 1;
             } else {
                Class3_Sub13_Sub27.method299(93, var16, var3);
                return true;
             }
+         } else {
+            return true;
          }
       } catch (RuntimeException var27) {
          throw Class44.clientError(var27, "hh.C(" + var0 + ',' + (byte) 34 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ',' + var11 + ',' + var12 + ')');

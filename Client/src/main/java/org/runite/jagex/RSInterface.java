@@ -581,10 +581,8 @@ final class RSInterface {
                      Class114.aClass93_1569.put((byte)-126, var4, (long)var3);
                   }
 
-                  return var4;
-               } else {
-                  return var4;
                }
+               return var4;
             }
          } else {
             return null;
@@ -629,10 +627,8 @@ final class RSInterface {
                   int var6 = var2.getByte((byte)-115);
                   if(0 == var6) {
                      var4[var5] = new Integer(var2.getInt());
-                  } else {
-                     if(var6 == 1) {
-                        var4[var5] = var2.getString();
-                     }
+                  } else if (var6 == 1) {
+                     var4[var5] = var2.getString();
                   }
                }
 
@@ -703,85 +699,79 @@ final class RSInterface {
             return (Model)null;
          } else if(var8 == 0) {
             return null;
+         } else if (var8 == 1 && var9 == -1) {
+            return null;
          } else {
-            if(var8 == 1 && var9 == -1) {
-               return null;
-            } else {
-               Model var10;
-               if(1 == var8) {
-                  var10 = (Model)Class3_Sub15.aClass93_2428.get((long)((var8 << 16) - -var9));
-                  if(var10 == null) {
-                     Model_Sub1 var18 = Model_Sub1.method2015(Class119.aClass153_1628, var9);
-                     if(var18 == null) {
-                        GameShell.aBoolean6 = true;
-                        return null;
-                     }
-
-                     var10 = var18.method2008(64, 768, -50, -10, -50);
-                     Class3_Sub15.aClass93_2428.put((byte)-115, var10, (long)(var9 + (var8 << 16)));
+            Model var10;
+            if (1 == var8) {
+               var10 = (Model) Class3_Sub15.aClass93_2428.get((long) ((var8 << 16) - -var9));
+               if (var10 == null) {
+                  Model_Sub1 var18 = Model_Sub1.method2015(Class119.aClass153_1628, var9);
+                  if (var18 == null) {
+                     GameShell.aBoolean6 = true;
+                     return null;
                   }
 
-                  if(var2 != null) {
-                     var10 = var2.method2055(var10, (byte)119, var1, var5, var3);
-                  }
+                  var10 = var18.method2008(64, 768, -50, -10, -50);
+                  Class3_Sub15.aClass93_2428.put((byte) -115, var10, (long) (var9 + (var8 << 16)));
+               }
 
+               if (var2 != null) {
+                  var10 = var2.method2055(var10, (byte) 119, var1, var5, var3);
+               }
+
+               return var10;
+            } else if (var8 == 2) {
+               var10 = Node.method522(var9, 27112).getChatModel(var2, var5, var1, 27, var3);
+               if (null == var10) {
+                  GameShell.aBoolean6 = true;
+                  return null;
+               } else {
                   return var10;
-               } else if(var8 == 2) {
-                  var10 = Node.method522(var9, 27112).getChatModel(var2, var5, var1, 27, var3);
-                  if(null == var10) {
+               }
+            } else if (3 != var8) {
+               if (4 == var8) {
+                  ItemDefinition var16 = Class38.getItemDefinition(var9, (byte) 94);
+                  Model var17 = var16.method1110(110, var1, var5, var2, 10, var3);
+                  if (var17 == null) {
+                     GameShell.aBoolean6 = true;
+                     return null;
+                  } else {
+                     return var17;
+                  }
+               } else if (var8 == 6) {
+                  var10 = Node.method522(var9, 27112).method1476((Class145[]) null, 0, (byte) -120, 0, var1, var5, var3, (AnimationDefinition) null, 0, var2);
+                  if (null == var10) {
                      GameShell.aBoolean6 = true;
                      return null;
                   } else {
                      return var10;
                   }
+               } else if (var8 != 7) {
+                  return null;
+               } else if (var7 == null) {
+                  return null;
                } else {
-                  if(3 != var8) {
-                     if(4 == var8) {
-                        ItemDefinition var16 = Class38.getItemDefinition(var9, (byte)94);
-                        Model var17 = var16.method1110(110, var1, var5, var2, 10, var3);
-                        if(var17 == null) {
-                           GameShell.aBoolean6 = true;
-                           return null;
-                        } else {
-                           return var17;
-                        }
-                     } else if(var8 == 6) {
-                        var10 = Node.method522(var9, 27112).method1476((Class145[])null, 0, (byte)-120, 0, var1, var5, var3, (AnimationDefinition)null, 0, var2);
-                        if(null == var10) {
-                           GameShell.aBoolean6 = true;
-                           return null;
-                        } else {
-                           return var10;
-                        }
-                     } else {
-                        if(var8 != 7) {
-                           return null;
-                        } else if(var7 == null) {
-                           return null;
-                        } else {
-                           int var15 = this.itemId >>> 16;
-                           int var11 = this.itemId & '\uffff';
-                           int var12 = this.anInt265;
-                           Model var13 = var7.method1157(var1, var12, var15, var5, var2, var3, var11);
-                           if(var13 == null) {
-                              GameShell.aBoolean6 = true;
-                              return null;
-                           } else {
-                              return var13;
-                           }
-                        }
-                     }
-                  } else if(null == var7) {
+                  int var15 = this.itemId >>> 16;
+                  int var11 = this.itemId & '\uffff';
+                  int var12 = this.anInt265;
+                  Model var13 = var7.method1157(var1, var12, var15, var5, var2, var3, var11);
+                  if (var13 == null) {
+                     GameShell.aBoolean6 = true;
                      return null;
                   } else {
-                     var10 = var7.method1167(var5, var2, var3, var1);
-                     if(null == var10) {
-                        GameShell.aBoolean6 = true;
-                        return null;
-                     } else {
-                        return var10;
-                     }
+                     return var13;
                   }
+               }
+            } else if (null == var7) {
+               return null;
+            } else {
+               var10 = var7.method1167(var5, var2, var3, var1);
+               if (null == var10) {
+                  GameShell.aBoolean6 = true;
+                  return null;
+               } else {
+                  return var10;
                }
             }
          }
@@ -1091,10 +1081,8 @@ final class RSInterface {
                   Class47.aClass93_743.put((byte)-77, var3, (long)this.anInt270);
                }
 
-               return var3;
-            } else {
-               return var3;
             }
+            return var3;
          }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "be.A(" + (var1 != null?"{...}":"null") + ',' + 0 + ')');

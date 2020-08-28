@@ -61,44 +61,36 @@ final class GraphicDefinition {
 				this.anInt542 = var1.getShort(1);
 			} else if(var2 == 4) {
 				this.anInt530 = var1.getShort(1);
+			} else if (var2 == 5) {
+				this.anInt540 = var1.getShort(1);
+			} else if (6 == var2) {
+				this.anInt543 = var1.getShort(128 + -127);
+			} else if (var2 == 7) {
+				this.anInt538 = var1.getByte((byte) -47);
+			} else if (var2 == 8) {
+				this.anInt537 = var1.getByte((byte) -55);
+			} else if (var2 == 9) {
+				this.aBoolean536 = true;
 			} else {
-				if(var2 == 5) {
-					this.anInt540 = var1.getShort(1);
-				} else {
-					if(6 == var2) {
-						this.anInt543 = var1.getShort(128 + -127);
-					} else if(var2 == 7) {
-						this.anInt538 = var1.getByte((byte)-47);
-					} else if(var2 == 8) {
-						this.anInt537 = var1.getByte((byte)-55);
-					} else {
-						if(var2 == 9) {
-							this.aBoolean536 = true;
-						} else {
-							int var4;
-							int var5;
-							if(40 == var2) {
-								var4 = var1.getByte((byte)-47);
-								this.aShortArray533 = new short[var4];
-								this.aShortArray545 = new short[var4];
+				int var4;
+				int var5;
+				if (40 == var2) {
+					var4 = var1.getByte((byte) -47);
+					this.aShortArray533 = new short[var4];
+					this.aShortArray545 = new short[var4];
 
-								for(var5 = 0; var4 > var5; ++var5) {
-									this.aShortArray533[var5] = (short)var1.getShort(1);
-									this.aShortArray545[var5] = (short)var1.getShort(128 + -127);
-								}
-							} else {
-								if(41 == var2) {
-									var4 = var1.getByte((byte)-32);
-									this.aShortArray534 = new short[var4];
-									this.aShortArray535 = new short[var4];
+					for (var5 = 0; var4 > var5; ++var5) {
+						this.aShortArray533[var5] = (short) var1.getShort(1);
+						this.aShortArray545[var5] = (short) var1.getShort(128 + -127);
+					}
+				} else if (41 == var2) {
+					var4 = var1.getByte((byte) -32);
+					this.aShortArray534 = new short[var4];
+					this.aShortArray535 = new short[var4];
 
-									for(var5 = 0; var5 < var4; ++var5) {
-										this.aShortArray534[var5] = (short)var1.getShort(1);
-										this.aShortArray535[var5] = (short)var1.getShort(128 + -127);
-									}
-								}
-							}
-						}
+					for (var5 = 0; var5 < var4; ++var5) {
+						this.aShortArray534[var5] = (short) var1.getShort(1);
+						this.aShortArray535[var5] = (short) var1.getShort(128 + -127);
 					}
 				}
 			}

@@ -192,27 +192,25 @@ final class Class24 {
                         if(1 == var8) {
                            Class21.maskUpdateIndexes[Class66.maskUpdateCount++] = var3;
                         }
-                     } else {
-                        if(var6 == 2) {
-                           Class15.localNPCIndexes[Class163.localNPCCount++] = var3;
-                           var4.anInt2838 = Class44.anInt719;
-                           if(GraphicDefinition.incomingBuffer.getBits((byte) -11, 1) == 1) {
-                              var7 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 3);
-                              var4.walkStep(2, (byte)-122, var7);
-                              var8 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 3);
-                              var4.walkStep(2, (byte)85, var8);
-                           } else {
-                              var7 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 3);
-                              var4.walkStep(0, (byte)-80, var7);
-                           }
-
-                           var7 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 1);
-                           if(var7 == 1) {
-                              Class21.maskUpdateIndexes[Class66.maskUpdateCount++] = var3;
-                           }
-                        } else if(var6 == 3) {
-                           Class3_Sub7.anIntArray2292[Class139.anInt1829++] = var3;
+                     } else if (var6 == 2) {
+                        Class15.localNPCIndexes[Class163.localNPCCount++] = var3;
+                        var4.anInt2838 = Class44.anInt719;
+                        if (GraphicDefinition.incomingBuffer.getBits((byte) -11, 1) == 1) {
+                           var7 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 3);
+                           var4.walkStep(2, (byte) -122, var7);
+                           var8 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 3);
+                           var4.walkStep(2, (byte) 85, var8);
+                        } else {
+                           var7 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 3);
+                           var4.walkStep(0, (byte) -80, var7);
                         }
+
+                        var7 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 1);
+                        if (var7 == 1) {
+                           Class21.maskUpdateIndexes[Class66.maskUpdateCount++] = var3;
+                        }
+                     } else if (var6 == 3) {
+                        Class3_Sub7.anIntArray2292[Class139.anInt1829++] = var3;
                      }
                   }
                }
@@ -253,19 +251,17 @@ final class Class24 {
                   this.aShortArray464[var5] = (short)var2.getShort(1);
                   this.aShortArray460[var5] = (short)var2.getShort(1);
                }
-            } else {
-               if(var3 == 41) {
-                  var4 = var2.getByte((byte)-49);
-                  this.aShortArray471 = new short[var4];
-                  this.aShortArray470 = new short[var4];
+            } else if (var3 == 41) {
+               var4 = var2.getByte((byte) -49);
+               this.aShortArray471 = new short[var4];
+               this.aShortArray470 = new short[var4];
 
-                  for(var5 = 0; var5 < var4; ++var5) {
-                     this.aShortArray471[var5] = (short)var2.getShort(1);
-                     this.aShortArray470[var5] = (short)var2.getShort(1);
-                  }
-               } else if(var3 >= 60 && var3 < 70) {
-                  this.anIntArray475[-60 + var3] = var2.getShort(1);
+               for (var5 = 0; var5 < var4; ++var5) {
+                  this.aShortArray471[var5] = (short) var2.getShort(1);
+                  this.aShortArray470[var5] = (short) var2.getShort(1);
                }
+            } else if (var3 >= 60 && var3 < 70) {
+               this.anIntArray475[-60 + var3] = var2.getShort(1);
             }
          }
 

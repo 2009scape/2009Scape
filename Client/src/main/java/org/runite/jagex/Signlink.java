@@ -128,8 +128,7 @@ public class Signlink implements Runnable {
          String var4 = var2[var3];
          if(var4.length() <= 0 || (new File(var4)).exists()) {
             try {
-               Class122 var5 = new Class122(new File(var4, "jagex_" + var1 + "_preferences.dat"), "rw", 10000L);
-               return var5;
+               return new Class122(new File(var4, "jagex_" + var1 + "_preferences.dat"), "rw", 10000L);
             } catch (Exception var6) {
                ;
             }
@@ -310,8 +309,7 @@ public class Signlink implements Runnable {
                         var20.setAccessible(false);
                      } else if (var2 == 12) {
                         var4 = (String) var1.anObject977;
-                        Class122 var19 = method1438(false, var4);
-                        var1.anObject974 = var19;
+                        var1.anObject974 = method1438(false, var4);
                      } else if (var2 == 14) {
                         int var22 = var1.anInt980;
                         int var23 = var1.anInt979;
@@ -498,8 +496,7 @@ public class Signlink implements Runnable {
                   try {
                      File var12 = new File(var10);
                      if (var7 != 0 || var12.exists()) {
-                        String var13 = value;
-                        if (var7 != 1 || var13.length() <= 0 || (new File(var13)).exists()) {
+                        if (var7 != 1 || value.length() <= 0 || (new File(value)).exists()) {
                            (new File(value + s)).mkdir();
                            if (var0 != null) {
                               (new File(value + s + "/" + var0)).mkdir();

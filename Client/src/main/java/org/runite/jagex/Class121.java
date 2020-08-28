@@ -38,17 +38,13 @@ final class Class121 {
             var18 = var15;
             var15 = var17;
             var17 = -var18 + 128;
-         } else {
-            if(var10 == 2) {
-               var17 = -var17 + 128;
-               var15 = -var15 + 128;
-            } else {
-               if(var10 == 3) {
-                  var18 = var15;
-                  var15 = 128 + -var17;
-                  var17 = var18;
-               }
-            }
+         } else if (var10 == 2) {
+            var17 = -var17 + 128;
+            var15 = -var15 + 128;
+         } else if (var10 == 3) {
+            var18 = var15;
+            var15 = 128 + -var17;
+            var17 = var18;
          }
 
          float var19;

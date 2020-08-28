@@ -80,10 +80,8 @@ final class RenderAnimationDefinition {
             }
 
             Class3_Sub31.aClass93_2604.put((byte)-109, def, (long)graphicId);
-            return def;
-         } else {
-            return def;
          }
+         return def;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ck.D(" + var0 + ',' + graphicId + ')');
       }

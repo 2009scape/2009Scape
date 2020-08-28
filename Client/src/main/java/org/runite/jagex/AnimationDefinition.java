@@ -231,12 +231,10 @@ final class AnimationDefinition {
 				if(this.aBoolean1848 && HDToolKit.highDetail) {
 					if(1 == var4) {
 						((Class140_Sub1_Sub1)var10).method1902();
-					} else {
-						if(var4 == 2) {
-							((Class140_Sub1_Sub1)var10).method1911();
-						} else if(var4 == 3) {
-							((Class140_Sub1_Sub1)var10).method1925();
-						}
+					} else if (var4 == 2) {
+						((Class140_Sub1_Sub1) var10).method1911();
+					} else if (var4 == 3) {
+						((Class140_Sub1_Sub1) var10).method1925();
 					}
 				} else if(var4 == 1) {
 					var10.method1900();
@@ -257,12 +255,10 @@ final class AnimationDefinition {
 					}
 				} else if(1 == var4) {
 					var10.method1885();
-				} else {
-					if(var4 == 2) {
-						var10.method1874();
-					} else if(3 == var4) {
-						var10.method1900();
-					}
+				} else if (var4 == 2) {
+					var10.method1874();
+				} else if (3 == var4) {
+					var10.method1900();
 				}
 
 				return var10;

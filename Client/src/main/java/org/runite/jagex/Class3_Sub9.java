@@ -45,10 +45,8 @@ final class Class3_Sub9 extends Class3 {
                Class159.aClass93_2016.put((byte)-75, var2, (long)var0);
             }
 
-            return var2;
-         } else {
-            return var2;
          }
+         return var2;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "fl.B(" + var0 + ',' + var1 + ')');
       }

@@ -26,8 +26,6 @@ final class Class80 {
          Class3 var2;
          if(this.anInt1132 > 0 && this.aClass130_1134.aClass3Array1697[this.anInt1132 + -1] != this.aClass3_1130) {
             var2 = this.aClass3_1130;
-            this.aClass3_1130 = var2.aClass3_74;
-            return var2;
          } else {
             do {
                if(this.anInt1132 >= this.aClass130_1134.anInt1700) {
@@ -37,9 +35,9 @@ final class Class80 {
                var2 = this.aClass130_1134.aClass3Array1697[this.anInt1132++].aClass3_74;
             } while(var2 == this.aClass130_1134.aClass3Array1697[-1 + this.anInt1132]);
 
-            this.aClass3_1130 = var2.aClass3_74;
-            return var2;
          }
+         this.aClass3_1130 = var2.aClass3_74;
+         return var2;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "l.D(" + 0 + ')');
       }

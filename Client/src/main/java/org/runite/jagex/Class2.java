@@ -21,7 +21,7 @@ final class Class2 {
 						anInt59 = 1;
 					}
 
-					return var0 != 25 && var0 != 23 && 48 != var0 && var0 != 7 && var0 != 13 ?var0 == 8 || var0 == 32 || var0 == 28 || var0 == 59 || var0 == 51 || var0 == 41 :true;
+					return var0 == 25 || var0 == 23 || 48 == var0 || var0 == 7 || var0 == 13 || (var0 == 8 || var0 == 32 || var0 == 28 || var0 == 59 || var0 == 51 || var0 == 41);
 				} else {
 					return true;
 				}
@@ -298,11 +298,7 @@ final class Class2 {
 			}
 
 			if(var15 <= 0) {
-				if(1 == var9) {
-					return false;
-				} else {
-					return true;
-				}
+				return 1 != var9;
 			} else {
 				Class3_Sub13_Sub27.method299(113, var15, var9);
 				return true;
@@ -331,10 +327,8 @@ final class Class2 {
 					Class3_Sub13_Sub31.aClass93_3369.put((byte)-125, var3, (long)(var1 << 16 | this.anInt64));
 				}
 
-				return var3;
-			} else {
-				return var3;
 			}
+			return var3;
 		} catch (RuntimeException var6) {
 			throw Class44.clientError(var6, "aa.D(" + var1 + ',' + var2 + ')');
 		}
@@ -359,14 +353,10 @@ final class Class2 {
 				this.anInt64 = var2.getShort(1);
 			} else if(var1 == 2) {
 				this.anInt61 = var2.getTriByte((byte)96);
-			} else {
-				if(var1 == 3) {
-					this.aBoolean69 = true;
-				} else {
-					if(var1 == 4) {
-						this.anInt64 = -1;
-					}
-				}
+			} else if (var1 == 3) {
+				this.aBoolean69 = true;
+			} else if (var1 == 4) {
+				this.anInt64 = -1;
 			}
 
 			if(95 <= 7) {
@@ -409,39 +399,35 @@ final class Class2 {
 					var1.spriteArchiveId = Class84.anInt1165;
 				}
 
-			} else {
-				if(var2 == 325) {
-					if(-1 == Class3_Sub13_Sub21.anInt3260) {
-						Class84.anInt1165 = var1.anInt296;
-						Class3_Sub13_Sub21.anInt3260 = var1.spriteArchiveId;
-					}
+			} else if (var2 == 325) {
+				if (-1 == Class3_Sub13_Sub21.anInt3260) {
+					Class84.anInt1165 = var1.anInt296;
+					Class3_Sub13_Sub21.anInt3260 = var1.spriteArchiveId;
+				}
 
-					if(Class77.aClass52_1112.aBoolean864) {
-						var1.spriteArchiveId = Class84.anInt1165;
-					} else {
-						var1.spriteArchiveId = Class3_Sub13_Sub21.anInt3260;
-					}
-
+				if (Class77.aClass52_1112.aBoolean864) {
+					var1.spriteArchiveId = Class84.anInt1165;
 				} else {
-					if(var2 == 327) {
-						var1.anInt182 = 150;
-						var1.anInt308 = 2047 & (int)(Math.sin((double)Class44.anInt719 / 40.0D) * 256.0D);
-						var1.modelType = 5;
-						var1.itemId = -1;
-					} else if(var2 == 328) {
-						if(null == Class102.player.displayName) {
-							var1.itemId = 0;
-						} else {
-							var1.anInt182 = 150;
-							var1.anInt308 = 2047 & (int)(256.0D * Math.sin((double)Class44.anInt719 / 40.0D));
-							var1.modelType = 5;
-							var1.itemId = 2047 + ((int)Class102.player.displayName.toLong((byte) -128 + 18) << 11);
-							var1.anInt260 = Class102.player.anInt2793;
-							var1.anInt267 = 0;
-							var1.animationId = Class102.player.anInt2764;
-							var1.anInt283 = Class102.player.anInt2813;
-						}
-					}
+					var1.spriteArchiveId = Class3_Sub13_Sub21.anInt3260;
+				}
+
+			} else if (var2 == 327) {
+				var1.anInt182 = 150;
+				var1.anInt308 = 2047 & (int) (Math.sin((double) Class44.anInt719 / 40.0D) * 256.0D);
+				var1.modelType = 5;
+				var1.itemId = -1;
+			} else if (var2 == 328) {
+				if (null == Class102.player.displayName) {
+					var1.itemId = 0;
+				} else {
+					var1.anInt182 = 150;
+					var1.anInt308 = 2047 & (int) (256.0D * Math.sin((double) Class44.anInt719 / 40.0D));
+					var1.modelType = 5;
+					var1.itemId = 2047 + ((int) Class102.player.displayName.toLong((byte) -128 + 18) << 11);
+					var1.anInt260 = Class102.player.anInt2793;
+					var1.anInt267 = 0;
+					var1.animationId = Class102.player.anInt2764;
+					var1.anInt283 = Class102.player.anInt2813;
 				}
 			}
 		} catch (RuntimeException var3) {

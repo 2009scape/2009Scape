@@ -111,18 +111,14 @@ final class Class43 {
             var4 = 1024 - -(Class51.anIntArray840[var5] >> 6);
          } else if(var6 == 3) {
             var4 = Class3_Sub13_Sub9.anIntArray3107[var5] >> 1;
+         } else if (var6 == 4) {
+            var4 = var5 >> 10 << 11;
+         } else if (var6 == 2) {
+            var4 = var5;
+         } else if (var6 == 5) {
+            var4 = (var5 < 1024 ? var5 : 2048 - var5) << 1;
          } else {
-            if(var6 == 4) {
-               var4 = var5 >> 10 << 11;
-            } else if(var6 == 2) {
-               var4 = var5;
-            } else {
-               if(var6 == 5) {
-                  var4 = (var5 < 1024?var5:2048 - var5) << 1;
-               } else {
-                  var4 = 2048;
-               }
-            }
+            var4 = 2048;
          }
 
          if(var1) {
@@ -147,93 +143,81 @@ final class Class43 {
             this.anInt693 = 0;
             this.anInt694 = 1;
             this.anInt709 = 2048;
+         } else if (var2 == 3) {
+            this.anInt693 = 0;
+            this.anInt709 = 4096;
+            this.anInt694 = 1;
+            this.anInt702 = 2048;
+         } else if (var2 == 4) {
+            this.anInt693 = 0;
+            this.anInt702 = 2048;
+            this.anInt694 = 4;
+            this.anInt709 = 2048;
+         } else if (var2 == 5) {
+            this.anInt694 = 4;
+            this.anInt702 = 2048;
+            this.anInt709 = 8192;
+            this.anInt693 = 0;
+         } else if (var2 == 12) {
+            this.anInt702 = 2048;
+            this.anInt694 = 2;
+            this.anInt709 = 2048;
+            this.anInt693 = 0;
+         } else if (var2 == 13) {
+            this.anInt709 = 8192;
+            this.anInt702 = 2048;
+            this.anInt694 = 2;
+            this.anInt693 = 0;
+         } else if (var2 == 10) {
+            this.anInt702 = 512;
+            this.anInt694 = 3;
+            this.anInt693 = 1536;
+            this.anInt709 = 2048;
+         } else if (var2 == 11) {
+            this.anInt694 = 3;
+            this.anInt709 = 4096;
+            this.anInt702 = 512;
+            this.anInt693 = 1536;
+         } else if (var2 == 6) {
+            this.anInt702 = 768;
+            this.anInt693 = 1280;
+            this.anInt694 = 3;
+            this.anInt709 = 2048;
+         } else if (var2 == 7) {
+            this.anInt702 = 768;
+            this.anInt693 = 1280;
+            this.anInt709 = 4096;
+            this.anInt694 = 3;
+         } else if (var2 == 8) {
+            this.anInt709 = 2048;
+            this.anInt694 = 3;
+            this.anInt702 = 1024;
+            this.anInt693 = 1024;
+         } else if (var2 == 9) {
+            this.anInt709 = 4096;
+            this.anInt693 = 1024;
+            this.anInt702 = 1024;
+            this.anInt694 = 3;
+         } else if (var2 == 14) {
+            this.anInt709 = 2048;
+            this.anInt693 = 1280;
+            this.anInt694 = 1;
+            this.anInt702 = 768;
+         } else if (var2 == 15) {
+            this.anInt702 = 512;
+            this.anInt709 = 4096;
+            this.anInt693 = 1536;
+            this.anInt694 = 1;
+         } else if (var2 == 16) {
+            this.anInt709 = 8192;
+            this.anInt693 = 1792;
+            this.anInt694 = 1;
+            this.anInt702 = 256;
          } else {
-            if(var2 == 3) {
-               this.anInt693 = 0;
-               this.anInt709 = 4096;
-               this.anInt694 = 1;
-               this.anInt702 = 2048;
-            } else if(var2 == 4) {
-               this.anInt693 = 0;
-               this.anInt702 = 2048;
-               this.anInt694 = 4;
-               this.anInt709 = 2048;
-            } else {
-               if(var2 == 5) {
-                  this.anInt694 = 4;
-                  this.anInt702 = 2048;
-                  this.anInt709 = 8192;
-                  this.anInt693 = 0;
-               } else if(var2 == 12) {
-                  this.anInt702 = 2048;
-                  this.anInt694 = 2;
-                  this.anInt709 = 2048;
-                  this.anInt693 = 0;
-               } else {
-                  if(var2 == 13) {
-                     this.anInt709 = 8192;
-                     this.anInt702 = 2048;
-                     this.anInt694 = 2;
-                     this.anInt693 = 0;
-                  } else if(var2 == 10) {
-                     this.anInt702 = 512;
-                     this.anInt694 = 3;
-                     this.anInt693 = 1536;
-                     this.anInt709 = 2048;
-                  } else {
-                     if(var2 == 11) {
-                        this.anInt694 = 3;
-                        this.anInt709 = 4096;
-                        this.anInt702 = 512;
-                        this.anInt693 = 1536;
-                     } else if(var2 == 6) {
-                        this.anInt702 = 768;
-                        this.anInt693 = 1280;
-                        this.anInt694 = 3;
-                        this.anInt709 = 2048;
-                     } else {
-                        if(var2 == 7) {
-                           this.anInt702 = 768;
-                           this.anInt693 = 1280;
-                           this.anInt709 = 4096;
-                           this.anInt694 = 3;
-                        } else if(var2 == 8) {
-                           this.anInt709 = 2048;
-                           this.anInt694 = 3;
-                           this.anInt702 = 1024;
-                           this.anInt693 = 1024;
-                        } else if(var2 == 9) {
-                           this.anInt709 = 4096;
-                           this.anInt693 = 1024;
-                           this.anInt702 = 1024;
-                           this.anInt694 = 3;
-                        } else if(var2 == 14) {
-                           this.anInt709 = 2048;
-                           this.anInt693 = 1280;
-                           this.anInt694 = 1;
-                           this.anInt702 = 768;
-                        } else {
-                           if(var2 == 15) {
-                              this.anInt702 = 512;
-                              this.anInt709 = 4096;
-                              this.anInt693 = 1536;
-                              this.anInt694 = 1;
-                           } else if(var2 == 16) {
-                              this.anInt709 = 8192;
-                              this.anInt693 = 1792;
-                              this.anInt694 = 1;
-                              this.anInt702 = 256;
-                           } else {
-                              this.anInt709 = 2048;
-                              this.anInt693 = 0;
-                              this.anInt702 = 2048;
-                              this.anInt694 = 0;
-                           }
-                        }
-                     }
-                  }
-               }
-            }
+            this.anInt709 = 2048;
+            this.anInt693 = 0;
+            this.anInt702 = 2048;
+            this.anInt694 = 0;
          }
 
          if(3 != 3) {

@@ -26,10 +26,8 @@ final class Class3_Sub13_Sub15 extends Class3_Sub13 {
             this.anInt3175 = var2.getShort((byte)18);
          } else if(var1 == 1) {
             this.anInt3178 = (var2.getByte() << 12) / 100;
-         } else {
-            if(var1 == 2) {
-               this.anInt3176 = (var2.getByte() << 12) / 100;
-            }
+         } else if (var1 == 2) {
+             this.anInt3176 = (var2.getByte() << 12) / 100;
          }
 
          if(!var3) {
@@ -63,30 +61,22 @@ final class Class3_Sub13_Sub15 extends Class3_Sub13 {
                this.anInt3182 = var7;
                this.anInt3174 = var5;
                this.anInt3186 = var13;
-            } else {
-               if(var9 == 2) {
-                  this.anInt3186 = var7;
-                  this.anInt3174 = var5;
-                  this.anInt3182 = var12;
-               } else {
-                  if(var9 == 3) {
-                     this.anInt3174 = var13;
-                     this.anInt3182 = var5;
-                     this.anInt3186 = var7;
-                  } else {
-                     if(var9 == 4) {
-                        this.anInt3182 = var5;
-                        this.anInt3186 = var12;
-                        this.anInt3174 = var7;
-                     } else {
-                        if(var9 == 5) {
-                           this.anInt3174 = var7;
-                           this.anInt3186 = var5;
-                           this.anInt3182 = var13;
-                        }
-                     }
-                  }
-               }
+            } else if (var9 == 2) {
+                this.anInt3186 = var7;
+                this.anInt3174 = var5;
+                this.anInt3182 = var12;
+            } else if (var9 == 3) {
+                this.anInt3174 = var13;
+                this.anInt3182 = var5;
+                this.anInt3186 = var7;
+            } else if (var9 == 4) {
+                this.anInt3182 = var5;
+                this.anInt3186 = var12;
+                this.anInt3174 = var7;
+            } else if (var9 == 5) {
+                this.anInt3174 = var7;
+                this.anInt3186 = var5;
+                this.anInt3182 = var13;
             }
          } else {
             this.anInt3186 = this.anInt3174 = this.anInt3182 = var1;
@@ -118,12 +108,10 @@ final class Class3_Sub13_Sub15 extends Class3_Sub13 {
             int var10 = (-var4 + var5 << 12) / var7;
             if(var2 == var5) {
                this.anInt3180 = var3 == var6 ?var10 + 20480:4096 + -var9;
+            } else if (var3 == var5) {
+                this.anInt3180 = var4 == var6 ? var8 + 4096 : -var10 + 12288;
             } else {
-               if(var3 == var5) {
-                  this.anInt3180 = var4 == var6 ?var8 + 4096:-var10 + 12288;
-               } else {
-                  this.anInt3180 = var6 != var2?-var8 + 20480:12288 + var9;
-               }
+                this.anInt3180 = var6 != var2 ? -var8 + 20480 : 12288 + var9;
             }
 
             this.anInt3180 /= 6;

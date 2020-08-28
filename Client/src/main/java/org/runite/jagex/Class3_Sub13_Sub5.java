@@ -36,17 +36,15 @@ final class Class3_Sub13_Sub5 extends Class3_Sub13 {
                   var7[var16] = var10[var16];
                   var8[var16] = var11[var16];
                   var9[var16] = var12[var16];
+               } else if (0 == var17) {
+                  var7[var16] = var13[var16];
+                  var8[var16] = var14[var16];
+                  var9[var16] = var15[var16];
                } else {
-                  if(0 == var17) {
-                     var7[var16] = var13[var16];
-                     var8[var16] = var14[var16];
-                     var9[var16] = var15[var16];
-                  } else {
-                     int var18 = -var17 + 4096;
-                     var7[var16] = var18 * var13[var16] + var17 * var10[var16] >> 12;
-                     var8[var16] = var18 * var14[var16] + var11[var16] * var17 >> 12;
-                     var9[var16] = var15[var16] * var18 + var12[var16] * var17 >> 12;
-                  }
+                  int var18 = -var17 + 4096;
+                  var7[var16] = var18 * var13[var16] + var17 * var10[var16] >> 12;
+                  var8[var16] = var18 * var14[var16] + var11[var16] * var17 >> 12;
+                  var9[var16] = var15[var16] * var18 + var12[var16] * var17 >> 12;
                }
             }
          }

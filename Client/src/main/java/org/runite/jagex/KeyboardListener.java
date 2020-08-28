@@ -218,18 +218,12 @@ final class KeyboardListener implements KeyListener, FocusListener {
                   int var4 = Class133.anIntArray1755[var3];
                   if(98 == var4) {
                      Class3_Sub9.anInt2309 = -16 & Class3_Sub9.anInt2309 + 47;
-                  } else {
-                     if(var4 == 99) {
-                        Class3_Sub9.anInt2309 = -16 & Class3_Sub9.anInt2309 - 17;
-                     } else {
-                        if(var4 == 96) {
-                           GraphicDefinition.CAMERA_DIRECTION = GraphicDefinition.CAMERA_DIRECTION - 65 & -128;
-                        } else {
-                           if(var4 == 97) {
-                              GraphicDefinition.CAMERA_DIRECTION = GraphicDefinition.CAMERA_DIRECTION + 191 & -128;
-                           }
-                        }
-                     }
+                  } else if (var4 == 99) {
+                      Class3_Sub9.anInt2309 = -16 & Class3_Sub9.anInt2309 - 17;
+                  } else if (var4 == 96) {
+                      GraphicDefinition.CAMERA_DIRECTION = GraphicDefinition.CAMERA_DIRECTION - 65 & -128;
+                  } else if (var4 == 97) {
+                      GraphicDefinition.CAMERA_DIRECTION = GraphicDefinition.CAMERA_DIRECTION + 191 & -128;
                   }
                }
             } else {

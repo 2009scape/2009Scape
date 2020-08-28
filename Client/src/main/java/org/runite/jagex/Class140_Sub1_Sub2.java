@@ -1144,7 +1144,7 @@ final class Class140_Sub1_Sub2 extends Model {
    }
 
    private final boolean method1944(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
-      return var2 < var3 && var2 < var4 && var2 < var5?false:(var2 > var3 && var2 > var4 && var2 > var5?false:(var1 < var6 && var1 < var7 && var1 < var8?false:var1 <= var6 || var1 <= var7 || var1 <= var8));
+      return (var2 >= var3 || var2 >= var4 || var2 >= var5) && ((var2 <= var3 || var2 <= var4 || var2 <= var5) && ((var1 >= var6 || var1 >= var7 || var1 >= var8) && (var1 <= var6 || var1 <= var7 || var1 <= var8)));
    }
 
    final Model method1894(boolean var1, boolean var2, boolean var3) {
@@ -1247,11 +1247,7 @@ final class Class140_Sub1_Sub2 extends Model {
 
                   if((var14 - var15) * (anIntArray3932[var13] - anIntArray3932[var12]) - (anIntArray3932[var11] - anIntArray3932[var12]) * (var16 - var15) > 0) {
                      aBooleanArray3917[var10] = false;
-                     if(var14 >= 0 && var15 >= 0 && var16 >= 0 && var14 <= Class51.anInt847 && var15 <= Class51.anInt847 && var16 <= Class51.anInt847) {
-                        aBooleanArray3937[var10] = false;
-                     } else {
-                        aBooleanArray3937[var10] = true;
-                     }
+                     aBooleanArray3937[var10] = var14 < 0 || var15 < 0 || var16 < 0 || var14 > Class51.anInt847 || var15 > Class51.anInt847 || var16 > Class51.anInt847;
 
                      if(aBoolean3942) {
                         anIntArray3931[var8] = (anIntArray3920[var11] + anIntArray3920[var12] + anIntArray3920[var13]) / 3;
@@ -2194,45 +2190,43 @@ final class Class140_Sub1_Sub2 extends Model {
                this.anIntArray3895[var5] += anInt3940;
             }
 
-         } else {
-            if(var1 == 5) {
-               for(var5 = 0; var5 < this.anInt3889; ++var5) {
-                  var6 = (this.aByteArray3903[var5] & 255) + var2 * 8;
-                  if(var6 < 0) {
-                     var6 = 0;
-                  } else if(var6 > 255) {
-                     var6 = 255;
-                  }
-
-                  this.aByteArray3903[var5] = (byte)var6;
+         } else if (var1 == 5) {
+            for (var5 = 0; var5 < this.anInt3889; ++var5) {
+               var6 = (this.aByteArray3903[var5] & 255) + var2 * 8;
+               if (var6 < 0) {
+                  var6 = 0;
+               } else if (var6 > 255) {
+                  var6 = 255;
                }
 
-            } else if(var1 == 7) {
-               for(var5 = 0; var5 < this.anInt3889; ++var5) {
-                  var6 = this.aShortArray3869[var5] & '\uffff';
-                  var7 = var6 >> 10 & 63;
-                  var8 = var6 >> 7 & 7;
-                  int var9 = var6 & 127;
-                  var7 = var7 + var2 & 63;
-                  var8 += var3;
-                  if(var8 < 0) {
-                     var8 = 0;
-                  } else if(var8 > 7) {
-                     var8 = 7;
-                  }
-
-                  var9 += var4;
-                  if(var9 < 0) {
-                     var9 = 0;
-                  } else if(var9 > 127) {
-                     var9 = 127;
-                  }
-
-                  this.aShortArray3869[var5] = (short)(var7 << 10 | var8 << 7 | var9);
-               }
-
-               this.aBoolean3877 = true;
+               this.aByteArray3903[var5] = (byte) var6;
             }
+
+         } else if (var1 == 7) {
+            for (var5 = 0; var5 < this.anInt3889; ++var5) {
+               var6 = this.aShortArray3869[var5] & '\uffff';
+               var7 = var6 >> 10 & 63;
+               var8 = var6 >> 7 & 7;
+               int var9 = var6 & 127;
+               var7 = var7 + var2 & 63;
+               var8 += var3;
+               if (var8 < 0) {
+                  var8 = 0;
+               } else if (var8 > 7) {
+                  var8 = 7;
+               }
+
+               var9 += var4;
+               if (var9 < 0) {
+                  var9 = 0;
+               } else if (var9 > 127) {
+                  var9 = 127;
+               }
+
+               this.aShortArray3869[var5] = (short) (var7 << 10 | var8 << 7 | var9);
+            }
+
+            this.aBoolean3877 = true;
          }
       }
    }

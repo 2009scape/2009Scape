@@ -780,24 +780,22 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
                   this.method482((byte)-61, var4, (this.anIntArray3520[var4] & -128) + var6);
                }
 
+            } else if (var3 == 192) {
+               var5 = var2 >> -1987010456 & 127;
+               var4 = 15 & var2;
+               this.method484(this.anIntArray3506[var4] - -var5, var4);
+            } else if (var3 == 208) {
+               var4 = 15 & var2;
+               var5 = (var2 & 32549) >> 42068712;
+               this.method478(var4, false, var5);
+            } else if (var3 == 224) {
+               var4 = 15 & var2;
+               var5 = (var2 >> 2059852361 & 16256) + ((32702 & var2) >> 1459602440);
+               this.method476(var4, var5);
             } else {
-               if(var3 == 192) {
-                  var5 = var2 >> -1987010456 & 127;
-                  var4 = 15 & var2;
-                  this.method484(this.anIntArray3506[var4] - -var5, var4);
-               } else if(var3 == 208) {
-                  var4 = 15 & var2;
-                  var5 = (var2 & 32549) >> 42068712;
-                  this.method478(var4, false, var5);
-               } else if(var3 == 224) {
-                  var4 = 15 & var2;
-                  var5 = (var2 >> 2059852361 & 16256) + ((32702 & var2) >> 1459602440);
-                  this.method476(var4, var5);
-               } else {
-                  var3 = var2 & 255;
-                  if(255 == var3) {
-                     this.method500(true, (byte)-40);
-                  }
+               var3 = var2 & 255;
+               if (255 == var3) {
+                  this.method500(true, (byte) -40);
                }
             }
          }

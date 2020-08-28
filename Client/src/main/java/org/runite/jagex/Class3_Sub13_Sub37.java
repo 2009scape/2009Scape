@@ -486,10 +486,8 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
             }
 
             Class163_Sub2_Sub1.aClass93_4015.put((byte)-109, var2, (long)var1);
-            return var2;
-         } else {
-            return var2;
          }
+          return var2;
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "um.C(" + var0 + ',' + var1 + ')');
       }

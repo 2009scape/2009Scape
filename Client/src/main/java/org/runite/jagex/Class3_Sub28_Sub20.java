@@ -41,7 +41,6 @@ final class Class3_Sub28_Sub20 extends Node {
                   int[] var10 = new int[var6 * var6];
                   int[] var8 = new int[var6];
                   int[] var9 = new int[var6];
-                  int var15 = var6;
                   int var14;
                   int var13 = var14 = var6 * 1;
                   int var19 = var6 * var6;
@@ -79,7 +78,7 @@ final class Class3_Sub28_Sub20 extends Node {
                         var29 += var9[var27];
                         var28 += var7[var27];
                         if(var27 == 0) {
-                           var27 = var15;
+                           var27 = var6;
                         }
                      }
 
@@ -95,11 +94,11 @@ final class Class3_Sub28_Sub20 extends Node {
                         var29 += var9[var27] - var9[var26];
                         var30 += -var8[var26] + var8[var27];
                         if(var26 == 0) {
-                           var26 = var15;
+                           var26 = var6;
                         }
 
                         if(var27 == 0) {
-                           var27 = var15;
+                           var27 = var6;
                         }
                      }
 
@@ -158,30 +157,28 @@ final class Class3_Sub28_Sub20 extends Node {
                      var5.glTexParameteri(3553, 10240, 9729);
                      Class31.anInt580 += 4 * var9.limit() / 3 - this.anInt3796;
                      this.anInt3796 = var9.limit() * 4 / 3;
-                  } else {
-                     if(this.anInt3788 == 1) {
-                        int var10 = 0;
+                  } else if (this.anInt3788 == 1) {
+                     int var10 = 0;
 
-                        while(true) {
-                           var5.glTexImage2D(3553, var10++, 6408, var6, var6, 0, 6408, 5121, var9);
-                           var6 >>= 1;
-                           if(0 == var6) {
-                              var5.glTexParameteri(3553, 10241, 9987);
-                              var5.glTexParameteri(3553, 10240, 9729);
-                              Class31.anInt580 += var9.limit() * 4 / 3 - this.anInt3796;
-                              this.anInt3796 = 4 * var9.limit() / 3;
-                              break;
-                           }
-
-                           var9 = ByteBuffer.wrap(this.aClass82_3790.method1407(var6, var6, this.aBoolean3800, var2, var1));
+                     while (true) {
+                        var5.glTexImage2D(3553, var10++, 6408, var6, var6, 0, 6408, 5121, var9);
+                        var6 >>= 1;
+                        if (0 == var6) {
+                           var5.glTexParameteri(3553, 10241, 9987);
+                           var5.glTexParameteri(3553, 10240, 9729);
+                           Class31.anInt580 += var9.limit() * 4 / 3 - this.anInt3796;
+                           this.anInt3796 = 4 * var9.limit() / 3;
+                           break;
                         }
-                     } else {
-                        var5.glTexImage2D(3553, 0, 6408, var6, var6, 0, 6408, 5121, var9);
-                        var5.glTexParameteri(3553, 10241, 9729);
-                        var5.glTexParameteri(3553, 10240, 9729);
-                        Class31.anInt580 += var9.limit() - this.anInt3796;
-                        this.anInt3796 = var9.limit();
+
+                        var9 = ByteBuffer.wrap(this.aClass82_3790.method1407(var6, var6, this.aBoolean3800, var2, var1));
                      }
+                  } else {
+                     var5.glTexImage2D(3553, 0, 6408, var6, var6, 0, 6408, 5121, var9);
+                     var5.glTexParameteri(3553, 10241, 9729);
+                     var5.glTexParameteri(3553, 10240, 9729);
+                     Class31.anInt580 += var9.limit() - this.anInt3796;
+                     this.anInt3796 = var9.limit();
                   }
 
                   var5.glTexParameteri(3553, 10242, !this.aBoolean3787?'\u812f':10497);
@@ -250,7 +247,7 @@ final class Class3_Sub28_Sub20 extends Node {
 
    final boolean method722(Interface2 var2, CacheIndex var3) {
       try {
-         return -5 != -5?true:this.aClass82_3790.method1408(var2, var3);
+         return -5 != -5 || this.aClass82_3790.method1408(var2, var3);
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "uh.P(" + -5 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ')');
       }

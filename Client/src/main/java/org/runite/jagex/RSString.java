@@ -1191,7 +1191,6 @@ final class RSString implements Interface3 {
          RSString[] var11 = new RSString[1 + var3];
          if(var3 == 0) {
             var11[0] = this;
-            return var11;
          } else {
             int var5 = 0;
             int var6 = 0;
@@ -1208,8 +1207,8 @@ final class RSString implements Interface3 {
             }
 
             var11[var3] = this.method1557(this.length, 0, var6);
-            return var11;
          }
+         return var11;
       } catch (RuntimeException var10) {
          throw Class44.clientError(var10, "na.GA(" + var1 + ',' + var2 + ')');
       }

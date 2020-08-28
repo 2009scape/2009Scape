@@ -197,10 +197,10 @@ final class Class36 {
                   var7 = 0;
                }
 
-               if(~(64 & var9) != -1) {
-                  var7 = this.anIntArray633[var7];
-               } else {
+               if(~(64 & var9) == -1) {
                   ++var7;
+               } else {
+                  var7 = this.anIntArray633[var7];
                }
 
                if(-1 < ~(var10 = this.anIntArray633[var7])) {
@@ -227,10 +227,10 @@ final class Class36 {
                   var7 = 0;
                }
 
-               if((var9 & 16) != 0) {
-                  var7 = this.anIntArray633[var7];
-               } else {
+               if((var9 & 16) == 0) {
                   ++var7;
+               } else {
+                  var7 = this.anIntArray633[var7];
                }
 
                if(-1 < ~(var10 = this.anIntArray633[var7])) {
@@ -242,10 +242,10 @@ final class Class36 {
                   var7 = 0;
                }
 
-               if(~(var9 & 8) != -1) {
-                  var7 = this.anIntArray633[var7];
-               } else {
+               if(~(var9 & 8) == -1) {
                   ++var7;
+               } else {
+                  var7 = this.anIntArray633[var7];
                }
 
                if((var10 = this.anIntArray633[var7]) < 0) {
@@ -257,10 +257,10 @@ final class Class36 {
                   var7 = 0;
                }
 
-               if(~(var9 & 4) != -1) {
-                  var7 = this.anIntArray633[var7];
-               } else {
+               if(~(var9 & 4) == -1) {
                   ++var7;
+               } else {
+                  var7 = this.anIntArray633[var7];
                }
 
                if(~(var10 = this.anIntArray633[var7]) > -1) {
@@ -287,10 +287,10 @@ final class Class36 {
                   var7 = 0;
                }
 
-               if((1 & var9) != 0) {
-                  var7 = this.anIntArray633[var7];
-               } else {
+               if((1 & var9) == 0) {
                   ++var7;
+               } else {
+                  var7 = this.anIntArray633[var7];
                }
 
                if(0 > (var10 = this.anIntArray633[var7])) {
@@ -404,10 +404,10 @@ final class Class36 {
          int var0 = var1;
 
          for(int var2 = 0; ~var2 > -9; ++var2) {
-            if(1 != (1 & var0)) {
-               var0 >>>= 1;
-            } else {
+            if(1 == (1 & var0)) {
                var0 = var0 >>> 1 ^ -306674912;
+            } else {
+               var0 >>>= 1;
             }
          }
 

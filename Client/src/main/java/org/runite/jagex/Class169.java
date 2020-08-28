@@ -162,14 +162,13 @@ final class Class169 {
          }
 
          var1.glInterleavedArrays(10791, 20, this.aByteBuffer2109);
-         HDToolKit.aBoolean1798 = false;
       } else {
          this.aClass156_2110.method2169();
          var1.glInterleavedArrays(10791, 20, 0L);
-         HDToolKit.aBoolean1798 = false;
       }
+      HDToolKit.aBoolean1798 = false;
 
-       if(this.aClass156_2105 == null) {
+      if(this.aClass156_2105 == null) {
           if(HDToolKit.aBoolean1813) {
              var1.glBindBufferARB('\u8893', 0);
           }

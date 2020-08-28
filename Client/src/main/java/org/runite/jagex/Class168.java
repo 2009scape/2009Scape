@@ -144,61 +144,57 @@ final class Class168 {
                                     var15 += var16;
                                  }
 
-                              } else {
-                                 if(1 == var3) {
-                                    for(var21 = var13; var14 > var21; ++var21) {
-                                       for(var22 = var11; var22 < var12; ++var22) {
-                                          if(0 <= var15 && var0.length > var15) {
-                                             if(var22 >= var21 << 1) {
-                                                var0[var15] = var1;
-                                             } else if(var9) {
-                                                var0[var15] = var4;
-                                             }
-
-                                             ++var15;
-                                          } else {
-                                             ++var15;
-                                          }
-                                       }
-
-                                       var15 += var16;
-                                    }
-
-                                 } else if(var3 == 2) {
-                                    for(var21 = var13; var21 < var14; ++var21) {
-                                       for(var22 = var18 + -1; var17 <= var22; --var22) {
-                                          if(var21 >> 1 >= var22) {
+                              } else if (1 == var3) {
+                                 for (var21 = var13; var14 > var21; ++var21) {
+                                    for (var22 = var11; var22 < var12; ++var22) {
+                                       if (0 <= var15 && var0.length > var15) {
+                                          if (var22 >= var21 << 1) {
                                              var0[var15] = var1;
-                                          } else if(var9) {
+                                          } else if (var9) {
                                              var0[var15] = var4;
                                           }
 
                                           ++var15;
+                                       } else {
+                                          ++var15;
                                        }
-
-                                       var15 += var16;
                                     }
 
-                                 } else {
-                                    if(3 == var3) {
-                                       for(var21 = var20 + -1; var19 <= var21; --var21) {
-                                          for(var22 = -1 + var18; var17 <= var22; --var22) {
-                                             if(var21 << 1 > var22) {
-                                                if(var9) {
-                                                   var0[var15] = var4;
-                                                }
-                                             } else {
-                                                var0[var15] = var1;
-                                             }
-
-                                             ++var15;
-                                          }
-
-                                          var15 += var16;
-                                       }
-
-                                    }
+                                    var15 += var16;
                                  }
+
+                              } else if (var3 == 2) {
+                                 for (var21 = var13; var21 < var14; ++var21) {
+                                    for (var22 = var18 + -1; var17 <= var22; --var22) {
+                                       if (var21 >> 1 >= var22) {
+                                          var0[var15] = var1;
+                                       } else if (var9) {
+                                          var0[var15] = var4;
+                                       }
+
+                                       ++var15;
+                                    }
+
+                                    var15 += var16;
+                                 }
+
+                              } else if (3 == var3) {
+                                 for (var21 = var20 + -1; var19 <= var21; --var21) {
+                                    for (var22 = -1 + var18; var17 <= var22; --var22) {
+                                       if (var21 << 1 > var22) {
+                                          if (var9) {
+                                             var0[var15] = var4;
+                                          }
+                                       } else {
+                                          var0[var15] = var1;
+                                       }
+
+                                       ++var15;
+                                    }
+
+                                    var15 += var16;
+                                 }
+
                               }
                            } else if(var5 != 3) {
                               if(var5 != 4) {
@@ -490,23 +486,21 @@ final class Class168 {
                                        var15 += var16;
                                     }
 
-                                 } else {
-                                    if(var3 == 3) {
-                                       for(var21 = var13; var21 < var14; ++var21) {
-                                          for(var22 = var18 + -1; var17 <= var22; --var22) {
-                                             if(var21 << 1 >= var22) {
-                                                var0[var15] = var1;
-                                             } else if(var9) {
-                                                var0[var15] = var4;
-                                             }
-
-                                             ++var15;
+                                 } else if (var3 == 3) {
+                                    for (var21 = var13; var21 < var14; ++var21) {
+                                       for (var22 = var18 + -1; var17 <= var22; --var22) {
+                                          if (var21 << 1 >= var22) {
+                                             var0[var15] = var1;
+                                          } else if (var9) {
+                                             var0[var15] = var4;
                                           }
 
-                                          var15 += var16;
+                                          ++var15;
                                        }
 
+                                       var15 += var16;
                                     }
+
                                  }
                               } else if(var3 == 0) {
                                  for(var21 = var20 + -1; var21 >= var19; --var21) {
@@ -525,53 +519,51 @@ final class Class168 {
                                     var15 += var16;
                                  }
 
-                              } else {
-                                 if(1 == var3) {
-                                    for(var21 = var13; var21 < var14; ++var21) {
-                                       for(var22 = var11; var22 < var12; ++var22) {
-                                          if(var22 <= var21 << 1) {
-                                             var0[var15] = var1;
-                                          } else if(var9) {
-                                             var0[var15] = var4;
-                                          }
-
-                                          ++var15;
+                              } else if (1 == var3) {
+                                 for (var21 = var13; var21 < var14; ++var21) {
+                                    for (var22 = var11; var22 < var12; ++var22) {
+                                       if (var22 <= var21 << 1) {
+                                          var0[var15] = var1;
+                                       } else if (var9) {
+                                          var0[var15] = var4;
                                        }
 
-                                       var15 += var16;
+                                       ++var15;
                                     }
 
-                                 } else if(2 == var3) {
-                                    for(var21 = var13; var21 < var14; ++var21) {
-                                       for(var22 = var18 + -1; var22 >= var17; --var22) {
-                                          if(var21 >> 1 <= var22) {
-                                             var0[var15] = var1;
-                                          } else if(var9) {
-                                             var0[var15] = var4;
-                                          }
-
-                                          ++var15;
-                                       }
-
-                                       var15 += var16;
-                                    }
-
-                                 } else if(var3 == 3) {
-                                    for(var21 = -1 + var20; var21 >= var19; --var21) {
-                                       for(var22 = -1 + var18; var22 >= var17; --var22) {
-                                          if(var22 <= var21 << 1) {
-                                             var0[var15] = var1;
-                                          } else if(var9) {
-                                             var0[var15] = var4;
-                                          }
-
-                                          ++var15;
-                                       }
-
-                                       var15 += var16;
-                                    }
-
+                                    var15 += var16;
                                  }
+
+                              } else if (2 == var3) {
+                                 for (var21 = var13; var21 < var14; ++var21) {
+                                    for (var22 = var18 + -1; var22 >= var17; --var22) {
+                                       if (var21 >> 1 <= var22) {
+                                          var0[var15] = var1;
+                                       } else if (var9) {
+                                          var0[var15] = var4;
+                                       }
+
+                                       ++var15;
+                                    }
+
+                                    var15 += var16;
+                                 }
+
+                              } else if (var3 == 3) {
+                                 for (var21 = -1 + var20; var21 >= var19; --var21) {
+                                    for (var22 = -1 + var18; var22 >= var17; --var22) {
+                                       if (var22 <= var21 << 1) {
+                                          var0[var15] = var1;
+                                       } else if (var9) {
+                                          var0[var15] = var4;
+                                       }
+
+                                       ++var15;
+                                    }
+
+                                    var15 += var16;
+                                 }
+
                               }
                            } else if(var3 == 0) {
                               for(var21 = var20 - 1; var21 >= var19; --var21) {
@@ -666,42 +658,38 @@ final class Class168 {
                               var15 += var16;
                            }
 
-                        } else {
-                           if(2 == var3) {
-                              for(var21 = var13; var21 < var14; ++var21) {
-                                 for(var22 = var11; var12 > var22; ++var22) {
-                                    if(var22 >= var21) {
-                                       var0[var15] = var1;
-                                    } else if(var9) {
+                        } else if (2 == var3) {
+                           for (var21 = var13; var21 < var14; ++var21) {
+                              for (var22 = var11; var12 > var22; ++var22) {
+                                 if (var22 >= var21) {
+                                    var0[var15] = var1;
+                                 } else if (var9) {
+                                    var0[var15] = var4;
+                                 }
+
+                                 ++var15;
+                              }
+
+                              var15 += var16;
+                           }
+
+                        } else if (var3 == 3) {
+                           for (var21 = var20 + -1; var19 <= var21; --var21) {
+                              for (var22 = var11; var12 > var22; ++var22) {
+                                 if (var22 < var21) {
+                                    if (var9) {
                                        var0[var15] = var4;
                                     }
-
-                                    ++var15;
+                                 } else {
+                                    var0[var15] = var1;
                                  }
 
-                                 var15 += var16;
+                                 ++var15;
                               }
 
-                           } else {
-                              if(var3 == 3) {
-                                 for(var21 = var20 + -1; var19 <= var21; --var21) {
-                                    for(var22 = var11; var12 > var22; ++var22) {
-                                       if(var22 < var21) {
-                                          if(var9) {
-                                             var0[var15] = var4;
-                                          }
-                                       } else {
-                                          var0[var15] = var1;
-                                       }
-
-                                       ++var15;
-                                    }
-
-                                    var15 += var16;
-                                 }
-
-                              }
+                              var15 += var16;
                            }
+
                         }
                      }
                   }
@@ -987,53 +975,31 @@ final class Class168 {
          if(0 == 0) {
             if(var2 == 1) {
                this.anInt2103 = RSInterface.method869(116, var3.getTriByte((byte)83));
-            } else {
-               if(var2 == 2) {
-                  this.anInt2095 = var3.getByte((byte)-128);
-               } else {
-                  if(3 == var2) {
-                     this.anInt2095 = var3.getShort(1);
-                     if(this.anInt2095 == '\uffff') {
-                        this.anInt2095 = -1;
-                     }
-                  } else {
-                     if(5 == var2) {
-                        this.aBoolean2102 = false;
-                     } else {
-                        if(var2 == 7) {
-                           this.anInt2098 = RSInterface.method869(116, var3.getTriByte((byte)82));
-                        } else {
-                           if(var2 == 8) {
-                              Class3_Sub13_Sub6.anInt3081 = var4;
-                           } else {
-                              if(var2 == 9) {
-                                 this.anInt2090 = var3.getShort(0 ^ 1);
-                              } else {
-                                 if(var2 == 10) {
-                                    this.aBoolean2093 = false;
-                                 } else {
-                                    if(var2 == 11) {
-                                       this.anInt2100 = var3.getByte((byte)-89);
-                                    } else {
-                                       if(12 == var2) {
-                                          this.aBoolean2092 = true;
-                                       } else {
-                                          if(13 == var2) {
-                                             this.anInt2094 = var3.getTriByte((byte)110);
-                                          } else {
-                                             if(var2 == 14) {
-                                                this.anInt2101 = var3.getByte((byte)-68);
-                                             }
-                                          }
-                                       }
-                                    }
-                                 }
-                              }
-                           }
-                        }
-                     }
-                  }
+            } else if (var2 == 2) {
+               this.anInt2095 = var3.getByte((byte) -128);
+            } else if (3 == var2) {
+               this.anInt2095 = var3.getShort(1);
+               if (this.anInt2095 == '\uffff') {
+                  this.anInt2095 = -1;
                }
+            } else if (5 == var2) {
+               this.aBoolean2102 = false;
+            } else if (var2 == 7) {
+               this.anInt2098 = RSInterface.method869(116, var3.getTriByte((byte) 82));
+            } else if (var2 == 8) {
+               Class3_Sub13_Sub6.anInt3081 = var4;
+            } else if (var2 == 9) {
+               this.anInt2090 = var3.getShort(0 ^ 1);
+            } else if (var2 == 10) {
+               this.aBoolean2093 = false;
+            } else if (var2 == 11) {
+               this.anInt2100 = var3.getByte((byte) -89);
+            } else if (12 == var2) {
+               this.aBoolean2092 = true;
+            } else if (13 == var2) {
+               this.anInt2094 = var3.getTriByte((byte) 110);
+            } else if (var2 == 14) {
+               this.anInt2101 = var3.getByte((byte) -68);
             }
 
          }

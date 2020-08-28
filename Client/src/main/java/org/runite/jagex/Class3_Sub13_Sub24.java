@@ -185,10 +185,8 @@ final class Class3_Sub13_Sub24 extends Class3_Sub13 {
             this.anInt3294 = var2.getByte((byte)-50);
          } else if(var1 == 1) {
             this.anInt3297 = var2.getByte((byte)-118);
-         } else {
-            if(2 == var1) {
-               this.aBoolean2375 = var2.getByte((byte)-51) == 1;
-            }
+         } else if (2 == var1) {
+            this.aBoolean2375 = var2.getByte((byte) -51) == 1;
          }
 
          if(!var3) {

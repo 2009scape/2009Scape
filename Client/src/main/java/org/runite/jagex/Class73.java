@@ -600,10 +600,8 @@ static boolean aBoolean1080 = false;
             try {
                if(var1.anInt4061 == 2) {
                   var1.aClass41_4056.method1050((int)var1.aLong2569, var1.aByteArray4059.length, var1.aByteArray4059);
-               } else {
-                  if(var1.anInt4061 == 3) {
-                     var1.aByteArray4059 = var1.aClass41_4056.method1051((int)var1.aLong2569, (byte)-77);
-                  }
+               } else if (var1.anInt4061 == 3) {
+                  var1.aByteArray4059 = var1.aClass41_4056.method1051((int) var1.aLong2569, (byte) -77);
                }
             } catch (Exception var5) {
                Class49.method1125((String)null, var5, (byte)111);

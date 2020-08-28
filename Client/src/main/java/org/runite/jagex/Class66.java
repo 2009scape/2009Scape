@@ -113,10 +113,8 @@ final class Class66 {
 						byte var5 = 0;
 						if(null == this.aClass3_Sub28_Sub10_Sub2_1012) {
 							var5 = 8;
-						} else {
-							if(this.aClass3_Sub28_Sub10_Sub2_1012.anInt4067 == 0) {
-								var5 = 1;
-							}
+						} else if (this.aClass3_Sub28_Sub10_Sub2_1012.anInt4067 == 0) {
+							var5 = 1;
 						}
 
 						int var6;
@@ -146,10 +144,8 @@ final class Class66 {
 								this.aClass3_Sub28_Sub10_Sub2_1012.method524();
 								this.aClass3_Sub28_Sub10_Sub2_1012.aBoolean3632 = false;
 								this.aClass3_Sub28_Sub10_Sub2_1012 = null;
-							} else {
-								if(this.aClass3_Sub28_Sub10_Sub2_1012.anInt4067 == 512) {
-									this.aClass3_Sub28_Sub10_Sub2_1012.anInt4067 = 0;
-								}
+							} else if (this.aClass3_Sub28_Sub10_Sub2_1012.anInt4067 == 512) {
+								this.aClass3_Sub28_Sub10_Sub2_1012.anInt4067 = 0;
 							}
 						} else {
 							var6 = -this.aClass3_Sub30_1008.index + var5;

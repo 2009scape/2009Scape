@@ -351,307 +351,289 @@ final class Class91 {
             return true;
          }
 
-         if(var3) {
-            return false;
-         } else {
+         if (!var3) {
             var4 -= this.anInt1306;
             var5 -= this.anInt1309;
             var1 -= this.anInt1306;
             var2 -= this.anInt1309;
-            if(1 == var7) {
-               if(0 == var6) {
-                  if(var8 == 0) {
-                     if(var5 - 1 == var2 && var4 == var1) {
+            if (1 == var7) {
+               if (0 == var6) {
+                  if (var8 == 0) {
+                     if (var5 - 1 == var2 && var4 == var1) {
                         return true;
                      }
 
-                     if(var2 == var5 && var1 - -1 == var4 && (this.anIntArrayArray1304[var2][var4] & 19661088) == 0) {
+                     if (var2 == var5 && var1 - -1 == var4 && (this.anIntArrayArray1304[var2][var4] & 19661088) == 0) {
                         return true;
                      }
 
-                     if(var2 == var5 && -1 + var1 == var4 && 0 == (this.anIntArrayArray1304[var2][var4] & 19661058)) {
+                     if (var2 == var5 && -1 + var1 == var4 && 0 == (this.anIntArrayArray1304[var2][var4] & 19661058)) {
                         return true;
                      }
-                  } else if(1 == var8) {
-                     if(var5 == var2 && var4 == var1 - -1) {
-                        return true;
-                     }
-
-                     if(var5 + -1 == var2 && var4 == var1 && 0 == (this.anIntArrayArray1304[var2][var4] & 19661064)) {
+                  } else if (1 == var8) {
+                     if (var5 == var2 && var4 == var1 - -1) {
                         return true;
                      }
 
-                     if(var2 == 1 + var5 && var4 == var1 && (this.anIntArrayArray1304[var2][var4] & 19661184) == 0) {
+                     if (var5 + -1 == var2 && var4 == var1 && 0 == (this.anIntArrayArray1304[var2][var4] & 19661064)) {
                         return true;
                      }
-                  } else {
-                     if(var8 == 2) {
-                        if(1 + var5 == var2 && var1 == var4) {
-                           return true;
-                        }
 
-                        if(var2 == var5 && var4 == 1 + var1 && (this.anIntArrayArray1304[var2][var4] & 19661088) == 0) {
-                           return true;
-                        }
+                     if (var2 == 1 + var5 && var4 == var1 && (this.anIntArrayArray1304[var2][var4] & 19661184) == 0) {
+                        return true;
+                     }
+                  } else if (var8 == 2) {
+                     if (1 + var5 == var2 && var1 == var4) {
+                        return true;
+                     }
 
-                        if(var5 == var2 && var4 == var1 - 1 && (this.anIntArrayArray1304[var2][var4] & 19661058) == 0) {
-                           return true;
-                        }
-                     } else if(var8 == 3) {
-                        if(var2 == var5 && var4 == var1 + -1) {
-                           return true;
-                        }
+                     if (var2 == var5 && var4 == 1 + var1 && (this.anIntArrayArray1304[var2][var4] & 19661088) == 0) {
+                        return true;
+                     }
 
-                        if(-1 + var5 == var2 && var4 == var1 && (this.anIntArrayArray1304[var2][var4] & 19661064) == 0) {
-                           return true;
-                        }
+                     if (var5 == var2 && var4 == var1 - 1 && (this.anIntArrayArray1304[var2][var4] & 19661058) == 0) {
+                        return true;
+                     }
+                  } else if (var8 == 3) {
+                     if (var2 == var5 && var4 == var1 + -1) {
+                        return true;
+                     }
 
-                        if(var2 == var5 - -1 && var4 == var1 && (this.anIntArrayArray1304[var2][var4] & 19661184) == 0) {
-                           return true;
-                        }
+                     if (-1 + var5 == var2 && var4 == var1 && (this.anIntArrayArray1304[var2][var4] & 19661064) == 0) {
+                        return true;
+                     }
+
+                     if (var2 == var5 - -1 && var4 == var1 && (this.anIntArrayArray1304[var2][var4] & 19661184) == 0) {
+                        return true;
                      }
                   }
                }
 
-               if(2 == var6) {
-                  if(var8 == 0) {
-                     if(var2 == var5 - 1 && var1 == var4) {
+               if (2 == var6) {
+                  if (var8 == 0) {
+                     if (var2 == var5 - 1 && var1 == var4) {
                         return true;
                      }
 
-                     if(var5 == var2 && var4 == 1 + var1) {
+                     if (var5 == var2 && var4 == 1 + var1) {
                         return true;
                      }
 
-                     if(var2 == 1 + var5 && var1 == var4 && (19661184 & this.anIntArrayArray1304[var2][var4]) == 0) {
+                     if (var2 == 1 + var5 && var1 == var4 && (19661184 & this.anIntArrayArray1304[var2][var4]) == 0) {
                         return true;
                      }
 
-                     if(var5 == var2 && var4 == var1 + -1 && (this.anIntArrayArray1304[var2][var4] & 19661058) == 0) {
+                     if (var5 == var2 && var4 == var1 + -1 && (this.anIntArrayArray1304[var2][var4] & 19661058) == 0) {
                         return true;
                      }
-                  } else {
-                     if(var8 == 1) {
-                        if(var2 == var5 + -1 && var1 == var4 && 0 == (this.anIntArrayArray1304[var2][var4] & 19661064)) {
-                           return true;
-                        }
+                  } else if (var8 == 1) {
+                     if (var2 == var5 + -1 && var1 == var4 && 0 == (this.anIntArrayArray1304[var2][var4] & 19661064)) {
+                        return true;
+                     }
 
-                        if(var5 == var2 && var4 == var1 + 1) {
-                           return true;
-                        }
+                     if (var5 == var2 && var4 == var1 + 1) {
+                        return true;
+                     }
 
-                        if(var5 + 1 == var2 && var4 == var1) {
-                           return true;
-                        }
+                     if (var5 + 1 == var2 && var4 == var1) {
+                        return true;
+                     }
 
-                        if(var2 == var5 && var4 == -1 + var1 && (19661058 & this.anIntArrayArray1304[var2][var4]) == 0) {
-                           return true;
-                        }
-                     } else if(var8 == 2) {
-                        if(var2 == -1 + var5 && var4 == var1 && (this.anIntArrayArray1304[var2][var4] & 19661064) == 0) {
-                           return true;
-                        }
+                     if (var2 == var5 && var4 == -1 + var1 && (19661058 & this.anIntArrayArray1304[var2][var4]) == 0) {
+                        return true;
+                     }
+                  } else if (var8 == 2) {
+                     if (var2 == -1 + var5 && var4 == var1 && (this.anIntArrayArray1304[var2][var4] & 19661064) == 0) {
+                        return true;
+                     }
 
-                        if(var5 == var2 && 1 + var1 == var4 && (19661088 & this.anIntArrayArray1304[var2][var4]) == 0) {
-                           return true;
-                        }
+                     if (var5 == var2 && 1 + var1 == var4 && (19661088 & this.anIntArrayArray1304[var2][var4]) == 0) {
+                        return true;
+                     }
 
-                        if(var5 - -1 == var2 && var4 == var1) {
-                           return true;
-                        }
+                     if (var5 - -1 == var2 && var4 == var1) {
+                        return true;
+                     }
 
-                        if(var5 == var2 && var1 + -1 == var4) {
-                           return true;
-                        }
-                     } else {
-                        if(var8 == 3) {
-                           if(var5 - 1 == var2 && var1 == var4) {
-                              return true;
-                           }
+                     if (var5 == var2 && var1 + -1 == var4) {
+                        return true;
+                     }
+                  } else if (var8 == 3) {
+                     if (var5 - 1 == var2 && var1 == var4) {
+                        return true;
+                     }
 
-                           if(var5 == var2 && var1 + 1 == var4 && 0 == (19661088 & this.anIntArrayArray1304[var2][var4])) {
-                              return true;
-                           }
+                     if (var5 == var2 && var1 + 1 == var4 && 0 == (19661088 & this.anIntArrayArray1304[var2][var4])) {
+                        return true;
+                     }
 
-                           if(var5 - -1 == var2 && var1 == var4 && (19661184 & this.anIntArrayArray1304[var2][var4]) == 0) {
-                              return true;
-                           }
+                     if (var5 - -1 == var2 && var1 == var4 && (19661184 & this.anIntArrayArray1304[var2][var4]) == 0) {
+                        return true;
+                     }
 
-                           if(var5 == var2 && -1 + var1 == var4) {
-                              return true;
-                           }
-                        }
+                     if (var5 == var2 && -1 + var1 == var4) {
+                        return true;
                      }
                   }
                }
 
-               if(9 == var6) {
-                  if(var5 == var2 && var4 == 1 + var1 && 0 == (this.anIntArrayArray1304[var2][var4] & 32)) {
+               if (9 == var6) {
+                  if (var5 == var2 && var4 == 1 + var1 && 0 == (this.anIntArrayArray1304[var2][var4] & 32)) {
                      return true;
                   }
 
-                  if(var2 == var5 && -1 + var1 == var4 && (this.anIntArrayArray1304[var2][var4] & 2) == 0) {
+                  if (var2 == var5 && -1 + var1 == var4 && (this.anIntArrayArray1304[var2][var4] & 2) == 0) {
                      return true;
                   }
 
-                  if(var2 == -1 + var5 && var1 == var4 && (this.anIntArrayArray1304[var2][var4] & 8) == 0) {
+                  if (var2 == -1 + var5 && var1 == var4 && (this.anIntArrayArray1304[var2][var4] & 8) == 0) {
                      return true;
                   }
 
-                  if(var5 - -1 == var2 && var4 == var1 && (this.anIntArrayArray1304[var2][var4] & 128) == 0) {
-                     return true;
-                  }
+                  return var5 - -1 == var2 && var4 == var1 && (this.anIntArrayArray1304[var2][var4] & 128) == 0;
                }
             } else {
                int var9 = -1 + var7 + var2;
                int var10 = -1 + var4 - -var7;
-               if(var6 == 0) {
-                  if(0 == var8) {
-                     if(-var7 + var5 == var2 && var1 >= var4 && var10 >= var1) {
+               if (var6 == 0) {
+                  if (0 == var8) {
+                     if (-var7 + var5 == var2 && var1 >= var4 && var10 >= var1) {
                         return true;
                      }
 
-                     if(var2 <= var5 && var5 <= var9 && var4 == 1 + var1 && 0 == (this.anIntArrayArray1304[var5][var4] & 19661088)) {
+                     if (var2 <= var5 && var5 <= var9 && var4 == 1 + var1 && 0 == (this.anIntArrayArray1304[var5][var4] & 19661088)) {
                         return true;
                      }
 
-                     if(var5 >= var2 && var9 >= var5 && var4 == -var7 + var1 && (this.anIntArrayArray1304[var5][var10] & 19661058) == 0) {
+                     if (var5 >= var2 && var9 >= var5 && var4 == -var7 + var1 && (this.anIntArrayArray1304[var5][var10] & 19661058) == 0) {
                         return true;
                      }
-                  } else if(1 == var8) {
-                     if(var2 <= var5 && var5 <= var9 && var4 == var1 - -1) {
-                        return true;
-                     }
-
-                     if(var5 - var7 == var2 && var1 >= var4 && var1 <= var10 && (this.anIntArrayArray1304[var9][var1] & 19661064) == 0) {
+                  } else if (1 == var8) {
+                     if (var2 <= var5 && var5 <= var9 && var4 == var1 - -1) {
                         return true;
                      }
 
-                     if(var5 + 1 == var2 && var4 <= var1 && var10 >= var1 && 0 == (this.anIntArrayArray1304[var2][var1] & 19661184)) {
-                        return true;
-                     }
-                  } else if(2 == var8) {
-                     if(1 + var5 == var2 && var4 <= var1 && var10 >= var1) {
+                     if (var5 - var7 == var2 && var1 >= var4 && var1 <= var10 && (this.anIntArrayArray1304[var9][var1] & 19661064) == 0) {
                         return true;
                      }
 
-                     if(var2 <= var5 && var5 <= var9 && 1 + var1 == var4 && (this.anIntArrayArray1304[var5][var4] & 19661088) == 0) {
+                     if (var5 + 1 == var2 && var4 <= var1 && var10 >= var1 && 0 == (this.anIntArrayArray1304[var2][var1] & 19661184)) {
+                        return true;
+                     }
+                  } else if (2 == var8) {
+                     if (1 + var5 == var2 && var4 <= var1 && var10 >= var1) {
                         return true;
                      }
 
-                     if(var2 <= var5 && var5 <= var9 && var4 == var1 - var7 && 0 == (19661058 & this.anIntArrayArray1304[var5][var10])) {
+                     if (var2 <= var5 && var5 <= var9 && 1 + var1 == var4 && (this.anIntArrayArray1304[var5][var4] & 19661088) == 0) {
                         return true;
                      }
-                  } else {
-                     if(3 == var8) {
-                        if(var2 <= var5 && var9 >= var5 && var1 + -var7 == var4) {
-                           return true;
-                        }
 
-                        if(var2 == var5 - var7 && var1 >= var4 && var1 <= var10 && (19661064 & this.anIntArrayArray1304[var9][var1]) == 0) {
-                           return true;
-                        }
+                     if (var2 <= var5 && var5 <= var9 && var4 == var1 - var7 && 0 == (19661058 & this.anIntArrayArray1304[var5][var10])) {
+                        return true;
+                     }
+                  } else if (3 == var8) {
+                     if (var2 <= var5 && var9 >= var5 && var1 + -var7 == var4) {
+                        return true;
+                     }
 
-                        if(var2 == 1 + var5 && var4 <= var1 && var10 >= var1 && (this.anIntArrayArray1304[var2][var1] & 19661184) == 0) {
-                           return true;
-                        }
+                     if (var2 == var5 - var7 && var1 >= var4 && var1 <= var10 && (19661064 & this.anIntArrayArray1304[var9][var1]) == 0) {
+                        return true;
+                     }
+
+                     if (var2 == 1 + var5 && var4 <= var1 && var10 >= var1 && (this.anIntArrayArray1304[var2][var1] & 19661184) == 0) {
+                        return true;
                      }
                   }
                }
 
-               if(var6 == 2) {
-                  if(var8 == 0) {
-                     if(var2 == -var7 + var5 && var4 <= var1 && var1 <= var10) {
+               if (var6 == 2) {
+                  if (var8 == 0) {
+                     if (var2 == -var7 + var5 && var4 <= var1 && var1 <= var10) {
                         return true;
                      }
 
-                     if(var2 <= var5 && var5 <= var9 && 1 + var1 == var4) {
+                     if (var2 <= var5 && var5 <= var9 && 1 + var1 == var4) {
                         return true;
                      }
 
-                     if(var2 == 1 + var5 && var1 >= var4 && var1 <= var10 && 0 == (this.anIntArrayArray1304[var2][var1] & 19661184)) {
+                     if (var2 == 1 + var5 && var1 >= var4 && var1 <= var10 && 0 == (this.anIntArrayArray1304[var2][var1] & 19661184)) {
                         return true;
                      }
 
-                     if(var2 <= var5 && var9 >= var5 && -var7 + var1 == var4 && (19661058 & this.anIntArrayArray1304[var5][var10]) == 0) {
+                     if (var2 <= var5 && var9 >= var5 && -var7 + var1 == var4 && (19661058 & this.anIntArrayArray1304[var5][var10]) == 0) {
                         return true;
                      }
-                  } else {
-                     if(var8 == 1) {
-                        if(var2 == var5 - var7 && var1 >= var4 && var10 >= var1 && (19661064 & this.anIntArrayArray1304[var9][var1]) == 0) {
-                           return true;
-                        }
+                  } else if (var8 == 1) {
+                     if (var2 == var5 - var7 && var1 >= var4 && var10 >= var1 && (19661064 & this.anIntArrayArray1304[var9][var1]) == 0) {
+                        return true;
+                     }
 
-                        if(var5 >= var2 && var5 <= var9 && var4 == 1 + var1) {
-                           return true;
-                        }
+                     if (var5 >= var2 && var5 <= var9 && var4 == 1 + var1) {
+                        return true;
+                     }
 
-                        if(var5 + 1 == var2 && var1 >= var4 && var10 >= var1) {
-                           return true;
-                        }
+                     if (var5 + 1 == var2 && var1 >= var4 && var10 >= var1) {
+                        return true;
+                     }
 
-                        if(var2 <= var5 && var9 >= var5 && var4 == -var7 + var1 && (this.anIntArrayArray1304[var5][var10] & 19661058) == 0) {
-                           return true;
-                        }
-                     } else {
-                        if(var8 == 2) {
-                           if(-var7 + var5 == var2 && var4 <= var1 && var10 >= var1 && (this.anIntArrayArray1304[var9][var1] & 19661064) == 0) {
-                              return true;
-                           }
+                     if (var2 <= var5 && var9 >= var5 && var4 == -var7 + var1 && (this.anIntArrayArray1304[var5][var10] & 19661058) == 0) {
+                        return true;
+                     }
+                  } else if (var8 == 2) {
+                     if (-var7 + var5 == var2 && var4 <= var1 && var10 >= var1 && (this.anIntArrayArray1304[var9][var1] & 19661064) == 0) {
+                        return true;
+                     }
 
-                           if(var5 >= var2 && var5 <= var9 && var4 == var1 + 1 && (this.anIntArrayArray1304[var5][var4] & 19661088) == 0) {
-                              return true;
-                           }
+                     if (var5 >= var2 && var5 <= var9 && var4 == var1 + 1 && (this.anIntArrayArray1304[var5][var4] & 19661088) == 0) {
+                        return true;
+                     }
 
-                           if(1 + var5 == var2 && var1 >= var4 && var1 <= var10) {
-                              return true;
-                           }
+                     if (1 + var5 == var2 && var1 >= var4 && var1 <= var10) {
+                        return true;
+                     }
 
-                           if(var2 <= var5 && var5 <= var9 && var4 == -var7 + var1) {
-                              return true;
-                           }
-                        } else if(var8 == 3) {
-                           if(-var7 + var5 == var2 && var1 >= var4 && var1 <= var10) {
-                              return true;
-                           }
+                     if (var2 <= var5 && var5 <= var9 && var4 == -var7 + var1) {
+                        return true;
+                     }
+                  } else if (var8 == 3) {
+                     if (-var7 + var5 == var2 && var1 >= var4 && var1 <= var10) {
+                        return true;
+                     }
 
-                           if(var5 >= var2 && var5 <= var9 && 1 + var1 == var4 && (this.anIntArrayArray1304[var5][var4] & 19661088) == 0) {
-                              return true;
-                           }
+                     if (var5 >= var2 && var5 <= var9 && 1 + var1 == var4 && (this.anIntArrayArray1304[var5][var4] & 19661088) == 0) {
+                        return true;
+                     }
 
-                           if(var2 == 1 + var5 && var4 <= var1 && var1 <= var10 && (this.anIntArrayArray1304[var2][var1] & 19661184) == 0) {
-                              return true;
-                           }
+                     if (var2 == 1 + var5 && var4 <= var1 && var1 <= var10 && (this.anIntArrayArray1304[var2][var1] & 19661184) == 0) {
+                        return true;
+                     }
 
-                           if(var2 <= var5 && var5 <= var9 && var1 + -var7 == var4) {
-                              return true;
-                           }
-                        }
+                     if (var2 <= var5 && var5 <= var9 && var1 + -var7 == var4) {
+                        return true;
                      }
                   }
                }
 
-               if(var6 == 9) {
-                  if(var5 >= var2 && var9 >= var5 && var1 - -1 == var4 && (this.anIntArrayArray1304[var5][var4] & 19661088) == 0) {
+               if (var6 == 9) {
+                  if (var5 >= var2 && var9 >= var5 && var1 - -1 == var4 && (this.anIntArrayArray1304[var5][var4] & 19661088) == 0) {
                      return true;
                   }
 
-                  if(var2 <= var5 && var9 >= var5 && var1 - var7 == var4 && (19661058 & this.anIntArrayArray1304[var5][var10]) == 0) {
+                  if (var2 <= var5 && var9 >= var5 && var1 - var7 == var4 && (19661058 & this.anIntArrayArray1304[var5][var10]) == 0) {
                      return true;
                   }
 
-                  if(var2 == -var7 + var5 && var1 >= var4 && var10 >= var1 && (19661064 & this.anIntArrayArray1304[var9][var1]) == 0) {
+                  if (var2 == -var7 + var5 && var1 >= var4 && var10 >= var1 && (19661064 & this.anIntArrayArray1304[var9][var1]) == 0) {
                      return true;
                   }
 
-                  if(1 + var5 == var2 && var4 <= var1 && var10 >= var1 && (this.anIntArrayArray1304[var2][var1] & 19661184) == 0) {
-                     return true;
-                  }
+                  return 1 + var5 == var2 && var4 <= var1 && var10 >= var1 && (this.anIntArrayArray1304[var2][var1] & 19661184) == 0;
                }
             }
 
-            return false;
          }
+         return false;
       } catch (RuntimeException var11) {
          throw Class44.clientError(var11, "mj.D(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ')');
       }
@@ -759,15 +741,13 @@ final class Class91 {
                   if(var3 == var7 && var4 == 1 + var1 && (32 & this.anIntArrayArray1304[var7][var4]) == 0) {
                      return true;
                   }
-               } else {
-                  if(3 == var6) {
-                     if(var3 - -1 == var7 && var4 == var1 && (128 & this.anIntArrayArray1304[var7][var4]) == 0) {
-                        return true;
-                     }
+               } else if (3 == var6) {
+                  if (var3 - -1 == var7 && var4 == var1 && (128 & this.anIntArrayArray1304[var7][var4]) == 0) {
+                     return true;
+                  }
 
-                     if(var7 == var3 && var1 - -1 == var4 && (32 & this.anIntArrayArray1304[var7][var4]) == 0) {
-                        return true;
-                     }
+                  if (var7 == var3 && var1 - -1 == var4 && (32 & this.anIntArrayArray1304[var7][var4]) == 0) {
+                     return true;
                   }
                }
             }
@@ -785,9 +765,7 @@ final class Class91 {
                   return true;
                }
 
-               if(var3 - -1 == var7 && var1 == var4 && (128 & this.anIntArrayArray1304[var7][var4]) == 0) {
-                  return true;
-               }
+               return var3 - -1 == var7 && var1 == var4 && (128 & this.anIntArrayArray1304[var7][var4]) == 0;
             }
          } else {
             int var9 = var7 + var5 + -1;
@@ -805,33 +783,29 @@ final class Class91 {
                   if(var7 <= var3 && var9 >= var3 && var4 == var1 + -var5 && (2 & this.anIntArrayArray1304[var3][var10]) == 0) {
                      return true;
                   }
-               } else {
-                  if(var6 == 1) {
-                     if(var7 == -var5 + var3 && var1 >= var4 && var1 <= var10 && (8 & this.anIntArrayArray1304[var9][var1]) == 0) {
-                        return true;
-                     }
+               } else if (var6 == 1) {
+                  if (var7 == -var5 + var3 && var1 >= var4 && var1 <= var10 && (8 & this.anIntArrayArray1304[var9][var1]) == 0) {
+                     return true;
+                  }
 
-                     if(var7 <= var3 && var3 <= var9 && var1 + -var5 == var4 && 0 == (this.anIntArrayArray1304[var3][var10] & 2)) {
-                        return true;
-                     }
-                  } else if(var6 == 2) {
-                     if(-var5 + var3 == var7 && var1 >= var4 && var10 >= var1 && (8 & this.anIntArrayArray1304[var9][var1]) == 0) {
-                        return true;
-                     }
+                  if (var7 <= var3 && var3 <= var9 && var1 + -var5 == var4 && 0 == (this.anIntArrayArray1304[var3][var10] & 2)) {
+                     return true;
+                  }
+               } else if (var6 == 2) {
+                  if (-var5 + var3 == var7 && var1 >= var4 && var10 >= var1 && (8 & this.anIntArrayArray1304[var9][var1]) == 0) {
+                     return true;
+                  }
 
-                     if(var7 <= var3 && var3 <= var9 && var1 + 1 == var4 && 0 == (32 & this.anIntArrayArray1304[var3][var4])) {
-                        return true;
-                     }
-                  } else {
-                     if(var6 == 3) {
-                        if(var7 == 1 + var3 && var4 <= var1 && var10 >= var1 && (128 & this.anIntArrayArray1304[var7][var1]) == 0) {
-                           return true;
-                        }
+                  if (var7 <= var3 && var3 <= var9 && var1 + 1 == var4 && 0 == (32 & this.anIntArrayArray1304[var3][var4])) {
+                     return true;
+                  }
+               } else if (var6 == 3) {
+                  if (var7 == 1 + var3 && var4 <= var1 && var10 >= var1 && (128 & this.anIntArrayArray1304[var7][var1]) == 0) {
+                     return true;
+                  }
 
-                        if(var7 <= var3 && var9 >= var3 && var4 == var1 - -1 && 0 == (this.anIntArrayArray1304[var3][var4] & 32)) {
-                           return true;
-                        }
-                     }
+                  if (var7 <= var3 && var9 >= var3 && var4 == var1 - -1 && 0 == (this.anIntArrayArray1304[var3][var4] & 32)) {
+                     return true;
                   }
                }
             }
@@ -849,9 +823,7 @@ final class Class91 {
                   return true;
                }
 
-               if(1 + var3 == var7 && var1 >= var4 && var1 <= var10 && 0 == (this.anIntArrayArray1304[var7][var1] & 128)) {
-                  return true;
-               }
+               return 1 + var3 == var7 && var1 >= var4 && var1 <= var10 && 0 == (this.anIntArrayArray1304[var7][var1] & 128);
             }
          }
 
@@ -993,7 +965,7 @@ final class Class91 {
 
       int var13 = (var5 << 9) / var11;
       int var14 = (var12 << 9) / var11;
-      return var7 < 50 && var11 < 50?false:(var7 > var4 && var11 > var4?false:(var9 < Class139.anInt1824 && var13 < Class139.anInt1824?false:(var9 > Class145.anInt1898 && var13 > Class145.anInt1898?false:(var10 < Class1.anInt55 && var14 < Class1.anInt55?false:var10 <= Class86.anInt1195 || var14 <= Class86.anInt1195))));
+      return (var7 >= 50 || var11 >= 50) && ((var7 <= var4 || var11 <= var4) && ((var9 >= Class139.anInt1824 || var13 >= Class139.anInt1824) && ((var9 <= Class145.anInt1898 || var13 <= Class145.anInt1898) && ((var10 >= Class1.anInt55 || var14 >= Class1.anInt55) && (var10 <= Class86.anInt1195 || var14 <= Class86.anInt1195)))));
    }
 
    final void method1496(int var1) {
@@ -1028,7 +1000,7 @@ final class Class91 {
    final boolean method1498(boolean var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
       try {
          if(var5 > 1) {
-            return this.method1487(var5, var6, var2, var9, var3, var8, var5, var4)?true:this.method1494(var2, var8, var6, var7, var9, var4, var3, var5, var5);
+            return this.method1487(var5, var6, var2, var9, var3, var8, var5, var4) || this.method1494(var2, var8, var6, var7, var9, var4, var3, var5, var5);
          } else {
             int var10 = -1 + var6 + var2;
             int var11 = var8 + (var9 - 1);
@@ -1039,7 +1011,7 @@ final class Class91 {
                   this.method1501((byte)-85, 4, 106, -39);
                }
 
-               return var2 + -1 == var4 && var8 <= var3 && var3 <= var11 && (this.anIntArrayArray1304[-this.anInt1309 + var4][var3 - this.anInt1306] & 8) == 0 && (var7 & 8) == 0 ?true:(var4 == 1 + var10 && var3 >= var8 && var3 <= var11 && 0 == (128 & this.anIntArrayArray1304[var4 - this.anInt1309][-this.anInt1306 + var3]) && (var7 & 2) == 0?true:(var8 - 1 == var3 && var4 >= var2 && var10 >= var4 && (2 & this.anIntArrayArray1304[-this.anInt1309 + var4][-this.anInt1306 + var3]) == 0 && (4 & var7) == 0 ?true: 1 + var11 == var3 && var4 >= var2 && var4 <= var10 && (32 & this.anIntArrayArray1304[var4 - this.anInt1309][var3 + -this.anInt1306]) == 0 && (var7 & 1) == 0));
+               return var2 + -1 == var4 && var8 <= var3 && var3 <= var11 && (this.anIntArrayArray1304[-this.anInt1309 + var4][var3 - this.anInt1306] & 8) == 0 && (var7 & 8) == 0 || (var4 == 1 + var10 && var3 >= var8 && var3 <= var11 && 0 == (128 & this.anIntArrayArray1304[var4 - this.anInt1309][-this.anInt1306 + var3]) && (var7 & 2) == 0 || (var8 - 1 == var3 && var4 >= var2 && var10 >= var4 && (2 & this.anIntArrayArray1304[-this.anInt1309 + var4][-this.anInt1306 + var3]) == 0 && (4 & var7) == 0 || 1 + var11 == var3 && var4 >= var2 && var4 <= var10 && (32 & this.anIntArrayArray1304[var4 - this.anInt1309][var3 + -this.anInt1306]) == 0 && (var7 & 1) == 0));
             }
          }
       } catch (RuntimeException var12) {

@@ -49,12 +49,10 @@ final class Class3_Sub13_Sub38 extends Class3_Sub13 {
             this.anInt3447 = var2.getShort(1);
          } else if(var1 == 2) {
             this.anInt3451 = var2.getByte((byte)-116);
-         } else {
-            if(3 == var1) {
-               this.anInt3444 = var2.getShort(1);
-            } else if(var1 == 4) {
-               this.anInt3450 = var2.getShort(1);
-            }
+         } else if (3 == var1) {
+             this.anInt3444 = var2.getShort(1);
+         } else if (var1 == 4) {
+             this.anInt3450 = var2.getShort(1);
          }
 
          if(var3) {

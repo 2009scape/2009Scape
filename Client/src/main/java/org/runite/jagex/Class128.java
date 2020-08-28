@@ -20,48 +20,46 @@ final class Class128 {
          Class61 var3 = Class3_Sub13_Sub22.aClass61ArrayArrayArray3273[WorldListCountry.localPlane][var2][var0];
          if(var3 == null) {
             ObjectDefinition.method1688(WorldListCountry.localPlane, var2, var0);
-         } else {
-            if((byte) 65 == 65) {
-               int var4 = -99999999;
-               Class3_Sub28_Sub14 var5 = null;
+         } else if ((byte) 65 == 65) {
+            int var4 = -99999999;
+            Class3_Sub28_Sub14 var5 = null;
 
-               Class3_Sub28_Sub14 var6;
-               for(var6 = (Class3_Sub28_Sub14)var3.method1222(); null != var6; var6 = (Class3_Sub28_Sub14)var3.method1221()) {
-                  ItemDefinition var7 = Class38.getItemDefinition(var6.aClass140_Sub7_3676.anInt2936, (byte)104);
-                  int var8 = var7.value;
-                  if(var7.stackingType == 1) {
-                     var8 *= 1 + var6.aClass140_Sub7_3676.anInt2930;
-                  }
-
-                  if(var4 < var8) {
-                     var4 = var8;
-                     var5 = var6;
-                  }
+            Class3_Sub28_Sub14 var6;
+            for (var6 = (Class3_Sub28_Sub14) var3.method1222(); null != var6; var6 = (Class3_Sub28_Sub14) var3.method1221()) {
+               ItemDefinition var7 = Class38.getItemDefinition(var6.aClass140_Sub7_3676.anInt2936, (byte) 104);
+               int var8 = var7.value;
+               if (var7.stackingType == 1) {
+                  var8 *= 1 + var6.aClass140_Sub7_3676.anInt2930;
                }
 
-               if(null == var5) {
-                  ObjectDefinition.method1688(WorldListCountry.localPlane, var2, var0);
-               } else {
-                  var3.method1216(var5);
-                  Class140_Sub7 var12 = null;
-                  Class140_Sub7 var14 = null;
+               if (var4 < var8) {
+                  var4 = var8;
+                  var5 = var6;
+               }
+            }
 
-                  for(var6 = (Class3_Sub28_Sub14)var3.method1222(); var6 != null; var6 = (Class3_Sub28_Sub14)var3.method1221()) {
-                     Class140_Sub7 var9 = var6.aClass140_Sub7_3676;
-                     if(var5.aClass140_Sub7_3676.anInt2936 != var9.anInt2936) {
-                        if(null == var12) {
-                           var12 = var9;
-                        }
+            if (null == var5) {
+               ObjectDefinition.method1688(WorldListCountry.localPlane, var2, var0);
+            } else {
+               var3.method1216(var5);
+               Class140_Sub7 var12 = null;
+               Class140_Sub7 var14 = null;
 
-                        if(var12.anInt2936 != var9.anInt2936 && null == var14) {
-                           var14 = var9;
-                        }
+               for (var6 = (Class3_Sub28_Sub14) var3.method1222(); var6 != null; var6 = (Class3_Sub28_Sub14) var3.method1221()) {
+                  Class140_Sub7 var9 = var6.aClass140_Sub7_3676;
+                  if (var5.aClass140_Sub7_3676.anInt2936 != var9.anInt2936) {
+                     if (null == var12) {
+                        var12 = var9;
+                     }
+
+                     if (var12.anInt2936 != var9.anInt2936 && null == var14) {
+                        var14 = var9;
                      }
                   }
-
-                  long var13 = (long)(1610612736 + (var0 << 7) + var2);
-                  Class3_Sub13_Sub10.method213(WorldListCountry.localPlane, var2, var0, Class121.method1736(WorldListCountry.localPlane, 1, 64 + 128 * var2, 64 + var0 * 128), var5.aClass140_Sub7_3676, var13, var12, var14);
                }
+
+               long var13 = (long) (1610612736 + (var0 << 7) + var2);
+               Class3_Sub13_Sub10.method213(WorldListCountry.localPlane, var2, var0, Class121.method1736(WorldListCountry.localPlane, 1, 64 + 128 * var2, 64 + var0 * 128), var5.aClass140_Sub7_3676, var13, var12, var14);
             }
          }
       } catch (RuntimeException var11) {
@@ -96,8 +94,7 @@ final class Class128 {
 
    static final Model method1763(int var1, int var2, int var3, int var4, Model var5, int var6) {
       try {
-         long var7 = (long)var3;
-         Model var9 = (Model)Class61.aClass93_939.get(var7);
+         Model var9 = (Model)Class61.aClass93_939.get((long)var3);
          if(var9 == null) {
             Model_Sub1 var10 = Model_Sub1.method2015(Class159.aClass153_2019, var3);
             if(var10 == null) {
@@ -105,7 +102,7 @@ final class Class128 {
             }
 
             var9 = var10.method2008(64, 768, -50, -10, -50);
-            Class61.aClass93_939.put((byte)-95, var9, var7);
+            Class61.aClass93_939.put((byte)-95, var9, (long)var3);
          }
 
          int var17 = var5.method1884();

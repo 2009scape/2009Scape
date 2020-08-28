@@ -222,21 +222,21 @@ final class Class3_Sub13_Sub34 extends Class3_Sub13 {
          if(var3) {
             if(var1 == 0) {
                this.anInt3404 = var2.getShort(1);
-            } else if(1 != var1) {
+            } else if(1 == var1) {
+               this.anInt3405 = var2.getShort(1);
+            } else {
                if(~var1 == -3) {
                   this.anInt3406 = var2.getShort(1);
-               } else if(var1 != 3) {
+               } else if(var1 == 3) {
+                  this.anInt3410 = var2.getShort(1);
+               } else {
                   if(4 == var1) {
                      int var4 = var2.getTriByte((byte)107);
                      this.anIntArray3403[2] = Class3_Sub28_Sub15.method633(var4, 255) >> 12;
                      this.anIntArray3403[1] = Class3_Sub28_Sub15.method633(var4 >> 4, 4080);
                      this.anIntArray3403[0] = Class3_Sub28_Sub15.method633(16711680, var4) << 4;
                   }
-               } else {
-                  this.anInt3410 = var2.getShort(1);
                }
-            } else {
-               this.anInt3405 = var2.getShort(1);
             }
 
          }
@@ -323,11 +323,11 @@ final class Class3_Sub13_Sub34 extends Class3_Sub13 {
    static final void method331(long var0, int var2) {
       try {
          if(0L < var0) {
-            if(0L != var0 % 10L) {
-               Class128.method1762(var0, (byte)-128);
-            } else {
+            if(0L == var0 % 10L) {
                Class128.method1762(var0 + -1L, (byte)-123);
                Class128.method1762(1L, (byte)24);
+            } else {
+               Class128.method1762(var0, (byte)-128);
             }
 
             if(var2 != 64) {

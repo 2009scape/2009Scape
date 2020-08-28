@@ -33,10 +33,8 @@ final class Class3_Sub28_Sub3 extends Node {
                method544(-51, 82);
             }
 
-            return false;
-         } else {
-            return false;
          }
+          return false;
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "bn.B(" + var1 + ',' + (byte) 97 + ',' + var3 + ')');
       }
@@ -182,7 +180,7 @@ final class Class3_Sub28_Sub3 extends Node {
 
    static final boolean method544(int var0, int var1) {
       try {
-         return var0 != -49?true: var1 >= 48 && 57 >= var1;
+         return var0 != -49 || var1 >= 48 && 57 >= var1;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "bn.E(" + var0 + ',' + var1 + ')');
       }

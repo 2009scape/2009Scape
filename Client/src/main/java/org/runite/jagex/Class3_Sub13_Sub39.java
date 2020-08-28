@@ -61,54 +61,52 @@ final class Class3_Sub13_Sub39 extends Class3_Sub13 {
 
                this.aShortArray3465[var2] = (short)var20;
             }
+         } else if (var2 == 1) {
+            for (var2 = 0; var2 < 257; ++var2) {
+               var4 = var2 << 4;
+
+               for (var3 = 1; -1 + this.anIntArrayArray3469.length > var3 && var4 >= this.anIntArrayArray3469[var3][0]; ++var3) {
+                  ;
+               }
+
+               var5 = this.anIntArrayArray3469[-1 + var3];
+               var6 = this.anIntArrayArray3469[var3];
+               var7 = (var4 + -var5[0] << 12) / (-var5[0] + var6[0]);
+               var8 = 4096 + -Class75_Sub2.anIntArray2639[(8189 & var7) >> 5] >> 1;
+               var9 = -var8 + 4096;
+               var10 = var8 * var6[1] + var5[1] * var9 >> 12;
+               if (var10 <= -32768) {
+                  var10 = -32767;
+               }
+
+               if ('\u8000' <= var10) {
+                  var10 = 32767;
+               }
+
+               this.aShortArray3465[var2] = (short) var10;
+            }
          } else {
-            if(var2 == 1) {
-               for(var2 = 0; var2 < 257; ++var2) {
-                  var4 = var2 << 4;
+            for (var2 = 0; var2 < 257; ++var2) {
+               var4 = var2 << 4;
 
-                  for(var3 = 1; -1 + this.anIntArrayArray3469.length > var3 && var4 >= this.anIntArrayArray3469[var3][0]; ++var3) {
-                     ;
-                  }
-
-                  var5 = this.anIntArrayArray3469[-1 + var3];
-                  var6 = this.anIntArrayArray3469[var3];
-                  var7 = (var4 + -var5[0] << 12) / (-var5[0] + var6[0]);
-                  var8 = 4096 + -Class75_Sub2.anIntArray2639[(8189 & var7) >> 5] >> 1;
-                  var9 = -var8 + 4096;
-                  var10 = var8 * var6[1] + var5[1] * var9 >> 12;
-                  if(var10 <= -32768) {
-                     var10 = -32767;
-                  }
-
-                  if('\u8000' <= var10) {
-                     var10 = 32767;
-                  }
-
-                  this.aShortArray3465[var2] = (short)var10;
+               for (var3 = 1; -1 + this.anIntArrayArray3469.length > var3 && var4 >= this.anIntArrayArray3469[var3][0]; ++var3) {
+                  ;
                }
-            } else {
-               for(var2 = 0; var2 < 257; ++var2) {
-                  var4 = var2 << 4;
 
-                  for(var3 = 1; -1 + this.anIntArrayArray3469.length > var3 && var4 >= this.anIntArrayArray3469[var3][0]; ++var3) {
-                     ;
-                  }
-
-                  var6 = this.anIntArrayArray3469[var3];
-                  var5 = this.anIntArrayArray3469[-1 + var3];
-                  var7 = (-var5[0] + var4 << 12) / (-var5[0] + var6[0]);
-                  var8 = -var7 + 4096;
-                  var9 = var6[1] * var7 + var8 * var5[1] >> 12;
-                  if(-32768 >= var9) {
-                     var9 = -32767;
-                  }
-
-                  if('\u8000' <= var9) {
-                     var9 = 32767;
-                  }
-
-                  this.aShortArray3465[var2] = (short)var9;
+               var6 = this.anIntArrayArray3469[var3];
+               var5 = this.anIntArrayArray3469[-1 + var3];
+               var7 = (-var5[0] + var4 << 12) / (-var5[0] + var6[0]);
+               var8 = -var7 + 4096;
+               var9 = var6[1] * var7 + var8 * var5[1] >> 12;
+               if (-32768 >= var9) {
+                  var9 = -32767;
                }
+
+               if ('\u8000' <= var9) {
+                  var9 = 32767;
+               }
+
+               this.aShortArray3465[var2] = (short) var9;
             }
          }
 

@@ -2470,7 +2470,7 @@ final class Class140_Sub1_Sub1 extends Model {
    }
 
    private final boolean method1927(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
-      return var2 < var3 && var2 < var4 && var2 < var5?false:(var2 > var3 && var2 > var4 && var2 > var5?false:(var1 < var6 && var1 < var7 && var1 < var8?false:var1 <= var6 || var1 <= var7 || var1 <= var8));
+      return (var2 >= var3 || var2 >= var4 || var2 >= var5) && ((var2 <= var3 || var2 <= var4 || var2 <= var5) && ((var1 >= var6 || var1 >= var7 || var1 >= var8) && (var1 <= var6 || var1 <= var7 || var1 <= var8)));
    }
 
    private static final short[] method1928(short[] var0, int var1) {
@@ -2821,46 +2821,44 @@ final class Class140_Sub1_Sub1 extends Model {
                this.anIntArray3848[var5] += anInt3862;
             }
 
-         } else {
-            if(var1 == 5) {
-               for(var5 = 0; var5 < this.anInt3852; ++var5) {
-                  var6 = (this.aByteArray3816[var5] & 255) + var2 * 8;
-                  if(var6 < 0) {
-                     var6 = 0;
-                  } else if(var6 > 255) {
-                     var6 = 255;
-                  }
-
-                  this.aByteArray3816[var5] = (byte)var6;
+         } else if (var1 == 5) {
+            for (var5 = 0; var5 < this.anInt3852; ++var5) {
+               var6 = (this.aByteArray3816[var5] & 255) + var2 * 8;
+               if (var6 < 0) {
+                  var6 = 0;
+               } else if (var6 > 255) {
+                  var6 = 255;
                }
 
-               this.aClass121_3814.aBoolean1640 = false;
-            } else if(var1 == 7) {
-               for(var5 = 0; var5 < this.anInt3852; ++var5) {
-                  var6 = this.aShortArray3808[var5] & '\uffff';
-                  var7 = var6 >> 10 & 63;
-                  var8 = var6 >> 7 & 7;
-                  int var9 = var6 & 127;
-                  var7 = var7 + var2 & 63;
-                  var8 += var3 / 4;
-                  if(var8 < 0) {
-                     var8 = 0;
-                  } else if(var8 > 7) {
-                     var8 = 7;
-                  }
-
-                  var9 += var4;
-                  if(var9 < 0) {
-                     var9 = 0;
-                  } else if(var9 > 127) {
-                     var9 = 127;
-                  }
-
-                  this.aShortArray3808[var5] = (short)(var7 << 10 | var8 << 7 | var9);
-               }
-
-               this.aClass121_3814.aBoolean1640 = false;
+               this.aByteArray3816[var5] = (byte) var6;
             }
+
+            this.aClass121_3814.aBoolean1640 = false;
+         } else if (var1 == 7) {
+            for (var5 = 0; var5 < this.anInt3852; ++var5) {
+               var6 = this.aShortArray3808[var5] & '\uffff';
+               var7 = var6 >> 10 & 63;
+               var8 = var6 >> 7 & 7;
+               int var9 = var6 & 127;
+               var7 = var7 + var2 & 63;
+               var8 += var3 / 4;
+               if (var8 < 0) {
+                  var8 = 0;
+               } else if (var8 > 7) {
+                  var8 = 7;
+               }
+
+               var9 += var4;
+               if (var9 < 0) {
+                  var9 = 0;
+               } else if (var9 > 127) {
+                  var9 = 127;
+               }
+
+               this.aShortArray3808[var5] = (short) (var7 << 10 | var8 << 7 | var9);
+            }
+
+            this.aClass121_3814.aBoolean1640 = false;
          }
       }
    }

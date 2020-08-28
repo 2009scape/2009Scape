@@ -104,17 +104,13 @@ final class Class3_Sub13_Sub23_Sub1 extends Class3_Sub13_Sub23 {
                var15 = var13;
                var13 = var14;
                var14 = -var15 + 128;
-            } else {
-               if(var10 == 2) {
-                  var14 = -var14 + 128;
-                  var13 = -var13 + 128;
-               } else {
-                  if(var10 == 3) {
-                     var15 = var13;
-                     var13 = 128 - var14;
-                     var14 = var15;
-                  }
-               }
+            } else if (var10 == 2) {
+               var14 = -var14 + 128;
+               var13 = -var13 + 128;
+            } else if (var10 == 3) {
+               var15 = var13;
+               var13 = 128 - var14;
+               var14 = var15;
             }
 
             float var17;

@@ -205,18 +205,10 @@ final class ObjectDefinition {
          }
 
          boolean var11;
-         if(128 == this.anInt1479 && this.anInt1488 == 128 && 128 == this.anInt1481) {
-            var11 = false;
-         } else {
-            var11 = true;
-         }
+         var11 = 128 != this.anInt1479 || this.anInt1488 != 128 || 128 != this.anInt1481;
 
          boolean var12;
-         if(this.anInt1496 == 0 && this.anInt1511 == 0 && 0 == this.SecondBool) {
-            var12 = false;
-         } else {
-            var12 = true;
-         }
+         var12 = this.anInt1496 != 0 || this.anInt1511 != 0 || 0 != this.SecondBool;
 
          Model_Sub1 var13 = new Model_Sub1(var4, -1 == ~var1 && !var11 && !var12, this.OriginalColors == null, null == this.aShortArray1476);
          if(var2 == 4 && var1 > 3) {
@@ -227,14 +219,10 @@ final class ObjectDefinition {
          var1 &= 3;
          if(var1 == 1) {
             var13.method1991();
-         } else {
-            if(var1 == 2) {
-               var13.method1989();
-            } else {
-               if(3 == var1) {
-                  var13.method2018();
-               }
-            }
+         } else if (var1 == 2) {
+            var13.method1989();
+         } else if (3 == var1) {
+            var13.method2018();
          }
 
          int var9;
@@ -620,7 +608,7 @@ final class ObjectDefinition {
                var2 &= Class69.aClass153_1043.method2129((byte)64, 0, '\uffff' & this.models[var3]);
             }
 
-            return false ?true:var2;
+            return false || var2;
          }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "pb.I(" + false + ')');
@@ -734,10 +722,8 @@ final class ObjectDefinition {
             var19.method1925();
          } else if(var1 == 2) {
             var19.method1911();
-         } else {
-            if(var1 == 3) {
-               var19.method1902();
-            }
+         } else if (var1 == 3) {
+            var19.method1902();
          }
 
          if(null != this.OriginalColors) {
@@ -827,7 +813,6 @@ final class ObjectDefinition {
                Class100.aClass136_1413.aClass140_1777 = var18;
                var18.aBoolean3809 = var17;
                Class100.aClass136_1413.aClass109_Sub1_1770 = var15;
-               return Class100.aClass136_1413;
             } else {
                if(this.configuration == null) {
                   var12 = (long)((this.objectId << 10) + var1);
@@ -875,16 +860,14 @@ final class ObjectDefinition {
                if(0 != this.aByte1505) {
                   if(var22 instanceof Class140_Sub1_Sub2) {
                      var22 = ((Class140_Sub1_Sub2)var22).method1941(this.aByte1505, this.aShort1500, var3, var6, var2, var5, var11, true);
-                  } else {
-                     if(var22 instanceof Model_Sub1) {
-                        var22 = ((Model_Sub1)var22).method1999(this.aByte1505, this.aShort1500, var3, var6, var2, var5, var11);
-                     }
+                  } else if (var22 instanceof Model_Sub1) {
+                     var22 = ((Model_Sub1) var22).method1999(this.aByte1505, this.aShort1500, var3, var6, var2, var5, var11);
                   }
                }
 
                Class100.aClass136_1413.aClass140_1777 = (GameObject)var22;
-               return Class100.aClass136_1413;
             }
+            return Class100.aClass136_1413;
          }
       } catch (RuntimeException var19) {
          throw Class44.clientError(var19, "pb.A(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ',' + (var6 != null?"{...}":"null") + ',' + var7 + ',' + (var8 != null?"{...}":"null") + ',' + var9 + ',' + var10 + ',' + var11 + ')');
@@ -949,7 +932,6 @@ final class ObjectDefinition {
             }
 
             Class100.aClass136_1413.aClass140_1777 = var22;
-            return Class100.aClass136_1413;
          } else {
             if(this.configuration == null) {
                var15 = (long)((this.objectId << 10) + var6);
@@ -993,8 +975,8 @@ final class ObjectDefinition {
             }
 
             Class100.aClass136_1413.aClass140_1777 = var17;
-            return Class100.aClass136_1413;
          }
+         return Class100.aClass136_1413;
       } catch (RuntimeException var20) {
          throw Class44.clientError(var20, "pb.M(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ',' + var8 + ',' + var9 + ',' + var10 + ',' + (var11 != null?"{...}":"null") + ',' + var12 + ',' + var13 + ',' + var14 + ')');
       }

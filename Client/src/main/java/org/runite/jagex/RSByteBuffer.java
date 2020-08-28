@@ -676,66 +676,62 @@ class RSByteBuffer extends Class3 {
 
 							++var14;
 						}
-					} else {
-						if(1 == var13) {
-							for(var14 = 0; var14 < 64; var14 += 4) {
-								for(var15 = 0; var15 < 64; var15 += 4) {
-									byte var16 = var20.getByte();
+					} else if (1 == var13) {
+						for (var14 = 0; var14 < 64; var14 += 4) {
+							for (var15 = 0; var15 < 64; var15 += 4) {
+								byte var16 = var20.getByte();
 
-									for(var17 = var14 + var5; 4 + var5 + var14 > var17; ++var17) {
-										for(int var18 = var3 + var15; 4 + var3 + var15 > var18; ++var18) {
-											if(var17 >= 0 && var17 < 104 && 0 <= var18 && var18 < 104) {
-												Class136.aByteArrayArrayArray1774[var12][var17][var18] = var16;
-											}
+								for (var17 = var14 + var5; 4 + var5 + var14 > var17; ++var17) {
+									for (int var18 = var3 + var15; 4 + var3 + var15 > var18; ++var18) {
+										if (var17 >= 0 && var17 < 104 && 0 <= var18 && var18 < 104) {
+											Class136.aByteArrayArrayArray1774[var12][var17][var18] = var16;
 										}
 									}
 								}
 							}
-						} else {
-							if(var13 == 2 && var12 > 0) {
-								var15 = var5 + 64;
-								var24 = var3;
-								var17 = var3 + 64;
-								if(var15 < 0) {
-									var15 = 0;
-								} else if(104 <= var15) {
-									var15 = 104;
-								}
+						}
+					} else if (var13 == 2 && var12 > 0) {
+						var15 = var5 + 64;
+						var24 = var3;
+						var17 = var3 + 64;
+						if (var15 < 0) {
+							var15 = 0;
+						} else if (104 <= var15) {
+							var15 = 104;
+						}
 
-								if(var3 >= 0) {
-									if(var3 >= 104) {
-										var24 = 104;
-									}
-								} else {
-									var24 = 0;
-								}
-
-								if(var17 >= 0) {
-									if(var17 >= 104) {
-										var17 = 104;
-									}
-								} else {
-									var17 = 0;
-								}
-
-								var14 = var5;
-								if(var5 >= 0) {
-									if(104 <= var5) {
-										var14 = 104;
-									}
-								} else {
-									var14 = 0;
-								}
-
-								while(var15 > var14) {
-									while(var17 > var24) {
-										Class136.aByteArrayArrayArray1774[var12][var14][var24] = Class136.aByteArrayArrayArray1774[var12 + -1][var14][var24];
-										++var24;
-									}
-
-									++var14;
-								}
+						if (var3 >= 0) {
+							if (var3 >= 104) {
+								var24 = 104;
 							}
+						} else {
+							var24 = 0;
+						}
+
+						if (var17 >= 0) {
+							if (var17 >= 104) {
+								var17 = 104;
+							}
+						} else {
+							var17 = 0;
+						}
+
+						var14 = var5;
+						if (var5 >= 0) {
+							if (104 <= var5) {
+								var14 = 104;
+							}
+						} else {
+							var14 = 0;
+						}
+
+						while (var15 > var14) {
+							while (var17 > var24) {
+								Class136.aByteArrayArrayArray1774[var12][var14][var24] = Class136.aByteArrayArrayArray1774[var12 + -1][var14][var24];
+								++var24;
+							}
+
+							++var14;
 						}
 					}
 				}

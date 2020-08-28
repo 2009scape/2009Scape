@@ -62,19 +62,17 @@ final class Class151_Sub1 extends Class151 {
                      Class21.maskUpdateIndexes[Class66.maskUpdateCount++] = 2047;
                   }
 
-               } else {
-                  if(type == 3) {
-                     var4 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 7);
-                     var5 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 1);
-                     WorldListCountry.localPlane = GraphicDefinition.incomingBuffer.getBits((byte)-11, 2);
-                     int var6 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 1);
-                     if(var6 == 1) {
-                        Class21.maskUpdateIndexes[Class66.maskUpdateCount++] = 2047;
-                     }
-
-                     int var7 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 7);
-                     Class102.player.method1981(var7, var5 == 1, var4);
+               } else if (type == 3) {
+                  var4 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 7);
+                  var5 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 1);
+                  WorldListCountry.localPlane = GraphicDefinition.incomingBuffer.getBits((byte) -11, 2);
+                  int var6 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 1);
+                  if (var6 == 1) {
+                     Class21.maskUpdateIndexes[Class66.maskUpdateCount++] = 2047;
                   }
+
+                  int var7 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 7);
+                  Class102.player.method1981(var7, var5 == 1, var4);
                }
             }
          }
@@ -208,7 +206,7 @@ final class Class151_Sub1 extends Class151 {
 
    static final boolean method2103(int var0, int var1) {
       try {
-         return var1 >= -78?true: var0 == 198 || 230 == var0 || var0 == 156 || var0 == 140 || 223 == var0;
+         return var1 >= -78 || (var0 == 198 || 230 == var0 || var0 == 156 || var0 == 140 || 223 == var0);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "bg.P(" + var0 + ',' + var1 + ')');
       }
@@ -249,21 +247,19 @@ final class Class151_Sub1 extends Class151 {
       try {
          if(null == this.aClass62_2944) {
             return 0;
-         } else {
-            if(this.aBoolean2962) {
-               Class3 var2 = this.aClass61_2966.method1222();
-               if(null == var2) {
-                  return 0;
-               } else {
-                  if(var1 != 1) {
-                     this.anInt2964 = -91;
-                  }
-
-                  return (int)var2.aLong71;
-               }
+         } else if (this.aBoolean2962) {
+            Class3 var2 = this.aClass61_2966.method1222();
+            if (null == var2) {
+               return 0;
             } else {
-               return this.aClass62_2944.validArchiveAmount;
+               if (var1 != 1) {
+                  this.anInt2964 = -91;
+               }
+
+               return (int) var2.aLong71;
             }
+         } else {
+            return this.aClass62_2944.validArchiveAmount;
          }
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "bg.O(" + var1 + ')');
@@ -298,81 +294,77 @@ final class Class151_Sub1 extends Class151 {
                   }
 
                   while(this.aClass62_2944.archiveFileLengths.length > this.anInt2964) {
-                     if(this.aClass62_2944.archiveFileLengths[this.anInt2964] == 0) {
-                        ++this.anInt2964;
-                     } else {
-                        if(this.aClass73_2956.anInt1087 >= 250) {
+                     if (this.aClass62_2944.archiveFileLengths[this.anInt2964] != 0) {
+                        if (this.aClass73_2956.anInt1087 >= 250) {
                            var2 = false;
                            break;
                         }
 
-                        if(0 == this.aByteArray2949[this.anInt2964]) {
+                        if (0 == this.aByteArray2949[this.anInt2964]) {
                            this.method2109(1, this.anInt2964, 99);
                         }
 
-                        if(this.aByteArray2949[this.anInt2964] == 0) {
+                        if (this.aByteArray2949[this.anInt2964] == 0) {
                            var2 = false;
                            var3 = new Class3();
-                           var3.aLong71 = (long)this.anInt2964;
+                           var3.aLong71 = (long) this.anInt2964;
                            this.aClass61_2966.method1215(true, var3);
                         }
 
-                        ++this.anInt2964;
                      }
+                     ++this.anInt2964;
                   }
 
                   if(var2) {
                      this.aBoolean2962 = false;
                      this.anInt2964 = 0;
                   }
-               } else {
-                  if(this.aBoolean2965) {
-                     var2 = true;
+               } else if (this.aBoolean2965) {
+                  var2 = true;
 
-                     for(var3 = this.aClass61_2966.method1222(); var3 != null; var3 = this.aClass61_2966.method1221()) {
-                        var4 = (int)var3.aLong71;
-                        if(this.aByteArray2949[var4] != 1) {
-                           this.method2109(2, var4, 96);
+                  for (var3 = this.aClass61_2966.method1222(); var3 != null; var3 = this.aClass61_2966.method1221()) {
+                     var4 = (int) var3.aLong71;
+                     if (this.aByteArray2949[var4] != 1) {
+                        this.method2109(2, var4, 96);
+                     }
+
+                     if (this.aByteArray2949[var4] == 1) {
+                        var3.method86(-1024);
+                     } else {
+                        var2 = false;
+                     }
+                  }
+
+                  while (this.anInt2964 < this.aClass62_2944.archiveFileLengths.length) {
+                     if (this.aClass62_2944.archiveFileLengths[this.anInt2964] == 0) {
+                        ++this.anInt2964;
+                     } else {
+                        if (this.aClass66_2953.method1241()) {
+                           var2 = false;
+                           break;
                         }
 
-                        if(this.aByteArray2949[var4] == 1) {
-                           var3.method86(-1024);
-                        } else {
+                        if (1 != this.aByteArray2949[this.anInt2964]) {
+                           this.method2109(2, this.anInt2964, 47);
+                        }
+
+                        if (this.aByteArray2949[this.anInt2964] != 1) {
+                           var3 = new Class3();
+                           var3.aLong71 = (long) this.anInt2964;
+                           this.aClass61_2966.method1215(true, var3);
                            var2 = false;
                         }
+
+                        ++this.anInt2964;
                      }
-
-                     while(this.anInt2964 < this.aClass62_2944.archiveFileLengths.length) {
-                        if(this.aClass62_2944.archiveFileLengths[this.anInt2964] == 0) {
-                           ++this.anInt2964;
-                        } else {
-                           if(this.aClass66_2953.method1241()) {
-                              var2 = false;
-                              break;
-                           }
-
-                           if(1 != this.aByteArray2949[this.anInt2964]) {
-                              this.method2109(2, this.anInt2964, 47);
-                           }
-
-                           if(this.aByteArray2949[this.anInt2964] != 1) {
-                              var3 = new Class3();
-                              var3.aLong71 = (long)this.anInt2964;
-                              this.aClass61_2966.method1215(true, var3);
-                              var2 = false;
-                           }
-
-                           ++this.anInt2964;
-                        }
-                     }
-
-                     if(var2) {
-                        this.anInt2964 = 0;
-                        this.aBoolean2965 = false;
-                     }
-                  } else {
-                     this.aClass61_2966 = null;
                   }
+
+                  if (var2) {
+                     this.anInt2964 = 0;
+                     this.aBoolean2965 = false;
+                  }
+               } else {
+                  this.aClass61_2966 = null;
                }
             }
 

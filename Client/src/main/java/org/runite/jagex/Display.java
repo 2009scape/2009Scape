@@ -33,12 +33,10 @@ public class Display {
       try {
          var5 = true;
          this.aGraphicsDevice445.setFullScreenWindow(var1);
-         if((byte) -63 == -63) {
-            var5 = false;
-         } else {
-            this.method918(90, -112, -67, 27, (Frame)null, -49);
-            var5 = false;
+         if ((byte) -63 != -63) {
+            this.method918(90, -112, -67, 27, (Frame) null, -49);
          }
+         var5 = false;
       } finally {
          if(var5 && var3) {
             try {
@@ -134,11 +132,9 @@ public class Display {
       GraphicsEnvironment var1 = GraphicsEnvironment.getLocalGraphicsEnvironment();
       this.aGraphicsDevice445 = var1.getDefaultScreenDevice();
       if(!this.aGraphicsDevice445.isFullScreenSupported()) {
-         GraphicsDevice[] var2 = var1.getScreenDevices();
-         GraphicsDevice[] var3 = var2;
 
-         for(int var4 = 0; var3.length > var4; ++var4) {
-            GraphicsDevice var5 = var3[var4];
+         for(int var4 = 0; var1.getScreenDevices().length > var4; ++var4) {
+            GraphicsDevice var5 = var1.getScreenDevices()[var4];
             if(var5 != null && var5.isFullScreenSupported()) {
                this.aGraphicsDevice445 = var5;
                return;

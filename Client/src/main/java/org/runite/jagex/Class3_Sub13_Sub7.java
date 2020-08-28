@@ -84,10 +84,8 @@ final class Class3_Sub13_Sub7 extends Class3_Sub13 {
             this.anInt3085 = var2.getByte((byte)-118);
          } else if(var1 == 1) {
             this.anInt3093 = var2.getShort(1);
-         } else {
-            if(var1 == 2) {
-               this.anInt3086 = var2.getByte((byte)-81);
-            }
+         } else if (var1 == 2) {
+            this.anInt3086 = var2.getByte((byte) -81);
          }
 
          if(!var3) {
@@ -132,10 +130,8 @@ final class Class3_Sub13_Sub7 extends Class3_Sub13 {
                      var7 = var9;
                   } else if(var10 == 2) {
                      var7 = (var9 + var5 + -4096 >> 1) + 2048;
-                  } else {
-                     if(var10 == 3) {
-                        var7 = (-var5 + var9 >> 1) + 2048;
-                     }
+                  } else if (var10 == 3) {
+                     var7 = (-var5 + var9 >> 1) + 2048;
                   }
 
                   short var8 = 0;

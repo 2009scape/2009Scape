@@ -30,10 +30,8 @@ final class Class3_Sub13_Sub28 extends Class3_Sub13 {
             this.anInt3350 = var2.getShort(1);
          } else if(1 == var1) {
             this.anInt3347 = var2.getShort(1);
-         } else {
-            if(var1 == 2) {
-               this.anInt3354 = var2.getShort(1);
-            }
+         } else if (var1 == 2) {
+             this.anInt3354 = var2.getShort(1);
          }
 
          if(!var3) {

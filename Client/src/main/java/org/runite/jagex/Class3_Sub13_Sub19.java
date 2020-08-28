@@ -78,32 +78,20 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
       try {
          if(0 == var1) {
             this.anInt3242 = var2.getByte((byte)-60);
-         } else {
-            if(var1 == 1) {
-               this.anInt3233 = var2.getByte((byte)-82);
-            } else if(var1 == 2) {
-               this.anInt3236 = var2.getShort(1);
-            } else {
-               if(var1 == 3) {
-                  this.anInt3219 = var2.getShort(1);
-               } else {
-                  if(4 == var1) {
-                     this.anInt3234 = var2.getShort(1);
-                  } else {
-                     if(var1 == 5) {
-                        this.anInt3231 = var2.getShort(1);
-                     } else {
-                        if(var1 == 6) {
-                           this.anInt3224 = var2.getShort(1);
-                        } else {
-                           if(var1 == 7) {
-                              this.anInt3229 = var2.getShort(1);
-                           }
-                        }
-                     }
-                  }
-               }
-            }
+         } else if (var1 == 1) {
+            this.anInt3233 = var2.getByte((byte) -82);
+         } else if (var1 == 2) {
+            this.anInt3236 = var2.getShort(1);
+         } else if (var1 == 3) {
+            this.anInt3219 = var2.getShort(1);
+         } else if (4 == var1) {
+            this.anInt3234 = var2.getShort(1);
+         } else if (var1 == 5) {
+            this.anInt3231 = var2.getShort(1);
+         } else if (var1 == 6) {
+            this.anInt3224 = var2.getShort(1);
+         } else if (var1 == 7) {
+            this.anInt3229 = var2.getShort(1);
          }
 
          if(!var3) {

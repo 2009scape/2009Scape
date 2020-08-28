@@ -35,10 +35,8 @@ final class Class61 {
             }
 
             Class163.aClass47_2041.method1097(var2, (long)var1, (byte)98);
-            return var2;
-         } else {
-            return var2;
          }
+         return var2;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ih.G(" + 64 + ',' + var1 + ')');
       }
@@ -102,14 +100,12 @@ final class Class61 {
             var7 = var5.aClass140_Sub4_Sub2_2324.method1965();
             if(var5.aClass140_Sub4_Sub2_2324.anInt2764 == var7.anInt368) {
                var6 = 0;
-            } else {
-               if(var5.aClass140_Sub4_Sub2_2324.anInt2764 != var7.anInt393 && var5.aClass140_Sub4_Sub2_2324.anInt2764 != var7.anInt386 && var5.aClass140_Sub4_Sub2_2324.anInt2764 != var7.anInt375 && var5.aClass140_Sub4_Sub2_2324.anInt2764 != var7.anInt373) {
-                  if(var7.anInt398 == var5.aClass140_Sub4_Sub2_2324.anInt2764 || var7.anInt372 == var5.aClass140_Sub4_Sub2_2324.anInt2764 || var5.aClass140_Sub4_Sub2_2324.anInt2764 == var7.anInt379 || var5.aClass140_Sub4_Sub2_2324.anInt2764 == var7.anInt406) {
-                     var6 = 3;
-                  }
-               } else {
-                  var6 = 2;
+            } else if (var5.aClass140_Sub4_Sub2_2324.anInt2764 != var7.anInt393 && var5.aClass140_Sub4_Sub2_2324.anInt2764 != var7.anInt386 && var5.aClass140_Sub4_Sub2_2324.anInt2764 != var7.anInt375 && var5.aClass140_Sub4_Sub2_2324.anInt2764 != var7.anInt373) {
+               if (var7.anInt398 == var5.aClass140_Sub4_Sub2_2324.anInt2764 || var7.anInt372 == var5.aClass140_Sub4_Sub2_2324.anInt2764 || var5.aClass140_Sub4_Sub2_2324.anInt2764 == var7.anInt379 || var5.aClass140_Sub4_Sub2_2324.anInt2764 == var7.anInt406) {
+                  var6 = 3;
                }
+            } else {
+               var6 = 2;
             }
 
             if(var5.anInt2322 != var6) {
@@ -139,14 +135,12 @@ final class Class61 {
                var7 = var5.aClass140_Sub4_Sub1_2327.method1965();
                if(var5.aClass140_Sub4_Sub1_2327.anInt2764 == var7.anInt368) {
                   var6 = 0;
-               } else {
-                  if(var5.aClass140_Sub4_Sub1_2327.anInt2764 != var7.anInt393 && var5.aClass140_Sub4_Sub1_2327.anInt2764 != var7.anInt386 && var7.anInt375 != var5.aClass140_Sub4_Sub1_2327.anInt2764 && var7.anInt373 != var5.aClass140_Sub4_Sub1_2327.anInt2764) {
-                     if(var7.anInt398 == var5.aClass140_Sub4_Sub1_2327.anInt2764 || var5.aClass140_Sub4_Sub1_2327.anInt2764 == var7.anInt372 || var7.anInt379 == var5.aClass140_Sub4_Sub1_2327.anInt2764 || var7.anInt406 == var5.aClass140_Sub4_Sub1_2327.anInt2764) {
-                        var6 = 3;
-                     }
-                  } else {
-                     var6 = 2;
+               } else if (var5.aClass140_Sub4_Sub1_2327.anInt2764 != var7.anInt393 && var5.aClass140_Sub4_Sub1_2327.anInt2764 != var7.anInt386 && var7.anInt375 != var5.aClass140_Sub4_Sub1_2327.anInt2764 && var7.anInt373 != var5.aClass140_Sub4_Sub1_2327.anInt2764) {
+                  if (var7.anInt398 == var5.aClass140_Sub4_Sub1_2327.anInt2764 || var5.aClass140_Sub4_Sub1_2327.anInt2764 == var7.anInt372 || var7.anInt379 == var5.aClass140_Sub4_Sub1_2327.anInt2764 || var7.anInt406 == var5.aClass140_Sub4_Sub1_2327.anInt2764) {
+                     var6 = 3;
                   }
+               } else {
+                  var6 = 2;
                }
 
                if(var6 != var5.anInt2322) {

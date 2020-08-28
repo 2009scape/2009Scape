@@ -84,10 +84,8 @@ class Node extends Class3 {
 
             def.method1481();
             Class3_Sub28_Sub7_Sub1.aClass93_4043.put((byte)-95, def, (long)var0);
-            return def;
-         } else {
-            return def;
          }
+         return def;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "rg.PA(" + var0 + ',' + var1 + ')');
       }

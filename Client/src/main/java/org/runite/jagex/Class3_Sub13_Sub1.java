@@ -159,15 +159,12 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 
 			if(Canvas_Sub2.loadInterface(var1)) {
 				Class47.method1095(var2, var8, var4, GameObject.aClass11ArrayArray1834[var1], var3, -1, var7, var6, (byte)119, var5);
-			} else {
-				if(var5 == -1) {
-					for(int var9 = 0; var9 < 100; ++var9) {
-						Class3_Sub28_Sub14.aBooleanArray3674[var9] = true;
-					}
-				} else {
-					Class3_Sub28_Sub14.aBooleanArray3674[var5] = true;
+			} else if (var5 == -1) {
+				for (int var9 = 0; var9 < 100; ++var9) {
+					Class3_Sub28_Sub14.aBooleanArray3674[var9] = true;
 				}
-
+			} else {
+				Class3_Sub28_Sub14.aBooleanArray3674[var5] = true;
 			}
 		} catch (RuntimeException var10) {
 			throw Class44.clientError(var10, "ag.E(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ')');
@@ -182,12 +179,10 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 
 			if(var1 == 0) {
 				this.anInt3038 = var2.getByte((byte)-70);
-			} else {
-				if(1 == var1) {
-					this.anInt3036 = var2.getByte((byte)-119);
-				} else if(var1 == 3) {
-					this.anInt3037 = var2.getByte((byte)-113);
-				}
+			} else if (1 == var1) {
+				this.anInt3036 = var2.getByte((byte) -119);
+			} else if (var1 == 3) {
+				this.anInt3037 = var2.getByte((byte) -113);
 			}
 
 		} catch (RuntimeException var5) {

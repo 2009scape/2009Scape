@@ -73,17 +73,15 @@ final class Class115 {
                   if(null != var21) {
                      var12 = var21.aClass140_429;
                   }
-               } else {
-                  if(2 == var13) {
-                     Class25 var23 = Class75.method1336(WorldListCountry.localPlane, var1.anInt2271, var1.anInt2282);
-                     if(null != var23) {
-                        var12 = var23.aClass140_479;
-                     }
-                  } else if(var13 == 3) {
-                     Class12 var24 = RSByteBuffer.method784(WorldListCountry.localPlane, var1.anInt2271, var1.anInt2282);
-                     if(null != var24) {
-                        var12 = var24.object;
-                     }
+               } else if (2 == var13) {
+                  Class25 var23 = Class75.method1336(WorldListCountry.localPlane, var1.anInt2271, var1.anInt2282);
+                  if (null != var23) {
+                     var12 = var23.aClass140_479;
+                  }
+               } else if (var13 == 3) {
+                  Class12 var24 = RSByteBuffer.method784(WorldListCountry.localPlane, var1.anInt2271, var1.anInt2282);
+                  if (null != var24) {
+                     var12 = var24.object;
                   }
                }
 

@@ -83,13 +83,10 @@ final class Class95 {
 
          if(var5 == var1) {
             Class43.method1058(var5, var2, var0, var3, (byte)-47);
+         } else if (Class101.anInt1425 <= var2 - var5 && var2 + var5 <= Class3_Sub28_Sub18.anInt3765 && -var1 + var3 >= Class159.anInt2020 && Class57.anInt902 >= var3 - -var1) {
+            Class3_Sub9.method135(var3, var2, var5, -111, var1, var0);
          } else {
-            if(Class101.anInt1425 <= var2 - var5 && var2 + var5 <= Class3_Sub28_Sub18.anInt3765 && -var1 + var3 >= Class159.anInt2020 && Class57.anInt902 >= var3 - -var1) {
-               Class3_Sub9.method135(var3, var2, var5, -111, var1, var0);
-            } else {
-               Class3_Sub28_Sub5.method556(var0, var1, var5, (byte)-123, var2, var3);
-            }
-
+            Class3_Sub28_Sub5.method556(var0, var1, var5, (byte) -123, var2, var3);
          }
       } catch (RuntimeException var7) {
          throw Class44.clientError(var7, "nb.E(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + -26571 + ',' + var5 + ')');

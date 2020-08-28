@@ -229,12 +229,11 @@ final class Class3_Sub14 extends Class3 {
       int var16 = var14.anInt1928;
       int var17 = var14.anIntArray1929[var16];
       boolean var15 = !aClass59Array2407[var17].method1205();
-      boolean var40 = var15;
 
       for(var17 = 0; var17 < var14.anInt1931; ++var17) {
          Class152 var18 = aClass152Array2392[var14.anIntArray1930[var17]];
          float[] var19 = aFloatArray2403;
-         var18.method2112(var19, var4 >> 1, var40);
+         var18.method2112(var19, var4 >> 1, var15);
       }
 
       int var44;

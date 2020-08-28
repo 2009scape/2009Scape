@@ -56,17 +56,15 @@ final class Class75_Sub1 extends Class75 {
                         if(var12.animationId == var6) {
                            if(var11 == 0) {
                               var12 = var2.aClass145Array2809[var9] = null;
-                           } else {
-                              if(1 == var11) {
-                                 var12.anInt1894 = 0;
-                                 var12.anInt1891 = 1;
-                                 var12.anInt1893 = 0;
-                                 var12.anInt1900 = var8;
-                                 var12.anInt1897 = 0;
-                                 IOHandler.method1470(var2.anInt2829, var10, 183921384, var2.anInt2819, var2 == Class102.player, 0);
-                              } else if(var11 == 2) {
-                                 var12.anInt1894 = 0;
-                              }
+                           } else if (1 == var11) {
+                              var12.anInt1894 = 0;
+                              var12.anInt1891 = 1;
+                              var12.anInt1893 = 0;
+                              var12.anInt1900 = var8;
+                              var12.anInt1897 = 0;
+                              IOHandler.method1470(var2.anInt2829, var10, 183921384, var2.anInt2819, var2 == Class102.player, 0);
+                           } else if (var11 == 2) {
+                              var12.anInt1894 = 0;
                            }
                         } else if(var10.anInt1857 >= Client.getAnimationDefinition(var12.animationId).anInt1857) {
                            var12 = var2.aClass145Array2809[var9] = null;

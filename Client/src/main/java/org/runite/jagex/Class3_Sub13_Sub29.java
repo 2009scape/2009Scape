@@ -204,10 +204,8 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
             }
 
             Class41.aClass93_684.put((byte)-112, var2, (long)var0);
-            return var2;
-         } else {
-            return var2;
          }
+         return var2;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "qg.O(" + var0 + ',' + 5 + ')');
       }

@@ -285,14 +285,10 @@ final class Player extends Class140_Sub4 {
                      var25.method1897(this.anInt2782 + -this.anInt2819, this.anInt2812 + -this.anInt2831, this.anInt2833 + -this.anInt2829);
                      if(this.anInt2806 == 512) {
                         var25.method1900();
-                     } else {
-                        if(this.anInt2806 == 1024) {
-                           var25.method1874();
-                        } else {
-                           if(this.anInt2806 == 1536) {
-                              var25.method1885();
-                           }
-                        }
+                     } else if (this.anInt2806 == 1024) {
+                        var25.method1874();
+                     } else if (this.anInt2806 == 1536) {
+                        var25.method1885();
                      }
                   }
                }

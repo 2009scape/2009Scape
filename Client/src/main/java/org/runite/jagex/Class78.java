@@ -56,8 +56,7 @@ final class Class78 {
    }
 
    final int method1375(int var1) {
-      int var2 = this.method1379(var1);
-      return var2;
+       return this.method1379(var1);
    }
 
    final void method1376(int var1) {

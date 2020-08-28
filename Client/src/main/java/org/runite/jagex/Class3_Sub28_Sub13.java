@@ -22,32 +22,26 @@ final class Class3_Sub28_Sub13 extends Node {
 
          if(var1 == 1) {
             this.anInt3662 = var2.getByte((byte)-47);
-         } else {
-            if(var1 == 2) {
-               this.anInt3658 = var2.getByte((byte)-52);
-            } else if(3 == var1) {
-               this.aClass94_3664 = var2.getString();
-            } else {
-               if(var1 == 4) {
-                  this.anInt3667 = var2.getInt();
+         } else if (var1 == 2) {
+            this.anInt3658 = var2.getByte((byte) -52);
+         } else if (3 == var1) {
+            this.aClass94_3664 = var2.getString();
+         } else if (var1 == 4) {
+            this.anInt3667 = var2.getInt();
+         } else if (5 == var1 || var1 == 6) {
+            int var4 = var2.getShort(1);
+            this.aClass130_3663 = new Class130(Class95.method1585((byte) 94, var4));
+
+            for (int var5 = 0; var5 < var4; ++var5) {
+               int var6 = var2.getInt();
+               Object var7;
+               if (var1 == 5) {
+                  var7 = new Class3_Sub29(var2.getString());
                } else {
-                  if(5 == var1 || var1 == 6) {
-                     int var4 = var2.getShort(1);
-                     this.aClass130_3663 = new Class130(Class95.method1585((byte)94, var4));
-
-                     for(int var5 = 0; var5 < var4; ++var5) {
-                        int var6 = var2.getInt();
-                        Object var7;
-                        if(var1 == 5) {
-                           var7 = new Class3_Sub29(var2.getString());
-                        } else {
-                           var7 = new Class3_Sub18(var2.getInt());
-                        }
-
-                        this.aClass130_3663.method1779(1, (Class3)var7, (long)var6);
-                     }
-                  }
+                  var7 = new Class3_Sub18(var2.getInt());
                }
+
+               this.aClass130_3663.method1779(1, (Class3) var7, (long) var6);
             }
          }
 
@@ -72,25 +66,23 @@ final class Class3_Sub28_Sub13 extends Node {
 
    final boolean method617(RSString var1) {
       try {
-         if(null == this.aClass130_3663) {
-            return false;
-         } else {
-            if(8729 != 8729) {
-               this.method615(-97, (RSByteBuffer)null, (byte)-91);
+         if (null != this.aClass130_3663) {
+            if (8729 != 8729) {
+               this.method615(-97, (RSByteBuffer) null, (byte) -91);
             }
 
-            if(null == this.aClass130_3666) {
+            if (null == this.aClass130_3666) {
                this.method618();
             }
 
-            for(Class3_Sub10 var3 = (Class3_Sub10)this.aClass130_3666.method1780(var1.method1538(23), 8729 + -8729); var3 != null; var3 = (Class3_Sub10)this.aClass130_3666.method1784()) {
-               if(var3.aClass94_2341.method1528(var1)) {
+            for (Class3_Sub10 var3 = (Class3_Sub10) this.aClass130_3666.method1780(var1.method1538(23), 8729 + -8729); var3 != null; var3 = (Class3_Sub10) this.aClass130_3666.method1784()) {
+               if (var3.aClass94_2341.method1528(var1)) {
                   return true;
                }
             }
 
-            return false;
          }
+         return false;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ml.F(" + (var1 != null?"{...}":"null") + ',' + 8729 + ')');
       }

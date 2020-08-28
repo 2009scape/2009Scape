@@ -139,10 +139,8 @@ final class Class81 {
             }
 
             Class128.aClass93_1683.put((byte)-75, var2, (long)var1);
-            return var2;
-         } else {
-            return var2;
          }
+         return var2;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "la.D(" + 1001 + ',' + var1 + ')');
       }

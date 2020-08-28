@@ -13,9 +13,7 @@ final class Class3_Sub28_Sub11 extends Node {
    static final int method599(CacheIndex var1) {
       try {
          int var2 = 0;
-         if(-20916 != -20916) {
-            return -88;
-         } else {
+         if(-20916 == -20916) {
             if(var1.method2144(0, Class154.anInt1966)) {
                ++var2;
             }
@@ -25,6 +23,8 @@ final class Class3_Sub28_Sub11 extends Node {
             }
 
             return var2;
+         } else {
+            return -88;
          }
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "lk.F(" + -20916 + ',' + (var1 != null?"{...}":"null") + ')');
@@ -33,15 +33,15 @@ final class Class3_Sub28_Sub11 extends Node {
 
    final int method600(int var1, int var2) {
       try {
-         if(this.aClass130_3636 != null) {
+         if(this.aClass130_3636 == null) {
+            return var2;
+         } else {
             if((byte) -29 != -29) {
                this.method604((RSString)null, (byte)56, 110);
             }
 
             Class3_Sub18 var4 = (Class3_Sub18)this.aClass130_3636.method1780((long)var1, (byte) -29 ^ -29);
             return null == var4?var2:var4.anInt2467;
-         } else {
-            return var2;
          }
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "lk.Q(" + var1 + ',' + var2 + ',' + (byte) -29 + ')');
@@ -63,10 +63,10 @@ final class Class3_Sub28_Sub11 extends Node {
                   boolean var6 = 1 == var1.getByte((byte)-94);
                   int var7 = var1.getTriByte((byte)95);
                   Object var8;
-                  if(!var6) {
-                     var8 = new Class3_Sub18(var1.getInt());
-                  } else {
+                  if(var6) {
                      var8 = new Class3_Sub29(var1.getString());
+                  } else {
+                     var8 = new Class3_Sub18(var1.getInt());
                   }
 
                   this.aClass130_3636.method1779(1, (Class3)var8, (long)var7);
@@ -106,20 +106,16 @@ final class Class3_Sub28_Sub11 extends Node {
 
          if(var3.aByte304 == 0) {
             var3.anInt168 = var3.width;
-         } else {
-            if(var3.aByte304 == 1) {
-               var3.anInt168 = var2 + -var3.width;
-            } else {
-               if(var3.aByte304 == 2) {
-                  var3.anInt168 = var3.width * var2 >> 14;
-               } else if(var3.aByte304 == 3) {
-                  if(var3.type == 2) {
-                     var3.anInt168 = var3.width * 32 - -((var3.width - 1) * var3.anInt285);
-                  } else if (var3.type == 7) {
-                     var3.anInt168 = 115 * var3.width + var3.anInt285 * (-1 + var3.width);
-                  }
-               }
-            }
+         } else if (var3.aByte304 == 1) {
+             var3.anInt168 = var2 + -var3.width;
+         } else if (var3.aByte304 == 2) {
+             var3.anInt168 = var3.width * var2 >> 14;
+         } else if (var3.aByte304 == 3) {
+             if (var3.type == 2) {
+                 var3.anInt168 = var3.width * 32 - -((var3.width - 1) * var3.anInt285);
+             } else if (var3.type == 7) {
+                 var3.anInt168 = 115 * var3.width + var3.anInt285 * (-1 + var3.width);
+             }
          }
 
          if(var3.aByte241 == 0) {

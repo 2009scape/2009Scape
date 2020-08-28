@@ -295,10 +295,7 @@ final class Class3_Sub5 extends Class3 {
                }
 
                if(var4 != null && var4.hasDefinitions((byte)17)) {
-                  var4.aBoolean3968 = false;
-                  if((RSInterface.aBoolean236 && Class159.localPlayerCount > 200 || 50 < Class159.localPlayerCount) && !var0 && var4.anInt2764 == var4.method1965().anInt368) {
-                     var4.aBoolean3968 = true;
-                  }
+                  var4.aBoolean3968 = (RSInterface.aBoolean236 && Class159.localPlayerCount > 200 || 50 < Class159.localPlayerCount) && !var0 && var4.anInt2764 == var4.method1965().anInt368;
 
                   var7 = var4.getSize();
                   if(var7 == 1) {
