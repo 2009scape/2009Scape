@@ -1,5 +1,6 @@
 package org.runite.jagex;
 import java.awt.Component;
+import java.util.Objects;
 
 final class Class130 {
 
@@ -277,7 +278,7 @@ final class Class130 {
          }
 
          this.aLong1708 = var1;
-         Class3 var4 = this.aClass3Array1697[(int)(var1 & (long)(-1 + this.anInt1700))];
+         Class3 var4 = Objects.requireNonNull(this.aClass3Array1697)[(int)(var1 & (long)(-1 + this.anInt1700))];
 
          for(this.aClass3_1706 = var4.aClass3_74; var4 != this.aClass3_1706; this.aClass3_1706 = this.aClass3_1706.aClass3_74) {
             if(this.aClass3_1706.aLong71 == var1) {

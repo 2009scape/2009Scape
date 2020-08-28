@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Player extends Class140_Sub4 {
 
    static int[] anIntArray3951 = new int[4];
@@ -112,7 +114,7 @@ final class Player extends Class140_Sub4 {
 
          this.renderAnimationId = buffer.getShort(1);
          long var20 = buffer.getLong(-99);
-         this.displayName = Class41.method1052(var20).method1545();
+         this.displayName = Objects.requireNonNull(Class41.method1052(var20)).method1545();
          this.COMBAT_LEVEL = buffer.getByte((byte)-41);
          if(var6) {
             this.anInt3974 = buffer.getShort(1);
@@ -276,7 +278,7 @@ final class Player extends Class140_Sub4 {
                         var25 = (Model)this.anObject2796;
                      }
 
-                     var25.method1897(this.anInt2782 + -this.anInt2819, this.anInt2812 + -this.anInt2831, this.anInt2833 + -this.anInt2829);
+                     Objects.requireNonNull(var25).method1897(this.anInt2782 + -this.anInt2819, this.anInt2812 + -this.anInt2831, this.anInt2833 + -this.anInt2829);
                      if(this.anInt2806 == 512) {
                         var25.method1900();
                      } else if (this.anInt2806 == 1024) {
@@ -367,9 +369,6 @@ final class Player extends Class140_Sub4 {
    final RSString getName() {
       try {
          RSString var2 = this.displayName;
-         if(0 != 0) {
-            this.animate(-63, 126, 58, -9, -74, -119, -45, -114, -62L, -76, (Class127_Sub1)null);
-         }
 
          if(Class3_Sub30_Sub1.aClass94Array3802 != null) {
             var2 = RenderAnimationDefinition.method903(new RSString[]{Class3_Sub30_Sub1.aClass94Array3802[this.anInt3958], var2}, (byte)-92);

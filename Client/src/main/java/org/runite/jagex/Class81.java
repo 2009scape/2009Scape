@@ -1,6 +1,7 @@
 package org.runite.jagex;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
+import java.util.Objects;
 
 final class Class81 {
 
@@ -43,9 +44,6 @@ final class Class81 {
 
    static int method1398(Player var1) {
       try {
-         if(0 != 0) {
-            putRandomDataFile((RSByteBuffer)null, false);
-         }
 
          int var2 = var1.anInt3963;
          RenderAnimationDefinition var3 = var1.method1965();
@@ -70,7 +68,7 @@ final class Class81 {
          if(var1 != 0L) {
             if(Class3_Sub28_Sub5.anInt3591 < 100) {
                int var3 = -103;
-               RSString var4 = Class41.method1052(var1).method1545();
+               RSString var4 = Objects.requireNonNull(Class41.method1052(var1)).method1545();
 
                int var5;
                for(var5 = 0; var5 < Class3_Sub28_Sub5.anInt3591; ++var5) {
@@ -163,7 +161,7 @@ final class Class81 {
             return (Class131)null;
          } else {
             int[] var4 = var2.getFileIds(var3);
-            Class131 var5 = new Class131(var4.length);
+            Class131 var5 = new Class131(Objects.requireNonNull(var4).length);
 
             for(int var6 = 0; var5.anInt1720 > var6; ++var6) {
                RSByteBuffer var7 = new RSByteBuffer(var2.getFile(var3, var4[var6]));

@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class47 {
 
    static boolean aBoolean742 = false;
@@ -38,7 +40,7 @@ final class Class47 {
          boolean var5 = true;
          int[] var6 = cacheIndex0.getFileIds(frameId);
 
-         for(int var7 = 0; var7 < var6.length; ++var7) {
+         for(int var7 = 0; var7 < Objects.requireNonNull(var6).length; ++var7) {
             byte[] var8 = cacheIndex0.method2140(var6[var7], frameId);
             if(var8 == null) {
                var5 = false;
@@ -1096,11 +1098,11 @@ final class Class47 {
       try {
          if(this.anInt749 == 0) {
             Node var5 = this.aClass13_747.method877();
-            var5.method86(-1024);
+            Objects.requireNonNull(var5).method86(-1024);
             var5.method524();
             if(this.aClass3_Sub28_744 == var5) {
                var5 = this.aClass13_747.method877();
-               var5.method86(-1024);
+               Objects.requireNonNull(var5).method86(-1024);
                var5.method524();
             }
          } else {
@@ -1187,9 +1189,6 @@ final class Class47 {
          if(var2 == -1) {
             return 12345678;
          } else {
-            if(false) {
-               method1088(true);
-            }
 
             var0 = var0 * (127 & var2) >> 2137332647;
             if(2 <= var0) {

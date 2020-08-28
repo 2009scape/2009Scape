@@ -1,4 +1,5 @@
 package org.runite.jagex;
+import java.util.Objects;
 import java.util.Random;
 
 abstract class Class3_Sub28_Sub17 extends Node {
@@ -332,11 +333,11 @@ abstract class Class3_Sub28_Sub17 extends Node {
       for(var4 = 0; var4 < var1; ++var4) {
          int var5 = var0.charAt(var4, (byte)-101);
          if(var5 == 60) {
-            var6.method1533(aClass94_3734, true);
+            Objects.requireNonNull(var6).method1533(aClass94_3734, true);
          } else if(var5 == 62) {
-            var6.method1533(aClass94_3726, true);
+            Objects.requireNonNull(var6).method1533(aClass94_3726, true);
          } else {
-            var6.method1572(var5, (byte)115);
+            Objects.requireNonNull(var6).method1572(var5, (byte)115);
          }
       }
 

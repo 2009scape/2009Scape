@@ -111,9 +111,6 @@ abstract class Class3_Sub13 extends Class3 {
 
    final void method160(int var1, int var2) {
       try {
-         if(250 != 250) {
-            this.aClass114_2382 = (Class114)null;
-         }
 
          int var4 = 255 == this.anInt2381?var1:this.anInt2381;
          if(this.aBoolean2375) {

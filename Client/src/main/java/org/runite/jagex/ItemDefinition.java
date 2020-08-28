@@ -1,7 +1,9 @@
 package org.runite.jagex;
 import java.awt.Component;
 import java.io.UnsupportedEncodingException;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.Objects;
 
 final class ItemDefinition {
 
@@ -101,8 +103,6 @@ final class ItemDefinition {
 		try {
 			Class3_Sub13_Sub14.aClass153_3173 = var0;
 			Class29.aClass153_557 = var1;
-			if(!var2) {
-			}
 		} catch (RuntimeException var4) {
 			throw Class44.clientError(var4, "h.B(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
 		}
@@ -1030,7 +1030,6 @@ final class ItemDefinition {
 														int k12 = Class140_Sub7.anIntArray2929[k];
 														int j49 = Class140_Sub7.anIntArray2929[1 + k];
 														Class3_Sub28_Sub13 class3_sub28_sub13_1 = Class3_Sub13_Sub36.method342(k12);
-														if (class3_sub28_sub13_1.anInt3658 != 115) ;
 														Class3.aClass94Array75[l++] = class3_sub28_sub13_1.method616(j49, (byte) 121);
 														continue;
 													}
@@ -2745,7 +2744,7 @@ final class ItemDefinition {
 																				int l60 = Class140_Sub7.anIntArray2929[k - -1];
 																				int k36 = Class140_Sub7.anIntArray2929[k];
 																				Class3_Sub28_Sub9.aCalendar3616.clear();
-																				Class3_Sub28_Sub9.aCalendar3616.set(11, 12);
+																				Class3_Sub28_Sub9.aCalendar3616.set(Calendar.HOUR_OF_DAY, 12);
 																				Class3_Sub28_Sub9.aCalendar3616.set(i73, l60, k36);
 																				Class140_Sub7.anIntArray2929[k++] = -11745 + (int) (Class3_Sub28_Sub9.aCalendar3616.getTime().getTime() / 0x5265c00L);
 																				continue;
@@ -2753,7 +2752,7 @@ final class ItemDefinition {
 																			if (6303 == j1) {
 																				Class3_Sub28_Sub9.aCalendar3616.clear();
 																				Class3_Sub28_Sub9.aCalendar3616.setTime(new Date(Class5.method830((byte) -55)));
-																				Class140_Sub7.anIntArray2929[k++] = Class3_Sub28_Sub9.aCalendar3616.get(1);
+																				Class140_Sub7.anIntArray2929[k++] = Class3_Sub28_Sub9.aCalendar3616.get(Calendar.YEAR);
 																				continue;
 																			}
 																			if (j1 != 6304)
@@ -3172,9 +3171,9 @@ final class ItemDefinition {
 													int l40 = Class140_Sub7.anIntArray2929[--k];
 													long l63 = 0xec44e2dc00L + (long) l40 * 0x5265c00L;
 													Class3_Sub28_Sub9.aCalendar3616.setTime(new Date(l63));
-													int k78 = Class3_Sub28_Sub9.aCalendar3616.get(5);
-													int k80 = Class3_Sub28_Sub9.aCalendar3616.get(2);
-													int i82 = Class3_Sub28_Sub9.aCalendar3616.get(1);
+													int k78 = Class3_Sub28_Sub9.aCalendar3616.get(Calendar.DATE);
+													int k80 = Class3_Sub28_Sub9.aCalendar3616.get(Calendar.MONTH);
+													int i82 = Class3_Sub28_Sub9.aCalendar3616.get(Calendar.YEAR);
 													Class3.aClass94Array75[l++] = RenderAnimationDefinition.method903(new RSString[]{
 															Class72.method1298((byte) 9, k78), Class93.aClass94_1326, TextCore.MonthsOfTheYear[k80], Class93.aClass94_1326, Class72.method1298((byte) 9, i82)
 													}, (byte) -122);
@@ -4315,13 +4314,13 @@ final class ItemDefinition {
 				int var9;
 				if(this.aShortArray774 != null) {
 					for(var9 = 0; var9 < this.aShortArray774.length; ++var9) {
-						var5.method2016(this.aShortArray774[var9], this.aShortArray772[var9]);
+						Objects.requireNonNull(var5).method2016(this.aShortArray774[var9], this.aShortArray772[var9]);
 					}
 				}
 
 				if(this.aShortArray765 != null) {
 					for(var9 = 0; var9 < this.aShortArray765.length; ++var9) {
-						var5.method1998(this.aShortArray765[var9], this.aShortArray751[var9]);
+						Objects.requireNonNull(var5).method1998(this.aShortArray765[var9], this.aShortArray751[var9]);
 					}
 				}
 
@@ -4365,22 +4364,22 @@ final class ItemDefinition {
 				//            this.wornModelPositionZ = 13;//-1;//20;
 				//            this.wornModelPositionY = -1;
 				if(!var1 && (this.wornModelPositionX != 0 || this.wornModelPositionZ != 0 || this.wornModelPositionY != 0)) {
-					var6.method2001(this.wornModelPositionX, this.wornModelPositionZ, this.wornModelPositionY);
+					Objects.requireNonNull(var6).method2001(this.wornModelPositionX, this.wornModelPositionZ, this.wornModelPositionY);
 				}
 				if(var1 && (this.anInt777 != 0 || this.anInt802 != 0 || this.anInt752 != 0)) {
-					var6.method2001(this.anInt777, this.anInt802, this.anInt752);
+					Objects.requireNonNull(var6).method2001(this.anInt777, this.anInt802, this.anInt752);
 				}
 
 				int var11;
 				if(this.aShortArray774 != null) {
 					for(var11 = 0; var11 < this.aShortArray774.length; ++var11) {
-						var6.method2016(this.aShortArray774[var11], this.aShortArray772[var11]);
+						Objects.requireNonNull(var6).method2016(this.aShortArray774[var11], this.aShortArray772[var11]);
 					}
 				}
 
 				if(this.aShortArray765 != null) {
 					for(var11 = 0; var11 < this.aShortArray765.length; ++var11) {
-						var6.method1998(this.aShortArray765[var11], this.aShortArray751[var11]);
+						Objects.requireNonNull(var6).method1998(this.aShortArray765[var11], this.aShortArray751[var11]);
 					}
 				}
 

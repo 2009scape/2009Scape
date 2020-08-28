@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class3_Sub13_Sub29 extends Class3_Sub13 {
 
    static int anInt3356;
@@ -118,18 +120,16 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
    static void method306(int var0, int var2) {
       try {
          Class79 var3 = CS2Script.method378(var0, (byte)127);
-         int var6 = var3.anInt1125;
-         if(true) {
-            int var5 = var3.anInt1123;
-            int var4 = var3.anInt1128;
-            int var7 = Class3_Sub6.anIntArray2288[var6 - var5];
-            if(var2 < 0 || var7 < var2) {
-               var2 = 0;
-            }
-
-            var7 <<= var5;
-            Class86.method1428(var4, 72, var7 & var2 << var5 | Class163_Sub1.anIntArray2985[var4] & ~var7);
+         int var6 = Objects.requireNonNull(var3).anInt1125;
+         int var5 = var3.anInt1123;
+         int var4 = var3.anInt1128;
+         int var7 = Class3_Sub6.anIntArray2288[var6 - var5];
+         if(var2 < 0 || var7 < var2) {
+            var2 = 0;
          }
+
+         var7 <<= var5;
+         Class86.method1428(var4, 72, var7 & var2 << var5 | Class163_Sub1.anIntArray2985[var4] & ~var7);
       } catch (RuntimeException var8) {
          throw Class44.clientError(var8, "qg.Q(" + var0 + ',' + false + ',' + var2 + ')');
       }

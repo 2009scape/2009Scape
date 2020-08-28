@@ -172,9 +172,6 @@ final class Class140_Sub2 extends GameObject {
    final void method1955(int var2) {
       try {
          if(!this.aBoolean2718) {
-            if(false) {
-               this.method1955(-72);
-            }
 
             this.anInt2719 += var2;
 

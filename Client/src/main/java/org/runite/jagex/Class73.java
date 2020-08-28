@@ -2,6 +2,7 @@ package org.runite.jagex;
 import org.runite.Properties;
 
 import java.io.UnsupportedEncodingException;
+import java.util.Objects;
 
 final class Class73 implements Runnable {
 
@@ -308,7 +309,6 @@ static boolean aBoolean1080 = false;
 
          this.aThread1090 = null;
          if(var1 != 3208) {
-            this.aThread1090 = (Thread)null;
          }
 
       } catch (RuntimeException var6) {
@@ -603,7 +603,7 @@ static boolean aBoolean1080 = false;
       try {
          Class64 var1 = Class38.aClass87_665.method1451(0, 5, this);
 
-         while(var1.anInt978 == 0) {
+         while(Objects.requireNonNull(var1).anInt978 == 0) {
             Class3_Sub13_Sub34.method331(10L, 64);
          }
 

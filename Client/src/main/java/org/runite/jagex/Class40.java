@@ -42,7 +42,6 @@ final class Class40 {
          aClass153_679 = null;
          aClass94_676 = null;
          if(!var0) {
-            aClass153_679 = (CacheIndex)null;
          }
 
          aClass94_672 = null;
@@ -56,10 +55,7 @@ final class Class40 {
 
    static Class3_Sub28_Sub16_Sub2 method1043(int var0, CacheIndex var1, int archiveId) {
       try {
-         if(-3178 != -3178) {
-            method1044(-55);
-         }
-        // System.out.println("Class 40 " + archiveId);
+         // System.out.println("Class 40 " + archiveId);
          return Class75_Sub4.method1351(var1, var0, archiveId, -30901)?Class117.method1722(-53):null;
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "gd.G(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + -3178 + ',' + archiveId + ')');

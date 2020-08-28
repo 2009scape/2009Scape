@@ -20,7 +20,6 @@ final class Class3_Sub13_Sub22 extends Class3_Sub13 {
       this.anInt3276 = 4096;
 
       try {
-         this.anInt3276 = 4096;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "mi.<init>(" + 4096 + ')');
       }

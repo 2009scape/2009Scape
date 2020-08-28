@@ -257,7 +257,6 @@ final class Class55 {
       try {
          anIntArray882 = null;
          if(var0 != -118) {
-            anIntArray882 = (int[])null;
          }
 
       } catch (RuntimeException var2) {

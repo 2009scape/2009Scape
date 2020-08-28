@@ -22,7 +22,6 @@ final class Canvas_Sub1 extends Canvas implements FocusListener {
          aClass93_21 = null;
          anIntArrayArray20 = (int[][])null;
          if(var0 != 0) {
-            aClass93_21 = (Class93)null;
          }
 
       } catch (RuntimeException var2) {

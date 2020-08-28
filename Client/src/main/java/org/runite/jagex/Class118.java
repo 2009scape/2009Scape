@@ -10,48 +10,44 @@ abstract class Class118 {
 
    static RSString method1723(byte var0, boolean var1, int var3) {
       try {
-         if(true) {
-            int var4 = 1;
+         int var4 = 1;
 
-            for(int var5 = var3 / 10; 0 != var5; ++var4) {
-               var5 /= 10;
-            }
-
-            int var6 = var4;
-            if(var3 < 0 || var1) {
-               var6 = var4 + 1;
-            }
-
-            byte[] var7 = new byte[var6];
-            if(var3 >= 0) {
-               if(var1) {
-                  var7[0] = 43;
-               }
-            } else {
-               var7[0] = 45;
-            }
-
-            for(int var8 = 0; var4 > var8; ++var8) {
-               int var9 = var3 % 10;
-               if(var9 < 0) {
-                  var9 = -var9;
-               }
-
-               var7[var6 + -var8 + -1] = (byte)(48 + var9);
-               var3 /= 10;
-            }
-
-            if(var0 >= -111) {
-               method1727((byte)53);
-            }
-
-            RSString var11 = new RSString();
-            var11.byteArray = var7;
-            var11.length = var6;
-            return var11;
-         } else {
-            throw new IllegalArgumentException("Invalid radix:" + 10);
+         for(int var5 = var3 / 10; 0 != var5; ++var4) {
+            var5 /= 10;
          }
+
+         int var6 = var4;
+         if(var3 < 0 || var1) {
+            var6 = var4 + 1;
+         }
+
+         byte[] var7 = new byte[var6];
+         if(var3 >= 0) {
+            if(var1) {
+               var7[0] = 43;
+            }
+         } else {
+            var7[0] = 45;
+         }
+
+         for(int var8 = 0; var4 > var8; ++var8) {
+            int var9 = var3 % 10;
+            if(var9 < 0) {
+               var9 = -var9;
+            }
+
+            var7[var6 + -var8 + -1] = (byte)(48 + var9);
+            var3 /= 10;
+         }
+
+         if(var0 >= -111) {
+            method1727((byte)53);
+         }
+
+         RSString var11 = new RSString();
+         var11.byteArray = var7;
+         var11.length = var6;
+         return var11;
       } catch (RuntimeException var10) {
          throw Class44.clientError(var10, "q.A(" + var0 + ',' + var1 + ',' + 10 + ',' + var3 + ')');
       }

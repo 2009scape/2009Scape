@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class3_Sub13_Sub2 extends Class3_Sub13 {
 
    //static RSString aClass94_3042 = RSString.createRSString("<col=ff9040>");
@@ -19,9 +21,7 @@ final class Class3_Sub13_Sub2 extends Class3_Sub13 {
              this.aBoolean2375 = var2.getByte((byte) -76) == 1;
          }
 
-         if(!var3) {
-            //aClass94_3042 = (RSString)null;
-         }
+         //aClass94_3042 = (RSString)null;
 
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "aj.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
@@ -31,8 +31,6 @@ final class Class3_Sub13_Sub2 extends Class3_Sub13 {
    public static void method172(int var0) {
       try {
          anIntArray3045 = null;
-         if(var0 == 11597) {
-         }
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "aj.B(" + var0 + ')');
       }
@@ -47,7 +45,7 @@ final class Class3_Sub13_Sub2 extends Class3_Sub13 {
          int[][] var3 = this.aClass97_2376.method1594((byte)-119, var2);
          if(this.aClass97_2376.aBoolean1379) {
             int[][] var4 = this.method162(var2, 0, (byte)-124);
-            int[] var6 = var4[1];
+            int[] var6 = Objects.requireNonNull(var4)[1];
             int[] var7 = var4[2];
             int[] var5 = var4[0];
             int[] var8 = var3[0];
@@ -136,9 +134,6 @@ final class Class3_Sub13_Sub2 extends Class3_Sub13 {
          Class3_Sub13_Sub23_Sub1.method282(var15, -var5 + var6, -40, var16, var0);
          Class3_Sub13_Sub23_Sub1.method282(var15, var16, -51, var17, var4);
          Class3_Sub13_Sub23_Sub1.method282(var15, var17, -41, var6 - -var5, var0);
-         if(false) {
-            anIntArray3045 = (int[])null;
-         }
 
          while(var9 > var7) {
             var14 += 2;

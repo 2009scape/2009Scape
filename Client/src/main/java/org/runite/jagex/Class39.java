@@ -164,10 +164,6 @@ final class Class39 {
 				Class73.method1301(plane, var6, var5, var7, false, sceneX);
 			}
 
-			if(0 != 0) {
-				anInt670 = 124;
-			}
-
 		} catch (RuntimeException var17) {
 			throw Class44.clientError(var17, "g.F(" + 0 + ',' + dynamic + ')');
 		}

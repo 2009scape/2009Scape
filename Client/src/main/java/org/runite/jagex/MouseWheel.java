@@ -38,9 +38,7 @@ final class MouseWheel extends Class146 implements MouseWheelListener {
             return;
          }
          Client.ZOOM += MouseWheel.moveAmt >= 0 ? 50 : -50;
-         if(Client.ZOOM == 600){
-            //Class3_Sub28_Sub12.sendMessage("Game client is back to default zoom.");
-         }
+         //Class3_Sub28_Sub12.sendMessage("Game client is back to default zoom.");
       }
 
 

@@ -8,9 +8,6 @@ final class Class32 {
 
    static RSString method992(RSByteBuffer var0) {
       try {
-         if(29488 != 29488) {
-            anInt590 = 22;
-         }
 
          return Class140_Sub7.method2033(var0);
       } catch (RuntimeException var3) {

@@ -17,29 +17,27 @@ final class Class41 {
 
    static void method1047(int var0, int var1, int var2, boolean var3, int var4, boolean var5) {
       try {
-         if(true) {
-            if(var2 > var4) {
-               int var7 = (var2 + var4) / 2;
-               int var8 = var4;
-               WorldListEntry var9 = Class3_Sub13_Sub16.aClass44_Sub1Array3201[var7];
-               Class3_Sub13_Sub16.aClass44_Sub1Array3201[var7] = Class3_Sub13_Sub16.aClass44_Sub1Array3201[var2];
-               Class3_Sub13_Sub16.aClass44_Sub1Array3201[var2] = var9;
+         if(var2 > var4) {
+            int var7 = (var2 + var4) / 2;
+            int var8 = var4;
+            WorldListEntry var9 = Class3_Sub13_Sub16.aClass44_Sub1Array3201[var7];
+            Class3_Sub13_Sub16.aClass44_Sub1Array3201[var7] = Class3_Sub13_Sub16.aClass44_Sub1Array3201[var2];
+            Class3_Sub13_Sub16.aClass44_Sub1Array3201[var2] = var9;
 
-               for(int var10 = var4; var10 < var2; ++var10) {
-                  if(RSString.method1535(var9, Class3_Sub13_Sub16.aClass44_Sub1Array3201[var10], 5730, var0, var1, var3, var5) <= 0) {
-                     WorldListEntry var11 = Class3_Sub13_Sub16.aClass44_Sub1Array3201[var10];
-                     Class3_Sub13_Sub16.aClass44_Sub1Array3201[var10] = Class3_Sub13_Sub16.aClass44_Sub1Array3201[var8];
-                     Class3_Sub13_Sub16.aClass44_Sub1Array3201[var8++] = var11;
-                  }
+            for(int var10 = var4; var10 < var2; ++var10) {
+               if(RSString.method1535(var9, Class3_Sub13_Sub16.aClass44_Sub1Array3201[var10], 5730, var0, var1, var3, var5) <= 0) {
+                  WorldListEntry var11 = Class3_Sub13_Sub16.aClass44_Sub1Array3201[var10];
+                  Class3_Sub13_Sub16.aClass44_Sub1Array3201[var10] = Class3_Sub13_Sub16.aClass44_Sub1Array3201[var8];
+                  Class3_Sub13_Sub16.aClass44_Sub1Array3201[var8++] = var11;
                }
-
-               Class3_Sub13_Sub16.aClass44_Sub1Array3201[var2] = Class3_Sub13_Sub16.aClass44_Sub1Array3201[var8];
-               Class3_Sub13_Sub16.aClass44_Sub1Array3201[var8] = var9;
-               method1047(var0, var1, -1 + var8, var3, var4, var5);
-               method1047(var0, var1, var2, var3, var8 - -1, var5);
             }
 
+            Class3_Sub13_Sub16.aClass44_Sub1Array3201[var2] = Class3_Sub13_Sub16.aClass44_Sub1Array3201[var8];
+            Class3_Sub13_Sub16.aClass44_Sub1Array3201[var8] = var9;
+            method1047(var0, var1, -1 + var8, var3, var4, var5);
+            method1047(var0, var1, var2, var3, var8 - -1, var5);
          }
+
       } catch (RuntimeException var12) {
          throw Class44.clientError(var12, "ge.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + false + ')');
       }
@@ -96,7 +94,6 @@ final class Class41 {
          anIntArray686 = null;
          aClass93_684 = null;
          if(!var0) {
-            aClass93_684 = (Class93)null;
          }
 
       } catch (RuntimeException var2) {
@@ -212,9 +209,6 @@ final class Class41 {
                }
 
                byte[] var6 = new byte[var3];
-               if(-29664 != -29664) {
-                  method1047(2, -55, -50, false, 52, false);
-               }
 
                while(0L != var1) {
                   long var7 = var1;

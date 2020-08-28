@@ -42,10 +42,6 @@ final class Class57 {
             this.anInt907 = var2.getShort((byte) 46);
          }
 
-         if(false) {
-            method1192((byte)123);
-         }
-
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "ic.C(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + true + ')');
       }

@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class114 {
 
    private final int anInt1568;
@@ -85,11 +87,9 @@ final class Class114 {
 
    static void method1708(int var0, int var1) {
       try {
-         if(-2553 == -2553) {
-            Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(-2553 ^ -2557, 13, var1);
-            var3.g();
-            var3.anInt3598 = var0;
-         }
+         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(-2553 ^ -2557, 13, var1);
+         var3.g();
+         var3.anInt3598 = var0;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "pf.E(" + var0 + ',' + var1 + ',' + -2553 + ')');
       }
@@ -115,7 +115,7 @@ final class Class114 {
                   ++this.anInt1570;
                } else {
                   Class3_Sub26 var4 = (Class3_Sub26) this.aClass61_1577.method1212();
-                  var3 = new Class3_Sub26(var2, var4.anInt2555);
+                  var3 = new Class3_Sub26(var2, Objects.requireNonNull(var4).anInt2555);
                   this.aClass3_Sub26Array1571[var4.anInt2553] = null;
                   var4.method86(-1024);
                }

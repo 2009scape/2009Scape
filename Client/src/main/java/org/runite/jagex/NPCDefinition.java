@@ -1,6 +1,8 @@
 package org.runite.jagex;
 
 
+import java.util.Objects;
+
 final class NPCDefinition {
 
    int size = 1;
@@ -267,20 +269,20 @@ final class NPCDefinition {
                if(this.aShortArray1248 != null) {
                   for(var16 = 0; var16 < this.aShortArray1248.length; ++var16) {
                      if(null != this.aByteArray1247 && var16 < this.aByteArray1247.length) {
-                        var34.method2016(this.aShortArray1248[var16], Class136.aShortArray1779[this.aByteArray1247[var16] & 255]);
+                        Objects.requireNonNull(var34).method2016(this.aShortArray1248[var16], Class136.aShortArray1779[this.aByteArray1247[var16] & 255]);
                      } else {
-                        var34.method2016(this.aShortArray1248[var16], this.aShortArray1254[var16]);
+                        Objects.requireNonNull(var34).method2016(this.aShortArray1248[var16], this.aShortArray1254[var16]);
                      }
                   }
                }
 
                if(null != this.aShortArray1271) {
                   for(var16 = 0; this.aShortArray1271.length > var16; ++var16) {
-                     var34.method1998(this.aShortArray1271[var16], this.aShortArray1246[var16]);
+                     Objects.requireNonNull(var34).method1998(this.aShortArray1271[var16], this.aShortArray1246[var16]);
                   }
                }
 
-               var11 = var34.method2008(this.anInt1251 + 64, this.anInt1282 + 850, -30, -50, -30);
+               var11 = Objects.requireNonNull(var34).method2008(this.anInt1251 + 64, this.anInt1282 + 850, -30, -50, -30);
                if(HDToolKit.highDetail) {
                   ((Class140_Sub1_Sub1)var11).method1920(false, false, false, false, false, true);
                }
@@ -472,7 +474,6 @@ final class NPCDefinition {
          while(true) {
             int var3 = var1.getByte((byte)-123);
             if(var3 == 0) {
-               var3 = -88 % ((5 - 74) / 52);
                return;
             }
 
@@ -499,7 +500,6 @@ final class NPCDefinition {
             NPC.aFloat3979 = 16.0F;
          }
 
-         Class3_Sub13_Sub30.anInt3362 = -1;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "me.C(" + var0 + ',' + (byte) 56 + ')');
       }
@@ -595,20 +595,20 @@ final class NPCDefinition {
                   if(null != this.aShortArray1248) {
                      for(var10 = 0; var10 < this.aShortArray1248.length; ++var10) {
                         if(this.aByteArray1247 != null && this.aByteArray1247.length > var10) {
-                           var15.method2016(this.aShortArray1248[var10], Class136.aShortArray1779[255 & this.aByteArray1247[var10]]);
+                           Objects.requireNonNull(var15).method2016(this.aShortArray1248[var10], Class136.aShortArray1779[255 & this.aByteArray1247[var10]]);
                         } else {
-                           var15.method2016(this.aShortArray1248[var10], this.aShortArray1254[var10]);
+                           Objects.requireNonNull(var15).method2016(this.aShortArray1248[var10], this.aShortArray1254[var10]);
                         }
                      }
                   }
 
                   if(this.aShortArray1271 != null) {
                      for(var10 = 0; this.aShortArray1271.length > var10; ++var10) {
-                        var15.method1998(this.aShortArray1271[var10], this.aShortArray1246[var10]);
+                        Objects.requireNonNull(var15).method1998(this.aShortArray1271[var10], this.aShortArray1246[var10]);
                      }
                   }
 
-                  var12 = var15.method2008(64, 768, -50, -10, -50);
+                  var12 = Objects.requireNonNull(var15).method2008(64, 768, -50, -10, -50);
                   Class154.aClass93_1964.put((byte)-119, var12, (long)this.npcId);
                }
 
@@ -869,7 +869,7 @@ final class NPCDefinition {
       try {
 
          Class79 var2 = CS2Script.method378(var1, (byte)127);
-         int var3 = var2.anInt1128;
+         int var3 = Objects.requireNonNull(var2).anInt1128;
          int var5 = var2.anInt1125;
          int var4 = var2.anInt1123;
          int var6 = Class3_Sub6.anIntArray2288[var5 + -var4];

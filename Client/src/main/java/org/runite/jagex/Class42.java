@@ -15,7 +15,5 @@ final class Class42 {
 
    static void method1057(Applet var0, String var2) throws Throwable {
       JSObject.getWindow(var0).eval(var2);
-      if(!false) {
-      }
    }
 }

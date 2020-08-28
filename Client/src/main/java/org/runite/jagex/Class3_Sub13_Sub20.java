@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class3_Sub13_Sub20 extends Class3_Sub13 {
 
    static int anInt3244 = 0;
@@ -43,7 +45,7 @@ final class Class3_Sub13_Sub20 extends Class3_Sub13 {
          int[][] var3 = this.aClass97_2376.method1594((byte)-115, var2);
          if(this.aClass97_2376.aBoolean1379) {
             int[][] var4 = this.method162(var2, 0, (byte)-74);
-            int[] var5 = var4[0];
+            int[] var5 = Objects.requireNonNull(var4)[0];
             int[] var6 = var4[1];
             int[] var7 = var4[2];
             int[] var9 = var3[1];

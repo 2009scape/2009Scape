@@ -33,9 +33,6 @@ class Node extends Class3 {
    static int method519(int var0, int var2, int var3) {
       try {
          var0 &= 3;
-         if(false) {
-            method520((byte)-89);
-         }
 
          return 0 != var0?(var0 != 1 ?(var0 == 2 ?-var3 + 7:-var2 + 7):var2):var3;
       } catch (RuntimeException var5) {
@@ -70,9 +67,6 @@ class Node extends Class3 {
          if(null == def) {
             byte[] var3 = Class29.aClass153_557.getFile(Class38_Sub1.method1031(var0), Canvas_Sub1.method54(var0));
             def = new NPCDefinition();
-            if(27112 != 27112) {
-               clanSize = -67;
-            }
 
             def.npcId = var0;
             if(null != var3) {

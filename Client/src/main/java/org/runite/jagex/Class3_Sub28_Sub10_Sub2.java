@@ -46,11 +46,7 @@ final class Class3_Sub28_Sub10_Sub2 extends Class3_Sub28_Sub10 {
                   var6.anInt1448 = var3[(var5 << 2) - -3];
                }
 
-               if(10 != 10) {
-                  method597((byte)-74);
-               }
-
-               return var4;
+				return var4;
             }
          } else {
             return new Class106[0];
@@ -65,8 +61,7 @@ final class Class3_Sub28_Sub10_Sub2 extends Class3_Sub28_Sub10 {
          aClass3_Sub2ArrayArrayArray4070 = (Class3_Sub2[][][])null;
          aClass94_4066 = null;
          if(var0 < 91) {
-            aClass3_Sub2ArrayArrayArray4070 = (Class3_Sub2[][][])((Class3_Sub2[][][])null);
-         }
+		 }
 
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "pm.O(" + var0 + ')');

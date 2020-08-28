@@ -17,9 +17,6 @@ final class Class2 {
 		try {
 			if(var0 != 47 && var0 != 5 && var0 != 43 && var0 != 35 && var0 != 58 && var0 != 22 && var0 != 40 && var0 != 3) {
 				if(var0 != 9 && var0 != 12 && var0 != 1006 && var0 != 1003) {
-					if(121 <= 42) {
-						anInt59 = 1;
-					}
 
 					return var0 == 25 || var0 == 23 || 48 == var0 || var0 == 7 || var0 == 13 || (var0 == 8 || var0 == 32 || var0 == 28 || var0 == 59 || var0 == 51 || var0 == 41);
 				} else {
@@ -337,9 +334,7 @@ final class Class2 {
 			++CacheIndex.anInt1944;
 			Class3_Sub13_Sub1.outgoingBuffer.putOpcode(132);
 			Class3_Sub13_Sub1.outgoingBuffer.putIntA(var2);
-			if(true) {
-				Class3_Sub13_Sub1.outgoingBuffer.putLEShort(var0);
-			}
+			Class3_Sub13_Sub1.outgoingBuffer.putLEShort(var0);
 		} catch (RuntimeException var4) {
 			throw Class44.clientError(var4, "aa.E(" + var0 + ',' + false + ',' + var2 + ')');
 		}

@@ -170,10 +170,8 @@ final class Class61 {
 
          var2.aClass3_74 = this.aClass3_940;
          var2.aClass3_76 = this.aClass3_940.aClass3_76;
-         if(true) {
-            var2.aClass3_76.aClass3_74 = var2;
-            var2.aClass3_74.aClass3_76 = var2;
-         }
+         var2.aClass3_76.aClass3_74 = var2;
+         var2.aClass3_74.aClass3_76 = var2;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ih.D(" + true + ',' + (var2 != null?"{...}":"null") + ')');
       }

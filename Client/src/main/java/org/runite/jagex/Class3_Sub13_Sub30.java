@@ -205,7 +205,6 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
          aClass61_3364 = null;
          anIntArray3367 = null;
          if(var0 != -15028) {
-            aClass61_3364 = (Class61)null;
          }
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "rj.B(" + var0 + ')');

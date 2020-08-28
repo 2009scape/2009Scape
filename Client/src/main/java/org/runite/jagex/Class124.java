@@ -11,7 +11,6 @@ final class Class124 {
          aClass130_1659 = null;
          aClass153_1661 = null;
          if(!var0) {
-            aClass130_1659 = (Class130)null;
          }
 
       } catch (RuntimeException var2) {

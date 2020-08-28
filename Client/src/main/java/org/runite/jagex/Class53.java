@@ -125,10 +125,6 @@ final class Class53 {
             Class119.countries[var3].name = buffer.getGJString2(105);
          }
 
-         if(-88 > -10) {
-            method1174((RSInterface)null, (byte)-126);
-         }
-
          Class3_Sub13_Sub4.worldListOffset = buffer.getSmart();
          Class100.worldListArraySize = buffer.getSmart();
          Class57.activeWorldListSize = buffer.getSmart();

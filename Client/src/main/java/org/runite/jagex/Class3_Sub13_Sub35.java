@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class3_Sub13_Sub35 extends Class3_Sub13 {
 
    static RSString aClass94_3418 = RSString.createRSString("(U5");
@@ -61,7 +63,7 @@ final class Class3_Sub13_Sub35 extends Class3_Sub13 {
             int[][] var3 = this.aClass97_2376.method1594((byte)-128, var2);
             if(this.aClass97_2376.aBoolean1379) {
                int[][] var4 = this.method162(var2, 0, (byte)-51);
-               int[] var7 = var4[2];
+               int[] var7 = Objects.requireNonNull(var4)[2];
                int[] var5 = var4[0];
                int[] var6 = var4[1];
                int[] var8 = var3[0];

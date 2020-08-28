@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class NPC extends Class140_Sub4 {
 
 	static boolean aBoolean3975 = false;
@@ -91,7 +93,7 @@ final class NPC extends Class140_Sub4 {
 					}
 
 					Model var17;
-					if(Class140_Sub6.aBoolean2910 && var16.aBoolean1249) {
+					if(Class140_Sub6.aBoolean2910 && Objects.requireNonNull(var16).aBoolean1249) {
 						var17 = Class140_Sub3.method1957(this.definition.aByte1287, this.aBoolean2810, null == var14?var13:var14, this.anInt2819, this.definition.aShort1256, this.anInt2829, this.definition.aShort1286, this.definition.size, var15, var1, null != var14?this.anInt2813:this.anInt2832, this.anInt2831, this.definition.aByte1275);
 						if(HDToolKit.highDetail) {
 							float var18 = HDToolKit.method1852();
@@ -179,8 +181,6 @@ final class NPC extends Class140_Sub4 {
 
 	final void method1867(int var1, int var2, int var3, int var4, int var5) {
 		try {
-			if(this.definition == null) {
-			}
 		} catch (RuntimeException var7) {
 			throw Class44.clientError(var7, "km.IB(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
 		}

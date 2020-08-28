@@ -149,9 +149,6 @@ abstract class Class140_Sub4 extends GameObject {
          this.anInt2811 = 0;
          this.anInt2829 = 64 * var2 + this.anIntArray2755[0] * 128;
          this.anInt2819 = var2 * 64 + 128 * this.anIntArray2767[0];
-         if(-2 != -2) {
-            aClass54Array2841 = (Class54[])null;
-         }
 
          if(HDToolKit.highDetail && Class102.player == this) {
             Class3_Sub13_Sub14.method236();
@@ -293,17 +290,15 @@ abstract class Class140_Sub4 extends GameObject {
 
    final void method1970(int var1, int var3, int var4) {
       try {
-         if(-8 == -8) {
-            for(int var5 = 0; var5 < 4; ++var5) {
-               if(var3 >= this.anIntArray2768[var5]) {
-                  this.anIntArray2836[var5] = var4;
-                  this.anIntArray2815[var5] = var1;
-                  this.anIntArray2768[var5] = 70 + var3;
-                  return;
-               }
+         for(int var5 = 0; var5 < 4; ++var5) {
+            if(var3 >= this.anIntArray2768[var5]) {
+               this.anIntArray2836[var5] = var4;
+               this.anIntArray2815[var5] = var1;
+               this.anIntArray2768[var5] = 70 + var3;
+               return;
             }
-
          }
+
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "fe.G(" + var1 + ',' + -8 + ',' + var3 + ',' + var4 + ')');
       }

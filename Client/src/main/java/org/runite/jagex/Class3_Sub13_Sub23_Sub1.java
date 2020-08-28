@@ -181,9 +181,6 @@ final class Class3_Sub13_Sub23_Sub1 extends Class3_Sub13_Sub23 {
 
    static Class3_Sub28_Sub16[] method286(int var2, CacheIndex var3) {
       try {
-         if(-1 != -1) {
-            method285(-95, 48, (Component)null);
-         }
          //System.out.println("Class3_Sub13_Sub_23_Sub1 " + var2);
          return !Class75_Sub4.method1351(var3, 0, var2, -30901)?null:Class15.method891(-1 ^ 4);
       } catch (RuntimeException var5) {

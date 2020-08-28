@@ -25,24 +25,22 @@ abstract class Class144 {
 
    static void method2067() {
       try {
-         if(true) {
-            for(Class3_Sub28_Sub2 var1 = (Class3_Sub28_Sub2)Class3_Sub13_Sub15.aClass61_3177.method1222(); null != var1; var1 = (Class3_Sub28_Sub2)Class3_Sub13_Sub15.aClass61_3177.method1221()) {
-               Class140_Sub2 var2 = var1.aClass140_Sub2_3545;
-               if(WorldListCountry.localPlane == var2.anInt2717 && !var2.aBoolean2718) {
-                  if(Class44.anInt719 >= var2.anInt2703) {
-                     var2.method1955(Class106.anInt1446);
-                     if(var2.aBoolean2718) {
-                        var1.method86(-1024);
-                     } else {
-                        Class20.method907(var2.anInt2717, var2.anInt2716, var2.anInt2710, var2.anInt2712, 60, var2, 0, -1L, false);
-                     }
+         for(Class3_Sub28_Sub2 var1 = (Class3_Sub28_Sub2)Class3_Sub13_Sub15.aClass61_3177.method1222(); null != var1; var1 = (Class3_Sub28_Sub2)Class3_Sub13_Sub15.aClass61_3177.method1221()) {
+            Class140_Sub2 var2 = var1.aClass140_Sub2_3545;
+            if(WorldListCountry.localPlane == var2.anInt2717 && !var2.aBoolean2718) {
+               if(Class44.anInt719 >= var2.anInt2703) {
+                  var2.method1955(Class106.anInt1446);
+                  if(var2.aBoolean2718) {
+                     var1.method86(-1024);
+                  } else {
+                     Class20.method907(var2.anInt2717, var2.anInt2716, var2.anInt2710, var2.anInt2712, 60, var2, 0, -1L, false);
                   }
-               } else {
-                  var1.method86(-1024);
                }
+            } else {
+               var1.method86(-1024);
             }
-
          }
+
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "u.G(" + false + ')');
       }

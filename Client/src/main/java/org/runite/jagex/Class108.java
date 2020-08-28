@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class108 {
 
    static RSString COMMAND_QA_OP_TEST = RSString.createRSString("::qa_op_test");
@@ -34,8 +36,6 @@ final class Class108 {
    static void method1654(int var0) {
       try {
          Class140_Sub4.aClass93_2792.method1523((byte)-108);
-         if(var0 == -15447) {
-         }
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "oi.E(" + var0 + ')');
       }
@@ -68,9 +68,9 @@ final class Class108 {
             Class40.aClass3_Sub28_Sub16_680 = Class75_Sub2.method1344(117, var0, Class154.anInt1966);
             int var2 = Class140_Sub7.anInt2934;
             int var3 = var2 * 956 / 503;
-            Class40.aClass3_Sub28_Sub16_680.method639((Class23.anInt454 + -var3) / 2, 0, var3, var2);
+            Objects.requireNonNull(Class40.aClass3_Sub28_Sub16_680).method639((Class23.anInt454 + -var3) / 2, 0, var3, var2);
             AnimationDefinition.aClass109_1856 = Class3_Sub28_Sub6.a(Class79.anInt1124, var0);
-            AnimationDefinition.aClass109_1856.method1667(Class23.anInt454 / 2 + -(AnimationDefinition.aClass109_1856.anInt1461 / 2), 18);
+            Objects.requireNonNull(AnimationDefinition.aClass109_1856).method1667(Class23.anInt454 / 2 + -(AnimationDefinition.aClass109_1856.anInt1461 / 2), 18);
             Class140_Sub2.aBoolean2713 = true;
             if(var1 > -50) {
                method1654(-27);
@@ -115,7 +115,6 @@ final class Class108 {
          COMMAND_HIGHRES_GRAPHICS_WINDOW = null;
          COMMAND_QA_OP_TEST = null;
          if(var0 != 13123) {
-            COMMAND_HIGHRES_GRAPHICS_WINDOW = (RSString)null;
          }
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "oi.A(" + var0 + ')');

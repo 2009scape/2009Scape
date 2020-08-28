@@ -62,9 +62,6 @@ abstract class Class151 {
          Class3_Sub9.aBoolean2311 = false;
          Class10.anInt154 = 1;
          GraphicDefinition.anInt546 = 2;
-         if(false) {
-            method2096(-8, 46, 45, -6L);
-         }
 
          Class3_Sub13_Sub36.anInt3423 = var5;
       } catch (RuntimeException var8) {

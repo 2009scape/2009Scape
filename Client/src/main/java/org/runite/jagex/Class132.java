@@ -66,7 +66,6 @@ final class Class132 {
          aClass94Array1739 = null;
          aClass153_1735 = null;
          if(var0 <= 52) {
-            aClass94Array1739 = (RSString[])null;
          }
 
       } catch (RuntimeException var2) {

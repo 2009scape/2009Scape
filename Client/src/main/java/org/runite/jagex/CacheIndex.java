@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class CacheIndex {
 
    static int anInt1944;
@@ -192,9 +194,6 @@ final class CacheIndex {
             var3 = var3.method1534();
             var2 = var2.method1534();
             int var4 = this.aClass62_1949.aClass69_949.method1280(var3.method1574());
-            if(0 != 0) {
-               this.aClass62_1949 = (Class62)null;
-            }
 
             if(this.isValidArchive(var4)) {
                int var5 = this.aClass62_1949.aClass69Array962[var4].method1280(var2.method1574());
@@ -329,9 +328,6 @@ final class CacheIndex {
 
    private boolean isValidArchive(int archiveId) {
       try {
-         if(false) {
-            aBoolean1951 = false;
-         }
 
          if(this.method2122(3)) {
             if(archiveId >= 0 && this.aClass62_1949.archiveLengths.length > archiveId && this.aClass62_1949.archiveLengths[archiveId] != 0) {
@@ -402,7 +398,7 @@ final class CacheIndex {
                try {
                   var23 = Class3_Sub28_Sub13.method623((byte) -125, var21);
                } catch (Throwable var19) {
-                  throw Class44.clientError(var19, "T3 - " + (xteaKeys != null) + "," + archive + "," + var21.length + "," + Class38.method1026(var21, var21.length) + "," + Class38.method1026(var21, var21.length - 2) + "," + this.aClass62_1949.archiveCRCs[archive] + "," + this.aClass62_1949.anInt964);
+                  throw Class44.clientError(var19, "T3 - " + (xteaKeys != null) + "," + archive + "," + Objects.requireNonNull(var21).length + "," + Class38.method1026(var21, var21.length) + "," + Class38.method1026(var21, var21.length - 2) + "," + this.aClass62_1949.archiveCRCs[archive] + "," + this.aClass62_1949.anInt964);
                }
 
                if (this.aBoolean1945) {
@@ -426,8 +422,6 @@ final class CacheIndex {
 
                      for (var16 = 0; var16 < var4; ++var16) {
                         var15 += var12.getInt();
-                        if (null == var5) {
-                        }
 
                         var13[var16] += var15;
                      }
@@ -708,10 +702,8 @@ final class CacheIndex {
          } else if(this.isValidArchive(archiveId)) {
             if(1 == this.aClass62_1949.archiveLengths[archiveId]) {
                return this.method2129((byte)109, 0, archiveId);
-            } else if(0 == 0) {
-               throw new RuntimeException();
             } else {
-               return false;
+               throw new RuntimeException();
             }
          } else {
             return false;

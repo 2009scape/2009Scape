@@ -14,6 +14,7 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.lang.reflect.Method;
 import java.net.URL;
+import java.util.Objects;
 
 public abstract class GameShell extends Applet implements Runnable, FocusListener, WindowListener {
 	
@@ -94,9 +95,6 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 
    static RSString method27(RSString var0) {
       try {
-         if(false) {
-            method26(-78);
-         }
 
          int var2 = Class100.method1602(var0);
          return var2 != -1?Class119.aClass131_1624.aClass94Array1721[var2].method1560(Class3_Sub13_Sub16.aClass94_3192, Class3_Sub28_Sub10_Sub2.aClass94_4066):Class3_Sub28_Sub7_Sub1.aClass94_4049;
@@ -125,9 +123,6 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
    static void method28() {
       try {
          Class143.aClass93_1874.method1524();
-         if(false) {
-            aBoolean11 = false;
-         }
 
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "rc.Q(" + true + ')');
@@ -242,7 +237,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
             System.out.println("error_game_" + var1);
             JOptionPane.showMessageDialog(frame, "Error: " + var1 + (var1.contains("js5connect") ? ". The game is likely down." : "") + "\nCheck Discord (Red Bracket#8151) or Github (https://github.com/dginovker/RS-2009/releases) for a potential solution.");
             try {
-               this.getAppletContext().showDocument(new URL(this.getCodeBase(), "error_game_" + var1 + ".ws"), "_top");
+               Objects.requireNonNull(this.getAppletContext()).showDocument(new URL(this.getCodeBase(), "error_game_" + var1 + ".ws"), "_top");
             } catch (Exception var4) {
             }
 
@@ -364,18 +359,13 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	         Class134.aLongArray1766[CacheIndex.anInt1953] = var2;
 	         CacheIndex.anInt1953 = 31 & CacheIndex.anInt1953 - -1;
 	         synchronized(this) {
-	            if(false) {
-	               this.start();
-	            }
 
-	            Class3_Sub13_Sub6.aBoolean3078 = Class163_Sub2_Sub1.aBoolean4013;
+                Class3_Sub13_Sub6.aBoolean3078 = Class163_Sub2_Sub1.aBoolean4013;
 	         }
 
 	         this.method25();
-	         if(0L != var4 && var2 <= var4) {
-             }
 
-	      } catch (RuntimeException var9) {
+          } catch (RuntimeException var9) {
 	         throw Class44.clientError(var9, "rc.R(" + true + ')');
 	      }
 	   }
@@ -559,7 +549,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
             Class3_Sub13_Sub10.aClass87_3125 = Class38.aClass87_665 = new Signlink((Applet)null, 32 - -Class3_Sub13_Sub13.anInt3148, "runescape", 29);
             Class64 var10 = Class38.aClass87_665.method1451(0, 1, this);
 
-            while(0 == var10.anInt978) {
+            while(0 == Objects.requireNonNull(var10).anInt978) {
                Class3_Sub13_Sub34.method331(10L, 64);
             }
 
@@ -596,7 +586,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
                   return;
                }
 
-               this.getAppletContext().showDocument(this.getDocumentBase(), "_self");
+               Objects.requireNonNull(this.getAppletContext()).showDocument(this.getDocumentBase(), "_self");
                return;
             }
 
@@ -617,7 +607,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 
             Class64 var7 = Class38.aClass87_665.method1451(0, 1, this);
 
-            while(var7.anInt978 == 0) {
+            while(Objects.requireNonNull(var7).anInt978 == 0) {
                Class3_Sub13_Sub34.method331(10L, 64);
             }
 

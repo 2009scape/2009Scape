@@ -1,4 +1,5 @@
 package org.runite.jagex;
+import java.util.Objects;
 import java.util.Random;
 
 final class Class3_Sub13_Sub25 extends Class3_Sub13 {
@@ -50,7 +51,7 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
             int var18 = this.anInt3301 * Class101.anInt1427 >> 12;
             int var17 = Class101.anInt1427 * this.anInt3310 >> 12;
             if(var18 <= 1) {
-               return var5[var1];
+               return Objects.requireNonNull(var5)[var1];
             } else {
                int var19 = Class113.anInt1559 / var15 + 1;
                this.anInt3314 = Class113.anInt1559 / 8 * this.anInt3303 >> 12;

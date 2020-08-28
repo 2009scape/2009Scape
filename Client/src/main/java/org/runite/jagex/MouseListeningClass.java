@@ -80,8 +80,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    {
 	      anIntArray1920 = null;
 	      if (!var0) {
-	        anIntArray1920 = null;
-	      }
+		  }
 	      aFloatArray1919 = null;
 	    }
 	    catch (RuntimeException var2)
@@ -154,16 +153,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	        Class3_Sub28_Sub7_Sub1.anInt4045 = 0;
 	        GraphicDefinition.anInt549 = 0;
 	        int var2 = var1.getModifiers();
-	        if (((0x10 & var2) == 0) && (
-	        
-
-
-	          ((var2 & 0x4) == 0) &&
-	          
-
-
-	          ((var2 & 0x8) != 0))) {}
-	      }
+		  }
 	      if (var1.isPopupTrigger()) {
 	        var1.consume();
 	      }
@@ -236,16 +226,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 				GraphicDefinition.anInt549 = 1;
 			}
 	        int var2 = var1.getModifiers();
-	        if (((var2 & 0x10) == 0) && (
-	        
-
-
-	          ((0x4 & var2) != 0) &&
-	          
-
-
-	          ((var2 & 0x8) == 0))) {}
-	      }
+		  }
 	      if (var1.isPopupTrigger()) {
 	        var1.consume();
 	      }

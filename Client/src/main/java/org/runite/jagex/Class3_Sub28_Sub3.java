@@ -69,9 +69,6 @@ final class Class3_Sub28_Sub3 extends Node {
 
    static void method539() {
       try {
-         if(0 != 0) {
-            method542((byte)73);
-         }
 
          Class136.aClass93_1772.method1522(0 ^ -126, 5);
       } catch (RuntimeException var3) {

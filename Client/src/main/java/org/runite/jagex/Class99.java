@@ -1,5 +1,6 @@
 package org.runite.jagex;
 import java.awt.Frame;
+import java.util.Objects;
 
 final class Class99 {
 
@@ -27,12 +28,12 @@ final class Class99 {
             }
 
             try {
-               Class3_Sub29.anApplet_Sub1_2588.getAppletContext().showDocument(var0.method1547(Class3_Sub29.anApplet_Sub1_2588.getCodeBase()), "_blank");
+               Objects.requireNonNull(Class3_Sub29.anApplet_Sub1_2588.getAppletContext()).showDocument(var0.method1547(Class3_Sub29.anApplet_Sub1_2588.getCodeBase()), "_blank");
             } catch (Exception var4) {
             }
          } else {
             try {
-               Class3_Sub29.anApplet_Sub1_2588.getAppletContext().showDocument(var0.method1547(Class3_Sub29.anApplet_Sub1_2588.getCodeBase()), "_top");
+               Objects.requireNonNull(Class3_Sub29.anApplet_Sub1_2588.getAppletContext()).showDocument(var0.method1547(Class3_Sub29.anApplet_Sub1_2588.getCodeBase()), "_top");
             } catch (Exception var5) {
             }
          }

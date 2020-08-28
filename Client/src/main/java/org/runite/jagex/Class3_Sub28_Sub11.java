@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class3_Sub28_Sub11 extends Node {
 
    private Class130 aClass130_3636;
@@ -222,7 +224,7 @@ final class Class3_Sub28_Sub11 extends Node {
                         if(null != var8) {
                            Class3_Sub12_Sub1 var9 = var8.method1812().method151(Class27.aClass157_524);
                            Class3_Sub24_Sub1 var10 = Class3_Sub24_Sub1.method437(var9, var7);
-                           var10.method429(-1);
+                           Objects.requireNonNull(var10).method429(-1);
                            Class3_Sub26.aClass3_Sub24_Sub2_2563.method457(var10);
                            var1.aClass3_Sub24_Sub1_2312 = var10;
                         }
@@ -242,7 +244,7 @@ final class Class3_Sub28_Sub11 extends Node {
                      if(null != var14) {
                         Class3_Sub12_Sub1 var15 = var14.method1812().method151(Class27.aClass157_524);
                         Class3_Sub24_Sub1 var11 = Class3_Sub24_Sub1.method437(var15, var7);
-                        var11.method429(0);
+                        Objects.requireNonNull(var11).method429(0);
                         Class3_Sub26.aClass3_Sub24_Sub2_2563.method457(var11);
                         var1.anInt2316 = (int)((double)(-var1.anInt2310 + var1.anInt2325) * Math.random()) + var1.anInt2310;
                         var1.aClass3_Sub24_Sub1_2315 = var11;

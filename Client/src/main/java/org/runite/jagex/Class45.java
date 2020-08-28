@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class45 {
 
 	static int[] anIntArray729 = new int[4096];
@@ -52,7 +54,7 @@ final class Class45 {
 							var13 = var14.anInt149;
 							message = var14.aClass3_Sub28_Sub4_151.method555(Class161.aClass3_Sub30_2030);
 						} else {
-							message = Class3_Sub28_Sub17.method686(Class32.method992(Class161.aClass3_Sub30_2030).method1536(78));
+							message = Class3_Sub28_Sub17.method686(Objects.requireNonNull(Class32.method992(Class161.aClass3_Sub30_2030).method1536(78)));
 						}
 
 						var3.textSpoken = message.trim(1);

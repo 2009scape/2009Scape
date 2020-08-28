@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class3_Sub30_Sub1 extends RSByteBuffer {
 
 	static RSString[] aClass94Array3802;
@@ -527,7 +529,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 						++Class3_Sub28_Sub15.anInt3681;
 						Class3_Sub13_Sub1.outgoingBuffer.putInt(2597 + -2725, var3);
 						var13 = Class7.getRSInterface((byte)117, var3);
-						if(var13.childDataBuffers != null && var13.childDataBuffers[0][0] == 5) {
+						if(Objects.requireNonNull(var13).childDataBuffers != null && var13.childDataBuffers[0][0] == 5) {
 							var12 = var13.childDataBuffers[0][1];
 							if(Class163_Sub1.anIntArray2985[var12] != var13.anIntArray307[0]) {
 								Class163_Sub1.anIntArray2985[var12] = var13.anIntArray307[0];
@@ -559,7 +561,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 						++Class3_Sub28_Sub15.anInt3681;
 						Class3_Sub13_Sub1.outgoingBuffer.putInt(-121, var3);
 						var13 = Class7.getRSInterface((byte)122, var3);
-						if(var13.childDataBuffers != null && var13.childDataBuffers[0][0] == 5) {
+						if(Objects.requireNonNull(var13).childDataBuffers != null && var13.childDataBuffers[0][0] == 5) {
 							var12 = var13.childDataBuffers[0][1];
 							Class163_Sub1.anIntArray2985[var12] = -Class163_Sub1.anIntArray2985[var12] + 1;
 							Class46.method1087(68, var12);
@@ -613,7 +615,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 					if(8 == var4) {
 						var13 = Class7.getRSInterface((byte)109, var3);
 						boolean var15 = true;
-						if(0 < var13.anInt189) {
+						if(0 < Objects.requireNonNull(var13).anInt189) {
 							var15 = Class3_Sub28_Sub19.method715(var13);
 						}
 
@@ -974,9 +976,6 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 
 			Class92.setLightParams(CacheIndex.anInt1950, Class30.aFloat578, Class3_Sub13_Sub36.aFloat3424, Class12.aFloat319);
 			Class92.setFogValues(Class3_Sub28_Sub12.anInt3652, Class41.anInt689);
-			if(1 != 1) {
-				aClass94_3807 = (RSString)null;
-			}
 
 			Class92.setLightPosition((float)Class46.anInt741, (float)Class3_Sub13_Sub22.anInt3274, (float)Class86.anInt1191);
 			Class92.method1504();
@@ -1096,32 +1095,30 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 	static void method819() {
 		try {
 			Class3_Sub31 var1 = (Class3_Sub31)Class3_Sub13_Sub17.aClass130_3208.method1776(73);
-			if(true) {
-				for(; var1 != null; var1 = (Class3_Sub31)Class3_Sub13_Sub17.aClass130_3208.method1778(-76)) {
-					int var2 = var1.anInt2602;
-					if(Canvas_Sub2.loadInterface(var2)) {
-						boolean var3 = true;
-						RSInterface[] var4 = GameObject.aClass11ArrayArray1834[var2];
+			for(; var1 != null; var1 = (Class3_Sub31)Class3_Sub13_Sub17.aClass130_3208.method1778(-76)) {
+				int var2 = var1.anInt2602;
+				if(Canvas_Sub2.loadInterface(var2)) {
+					boolean var3 = true;
+					RSInterface[] var4 = GameObject.aClass11ArrayArray1834[var2];
 
-						int var5;
-						for(var5 = 0; var5 < var4.length; ++var5) {
-							if(var4[var5] != null) {
-								var3 = var4[var5].usingScripts;
-								break;
-							}
+					int var5;
+					for(var5 = 0; var5 < var4.length; ++var5) {
+						if(var4[var5] != null) {
+							var3 = var4[var5].usingScripts;
+							break;
 						}
+					}
 
-						if(!var3) {
-							var5 = (int)var1.aLong71;
-							RSInterface var6 = Class7.getRSInterface((byte)123, var5);
-							if(null != var6) {
-								Class20.method909(117, var6);
-							}
+					if(!var3) {
+						var5 = (int)var1.aLong71;
+						RSInterface var6 = Class7.getRSInterface((byte)123, var5);
+						if(null != var6) {
+							Class20.method909(117, var6);
 						}
 					}
 				}
-
 			}
+
 		} catch (RuntimeException var7) {
 			throw Class44.clientError(var7, "i.A(" + false + ')');
 		}

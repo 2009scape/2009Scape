@@ -1,4 +1,5 @@
 package org.runite.jagex;
+import java.util.Objects;
 import java.util.Random;
 
 final class Class3_Sub13_Sub38 extends Class3_Sub13 {
@@ -55,8 +56,6 @@ final class Class3_Sub13_Sub38 extends Class3_Sub13 {
              this.anInt3450 = var2.getShort(1);
          }
 
-         if(var3) {
-         }
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "vc.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }
@@ -137,9 +136,9 @@ final class Class3_Sub13_Sub38 extends Class3_Sub13 {
 
                      int var26 = RenderAnimationDefinition.anInt396 & var24;
                      if(var16) {
-                        var6[var27][var26] = var25;
+                        Objects.requireNonNull(var6)[var27][var26] = var25;
                      } else {
-                        var6[var26][var27] = var25;
+                        Objects.requireNonNull(var6)[var26][var27] = var25;
                      }
                   }
                }

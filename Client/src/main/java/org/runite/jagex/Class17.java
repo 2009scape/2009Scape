@@ -222,7 +222,6 @@ final class Class17 {
          anInterface2_408 = null;
          aClass64_413 = null;
          if(var0 != -24912) {
-            aClass64_413 = (Class64)null;
          }
 
          aThread409 = null;

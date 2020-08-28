@@ -12,7 +12,6 @@ final class Class123 {
       try {
          aClass142Array1654 = null;
          if(var0) {
-            aClass142Array1654 = (AnimationDefinition[])null;
          }
 
       } catch (RuntimeException var2) {

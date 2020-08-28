@@ -14,7 +14,6 @@ final class Class23 {
       try {
          aBooleanArrayArray457 = (boolean[][])null;
          if(var0 != 0) {
-            aBooleanArrayArray457 = (boolean[][])((boolean[][])null);
          }
 
       } catch (RuntimeException var2) {

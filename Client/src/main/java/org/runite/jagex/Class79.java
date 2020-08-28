@@ -25,9 +25,7 @@ final class Class79 {
    static int method1386(KeyEvent var1) {
       try {
          int var2 = var1.getKeyChar();
-         if(false) {
-            return -90;
-         } else if(8364 == var2) {
+         if(8364 == var2) {
             return 128;
          } else {
             if(var2 <= 0 || 256 <= var2) {
@@ -46,7 +44,6 @@ final class Class79 {
          while(true) {
             int var3 = var1.getByte((byte)-41);
             if(var3 == 0) {
-               var3 = 0;
                return;
             }
 

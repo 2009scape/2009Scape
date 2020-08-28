@@ -2,6 +2,7 @@ package org.runite.jagex;
 
 import javax.media.opengl.GL;
 import java.nio.ByteBuffer;
+import java.util.Objects;
 
 final class Class140_Sub1_Sub1 extends Model {
 
@@ -523,10 +524,10 @@ final class Class140_Sub1_Sub1 extends Model {
                                        break;
                                     }
 
-                                    if(var22[var45] != 0) {
-                                       var19[var45] += var46;
-                                       var20[var45] += var41;
-                                       var21[var45] += var42;
+                                    if(Objects.requireNonNull(var22)[var45] != 0) {
+                                       Objects.requireNonNull(var19)[var45] += var46;
+                                       Objects.requireNonNull(var20)[var45] += var41;
+                                       Objects.requireNonNull(var21)[var45] += var42;
                                        var22[var45] += var43;
                                     }
                                  }
@@ -544,10 +545,10 @@ final class Class140_Sub1_Sub1 extends Model {
                                        break;
                                     }
 
-                                    if(var18[var45] != 0) {
-                                       var15[var45] += var46;
-                                       var16[var45] += var41;
-                                       var17[var45] += var42;
+                                    if(Objects.requireNonNull(var18)[var45] != 0) {
+                                       Objects.requireNonNull(var15)[var45] += var46;
+                                       Objects.requireNonNull(var16)[var45] += var41;
+                                       Objects.requireNonNull(var17)[var45] += var42;
                                        var18[var45] += var43;
                                     }
                                  }
@@ -1981,12 +1982,12 @@ final class Class140_Sub1_Sub1 extends Model {
                for(var9 = 0; var9 < this.anInt3833; ++var9) {
                   var30 = this.aShortArray3841[var9];
                   if(var30 == 0) {
-                     aClass3_Sub30_3818.method801((float)this.aShortArray3810[var9] * var26);
+                     aClass3_Sub30_3818.method801((float) Objects.requireNonNull(this.aShortArray3810)[var9] * var26);
                      aClass3_Sub30_3818.method801((float)this.aShortArray3826[var9] * var26);
                      aClass3_Sub30_3818.method801((float)this.aShortArray3837[var9] * var26);
                   } else {
                      var32 = var27 / (float)var30;
-                     aClass3_Sub30_3818.method801((float)this.aShortArray3810[var9] * var32);
+                     aClass3_Sub30_3818.method801((float) Objects.requireNonNull(this.aShortArray3810)[var9] * var32);
                      aClass3_Sub30_3818.method801((float)this.aShortArray3826[var9] * var32);
                      aClass3_Sub30_3818.method801((float)this.aShortArray3837[var9] * var32);
                   }
@@ -1997,12 +1998,12 @@ final class Class140_Sub1_Sub1 extends Model {
                for(var9 = 0; var9 < this.anInt3833; ++var9) {
                   var30 = this.aShortArray3841[var9];
                   if(var30 == 0) {
-                     aClass3_Sub30_3818.method762((float)this.aShortArray3810[var9] * var26, (byte)124);
+                     aClass3_Sub30_3818.method762((float) Objects.requireNonNull(this.aShortArray3810)[var9] * var26, (byte)124);
                      aClass3_Sub30_3818.method762((float)this.aShortArray3826[var9] * var26, (byte)64);
                      aClass3_Sub30_3818.method762((float)this.aShortArray3837[var9] * var26, (byte)122);
                   } else {
                      var32 = var27 / (float)var30;
-                     aClass3_Sub30_3818.method762((float)this.aShortArray3810[var9] * var32, (byte)91);
+                     aClass3_Sub30_3818.method762((float) Objects.requireNonNull(this.aShortArray3810)[var9] * var32, (byte)91);
                      aClass3_Sub30_3818.method762((float)this.aShortArray3826[var9] * var32, (byte)86);
                      aClass3_Sub30_3818.method762((float)this.aShortArray3837[var9] * var32, (byte)111);
                   }

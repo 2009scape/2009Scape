@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 class Class3_Sub13_Sub23 extends Class3_Sub13 {
 
    private int anInt3278 = -1;
@@ -83,7 +85,7 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
                return false;
             } else {
                Class3_Sub28_Sub16_Sub2 var3 = Class126.anInt1668 < 0 ?RSString.method1537(Class104.aClass153_2172, this.anInt3278):Class40.method1043(this.anInt3278, Class104.aClass153_2172, Class126.anInt1668);
-               var3.method665();
+               Objects.requireNonNull(var3).method665();
                this.anInt3283 = var3.anInt3696;
                this.anInt3280 = var3.anInt3707;
                this.anIntArray3284 = var3.anIntArray4081;

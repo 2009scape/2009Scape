@@ -76,10 +76,6 @@ final class Class62 {
             }
          }
 
-         if(23730 != 23730) {
-            method1223(19);
-         }
-
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "ii.B(" + (var0 != null?"{...}":"null") + ',' + 23730 + ',' + var2 + ',' + var3 + ')');
       }

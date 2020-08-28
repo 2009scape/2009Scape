@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class14 {
 
    static int anInt336;
@@ -50,13 +52,13 @@ final class Class14 {
          if(HDToolKit.highDetail) {
             Class141.aClass109_Sub1Array1843 = method885(Class45.anInt735, var1);
 
-            for(int var2 = 0; var2 < Class141.aClass109_Sub1Array1843.length; ++var2) {
+            for(int var2 = 0; var2 < Objects.requireNonNull(Class141.aClass109_Sub1Array1843).length; ++var2) {
                Class141.aClass109_Sub1Array1843[var2].method1675();
             }
          }
 
          Class3_Sub28_Sub16_Sub2 var10 = Class40.method1043(0, var1, Class93.anInt1325);
-         var10.method665();
+         Objects.requireNonNull(var10).method665();
          if(HDToolKit.highDetail) {
             Class57.aClass3_Sub28_Sub16_895 = new Class3_Sub28_Sub16_Sub1(var10);
          } else {
@@ -66,7 +68,7 @@ final class Class14 {
          Class3_Sub28_Sub16_Sub2[] var3 = Class157.method2176(0, 32767, Class3_Sub18.anInt2471, var1);
 
          int var4;
-         for(var4 = 0; var3.length > var4; ++var4) {
+         for(var4 = 0; Objects.requireNonNull(var3).length > var4; ++var4) {
             var3[var4].method665();
          }
 

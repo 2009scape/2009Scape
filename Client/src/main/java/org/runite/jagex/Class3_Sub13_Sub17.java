@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class3_Sub13_Sub17 extends Class3_Sub13 {
 
    static boolean aBoolean3207 = false;
@@ -120,7 +122,6 @@ final class Class3_Sub13_Sub17 extends Class3_Sub13 {
          aClass153_3210 = null;
          aClass94_3209 = null;
          if(var0 >= -100) {
-            aClass94_3209 = (RSString)null;
          }
 
       } catch (RuntimeException var2) {
@@ -222,7 +223,7 @@ final class Class3_Sub13_Sub17 extends Class3_Sub13 {
             for(int var7 = 0; Class113.anInt1559 > var7; ++var7) {
                this.method248(var2, (byte)107, var7);
                int[][] var8 = this.method162(Class50.anInt828, 0, (byte)-49);
-               var4[var7] = var8[0][Class159.anInt2024];
+               var4[var7] = Objects.requireNonNull(var8)[0][Class159.anInt2024];
                var5[var7] = var8[1][Class159.anInt2024];
                var6[var7] = var8[2][Class159.anInt2024];
             }

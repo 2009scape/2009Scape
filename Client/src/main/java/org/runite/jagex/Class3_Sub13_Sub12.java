@@ -1,4 +1,5 @@
 package org.runite.jagex;
+import java.util.Objects;
 import java.util.zip.CRC32;
 
 final class Class3_Sub13_Sub12 extends Class3_Sub13 {
@@ -13,9 +14,6 @@ final class Class3_Sub13_Sub12 extends Class3_Sub13 {
          if(var7 == var4) {
             IOHandler.method1460(var1, var3, var6, var7, var2, var5);
          } else {
-            if(false) {
-               method226(87, 8);
-            }
 
             if(Class101.anInt1425 <= var2 - var7 && var7 + var2 <= Class3_Sub28_Sub18.anInt3765 && var3 - var4 >= Class159.anInt2020 && Class57.anInt902 >= var3 + var4) {
                Class161.method2200(var6, var2, var3, var5, var7, 95, var4, var1);
@@ -136,7 +134,7 @@ final class Class3_Sub13_Sub12 extends Class3_Sub13 {
          int[] var10 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
             int[][] var4 = this.method162(var1, 0, (byte)-126);
-            int[] var5 = var4[0];
+            int[] var5 = Objects.requireNonNull(var4)[0];
             int[] var7 = var4[2];
             int[] var6 = var4[1];
 

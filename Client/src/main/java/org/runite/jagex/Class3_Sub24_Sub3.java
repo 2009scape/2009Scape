@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class3_Sub24_Sub3 extends Class3_Sub24 {
 
    Class61 aClass61_3489 = new Class61();
@@ -65,14 +67,14 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
                }
 
                if(var1.aClass3_Sub15_2527.aShortArray2434[var1.anInt2520] < 0) {
-                  var1.aClass3_Sub24_Sub1_2507.method429(-1);
+                  Objects.requireNonNull(var1.aClass3_Sub24_Sub1_2507).method429(-1);
                }
 
                var3 = var1.anInt2516 / var4;
             }
          }
 
-         var1.aClass3_Sub24_Sub1_2507.method415(var3);
+         Objects.requireNonNull(var1.aClass3_Sub24_Sub1_2507).method415(var3);
 
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "te.P(" + (var1 != null?"{...}":"null") + ',' + 7 + ',' + var3 + ')');
@@ -81,9 +83,6 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
 
    static void method465() {
       try {
-         if(false) {
-            method463(92);
-         }
 
          Class140_Sub4.aClass93_2792.method1522(-128, 5);
       } catch (RuntimeException var3) {
@@ -237,7 +236,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
                }
 
                if(var2.aClass3_Sub15_2527.aShortArray2434[var2.anInt2520] < 0) {
-                  var2.aClass3_Sub24_Sub1_2507.method429(-1);
+                  Objects.requireNonNull(var2.aClass3_Sub24_Sub1_2507).method429(-1);
                }
 
                var3 += var8;

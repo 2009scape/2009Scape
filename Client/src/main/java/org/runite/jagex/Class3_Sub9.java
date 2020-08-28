@@ -35,9 +35,6 @@ final class Class3_Sub9 extends Class3 {
 
    static Class3_Sub28_Sub5 method133(int var0) {
       try {
-         if(0 != 0) {
-            method135(-59, 112, 16, -6, 77, -69);
-         }
          Class3_Sub28_Sub5 var2 = (Class3_Sub28_Sub5)Class159.aClass93_2016.get((long)var0);
          if(var2 == null) {
             var2 = Class47.method1089(Class131.aClass153_1723, Class7.aClass153_2160, var0);

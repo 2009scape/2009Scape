@@ -1,5 +1,6 @@
 package org.runite.jagex;
 import java.util.Calendar;
+import java.util.Objects;
 import java.util.TimeZone;
 
 final class Class3_Sub28_Sub5 extends Node {
@@ -261,7 +262,7 @@ final class Class3_Sub28_Sub5 extends Node {
          int[] fileIds = cacheIndex0.getFileIds(frame);
          int var8 = 0;
 
-         while(fileIds.length > var8) {
+         while(Objects.requireNonNull(fileIds).length > var8) {
             byte[] var9 = cacheIndex0.getFile(frame, fileIds[var8]);
             int skinId = 255 & var9[1] | (var9[0] & 255) << 8;
             Class3_Sub17 var12 = (Class3_Sub17) var5.method1222();
@@ -279,11 +280,7 @@ final class Class3_Sub28_Sub5 extends Node {
 
                if(null == skin) {
                   byte[] var13;
-                  if(false) {
-                     var13 = var2.method2140(skinId, 0);
-                  } else {
-                     var13 = var2.method2140(0, skinId);
-                  }
+                  var13 = var2.method2140(0, skinId);
 
                   skin = new Class3_Sub17(skinId, var13);
                   var5.method1215(skin);

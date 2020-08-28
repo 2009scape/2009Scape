@@ -20,9 +20,6 @@ final class Class3_Sub28_Sub9 extends Node {
       try {
          int var1 = Class3_Sub13_Sub6.anIntArray3076[0] * Class140_Sub7.anIntArray2931[0];
          byte[] var2 = Class163_Sub1.aByteArrayArray2987[0];
-         if(115 != 115) {
-            anInt3624 = 112;
-         }
 
          Object var3;
          if(Class3_Sub13_Sub22.aBooleanArray3272[0]) {

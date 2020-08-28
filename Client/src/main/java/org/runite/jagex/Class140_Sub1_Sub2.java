@@ -1410,7 +1410,6 @@ final class Class140_Sub1_Sub2 extends Model {
          int[] var34 = anIntArrayArray3938[10];
          int[] var35 = anIntArray3922;
          if(var14 == var15) {
-            var14 = 0;
             var15 = anIntArray3918[11];
             var34 = anIntArrayArray3938[11];
             var35 = anIntArray3941;

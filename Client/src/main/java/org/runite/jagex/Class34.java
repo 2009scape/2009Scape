@@ -61,9 +61,7 @@ final class Class34 {
    }
 
    public Class34() {
-      this.anIntArray604[0] = 0;
       this.anIntArray604[1] = '\uffff';
-      this.anIntArray602[0] = 0;
       this.anIntArray602[1] = '\uffff';
    }
 }

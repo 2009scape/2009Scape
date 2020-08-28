@@ -16,9 +16,6 @@ final class ISAACCipher {
 
    private void method1227() {
       try {
-         if(false) {
-            this.method1229(82);
-         }
 
          int var10 = -1640531527;
          int var9 = -1640531527;
@@ -339,31 +336,27 @@ final class ISAACCipher {
 
    static int method1232(NPC var0) {
       try {
-         if(-1 == -1) {
-            NPCDefinition var2 = var0.definition;
-            if(null != var2.childNPCs) {
-               var2 = var2.method1471((byte)-108);
-               if(var2 == null) {
-                  return -1;
-               }
+         NPCDefinition var2 = var0.definition;
+         if(null != var2.childNPCs) {
+            var2 = var2.method1471((byte)-108);
+            if(var2 == null) {
+               return -1;
             }
-
-            int var3 = var2.anInt1293;
-            RenderAnimationDefinition var4 = var0.method1965();
-            if(var0.anInt2764 == var4.anInt368) {
-               var3 = var2.anInt1262;
-            } else if(var4.anInt393 != var0.anInt2764 && var4.anInt386 != var0.anInt2764 && var0.anInt2764 != var4.anInt375 && var0.anInt2764 != var4.anInt373) {
-               if(var0.anInt2764 == var4.anInt398 || var0.anInt2764 == var4.anInt372 || var4.anInt379 == var0.anInt2764 || var4.anInt406 == var0.anInt2764) {
-                  var3 = var2.anInt1290;
-               }
-            } else {
-               var3 = var2.anInt1276;
-            }
-
-            return var3;
-         } else {
-            return 103;
          }
+
+         int var3 = var2.anInt1293;
+         RenderAnimationDefinition var4 = var0.method1965();
+         if(var0.anInt2764 == var4.anInt368) {
+            var3 = var2.anInt1262;
+         } else if(var4.anInt393 != var0.anInt2764 && var4.anInt386 != var0.anInt2764 && var0.anInt2764 != var4.anInt375 && var0.anInt2764 != var4.anInt373) {
+            if(var0.anInt2764 == var4.anInt398 || var0.anInt2764 == var4.anInt372 || var4.anInt379 == var0.anInt2764 || var4.anInt406 == var0.anInt2764) {
+               var3 = var2.anInt1290;
+            }
+         } else {
+            var3 = var2.anInt1276;
+         }
+
+         return var3;
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "ij.B(" + (var0 != null?"{...}":"null") + ',' + -1 + ')');
       }

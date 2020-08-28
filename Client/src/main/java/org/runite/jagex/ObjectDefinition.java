@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class ObjectDefinition {
 
    private short[] aShortArray1476;
@@ -210,7 +212,7 @@ final class ObjectDefinition {
          boolean var12;
          var12 = this.anInt1496 != 0 || this.anInt1511 != 0 || 0 != this.SecondBool;
 
-         Model_Sub1 var13 = new Model_Sub1(var4, -1 == ~var1 && !var11 && !var12, this.OriginalColors == null, null == this.aShortArray1476);
+         Model_Sub1 var13 = new Model_Sub1(Objects.requireNonNull(var4), -1 == ~var1 && !var11 && !var12, this.OriginalColors == null, null == this.aShortArray1476);
          if(var2 == 4 && var1 > 3) {
             var13.method2011();
             var13.method2001(45, 0, -45);

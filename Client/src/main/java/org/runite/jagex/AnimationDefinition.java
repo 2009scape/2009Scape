@@ -272,7 +272,6 @@ final class AnimationDefinition {
 			aClass153_1860 = null;
 			aClass153_1852 = null;
 			if(var0 != -108) {
-				aClass153_1852 = (CacheIndex)null;
 			}
 			anIntArray1871 = null;
 		} catch (RuntimeException var2) {

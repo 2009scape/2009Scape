@@ -5,7 +5,9 @@ import org.runite.GameLaunch;
 import java.awt.*;
 import java.io.IOException;
 import java.net.Socket;
+import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.Objects;
 
 public final class Client extends GameShell {
 
@@ -272,13 +274,13 @@ public final class Client extends GameShell {
 	public final void init() {
 		try {
 			if(this.method29()) {
-				GameLaunch.SETTINGS.setWorld(ObjectDefinition.worldId = Integer.parseInt(this.getParameter("worldid")));
-				Class44.anInt718 = Integer.parseInt(this.getParameter("modewhere"));
+				GameLaunch.SETTINGS.setWorld(ObjectDefinition.worldId = Integer.parseInt(Objects.requireNonNull(this.getParameter("worldid"))));
+				Class44.anInt718 = Integer.parseInt(Objects.requireNonNull(this.getParameter("modewhere")));
 				if(0 > Class44.anInt718 || 1 < Class44.anInt718) {
 					Class44.anInt718 = 0;
 				}
 
-				Class3_Sub13_Sub13.anInt3148 = Integer.parseInt(this.getParameter("modewhat"));
+				Class3_Sub13_Sub13.anInt3148 = Integer.parseInt(Objects.requireNonNull(this.getParameter("modewhat")));
 				if(Class3_Sub13_Sub13.anInt3148 < 0 || Class3_Sub13_Sub13.anInt3148 > 2) {
 					Class3_Sub13_Sub13.anInt3148 = 0;
 				}
@@ -287,7 +289,7 @@ public final class Client extends GameShell {
 				Class3_Sub28_Sub19.aBoolean3779 = var1 != null && var1.equals("1");
 
 				try {
-					Class3_Sub20.language = Integer.parseInt(this.getParameter("lang"));
+					Class3_Sub20.language = Integer.parseInt(Objects.requireNonNull(this.getParameter("lang")));
 				} catch (Exception var10) {
 					Class3_Sub20.language = 0;
 				}
@@ -307,7 +309,7 @@ public final class Client extends GameShell {
 				}
 
 				try {
-					Class3_Sub26.anInt2554 = Integer.parseInt(this.getParameter("affid"));
+					Class3_Sub26.anInt2554 = Integer.parseInt(Objects.requireNonNull(this.getParameter("affid")));
 				} catch (Exception var9) {
 					Class3_Sub26.anInt2554 = 0;
 				}
@@ -351,11 +353,11 @@ public final class Client extends GameShell {
 			System.out.println("port = " + Class53.anInt867);
 			System.out.println("Here: Config.MSIP = " + Configurations.MS_IP);
 			if(Class44.anInt718 == 0) {
-				RuntimeException_Sub1.worldListHost = this.getCodeBase().getHost();
+				RuntimeException_Sub1.worldListHost = Objects.requireNonNull(this.getCodeBase()).getHost();
 				Class53.anInt867 = 43594 + ObjectDefinition.worldId; //443 is secure port
 				Class3_Sub28_Sub19.anInt3773 = '\uaa4a';
 			} else if (Class44.anInt718 == 1) {
-				RuntimeException_Sub1.worldListHost = this.getCodeBase().getHost();
+				RuntimeException_Sub1.worldListHost = Objects.requireNonNull(this.getCodeBase()).getHost();
 				//System.out.println("port = " + Class53.anInt867);
 				Class53.anInt867 = ObjectDefinition.worldId + 50000;
 				Class3_Sub28_Sub19.anInt3773 = 40000 + ObjectDefinition.worldId;
@@ -754,9 +756,6 @@ public final class Client extends GameShell {
 		try {
 			++Class58.aClass66_917.anInt1011;
 			Class17.aClass64_413 = null;
-			if(false) {
-				aClass3_Sub11ArrayArray2199 = (Class3_Sub11[][])((Class3_Sub11[][])null);
-			}
 
 			Class58.aClass66_917.anInt1010 = var2;
 			InputStream_Sub1.js5Connection = null;
@@ -968,7 +967,7 @@ public final class Client extends GameShell {
                     }
 
                     if(PacketParser.anInt80 == 1) {
-                        if(2 == Class17.aClass64_413.anInt978) {
+                        if(2 == Objects.requireNonNull(Class17.aClass64_413).anInt978) {
                             this.method46(1000);
                             return;
                         }
@@ -979,7 +978,7 @@ public final class Client extends GameShell {
                     }
 
                     if(2 == PacketParser.anInt80) {
-                        InputStream_Sub1.js5Connection = new IOHandler((Socket)Class17.aClass64_413.anObject974, Class38.aClass87_665);
+                        InputStream_Sub1.js5Connection = new IOHandler((Socket) Objects.requireNonNull(Class17.aClass64_413).anObject974, Class38.aClass87_665);
                         RSByteBuffer var2 = new RSByteBuffer(9);
                         var2.putByte((byte)-69, 15); //JS5 handshake
                         var2.putInt(-31379 + 31252, Configurations.CLIENT_BUILD);
@@ -1965,7 +1964,7 @@ public final class Client extends GameShell {
 	            ++Class44.anInt719;
 	            if(Class44.anInt719 % 1000 == 1) {
 	               GregorianCalendar var2 = new GregorianCalendar();
-	               Class38_Sub1.anInt2618 = var2.get(11) * 600 - (-(var2.get(12) * 10) + -(var2.get(13) / 6));
+	               Class38_Sub1.anInt2618 = var2.get(Calendar.HOUR_OF_DAY) * 600 - (-(var2.get(Calendar.MINUTE) * 10) + -(var2.get(Calendar.SECOND) / 6));
 	               Class3_Sub13_Sub7.aRandom3088.setSeed((long)Class38_Sub1.anInt2618);
 	            }
 

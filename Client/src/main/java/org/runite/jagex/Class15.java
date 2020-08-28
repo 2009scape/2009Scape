@@ -1,6 +1,7 @@
 package org.runite.jagex;
 import org.runite.Configurations;
 
+import java.util.Calendar;
 import java.util.Date;
 
 final class Class15 implements Runnable {
@@ -29,10 +30,6 @@ final class Class15 implements Runnable {
                var6 &= 3;
             } else {
                var6 = 0;
-            }
-
-            if(false) {
-               aClass64_351 = (Class64)null;
             }
 
             LDIndexedSprite var8 = var7.method77(var6, (byte)-111);
@@ -318,17 +315,17 @@ final class Class15 implements Runnable {
    static RSString method894(long var0, byte var2) {
       try {
          Class3_Sub28_Sub5.aCalendar3581.setTime(new Date(var0));
-         int var3 = Class3_Sub28_Sub5.aCalendar3581.get(7);//Day of the week
-         int var4 = Class3_Sub28_Sub5.aCalendar3581.get(5);
-         int var5 = Class3_Sub28_Sub5.aCalendar3581.get(2);
+         int var3 = Class3_Sub28_Sub5.aCalendar3581.get(Calendar.DAY_OF_WEEK);//Day of the week
+         int var4 = Class3_Sub28_Sub5.aCalendar3581.get(Calendar.DATE);
+         int var5 = Class3_Sub28_Sub5.aCalendar3581.get(Calendar.MONTH);
          if(var2 < 9) {
             method889((byte)7, (RSByteBuffer)null);
          }
 
-         int var6 = Class3_Sub28_Sub5.aCalendar3581.get(1);
-         int var7 = Class3_Sub28_Sub5.aCalendar3581.get(11);
-         int var8 = Class3_Sub28_Sub5.aCalendar3581.get(12);
-         int var9 = Class3_Sub28_Sub5.aCalendar3581.get(13);
+         int var6 = Class3_Sub28_Sub5.aCalendar3581.get(Calendar.YEAR);
+         int var7 = Class3_Sub28_Sub5.aCalendar3581.get(Calendar.HOUR_OF_DAY);
+         int var8 = Class3_Sub28_Sub5.aCalendar3581.get(Calendar.MINUTE);
+         int var9 = Class3_Sub28_Sub5.aCalendar3581.get(Calendar.SECOND);
          return RenderAnimationDefinition.method903(new RSString[]{TextCore.DaysOfTheWeek[var3 + -1], Class3_Sub13_Sub12.aClass94_3145, Class72.method1298((byte)9, var4 / 10), Class72.method1298((byte)9, var4 % 10), Class161.aClass94_2025, TextCore.MonthsOfTheYear[var5], Class161.aClass94_2025, Class72.method1298((byte)9, var6), Class24.aClass94_465, Class72.method1298((byte)9, var7 / 10), Class72.method1298((byte)9, var7 % 10), Class155.char_colon, Class72.method1298((byte)9, var8 / 10), Class72.method1298((byte)9, var8 % 10), Class155.char_colon, Class72.method1298((byte)9, var9 / 10), Class72.method1298((byte)9, var9 % 10), WorldListCountry.aClass94_500}, (byte)-96);
       } catch (RuntimeException var10) {
          throw Class44.clientError(var10, "cj.F(" + var0 + ',' + var2 + ')');

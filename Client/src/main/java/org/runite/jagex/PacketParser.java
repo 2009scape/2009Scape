@@ -1,6 +1,7 @@
 package org.runite.jagex;
 
 import java.io.IOException;
+import java.util.Objects;
 
 final class PacketParser {
 
@@ -362,11 +363,11 @@ final class PacketParser {
                                                     MouseListeningClass.anInt1921 = (1 + MouseListeningClass.anInt1921) % 100;
                                                     RSString var61 = Class3_Sub29.method733(var11).method555(GraphicDefinition.incomingBuffer);
                                                     if (clanChatIcon == 2 || 3 == clanChatIcon) {
-                                                        Class3_Sub28_Sub12.sendGameMessage(var11, 20, var61, Class41.method1052(nameAsLong).method1545(), RenderAnimationDefinition.method903(new RSString[]{Class21.aClass94_444, Class41.method1052(var2).method1545()}, (byte) -124));
+                                                        Class3_Sub28_Sub12.sendGameMessage(var11, 20, var61, Objects.requireNonNull(Class41.method1052(nameAsLong)).method1545(), RenderAnimationDefinition.method903(new RSString[]{Class21.aClass94_444, Objects.requireNonNull(Class41.method1052(var2)).method1545()}, (byte) -124));
                                                     } else if (clanChatIcon == 1) {
-                                                        Class3_Sub28_Sub12.sendGameMessage(var11, 20, var61, Class41.method1052(nameAsLong).method1545(), RenderAnimationDefinition.method903(new RSString[]{Class32.aClass94_592, Class41.method1052(var2).method1545()}, (byte) -109));
+                                                        Class3_Sub28_Sub12.sendGameMessage(var11, 20, var61, Objects.requireNonNull(Class41.method1052(nameAsLong)).method1545(), RenderAnimationDefinition.method903(new RSString[]{Class32.aClass94_592, Objects.requireNonNull(Class41.method1052(var2)).method1545()}, (byte) -109));
                                                     } else {
-                                                        Class3_Sub28_Sub12.sendGameMessage(var11, 20, var61, Class41.method1052(nameAsLong).method1545(), Class41.method1052(var2).method1545());
+                                                        Class3_Sub28_Sub12.sendGameMessage(var11, 20, var61, Objects.requireNonNull(Class41.method1052(nameAsLong)).method1545(), Objects.requireNonNull(Class41.method1052(var2)).method1545());
                                                     }
                                                 }
 
@@ -533,7 +534,7 @@ final class PacketParser {
                                                         var2 = GraphicDefinition.incomingBuffer.getLong(-125);
                                                         modelId = GraphicDefinition.incomingBuffer.getShort(1);
                                                         var56 = Class3_Sub29.method733(modelId).method555(GraphicDefinition.incomingBuffer);
-                                                        Class3_Sub28_Sub12.sendGameMessage(modelId, 19, var56, null, Class41.method1052(var2).method1545());
+                                                        Class3_Sub28_Sub12.sendGameMessage(modelId, 19, var56, null, Objects.requireNonNull(Class41.method1052(var2)).method1545());
                                                         RSString.incomingOpcode = -1;
                                                         return true;
                                                     } else if (RSString.incomingOpcode == 169) {
@@ -594,7 +595,7 @@ final class PacketParser {
                                                                         var38 = new Class3_Sub1(var47.anInt2205, nodeModelId);
                                                                         var47.method86(-1024);
                                                                     } else if (var30 == -1) {
-                                                                        var38 = new Class3_Sub1(Class7.getRSInterface((byte) 119, var19).aClass3_Sub1_257.anInt2205, nodeModelId);
+                                                                        var38 = new Class3_Sub1(Objects.requireNonNull(Class7.getRSInterface((byte) 119, var19)).aClass3_Sub1_257.anInt2205, nodeModelId);
                                                                     } else {
                                                                         var38 = new Class3_Sub1(0, nodeModelId);
                                                                     }
@@ -815,7 +816,7 @@ final class PacketParser {
                                                                 nodeModelId = GraphicDefinition.incomingBuffer.getIntB((byte) 72);
                                                                 RSInterface var65 = Class7.getRSInterface((byte) 111, nodeModelId);
 
-                                                                for (modelId = 0; var65.itemAmounts.length > modelId; ++modelId) {
+                                                                for (modelId = 0; Objects.requireNonNull(var65).itemAmounts.length > modelId; ++modelId) {
                                                                     var65.itemAmounts[modelId] = -1;
                                                                     var65.itemAmounts[modelId] = 0;
                                                                 }
@@ -868,7 +869,7 @@ final class PacketParser {
                                                                         var41 = GraphicDefinition.incomingBuffer.getString();
                                                                     }
 
-                                                                    RSString var46 = Class41.method1052(var2).method1545();
+                                                                    RSString var46 = Objects.requireNonNull(Class41.method1052(var2)).method1545();
 
                                                                     for (var33 = 0; var33 < Class8.anInt104; ++var33) {
                                                                         if (var2 == Class50.aLongArray826[var33]) {
@@ -1011,11 +1012,11 @@ final class PacketParser {
                                                                         MouseListeningClass.anInt1921 = (1 + MouseListeningClass.anInt1921) % 100;
                                                                         var64 = Class3_Sub29.method733(var33).method555(GraphicDefinition.incomingBuffer);
                                                                         if (chatIcon == 2) {
-                                                                            Class3_Sub28_Sub12.sendGameMessage(var33, 18, var64, null, RenderAnimationDefinition.method903(new RSString[]{Class21.aClass94_444, Class41.method1052(var2).method1545()}, (byte) -105));
+                                                                            Class3_Sub28_Sub12.sendGameMessage(var33, 18, var64, null, RenderAnimationDefinition.method903(new RSString[]{Class21.aClass94_444, Objects.requireNonNull(Class41.method1052(var2)).method1545()}, (byte) -105));
                                                                         } else if (1 == chatIcon) {
-                                                                            Class3_Sub28_Sub12.sendGameMessage(var33, 18, var64, null, RenderAnimationDefinition.method903(new RSString[]{Class32.aClass94_592, Class41.method1052(var2).method1545()}, (byte) -113));
+                                                                            Class3_Sub28_Sub12.sendGameMessage(var33, 18, var64, null, RenderAnimationDefinition.method903(new RSString[]{Class32.aClass94_592, Objects.requireNonNull(Class41.method1052(var2)).method1545()}, (byte) -113));
                                                                         } else {
-                                                                            Class3_Sub28_Sub12.sendGameMessage(var33, 18, var64, null, Class41.method1052(var2).method1545());
+                                                                            Class3_Sub28_Sub12.sendGameMessage(var33, 18, var64, null, Objects.requireNonNull(Class41.method1052(var2)).method1545());
                                                                         }
                                                                     }
 
@@ -1141,8 +1142,8 @@ final class PacketParser {
                                                                         return true;
                                                                     } else if (RSString.incomingOpcode == 71) {
                                                                         var2 = GraphicDefinition.incomingBuffer.getLong((byte) -83 ^ 28);
-                                                                        var58 = Class3_Sub28_Sub17.method686(Class32.method992(GraphicDefinition.incomingBuffer).method1536(121));
-                                                                        Class3_Sub30_Sub1.addChatMessage(Class41.method1052(var2).method1545(), 6, var58, (byte) -83 ^ 82);
+                                                                        var58 = Class3_Sub28_Sub17.method686(Objects.requireNonNull(Class32.method992(GraphicDefinition.incomingBuffer).method1536(121)));
+                                                                        Class3_Sub30_Sub1.addChatMessage(Objects.requireNonNull(Class41.method1052(var2)).method1545(), 6, var58, (byte) -83 ^ 82);
                                                                         RSString.incomingOpcode = -1;
                                                                         return true;
                                                                     } else if (RSString.incomingOpcode == 42) {
@@ -1347,13 +1348,13 @@ final class PacketParser {
                                                                         if (!var42 && WorldListEntry.inTutorialIsland == 0) {
                                                                             Class163_Sub2_Sub1.aLongArray4017[MouseListeningClass.anInt1921] = var35;
                                                                             MouseListeningClass.anInt1921 = (MouseListeningClass.anInt1921 - -1) % 100;
-                                                                            RSString var52 = Class3_Sub28_Sub17.method686(Class32.method992(GraphicDefinition.incomingBuffer).method1536(96));
+                                                                            RSString var52 = Class3_Sub28_Sub17.method686(Objects.requireNonNull(Class32.method992(GraphicDefinition.incomingBuffer).method1536(96)));
                                                                             if (chatIcon == 2 || chatIcon == 3) {
-                                                                                Class3_Sub30_Sub1.addChatMessage(RenderAnimationDefinition.method903(new RSString[]{Class21.aClass94_444, Class41.method1052(var2).method1545()}, (byte) -105), 7, var52, -1);
+                                                                                Class3_Sub30_Sub1.addChatMessage(RenderAnimationDefinition.method903(new RSString[]{Class21.aClass94_444, Objects.requireNonNull(Class41.method1052(var2)).method1545()}, (byte) -105), 7, var52, -1);
                                                                             } else if (chatIcon == 1) {
-                                                                                Class3_Sub30_Sub1.addChatMessage(RenderAnimationDefinition.method903(new RSString[]{RSString.createRSString("<img=" + (chatIcon - 1) + ">"), Class41.method1052(var2).method1545()}, (byte) -71), 7, var52, -1);
+                                                                                Class3_Sub30_Sub1.addChatMessage(RenderAnimationDefinition.method903(new RSString[]{RSString.createRSString("<img=" + (chatIcon - 1) + ">"), Objects.requireNonNull(Class41.method1052(var2)).method1545()}, (byte) -71), 7, var52, -1);
                                                                             } else {
-                                                                                Class3_Sub30_Sub1.addChatMessage(RenderAnimationDefinition.method903(new RSString[]{RSString.createRSString("<img=" + (chatIcon - 1) + ">"), Class41.method1052(var2).method1545()}, (byte) -71), 7, var52, -1);
+                                                                                Class3_Sub30_Sub1.addChatMessage(RenderAnimationDefinition.method903(new RSString[]{RSString.createRSString("<img=" + (chatIcon - 1) + ">"), Objects.requireNonNull(Class41.method1052(var2)).method1545()}, (byte) -71), 7, var52, -1);
                                                                             }
                                                                         }
 
@@ -1399,14 +1400,14 @@ final class PacketParser {
                                                                         if (!var13 && 0 == WorldListEntry.inTutorialIsland) {
                                                                             Class163_Sub2_Sub1.aLongArray4017[MouseListeningClass.anInt1921] = var44;
                                                                             MouseListeningClass.anInt1921 = (MouseListeningClass.anInt1921 + 1) % 100;
-                                                                            var57 = Class3_Sub28_Sub17.method686(Class32.method992(GraphicDefinition.incomingBuffer).method1536(116));
+                                                                            var57 = Class3_Sub28_Sub17.method686(Objects.requireNonNull(Class32.method992(GraphicDefinition.incomingBuffer).method1536(116)));
                                                                             if (clanChatIcon == 2 || clanChatIcon == 3) {
-                                                                                Class3_Sub13_Sub11.method221(-1, var57, RenderAnimationDefinition.method903(new RSString[]{Class21.aClass94_444, Class41.method1052(var2).method1545()}, (byte) -59), Class41.method1052(nameAsLong).method1545(), 9);
+                                                                                Class3_Sub13_Sub11.method221(-1, var57, RenderAnimationDefinition.method903(new RSString[]{Class21.aClass94_444, Objects.requireNonNull(Class41.method1052(var2)).method1545()}, (byte) -59), Objects.requireNonNull(Class41.method1052(nameAsLong)).method1545(), 9);
                                                                             } else if (clanChatIcon == 1) {
-                                                                                Class3_Sub13_Sub11.method221(-1, var57, RenderAnimationDefinition.method903(new RSString[]{Class32.aClass94_592, Class41.method1052(var2).method1545()}, (byte) -85), Class41.method1052(nameAsLong).method1545(), 9);
+                                                                                Class3_Sub13_Sub11.method221(-1, var57, RenderAnimationDefinition.method903(new RSString[]{Class32.aClass94_592, Objects.requireNonNull(Class41.method1052(var2)).method1545()}, (byte) -85), Objects.requireNonNull(Class41.method1052(nameAsLong)).method1545(), 9);
                                                                             } else {
 
-                                                                                Class3_Sub13_Sub11.method221(-1, var57, RenderAnimationDefinition.method903(new RSString[]{RSString.createRSString("<img=" + (clanChatIcon - 1) + ">"), Class41.method1052(var2).method1545()}, (byte) -85), Class41.method1052(nameAsLong).method1545(), 9);
+                                                                                Class3_Sub13_Sub11.method221(-1, var57, RenderAnimationDefinition.method903(new RSString[]{RSString.createRSString("<img=" + (clanChatIcon - 1) + ">"), Objects.requireNonNull(Class41.method1052(var2)).method1545()}, (byte) -85), Objects.requireNonNull(Class41.method1052(nameAsLong)).method1545(), 9);
 
                                                                             }
                                                                         }
@@ -1560,7 +1561,7 @@ final class PacketParser {
                                                                                     var47 = (Class3_Sub1) Class124.aClass130_1659.method1780(var36, 0);
                                                                                     if (var47 == null) {
                                                                                         if (-1 == var30) {
-                                                                                            var38 = new Class3_Sub1(var6, Class7.getRSInterface((byte) 116, modelId).aClass3_Sub1_257.anInt2202);
+                                                                                            var38 = new Class3_Sub1(var6, Objects.requireNonNull(Class7.getRSInterface((byte) 116, modelId)).aClass3_Sub1_257.anInt2202);
                                                                                         } else {
                                                                                             var38 = new Class3_Sub1(var6, -1);
                                                                                         }
@@ -1671,7 +1672,7 @@ final class PacketParser {
                                                                             if (Class146.updateInterfacePacketCounter(counter)) {
                                                                                 RSInterface var34 = Class7.getRSInterface((byte) 115, var19);
                                                                                 ItemDefinition var43;
-                                                                                if (var34.usingScripts) {
+                                                                                if (Objects.requireNonNull(var34).usingScripts) {
                                                                                     Class140_Sub6.method2026(var19, nodeModelId, modelId);
                                                                                     var43 = Class38.getItemDefinition(modelId, (byte) 70);
                                                                                     CacheIndex.method2143((byte) -128, var43.anInt810, var19, var43.anInt799, var43.anInt786);

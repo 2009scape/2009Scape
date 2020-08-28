@@ -1,6 +1,7 @@
 package org.runite.jagex;
 import java.io.IOException;
 import java.net.Socket;
+import java.util.Objects;
 
 final class Class3_Sub13_Sub21 extends Class3_Sub13 {
 //Class3_Sub13_Sub21
@@ -81,7 +82,7 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
 
                int response;
                if(Canvas_Sub1.registryStage == 2) {
-                  if(Class3_Sub9.aClass64_2318.anInt978 == 2) {
+                  if(Objects.requireNonNull(Class3_Sub9.aClass64_2318).anInt978 == 2) {
                      throw new IOException();
                   }
                   if(1 != Class3_Sub9.aClass64_2318.anInt978) {

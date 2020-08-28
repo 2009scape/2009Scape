@@ -96,9 +96,6 @@ final class Class3_Sub28_Sub6 extends Node {
 
    final long b() {
       try {
-         if(false) {
-            this.e(90);
-         }
 
          return this.aLong2569 & Long.MAX_VALUE;
       } catch (RuntimeException var3) {

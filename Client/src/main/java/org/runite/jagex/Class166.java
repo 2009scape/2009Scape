@@ -30,7 +30,6 @@ final class Class166 {
          aClass94_2080 = null;
          aClass94_2075 = null;
          if(var0 >= -126) {
-            aClass94_2080 = (RSString)null;
          }
 
          anIntArray2068 = null;
@@ -127,9 +126,7 @@ final class Class166 {
    static void method2260() {
       try {
          Class3_Sub13_Sub34.aClass93_3412.method1522(-1045 + 919, 5);
-         if(-1045 == -1045) {
-            Class3_Sub13_Sub31.aClass93_3369.method1522(-1045 ^ 1130, 5);
-         }
+         Class3_Sub13_Sub31.aClass93_3369.method1522(-1045 ^ 1130, 5);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "wh.E(" + -1045 + ',' + 5 + ')');
       }

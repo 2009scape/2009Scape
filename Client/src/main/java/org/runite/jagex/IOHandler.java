@@ -116,19 +116,17 @@ final class IOHandler implements Runnable {
 
     final void readBytes(int var1, int var2, byte[] var4) throws IOException {
         try {
-            if(-18455 == -18455) {
-                if(!this.aBoolean1241) {
-                    while(var2 > 0) {
-                        int var5 = this.anInputStream1232.read(var4, var1, var2);
-                        if(0 >= var5) {
-                            throw new EOFException();
-                        }
-
-                        var1 += var5;
-                        var2 -= var5;
+            if(!this.aBoolean1241) {
+                while(var2 > 0) {
+                    int var5 = this.anInputStream1232.read(var4, var1, var2);
+                    if(0 >= var5) {
+                        throw new EOFException();
                     }
 
+                    var1 += var5;
+                    var2 -= var5;
                 }
+
             }
         } catch (RuntimeException var6) {
             throw Class44.clientError(var6, "ma.D(" + var1 + ',' + var2 + ',' + -18455 + ',' + (var4 != null?"{...}":"null") + ')');
@@ -184,10 +182,6 @@ final class IOHandler implements Runnable {
                             this.aClass64_1237 = this.aClass87_1239.method1451(0, 3, this);
                         }
 
-                        if(false) {
-                            aClass61_1242 = (Class61)null;
-                        }
-
                         this.notifyAll();
                     }
                 }
@@ -234,9 +228,6 @@ final class IOHandler implements Runnable {
 
     final void method1467() {
         try {
-            if(false) {
-                method1469((int[])null, 19, 31, -15, 103, 77);
-            }
 
             if(!this.aBoolean1241) {
                 this.anInputStream1232 = new InputStream_Sub1();

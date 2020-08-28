@@ -227,9 +227,6 @@ final class Class66 {
 			if(this.aClass89_1005 != null) {
 				try {
 					this.aClass3_Sub30_1007.index = 0;
-					if(false) {
-						this.method1256((byte)21);
-					}
 
 					this.aClass3_Sub30_1007.putByte((byte)-48, 7);
 					this.aClass3_Sub30_1007.putTriByte(0);

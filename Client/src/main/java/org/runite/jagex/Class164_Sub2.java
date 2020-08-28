@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 class Class164_Sub2 extends Class164 {
 
    private int anInt3018;
@@ -132,7 +134,7 @@ class Class164_Sub2 extends Class164 {
                      var12 = Class7.getRSInterface((byte)124, var11);
                      var13 = var4[var6++];
                      if(-1 != var13 && (!Class38.getItemDefinition(var13, (byte)109).membersItem || Class2.isMember)) {
-                        for(var14 = 0; var14 < var12.itemAmounts.length; ++var14) {
+                        for(var14 = 0; var14 < Objects.requireNonNull(var12).itemAmounts.length; ++var14) {
                            if(1 + var13 == var12.itemAmounts[var14]) {
                               var9 += var12.itemIds[var14];
                            }
@@ -170,7 +172,7 @@ class Class164_Sub2 extends Class164 {
                      var12 = Class7.getRSInterface((byte)115, var11);
                      var13 = var4[var6++];
                      if(var13 != -1 && (!Class38.getItemDefinition(var13, (byte)88).membersItem || Class2.isMember)) {
-                        for(var14 = 0; var14 < var12.itemAmounts.length; ++var14) {
+                        for(var14 = 0; var14 < Objects.requireNonNull(var12).itemAmounts.length; ++var14) {
                            if(1 + var13 == var12.itemAmounts[var14]) {
                               var9 = 999999999;
                               break;

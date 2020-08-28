@@ -246,9 +246,6 @@ final class RSInterface {
 
    static RSString method856() {
       try {
-         if(false) {
-            method869(127, -68);
-         }
 
          RSString var1 = Class3_Sub28_Sub7_Sub1.aClass94_4052;
          RSString var2 = Class3_Sub28_Sub14.aClass94_3672;
@@ -558,9 +555,7 @@ final class RSInterface {
    final Class3_Sub28_Sub16 method859(int var2) {
       try {
          GameShell.aBoolean6 = false;
-         if(false) {
-            return (Class3_Sub28_Sub16)null;
-         } else if(var2 >= 0 && var2 < this.anIntArray197.length) {
+         if(var2 >= 0 && var2 < this.anIntArray197.length) {
             int var3 = this.anIntArray197[var2];
             if(var3 == -1) {
                return null;

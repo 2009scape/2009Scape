@@ -40,9 +40,6 @@ final class Class72 {
          if(!Class3_Sub28_Sub19.aBoolean3779 && Class44.anInt718 != 2) {
             try {
                InputStream_Sub1.aClass94_38.method1577(Class126.aClient1671);
-               if(false) {
-                  method1298((byte)-25, 1);
-               }
             } catch (Throwable var2) {
             }
 

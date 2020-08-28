@@ -948,9 +948,6 @@ final class Class168 {
             }
          }
 
-         if(var0 <= 103) {
-         }
-
       } catch (RuntimeException var9) {
          throw Class44.clientError(var9, "wl.D(" + var0 + ')');
       }

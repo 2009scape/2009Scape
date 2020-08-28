@@ -18,7 +18,6 @@ abstract class Class75 {
          anIntArray1107 = null;
          aClass3_Sub28_Sub5Array1103 = null;
          if(var0 != -115) {
-            anIntArray1107 = (int[])null;
          }
 
       } catch (RuntimeException var2) {
@@ -68,15 +67,13 @@ abstract class Class75 {
 
    static void method1339(RSString var0) {
       try {
-         if(0 == 0) {
-            for(Class3_Sub28_Sub3 var2 = (Class3_Sub28_Sub3)Class134.aClass61_1758.method1222(); var2 != null; var2 = (Class3_Sub28_Sub3)Class134.aClass61_1758.method1221()) {
-               if(var2.aClass94_3561.method1528(var0)) {
-                  RSByteBuffer.aClass3_Sub28_Sub3_2600 = var2;
-                  return;
-               }
+         for(Class3_Sub28_Sub3 var2 = (Class3_Sub28_Sub3)Class134.aClass61_1758.method1222(); var2 != null; var2 = (Class3_Sub28_Sub3)Class134.aClass61_1758.method1221()) {
+            if(var2.aClass94_3561.method1528(var0)) {
+               RSByteBuffer.aClass3_Sub28_Sub3_2600 = var2;
+               return;
             }
-
          }
+
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "kf.G(" + (var0 != null?"{...}":"null") + ',' + 0 + ')');
       }

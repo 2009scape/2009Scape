@@ -2,6 +2,7 @@ package org.runite.jagex;
 import org.runite.Configurations;
 
 import java.math.BigInteger;
+import java.util.Objects;
 
 class RSByteBuffer extends Class3 {
 
@@ -114,9 +115,6 @@ class RSByteBuffer extends Class3 {
 
 	static void method744() {
 		try {
-			if(false) {
-				method784(-10, -32, -21);
-			}
 
 			++KeyboardListener.anInt1908;
 		} catch (RuntimeException var2) {
@@ -136,8 +134,6 @@ class RSByteBuffer extends Class3 {
 	static void method746(byte var0) {
 		try {
 			Class67.aClass93_1013.method1524();
-			if(var0 == -29) {
-			}
 		} catch (RuntimeException var2) {
 			throw Class44.clientError(var2, "wa.VC(" + var0 + ')');
 		}
@@ -227,9 +223,6 @@ class RSByteBuffer extends Class3 {
 
 	final int getByteS() {
 		try {
-			if(false) {
-				this.index = 61;
-			}
 
 			return -this.buffer[this.index++] + 128 & 255;
 		} catch (RuntimeException var3) {
@@ -329,7 +322,7 @@ class RSByteBuffer extends Class3 {
 			if(0 == var2) {
 				int var3 = this.index;
 
-				while(this.buffer[this.index++] != 0) {
+				while(Objects.requireNonNull(this.buffer)[this.index++] != 0) {
 				}
 
 				return Class3_Sub13_Sub3.method178(this.buffer, this.index - (var3 - -1), var3);
@@ -402,7 +395,6 @@ class RSByteBuffer extends Class3 {
 			aClass151_Sub1Array2601 = null;
 			aClass94_2598 = null;
 			if(var0 != 0) {
-				anIntArray2591 = (int[])null;
 			}
 
 		} catch (RuntimeException var2) {
@@ -786,9 +778,6 @@ class RSByteBuffer extends Class3 {
 
 	final int getSmart() {
 		try {
-			if(false) {
-				TextCore.LoadedInterfaces = (RSString)null;
-			}
 
 			int var2 = this.buffer[this.index] & 255;
 			return 128 <= var2?-32768 + this.getShort(1):this.getByte((byte)-74);
@@ -850,10 +839,8 @@ class RSByteBuffer extends Class3 {
 
 	final void putShortA(int var1) {
 		try {
-			if(-268435456 == -268435456) {
-				this.buffer[this.index++] = (byte)(var1 >> -702824440);
-				this.buffer[this.index++] = (byte)(128 + var1);
-			}
+			this.buffer[this.index++] = (byte)(var1 >> -702824440);
+			this.buffer[this.index++] = (byte)(128 + var1);
 		} catch (RuntimeException var4) {
 			throw Class44.clientError(var4, "wa.LB(" + var1 + ',' + -268435456 + ')');
 		}
@@ -888,9 +875,6 @@ class RSByteBuffer extends Class3 {
 
 	final int getByteC() {
 		try {
-			if(false) {
-				this.index = 46;
-			}
 
 			return 255 & -this.buffer[this.index++];
 		} catch (RuntimeException var3) {
@@ -975,21 +959,19 @@ class RSByteBuffer extends Class3 {
 	
 	static void method792() {
 		try {
-			if(9179409 == 9179409) {
-				int var1 = Class137.method1817();
-				if(0 == var1) {
-					Class158.aByteArrayArrayArray2008 = (byte[][][])null;
-					Class136.method1816(0, -7);
-				} else if(var1 == 1) {
-					Class3_Sub5.method112((byte)0);
-					Class136.method1816(512, -7);
-					Class3_Sub13_Sub18.method257();
-				} else {
-					Class3_Sub5.method112((byte)(-4 + Class79.anInt1127 & 255));
-					Class136.method1816(2, -7);
-				}
-
+			int var1 = Class137.method1817();
+			if(0 == var1) {
+				Class158.aByteArrayArrayArray2008 = (byte[][][])null;
+				Class136.method1816(0, -7);
+			} else if(var1 == 1) {
+				Class3_Sub5.method112((byte)0);
+				Class136.method1816(512, -7);
+				Class3_Sub13_Sub18.method257();
+			} else {
+				Class3_Sub5.method112((byte)(-4 + Class79.anInt1127 & 255));
+				Class136.method1816(2, -7);
 			}
+
 		} catch (RuntimeException var2) {
 			throw Class44.clientError(var2, "wa.AA(" + 9179409 + ')');
 		}
@@ -1029,9 +1011,6 @@ class RSByteBuffer extends Class3 {
 
 	final void putLEShort(int var2) {
 		try {
-			if(-1 != -1) {
-				aClass94Array2596 = (RSString[])null;
-			}
 
 			this.buffer[this.index++] = (byte)var2;
 			this.buffer[this.index++] = (byte)(var2 >> 203327944);
@@ -1189,9 +1168,6 @@ class RSByteBuffer extends Class3 {
 
 	static RSString method802(int var0) {
 		try {
-			if(false) {
-				method746((byte)-33);
-			}
 
 			return Class163_Sub2_Sub1.aClass94Array4016[var0].length(-26) > 0 ?RenderAnimationDefinition.method903(new RSString[]{Class140_Sub7.aClass94Array2935[var0], TextCore.Spacer, Class163_Sub2_Sub1.aClass94Array4016[var0]}, (byte)-86):Class140_Sub7.aClass94Array2935[var0];
 		} catch (RuntimeException var3) {

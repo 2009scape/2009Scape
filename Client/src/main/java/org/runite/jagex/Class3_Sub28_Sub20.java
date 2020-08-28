@@ -228,7 +228,6 @@ final class Class3_Sub28_Sub20 extends Node {
          aClass153_3786 = null;
          aClass118_3794 = null;
          if(var0 != 20413) {
-            aClass118_3794 = (Class118)null;
          }
 
       } catch (RuntimeException var2) {

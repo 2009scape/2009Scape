@@ -216,9 +216,7 @@ abstract class GameObject {
       try {
          Class101.aClass3_Sub24_Sub4_1421.method505((byte)-128);
          Class10.anInt154 = 1;
-         if(true) {
-            Class101.aClass153_1423 = null;
-         }
+         Class101.aClass153_1423 = null;
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "th.GC(" + false + ')');
       }

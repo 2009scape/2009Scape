@@ -654,11 +654,9 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
 
    private synchronized void method2190() {
       try {
-         if(19661184 == 19661184) {
-            if(this.anImageConsumer2978 != null) {
-               this.anImageConsumer2978.setPixels(0, 0, this.anInt2012, this.anInt2011, this.aColorModel2979, this.anIntArray2007, 0, this.anInt2012);
-               this.anImageConsumer2978.imageComplete(2);
-            }
+         if(this.anImageConsumer2978 != null) {
+            this.anImageConsumer2978.setPixels(0, 0, this.anInt2012, this.anInt2011, this.aColorModel2979, this.anIntArray2007, 0, this.anInt2012);
+            this.anImageConsumer2978.imageComplete(2);
          }
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "di.L(" + 19661184 + ')');

@@ -313,7 +313,7 @@ final class Class33 {
    Class33(int var1, Component var3) {
       this.anInt596 = anInt598 * 9;
       this.aBoolean595 = false;
-      Font var4 = new Font("Helvetica", 1, var1);
+      Font var4 = new Font("Helvetica", Font.BOLD, var1);
       FontMetrics var5 = var3.getFontMetrics(var4);
 
       int var6;
@@ -324,7 +324,7 @@ final class Class33 {
       if(this.aBoolean595) {
          this.anInt596 = anInt598 * 9;
          this.aBoolean595 = false;
-         var4 = new Font("Helvetica", 0, var1);
+         var4 = new Font("Helvetica", Font.PLAIN, var1);
          var5 = var3.getFontMetrics(var4);
 
          for(var6 = 0; var6 < anInt598; ++var6) {

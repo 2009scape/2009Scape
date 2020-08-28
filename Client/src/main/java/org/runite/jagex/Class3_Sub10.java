@@ -61,9 +61,6 @@ final class Class3_Sub10 extends Class3 {
 
    static void method142() {
       try {
-         if(false) {
-            aByteArrayArrayArray2339 = (byte[][][])((byte[][][])null);
-         }
 
          Class158_Sub1.aClass93_2982.method1524();
       } catch (RuntimeException var2) {

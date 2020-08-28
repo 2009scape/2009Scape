@@ -299,7 +299,6 @@ class Class155 {
       try {
          this.aBoolean1984 = true;
          if(var1 <= 54) {
-            this.aBoolean1984 = true;
          }
 
       } catch (RuntimeException var3) {
@@ -385,8 +384,6 @@ class Class155 {
 
          this.method2160();
          this.anIntArray1975 = null;
-         if(true) {
-         }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "vh.P(" + false + ')');
       }

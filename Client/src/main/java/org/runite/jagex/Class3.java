@@ -145,9 +145,6 @@ class Class3 {
          Class97.aClass153_1378 = var1;
          Class3_Sub13_Sub29.aClass153_3361 = var3;
          Class119.aClass153_1628 = var4;
-         if(false) {
-            method87(-98, 11);
-         }
 
          GameObject.aClass11ArrayArray1834 = new RSInterface[Class3_Sub13_Sub29.aClass153_3361.method2121()][];
          Class130.aBooleanArray1703 = new boolean[Class3_Sub13_Sub29.aClass153_3361.method2121()];

@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 class Class163 {
 
    static Class47 aClass47_2041 = new Class47(64);
@@ -16,7 +18,6 @@ class Class163 {
          COMMAND_ERROR_TEST = null;
          aClass94_2044 = null;
          if(var0 != 30358) {
-            COMMAND_ERROR_TEST = (RSString)null;
          }
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "wd.L(" + var0 + ')');
@@ -30,7 +31,7 @@ class Class163 {
          }
 
          Class79 var3 = CS2Script.method378(var2, (byte)127);
-         int var4 = var3.anInt1128;
+         int var4 = Objects.requireNonNull(var3).anInt1128;
          int var6 = var3.anInt1125;
          int var5 = var3.anInt1123;
          int var7 = Class3_Sub6.anIntArray2288[var6 - var5];

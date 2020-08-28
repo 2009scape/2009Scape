@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class24 {
 
    private short[] aShortArray460;
@@ -282,13 +284,13 @@ final class Class24 {
             int var5;
             if(null != this.aShortArray464) {
                for(var5 = 0; var5 < this.aShortArray464.length; ++var5) {
-                  var7.method2016(this.aShortArray464[var5], this.aShortArray460[var5]);
+                  Objects.requireNonNull(var7).method2016(this.aShortArray464[var5], this.aShortArray460[var5]);
                }
             }
 
             if(this.aShortArray471 != null) {
                for(var5 = 0; this.aShortArray471.length > var5; ++var5) {
-                  var7.method1998(this.aShortArray471[var5], this.aShortArray470[var5]);
+                  Objects.requireNonNull(var7).method1998(this.aShortArray471[var5], this.aShortArray470[var5]);
                }
             }
 

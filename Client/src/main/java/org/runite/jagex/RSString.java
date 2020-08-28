@@ -7,6 +7,7 @@ import java.awt.Graphics;
 import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Objects;
 
 final class RSString implements Interface3 {
 
@@ -185,10 +186,6 @@ final class RSString implements Interface3 {
             }
          }
 
-         if(false) {
-            aBoolean2150 = true;
-         }
-
          return true;
       } catch (RuntimeException var17) {
          throw Class44.clientError(var17, "na.N(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + true + ')');
@@ -336,9 +333,6 @@ final class RSString implements Interface3 {
 
    final RSString method1534() {
       try {
-         if(-98 != -98) {
-            this.method1562((byte)-53, (RSString)null);
-         }
 
          RSString var2 = new RSString();
          var2.length = this.length;
@@ -457,10 +451,7 @@ final class RSString implements Interface3 {
 
    static LDIndexedSprite method1539(int var0, int var2, CacheIndex var3) {
       try {
-         if(false) {
-            method1535((WorldListEntry)null, (WorldListEntry)null, -64, -40, 23, false, false);
-         }
-       //  System.out.println("RSString " + var2);
+         //  System.out.println("RSString " + var2);
          return Class75_Sub4.method1351(var3, var0, var2, -30901)?Class77.method1364():null;
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "na.MA(" + var0 + ',' + true + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
@@ -639,9 +630,6 @@ final class RSString implements Interface3 {
 
    final URL method1547(URL var1) throws MalformedURLException {
       try {
-         if(false) {
-            this.byteArray = (byte[])null;
-         }
 
          return new URL(var1, new String(this.byteArray, 0, this.length));
       } catch (RuntimeException var4) {
@@ -837,9 +825,6 @@ final class RSString implements Interface3 {
 
    final int method1559(RSString var1) {
       try {
-         if(-1 != -1) {
-            this.method1544(true);
-         }
 
          int var3;
          if(var1.length < this.length) {
@@ -886,7 +871,7 @@ final class RSString implements Interface3 {
                   int var8 = this.method1566(var3, var6);
                   if(0 > var8) {
                      while(this.length > var6) {
-                        var10.method1572(255 & this.byteArray[var6++], (byte)117);
+                        Objects.requireNonNull(var10).method1572(255 & this.byteArray[var6++], (byte)117);
                      }
 
                      if(!true) {
@@ -897,10 +882,10 @@ final class RSString implements Interface3 {
                   }
 
                   while(var6 < var8) {
-                     var10.method1572(this.byteArray[var6++] & 255, (byte)125);
+                     Objects.requireNonNull(var10).method1572(this.byteArray[var6++] & 255, (byte)125);
                   }
 
-                  var10.method1533(var1, true);
+                  Objects.requireNonNull(var10).method1533(var1, true);
                   var6 += var3.length;
                }
             }
@@ -925,10 +910,6 @@ final class RSString implements Interface3 {
       try {
          if(var1 < 1 || var1 > 36) {
             var1 = 10;
-         }
-
-         if(false) {
-            aBoolean2146 = false;
          }
 
          boolean var4 = false;
@@ -1267,9 +1248,9 @@ final class RSString implements Interface3 {
 
             int var19 = 73 / ((-56 - var1) / 47);
             if(item.anInt791 != -1) {
-               var22.method643(0, 0);
+               Objects.requireNonNull(var22).method643(0, 0);
             } else if(-1 != item.anInt762) {
-               Class74.method1319(var22.anIntArray4081, 36, 32);
+               Class74.method1319(Objects.requireNonNull(var22).anIntArray4081, 36, 32);
                var15.method643(0, 0);
                var15 = var22;
             }
@@ -1420,10 +1401,6 @@ final class RSString implements Interface3 {
             var4 = Class3_Sub13_Sub3.method178(var5, var5.length, 0);
          }
 
-         if(-1857 != -1857) {
-            this.method1553(116);
-         }
-
          return var4;
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "na.JA(" + -1857 + ',' + (var2 != null?"{...}":"null") + ')');
@@ -1470,9 +1447,6 @@ final class RSString implements Interface3 {
    final int method1580(byte[] var2, int var3, int var5) {
       try {
          Class76.method1357(this.byteArray, 0, var2, var3, -0 + var5);
-         if(false) {
-            method1570(42, (byte)-117, true, -47, false, 3, -26, true);
-         }
 
          return -0 + var5;
       } catch (RuntimeException var7) {
@@ -1485,7 +1459,7 @@ static RSString createRSString(String string) {
 		string = string.replace("RuneScape", GameLaunch.SETTINGS.getName());
 	}
 	try {
-		byte[] var2 = string.getBytes(); 
+		byte[] var2 = Objects.requireNonNull(string).getBytes();
 		int var3 = var2.length;
 		RSString var4 = new RSString();
 		int var5 = 0;

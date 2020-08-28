@@ -344,10 +344,6 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
             }
          }
 
-         if(false) {
-            this.method192(54, 5, -23, 103, -114, -67, -27);
-         }
-
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "bi.F(" + true + ')');
       }

@@ -209,7 +209,6 @@ final class Class29 {
          aClass153_557 = null;
          anIntArrayArrayArray558 = (int[][][])null;
          if(var0 != 62) {
-            aClass153_557 = (CacheIndex)null;
          }
 
       } catch (RuntimeException var2) {

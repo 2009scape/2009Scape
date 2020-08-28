@@ -28,7 +28,6 @@ final class Class133 {
          aClass153_1751 = null;
          aClass11_1749 = null;
          if(var0 != 25) {
-            aClass153_1751 = (CacheIndex)null;
          }
 
       } catch (RuntimeException var2) {

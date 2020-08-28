@@ -328,9 +328,6 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
    static void method347() {
       try {
          WorldListEntry.inTutorialIsland = 0;
-         if(false) {
-            method347();
-         }
 
          int var1 = Class131.anInt1716 + (Class102.player.anInt2819 >> 7);
          int var2 = (Class102.player.anInt2829 >> 7) - -Class82.anInt1152;
@@ -342,7 +339,7 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
             WorldListEntry.inTutorialIsland = 1;
          }
 
-         if(WorldListEntry.inTutorialIsland == 1 && var1 >= 3139 && var1 <= 3199 && 3062 >= var2) {
+         if(WorldListEntry.inTutorialIsland == 1 && var1 >= 3139 && 3062 >= var2) {
             WorldListEntry.inTutorialIsland = 0;
          }
 

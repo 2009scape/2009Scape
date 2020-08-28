@@ -27,7 +27,6 @@ final class Class126 {
          anIntArray1662 = null;
          aClass3_Sub28_Sub17_1669 = null;
          if(var0 != -58) {
-            aClass13_1666 = (NodeList)null;
          }
 
       } catch (RuntimeException var2) {

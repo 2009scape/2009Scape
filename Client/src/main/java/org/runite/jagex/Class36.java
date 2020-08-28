@@ -2,6 +2,8 @@ package org.runite.jagex;
 
 import org.runite.Configurations;
 
+import java.util.Objects;
+
 final class Class36 {
 
    private int[] anIntArray633;
@@ -34,7 +36,7 @@ final class Class36 {
          if(var0 >= -87) {
             return (RSString)null;
          } else {
-            for(int var3 = var2.length(-123) + -3; var3 > 0; var3 -= 3) {
+            for(int var3 = Objects.requireNonNull(var2).length(-123) + -3; var3 > 0; var3 -= 3) {
                var2 = RenderAnimationDefinition.method903(new RSString[]{var2.method1557(var3, 0, 0), Class3_Sub13_Sub22.aClass94_3268, var2.method1556(var3)}, (byte)-62);
             }
 
@@ -298,7 +300,7 @@ final class Class36 {
                ++var8;
             }
 
-            return -1248 != -1248?98:-var6 + 1 + var8;
+            return -var6 + 1 + var8;
          }
       } catch (RuntimeException var11) {
          throw Class44.clientError(var11, "fi.E(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + -1248 + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ')');

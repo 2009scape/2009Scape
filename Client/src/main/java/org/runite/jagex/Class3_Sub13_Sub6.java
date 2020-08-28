@@ -19,59 +19,57 @@ final class Class3_Sub13_Sub6 extends Class3_Sub13 {
       try {
          int var1 = (NPC.anInt3995 >> 10) - -(Class131.anInt1716 >> 3);
          int var2 = (Class77.anInt1111 >> 10) - -(Class82.anInt1152 >> 3);
-         if(20479 == 20479) {
-            byte var3 = 0;
-            byte var4 = 8;
-            byte var6 = 18;
-            Class3_Sub22.aByteArrayArray2521 = new byte[var6][];
-            Class3_Sub28_Sub5.anIntArray3587 = new int[var6];
-            Class3_Sub13_Sub26.aByteArrayArray3335 = new byte[var6][];
-            Client.anIntArray2200 = new int[var6];
-            Class3_Sub9.regionXteaKeys = new int[var6][4];
-            for (int var5 = 0; var5 < var6; var5++) {
-               //Class3_Sub9.regionXteaKeys[var5] = new int[] { 14881828, -6662814, 58238456, 146761213 };//These are the same keys that are in RegionSQLHandler.java
-            }
-            Class3_Sub28_Sub14.aByteArrayArray3669 = new byte[var6][];
-            Class3_Sub24_Sub3.anIntArray3494 = new int[var6];
-            Class164_Sub2.aByteArrayArray3027 = new byte[var6][];
-            Class3_Sub13_Sub24.npcSpawnCacheIndices = new int[var6];
-            Class3_Sub13_Sub15.anIntArray3181 = new int[var6];
-            Class101.anIntArray1426 = new int[var6];
-            byte var5 = 8;
-            Class3_Sub13_Sub4.aByteArrayArray3057 = new byte[var6][];
-            int var11 = 0;
-
-            int var7;
-            for(var7 = (-6 + var1) / 8; (6 + var1) / 8 >= var7; ++var7) {
-               for(int var8 = (-6 + var2) / 8; var8 <= (var2 + 6) / 8; ++var8) {
-                  int var9 = (var7 << 8) - -var8;
-                  Class3_Sub24_Sub3.anIntArray3494[var11] = var9;
-                  Client.anIntArray2200[var11] = aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{Class3_Sub30_Sub1.aClass94_3807, Class72.method1298((byte)9, var7), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var8)}, (byte)-128));
-                  Class101.anIntArray1426[var11] = aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{Class161.aClass94_2029, Class72.method1298((byte)9, var7), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var8)}, (byte)-73));
-                  Class3_Sub13_Sub24.npcSpawnCacheIndices[var11] = aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{RSString.createRSString("n"), Class72.method1298((byte)9, var7), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var8)}, (byte)-82));
-                  Class3_Sub13_Sub15.anIntArray3181[var11] = aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{Class95.aClass94_1333, Class72.method1298((byte)9, var7), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var8)}, (byte)-104));
-                  Class3_Sub28_Sub5.anIntArray3587[var11] = aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{TextCore.HasULLookUp, Class72.method1298((byte)9, var7), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var8)}, (byte)-114));
-                  if(Class3_Sub13_Sub24.npcSpawnCacheIndices[var11] == -1) {
-                     Client.anIntArray2200[var11] = -1;
-                     Class101.anIntArray1426[var11] = -1;
-                     Class3_Sub13_Sub15.anIntArray3181[var11] = -1;
-                     Class3_Sub28_Sub5.anIntArray3587[var11] = -1;
-                  }
-
-                  ++var11;
-               }
-            }
-
-            for(var7 = var11; Class3_Sub13_Sub24.npcSpawnCacheIndices.length > var7; ++var7) {
-               Class3_Sub13_Sub24.npcSpawnCacheIndices[var7] = -1;
-               Client.anIntArray2200[var7] = -1;
-               Class101.anIntArray1426[var7] = -1;
-               Class3_Sub13_Sub15.anIntArray3181[var7] = -1;
-               Class3_Sub28_Sub5.anIntArray3587[var7] = -1;
-            }
-
-            Class73.method1301(var3, var2, var1, var5, true, var4);
+         byte var3 = 0;
+         byte var4 = 8;
+         byte var6 = 18;
+         Class3_Sub22.aByteArrayArray2521 = new byte[var6][];
+         Class3_Sub28_Sub5.anIntArray3587 = new int[var6];
+         Class3_Sub13_Sub26.aByteArrayArray3335 = new byte[var6][];
+         Client.anIntArray2200 = new int[var6];
+         Class3_Sub9.regionXteaKeys = new int[var6][4];
+         for (int var5 = 0; var5 < var6; var5++) {
+            //Class3_Sub9.regionXteaKeys[var5] = new int[] { 14881828, -6662814, 58238456, 146761213 };//These are the same keys that are in RegionSQLHandler.java
          }
+         Class3_Sub28_Sub14.aByteArrayArray3669 = new byte[var6][];
+         Class3_Sub24_Sub3.anIntArray3494 = new int[var6];
+         Class164_Sub2.aByteArrayArray3027 = new byte[var6][];
+         Class3_Sub13_Sub24.npcSpawnCacheIndices = new int[var6];
+         Class3_Sub13_Sub15.anIntArray3181 = new int[var6];
+         Class101.anIntArray1426 = new int[var6];
+         byte var5 = 8;
+         Class3_Sub13_Sub4.aByteArrayArray3057 = new byte[var6][];
+         int var11 = 0;
+
+         int var7;
+         for(var7 = (-6 + var1) / 8; (6 + var1) / 8 >= var7; ++var7) {
+            for(int var8 = (-6 + var2) / 8; var8 <= (var2 + 6) / 8; ++var8) {
+               int var9 = (var7 << 8) - -var8;
+               Class3_Sub24_Sub3.anIntArray3494[var11] = var9;
+               Client.anIntArray2200[var11] = aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{Class3_Sub30_Sub1.aClass94_3807, Class72.method1298((byte)9, var7), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var8)}, (byte)-128));
+               Class101.anIntArray1426[var11] = aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{Class161.aClass94_2029, Class72.method1298((byte)9, var7), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var8)}, (byte)-73));
+               Class3_Sub13_Sub24.npcSpawnCacheIndices[var11] = aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{RSString.createRSString("n"), Class72.method1298((byte)9, var7), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var8)}, (byte)-82));
+               Class3_Sub13_Sub15.anIntArray3181[var11] = aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{Class95.aClass94_1333, Class72.method1298((byte)9, var7), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var8)}, (byte)-104));
+               Class3_Sub28_Sub5.anIntArray3587[var11] = aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{TextCore.HasULLookUp, Class72.method1298((byte)9, var7), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var8)}, (byte)-114));
+               if(Class3_Sub13_Sub24.npcSpawnCacheIndices[var11] == -1) {
+                  Client.anIntArray2200[var11] = -1;
+                  Class101.anIntArray1426[var11] = -1;
+                  Class3_Sub13_Sub15.anIntArray3181[var11] = -1;
+                  Class3_Sub28_Sub5.anIntArray3587[var11] = -1;
+               }
+
+               ++var11;
+            }
+         }
+
+         for(var7 = var11; Class3_Sub13_Sub24.npcSpawnCacheIndices.length > var7; ++var7) {
+            Class3_Sub13_Sub24.npcSpawnCacheIndices[var7] = -1;
+            Client.anIntArray2200[var7] = -1;
+            Class101.anIntArray1426[var7] = -1;
+            Class3_Sub13_Sub15.anIntArray3181[var7] = -1;
+            Class3_Sub28_Sub5.anIntArray3587[var7] = -1;
+         }
+
+         Class73.method1301(var3, var2, var1, var5, true, var4);
       } catch (RuntimeException var10) {
          throw Class44.clientError(var10, "ca.F(" + 20479 + ')');
       }

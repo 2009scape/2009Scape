@@ -1,5 +1,6 @@
 package org.runite.jagex;
 import java.io.InputStream;
+import java.util.Objects;
 
 final class InputStream_Sub1 extends InputStream {
 
@@ -47,7 +48,7 @@ final class InputStream_Sub1 extends InputStream {
          var1.getByte((byte)-114);
          int var2 = var1.getByte((byte)-51);
          Class3_Sub13 var3 = Class130.method1777(var2, true);
-         var3.anInt2381 = var1.getByte((byte)-66);
+         Objects.requireNonNull(var3).anInt2381 = var1.getByte((byte)-66);
          int var4 = var1.getByte((byte)-33);
          for(int var5 = 0; var5 < var4; ++var5) {
             int var6 = var1.getByte((byte)-92);

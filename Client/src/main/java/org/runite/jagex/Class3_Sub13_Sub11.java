@@ -121,9 +121,6 @@ final class Class3_Sub13_Sub11 extends Class3_Sub13 {
       try {
          Class46.anInt741 = Class115.aClass86ArrayArray1581[var2][var1].anInt1185;
          Class3_Sub13_Sub22.anInt3274 = Class115.aClass86ArrayArray1581[var2][var1].anInt1181;
-         if(false) {
-            anIntArray3139 = (int[])null;
-         }
 
          Class86.anInt1191 = Class115.aClass86ArrayArray1581[var2][var1].anInt1178;
          Class92.setLightPosition((float)Class46.anInt741, (float)Class3_Sub13_Sub22.anInt3274, (float)Class86.anInt1191);

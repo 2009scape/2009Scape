@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class3_Sub13_Sub27 extends Class3_Sub13 {
 
    static long isaacServerKey = 0L;
@@ -128,10 +130,10 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
             int[] var12 = var3[0];
             int[] var13 = var3[1];
             int[] var14 = var3[2];
-            int[] var15 = var10[0];
+            int[] var15 = Objects.requireNonNull(var10)[0];
             int[] var16 = var10[1];
             int[] var17 = var10[2];
-            int[] var18 = var11[0];
+            int[] var18 = Objects.requireNonNull(var11)[0];
             int[] var19 = var11[1];
             int[] var20 = var11[2];
             int var21 = this.anInt3343;

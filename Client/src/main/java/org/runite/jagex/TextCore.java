@@ -184,5 +184,5 @@ public class TextCore {
     /**Fonts
      *
      */
-    static Font Helvetica = new Font("Helvetica", 1, 13);
+    static Font Helvetica = new Font("Helvetica", Font.BOLD, 13);
 }

@@ -13,9 +13,6 @@ final class Class10 {
    static Class3_Sub28_Sub16_Sub2[] method851() {
       try {
          Class3_Sub28_Sub16_Sub2[] var1 = new Class3_Sub28_Sub16_Sub2[Class95.anInt1338];
-         if(false) {
-            method852((byte)127, -18);
-         }
 
          for(int var2 = 0; Class95.anInt1338 > var2; ++var2) {
             int var3 = Class3_Sub13_Sub6.anIntArray3076[var2] * Class140_Sub7.anIntArray2931[var2];
@@ -59,7 +56,6 @@ final class Class10 {
       try {
          aClass94_148 = null;
          if(var0 != 0) {
-            aClass94_148 = (RSString)null;
          }
 
          aClass153_152 = null;

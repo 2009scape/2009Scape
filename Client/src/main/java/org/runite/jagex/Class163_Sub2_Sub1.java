@@ -51,10 +51,6 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
             }
          }
 
-         if(false) {
-            aBoolean4018 = true;
-         }
-
       } catch (RuntimeException var10) {
          throw Class44.clientError(var10, "t.E(" + var0 + ',' + var1 + ',' + var2 + ',' + true + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }

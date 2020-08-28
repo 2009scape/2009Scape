@@ -158,9 +158,6 @@ final class Class3_Sub29 extends Class3 {
             }
 
             var2 = new Class3_Sub28_Sub4();
-            if(12345678 != 12345678) {
-               anInt2582 = 56;
-            }
 
             if(var3 != null) {
                var2.method546(new RSByteBuffer(var3));

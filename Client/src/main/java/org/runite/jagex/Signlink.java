@@ -494,9 +494,7 @@ public class Signlink implements Runnable {
                            if (var0 != null) {
                               (new File(value + s + "/" + var0)).mkdir();
                            }
-                           if (var10.toString().endsWith(".dll")) {
-//								ClientLoader.getLibraryDownloader().updateDlls(var10.toString());
-                           }
+                           //								ClientLoader.getLibraryDownloader().updateDlls(var10.toString());
                            var11 = new RandomAccessFile(var12, "rw");
                            int var14 = var11.read();
                            var11.seek(0L);

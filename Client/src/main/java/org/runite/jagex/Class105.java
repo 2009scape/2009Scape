@@ -11,8 +11,6 @@ final class Class105 {
          var1.anInt128 += 8;
          ++var1.anInt116;
          ++var1.anInt147;
-         if(var1.anInt147 == 0) {
-         }
       }
 
       int var3 = var1.anInt140 >> var1.anInt128 - var0 & (1 << var0) - 1;
@@ -128,7 +126,6 @@ final class Class105 {
       }
 
       int var13 = var0.anInt141;
-      var0.anInt141 += 0;
 
       var0.aByte111 = var2;
       var0.anInt143 = var3;
@@ -246,8 +243,6 @@ final class Class105 {
          var1 = method1637(var0);
          var1 = method1637(var0);
          var1 = method1639(var0);
-         if(var1 != 0) {
-         }
 
          var0.anInt135 = 0;
          var1 = method1637(var0);

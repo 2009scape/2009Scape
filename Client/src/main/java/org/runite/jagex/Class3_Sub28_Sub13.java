@@ -207,7 +207,6 @@ final class Class3_Sub28_Sub13 extends Node {
          while(true) {
             int var3 = var1.getByte((byte)-83);
             if(var3 == 0) {
-               var3 = 0;
                return;
             }
 

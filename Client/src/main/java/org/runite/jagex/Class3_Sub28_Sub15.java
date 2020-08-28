@@ -49,10 +49,8 @@ final class Class3_Sub28_Sub15 extends Node {
 
    static void method631(CacheIndex var1) {
       try {
-         if(true) {
-            Class3_Sub28_Sub5.aClass153_3580 = var1;
-            Class54.anInt869 = Class3_Sub28_Sub5.aClass153_3580.getFileAmount(4, (byte)112);
-         }
+         Class3_Sub28_Sub5.aClass153_3580 = var1;
+         Class54.anInt869 = Class3_Sub28_Sub5.aClass153_3580.getFileAmount(4, (byte)112);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "qc.D(" + false + ',' + (var1 != null?"{...}":"null") + ')');
       }
@@ -64,7 +62,6 @@ final class Class3_Sub28_Sub15 extends Node {
          aClass130_3679 = null;
          anIntArray3693 = null;
          if(var0 != -30497) {
-            aClass3_Sub19Array3694 = (Class3_Sub19[])null;
          }
 
       } catch (RuntimeException var2) {

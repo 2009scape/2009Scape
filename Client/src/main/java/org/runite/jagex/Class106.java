@@ -74,7 +74,6 @@ final class Class106 {
       try {
          aClass67_1443 = null;
          if(var0 != 121) {
-            aClass67_1443 = (Class67)null;
          }
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "od.A(" + var0 + ')');

@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class3_Sub24_Sub2 extends Class3_Sub24 {
 
    private final Class61 aClass61_3485 = new Class61();
@@ -44,7 +46,7 @@ final class Class3_Sub24_Sub2 extends Class3_Sub24 {
          this.anInt3487 += var4;
          this.method458();
          Class3_Sub3 var5 = (Class3_Sub3)this.aClass61_3486.method1222();
-         synchronized(var5) {
+         synchronized(Objects.requireNonNull(var5)) {
             int var7 = var5.method105(this);
             if(var7 < 0) {
                var5.anInt2247 = 0;
@@ -115,7 +117,7 @@ final class Class3_Sub24_Sub2 extends Class3_Sub24 {
          this.anInt3487 += var2;
          this.method458();
          Class3_Sub3 var3 = (Class3_Sub3)this.aClass61_3486.method1222();
-         synchronized(var3) {
+         synchronized(Objects.requireNonNull(var3)) {
             int var5 = var3.method105(this);
             if(var5 < 0) {
                var3.anInt2247 = 0;

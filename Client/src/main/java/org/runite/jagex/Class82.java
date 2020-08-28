@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class82 {
 
    private int[] anIntArray1144;
@@ -23,10 +25,6 @@ final class Class82 {
          int var11;
          for(var11 = 0; var11 < this.aClass3_Sub13Array1147.length; ++var11) {
             this.aClass3_Sub13Array1147[var11].method160(var1, var3);
-         }
-
-         if(327680 != 327680) {
-            method1405(68, 8, 20, -51, 31, 61, -34);
          }
 
          int[] var10 = new int[var1 * var3];
@@ -185,7 +183,7 @@ final class Class82 {
                      var9 = var9.method1471((byte)102);
                   }
 
-                  if(var9.anInt1269 >= 0 && NPC.aClass3_Sub28_Sub16Array3977.length > var9.anInt1269) {
+                  if(Objects.requireNonNull(var9).anInt1269 >= 0 && NPC.aClass3_Sub28_Sub16Array3977.length > var9.anInt1269) {
                      if(var9.anInt1265 == -1) {
                         var22 = 15 + ((Class140_Sub4)var8).method1975(27855);
                      } else {
@@ -603,10 +601,6 @@ final class Class82 {
                   return false;
                }
             }
-         }
-
-         if(false) {
-            this.anIntArray1144 = (int[])null;
          }
 
          for(var4 = 0; var4 < this.anIntArray1149.length; ++var4) {

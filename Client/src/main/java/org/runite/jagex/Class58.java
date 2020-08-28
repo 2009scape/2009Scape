@@ -24,7 +24,6 @@ final class Class58 {
          aClass66_917 = null;
          anIntArray912 = null;
          if(var0 != -26723) {
-            anIntArrayArrayArray914 = (int[][][])((int[][][])null);
          }
 
          COMMAND_TOGGLE_FPSON = null;
@@ -35,16 +34,14 @@ final class Class58 {
 
    static void method1194() {
       try {
-         if(-16385 == -16385) {
-            if(null != Class3_Sub21.aClass155_2491) {
-               Class3_Sub21.aClass155_2491.method2153();
-            }
-
-            if(null != WorldListEntry.aClass155_2627) {
-               WorldListEntry.aClass155_2627.method2153();
-            }
-
+         if(null != Class3_Sub21.aClass155_2491) {
+            Class3_Sub21.aClass155_2491.method2153();
          }
+
+         if(null != WorldListEntry.aClass155_2627) {
+            WorldListEntry.aClass155_2627.method2153();
+         }
+
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "id.A(" + -16385 + ')');
       }

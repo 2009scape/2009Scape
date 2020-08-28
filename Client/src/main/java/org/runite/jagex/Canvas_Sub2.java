@@ -175,7 +175,6 @@ final class Canvas_Sub2 extends Canvas {
                            }
                         }
                      }
-                  } else if(var16 == 2) {
                   }
                } else if(var15 <= var7) {
                   var18 = 7 + var1;

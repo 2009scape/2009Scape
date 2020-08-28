@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class46 {
 
    static CacheIndex aClass153_737;
@@ -35,7 +37,7 @@ final class Class46 {
             anInt741 = 118;
          }
 
-         int var2 = Class145.method2076(-37, var1).anInt556;
+         int var2 = Objects.requireNonNull(Class145.method2076(-37, var1)).anInt556;
          if(var2 != 0) {
             int var3 = Class163_Sub1.anIntArray2985[var1];
             if(6 == var2) {

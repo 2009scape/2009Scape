@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class8 {
 
    private RSByteBuffer aClass3_Sub30_99;
@@ -138,7 +140,7 @@ final class Class8 {
          }
 
          Class136 var22 = var0.method1696(var3, var16, var18, var5, var19, var21, false, (LDIndexedSprite)null, (byte)-69, true, var17);
-         Class141.method2047(var22.aClass109_Sub1_1770, -var4 + var16, var20, var17 + -var2);
+         Class141.method2047(Objects.requireNonNull(var22).aClass109_Sub1_1770, -var4 + var16, var20, var17 + -var2);
       } catch (RuntimeException var23) {
          throw Class44.clientError(var23, "al.K(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ')');
       }
@@ -151,10 +153,6 @@ final class Class8 {
          if(GameObject.aClass11Array1836 != null) {
             Class47.method1095(0, Class73.anInt1082, Class3_Sub28_Sub7.anInt3602, GameObject.aClass11Array1836, Class23.anInt454, -1412584499, 0, Class140_Sub7.anInt2934, (byte)73, PacketParser.aClass11_88.anInt292);
             GameObject.aClass11Array1836 = null;
-         }
-
-         if(false) {
-            method844((byte)-24);
          }
 
       } catch (RuntimeException var2) {

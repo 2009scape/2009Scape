@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class3_Sub13_Sub24 extends Class3_Sub13 {
 
    static int[] npcSpawnCacheIndices;
@@ -94,8 +96,6 @@ final class Class3_Sub13_Sub24 extends Class3_Sub13 {
 
    final int[][] method166(int var1, int var2) {
       try {
-         if(var1 != -1) {
-         }
 
          int[][] var3 = this.aClass97_2376.method1594((byte)90, var2);
          if(this.aClass97_2376.aBoolean1379) {
@@ -114,7 +114,7 @@ final class Class3_Sub13_Sub24 extends Class3_Sub13 {
                var13 = 0;
                int[][] var11 = new int[3][Class113.anInt1559];
                var14 = 0;
-               int[] var15 = var10[0];
+               int[] var15 = Objects.requireNonNull(var10)[0];
                int[] var16 = var10[1];
                int[] var17 = var10[2];
 

@@ -2,6 +2,8 @@ package org.runite.jagex;
 
 import org.runite.GameLaunch;
 
+import java.util.Objects;
+
 final class Class3_Sub8 extends Class3 {
 
    int anInt2296;
@@ -86,7 +88,7 @@ final class Class3_Sub8 extends Class3 {
                         }
 
                         if(HDToolKit.highDetail) {
-                           Class22.method936((Class3_Sub28_Sub16_Sub1)var4.method866(false));
+                           Class22.method936((Class3_Sub28_Sub16_Sub1) Objects.requireNonNull(var4.method866(false)));
                         } else {
                            Class74.method1314(var4.anIntArray207, var4.anIntArray291);
                         }
@@ -423,7 +425,7 @@ final class Class3_Sub8 extends Class3 {
                   if(var3 > 0) {
                      Class3_Sub12_Sub1 var12 = var11.method1812().method151(Class27.aClass157_524);
                      Class3_Sub24_Sub1 var13 = Class3_Sub24_Sub1.method437(var12, var3);
-                     var13.method429(Class166.anIntArray2068[var1] + -1);
+                     Objects.requireNonNull(var13).method429(Class166.anIntArray2068[var1] + -1);
                      Class3_Sub26.aClass3_Sub24_Sub2_2563.method457(var13);
                   }
 

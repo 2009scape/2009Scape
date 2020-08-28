@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class3_Sub24_Sub4 extends Class3_Sub24 {
 
    private int[] anIntArray3497 = new int[16];
@@ -154,9 +156,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
 
    static void method477(int var0, int var2, RSInterface var3) {
       try {
-         if(false) {
-            method487(98, (byte)74);
-         }
 
          if(var3.anInt318 == 1) {
             ++Class3_Sub17.anInt2459;
@@ -555,7 +554,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
                }
 
                if(0 > var11.aShortArray2434[var4]) {
-                  var7.aClass3_Sub24_Sub1_2507.method429(-1);
+                  Objects.requireNonNull(var7.aClass3_Sub24_Sub1_2507).method429(-1);
                }
 
                if(var7.anInt2517 >= 0) {
@@ -966,7 +965,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
             if((2 & this.anIntArray3518[var4]) == 0) {
                var5.anInt2506 = 0;
             } else {
-               for(Class3_Sub22 var6 = (Class3_Sub22)this.aClass3_Sub24_Sub3_3527.aClass61_3489.method1222(); null != var6; var6 = (Class3_Sub22)this.aClass3_Sub24_Sub3_3527.aClass61_3489.method1221()) {
+               for(Class3_Sub22 var6 = (Class3_Sub22) Objects.requireNonNull(this.aClass3_Sub24_Sub3_3527).aClass61_3489.method1222(); null != var6; var6 = (Class3_Sub22)this.aClass3_Sub24_Sub3_3527.aClass61_3489.method1221()) {
                   if(var5.anInt2514 == var6.anInt2514 && var6.anInt2506 < 0 && var6 != var5) {
                      var5.anInt2506 = 0;
                      break;
@@ -1048,9 +1047,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
 
    private void method495(int var1, int var2, int var4) {
       try {
-         if(17387 != 17387) {
-            this.aClass3_Sub24_Sub3_3527 = (Class3_Sub24_Sub3)null;
-         }
 
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "va.GA(" + var1 + ',' + var2 + ',' + 17387 + ',' + var4 + ')');
@@ -1141,9 +1137,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
 
    final int method499() {
       try {
-         if(false) {
-            this.method500(true, (byte)91);
-         }
 
          return this.anInt3521;
       } catch (RuntimeException var3) {

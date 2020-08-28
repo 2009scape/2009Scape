@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class151_Sub1 extends Class151 {
 
    static Class3_Sub30_Sub1 aClass3_Sub30_Sub1_2942 = new Class3_Sub30_Sub1();
@@ -105,7 +107,7 @@ final class Class151_Sub1 extends Class151 {
       try {
          if(this.aClass62_2944 != null) {
             return this.aClass62_2944;
-         } else if(0 == 0) {
+         } else {
             if(null == this.aClass3_Sub28_Sub10_2950) {
                if(this.aClass66_2953.method1251((byte)73)) {
                   return null;
@@ -170,8 +172,6 @@ final class Class151_Sub1 extends Class151 {
                this.aClass3_Sub28_Sub10_2950 = null;
                return this.aClass62_2944;
             }
-         } else {
-            return (Class62)null;
          }
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "bg.B(" + 0 + ')');
@@ -462,7 +462,7 @@ final class Class151_Sub1 extends Class151 {
             this.aClass130_2946.method1779((Class3)var4, (long)archiveIndex);
          }
 
-         if(((Class3_Sub28_Sub10)var4).aBoolean3632) {
+         if(((Class3_Sub28_Sub10) Objects.requireNonNull(var4)).aBoolean3632) {
             return null;
          } else {
             byte[] var5 = ((Class3_Sub28_Sub10)var4).method587();
@@ -479,8 +479,6 @@ final class Class151_Sub1 extends Class151 {
                         int var8 = (var5[-2 + var5.length] << 8 & '\uff00') - -(255 & var5[-1 + var5.length]);
                         if(('\uffff' & this.aClass62_2944.archiveRevisions[archiveIndex]) == var8) {
                            if(1 != this.aByteArray2949[archiveIndex]) {
-                              if(this.aByteArray2949[archiveIndex] != 0) {
-                              }
 
                               ++this.anInt2948;
                               this.aByteArray2949[archiveIndex] = 1;

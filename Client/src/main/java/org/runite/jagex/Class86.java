@@ -60,7 +60,6 @@ final class Class86 {
          aClass41_1186 = null;
          aClass130_1194 = null;
          if(var0 != 53) {
-            aClass3_Sub24_Sub4_1193 = (Class3_Sub24_Sub4)null;
          }
 
       } catch (RuntimeException var2) {

@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class3_Sub28_Sub4 extends Node {
 
    static int[] anIntArray3565 = new int[32];
@@ -16,16 +18,14 @@ final class Class3_Sub28_Sub4 extends Node {
 
    final void method545(RSByteBuffer var1, int[] var2) {
       try {
-         if(true) {
-            if(this.anIntArray3566 != null) {
-               for(int var4 = 0; var4 < this.anIntArray3566.length && var2.length > var4; ++var4) {
-                  int var5 = RuntimeException_Sub1.anIntArray2113[this.method550(89, var4)];
-                  if(var5 > 0) {
-                     var1.method739(var5, (long)var2[var4]);
-                  }
+         if(this.anIntArray3566 != null) {
+            for(int var4 = 0; var4 < this.anIntArray3566.length && var2.length > var4; ++var4) {
+               int var5 = RuntimeException_Sub1.anIntArray2113[this.method550(89, var4)];
+               if(var5 > 0) {
+                  var1.method739(var5, (long)var2[var4]);
                }
-
             }
+
          }
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "cb.O(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + false + ')');
@@ -187,7 +187,7 @@ final class Class3_Sub28_Sub4 extends Node {
          if(null == this.aClass94Array3571) {
             return Class3_Sub13_Sub29.aClass94_3357;
          } else {
-            var2.method1533(this.aClass94Array3571[0], true);
+            Objects.requireNonNull(var2).method1533(this.aClass94Array3571[0], true);
 
             for(int var3 = 1; var3 < this.aClass94Array3571.length; ++var3) {
                var2.method1533(GameShell.aClass94_9, true);
@@ -203,19 +203,16 @@ final class Class3_Sub28_Sub4 extends Node {
 
    final RSString method555(RSByteBuffer var2) {
       try {
-         if(28021 != 28021) {
-            this.anIntArrayArray3570 = (int[][])((int[][])null);
-         }
 
          RSString var3 = Class47.method1090((byte)-125, 80);
          if(this.anIntArray3566 != null) {
             for(int var4 = 0; var4 < this.anIntArray3566.length; ++var4) {
-               var3.method1533(this.aClass94Array3571[var4], true);
+               Objects.requireNonNull(var3).method1533(this.aClass94Array3571[var4], true);
                var3.method1533(Class49.method1124(this.anIntArrayArray3570[var4], var2.method772(Class3_Sub1.anIntArray2209[this.anIntArray3566[var4]], 28021 + -28021), this.anIntArray3566[var4]), true);
             }
          }
 
-         var3.method1533(this.aClass94Array3571[-1 + this.aClass94Array3571.length], true);
+         Objects.requireNonNull(var3).method1533(this.aClass94Array3571[-1 + this.aClass94Array3571.length], true);
          return var3.method1576();
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "cb.B(" + 28021 + ',' + (var2 != null?"{...}":"null") + ')');

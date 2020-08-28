@@ -27,9 +27,6 @@ final class Class102 implements Interface2 {
 
    final void method1610(int var2) {
       try {
-         if(false) {
-            this.method7((byte)113, 17);
-         }
 
          for(Class3_Sub28_Sub20 var3 = (Class3_Sub28_Sub20)this.aClass47_2142.method1094(); null != var3; var3 = (Class3_Sub28_Sub20)this.aClass47_2142.method1099()) {
             if(var3.aBoolean3797) {
@@ -424,12 +421,10 @@ final class Class102 implements Interface2 {
    final void method1618() {
       try {
          this.aClass47_2142.method1101();
-         if(0 == 0) {
-            if(null != this.aClass47_2138) {
-               this.aClass47_2138.method1101();
-            }
-
+         if(null != this.aClass47_2138) {
+            this.aClass47_2138.method1101();
          }
+
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "nk.O(" + 0 + ')');
       }

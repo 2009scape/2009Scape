@@ -19,7 +19,6 @@ final class Class139 {
          aByteArrayArrayArray1828 = (byte[][][])null;
          aFontMetrics1822 = null;
          if(var0 != -17124) {
-            aFontMetrics1822 = (FontMetrics)null;
          }
 
          aClass3_Sub28_Sub16Array1825 = null;

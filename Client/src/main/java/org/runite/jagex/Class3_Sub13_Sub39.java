@@ -165,7 +165,6 @@ final class Class3_Sub13_Sub39 extends Class3_Sub13 {
       try {
          Class3_Sub13_Sub30.anInt3362 = -1;
 
-         Class3_Sub13_Sub30.anInt3362 = -1;
          Class3_Sub4.anInt2251 = var1;
          Class3_Sub5.method117((byte)87);
       } catch (RuntimeException var3) {
@@ -201,9 +200,6 @@ final class Class3_Sub13_Sub39 extends Class3_Sub13 {
    private void method355() {
       try {
          int[] var2 = this.anIntArrayArray3469[0];
-         if(false) {
-            this.anIntArray3467 = (int[])null;
-         }
 
          int[] var3 = this.anIntArrayArray3469[1];
          int[] var4 = this.anIntArrayArray3469[this.anIntArrayArray3469.length + -2];

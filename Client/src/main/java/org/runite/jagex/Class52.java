@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class52 {
 
    static RSString aClass94_852 = RSString.createRSString("(U4");
@@ -30,19 +32,13 @@ final class Class52 {
             }
 
             Model_Sub1 var14 = Class3_Sub13_Sub13.method231(var3).method941();
-            if(null != var14) {
-               var12[var13++] = var14;
-            }
+            var12[var13++] = var14;
 
             var14 = Class3_Sub13_Sub13.method231(var7).method941();
-            if(var14 != null) {
-               var12[var13++] = var14;
-            }
+            var12[var13++] = var14;
 
             var14 = Class3_Sub13_Sub13.method231(var2).method941();
-            if(var14 != null) {
-               var12[var13++] = var14;
-            }
+            var12[var13++] = var14;
 
             var14 = new Model_Sub1(var12, var13);
 
@@ -84,10 +80,6 @@ final class Class52 {
             this.aLong860 = this.aLong860 >>> 8 ^ var4[(int)(255L & (this.aLong860 ^ (long)(this.lookInfo[var5] >> 16)))];
             this.aLong860 = var4[(int)(255L & ((long)(this.lookInfo[var5] >> 8) ^ this.aLong860))] ^ this.aLong860 >>> 8;
             this.aLong860 = this.aLong860 >>> 8 ^ var4[(int)((this.aLong860 ^ (long)this.lookInfo[var5]) & 255L)];
-         }
-
-         if(459557008 != 459557008) {
-            this.anIntArray862 = (int[])null;
          }
 
          for(var5 = 0; var5 < 5; ++var5) {
@@ -382,7 +374,7 @@ final class Class52 {
 
             int var47;
             for(var22 = 0; ~var45 < ~var22; ++var22) {
-               if(var1[var22] != null) {
+               if(Objects.requireNonNull(var1)[var22] != null) {
                   AnimationDefinition var41 = Client.getAnimationDefinition(var1[var22].animationId);
                   if(var41.frames != null) {
                      var17 = true;
@@ -864,9 +856,7 @@ final class Class52 {
                   if((1073741824 & var11) == 0) {
                      if(0 != (Integer.MIN_VALUE & var11)) {
                         var12 = Class3_Sub13_Sub13.method231(1073741823 & var11).method941();
-                        if(null != var12) {
-                           var14[var9++] = var12;
-                        }
+                        var14[var9++] = var12;
                      }
                   } else {
                      var12 = Class38.getItemDefinition(var11 & 1073741823, (byte)89).method1116(this.aBoolean864);

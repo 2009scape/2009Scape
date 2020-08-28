@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class3_Sub13_Sub15 extends Class3_Sub13 {
 
    private int anInt3174;
@@ -140,7 +142,7 @@ final class Class3_Sub13_Sub15 extends Class3_Sub13 {
          int[][] var3 = this.aClass97_2376.method1594((byte)-118, var2);
          if(this.aClass97_2376.aBoolean1379) {
             int[][] var4 = this.method162(var2, 0, (byte)-72);
-            int[] var5 = var4[0];
+            int[] var5 = Objects.requireNonNull(var4)[0];
             int[] var6 = var4[1];
             int[] var7 = var4[2];
             int[] var9 = var3[1];
@@ -192,7 +194,6 @@ final class Class3_Sub13_Sub15 extends Class3_Sub13 {
          anIntArray3181 = null;
          aClass61_3177 = null;
          if(var0 <= 38) {
-            anIntArray3181 = (int[])null;
          }
 
          anIntArray3185 = null;

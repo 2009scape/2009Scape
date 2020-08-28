@@ -3,6 +3,7 @@ import org.runite.GameLaunch;
 
 import java.io.IOException;
 import java.net.Socket;
+import java.util.Objects;
 
 class Class127 {
 
@@ -43,7 +44,7 @@ class Class127 {
                }
 
                if(Class3_Sub13_Sub25.loginStage == 2) {
-                  if(Class3_Sub9.aClass64_2318.anInt978 == 2) {
+                  if(Objects.requireNonNull(Class3_Sub9.aClass64_2318).anInt978 == 2) {
                      throw new IOException();
                   }
 

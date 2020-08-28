@@ -1187,10 +1187,8 @@ final class Class91 {
    final void method1503(int var1, int var2) {
       try {
          var2 -= this.anInt1306;
-         if(-5 < -3) {
-            var1 -= this.anInt1309;
-            this.anIntArrayArray1304[var1][var2] = Class3_Sub13_Sub29.bitwiseOr(this.anIntArrayArray1304[var1][var2], 262144);
-         }
+         var1 -= this.anInt1309;
+         this.anIntArrayArray1304[var1][var2] = Class3_Sub13_Sub29.bitwiseOr(this.anIntArrayArray1304[var1][var2], 262144);
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "mj.C(" + var1 + ',' + var2 + ',' + -5 + ')');
       }

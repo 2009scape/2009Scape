@@ -1,6 +1,8 @@
 package org.runite.jagex;
 
 
+import java.util.Objects;
+
 final class Class110 {
 
    static Class61 aClass61_1471 = new Class61();
@@ -130,10 +132,10 @@ final class Class110 {
                   if(def.animationId == -1 && def.ChildrenIds == null && !def.aBoolean1510) {
                      var28 = def.method1696(type == 11?4 + var10:var10, var20, var18, 10, var19, var23, var1, (LDIndexedSprite)null, (byte)-26, var26, var21);
                      if(HDToolKit.highDetail && var26) {
-                        Class141.method2051(var28.aClass109_Sub1_1770, var20, var22, var21);
+                        Class141.method2051(Objects.requireNonNull(var28).aClass109_Sub1_1770, var20, var22, var21);
                      }
 
-                     object = var28.aClass140_1777;
+                     object = Objects.requireNonNull(var28).aClass140_1777;
                   } else {
                      object = new Class140_Sub3(objectId, 10, 11 == type?4 - -var10:var10, var0, var7, var9, def.animationId, def.aBoolean1492, (GameObject)null);
                   }
@@ -167,10 +169,10 @@ final class Class110 {
                   if (-1 == def.animationId && null == def.ChildrenIds && !def.aBoolean1510) {
                      var28 = def.method1696(var10, var20, var18, type, var19, var23, var1, (LDIndexedSprite) null, (byte) -82, var26, var21);
                      if (HDToolKit.highDetail && var26) {
-                        Class141.method2051(var28.aClass109_Sub1_1770, var20, var22, var21);
+                        Class141.method2051(Objects.requireNonNull(var28).aClass109_Sub1_1770, var20, var22, var21);
                      }
 
-                     object = var28.aClass140_1777;
+                     object = Objects.requireNonNull(var28).aClass140_1777;
                   } else {
                      object = new Class140_Sub3(objectId, type, var10, var0, var7, var9, def.animationId, def.aBoolean1492, (GameObject) null);
                   }
@@ -188,10 +190,10 @@ final class Class110 {
                   if (def.animationId == -1 && null == def.ChildrenIds && !def.aBoolean1510) {
                      var28 = def.method1696(var10, var20, var18, 0, var19, var23, var1, (LDIndexedSprite) null, (byte) -74, var26, var21);
                      if (HDToolKit.highDetail && var26) {
-                        Class141.method2051(var28.aClass109_Sub1_1770, var20, var22, var21);
+                        Class141.method2051(Objects.requireNonNull(var28).aClass109_Sub1_1770, var20, var22, var21);
                      }
 
-                     object = var28.aClass140_1777;
+                     object = Objects.requireNonNull(var28).aClass140_1777;
                   } else {
                      object = new Class140_Sub3(objectId, 0, var10, var0, var7, var9, def.animationId, def.aBoolean1492, (GameObject) null);
                   }
@@ -249,10 +251,10 @@ final class Class110 {
                   if (-1 == def.animationId && def.ChildrenIds == null && !def.aBoolean1510) {
                      var28 = def.method1696(var10, var20, var18, 1, var19, var23, var1, (LDIndexedSprite) null, (byte) -83, var26, var21);
                      if (HDToolKit.highDetail && var26) {
-                        Class141.method2051(var28.aClass109_Sub1_1770, var20, var22, var21);
+                        Class141.method2051(Objects.requireNonNull(var28).aClass109_Sub1_1770, var20, var22, var21);
                      }
 
-                     object = var28.aClass140_1777;
+                     object = Objects.requireNonNull(var28).aClass140_1777;
                   } else {
                      object = new Class140_Sub3(objectId, 1, var10, var0, var7, var9, def.animationId, def.aBoolean1492, (GameObject) null);
                   }
@@ -283,16 +285,16 @@ final class Class110 {
                      if (def.animationId == -1 && def.ChildrenIds == null && !def.aBoolean1510) {
                         Class136 var45 = def.method1696(var10 + 4, var20, var18, 2, var19, var23, var1, (LDIndexedSprite) null, (byte) -108, var26, var21);
                         if (HDToolKit.highDetail && var26) {
-                           Class141.method2051(var45.aClass109_Sub1_1770, var20, var22, var21);
+                           Class141.method2051(Objects.requireNonNull(var45).aClass109_Sub1_1770, var20, var22, var21);
                         }
 
-                        var42 = var45.aClass140_1777;
+                        var42 = Objects.requireNonNull(var45).aClass140_1777;
                         var45 = def.method1696(var43, var20, var18, 2, var19, var23, var1, (LDIndexedSprite) null, (byte) -69, var26, var21);
                         if (HDToolKit.highDetail && var26) {
-                           Class141.method2051(var45.aClass109_Sub1_1770, var20, var22, var21);
+                           Class141.method2051(Objects.requireNonNull(var45).aClass109_Sub1_1770, var20, var22, var21);
                         }
 
-                        var38 = var45.aClass140_1777;
+                        var38 = Objects.requireNonNull(var45).aClass140_1777;
                      } else {
                         var42 = new Class140_Sub3(objectId, 2, 4 + var10, var0, var7, var9, def.animationId, def.aBoolean1492, (GameObject) null);
                         var38 = new Class140_Sub3(objectId, 2, var43, var0, var7, var9, def.animationId, def.aBoolean1492, (GameObject) null);
@@ -327,10 +329,10 @@ final class Class110 {
                      if (def.animationId == -1 && null == def.ChildrenIds && !def.aBoolean1510) {
                         var28 = def.method1696(var10, var20, var18, 3, var19, var23, var1, (LDIndexedSprite) null, (byte) -54, var26, var21);
                         if (HDToolKit.highDetail && var26) {
-                           Class141.method2051(var28.aClass109_Sub1_1770, var20, var22, var21);
+                           Class141.method2051(Objects.requireNonNull(var28).aClass109_Sub1_1770, var20, var22, var21);
                         }
 
-                        object = var28.aClass140_1777;
+                        object = Objects.requireNonNull(var28).aClass140_1777;
                      } else {
                         object = new Class140_Sub3(objectId, 3, var10, var0, var7, var9, def.animationId, def.aBoolean1492, (GameObject) null);
                      }
@@ -356,10 +358,10 @@ final class Class110 {
                      if (def.animationId == -1 && def.ChildrenIds == null && !def.aBoolean1510) {
                         var28 = def.method1696(var10, var20, var18, type, var19, var23, var1, (LDIndexedSprite) null, (byte) -30, var26, var21);
                         if (HDToolKit.highDetail && var26) {
-                           Class141.method2051(var28.aClass109_Sub1_1770, var20, var22, var21);
+                           Class141.method2051(Objects.requireNonNull(var28).aClass109_Sub1_1770, var20, var22, var21);
                         }
 
-                        object = var28.aClass140_1777;
+                        object = Objects.requireNonNull(var28).aClass140_1777;
                      } else {
                         object = new Class140_Sub3(objectId, type, var10, var0, var7, var9, def.animationId, def.aBoolean1492, (GameObject) null);
                      }
@@ -377,10 +379,10 @@ final class Class110 {
                      if (def.animationId == -1 && null == def.ChildrenIds && !def.aBoolean1510) {
                         var28 = def.method1696(var10, var20, var18, 4, var19, var23, var1, (LDIndexedSprite) null, (byte) -103, var26, var21);
                         if (HDToolKit.highDetail && var26) {
-                           Class141.method2051(var28.aClass109_Sub1_1770, var20, var22, var21);
+                           Class141.method2051(Objects.requireNonNull(var28).aClass109_Sub1_1770, var20, var22, var21);
                         }
 
-                        object = var28.aClass140_1777;
+                        object = Objects.requireNonNull(var28).aClass140_1777;
                      } else {
                         object = new Class140_Sub3(objectId, 4, var10, var0, var7, var9, def.animationId, def.aBoolean1492, (GameObject) null);
                      }
@@ -400,10 +402,10 @@ final class Class110 {
                         if (def.animationId == -1 && null == def.ChildrenIds && !def.aBoolean1510) {
                            var47 = def.method1696(var10, var20, var18, 4, var19, var23, var1, (LDIndexedSprite) null, (byte) -125, var26, var21);
                            if (HDToolKit.highDetail && var26) {
-                              Class141.method2051(var47.aClass109_Sub1_1770, var20 + -(RenderAnimationDefinition.anIntArray356[var10] * 8), var22, -(Class3_Sub24_Sub3.anIntArray3491[var10] * 8) + var21);
+                              Class141.method2051(Objects.requireNonNull(var47).aClass109_Sub1_1770, var20 + -(RenderAnimationDefinition.anIntArray356[var10] * 8), var22, -(Class3_Sub24_Sub3.anIntArray3491[var10] * 8) + var21);
                            }
 
-                           var39 = var47.aClass140_1777;
+                           var39 = Objects.requireNonNull(var47).aClass140_1777;
                         } else {
                            var39 = new Class140_Sub3(objectId, 4, var10, var0, var7, var9, def.animationId, def.aBoolean1492, (GameObject) null);
                         }
@@ -419,10 +421,10 @@ final class Class110 {
                         if (def.animationId == -1 && def.ChildrenIds == null && !def.aBoolean1510) {
                            var47 = def.method1696(var10 + 4, var20, var18, 4, var19, var23, var1, (LDIndexedSprite) null, (byte) -65, var26, var21);
                            if (HDToolKit.highDetail && var26) {
-                              Class141.method2051(var47.aClass109_Sub1_1770, -(8 * Class3_Sub13.anIntArray2386[var10]) + var20, var22, -(8 * Class163_Sub3.anIntArray3007[var10]) + var21);
+                              Class141.method2051(Objects.requireNonNull(var47).aClass109_Sub1_1770, -(8 * Class3_Sub13.anIntArray2386[var10]) + var20, var22, -(8 * Class163_Sub3.anIntArray3007[var10]) + var21);
                            }
 
-                           var39 = var47.aClass140_1777;
+                           var39 = Objects.requireNonNull(var47).aClass140_1777;
                         } else {
                            var39 = new Class140_Sub3(objectId, 4, 4 + var10, var0, var7, var9, def.animationId, def.aBoolean1492, (GameObject) null);
                         }
@@ -433,10 +435,10 @@ final class Class110 {
                         if (def.animationId == -1 && def.ChildrenIds == null && !def.aBoolean1510) {
                            Class136 var41 = def.method1696(var40 - -4, var20, var18, 4, var19, var23, var1, (LDIndexedSprite) null, (byte) -39, var26, var21);
                            if (HDToolKit.highDetail && var26) {
-                              Class141.method2051(var41.aClass109_Sub1_1770, var20, var22, var21);
+                              Class141.method2051(Objects.requireNonNull(var41).aClass109_Sub1_1770, var20, var22, var21);
                            }
 
-                           object = var41.aClass140_1777;
+                           object = Objects.requireNonNull(var41).aClass140_1777;
                         } else {
                            object = new Class140_Sub3(objectId, 4, var40 + 4, var0, var7, var9, def.animationId, def.aBoolean1492, (GameObject) null);
                         }
@@ -456,16 +458,16 @@ final class Class110 {
                            int var33 = Class3_Sub13.anIntArray2386[var10] * 8;
                            Class136 var35 = def.method1696(4 + var10, var20, var18, 4, var19, var23, var1, (LDIndexedSprite) null, (byte) -25, var26, var21);
                            if (HDToolKit.highDetail && var26) {
-                              Class141.method2051(var35.aClass109_Sub1_1770, var20 + -var33, var22, -var34 + var21);
+                              Class141.method2051(Objects.requireNonNull(var35).aClass109_Sub1_1770, var20 + -var33, var22, -var34 + var21);
                            }
 
-                           var39 = var35.aClass140_1777;
+                           var39 = Objects.requireNonNull(var35).aClass140_1777;
                            var35 = def.method1696(var32 - -4, var20, var18, 4, var19, var23, var1, (LDIndexedSprite) null, (byte) -101, var26, var21);
                            if (HDToolKit.highDetail && var26) {
-                              Class141.method2051(var35.aClass109_Sub1_1770, var20 - var33, var22, -var34 + var21);
+                              Class141.method2051(Objects.requireNonNull(var35).aClass109_Sub1_1770, var20 - var33, var22, -var34 + var21);
                            }
 
-                           var46 = var35.aClass140_1777;
+                           var46 = Objects.requireNonNull(var35).aClass140_1777;
                         } else {
                            var39 = new Class140_Sub3(objectId, 4, 4 + var10, var0, var7, var9, def.animationId, def.aBoolean1492, (GameObject) null);
                            var46 = new Class140_Sub3(objectId, 4, var32 + 4, var0, var7, var9, def.animationId, def.aBoolean1492, (GameObject) null);
@@ -479,10 +481,10 @@ final class Class110 {
                if(def.animationId == -1 && def.ChildrenIds == null && !def.aBoolean1510) {
                   var28 = def.method1696(var10, var20, var18, 22, var19, var23, var1, (LDIndexedSprite)null, (byte)-126, var26, var21);
                   if(HDToolKit.highDetail && var26) {
-                     Class141.method2051(var28.aClass109_Sub1_1770, var20, var22, var21);
+                     Class141.method2051(Objects.requireNonNull(var28).aClass109_Sub1_1770, var20, var22, var21);
                   }
 
-                  object = var28.aClass140_1777;
+                  object = Objects.requireNonNull(var28).aClass140_1777;
                } else {
                   object = new Class140_Sub3(objectId, 22, var10, var0, var7, var9, def.animationId, def.aBoolean1492, (GameObject)null);
                }

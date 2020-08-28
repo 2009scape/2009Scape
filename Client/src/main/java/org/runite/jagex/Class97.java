@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class97 {
 
    private int[][][] anIntArrayArrayArray1362;
@@ -71,10 +73,6 @@ final class Class97 {
             method1591(var2);
          }
 
-         if(false) {
-            anInt1375 = -103;
-         }
-
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "nd.A(" + true + ',' + (var1 != null?"{...}":"null") + ')');
       }
@@ -133,7 +131,7 @@ final class Class97 {
                   ++this.anInt1368;
                } else {
                   Class3_Sub20 var5 = (Class3_Sub20) this.aClass61_1366.method1212();
-                  var4 = new Class3_Sub20(var2, var5.anInt2483);
+                  var4 = new Class3_Sub20(var2, Objects.requireNonNull(var5).anInt2483);
                   this.aClass3_Sub20Array1371[var5.anInt2489] = null;
                   var5.method86(-1024);
                }

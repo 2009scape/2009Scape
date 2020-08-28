@@ -173,9 +173,7 @@ final class Class3_Sub19 extends Class3 {
    static void method386() {
       try {
          Class3_Sub31.aClass93_2604.method1522(-128, 5);
-         if(-123 <= -109) {
-            Class27.aClass93_511.method1522(-126, 5);
-         }
+         Class27.aClass93_511.method1522(-126, 5);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "kl.D(" + 5 + ',' + -123 + ')');
       }

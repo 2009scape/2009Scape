@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class93 {
 
    static int anInt1325;
@@ -21,7 +23,7 @@ final class Class93 {
 
          if(this.anInt1327 == 0) {
             Class3_Sub28_Sub7 var5 = (Class3_Sub28_Sub7)this.aClass13_1329.method877();
-            var5.method86(-1024);
+            Objects.requireNonNull(var5).method86(-1024);
             var5.method524();
          } else {
             --this.anInt1327;

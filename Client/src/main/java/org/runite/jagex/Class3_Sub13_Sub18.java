@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class Class3_Sub13_Sub18 extends Class3_Sub13 {
 
    static CacheIndex aClass153_3214;
@@ -97,7 +99,7 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
                int var14 = (var12 >> 12) + var9 & RenderAnimationDefinition.anInt396;
                int var15 = Class3_Sub20.anInt2487 & var2 - -(var13 >> 12);
                int[][] var16 = this.method162(var15, 0, (byte)-117);
-               var6[var9] = var16[0][var14];
+               var6[var9] = Objects.requireNonNull(var16)[0][var14];
                var7[var9] = var16[1][var14];
                var8[var9] = var16[2][var14];
             }

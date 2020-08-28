@@ -1,5 +1,6 @@
 package org.runite.jagex;
 import java.io.IOException;
+import java.util.Objects;
 
 class Class163_Sub1 extends Class163 {
 
@@ -94,7 +95,7 @@ class Class163_Sub1 extends Class163 {
                            var3 = Class117.anIntArray1613[-1 + Class3_Sub13_Sub34.anInt3415];
                            var4 = Class27.anIntArray512[Class3_Sub13_Sub34.anInt3415 + -1];
                            RSInterface var5 = Class7.getRSInterface((byte)113, var4);
-                           Class3_Sub1 var6 = Client.method44(var5);
+                           Class3_Sub1 var6 = Client.method44(Objects.requireNonNull(var5));
                            if(var6.method100() || var6.method93()) {
                               Class40.anInt677 = 0;
                               Class72.aBoolean1074 = false;

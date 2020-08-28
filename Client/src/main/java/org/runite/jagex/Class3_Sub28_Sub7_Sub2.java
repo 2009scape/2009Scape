@@ -7,11 +7,8 @@ final class Class3_Sub28_Sub7_Sub2 extends Class3_Sub28_Sub7 {
 
 
    final Object method567() {
-      if(false) {
-         this.method567();
-      }
 
-      return this.aSoftReference4053.get();
+       return this.aSoftReference4053.get();
    }
 
    final boolean method568() {

@@ -13,8 +13,6 @@ final class Class75_Sub1 extends Class75 {
 
    final void method1335(int var1, int var2, int var3) {
       try {
-         if(var3 == 4898) {
-         }
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "ci.D(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
@@ -96,7 +94,6 @@ final class Class75_Sub1 extends Class75 {
          aClass109_Sub1_2631 = null;
          aShortArrayArray2634 = (short[][])null;
          if(var0) {
-            aShortArrayArray2634 = (short[][])((short[][])null);
          }
 
       } catch (RuntimeException var2) {

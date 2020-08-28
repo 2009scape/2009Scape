@@ -1,5 +1,7 @@
 package org.runite.jagex;
 
+import java.util.Objects;
+
 final class WorldListEntry extends Class44 {
 
    RSString activity;
@@ -47,7 +49,7 @@ final class WorldListEntry extends Class44 {
          } else {
             Class3_Sub25 var2 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var0, 0);
             if(var2 == null) {
-               return Class144.method2069(var0, -126).anInt3647;
+               return Objects.requireNonNull(Class144.method2069(var0, -126)).anInt3647;
             } else {
                int var3 = 0;
 
@@ -57,7 +59,7 @@ final class WorldListEntry extends Class44 {
                   }
                }
 
-               var3 += Class144.method2069(var0, -100).anInt3647 + -var2.anIntArray2547.length;
+               var3 += Objects.requireNonNull(Class144.method2069(var0, -100)).anInt3647 + -var2.anIntArray2547.length;
                return var3;
             }
          }

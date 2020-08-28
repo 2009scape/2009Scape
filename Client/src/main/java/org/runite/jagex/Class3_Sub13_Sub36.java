@@ -302,9 +302,6 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
          if(var2 == null) {
             byte[] var3 = Class45.aClass153_731.getFile(Class53.method1170((byte)44, var0), Class3_Sub30_Sub1.method810(var0));
             var2 = new Class3_Sub28_Sub13();
-            if(false) {
-               method344(-42, 33);
-            }
 
             if(null != var3) {
                var2.method625(new RSByteBuffer(var3));
