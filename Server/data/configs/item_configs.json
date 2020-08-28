@@ -24705,7 +24705,7 @@
       "tradeable": "true",
       "low_alchemy": "1",
       "high_alchemy": "2",
-      "shop_price": "30",
+      "shop_price": "4",
       "grand_exchange_price": "418",
       "weight": "0.1",
       "ge_buy_limit": "1000",
