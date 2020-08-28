@@ -420,9 +420,9 @@ final class Class74 {
       }
    }
 
-   private static void method1329(int var0, int var1, int var2, int var3) {
+   private static void method1329(int var0, int var1, int var2) {
       if(var2 == 0) {
-         method1313(var0, var1, var3);
+         method1313(var0, var1, 16776960);
       } else {
          if(var2 < 0) {
             var2 = -var2;
@@ -471,7 +471,7 @@ final class Class74 {
             var14 = var12 + var6 * anInt1092;
 
             for(var15 = var12; var15 < var13; ++var15) {
-               anIntArray1100[var14++] = var3;
+               anIntArray1100[var14++] = 16776960;
             }
 
             ++var6;
@@ -503,7 +503,7 @@ final class Class74 {
             var14 = var12 + var6 * anInt1092;
 
             for(var15 = var12; var15 <= var13; ++var15) {
-               anIntArray1100[var14++] = var3;
+               anIntArray1100[var14++] = 16776960;
             }
 
             ++var6;
@@ -516,7 +516,7 @@ final class Class74 {
    static void method1330(int var0, int var1, int var2, int var4) {
       if(var4 != 0) {
          if(var4 == 256) {
-            method1329(var0, var1, var2, 16776960);
+            method1329(var0, var1, var2);
          } else {
             if(var2 < 0) {
                var2 = -var2;
@@ -525,7 +525,7 @@ final class Class74 {
             int var5 = 256 - var4;
             int var6 = (16776960 >> 16 & 255) * var4;
             int var7 = (16776960 >> 8 & 255) * var4;
-            int var8 = (16776960 & 255) * var4;
+            int var8 = 0;
             int var12 = var1 - var2;
             if(var12 < anInt1095) {
                var12 = anInt1095;

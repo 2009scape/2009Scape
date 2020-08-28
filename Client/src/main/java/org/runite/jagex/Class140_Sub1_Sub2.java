@@ -683,13 +683,7 @@ final class Class140_Sub1_Sub2 extends Model {
                var22 = var25;
             }
 
-            if(0 != 0) {
-               var25 = var23 * var13 - var24 * var12 >> 16;
-               var24 = var23 * var12 + var24 * var13 >> 16;
-               var23 = var25;
-            }
-
-            if(var2 != 0) {
+             if(var2 != 0) {
                var25 = var24 * var14 + var22 * var15 >> 16;
                var24 = var24 * var15 - var22 * var14 >> 16;
                var22 = var25;
@@ -710,7 +704,7 @@ final class Class140_Sub1_Sub2 extends Model {
             }
          }
 
-         this.method1945(false, (long) -1 >= 0L, (long) -1, this.aShort3886, this.aShort3886 << 1, (Class127_Sub1)null);
+         this.method1945(false, false, (long) -1, this.aShort3886, this.aShort3886 << 1, (Class127_Sub1)null);
       } catch (RuntimeException var26) {
       }
 
@@ -1543,13 +1537,7 @@ final class Class140_Sub1_Sub2 extends Model {
                var21 = var24;
             }
 
-            if(0 != 0) {
-               var24 = var22 * var12 - var23 * var11 >> 16;
-               var23 = var22 * var11 + var23 * var12 >> 16;
-               var22 = var24;
-            }
-
-            if(var2 != 0) {
+             if(var2 != 0) {
                var24 = var23 * var13 + var21 * var14 >> 16;
                var23 = var23 * var14 - var21 * var13 >> 16;
                var21 = var24;
@@ -2521,13 +2509,7 @@ final class Class140_Sub1_Sub2 extends Model {
          this.anIntArray3881 = new int[this.anInt3900];
       }
 
-      if(var7 > 0) {
-      }
-
-      if(var8 > 0) {
-      }
-
-      this.aShortArray3869 = new short[this.anInt3889];
+       this.aShortArray3869 = new short[this.anInt3889];
       this.anInt3891 = 0;
       this.anInt3889 = 0;
       this.anInt3900 = 0;
@@ -2596,17 +2578,12 @@ final class Class140_Sub1_Sub2 extends Model {
    }
 
    static {
-      if(aBoolean3942) {
-         anIntArray3931 = new int[4096];
-         anIntArray3929 = new int[4096];
-      } else {
-         anIntArray3946 = new int[1600];
-         anIntArrayArray3926 = new int[1600][64];
-         anIntArray3935 = new int[32];
-         anIntArrayArray3923 = new int[32][512];
-      }
+       anIntArray3946 = new int[1600];
+       anIntArrayArray3926 = new int[1600][64];
+       anIntArray3935 = new int[32];
+       anIntArrayArray3923 = new int[32][512];
 
-      anIntArray3924 = new int[1];
+       anIntArray3924 = new int[1];
       anIntArray3939 = new int[1];
       anIntArray3928 = new int[4096];
       aShortArray3949 = new short[1];

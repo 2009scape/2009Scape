@@ -16,7 +16,7 @@ abstract class Class3_Sub28_Sub7 extends Node {
    static Class3_Sub28_Sub16_Sub2 method562(CacheIndex var0, int var2) {
       try {
     	//  System.out.println("Class 3_Sub28_Sub16_Sub2 " + var2);
-         return Class75_Sub4.method1351(var0, 0, var2, -30901)?((byte) 39 != 39?(Class3_Sub28_Sub16_Sub2)null:Class3_Sub28_Sub9.method578((byte) 39 ^ 84)):null;
+         return Class75_Sub4.method1351(var0, 0, var2, -30901)? Class3_Sub28_Sub9.method578() :null;
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "gf.O(" + (var0 != null?"{...}":"null") + ',' + 0 + ',' + var2 + ',' + (byte) 39 + ')');
       }
@@ -87,7 +87,7 @@ abstract class Class3_Sub28_Sub7 extends Node {
 
                int var6;
                for(int var5 = 0; var4.length > var5; var5 += var6) {
-                  var6 = var2.method1739(var5, 0 + 0, var4.length - var5, var4);
+                  var6 = var2.method1739(var5, 0, var4.length - var5, var4);
                   if(var6 == -1) {
                      throw new IOException("EOF");
                   }
@@ -113,9 +113,6 @@ abstract class Class3_Sub28_Sub7 extends Node {
    static void method565(int var1, int var2) {
       try {
          Class82.anInt1150 = -Class3_Sub13_Sub21.anInt3256 + var1;
-         if((byte) 86 != 86) {
-            anIntArray3607 = (int[])null;
-         }
 
          int var3 = -((int)((float)Class3_Sub28_Sub3.aClass11_3551.anInt168 / Class44.aFloat727)) + Class82.anInt1150;
          int var4 = Class82.anInt1150 + (int)((float)Class3_Sub28_Sub3.aClass11_3551.anInt168 / Class44.aFloat727);
@@ -145,11 +142,8 @@ abstract class Class3_Sub28_Sub7 extends Node {
 
    static void method566(RSString var0, int var2) {
       try {
-         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(0 + 4, 3, var2);
+         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(4, 3, var2);
          var3.g();
-         if(0 != 0) {
-            anInt3603 = 112;
-         }
 
          var3.aClass94_3599 = var0;
       } catch (RuntimeException var4) {

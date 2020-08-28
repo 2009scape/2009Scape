@@ -43,9 +43,6 @@ final class Class70 {
          Class132.anInt1741 = 0;
          Class3_Sub13_Sub39.anInt3463 = var2;
          Class3_Sub9.aBoolean2311 = false;
-         if(false) {
-            anInt1053 = 125;
-         }
 
          GraphicDefinition.anInt546 = 10000;
       } catch (RuntimeException var7) {
@@ -55,9 +52,6 @@ final class Class70 {
 
    static void method1286(int var0, ObjectDefinition var2, int var3, NPC var4, int var5, int var6, Player var7) {
       try {
-         if(false) {
-            anInt1047 = 94;
-         }
 
          Class3_Sub9 var8 = new Class3_Sub9();
          var8.anInt2308 = var0 * 128;
@@ -88,7 +82,7 @@ final class Class70 {
                var8.anInt2316 = var8.anInt2310 - -((int)(Math.random() * (double)(-var8.anInt2310 + var8.anInt2325)));
             }
 
-            Class3.aClass61_78.method1215(true, var8);
+            Class3.aClass61_78.method1215(var8);
          } else if(null != var4) {
             var8.aClass140_Sub4_Sub2_2324 = var4;
             NPCDefinition var12 = var4.definition;
@@ -100,18 +94,18 @@ final class Class70 {
             if(var12 != null) {
                var8.anInt2307 = 128 * (var12.size + var0);
                var8.anInt2321 = 128 * (var5 - -var12.size);
-               var8.anInt2332 = ISAACCipher.method1232(var4, -1);
+               var8.anInt2332 = ISAACCipher.method1232(var4);
                var8.anInt2328 = 128 * var12.anInt1291;
             }
 
-            IOHandler.aClass61_1242.method1215(true, var8);
+            IOHandler.aClass61_1242.method1215(var8);
          } else if(null != var7) {
             var8.aClass140_Sub4_Sub1_2327 = var7;
             var8.anInt2321 = (var7.getSize() + var5) * 128;
             var8.anInt2307 = 128 * (var7.getSize() + var0);
-            var8.anInt2332 = Class81.method1398(0, var7);
+            var8.anInt2332 = Class81.method1398(var7);
             var8.anInt2328 = 128 * var7.anInt3969;
-            Class3_Sub28_Sub7_Sub1.aClass130_4046.method1779(1, var8, var7.displayName.toLong(-112));
+            Class3_Sub28_Sub7_Sub1.aClass130_4046.method1779(var8, var7.displayName.toLong(-112));
          }
 
       } catch (RuntimeException var11) {
@@ -123,9 +117,6 @@ final class Class70 {
       try {
     	// System.out.println("Class 70 " + var0);
          if(Class75_Sub4.method1351(var3, 0, var0, ~30900)) {
-            if(-1 != -1) {
-               method1284((byte)-124);
-            }
 
             return Class3_Sub13.method163(var2.getFile(var0, 0));
          } else {

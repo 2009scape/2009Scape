@@ -23,9 +23,6 @@ final class Class61 {
    static Class3_Sub28_Sub9 method1210(int var1) {
       try {
          Class3_Sub28_Sub9 var2 = (Class3_Sub28_Sub9)Class163.aClass47_2041.method1092((long)var1, 1400);
-         if(64 != 64) {
-            method1218(false, -77, -82);
-         }
 
          if(null == var2) {
             byte[] var3 = Class3_Sub13_Sub7.aClass153_3098.getFile(11, var1);
@@ -65,9 +62,6 @@ final class Class61 {
    final Class3 method1212() {
       try {
          Class3 var2 = this.aClass3_940.aClass3_76;
-         if(2 != 2) {
-            method1213(56, (Class3_Sub11[])null);
-         }
 
          if(this.aClass3_940 == var2) {
             this.aClass3_941 = null;
@@ -109,7 +103,7 @@ final class Class61 {
             }
 
             if(var5.anInt2322 != var6) {
-               var8 = ISAACCipher.method1232(var5.aClass140_Sub4_Sub2_2324, -1);
+               var8 = ISAACCipher.method1232(var5.aClass140_Sub4_Sub2_2324);
                if(var8 != var5.anInt2332) {
                   if(var5.aClass3_Sub24_Sub1_2312 != null) {
                      Class3_Sub26.aClass3_Sub24_Sub2_2563.method461(var5.aClass3_Sub24_Sub1_2312);
@@ -129,48 +123,46 @@ final class Class61 {
             Class3_Sub28_Sub11.method606(var1, var5, var3, var0, var2, 1 ^ 113);
          }
 
-         if(1 == 1) {
-            for(var5 = (Class3_Sub9)Class3_Sub28_Sub7_Sub1.aClass130_4046.method1776(88); var5 != null; var5 = (Class3_Sub9)Class3_Sub28_Sub7_Sub1.aClass130_4046.method1778(1 ^ -92)) {
-               var6 = 1;
-               var7 = var5.aClass140_Sub4_Sub1_2327.method1965();
-               if(var5.aClass140_Sub4_Sub1_2327.anInt2764 == var7.anInt368) {
-                  var6 = 0;
-               } else if (var5.aClass140_Sub4_Sub1_2327.anInt2764 != var7.anInt393 && var5.aClass140_Sub4_Sub1_2327.anInt2764 != var7.anInt386 && var7.anInt375 != var5.aClass140_Sub4_Sub1_2327.anInt2764 && var7.anInt373 != var5.aClass140_Sub4_Sub1_2327.anInt2764) {
-                  if (var7.anInt398 == var5.aClass140_Sub4_Sub1_2327.anInt2764 || var5.aClass140_Sub4_Sub1_2327.anInt2764 == var7.anInt372 || var7.anInt379 == var5.aClass140_Sub4_Sub1_2327.anInt2764 || var7.anInt406 == var5.aClass140_Sub4_Sub1_2327.anInt2764) {
-                     var6 = 3;
-                  }
-               } else {
-                  var6 = 2;
+         for(var5 = (Class3_Sub9)Class3_Sub28_Sub7_Sub1.aClass130_4046.method1776(88); var5 != null; var5 = (Class3_Sub9)Class3_Sub28_Sub7_Sub1.aClass130_4046.method1778(1 ^ -92)) {
+            var6 = 1;
+            var7 = var5.aClass140_Sub4_Sub1_2327.method1965();
+            if(var5.aClass140_Sub4_Sub1_2327.anInt2764 == var7.anInt368) {
+               var6 = 0;
+            } else if (var5.aClass140_Sub4_Sub1_2327.anInt2764 != var7.anInt393 && var5.aClass140_Sub4_Sub1_2327.anInt2764 != var7.anInt386 && var7.anInt375 != var5.aClass140_Sub4_Sub1_2327.anInt2764 && var7.anInt373 != var5.aClass140_Sub4_Sub1_2327.anInt2764) {
+               if (var7.anInt398 == var5.aClass140_Sub4_Sub1_2327.anInt2764 || var5.aClass140_Sub4_Sub1_2327.anInt2764 == var7.anInt372 || var7.anInt379 == var5.aClass140_Sub4_Sub1_2327.anInt2764 || var7.anInt406 == var5.aClass140_Sub4_Sub1_2327.anInt2764) {
+                  var6 = 3;
                }
-
-               if(var6 != var5.anInt2322) {
-                  var8 = Class81.method1398(0, var5.aClass140_Sub4_Sub1_2327);
-                  if(var8 != var5.anInt2332) {
-                     if(var5.aClass3_Sub24_Sub1_2312 != null) {
-                        Class3_Sub26.aClass3_Sub24_Sub2_2563.method461(var5.aClass3_Sub24_Sub1_2312);
-                        var5.aClass3_Sub24_Sub1_2312 = null;
-                     }
-
-                     var5.anInt2332 = var8;
-                  }
-
-                  var5.anInt2322 = var6;
-               }
-
-               var5.anInt2326 = var5.aClass140_Sub4_Sub1_2327.anInt2819;
-               var5.anInt2321 = var5.aClass140_Sub4_Sub1_2327.anInt2819 + 64 * var5.aClass140_Sub4_Sub1_2327.getSize();
-               var5.anInt2308 = var5.aClass140_Sub4_Sub1_2327.anInt2829;
-               var5.anInt2307 = var5.aClass140_Sub4_Sub1_2327.anInt2829 + var5.aClass140_Sub4_Sub1_2327.getSize() * 64;
-               Class3_Sub28_Sub11.method606(var1, var5, var3, var0, var2, 110);
+            } else {
+               var6 = 2;
             }
 
+            if(var6 != var5.anInt2322) {
+               var8 = Class81.method1398(var5.aClass140_Sub4_Sub1_2327);
+               if(var8 != var5.anInt2332) {
+                  if(var5.aClass3_Sub24_Sub1_2312 != null) {
+                     Class3_Sub26.aClass3_Sub24_Sub2_2563.method461(var5.aClass3_Sub24_Sub1_2312);
+                     var5.aClass3_Sub24_Sub1_2312 = null;
+                  }
+
+                  var5.anInt2332 = var8;
+               }
+
+               var5.anInt2322 = var6;
+            }
+
+            var5.anInt2326 = var5.aClass140_Sub4_Sub1_2327.anInt2819;
+            var5.anInt2321 = var5.aClass140_Sub4_Sub1_2327.anInt2819 + 64 * var5.aClass140_Sub4_Sub1_2327.getSize();
+            var5.anInt2308 = var5.aClass140_Sub4_Sub1_2327.anInt2829;
+            var5.anInt2307 = var5.aClass140_Sub4_Sub1_2327.anInt2829 + var5.aClass140_Sub4_Sub1_2327.getSize() * 64;
+            Class3_Sub28_Sub11.method606(var1, var5, var3, var0, var2, 110);
          }
+
       } catch (RuntimeException var9) {
          throw Class44.clientError(var9, "ih.K(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + 1 + ')');
       }
    }
 
-   final void method1215(boolean var1, Class3 var2) {
+   final void method1215(Class3 var2) {
       try {
          if(null != var2.aClass3_76) {
             var2.method86(-1024);
@@ -178,12 +170,12 @@ final class Class61 {
 
          var2.aClass3_74 = this.aClass3_940;
          var2.aClass3_76 = this.aClass3_940.aClass3_76;
-         if(var1) {
+         if(true) {
             var2.aClass3_76.aClass3_74 = var2;
             var2.aClass3_74.aClass3_76 = var2;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "ih.D(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "ih.D(" + true + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -197,9 +189,6 @@ final class Class61 {
          var2.aClass3_76 = this.aClass3_940;
          var2.aClass3_76.aClass3_74 = var2;
          var2.aClass3_74.aClass3_76 = var2;
-         if(64 != 64) {
-            this.method1221();
-         }
 
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ih.N(" + 64 + ',' + (var2 != null?"{...}":"null") + ')');
@@ -248,9 +237,7 @@ final class Class61 {
    final Class3 method1220() {
       try {
          Class3 var2 = this.aClass3_940.aClass3_74;
-         if((byte) -3 != -3) {
-            return (Class3)null;
-         } else if(this.aClass3_940 == var2) {
+         if(this.aClass3_940 == var2) {
             return null;
          } else {
             var2.method86((byte) -3 + -1021);

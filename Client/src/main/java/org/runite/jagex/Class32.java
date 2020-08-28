@@ -6,15 +6,15 @@ final class Class32 {
    static RSString aClass94_592 = RSString.createRSString("<img=0>");
 
 
-   static RSString method992(RSByteBuffer var0, int var1) {
+   static RSString method992(RSByteBuffer var0) {
       try {
-         if(var1 != 29488) {
+         if(29488 != 29488) {
             anInt590 = 22;
          }
 
          return Class140_Sub7.method2033(var0);
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "fc.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "fc.C(" + (var0 != null?"{...}":"null") + ',' + 29488 + ')');
       }
    }
 
@@ -78,9 +78,7 @@ final class Class32 {
       Class3_Sub13_Sub28.aClass3_Sub11ArrayArray3346 = (Class3_Sub11[][])null;
       Class3_Sub4.anInt2249 = 0;
       if(Class3_Sub28_Sub8.aClass113Array3610 != null) {
-         for(var0 = 0; var0 < Class3_Sub4.anInt2249; ++var0) {
-            Class3_Sub28_Sub8.aClass113Array3610[var0] = null;
-         }
+         var0 = 0;
       }
 
       if(AnimationDefinition.aClass25Array1868 != null) {
@@ -101,9 +99,6 @@ final class Class32 {
 
    static void method996() {
       try {
-         if(-43 >= -35) {
-            method993(3, 100, -24);
-         }
 
          KeyboardListener var1 = Class3_Sub13_Sub3.aClass148_3049;
          synchronized(var1) {

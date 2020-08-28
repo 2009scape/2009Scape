@@ -15,7 +15,7 @@ final class Class40 {
 
    static int method1040(int var0, int var1, int var3) {
       try {
-         return (byte) 0 != 0?-127:(var1 < var3 ?var3:(var1 > var0?var0:var1));
+         return var1 < var3 ?var3: var1 > var0 ?var0:var1;
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "gd.C(" + var0 + ',' + var1 + ',' + (byte) 0 + ',' + var3 + ')');
       }
@@ -29,11 +29,9 @@ final class Class40 {
          Class3_Sub13_Sub1.outgoingBuffer.putString(name);
         // Class3_Sub13_Sub1.outgoingBuffer.putLong(var0, var2 + -2037463204);
          Canvas_Sub1.registryStage = 1;
-         if(-28236 == -28236) {
-            Class132.anInt1734 = 0;
-            GraphicDefinition.anInt548 = 0;
-            Class130.anInt1711 = -3;
-         }
+         Class132.anInt1734 = 0;
+         GraphicDefinition.anInt548 = 0;
+         Class130.anInt1711 = -3;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "gd.D(" + var0 + ',' + -28236 + ')');
       }
@@ -56,15 +54,15 @@ final class Class40 {
       }
    }
 
-   static Class3_Sub28_Sub16_Sub2 method1043(int var0, CacheIndex var1, int var2, int archiveId) {
+   static Class3_Sub28_Sub16_Sub2 method1043(int var0, CacheIndex var1, int archiveId) {
       try {
-         if(var2 != -3178) {
+         if(-3178 != -3178) {
             method1044(-55);
          }
         // System.out.println("Class 40 " + archiveId);
          return Class75_Sub4.method1351(var1, var0, archiveId, -30901)?Class117.method1722(-53):null;
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "gd.G(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + archiveId + ')');
+         throw Class44.clientError(var5, "gd.G(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + -3178 + ',' + archiveId + ')');
       }
    }
 
@@ -82,9 +80,6 @@ final class Class40 {
 
    static void method1045() {
       try {
-         if(-19761 != -19761) {
-            method1046(-110);
-         }
 
          Class128.aClass93_1683.method1524();
       } catch (RuntimeException var2) {
@@ -199,7 +194,7 @@ final class Class40 {
                   Class3_Sub13.method164((byte)-24, true, RenderAnimationDefinition.method903(new RSString[]{TextCore.LoadingPleaseWait2, Class140_Sub2.aClass94_2707}, (byte)-127));
                }
 
-               Class58.method1194(-16385);
+               Class58.method1194();
                Class3_Sub13_Sub30.method313((byte)58);
                boolean var11 = false;
                int var12;
@@ -245,7 +240,7 @@ final class Class40 {
                   Class39.method1036();
                }
 
-               Class58.method1194(-16385);
+               Class58.method1194();
                System.gc();
                Class163_Sub1.method2210(true);
                Class117.method1720(false, 105);
@@ -337,8 +332,8 @@ final class Class40 {
                   }
                }
 
-               RSByteBuffer.method792(9179409);
-               Class58.method1194(-16385);
+               RSByteBuffer.method792();
+               Class58.method1194();
                Class3_Sub13_Sub31.method318();
                Class3_Sub13_Sub30.method313((byte)100);
                Class3_Sub13_Sub34.aBoolean3416 = false;
@@ -374,7 +369,7 @@ final class Class40 {
                }
 
                Class3_Sub20.method388((byte)116);
-               Class58.method1194(-16385);
+               Class58.method1194();
                Class75_Sub4.method1355();
             } else {
                Class163_Sub2_Sub1.anInt4019 = 2;

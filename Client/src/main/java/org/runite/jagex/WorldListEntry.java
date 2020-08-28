@@ -33,7 +33,7 @@ final class WorldListEntry extends Class44 {
 
    final WorldListCountry method1078(int var1) {
       try {
-         int var2 = -35 / ((var1 - 0) / 56);
+         int var2 = -35 / ((var1) / 56);
          return Class119.countries[this.countryIndex];
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "ba.B(" + var1 + ')');
@@ -48,8 +48,6 @@ final class WorldListEntry extends Class44 {
             Class3_Sub25 var2 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var0, 0);
             if(var2 == null) {
                return Class144.method2069(var0, -126).anInt3647;
-            } else if((byte) -80 > -56) {
-               return -13;
             } else {
                int var3 = 0;
 

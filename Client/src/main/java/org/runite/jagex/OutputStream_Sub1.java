@@ -13,9 +13,7 @@ final class OutputStream_Sub1 extends OutputStream {
 
    static short[] method65(short[] var1) {
       try {
-         if(23032 != 23032) {
-            return (short[])null;
-         } else if(null == var1) {
+         if(null == var1) {
             return null;
          } else {
             short[] var2 = new short[var1.length];
@@ -23,7 +21,7 @@ final class OutputStream_Sub1 extends OutputStream {
             return var2;
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "vg.A(" + 23032 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "vg.A(" + 23032 + ',' + "{...}" + ')');
       }
    }
 
@@ -37,7 +35,7 @@ final class OutputStream_Sub1 extends OutputStream {
                var6.aClass11_2449 = var5;
                var6.aClass94_2439 = var0;
                var6.anInt2445 = var2;
-               Class43.method1065(1073376993, var6);
+               Class43.method1065(var6);
             }
 
             boolean var8 = true;
@@ -162,20 +160,18 @@ final class OutputStream_Sub1 extends OutputStream {
             var2.method1973(2279 + -2395);
          }
 
-         if(2279 == 2279) {
-            if(var2 == Class102.player && (var2.anInt2819 < 1536 || var2.anInt2829 < 1536 || var2.anInt2819 >= 11776 || var2.anInt2829 >= 11776)) {
-               var2.anInt2842 = -1;
-               var2.anInt2800 = 0;
-               var2.anInt2790 = 0;
-               var2.anInt2771 = -1;
-               var2.anInt2819 = var2.anIntArray2767[0] * 128 + var2.getSize() * 64;
-               var2.anInt2829 = 128 * var2.anIntArray2755[0] + 64 * var2.getSize();
-               var2.method1973(-98);
-            }
-
-            Class17.method904(65536, var2);
-            RenderAnimationDefinition.method900(var2, -11973);
+         if(var2 == Class102.player && (var2.anInt2819 < 1536 || var2.anInt2829 < 1536 || var2.anInt2819 >= 11776 || var2.anInt2829 >= 11776)) {
+            var2.anInt2842 = -1;
+            var2.anInt2800 = 0;
+            var2.anInt2790 = 0;
+            var2.anInt2771 = -1;
+            var2.anInt2819 = var2.anIntArray2767[0] * 128 + var2.getSize() * 64;
+            var2.anInt2829 = 128 * var2.anIntArray2755[0] + 64 * var2.getSize();
+            var2.method1973(-98);
          }
+
+         Class17.method904(65536, var2);
+         RenderAnimationDefinition.method900(var2, -11973);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "vg.C(" + var0 + ',' + 2279 + ',' + (var2 != null?"{...}":"null") + ')');
       }

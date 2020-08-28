@@ -89,7 +89,7 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
                   }
                   Class3_Sub15.aClass89_2429 = new IOHandler((Socket)Class3_Sub9.aClass64_2318.anObject974, Class38.aClass87_665);
                   Class3_Sub9.aClass64_2318 = null;
-                  Class3_Sub15.aClass89_2429.sendBytes(false, Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index);
+                  Class3_Sub15.aClass89_2429.sendBytes(Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index);
                    if(WorldListEntry.aClass155_2627 != null) {
                      WorldListEntry.aClass155_2627.method2159(63);
                   }
@@ -133,10 +133,10 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
                   }
 
                   GraphicDefinition.incomingBuffer.index = 0;
-                  Class3_Sub15.aClass89_2429.readBytes(0, 8 * Class3_Sub13_Sub33.aClass94Array3391.length, -18455, GraphicDefinition.incomingBuffer.buffer);
+                  Class3_Sub15.aClass89_2429.readBytes(0, 8 * Class3_Sub13_Sub33.aClass94Array3391.length, GraphicDefinition.incomingBuffer.buffer);
 
                   for(response = 0; response < Class3_Sub13_Sub33.aClass94Array3391.length; ++response) {
-                     Class3_Sub13_Sub33.aClass94Array3391[response] = Class41.method1052(-29664, GraphicDefinition.incomingBuffer.getLong(-125));
+                     Class3_Sub13_Sub33.aClass94Array3391[response] = Class41.method1052(GraphicDefinition.incomingBuffer.getLong(-125));
                   }
 
                   Class130.anInt1711 = 21;
@@ -264,9 +264,6 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
    private boolean method271(int var1, int var2) {
       try {
          int var4 = (var2 - var1) * this.anInt3257 >> 12;
-         if((byte) 113 != 113) {
-            this.method270((byte)-91, -79, -4);
-         }
 
          int var5 = Class75_Sub2.anIntArray2639[(1047948 & var4 * 255) >> 12];
          var5 = (var5 << 12) / this.anInt3257;
@@ -313,7 +310,7 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
                   int var11 = var9 + 64 * (Class3_Sub24_Sub3.anIntArray3494[var2] >> 8) - Class131.anInt1716;
                   int var10 = var7 & 63;
                   int var12 = var10 + -Class82.anInt1152 + 64 * (255 & Class3_Sub24_Sub3.anIntArray3494[var2]);
-                  NPCDefinition var13 = Node.method522(var16.getShort(1), 27112);
+                  NPCDefinition var13 = Node.method522(var16.getShort(1));
                   if(Class3_Sub13_Sub24.npcs[var6] == null && (var13.aByte1267 & 1) > 0 && Class140_Sub3.anInt2745 == var8 && var11 >= 0 && 104 > var13.size + var11 && var12 >= 0 && 104 > var12 - -var13.size) {
                      Class3_Sub13_Sub24.npcs[var6] = new NPC();
                      NPC npc = Class3_Sub13_Sub24.npcs[var6];
@@ -328,7 +325,7 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
                      }
 
                      npc.renderAnimationId = npc.definition.renderAnimationId;
-                     npc.method1967(-2, npc.getSize(), var11, var12, true);
+                     npc.method1967(npc.getSize(), var11, var12, true);
                   }
                }
             }

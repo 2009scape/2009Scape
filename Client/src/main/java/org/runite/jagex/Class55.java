@@ -14,15 +14,13 @@ final class Class55 {
          Class3_Sub28_Sub16_Sub2 var2 = (Class3_Sub28_Sub16_Sub2)Class163_Sub1.aClass93_2984.get((long)this.anInt883);
          if(null != var2) {
             return var2;
-         } else if((byte) 95 == 95) {
+         } else {
             var2 = Class3_Sub28_Sub7.method562(AnimationDefinition.aClass153_1852, this.anInt883);
             if(var2 != null) {
                Class163_Sub1.aClass93_2984.put((byte)-87, var2, (long)this.anInt883);
             }
 
             return var2;
-         } else {
-            return (Class3_Sub28_Sub16_Sub2)null;
          }
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "ia.F(" + (byte) 95 + ')');
@@ -203,7 +201,7 @@ final class Class55 {
                   if(var1.anInt2758 > var9) {
                      var1.anInt2758 = var9;
                   }
-               } else if(0 < var1.anInt2758) {
+               } else {
                   var1.anInt2758 -= var2.anInt360;
                   if(0 > var1.anInt2758) {
                      var1.anInt2758 = 0;
@@ -288,11 +286,8 @@ final class Class55 {
 
    private void method1183(int var2, int var3, RSByteBuffer var4) {
       try {
-         if(-18426 != -18426) {
-            this.anInt881 = -82;
-         }
 
-         if(var3 == 1) {
+          if(var3 == 1) {
             this.anInt883 = var4.getShort(1);
          } else if (2 == var3) {
             this.anInt881 = var4.getByte((byte) -80);
@@ -322,9 +317,7 @@ final class Class55 {
                return 4;
             }
 
-            if(3 == var4) {
-               return 8;
-            }
+             return 8;
          } else if (var3 == 19 || var3 == 21) {
             if (var4 == 0) {
                return 16;
@@ -338,9 +331,7 @@ final class Class55 {
                return 64;
             }
 
-            if (var4 == 3) {
-               return 128;
-            }
+             return 128;
          }
 
          return 0;
@@ -351,11 +342,8 @@ final class Class55 {
 
    static int method1185() {
       try {
-         if(6098 != 6098) {
-            method1180((byte)-98, (Class140_Sub4)null);
-         }
 
-         return 2;
+          return 2;
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "ia.B(" + 6098 + ')');
       }

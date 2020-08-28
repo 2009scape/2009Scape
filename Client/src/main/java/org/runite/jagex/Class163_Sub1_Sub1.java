@@ -32,14 +32,11 @@ final class Class163_Sub1_Sub1 extends Class163_Sub1 {
 
    static void method2214() {
       try {
-         if(0 != 0) {
-            aByteArray4005 = (byte[])null;
-         }
 
          if(NPC.method1986(90) || WorldListCountry.localPlane == Class140_Sub3.anInt2745) {
-            if(Class58.anInt909 != WorldListCountry.localPlane && Class3_Sub19.method385(0 + 0, WorldListCountry.localPlane)) {
+            if(Class58.anInt909 != WorldListCountry.localPlane && Class3_Sub19.method385(WorldListCountry.localPlane)) {
                Class58.anInt909 = WorldListCountry.localPlane;
-               RSByteBuffer.method792(0 + 9179409);
+               RSByteBuffer.method792();
             }
 
          } else {
@@ -64,9 +61,6 @@ final class Class163_Sub1_Sub1 extends Class163_Sub1 {
 
    static void method2216() {
       try {
-         if((byte) 81 != 81) {
-            method2215((Component)null, 14);
-         }
 
          if(Class3_Sub13_Sub31.anInt3375 != 0) {
             try {
@@ -109,7 +103,7 @@ final class Class163_Sub1_Sub1 extends Class163_Sub1 {
 
                   Class3_Sub15.aClass89_2429 = new IOHandler((Socket)Class3_Sub9.aClass64_2318.anObject974, Class38.aClass87_665);
                   Class3_Sub9.aClass64_2318 = null;
-                  Class3_Sub15.aClass89_2429.sendBytes(false, Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index);
+                  Class3_Sub15.aClass89_2429.sendBytes(Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index);
                   if(WorldListEntry.aClass155_2627 != null) {
                      WorldListEntry.aClass155_2627.method2159(83);
                   }

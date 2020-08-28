@@ -108,7 +108,7 @@ final class Class117 {
 
          anIntArray1613 = null;
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "pl.D(" + var0 + ')');
+         throw Class44.clientError(var2, "pl.D(" + ')');
       }
    }
 

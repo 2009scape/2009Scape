@@ -92,32 +92,30 @@ final class Class119 {
 
    static void method1730(Signlink var0) {
       try {
-         if((byte) 14 == 14) {
-            Class122 var2 = null;
+         Class122 var2 = null;
 
-            try {
-               Class64 var3 = var0.method1433("runescape", 12);
+         try {
+            Class64 var3 = var0.method1433("runescape", 12);
 
-               while(0 == var3.anInt978) {
-                  Class3_Sub13_Sub34.method331(1L, 64);
-               }
-
-               if(var3.anInt978 == 1) {
-                  var2 = (Class122)var3.anObject974;
-                  RSByteBuffer var4 = Class23.method939();
-                  var2.method1738(116, var4.buffer, var4.index, 0);
-               }
-            } catch (Exception var6) {
+            while(0 == var3.anInt978) {
+               Class3_Sub13_Sub34.method331(1L, 64);
             }
 
-            try {
-               if(var2 != null) {
-                  var2.close(1);
-               }
-            } catch (Exception var5) {
+            if(var3.anInt978 == 1) {
+               var2 = (Class122)var3.anObject974;
+               RSByteBuffer var4 = Class23.method939();
+               var2.method1738(116, var4.buffer, var4.index, 0);
             }
-
+         } catch (Exception var6) {
          }
+
+         try {
+            if(var2 != null) {
+               var2.close(1);
+            }
+         } catch (Exception var5) {
+         }
+
       } catch (RuntimeException var7) {
          throw Class44.clientError(var7, "qh.A(" + (var0 != null?"{...}":"null") + ',' + (byte) 14 + ')');
       }

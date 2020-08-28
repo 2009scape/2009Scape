@@ -50,7 +50,7 @@ final class Class124 {
          int var3 = var0.getByte((byte)-83);
 
          for(int var4 = 0; var3 > var4; ++var4) {
-            var2.aClass61_3560.method1215(true, new Class3_Sub21(var0.getShort(1), var0.getShort(1), var0.getShort(1), var0.getShort(1)));
+            var2.aClass61_3560.method1215(new Class3_Sub21(var0.getShort(1), var0.getShort(1), var0.getShort(1), var0.getShort(1)));
          }
 
          var2.method538();

@@ -115,7 +115,7 @@ abstract class Class140_Sub4 extends GameObject {
       }
    }
 
-   final void method1967(int var1, int var2, int var3, int var4, boolean var5) {
+   final void method1967(int var2, int var3, int var4, boolean var5) {
       try {
          if(this.anInt2771 != -1 && Client.getAnimationDefinition(this.anInt2771).anInt1850 == 1) {
             this.anInt2771 = -1;
@@ -149,7 +149,7 @@ abstract class Class140_Sub4 extends GameObject {
          this.anInt2811 = 0;
          this.anInt2829 = 64 * var2 + this.anIntArray2755[0] * 128;
          this.anInt2819 = var2 * 64 + 128 * this.anIntArray2767[0];
-         if(var1 != -2) {
+         if(-2 != -2) {
             aClass54Array2841 = (Class54[])null;
          }
 
@@ -158,7 +158,7 @@ abstract class Class140_Sub4 extends GameObject {
          }
 
       } catch (RuntimeException var9) {
-         throw Class44.clientError(var9, "fe.J(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var9, "fe.J(" + -2 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 
@@ -291,9 +291,9 @@ abstract class Class140_Sub4 extends GameObject {
       }
    }
 
-   final void method1970(int var1, int var2, int var3, int var4) {
+   final void method1970(int var1, int var3, int var4) {
       try {
-         if(var2 == -8) {
+         if(-8 == -8) {
             for(int var5 = 0; var5 < 4; ++var5) {
                if(var3 >= this.anIntArray2768[var5]) {
                   this.anIntArray2836[var5] = var4;
@@ -305,7 +305,7 @@ abstract class Class140_Sub4 extends GameObject {
 
          }
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "fe.G(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "fe.G(" + var1 + ',' + -8 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -583,7 +583,7 @@ abstract class Class140_Sub4 extends GameObject {
 
    int getSize() {
       try {
-         return (byte) 114 != 114?-24:this.size;
+         return this.size;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "fe.H(" + (byte) 114 + ')');
       }

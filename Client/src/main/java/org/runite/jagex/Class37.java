@@ -79,7 +79,7 @@ final class Class37 {
       this.anIntArray645[this.anInt653] = var2;
       this.anIntArray649[this.anInt653] = var3;
       this.anIntArray648[this.anInt653] = var4;
-      this.aClass130_656.method1779(1, new Class3_Sub18(this.anInt653), var8);
+      this.aClass130_656.method1779(new Class3_Sub18(this.anInt653), var8);
       return this.anInt653++;
    }
 
@@ -163,10 +163,6 @@ final class Class37 {
          this.aClass156_646.method2171();
          var1.glDrawElements(4, this.anInt655, 5125, 0L);
       } else {
-         if(HDToolKit.aBoolean1813) {
-            var1.glBindBufferARB('\u8892', 0);
-            var1.glBindBufferARB('\u8893', 0);
-         }
 
          var1.glInterleavedArrays(10787, 16, this.aByteBuffer647);
          HDToolKit.aBoolean1798 = false;

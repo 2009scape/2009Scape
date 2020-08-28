@@ -116,11 +116,8 @@ public final class Class3_Sub28_Sub12 extends Node {
 
    private void method614(RSByteBuffer var1, int var2) {
       try {
-         if(false) {
-            this.method610((RSByteBuffer)null, -89);
-         }
 
-         if(var2 == 2) {
+          if(var2 == 2) {
             this.anInt3647 = var1.getShort(1);
          }
 

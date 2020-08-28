@@ -85,110 +85,108 @@ final class Class29 {
             var22[var23] = Class121.method1734(var19, 0.0F, var16, var17, (int[][])null, var1, var3, var13, var18, (byte)-125, var6, false, var15, var2, var12, var20[var23 + var23], var4, var20[var23 + var23 + 1]);
          }
 
-         if((byte) 88 == 88) {
-            int[] var21 = null;
-            if(var10) {
-               int var24;
-               if(1 == var11) {
-                  var23 = Class121.method1734(var19, 0.0F, var16, var17, (int[][])null, var1, var3, var13, var18, (byte)-122, var6, true, var15, var2, var12, 64, var4, 128);
-                  var24 = Class121.method1734(var19, 0.0F, var16, var17, (int[][])null, var1, var3, var13, var18, (byte)-114, var6, true, var15, var2, var12, 128, var4, 64);
-                  var21 = new int[]{var24, var23, var22[2], var23, var22[0], var22[2]};
-               } else if(2 == var11) {
-                  var21 = new int[6];
-                  var23 = Class121.method1734(var19, 0.0F, var16, var17, (int[][])null, var1, var3, var13, var18, (byte)-121, var6, true, var15, var2, var12, 128, var4, 128);
-                  var24 = Class121.method1734(var19, 0.0F, var16, var17, (int[][])null, var1, var3, var13, var18, (byte)-128, var6, true, var15, var2, var12, 64, var4, 0);
-                  var21[2] = var23;
-                  var21[0] = var22[0];
-                  var21[5] = var22[0];
-                  var21[3] = var23;
-                  var21[1] = var24;
-                  var21[4] = var22[1];
-               } else if(var11 == 3) {
-                  var21 = new int[6];
-                  var23 = Class121.method1734(var19, 0.0F, var16, var17, (int[][])null, var1, var3, var13, var18, (byte)-114, var6, true, var15, var2, var12, 0, var4, 128);
-                  var24 = Class121.method1734(var19, 0.0F, var16, var17, (int[][])null, var1, var3, var13, var18, (byte)-115, var6, true, var15, var2, var12, 64, var4, 0);
-                  var21[4] = var24;
-                  var21[1] = var22[1];
-                  var21[0] = var22[2];
-                  var21[3] = var23;
-                  var21[2] = var23;
-                  var21[5] = var22[2];
-               } else if (var11 == 4) {
-                  var21 = new int[3];
-                  var23 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -115, var6, true, var15, var2, var12, 0, var4, 128);
-                  var21[0] = var22[3];
-                  var21[2] = var22[0];
-                  var21[1] = var23;
-               } else if (var11 == 5) {
-                  var21 = new int[3];
-                  var23 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -112, var6, true, var15, var2, var12, 128, var4, 128);
-                  var21[1] = var23;
-                  var21[0] = var22[2];
-                  var21[2] = var22[3];
-               } else if (var11 == 6) {
-                  var21 = new int[6];
-                  var23 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -123, var6, true, var15, var2, var12, 128, var4, 0);
-                  var24 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -115, var6, true, var15, var2, var12, 128, var4, 128);
-                  var21[1] = var23;
-                  var21[0] = var22[3];
-                  var21[2] = var24;
-                  var21[4] = var22[0];
-                  var21[3] = var24;
-                  var21[5] = var22[3];
-               } else if (var11 == 7) {
-                  var21 = new int[6];
-                  var23 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -126, var6, true, var15, var2, var12, 0, var4, 128);
-                  var24 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -117, var6, true, var15, var2, var12, 128, var4, 0);
-                  var21[3] = var23;
-                  var21[2] = var23;
-                  var21[0] = var22[1];
-                  var21[4] = var22[2];
-                  var21[1] = var24;
-                  var21[5] = var22[1];
-               } else if (var11 == 8) {
-                  var21 = new int[3];
-                  var23 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -117, var6, true, var15, var2, var12, 0, var4, 0);
-                  var21[2] = var22[4];
-                  var21[0] = var22[3];
-                  var21[1] = var23;
-               } else if (var11 == 9) {
-                  var23 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -118, var6, true, var15, var2, var12, 128, var4, 64);
-                  var24 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -121, var6, true, var15, var2, var12, 96, var4, 32);
-                  int var25 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -120, var6, true, var15, var2, var12, 64, var4, 0);
-                  var21 = new int[]{var24, var23, var22[4], var24, var22[4], var22[3], var24, var22[3], var22[2], var24, var22[2], var22[1], var24, var22[1], var25};
-               } else if (10 == var11) {
-                  var21 = new int[9];
-                  var23 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -120, var6, true, var15, var2, var12, 0, var4, 128);
-                  var21[0] = var22[2];
-                  var21[8] = var22[0];
-                  var21[1] = var23;
-                  var21[4] = var23;
-                  var21[2] = var22[3];
-                  var21[7] = var23;
-                  var21[3] = var22[3];
-                  var21[5] = var22[4];
-                  var21[6] = var22[4];
-               } else if (var11 == 11) {
-                  var21 = new int[12];
-                  var23 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -119, var6, true, var15, var2, var12, 0, var4, 64);
-                  var24 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -121, var6, true, var15, var2, var12, 128, var4, 64);
-                  var21[5] = var23;
-                  var21[1] = var23;
-                  var21[8] = var23;
-                  var21[0] = var22[3];
-                  var21[2] = var22[0];
-                  var21[11] = var24;
-                  var21[6] = var22[2];
-                  var21[7] = var24;
-                  var21[10] = var22[1];
-                  var21[3] = var22[3];
-                  var21[4] = var22[2];
-                  var21[9] = var22[2];
-               }
-            }
+          int[] var21 = null;
+          if(var10) {
+             int var24;
+             if(1 == var11) {
+                var23 = Class121.method1734(var19, 0.0F, var16, var17, (int[][])null, var1, var3, var13, var18, (byte)-122, var6, true, var15, var2, var12, 64, var4, 128);
+                var24 = Class121.method1734(var19, 0.0F, var16, var17, (int[][])null, var1, var3, var13, var18, (byte)-114, var6, true, var15, var2, var12, 128, var4, 64);
+                var21 = new int[]{var24, var23, var22[2], var23, var22[0], var22[2]};
+             } else if(2 == var11) {
+                var21 = new int[6];
+                var23 = Class121.method1734(var19, 0.0F, var16, var17, (int[][])null, var1, var3, var13, var18, (byte)-121, var6, true, var15, var2, var12, 128, var4, 128);
+                var24 = Class121.method1734(var19, 0.0F, var16, var17, (int[][])null, var1, var3, var13, var18, (byte)-128, var6, true, var15, var2, var12, 64, var4, 0);
+                var21[2] = var23;
+                var21[0] = var22[0];
+                var21[5] = var22[0];
+                var21[3] = var23;
+                var21[1] = var24;
+                var21[4] = var22[1];
+             } else if(var11 == 3) {
+                var21 = new int[6];
+                var23 = Class121.method1734(var19, 0.0F, var16, var17, (int[][])null, var1, var3, var13, var18, (byte)-114, var6, true, var15, var2, var12, 0, var4, 128);
+                var24 = Class121.method1734(var19, 0.0F, var16, var17, (int[][])null, var1, var3, var13, var18, (byte)-115, var6, true, var15, var2, var12, 64, var4, 0);
+                var21[4] = var24;
+                var21[1] = var22[1];
+                var21[0] = var22[2];
+                var21[3] = var23;
+                var21[2] = var23;
+                var21[5] = var22[2];
+             } else if (var11 == 4) {
+                var21 = new int[3];
+                var23 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -115, var6, true, var15, var2, var12, 0, var4, 128);
+                var21[0] = var22[3];
+                var21[2] = var22[0];
+                var21[1] = var23;
+             } else if (var11 == 5) {
+                var21 = new int[3];
+                var23 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -112, var6, true, var15, var2, var12, 128, var4, 128);
+                var21[1] = var23;
+                var21[0] = var22[2];
+                var21[2] = var22[3];
+             } else if (var11 == 6) {
+                var21 = new int[6];
+                var23 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -123, var6, true, var15, var2, var12, 128, var4, 0);
+                var24 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -115, var6, true, var15, var2, var12, 128, var4, 128);
+                var21[1] = var23;
+                var21[0] = var22[3];
+                var21[2] = var24;
+                var21[4] = var22[0];
+                var21[3] = var24;
+                var21[5] = var22[3];
+             } else if (var11 == 7) {
+                var21 = new int[6];
+                var23 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -126, var6, true, var15, var2, var12, 0, var4, 128);
+                var24 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -117, var6, true, var15, var2, var12, 128, var4, 0);
+                var21[3] = var23;
+                var21[2] = var23;
+                var21[0] = var22[1];
+                var21[4] = var22[2];
+                var21[1] = var24;
+                var21[5] = var22[1];
+             } else if (var11 == 8) {
+                var21 = new int[3];
+                var23 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -117, var6, true, var15, var2, var12, 0, var4, 0);
+                var21[2] = var22[4];
+                var21[0] = var22[3];
+                var21[1] = var23;
+             } else if (var11 == 9) {
+                var23 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -118, var6, true, var15, var2, var12, 128, var4, 64);
+                var24 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -121, var6, true, var15, var2, var12, 96, var4, 32);
+                int var25 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -120, var6, true, var15, var2, var12, 64, var4, 0);
+                var21 = new int[]{var24, var23, var22[4], var24, var22[4], var22[3], var24, var22[3], var22[2], var24, var22[2], var22[1], var24, var22[1], var25};
+             } else if (10 == var11) {
+                var21 = new int[9];
+                var23 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -120, var6, true, var15, var2, var12, 0, var4, 128);
+                var21[0] = var22[2];
+                var21[8] = var22[0];
+                var21[1] = var23;
+                var21[4] = var23;
+                var21[2] = var22[3];
+                var21[7] = var23;
+                var21[3] = var22[3];
+                var21[5] = var22[4];
+                var21[6] = var22[4];
+             } else if (var11 == 11) {
+                var21 = new int[12];
+                var23 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -119, var6, true, var15, var2, var12, 0, var4, 64);
+                var24 = Class121.method1734(var19, 0.0F, var16, var17, (int[][]) null, var1, var3, var13, var18, (byte) -121, var6, true, var15, var2, var12, 128, var4, 64);
+                var21[5] = var23;
+                var21[1] = var23;
+                var21[8] = var23;
+                var21[0] = var22[3];
+                var21[2] = var22[0];
+                var21[11] = var24;
+                var21[6] = var22[2];
+                var21[7] = var24;
+                var21[10] = var22[1];
+                var21[3] = var22[3];
+                var21[4] = var22[2];
+                var21[9] = var22[2];
+             }
+          }
 
-            var15.method150(var7, var3, var12, var22, var21, false);
-         }
+          var15.method150(var7, var3, var12, var22, var21, false);
       } catch (RuntimeException var26) {
          throw Class44.clientError(var26, "eh.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + (byte) 88 + ',' + var10 + ',' + var11 + ',' + var12 + ',' + (var13 != null?"{...}":"null") + ',' + var14 + ',' + (var15 != null?"{...}":"null") + ')');
       }
@@ -196,11 +194,8 @@ final class Class29 {
 
    private void method972(RSByteBuffer var1, int var3) {
       try {
-         if((byte) -117 > -86) {
-            this.method970(-83, (RSByteBuffer)null);
-         }
 
-         if(var3 == 5) {
+          if(var3 == 5) {
             this.anInt556 = var1.getShort(1);
          }
 

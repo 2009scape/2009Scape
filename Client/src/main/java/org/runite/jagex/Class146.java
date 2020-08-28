@@ -15,11 +15,8 @@ abstract class Class146 {
 
    static boolean updateInterfacePacketCounter(int packetCounter) {
       try {
-         if((byte) -25 != -25) {
-            anInt1901 = 102;
-         }
 
-         Class113.interfacePacketCounter = packetCounter + 1 & '\uffff';
+          Class113.interfacePacketCounter = packetCounter + 1 & '\uffff';
          RenderAnimationDefinition.aBoolean402 = true;
          return true;
       } catch (RuntimeException var3) {

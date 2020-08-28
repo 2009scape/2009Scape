@@ -127,7 +127,7 @@ final class Class25 {
                CS2Script var3 = new CS2Script();
                var3.arguments = var1.anObjectArray303;
                var3.aClass11_2449 = var1;
-               Class43.method1065(1073376993, var3);
+               Class43.method1065(var3);
             }
 
             GameObject.aBoolean1837 = false;
@@ -142,9 +142,6 @@ final class Class25 {
    static void method959() {
       try {
          CS2Script.aClass93_2450.method1524();
-         if(0 != 0) {
-            method957(121, true);
-         }
 
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "ec.B(" + 0 + ')');

@@ -59,10 +59,6 @@ final class Class131 {
                }
             }
 
-            if(-59 >= -46) {
-               return;
-            }
-
             GraphicDefinition.incomingBuffer.method818();
             return;
          }
@@ -73,9 +69,6 @@ final class Class131 {
 
    final boolean method1787(int var1) {
       try {
-         if((byte) -124 != -124) {
-            method1793((RSString)null, (RSString)null, -17, (byte)94);
-         }
 
          return (this.aByteArray1730[var1] & 8) != 0;
       } catch (RuntimeException var4) {
@@ -110,13 +103,13 @@ final class Class131 {
       }
    }
 
-   static void method1790(int var0, int var1, int var2) {
+   static void method1790(int var0, int var1) {
       try {
          Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(4, 5, var0);
          var3.g();
          var3.anInt3598 = var1;
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "se.B(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "se.B(" + var0 + ',' + var1 + ',' + 95 + ')');
       }
    }
 

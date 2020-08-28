@@ -230,9 +230,6 @@ final class Class102 implements Interface2 {
 
    private Class3_Sub28_Sub20 method1613(int var1) {
       try {
-         if(1 != 1) {
-            this.aBooleanArray2128 = (boolean[])null;
-         }
 
          Class3_Sub28_Sub20 var3 = (Class3_Sub28_Sub20)this.aClass47_2142.method1092((long)var1, 1400);
          if(null == var3) {
@@ -257,7 +254,7 @@ final class Class102 implements Interface2 {
       try {
          return var2?-63:255 & this.aByteArray2143[var1];
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "nk.D(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "nk.D(" + var1 + ',' + ')');
       }
    }
 
@@ -336,7 +333,7 @@ final class Class102 implements Interface2 {
    final void method1616(boolean var1) {
       try {
          this.aBoolean2134 = var1;
-         this.method1618(0);
+         this.method1618();
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "nk.S(" + var1 + ',' + -17830 + ')');
       }
@@ -398,8 +395,6 @@ final class Class102 implements Interface2 {
             }
          }
 
-         if((byte) 29 == 29) {
-         }
       } catch (RuntimeException var10) {
          throw Class44.clientError(var10, "nk.R(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (byte) 29 + ')');
       }
@@ -426,17 +421,17 @@ final class Class102 implements Interface2 {
       }
    }
 
-   final void method1618(int var1) {
+   final void method1618() {
       try {
          this.aClass47_2142.method1101();
-         if(var1 == 0) {
+         if(0 == 0) {
             if(null != this.aClass47_2138) {
                this.aClass47_2138.method1101();
             }
 
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "nk.O(" + var1 + ')');
+         throw Class44.clientError(var3, "nk.O(" + 0 + ')');
       }
    }
 
@@ -462,9 +457,6 @@ final class Class102 implements Interface2 {
 
    final void method1619(int var1) {
       try {
-         if(-1 != -1) {
-            player = (Player)null;
-         }
 
          this.anInt2139 = var1;
          this.aClass47_2142 = new Class47(this.anInt2139);

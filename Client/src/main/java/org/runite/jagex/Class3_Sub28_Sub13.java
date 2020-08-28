@@ -41,7 +41,7 @@ final class Class3_Sub28_Sub13 extends Node {
                   var7 = new Class3_Sub18(var2.getInt());
                }
 
-               this.aClass130_3663.method1779(1, (Class3) var7, (long) var6);
+               this.aClass130_3663.method1779((Class3) var7, (long) var6);
             }
          }
 
@@ -67,9 +67,6 @@ final class Class3_Sub28_Sub13 extends Node {
    final boolean method617(RSString var1) {
       try {
          if (null != this.aClass130_3663) {
-            if (8729 != 8729) {
-               this.method615(-97, (RSByteBuffer) null, (byte) -91);
-            }
 
             if (null == this.aClass130_3666) {
                this.method618();
@@ -91,15 +88,13 @@ final class Class3_Sub28_Sub13 extends Node {
    private void method618() {
       try {
          this.aClass130_3666 = new Class130(this.aClass130_3663.method1785(81));
-         Class3_Sub29 var2 = (Class3_Sub29)this.aClass130_3663.method1776(0 + 88);
-         if(0 == 0) {
-            while(var2 != null) {
-               Class3_Sub10 var3 = new Class3_Sub10(var2.aClass94_2586, (int)var2.aLong71);
-               this.aClass130_3666.method1779(1, var3, var2.aClass94_2586.method1538(61));
-               var2 = (Class3_Sub29)this.aClass130_3663.method1778(-99);
-            }
-
+         Class3_Sub29 var2 = (Class3_Sub29)this.aClass130_3663.method1776(88);
+         while(var2 != null) {
+            Class3_Sub10 var3 = new Class3_Sub10(var2.aClass94_2586, (int)var2.aLong71);
+            this.aClass130_3666.method1779(var3, var2.aClass94_2586.method1538(61));
+            var2 = (Class3_Sub29)this.aClass130_3663.method1778(-99);
          }
+
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ml.O(" + 0 + ')');
       }
@@ -135,10 +130,6 @@ final class Class3_Sub28_Sub13 extends Node {
                this.method622();
             }
 
-            if(-8143 != -8143) {
-               method619((byte)68, -100, (CacheIndex)null);
-            }
-
             Class3_Sub18 var3 = (Class3_Sub18)this.aClass130_3666.method1780((long)var2, 0);
             return var3 != null;
          }
@@ -154,7 +145,7 @@ final class Class3_Sub28_Sub13 extends Node {
 
          for(Class3_Sub18 var2 = (Class3_Sub18)this.aClass130_3663.method1776(123); null != var2; var2 = (Class3_Sub18)this.aClass130_3663.method1778(-88)) {
             Class3_Sub18 var4 = new Class3_Sub18((int)var2.aLong71);
-            this.aClass130_3666.method1779(1, var4, (long)var2.anInt2467);
+            this.aClass130_3666.method1779(var4, (long)var2.anInt2467);
          }
 
       } catch (RuntimeException var5) {
@@ -216,7 +207,7 @@ final class Class3_Sub28_Sub13 extends Node {
          while(true) {
             int var3 = var1.getByte((byte)-83);
             if(var3 == 0) {
-               var3 = 68 % ((-84 - -122) / 35);
+               var3 = 0;
                return;
             }
 

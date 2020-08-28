@@ -109,9 +109,9 @@ abstract class Class3_Sub13 extends Class3 {
       }
    }
 
-   final void method160(int var1, int var2, int var3) {
+   final void method160(int var1, int var2) {
       try {
-         if(var3 != 250) {
+         if(250 != 250) {
             this.aClass114_2382 = (Class114)null;
          }
 
@@ -123,7 +123,7 @@ abstract class Class3_Sub13 extends Class3 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "j.SA(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "j.SA(" + var1 + ',' + var2 + ',' + 250 + ')');
       }
    }
 
@@ -166,16 +166,13 @@ abstract class Class3_Sub13 extends Class3 {
          if(var0 == null) {
             return null;
          } else {
-            if(25208 != 25208) {
-               anInt2378 = 5;
-            }
 
             Class3_Sub28_Sub17_Sub1 var2 = new Class3_Sub28_Sub17_Sub1(var0, Class164.anIntArray2048, RSByteBuffer.anIntArray2591, Class140_Sub7.anIntArray2931, Class3_Sub13_Sub6.anIntArray3076, Class163_Sub1.aByteArrayArray2987);
             Class39.method1035((byte)126);
             return var2;
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "j.WA(" + (var0 != null?"{...}":"null") + ',' + 25208 + ')');
+         throw Class44.clientError(var3, "j.WA(" + "{...}" + ',' + 25208 + ')');
       }
    }
 
@@ -232,9 +229,6 @@ abstract class Class3_Sub13 extends Class3 {
          Class95.aClass3_Sub28_Sub16_1339 = null;
          Class3_Sub13_Sub7.aClass3_Sub28_Sub16_3099 = null;
          Class50.aClass3_Sub28_Sub16_824 = null;
-         if(-7878 != -7878) {
-            method164((byte)102, false, (RSString)null);
-         }
 
          Class108.aClass3_Sub28_Sub16_1457 = null;
          Class3_Sub26.aClass3_Sub28_Sub16_2560 = null;

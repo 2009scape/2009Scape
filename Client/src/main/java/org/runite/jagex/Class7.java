@@ -73,9 +73,6 @@ final class Class7 implements Interface4 {
          Class66.method1250(43, false);
          System.gc();
          Class117.method1719(25);
-         if((byte) -86 >= -80) {
-            anInt2166 = -89;
-         }
 
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "af.D(" + (byte) -86 + ')');

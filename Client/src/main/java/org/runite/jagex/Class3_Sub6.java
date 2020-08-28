@@ -32,7 +32,7 @@ final class Class3_Sub6 extends Class3 {
             return var2;
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "ea.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "ea.B(" + "{...}" + ',' + var1 + ')');
       }
    }
 

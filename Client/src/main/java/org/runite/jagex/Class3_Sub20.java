@@ -33,7 +33,7 @@ final class Class3_Sub20 extends Class3 {
 	         Class3_Sub13_Sub30.method313((byte)55);
 	         Class3_Sub28_Sub21.aClass47_3801.method1101();
 	         Class100.aClass136_1413 = new Class136();
-	         ((Class102)Class51.anInterface2_838).method1618(0);
+	         ((Class102)Class51.anInterface2_838).method1618();
 	         Class68.anInt1032 = 0;
 	         Class68.aClass43Array1021 = new Class43[255];
 	         Class140_Sub1_Sub1.method1929();
@@ -94,7 +94,7 @@ final class Class3_Sub20 extends Class3 {
         // int var7 = 76 % ((-79 - var4) / 35);
          Class133.anInt1753 = 2;
       } catch (RuntimeException var8) {
-         throw Class44.clientError(var8, "lb.D(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var8, "lb.D(" + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 

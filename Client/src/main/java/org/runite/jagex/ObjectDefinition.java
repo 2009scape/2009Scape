@@ -314,9 +314,6 @@ final class ObjectDefinition {
          if(this.ChildrenIds == null) {
             return this.anInt1512 != -1 || this.anIntArray1539 != null;
          } else {
-            if(28933 != 28933) {
-               this.method1696(34, 54, (int[][])((int[][])null), 55, 80, (int[][])((int[][])null), true, (LDIndexedSprite)null, (byte)127, true, -38);
-            }
 
             for(int var2 = 0; this.ChildrenIds.length > var2; ++var2) {
                if(this.ChildrenIds[var2] != -1) {
@@ -370,9 +367,6 @@ final class ObjectDefinition {
 
    private void parseOpcode(RSByteBuffer buffer, int opcode) {
       try {
-         if(-80 != -80) {
-            this.anInt1522 = -122;
-         }
 
          int var4;
          int var5;
@@ -589,7 +583,7 @@ final class ObjectDefinition {
                   var8 = new Class3_Sub18(buffer.getInt());
                }
 
-               this.aClass130_1501.method1779(-80 ^ -79, (Class3) var8, (long) var7);
+               this.aClass130_1501.method1779((Class3) var8, (long) var7);
             }
          }
       } catch (RuntimeException var9) {
@@ -984,9 +978,6 @@ final class ObjectDefinition {
 
    final RSString method1698(RSString var1, int var3) {
       try {
-         if(-23085 != -23085) {
-            method1688(108, -11, 57);
-         }
 
          if(null == this.aClass130_1501) {
             return var1;

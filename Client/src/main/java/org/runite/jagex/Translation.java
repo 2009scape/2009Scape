@@ -27,9 +27,6 @@ public class Translation {
             TextCore.TextColorRed = RSString.createRSString("rouge:");
             TextCore.TextWave = RSString.createRSString("ondulation:");
             TextCore.LoadingConnecting = RSString.createRSString("Connexion au serveur de mise -9 jour en cours");
-            if((byte) 121 != 121) {
-                Class9.method848(-68);
-            }
             TextCore.HasFriendsAlready = RSString.createRSString(" est d-Bj-9 dans votre liste d(Wamis)3");
             TextCore.TextShake = RSString.createRSString("tremblement:");
             TextCore.LoadingTitleScreen = RSString.createRSString("Chargement de l(W-Bcran)2titre )2 ");

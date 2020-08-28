@@ -11,16 +11,16 @@ final class Class3_Sub28_Sub6 extends Node {
    static int anInt3600;
 
 
-   final void a(boolean var1) {
+   final void a() {
       try {
          this.aLong2569 = Class5.method830((byte)-55) - -500L | Long.MIN_VALUE & this.aLong2569;
-         if(!var1) {
+         if(!true) {
             f((int)-42);
          }
 
          Class81.aClass13_1139.method879(this, (byte)-127);
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "da.U(" + var1 + ')');
+         throw Class44.clientError(var3, "da.U(" + true + ')');
       }
    }
 
@@ -128,7 +128,7 @@ final class Class3_Sub28_Sub6 extends Node {
 
    final int f() {
       try {
-         int var2 = -88 / (((byte) 117 - 83) / 34);
+         int var2 = -88;
          return (int)this.aLong71;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "da.P(" + (byte) 117 + ')');
@@ -140,9 +140,6 @@ final class Class3_Sub28_Sub6 extends Node {
          Class2 var2 = (Class2)Class3_Sub13_Sub34.aClass93_3412.get((long)var0);
          if(var2 == null) {
             byte[] var3 = Class54.aClass153_878.getFile(34, var0);
-            if(0 != 0) {
-               aClass94_3595 = (RSString)null;
-            }
 
             var2 = new Class2();
             if(var3 != null) {
@@ -201,9 +198,6 @@ final class Class3_Sub28_Sub6 extends Node {
          var8.putShort(Class3_Sub26.anInt2554);
          var8.putByte((byte)-125, var0);
          var8.putByte((byte)-8, var3);
-         if(10603 != 10603) {
-            h((byte)-43);
-         }
          var8.putInt(-127, (int)(Math.random() * 9.9999999E7D));
          var8.putShort(var7);
          var8.putShort(var2);
@@ -227,10 +221,6 @@ final class Class3_Sub28_Sub6 extends Node {
          this.aLong2569 |= Long.MIN_VALUE;
          if(this.b() == 0) {
             Class126.aClass13_1666.method879(this, (byte)-128);
-         }
-
-         if((byte) 33 != 33) {
-            anInt3600 = 3;
          }
 
       } catch (RuntimeException var3) {

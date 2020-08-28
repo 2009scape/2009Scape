@@ -13,19 +13,19 @@ final class Class82 {
    static int anInt1152;
 
 
-   final int[] method1404(int var1, boolean var2, int var3, double var4, int var6, CacheIndex var7, Interface2 var8, boolean var9) {
+   final int[] method1404(int var1, boolean var2, int var3, double var4, CacheIndex var7, Interface2 var8, boolean var9) {
       try {
-         GameObject.method1859(var4, var6 ^ 359938);
+         GameObject.method1859(var4, 327680 ^ 359938);
          Class17.anInterface2_408 = var8;
          Class104.aClass153_2172 = var7;
          Class3_Sub13_Sub3.method180(-1, var1, var3);
 
          int var11;
          for(var11 = 0; var11 < this.aClass3_Sub13Array1147.length; ++var11) {
-            this.aClass3_Sub13Array1147[var11].method160(var1, var3, 250);
+            this.aClass3_Sub13Array1147[var11].method160(var1, var3);
          }
 
-         if(var6 != 327680) {
+         if(327680 != 327680) {
             method1405(68, 8, 20, -51, 31, 61, -34);
          }
 
@@ -109,7 +109,7 @@ final class Class82 {
 
          return var10;
       } catch (RuntimeException var23) {
-         throw Class44.clientError(var23, "lc.C(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ',' + (var8 != null?"{...}":"null") + ',' + var9 + ')');
+         throw Class44.clientError(var23, "lc.C(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + 327680 + ',' + (var7 != null?"{...}":"null") + ',' + (var8 != null?"{...}":"null") + ',' + var9 + ')');
       }
    }
 
@@ -483,110 +483,106 @@ final class Class82 {
    final byte[] method1407(int var1, int var2, boolean var3, Interface2 var4, CacheIndex var8) {
       try {
          byte[] var9 = new byte[4 * var2 * var1];
-         if(8839 == 8839) {
-            GameObject.method1859(0.7, 32258);
-            Class104.aClass153_2172 = var8;
-            Class17.anInterface2_408 = var4;
-            Class3_Sub13_Sub3.method180(-32, var1, var2);
+         GameObject.method1859(0.7, 32258);
+         Class104.aClass153_2172 = var8;
+         Class17.anInterface2_408 = var4;
+         Class3_Sub13_Sub3.method180(-32, var1, var2);
 
-            int var10;
-            for(var10 = 0; this.aClass3_Sub13Array1147.length > var10; ++var10) {
-               this.aClass3_Sub13Array1147[var10].method160(var1, var2, 8839 + -8589);
-            }
-
-            var10 = 0;
-
-            int var11;
-            for(var11 = 0; var11 < var1; ++var11) {
-               if(var3) {
-                  var10 = var11 << 2;
-               }
-
-               int[] var12;
-               int[] var13;
-               int[] var14;
-               int[] var15;
-               if(this.aClass3_Sub13_1145.aBoolean2375) {
-                  var15 = this.aClass3_Sub13_1145.method154(var11, (byte)-98);
-                  var12 = var15;
-                  var13 = var15;
-                  var14 = var15;
-               } else {
-                  int[][] var22 = this.aClass3_Sub13_1145.method166(-1, var11);
-                  var12 = var22[0];
-                  var13 = var22[1];
-                  var14 = var22[2];
-               }
-
-               if(this.aClass3_Sub13_1148.aBoolean2375) {
-                  var15 = this.aClass3_Sub13_1148.method154(var11, (byte)-103);
-               } else {
-                  var15 = this.aClass3_Sub13_1148.method166(-1, var11)[0];
-               }
-
-               for(int var16 = var2 - 1; var16 >= 0; --var16) {
-                  int var17 = var12[var16] >> 4;
-                  if(var17 > 255) {
-                     var17 = 255;
-                  }
-
-                  if(var17 < 0) {
-                     var17 = 0;
-                  }
-
-                  int var18 = var13[var16] >> 4;
-                  if(var18 > 255) {
-                     var18 = 255;
-                  }
-
-                  int var19 = var14[var16] >> 4;
-                  if(var19 > 255) {
-                     var19 = 255;
-                  }
-
-                  var17 = Class3_Sub30_Sub1.anIntArray3804[var17];
-                  if(var19 < 0) {
-                     var19 = 0;
-                  }
-
-                  if(var18 < 0) {
-                     var18 = 0;
-                  }
-
-                  var18 = Class3_Sub30_Sub1.anIntArray3804[var18];
-                  var19 = Class3_Sub30_Sub1.anIntArray3804[var19];
-                  int var20;
-                  if(var17 == 0 && var18 == 0 && var19 == 0) {
-                     var20 = 0;
-                  } else {
-                     var20 = var15[var16] >> 4;
-                     if(255 < var20) {
-                        var20 = 255;
-                     }
-
-                     if(var20 < 0) {
-                        var20 = 0;
-                     }
-                  }
-
-                  var9[var10++] = (byte)var17;
-                  var9[var10++] = (byte)var18;
-                  var9[var10++] = (byte)var19;
-                  var9[var10++] = (byte)var20;
-                  if(var3) {
-                     var10 += -4 + (var2 << 2);
-                  }
-               }
-            }
-
-            for(var11 = 0; this.aClass3_Sub13Array1147.length > var11; ++var11) {
-               this.aClass3_Sub13Array1147[var11].method161((byte)-45);
-            }
-
-            return var9;
-         } else {
-            return (byte[])null;
+         int var10;
+         for(var10 = 0; this.aClass3_Sub13Array1147.length > var10; ++var10) {
+            this.aClass3_Sub13Array1147[var10].method160(var1, var2);
          }
+
+         var10 = 0;
+
+         int var11;
+         for(var11 = 0; var11 < var1; ++var11) {
+            if(var3) {
+               var10 = var11 << 2;
+            }
+
+            int[] var12;
+            int[] var13;
+            int[] var14;
+            int[] var15;
+            if(this.aClass3_Sub13_1145.aBoolean2375) {
+               var15 = this.aClass3_Sub13_1145.method154(var11, (byte)-98);
+               var12 = var15;
+               var13 = var15;
+               var14 = var15;
+            } else {
+               int[][] var22 = this.aClass3_Sub13_1145.method166(-1, var11);
+               var12 = var22[0];
+               var13 = var22[1];
+               var14 = var22[2];
+            }
+
+            if(this.aClass3_Sub13_1148.aBoolean2375) {
+               var15 = this.aClass3_Sub13_1148.method154(var11, (byte)-103);
+            } else {
+               var15 = this.aClass3_Sub13_1148.method166(-1, var11)[0];
+            }
+
+            for(int var16 = var2 - 1; var16 >= 0; --var16) {
+               int var17 = var12[var16] >> 4;
+               if(var17 > 255) {
+                  var17 = 255;
+               }
+
+               if(var17 < 0) {
+                  var17 = 0;
+               }
+
+               int var18 = var13[var16] >> 4;
+               if(var18 > 255) {
+                  var18 = 255;
+               }
+
+               int var19 = var14[var16] >> 4;
+               if(var19 > 255) {
+                  var19 = 255;
+               }
+
+               var17 = Class3_Sub30_Sub1.anIntArray3804[var17];
+               if(var19 < 0) {
+                  var19 = 0;
+               }
+
+               if(var18 < 0) {
+                  var18 = 0;
+               }
+
+               var18 = Class3_Sub30_Sub1.anIntArray3804[var18];
+               var19 = Class3_Sub30_Sub1.anIntArray3804[var19];
+               int var20;
+               if(var17 == 0 && var18 == 0 && var19 == 0) {
+                  var20 = 0;
+               } else {
+                  var20 = var15[var16] >> 4;
+                  if(255 < var20) {
+                     var20 = 255;
+                  }
+
+                  if(var20 < 0) {
+                     var20 = 0;
+                  }
+               }
+
+               var9[var10++] = (byte)var17;
+               var9[var10++] = (byte)var18;
+               var9[var10++] = (byte)var19;
+               var9[var10++] = (byte)var20;
+               if(var3) {
+                  var10 += -4 + (var2 << 2);
+               }
+            }
+         }
+
+         for(var11 = 0; this.aClass3_Sub13Array1147.length > var11; ++var11) {
+            this.aClass3_Sub13Array1147[var11].method161((byte)-45);
+         }
+
+         return var9;
       } catch (RuntimeException var21) {
          throw Class44.clientError(var21, "lc.F(" + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + 0.7 + ',' + 8839 + ',' + (var8 != null?"{...}":"null") + ')');
       }
@@ -603,7 +599,7 @@ final class Class82 {
             }
          } else {
             for(var4 = 0; this.anIntArray1144.length > var4; ++var4) {
-               if(!var3.method2144(0, this.anIntArray1144[var4])) {
+               if(!var3.method2144(this.anIntArray1144[var4])) {
                   return false;
                }
             }

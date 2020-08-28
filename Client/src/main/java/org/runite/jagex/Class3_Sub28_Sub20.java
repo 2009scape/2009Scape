@@ -27,108 +27,104 @@ final class Class3_Sub28_Sub20 extends Node {
 
    final int[] method718(Interface2 var1, float var3, CacheIndex var4, boolean var5) {
       try {
-         if(0 == 0) {
-            if(null == this.anIntArray3793 || this.aFloat3782 != var3) {
-               if(!this.aClass82_3790.method1408(var1, var4)) {
-                  return null;
-               }
-
-               int var6 = !var5?128:64;
-               this.anIntArray3793 = this.aClass82_3790.method1404(var6, this.aBoolean3800, var6, (double)var3, 327680, var4, var1, true);
-               this.aFloat3782 = var3;
-               if(this.aBoolean3789) {
-                  int[] var7 = new int[var6];
-                  int[] var10 = new int[var6 * var6];
-                  int[] var8 = new int[var6];
-                  int[] var9 = new int[var6];
-                  int var14;
-                  int var13 = var14 = var6 * 1;
-                  int var19 = var6 * var6;
-                  int var18 = -1 + var6;
-                  int var17 = var6 - 1;
-
-                  int var11;
-                  int var20;
-                  for(var20 = 2; var20 >= 0; --var20) {
-                     for(var11 = var17; var11 >= 0; --var11) {
-                        --var14;
-                        int var12 = this.anIntArray3793[var14];
-                        var7[var11] += Class3_Sub28_Sub15.method633(var12, 16726965) >> 16;
-                        var8[var11] += Class3_Sub28_Sub15.method633('\uff72', var12) >> 8;
-                        var9[var11] += Class3_Sub28_Sub15.method633(var12, 255);
-                     }
-
-                     if(var14 == 0) {
-                        var14 = var19;
-                     }
-                  }
-
-                  int var25 = var19;
-
-                  for(int var31 = var18; var31 >= 0; --var31) {
-                     int var30 = 0;
-                     int var29 = 0;
-                     int var28 = 0;
-                     int var26 = 1;
-                     int var27 = 1;
-
-                     for(var11 = 2; var11 >= 0; --var11) {
-                        --var27;
-                        var30 += var8[var27];
-                        var29 += var9[var27];
-                        var28 += var7[var27];
-                        if(var27 == 0) {
-                           var27 = var6;
-                        }
-                     }
-
-                     for(var11 = var17; var11 >= 0; --var11) {
-                        --var26;
-                        int var21 = var30 / 9;
-                        int var22 = var29 / 9;
-                        --var27;
-                        var20 = var28 / 9;
-                        --var25;
-                        var10[var25] = Class3_Sub13_Sub29.bitwiseOr(var22, Class3_Sub13_Sub29.bitwiseOr(var20 << 16, var21 << 8));
-                        var28 += var7[var27] + -var7[var26];
-                        var29 += var9[var27] - var9[var26];
-                        var30 += -var8[var26] + var8[var27];
-                        if(var26 == 0) {
-                           var26 = var6;
-                        }
-
-                        if(var27 == 0) {
-                           var27 = var6;
-                        }
-                     }
-
-                     for(var11 = var17; var11 >= 0; --var11) {
-                        --var13;
-                        int var23 = this.anIntArray3793[var13];
-                        --var14;
-                        int var24 = this.anIntArray3793[var14];
-                        var7[var11] += (Class3_Sub28_Sub15.method633(var24, 16729186) >> 16) + -Class3_Sub28_Sub15.method633(var23 >> 16, 255);
-                        var8[var11] += (Class3_Sub28_Sub15.method633('\uff8b', var24) >> 8) + -Class3_Sub28_Sub15.method633(255, var23 >> 8);
-                        var9[var11] += -Class3_Sub28_Sub15.method633(var23, 255) + Class3_Sub28_Sub15.method633(255, var24);
-                     }
-
-                     if(0 == var13) {
-                        var13 = var19;
-                     }
-
-                     if(0 == var14) {
-                        var14 = var19;
-                     }
-                  }
-
-                  this.anIntArray3793 = var10;
-               }
+         if(null == this.anIntArray3793 || this.aFloat3782 != var3) {
+            if(!this.aClass82_3790.method1408(var1, var4)) {
+               return null;
             }
 
-            return this.anIntArray3793;
-         } else {
-            return (int[])null;
+            int var6 = !var5?128:64;
+            this.anIntArray3793 = this.aClass82_3790.method1404(var6, this.aBoolean3800, var6, (double)var3, var4, var1, true);
+            this.aFloat3782 = var3;
+            if(this.aBoolean3789) {
+               int[] var7 = new int[var6];
+               int[] var10 = new int[var6 * var6];
+               int[] var8 = new int[var6];
+               int[] var9 = new int[var6];
+               int var14;
+               int var13 = var14 = var6;
+               int var19 = var6 * var6;
+               int var18 = -1 + var6;
+               int var17 = var6 - 1;
+
+               int var11;
+               int var20;
+               for(var20 = 2; var20 >= 0; --var20) {
+                  for(var11 = var17; var11 >= 0; --var11) {
+                     --var14;
+                     int var12 = this.anIntArray3793[var14];
+                     var7[var11] += Class3_Sub28_Sub15.method633(var12, 16726965) >> 16;
+                     var8[var11] += Class3_Sub28_Sub15.method633('\uff72', var12) >> 8;
+                     var9[var11] += Class3_Sub28_Sub15.method633(var12, 255);
+                  }
+
+                  if(var14 == 0) {
+                     var14 = var19;
+                  }
+               }
+
+               int var25 = var19;
+
+               for(int var31 = var18; var31 >= 0; --var31) {
+                  int var30 = 0;
+                  int var29 = 0;
+                  int var28 = 0;
+                  int var26 = 1;
+                  int var27 = 1;
+
+                  for(var11 = 2; var11 >= 0; --var11) {
+                     --var27;
+                     var30 += var8[var27];
+                     var29 += var9[var27];
+                     var28 += var7[var27];
+                     if(var27 == 0) {
+                        var27 = var6;
+                     }
+                  }
+
+                  for(var11 = var17; var11 >= 0; --var11) {
+                     --var26;
+                     int var21 = var30 / 9;
+                     int var22 = var29 / 9;
+                     --var27;
+                     var20 = var28 / 9;
+                     --var25;
+                     var10[var25] = Class3_Sub13_Sub29.bitwiseOr(var22, Class3_Sub13_Sub29.bitwiseOr(var20 << 16, var21 << 8));
+                     var28 += var7[var27] + -var7[var26];
+                     var29 += var9[var27] - var9[var26];
+                     var30 += -var8[var26] + var8[var27];
+                     if(var26 == 0) {
+                        var26 = var6;
+                     }
+
+                     if(var27 == 0) {
+                        var27 = var6;
+                     }
+                  }
+
+                  for(var11 = var17; var11 >= 0; --var11) {
+                     --var13;
+                     int var23 = this.anIntArray3793[var13];
+                     --var14;
+                     int var24 = this.anIntArray3793[var14];
+                     var7[var11] += (Class3_Sub28_Sub15.method633(var24, 16729186) >> 16) + -Class3_Sub28_Sub15.method633(var23 >> 16, 255);
+                     var8[var11] += (Class3_Sub28_Sub15.method633('\uff8b', var24) >> 8) + -Class3_Sub28_Sub15.method633(255, var23 >> 8);
+                     var9[var11] += -Class3_Sub28_Sub15.method633(var23, 255) + Class3_Sub28_Sub15.method633(255, var24);
+                  }
+
+                  if(0 == var13) {
+                     var13 = var19;
+                  }
+
+                  if(0 == var14) {
+                     var14 = var19;
+                  }
+               }
+
+               this.anIntArray3793 = var10;
+            }
          }
+
+         return this.anIntArray3793;
       } catch (RuntimeException var32) {
          throw Class44.clientError(var32, "uh.D(" + (var1 != null?"{...}":"null") + ',' + 0 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ')');
       }
@@ -136,12 +132,10 @@ final class Class3_Sub28_Sub20 extends Node {
 
    final boolean method719(CacheIndex var1, Interface2 var2, boolean var4) {
       try {
-         if(579100487 != 579100487) {
-            return false;
-         } else if(this.aClass82_3790.method1408(var2, var1)) {
+         if(this.aClass82_3790.method1408(var2, var1)) {
             GL var5 = HDToolKit.gl;
             int var6 = !var4?128:64;
-            int var7 = Class27.method961(1536);
+            int var7 = Class27.method961();
             if((1 & var7) == 0) {
                if(this.anInt3795 == -1) {
                   int[] var8 = new int[1];
@@ -217,13 +211,10 @@ final class Class3_Sub28_Sub20 extends Node {
 
    final int[] method720(boolean var2, Interface2 var3, CacheIndex var4) {
       try {
-         if(false) {
-            this.method723(45, (byte)75);
-         }
 
          if(this.aClass82_3790.method1408(var3, var4)) {
             int var5 = !var2?128:64;
-            return this.aClass82_3790.method1404(var5, this.aBoolean3800, var5, 1.0D, 327680, var4, var3, false);
+            return this.aClass82_3790.method1404(var5, this.aBoolean3800, var5, 1.0D, var4, var3, false);
          } else {
             return null;
          }
@@ -296,9 +287,6 @@ final class Class3_Sub28_Sub20 extends Node {
    static void method724() {
       try {
          Class163_Sub2_Sub1.aClass93_4015.method1523((byte)-102);
-         if(-109 > -106) {
-            method725(71);
-         }
 
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "uh.B(" + -109 + ')');
@@ -375,9 +363,7 @@ final class Class3_Sub28_Sub20 extends Node {
 
                         while(var6 != var4) {
                            if(var6 <= var4) {
-                              if(var4 > var6) {
-                                 --var4;
-                              }
+                              --var4;
                            } else {
                               ++var4;
                            }
@@ -411,7 +397,7 @@ final class Class3_Sub28_Sub20 extends Node {
                         while(var7 != var5) {
                            if(var5 < var7) {
                               ++var5;
-                           } else if(var5 > var7) {
+                           } else {
                               --var5;
                            }
 

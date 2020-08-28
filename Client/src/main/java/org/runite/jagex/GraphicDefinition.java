@@ -25,11 +25,8 @@ final class GraphicDefinition {
 
 	final void parse(RSByteBuffer var1) {
 		try {
-			if((byte) -113 != -113) {
-				method967(88, -118, 75, -51, -96, -50, 45, 127);
-			}
 
-			while(true) {
+            while(true) {
 				int var3 = var1.getByte((byte)-68);
 				if(var3 == 0) {
 					return;
@@ -95,11 +92,7 @@ final class GraphicDefinition {
 				}
 			}
 
-			if(128 != 128) {
-				this.aShortArray545 = (short[])null;
-			}
-
-		} catch (RuntimeException var6) {
+        } catch (RuntimeException var6) {
 			throw Class44.clientError(var6, "eg.D(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + 128 + ')');
 		}
 	}
@@ -107,60 +100,56 @@ final class GraphicDefinition {
 	final Model method966(int var1, int var3, int var4) {
 		try {
 			Model var5 = (Model)Class27.aClass93_511.get((long)this.graphicId);
-			if((byte) -30 == -30) {
-				if(var5 == null) {
-					Model_Sub1 var6 = Model_Sub1.method2015(Class3_Sub28_Sub7_Sub1.aClass153_4048, this.anInt541);
-					if(null == var6) {
-						return null;
-					}
+            if(var5 == null) {
+                Model_Sub1 var6 = Model_Sub1.method2015(Class3_Sub28_Sub7_Sub1.aClass153_4048, this.anInt541);
+                if(null == var6) {
+                    return null;
+                }
 
-					int var7;
-					if(null != this.aShortArray533) {
-						for(var7 = 0; this.aShortArray533.length > var7; ++var7) {
-							var6.method2016(this.aShortArray533[var7], this.aShortArray545[var7]);
-						}
-					}
+                int var7;
+                if(null != this.aShortArray533) {
+                    for(var7 = 0; this.aShortArray533.length > var7; ++var7) {
+                        var6.method2016(this.aShortArray533[var7], this.aShortArray545[var7]);
+                    }
+                }
 
-					if(this.aShortArray534 != null) {
-						for(var7 = 0; var7 < this.aShortArray534.length; ++var7) {
-							var6.method1998(this.aShortArray534[var7], this.aShortArray535[var7]);
-						}
-					}
+                if(this.aShortArray534 != null) {
+                    for(var7 = 0; var7 < this.aShortArray534.length; ++var7) {
+                        var6.method1998(this.aShortArray534[var7], this.aShortArray535[var7]);
+                    }
+                }
 
-					var5 = var6.method2008(64 - -this.anInt538, this.anInt537 + 850, -30, -50, -30);
-					Class27.aClass93_511.put((byte)-96, var5, (long)this.graphicId);
-				}
+                var5 = var6.method2008(64 - -this.anInt538, this.anInt537 + 850, -30, -50, -30);
+                Class27.aClass93_511.put((byte)-96, var5, (long)this.graphicId);
+            }
 
-				Model var9;
-				if(this.anInt542 == -1 || var3 == -1) {
-					var9 = var5.method1882(true, true, true);
-				} else {
-					var9 = Client.getAnimationDefinition(this.anInt542).method2059(var1, var4, var3, var5);
-				}
+            Model var9;
+            if(this.anInt542 == -1 || var3 == -1) {
+                var9 = var5.method1882(true, true, true);
+            } else {
+                var9 = Client.getAnimationDefinition(this.anInt542).method2059(var1, var4, var3, var5);
+            }
 
-				if(128 != this.anInt530 || 128 != this.anInt540) {
-					var9.resize(this.anInt530, this.anInt540, this.anInt530);
-				}
+            if(128 != this.anInt530 || 128 != this.anInt540) {
+                var9.resize(this.anInt530, this.anInt540, this.anInt530);
+            }
 
-				if(this.anInt543 != 0) {
-					if(this.anInt543 == 90) {
-						var9.method1885();
-					}
+            if(this.anInt543 != 0) {
+                if(this.anInt543 == 90) {
+                    var9.method1885();
+                }
 
-					if(180 == this.anInt543) {
-						var9.method1874();
-					}
+                if(180 == this.anInt543) {
+                    var9.method1874();
+                }
 
-					if(270 == this.anInt543) {
-						var9.method1900();
-					}
-				}
+                if(270 == this.anInt543) {
+                    var9.method1900();
+                }
+            }
 
-				return var9;
-			} else {
-				return (Model)null;
-			}
-		} catch (RuntimeException var8) {
+            return var9;
+        } catch (RuntimeException var8) {
 			throw Class44.clientError(var8, "eg.C(" + var1 + ',' + (byte) -30 + ',' + var3 + ',' + var4 + ')');
 		}
 	}

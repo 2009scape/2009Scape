@@ -162,20 +162,18 @@ final class Class3_Sub13_Sub28 extends Class3_Sub13 {
       try {
          double var2 = Math.cos((double)((float)this.anInt3354 / 4096.0F));
          this.anIntArray3348[0] = (int)(4096.0D * var2 * Math.sin((double)((float)this.anInt3347 / 4096.0F)));
-         if((byte) 59 >= 46) {
-            this.anIntArray3348[1] = (int)(Math.cos((double)((float)this.anInt3347 / 4096.0F)) * var2 * 4096.0D);
-            this.anIntArray3348[2] = (int)(4096.0D * Math.sin((double)((float)this.anInt3354 / 4096.0F)));
-            int var6 = this.anIntArray3348[2] * this.anIntArray3348[2] >> 12;
-            int var5 = this.anIntArray3348[1] * this.anIntArray3348[1] >> 12;
-            int var4 = this.anIntArray3348[0] * this.anIntArray3348[0] >> 12;
-            int var7 = (int)(4096.0D * Math.sqrt((double)(var4 - (-var5 - var6) >> 12)));
-            if(var7 != 0) {
-               this.anIntArray3348[2] = (this.anIntArray3348[2] << 12) / var7;
-               this.anIntArray3348[0] = (this.anIntArray3348[0] << 12) / var7;
-               this.anIntArray3348[1] = (this.anIntArray3348[1] << 12) / var7;
-            }
+          this.anIntArray3348[1] = (int)(Math.cos((double)((float)this.anInt3347 / 4096.0F)) * var2 * 4096.0D);
+          this.anIntArray3348[2] = (int)(4096.0D * Math.sin((double)((float)this.anInt3354 / 4096.0F)));
+          int var6 = this.anIntArray3348[2] * this.anIntArray3348[2] >> 12;
+          int var5 = this.anIntArray3348[1] * this.anIntArray3348[1] >> 12;
+          int var4 = this.anIntArray3348[0] * this.anIntArray3348[0] >> 12;
+          int var7 = (int)(4096.0D * Math.sqrt((double)(var4 - (-var5 - var6) >> 12)));
+          if(var7 != 0) {
+             this.anIntArray3348[2] = (this.anIntArray3348[2] << 12) / var7;
+             this.anIntArray3348[0] = (this.anIntArray3348[0] << 12) / var7;
+             this.anIntArray3348[1] = (this.anIntArray3348[1] << 12) / var7;
+          }
 
-         }
       } catch (RuntimeException var8) {
          throw Class44.clientError(var8, "pk.B(" + (byte) 59 + ')');
       }

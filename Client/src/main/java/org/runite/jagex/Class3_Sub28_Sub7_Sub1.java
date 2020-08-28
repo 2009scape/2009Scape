@@ -16,10 +16,8 @@ final class Class3_Sub28_Sub7_Sub1 extends Class3_Sub28_Sub7 {
 
    static void method569(int var1) {
       try {
-         if(-82 < -78) {
-            Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 7, var1);
-            var2.a(true);
-         }
+         Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 7, var1);
+         var2.a();
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "he.C(" + -82 + ',' + var1 + ')');
       }
@@ -54,7 +52,7 @@ final class Class3_Sub28_Sub7_Sub1 extends Class3_Sub28_Sub7 {
 
    final boolean method568() {
       try {
-         return -22358 != -22358;
+         return false;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "he.A(" + -22358 + ')');
       }

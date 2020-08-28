@@ -57,10 +57,8 @@ final class Class67 implements Runnable {
 
    static void method1259(int var0) {
       try {
-         if((byte) 109 > 12) {
-            Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 12, var0);
-            var2.a(true);
-         }
+         Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 12, var0);
+         var2.a();
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "jd.A(" + var0 + ',' + (byte) 109 + ')');
       }
@@ -99,23 +97,21 @@ final class Class67 implements Runnable {
 
                      if(var6 != -1) {
                         AnimationDefinition var7 = Client.getAnimationDefinition(var6);
-                        if(null != var7) {
-                           for(var4.anInt267 += Class106.anInt1446; var7.duration[var4.anInt283] < var4.anInt267; Class20.method909(115, var4)) {
-                              var4.anInt267 -= var7.duration[var4.anInt283];
-                              ++var4.anInt283;
-                              if(var7.frames.length <= var4.anInt283) {
-                                 var4.anInt283 -= var7.anInt1865;
-                                 if(var4.anInt283 < 0 || var7.frames.length <= var4.anInt283) {
-                                    var4.anInt283 = 0;
-                                 }
+                        for(var4.anInt267 += Class106.anInt1446; var7.duration[var4.anInt283] < var4.anInt267; Class20.method909(115, var4)) {
+                           var4.anInt267 -= var7.duration[var4.anInt283];
+                           ++var4.anInt283;
+                           if(var7.frames.length <= var4.anInt283) {
+                              var4.anInt283 -= var7.anInt1865;
+                              if(var4.anInt283 < 0 || var7.frames.length <= var4.anInt283) {
+                                 var4.anInt283 = 0;
                               }
+                           }
 
-                              var4.anInt260 = var4.anInt283 + 1;
-                              if(var7.frames.length <= var4.anInt260) {
-                                 var4.anInt260 -= var7.anInt1865;
-                                 if(var4.anInt260 < 0 || var7.frames.length <= var4.anInt260) {
-                                    var4.anInt260 = -1;
-                                 }
+                           var4.anInt260 = var4.anInt283 + 1;
+                           if(var7.frames.length <= var4.anInt260) {
+                              var4.anInt260 -= var7.anInt1865;
+                              if(var4.anInt260 < 0 || var7.frames.length <= var4.anInt260) {
+                                 var4.anInt260 = -1;
                               }
                            }
                         }
@@ -167,9 +163,6 @@ final class Class67 implements Runnable {
 
          RSString var11 = new RSString();
          var11.length = var4;
-         if(2774 != 2774) {
-            method1262(83, 28);
-         }
 
          var11.byteArray = var10;
          return var11;

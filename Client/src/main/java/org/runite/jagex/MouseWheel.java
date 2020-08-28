@@ -14,22 +14,16 @@ final class MouseWheel extends Class146 implements MouseWheelListener {
 
 
    final void method2082(Component var2) {
-      if(false) {
-         this.mouseWheelMoved((MouseWheelEvent)null);
-      }
 
-      var2.removeMouseWheelListener(this);
+       var2.removeMouseWheelListener(this);
    }
 
    final synchronized int method2078() {
       int var2 = this.anInt2941;
       this.anInt2941 = 0;
       isMoved = false;
-      if(-1 != -1) {
-         this.anInt2941 = -53;
-      }
 
-      return var2;
+       return var2;
    }
 
    public final synchronized void mouseWheelMoved(MouseWheelEvent var1) {

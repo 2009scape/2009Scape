@@ -17,10 +17,8 @@ final class Class107 {
          int var3 = (int)(Math.random() * 21.0D) + -10;
          int var6 = -20 + (int)(41.0D * Math.random());
          Class158.anInt2015 = var6 + var5;
-         if((byte) -67 == -67) {
-            Class46.anInt740 = var4 + var6;
-            Class102.anInt2136 = var6 + var3;
-         }
+         Class46.anInt740 = var4 + var6;
+         Class102.anInt2136 = var6 + var3;
       } catch (RuntimeException var7) {
          throw Class44.clientError(var7, "og.F(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + (byte) -67 + ')');
       }
@@ -37,9 +35,6 @@ final class Class107 {
 
    static void method1647(int var1, int var2, Class140_Sub4 var3, int var4, int var5, int var6) {
       try {
-         if((byte) 122 != 122) {
-            method1648((CacheIndex)null, 7);
-         }
 
          Class118.method1724(var6, var2, var3.anInt2829, var5, var1, var3.anInt2819, (byte)-85, var4);
       } catch (RuntimeException var8) {
@@ -63,7 +58,7 @@ final class Class107 {
       try {
          if(var1 <= -65) {
             Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 10, var0);
-            var2.a(true);
+            var2.a();
          }
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "og.C(" + var0 + ',' + var1 + ')');
@@ -73,9 +68,6 @@ final class Class107 {
    static void method1650() {
       try {
          Class61.aClass93_939.method1523((byte)-113);
-         if(21 != 21) {
-            aClass11_1453 = (RSInterface)null;
-         }
 
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "og.G(" + 21 + ')');
@@ -95,10 +87,6 @@ final class Class107 {
             var3 = var2 % var1;
             var2 = var1;
             var1 = var3;
-         }
-
-         if(19067 != 19067) {
-            aClass94Array1454 = (RSString[])null;
          }
 
          return var2;

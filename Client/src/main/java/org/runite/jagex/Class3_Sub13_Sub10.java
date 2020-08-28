@@ -20,11 +20,8 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
             return var2;
          } else {
             int var4 = -var1 + 128;
-            if(18348 != 18348) {
-               method213(82, -103, 50, -59, (GameObject)null, 126L, (GameObject)null, (GameObject)null);
-            }
 
-            int var5 = var1 * ((-16711936 & var3) >>> 7) + var4 * ((-16711936 & var2) >>> 7) & -16711936;
+             int var5 = var1 * ((-16711936 & var3) >>> 7) + var4 * ((-16711936 & var2) >>> 7) & -16711936;
             int var6 = var4 * (16711935 & var2) - -((var3 & 16711935) * var1) & -16711936;
             return var5 - -(var6 >> 7);
          }
@@ -210,33 +207,15 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
 
          int var5;
          int var6;
-         for(var3 = 0; var3 < 20; ++var3) {
-            for(var4 = 1; var4 < -1 + var2; ++var4) {
-               for(var5 = 1; var5 < 127; ++var5) {
+         for(var3 = 0; true; ++var3) {
+            for(var4 = 1; true; ++var4) {
+               for(var5 = 1; true; ++var5) {
                   var6 = var5 - -(var4 << 7);
                   OutputStream_Sub1.anIntArray49[var6] = (Class161.anIntArray2026[128 + var6] + Class161.anIntArray2026[-1 + var6] + Class161.anIntArray2026[1 + var6] - -Class161.anIntArray2026[-128 + var6]) / 4;
                }
             }
-
-            int[] var10 = Class161.anIntArray2026;
-            Class161.anIntArray2026 = OutputStream_Sub1.anIntArray49;
-            OutputStream_Sub1.anIntArray49 = var10;
          }
 
-         if(var1 != null) {
-            var3 = 0;
-
-            for(var4 = 0; var1.anInt1468 > var4; ++var4) {
-               for(var5 = 0; var1.anInt1461 > var5; ++var5) {
-                  if(var1.aByteArray2674[var3++] != 0) {
-                     var6 = var1.anInt1470 + var5 + 16;
-                     int var7 = var1.anInt1464 + (var4 - -16);
-                     int var8 = var6 - -(var7 << 7);
-                     Class161.anIntArray2026[var8] = 0;
-                  }
-               }
-            }
-         }
 
       } catch (RuntimeException var9) {
          throw Class44.clientError(var9, "fh.F(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
@@ -298,10 +277,6 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
             if(null != Class117.worldList[var3]) {
                Class117.worldList[var3].anInt722 = var4;
             }
-         }
-
-         if(-14991 != -14991) {
-            COMMAND_NOCLIP = (RSString)null;
          }
 
       } catch (RuntimeException var5) {

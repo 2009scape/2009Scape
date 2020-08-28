@@ -79,11 +79,9 @@ final class Class3_Sub13_Sub5 extends Class3_Sub13 {
          if(var7 >= Class101.anInt1425 && Class3_Sub28_Sub18.anInt3765 >= var6 && var4 >= Class159.anInt2020 && var1 <= Class57.anInt902) {
             Class3_Sub13_Sub19.method262(var3, var4, var1, var2, var0, var6, var7);
          } else {
-            Class143.method2062(var6, var2, 4096 + -4185, var1, var0, var3, var4, var7);
+            Class143.method2062(var6, var2, var1, var0, var3, var4, var7);
          }
 
-         if(4096 == 4096) {
-         }
       } catch (RuntimeException var9) {
          throw Class44.clientError(var9, "bl.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + 4096 + ',' + var6 + ',' + var7 + ')');
       }

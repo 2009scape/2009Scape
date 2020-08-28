@@ -214,10 +214,6 @@ class Class155 {
                   var2 = this.aLong1972;
                }
 
-               if((byte) -34 != -34) {
-                  return;
-               }
-
                while(var2 > this.aLong1972 + 5000L) {
                   this.method2161();
                   this.aLong1972 += (long)(256000 / Class21.anInt443);
@@ -266,11 +262,8 @@ class Class155 {
       try {
          Class10 var2 = new Class10();
          var2.anInt149 = var1.getShort(1024 + -1023);
-         if(1024 != 1024) {
-            method2162((GameObject)null, 34, 103, -93);
-         }
 
-         var2.aClass3_Sub28_Sub4_151 = Class3_Sub29.method733(12345678, var2.anInt149);
+         var2.aClass3_Sub28_Sub4_151 = Class3_Sub29.method733(var2.anInt149);
          return var2;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "vh.M(" + 1024 + ',' + (var1 != null?"{...}":"null") + ')');
@@ -321,10 +314,6 @@ class Class155 {
          this.anInt1987 -= 256;
          if(0 > this.anInt1987) {
             this.anInt1987 = 0;
-         }
-
-         if(1 != 1) {
-            this.aLong1972 = -60L;
          }
 
          if(null != this.aClass3_Sub24_1973) {

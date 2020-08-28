@@ -43,9 +43,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
          var1.method516();
          boolean var6 = true;
          int[] var7 = null;
-         if(22050 > 0) {
-            var7 = new int[]{22050};
-         }
+         var7 = new int[]{22050};
 
          int var8 = 7 / ((-122 - -20) / 50);
 
@@ -59,7 +57,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
                   continue;
                }
 
-               this.aClass130_3508.method1779(1, var11, (long)var10);
+               this.aClass130_3508.method1779(var11, (long)var10);
             }
 
             if(!var11.method373(var7, var4, var9.aByteArray2289)) {
@@ -79,25 +77,23 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
 
    final synchronized void method471() {
       try {
-         if((byte) 53 == 53) {
-            for(Class3_Sub15 var2 = (Class3_Sub15)this.aClass130_3508.method1776(75); var2 != null; var2 = (Class3_Sub15)this.aClass130_3508.method1778(-117)) {
-               var2.method369();
-            }
-
+         for(Class3_Sub15 var2 = (Class3_Sub15)this.aClass130_3508.method1776(75); var2 != null; var2 = (Class3_Sub15)this.aClass130_3508.method1778(-117)) {
+            var2.method369();
          }
+
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "va.AB(" + (byte) 53 + ')');
       }
    }
 
-   private void method472(int var1, int var2) {
+   private void method472() {
       try {
-         int var4 = -63 % ((85 - 4) / 59);
-         this.anIntArray3501[var2] = var1;
-         this.anIntArray3506[var2] = Class3_Sub28_Sub15.method633(var1, -128);
-         this.method484(var1, var2);
+         int var4 = 0;
+         this.anIntArray3501[9] = 128;
+         this.anIntArray3506[9] = Class3_Sub28_Sub15.method633(128, -128);
+         this.method484(128, 9);
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "va.SA(" + var1 + ',' + var2 + ',' + 85 + ')');
+         throw Class44.clientError(var5, "va.SA(" + 128 + ',' + 9 + ',' + 85 + ')');
       }
    }
 
@@ -117,9 +113,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       try {
          Canvas_Sub1.aClass93_21.method1522(-125, 5);
          Class99.aClass93_1401.method1522(-126, 5);
-         if(2 != 2) {
-            aBooleanArray3503 = (boolean[])null;
-         }
 
          Class3_Sub28_Sub7_Sub1.aClass93_4051.method1522(2 ^ -127, 5);
          Class154.aClass93_1965.method1522(-128, 5);
@@ -142,10 +135,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
             this.aClass78_3505.method1381(var6);
          }
 
-         if((byte) -52 != -52) {
-            this.anIntArray3509 = (int[])null;
-         }
-
          this.anInt3525 = this.aClass78_3505.method1382();
          this.anInt3524 = this.aClass78_3505.anIntArray1114[this.anInt3525];
          this.aLong3523 = this.aClass78_3505.method1370(this.anInt3524);
@@ -157,9 +146,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
    private void method476(int var1, int var2) {
       try {
          this.anIntArray3499[var1] = var2;
-         if(0 != 0) {
-            this.method478(109, true, 108);
-         }
 
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "va.P(" + var1 + ',' + var2 + ',' + 0 + ')');
@@ -254,7 +240,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
                            final boolean bool_0 = MouseWheel.shiftDown;
                            if(var9.method99()) {
                               for(var12 = 4; var12 >= 3; --var12) {
-                                 if(null != inventoryOptions && null != inventoryOptions[var12]) {
+                                 if(null != inventoryOptions[var12]) {
                                     ++Class3_Sub28_Sub14.anInt3670;
                                     if (bool_0) {
                                        var12 = var10.getShiftClickActionIndex();
@@ -276,7 +262,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
                               Class54.method1177(Class99.anInt1403, (long)var10.itemId, (byte)-96, RenderAnimationDefinition.method903(new RSString[]{ColorCore.ItemBackpackColor, var10.name}, (byte)-66), var15, (short)22, TextCore.HasUse, var3.anInt279);
                            }
 
-                           if(var9.method99() && inventoryOptions != null) {
+                           if(var9.method99()) {
                               for(var12 = 2; 0 <= var12; --var12) {
                                  if(inventoryOptions[var12] != null) {
                                     ++Class81.anInt1141;
@@ -408,10 +394,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
 
    final synchronized void method479() {
       try {
-         this.method472(128, 9);
-         if((byte) 98 != 98) {
-            aBooleanArray3503 = (boolean[])null;
-         }
+         this.method472();
 
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "va.HA(" + (byte) 98 + ',' + 9 + ',' + 128 + ')');
@@ -490,16 +473,8 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
 
    private synchronized void method483() {
       try {
-         if(-1 < 0) {
-            for(int var4 = 0; 16 > var4; ++var4) {
-               this.anIntArray3516[var4] = 256;
-            }
-         } else {
-            this.anIntArray3516[-1] = 256;
-         }
-
-         if(-48 > -14) {
-            this.anIntArray3514 = (int[])null;
+         for(int var4 = 0; 16 > var4; ++var4) {
+            this.anIntArray3516[var4] = 256;
          }
 
       } catch (RuntimeException var5) {
@@ -509,16 +484,14 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
 
    private void method484(int var2, int var3) {
       try {
-         if(0 == 0) {
-            if(this.anIntArray3515[var3] != var2) {
-               this.anIntArray3515[var3] = var2;
+         if(this.anIntArray3515[var3] != var2) {
+            this.anIntArray3515[var3] = var2;
 
-               for(int var4 = 0; var4 < 128; ++var4) {
-                  this.aClass3_Sub22ArrayArray3513[var3][var4] = null;
-               }
+            for(int var4 = 0; var4 < 128; ++var4) {
+               this.aClass3_Sub22ArrayArray3513[var3][var4] = null;
             }
-
          }
+
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "va.FB(" + 0 + ',' + var2 + ',' + var3 + ')');
       }
@@ -570,7 +543,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
                var7.anInt2510 = -(32767 & var11.aShortArray2434[var4]) + (var4 << 8);
                var7.anInt2506 = -1;
                var7.anInt2511 = 0;
-               int var8 = -43 / ((71 - -41) / 61);
+               int var8 = -43;
                var7.anInt2519 = 0;
                var7.anInt2523 = 0;
                var7.anInt2501 = 0;
@@ -595,7 +568,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
                   this.aClass3_Sub22ArrayArray3513[var2][var7.anInt2517] = var7;
                }
 
-               this.aClass3_Sub24_Sub3_3527.aClass61_3489.method1215(true, var7);
+               this.aClass3_Sub24_Sub3_3527.aClass61_3489.method1215(var7);
                this.aClass3_Sub22ArrayArray3512[var2][var4] = var7;
             }
          }
@@ -619,184 +592,182 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
    private void method488(int var2) {
       try {
          int var3 = 240 & var2;
-         if((byte) 56 == 56) {
-            int var4;
-            int var5;
-            int var6;
-            if(var3 == 128) {
-               var4 = 15 & var2;
-               var6 = (8353073 & var2) >> 1531488560;
-               var5 = (32634 & var2) >> 438178376;
-               this.method493((byte)-95, var5, var6, var4);
-            } else if(144 == var3) {
-               var5 = 127 & var2 >> -173494616;
-               var4 = var2 & 15;
-               var6 = 127 & var2 >> 269474800;
-               if(var6 > 0) {
-                  this.method486(var6, var4, var5);
-               } else {
-                  this.method493((byte)-122, var5, 64, var4);
-               }
-
-            } else if(160 == var3) {
-               var4 = var2 & 15;
-               var5 = 127 & var2 >> -1419555256;
-               var6 = 127 & var2 >> 1257903824;
-               this.method495(var6, var5, (byte) 56 ^ 17363, var4);
-            } else if(var3 == 176) {
-               var5 = (32630 & var2) >> -966747416;
-               var4 = var2 & 15;
-               var6 = (8388489 & var2) >> -129860304;
-               if(var5 == 0) {
-                  this.anIntArray3506[var4] = (var6 << 613810062) + Class3_Sub28_Sub15.method633(-2080769, this.anIntArray3506[var4]);
-               }
-
-               if(var5 == 32) {
-                  this.anIntArray3506[var4] = Class3_Sub28_Sub15.method633(-16257, this.anIntArray3506[var4]) + (var6 << 2038805095);
-               }
-
-               if(var5 == 1) {
-                  this.anIntArray3502[var4] = (var6 << -958045273) + Class3_Sub28_Sub15.method633(this.anIntArray3502[var4], -16257);
-               }
-
-               if(33 == var5) {
-                  this.anIntArray3502[var4] = Class3_Sub28_Sub15.method633(-128, this.anIntArray3502[var4]) - -var6;
-               }
-
-               if(var5 == 5) {
-                  this.anIntArray3510[var4] = Class3_Sub28_Sub15.method633(this.anIntArray3510[var4], -16257) + (var6 << -219076089);
-               }
-
-               if(var5 == 37) {
-                  this.anIntArray3510[var4] = var6 + Class3_Sub28_Sub15.method633(this.anIntArray3510[var4], -128);
-               }
-
-               if(var5 == 7) {
-                  this.anIntArray3497[var4] = (var6 << -512659513) + Class3_Sub28_Sub15.method633(this.anIntArray3497[var4], -16257);
-               }
-
-               if(var5 == 39) {
-                  this.anIntArray3497[var4] = Class3_Sub28_Sub15.method633(this.anIntArray3497[var4], -128) + var6;
-               }
-
-               if(var5 == 10) {
-                  this.anIntArray3498[var4] = Class3_Sub28_Sub15.method633(-16257, this.anIntArray3498[var4]) - -(var6 << 1481099367);
-               }
-
-               if(var5 == 42) {
-                  this.anIntArray3498[var4] = var6 + Class3_Sub28_Sub15.method633(-128, this.anIntArray3498[var4]);
-               }
-
-               if(var5 == 11) {
-                  this.anIntArray3514[var4] = Class3_Sub28_Sub15.method633(this.anIntArray3514[var4], -16257) + (var6 << 1316353479);
-               }
-
-               if(var5 == 43) {
-                  this.anIntArray3514[var4] = var6 + Class3_Sub28_Sub15.method633(-128, this.anIntArray3514[var4]);
-               }
-
-               if(var5 == 64) {
-                  if(64 <= var6) {
-                     this.anIntArray3518[var4] = Class3_Sub13_Sub29.bitwiseOr(this.anIntArray3518[var4], 1);
-                  } else {
-                     this.anIntArray3518[var4] = Class3_Sub28_Sub15.method633(this.anIntArray3518[var4], -2);
-                  }
-               }
-
-               if(var5 == 65) {
-                  if(var6 < 64) {
-                     this.method502(var4, (byte) 56 ^ -57);
-                     this.anIntArray3518[var4] = Class3_Sub28_Sub15.method633(this.anIntArray3518[var4], -3);
-                  } else {
-                     this.anIntArray3518[var4] = Class3_Sub13_Sub29.bitwiseOr(this.anIntArray3518[var4], 2);
-                  }
-               }
-
-               if(var5 == 99) {
-                  this.anIntArray3500[var4] = (var6 << -789066041) + Class3_Sub28_Sub15.method633(this.anIntArray3500[var4], 127);
-               }
-
-               if(var5 == 98) {
-                  this.anIntArray3500[var4] = Class3_Sub28_Sub15.method633(this.anIntArray3500[var4], 16256) - -var6;
-               }
-
-               if(var5 == 101) {
-                  this.anIntArray3500[var4] = (var6 << 783662759) + Class3_Sub28_Sub15.method633(127, this.anIntArray3500[var4]) + 16384;
-               }
-
-               if(var5 == 100) {
-                  this.anIntArray3500[var4] = var6 + Class3_Sub28_Sub15.method633(16256, this.anIntArray3500[var4]) + 16384;
-               }
-
-               if(var5 == 120) {
-                  this.method481((byte)-50, var4);
-               }
-
-               if(var5 == 121) {
-                  this.method480(8388489, var4);
-               }
-
-               if(123 == var5) {
-                  this.method489(-32323, var4);
-               }
-
-               int var7;
-               if(6 == var5) {
-                  var7 = this.anIntArray3500[var4];
-                  if(var7 == 16384) {
-                     this.anIntArray3504[var4] = Class3_Sub28_Sub15.method633(this.anIntArray3504[var4], -16257) + (var6 << -1848595929);
-                  }
-               }
-
-               if(var5 == 38) {
-                  var7 = this.anIntArray3500[var4];
-                  if(var7 == 16384) {
-                     this.anIntArray3504[var4] = Class3_Sub28_Sub15.method633(this.anIntArray3504[var4], -128) + var6;
-                  }
-               }
-
-               if(var5 == 16) {
-                  this.anIntArray3519[var4] = Class3_Sub28_Sub15.method633(this.anIntArray3519[var4], -16257) - -(var6 << 1767361671);
-               }
-
-               if(var5 == 48) {
-                  this.anIntArray3519[var4] = Class3_Sub28_Sub15.method633(this.anIntArray3519[var4], -128) - -var6;
-               }
-
-               if(var5 == 81) {
-                  if(var6 >= 64) {
-                     this.anIntArray3518[var4] = Class3_Sub13_Sub29.bitwiseOr(this.anIntArray3518[var4], 4);
-                  } else {
-                     this.method497(var4, -102);
-                     this.anIntArray3518[var4] = Class3_Sub28_Sub15.method633(this.anIntArray3518[var4], -5);
-                  }
-               }
-
-               if(var5 == 17) {
-                  this.method482((byte)-117, var4, (var6 << -919548985) + (this.anIntArray3520[var4] & -16257));
-               }
-
-               if(var5 == 49) {
-                  this.method482((byte)-61, var4, (this.anIntArray3520[var4] & -128) + var6);
-               }
-
-            } else if (var3 == 192) {
-               var5 = var2 >> -1987010456 & 127;
-               var4 = 15 & var2;
-               this.method484(this.anIntArray3506[var4] - -var5, var4);
-            } else if (var3 == 208) {
-               var4 = 15 & var2;
-               var5 = (var2 & 32549) >> 42068712;
-               this.method478(var4, false, var5);
-            } else if (var3 == 224) {
-               var4 = 15 & var2;
-               var5 = (var2 >> 2059852361 & 16256) + ((32702 & var2) >> 1459602440);
-               this.method476(var4, var5);
+         int var4;
+         int var5;
+         int var6;
+         if(var3 == 128) {
+            var4 = 15 & var2;
+            var6 = (8353073 & var2) >> 1531488560;
+            var5 = (32634 & var2) >> 438178376;
+            this.method493((byte)-95, var5, var6, var4);
+         } else if(144 == var3) {
+            var5 = 127 & var2 >> -173494616;
+            var4 = var2 & 15;
+            var6 = 127 & var2 >> 269474800;
+            if(var6 > 0) {
+               this.method486(var6, var4, var5);
             } else {
-               var3 = var2 & 255;
-               if (255 == var3) {
-                  this.method500(true, (byte) -40);
+               this.method493((byte)-122, var5, 64, var4);
+            }
+
+         } else if(160 == var3) {
+            var4 = var2 & 15;
+            var5 = 127 & var2 >> -1419555256;
+            var6 = 127 & var2 >> 1257903824;
+            this.method495(var6, var5, var4);
+         } else if(var3 == 176) {
+            var5 = (32630 & var2) >> -966747416;
+            var4 = var2 & 15;
+            var6 = (8388489 & var2) >> -129860304;
+            if(var5 == 0) {
+               this.anIntArray3506[var4] = (var6 << 613810062) + Class3_Sub28_Sub15.method633(-2080769, this.anIntArray3506[var4]);
+            }
+
+            if(var5 == 32) {
+               this.anIntArray3506[var4] = Class3_Sub28_Sub15.method633(-16257, this.anIntArray3506[var4]) + (var6 << 2038805095);
+            }
+
+            if(var5 == 1) {
+               this.anIntArray3502[var4] = (var6 << -958045273) + Class3_Sub28_Sub15.method633(this.anIntArray3502[var4], -16257);
+            }
+
+            if(33 == var5) {
+               this.anIntArray3502[var4] = Class3_Sub28_Sub15.method633(-128, this.anIntArray3502[var4]) - -var6;
+            }
+
+            if(var5 == 5) {
+               this.anIntArray3510[var4] = Class3_Sub28_Sub15.method633(this.anIntArray3510[var4], -16257) + (var6 << -219076089);
+            }
+
+            if(var5 == 37) {
+               this.anIntArray3510[var4] = var6 + Class3_Sub28_Sub15.method633(this.anIntArray3510[var4], -128);
+            }
+
+            if(var5 == 7) {
+               this.anIntArray3497[var4] = (var6 << -512659513) + Class3_Sub28_Sub15.method633(this.anIntArray3497[var4], -16257);
+            }
+
+            if(var5 == 39) {
+               this.anIntArray3497[var4] = Class3_Sub28_Sub15.method633(this.anIntArray3497[var4], -128) + var6;
+            }
+
+            if(var5 == 10) {
+               this.anIntArray3498[var4] = Class3_Sub28_Sub15.method633(-16257, this.anIntArray3498[var4]) - -(var6 << 1481099367);
+            }
+
+            if(var5 == 42) {
+               this.anIntArray3498[var4] = var6 + Class3_Sub28_Sub15.method633(-128, this.anIntArray3498[var4]);
+            }
+
+            if(var5 == 11) {
+               this.anIntArray3514[var4] = Class3_Sub28_Sub15.method633(this.anIntArray3514[var4], -16257) + (var6 << 1316353479);
+            }
+
+            if(var5 == 43) {
+               this.anIntArray3514[var4] = var6 + Class3_Sub28_Sub15.method633(-128, this.anIntArray3514[var4]);
+            }
+
+            if(var5 == 64) {
+               if(64 <= var6) {
+                  this.anIntArray3518[var4] = Class3_Sub13_Sub29.bitwiseOr(this.anIntArray3518[var4], 1);
+               } else {
+                  this.anIntArray3518[var4] = Class3_Sub28_Sub15.method633(this.anIntArray3518[var4], -2);
                }
+            }
+
+            if(var5 == 65) {
+               if(var6 < 64) {
+                  this.method502(var4, (byte) 56 ^ -57);
+                  this.anIntArray3518[var4] = Class3_Sub28_Sub15.method633(this.anIntArray3518[var4], -3);
+               } else {
+                  this.anIntArray3518[var4] = Class3_Sub13_Sub29.bitwiseOr(this.anIntArray3518[var4], 2);
+               }
+            }
+
+            if(var5 == 99) {
+               this.anIntArray3500[var4] = (var6 << -789066041) + Class3_Sub28_Sub15.method633(this.anIntArray3500[var4], 127);
+            }
+
+            if(var5 == 98) {
+               this.anIntArray3500[var4] = Class3_Sub28_Sub15.method633(this.anIntArray3500[var4], 16256) - -var6;
+            }
+
+            if(var5 == 101) {
+               this.anIntArray3500[var4] = (var6 << 783662759) + Class3_Sub28_Sub15.method633(127, this.anIntArray3500[var4]) + 16384;
+            }
+
+            if(var5 == 100) {
+               this.anIntArray3500[var4] = var6 + Class3_Sub28_Sub15.method633(16256, this.anIntArray3500[var4]) + 16384;
+            }
+
+            if(var5 == 120) {
+               this.method481((byte)-50, var4);
+            }
+
+            if(var5 == 121) {
+               this.method480(8388489, var4);
+            }
+
+            if(123 == var5) {
+               this.method489(-32323, var4);
+            }
+
+            int var7;
+            if(6 == var5) {
+               var7 = this.anIntArray3500[var4];
+               if(var7 == 16384) {
+                  this.anIntArray3504[var4] = Class3_Sub28_Sub15.method633(this.anIntArray3504[var4], -16257) + (var6 << -1848595929);
+               }
+            }
+
+            if(var5 == 38) {
+               var7 = this.anIntArray3500[var4];
+               if(var7 == 16384) {
+                  this.anIntArray3504[var4] = Class3_Sub28_Sub15.method633(this.anIntArray3504[var4], -128) + var6;
+               }
+            }
+
+            if(var5 == 16) {
+               this.anIntArray3519[var4] = Class3_Sub28_Sub15.method633(this.anIntArray3519[var4], -16257) - -(var6 << 1767361671);
+            }
+
+            if(var5 == 48) {
+               this.anIntArray3519[var4] = Class3_Sub28_Sub15.method633(this.anIntArray3519[var4], -128) - -var6;
+            }
+
+            if(var5 == 81) {
+               if(var6 >= 64) {
+                  this.anIntArray3518[var4] = Class3_Sub13_Sub29.bitwiseOr(this.anIntArray3518[var4], 4);
+               } else {
+                  this.method497(var4, -102);
+                  this.anIntArray3518[var4] = Class3_Sub28_Sub15.method633(this.anIntArray3518[var4], -5);
+               }
+            }
+
+            if(var5 == 17) {
+               this.method482((byte)-117, var4, (var6 << -919548985) + (this.anIntArray3520[var4] & -16257));
+            }
+
+            if(var5 == 49) {
+               this.method482((byte)-61, var4, (this.anIntArray3520[var4] & -128) + var6);
+            }
+
+         } else if (var3 == 192) {
+            var5 = var2 >> -1987010456 & 127;
+            var4 = 15 & var2;
+            this.method484(this.anIntArray3506[var4] - -var5, var4);
+         } else if (var3 == 208) {
+            var4 = 15 & var2;
+            var5 = (var2 & 32549) >> 42068712;
+            this.method478(var4, false, var5);
+         } else if (var3 == 224) {
+            var4 = 15 & var2;
+            var5 = (var2 >> 2059852361 & 16256) + ((32702 & var2) >> 1459602440);
+            this.method476(var4, var5);
+         } else {
+            var3 = var2 & 255;
+            if (255 == var3) {
+               this.method500(true, (byte) -40);
             }
          }
       } catch (RuntimeException var8) {
@@ -825,9 +796,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
    final synchronized void method490(boolean var1, Class3_Sub27 var2) {
       try {
          this.method475(var1, var2, true);
-         if(17774 != 17774) {
-            this.method413((int[])null, -32, -26);
-         }
 
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "va.TA(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + 17774 + ')');
@@ -887,9 +855,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
             return true;
          } else {
             int var6 = var3.anInt2502;
-            if((byte) 14 != 14) {
-               this.anIntArray3497 = (int[])null;
-            }
 
             if(var6 > 0) {
                var6 -= (int)(0.5D + Math.pow(2.0D, (double)this.anIntArray3510[var3.anInt2514] * 4.921259842519685E-4D) * 16.0D);
@@ -1081,23 +1046,20 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private void method495(int var1, int var2, int var3, int var4) {
+   private void method495(int var1, int var2, int var4) {
       try {
-         if(var3 != 17387) {
+         if(17387 != 17387) {
             this.aClass3_Sub24_Sub3_3527 = (Class3_Sub24_Sub3)null;
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "va.GA(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "va.GA(" + var1 + ',' + var2 + ',' + 17387 + ',' + var4 + ')');
       }
    }
 
    private int method496(Class3_Sub22 var2) {
       try {
          int var3 = this.anIntArray3498[var2.anInt2514];
-         if(0 != 0) {
-            this.anIntArray3498 = (int[])null;
-         }
 
          return var3 < 8192 ?32 + var2.anInt2503 * var3 >> 746377926:16384 - ((128 + -var2.anInt2503) * (16384 + -var3) + 32 >> -1544786522);
       } catch (RuntimeException var4) {
@@ -1170,9 +1132,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
          }
 
          var5 = (int)(0.5D + (double)(256 * var2.aClass3_Sub12_Sub1_2509.anInt3034) * Math.pow(2.0D, (double)var3 * 3.255208333333333E-4D) / (double)Class21.anInt443);
-         if((byte) 85 != 85) {
-            this.method414();
-         }
 
          return var5 >= 1?var5:1;
       } catch (RuntimeException var9) {
@@ -1180,15 +1139,15 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   final int method499(boolean var1) {
+   final int method499() {
       try {
-         if(var1) {
+         if(false) {
             this.method500(true, (byte)91);
          }
 
          return this.anInt3521;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "va.IA(" + var1 + ')');
+         throw Class44.clientError(var3, "va.IA(" + false + ')');
       }
    }
 
@@ -1261,10 +1220,8 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
    static void method503(int var1) {
       try {
          Class8.anInt101 = var1;
-         if((byte) -53 == -53) {
-            Class3_Sub28_Sub8.anInt3611 = 20;
-            Class3_Sub28_Sub16.anInt3704 = 3;
-         }
+         Class3_Sub28_Sub8.anInt3611 = 20;
+         Class3_Sub28_Sub16.anInt3704 = 3;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "va.FA(" + (byte) -53 + ',' + var1 + ')');
       }
@@ -1305,9 +1262,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
    final synchronized void method506(int var2) {
       try {
          this.anInt3521 = var2;
-         if(128 != 128) {
-            this.method480(-80, 93);
-         }
 
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "va.LA(" + 128 + ',' + var2 + ')');
@@ -1317,10 +1271,8 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
    private synchronized void method507(boolean var1) {
       try {
          this.aClass78_3505.method1383();
-         if((byte) -68 == -68) {
-            this.aClass3_Sub27_3528 = null;
-            this.method500(var1, (byte)-40);
-         }
+         this.aClass3_Sub27_3528 = null;
+         this.method500(var1, (byte)-40);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "va.MA(" + var1 + ',' + (byte) -68 + ')');
       }
@@ -1328,9 +1280,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
 
    private int method508(Class3_Sub22 var2) {
       try {
-         if((byte) 36 != 36) {
-            this.anIntArray3501 = (int[])null;
-         }
 
          if(this.anIntArray3516[var2.anInt2514] == 0) {
             return 0;

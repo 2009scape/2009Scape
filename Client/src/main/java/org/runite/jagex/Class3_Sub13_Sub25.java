@@ -226,108 +226,106 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
 
    private void method291(int var1, Random var2, int var3, int var4, int var6, int[][] var7) {
       try {
-         if((byte) -69 == -69) {
-            int var8 = this.anInt3316 > 0 ?4096 + -Class100.method1603((byte)-128, this.anInt3316, var2):4096;
-            int var9 = this.anInt3299 * this.anInt3314 >> 12;
-            int var10 = this.anInt3314 - (0 < var9?Class100.method1603((byte)39, var9, var2):0);
-            if(Class113.anInt1559 <= var3) {
-               var3 -= Class113.anInt1559;
+         int var8 = this.anInt3316 > 0 ?4096 + -Class100.method1603((byte)-128, this.anInt3316, var2):4096;
+         int var9 = this.anInt3299 * this.anInt3314 >> 12;
+         int var10 = this.anInt3314 - (0 < var9?Class100.method1603((byte)39, var9, var2):0);
+         if(Class113.anInt1559 <= var3) {
+            var3 -= Class113.anInt1559;
+         }
+
+         int var11;
+         int var12;
+         if(0 < var10) {
+            if(0 >= var6 || var4 <= 0) {
+               return;
             }
 
-            int var11;
-            int var12;
-            if(0 < var10) {
-               if(0 >= var6 || var4 <= 0) {
-                  return;
-               }
+            var11 = var4 / 2;
+            var12 = var6 / 2;
+            int var13 = var11 < var10?var11:var10;
+            int var14 = var10 <= var12 ?var10:var12;
+            int var16 = var4 + -(2 * var13);
+            int var15 = var13 + var3;
 
-               var11 = var4 / 2;
-               var12 = var6 / 2;
-               int var13 = var11 < var10?var11:var10;
-               int var14 = var10 <= var12 ?var10:var12;
-               int var16 = var4 + -(2 * var13);
-               int var15 = var13 + var3;
-
-               for(int var17 = 0; var17 < var6; ++var17) {
-                  int[] var18 = var7[var1 + var17];
-                  int var19;
-                  int var21;
-                  int var20;
-                  if(var14 > var17) {
-                     var19 = var17 * var8 / var14;
-                     if(this.anInt3309 == 0) {
-                        for(var20 = 0; var20 < var13; ++var20) {
-                           var21 = var20 * var8 / var13;
-                           var18[Class3_Sub28_Sub15.method633(RenderAnimationDefinition.anInt396, var20 + var3)] = var18[Class3_Sub28_Sub15.method633(-1 + var4 + var3 + -var20, RenderAnimationDefinition.anInt396)] = var21 * var19 >> 12;
-                        }
-                     } else {
-                        for(var20 = 0; var20 < var13; ++var20) {
-                           var21 = var20 * var8 / var13;
-                           var18[Class3_Sub28_Sub15.method633(RenderAnimationDefinition.anInt396, var3 - -var20)] = var18[Class3_Sub28_Sub15.method633(RenderAnimationDefinition.anInt396, var4 + var3 + -var20 - 1)] = var21 >= var19 ?var19:var21;
-                        }
-                     }
-
-                     if(Class113.anInt1559 >= var16 + var15) {
-                        Class76.method1359(var18, var15, var16, var19);
-                     } else {
-                        var20 = -var15 + Class113.anInt1559;
-                        Class76.method1359(var18, var15, var20, var19);
-                        Class76.method1359(var18, 0, -var20 + var16, var19);
+            for(int var17 = 0; var17 < var6; ++var17) {
+               int[] var18 = var7[var1 + var17];
+               int var19;
+               int var21;
+               int var20;
+               if(var14 > var17) {
+                  var19 = var17 * var8 / var14;
+                  if(this.anInt3309 == 0) {
+                     for(var20 = 0; var20 < var13; ++var20) {
+                        var21 = var20 * var8 / var13;
+                        var18[Class3_Sub28_Sub15.method633(RenderAnimationDefinition.anInt396, var20 + var3)] = var18[Class3_Sub28_Sub15.method633(-1 + var4 + var3 + -var20, RenderAnimationDefinition.anInt396)] = var21 * var19 >> 12;
                      }
                   } else {
-                     var19 = var6 + -var17 - 1;
-                     if(var14 <= var19) {
-                        for(var20 = 0; var13 > var20; ++var20) {
-                           var18[Class3_Sub28_Sub15.method633(RenderAnimationDefinition.anInt396, var3 + var20)] = var18[Class3_Sub28_Sub15.method633(-1 + -var20 + var3 - -var4, RenderAnimationDefinition.anInt396)] = var8 * var20 / var13;
-                        }
+                     for(var20 = 0; var20 < var13; ++var20) {
+                        var21 = var20 * var8 / var13;
+                        var18[Class3_Sub28_Sub15.method633(RenderAnimationDefinition.anInt396, var3 - -var20)] = var18[Class3_Sub28_Sub15.method633(RenderAnimationDefinition.anInt396, var4 + var3 + -var20 - 1)] = var21 >= var19 ?var19:var21;
+                     }
+                  }
 
-                        if(Class113.anInt1559 < var15 - -var16) {
-                           var20 = -var15 + Class113.anInt1559;
-                           Class76.method1359(var18, var15, var20, var8);
-                           Class76.method1359(var18, 0, var16 - var20, var8);
-                        } else {
-                           Class76.method1359(var18, var15, var16, var8);
+                  if(Class113.anInt1559 >= var16 + var15) {
+                     Class76.method1359(var18, var15, var16, var19);
+                  } else {
+                     var20 = -var15 + Class113.anInt1559;
+                     Class76.method1359(var18, var15, var20, var19);
+                     Class76.method1359(var18, 0, -var20 + var16, var19);
+                  }
+               } else {
+                  var19 = var6 + -var17 - 1;
+                  if(var14 <= var19) {
+                     for(var20 = 0; var13 > var20; ++var20) {
+                        var18[Class3_Sub28_Sub15.method633(RenderAnimationDefinition.anInt396, var3 + var20)] = var18[Class3_Sub28_Sub15.method633(-1 + -var20 + var3 - -var4, RenderAnimationDefinition.anInt396)] = var8 * var20 / var13;
+                     }
+
+                     if(Class113.anInt1559 < var15 - -var16) {
+                        var20 = -var15 + Class113.anInt1559;
+                        Class76.method1359(var18, var15, var20, var8);
+                        Class76.method1359(var18, 0, var16 - var20, var8);
+                     } else {
+                        Class76.method1359(var18, var15, var16, var8);
+                     }
+                  } else {
+                     var20 = var19 * var8 / var14;
+                     int var22;
+                     if(this.anInt3309 == 0) {
+                        for(var21 = 0; var13 > var21; ++var21) {
+                           var22 = var8 * var21 / var13;
+                           var18[Class3_Sub28_Sub15.method633(RenderAnimationDefinition.anInt396, var3 - -var21)] = var18[Class3_Sub28_Sub15.method633(RenderAnimationDefinition.anInt396, -1 + var3 - (-var4 + var21))] = var22 * var20 >> 12;
                         }
                      } else {
-                        var20 = var19 * var8 / var14;
-                        int var22;
-                        if(this.anInt3309 == 0) {
-                           for(var21 = 0; var13 > var21; ++var21) {
-                              var22 = var8 * var21 / var13;
-                              var18[Class3_Sub28_Sub15.method633(RenderAnimationDefinition.anInt396, var3 - -var21)] = var18[Class3_Sub28_Sub15.method633(RenderAnimationDefinition.anInt396, -1 + var3 - (-var4 + var21))] = var22 * var20 >> 12;
-                           }
-                        } else {
-                           for(var21 = 0; var21 < var13; ++var21) {
-                              var22 = var21 * var8 / var13;
-                              var18[Class3_Sub28_Sub15.method633(var3 - -var21, RenderAnimationDefinition.anInt396)] = var18[Class3_Sub28_Sub15.method633(-1 + -var21 + var4 + var3, RenderAnimationDefinition.anInt396)] = var22 >= var20 ?var20:var22;
-                           }
+                        for(var21 = 0; var21 < var13; ++var21) {
+                           var22 = var21 * var8 / var13;
+                           var18[Class3_Sub28_Sub15.method633(var3 - -var21, RenderAnimationDefinition.anInt396)] = var18[Class3_Sub28_Sub15.method633(-1 + -var21 + var4 + var3, RenderAnimationDefinition.anInt396)] = var22 >= var20 ?var20:var22;
                         }
+                     }
 
-                        if(var16 + var15 > Class113.anInt1559) {
-                           var21 = Class113.anInt1559 + -var15;
-                           Class76.method1359(var18, var15, var21, var20);
-                           Class76.method1359(var18, 0, -var21 + var16, var20);
-                        } else {
-                           Class76.method1359(var18, var15, var16, var20);
-                        }
+                     if(var16 + var15 > Class113.anInt1559) {
+                        var21 = Class113.anInt1559 + -var15;
+                        Class76.method1359(var18, var15, var21, var20);
+                        Class76.method1359(var18, 0, -var21 + var16, var20);
+                     } else {
+                        Class76.method1359(var18, var15, var16, var20);
                      }
                   }
                }
-            } else if(var3 - -var4 <= Class113.anInt1559) {
-               for(var11 = 0; var11 < var6; ++var11) {
-                  Class76.method1359(var7[var1 - -var11], var3, var4, var8);
-               }
-            } else {
-               var11 = Class113.anInt1559 - var3;
-
-               for(var12 = 0; var6 > var12; ++var12) {
-                  int[] var24 = var7[var12 + var1];
-                  Class76.method1359(var24, var3, var11, var8);
-                  Class76.method1359(var24, 0, -var11 + var4, var8);
-               }
             }
+         } else if(var3 - -var4 <= Class113.anInt1559) {
+            for(var11 = 0; var11 < var6; ++var11) {
+               Class76.method1359(var7[var1 - -var11], var3, var4, var8);
+            }
+         } else {
+            var11 = Class113.anInt1559 - var3;
 
+            for(var12 = 0; var6 > var12; ++var12) {
+               int[] var24 = var7[var12 + var1];
+               Class76.method1359(var24, var3, var11, var8);
+               Class76.method1359(var24, 0, -var11 + var4, var8);
+            }
          }
+
       } catch (RuntimeException var23) {
          throw Class44.clientError(var23, "ol.B(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ',' + (byte) -69 + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ')');
       }

@@ -208,7 +208,7 @@ final class ISAACCipher {
          int var4 = Class3_Sub28_Sub1.anInt3537;
          int var3 = Class3_Sub28_Sub3.anInt3552;
          if(Class3_Sub13_Sub7.aClass3_Sub28_Sub16_3099 == null || null == Class108.aClass3_Sub28_Sub16_1457) {
-            if(Class140_Sub6.spritesCacheIndex.method2144(0, WorldListCountry.anInt502) && Class140_Sub6.spritesCacheIndex.method2144(0, Class99.anInt1400)) {
+            if(Class140_Sub6.spritesCacheIndex.method2144(WorldListCountry.anInt502) && Class140_Sub6.spritesCacheIndex.method2144(Class99.anInt1400)) {
                Class3_Sub13_Sub7.aClass3_Sub28_Sub16_3099 = Class3_Sub28_Sub7.method562(Class140_Sub6.spritesCacheIndex, WorldListCountry.anInt502);
                Class108.aClass3_Sub28_Sub16_1457 = Class3_Sub28_Sub7.method562(Class140_Sub6.spritesCacheIndex, Class99.anInt1400);
                if(HDToolKit.highDetail) {
@@ -266,7 +266,7 @@ final class ISAACCipher {
             }
          }
 
-         if((Class95.aClass3_Sub28_Sub16_1339 == null || Class50.aClass3_Sub28_Sub16_824 == null || null == Class3_Sub26.aClass3_Sub28_Sub16_2560) && Class140_Sub6.spritesCacheIndex.method2144(0, Class46.anInt739) && Class140_Sub6.spritesCacheIndex.method2144(0, Class79.anInt1126) && Class140_Sub6.spritesCacheIndex.method2144(0, Class140_Sub7.anInt2937)) {
+         if((Class95.aClass3_Sub28_Sub16_1339 == null || Class50.aClass3_Sub28_Sub16_824 == null || null == Class3_Sub26.aClass3_Sub28_Sub16_2560) && Class140_Sub6.spritesCacheIndex.method2144(Class46.anInt739) && Class140_Sub6.spritesCacheIndex.method2144(Class79.anInt1126) && Class140_Sub6.spritesCacheIndex.method2144(Class140_Sub7.anInt2937)) {
             Class95.aClass3_Sub28_Sub16_1339 = Class3_Sub28_Sub7.method562(Class140_Sub6.spritesCacheIndex, Class46.anInt739);
             Class50.aClass3_Sub28_Sub16_824 = Class3_Sub28_Sub7.method562(Class140_Sub6.spritesCacheIndex, Class79.anInt1126);
             Class3_Sub26.aClass3_Sub28_Sub16_2560 = Class3_Sub28_Sub7.method562(Class140_Sub6.spritesCacheIndex, Class140_Sub7.anInt2937);
@@ -337,9 +337,9 @@ final class ISAACCipher {
       }
    }
 
-   static int method1232(NPC var0, int var1) {
+   static int method1232(NPC var0) {
       try {
-         if(var1 == -1) {
+         if(-1 == -1) {
             NPCDefinition var2 = var0.definition;
             if(null != var2.childNPCs) {
                var2 = var2.method1471((byte)-108);
@@ -365,7 +365,7 @@ final class ISAACCipher {
             return 103;
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "ij.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var5, "ij.B(" + (var0 != null?"{...}":"null") + ',' + -1 + ')');
       }
    }
 

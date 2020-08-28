@@ -28,12 +28,12 @@ final class Class159 {
       try {
          if(Class3_Sub28_Sub11.aBoolean3641) {
             try {
-               return !((Boolean)Class3_Sub13_Sub17.aClass94_3209.method1577(255 + -2112, Class38.aClass87_665.anApplet1219)).booleanValue();
+               return !((Boolean)Class3_Sub13_Sub17.aClass94_3209.method1577(Class38.aClass87_665.anApplet1219)).booleanValue();
             } catch (Throwable var2) {
             }
          }
 
-         return 255 != 255?true:true;
+         return true;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "vl.B(" + 255 + ')');
       }
@@ -156,9 +156,6 @@ final class Class159 {
    static void method2196() {
       try {
          Class3_Sub13_Sub34.aClass93_3412.method1523((byte)-107);
-         if(128 != 128) {
-            anInt2024 = 111;
-         }
 
          Class3_Sub13_Sub31.aClass93_3369.method1523((byte)-110);
       } catch (RuntimeException var2) {

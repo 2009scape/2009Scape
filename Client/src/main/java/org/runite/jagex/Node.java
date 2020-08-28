@@ -18,9 +18,6 @@ class Node extends Class3 {
    static void method518(Player var0) {
       try {
          Class3_Sub9 var2 = (Class3_Sub9)Class3_Sub28_Sub7_Sub1.aClass130_4046.method1780(var0.displayName.toLong(-121), 0);
-         if(-110 >= -85) {
-            method523(40, -17, -52, -32, 9, -51, -85, -84, -19);
-         }
 
          if(var2 == null) {
             Class70.method1286(var0.anIntArray2755[0], (ObjectDefinition)null, 0, (NPC)null, var0.anIntArray2767[0], WorldListCountry.localPlane, var0);
@@ -67,13 +64,13 @@ class Node extends Class3 {
       }
    }
 
-   static NPCDefinition method522(int var0, int var1) {
+   static NPCDefinition method522(int var0) {
       try {
          NPCDefinition def = (NPCDefinition)Class3_Sub28_Sub7_Sub1.aClass93_4043.get((long)var0);
          if(null == def) {
             byte[] var3 = Class29.aClass153_557.getFile(Class38_Sub1.method1031(var0), Canvas_Sub1.method54(var0));
             def = new NPCDefinition();
-            if(var1 != 27112) {
+            if(27112 != 27112) {
                clanSize = -67;
             }
 
@@ -87,7 +84,7 @@ class Node extends Class3 {
          }
          return def;
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "rg.PA(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "rg.PA(" + var0 + ',' + 27112 + ')');
       }
    }
 
@@ -110,9 +107,6 @@ class Node extends Class3 {
             this.aClass3_Sub28_2578.aClass3_Sub28_2570 = this.aClass3_Sub28_2570;
             this.aClass3_Sub28_2578 = null;
             this.aClass3_Sub28_2570 = null;
-            if((byte) -107 != -107) {
-               this.aClass3_Sub28_2578 = (Node)null;
-            }
 
          }
       } catch (RuntimeException var3) {

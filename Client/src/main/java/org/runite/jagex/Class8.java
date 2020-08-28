@@ -29,9 +29,6 @@ final class Class8 {
    final boolean method837() {
       try {
          if(null == this.aClass3_Sub30_99) {
-            if(255 != 255) {
-               anInt104 = 119;
-            }
 
             if(this.aClass3_Sub28_Sub10_Sub2_100 == null) {
                if(this.aClass66_102.method1251((byte)89)) {
@@ -72,10 +69,6 @@ final class Class8 {
                }
             }
 
-            if((byte) -70 >= -56) {
-               this.aClass3_Sub28_Sub10_Sub2_100 = (Class3_Sub28_Sub10_Sub2)null;
-            }
-
          }
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "al.E(" + (byte) -70 + ')');
@@ -84,9 +77,6 @@ final class Class8 {
 
    private Class151_Sub1 method839(int var2, Class41 var3, Class41 var4) {
       try {
-         if(-1824885439 != -1824885439) {
-            getCacheIndex(true, false, false, -22);
-         }
 
          return this.method847(var4, var2, var3);
       } catch (RuntimeException var6) {
@@ -174,20 +164,16 @@ final class Class8 {
 
    static CacheIndex getCacheIndex(boolean var0, boolean var1, boolean var2, int var3) {
       try {
-         if(true) {
-            Class41 var5 = null;
-            if(null != Class101.aClass30_1422) {
-               var5 = new Class41(var3, Class101.aClass30_1422, Class163_Sub2.aClass30Array2998[var3], 1000000);
-            }
-
-            RSByteBuffer.aClass151_Sub1Array2601[var3] = Class151.aClass8_1936.method839(var3, Class86.aClass41_1186, var5);
-            if(var1) {
-               RSByteBuffer.aClass151_Sub1Array2601[var3].method2101();
-            }
-            return new CacheIndex(RSByteBuffer.aClass151_Sub1Array2601[var3], var0, var2);
-         } else {
-            return (CacheIndex)null;
+         Class41 var5 = null;
+         if(null != Class101.aClass30_1422) {
+            var5 = new Class41(var3, Class101.aClass30_1422, Class163_Sub2.aClass30Array2998[var3], 1000000);
          }
+
+         RSByteBuffer.aClass151_Sub1Array2601[var3] = Class151.aClass8_1936.method839(var3, Class86.aClass41_1186, var5);
+         if(var1) {
+            RSByteBuffer.aClass151_Sub1Array2601[var3].method2101();
+         }
+         return new CacheIndex(RSByteBuffer.aClass151_Sub1Array2601[var3], var0, var2);
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "al.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + true + ')');
       }
@@ -227,9 +213,6 @@ final class Class8 {
       try {
          if(var0 == !Class139.aBoolean1827) {
             Class139.aBoolean1827 = var0;
-            if(255 != 255) {
-               aClass94_106 = (RSString)null;
-            }
 
             Class104.method1626((byte)-126);
          }
@@ -263,13 +246,11 @@ final class Class8 {
             throw new RuntimeException();
          } else {
             this.aClass3_Sub30_99.index = 5 + var3 * 8;
-            if(-125 >= -1) {
-               return (Class151_Sub1)null;
-            } else if(this.aClass3_Sub30_99.buffer.length > this.aClass3_Sub30_99.index) {
+            if(this.aClass3_Sub30_99.buffer.length > this.aClass3_Sub30_99.index) {
                if(null == this.aClass151_Sub1Array107[var3]) {
                   int var6 = this.aClass3_Sub30_99.getInt();
                   int var7 = this.aClass3_Sub30_99.getInt();
-                  Class151_Sub1 var8 = new Class151_Sub1(var3, var1, var5, this.aClass66_102, this.aClass73_103, var6, var7, true);
+                  Class151_Sub1 var8 = new Class151_Sub1(var3, var1, var5, this.aClass66_102, this.aClass73_103, var6, var7);
                   this.aClass151_Sub1Array107[var3] = var8;
                   return var8;
                } else {

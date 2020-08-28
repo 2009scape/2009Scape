@@ -51,11 +51,8 @@ final class Class140_Sub6 extends GameObject {
    static void method2020(int var0, ObjectDefinition var1, int var3, int var4) {
       try {
          Class3_Sub9 var5 = (Class3_Sub9)Class3.aClass61_78.method1222();
-         if((byte) -73 != -73) {
-            method2019(true);
-         }
 
-         while(null != var5) {
+          while(null != var5) {
             if(var4 == var5.anInt2314 && 128 * var0 == var5.anInt2326 && var5.anInt2308 == 128 * var3 && var5.aClass111_2320.objectId == var1.objectId) {
                if(null != var5.aClass3_Sub24_Sub1_2312) {
                   Class3_Sub26.aClass3_Sub24_Sub2_2563.method461(var5.aClass3_Sub24_Sub1_2312);
@@ -95,18 +92,14 @@ final class Class140_Sub6 extends GameObject {
 
    private Model method2022() {
       try {
-         if(-126 >= -6) {
-            return (Model)null;
-         } else {
-            GraphicDefinition var2 = RenderAnimationDefinition.getGraphicDefinition((byte)42, this.anInt2915);
-            Model var3 = var2.method966(this.anInt2898, this.anInt2922, this.anInt2896);
-            if(null == var3) {
-               return null;
-            } else {
-               var3.method1896(this.anInt2917);
-               return var3;
-            }
-         }
+          GraphicDefinition var2 = RenderAnimationDefinition.getGraphicDefinition((byte)42, this.anInt2915);
+          Model var3 = var2.method966(this.anInt2898, this.anInt2922, this.anInt2896);
+          if(null == var3) {
+             return null;
+          } else {
+             var3.method1896(this.anInt2917);
+             return var3;
+          }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ra.G(" + -126 + ')');
       }
@@ -126,11 +119,8 @@ final class Class140_Sub6 extends GameObject {
 
          this.anInt2924 = 1024 + (int)(325.949D * Math.atan2(this.aDouble2895, this.aDouble2918)) & 2047;
          this.anInt2917 = 2047 & (int)(325.949D * Math.atan2(this.aDouble2913, this.aDouble2921));
-         if((byte) -59 != -59) {
-            this.animate(121, 74, -127, 12, -105, -18, 65, 117, 43L, 84, (Class127_Sub1)null);
-         }
 
-         if(this.aClass142_2923 != null) {
+          if(this.aClass142_2923 != null) {
             this.anInt2896 += var2;
 
             while(this.anInt2896 > this.aClass142_2923.duration[this.anInt2922]) {
@@ -203,11 +193,9 @@ final class Class140_Sub6 extends GameObject {
 
    static void method2025() {
       try {
-         if((byte) -62 <= -25) {
-            Class3_Sub28_Sub7_Sub1.aClass93_4043.method1522(-128, 5);
-            CS2Script.aClass93_2442.method1522(-126, 5);
-            Class154.aClass93_1964.method1522(-127, 5);
-         }
+          Class3_Sub28_Sub7_Sub1.aClass93_4043.method1522(-128, 5);
+          CS2Script.aClass93_2442.method1522(-126, 5);
+          Class154.aClass93_1964.method1522(-127, 5);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "ra.F(" + (byte) -62 + ',' + 5 + ')');
       }
@@ -223,12 +211,10 @@ final class Class140_Sub6 extends GameObject {
 
    static void method2026(int interfaceHash, int amount, int itemId) {
       try {
-         if((byte) 122 > 114) {
-            Class3_Sub28_Sub6 var4 = Class3_Sub24_Sub3.method466(4, 9, interfaceHash);
-            var4.g();
-            var4.anInt3598 = itemId;
-            var4.anInt3597 = amount;
-         }
+          Class3_Sub28_Sub6 var4 = Class3_Sub24_Sub3.method466(4, 9, interfaceHash);
+          var4.g();
+          var4.anInt3598 = itemId;
+          var4.anInt3597 = amount;
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "ra.I(" + (byte) 122 + ',' + interfaceHash + ',' + amount + ',' + itemId + ')');
       }
@@ -237,7 +223,7 @@ final class Class140_Sub6 extends GameObject {
    static Class3_Sub28_Sub16[] getSprites(int archiveId, CacheIndex var3) {
       try {
     	 // System.out.println(archiveId);
-         return !Class75_Sub4.method1351(var3, 0, archiveId, -30901)?null:((byte) 11 != 11?(Class3_Sub28_Sub16[])null:Class75_Sub3.method1347(-26802));
+         return !Class75_Sub4.method1351(var3, 0, archiveId, -30901)?null: Class75_Sub3.method1347(-26802);
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "ra.B(" + 0 + ',' + (byte) 11 + ',' + archiveId + ',' + (var3 != null?"{...}":"null") + ')');
       }

@@ -15,9 +15,7 @@ abstract class Class144 {
    static void method2065(CacheIndex var1, CacheIndex var2) {
       try {
          Class3_Sub13_Sub19.aClass153_3227 = var1;
-         if((byte) -125 <= -103) {
-            AnimationDefinition.aClass153_1852 = var2;
-         }
+         AnimationDefinition.aClass153_1852 = var2;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "u.D(" + (byte) -125 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
       }

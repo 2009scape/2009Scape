@@ -39,7 +39,7 @@ final class Class72 {
       try {
          if(!Class3_Sub28_Sub19.aBoolean3779 && Class44.anInt718 != 2) {
             try {
-               InputStream_Sub1.aClass94_38.method1577(-1857, Class126.aClient1671);
+               InputStream_Sub1.aClass94_38.method1577(Class126.aClient1671);
                if(false) {
                   method1298((byte)-25, 1);
                }
@@ -252,17 +252,13 @@ final class Class72 {
          int var2 = Class92.screenColorRgb();
          float var3 = (float)(255 & var2 >> 16) / 255.0F;
          MouseListeningClass.aFloatArray1919[3] = 1.0F;
-         if((byte) -50 == -50) {
-            float var4 = (float)(('\uff59' & var2) >> 8) / 255.0F;
-            float var6 = 0.58823526F;
-            float var5 = (float)(255 & var2) / 255.0F;
-            MouseListeningClass.aFloatArray1919[2] = Class151.aFloatArray1934[2] * var5 * var6 * var1;
-            MouseListeningClass.aFloatArray1919[0] = Class151.aFloatArray1934[0] * var3 * var6 * var1;
-            MouseListeningClass.aFloatArray1919[1] = var1 * var6 * var4 * Class151.aFloatArray1934[1];
-            return MouseListeningClass.aFloatArray1919;
-         } else {
-            return (float[])null;
-         }
+         float var4 = (float)(('\uff59' & var2) >> 8) / 255.0F;
+         float var6 = 0.58823526F;
+         float var5 = (float)(255 & var2) / 255.0F;
+         MouseListeningClass.aFloatArray1919[2] = Class151.aFloatArray1934[2] * var5 * var6 * var1;
+         MouseListeningClass.aFloatArray1919[0] = Class151.aFloatArray1934[0] * var3 * var6 * var1;
+         MouseListeningClass.aFloatArray1919[1] = var1 * var6 * var4 * Class151.aFloatArray1934[1];
+         return MouseListeningClass.aFloatArray1919;
       } catch (RuntimeException var7) {
          throw Class44.clientError(var7, "jj.A(" + (byte) -50 + ')');
       }

@@ -109,9 +109,6 @@ final class Class3_Sub13_Sub2 extends Class3_Sub13 {
    static void method174() {
       try {
          Class163_Sub2_Sub1.aClass93_4015.method1522(-127, 5);
-         if(4096 != 4096) {
-            method176(92);
-         }
 
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "aj.E(" + 4096 + ',' + 5 + ')');

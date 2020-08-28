@@ -77,11 +77,8 @@ final class Class101 {
    static void method1609() {
       try {
          Class2.anInterface5Array70 = null;
-         if(90 <= 49) {
-            method1608((byte)96);
-         }
 
-         Class88.method1455();
+          Class88.method1455();
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "nj.B(" + 90 + ')');
       }

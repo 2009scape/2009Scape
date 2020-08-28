@@ -20,7 +20,7 @@ final class Class31 {
       if(var2 == anInt582) {
          Class3_Sub18 var3 = new Class3_Sub18(var1);
          var3.aLong71 = (long)var0;
-         aClass61_587.method1215(true, var3);
+         aClass61_587.method1215(var3);
       }
    }
 
@@ -28,7 +28,7 @@ final class Class31 {
       if(var1 == anInt582) {
          Class3_Sub18 var2 = new Class3_Sub18();
          var2.aLong71 = (long)var0;
-         aClass61_588.method1215(true, var2);
+         aClass61_588.method1215(var2);
       }
    }
 
@@ -55,7 +55,7 @@ final class Class31 {
       if(var2 == anInt582) {
          Class3_Sub18 var3 = new Class3_Sub18(var1);
          var3.aLong71 = (long)var0;
-         aClass61_581.method1215(true, var3);
+         aClass61_581.method1215(var3);
       }
    }
 
@@ -129,7 +129,7 @@ final class Class31 {
       if(var2 == anInt582) {
          Class3_Sub18 var3 = new Class3_Sub18(var1);
          var3.aLong71 = (long)var0;
-         aClass61_586.method1215(true, var3);
+         aClass61_586.method1215(var3);
       }
    }
 

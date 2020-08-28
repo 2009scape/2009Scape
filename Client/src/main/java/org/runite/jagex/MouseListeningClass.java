@@ -40,7 +40,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    try
 	    {
 	      Class3_Sub4 var1 = (Class3_Sub4)Class3_Sub13_Sub6.aClass61_3075.method1222();
-	      for (int var2 = -37 / ((-21 - (byte) -82) / 48); var1 != null; var1 = (Class3_Sub4)Class3_Sub13_Sub6.aClass61_3075.method1221())
+	      for (int var2 = -37; var1 != null; var1 = (Class3_Sub4)Class3_Sub13_Sub6.aClass61_3075.method1221())
 	      {
 	        if (var1.anInt2259 > 0) {
 	          var1.anInt2259 -= 1;
@@ -109,8 +109,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    try
 	    {
 	      Class158_Sub1.aClass93_2982.method1523((byte)-105);
-	      if ((byte) 115 < 84) {}
-	    }
+		}
 	    catch (RuntimeException var2)
 	    {
 	      throw Class44.clientError(var2, "ug.D(" + (byte) 115 + ')');
@@ -203,8 +202,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	          Class3_Sub28_Sub7_Sub1.aClass149_4047 = null;
 	        }
 	      }
-	      if (8 != 8) {}
-	    }
+		}
 	    catch (RuntimeException var4)
 	    {
 	      throw Class44.clientError(var4, "ug.F(" + 8 + ')');
@@ -282,10 +280,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	      if ((GameObject.anIntArray1838 == null) || (GameObject.anIntArray1838.length < var0)) {
 	        GameObject.anIntArray1838 = new int[var0];
 	      }
-	      if (4 != 4) {
-	        anInt1926 = -75;
-	      }
-	    }
+		}
 	    catch (RuntimeException var3)
 	    {
 	      throw Class44.clientError(var3, "ug.E(" + var0 + ',' + 4 + ')');
@@ -314,7 +309,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    try
 	    {
 	      Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 9, var0);
-	      var2.a(true);
+	      var2.a();
 	    }
 	    catch (RuntimeException var3)
 	    {

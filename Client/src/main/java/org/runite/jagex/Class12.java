@@ -98,12 +98,8 @@ final class Class12 {
       try {
          int var2 = var1.length;
          byte[] var3 = new byte[var2];
-         if((byte) 62 == 62) {
-            Class76.method1357(var1, 0, var3, 0, var2);
-            return var3;
-         } else {
-            return (byte[])null;
-         }
+          Class76.method1357(var1, 0, var3, 0, var2);
+          return var3;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "bm.D(" + (byte) 62 + ',' + (var1 != null?"{...}":"null") + ')');
       }

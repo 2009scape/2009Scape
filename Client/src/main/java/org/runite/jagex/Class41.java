@@ -108,9 +108,7 @@ final class Class41 {
       try {
          Class30 var5 = this.aClass30_681;
          synchronized(var5) {
-            if((byte) -41 != -41) {
-               return true;
-            } else if(0 <= var2 && var2 <= this.anInt687) {
+            if(0 <= var2 && var2 <= this.anInt687) {
                boolean var6 = this.method1054((byte)87, var2, var1, var3, true);
                if(!var6) {
                   var6 = this.method1054((byte)87, var2, var1, var3, false);
@@ -142,7 +140,7 @@ final class Class41 {
                int var5 = ((255 & Class162.aByteArray2040[3]) << 16) - (-(Class162.aByteArray2040[4] << 8 & '\uff00') + -(255 & Class162.aByteArray2040[5]));
                int var6 = 24 / ((-4 - var2) / 40);
                int var4 = (Class162.aByteArray2040[2] & 255) + ('\uff00' & Class162.aByteArray2040[1] << 8) + (16711680 & Class162.aByteArray2040[0] << 16);
-               if(var4 < 0 || this.anInt687 < var4) {
+               if(this.anInt687 < var4) {
                   var10000 = null;
                   return (byte[])var10000;
                }
@@ -201,7 +199,7 @@ final class Class41 {
       }
    }
 
-   static RSString method1052(int var0, long var1) {
+   static RSString method1052(long var1) {
       try {
          if(var1 > 0 && var1 < 6582952005840035281L) {
             if(var1 % 37L == 0) {
@@ -214,7 +212,7 @@ final class Class41 {
                }
 
                byte[] var6 = new byte[var3];
-               if(var0 != -29664) {
+               if(-29664 != -29664) {
                   method1047(2, -55, -50, false, 52, false);
                }
 
@@ -234,7 +232,7 @@ final class Class41 {
             return null;
          }
       } catch (RuntimeException var9) {
-         throw Class44.clientError(var9, "ge.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var9, "ge.B(" + -29664 + ',' + var1 + ')');
       }
    }
 
@@ -268,7 +266,7 @@ final class Class41 {
                if(var5) {
                   if(this.aClass30_683.method976(var1 ^ 87) < (long)(6 + var3 * 6)) {
                      var10000 = false;
-                     return var10000;
+                     return false;
                   }
 
                   this.aClass30_683.method984(-116, (long)(6 * var3));
@@ -276,7 +274,7 @@ final class Class41 {
                   var7 = (16711680 & Class162.aByteArray2040[3] << 16) + ('\uff00' & Class162.aByteArray2040[4] << 8) + (Class162.aByteArray2040[5] & 255);
                   if(var7 <= 0 || (long) var7 > this.aClass30_681.method976(0) / 520L) {
                      var10000 = false;
-                     return var10000;
+                     return false;
                   }
                } else {
                   var7 = (int)((this.aClass30_681.method976(var1 + -87) - -519L) / 520L);
@@ -320,12 +318,12 @@ final class Class41 {
                            int var12 = (Class162.aByteArray2040[3] & 255) + (Class162.aByteArray2040[2] << 8 & '\uff00');
                            if(var11 != var3 || var12 != var9 || var13 != this.cacheIndex) {
                               var10000 = false;
-                              return var10000;
+                              return false;
                            }
 
                            if(var10 < 0 || this.aClass30_681.method976(0) / 520L < (long) var10) {
                               var10000 = false;
-                              return var10000;
+                              return false;
                            }
                         }
 
@@ -369,7 +367,7 @@ final class Class41 {
                   }
 
                   var10000 = true;
-                  return var10000;
+                  return true;
                }
             } catch (IOException var16) {
                return false;

@@ -48,7 +48,7 @@ final class RenderAnimationDefinition {
          }
          aByteArrayArrayArray383 = (byte[][][])null;
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "ck.A(" + var0 + ')');
+         throw Class44.clientError(var2, "ck.A(" + ')');
       }
    }
 
@@ -89,9 +89,6 @@ final class RenderAnimationDefinition {
 
    final void method899() {
       try {
-         if(96 <= 68) {
-            method900((Class140_Sub4)null, -23);
-         }
 
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "ck.B(" + 96 + ')');
@@ -104,7 +101,7 @@ final class RenderAnimationDefinition {
          AnimationDefinition var2;
          if(-1 != var0.anInt2764) {
             var2 = Client.getAnimationDefinition(var0.anInt2764);
-            if(null == var2 || null == var2.frames) {
+            if(null == var2.frames) {
                var0.anInt2764 = -1;
             } else {
                ++var0.anInt2802;
@@ -135,7 +132,7 @@ final class RenderAnimationDefinition {
                var0.anInt2842 = -1;
             } else {
                AnimationDefinition var3 = Client.getAnimationDefinition(var6);
-               if(var3 == null || var3.frames == null) {
+               if(var3.frames == null) {
                   var0.anInt2842 = -1;
                } else {
                   if(0 > var0.anInt2805) {
@@ -173,7 +170,7 @@ final class RenderAnimationDefinition {
          if(var1 == -11973) {
             if(var0.anInt2771 != -1 && var0.anInt2828 == 0) {
                var2 = Client.getAnimationDefinition(var0.anInt2771);
-               if(var2 == null || var2.frames == null) {
+               if(var2.frames == null) {
                   var0.anInt2771 = -1;
                } else {
                   ++var0.anInt2760;
@@ -222,7 +219,7 @@ final class RenderAnimationDefinition {
                if(null != var7) {
                   if(var7.anInt1900 <= 0) {
                      AnimationDefinition var4 = Client.getAnimationDefinition(var7.animationId);
-                     if(null == var4 || var4.frames == null) {
+                     if(var4.frames == null) {
                         var0.aClass145Array2809[var6] = null;
                      } else {
                         ++var7.anInt1897;
@@ -365,10 +362,6 @@ final class RenderAnimationDefinition {
             var3.getShort(1);
          } else if (var1 == 45) {
             var3.getShort(1);
-         }
-
-         if((byte) -106 != -106) {
-            this.parse(96, (RSByteBuffer)null);
          }
 
       } catch (RuntimeException var6) {

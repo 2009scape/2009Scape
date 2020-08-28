@@ -37,7 +37,7 @@ final class Class3_Sub13_Sub12 extends Class3_Sub13 {
       try {
          GameObject.aClass109Array1831[0].method1667(var3, var4);
          GameObject.aClass109Array1831[1].method1667(var3, -16 + var5 + var4);
-         int var8 = 44 % (((byte) 120 - 38) / 57);
+         int var8 = 0;
          int var6 = var5 * (var5 + -32) / var2;
          if(var6 < 8) {
             var6 = 8;
@@ -76,9 +76,6 @@ final class Class3_Sub13_Sub12 extends Class3_Sub13 {
    static void method225(RSInterface var1) {
       try {
          RSInterface var2 = Class168.method2273(var1, 123);
-         if(14 != 14) {
-            method227(true);
-         }
 
          int var3;
          int var4;
@@ -91,7 +88,7 @@ final class Class3_Sub13_Sub12 extends Class3_Sub13 {
          }
 
          Class3_Sub28_Sub11.method603(var4, 13987, var3, var1, false);
-         Class62.method1224(var1, 14 + 23716, var4, var3);
+         Class62.method1224(var1, var4, var3);
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "fn.Q(" + 14 + ',' + (var1 != null?"{...}":"null") + ')');
       }
@@ -157,28 +154,28 @@ final class Class3_Sub13_Sub12 extends Class3_Sub13 {
    static int method228(CacheIndex var0, CacheIndex var1, boolean var2) {
       try {
          int var3 = 0;
-         if(var0.method2144(0, Class96.anInt1352)) {
+         if(var0.method2144(Class96.anInt1352)) {
             ++var3;
          }
 
-         if(var0.method2144(0, Class75_Sub2.anInt2643)) {
+         if(var0.method2144(Class75_Sub2.anInt2643)) {
             ++var3;
          }
 
-         if(var0.method2144(0, Class3_Sub13_Sub11.anInt3132)) {
+         if(var0.method2144(Class3_Sub13_Sub11.anInt3132)) {
             ++var3;
          }
 
-         if(var1.method2144(0, Class96.anInt1352)) {
+         if(var1.method2144(Class96.anInt1352)) {
             ++var3;
          }
 
 
-         if(var1.method2144(0, Class75_Sub2.anInt2643)) {
+         if(var1.method2144(Class75_Sub2.anInt2643)) {
             ++var3;
          }
 
-         if(var1.method2144(0, Class3_Sub13_Sub11.anInt3132)) {
+         if(var1.method2144(Class3_Sub13_Sub11.anInt3132)) {
             ++var3;
          }
 

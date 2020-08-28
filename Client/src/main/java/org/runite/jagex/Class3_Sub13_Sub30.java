@@ -64,13 +64,13 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
 
                   RSString levelEquals = Class158.anInt2014 != 1?TextCore.HasLevel:TextCore.HasRating;
                   if(playerUsername.COMBAT_LEVEL < playerUsername.combatLevel) {
-                     var5 = RenderAnimationDefinition.method903(new RSString[]{playerUsername.getName(0), var6 ? Class72.combatLevelColor(playerUsername.COMBAT_LEVEL, (byte)-73, Class102.player.COMBAT_LEVEL) : ColorCore.ContextColor , Class72.LEFT_PARENTHESES, levelEquals, Class72.method1298((byte)9, playerUsername.COMBAT_LEVEL), Class40.aClass94_673, Class72.method1298((byte)9, playerUsername.combatLevel + -playerUsername.COMBAT_LEVEL), Class3_Sub9.RIGHT_PARENTHESES}, (byte)-127);
+                     var5 = RenderAnimationDefinition.method903(new RSString[]{playerUsername.getName(), var6 ? Class72.combatLevelColor(playerUsername.COMBAT_LEVEL, (byte)-73, Class102.player.COMBAT_LEVEL) : ColorCore.ContextColor , Class72.LEFT_PARENTHESES, levelEquals, Class72.method1298((byte)9, playerUsername.COMBAT_LEVEL), Class40.aClass94_673, Class72.method1298((byte)9, playerUsername.combatLevel + -playerUsername.COMBAT_LEVEL), Class3_Sub9.RIGHT_PARENTHESES}, (byte)-127);
                   } else {
                 	 //here
-                     var5 = RenderAnimationDefinition.method903(new RSString[]{playerUsername.getName(0), var6 ? Class72.combatLevelColor(playerUsername.COMBAT_LEVEL, (byte)-128, Class102.player.COMBAT_LEVEL) : getProperColor(playerUsername.COMBAT_LEVEL, Class102.player.COMBAT_LEVEL), Class72.LEFT_PARENTHESES, levelEquals, Class72.method1298((byte)9, playerUsername.COMBAT_LEVEL), Class3_Sub9.RIGHT_PARENTHESES}, (byte)-70);
+                     var5 = RenderAnimationDefinition.method903(new RSString[]{playerUsername.getName(), var6 ? Class72.combatLevelColor(playerUsername.COMBAT_LEVEL, (byte)-128, Class102.player.COMBAT_LEVEL) : getProperColor(playerUsername.COMBAT_LEVEL, Class102.player.COMBAT_LEVEL), Class72.LEFT_PARENTHESES, levelEquals, Class72.method1298((byte)9, playerUsername.COMBAT_LEVEL), Class3_Sub9.RIGHT_PARENTHESES}, (byte)-70);
                   }
                } else {
-                  var5 = RenderAnimationDefinition.method903(new RSString[]{playerUsername.getName(0), Class72.LEFT_PARENTHESES, TextCore.HasSkill, Class72.method1298((byte)9, playerUsername.anInt3974), Class3_Sub9.RIGHT_PARENTHESES}, (byte)-119);
+                  var5 = RenderAnimationDefinition.method903(new RSString[]{playerUsername.getName(), Class72.LEFT_PARENTHESES, TextCore.HasSkill, Class72.method1298((byte)9, playerUsername.anInt3974), Class3_Sub9.RIGHT_PARENTHESES}, (byte)-119);
                }
 
                int var12;
@@ -161,7 +161,7 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
          Class3_Sub10.method142();
          Class80.aClass93_1135.method1524();
          if(!HDToolKit.highDetail) {
-            ((Class102)Class51.anInterface2_838).method1618(0);
+            ((Class102)Class51.anInterface2_838).method1618();
          }
 
          Class56.aClass47_885.method1101();
@@ -232,51 +232,49 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
 
    static void parseObjectMapping(Class91[] var0, int var1, byte[] var2, int var3, int var4, int var5, int var6, boolean var7, int var8, int var9) {
       try {
-         if((byte) -54 == -54) {
-            int var12 = -1;
-            RSByteBuffer var11 = new RSByteBuffer(var2);
+         int var12 = -1;
+         RSByteBuffer var11 = new RSByteBuffer(var2);
+
+         while(true) {
+            int var13 = var11.method773((byte)-127);
+            if(var13 == 0) {
+               return;
+            }
+
+            var12 += var13;
+            int var14 = 0;
 
             while(true) {
-               int var13 = var11.method773((byte)-127);
-               if(var13 == 0) {
-                  return;
+               int var15 = var11.getSmart();
+               if(var15 == 0) {
+                  break;
                }
 
-               var12 += var13;
-               int var14 = 0;
-
-               while(true) {
-                  int var15 = var11.getSmart();
-                  if(var15 == 0) {
-                     break;
-                  }
-
-                  var14 += -1 + var15;
-                  int var16 = 63 & var14;
-                  int var17 = var14 >> 6 & 63;
-                  int var18 = var14 >> 12;
-                  int var19 = var11.getByte((byte)-51);
-                  int var20 = var19 >> 2;
-                  int var21 = 3 & var19;
-                  if(var18 == var3 && var8 <= var17 && var17 < 8 + var8 && var9 <= var16 && 8 + var9 > var16) {
-                     ObjectDefinition var22 = Class162.getObjectDefinition(4, var12);
-                     int var23 = Class3_Sub7.method121(var16 & 7, var4, var21, var22.SizeY, var22.SizeX, 7 & var17) + var5;
-                     int var24 = GameObject.method1863(var22.SizeX, var4, var22.SizeY, 7 & var17, var21, 7 & var16) + var6;
-                     if(var23 > 0 && var24 > 0 && var23 < 103 && var24 < 103) {
-                        Class91 var25 = null;
-                        if(!var7) {
-                           int var26 = var1;
-                           if(2 == (Class9.aByteArrayArrayArray113[1][var23][var24] & 2)) {
-                              var26 = var1 - 1;
-                           }
-
-                           if(var26 >= 0) {
-                              var25 = var0[var26];
-                           }
+               var14 += -1 + var15;
+               int var16 = 63 & var14;
+               int var17 = var14 >> 6 & 63;
+               int var18 = var14 >> 12;
+               int var19 = var11.getByte((byte)-51);
+               int var20 = var19 >> 2;
+               int var21 = 3 & var19;
+               if(var18 == var3 && var8 <= var17 && var17 < 8 + var8 && var9 <= var16 && 8 + var9 > var16) {
+                  ObjectDefinition var22 = Class162.getObjectDefinition(4, var12);
+                  int var23 = Class3_Sub7.method121(var16 & 7, var4, var21, var22.SizeY, var22.SizeX, 7 & var17) + var5;
+                  int var24 = GameObject.method1863(var22.SizeX, var4, var22.SizeY, 7 & var17, var21, 7 & var16) + var6;
+                  if(var23 > 0 && var24 > 0 && var23 < 103 && var24 < 103) {
+                     Class91 var25 = null;
+                     if(!var7) {
+                        int var26 = var1;
+                        if(2 == (Class9.aByteArrayArrayArray113[1][var23][var24] & 2)) {
+                           var26 = var1 - 1;
                         }
 
-                        Class110.method1683(var1, !var7, var1, var7, var25, var12, var20, var23, var24, 3 & var21 + var4);
+                        if(var26 >= 0) {
+                           var25 = var0[var26];
+                        }
                      }
+
+                     Class110.method1683(var1, !var7, var1, var7, var25, var12, var20, var23, var24, 3 & var21 + var4);
                   }
                }
             }

@@ -659,11 +659,8 @@ final class Class1 {
             }
 
             Class36.aClass3_Sub28_Sub16_637.method635(var0, var4);
-            if(19481 != 19481) {
-               method70((float[][])((float[][])null), (float[][])((float[][])null), (int[][])((int[][])null), 126, (float[][])((float[][])null), (byte[][])((byte[][])null), (int[][])((int[][])null), -1, (byte[][])((byte[][])null), (byte[][])((byte[][])null), (byte[][])((byte[][])null), (byte[][][])((byte[][][])null));
-            }
 
-            int var6 = var1 * Class60.anInt934 / Class108.anInt1460 + var4;
+             int var6 = var1 * Class60.anInt934 / Class108.anInt1460 + var4;
             int var8 = Class17.anInt410 * var1 / Class108.anInt1460;
             int var15 = var0 + var2 * Class60.anInt930 / Class23.anInt455;
             int var7 = var2 * Class49.anInt817 / Class23.anInt455;

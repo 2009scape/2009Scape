@@ -79,11 +79,8 @@ final class Class3_Sub13_Sub24 extends Class3_Sub13 {
 
    static void method289() {
       try {
-         if(false) {
-            aClass94_3295 = (RSString)null;
-         }
 
-         if(Class159.anInt2023 > 0) {
+          if(Class159.anInt2023 > 0) {
             Class167.method2269((byte)46);
          } else {
             Class163_Sub2_Sub1.aClass89_4012 = Class3_Sub15.aClass89_2429;

@@ -40,111 +40,109 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
    final void method186(int var2, int[] var3) {
       try {
          int var5 = this.anInt3056 * Class163_Sub3.anIntArray2999[var2];
-         if(true) {
-            int var4;
-            int var6;
-            int var8;
-            short var9;
-            int var10;
-            int var11;
-            int var12;
-            int var13;
-            int var14;
-            int var15;
-            int var17;
-            int var16;
-            int var18;
-            if(this.anInt3058 == 1) {
-               var9 = this.aShortArray3066[0];
+         int var4;
+         int var6;
+         int var8;
+         short var9;
+         int var10;
+         int var11;
+         int var12;
+         int var13;
+         int var14;
+         int var15;
+         int var17;
+         int var16;
+         int var18;
+         if(this.anInt3058 == 1) {
+            var9 = this.aShortArray3066[0];
+            var8 = this.aShortArray3063[0] << 12;
+            var11 = var5 * var8 >> 12;
+            var12 = this.anInt3060 * var8 >> 12;
+            var13 = var8 * this.anInt3056 >> 12;
+            var15 = var11 >> 12;
+            var17 = this.aByteArray3059[255 & var15] & 255;
+            var11 &= 4095;
+            var14 = Class1.anIntArray52[var11];
+            var16 = var15 - -1;
+            if(var16 >= var13) {
+               var16 = 0;
+            }
+
+            var18 = 255 & this.aByteArray3059[255 & var16];
+            if(this.aBoolean3065) {
+               for(var10 = 0; Class113.anInt1559 > var10; ++var10) {
+                  var4 = this.anInt3060 * Class102.anIntArray2125[var10];
+                  var6 = this.method192(var8 * var4 >> 12, var18, var17, var12, 121, var11, var14);
+                  var6 = var9 * var6 >> 12;
+                  var3[var10] = 2048 - -(var6 >> 1);
+               }
+            } else {
+               for(var10 = 0; var10 < Class113.anInt1559; ++var10) {
+                  var4 = this.anInt3060 * Class102.anIntArray2125[var10];
+                  var6 = this.method192(var8 * var4 >> 12, var18, var17, var12, 124, var11, var14);
+                  var3[var10] = var9 * var6 >> 12;
+               }
+            }
+         } else {
+            var9 = this.aShortArray3066[0];
+            if(var9 > 8 || -8 > var9) {
                var8 = this.aShortArray3063[0] << 12;
-               var11 = var5 * var8 >> 12;
-               var12 = this.anInt3060 * var8 >> 12;
                var13 = var8 * this.anInt3056 >> 12;
+               var12 = this.anInt3060 * var8 >> 12;
+               var11 = var5 * var8 >> 12;
                var15 = var11 >> 12;
-               var17 = this.aByteArray3059[255 & var15] & 255;
+               var16 = 1 + var15;
+               var17 = this.aByteArray3059[var15 & 255] & 255;
                var11 &= 4095;
                var14 = Class1.anIntArray52[var11];
-               var16 = var15 - -1;
-               if(var16 >= var13) {
+               if(var13 <= var16) {
                   var16 = 0;
                }
 
                var18 = 255 & this.aByteArray3059[255 & var16];
-               if(this.aBoolean3065) {
-                  for(var10 = 0; Class113.anInt1559 > var10; ++var10) {
-                     var4 = this.anInt3060 * Class102.anIntArray2125[var10];
-                     var6 = this.method192(var8 * var4 >> 12, var18, var17, var12, 121, var11, var14);
-                     var6 = var9 * var6 >> 12;
-                     var3[var10] = 2048 - -(var6 >> 1);
-                  }
-               } else {
-                  for(var10 = 0; var10 < Class113.anInt1559; ++var10) {
-                     var4 = this.anInt3060 * Class102.anIntArray2125[var10];
-                     var6 = this.method192(var8 * var4 >> 12, var18, var17, var12, 124, var11, var14);
-                     var3[var10] = var9 * var6 >> 12;
-                  }
+
+               for(var10 = 0; Class113.anInt1559 > var10; ++var10) {
+                  var4 = Class102.anIntArray2125[var10] * this.anInt3060;
+                  var6 = this.method192(var4 * var8 >> 12, var18, var17, var12, 122, var11, var14);
+                  var3[var10] = var6 * var9 >> 12;
                }
-            } else {
-               var9 = this.aShortArray3066[0];
-               if(var9 > 8 || -8 > var9) {
-                  var8 = this.aShortArray3063[0] << 12;
-                  var13 = var8 * this.anInt3056 >> 12;
-                  var12 = this.anInt3060 * var8 >> 12;
-                  var11 = var5 * var8 >> 12;
+            }
+
+            for(int var7 = 1; this.anInt3058 > var7; ++var7) {
+               var9 = this.aShortArray3066[var7];
+               if(8 < var9 || var9 < -8) {
+                  var8 = this.aShortArray3063[var7] << 12;
+                  var11 = var8 * var5 >> 12;
                   var15 = var11 >> 12;
-                  var16 = 1 + var15;
-                  var17 = this.aByteArray3059[var15 & 255] & 255;
+                  var17 = this.aByteArray3059[255 & var15] & 255;
+                  var12 = this.anInt3060 * var8 >> 12;
+                  var16 = var15 + 1;
                   var11 &= 4095;
                   var14 = Class1.anIntArray52[var11];
+                  var13 = this.anInt3056 * var8 >> 12;
                   if(var13 <= var16) {
                      var16 = 0;
                   }
 
-                  var18 = 255 & this.aByteArray3059[255 & var16];
-
-                  for(var10 = 0; Class113.anInt1559 > var10; ++var10) {
-                     var4 = Class102.anIntArray2125[var10] * this.anInt3060;
-                     var6 = this.method192(var4 * var8 >> 12, var18, var17, var12, 122, var11, var14);
-                     var3[var10] = var6 * var9 >> 12;
-                  }
-               }
-
-               for(int var7 = 1; this.anInt3058 > var7; ++var7) {
-                  var9 = this.aShortArray3066[var7];
-                  if(8 < var9 || var9 < -8) {
-                     var8 = this.aShortArray3063[var7] << 12;
-                     var11 = var8 * var5 >> 12;
-                     var15 = var11 >> 12;
-                     var17 = this.aByteArray3059[255 & var15] & 255;
-                     var12 = this.anInt3060 * var8 >> 12;
-                     var16 = var15 + 1;
-                     var11 &= 4095;
-                     var14 = Class1.anIntArray52[var11];
-                     var13 = this.anInt3056 * var8 >> 12;
-                     if(var13 <= var16) {
-                        var16 = 0;
+                  var18 = 255 & this.aByteArray3059[var16 & 255];
+                  if(this.aBoolean3065 && this.anInt3058 + -1 == var7) {
+                     for(var10 = 0; var10 < Class113.anInt1559; ++var10) {
+                        var4 = Class102.anIntArray2125[var10] * this.anInt3060;
+                        var6 = this.method192(var8 * var4 >> 12, var18, var17, var12, 120, var11, var14);
+                        var6 = (var9 * var6 >> 12) + var3[var10];
+                        var3[var10] = (var6 >> 1) + 2048;
                      }
-
-                     var18 = 255 & this.aByteArray3059[var16 & 255];
-                     if(this.aBoolean3065 && this.anInt3058 + -1 == var7) {
-                        for(var10 = 0; var10 < Class113.anInt1559; ++var10) {
-                           var4 = Class102.anIntArray2125[var10] * this.anInt3060;
-                           var6 = this.method192(var8 * var4 >> 12, var18, var17, var12, 120, var11, var14);
-                           var6 = (var9 * var6 >> 12) + var3[var10];
-                           var3[var10] = (var6 >> 1) + 2048;
-                        }
-                     } else {
-                        for(var10 = 0; Class113.anInt1559 > var10; ++var10) {
-                           var4 = Class102.anIntArray2125[var10] * this.anInt3060;
-                           var6 = this.method192(var4 * var8 >> 12, var18, var17, var12, 126, var11, var14);
-                           var3[var10] += var6 * var9 >> 12;
-                        }
+                  } else {
+                     for(var10 = 0; Class113.anInt1559 > var10; ++var10) {
+                        var4 = Class102.anIntArray2125[var10] * this.anInt3060;
+                        var6 = this.method192(var4 * var8 >> 12, var18, var17, var12, 126, var11, var14);
+                        var3[var10] += var6 * var9 >> 12;
                      }
                   }
                }
             }
-
          }
+
       } catch (RuntimeException var19) {
          throw Class44.clientError(var19, "bi.C(" + true + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
       }

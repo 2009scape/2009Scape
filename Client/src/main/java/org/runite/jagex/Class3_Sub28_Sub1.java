@@ -55,9 +55,6 @@ final class Class3_Sub28_Sub1 extends Node {
 
    private void method527(RSByteBuffer var1, int var3) {
       try {
-         if(0 != 0) {
-            this.method526(-91, -3);
-         }
 
          if(var3 == 1) {
             this.quickChatMenu = var1.getString();
@@ -79,7 +76,7 @@ final class Class3_Sub28_Sub1 extends Node {
                this.anIntArray3533 = new int[var4];
 
                for (var5 = 0; var5 < var4; ++var5) {
-                  this.anIntArray3540[var5] = var1.getShort(0 + 1);
+                  this.anIntArray3540[var5] = var1.getShort(1);
                   this.anIntArray3533[var5] = Class3_Sub13_Sub33.method322(var1.getByte());
                }
             } else if (var3 == 4) {
@@ -105,7 +102,7 @@ final class Class3_Sub28_Sub1 extends Node {
 
    final int method529(int var2) {
       try {
-         int var3 = 45 / (((byte) 50 - -30) / 49);
+         int var3 = 45;
          if (null != this.anIntArray3534) {
             for (int var4 = 0; this.anIntArray3534.length > var4; ++var4) {
                if (var2 == this.anIntArray3535[var4]) {
@@ -122,9 +119,6 @@ final class Class3_Sub28_Sub1 extends Node {
 
    final void method530(RSByteBuffer var1) {
       try {
-         if((byte) 116 <= 104) {
-            this.anIntArray3534 = (int[])null;
-         }
 
          while(true) {
             int var3 = var1.getByte((byte)-62);
@@ -159,23 +153,23 @@ final class Class3_Sub28_Sub1 extends Node {
 //            System.out.println(var1.toString());
          }
 
-         int var2 = -97 % (((byte) 94 - 55) / 32);
+         int var2 = 0;
          return var1;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "bc.F(" + (byte) 94 + ')');
       }
    }
 
-   static void method532(int var0, int var1) {
+   static void method532(int var0) {
       try {
-         if(var1 == -28236) {
+         if(-28236 == -28236) {
             Class3_Sub25 var2 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var0, 0);
             if(null != var2) {
                var2.method86(-1024);
             }
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "bc.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "bc.A(" + var0 + ',' + -28236 + ')');
       }
    }
 
@@ -191,10 +185,6 @@ final class Class3_Sub28_Sub1 extends Node {
 
             if(null == var0) {
                var0 = ColorCore.loadingbarcolor;
-            }
-
-            if(false) {
-               return;
             }
 
             try {

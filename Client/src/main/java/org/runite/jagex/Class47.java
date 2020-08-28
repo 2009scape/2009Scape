@@ -17,7 +17,7 @@ final class Class47 {
       try {
          if(Class3_Sub28_Sub11.aBoolean3641) {
             try {
-               Class8.aClass94_106.method1577(-1857, Class38.aClass87_665.anApplet1219);
+               Class8.aClass94_106.method1577(Class38.aClass87_665.anApplet1219);
                return true;
             } catch (Throwable var2) {
             }
@@ -36,40 +36,32 @@ final class Class47 {
    static Class3_Sub28_Sub5 method1089(CacheIndex cacheIndex0, CacheIndex var2, int frameId) {
       try {
          boolean var5 = true;
-         if((byte) 118 <= 71) {
-            return (Class3_Sub28_Sub5)null;
-         } else {
-            int[] var6 = cacheIndex0.getFileIds(frameId);
+         int[] var6 = cacheIndex0.getFileIds(frameId);
 
-            for(int var7 = 0; var7 < var6.length; ++var7) {
-               byte[] var8 = cacheIndex0.method2140(var6[var7], frameId);
-               if(var8 == null) {
+         for(int var7 = 0; var7 < var6.length; ++var7) {
+            byte[] var8 = cacheIndex0.method2140(var6[var7], frameId);
+            if(var8 == null) {
+               var5 = false;
+            } else {
+               int var9 = (255 & var8[0]) << 8 | var8[1] & 255;
+               byte[] var10;
+               var10 = var2.method2140(0, var9);
+
+               if(null == var10) {
+                  // System.out.println("Roar , " + var9);
                   var5 = false;
-               } else {
-                  int var9 = (255 & var8[0]) << 8 | var8[1] & 255;
-                  byte[] var10;
-                  if(false) {
-                     var10 = var2.method2140(var9, 0);
-                  } else {
-                     var10 = var2.method2140(0, var9);
-                  }
-
-                  if(null == var10) {
-                     // System.out.println("Roar , " + var9);
-                     var5 = false;
-                  }
                }
             }
-            if(var5) {
-               try {
-                  return new Class3_Sub28_Sub5(cacheIndex0, var2, frameId, false);
-               } catch (Exception var11) {
-            	   var11.printStackTrace();
-                  return null;
-               }
-            } else {
+         }
+         if(var5) {
+            try {
+               return new Class3_Sub28_Sub5(cacheIndex0, var2, frameId);
+            } catch (Exception var11) {
+               var11.printStackTrace();
                return null;
             }
+         } else {
+            return null;
          }
       } catch (RuntimeException var12) {
          throw Class44.clientError(var12, "gn.J(" + (cacheIndex0 != null?"{...}":"null") + ',' + false + ',' + (var2 != null?"{...}":"null") + ',' + (byte) 118 + ',' + frameId + ')');
@@ -114,7 +106,7 @@ final class Class47 {
             var7 = -Class82.anInt1152 + 64 * (255 & Class3_Sub24_Sub3.anIntArray3494[var5]);
             var8 = var3[var5];
             if(null != var8) {
-               Class58.method1194(-16385);
+               Class58.method1194();
                RSByteBuffer.method777(Class86.aClass91Array1182, var0, -48 + 8 * Class3_Sub28_Sub7.anInt3606, var7, var6, (Class3_Sub7.anInt2294 + -6) * 8, var8);
             }
          }
@@ -129,7 +121,7 @@ final class Class47 {
             var7 = -Class82.anInt1152 + 64 * (255 & Class3_Sub24_Sub3.anIntArray3494[var5]);
             var8 = var3[var5];
             if(var8 == null && Class3_Sub7.anInt2294 < 800) {
-               Class58.method1194(-16385);
+               Class58.method1194();
 
                for(int var9 = 0; var9 < var2; ++var9) {
                   Class12.method870(var9, (byte)102, var7, var6, 64, 64);
@@ -176,7 +168,7 @@ final class Class47 {
 
    final Class3 method1094() {
       try {
-         return 0 != 0?(Class3)null:this.aClass130_745.method1776(38);
+         return this.aClass130_745.method1776(38);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "gn.A(" + 0 + ')');
       }
@@ -833,15 +825,13 @@ final class Class47 {
                                     var23 = 0;
                                     if (var11.anInt192 != -1) {
                                        var42 = Class38.getItemDefinition(var11.anInt192, (byte) 76);
-                                       if (var42 != null) {
-                                          var42 = var42.method1106(var11.anInt271);
-                                          AnimationDefinition var52 = var21 == -1 ? null : Client.getAnimationDefinition(var21);
-                                          var38 = var42.method1110(100, var11.anInt260, var11.anInt267, var52, 1, var11.anInt283);
-                                          if (var38 == null) {
-                                             Class20.method909(116, var11);
-                                          } else {
-                                             var23 = -var38.method1871() / 2;
-                                          }
+                                       var42 = var42.method1106(var11.anInt271);
+                                       AnimationDefinition var52 = var21 == -1 ? null : Client.getAnimationDefinition(var21);
+                                       var38 = var42.method1110(100, var11.anInt260, var11.anInt267, var52, 1, var11.anInt283);
+                                       if (var38 == null) {
+                                          Class20.method909(116, var11);
+                                       } else {
+                                          var23 = -var38.method1871() / 2;
                                        }
                                     } else if (5 != var11.modelType) {
                                        if (var21 == -1) {
@@ -1117,7 +1107,7 @@ final class Class47 {
             --this.anInt749;
          }
 
-         this.aClass130_745.method1779(1, var1, var2);
+         this.aClass130_745.method1779(var1, var2);
          int var7 = -76 % ((var4 - -5) / 35);
          this.aClass13_747.method879(var1, (byte)-126);
       } catch (RuntimeException var6) {
@@ -1185,9 +1175,6 @@ final class Class47 {
 
    final Class3 method1099() {
       try {
-         if(-1 != -1) {
-            aClass93_743 = (Class93)null;
-         }
 
          return this.aClass130_745.method1778(-119);
       } catch (RuntimeException var3) {
@@ -1225,9 +1212,6 @@ final class Class47 {
          this.aClass13_747.method883();
          this.aClass130_745.method1773(-112);
          this.aClass3_Sub28_744 = new Node();
-         if(2 != 2) {
-            this.method1092(-36L, 52);
-         }
 
          this.anInt749 = this.anInt746;
       } catch (RuntimeException var3) {

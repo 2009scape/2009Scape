@@ -28,7 +28,7 @@ final class Class93 {
          }
 
          Class3_Sub28_Sub7_Sub1 var7 = new Class3_Sub28_Sub7_Sub1(var2);
-         this.aClass130_1332.method1779(1, var7, var3);
+         this.aClass130_1332.method1779(var7, var3);
          this.aClass13_1329.method879(var7, (byte)-19);
          var7.aLong2569 = 0L;
       } catch (RuntimeException var6) {
@@ -39,7 +39,7 @@ final class Class93 {
    static void method1516(int var0, int var1) {
       try {
          Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 3, var0);
-         var2.a(true);
+         var2.a();
          if(var1 < 87) {
             aClass94_1326 = (RSString)null;
          }
@@ -66,11 +66,8 @@ final class Class93 {
    static void method1517() {
 	      try {
 	         Class139.aFontMetrics1822 = null;
-	         if((byte) -118 != -118) {
-	            method1516(64, 82);
-	         }
 
-	         //MillisTimer.anImage2695 = null;
+             //MillisTimer.anImage2695 = null;
 	      } catch (RuntimeException var2) {
 	         throw Class44.clientError(var2, "n.J(" + (byte) -118 + ')');
 	      }
@@ -102,19 +99,15 @@ final class Class93 {
 
    final int method1520() {
       try {
-         if(-12623 == -12623) {
-            int var2 = 0;
+         int var2 = 0;
 
-            for(Class3_Sub28_Sub7 var3 = (Class3_Sub28_Sub7)this.aClass13_1329.method876((byte)70); var3 != null; var3 = (Class3_Sub28_Sub7)this.aClass13_1329.method878(-12623 + 12744)) {
-               if(!var3.method568()) {
-                  ++var2;
-               }
+         for(Class3_Sub28_Sub7 var3 = (Class3_Sub28_Sub7)this.aClass13_1329.method876((byte)70); var3 != null; var3 = (Class3_Sub28_Sub7)this.aClass13_1329.method878(-12623 + 12744)) {
+            if(!var3.method568()) {
+               ++var2;
             }
-
-            return var2;
-         } else {
-            return -85;
          }
+
+         return var2;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "n.D(" + -12623 + ')');
       }
@@ -140,7 +133,7 @@ final class Class93 {
                if(!var3.method568()) {
                   if(++var3.aLong2569 > (long)var2) {
                      Class3_Sub28_Sub7 var4 = Class3_Sub28_Sub20.aClass118_3794.method1725(var3);
-                     this.aClass130_1332.method1779(1, var4, var3.aLong71);
+                     this.aClass130_1332.method1779(var4, var3.aLong71);
                      Class45.method1084(var3, var4);
                      var3.method86(-1024);
                      var3.method524();
@@ -183,11 +176,9 @@ final class Class93 {
 
    final void method1524() {
       try {
-         if(3 == 3) {
-            this.aClass13_1329.method883();
-            this.aClass130_1332.method1773(114);
-            this.anInt1327 = this.anInt1331;
-         }
+         this.aClass13_1329.method883();
+         this.aClass130_1332.method1773(114);
+         this.anInt1327 = this.anInt1331;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "n.H(" + 3 + ')');
       }
@@ -213,9 +204,6 @@ final class Class93 {
          int var6 = Class40.method1040(Class57.anInt902, var3, Class159.anInt2020);
          int var7 = Class40.method1040(Class57.anInt902, var5, Class159.anInt2020);
          int var8 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var4, Class101.anInt1425);
-         if(3074 != 3074) {
-            method1516(75, -7);
-         }
 
          int var9 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var2, Class101.anInt1425);
 
@@ -231,9 +219,7 @@ final class Class93 {
    final Object get(long key) {
       try {
          Class3_Sub28_Sub7 var4 = (Class3_Sub28_Sub7)this.aClass130_1332.method1780(key, (byte) 121 + -121);
-         if((byte) 121 != 121) {
-            return (Object)null;
-         } else if(null == var4) {
+         if(null == var4) {
             return null;
          } else {
             Object var5 = var4.method567();
@@ -245,7 +231,7 @@ final class Class93 {
             } else {
                if(var4.method568()) {
                   Class3_Sub28_Sub7_Sub1 var6 = new Class3_Sub28_Sub7_Sub1(var5);
-                  this.aClass130_1332.method1779(1, var6, var4.aLong71);
+                  this.aClass130_1332.method1779(var6, var4.aLong71);
                   this.aClass13_1329.method879(var6, (byte)84);
                   var6.aLong2569 = 0L;
                   var4.method86(-1024);

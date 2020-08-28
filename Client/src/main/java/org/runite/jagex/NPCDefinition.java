@@ -71,10 +71,10 @@ final class NPCDefinition {
          int var3;
          if(0 <= var2 && -1 + this.childNPCs.length > var2 && this.childNPCs[var2] != -1) {
             var3 = -24 % ((-46 - var1) / 41);
-            return Node.method522(this.childNPCs[var2], 27112);
+            return Node.method522(this.childNPCs[var2]);
          } else {
             var3 = this.childNPCs[-1 + this.childNPCs.length];
-            return var3 == -1 ?null:Node.method522(var3, 27112);
+            return var3 == -1 ?null:Node.method522(var3);
          }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "me.G(" + var1 + ')');
@@ -83,9 +83,7 @@ final class NPCDefinition {
 
    final boolean method1472() {
       try {
-         if((byte) 74 != 74) {
-            return true;
-         } else if(null == this.childNPCs) {
+         if(null == this.childNPCs) {
             return true;
          } else {
             int var2 = -1;
@@ -122,16 +120,13 @@ final class NPCDefinition {
 
    final boolean method1474() {
       try {
-         if(-1 != -1) {
-            method1480(false, (RSString)null, -57);
-         }
 
          if(this.childNPCs == null) {
             return -1 != this.anInt1262 || this.anInt1293 != -1 || this.anInt1276 != -1;
          } else {
             for(int var2 = 0; var2 < this.childNPCs.length; ++var2) {
                if(this.childNPCs[var2] != -1) {
-                  NPCDefinition var3 = Node.method522(this.childNPCs[var2], 27112);
+                  NPCDefinition var3 = Node.method522(this.childNPCs[var2]);
                   if(var3.anInt1262 != -1 || var3.anInt1293 != -1 || var3.anInt1276 != -1) {
                      return true;
                   }
@@ -307,7 +302,7 @@ final class NPCDefinition {
                      var12 = true;
                      var19 = var1[var17].anInt1893;
                      var21 = def.frames[var19];
-                     Class3_Sub13_Sub1.aClass3_Sub28_Sub5Array3041[var17] = Class3_Sub9.method133(var21 >>> 16, 0);
+                     Class3_Sub13_Sub1.aClass3_Sub28_Sub5Array3041[var17] = Class3_Sub9.method133(var21 >>> 16);
                      var21 &= '\uffff';
                      Class58.anIntArray912[var17] = var21;
                      if(Class3_Sub13_Sub1.aClass3_Sub28_Sub5Array3041[var17] != null) {
@@ -320,7 +315,7 @@ final class NPCDefinition {
                         Class38.anIntArray664[var17] = def.duration[var19];
                         Node.anIntArray2574[var17] = var1[var17].anInt1897;
                         var22 = def.frames[var20];
-                        Class3_Sub13_Sub23_Sub1.aClass3_Sub28_Sub5Array4031[var17] = Class3_Sub9.method133(var22 >>> 16, 0);
+                        Class3_Sub13_Sub23_Sub1.aClass3_Sub28_Sub5Array4031[var17] = Class3_Sub9.method133(var22 >>> 16);
                         var22 &= '\uffff';
                         Class30.anIntArray574[var17] = var22;
                         if(null != Class3_Sub13_Sub23_Sub1.aClass3_Sub28_Sub5Array4031[var17]) {
@@ -354,7 +349,7 @@ final class NPCDefinition {
                   var17 = var10.frames[var7];
                   var22 = var17 >>> 16;
                   var17 &= '\uffff';
-                  var40 = Class3_Sub9.method133(var22, 0);
+                  var40 = Class3_Sub9.method133(var22);
                   if(null != var40) {
                      var35 |= var40.method561(var17, (byte)126);
                      var37 |= var40.method559(var17);
@@ -369,7 +364,7 @@ final class NPCDefinition {
                      if(var22 == var42) {
                         var43 = var40;
                      } else {
-                        var43 = Class3_Sub9.method133(var18 >>> 16, 0);
+                        var43 = Class3_Sub9.method133(var18 >>> 16);
                      }
 
                      if(var43 != null) {
@@ -392,7 +387,7 @@ final class NPCDefinition {
                   var22 = var8.frames[var4];
                   var27 = var22 >>> 16;
                   var22 &= '\uffff';
-                  var44 = Class3_Sub9.method133(var27, 0);
+                  var44 = Class3_Sub9.method133(var27);
                   if(var44 != null) {
                      var35 |= var44.method561(var22, (byte)124);
                      var37 |= var44.method559(var22);
@@ -407,7 +402,7 @@ final class NPCDefinition {
                      if(var27 == var28) {
                         var46 = var44;
                      } else {
-                        var46 = Class3_Sub9.method133(var42 >>> 16, 0);
+                        var46 = Class3_Sub9.method133(var42 >>> 16);
                      }
 
                      if(null != var46) {
@@ -491,9 +486,6 @@ final class NPCDefinition {
    static void method1479(int var0) {
       try {
          Class3_Sub13_Sub30.anInt3362 = -1;
-         if((byte) 56 < 5) {//@splinter
-            anIntArray1277 = (int[])null;
-         }
 
          if(var0 == 37) {
             NPC.aFloat3979 = 3.0F;
@@ -516,12 +508,12 @@ final class NPCDefinition {
    static void method1480(boolean var0, RSString var1, int var2) {
       try {
          short[] var3 = new short[16];
-         var1 = var1.method1534(-98);
+         var1 = var1.method1534();
          int var4 = 0;
 
          for(int var5 = 0; Class3_Sub13_Sub23.itemDefinitionSize > var5; ++var5) {
             ItemDefinition var6 = Class38.getItemDefinition(var5, (byte)93);
-            if((!var0 || var6.aBoolean807) && var6.anInt791 == -1 && -1 == var6.anInt762 && var6.anInt800 == 0 && var6.name.method1534(-98).indexOf(var1, 116) != -1) {
+            if((!var0 || var6.aBoolean807) && var6.anInt791 == -1 && -1 == var6.anInt762 && var6.anInt800 == 0 && var6.name.method1534().indexOf(var1, 116) != -1) {
                if(var4 >= 250) {
                   Class99.aShortArray1398 = null;
                   Class62.anInt952 = -1;
@@ -828,7 +820,7 @@ final class NPCDefinition {
                      var8 = new Class3_Sub18(buffer.getInt());
                   }
 
-                  this.aClass130_1272.method1779(1, (Class3) var8, (long) var10);
+                  this.aClass130_1272.method1779((Class3) var8, (long) var10);
                }
             }
          }
@@ -875,9 +867,6 @@ final class NPCDefinition {
 
    static int method1484(int var1) {
       try {
-         if(64835055 != 64835055) {
-            anIntArray1277 = (int[])null;
-         }
 
          Class79 var2 = CS2Script.method378(var1, (byte)127);
          int var3 = var2.anInt1128;

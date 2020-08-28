@@ -128,9 +128,6 @@ final class Class3_Sub1 extends Class3 {
 
    final int method94() {
       try {
-         if((byte) -74 != -74) {
-            this.method96(90);
-         }
 
          return this.anInt2205 >> 18 & 7;
       } catch (RuntimeException var3) {
@@ -140,9 +137,6 @@ final class Class3_Sub1 extends Class3 {
 
    final boolean method95() {
       try {
-         if(-13081 != -13081) {
-            anInt2212 = 71;
-         }
 
          return (1 & this.anInt2205) != 0;
       } catch (RuntimeException var3) {
@@ -177,9 +171,6 @@ final class Class3_Sub1 extends Class3 {
 
    final boolean method98() {
       try {
-         if(false) {
-            anIntArray2209 = (int[])null;
-         }
 
          return (this.anInt2205 >> 21 & 1) != 0;
       } catch (RuntimeException var3) {
@@ -189,9 +180,6 @@ final class Class3_Sub1 extends Class3 {
 
    final boolean method99() {
       try {
-         if(31595 != 31595) {
-            interfaceScriptsIndex = (CacheIndex)null;
-         }
 
          return (1738913629 & this.anInt2205) >> 30 != 0;
       } catch (RuntimeException var3) {

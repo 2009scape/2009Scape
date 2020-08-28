@@ -13,9 +13,6 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
    static void method295(RSString var0, int var2) {
       try {
          Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466((byte) 40 + -36, 2, var2);
-         if((byte) 40 != 40) {
-            method299(82, 22, -104);
-         }
 
          var3.g();
          var3.aClass94_3599 = var0;
@@ -361,7 +358,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
                   Class3_Sub11 var34 = (Class3_Sub11)var52.method1780(var25, 0);
                   if(null == var34) {
                      var34 = new Class3_Sub11(-1 + (var21 >> 16), (float)('\uffff' & var21), false, null != var13, var20);
-                     var52.method1779(1, var34, var25);
+                     var52.method1779(var34, var25);
                   }
 
                   ++var34.anInt2344;
@@ -370,7 +367,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
                      var34 = (Class3_Sub11)var52.method1780(var27, 0);
                      if(var34 == null) {
                         var34 = new Class3_Sub11((var22 >> 16) - 1, (float)('\uffff' & var22), false, null != var13, var20);
-                        var52.method1779(4096 + -4095, var34, var27);
+                        var52.method1779(var34, var27);
                      }
 
                      ++var34.anInt2344;
@@ -382,7 +379,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
                      var34 = (Class3_Sub11)var52.method1780(var29, 0);
                      if(var34 == null) {
                         var34 = new Class3_Sub11((var23 >> 16) + -1, (float)('\uffff' & var23), false, null != var13, var20);
-                        var52.method1779(1, var34, var29);
+                        var52.method1779(var34, var29);
                      }
 
                      var34.anInt2342 += var33;
@@ -393,7 +390,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
                      var34 = (Class3_Sub11)var52.method1780(var31, 0);
                      if(null == var34) {
                         var34 = new Class3_Sub11((var24 >> 16) - 1, (float)(var24 & '\uffff'), false, null != var13, var20);
-                        var52.method1779(4096 ^ 4097, var34, var31);
+                        var52.method1779(var34, var31);
                      }
 
                      ++var34.anInt2344;
@@ -605,7 +602,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
 
          Class3_Sub13_Sub1.outgoingBuffer.putByteA(ObjectDefinition.aBooleanArray1490[82]?1:0, -13071);
          Class3_Sub13_Sub1.outgoingBuffer.putShort(Class131.anInt1716 + var4);
-         Class3_Sub13_Sub1.outgoingBuffer.putShortA(Class82.anInt1152 + var5, -268435456);
+         Class3_Sub13_Sub1.outgoingBuffer.putShortA(Class82.anInt1152 + var5);
          Class45.anInt733 = Class45.anIntArray729[0];
          Class65.anInt987 = Class3_Sub13_Sub38.anIntArray3456[0];
 

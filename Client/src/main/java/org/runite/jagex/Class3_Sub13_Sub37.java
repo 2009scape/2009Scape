@@ -221,10 +221,6 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
             }
          }
 
-         if(false) {
-            aClass3_Sub28_Sub17_Sub1_3440 = (Class3_Sub28_Sub17_Sub1)null;
-         }
-
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "um.B(" + var1 + ',' + false + ')');
       }
@@ -255,15 +251,12 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
 
          }
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "um.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var6, "um.A(" + var1 + ',' + (var2 != null ? "{...}" : "null") + ',' + ')');
       }
    }
 
    private void method346() {
       try {
-         if(114 <= 95) {
-            method350((byte)-28, -113);
-         }
 
          int var5 = this.anIntArrayArray3438.length;
          if(var5 > 0) {
@@ -349,7 +342,7 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
             WorldListEntry.inTutorialIsland = 1;
          }
 
-         if(WorldListEntry.inTutorialIsland == 1 && var1 >= 3139 && var1 <= 3199 && var2 >= 3008 && 3062 >= var2) {
+         if(WorldListEntry.inTutorialIsland == 1 && var1 >= 3139 && var1 <= 3199 && 3062 >= var2) {
             WorldListEntry.inTutorialIsland = 0;
          }
 

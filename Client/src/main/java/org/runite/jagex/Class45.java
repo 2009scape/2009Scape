@@ -50,9 +50,9 @@ final class Class45 {
 							Class10 var14 = Class155.method2156(Class161.aClass3_Sub30_2030);
 							var4 &= 32767;
 							var13 = var14.anInt149;
-							message = var14.aClass3_Sub28_Sub4_151.method555((byte) -79 + 28100, Class161.aClass3_Sub30_2030);
+							message = var14.aClass3_Sub28_Sub4_151.method555(Class161.aClass3_Sub30_2030);
 						} else {
-							message = Class3_Sub28_Sub17.method686(Class32.method992(Class161.aClass3_Sub30_2030, 29488).method1536(78));
+							message = Class3_Sub28_Sub17.method686(Class32.method992(Class161.aClass3_Sub30_2030).method1536(78));
 						}
 
 						var3.textSpoken = message.trim(1);
@@ -60,11 +60,11 @@ final class Class45 {
 						var3.textCycle = 150;
 						var3.textColor = var4 >> 8;
 						if (chatIcon == 2) {
-							Class3_Sub28_Sub12.sendGameMessage(var13, var8?17:1, message, (RSString)null, RenderAnimationDefinition.method903(new RSString[]{RSString.createRSString("<img=" + (chatIcon-1) + ">"), var3.getName((byte) -79 + 79)}, (byte)-116));
+							Class3_Sub28_Sub12.sendGameMessage(var13, var8?17:1, message, (RSString)null, RenderAnimationDefinition.method903(new RSString[]{RSString.createRSString("<img=" + (chatIcon-1) + ">"), var3.getName()}, (byte)-116));
 						} else if (chatIcon == 1) {
-							Class3_Sub28_Sub12.sendGameMessage(var13, var8?17:1, message, (RSString)null, RenderAnimationDefinition.method903(new RSString[]{Class32.aClass94_592, var3.getName(0)}, (byte)-127));
+							Class3_Sub28_Sub12.sendGameMessage(var13, var8?17:1, message, (RSString)null, RenderAnimationDefinition.method903(new RSString[]{Class32.aClass94_592, var3.getName()}, (byte)-127));
 						} else {
-							Class3_Sub28_Sub12.sendGameMessage(var13, var8?17:2, message, (RSString)null, var3.getName(0));
+							Class3_Sub28_Sub12.sendGameMessage(var13, var8?17:2, message, (RSString)null, var3.getName());
 						}
 					}
 				}
@@ -75,7 +75,7 @@ final class Class45 {
 			if((var0 & 1) != 0) {
 				var4 = GraphicDefinition.incomingBuffer.getSmart();
 				chatIcon = GraphicDefinition.incomingBuffer.getByteA((byte)-99);
-				var3.method1970(chatIcon, -8, Class44.anInt719, var4);
+				var3.method1970(chatIcon, Class44.anInt719, var4);
 				var3.anInt2781 = 300 + Class44.anInt719;
 				var3.anInt2775 = GraphicDefinition.incomingBuffer.getByteS();
 			}
@@ -127,9 +127,9 @@ final class Class45 {
 				var3.textSpoken = GraphicDefinition.incomingBuffer.getString();
 				if(var3.textSpoken.charAt(0, (byte) -45) == 126) {
 					var3.textSpoken = var3.textSpoken.method1556(1);
-					Class3_Sub30_Sub1.addChatMessage(var3.getName(0), 2, var3.textSpoken, (byte) -79 ^ 78);
+					Class3_Sub30_Sub1.addChatMessage(var3.getName(), 2, var3.textSpoken, (byte) -79 ^ 78);
 				} else if(var3 == Class102.player) {
-					Class3_Sub30_Sub1.addChatMessage(var3.getName(0), 2, var3.textSpoken, (byte) -79 + 78);
+					Class3_Sub30_Sub1.addChatMessage(var3.getName(), 2, var3.textSpoken, (byte) -79 + 78);
 				}
 
 				var3.textEffect = 0;
@@ -141,7 +141,7 @@ final class Class45 {
 			if((var0 & 512) != 0) {
 				var4 = GraphicDefinition.incomingBuffer.getSmart();
 				chatIcon = GraphicDefinition.incomingBuffer.getByteS();
-				var3.method1970(chatIcon, (byte) -79 + 71, Class44.anInt719, var4);
+				var3.method1970(chatIcon, Class44.anInt719, var4);
 			}
 
 			//Ordinal: 8
@@ -193,7 +193,7 @@ final class Class45 {
 						var7 = RenderAnimationDefinition.getGraphicDefinition((byte)42, var3.anInt2842).anInt542;
 						if(var7 != -1) {
 							AnimationDefinition var24 = Client.getAnimationDefinition(var7);
-							if(null != var24 && var24.frames != null) {
+							if(var24.frames != null) {
 								IOHandler.method1470(var3.anInt2829, var24, 183921384, var3.anInt2819, var3 == Class102.player, 0);
 							}
 						}
@@ -201,14 +201,12 @@ final class Class45 {
 				}
 			}
 
-			if((byte) -79 == -79) {
-				//Ordinal: 10 Face location
-				if((var0 & 64) != 0) {
-					var3.anInt2786 = GraphicDefinition.incomingBuffer.getShort(1);
-					var3.anInt2762 = GraphicDefinition.incomingBuffer.getLEShortA((byte)-107);
-				}
-
+			//Ordinal: 10 Face location
+			if((var0 & 64) != 0) {
+				var3.anInt2786 = GraphicDefinition.incomingBuffer.getShort(1);
+				var3.anInt2762 = GraphicDefinition.incomingBuffer.getLEShortA((byte)-107);
 			}
+
 		} catch (RuntimeException var15) {
 			throw Class44.clientError(var15, "gk.A(" + var0 + ',' + var1 + ',' + (byte) -79 + ',' + (var3 != null?"{...}":"null") + ')');
 		}
@@ -344,9 +342,6 @@ final class Class45 {
 			var1.aClass3_Sub28_2570 = var0;
 			var1.aClass3_Sub28_2578 = var0.aClass3_Sub28_2578;
 			var1.aClass3_Sub28_2570.aClass3_Sub28_2578 = var1;
-			if((byte) 121 <= 101) {
-				aBoolean732 = true;
-			}
 
 			var1.aClass3_Sub28_2578.aClass3_Sub28_2570 = var1;
 		} catch (RuntimeException var4) {

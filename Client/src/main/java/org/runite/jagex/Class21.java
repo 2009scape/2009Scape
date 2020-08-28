@@ -85,7 +85,7 @@ final class Class21 {
          Class3_Sub31 var4 = new Class3_Sub31();
          var4.anInt2603 = walkable;
          var4.anInt2602 = interfaceId;
-         Class3_Sub13_Sub17.aClass130_3208.method1779(1, var4, (long)interfaceHash);
+         Class3_Sub13_Sub17.aClass130_3208.method1779(var4, (long)interfaceHash);
          Class3_Sub13_Sub13.method232(interfaceId);
          RSInterface var5 = Class7.getRSInterface((byte)122, interfaceHash);
          if(var5 == null) {
@@ -100,13 +100,10 @@ final class Class21 {
          }
 
          int var6 = Class3_Sub13_Sub34.anInt3415;
-         if(6422 != 6422) {
-            aClass94_444 = (RSString)null;
-         }
 
          int var7;
          for(var7 = 0; var6 > var7; ++var7) {
-            if(Class2.method73(Class3_Sub13_Sub7.aShortArray3095[var7], 6422 + -6301)) {
+            if(Class2.method73(Class3_Sub13_Sub7.aShortArray3095[var7])) {
                Class3_Sub25.method509(var7);
             }
          }
@@ -157,9 +154,6 @@ final class Class21 {
 
    static Class146 method916() {
       try {
-         if((byte) 15 != 15) {
-            aClass94_442 = (RSString)null;
-         }
 
          try {
             return (Class146)Class.forName(Configurations.PACKAGE_JAGEX + ".MouseWheel").newInstance();

@@ -22,7 +22,7 @@ final class Class3_Sub15 extends Class3 {
 
    final void method369() {
       try {
-         int var2 = 127 % ((-70 - (byte) -124) / 42);
+         int var2 = 0;
          this.anIntArray2423 = null;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "jk.A(" + (byte) -124 + ')');
@@ -40,9 +40,6 @@ final class Class3_Sub15 extends Class3 {
 
    static Class3_Sub28_Sub3 method371(RSString var1) {
       try {
-         if(2 != 2) {
-            method372(false);
-         }
 
          for(Class3_Sub28_Sub3 var2 = (Class3_Sub28_Sub3)Class134.aClass61_1758.method1222(); var2 != null; var2 = (Class3_Sub28_Sub3)Class134.aClass61_1758.method1221()) {
             if(var2.aClass94_3561.method1528(var1)) {
@@ -70,40 +67,36 @@ final class Class3_Sub15 extends Class3 {
 
    final boolean method373(int[] var2, Class83 var3, byte[] var4) {
       try {
-         if(17904 == 17904) {
-            int var6 = 0;
-            Class3_Sub12_Sub1 var7 = null;
-            boolean var5 = true;
+         int var6 = 0;
+         Class3_Sub12_Sub1 var7 = null;
+         boolean var5 = true;
 
-            for(int var8 = 0; var8 < 128; ++var8) {
-               if(null == var4 || var4[var8] != 0) {
-                  int var9 = this.anIntArray2423[var8];
-                  if(var9 != 0) {
-                     if(var6 != var9) {
-                        var6 = var9--;
-                        if((var9 & 1) == 0) {
-                           var7 = var3.method1413(var9 >> 2, 33, var2);
-                        } else {
-                           var7 = var3.method1416(var9 >> 2, var2);
-                        }
-
-                        if(var7 == null) {
-                           var5 = false;
-                        }
+         for(int var8 = 0; var8 < 128; ++var8) {
+            if(null == var4 || var4[var8] != 0) {
+               int var9 = this.anIntArray2423[var8];
+               if(var9 != 0) {
+                  if(var6 != var9) {
+                     var6 = var9--;
+                     if((var9 & 1) == 0) {
+                        var7 = var3.method1413(var9 >> 2, 33, var2);
+                     } else {
+                        var7 = var3.method1416(var9 >> 2, var2);
                      }
 
-                     if(null != var7) {
-                        this.aClass3_Sub12_Sub1Array2431[var8] = var7;
-                        this.anIntArray2423[var8] = 0;
+                     if(var7 == null) {
+                        var5 = false;
                      }
+                  }
+
+                  if(null != var7) {
+                     this.aClass3_Sub12_Sub1Array2431[var8] = var7;
+                     this.anIntArray2423[var8] = 0;
                   }
                }
             }
-
-            return var5;
-         } else {
-            return false;
          }
+
+         return var5;
       } catch (RuntimeException var10) {
          throw Class44.clientError(var10, "jk.E(" + 17904 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
       }
@@ -117,9 +110,6 @@ final class Class3_Sub15 extends Class3 {
          while(var6.buffer.length > 0) {
             int var8 = var6.method773((byte)-126);
             if(0 == var8) {
-               if(0 != 0) {
-                  method372(true);
-               }
 
                return;
             }

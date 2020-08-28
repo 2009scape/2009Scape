@@ -56,7 +56,7 @@ final class NodeList {
             return null;
          } else {
             var2.method524();
-            return -1 != -1?(Node)null:var2;
+            return var2;
          }
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "ce.B(" + -1 + ')');
@@ -113,7 +113,7 @@ final class NodeList {
             return (Class3_Sub28_Sub17) null;
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "ce.G(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "ce.G(" + var0 + ',' + "{...}" + ')');
       }
    }
 
@@ -136,7 +136,7 @@ final class NodeList {
                var10.anInt2250 = var0;
                var10.anInt2263 = var7;
                Class132.method1798(72, var10);
-               Class3_Sub13_Sub6.aClass61_3075.method1215(true, var10);
+               Class3_Sub13_Sub6.aClass61_3075.method1215(var10);
             }
 
             var10.anInt2262 = var8;
@@ -166,9 +166,6 @@ final class NodeList {
 
    final void method883() {
       try {
-         if(17126 != 17126) {
-            method880(-21, (byte[])null);
-         }
 
          while(true) {
             Node var2 = this.aClass3_Sub28_333.aClass3_Sub28_2578;

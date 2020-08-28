@@ -57,22 +57,20 @@ final class Class3_Sub13_Sub7 extends Class3_Sub13 {
 
    private void method202() {
       try {
-         if(1 == 1) {
-            int var2 = 0;
-            this.anIntArray3091 = new int[this.anInt3085 + 1];
-            int var3 = 4096 / this.anInt3085;
-            this.anIntArray3089 = new int[this.anInt3085 + 1];
-            int var4 = this.anInt3093 * var3 >> 12;
+          int var2 = 0;
+          this.anIntArray3091 = new int[this.anInt3085 + 1];
+          int var3 = 4096 / this.anInt3085;
+          this.anIntArray3089 = new int[this.anInt3085 + 1];
+          int var4 = this.anInt3093 * var3 >> 12;
 
-            for(int var5 = 0; this.anInt3085 > var5; ++var5) {
-               this.anIntArray3089[var5] = var2;
-               this.anIntArray3091[var5] = var2 + var4;
-               var2 += var3;
-            }
+          for(int var5 = 0; this.anInt3085 > var5; ++var5) {
+             this.anIntArray3089[var5] = var2;
+             this.anIntArray3091[var5] = var2 + var4;
+             var2 += var3;
+          }
 
-            this.anIntArray3089[this.anInt3085] = 4096;
-            this.anIntArray3091[this.anInt3085] = this.anIntArray3091[0] + 4096;
-         }
+          this.anIntArray3089[this.anInt3085] = 4096;
+          this.anIntArray3091[this.anInt3085] = this.anIntArray3091[0] + 4096;
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "d.B(" + 1 + ')');
       }

@@ -27,9 +27,6 @@ final class Class97 {
    final int[][][] method1589() {
       try {
          if(this.anInt1367 == this.anInt1369) {
-            if((byte) -56 > -12) {
-               this.anInt1365 = -104;
-            }
 
             for(int var2 = 0; var2 < this.anInt1367; ++var2) {
                this.aClass3_Sub20Array1371[var2] = Class3_Sub28_Sub1.aClass3_Sub20_3532;
@@ -46,19 +43,17 @@ final class Class97 {
 
    final void method1590() {
       try {
-         if((byte) -22 < -1) {
-            for(int var2 = 0; var2 < this.anInt1367; ++var2) {
-               this.anIntArrayArrayArray1362[var2][0] = null;
-               this.anIntArrayArrayArray1362[var2][1] = null;
-               this.anIntArrayArrayArray1362[var2][2] = null;
-               this.anIntArrayArrayArray1362[var2] = (int[][])null;
-            }
-
-            this.aClass3_Sub20Array1371 = null;
-            this.anIntArrayArrayArray1362 = (int[][][])null;
-            this.aClass61_1366.method1211(-118);
-            this.aClass61_1366 = null;
+         for(int var2 = 0; var2 < this.anInt1367; ++var2) {
+            this.anIntArrayArrayArray1362[var2][0] = null;
+            this.anIntArrayArrayArray1362[var2][1] = null;
+            this.anIntArrayArrayArray1362[var2][2] = null;
+            this.anIntArrayArrayArray1362[var2] = (int[][])null;
          }
+
+         this.aClass3_Sub20Array1371 = null;
+         this.anIntArrayArrayArray1362 = (int[][][])null;
+         this.aClass61_1366.method1211(-118);
+         this.aClass61_1366 = null;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "nd.E(" + (byte) -22 + ')');
       }

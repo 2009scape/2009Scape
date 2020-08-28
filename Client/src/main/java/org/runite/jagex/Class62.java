@@ -32,7 +32,7 @@ final class Class62 {
       }
    }
 
-   static void method1224(RSInterface var0, int var1, int var2, int var3) {
+   static void method1224(RSInterface var0, int var2, int var3) {
       try {
          if(0 == var0.aByte162) {
             var0.anInt210 = var0.y;
@@ -76,12 +76,12 @@ final class Class62 {
             }
          }
 
-         if(var1 != 23730) {
+         if(23730 != 23730) {
             method1223(19);
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "ii.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "ii.B(" + (var0 != null?"{...}":"null") + ',' + 23730 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -89,9 +89,6 @@ final class Class62 {
       try {
          MouseListeningClass var1 = Class3_Sub28_Sub7_Sub1.aClass149_4047;
          synchronized(var1) {
-            if(18074 != 18074) {
-               aClass94_946 = (RSString)null;
-            }
 
             Class3_Sub13_Sub5.anInt3069 = GraphicDefinition.anInt549;
             Class126.anInt1676 = Class3_Sub21.anInt2493;

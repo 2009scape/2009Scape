@@ -26,9 +26,6 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
 
    static void method304() {
       try {
-         if(6799 != 6799) {
-            method305((Signlink)null, (RSByteBuffer)null, -13, (byte)41);
-         }
 
          Class3_Sub13_Sub34.aClass93_3412.method1524();
          Class3_Sub13_Sub31.aClass93_3369.method1524();
@@ -112,7 +109,7 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
             }
          }
 
-         Class3_Sub26.aClass61_2557.method1215(true, var4);
+         Class3_Sub26.aClass61_2557.method1215(var4);
       } catch (RuntimeException var20) {
          throw Class44.clientError(var20, "qg.E(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
       }
@@ -194,9 +191,6 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
          Class55 var2 = (Class55)Class41.aClass93_684.get((long)var0);
          if(var2 == null) {
             byte[] var3 = Class3_Sub13_Sub19.aClass153_3227.getFile(33, var0);
-            if(5 != 5) {
-               aClass94_3357 = (RSString)null;
-            }
 
             var2 = new Class55();
             if(var3 != null) {

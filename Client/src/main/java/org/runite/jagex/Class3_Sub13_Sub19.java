@@ -43,9 +43,6 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
 
    static void method260(int var1, int var2) {
       try {
-         if(-16207 != -16207) {
-            aClass94_3232 = (RSString)null;
-         }
 
          Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(4, 7, var1);
          var3.g();
@@ -119,15 +116,13 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
             Class3_Sub13_Sub23_Sub1.method282(Class38.anIntArrayArray663[var12], var7, 103, var6, var0);
          }
 
-         if(119 > 118) {
-            for(var12 = var8; var12 <= var9; ++var12) {
-               int[] var13 = Class38.anIntArrayArray663[var12];
-               Class3_Sub13_Sub23_Sub1.method282(var13, var7, 117, var10, var0);
-               Class3_Sub13_Sub23_Sub1.method282(var13, var10, 111, var11, var4);
-               Class3_Sub13_Sub23_Sub1.method282(var13, var11, -75, var6, var0);
-            }
-
+         for(var12 = var8; var12 <= var9; ++var12) {
+            int[] var13 = Class38.anIntArrayArray663[var12];
+            Class3_Sub13_Sub23_Sub1.method282(var13, var7, 117, var10, var0);
+            Class3_Sub13_Sub23_Sub1.method282(var13, var10, 111, var11, var4);
+            Class3_Sub13_Sub23_Sub1.method282(var13, var11, -75, var6, var0);
          }
+
       } catch (RuntimeException var14) {
          throw Class44.clientError(var14, "mc.Q(" + var0 + ',' + 119 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
       }
@@ -271,10 +266,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
    static void method265(int var1) {
       try {
          Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 8, var1);
-         var2.a(true);
-         if((byte) -42 != -42) {
-            aClass94_3239 = (RSString)null;
-         }
+         var2.a();
 
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "mc.B(" + (byte) -42 + ',' + var1 + ')');

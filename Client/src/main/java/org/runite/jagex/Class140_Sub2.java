@@ -24,9 +24,6 @@ final class Class140_Sub2 extends GameObject {
    private Model method1949() {
       try {
          GraphicDefinition var2 = RenderAnimationDefinition.getGraphicDefinition((byte)42, this.anInt2708);
-         if(false) {
-            aClass94_2707 = (RSString)null;
-         }
 
          Model var3;
          if(this.aBoolean2718) {
@@ -75,9 +72,6 @@ final class Class140_Sub2 extends GameObject {
 
    static int method1951(int var0) {
       try {
-         if((byte) -115 > -67) {
-            aBoolean2713 = false;
-         }
 
          return var0 >>> 8;
       } catch (RuntimeException var3) {
@@ -124,10 +118,6 @@ final class Class140_Sub2 extends GameObject {
             var12 = var12 * var14 >> 16;
          }
 
-         if(-1907397104 != -1907397104) {
-            method1950((Class140_Sub4)null, false);
-         }
-
          Class139.anInt1823 = var7;
          Class3_Sub13_Sub25.anInt3315 = var5;
          Class77.anInt1111 = var6 + -var12;
@@ -140,9 +130,6 @@ final class Class140_Sub2 extends GameObject {
 
    static WorldListEntry method1953() {
       try {
-         if((byte) 124 <= 97) {
-            anIntArray2709 = (int[])null;
-         }
 
          Class3_Sub6.anInt2291 = 0;
          return ItemDefinition.method1107(5422);

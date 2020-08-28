@@ -13,11 +13,8 @@ final class Class3_Sub21 extends Class3 {
 
    final boolean method393(int var2, int var3) {
       try {
-         if((byte) -45 != -45) {
-            method394(6, -105);
-         }
 
-         return var3 >= this.anInt2492 && var3 <= this.anInt2495 && this.anInt2494 <= var2 && var2 <= this.anInt2497;
+          return var3 >= this.anInt2492 && var3 <= this.anInt2495 && this.anInt2494 <= var2 && var2 <= this.anInt2497;
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "lh.D(" + (byte) -45 + ',' + var2 + ',' + var3 + ')');
       }

@@ -52,11 +52,11 @@ abstract class GameObject {
       }
    }
 
-   GameObject method1861(int var1, int var2, int var3) {
+   GameObject method1861() {
       try {
          return this;
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "th.JB(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "th.JB(" + -50 + ',' + -10 + ',' + -50 + ')');
       }
    }
 
@@ -70,10 +70,6 @@ abstract class GameObject {
 
          if(Signlink.osName.startsWith("mac") && var1 > 0) {
             var0 = true;
-         }
-
-         if(-8914 != -8914) {
-            method1864(false, (byte)90, (CacheIndex)null, (Class3_Sub28_Sub17_Sub1)null, (CacheIndex)null);
          }
 
          boolean var6 = false;
@@ -100,7 +96,7 @@ abstract class GameObject {
             var3 = var7;
          }
 
-         var7 = 121 % (((byte) 126 - 75) / 50);
+         var7 = 0;
          var1 &= 3;
          return var1 == 0 ?var6:(1 != var1?(var1 != 2 ?var4:-var3 + 1 + -var6 + 7):-var4 + 7 + -var0 - -1);
       } catch (RuntimeException var8) {

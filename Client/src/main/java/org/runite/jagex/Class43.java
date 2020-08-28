@@ -99,9 +99,6 @@ final class Class43 {
 
    final void method1063(boolean var1, int var2) {
       try {
-         if(-3696 != -3696) {
-            method1058(-127, -32, -68, -32, (byte)-77);
-         }
 
          int var5 = this.anInt714 + var2 * this.anInt709 / 50 & 2047;
          int var6 = this.anInt694;
@@ -219,20 +216,16 @@ final class Class43 {
             this.anInt694 = 0;
          }
 
-         if(3 != 3) {
-            this.anInt714 = -84;
-         }
-
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "gi.G(" + 3 + ')');
       }
    }
 
-   static void method1065(int var0, CS2Script var1) {
+   static void method1065(CS2Script var1) {
       try {
          ItemDefinition.method1104((byte)-93, 200000, var1);
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "gi.H(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "gi.H(" + 1073376993 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 

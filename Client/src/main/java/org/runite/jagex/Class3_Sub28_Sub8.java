@@ -11,7 +11,7 @@ final class Class3_Sub28_Sub8 extends Node {
 
    static int method571() {
       try {
-         return -109 >= -57?-107:((double)NPC.aFloat3979 == 3.0D?37:((double)NPC.aFloat3979 == 4.0D?50:(6.0D != (double)NPC.aFloat3979?((double)NPC.aFloat3979 == 8.0D?100:200):75)));
+         return (double) NPC.aFloat3979 == 3.0D ?37: (double) NPC.aFloat3979 == 4.0D ?50: 6.0D != (double) NPC.aFloat3979 ? (double) NPC.aFloat3979 == 8.0D ?100:200 :75;
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "hc.E(" + -109 + ')');
       }
@@ -26,9 +26,6 @@ final class Class3_Sub28_Sub8 extends Node {
                return null;
             } else {
                var2 = new Class3_Sub28_Sub15();
-               if((byte) -91 != -91) {
-                  aClass113Array3610 = (Class113[])null;
-               }
 
                RSByteBuffer var4 = new RSByteBuffer(var3);
                var4.index = -2 + var4.buffer.length;
@@ -54,7 +51,7 @@ final class Class3_Sub28_Sub8 extends Node {
                      while(var10-- > 0) {
                         int var12 = var4.getInt();
                         int var13 = var4.getInt();
-                        var11.method1779(1, new Class3_Sub18(var13), (long)var12);
+                        var11.method1779(new Class3_Sub18(var13), (long)var12);
                      }
                   }
                }
@@ -136,11 +133,9 @@ final class Class3_Sub28_Sub8 extends Node {
       try {
          if(Class119.aClass131_1624 == null || var0.length(-65) == 0) {
             return -1;
-         } else if (false) {
-            return -117;
          } else {
             for (int var2 = 0; var2 < Class119.aClass131_1624.anInt1720; ++var2) {
-               if (Class119.aClass131_1624.aClass94Array1721[var2].method1560(Class3_Sub13_Sub16.aClass94_3192, true, Class3_Sub28_Sub10_Sub2.aClass94_4066).method1528(var0)) {
+               if (Class119.aClass131_1624.aClass94Array1721[var2].method1560(Class3_Sub13_Sub16.aClass94_3192, Class3_Sub28_Sub10_Sub2.aClass94_4066).method1528(var0)) {
                   return var2;
                }
             }

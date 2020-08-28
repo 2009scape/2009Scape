@@ -79,7 +79,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
       }
    }
 
-   static Class24 method231(int var0, int var1) {
+   static Class24 method231(int var0) {
       try {
          Class24 var2 = (Class24)Class140_Sub4.aClass93_2792.get((long)var0);
          if(var2 == null) {
@@ -90,14 +90,14 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
             }
 
             Class140_Sub4.aClass93_2792.put((byte)-89, var2, (long)var0);
-            if(var1 != 0) {
+            if(0 != 0) {
                aClass153_3154 = (CacheIndex)null;
             }
 
          }
          return var2;
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "gg.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "gg.B(" + var0 + ',' + 0 + ')');
       }
    }
 
@@ -113,10 +113,6 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                   var4.anInt283 = 0;
                   var4.anInt267 = 0;
                }
-            }
-
-            if(16182 != 16182) {
-               method229(25, -86);
             }
 
          }
@@ -408,8 +404,8 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                   Class3_Sub28_Sub10_Sub2.aBoolean4068 = false;
                   ++Class133.anInt1756;
                   Class3_Sub13_Sub1.outgoingBuffer.putOpcode(21);
-                  Class3_Sub13_Sub1.outgoingBuffer.putShortA(Class3_Sub9.anInt2309, -268435456);
-                  Class3_Sub13_Sub1.outgoingBuffer.putLEShort(-1, GraphicDefinition.CAMERA_DIRECTION);
+                  Class3_Sub13_Sub1.outgoingBuffer.putShortA(Class3_Sub9.anInt2309);
+                  Class3_Sub13_Sub1.outgoingBuffer.putLEShort(GraphicDefinition.CAMERA_DIRECTION);
                }
 
                if(!!Class3_Sub13_Sub6.aBoolean3078 && !Class140_Sub4.aBoolean2774) {
@@ -627,7 +623,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                                        if (var5 > var6) {
                                           var17.method864(-1 + var5, var5, -71);
                                           --var5;
-                                       } else if (var5 < var6) {
+                                       } else {
                                           var17.method864(1 + var5, var5, -95);
                                           ++var5;
                                        }
@@ -639,7 +635,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                                  Class3_Sub13_Sub1.outgoingBuffer.putOpcode(231);
                                  Class3_Sub13_Sub1.outgoingBuffer.putShort(PacketParser.anInt86);
                                  Class3_Sub13_Sub1.outgoingBuffer.putLEInt(Class67.aClass11_1017.anInt279, (byte)-125);
-                                 Class3_Sub13_Sub1.outgoingBuffer.putShortA(Class140_Sub2.anInt2701, -268435456);
+                                 Class3_Sub13_Sub1.outgoingBuffer.putShortA(Class140_Sub2.anInt2701);
                                  Class3_Sub13_Sub1.outgoingBuffer.putByteS(var18);
                               }
                            } else if((Class66.anInt998 == 1 || Class3_Sub13_Sub39.method353(-1 + Class3_Sub13_Sub34.anInt3415, 0)) && Class3_Sub13_Sub34.anInt3415 > 2) {
@@ -716,9 +712,9 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                                              Class3_Sub13_Sub1.outgoingBuffer.putOpcode(131);
                                              ++Class75_Sub3.anInt2651;
                                              Class3_Sub13_Sub1.outgoingBuffer.putIntB(-123, Class54.anInt872);
-                                             Class3_Sub13_Sub1.outgoingBuffer.putShortA(Class131.anInt1716 + Class27.anInt515, -268435456);
+                                             Class3_Sub13_Sub1.outgoingBuffer.putShortA(Class131.anInt1716 + Class27.anInt515);
                                              Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(RSInterface.anInt278);
-                                             Class3_Sub13_Sub1.outgoingBuffer.putShortA(Class66.anInt999 + Class82.anInt1152, -268435456);
+                                             Class3_Sub13_Sub1.outgoingBuffer.putShortA(Class66.anInt999 + Class82.anInt1152);
                                              Class36.anInt638 = 1;
                                              Class151_Sub1.anInt2958 = 0;
                                              Class3_Sub28_Sub10_Sub1.anInt4062 = Class38_Sub1.anInt2614;
@@ -785,7 +781,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                                        if(Class133.anInt1753 == 1) {
                                           KeyboardListener.method2086();
                                        } else if(Class133.anInt1753 == 2) {
-                                          CS2Script.method379(1024);
+                                          CS2Script.method379();
                                        } else {
                                           Class3_Sub28_Sub6.d('\uffff');
                                        }
@@ -898,7 +894,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
 
                                        try {
                                           if(Class3_Sub15.aClass89_2429 != null && Class3_Sub13_Sub1.outgoingBuffer.index > 0) {
-                                             Class3_Sub15.aClass89_2429.sendBytes(false, Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index);
+                                             Class3_Sub15.aClass89_2429.sendBytes(Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index);
                                              Class3_Sub13_Sub23_Sub1.anInt4032 = 0;
                                              Class3_Sub13_Sub1.outgoingBuffer.index = 0;
                                           }
@@ -917,7 +913,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                                        }
                                     }
 
-                                    Class43.method1065(1073376993, var26);
+                                    Class43.method1065(var26);
                                  }
                               }
 
@@ -929,7 +925,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                                  }
                               }
 
-                              Class43.method1065(1073376993, var26);
+                              Class43.method1065(var26);
                            }
                         }
 
@@ -941,7 +937,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                            }
                         }
 
-                        Class43.method1065(1073376993, var26);
+                        Class43.method1065(var26);
                      }
                   }
                }

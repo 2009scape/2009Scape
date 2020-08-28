@@ -29,10 +29,6 @@ final class Class3_Sub28_Sub3 extends Node {
                }
             }
 
-            if((byte) 97 != 97) {
-               method544(-51, 82);
-            }
-
          }
           return false;
       } catch (RuntimeException var5) {
@@ -44,9 +40,6 @@ final class Class3_Sub28_Sub3 extends Node {
       try {
          this.anInt3562 = 12800;
          this.anInt3559 = 0;
-         if((byte) 103 != 103) {
-            aClass11_3551 = (RSInterface)null;
-         }
 
          this.anInt3549 = 0;
          this.anInt3555 = 12800;
@@ -74,31 +67,27 @@ final class Class3_Sub28_Sub3 extends Node {
       }
    }
 
-   static void method539(int var0) {
+   static void method539() {
       try {
-         if(var0 != 0) {
+         if(0 != 0) {
             method542((byte)73);
          }
 
-         Class136.aClass93_1772.method1522(var0 ^ -126, 5);
+         Class136.aClass93_1772.method1522(0 ^ -126, 5);
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "bn.O(" + var0 + ',' + 5 + ')');
+         throw Class44.clientError(var3, "bn.O(" + 0 + ',' + 5 + ')');
       }
    }
 
    static int method540(int var0, int var2) {
       try {
-         if(-14314 == -14314) {
-            int var3;
-            for(var3 = 0; var0 > 0; --var0) {
-               var3 = var3 << 1 | 1 & var2;
-               var2 >>>= 1;
-            }
-
-            return var3;
-         } else {
-            return 116;
+         int var3;
+         for(var3 = 0; var0 > 0; --var0) {
+            var3 = var3 << 1 | 1 & var2;
+            var2 >>>= 1;
          }
+
+         return var3;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "bn.P(" + var0 + ',' + -14314 + ',' + var2 + ')');
       }
@@ -106,7 +95,7 @@ final class Class3_Sub28_Sub3 extends Node {
 
    static void method541(boolean var1, RSString var2) {
       try {
-         var2 = var2.method1534(-98);
+         var2 = var2.method1534();
          int var4 = 0;
          int var5 = -26 / ((62 - (byte) 123) / 58);
          short[] var3 = new short[16];
@@ -114,8 +103,8 @@ final class Class3_Sub28_Sub3 extends Node {
          int var7 = (!var1?Class83.anInt1156:RenderAnimationDefinition.anInt377) + var6;
 
          for(int var8 = var6; var8 < var7; ++var8) {
-            Class3_Sub28_Sub4 var9 = Class3_Sub29.method733(12345678, var8);
-            if(var9.aBoolean3568 && var9.method554().method1534(-98).indexOf(var2, 112) != -1) {
+            Class3_Sub28_Sub4 var9 = Class3_Sub29.method733(var8);
+            if(var9.aBoolean3568 && var9.method554().method1534().indexOf(var2, 112) != -1) {
                if(var4 >= 50) {
                   Class62.anInt952 = -1;
                   Class99.aShortArray1398 = null;
@@ -142,7 +131,7 @@ final class Class3_Sub28_Sub3 extends Node {
          RSString[] var13 = new RSString[Class62.anInt952];
 
          for(int var14 = 0; Class62.anInt952 > var14; ++var14) {
-            var13[var14] = Class3_Sub29.method733(12345678, var3[var14]).method554();
+            var13[var14] = Class3_Sub29.method733(var3[var14]).method554();
          }
 
          Class3_Sub13_Sub29.method307(var13, Class99.aShortArray1398, 100);

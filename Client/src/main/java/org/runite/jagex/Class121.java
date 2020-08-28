@@ -145,7 +145,7 @@ final class Class121 {
 
                Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-67, 255);
                Class3_Sub13_Sub1.outgoingBuffer.putInt(29984 + -30105, wlUpdateStamp);
-               Class3_Sub15.aClass89_2429.sendBytes(false, Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index);
+               Class3_Sub15.aClass89_2429.sendBytes(Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index);
                if(null != WorldListEntry.aClass155_2627) {
                   WorldListEntry.aClass155_2627.method2159(67);
                }
@@ -194,7 +194,7 @@ final class Class121 {
                   wlUpdateStamp = Class66.wlPacketSize + -Class3_Sub20.wlPacketIndex;
                }
 
-               Class3_Sub15.aClass89_2429.readBytes(Class3_Sub20.wlPacketIndex, wlUpdateStamp, -18455, Class3_Sub13_Sub33.aByteArray3396);
+               Class3_Sub15.aClass89_2429.readBytes(Class3_Sub20.wlPacketIndex, wlUpdateStamp, Class3_Sub13_Sub33.aByteArray3396);
                Class3_Sub20.wlPacketIndex += wlUpdateStamp;
                if(Class3_Sub20.wlPacketIndex >= Class66.wlPacketSize) {
                   if(Class3_Sub13_Sub23.handleWorldListUpdate(Class3_Sub13_Sub33.aByteArray3396)) {
@@ -225,10 +225,6 @@ final class Class121 {
             }
          } catch (IOException var5) {
             return Class3_Sub13_Sub3.method179((byte)92, 1003);
-         }
-
-         if(29984 != 29984) {
-            method1734(13, 0.10791027F, 20, 124, (int[][])((int[][])null), (int[][])((int[][])null), -85, (float[][])((float[][])null), -119, (byte)-105, -5, false, (Class3_Sub11)null, (float[][])((float[][])null), 5, -100, (float[][])((float[][])null), -36);
          }
 
          return -1;

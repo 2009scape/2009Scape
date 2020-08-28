@@ -93,100 +93,96 @@ final class Class140_Sub3 extends GameObject {
          }
 
          int var32 = var7 * 64 + -1;
-         if((byte) -49 == -49) {
-            int var33 = -var32;
-            int var31 = -var32;
-            int var34 = var32;
-            int var35 = var8.method1884();
-            Class3_Sub28_Sub5 var40 = null;
-            var23 = var8.method1883();
-            var24 = var8.method1898();
-            var25 = var8.method1872();
-            if(var2 != null) {
-               var10 = var2.frames[var10];
-               int frame = var10 >> 16;
-               if (var2.animId > 11000) {
+         int var33 = -var32;
+         int var31 = -var32;
+         int var34 = var32;
+         int var35 = var8.method1884();
+         Class3_Sub28_Sub5 var40 = null;
+         var23 = var8.method1883();
+         var24 = var8.method1898();
+         var25 = var8.method1872();
+         if(var2 != null) {
+            var10 = var2.frames[var10];
+            int frame = var10 >> 16;
+            if (var2.animId > 11000) {
 //              	 System.out.println(var2.animId  + " Roar " + (var10 >> 16) + ", " + (var10 & '\uffff') + ", " + Arrays.toString(var2.frames));
-               }
-               var40 = Class3_Sub9.method133(frame, 0); //NPC render animating
-               var10 &= '\uffff';
             }
-
-            var21 = var32;
-            if(var1) {
-               if(1664 < var9 || 384 > var9) {
-                  var31 -= 128;
-               }
-
-               if(var9 > 1152 && var9 < 1920) {
-                  var34 = var32 + 128;
-               }
-
-               if(640 < var9 && var9 < 1408) {
-                  var21 = var32 + 128;
-               }
-
-               if(var9 > 128 && var9 < 896) {
-                  var33 -= 128;
-               }
-            }
-
-            if(var21 < var25) {
-               var25 = var21;
-            }
-
-            if(var33 > var35) {
-               var35 = var33;
-            }
-
-            if(var24 < var31) {
-               var24 = var31;
-            }
-
-            if(var34 < var23) {
-               var23 = var34;
-            }
-
-            if(null == var40) {
-               var16 = var16.method1882(true, true, true);
-               var16.resize((var23 + -var35) / 2, 128, (var25 - var24) / 2);
-               var16.method1897((var35 + var23) / 2, 0, (var24 - -var25) / 2);
-            } else {
-               var16 = var16.method1882(!var40.method559(var10), !var40.method561(var10, (byte)115), true);
-               var16.resize((var23 + -var35) / 2, 128, (var25 + -var24) / 2);
-               var16.method1897((var35 + var23) / 2, 0, (var24 + var25) / 2);
-               var16.method1877(var40, var10);
-            }
-
-            if(var9 != 0) {
-               var16.method1876(var9);
-            }
-
-            if(HDToolKit.highDetail) {
-               Class140_Sub1_Sub1 var36 = (Class140_Sub1_Sub1)var16;
-               if(var11 != Class121.method1736(WorldListCountry.localPlane, (byte) -49 ^ -50, var3 - -var35, var24 + var5) || var11 != Class121.method1736(WorldListCountry.localPlane, 1, var23 + var3, var5 - -var25)) {
-                  for(var28 = 0; var28 < var36.anInt3823; ++var28) {
-                     var36.anIntArray3845[var28] += -var11 + Class121.method1736(WorldListCountry.localPlane, Class93.method1519((byte) -49, -50), var36.anIntArray3822[var28] - -var3, var5 + var36.anIntArray3848[var28]);
-                  }
-
-                  var36.aClass6_3835.aBoolean98 = false;
-                  var36.aClass121_3839.aBoolean1640 = false;
-               }
-            } else {
-               Class140_Sub1_Sub2 var37 = (Class140_Sub1_Sub2)var16;
-               if(var11 != Class121.method1736(WorldListCountry.localPlane, 1, var3 - -var35, var5 - -var24) || var11 != Class121.method1736(WorldListCountry.localPlane, 1, var3 + var23, var5 - -var25)) {
-                  for(var28 = 0; var28 < var37.anInt3891; ++var28) {
-                     var37.anIntArray3883[var28] += -var11 + Class121.method1736(WorldListCountry.localPlane, 1, var3 + var37.anIntArray3885[var28], var5 + var37.anIntArray3895[var28]);
-                  }
-
-                  var37.aBoolean3897 = false;
-               }
-            }
-
-            return var16;
-         } else {
-            return (Model)null;
+            var40 = Class3_Sub9.method133(frame); //NPC render animating
+            var10 &= '\uffff';
          }
+
+         var21 = var32;
+         if(var1) {
+            if(1664 < var9 || 384 > var9) {
+               var31 -= 128;
+            }
+
+            if(var9 > 1152 && var9 < 1920) {
+               var34 = var32 + 128;
+            }
+
+            if(640 < var9 && var9 < 1408) {
+               var21 = var32 + 128;
+            }
+
+            if(var9 > 128 && var9 < 896) {
+               var33 -= 128;
+            }
+         }
+
+         if(var21 < var25) {
+            var25 = var21;
+         }
+
+         if(var33 > var35) {
+            var35 = var33;
+         }
+
+         if(var24 < var31) {
+            var24 = var31;
+         }
+
+         if(var34 < var23) {
+            var23 = var34;
+         }
+
+         if(null == var40) {
+            var16 = var16.method1882(true, true, true);
+            var16.resize((var23 + -var35) / 2, 128, (var25 - var24) / 2);
+            var16.method1897((var35 + var23) / 2, 0, (var24 - -var25) / 2);
+         } else {
+            var16 = var16.method1882(!var40.method559(var10), !var40.method561(var10, (byte)115), true);
+            var16.resize((var23 + -var35) / 2, 128, (var25 + -var24) / 2);
+            var16.method1897((var35 + var23) / 2, 0, (var24 + var25) / 2);
+            var16.method1877(var40, var10);
+         }
+
+         if(var9 != 0) {
+            var16.method1876(var9);
+         }
+
+         if(HDToolKit.highDetail) {
+            Class140_Sub1_Sub1 var36 = (Class140_Sub1_Sub1)var16;
+            if(var11 != Class121.method1736(WorldListCountry.localPlane, (byte) -49 ^ -50, var3 - -var35, var24 + var5) || var11 != Class121.method1736(WorldListCountry.localPlane, 1, var23 + var3, var5 - -var25)) {
+               for(var28 = 0; var28 < var36.anInt3823; ++var28) {
+                  var36.anIntArray3845[var28] += -var11 + Class121.method1736(WorldListCountry.localPlane, Class93.method1519((byte) -49, -50), var36.anIntArray3822[var28] - -var3, var5 + var36.anIntArray3848[var28]);
+               }
+
+               var36.aClass6_3835.aBoolean98 = false;
+               var36.aClass121_3839.aBoolean1640 = false;
+            }
+         } else {
+            Class140_Sub1_Sub2 var37 = (Class140_Sub1_Sub2)var16;
+            if(var11 != Class121.method1736(WorldListCountry.localPlane, 1, var3 - -var35, var5 - -var24) || var11 != Class121.method1736(WorldListCountry.localPlane, 1, var3 + var23, var5 - -var25)) {
+               for(var28 = 0; var28 < var37.anInt3891; ++var28) {
+                  var37.anIntArray3883[var28] += -var11 + Class121.method1736(WorldListCountry.localPlane, 1, var3 + var37.anIntArray3885[var28], var5 + var37.anIntArray3895[var28]);
+               }
+
+               var37.aBoolean3897 = false;
+            }
+         }
+
+         return var16;
       } catch (RuntimeException var30) {
          throw Class44.clientError(var30, "dc.E(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + (var8 != null?"{...}":"null") + ',' + var9 + ',' + var10 + ',' + var11 + ',' + var12 + ',' + (byte) -49 + ')');
       }
@@ -209,7 +205,7 @@ final class Class140_Sub3 extends GameObject {
    final void method1867(int var1, int var2, int var3, int var4, int var5) {
       try {
          if(HDToolKit.highDetail) {
-            this.method1962(true, -2);
+            this.method1962(true);
          } else {
             this.method1961(var5, var4);
          }
@@ -314,17 +310,15 @@ final class Class140_Sub3 extends GameObject {
             this.anInt2749 = -var4 + Class44.anInt719;
          }
 
-         if(-101 == -101) {
-         }
       } catch (RuntimeException var8) {
          throw Class44.clientError(var8, "dc.A(" + var1 + ',' + var2 + ',' + -101 + ')');
       }
    }
 
-   private GameObject method1962(boolean var1, int var2) {
+   private GameObject method1962(boolean var1) {
       try {
          boolean var3 = Class58.anIntArrayArrayArray914 != Class44.anIntArrayArrayArray723;
-         ObjectDefinition var4 = Class162.getObjectDefinition(var2 + 6, this.objectId);
+         ObjectDefinition var4 = Class162.getObjectDefinition(-2 + 6, this.objectId);
          int var5 = var4.animationId;
          if(null != var4.ChildrenIds) {
             var4 = var4.method1685(0);
@@ -338,7 +332,7 @@ final class Class140_Sub3 extends GameObject {
             return null;
          } else {
             int var6;
-            if(Class158.anInt2014 != 0 && this.aBoolean2721 && (null == this.aClass142_2722 || null != this.aClass142_2722 && var4.animationId != this.aClass142_2722.animId)) {
+            if(Class158.anInt2014 != 0 && this.aBoolean2721 && (null == this.aClass142_2722 || var4.animationId != this.aClass142_2722.animId)) {
                var6 = var4.animationId;
                if(var4.animationId == -1) {
                   var6 = var5;
@@ -364,7 +358,7 @@ final class Class140_Sub3 extends GameObject {
             var6 = this.anInt2724 & 3;
             int var7;
             int var8;
-            if(~var6 == var2 || var6 == 3) {
+            if(~var6 == -2 || var6 == 3) {
                var8 = var4.SizeX;
                var7 = var4.SizeY;
             } else {
@@ -401,7 +395,7 @@ final class Class140_Sub3 extends GameObject {
                if(this.aClass142_2722 == null) {
                   var20 = var4.method1696(this.anInt2724, var16, var14, this.type, var15, var18, false, var19?Class75_Sub1.aClass109_Sub1_2631:this.aClass109_Sub1_2738, (byte)-128, var13, var17);
                } else {
-                  var20 = var4.method1697(var17, var16, !var19?this.aClass109_Sub1_2738:Class75_Sub1.aClass109_Sub1_2631, var15, this.aClass142_2722, this.anInt2724, var14, var13, this.anInt2726, var2 ^ -8310, var18, this.anInt2733, this.type, this.anInt2746);
+                  var20 = var4.method1697(var17, var16, !var19?this.aClass109_Sub1_2738:Class75_Sub1.aClass109_Sub1_2631, var15, this.aClass142_2722, this.anInt2724, var14, var13, this.anInt2726, -2 ^ -8310, var18, this.anInt2733, this.type, this.anInt2746);
                }
 
                if(null == var20) {
@@ -444,13 +438,13 @@ final class Class140_Sub3 extends GameObject {
             }
          }
       } catch (RuntimeException var23) {
-         throw Class44.clientError(var23, "dc.H(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var23, "dc.H(" + var1 + ',' + -2 + ')');
       }
    }
 
    final GameObject method1963() {
       try {
-         return this.method1962(false, 3 + -5);
+         return this.method1962(false);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "dc.C(" + 3 + ')');
       }
@@ -478,9 +472,6 @@ final class Class140_Sub3 extends GameObject {
          if(Class159.localPlayerCount >= localPlayerAmount) {
             Class159.localPlayerCount = 0;
             var2 = 0;
-            if(false) {
-               method1959(-121, -69, 115, false);
-            }
 
             for(; localPlayerAmount > var2; ++var2) {
                int var3 = Class56.localPlayerIndexes[var2];
@@ -601,7 +592,7 @@ final class Class140_Sub3 extends GameObject {
          }
 
          if(HDToolKit.highDetail && var9 != null) {
-            this.method1962(true, -2);
+            this.method1962(true);
          }
 
          if(var9 == null) {

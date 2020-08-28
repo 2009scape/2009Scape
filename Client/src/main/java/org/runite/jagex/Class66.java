@@ -27,9 +27,6 @@ final class Class66 {
 
 	final boolean method1241() {
 		try {
-			if(-30064 != -30064) {
-				this.aClass13_1000 = (NodeList)null;
-			}
 
 			return 20 <= this.method1246(11706);
 		} catch (RuntimeException var3) {
@@ -84,7 +81,7 @@ final class Class66 {
 						this.aClass3_Sub30_1007.putByte((byte)-26, 1); //High priority JS5 request
 						this.aClass3_Sub30_1007.putTriByte((int)var21.aLong2569);
 						
-						this.aClass89_1005.sendBytes(false, this.aClass3_Sub30_1007.buffer, 4);
+						this.aClass89_1005.sendBytes(this.aClass3_Sub30_1007.buffer, 4);
 						this.aClass13_1000.method879(var21, (byte)-125);
 					}
 
@@ -92,11 +89,11 @@ final class Class66 {
 						this.aClass3_Sub30_1007.index = 0;
 						this.aClass3_Sub30_1007.putByte((byte)-22, 0); //Low priority JS5 request
 						this.aClass3_Sub30_1007.putTriByte((int)var21.aLong2569);
-						this.aClass89_1005.sendBytes(false, this.aClass3_Sub30_1007.buffer, 4);
+						this.aClass89_1005.sendBytes(this.aClass3_Sub30_1007.buffer, 4);
 						this.aClass13_1003.method879(var21, (byte)-128);
 					}
 
-					int var22 = 100 % ((33 - (byte) -61) / 54);
+					int var22 = 0;
 
 					for(int var3 = 0; 100 > var3; ++var3) {
 						var4 = this.aClass89_1005.availableBytes(-18358);
@@ -130,7 +127,7 @@ final class Class66 {
 								var7 = var4;
 							}
 
-							this.aClass89_1005.readBytes(this.aClass3_Sub28_Sub10_Sub2_1012.aClass3_Sub30_4069.index, var7, -18455, this.aClass3_Sub28_Sub10_Sub2_1012.aClass3_Sub30_4069.buffer);
+							this.aClass89_1005.readBytes(this.aClass3_Sub28_Sub10_Sub2_1012.aClass3_Sub30_4069.index, var7, this.aClass3_Sub28_Sub10_Sub2_1012.aClass3_Sub30_4069.buffer);
 							if(this.aByte1009 != 0) {
 								for(var8 = 0; var8 < var7; ++var8) {
 									this.aClass3_Sub28_Sub10_Sub2_1012.aClass3_Sub30_4069.buffer[this.aClass3_Sub28_Sub10_Sub2_1012.aClass3_Sub30_4069.index - -var8] = (byte)Class93.method1519(this.aClass3_Sub28_Sub10_Sub2_1012.aClass3_Sub30_4069.buffer[this.aClass3_Sub28_Sub10_Sub2_1012.aClass3_Sub30_4069.index + var8], this.aByte1009);
@@ -152,7 +149,7 @@ final class Class66 {
 								var6 = var4;
 							}
 
-							this.aClass89_1005.readBytes(this.aClass3_Sub30_1008.index, var6, -18455, this.aClass3_Sub30_1008.buffer);
+							this.aClass89_1005.readBytes(this.aClass3_Sub30_1008.index, var6, this.aClass3_Sub30_1008.buffer);
 							if(0 != this.aByte1009) {
 								for(var7 = 0; var7 < var6; ++var7) {
 									this.aClass3_Sub30_1008.buffer[var7 + this.aClass3_Sub30_1008.index] = (byte)Class93.method1519(this.aClass3_Sub30_1008.buffer[var7 + this.aClass3_Sub30_1008.index], this.aByte1009);
@@ -236,7 +233,7 @@ final class Class66 {
 
 					this.aClass3_Sub30_1007.putByte((byte)-48, 7);
 					this.aClass3_Sub30_1007.putTriByte(0);
-					this.aClass89_1005.sendBytes(false, this.aClass3_Sub30_1007.buffer, 4);
+					this.aClass89_1005.sendBytes(this.aClass3_Sub30_1007.buffer, 4);
 				} catch (IOException var5) {
 					var5.printStackTrace();
 					try {
@@ -258,9 +255,6 @@ final class Class66 {
 
 	static Class3_Sub15 method1245(CacheIndex var1, int var2) {
 		try {
-			if(117 <= 12) {
-				wlPacketSize = 107;
-			}
 
 			byte[] var3 = var1.method2138(var2);
 			return var3 != null?new Class3_Sub15(var3):null;
@@ -289,7 +283,7 @@ final class Class66 {
 						this.aClass3_Sub30_1007.index = 0;
 						this.aClass3_Sub30_1007.putByte((byte)-27, var1?2:3);
 						this.aClass3_Sub30_1007.putTriByte(0);
-						this.aClass89_1005.sendBytes(false, this.aClass3_Sub30_1007.buffer, 4);
+						this.aClass89_1005.sendBytes(this.aClass3_Sub30_1007.buffer, 4);
 					} catch (IOException var6) {
 						var6.printStackTrace();
 						try {
@@ -305,18 +299,15 @@ final class Class66 {
 				}
 			}
 		} catch (RuntimeException var7) {
-			throw Class44.clientError(var7, "jb.B(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var7, "jb.B(" + var1 + ',' + ')');
 		}
 	}
 
 	final void method1248() {
 		try {
-			if(-29340 != -29340) {
-				this.method1246(-28);
-			}
 
 			if(this.aClass89_1005 != null) {
-				this.aClass89_1005.method1467(false);
+				this.aClass89_1005.method1467();
 			}
 
 		} catch (RuntimeException var3) {
@@ -324,11 +315,11 @@ final class Class66 {
 		}
 	}
 
-	final void method1249(boolean var1, IOHandler stream, int var3) {
+	final void method1249(boolean var1, IOHandler stream) {
 		try {
 			if(null != this.aClass89_1005) {
 				try {
-					this.aClass89_1005.close(var3 ^ 14821);
+					this.aClass89_1005.close(0 ^ 14821);
 				} catch (Exception var8) {
 				}
 
@@ -347,13 +338,13 @@ final class Class66 {
 					while(true) {
 						var4 = (Class3_Sub28_Sub10_Sub2)this.aClass13_1003.method877();
 						if(var4 == null) {
-							if(this.aByte1009 != var3) {
+							if(this.aByte1009 != 0) {
 								try {
 									this.aClass3_Sub30_1007.index = 0;
 									this.aClass3_Sub30_1007.putByte((byte)-52, 4);
 									this.aClass3_Sub30_1007.putByte((byte)-24, this.aByte1009);
 									this.aClass3_Sub30_1007.putShort(0);
-									this.aClass89_1005.sendBytes(false, this.aClass3_Sub30_1007.buffer, 4);
+									this.aClass89_1005.sendBytes(this.aClass3_Sub30_1007.buffer, 4);
 								} catch (IOException var7) {
 					            	var7.printStackTrace();
 									try {
@@ -379,7 +370,7 @@ final class Class66 {
 				this.highPriorityRequests.method879(var4, (byte)80);
 			}
 		} catch (RuntimeException var9) {
-			throw Class44.clientError(var9, "jb.M(" + var1 + ',' + (stream != null?"{...}":"null") + ',' + var3 + ')');
+			throw Class44.clientError(var9, "jb.M(" + var1 + ',' + (stream != null?"{...}":"null") + ',' + 0 + ')');
 		}
 	}
 
@@ -455,9 +446,6 @@ final class Class66 {
 
 	final int method1253() {
 		try {
-			if(4 != 4) {
-				this.method1252((byte)-45);
-			}
 
 			return this.highPriorityRequests.method874(-127) - -this.aClass13_1000.method874(-108);
 		} catch (RuntimeException var3) {
@@ -469,10 +457,6 @@ final class Class66 {
 		try {
 			if(this.aClass89_1005 != null) {
 				this.aClass89_1005.close(14821);
-			}
-
-			if(false) {
-				this.method1247(true, false);
 			}
 
 		} catch (RuntimeException var3) {
@@ -516,7 +500,7 @@ final class Class66 {
 						this.aClass3_Sub30_1007.index = 0;
 						this.aClass3_Sub30_1007.putByte((byte)-125, 6);
 						this.aClass3_Sub30_1007.putTriByte(3);
-						this.aClass89_1005.sendBytes(false, this.aClass3_Sub30_1007.buffer, 4);
+						this.aClass89_1005.sendBytes(this.aClass3_Sub30_1007.buffer, 4);
 					} catch (IOException var5) {
 		            	var5.printStackTrace();
 						try {

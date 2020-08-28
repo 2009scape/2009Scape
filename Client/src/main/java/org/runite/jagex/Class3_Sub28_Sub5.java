@@ -126,10 +126,6 @@ final class Class3_Sub28_Sub5 extends Node {
             Class104.aBooleanArray2169[var1] = false;
          }
 
-         if(-21556 != -21556) {
-            method556(21, 1, 64, (byte)40, -34, -70);
-         }
-
          Class75.anInt1105 = 0;
          Class163_Sub2_Sub1.anInt4014 = 0;
          NPCDefinition.anInt1252 = -1;
@@ -257,7 +253,7 @@ final class Class3_Sub28_Sub5 extends Node {
 	}
     */
    //Animation header
-   Class3_Sub28_Sub5(CacheIndex cacheIndex0, CacheIndex var2, int frame, boolean var4) {
+   Class3_Sub28_Sub5(CacheIndex cacheIndex0, CacheIndex var2, int frame) {
       try {
          Class61 var5 = new Class61();
          int size = cacheIndex0.getFileAmount(frame, (byte)69);
@@ -283,14 +279,14 @@ final class Class3_Sub28_Sub5 extends Node {
 
                if(null == skin) {
                   byte[] var13;
-                  if(var4) {
+                  if(false) {
                      var13 = var2.method2140(skinId, 0);
                   } else {
                      var13 = var2.method2140(0, skinId);
                   }
 
                   skin = new Class3_Sub17(skinId, var13);
-                  var5.method1215(true, skin);
+                  var5.method1215(skin);
                }
 
                this.animations[fileIds[var8]] = new AnimationHeader(var9, skin);
@@ -300,7 +296,7 @@ final class Class3_Sub28_Sub5 extends Node {
          }
 
       } catch (RuntimeException var14) {
-         throw Class44.clientError(var14, "cl.<init>(" + (cacheIndex0 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + frame + ',' + var4 + ')');
+         throw Class44.clientError(var14, "cl.<init>(" + (cacheIndex0 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + frame + ',' + false + ')');
       }
    }
 

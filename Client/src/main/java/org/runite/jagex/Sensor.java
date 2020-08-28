@@ -39,11 +39,8 @@ class Sensor {
       }
 
        if(var1 != this.aComponent1733) {
-         if(1 != 1) {
-            this.method1795((byte)-12, (Point)null, -10, (Component)null, -51, (int[])null);
-         }
 
-         if(this.aComponent1733 != null) {
+           if(this.aComponent1733 != null) {
             this.aComponent1733.setCursor((Cursor)null);
             this.aComponent1733 = null;
          }

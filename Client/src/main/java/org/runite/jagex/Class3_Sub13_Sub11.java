@@ -40,9 +40,7 @@ final class Class3_Sub13_Sub11 extends Class3_Sub13 {
       try {
          this.anInt3134 = 4080 & var2 >> 4;
          this.anInt3135 = var2 << 4 & 4080;
-         if((byte) 75 == 75) {
-            this.anInt3129 = (var2 & 16711680) >> 12;
-         }
+         this.anInt3129 = (var2 & 16711680) >> 12;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "fm.Q(" + (byte) 75 + ',' + var2 + ')');
       }
@@ -107,7 +105,7 @@ final class Class3_Sub13_Sub11 extends Class3_Sub13 {
             }
 
             Class3_Sub13_Sub14.method236();
-            Class3_Sub13_Sub6.method195(3000 + 17479);
+            Class3_Sub13_Sub6.method195();
             Class117.method1719(28);
          } else {
             Class84.method1418(-110, Class140_Sub6.spritesCacheIndex);

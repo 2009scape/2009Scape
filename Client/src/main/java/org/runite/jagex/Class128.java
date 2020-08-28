@@ -19,7 +19,7 @@ final class Class128 {
          Class61 var3 = Class3_Sub13_Sub22.aClass61ArrayArrayArray3273[WorldListCountry.localPlane][var2][var0];
          if(var3 == null) {
             ObjectDefinition.method1688(WorldListCountry.localPlane, var2, var0);
-         } else if ((byte) 65 == 65) {
+         } else {
             int var4 = -99999999;
             Class3_Sub28_Sub14 var5 = null;
 
@@ -152,24 +152,24 @@ final class Class128 {
                      if(var7.aClass140_1052 != null && var7.aClass140_1052.method1865()) {
                         Class3_Sub13_Sub10.method214(var7.aClass140_1052, var3, var4, var5, 1, 1);
                         var7.aClass140_1049.method1866(var7.aClass140_1052, 0, 0, 0, false);
-                        var7.aClass140_1052 = var7.aClass140_1052.method1861(-50, -10, -50);
+                        var7.aClass140_1052 = var7.aClass140_1052.method1861();
                      }
 
-                     var7.aClass140_1049 = var7.aClass140_1049.method1861(-50, -10, -50);
+                     var7.aClass140_1049 = var7.aClass140_1049.method1861();
                   }
 
                   for(int var8 = 0; var8 < var6.anInt2223; ++var8) {
                      Class25 var9 = var6.aClass25Array2221[var8];
                      if(var9 != null && var9.aClass140_479.method1865()) {
                         Class3_Sub13_Sub10.method214(var9.aClass140_479, var3, var4, var5, var9.anInt495 - var9.anInt483 + 1, var9.anInt481 - var9.anInt478 + 1);
-                        var9.aClass140_479 = var9.aClass140_479.method1861(-50, -10, -50);
+                        var9.aClass140_479 = var9.aClass140_479.method1861();
                      }
                   }
 
                   Class12 var10 = var6.aClass12_2230;
                   if(var10 != null && var10.object.method1865()) {
                      Class155.method2162(var10.object, var3, var4, var5);
-                     var10.object = var10.object.method1861(-50, -10, -50);
+                     var10.object = var10.object.method1861();
                   }
                }
             }

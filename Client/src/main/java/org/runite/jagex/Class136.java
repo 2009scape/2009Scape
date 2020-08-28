@@ -31,8 +31,8 @@ final class Class136 {
          int var16 = 983040 / var3;
 
          for(int var17 = -var15; var17 < var11 - -var15; ++var17) {
-            int var18 = 0 - -(var17 * var8) >> 16;
-            int var19 = var8 * (var17 + 1) + 0 >> 16;
+            int var18 = - -(var17 * var8) >> 16;
+            int var19 = var8 * (var17 + 1) >> 16;
             int var20 = -var18 + var19;
             if(var20 > 0) {
                int var21 = var4 + var17 >> 6;
@@ -42,8 +42,8 @@ final class Class136 {
                   int[][] var22 = Class44.anIntArrayArrayArray720[var21];
 
                   for(int var23 = -var16; var23 < var12 - -var16; ++var23) {
-                     int var25 = 0 - -(var3 * (var23 - -1)) >> 16;
-                     int var24 = var23 * var3 + 0 >> 16;
+                     int var25 = - -(var3 * (var23 - -1)) >> 16;
+                     int var24 = var23 * var3 >> 16;
                      int var26 = var25 + -var24;
                      if(0 < var26) {
                         var24 += var10;
@@ -60,7 +60,7 @@ final class Class136 {
                                     var30.anInt2531 = var18;
                                     var30.anInt2539 = var24;
                                     var30.anInt2532 = var14.MapIcon;
-                                    Class101.aClass61_1424.method1215(true, var30);
+                                    Class101.aClass61_1424.method1215(var30);
                                  } else {
                                     GameObject.aClass3_Sub28_Sub16_Sub2Array1839[var14.MapIcon].method643(var18 + -7, -7 + var24);
                                  }
@@ -73,17 +73,15 @@ final class Class136 {
             }
          }
 
-         if(127 >= 124) {
-            for(Class3_Sub23 var32 = (Class3_Sub23)Class101.aClass61_1424.method1222(); null != var32; var32 = (Class3_Sub23)Class101.aClass61_1424.method1221()) {
-               Class74.method1330(var32.anInt2531, var32.anInt2539, 15, var13);
-               Class74.method1330(var32.anInt2531, var32.anInt2539, 13, var13);
-               Class74.method1330(var32.anInt2531, var32.anInt2539, 11, var13);
-               Class74.method1330(var32.anInt2531, var32.anInt2539, 9, var13);
-               GameObject.aClass3_Sub28_Sub16_Sub2Array1839[var32.anInt2532].method643(-7 + var32.anInt2531, -7 + var32.anInt2539);
-            }
-
-            Class101.aClass61_1424.method1211(-76);
+         for(Class3_Sub23 var32 = (Class3_Sub23)Class101.aClass61_1424.method1222(); null != var32; var32 = (Class3_Sub23)Class101.aClass61_1424.method1221()) {
+            Class74.method1330(var32.anInt2531, var32.anInt2539, 15, var13);
+            Class74.method1330(var32.anInt2531, var32.anInt2539, 13, var13);
+            Class74.method1330(var32.anInt2531, var32.anInt2539, 11, var13);
+            Class74.method1330(var32.anInt2531, var32.anInt2539, 9, var13);
+            GameObject.aClass3_Sub28_Sub16_Sub2Array1839[var32.anInt2532].method643(-7 + var32.anInt2531, -7 + var32.anInt2539);
          }
+
+         Class101.aClass61_1424.method1211(-76);
       } catch (RuntimeException var31) {
          throw Class44.clientError(var31, "sm.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + 0 + ',' + 0 + ',' + 127 + ',' + var8 + ',' + var9 + ',' + var10 + ')');
       }

@@ -12,9 +12,6 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
    static void method254(boolean var0, Class3_Sub31 var1) {
       try {
          int var4 = (int)var1.aLong71;
-         if(false) {
-            method258(25);
-         }
 
          int var3 = var1.anInt2602;
          var1.method86(-1024);
@@ -32,7 +29,7 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
 
          int var7;
          for(var7 = 0; var6 > var7; ++var7) {
-            if(Class2.method73(Class3_Sub13_Sub7.aShortArray3095[var7], 121)) {
+            if(Class2.method73(Class3_Sub13_Sub7.aShortArray3095[var7])) {
                Class3_Sub25.method509(var7);
             }
          }
@@ -174,9 +171,6 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
    static void method257() {
       try {
          int var1 = 0;
-         if((byte) 125 <= 122) {
-            method259((Class126)null, 69, 54, -87, 72, -85, 88, 37, true);
-         }
 
          for(int var2 = 0; var2 < 104; ++var2) {
             for(int var3 = 0; var3 < 104; ++var3) {

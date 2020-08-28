@@ -35,7 +35,7 @@ final class Class151_Sub1 extends Class151 {
             if(0 == type) {
                Class21.maskUpdateIndexes[Class66.maskUpdateCount++] = 2047;
             } else {
-               int var3 = -112 / (((byte) 81 - 26) / 40);
+               int var3 = -112;
                int var4;
                int var5;
                if(type == 1) { //Walk
@@ -91,27 +91,27 @@ final class Class151_Sub1 extends Class151 {
                }
             }
 
-            int var4 = -66 / ((127 - 53) / 56);
+            int var4 = -66;
             var3 = new Class3();
             var3.aLong71 = (long)var1;
-            this.aClass61_2963.method1215(true, var3);
+            this.aClass61_2963.method1215(var3);
          }
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "bg.H(" + var1 + ',' + 127 + ')');
       }
    }
 
-   final Class62 method2094(int var1) {
+   final Class62 method2094() {
       try {
          if(this.aClass62_2944 != null) {
             return this.aClass62_2944;
-         } else if(var1 == 0) {
+         } else if(0 == 0) {
             if(null == this.aClass3_Sub28_Sub10_2950) {
                if(this.aClass66_2953.method1251((byte)73)) {
                   return null;
                }
 
-               this.aClass3_Sub28_Sub10_2950 = this.aClass66_2953.addJS5Request(var1 ^ 115, 255, (byte)0, this.anInt2957, true);
+               this.aClass3_Sub28_Sub10_2950 = this.aClass66_2953.addJS5Request(0 ^ 115, 255, (byte)0, this.anInt2957, true);
             }
 
             if(this.aClass3_Sub28_Sub10_2950.aBoolean3632) {
@@ -151,7 +151,7 @@ final class Class151_Sub1 extends Class151 {
                      if(this.aClass66_2953.method1251((byte) -71)) {
                         this.aClass3_Sub28_Sub10_2950 = null;
                      } else {
-                        this.aClass3_Sub28_Sub10_2950 = this.aClass66_2953.addJS5Request(var1 + 120, 255, (byte)0, this.anInt2957, true);
+                        this.aClass3_Sub28_Sub10_2950 = this.aClass66_2953.addJS5Request(0 + 120, 255, (byte)0, this.anInt2957, true);
                      }
 
                      return null;
@@ -174,7 +174,7 @@ final class Class151_Sub1 extends Class151 {
             return (Class62)null;
          }
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "bg.B(" + var1 + ')');
+         throw Class44.clientError(var6, "bg.B(" + 0 + ')');
       }
    }
 
@@ -194,9 +194,6 @@ final class Class151_Sub1 extends Class151 {
 
    final int method2102() {
       try {
-         if(0 != 0) {
-            this.method2106(-4);
-         }
 
          return this.anInt2948;
       } catch (RuntimeException var3) {
@@ -268,125 +265,123 @@ final class Class151_Sub1 extends Class151 {
 
    final void method2107() {
       try {
-         if(true) {
-            if(null != this.aClass61_2966) {
-               if(this.method2094(0) == null) {
-                  return;
-               }
+         if(null != this.aClass61_2966) {
+            if(this.method2094() == null) {
+               return;
+            }
 
-               boolean var2;
-               Class3 var3;
-               int var4;
-               if(this.aBoolean2962) {
-                  var2 = true;
+            boolean var2;
+            Class3 var3;
+            int var4;
+            if(this.aBoolean2962) {
+               var2 = true;
 
-                  for(var3 = this.aClass61_2966.method1222(); null != var3; var3 = this.aClass61_2966.method1221()) {
-                     var4 = (int)var3.aLong71;
-                     if(this.aByteArray2949[var4] == 0) {
-                        this.method2109(1, var4, 51);
-                     }
-
-                     if(this.aByteArray2949[var4] == 0) {
-                        var2 = false;
-                     } else {
-                        var3.method86(-1024);
-                     }
+               for(var3 = this.aClass61_2966.method1222(); null != var3; var3 = this.aClass61_2966.method1221()) {
+                  var4 = (int)var3.aLong71;
+                  if(this.aByteArray2949[var4] == 0) {
+                     this.method2109(1, var4, 51);
                   }
 
-                  while(this.aClass62_2944.archiveFileLengths.length > this.anInt2964) {
-                     if (this.aClass62_2944.archiveFileLengths[this.anInt2964] != 0) {
-                        if (this.aClass73_2956.anInt1087 >= 250) {
-                           var2 = false;
-                           break;
-                        }
+                  if(this.aByteArray2949[var4] == 0) {
+                     var2 = false;
+                  } else {
+                     var3.method86(-1024);
+                  }
+               }
 
-                        if (0 == this.aByteArray2949[this.anInt2964]) {
-                           this.method2109(1, this.anInt2964, 99);
-                        }
-
-                        if (this.aByteArray2949[this.anInt2964] == 0) {
-                           var2 = false;
-                           var3 = new Class3();
-                           var3.aLong71 = (long) this.anInt2964;
-                           this.aClass61_2966.method1215(true, var3);
-                        }
-
+               while(this.aClass62_2944.archiveFileLengths.length > this.anInt2964) {
+                  if (this.aClass62_2944.archiveFileLengths[this.anInt2964] != 0) {
+                     if (this.aClass73_2956.anInt1087 >= 250) {
+                        var2 = false;
+                        break;
                      }
+
+                     if (0 == this.aByteArray2949[this.anInt2964]) {
+                        this.method2109(1, this.anInt2964, 99);
+                     }
+
+                     if (this.aByteArray2949[this.anInt2964] == 0) {
+                        var2 = false;
+                        var3 = new Class3();
+                        var3.aLong71 = (long) this.anInt2964;
+                        this.aClass61_2966.method1215(var3);
+                     }
+
+                  }
+                  ++this.anInt2964;
+               }
+
+               if(var2) {
+                  this.aBoolean2962 = false;
+                  this.anInt2964 = 0;
+               }
+            } else if (this.aBoolean2965) {
+               var2 = true;
+
+               for (var3 = this.aClass61_2966.method1222(); var3 != null; var3 = this.aClass61_2966.method1221()) {
+                  var4 = (int) var3.aLong71;
+                  if (this.aByteArray2949[var4] != 1) {
+                     this.method2109(2, var4, 96);
+                  }
+
+                  if (this.aByteArray2949[var4] == 1) {
+                     var3.method86(-1024);
+                  } else {
+                     var2 = false;
+                  }
+               }
+
+               while (this.anInt2964 < this.aClass62_2944.archiveFileLengths.length) {
+                  if (this.aClass62_2944.archiveFileLengths[this.anInt2964] == 0) {
+                     ++this.anInt2964;
+                  } else {
+                     if (this.aClass66_2953.method1241()) {
+                        var2 = false;
+                        break;
+                     }
+
+                     if (1 != this.aByteArray2949[this.anInt2964]) {
+                        this.method2109(2, this.anInt2964, 47);
+                     }
+
+                     if (this.aByteArray2949[this.anInt2964] != 1) {
+                        var3 = new Class3();
+                        var3.aLong71 = (long) this.anInt2964;
+                        this.aClass61_2966.method1215(var3);
+                        var2 = false;
+                     }
+
                      ++this.anInt2964;
                   }
-
-                  if(var2) {
-                     this.aBoolean2962 = false;
-                     this.anInt2964 = 0;
-                  }
-               } else if (this.aBoolean2965) {
-                  var2 = true;
-
-                  for (var3 = this.aClass61_2966.method1222(); var3 != null; var3 = this.aClass61_2966.method1221()) {
-                     var4 = (int) var3.aLong71;
-                     if (this.aByteArray2949[var4] != 1) {
-                        this.method2109(2, var4, 96);
-                     }
-
-                     if (this.aByteArray2949[var4] == 1) {
-                        var3.method86(-1024);
-                     } else {
-                        var2 = false;
-                     }
-                  }
-
-                  while (this.anInt2964 < this.aClass62_2944.archiveFileLengths.length) {
-                     if (this.aClass62_2944.archiveFileLengths[this.anInt2964] == 0) {
-                        ++this.anInt2964;
-                     } else {
-                        if (this.aClass66_2953.method1241()) {
-                           var2 = false;
-                           break;
-                        }
-
-                        if (1 != this.aByteArray2949[this.anInt2964]) {
-                           this.method2109(2, this.anInt2964, 47);
-                        }
-
-                        if (this.aByteArray2949[this.anInt2964] != 1) {
-                           var3 = new Class3();
-                           var3.aLong71 = (long) this.anInt2964;
-                           this.aClass61_2966.method1215(true, var3);
-                           var2 = false;
-                        }
-
-                        ++this.anInt2964;
-                     }
-                  }
-
-                  if (var2) {
-                     this.anInt2964 = 0;
-                     this.aBoolean2965 = false;
-                  }
-               } else {
-                  this.aClass61_2966 = null;
-               }
-            }
-
-            if(this.aBoolean2968 && this.aLong2967 <= Class5.method830((byte)-55)) {
-               for(Class3_Sub28_Sub10 var6 = (Class3_Sub28_Sub10)this.aClass130_2946.method1776(71); var6 != null; var6 = (Class3_Sub28_Sub10)this.aClass130_2946.method1778(-115)) {
-                  if(!var6.aBoolean3632) {
-                     if(var6.aBoolean3635) {
-                        if(!var6.aBoolean3628) {
-                           throw new RuntimeException();
-                        }
-
-                        var6.method86(-1024);
-                     } else {
-                        var6.aBoolean3635 = true;
-                     }
-                  }
                }
 
-               this.aLong2967 = 1000L + Class5.method830((byte)-55);
+               if (var2) {
+                  this.anInt2964 = 0;
+                  this.aBoolean2965 = false;
+               }
+            } else {
+               this.aClass61_2966 = null;
             }
-
          }
+
+         if(this.aBoolean2968 && this.aLong2967 <= Class5.method830((byte)-55)) {
+            for(Class3_Sub28_Sub10 var6 = (Class3_Sub28_Sub10)this.aClass130_2946.method1776(71); var6 != null; var6 = (Class3_Sub28_Sub10)this.aClass130_2946.method1778(-115)) {
+               if(!var6.aBoolean3632) {
+                  if(var6.aBoolean3635) {
+                     if(!var6.aBoolean3628) {
+                        throw new RuntimeException();
+                     }
+
+                     var6.method86(-1024);
+                  } else {
+                     var6.aBoolean3635 = true;
+                  }
+               }
+            }
+
+            this.aLong2967 = 1000L + Class5.method830((byte)-55);
+         }
+
       } catch (RuntimeException var5) {
     	  var5.printStackTrace();
          throw Class44.clientError(var5, "bg.J(" + true + ')');
@@ -411,9 +406,6 @@ final class Class151_Sub1 extends Class151 {
          if(this.aClass62_2944 == null) {
             return 0;
          } else {
-            if((byte) 1 != 1) {
-               anInt2958 = 100;
-            }
 
             return this.aClass62_2944.validArchiveAmount;
          }
@@ -467,7 +459,7 @@ final class Class151_Sub1 extends Class151 {
                var4 = this.aClass66_2953.addJS5Request(-37, this.anInt2957, (byte)2, archiveIndex, false);
             }
 
-            this.aClass130_2946.method1779(1, (Class3)var4, (long)archiveIndex);
+            this.aClass130_2946.method1779((Class3)var4, (long)archiveIndex);
          }
 
          if(((Class3_Sub28_Sub10)var4).aBoolean3632) {
@@ -525,7 +517,7 @@ final class Class151_Sub1 extends Class151 {
                   ((Class3_Sub28_Sub10)var4).method86(-1024);
                   if(((Class3_Sub28_Sub10)var4).aBoolean3628 && !this.aClass66_2953.method1251((byte)-78)) {
                      var12 = this.aClass66_2953.addJS5Request(-13, this.anInt2957, (byte)2, archiveIndex, true);
-                     this.aClass130_2946.method1779(1, var12, (long)archiveIndex);
+                     this.aClass130_2946.method1779(var12, (long)archiveIndex);
                   }
 
                   return null;
@@ -553,7 +545,7 @@ final class Class151_Sub1 extends Class151 {
                   ((Class3_Sub28_Sub10)var4).method86(-1024);
                   if(((Class3_Sub28_Sub10)var4).aBoolean3628 && !this.aClass66_2953.method1251((byte)90)) {
                      var12 = this.aClass66_2953.addJS5Request(112, this.anInt2957, (byte)2, archiveIndex, true);
-                     this.aClass130_2946.method1779(1, var12, (long)archiveIndex);
+                     this.aClass130_2946.method1779(var12, (long)archiveIndex);
                   }
 
                   return null;
@@ -585,16 +577,16 @@ final class Class151_Sub1 extends Class151 {
    final void method2110() {
       try {
          if(this.aClass61_2966 != null) {
-            if(null != this.method2094(0)) {
+            if(null != this.method2094()) {
                for(Class3 var2 = this.aClass61_2963.method1222(); null != var2; var2 = this.aClass61_2963.method1221()) {
                   int var3 = (int)var2.aLong71;
                   if(0 <= var3 && this.aClass62_2944.archiveAmount > var3 && this.aClass62_2944.archiveFileLengths[var3] != 0) {
                      if(this.aByteArray2949[var3] == 0) {
-                        this.method2109(1, var3, 0 + 80);
+                        this.method2109(1, var3, 80);
                      }
 
                      if(-1 == this.aByteArray2949[var3]) {
-                        this.method2109(2, var3, 0 + 78);
+                        this.method2109(2, var3, 78);
                      }
 
                      if(this.aByteArray2949[var3] == 1) {
@@ -615,7 +607,7 @@ final class Class151_Sub1 extends Class151 {
    final int method2111() {
       try {
          int var2 = -96 / ((20 - -61) / 33);
-         return null != this.method2094(0)?100:(null == this.aClass3_Sub28_Sub10_2950?0:this.aClass3_Sub28_Sub10_2950.method586());
+         return null != this.method2094()?100:(null == this.aClass3_Sub28_Sub10_2950?0:this.aClass3_Sub28_Sub10_2950.method586());
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "bg.E(" + -61 + ')');
       }
@@ -636,7 +628,7 @@ final class Class151_Sub1 extends Class151 {
       }
    }
 
-   Class151_Sub1(int var1, Class41 var2, Class41 var3, Class66 var4, Class73 var5, int var6, int var7, boolean var8) {
+   Class151_Sub1(int var1, Class41 var2, Class41 var3, Class66 var4, Class73 var5, int var6, int var7) {
       try {
          this.anInt2957 = var1;
          this.aClass41_2954 = var2;
@@ -649,7 +641,7 @@ final class Class151_Sub1 extends Class151 {
 
          this.aClass73_2956 = var5;
          this.anInt2955 = var6;
-         this.aBoolean2968 = var8;
+         this.aBoolean2968 = true;
          this.aClass41_2943 = var3;
          this.aClass66_2953 = var4;
          this.anInt2947 = var7;
@@ -658,7 +650,7 @@ final class Class151_Sub1 extends Class151 {
          }
 
       } catch (RuntimeException var10) {
-         throw Class44.clientError(var10, "bg.<init>(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ',' + var7 + ',' + var8 + ')');
+         throw Class44.clientError(var10, "bg.<init>(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ',' + var7 + ',' + true + ')');
       }
    }
 

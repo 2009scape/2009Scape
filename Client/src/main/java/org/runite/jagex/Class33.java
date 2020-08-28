@@ -267,7 +267,7 @@ final class Class33 {
          }
       }
 
-      this.aByteArray594[var4 * 9 + 0] = (byte)(this.anInt596 / 16384);
+      this.aByteArray594[var4 * 9] = (byte)(this.anInt596 / 16384);
       this.aByteArray594[var4 * 9 + 1] = (byte)(this.anInt596 / 128 & 127);
       this.aByteArray594[var4 * 9 + 2] = (byte)(this.anInt596 & 127);
       this.aByteArray594[var4 * 9 + 3] = (byte)(var17 - var15);

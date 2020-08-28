@@ -22,9 +22,7 @@ final class Class75_Sub2 extends Class75 {
          int var5 = var2 * this.anInt2636 >> 12;
          int var6 = this.anInt2644 * var3 >> 12;
          int var7 = this.anInt2647 * var3 >> 12;
-         if(2 == 2) {
-            Class95.method1584(this.anInt1101, var7, var4, var6, var5);
-         }
+          Class95.method1584(this.anInt1101, var7, var4, var6, var5);
       } catch (RuntimeException var8) {
          throw Class44.clientError(var8, "kc.A(" + 2 + ',' + var2 + ',' + var3 + ')');
       }
@@ -49,7 +47,7 @@ final class Class75_Sub2 extends Class75 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "kc.E(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "kc.E(" + var1 + ',' + ',' + var3 + ')');
       }
    }
 

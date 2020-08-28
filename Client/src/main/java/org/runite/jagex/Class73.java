@@ -23,9 +23,6 @@ static boolean aBoolean1080 = false;
       try {
          NodeList var3 = this.aClass13_1086;
          synchronized(var3) {
-            if(104 != 104) {
-               this.method1304(-114);
-            }
 
             this.aClass13_1086.method879(var1, (byte)-127);
             ++this.anInt1087;
@@ -36,15 +33,15 @@ static boolean aBoolean1080 = false;
       }
    }
 
-   static Class3_Sub28_Sub17 method1300(int var0, int var1, byte var2, CacheIndex var3, CacheIndex var4) {
+   static Class3_Sub28_Sub17 method1300(int var1, byte var2, CacheIndex var3, CacheIndex var4) {
       try {
          if(var2 < 123) {
             aBoolean1080 = false;
          }
          //System.out.println("Class 73 " + var1);
-         return !Class75_Sub4.method1351(var3, var0, var1, -30901)?null:NodeList.method880(-22376, var4.getFile(var1, var0));
+         return !Class75_Sub4.method1351(var3, 0, var1, -30901)?null:NodeList.method880(-22376, var4.getFile(var1, 0));
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "k.C(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var6, "k.C(" + 0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
       }
    }
 
@@ -187,15 +184,13 @@ static boolean aBoolean1080 = false;
                Class65.anInt987 -= var9;
             }
 
-            if(true) {
-               if(HDToolKit.highDetail && var4 && (Math.abs(var9) > 104 || 104 < Math.abs(var10))) {
-                  Class3_Sub13_Sub14.method236();
-               }
-
-               Class58.anInt909 = -1;
-               Class3_Sub13_Sub15.aClass61_3177.method1211(-122);
-               Class3_Sub13_Sub30.aClass61_3364.method1211(-87);
+            if(HDToolKit.highDetail && var4 && (Math.abs(var9) > 104 || 104 < Math.abs(var10))) {
+               Class3_Sub13_Sub14.method236();
             }
+
+            Class58.anInt909 = -1;
+            Class3_Sub13_Sub15.aClass61_3177.method1211(-122);
+            Class3_Sub13_Sub30.aClass61_3364.method1211(-87);
          }
       } catch (RuntimeException var22) {
          throw Class44.clientError(var22, "k.D(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + true + ')');
@@ -209,7 +204,7 @@ static boolean aBoolean1080 = false;
             var1.method86(-1024);
             var1.method524();
             return var1;
-         } else if((byte) -36 == -36) {
+         } else {
             do {
                var1 = (Class3_Sub28_Sub6)Class81.aClass13_1139.method876((byte)63);
                if(var1 == null) {
@@ -225,8 +220,6 @@ static boolean aBoolean1080 = false;
             } while((Long.MIN_VALUE & var1.aLong2569) == 0L);
 
             return var1;
-         } else {
-            return (Class3_Sub28_Sub6)null;
          }
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "k.J(" + (byte) -36 + ')');
@@ -292,7 +285,7 @@ static boolean aBoolean1080 = false;
                   }
                }
 
-               var1 = RenderAnimationDefinition.method903(new RSString[]{var1.method1557(var3, 0 + 0, 0), Class154.method2148(Class164_Sub2.method2247((byte)107, 0, var0)), var1.method1556(2 + var3)}, (byte)-89);
+               var1 = RenderAnimationDefinition.method903(new RSString[]{var1.method1557(var3, 0, 0), Class154.method2148(Class164_Sub2.method2247((byte)107, 0, var0)), var1.method1556(2 + var3)}, (byte)-89);
             }
          }
       } catch (RuntimeException var7) {
@@ -354,9 +347,6 @@ static boolean aBoolean1080 = false;
          var4.aClass41_4056 = var3;
          var4.anInt4061 = 3;
          var4.aBoolean3628 = false;
-         if(-27447 != -27447) {
-            aBoolean1084 = false;
-         }
 
          var4.aLong2569 = (long)var1;
          this.method1299(var4);
@@ -429,7 +419,7 @@ static boolean aBoolean1080 = false;
 
             if(command.equals(-110, Class95.COMMAND_BREAK_CONNECTION)) {
                Class38.aClass87_665.method1431(0);
-               Class3_Sub15.aClass89_2429.method1467(false);
+               Class3_Sub15.aClass89_2429.method1467();
                Class58.aClass66_917.method1248();
             }
 

@@ -32,7 +32,7 @@ final class Class100 {
          }
 
          double var11 = var3;
-         int var13 = 77 % (((byte) 81 - 21) / 57);
+         int var13 = 0;
          double var14 = 0.0D;
          if(var5 > var3) {
             var11 = var5;
@@ -102,9 +102,6 @@ final class Class100 {
          while(true) {
             int var4 = var2.getByte((byte)-43);
             if(var4 == 0) {
-               if(255 != 255) {
-                  anInt1407 = -8;
-               }
 
                return;
             }
@@ -122,7 +119,7 @@ final class Class100 {
             return -1;
          } else {
             for(int var2 = 0; var2 < Class119.aClass131_1624.anInt1720; ++var2) {
-               if(Class119.aClass131_1624.aClass94Array1721[var2].method1560(Class3_Sub13_Sub16.aClass94_3192, true, Class3_Sub28_Sub10_Sub2.aClass94_4066).method1562((byte)-32, var1)) {
+               if(Class119.aClass131_1624.aClass94Array1721[var2].method1560(Class3_Sub13_Sub16.aClass94_3192, Class3_Sub28_Sub10_Sub2.aClass94_4066).method1562((byte)-32, var1)) {
                   return var2;
                }
             }
@@ -172,10 +169,6 @@ final class Class100 {
             this.aBoolean1411 = false;
          }
 
-         if((byte) -52 != -52) {
-            anInt1407 = -121;
-         }
-
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "ni.E(" + (byte) -52 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
       }
@@ -186,9 +179,7 @@ final class Class100 {
          ++Class19.anInt421;
          Class3_Sub13_Sub1.outgoingBuffer.putOpcode(188);
          Class3_Sub13_Sub1.outgoingBuffer.putByteA(var2, 255 + -13326);
-         if(255 == 255) {
-            Class3_Sub13_Sub1.outgoingBuffer.putLong(var1.toLong(-126), -2037491440);
-         }
+         Class3_Sub13_Sub1.outgoingBuffer.putLong(var1.toLong(-126), -2037491440);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ni.B(" + 255 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }

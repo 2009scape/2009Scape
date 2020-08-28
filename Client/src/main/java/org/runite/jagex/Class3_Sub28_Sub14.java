@@ -23,7 +23,7 @@ final class Class3_Sub28_Sub14 extends Node {
                   return;
                }
 
-               Class3_Sub13_Sub1.method169(64 ^ 22166);
+               Class3_Sub13_Sub1.method169();
                Class140_Sub3.anInt2737 = 10;
             }
 
@@ -81,25 +81,22 @@ final class Class3_Sub28_Sub14 extends Node {
                Class36.method1014(var6, var5);
                Class140_Sub3.anInt2737 = 20;
             } else if(Class140_Sub3.anInt2737 == 20) {
-               Class15.method889((byte)105, new RSByteBuffer(Class3_Sub13_Sub17.aClass153_3210.method2123(0, Class96.aClass94_1349, RSByteBuffer.aClass3_Sub28_Sub3_2600.aClass94_3561)));
+               Class15.method889((byte)105, new RSByteBuffer(Class3_Sub13_Sub17.aClass153_3210.method2123(Class96.aClass94_1349, RSByteBuffer.aClass3_Sub28_Sub3_2600.aClass94_3561)));
                Class140_Sub3.anInt2737 = 30;
                Class163_Sub1.method2210(true);
                Class75_Sub4.method1355();
             } else {
-               if(64 != 64) {
-                  method628(-40, -12, 40, (Player)null);
-               }
 
                if(Class140_Sub3.anInt2737 == 30) {
-                  Class163_Sub2.method2219(new RSByteBuffer(Class3_Sub13_Sub17.aClass153_3210.method2123(0, PacketParser.aClass94_85, RSByteBuffer.aClass3_Sub28_Sub3_2600.aClass94_3561)));
+                  Class163_Sub2.method2219(new RSByteBuffer(Class3_Sub13_Sub17.aClass153_3210.method2123(PacketParser.aClass94_85, RSByteBuffer.aClass3_Sub28_Sub3_2600.aClass94_3561)));
                   Class140_Sub3.anInt2737 = 40;
                   Class75_Sub4.method1355();
                } else if(Class140_Sub3.anInt2737 == 40) {
-                  Class3_Sub13_Sub34.method328(new RSByteBuffer(Class3_Sub13_Sub17.aClass153_3210.method2123(0, Class3_Sub13_Sub11.aClass94_3140, RSByteBuffer.aClass3_Sub28_Sub3_2600.aClass94_3561)));
+                  Class3_Sub13_Sub34.method328(new RSByteBuffer(Class3_Sub13_Sub17.aClass153_3210.method2123(Class3_Sub13_Sub11.aClass94_3140, RSByteBuffer.aClass3_Sub28_Sub3_2600.aClass94_3561)));
                   Class140_Sub3.anInt2737 = 50;
                   Class75_Sub4.method1355();
                } else if (Class140_Sub3.anInt2737 == 50) {
-                  Class96.method1587(new RSByteBuffer(Class3_Sub13_Sub17.aClass153_3210.method2123(64 + -64, Class19.aClass94_422, RSByteBuffer.aClass3_Sub28_Sub3_2600.aClass94_3561)));
+                  Class96.method1587(new RSByteBuffer(Class3_Sub13_Sub17.aClass153_3210.method2123(Class19.aClass94_422, RSByteBuffer.aClass3_Sub28_Sub3_2600.aClass94_3561)));
                   Class140_Sub3.anInt2737 = 60;
                   Class163_Sub1.method2210(true);
                   Class75_Sub4.method1355();

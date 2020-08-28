@@ -28,13 +28,10 @@ final class Player extends Class140_Sub4 {
    final int getSize() {
       try {
          if(null == this.class52 || this.class52.pnpcId == -1) {
-            if((byte) 114 != 114) {
-               this.hasDefinitions((byte)-22);
-            }
 
             return super.getSize();
          } else {
-            return Node.method522(this.class52.pnpcId, (byte) 114 + 26998).size;
+            return Node.method522(this.class52.pnpcId).size;
          }
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "e.H(" + (byte) 114 + ')');
@@ -43,9 +40,6 @@ final class Player extends Class140_Sub4 {
 
    final int getRenderAnimationId() {
       try {
-         if(-1 != -1) {
-            this.finalize();
-         }
 
          return this.renderAnimationId;
       } catch (RuntimeException var3) {
@@ -118,7 +112,7 @@ final class Player extends Class140_Sub4 {
 
          this.renderAnimationId = buffer.getShort(1);
          long var20 = buffer.getLong(-99);
-         this.displayName = Class41.method1052(-29664, var20).method1545();
+         this.displayName = Class41.method1052(var20).method1545();
          this.COMBAT_LEVEL = buffer.getByte((byte)-41);
          if(var6) {
             this.anInt3974 = buffer.getShort(1);
@@ -197,7 +191,7 @@ final class Player extends Class140_Sub4 {
             if(var15 != null) {
                this.anInt2820 = var15.method1871();
                Model var23;
-               if(Class140_Sub6.aBoolean2910 && (-1 == this.class52.pnpcId || Node.method522(this.class52.pnpcId, 27112).aBoolean1249)) {
+               if(Class140_Sub6.aBoolean2910 && (-1 == this.class52.pnpcId || Node.method522(this.class52.pnpcId).aBoolean1249)) {
                   var23 = Class140_Sub3.method1957(160, this.aBoolean2810, var14 == null?var13:var14, this.anInt2819, 0, this.anInt2829, 0, 1, var15, var1, null != var14?this.anInt2813:this.anInt2832, this.anInt2831, 240);
                   if(HDToolKit.highDetail) {
                      float var18 = HDToolKit.method1852();
@@ -370,10 +364,10 @@ final class Player extends Class140_Sub4 {
       }
    }
 
-   final RSString getName(int var1) {
+   final RSString getName() {
       try {
          RSString var2 = this.displayName;
-         if(var1 != 0) {
+         if(0 != 0) {
             this.animate(-63, 126, 58, -9, -74, -119, -45, -114, -62L, -76, (Class127_Sub1)null);
          }
 
@@ -387,7 +381,7 @@ final class Player extends Class140_Sub4 {
 
          return var2;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "e.Q(" + var1 + ')');
+         throw Class44.clientError(var3, "e.Q(" + 0 + ')');
       }
    }
 
@@ -395,7 +389,7 @@ final class Player extends Class140_Sub4 {
 
    final void method1981(int var2, boolean var3, int var4) {
       try {
-         super.method1967((byte) 126 + -128, this.getSize(), var2, var4, var3);
+         super.method1967(this.getSize(), var2, var4, var3);
 
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "e.O(" + (byte) 126 + ',' + var2 + ',' + var3 + ',' + var4 + ')');

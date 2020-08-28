@@ -51,9 +51,6 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
          if(null != this.anImageConsumer2978) {
             this.anImageConsumer2978.setPixels(var3, var5, var1, var2, this.aColorModel2979, this.anIntArray2007, var5 * this.anInt2012 + var3, this.anInt2012);
             this.anImageConsumer2978.imageComplete(2);
-            if((byte) -124 > -29) {
-               method2189((Class91[])null, false, -53);
-            }
 
          }
       } catch (RuntimeException var7) {
@@ -75,12 +72,10 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
    final void drawGraphics(int var1, int var2, int var4, Graphics var5, int var6) {
       try {
          this.method2188(var1, var4, var2, var6);
-         if(6260 == 6260) {
-            Shape var7 = var5.getClip();
-            var5.clipRect(var2, var6, var1, var4);
-            var5.drawImage(this.anImage2009, 0, 0, this);
-            var5.setClip(var7);
-         }
+         Shape var7 = var5.getClip();
+         var5.clipRect(var2, var6, var1, var4);
+         var5.drawImage(this.anImage2009, 0, 0, this);
+         var5.setClip(var7);
       } catch (RuntimeException var8) {
          throw Class44.clientError(var8, "di.E(" + var1 + ',' + var2 + ',' + 6260 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ')');
       }
@@ -657,16 +652,16 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
       }
    }
 
-   private synchronized void method2190(int var1) {
+   private synchronized void method2190() {
       try {
-         if(var1 == 19661184) {
+         if(19661184 == 19661184) {
             if(this.anImageConsumer2978 != null) {
                this.anImageConsumer2978.setPixels(0, 0, this.anInt2012, this.anInt2011, this.aColorModel2979, this.anIntArray2007, 0, this.anInt2012);
                this.anImageConsumer2978.imageComplete(2);
             }
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "di.L(" + var1 + ')');
+         throw Class44.clientError(var3, "di.L(" + 19661184 + ')');
       }
    }
 
@@ -890,11 +885,8 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
 
    final void method2179(Graphics var3) {
       try {
-         if(0 != 0) {
-            aBoolean2981 = true;
-         }
 
-         this.method2190(19661184);
+         this.method2190();
          var3.drawImage(this.anImage2009, 0, 0, this);
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "di.C(" + 0 + ',' + 0 + ',' + (var3 != null?"{...}":"null") + ',' + 0 + ')');
@@ -908,16 +900,13 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
          this.anInt2012 = var3;
          this.aColorModel2979 = new DirectColorModel(32, 16711680, '\uff00', 255);
          this.anImage2009 = var4.createImage(this);
-         this.method2190(19661184);
+         this.method2190();
          var4.prepareImage(this.anImage2009, this);
-         this.method2190(19661184);
+         this.method2190();
          var4.prepareImage(this.anImage2009, this);
-         this.method2190(19661184);
+         this.method2190();
          var4.prepareImage(this.anImage2009, this);
          this.method2182();
-         if(false) {
-            this.addConsumer((ImageConsumer)null);
-         }
 
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "di.F(" + var1 + ',' + false + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ')');
@@ -934,9 +923,6 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
 
    static void method2192() {
       try {
-         if(-68 > -26) {
-            method2191(-54, -79, 96, 36, -65, 4, -120, 29, false, -60, -74, 43);
-         }
 
          Class154.aClass93_1955.method1523((byte)-110);
       } catch (RuntimeException var2) {

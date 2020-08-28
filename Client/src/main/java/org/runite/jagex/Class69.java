@@ -10,9 +10,9 @@ final class Class69 {
    static int anInt1042;
    static CacheIndex aClass153_1043;
 
-   final int method1280(int var1, int var2) {
+   final int method1280(int var1) {
       try {
-         if(var2 == 1) {
+         if(1 == 1) {
             int var3 = (this.anIntArray1041.length >> 1) + -1;
             int var4 = var3 & var1;
 
@@ -32,7 +32,7 @@ final class Class69 {
             return -68;
          }
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "jg.D(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var6, "jg.D(" + var1 + ',' + 1 + ')');
       }
    }
 
@@ -98,7 +98,7 @@ final class Class69 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "jg.<init>(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "jg.<init>(" + "null" + ')');
       }
    }
 

@@ -164,9 +164,6 @@ final class Class3_Sub13_Sub39 extends Class3_Sub13 {
    static void method354(int var1) {
       try {
          Class3_Sub13_Sub30.anInt3362 = -1;
-         if(-126 >= -121) {
-            anInt3466 = -58;
-         }
 
          Class3_Sub13_Sub30.anInt3362 = -1;
          Class3_Sub4.anInt2251 = var1;
@@ -245,9 +242,6 @@ final class Class3_Sub13_Sub39 extends Class3_Sub13 {
             if(this.anIntArrayArray3469.length <= var2) {
                return this.anIntArray3467;
             } else {
-               if((byte) -106 != -106) {
-                  this.aShortArray3465 = (short[])null;
-               }
 
                return this.anIntArrayArray3469[var2];
             }
@@ -269,7 +263,7 @@ final class Class3_Sub13_Sub39 extends Class3_Sub13 {
 
          aBooleanArrayArray3468 = (boolean[][])null;
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "wi.O(" + var0 + ')');
+         throw Class44.clientError(var2, "wi.O(" + ')');
       }
    }
 

@@ -33,9 +33,9 @@ final class Class58 {
       }
    }
 
-   static void method1194(int var0) {
+   static void method1194() {
       try {
-         if(var0 == -16385) {
+         if(-16385 == -16385) {
             if(null != Class3_Sub21.aClass155_2491) {
                Class3_Sub21.aClass155_2491.method2153();
             }
@@ -46,7 +46,7 @@ final class Class58 {
 
          }
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "id.A(" + var0 + ')');
+         throw Class44.clientError(var2, "id.A(" + -16385 + ')');
       }
    }
 
@@ -127,9 +127,6 @@ final class Class58 {
    static void method1196(int var3, int var4) {
       try {
          Class3_Sub28_Sub18.anInt3765 = var4;
-         if((byte) 111 != 111) {
-            aBoolean913 = true;
-         }
 
          Class101.anInt1425 = 0;
          Class159.anInt2020 = 0;
@@ -141,9 +138,6 @@ final class Class58 {
 
    static void method1197(CacheIndex var0) {
       try {
-         if((byte) 69 != 69) {
-            method1195(-53, (Signlink)null, (Component)null, 79, 12);
-         }
 
          Class46.aClass153_737 = var0;
       } catch (RuntimeException var3) {

@@ -29,9 +29,6 @@ final class RuntimeException_Sub1 extends RuntimeException {
 
    static int method2286() {
       try {
-         if((byte) -5 != -5) {
-            worldListHost = (String)null;
-         }
 
          return 6;
       } catch (RuntimeException var2) {

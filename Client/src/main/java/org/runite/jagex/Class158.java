@@ -39,16 +39,13 @@ abstract class Class158 {
 
          aClass94_2006 = null;
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "vk.H(" + var0 + ')');
+         throw Class44.clientError(var2, "vk.H(" + ')');
       }
    }
 
    final void method2182() {
       try {
          Class74.method1319(this.anIntArray2007, this.anInt2012, this.anInt2011);
-         if(0 != 0) {
-            anInt2015 = -118;
-         }
 
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "vk.G(" + 0 + ')');
@@ -58,35 +55,33 @@ abstract class Class158 {
    static void method2183(int var0, boolean var1, int var2, int var4, RSInterface[] var5) {
       try {
          int var6 = 0;
-         if(235 == 235) {
-            for(; var5.length > var6; ++var6) {
-               RSInterface var7 = var5[var6];
-               if(null != var7 && var7.parentId == var0) {
-                  Class3_Sub28_Sub11.method603(var4, 13987, var2, var7, var1);
-                  Class62.method1224(var7, 23730, var4, var2);
-                  if(var7.anInt247 > var7.anInt240 - var7.anInt168) {
-                     var7.anInt247 = var7.anInt240 - var7.anInt168;
-                  }
+         for(; var5.length > var6; ++var6) {
+            RSInterface var7 = var5[var6];
+            if(null != var7 && var7.parentId == var0) {
+               Class3_Sub28_Sub11.method603(var4, 13987, var2, var7, var1);
+               Class62.method1224(var7, var4, var2);
+               if(var7.anInt247 > var7.anInt240 - var7.anInt168) {
+                  var7.anInt247 = var7.anInt240 - var7.anInt168;
+               }
 
-                  if(var7.anInt208 > -var7.anInt193 + var7.anInt252) {
-                     var7.anInt208 = var7.anInt252 - var7.anInt193;
-                  }
+               if(var7.anInt208 > -var7.anInt193 + var7.anInt252) {
+                  var7.anInt208 = var7.anInt252 - var7.anInt193;
+               }
 
-                  if(var7.anInt208 < 0) {
-                     var7.anInt208 = 0;
-                  }
+               if(var7.anInt208 < 0) {
+                  var7.anInt208 = 0;
+               }
 
-                  if(var7.anInt247 < 0) {
-                     var7.anInt247 = 0;
-                  }
+               if(var7.anInt247 < 0) {
+                  var7.anInt247 = 0;
+               }
 
-                  if(var7.type == 0) {
-                     Class151_Sub1.method2104(var7, var1, 235 + -343);
-                  }
+               if(var7.type == 0) {
+                  Class151_Sub1.method2104(var7, var1, 235 + -343);
                }
             }
-
          }
+
       } catch (RuntimeException var8) {
          throw Class44.clientError(var8, "vk.A(" + var0 + ',' + var1 + ',' + var2 + ',' + 235 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ')');
       }

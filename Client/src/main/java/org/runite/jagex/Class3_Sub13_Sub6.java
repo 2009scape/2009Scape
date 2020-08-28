@@ -15,11 +15,11 @@ final class Class3_Sub13_Sub6 extends Class3_Sub13 {
    static int anInt3084;
 
 
-   static void method195(int var0) {
+   static void method195() {
       try {
          int var1 = (NPC.anInt3995 >> 10) - -(Class131.anInt1716 >> 3);
          int var2 = (Class77.anInt1111 >> 10) - -(Class82.anInt1152 >> 3);
-         if(var0 == 20479) {
+         if(20479 == 20479) {
             byte var3 = 0;
             byte var4 = 8;
             byte var6 = 18;
@@ -73,7 +73,7 @@ final class Class3_Sub13_Sub6 extends Class3_Sub13 {
             Class73.method1301(var3, var2, var1, var5, true, var4);
          }
       } catch (RuntimeException var10) {
-         throw Class44.clientError(var10, "ca.F(" + var0 + ')');
+         throw Class44.clientError(var10, "ca.F(" + 20479 + ')');
       }
    }
 
@@ -147,9 +147,6 @@ final class Class3_Sub13_Sub6 extends Class3_Sub13 {
 
    static void method198(boolean var0) {
       try {
-         if(-32624 != -32624) {
-            method196(true);
-         }
 
          int var3 = Class164_Sub2.aByteArrayArray3027.length;
          byte[][] var2;
@@ -164,7 +161,7 @@ final class Class3_Sub13_Sub6 extends Class3_Sub13 {
             if(var5 != null) {
                int var6 = -Class131.anInt1716 + 64 * (Class3_Sub24_Sub3.anIntArray3494[var4] >> 8);
                int var7 = (Class3_Sub24_Sub3.anIntArray3494[var4] & 255) * 64 + -Class82.anInt1152;
-               Class58.method1194(-32624 + 16239);
+               Class58.method1194();
                Class3_Sub15.method374(var6, var0, var5, var7, Class86.aClass91Array1182);
             }
          }
@@ -176,9 +173,6 @@ final class Class3_Sub13_Sub6 extends Class3_Sub13 {
 
    static void method199(int var0, int var1, int var2) {
       try {
-         if(-799 != -799) {
-            aBoolean3078 = true;
-         }
 
          if(CS2Script.anInt2453 != 0 && var0 != 0 && Class113.anInt1552 < 50 && var1 != -1) {
             Class3_Sub25.anIntArray2550[Class113.anInt1552] = var1;

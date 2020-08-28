@@ -23,18 +23,14 @@ final class Class3_Sub28_Sub15 extends Node {
       try {
          Class100 var2 = (Class100)Class44.aClass93_725.get((long)var1);
          if(var2 == null) {
-            if(true) {
-               byte[] var3 = Class3_Sub23.aClass153_2536.getFile(1, var1);
-               var2 = new Class100();
-               if(null != var3) {
-                  var2.method1601(var1, new RSByteBuffer(var3));
-               }
-
-               Class44.aClass93_725.put((byte)-104, var2, (long)var1);
-               return var2;
-            } else {
-               return (Class100)null;
+            byte[] var3 = Class3_Sub23.aClass153_2536.getFile(1, var1);
+            var2 = new Class100();
+            if(null != var3) {
+               var2.method1601(var1, new RSByteBuffer(var3));
             }
+
+            Class44.aClass93_725.put((byte)-104, var2, (long)var1);
+            return var2;
          } else {
             return var2;
          }

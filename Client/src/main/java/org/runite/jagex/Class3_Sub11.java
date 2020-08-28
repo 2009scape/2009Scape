@@ -96,7 +96,7 @@ final class Class3_Sub11 extends Class3 {
       this.aFloatArray2354[this.anInt2343] = var6;
       this.anIntArray2348[this.anInt2343] = var7;
       if(var9 != 0L) {
-         this.aClass130_2353.method1779(1, new Class3_Sub18(this.anInt2343), var9);
+         this.aClass130_2353.method1779(new Class3_Sub18(this.anInt2343), var9);
       }
 
       return this.anInt2343++;

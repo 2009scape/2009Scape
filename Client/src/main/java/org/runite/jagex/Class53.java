@@ -17,7 +17,7 @@ final class Class53 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "hi.C(" + var0 + ')');
+         throw Class44.clientError(var2, "hi.C(" + ')');
       }
    }
 
@@ -35,9 +35,6 @@ final class Class53 {
          int var7 = var3 * var3 + var4 * var4;
          if(var7 <= 360000) {
             int var8 = Math.min(var5.anInt168 / 2, var5.anInt193 / 2);
-            if(false) {
-               anInt865 = -79;
-            }
 
             if(var8 * var8 >= var7) {
                Class38_Sub1.method1030(var5, Class129_Sub1.aClass3_Sub28_Sub16Array2690[var0], var4, var3, var1, var2);
@@ -116,7 +113,7 @@ final class Class53 {
       }
    }
 
-   static void parseWorldList(RSByteBuffer buffer, int var1) {
+   static void parseWorldList(RSByteBuffer buffer) {
       try {
          int var2 = buffer.getSmart();
          Class119.countries = new WorldListCountry[var2];
@@ -128,7 +125,7 @@ final class Class53 {
             Class119.countries[var3].name = buffer.getGJString2(105);
          }
 
-         if(var1 > -10) {
+         if(-88 > -10) {
             method1174((RSInterface)null, (byte)-126);
          }
 
@@ -151,7 +148,7 @@ final class Class53 {
          Class3_Sub28_Sub7.updateStamp = buffer.getInt();
          Class30.loadedWorldList = true;
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "hi.B(" + (buffer != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var6, "hi.B(" + (buffer != null?"{...}":"null") + ',' + -88 + ')');
       }
    }
 

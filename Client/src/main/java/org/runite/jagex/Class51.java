@@ -3088,7 +3088,7 @@ final class Class51 {
    }
 
    private static void method1150() {
-      int var2 = 0 * 128;
+      int var2 = 0;
 
       for(int var3 = 0; var3 < 512; ++var3) {
          double var4 = (double)(var3 >> 3) / 64.0D + 0.0078125D;

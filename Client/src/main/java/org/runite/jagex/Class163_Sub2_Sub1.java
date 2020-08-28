@@ -65,9 +65,6 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
          Class3_Sub28_Sub7_Sub1.aClass93_4043.method1523((byte)-117);
          CS2Script.aClass93_2442.method1523((byte)-108);
          Class154.aClass93_1964.method1523((byte)-117);
-         if((byte) 127 <= 122) {
-            method2223(true, (byte)-67);
-         }
 
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "t.G(" + (byte) 127 + ')');
@@ -88,7 +85,7 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
          }
 
          for(int var5 = 0; var5 < var3; ++var5) {
-            Class58.method1194(-16385);
+            Class58.method1194();
 
             for(int var6 = 0; var6 < 13; ++var6) {
                for(int var7 = 0; var7 < 13; ++var7) {
@@ -121,9 +118,6 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
    static boolean method2224(long var1, int var3, int var4) {
       try {
          int var5 = (int)var1 >> 14 & 31;
-         if((byte) 39 != 39) {
-            method2220(-62);
-         }
 
          int var6 = (int)var1 >> 20 & 3;
          int var7 = (int)(var1 >>> 32) & Integer.MAX_VALUE;

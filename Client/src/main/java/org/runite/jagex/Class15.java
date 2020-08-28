@@ -18,7 +18,7 @@ final class Class15 implements Runnable {
    volatile boolean aBoolean353 = false;
 
 
-   static boolean method888(int var0, ObjectDefinition var1, boolean var2, int var3, int var4, int var5, int var6) {
+   static boolean method888(int var0, ObjectDefinition var1, int var3, int var4, int var5, int var6) {
       try {
          Class2 var7 = Class3_Sub28_Sub6.c(var1.anInt1516);
          if(var7.anInt64 == -1) {
@@ -31,7 +31,7 @@ final class Class15 implements Runnable {
                var6 = 0;
             }
 
-            if(var2) {
+            if(false) {
                aClass64_351 = (Class64)null;
             }
 
@@ -63,7 +63,7 @@ final class Class15 implements Runnable {
             }
          }
       } catch (RuntimeException var13) {
-         throw Class44.clientError(var13, "cj.D(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var13, "cj.D(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + false + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
@@ -231,7 +231,7 @@ final class Class15 implements Runnable {
             return var2;
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "cj.E(" + false + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "cj.E(" + ',' + var1 + ',' + "{...}" + ')');
       }
    }
 

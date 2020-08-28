@@ -55,9 +55,6 @@ abstract class Class44 {
 
 	static void method1069(long[] var0, int var1, int var2, int[] var3) {
 		try {
-			if(-24337 != -24337) {
-				clientError((Throwable)null, (String)null);
-			}
 
 			if(var2 > var1) {
 				int var6 = var1;
@@ -131,9 +128,6 @@ abstract class Class44 {
 	static void method1073() {
 		try {
 			Class3_Sub28_Sub4.method551(0, 0);
-			if(97 != 97) {
-				method1068(-108, 80, 18);
-			}
 
 		} catch (RuntimeException var2) {
 			throw clientError(var2, "gj.L(" + 97 + ')');
@@ -154,9 +148,6 @@ abstract class Class44 {
 
 	final boolean method1075() {
 		try {
-			if(64 != 64) {
-				this.settings = 51;
-			}
 
 			return (2 & this.settings) != 0;
 		} catch (RuntimeException var3) {
@@ -173,7 +164,7 @@ abstract class Class44 {
 			String s;
 			BufferedReader stdout = new BufferedReader(new InputStreamReader(p.getInputStream()));
 			while ((s = stdout.readLine()) != null) {
-				if (s == null || s.length() == 0) {
+				if (s.length() == 0) {
 					continue;
 				}
 				format += s;

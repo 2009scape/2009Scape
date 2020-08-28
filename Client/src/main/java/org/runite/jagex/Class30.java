@@ -94,11 +94,8 @@ final class Class30 {
 
    private File method977() {
       try {
-         if(281669816 != 281669816) {
-            method974(true);
-         }
 
-         return this.aClass122_573.method1742(-83);
+          return this.aClass122_573.method1742(-83);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "en.D(" + 281669816 + ')');
       }
@@ -226,9 +223,6 @@ final class Class30 {
       try {
          this.method975((byte)-75);
          this.aClass122_573.close(1);
-         if(false) {
-            this.aLong569 = 91L;
-         }
 
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "en.K(" + false + ')');
@@ -238,11 +232,8 @@ final class Class30 {
    private void method981() throws IOException {
       try {
          this.anInt575 = 0;
-         if(4393 != 4393) {
-            this.method976(-127);
-         }
 
-         if(this.aLong570 != this.aLong569) {
+          if(this.aLong570 != this.aLong569) {
             this.aClass122_573.method1737((byte)-10, this.aLong569);
             this.aLong570 = this.aLong569;
          }
@@ -269,11 +260,8 @@ final class Class30 {
 
    final void method982(byte[] var2) throws IOException {
       try {
-         if(false) {
-            method979(-72, 3, 3, (byte)-115);
-         }
 
-         this.method978(0, var2, var2.length);
+          this.method978(0, var2, var2.length);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "en.B(" + false + ',' + (var2 != null?"{...}":"null") + ')');
       }

@@ -18,11 +18,8 @@ final class Class38_Sub1 extends Class38 {
    static void method1030(RSInterface var0, Class3_Sub28_Sub16 var1, int var2, int var3, int var4, int var6) {
       try {
          if(null != var1) {
-            if((byte) 11 != 11) {
-               method1032(true);
-            }
 
-            int var9 = var3 * var3 - -(var2 * var2);
+             int var9 = var3 * var3 - -(var2 * var2);
             int var7 = 2047 & Class3_Sub13_Sub8.anInt3102 + GraphicDefinition.CAMERA_DIRECTION;
             int var8 = Math.max(var0.anInt168 / 2, var0.anInt193 / 2) - -10;
             if(var8 * var8 >= var9) {
@@ -41,17 +38,14 @@ final class Class38_Sub1 extends Class38 {
             }
          }
       } catch (RuntimeException var14) {
-         throw Class44.clientError(var14, "em.B(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (byte) 11 + ',' + var6 + ')');
+         throw Class44.clientError(var14, "em.B(" + (var0 != null ? "{...}" : "null") + ',' + "{...}" + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (byte) 11 + ',' + var6 + ')');
       }
    }
 
    static int method1031(int var0) {
       try {
-         if(2 != 2) {
-            aClass94_2610 = (RSString)null;
-         }
 
-         return var0 >>> 7;
+          return var0 >>> 7;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "em.C(" + var0 + ',' + 2 + ')');
       }
@@ -68,7 +62,7 @@ final class Class38_Sub1 extends Class38 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "em.A(" + var0 + ')');
+         throw Class44.clientError(var2, "em.A(" + ')');
       }
    }
 

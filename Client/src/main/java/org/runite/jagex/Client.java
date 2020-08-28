@@ -37,9 +37,7 @@ public final class Client extends GameShell {
 				int var5;
 				if(null == Class3_Sub13_Sub10.aFrame3121) {
 					Object var3;
-					if(Class3_Sub13_Sub10.aFrame3121 != null) {
-						var3 = Class3_Sub13_Sub10.aFrame3121;
-					} else if(GameShell.frame == null) {
+					if(GameShell.frame == null) {
 						var3 = Class38.aClass87_665.anApplet1219;
 					} else {
 						var3 = GameShell.frame;
@@ -248,10 +246,6 @@ public final class Client extends GameShell {
 					Class101.aClass30_1422.method980();
 				}
 
-				if((byte) 23 <= 20) {
-					return;
-				}
-
 				if(Class163_Sub2.aClass30Array2998 != null) {
 					for(int var2 = 0; var2 < Class163_Sub2.aClass30Array2998.length; ++var2) {
 						if(null != Class163_Sub2.aClass30Array2998[var2]) {
@@ -391,9 +385,6 @@ public final class Client extends GameShell {
 			Class38_Sub1.accRegistryIp = Configurations.MS_IP;
 			Class123.anInt1658 = Class3_Sub28_Sub19.anInt3773;
 			Class3_Sub13_Sub38.aShortArray3455 = Class3_Sub13_Sub9.aShortArray3110 = Class136.aShortArray1779 = Class3_Sub13_Sub38.aShortArray3453 = new short[256];
-			if(2 != 2) {
-				method51((RSInterface)null);
-			}
 
 			Class140_Sub6.accRegistryPort = Class123.anInt1658;
 			if(Signlink.anInt1214 == 3 && 2 != Class44.anInt718) {
@@ -740,9 +731,6 @@ public final class Client extends GameShell {
 
 	static AnimationDefinition getAnimationDefinition(int var0) {
 		try {
-			if((byte) -20 != -20) {
-				aClass3_Sub11ArrayArray2199 = (Class3_Sub11[][])((Class3_Sub11[][])null);
-			}
 
 			AnimationDefinition var2 = (AnimationDefinition)Class82.aClass93_1146.get((long)var0);
 			if(var2 == null) {
@@ -835,13 +823,13 @@ public final class Client extends GameShell {
 				RSByteBuffer.method744();
 			} else if(0 == Class3_Sub13_Sub25.loginStage && 0 == Canvas_Sub1.registryStage) {
 				if(Class133.anInt1753 == 2) {
-					CS2Script.method379((byte) 1 ^ 1025);
+					CS2Script.method379();
 				} else {
 					Class3_Sub28_Sub6.d('\uffff');
 				}
 
 				if(14 > NPC.anInt3995 >> 7 || NPC.anInt3995 >> 7 >= 90 || 14 > Class77.anInt1111 >> 7 || Class77.anInt1111 >> 7 >= 90) {
-					Class3_Sub13_Sub6.method195((byte) 1 ^ 20478);
+					Class3_Sub13_Sub6.method195();
 				}
 			}
 
@@ -885,7 +873,7 @@ public final class Client extends GameShell {
 									}
 								}
 
-								Class43.method1065(1073376993, var11);
+								Class43.method1065(var11);
 							}
 						}
 
@@ -897,7 +885,7 @@ public final class Client extends GameShell {
 							}
 						}
 
-						Class43.method1065(1073376993, var11);
+						Class43.method1065(var11);
 					}
 				}
 
@@ -909,7 +897,7 @@ public final class Client extends GameShell {
 					}
 				}
 
-				Class43.method1065((byte) 1 ^ 1073376992, var11);
+				Class43.method1065(var11);
 			}
 		} catch (RuntimeException var10) {
 			throw Class44.clientError(var10, "client." + (byte) 1 + ')');
@@ -930,9 +918,6 @@ public final class Client extends GameShell {
 
 	private void method49() {
 		try {
-			if(-31379 != -31379) {
-				method51((RSInterface)null);
-			}
 
 			if(Class58.aClass66_917.anInt1011 > Class163_Sub2_Sub1.anInt4026) {
 				Class3_Sub13_Sub5.anInt3068 = 5 * 50 * (Class58.aClass66_917.anInt1011 + -1);
@@ -999,7 +984,7 @@ public final class Client extends GameShell {
                         var2.putByte((byte)-69, 15); //JS5 handshake
                         var2.putInt(-31379 + 31252, Configurations.CLIENT_BUILD);
                         var2.putInt(-31379 + 31252, Configurations.SUB_BUILD);
-                        InputStream_Sub1.js5Connection.sendBytes(false, var2.buffer, 9);
+                        InputStream_Sub1.js5Connection.sendBytes(var2.buffer, 9);
                         ++PacketParser.anInt80;
                         Class3_Sub13_Sub30.aLong3366 = Class5.method830((byte)-55);
                     }
@@ -1023,7 +1008,7 @@ public final class Client extends GameShell {
 
 					if(PacketParser.anInt80 == 4) {
 						boolean var6 = Class143.loadingStage == 5 || Class143.loadingStage == 10 || Class143.loadingStage == 28;
-						Class58.aClass66_917.method1249(!var6, InputStream_Sub1.js5Connection, -31379 + 31379);
+						Class58.aClass66_917.method1249(!var6, InputStream_Sub1.js5Connection);
 						InputStream_Sub1.js5Connection = null;
 						Class17.aClass64_413 = null;
 						PacketParser.anInt80 = 0;
@@ -1226,7 +1211,7 @@ public final class Client extends GameShell {
 								var30.aClass11_2449 = inter;
 								var30.anInt2441 = Class29.anInt561;
 								var30.arguments = inter.anObjectArray183;
-								Class110.aClass61_1471.method1215(true, var30);
+								Class110.aClass61_1471.method1215(var30);
 							}
 
 							if(Class56.aClass11_886 != null || Class67.aClass11_1017 != null || Class38_Sub1.aBoolean2615 || inter.anInt189 != 1400 && Class3_Sub19.anInt2475 > 0) {
@@ -1314,7 +1299,7 @@ public final class Client extends GameShell {
 									var30.anInt2447 = Class163_Sub1.anInt2993 - var10;
 									var30.anInt2441 = Class38_Sub1.anInt2614 - var11;
 									var30.arguments = inter.anObjectArray165;
-									Class110.aClass61_1471.method1215(true, var30);
+									Class110.aClass61_1471.method1215(var30);
 								}
 							}
 
@@ -1325,7 +1310,7 @@ public final class Client extends GameShell {
 								var30.anInt2447 = Class126.anInt1676 - var10;
 								var30.anInt2441 = Class130.anInt1709 - var11;
 								var30.arguments = inter.anObjectArray170;
-								Class110.aClass61_1471.method1215(true, var30);
+								Class110.aClass61_1471.method1215(var30);
 							}
 
 							if(inter.aBoolean188 && !var25) {
@@ -1337,7 +1322,7 @@ public final class Client extends GameShell {
 									var30.anInt2447 = Class126.anInt1676 - var10;
 									var30.anInt2441 = Class130.anInt1709 - var11;
 									var30.arguments = inter.anObjectArray239;
-									Class65.aClass61_983.method1215(true, var30);
+									Class65.aClass61_983.method1215(var30);
 								}
 							}
 
@@ -1348,7 +1333,7 @@ public final class Client extends GameShell {
 								var30.anInt2447 = Class126.anInt1676 - var10;
 								var30.anInt2441 = Class130.anInt1709 - var11;
 								var30.arguments = inter.anObjectArray180;
-								Class110.aClass61_1471.method1215(true, var30);
+								Class110.aClass61_1471.method1215(var30);
 							}
 
 							if(!inter.aBoolean163 && var26) {
@@ -1360,7 +1345,7 @@ public final class Client extends GameShell {
 									var30.anInt2447 = Class126.anInt1676 - var10;
 									var30.anInt2441 = Class130.anInt1709 - var11;
 									var30.arguments = inter.anObjectArray248;
-									Class110.aClass61_1471.method1215(true, var30);
+									Class110.aClass61_1471.method1215(var30);
 								}
 							}
 
@@ -1371,7 +1356,7 @@ public final class Client extends GameShell {
 								var30.anInt2447 = Class126.anInt1676 - var10;
 								var30.anInt2441 = Class130.anInt1709 - var11;
 								var30.arguments = inter.anObjectArray276;
-								Class110.aClass61_1471.method1215(true, var30);
+								Class110.aClass61_1471.method1215(var30);
 							}
 
 							if(inter.aBoolean163 && !var26) {
@@ -1383,7 +1368,7 @@ public final class Client extends GameShell {
 									var30.anInt2447 = Class126.anInt1676 - var10;
 									var30.anInt2441 = Class130.anInt1709 - var11;
 									var30.arguments = inter.anObjectArray281;
-									Class65.aClass61_983.method1215(true, var30);
+									Class65.aClass61_983.method1215(var30);
 								}
 							}
 
@@ -1391,7 +1376,7 @@ public final class Client extends GameShell {
 								var30 = new CS2Script();
 								var30.aClass11_2449 = inter;
 								var30.arguments = inter.anObjectArray269;
-								PacketParser.aClass61_82.method1215(true, var30);
+								PacketParser.aClass61_82.method1215(var30);
 							}
 
 							CS2Script var22;
@@ -1406,7 +1391,7 @@ public final class Client extends GameShell {
 													var22 = new CS2Script();
 													var22.aClass11_2449 = inter;
 													var22.arguments = inter.anObjectArray161;
-													Class110.aClass61_1471.method1215(true, var22);
+													Class110.aClass61_1471.method1215(var22);
 													break label531;
 												}
 											}
@@ -1415,7 +1400,7 @@ public final class Client extends GameShell {
 									var30 = new CS2Script();
 									var30.aClass11_2449 = inter;
 									var30.arguments = inter.anObjectArray161;
-									Class110.aClass61_1471.method1215(true, var30);
+									Class110.aClass61_1471.method1215(var30);
 								}
 
 								inter.anInt284 = PacketParser.anInt87;
@@ -1432,7 +1417,7 @@ public final class Client extends GameShell {
 													var22 = new CS2Script();
 													var22.aClass11_2449 = inter;
 													var22.arguments = inter.anObjectArray221;
-													Class110.aClass61_1471.method1215(true, var22);
+													Class110.aClass61_1471.method1215(var22);
 													break label512;
 												}
 											}
@@ -1441,7 +1426,7 @@ public final class Client extends GameShell {
 									var30 = new CS2Script();
 									var30.aClass11_2449 = inter;
 									var30.arguments = inter.anObjectArray221;
-									Class110.aClass61_1471.method1215(true, var30);
+									Class110.aClass61_1471.method1215(var30);
 								}
 
 								inter.anInt242 = Class3_Sub9.anInt2317;
@@ -1458,7 +1443,7 @@ public final class Client extends GameShell {
 													var22 = new CS2Script();
 													var22.aClass11_2449 = inter;
 													var22.arguments = inter.anObjectArray282;
-													Class110.aClass61_1471.method1215(true, var22);
+													Class110.aClass61_1471.method1215(var22);
 													break label493;
 												}
 											}
@@ -1467,7 +1452,7 @@ public final class Client extends GameShell {
 									var30 = new CS2Script();
 									var30.aClass11_2449 = inter;
 									var30.arguments = inter.anObjectArray282;
-									Class110.aClass61_1471.method1215(true, var30);
+									Class110.aClass61_1471.method1215(var30);
 								}
 
 								inter.anInt213 = Class36.anInt641;
@@ -1484,7 +1469,7 @@ public final class Client extends GameShell {
 													var22 = new CS2Script();
 													var22.aClass11_2449 = inter;
 													var22.arguments = inter.anObjectArray174;
-													Class110.aClass61_1471.method1215(true, var22);
+													Class110.aClass61_1471.method1215(var22);
 													break label474;
 												}
 											}
@@ -1493,7 +1478,7 @@ public final class Client extends GameShell {
 									var30 = new CS2Script();
 									var30.aClass11_2449 = inter;
 									var30.arguments = inter.anObjectArray174;
-									Class110.aClass61_1471.method1215(true, var30);
+									Class110.aClass61_1471.method1215(var30);
 								}
 
 								inter.anInt255 = Class62.anInt944;
@@ -1510,7 +1495,7 @@ public final class Client extends GameShell {
 													var22 = new CS2Script();
 													var22.aClass11_2449 = inter;
 													var22.arguments = inter.anObjectArray158;
-													Class110.aClass61_1471.method1215(true, var22);
+													Class110.aClass61_1471.method1215(var22);
 													break label455;
 												}
 											}
@@ -1519,7 +1504,7 @@ public final class Client extends GameShell {
 									var30 = new CS2Script();
 									var30.aClass11_2449 = inter;
 									var30.arguments = inter.anObjectArray158;
-									Class110.aClass61_1471.method1215(true, var30);
+									Class110.aClass61_1471.method1215(var30);
 								}
 
 								inter.anInt311 = Class49.anInt815;
@@ -1529,35 +1514,35 @@ public final class Client extends GameShell {
 								var30 = new CS2Script();
 								var30.aClass11_2449 = inter;
 								var30.arguments = inter.anObjectArray256;
-								Class110.aClass61_1471.method1215(true, var30);
+								Class110.aClass61_1471.method1215(var30);
 							}
 
 							if(Class110.anInt1472 > inter.anInt234 && inter.anObjectArray156 != null) {
 								var30 = new CS2Script();
 								var30.aClass11_2449 = inter;
 								var30.arguments = inter.anObjectArray156;
-								Class110.aClass61_1471.method1215(true, var30);
+								Class110.aClass61_1471.method1215(var30);
 							}
 
 							if(Class167.anInt2087 > inter.anInt234 && inter.anObjectArray313 != null) {
 								var30 = new CS2Script();
 								var30.aClass11_2449 = inter;
 								var30.arguments = inter.anObjectArray313;
-								Class110.aClass61_1471.method1215(true, var30);
+								Class110.aClass61_1471.method1215(var30);
 							}
 
 							if(Class121.anInt1642 > inter.anInt234 && inter.anObjectArray268 != null) {
 								var30 = new CS2Script();
 								var30.aClass11_2449 = inter;
 								var30.arguments = inter.anObjectArray268;
-								Class110.aClass61_1471.method1215(true, var30);
+								Class110.aClass61_1471.method1215(var30);
 							}
 
 							if(Class140_Sub6.anInt2905 > inter.anInt234 && inter.anObjectArray315 != null) {
 								var30 = new CS2Script();
 								var30.aClass11_2449 = inter;
 								var30.arguments = inter.anObjectArray315;
-								Class110.aClass61_1471.method1215(true, var30);
+								Class110.aClass61_1471.method1215(var30);
 							}
 
 							inter.anInt234 = Class3_Sub13_Sub17.anInt3213;
@@ -1568,7 +1553,7 @@ public final class Client extends GameShell {
 									var31.anInt2444 = Class133.anIntArray1755[var19];
 									var31.anInt2443 = Class120.anIntArray1638[var19];
 									var31.arguments = inter.anObjectArray220;
-									Class110.aClass61_1471.method1215(true, var31);
+									Class110.aClass61_1471.method1215(var31);
 								}
 							}
 
@@ -1576,7 +1561,7 @@ public final class Client extends GameShell {
 								var30 = new CS2Script();
 								var30.aClass11_2449 = inter;
 								var30.arguments = inter.anObjectArray217;
-								Class110.aClass61_1471.method1215(true, var30);
+								Class110.aClass61_1471.method1215(var30);
 							}
 						}
 					}
@@ -1932,7 +1917,7 @@ public final class Client extends GameShell {
 								Class3_Sub13_Sub11.method219(true);
 							}
 						} else if (Class3_Sub13_Sub25.aClass153_3304.method2125(Class3_Sub28_Sub14.aClass94_3672, TextCore.HasHuffman)) {
-							Class36 var9 = new Class36(Class3_Sub13_Sub25.aClass153_3304.method2123(0, Class3_Sub28_Sub14.aClass94_3672, TextCore.HasHuffman));
+							Class36 var9 = new Class36(Class3_Sub13_Sub25.aClass153_3304.method2123(Class3_Sub28_Sub14.aClass94_3672, TextCore.HasHuffman));
 							Class1.method69(var9, 104);
 							Class3_Sub17.aClass94_2464 = TextCore.LoadedWordPack;
 							Class96.anInt1354 = 130;
@@ -1990,7 +1975,7 @@ public final class Client extends GameShell {
 	            }
 
 	            Class3_Sub29.method728();
-	            Class58.method1194(-16385);
+	            Class58.method1194();
 	            Class32.method996();
 	            Class62.method1225();
 	            if(HDToolKit.highDetail) {
@@ -2013,7 +1998,7 @@ public final class Client extends GameShell {
 					Class40.method1046(-117);
 				}
 
-				 var4 = 121 / (((byte) 107 - 27) / 42);
+				 var4 = 121;
 	            if(10 == Class143.loadingStage) {
 	               this.method47();
 	               Class3_Sub13_Sub21.method267((byte)36);

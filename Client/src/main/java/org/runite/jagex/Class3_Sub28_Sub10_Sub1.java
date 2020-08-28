@@ -15,9 +15,6 @@ final class Class3_Sub28_Sub10_Sub1 extends Class3_Sub28_Sub10 {
 
    final byte[] method587() {
       try {
-         if(false) {
-            aBoolean4063 = true;
-         }
 
          if(this.aBoolean3632) {
             throw new RuntimeException();
@@ -88,9 +85,6 @@ final class Class3_Sub28_Sub10_Sub1 extends Class3_Sub28_Sub10 {
 
    final int method586() {
       try {
-         if(false) {
-            this.aClass41_4056 = (Class41)null;
-         }
 
          return this.aBoolean3632?0:100;
       } catch (RuntimeException var3) {
@@ -112,10 +106,8 @@ final class Class3_Sub28_Sub10_Sub1 extends Class3_Sub28_Sub10 {
 
    static void method595() {
       try {
-         if(109 > 108) {
-            Class41.aClass93_684.method1522(-128, 5);
-            Class163_Sub1.aClass93_2984.method1522(-125, 5);
-         }
+         Class41.aClass93_684.method1522(-128, 5);
+         Class163_Sub1.aClass93_2984.method1522(-125, 5);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "c.O(" + 5 + ',' + 109 + ')');
       }

@@ -96,12 +96,9 @@ class Class3 {
 
    static Class106[] method88() {
       try {
-         if((byte) 28 != 28) {
-            aBooleanArray73 = (boolean[])null;
-         }
 
          if(Class56.aClass106Array890 == null) {
-            Class106[] var1 = Class3_Sub28_Sub10_Sub2.method596((byte) 28 ^ 22, Class38.aClass87_665);
+            Class106[] var1 = Class3_Sub28_Sub10_Sub2.method596(Class38.aClass87_665);
             Class106[] var2 = new Class106[var1.length];
             int var3 = 0;
 

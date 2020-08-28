@@ -10,9 +10,6 @@ final class Class108 {
 
    static void method1652(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
       try {
-         if(0 != 0) {
-            COMMAND_HIGHRES_GRAPHICS_WINDOW = (RSString)null;
-         }
 
          if(Class101.anInt1425 <= var5 && Class3_Sub28_Sub18.anInt3765 >= var5 && var0 >= Class101.anInt1425 && Class3_Sub28_Sub18.anInt3765 >= var0 && Class101.anInt1425 <= var6 && var6 <= Class3_Sub28_Sub18.anInt3765 && var1 >= Class101.anInt1425 && Class3_Sub28_Sub18.anInt3765 >= var1 && var4 >= Class159.anInt2020 && Class57.anInt902 >= var4 && Class159.anInt2020 <= var7 && Class57.anInt902 >= var7 && var2 >= Class159.anInt2020 && var2 <= Class57.anInt902 && Class159.anInt2020 <= var3 && Class57.anInt902 >= var3) {
             Class3_Sub5.method114(var2, var8, var7, var6, var1, var3, var4, var0, var5);
@@ -27,9 +24,6 @@ final class Class108 {
 
    static RSString method1653(int var0) {
       try {
-         if(0 != 0) {
-            method1660(-41);
-         }
 
          return RenderAnimationDefinition.method903(new RSString[]{Class72.method1298((byte)9, 255 & var0 >> 24), Class163_Sub2_Sub1.aClass94_4023, Class72.method1298((byte)9, (var0 & 16712751) >> 16), Class163_Sub2_Sub1.aClass94_4023, Class72.method1298((byte)9, 255 & var0 >> 8), Class163_Sub2_Sub1.aClass94_4023, Class72.method1298((byte)9, var0 & 255)}, (byte)-110);
       } catch (RuntimeException var3) {
@@ -52,16 +46,13 @@ final class Class108 {
          if(var1 == null) {
             return null;
          } else {
-            if((byte) -46 > -30) {
-               aClass3_Sub28_Sub16_1457 = (Class3_Sub28_Sub16)null;
-            }
 
             byte[] var2 = new byte[var1.length];
             Class76.method1357(var1, 0, var2, 0, var1.length);
             return var2;
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "oi.H(" + (byte) -46 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "oi.H(" + (byte) -46 + ',' + "{...}" + ')');
       }
    }
 
@@ -94,10 +85,7 @@ final class Class108 {
    static void method1657(int var0) {
       try {
          Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 5, var0);
-         var2.a(true);
-         if(-903 != -903) {
-            COMMAND_HIGHRES_GRAPHICS_WINDOW = (RSString)null;
-         }
+         var2.a();
 
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "oi.J(" + var0 + ',' + -903 + ')');
@@ -116,8 +104,6 @@ final class Class108 {
    static void method1659() {
       try {
          Class61.aClass93_939.method1524();
-         if(16712751 == 16712751) {
-         }
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "oi.G(" + 16712751 + ')');
       }
@@ -140,9 +126,6 @@ final class Class108 {
       try {
          Class14.aBoolean337 = true;
          Class69.aClass153_1043 = var2;
-         if(2 != 2) {
-            method1658(22, (int[])null, (Object[])null);
-         }
 
          Class85.aClass153_1171 = var1;
       } catch (RuntimeException var5) {

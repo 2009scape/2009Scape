@@ -130,9 +130,7 @@ final class Class3_Sub13_Sub17 extends Class3_Sub13 {
 
    static void method250(CacheIndex var1) {
       try {
-         if(2048 == 2048) {
-            Class8.aClass153_105 = var1;
-         }
+         Class8.aClass153_105 = var1;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "je.C(" + 2048 + ',' + (var1 != null?"{...}":"null") + ')');
       }
@@ -140,9 +138,7 @@ final class Class3_Sub13_Sub17 extends Class3_Sub13 {
 
    static int method251() {
       try {
-         if(-1 != -1) {
-            return 18;
-         } else if(Class119.aClass131_1624 == null) {
+         if(Class119.aClass131_1624 == null) {
             return -1;
          } else {
             while(Class119.aClass131_1624.anInt1720 > Class136.anInt1780) {
@@ -175,10 +171,6 @@ final class Class3_Sub13_Sub17 extends Class3_Sub13 {
             }
          }
 
-         if(8 != 8) {
-            anInt3213 = 122;
-         }
-
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "je.S(" + 8 + ')');
       }
@@ -204,9 +196,6 @@ final class Class3_Sub13_Sub17 extends Class3_Sub13 {
 
    static void method253(int var1, int var2, int var3, int var4) {
       try {
-         if(-22611 != -22611) {
-            method246(83);
-         }
 
          Class3_Sub28_Sub1.anInt3536 = Class23.anInt455 * var3 / var1;
          Class3_Sub4.anInt2251 = Class108.anInt1460 * var2 / var4;

@@ -55,10 +55,6 @@ final class Class114 {
             this.anIntArrayArray1573[var2] = null;
          }
 
-         if(1127165736 != 1127165736) {
-            method1711(118, 75);
-         }
-
          this.anIntArrayArray1573 = (int[][])null;
          this.aClass3_Sub26Array1571 = null;
          this.aClass61_1577.method1211(-85);
@@ -70,44 +66,37 @@ final class Class114 {
 
    static Class3_Sub28_Sub16 method1707(int var0, int var1, boolean var2, int var3, int var4) {
       try {
-         if(65536 == 65536) {
-            int var7 = (!var2?0:65536) + var1 + (var0 << 17) + (var4 << 19);
-            long var8 = (long)var7 * 3849834839L + 3147483667L * (long)var3;
-            Class3_Sub28_Sub16 var10 = (Class3_Sub28_Sub16)Class67.aClass93_1013.get(var8);
-            if(var10 == null) {
-               Class51.aBoolean837 = false;
-               var10 = RSString.method1570(var4, (byte)13, false, var1, var2, var0, var3, false);
-               if(var10 != null && !Class51.aBoolean837) {
-                  Class67.aClass93_1013.put((byte)-79, var10, var8);
-               }
-
+         int var7 = (!var2?0:65536) + var1 + (var0 << 17) + (var4 << 19);
+         long var8 = (long)var7 * 3849834839L + 3147483667L * (long)var3;
+         Class3_Sub28_Sub16 var10 = (Class3_Sub28_Sub16)Class67.aClass93_1013.get(var8);
+         if(var10 == null) {
+            Class51.aBoolean837 = false;
+            var10 = RSString.method1570(var4, (byte)13, false, var1, var2, var0, var3, false);
+            if(var10 != null && !Class51.aBoolean837) {
+               Class67.aClass93_1013.put((byte)-79, var10, var8);
             }
-            return var10;
-         } else {
-            return (Class3_Sub28_Sub16)null;
+
          }
+         return var10;
       } catch (RuntimeException var11) {
          throw Class44.clientError(var11, "pf.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + 65536 + ')');
       }
    }
 
-   static void method1708(int var0, int var1, int var2) {
+   static void method1708(int var0, int var1) {
       try {
-         if(var2 == -2553) {
-            Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(var2 ^ -2557, 13, var1);
+         if(-2553 == -2553) {
+            Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(-2553 ^ -2557, 13, var1);
             var3.g();
             var3.anInt3598 = var0;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "pf.E(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "pf.E(" + var0 + ',' + var1 + ',' + -2553 + ')');
       }
    }
 
    final int[] method1709(int var2) {
       try {
-         if(-16409 != -16409) {
-            this.aBoolean1580 = false;
-         }
 
          if(this.anInt1579 == this.anInt1568) {
             this.aBoolean1580 = this.aClass3_Sub26Array1571[var2] == null;

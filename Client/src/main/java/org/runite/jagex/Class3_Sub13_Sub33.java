@@ -102,9 +102,6 @@ final class Class3_Sub13_Sub33 extends Class3_Sub13 {
          Class92.setLightPosition(-50.0F, -60.0F, -50.0F);
          Class92.setFogValues(Class92.defaulFogColorRgb, 0);
          Class92.method1504();
-         if(false) {
-            aByteArrayArrayArray3390 = (byte[][][])((byte[][][])null);
-         }
 
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "si.Q(" + var0 + ',' + false + ')');

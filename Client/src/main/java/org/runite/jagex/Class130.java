@@ -237,20 +237,20 @@ final class Class130 {
       }
    }
 
-   final void method1779(int var1, Class3 var2, long var3) {
+   final void method1779(Class3 var2, long var3) {
       try {
          if(null != var2.aClass3_76) {
-            var2.method86(var1 + -1025);
+            var2.method86(1 + -1025);
          }
 
-         Class3 var5 = this.aClass3Array1697[(int)(var3 & (long)(this.anInt1700 - var1))];
+         Class3 var5 = this.aClass3Array1697[(int)(var3 & (long)(this.anInt1700 - 1))];
          var2.aClass3_74 = var5;
          var2.aLong71 = var3;
          var2.aClass3_76 = var5.aClass3_76;
          var2.aClass3_76.aClass3_74 = var2;
          var2.aClass3_74.aClass3_76 = var2;
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "sc.E(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var6, "sc.E(" + 1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }
    }
 
@@ -350,9 +350,6 @@ final class Class130 {
       try {
          if (null != this.aClass3_1706) {
             Class3 var2 = this.aClass3Array1697[(int) (this.aLong1708 & (long) (-1 + this.anInt1700))];
-            if (0 != 0) {
-               method1772(-100, 110, -46, (NPC) null);
-            }
 
             while (var2 != this.aClass3_1706) {
                if (this.aClass3_1706.aLong71 == this.aLong1708) {

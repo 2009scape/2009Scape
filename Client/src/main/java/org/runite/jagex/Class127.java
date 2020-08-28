@@ -58,7 +58,7 @@ class Class127 {
                   Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-40, 14);
                   int nameHash = (int)(var1 >> 16 & 31L);
                   Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-39, nameHash);
-                  Class3_Sub15.aClass89_2429.sendBytes(false, Class3_Sub13_Sub1.outgoingBuffer.buffer, 2);
+                  Class3_Sub15.aClass89_2429.sendBytes(Class3_Sub13_Sub1.outgoingBuffer.buffer, 2);
                   if(WorldListEntry.aClass155_2627 != null) {
                      WorldListEntry.aClass155_2627.method2159(106);
                   }
@@ -92,7 +92,7 @@ class Class127 {
                      return;
                   }
 
-                  Class3_Sub15.aClass89_2429.readBytes(0, 8, -18455, GraphicDefinition.incomingBuffer.buffer);
+                  Class3_Sub15.aClass89_2429.readBytes(0, 8, GraphicDefinition.incomingBuffer.buffer);
                   GraphicDefinition.incomingBuffer.index = 0;
                   Class3_Sub13_Sub27.isaacServerKey = GraphicDefinition.incomingBuffer.getLong(-88);
                   int[] var9 = new int[4];
@@ -162,7 +162,7 @@ class Class127 {
                   Class151_Sub1.aClass3_Sub30_Sub1_2942.putInt(-120, Class132.aClass153_1735.getCRCValue((byte)-124));
                   Class151_Sub1.aClass3_Sub30_Sub1_2942.putInt(-120, Class132.libIndex.getCRCValue((byte)-124));
                   Class151_Sub1.aClass3_Sub30_Sub1_2942.putBytes(Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index, var0 + 117);
-                  Class3_Sub15.aClass89_2429.sendBytes(false, Class151_Sub1.aClass3_Sub30_Sub1_2942.buffer, Class151_Sub1.aClass3_Sub30_Sub1_2942.index);
+                  Class3_Sub15.aClass89_2429.sendBytes(Class151_Sub1.aClass3_Sub30_Sub1_2942.buffer, Class151_Sub1.aClass3_Sub30_Sub1_2942.index);
                   Class3_Sub13_Sub1.outgoingBuffer.method814(var9);
 
                   for(int var2 = 0; var2 < 4; ++var2) {
@@ -220,7 +220,7 @@ class Class127 {
                if(6 == Class3_Sub13_Sub25.loginStage) {
                   Class3_Sub13_Sub1.outgoingBuffer.index = 0;
                   Class3_Sub13_Sub1.outgoingBuffer.putOpcode(17);
-                  Class3_Sub15.aClass89_2429.sendBytes(false, Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index);
+                  Class3_Sub15.aClass89_2429.sendBytes(Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index);
                   Class3_Sub13_Sub25.loginStage = 4;
                   return;
                }
@@ -256,7 +256,7 @@ class Class127 {
                      return;
                   }
 
-                  Class3_Sub15.aClass89_2429.readBytes(0, 14, -18455, GraphicDefinition.incomingBuffer.buffer);
+                  Class3_Sub15.aClass89_2429.readBytes(0, 14, GraphicDefinition.incomingBuffer.buffer);
                   GraphicDefinition.incomingBuffer.index = 0;
                   Class3_Sub13_Sub26.rights = GraphicDefinition.incomingBuffer.getByte((byte)-34);
                   Class3_Sub28_Sub19.anInt3775 = GraphicDefinition.incomingBuffer.getByte((byte)-86);
@@ -273,12 +273,12 @@ class Class127 {
                   if(!Class3_Sub28_Sub19.aBoolean3779) {
                      if((!Class3_Sub15.aBoolean2433 || Class3_Sub28_Sub10_Sub1.aBoolean4063) && !Class3_Sub13_Sub29.disableGEBoxes) {
                         try {
-                           Class27.aClass94_516.method1577(-1857, Class38.aClass87_665.anApplet1219);
+                           Class27.aClass94_516.method1577(Class38.aClass87_665.anApplet1219);
                         } catch (Throwable var5) {
                         }
                      } else {
                         try {
-                           Class97.aClass94_1374.method1577(-1857, Class38.aClass87_665.anApplet1219);
+                           Class97.aClass94_1374.method1577(Class38.aClass87_665.anApplet1219);
                         } catch (Throwable var6) {
                         }
                      }
@@ -296,12 +296,12 @@ class Class127 {
                   }
 
                   GraphicDefinition.incomingBuffer.index = 0;
-                  Class3_Sub15.aClass89_2429.readBytes(0, Class130.incomingPacketLength, -18455, GraphicDefinition.incomingBuffer.buffer);
+                  Class3_Sub15.aClass89_2429.readBytes(0, Class130.incomingPacketLength, GraphicDefinition.incomingBuffer.buffer);
                   Class158.anInt2005 = 2;
                   Class3_Sub13_Sub25.loginStage = 0;
                   AnimationDefinition.method2061();
                   Class3_Sub28_Sub7.anInt3606 = -1;
-                  Class39.updateSceneGraph(0, dynamic);
+                  Class39.updateSceneGraph(dynamic);
                   RSString.incomingOpcode = -1;
                   return;
                }

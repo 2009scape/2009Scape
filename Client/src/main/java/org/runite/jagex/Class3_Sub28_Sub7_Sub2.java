@@ -15,9 +15,6 @@ final class Class3_Sub28_Sub7_Sub2 extends Class3_Sub28_Sub7 {
    }
 
    final boolean method568() {
-      if(-22358 != -22358) {
-         this.aSoftReference4053 = (SoftReference)null;
-      }
 
       return true;
    }

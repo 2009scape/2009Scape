@@ -12,9 +12,6 @@ final class Class162 {
    static void method2203(Player var0) {
       try {
          Class3_Sub9 var2 = (Class3_Sub9)Class3_Sub28_Sub7_Sub1.aClass130_4046.method1780(var0.displayName.toLong(8 + -126), 0);
-         if(8 != 8) {
-            method2204((RSByteBuffer)null, -44);
-         }
 
          if(null != var2) {
             if(var2.aClass3_Sub24_Sub1_2312 != null) {
@@ -44,7 +41,7 @@ final class Class162 {
             var0.index += 24;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "wc.E(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var4, "wc.E(" + "null" + ',' + var1 + ')');
       }
    }
 
@@ -64,7 +61,7 @@ final class Class162 {
    static void method2206(int var1) {
       try {
          Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 4, var1);
-         var2.a(true);
+         var2.a();
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "wc.A(" + true + ',' + var1 + ')');
       }

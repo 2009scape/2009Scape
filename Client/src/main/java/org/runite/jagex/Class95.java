@@ -31,11 +31,8 @@ final class Class95 {
 
    static void method1583(int var0, int var1, int var2, int var4, int var5, int var6, int var7, int var8, int var9) {
       try {
-         if(3 != 3) {
-            method1582(45);
-         }
 
-         if(var1 == var0 && var2 == var9 && var8 == var7 && var5 == var6) {
+          if(var1 == var0 && var2 == var9 && var8 == var7 && var5 == var6) {
             Class3_Sub13_Sub34.method330(var4, 3 + -111, var5, var0, var9, var7);
          } else {
             int var10 = var0;
@@ -77,11 +74,8 @@ final class Class95 {
 
    static void method1584(int var0, int var1, int var2, int var3, int var5) {
       try {
-         if(-26571 != -26571) {
-            method1586(92, 25);
-         }
 
-         if(var5 == var1) {
+          if(var5 == var1) {
             Class43.method1058(var5, var2, var0, var3, (byte)-47);
          } else if (Class101.anInt1425 <= var2 - var5 && var2 + var5 <= Class3_Sub28_Sub18.anInt3765 && -var1 + var3 >= Class159.anInt2020 && Class57.anInt902 >= var3 - -var1) {
             Class3_Sub9.method135(var3, var2, var5, -111, var1, var0);

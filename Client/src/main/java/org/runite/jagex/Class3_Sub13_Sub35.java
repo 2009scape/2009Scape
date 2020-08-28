@@ -51,7 +51,7 @@ final class Class3_Sub13_Sub35 extends Class3_Sub13 {
 
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "tb.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var5, "tb.A(" + var1 + ',' + (var2 != null ? "{...}" : "null") + ',' + ')');
       }
    }
 
@@ -100,11 +100,7 @@ final class Class3_Sub13_Sub35 extends Class3_Sub13 {
                var2.method530(new RSByteBuffer(var3));
             }
 
-            if((byte) -54 != -54) {
-               method337(19);
-            }
-
-            if(fileId >= 32768) {
+             if(fileId >= 32768) {
                var2.method525();
             }
 

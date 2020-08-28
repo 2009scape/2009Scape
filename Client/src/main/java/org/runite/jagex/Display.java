@@ -32,10 +32,7 @@ public class Display {
       try {
          var5 = true;
          this.aGraphicsDevice445.setFullScreenWindow(var1);
-         if ((byte) -63 != -63) {
-            this.method918(90, -112, -67, 27, (Frame) null, -49);
-         }
-         var5 = false;
+          var5 = false;
       } finally {
          if(var5 && var3) {
             try {

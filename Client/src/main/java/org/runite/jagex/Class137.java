@@ -8,11 +8,8 @@ final class Class137 {
 
    static int method1817() {
       try {
-         if((byte) 70 != 70) {
-            method1818(true);
-         }
 
-         return !Class73.aBoolean1084?(!NPC.method1986((byte) 70 ^ 28)?1:(Class3_Sub28_Sub7.aBoolean3604?2:1)):0;
+          return !Class73.aBoolean1084?(!NPC.method1986((byte) 70 ^ 28)?1:(Class3_Sub28_Sub7.aBoolean3604?2:1)):0;
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "tc.B(" + (byte) 70 + ')');
       }
@@ -27,11 +24,8 @@ final class Class137 {
 
    static void method1819(int var0, int var1, RSInterface var2, int var4, int var5, int var6, int var7) {
       try {
-         if((byte) -101 >= -89) {
-            method1818(true);
-         }
 
-         if(Class158_Sub1.aBoolean2981) {
+          if(Class158_Sub1.aBoolean2981) {
             Class19.anInt433 = 32;
          } else {
             Class19.anInt433 = 0;

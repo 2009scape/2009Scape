@@ -29,7 +29,7 @@ final class Class49 {
          }
 
          for(int var4 = 0; var2 > var4; ++var4) {
-            Class58.method1194(-16385);
+            Class58.method1194();
 
             for(int var5 = 0; var5 < 13; ++var5) {
                for(int var6 = 0; var6 < 13; ++var6) {
@@ -71,9 +71,6 @@ final class Class49 {
 
    static RSInterface method1122(RSInterface var1) {
       try {
-         if(0 != 0) {
-            method1123(103, 118);
-         }
 
          RSInterface var2 = Client.method42(var1);
          if(null == var2) {
@@ -118,18 +115,14 @@ final class Class49 {
 
    static RSString method1124(int[] var0, long var1, int var3) {
       try {
-         if(false) {
-            return (RSString)null;
-         } else {
-            if(Class58.anInterface4_915 != null) {
-               RSString var5 = Class58.anInterface4_915.method20(var3, var0, 4936, var1);
-               if(var5 != null) {
-                  return var5;
-               }
+         if(Class58.anInterface4_915 != null) {
+            RSString var5 = Class58.anInterface4_915.method20(var3, var0, 4936, var1);
+            if(var5 != null) {
+               return var5;
             }
-
-            return Class3_Sub28_Sub12.method612(var1, (byte)124);
          }
+
+         return Class3_Sub28_Sub12.method612(var1, (byte)124);
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "ha.H(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var3 + ',' + false + ')');
       }
@@ -183,7 +176,7 @@ final class Class49 {
       try {
          Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 2, var1);
          int var3 = -67 % ((-94 - -37) / 48);
-         var2.a(true);
+         var2.a();
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ha.I(" + -94 + ',' + var1 + ')');
       }
@@ -302,9 +295,6 @@ final class Class49 {
 
    final void method1128(byte[] var1, RSByteBuffer var2) {
       try {
-         if(false) {
-            anInt815 = -81;
-         }
 
          if(31 == var2.buffer[var2.index] && var2.buffer[var2.index + 1] == -117) {
             if(this.anInflater813 == null) {

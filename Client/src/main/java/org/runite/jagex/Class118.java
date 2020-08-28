@@ -37,10 +37,6 @@ abstract class Class118 {
                   var9 = -var9;
                }
 
-               if(var9 > 9) {
-                  var9 += 39;
-               }
-
                var7[var6 + -var8 + -1] = (byte)(48 + var9);
                var3 /= 10;
             }

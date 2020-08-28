@@ -44,59 +44,57 @@ final class Class3_Sub13_Sub22 extends Class3_Sub13 {
    static void method273(int[] var0, NPC var2, int[] var3, int[] var4) {
       try {
          int var5 = 0;
-         if((byte) 92 > 81) {
-            while(var5 < var4.length) {
-               int var6 = var4[var5];
-               int var7 = var0[var5];
-               int var8 = var3[var5];
+         while(var5 < var4.length) {
+            int var6 = var4[var5];
+            int var7 = var0[var5];
+            int var8 = var3[var5];
 
-               for(int var9 = 0; var7 != 0 && var9 < var2.aClass145Array2809.length; ++var9) {
-                  if((1 & var7) != 0) {
-                     if(var6 == -1) {
-                        var2.aClass145Array2809[var9] = null;
-                     } else {
-                        AnimationDefinition var10 = Client.getAnimationDefinition(var6);
-                        Class145 var12 = var2.aClass145Array2809[var9];
-                        int var11 = var10.anInt1845;
-                        if(null != var12) {
-                           if(var12.animationId != var6) {
-                              if(Client.getAnimationDefinition(var12.animationId).anInt1857 <= var10.anInt1857) {
-                                 var12 = var2.aClass145Array2809[var9] = null;
-                              }
-                           } else if(var11 == 0) {
+            for(int var9 = 0; var7 != 0 && var9 < var2.aClass145Array2809.length; ++var9) {
+               if((1 & var7) != 0) {
+                  if(var6 == -1) {
+                     var2.aClass145Array2809[var9] = null;
+                  } else {
+                     AnimationDefinition var10 = Client.getAnimationDefinition(var6);
+                     Class145 var12 = var2.aClass145Array2809[var9];
+                     int var11 = var10.anInt1845;
+                     if(null != var12) {
+                        if(var12.animationId != var6) {
+                           if(Client.getAnimationDefinition(var12.animationId).anInt1857 <= var10.anInt1857) {
                               var12 = var2.aClass145Array2809[var9] = null;
-                           } else if(var11 == 1) {
-                              var12.anInt1893 = 0;
-                              var12.anInt1894 = 0;
-                              var12.anInt1891 = 1;
-                              var12.anInt1897 = 0;
-                              var12.anInt1900 = var8;
-                              IOHandler.method1470(var2.anInt2829, var10, 183921384, var2.anInt2819, false, 0);
-                           } else if(var11 == 2) {
-                              var12.anInt1894 = 0;
                            }
-                        }
-
-                        if(null == var12) {
-                           var12 = var2.aClass145Array2809[var9] = new Class145();
+                        } else if(var11 == 0) {
+                           var12 = var2.aClass145Array2809[var9] = null;
+                        } else if(var11 == 1) {
+                           var12.anInt1893 = 0;
+                           var12.anInt1894 = 0;
                            var12.anInt1891 = 1;
                            var12.anInt1897 = 0;
                            var12.anInt1900 = var8;
-                           var12.animationId = var6;
-                           var12.anInt1894 = 0;
-                           var12.anInt1893 = 0;
                            IOHandler.method1470(var2.anInt2829, var10, 183921384, var2.anInt2819, false, 0);
+                        } else if(var11 == 2) {
+                           var12.anInt1894 = 0;
                         }
                      }
-                  }
 
-                  var7 >>>= 1;
+                     if(null == var12) {
+                        var12 = var2.aClass145Array2809[var9] = new Class145();
+                        var12.anInt1891 = 1;
+                        var12.anInt1897 = 0;
+                        var12.anInt1900 = var8;
+                        var12.animationId = var6;
+                        var12.anInt1894 = 0;
+                        var12.anInt1893 = 0;
+                        IOHandler.method1470(var2.anInt2829, var10, 183921384, var2.anInt2819, false, 0);
+                     }
+                  }
                }
 
-               ++var5;
+               var7 >>>= 1;
             }
 
+            ++var5;
          }
+
       } catch (RuntimeException var13) {
          throw Class44.clientError(var13, "mi.B(" + (var0 != null?"{...}":"null") + ',' + (byte) 92 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
       }

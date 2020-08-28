@@ -13,19 +13,15 @@ final class Class3_Sub28_Sub11 extends Node {
    static int method599(CacheIndex var1) {
       try {
          int var2 = 0;
-         if(-20916 == -20916) {
-            if(var1.method2144(0, Class154.anInt1966)) {
-               ++var2;
-            }
-
-            if(var1.method2144(0, Class79.anInt1124)) {
-               ++var2;
-            }
-
-            return var2;
-         } else {
-            return -88;
+         if(var1.method2144(Class154.anInt1966)) {
+            ++var2;
          }
+
+         if(var1.method2144(Class79.anInt1124)) {
+            ++var2;
+         }
+
+         return var2;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "lk.F(" + -20916 + ',' + (var1 != null?"{...}":"null") + ')');
       }
@@ -36,9 +32,6 @@ final class Class3_Sub28_Sub11 extends Node {
          if(this.aClass130_3636 == null) {
             return var2;
          } else {
-            if((byte) -29 != -29) {
-               this.method604((RSString)null, (byte)56, 110);
-            }
 
             Class3_Sub18 var4 = (Class3_Sub18)this.aClass130_3636.method1780((long)var1, (byte) -29 ^ -29);
             return null == var4?var2:var4.anInt2467;
@@ -50,30 +43,28 @@ final class Class3_Sub28_Sub11 extends Node {
 
    private void method601(RSByteBuffer var1, int var2) {
       try {
-         if((byte) -5 < -2) {
-            if(249 == var2) {
-               int var4 = var1.getByte((byte)-52);
-               int var5;
-               if(this.aClass130_3636 == null) {
-                  var5 = Class95.method1585((byte)105, var4);
-                  this.aClass130_3636 = new Class130(var5);
-               }
-
-               for(var5 = 0; var4 > var5; ++var5) {
-                  boolean var6 = 1 == var1.getByte((byte)-94);
-                  int var7 = var1.getTriByte((byte)95);
-                  Object var8;
-                  if(var6) {
-                     var8 = new Class3_Sub29(var1.getString());
-                  } else {
-                     var8 = new Class3_Sub18(var1.getInt());
-                  }
-
-                  this.aClass130_3636.method1779(1, (Class3)var8, (long)var7);
-               }
+         if(249 == var2) {
+            int var4 = var1.getByte((byte)-52);
+            int var5;
+            if(this.aClass130_3636 == null) {
+               var5 = Class95.method1585((byte)105, var4);
+               this.aClass130_3636 = new Class130(var5);
             }
 
+            for(var5 = 0; var4 > var5; ++var5) {
+               boolean var6 = 1 == var1.getByte((byte)-94);
+               int var7 = var1.getTriByte((byte)95);
+               Object var8;
+               if(var6) {
+                  var8 = new Class3_Sub29(var1.getString());
+               } else {
+                  var8 = new Class3_Sub18(var1.getInt());
+               }
+
+               this.aClass130_3636.method1779((Class3)var8, (long)var7);
+            }
          }
+
       } catch (RuntimeException var9) {
          throw Class44.clientError(var9, "lk.P(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + (byte) -5 + ')');
       }
@@ -163,7 +154,7 @@ final class Class3_Sub28_Sub11 extends Node {
             CS2Script var7 = new CS2Script();
             var7.arguments = var3.anObjectArray235;
             var7.aClass11_2449 = var3;
-            Class110.aClass61_1471.method1215(true, var7);
+            Class110.aClass61_1471.method1215(var7);
          }
 
       } catch (RuntimeException var8) {
@@ -284,9 +275,6 @@ final class Class3_Sub28_Sub11 extends Node {
          while(true) {
             int var3 = var2.getByte((byte)-76);
             if(0 == var3) {
-               if(5 != 5) {
-                  Translation.englishToGerman(false);
-               }
 
                return;
             }

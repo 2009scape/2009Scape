@@ -41,7 +41,7 @@ final class CS2Script extends Class3 {
          aByteArrayArrayArray2452 = (byte[][][])null;
          aClass93_2450 = null;
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "jl.E(" + var0 + ')');
+         throw Class44.clientError(var2, "jl.E(" + ')');
       }
    }
 
@@ -87,7 +87,7 @@ final class CS2Script extends Class3 {
       }
    }
 
-   static void method379(int var0) {
+   static void method379() {
       try {
          int var2 = Class146.anInt1904 * 128 - -64;
          int var1 = 128 * Canvas_Sub2.anInt30 + 64;
@@ -95,7 +95,7 @@ final class CS2Script extends Class3 {
          if(100 <= Class3_Sub28_Sub10.anInt3631) {
             NPC.anInt3995 = 64 + Canvas_Sub2.anInt30 * 128;
             Class77.anInt1111 = 64 + Class146.anInt1904 * 128;
-            Class7.anInt2162 = Class121.method1736(WorldListCountry.localPlane, var0 + -1023, NPC.anInt3995, Class77.anInt1111) + -Class3_Sub13_Sub34.anInt3414;
+            Class7.anInt2162 = Class121.method1736(WorldListCountry.localPlane, 1024 + -1023, NPC.anInt3995, Class77.anInt1111) + -Class3_Sub13_Sub34.anInt3414;
          } else {
             if(NPC.anInt3995 < var1) {
                NPC.anInt3995 += Class163_Sub2_Sub1.anInt4021 + Class3_Sub28_Sub10.anInt3631 * (-NPC.anInt3995 + var1) / 1000;
@@ -172,7 +172,7 @@ final class CS2Script extends Class3 {
          }
 
          int var10 = -Class3_Sub13_Sub25.anInt3315 + var9;
-         if(var10 > var0) {
+         if(var10 > 1024) {
             var10 -= 2048;
          }
 
@@ -204,7 +204,7 @@ final class CS2Script extends Class3 {
          }
 
       } catch (RuntimeException var12) {
-         throw Class44.clientError(var12, "jl.B(" + var0 + ')');
+         throw Class44.clientError(var12, "jl.B(" + 1024 + ')');
       }
    }
 

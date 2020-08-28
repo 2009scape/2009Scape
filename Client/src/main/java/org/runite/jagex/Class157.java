@@ -92,7 +92,7 @@ final class Class157 {
             var1 = (int)((long)this.anInt2001 * (long)var1 / (long)this.anInt1997);
          }
 
-         return (byte) 90 != 90?81:var1;
+         return var1;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "vj.C(" + var1 + ',' + (byte) 90 + ')');
       }
@@ -100,15 +100,11 @@ final class Class157 {
 
    final int method2178(int var2) {
       try {
-         if(false) {
-            return -69;
-         } else {
-            if(null != this.anIntArrayArray1999) {
-               var2 = (int)((long)this.anInt2001 * (long)var2 / (long)this.anInt1997) + 6;
-            }
+          if(null != this.anIntArrayArray1999) {
+             var2 = (int)((long)this.anInt2001 * (long)var2 / (long)this.anInt1997) + 6;
+          }
 
-            return var2;
-         }
+          return var2;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "vj.D(" + false + ',' + var2 + ')');
       }

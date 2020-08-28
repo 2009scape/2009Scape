@@ -21,9 +21,6 @@ final class Class46 {
    static void method1086(CacheIndex var0) {
       try {
          Class45.aClass153_731 = var0;
-         if(-6 != -6) {
-            aClass153_737 = (CacheIndex)null;
-         }
 
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "gl.C(" + (var0 != null?"{...}":"null") + ',' + -6 + ')');

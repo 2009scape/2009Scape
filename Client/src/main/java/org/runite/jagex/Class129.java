@@ -88,14 +88,12 @@ abstract class Class129 {
             var5 += Class74.anInt1092 + -128;
          }
 
-         if(95 > 70) {
-            if(HDToolKit.highDetail) {
-               Class22.method926(Class97.aClass3_Sub28_Sub16_Sub2_1381.anIntArray4081, var0, var2, Class97.aClass3_Sub28_Sub16_Sub2_1381.anInt3707, Class97.aClass3_Sub28_Sub16_Sub2_1381.anInt3696);
-            } else {
-               Class97.aClass3_Sub28_Sub16_Sub2_1381.method635(var0, var2);
-            }
+          if(HDToolKit.highDetail) {
+             Class22.method926(Class97.aClass3_Sub28_Sub16_Sub2_1381.anIntArray4081, var0, var2, Class97.aClass3_Sub28_Sub16_Sub2_1381.anInt3707, Class97.aClass3_Sub28_Sub16_Sub2_1381.anInt3696);
+          } else {
+             Class97.aClass3_Sub28_Sub16_Sub2_1381.method635(var0, var2);
+          }
 
-         }
       } catch (RuntimeException var14) {
          throw Class44.clientError(var14, "s.F(" + var0 + ',' + 95 + ',' + var2 + ')');
       }
@@ -396,10 +394,6 @@ abstract class Class129 {
                   var13.aClass37_712 = var14;
                }
             }
-         }
-
-         if(-8771 != -8771) {
-            method1765(-30, -124);
          }
 
       } catch (RuntimeException var37) {

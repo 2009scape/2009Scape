@@ -19,11 +19,8 @@ final class Class80 {
 
    final Class3 method1392() {
       try {
-         if(0 != 0) {
-            method1396(-100);
-         }
 
-         Class3 var2;
+          Class3 var2;
          if(this.anInt1132 > 0 && this.aClass130_1134.aClass3Array1697[this.anInt1132 + -1] != this.aClass3_1130) {
             var2 = this.aClass3_1130;
          } else {
@@ -45,11 +42,8 @@ final class Class80 {
 
    final Class3 method1393() {
       try {
-         if((byte) 125 < 79) {
-            this.anInt1132 = 78;
-         }
 
-         this.anInt1132 = 0;
+          this.anInt1132 = 0;
          return this.method1392();
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "l.C(" + (byte) 125 + ')');

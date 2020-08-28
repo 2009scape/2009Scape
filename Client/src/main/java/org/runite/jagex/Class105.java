@@ -41,10 +41,6 @@ final class Class105 {
                }
 
                if(var3 == 1) {
-                  if(var10 == 0) {
-                     var3 = 1;
-                     break label67;
-                  }
 
                   var8[var9] = var2;
                   ++var9;
@@ -132,9 +128,7 @@ final class Class105 {
       }
 
       int var13 = var0.anInt141;
-      var0.anInt141 += var10 - var10;
-      if(var0.anInt141 < var13) {
-      }
+      var0.anInt141 += 0;
 
       var0.aByte111 = var2;
       var0.anInt143 = var3;
@@ -389,15 +383,13 @@ final class Class105 {
 
          int var47 = 0;
          byte var53;
-         if(var43 == 0) {
-            ++var41;
-            var43 = 50;
-            var53 = var0.aByteArray130[var41];
-            var22 = var0.anIntArray138[var53];
-            var23 = var0.anIntArrayArray115[var53];
-            var25 = var0.anIntArrayArray110[var53];
-            var24 = var0.anIntArrayArray108[var53];
-         }
+         ++var41;
+         var43 = 50;
+         var53 = var0.aByteArray130[var41];
+         var22 = var0.anIntArray138[var53];
+         var23 = var0.anIntArrayArray115[var53];
+         var25 = var0.anIntArrayArray110[var53];
+         var24 = var0.anIntArrayArray108[var53];
 
          int var45 = var43 - 1;
          int var51 = var22;
@@ -418,8 +410,8 @@ final class Class105 {
 
                do {
                   if(var44 == 0) {
-                     var46 += 1 * var48;
-                  } else if(var44 == 1) {
+                     var46 += var48;
+                  } else {
                      var46 += 2 * var48;
                   }
 

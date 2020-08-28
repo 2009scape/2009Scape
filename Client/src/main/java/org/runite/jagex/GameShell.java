@@ -99,7 +99,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
          }
 
          int var2 = Class100.method1602(var0);
-         return var2 != -1?Class119.aClass131_1624.aClass94Array1721[var2].method1560(Class3_Sub13_Sub16.aClass94_3192, true, Class3_Sub28_Sub10_Sub2.aClass94_4066):Class3_Sub28_Sub7_Sub1.aClass94_4049;
+         return var2 != -1?Class119.aClass131_1624.aClass94Array1721[var2].method1560(Class3_Sub13_Sub16.aClass94_3192, Class3_Sub28_Sub10_Sub2.aClass94_4066):Class3_Sub28_Sub7_Sub1.aClass94_4049;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "rc.V(" + (var0 != null?"{...}":"null") + ',' + true + ')');
       }
@@ -289,10 +289,6 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
             WorldListEntry.aClass155_2627.method2163();
          }
 
-         if(-32589 != -32589) {
-            method26(-25);
-         }
-
          if(Class3_Sub21.aClass155_2491 != null) {
             Class3_Sub21.aClass155_2491.method2163();
          }
@@ -446,7 +442,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	            if(null != Signlink.javaVendor) {
 	               String var1 = Signlink.javaVendor.toLowerCase();
 	               if(var1.indexOf("sun") == -1 && -1 == var1.indexOf("apple")) {
-	                  if(var1.indexOf("ibm") != -1 && (Signlink.javaVendor == null || Signlink.javaVendor.equals("1.4.2"))) {
+	                  if(var1.indexOf("ibm") != -1 && Signlink.javaVendor.equals("1.4.2")) {
 	                     this.method31("wrongjava");
 	                     return;
 	                  }
@@ -542,9 +538,6 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 
    final void launch() {
       try {
-         if(-8057 != -8057) {
-            this.method38(12);
-         }
 
          try {
             Class140_Sub7.anInt2934 = 768;
@@ -577,7 +570,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
          }
 
       } catch (RuntimeException var12) {
-         throw Class44.clientError(var12, "rc.S(" +  + ',' +  + ',' + false + ',' + 1024 + ',' + ("runescape" != null?"{...}":"null") + ',' + 768 + ',' + -8057 + ',' + 28 + ')');
+         throw Class44.clientError(var12, "rc.S(" + ',' + 1024 + ',' + "{...}" + ',' + 768 + ',' + -8057 + ',' + 28 + ')');
       }
    }
 

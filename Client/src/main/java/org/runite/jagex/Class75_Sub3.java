@@ -41,11 +41,11 @@ final class Class75_Sub3 extends Class75 {
          Class140_Sub6.method2025();
          Class114.method1711(5, 26211 + -25956);
          Class3_Sub9.method137(5, (byte)-118);
-         Class3_Sub19.method386(26211 ^ -26138);
+         Class3_Sub19.method386();
          RSByteBuffer.method795();
-         Class3_Sub28_Sub3.method539(0);
+         Class3_Sub28_Sub3.method539();
          Class3_Sub13_Sub4.method188(5, 0);
-         Class166.method2260(26211 + -27256);
+         Class166.method2260();
          Class3_Sub28_Sub10_Sub1.method594(26211 + -26090, 5);
          Class3_Sub28_Sub10_Sub1.method595();
          Class3_Sub31.method820(5, 64);
@@ -61,9 +61,6 @@ final class Class75_Sub3 extends Class75 {
 
    final void method1341(int var2, int var3) {
       try {
-         if(2 != 2) {
-            aClass153_2660 = (CacheIndex)null;
-         }
 
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "re.A(" + 2 + ',' + var2 + ',' + var3 + ')');

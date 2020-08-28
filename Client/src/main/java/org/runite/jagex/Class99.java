@@ -46,10 +46,7 @@ final class Class99 {
       try {
          if(var5.method1432(false)) {
             if(0 == var2) {
-               Class106[] var6 = Class3_Sub28_Sub10_Sub2.method596(10, var5);
-               if(null == var6) {
-                  return null;
-               }
+               Class106[] var6 = Class3_Sub28_Sub10_Sub2.method596(var5);
 
                boolean var7 = false;
 

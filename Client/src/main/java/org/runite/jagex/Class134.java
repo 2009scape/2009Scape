@@ -35,11 +35,8 @@ final class Class134 {
             Class3_Sub13_Sub39.aByteArrayArray3461[Class65.anInt984] = null;
             return var2;
          } else {
-            if(66 < 55) {
-               method1806(-79);
-            }
 
-            if(var1 == 5000 && MouseListeningClass.anInt1927 > 0) {
+             if(var1 == 5000 && MouseListeningClass.anInt1927 > 0) {
                var2 = Class9.aByteArrayArray125[--MouseListeningClass.anInt1927];
                Class9.aByteArrayArray125[MouseListeningClass.anInt1927] = null;
                return var2;
@@ -59,9 +56,6 @@ final class Class134 {
    static void method1808(int var0, boolean var1, int var3, boolean var4) {
       try {
          Class41.method1047(var0, var3, Class3_Sub13_Sub16.aClass44_Sub1Array3201.length - 1, var4, 0, var1);
-         if((byte) 30 != 30) {
-            aClass94_1760 = (RSString)null;
-         }
 
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "sh.C(" + var0 + ',' + var1 + ',' + (byte) 30 + ',' + var3 + ',' + var4 + ')');

@@ -15,11 +15,8 @@ final class Class3_Sub13_Sub9 extends Class3_Sub13 {
 
    static int method208() {
       try {
-         if(-119 > -22) {
-            aShortArray3110 = (short[])null;
-         }
 
-         return 15;
+          return 15;
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "f.B(" + -119 + ')');
       }
@@ -55,7 +52,7 @@ final class Class3_Sub13_Sub9 extends Class3_Sub13 {
 
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "f.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var5, "f.A(" + var1 + ',' + (var2 != null ? "{...}" : "null") + ',' + ')');
       }
    }
 

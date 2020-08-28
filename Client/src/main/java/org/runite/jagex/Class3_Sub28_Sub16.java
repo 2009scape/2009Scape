@@ -36,7 +36,7 @@ abstract class Class3_Sub28_Sub16 extends Node {
    static RSInterface method638(int var1, int var2) {
       try {
          RSInterface var3 = Class7.getRSInterface((byte)109, var1);
-         return var2 == -1 ?var3:((byte) -19 != -19?(RSInterface)null:(var3 != null && var3.aClass11Array262 != null && var2 < var3.aClass11Array262.length ?var3.aClass11Array262[var2]:null));
+         return var2 == -1 ?var3: var3 != null && var3.aClass11Array262 != null && var2 < var3.aClass11Array262.length ?var3.aClass11Array262[var2]:null;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "qf.P(" + (byte) -19 + ',' + var1 + ',' + var2 + ')');
       }
@@ -46,13 +46,11 @@ abstract class Class3_Sub28_Sub16 extends Node {
 
    final void method640(int var1, int var2, int var3, int var4) {
       try {
-         if(-1470985020 == -1470985020) {
-            int var6 = this.anInt3697 << 3;
-            int var7 = this.anInt3706 << 3;
-            var4 = (var4 << 4) + (var6 & 15);
-            var1 = (var1 << 4) + (15 & var7);
-            this.method636(var6, var7, var4, var1, var2, var3);
-         }
+          int var6 = this.anInt3697 << 3;
+          int var7 = this.anInt3706 << 3;
+          var4 = (var4 << 4) + (var6 & 15);
+          var1 = (var1 << 4) + (15 & var7);
+          this.method636(var6, var7, var4, var1, var2, var3);
       } catch (RuntimeException var8) {
          throw Class44.clientError(var8, "qf.F(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + -1470985020 + ')');
       }

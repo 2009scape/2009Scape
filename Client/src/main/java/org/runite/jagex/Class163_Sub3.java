@@ -37,33 +37,31 @@ final class Class163_Sub3 extends Class163 {
          PLAYER_RENDER_LOG[2] = GraphicDefinition.incomingBuffer.index;
          Canvas_Sub2.parsePlayerMasks(-102);
          PLAYER_RENDER_LOG[3] = GraphicDefinition.incomingBuffer.index;
-         if((byte) -122 <= -69) {
-            int var1;
-            for(var1 = 0; Class139.anInt1829 > var1; ++var1) {
-               int var2 = Class3_Sub7.anIntArray2292[var1];
-               if(Class44.anInt719 != Class3_Sub13_Sub22.players[var2].anInt2838) {
-                  if(0 < Class3_Sub13_Sub22.players[var2].anInt3969) {
-                     Class162.method2203(Class3_Sub13_Sub22.players[var2]);
-                  }
-
-                  Class3_Sub13_Sub22.players[var2] = null;
+         int var1;
+         for(var1 = 0; Class139.anInt1829 > var1; ++var1) {
+            int var2 = Class3_Sub7.anIntArray2292[var1];
+            if(Class44.anInt719 != Class3_Sub13_Sub22.players[var2].anInt2838) {
+               if(0 < Class3_Sub13_Sub22.players[var2].anInt3969) {
+                  Class162.method2203(Class3_Sub13_Sub22.players[var2]);
                }
-            }
 
-            if(GraphicDefinition.incomingBuffer.index == Class130.incomingPacketLength) {
-               for(var1 = 0; var1 < Class159.localPlayerCount; ++var1) {
-                  if(null == Class3_Sub13_Sub22.players[Class56.localPlayerIndexes[var1]]) {
+               Class3_Sub13_Sub22.players[var2] = null;
+            }
+         }
+
+         if(GraphicDefinition.incomingBuffer.index == Class130.incomingPacketLength) {
+            for(var1 = 0; var1 < Class159.localPlayerCount; ++var1) {
+               if(null == Class3_Sub13_Sub22.players[Class56.localPlayerIndexes[var1]]) {
 //                     throw new RuntimeException("gpp2 pos:" + var1 + " size:" + Class159.anInt2022);
 //                     System.err.println("gpp2 pos:" + var1 + " size:" + Class159.anInt2022);
-                	  System.err.println("Local player was null - index: " + Class56.localPlayerIndexes[var1] + ", list index: " + var1 + ", list size: " + Class159.localPlayerCount);
-                  }
+                  System.err.println("Local player was null - index: " + Class56.localPlayerIndexes[var1] + ", list index: " + var1 + ", list size: " + Class159.localPlayerCount);
                }
+            }
 
-            } else {
-            	System.err.println("Player rendering packet size mismatch - size log: self=" + PLAYER_RENDER_LOG[0] + ", local=" + PLAYER_RENDER_LOG[1] + ", add global=" + PLAYER_RENDER_LOG[2] + ", masks=" + PLAYER_RENDER_LOG[3] + ".");
+         } else {
+            System.err.println("Player rendering packet size mismatch - size log: self=" + PLAYER_RENDER_LOG[0] + ", local=" + PLAYER_RENDER_LOG[1] + ", add global=" + PLAYER_RENDER_LOG[2] + ", masks=" + PLAYER_RENDER_LOG[3] + ".");
 //               System.err.println("gpp1 pos:" + GraphicDefinition.incomingBuffer.index + " psize:" + Class130.incomingPacketLength);
 //                throw new RuntimeException("gpp1 pos:" + Class28.incomingBuffer.index + " psize:" + Class130.incomingPacketLength);
-            }
          }
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "fb.B(" + (byte) -122 + ')');
@@ -74,10 +72,7 @@ final class Class163_Sub3 extends Class163 {
       try {
          if(var0 != 0) {
             if((100 > Class8.anInt104 || Class3_Sub13_Sub29.disableGEBoxes) && Class8.anInt104 < 200) {
-               RSString var3 = Class41.method1052(-29664, var0).method1545();
-               if((byte) -91 != -91) {
-                  method2227((byte)22);
-               }
+               RSString var3 = Class41.method1052(var0).method1545();
 
                int var4;
                for(var4 = 0; Class8.anInt104 > var4; ++var4) {

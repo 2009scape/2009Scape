@@ -25,7 +25,7 @@ abstract class Class151 {
       }
    }
 
-   abstract Class62 method2094(int var1);
+   abstract Class62 method2094();
 
    abstract void method2095(int var1);
 

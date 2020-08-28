@@ -58,9 +58,7 @@ final class Class3_Sub28_Sub18 extends Node {
 
    static void method710() {
       try {
-         if((byte) 126 >= 122) {
-            Class44.aClass93_725.method1523((byte)-104);
-         }
+         Class44.aClass93_725.method1523((byte)-104);
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "sd.C(" + (byte) 126 + ')');
       }
@@ -76,7 +74,7 @@ final class Class3_Sub28_Sub18 extends Node {
 
    final void method712() {
       try {
-         int var2 = Class27.method961((byte) 6 + 1530);
+         int var2 = Class27.method961();
          if((1 & var2) == 0) {
             HDToolKit.bindTexture2D(this.anInt3759);
          }
@@ -97,13 +95,11 @@ final class Class3_Sub28_Sub18 extends Node {
       try {
          try {
             Method var1 = Runtime.class.getMethod("maxMemory", new Class[0]);
-            if(null != var1) {
-               try {
-                  Runtime var2 = Runtime.getRuntime();
-                  Long var3 = (Long)var1.invoke(var2, (Object[])null);
-                  Class3_Sub24_Sub3.anInt3492 = (int)(var3.longValue() / 1048576L) - -1;
-               } catch (Throwable var4) {
-               }
+            try {
+               Runtime var2 = Runtime.getRuntime();
+               Long var3 = (Long)var1.invoke(var2, (Object[])null);
+               Class3_Sub24_Sub3.anInt3492 = (int)(var3.longValue() / 1048576L) - -1;
+            } catch (Throwable var4) {
             }
          } catch (Exception var5) {
          }

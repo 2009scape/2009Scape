@@ -14,11 +14,11 @@ final class Class27 {
   
    static RSInterface aClass11_526 = null;
 
-   static int method961(int var0) {
+   static int method961() {
       try {
-         return var0 != 1536?96:(Class23.anInt453 == 0?0:Class2.anInterface5Array70[Class23.anInt453].method24());
+         return 1536 != 1536?96:(Class23.anInt453 == 0?0:Class2.anInterface5Array70[Class23.anInt453].method24());
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "ef.B(" + var0 + ')');
+         throw Class44.clientError(var2, "ef.B(" + 1536 + ')');
       }
    }
 

@@ -46,7 +46,7 @@ final class Class79 {
          while(true) {
             int var3 = var1.getByte((byte)-41);
             if(var3 == 0) {
-               var3 = -26 % ((-36 - -111) / 58);
+               var3 = 0;
                return;
             }
 
@@ -72,7 +72,7 @@ final class Class79 {
    private void method1389(RSByteBuffer var1, int var3) {
       try {
          if(1 == var3) {
-            this.anInt1128 = var1.getShort(1 + 0);
+            this.anInt1128 = var1.getShort(1);
             this.anInt1123 = var1.getByte((byte)-30);
             this.anInt1125 = var1.getByte((byte)-89);
          }
@@ -184,10 +184,6 @@ final class Class79 {
 
                   if(var2 >= 5) {
                      RSString.anInt2148 = var0.getInt();
-                  }
-
-                  if(-1 != -1) {
-                     aClass94_1129 = (RSString)null;
                   }
 
                   if(6 <= var2) {

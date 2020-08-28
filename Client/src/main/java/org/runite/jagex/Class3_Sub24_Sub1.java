@@ -1148,9 +1148,7 @@ final class Class3_Sub24_Sub1 extends Class3_Sub24 {
 
    final synchronized void method442() {
       this.anInt3470 = (this.anInt3470 ^ this.anInt3470 >> 31) + (this.anInt3470 >>> 31);
-      if(true) {
-         this.anInt3470 = -this.anInt3470;
-      }
+       this.anInt3470 = -this.anInt3470;
 
    }
 

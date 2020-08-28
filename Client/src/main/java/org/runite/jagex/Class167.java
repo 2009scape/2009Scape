@@ -38,7 +38,7 @@ final class Class167 {
                   }
 
                   int var7 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 5);
-                  var3.setDefinitions(Node.method522(GraphicDefinition.incomingBuffer.getBits((byte)-11, 14), 27112));
+                  var3.setDefinitions(Node.method522(GraphicDefinition.incomingBuffer.getBits((byte)-11, 14)));
                   if(15 < var7) {
                      var7 -= 32;
                   }
@@ -55,7 +55,7 @@ final class Class167 {
                      var3.anInt2785 = 0;
                   }
 
-                  var3.method1967(-2, var3.getSize(), Class102.player.anIntArray2767[0] + var8, var7 + Class102.player.anIntArray2755[0], var4 == 1);
+                  var3.method1967(var3.getSize(), Class102.player.anIntArray2767[0] + var8, var7 + Class102.player.anIntArray2755[0], var4 == 1);
                   if(var3.definition.method1474()) {
                      Class70.method1286(var3.anIntArray2755[0], (ObjectDefinition)null, 0, var3, var3.anIntArray2767[0], WorldListCountry.localPlane, (Player)null);
                   }
@@ -64,9 +64,6 @@ final class Class167 {
             }
 
             GraphicDefinition.incomingBuffer.method818();
-            if(113 <= 0) {
-               method2265(-16);
-            }
 
             return;
          }

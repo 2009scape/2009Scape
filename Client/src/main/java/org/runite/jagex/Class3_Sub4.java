@@ -22,67 +22,63 @@ final class Class3_Sub4 extends Class3 {
 	static int method107(CacheIndex var0) {
 		try {
 			int var2 = 0;
-			if(var0.method2144(0, Class168.anInt2104)) {
+			if(var0.method2144(Class168.anInt2104)) {
 				++var2;
 			}
 
-			if(var0.method2144(0, Class3_Sub13_Sub23_Sub1.hitMarkIndex)) {
+			if(var0.method2144(Class3_Sub13_Sub23_Sub1.hitMarkIndex)) {
 				++var2;
 			}
 
-			if(var0.method2144(0, Client.anInt2195)) {
+			if(var0.method2144(Client.anInt2195)) {
 				++var2;
 			}
 
-			if(var0.method2144(0, Node.anInt2575)) {
+			if(var0.method2144(Node.anInt2575)) {
 				++var2;
 			}
 
-			if(var0.method2144(0, RenderAnimationDefinition.anInt380)) {
+			if(var0.method2144(RenderAnimationDefinition.anInt380)) {
 				++var2;
 			}
 
-			if(var0.method2144(0, Class3_Sub13_Sub29.anInt3356)) {
+			if(var0.method2144(Class3_Sub13_Sub29.anInt3356)) {
 				++var2;
 			}
 
-			if(var0.method2144(0, Class129_Sub1.anInt2689)) {
+			if(var0.method2144(Class129_Sub1.anInt2689)) {
 				++var2;
 			}
 
-			if((byte) -125 > -124) {
-				method109(68);
-			}
-
-			if(var0.method2144(0, Class3_Sub13_Sub4.anInt3061)) {
+			if(var0.method2144(Class3_Sub13_Sub4.anInt3061)) {
 				++var2;
 			}
 
-			if(var0.method2144(0, Class75_Sub1.anInt2633)) {
+			if(var0.method2144(Class75_Sub1.anInt2633)) {
 				++var2;
 			}
 
-			if(var0.method2144(0, Class40.anInt678)) {
+			if(var0.method2144(Class40.anInt678)) {
 				++var2;
 			}
 
-			if(var0.method2144(0, Class3_Sub15.anInt2436)) {
+			if(var0.method2144(Class3_Sub15.anInt2436)) {
 				++var2;
 			}
 
-			if(var0.method2144(0, Class3_Sub28_Sub18.anInt3757)) {
+			if(var0.method2144(Class3_Sub28_Sub18.anInt3757)) {
 				++var2;
 			}
 
-			if(var0.method2144(0, Class45.anInt735)) {
+			if(var0.method2144(Class45.anInt735)) {
 				++var2;
 			}
 
-			if(var0.method2144(0, Class93.anInt1325)) {
+			if(var0.method2144(Class93.anInt1325)) {
 				++var2;
 			}
 
-			if(var0.method2144(0, Class3_Sub18.anInt2471)) {
+			if(var0.method2144(Class3_Sub18.anInt2471)) {
 				++var2;
 			}
 

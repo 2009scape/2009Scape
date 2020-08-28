@@ -142,7 +142,7 @@ final class Class3_Sub13_Sub8 extends Class3_Sub13 {
 			}
 
 		} catch (RuntimeException var2) {
-			throw Class44.clientError(var2, "ej.O(" + var0 + ')');
+			throw Class44.clientError(var2, "ej.O(" + ')');
 		}
 	}
 

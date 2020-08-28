@@ -38,7 +38,7 @@ final class AnimationDefinition {
 			Class3_Sub11 var5 = (Class3_Sub11)var0.method1780(var3, 0);
 			if(null == var5) {
 				var5 = new Class3_Sub11(var2.anInt2095, (float)var2.anInt2090, true, false, var2.anInt2094);
-				var0.method1779(1, var5, var3);
+				var0.method1779(var5, var3);
 			}
 
 			return var5;
@@ -71,20 +71,17 @@ final class AnimationDefinition {
 		try {
 			int var7 = this.duration[var2];
 			var2 = this.frames[var2];
-			Class3_Sub28_Sub5 var8 = Class3_Sub9.method133(var2 >> 16, 19749 + -19749);
+			Class3_Sub28_Sub5 var8 = Class3_Sub9.method133(var2 >> 16);
 			var2 &= '\uffff';
 			if(var8 == null) {
 				return var4.method1890(true, true, true);
 			} else {
 				var5 &= 3;
 				Class3_Sub28_Sub5 var9 = null;
-				if(19749 != 19749) {
-					this.method2053((RSByteBuffer)null, (byte)-126);
-				}
 
 				if((this.aBoolean1846 || Class3_Sub26.aBoolean2558) && var3 != -1 && this.frames.length > var3) {
 					var3 = this.frames[var3];
-					var9 = Class3_Sub9.method133(var3 >> 16, 0);
+					var9 = Class3_Sub9.method133(var3 >> 16);
 					var3 &= '\uffff';
 				}
 
@@ -139,7 +136,7 @@ final class AnimationDefinition {
 		try {
 			int var7 = this.frames[var5];
 			int var6 = this.duration[var5];
-			Class3_Sub28_Sub5 var8 = Class3_Sub9.method133(var7 >> 16, 0);
+			Class3_Sub28_Sub5 var8 = Class3_Sub9.method133(var7 >> 16);
 			var7 &= '\uffff';
 			if(null == var8) {
 				return var1.method1894(true, true, true);
@@ -147,7 +144,7 @@ final class AnimationDefinition {
 				Class3_Sub28_Sub5 var9 = null;
 				if((this.aBoolean1846 || Class3_Sub26.aBoolean2558) && var3 != -1 && this.frames.length > var3) {
 					var3 = this.frames[var3];
-					var9 = Class3_Sub9.method133(var3 >> 16, 0);
+					var9 = Class3_Sub9.method133(var3 >> 16);
 					var3 &= '\uffff';
 				}
 
@@ -160,7 +157,7 @@ final class AnimationDefinition {
 					if(var5 < this.anIntArray1870.length) {
 						var13 = this.anIntArray1870[var5];
 						if(var13 != 65535) {
-							var10 = Class3_Sub9.method133(var13 >> 16, 0);
+							var10 = Class3_Sub9.method133(var13 >> 16);
 							var13 &= '\uffff';
 						}
 					}
@@ -168,7 +165,7 @@ final class AnimationDefinition {
 					if((this.aBoolean1846 || Class3_Sub26.aBoolean2558) && -1 != var3 && this.anIntArray1870.length > var3) {
 						var14 = this.anIntArray1870[var3];
 						if(var14 != 65535) {
-							var11 = Class3_Sub9.method133(var14 >> 16, 0);
+							var11 = Class3_Sub9.method133(var14 >> 16);
 							var14 &= '\uffff';
 						}
 					}
@@ -208,7 +205,7 @@ final class AnimationDefinition {
 		try {
 			int var7 = this.duration[var2];
 			var2 = this.frames[var2];
-			Class3_Sub28_Sub5 var8 = Class3_Sub9.method133(var2 >> 16, 3 + -3);
+			Class3_Sub28_Sub5 var8 = Class3_Sub9.method133(var2 >> 16);
 			var2 &= '\uffff';
 			if(null == var8) {
 				return var5.method1894(true, true, true);
@@ -217,7 +214,7 @@ final class AnimationDefinition {
 				Class3_Sub28_Sub5 var9 = null;
 				if((this.aBoolean1846 || Class3_Sub26.aBoolean2558) && var1 != -1 && this.frames.length > var1) {
 					var1 = this.frames[var1];
-					var9 = Class3_Sub9.method133(var1 >> 16, 3 + -3);
+					var9 = Class3_Sub9.method133(var1 >> 16);
 					var1 &= '\uffff';
 				}
 
@@ -285,24 +282,22 @@ final class AnimationDefinition {
 
 	final void method2058() {
 		try {
-			if((byte) -41 == -41) {
-				if(this.anInt1866 == -1) {
-					if(null == this.aBooleanArray1855) {
-						this.anInt1866 = 0;
-					} else {
-						this.anInt1866 = 2;
-					}
+			if(this.anInt1866 == -1) {
+				if(null == this.aBooleanArray1855) {
+					this.anInt1866 = 0;
+				} else {
+					this.anInt1866 = 2;
 				}
-
-				if(-1 == this.anInt1850) {
-					if(null == this.aBooleanArray1855) {
-						this.anInt1850 = 0;
-					} else {
-						this.anInt1850 = 2;
-					}
-				}
-
 			}
+
+			if(-1 == this.anInt1850) {
+				if(null == this.aBooleanArray1855) {
+					this.anInt1850 = 0;
+				} else {
+					this.anInt1850 = 2;
+				}
+			}
+
 		} catch (RuntimeException var3) {
 			throw Class44.clientError(var3, "tk.C(" + (byte) -41 + ')');
 		}
@@ -313,7 +308,7 @@ final class AnimationDefinition {
 			int var8 = 43 / (((byte) -52 - 4) / 54);
 			int var6 = this.duration[var3];
 			var3 = this.frames[var3];
-			Class3_Sub28_Sub5 var7 = Class3_Sub9.method133(var3 >> 16, 0);
+			Class3_Sub28_Sub5 var7 = Class3_Sub9.method133(var3 >> 16);
 			var3 &= '\uffff';
 			if(var7 == null) {
 				return var5.method1882(true, true, true);
@@ -321,7 +316,7 @@ final class AnimationDefinition {
 				Class3_Sub28_Sub5 var9 = null;
 				if((this.aBoolean1846 || Class3_Sub26.aBoolean2558) && var1 != -1 && var1 < this.frames.length) {
 					var1 = this.frames[var1];
-					var9 = Class3_Sub9.method133(var1 >> 16, 0);
+					var9 = Class3_Sub9.method133(var1 >> 16);
 					var1 &= '\uffff';
 				}
 
@@ -420,7 +415,7 @@ final class AnimationDefinition {
 				this.aBoolean1872 = true;
 			}
 
-			var4 = 49 % ((-12 - (byte) -73) / 34);
+			var4 = 0;
 		} catch (RuntimeException var8) {
 			throw Class44.clientError(var8, "tk.H(" + var1 + ',' + (byte) -73 + ',' + (var3 != null?"{...}":"null") + ')');
 		}

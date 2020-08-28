@@ -119,10 +119,6 @@ final class Class3_Sub5 extends Class3 {
             Class158.aByteArrayArrayArray2008 = new byte[4][104][104];
          }
 
-         if((byte) 55 != 55) {
-            anInt2281 = -87;
-         }
-
          for(int var2 = 0; var2 < 4; ++var2) {
             for(int var3 = 0; var3 < 104; ++var3) {
                for(int var4 = 0; 104 > var4; ++var4) {
@@ -146,9 +142,6 @@ final class Class3_Sub5 extends Class3 {
 
    static void method114(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
       try {
-         if(3 != 3) {
-            method117((byte)-26);
-         }
 
          if(var8 == var9 && var3 == var7 && var5 == var4 && var1 == var6) {
             GameObject.method1869((byte)84, var2, var6, var7, var5, var9);
@@ -193,9 +186,6 @@ final class Class3_Sub5 extends Class3 {
    static int method115(boolean var0) {
       try {
          long var2 = Class5.method830((byte)-55);
-         if(-1 != -1) {
-            method116(false, 11);
-         }
 
          for(Class3_Sub7 var4 = !var0?(Class3_Sub7)Class3_Sub28_Sub15.aClass130_3679.method1778(-123):(Class3_Sub7)Class3_Sub28_Sub15.aClass130_3679.method1776(-1 + 56); var4 != null; var4 = (Class3_Sub7)Class3_Sub28_Sub15.aClass130_3679.method1778(-64)) {
             if((4611686018427387903L & var4.aLong2295) < var2) {

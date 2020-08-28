@@ -21,10 +21,8 @@ abstract class AbstractIndexedSprite {
 
          var0.aClass3_74 = var1;
          var0.aClass3_76 = var1.aClass3_76;
-         if(-16 == -16) {
-            var0.aClass3_76.aClass3_74 = var0;
-            var0.aClass3_74.aClass3_76 = var0;
-         }
+         var0.aClass3_76.aClass3_74 = var0;
+         var0.aClass3_74.aClass3_76 = var0;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ok.C(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + -16 + ')');
       }

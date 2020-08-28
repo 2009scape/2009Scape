@@ -40,9 +40,6 @@ final class Canvas_Sub1 extends Canvas implements FocusListener {
 
    static void method55() {
       try {
-         if(22683 != 22683) {
-            method53(43);
-         }
 
          aClass93_21.method1523((byte)-100);
          Class99.aClass93_1401.method1523((byte)-105);

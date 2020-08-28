@@ -41,9 +41,9 @@ final class Class81 {
       }
    }
 
-   static int method1398(int var0, Player var1) {
+   static int method1398(Player var1) {
       try {
-         if(var0 != 0) {
+         if(0 != 0) {
             putRandomDataFile((RSByteBuffer)null, false);
          }
 
@@ -61,7 +61,7 @@ final class Class81 {
 
          return var2;
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "la.A(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "la.A(" + 0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -69,8 +69,8 @@ final class Class81 {
       try {
          if(var1 != 0L) {
             if(Class3_Sub28_Sub5.anInt3591 < 100) {
-               int var3 = -103 / ((32 - -20) / 41);
-               RSString var4 = Class41.method1052(-29664, var1).method1545();
+               int var3 = -103;
+               RSString var4 = Class41.method1052(var1).method1545();
 
                int var5;
                for(var5 = 0; var5 < Class3_Sub28_Sub5.anInt3591; ++var5) {
@@ -92,7 +92,7 @@ final class Class81 {
                } else {
                   ++Class3_Sub13_Sub22.anInt3267;
                   Class114.ignores[Class3_Sub28_Sub5.anInt3591] = var1;
-                  Class3_Sub13_Sub27.aClass94Array3341[Class3_Sub28_Sub5.anInt3591++] = Class41.method1052(-29664, var1);
+                  Class3_Sub13_Sub27.aClass94Array3341[Class3_Sub28_Sub5.anInt3591++] = Class41.method1052(var1);
                   Class110.anInt1472 = Class3_Sub13_Sub17.anInt3213;
                   Class3_Sub13_Sub1.outgoingBuffer.putOpcode(34);
                   Class3_Sub13_Sub1.outgoingBuffer.putLong(var1, -2037491440);

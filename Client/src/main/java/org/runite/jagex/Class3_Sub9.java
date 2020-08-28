@@ -33,9 +33,9 @@ final class Class3_Sub9 extends Class3 {
    static RSString RIGHT_PARENTHESES = RSString.createRSString("(Y");
 
 
-   static Class3_Sub28_Sub5 method133(int var0, int var1) {
+   static Class3_Sub28_Sub5 method133(int var0) {
       try {
-         if(var1 != 0) {
+         if(0 != 0) {
             method135(-59, 112, 16, -6, 77, -69);
          }
          Class3_Sub28_Sub5 var2 = (Class3_Sub28_Sub5)Class159.aClass93_2016.get((long)var0);
@@ -48,7 +48,7 @@ final class Class3_Sub9 extends Class3 {
          }
          return var2;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "fl.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "fl.B(" + var0 + ',' + 0 + ')');
       }
    }
 
@@ -72,11 +72,11 @@ final class Class3_Sub9 extends Class3 {
             }
          } else if(this.aClass140_Sub4_Sub2_2324 == null) {
             if(null != this.aClass140_Sub4_Sub1_2327) {
-               this.anInt2332 = Class81.method1398(1 + -1, this.aClass140_Sub4_Sub1_2327);
+               this.anInt2332 = Class81.method1398(this.aClass140_Sub4_Sub1_2327);
                this.anInt2328 = 128 * this.aClass140_Sub4_Sub1_2327.anInt3969;
             }
          } else {
-            int var6 = ISAACCipher.method1232(this.aClass140_Sub4_Sub2_2324, 1 ^ -2);
+            int var6 = ISAACCipher.method1232(this.aClass140_Sub4_Sub2_2324);
             if(var2 != var6) {
                NPCDefinition var4 = this.aClass140_Sub4_Sub2_2324.definition;
                this.anInt2332 = var6;
@@ -92,13 +92,11 @@ final class Class3_Sub9 extends Class3 {
             }
          }
 
-         if(1 == 1) {
-            if(this.anInt2332 != var2 && this.aClass3_Sub24_Sub1_2312 != null) {
-               Class3_Sub26.aClass3_Sub24_Sub2_2563.method461(this.aClass3_Sub24_Sub1_2312);
-               this.aClass3_Sub24_Sub1_2312 = null;
-            }
-
+         if(this.anInt2332 != var2 && this.aClass3_Sub24_Sub1_2312 != null) {
+            Class3_Sub26.aClass3_Sub24_Sub2_2563.method461(this.aClass3_Sub24_Sub1_2312);
+            this.aClass3_Sub24_Sub1_2312 = null;
          }
+
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "fl.A(" + 1 + ')');
       }

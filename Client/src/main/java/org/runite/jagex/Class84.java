@@ -90,11 +90,8 @@ final class Class84 {
          Class168.aClass3_Sub28_Sub17_2096.method681(TextCore.HasChooseOptions, var1 - -3, var2 + 14, var5, -1);
          int var7 = Class130.anInt1709;
          int var6 = Class126.anInt1676;
-         if(-117 >= -113) {
-            anIntArrayArray1160 = (int[][])((int[][])null);
-         }
 
-         for(int var8 = 0; var8 < Class3_Sub13_Sub34.anInt3415; ++var8) {
+          for(int var8 = 0; var8 < Class3_Sub13_Sub34.anInt3415; ++var8) {
             int var9 = (-var8 + -1 + Class3_Sub13_Sub34.anInt3415) * 15 + var2 - -31;
             int var10 = 16777215;
             if(var6 > var1 && var1 - -var3 > var6 && -13 + var9 < var7 && 3 + var9 > var7) {
@@ -128,11 +125,8 @@ final class Class84 {
 
    static int method1421() {
       try {
-         if(-2 != -2) {
-            method1422((byte)26);
-         }
 
-         return ((Class3_Sub13_Sub15.aBoolean3184?1:0) << 19) + (((Class38.aBoolean661?1:0) << 16) + ((!Class128.aBoolean1685?0:1) << 15) + ((!Class106.aBoolean1441?0:1) << 13) + ((Class140_Sub6.aBoolean2910?1:0) << 10) + ((Class3_Sub13_Sub22.aBoolean3275?1:0) << 9) + ((RSInterface.aBoolean236?1:0) << 7) + ((!Class25.aBoolean488?0:1) << 6) + ((KeyboardListener.aBoolean1905?1:0) << 5) + (((!Class3_Sub28_Sub13.aBoolean3665?0:1) << 3) + (Class3_Sub28_Sub10.anInt3625 & 7) - (-((!Class3_Sub28_Sub7.aBoolean3604?0:1) << 4) + -((WorldListEntry.aBoolean2623?1:0) << 8)) - (-(Class80.anInt1137 << 11 & 6144) + -((CS2Script.anInt2453 == 0 ?0:1) << 20) - (((Class9.anInt120 != 0 ?1:0) << 21) + ((Class14.anInt340 == 0 ?0:1) << 22)))) - -(Class127_Sub1.method1757() << 23));
+          return ((Class3_Sub13_Sub15.aBoolean3184?1:0) << 19) + (((Class38.aBoolean661?1:0) << 16) + ((!Class128.aBoolean1685?0:1) << 15) + ((!Class106.aBoolean1441?0:1) << 13) + ((Class140_Sub6.aBoolean2910?1:0) << 10) + ((Class3_Sub13_Sub22.aBoolean3275?1:0) << 9) + ((RSInterface.aBoolean236?1:0) << 7) + ((!Class25.aBoolean488?0:1) << 6) + ((KeyboardListener.aBoolean1905?1:0) << 5) + (((!Class3_Sub28_Sub13.aBoolean3665?0:1) << 3) + (Class3_Sub28_Sub10.anInt3625 & 7) - (-((!Class3_Sub28_Sub7.aBoolean3604?0:1) << 4) + -((WorldListEntry.aBoolean2623?1:0) << 8)) - (-(Class80.anInt1137 << 11 & 6144) + -((CS2Script.anInt2453 == 0 ?0:1) << 20) - (((Class9.anInt120 != 0 ?1:0) << 21) + ((Class14.anInt340 == 0 ?0:1) << 22)))) - -(Class127_Sub1.method1757() << 23));
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "lf.F(" + -2 + ')');
       }

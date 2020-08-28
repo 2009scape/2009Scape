@@ -57,11 +57,8 @@ final class Class154 {
    static RSString method2148(int var0) {
       try {
          if(999999999 <= var0) {
-            if((byte) -78 != -78) {
-               method2145((byte)-8);
-            }
 
-            return Class128.aClass94_1687;
+             return Class128.aClass94_1687;
          } else {
             return Class72.method1298((byte)9, var0);
          }

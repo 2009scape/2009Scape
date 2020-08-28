@@ -28,7 +28,7 @@ final class Class3_Sub23 extends Class3 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "oj.B(" + var0 + ')');
+         throw Class44.clientError(var2, "oj.B(" + ')');
       }
    }
 
@@ -116,15 +116,11 @@ final class Class3_Sub23 extends Class3 {
             var9 = var12;
          }
 
-         if(2 == 2) {
-            if(var10.length(2 ^ -47) > 0) {
-               var10.method1533(var7, true);
-            }
+          if(var10.length(2 ^ -47) > 0) {
+             var10.method1533(var7, true);
+          }
 
-            return RenderAnimationDefinition.method903(new RSString[]{var6, var9.method1544(true), var10.method1544(true)}, (byte)-66);
-         } else {
-            return (RSString)null;
-         }
+          return RenderAnimationDefinition.method903(new RSString[]{var6, var9.method1544(true), var10.method1544(true)}, (byte)-66);
       } catch (RuntimeException var13) {
          throw Class44.clientError(var13, "oj.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + 2 + ')');
       }

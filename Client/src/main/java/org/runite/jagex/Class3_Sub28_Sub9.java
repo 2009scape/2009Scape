@@ -16,11 +16,11 @@ final class Class3_Sub28_Sub9 extends Node {
    static int anInt3624;
 
 
-   static Class3_Sub28_Sub16_Sub2 method578(int var0) {
+   static Class3_Sub28_Sub16_Sub2 method578() {
       try {
          int var1 = Class3_Sub13_Sub6.anIntArray3076[0] * Class140_Sub7.anIntArray2931[0];
          byte[] var2 = Class163_Sub1.aByteArrayArray2987[0];
-         if(var0 != 115) {
+         if(115 != 115) {
             anInt3624 = 112;
          }
 
@@ -47,7 +47,7 @@ final class Class3_Sub28_Sub9 extends Node {
          Class39.method1035((byte)127);
          return (Class3_Sub28_Sub16_Sub2)var3;
       } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "hn.P(" + var0 + ')');
+         throw Class44.clientError(var7, "hn.P(" + 115 + ')');
       }
    }
 
@@ -59,10 +59,6 @@ final class Class3_Sub28_Sub9 extends Node {
             this.anInt3614 = var2.getInt();
          } else if (var1 == 5) {
             this.aClass94_3619 = var2.getString();
-         }
-
-         if(0 != 0) {
-            method582(5, 31, 114, true, -67, 14, -33, -115, -101, -61, -25, -121);
          }
 
       } catch (RuntimeException var5) {
@@ -84,15 +80,15 @@ final class Class3_Sub28_Sub9 extends Node {
 
    static void method581(CacheIndex var0, CacheIndex var2) {
       try {
-         Class3_Sub13.aClass3_Sub28_Sub17_2379 = Class73.method1300(0, Class96.anInt1352, (byte)124, var2, var0);
+         Class3_Sub13.aClass3_Sub28_Sub17_2379 = Class73.method1300(Class96.anInt1352, (byte)124, var2, var0);
          if(HDToolKit.highDetail) {
             Class157.aClass3_Sub28_Sub17_Sub1_2000 = Class70.method1287(Class96.anInt1352, var0, var2);
          } else {
             Class157.aClass3_Sub28_Sub17_Sub1_2000 = (Class3_Sub28_Sub17_Sub1)Class3_Sub13.aClass3_Sub28_Sub17_2379;
          }
 
-         Class126.aClass3_Sub28_Sub17_1669 = Class73.method1300(0, Class75_Sub2.anInt2643, (byte)125, var2, var0);
-         Class168.aClass3_Sub28_Sub17_2096 = Class73.method1300(0, Class3_Sub13_Sub11.anInt3132, (byte)124, var2, var0);
+         Class126.aClass3_Sub28_Sub17_1669 = Class73.method1300(Class75_Sub2.anInt2643, (byte)125, var2, var0);
+         Class168.aClass3_Sub28_Sub17_2096 = Class73.method1300(Class3_Sub13_Sub11.anInt3132, (byte)124, var2, var0);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "hn.D(" + (var0 != null?"{...}":"null") + ',' + 0 + ',' + (var2 != null?"{...}":"null") + ')');
       }
@@ -108,15 +104,13 @@ final class Class3_Sub28_Sub9 extends Node {
 
    final void method583(RSByteBuffer var2) {
       try {
-         if(207 == 207) {
-            while(true) {
-               int var3 = var2.getByte((byte)-96);
-               if(var3 == 0) {
-                  return;
-               }
-
-               this.method579(var3, var2);
+         while(true) {
+            int var3 = var2.getByte((byte)-96);
+            if(var3 == 0) {
+               return;
             }
+
+            this.method579(var3, var2);
          }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "hn.C(" + 207 + ',' + (var2 != null?"{...}":"null") + ')');
@@ -138,9 +132,6 @@ final class Class3_Sub28_Sub9 extends Node {
 
    final boolean method585() {
       try {
-         if(0 != 0) {
-            aClass94_3621 = (RSString)null;
-         }
 
          return this.anInt3617 == 115;
       } catch (RuntimeException var3) {

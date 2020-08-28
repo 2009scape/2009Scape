@@ -15,7 +15,7 @@ final class Canvas_Sub2 extends Canvas {
       try {
          int var3 = 81 % ((39 - 99) / 41);
          Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 6, var0);
-         var2.a(true);
+         var2.a();
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "tm.C(" + var0 + ',' + 99 + ')');
       }
@@ -40,7 +40,7 @@ final class Canvas_Sub2 extends Canvas {
                            RSInterface var5 = GameObject.aClass11ArrayArray1834[archive][fileId] = new RSInterface();
                            var5.anInt279 = fileId + (archive << 16);
                            if(-1 == var4[0]) {
-                              var5.decodeScriptFormat(104 ^ -105, new RSByteBuffer(var4));
+                              var5.decodeScriptFormat(new RSByteBuffer(var4));
                            } else {
                               var5.decodeNoScripts(-115, new RSByteBuffer(var4));
                            }
@@ -49,9 +49,6 @@ final class Canvas_Sub2 extends Canvas {
                   }
 
                   Class130.aBooleanArray1703[archive] = true;
-                  if(104 != 104) {
-                     parsePlayerMasks(100);
-                  }
 
                }
                return true;
@@ -166,7 +163,7 @@ final class Canvas_Sub2 extends Canvas {
                            if(var7 >= var15) {
                               for(var20 = var17; var17 + 4 > var20; ++var20) {
                                  for(var21 = var18; var21 < 4 + var18; ++var21) {
-                                    if(var9 <= var20 && 8 + var9 > var20 && var8 <= var21 && var8 < var8 + 8) {
+                                    if(var9 <= var20 && 8 + var9 > var20 && var8 <= var21) {
                                        var22 = var1 - -Node.method519(var0, var21 & 7, var20 & 7);
                                        int var23 = Class3_Sub13_Sub29.method310(var0, (byte)-97, 7 & var20, var21 & 7) + var4;
                                        if(0 <= var22 && 104 > var22 && var23 >= 0 && var23 < 104) {
@@ -273,14 +270,12 @@ final class Canvas_Sub2 extends Canvas {
             Class115.aClass86ArrayArray1581[var1 >> 3][var4 >> 3] = var26;
          }
 
-         if(!var27) {
-            var14 = 7 + var1;
-            var15 = var4 - -7;
+         var14 = 7 + var1;
+         var15 = var4 - -7;
 
-            for(var28 = var1; var14 > var28; ++var28) {
-               for(var17 = var4; var15 > var17; ++var17) {
-                  Class136.aByteArrayArrayArray1774[var2][var28][var17] = 0;
-               }
+         for(var28 = var1; var14 > var28; ++var28) {
+            for(var17 = var4; var15 > var17; ++var17) {
+               Class136.aByteArrayArrayArray1774[var2][var28][var17] = 0;
             }
          }
 

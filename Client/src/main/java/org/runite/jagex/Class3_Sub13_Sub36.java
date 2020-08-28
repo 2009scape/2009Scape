@@ -53,137 +53,135 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
             Class140_Sub2.method1952(Class3_Sub13_Sub13.anInt3155, var1, Class121.method1736(WorldListCountry.localPlane, 1, Class102.player.anInt2819, Class102.player.anInt2829) + -50, Client.ZOOM - -(var6 * 3), var7, Class62.anInt942, var6);
          }
 
-         if(-6403 == -6403) {
-            var7 = Class7.anInt2162;
-            var6 = NPC.anInt3995;
-            int var8 = Class77.anInt1111;
-            int var9 = Class139.anInt1823;
-            int var10 = Class3_Sub13_Sub25.anInt3315;
+         var7 = Class7.anInt2162;
+         var6 = NPC.anInt3995;
+         int var8 = Class77.anInt1111;
+         int var9 = Class139.anInt1823;
+         int var10 = Class3_Sub13_Sub25.anInt3315;
 
-            int var11;
-            int var12;
-            for(var11 = 0; 5 > var11; ++var11) {
-               if(Class104.aBooleanArray2169[var11]) {
-                  var12 = (int)((double)(-Class3_Sub13_Sub32.anIntArray3383[var11]) + (double)(Class3_Sub13_Sub32.anIntArray3383[var11] * 2 + 1) * Math.random() + Math.sin((double)Class163_Sub1_Sub1.anIntArray4009[var11] * ((double)Class3_Sub13_Sub29.anIntArray3359[var11] / 100.0D)) * (double)Class166.anIntArray2073[var11]);
-                  if(var11 == 3) {
-                     Class3_Sub13_Sub25.anInt3315 = var12 + Class3_Sub13_Sub25.anInt3315 & 2047;
+         int var11;
+         int var12;
+         for(var11 = 0; 5 > var11; ++var11) {
+            if(Class104.aBooleanArray2169[var11]) {
+               var12 = (int)((double)(-Class3_Sub13_Sub32.anIntArray3383[var11]) + (double)(Class3_Sub13_Sub32.anIntArray3383[var11] * 2 + 1) * Math.random() + Math.sin((double)Class163_Sub1_Sub1.anIntArray4009[var11] * ((double)Class3_Sub13_Sub29.anIntArray3359[var11] / 100.0D)) * (double)Class166.anIntArray2073[var11]);
+               if(var11 == 3) {
+                  Class3_Sub13_Sub25.anInt3315 = var12 + Class3_Sub13_Sub25.anInt3315 & 2047;
+               }
+
+               if(var11 == 4) {
+                  Class139.anInt1823 += var12;
+                  if(128 > Class139.anInt1823) {
+                     Class139.anInt1823 = 128;
                   }
 
-                  if(var11 == 4) {
-                     Class139.anInt1823 += var12;
-                     if(128 > Class139.anInt1823) {
-                        Class139.anInt1823 = 128;
-                     }
-
-                     if(Class139.anInt1823 > 383) {
-                        Class139.anInt1823 = 383;
-                     }
+                  if(Class139.anInt1823 > 383) {
+                     Class139.anInt1823 = 383;
                   }
+               }
 
-                  if(var11 == 2) {
-                     Class77.anInt1111 += var12;
-                  }
+               if(var11 == 2) {
+                  Class77.anInt1111 += var12;
+               }
 
-                  if(var11 == 1) {
-                     Class7.anInt2162 += var12;
-                  }
+               if(var11 == 1) {
+                  Class7.anInt2162 += var12;
+               }
 
-                  if(var11 == 0) {
-                     NPC.anInt3995 += var12;
-                  }
+               if(var11 == 0) {
+                  NPC.anInt3995 += var12;
                }
             }
+         }
 
-            Class3_Sub28_Sub20.method725(-118);
-            if(HDToolKit.highDetail) {
-               Class22.method935(var3, var5, var3 + var4, var5 - -var1);
-               float var17 = (float)Class139.anInt1823 * 0.17578125F;
-               float var16 = 0.17578125F * (float)Class3_Sub13_Sub25.anInt3315;
-               if(Class133.anInt1753 == 3) {
-                  var17 = 360.0F * Class85.aFloat1169 / 6.2831855F;
-                  var16 = Class45.aFloat730 * 360.0F / 6.2831855F;
-               }
+         Class3_Sub28_Sub20.method725(-118);
+         if(HDToolKit.highDetail) {
+            Class22.method935(var3, var5, var3 + var4, var5 - -var1);
+            float var17 = (float)Class139.anInt1823 * 0.17578125F;
+            float var16 = 0.17578125F * (float)Class3_Sub13_Sub25.anInt3315;
+            if(Class133.anInt1753 == 3) {
+               var17 = 360.0F * Class85.aFloat1169 / 6.2831855F;
+               var16 = Class45.aFloat730 * 360.0F / 6.2831855F;
+            }
 
-               HDToolKit.method1844(var3, var5, var4, var1, var4 / 2 + var3, var5 - -(var1 / 2), var17, var16, Class130.anInt1705, Class130.anInt1705);
+            HDToolKit.method1844(var3, var5, var4, var1, var4 / 2 + var3, var5 - -(var1 / 2), var17, var16, Class130.anInt1705, Class130.anInt1705);
+         } else {
+            Class74.method1324(var3, var5, var4 + var3, var1 + var5);
+            Class51.method1134();
+         }
+
+         if(!Class38_Sub1.aBoolean2615 && var3 <= NPCDefinition.anInt1297 && var4 + var3 > NPCDefinition.anInt1297 && var5 <= Class38_Sub1.anInt2612 && Class38_Sub1.anInt2612 < var1 + var5) {
+            Class3_Sub13_Sub7.aBoolean3094 = true;
+            Class2.anInt59 = 0;
+            var12 = Class145.anInt1898;
+            int var13 = Class1.anInt55;
+            var11 = Class139.anInt1824;
+            Class3_Sub28_Sub11.anInt3642 = var11 + (var12 - var11) * (-var3 + NPCDefinition.anInt1297) / var4;
+            int var14 = Class86.anInt1195;
+            RenderAnimationDefinition.anInt384 = (-var13 + var14) * (Class38_Sub1.anInt2612 - var5) / var1 + var13;
+         } else {
+            Class3_Sub13_Sub7.aBoolean3094 = false;
+            Class2.anInt59 = 0;
+         }
+
+         Class58.method1194();
+         byte var19 = Class137.method1817() != 2 ?1:(byte)Class79.anInt1127;
+         if(HDToolKit.highDetail) {
+            HDToolKit.method1846();
+            HDToolKit.method1831(true);
+            boolean var18 = false;
+            HDToolKit.method1827(true);
+            if(Class143.loadingStage == 10) {
+               var12 = Class3_Sub30_Sub1.method809(Class106.anInt1446, Class77.anInt1111 >> 10, Class3_Sub28_Sub10.anInt3625, NPC.anInt3995 >> 10);
             } else {
-               Class74.method1324(var3, var5, var4 + var3, var1 + var5);
-               Class51.method1134();
+               var12 = Class3_Sub30_Sub1.method809(Class106.anInt1446, Class102.player.anIntArray2755[0] >> 3, Class3_Sub28_Sub10.anInt3625, Class102.player.anIntArray2767[0] >> 3);
             }
 
-            if(!Class38_Sub1.aBoolean2615 && var3 <= NPCDefinition.anInt1297 && var4 + var3 > NPCDefinition.anInt1297 && var5 <= Class38_Sub1.anInt2612 && Class38_Sub1.anInt2612 < var1 + var5) {
-               Class3_Sub13_Sub7.aBoolean3094 = true;
-               Class2.anInt59 = 0;
-               var12 = Class145.anInt1898;
-               int var13 = Class1.anInt55;
-               var11 = Class139.anInt1824;
-               Class3_Sub28_Sub11.anInt3642 = var11 + (var12 - var11) * (-var3 + NPCDefinition.anInt1297) / var4;
-               int var14 = Class86.anInt1195;
-               RenderAnimationDefinition.anInt384 = (-var13 + var14) * (Class38_Sub1.anInt2612 - var5) / var1 + var13;
-            } else {
-               Class3_Sub13_Sub7.aBoolean3094 = false;
-               Class2.anInt59 = 0;
-            }
+            Class68.method1269(Class44.anInt719, !WorldListEntry.aBoolean2623);
+            HDToolKit.method1849(var12);
+            RuntimeException_Sub1.method2285(Class139.anInt1823, Class77.anInt1111, Class7.anInt2162, NPC.anInt3995, Class3_Sub13_Sub25.anInt3315);
+            HDToolKit.anInt1791 = Class44.anInt719;
+            Class3_Sub22.method398(NPC.anInt3995, Class7.anInt2162, Class77.anInt1111, Class139.anInt1823, Class3_Sub13_Sub25.anInt3315, Class158.aByteArrayArrayArray2008, Class41.anIntArray686, Class129_Sub1.anIntArray2696, Class159.anIntArray2021, Player.anIntArray3959, AnimationDefinition.anIntArray1871, WorldListCountry.localPlane + 1, var19, Class102.player.anInt2819 >> 7, Class102.player.anInt2829 >> 7);
+            OutputStream_Sub1.aBoolean47 = true;
+            Class68.method1265();
+            RuntimeException_Sub1.method2285(0, 0, 0, 0, 0);
+            Class58.method1194();
+            Class130.method1775();
+            Class82.method1405(var5, var4, var3, Class130.anInt1705, var1, Class130.anInt1705, -7397);
+            Class163_Sub2_Sub1.method2221(var4, var3, var1, Class130.anInt1705, Class130.anInt1705, var5);
+         } else {
+            Class74.method1323(var3, var5, var4, var1, 0);
+            Class3_Sub22.method398(NPC.anInt3995, Class7.anInt2162, Class77.anInt1111, Class139.anInt1823, Class3_Sub13_Sub25.anInt3315, Class158.aByteArrayArrayArray2008, Class41.anIntArray686, Class129_Sub1.anIntArray2696, Class159.anIntArray2021, Player.anIntArray3959, AnimationDefinition.anIntArray1871, WorldListCountry.localPlane - -1, var19, Class102.player.anInt2819 >> 7, Class102.player.anInt2829 >> 7);
+            Class58.method1194();
+            Class130.method1775();
+            Class82.method1405(var5, var4, var3, 256, var1, 256, -6403 + -994);
+            Class163_Sub2_Sub1.method2221(var4, var3, var1, 256, 256, var5);
+         }
 
-            Class58.method1194(-16385);
-            byte var19 = Class137.method1817() != 2 ?1:(byte)Class79.anInt1127;
+         ((Class102)Class51.anInterface2_838).method1610(Class106.anInt1446);
+         Class65.method1235(var4, var5, var1, var3);
+         Class139.anInt1823 = var9;
+         Class77.anInt1111 = var8;
+         Class7.anInt2162 = var7;
+         NPC.anInt3995 = var6;
+         Class3_Sub13_Sub25.anInt3315 = var10;
+         if(Class3_Sub13_Sub4.aBoolean3064 && Class58.aClass66_917.method1253() == 0) {
+            Class3_Sub13_Sub4.aBoolean3064 = false;
+         }
+
+         if(Class3_Sub13_Sub4.aBoolean3064) {
             if(HDToolKit.highDetail) {
-               HDToolKit.method1846();
-               HDToolKit.method1831(true);
-               boolean var18 = false;
-               HDToolKit.method1827(true);
-               if(Class143.loadingStage == 10) {
-                  var12 = Class3_Sub30_Sub1.method809(Class106.anInt1446, Class77.anInt1111 >> 10, Class3_Sub28_Sub10.anInt3625, NPC.anInt3995 >> 10, -6403 + 6404);
-               } else {
-                  var12 = Class3_Sub30_Sub1.method809(Class106.anInt1446, Class102.player.anIntArray2755[0] >> 3, Class3_Sub28_Sub10.anInt3625, Class102.player.anIntArray2767[0] >> 3, 1);
-               }
-
-               Class68.method1269(Class44.anInt719, !WorldListEntry.aBoolean2623);
-               HDToolKit.method1849(var12);
-               RuntimeException_Sub1.method2285(Class139.anInt1823, Class77.anInt1111, Class7.anInt2162, NPC.anInt3995, Class3_Sub13_Sub25.anInt3315);
-               HDToolKit.anInt1791 = Class44.anInt719;
-               Class3_Sub22.method398(NPC.anInt3995, Class7.anInt2162, Class77.anInt1111, Class139.anInt1823, Class3_Sub13_Sub25.anInt3315, Class158.aByteArrayArrayArray2008, Class41.anIntArray686, Class129_Sub1.anIntArray2696, Class159.anIntArray2021, Player.anIntArray3959, AnimationDefinition.anIntArray1871, WorldListCountry.localPlane + 1, var19, Class102.player.anInt2819 >> 7, Class102.player.anInt2829 >> 7);
-               OutputStream_Sub1.aBoolean47 = true;
-               Class68.method1265();
-               RuntimeException_Sub1.method2285(0, 0, 0, 0, 0);
-               Class58.method1194(-16385);
-               Class130.method1775();
-               Class82.method1405(var5, var4, var3, Class130.anInt1705, var1, Class130.anInt1705, -7397);
-               Class163_Sub2_Sub1.method2221(var4, var3, var1, Class130.anInt1705, Class130.anInt1705, var5);
+               Class22.method934(var3, var5, var4, var1, 0);
             } else {
                Class74.method1323(var3, var5, var4, var1, 0);
-               Class3_Sub22.method398(NPC.anInt3995, Class7.anInt2162, Class77.anInt1111, Class139.anInt1823, Class3_Sub13_Sub25.anInt3315, Class158.aByteArrayArrayArray2008, Class41.anIntArray686, Class129_Sub1.anIntArray2696, Class159.anIntArray2021, Player.anIntArray3959, AnimationDefinition.anIntArray1871, WorldListCountry.localPlane - -1, var19, Class102.player.anInt2819 >> 7, Class102.player.anInt2829 >> 7);
-               Class58.method1194(-6403 + -9982);
-               Class130.method1775();
-               Class82.method1405(var5, var4, var3, 256, var1, 256, -6403 + -994);
-               Class163_Sub2_Sub1.method2221(var4, var3, var1, 256, 256, var5);
             }
 
-            ((Class102)Class51.anInterface2_838).method1610(Class106.anInt1446);
-            Class65.method1235(var4, var5, var1, var3);
-            Class139.anInt1823 = var9;
-            Class77.anInt1111 = var8;
-            Class7.anInt2162 = var7;
-            NPC.anInt3995 = var6;
-            Class3_Sub13_Sub25.anInt3315 = var10;
-            if(Class3_Sub13_Sub4.aBoolean3064 && Class58.aClass66_917.method1253() == 0) {
-               Class3_Sub13_Sub4.aBoolean3064 = false;
-            }
-
-            if(Class3_Sub13_Sub4.aBoolean3064) {
-               if(HDToolKit.highDetail) {
-                  Class22.method934(var3, var5, var4, var1, 0);
-               } else {
-                  Class74.method1323(var3, var5, var4, var1, 0);
-               }
-
-               Class3_Sub13.method164((byte)-52, false, TextCore.LoadingPleaseWait2);
-            }
-
-            if(!var2 && !Class3_Sub13_Sub4.aBoolean3064 && !Class38_Sub1.aBoolean2615 && var3 <= NPCDefinition.anInt1297 && var4 + var3 > NPCDefinition.anInt1297 && Class38_Sub1.anInt2612 >= var5 && var1 + var5 > Class38_Sub1.anInt2612) {
-               Class104.method1628(var5, var4, var1, var3, Class38_Sub1.anInt2612, NPCDefinition.anInt1297);
-            }
-
+            Class3_Sub13.method164((byte)-52, false, TextCore.LoadingPleaseWait2);
          }
+
+         if(!var2 && !Class3_Sub13_Sub4.aBoolean3064 && !Class38_Sub1.aBoolean2615 && var3 <= NPCDefinition.anInt1297 && var4 + var3 > NPCDefinition.anInt1297 && Class38_Sub1.anInt2612 >= var5 && var1 + var5 > Class38_Sub1.anInt2612) {
+            Class104.method1628(var5, var4, var1, var3, Class38_Sub1.anInt2612, NPCDefinition.anInt1297);
+         }
+
       } catch (RuntimeException var15) {
          throw Class44.clientError(var15, "ui.OA(" + -6403 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
@@ -229,9 +227,7 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
 
    private boolean method339() {
       try {
-         if(false) {
-            return true;
-         } else if(this.anIntArray3425 == null) {
+         if(this.anIntArray3425 == null) {
             if(this.anInt3434 < 0) {
                return false;
             } else {
@@ -254,7 +250,7 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
 
    static int method340(int var0) {
       try {
-         int var2 = 74 % ((8 - -51) / 54);
+         int var2 = 0;
          return var0 >>> 8;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "ui.NA(" + var0 + ',' + -51 + ')');

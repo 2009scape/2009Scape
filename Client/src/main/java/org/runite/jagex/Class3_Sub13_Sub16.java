@@ -25,14 +25,12 @@ final class Class3_Sub13_Sub16 extends Class3_Sub13 {
       try {
          Random var2 = new Random((long)this.anInt3197);
          this.aShortArray3200 = new short[512];
-         if((byte) 37 == 37) {
-            if(0 < this.anInt3193) {
-               for(int var3 = 0; 512 > var3; ++var3) {
-                  this.aShortArray3200[var3] = (short)Class100.method1603((byte)23, this.anInt3193, var2);
-               }
-            }
+          if(0 < this.anInt3193) {
+             for(int var3 = 0; 512 > var3; ++var3) {
+                this.aShortArray3200[var3] = (short)Class100.method1603((byte)23, this.anInt3193, var2);
+             }
+          }
 
-         }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "hm.C(" + (byte) 37 + ')');
       }
@@ -53,11 +51,8 @@ final class Class3_Sub13_Sub16 extends Class3_Sub13 {
 
    static int method243(RSString var0) {
       try {
-         if((byte) 13 != 13) {
-            method245(-29);
-         }
 
-         for(int var2 = 0; Class3_Sub13_Sub19.aClass94Array3238.length > var2; ++var2) {
+          for(int var2 = 0; Class3_Sub13_Sub19.aClass94Array3238.length > var2; ++var2) {
             if(Class3_Sub13_Sub19.aClass94Array3238[var2].equals((byte) 13 + 40, var0)) {
                return var2;
             }
@@ -172,10 +167,6 @@ final class Class3_Sub13_Sub16 extends Class3_Sub13 {
             for(var5 = var3; var1 > var5; ++var5) {
                Class38.anIntArrayArray663[var5][var2] = var4;
             }
-         }
-
-         if(2 != 2) {
-            anInt3198 = -110;
          }
 
       } catch (RuntimeException var6) {

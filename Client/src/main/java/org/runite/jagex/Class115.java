@@ -15,11 +15,8 @@ final class Class115 {
 
    static void method1713() {
       try {
-         if((byte) -91 > -45) {
-            aClass86ArrayArray1581 = (Class86[][])((Class86[][])null);
-         }
 
-         while(true) {
+          while(true) {
             Class3_Sub5 var1 = (Class3_Sub5)Class3_Sub18.aClass61_2468.method1220();
             if(var1 == null) {
                return;
@@ -124,11 +121,8 @@ final class Class115 {
    static void method1714() {
       try {
          KeyboardListener.aClass93_1911.method1523((byte)-112);
-         if((byte) -6 != -6) {
-            method1712(-114);
-         }
 
-         Class80.aClass93_1131.method1523((byte)-100);
+          Class80.aClass93_1131.method1523((byte)-100);
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "ph.C(" + (byte) -6 + ')');
       }

@@ -20,9 +20,6 @@ final class Class3_Sub13_Sub34 extends Class3_Sub13 {
 
    static void method328(RSByteBuffer var1) {
       try {
-         if(-21774 != -21774) {
-            method330(-115, 107, 60, 70, -41, 115);
-         }
 
          while(var1.index < var1.buffer.length) {
             int var4 = 0;
@@ -237,7 +234,7 @@ final class Class3_Sub13_Sub34 extends Class3_Sub13 {
 
          }
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "sk.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var6, "sk.A(" + var1 + ',' + (var2 != null ? "{...}" : "null") + ',' + ')');
       }
    }
 
@@ -360,7 +357,7 @@ final class Class3_Sub13_Sub34 extends Class3_Sub13 {
 
    static boolean method334(CacheIndex var0) {
       try {
-         return var0.method2144(0, NPC.anInt4001);
+         return var0.method2144(NPC.anInt4001);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "sk.R(" + (var0 != null?"{...}":"null") + ',' + 0 + ')');
       }

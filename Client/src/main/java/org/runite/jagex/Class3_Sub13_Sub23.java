@@ -56,21 +56,17 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
 
    static boolean handleWorldListUpdate(byte[] buf) {
       try {
-         if(4 == 4) {
-            RSByteBuffer buffer = new RSByteBuffer(buf);
-            int opcode = buffer.getByte((byte)-67);
-            //System.out.println(opcode);
-            if(1 == opcode) {
-               boolean updated = buffer.getByte((byte) -70) == 1;
-               if(updated) {
-                  Class53.parseWorldList(buffer, 4 ^ -84);
-               }
-
-               Class3_Sub13_Sub10.method216(buffer);
-               return true;
-            } else {
-               return false;
+         RSByteBuffer buffer = new RSByteBuffer(buf);
+         int opcode = buffer.getByte((byte)-67);
+         //System.out.println(opcode);
+         if(1 == opcode) {
+            boolean updated = buffer.getByte((byte) -70) == 1;
+            if(updated) {
+               Class53.parseWorldList(buffer);
             }
+
+            Class3_Sub13_Sub10.method216(buffer);
+            return true;
          } else {
             return false;
          }
@@ -86,7 +82,7 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
             if(this.anInt3278 < 0) {
                return false;
             } else {
-               Class3_Sub28_Sub16_Sub2 var3 = Class126.anInt1668 < 0 ?RSString.method1537(Class104.aClass153_2172, this.anInt3278):Class40.method1043(this.anInt3278, Class104.aClass153_2172, -3178, Class126.anInt1668);
+               Class3_Sub28_Sub16_Sub2 var3 = Class126.anInt1668 < 0 ?RSString.method1537(Class104.aClass153_2172, this.anInt3278):Class40.method1043(this.anInt3278, Class104.aClass153_2172, Class126.anInt1668);
                var3.method665();
                this.anInt3283 = var3.anInt3696;
                this.anInt3280 = var3.anInt3707;
@@ -116,21 +112,19 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
    static void method280(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var11, int var12) {
       try {
          Class3_Sub5 var13 = new Class3_Sub5();
-         if(-745213428 == -745213428) {
-            var13.anInt2284 = var6;
-            var13.anInt2283 = var3;
-            var13.anInt2266 = var1;
-            var13.anInt2279 = var5;
-            var13.anInt2273 = var2;
-            var13.anInt2271 = var8;
-            var13.anInt2277 = var11;
-            var13.anInt2282 = var4;
-            var13.anInt2270 = var12;
-            var13.anInt2268 = var7;
-            var13.anInt2272 = var0;
-            var13.anInt2278 = var9;
-            Class3_Sub18.aClass61_2468.method1215(true, var13);
-         }
+         var13.anInt2284 = var6;
+         var13.anInt2283 = var3;
+         var13.anInt2266 = var1;
+         var13.anInt2279 = var5;
+         var13.anInt2273 = var2;
+         var13.anInt2271 = var8;
+         var13.anInt2277 = var11;
+         var13.anInt2282 = var4;
+         var13.anInt2270 = var12;
+         var13.anInt2268 = var7;
+         var13.anInt2272 = var0;
+         var13.anInt2278 = var9;
+         Class3_Sub18.aClass61_2468.method1215(var13);
       } catch (RuntimeException var14) {
          throw Class44.clientError(var14, "nh.V(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + -745213428 + ',' + var11 + ',' + var12 + ')');
       }
@@ -195,7 +189,7 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
          Class3_Sub7 var3 = (Class3_Sub7)Class3_Sub28_Sub15.aClass130_3679.method1780((long)var2, 0);
          if(null == var3) {
             var3 = new Class3_Sub7(4611686018427387905L);
-            Class3_Sub28_Sub15.aClass130_3679.method1779(1, var3, (long)var2);
+            Class3_Sub28_Sub15.aClass130_3679.method1779(var3, (long)var2);
          } else if (var3.aLong2295 != 4611686018427387905L) {
             var3.aLong2295 = Class5.method830((byte) -55) + 500L | 4611686018427387904L;
          }

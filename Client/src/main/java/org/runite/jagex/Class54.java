@@ -16,9 +16,6 @@ final class Class54 {
       try {
          Class3_Sub13_Sub30.anInt3362 = -1;
          Class82.anInt1150 = -1;
-         if(112 <= 55) {
-            method1177(-67, 28L, (byte)76, (RSString)null, -45, (short)94, (RSString)null, -125);
-         }
 
          Class3_Sub28_Sub1.anInt3536 = var0;
          Class3_Sub5.method117((byte)87);
@@ -42,7 +39,7 @@ final class Class54 {
             return var0.equals((byte) -82 + -46, Class102.player.displayName);
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "hj.A(" + (var0 != null?"{...}":"null") + ',' + (byte) -82 + ')');
+         throw Class44.clientError(var3, "hj.A(" + "{...}" + ',' + (byte) -82 + ')');
       }
    }
 

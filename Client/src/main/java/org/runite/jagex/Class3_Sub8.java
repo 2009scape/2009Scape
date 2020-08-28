@@ -32,7 +32,7 @@ final class Class3_Sub8 extends Class3 {
 
    static void method125(int var0, byte var1, int var2, int var3, RSInterface var4) {
       try {
-         Class58.method1194(-16385);
+         Class58.method1194();
          if(HDToolKit.highDetail) {
             Class22.method935(var3, var2, var3 + var4.anInt168, var2 + var4.anInt193);
          } else {
@@ -41,8 +41,8 @@ final class Class3_Sub8 extends Class3 {
 
          if(2 != Class161.anInt2028 && 5 != Class161.anInt2028 && Class49.aClass3_Sub28_Sub16_812 != null) {
             int var19 = Class3_Sub13_Sub8.anInt3102 + GraphicDefinition.CAMERA_DIRECTION & 2047;
-            int var6 = 0 + Class102.player.anInt2819 / 32 + 48;
-            int var7 = 0 + -(Class102.player.anInt2829 / 32) + 464;
+            int var6 = Class102.player.anInt2819 / 32 + 48;
+            int var7 = -(Class102.player.anInt2829 / 32) + 464;
             if(HDToolKit.highDetail) {
                ((Class3_Sub28_Sub16_Sub1)Class49.aClass3_Sub28_Sub16_812).method647(var3, var2, var4.anInt168, var4.anInt193, var6, var7, var19, Class164_Sub2.anInt3020 + 256, (Class3_Sub28_Sub16_Sub1)var4.method866(false));
             } else {
@@ -103,8 +103,8 @@ final class Class3_Sub8 extends Class3 {
             }
 
             for(var9 = 0; MouseListeningClass.anInt1924 > var9; ++var9) {
-               var10 = -(Class102.player.anInt2819 / 32) + 2 + 4 * Class84.anIntArray1163[var9] + 0;
-               var11 = -(Class102.player.anInt2829 / 32) + 2 + (Class3_Sub28_Sub7_Sub1.anIntArray4050[var9] * 4 - 0);
+               var10 = -(Class102.player.anInt2819 / 32) + 2 + 4 * Class84.anIntArray1163[var9];
+               var11 = -(Class102.player.anInt2829 / 32) + 2 + (Class3_Sub28_Sub7_Sub1.anIntArray4050[var9] * 4);
                ObjectDefinition var20 = Class162.getObjectDefinition(4, Class3_Sub28_Sub15.anIntArray3693[var9]);
                if(null != var20.ChildrenIds) {
                   var20 = var20.method1685(var1 + -59);
@@ -258,7 +258,7 @@ final class Class3_Sub8 extends Class3 {
 
          }
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "ed.F(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "ed.F(" + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -275,7 +275,7 @@ final class Class3_Sub8 extends Class3 {
             var0[var1] = var8;
 
             for(int var9 = var4; var9 < var1; ++var9) {
-               if(var7 == null || null != var2[var9] && var2[var9].method1559(var7, -1) < (var9 & 1)) {
+               if(var7 == null || null != var2[var9] && var2[var9].method1559(var7) < (var9 & 1)) {
                   RSString var10 = var2[var9];
                   var2[var9] = var2[var6];
                   var2[var6] = var10;
@@ -305,9 +305,6 @@ final class Class3_Sub8 extends Class3 {
    static void method128() {
       try {
          Class44.aClass93_725.method1524();
-         if(2 != 2) {
-            method127((short[])null, -27, (RSString[])null, -4, -64);
-         }
 
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "ed.O(" + 2 + ')');
@@ -316,9 +313,6 @@ final class Class3_Sub8 extends Class3 {
 
    static int method129(int var0, int var2, int var3) {
       try {
-         if(2 != 2) {
-            method131(14);
-         }
 
          if(var0 <= 243) {
             if(var0 > 217) {
@@ -343,7 +337,7 @@ final class Class3_Sub8 extends Class3 {
    static WorldListEntry getWorld(int var0, int index) {
       try {
          if(Class30.loadedWorldList && Class3_Sub13_Sub4.worldListOffset <= index && Class100.worldListArraySize >= index) {
-            int var2 = 120 / ((0 - var0) / 32);
+            int var2 = 120 / ((-var0) / 32);
             GameLaunch.SETTINGS.setWorld(index);
             return Class117.worldList[index - Class3_Sub13_Sub4.worldListOffset];
          } else {

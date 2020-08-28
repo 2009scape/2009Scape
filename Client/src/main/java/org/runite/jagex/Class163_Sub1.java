@@ -15,26 +15,24 @@ class Class163_Sub1 extends Class163 {
 
    static void method2210(boolean var1) {
       try {
-         Class58.method1194(-16385);
+         Class58.method1194();
          if(30 == Class143.loadingStage || Class143.loadingStage == 25) {
             ++Class3_Sub13_Sub23_Sub1.anInt4032;
             if(Class3_Sub13_Sub23_Sub1.anInt4032 >= 50 || var1) {
                Class3_Sub13_Sub23_Sub1.anInt4032 = 0;
-               if((byte) -90 == -90) {
-                  if(!Class3_Sub28_Sub18.aBoolean3769 && Class3_Sub15.aClass89_2429 != null) {
-                     Class3_Sub13_Sub1.outgoingBuffer.putOpcode(93);
-                      try {
-                        Class3_Sub15.aClass89_2429.sendBytes(false, Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index);
-                        Class3_Sub13_Sub1.outgoingBuffer.index = 0;
-                     } catch (IOException var3) {
-                        Class3_Sub28_Sub18.aBoolean3769 = true;
-                     }
-
-                     ++Class3_Sub28_Sub4.anInt3569;
+               if(!Class3_Sub28_Sub18.aBoolean3769 && Class3_Sub15.aClass89_2429 != null) {
+                  Class3_Sub13_Sub1.outgoingBuffer.putOpcode(93);
+                   try {
+                     Class3_Sub15.aClass89_2429.sendBytes(Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index);
+                     Class3_Sub13_Sub1.outgoingBuffer.index = 0;
+                  } catch (IOException var3) {
+                     Class3_Sub28_Sub18.aBoolean3769 = true;
                   }
 
-                  Class58.method1194((byte) -90 ^ 16473);
+                  ++Class3_Sub28_Sub4.anInt3569;
                }
+
+               Class58.method1194();
             }
          }
       } catch (RuntimeException var4) {
@@ -146,7 +144,7 @@ class Class163_Sub1 extends Class163 {
          }
          aByteArrayArray2987 = (byte[][])null;
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "ah.C(" + var0 + ')');
+         throw Class44.clientError(var2, "ah.C(" + ')');
       }
    }
 

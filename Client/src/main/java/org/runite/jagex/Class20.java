@@ -87,112 +87,110 @@ final class Class20 {
 
          boolean var10 = false;
          int var19 = (519128 & (int)var7) >> 14;
-         if(-96 < -94) {
-            boolean var11 = false;
-            int var17 = (int)(var7 >>> 32) & Integer.MAX_VALUE;
-            ObjectDefinition var12 = Class162.getObjectDefinition(4, var17);
-            if(var12.method1690()) {
-               Class140_Sub6.method2020(var2, var12, var1, var3);
-            }
+          boolean var11 = false;
+          int var17 = (int)(var7 >>> 32) & Integer.MAX_VALUE;
+          ObjectDefinition var12 = Class162.getObjectDefinition(4, var17);
+          if(var12.method1690()) {
+             Class140_Sub6.method2020(var2, var12, var1, var3);
+          }
 
-            int var18 = ((int)var7 & 4109484) >> 20;
-            if(var7 != 0) {
-               GameObject var13 = null;
-               GameObject var14 = null;
-               if(0 == var4) {
-                  Class70 var15 = Class61.method1209(var3, var2, var1);
-                  if(null != var15) {
-                     var13 = var15.aClass140_1049;
-                     var14 = var15.aClass140_1052;
-                  }
+          int var18 = ((int)var7 & 4109484) >> 20;
+          if(var7 != 0) {
+             GameObject var13 = null;
+             GameObject var14 = null;
+             if(0 == var4) {
+                Class70 var15 = Class61.method1209(var3, var2, var1);
+                if(null != var15) {
+                   var13 = var15.aClass140_1049;
+                   var14 = var15.aClass140_1052;
+                }
 
-                  if(var12.ClipType != 0) {
-                     var6.method1485(var18, var12.ProjectileClipped, var1, var19, var2);
-                  }
-               } else if(var4 == 1) {
-                  Class19 var21 = Class39.method1037(var3, var2, var1);
-                  if(var21 != null) {
-                     var13 = var21.aClass140_429;
-                     var14 = var21.aClass140_423;
-                  }
-               } else if (2 == var4) {
-                  Class25 var20 = Class163_Sub2.method2217(var3, var2, var1);
-                  if (null != var20) {
-                     var13 = var20.aClass140_479;
-                  }
+                if(var12.ClipType != 0) {
+                   var6.method1485(var18, var12.ProjectileClipped, var1, var19, var2);
+                }
+             } else if(var4 == 1) {
+                Class19 var21 = Class39.method1037(var3, var2, var1);
+                if(var21 != null) {
+                   var13 = var21.aClass140_429;
+                   var14 = var21.aClass140_423;
+                }
+             } else if (2 == var4) {
+                Class25 var20 = Class163_Sub2.method2217(var3, var2, var1);
+                if (null != var20) {
+                   var13 = var20.aClass140_479;
+                }
 
-                  if (var12.ClipType != 0 && var12.SizeX + var2 < 104 && var12.SizeX + var1 < 104 && 104 > var2 + var12.SizeY && var1 + var12.SizeY < 104) {
-                     var6.method1502(20851, var2, var12.SizeX, var12.ProjectileClipped, var18, var12.SizeY, var1);
-                  }
-               } else if (var4 == 3) {
-                  Class12 var22 = Class159.method2193(var3, var2, var1);
-                  if (var22 != null) {
-                     var13 = var22.object;
-                  }
+                if (var12.ClipType != 0 && var12.SizeX + var2 < 104 && var12.SizeX + var1 < 104 && 104 > var2 + var12.SizeY && var1 + var12.SizeY < 104) {
+                   var6.method1502(20851, var2, var12.SizeX, var12.ProjectileClipped, var18, var12.SizeY, var1);
+                }
+             } else {
+                Class12 var22 = Class159.method2193(var3, var2, var1);
+                if (var22 != null) {
+                   var13 = var22.object;
+                }
 
-                  if (var12.ClipType == 1) {
-                     var6.method1499(var1, var2);
-                  }
-               }
+                if (var12.ClipType == 1) {
+                   var6.method1499(var1, var2);
+                }
+             }
 
-               if(HDToolKit.highDetail && var12.aBoolean1503) {
-                  if(2 == var19) {
-                     if(var13 instanceof Class140_Sub3) {
-                        ((Class140_Sub3)var13).method1960();
-                     } else {
-                        Class8.method840(var12, (byte)-76, 0, var18 + 4, 0, var19, var2, var1, var5);
-                     }
+             if(HDToolKit.highDetail && var12.aBoolean1503) {
+                if(2 == var19) {
+                   if(var13 instanceof Class140_Sub3) {
+                      ((Class140_Sub3)var13).method1960();
+                   } else {
+                      Class8.method840(var12, (byte)-76, 0, var18 + 4, 0, var19, var2, var1, var5);
+                   }
 
-                     if(var14 instanceof Class140_Sub3) {
-                        ((Class140_Sub3)var14).method1960();
-                     } else {
-                        Class8.method840(var12, (byte)-100, 0, 3 & var18 - -1, 0, var19, var2, var1, var5);
-                     }
-                  } else if (5 != var19) {
-                     if (var19 == 6) {
-                        if (var13 instanceof Class140_Sub3) {
-                           ((Class140_Sub3) var13).method1960();
-                        } else {
-                           Class8.method840(var12, (byte) -28, 8 * Class163_Sub3.anIntArray3007[var18], 4 - -var18, 8 * Class3_Sub13.anIntArray2386[var18], 4, var2, var1, var5);
-                        }
-                     } else if (var19 == 7) {
-                        if (var13 instanceof Class140_Sub3) {
-                           ((Class140_Sub3) var13).method1960();
-                        } else {
-                           Class8.method840(var12, (byte) -120, 0, 4 - -(3 & 2 + var18), 0, 4, var2, var1, var5);
-                        }
-                     } else if (var19 == 8) {
-                        if (var13 instanceof Class140_Sub3) {
-                           ((Class140_Sub3) var13).method1960();
-                        } else {
-                           Class8.method840(var12, (byte) -45, Class163_Sub3.anIntArray3007[var18] * 8, var18 + 4, 8 * Class3_Sub13.anIntArray2386[var18], 4, var2, var1, var5);
-                        }
+                   if(var14 instanceof Class140_Sub3) {
+                      ((Class140_Sub3)var14).method1960();
+                   } else {
+                      Class8.method840(var12, (byte)-100, 0, 3 & var18 - -1, 0, var19, var2, var1, var5);
+                   }
+                } else if (5 != var19) {
+                   if (var19 == 6) {
+                      if (var13 instanceof Class140_Sub3) {
+                         ((Class140_Sub3) var13).method1960();
+                      } else {
+                         Class8.method840(var12, (byte) -28, 8 * Class163_Sub3.anIntArray3007[var18], 4 - -var18, 8 * Class3_Sub13.anIntArray2386[var18], 4, var2, var1, var5);
+                      }
+                   } else if (var19 == 7) {
+                      if (var13 instanceof Class140_Sub3) {
+                         ((Class140_Sub3) var13).method1960();
+                      } else {
+                         Class8.method840(var12, (byte) -120, 0, 4 - -(3 & 2 + var18), 0, 4, var2, var1, var5);
+                      }
+                   } else if (var19 == 8) {
+                      if (var13 instanceof Class140_Sub3) {
+                         ((Class140_Sub3) var13).method1960();
+                      } else {
+                         Class8.method840(var12, (byte) -45, Class163_Sub3.anIntArray3007[var18] * 8, var18 + 4, 8 * Class3_Sub13.anIntArray2386[var18], 4, var2, var1, var5);
+                      }
 
-                        if (var14 instanceof Class140_Sub3) {
-                           ((Class140_Sub3) var14).method1960();
-                        } else {
-                           Class8.method840(var12, (byte) -24, Class163_Sub3.anIntArray3007[var18] * 8, 4 - -(3 & 2 + var18), Class3_Sub13.anIntArray2386[var18] * 8, 4, var2, var1, var5);
-                        }
-                     } else if (11 != var19) {
-                        if (var13 instanceof Class140_Sub3) {
-                           ((Class140_Sub3) var13).method1960();
-                        } else {
-                           Class8.method840(var12, (byte) -113, 0, var18, 0, var19, var2, var1, var5);
-                        }
-                     } else if (var13 instanceof Class140_Sub3) {
-                        ((Class140_Sub3) var13).method1960();
-                     } else {
-                        Class8.method840(var12, (byte) -115, 0, 4 + var18, 0, 10, var2, var1, var5);
-                     }
-                  } else if (var13 instanceof Class140_Sub3) {
-                     ((Class140_Sub3) var13).method1960();
-                  } else {
-                     Class8.method840(var12, (byte) -119, Class3_Sub24_Sub3.anIntArray3491[var18] * 8, var18, RenderAnimationDefinition.anIntArray356[var18] * 8, 4, var2, var1, var5);
-                  }
-               }
-            }
+                      if (var14 instanceof Class140_Sub3) {
+                         ((Class140_Sub3) var14).method1960();
+                      } else {
+                         Class8.method840(var12, (byte) -24, Class163_Sub3.anIntArray3007[var18] * 8, 4 - -(3 & 2 + var18), Class3_Sub13.anIntArray2386[var18] * 8, 4, var2, var1, var5);
+                      }
+                   } else if (11 != var19) {
+                      if (var13 instanceof Class140_Sub3) {
+                         ((Class140_Sub3) var13).method1960();
+                      } else {
+                         Class8.method840(var12, (byte) -113, 0, var18, 0, var19, var2, var1, var5);
+                      }
+                   } else if (var13 instanceof Class140_Sub3) {
+                      ((Class140_Sub3) var13).method1960();
+                   } else {
+                      Class8.method840(var12, (byte) -115, 0, 4 + var18, 0, 10, var2, var1, var5);
+                   }
+                } else if (var13 instanceof Class140_Sub3) {
+                   ((Class140_Sub3) var13).method1960();
+                } else {
+                   Class8.method840(var12, (byte) -119, Class3_Sub24_Sub3.anIntArray3491[var18] * 8, var18, RenderAnimationDefinition.anIntArray356[var18] * 8, 4, var2, var1, var5);
+                }
+             }
+          }
 
-         }
       } catch (RuntimeException var16) {
          throw Class44.clientError(var16, "dg.B(" + -96 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + (var6 != null?"{...}":"null") + ')');
       }

@@ -16,9 +16,6 @@ class Class164_Sub1 extends Class164 {
    final void method2237(int var1, int var2) {
       try {
          this.anInt3010 += var1 * this.anIntArray3014[var2] >> 12;
-         if(-20975 != -20975) {
-            method2239(-22, -68, -14, 89);
-         }
 
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "vd.H(" + var1 + ',' + var2 + ',' + -20975 + ')');
@@ -32,9 +29,6 @@ class Class164_Sub1 extends Class164 {
          Class163_Sub2_Sub1.anInt4014 = var5;
          MouseListeningClass.anInt1923 = var3;
          GraphicDefinition.anInt529 = var0;
-         if((byte) -21 != -21) {
-            aClass94_3013 = (RSString)null;
-         }
 
          if(Class163_Sub2_Sub1.anInt4014 >= 100) {
             int var6 = 64 + 128 * MouseListeningClass.anInt1923;
@@ -247,17 +241,15 @@ class Class164_Sub1 extends Class164 {
 
    final void method2233() {
       try {
-         if(-949697716 == -949697716) {
-            this.anInt3016 = 0;
-            this.anInt3010 = 0;
-         }
+         this.anInt3016 = 0;
+         this.anInt3010 = 0;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "vd.C(" + -949697716 + ')');
       }
    }
 
    Class164_Sub1() {
-      super(12, 5, 16, 2, 2);
+      super(12, 16, 2);
 
       try {
          this.anIntArray3014 = new int[this.anInt2062];

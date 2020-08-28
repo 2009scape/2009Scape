@@ -45,10 +45,7 @@ final class CacheIndex {
 
    private int method2114(int var1) {
       try {
-         if(this.isValidArchive(false, var1)) {
-            if(0 != 0) {
-               this.method2115(36, false);
-            }
+         if(this.isValidArchive(var1)) {
 
             return this.files[var1] != null?100:this.aClass151_1947.method2097(var1, '\uffff');
          } else {
@@ -68,10 +65,8 @@ final class CacheIndex {
                this.aClass62_1949.aClass69_949 = null;
             }
 
-            if(true) {
-               this.aClass62_1949.aClass69Array962 = null;
-               this.aClass62_1949.fileNameHashes = (int[][])null;
-            }
+            this.aClass62_1949.aClass69Array962 = null;
+            this.aClass62_1949.fileNameHashes = (int[][])null;
 
          }
       } catch (RuntimeException var5) {
@@ -82,13 +77,9 @@ final class CacheIndex {
    final int method2116(RSString var2) {
       try {
          if(this.method2122(22813 + -22810)) {
-            var2 = var2.method1534(-98);
-            if(22813 == 22813) {
-               int var3 = this.aClass62_1949.aClass69_949.method1280(var2.method1574(), 1);
-               return this.method2114(var3);
-            } else {
-               return -12;
-            }
+            var2 = var2.method1534();
+            int var3 = this.aClass62_1949.aClass69_949.method1280(var2.method1574());
+            return this.method2114(var3);
          } else {
             return 0;
          }
@@ -103,7 +94,7 @@ final class CacheIndex {
             this.aBoolean1945 = true;
          }
 
-         if(this.isValidArchive(false, var2)) {
+         if(this.isValidArchive(var2)) {
             if(null == this.files[var2]) {
                this.method2134(var2);
                return null != this.files[var2];
@@ -149,9 +140,9 @@ final class CacheIndex {
    final int getArchiveForName(RSString name) {
       try {
          if(this.method2122(3)) {
-            name = name.method1534((byte) -30 ^ 124);
-            int var3 = this.aClass62_1949.aClass69_949.method1280(name.method1574(), (byte) -30 ^ -29);
-            return this.isValidArchive(false, var3)?((byte) -30 != -30?87:var3):-1;
+            name = name.method1534();
+            int var3 = this.aClass62_1949.aClass69_949.method1280(name.method1574());
+            return this.isValidArchive(var3)? var3 :-1;
          } else {
             return -1;
          }
@@ -163,9 +154,6 @@ final class CacheIndex {
    final int method2121() {
       try {
          if(this.method2122(3)) {
-            if(0 != 0) {
-               this.method2139(45, 104, -3);
-            }
 
             return this.aClass62_1949.archiveLengths.length;
          } else {
@@ -183,7 +171,7 @@ final class CacheIndex {
          }
 
          if(this.aClass62_1949 == null) {
-            this.aClass62_1949 = this.aClass151_1947.method2094(0);
+            this.aClass62_1949 = this.aClass151_1947.method2094();
             if(null == this.aClass62_1949) {
                return false;
             }
@@ -198,18 +186,18 @@ final class CacheIndex {
       }
    }
 
-   final byte[] method2123(int var1, RSString var2, RSString var3) {
+   final byte[] method2123(RSString var2, RSString var3) {
       try {
-         if(this.method2122(var1 ^ 3)) {
-            var3 = var3.method1534(-98);
-            var2 = var2.method1534(-98);
-            int var4 = this.aClass62_1949.aClass69_949.method1280(var3.method1574(), 1);
-            if(var1 != 0) {
+         if(this.method2122(0 ^ 3)) {
+            var3 = var3.method1534();
+            var2 = var2.method1534();
+            int var4 = this.aClass62_1949.aClass69_949.method1280(var3.method1574());
+            if(0 != 0) {
                this.aClass62_1949 = (Class62)null;
             }
 
-            if(this.isValidArchive(false, var4)) {
-               int var5 = this.aClass62_1949.aClass69Array962[var4].method1280(var2.method1574(), 1);
+            if(this.isValidArchive(var4)) {
+               int var5 = this.aClass62_1949.aClass69Array962[var4].method1280(var2.method1574());
                return this.getFile(var4, var5);
             } else {
                return null;
@@ -218,15 +206,15 @@ final class CacheIndex {
             return null;
          }
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "ve.C(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var6, "ve.C(" + 0 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ')');
       }
    }
 
    final void method2124(int var1, RSString var2) {
       try {
          if(this.method2122(3)) {
-            var2 = var2.method1534(-98);
-            int var3 = this.aClass62_1949.aClass69_949.method1280(var2.method1574(), 1);
+            var2 = var2.method1534();
+            int var3 = this.aClass62_1949.aClass69_949.method1280(var2.method1574());
             this.method2131(var3);
             int var4 = 123 % ((var1 - -60) / 62);
          }
@@ -238,14 +226,11 @@ final class CacheIndex {
    final boolean method2125(RSString var1, RSString var3) {
       try {
          if(this.method2122((byte) 116 + -113)) {
-            var3 = var3.method1534((byte) 116 + -214);
-            var1 = var1.method1534(-98);
-            int var4 = this.aClass62_1949.aClass69_949.method1280(var3.method1574(), 1);
-            if(this.isValidArchive(false, var4)) {
-               int var5 = this.aClass62_1949.aClass69Array962[var4].method1280(var1.method1574(), 1);
-               if((byte) 116 != 116) {
-                  this.aBoolean1945 = true;
-               }
+            var3 = var3.method1534();
+            var1 = var1.method1534();
+            int var4 = this.aClass62_1949.aClass69_949.method1280(var3.method1574());
+            if(this.isValidArchive(var4)) {
+               int var5 = this.aClass62_1949.aClass69Array962[var4].method1280(var1.method1574());
 
                return this.method2129((byte)70, var5, var4);
             } else {
@@ -298,8 +283,8 @@ final class CacheIndex {
    final boolean method2127(RSString var2) {
       try {
          if(this.method2122(3)) {
-            var2 = var2.method1534(-98);
-            int var3 = this.aClass62_1949.aClass69_949.method1280(var2.method1574(), (byte) -83 + 84);
+            var2 = var2.method1534();
+            int var3 = this.aClass62_1949.aClass69_949.method1280(var2.method1574());
             return this.method2117(-104, var3);
          } else {
             return false;
@@ -311,13 +296,11 @@ final class CacheIndex {
 
    final void method2128(int var2) {
       try {
-         if(7561 == 7561) {
-            if(this.isValidArchive(false, var2)) {
-               if(null != this.anObjectArrayArray1952) {
-                  this.anObjectArrayArray1952[var2] = null;
-               }
-
+         if(this.isValidArchive(var2)) {
+            if(null != this.anObjectArrayArray1952) {
+               this.anObjectArrayArray1952[var2] = null;
             }
+
          }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ve.B(" + 7561 + ',' + var2 + ')');
@@ -344,9 +327,9 @@ final class CacheIndex {
       }
    }
 
-   private boolean isValidArchive(boolean var1, int archiveId) {
+   private boolean isValidArchive(int archiveId) {
       try {
-         if(var1) {
+         if(false) {
             aBoolean1951 = false;
          }
 
@@ -362,16 +345,13 @@ final class CacheIndex {
             return false;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "ve.E(" + var1 + ',' + archiveId + ')');
+         throw Class44.clientError(var4, "ve.E(" + false + ',' + archiveId + ')');
       }
    }
 
    private void method2131(int var2) {
       try {
          this.aClass151_1947.method2095(var2);
-         if(119 < 101) {
-            this.method2132(53, (int[])null);
-         }
 
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ve.L(" + 119 + ',' + var2 + ')');
@@ -380,7 +360,7 @@ final class CacheIndex {
 
    private boolean method2132(int archive, int[] xteaKeys) {
       try {
-         if(!this.isValidArchive(false, archive)) {
+         if(!this.isValidArchive(archive)) {
             return false;
          } else if(this.files[archive] == null) {
             return false;
@@ -512,9 +492,6 @@ final class CacheIndex {
 
    final byte[] getFile(int archive, int file) {
       try {
-         if((byte) -122 != -122) {
-            this.method2134(93);
-         }
 
          return this.getFile(archive, (int[])null, 52, file);
       } catch (RuntimeException var5) {
@@ -530,10 +507,6 @@ final class CacheIndex {
             this.files[var2] = Class15.method890(-101, this.aClass151_1947.method2098(var2));
          }
 
-         if(false) {
-            this.aBoolean1945 = false;
-         }
-
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ve.F(" + false + ',' + var2 + ')');
       }
@@ -544,8 +517,8 @@ final class CacheIndex {
          if(var2 >= -103) {
             return false;
          } else if(this.method2122(3)) {
-            var1 = var1.method1534(-98);
-            int var3 = this.aClass62_1949.aClass69_949.method1280(var1.method1574(), 1);
+            var1 = var1.method1534();
+            int var3 = this.aClass62_1949.aClass69_949.method1280(var1.method1574());
             return var3 >= 0;
          } else {
             return false;
@@ -610,14 +583,12 @@ final class CacheIndex {
             return null;
          } else if(this.aClass62_1949.archiveLengths.length == 1) {
             return this.getFile(0, var1);
-         } else if(!this.isValidArchive(false, var1)) {
+         } else if(!this.isValidArchive(var1)) {
             return null;
          } else if(this.aClass62_1949.archiveLengths[var1] == 1) {
             return this.getFile(var1, 0);
-         } else if (0 == 0) {
-            throw new RuntimeException();
          } else {
-            return (byte[]) null;
+            throw new RuntimeException();
          }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ve.HA(" + var1 + ',' + 0 + ')');
@@ -644,7 +615,7 @@ final class CacheIndex {
 
    final byte[] method2140(int file, int archive) {
       try {
-         if(this.method2139(archive, 0 + 0, file)) {
+         if(this.method2139(archive, 0, file)) {
             if(this.anObjectArrayArray1952[archive] == null || null == this.anObjectArrayArray1952[archive][file]) {
                boolean var4 = this.method2132(archive, (int[])null);
                if(!var4) {
@@ -667,11 +638,8 @@ final class CacheIndex {
 
    final int[] getFileIds(int archiveId) {
       try {
-         if((byte) -128 != -128) {
-            anInt1953 = -69;
-         }
 
-         if(this.isValidArchive(false, archiveId)) {
+         if(this.isValidArchive(archiveId)) {
             int[] var3 = this.aClass62_1949.validFileIds[archiveId];
             if(null == var3) {
                var3 = new int[this.aClass62_1949.archiveFileLengths[archiveId]];
@@ -701,7 +669,7 @@ final class CacheIndex {
 
    final int getFileAmount(int archiveId, byte var2) {
       try {
-         if(this.isValidArchive(false, archiveId)) {
+         if(this.isValidArchive(archiveId)) {
             if(var2 <= 60) {
                this.method2122(32);
             }
@@ -731,16 +699,16 @@ final class CacheIndex {
       }
    }
 
-   final boolean method2144(int var1, int archiveId) {
+   final boolean method2144(int archiveId) {
       try {
          if(!this.method2122(3)) {
             return false;
          } else if(this.aClass62_1949.archiveLengths.length == 1) {
             return this.method2129((byte)86, archiveId, 0);
-         } else if(this.isValidArchive(false, archiveId)) {
+         } else if(this.isValidArchive(archiveId)) {
             if(1 == this.aClass62_1949.archiveLengths[archiveId]) {
                return this.method2129((byte)109, 0, archiveId);
-            } else if(var1 == 0) {
+            } else if(0 == 0) {
                throw new RuntimeException();
             } else {
                return false;
@@ -749,7 +717,7 @@ final class CacheIndex {
             return false;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "ve.A(" + var1 + ',' + archiveId + ')');
+         throw Class44.clientError(var4, "ve.A(" + 0 + ',' + archiveId + ')');
       }
    }
 

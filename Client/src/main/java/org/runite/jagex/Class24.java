@@ -18,34 +18,30 @@ final class Class24 {
 
    final Model_Sub1 method941() {
       try {
-         if(true) {
-            int var3 = 0;
-            Model_Sub1[] var2 = new Model_Sub1[5];
+          int var3 = 0;
+          Model_Sub1[] var2 = new Model_Sub1[5];
 
-            for(int var4 = 0; var4 < 5; ++var4) {
-               if(this.anIntArray475[var4] != -1) {
-                  var2[var3++] = Model_Sub1.method2015(Class10.aClass153_152, this.anIntArray475[var4]);
-               }
-            }
+          for(int var4 = 0; var4 < 5; ++var4) {
+             if(this.anIntArray475[var4] != -1) {
+                var2[var3++] = Model_Sub1.method2015(Class10.aClass153_152, this.anIntArray475[var4]);
+             }
+          }
 
-            Model_Sub1 var7 = new Model_Sub1(var2, var3);
-            int var5;
-            if(this.aShortArray464 != null) {
-               for(var5 = 0; this.aShortArray464.length > var5; ++var5) {
-                  var7.method2016(this.aShortArray464[var5], this.aShortArray460[var5]);
-               }
-            }
+          Model_Sub1 var7 = new Model_Sub1(var2, var3);
+          int var5;
+          if(this.aShortArray464 != null) {
+             for(var5 = 0; this.aShortArray464.length > var5; ++var5) {
+                var7.method2016(this.aShortArray464[var5], this.aShortArray460[var5]);
+             }
+          }
 
-            if(null != this.aShortArray471) {
-               for(var5 = 0; var5 < this.aShortArray471.length; ++var5) {
-                  var7.method1998(this.aShortArray471[var5], this.aShortArray470[var5]);
-               }
-            }
+          if(null != this.aShortArray471) {
+             for(var5 = 0; var5 < this.aShortArray471.length; ++var5) {
+                var7.method1998(this.aShortArray471[var5], this.aShortArray470[var5]);
+             }
+          }
 
-            return var7;
-         } else {
-            return (Model_Sub1)null;
-         }
+          return var7;
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "dm.F(" + true + ')');
       }
@@ -57,11 +53,8 @@ final class Class24 {
             return true;
          } else {
             boolean var2 = true;
-            if(101 < 72) {
-               this.method948(44);
-            }
 
-            for(int var3 = 0; this.anIntArray474.length > var3; ++var3) {
+             for(int var3 = 0; this.anIntArray474.length > var3; ++var3) {
                if(!Class10.aClass153_152.method2129((byte)-90, 0, this.anIntArray474[var3])) {
                   var2 = false;
                }
@@ -224,11 +217,8 @@ final class Class24 {
 
    private void method946(RSByteBuffer var2, int var3) {
       try {
-         if((byte) -84 >= -16) {
-            this.aShortArray470 = (short[])null;
-         }
 
-         if(var3 == 1) {
+          if(var3 == 1) {
             this.anInt466 = var2.getByte((byte)-67);
          } else {
             int var4;
@@ -404,16 +394,14 @@ final class Class24 {
 
    final void method952(RSByteBuffer var2) {
       try {
-         if(-31957 == -31957) {
-            while(true) {
-               int var3 = var2.getByte((byte)-52);
-               if(0 == var3) {
-                  return;
-               }
+          while(true) {
+             int var3 = var2.getByte((byte)-52);
+             if(0 == var3) {
+                return;
+             }
 
-               this.method946(var2, var3);
-            }
-         }
+             this.method946(var2, var3);
+          }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "dm.L(" + -31957 + ',' + (var2 != null?"{...}":"null") + ')');
       }

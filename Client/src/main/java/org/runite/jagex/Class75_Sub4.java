@@ -29,7 +29,7 @@ final class Class75_Sub4 extends Class75 {
             if((64 & var4) != 0) {
                var5 = GraphicDefinition.incomingBuffer.getByte((byte)-57);
                var6 = GraphicDefinition.incomingBuffer.getByteC();
-               npc.method1970(var6, -8, Class44.anInt719, var5);
+               npc.method1970(var6, Class44.anInt719, var5);
                npc.anInt2781 = 300 + Class44.anInt719;
                npc.anInt2775 = GraphicDefinition.incomingBuffer.getByteS();
             }
@@ -38,7 +38,7 @@ final class Class75_Sub4 extends Class75 {
             if((var4 & 2) != 0) {
                var5 = GraphicDefinition.incomingBuffer.getByteC();
                var6 = GraphicDefinition.incomingBuffer.getByteS();
-               npc.method1970(var6, -8, Class44.anInt719, var5);
+               npc.method1970(var6, Class44.anInt719, var5);
             }
 
             //Ordinal: 2 Animation
@@ -88,7 +88,7 @@ final class Class75_Sub4 extends Class75 {
                      int var8 = RenderAnimationDefinition.getGraphicDefinition((byte)42, npc.anInt2842).anInt542;
                      if(var8 != -1) {
                         AnimationDefinition var9 = Client.getAnimationDefinition(var8);
-                        if(null != var9 && var9.frames != null) {
+                        if(var9.frames != null) {
                            IOHandler.method1470(npc.anInt2829, var9, 183921384, npc.anInt2819, false, 0);
                         }
                      }
@@ -102,7 +102,7 @@ final class Class75_Sub4 extends Class75 {
                   Class3_Sub28_Sub8.method574(npc);
                }
 
-               npc.setDefinitions(Node.method522(GraphicDefinition.incomingBuffer.getLEShort(-84), 27112));
+               npc.setDefinitions(Node.method522(GraphicDefinition.incomingBuffer.getLEShort(-84)));
                npc.setSize(npc.definition.size, 2);
                npc.renderAnimationId = npc.definition.renderAnimationId;
                if(npc.definition.method1474()) {
@@ -160,7 +160,7 @@ final class Class75_Sub4 extends Class75 {
             Class145.method2072(this.anInt1104, var4, var6, var5, var7, this.anInt1106);
          }
       } catch (RuntimeException var8) {
-         throw Class44.clientError(var8, "ta.E(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var8, "ta.E(" + var1 + ',' + ',' + var3 + ')');
       }
    }
 
@@ -245,17 +245,15 @@ final class Class75_Sub4 extends Class75 {
       try {
          Class3_Sub13_Sub17.aClass153_3210 = var2;
          GameObject.aClass3_Sub28_Sub16_Sub2Array1839 = var0;
-         if(-11931 == -11931) {
-            Class3_Sub24_Sub4.aBooleanArray3503 = new boolean[GameObject.aClass3_Sub28_Sub16_Sub2Array1839.length];
-            Class134.aClass61_1758.method1211(-68);
-            int var3 = Class3_Sub13_Sub17.aClass153_3210.getArchiveForName(Class3_Sub8.aClass94_2304);
-            int[] var4 = Class3_Sub13_Sub17.aClass153_3210.getFileIds(var3);
+         Class3_Sub24_Sub4.aBooleanArray3503 = new boolean[GameObject.aClass3_Sub28_Sub16_Sub2Array1839.length];
+         Class134.aClass61_1758.method1211(-68);
+         int var3 = Class3_Sub13_Sub17.aClass153_3210.getArchiveForName(Class3_Sub8.aClass94_2304);
+         int[] var4 = Class3_Sub13_Sub17.aClass153_3210.getFileIds(var3);
 
-            for(int var5 = 0; var5 < var4.length; ++var5) {
-               Class134.aClass61_1758.method1215(true, Class124.method1747(new RSByteBuffer(Class3_Sub13_Sub17.aClass153_3210.getFile(var3, var4[var5]))));
-            }
-
+         for(int var5 = 0; var5 < var4.length; ++var5) {
+            Class134.aClass61_1758.method1215(Class124.method1747(new RSByteBuffer(Class3_Sub13_Sub17.aClass153_3210.getFile(var3, var4[var5]))));
          }
+
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "ta.B(" + (var0 != null?"{...}":"null") + ',' + -11931 + ',' + (var2 != null?"{...}":"null") + ')');
       }
@@ -283,13 +281,11 @@ final class Class75_Sub4 extends Class75 {
             Class163_Sub1.aLongArray2986[var1] = 0L;
          }
 
-         if(true) {
-            for(var1 = 0; var1 < 32; ++var1) {
-               Class134.aLongArray1766[var1] = 0L;
-            }
-
-            Class133.anInt1754 = 0;
+         for(var1 = 0; var1 < 32; ++var1) {
+            Class134.aLongArray1766[var1] = 0L;
          }
+
+         Class133.anInt1754 = 0;
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "ta.O(" + true + ')');
       }

@@ -26,10 +26,6 @@ final class Class60 {
             }
          }
 
-         if(-72 > -4) {
-            method1208((byte)25, 108);
-         }
-
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ig.A(" + -72 + ')');
       }

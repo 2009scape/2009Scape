@@ -74,7 +74,7 @@ final class Class3_Sub27 extends Class3 {
                      Class3_Sub6 var13 = (Class3_Sub6)this.aClass130_2564.method1780((long)var12, 0);
                      if(var13 == null) {
                         var13 = new Class3_Sub6(new byte[128]);
-                        this.aClass130_2564.method1779(1, var13, (long)var12);
+                        this.aClass130_2564.method1779(var13, (long)var12);
                      }
 
                      var13.aByteArray2289[var10] = 1;

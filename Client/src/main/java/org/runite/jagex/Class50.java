@@ -104,7 +104,7 @@ final class Class50 {
 			this.anInt821 = var1.anInt821;
 			this.anInt830 = var1.anInt830;
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "hd.<init>(" + (var1 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var3, "hd.<init>(" + "null" + ')');
 		}
 	}
 

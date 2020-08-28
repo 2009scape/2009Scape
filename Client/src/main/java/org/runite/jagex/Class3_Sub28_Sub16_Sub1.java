@@ -198,11 +198,8 @@ class Class3_Sub28_Sub16_Sub1 extends Class3_Sub28_Sub16 {
       var2 -= this.anInt3698 << 4;
       var7.glTranslatef((float)var3 / 16.0F, (float)HDToolKit.anInt1811 - (float)var4 / 16.0F, 0.0F);
       var7.glRotatef((float)(-var5) * 0.005493164F, 0.0F, 0.0F, 1.0F);
-      if(4096 != 4096) {
-         var7.glScalef((float) 4096 / 4096.0F, (float) 4096 / 4096.0F, 0.0F);
-      }
 
-      var7.glTranslatef((float)(-var1) / 16.0F, (float)var2 / 16.0F, 0.0F);
+       var7.glTranslatef((float)(-var1) / 16.0F, (float)var2 / 16.0F, 0.0F);
       var7.glCallList(this.anInt4076);
       var7.glLoadIdentity();
    }

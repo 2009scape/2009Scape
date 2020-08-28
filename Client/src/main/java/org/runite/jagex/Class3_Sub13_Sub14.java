@@ -34,9 +34,7 @@ final class Class3_Sub13_Sub14 extends Class3_Sub13 {
 
    static void method236() {
       try {
-         if((byte) 64 == 64) {
-            Class3_Sub13_Sub32.aBoolean3387 = true;
-         }
+          Class3_Sub13_Sub32.aBoolean3387 = true;
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "gm.C(" + (byte) 64 + ')');
       }

@@ -16,9 +16,7 @@ public final class Class158_Sub2 extends Class158 {
 
 
    final void method2179(Graphics var3) {
-      if(0 == 0) {
-         var3.drawImage(this.anImage2009, 0, 0, this.aComponent2983);
-      }
+       var3.drawImage(this.anImage2009, 0, 0, this.aComponent2983);
    }
 
    final void method2185(int var1, int var3, Component var4) {
@@ -35,10 +33,7 @@ public final class Class158_Sub2 extends Class158 {
 
    final void drawGraphics(int width, int x, int height, Graphics var5, int y) {
       Shape var7 = var5.getClip();
-      if(6260 != 6260) {
-         this.aComponent2983 = (Component)null;
-      }
-      var5.clipRect(x, y, width, height);
+       var5.clipRect(x, y, width, height);
       var5.drawImage(this.anImage2009, 0, 0, this.aComponent2983);
       var5.setClip(var7);
    }

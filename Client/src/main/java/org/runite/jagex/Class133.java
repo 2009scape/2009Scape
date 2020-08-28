@@ -38,10 +38,8 @@ final class Class133 {
 
    static void method1803() {
       try {
-         if((byte) 22 >= 4) {
-            Class82.aClass93_1146.method1523((byte)-119);
-            Class159.aClass93_2016.method1523((byte)-103);
-         }
+         Class82.aClass93_1146.method1523((byte)-119);
+         Class159.aClass93_2016.method1523((byte)-103);
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "sg.D(" + (byte) 22 + ')');
       }
@@ -49,9 +47,6 @@ final class Class133 {
 
    final int method1804() {
       try {
-         if(false) {
-            anInt1753 = -21;
-         }
 
          return this.aByte1742 & 7;
       } catch (RuntimeException var3) {

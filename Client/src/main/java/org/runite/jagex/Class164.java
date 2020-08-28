@@ -20,34 +20,34 @@ abstract class Class164 {
    int anInt2062 = 4;
 
 
-   final void method2230(int var1, int var2, int var3, int var4) {
+   final void method2230(int var1) {
       try {
-         int[] var39 = new int[var2];
-         int[] var40 = new int[var4];
-         int[] var41 = new int[var3];
+         int[] var39 = new int[64];
+         int[] var40 = new int[64];
+         int[] var41 = new int[64];
 
          int var42;
-         for(var42 = 0; var42 < var2; ++var42) {
-            var39[var42] = (var42 << 12) / var2;
+         for(var42 = 0; var42 < 64; ++var42) {
+            var39[var42] = (var42 << 12) / 64;
          }
 
          if(var1 > -68) {
             this.method2236(64);
          }
 
-         for(var42 = 0; var42 < var4; ++var42) {
-            var40[var42] = (var42 << 12) / var4;
+         for(var42 = 0; var42 < 64; ++var42) {
+            var40[var42] = (var42 << 12) / 64;
          }
 
-         for(var42 = 0; var42 < var3; ++var42) {
-            var41[var42] = (var42 << 12) / var3;
+         for(var42 = 0; var42 < 64; ++var42) {
+            var41[var42] = (var42 << 12) / 64;
          }
 
          this.method2233();
 
-         for(int var37 = 0; var37 < var3; ++var37) {
-            for(int var36 = 0; var36 < var4; ++var36) {
-               for(int var35 = 0; var35 < var2; ++var35) {
+         for(int var37 = 0; var37 < 64; ++var37) {
+            for(int var36 = 0; var36 < 64; ++var36) {
+               for(int var35 = 0; var35 < 64; ++var35) {
                   for(int var38 = 0; var38 < this.anInt2062; ++var38) {
                      var42 = this.aShortArray2049[var38] << 12;
                      int var8 = this.anInt2057 * var42 >> 12;
@@ -124,7 +124,7 @@ abstract class Class164 {
          }
 
       } catch (RuntimeException var43) {
-         throw Class44.clientError(var43, "wf.M(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var43, "wf.M(" + var1 + ',' + 64 + ',' + 64 + ',' + 64 + ')');
       }
    }
 
@@ -134,9 +134,6 @@ abstract class Class164 {
       try {
          this.aShortArray2049 = new short[this.anInt2062];
          int var2 = 0;
-         if((byte) -60 != -60) {
-            method2234(-92, 105);
-         }
 
          while(var2 < this.anInt2062) {
             this.aShortArray2049[var2] = (short)((int)Math.pow(2.0D, (double)var2));
@@ -201,17 +198,17 @@ abstract class Class164 {
 
    abstract void method2237(int var1, int var2);
 
-   Class164(int var1, int var2, int var3, int var4, int var5) {
+   Class164(int var1, int var3, int var4) {
       try {
          this.anInt2056 = var4;
-         this.anInt2062 = var2;
+         this.anInt2062 = 5;
          this.anInt2054 = var1;
-         this.anInt2060 = var5;
+         this.anInt2060 = 2;
          this.anInt2057 = var3;
          this.method2232();
          this.method2236(-190126388);
       } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "wf.<init>(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var7, "wf.<init>(" + var1 + ',' + 5 + ',' + var3 + ',' + var4 + ',' + 2 + ')');
       }
    }
 

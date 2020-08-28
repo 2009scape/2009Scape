@@ -110,28 +110,25 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 		buffer.putString(aClass2325);
 	}
 
-	static void method169(int var0) {
+	static void method169() {
 		try {
 			Class32.method995();
-			if(var0 != 22230) {
+			if(22230 != 22230) {
 				method167(124);
 			}
 
 			for(int var1 = 0; 4 > var1; ++var1) {
-				Class86.aClass91Array1182[var1].method1496(var0 + -22230);
+				Class86.aClass91Array1182[var1].method1496(22230 + -22230);
 			}
 
 			System.gc();
 		} catch (RuntimeException var2) {
-			throw Class44.clientError(var2, "ag.O(" + var0 + ')');
+			throw Class44.clientError(var2, "ag.O(" + 22230 + ')');
 		}
 	}
 
 	static Class method170(String var1) throws ClassNotFoundException {
 		try {
-			if(6092 != 6092) {
-				aClass3_Sub28_Sub5Array3041 = (Class3_Sub28_Sub5[])null;
-			}
 
 			return var1.equals("B")?Byte.TYPE:(!var1.equals("I")?(var1.equals("S")?Short.TYPE:(!var1.equals("J")?(var1.equals("Z")?Boolean.TYPE:(var1.equals("F")?Float.TYPE:(var1.equals("D")?Double.TYPE:(var1.equals("C")?Character.TYPE:Class.forName(Configurations.PACKAGE_JAGEX + "." + var1))))):Long.TYPE)):Integer.TYPE);
 		} catch (RuntimeException var3) {

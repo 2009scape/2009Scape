@@ -13,11 +13,11 @@ final class Class2 {
 	static Interface5[] anInterface5Array70;
 
 
-	static boolean method73(short var0, int var1) {
+	static boolean method73(short var0) {
 		try {
 			if(var0 != 47 && var0 != 5 && var0 != 43 && var0 != 35 && var0 != 58 && var0 != 22 && var0 != 40 && var0 != 3) {
 				if(var0 != 9 && var0 != 12 && var0 != 1006 && var0 != 1003) {
-					if(var1 <= 42) {
+					if(121 <= 42) {
 						anInt59 = 1;
 					}
 
@@ -29,7 +29,7 @@ final class Class2 {
 				return true;
 			}
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "aa.C(" + var0 + ',' + var1 + ')');
+			throw Class44.clientError(var3, "aa.C(" + var0 + ',' + 121 + ')');
 		}
 	}
 
@@ -54,46 +54,44 @@ final class Class2 {
 
 	static void method75(RSInterface[] var0, int var2) {
 		try {
-			if(true) {
-				for(int var3 = 0; var0.length > var3; ++var3) {
-					RSInterface var4 = var0[var3];
-					if(null != var4) {
-						if(var4.type == 0) {
-							if(null != var4.aClass11Array262) {
-								method75(var4.aClass11Array262, var2);
-							}
-
-							Class3_Sub31 var5 = (Class3_Sub31)Class3_Sub13_Sub17.aClass130_3208.method1780((long)var4.anInt279, 0);
-							if(null != var5) {
-								Class3_Sub8.method124(49, var2, var5.anInt2602);
-							}
+			for(int var3 = 0; var0.length > var3; ++var3) {
+				RSInterface var4 = var0[var3];
+				if(null != var4) {
+					if(var4.type == 0) {
+						if(null != var4.aClass11Array262) {
+							method75(var4.aClass11Array262, var2);
 						}
 
-						CS2Script var7;
-						if(var2 == 0 && null != var4.anObjectArray206) {
-							var7 = new CS2Script();
-							var7.arguments = var4.anObjectArray206;
-							var7.aClass11_2449 = var4;
-							Class43.method1065(1073376993, var7);
-						}
-
-						if(var2 == 1 && var4.anObjectArray176 != null) {
-							if(var4.anInt191 >= 0) {
-								RSInterface var8 = Class7.getRSInterface((byte)121, var4.anInt279);
-								if(null == var8 || null == var8.aClass11Array262 || var8.aClass11Array262.length <= var4.anInt191 || var8.aClass11Array262[var4.anInt191] != var4) {
-									continue;
-								}
-							}
-
-							var7 = new CS2Script();
-							var7.arguments = var4.anObjectArray176;
-							var7.aClass11_2449 = var4;
-							Class43.method1065(1073376993, var7);
+						Class3_Sub31 var5 = (Class3_Sub31)Class3_Sub13_Sub17.aClass130_3208.method1780((long)var4.anInt279, 0);
+						if(null != var5) {
+							Class3_Sub8.method124(49, var2, var5.anInt2602);
 						}
 					}
-				}
 
+					CS2Script var7;
+					if(var2 == 0 && null != var4.anObjectArray206) {
+						var7 = new CS2Script();
+						var7.arguments = var4.anObjectArray206;
+						var7.aClass11_2449 = var4;
+						Class43.method1065(var7);
+					}
+
+					if(var2 == 1 && var4.anObjectArray176 != null) {
+						if(var4.anInt191 >= 0) {
+							RSInterface var8 = Class7.getRSInterface((byte)121, var4.anInt279);
+							if(null == var8 || null == var8.aClass11Array262 || var8.aClass11Array262.length <= var4.anInt191 || var8.aClass11Array262[var4.anInt191] != var4) {
+								continue;
+							}
+						}
+
+						var7 = new CS2Script();
+						var7.arguments = var4.anObjectArray176;
+						var7.aClass11_2449 = var4;
+						Class43.method1065(var7);
+					}
+				}
 			}
+
 		} catch (RuntimeException var6) {
 			throw Class44.clientError(var6, "aa.I(" + (var0 != null?"{...}":"null") + ',' + true + ',' + var2 + ')');
 		}
@@ -312,7 +310,7 @@ final class Class2 {
 		try {
 			LDIndexedSprite var3 = (LDIndexedSprite)Class3_Sub13_Sub31.aClass93_3369.get((long)(var1 << 16 | this.anInt64));
 			if(var3 == null) {
-				KeyboardListener.aClass153_1916.method2144(0, this.anInt64);
+				KeyboardListener.aClass153_1916.method2144(this.anInt64);
 				int var4 = 125 % ((var2 - -21) / 50);
 				var3 = RSString.method1539(0, this.anInt64, KeyboardListener.aClass153_1916);
 				if(var3 != null) {
@@ -340,7 +338,7 @@ final class Class2 {
 			Class3_Sub13_Sub1.outgoingBuffer.putOpcode(132);
 			Class3_Sub13_Sub1.outgoingBuffer.putIntA(var2);
 			if(true) {
-				Class3_Sub13_Sub1.outgoingBuffer.putLEShort(-1, var0);
+				Class3_Sub13_Sub1.outgoingBuffer.putLEShort(var0);
 			}
 		} catch (RuntimeException var4) {
 			throw Class44.clientError(var4, "aa.E(" + var0 + ',' + false + ',' + var2 + ')');
@@ -357,10 +355,6 @@ final class Class2 {
 				this.aBoolean69 = true;
 			} else if (var1 == 4) {
 				this.anInt64 = -1;
-			}
-
-			if(95 <= 7) {
-				anInt65 = 123;
 			}
 
 		} catch (RuntimeException var6) {
@@ -382,9 +376,6 @@ final class Class2 {
 
 	static void method81(RSInterface var1) {
 		try {
-			if((byte) -128 != -128) {
-				method75((RSInterface[])null, 21);
-			}
 
 			int var2 = var1.anInt189;
 			if(324 == var2) {

@@ -22,7 +22,7 @@ final class Class3_Sub28_Sub10_Sub2 extends Class3_Sub28_Sub10 {
       }
    }
 
-   static Class106[] method596(int var0, Signlink var1) {
+   static Class106[] method596(Signlink var1) {
       try {
          if(var1.method1432(false)) {
             Class64 var2 = var1.method1453((byte)8);
@@ -46,7 +46,7 @@ final class Class3_Sub28_Sub10_Sub2 extends Class3_Sub28_Sub10 {
                   var6.anInt1448 = var3[(var5 << 2) - -3];
                }
 
-               if(var0 != 10) {
+               if(10 != 10) {
                   method597((byte)-74);
                }
 
@@ -56,7 +56,7 @@ final class Class3_Sub28_Sub10_Sub2 extends Class3_Sub28_Sub10 {
             return new Class106[0];
          }
 	  } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "pm.P(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var7, "pm.P(" + 10 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -272,11 +272,8 @@ final class Class3_Sub28_Sub10_Sub2 extends Class3_Sub28_Sub10 {
    final byte[] method587() {
       try {
          if(!this.aBoolean3632 && -this.aByte4064 + this.aClass3_Sub30_4069.buffer.length <= this.aClass3_Sub30_4069.index) {
-            if(false) {
-               this.method586();
-            }
 
-            return this.aClass3_Sub30_4069.buffer;
+			 return this.aClass3_Sub30_4069.buffer;
          } else {
             throw new RuntimeException();
          }

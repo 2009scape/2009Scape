@@ -152,8 +152,8 @@ final class Model_Sub1 extends GameObject {
       this.method2007();
    }
 
-   final GameObject method1861(int var1, int var2, int var3) {
-      return this.method2008(this.aShort2879, this.aShort2876, var1, var2, var3);
+   final GameObject method1861() {
+      return this.method2008(this.aShort2879, this.aShort2876, -50, -10, -50);
    }
 
    private int method1995(Model_Sub1 var1, int var2, short var3) {
@@ -340,53 +340,49 @@ final class Model_Sub1 extends GameObject {
          }
 
           Model_Sub1 var14;
-         if(true) {
-            var14 = new Model_Sub1();
-            var14.anInt2887 = this.anInt2887;
-            var14.anInt2849 = this.anInt2849;
-            var14.anInt2862 = this.anInt2862;
-            var14.anIntArray2865 = this.anIntArray2865;
-            var14.anIntArray2878 = this.anIntArray2878;
-            var14.anIntArray2864 = this.anIntArray2864;
-            var14.aByteArray2859 = this.aByteArray2859;
-            var14.aByteArray2889 = this.aByteArray2889;
-            var14.aByteArray2843 = this.aByteArray2843;
-            var14.aByteArray2866 = this.aByteArray2866;
-            var14.aShortArray2870 = this.aShortArray2870;
-            var14.aShortArray2858 = this.aShortArray2858;
-            var14.aByte2848 = this.aByte2848;
-            var14.aByteArray2857 = this.aByteArray2857;
-            var14.aShortArray2884 = this.aShortArray2884;
-            var14.aShortArray2846 = this.aShortArray2846;
-            var14.aShortArray2891 = this.aShortArray2891;
-            var14.aShortArray2888 = this.aShortArray2888;
-            var14.aShortArray2882 = this.aShortArray2882;
-            var14.aShortArray2851 = this.aShortArray2851;
-            var14.aByteArray2845 = this.aByteArray2845;
-            var14.aByteArray2867 = this.aByteArray2867;
-            var14.aByteArray2877 = this.aByteArray2877;
-            var14.aByteArray2852 = this.aByteArray2852;
-            var14.aByteArray2869 = this.aByteArray2869;
-            var14.anIntArray2860 = this.anIntArray2860;
-            var14.anIntArray2847 = this.anIntArray2847;
-            var14.anIntArrayArray2890 = this.anIntArrayArray2890;
-            var14.anIntArrayArray2856 = this.anIntArrayArray2856;
-            var14.aShort2879 = this.aShort2879;
-            var14.aShort2876 = this.aShort2876;
-            var14.aClass50Array2872 = this.aClass50Array2872;
-            var14.aClass120Array2886 = this.aClass120Array2886;
-            var14.aClass50Array2883 = this.aClass50Array2883;
-            if(var1 == 3) {
-               var14.anIntArray2885 = Class65.method1233(this.anIntArray2885, 2);
-               var14.anIntArray2881 = Class65.method1233(this.anIntArray2881, 2);
-               var14.anIntArray2892 = Class65.method1233(this.anIntArray2892, 2);
-            } else {
-               var14.anIntArray2885 = this.anIntArray2885;
-               var14.anIntArray2881 = new int[var14.anInt2887];
-               var14.anIntArray2892 = this.anIntArray2892;
-            }
+         var14 = new Model_Sub1();
+         var14.anInt2887 = this.anInt2887;
+         var14.anInt2849 = this.anInt2849;
+         var14.anInt2862 = this.anInt2862;
+         var14.anIntArray2865 = this.anIntArray2865;
+         var14.anIntArray2878 = this.anIntArray2878;
+         var14.anIntArray2864 = this.anIntArray2864;
+         var14.aByteArray2859 = this.aByteArray2859;
+         var14.aByteArray2889 = this.aByteArray2889;
+         var14.aByteArray2843 = this.aByteArray2843;
+         var14.aByteArray2866 = this.aByteArray2866;
+         var14.aShortArray2870 = this.aShortArray2870;
+         var14.aShortArray2858 = this.aShortArray2858;
+         var14.aByte2848 = this.aByte2848;
+         var14.aByteArray2857 = this.aByteArray2857;
+         var14.aShortArray2884 = this.aShortArray2884;
+         var14.aShortArray2846 = this.aShortArray2846;
+         var14.aShortArray2891 = this.aShortArray2891;
+         var14.aShortArray2888 = this.aShortArray2888;
+         var14.aShortArray2882 = this.aShortArray2882;
+         var14.aShortArray2851 = this.aShortArray2851;
+         var14.aByteArray2845 = this.aByteArray2845;
+         var14.aByteArray2867 = this.aByteArray2867;
+         var14.aByteArray2877 = this.aByteArray2877;
+         var14.aByteArray2852 = this.aByteArray2852;
+         var14.aByteArray2869 = this.aByteArray2869;
+         var14.anIntArray2860 = this.anIntArray2860;
+         var14.anIntArray2847 = this.anIntArray2847;
+         var14.anIntArrayArray2890 = this.anIntArrayArray2890;
+         var14.anIntArrayArray2856 = this.anIntArrayArray2856;
+         var14.aShort2879 = this.aShort2879;
+         var14.aShort2876 = this.aShort2876;
+         var14.aClass50Array2872 = this.aClass50Array2872;
+         var14.aClass120Array2886 = this.aClass120Array2886;
+         var14.aClass50Array2883 = this.aClass50Array2883;
+         if(var1 == 3) {
+            var14.anIntArray2885 = Class65.method1233(this.anIntArray2885, 2);
+            var14.anIntArray2881 = Class65.method1233(this.anIntArray2881, 2);
+            var14.anIntArray2892 = Class65.method1233(this.anIntArray2892, 2);
          } else {
-            var14 = this;
+            var14.anIntArray2885 = this.anIntArray2885;
+            var14.anIntArray2881 = new int[var14.anInt2887];
+            var14.anIntArray2892 = this.anIntArray2892;
          }
 
          int var15;
@@ -473,11 +469,7 @@ final class Model_Sub1 extends GameObject {
             }
          }
 
-         if(false) {
-            var14.method2007();
-         } else {
-            this.aBoolean2853 = false;
-         }
+         this.aBoolean2853 = false;
 
          return var14;
       }
@@ -1536,20 +1528,6 @@ final class Model_Sub1 extends GameObject {
       this.aShortArray2858 = new short[var2];
       this.aByteArray2866 = new byte[var2];
       this.anIntArray2847 = new int[var2];
-      if(0 > 0) {
-         this.aByteArray2857 = new byte[0];
-         this.aShortArray2884 = new short[0];
-         this.aShortArray2846 = new short[0];
-         this.aShortArray2891 = new short[0];
-         this.aShortArray2888 = new short[0];
-         this.aShortArray2882 = new short[0];
-         this.aShortArray2851 = new short[0];
-         this.aByteArray2845 = new byte[0];
-         this.aByteArray2867 = new byte[0];
-         this.aByteArray2877 = new byte[0];
-         this.aByteArray2852 = new byte[0];
-         this.aByteArray2869 = new byte[0];
-      }
 
    }
 
@@ -1624,12 +1602,6 @@ final class Model_Sub1 extends GameObject {
 
       if(var8) {
          this.aByteArray2866 = new byte[this.anInt2849];
-      }
-
-      if(var9 > 0) {
-      }
-
-      if(var10 > 0) {
       }
 
       this.aShortArray2870 = new short[this.anInt2849];
@@ -1778,20 +1750,7 @@ final class Model_Sub1 extends GameObject {
          }
       }
 
-       if(true) {
-         this.aByteArray2843 = var1.aByteArray2843;
-      } else {
-         this.aByteArray2843 = new byte[this.anInt2849];
-         if(var1.aByteArray2843 == null) {
-            for(var6 = 0; var6 < this.anInt2849; ++var6) {
-               this.aByteArray2843[var6] = 0;
-            }
-         } else {
-            for(var6 = 0; var6 < this.anInt2849; ++var6) {
-               this.aByteArray2843[var6] = var1.aByteArray2843[var6];
-            }
-         }
-      }
+      this.aByteArray2843 = var1.aByteArray2843;
 
       this.anIntArray2865 = var1.anIntArray2865;
       this.anIntArray2878 = var1.anIntArray2878;

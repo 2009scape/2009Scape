@@ -305,7 +305,7 @@ final class Class83 {
                   aBoolean1158 = false;
                }
 
-               return HDToolKit.highDetail && !Class3_Sub15.aBoolean2427?1:0;
+               return HDToolKit.highDetail ?1:0;
             }
          } else {
             return 3;
@@ -317,31 +317,27 @@ final class Class83 {
 
    private Class3_Sub12_Sub1 method1412(int[] var1, int var3, int var4) {
       try {
-         if(31947 == 31947) {
-            int var5 = var4 ^ (var3 >>> 12 | var3 << 4 & '\ufff3');
-            var5 |= var3 << 16;
-            long var6 = (long)var5;
-            Class3_Sub12_Sub1 var8 = (Class3_Sub12_Sub1)this.aClass130_1159.method1780(var6, 0);
-            if(var8 != null) {
-               return var8;
-            } else if(null != var1 && var1[0] <= 0) {
+         int var5 = var4 ^ (var3 >>> 12 | var3 << 4 & '\ufff3');
+         var5 |= var3 << 16;
+         long var6 = (long)var5;
+         Class3_Sub12_Sub1 var8 = (Class3_Sub12_Sub1)this.aClass130_1159.method1780(var6, 0);
+         if(var8 != null) {
+            return var8;
+         } else if(null != var1 && var1[0] <= 0) {
+            return null;
+         } else {
+            Class135 var9 = Class135.method1811(this.aClass153_1153, var3, var4);
+            if(null == var9) {
                return null;
             } else {
-               Class135 var9 = Class135.method1811(this.aClass153_1153, var3, var4);
-               if(null == var9) {
-                  return null;
-               } else {
-                  var8 = var9.method1812();
-                  this.aClass130_1159.method1779(1, var8, var6);
-                  if(var1 != null) {
-                     var1[0] -= var8.aByteArray3030.length;
-                  }
-
-                  return var8;
+               var8 = var9.method1812();
+               this.aClass130_1159.method1779(var8, var6);
+               if(var1 != null) {
+                  var1[0] -= var8.aByteArray3030.length;
                }
+
+               return var8;
             }
-         } else {
-            return (Class3_Sub12_Sub1)null;
          }
       } catch (RuntimeException var10) {
          throw Class44.clientError(var10, "le.B(" + (var1 != null?"{...}":"null") + ',' + 31947 + ',' + var3 + ',' + var4 + ')');
@@ -396,7 +392,7 @@ final class Class83 {
                   return null;
                }
 
-               this.aClass130_1155.method1779(1, var9, var6);
+               this.aClass130_1155.method1779(var9, var6);
             }
 
             var8 = var9.method359(var2);
@@ -404,10 +400,7 @@ final class Class83 {
                return null;
             } else {
                var9.method86(-1024);
-               this.aClass130_1159.method1779(1, var8, var6);
-               if((byte) 11 != 11) {
-                  this.method1413(64, -18, (int[])null);
-               }
+               this.aClass130_1159.method1779(var8, var6);
 
                return var8;
             }
@@ -420,9 +413,7 @@ final class Class83 {
 
    final Class3_Sub12_Sub1 method1416(int var2, int[] var3) {
       try {
-         if(10089 != 10089) {
-            return (Class3_Sub12_Sub1)null;
-         } else if(this.aClass153_1157.method2121() == 1) {
+         if(this.aClass153_1157.method2121() == 1) {
             return this.method1415(0, var3, var2);
          } else if(this.aClass153_1157.getFileAmount(var2, (byte) 99) == 1) {
             return this.method1415(var2, var3, 0);

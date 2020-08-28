@@ -72,13 +72,8 @@ final class HDIndexedSprite extends AbstractIndexedSprite {
       if(this.anInt2677 != 1) {
          this.anInt2677 = 1;
          javax.media.opengl.GL var2 = HDToolKit.gl;
-         if(1 == 2) {
-            var2.glTexParameteri(3553, 10241, 9729);
-            var2.glTexParameteri(3553, 10240, 9729);
-         } else {
-            var2.glTexParameteri(3553, 10241, 9728);
-            var2.glTexParameteri(3553, 10240, 9728);
-         }
+          var2.glTexParameteri(3553, 10241, 9728);
+          var2.glTexParameteri(3553, 10240, 9728);
 
       }
    }

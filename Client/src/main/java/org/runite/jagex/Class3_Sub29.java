@@ -18,7 +18,7 @@ final class Class3_Sub29 extends Class3 {
    static void method727() {
       try {
          KeyboardListener.aClass93_1911.method1524();
-         int var1 = 56 / ((91 - 7) / 54);
+         int var1 = 56;
          Class80.aClass93_1131.method1524();
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "sj.O(" + 91 + ')');
@@ -27,13 +27,10 @@ final class Class3_Sub29 extends Class3 {
 
    static void method728() {
       try {
-         if(false) {
-            method731((CacheIndex)null, (byte)118);
-         }
 
          try {
             if(Class10.anInt154 == 1) {
-               int var1 = Class101.aClass3_Sub24_Sub4_1421.method499(false);
+               int var1 = Class101.aClass3_Sub24_Sub4_1421.method499();
                if(var1 > 0 && Class101.aClass3_Sub24_Sub4_1421.method473(-124)) {
                   var1 -= GraphicDefinition.anInt546;
                   if(var1 < 0) {
@@ -125,9 +122,6 @@ final class Class3_Sub29 extends Class3 {
 
    static RSString method732(String var0) {
       try {
-         if(27307 != 27307) {
-            anInt2589 = -93;
-         }
 
          byte[] var2;
          try {
@@ -152,7 +146,7 @@ final class Class3_Sub29 extends Class3 {
       }
    }
 
-   static Class3_Sub28_Sub4 method733(int var0, int var1) {
+   static Class3_Sub28_Sub4 method733(int var1) {
       try {
          Class3_Sub28_Sub4 var2 = (Class3_Sub28_Sub4)Class3_Sub28_Sub19.aClass47_3776.method1092((long)var1, 1400);
          if(null == var2) {
@@ -164,7 +158,7 @@ final class Class3_Sub29 extends Class3 {
             }
 
             var2 = new Class3_Sub28_Sub4();
-            if(var0 != 12345678) {
+            if(12345678 != 12345678) {
                anInt2582 = 56;
             }
 
@@ -180,7 +174,7 @@ final class Class3_Sub29 extends Class3 {
          }
          return var2;
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "sj.Q(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "sj.Q(" + 12345678 + ',' + var1 + ')');
       }
    }
 
@@ -192,7 +186,7 @@ final class Class3_Sub29 extends Class3 {
                RSString var2 = Class163.aClass94_2044.method1573((byte)125, Class38.aClass87_665.anApplet1219);
                RSString var3 = Class144.aClass94_1885.method1573((byte)126, Class38.aClass87_665.anApplet1219);
                RSString var4 = RenderAnimationDefinition.method903(new RSString[]{var2, Class82.aClass94_1151, var1, Class166.aClass94_2074, var3}, (byte)-119);
-               if(0 == var1.length(0 + -84)) {
+               if(0 == var1.length(-84)) {
                   var4 = RenderAnimationDefinition.method903(new RSString[]{var4, TextCore.HasAgeExpire}, (byte)-60);
                } else {
                   var4 = RenderAnimationDefinition.method903(new RSString[]{var4, TextCore.HasExpires, Class15.method894(94608000000L + Class5.method830((byte)-55), (byte)52), TextCore.HasMaxAge, Class3_Sub28_Sub12.method612(94608000L, (byte)102)}, (byte)-80);

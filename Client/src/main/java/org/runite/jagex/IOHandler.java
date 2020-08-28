@@ -109,18 +109,14 @@ final class IOHandler implements Runnable {
                 Class168.method2275(var3, var1, var4, var6, var0, var5);
             }
 
-            if((byte) -113 > -107) {
-                anInt1244 = 89;
-            }
-
         } catch (RuntimeException var8) {
             throw Class44.clientError(var8, "ma.A(" + var0 + ',' + var1 + ',' + (byte) -113 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
         }
     }
 
-    final void readBytes(int var1, int var2, int var3, byte[] var4) throws IOException {
+    final void readBytes(int var1, int var2, byte[] var4) throws IOException {
         try {
-            if(var3 == -18455) {
+            if(-18455 == -18455) {
                 if(!this.aBoolean1241) {
                     while(var2 > 0) {
                         int var5 = this.anInputStream1232.read(var4, var1, var2);
@@ -135,7 +131,7 @@ final class IOHandler implements Runnable {
                 }
             }
         } catch (RuntimeException var6) {
-            throw Class44.clientError(var6, "ma.D(" + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ')');
+            throw Class44.clientError(var6, "ma.D(" + var1 + ',' + var2 + ',' + -18455 + ',' + (var4 != null?"{...}":"null") + ')');
         }
     }
 
@@ -164,7 +160,7 @@ final class IOHandler implements Runnable {
         }
     }
 
-    final void sendBytes(boolean var1, byte[] var3, int var4) throws IOException {
+    final void sendBytes(byte[] var3, int var4) throws IOException {
         try {
             if(!this.aBoolean1241) {
                 if(this.aBoolean1243) {
@@ -177,7 +173,7 @@ final class IOHandler implements Runnable {
 
                     synchronized(this) {
                         for(int var6 = 0; var6 < var4; ++var6) {
-                            this.aByteArray1233[this.anInt1230] = var3[0 + var6];
+                            this.aByteArray1233[this.anInt1230] = var3[var6];
                             this.anInt1230 = (this.anInt1230 + 1) % 5000;
                             if((4900 + this.anInt1236) % 5000 == this.anInt1230) {
                                 throw new IOException();
@@ -188,7 +184,7 @@ final class IOHandler implements Runnable {
                             this.aClass64_1237 = this.aClass87_1239.method1451(0, 3, this);
                         }
 
-                        if(var1) {
+                        if(false) {
                             aClass61_1242 = (Class61)null;
                         }
 
@@ -197,7 +193,7 @@ final class IOHandler implements Runnable {
                 }
             }
         } catch (RuntimeException var9) {
-            throw Class44.clientError(var9, "ma.K(" + var1 + ',' + 0 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
+            throw Class44.clientError(var9, "ma.K(" + false + ',' + 0 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
         }
     }
 
@@ -236,9 +232,9 @@ final class IOHandler implements Runnable {
         }
     }
 
-    final void method1467(boolean var1) {
+    final void method1467() {
         try {
-            if(var1) {
+            if(false) {
                 method1469((int[])null, 19, 31, -15, 103, 77);
             }
 
@@ -247,7 +243,7 @@ final class IOHandler implements Runnable {
                 this.anOutputStream1231 = new OutputStream_Sub1();
             }
         } catch (RuntimeException var3) {
-            throw Class44.clientError(var3, "ma.H(" + var1 + ')');
+            throw Class44.clientError(var3, "ma.H(" + false + ')');
         }
     }
 

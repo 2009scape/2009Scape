@@ -36,11 +36,8 @@ class Class163_Sub2 extends Class163 {
 
    static void method2219(RSByteBuffer var0) {
       try {
-         if(false) {
-            aClass30Array2998 = (Class30[])null;
-         }
 
-         while(~var0.index > ~var0.buffer.length) {
+          while(~var0.index > ~var0.buffer.length) {
             int var4 = 0;
             boolean var3 = false;
             int var5 = 0;

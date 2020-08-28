@@ -18,7 +18,7 @@ final class Class164_Sub1_Sub1 extends Class164_Sub1 {
 
    final byte[] method2243() {
       this.aByteArray4028 = new byte[64 * 64 * 64 * 2];
-      this.method2230(-95, 64, 64, 64);
+      this.method2230(-95);
       return this.aByteArray4028;
    }
 }

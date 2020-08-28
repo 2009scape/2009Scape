@@ -38,17 +38,13 @@ final class Class145 {
             Class3_Sub13_Sub3.method184(var4, var5, var3, var1, var0, var2);
          }
 
-         if(-2 != -2) {
-            method2075(89, (byte)-73);
-         }
-
       } catch (RuntimeException var8) {
          throw Class44.clientError(var8, "ub.F(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + -2 + ')');
       }
    }
 
    static void method2073(Class3_Sub2 var0, boolean var1) {
-      Class163_Sub1.aClass61_2990.method1215(true, var0);
+      Class163_Sub1.aClass61_2990.method1215(var0);
 
       while(true) {
          Class3_Sub2 var2 = (Class3_Sub2)Class163_Sub1.aClass61_2990.method1220();
@@ -371,28 +367,28 @@ final class Class145 {
                   if(var3 < Class97.anInt1375 && (var14 & 4) != 0) {
                      var35 = var7[var3 + 1][var4];
                      if(var35 != null && var35.aBoolean2225) {
-                        Class163_Sub1.aClass61_2990.method1215(true, var35);
+                        Class163_Sub1.aClass61_2990.method1215(var35);
                      }
                   }
 
                   if(var4 < Class3_Sub13_Sub27.anInt3340 && (var14 & 2) != 0) {
                      var35 = var7[var3][var4 + 1];
                      if(var35 != null && var35.aBoolean2225) {
-                        Class163_Sub1.aClass61_2990.method1215(true, var35);
+                        Class163_Sub1.aClass61_2990.method1215(var35);
                      }
                   }
 
                   if(var3 > Class97.anInt1375 && (var14 & 1) != 0) {
                      var35 = var7[var3 - 1][var4];
                      if(var35 != null && var35.aBoolean2225) {
-                        Class163_Sub1.aClass61_2990.method1215(true, var35);
+                        Class163_Sub1.aClass61_2990.method1215(var35);
                      }
                   }
 
                   if(var4 > Class3_Sub13_Sub27.anInt3340 && (var14 & 8) != 0) {
                      var35 = var7[var3][var4 - 1];
                      if(var35 != null && var35.aBoolean2225) {
-                        Class163_Sub1.aClass61_2990.method1215(true, var35);
+                        Class163_Sub1.aClass61_2990.method1215(var35);
                      }
                   }
                }
@@ -439,7 +435,7 @@ final class Class145 {
                                     Class68.method1268(Class129_Sub1.anInt2697, Class3_Sub28_Sub13.anInt3657, Class3_Sub13_Sub30.anInt3363, var5, var3 + 1, var4 - 1);
                                     break label736;
                                  }
-                              } else if(var27 == 3) {
+                              } else {
                                  var11 -= 64;
                                  var12 -= 64;
                                  if(var12 > -var11 && var3 > 0 && var4 > 0) {
@@ -579,9 +575,9 @@ final class Class145 {
                         for(var15 = var32.anInt478; var15 <= var32.anInt481; ++var15) {
                            Class3_Sub2 var37 = var7[var14][var15];
                            if(var37.anInt2227 != 0) {
-                              Class163_Sub1.aClass61_2990.method1215(true, var37);
+                              Class163_Sub1.aClass61_2990.method1215(var37);
                            } else if((var14 != var3 || var15 != var4) && var37.aBoolean2225) {
-                              Class163_Sub1.aClass61_2990.method1215(true, var37);
+                              Class163_Sub1.aClass61_2990.method1215(var37);
                            }
                         }
                      }
@@ -711,35 +707,35 @@ final class Class145 {
                if(var5 < Class3_Sub17.anInt2456 - 1) {
                   var33 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var5 + 1][var3][var4];
                   if(var33 != null && var33.aBoolean2225) {
-                     Class163_Sub1.aClass61_2990.method1215(true, var33);
+                     Class163_Sub1.aClass61_2990.method1215(var33);
                   }
                }
 
                if(var3 < Class97.anInt1375) {
                   var33 = var7[var3 + 1][var4];
                   if(var33 != null && var33.aBoolean2225) {
-                     Class163_Sub1.aClass61_2990.method1215(true, var33);
+                     Class163_Sub1.aClass61_2990.method1215(var33);
                   }
                }
 
                if(var4 < Class3_Sub13_Sub27.anInt3340) {
                   var33 = var7[var3][var4 + 1];
                   if(var33 != null && var33.aBoolean2225) {
-                     Class163_Sub1.aClass61_2990.method1215(true, var33);
+                     Class163_Sub1.aClass61_2990.method1215(var33);
                   }
                }
 
                if(var3 > Class97.anInt1375) {
                   var33 = var7[var3 - 1][var4];
                   if(var33 != null && var33.aBoolean2225) {
-                     Class163_Sub1.aClass61_2990.method1215(true, var33);
+                     Class163_Sub1.aClass61_2990.method1215(var33);
                   }
                }
 
                if(var4 > Class3_Sub13_Sub27.anInt3340) {
                   var33 = var7[var3][var4 - 1];
                   if(var33 != null && var33.aBoolean2225) {
-                     Class163_Sub1.aClass61_2990.method1215(true, var33);
+                     Class163_Sub1.aClass61_2990.method1215(var33);
                   }
                }
             }
@@ -754,19 +750,17 @@ final class Class145 {
             CS2Script var8 = new CS2Script();
             var8.aClass11_2449 = var7;
             var8.arguments = var7.anObjectArray203;
-            Class43.method1065(1073376993, var8);
+            Class43.method1065(var8);
          }
 
          RSInterface.anInt278 = var1;
          Class69.anInt1038 = var3;
-         if(-120 < -110) {
-            Class54.anInt872 = var0;
-            Class164.anInt2051 = var2;
-            GameObject.aBoolean1837 = true;
-            Class144.anInt1887 = var4;
-            Class3_Sub28_Sub5.anInt3590 = var6;
-            Class20.method909(126, var7);
-         }
+         Class54.anInt872 = var0;
+         Class164.anInt2051 = var2;
+         GameObject.aBoolean1837 = true;
+         Class144.anInt1887 = var4;
+         Class3_Sub28_Sub5.anInt3590 = var6;
+         Class20.method909(126, var7);
       } catch (RuntimeException var9) {
          throw Class44.clientError(var9, "ub.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + -120 + ',' + var6 + ')');
       }

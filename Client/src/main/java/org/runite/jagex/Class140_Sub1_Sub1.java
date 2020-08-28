@@ -576,10 +576,6 @@ final class Class140_Sub1_Sub1 extends Model {
             var10.glRotatef((float)var2 * 0.17578125F, 0.0F, 1.0F, 0.0F);
          }
 
-         if(0 != 0) {
-            var10.glRotatef((float) 0 * 0.17578125F, 1.0F, 0.0F, 0.0F);
-         }
-
          if(var3 != 0) {
             var10.glRotatef((float)(-var3) * 0.17578125F, 0.0F, 0.0F, 1.0F);
          }
@@ -1761,13 +1757,11 @@ final class Class140_Sub1_Sub1 extends Model {
             }
          }
 
-         if(true) {
-            if(this.aClass121_3817.aBoolean1640) {
-               this.aFloatArray3824 = null;
-               this.aFloatArray3847 = null;
-            } else {
-               this.aByte3851 = (byte)(this.aByte3851 | 8);
-            }
+         if(this.aClass121_3817.aBoolean1640) {
+            this.aFloatArray3824 = null;
+            this.aFloatArray3847 = null;
+         } else {
+            this.aByte3851 = (byte)(this.aByte3851 | 8);
          }
 
          if(var5 && var2) {
@@ -2306,7 +2300,7 @@ final class Class140_Sub1_Sub1 extends Model {
       return var4;
    }
 
-   final GameObject method1861(int var1, int var2, int var3) {
+   final GameObject method1861() {
       this.aBoolean3809 = false;
       if(this.aClass18_3843 != null) {
          this.aShortArray3810 = this.aClass18_3843.aShortArray417;
@@ -2382,11 +2376,7 @@ final class Class140_Sub1_Sub1 extends Model {
          var12.aShortArray3808 = OutputStream_Sub1.method65(this.aShortArray3808);
       }
 
-      if(true) {
-         var12.aByteArray3816 = this.aByteArray3816;
-      } else {
-         var12.aByteArray3816 = Class108.method1655(this.aByteArray3816);
-      }
+      var12.aByteArray3816 = this.aByteArray3816;
 
       if(var3 && var5 && (var8 && var6 || Class106.aBoolean1441)) {
          var12.aClass121_3814 = this.aClass121_3814;
@@ -2416,15 +2406,9 @@ final class Class140_Sub1_Sub1 extends Model {
          var12.aClass121_3815 = null;
       }
 
-      if(true) {
-         var12.aFloatArray3824 = this.aFloatArray3824;
-         var12.aFloatArray3847 = this.aFloatArray3847;
-         var12.aClass121_3817 = this.aClass121_3817;
-      } else {
-         var12.aFloatArray3824 = Class3_Sub6.method119(this.aFloatArray3824, 0);
-         var12.aFloatArray3847 = Class3_Sub6.method119(this.aFloatArray3847, 0);
-         var12.aClass121_3817 = new Class121();
-      }
+      var12.aFloatArray3824 = this.aFloatArray3824;
+      var12.aFloatArray3847 = this.aFloatArray3847;
+      var12.aClass121_3817 = this.aClass121_3817;
 
       if(var10) {
          var12.aShortArray3811 = this.aShortArray3811;
@@ -3177,19 +3161,17 @@ final class Class140_Sub1_Sub1 extends Model {
          }
 
          for(var9 = 0; var9 < this.anInt3852; ++var9) {
-            if(this.aByteArray3816[var9] <= 128) {
-               short var20 = this.aShortArray3811[var9];
-               short var19 = this.aShortArray3830[var9];
-               short var21 = this.aShortArray3831[var9];
-               var13 = anIntArray3861[var20];
-               var14 = anIntArray3861[var19];
-               var15 = anIntArray3861[var21];
-               int var16 = anIntArray3857[var20];
-               int var17 = anIntArray3857[var19];
-               int var18 = anIntArray3857[var21];
-               if((var13 - var14) * (var17 - var18) - (var17 - var16) * (var15 - var14) > 0) {
-                  Class51.method1147(var8.aByteArray2674, var16, var17, var18, var13, var14, var15, var6);
-               }
+            short var20 = this.aShortArray3811[var9];
+            short var19 = this.aShortArray3830[var9];
+            short var21 = this.aShortArray3831[var9];
+            var13 = anIntArray3861[var20];
+            var14 = anIntArray3861[var19];
+            var15 = anIntArray3861[var21];
+            int var16 = anIntArray3857[var20];
+            int var17 = anIntArray3857[var19];
+            int var18 = anIntArray3857[var21];
+            if((var13 - var14) * (var17 - var18) - (var17 - var16) * (var15 - var14) > 0) {
+               Class51.method1147(var8.aByteArray2674, var16, var17, var18, var13, var14, var15, var6);
             }
          }
 

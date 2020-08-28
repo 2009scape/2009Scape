@@ -21,16 +21,13 @@ final class Class3_Sub28_Sub19 extends Node {
             return false;
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "ud.B(" + 205 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "ud.B(" + 205 + ',' + "null" + ')');
       }
    }
 
    static void method716() {
       try {
          Class136.aClass93_1772.method1524();
-         if(14073 != 14073) {
-            method717(9);
-         }
 
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "ud.A(" + 14073 + ')');

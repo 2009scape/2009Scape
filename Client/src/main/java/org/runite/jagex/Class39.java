@@ -14,7 +14,7 @@ final class Class39 {
 	static int anInt671;
 
 
-	static void updateSceneGraph(int var0, boolean dynamic) {
+	static void updateSceneGraph(boolean dynamic) {
 		try {
 			Class3_Sub29.isDynamicSceneGraph = dynamic;
 			int sceneX;
@@ -164,12 +164,12 @@ final class Class39 {
 				Class73.method1301(plane, var6, var5, var7, false, sceneX);
 			}
 
-			if(var0 != 0) {
+			if(0 != 0) {
 				anInt670 = 124;
 			}
 
 		} catch (RuntimeException var17) {
-			throw Class44.clientError(var17, "g.F(" + var0 + ',' + dynamic + ')');
+			throw Class44.clientError(var17, "g.F(" + 0 + ',' + dynamic + ')');
 		}
 	}
 
@@ -255,9 +255,6 @@ final class Class39 {
 	static void method1036() {
 		try {
 			Class86 var1 = new Class86();
-			if(118 <= 101) {
-				method1039(22, (CacheIndex)null);
-			}
 
 			for(int var2 = 0; var2 < 13; ++var2) {
 				for(int var3 = 0; var3 < 13; ++var3) {
@@ -316,7 +313,7 @@ final class Class39 {
 						Class3_Sub13_Sub22.aClass61ArrayArrayArray3273[WorldListCountry.localPlane][var3][var4] = new Class61();
 					}
 
-					Class3_Sub13_Sub22.aClass61ArrayArrayArray3273[WorldListCountry.localPlane][var3][var4].method1215(true, new Class3_Sub28_Sub14(var31));
+					Class3_Sub13_Sub22.aClass61ArrayArrayArray3273[WorldListCountry.localPlane][var3][var4].method1215(new Class3_Sub28_Sub14(var31));
 					Class128.method1760(var4, var3);
 				}
 
@@ -353,7 +350,7 @@ final class Class39 {
 						var2 = 64 * var2;
 						var36 = new Class140_Sub6(var7, WorldListCountry.localPlane, var2, var3, Class121.method1736(WorldListCountry.localPlane, 1, var2, var3) + -var8, Class44.anInt719 + var10, var11 + Class44.anInt719, var35, var13, var6, var28);
 						var36.method2024(var5, Class44.anInt719 + var10, -var28 + Class121.method1736(WorldListCountry.localPlane, 1, var4, var5), var4);
-						Class3_Sub13_Sub30.aClass61_3364.method1215(true, new Class3_Sub28_Sub19(var36));
+						Class3_Sub13_Sub30.aClass61_3364.method1215(new Class3_Sub28_Sub19(var36));
 					}
 
 				} else if(RSString.incomingOpcode == 17) {
@@ -367,7 +364,7 @@ final class Class39 {
 						var2 = var2 * 128 - -64;
 						var3 = var3 * 128 - -64;
 						Class140_Sub2 var32 = new Class140_Sub2(var4, WorldListCountry.localPlane, var2, var3, -var5 + Class121.method1736(WorldListCountry.localPlane, 1, var2, var3), var6, Class44.anInt719);
-						Class3_Sub13_Sub15.aClass61_3177.method1215(true, new Class3_Sub28_Sub2(var32));
+						Class3_Sub13_Sub15.aClass61_3177.method1215(new Class3_Sub28_Sub2(var32));
 					}
 
 				} else if(RSString.incomingOpcode == 179) {
@@ -456,7 +453,7 @@ final class Class39 {
 								Class3_Sub13_Sub22.aClass61ArrayArrayArray3273[WorldListCountry.localPlane][var3][var4] = new Class61();
 							}
 
-							Class3_Sub13_Sub22.aClass61ArrayArrayArray3273[WorldListCountry.localPlane][var3][var4].method1215(true, new Class3_Sub28_Sub14(var27));
+							Class3_Sub13_Sub22.aClass61ArrayArrayArray3273[WorldListCountry.localPlane][var3][var4].method1215(new Class3_Sub28_Sub14(var27));
 							Class128.method1760(var4, var3);
 						}
 
@@ -486,7 +483,7 @@ final class Class39 {
 								var4 = 128 * var4 + 64;
 								var36 = new Class140_Sub6(var7, WorldListCountry.localPlane, var2, var3, Class121.method1736(WorldListCountry.localPlane, 1, var2, var3) + -var8, var10 + Class44.anInt719, var11 + Class44.anInt719, var35, var13, var6, var28);
 								var36.method2024(var5, Class44.anInt719 + var10, Class121.method1736(WorldListCountry.localPlane, 1, var4, var5) - var28, var4);
-								Class3_Sub13_Sub30.aClass61_3364.method1215(true, new Class3_Sub28_Sub19(var36));
+								Class3_Sub13_Sub30.aClass61_3364.method1215(new Class3_Sub28_Sub19(var36));
 							}
 
 						} else if (RSString.incomingOpcode == 104) {
@@ -552,7 +549,7 @@ final class Class39 {
 
 								Class140_Sub6 var37 = new Class140_Sub6(var8, WorldListCountry.localPlane, var2, var3, -var28 + Class121.method1736(WorldListCountry.localPlane, 1, var2, var3), var11 + Class44.anInt719, var35 + Class44.anInt719, var13, var14, var7, var10);
 								var37.method2024(var5, var11 + Class44.anInt719, -var10 + Class121.method1736(WorldListCountry.localPlane, 1, var4, var5), var4);
-								Class3_Sub13_Sub30.aClass61_3364.method1215(true, new Class3_Sub28_Sub19(var37));
+								Class3_Sub13_Sub30.aClass61_3364.method1215(new Class3_Sub28_Sub19(var37));
 							}
 
 						} else if (97 == RSString.incomingOpcode) {

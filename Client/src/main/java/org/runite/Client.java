@@ -40,7 +40,7 @@ public class Client {
 		System.out.println("Running liveserver client");
 		Configurations.LOCAL_SERVER = false;
 		Configurations.LOCAL_MS = false;
-		Configurations.MS_IP = Configurations.LOCAL_MS ? "127.0.0.1" : PUBLIC_IP_ADDRESS; //Needs to be done because of order it's otherwise set
+		Configurations.MS_IP = PUBLIC_IP_ADDRESS; //Needs to be done because of order it's otherwise set
 
 		for (int i = 0; i < args.length; i++) {
 			String[] cmd = args[i].split("=");

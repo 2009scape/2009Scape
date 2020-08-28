@@ -73,9 +73,6 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
          }
 
          var1.aClass3_Sub24_Sub1_2507.method415(var3);
-         if(7 != 7) {
-            this.aClass3_Sub24_Sub2_3495 = (Class3_Sub24_Sub2)null;
-         }
 
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "te.P(" + (var1 != null?"{...}":"null") + ',' + 7 + ',' + var3 + ')');
@@ -107,7 +104,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
          Class3_Sub28_Sub6 var3 = (Class3_Sub28_Sub6)Client.aClass130_2194.method1780((long)var2 | (long)var1 << 32, 0);
          if(null == var3) {
             var3 = new Class3_Sub28_Sub6(var1, var2);
-            Client.aClass130_2194.method1779(1, var3, var3.aLong71);
+            Client.aClass130_2194.method1779(var3, var3.aLong71);
          }
 
          return var3;
@@ -128,7 +125,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
           }
           return false;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "te.A(" + (var0 != null?"{...}":"null") + ',' + 0 + ')');
+         throw Class44.clientError(var3, "te.A(" + "{...}" + ',' + 0 + ')');
       }
    }
 
@@ -252,9 +249,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
             }
          }
 
-         if((byte) 4 == 4) {
-            var2.aClass3_Sub24_Sub1_2507.method413(var1, var3, var4);
-         }
+         var2.aClass3_Sub24_Sub1_2507.method413(var1, var3, var4);
       } catch (RuntimeException var12) {
          throw Class44.clientError(var12, "te.S(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ',' + var5 + ',' + (byte) 4 + ')');
       }

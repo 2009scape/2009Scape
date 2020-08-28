@@ -135,9 +135,6 @@ final class Class3_Sub13_Sub3 extends Class3_Sub13 {
 
    static boolean method181() {
       try {
-         if(-15450 != -15450) {
-            method182(false);
-         }
 
          try {
             return PacketParser.parseIncomingPackets();
@@ -192,9 +189,6 @@ final class Class3_Sub13_Sub3 extends Class3_Sub13 {
          int var12 = Class40.method1040(Class57.anInt902, var0, Class159.anInt2020);
          int var13 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var3, Class101.anInt1425);
          int var14 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var2, Class101.anInt1425);
-         if(1 != 1) {
-            method183(-1);
-         }
 
          int var7 = Class40.method1040(Class57.anInt902, var6 + var1, Class159.anInt2020);
          int var8 = Class40.method1040(Class57.anInt902, -var1 + var0, Class159.anInt2020);

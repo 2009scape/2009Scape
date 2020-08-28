@@ -24,11 +24,8 @@ final class InputStream_Sub1 extends InputStream {
 
    static int[] method62() {
       try {
-         if(14585 != 14585) {
-            anInt40 = 43;
-         }
 
-         int[] var8 = new int[2048];
+          int[] var8 = new int[2048];
          Class3_Sub13_Sub4 var9 = new Class3_Sub13_Sub4();
          var9.anInt3060 = 8;
          var9.anInt3058 = 4;

@@ -22,9 +22,6 @@ final class Class75_Sub1 extends Class75 {
 
    final void method1341(int var2, int var3) {
       try {
-         if(2 != 2) {
-            method1342((int[])null, (int[])null, (Player)null, (byte)-68, (int[])null);
-         }
 
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "ci.A(" + 2 + ',' + var2 + ',' + var3 + ')');

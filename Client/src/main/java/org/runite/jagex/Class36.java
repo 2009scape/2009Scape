@@ -18,9 +18,6 @@ final class Class36 {
    static Class129 method1012() {
       try {
          try {
-            if((byte) -31 != -31) {
-               aClass3_Sub28_Sub16_637 = (Class3_Sub28_Sub16)null;
-            }
 
             return (Class129)Class.forName(Configurations.PACKAGE_JAGEX + ".Class129_Sub2").newInstance();
          } catch (Throwable var2) {
@@ -146,10 +143,6 @@ final class Class36 {
             }
          }
 
-         if(-81 >= -73) {
-            this.anIntArray633 = (int[])null;
-         }
-
          return -var6 + (var8 + 7 >> 3);
       } catch (RuntimeException var15) {
          throw Class44.clientError(var15, "fi.A(" + var1 + ',' + -81 + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ')');
@@ -170,7 +163,7 @@ final class Class36 {
       }
    }
 
-   final int method1017(int var1, int var2, byte[] var3, int var4, byte[] var5, int var6) {
+   final int method1017(int var1, int var2, byte[] var3, byte[] var5, int var6) {
       try {
          if(~var2 == -1) {
             return 0;
@@ -305,10 +298,10 @@ final class Class36 {
                ++var8;
             }
 
-            return var4 != -1248?98:-var6 + 1 + var8;
+            return -1248 != -1248?98:-var6 + 1 + var8;
          }
       } catch (RuntimeException var11) {
-         throw Class44.clientError(var11, "fi.E(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ')');
+         throw Class44.clientError(var11, "fi.E(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + -1248 + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ')');
       }
    }
 
