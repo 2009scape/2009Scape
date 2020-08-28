@@ -15,7 +15,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
    static int anInt3156 = -1;
 
 
-   static final void method229(int var0, int var1) {
+   static void method229(int var0, int var1) {
       try {
          if(!Class163_Sub3.aBoolean3004) {
             var0 = -1;
@@ -67,7 +67,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
       }
    }
 
-   static final void method230(int[][] var0) {
+   static void method230(int[][] var0) {
       try {
          Class38.anIntArrayArray663 = var0;
          if(!true) {
@@ -79,7 +79,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
       }
    }
 
-   static final Class24 method231(int var0, int var1) {
+   static Class24 method231(int var0, int var1) {
       try {
          Class24 var2 = (Class24)Class140_Sub4.aClass93_2792.get((long)var0);
          if(var2 == null) {
@@ -101,7 +101,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
       }
    }
 
-   static final void method232(int var0) {
+   static void method232(int var0) {
       try {
          if(Canvas_Sub2.loadInterface(var0)) {
             RSInterface[] var2 = GameObject.aClass11ArrayArray1834[var0];
@@ -157,7 +157,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
       }
    }
 
-   static final void method233(int var0, CacheIndex var1) {
+   static void method233(int var0, CacheIndex var1) {
       try {
          if(var0 != 28280) {
             aClass153_3154 = (CacheIndex)null;
@@ -228,7 +228,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
       }
    }
 
-   static final void method235() {
+   static void method235() {
       try {
          if(Class159.anInt2023 > 0) {
             --Class159.anInt2023;
@@ -245,7 +245,6 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
          } else {
             int var1;
             for(var1 = 0; var1 < 100 && Class3_Sub13_Sub3.method181(); ++var1) {
-               ;
             }
 
             if(Class143.loadingStage == 30) {

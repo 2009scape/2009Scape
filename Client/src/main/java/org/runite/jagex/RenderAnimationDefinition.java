@@ -52,7 +52,7 @@ final class RenderAnimationDefinition {
       }
    }
 
-   static final boolean method897(int var0, Class3_Sub24_Sub4 var1, CacheIndex var2, CacheIndex var3, CacheIndex var4) {
+   static boolean method897(int var0, Class3_Sub24_Sub4 var1, CacheIndex var2, CacheIndex var3, CacheIndex var4) {
       try {
          Class124.aClass153_1661 = var2;
          Class40.aClass153_679 = var4;
@@ -64,7 +64,7 @@ final class RenderAnimationDefinition {
       }
    }
 
-   static final GraphicDefinition getGraphicDefinition(byte var0, int graphicId) {
+   static GraphicDefinition getGraphicDefinition(byte var0, int graphicId) {
       try {
          GraphicDefinition def = (GraphicDefinition)Class3_Sub31.aClass93_2604.get((long)graphicId);
          if(def == null) {
@@ -98,7 +98,7 @@ final class RenderAnimationDefinition {
       }
    }
 
-   static final void method900(Class140_Sub4 var0, int var1) {
+   static void method900(Class140_Sub4 var0, int var1) {
       try {
          var0.aBoolean2810 = false;
          AnimationDefinition var2;
@@ -289,7 +289,7 @@ final class RenderAnimationDefinition {
       }
    }
 
-   private final void parseOpcode(int var1, RSByteBuffer var3) {
+   private void parseOpcode(int var1, RSByteBuffer var3) {
       try {
          if(var1 == 1) {
             this.anInt368 = var3.getShort(1);
@@ -376,7 +376,7 @@ final class RenderAnimationDefinition {
       }
    }
 
-   static final RSString method903(RSString[] var0, byte var1) {
+   static RSString method903(RSString[] var0, byte var1) {
       try {
          if(var0.length >= 2) {
             if(var1 >= -57) {

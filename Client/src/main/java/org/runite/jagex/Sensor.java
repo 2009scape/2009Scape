@@ -7,7 +7,7 @@ import java.awt.image.BufferedImage;
 
 class Sensor {
 
-   private Robot aRobot1732 = new Robot();
+   private final Robot aRobot1732 = new Robot();
    private Component aComponent1733;
 
 

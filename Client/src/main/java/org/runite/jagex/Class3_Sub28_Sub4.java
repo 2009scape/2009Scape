@@ -104,7 +104,7 @@ final class Class3_Sub28_Sub4 extends Node {
       }
    }
 
-   static final void method551(int var1, int var2) {
+   static void method551(int var1, int var2) {
       try {
          if(0 == 0) {
             if(4 == var2 && !Class128.aBoolean1685) {
@@ -150,7 +150,7 @@ final class Class3_Sub28_Sub4 extends Node {
       }
    }
 
-   private final void method553(RSByteBuffer var1, int var2) {
+   private void method553(RSByteBuffer var1, int var2) {
       try {
          if(-14637 != -14637) {
             this.method548(-20);

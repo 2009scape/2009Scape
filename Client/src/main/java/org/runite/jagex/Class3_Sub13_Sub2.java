@@ -20,7 +20,7 @@ final class Class3_Sub13_Sub2 extends Class3_Sub13 {
          }
 
          if(!var3) {
-            ;//aClass94_3042 = (RSString)null;
+            //aClass94_3042 = (RSString)null;
          }
 
       } catch (RuntimeException var5) {
@@ -32,7 +32,6 @@ final class Class3_Sub13_Sub2 extends Class3_Sub13 {
       try {
          anIntArray3045 = null;
          if(var0 == 11597) {
-         ;
          }
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "aj.B(" + var0 + ')');
@@ -95,7 +94,7 @@ final class Class3_Sub13_Sub2 extends Class3_Sub13 {
       }
    }
 
-   static final int method173(byte var0, int var1, RSInterface var2) {
+   static int method173(byte var0, int var1, RSInterface var2) {
       try {
          if(var0 < 4) {
             method176(-50);
@@ -107,7 +106,7 @@ final class Class3_Sub13_Sub2 extends Class3_Sub13 {
       }
    }
 
-   static final void method174() {
+   static void method174() {
       try {
          Class163_Sub2_Sub1.aClass93_4015.method1522(-127, 5);
          if(4096 != 4096) {
@@ -119,7 +118,7 @@ final class Class3_Sub13_Sub2 extends Class3_Sub13 {
       }
    }
 
-   static final void method175(int var0, int var1, int var2, int var4, int var5, int var6) {
+   static void method175(int var0, int var1, int var2, int var4, int var5, int var6) {
       try {
          MouseListeningClass.method2091(var5);
          int var8 = var5 - var1;
@@ -219,7 +218,7 @@ final class Class3_Sub13_Sub2 extends Class3_Sub13 {
       super(1, false);
    }
 
-   static final void method176(int var0) {
+   static void method176(int var0) {
       try {
          int var1 = 0;
          if(var0 >= -111) {

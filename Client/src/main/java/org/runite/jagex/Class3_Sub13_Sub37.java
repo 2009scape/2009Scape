@@ -27,7 +27,7 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
       }
    }
 
-   private final void method345(int var1) {
+   private void method345(int var1) {
       try {
          if(var1 != 0) {
             if(var1 == 1) {
@@ -259,7 +259,7 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
       }
    }
 
-   private final void method346() {
+   private void method346() {
       try {
          if(114 <= 95) {
             method350((byte)-28, -113);
@@ -332,7 +332,7 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
       }
    }
 
-   static final void method347() {
+   static void method347() {
       try {
          WorldListEntry.inTutorialIsland = 0;
          if(!true) {
@@ -405,7 +405,7 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
       }
    }
 
-   static final boolean method349(int var0, int var1, int var2) {
+   static boolean method349(int var0, int var1, int var2) {
       for(int var3 = 0; var3 < Class126.anInt1672; ++var3) {
          Class113 var4 = Class145.aClass113Array1895[var3];
          int var5;
@@ -474,7 +474,7 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
       return false;
    }
 
-   static final Class168 method350(byte var0, int var1) {
+   static Class168 method350(byte var0, int var1) {
       try {
          Class168 var2 = (Class168)Class163_Sub2_Sub1.aClass93_4015.get((long)var1);
          if(null == var2) {

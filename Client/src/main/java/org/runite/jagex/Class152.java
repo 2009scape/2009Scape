@@ -5,13 +5,13 @@ package org.runite.jagex;
 
 final class Class152
 {
-    private int anInt1937;
-    private int anInt1938;
-    private int anInt1939 = Class3_Sub14.method368(16);
-    private int anInt1940;
-    private int anInt1941;
-    private int[] anIntArray1942;
-    private int anInt1943;
+    private final int anInt1937;
+    private final int anInt1938;
+    private final int anInt1939 = Class3_Sub14.method368(16);
+    private final int anInt1940;
+    private final int anInt1941;
+    private final int[] anIntArray1942;
+    private final int anInt1943;
     
     Class152() {
 	anInt1938 = Class3_Sub14.method368(24);

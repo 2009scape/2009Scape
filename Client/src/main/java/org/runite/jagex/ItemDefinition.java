@@ -101,19 +101,18 @@ final class ItemDefinition {
 		}
 	}
 
-	static final void method1103(CacheIndex var0, CacheIndex var1, boolean var2) {
+	static void method1103(CacheIndex var0, CacheIndex var1, boolean var2) {
 		try {
 			Class3_Sub13_Sub14.aClass153_3173 = var0;
 			Class29.aClass153_557 = var1;
 			if(!var2) {
-				;
 			}
 		} catch (RuntimeException var4) {
 			throw Class44.clientError(var4, "h.B(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
 		}
 	}
 
-	static final void method1104(byte byte0, int i, CS2Script script)
+	static void method1104(byte byte0, int i, CS2Script script)
 	{
 		try {
 			Object aobj[] = script.arguments;
@@ -3872,7 +3871,7 @@ final class ItemDefinition {
 	}
 
 
-	private final RSString method1105(int var1, RSString var2, int var3) {
+	private RSString method1105(int var1, RSString var2, int var3) {
 		try {
 			if(this.aClass130_798 == null) {
 				return var2;
@@ -3912,7 +3911,7 @@ final class ItemDefinition {
 		}
 	}
 
-	static final WorldListEntry method1107(int var0) {
+	static WorldListEntry method1107(int var0) {
 		try {
 			if(Class3_Sub13_Sub16.aClass44_Sub1Array3201.length > Class3_Sub6.anInt2291) {
 				return Class3_Sub13_Sub16.aClass44_Sub1Array3201[Class3_Sub6.anInt2291++];
@@ -4127,7 +4126,7 @@ final class ItemDefinition {
 		}
 	}
 
-	private final void parseOpcode(RSByteBuffer buffer, int opcode) {
+	private void parseOpcode(RSByteBuffer buffer, int opcode) {
 		try {
 			int var4 = -118 % (((byte) -72 - 48) / 61);
 			if(opcode == 1) {
@@ -4438,7 +4437,7 @@ final class ItemDefinition {
 		}
 	}
 
-	static final void method1119(Component var0, boolean var1) {
+	static void method1119(Component var0, boolean var1) {
 		try {
 			var0.addMouseListener(Class3_Sub28_Sub7_Sub1.aClass149_4047);
 			if(var1) {

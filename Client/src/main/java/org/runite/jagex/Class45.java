@@ -12,7 +12,7 @@ final class Class45 {
 	static Class3_Sub28_Sub16 aClass3_Sub28_Sub16_736;
 
 
-	static final void parsePlayerMask(int var0, int var1, Player var3) {
+	static void parsePlayerMask(int var0, int var1, Player var3) {
 		try {
 			int var4;
 			int chatIcon;
@@ -228,7 +228,7 @@ final class Class45 {
 		}
 	}
 
-	static final void method1082(byte[] var0, int var1) {
+	static void method1082(byte[] var0, int var1) {
 		try {
 			RSByteBuffer var2 = new RSByteBuffer(var0);
 			var2.index = -2 + var0.length;
@@ -326,7 +326,7 @@ final class Class45 {
 		}
 	}
 
-	static final void method1083(byte var0) {
+	static void method1083(byte var0) {
 		try {
 			Class3_Sub13_Sub9.anIntArray3107 = InputStream_Sub1.method62();
 			int var1 = -5 / ((var0 - 45) / 59);
@@ -335,7 +335,7 @@ final class Class45 {
 		}
 	}
 
-	static final void method1084(Node var0, Node var1) {
+	static void method1084(Node var0, Node var1) {
 		try {
 			if(var1.aClass3_Sub28_2570 != null) {
 				var1.method524();

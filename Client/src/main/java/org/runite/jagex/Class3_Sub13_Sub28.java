@@ -4,7 +4,7 @@ final class Class3_Sub13_Sub28 extends Class3_Sub13 {
 
    static Class3_Sub11[][] aClass3_Sub11ArrayArray3346;
    private int anInt3347 = 3216;
-   private int[] anIntArray3348 = new int[3];
+   private final int[] anIntArray3348 = new int[3];
    static short[] aShortArray3349 = new short[]{(short)-10304, (short)9104, (short)-1, (short)-1, (short)-1};
    private int anInt3350 = 4096;
    static int anInt3351;
@@ -43,7 +43,7 @@ final class Class3_Sub13_Sub28 extends Class3_Sub13 {
       }
    }
 
-   static final int method301(byte var0) {
+   static int method301(byte var0) {
       try {
          //int var1 = -47 / ((45 - var0) / 57);
          return Class3_Sub13_Sub33.anInt3398;
@@ -114,7 +114,7 @@ final class Class3_Sub13_Sub28 extends Class3_Sub13 {
       }
    }
 
-   static final void method302(int var0) {
+   static void method302(int var0) {
       try {
          if(var0 != 2) {
             method301((byte)56);
@@ -158,7 +158,7 @@ final class Class3_Sub13_Sub28 extends Class3_Sub13 {
       }
    }
 
-   private final void method303() {
+   private void method303() {
       try {
          double var2 = Math.cos((double)((float)this.anInt3354 / 4096.0F));
          this.anIntArray3348[0] = (int)(4096.0D * var2 * Math.sin((double)((float)this.anInt3347 / 4096.0F)));

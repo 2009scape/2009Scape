@@ -251,7 +251,7 @@ final class RSInterface {
       }
    }
 
-   static final RSString method856() {
+   static RSString method856() {
       try {
          if(!true) {
             method869(127, -68);
@@ -605,7 +605,7 @@ final class RSInterface {
       }
    }
 
-   static final int method861(int var0, int var1, int var2) {
+   static int method861(int var0, int var1, int var2) {
       try {
          Class3_Sub25 var3 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var0, 0);
          return null == var3?-1:(0 <= var2 && var2 < var3.anIntArray2547.length?(var1 < 39?-69:var3.anIntArray2547[var2]):-1);
@@ -614,7 +614,7 @@ final class RSInterface {
       }
    }
 
-   private final Object[] method862(int var1, RSByteBuffer var2) {
+   private Object[] method862(int var1, RSByteBuffer var2) {
       try {
          if(var1 == -65536) {
             int var3 = var2.getByte((byte)-103);
@@ -643,7 +643,7 @@ final class RSInterface {
       }
    }
 
-   private final int[] method863(RSByteBuffer var1) {
+   private int[] method863(RSByteBuffer var1) {
       try {
          int var3 = var1.getByte((byte)-125);
          if(var3 == 0) {
@@ -1089,7 +1089,7 @@ final class RSInterface {
       }
    }
 
-   static final int method869(int var0, int var1) {
+   static int method869(int var0, int var1) {
       try {
          return var1 != 16711935 ?(var0 < 97?-63:Class56.method1186(var1)):-1;
       } catch (RuntimeException var3) {

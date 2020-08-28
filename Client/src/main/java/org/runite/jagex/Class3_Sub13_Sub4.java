@@ -20,7 +20,7 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
    int anInt3067 = 0;
 
 
-   static final boolean method185(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
+   static boolean method185(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
       if(var1 < var2 && var1 < var3 && var1 < var4) {
          return false;
       } else if(var1 > var2 && var1 > var3 && var1 > var4) {
@@ -186,7 +186,7 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
       }
    }
 
-   static final void method188(int var0, int var1) {
+   static void method188(int var0, int var1) {
       try {
          if(var1 != 0) {
             method188(38, 29);
@@ -198,7 +198,7 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
       }
    }
 
-   static final void method189() {
+   static void method189() {
       try {
          int var2 = -18 / ((28 - (byte) -62) / 32);
 
@@ -270,7 +270,7 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
       }
    }
 
-   static final int method190(int var0, int var1, byte var2, int var3) {
+   static int method190(int var0, int var1, byte var2, int var3) {
       try {
          int var4 = -42 % ((-14 - var2) / 60);
          int var5 = Class51.anIntArray834[Class140_Sub1_Sub2.method1940(var1, var3)];
@@ -325,7 +325,7 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
       }
    }
 
-   private final void method191() {
+   private void method191() {
       try {
          int var2;
          if(this.anInt3062 <= 0) {
@@ -355,7 +355,7 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
       }
    }
 
-   private final int method192(int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
+   private int method192(int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
       try {
          if(var5 < 117) {
             this.method158(89);
@@ -411,7 +411,7 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
       }
    }
 
-   static final void method193(byte var0, Component var1) {
+   static void method193(byte var0, Component var1) {
       try {
          if(var0 < 49) {
             worldListOffset = 85;
@@ -422,7 +422,6 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
             try {
                var2.invoke(var1, new Object[]{Boolean.FALSE});
             } catch (Throwable var4) {
-               ;
             }
          }
 

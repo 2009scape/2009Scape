@@ -14,7 +14,7 @@ final class HDIndexedSprite extends AbstractIndexedSprite {
    private int anInt2681;
 
 
-   private final void method1678(byte[] var1, int[] var2) {
+   private void method1678(byte[] var1, int[] var2) {
       this.anInt2681 = Class95.method1585((byte)62, this.anInt1461);
       this.anInt2680 = Class95.method1585((byte)99, this.anInt1468);
       byte[] var3 = new byte[this.anInt2681 * this.anInt2680 * 4];
@@ -68,7 +68,7 @@ final class HDIndexedSprite extends AbstractIndexedSprite {
       var4.glLoadIdentity();
    }
 
-   private final void method1679() {
+   private void method1679() {
       if(this.anInt2677 != 1) {
          this.anInt2677 = 1;
          javax.media.opengl.GL var2 = HDToolKit.gl;
@@ -110,7 +110,7 @@ final class HDIndexedSprite extends AbstractIndexedSprite {
       super.finalize();
    }
 
-   private final void method1680() {
+   private void method1680() {
       float var1 = (float)this.anInt1461 / (float)this.anInt2681;
       float var2 = (float)this.anInt1468 / (float)this.anInt2680;
       javax.media.opengl.GL var3 = HDToolKit.gl;

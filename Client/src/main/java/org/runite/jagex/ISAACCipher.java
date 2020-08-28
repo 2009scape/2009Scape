@@ -14,7 +14,7 @@ final class ISAACCipher {
    private int anInt972;
 
 
-   private final void method1227() {
+   private void method1227() {
       try {
          if(!true) {
             this.method1229(82);
@@ -167,7 +167,7 @@ final class ISAACCipher {
       }
    }
 
-   private final void method1229(int var1) {
+   private void method1229(int var1) {
       try {
          this.anInt967 += ++this.anInt966;
          int var2 = 0;
@@ -201,7 +201,7 @@ final class ISAACCipher {
       }
    }
 
-   static final void method1230(byte var0) {
+   static void method1230(byte var0) {
       try {
          int var1 = AbstractIndexedSprite.anInt1462;
          int var2 = Class3_Sub13_Sub33.anInt3395;
@@ -337,7 +337,7 @@ final class ISAACCipher {
       }
    }
 
-   static final int method1232(NPC var0, int var1) {
+   static int method1232(NPC var0, int var1) {
       try {
          if(var1 == -1) {
             NPCDefinition var2 = var0.definition;

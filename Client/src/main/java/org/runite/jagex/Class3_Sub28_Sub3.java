@@ -74,7 +74,7 @@ final class Class3_Sub28_Sub3 extends Node {
       }
    }
 
-   static final void method539(int var0) {
+   static void method539(int var0) {
       try {
          if(var0 != 0) {
             method542((byte)73);
@@ -86,7 +86,7 @@ final class Class3_Sub28_Sub3 extends Node {
       }
    }
 
-   static final int method540(int var0, int var2) {
+   static int method540(int var0, int var2) {
       try {
          if(-14314 == -14314) {
             int var3;
@@ -104,7 +104,7 @@ final class Class3_Sub28_Sub3 extends Node {
       }
    }
 
-   static final void method541(boolean var1, RSString var2) {
+   static void method541(boolean var1, RSString var2) {
       try {
          var2 = var2.method1534(-98);
          int var4 = 0;
@@ -163,7 +163,7 @@ final class Class3_Sub28_Sub3 extends Node {
       }
    }
 
-   static final int method543(int var0, int var1, byte var2) {
+   static int method543(int var0, int var1, byte var2) {
       try {
          if(var2 > -71) {
             return -52;
@@ -178,7 +178,7 @@ final class Class3_Sub28_Sub3 extends Node {
       }
    }
 
-   static final boolean method544(int var0, int var1) {
+   static boolean method544(int var0, int var1) {
       try {
          return var0 != -49 || var1 >= 48 && 57 >= var1;
       } catch (RuntimeException var3) {

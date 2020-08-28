@@ -10,7 +10,7 @@ final class Class3_Sub25 extends Class3 {
    static Class129 aClass129_2552;
 
 
-   static final void method509(int var1) {
+   static void method509(int var1) {
       try {
          --Class3_Sub13_Sub34.anInt3415;
          if(Class3_Sub13_Sub34.anInt3415 != var1) {

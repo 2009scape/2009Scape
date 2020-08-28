@@ -12,7 +12,7 @@ final class Class50 {
 	int anInt831;
 
 
-	static final void method1131(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
+	static void method1131(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
 		try {
 			if(var6 >= 0 && 0 <= var4 && var6 < 103 && 103 > var4) {
 				int var9;
@@ -74,7 +74,7 @@ final class Class50 {
 		}
 	}
 
-	static final void method1132(int var0) {
+	static void method1132(int var0) {
 		try {
 			Class128.aClass93_1683.method1523((byte)-111);
 			if(var0 != 103) {

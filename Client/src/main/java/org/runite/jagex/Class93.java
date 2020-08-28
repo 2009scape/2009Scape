@@ -6,7 +6,7 @@ final class Class93 {
    static RSString aClass94_1326 = RSString.createRSString(")2");
    private int anInt1327;
    static byte[][][] aByteArrayArrayArray1328;
-   private NodeList aClass13_1329 = new NodeList();
+   private final NodeList aClass13_1329 = new NodeList();
    static int anInt1330;
    private int anInt1331;
    private Class130 aClass130_1332;
@@ -36,7 +36,7 @@ final class Class93 {
       }
    }
 
-   static final void method1516(int var0, int var1) {
+   static void method1516(int var0, int var1) {
       try {
          Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 3, var0);
          var2.a(true);
@@ -63,7 +63,7 @@ final class Class93 {
       }
    }**/
    
-   static final void method1517() {
+   static void method1517() {
 	      try {
 	         Class139.aFontMetrics1822 = null;
 	         if((byte) -118 != -118) {
@@ -199,7 +199,6 @@ final class Class93 {
 
          int var2;
          for(var2 = 1; var2 + var2 < var1; var2 += var2) {
-            ;
          }
 
          this.anInt1327 = var1;
@@ -209,7 +208,7 @@ final class Class93 {
       }
    }
 
-   static final void method1525(int var1, int var2, int var3, int var4, int var5) {
+   static void method1525(int var1, int var2, int var3, int var4, int var5) {
       try {
          int var6 = Class40.method1040(Class57.anInt902, var3, Class159.anInt2020);
          int var7 = Class40.method1040(Class57.anInt902, var5, Class159.anInt2020);

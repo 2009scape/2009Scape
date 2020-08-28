@@ -15,7 +15,7 @@ final class Class131 {
    static int[] anIntArray1729 = new int[]{12543016, 15504954, 15914854, 16773818};
    byte[] aByteArray1730;
 
-   static final void addLocalPlayers() {
+   static void addLocalPlayers() {
       try {
          while(true) {
             if(GraphicDefinition.incomingBuffer.method815(Class130.incomingPacketLength, 32666) >= 11) {
@@ -83,7 +83,7 @@ final class Class131 {
       }
    }
 
-   static final int method1788(int var0, int var1, int var2, int var3, boolean var4) {
+   static int method1788(int var0, int var1, int var2, int var3, boolean var4) {
       try {
          if(var4) {
             int var5 = 15 & var3;
@@ -110,7 +110,7 @@ final class Class131 {
       }
    }
 
-   static final void method1790(int var0, int var1, int var2) {
+   static void method1790(int var0, int var1, int var2) {
       try {
          Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(4, 5, var0);
          var3.g();
@@ -140,7 +140,7 @@ final class Class131 {
       }
    }
 
-   static final void method1793(RSString var0, RSString var1, int var2, byte var3) {
+   static void method1793(RSString var0, RSString var1, int var2, byte var3) {
       try {
          Class3_Sub28_Sub14.password = var1;
          Class7.anInt2161 = var2;

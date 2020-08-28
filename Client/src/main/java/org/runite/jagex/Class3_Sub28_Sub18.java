@@ -8,7 +8,7 @@ final class Class3_Sub28_Sub18 extends Node {
 
    static int anInt3757;
    private int anInt3759 = -1;
-   private int anInt3760;
+   private final int anInt3760;
    static int anInt3764;
    static int anInt3765 = 100;
    static int anInt3766 = 0;
@@ -31,7 +31,7 @@ final class Class3_Sub28_Sub18 extends Node {
       }
    }
 
-   static final void method709(int var0, int var1) {
+   static void method709(int var0, int var1) {
       Class3_Sub2 var2 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[0][var0][var1];
 
       for(int var3 = 0; var3 < 3; ++var3) {
@@ -56,7 +56,7 @@ final class Class3_Sub28_Sub18 extends Node {
       Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[3][var0][var1] = null;
    }
 
-   static final void method710() {
+   static void method710() {
       try {
          if((byte) 126 >= 122) {
             Class44.aClass93_725.method1523((byte)-104);
@@ -93,7 +93,7 @@ final class Class3_Sub28_Sub18 extends Node {
       }
    }
 
-   static final void method713() {
+   static void method713() {
       try {
          try {
             Method var1 = Runtime.class.getMethod("maxMemory", new Class[0]);
@@ -103,11 +103,9 @@ final class Class3_Sub28_Sub18 extends Node {
                   Long var3 = (Long)var1.invoke(var2, (Object[])null);
                   Class3_Sub24_Sub3.anInt3492 = (int)(var3.longValue() / 1048576L) - -1;
                } catch (Throwable var4) {
-                  ;
                }
             }
          } catch (Exception var5) {
-            ;
          }
 
       } catch (RuntimeException var6) {

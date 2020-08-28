@@ -5,9 +5,9 @@ import javax.media.opengl.GL;
 final class Class156 {
 
    private int anInt1991;
-   private int anInt1992;
+   private final int anInt1992;
    private int anInt1993;
-   private boolean aBoolean1994;
+   private final boolean aBoolean1994;
 
 
    final void method2168(ByteBuffer var1) {

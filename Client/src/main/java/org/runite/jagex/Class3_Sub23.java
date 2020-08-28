@@ -32,7 +32,7 @@ final class Class3_Sub23 extends Class3 {
       }
    }
 
-   static final void method406(byte var0, boolean var1, Class3_Sub28_Sub17 var2) {
+   static void method406(byte var0, boolean var1, Class3_Sub28_Sub17 var2) {
       try {
          int var3;
          if(HDToolKit.highDetail || var1) {
@@ -65,7 +65,7 @@ final class Class3_Sub23 extends Class3 {
       }
    }
 
-   static final RSString method407(int var0, boolean var1, int var2, long var3) {
+   static RSString method407(int var0, boolean var1, int var2, long var3) {
       try {
          RSString var6 = Class47.method1090((byte)-99, 0);
          if(var3 < 0) {
@@ -130,7 +130,7 @@ final class Class3_Sub23 extends Class3 {
       }
    }
 
-   static final int method408(int var0, byte var1, int var2, int[][] var3, int var4, int var5) {
+   static int method408(int var0, byte var1, int var2, int[][] var3, int var4, int var5) {
       try {
          int var6 = var0 * var3[1 + var4][var2] + (128 - var0) * var3[var4][var2] >> 7;
          int var7 = var3[var4][1 + var2] * (-var0 + 128) + var3[var4 - -1][var2 - -1] * var0 >> 7;

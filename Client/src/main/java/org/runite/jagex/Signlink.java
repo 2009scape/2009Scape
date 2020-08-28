@@ -24,7 +24,7 @@ public class Signlink implements Runnable {
    public Class122[] aClass122Array1197;
    public Class122 aClass122_1198 = null;
    public EventQueue anEventQueue1199;
-   private Thread aThread1200;
+   private final Thread aThread1200;
    private boolean aBoolean1201 = false;
    public static String osName;
    private Class64 aClass64_1203 = null;
@@ -35,11 +35,11 @@ public class Signlink implements Runnable {
    private Display aDisplay1208;
    private static String homeDirectory;
    public static String osVersion;
-   private static Hashtable aHashtable1211 = new Hashtable(16);
-   private String aString1212;
+   private static final Hashtable aHashtable1211 = new Hashtable(16);
+   private final String aString1212;
    private Class64 aClass64_1213 = null;
    public static int anInt1214 = 1;
-   private int anInt1215;
+   private final int anInt1215;
    public static String javaVendor;
    private Interface1 anInterface1_1217;
    public static String osArchitecture;
@@ -77,7 +77,7 @@ public class Signlink implements Runnable {
       return var2 != 10000?null:this.method1435(17, var6, new Object[]{var4, var1, var5}, var3, -57);
    }
 
-   private final Class64 method1435(int var1, int var2, Object var3, int var4, int var5) {
+   private Class64 method1435(int var1, int var2, Object var3, int var4, int var5) {
       Class64 var6 = new Class64();
       var6.anInt980 = var2;
       var6.anInt979 = var4;
@@ -117,7 +117,7 @@ public class Signlink implements Runnable {
       }
    }
 
-   private static final Class122 method1438(boolean var0, String var1) {
+   private static Class122 method1438(boolean var0, String var1) {
       if(var0) {
          method1438(true, (String)null);
       }
@@ -130,7 +130,6 @@ public class Signlink implements Runnable {
             try {
                return new Class122(new File(var4, "jagex_" + var1 + "_preferences.dat"), "rw", 10000L);
             } catch (Exception var6) {
-               ;
             }
          }
       }
@@ -191,7 +190,6 @@ public class Signlink implements Runnable {
                try {
                   this.wait();
                } catch (InterruptedException var11) {
-                  ;
                }
             }
          }
@@ -414,7 +412,6 @@ public class Signlink implements Runnable {
       try {
          this.aThread1200.join();
       } catch (InterruptedException var8) {
-         ;
       }
 
       if(var1 != 0) {
@@ -425,7 +422,6 @@ public class Signlink implements Runnable {
          try {
             this.aClass122_1198.close(var1 ^ 1);
          } catch (IOException var7) {
-            ;
          }
       }
 
@@ -433,7 +429,6 @@ public class Signlink implements Runnable {
          try {
             this.aClass122_1204.close(1);
          } catch (IOException var6) {
-            ;
          }
       }
 
@@ -443,7 +438,6 @@ public class Signlink implements Runnable {
                try {
                   this.aClass122Array1197[var2].close(var1 ^ 1);
                } catch (IOException var5) {
-                  ;
                }
             }
          }
@@ -453,7 +447,6 @@ public class Signlink implements Runnable {
          try {
             this.aClass122_1207.close(var1 + 1);
          } catch (IOException var4) {
-            ;
          }
       }
 
@@ -475,7 +468,7 @@ public class Signlink implements Runnable {
       return this.method1435(9, 0, new Object[]{var3, var2}, 0, -43);
    }
 
-   public static final File method1448(String var0, int var1, boolean var2, String var3) {
+   public static File method1448(String var0, int var1, boolean var2, String var3) {
       File var4 = (File)aHashtable1211.get(var3);
       if(var4 == null) {
          if(!var2) {
@@ -521,7 +514,6 @@ public class Signlink implements Runnable {
                            var11 = null;
                         }
                      } catch (Exception var15) {
-                        ;
                      }
                   }
                }
@@ -578,7 +570,6 @@ public class Signlink implements Runnable {
          javaVendor = System.getProperty("java.vendor");
          javaVersion = System.getProperty("java.version");
       } catch (Exception var17) {
-         ;
       }
 
       try {
@@ -607,7 +598,6 @@ public class Signlink implements Runnable {
             homeDirectory = homeDirectory + "/";
          }
       } catch (Exception var13) {
-         ;
       }
 
       if(homeDirectory == null) {
@@ -617,7 +607,6 @@ public class Signlink implements Runnable {
       try {
          this.anEventQueue1199 = Toolkit.getDefaultToolkit().getSystemEventQueue();
       } catch (Throwable var12) {
-         ;
       }
 
       try {
@@ -627,7 +616,6 @@ public class Signlink implements Runnable {
             aMethod1222 = var1.getClass().getMethod("setFocusTraversalKeysEnabled", new Class[]{Boolean.TYPE});
          }
       } catch (Exception var11) {
-         ;
       }
 
       try {
@@ -637,7 +625,6 @@ public class Signlink implements Runnable {
             aMethod1220 = var1.getClass().getMethod("setFocusCycleRoot", new Class[]{Boolean.TYPE});
          }
       } catch (Exception var10) {
-         ;
       }
 
       this.aClass122_1207 = new Class122(method1448((String)null, this.anInt1215, true, "random.dat"), "rw", 25L);
@@ -653,13 +640,11 @@ public class Signlink implements Runnable {
          this.aDisplay1208 = new Display();
       } catch (Throwable var9) {
     	  var9.printStackTrace();
-         ;
       }
 
       try {
          this.aSensor1206 = new Sensor();
       } catch (Throwable var8) {
-         ;
       }
 
       ThreadGroup var18 = Thread.currentThread().getThreadGroup();

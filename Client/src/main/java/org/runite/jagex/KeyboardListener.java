@@ -195,7 +195,7 @@ final class KeyboardListener implements KeyListener, FocusListener {
       }
    }
 
-   static final void method2086() {
+   static void method2086() {
       try {
          if((byte) 68 >= 62) {
             int var1 = Class102.player.anInt2819 + Class3_Sub13_Sub18.anInt3216;

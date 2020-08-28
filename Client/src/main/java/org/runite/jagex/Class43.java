@@ -27,7 +27,7 @@ final class Class43 {
    static int anInt716 = 0;
    float[] aFloatArray717 = new float[4];
 
-   static final void method1058(int var0, int var1, int var2, int var3, byte var4) {
+   static void method1058(int var0, int var1, int var2, int var3, byte var4) {
       try {
          int var5 = 25 % ((25 - var4) / 52);
          if(Class101.anInt1425 <= var1 + -var0 && Class3_Sub28_Sub18.anInt3765 >= var0 + var1 && var3 + -var0 >= Class159.anInt2020 && Class57.anInt902 >= var0 + var3) {
@@ -43,7 +43,6 @@ final class Class43 {
 
    public static void method1059(byte var0) {//TODO: Empty check method
       try {
-         ;
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "gi.E(" + var0 + ')');
       }
@@ -61,7 +60,7 @@ final class Class43 {
       }
    }
 
-   private final void method1061() {
+   private void method1061() {
       try {
          int var2 = (this.anInt698 << 7) - -64;
          this.aFloat710 = 1.0F / (float)(var2 * var2);
@@ -71,7 +70,7 @@ final class Class43 {
       }
    }
 
-   static final Class3_Sub28_Sub16 method1062(int var0) {
+   static Class3_Sub28_Sub16 method1062(int var0) {
       try {
          byte[] var2 = Class163_Sub1.aByteArrayArray2987[0];
          int var1 = Class140_Sub7.anIntArray2931[0] * Class3_Sub13_Sub6.anIntArray3076[0];
@@ -135,7 +134,7 @@ final class Class43 {
       }
    }
 
-   private final void method1064() {
+   private void method1064() {
       try {
          int var2 = this.anInt705;
          if(var2 == 2) {
@@ -229,7 +228,7 @@ final class Class43 {
       }
    }
 
-   static final void method1065(int var0, CS2Script var1) {
+   static void method1065(int var0, CS2Script var1) {
       try {
          ItemDefinition.method1104((byte)-93, 200000, var1);
       } catch (RuntimeException var3) {

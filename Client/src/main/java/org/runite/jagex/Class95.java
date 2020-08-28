@@ -29,7 +29,7 @@ final class Class95 {
       }
    }
 
-   static final void method1583(int var0, int var1, int var2, int var4, int var5, int var6, int var7, int var8, int var9) {
+   static void method1583(int var0, int var1, int var2, int var4, int var5, int var6, int var7, int var8, int var9) {
       try {
          if(3 != 3) {
             method1582(45);
@@ -75,7 +75,7 @@ final class Class95 {
       }
    }
 
-   static final void method1584(int var0, int var1, int var2, int var3, int var5) {
+   static void method1584(int var0, int var1, int var2, int var3, int var5) {
       try {
          if(-26571 != -26571) {
             method1586(92, 25);
@@ -93,7 +93,7 @@ final class Class95 {
       }
    }
 
-   static final int method1585(byte var0, int var1) {
+   static int method1585(byte var0, int var1) {
       try {
          --var1;
          var1 |= var1 >>> 1;
@@ -107,7 +107,7 @@ final class Class95 {
       }
    }
 
-   static final RSString method1586(int var0, int var1) {
+   static RSString method1586(int var0, int var1) {
       try {
          if(var1 > 0 && var1 <= 255) {
             RSString var2 = new RSString();

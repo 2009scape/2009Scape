@@ -24,7 +24,7 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
       }
    }
 
-   static final void method304() {
+   static void method304() {
       try {
          if(6799 != 6799) {
             method305((Signlink)null, (RSByteBuffer)null, -13, (byte)41);
@@ -37,7 +37,7 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
       }
    }
 
-   static final void method305(Signlink var0, RSByteBuffer var1, int var2, byte var3) {
+   static void method305(Signlink var0, RSByteBuffer var1, int var2, byte var3) {
       try {
          int var5 = 123 % ((var3 - -66) / 57);
          Class3_Sub8 var4 = new Class3_Sub8();
@@ -118,7 +118,7 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
       }
    }
 
-   static final void method306(int var0, int var2) {
+   static void method306(int var0, int var2) {
       try {
          Class79 var3 = CS2Script.method378(var0, (byte)127);
          int var6 = var3.anInt1125;
@@ -138,7 +138,7 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
       }
    }
 
-   static final void method307(RSString[] var0, short[] var1, int var2) {
+   static void method307(RSString[] var0, short[] var1, int var2) {
       try {
          Class3_Sub8.method127(var1, -1 + var0.length, var0, -909, 0);
          int var3 = 91 % ((var2 - -1) / 63);
@@ -172,7 +172,7 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
       super(0, true);
    }
 
-   static final int method310(int var0, byte var1, int var2, int var3) {
+   static int method310(int var0, byte var1, int var2, int var3) {
       try {
          var0 &= 3;
          if(var0 == 0) {
@@ -189,7 +189,7 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
       }
    }
 
-   static final Class55 method311(int var0) {
+   static Class55 method311(int var0) {
       try {
          Class55 var2 = (Class55)Class41.aClass93_684.get((long)var0);
          if(var2 == null) {

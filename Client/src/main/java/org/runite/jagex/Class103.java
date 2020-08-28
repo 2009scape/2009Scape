@@ -2,14 +2,14 @@ package org.runite.jagex;
 
 final class Class103 {
 
-   private int[][][] anIntArrayArrayArray1430 = new int[2][2][4];
+   private final int[][][] anIntArrayArrayArray1430 = new int[2][2][4];
    private static float[][] aFloatArrayArray1431 = new float[2][8];
-   private int[][][] anIntArrayArrayArray1432 = new int[2][2][4];
+   private final int[][][] anIntArrayArrayArray1432 = new int[2][2][4];
    private static float aFloat1433;
    int[] anIntArray1434 = new int[2];
    static int[][] anIntArrayArray1435 = new int[2][8];
    static int anInt1436;
-   private int[] anIntArray1437 = new int[2];
+   private final int[] anIntArray1437 = new int[2];
 
 
    final void method1620(RSByteBuffer var1, Class34 var2) {
@@ -51,7 +51,7 @@ final class Class103 {
 
    }
 
-   private static final float method1621(float var0) {
+   private static float method1621(float var0) {
       float var1 = 32.703197F * (float)Math.pow(2.0D, (double)var0);
       return var1 * 3.1415927F / 11025.0F;
    }
@@ -107,13 +107,13 @@ final class Class103 {
       anIntArrayArray1435 = (int[][])null;
    }
 
-   private final float method1624(int var1, int var2, float var3) {
+   private float method1624(int var1, int var2, float var3) {
       float var4 = (float)this.anIntArrayArrayArray1432[var1][0][var2] + var3 * (float)(this.anIntArrayArrayArray1432[var1][1][var2] - this.anIntArrayArrayArray1432[var1][0][var2]);
       var4 *= 0.0015258789F;
       return 1.0F - (float)Math.pow(10.0D, (double)(-var4 / 20.0F));
    }
 
-   private final float method1625(int var1, int var2, float var3) {
+   private float method1625(int var1, int var2, float var3) {
       float var4 = (float)this.anIntArrayArrayArray1430[var1][0][var2] + var3 * (float)(this.anIntArrayArrayArray1430[var1][1][var2] - this.anIntArrayArrayArray1430[var1][0][var2]);
       var4 *= 1.2207031E-4F;
       return method1621(var4);

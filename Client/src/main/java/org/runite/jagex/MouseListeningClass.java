@@ -35,7 +35,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	  }
 	  
-	  static final void method2087()
+	  static void method2087()
 	  {
 	    try
 	    {
@@ -104,7 +104,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	  }
 	  
-	  static final void method2089()
+	  static void method2089()
 	  {
 	    try
 	    {
@@ -191,7 +191,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	  
 	  public final void focusGained(FocusEvent var1) {}
 	  
-	  static final void method2090()
+	  static void method2090()
 	  {
 	    try
 	    {
@@ -275,7 +275,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	  }
 	  
-	  static final void method2091(int var0)
+	  static void method2091(int var0)
 	  {
 	    try
 	    {
@@ -309,7 +309,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	  }
 	  
-	  static final void method2092(int var0)
+	  static void method2092(int var0)
 	  {
 	    try
 	    {

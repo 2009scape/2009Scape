@@ -81,7 +81,7 @@ final class Model_Sub1 extends GameObject {
       this.method2007();
    }
 
-   private final void method1992(int var1) {
+   private void method1992(int var1) {
       int var2 = anIntArray2871[var1];
       int var3 = anIntArray2863[var1];
 
@@ -94,7 +94,7 @@ final class Model_Sub1 extends GameObject {
       this.method2007();
    }
 
-   private final void method1993() {
+   private void method1993() {
       if(!this.aBoolean2853) {
          this.aBoolean2853 = true;
          int var1 = 32767;
@@ -156,7 +156,7 @@ final class Model_Sub1 extends GameObject {
       return this.method2008(this.aShort2879, this.aShort2876, var1, var2, var3);
    }
 
-   private final int method1995(Model_Sub1 var1, int var2, short var3) {
+   private int method1995(Model_Sub1 var1, int var2, short var3) {
       int var4 = var1.anIntArray2885[var2];
       int var5 = var1.anIntArray2881[var2];
       int var6 = var1.anIntArray2892[var2];
@@ -179,7 +179,7 @@ final class Model_Sub1 extends GameObject {
       return this.anInt2887++;
    }
 
-   private final void method1996(int[][] var1, int var2, int var3, int var4, int var5, int var6) {
+   private void method1996(int[][] var1, int var2, int var3, int var4, int var5, int var6) {
       boolean var7 = false;
       boolean var8 = false;
       boolean var9 = false;
@@ -518,7 +518,7 @@ final class Model_Sub1 extends GameObject {
       return true;
    }
 
-   private final void method2003(byte[] var1) {
+   private void method2003(byte[] var1) {
       RSByteBuffer var2 = new RSByteBuffer(var1);
       RSByteBuffer var3 = new RSByteBuffer(var1);
       RSByteBuffer var4 = new RSByteBuffer(var1);
@@ -943,7 +943,7 @@ final class Model_Sub1 extends GameObject {
       return this.anInt2849++;
    }
 
-   private final void method2006(int var1) {
+   private void method2006(int var1) {
       int var2 = anIntArray2871[var1];
       int var3 = anIntArray2863[var1];
 
@@ -956,7 +956,7 @@ final class Model_Sub1 extends GameObject {
       this.method2007();
    }
 
-   private final void method2007() {
+   private void method2007() {
       this.aClass50Array2872 = null;
       this.aClass50Array2883 = null;
       this.aClass120Array2886 = null;
@@ -973,7 +973,7 @@ final class Model_Sub1 extends GameObject {
       }
    }
 
-   private static final int method2009(int[][] var0, int var1, int var2) {
+   private static int method2009(int[][] var0, int var1, int var2) {
       int var3 = var1 >> 7;
       int var4 = var2 >> 7;
       if(var3 >= 0 && var4 >= 0 && var3 < var0.length && var4 < var0[0].length) {
@@ -1210,7 +1210,7 @@ final class Model_Sub1 extends GameObject {
       return this.anInt2887++;
    }
 
-   static final Model_Sub1 method2015(CacheIndex var0, int var1) {
+   static Model_Sub1 method2015(CacheIndex var0, int var1) {
       byte[] var3 = var0.getFile(var1, 0);
       return var3 == null?null:new Model_Sub1(var3);
    }
@@ -1224,7 +1224,7 @@ final class Model_Sub1 extends GameObject {
 
    }
 
-   private final void method2017(byte[] var1) {
+   private void method2017(byte[] var1) {
       boolean var2 = false;
       boolean var3 = false;
       RSByteBuffer var4 = new RSByteBuffer(var1);
@@ -1627,11 +1627,9 @@ final class Model_Sub1 extends GameObject {
       }
 
       if(var9 > 0) {
-         ;
       }
 
       if(var10 > 0) {
-         ;
       }
 
       this.aShortArray2870 = new short[this.anInt2849];

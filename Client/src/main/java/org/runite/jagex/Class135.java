@@ -3,11 +3,11 @@ package org.runite.jagex;
 final class Class135 {
 
    private int anInt1767;
-   private Class116[] aClass116Array1768 = new Class116[10];
+   private final Class116[] aClass116Array1768 = new Class116[10];
    private int anInt1769;
 
 
-   private final byte[] method1810() {
+   private byte[] method1810() {
       int var1 = 0;
 
       int var2;
@@ -44,7 +44,7 @@ final class Class135 {
       }
    }
 
-   static final Class135 method1811(CacheIndex var0, int var1, int var2) {
+   static Class135 method1811(CacheIndex var0, int var1, int var2) {
       byte[] var3 = var0.getFile(var1, var2);
       return var3 == null?null:new Class135(new RSByteBuffer(var3));
    }

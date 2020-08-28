@@ -12,11 +12,11 @@ final class Class22 {
    static int anInt451 = 0;
 
 
-   static final void method921() {
+   static void method921() {
       aClass3_Sub28_Sub16_Sub1_447 = null;
    }
 
-   static final void method922(int var0, int var1, int var2, int var3) {
+   static void method922(int var0, int var1, int var2, int var3) {
       HDToolKit.method1835();
       float var4 = (float)var0 + 0.3F;
       float var5 = var4 + (float)var2;
@@ -33,7 +33,7 @@ final class Class22 {
       aClass3_Sub28_Sub16_Sub1_447 = null;
    }
 
-   static final void method924(int var0, int var1, int var2, int var3) {
+   static void method924(int var0, int var1, int var2, int var3) {
       HDToolKit.method1835();
       float var4 = (float)var0 + 0.3F;
       float var5 = (float)HDToolKit.anInt1811 - ((float)var1 + 0.3F);
@@ -46,7 +46,7 @@ final class Class22 {
       var7.glEnd();
    }
 
-   static final void method925() {
+   static void method925() {
       anInt449 = 0;
       anInt448 = 0;
       anInt450 = HDToolKit.anInt1820;
@@ -56,7 +56,7 @@ final class Class22 {
       method921();
    }
 
-   static final void method926(int[] var0, int var1, int var2, int var3, int var4) {
+   static void method926(int[] var0, int var1, int var2, int var3, int var4) {
       HDToolKit.method1835();
       javax.media.opengl.GL var5 = HDToolKit.gl;
       var5.glRasterPos2i(var1, HDToolKit.anInt1811 - var2);
@@ -69,7 +69,7 @@ final class Class22 {
       var5.glPixelZoom(1.0F, 1.0F);
    }
 
-   static final void method927(int var0, int var1, int var2, int var3, int var4) {
+   static void method927(int var0, int var1, int var2, int var3, int var4) {
       HDToolKit.method1835();
       float var5 = (float)var0 + 0.3F;
       float var6 = var5 + (float)(var2 - 1);
@@ -85,7 +85,7 @@ final class Class22 {
       var9.glEnd();
    }
 
-   static final void method928(int var0, int var1, int var2, int var3, int var4, int var5) {
+   static void method928(int var0, int var1, int var2, int var3, int var4, int var5) {
       HDToolKit.method1835();
       float var6 = (float)var0 + 0.3F;
       float var7 = var6 + (float)(var2 - 1);
@@ -101,7 +101,7 @@ final class Class22 {
       var10.glEnd();
    }
 
-   static final void method929(int var0, int var1, int var2, int var3, int var4, int var5) {
+   static void method929(int var0, int var1, int var2, int var3, int var4, int var5) {
       int var6 = var2 - var0;
       int var7 = var3 - var1;
       int var8 = var6 >= 0?var6:-var6;
@@ -152,7 +152,7 @@ final class Class22 {
       }
    }
 
-   static final void method930(int var0, int var1, int var2, int var3, int var4, int var5) {
+   static void method930(int var0, int var1, int var2, int var3, int var4, int var5) {
       HDToolKit.method1835();
       float var6 = (float)var0;
       float var7 = var6 + (float)var2;
@@ -168,7 +168,7 @@ final class Class22 {
       var10.glEnd();
    }
 
-   static final void method931(int var0, int var1, int var2, int var3) {
+   static void method931(int var0, int var1, int var2, int var3) {
       if(anInt449 < var0) {
          anInt449 = var0;
       }
@@ -196,11 +196,11 @@ final class Class22 {
       method921();
    }
 
-   static final void method932() {
+   static void method932() {
       HDToolKit.gl.glClear(16640);
    }
 
-   static final void method933(int var0, int var1, int var2, int var3, int var4) {
+   static void method933(int var0, int var1, int var2, int var3, int var4) {
       HDToolKit.method1835();
       float var5 = (float)var0 + 0.3F;
       float var6 = (float)var2 + 0.3F;
@@ -214,7 +214,7 @@ final class Class22 {
       var9.glEnd();
    }
 
-   static final void method934(int var0, int var1, int var2, int var3, int var4) {
+   static void method934(int var0, int var1, int var2, int var3, int var4) {
       HDToolKit.method1835();
       float var5 = (float)var0;
       float var6 = var5 + (float)var2;
@@ -230,7 +230,7 @@ final class Class22 {
       var9.glEnd();
    }
 
-   static final void method935(int var0, int var1, int var2, int var3) {
+   static void method935(int var0, int var1, int var2, int var3) {
       if(var0 < 0) {
          var0 = 0;
       }
@@ -262,7 +262,7 @@ final class Class22 {
       method921();
    }
 
-   static final void method936(Class3_Sub28_Sub16_Sub1 var0) {
+   static void method936(Class3_Sub28_Sub16_Sub1 var0) {
       if(var0.anInt3696 == anInt451 - anInt448) {
          aClass3_Sub28_Sub16_Sub1_447 = var0;
       } else {

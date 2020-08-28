@@ -11,7 +11,7 @@ final class WorldListEntry extends Class44 {
    static Class155 aClass155_2627;
 
 
-   static final void method1076() {
+   static void method1076() {
       try {
          Class154.aClass93_1964.method1524();
          int var1 = -86 % ((88 - -55) / 41);
@@ -40,7 +40,7 @@ final class WorldListEntry extends Class44 {
       }
    }
 
-   static final int method1079(int var0) {
+   static int method1079(int var0) {
       try {
          if(0 > var0) {
             return 0;

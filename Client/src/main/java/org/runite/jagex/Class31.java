@@ -16,7 +16,7 @@ final class Class31 {
    private static int[] anIntArray589 = new int[1000];
 
 
-   static final synchronized void method985(int var0, int var1, int var2) {
+   static synchronized void method985(int var0, int var1, int var2) {
       if(var2 == anInt582) {
          Class3_Sub18 var3 = new Class3_Sub18(var1);
          var3.aLong71 = (long)var0;
@@ -24,7 +24,7 @@ final class Class31 {
       }
    }
 
-   static final synchronized void method986(int var0, int var1) {
+   static synchronized void method986(int var0, int var1) {
       if(var1 == anInt582) {
          Class3_Sub18 var2 = new Class3_Sub18();
          var2.aLong71 = (long)var0;
@@ -40,7 +40,7 @@ final class Class31 {
       anIntArray589 = null;
    }
 
-   static final synchronized void method988() {
+   static synchronized void method988() {
       ++anInt582;
       aClass61_581.method1211(-110);
       aClass61_586.method1211(-88);
@@ -51,7 +51,7 @@ final class Class31 {
       anInt580 = 0;
    }
 
-   static final synchronized void method989(int var0, int var1, int var2) {
+   static synchronized void method989(int var0, int var1, int var2) {
       if(var2 == anInt582) {
          Class3_Sub18 var3 = new Class3_Sub18(var1);
          var3.aLong71 = (long)var0;
@@ -59,7 +59,7 @@ final class Class31 {
       }
    }
 
-   static final synchronized void method990() {
+   static synchronized void method990() {
       GL var0 = HDToolKit.gl;
       int var1 = 0;
 
@@ -125,7 +125,7 @@ final class Class31 {
       }
    }
 
-   static final synchronized void method991(int var0, int var1, int var2) {
+   static synchronized void method991(int var0, int var1, int var2) {
       if(var2 == anInt582) {
          Class3_Sub18 var3 = new Class3_Sub18(var1);
          var3.aLong71 = (long)var0;

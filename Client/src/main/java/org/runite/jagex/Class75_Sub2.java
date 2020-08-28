@@ -2,7 +2,7 @@ package org.runite.jagex;
 
 final class Class75_Sub2 extends Class75 {
 
-   private int anInt2636;
+   private final int anInt2636;
    static Class33 aClass33_2637;
    static Class3_Sub2[][][] aClass3_Sub2ArrayArrayArray2638;
    static int[] anIntArray2639;
@@ -11,8 +11,8 @@ final class Class75_Sub2 extends Class75 {
    static int anInt2643;
    private int anInt2644;
    static CacheIndex aClass153_2645;
-   private int anInt2646;
-   private int anInt2647;
+   private final int anInt2646;
+   private final int anInt2647;
    static Class33 aClass33_2648;
 
 
@@ -30,7 +30,7 @@ final class Class75_Sub2 extends Class75 {
       }
    }
 
-   static final Class3_Sub28_Sub16 method1344(int var0, CacheIndex var1, int var2) {
+   static Class3_Sub28_Sub16 method1344(int var0, CacheIndex var1, int var2) {
       try {
          if(var0 < 29) {
             aClass3_Sub2ArrayArrayArray2638 = (Class3_Sub2[][][])((Class3_Sub2[][][])null);

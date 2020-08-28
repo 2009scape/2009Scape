@@ -9,7 +9,7 @@ final class Class3_Sub28_Sub8 extends Node {
    static int anInt3613;
 
 
-   static final int method571() {
+   static int method571() {
       try {
          return -109 >= -57?-107:((double)NPC.aFloat3979 == 3.0D?37:((double)NPC.aFloat3979 == 4.0D?50:(6.0D != (double)NPC.aFloat3979?((double)NPC.aFloat3979 == 8.0D?100:200):75)));
       } catch (RuntimeException var2) {
@@ -17,7 +17,7 @@ final class Class3_Sub28_Sub8 extends Node {
       }
    }
 
-   static final Class3_Sub28_Sub15 method572(int var0) {
+   static Class3_Sub28_Sub15 method572(int var0) {
       try {
          Class3_Sub28_Sub15 var2 = (Class3_Sub28_Sub15)Class56.aClass47_885.method1092((long)var0, 1400);
          if(var2 == null) {
@@ -99,7 +99,7 @@ final class Class3_Sub28_Sub8 extends Node {
       }
    }
 
-   static final void method574(NPC var0) {
+   static void method574(NPC var0) {
       try {
          if(!false) {
             for(Class3_Sub9 var2 = (Class3_Sub9)IOHandler.aClass61_1242.method1222(); var2 != null; var2 = (Class3_Sub9)IOHandler.aClass61_1242.method1221()) {
@@ -120,7 +120,7 @@ final class Class3_Sub28_Sub8 extends Node {
       }
    }
 
-   static final void method575(CacheIndex var0, int var1) {
+   static void method575(CacheIndex var0, int var1) {
       try {
          if(var1 != -1) {
             method575((CacheIndex)null, -38);
@@ -132,7 +132,7 @@ final class Class3_Sub28_Sub8 extends Node {
       }
    }
 
-   static final int method576(RSString var0) {
+   static int method576(RSString var0) {
       try {
          if(Class119.aClass131_1624 == null || var0.length(-65) == 0) {
             return -1;
@@ -160,7 +160,7 @@ final class Class3_Sub28_Sub8 extends Node {
       }
    }
 
-   static final void method577(int var0, int var1, int var2, int var3, GameObject var4, GameObject var5, int var6, int var7, int var8, int var9, long var10) {
+   static void method577(int var0, int var1, int var2, int var3, GameObject var4, GameObject var5, int var6, int var7, int var8, int var9, long var10) {
       if(var4 != null) {
          Class19 var12 = new Class19();
          var12.aLong428 = var10;

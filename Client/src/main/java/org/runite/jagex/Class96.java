@@ -20,7 +20,7 @@ final class Class96 {
    static int anInt1361;
 
 
-   static final void method1587(RSByteBuffer var1) {
+   static void method1587(RSByteBuffer var1) {
       try {
          label134:
          while(true) {

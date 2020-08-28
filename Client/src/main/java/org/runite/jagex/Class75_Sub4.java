@@ -4,15 +4,15 @@ final class Class75_Sub4 extends Class75 {
 
    static int[] anIntArray2663;
    static int[] anIntArray2664;
-   private int anInt2666;
+   private final int anInt2666;
    static int[] anIntArray2668 = new int[]{-1, 0, 8, 0, 2, 0, 0, 0, 0, 12, 0, 1, 0, 3, 7, 0, 15, 6, 0, 0, 4, 7, -2, -1, 2, 0, 2, 8, 0, 0, 0, 0, -2, 5, 0, 0, 8, 3, 6, 0, 0, 0, -1, 0, -1, 0, 0, 6, -2, 0, 12, 0, 0, 0, -1, -2, 10, 0, 0, 0, 3, 0, -1, 0, 0, 5, 6, 0, 0, 8, -1, -1, 0, 8, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 6, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, -2, 0, 0, 0, 0, 0, 12, 2, 0, -2, -2, 20, 0, 0, 10, 0, 15, 0, -1, 0, 8, -2, 0, 0, 0, 8, 0, 12, 0, 0, 7, 0, 0, 0, 0, 0, -1, -1, 0, 4, 5, 0, 0, 0, 6, 0, 0, 0, 0, 8, 9, 0, 0, 0, 2, -1, 0, -2, 0, 4, 14, 0, 0, 0, 24, 0, -2, 5, 0, 0, 0, 10, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 2, 1, 0, 0, 2, -1, 1, 0, 0, 0, 0, 14, 0, 0, 0, 0, 10, 5, 0, 0, 0, 0, 0, -2, 0, 0, 9, 0, 0, 8, 0, 0, 0, 0, -2, 6, 0, 0, 0, -2, 0, 3, 0, 1, 7, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 3, 0, 0};
-   private int anInt2669;
+   private final int anInt2669;
    static int anInt2670 = 0;
-   private int anInt2671;
-   private int anInt2672;
+   private final int anInt2671;
+   private final int anInt2672;
 
 
-   static final void renderNPCMasks(int var0) {
+   static void renderNPCMasks(int var0) {
       try {
          int i;
          for(i = 0; Class66.maskUpdateCount > i; ++i) {
@@ -203,7 +203,7 @@ final class Class75_Sub4 extends Class75 {
       }
    }
 
-   static final boolean method1351(CacheIndex var0, int var1, int archiveId, int var3) {
+   static boolean method1351(CacheIndex var0, int var1, int archiveId, int var3) {
       try {
          byte[] var4 = var0.getFile(archiveId, var1);
          if(var4 == null) {
@@ -231,7 +231,7 @@ final class Class75_Sub4 extends Class75 {
       }
    }
 
-   static final void method1352(int var0, boolean var1, int var3, int var4) {
+   static void method1352(int var0, boolean var1, int var3, int var4) {
       try {
          if(Canvas_Sub2.loadInterface(var3)) {
             Class158.method2183(-1, var1, var4, var0, GameObject.aClass11ArrayArray1834[var3]);
@@ -241,7 +241,7 @@ final class Class75_Sub4 extends Class75 {
       }
    }
 
-   static final void method1353(Class3_Sub28_Sub16_Sub2[] var0, CacheIndex var2) {
+   static void method1353(Class3_Sub28_Sub16_Sub2[] var0, CacheIndex var2) {
       try {
          Class3_Sub13_Sub17.aClass153_3210 = var2;
          GameObject.aClass3_Sub28_Sub16_Sub2Array1839 = var0;
@@ -261,7 +261,7 @@ final class Class75_Sub4 extends Class75 {
       }
    }
 
-   static final void method1354(int var0, int var1, int var3, int var4) {
+   static void method1354(int var0, int var1, int var3, int var4) {
       try {
          if(var4 >= Class159.anInt2020 && var4 <= Class57.anInt902) {
             var0 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var0, Class101.anInt1425);
@@ -274,7 +274,7 @@ final class Class75_Sub4 extends Class75 {
       }
    }
 
-   static final void method1355() {
+   static void method1355() {
       try {
          Class3_Sub25.aClass129_2552.method1770();
 

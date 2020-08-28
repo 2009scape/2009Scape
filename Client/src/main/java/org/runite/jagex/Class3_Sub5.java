@@ -18,7 +18,7 @@ final class Class3_Sub5 extends Class3 {
    int anInt2283;
    int anInt2284;
 
-   static final void method111(byte var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
+   static void method111(byte var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
       try {
          if(var0 < -47) {
             for(int var9 = 0; var9 < Class119.aClass131_1624.anInt1720; ++var9) {
@@ -113,7 +113,7 @@ final class Class3_Sub5 extends Class3 {
       }
    }
 
-   static final void method112(byte var0) {
+   static void method112(byte var0) {
       try {
          if(null == Class158.aByteArrayArrayArray2008) {
             Class158.aByteArrayArrayArray2008 = new byte[4][104][104];
@@ -144,7 +144,7 @@ final class Class3_Sub5 extends Class3 {
       }
    }
 
-   static final void method114(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
+   static void method114(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
       try {
          if(3 != 3) {
             method117((byte)-26);
@@ -190,7 +190,7 @@ final class Class3_Sub5 extends Class3 {
       }
    }
 
-   static final int method115(boolean var0) {
+   static int method115(boolean var0) {
       try {
          long var2 = Class5.method830((byte)-55);
          if(-1 != -1) {
@@ -206,7 +206,7 @@ final class Class3_Sub5 extends Class3 {
                   return var5;
                }
 
-               var4.method86(-1 ^ 1023);
+               var4.method86(~1023);
             }
          }
 
@@ -216,7 +216,7 @@ final class Class3_Sub5 extends Class3 {
       }
    }
 
-   static final void method116(boolean var0, int var1) {
+   static void method116(boolean var0, int var1) {
       try {
          int var2 = Class159.localPlayerCount;
          if(Class65.anInt987 == Class102.player.anInt2819 >> 7 && Class45.anInt733 == Class102.player.anInt2829 >> 7) {
@@ -378,7 +378,7 @@ final class Class3_Sub5 extends Class3 {
       }
    }
 
-   static final void method117(byte var0) {
+   static void method117(byte var0) {
       try {
          if(0 > Class3_Sub28_Sub1.anInt3536) {
             Class3_Sub13_Sub30.anInt3362 = -1;

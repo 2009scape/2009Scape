@@ -13,7 +13,7 @@ final class Class1 {
    static RSString aClass94_58;
 
 
-   static final void method69(Class36 var0, int var1) {
+   static void method69(Class36 var0, int var1) {
       try {
          if(var1 < 2) {
             method69((Class36)null, -115);
@@ -25,7 +25,7 @@ final class Class1 {
       }
    }
 
-   static final Class3_Sub11[] method70(float[][] var0, float[][] var1, int[][] var2, int var3, float[][] var4, byte[][] var5, int[][] var6, int var7, byte[][] var8, byte[][] var9, byte[][] var10, byte[][][] var11) {
+   static Class3_Sub11[] method70(float[][] var0, float[][] var1, int[][] var2, int var3, float[][] var4, byte[][] var5, int[][] var6, int var7, byte[][] var8, byte[][] var9, byte[][] var10, byte[][][] var11) {
       try {
          Class130 var12 = new Class130(128);
 
@@ -630,7 +630,7 @@ final class Class1 {
       }
    }
 
-   static final void method72(int var0, int var1, int var2, int var4) {
+   static void method72(int var0, int var1, int var2, int var4) {
       try {
          if(HDToolKit.highDetail) {
             Class22.method935(var0, var4, var2 + var0, var1 + var4);

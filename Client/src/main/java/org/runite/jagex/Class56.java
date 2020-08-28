@@ -12,7 +12,7 @@ final class Class56 {
    static RSString aClass94_892 = RSString.createRSString(" )2> <col=ffffff>");
    static int anInt893 = 0;
 
-   static final int method1186(int var1) {
+   static int method1186(int var1) {
       try {
          double var2 = (double)(255 & var1 >> 16) / 256.0D;
          double var4 = (double)(255 & var1 >> 8) / 256.0D;
@@ -110,7 +110,7 @@ final class Class56 {
       }
    }
 
-   static final void method1188() {
+   static void method1188() {
       try {
          MouseListeningClass.anIntArray1920 = null;
          Class38_Sub1.anIntArrayArrayArray2609 = (int[][][])null;
@@ -128,7 +128,7 @@ final class Class56 {
       }
    }
 
-   static final boolean method1189(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, GameObject var8, int var9, boolean var10, long var11) {
+   static boolean method1189(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, GameObject var8, int var9, boolean var10, long var11) {
       boolean var13 = Class44.anIntArrayArrayArray723 == Class3_Sub28_Sub7.anIntArrayArrayArray3605;
       int var14 = 0;
 

@@ -24,7 +24,7 @@ final class Class25 {
    long aLong498 = 0L;
    static int[][] anIntArrayArray499 = new int[][]{new int[0], {128, 0, 128, 128, 0, 128}, {0, 0, 128, 0, 128, 128, 64, 128}, {0, 128, 0, 0, 128, 0, 64, 128}, {0, 0, 64, 128, 0, 128}, {128, 128, 64, 128, 128, 0}, {64, 0, 128, 0, 128, 128, 64, 128}, {128, 0, 128, 128, 0, 128, 0, 64, 64, 0}, {0, 0, 64, 0, 0, 64}, {0, 0, 128, 0, 128, 128, 64, 96, 32, 64}, {0, 128, 0, 0, 32, 64, 64, 96, 128, 128}, {0, 128, 0, 0, 32, 32, 96, 32, 128, 0, 128, 128}};
 
-   static final void method953() {
+   static void method953() {
       try {
          Class114.aClass93_1569.method1522(-13508 ^ 13501, 50);
          Class3_Sub15.aClass93_2428.method1522(-126, 50);
@@ -46,7 +46,7 @@ final class Class25 {
       }
    }
 
-   static final void method955(int[][] var0, boolean var1, int var2, Class3_Sub11 var3, int[] var4, int var5, int var6, int var7, boolean var8, float[][] var9, boolean var10, int var11, float[][] var12, int var13, int var14, int var15, boolean var16, int[][] var17, float[][] var18, byte var19, int var20, boolean[] var21) {
+   static void method955(int[][] var0, boolean var1, int var2, Class3_Sub11 var3, int[] var4, int var5, int var6, int var7, boolean var8, float[][] var9, boolean var10, int var11, float[][] var12, int var13, int var14, int var15, boolean var16, int[][] var17, float[][] var18, byte var19, int var20, boolean[] var21) {
       try {
          int var22 = (var2 << 8) + (var1?255:0);
          int var24 = (!var8?0:255) + (var15 << 8);
@@ -67,7 +67,7 @@ final class Class25 {
       }
    }
 
-   static final void method956(Object[] var0, int var1, int[] var2, int var3, int var4) {
+   static void method956(Object[] var0, int var1, int[] var2, int var3, int var4) {
       try {
          if(var4 < var1) {
             int var5 = (var4 + var1) / 2;
@@ -107,7 +107,7 @@ final class Class25 {
       }
    }
 
-   static final void method957(int var0, boolean var1) {
+   static void method957(int var0, boolean var1) {
       try {
          if(var0 == 96) {
             Class3_Sub28_Sub13.aBoolean3665 = var1;
@@ -118,7 +118,7 @@ final class Class25 {
       }
    }
 
-   static final void method958(byte var0) {
+   static void method958(byte var0) {
       try {
          if(GameObject.aBoolean1837) {
             int var2 = 88 / ((57 - var0) / 59);
@@ -139,7 +139,7 @@ final class Class25 {
       }
    }
 
-   static final void method959() {
+   static void method959() {
       try {
          CS2Script.aClass93_2450.method1524();
          if(0 != 0) {

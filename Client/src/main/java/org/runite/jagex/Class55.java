@@ -29,7 +29,7 @@ final class Class55 {
       }
    }
 
-   static final void method1180(byte var0, Class140_Sub4 var1) {
+   static void method1180(byte var0, Class140_Sub4 var1) {
       try {
          RenderAnimationDefinition var2 = var1.method1965();
          var1.anInt2764 = var2.anInt368;
@@ -286,7 +286,7 @@ final class Class55 {
       }
    }
 
-   private final void method1183(int var2, int var3, RSByteBuffer var4) {
+   private void method1183(int var2, int var3, RSByteBuffer var4) {
       try {
          if(-18426 != -18426) {
             this.anInt881 = -82;
@@ -304,7 +304,7 @@ final class Class55 {
       }
    }
 
-   static final int method1184(int var0, byte var1) {
+   static int method1184(int var0, byte var1) {
       try {
          int var2 = 91 / ((var1 - 28) / 39);
          int var3 = var0 & 63;
@@ -349,7 +349,7 @@ final class Class55 {
       }
    }
 
-   static final int method1185() {
+   static int method1185() {
       try {
          if(6098 != 6098) {
             method1180((byte)-98, (Class140_Sub4)null);

@@ -13,7 +13,7 @@ final class RuntimeException_Sub1 extends RuntimeException {
    static String worldListHost;
 
 
-   static final void method2285(int var0, int var1, int var2, int var3, int var5) {
+   static void method2285(int var0, int var1, int var2, int var3, int var5) {
       try {
          Class3_Sub29.anInt2587 = var1;
          if(!false) {
@@ -27,7 +27,7 @@ final class RuntimeException_Sub1 extends RuntimeException {
       }
    }
 
-   static final int method2286() {
+   static int method2286() {
       try {
          if((byte) -5 != -5) {
             worldListHost = (String)null;
@@ -44,7 +44,7 @@ final class RuntimeException_Sub1 extends RuntimeException {
       this.aThrowable2118 = var1;
    }
 
-   static final int method2287(int var0, byte var1) {
+   static int method2287(int var0, byte var1) {
       try {
          return (var0 < 97 || var0 > 122) && (var0 < 224 || var0 > 254 || 247 == var0)?(var0 != 255 ?(var0 != 156?(var1 != 59?72:var0):140):159):var0 + -32;
       } catch (RuntimeException var3) {

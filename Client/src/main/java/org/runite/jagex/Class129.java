@@ -10,7 +10,7 @@ abstract class Class129 {
    static int[] anIntArray1695;
 
 
-   static final int method1765(int var0, int var1) {
+   static int method1765(int var0, int var1) {
       try {
          if(var1 != -1732504441) {
             method1765(97, -97);
@@ -39,7 +39,7 @@ abstract class Class129 {
 
    abstract int method1767(int var1, int var2, int var3);
 
-   static final void method1768(int var0, int var2) {
+   static void method1768(int var0, int var2) {
       try {
          if(KeyboardListener.anInt1908 > 0) {
             Class159.method2195(KeyboardListener.anInt1908);
@@ -101,7 +101,7 @@ abstract class Class129 {
       }
    }
 
-   static final void method1769(float[][] var0, byte[][] var1, byte[][] var2, Class43[] var3, int var4, int var5, float[][] var6, byte[][] var7, byte[][] var8, int[][] var9, float[][] var11) {
+   static void method1769(float[][] var0, byte[][] var1, byte[][] var2, Class43[] var3, int var4, int var5, float[][] var6, byte[][] var7, byte[][] var8, int[][] var9, float[][] var11) {
       try {
          for(int var12 = 0; var5 > var12; ++var12) {
             Class43 var13 = var3[var12];

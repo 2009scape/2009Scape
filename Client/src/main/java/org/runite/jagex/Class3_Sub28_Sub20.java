@@ -6,23 +6,23 @@ import java.nio.ByteBuffer;
 
 final class Class3_Sub28_Sub20 extends Node {
 
-   private boolean aBoolean3781;
+   private final boolean aBoolean3781;
    private float aFloat3782;
-   private int anInt3783;
-   private int anInt3784;
+   private final int anInt3783;
+   private final int anInt3784;
    static CacheIndex aClass153_3786;
-   private boolean aBoolean3787;
-   private int anInt3788;
-   private boolean aBoolean3789;
-   private Class82 aClass82_3790;
+   private final boolean aBoolean3787;
+   private final int anInt3788;
+   private final boolean aBoolean3789;
+   private final Class82 aClass82_3790;
    private int anInt3791;
    private int[] anIntArray3793;
    static Class118 aClass118_3794 = Class21.method913();
    private int anInt3795 = -1;
    private int anInt3796 = 0;
    boolean aBoolean3797 = false;
-   private int anInt3799;
-   private boolean aBoolean3800;
+   private final int anInt3799;
+   private final boolean aBoolean3800;
 
 
    final int[] method718(Interface2 var1, float var3, CacheIndex var4, boolean var5) {
@@ -34,7 +34,7 @@ final class Class3_Sub28_Sub20 extends Node {
                }
 
                int var6 = !var5?128:64;
-               this.anIntArray3793 = this.aClass82_3790.method1404(var6, this.aBoolean3800, var6, (double)var3, 0 ^ 327680, var4, var1, true);
+               this.anIntArray3793 = this.aClass82_3790.method1404(var6, this.aBoolean3800, var6, (double)var3, 327680, var4, var1, true);
                this.aFloat3782 = var3;
                if(this.aBoolean3789) {
                   int[] var7 = new int[var6];
@@ -293,7 +293,7 @@ final class Class3_Sub28_Sub20 extends Node {
       }
    }
 
-   static final void method724() {
+   static void method724() {
       try {
          Class163_Sub2_Sub1.aClass93_4015.method1523((byte)-102);
          if(-109 > -106) {
@@ -319,7 +319,7 @@ final class Class3_Sub28_Sub20 extends Node {
       }
    }
 
-   static final void method725(int var0) {
+   static void method725(int var0) {
       try {
          int var1 = 67 / ((-60 - var0) / 41);
          if(Class137.method1817() == 2) {

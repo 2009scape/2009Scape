@@ -2,7 +2,7 @@ package org.runite.jagex;
 
 final class Class78 {
 
-   private RSByteBuffer aClass3_Sub30_1113 = new RSByteBuffer((byte[])null);
+   private final RSByteBuffer aClass3_Sub30_1113 = new RSByteBuffer((byte[])null);
    int[] anIntArray1114;
    private int[] anIntArray1115;
    int anInt1116;
@@ -68,7 +68,7 @@ final class Class78 {
       this.anIntArray1114[var1] += var2;
    }
 
-   private final int method1378(int var1, int var2) {
+   private int method1378(int var1, int var2) {
       int var4;
       if(var2 == 255) {
          int var7 = this.aClass3_Sub30_1113.getByte((byte)-60);
@@ -103,7 +103,7 @@ final class Class78 {
       }
    }
 
-   private final int method1379(int var1) {
+   private int method1379(int var1) {
       byte var2 = this.aClass3_Sub30_1113.buffer[this.aClass3_Sub30_1113.index];
       int var5;
       if(var2 < 0) {

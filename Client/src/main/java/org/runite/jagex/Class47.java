@@ -5,22 +5,21 @@ final class Class47 {
    static boolean aBoolean742 = false;
    static Class93 aClass93_743 = new Class93(20);
    private Node aClass3_Sub28_744 = new Node();
-   private Class130 aClass130_745;
-   private int anInt746;
-   private NodeList aClass13_747 = new NodeList();
+   private final Class130 aClass130_745;
+   private final int anInt746;
+   private final NodeList aClass13_747 = new NodeList();
    static CacheIndex quickChatMessages;
    private int anInt749;
    static RSString aClass94_750 = RSString.createRSString("null");
 
 
-   static final boolean method1088(boolean var0) {
+   static boolean method1088(boolean var0) {
       try {
          if(Class3_Sub28_Sub11.aBoolean3641) {
             try {
                Class8.aClass94_106.method1577(-1857, Class38.aClass87_665.anApplet1219);
                return true;
             } catch (Throwable var2) {
-               ;
             }
          }
 
@@ -34,7 +33,7 @@ final class Class47 {
       }
    }
 
-   static final Class3_Sub28_Sub5 method1089(CacheIndex cacheIndex0, CacheIndex var2, int frameId) {
+   static Class3_Sub28_Sub5 method1089(CacheIndex cacheIndex0, CacheIndex var2, int frameId) {
       try {
          boolean var5 = true;
          if((byte) 118 <= 71) {
@@ -77,7 +76,7 @@ final class Class47 {
       }
    }
 
-   static final RSString method1090(byte var0, int var1) {
+   static RSString method1090(byte var0, int var1) {
       try {
          if(var0 > -86) {
             return (RSString)null;
@@ -92,7 +91,7 @@ final class Class47 {
       }
    }
 
-   static final void method1091(boolean var0, int var1) {
+   static void method1091(boolean var0, int var1) {
       try {
          byte var2;
          byte[][] var3;
@@ -160,7 +159,7 @@ final class Class47 {
       }
    }
 
-   static final void method1093(boolean var0) {
+   static void method1093(boolean var0) {
       try {
          if(var0) {
             method1093(true);
@@ -183,7 +182,7 @@ final class Class47 {
       }
    }
 
-   static final void method1095(int var0, int var1, int var2, RSInterface[] var3, int var4, int var5, int var6, int var7, byte var8, int var9) {
+   static void method1095(int var0, int var1, int var2, RSInterface[] var3, int var4, int var5, int var6, int var7, byte var8, int var9) {
       try {
          if(HDToolKit.highDetail) {
             Class22.method935(var0, var6, var4, var7);
@@ -1126,7 +1125,7 @@ final class Class47 {
       }
    }
 
-   static final void method1098(byte var0) {
+   static void method1098(byte var0) {
       try {
          if(Class3_Sub9.anInt2309 < 128) {
             Class3_Sub9.anInt2309 = 128;
@@ -1196,7 +1195,7 @@ final class Class47 {
       }
    }
 
-   static final int method1100(int var0, int var2) {
+   static int method1100(int var0, int var2) {
       try {
          if(var2 == -1) {
             return 12345678;
@@ -1241,7 +1240,6 @@ final class Class47 {
          int var2 = 1;
 
          for(this.anInt749 = var1; var2 - -var2 < var1; var2 += var2) {
-            ;
          }
 
          this.anInt746 = var1;

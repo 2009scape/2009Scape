@@ -24,7 +24,7 @@ final class Class3_Sub28_Sub6 extends Node {
       }
    }
 
-   static final void d(int var0) {
+   static void d(int var0) {
       try {
          if(NPCDefinition.anInt1252 != -1 && Class3_Sub7.anInt2293 != -1) {
             int var1 = (Class163_Sub2_Sub1.anInt4020 * (-Class134.anInt1759 + Class3_Sub13.anInt2383) >> 16) + Class134.anInt1759;
@@ -106,7 +106,7 @@ final class Class3_Sub28_Sub6 extends Node {
       }
    }
 
-   static final AbstractIndexedSprite a(int var0, CacheIndex var1) {
+   static AbstractIndexedSprite a(int var0, CacheIndex var1) {
       try {
          return !Class140_Sub7.method2029((byte)-127, var1, var0)?null:(!true ?(AbstractIndexedSprite)null:Class166.method2259());
       } catch (RuntimeException var4) {
@@ -135,7 +135,7 @@ final class Class3_Sub28_Sub6 extends Node {
       }
    }
 
-   static final Class2 c(int var0) {
+   static Class2 c(int var0) {
       try {
          Class2 var2 = (Class2)Class3_Sub13_Sub34.aClass93_3412.get((long)var0);
          if(var2 == null) {
@@ -157,7 +157,7 @@ final class Class3_Sub28_Sub6 extends Node {
       }
    }
 
-   static final String a(String var0, String var1, int var2, String var3) {
+   static String a(String var0, String var1, int var2, String var3) {
       for(int var4 = var3.indexOf(var0); var4 != -1; var4 = var3.indexOf(var0, var4 + var1.length())) {
          var3 = var3.substring(0, var4) + var1 + var3.substring(var0.length() + var4);
       }
@@ -166,7 +166,7 @@ final class Class3_Sub28_Sub6 extends Node {
       return var3;
    }
 
-   static final void a(int var0, int var1, int var2, RSInterface var3) {
+   static void a(int var0, int var1, int var2, RSInterface var3) {
       try {
          if(null == Class56.aClass11_886 && !Class38_Sub1.aBoolean2615) {
             if(var2 < 61) {
@@ -187,7 +187,7 @@ final class Class3_Sub28_Sub6 extends Node {
       }
    }
 
-   static final void a(int var0, int var2, int var3, RSString var4, long var5, int var7, RSString name) {
+   static void a(int var0, int var2, int var3, RSString var4, long var5, int var7, RSString name) {
       try {
     	  System.out.println("Class3_Sub28_Sub6 " + var0 + ", " + 10603 + ", " + var2 + ", " + var3 + ", " + var4 + ", " + var5 + ", " + var7);
          RSByteBuffer var8 = new RSByteBuffer(128);
@@ -256,7 +256,7 @@ final class Class3_Sub28_Sub6 extends Node {
       }
    }
 
-   static final void h(byte var0) {
+   static void h(byte var0) {
       try {
          Class114.aClass93_1569.method1523((byte)-109);
          if(var0 != 3) {

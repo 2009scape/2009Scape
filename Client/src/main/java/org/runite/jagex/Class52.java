@@ -73,7 +73,7 @@ final class Class52 {
       }
    }
 
-   private final void method1158(int var1) {
+   private void method1158(int var1) {
       try {
          long var2 = this.aLong860;
          this.aLong860 = -1L;
@@ -120,7 +120,7 @@ final class Class52 {
       }
    }
 
-   static final void method1160(int var0, int var1) {
+   static void method1160(int var0, int var1) {
       try {
          if(Canvas_Sub2.loadInterface(var1)) {
             if(var0 > -100) {
@@ -542,7 +542,7 @@ final class Class52 {
       }
    }
 
-   static final boolean method1166(int var0, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, boolean var11, int var12) {
+   static boolean method1166(int var0, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, boolean var11, int var12) {
       try {
          int var13;
          int var14;

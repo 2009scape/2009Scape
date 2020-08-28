@@ -12,7 +12,7 @@ public final class Class3_Sub28_Sub12 extends Node {
    static int anInt3655 = -1;
 
 
-   static final boolean method609(RSInterface var0, int var1) {
+   static boolean method609(RSInterface var0, int var1) {
       try {
          if(null == var0.anIntArray275) {
             return false;
@@ -67,11 +67,11 @@ public final class Class3_Sub28_Sub12 extends Node {
    /**
     * Sends a default chatbox game message.
     */
-   static final void sendMessage(String str){
+   static void sendMessage(String str){
 	   sendGameMessage(-1, 11, RSString.createRSString(str), RSString.createRSString(""), RSString.createRSString(""));
    }
 
-   static final void sendGameMessage(int var0, int type, RSString message, RSString var3, RSString var5) {
+   static void sendGameMessage(int var0, int type, RSString message, RSString var3, RSString var5) {
       try {
          for(int i = 99; i > 0; --i) {
             Class3_Sub13_Sub6.anIntArray3082[i] = Class3_Sub13_Sub6.anIntArray3082[i - 1];
@@ -93,7 +93,7 @@ public final class Class3_Sub28_Sub12 extends Node {
       }
    }
 
-   static final RSString method612(long var0, byte var2) {
+   static RSString method612(long var0, byte var2) {
       try {
          return var2 <= 85?(RSString)null:Class3_Sub13_Sub8.method207(10, false, 116, var0);
       } catch (RuntimeException var4) {
@@ -114,7 +114,7 @@ public final class Class3_Sub28_Sub12 extends Node {
       }
    }
 
-   private final void method614(RSByteBuffer var1, int var2) {
+   private void method614(RSByteBuffer var1, int var2) {
       try {
          if(false) {
             this.method610((RSByteBuffer)null, -89);

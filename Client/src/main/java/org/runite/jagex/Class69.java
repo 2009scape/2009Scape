@@ -6,7 +6,7 @@ final class Class69 {
    static int anInt1038;
    static Class30 aClass30_1039;
    static boolean aBoolean1040 = false;
-   private int[] anIntArray1041;
+   private final int[] anIntArray1041;
    static int anInt1042;
    static CacheIndex aClass153_1043;
 
@@ -36,7 +36,7 @@ final class Class69 {
       }
    }
 
-   static final LDIndexedSprite[] method1281() {
+   static LDIndexedSprite[] method1281() {
       try {
          LDIndexedSprite[] var1 = new LDIndexedSprite[Class95.anInt1338];
 
@@ -51,7 +51,7 @@ final class Class69 {
       }
    }
 
-   static final void method1282(int var0, byte var1, int var2, int var3, int var4) {
+   static void method1282(int var0, byte var1, int var2, int var3, int var4) {
       try {
          int var5 = 0;
 
@@ -80,7 +80,6 @@ final class Class69 {
       try {
          int var2;
          for(var2 = 1; (var1.length >> 1) + var1.length >= var2; var2 <<= 1) {
-            ;
          }
 
          this.anIntArray1041 = new int[var2 + var2];
@@ -93,7 +92,6 @@ final class Class69 {
          int var4;
          for(var3 = 0; var1.length > var3; this.anIntArray1041[var4 - -var4 - -1] = var3++) {
             for(var4 = -1 + var2 & var1[var3]; this.anIntArray1041[1 + var4 - -var4] != -1; var4 = -1 + var2 & 1 + var4) {
-               ;
             }
 
             this.anIntArray1041[var4 + var4] = var1[var3];

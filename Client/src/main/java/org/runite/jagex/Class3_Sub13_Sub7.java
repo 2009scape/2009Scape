@@ -45,7 +45,7 @@ final class Class3_Sub13_Sub7 extends Class3_Sub13 {
       }
    }
 
-   static final int method201(int var0, int var1, int var2) {
+   static int method201(int var0, int var1, int var2) {
       try {
          int var3 = var1 + -1 & var0 >> 31;
          int var4 = -95 % ((33 - var2) / 54);
@@ -55,7 +55,7 @@ final class Class3_Sub13_Sub7 extends Class3_Sub13 {
       }
    }
 
-   private final void method202() {
+   private void method202() {
       try {
          if(1 == 1) {
             int var2 = 0;

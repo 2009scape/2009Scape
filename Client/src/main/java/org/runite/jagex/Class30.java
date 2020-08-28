@@ -6,7 +6,7 @@ import java.io.IOException;
 final class Class30 {
 
    private long aLong563;
-   private byte[] aByteArray564;
+   private final byte[] aByteArray564;
    static RSString COMMAND_TOGGLE_FPSOFF = RSString.createRSString("::fpsoff");
    private int anInt566 = 0;
    static RSString cmdChalReq = RSString.createRSString(":chalreq:");
@@ -14,8 +14,8 @@ final class Class30 {
    private long aLong569;
    private long aLong570;
    private long aLong571 = -1L;
-   private byte[] aByteArray572;
-   private Class122 aClass122_573;
+   private final byte[] aByteArray572;
+   private final Class122 aClass122_573;
    static int[] anIntArray574 = new int[14];
    private int anInt575;
    private long aLong576 = -1L;
@@ -37,7 +37,7 @@ final class Class30 {
       }
    }
 
-   private final void method975(byte var1) throws IOException {
+   private void method975(byte var1) throws IOException {
       try {
          int var2 = 56 % ((45 - var1) / 44);
          if(-1L != this.aLong571) {
@@ -92,7 +92,7 @@ final class Class30 {
       }
    }
 
-   private final File method977() {
+   private File method977() {
       try {
          if(281669816 != 281669816) {
             method974(true);
@@ -208,7 +208,7 @@ final class Class30 {
       }
    }
 
-   static final void method979(int var0, int var1, int var2, byte var3) {
+   static void method979(int var0, int var1, int var2, byte var3) {
       try {
          RSString var4 = RenderAnimationDefinition.method903(new RSString[]{Class52.aClass94_853, Class72.method1298((byte)9, var2), Class3_Sub13_Sub22.aClass94_3268, Class72.method1298((byte)9, var0 >> 6), Class3_Sub13_Sub22.aClass94_3268, Class72.method1298((byte)9, var1 >> 6), Class3_Sub13_Sub22.aClass94_3268, Class72.method1298((byte)9, var0 & 63), Class3_Sub13_Sub22.aClass94_3268, Class72.method1298((byte)9, 63 & var1)}, (byte)-90);
          var4.method1549();
@@ -235,7 +235,7 @@ final class Class30 {
       }
    }
 
-   private final void method981() throws IOException {
+   private void method981() throws IOException {
       try {
          this.anInt575 = 0;
          if(4393 != 4393) {

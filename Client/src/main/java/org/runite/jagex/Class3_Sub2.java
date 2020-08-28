@@ -50,7 +50,7 @@ final class Class3_Sub2 extends Class3 {
       }
    }
 
-   static final void method103() {
+   static void method103() {
       try {
          Client.aClass130_2194.method1773(122);
          Class81.aClass13_1139.method883();
@@ -60,7 +60,7 @@ final class Class3_Sub2 extends Class3 {
       }
    }
 
-   static final long method104(int var0, int var1, int var2) {
+   static long method104(int var0, int var1, int var2) {
       Class3_Sub2 var3 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var0][var1][var2];
       return var3 != null && var3.aClass12_2230 != null?var3.aClass12_2230.aLong328:0L;
    }

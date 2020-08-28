@@ -16,7 +16,7 @@ final class Class49 {
    static int anInt819 = 0;
 
 
-   static final void method1121(boolean var0, byte var1) {
+   static void method1121(boolean var0, byte var1) {
       try {
          byte var2;
          byte[][] var3;
@@ -69,7 +69,7 @@ final class Class49 {
       }
    }
 
-   static final RSInterface method1122(RSInterface var1) {
+   static RSInterface method1122(RSInterface var1) {
       try {
          if(0 != 0) {
             method1123(103, 118);
@@ -86,7 +86,7 @@ final class Class49 {
       }
    }
 
-   static final byte[] method1123(int var0, int var1) {
+   static byte[] method1123(int var0, int var1) {
       try {
          Class3_Sub28_Sub8 var2 = (Class3_Sub28_Sub8)Class25.aClass47_480.method1092((long)var1, var0 + -16710535);
          if(null == var2) {
@@ -116,7 +116,7 @@ final class Class49 {
       }
    }
 
-   static final RSString method1124(int[] var0, long var1, int var3) {
+   static RSString method1124(int[] var0, long var1, int var3) {
       try {
          if(false) {
             return (RSString)null;
@@ -135,7 +135,7 @@ final class Class49 {
       }
    }
 
-   static final void method1125(String var0, Throwable var1, byte var2) {
+   static void method1125(String var0, Throwable var1, byte var2) {
       if(var2 <= 100) {
          aClass47_818 = (Class47)null;
       }
@@ -175,12 +175,11 @@ final class Class49 {
             var5.close();
          }
       } catch (Exception var6) {
-         ;
       }
 
    }
 
-   static final void method1126(int var1) {
+   static void method1126(int var1) {
       try {
          Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 2, var1);
          int var3 = -67 % ((-94 - -37) / 48);
@@ -190,7 +189,7 @@ final class Class49 {
       }
    }
 
-   static final void method1127(int var0) {
+   static void method1127(int var0) {
       try {
          if(!Class38_Sub1.aBoolean2615) {
             if(Class3_Sub28_Sub13.anInt3660 != 0) {
@@ -330,7 +329,7 @@ final class Class49 {
       }
    }
 
-   static final void method1129(int var0, int var1, int var2, int var4) {
+   static void method1129(int var0, int var1, int var2, int var4) {
       try {
          int var5 = 0;
          int var6 = var2;
@@ -356,7 +355,7 @@ final class Class49 {
                   var13 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var4 - -var5, Class101.anInt1425);
                   var14 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, -var5 + var4, Class101.anInt1425);
                   if(Class57.anInt902 >= var12) {
-                     Class3_Sub13_Sub23_Sub1.method282(Class38.anIntArrayArray663[var12], var14, 0 ^ 111, var13, var0);
+                     Class3_Sub13_Sub23_Sub1.method282(Class38.anIntArrayArray663[var12], var14, 111, var13, var0);
                   }
 
                   if(Class159.anInt2020 <= var11) {

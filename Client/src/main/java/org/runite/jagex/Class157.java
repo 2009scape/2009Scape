@@ -56,7 +56,7 @@ final class Class157 {
       }
    }
 
-   static final long method2174(int var0, int var1, int var2) {
+   static long method2174(int var0, int var1, int var2) {
       Class3_Sub2 var3 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var0][var1][var2];
       return var3 != null && var3.aClass70_2234 != null?var3.aClass70_2234.aLong1048:0L;
    }
@@ -69,7 +69,7 @@ final class Class157 {
       }
    }
 
-   static final Class3_Sub28_Sub16_Sub2[] method2176(int var0, int var1, int var2, CacheIndex var3) {
+   static Class3_Sub28_Sub16_Sub2[] method2176(int var0, int var1, int var2, CacheIndex var3) {
       try {
     	  //System.out.println("Class 157 " + var2);
          if(Class75_Sub4.method1351(var3, var0, var2, -30901)) {

@@ -27,7 +27,7 @@ final class Class154 {
       }
    }
 
-   static final void method2146(int var0, int var1, int var2, int var3, GameObject var4, GameObject var5, int var6, int var7, long var8) {
+   static void method2146(int var0, int var1, int var2, int var3, GameObject var4, GameObject var5, int var6, int var7, long var8) {
       if(var4 != null || var5 != null) {
          Class70 var10 = new Class70();
          var10.aLong1048 = var8;
@@ -49,12 +49,12 @@ final class Class154 {
       }
    }
 
-   static final Class70 method2147(int var0, int var1, int var2) {
+   static Class70 method2147(int var0, int var1, int var2) {
       Class3_Sub2 var3 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var0][var1][var2];
       return var3 == null?null:var3.aClass70_2234;
    }
 
-   static final RSString method2148(int var0) {
+   static RSString method2148(int var0) {
       try {
          if(999999999 <= var0) {
             if((byte) -78 != -78) {

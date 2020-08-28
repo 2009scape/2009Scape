@@ -15,7 +15,7 @@ class Node extends Class3 {
    Node aClass3_Sub28_2578;
 
 
-   static final void method518(Player var0) {
+   static void method518(Player var0) {
       try {
          Class3_Sub9 var2 = (Class3_Sub9)Class3_Sub28_Sub7_Sub1.aClass130_4046.method1780(var0.displayName.toLong(-121), 0);
          if(-110 >= -85) {
@@ -33,7 +33,7 @@ class Node extends Class3 {
       }
    }
 
-   static final int method519(int var0, int var2, int var3) {
+   static int method519(int var0, int var2, int var3) {
       try {
          var0 &= 3;
          if(!true) {
@@ -46,7 +46,7 @@ class Node extends Class3 {
       }
    }
 
-   static final Class3_Sub28_Sub3 method520(byte var0) {
+   static Class3_Sub28_Sub3 method520(byte var0) {
       try {
          int var1 = -122 % ((var0 - -48) / 33);
          return RSByteBuffer.aClass3_Sub28_Sub3_2600;
@@ -67,7 +67,7 @@ class Node extends Class3 {
       }
    }
 
-   static final NPCDefinition method522(int var0, int var1) {
+   static NPCDefinition method522(int var0, int var1) {
       try {
          NPCDefinition def = (NPCDefinition)Class3_Sub28_Sub7_Sub1.aClass93_4043.get((long)var0);
          if(null == def) {
@@ -91,7 +91,7 @@ class Node extends Class3 {
       }
    }
 
-   static final void method523(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
+   static void method523(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
       try {
          int var9 = var3 - var8;
          int var11 = (-var5 + var0 << 16) / var9;

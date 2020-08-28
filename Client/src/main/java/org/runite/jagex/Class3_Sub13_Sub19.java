@@ -6,7 +6,6 @@ final class Class3_Sub13_Sub19 extends Class3_Sub13 {
    private int anInt3219 = 204;
    static RSString aClass94_3220;
    static Class3_Sub28_Sub16_Sub2 aClass3_Sub28_Sub16_Sub2_3221;
-   private int anInt3222;
    private int anInt3223;
    private int anInt3224 = 81;
    private int[][] anIntArrayArray3225;
@@ -42,7 +41,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
       }
    }
 
-   static final void method260(int var1, int var2) {
+   static void method260(int var1, int var2) {
       try {
          if(-16207 != -16207) {
             aClass94_3232 = (RSString)null;
@@ -103,7 +102,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
       }
    }
 
-   static final void method262(int var0, int var2, int var3, int var4, int var5, int var6, int var7) {
+   static void method262(int var0, int var2, int var3, int var4, int var5, int var6, int var7) {
       try {
          int var8 = var5 + var2;
          int var10 = var5 + var7;
@@ -134,13 +133,13 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
       }
    }
 
-   private final void method263() {
+   private void method263() {
       try {
          Random var2 = new Random((long)this.anInt3233);
-         this.anInt3222 = 4096 / this.anInt3233;
+         int anInt3222 = 4096 / this.anInt3233;
          this.anInt3223 = this.anInt3224 / 2;
          this.anIntArrayArray3225 = new int[this.anInt3233][1 + this.anInt3242];
-         int var4 = this.anInt3222 / 2;
+         int var4 = anInt3222 / 2;
          this.anIntArray3230 = new int[this.anInt3233 - -1];
          this.anIntArrayArray3240 = new int[this.anInt3233][this.anInt3242];
          this.anInt3235 = 4096 / this.anInt3242;
@@ -151,7 +150,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
             int var6;
             int var7;
             if(var5 > 0) {
-               var6 = this.anInt3222;
+               var6 = anInt3222;
                var7 = (Class100.method1603((byte)59, 4096, var2) + -2048) * this.anInt3219 >> 12;
                var6 += var7 * var4 >> 12;
                this.anIntArray3230[var5] = this.anIntArray3230[var5 - 1] - -var6;
@@ -179,7 +178,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
       }
    }
 
-   static final void method264(byte var0) {
+   static void method264(byte var0) {
       try {
          ++Class3_Sub13_Sub34.anInt3402;
          Class3_Sub13_Sub1.outgoingBuffer.putOpcode(184);
@@ -213,7 +212,6 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
 
             int var9;
             for(var9 = Class163_Sub3.anIntArray2999[var1] + this.anInt3231; var9 < 0; var9 += 4096) {
-               ;
             }
 
             while(4096 < var9) {
@@ -235,7 +233,6 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
 
                   int var8;
                   for(var8 = Class102.anIntArray2125[var4] - -(this.anInt3235 * var5 >> 12); var8 < 0; var8 += 4096) {
-                     ;
                   }
 
                   while(var8 > 4096) {
@@ -271,7 +268,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
       super(0, true);
    }
 
-   static final void method265(int var1) {
+   static void method265(int var1) {
       try {
          Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 8, var1);
          var2.a(true);

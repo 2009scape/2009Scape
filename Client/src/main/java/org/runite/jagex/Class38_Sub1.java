@@ -15,7 +15,7 @@ final class Class38_Sub1 extends Class38 {
    static int anInt2618;
 
 
-   static final void method1030(RSInterface var0, Class3_Sub28_Sub16 var1, int var2, int var3, int var4, int var6) {
+   static void method1030(RSInterface var0, Class3_Sub28_Sub16 var1, int var2, int var3, int var4, int var6) {
       try {
          if(null != var1) {
             if((byte) 11 != 11) {
@@ -45,7 +45,7 @@ final class Class38_Sub1 extends Class38 {
       }
    }
 
-   static final int method1031(int var0) {
+   static int method1031(int var0) {
       try {
          if(2 != 2) {
             aClass94_2610 = (RSString)null;

@@ -26,7 +26,7 @@ final class Class3_Sub26 extends Class3 {
       }
    }
 
-   static final void method512() {
+   static void method512() {
       try {
          Class3_Sub28_Sub7_Sub1.aClass93_4043.method1524();
          CS2Script.aClass93_2442.method1524();
@@ -40,7 +40,7 @@ final class Class3_Sub26 extends Class3 {
       }
    }
 
-   static final int method513(int var0, int var1) {
+   static int method513(int var0, int var1) {
       try {
          int var2 = 0;
          if(var0 < 0 || var0 >= 65536) {
@@ -83,7 +83,7 @@ final class Class3_Sub26 extends Class3 {
       }
    }
 
-   static final int method514(int var0, int var1, int var3) {
+   static int method514(int var0, int var1, int var3) {
       try {
          var0 &= 3;
          if((byte) -83 >= -66) {

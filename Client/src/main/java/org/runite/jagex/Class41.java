@@ -15,7 +15,7 @@ final class Class41 {
    static int anInt689;
 
 
-   static final void method1047(int var0, int var1, int var2, boolean var3, int var4, boolean var5) {
+   static void method1047(int var0, int var1, int var2, boolean var3, int var4, boolean var5) {
       try {
          if(!false) {
             if(var2 > var4) {
@@ -53,7 +53,7 @@ final class Class41 {
       }
    }
 
-   static final void method1048(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
+   static void method1048(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
       try {
          if(var5 > -15) {
             anInt688 = -64;
@@ -201,7 +201,7 @@ final class Class41 {
       }
    }
 
-   static final RSString method1052(int var0, long var1) {
+   static RSString method1052(int var0, long var1) {
       try {
          if(var1 > 0 && var1 < 6582952005840035281L) {
             if(var1 % 37L == 0) {
@@ -238,7 +238,7 @@ final class Class41 {
       }
    }
 
-   static final void method1053(CacheIndex var1) {
+   static void method1053(CacheIndex var1) {
       try {
          Class97.aClass153_1372 = var1;
          int var2 = -52 / (((byte) -117 - -55) / 36);
@@ -258,7 +258,7 @@ final class Class41 {
       }
    }
 
-   private final boolean method1054(byte var1, int var2, int var3, byte[] var4, boolean var5) {
+   private boolean method1054(byte var1, int var2, int var3, byte[] var4, boolean var5) {
       try {
          Class30 var6 = this.aClass30_681;
          synchronized(var6) {

@@ -7,7 +7,7 @@ final class Class167 {
    static int anInt2087 = 0;
 
 
-   static final void addLocalNPCs() {
+   static void addLocalNPCs() {
       try {
          while(true) {
             if(GraphicDefinition.incomingBuffer.method815(Class130.incomingPacketLength, 32666) >= 27) {
@@ -83,7 +83,7 @@ final class Class167 {
       }
    }
 
-   static final void method2263(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
+   static void method2263(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
       Class113 var7 = new Class113();
       var7.anInt1553 = var1 / 128;
       var7.anInt1547 = var2 / 128;
@@ -99,7 +99,7 @@ final class Class167 {
       Class3_Sub28_Sub8.aClass113Array3610[Class3_Sub4.anInt2249++] = var7;
    }
 
-   static final void method2264(boolean var0) {
+   static void method2264(boolean var0) {
       if(var0) {
          Class75_Sub2.aClass3_Sub2ArrayArrayArray2638 = Class166.aClass3_Sub2ArrayArrayArray2065;
          Class44.anIntArrayArrayArray723 = Class3_Sub28_Sub7.anIntArrayArrayArray3605;
@@ -113,7 +113,7 @@ final class Class167 {
       Class3_Sub17.anInt2456 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638.length;
    }
 
-   static final void method2265(int var0) {
+   static void method2265(int var0) {
       try {
          CS2Script.aClass93_2442.method1524();
       } catch (RuntimeException var2) {
@@ -121,7 +121,7 @@ final class Class167 {
       }
    }
 
-   static final void method2266(int var0, int var1) {
+   static void method2266(int var0, int var1) {
       try {
          if(Class9.anInt120 != 0 && var1 != -1) {
             Class70.method1285(Node.aClass153_2573, var1, Class9.anInt120);
@@ -132,7 +132,7 @@ final class Class167 {
       }
    }
 
-   static final void method2267(int var0, int var1, boolean var2, RSByteBuffer var3, int var4, int var5, byte var6, int var7, int var8) {
+   static void method2267(int var0, int var1, boolean var2, RSByteBuffer var3, int var4, int var5, byte var6, int var7, int var8) {
       try {
          int var9;
          if(var5 >= 0 && var5 < 104 && var4 >= 0 && var4 < 104) {
@@ -208,7 +208,7 @@ final class Class167 {
       }
    }
 
-   static final int method2268(byte var0, int var1, int var2) {
+   static int method2268(byte var0, int var1, int var2) {
       try {
          Class3_Sub25 var3 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var1, 0);
          if(var3 == null) {
@@ -230,7 +230,7 @@ final class Class167 {
       }
    }
 
-   static final void method2269(byte var0) {
+   static void method2269(byte var0) {
       try {
          if(null != Class3_Sub15.aClass89_2429) {
             Class3_Sub15.aClass89_2429.close(14821);

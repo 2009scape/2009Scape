@@ -12,14 +12,14 @@ static boolean aBoolean1080 = false;
    static int anInt1082;
    static int[] anIntArray1083;
    static boolean aBoolean1084 = false;
-   private NodeList aClass13_1086 = new NodeList();
+   private final NodeList aClass13_1086 = new NodeList();
    int anInt1087 = 0;
    static int anInt1088 = 0;
    private Thread aThread1090;
    private boolean aBoolean1091 = false;
 
 
-   private final void method1299(Class3_Sub28_Sub10_Sub1 var1) {
+   private void method1299(Class3_Sub28_Sub10_Sub1 var1) {
       try {
          NodeList var3 = this.aClass13_1086;
          synchronized(var3) {
@@ -36,7 +36,7 @@ static boolean aBoolean1080 = false;
       }
    }
 
-   static final Class3_Sub28_Sub17 method1300(int var0, int var1, byte var2, CacheIndex var3, CacheIndex var4) {
+   static Class3_Sub28_Sub17 method1300(int var0, int var1, byte var2, CacheIndex var3, CacheIndex var4) {
       try {
          if(var2 < 123) {
             aBoolean1080 = false;
@@ -48,7 +48,7 @@ static boolean aBoolean1080 = false;
       }
    }
 
-   static final void method1301(int var0, int var1, int var2, int var3, boolean var4, int var5) {
+   static void method1301(int var0, int var1, int var2, int var3, boolean var4, int var5) {
       try {
          if(Class3_Sub28_Sub7.anInt3606 != var2 || Class3_Sub7.anInt2294 != var1 || var0 != Class140_Sub3.anInt2745 && !NPC.method1986(45)) {
             Class3_Sub28_Sub7.anInt3606 = var2;
@@ -202,7 +202,7 @@ static boolean aBoolean1080 = false;
       }
    }
 
-   static final Class3_Sub28_Sub6 method1302() {
+   static Class3_Sub28_Sub6 method1302() {
       try {
          Class3_Sub28_Sub6 var1 = (Class3_Sub28_Sub6)Class126.aClass13_1666.method876((byte)100);
          if(var1 != null) {
@@ -233,7 +233,7 @@ static boolean aBoolean1080 = false;
       }
    }
 
-   static final RSString method1303(RSInterface var0, RSString var1) {
+   static RSString method1303(RSInterface var0, RSString var1) {
       try {
          if(~var1.indexOf(Class24.aClass94_468, 102) == 0) {
             return var1;
@@ -254,7 +254,7 @@ static boolean aBoolean1080 = false;
                                        var3 = var1.indexOf(Class3_Sub13_Sub35.aClass94_3418, 113);
                                        if(var3 == -1) {
                                           while(true) {
-                                             var3 = var1.indexOf(Class70.aClass94_1051, 0 ^ 50);
+                                             var3 = var1.indexOf(Class70.aClass94_1051, 50);
                                              if(var3 == -1) {
                                                 return var1;
                                              }
@@ -269,7 +269,6 @@ static boolean aBoolean1080 = false;
                                                       var4 = Class3_Sub13_Sub3.method178(var5, var5.length, 0);
                                                    }
                                                 } catch (UnsupportedEncodingException var6) {
-                                                   ;
                                                 }
                                              }
 
@@ -312,7 +311,6 @@ static boolean aBoolean1080 = false;
          try {
             this.aThread1090.join();
          } catch (InterruptedException var4) {
-            ;
          }
 
          this.aThread1090 = null;
@@ -368,7 +366,7 @@ static boolean aBoolean1080 = false;
       }
    }
 
-   static final void ClientCommands(RSString command) {
+   static void ClientCommands(RSString command) {
       try {
             int var2;
             int var3;
@@ -589,7 +587,6 @@ static boolean aBoolean1080 = false;
                   try {
                      this.aClass13_1086.wait();
                   } catch (InterruptedException var6) {
-                     ;
                   }
                   continue;
                }

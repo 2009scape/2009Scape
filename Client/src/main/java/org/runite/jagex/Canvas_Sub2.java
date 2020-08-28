@@ -9,9 +9,9 @@ final class Canvas_Sub2 extends Canvas {
    static boolean aBoolean29 = false;
    static int anInt30;
    static int anInt31 = 0;
-   private Component aComponent33;
+   private final Component aComponent33;
 
-   static final void method56(int var0) {
+   static void method56(int var0) {
       try {
          int var3 = 81 % ((39 - 99) / 41);
          Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 6, var0);
@@ -21,7 +21,7 @@ final class Canvas_Sub2 extends Canvas {
       }
    }
 
-   static final boolean loadInterface(int archive) {
+   static boolean loadInterface(int archive) {
       try {
          if(!Class130.aBooleanArray1703[archive]) {
             if(Class3_Sub13_Sub29.aClass153_3361.method2117(-99, archive)) {
@@ -66,7 +66,7 @@ final class Canvas_Sub2 extends Canvas {
       }
    }
 
-   static final void parsePlayerMasks(int var0) {
+   static void parsePlayerMasks(int var0) {
       try {
          int var1 = 0;
          if(var0 >= -46) {
@@ -108,7 +108,7 @@ final class Canvas_Sub2 extends Canvas {
       }
    }
 
-   static final void method60(int var0, int var1, int var2, Class91[] var3, int var4, byte var5, byte[] var6, int var7, int var8, int var9, boolean var10) {
+   static void method60(int var0, int var1, int var2, Class91[] var3, int var4, byte var5, byte[] var6, int var7, int var8, int var9, boolean var10) {
       try {
          int var13;
          if(!var10) {
@@ -179,7 +179,6 @@ final class Canvas_Sub2 extends Canvas {
                         }
                      }
                   } else if(var16 == 2) {
-                     ;
                   }
                } else if(var15 <= var7) {
                   var18 = 7 + var1;

@@ -92,7 +92,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 
    public final void windowDeactivated(WindowEvent var1) {}
 
-   static final RSString method27(RSString var0) {
+   static RSString method27(RSString var0) {
       try {
          if(!true) {
             method26(-78);
@@ -122,7 +122,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
       }
    }
 
-   static final void method28() {
+   static void method28() {
       try {
          Class143.aClass93_1874.method1524();
          if(!true) {
@@ -244,7 +244,6 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
             try {
                this.getAppletContext().showDocument(new URL(this.getCodeBase(), "error_game_" + var1 + ".ws"), "_top");
             } catch (Exception var4) {
-               ;
             }
 
          }
@@ -284,7 +283,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 
    public final void windowDeiconified(WindowEvent var1) {}
 
-   static final void method34() {
+   static void method34() {
       try {
          if(null != WorldListEntry.aClass155_2627) {
             WorldListEntry.aClass155_2627.method2163();
@@ -308,7 +307,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
       }
    }
 
-   private final void method35(int var1, boolean var2) {
+   private void method35(int var1, boolean var2) {
       try {
          synchronized(this) {
             if(Class29.aBoolean554) {
@@ -325,7 +324,6 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
          try {
             this.method32();
          } catch (Exception var8) {
-            ;
          }
 
          if(Class3_Sub28_Sub12.aCanvas3648 != null) {
@@ -333,7 +331,6 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
                Class3_Sub28_Sub12.aCanvas3648.removeFocusListener(this);
                Class3_Sub28_Sub12.aCanvas3648.getParent().remove(Class3_Sub28_Sub12.aCanvas3648);
             } catch (Exception var7) {
-               ;
             }
          }
 
@@ -341,20 +338,18 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
             try {
                Class38.aClass87_665.method1445(0);
             } catch (Exception var6) {
-               ;
             }
          }
 
          this.method33();
          if(var1 <= 31) {
-            this.launch(frame);
+            this.launch();
          }
 
          if(null != frame) {
             try {
                System.exit(0);
             } catch (Throwable var5) {
-               ;
             }
          }
 
@@ -366,7 +361,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 
    public final void windowActivated(WindowEvent var1) {}
    
-   private final void method36() {
+   private void method36() {
 	      try {
 	         long var2 = Class5.method830((byte)-55);
 	         long var4 = Class134.aLongArray1766[CacheIndex.anInt1953];
@@ -382,15 +377,14 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 
 	         this.method25();
 	         if(0L != var4 && var2 <= var4) {
-	            ;
-	         }
+             }
 
 	      } catch (RuntimeException var9) {
 	         throw Class44.clientError(var9, "rc.R(" + true + ')');
 	      }
 	   }
 
-   public static final void providesignlink(Signlink var0) {
+   public static void providesignlink(Signlink var0) {
       try {
          Class38.aClass87_665 = var0;
          Class3_Sub13_Sub10.aClass87_3125 = var0;
@@ -400,7 +394,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
       }
    }
 
-   private final void method37() {
+   private void method37() {
       try {
          long var2 = Class5.method830((byte)-55);
          long var4 = Class163_Sub1.aLongArray2986[Class62.anInt950];
@@ -492,8 +486,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	                  try {
 	                     var8.invoke(Class38.aClass87_665.anApplet1219, new Object[]{Boolean.TRUE});
 	                  } catch (Throwable var4) {
-	                     ;
-	                  }
+                      }
 	               }
 	            }
 
@@ -547,7 +540,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 
    public abstract void init();
 
-   final void launch(Frame frame) {
+   final void launch() {
       try {
          if(-8057 != -8057) {
             this.method38(12);
@@ -562,7 +555,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
             Class3_Sub9.anInt2334 = 1024;
             Class106.anInt1442 = 0;
             Class3_Sub29.anApplet_Sub1_2588 = this;
-            frame = new Frame();
+            Frame frame = new Frame();
             frame.setTitle("Jagex");
             frame.setResizable(true);
             frame.addWindowListener(this);

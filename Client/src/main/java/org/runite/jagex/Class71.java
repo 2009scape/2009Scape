@@ -2,11 +2,10 @@ package org.runite.jagex;
 
 final class Class71 {
 
-   private int[] anIntArray1061;
+   private final int[] anIntArray1061;
    private float[][] aFloatArrayArray1062;
    int anInt1063;
-   private int[] anIntArray1064;
-   private int anInt1065;
+   private final int anInt1065;
    private int[] anIntArray1066;
 
 
@@ -14,7 +13,7 @@ final class Class71 {
       return this.aFloatArrayArray1062[this.method1290()];
    }
 
-   private final void method1289() {
+   private void method1289() {
       int[] var1 = new int[this.anInt1065];
       int[] var2 = new int[33];
 
@@ -110,16 +109,14 @@ final class Class71 {
    final int method1290() {
       int var1;
       for(var1 = 0; this.anIntArray1066[var1] >= 0; var1 = Class3_Sub14.method364() != 0?this.anIntArray1066[var1]:var1 + 1) {
-         ;
       }
 
       return ~this.anIntArray1066[var1];
    }
 
-   private static final int method1291(int var0, int var1) {
+   private static int method1291(int var0, int var1) {
       int var2;
       for(var2 = (int)Math.pow((double)var0, 1.0D / (double)var1) + 1; Class140_Sub6.method2028(var1, var2) > var0; --var2) {
-         ;
       }
 
       return var2;
@@ -170,11 +167,11 @@ final class Class71 {
             var7 = this.anInt1065 * this.anInt1063;
          }
 
-         this.anIntArray1064 = new int[var7];
+         int[] anIntArray1064 = new int[var7];
 
          int var8;
          for(var8 = 0; var8 < var7; ++var8) {
-            this.anIntArray1064[var8] = Class3_Sub14.method368(var5);
+            anIntArray1064[var8] = Class3_Sub14.method368(var5);
          }
 
          this.aFloatArrayArray1062 = new float[this.anInt1065][this.anInt1063];
@@ -188,7 +185,7 @@ final class Class71 {
 
                for(var11 = 0; var11 < this.anInt1063; ++var11) {
                   int var12 = var8 / var10 % var7;
-                  float var13 = (float)this.anIntArray1064[var12] * var15 + var16 + var9;
+                  float var13 = (float) anIntArray1064[var12] * var15 + var16 + var9;
                   this.aFloatArrayArray1062[var8][var11] = var13;
                   if(var6) {
                      var9 = var13;
@@ -203,7 +200,7 @@ final class Class71 {
                var10 = var8 * this.anInt1063;
 
                for(var11 = 0; var11 < this.anInt1063; ++var11) {
-                  float var17 = (float)this.anIntArray1064[var10] * var15 + var16 + var9;
+                  float var17 = (float) anIntArray1064[var10] * var15 + var16 + var9;
                   this.aFloatArrayArray1062[var8][var11] = var17;
                   if(var6) {
                      var9 = var17;

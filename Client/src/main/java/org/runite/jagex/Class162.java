@@ -9,7 +9,7 @@ final class Class162 {
    static byte[] aByteArray2040 = new byte[520];
 
 
-   static final void method2203(Player var0) {
+   static void method2203(Player var0) {
       try {
          Class3_Sub9 var2 = (Class3_Sub9)Class3_Sub28_Sub7_Sub1.aClass130_4046.method1780(var0.displayName.toLong(8 + -126), 0);
          if(8 != 8) {
@@ -30,14 +30,13 @@ final class Class162 {
       }
    }
 
-   static final void method2204(RSByteBuffer var0, int var1) {
+   static void method2204(RSByteBuffer var0, int var1) {
       try {
          if(null != Class69.aClass30_1039) {
             try {
                Class69.aClass30_1039.method984(-117, 0L);
                Class69.aClass30_1039.method983(var0.buffer, var0.index, -903171152, 24);
             } catch (Exception var3) {
-               ;
             }
          }
 
@@ -62,7 +61,7 @@ final class Class162 {
       }
    }
 
-   static final void method2206(int var1) {
+   static void method2206(int var1) {
       try {
          Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 4, var1);
          var2.a(true);
@@ -71,7 +70,7 @@ final class Class162 {
       }
    }
 
-   static final ObjectDefinition getObjectDefinition(int var0, int objectId) {
+   static ObjectDefinition getObjectDefinition(int var0, int objectId) {
       try {
          if(var0 != 4) {
             method2205(95);

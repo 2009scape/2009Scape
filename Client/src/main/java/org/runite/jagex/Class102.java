@@ -2,28 +2,27 @@ package org.runite.jagex;
 
 final class Class102 implements Interface2 {
 
-   private boolean[] aBooleanArray2122;
-   private CacheIndex aClass153_2123;
-   private boolean[] aBooleanArray2124;
+   private final boolean[] aBooleanArray2122;
+   private final CacheIndex aClass153_2123;
+   private final boolean[] aBooleanArray2124;
    static int[] anIntArray2125;
-   private byte[] aByteArray2126;
-   private CacheIndex aClass153_2127;
+   private final byte[] aByteArray2126;
+   private final CacheIndex aClass153_2127;
    private boolean[] aBooleanArray2128;
-   private byte[] aByteArray2129;
+   private final byte[] aByteArray2129;
    static int anInt2130;
    static Class135[] aClass135Array2131 = new Class135[50];
-   private boolean[] aBooleanArray2133;
    private boolean aBoolean2134 = false;
-   private boolean[] aBooleanArray2135;
+   private final boolean[] aBooleanArray2135;
    static int anInt2136;
-   private short[] aShortArray2137;
+   private final short[] aShortArray2137;
    private Class47 aClass47_2138;
    private int anInt2139 = 50;
    static Class3_Sub28_Sub16_Sub2[] aClass3_Sub28_Sub16_Sub2Array2140;
    static Player player;
    private Class47 aClass47_2142;
-   private byte[] aByteArray2143;
-   private byte[] aByteArray2144;
+   private final byte[] aByteArray2143;
+   private final byte[] aByteArray2144;
 
 
    final void method1610(int var2) {
@@ -44,7 +43,7 @@ final class Class102 implements Interface2 {
       }
    }
 
-   static final void method1611(int var0, boolean var1) {
+   static void method1611(int var0, boolean var1) {
       try {
          int var2;
          NPC var3;
@@ -229,7 +228,7 @@ final class Class102 implements Interface2 {
       }
    }
 
-   private final Class3_Sub28_Sub20 method1613(int var1) {
+   private Class3_Sub28_Sub20 method1613(int var1) {
       try {
          if(1 != 1) {
             this.aBooleanArray2128 = (boolean[])null;
@@ -274,7 +273,7 @@ final class Class102 implements Interface2 {
       }
    }
 
-   static final void method1614(boolean var0, long[] var1, int[] var2) {
+   static void method1614(boolean var0, long[] var1, int[] var2) {
       try {
          Class44.method1069(var1, 0, -1 + var1.length, var2);
          if(!var0) {
@@ -307,7 +306,7 @@ final class Class102 implements Interface2 {
       }
    }
 
-   private final Class3_Sub28_Sub18 method1615(int var2) {
+   private Class3_Sub28_Sub18 method1615(int var2) {
       try {
          int var3 = 111 / ((-15 - 48) / 38);
          Class3_Sub28_Sub18 var4 = (Class3_Sub28_Sub18)this.aClass47_2138.method1092((long)var2, 1400);
@@ -337,13 +336,13 @@ final class Class102 implements Interface2 {
    final void method1616(boolean var1) {
       try {
          this.aBoolean2134 = var1;
-         this.method1618(-17830 ^ -17830);
+         this.method1618(0);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "nk.S(" + var1 + ',' + -17830 + ')');
       }
    }
 
-   static final void method1617(int var0, int var1, int var2, int var3, int var4) {
+   static void method1617(int var0, int var1, int var2, int var3, int var4) {
       try {
          if(Class57.anInt902 >= var4 && Class159.anInt2020 <= var2) {
             boolean var6;
@@ -400,7 +399,6 @@ final class Class102 implements Interface2 {
          }
 
          if((byte) 29 == 29) {
-            ;
          }
       } catch (RuntimeException var10) {
          throw Class44.clientError(var10, "nk.R(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (byte) 29 + ')');
@@ -513,64 +511,64 @@ final class Class102 implements Interface2 {
          this.aBooleanArray2128 = new boolean[var7];
          this.aBooleanArray2122 = new boolean[var7];
          this.aBooleanArray2124 = new boolean[var7];
-         this.aBooleanArray2133 = new boolean[var7];
+         boolean[] aBooleanArray2133 = new boolean[var7];
          this.aBooleanArray2135 = new boolean[var7];
 
          int var8;
          for(var8 = 0; var8 < var7; ++var8) {
-            this.aBooleanArray2133[var8] = 1 == var6.getByte((byte)-69);
+            aBooleanArray2133[var8] = 1 == var6.getByte((byte)-69);
          }
 
          for(var8 = 0; var8 < var7; ++var8) {
-            if(this.aBooleanArray2133[var8]) {
+            if(aBooleanArray2133[var8]) {
                this.aBooleanArray2124[var8] = var6.getByte((byte) -50) == 1;
             }
          }
 
          for(var8 = 0; var7 > var8; ++var8) {
-            if(this.aBooleanArray2133[var8]) {
+            if(aBooleanArray2133[var8]) {
                this.aBooleanArray2128[var8] = 1 == var6.getByte((byte)-60);
             }
          }
 
          for(var8 = 0; var7 > var8; ++var8) {
-            if(this.aBooleanArray2133[var8]) {
+            if(aBooleanArray2133[var8]) {
                this.aBooleanArray2122[var8] = var6.getByte((byte) -23) == 1;
             }
          }
 
          for(var8 = 0; var8 < var7; ++var8) {
-            if(this.aBooleanArray2133[var8]) {
+            if(aBooleanArray2133[var8]) {
                this.aBooleanArray2135[var8] = var6.getByte((byte) -30) == 1;
             }
          }
 
          for(var8 = 0; var7 > var8; ++var8) {
-            if(this.aBooleanArray2133[var8]) {
+            if(aBooleanArray2133[var8]) {
                this.aByteArray2126[var8] = var6.getByte();
             }
          }
 
          for(var8 = 0; var7 > var8; ++var8) {
-            if(this.aBooleanArray2133[var8]) {
+            if(aBooleanArray2133[var8]) {
                this.aByteArray2129[var8] = var6.getByte();
             }
          }
 
          for(var8 = 0; var8 < var7; ++var8) {
-            if(this.aBooleanArray2133[var8]) {
+            if(aBooleanArray2133[var8]) {
                this.aByteArray2144[var8] = var6.getByte();
             }
          }
 
          for(var8 = 0; var7 > var8; ++var8) {
-            if(this.aBooleanArray2133[var8]) {
+            if(aBooleanArray2133[var8]) {
                this.aByteArray2143[var8] = var6.getByte();
             }
          }
 
          for(var8 = 0; var7 > var8; ++var8) {
-            if(this.aBooleanArray2133[var8]) {
+            if(aBooleanArray2133[var8]) {
                this.aShortArray2137[var8] = (short)var6.getShort(1);
             }
          }

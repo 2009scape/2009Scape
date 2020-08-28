@@ -23,7 +23,7 @@ final class Class3_Sub13_Sub3 extends Class3_Sub13 {
       }
    }
 
-   static final RSString method178(byte[] var0, int var2, int var3) {
+   static RSString method178(byte[] var0, int var2, int var3) {
       try {
          RSString var4 = new RSString();
          var4.byteArray = new byte[var2];
@@ -66,7 +66,7 @@ final class Class3_Sub13_Sub3 extends Class3_Sub13 {
       }
    }
 
-   static final int method179(byte var0, int var1) {
+   static int method179(byte var0, int var1) {
       try {
          if(var0 == 92) {
             if(null != Class3_Sub15.aClass89_2429) {
@@ -97,7 +97,7 @@ final class Class3_Sub13_Sub3 extends Class3_Sub13 {
       }
    }
 
-   static final void method180(int var0, int var1, int var2) {
+   static void method180(int var0, int var1, int var2) {
       try {
          int var3;
          if(Class113.anInt1559 != var2) {
@@ -133,7 +133,7 @@ final class Class3_Sub13_Sub3 extends Class3_Sub13 {
       }
    }
 
-   static final boolean method181() {
+   static boolean method181() {
       try {
          if(-15450 != -15450) {
             method182(false);
@@ -160,7 +160,7 @@ final class Class3_Sub13_Sub3 extends Class3_Sub13 {
       }
    }
 
-   static final void method182(boolean var0) {
+   static void method182(boolean var0) {
       try {
          if(!var0) {
             method179((byte)120, -73);
@@ -173,7 +173,7 @@ final class Class3_Sub13_Sub3 extends Class3_Sub13 {
       }
    }
 
-   static final void method183(int var0) {
+   static void method183(int var0) {
       try {
          if(var0 > -91) {
             aClass148_3049 = (KeyboardListener)null;
@@ -186,7 +186,7 @@ final class Class3_Sub13_Sub3 extends Class3_Sub13 {
       }
    }
 
-   static final void method184(int var0, int var1, int var2, int var3, int var5, int var6) {
+   static void method184(int var0, int var1, int var2, int var3, int var5, int var6) {
       try {
          int var11 = Class40.method1040(Class57.anInt902, var6, Class159.anInt2020);
          int var12 = Class40.method1040(Class57.anInt902, var0, Class159.anInt2020);

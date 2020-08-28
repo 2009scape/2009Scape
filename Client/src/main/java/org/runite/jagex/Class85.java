@@ -12,7 +12,7 @@ final class Class85 {
    static int anInt1174 = 99;
 
 
-   static final int method1423(RSByteBuffer var1, RSString var2) {
+   static int method1423(RSByteBuffer var1, RSString var2) {
       try {
          if(false) {
             method1426(17);
@@ -28,7 +28,7 @@ final class Class85 {
       }
    }
 
-   static final AbstractIndexedSprite[] method1424(CacheIndex var0, int var3) {
+   static AbstractIndexedSprite[] method1424(CacheIndex var0, int var3) {
 	      try {
 	         if((byte) -12 != -12) {
 	            anInt1174 = 37;
@@ -40,7 +40,7 @@ final class Class85 {
 	      }
 	   }
 
-   static final void method1425(int var0) {
+   static void method1425(int var0) {
       Class3_Sub13_Sub35.anInt3419 = var0;
 
       for(int var1 = 0; var1 < IOHandler.anInt1234; ++var1) {

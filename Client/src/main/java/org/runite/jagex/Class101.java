@@ -15,7 +15,7 @@ final class Class101 {
    static short[][] aShortArrayArray1429;
 
 
-   static final void method1607(int var0, int var1, boolean var2, int[] var3, int[] var4) {
+   static void method1607(int var0, int var1, boolean var2, int[] var3, int[] var4) {
       try {
          if(var2) {
             method1608((byte)106);
@@ -74,7 +74,7 @@ final class Class101 {
       }
    }
 
-   static final void method1609() {
+   static void method1609() {
       try {
          Class2.anInterface5Array70 = null;
          if(90 <= 49) {

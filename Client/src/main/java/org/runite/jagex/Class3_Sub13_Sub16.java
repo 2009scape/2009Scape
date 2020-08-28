@@ -21,7 +21,7 @@ final class Class3_Sub13_Sub16 extends Class3_Sub13 {
    static int anInt3205;
 
 
-   private final void method242() {
+   private void method242() {
       try {
          Random var2 = new Random((long)this.anInt3197);
          this.aShortArray3200 = new short[512];
@@ -51,7 +51,7 @@ final class Class3_Sub13_Sub16 extends Class3_Sub13 {
       }
    }
 
-   static final int method243(RSString var0) {
+   static int method243(RSString var0) {
       try {
          if((byte) 13 != 13) {
             method245(-29);
@@ -161,7 +161,7 @@ final class Class3_Sub13_Sub16 extends Class3_Sub13 {
       }
    }
 
-   static final void method244(int var1, int var2, int var3, int var4) {
+   static void method244(int var1, int var2, int var3, int var4) {
       try {
          int var5;
          if(var3 >= var1) {

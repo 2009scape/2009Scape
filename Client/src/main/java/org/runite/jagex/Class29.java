@@ -11,7 +11,7 @@ final class Class29 {
    static int anInt562;
 
 
-   static final void method968(int var0) {
+   static void method968(int var0) {
       try {
          int[] var1 = new int[Class3_Sub13_Sub23.itemDefinitionSize];
          int var2 = 0;
@@ -40,7 +40,7 @@ final class Class29 {
       }
    }
 
-   static final void method969(CacheIndex var0, int var1) {
+   static void method969(CacheIndex var0, int var1) {
       try {
          Class12.aClass153_322 = var0;
          if(var1 < 39) {
@@ -71,7 +71,7 @@ final class Class29 {
       }
    }
 
-   static final void method971(int var0, int[][] var1, float[][] var2, int var3, float[][] var4, int var5, byte var6, int var7, int var8, boolean var10, byte var11, int var12, float[][] var13, int var14, Class3_Sub11 var15) {
+   static void method971(int var0, int[][] var1, float[][] var2, int var3, float[][] var4, int var5, byte var6, int var7, int var8, boolean var10, byte var11, int var12, float[][] var13, int var14, Class3_Sub11 var15) {
       try {
          int var16 = 255 + (var0 << 8);
          int var17 = (var5 << 8) - -255;
@@ -194,7 +194,7 @@ final class Class29 {
       }
    }
 
-   private final void method972(RSByteBuffer var1, int var3) {
+   private void method972(RSByteBuffer var1, int var3) {
       try {
          if((byte) -117 > -86) {
             this.method970(-83, (RSByteBuffer)null);

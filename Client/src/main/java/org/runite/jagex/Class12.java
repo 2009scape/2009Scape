@@ -14,7 +14,7 @@ final class Class12 {
    static RSString aClass94_331 = RSString.createRSString("(U1");
 
 
-   static final void method870(int var0, byte var1, int var2, int var3, int var4, int var5) {
+   static void method870(int var0, byte var1, int var2, int var3, int var4, int var5) {
       try {
          int var6;
          int var7;
@@ -85,7 +85,7 @@ final class Class12 {
       }
    }
 
-   static final int method872(int var1, int var2) {
+   static int method872(int var1, int var2) {
       try {
          Class3_Sub25 var3 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var1, 0);
          return null == var3?0:(-1 >= ~var2 && var2 < var3.anIntArray2551.length?var3.anIntArray2551[var2]:0);
@@ -94,7 +94,7 @@ final class Class12 {
       }
    }
 
-   static final byte[] method873(byte[] var1) {
+   static byte[] method873(byte[] var1) {
       try {
          int var2 = var1.length;
          byte[] var3 = new byte[var2];

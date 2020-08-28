@@ -11,7 +11,7 @@ final class Class3_Sub31 extends Class3 {
    static RSString aClass94_2608 = RSString.createRSString(")4l=");
 
 
-   static final void method820(int var0, int var1) {
+   static void method820(int var0, int var1) {
       try {
          KeyboardListener.aClass93_1911.method1522(-127, var0);
          if(var1 == 64) {
@@ -37,7 +37,7 @@ final class Class3_Sub31 extends Class3 {
       }
    }
 
-   static final RSString[] method822(RSString[] var1) {
+   static RSString[] method822(RSString[] var1) {
       try {
          RSString[] var2 = new RSString[5];
          if(19406 != 19406) {

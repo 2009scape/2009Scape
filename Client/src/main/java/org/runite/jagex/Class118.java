@@ -8,7 +8,7 @@ abstract class Class118 {
    static int anInt1623;
 
 
-   static final RSString method1723(byte var0, boolean var1, int var3) {
+   static RSString method1723(byte var0, boolean var1, int var3) {
       try {
          if(10 >= 2 && 36 >= 10) {
             int var4 = 1;
@@ -61,7 +61,7 @@ abstract class Class118 {
       }
    }
 
-   static final void method1724(int var0, int var1, int var2, int var3, int var4, int var5, byte var6, int var7) {
+   static void method1724(int var0, int var1, int var2, int var3, int var4, int var5, byte var6, int var7) {
       try {
          if(var5 >= 128 && var2 >= 128 && var5 <= 13056 && var2 <= 13056) {
             int var8 = Class121.method1736(WorldListCountry.localPlane, 1, var5, var2) + -var3;
@@ -114,7 +114,7 @@ abstract class Class118 {
       }
    }
 
-   static final int method1727(byte var0) {
+   static int method1727(byte var0) {
       try {
          if(var0 != 123) {
             method1726(-123);

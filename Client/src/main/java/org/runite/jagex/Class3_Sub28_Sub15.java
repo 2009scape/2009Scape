@@ -19,7 +19,7 @@ final class Class3_Sub28_Sub15 extends Node {
    static Class3_Sub19[] aClass3_Sub19Array3694;
    static int anInt3695;
 
-   static final Class100 method629(int var1) {
+   static Class100 method629(int var1) {
       try {
          Class100 var2 = (Class100)Class44.aClass93_725.get((long)var1);
          if(var2 == null) {
@@ -43,7 +43,7 @@ final class Class3_Sub28_Sub15 extends Node {
       }
    }
 
-   static final int method630(int var1) {
+   static int method630(int var1) {
       try {
          return 127 & var1 >> 11;
       } catch (RuntimeException var3) {
@@ -51,7 +51,7 @@ final class Class3_Sub28_Sub15 extends Node {
       }
    }
 
-   static final void method631(CacheIndex var1) {
+   static void method631(CacheIndex var1) {
       try {
          if(!false) {
             Class3_Sub28_Sub5.aClass153_3580 = var1;

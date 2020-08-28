@@ -19,17 +19,17 @@ final class Class92 {
    private static int fogColorRGB = -1;
 
 
-   static final void method1504() {
+   static void method1504() {
       GL gl = HDToolKit.gl;
       gl.glLightfv(16384, 4611, light0Position, 0);
       gl.glLightfv(16385, 4611, light1Position, 0);
    }
 
-   static final float getLightingModelAmbient() {
+   static float getLightingModelAmbient() {
       return light0Diffuse;
    }
 
-   static final void setLightParams(int color, float ambientMod, float l0Diffuse, float l1Diffuse) {
+   static void setLightParams(int color, float ambientMod, float l0Diffuse, float l1Diffuse) {
          if (screenColorRgb != color || lightModelAmbient != ambientMod || light0Diffuse != l0Diffuse || light1Diffuse != l1Diffuse) {
             screenColorRgb = color;
             lightModelAmbient = ambientMod;
@@ -54,7 +54,7 @@ final class Class92 {
       fogColor = null;
    }
 
-   static final void setFogValues(int fogCol, int fogOff) {
+   static void setFogValues(int fogCol, int fogOff) {
       if(fogColorRGB != fogCol || fogOffset != fogOff) {
          fogColorRGB = fogCol;
          fogOffset = fogOff;
@@ -85,7 +85,7 @@ final class Class92 {
       }
    }
 
-   static final void setLightPosition(float x, float y, float z) {
+   static void setLightPosition(float x, float y, float z) {
       if(light0Position[0] != x || light0Position[1] != y || light0Position[2] != z) {
          light0Position[0] = x;
          light0Position[1] = y;
@@ -98,11 +98,11 @@ final class Class92 {
       }
    }
 
-   static final int screenColorRgb() {
+   static int screenColorRgb() {
       return screenColorRgb;
    }
 
-   static final void method1511() {
+   static void method1511() {
       final GL gl = HDToolKit.gl;
       gl.glColorMaterial(1028, 5634);//FRONT, AMBIENT_AND_DIFFUSE
       gl.glEnable(2903);//COLOR_MATERIAL
@@ -117,7 +117,7 @@ final class Class92 {
       initDefaults();
    }
 
-   static final void method1512(float[] var0) {
+   static void method1512(float[] var0) {
       if(var0 == null) {
          var0 = fogColor;
       }
@@ -126,13 +126,13 @@ final class Class92 {
       gl.glFogfv(2918, var0, 0);
    }
 
-   private static final void initDefaults() {
+   private static void initDefaults() {
       setLightParams(defaultScreenColorRgb, 1.1523438F, 0.69921875F, 1.2F);
       setLightPosition(-50.0F, -60.0F, -50.0F);
       setFogValues(defaulFogColorRgb, 0);
    }
 
-   static final float method1514() {
+   static float method1514() {
       return lightModelAmbient;
    }
 

@@ -29,7 +29,7 @@ final class Class3_Sub15 extends Class3 {
       }
    }
 
-   static final void method370() {
+   static void method370() {
       try {
          //int var1 = -125 / ((0 - var0) / 59);
          Class154.aClass93_1955.method1524();
@@ -38,7 +38,7 @@ final class Class3_Sub15 extends Class3 {
       }
    }
 
-   static final Class3_Sub28_Sub3 method371(RSString var1) {
+   static Class3_Sub28_Sub3 method371(RSString var1) {
       try {
          if(2 != 2) {
             method372(false);
@@ -109,7 +109,7 @@ final class Class3_Sub15 extends Class3 {
       }
    }
 
-   static final void method374(int var0, boolean var1, byte[] var2, int var3, Class91[] var5) {
+   static void method374(int var0, boolean var1, byte[] var2, int var3, Class91[] var5) {
       try {
          RSByteBuffer var6 = new RSByteBuffer(var2);
          int objectId = -1;
@@ -179,7 +179,6 @@ final class Class3_Sub15 extends Class3 {
 
          RSByteBuffer var2;
          for(var2 = new RSByteBuffer(var1); var2.buffer[var3 + var2.index] != 0; ++var3) {
-            ;
          }
 
          byte[] var4 = new byte[var3];
@@ -196,7 +195,6 @@ final class Class3_Sub15 extends Class3 {
 
          int var6;
          for(var6 = 0; 0 != var2.buffer[var2.index + var6]; ++var6) {
-            ;
          }
 
          byte[] var7 = new byte[var6];
@@ -212,7 +210,6 @@ final class Class3_Sub15 extends Class3 {
          var8 = var2.index;
 
          for(var2.index += var6; var2.buffer[var9 + var2.index] != 0; ++var9) {
-            ;
          }
 
          byte[] var10 = new byte[var9];
@@ -273,7 +270,6 @@ final class Class3_Sub15 extends Class3 {
 
          int var17;
          for(var17 = 0; var2.buffer[var17 + var2.index] != 0; ++var17) {
-            ;
          }
 
          byte[] var18 = new byte[var17];

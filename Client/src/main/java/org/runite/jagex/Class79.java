@@ -12,7 +12,7 @@ final class Class79 {
    static RSString aClass94_1129 = RSString.createRSString("Clientscript error )2 check log for details");
 
 
-   static final void method1385(int var0, int var1) {
+   static void method1385(int var0, int var1) {
       try {
          Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(4, 6, var1);
          var3.g();
@@ -22,7 +22,7 @@ final class Class79 {
       }
    }
 
-   static final int method1386(KeyEvent var1) {
+   static int method1386(KeyEvent var1) {
       try {
          int var2 = var1.getKeyChar();
          if(!true) {
@@ -69,7 +69,7 @@ final class Class79 {
       }
    }
 
-   private final void method1389(RSByteBuffer var1, int var3) {
+   private void method1389(RSByteBuffer var1, int var3) {
       try {
          if(1 == var3) {
             this.anInt1128 = var1.getShort(1 + 0);
@@ -82,7 +82,7 @@ final class Class79 {
       }
    }
 
-   static final void method1390(RSByteBuffer var0) {
+   static void method1390(RSByteBuffer var0) {
       try {
          if(-var0.index + var0.buffer.length >= 1) {
             int var2 = var0.getByte((byte)-23);
@@ -222,7 +222,7 @@ final class Class79 {
       }
    }
 
-   static final boolean method1391(int var0) {
+   static boolean method1391(int var0) {
       try {
          return var0 != ~Class10.anInt154 || Class101.aClass3_Sub24_Sub4_1421.method473(-128);
       } catch (RuntimeException var2) {

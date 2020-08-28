@@ -23,7 +23,7 @@ final class Class120 {
       }
    }
 
-   static final RSString method1732(RSInterface var0, byte var1, int var2) {
+   static RSString method1732(RSInterface var0, byte var1, int var2) {
       try {
          if(var1 >= -8) {
             anIntArray1638 = (int[])null;

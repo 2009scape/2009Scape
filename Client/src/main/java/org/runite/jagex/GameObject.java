@@ -13,7 +13,7 @@ abstract class GameObject {
    static Class3_Sub28_Sub16_Sub2[] aClass3_Sub28_Sub16_Sub2Array1839;
 
 
-   static final void method1859(double var0, int var2) {
+   static void method1859(double var0, int var2) {
       try {
          if(Class70.aDouble1050 != var0) {
             for(int var3 = 0; 256 > var3; ++var3) {
@@ -60,7 +60,7 @@ abstract class GameObject {
       }
    }
 
-   static final void graphicsSettings(boolean var0, int var1, int var3, int var4) {
+   static void graphicsSettings(boolean var0, int var1, int var3, int var4) {
       try {
          Class53.aLong866 = 0L;
          int var5 = Class83.method1411(0);
@@ -91,7 +91,7 @@ abstract class GameObject {
       }
    }
 
-   static final int method1863(int var0, int var1, int var3, int var4, int var5, int var6) {
+   static int method1863(int var0, int var1, int var3, int var4, int var5, int var6) {
       try {
          int var7;
          if((1 & var5) == 1) {
@@ -108,7 +108,7 @@ abstract class GameObject {
       }
    }
 
-   static final void method1864(boolean var0, byte var1, CacheIndex var2, Class3_Sub28_Sub17_Sub1 var3, CacheIndex var4) {
+   static void method1864(boolean var0, byte var1, CacheIndex var2, Class3_Sub28_Sub17_Sub1 var3, CacheIndex var4) {
       try {
          Class139.aBoolean1827 = var0;
          Class3_Sub29.aClass153_2581 = var4;
@@ -138,7 +138,7 @@ abstract class GameObject {
 
    abstract void animate(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, long var9, int var11, Class127_Sub1 var12);
 
-   static final void method1869(byte var0, int var1, int var2, int var3, int var4, int var5) {
+   static void method1869(byte var0, int var1, int var2, int var3, int var4, int var5) {
       try {
          int var6 = var2 - var3;
          int var7 = var4 + -var5;
@@ -216,7 +216,7 @@ abstract class GameObject {
       }
    }
 
-   static final void method1870() {
+   static void method1870() {
       try {
          Class101.aClass3_Sub24_Sub4_1421.method505((byte)-128);
          Class10.anInt154 = 1;

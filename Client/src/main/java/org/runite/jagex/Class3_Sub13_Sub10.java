@@ -14,7 +14,7 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
    private int anInt3127 = 3072;
    private int anInt3128 = 1024;
 
-   static final int method210(int var1, int var2, int var3) {
+   static int method210(int var1, int var2, int var3) {
       try {
          if(var3 == var2) {
             return var2;
@@ -84,7 +84,7 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
       }
    }
 
-   static final void method212(long var0) {
+   static void method212(long var0) {
       try {
          if(0L != var0) {
             for(int var3 = 0; Class3_Sub28_Sub5.anInt3591 > var3; ++var3) {
@@ -110,7 +110,7 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
       }
    }
 
-   static final void method213(int var0, int var1, int var2, int var3, GameObject var4, long var5, GameObject var7, GameObject var8) {
+   static void method213(int var0, int var1, int var2, int var3, GameObject var4, long var5, GameObject var7, GameObject var8) {
       Class72 var9 = new Class72();
       var9.aClass140_1073 = var4;
       var9.anInt1078 = var1 * 128 + 64;
@@ -141,7 +141,7 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
       Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var0][var1][var2].aClass72_2245 = var9;
    }
 
-   static final void method214(GameObject var0, int var1, int var2, int var3, int var4, int var5) {
+   static void method214(GameObject var0, int var1, int var2, int var3, int var4, int var5) {
       boolean var6 = true;
       int var7 = var2;
       int var8 = var2 + var4;
@@ -189,7 +189,7 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
 
    }
 
-   static final void method215(byte var0, LDIndexedSprite var1) {
+   static void method215(byte var0, LDIndexedSprite var1) {
       try {
          short var2 = 256;
          int var3 = 0;
@@ -286,7 +286,7 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
       super(1, false);
    }
 
-   static final void method216(RSByteBuffer var0) {
+   static void method216(RSByteBuffer var0) {
       try {
          for(int var2 = 0; var2 < Class57.activeWorldListSize; ++var2) {
             int var3 = var0.getSmart();

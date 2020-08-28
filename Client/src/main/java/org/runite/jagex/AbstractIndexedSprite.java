@@ -13,7 +13,7 @@ abstract class AbstractIndexedSprite {
    int anInt1470;
 
 
-   static final void method1662(Class3 var0, Class3 var1) {
+   static void method1662(Class3 var0, Class3 var1) {
       try {
          if(null != var0.aClass3_76) {
             var0.method86(-1024);
@@ -41,7 +41,7 @@ abstract class AbstractIndexedSprite {
       }
    }
 
-   static final NodeList method1664(int var0, int var1) {
+   static NodeList method1664(int var0, int var1) {
       try {
          NodeList var3 = new NodeList();
 
@@ -58,7 +58,7 @@ abstract class AbstractIndexedSprite {
       }
    }
 
-   static final void method1665(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
+   static void method1665(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
       try {
          int var7 = var5 + var2;
          int var8 = -var5 + var4;

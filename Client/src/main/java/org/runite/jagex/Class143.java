@@ -8,7 +8,7 @@ final class Class143 {
    static RSString aClass94_1880 = RSString.createRSString(")1");
 
 
-   static final void method2062(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
+   static void method2062(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
       try {
          int var12 = Class40.method1040(Class57.anInt902, var6, Class159.anInt2020);
          int var13 = Class40.method1040(Class57.anInt902, var3, Class159.anInt2020);

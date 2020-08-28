@@ -11,7 +11,7 @@ final class OutputStream_Sub1 extends OutputStream {
    static int[] anIntArray49;
 
 
-   static final short[] method65(short[] var1) {
+   static short[] method65(short[] var1) {
       try {
          if(23032 != 23032) {
             return (short[])null;
@@ -27,7 +27,7 @@ final class OutputStream_Sub1 extends OutputStream {
       }
    }
 
-   static final void method66(RSString var0, int var1, int var2, byte var3, int var4) {
+   static void method66(RSString var0, int var1, int var2, byte var3, int var4) {
       try {
          RSInterface var5 = Class3_Sub28_Sub16.method638(var4, var1);
          if(null != var5) {
@@ -140,7 +140,7 @@ final class OutputStream_Sub1 extends OutputStream {
       }
    }
 
-   static final void method68(int var0, Class140_Sub4 var2) {
+   static void method68(int var0, Class140_Sub4 var2) {
       try {
          if(var2.anInt2800 <= Class44.anInt719) {
             if(var2.anInt2790 >= Class44.anInt719) {

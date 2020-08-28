@@ -3,7 +3,7 @@ import java.util.Random;
 
 abstract class Class164 {
 
-   private short[] aShortArray2047 = new short[512];
+   private final short[] aShortArray2047 = new short[512];
    static int[] anIntArray2048;
    private short[] aShortArray2049;
    static int anInt2050;
@@ -130,7 +130,7 @@ abstract class Class164 {
 
    abstract void method2231(byte var1);
 
-   private final void method2232() {
+   private void method2232() {
       try {
          this.aShortArray2049 = new short[this.anInt2062];
          int var2 = 0;
@@ -150,7 +150,7 @@ abstract class Class164 {
 
    abstract void method2233();
 
-   static final int method2234(int var0, int var1) {
+   static int method2234(int var0, int var1) {
       try {
          int var2 = -27 / ((var1 - -87) / 39);
          return 1023 & var0;
@@ -173,7 +173,7 @@ abstract class Class164 {
       }
    }
 
-   private final void method2236(int var1) {
+   private void method2236(int var1) {
       try {
          Random var2 = new Random((long)this.anInt2054);
 

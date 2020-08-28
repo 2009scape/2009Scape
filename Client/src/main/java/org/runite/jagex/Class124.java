@@ -19,7 +19,7 @@ final class Class124 {
       }
    }
 
-   static final void method1745() {
+   static void method1745() {
       try {
          for(int var1 = 0; var1 < 104; ++var1) {
             for(int var2 = 0; 104 > var2; ++var2) {
@@ -32,7 +32,7 @@ final class Class124 {
       }
    }
 
-   static final void method1746(boolean var0, byte var1) {
+   static void method1746(boolean var0, byte var1) {
       try {
          if(var1 > -31) {
             aClass153_1661 = (CacheIndex)null;
@@ -44,7 +44,7 @@ final class Class124 {
       }
    }
 
-   static final Class3_Sub28_Sub3 method1747(RSByteBuffer var0) {
+   static Class3_Sub28_Sub3 method1747(RSByteBuffer var0) {
       try {
          Class3_Sub28_Sub3 var2 = new Class3_Sub28_Sub3(var0.getString(), var0.getString(), var0.getShort(1), var0.getShort(1), var0.getInt(), var0.getByte((byte)-91) == 1, var0.getByte((byte)-112));
          int var3 = var0.getByte((byte)-83);

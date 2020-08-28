@@ -43,7 +43,7 @@ final class Class9 {
    int anInt147;
 
 
-   static final void method848(int var0) {
+   static void method848(int var0) {
       try {
          if(Class44.aFloat727 < NPC.aFloat3979) {
             Class44.aFloat727 = (float)((double)Class44.aFloat727 + (double)Class44.aFloat727 / 30.0D);

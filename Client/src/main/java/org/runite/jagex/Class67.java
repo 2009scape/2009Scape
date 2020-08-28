@@ -42,7 +42,7 @@ final class Class67 implements Runnable {
       }
    }
 
-   static final int method1258(byte var0) {
+   static int method1258(byte var0) {
       try {
          Class136.anInt1780 = 0;
          if(var0 != -53) {
@@ -55,7 +55,7 @@ final class Class67 implements Runnable {
       }
    }
 
-   static final void method1259(int var0) {
+   static void method1259(int var0) {
       try {
          if((byte) 109 > 12) {
             Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 12, var0);
@@ -66,7 +66,7 @@ final class Class67 implements Runnable {
       }
    }
 
-   static final void method1260(int var0, int var1, RSInterface[] var2) {
+   static void method1260(int var0, int var1, RSInterface[] var2) {
       try {
          for(int var3 = 0; var3 < var2.length; ++var3) {
             RSInterface var4 = var2[var3];
@@ -76,7 +76,7 @@ final class Class67 implements Runnable {
                      continue;
                   }
 
-                  method1260(var0 ^ 0, var4.anInt279, var2);
+                  method1260(var0, var4.anInt279, var2);
                   if(var4.aClass11Array262 != null) {
                      method1260(23206, var4.anInt279, var4.aClass11Array262);
                   }
@@ -144,7 +144,7 @@ final class Class67 implements Runnable {
       }
    }
 
-   static final RSString method1261(int var0, int var1, RSString[] var2) {
+   static RSString method1261(int var0, int var1, RSString[] var2) {
       try {
          int var4 = 0;
 
@@ -178,7 +178,7 @@ final class Class67 implements Runnable {
       }
    }
 
-   static final int method1262(int var0, int var1) {
+   static int method1262(int var0, int var1) {
       try {
          if(var0 < 20) {
             method1262(15, 87);

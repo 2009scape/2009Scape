@@ -9,7 +9,7 @@ final class Class14 {
    static RSString aClass94_341 = RSString.createRSString(")3");
 
 
-   private static final LDIndexedSprite[] method885(int var1, CacheIndex var2) {
+   private static LDIndexedSprite[] method885(int var1, CacheIndex var2) {
       try {
        //  System.out.println("Class 14 " + var1);
          return !Class75_Sub4.method1351(var2, 0, var1, -30901)?null:Class69.method1281();
@@ -30,7 +30,7 @@ final class Class14 {
       }
    }
 
-   static final void method887(CacheIndex var1) {
+   static void method887(CacheIndex var1) {
       try {
          Class102.aClass3_Sub28_Sub16_Sub2Array2140 = Class157.method2176(0, 32767, Class168.anInt2104, var1);
          Class75_Sub3.aClass3_Sub28_Sub16Array2656 = Class140_Sub6.getSprites(Class3_Sub13_Sub23_Sub1.hitMarkIndex, var1);

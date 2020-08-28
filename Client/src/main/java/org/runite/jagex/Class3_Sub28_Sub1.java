@@ -53,7 +53,7 @@ final class Class3_Sub28_Sub1 extends Node {
       }
    }
 
-   private final void method527(RSByteBuffer var1, int var3) {
+   private void method527(RSByteBuffer var1, int var3) {
       try {
          if(0 != 0) {
             this.method526(-91, -3);
@@ -83,7 +83,6 @@ final class Class3_Sub28_Sub1 extends Node {
                   this.anIntArray3533[var5] = Class3_Sub13_Sub33.method322(var1.getByte());
                }
             } else if (var3 == 4) {
-               ;
             }
          }
 
@@ -140,7 +139,7 @@ final class Class3_Sub28_Sub1 extends Node {
       }
    }
 
-   static final RSString method531() {
+   static RSString method531() {
       try {
          RSString var1;
          if(Class164_Sub1.anInt3012 == 1 && Class3_Sub13_Sub34.anInt3415 < 2) {
@@ -167,7 +166,7 @@ final class Class3_Sub28_Sub1 extends Node {
       }
    }
 
-   static final void method532(int var0, int var1) {
+   static void method532(int var0, int var1) {
       try {
          if(var1 == -28236) {
             Class3_Sub25 var2 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var0, 0);
@@ -180,7 +179,7 @@ final class Class3_Sub28_Sub1 extends Node {
       }
    }
 
-   static final void updateLoadingBar(Color var0, boolean var2, RSString var3, int var4) {
+   static void updateLoadingBar(Color var0, boolean var2, RSString var3, int var4) {
       try {
          try {
             Graphics var5 = Class3_Sub28_Sub12.aCanvas3648.getGraphics();

@@ -6,7 +6,7 @@ final class Class32 {
    static RSString aClass94_592 = RSString.createRSString("<img=0>");
 
 
-   static final RSString method992(RSByteBuffer var0, int var1) {
+   static RSString method992(RSByteBuffer var0, int var1) {
       try {
          if(var1 != 29488) {
             anInt590 = 22;
@@ -18,7 +18,7 @@ final class Class32 {
       }
    }
 
-   static final int method993(int var0, int var1, int var2) {
+   static int method993(int var0, int var1, int var2) {
       try {
          int var3 = -128 + (Class65.method1234(4, var2 + '\ub135', var0 - -91923) + (Class65.method1234(2, var2 + 10294, '\u93bd' + var0) + -128 >> 1) - -(Class65.method1234(1, var2, var0) + -128 >> 2));
          var3 = 35 + (int)(0.3D * (double)var3);
@@ -50,7 +50,7 @@ final class Class32 {
       }
    }
 
-   static final void method995() {
+   static void method995() {
       int var0;
       int var1;
       int var2;
@@ -99,7 +99,7 @@ final class Class32 {
 
    }
 
-   static final void method996() {
+   static void method996() {
       try {
          if(-43 >= -35) {
             method993(3, 100, -24);

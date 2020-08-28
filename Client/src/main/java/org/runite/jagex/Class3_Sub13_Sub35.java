@@ -30,7 +30,7 @@ final class Class3_Sub13_Sub35 extends Class3_Sub13 {
       super(1, false);
    }
 
-   static final int method335(int var0) {
+   static int method335(int var0) {
       try {
          if(var0 != 16859) {
             aClass131_3421 = (Class131)null;
@@ -84,7 +84,7 @@ final class Class3_Sub13_Sub35 extends Class3_Sub13 {
       }
    }
 
-   static final Class3_Sub28_Sub1 getQuickChatMessage(int fileId) {
+   static Class3_Sub28_Sub1 getQuickChatMessage(int fileId) {
       try {
          Class3_Sub28_Sub1 var2 = (Class3_Sub28_Sub1)Class3_Sub13_Sub11.aClass47_3137.method1092((long)fileId, 1400);
          if(null == var2) {

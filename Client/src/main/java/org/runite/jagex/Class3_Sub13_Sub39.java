@@ -17,7 +17,7 @@ final class Class3_Sub13_Sub39 extends Class3_Sub13 {
    private int[][] anIntArrayArray3469;
 
 
-   private final void method352() {
+   private void method352() {
       try {
          int var2 = this.anInt3462;
          int var3;
@@ -33,7 +33,6 @@ final class Class3_Sub13_Sub39 extends Class3_Sub13 {
                var4 = var2 << 4;
 
                for(var3 = 1; this.anIntArrayArray3469.length - 1 > var3 && this.anIntArrayArray3469[var3][0] <= var4; ++var3) {
-                  ;
                }
 
                var6 = this.anIntArrayArray3469[var3];
@@ -66,7 +65,6 @@ final class Class3_Sub13_Sub39 extends Class3_Sub13 {
                var4 = var2 << 4;
 
                for (var3 = 1; -1 + this.anIntArrayArray3469.length > var3 && var4 >= this.anIntArrayArray3469[var3][0]; ++var3) {
-                  ;
                }
 
                var5 = this.anIntArrayArray3469[-1 + var3];
@@ -90,7 +88,6 @@ final class Class3_Sub13_Sub39 extends Class3_Sub13 {
                var4 = var2 << 4;
 
                for (var3 = 1; -1 + this.anIntArrayArray3469.length > var3 && var4 >= this.anIntArrayArray3469[var3][0]; ++var3) {
-                  ;
                }
 
                var6 = this.anIntArrayArray3469[var3];
@@ -147,7 +144,7 @@ final class Class3_Sub13_Sub39 extends Class3_Sub13 {
       super(1, true);
    }
 
-   static final boolean method353(int var0, int var1) {
+   static boolean method353(int var0, int var1) {
       try {
          if(var1 > var0) {
             return false;
@@ -164,7 +161,7 @@ final class Class3_Sub13_Sub39 extends Class3_Sub13 {
       }
    }
 
-   static final void method354(int var1) {
+   static void method354(int var1) {
       try {
          Class3_Sub13_Sub30.anInt3362 = -1;
          if(-126 >= -121) {
@@ -204,7 +201,7 @@ final class Class3_Sub13_Sub39 extends Class3_Sub13 {
       }
    }
 
-   private final void method355() {
+   private void method355() {
       try {
          int[] var2 = this.anIntArrayArray3469[0];
          if(!true) {
@@ -242,7 +239,7 @@ final class Class3_Sub13_Sub39 extends Class3_Sub13 {
       }
    }
 
-   private final int[] method356(int var2) {
+   private int[] method356(int var2) {
       try {
          if(var2 >= 0) {
             if(this.anIntArrayArray3469.length <= var2) {

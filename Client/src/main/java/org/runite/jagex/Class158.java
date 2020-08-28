@@ -20,7 +20,7 @@ abstract class Class158 {
 
    abstract void method2179(Graphics var3);
 
-   static final void method2180(CacheIndex var0, CacheIndex var1) {
+   static void method2180(CacheIndex var0, CacheIndex var1) {
       try {
          Class3_Sub28_Sub7_Sub1.aClass153_4048 = var0;
          Class3_Sub13_Sub18.aClass153_3214 = var1;
@@ -55,7 +55,7 @@ abstract class Class158 {
       }
    }
 
-   static final void method2183(int var0, boolean var1, int var2, int var4, RSInterface[] var5) {
+   static void method2183(int var0, boolean var1, int var2, int var4, RSInterface[] var5) {
       try {
          int var6 = 0;
          if(235 == 235) {
@@ -96,7 +96,7 @@ abstract class Class158 {
 
    abstract void method2185(int var1, int var3, Component var4);
 
-   static final void method2186(Class25 var0) {
+   static void method2186(Class25 var0) {
       for(int var1 = var0.anInt483; var1 <= var0.anInt495; ++var1) {
          for(int var2 = var0.anInt478; var2 <= var0.anInt481; ++var2) {
             Class3_Sub2 var3 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var0.anInt493][var1][var2];

@@ -10,7 +10,7 @@ final class Class110 {
    static float aFloat1475;
 
 
-   static final void method1681(int var0) {
+   static void method1681(int var0) {
       try {
          if(Class3_Sub13_Sub25.loginStage == 5) {
             if(var0 != -1) {
@@ -37,7 +37,7 @@ final class Class110 {
       }
    }
 
-   static final void method1683(int var0, boolean var1, int var2, boolean var3, Class91 var4, int objectId, int type, int var7, int var9, int var10) {
+   static void method1683(int var0, boolean var1, int var2, boolean var3, Class91 var4, int objectId, int type, int var7, int var9, int var10) {
       try {
     	 var2 %= 4;
          if(var1 && !NPC.method1986(103) && 0 == (2 & Class9.aByteArrayArrayArray113[0][var7][var9])) {

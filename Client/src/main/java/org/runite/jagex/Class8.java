@@ -5,8 +5,8 @@ final class Class8 {
    private RSByteBuffer aClass3_Sub30_99;
    private Class3_Sub28_Sub10_Sub2 aClass3_Sub28_Sub10_Sub2_100;
    static int anInt101;
-   private Class66 aClass66_102;
-   private Class73 aClass73_103;
+   private final Class66 aClass66_102;
+   private final Class73 aClass73_103;
    static int anInt104 = 0;
    static CacheIndex aClass153_105;
    static RSString aClass94_106 = RSString.createRSString("showVideoAd");
@@ -82,7 +82,7 @@ final class Class8 {
       }
    }
 
-   private final Class151_Sub1 method839(int var2, Class41 var3, Class41 var4) {
+   private Class151_Sub1 method839(int var2, Class41 var3, Class41 var4) {
       try {
          if(-1824885439 != -1824885439) {
             getCacheIndex(true, false, false, -22);
@@ -94,7 +94,7 @@ final class Class8 {
       }
    }
 
-   static final void method840(ObjectDefinition var0, byte var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
+   static void method840(ObjectDefinition var0, byte var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
       try {
          int var9 = 3 & var3;
          if(var1 >= -1) {
@@ -154,7 +154,7 @@ final class Class8 {
       }
    }
 
-   static final void method841() {
+   static void method841() {
       try {
          GameObject.aClass11Array1836 = null;
          Class3_Sub13_Sub1.method171(-101, Class3_Sub28_Sub12.anInt3655, 0, Class23.anInt454, 0, -1, Class140_Sub7.anInt2934, 0, 0);
@@ -172,7 +172,7 @@ final class Class8 {
       }
    }
 
-   static final CacheIndex getCacheIndex(boolean var0, boolean var1, boolean var2, int var3) {
+   static CacheIndex getCacheIndex(boolean var0, boolean var1, boolean var2, int var3) {
       try {
          if(true) {
             Class41 var5 = null;
@@ -193,7 +193,7 @@ final class Class8 {
       }
    }
 
-   static final Class75_Sub1 method843(int var0, RSByteBuffer var1) {
+   static Class75_Sub1 method843(int var0, RSByteBuffer var1) {
       try {
          return var0 != -5232?(Class75_Sub1)null:new Class75_Sub1(var1.getShort((byte)46), var1.getShort((byte)109), var1.getShort((byte)68), var1.getShort((byte)127), var1.getTriByte((byte)91), var1.getByte((byte)-124));
       } catch (RuntimeException var3) {
@@ -201,7 +201,7 @@ final class Class8 {
       }
    }
 
-   static final void method844(byte var0) {
+   static void method844(byte var0) {
       try {
          if(var0 != -9) {
             aClass94_106 = (RSString)null;
@@ -223,7 +223,7 @@ final class Class8 {
       }
    }
 
-   static final void method845(boolean var0) {
+   static void method845(boolean var0) {
       try {
          if(var0 == !Class139.aBoolean1827) {
             Class139.aBoolean1827 = var0;
@@ -238,7 +238,7 @@ final class Class8 {
       }
    }
 
-   static final boolean method846(int var0, int var1, int var2) {
+   static boolean method846(int var0, int var1, int var2) {
       int var3 = Class81.anIntArrayArrayArray1142[var0][var1][var2];
       if(var3 == -Class3_Sub28_Sub1.anInt3539) {
          return false;
@@ -257,7 +257,7 @@ final class Class8 {
       }
    }
 
-   private final Class151_Sub1 method847(Class41 var1, int var3, Class41 var5) {
+   private Class151_Sub1 method847(Class41 var1, int var3, Class41 var5) {
       try {
          if(null == this.aClass3_Sub30_99) {
             throw new RuntimeException();

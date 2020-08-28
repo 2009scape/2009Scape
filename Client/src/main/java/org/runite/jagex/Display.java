@@ -25,7 +25,6 @@ public class Display {
             var3 = true;
          }
       } catch (Throwable var15) {
-         ;
       }
 
       var5 = false;
@@ -43,7 +42,6 @@ public class Display {
                Field var7 = Class.forName("sun.awt.Win32GraphicsDevice").getDeclaredField("valid");
                var7.set(this.aGraphicsDevice445, Boolean.TRUE);
             } catch (Throwable var13) {
-               ;
             }
          }
 
@@ -54,7 +52,6 @@ public class Display {
             var4 = Class.forName("sun.awt.Win32GraphicsDevice").getDeclaredField("valid");
             var4.set(this.aGraphicsDevice445, Boolean.TRUE);
          } catch (Throwable var14) {
-            ;
          }
       }
 

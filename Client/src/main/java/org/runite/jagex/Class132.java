@@ -12,7 +12,7 @@ final class Class132 {
    static CacheIndex libIndex;
 
 
-   static final void method1798(int var0, Class3_Sub4 var1) {
+   static void method1798(int var0, Class3_Sub4 var1) {
       try {
          long var2 = 0L;
          int var4 = -1;
@@ -52,7 +52,7 @@ final class Class132 {
       }
    }
 
-   static final void method1799(byte var0, CacheIndex var1) {
+   static void method1799(byte var0, CacheIndex var1) {
       try {
          Class3_Sub13_Sub7.aClass153_3098 = var1;
          int var2 = 113 / ((1 - var0) / 63);
@@ -74,7 +74,7 @@ final class Class132 {
       }
    }
 
-   static final void method1801(byte var0) {
+   static void method1801(byte var0) {
       try {
          if(var0 >= -94) {
             method1799((byte)-90, (CacheIndex)null);

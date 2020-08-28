@@ -62,7 +62,7 @@ final class RSString implements Interface3 {
       }
    }
 
-   static final boolean method1529(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
+   static boolean method1529(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
       try {
          long var8 = Class157.method2174(var6, var1 + var5, var3 + var0);
          int var10;
@@ -319,7 +319,6 @@ final class RSString implements Interface3 {
                if(var1.length + this.length > this.byteArray.length) {
                   int var3;
                   for(var3 = 1; var3 < var1.length + this.length; var3 += var3) {
-                     ;
                   }
 
                   byte[] var4 = new byte[var3];
@@ -366,7 +365,7 @@ final class RSString implements Interface3 {
       }
    }
 
-   static final int method1535(WorldListEntry var0, WorldListEntry var1, int var2, int var3, int var4, boolean var5, boolean var6) {
+   static int method1535(WorldListEntry var0, WorldListEntry var1, int var2, int var3, int var4, boolean var5, boolean var6) {
       try {
          int var7 = Class161.method2201(var1, var4, var2 + -5638, var0, var6);
          if(var7 == 0) {
@@ -436,7 +435,7 @@ final class RSString implements Interface3 {
       }
    }
 
-   static final Class3_Sub28_Sub16_Sub2 method1537(CacheIndex var0, int var1) {
+   static Class3_Sub28_Sub16_Sub2 method1537(CacheIndex var0, int var1) {
       try {
          if(Class140_Sub7.method2029((byte) -118, var0, var1)) {
             if(false) {
@@ -465,7 +464,7 @@ final class RSString implements Interface3 {
       }
    }
 
-   static final LDIndexedSprite method1539(int var0, int var2, CacheIndex var3) {
+   static LDIndexedSprite method1539(int var0, int var2, CacheIndex var3) {
       try {
          if(!true) {
             method1535((WorldListEntry)null, (WorldListEntry)null, -64, -40, 23, false, false);
@@ -505,7 +504,6 @@ final class RSString implements Interface3 {
             if(this.length + (var4 - var3) > this.byteArray.length) {
                int var5;
                for(var5 = 1; var5 < this.length + var2.length; var5 += var5) {
-                  ;
                }
 
                byte[] var6 = new byte[var5];
@@ -752,7 +750,6 @@ final class RSString implements Interface3 {
             int var3;
             if(this.byteArray.length < var1) {
                for(var3 = 1; var1 > var3; var3 += var3) {
-                  ;
                }
 
                byte[] var4 = new byte[var3];
@@ -952,7 +949,7 @@ final class RSString implements Interface3 {
       }
    }
 
-   private final boolean method1561(int var1) {
+   private boolean method1561(int var1) {
       try {
          if(var1 < 1 || var1 > 36) {
             var1 = 10;
@@ -1066,12 +1063,10 @@ final class RSString implements Interface3 {
 
          int var2;
          for(var2 = 0; var2 < this.length && (0 <= this.byteArray[var2] && 32 >= this.byteArray[var2] || (255 & this.byteArray[var2]) == 160); ++var2) {
-            ;
          }
 
          int var3;
          for(var3 = this.length; var3 > var2 && (this.byteArray[var3 - 1] >= 0 && this.byteArray[var3 - 1] <= 32 || (255 & this.byteArray[var3 + -1]) == 160); --var3) {
-            ;
          }
 
          if(var2 == 0 && var3 == this.length) {
@@ -1199,7 +1194,6 @@ final class RSString implements Interface3 {
             for(int var8 = 88 / ((var2 - -12) / 33); var3 > var7; ++var7) {
                int var9;
                for(var9 = 0; this.byteArray[var9 + var6] != var1; ++var9) {
-                  ;
                }
 
                var11[var5++] = this.method1557(var6 - -var9, 0, var6);
@@ -1233,7 +1227,7 @@ final class RSString implements Interface3 {
       }
    }
 
-   static final Class3_Sub28_Sub16 method1570(int var0, byte var1, boolean var2, int var3, boolean var4, int var5, int var6, boolean var7) {
+   static Class3_Sub28_Sub16 method1570(int var0, byte var1, boolean var2, int var3, boolean var4, int var5, int var6, boolean var7) {
       try {
          ItemDefinition item = Class38.getItemDefinition(var3, (byte)106);
          if(var6 > 1 && item.anIntArray804 != null) {
@@ -1369,7 +1363,6 @@ final class RSString implements Interface3 {
                if(this.length == this.byteArray.length) {
                   int var3;
                   for(var3 = 1; this.length >= var3; var3 += var3) {
-                     ;
                   }
 
                   byte[] var4 = new byte[var3];
@@ -1531,7 +1524,7 @@ final class RSString implements Interface3 {
       }
    }
 
-static final RSString createRSString(String string) {
+static RSString createRSString(String string) {
 	if (string != null) {
 		string = string.replace("RuneScape", GameLaunch.SETTINGS.getName());
 	}

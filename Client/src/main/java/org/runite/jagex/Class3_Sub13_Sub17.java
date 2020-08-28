@@ -14,7 +14,7 @@ final class Class3_Sub13_Sub17 extends Class3_Sub13 {
       super(1, false);
    }
 
-   static final void method246(int var0) {
+   static void method246(int var0) {
       try {
          Class3_Sub28_Sub20.method724();
          Class3_Sub28_Sub18.method710();
@@ -45,7 +45,7 @@ final class Class3_Sub13_Sub17 extends Class3_Sub13 {
       }
    }
 
-   static final void method247(byte var0) {
+   static void method247(byte var0) {
       try {
          int var1 = 105 % ((var0 - -39) / 41);
          if(Class140_Sub2.aBoolean2713) {
@@ -58,7 +58,7 @@ final class Class3_Sub13_Sub17 extends Class3_Sub13 {
       }
    }
 
-   private final void method248(int var1, byte var2, int var3) {
+   private void method248(int var1, byte var2, int var3) {
       try {
          if(var2 > 80) {
             int var4 = Class102.anIntArray2125[var3];
@@ -128,7 +128,7 @@ final class Class3_Sub13_Sub17 extends Class3_Sub13 {
       }
    }
 
-   static final void method250(CacheIndex var1) {
+   static void method250(CacheIndex var1) {
       try {
          if(2048 == 2048) {
             Class8.aClass153_105 = var1;
@@ -138,7 +138,7 @@ final class Class3_Sub13_Sub17 extends Class3_Sub13 {
       }
    }
 
-   static final int method251() {
+   static int method251() {
       try {
          if(-1 != -1) {
             return 18;
@@ -160,7 +160,7 @@ final class Class3_Sub13_Sub17 extends Class3_Sub13 {
       }
    }
 
-   static final void method252() {
+   static void method252() {
       try {
          Class3_Sub9 var1;
          for(var1 = (Class3_Sub9) aClass61_78.method1222(); null != var1; var1 = (Class3_Sub9) aClass61_78.method1221()) {
@@ -202,7 +202,7 @@ final class Class3_Sub13_Sub17 extends Class3_Sub13 {
       }
    }
 
-   static final void method253(int var1, int var2, int var3, int var4) {
+   static void method253(int var1, int var2, int var3, int var4) {
       try {
          if(-22611 != -22611) {
             method246(83);

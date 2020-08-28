@@ -7,7 +7,7 @@ class Class164_Sub1 extends Class164 {
    static short[] aShortArray3011 = new short[]{(short)6798, (short)8741, (short)25238, (short)4626, (short)4550};
    static int anInt3012 = 0;
    static RSString aClass94_3013 = RSString.createRSString("0");
-   private int[] anIntArray3014;
+   private final int[] anIntArray3014;
    private byte[] aByteArray3015;
    private int anInt3016;
    static int anInt3017;
@@ -25,7 +25,7 @@ class Class164_Sub1 extends Class164 {
       }
    }
 
-   static final void method2238(int var0, int var1, int var2, int var3, int var5) {
+   static void method2238(int var0, int var1, int var2, int var3, int var5) {
       try {
          Class75.anInt1105 = var2;
          Class157.anInt1996 = var1;
@@ -61,7 +61,7 @@ class Class164_Sub1 extends Class164 {
       }
    }
 
-   static final boolean method2239(int var0, int var1, int var2, int var3) {
+   static boolean method2239(int var0, int var1, int var2, int var3) {
       if(Class8.method846(var0, var1, var2)) {
          int var4 = var1 << 7;
          int var5 = var2 << 7;
@@ -201,7 +201,7 @@ class Class164_Sub1 extends Class164 {
       }
    }
 
-   static final void method2241(byte var0, boolean var1) {
+   static void method2241(byte var0, boolean var1) {
       try {
          int var2 = -47 / ((var0 - 5) / 49);
 

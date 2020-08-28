@@ -24,7 +24,7 @@ final class Class145 {
       }
    }
 
-   static final void method2072(int var0, int var1, int var2, int var3, int var4, int var5) {
+   static void method2072(int var0, int var1, int var2, int var3, int var4, int var5) {
       try {
          if(Class101.anInt1425 <= var1 && Class3_Sub28_Sub18.anInt3765 >= var3 && var2 >= Class159.anInt2020 && var4 <= Class57.anInt902) {
             if(var5 == 1) {
@@ -47,7 +47,7 @@ final class Class145 {
       }
    }
 
-   static final void method2073(Class3_Sub2 var0, boolean var1) {
+   static void method2073(Class3_Sub2 var0, boolean var1) {
       Class163_Sub1.aClass61_2990.method1215(true, var0);
 
       while(true) {
@@ -747,7 +747,7 @@ final class Class145 {
       }
    }
 
-   static final void method2074(int var0, int var1, int var2, int var3, int var4, int var6) {
+   static void method2074(int var0, int var1, int var2, int var3, int var4, int var6) {
       try {
          RSInterface var7 = Class3_Sub28_Sub16.method638(var0, var1);
          if(null != var7 && null != var7.anObjectArray203) {
@@ -772,7 +772,7 @@ final class Class145 {
       }
    }
 
-   static final int method2075(int var0, byte var1) {
+   static int method2075(int var0, byte var1) {
       try {
          int var2 = 110 / ((var1 - 34) / 61);
          return 255 & var0;
@@ -781,7 +781,7 @@ final class Class145 {
       }
    }
 
-   static final Class29 method2076(int var0, int var1) {
+   static Class29 method2076(int var0, int var1) {
       try {
          Class29 var2 = (Class29)Class136.aClass93_1772.get((long)var1);
          if(var2 == null) {
@@ -805,7 +805,7 @@ final class Class145 {
       }
    }
 
-   static final void method2077() {
+   static void method2077() {
       try {
          Class3_Sub31.aClass93_2604.method1524();
          Class27.aClass93_511.method1524();

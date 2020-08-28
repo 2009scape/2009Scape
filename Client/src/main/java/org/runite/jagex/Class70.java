@@ -35,7 +35,7 @@ final class Class70 {
       }
    }
 
-   static final void method1285(CacheIndex var0, int var2, int var5) {
+   static void method1285(CacheIndex var0, int var2, int var5) {
       try {
          Class101.aClass153_1423 = var0;
          Class10.anInt154 = 1;
@@ -53,7 +53,7 @@ final class Class70 {
       }
    }
 
-   static final void method1286(int var0, ObjectDefinition var2, int var3, NPC var4, int var5, int var6, Player var7) {
+   static void method1286(int var0, ObjectDefinition var2, int var3, NPC var4, int var5, int var6, Player var7) {
       try {
          if(false) {
             anInt1047 = 94;
@@ -119,10 +119,10 @@ final class Class70 {
       }
    }
 
-   static final Class3_Sub28_Sub17_Sub1 method1287(int var0, CacheIndex var2, CacheIndex var3) {
+   static Class3_Sub28_Sub17_Sub1 method1287(int var0, CacheIndex var2, CacheIndex var3) {
       try {
     	// System.out.println("Class 70 " + var0);
-         if(Class75_Sub4.method1351(var3, 0, var0, -1 ^ 30900)) {
+         if(Class75_Sub4.method1351(var3, 0, var0, ~30900)) {
             if(-1 != -1) {
                method1284((byte)-124);
             }

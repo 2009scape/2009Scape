@@ -29,7 +29,6 @@ final class Class3_Sub13_Sub20 extends Class3_Sub13 {
 
    public static void method266(int var0) {//TODO: Misplaced Check Method
       try {
-         ;
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "mg.U(" + var0 + ')');
       }

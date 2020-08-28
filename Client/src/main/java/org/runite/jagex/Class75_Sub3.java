@@ -2,18 +2,18 @@ package org.runite.jagex;
 
 final class Class75_Sub3 extends Class75 {
 
-   private int anInt2649;
-   private int anInt2650;
+   private final int anInt2649;
+   private final int anInt2650;
    static int anInt2651;
-   private int anInt2652;
-   private int anInt2654;
+   private final int anInt2652;
+   private final int anInt2654;
    private int anInt2655;
    static Class3_Sub28_Sub16[] aClass3_Sub28_Sub16Array2656;
-   private int anInt2657;
+   private final int anInt2657;
    static int anInt2658;
-   private int anInt2659;
+   private final int anInt2659;
    static CacheIndex aClass153_2660;
-   private int anInt2661;
+   private final int anInt2661;
 
 
    final void method1337(int var1, boolean var2, int var3) {
@@ -32,7 +32,7 @@ final class Class75_Sub3 extends Class75 {
       }
    }
 
-   static final void method1346() {
+   static void method1346() {
       try {
          Class3_Sub13_Sub2.method174();
          Class38.method1027(5, (byte)69);
@@ -43,7 +43,7 @@ final class Class75_Sub3 extends Class75 {
          Class3_Sub9.method137(5, (byte)-118);
          Class3_Sub19.method386(26211 ^ -26138);
          RSByteBuffer.method795();
-         Class3_Sub28_Sub3.method539(26211 ^ 26211);
+         Class3_Sub28_Sub3.method539(0);
          Class3_Sub13_Sub4.method188(5, 0);
          Class166.method2260(26211 + -27256);
          Class3_Sub28_Sub10_Sub1.method594(26211 + -26090, 5);
@@ -98,7 +98,7 @@ final class Class75_Sub3 extends Class75 {
       }
    }
 
-   static final Class3_Sub28_Sub16[] method1347(int var0) {
+   static Class3_Sub28_Sub16[] method1347(int var0) {
       try {
          if(var0 == -26802) {
             Class3_Sub28_Sub16[] var1 = new Class3_Sub28_Sub16[Class95.anInt1338];

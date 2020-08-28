@@ -3,7 +3,6 @@ import java.util.Random;
 
 final class Class100 {
 
-   private int anInt1404 = 0;
    static int anInt1405;
    int anInt1406;
    static int anInt1407;
@@ -18,7 +17,7 @@ final class Class100 {
    int anInt1417;
    int anInt1418;
 
-   private final void method1600(int var1) {
+   private void method1600(int var1) {
       try {
          double var3 = (double)(255 & var1 >> 16) / 256.0D;
          double var5 = (double)(255 & var1 >> 8) / 256.0D;
@@ -117,9 +116,9 @@ final class Class100 {
       }
    }
 
-   static final int method1602(RSString var1) {
+   static int method1602(RSString var1) {
       try {
-         if(Class119.aClass131_1624 == null || var1.length(0 ^ -107) == 0) {
+         if(Class119.aClass131_1624 == null || var1.length(-107) == 0) {
             return -1;
          } else {
             for(int var2 = 0; var2 < Class119.aClass131_1624.anInt1720; ++var2) {
@@ -135,7 +134,7 @@ final class Class100 {
       }
    }
 
-   static final int method1603(byte var0, int var1, Random var2) {
+   static int method1603(byte var0, int var1, Random var2) {
       try {
          if(var1 <= 0) {
             throw new IllegalArgumentException();
@@ -157,11 +156,11 @@ final class Class100 {
       }
    }
 
-   private final void method1604(int var2, RSByteBuffer var3, int var4) {
+   private void method1604(int var2, RSByteBuffer var3, int var4) {
       try {
          if(var2 == 1) {
-            this.anInt1404 = var3.getTriByte((byte)93);
-            this.method1600(this.anInt1404);
+            int anInt1404 = var3.getTriByte((byte) 93);
+            this.method1600(anInt1404);
          } else if (var2 == 2) {
             this.anInt1412 = var3.getShort(1);
             if (this.anInt1412 == 65535) {
@@ -182,7 +181,7 @@ final class Class100 {
       }
    }
 
-   static final void method1605(RSString var1, int var2) {
+   static void method1605(RSString var1, int var2) {
       try {
          ++Class19.anInt421;
          Class3_Sub13_Sub1.outgoingBuffer.putOpcode(188);

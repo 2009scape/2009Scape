@@ -66,7 +66,7 @@ final class Class3_Sub13_Sub8 extends Class3_Sub13 {
 		}
 	}
 
-	static final void method203(int var0) {
+	static void method203(int var0) {
 		try {
 			//int var1 = 15 / ((-11 - var0) / 63);
 			if(Class3_Sub28_Sub13.anInt3660 == 2) {
@@ -96,7 +96,7 @@ final class Class3_Sub13_Sub8 extends Class3_Sub13 {
 		}
 	}
 
-	static final void method204(int var0) {
+	static void method204(int var0) {
 		try {
 			//Client Resize.
 			Class3_Sub13_Sub1.outgoingBuffer.putOpcode(243);
@@ -114,7 +114,7 @@ final class Class3_Sub13_Sub8 extends Class3_Sub13 {
 		}
 	}
 
-	static final void method205(CacheIndex var0, CacheIndex var2, Interface4 var3) {
+	static void method205(CacheIndex var0, CacheIndex var2, Interface4 var3) {
 		try {
 			Class154.aClass153_1967 = var0;
 			Class58.anInterface4_915 = var3;
@@ -167,7 +167,7 @@ final class Class3_Sub13_Sub8 extends Class3_Sub13 {
 		}
 	}
 
-	static final RSString method207(int var0, boolean var1, int var2, long var3) {
+	static RSString method207(int var0, boolean var1, int var2, long var3) {
 		try {
 			if(var0 >= 2 && var0 <= 36) {
 				if(var2 <= 71) {

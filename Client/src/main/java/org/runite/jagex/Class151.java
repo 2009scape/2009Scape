@@ -29,7 +29,7 @@ abstract class Class151 {
 
    abstract void method2095(int var1);
 
-   static final boolean method2096(int var0, int var1, int var2, long var3) {
+   static boolean method2096(int var0, int var1, int var2, long var3) {
       Class3_Sub2 var5 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var0][var1][var2];
       if(var5 == null) {
          return false;
@@ -54,7 +54,7 @@ abstract class Class151 {
 
    abstract byte[] method2098(int var1);
 
-   static final void method2099(int var1, CacheIndex var3, int var5) {
+   static void method2099(int var1, CacheIndex var3, int var5) {
       try {
          Class101.aClass153_1423 = var3;
          Class132.anInt1741 = 0;

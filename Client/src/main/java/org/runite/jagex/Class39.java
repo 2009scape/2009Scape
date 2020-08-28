@@ -14,7 +14,7 @@ final class Class39 {
 	static int anInt671;
 
 
-	static final void updateSceneGraph(int var0, boolean dynamic) {
+	static void updateSceneGraph(int var0, boolean dynamic) {
 		try {
 			Class3_Sub29.isDynamicSceneGraph = dynamic;
 			int sceneX;
@@ -175,13 +175,12 @@ final class Class39 {
 
 	public static void method1034(int var0) {//TODO: EMPTY METHOD CHECK
 		try {
-			;
 		} catch (RuntimeException var2) {
 			throw Class44.clientError(var2, "g.B(" + var0 + ')');
 		}
 	}
 
-	static final void method1035(byte var0) {
+	static void method1035(byte var0) {
 		try {
 			Class140_Sub7.anIntArray2931 = null;
 			RSByteBuffer.anIntArray2591 = null;
@@ -253,7 +252,7 @@ final class Class39 {
 	}
 
 
-	static final void method1036() {
+	static void method1036() {
 		try {
 			Class86 var1 = new Class86();
 			if(118 <= 101) {
@@ -271,7 +270,7 @@ final class Class39 {
 		}
 	}
 
-	static final Class19 method1037(int var0, int var1, int var2) {
+	static Class19 method1037(int var0, int var1, int var2) {
 		Class3_Sub2 var3 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var0][var1][var2];
 		if(var3 == null) {
 			return null;
@@ -282,7 +281,7 @@ final class Class39 {
 		}
 	}
 
-	static final void parseChunkPacket(byte var0) {
+	static void parseChunkPacket(byte var0) {
 		try {
 			int var1;
 			int var2;
@@ -613,7 +612,7 @@ final class Class39 {
 		}
 	}
 
-	static final void method1039(int var0, CacheIndex var1) {
+	static void method1039(int var0, CacheIndex var1) {
 		try {
 			Class96.anInt1352 = var1.getArchiveForName(RSString.createRSString("p11_full"));
 			Class75_Sub2.anInt2643 = var1.getArchiveForName(RSString.createRSString("p12_full"));

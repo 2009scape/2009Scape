@@ -10,7 +10,7 @@ final class Class10 {
    static int anInt154 = 0;
 
 
-   static final Class3_Sub28_Sub16_Sub2[] method851() {
+   static Class3_Sub28_Sub16_Sub2[] method851() {
       try {
          Class3_Sub28_Sub16_Sub2[] var1 = new Class3_Sub28_Sub16_Sub2[Class95.anInt1338];
          if(!true) {
@@ -36,7 +36,7 @@ final class Class10 {
       }
    }
 
-   static final void method852(byte var0, int var1) {
+   static void method852(byte var0, int var1) {
       try {
          Class3_Sub25 var2 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var1, 0);
          if(var2 != null) {

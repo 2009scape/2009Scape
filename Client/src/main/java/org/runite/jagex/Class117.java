@@ -8,7 +8,7 @@ final class Class117 {
    static int anInt1616 = 0;
 
 
-   static final void method1719(int var0) {
+   static void method1719(int var0) {
       try {
          if(Class143.loadingStage != var0) {
             if(Class143.loadingStage == 0) {
@@ -72,7 +72,7 @@ final class Class117 {
       }
    }
 
-   static final void method1720(boolean var0, int var1) {
+   static void method1720(boolean var0, int var1) {
       try {
          Class129.anIntArray1695 = new int[104];
          Class80.anIntArray1138 = new int[104];
@@ -112,7 +112,7 @@ final class Class117 {
       }
    }
 
-   static final Class3_Sub28_Sub16_Sub2 method1722(int var0) {
+   static Class3_Sub28_Sub16_Sub2 method1722(int var0) {
       try {
          int var1 = Class140_Sub7.anIntArray2931[0] * Class3_Sub13_Sub6.anIntArray3076[0];
          byte[] var2 = Class163_Sub1.aByteArrayArray2987[0];

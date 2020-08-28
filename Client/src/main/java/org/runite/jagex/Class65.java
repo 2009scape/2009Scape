@@ -11,7 +11,7 @@ final class Class65 {
    static int anInt991 = -1;
 
 
-   static final int[] method1233(int[] var0, int var1) {
+   static int[] method1233(int[] var0, int var1) {
       try {
          if(null == var0) {
             return null;
@@ -29,7 +29,7 @@ final class Class65 {
       }
    }
 
-   static final int method1234(int var0, int var1, int var2) {
+   static int method1234(int var0, int var1, int var2) {
       try {
          int var4 = var1 / var0;
          int var6 = var2 / var0;
@@ -51,7 +51,7 @@ final class Class65 {
       }
    }
 
-   static final void method1235(int var0, int var1, int var2, int var3) {
+   static void method1235(int var0, int var1, int var2, int var3) {
       try {
          if(Class36.anInt638 == 1) {
             Class139.aClass3_Sub28_Sub16Array1825[Class151_Sub1.anInt2958 / 100].method643(-8 + Class70.anInt1053, -8 + Class3_Sub28_Sub10_Sub1.anInt4062);
@@ -71,7 +71,7 @@ final class Class65 {
       }
    }
 
-   static final void method1236(CacheIndex var0, CacheIndex var1) {
+   static void method1236(CacheIndex var0, CacheIndex var1) {
       try {
          Class47.quickChatMessages = var1;
          NodeList.aClass153_332 = var0;
@@ -80,7 +80,7 @@ final class Class65 {
       }
    }
 
-   static final void method1237(int var0) {
+   static void method1237(int var0) {
       try {
          WorldListEntry.anInt2626 = 1000 / var0;
       } catch (RuntimeException var3) {
@@ -100,7 +100,7 @@ final class Class65 {
       }
    }
 
-   static final void method1239(int var0, int var1, int var2, int var3, int var4, boolean var5) {
+   static void method1239(int var0, int var1, int var2, int var3, int var4, boolean var5) {
       try {
          if(var0 < 1) {
             var0 = 1;
@@ -185,7 +185,7 @@ final class Class65 {
       }
    }
 
-   static final void method1240() {
+   static void method1240() {
       try {
          Class126.aClass3_Sub28_Sub17_1669 = null;
          Class75_Sub3.aClass3_Sub28_Sub16Array2656 = null;

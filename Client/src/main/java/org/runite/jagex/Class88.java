@@ -14,7 +14,7 @@ final class Class88 {
    static int anInt1229 = -1;
 
 
-   static final void method1454() {
+   static void method1454() {
       byte[] var1;
       if(aByteBuffer1226 == null) {
          Class164_Sub2_Sub1 var0 = new Class164_Sub2_Sub1();
@@ -36,7 +36,7 @@ final class Class88 {
 
    }
 
-   static final void method1455() {
+   static void method1455() {
       GL var0;
       int[] var1;
       if(anInt1228 != -1) {
@@ -71,7 +71,7 @@ final class Class88 {
 
    }
 
-   static final void method1456() {
+   static void method1456() {
       aBoolean1227 = HDToolKit.aBoolean1802;
       method1454();
       method1458();
@@ -85,7 +85,7 @@ final class Class88 {
       aByteBuffer1225 = null;
    }
 
-   private static final void method1458() {
+   private static void method1458() {
       javax.media.opengl.GL var0 = HDToolKit.gl;
       if(aBoolean1227) {
          int[] var1 = new int[1];
@@ -113,7 +113,7 @@ final class Class88 {
 
    }
 
-   private static final void method1459() {
+   private static void method1459() {
       javax.media.opengl.GL var0 = HDToolKit.gl;
       if(aBoolean1227) {
          int[] var1 = new int[1];

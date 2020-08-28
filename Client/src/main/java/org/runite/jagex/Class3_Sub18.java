@@ -31,7 +31,7 @@ final class Class3_Sub18 extends Class3 {
       }
    }
 
-   static final void method383(int var0, int var1) {
+   static void method383(int var0, int var1) {
       try {
          if(var1 == Class23.anInt453 && var1 != 0) {
             Interface5 var2 = Class2.anInterface5Array70[var1];

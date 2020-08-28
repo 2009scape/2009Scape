@@ -16,7 +16,7 @@ final class Class3_Sub8 extends Class3 {
    static RSString aClass94_2306 = RSString.createRSString("<)4col> x");
 
 
-   static final void method124(int var0, int var1, int var2) {
+   static void method124(int var0, int var1, int var2) {
       try {
          if(var0 <= 23) {
             aClass94_2306 = (RSString)null;
@@ -30,7 +30,7 @@ final class Class3_Sub8 extends Class3 {
       }
    }
 
-   static final void method125(int var0, byte var1, int var2, int var3, RSInterface var4) {
+   static void method125(int var0, byte var1, int var2, int var3, RSInterface var4) {
       try {
          Class58.method1194(-16385);
          if(HDToolKit.highDetail) {
@@ -247,7 +247,7 @@ final class Class3_Sub8 extends Class3 {
       }
    }
 
-   static final void method126(boolean var0, int var1, int var2, int var3, int var4) {
+   static void method126(boolean var0, int var1, int var2, int var3, int var4) {
       try {
          if(!var0) {
             if(Class101.anInt1425 <= var4 && var4 <= Class3_Sub28_Sub18.anInt3765) {
@@ -262,7 +262,7 @@ final class Class3_Sub8 extends Class3 {
       }
    }
 
-   static final void method127(short[] var0, int var1, RSString[] var2, int var3, int var4) {
+   static void method127(short[] var0, int var1, RSString[] var2, int var3, int var4) {
       try {
          if(var4 < var1) {
             int var6 = var4;
@@ -302,7 +302,7 @@ final class Class3_Sub8 extends Class3 {
       }
    }
 
-   static final void method128() {
+   static void method128() {
       try {
          Class44.aClass93_725.method1524();
          if(2 != 2) {
@@ -314,7 +314,7 @@ final class Class3_Sub8 extends Class3 {
       }
    }
 
-   static final int method129(int var0, int var2, int var3) {
+   static int method129(int var0, int var2, int var3) {
       try {
          if(2 != 2) {
             method131(14);
@@ -340,7 +340,7 @@ final class Class3_Sub8 extends Class3 {
       }
    }
 
-   static final WorldListEntry getWorld(int var0, int index) {
+   static WorldListEntry getWorld(int var0, int index) {
       try {
          if(Class30.loadedWorldList && Class3_Sub13_Sub4.worldListOffset <= index && Class100.worldListArraySize >= index) {
             int var2 = 120 / ((0 - var0) / 32);
@@ -367,7 +367,7 @@ final class Class3_Sub8 extends Class3 {
       }
    }
 
-   static final void method132(byte var0) {
+   static void method132(byte var0) {
       try {
          for(int var1 = 0; var1 < Class113.anInt1552; ++var1) {
             --RSString.anIntArray2157[var1];

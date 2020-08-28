@@ -28,7 +28,7 @@ final class Class3_Sub17 extends Class3 {
 		}
 	}
 
-	static final void method381(boolean var0) {
+	static void method381(boolean var0) {
 		try {
 			if(Class3_Sub28_Sub12.anInt3655 != -1) {
 				Class52.method1160(-120, Class3_Sub28_Sub12.anInt3655);

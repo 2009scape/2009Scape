@@ -20,7 +20,7 @@ final class Class130 {
    private int anInt1715 = 0;
 
 
-   static final void method1772(int plane, int animId, int dummy, NPC var3) {
+   static void method1772(int plane, int animId, int dummy, NPC var3) {
       try {
          if(var3.anInt2771 == animId && -1 != animId) {
             AnimationDefinition var4 = Client.getAnimationDefinition(animId);
@@ -98,7 +98,7 @@ final class Class130 {
       }
    }
 
-   static final void method1775() {
+   static void method1775() {
       for(int var0 = 0; var0 < Class3_Sub13_Sub5.anInt3070; ++var0) {
          Class25 var1 = AnimationDefinition.aClass25Array1868[var0];
          Class158.method2186(var1);
@@ -117,7 +117,7 @@ final class Class130 {
       }
    }
 
-   static final Class3_Sub13 method1777(int var0, boolean var1) {
+   static Class3_Sub13 method1777(int var0, boolean var1) {
       try {
          if(var0 == 0) {
             return new Class3_Sub13_Sub22();
@@ -331,7 +331,7 @@ final class Class130 {
       }
    }
 
-   static final void method1783(int var0, Component var1) {
+   static void method1783(int var0, Component var1) {
       try {
          if(var0 != 4) {
             method1777(-104, false);

@@ -3,7 +3,6 @@ import java.awt.Component;
 
 class Class155 {
 
-   private int anInt1968 = 32;
    static int[] anIntArray1969 = new int[100];
    static RSString char_colon = RSString.createRSString(":");
    static int anInt1971;
@@ -14,10 +13,10 @@ class Class155 {
    static int anInt1977 = 0;
    static int[] anIntArray1978 = new int[128];
    private long aLong1979 = 0L;
-   private Class3_Sub24[] aClass3_Sub24Array1980 = new Class3_Sub24[8];
+   private final Class3_Sub24[] aClass3_Sub24Array1980 = new Class3_Sub24[8];
    private int anInt1981 = 0;
    private long aLong1982 = 0L;
-   private Class3_Sub24[] aClass3_Sub24Array1983 = new Class3_Sub24[8];
+   private final Class3_Sub24[] aClass3_Sub24Array1983 = new Class3_Sub24[8];
    private boolean aBoolean1984 = true;
    private int anInt1985 = 0;
    private int anInt1986;
@@ -33,7 +32,7 @@ class Class155 {
 
    void method2151() throws Exception {}
 
-   private final void method2152(int[] var1) {
+   private void method2152(int[] var1) {
       int var3 = 256;
       if(RSString.aBoolean2150) {
          var3 = 256 << 1;
@@ -81,7 +80,8 @@ class Class155 {
                            var12.anInt2374 += var13;
                         }
 
-                        if(var4 >= this.anInt1968) {
+                        int anInt1968 = 32;
+                        if(var4 >= anInt1968) {
                            break label101;
                         }
 
@@ -241,7 +241,7 @@ class Class155 {
       }
    }
 
-   private final void method2155(Class3_Sub24 var1, int var2, byte var3) {
+   private void method2155(Class3_Sub24 var1, int var2, byte var3) {
       try {
          if(var3 != -24) {
             this.method2155((Class3_Sub24)null, -105, (byte)87);
@@ -262,7 +262,7 @@ class Class155 {
       }
    }
 
-   static final Class10 method2156(RSByteBuffer var1) {
+   static Class10 method2156(RSByteBuffer var1) {
       try {
          Class10 var2 = new Class10();
          var2.anInt149 = var1.getShort(1024 + -1023);
@@ -316,7 +316,7 @@ class Class155 {
 
    void method2160() {}
 
-   private final void method2161() {
+   private void method2161() {
       try {
          this.anInt1987 -= 256;
          if(0 > this.anInt1987) {
@@ -336,7 +336,7 @@ class Class155 {
       }
    }
 
-   static final void method2162(GameObject var0, int var1, int var2, int var3) {
+   static void method2162(GameObject var0, int var1, int var2, int var3) {
       Class3_Sub2 var4;
       if(var2 < IOHandler.anInt1234) {
          var4 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var1][var2 + 1][var3];
@@ -397,7 +397,6 @@ class Class155 {
          this.method2160();
          this.anIntArray1975 = null;
          if(!false) {
-            ;
          }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "vh.P(" + false + ')');

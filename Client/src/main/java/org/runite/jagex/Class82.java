@@ -3,11 +3,11 @@ package org.runite.jagex;
 final class Class82 {
 
    private int[] anIntArray1144;
-   private Class3_Sub13 aClass3_Sub13_1145;
+   private final Class3_Sub13 aClass3_Sub13_1145;
    static Class93 aClass93_1146 = new Class93(64);
-   private Class3_Sub13[] aClass3_Sub13Array1147;
-   private Class3_Sub13 aClass3_Sub13_1148;
-   private int[] anIntArray1149;
+   private final Class3_Sub13[] aClass3_Sub13Array1147;
+   private final Class3_Sub13 aClass3_Sub13_1148;
+   private final int[] anIntArray1149;
    static int anInt1150 = -1;
    static RSString aClass94_1151 = RSString.createRSString("settings=");
    static int anInt1152;
@@ -113,7 +113,7 @@ final class Class82 {
       }
    }
 
-   static final void method1405(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
+   static void method1405(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
       try {
          Class3_Sub13_Sub39.anInt3464 = 0;
 
@@ -471,7 +471,7 @@ final class Class82 {
       }
    }
 
-   static final int method1406() {
+   static int method1406() {
       try {
          int var1 = -21 % ((63 - (byte) -43) / 49);
          return Class3_Sub28_Sub7_Sub1.anInt4045;

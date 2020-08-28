@@ -36,7 +36,7 @@ final class Class133 {
       }
    }
 
-   static final void method1803() {
+   static void method1803() {
       try {
          if((byte) 22 >= 4) {
             Class82.aClass93_1146.method1523((byte)-119);

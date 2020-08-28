@@ -25,7 +25,7 @@ final class Class163_Sub3 extends Class163 {
 
    static final int[] PLAYER_RENDER_LOG = new int[4];
    
-   static final void renderPlayers() {
+   static void renderPlayers() {
       try {
          Class66.maskUpdateCount = 0;
          Class139.anInt1829 = 0;
@@ -70,7 +70,7 @@ final class Class163_Sub3 extends Class163 {
       }
    }
 
-   static final void method2229(long var0) {
+   static void method2229(long var0) {
       try {
          if(var0 != 0) {
             if((100 > Class8.anInt104 || Class3_Sub13_Sub29.disableGEBoxes) && Class8.anInt104 < 200) {

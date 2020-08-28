@@ -33,7 +33,7 @@ abstract class Class3_Sub28_Sub16 extends Node {
 
    abstract void method637(int var1, int var2, int var3);
 
-   static final RSInterface method638(int var1, int var2) {
+   static RSInterface method638(int var1, int var2) {
       try {
          RSInterface var3 = Class7.getRSInterface((byte)109, var1);
          return var2 == -1 ?var3:((byte) -19 != -19?(RSInterface)null:(var3 != null && var3.aClass11Array262 != null && var2 < var3.aClass11Array262.length ?var3.aClass11Array262[var2]:null));

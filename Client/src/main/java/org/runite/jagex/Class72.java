@@ -16,7 +16,7 @@ final class Class72 {
    long aLong1079;
 
 
-   static final Class3_Sub28_Sub11 method1292(byte var0, int var1) {
+   static Class3_Sub28_Sub11 method1292(byte var0, int var1) {
       try {
          Class3_Sub28_Sub11 var2 = (Class3_Sub28_Sub11)Class3_Sub13_Sub34.aClass47_3407.method1092((long)var1, 1400);
          if(var2 == null) {
@@ -35,7 +35,7 @@ final class Class72 {
       }
    }
 
-   static final void method1293() {
+   static void method1293() {
       try {
          if(!Class3_Sub28_Sub19.aBoolean3779 && Class44.anInt718 != 2) {
             try {
@@ -44,7 +44,6 @@ final class Class72 {
                   method1298((byte)-25, 1);
                }
             } catch (Throwable var2) {
-               ;
             }
 
          }
@@ -53,7 +52,7 @@ final class Class72 {
       }
    }
 
-   static final void method1294() {
+   static void method1294() {
       Class126.anInt1672 = 0;
 
       label188:
@@ -207,7 +206,7 @@ final class Class72 {
 
    }
 
-   static final RSString combatLevelColor(int otherPlayer, byte levelByte, int yourPlayer) {
+   static RSString combatLevelColor(int otherPlayer, byte levelByte, int yourPlayer) {
       try {
          int playerLevelDiff = -otherPlayer + yourPlayer;
          if (levelByte > -52)
@@ -247,7 +246,7 @@ final class Class72 {
       }
    }
 
-   static final float[] method1297() {
+   static float[] method1297() {
       try {
          float var1 = Class92.method1514() + Class92.getLightingModelAmbient();
          int var2 = Class92.screenColorRgb();
@@ -269,7 +268,7 @@ final class Class72 {
       }
    }
 
-   static final RSString method1298(byte var0, int var1) {
+   static RSString method1298(byte var0, int var1) {
       try {
          return var0 != 9?(RSString)null:Class118.method1723((byte)-117, false, var1);
       } catch (RuntimeException var3) {

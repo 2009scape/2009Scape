@@ -3,7 +3,7 @@ package org.runite.jagex;
 final class NodeList {
 
    static CacheIndex aClass153_332;
-   private Node aClass3_Sub28_333 = new Node();
+   private final Node aClass3_Sub28_333 = new Node();
    private Node aClass3_Sub28_335;
 
 
@@ -95,7 +95,7 @@ final class NodeList {
       }
    }
 
-   static final Class3_Sub28_Sub17 method880(int var0, byte[] var1) {
+   static Class3_Sub28_Sub17 method880(int var0, byte[] var1) {
       try {
          if(null == var1) {
             return null;
@@ -117,7 +117,7 @@ final class NodeList {
       }
    }
 
-   static final void method881(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
+   static void method881(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
       try {
          if(var2 <= -65) {
             Class3_Sub4 var10 = null;
@@ -150,7 +150,7 @@ final class NodeList {
       }
    }
 
-   static final void method882() {
+   static void method882() {
       try {
          Class3_Sub13_Sub36.anInt3423 = 0;
          Class132.anInt1741 = -1;
@@ -184,7 +184,7 @@ final class NodeList {
       }
    }
 
-   static final Class3_Sub28_Sub3 method884(int var0, byte var1, int var2) {
+   static Class3_Sub28_Sub3 method884(int var0, byte var1, int var2) {
       try {
          Class3_Sub28_Sub3 var3 = (Class3_Sub28_Sub3)Class134.aClass61_1758.method1222();
 

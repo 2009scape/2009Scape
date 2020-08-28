@@ -13,7 +13,7 @@ abstract class Class3_Sub28_Sub7 extends Node {
    static int updateStamp;
 
 
-   static final Class3_Sub28_Sub16_Sub2 method562(CacheIndex var0, int var2) {
+   static Class3_Sub28_Sub16_Sub2 method562(CacheIndex var0, int var2) {
       try {
     	//  System.out.println("Class 3_Sub28_Sub16_Sub2 " + var2);
          return Class75_Sub4.method1351(var0, 0, var2, -30901)?((byte) 39 != 39?(Class3_Sub28_Sub16_Sub2)null:Class3_Sub28_Sub9.method578((byte) 39 ^ 84)):null;
@@ -36,7 +36,7 @@ abstract class Class3_Sub28_Sub7 extends Node {
       }
    }
 
-   static final void method564(Signlink var0) {
+   static void method564(Signlink var0) {
       try {
          Class3_Sub28_Sub10.anInt3625 = 3;
          Class25.method957(96, true);
@@ -78,7 +78,7 @@ abstract class Class3_Sub28_Sub7 extends Node {
             Class64 var3 = var0.method1433("runescape", 12);
 
             while(0 == var3.anInt978) {
-               Class3_Sub13_Sub34.method331(1L, 0 ^ 64);
+               Class3_Sub13_Sub34.method331(1L, 64);
             }
 
             if(var3.anInt978 == 1) {
@@ -96,7 +96,6 @@ abstract class Class3_Sub28_Sub7 extends Node {
                Class79.method1390(new RSByteBuffer(var4));
             }
          } catch (Exception var8) {
-            ;
          }
 
          try {
@@ -104,7 +103,6 @@ abstract class Class3_Sub28_Sub7 extends Node {
                var2.close(1);
             }
          } catch (Exception var7) {
-            ;
          }
 
       } catch (RuntimeException var9) {
@@ -112,7 +110,7 @@ abstract class Class3_Sub28_Sub7 extends Node {
       }
    }
 
-   static final void method565(int var1, int var2) {
+   static void method565(int var1, int var2) {
       try {
          Class82.anInt1150 = -Class3_Sub13_Sub21.anInt3256 + var1;
          if((byte) 86 != 86) {
@@ -145,7 +143,7 @@ abstract class Class3_Sub28_Sub7 extends Node {
       }
    }
 
-   static final void method566(RSString var0, int var2) {
+   static void method566(RSString var0, int var2) {
       try {
          Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(0 + 4, 3, var2);
          var3.g();

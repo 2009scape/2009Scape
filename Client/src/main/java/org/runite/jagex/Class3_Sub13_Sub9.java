@@ -13,7 +13,7 @@ final class Class3_Sub13_Sub9 extends Class3_Sub13 {
    static int[][] anIntArrayArray3115;
 
 
-   static final int method208() {
+   static int method208() {
       try {
          if(-119 > -22) {
             aShortArray3110 = (short[])null;
@@ -73,7 +73,6 @@ final class Class3_Sub13_Sub9 extends Class3_Sub13 {
                int var11 = var7 % (4096 / this.anInt3113) * this.anInt3113;
                if(var11 < this.anInt3109) {
                   for(var8 -= var9; var8 < 0; var8 += 4) {
-                     ;
                   }
 
                   while(3 < var8) {
@@ -93,7 +92,6 @@ final class Class3_Sub13_Sub9 extends Class3_Sub13 {
 
                if(var10 < this.anInt3109) {
                   for(var8 -= var9; 0 > var8; var8 += 4) {
-                     ;
                   }
 
                   while(var8 > 3) {

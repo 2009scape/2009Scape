@@ -12,7 +12,7 @@ final class Class161 {
    static Class33 aClass33_2034;
    static RSString aClass94_2035 = null;
 
-   static final void method2200(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
+   static void method2200(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
       try {
          int var8 = 0;
          int var9 = var6;
@@ -128,7 +128,7 @@ final class Class161 {
       }
    }
 
-   static final int method2201(WorldListEntry var0, int var1, int var2, WorldListEntry var3, boolean var4) {
+   static int method2201(WorldListEntry var0, int var1, int var2, WorldListEntry var3, boolean var4) {
       try {
          if(var1 == 1) {
             int var5 = var0.anInt722;

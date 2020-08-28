@@ -10,7 +10,7 @@ final class Class84 {
    static int anInt1165 = -1;
 
 
-   static final void method1417(int var0) {
+   static void method1417(int var0) {
       try {
          if(var0 < 98) {
             method1418(55, (CacheIndex)null);
@@ -29,7 +29,7 @@ final class Class84 {
       }
    }
 
-   static final void method1418(int var0, CacheIndex var1) {
+   static void method1418(int var0, CacheIndex var1) {
       try {
          Class163_Sub2_Sub1.aClass109_Sub1Array4027 = Class3_Sub28_Sub13.method619((byte)65, NPC.anInt4001, var1);
          Class52.anIntArray861 = new int[256];
@@ -70,7 +70,7 @@ final class Class84 {
       }
    }
 
-   static final void method1419() {
+   static void method1419() {
       try {
          int var2 = Class3_Sub13_Sub33.anInt3395;
          int var3 = Class3_Sub28_Sub3.anInt3552;
@@ -110,7 +110,7 @@ final class Class84 {
       }
    }
 
-   static final void method1420(int var0, int var1, int var2, int var3, byte var4) {
+   static void method1420(int var0, int var1, int var2, int var3, byte var4) {
       try {
          Class3_Sub28_Sub6 var5 = Class3_Sub24_Sub3.method466(4, 10, var0);
          var5.g();
@@ -126,7 +126,7 @@ final class Class84 {
       }
    }
 
-   static final int method1421() {
+   static int method1421() {
       try {
          if(-2 != -2) {
             method1422((byte)26);

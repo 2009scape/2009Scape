@@ -32,7 +32,7 @@ final class Class62 {
       }
    }
 
-   static final void method1224(RSInterface var0, int var1, int var2, int var3) {
+   static void method1224(RSInterface var0, int var1, int var2, int var3) {
       try {
          if(0 == var0.aByte162) {
             var0.anInt210 = var0.y;
@@ -85,7 +85,7 @@ final class Class62 {
       }
    }
 
-   static final void method1225() {
+   static void method1225() {
       try {
          MouseListeningClass var1 = Class3_Sub28_Sub7_Sub1.aClass149_4047;
          synchronized(var1) {
@@ -108,7 +108,7 @@ final class Class62 {
       }
    }
 
-   private final void method1226(byte[] var2) {
+   private void method1226(byte[] var2) {
       try {
          RSByteBuffer buffer = new RSByteBuffer(Class3_Sub28_Sub13.method623((byte)-114, var2));
          int var4 = buffer.getByte((byte)-34);

@@ -14,7 +14,7 @@ final class Class3_Sub28_Sub14 extends Node {
    static int anInt3677;
 
 
-   static final void method626() {
+   static void method626() {
       try {
          if(null != RSByteBuffer.aClass3_Sub28_Sub3_2600) {
             if(Class140_Sub3.anInt2737 < 10) {
@@ -187,7 +187,7 @@ final class Class3_Sub28_Sub14 extends Node {
       }
    }
 
-   static final void method628(int var0, int var1, int var2, Player var3) {
+   static void method628(int var0, int var1, int var2, Player var3) {
       try {
          if(var0 != 0) {
             aBooleanArray3674 = (boolean[])null;

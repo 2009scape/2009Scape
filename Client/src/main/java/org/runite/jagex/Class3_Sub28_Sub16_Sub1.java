@@ -14,7 +14,7 @@ class Class3_Sub28_Sub16_Sub1 extends Class3_Sub28_Sub16 {
    private int anInt4080;
 
 
-   private final void method644(int var1) {
+   private void method644(int var1) {
       if(this.anInt4078 != var1) {
          this.anInt4078 = var1;
          GL var2 = HDToolKit.gl;
@@ -439,7 +439,7 @@ class Class3_Sub28_Sub16_Sub1 extends Class3_Sub28_Sub16 {
       var4.glLoadIdentity();
    }
 
-   private final void method651() {
+   private void method651() {
       float var1 = (float)this.anInt3707 / (float)this.anInt4075;
       float var2 = (float)this.anInt3696 / (float)this.anInt4079;
       javax.media.opengl.GL var3 = HDToolKit.gl;

@@ -46,7 +46,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
       }
    }
 
-   private final synchronized void method2188(int var1, int var2, int var3, int var5) {
+   private synchronized void method2188(int var1, int var2, int var3, int var5) {
       try {
          if(null != this.anImageConsumer2978) {
             this.anImageConsumer2978.setPixels(var3, var5, var1, var2, this.aColorModel2979, this.anIntArray2007, var5 * this.anInt2012 + var3, this.anInt2012);
@@ -94,7 +94,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
       }
    }
 
-   static final void method2189(Class91[] var0, boolean var1, int var2) {
+   static void method2189(Class91[] var0, boolean var1, int var2) {
       try {
          int var4;
          int var5;
@@ -513,13 +513,11 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
                         var14 = var8;
 
                         for(var11 = var36; var11 > 0 && (1 & Class38_Sub1.anIntArrayArrayArray2609[var8][var10][-1 + var11]) != 0; --var11) {
-                           ;
                         }
 
                         var13 = var8;
 
                         for(var37 = var36; var37 < 104 && (1 & Class38_Sub1.anIntArrayArrayArray2609[var8][var10][var37 - -1]) != 0; ++var37) {
-                           ;
                         }
 
                         label453:
@@ -561,14 +559,12 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
 
                      if((2 & Class38_Sub1.anIntArrayArrayArray2609[var8][var10][var36]) != 0) {
                         for(var11 = var10; 0 < var11 && (Class38_Sub1.anIntArrayArrayArray2609[var8][-1 + var11][var36] & 2) != 0; --var11) {
-                           ;
                         }
 
                         var14 = var8;
                         var13 = var8;
 
                         for(var37 = var10; 104 > var37 && (2 & Class38_Sub1.anIntArrayArrayArray2609[var8][var37 - -1][var36]) != 0; ++var37) {
-                           ;
                         }
 
                         label503:
@@ -613,11 +609,9 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
                         var37 = var10;
 
                         for(var13 = var36; 0 < var13 && 0 != (4 & Class38_Sub1.anIntArrayArrayArray2609[var8][var10][-1 + var13]); --var13) {
-                           ;
                         }
 
                         for(var14 = var36; var14 < 104 && (Class38_Sub1.anIntArrayArrayArray2609[var8][var10][var14 + 1] & 4) != 0; ++var14) {
-                           ;
                         }
 
                         label554:
@@ -663,7 +657,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
       }
    }
 
-   private final synchronized void method2190(int var1) {
+   private synchronized void method2190(int var1) {
       try {
          if(var1 == 19661184) {
             if(this.anImageConsumer2978 != null) {
@@ -684,7 +678,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
       }
    }
 
-   static final boolean method2191(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, boolean var8, int var9, int var10, int var11) {
+   static boolean method2191(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, boolean var8, int var9, int var10, int var11) {
       try {
          int var12;
          int var13;
@@ -900,7 +894,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
             aBoolean2981 = true;
          }
 
-         this.method2190(0 ^ 19661184);
+         this.method2190(19661184);
          var3.drawImage(this.anImage2009, 0, 0, this);
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "di.C(" + 0 + ',' + 0 + ',' + (var3 != null?"{...}":"null") + ',' + 0 + ')');
@@ -938,7 +932,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
       }
    }
 
-   static final void method2192() {
+   static void method2192() {
       try {
          if(-68 > -26) {
             method2191(-54, -79, 96, 36, -65, 4, -120, 29, false, -60, -74, 43);

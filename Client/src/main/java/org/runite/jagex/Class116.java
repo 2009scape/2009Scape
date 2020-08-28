@@ -15,8 +15,8 @@ final class Class116 {
    int anInt1593 = 0;
    private static int[] anIntArray1594 = new int['\u8000'];
    private Class34 aClass34_1595;
-   private int[] anIntArray1596 = new int[]{0, 0, 0, 0, 0};
-   private int[] anIntArray1597 = new int[]{0, 0, 0, 0, 0};
+   private final int[] anIntArray1596 = new int[]{0, 0, 0, 0, 0};
+   private final int[] anIntArray1597 = new int[]{0, 0, 0, 0, 0};
    private static int[] anIntArray1598;
    private static int[] anIntArray1599;
    private static int[] anIntArray1600;
@@ -24,7 +24,7 @@ final class Class116 {
    private static int[] anIntArray1602;
    private static int[] anIntArray1603;
    private int anInt1604 = 100;
-   private int[] anIntArray1605 = new int[]{0, 0, 0, 0, 0};
+   private final int[] anIntArray1605 = new int[]{0, 0, 0, 0, 0};
    private Class103 aClass103_1606;
    private Class34 aClass34_1607;
    private Class34 aClass34_1608;
@@ -41,7 +41,7 @@ final class Class116 {
       anIntArray1600 = null;
    }
 
-   private final int method1716(int var1, int var2, int var3) {
+   private int method1716(int var1, int var2, int var3) {
       return var3 == 1?((var1 & 32767) < 16384?var2:-var2):(var3 == 2?anIntArray1591[var1 & 32767] * var2 >> 14:(var3 == 3?((var1 & 32767) * var2 >> 14) - var2:(var3 == 4?anIntArray1594[var1 / 2607 & 32767] * var2:0)));
    }
 

@@ -32,7 +32,7 @@ final class AnimationDefinition {
 	boolean aBoolean1872 = false;
 
 
-	static final Class3_Sub11 method2052(Class130 var0, Class168 var2) {
+	static Class3_Sub11 method2052(Class130 var0, Class168 var2) {
 		try {
 			long var3 = (long)((var2.anInt2095 - -1 << 16) + var2.anInt2090) + (((long)var2.anInt2100 << 56) - -((long)var2.anInt2094 << 32));
 			Class3_Sub11 var5 = (Class3_Sub11)var0.method1780(var3, 0);
@@ -340,7 +340,7 @@ final class AnimationDefinition {
 		}
 	}
 
-	private final void method2060(int var1, RSByteBuffer var3) {
+	private void method2060(int var1, RSByteBuffer var3) {
 		try {
 			int var4;
 			int var5;
@@ -426,7 +426,7 @@ final class AnimationDefinition {
 		}
 	}
 
-	static final void method2061() {
+	static void method2061() {
 		try {
 			Class3_Sub26.anInt2556 = 0;
 			Class140_Sub4.aBoolean2774 = true;

@@ -9,7 +9,7 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
    static int[] anIntArray3218 = new int[]{1, 4};
 
 
-   static final void method254(boolean var0, Class3_Sub31 var1) {
+   static void method254(boolean var0, Class3_Sub31 var1) {
       try {
          int var4 = (int)var1.aLong71;
          if(false) {
@@ -64,7 +64,7 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
       }
    }
 
-   static final void method255(int var0, int var1, int var2) {
+   static void method255(int var0, int var1, int var2) {
       try {
          Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(4, var2, var0);
          var3.g();
@@ -155,7 +155,7 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
       }
    }
 
-   static final void method256(int var0, int var1, int var2, byte var3, int var4) {
+   static void method256(int var0, int var1, int var2, byte var3, int var4) {
       try {
          Class3_Sub28_Sub6 var5 = Class3_Sub24_Sub3.method466(4, 4, var2);
          var5.g();
@@ -171,7 +171,7 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
       }
    }
 
-   static final void method257() {
+   static void method257() {
       try {
          int var1 = 0;
          if((byte) 125 <= 122) {
@@ -206,7 +206,7 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
       }
    }
 
-   static final void method259(Class126 var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, boolean var8) {
+   static void method259(Class126 var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, boolean var8) {
       int var9;
       int var10 = var9 = (var6 << 7) - Class129_Sub1.anInt2697;
       int var11;

@@ -30,7 +30,7 @@ final class Class119 {
       }
    }
 
-   static final void method1729() {
+   static void method1729() {
       try {
          Object var1;
          if(null == Class3_Sub13_Sub10.aFrame3121) {
@@ -90,7 +90,7 @@ final class Class119 {
       }
    }
 
-   static final void method1730(Signlink var0) {
+   static void method1730(Signlink var0) {
       try {
          if((byte) 14 == 14) {
             Class122 var2 = null;
@@ -108,7 +108,6 @@ final class Class119 {
                   var2.method1738(116, var4.buffer, var4.index, 0);
                }
             } catch (Exception var6) {
-               ;
             }
 
             try {
@@ -116,7 +115,6 @@ final class Class119 {
                   var2.close(1);
                }
             } catch (Exception var5) {
-               ;
             }
 
          }

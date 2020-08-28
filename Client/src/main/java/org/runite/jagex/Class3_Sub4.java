@@ -19,7 +19,7 @@ final class Class3_Sub4 extends Class3 {
 	int anInt2265;
 
 
-	static final int method107(CacheIndex var0) {
+	static int method107(CacheIndex var0) {
 		try {
 			int var2 = 0;
 			if(var0.method2144(0, Class168.anInt2104)) {
@@ -104,7 +104,7 @@ final class Class3_Sub4 extends Class3 {
 		}
 	}
 
-	static final void method110(int var3, boolean var4) {
+	static void method110(int var3, boolean var4) {
 		IOHandler.anInt1234 = 104;
 		Class3_Sub13_Sub15.anInt3179 = 104;
 		Class3_Sub13_Sub39.anInt3466 = var3;

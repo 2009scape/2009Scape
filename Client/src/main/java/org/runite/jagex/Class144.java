@@ -12,7 +12,7 @@ abstract class Class144 {
 
    abstract byte[] method2064();
 
-   static final void method2065(CacheIndex var1, CacheIndex var2) {
+   static void method2065(CacheIndex var1, CacheIndex var2) {
       try {
          Class3_Sub13_Sub19.aClass153_3227 = var1;
          if((byte) -125 <= -103) {
@@ -25,7 +25,7 @@ abstract class Class144 {
 
    abstract void method2066(int var1, byte[] var2);
 
-   static final void method2067() {
+   static void method2067() {
       try {
          if(!false) {
             for(Class3_Sub28_Sub2 var1 = (Class3_Sub28_Sub2)Class3_Sub13_Sub15.aClass61_3177.method1222(); null != var1; var1 = (Class3_Sub28_Sub2)Class3_Sub13_Sub15.aClass61_3177.method1221()) {
@@ -51,7 +51,7 @@ abstract class Class144 {
    }
    // static final void method2068(NPCDefinition var0, int var1, int var2, int var3, int var4) {
    // @Splinter
-   static final void drawNpcRightClickOptions(NPCDefinition var0, int var1, int var2, int var3, int var4) {
+   static void drawNpcRightClickOptions(NPCDefinition var0, int var1, int var2, int var3, int var4) {
       try {
          if(Class3_Sub13_Sub34.anInt3415 < 400) {
             if(var0.childNPCs != null) {
@@ -173,7 +173,7 @@ abstract class Class144 {
       }
    }
 
-   static final Class3_Sub28_Sub12 method2069(int var0, int var1) {
+   static Class3_Sub28_Sub12 method2069(int var0, int var1) {
       try {
          if(var1 >= -99) {
             return (Class3_Sub28_Sub12)null;

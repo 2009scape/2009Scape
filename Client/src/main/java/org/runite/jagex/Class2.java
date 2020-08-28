@@ -13,7 +13,7 @@ final class Class2 {
 	static Interface5[] anInterface5Array70;
 
 
-	static final boolean method73(short var0, int var1) {
+	static boolean method73(short var0, int var1) {
 		try {
 			if(var0 != 47 && var0 != 5 && var0 != 43 && var0 != 35 && var0 != 58 && var0 != 22 && var0 != 40 && var0 != 3) {
 				if(var0 != 9 && var0 != 12 && var0 != 1006 && var0 != 1003) {
@@ -52,7 +52,7 @@ final class Class2 {
 		}
 	}
 
-	static final void method75(RSInterface[] var0, int var2) {
+	static void method75(RSInterface[] var0, int var2) {
 		try {
 			if(true) {
 				for(int var3 = 0; var0.length > var3; ++var3) {
@@ -99,7 +99,7 @@ final class Class2 {
 		}
 	}
 
-	static final boolean method76(int var0, int var1, int var2, int var3, int var4, boolean var5, int var6, int var7, int var8, int var9, int var11) {
+	static boolean method76(int var0, int var1, int var2, int var3, int var4, boolean var5, int var6, int var7, int var8, int var9, int var11) {
 		try {
 			int var12;
 			int var13;
@@ -334,7 +334,7 @@ final class Class2 {
 		}
 	}
 
-	static final void method78(int var0, int var2) {
+	static void method78(int var0, int var2) {
 		try {
 			++CacheIndex.anInt1944;
 			Class3_Sub13_Sub1.outgoingBuffer.putOpcode(132);
@@ -347,7 +347,7 @@ final class Class2 {
 		}
 	}
 
-	private final void method79(int var1, RSByteBuffer var2, int var3) {
+	private void method79(int var1, RSByteBuffer var2, int var3) {
 		try {
 			if(var1 == 1) {
 				this.anInt64 = var2.getShort(1);
@@ -380,7 +380,7 @@ final class Class2 {
 		}
 	}
 
-	static final void method81(RSInterface var1) {
+	static void method81(RSInterface var1) {
 		try {
 			if((byte) -128 != -128) {
 				method75((RSInterface[])null, 21);

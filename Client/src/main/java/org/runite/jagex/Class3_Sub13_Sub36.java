@@ -13,7 +13,7 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
    private int anInt3434 = -1;
    static float aFloat3435;
 
-   static final void method338(int var1, boolean var2, int var3, int var4, int var5) {
+   static void method338(int var1, boolean var2, int var3, int var4, int var5) {
       try {
          ++Class79.anInt1127;
          Class124.method1745();
@@ -227,7 +227,7 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
       }
    }
 
-   private final boolean method339() {
+   private boolean method339() {
       try {
          if(false) {
             return true;
@@ -252,7 +252,7 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
       }
    }
 
-   static final int method340(int var0) {
+   static int method340(int var0) {
       try {
          int var2 = 74 % ((8 - -51) / 54);
          return var0 >>> 8;
@@ -300,7 +300,7 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
       }
    }
 
-   static final Class3_Sub28_Sub13 method342(int var0) {
+   static Class3_Sub28_Sub13 method342(int var0) {
       try {
          Class3_Sub28_Sub13 var2 = (Class3_Sub28_Sub13)Class129_Sub1.aClass47_2686.method1092((long)var0, 1400);
          if(var2 == null) {
@@ -322,7 +322,7 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
       }
    }
 
-   static final AbstractIndexedSprite[] method343() {
+   static AbstractIndexedSprite[] method343() {
 	      try {
 	         AbstractIndexedSprite[] var1 = new AbstractIndexedSprite[Class95.anInt1338];
 
@@ -352,7 +352,7 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
       }
    }
 
-   static final void method344(int var0, int var1) {
+   static void method344(int var0, int var1) {
       try {
          if(0 <= var0 && Class3_Sub24_Sub4.aBooleanArray3503.length > var0) {
             Class3_Sub24_Sub4.aBooleanArray3503[var0] = !Class3_Sub24_Sub4.aBooleanArray3503[var0];

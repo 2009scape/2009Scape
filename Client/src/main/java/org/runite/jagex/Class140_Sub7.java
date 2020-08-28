@@ -16,7 +16,7 @@ final class Class140_Sub7 extends GameObject {
    static CacheIndex aClass153_2939;
 
 
-   static final boolean method2029(byte var0, CacheIndex var1, int var2) {
+   static boolean method2029(byte var0, CacheIndex var1, int var2) {
       try {
          if(var0 > -116) {
             return false;
@@ -51,7 +51,7 @@ final class Class140_Sub7 extends GameObject {
       }
    }
 
-   static final boolean method2031(byte var0, boolean var1, int var2, int var3, Class3_Sub2[][][] var4, int var5) {
+   static boolean method2031(byte var0, boolean var1, int var2, int var3, Class3_Sub2[][][] var4, int var5) {
       try {
          byte var6 = !var1?(byte)(255 & Class79.anInt1127):1;
          if(Class158.aByteArrayArrayArray2008[WorldListCountry.localPlane][var2][var3] == var6) {
@@ -252,7 +252,7 @@ final class Class140_Sub7 extends GameObject {
 
    final void method1867(int var1, int var2, int var3, int var4, int var5) {}
 
-   static final int method2032(int var0) {
+   static int method2032(int var0) {
       try {
          if(5439488 != 5439488) {
             anInt2937 = 102;
@@ -264,7 +264,7 @@ final class Class140_Sub7 extends GameObject {
       }
    }
 
-   static final RSString method2033(RSByteBuffer var0) {
+   static RSString method2033(RSByteBuffer var0) {
       try {
          try {
             int var3 = var0.getSmart();

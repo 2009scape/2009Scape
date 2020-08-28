@@ -27,7 +27,7 @@ final class Class134 {
       }
    }
 
-   static final synchronized byte[] method1807(int var1) {
+   static synchronized byte[] method1807(int var1) {
       try {
          byte[] var2;
          if(var1 == 100 && Class65.anInt984 > 0) {
@@ -56,7 +56,7 @@ final class Class134 {
       }
    }
 
-   static final void method1808(int var0, boolean var1, int var3, boolean var4) {
+   static void method1808(int var0, boolean var1, int var3, boolean var4) {
       try {
          Class41.method1047(var0, var3, Class3_Sub13_Sub16.aClass44_Sub1Array3201.length - 1, var4, 0, var1);
          if((byte) 30 != 30) {
@@ -68,7 +68,7 @@ final class Class134 {
       }
    }
 
-   static final void method1809(int var0, long[] var1, int var2, int var3, Object[] var4) {
+   static void method1809(int var0, long[] var1, int var2, int var3, Object[] var4) {
       try {
          if(var2 < 85) {
             aClass61_1758 = (Class61)null;

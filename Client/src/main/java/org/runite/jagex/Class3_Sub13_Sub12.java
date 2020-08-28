@@ -8,7 +8,7 @@ final class Class3_Sub13_Sub12 extends Class3_Sub13 {
    static RSString aClass94_3145 = RSString.createRSString(")1 ");
 
 
-   static final void method223(int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
+   static void method223(int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
       try {
          if(var7 == var4) {
             IOHandler.method1460(var1, var3, var6, var7, var2, var5);
@@ -33,7 +33,7 @@ final class Class3_Sub13_Sub12 extends Class3_Sub13 {
       super(1, true);
    }
 
-   static final void method224(int var1, int var2, int var3, int var4, int var5) {
+   static void method224(int var1, int var2, int var3, int var4, int var5) {
       try {
          GameObject.aClass109Array1831[0].method1667(var3, var4);
          GameObject.aClass109Array1831[1].method1667(var3, -16 + var5 + var4);
@@ -73,7 +73,7 @@ final class Class3_Sub13_Sub12 extends Class3_Sub13 {
       }
    }
 
-   static final void method225(RSInterface var1) {
+   static void method225(RSInterface var1) {
       try {
          RSInterface var2 = Class168.method2273(var1, 123);
          if(14 != 14) {
@@ -97,7 +97,7 @@ final class Class3_Sub13_Sub12 extends Class3_Sub13 {
       }
    }
 
-   static final void method226(int var0, int var1) {
+   static void method226(int var0, int var1) {
       try {
          if(var0 != -1) {
             if(var1 <= 27) {
@@ -154,7 +154,7 @@ final class Class3_Sub13_Sub12 extends Class3_Sub13 {
       }
    }
 
-   static final int method228(CacheIndex var0, CacheIndex var1, boolean var2) {
+   static int method228(CacheIndex var0, CacheIndex var1, boolean var2) {
       try {
          int var3 = 0;
          if(var0.method2144(0, Class96.anInt1352)) {

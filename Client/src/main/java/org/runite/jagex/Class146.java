@@ -13,7 +13,7 @@ abstract class Class146 {
 
    abstract int method2078();
 
-   static final boolean updateInterfacePacketCounter(int packetCounter) {
+   static boolean updateInterfacePacketCounter(int packetCounter) {
       try {
          if((byte) -25 != -25) {
             anInt1901 = 102;
@@ -27,7 +27,7 @@ abstract class Class146 {
       }
    }
 
-   static final int method2080(int var0) {
+   static int method2080(int var0) {
       try {
          var0 = (-715827883 & var0 >>> 1) + (1431655765 & var0);
          var0 = ((-858993460 & var0) >>> 2) + (var0 & 858993459);
@@ -54,7 +54,7 @@ abstract class Class146 {
 
    abstract void method2082(Component var2);
 
-   static final void method2083(int var0, int var1, int var2, byte[][][] var3, int var4, byte var5, int var6, int var7) {
+   static void method2083(int var0, int var1, int var2, byte[][][] var3, int var4, byte var5, int var6, int var7) {
       ++Class3_Sub28_Sub1.anInt3539;
       GameShell.anInt3 = 0;
       int var8 = var6 - 16;

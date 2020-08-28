@@ -15,7 +15,7 @@ final class Class106 {
    static boolean hasInternetExplorer6 = false;
 
 
-   static final void method1642(RSString var1) {
+   static void method1642(RSString var1) {
       try {
          if(null != Class3_Sub28_Sub15.aClass3_Sub19Array3694) {
             if(3803 != 3803) {
@@ -41,7 +41,7 @@ final class Class106 {
       }
    }
 
-   static final int method1643(boolean var1, int var2, int var3) {
+   static int method1643(boolean var1, int var2, int var3) {
       try {
          if(10131 != 10131) {
             method1644((byte)95);

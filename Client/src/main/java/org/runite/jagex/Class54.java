@@ -12,7 +12,7 @@ final class Class54 {
    static CacheIndex aClass153_878;
 
 
-   static final void method1175(int var0) {
+   static void method1175(int var0) {
       try {
          Class3_Sub13_Sub30.anInt3362 = -1;
          Class82.anInt1150 = -1;
@@ -27,7 +27,7 @@ final class Class54 {
       }
    }
 
-   static final boolean method1176(RSString var0) {
+   static boolean method1176(RSString var0) {
       try {
          if(var0 == null) {
             return false;
@@ -46,7 +46,7 @@ final class Class54 {
       }
    }
 
-   static final void method1177(int var0, long var1, byte var3, RSString var4, int var5, short var6, RSString var7, int var8) {
+   static void method1177(int var0, long var1, byte var3, RSString var4, int var5, short var6, RSString var7, int var8) {
       try {
          if(var3 > -23) {
             method1177(-45, 37L, (byte)-37, (RSString)null, -16, (short)110, (RSString)null, -75);

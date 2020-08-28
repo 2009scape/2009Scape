@@ -22,7 +22,7 @@ final class Class23 {
       }
    }
 
-   static final void method938(int var0, int var1, int var2, int var3, int var4, int var5, int var7, int var8) {
+   static void method938(int var0, int var1, int var2, int var3, int var4, int var5, int var7, int var8) {
       try {
          int var9 = var2 - var7;
          int var10 = var3 - var8;
@@ -34,7 +34,7 @@ final class Class23 {
       }
    }
 
-   static final RSByteBuffer method939() {
+   static RSByteBuffer method939() {
       try {
          RSByteBuffer var1 = new RSByteBuffer(34);
          var1.putByte((byte)-40, 11);
@@ -72,7 +72,7 @@ final class Class23 {
       }
    }
 
-   static final void method940(int var0, int var1) {
+   static void method940(int var0, int var1) {
       try {
          if(var0 >= 101) {
             MouseListeningClass var2 = Class3_Sub28_Sub7_Sub1.aClass149_4047;

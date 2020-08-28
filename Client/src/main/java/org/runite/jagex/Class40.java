@@ -13,7 +13,7 @@ final class Class40 {
    static Class3_Sub28_Sub16 aClass3_Sub28_Sub16_680;
 
 
-   static final int method1040(int var0, int var1, int var3) {
+   static int method1040(int var0, int var1, int var3) {
       try {
          return (byte) 0 != 0?-127:(var1 < var3 ?var3:(var1 > var0?var0:var1));
       } catch (RuntimeException var5) {
@@ -21,7 +21,7 @@ final class Class40 {
       }
    }
 
-   static final void method1041(long var0, RSString name) {
+   static void method1041(long var0, RSString name) {
       try {
     	 // System.out.println("Class 40 " + var0 + ", " + var2 + ", " + name.toString());
          Class3_Sub13_Sub1.outgoingBuffer.index = 0;
@@ -56,7 +56,7 @@ final class Class40 {
       }
    }
 
-   static final Class3_Sub28_Sub16_Sub2 method1043(int var0, CacheIndex var1, int var2, int archiveId) {
+   static Class3_Sub28_Sub16_Sub2 method1043(int var0, CacheIndex var1, int var2, int archiveId) {
       try {
          if(var2 != -3178) {
             method1044(-55);
@@ -68,7 +68,7 @@ final class Class40 {
       }
    }
 
-   static final void method1044(int var0) {
+   static void method1044(int var0) {
       try {
          if(var0 != -3782) {
             aClass94_672 = (RSString)null;
@@ -80,7 +80,7 @@ final class Class40 {
       }
    }
 
-   static final void method1045() {
+   static void method1045() {
       try {
          if(-19761 != -19761) {
             method1046(-110);
@@ -92,7 +92,7 @@ final class Class40 {
       }
    }
 
-   static final void method1046(int var0) {
+   static void method1046(int var0) {
       try {
          Class163_Sub1.method2210(false);
          Class3_Sub13_Sub24.anInt3293 = 0;

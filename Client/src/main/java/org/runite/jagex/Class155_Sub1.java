@@ -3,7 +3,7 @@ import java.awt.Component;
 
 final class Class155_Sub1 extends Class155 {
 
-   private int anInt2969;
+   private final int anInt2969;
    private static Interface1 anInterface1_2970;
 
 

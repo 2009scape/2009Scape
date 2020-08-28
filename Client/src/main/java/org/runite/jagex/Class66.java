@@ -3,7 +3,7 @@ import java.io.IOException;
 
 final class Class66 {
 
-	private NodeList highPriorityRequests = new NodeList();
+	private final NodeList highPriorityRequests = new NodeList();
 	static int anInt994;
 	static RSString aClass94_995 = RSString.createRSString("(Y<)4col>");
 	static Class3_Sub28_Sub16[] aClass3_Sub28_Sub16Array996;
@@ -11,14 +11,14 @@ final class Class66 {
 	static int anInt998 = 0;
 	static int anInt999 = -1;
 	private NodeList aClass13_1000 = new NodeList();
-	private NodeList lowPriorityRequests = new NodeList();
+	private final NodeList lowPriorityRequests = new NodeList();
 	static int wlPacketSize = 0;
-	private NodeList aClass13_1003 = new NodeList();
+	private final NodeList aClass13_1003 = new NodeList();
 	private long aLong1004;
 	private IOHandler aClass89_1005;
 	private int anInt1006;
-	private RSByteBuffer aClass3_Sub30_1007 = new RSByteBuffer(4);
-	private RSByteBuffer aClass3_Sub30_1008 = new RSByteBuffer(8);
+	private final RSByteBuffer aClass3_Sub30_1007 = new RSByteBuffer(4);
+	private final RSByteBuffer aClass3_Sub30_1008 = new RSByteBuffer(8);
 	private byte aByte1009 = 0;
 	volatile int anInt1010 = 0;
 	volatile int anInt1011 = 0;
@@ -66,7 +66,6 @@ final class Class66 {
 					try {
 						this.aClass89_1005.close(14821);
 					} catch (Exception var18) {
-						;
 					}
 
 					this.aClass89_1005 = null;
@@ -174,11 +173,9 @@ final class Class66 {
 									long var13 = (long)((var7 << 16) - -var8);
 									if(var12) {
 										for(var15 = (Class3_Sub28_Sub10_Sub2)this.aClass13_1003.method876((byte)76); null != var15 && var13 != var15.aLong2569; var15 = (Class3_Sub28_Sub10_Sub2)this.aClass13_1003.method878(122)) {
-											;
 										}
 									} else {
 										for(var15 = (Class3_Sub28_Sub10_Sub2)this.aClass13_1000.method876((byte)65); var15 != null && var15.aLong2569 != var13; var15 = (Class3_Sub28_Sub10_Sub2)this.aClass13_1000.method878(-15)) {
-											;
 										}
 									}
 
@@ -215,7 +212,6 @@ final class Class66 {
 					try {
 						this.aClass89_1005.close(14821);
 					} catch (Exception var17) {
-						;
 					}
 
 					this.anInt1010 = -2;
@@ -260,7 +256,7 @@ final class Class66 {
 		}
 	}
 
-	static final Class3_Sub15 method1245(CacheIndex var1, int var2) {
+	static Class3_Sub15 method1245(CacheIndex var1, int var2) {
 		try {
 			if(117 <= 12) {
 				wlPacketSize = 107;
@@ -273,7 +269,7 @@ final class Class66 {
 		}
 	}
 
-	private final int method1246(int var1) {
+	private int method1246(int var1) {
 		try {
 			if(var1 != 11706) {
 				aClass3_Sub28_Sub16Array996 = (Class3_Sub28_Sub16[])null;
@@ -299,7 +295,6 @@ final class Class66 {
 						try {
 							this.aClass89_1005.close(14821);
 						} catch (Exception var5) {
-							;
 						}
 
 						++this.anInt1011;
@@ -335,7 +330,6 @@ final class Class66 {
 				try {
 					this.aClass89_1005.close(var3 ^ 14821);
 				} catch (Exception var8) {
-					;
 				}
 
 				this.aClass89_1005 = null;
@@ -365,7 +359,6 @@ final class Class66 {
 									try {
 										this.aClass89_1005.close(14821);
 									} catch (Exception var6) {
-										;
 									}
 
 									this.anInt1010 = -2;
@@ -390,7 +383,7 @@ final class Class66 {
 		}
 	}
 
-	static final void method1250(int var0, boolean var1) {
+	static void method1250(int var0, boolean var1) {
 		try {
 			Class3_Sub10.aByteArrayArrayArray2339 = (byte[][][])null;
 			Class44.anIntArrayArrayArray720 = (int[][][])null;
@@ -449,7 +442,6 @@ final class Class66 {
 			try {
 				this.aClass89_1005.close(14821);
 			} catch (Exception var4) {
-				;
 			}
 
 			this.anInt1010 = -1;
@@ -516,7 +508,7 @@ final class Class66 {
 		}
 	}
 
-	private final void method1256(byte var1) {
+	private void method1256(byte var1) {
 		try {
 			if(this.aClass89_1005 != null) {
 				if(var1 == -77) {
@@ -530,7 +522,6 @@ final class Class66 {
 						try {
 							this.aClass89_1005.close(14821);
 						} catch (Exception var4) {
-							;
 						}
 
 						++this.anInt1011;

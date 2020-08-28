@@ -13,11 +13,11 @@ final class IOHandler implements Runnable {
     private InputStream anInputStream1232;
     private byte[] aByteArray1233;
     static int anInt1234;
-    private Socket aSocket1235;
+    private final Socket aSocket1235;
     private int anInt1236 = 0;
     private Class64 aClass64_1237;
     static Class33 aClass33_1238;
-    private Signlink aClass87_1239;
+    private final Signlink aClass87_1239;
     static int anInt1240;
     private boolean aBoolean1241 = false;
     static Class61 aClass61_1242 = new Class61();
@@ -41,7 +41,6 @@ final class IOHandler implements Runnable {
                                 try {
                                     this.wait();
                                 } catch (InterruptedException var9) {
-                                    ;
                                 }
                             }
 
@@ -88,7 +87,6 @@ final class IOHandler implements Runnable {
                             this.aSocket1235.close();
                         }
                     } catch (IOException var6) {
-                        ;
                     }
 
                     this.aByteArray1233 = null;
@@ -103,7 +101,7 @@ final class IOHandler implements Runnable {
         }
     }
 
-    static final void method1460(int var0, int var1, int var3, int var4, int var5, int var6) {
+    static void method1460(int var0, int var1, int var3, int var4, int var5, int var6) {
         try {
             if(Class101.anInt1425 <= var5 - var4 && Class3_Sub28_Sub18.anInt3765 >= var5 - -var4 && Class159.anInt2020 <= -var4 + var1 && Class57.anInt902 >= var4 + var1) {
                 Class3_Sub13_Sub2.method175(var6, var0, var1, var3, var4, var5);
@@ -273,7 +271,6 @@ final class IOHandler implements Runnable {
                         try {
                             ((Thread)this.aClass64_1237.anObject974).join();
                         } catch (InterruptedException var4) {
-                            ;
                         }
                     }
                 }
@@ -285,7 +282,7 @@ final class IOHandler implements Runnable {
         }
     }
 
-    static final void method1469(int[] var0, int var1, int var2, int var3, int var4, int var5) {
+    static void method1469(int[] var0, int var1, int var2, int var3, int var4, int var5) {
         Class3_Sub2 var6 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var3][var4][var5];
         if(var6 != null) {
             Class126 var7 = var6.aClass126_2240;
@@ -361,7 +358,7 @@ final class IOHandler implements Runnable {
         }
     }
 
-    static final void method1470(int var0, AnimationDefinition var1, int var2, int var3, boolean var4, int var5) {
+    static void method1470(int var0, AnimationDefinition var1, int var2, int var3, boolean var4, int var5) {
         try {
             if(Class113.anInt1552 < 50) {
                 if(var1.anIntArrayArray1867 != null && var1.anIntArrayArray1867.length > var5 && null != var1.anIntArrayArray1867[var5]) {

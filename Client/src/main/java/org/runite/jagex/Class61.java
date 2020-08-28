@@ -9,7 +9,7 @@ final class Class61 {
    private Class3 aClass3_941;
 
 
-   static final Class70 method1209(int var0, int var1, int var2) {
+   static Class70 method1209(int var0, int var1, int var2) {
       Class3_Sub2 var3 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var0][var1][var2];
       if(var3 == null) {
          return null;
@@ -20,7 +20,7 @@ final class Class61 {
       }
    }
 
-   static final Class3_Sub28_Sub9 method1210(int var1) {
+   static Class3_Sub28_Sub9 method1210(int var1) {
       try {
          Class3_Sub28_Sub9 var2 = (Class3_Sub28_Sub9)Class163.aClass47_2041.method1092((long)var1, 1400);
          if(64 != 64) {
@@ -81,11 +81,11 @@ final class Class61 {
       }
    }
 
-   static final void method1213(int var0, Class3_Sub11[] var1) {
+   static void method1213(int var0, Class3_Sub11[] var1) {
       Class3_Sub23.aClass3_Sub11ArrayArray2542[var0] = var1;
    }
 
-   static final void method1214(int var0, int var1, int var2, int var3) {
+   static void method1214(int var0, int var1, int var2, int var3) {
       try {
          Class3_Sub9 var5;
          for(var5 = (Class3_Sub9)Class3.aClass61_78.method1222(); var5 != null; var5 = (Class3_Sub9)Class3.aClass61_78.method1221()) {
@@ -218,7 +218,7 @@ final class Class61 {
       }
    }
 
-   static final RSString method1218(boolean var0, int var1, int var2) {
+   static RSString method1218(boolean var0, int var1, int var2) {
       try {
          return var1 <= 122?(RSString)null:Class118.method1723((byte)-128, var0, var2);
       } catch (RuntimeException var4) {

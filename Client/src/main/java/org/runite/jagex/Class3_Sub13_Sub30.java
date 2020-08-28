@@ -19,7 +19,7 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
     * @returns the RSString color
     */
 
-   static final RSString getProperColor(int otherPlayer, int yourPlayer) {
+   static RSString getProperColor(int otherPlayer, int yourPlayer) {
       int playerLevelDiff = -otherPlayer + yourPlayer;
       if (playerLevelDiff < -9)
          return ColorCore.LvlDiffN9;//Solid Red
@@ -41,7 +41,7 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
    }
 
 
-   static final void method312(int var0, int var1, int var2, Player playerUsername, int var4) {
+   static void method312(int var0, int var1, int var2, Player playerUsername, int var4) {
       try {
          if(Class102.player != playerUsername) {
             if(Class3_Sub13_Sub34.anInt3415 < 400) {
@@ -127,7 +127,7 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
       }
    }
 
-   static final void method313(byte var0) {
+   static void method313(byte var0) {
       try {
          if(var0 <= 51) {
             method312(77, -52, -42, (Player)null, 120);
@@ -182,7 +182,7 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
       }
    }
 
-   private final int method314(int var1, int var2, int var3) {
+   private int method314(int var1, int var2, int var3) {
       try {
          if(var2 != 7001) {
             this.method314(-83, 92, 48);
@@ -230,7 +230,7 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
       }
    }
 
-   static final void parseObjectMapping(Class91[] var0, int var1, byte[] var2, int var3, int var4, int var5, int var6, boolean var7, int var8, int var9) {
+   static void parseObjectMapping(Class91[] var0, int var1, byte[] var2, int var3, int var4, int var5, int var6, boolean var7, int var8, int var9) {
       try {
          if((byte) -54 == -54) {
             int var12 = -1;

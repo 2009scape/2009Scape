@@ -10,12 +10,12 @@ final class Class104 implements Interface5 {
    static RSString aClass94_2171 = RSString.createRSString("");
    static CacheIndex aClass153_2172;
    private int anInt2173;
-   private float[] aFloatArray2174 = new float[4];
+   private final float[] aFloatArray2174 = new float[4];
    private static RSString aClass94_2175 = RSString.createRSString(")4a=");
    static RSString aClass94_2176 = RSString.createRSString("(U0a )2 non)2existant gosub script)2num: ");
 
 
-   static final void method1626(byte var0) {
+   static void method1626(byte var0) {
       try {
          Class3_Sub28_Sub4.aClass93_3572.method1524();
          Class143.aClass93_1874.method1524();
@@ -27,7 +27,7 @@ final class Class104 implements Interface5 {
       }
    }
 
-   static final boolean method1627(int var0, byte var1) {
+   static boolean method1627(int var0, byte var1) {
       try {
          WorldListEntry var2 = Class3_Sub8.getWorld(97, var0);
          if(var2 == null) {
@@ -73,7 +73,7 @@ final class Class104 implements Interface5 {
       }
    }
 
-   static final void method1628(int var0, int var1, int var2, int var3, int var4, int var5) {
+   static void method1628(int var0, int var1, int var2, int var3, int var4, int var5) {
       try {
          int var9;
          int var12;
@@ -317,7 +317,7 @@ final class Class104 implements Interface5 {
       }
    }
 
-   static final void method1629(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, int var13, int var14, int var15, int var16, int var17, int var18, int var19) {
+   static void method1629(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, int var13, int var14, int var15, int var16, int var17, int var18, int var19) {
       int var21;
       Class126 var20;
       if(var3 == 0) {
@@ -445,7 +445,7 @@ final class Class104 implements Interface5 {
       }
    }
 
-   private final void method1631() {
+   private void method1631() {
       try {
          GL var2 = HDToolKit.gl;
          this.anInt2173 = var2.glGenLists(2);
@@ -492,7 +492,7 @@ final class Class104 implements Interface5 {
       }
    }
 
-   static final void method1632(int var0, int var1, int var2, int var3, int var4, int var5) {
+   static void method1632(int var0, int var1, int var2, int var3, int var4, int var5) {
       try {
          if(var0 <= 66) {
             method1630((byte)-33);

@@ -121,7 +121,7 @@ final class ObjectDefinition {
       }
    }
 
-   private final Model_Sub1 method1686(int var1, int var2) {
+   private Model_Sub1 method1686(int var1, int var2) {
       try {
          Model_Sub1 var4 = null;
          boolean var5 = this.aBoolean1536;
@@ -269,7 +269,7 @@ final class ObjectDefinition {
       }
    }
 
-   static final Class72 method1688(int var0, int var1, int var2) {
+   static Class72 method1688(int var0, int var1, int var2) {
       Class3_Sub2 var3 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var0][var1][var2];
       if(var3 == null) {
          return null;
@@ -368,7 +368,7 @@ final class ObjectDefinition {
       }
    }
 
-   private final void parseOpcode(RSByteBuffer buffer, int opcode) {
+   private void parseOpcode(RSByteBuffer buffer, int opcode) {
       try {
          if(-80 != -80) {
             this.anInt1522 = -122;
@@ -615,7 +615,7 @@ final class ObjectDefinition {
       }
    }
 
-   private final Class140_Sub1_Sub1 method1695(int var1, boolean var2, int var4) {
+   private Class140_Sub1_Sub1 method1695(int var1, boolean var2, int var4) {
       try {
          int var6 = this.anInt1494 + 64;
          int var7 = 5 * this.anInt1489 + 768;

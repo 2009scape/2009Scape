@@ -14,7 +14,7 @@ final class Class3_Sub28_Sub13 extends Node {
    private int anInt3667;
 
 
-   private final void method615(int var1, RSByteBuffer var2, byte var3) {
+   private void method615(int var1, RSByteBuffer var2, byte var3) {
       try {
          if(var3 > -29) {
             anInt3657 = 70;
@@ -88,7 +88,7 @@ final class Class3_Sub28_Sub13 extends Node {
       }
    }
 
-   private final void method618() {
+   private void method618() {
       try {
          this.aClass130_3666 = new Class130(this.aClass130_3663.method1785(81));
          Class3_Sub29 var2 = (Class3_Sub29)this.aClass130_3663.method1776(0 + 88);
@@ -105,7 +105,7 @@ final class Class3_Sub28_Sub13 extends Node {
       }
    }
 
-   static final LDIndexedSprite[] method619(byte var0, int var1, CacheIndex var2) {
+   static LDIndexedSprite[] method619(byte var0, int var1, CacheIndex var2) {
       try {
          return Class140_Sub7.method2029((byte)-119, var2, var1)?(var0 <= 52?(LDIndexedSprite[])null:Class69.method1281()):null;
       } catch (RuntimeException var4) {
@@ -147,7 +147,7 @@ final class Class3_Sub28_Sub13 extends Node {
       }
    }
 
-   private final void method622() {
+   private void method622() {
       try {
          this.aClass130_3666 = new Class130(this.aClass130_3663.method1785(93));
          int var3 = -48 % ((26 - 109) / 58);
@@ -162,7 +162,7 @@ final class Class3_Sub28_Sub13 extends Node {
       }
    }
 
-   static final byte[] method623(byte var0, byte[] var1) {
+   static byte[] method623(byte var0, byte[] var1) {
       try {
          if(var0 > -112) {
             method619((byte)43, -121, (CacheIndex)null);

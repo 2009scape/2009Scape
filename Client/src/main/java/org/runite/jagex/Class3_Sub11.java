@@ -10,7 +10,7 @@ final class Class3_Sub11 extends Class3 {
    int anInt2344 = 0;
    private ByteBuffer aByteBuffer2345;
    private float[] aFloatArray2346;
-   private boolean aBoolean2347;
+   private final boolean aBoolean2347;
    private int[] anIntArray2348;
    private int[] anIntArray2349;
    private int[] anIntArray2350;
@@ -36,10 +36,10 @@ final class Class3_Sub11 extends Class3 {
    private boolean[] aBooleanArray2370;
    private int[] anIntArray2371;
    private static RSByteBuffer aClass3_Sub30_2372;
-   private float aFloat2373;
+   private final float aFloat2373;
 
 
-   static final void method144() {
+   static void method144() {
       aClass3_Sub30_2372 = null;
       aClass3_Sub30_2362 = null;
       aByteBuffer2368 = null;

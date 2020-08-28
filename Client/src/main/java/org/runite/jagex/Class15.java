@@ -18,7 +18,7 @@ final class Class15 implements Runnable {
    volatile boolean aBoolean353 = false;
 
 
-   static final boolean method888(int var0, ObjectDefinition var1, boolean var2, int var3, int var4, int var5, int var6) {
+   static boolean method888(int var0, ObjectDefinition var1, boolean var2, int var3, int var4, int var5, int var6) {
       try {
          Class2 var7 = Class3_Sub28_Sub6.c(var1.anInt1516);
          if(var7.anInt64 == -1) {
@@ -67,7 +67,7 @@ final class Class15 implements Runnable {
       }
    }
 
-   static final void method889(byte var0, RSByteBuffer var1) {
+   static void method889(byte var0, RSByteBuffer var1) {
       try {
          if(var0 != 105) {
             localNPCIndexes = (int[])null;
@@ -209,7 +209,7 @@ final class Class15 implements Runnable {
       }
    }
 
-   static final Object method890(int var1, byte[] var2) {
+   static Object method890(int var1, byte[] var2) {
       try {
          if(var2 == null) {
             return null;
@@ -262,7 +262,7 @@ final class Class15 implements Runnable {
       }
    }
 
-   static final Class3_Sub28_Sub16[] method891(int var0) {
+   static Class3_Sub28_Sub16[] method891(int var0) {
       try {
          Class3_Sub28_Sub16[] var1 = new Class3_Sub28_Sub16[Class95.anInt1338];
          if(var0 != -5) {
@@ -306,7 +306,7 @@ final class Class15 implements Runnable {
       }
    }
 
-   static final int method893(int var0) {
+   static int method893(int var0) {
       try {
          int var2 = -66 / ((67 - (byte) 110) / 41);
          return var0 & 255;
@@ -315,7 +315,7 @@ final class Class15 implements Runnable {
       }
    }
 
-   static final RSString method894(long var0, byte var2) {
+   static RSString method894(long var0, byte var2) {
       try {
          Class3_Sub28_Sub5.aCalendar3581.setTime(new Date(var0));
          int var3 = Class3_Sub28_Sub5.aCalendar3581.get(7);//Day of the week
@@ -335,7 +335,7 @@ final class Class15 implements Runnable {
       }
    }
 
-   static final int[][] method895(int var4, byte var8) {
+   static int[][] method895(int var4, byte var8) {
       try {
          if(var8 >= -52) {
             method891(115);

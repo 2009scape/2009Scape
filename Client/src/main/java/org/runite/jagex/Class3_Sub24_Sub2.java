@@ -2,13 +2,13 @@ package org.runite.jagex;
 
 final class Class3_Sub24_Sub2 extends Class3_Sub24 {
 
-   private Class61 aClass61_3485 = new Class61();
-   private Class61 aClass61_3486 = new Class61();
+   private final Class61 aClass61_3485 = new Class61();
+   private final Class61 aClass61_3486 = new Class61();
    private int anInt3487 = 0;
    private int anInt3488 = -1;
 
 
-   private final void method456(Class3_Sub3 var1) {
+   private void method456(Class3_Sub3 var1) {
       var1.method86(-1024);
       var1.method106();
       Class3 var2 = this.aClass61_3486.aClass3_940.aClass3_74;
@@ -58,7 +58,7 @@ final class Class3_Sub24_Sub2 extends Class3_Sub24 {
 
    }
 
-   private final void method458() {
+   private void method458() {
       if(this.anInt3487 > 0) {
          for(Class3_Sub3 var1 = (Class3_Sub3)this.aClass61_3486.method1222(); var1 != null; var1 = (Class3_Sub3)this.aClass61_3486.method1221()) {
             var1.anInt2247 -= this.anInt3487;
@@ -74,14 +74,14 @@ final class Class3_Sub24_Sub2 extends Class3_Sub24 {
       return (Class3_Sub24)this.aClass61_3485.method1222();
    }
 
-   private final void method459(int var1) {
+   private void method459(int var1) {
       for(Class3_Sub24 var2 = (Class3_Sub24)this.aClass61_3485.method1222(); var2 != null; var2 = (Class3_Sub24)this.aClass61_3485.method1221()) {
          var2.method415(var1);
       }
 
    }
 
-   private final void method460(int[] var1, int var2, int var3) {
+   private void method460(int[] var1, int var2, int var3) {
       for(Class3_Sub24 var4 = (Class3_Sub24)this.aClass61_3485.method1222(); var4 != null; var4 = (Class3_Sub24)this.aClass61_3485.method1221()) {
          var4.method410(var1, var2, var3);
       }
@@ -133,7 +133,7 @@ final class Class3_Sub24_Sub2 extends Class3_Sub24 {
       return (Class3_Sub24)this.aClass61_3485.method1221();
    }
 
-   private final void method462(Class3 var1, Class3_Sub3 var2) {
+   private void method462(Class3 var1, Class3_Sub3 var2) {
       while(var1 != this.aClass61_3486.aClass3_940 && ((Class3_Sub3)var1).anInt2247 <= var2.anInt2247) {
          var1 = var1.aClass3_74;
       }

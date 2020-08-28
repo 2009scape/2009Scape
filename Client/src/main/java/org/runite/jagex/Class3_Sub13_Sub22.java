@@ -41,7 +41,7 @@ final class Class3_Sub13_Sub22 extends Class3_Sub13 {
       }
    }
 
-   static final void method273(int[] var0, NPC var2, int[] var3, int[] var4) {
+   static void method273(int[] var0, NPC var2, int[] var3, int[] var4) {
       try {
          int var5 = 0;
          if((byte) 92 > 81) {

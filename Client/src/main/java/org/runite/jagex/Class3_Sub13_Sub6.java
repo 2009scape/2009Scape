@@ -15,7 +15,7 @@ final class Class3_Sub13_Sub6 extends Class3_Sub13 {
    static int anInt3084;
 
 
-   static final void method195(int var0) {
+   static void method195(int var0) {
       try {
          int var1 = (NPC.anInt3995 >> 10) - -(Class131.anInt1716 >> 3);
          int var2 = (Class77.anInt1111 >> 10) - -(Class82.anInt1152 >> 3);
@@ -96,7 +96,7 @@ final class Class3_Sub13_Sub6 extends Class3_Sub13 {
       }
    }
 
-   static final void method196(boolean var0) {
+   static void method196(boolean var0) {
       try {
          Class41.aClass93_684.method1523((byte)-117);
          Class163_Sub1.aClass93_2984.method1523((byte)-111);
@@ -145,7 +145,7 @@ final class Class3_Sub13_Sub6 extends Class3_Sub13 {
       }
    }
 
-   static final void method198(boolean var0) {
+   static void method198(boolean var0) {
       try {
          if(-32624 != -32624) {
             method196(true);
@@ -174,7 +174,7 @@ final class Class3_Sub13_Sub6 extends Class3_Sub13 {
       }
    }
 
-   static final void method199(int var0, int var1, int var2) {
+   static void method199(int var0, int var1, int var2) {
       try {
          if(-799 != -799) {
             aBoolean3078 = true;

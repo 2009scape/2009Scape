@@ -11,7 +11,7 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
    static int[] anIntArray3288 = new int[]{4, 4, 1, 2, 6, 4, 2, 49, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
    static RSString aClass94_3289 = RSString.createRSString("::fps ");
 
-   static final int method275(int var0, int var1, int var2, int var3, int var4) {
+   static int method275(int var0, int var1, int var2, int var3, int var4) {
       try {
          if(var3 <= 8) {
             anIntArray3288 = (int[])null;
@@ -24,7 +24,7 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
       }
    }
 
-   static final void method276(int var0, int var1, int var2, int var3, GameObject var4, long var5, boolean var7) {
+   static void method276(int var0, int var1, int var2, int var3, GameObject var4, long var5, boolean var7) {
       if(var4 != null) {
          Class12 var8 = new Class12();
          var8.object = var4;
@@ -54,7 +54,7 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
       }
    }
 
-   static final boolean handleWorldListUpdate(byte[] buf) {
+   static boolean handleWorldListUpdate(byte[] buf) {
       try {
          if(4 == 4) {
             RSByteBuffer buffer = new RSByteBuffer(buf);
@@ -113,7 +113,7 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
       super(0, false);
    }
 
-   static final void method280(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var11, int var12) {
+   static void method280(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var11, int var12) {
       try {
          Class3_Sub5 var13 = new Class3_Sub5();
          if(-745213428 == -745213428) {
@@ -189,7 +189,7 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
       }
    }
 
-   static final void method281(int var1, int var2) {
+   static void method281(int var1, int var2) {
       try {
          Class57.anIntArray898[var2] = var1;
          Class3_Sub7 var3 = (Class3_Sub7)Class3_Sub28_Sub15.aClass130_3679.method1780((long)var2, 0);

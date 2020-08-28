@@ -3,7 +3,7 @@ package org.runite.jagex;
 final class Class3_Sub28_Sub7_Sub1 extends Class3_Sub28_Sub7 {
 
    static Class93 aClass93_4043 = new Class93(64);
-   private Object anObject4044;
+   private final Object anObject4044;
    static volatile int anInt4045 = 0;
    static Class130 aClass130_4046 = new Class130(16);
    static MouseListeningClass aClass149_4047 = new MouseListeningClass();
@@ -14,7 +14,7 @@ final class Class3_Sub28_Sub7_Sub1 extends Class3_Sub28_Sub7 {
    static RSString aClass94_4052 = RSString.createRSString("www");
 
 
-   static final void method569(int var1) {
+   static void method569(int var1) {
       try {
          if(-82 < -78) {
             Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 7, var1);

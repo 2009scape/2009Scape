@@ -21,7 +21,7 @@ final class CS2Script extends Class3 {
    static int anInt2453 = 127;
 
 
-   static final void method375(CacheIndex var1, CacheIndex var2) {
+   static void method375(CacheIndex var1, CacheIndex var2) {
       try {
          Class10.aClass153_152 = var1;
          Class127.aClass153_1680 = var2;
@@ -45,7 +45,7 @@ final class CS2Script extends Class3 {
       }
    }
 
-   static final void sendRegistryRequest(int year, int country, int day, int month) {
+   static void sendRegistryRequest(int year, int country, int day, int month) {
       try {
     	//  System.out.println("CS2Script year=" + year + ", country=" + country + ", day=" + day + ", month=" + month + ", stage=" + stage + ", " + System.currentTimeMillis());
          Class3_Sub13_Sub1.outgoingBuffer.index = 0;
@@ -63,7 +63,7 @@ final class CS2Script extends Class3 {
       }
    }
 
-   static final Class79 method378(int var0, byte var1) {
+   static Class79 method378(int var0, byte var1) {
       try {
          Class79 var2 = (Class79)aClass93_2450.get((long)var0);
          if(var2 == null) {
@@ -87,7 +87,7 @@ final class CS2Script extends Class3 {
       }
    }
 
-   static final void method379(int var0) {
+   static void method379(int var0) {
       try {
          int var2 = Class146.anInt1904 * 128 - -64;
          int var1 = 128 * Canvas_Sub2.anInt30 + 64;

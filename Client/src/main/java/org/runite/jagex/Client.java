@@ -168,7 +168,7 @@ public final class Client extends GameShell {
 		}
 	}
 
-	static final RSInterface method42(RSInterface var0) {
+	static RSInterface method42(RSInterface var0) {
 		int var1 = method44(var0).method94();
 		if(var1 == 0) {
 			return null;
@@ -268,7 +268,6 @@ public final class Client extends GameShell {
 					Class69.aClass30_1039.method980();
 				}
 			} catch (IOException var3) {
-				;
 			}
 
 		} catch (RuntimeException var4) {
@@ -734,12 +733,12 @@ public final class Client extends GameShell {
 
 	}
 
-	static final Class3_Sub1 method44(RSInterface var0) {
+	static Class3_Sub1 method44(RSInterface var0) {
 		Class3_Sub1 var1 = (Class3_Sub1)Class124.aClass130_1659.method1780(((long)var0.anInt279 << 32) + (long)var0.anInt191, 0);
 		return var1 != null?var1:var0.aClass3_Sub1_257;
 	}
 
-	static final AnimationDefinition getAnimationDefinition(int var0) {
+	static AnimationDefinition getAnimationDefinition(int var0) {
 		try {
 			if((byte) -20 != -20) {
 				aClass3_Sub11ArrayArray2199 = (Class3_Sub11[][])((Class3_Sub11[][])null);
@@ -763,7 +762,7 @@ public final class Client extends GameShell {
 		}
 	}
 
-	private final void method46(int var2) {
+	private void method46(int var2) {
 		try {
 			++Class58.aClass66_917.anInt1011;
 			Class17.aClass64_413 = null;
@@ -779,7 +778,7 @@ public final class Client extends GameShell {
 		}
 	}
 
-	private final void method47() {
+	private void method47() {
 		try {
 			for(Class3_Sub23.anInt2537 = 0; Class3_Sub28_Sub10_Sub1.method591(83) && Class3_Sub23.anInt2537 < 128; ++Class3_Sub23.anInt2537) {
 				Class133.anIntArray1755[Class3_Sub23.anInt2537] = Class3_Sub28_Sub9.anInt3624;
@@ -917,7 +916,7 @@ public final class Client extends GameShell {
 		}
 	}
 
-	private final void method48() {
+	private void method48() {
 		try {
 			boolean var2 = Class58.aClass66_917.method1243();
 			if(!var2) {
@@ -929,7 +928,7 @@ public final class Client extends GameShell {
 		}
 	}
 
-	private final void method49() {
+	private void method49() {
 		try {
 			if(-31379 != -31379) {
 				method51((RSInterface)null);
@@ -1039,7 +1038,7 @@ public final class Client extends GameShell {
 		}
 	}
 
-	public static final void main(String[] var0) {
+	public static void main(String[] var0) {
 		try {
 			try {
 				if(4 != var0.length) {
@@ -1065,7 +1064,6 @@ public final class Client extends GameShell {
 					byte[] var2 = var0[2].getBytes("ISO-8859-1");
 					var1 = Class3_Sub13_Sub16.method243(Class3_Sub13_Sub3.method178(var2, var2.length, 0));
 				} catch (Exception var3) {
-					;
 				}
 
 				if(-1 == var1) {
@@ -1097,7 +1095,7 @@ public final class Client extends GameShell {
 				Class163_Sub2.aClass94_2996 = Class3_Sub28_Sub14.aClass94_3672;
 				Client var6 = new Client();
 				Class126.aClient1671 = var6;
-				var6.launch(GameShell.frame);
+				var6.launch();
 				GameShell.frame.setLocation(40, 40);
 			} catch (Exception var4) {
 				Class49.method1125((String)null, var4, (byte)119);
@@ -1108,7 +1106,7 @@ public final class Client extends GameShell {
 		}
 	}
 
-	static final void handleItemSwitch(RSInterface[] interfaces, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
+	static void handleItemSwitch(RSInterface[] interfaces, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
 		for(int index = 0; index < interfaces.length; ++index) {
 			RSInterface inter = interfaces[index];
 			if(inter != null && inter.parentId == var1 && (!inter.usingScripts || inter.type == 0 || inter.aBoolean195 || method44(inter).anInt2205 != 0 || inter == PacketParser.aClass11_88 || inter.anInt189 == 1338) && (!inter.usingScripts || !method51(inter))) {
@@ -1618,7 +1616,7 @@ public final class Client extends GameShell {
 
 	}
 
-	static final boolean method51(RSInterface var0) {
+	static boolean method51(RSInterface var0) {
 		if(Class69.aBoolean1040) {
 			if(method44(var0).anInt2205 != 0) {
 				return false;
@@ -1632,7 +1630,7 @@ public final class Client extends GameShell {
 		return var0.hidden;
 	}
 
-	private final void method52(int var1) {
+	private void method52(int var1) {
 		try {
 			if(!RSString.aBoolean2146) {
 				while(Class3_Sub28_Sub10_Sub1.method591(107)) {

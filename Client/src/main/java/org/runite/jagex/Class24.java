@@ -13,7 +13,7 @@ final class Class24 {
    private short[] aShortArray471;
    static int anInt472 = 0;
    private int[] anIntArray474;
-   private int[] anIntArray475 = new int[]{-1, -1, -1, -1, -1};
+   private final int[] anIntArray475 = new int[]{-1, -1, -1, -1, -1};
    boolean aBoolean476 = false;
 
    final Model_Sub1 method941() {
@@ -85,7 +85,7 @@ final class Class24 {
       }
    }
 
-   static final boolean isValidObjectMapping(byte var0, int var1, int var2, byte[] var3) {
+   static boolean isValidObjectMapping(byte var0, int var1, int var2, byte[] var3) {
       try {
          int var4 = 106 % ((-11 - var0) / 51);
          boolean var5 = true;
@@ -151,7 +151,7 @@ final class Class24 {
       }
    }
 
-   static final void renderLocalNPCs() {
+   static void renderLocalNPCs() {
       try {
          GraphicDefinition.incomingBuffer.setBitAccess((byte)-98);
          int var1 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 8);
@@ -222,7 +222,7 @@ final class Class24 {
       }
    }
 
-   private final void method946(RSByteBuffer var2, int var3) {
+   private void method946(RSByteBuffer var2, int var3) {
       try {
          if((byte) -84 >= -16) {
             this.aShortArray470 = (short[])null;
@@ -328,7 +328,7 @@ final class Class24 {
       }
    }
 
-   static final void method949(int var0, int var2, int var3, int var4) {
+   static void method949(int var0, int var2, int var3, int var4) {
       try {
          int var5 = -44 / ((24 - (byte) 118) / 59);
          int var6 = 0;
@@ -365,7 +365,7 @@ final class Class24 {
       }
    }
 
-   static final void method950(RSInterface var0, int var1, int var2, int var3) {
+   static void method950(RSInterface var0, int var1, int var2, int var3) {
       try {
          if(2 <= Class3_Sub13_Sub34.anInt3415 || Class164_Sub1.anInt3012 != 0 || GameObject.aBoolean1837) {
             RSString var4 = Class3_Sub28_Sub1.method531();
@@ -388,7 +388,7 @@ final class Class24 {
       }
    }
 
-   static final void method951() {
+   static void method951() {
       try {
          Class3_Sub28_Sub18.aBoolean3769 = false;
          Class3_Sub13_Sub34.anInt3413 = 0;

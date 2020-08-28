@@ -28,7 +28,7 @@ final class NPC extends Class140_Sub4 {
 		}
 	}
 
-	static final int method1984(int var0, int var1, int var2) {
+	static int method1984(int var0, int var1, int var2) {
 		try {
 			if(var1 == 38) {
 				int var3 = 57 * var2 + var0;
@@ -53,7 +53,7 @@ final class NPC extends Class140_Sub4 {
 		}
 	}
 
-	static final byte[] method1985(int var0, Object var1, boolean var2) {
+	static byte[] method1985(int var0, Object var1, boolean var2) {
 		try {
 			if(var1 == null) {
 				return null;
@@ -180,7 +180,6 @@ final class NPC extends Class140_Sub4 {
 	final void method1867(int var1, int var2, int var3, int var4, int var5) {
 		try {
 			if(this.definition == null) {
-				;
 			}
 		} catch (RuntimeException var7) {
 			throw Class44.clientError(var7, "km.IB(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
@@ -199,7 +198,7 @@ final class NPC extends Class140_Sub4 {
 		}
 	}
 
-	static final boolean method1986(int var0) {
+	static boolean method1986(int var0) {
 		try {
 			if(var0 <= 22) {
 				method1984(-48, 88, 31);
@@ -225,7 +224,7 @@ final class NPC extends Class140_Sub4 {
 		}
 	}
 
-	static final boolean method1988() {
+	static boolean method1988() {
 		try {
 			try {
 				if(Class10.anInt154 == 2) {

@@ -86,7 +86,7 @@ final class Class140_Sub1_Sub2 extends Model {
    private static int[] anIntArray3950;
 
 
-   private final void method1934(int var1) {
+   private void method1934(int var1) {
       if(aBooleanArray3917[var1]) {
          this.method1942(var1);
       } else {
@@ -138,7 +138,7 @@ final class Class140_Sub1_Sub2 extends Model {
       this.aBoolean3897 = false;
    }
 
-   static final void method1935() {
+   static void method1935() {
       aBoolean3942 = true;
       anIntArray3931 = new int[4096];
       anIntArray3929 = new int[4096];
@@ -148,7 +148,7 @@ final class Class140_Sub1_Sub2 extends Model {
       anIntArrayArray3923 = (int[][])null;
    }
 
-   private final void method1936() {
+   private void method1936() {
       for(int var4 = 0; var4 < this.anInt3889; ++var4) {
          short var3 = this.aShortArray3908 != null?this.aShortArray3908[var4]:-1;
          if(var3 == -1) {
@@ -170,7 +170,7 @@ final class Class140_Sub1_Sub2 extends Model {
 
    }
 
-   private static final int method1937(int var0) {
+   private static int method1937(int var0) {
       if(var0 < 2) {
          var0 = 2;
       } else if(var0 > 126) {
@@ -180,7 +180,7 @@ final class Class140_Sub1_Sub2 extends Model {
       return var0;
    }
 
-   static final void method1938() {
+   static void method1938() {
       aBoolean3942 = false;
       anIntArray3931 = null;
       anIntArray3929 = null;
@@ -206,7 +206,7 @@ final class Class140_Sub1_Sub2 extends Model {
       return this.aShort3894;
    }
 
-   private final Model method1939(boolean var1, boolean var2, Class140_Sub1_Sub2 var3, byte[] var4, short[] var5, int[] var6, int[] var7, int[] var8) {
+   private Model method1939(boolean var1, boolean var2, Class140_Sub1_Sub2 var3, byte[] var4, short[] var5, int[] var6, int[] var7, int[] var8) {
       var3.anInt3891 = this.anInt3891;
       var3.anInt3889 = this.anInt3889;
       var3.anInt3900 = this.anInt3900;
@@ -300,7 +300,7 @@ final class Class140_Sub1_Sub2 extends Model {
       }
    }
 
-   static final int method1940(int var0, int var1) {
+   static int method1940(int var0, int var1) {
       var1 = var1 * (var0 & 127) >> 7;
       if(var1 < 2) {
          var1 = 2;
@@ -476,7 +476,6 @@ final class Class140_Sub1_Sub2 extends Model {
                         try {
                            this.method1945(var23, var30, var9, var16 - var14, var13 - var14 + 2, var12);
                         } catch (Exception var45) {
-                           ;
                         }
 
                      }
@@ -713,12 +712,11 @@ final class Class140_Sub1_Sub2 extends Model {
 
          this.method1945(false, (long) -1 >= 0L, (long) -1, this.aShort3886, this.aShort3886 << 1, (Class127_Sub1)null);
       } catch (RuntimeException var26) {
-         ;
       }
 
    }
 
-   private final void method1942(int var1) {
+   private void method1942(int var1) {
       int var2 = Class51.anInt846;
       int var3 = Class51.anInt835;
       int var4 = 0;
@@ -1143,7 +1141,7 @@ final class Class140_Sub1_Sub2 extends Model {
       }
    }
 
-   private final boolean method1944(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
+   private boolean method1944(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
       return (var2 >= var3 || var2 >= var4 || var2 >= var5) && ((var2 <= var3 || var2 <= var4 || var2 <= var5) && ((var1 >= var6 || var1 >= var7 || var1 >= var8) && (var1 <= var6 || var1 <= var7 || var1 <= var8)));
    }
 
@@ -1162,7 +1160,7 @@ final class Class140_Sub1_Sub2 extends Model {
       return this.method1939(var1, var2, aClass140_Sub1_Sub2_3902, aByteArray3907, aShortArray3910, anIntArray3905, anIntArray3909, anIntArray3904);
    }
 
-   private final void method1945(boolean var1, boolean var2, long var3, int var5, int var6, Class127_Sub1 var7) {
+   private void method1945(boolean var1, boolean var2, long var3, int var5, int var6, Class127_Sub1 var7) {
       if(var6 < 1600) {
          int var8 = 0;
          int var9 = 0;
@@ -1574,12 +1572,11 @@ final class Class140_Sub1_Sub2 extends Model {
 
          this.method1945(false, false, 0L, this.aShort3886, this.aShort3886 << 1, (Class127_Sub1)null);
       } catch (RuntimeException var25) {
-         ;
       }
 
    }
 
-   private final void method1947() {
+   private void method1947() {
       int var1 = 32767;
       int var2 = 32767;
       int var3 = 32767;
@@ -2525,11 +2522,9 @@ final class Class140_Sub1_Sub2 extends Model {
       }
 
       if(var7 > 0) {
-         ;
       }
 
       if(var8 > 0) {
-         ;
       }
 
       this.aShortArray3869 = new short[this.anInt3889];

@@ -9,7 +9,7 @@ final class Class169 {
    private Class156 aClass156_2105;
    boolean aBoolean2106 = true;
    private ByteBuffer aByteBuffer2107;
-   private int anInt2108;
+   private final int anInt2108;
    private ByteBuffer aByteBuffer2109;
    private Class156 aClass156_2110;
    private static byte[] aByteArray2111 = new byte[16384];

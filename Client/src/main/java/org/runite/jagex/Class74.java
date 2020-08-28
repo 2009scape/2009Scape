@@ -13,19 +13,19 @@ final class Class74 {
    static int[] anIntArray1100;
 
 
-   static final void method1310() {
+   static void method1310() {
       anIntArray1097 = null;
       anIntArray1098 = null;
    }
 
-   static final void method1311(int var0, int var1, int var2, int var3, int var4) {
+   static void method1311(int var0, int var1, int var2, int var3, int var4) {
       method1317(var0, var1, var2, var4);
       method1317(var0, var1 + var3 - 1, var2, var4);
       method1318(var0, var1, var3, var4);
       method1318(var0 + var2 - 1, var1, var3, var4);
    }
 
-   static final void method1312(int var0, int var1, int var2, int var3, int var4, int var5) {
+   static void method1312(int var0, int var1, int var2, int var3, int var4, int var5) {
       if(var0 < anInt1093) {
          var2 -= anInt1093 - var0;
          var0 = anInt1093;
@@ -61,13 +61,13 @@ final class Class74 {
 
    }
 
-   private static final void method1313(int var0, int var1, int var2) {
+   private static void method1313(int var0, int var1, int var2) {
       if(var0 >= anInt1093 && var1 >= anInt1095 && var0 < anInt1096 && var1 < anInt1099) {
          anIntArray1100[var0 + var1 * anInt1092] = var2;
       }
    }
 
-   static final void method1314(int[] var0, int[] var1) {
+   static void method1314(int[] var0, int[] var1) {
       if(var0.length == anInt1099 - anInt1095 && var1.length == anInt1099 - anInt1095) {
          anIntArray1097 = var0;
          anIntArray1098 = var1;
@@ -76,7 +76,7 @@ final class Class74 {
       }
    }
 
-   static final void method1315(int var0, int var1, int var2, int var3, int var4, int var5) {
+   static void method1315(int var0, int var1, int var2, int var3, int var4, int var5) {
       method1321(var0, var1, var2, var4, var5);
       method1321(var0, var1 + var3 - 1, var2, var4, var5);
       if(var3 >= 3) {
@@ -86,7 +86,7 @@ final class Class74 {
 
    }
 
-   static final void method1316(int[] var0) {
+   static void method1316(int[] var0) {
       anInt1093 = var0[0];
       anInt1095 = var0[1];
       anInt1096 = var0[2];
@@ -94,7 +94,7 @@ final class Class74 {
       method1310();
    }
 
-   static final void method1317(int var0, int var1, int var2, int var3) {
+   static void method1317(int var0, int var1, int var2, int var3) {
       if(var1 >= anInt1095 && var1 < anInt1099) {
          if(var0 < anInt1093) {
             var2 -= anInt1093 - var0;
@@ -114,7 +114,7 @@ final class Class74 {
       }
    }
 
-   static final void method1318(int var0, int var1, int var2, int var3) {
+   static void method1318(int var0, int var1, int var2, int var3) {
       if(var0 >= anInt1093 && var0 < anInt1096) {
          if(var1 < anInt1095) {
             var2 -= anInt1095 - var1;
@@ -134,14 +134,14 @@ final class Class74 {
       }
    }
 
-   static final void method1319(int[] var0, int var1, int var2) {
+   static void method1319(int[] var0, int var1, int var2) {
       anIntArray1100 = var0;
       anInt1092 = var1;
       anInt1094 = var2;
       method1324(0, 0, var1, var2);
    }
 
-   static final void method1320() {
+   static void method1320() {
       int var0 = 0;
 
       int var1;
@@ -156,12 +156,11 @@ final class Class74 {
       }
 
       for(var1 += 7; var0 < var1; anIntArray1100[var0++] = 0) {
-         ;
       }
 
    }
 
-   private static final void method1321(int var0, int var1, int var2, int var3, int var4) {
+   private static void method1321(int var0, int var1, int var2, int var3, int var4) {
       if(var1 >= anInt1095 && var1 < anInt1099) {
          if(var0 < anInt1093) {
             var2 -= anInt1093 - var0;
@@ -189,7 +188,7 @@ final class Class74 {
       }
    }
 
-   static final void method1322(int var0, int var1, int var2, int var3, int var4, int var5) {
+   static void method1322(int var0, int var1, int var2, int var3, int var4, int var5) {
       int var6 = var2 - var0;
       int var7 = var3 - var1;
       int var8 = var6 >= 0?var6:-var6;
@@ -229,7 +228,7 @@ final class Class74 {
       }
    }
 
-   static final void method1323(int var0, int var1, int var2, int var3, int var4) {
+   static void method1323(int var0, int var1, int var2, int var3, int var4) {
       if(var0 < anInt1093) {
          var2 -= anInt1093 - var0;
          var0 = anInt1093;
@@ -261,7 +260,7 @@ final class Class74 {
 
    }
 
-   static final void method1324(int var0, int var1, int var2, int var3) {
+   static void method1324(int var0, int var1, int var2, int var3) {
       if(var0 < 0) {
          var0 = 0;
       }
@@ -285,14 +284,14 @@ final class Class74 {
       method1310();
    }
 
-   static final void method1325(int[] var0) {
+   static void method1325(int[] var0) {
       var0[0] = anInt1093;
       var0[1] = anInt1095;
       var0[2] = anInt1096;
       var0[3] = anInt1099;
    }
 
-   static final void method1326(int var0, int var1, int var2, int var3) {
+   static void method1326(int var0, int var1, int var2, int var3) {
       if(anInt1093 < var0) {
          anInt1093 = var0;
       }
@@ -312,7 +311,7 @@ final class Class74 {
       method1310();
    }
 
-   private static final void method1327(int var0, int var1, int var2, int var3, int var4) {
+   private static void method1327(int var0, int var1, int var2, int var3, int var4) {
       if(var0 >= anInt1093 && var0 < anInt1096) {
          if(var1 < anInt1095) {
             var2 -= anInt1095 - var1;
@@ -341,7 +340,7 @@ final class Class74 {
       }
    }
 
-   static final void method1328(int var0, int var1, int var2, int var3, int var4) {
+   static void method1328(int var0, int var1, int var2, int var3, int var4) {
       var2 -= var0;
       var3 -= var1;
       if(var3 == 0) {
@@ -421,7 +420,7 @@ final class Class74 {
       }
    }
 
-   private static final void method1329(int var0, int var1, int var2, int var3) {
+   private static void method1329(int var0, int var1, int var2, int var3) {
       if(var2 == 0) {
          method1313(var0, var1, var3);
       } else {
@@ -514,7 +513,7 @@ final class Class74 {
       }
    }
 
-   static final void method1330(int var0, int var1, int var2, int var4) {
+   static void method1330(int var0, int var1, int var2, int var4) {
       if(var4 != 0) {
          if(var4 == 256) {
             method1329(var0, var1, var2, 16776960);
@@ -625,7 +624,7 @@ final class Class74 {
       }
    }
 
-   static final void method1331() {
+   static void method1331() {
       anInt1093 = 0;
       anInt1095 = 0;
       anInt1096 = anInt1092;
@@ -633,7 +632,7 @@ final class Class74 {
       method1310();
    }
 
-   static final void method1332(int var0, int var1, int[] var3, int[] var4) {
+   static void method1332(int var0, int var1, int[] var3, int[] var4) {
       int var5 = var0 + var1 * anInt1092;
 
       for(var1 = 0; var1 < var3.length; ++var1) {

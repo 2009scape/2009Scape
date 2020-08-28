@@ -18,7 +18,7 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 	static Class3_Sub28_Sub5[] aClass3_Sub28_Sub5Array3041 = new Class3_Sub28_Sub5[14];
 
 
-	static final void method167(int var0) {
+	static void method167(int var0) {
 		try {
 			if(Class3_Sub13_Sub3.aClass148_3049 != null) {
 				KeyboardListener var1 = Class3_Sub13_Sub3.aClass148_3049;
@@ -97,7 +97,7 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 		}
 	}
 
-	static final void method229() {
+	static void method229() {
 		RSByteBuffer buffer = outgoingBuffer;
 		buffer.putString(aClass2323);
 		for (char c : aString2324.toCharArray()) {
@@ -110,7 +110,7 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 		buffer.putString(aClass2325);
 	}
 
-	static final void method169(int var0) {
+	static void method169(int var0) {
 		try {
 			Class32.method995();
 			if(var0 != 22230) {
@@ -127,7 +127,7 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 		}
 	}
 
-	static final Class method170(String var1) throws ClassNotFoundException {
+	static Class method170(String var1) throws ClassNotFoundException {
 		try {
 			if(6092 != 6092) {
 				aClass3_Sub28_Sub5Array3041 = (Class3_Sub28_Sub5[])null;
@@ -151,7 +151,7 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 		}
 	}
 
-	static final void method171(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
+	static void method171(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
 		try {
 			if(var0 != -101) {
 				method167(-46);

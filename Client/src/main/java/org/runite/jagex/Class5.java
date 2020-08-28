@@ -6,7 +6,7 @@ public final class Class5 {
    private static long aLong90;
 
 
-   public static final synchronized long method830(byte var0) {
+   public static synchronized long method830(byte var0) {
       long var1 = System.currentTimeMillis();
       if(var1 < aLong90) {
          aLong89 += aLong90 + -var1;

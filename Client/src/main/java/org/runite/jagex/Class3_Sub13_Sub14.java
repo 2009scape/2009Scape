@@ -32,7 +32,7 @@ final class Class3_Sub13_Sub14 extends Class3_Sub13 {
       }
    }
 
-   static final void method236() {
+   static void method236() {
       try {
          if((byte) 64 == 64) {
             Class3_Sub13_Sub32.aBoolean3387 = true;
@@ -44,7 +44,7 @@ final class Class3_Sub13_Sub14 extends Class3_Sub13 {
 
    static final int[] NPC_RENDER_LOG = new int[3];
    
-   static final void renderNPCs(int var0) {
+   static void renderNPCs(int var0) {
       try {
          Class66.maskUpdateCount = 0;
          Class139.anInt1829 = 0;

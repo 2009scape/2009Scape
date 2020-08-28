@@ -10,7 +10,7 @@ class Class38 {
    static Class146 aClass146_668;
 
 
-   static final ItemDefinition getItemDefinition(int itemId, byte var1) {
+   static ItemDefinition getItemDefinition(int itemId, byte var1) {
       try {
          ItemDefinition var2 = (ItemDefinition)Class3_Sub28_Sub4.aClass93_3572.get((long)itemId);
          if(var2 == null) {
@@ -65,7 +65,7 @@ class Class38 {
       }
    }
 
-   static final void method1025(byte var0) {
+   static void method1025(byte var0) {
       try {
          Class3_Sub31.aClass93_2604.method1523((byte)-121);
          if(var0 > -51) {
@@ -78,7 +78,7 @@ class Class38 {
       }
    }
 
-   static final int method1026(byte[] var0, int var1) {
+   static int method1026(byte[] var0, int var1) {
       try {
          return false ?-3:Class99.method1599(0, var1, var0, (byte)-35);
       } catch (RuntimeException var4) {
@@ -86,7 +86,7 @@ class Class38 {
       }
    }
 
-   static final void method1027(int var0, byte var1) {
+   static void method1027(int var0, byte var1) {
       try {
          Class44.aClass93_725.method1522(-128, var0);
          int var2 = -38 % ((var1 - 29) / 40);
@@ -95,7 +95,7 @@ class Class38 {
       }
    }
 
-   static final void method1028() {
+   static void method1028() {
       try {
          for(int var1 = -1; Class159.localPlayerCount > var1; ++var1) {
             int var2;
@@ -116,7 +116,7 @@ class Class38 {
       }
    }
 
-   static final void method1029(int var0) {
+   static void method1029(int var0) {
       try {
          Class3_Sub13_Sub1.outgoingBuffer.putOpcode(177);
          ++Class54.anInt876;

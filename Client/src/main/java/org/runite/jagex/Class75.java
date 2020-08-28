@@ -28,7 +28,7 @@ abstract class Class75 {
 
    abstract void method1335(int var1, int var2, int var3);
 
-   static final Class25 method1336(int var0, int var1, int var2) {
+   static Class25 method1336(int var0, int var1, int var2) {
       Class3_Sub2 var3 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var0][var1][var2];
       if (var3 != null) {
          for (int var4 = 0; var4 < var3.anInt2223; ++var4) {
@@ -54,7 +54,7 @@ abstract class Class75 {
 
    abstract void method1337(int var1, boolean var2, int var3);
 
-   static final int method1338(int var0, int var1) {
+   static int method1338(int var0, int var1) {
       try {
          if(var1 <= 13) {
             anIntArray1107 = (int[])null;
@@ -66,7 +66,7 @@ abstract class Class75 {
       }
    }
 
-   static final void method1339(RSString var0, int var1) {
+   static void method1339(RSString var0, int var1) {
       try {
          if(var1 == 0) {
             for(Class3_Sub28_Sub3 var2 = (Class3_Sub28_Sub3)Class134.aClass61_1758.method1222(); var2 != null; var2 = (Class3_Sub28_Sub3)Class134.aClass61_1758.method1221()) {
@@ -82,7 +82,7 @@ abstract class Class75 {
       }
    }
 
-   static final void method1340(int var0, int var1, int var3, int var4) {
+   static void method1340(int var0, int var1, int var3, int var4) {
       try {
          if((byte) -40 != -40) {
             anInt1105 = 43;

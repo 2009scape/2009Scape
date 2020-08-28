@@ -16,7 +16,7 @@ final class Class3_Sub28_Sub9 extends Node {
    static int anInt3624;
 
 
-   static final Class3_Sub28_Sub16_Sub2 method578(int var0) {
+   static Class3_Sub28_Sub16_Sub2 method578(int var0) {
       try {
          int var1 = Class3_Sub13_Sub6.anIntArray3076[0] * Class140_Sub7.anIntArray2931[0];
          byte[] var2 = Class163_Sub1.aByteArrayArray2987[0];
@@ -51,7 +51,7 @@ final class Class3_Sub28_Sub9 extends Node {
       }
    }
 
-   private final void method579(int var1, RSByteBuffer var2) {
+   private void method579(int var1, RSByteBuffer var2) {
       try {
          if(var1 == 1) {
             this.anInt3617 = var2.getByte((byte)-71);
@@ -70,7 +70,7 @@ final class Class3_Sub28_Sub9 extends Node {
       }
    }
 
-   static final void method580(byte var0) {
+   static void method580(byte var0) {
       try {
          if(var0 != 80) {
             method582(88, 85, -8, true, 72, 12, 29, 96, 6, 57, -13, 15);
@@ -82,7 +82,7 @@ final class Class3_Sub28_Sub9 extends Node {
       }
    }
 
-   static final void method581(CacheIndex var0, CacheIndex var2) {
+   static void method581(CacheIndex var0, CacheIndex var2) {
       try {
          Class3_Sub13.aClass3_Sub28_Sub17_2379 = Class73.method1300(0, Class96.anInt1352, (byte)124, var2, var0);
          if(HDToolKit.highDetail) {
@@ -98,7 +98,7 @@ final class Class3_Sub28_Sub9 extends Node {
       }
    }
 
-   static final boolean method582(int var0, int var1, int var2, boolean var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11) {
+   static boolean method582(int var0, int var1, int var2, boolean var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11) {
       try {
          return Class102.player.getSize() != var5?(Class102.player.getSize() <= 2?Class158_Sub1.method2191(var6, var4, var11, -1001, var10, var9, var2, var1, var3, var8, var0, var7):Class52.method1166(var10, var7, var9, var1, Class102.player.getSize(), var6, var8, var4, var11, var2, var3, var0)):Class2.method76(var7, var8, var4, var0, var10, var3, var2, var1, var6, var9, var11);
       } catch (RuntimeException var13) {

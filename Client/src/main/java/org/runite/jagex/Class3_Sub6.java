@@ -22,7 +22,7 @@ final class Class3_Sub6 extends Class3 {
       }
    }
 
-   static final float[] method119(float[] var0, int var1) {
+   static float[] method119(float[] var0, int var1) {
       try {
          if(var0 == null) {
             return null;

@@ -4,24 +4,24 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
 
    private int[] anIntArray3497 = new int[16];
    private int[] anIntArray3498 = new int[16];
-   private int[] anIntArray3499 = new int[16];
-   private int[] anIntArray3500 = new int[16];
+   private final int[] anIntArray3499 = new int[16];
+   private final int[] anIntArray3500 = new int[16];
    private int[] anIntArray3501 = new int[16];
-   private int[] anIntArray3502 = new int[16];
+   private final int[] anIntArray3502 = new int[16];
    static boolean[] aBooleanArray3503;
-   private int[] anIntArray3504 = new int[16];
-   private Class78 aClass78_3505 = new Class78();
-   private int[] anIntArray3506 = new int[16];
+   private final int[] anIntArray3504 = new int[16];
+   private final Class78 aClass78_3505 = new Class78();
+   private final int[] anIntArray3506 = new int[16];
    static int anInt3507;
-   private Class130 aClass130_3508;
+   private final Class130 aClass130_3508;
    int[] anIntArray3509 = new int[16];
-   private int[] anIntArray3510 = new int[16];
-   private int anInt3511 = 1000000;
-   private Class3_Sub22[][] aClass3_Sub22ArrayArray3512 = new Class3_Sub22[16][128];
-   private Class3_Sub22[][] aClass3_Sub22ArrayArray3513 = new Class3_Sub22[16][128];
+   private final int[] anIntArray3510 = new int[16];
+   private final int anInt3511 = 1000000;
+   private final Class3_Sub22[][] aClass3_Sub22ArrayArray3512 = new Class3_Sub22[16][128];
+   private final Class3_Sub22[][] aClass3_Sub22ArrayArray3513 = new Class3_Sub22[16][128];
    private int[] anIntArray3514 = new int[16];
-   private int[] anIntArray3515 = new int[16];
-   private int[] anIntArray3516 = new int[16];
+   private final int[] anIntArray3515 = new int[16];
+   private final int[] anIntArray3516 = new int[16];
    static int anInt3517;
    int[] anIntArray3518 = new int[16];
    int[] anIntArray3519 = new int[16];
@@ -90,7 +90,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private final void method472(int var1, int var2) {
+   private void method472(int var1, int var2) {
       try {
          int var4 = -63 % ((85 - 4) / 59);
          this.anIntArray3501[var2] = var1;
@@ -113,7 +113,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   static final void method474() {
+   static void method474() {
       try {
          Canvas_Sub1.aClass93_21.method1522(-125, 5);
          Class99.aClass93_1401.method1522(-126, 5);
@@ -128,7 +128,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private final synchronized void method475(boolean var1, Class3_Sub27 var2, boolean var3) {
+   private synchronized void method475(boolean var1, Class3_Sub27 var2, boolean var3) {
       try {
          this.method507(var3);
          this.aClass78_3505.method1380(var2.aByteArray2565);
@@ -154,7 +154,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private final void method476(int var1, int var2) {
+   private void method476(int var1, int var2) {
       try {
          this.anIntArray3499[var1] = var2;
          if(0 != 0) {
@@ -166,7 +166,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   static final void method477(int var0, int var2, RSInterface var3) {
+   static void method477(int var0, int var2, RSInterface var3) {
       try {
          if(!true) {
             method487(98, (byte)74);
@@ -395,7 +395,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private final void method478(int var1, boolean var2, int var3) {
+   private void method478(int var1, boolean var2, int var3) {
       try {
          if(var2) {
             this.aLong3526 = 101L;
@@ -418,7 +418,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private final void method480(int var1, int var2) {
+   private void method480(int var1, int var2) {
       try {
          if(0 <= var2) {
             this.anIntArray3497[var2] = 12800;
@@ -447,7 +447,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private final void method481(byte var1, int var2) {
+   private void method481(byte var1, int var2) {
       try {
          int var3 = -86 % ((11 - var1) / 41);
 
@@ -475,7 +475,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private final void method482(byte var1, int var2, int var3) {
+   private void method482(byte var1, int var2, int var3) {
       try {
          this.anIntArray3520[var2] = var3;
          this.anIntArray3509[var2] = (int)(0.5D + 2097152.0D * Math.pow(2.0D, 5.4931640625E-4D * (double)var3));
@@ -488,7 +488,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private final synchronized void method483() {
+   private synchronized void method483() {
       try {
          if(-1 < 0) {
             for(int var4 = 0; 16 > var4; ++var4) {
@@ -507,7 +507,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private final void method484(int var2, int var3) {
+   private void method484(int var2, int var3) {
       try {
          if(0 == 0) {
             if(this.anIntArray3515[var3] != var2) {
@@ -536,7 +536,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private final void method486(int var1, int var2, int var4) {
+   private void method486(int var1, int var2, int var4) {
       try {
          this.method493((byte)-123, var4, 64, var2);
          if((2 & this.anIntArray3518[var2]) != 0) {
@@ -604,7 +604,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   static final boolean method487(int var0, byte var1) {
+   static boolean method487(int var0, byte var1) {
       try {
          if(var1 != -85) {
             anInt3507 = 56;
@@ -616,7 +616,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private final void method488(int var2) {
+   private void method488(int var2) {
       try {
          int var3 = 240 & var2;
          if((byte) 56 == 56) {
@@ -804,7 +804,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private final void method489(int var1, int var2) {
+   private void method489(int var1, int var2) {
       try {
          for(Class3_Sub22 var3 = (Class3_Sub22)this.aClass3_Sub24_Sub3_3527.aClass61_3489.method1222(); var3 != null; var3 = (Class3_Sub22)this.aClass3_Sub24_Sub3_3527.aClass61_3489.method1221()) {
             if((var2 < 0 || var3.anInt2514 == var2) && var3.anInt2506 < 0) {
@@ -989,7 +989,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private final void method493(byte var1, int var2, int var3, int var4) {
+   private void method493(byte var1, int var2, int var3, int var4) {
       try {
          Class3_Sub22 var5 = this.aClass3_Sub22ArrayArray3512[var4][var2];
          if(null != var5) {
@@ -1015,7 +1015,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private final void method494(int var1) {
+   private void method494(int var1) {
       try {
          int var2 = this.anInt3525;
          int var3 = this.anInt3524;
@@ -1081,7 +1081,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private final void method495(int var1, int var2, int var3, int var4) {
+   private void method495(int var1, int var2, int var3, int var4) {
       try {
          if(var3 != 17387) {
             this.aClass3_Sub24_Sub3_3527 = (Class3_Sub24_Sub3)null;
@@ -1092,7 +1092,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private final int method496(Class3_Sub22 var2) {
+   private int method496(Class3_Sub22 var2) {
       try {
          int var3 = this.anIntArray3498[var2.anInt2514];
          if(0 != 0) {
@@ -1135,7 +1135,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private final void method497(int var1, int var2) {
+   private void method497(int var1, int var2) {
       try {
          int var3 = -75 % ((-44 - var2) / 45);
          if(0 != (4 & this.anIntArray3518[var1])) {
@@ -1151,7 +1151,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private final int method498(Class3_Sub22 var2) {
+   private int method498(Class3_Sub22 var2) {
       try {
          Class166 var4 = var2.aClass166_2504;
          int var3 = (var2.anInt2522 * var2.anInt2502 >> -1563888596) + var2.anInt2510;
@@ -1192,7 +1192,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private final void method500(boolean var1, byte var2) {
+   private void method500(boolean var1, byte var2) {
       try {
          if(var1) {
             this.method481((byte)91, -1);
@@ -1243,7 +1243,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private final void method502(int var1, int var2) {
+   private void method502(int var1, int var2) {
       try {
          if(var2 != ~(this.anIntArray3518[var1] & 2)) {
             for(Class3_Sub22 var3 = (Class3_Sub22)this.aClass3_Sub24_Sub3_3527.aClass61_3489.method1222(); var3 != null; var3 = (Class3_Sub22)this.aClass3_Sub24_Sub3_3527.aClass61_3489.method1221()) {
@@ -1258,7 +1258,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   static final void method503(int var1) {
+   static void method503(int var1) {
       try {
          Class8.anInt101 = var1;
          if((byte) -53 == -53) {
@@ -1314,7 +1314,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private final synchronized void method507(boolean var1) {
+   private synchronized void method507(boolean var1) {
       try {
          this.aClass78_3505.method1383();
          if((byte) -68 == -68) {
@@ -1326,7 +1326,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       }
    }
 
-   private final int method508(Class3_Sub22 var2) {
+   private int method508(Class3_Sub22 var2) {
       try {
          if((byte) 36 != 36) {
             this.anIntArray3501 = (int[])null;

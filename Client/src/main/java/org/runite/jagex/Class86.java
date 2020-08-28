@@ -19,7 +19,7 @@ final class Class86 {
    static Class130 aClass130_1194;
    static int anInt1195;
 
-   static final void method1427(int var1) {
+   static void method1427(int var1) {
       try {
          if(-1 == var1 && !Class83.aBoolean1158) {
             GameObject.method1870();
@@ -32,7 +32,7 @@ final class Class86 {
       }
    }
 
-   static final void method1428(int var0, int var1, int var2) {
+   static void method1428(int var0, int var1, int var2) {
       try {
          if(var1 < 21) {
             method1430(34, -13);
@@ -68,7 +68,7 @@ final class Class86 {
       }
    }
 
-   static final Class3_Sub28_Sub17_Sub1 method1430(int var0, int var1) {
+   static Class3_Sub28_Sub17_Sub1 method1430(int var0, int var1) {
       try {
          if(var0 == -28922) {
             Class3_Sub28_Sub17_Sub1 var2 = (Class3_Sub28_Sub17_Sub1)Class80.aClass93_1135.get((long)var1);

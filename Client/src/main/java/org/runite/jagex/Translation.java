@@ -6,7 +6,7 @@ public class Translation {
 
 
     //Class 9 englishToFrench
-    static final void englishToFrench() {
+    static void englishToFrench() {
         try {
             TextCore.LoadedConfig = RSString.createRSString("Fichiers config charg-Bs");
             TextCore.LoadingConfig = RSString.createRSString("Chargement des fichiers config )2 ");
@@ -108,7 +108,7 @@ public class Translation {
 
 
     //Class3_Sub28_Sub11 English to German
-    static final void englishToGerman(boolean var0) {
+    static void englishToGerman(boolean var0) {
         try {
             TextCore.TextWave = RSString.createRSString("welle:");
             TextCore.HasMoreOptions = RSString.createRSString(" weitere Optionen");

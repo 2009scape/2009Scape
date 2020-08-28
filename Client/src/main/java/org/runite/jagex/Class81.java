@@ -9,7 +9,7 @@ final class Class81 {
    static int[][][] anIntArrayArrayArray1142;
 
 
-   static final void putRandomDataFile(RSByteBuffer var0, boolean var1) {
+   static void putRandomDataFile(RSByteBuffer var0, boolean var1) {
       try {
          if(!var1) {
             anIntArrayArrayArray1142 = (int[][][])((int[][][])null);
@@ -23,7 +23,6 @@ final class Class81 {
 
                int var3;
                for(var3 = 0; var3 < 24 && var2[var3] == 0; ++var3) {
-                  ;
                }
 
                if(var3 >= 24) {
@@ -42,7 +41,7 @@ final class Class81 {
       }
    }
 
-   static final int method1398(int var0, Player var1) {
+   static int method1398(int var0, Player var1) {
       try {
          if(var0 != 0) {
             putRandomDataFile((RSByteBuffer)null, false);
@@ -66,7 +65,7 @@ final class Class81 {
       }
    }
 
-   static final void method1399(long var1) {
+   static void method1399(long var1) {
       try {
          if(var1 != 0L) {
             if(Class3_Sub28_Sub5.anInt3591 < 100) {
@@ -107,7 +106,7 @@ final class Class81 {
       }
    }
 
-   static final void method1400(Signlink var0, Object var1, int var2) {
+   static void method1400(Signlink var0, Object var1, int var2) {
       try {
          if(var2 >= -29) {
             anIntArrayArrayArray1142 = (int[][][])((int[][][])null);
@@ -128,7 +127,7 @@ final class Class81 {
       }
    }
 
-   static final Class57 method1401(int var1) {
+   static Class57 method1401(int var1) {
       try {
          Class57 var2 = (Class57)Class128.aClass93_1683.get((long)var1);
          if(var2 == null) {
@@ -155,7 +154,7 @@ final class Class81 {
       }
    }
 
-   static final Class131 method1403(int var0, RSString var1, CacheIndex var2) {
+   static Class131 method1403(int var0, RSString var1, CacheIndex var2) {
       try {
          int var3 = var2.getArchiveForName(var1);
          if(var3 == -1) {

@@ -39,7 +39,7 @@ final class Class3_Sub13_Sub15 extends Class3_Sub13 {
       }
    }
 
-   private final void method239(int var1, int var2, int var4) {
+   private void method239(int var1, int var2, int var4) {
       try {
          int var6 = 32 / ((15 - 107) / 45);
          int var5 = var1 <= 2048?var1 * (4096 + var2) >> 12:-(var1 * var2 >> 12) + var1 + var2;
@@ -91,7 +91,7 @@ final class Class3_Sub13_Sub15 extends Class3_Sub13 {
       super(1, false);
    }
 
-   private final void method240(byte var1, int var2, int var3, int var4) {
+   private void method240(byte var1, int var2, int var3, int var4) {
       try {
          int var5 = var2 > var3?var2:var3;
          if(var1 >= -54) {
@@ -168,7 +168,6 @@ final class Class3_Sub13_Sub15 extends Class3_Sub13 {
                }
 
                for(this.anInt3180 += this.anInt3175; this.anInt3180 < 0; this.anInt3180 += 4096) {
-                  ;
                }
 
                while(this.anInt3180 > 4096) {

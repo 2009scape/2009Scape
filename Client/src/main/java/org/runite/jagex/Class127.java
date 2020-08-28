@@ -11,7 +11,7 @@ class Class127 {
    static int[] anIntArray1681;
 
    static boolean dynamic;
-   static final void handleLogin(byte var0) {
+   static void handleLogin(byte var0) {
       try {
          if(0 != Class3_Sub13_Sub25.loginStage && 5 != Class3_Sub13_Sub25.loginStage) {
             try {
@@ -275,13 +275,11 @@ class Class127 {
                         try {
                            Class27.aClass94_516.method1577(-1857, Class38.aClass87_665.anApplet1219);
                         } catch (Throwable var5) {
-                           ;
                         }
                      } else {
                         try {
                            Class97.aClass94_1374.method1577(-1857, Class38.aClass87_665.anApplet1219);
                         } catch (Throwable var6) {
-                           ;
                         }
                      }
                   }
@@ -338,7 +336,7 @@ class Class127 {
       }
    }
 
-   static final int method1753(int var0, int var1) {
+   static int method1753(int var0, int var1) {
       var1 = var1 * (var0 & 127) >> 7;
       if(var1 < 2) {
          var1 = 2;

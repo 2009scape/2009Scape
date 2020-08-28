@@ -23,7 +23,7 @@ final class Class3_Sub21 extends Class3 {
       }
    }
 
-   static final void method394(int var0, int var1) {
+   static void method394(int var0, int var1) {
       try {
          Class3_Sub13_Sub23.anInt3285 = var0;
          Class3_Sub18.method383(-32584, 3);
@@ -37,7 +37,7 @@ final class Class3_Sub21 extends Class3 {
       }
    }
 
-   static final void method395(Class35 var0, int var1, int var2, int var3, int var4, int var5, int var6, boolean var7) {
+   static void method395(Class35 var0, int var1, int var2, int var3, int var4, int var5, int var6, boolean var7) {
       int var8 = var0.anIntArray627.length;
 
       int var9;
@@ -123,7 +123,7 @@ final class Class3_Sub21 extends Class3 {
       }
    }
 
-   static final void method397(byte var0) {
+   static void method397(byte var0) {
       try {
          Class114.aClass93_1569.method1524();
          Class3_Sub15.aClass93_2428.method1524();

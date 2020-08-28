@@ -22,7 +22,7 @@ final class Class68 {
    private static int anInt1036;
 
 
-   static final void method1263(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
+   static void method1263(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
       if(Class106.aBoolean1441) {
          if(var0 == 1 && var5 > 0) {
             method1268(var1, var2, var3, var4, var5 - 1, var6);
@@ -44,7 +44,7 @@ final class Class68 {
       }
    }
 
-   static final void method1264(Class43 var0) {
+   static void method1264(Class43 var0) {
       if(anInt1032 >= 255) {
          System.out.println("Number of lights added exceeds maximum!");
       } else {
@@ -52,7 +52,7 @@ final class Class68 {
       }
    }
 
-   static final void method1265() {
+   static void method1265() {
       for(int var0 = 0; var0 < 4; ++var0) {
          anIntArray1028[var0] = -1;
          method1271(var0);
@@ -60,7 +60,7 @@ final class Class68 {
 
    }
 
-   static final void method1266(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
+   static void method1266(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
       if(Class106.aBoolean1441) {
          if(anInt1029 != var3 || anInt1031 != var4 || anInt1024 != var5 || anInt1034 != var6 || anInt1025 != var7) {
             int var8;
@@ -150,14 +150,14 @@ final class Class68 {
       }
    }
 
-   static final void method1267() {
+   static void method1267() {
       anInt1030 = 4;
       anInt1036 = 104;
       anInt1035 = 104;
       anIntArrayArrayArray1027 = new int[anInt1030][anInt1036][anInt1035];
    }
 
-   static final void method1268(int var0, int var1, int var2, int var3, int var4, int var5) {
+   static void method1268(int var0, int var1, int var2, int var3, int var4, int var5) {
       if(Class106.aBoolean1441) {
          if(anInt1029 != var3 || anInt1031 != var4 || anInt1024 != var5 || anInt1034 != var4 || anInt1025 != var5) {
             int var6;
@@ -223,7 +223,7 @@ final class Class68 {
       }
    }
 
-   static final void method1269(int var0, boolean var1) {
+   static void method1269(int var0, boolean var1) {
       for(int var2 = 0; var2 < anInt1032; ++var2) {
          aClass43Array1021[var2].method1063(var1, var0);
       }
@@ -235,7 +235,7 @@ final class Class68 {
       anInt1025 = -1;
    }
 
-   static final void method1270() {
+   static void method1270() {
       for(int var0 = 0; var0 < anInt1032; ++var0) {
          Class43 var1 = aClass43Array1021[var0];
          int var2 = var1.anInt704;
@@ -291,7 +291,7 @@ final class Class68 {
 
    }
 
-   private static final void method1271(int var0) {
+   private static void method1271(int var0) {
       if(aBooleanArray1026[var0]) {
          aBooleanArray1026[var0] = false;
          int var1 = var0 + 16384 + 4;
@@ -300,7 +300,7 @@ final class Class68 {
       }
    }
 
-   static final void method1272(int var0, int var1, int var2, int var3, int var4) {
+   static void method1272(int var0, int var1, int var2, int var3, int var4) {
       if(Class106.aBoolean1441) {
          label44:
          for(int var5 = 0; var5 < 4; ++var5) {
@@ -334,7 +334,7 @@ final class Class68 {
       }
    }
 
-   static final void method1273() {
+   static void method1273() {
       aClass43Array1021 = null;
       anIntArray1028 = null;
       aBooleanArray1026 = null;
@@ -353,7 +353,7 @@ final class Class68 {
       aBooleanArray1033 = null;
    }
 
-   static final void method1275() {
+   static void method1275() {
       javax.media.opengl.GL var0 = HDToolKit.gl;
 
       int var1;
@@ -371,7 +371,7 @@ final class Class68 {
 
    }
 
-   static final void method1276() {
+   static void method1276() {
       aClass43Array1021 = new Class43[255];
       anIntArray1028 = new int[4];
       aBooleanArray1026 = new boolean[4];
@@ -380,7 +380,7 @@ final class Class68 {
       anIntArrayArrayArray1027 = new int[anInt1030][anInt1036][anInt1035];
    }
 
-   static final void method1277(int var0, int var1, Class3_Sub2[][][] var2) {
+   static void method1277(int var0, int var1, Class3_Sub2[][][] var2) {
       if(Class106.aBoolean1441) {
          javax.media.opengl.GL var3 = HDToolKit.gl;
          Class3_Sub28_Sub4.method551(0, 0);
@@ -466,7 +466,7 @@ final class Class68 {
       }
    }
 
-   private static final void method1278(int var0, Class43 var1, int var2, int var3, int var4) {
+   private static void method1278(int var0, Class43 var1, int var2, int var3, int var4) {
       int var5 = var0 + 16384 + 4;
       javax.media.opengl.GL var6 = HDToolKit.gl;
       if(!aBooleanArray1026[var0]) {
@@ -482,7 +482,7 @@ final class Class68 {
       var6.glLightfv(var5, 4611, aFloatArray1022, 0);
    }
 
-   static final void method1279() {
+   static void method1279() {
       anInt1032 = 0;
 
       for(int var0 = 0; var0 < anInt1030; ++var0) {

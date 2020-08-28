@@ -30,7 +30,7 @@ final class Class163_Sub1_Sub1 extends Class163_Sub1 {
       }
    }
 
-   static final void method2214() {
+   static void method2214() {
       try {
          if(0 != 0) {
             aByteArray4005 = (byte[])null;
@@ -50,7 +50,7 @@ final class Class163_Sub1_Sub1 extends Class163_Sub1 {
       }
    }
 
-   static final void method2215(Component var0, int var1) {
+   static void method2215(Component var0, int var1) {
       try {
          if(var1 == -9320) {
             var0.removeKeyListener(Class3_Sub13_Sub3.aClass148_3049);
@@ -62,7 +62,7 @@ final class Class163_Sub1_Sub1 extends Class163_Sub1 {
       }
    }
 
-   static final void method2216() {
+   static void method2216() {
       try {
          if((byte) 81 != 81) {
             method2215((Component)null, 14);

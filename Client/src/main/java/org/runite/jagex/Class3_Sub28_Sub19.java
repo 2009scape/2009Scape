@@ -12,7 +12,7 @@ final class Class3_Sub28_Sub19 extends Node {
    static int[] anIntArray3780 = new int[32];
 
 
-   static final boolean method715(RSInterface var1) {
+   static boolean method715(RSInterface var1) {
       try {
          if(205 == var1.anInt189) {
             Class159.anInt2023 = 250;
@@ -25,7 +25,7 @@ final class Class3_Sub28_Sub19 extends Node {
       }
    }
 
-   static final void method716() {
+   static void method716() {
       try {
          Class136.aClass93_1772.method1524();
          if(14073 != 14073) {

@@ -4,8 +4,8 @@ final class CacheIndex {
 
    static int anInt1944;
    private boolean aBoolean1945;
-   private boolean aBoolean1946;
-   private Class151 aClass151_1947;
+   private final boolean aBoolean1946;
+   private final Class151 aClass151_1947;
    static CacheIndex aClass153_1948;
    private Class62 aClass62_1949 = null;
    static int anInt1950;
@@ -43,7 +43,7 @@ final class CacheIndex {
       }
    }
 
-   private final int method2114(int var1) {
+   private int method2114(int var1) {
       try {
          if(this.isValidArchive(false, var1)) {
             if(0 != 0) {
@@ -176,7 +176,7 @@ final class CacheIndex {
       }
    }
 
-   private final boolean method2122(int var1) {
+   private boolean method2122(int var1) {
       try {
          if(var1 != 3) {
             this.method2137((byte)-93);
@@ -344,7 +344,7 @@ final class CacheIndex {
       }
    }
 
-   private final boolean isValidArchive(boolean var1, int archiveId) {
+   private boolean isValidArchive(boolean var1, int archiveId) {
       try {
          if(var1) {
             aBoolean1951 = false;
@@ -366,7 +366,7 @@ final class CacheIndex {
       }
    }
 
-   private final void method2131(int var2) {
+   private void method2131(int var2) {
       try {
          this.aClass151_1947.method2095(var2);
          if(119 < 101) {
@@ -378,7 +378,7 @@ final class CacheIndex {
       }
    }
 
-   private final boolean method2132(int archive, int[] xteaKeys) {
+   private boolean method2132(int archive, int[] xteaKeys) {
       try {
          if(!this.isValidArchive(false, archive)) {
             return false;
@@ -447,7 +447,6 @@ final class CacheIndex {
                      for (var16 = 0; var16 < var4; ++var16) {
                         var15 += var12.getInt();
                         if (null == var5) {
-                           ;
                         }
 
                         var13[var16] += var15;
@@ -523,7 +522,7 @@ final class CacheIndex {
       }
    }
 
-   private final void method2134(int var2) {
+   private void method2134(int var2) {
       try {
          if(this.aBoolean1945) {
             this.files[var2] = this.aClass151_1947.method2098(var2);
@@ -607,7 +606,7 @@ final class CacheIndex {
 
    final byte[] method2138(int var1) {
       try {
-         if(!this.method2122(0 ^ 3)) {
+         if(!this.method2122(3)) {
             return null;
          } else if(this.aClass62_1949.archiveLengths.length == 1) {
             return this.getFile(0, var1);
@@ -625,7 +624,7 @@ final class CacheIndex {
       }
    }
 
-   private final boolean method2139(int archive, int var2, int file) {
+   private boolean method2139(int archive, int var2, int file) {
       try {
          if(this.method2122(3)) {
             if(var2 <= archive && file >= 0 && archive < this.aClass62_1949.archiveLengths.length && this.aClass62_1949.archiveLengths[archive] > file) {
@@ -678,7 +677,6 @@ final class CacheIndex {
                var3 = new int[this.aClass62_1949.archiveFileLengths[archiveId]];
 
                for(int var4 = 0; var3.length > var4; var3[var4] = var4++) {
-                  ;
                }
             }
 
@@ -717,7 +715,7 @@ final class CacheIndex {
       }
    }
 
-   static final void method2143(byte var0, int var1, int var2, int var3, int var4) {
+   static void method2143(byte var0, int var1, int var2, int var3, int var4) {
       try {
          Class3_Sub28_Sub6 var5 = Class3_Sub24_Sub3.method466(4, 8, var2);
          var5.g();

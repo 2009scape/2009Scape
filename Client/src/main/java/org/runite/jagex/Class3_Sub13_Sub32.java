@@ -7,7 +7,7 @@ final class Class3_Sub13_Sub32 extends Class3_Sub13 {
    static volatile int anInt3389 = 0;
 
 
-   static final int method319(int var0, int var1, int var2) {
+   static int method319(int var0, int var1, int var2) {
       try {
          if(var1 >= -99) {
             aBoolean3387 = true;
@@ -24,7 +24,7 @@ final class Class3_Sub13_Sub32 extends Class3_Sub13 {
       super(0, true);
    }
 
-   static final void method320(int var0, int var1, int var2, byte var3, int var4) {
+   static void method320(int var0, int var1, int var2, byte var3, int var4) {
       try {
          if(var2 >= var4) {
             Class3_Sub13_Sub23_Sub1.method282(Class38.anIntArrayArray663[var1], var4, -83, var2, var0);

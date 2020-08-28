@@ -13,11 +13,11 @@ final class Class33 {
    private boolean aBoolean595 = false;
    private int anInt596 = 0;
    private static String aString597 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"??$%^&*()-_=+[{]};:\'@#~,<.>/?\\| " + String.valueOf('\u00c4') + '\u00cb' + '\u00cf' + '\u00d6' + '\u00dc' + '\u00e4' + '\u00eb' + '\u00ef' + '\u00f6' + '\u00fc' + '\u00ff' + '\u00df' + '\u00c1' + '\u00c0' + '\u00c9' + '\u00c8' + '\u00cd' + '\u00cc' + '\u00d3' + '\u00d2' + '\u00da' + '\u00d9' + '\u00e1' + '\u00e0' + '\u00e9' + '\u00e8' + '\u00ed' + '\u00ec' + '\u00f3' + '\u00f2' + '\u00fa' + '\u00f9' + '\u00c2' + '\u00ca' + '\u00ce' + '\u00d4' + '\u00db' + '\u00e2' + '\u00ea' + '\u00ee' + '\u00f4' + '\u00fb' + '\u00c6' + '\u00e6';
-   private static int anInt598 = aString597.length();
+   private static final int anInt598 = aString597.length();
    private static int[] anIntArray599 = new int[256];
 
 
-   private final void method997(RSString var1, int var2, int var3, int var4, boolean var5) {
+   private void method997(RSString var1, int var2, int var3, int var4, boolean var5) {
       if(this.aBoolean595 || var4 == 0) {
          var5 = false;
       }
@@ -44,7 +44,7 @@ final class Class33 {
       anIntArray599 = null;
    }
 
-   private final void method1000(int[] var1, byte[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
+   private void method1000(int[] var1, byte[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
       for(int var10 = -var7; var10 < 0; ++var10) {
          for(int var11 = -var6; var11 < 0; ++var11) {
             int var12 = var2[var4++] & 255;
@@ -66,7 +66,7 @@ final class Class33 {
 
    }
 
-   private final void method1001(int var1, int var2, int var3, int var4, byte[] var5) {
+   private void method1001(int var1, int var2, int var3, int var4, byte[] var5) {
       int var6 = var2 + var5[var1 + 5];
       int var7 = var3 - var5[var1 + 6];
       int var8 = var5[var1 + 3];
@@ -115,7 +115,7 @@ final class Class33 {
 
    }
 
-   private final void method1002(int[] var1, byte[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
+   private void method1002(int[] var1, byte[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
       int var10 = -(var6 >> 2);
       var6 = -(var6 & 3);
 
@@ -175,7 +175,7 @@ final class Class33 {
       }
    }
 
-   private final void method1004(Font var1, FontMetrics var2, char var3, int var4, boolean var5) {
+   private void method1004(Font var1, FontMetrics var2, char var3, int var4, boolean var5) {
       int var6 = var2.charWidth(var3);
       int var7 = var6;
       if(var5) {
@@ -188,7 +188,6 @@ final class Class33 {
                ++var6;
             }
          } catch (Exception var23) {
-            ;
          }
       }
 
@@ -212,7 +211,6 @@ final class Class33 {
       try {
          var14.grabPixels();
       } catch (Exception var22) {
-         ;
       }
 
       var11.flush();
@@ -292,7 +290,7 @@ final class Class33 {
 
    }
 
-   private final int method1005(RSString var1) {
+   private int method1005(RSString var1) {
       int var2 = 0;
 
       for(int var3 = 0; var3 < var1.length(-97); ++var3) {

@@ -56,7 +56,6 @@ final class Class3_Sub13_Sub38 extends Class3_Sub13 {
          }
 
          if(var3) {
-            ;
          }
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "vc.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');

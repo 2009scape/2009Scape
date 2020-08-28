@@ -13,7 +13,7 @@ final class Class115 {
       }
    }
 
-   static final void method1713() {
+   static void method1713() {
       try {
          if((byte) -91 > -45) {
             aClass86ArrayArray1581 = (Class86[][])((Class86[][])null);
@@ -42,7 +42,6 @@ final class Class115 {
             if(var2 != null) {
                ObjectDefinition var20 = Class162.getObjectDefinition(4, var1.anInt2270);
                if(WorldListCountry.localPlane < 3) {
-                  ;
                }
 
                int var4;
@@ -122,7 +121,7 @@ final class Class115 {
       }
    }
 
-   static final void method1714() {
+   static void method1714() {
       try {
          KeyboardListener.aClass93_1911.method1523((byte)-112);
          if((byte) -6 != -6) {

@@ -42,7 +42,7 @@ final class Class166 {
       }
    }
 
-   static final boolean method2256(int var0, int var1, int var2, int var3) {
+   static boolean method2256(int var0, int var1, int var2, int var3) {
       if(Class8.method846(var0, var1, var2)) {
          int var4 = var1 << 7;
          int var5 = var2 << 7;
@@ -52,7 +52,7 @@ final class Class166 {
       }
    }
 
-   static final void method2257(int var0) {
+   static void method2257(int var0) {
       try {
          if(var0 < 60) {
             aClass3_Sub28_Sub16Array2072 = (Class3_Sub28_Sub16[])null;
@@ -64,7 +64,7 @@ final class Class166 {
       }
    }
 
-   static final void method2258(int var0, RSString var2) {
+   static void method2258(int var0, RSString var2) {
       try {
          RSString var3 = var2.method1579().method1545();
          boolean var4 = false;
@@ -108,7 +108,7 @@ final class Class166 {
       }
    }
 
-   static final AbstractIndexedSprite method2259() {
+   static AbstractIndexedSprite method2259() {
       try {
          Object var1;
          if(HDToolKit.highDetail) {
@@ -128,7 +128,7 @@ final class Class166 {
       }
    }
 
-   static final void method2260(int var0) {
+   static void method2260(int var0) {
       try {
          Class3_Sub13_Sub34.aClass93_3412.method1522(var0 + 919, 5);
          if(var0 == -1045) {

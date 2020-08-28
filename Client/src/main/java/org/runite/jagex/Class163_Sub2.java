@@ -6,7 +6,7 @@ class Class163_Sub2 extends Class163 {
    static Class30[] aClass30Array2998 = new Class30[29]; //TODO
 
 
-   static final Class25 method2217(int var0, int var1, int var2) {
+   static Class25 method2217(int var0, int var1, int var2) {
       Class3_Sub2 var3 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var0][var1][var2];
       if (var3 != null) {
          for (int var4 = 0; var4 < var3.anInt2223; ++var4) {
@@ -34,7 +34,7 @@ class Class163_Sub2 extends Class163 {
       }
    }
 
-   static final void method2219(RSByteBuffer var0) {
+   static void method2219(RSByteBuffer var0) {
       try {
          if(false) {
             aClass30Array2998 = (Class30[])null;

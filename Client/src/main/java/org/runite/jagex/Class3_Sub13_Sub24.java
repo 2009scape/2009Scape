@@ -77,7 +77,7 @@ final class Class3_Sub13_Sub24 extends Class3_Sub13 {
       super(1, false);
    }
 
-   static final void method289() {
+   static void method289() {
       try {
          if(false) {
             aClass94_3295 = (RSString)null;
@@ -98,7 +98,6 @@ final class Class3_Sub13_Sub24 extends Class3_Sub13 {
    final int[][] method166(int var1, int var2) {
       try {
          if(var1 != -1) {
-         ;
          }
 
          int[][] var3 = this.aClass97_2376.method1594((byte)90, var2);

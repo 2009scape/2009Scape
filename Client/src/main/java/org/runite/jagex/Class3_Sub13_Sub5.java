@@ -74,7 +74,7 @@ final class Class3_Sub13_Sub5 extends Class3_Sub13 {
       }
    }
 
-   static final void method194(int var0, int var1, int var2, int var3, int var4, int var6, int var7) {
+   static void method194(int var0, int var1, int var2, int var3, int var4, int var6, int var7) {
       try {
          if(var7 >= Class101.anInt1425 && Class3_Sub28_Sub18.anInt3765 >= var6 && var4 >= Class159.anInt2020 && var1 <= Class57.anInt902) {
             Class3_Sub13_Sub19.method262(var3, var4, var1, var2, var0, var6, var7);
@@ -83,7 +83,6 @@ final class Class3_Sub13_Sub5 extends Class3_Sub13 {
          }
 
          if(4096 == 4096) {
-            ;
          }
       } catch (RuntimeException var9) {
          throw Class44.clientError(var9, "bl.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + 4096 + ',' + var6 + ',' + var7 + ')');

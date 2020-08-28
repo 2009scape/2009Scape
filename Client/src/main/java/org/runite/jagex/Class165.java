@@ -5,13 +5,13 @@ import javax.media.opengl.GL;
 
 final class Class165 implements Interface5 {
 
-   private float[] aFloatArray2190 = new float[4];
+   private final float[] aFloatArray2190 = new float[4];
    private static boolean aBoolean2191 = false;
    private int anInt2192 = -1;
    private int anInt2193 = -1;
 
 
-   private final void method2251() {
+   private void method2251() {
       GL var1 = HDToolKit.gl;
       this.anInt2193 = var1.glGenLists(2);
       var1.glNewList(this.anInt2193, 4864);
@@ -75,11 +75,11 @@ final class Class165 implements Interface5 {
       var1.glEndList();
    }
 
-   static final int method2252() {
+   static int method2252() {
       return aBoolean2191?'\u84c2':'\u84c1';
    }
 
-   static final void method2253() {
+   static void method2253() {
       javax.media.opengl.GL var0 = HDToolKit.gl;
       var0.glClientActiveTexture(method2252());
       var0.glDisableClientState('\u8078');
@@ -91,7 +91,7 @@ final class Class165 implements Interface5 {
       var1.glCallList(this.anInt2193);
    }
 
-   static final void method2254() {
+   static void method2254() {
       javax.media.opengl.GL var0 = HDToolKit.gl;
       var0.glClientActiveTexture(method2252());
       var0.glEnableClientState('\u8078');
@@ -162,7 +162,6 @@ final class Class165 implements Interface5 {
          byte[] var2 = new byte[8];
 
          for(int var3 = 0; var3 < 8; var2[var3++] = (byte)(96 + var3 * 159 / 8)) {
-            ;
          }
 
          javax.media.opengl.GL var4 = HDToolKit.gl;

@@ -27,7 +27,7 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
    static LDIndexedSprite[] aClass109_Sub1Array4027;
 
 
-   static final void method2220(int var0) {
+   static void method2220(int var0) {
       try {
          if(var0 == 0) {
             Class140_Sub4.aClass93_2792.method1524();
@@ -37,7 +37,7 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
       }
    }
 
-   static final void method2221(int var0, int var1, int var2, int var4, int var5, int var6) {
+   static void method2221(int var0, int var1, int var2, int var4, int var5, int var6) {
       try {
          int var8 = 0;
 
@@ -60,7 +60,7 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
       }
    }
 
-   static final void method2222() {
+   static void method2222() {
       try {
          Class3_Sub28_Sub7_Sub1.aClass93_4043.method1523((byte)-117);
          CS2Script.aClass93_2442.method1523((byte)-108);
@@ -74,7 +74,7 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
       }
    }
 
-   static final void method2223(boolean var0, byte var1) {
+   static void method2223(boolean var0, byte var1) {
       try {
          int var2 = 85 % ((-17 - var1) / 59);
          byte var3;
@@ -118,7 +118,7 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
       }
    }
 
-   static final boolean method2224(long var1, int var3, int var4) {
+   static boolean method2224(long var1, int var3, int var4) {
       try {
          int var5 = (int)var1 >> 14 & 31;
          if((byte) 39 != 39) {
@@ -174,7 +174,7 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
       }
    }
 
-   static final void method2226(Class3_Sub30_Sub1 var0, int var1, int var2) {
+   static void method2226(Class3_Sub30_Sub1 var0, int var1, int var2) {
       try {
          if(var2 > -109) {
             method2226((Class3_Sub30_Sub1)null, 67, 54);

@@ -10,7 +10,7 @@ final class Class20 {
    static RSInterface aClass11_439;
 
 
-   static final boolean method907(int var0, int var1, int var2, int var3, int var4, GameObject var5, int var6, long var7, boolean var9) {
+   static boolean method907(int var0, int var1, int var2, int var3, int var4, GameObject var5, int var6, long var7, boolean var9) {
       if(var5 == null) {
          return true;
       } else {
@@ -59,7 +59,7 @@ final class Class20 {
       }
    }
 
-   static final void method909(int var0, RSInterface var1) {
+   static void method909(int var0, RSInterface var1) {
       try {
          if(var1.anInt204 == Class3_Sub23.anInt2535) {
             Class3_Sub28_Sub14.aBooleanArray3674[var1.anInt292] = true;
@@ -71,7 +71,7 @@ final class Class20 {
       }
    }
 
-   static final void method910(int var1, int var2, int var3, int var4, int var5, Class91 var6) {
+   static void method910(int var1, int var2, int var3, int var4, int var5, Class91 var6) {
       try {
          boolean var9 = true;
          long var7 = 0L;

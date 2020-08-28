@@ -10,7 +10,7 @@ final class Class160 implements Interface5 {
    private int[] anIntArray2189 = null;
 
 
-   private final void method2198() {
+   private void method2198() {
       GL var1 = HDToolKit.gl;
       this.anInt2187 = var1.glGenLists(2);
       var1.glNewList(this.anInt2187, 4864);
@@ -125,7 +125,7 @@ final class Class160 implements Interface5 {
 
    }
 
-   private final void method2199() {
+   private void method2199() {
       javax.media.opengl.GL var8 = HDToolKit.gl;
       if(this.anIntArray2189 == null) {
          this.anIntArray2189 = new int[3];

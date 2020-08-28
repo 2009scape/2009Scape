@@ -2,7 +2,7 @@ package org.runite.jagex;
 
 final class LDIndexedSprite extends AbstractIndexedSprite {
 
-   private int[] anIntArray2673;
+   private final int[] anIntArray2673;
    byte[] aByteArray2674;
 
 
@@ -98,7 +98,7 @@ final class LDIndexedSprite extends AbstractIndexedSprite {
       method1673(Class74.anIntArray1100, this.aByteArray2674, this.anIntArray2673, var8, var9, var14, var15, var3, var4, var12, var13, var6, var5);
    }
 
-   private static final void method1670(int[] var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11) {
+   private static void method1670(int[] var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11) {
       int var12 = var3;
 
       for(int var13 = -var8; var13 < 0; ++var13) {
@@ -137,12 +137,11 @@ final class LDIndexedSprite extends AbstractIndexedSprite {
       }
 
       for(var2 += 7; var1 < var2; this.aByteArray2674[var1++] = 0) {
-         ;
       }
 
    }
 
-   private static final void method1672(int[] var0, byte[] var1, int[] var2, int var4, int var5, int var6, int var7, int var8, int var9) {
+   private static void method1672(int[] var0, byte[] var1, int[] var2, int var4, int var5, int var6, int var7, int var8, int var9) {
       int var10 = -(var6 >> 2);
       var6 = -(var6 & 3);
 
@@ -194,7 +193,7 @@ final class LDIndexedSprite extends AbstractIndexedSprite {
 
    }
 
-   private static final void method1673(int[] var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12) {
+   private static void method1673(int[] var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12) {
       int var13 = var3;
       int var14 = var12 >> 16 & 255;
       int var15 = var12 >> 8 & 255;
@@ -311,7 +310,7 @@ final class LDIndexedSprite extends AbstractIndexedSprite {
       }
    }
 
-   private static final void method1676(int[] var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
+   private static void method1676(int[] var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
       int var10 = 256 - var9;
 
       for(int var11 = -var6; var11 < 0; ++var11) {

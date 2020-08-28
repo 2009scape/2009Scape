@@ -30,7 +30,7 @@ final class Canvas_Sub1 extends Canvas implements FocusListener {
       }
    }
 
-   static final int method54(int var0) {
+   static int method54(int var0) {
       try {
          return false ?-81:var0 & 127;
       } catch (RuntimeException var3) {
@@ -38,7 +38,7 @@ final class Canvas_Sub1 extends Canvas implements FocusListener {
       }
    }
 
-   static final void method55() {
+   static void method55() {
       try {
          if(22683 != 22683) {
             method53(43);

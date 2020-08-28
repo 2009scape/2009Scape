@@ -66,7 +66,7 @@ final class Class125 implements Interface5 {
       }
    }
 
-   private final void method1749() {
+   private void method1749() {
       javax.media.opengl.GL var1 = HDToolKit.gl;
       this.anInt2186 = var1.glGenLists(2);
       var1.glNewList(this.anInt2186, 4864);
@@ -98,7 +98,7 @@ final class Class125 implements Interface5 {
       var1.glEndList();
    }
 
-   private final void method1750() {
+   private void method1750() {
       if(this.anInt2186 >= 0) {
          javax.media.opengl.GL var1 = HDToolKit.gl;
          int[] var2 = new int[1];

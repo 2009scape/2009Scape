@@ -29,7 +29,7 @@ abstract class Class3_Sub13 extends Class3 {
       }
    }
 
-   static final void method153(int var0) {
+   static void method153(int var0) {
       try {
          if(var0 >= 91) {
             Class3_Sub26.aClass61_2557 = new Class61();
@@ -161,7 +161,7 @@ abstract class Class3_Sub13 extends Class3 {
       }
    }
 
-   static final Class3_Sub28_Sub17_Sub1 method163(byte[] var0) {
+   static Class3_Sub28_Sub17_Sub1 method163(byte[] var0) {
       try {
          if(var0 == null) {
             return null;
@@ -179,7 +179,7 @@ abstract class Class3_Sub13 extends Class3 {
       }
    }
 
-   static final void method164(byte var0, boolean var1, RSString var2) {
+   static void method164(byte var0, boolean var1, RSString var2) {
       try {
          if(var0 <= -11) {
             byte var3 = 4;
@@ -227,7 +227,7 @@ abstract class Class3_Sub13 extends Class3 {
       }
    }
 
-   static final void method165() {
+   static void method165() {
       try {
          Class95.aClass3_Sub28_Sub16_1339 = null;
          Class3_Sub13_Sub7.aClass3_Sub28_Sub16_3099 = null;

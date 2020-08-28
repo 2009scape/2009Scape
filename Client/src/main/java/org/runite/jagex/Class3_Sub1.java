@@ -13,7 +13,7 @@ final class Class3_Sub1 extends Class3 {
    static int[] anIntArray2213 = new int[]{16776960, 16711680, '\uff00', '\uffff', 16711935, 16777215};
 
 
-   static final void method90(int var0) {
+   static void method90(int var0) {
       try {
          if(HDToolKit.highDetail) {
             if(!Class3_Sub13_Sub34.aBoolean3416) {

@@ -7,7 +7,7 @@ final class Class107 {
    static RSInterface aClass11_1453;
 
 
-   static final void method1645(CacheIndex var0, CacheIndex var1) {
+   static void method1645(CacheIndex var0, CacheIndex var1) {
       try {
          KeyboardListener.aClass153_1916 = var1;
          int var4 = (int)(21.0D * Math.random()) - 10;
@@ -35,7 +35,7 @@ final class Class107 {
       }
    }
 
-   static final void method1647(int var1, int var2, Class140_Sub4 var3, int var4, int var5, int var6) {
+   static void method1647(int var1, int var2, Class140_Sub4 var3, int var4, int var5, int var6) {
       try {
          if((byte) 122 != 122) {
             method1648((CacheIndex)null, 7);
@@ -47,7 +47,7 @@ final class Class107 {
       }
    }
 
-   static final void method1648(CacheIndex var0, int var1) {
+   static void method1648(CacheIndex var0, int var1) {
       try {
          Class101.aClass153_1420 = var0;
          if(var1 != 255) {
@@ -59,7 +59,7 @@ final class Class107 {
       }
    }
 
-   static final void method1649(int var0, int var1) {
+   static void method1649(int var0, int var1) {
       try {
          if(var1 <= -65) {
             Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 10, var0);
@@ -70,7 +70,7 @@ final class Class107 {
       }
    }
 
-   static final void method1650() {
+   static void method1650() {
       try {
          Class61.aClass93_939.method1523((byte)-113);
          if(21 != 21) {
@@ -82,7 +82,7 @@ final class Class107 {
       }
    }
 
-   static final int method1651(int var1, int var2) {
+   static int method1651(int var1, int var2) {
       try {
          int var3;
          if(var1 > var2) {

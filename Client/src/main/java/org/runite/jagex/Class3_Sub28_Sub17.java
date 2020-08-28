@@ -57,7 +57,7 @@ abstract class Class3_Sub28_Sub17 extends Node {
       return this.method693(var1, var2, var3, var4, var5, var6, var7, var8, var9, var10);
    }
 
-   private final void method677(RSString var1, int var2, int var3) {
+   private void method677(RSString var1, int var2, int var3) {
       var3 -= this.anInt3727;
       int var4 = -1;
       int var5 = 0;
@@ -102,7 +102,6 @@ abstract class Class3_Sub28_Sub17 extends Node {
                            var2 += var15.anInt1469;
                            var5 = 0;
                         } catch (Exception var13) {
-                           ;
                         }
                      } else {
                         this.method685(var9);
@@ -230,7 +229,6 @@ abstract class Class3_Sub28_Sub17 extends Node {
                               var4 += this.aClass109Array3740[var9].anInt1469;
                               var3 = 0;
                            } catch (Exception var10) {
-                              ;
                            }
                         }
                         continue;
@@ -281,7 +279,7 @@ abstract class Class3_Sub28_Sub17 extends Node {
       return this.method691(var1, new int[]{var2}, aClass94Array3753);
    }
 
-   private final void method685(RSString var1) {
+   private void method685(RSString var1) {
       try {
          if(var1.method1558(aClass94_3725)) {
             anInt3755 = var1.method1556(4).method1530((byte)70, 16);
@@ -313,12 +311,11 @@ abstract class Class3_Sub28_Sub17 extends Node {
             this.method701(anInt3749, anInt3752, anInt3751);
          }
       } catch (Exception var3) {
-         ;
       }
 
    }
 
-   static final RSString method686(RSString var0) {
+   static RSString method686(RSString var0) {
       int var1 = var0.length(-94);
       int var2 = 0;
 
@@ -346,7 +343,7 @@ abstract class Class3_Sub28_Sub17 extends Node {
       return var6;
    }
 
-   private final int method687(int var1) {
+   private int method687(int var1) {
       return this.anIntArray3736[var1 & 255];
    }
 
@@ -387,7 +384,7 @@ abstract class Class3_Sub28_Sub17 extends Node {
       aClass94Array3753 = null;
    }
 
-   private final void method690(RSString var1, int var2) {
+   private void method690(RSString var1, int var2) {
       int var3 = 0;
       boolean var4 = false;
       int var5 = var1.length(-78);
@@ -510,7 +507,6 @@ abstract class Class3_Sub28_Sub17 extends Node {
                         var4 += this.aClass109Array3740[var16].anInt1469;
                         var10 = 0;
                      } catch (Exception var17) {
-                        ;
                      }
                   }
 
@@ -651,7 +647,7 @@ abstract class Class3_Sub28_Sub17 extends Node {
       }
    }
 
-   private static final int method694(byte[][] var0, byte[][] var1, int[] var2, int[] var3, int[] var4, int var5, int var6) {
+   private static int method694(byte[][] var0, byte[][] var1, int[] var2, int[] var3, int[] var4, int var5, int var6) {
       int var7 = var2[var5];
       int var8 = var7 + var4[var5];
       int var9 = var2[var6];
@@ -725,7 +721,7 @@ abstract class Class3_Sub28_Sub17 extends Node {
       }
    }
 
-   private final void method698(int var1, int var2) {
+   private void method698(int var1, int var2) {
       anInt3746 = -1;
       anInt3747 = -1;
       anInt3752 = var2;
@@ -745,7 +741,7 @@ abstract class Class3_Sub28_Sub17 extends Node {
       }
    }
 
-   private final void method700(byte[] var1) {
+   private void method700(byte[] var1) {
       this.anIntArray3736 = new int[256];
       int var2;
       if(var1.length == 257) {
@@ -816,7 +812,7 @@ abstract class Class3_Sub28_Sub17 extends Node {
 
    }
 
-   private final void method701(int var1, int var2, int var3) {
+   private void method701(int var1, int var2, int var3) {
       anInt3746 = -1;
       anInt3747 = -1;
       anInt3752 = var2;
@@ -907,7 +903,7 @@ abstract class Class3_Sub28_Sub17 extends Node {
       this.method700(var1);
    }
 
-   private final void method703(RSString var1, int var2, int var3, int[] var4, int[] var5) {
+   private void method703(RSString var1, int var2, int var3, int[] var4, int[] var5) {
       var3 -= this.anInt3727;
       int var6 = -1;
       int var7 = 0;
@@ -968,7 +964,6 @@ abstract class Class3_Sub28_Sub17 extends Node {
                            var2 += var20.anInt1469;
                            var7 = 0;
                         } catch (Exception var18) {
-                           ;
                         }
                      } else {
                         this.method685(var12);

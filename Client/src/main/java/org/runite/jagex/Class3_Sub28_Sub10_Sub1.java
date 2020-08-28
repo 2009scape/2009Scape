@@ -29,7 +29,7 @@ final class Class3_Sub28_Sub10_Sub1 extends Class3_Sub28_Sub10 {
       }
    }
 
-   static final boolean method591(int var0) {
+   static boolean method591(int var0) {
       try {
          KeyboardListener var1 = Class3_Sub13_Sub3.aClass148_3049;
          synchronized(var1) {
@@ -60,7 +60,7 @@ final class Class3_Sub28_Sub10_Sub1 extends Class3_Sub28_Sub10 {
       }
    }
 
-   static final void method593(Frame var0, Signlink var2) {
+   static void method593(Frame var0, Signlink var2) {
       try {
          if(!true) {
             method594(110, 94);
@@ -98,7 +98,7 @@ final class Class3_Sub28_Sub10_Sub1 extends Class3_Sub28_Sub10 {
       }
    }
 
-   static final void method594(int var0, int var1) {
+   static void method594(int var0, int var1) {
       try {
          if(var0 < 83) {
             method592((byte)122);
@@ -110,7 +110,7 @@ final class Class3_Sub28_Sub10_Sub1 extends Class3_Sub28_Sub10 {
       }
    }
 
-   static final void method595() {
+   static void method595() {
       try {
          if(109 > 108) {
             Class41.aClass93_684.method1522(-128, 5);

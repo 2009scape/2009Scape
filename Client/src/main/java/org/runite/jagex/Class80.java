@@ -10,7 +10,7 @@ final class Class80 {
    static Class93 aClass93_1131 = new Class93(5);
    private int anInt1132 = 0;
    static RSString aClass94_1133 = RSString.createRSString(")4j");
-   private Class130 aClass130_1134;
+   private final Class130 aClass130_1134;
    static Class93 aClass93_1135 = new Class93(4);
    static Class3_Sub28_Sub16[] aClass3_Sub28_Sub16Array1136;
    static int anInt1137 = 2;
@@ -69,12 +69,12 @@ final class Class80 {
       }
    }
 
-   static final long method1395(int var0, int var1, int var2) {
+   static long method1395(int var0, int var1, int var2) {
       Class3_Sub2 var3 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var0][var1][var2];
       return var3 != null && var3.aClass19_2233 != null?var3.aClass19_2233.aLong428:0L;
    }
 
-   static final void method1396(int var0) {
+   static void method1396(int var0) {
       try {
          int var2 = Class106.anInt1442;
          int var1 = Class84.anInt1164;
@@ -117,7 +117,6 @@ final class Class80 {
                   var11.fillRect(var6, -var4 + var7 + Class70.anInt1047, Class3_Sub9.anInt2334, var4);
                }
             } catch (Exception var9) {
-               ;
             }
          }
 

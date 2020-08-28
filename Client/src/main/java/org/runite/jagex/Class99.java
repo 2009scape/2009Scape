@@ -11,7 +11,7 @@ final class Class99 {
    static int anInt1403 = -1;
 
 
-   static final void method1596(RSString var0, byte var1, boolean var2) {
+   static void method1596(RSString var0, byte var1, boolean var2) {
       try {
          if(var1 < 124) {
             aClass93_1401 = (Class93)null;
@@ -23,20 +23,17 @@ final class Class99 {
                   Class42.method1056(Class38.aClass87_665.anApplet1219, new Object[]{var0.method1547(Class3_Sub29.anApplet_Sub1_2588.getCodeBase()).toString()});
                   return;
                } catch (Throwable var6) {
-                  ;
                }
             }
 
             try {
                Class3_Sub29.anApplet_Sub1_2588.getAppletContext().showDocument(var0.method1547(Class3_Sub29.anApplet_Sub1_2588.getCodeBase()), "_blank");
             } catch (Exception var4) {
-               ;
             }
          } else {
             try {
                Class3_Sub29.anApplet_Sub1_2588.getAppletContext().showDocument(var0.method1547(Class3_Sub29.anApplet_Sub1_2588.getCodeBase()), "_top");
             } catch (Exception var5) {
-               ;
             }
          }
 
@@ -45,7 +42,7 @@ final class Class99 {
       }
    }
 
-   static final Frame method1597(int var2, int var3, int var4, Signlink var5) {
+   static Frame method1597(int var2, int var3, int var4, Signlink var5) {
       try {
          if(var5.method1432(false)) {
             if(0 == var2) {
@@ -104,7 +101,7 @@ final class Class99 {
       }
    }
 
-   static final int method1599(int var0, int var1, byte[] var2, byte var3) {
+   static int method1599(int var0, int var1, byte[] var2, byte var3) {
       try {
          int var4 = -1;
          int var5 = -16 % ((var3 - 61) / 57);

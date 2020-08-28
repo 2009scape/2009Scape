@@ -11,11 +11,11 @@ final class Class7 implements Interface4 {
    static RSString aClass94_2168 = RSString.createRSString("<br>");
 
 
-   static final void method831(String var1) {
+   static void method831(String var1) {
       System.out.println("Error: " + Class3_Sub28_Sub6.a("%0a", "\n", 105, var1));
    }
 
-   static final RSInterface getRSInterface(byte var0, int interfaceHash) {
+   static RSInterface getRSInterface(byte var0, int interfaceHash) {
       try {
          int windowId = interfaceHash >> 16;
          if(var0 < 108) {
@@ -68,7 +68,7 @@ final class Class7 implements Interface4 {
       }
    }
 
-   static final void method834() {
+   static void method834() {
       try {
          Class66.method1250(43, false);
          System.gc();
@@ -82,7 +82,7 @@ final class Class7 implements Interface4 {
       }
    }
 
-   static final boolean method835(int var0, int var1, int var2, int var3, int var4, int var5, GameObject var6, long var8) {
+   static boolean method835(int var0, int var1, int var2, int var3, int var4, int var5, GameObject var6, long var8) {
       if(var6 == null) {
          return true;
       } else {

@@ -35,7 +35,7 @@ final class Class3_Sub13_Sub31 extends Class3_Sub13 {
       super(0, true);
    }
 
-   static final void method318() {
+   static void method318() {
       try {
          Class3_Sub4 var1 = (Class3_Sub4)Class3_Sub13_Sub6.aClass61_3075.method1222();
 

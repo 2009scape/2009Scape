@@ -33,7 +33,7 @@ final class Class58 {
       }
    }
 
-   static final void method1194(int var0) {
+   static void method1194(int var0) {
       try {
          if(var0 == -16385) {
             if(null != Class3_Sub21.aClass155_2491) {
@@ -50,7 +50,7 @@ final class Class58 {
       }
    }
 
-   static final Class155 method1195(int var0, Signlink var1, Component var2, int var3, int var4) {
+   static Class155 method1195(int var0, Signlink var1, Component var2, int var3, int var4) {
       try {
          if(Class21.anInt443 == 0) {
             throw new IllegalStateException();
@@ -124,7 +124,7 @@ final class Class58 {
       }
    }
 
-   static final void method1196(int var3, int var4) {
+   static void method1196(int var3, int var4) {
       try {
          Class3_Sub28_Sub18.anInt3765 = var4;
          if((byte) 111 != 111) {
@@ -139,7 +139,7 @@ final class Class58 {
       }
    }
 
-   static final void method1197(CacheIndex var0) {
+   static void method1197(CacheIndex var0) {
       try {
          if((byte) 69 != 69) {
             method1195(-53, (Signlink)null, (Component)null, 79, 12);

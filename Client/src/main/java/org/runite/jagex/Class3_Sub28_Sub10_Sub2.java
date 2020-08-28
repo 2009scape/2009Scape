@@ -22,7 +22,7 @@ final class Class3_Sub28_Sub10_Sub2 extends Class3_Sub28_Sub10 {
       }
    }
 
-   static final Class106[] method596(int var0, Signlink var1) {
+   static Class106[] method596(int var0, Signlink var1) {
       try {
          if(var1.method1432(false)) {
             Class64 var2 = var1.method1453((byte)8);
@@ -73,7 +73,7 @@ final class Class3_Sub28_Sub10_Sub2 extends Class3_Sub28_Sub10 {
       }
    }
    
-   static final void method598(boolean var0, int var1, boolean var2, int var3, boolean var4, int var5, int var6) {
+   static void method598(boolean var0, int var1, boolean var2, int var3, boolean var4, int var5, int var6) {
 	      try {
 	         if(var2) {
 	            HDToolKit.method1842();
@@ -176,8 +176,7 @@ final class Class3_Sub28_Sub10_Sub2 extends Class3_Sub28_Sub10 {
 	                     Graphics var11 = Class3_Sub28_Sub12.aCanvas3648.getGraphics();
 	                     Class164_Sub1.aClass158_3009.method2179(var11);
 	                  } catch (Exception var9) {
-	                     ;
-	                  }
+					   }
 
 	                  Class80.method1396(-1);
 	                  if(var3 == 0) {

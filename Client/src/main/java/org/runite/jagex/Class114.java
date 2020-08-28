@@ -2,7 +2,7 @@ package org.runite.jagex;
 
 final class Class114 {
 
-   private int anInt1568;
+   private final int anInt1568;
    static Class93 aClass93_1569 = new Class93(200);
    private int anInt1570 = 0;
    private Class3_Sub26[] aClass3_Sub26Array1571;
@@ -12,7 +12,7 @@ final class Class114 {
    private int anInt1576 = -1;
    private Class61 aClass61_1577 = new Class61();
    static int[] anIntArray1578 = new int[500];
-   private int anInt1579;
+   private final int anInt1579;
    boolean aBoolean1580 = false;
 
 
@@ -31,7 +31,7 @@ final class Class114 {
       }
    }
 
-   static final float[] method1705(int var0, int var1) {
+   static float[] method1705(int var0, int var1) {
       try {
          float var2 = Class92.method1514() + Class92.getLightingModelAmbient();
          int var3 = Class92.screenColorRgb();
@@ -68,7 +68,7 @@ final class Class114 {
       }
    }
 
-   static final Class3_Sub28_Sub16 method1707(int var0, int var1, boolean var2, int var3, int var4) {
+   static Class3_Sub28_Sub16 method1707(int var0, int var1, boolean var2, int var3, int var4) {
       try {
          if(65536 == 65536) {
             int var7 = (!var2?0:65536) + var1 + (var0 << 17) + (var4 << 19);
@@ -91,7 +91,7 @@ final class Class114 {
       }
    }
 
-   static final void method1708(int var0, int var1, int var2) {
+   static void method1708(int var0, int var1, int var2) {
       try {
          if(var2 == -2553) {
             Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(var2 ^ -2557, 13, var1);
@@ -162,7 +162,7 @@ final class Class114 {
       }
    }
 
-   static final void method1711(int var0, int var1) {
+   static void method1711(int var0, int var1) {
       try {
          Class3_Sub28_Sub4.aClass93_3572.method1522(-127, var0);
          Class143.aClass93_1874.method1522(var1 + -383, var0);

@@ -68,7 +68,7 @@ final class Class140_Sub1_Sub1 extends Model {
    private static boolean aBoolean3868 = false;
 
 
-   private static final int method1901(float var0, float var1, float var2) {
+   private static int method1901(float var0, float var1, float var2) {
       float var3 = var0 < 0.0F?-var0:var0;
       float var4 = var1 < 0.0F?-var1:var1;
       float var5 = var2 < 0.0F?-var2:var2;
@@ -371,7 +371,7 @@ final class Class140_Sub1_Sub1 extends Model {
       return this.method1923(var1, var2, var3, aClass140_Sub1_Sub1_3856, aClass140_Sub1_Sub1_3855);
    }
 
-   private static final void method1904(int var0, int var1, int var2, int var3, int var4, int var5, float[] var6, float var7, int var8, float var9) {
+   private static void method1904(int var0, int var1, int var2, int var3, int var4, int var5, float[] var6, float var7, int var8, float var9) {
       var0 -= var3;
       var1 -= var4;
       var2 -= var5;
@@ -589,7 +589,7 @@ final class Class140_Sub1_Sub1 extends Model {
       }
    }
 
-   private static final int method1905(int var0, short var1, int var2, byte var3) {
+   private static int method1905(int var0, short var1, int var2, byte var3) {
       int var4 = Class51.anIntArray834[Class140_Sub1_Sub2.method1940(var0, var2)];
       if(var1 != -1) {
          int var5 = Class51.anInterface2_838.method19(93, var1 & '\uffff');
@@ -637,7 +637,7 @@ final class Class140_Sub1_Sub1 extends Model {
       return (var4 << 8) + (255 - (var3 & 255));
    }
 
-   private static final float[] method1906(int var0, int var1, int var2, int var3, float var4, float var5, float var6) {
+   private static float[] method1906(int var0, int var1, int var2, int var3, float var4, float var5, float var6) {
       float[] var7 = new float[9];
       float[] var8 = new float[9];
       float var9 = (float)Math.cos((double)((float)var3 * 0.024543693F));
@@ -699,7 +699,7 @@ final class Class140_Sub1_Sub1 extends Model {
       return var8;
    }
 
-   private final short method1907(Model_Sub1 var1, int var2, long var3, int var5, int var6, int var7, int var8, float var9, float var10) {
+   private short method1907(Model_Sub1 var1, int var2, long var3, int var5, int var6, int var7, int var8, float var9, float var10) {
       int var11 = this.anIntArray3838[var2];
       int var12 = this.anIntArray3838[var2 + 1];
       int var13 = 0;
@@ -1297,7 +1297,7 @@ final class Class140_Sub1_Sub1 extends Model {
 
    }
 
-   private static final void method1910(int var0, int var1, int var2, int var3, int var4, int var5, float[] var6, int var7, float var8) {
+   private static void method1910(int var0, int var1, int var2, int var3, int var4, int var5, float[] var6, int var7, float var8) {
       var0 -= var3;
       var1 -= var4;
       var2 -= var5;
@@ -1374,7 +1374,7 @@ final class Class140_Sub1_Sub1 extends Model {
       this.aClass121_3839.aBoolean1640 = false;
    }
 
-   private final void method1912() {
+   private void method1912() {
       if(aClass3_Sub30_3818.buffer.length < this.anInt3833 * 12) {
          aClass3_Sub30_3818 = new RSByteBuffer((this.anInt3833 + 100) * 12);
       } else {
@@ -1414,7 +1414,7 @@ final class Class140_Sub1_Sub1 extends Model {
 
    }
 
-   private static final void method1913(int var0, int var1, int var2, int var3, int var4, int var5, int var6, float[] var7, int var8, float var9, float var10, float var11) {
+   private static void method1913(int var0, int var1, int var2, int var3, int var4, int var5, int var6, float[] var7, int var8, float var9, float var10, float var11) {
       var0 -= var3;
       var1 -= var4;
       var2 -= var5;
@@ -1525,7 +1525,7 @@ final class Class140_Sub1_Sub1 extends Model {
 
    }
 
-   private final void method1917() {
+   private void method1917() {
       int var1 = 32767;
       int var2 = 32767;
       int var3 = 32767;
@@ -1790,13 +1790,13 @@ final class Class140_Sub1_Sub1 extends Model {
       }
    }
 
-   private static final float[] method1921(float[] var0, int var1) {
+   private static float[] method1921(float[] var0, int var1) {
       float[] var2 = new float[var1];
       Class76.method1360(var0, 0, var2, 0, var1);
       return var2;
    }
 
-   private final void method1922(boolean var1, boolean var2, boolean var3, boolean var4, boolean var5) {
+   private void method1922(boolean var1, boolean var2, boolean var3, boolean var4, boolean var5) {
       int var6 = 0;
       if(var2) {
          this.aClass121_3839.anInt1639 = var6;
@@ -2178,7 +2178,7 @@ final class Class140_Sub1_Sub1 extends Model {
       }
    }
 
-   private final Model method1923(boolean var1, boolean var2, boolean var3, Class140_Sub1_Sub1 var4, Class140_Sub1_Sub1 var5) {
+   private Model method1923(boolean var1, boolean var2, boolean var3, Class140_Sub1_Sub1 var4, Class140_Sub1_Sub1 var5) {
       var4.anInt3823 = this.anInt3823;
       var4.anInt3833 = this.anInt3833;
       var4.anInt3852 = this.anInt3852;
@@ -2469,11 +2469,11 @@ final class Class140_Sub1_Sub1 extends Model {
       this.aClass121_3839.aBoolean1640 = false;
    }
 
-   private final boolean method1927(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
+   private boolean method1927(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
       return (var2 >= var3 || var2 >= var4 || var2 >= var5) && ((var2 <= var3 || var2 <= var4 || var2 <= var5) && ((var1 >= var6 || var1 >= var7 || var1 >= var8) && (var1 <= var6 || var1 <= var7 || var1 <= var8)));
    }
 
-   private static final short[] method1928(short[] var0, int var1) {
+   private static short[] method1928(short[] var0, int var1) {
       short[] var2 = new short[var1];
       Class76.method1361(var0, 0, var2, 0, var1);
       return var2;
@@ -2863,7 +2863,7 @@ final class Class140_Sub1_Sub1 extends Model {
       }
    }
 
-   static final void method1929() {
+   static void method1929() {
       aClass140_Sub1_Sub1_3842 = new Class140_Sub1_Sub1();
       aClass140_Sub1_Sub1_3850 = new Class140_Sub1_Sub1();
       aClass140_Sub1_Sub1_3853 = new Class140_Sub1_Sub1();
@@ -2880,7 +2880,7 @@ final class Class140_Sub1_Sub1 extends Model {
       return this.aClass6_3835.aShort95;
    }
 
-   private final void method1930() {
+   private void method1930() {
       javax.media.opengl.GL var1 = HDToolKit.gl;
       if(this.anInt3852 != 0) {
          if(this.aByte3836 != 0) {

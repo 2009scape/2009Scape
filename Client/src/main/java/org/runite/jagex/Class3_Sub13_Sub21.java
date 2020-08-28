@@ -47,7 +47,7 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
       }
    }
 
-   static final void method267(byte var0) {
+   static void method267(byte var0) {
 	  try {
          if(Canvas_Sub1.registryStage != 0) {
             try {
@@ -189,7 +189,7 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
       super(0, true);
    }
 
-   static final void method269(int var0, int var1) {
+   static void method269(int var0, int var1) {
       try {
          if(var0 != -5) {
             anInt3263 = 109;
@@ -232,7 +232,7 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
       }
    }
 
-   private final boolean method270(byte var1, int var2, int var3) {
+   private boolean method270(byte var1, int var2, int var3) {
       try {
          int var4 = this.anInt3257 * (var2 + var3) >> 12;
          if(var1 > -17) {
@@ -261,7 +261,7 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
       }
    }
 
-   private final boolean method271(int var1, int var2) {
+   private boolean method271(int var1, int var2) {
       try {
          int var4 = (var2 - var1) * this.anInt3257 >> 12;
          if((byte) 113 != 113) {
@@ -278,7 +278,7 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
       }
    }
 
-   static final void method272(byte var0) {
+   static void method272(byte var0) {
       try {
          if(var0 != -124) {
             aClass3_Sub28_Sub3_3264 = (Class3_Sub28_Sub3)null;

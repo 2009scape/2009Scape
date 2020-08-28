@@ -10,7 +10,7 @@ final class Class3_Sub28_Sub11 extends Node {
    static int anInt3644 = 0;
 
 
-   static final int method599(CacheIndex var1) {
+   static int method599(CacheIndex var1) {
       try {
          int var2 = 0;
          if(-20916 == -20916) {
@@ -48,7 +48,7 @@ final class Class3_Sub28_Sub11 extends Node {
       }
    }
 
-   private final void method601(RSByteBuffer var1, int var2) {
+   private void method601(RSByteBuffer var1, int var2) {
       try {
          if((byte) -5 < -2) {
             if(249 == var2) {
@@ -79,7 +79,7 @@ final class Class3_Sub28_Sub11 extends Node {
       }
    }
 
-   static final Class3_Sub28_Sub16 method602(int var0, int var1, byte var2, CacheIndex var3) {
+   static Class3_Sub28_Sub16 method602(int var0, int var1, byte var2, CacheIndex var3) {
       try {
          //  System.out.println("Class3_sub28_Sub16 " + var1);
          if(Class75_Sub4.method1351(var3, var0, var1, var2 ^ 30885)) {
@@ -96,7 +96,7 @@ final class Class3_Sub28_Sub11 extends Node {
       }
    }
 
-   static final void method603(int var0, int var1, int var2, RSInterface var3, boolean var4) {
+   static void method603(int var0, int var1, int var2, RSInterface var3, boolean var4) {
       try {
          int var5 = var3.anInt168;
          int var6 = var3.anInt193;
@@ -199,7 +199,7 @@ final class Class3_Sub28_Sub11 extends Node {
       }
    }
 
-   static final void method606(int var0, Class3_Sub9 var1, int var2, int var3, int var4, int var5) {
+   static void method606(int var0, Class3_Sub9 var1, int var2, int var3, int var4, int var5) {
       try {
          if(var5 > 44) {
             if(var1.anInt2332 != -1 || var1.anIntArray2333 != null) {

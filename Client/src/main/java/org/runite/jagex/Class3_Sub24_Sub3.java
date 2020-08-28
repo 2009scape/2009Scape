@@ -6,7 +6,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
    static CacheIndex aClass153_3490;
    static int[] anIntArray3491 = new int[]{0, -1, 0, 1};
    static int anInt3492 = 64;
-   private Class3_Sub24_Sub4 aClass3_Sub24_Sub4_3493;
+   private final Class3_Sub24_Sub4 aClass3_Sub24_Sub4_3493;
    static int[] anIntArray3494;
    Class3_Sub24_Sub2 aClass3_Sub24_Sub2_3495 = new Class3_Sub24_Sub2();
 
@@ -50,7 +50,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
       }
    }
 
-   private final void method464(Class3_Sub22 var1, int var3) {
+   private void method464(Class3_Sub22 var1, int var3) {
       try {
          if((this.aClass3_Sub24_Sub4_3493.anIntArray3518[var1.anInt2514] & 4) != 0 && var1.anInt2506 < 0) {
             int var4 = this.aClass3_Sub24_Sub4_3493.anIntArray3509[var1.anInt2514] / Class21.anInt443;
@@ -82,7 +82,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
       }
    }
 
-   static final void method465() {
+   static void method465() {
       try {
          if(!true) {
             method463(92);
@@ -102,9 +102,9 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
       }
    }
 
-   static final Class3_Sub28_Sub6 method466(int var0, int var1, int var2) {
+   static Class3_Sub28_Sub6 method466(int var0, int var1, int var2) {
       try {
-         Class3_Sub28_Sub6 var3 = (Class3_Sub28_Sub6)Client.aClass130_2194.method1780((long)var2 | (long)var1 << 32, var0 ^ var0);
+         Class3_Sub28_Sub6 var3 = (Class3_Sub28_Sub6)Client.aClass130_2194.method1780((long)var2 | (long)var1 << 32, 0);
          if(null == var3) {
             var3 = new Class3_Sub28_Sub6(var1, var2);
             Client.aClass130_2194.method1779(1, var3, var3.aLong71);
@@ -116,7 +116,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
       }
    }
 
-   static final boolean method467(RSString var0) {
+   static boolean method467(RSString var0) {
       try {
           if (var0 != null) {
               for (int var2 = 0; var2 < Class3_Sub28_Sub5.anInt3591; ++var2) {
@@ -132,7 +132,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
       }
    }
 
-   static final void method468(int var0) {
+   static void method468(int var0) {
       try {
          Class88.method1456();
          Class2.anInterface5Array70 = new Interface5[7];
@@ -209,7 +209,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
       }
    }
 
-   private final void method469(int[] var1, Class3_Sub22 var2, int var3, int var4, int var5) {
+   private void method469(int[] var1, Class3_Sub22 var2, int var3, int var4, int var5) {
       try {
          if((4 & this.aClass3_Sub24_Sub4_3493.anIntArray3518[var2.anInt2514]) != 0 && var2.anInt2506 < 0) {
             int var7 = this.aClass3_Sub24_Sub4_3493.anIntArray3509[var2.anInt2514] / Class21.anInt443;

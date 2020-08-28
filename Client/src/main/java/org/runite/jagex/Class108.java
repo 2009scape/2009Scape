@@ -8,7 +8,7 @@ final class Class108 {
    static int anInt1460;
 
 
-   static final void method1652(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
+   static void method1652(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
       try {
          if(0 != 0) {
             COMMAND_HIGHRES_GRAPHICS_WINDOW = (RSString)null;
@@ -25,7 +25,7 @@ final class Class108 {
       }
    }
 
-   static final RSString method1653(int var0) {
+   static RSString method1653(int var0) {
       try {
          if(0 != 0) {
             method1660(-41);
@@ -37,18 +37,17 @@ final class Class108 {
       }
    }
 
-   static final void method1654(int var0) {
+   static void method1654(int var0) {
       try {
          Class140_Sub4.aClass93_2792.method1523((byte)-108);
          if(var0 == -15447) {
-            ;
          }
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "oi.E(" + var0 + ')');
       }
    }
 
-   static final byte[] method1655(byte[] var1) {
+   static byte[] method1655(byte[] var1) {
       try {
          if(var1 == null) {
             return null;
@@ -66,7 +65,7 @@ final class Class108 {
       }
    }
 
-   static final void method1656(CacheIndex var0, byte var1) {
+   static void method1656(CacheIndex var0, byte var1) {
       try {
          if(!Class140_Sub2.aBoolean2713) {
             if(HDToolKit.highDetail) {
@@ -92,7 +91,7 @@ final class Class108 {
       }
    }
 
-   static final void method1657(int var0) {
+   static void method1657(int var0) {
       try {
          Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 5, var0);
          var2.a(true);
@@ -105,7 +104,7 @@ final class Class108 {
       }
    }
 
-   static final void method1658(int var0, int[] var1, Object[] var2) {
+   static void method1658(int var0, int[] var1, Object[] var2) {
       try {
          Class25.method956(var2, var1.length - 1, var1, 74, 0);
          int var3 = 113 % ((76 - var0) / 45);
@@ -114,11 +113,10 @@ final class Class108 {
       }
    }
 
-   static final void method1659() {
+   static void method1659() {
       try {
          Class61.aClass93_939.method1524();
          if(16712751 == 16712751) {
-            ;
          }
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "oi.G(" + 16712751 + ')');
@@ -138,7 +136,7 @@ final class Class108 {
       }
    }
 
-   static final void method1661(CacheIndex var1, CacheIndex var2) {
+   static void method1661(CacheIndex var1, CacheIndex var2) {
       try {
          Class14.aBoolean337 = true;
          Class69.aClass153_1043 = var2;

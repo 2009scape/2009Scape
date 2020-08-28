@@ -5,14 +5,13 @@ final class Class105 {
    private static Class9 aClass9_1438 = new Class9();
 
 
-   private static final int method1633(int var0, Class9 var1) {
+   private static int method1633(int var0, Class9 var1) {
       while(var1.anInt128 < var0) {
          var1.anInt140 = var1.anInt140 << 8 | var1.aByteArray127[var1.anInt116] & 255;
          var1.anInt128 += 8;
          ++var1.anInt116;
          ++var1.anInt147;
          if(var1.anInt147 == 0) {
-            ;
          }
       }
 
@@ -21,7 +20,7 @@ final class Class105 {
       return var3;
    }
 
-   private static final void method1634(Class9 var0) {
+   private static void method1634(Class9 var0) {
       byte var2 = var0.aByte111;
       int var3 = var0.anInt143;
       int var4 = var0.anInt131;
@@ -135,7 +134,6 @@ final class Class105 {
       int var13 = var0.anInt141;
       var0.anInt141 += var10 - var10;
       if(var0.anInt141 < var13) {
-         ;
       }
 
       var0.aByte111 = var2;
@@ -149,7 +147,7 @@ final class Class105 {
       var0.anInt126 = var10;
    }
 
-   private static final void method1635(int[] var0, int[] var1, int[] var2, byte[] var3, int var4, int var5, int var6) {
+   private static void method1635(int[] var0, int[] var1, int[] var2, byte[] var3, int var4, int var5, int var6) {
       int var7 = 0;
 
       int var8;
@@ -192,7 +190,7 @@ final class Class105 {
 
    }
 
-   private static final void method1636(Class9 var0) {
+   private static void method1636(Class9 var0) {
       var0.anInt137 = 0;
 
       for(int var1 = 0; var1 < 256; ++var1) {
@@ -204,11 +202,11 @@ final class Class105 {
 
    }
 
-   private static final byte method1637(Class9 var0) {
+   private static byte method1637(Class9 var0) {
       return (byte)method1633(8, var0);
    }
 
-   private static final void method1638(Class9 var0) {
+   private static void method1638(Class9 var0) {
       boolean var4 = false;
       boolean var5 = false;
       boolean var6 = false;
@@ -255,7 +253,6 @@ final class Class105 {
          var1 = method1637(var0);
          var1 = method1639(var0);
          if(var1 != 0) {
-            ;
          }
 
          var0.anInt135 = 0;
@@ -313,7 +310,6 @@ final class Class105 {
 
          byte var29;
          for(var29 = 0; var29 < var39; var27[var29] = var29++) {
-            ;
          }
 
          for(var35 = 0; var35 < var40; ++var35) {
@@ -565,11 +561,11 @@ final class Class105 {
 
    }
 
-   private static final byte method1639(Class9 var0) {
+   private static byte method1639(Class9 var0) {
       return (byte)method1633(1, var0);
    }
 
-   static final int method1640(byte[] var0, int var1, byte[] var2, int var3) {
+   static int method1640(byte[] var0, int var1, byte[] var2, int var3) {
       Class9 var5 = aClass9_1438;
       synchronized(var5) {
          aClass9_1438.aByteArray127 = var2;

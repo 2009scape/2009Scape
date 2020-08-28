@@ -20,7 +20,7 @@ final class Class3_Sub7 extends Class3 {
       }
    }
 
-   static final int method121(int var0, int var1, int var2, int var3, int var4, int var6) {
+   static int method121(int var0, int var1, int var2, int var3, int var4, int var6) {
       try {
          if((var2 & 1) == 1) {
             int var7 = var4;
@@ -35,7 +35,7 @@ final class Class3_Sub7 extends Class3 {
       }
    }
 
-   static final void method122(int var0) {
+   static void method122(int var0) {
       try {
          int var1 = -101 / ((var0 - 10) / 59);
          GameObject.aClass11ArrayArray1834 = new RSInterface[Class3_Sub13_Sub29.aClass153_3361.method2121()][];
@@ -45,7 +45,7 @@ final class Class3_Sub7 extends Class3 {
       }
    }
 
-   static final RSString itemStackColor(int var0, int var1) {
+   static RSString itemStackColor(int var0, int var1) {
       try {
          if(100000 > var1) {
             return RenderAnimationDefinition.method903(new RSString[]{ColorCore.DefaultStackColor, Class72.method1298((byte)9, var1), Class72.aClass94_1076}, (byte)-65);

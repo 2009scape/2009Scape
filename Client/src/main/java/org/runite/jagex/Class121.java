@@ -31,7 +31,7 @@ final class Class121 {
       }
    }
 
-   static final int method1734(int var0, float var1, int var2, int var3, int[][] var4, int[][] var5, int var6, float[][] var7, int var8, byte var9, int var10, boolean var11, Class3_Sub11 var12, float[][] var13, int var14, int var15, float[][] var16, int var17) {
+   static int method1734(int var0, float var1, int var2, int var3, int[][] var4, int[][] var5, int var6, float[][] var7, int var8, byte var9, int var10, boolean var11, Class3_Sub11 var12, float[][] var13, int var14, int var15, float[][] var16, int var17) {
       try {
          int var18;
          if(var10 == 1) {
@@ -107,7 +107,7 @@ final class Class121 {
       }
    }
 
-   static final int method1735() {
+   static int method1735() {
       try {
          try {
             if(Class43.anInt692 == 0) {
@@ -154,7 +154,7 @@ final class Class121 {
                   Class3_Sub21.aClass155_2491.method2159(101);
                }
 
-               var2 = Class3_Sub15.aClass89_2429.readByte(29984 ^ 29984);
+               var2 = Class3_Sub15.aClass89_2429.readByte(0);
                //System.out.println(var2); //Not sure what this was debugging
                if(WorldListEntry.aClass155_2627 != null) {
                   WorldListEntry.aClass155_2627.method2159(55);
@@ -237,7 +237,7 @@ final class Class121 {
       }
    }
 
-   static final int method1736(int var0, int var1, int var2, int var3) {
+   static int method1736(int var0, int var1, int var2, int var3) {
       try {
          if(null == Class44.anIntArrayArrayArray723) {
             return 0;

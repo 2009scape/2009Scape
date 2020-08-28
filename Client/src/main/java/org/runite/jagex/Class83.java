@@ -2,16 +2,16 @@ package org.runite.jagex;
 
 final class Class83 {
 
-   private CacheIndex aClass153_1153;
+   private final CacheIndex aClass153_1153;
    static Class3_Sub27 aClass3_Sub27_1154;
-   private Class130 aClass130_1155 = new Class130(256);
+   private final Class130 aClass130_1155 = new Class130(256);
    static int anInt1156 = 0;
-   private CacheIndex aClass153_1157;
+   private final CacheIndex aClass153_1157;
    static boolean aBoolean1158 = false;
    private Class130 aClass130_1159 = new Class130(256);
 
 
-   static final void method1410(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10) {
+   static void method1410(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10) {
       try {
          int var11 = var4 - var6;
          int var12 = -var3 + var2;
@@ -295,7 +295,7 @@ final class Class83 {
       }
    }
 
-   static final int method1411(int var0) {
+   static int method1411(int var0) {
       try {
          if(Class3_Sub13_Sub10.aFrame3121 == null) {
             if(HDToolKit.highDetail && Class3_Sub15.aBoolean2427) {
@@ -315,7 +315,7 @@ final class Class83 {
       }
    }
 
-   private final Class3_Sub12_Sub1 method1412(int[] var1, int var3, int var4) {
+   private Class3_Sub12_Sub1 method1412(int[] var1, int var3, int var4) {
       try {
          if(31947 == 31947) {
             int var5 = var4 ^ (var3 >>> 12 | var3 << 4 & '\ufff3');
@@ -378,7 +378,7 @@ final class Class83 {
       }
    }
 
-   private final Class3_Sub12_Sub1 method1415(int var1, int[] var2, int var3) {
+   private Class3_Sub12_Sub1 method1415(int var1, int[] var2, int var3) {
       try {
          int var5 = var3 ^ (var1 >>> 12 | '\ufff3' & var1 << 4);
          var5 |= var1 << 16;

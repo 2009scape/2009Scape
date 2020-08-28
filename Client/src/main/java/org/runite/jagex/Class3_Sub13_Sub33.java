@@ -26,7 +26,7 @@ final class Class3_Sub13_Sub33 extends Class3_Sub13 {
       }
    }
 
-   static final int method322(byte var1) {
+   static int method322(byte var1) {
       try {
          return !true ?104:255 & var1;
       } catch (RuntimeException var3) {
@@ -34,7 +34,7 @@ final class Class3_Sub13_Sub33 extends Class3_Sub13 {
       }
    }
 
-   private final void method323(int var1, int[][] var2) {
+   private void method323(int var1, int[][] var2) {
       try {
          int var4 = Class101.anInt1427;
          int var3 = Class113.anInt1559;
@@ -96,7 +96,7 @@ final class Class3_Sub13_Sub33 extends Class3_Sub13 {
       }
    }
 
-   static final void method324(int var0) {
+   static void method324(int var0) {
       try {
          Class92.setLightParams(Class92.defaultScreenColorRgb, (0.7F + (float)var0 * 0.1F) * 1.1523438F, 0.69921875F, 0.69921875F);
          Class92.setLightPosition(-50.0F, -60.0F, -50.0F);
@@ -125,7 +125,7 @@ final class Class3_Sub13_Sub33 extends Class3_Sub13 {
       }
    }
 
-   static final int method326(byte var0, RSString var1) {
+   static int method326(byte var0, RSString var1) {
       try {
          if(var0 <= 13) {
             aClass94_3399 = (RSString)null;
@@ -177,7 +177,7 @@ final class Class3_Sub13_Sub33 extends Class3_Sub13 {
       super(0, true);
    }
 
-   static final void method327(int var0, int var1) {
+   static void method327(int var0, int var1) {
       try {
          Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466((byte) 68 + -64, 12, var1);
          var3.g();

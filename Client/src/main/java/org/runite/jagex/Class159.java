@@ -13,7 +13,7 @@ final class Class159 {
    static int anInt2024 = 0;
 
 
-   static final Class12 method2193(int var0, int var1, int var2) {
+   static Class12 method2193(int var0, int var1, int var2) {
       Class3_Sub2 var3 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var0][var1][var2];
       if(var3 == null) {
          return null;
@@ -24,13 +24,12 @@ final class Class159 {
       }
    }
 
-   static final boolean method2194() {
+   static boolean method2194() {
       try {
          if(Class3_Sub28_Sub11.aBoolean3641) {
             try {
                return !((Boolean)Class3_Sub13_Sub17.aClass94_3209.method1577(255 + -2112, Class38.aClass87_665.anApplet1219)).booleanValue();
             } catch (Throwable var2) {
-               ;
             }
          }
 
@@ -40,7 +39,7 @@ final class Class159 {
       }
    }
 
-   static final void method2195(int var0) {
+   static void method2195(int var0) {
       try {
          short var2 = 256;
          if(var0 > var2) {
@@ -154,7 +153,7 @@ final class Class159 {
       }
    }
 
-   static final void method2196() {
+   static void method2196() {
       try {
          Class3_Sub13_Sub34.aClass93_3412.method1523((byte)-107);
          if(128 != 128) {

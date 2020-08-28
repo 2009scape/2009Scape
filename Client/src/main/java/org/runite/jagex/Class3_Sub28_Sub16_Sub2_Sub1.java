@@ -34,7 +34,6 @@ final class Class3_Sub28_Sub16_Sub2_Sub1 extends Class3_Sub28_Sub16_Sub2 {
             var16 += Class74.anInt1092;
          }
       } catch (Exception var24) {
-         ;
       }
 
    }
@@ -79,7 +78,7 @@ final class Class3_Sub28_Sub16_Sub2_Sub1 extends Class3_Sub28_Sub16_Sub2 {
       }
 
       if(var6 > 0 && var5 > 0) {
-         method673(Class74.anIntArray1100, this.anIntArray4081, 0, var4, var3, var6, var5, var7, var8);
+         method673(Class74.anIntArray1100, this.anIntArray4081, var4, var3, var6, var5, var7, var8);
       }
    }
 
@@ -123,11 +122,11 @@ final class Class3_Sub28_Sub16_Sub2_Sub1 extends Class3_Sub28_Sub16_Sub2 {
       }
 
       if(var6 > 0 && var5 > 0) {
-         method673(Class74.anIntArray1100, this.anIntArray4081, 0, var4, var3, var6, var5, var7, var8);
+         method673(Class74.anIntArray1100, this.anIntArray4081, var4, var3, var6, var5, var7, var8);
       }
    }
 
-   private static final void method671(int[] var0, int[] var1, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12) {
+   private static void method671(int[] var0, int[] var1, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12) {
       int var13 = var3;
 
       for(int var14 = -var8; var14 < 0; ++var14) {
@@ -637,7 +636,6 @@ final class Class3_Sub28_Sub16_Sub2_Sub1 extends Class3_Sub28_Sub16_Sub2 {
             var17 += Class74.anInt1092;
          }
       } catch (Exception var26) {
-         ;
       }
 
    }
@@ -675,7 +673,6 @@ final class Class3_Sub28_Sub16_Sub2_Sub1 extends Class3_Sub28_Sub16_Sub2 {
             var17 += Class74.anInt1092;
          }
       } catch (Exception var26) {
-         ;
       }
 
    }
@@ -747,12 +744,12 @@ final class Class3_Sub28_Sub16_Sub2_Sub1 extends Class3_Sub28_Sub16_Sub2 {
       super(var1, var2, var3, var4, var5, var6, var7);
    }
 
-   private static final void method672(int[] var0, int[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
+   private static void method672(int[] var0, int[] var1, int var3, int var4, int var5, int var6, int var7, int var8) {
       int var9 = -var5;
 
       for(int var10 = -var6; var10 < 0; ++var10) {
          for(int var11 = var9; var11 < 0; ++var11) {
-            var2 = var1[var3--];
+            int var2 = var1[var3--];
             int var12 = var2 >>> 24;
             if(var12 == 0) {
                ++var4;
@@ -828,7 +825,7 @@ final class Class3_Sub28_Sub16_Sub2_Sub1 extends Class3_Sub28_Sub16_Sub2 {
             var14 += var15;
          }
 
-         method675(Class74.anIntArray1100, this.anIntArray4081, 0, var7, var8, var13, var14, var3, var4, var11, var12, var5);
+         method675(Class74.anIntArray1100, this.anIntArray4081, var7, var8, var13, var14, var3, var4, var11, var12, var5);
       }
    }
 
@@ -872,7 +869,7 @@ final class Class3_Sub28_Sub16_Sub2_Sub1 extends Class3_Sub28_Sub16_Sub2 {
       }
 
       if(var6 > 0 && var5 > 0) {
-         method672(Class74.anIntArray1100, this.anIntArray4081, 0, var4, var3, var6, var5, var7, var8);
+         method672(Class74.anIntArray1100, this.anIntArray4081, var4, var3, var6, var5, var7, var8);
       }
    }
 
@@ -920,12 +917,12 @@ final class Class3_Sub28_Sub16_Sub2_Sub1 extends Class3_Sub28_Sub16_Sub2 {
       }
    }
 
-   private static final void method673(int[] var0, int[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
+   private static void method673(int[] var0, int[] var1, int var3, int var4, int var5, int var6, int var7, int var8) {
       int var9 = -var5;
 
       for(int var10 = -var6; var10 < 0; ++var10) {
          for(int var11 = var9; var11 < 0; ++var11) {
-            var2 = var1[var3++];
+            int var2 = var1[var3++];
             int var12 = var2 >>> 24;
             if(var12 == 0) {
                ++var4;
@@ -942,7 +939,7 @@ final class Class3_Sub28_Sub16_Sub2_Sub1 extends Class3_Sub28_Sub16_Sub2 {
 
    }
 
-   private static final void method674(int[] var0, int[] var1, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
+   private static void method674(int[] var0, int[] var1, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
       for(int var10 = -var6; var10 < 0; ++var10) {
          for(int var11 = -var5; var11 < 0; ++var11) {
             int var12 = (var1[var3] >>> 24) * var9 >> 8;
@@ -958,14 +955,14 @@ final class Class3_Sub28_Sub16_Sub2_Sub1 extends Class3_Sub28_Sub16_Sub2 {
 
    }
 
-   private static final void method675(int[] var0, int[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11) {
+   private static void method675(int[] var0, int[] var1, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11) {
       int var12 = var3;
 
       for(int var13 = -var8; var13 < 0; ++var13) {
          int var14 = (var4 >> 16) * var11;
 
          for(int var15 = -var7; var15 < 0; ++var15) {
-            var2 = var1[(var3 >> 16) + var14];
+            int var2 = var1[(var3 >> 16) + var14];
             int var16 = var2 >>> 24;
             if(var16 == 0) {
                ++var5;

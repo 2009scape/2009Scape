@@ -16,7 +16,7 @@ final class Class60 {
       }
    }
 
-   static final void method1207() {
+   static void method1207() {
       try {
          for(int var1 = 0; Class163.localNPCCount > var1; ++var1) {
             int var2 = Class15.localNPCIndexes[var1];
@@ -35,7 +35,7 @@ final class Class60 {
       }
    }
 
-   static final void method1208(byte var0, int var1) {
+   static void method1208(byte var0, int var1) {
       try {
          if(-1 != var1) {
             if(Class130.aBooleanArray1703[var1]) {

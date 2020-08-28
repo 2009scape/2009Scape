@@ -44,7 +44,7 @@ final class Class3_Sub13_Sub23_Sub1 extends Class3_Sub13_Sub23 {
       }
    }
 
-   static final void method282(int[] var0, int var1, int var2, int var3, int var4) {
+   static void method282(int[] var0, int var1, int var2, int var3, int var4) {
       try {
          int var5 = 116 / ((24 - var2) / 63);
          --var1;
@@ -78,7 +78,7 @@ final class Class3_Sub13_Sub23_Sub1 extends Class3_Sub13_Sub23 {
       }
    }
 
-   static final void method283(String var0) {
+   static void method283(String var0) {
       try {
          if((byte) 38 != 38) {
             anIntArray4035 = (int[])null;
@@ -91,7 +91,7 @@ final class Class3_Sub13_Sub23_Sub1 extends Class3_Sub13_Sub23 {
       }
    }
 
-   static final void method284(float[][] var0, int[][] var1, int var2, float[][] var3, int var4, int[] var5, Class37 var6, byte var7, Class43 var8, float[][] var9, int var10) {
+   static void method284(float[][] var0, int[][] var1, int var2, float[][] var3, int var4, int[] var5, Class37 var6, byte var7, Class43 var8, float[][] var9, int var10) {
       try {
          int[] var11 = new int[var5.length / 2];
 
@@ -165,7 +165,7 @@ final class Class3_Sub13_Sub23_Sub1 extends Class3_Sub13_Sub23 {
       }
    }
 
-   static final Class158 method285(int var0, int var1, Component var3) {
+   static Class158 method285(int var0, int var1, Component var3) {
       try {
          if(true) {
             try {
@@ -186,7 +186,7 @@ final class Class3_Sub13_Sub23_Sub1 extends Class3_Sub13_Sub23 {
       }
    }
 
-   static final Class3_Sub28_Sub16[] method286(int var0, int var2, CacheIndex var3) {
+   static Class3_Sub28_Sub16[] method286(int var0, int var2, CacheIndex var3) {
       try {
          if(var0 != -1) {
             method285(-95, 48, (Component)null);

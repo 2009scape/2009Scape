@@ -9,7 +9,7 @@ final class Class3_Sub28_Sub17_Sub1 extends Class3_Sub28_Sub17 {
       super(var1);
    }
 
-   private static final void method704(int[] var0, byte[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
+   private static void method704(int[] var0, byte[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
       int var9 = -(var5 >> 2);
       var5 = -(var5 & 3);
 
@@ -55,7 +55,7 @@ final class Class3_Sub28_Sub17_Sub1 extends Class3_Sub28_Sub17 {
 
    }
 
-   private static final void method705(int[] var0, byte[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int[] var11, int[] var12) {
+   private static void method705(int[] var0, byte[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int[] var11, int[] var12) {
       int var13 = var2 - Class74.anInt1093;
       int var14 = var3 - Class74.anInt1095;
 
@@ -107,7 +107,7 @@ final class Class3_Sub28_Sub17_Sub1 extends Class3_Sub28_Sub17 {
 
    }
 
-   private static final void method706(int[] var0, byte[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
+   private static void method706(int[] var0, byte[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
       var2 = ((var2 & 16711935) * var9 & -16711936) + ((var2 & '\uff00') * var9 & 16711680) >> 8;
       var9 = 256 - var9;
 

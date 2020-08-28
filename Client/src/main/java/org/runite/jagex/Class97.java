@@ -7,9 +7,9 @@ final class Class97 {
    static byte[] aByteArray1364 = new byte['\u8080'];
    private int anInt1365 = -1;
    private Class61 aClass61_1366 = new Class61();
-   private int anInt1367;
+   private final int anInt1367;
    private int anInt1368 = 0;
-   private int anInt1369;
+   private final int anInt1369;
    static CacheIndex aClass153_1370;
    private Class3_Sub20[] aClass3_Sub20Array1371;
    static CacheIndex aClass153_1372;
@@ -64,7 +64,7 @@ final class Class97 {
       }
    }
 
-   static final void method1591(Class3_Sub24 var1) {
+   static void method1591(Class3_Sub24 var1) {
       try {
          if(var1.aClass3_Sub12_2544 != null) {
             var1.aClass3_Sub12_2544.anInt2374 = 0;
@@ -105,7 +105,7 @@ final class Class97 {
       }
    }
 
-   static final void method1593(int var0, CacheIndex var1) {
+   static void method1593(int var0, CacheIndex var1) {
       try {
          Class154.anInt1966 = var1.getArchiveForName(Class3_Sub28_Sub4.aClass94_3574);
          Class79.anInt1124 = var1.getArchiveForName(Class95.aClass94_1341);

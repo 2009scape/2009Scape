@@ -11,7 +11,7 @@ final class Class3_Sub19 extends Class3 {
    static int anInt2479;
 
 
-   static final Class75_Sub2 method384(RSByteBuffer var0) {
+   static Class75_Sub2 method384(RSByteBuffer var0) {
       try {
          if((byte) 80 <= 40) {
             aClass153_2474 = (CacheIndex)null;
@@ -23,7 +23,7 @@ final class Class3_Sub19 extends Class3 {
       }
    }
 
-   static final boolean method385(int var0, int var1) {
+   static boolean method385(int var0, int var1) {
       try {
          byte var3 = 0;
          int var5;
@@ -173,7 +173,7 @@ final class Class3_Sub19 extends Class3 {
       }
    }
 
-   static final void method386(int var1) {
+   static void method386(int var1) {
       try {
          Class3_Sub31.aClass93_2604.method1522(-128, 5);
          if(var1 <= -109) {

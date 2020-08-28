@@ -332,7 +332,7 @@ final class Player extends Class140_Sub4 {
       }
    }
 
-   private final void method1979(Class127_Sub1 var1, int var2, Model var3, int var4, int var5, int var6, int var8, int var9, int var10, int var11, int var12, int var13, int var14, int var15) {
+   private void method1979(Class127_Sub1 var1, int var2, Model var3, int var4, int var5, int var6, int var8, int var9, int var10, int var11, int var12, int var13, int var14, int var15) {
       try {
          int var16 = var4 * var4 - -(var2 * var2);
          if(var16 >= 16 && var16 <= 360000) {

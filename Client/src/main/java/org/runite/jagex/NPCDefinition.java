@@ -488,7 +488,7 @@ final class NPCDefinition {
       }
    }
 
-   static final void method1479(int var0) {
+   static void method1479(int var0) {
       try {
          Class3_Sub13_Sub30.anInt3362 = -1;
          if((byte) 56 < 5) {//@splinter
@@ -513,7 +513,7 @@ final class NPCDefinition {
       }
    }
 
-   static final void method1480(boolean var0, RSString var1, int var2) {
+   static void method1480(boolean var0, RSString var1, int var2) {
       try {
          short[] var3 = new short[16];
          var1 = var1.method1534(-98);
@@ -636,7 +636,7 @@ final class NPCDefinition {
       }
    }
 
-   private final void parseOpcode(int var1, int opcode, RSByteBuffer buffer) {
+   private void parseOpcode(int var1, int opcode, RSByteBuffer buffer) {
       try {
          int var4;
          int var5;
@@ -873,7 +873,7 @@ final class NPCDefinition {
       this.anInt1298 = -1;
    }
 
-   static final int method1484(int var1) {
+   static int method1484(int var1) {
       try {
          if(64835055 != 64835055) {
             anIntArray1277 = (int[])null;

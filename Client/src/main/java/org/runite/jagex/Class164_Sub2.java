@@ -5,12 +5,11 @@ class Class164_Sub2 extends Class164 {
    private int anInt3018;
    static Class33 aClass33_3019;
    static int anInt3020 = 0;
-   private int anInt3021;
-   private int anInt3022;
-   private int anInt3023;
+   private final int anInt3021;
+   private final int anInt3022;
    private int anInt3024;
    private byte[] aByteArray3025;
-   private int anInt3026;
+   private final int anInt3026;
    static byte[][] aByteArrayArray3027;
    private int anInt3028;
    private int anInt3029;
@@ -68,7 +67,7 @@ class Class164_Sub2 extends Class164 {
       }
    }
 
-   static final int method2246(int var1) {
+   static int method2246(int var1) {
       try {
          int var2 = var1 * (var1 * var1 >> 12) >> 12;
          if((byte) 83 <= 59) {
@@ -83,7 +82,7 @@ class Class164_Sub2 extends Class164 {
       }
    }
 
-   static final int method2247(byte var0, int var1, RSInterface var2) {
+   static int method2247(byte var0, int var1, RSInterface var2) {
       try {
          if(var2.childDataBuffers != null && var2.childDataBuffers.length > var1) {
             int var3 = -92 % ((var0 - 71) / 34);
@@ -247,7 +246,7 @@ class Class164_Sub2 extends Class164 {
       }
    }
 
-   static final boolean method2248(int var1) {
+   static boolean method2248(int var1) {
       try {
          if(-157 != -157) {
             aClass33_3019 = (Class33)null;
@@ -259,7 +258,7 @@ class Class164_Sub2 extends Class164 {
       }
    }
 
-   static final void method2249(byte var0, int var1) {
+   static void method2249(byte var0, int var1) {
       try {
          Class3 var2 = Class124.aClass130_1659.method1776(var0 + -6);
          if(var0 != 83) {
@@ -279,24 +278,25 @@ class Class164_Sub2 extends Class164 {
 
    final void method2237(int var1, int var2) {
       try {
+         int anInt3023;
          if(0 == var2) {
-            this.anInt3023 = 4096;
+            anInt3023 = 4096;
             this.anInt3024 = -(var1 >= 0 ?var1:-var1) + this.anInt3026;
             this.anInt3024 = this.anInt3024 * this.anInt3024 >> 12;
             this.anInt3029 = this.anInt3024;
          } else {
-            this.anInt3023 = this.anInt3022 * this.anInt3024 >> 12;
-            if(this.anInt3023 >= 0) {
-               if(this.anInt3023 > 4096) {
-                  this.anInt3023 = 4096;
+            anInt3023 = this.anInt3022 * this.anInt3024 >> 12;
+            if(anInt3023 >= 0) {
+               if(anInt3023 > 4096) {
+                  anInt3023 = 4096;
                }
             } else {
-               this.anInt3023 = 0;
+               anInt3023 = 0;
             }
 
             this.anInt3024 = -(var1 >= 0 ?var1:-var1) + this.anInt3026;
             this.anInt3024 = this.anInt3024 * this.anInt3024 >> 12;
-            this.anInt3024 = this.anInt3024 * this.anInt3023 >> 12;
+            this.anInt3024 = this.anInt3024 * anInt3023 >> 12;
             this.anInt3029 += this.anInt3018 * this.anInt3024 >> 12;
             this.anInt3018 = this.anInt3021 * this.anInt3018 >> 12;
          }

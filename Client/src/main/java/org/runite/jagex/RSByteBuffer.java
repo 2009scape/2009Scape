@@ -120,7 +120,7 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	static final void method744() {
+	static void method744() {
 		try {
 			if(!true) {
 				method784(-10, -32, -21);
@@ -141,11 +141,10 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	static final void method746(byte var0) {
+	static void method746(byte var0) {
 		try {
 			Class67.aClass93_1013.method1524();
 			if(var0 == -29) {
-				;
 			}
 		} catch (RuntimeException var2) {
 			throw Class44.clientError(var2, "wa.VC(" + var0 + ')');
@@ -344,7 +343,6 @@ class RSByteBuffer extends Class3 {
 				int var3 = this.index;
 
 				while(this.buffer[this.index++] != 0) {
-					;
 				}
 
 				return Class3_Sub13_Sub3.method178(this.buffer, this.index - (var3 - -1), var3);
@@ -579,7 +577,6 @@ class RSByteBuffer extends Class3 {
 			int var2 = this.index;
 
 			while(0 != this.buffer[this.index++]) {
-				;
 			}
 
 			return Class3_Sub13_Sub3.method178(this.buffer, -var2 + (this.index - 1), var2);
@@ -588,7 +585,7 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	static final void method777(Class91[] var0, boolean var1, int var2, int var3, int var5, int var6, byte[] var7) {
+	static void method777(Class91[] var0, boolean var1, int var2, int var3, int var5, int var6, byte[] var7) {
 		try {
 			int var10;
 			int var11;
@@ -749,7 +746,7 @@ class RSByteBuffer extends Class3 {
 						} else {
 							if(var12 != 1) {
 //								throw
-								new IllegalStateException().printStackTrace();;
+								new IllegalStateException().printStackTrace();
 								return;//
 							}
 
@@ -889,7 +886,7 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	static final Class12 method784(int var0, int var1, int var2) {
+	static Class12 method784(int var0, int var1, int var2) {
 		Class3_Sub2 var3 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var0][var1][var2];
 		return var3 != null && var3.aClass12_2230 != null?var3.aClass12_2230:null;
 	}
@@ -1009,7 +1006,7 @@ class RSByteBuffer extends Class3 {
 	
 
 	
-	static final void method792(int var0) {
+	static void method792(int var0) {
 		try {
 			if(var0 == 9179409) {
 				int var1 = Class137.method1817();
@@ -1058,7 +1055,7 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	static final void method795() {
+	static void method795() {
 		try {
 			if((byte) 14 != 14) {
 				anIntArray2591 = (int[])null;
@@ -1106,7 +1103,7 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	static final void method799(int var0, int var2, int var3, int var4) {
+	static void method799(int var0, int var2, int var3, int var4) {
 		try {
 			if(Class140_Sub3.anInt2737 < 100) {
 				Class3_Sub28_Sub14.method626();
@@ -1235,7 +1232,7 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	static final RSString method802(int var0) {
+	static RSString method802(int var0) {
 		try {
 			if(!true) {
 				method746((byte)-33);

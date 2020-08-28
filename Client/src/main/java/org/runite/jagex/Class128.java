@@ -6,12 +6,11 @@ final class Class128 {
 
    static int anInt1682 = 1;
    static Class93 aClass93_1683 = new Class93(64);
-   private Node[] aClass3_Sub28Array1684;
    static boolean aBoolean1685 = true;
    static RSString aClass94_1687 = RSString.createRSString("(Z");
 
 
-   static final void method1760(int var0, int var2) {
+   static void method1760(int var0, int var2) {
       try {
     	  if (WorldListCountry.localPlane > 3 || WorldListCountry.localPlane < 0) {
     		  System.err.println("Local plane " + WorldListCountry.localPlane + " is out of bounds - rendering log=" + Arrays.toString(Class163_Sub3.PLAYER_RENDER_LOG) + "!");
@@ -78,13 +77,12 @@ final class Class128 {
       }
    }
 
-   static final void method1762(long var0, byte var2) {
+   static void method1762(long var0, byte var2) {
       try {
          try {
             int var3 = 30 / ((var2 - -86) / 36);
             Thread.sleep(var0);
          } catch (InterruptedException var4) {
-            ;
          }
 
       } catch (RuntimeException var5) {
@@ -92,7 +90,7 @@ final class Class128 {
       }
    }
 
-   static final Model method1763(int var1, int var2, int var3, int var4, Model var5, int var6) {
+   static Model method1763(int var1, int var2, int var3, int var4, Model var5, int var6) {
       try {
          Model var9 = (Model)Class61.aClass93_939.get((long)var3);
          if(var9 == null) {
@@ -142,7 +140,7 @@ final class Class128 {
       }
    }
 
-   static final void method1764() {
+   static void method1764() {
       for(int var3 = 0; var3 < Class3_Sub17.anInt2456; ++var3) {
          for(int var4 = 0; var4 < IOHandler.anInt1234; ++var4) {
             for(int var5 = 0; var5 < Class3_Sub13_Sub15.anInt3179; ++var5) {
@@ -182,10 +180,10 @@ final class Class128 {
 
    Class128() {
       try {
-         this.aClass3_Sub28Array1684 = new Node[8];
+         Node[] aClass3_Sub28Array1684 = new Node[8];
 
          for(int var2 = 0; 8 > var2; ++var2) {
-            Node var3 = this.aClass3_Sub28Array1684[var2] = new Node();
+            Node var3 = aClass3_Sub28Array1684[var2] = new Node();
             var3.aClass3_Sub28_2570 = var3;
             var3.aClass3_Sub28_2578 = var3;
          }

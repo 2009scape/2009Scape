@@ -6,21 +6,20 @@ final class Class140_Sub3 extends GameObject {
    private int anInt2720 = 0;
    private boolean aBoolean2721 = false;
    private AnimationDefinition aClass142_2722;
-   private int anInt2724;
+   private final int anInt2724;
    private int anInt2725 = 0;
    private int anInt2726;
    static CacheIndex aClass153_2727;
    private boolean aBoolean2728 = true;
-   private int objectId;
-   private int anInt2730;
-   private int anInt2732;
+   private final int objectId;
+   private final int anInt2730;
+   private final int anInt2732;
    private int anInt2733;
-   private int type;
+   private final int type;
    static RSString aClass94_2735 = RSString.createRSString(")4");
-   private int anInt2736;
+   private final int anInt2736;
    static int anInt2737 = 0;
    private LDIndexedSprite aClass109_Sub1_2738 = null;
-   private int anInt2741 = -32768;
    private Class127_Sub1 aClass127_Sub1_2742;
    static volatile int anInt2743 = 0;
    static int anInt2745 = 0;
@@ -32,7 +31,7 @@ final class Class140_Sub3 extends GameObject {
    private int anInt2752 = -1;
 
 
-   static final Model method1957(int var0, boolean var1, AnimationDefinition var2, int var3, int var4, int var5, int var6, int var7, Model var8, int var9, int var10, int var11, int var12) {
+   static Model method1957(int var0, boolean var1, AnimationDefinition var2, int var3, int var4, int var5, int var6, int var7, Model var8, int var9, int var10, int var11, int var12) {
       try {
          long var14 = ((long)var4 << 48) + (long)(var7 + (var0 << 16) - -(var12 << 24)) + ((long)var6 << 32);
          Model var16 = (Model)Class158_Sub1.aClass93_2982.get(var14);
@@ -220,7 +219,7 @@ final class Class140_Sub3 extends GameObject {
       }
    }
 
-   static final void method1959(int var0, int var1, int var2, boolean var3) {
+   static void method1959(int var0, int var1, int var2, boolean var3) {
       try {
          if(var2 >= 8000 && var2 <= '\ubb80') {
             Class3_Sub24_Sub4.anInt3507 = var1;
@@ -261,7 +260,7 @@ final class Class140_Sub3 extends GameObject {
 
    protected final void finalize() {}
 
-   private final void method1961(int var1, int var2) {
+   private void method1961(int var1, int var2) {
       try {
          if(this.aClass142_2722 != null) {
             int var4 = Class44.anInt719 - this.anInt2749;
@@ -316,14 +315,13 @@ final class Class140_Sub3 extends GameObject {
          }
 
          if(-101 == -101) {
-            ;
          }
       } catch (RuntimeException var8) {
          throw Class44.clientError(var8, "dc.A(" + var1 + ',' + var2 + ',' + -101 + ')');
       }
    }
 
-   private final GameObject method1962(boolean var1, int var2) {
+   private GameObject method1962(boolean var1, int var2) {
       try {
          boolean var3 = Class58.anIntArrayArrayArray914 != Class44.anIntArrayArrayArray723;
          ObjectDefinition var4 = Class162.getObjectDefinition(var2 + 6, this.objectId);
@@ -460,13 +458,14 @@ final class Class140_Sub3 extends GameObject {
 
    final int method1871() {
       try {
-         return this.anInt2741;
+         int anInt2741 = -32768;
+         return anInt2741;
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "dc.MA()");
       }
    }
 
-   static final void renderLocalPlayers() {
+   static void renderLocalPlayers() {
       try {
          int localPlayerAmount = GraphicDefinition.incomingBuffer.getBits((byte)-11, 8);
          int var2;

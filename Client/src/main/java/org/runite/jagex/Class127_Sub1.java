@@ -12,7 +12,7 @@ final class Class127_Sub1 extends Class127 {
       new Class61();
    }
 
-   static final void method1755() {
+   static void method1755() {
       GL var0 = HDToolKit.gl;
       if(var0.isExtensionAvailable("GL_ARB_point_parameters")) {
          float[] var1 = new float[]{1.0F, 0.0F, 5.0E-4F};
@@ -29,18 +29,17 @@ final class Class127_Sub1 extends Class127 {
       }
 
       if(var0.isExtensionAvailable("GL_ARB_point_sprite")) {
-         ;
       }
 
    }
 
-   static final void method1756() {}
+   static void method1756() {}
 
-   static final int method1757() {
+   static int method1757() {
       return anInt2682;
    }
 
-   static final void method1758(int var0) {
+   static void method1758(int var0) {
       anInt2682 = var0;
    }
 

@@ -13,7 +13,7 @@ abstract class Model extends GameObject {
 
    abstract void method1874();
 
-   private final void method1875(Class3_Sub17 var1, AnimationHeader var2, AnimationHeader var3, int var4, int var5, boolean[] var6, boolean var7, boolean var8, int var9, int[] var10) {
+   private void method1875(Class3_Sub17 var1, AnimationHeader var2, AnimationHeader var3, int var4, int var5, boolean[] var6, boolean var7, boolean var8, int var9, int[] var10) {
       int var11;
       if(var3 == null || var4 == 0) {
          for(var11 = 0; var11 < var2.anInt1383; ++var11) {
@@ -207,7 +207,7 @@ abstract class Model extends GameObject {
       }
    }
 
-   private static final int method1878(int[][] var0, int var1, int var2) {
+   private static int method1878(int[][] var0, int var1, int var2) {
       int var3 = var1 >> 7;
       int var4 = var2 >> 7;
       if(var3 >= 0 && var4 >= 0 && var3 < var0.length && var4 < var0[0].length) {

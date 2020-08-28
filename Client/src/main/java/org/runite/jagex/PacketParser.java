@@ -16,7 +16,7 @@ final class PacketParser {
     static RSInterface aClass11_88 = null;
 
 
-    static final int method823(int var0, int var1, int var2, int var3) {
+    static int method823(int var0, int var1, int var2, int var3) {
         try {
             if (var2 >= -76) {
                 aShort83 = -91;
@@ -28,7 +28,7 @@ final class PacketParser {
         }
     }
 
-    static final void method824(long[] var0, Object[] var1, int var2) {
+    static void method824(long[] var0, Object[] var1, int var2) {
         try {
             Class134.method1809(var0.length - 1, var0, 122, 0, var1);
         } catch (RuntimeException var4) {
@@ -36,7 +36,7 @@ final class PacketParser {
         }
     }
 
-    static final void method825(int var1) {
+    static void method825(int var1) {
         try {
             Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(4, 1, var1);
             var3.a(true);
@@ -45,7 +45,7 @@ final class PacketParser {
         }
     }
 
-    static final int method826(RSString var0, int var1) {
+    static int method826(RSString var0, int var1) {
         try {
             if (var1 != -1) {
                 method826(null, 65);
@@ -65,7 +65,7 @@ final class PacketParser {
         }
     }
 
-    static final boolean parseIncomingPackets() throws IOException {
+    static boolean parseIncomingPackets() throws IOException {
         try {
             if (Class3_Sub15.aClass89_2429 == null) {
                 return false;
@@ -1600,7 +1600,6 @@ final class PacketParser {
                                                                                 var2 &= Long.MAX_VALUE;
 
                                                                                 for (var30 = 0; var30 < Node.clanSize && (var2 != Class3_Sub28_Sub15.aClass3_Sub19Array3694[var30].aLong71 || Class3_Sub28_Sub15.aClass3_Sub19Array3694[var30].anInt2478 != modelId); ++var30) {
-                                                                                    ;
                                                                                 }
 
                                                                                 if (var30 < Node.clanSize) {
@@ -1816,7 +1815,7 @@ final class PacketParser {
         }
     }
 
-    static final void method829() {
+    static void method829() {
         try {
             Class20.method909(-1 + 111, Class56.aClass11_886);
             ++Class75_Sub3.anInt2658;
@@ -1882,7 +1881,7 @@ final class PacketParser {
                         Class3_Sub13_Sub1.outgoingBuffer.putOpcode(79);
                         ++Class23.anInt456;
                         Class3_Sub13_Sub1.outgoingBuffer.putIntB(-93, Class56.aClass11_886.anInt279);
-                        Class3_Sub13_Sub1.outgoingBuffer.putLEShort(-1 ^ 0, withInter.anInt191);
+                        Class3_Sub13_Sub1.outgoingBuffer.putLEShort(~0, withInter.anInt191);
                         Class3_Sub13_Sub1.outgoingBuffer.putInt(-125, withInter.anInt279);
                         Class3_Sub13_Sub1.outgoingBuffer.putLEShort(-1, Class56.aClass11_886.anInt191);
 

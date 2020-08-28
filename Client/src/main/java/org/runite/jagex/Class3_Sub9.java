@@ -33,7 +33,7 @@ final class Class3_Sub9 extends Class3 {
    static RSString RIGHT_PARENTHESES = RSString.createRSString("(Y");
 
 
-   static final Class3_Sub28_Sub5 method133(int var0, int var1) {
+   static Class3_Sub28_Sub5 method133(int var0, int var1) {
       try {
          if(var1 != 0) {
             method135(-59, 112, 16, -6, 77, -69);
@@ -104,7 +104,7 @@ final class Class3_Sub9 extends Class3 {
       }
    }
 
-   static final void method135(int var0, int var1, int var2, int var3, int var4, int var5) {
+   static void method135(int var0, int var1, int var2, int var3, int var4, int var5) {
       try {
          Class3_Sub13_Sub23_Sub1.method282(Class38.anIntArrayArray663[var0], var1 - var2, -76, var2 + var1, var5);
          int var6 = 0;
@@ -180,7 +180,7 @@ final class Class3_Sub9 extends Class3 {
       }
    }
 
-   static final void method137(int var0, byte var1) {
+   static void method137(int var0, byte var1) {
       try {
          if(var1 >= -111) {
             RIGHT_PARENTHESES = (RSString)null;

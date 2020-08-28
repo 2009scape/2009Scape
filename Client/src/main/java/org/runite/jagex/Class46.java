@@ -18,7 +18,7 @@ final class Class46 {
       }
    }
 
-   static final void method1086(CacheIndex var0) {
+   static void method1086(CacheIndex var0) {
       try {
          Class45.aClass153_731 = var0;
          if(-6 != -6) {
@@ -30,7 +30,7 @@ final class Class46 {
       }
    }
 
-   static final void method1087(int var0, int var1) {
+   static void method1087(int var0, int var1) {
       try {
          Class3_Sub30_Sub1.method819();
          Class3_Sub13_Sub17.method252();

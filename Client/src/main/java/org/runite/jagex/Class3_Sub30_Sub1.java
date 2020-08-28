@@ -10,7 +10,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 	static RSString aClass94_3807 = RSString.createRSString("m");
 
 
-	static final void addChatMessage(RSString var0, int type, RSString message, int var3) {
+	static void addChatMessage(RSString var0, int type, RSString message, int var3) {
 		try {
 			Class3_Sub28_Sub12.sendGameMessage(var3, type, message, (RSString)null, var0);
 		} catch (RuntimeException var5) {
@@ -18,7 +18,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 		}
 	}
 
-	static final void method806(int var1) {
+	static void method806(int var1) {
 		try {
 			if(var1 >= 0) {
 				int var2 = Class117.anIntArray1613[var1];
@@ -926,7 +926,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 		super(5000);
 	}
 
-	static final int method809(int var0, int var1, int var2, int var3, int var4) {
+	static int method809(int var0, int var1, int var2, int var3, int var4) {
 		try {
 			if(Class3_Sub13_Sub32.aBoolean3387) {
 				var0 = 1000000;
@@ -992,7 +992,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 		}
 	}
 
-	static final int method810(int var1) {
+	static int method810(int var1) {
 		try {
 			return (byte) 3 != 3?74:255 & var1;
 		} catch (RuntimeException var3) {
@@ -1043,7 +1043,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 		}
 	}
 
-	static final void method813() {
+	static void method813() {
 		try {
 			Class3_Sub28_Sub4.aClass93_3572.method1523((byte)-127);
 			if(1974 == 1974) {
@@ -1107,7 +1107,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 		}
 	}
 
-	static final void method819() {
+	static void method819() {
 		try {
 			Class3_Sub31 var1 = (Class3_Sub31)Class3_Sub13_Sub17.aClass130_3208.method1776(73);
 			if(!false) {

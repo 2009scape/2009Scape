@@ -25,7 +25,7 @@ final class Class21 {
       }
    }
 
-   static final void method912() {
+   static void method912() {
       try {
          Class3_Sub13_Sub1.outgoingBuffer.index = 0;
          Class7.anInt2166 = -1;
@@ -68,7 +68,7 @@ final class Class21 {
       }
    }
 
-   static final Class118 method913() {
+   static Class118 method913() {
       try {
          try {
             return (Class118)Class.forName(Configurations.PACKAGE_JAGEX + ".Class118_Sub1").newInstance();
@@ -80,7 +80,7 @@ final class Class21 {
       }
    }
 
-   static final Class3_Sub31 method914(int interfaceId, int interfaceHash, int walkable) {
+   static Class3_Sub31 method914(int interfaceId, int interfaceHash, int walkable) {
       try {
          Class3_Sub31 var4 = new Class3_Sub31();
          var4.anInt2603 = walkable;
@@ -144,7 +144,7 @@ final class Class21 {
       }
    }
 
-   static final void method915(RSString var0) {
+   static void method915(RSString var0) {
       try {
          int var2 = Class3_Sub28_Sub8.method576(var0);
          if(-1 != var2) {
@@ -155,7 +155,7 @@ final class Class21 {
       }
    }
 
-   static final Class146 method916() {
+   static Class146 method916() {
       try {
          if((byte) 15 != 15) {
             aClass94_442 = (RSString)null;

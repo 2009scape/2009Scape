@@ -6,8 +6,8 @@ final class Class36 {
 
    private int[] anIntArray633;
    static int[] anIntArray634 = new int[256];
-   private byte[] aByteArray635;
-   private int[] anIntArray636;
+   private final byte[] aByteArray635;
+   private final int[] anIntArray636;
    static Class3_Sub28_Sub16 aClass3_Sub28_Sub16_637;
    static int anInt638;
    static int anInt639;
@@ -15,7 +15,7 @@ final class Class36 {
    static int anInt641;
 
 
-   static final Class129 method1012() {
+   static Class129 method1012() {
       try {
          try {
             if((byte) -31 != -31) {
@@ -31,7 +31,7 @@ final class Class36 {
       }
    }
 
-   static final RSString method1013(byte var0, int var1) {
+   static RSString method1013(byte var0, int var1) {
       try {
          RSString var2 = Class72.method1298((byte)9, var1);
          if(var0 >= -87) {
@@ -48,7 +48,7 @@ final class Class36 {
       }
    }
 
-   static final void method1014(int var1, int var2) {
+   static void method1014(int var1, int var2) {
       try {
          int var3 = 120 / ((15 - -120) / 41);
 

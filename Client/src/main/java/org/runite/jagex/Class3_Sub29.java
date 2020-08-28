@@ -15,7 +15,7 @@ final class Class3_Sub29 extends Class3 {
    static int anInt2589 = 0;
 
 
-   static final void method727() {
+   static void method727() {
       try {
          KeyboardListener.aClass93_1911.method1524();
          int var1 = 56 / ((91 - 7) / 54);
@@ -25,7 +25,7 @@ final class Class3_Sub29 extends Class3 {
       }
    }
 
-   static final void method728() {
+   static void method728() {
       try {
          if(false) {
             method731((CacheIndex)null, (byte)118);
@@ -68,7 +68,7 @@ final class Class3_Sub29 extends Class3 {
       }
    }
 
-   static final int method729(byte var0, int var1, int var2) {
+   static int method729(byte var0, int var1, int var2) {
       try {
          if(var0 > -32) {
             return 88;
@@ -97,7 +97,7 @@ final class Class3_Sub29 extends Class3 {
       }
    }
 
-   static final void method730(int var0, int var1, int var3, int var4, int var5) {
+   static void method730(int var0, int var1, int var3, int var4, int var5) {
       try {
          int var6 = 19 % (((byte) 121 - -44) / 47);
          if(Class101.anInt1425 <= var0 && var4 <= Class3_Sub28_Sub18.anInt3765 && Class159.anInt2020 <= var5 && Class57.anInt902 >= var3) {
@@ -111,7 +111,7 @@ final class Class3_Sub29 extends Class3 {
       }
    }
 
-   static final void method731(CacheIndex var0, byte var1) {
+   static void method731(CacheIndex var0, byte var1) {
       try {
          int var2 = 3 / ((var1 - -62) / 37);
          Class3_Sub13_Sub13.aClass153_3154 = var0;
@@ -123,7 +123,7 @@ final class Class3_Sub29 extends Class3 {
 
    public Class3_Sub29() {}
 
-   static final RSString method732(String var0) {
+   static RSString method732(String var0) {
       try {
          if(27307 != 27307) {
             anInt2589 = -93;
@@ -152,7 +152,7 @@ final class Class3_Sub29 extends Class3 {
       }
    }
 
-   static final Class3_Sub28_Sub4 method733(int var0, int var1) {
+   static Class3_Sub28_Sub4 method733(int var0, int var1) {
       try {
          Class3_Sub28_Sub4 var2 = (Class3_Sub28_Sub4)Class3_Sub28_Sub19.aClass47_3776.method1092((long)var1, 1400);
          if(null == var2) {
@@ -184,7 +184,7 @@ final class Class3_Sub29 extends Class3 {
       }
    }
 
-   static final void method734(RSString var1) {
+   static void method734(RSString var1) {
       try {
          Class163_Sub2.aClass94_2996 = var1;
          if(null != Class38.aClass87_665.anApplet1219) {
@@ -200,7 +200,6 @@ final class Class3_Sub29 extends Class3 {
 
                RenderAnimationDefinition.method903(new RSString[]{Class129.aClass94_1694, var4, Class130.aClass94_1698}, (byte)-84).method1554(Class38.aClass87_665.anApplet1219);
             } catch (Throwable var5) {
-               ;
             }
 
          }
@@ -222,7 +221,7 @@ final class Class3_Sub29 extends Class3 {
       }
    }
 
-   static final void method736(int var0, int var1) {
+   static void method736(int var0, int var1) {
       try {
          if(var1 <= 61) {
             method736(-60, -93);

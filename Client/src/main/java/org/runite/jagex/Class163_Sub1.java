@@ -13,7 +13,7 @@ class Class163_Sub1 extends Class163 {
    static int anInt2994;
 
 
-   static final void method2210(boolean var1) {
+   static void method2210(boolean var1) {
       try {
          Class58.method1194(-16385);
          if(30 == Class143.loadingStage || Class143.loadingStage == 25) {
@@ -42,7 +42,7 @@ class Class163_Sub1 extends Class163 {
       }
    }
 
-   static final void method2211(int var0) {
+   static void method2211(int var0) {
       try {
          if(var0 == -48) {
             if(null == Class67.aClass11_1017) {

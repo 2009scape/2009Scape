@@ -92,7 +92,7 @@ final class Class3_Sub28_Sub17_Sub2 extends Class3_Sub28_Sub17 {
       var9.glLoadIdentity();
    }
 
-   private final void method707() {
+   private void method707() {
       if(this.anIntArray4085 == null) {
          this.anIntArray4085 = new int[256];
          javax.media.opengl.GL var1 = HDToolKit.gl;
@@ -127,7 +127,7 @@ final class Class3_Sub28_Sub17_Sub2 extends Class3_Sub28_Sub17 {
       this.method707();
    }
 
-   private final void method708(byte[][] var1) {
+   private void method708(byte[][] var1) {
       if(this.anInt4084 == -1) {
          this.anInt4087 = 0;
 

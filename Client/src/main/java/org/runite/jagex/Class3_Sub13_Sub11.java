@@ -36,7 +36,7 @@ final class Class3_Sub13_Sub11 extends Class3_Sub13 {
       }
    }
 
-   private final void method218(int var2) {
+   private void method218(int var2) {
       try {
          this.anInt3134 = 4080 & var2 >> 4;
          this.anInt3135 = var2 << 4 & 4080;
@@ -73,7 +73,7 @@ final class Class3_Sub13_Sub11 extends Class3_Sub13 {
       }
    }
 
-   static final void method219(boolean var0) {
+   static void method219(boolean var0) {
       try {
          if(var0) {
             if(-1 != Class3_Sub28_Sub12.anInt3655) {
@@ -119,7 +119,7 @@ final class Class3_Sub13_Sub11 extends Class3_Sub13 {
       }
    }
 
-   static final void method220(int var1, int var2) {
+   static void method220(int var1, int var2) {
       try {
          Class46.anInt741 = Class115.aClass86ArrayArray1581[var2][var1].anInt1185;
          Class3_Sub13_Sub22.anInt3274 = Class115.aClass86ArrayArray1581[var2][var1].anInt1181;
@@ -134,7 +134,7 @@ final class Class3_Sub13_Sub11 extends Class3_Sub13 {
       }
    }
 
-   static final void method221(int var0, RSString var1, RSString var2, RSString var3, int var4) {
+   static void method221(int var0, RSString var1, RSString var2, RSString var3, int var4) {
       try {
          Class3_Sub28_Sub12.sendGameMessage(var0, var4, var1, var3, var2);
       } catch (RuntimeException var6) {
@@ -157,7 +157,7 @@ final class Class3_Sub13_Sub11 extends Class3_Sub13 {
       }
    }
 
-   static final boolean method222(int var0, int var1, int var2, int var3, int var4, int var5) {
+   static boolean method222(int var0, int var1, int var2, int var3, int var4, int var5) {
       int var6;
       int var7;
       if(var1 == var2 && var3 == var4) {

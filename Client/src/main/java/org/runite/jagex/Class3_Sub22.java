@@ -32,7 +32,7 @@ final class Class3_Sub22 extends Class3 {
    static int anInt2529;
 
 
-   static final void method398(int var0, int var1, int var2, int var3, int var4, byte[][][] var5, int[] var6, int[] var7, int[] var8, int[] var9, int[] var10, int var11, byte var12, int var13, int var14) {
+   static void method398(int var0, int var1, int var2, int var3, int var4, byte[][][] var5, int[] var6, int[] var7, int[] var8, int[] var9, int[] var10, int var11, byte var12, int var13, int var14) {
       if(var0 < 0) {
          var0 = 0;
       } else if(var0 >= IOHandler.anInt1234 * 128) {
@@ -143,11 +143,11 @@ final class Class3_Sub22 extends Class3 {
       }
    }
 
-   static final void method400(long var0) {
+   static void method400(long var0) {
       try {
          if((long) 0 != var0) {
             Class3_Sub13_Sub1.outgoingBuffer.putOpcode(104);
-            Class3_Sub13_Sub1.outgoingBuffer.putLong(var0, 0 ^ -2037491440);
+            Class3_Sub13_Sub1.outgoingBuffer.putLong(var0, -2037491440);
             ++Class163_Sub3.anInt3001;
          }
       } catch (RuntimeException var4) {
@@ -167,7 +167,7 @@ final class Class3_Sub22 extends Class3 {
       }
    }
 
-   static final void method402() {
+   static void method402() {
       try {
          if(Signlink.javaVendor.toLowerCase().indexOf("microsoft") == -1) {
             if(null == Signlink.aMethod1222) {
@@ -212,7 +212,7 @@ final class Class3_Sub22 extends Class3 {
       }
    }
 
-   static final void method403() {
+   static void method403() {
       GL var0 = HDToolKit.gl;
       var0.glDisableClientState('\u8076');
       HDToolKit.method1837(false);
@@ -237,7 +237,7 @@ final class Class3_Sub22 extends Class3 {
       HDToolKit.method1830();
    }
 
-   static final Class75_Sub4 method404(RSByteBuffer var1) {
+   static Class75_Sub4 method404(RSByteBuffer var1) {
       try {
          return (byte) -110 > -55?(Class75_Sub4)null:new Class75_Sub4(var1.getShort((byte)93), var1.getShort((byte)55), var1.getShort((byte)81), var1.getShort((byte)95), var1.getTriByte((byte)124), var1.getTriByte((byte)120), var1.getByte((byte)-103));
       } catch (RuntimeException var3) {

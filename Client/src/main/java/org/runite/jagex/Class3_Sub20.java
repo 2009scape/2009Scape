@@ -12,7 +12,7 @@ final class Class3_Sub20 extends Class3 {
    static int anInt2488 = 0;
    int anInt2489;
 
-   static final void method388(byte var0) {
+   static void method388(byte var0) {
       try {
          //int var1 = 44 / ((-2 - var0) / 52);
          if(Class3_Sub13_Sub19.aClass94_3220 != null) {
@@ -25,7 +25,7 @@ final class Class3_Sub20 extends Class3 {
       }
    }
    
-   static final void method389() {
+   static void method389() {
 	      try {
 	         Class32.method995();
 	         Class49.aClass3_Sub28_Sub16_812 = null;
@@ -78,7 +78,7 @@ final class Class3_Sub20 extends Class3 {
 	      }
 	   }
 
-   static final void method390(boolean var0, int var1, int var2, int var3, byte var4, int var5, int var6) {
+   static void method390(boolean var0, int var1, int var2, int var3, byte var4, int var5, int var6) {
       try {
          Class3_Sub28_Sub10.anInt3631 = var3;
          Class3_Sub13_Sub34.anInt3414 = var2;
@@ -120,7 +120,7 @@ final class Class3_Sub20 extends Class3 {
       }
    }
 
-   static final void method392(CacheIndex var0, CacheIndex var1, CacheIndex var3) {
+   static void method392(CacheIndex var0, CacheIndex var1, CacheIndex var3) {
       try {
          AnimationDefinition.aClass153_1860 = var1;
         // int var4 = -110 / ((-7 - var2) / 43);

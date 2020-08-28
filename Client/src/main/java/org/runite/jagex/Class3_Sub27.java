@@ -88,7 +88,7 @@ final class Class3_Sub27 extends Class3 {
       }
    }
 
-   static final Class3_Sub27 method517(CacheIndex var0, int var1, int var2) {
+   static Class3_Sub27 method517(CacheIndex var0, int var1, int var2) {
       byte[] var3 = var0.getFile(var1, var2);
       return var3 == null?null:new Class3_Sub27(new RSByteBuffer(var3));
    }

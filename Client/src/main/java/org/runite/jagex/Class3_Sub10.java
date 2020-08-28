@@ -8,16 +8,16 @@ final class Class3_Sub10 extends Class3 {
    RSString aClass94_2341;
 
 
-   static final void method138(RSString var0) {
+   static void method138(RSString var0) {
       try {
-         Class66.method1250(0 ^ 93, false);
+         Class66.method1250(93, false);
          Class75.method1339(var0, 0 + 0);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "hb.F(" + (var0 != null?"{...}":"null") + ',' + 0 + ')');
       }
    }
 
-   static final void method139(int var0) {
+   static void method139(int var0) {
       try {
          if(var0 >= 63) {
             Canvas_Sub1.aClass93_21.method1524();
@@ -30,7 +30,7 @@ final class Class3_Sub10 extends Class3 {
       }
    }
 
-   static final boolean method140(int var0) {
+   static boolean method140(int var0) {
       try {
          int var2 = -11 / ((-29 - 20) / 49);
          return (var0 >= 0 && Class3_Sub24_Sub4.aBooleanArray3503.length > var0) && Class3_Sub24_Sub4.aBooleanArray3503[var0];
@@ -39,7 +39,7 @@ final class Class3_Sub10 extends Class3 {
       }
    }
 
-   static final RenderAnimationDefinition getRenderAnimationDefinition(int renderAnimationId) {
+   static RenderAnimationDefinition getRenderAnimationDefinition(int renderAnimationId) {
       try {
          RenderAnimationDefinition def = (RenderAnimationDefinition)Class154.aClass93_1955.get((long)renderAnimationId);
          if(def == null) {
@@ -62,7 +62,7 @@ final class Class3_Sub10 extends Class3 {
       }
    }
 
-   static final void method142() {
+   static void method142() {
       try {
          if(!true) {
             aByteArrayArrayArray2339 = (byte[][][])((byte[][][])null);

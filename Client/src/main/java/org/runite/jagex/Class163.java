@@ -23,7 +23,7 @@ class Class163 {
       }
    }
 
-   static final void method2209(byte var0, int var1, int var2) {
+   static void method2209(byte var0, int var1, int var2) {
       try {
          if(var0 >= -99) {
             method2209((byte)57, -14, 120);

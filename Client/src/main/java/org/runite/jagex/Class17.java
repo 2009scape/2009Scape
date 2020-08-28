@@ -13,7 +13,7 @@ final class Class17 {
       new Class127();
    }
 
-   static final void method904(int var0, Class140_Sub4 var1) {
+   static void method904(int var0, Class140_Sub4 var1) {
       try {
          if(var1.anInt2779 != 0) {
             RenderAnimationDefinition var2 = var1.method1965();

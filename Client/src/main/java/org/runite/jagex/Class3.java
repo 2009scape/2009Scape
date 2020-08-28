@@ -33,7 +33,7 @@ class Class3 {
       }
    }
 
-   static final void method84(RSString var0, int var1) {
+   static void method84(RSString var0, int var1) {
       try {
          int var2 = Class100.method1602(var0);
          if(var2 != -1) {
@@ -44,7 +44,7 @@ class Class3 {
       }
    }
 
-   static final void method85() {
+   static void method85() {
       try {
          int var1 = -122 % (((byte) -114 - -63) / 48);
          Class136.aClass93_1772.method1523((byte)-99);
@@ -71,7 +71,7 @@ class Class3 {
       }
    }
 
-   static final void method87(int var0, int var1) {
+   static void method87(int var0, int var1) {
       try {
          if(var0 >= -20) {
             method83((byte)44);
@@ -94,7 +94,7 @@ class Class3 {
       }
    }
 
-   static final Class106[] method88() {
+   static Class106[] method88() {
       try {
          if((byte) 28 != 28) {
             aBooleanArray73 = (boolean[])null;
@@ -142,7 +142,7 @@ class Class3 {
       }
    }
 
-   static final void method89(CacheIndex var1, CacheIndex var2, CacheIndex var3, CacheIndex var4) {
+   static void method89(CacheIndex var1, CacheIndex var2, CacheIndex var3, CacheIndex var4) {
       try {
          Class12.aClass153_323 = var2;
          Class97.aClass153_1378 = var1;

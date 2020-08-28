@@ -8,13 +8,12 @@ final class Class140_Sub2 extends GameObject {
    static boolean aBoolean2705 = true;
    private int anInt2706 = 0;
    static RSString aClass94_2707 = RSString.createRSString("<br>(X100(U(Y");
-   private int anInt2708;
+   private final int anInt2708;
    static int[] anIntArray2709 = new int[]{0, 1, 3, 7, 15, 31, 63, 127, 255, 511, 1023, 2047, 4095, 8191, 16383, 32767, '\uffff', 131071, 262143, 524287, 1048575, 2097151, 4194303, 8388607, 16777215, 33554431, 67108863, 134217727, 268435455, 536870911, 1073741823, Integer.MAX_VALUE, -1};
    int anInt2710;
    private AnimationDefinition aClass142_2711;
    int anInt2712;
    static boolean aBoolean2713;
-   private int anInt2714 = -1;
    private int anInt2715 = -32768;
    int anInt2716;
    int anInt2717;
@@ -22,7 +21,7 @@ final class Class140_Sub2 extends GameObject {
    private int anInt2719 = 0;
 
 
-   private final Model method1949() {
+   private Model method1949() {
       try {
          GraphicDefinition var2 = RenderAnimationDefinition.getGraphicDefinition((byte)42, this.anInt2708);
          if(false) {
@@ -33,7 +32,8 @@ final class Class140_Sub2 extends GameObject {
          if(this.aBoolean2718) {
             var3 = var2.method966(-1, -1, 0);
          } else {
-            var3 = var2.method966(this.anInt2714, this.anInt2706, this.anInt2719);
+            int anInt2714 = -1;
+            var3 = var2.method966(anInt2714, this.anInt2706, this.anInt2719);
          }
 
          return var3 == null?null:var3;
@@ -42,7 +42,7 @@ final class Class140_Sub2 extends GameObject {
       }
    }
 
-   static final void method1950(Class140_Sub4 var0, boolean var1) {
+   static void method1950(Class140_Sub4 var0, boolean var1) {
       try {
          int var2 = var0.anInt2800 - Class44.anInt719;
          int var3 = 128 * var0.anInt2784 - -(64 * var0.getSize());
@@ -73,7 +73,7 @@ final class Class140_Sub2 extends GameObject {
       }
    }
 
-   static final int method1951(int var0) {
+   static int method1951(int var0) {
       try {
          if((byte) -115 > -67) {
             aBoolean2713 = false;
@@ -85,7 +85,7 @@ final class Class140_Sub2 extends GameObject {
       }
    }
 
-   static final void method1952(int var0, int var2, int var3, int var4, int var5, int var6, int var7) {
+   static void method1952(int var0, int var2, int var3, int var4, int var5, int var6, int var7) {
       try {
          int var8;
          int var9;
@@ -138,7 +138,7 @@ final class Class140_Sub2 extends GameObject {
       }
    }
 
-   static final WorldListEntry method1953() {
+   static WorldListEntry method1953() {
       try {
          if((byte) 124 <= 97) {
             anIntArray2709 = (int[])null;
@@ -206,7 +206,7 @@ final class Class140_Sub2 extends GameObject {
       }
    }
 
-   static final void method1956(int var0, int var1, int var2, int var3) {
+   static void method1956(int var0, int var1, int var2, int var3) {
       Class3_Sub2 var4 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var0][var1][var2];
       if(var4 != null) {
          Class19 var5 = var4.aClass19_2233;

@@ -53,7 +53,7 @@ final class GraphicDefinition {
 		}
 	}
 
-	private final void method965(RSByteBuffer var1, int var2) {
+	private void method965(RSByteBuffer var1, int var2) {
 		try {
 			if(var2 == 1) {
 				this.anInt541 = var1.getShort(128 + -127);
@@ -165,7 +165,7 @@ final class GraphicDefinition {
 		}
 	}
 
-	static final void method967(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
+	static void method967(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
 		try {
 			if(Canvas_Sub2.loadInterface(var5)) {
 				if(var2 == 2) {

@@ -14,7 +14,7 @@ final class Class136 {
    static int anInt1780;
 
 
-   static final void method1814(int var0, int var1, int var2, int var3, int var4, int var8, int var9, int var10) {
+   static void method1814(int var0, int var1, int var2, int var3, int var4, int var8, int var9, int var10) {
       try {
          int var11 = var2 - var4;
          int var13 = -1;
@@ -103,7 +103,7 @@ final class Class136 {
       }
    }
 
-   static final void method1816(int var0, int var1) {
+   static void method1816(int var0, int var1) {
       try {
          if(var1 == -7) {
             Class129_Sub1.anIntArray2696 = new int[var0];

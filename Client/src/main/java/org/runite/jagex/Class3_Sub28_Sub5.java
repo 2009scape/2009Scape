@@ -15,7 +15,7 @@ final class Class3_Sub28_Sub5 extends Node {
    static volatile boolean aBoolean3593 = false;
 
 
-   static final void method556(int var0, int var1, int var2, byte var3, int var4, int var5) {
+   static void method556(int var0, int var1, int var2, byte var3, int var4, int var5) {
       try {
          if(var3 < -93) {
             int var8 = var2 * var2;
@@ -84,7 +84,7 @@ final class Class3_Sub28_Sub5 extends Node {
       }
    }
 
-   static final long method557(int var0, int var1, int var2) {
+   static long method557(int var0, int var1, int var2) {
       Class3_Sub2 var3 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var0][var1][var2];
       if (var3 != null) {
          for (int var4 = 0; var4 < var3.anInt2223; ++var4) {
@@ -120,7 +120,7 @@ final class Class3_Sub28_Sub5 extends Node {
       }
    }
 
-   static final void method560() {
+   static void method560() {
       try {
          for(int var1 = 0; var1 < 5; ++var1) {
             Class104.aBooleanArray2169[var1] = false;

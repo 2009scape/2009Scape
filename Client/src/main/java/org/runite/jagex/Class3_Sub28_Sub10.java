@@ -22,7 +22,7 @@ abstract class Class3_Sub28_Sub10 extends Node {
       }
    }
 
-   static final void method589(int var0, int var1, int var2) {
+   static void method589(int var0, int var1, int var2) {
       Class3_Sub13_Sub21.aBoolean3261 = true;
       Class91.anInt1302 = var0;
       Class49.anInt819 = var1;
@@ -31,7 +31,7 @@ abstract class Class3_Sub28_Sub10 extends Node {
       Class66.anInt999 = -1;
    }
 
-   static final boolean method590(byte var0, int var1, int var2) {
+   static boolean method590(byte var0, int var1, int var2) {
       try {
          if(11 == var2) {
             var2 = 10;

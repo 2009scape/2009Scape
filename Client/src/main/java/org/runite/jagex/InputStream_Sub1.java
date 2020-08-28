@@ -22,7 +22,7 @@ final class InputStream_Sub1 extends InputStream {
       }
    }
 
-   static final int[] method62() {
+   static int[] method62() {
       try {
          if(14585 != 14585) {
             anInt40 = 43;
@@ -45,7 +45,7 @@ final class InputStream_Sub1 extends InputStream {
       }
    }
 
-   static final Class3_Sub13 method63(RSByteBuffer var1) {
+   static Class3_Sub13 method63(RSByteBuffer var1) {
       try {
          var1.getByte((byte)-114);
          int var2 = var1.getByte((byte)-51);
@@ -73,7 +73,7 @@ final class InputStream_Sub1 extends InputStream {
       }
    }
 
-   static final int method64(int var1) {
+   static int method64(int var1) {
       try {
          return var1 >>> 8;
       } catch (RuntimeException var3) {

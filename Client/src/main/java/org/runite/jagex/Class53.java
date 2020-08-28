@@ -21,7 +21,7 @@ final class Class53 {
       }
    }
 
-   static final int method1170(byte var0, int var1) {
+   static int method1170(byte var0, int var1) {
       try {
          int var2 = -77 / ((-34 - var0) / 52);
          return var1 >>> 8;
@@ -30,7 +30,7 @@ final class Class53 {
       }
    }
 
-   static final void method1171(int var0, int var1, int var2, int var3, int var4, RSInterface var5) {
+   static void method1171(int var0, int var1, int var2, int var3, int var4, RSInterface var5) {
       try {
          int var7 = var3 * var3 + var4 * var4;
          if(var7 <= 360000) {
@@ -66,7 +66,7 @@ final class Class53 {
       }
    }
 
-   static final String method1172(Throwable var1) throws IOException {
+   static String method1172(Throwable var1) throws IOException {
       String var2;
       if(var1 instanceof RuntimeException_Sub1) {
          RuntimeException_Sub1 var3 = (RuntimeException_Sub1)var1;
@@ -116,7 +116,7 @@ final class Class53 {
       }
    }
 
-   static final void parseWorldList(RSByteBuffer buffer, int var1) {
+   static void parseWorldList(RSByteBuffer buffer, int var1) {
       try {
          int var2 = buffer.getSmart();
          Class119.countries = new WorldListCountry[var2];
@@ -155,7 +155,7 @@ final class Class53 {
       }
    }
 
-   static final RSString method1174(RSInterface var0, byte var1) {
+   static RSString method1174(RSInterface var0, byte var1) {
       try {
          int var2 = 49 % ((var1 - 22) / 46);
          return Client.method44(var0).method101(-69) != 0 ?(null != var0.aClass94_245 && var0.aClass94_245.trim(1).length(-45) != 0?var0.aClass94_245:(Class69.aBoolean1040?RuntimeException_Sub1.aClass94_2116:null)):null;

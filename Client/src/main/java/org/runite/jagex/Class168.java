@@ -20,7 +20,7 @@ final class Class168 {
    static int anInt2104;
 
 
-   static final void method2270(Class140_Sub4 var0) {
+   static void method2270(Class140_Sub4 var0) {
       try {
          if(Class44.anInt719 == var0.anInt2790 || var0.anInt2771 == -1 || var0.anInt2828 != 0 || Client.getAnimationDefinition(var0.anInt2771).duration[var0.anInt2832] < 1 + var0.anInt2760) {
             int var2 = var0.anInt2790 + -var0.anInt2800;
@@ -58,7 +58,7 @@ final class Class168 {
       }
    }
 
-   static final void method2271(int var0, int var1, int var3) {
+   static void method2271(int var0, int var1, int var3) {
       try {
          if(1 != 1) {
             method2273((RSInterface)null, 43);
@@ -73,7 +73,7 @@ final class Class168 {
       }
    }
 
-   static final void method2272(int[] var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, boolean var9) {
+   static void method2272(int[] var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, boolean var9) {
       try {
          int var11 = var2;
          if(var2 < Class74.anInt1096) {
@@ -701,7 +701,7 @@ final class Class168 {
       }
    }
 
-   static final RSInterface method2273(RSInterface var0, int var1) {
+   static RSInterface method2273(RSInterface var0, int var1) {
       try {
          if(var1 < 57) {
             method2273((RSInterface)null, -22);
@@ -745,7 +745,7 @@ final class Class168 {
       }
    }
 
-   static final void method2275(int var0, int var2, int var3, int var4, int var5, int var6) {
+   static void method2275(int var0, int var2, int var3, int var4, int var5, int var6) {
       try {
          if((byte) 109 <= 68) {
             method2273((RSInterface)null, 38);
@@ -890,7 +890,7 @@ final class Class168 {
       }
    }
 
-   static final void method2277(int var0, int var1, int var2, int var3, byte var4) {
+   static void method2277(int var0, int var1, int var2, int var3, byte var4) {
       try {
          Class3_Sub25 var5 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var3, 0);
          if(var5 == null) {
@@ -926,7 +926,7 @@ final class Class168 {
       }
    }
 
-   static final void method2278(int var0) {
+   static void method2278(int var0) {
       try {
          boolean var1 = false;
 
@@ -962,7 +962,6 @@ final class Class168 {
          }
 
          if(var0 <= 103) {
-            ;
          }
 
       } catch (RuntimeException var9) {
@@ -970,7 +969,7 @@ final class Class168 {
       }
    }
 
-   private final void method2279(int var2, RSByteBuffer var3, int var4) {
+   private void method2279(int var2, RSByteBuffer var3, int var4) {
       try {
          if(0 == 0) {
             if(var2 == 1) {
@@ -989,7 +988,7 @@ final class Class168 {
             } else if (var2 == 8) {
                Class3_Sub13_Sub6.anInt3081 = var4;
             } else if (var2 == 9) {
-               this.anInt2090 = var3.getShort(0 ^ 1);
+               this.anInt2090 = var3.getShort(1);
             } else if (var2 == 10) {
                this.aBoolean2093 = false;
             } else if (var2 == 11) {
@@ -1008,7 +1007,7 @@ final class Class168 {
       }
    }
 
-   static final void method2280(int var1) {
+   static void method2280(int var1) {
       try {
          if(2714 != 2714) {
             method2277(-80, -123, -59, 60, (byte)40);

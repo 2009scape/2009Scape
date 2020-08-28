@@ -3,13 +3,13 @@ package org.runite.jagex;
 final class Class91 {
 
    static RSString[] aClass94Array1299 = new RSString[8];
-   private int anInt1300;
+   private final int anInt1300;
    static RSString aClass94_1301 = RSString.createRSString("(U3");
    static int anInt1302 = 0;
-   private int anInt1303;
+   private final int anInt1303;
    int[][] anIntArrayArray1304;
    static Class33 aClass33_1305;
-   private int anInt1306;
+   private final int anInt1306;
    static int anInt1307;
    static byte aByte1308;
    private int anInt1309;
@@ -325,7 +325,7 @@ final class Class91 {
       }
    }
 
-   private final boolean method1487(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
+   private boolean method1487(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
       try {
          if(var2 + var3 > var8 && var3 < var1 + var8) {
             if((byte) -125 != -125) {
@@ -666,7 +666,7 @@ final class Class91 {
       }
    }
 
-   private final void method1490(int var1, int var3, int var4) {
+   private void method1490(int var1, int var3, int var4) {
       try {
          if((byte) -80 != -80) {
             this.method1498(false, 25, 78, -38, 60, 54, 58, 117, 109);
@@ -833,7 +833,7 @@ final class Class91 {
       }
    }
 
-   static final void method1493(int var0, int var1, RSInterface var2, int var3) {
+   static void method1493(int var0, int var1, RSInterface var2, int var3) {
       try {
          if((byte) 59 == 59) {
             if(HDToolKit.highDetail) {
@@ -862,7 +862,7 @@ final class Class91 {
       }
    }
 
-   private final boolean method1494(int var1, int var2, int var3, int var4, int var6, int var7, int var8, int var9, int var10) {
+   private boolean method1494(int var1, int var2, int var3, int var4, int var6, int var7, int var8, int var9, int var10) {
       try {
          int var11 = var7 + var9;
          int var12 = var8 + var10;
@@ -946,7 +946,7 @@ final class Class91 {
       }
    }
 
-   static final boolean method1495(int var0, int var1, int var2, int var3, int var4) {
+   static boolean method1495(int var0, int var1, int var2, int var3, int var4) {
       int var5 = var3 * Class3_Sub13_Sub34.anInt3417 + var0 * Class3_Sub13_Sub13.anInt3153 >> 16;
       int var6 = var3 * Class3_Sub13_Sub13.anInt3153 - var0 * Class3_Sub13_Sub34.anInt3417 >> 16;
       int var7 = var1 * Class60.anInt936 + var6 * Class69.anInt1037 >> 16;
@@ -1166,7 +1166,7 @@ final class Class91 {
       }
    }
 
-   private final void method1501(byte var1, int var2, int var3, int var4) {
+   private void method1501(byte var1, int var2, int var3, int var4) {
       try {
          if(var1 >= 18) {
             this.anIntArrayArray1304[var3][var2] = Class3_Sub28_Sub15.method633(this.anIntArrayArray1304[var3][var2], ~var4);

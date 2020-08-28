@@ -6,7 +6,7 @@ final class Class77 {
    static Class52 aClass52_1112 = new Class52();
 
 
-   static final LDIndexedSprite method1364() {
+   static LDIndexedSprite method1364() {
       try {
          LDIndexedSprite var1 = new LDIndexedSprite(Class3_Sub15.anInt2426, Class133.anInt1748, Class164.anIntArray2048[0], RSByteBuffer.anIntArray2591[0], Class140_Sub7.anIntArray2931[0], Class3_Sub13_Sub6.anIntArray3076[0], Class163_Sub1.aByteArrayArray2987[0], Class3_Sub13_Sub38.spritePalette);
          if((byte) 82 <= 55) {
@@ -32,7 +32,7 @@ final class Class77 {
       }
    }
 
-   static final void method1366(int var0, int var1) {
+   static void method1366(int var0, int var1) {
       try {
          if(var0 != 104) {
             method1367(114, 95, -80, (byte)-90, -2, 56);
@@ -44,7 +44,7 @@ final class Class77 {
       }
    }
 
-   static final void method1367(int var0, int var1, int var2, byte var3, int var4, int var5) {
+   static void method1367(int var0, int var1, int var2, byte var3, int var4, int var5) {
       try {
          Class3_Sub13_Sub23_Sub1.method282(Class38.anIntArrayArray663[var2++], var5, 92, var1, var0);
          Class3_Sub13_Sub23_Sub1.method282(Class38.anIntArrayArray663[var4--], var5, 97, var1, var0);
@@ -60,7 +60,7 @@ final class Class77 {
       }
    }
 
-   static final void method1368() {
+   static void method1368() {
       try {
          ++Class163_Sub3.anInt3001;
          int var1 = -126 / ((-26 - -90) / 52);

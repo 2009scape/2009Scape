@@ -3,30 +3,30 @@ package org.runite.jagex;
 final class Class151_Sub1 extends Class151 {
 
    static Class3_Sub30_Sub1 aClass3_Sub30_Sub1_2942 = new Class3_Sub30_Sub1();
-   private Class41 aClass41_2943;
+   private final Class41 aClass41_2943;
    private Class62 aClass62_2944;
-   private Class130 aClass130_2946 = new Class130(16);
-   private int anInt2947;
+   private final Class130 aClass130_2946 = new Class130(16);
+   private final int anInt2947;
    private int anInt2948 = 0;
    private byte[] aByteArray2949;
    private Class3_Sub28_Sub10 aClass3_Sub28_Sub10_2950;
    static int[] anIntArray2952 = new int[128];
-   private Class66 aClass66_2953;
+   private final Class66 aClass66_2953;
     Class41 aClass41_2954;
-   private int anInt2955;
-   private Class73 aClass73_2956;
-   private int anInt2957;
+   private final int anInt2955;
+   private final Class73 aClass73_2956;
+   private final int anInt2957;
    static int anInt2958 = 0;
    private boolean aBoolean2962;
-   private Class61 aClass61_2963 = new Class61();
+   private final Class61 aClass61_2963 = new Class61();
    private int anInt2964 = 0;
    private boolean aBoolean2965;
    private Class61 aClass61_2966;
    private long aLong2967 = 0L;
-   private boolean aBoolean2968;
+   private final boolean aBoolean2968;
 
 
-   static final void updateLocalPosition() {
+   static void updateLocalPosition() {
       try {
          GraphicDefinition.incomingBuffer.setBitAccess((byte)118);
          int opcode = GraphicDefinition.incomingBuffer.getBits((byte)-11, 1);
@@ -204,7 +204,7 @@ final class Class151_Sub1 extends Class151 {
       }
    }
 
-   static final boolean method2103(int var0, int var1) {
+   static boolean method2103(int var0, int var1) {
       try {
          return var1 >= -78 || (var0 == 198 || 230 == var0 || var0 == 156 || var0 == 140 || 223 == var0);
       } catch (RuntimeException var3) {
@@ -212,7 +212,7 @@ final class Class151_Sub1 extends Class151 {
       }
    }
 
-   static final void method2104(RSInterface var0, boolean var1, int var2) {
+   static void method2104(RSInterface var0, boolean var1, int var2) {
       try {
          int var3 = 57 % ((var2 - -58) / 47);
          int var4 = var0.anInt240 != 0?var0.anInt240:var0.anInt168;
@@ -422,7 +422,7 @@ final class Class151_Sub1 extends Class151 {
       }
    }
 
-   private final Class3_Sub28_Sub10 method2109(int var1, int archiveIndex, int var3) {
+   private Class3_Sub28_Sub10 method2109(int var1, int archiveIndex, int var3) {
       try {
          Object var4 = (Class3_Sub28_Sub10)this.aClass130_2946.method1780((long)archiveIndex, 0);
          if(null != var4 && var1 == 0 && !((Class3_Sub28_Sub10)var4).aBoolean3628 && ((Class3_Sub28_Sub10)var4).aBoolean3632) {
@@ -488,7 +488,6 @@ final class Class151_Sub1 extends Class151 {
                         if(('\uffff' & this.aClass62_2944.archiveRevisions[archiveIndex]) == var8) {
                            if(1 != this.aByteArray2949[archiveIndex]) {
                               if(this.aByteArray2949[archiveIndex] != 0) {
-                                 ;
                               }
 
                               ++this.anInt2948;

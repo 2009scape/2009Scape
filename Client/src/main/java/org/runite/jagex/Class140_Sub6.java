@@ -5,12 +5,12 @@ final class Class140_Sub6 extends GameObject {
    static int accRegistryPort;
    private double aDouble2895;
    private int anInt2896 = 0;
-   private int anInt2897;
+   private final int anInt2897;
    private int anInt2898 = -1;
    int anInt2899;
    double aDouble2900;
    static int anInt2901;
-   private int anInt2902;
+   private final int anInt2902;
    int anInt2903;
    private boolean aBoolean2904 = false;
    static int anInt2905 = 0;
@@ -19,23 +19,23 @@ final class Class140_Sub6 extends GameObject {
    private double aDouble2908;
    private Class127_Sub1 aClass127_Sub1_2909;
    static boolean aBoolean2910 = true;
-   private int anInt2911;
+   private final int anInt2911;
    private int anInt2912 = -32768;
    private double aDouble2913;
    double aDouble2914;
-   private int anInt2915;
-   private int anInt2916;
+   private final int anInt2915;
+   private final int anInt2916;
    private int anInt2917;
    private double aDouble2918;
    int anInt2919;
    double aDouble2920;
    private double aDouble2921;
    private int anInt2922 = 0;
-   private AnimationDefinition aClass142_2923;
+   private final AnimationDefinition aClass142_2923;
    int anInt2924;
    int anInt2925;
    static volatile long aLong2926 = 0L;
-   private int anInt2927;
+   private final int anInt2927;
 
 
    public static void method2019(boolean var0) {
@@ -48,7 +48,7 @@ final class Class140_Sub6 extends GameObject {
       }
    }
 
-   static final void method2020(int var0, ObjectDefinition var1, int var3, int var4) {
+   static void method2020(int var0, ObjectDefinition var1, int var3, int var4) {
       try {
          Class3_Sub9 var5 = (Class3_Sub9)Class3.aClass61_78.method1222();
          if((byte) -73 != -73) {
@@ -79,7 +79,7 @@ final class Class140_Sub6 extends GameObject {
       }
    }
 
-   static final boolean method2021(byte var0, int var1) {
+   static boolean method2021(byte var0, int var1) {
       try {
          if(var0 > -63) {
             anInt2905 = 66;
@@ -93,7 +93,7 @@ final class Class140_Sub6 extends GameObject {
 
    final void method1867(int var1, int var2, int var3, int var4, int var5) {}
 
-   private final Model method2022() {
+   private Model method2022() {
       try {
          if(-126 >= -6) {
             return (Model)null;
@@ -201,7 +201,7 @@ final class Class140_Sub6 extends GameObject {
       }
    }
 
-   static final void method2025() {
+   static void method2025() {
       try {
          if((byte) -62 <= -25) {
             Class3_Sub28_Sub7_Sub1.aClass93_4043.method1522(-128, 5);
@@ -221,7 +221,7 @@ final class Class140_Sub6 extends GameObject {
       }
    }
 
-   static final void method2026(int interfaceHash, int amount, int itemId) {
+   static void method2026(int interfaceHash, int amount, int itemId) {
       try {
          if((byte) 122 > 114) {
             Class3_Sub28_Sub6 var4 = Class3_Sub24_Sub3.method466(4, 9, interfaceHash);
@@ -234,7 +234,7 @@ final class Class140_Sub6 extends GameObject {
       }
    }
 
-   static final Class3_Sub28_Sub16[] getSprites(int archiveId, CacheIndex var3) {
+   static Class3_Sub28_Sub16[] getSprites(int archiveId, CacheIndex var3) {
       try {
     	 // System.out.println(archiveId);
          return !Class75_Sub4.method1351(var3, 0, archiveId, -30901)?null:((byte) 11 != 11?(Class3_Sub28_Sub16[])null:Class75_Sub3.method1347(-26802));
@@ -243,7 +243,7 @@ final class Class140_Sub6 extends GameObject {
       }
    }
 
-   static final int method2028(int var0, int var1) {
+   static int method2028(int var0, int var1) {
       try {
          int var3 = 96 / ((-122 - -75) / 33);
 

@@ -3,7 +3,7 @@ package org.runite.jagex;
 final class Class3_Sub13_Sub34 extends Class3_Sub13 {
 
    static int anInt3402;
-   private int[] anIntArray3403 = new int[3];
+   private final int[] anIntArray3403 = new int[3];
    private int anInt3404 = 409;
    private int anInt3405 = 4096;
    private int anInt3406 = 4096;
@@ -18,7 +18,7 @@ final class Class3_Sub13_Sub34 extends Class3_Sub13 {
    static int anInt3417;
 
 
-   static final void method328(RSByteBuffer var1) {
+   static void method328(RSByteBuffer var1) {
       try {
          if(-21774 != -21774) {
             method330(-115, 107, 60, 70, -41, 115);
@@ -79,7 +79,7 @@ final class Class3_Sub13_Sub34 extends Class3_Sub13 {
       }
    }
 
-   static final void method329(int var0, int var1, int var2, int var3, int var5, int var6, int var7) {
+   static void method329(int var0, int var1, int var2, int var3, int var5, int var6, int var7) {
       try {
          int var8 = 0;
          int var11 = -var3 + var0;
@@ -245,7 +245,7 @@ final class Class3_Sub13_Sub34 extends Class3_Sub13 {
       }
    }
 
-   static final void method330(int var0, int var1, int var2, int var3, int var4, int var5) {
+   static void method330(int var0, int var1, int var2, int var3, int var4, int var5) {
       try {
          if(var1 > -83) {
             anInt3415 = 115;
@@ -320,7 +320,7 @@ final class Class3_Sub13_Sub34 extends Class3_Sub13 {
       super(1, false);
    }
 
-   static final void method331(long var0, int var2) {
+   static void method331(long var0, int var2) {
       try {
          if(0L < var0) {
             if(0L == var0 % 10L) {
@@ -340,7 +340,7 @@ final class Class3_Sub13_Sub34 extends Class3_Sub13 {
       }
    }
 
-   static final int method332(int var0, int var1) {
+   static int method332(int var0, int var1) {
       try {
          if(var0 != 2) {
             anInt3414 = -40;
@@ -362,7 +362,7 @@ final class Class3_Sub13_Sub34 extends Class3_Sub13 {
       }
    }
 
-   static final boolean method334(CacheIndex var0) {
+   static boolean method334(CacheIndex var0) {
       try {
          return var0.method2144(0, NPC.anInt4001);
       } catch (RuntimeException var3) {

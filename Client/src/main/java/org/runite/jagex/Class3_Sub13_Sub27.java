@@ -10,7 +10,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
    private int anInt3343 = 6;
 
 
-   static final void method295(RSString var0, int var2) {
+   static void method295(RSString var0, int var2) {
       try {
          Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466((byte) 40 + -36, 2, var2);
          if((byte) 40 != 40) {
@@ -265,7 +265,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
       }
    }
 
-   static final void method297(long var0, int var2) {
+   static void method297(long var0, int var2) {
       try {
          if(var0 != 0L) {
             for(int var3 = 0; Class8.anInt104 > var3; ++var3) {
@@ -299,7 +299,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
       }
    }
 
-   static final Class3_Sub11[] method298(byte[][][] var0, byte[][] var1, byte[][] var2, int[][] var3, float[][] var4, int[][] var5, byte[][] var6, byte[][] var7, float[][] var8, int var9, float[][] var10, int[][] var11, int[][] var12, int[][] var13) {
+   static Class3_Sub11[] method298(byte[][][] var0, byte[][] var1, byte[][] var2, int[][] var3, float[][] var4, int[][] var5, byte[][] var6, byte[][] var7, float[][] var8, int var9, float[][] var10, int[][] var11, int[][] var12, int[][] var13) {
       try {
          int[][] var15 = new int[105][105];
 
@@ -379,7 +379,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
 
                   long var29 = (long)var23 << 32 | (long)var20;
                   if(var25 != var29 && var27 != var29) {
-                     var34 = (Class3_Sub11)var52.method1780(var29, 4096 ^ 4096);
+                     var34 = (Class3_Sub11)var52.method1780(var29, 0);
                      if(var34 == null) {
                         var34 = new Class3_Sub11((var23 >> 16) + -1, (float)('\uffff' & var23), false, null != var13, var20);
                         var52.method1779(1, var34, var29);
@@ -526,7 +526,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
                   Class25.method955(var13, var64 <= var64, Class3_Sub13_Sub4.method190(var46, var38, (byte)-92, var42), var50, var58, var56, var20, var17, var64 <= var63, var8, var69 >= var64, 2, var4, var22, Class3_Sub13_Sub4.method190(var46, var41, (byte)-80, var45), Class3_Sub13_Sub4.method190(var46, var40, (byte)-103, var44), var62 >= var64, var12, var10, var61, Class3_Sub13_Sub4.method190(var46, var39, (byte)-118, var43), var60);
                   int var49 = (var69 >> 16) - 1;
                   if(var32 != var67) {
-                     var50 = (Class3_Sub11)var52.method1780(var32, 4096 ^ 4096);
+                     var50 = (Class3_Sub11)var52.method1780(var32, 0);
                      Class25.method955(var13, var62 <= var64, Class3_Sub13_Sub4.method190(var47, var38, (byte)88, var42), var50, var58, var56, var20, var17, var63 >= var62, var8, var62 <= var69, 2, var4, var22, Class3_Sub13_Sub4.method190(var47, var41, (byte)-82, var45), Class3_Sub13_Sub4.method190(var47, var40, (byte)-113, var44), var62 <= var62, var12, var10, var61, Class3_Sub13_Sub4.method190(var47, var39, (byte)113, var43), var60);
                   }
 
@@ -571,7 +571,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
       super(2, false);
    }
 
-   static final void method299(int var0, int var1, int var2) {
+   static void method299(int var0, int var1, int var2) {
       try {
          if(var0 <= 92) {
             method297(-6L, -85);

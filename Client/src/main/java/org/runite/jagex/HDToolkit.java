@@ -30,12 +30,10 @@ final class HDToolKit {
    static boolean aBoolean1798 = true;
    private static boolean aBoolean1799 = false;
    private static GLContext aGLContext1800;
-   private static float aFloat1801 = 0.09765625F;
    static boolean aBoolean1802;
    private static int anInt1803 = -1;
    static GL gl;
    private static boolean aBoolean1805 = true;
-   private static int anInt1806;
    static boolean highDetail = false;
    private static float[] aFloatArray1808 = new float[16];
    static boolean aBoolean1809;
@@ -43,7 +41,6 @@ final class HDToolKit {
    static int anInt1811;
    private static int anInt1812;
    static boolean aBoolean1813;
-   private static int anInt1814;
    private static GLDrawable aGLDrawable1815;
    private static boolean aBoolean1816 = true;
    static boolean aBoolean1817;
@@ -53,7 +50,7 @@ final class HDToolKit {
    static boolean aBoolean1821;
 
 
-   private static final RSString method1820(String var0) {
+   private static RSString method1820(String var0) {
       byte[] var1;
       try {
          var1 = var0.getBytes("ISO-8859-1");
@@ -64,11 +61,11 @@ final class HDToolKit {
       return Class3_Sub13_Sub3.method178(var1, var1.length, 0);
    }
 
-   static final void method1821(int var0, int var1, int var2, int var3) {
+   static void method1821(int var0, int var1, int var2, int var3) {
       method1844(0, 0, anInt1820, anInt1811, var0, var1, 0.0F, 0.0F, var2, var3);
    }
 
-   static final void method1822() {
+   static void method1822() {
       Class3_Sub28_Sub4.method551(0, 0);
       method1836();
       method1856(1);
@@ -79,7 +76,7 @@ final class HDToolKit {
       method1823();
    }
 
-   static final void method1823() {
+   static void method1823() {
       if(aBoolean1788) {
          gl.glMatrixMode(5890);
          gl.glLoadIdentity();
@@ -89,7 +86,7 @@ final class HDToolKit {
 
    }
 
-   static final void method1824() {
+   static void method1824() {
       Class3_Sub28_Sub4.method551(0, 0);
       method1836();
       method1856(0);
@@ -100,7 +97,7 @@ final class HDToolKit {
       method1823();
    }
 
-   static final void method1825(float var0, float var1) {
+   static void method1825(float var0, float var1) {
       if(!aBoolean1799) {
          if(var0 != aFloat1797 || var1 != aFloat1794) {
             aFloat1797 = var0;
@@ -123,16 +120,15 @@ final class HDToolKit {
       }
    }
 
-   static final void method1826() {
+   static void method1826() {
       try {
          aGLDrawable1815.swapBuffers();
       } catch (Exception var1) {
-         ;
       }
 
    }
 
-   static final void method1827(boolean var0) {
+   static void method1827(boolean var0) {
       if(var0 != aBoolean1816) {
          if(var0) {
             gl.glEnable(2912);
@@ -144,7 +140,7 @@ final class HDToolKit {
       }
    }
 
-   static final void method1828() {
+   static void method1828() {
       Class3_Sub28_Sub4.method551(0, 0);
       method1836();
       method1856(0);
@@ -155,7 +151,7 @@ final class HDToolKit {
       method1823();
    }
 
-   private static final void method1829() {
+   private static void method1829() {
       aBoolean1799 = false;
       gl.glDisable(3553);
       anInt1803 = -1;
@@ -202,11 +198,11 @@ final class HDToolKit {
       Class68.method1275();
    }
 
-   static final void method1830() {
+   static void method1830() {
       gl.glDepthMask(true);
    }
 
-   static final void method1831(boolean var0) {
+   static void method1831(boolean var0) {
       if(var0 != aBoolean1805) {
          if(var0) {
             gl.glEnable(2929);
@@ -218,11 +214,11 @@ final class HDToolKit {
       }
    }
 
-   static final void method1832(float var0) {
+   static void method1832(float var0) {
       method1825(3000.0F, var0 * 1.5F);
    }
 
-   static final void method1833() {
+   static void method1833() {
       int[] var0 = new int[2];
       gl.glGetIntegerv(3073, var0, 0);
       gl.glGetIntegerv(3074, var0, 1);
@@ -241,7 +237,7 @@ final class HDToolKit {
       gl.glReadBuffer(var0[1]);
    }
 
-   static final void method1834(Canvas var0) {
+   static void method1834(Canvas var0) {
       try {
          if(!var0.isDisplayable()) {
             return;
@@ -256,12 +252,11 @@ final class HDToolKit {
          var3.destroy();
          var2.setRealized(false);
       } catch (Throwable var4) {
-         ;
       }
 
    }
 
-   static final void method1835() {
+   static void method1835() {
       Class3_Sub28_Sub4.method551(0, 0);
       method1836();
       bindTexture2D(-1);
@@ -271,7 +266,7 @@ final class HDToolKit {
       method1823();
    }
 
-   private static final void method1836() {
+   private static void method1836() {
       if(!aBoolean1799) {
          gl.glMatrixMode(5889);
          gl.glLoadIdentity();
@@ -283,7 +278,7 @@ final class HDToolKit {
       }
    }
 
-   static final void method1837(boolean var0) {
+   static void method1837(boolean var0) {
       if(var0 != aBoolean1796) {
          if(var0) {
             gl.glEnable(2896);
@@ -305,11 +300,11 @@ final class HDToolKit {
       aFloatArray1808 = null;
    }
 
-   static final float method1839() {
+   static float method1839() {
       return aFloat1794;
    }
 
-   private static final int method1840() {
+   private static int method1840() {
       int var0 = 0;
       aString1785 = gl.glGetString(7936);
       aString1786 = gl.glGetString(7937);
@@ -352,9 +347,9 @@ final class HDToolKit {
       gl.glGetIntegerv('\u84e2', var12, 0);
       anInt1789 = var12[0];
       gl.glGetIntegerv('\u8871', var12, 0);
-      anInt1814 = var12[0];
+      int anInt1814 = var12[0];
       gl.glGetIntegerv('\u8872', var12, 0);
-      anInt1806 = var12[0];
+      int anInt1806 = var12[0];
       if(anInt1789 < 2 || anInt1814 < 2 || anInt1806 < 2) {
          var0 |= 16;
       }
@@ -405,16 +400,15 @@ final class HDToolKit {
       }
    }
 
-   static final void method1841() {
+   static void method1841() {
       gl.glClear(256);
    }
 
-   static final void method1842() {
+   static void method1842() {
       if(gl != null) {
          try {
             Class101.method1609();
          } catch (Throwable var4) {
-            ;
          }
 
          gl = null;
@@ -428,13 +422,11 @@ final class HDToolKit {
                aGLContext1800.release();
             }
          } catch (Throwable var3) {
-            ;
          }
 
          try {
             aGLContext1800.destroy();
          } catch (Throwable var2) {
-            ;
          }
 
          aGLContext1800 = null;
@@ -444,7 +436,6 @@ final class HDToolKit {
          try {
             aGLDrawable1815.setRealized(false);
          } catch (Throwable var1) {
-            ;
          }
 
          aGLDrawable1815 = null;
@@ -454,7 +445,7 @@ final class HDToolKit {
       highDetail = false;
    }
 
-   static final void method1843(float var0, float var1) {
+   static void method1843(float var0, float var1) {
       gl.glMatrixMode(5890);
       if(aBoolean1788) {
          gl.glLoadIdentity();
@@ -465,13 +456,14 @@ final class HDToolKit {
       aBoolean1788 = true;
    }
 
-   static final void method1844(int var0, int var1, int var2, int var3, int var4, int var5, float var6, float var7, int var8, int var9) {
+   static void method1844(int var0, int var1, int var2, int var3, int var4, int var5, float var6, float var7, int var8, int var9) {
       int var10 = (var0 - var4 << 8) / var8;
       int var11 = (var0 + var2 - var4 << 8) / var8;
       int var12 = (var1 - var5 << 8) / var9;
       int var13 = (var1 + var3 - var5 << 8) / var9;
       gl.glMatrixMode(5889);
       gl.glLoadIdentity();
+      float aFloat1801 = 0.09765625F;
       method1848((float)var10 * aFloat1801, (float)var11 * aFloat1801, (float)(-var13) * aFloat1801, (float)(-var12) * aFloat1801);
       gl.glViewport(var0, anInt1811 - var1 - var3, var2, var3);
       gl.glMatrixMode(5888);
@@ -492,7 +484,7 @@ final class HDToolKit {
       Class86.anInt1195 = var13;
    }
 
-   private static final void method1845(boolean var0) {
+   private static void method1845(boolean var0) {
       if(var0 != aBoolean1798) {
          if(var0) {
             gl.glEnableClientState('\u8075');
@@ -504,7 +496,7 @@ final class HDToolKit {
       }
    }
 
-   static final void method1846() {
+   static void method1846() {
       if(Class106.aBoolean1441) {
          method1837(true);
          method1845(true);
@@ -515,7 +507,7 @@ final class HDToolKit {
 
    }
 
-   static final void method1847(int var0) {
+   static void method1847(int var0) {
       if(var0 != anInt1792) {
          if(var0 == 0) {
             gl.glTexEnvi(8960, '\u8572', 8448);
@@ -533,7 +525,7 @@ final class HDToolKit {
       }
    }
 
-   private static final void method1848(float var0, float var1, float var2, float var3) {
+   private static void method1848(float var0, float var1, float var2, float var3) {
       float var6 = (float) 50.0 * 2.0F;
       aFloatArray1808[0] = var6 / (var1 - var0);
       aFloatArray1808[1] = 0.0F;
@@ -556,13 +548,13 @@ final class HDToolKit {
       aFloat1794 = 0.0F;
    }
 
-   static final void method1849(int var0) {
+   static void method1849(int var0) {
       gl.glClearColor((float)(var0 >> 16 & 255) / 255.0F, (float)(var0 >> 8 & 255) / 255.0F, (float)(var0 & 255) / 255.0F, 0.0F);
       gl.glClear(16640);
       gl.glClearColor(0.0F, 0.0F, 0.0F, 0.0F);
    }
 
-   static final void bindTexture2D(int var0) {
+   static void bindTexture2D(int var0) {
       if(var0 != anInt1803) {
          if(var0 == -1) {
             gl.glDisable(3553);
@@ -578,15 +570,15 @@ final class HDToolKit {
       }
    }
 
-   static final void method1851() {
+   static void method1851() {
       gl.glDepthMask(false);
    }
 
-   static final float method1852() {
+   static float method1852() {
       return aFloat1797;
    }
 
-   static final int method1853(Canvas var0, int var1) {
+   static int method1853(Canvas var0, int var1) {
       try {
          if(var0.isDisplayable()) {
             GLCapabilities var2 = new GLCapabilities();
@@ -610,7 +602,6 @@ final class HDToolKit {
                      break;
                   }
                } catch (Exception var8) {
-                  ;
                }
 
                if(var4++ > 5) {
@@ -661,13 +652,13 @@ final class HDToolKit {
       }
    }
 
-   static final void method1854(int var0, int var1) {
+   static void method1854(int var0, int var1) {
       anInt1820 = var0;
       anInt1811 = var1;
       aBoolean1799 = false;
    }
 
-   static final void method1855(int var0, int var1, int var2, int var3, int var4, int var5) {
+   static void method1855(int var0, int var1, int var2, int var3, int var4, int var5) {
       int var6 = -var0;
       int var7 = anInt1820 - var0;
       int var8 = -var1;
@@ -685,7 +676,7 @@ final class HDToolKit {
       aBoolean1799 = false;
    }
 
-   static final void method1856(int var0) {
+   static void method1856(int var0) {
       if(var0 != anInt1793) {
          if(var0 == 0) {
             gl.glTexEnvi(8960, '\u8571', 8448);
@@ -715,7 +706,7 @@ final class HDToolKit {
       }
    }
 
-   private static final void method1857() {
+   private static void method1857() {
       int[] var0 = new int[1];
       gl.glGenTextures(1, var0, 0);
       anInt1810 = var0[0];
