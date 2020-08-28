@@ -110,7 +110,7 @@ final class KeyboardListener implements KeyListener, FocusListener {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "uf.keyPressed(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "uf.keyPressed(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -131,7 +131,7 @@ final class KeyboardListener implements KeyListener, FocusListener {
 
          var1.consume();
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "uf.keyTyped(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "uf.keyTyped(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -142,7 +142,7 @@ final class KeyboardListener implements KeyListener, FocusListener {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "uf.focusLost(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "uf.focusLost(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -177,7 +177,7 @@ final class KeyboardListener implements KeyListener, FocusListener {
 
          var1.consume();
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "uf.keyReleased(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "uf.keyReleased(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -191,7 +191,7 @@ final class KeyboardListener implements KeyListener, FocusListener {
             aClass94_1915 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "uf.A(" + var0 + ')');
+         throw Class44.clientError(var2, "uf.A(" + var0 + ')');
       }
    }
 
@@ -258,7 +258,7 @@ final class KeyboardListener implements KeyListener, FocusListener {
             Class47.method1098((byte)-94);
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "uf.B(" + var0 + ')');
+         throw Class44.clientError(var5, "uf.B(" + var0 + ')');
       }
    }
 

@@ -26,7 +26,7 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ol.P(" + var1 + ')');
+         throw Class44.clientError(var3, "ol.P(" + var1 + ')');
       }
    }
 
@@ -206,7 +206,7 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
             return var3;
          }
       } catch (RuntimeException var39) {
-         throw Class44.method1067(var39, "ol.D(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var39, "ol.D(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -216,7 +216,7 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
             aClass153_3304 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ol.F(" + var0 + ')');
+         throw Class44.clientError(var2, "ol.F(" + var0 + ')');
       }
    }
 
@@ -329,7 +329,7 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
 
          }
       } catch (RuntimeException var23) {
-         throw Class44.method1067(var23, "ol.B(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var23, "ol.B(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ')');
       }
    }
 
@@ -372,7 +372,7 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ol.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var5, "ol.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }
    }
 
@@ -385,7 +385,7 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
          var1 &= 3;
          return var2?120:(0 == var1?var3:(1 != var1?(var1 != 2 ?var0:-var3 + 1023):-var0 + 1023));
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ol.E(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "ol.E(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 

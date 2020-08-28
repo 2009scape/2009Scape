@@ -48,7 +48,7 @@ final class RenderAnimationDefinition {
          }
          aByteArrayArrayArray383 = (byte[][][])null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ck.A(" + var0 + ')');
+         throw Class44.clientError(var2, "ck.A(" + var0 + ')');
       }
    }
 
@@ -60,7 +60,7 @@ final class RenderAnimationDefinition {
          Class101.aClass3_Sub24_Sub4_1421 = var1;
          return true;
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "ck.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var6, "ck.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
       }
    }
 
@@ -85,7 +85,7 @@ final class RenderAnimationDefinition {
             return def;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ck.D(" + var0 + ',' + graphicId + ')');
+         throw Class44.clientError(var4, "ck.D(" + var0 + ',' + graphicId + ')');
       }
    }
 
@@ -96,7 +96,7 @@ final class RenderAnimationDefinition {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ck.B(" + var1 + ')');
+         throw Class44.clientError(var3, "ck.B(" + var1 + ')');
       }
    }
 
@@ -268,7 +268,7 @@ final class RenderAnimationDefinition {
 
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ck.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var5, "ck.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -287,7 +287,7 @@ final class RenderAnimationDefinition {
             this.parseOpcode(opcode, (byte)-106, var2);
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ck.H(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "ck.H(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -374,7 +374,7 @@ final class RenderAnimationDefinition {
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "ck.E(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var6, "ck.E(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
       }
    }
 
@@ -389,7 +389,7 @@ final class RenderAnimationDefinition {
             throw new IllegalArgumentException();
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ck.G(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "ck.G(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 

@@ -88,7 +88,7 @@ final class Class3_Sub4 extends Class3 {
 
 			return var2;
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "cd.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+			throw Class44.clientError(var3, "cd.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
 		}
 	}
 
@@ -100,7 +100,7 @@ final class Class3_Sub4 extends Class3 {
 
 			aClass153_2258 = null;
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "cd.A(" + var0 + ')');
+			throw Class44.clientError(var2, "cd.A(" + var0 + ')');
 		}
 	}
 

@@ -23,7 +23,7 @@ final class Class3_Sub25 extends Class3 {
             Class76.method1358(Class27.anIntArray512, 1 + var1, Class27.anIntArray512, var1, Class3_Sub13_Sub34.anInt3415 + -var1);
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "qe.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "qe.A(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -37,7 +37,7 @@ final class Class3_Sub25 extends Class3 {
          aShortArray2548 = null;
          anIntArray2550 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "qe.B(" + var0 + ')');
+         throw Class44.clientError(var2, "qe.B(" + var0 + ')');
       }
    }
 

@@ -38,7 +38,7 @@ final class GraphicDefinition {
 				this.method965(var1, var3, 128);
 			}
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "eg.A(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+			throw Class44.clientError(var4, "eg.A(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
 		}
 	}
 
@@ -49,7 +49,7 @@ final class GraphicDefinition {
 				method964(-57);
 			}
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "eg.E(" + var0 + ')');
+			throw Class44.clientError(var2, "eg.E(" + var0 + ')');
 		}
 	}
 
@@ -108,7 +108,7 @@ final class GraphicDefinition {
 			}
 
 		} catch (RuntimeException var6) {
-			throw Class44.method1067(var6, "eg.D(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
+			throw Class44.clientError(var6, "eg.D(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
 		}
 	}
 
@@ -169,7 +169,7 @@ final class GraphicDefinition {
 				return (Model)null;
 			}
 		} catch (RuntimeException var8) {
-			throw Class44.method1067(var8, "eg.C(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+			throw Class44.clientError(var8, "eg.C(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
 		}
 	}
 
@@ -181,7 +181,7 @@ final class GraphicDefinition {
 				}
 			}
 		} catch (RuntimeException var9) {
-			throw Class44.method1067(var9, "eg.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
+			throw Class44.clientError(var9, "eg.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
 		}
 	}
 

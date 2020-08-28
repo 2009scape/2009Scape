@@ -40,7 +40,7 @@ final class Class102 implements Interface2 {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "nk.P(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "nk.P(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -176,7 +176,7 @@ final class Class102 implements Interface2 {
 
          var2 = -28 / ((var0 - -7) / 34);
       } catch (RuntimeException var14) {
-         throw Class44.method1067(var14, "nk.V(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var14, "nk.V(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -189,7 +189,7 @@ final class Class102 implements Interface2 {
          Class3_Sub28_Sub20 var3 = this.method1613(var2, 1);
          return null == var3?null:var3.method720(false, this.aBoolean2134 || this.aBooleanArray2122[var2], this, this.aClass153_2123);
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "nk.F(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "nk.F(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -204,7 +204,7 @@ final class Class102 implements Interface2 {
          aClass3_Sub28_Sub16_Sub2Array2140 = null;
          aClass135Array2131 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "nk.W(" + var0 + ')');
+         throw Class44.clientError(var2, "nk.W(" + var0 + ')');
       }
    }
 
@@ -225,7 +225,7 @@ final class Class102 implements Interface2 {
 
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "nk.G(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "nk.G(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -250,7 +250,7 @@ final class Class102 implements Interface2 {
             return var3;
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "nk.T(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var6, "nk.T(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -258,7 +258,7 @@ final class Class102 implements Interface2 {
       try {
          return var2?-63:255 & this.aByteArray2143[var1];
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "nk.D(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "nk.D(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -270,7 +270,7 @@ final class Class102 implements Interface2 {
 
          return 255 & this.aByteArray2144[var1];
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "nk.B(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "nk.B(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -282,7 +282,7 @@ final class Class102 implements Interface2 {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "nk.Q(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "nk.Q(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -291,7 +291,7 @@ final class Class102 implements Interface2 {
          int var3 = -81 % ((var1 - 4) / 55);
          return this.aByteArray2126[var2] & 255;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "nk.C(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "nk.C(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -303,7 +303,7 @@ final class Class102 implements Interface2 {
 
          return this.aBooleanArray2128[var2];
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "nk.M(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "nk.M(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -319,7 +319,7 @@ final class Class102 implements Interface2 {
             return var4;
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "nk.U(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "nk.U(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -332,7 +332,7 @@ final class Class102 implements Interface2 {
          Class3_Sub28_Sub20 var3 = this.method1613(var2, 1);
          return null != var3?var3.method722(-5, this, this.aClass153_2123):false;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "nk.H(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "nk.H(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -341,7 +341,7 @@ final class Class102 implements Interface2 {
          this.aBoolean2134 = var1;
          this.method1618(var2 ^ var2);
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "nk.S(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "nk.S(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -407,7 +407,7 @@ final class Class102 implements Interface2 {
             ;
          }
       } catch (RuntimeException var10) {
-         throw Class44.method1067(var10, "nk.R(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var10, "nk.R(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 
@@ -419,7 +419,7 @@ final class Class102 implements Interface2 {
 
          return this.aBooleanArray2135[var1];
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "nk.I(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "nk.I(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -428,7 +428,7 @@ final class Class102 implements Interface2 {
          int var3 = -115 / ((-12 - var1) / 56);
          return 255 & this.aByteArray2129[var2];
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "nk.A(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "nk.A(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -442,7 +442,7 @@ final class Class102 implements Interface2 {
 
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "nk.O(" + var1 + ')');
+         throw Class44.clientError(var3, "nk.O(" + var1 + ')');
       }
    }
 
@@ -454,7 +454,7 @@ final class Class102 implements Interface2 {
 
          return '\uffff' & this.aShortArray2137[var1];
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "nk.E(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "nk.E(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -462,7 +462,7 @@ final class Class102 implements Interface2 {
       try {
          return var1 >= -97?true:this.aBoolean2134 || this.aBooleanArray2122[var2];
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "nk.J(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "nk.J(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -481,7 +481,7 @@ final class Class102 implements Interface2 {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "nk.N(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "nk.N(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -490,7 +490,7 @@ final class Class102 implements Interface2 {
          int var3 = -8 / ((20 - var2) / 45);
          return this.aBooleanArray2124[var1];
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "nk.K(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "nk.K(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -580,7 +580,7 @@ final class Class102 implements Interface2 {
          }
 
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "nk.<init>(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var9, "nk.<init>(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ')');
       }
    }
 
@@ -594,7 +594,7 @@ final class Class102 implements Interface2 {
             return var4.method718(this, 0, var3, this.aClass153_2123, this.aBoolean2134 || this.aBooleanArray2122[var1]);
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "nk.L(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "nk.L(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 

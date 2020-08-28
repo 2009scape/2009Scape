@@ -23,7 +23,7 @@ abstract class Class146 {
          RenderAnimationDefinition.aBoolean402 = true;
          return true;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "uc.D(" + packetCounter + ',' + var1 + ')');
+         throw Class44.clientError(var3, "uc.D(" + packetCounter + ',' + var1 + ')');
       }
    }
 
@@ -37,7 +37,7 @@ abstract class Class146 {
          int var2 = -9 / ((var1 - -80) / 42);
          return 255 & var0;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "uc.E(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "uc.E(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -48,7 +48,7 @@ abstract class Class146 {
             aClass153_1902 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "uc.A(" + var0 + ')');
+         throw Class44.clientError(var2, "uc.A(" + var0 + ')');
       }
    }
 

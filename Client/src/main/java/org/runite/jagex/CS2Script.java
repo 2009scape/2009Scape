@@ -27,7 +27,7 @@ final class CS2Script extends Class3 {
          Class127.aClass153_1680 = var2;
          Class25.anInt497 = Class127.aClass153_1680.getFileAmount(var0, (byte)95);
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "jl.D(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "jl.D(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -41,7 +41,7 @@ final class CS2Script extends Class3 {
          aByteArrayArrayArray2452 = (byte[][][])null;
          aClass93_2450 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "jl.E(" + var0 + ')');
+         throw Class44.clientError(var2, "jl.E(" + var0 + ')');
       }
    }
 
@@ -59,7 +59,7 @@ final class CS2Script extends Class3 {
          Canvas_Sub1.registryStage = stage;
          Class130.anInt1711 = -3;
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "jl.C(" + year + ',' + country + ',' + day + ',' + month + ',' + stage + ')');
+         throw Class44.clientError(var6, "jl.C(" + year + ',' + country + ',' + day + ',' + month + ',' + stage + ')');
       }
    }
 
@@ -83,7 +83,7 @@ final class CS2Script extends Class3 {
             return var2;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "jl.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "jl.A(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -204,7 +204,7 @@ final class CS2Script extends Class3 {
          }
 
       } catch (RuntimeException var12) {
-         throw Class44.method1067(var12, "jl.B(" + var0 + ')');
+         throw Class44.clientError(var12, "jl.B(" + var0 + ')');
       }
    }
 

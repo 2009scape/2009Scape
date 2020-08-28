@@ -23,7 +23,7 @@ final class Class54 {
          Class3_Sub28_Sub1.anInt3536 = var0;
          Class3_Sub5.method117((byte)87);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "hj.D(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "hj.D(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -46,7 +46,7 @@ final class Class54 {
             }
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "hj.A(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "hj.A(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -70,7 +70,7 @@ final class Class54 {
 
          }
       } catch (RuntimeException var10) {
-         throw Class44.method1067(var10, "hj.C(" + var0 + ',' + var1 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ',' + var8 + ')');
+         throw Class44.clientError(var10, "hj.C(" + var0 + ',' + var1 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ',' + var8 + ')');
       }
    }
 
@@ -79,7 +79,7 @@ final class Class54 {
          int var1 = 103 / ((var0 - -13) / 52);
          aClass153_878 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "hj.B(" + var0 + ')');
+         throw Class44.clientError(var2, "hj.B(" + var0 + ')');
       }
    }
 

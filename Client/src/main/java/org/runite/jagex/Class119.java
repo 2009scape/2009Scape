@@ -26,7 +26,7 @@ final class Class119 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "qh.B(" + var0 + ')');
+         throw Class44.clientError(var2, "qh.B(" + var0 + ')');
       }
    }
 
@@ -86,7 +86,7 @@ final class Class119 {
 
          Class80.method1396(-1);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "qh.C(" + var0 + ')');
+         throw Class44.clientError(var3, "qh.C(" + var0 + ')');
       }
    }
 
@@ -121,7 +121,7 @@ final class Class119 {
 
          }
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "qh.A(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var7, "qh.A(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 

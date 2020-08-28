@@ -37,7 +37,7 @@ final class Class7 implements Interface4 {
          }
          return GameObject.aClass11ArrayArray1834[windowId][componentId];
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "af.F(" + var0 + ',' + interfaceHash + ')');
+         throw Class44.clientError(var5, "af.F(" + var0 + ',' + interfaceHash + ')');
       }
    }
 
@@ -48,7 +48,7 @@ final class Class7 implements Interface4 {
          aClass94_2168 = null;
          int var1 = 124 / ((var0 - 28) / 41);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "af.E(" + var0 + ')');
+         throw Class44.clientError(var2, "af.E(" + var0 + ')');
       }
    }
 
@@ -66,7 +66,7 @@ final class Class7 implements Interface4 {
             }
          }
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "af.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var7, "af.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -80,7 +80,7 @@ final class Class7 implements Interface4 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "af.D(" + var0 + ')');
+         throw Class44.clientError(var2, "af.D(" + var0 + ')');
       }
    }
 

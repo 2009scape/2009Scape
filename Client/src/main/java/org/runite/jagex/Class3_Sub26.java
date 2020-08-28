@@ -22,7 +22,7 @@ final class Class3_Sub26 extends Class3 {
          aClass61_2557 = null;
          aClass3_Sub24_Sub2_2563 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "qi.A(" + var0 + ')');
+         throw Class44.clientError(var2, "qi.A(" + var0 + ')');
       }
    }
 
@@ -36,7 +36,7 @@ final class Class3_Sub26 extends Class3 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "qi.D(" + var0 + ')');
+         throw Class44.clientError(var2, "qi.D(" + var0 + ')');
       }
    }
 
@@ -70,7 +70,7 @@ final class Class3_Sub26 extends Class3 {
 
          return var0 + var2;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "qi.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "qi.B(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -79,7 +79,7 @@ final class Class3_Sub26 extends Class3 {
          this.anInt2555 = var2;
          this.anInt2553 = var1;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "qi.<init>(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "qi.<init>(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -92,7 +92,7 @@ final class Class3_Sub26 extends Class3 {
 
          return var0 == 0 ?var1:(1 == var0?var3:(2 != var0?-var3 + 1023:1023 + -var1));
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "qi.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "qi.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 

@@ -21,7 +21,7 @@ class Class164_Sub1 extends Class164 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "vd.H(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "vd.H(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -57,7 +57,7 @@ class Class164_Sub1 extends Class164 {
 
          Class133.anInt1753 = 2;
       } catch (RuntimeException var13) {
-         throw Class44.method1067(var13, "vd.F(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var13, "vd.F(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 
@@ -213,7 +213,7 @@ class Class164_Sub1 extends Class164 {
             aClass158_3009 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "vd.I(" + var0 + ')');
+         throw Class44.clientError(var2, "vd.I(" + var0 + ')');
       }
    }
 
@@ -257,7 +257,7 @@ class Class164_Sub1 extends Class164 {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "vd.G(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "vd.G(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -268,7 +268,7 @@ class Class164_Sub1 extends Class164 {
             this.anInt3010 = 0;
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "vd.C(" + var1 + ')');
+         throw Class44.clientError(var3, "vd.C(" + var1 + ')');
       }
    }
 
@@ -283,7 +283,7 @@ class Class164_Sub1 extends Class164 {
          }
 
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "vd.<init>(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var8, "vd.<init>(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
@@ -291,7 +291,7 @@ class Class164_Sub1 extends Class164 {
       try {
          this.aByteArray3015[this.anInt3016++] = (byte)(127 + (Class3_Sub28_Sub15.method633(var2, 255) >> 1));
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "vd.B(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "vd.B(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -309,7 +309,7 @@ class Class164_Sub1 extends Class164 {
          this.method2242(this.anInt3016++, (byte)(this.anInt3010 >> 4));
          this.anInt3010 = 0;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "vd.A(" + var1 + ')');
+         throw Class44.clientError(var3, "vd.A(" + var1 + ')');
       }
    }
 

@@ -25,7 +25,7 @@ final class Class95 {
          }
          COMMAND_BREAK_CONNECTION = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "nb.D(" + var0 + ')');
+         throw Class44.clientError(var2, "nb.D(" + var0 + ')');
       }
    }
 
@@ -71,7 +71,7 @@ final class Class95 {
          }
 
       } catch (RuntimeException var35) {
-         throw Class44.method1067(var35, "nb.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ')');
+         throw Class44.clientError(var35, "nb.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ')');
       }
    }
 
@@ -92,7 +92,7 @@ final class Class95 {
 
          }
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "nb.E(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var7, "nb.E(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 
@@ -106,7 +106,7 @@ final class Class95 {
          var1 |= var1 >>> 16;
          return 1 + var1;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "nb.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "nb.C(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -126,7 +126,7 @@ final class Class95 {
             throw new IllegalArgumentException();
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "nb.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "nb.A(" + var0 + ',' + var1 + ')');
       }
    }
 

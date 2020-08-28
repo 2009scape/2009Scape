@@ -32,7 +32,7 @@ final class Class10 {
          Class39.method1035((byte)113);
          return var1;
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "bd.B(" + var0 + ')');
+         throw Class44.clientError(var7, "bd.B(" + var0 + ')');
       }
    }
 
@@ -51,7 +51,7 @@ final class Class10 {
 
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "bd.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "bd.C(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -64,7 +64,7 @@ final class Class10 {
 
          aClass153_152 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "bd.A(" + var0 + ')');
+         throw Class44.clientError(var2, "bd.A(" + var0 + ')');
       }
    }
 

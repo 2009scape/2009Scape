@@ -77,7 +77,7 @@ final class NPCDefinition {
             return var3 == -1 ?null:Node.method522(var3, 27112);
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "me.G(" + var1 + ')');
+         throw Class44.clientError(var4, "me.G(" + var1 + ')');
       }
    }
 
@@ -105,7 +105,7 @@ final class NPCDefinition {
             }
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "me.L(" + var1 + ')');
+         throw Class44.clientError(var4, "me.L(" + var1 + ')');
       }
    }
 
@@ -116,7 +116,7 @@ final class NPCDefinition {
             anInt1297 = -20;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "me.K(" + var0 + ')');
+         throw Class44.clientError(var2, "me.K(" + var0 + ')');
       }
    }
 
@@ -141,7 +141,7 @@ final class NPCDefinition {
             return false;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "me.E(" + var1 + ')');
+         throw Class44.clientError(var4, "me.E(" + var1 + ')');
       }
    }
 
@@ -154,7 +154,7 @@ final class NPCDefinition {
             return var4 != null?var4.anInt2467:var3;
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "me.N(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "me.N(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -455,7 +455,7 @@ final class NPCDefinition {
             return null != var33?var33.method1476(var1, var2, (byte)-102, var4, var5, var6, var7, var8, var9, var10):null;
          }
       } catch (RuntimeException var32) {
-         throw Class44.method1067(var32, "me.M(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + (var8 != null?"{...}":"null") + ',' + var9 + ',' + (var10 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var32, "me.M(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + (var8 != null?"{...}":"null") + ',' + var9 + ',' + (var10 != null?"{...}":"null") + ')');
       }
    }
 
@@ -468,7 +468,7 @@ final class NPCDefinition {
             return !var3?(RSString)null:(null == var4?var2:var4.aClass94_2586);
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "me.I(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var5, "me.I(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }
    }
 
@@ -484,7 +484,7 @@ final class NPCDefinition {
             this.parseOpcode(27, var3, var1);
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "me.F(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "me.F(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 
@@ -513,7 +513,7 @@ final class NPCDefinition {
 
          Class3_Sub13_Sub30.anInt3362 = -1;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "me.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "me.C(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -558,7 +558,7 @@ final class NPCDefinition {
          int var12 = -44 / ((45 - var2) / 33);
          Class3_Sub13_Sub29.method307(var10, Class99.aShortArray1398, 77);
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "me.J(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var9, "me.J(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 
@@ -566,7 +566,7 @@ final class NPCDefinition {
       try {
          int var2 = 36 % ((12 - var1) / 41);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "me.D(" + var1 + ')');
+         throw Class44.clientError(var3, "me.D(" + var1 + ')');
       }
    }
 
@@ -636,7 +636,7 @@ final class NPCDefinition {
             return null == var6?null:var6.getChatModel(var1, var2, var3, 54, var5);
          }
       } catch (RuntimeException var11) {
-         throw Class44.method1067(var11, "me.A(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var11, "me.A(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 
@@ -871,7 +871,7 @@ final class NPCDefinition {
 
          var4 = 11 % ((-39 - var1) / 60);
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "me.H(" + var1 + ',' + opcode + ',' + (buffer != null?"{...}":"null") + ')');
+         throw Class44.clientError(var9, "me.H(" + var1 + ',' + opcode + ',' + (buffer != null?"{...}":"null") + ')');
       }
    }
 
@@ -922,7 +922,7 @@ final class NPCDefinition {
          int var6 = Class3_Sub6.anIntArray2288[var5 + -var4];
          return Class163_Sub1.anIntArray2985[var3] >> var4 & var6;
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "me.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var7, "me.B(" + var0 + ',' + var1 + ')');
       }
    }
 

@@ -18,7 +18,7 @@ final class Class3_Sub6 extends Class3 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ea.A(" + var0 + ')');
+         throw Class44.clientError(var2, "ea.A(" + var0 + ')');
       }
    }
 
@@ -32,7 +32,7 @@ final class Class3_Sub6 extends Class3 {
             return var2;
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ea.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "ea.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -40,7 +40,7 @@ final class Class3_Sub6 extends Class3 {
       try {
          this.aByteArray2289 = var1;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ea.<init>(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "ea.<init>(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 

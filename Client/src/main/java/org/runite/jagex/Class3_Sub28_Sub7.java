@@ -18,7 +18,7 @@ abstract class Class3_Sub28_Sub7 extends Node {
     	//  System.out.println("Class 3_Sub28_Sub16_Sub2 " + var2);
          return Class75_Sub4.method1351(var0, var1, var2, -30901)?(var3 != 39?(Class3_Sub28_Sub16_Sub2)null:Class3_Sub28_Sub9.method578(var3 ^ 84)):null;
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "gf.O(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "gf.O(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -32,7 +32,7 @@ abstract class Class3_Sub28_Sub7 extends Node {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "gf.Q(" + var0 + ')');
+         throw Class44.clientError(var2, "gf.Q(" + var0 + ')');
       }
    }
 
@@ -108,7 +108,7 @@ abstract class Class3_Sub28_Sub7 extends Node {
          }
 
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "gf.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var9, "gf.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -141,7 +141,7 @@ abstract class Class3_Sub28_Sub7 extends Node {
          }
 
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "gf.E(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var7, "gf.E(" + var0 + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -155,7 +155,7 @@ abstract class Class3_Sub28_Sub7 extends Node {
 
          var3.aClass94_3599 = var0;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "gf.P(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "gf.P(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ')');
       }
    }
 

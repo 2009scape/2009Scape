@@ -29,7 +29,7 @@ class Node extends Class3 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "rg.UA(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "rg.UA(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -42,7 +42,7 @@ class Node extends Class3 {
 
          return 0 != var0?(var0 != 1 ?(var0 == 2 ?-var3 + 7:-var2 + 7):var2):var3;
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "rg.RA(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "rg.RA(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -51,7 +51,7 @@ class Node extends Class3 {
          int var1 = -122 % ((var0 - -48) / 33);
          return RSByteBuffer.aClass3_Sub28_Sub3_2600;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "rg.OA(" + var0 + ')');
+         throw Class44.clientError(var2, "rg.OA(" + var0 + ')');
       }
    }
 
@@ -63,7 +63,7 @@ class Node extends Class3 {
             anIntArray2574 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "rg.QA(" + var0 + ')');
+         throw Class44.clientError(var2, "rg.QA(" + var0 + ')');
       }
    }
 
@@ -89,7 +89,7 @@ class Node extends Class3 {
             return def;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "rg.PA(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "rg.PA(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -101,7 +101,7 @@ class Node extends Class3 {
          int var12 = (var7 + -var1 << 16) / var10;
          Class83.method1410(var1, 0, var6, var4, var3, var5, var8, var12, var11, var2, -12541);
       } catch (RuntimeException var13) {
-         throw Class44.method1067(var13, "rg.SA(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ')');
+         throw Class44.clientError(var13, "rg.SA(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ')');
       }
    }
 
@@ -118,7 +118,7 @@ class Node extends Class3 {
 
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "rg.TA(" + var1 + ')');
+         throw Class44.clientError(var3, "rg.TA(" + var1 + ')');
       }
    }
 

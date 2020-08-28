@@ -16,7 +16,7 @@ final class WorldListEntry extends Class44 {
          Class154.aClass93_1964.method1524(3);
          int var1 = -86 % ((var0 - -55) / 41);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ba.C(" + var0 + ')');
+         throw Class44.clientError(var2, "ba.C(" + var0 + ')');
       }
    }
 
@@ -27,7 +27,7 @@ final class WorldListEntry extends Class44 {
             anInt2626 = 89;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ba.A(" + var0 + ')');
+         throw Class44.clientError(var2, "ba.A(" + var0 + ')');
       }
    }
 
@@ -36,7 +36,7 @@ final class WorldListEntry extends Class44 {
          int var2 = -35 / ((var1 - 0) / 56);
          return Class119.countries[this.countryIndex];
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ba.B(" + var1 + ')');
+         throw Class44.clientError(var3, "ba.B(" + var1 + ')');
       }
    }
 
@@ -64,7 +64,7 @@ final class WorldListEntry extends Class44 {
             }
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ba.D(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var5, "ba.D(" + var0 + ',' + var1 + ')');
       }
    }
 

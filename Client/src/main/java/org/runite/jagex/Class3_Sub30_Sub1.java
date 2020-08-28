@@ -14,7 +14,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 		try {
 			Class3_Sub28_Sub12.sendGameMessage(var3, type, message, (RSString)null, var0);
 		} catch (RuntimeException var5) {
-			throw Class44.method1067(var5, "i.W(" + (var0 != null?"{...}":"null") + ',' + type + ',' + (message != null?"{...}":"null") + ',' + var3 + ')');
+			throw Class44.clientError(var5, "i.W(" + (var0 != null?"{...}":"null") + ',' + type + ',' + (message != null?"{...}":"null") + ',' + var3 + ')');
 		}
 	}
 
@@ -902,7 +902,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 				}
 			}
 		} catch (RuntimeException var10) {
-			throw Class44.method1067(var10, "i.E(" + var0 + ',' + var1 + ')');
+			throw Class44.clientError(var10, "i.E(" + var0 + ',' + var1 + ')');
 		}
 	}
 
@@ -911,7 +911,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 			this.anInt3806 = this.index * 8;
 			int var2 = -12 % ((-32 - var1) / 54);
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "i.R(" + var1 + ')');
+			throw Class44.clientError(var3, "i.R(" + var1 + ')');
 		}
 	}
 
@@ -926,7 +926,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 			anIntArray3804 = null;
 			aClass94Array3802 = null;
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "i.V(" + var0 + ')');
+			throw Class44.clientError(var2, "i.V(" + var0 + ')');
 		}
 	}
 
@@ -996,7 +996,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 			Class92.method1504();
 			return Class3_Sub28_Sub12.anInt3652;
 		} catch (RuntimeException var16) {
-			throw Class44.method1067(var16, "i.F(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+			throw Class44.clientError(var16, "i.F(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
 		}
 	}
 
@@ -1004,7 +1004,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 		try {
 			return var0 != 3?74:255 & var1;
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "i.D(" + var0 + ',' + var1 + ')');
+			throw Class44.clientError(var3, "i.D(" + var0 + ',' + var1 + ')');
 		}
 	}
 
@@ -1019,7 +1019,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 			}
 
 		} catch (RuntimeException var6) {
-			throw Class44.method1067(var6, "i.S(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
+			throw Class44.clientError(var6, "i.S(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
 		}
 	}
 
@@ -1047,7 +1047,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 				return -10;
 			}
 		} catch (RuntimeException var6) {
-			throw Class44.method1067(var6, "i.C(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var6, "i.C(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -1059,7 +1059,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 				Class67.aClass93_1013.method1523((byte)-108);
 			}
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "i.O(" + var0 + ')');
+			throw Class44.clientError(var2, "i.O(" + var0 + ')');
 		}
 	}
 
@@ -1071,7 +1071,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 			}
 
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "i.T(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+			throw Class44.clientError(var4, "i.T(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
 		}
 	}
 
@@ -1083,7 +1083,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 
 			return var1 * 8 - this.anInt3806;
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "i.U(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "i.U(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -1099,7 +1099,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 		try {
 			return var1 != 0?102:255 & this.buffer[this.index++] - this.isaacCipher.nextOpcode(-9356);
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "i.P(" + var1 + ')');
+			throw Class44.clientError(var3, "i.P(" + var1 + ')');
 		}
 	}
 
@@ -1111,7 +1111,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 			}
 
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "i.Q(" + var1 + ')');
+			throw Class44.clientError(var3, "i.Q(" + var1 + ')');
 		}
 	}
 
@@ -1145,7 +1145,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 
 			}
 		} catch (RuntimeException var7) {
-			throw Class44.method1067(var7, "i.A(" + var0 + ')');
+			throw Class44.clientError(var7, "i.A(" + var0 + ')');
 		}
 	}
 

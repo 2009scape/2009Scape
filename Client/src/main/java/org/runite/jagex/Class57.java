@@ -27,7 +27,7 @@ final class Class57 {
             this.method1191(var4, var2, var3, true);
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ic.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var5, "ic.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }
    }
 
@@ -50,7 +50,7 @@ final class Class57 {
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "ic.C(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "ic.C(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -62,7 +62,7 @@ final class Class57 {
             aClass3_Sub28_Sub16_895 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ic.B(" + var0 + ')');
+         throw Class44.clientError(var2, "ic.B(" + var0 + ')');
       }
    }
 

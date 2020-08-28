@@ -26,7 +26,7 @@ final class Class163_Sub1_Sub1 extends Class163_Sub1 {
          aClass94_4007 = null;
          anIntArrayArray4010 = (int[][])null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ch.F(" + var0 + ')');
+         throw Class44.clientError(var2, "ch.F(" + var0 + ')');
       }
    }
 
@@ -46,7 +46,7 @@ final class Class163_Sub1_Sub1 extends Class163_Sub1 {
             Class73.method1301(WorldListCountry.localPlane, Class3_Sub7.anInt2294, Class3_Sub28_Sub7.anInt3606, Class102.player.anIntArray2755[0], false, Class102.player.anIntArray2767[0], true);
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ch.E(" + var0 + ')');
+         throw Class44.clientError(var2, "ch.E(" + var0 + ')');
       }
    }
 
@@ -58,7 +58,7 @@ final class Class163_Sub1_Sub1 extends Class163_Sub1 {
             Class3_Sub13.anInt2384 = -1;
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ch.G(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "ch.G(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -182,7 +182,7 @@ final class Class163_Sub1_Sub1 extends Class163_Sub1 {
 
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ch.D(" + var0 + ')');
+         throw Class44.clientError(var3, "ch.D(" + var0 + ')');
       }
    }
 

@@ -31,7 +31,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	    catch (RuntimeException var3)
 	    {
-	      throw Class44.method1067(var3, "ug.mouseMoved(" + (var1 != null ? "{...}" : "null") + ')');
+	      throw Class44.clientError(var3, "ug.mouseMoved(" + (var1 != null ? "{...}" : "null") + ')');
 	    }
 	  }
 	  
@@ -70,7 +70,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	    catch (RuntimeException var3)
 	    {
-	      throw Class44.method1067(var3, "ug.A(" + var0 + ')');
+	      throw Class44.clientError(var3, "ug.A(" + var0 + ')');
 	    }
 	  }
 	  
@@ -86,7 +86,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	    catch (RuntimeException var2)
 	    {
-	      throw Class44.method1067(var2, "ug.C(" + var0 + ')');
+	      throw Class44.clientError(var2, "ug.C(" + var0 + ')');
 	    }
 	  }
 	  
@@ -100,7 +100,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	    catch (RuntimeException var3)
 	    {
-	      throw Class44.method1067(var3, "ug.focusLost(" + (var1 != null ? "{...}" : "null") + ')');
+	      throw Class44.clientError(var3, "ug.focusLost(" + (var1 != null ? "{...}" : "null") + ')');
 	    }
 	  }
 	  
@@ -113,7 +113,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	    catch (RuntimeException var2)
 	    {
-	      throw Class44.method1067(var2, "ug.D(" + var0 + ')');
+	      throw Class44.clientError(var2, "ug.D(" + var0 + ')');
 	    }
 	  }
 	  
@@ -142,7 +142,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	    catch (RuntimeException var3)
 	    {
-	      throw Class44.method1067(var3, "ug.mouseDragged(" + (var1 != null ? "{...}" : "null") + ')');
+	      throw Class44.clientError(var3, "ug.mouseDragged(" + (var1 != null ? "{...}" : "null") + ')');
 	    }
 	  }
 	  
@@ -171,7 +171,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	    catch (RuntimeException var3)
 	    {
-	      throw Class44.method1067(var3, "ug.mouseReleased(" + (var1 != null ? "{...}" : "null") + ')');
+	      throw Class44.clientError(var3, "ug.mouseReleased(" + (var1 != null ? "{...}" : "null") + ')');
 	    }
 	  }
 	  
@@ -185,7 +185,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	    catch (RuntimeException var3)
 	    {
-	      throw Class44.method1067(var3, "ug.mouseClicked(" + (var1 != null ? "{...}" : "null") + ')');
+	      throw Class44.clientError(var3, "ug.mouseClicked(" + (var1 != null ? "{...}" : "null") + ')');
 	    }
 	  }
 	  
@@ -207,7 +207,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	    catch (RuntimeException var4)
 	    {
-	      throw Class44.method1067(var4, "ug.F(" + var0 + ')');
+	      throw Class44.clientError(var4, "ug.F(" + var0 + ')');
 	    }
 	  }
 	  
@@ -254,7 +254,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	    catch (RuntimeException var3)
 	    {
-	      throw Class44.method1067(var3, "ug.mousePressed(" + (var1 != null ? "{...}" : "null") + ')');
+	      throw Class44.clientError(var3, "ug.mousePressed(" + (var1 != null ? "{...}" : "null") + ')');
 	    }
 	  }
 	  
@@ -271,7 +271,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	    catch (RuntimeException var3)
 	    {
-	      throw Class44.method1067(var3, "ug.mouseExited(" + (var1 != null ? "{...}" : "null") + ')');
+	      throw Class44.clientError(var3, "ug.mouseExited(" + (var1 != null ? "{...}" : "null") + ')');
 	    }
 	  }
 	  
@@ -288,7 +288,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	    catch (RuntimeException var3)
 	    {
-	      throw Class44.method1067(var3, "ug.E(" + var0 + ',' + var1 + ')');
+	      throw Class44.clientError(var3, "ug.E(" + var0 + ',' + var1 + ')');
 	    }
 	  }
 	  
@@ -305,7 +305,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	    catch (RuntimeException var3)
 	    {
-	      throw Class44.method1067(var3, "ug.mouseEntered(" + (var1 != null ? "{...}" : "null") + ')');
+	      throw Class44.clientError(var3, "ug.mouseEntered(" + (var1 != null ? "{...}" : "null") + ')');
 	    }
 	  }
 	  
@@ -318,7 +318,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	    catch (RuntimeException var3)
 	    {
-	      throw Class44.method1067(var3, "ug.B(" + var0 + ',' + var1 + ')');
+	      throw Class44.clientError(var3, "ug.B(" + var0 + ',' + var1 + ')');
 	    }
 	  }
 	}

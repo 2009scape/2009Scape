@@ -20,7 +20,7 @@ final class Class145 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ub.G(" + var0 + ')');
+         throw Class44.clientError(var2, "ub.G(" + var0 + ')');
       }
    }
 
@@ -43,7 +43,7 @@ final class Class145 {
          }
 
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "ub.F(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var8, "ub.F(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
@@ -779,7 +779,7 @@ final class Class145 {
             Class20.method909(126, var7);
          }
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "ub.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var9, "ub.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
@@ -788,7 +788,7 @@ final class Class145 {
          int var2 = 110 / ((var1 - 34) / 61);
          return 255 & var0;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ub.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "ub.A(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -812,7 +812,7 @@ final class Class145 {
             return var2;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ub.D(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "ub.D(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -821,7 +821,7 @@ final class Class145 {
          Class3_Sub31.aClass93_2604.method1524(3);
          Class27.aClass93_511.method1524(3);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ub.B(" + var0 + ')');
+         throw Class44.clientError(var2, "ub.B(" + var0 + ')');
       }
    }
 

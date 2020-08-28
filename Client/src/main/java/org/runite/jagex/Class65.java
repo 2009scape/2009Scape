@@ -25,7 +25,7 @@ final class Class65 {
             return var2;
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ja.H(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "ja.H(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -47,7 +47,7 @@ final class Class65 {
             return -57;
          }
       } catch (RuntimeException var14) {
-         throw Class44.method1067(var14, "ja.G(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var14, "ja.G(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -67,7 +67,7 @@ final class Class65 {
 
          Class3_Sub13_Sub37.method347(true);
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "ja.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "ja.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -76,7 +76,7 @@ final class Class65 {
          Class47.quickChatMessages = var1;
          NodeList.aClass153_332 = var0;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ja.F(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "ja.F(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 
@@ -84,7 +84,7 @@ final class Class65 {
       try {
          WorldListEntry.anInt2626 = var1 / var0;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ja.D(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "ja.D(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -96,7 +96,7 @@ final class Class65 {
             aClass3_Sub30Array986 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ja.B(" + var0 + ')');
+         throw Class44.clientError(var2, "ja.B(" + var0 + ')');
       }
    }
 
@@ -181,7 +181,7 @@ final class Class65 {
          Class3_Sub28_Sub3.anInt3564 = var2;
          Class163_Sub1.anInt2989 = var4;
       } catch (RuntimeException var11) {
-         throw Class44.method1067(var11, "ja.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var11, "ja.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 
@@ -211,7 +211,7 @@ final class Class65 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ja.E(" + var0 + ')');
+         throw Class44.clientError(var2, "ja.E(" + var0 + ')');
       }
    }
 

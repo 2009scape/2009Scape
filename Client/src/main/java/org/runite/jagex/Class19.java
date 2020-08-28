@@ -24,7 +24,7 @@ final class Class19 {
             method906((byte)-42);
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "df.A(" + var0 + ')');
+         throw Class44.clientError(var2, "df.A(" + var0 + ')');
       }
    }
 

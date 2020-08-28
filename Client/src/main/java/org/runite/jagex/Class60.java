@@ -12,7 +12,7 @@ final class Class60 {
       try {
          int var1 = 50 % ((-41 - var0) / 57);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ig.C(" + var0 + ')');
+         throw Class44.clientError(var2, "ig.C(" + var0 + ')');
       }
    }
 
@@ -31,7 +31,7 @@ final class Class60 {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ig.A(" + var0 + ')');
+         throw Class44.clientError(var4, "ig.A(" + var0 + ')');
       }
    }
 
@@ -63,7 +63,7 @@ final class Class60 {
             }
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ig.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var5, "ig.B(" + var0 + ',' + var1 + ')');
       }
    }
 

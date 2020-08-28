@@ -25,7 +25,7 @@ final class Class3_Sub28_Sub10_Sub1 extends Class3_Sub28_Sub10 {
             return this.aByteArray4059;
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "c.E(" + var1 + ')');
+         throw Class44.clientError(var3, "c.E(" + var1 + ')');
       }
    }
 
@@ -47,7 +47,7 @@ final class Class3_Sub28_Sub10_Sub1 extends Class3_Sub28_Sub10 {
             }
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "c.F(" + var0 + ')');
+         throw Class44.clientError(var4, "c.F(" + var0 + ')');
       }
    }
 
@@ -56,7 +56,7 @@ final class Class3_Sub28_Sub10_Sub1 extends Class3_Sub28_Sub10 {
          aClass25Array4060 = null;
          aClass94_4057 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "c.P(" + var0 + ')');
+         throw Class44.clientError(var2, "c.P(" + var0 + ')');
       }
    }
 
@@ -82,7 +82,7 @@ final class Class3_Sub28_Sub10_Sub1 extends Class3_Sub28_Sub10 {
             Class3_Sub13_Sub34.method331(100L, 64);
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "c.R(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "c.R(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -94,7 +94,7 @@ final class Class3_Sub28_Sub10_Sub1 extends Class3_Sub28_Sub10 {
 
          return this.aBoolean3632?0:100;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "c.A(" + var1 + ')');
+         throw Class44.clientError(var3, "c.A(" + var1 + ')');
       }
    }
 
@@ -106,7 +106,7 @@ final class Class3_Sub28_Sub10_Sub1 extends Class3_Sub28_Sub10 {
 
          Class128.aClass93_1683.method1522(-127, var1);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "c.Q(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "c.Q(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -117,7 +117,7 @@ final class Class3_Sub28_Sub10_Sub1 extends Class3_Sub28_Sub10 {
             Class163_Sub1.aClass93_2984.method1522(-125, var0);
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "c.O(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "c.O(" + var0 + ',' + var1 + ')');
       }
    }
 

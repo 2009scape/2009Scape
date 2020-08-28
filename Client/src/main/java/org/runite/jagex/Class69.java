@@ -32,7 +32,7 @@ final class Class69 {
             return -68;
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "jg.D(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var6, "jg.D(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -47,7 +47,7 @@ final class Class69 {
          Class39.method1035((byte)116);
          return var1;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "jg.A(" + var0 + ')');
+         throw Class44.clientError(var3, "jg.A(" + var0 + ')');
       }
    }
 
@@ -62,7 +62,7 @@ final class Class69 {
          }
 
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "jg.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var7, "jg.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -72,7 +72,7 @@ final class Class69 {
          aClass30_1039 = null;
          int var1 = -9 / ((var0 - 64) / 53);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "jg.B(" + var0 + ')');
+         throw Class44.clientError(var2, "jg.B(" + var0 + ')');
       }
    }
 
@@ -100,7 +100,7 @@ final class Class69 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "jg.<init>(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "jg.<init>(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 

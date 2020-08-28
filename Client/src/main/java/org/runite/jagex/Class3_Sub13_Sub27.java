@@ -20,7 +20,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
          var3.g((byte)33);
          var3.aClass94_3599 = var0;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "pi.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "pi.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -113,7 +113,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
          var4 = -73 / ((30 - var2) / 36);
          return var3;
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "pi.D(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var9, "pi.D(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -126,7 +126,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
 
          aClass94_3339 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "pi.F(" + var0 + ')');
+         throw Class44.clientError(var2, "pi.F(" + var0 + ')');
       }
    }
 
@@ -277,7 +277,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
 
          return var3;
       } catch (RuntimeException var22) {
-         throw Class44.method1067(var22, "pi.T(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var22, "pi.T(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -311,7 +311,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
 
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "pi.C(" + var0 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "pi.C(" + var0 + ',' + var2 + ')');
       }
    }
 
@@ -579,7 +579,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
          PacketParser.method824(var55, var59, -86);
          return var59;
       } catch (RuntimeException var51) {
-         throw Class44.method1067(var51, "pi.E(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ',' + (var5 != null?"{...}":"null") + ',' + (var6 != null?"{...}":"null") + ',' + (var7 != null?"{...}":"null") + ',' + (var8 != null?"{...}":"null") + ',' + var9 + ',' + (var10 != null?"{...}":"null") + ',' + (var11 != null?"{...}":"null") + ',' + (var12 != null?"{...}":"null") + ',' + (var13 != null?"{...}":"null") + ',' + var14 + ')');
+         throw Class44.clientError(var51, "pi.E(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ',' + (var5 != null?"{...}":"null") + ',' + (var6 != null?"{...}":"null") + ',' + (var7 != null?"{...}":"null") + ',' + (var8 != null?"{...}":"null") + ',' + var9 + ',' + (var10 != null?"{...}":"null") + ',' + (var11 != null?"{...}":"null") + ',' + (var12 != null?"{...}":"null") + ',' + (var13 != null?"{...}":"null") + ',' + var14 + ')');
       }
    }
 
@@ -632,7 +632,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
          }
 
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "pi.O(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var7, "pi.O(" + var0 + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -649,7 +649,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "pi.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var5, "pi.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }
    }
 

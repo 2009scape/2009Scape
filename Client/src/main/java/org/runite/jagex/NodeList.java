@@ -17,7 +17,7 @@ final class NodeList {
 
          return var1 > -41?-56:var2;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ce.H(" + var1 + ')');
+         throw Class44.clientError(var4, "ce.H(" + var1 + ')');
       }
    }
 
@@ -26,7 +26,7 @@ final class NodeList {
          int var1 = -102 / ((var0 - 35) / 48);
          aClass153_332 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ce.C(" + var0 + ')');
+         throw Class44.clientError(var2, "ce.C(" + var0 + ')');
       }
    }
 
@@ -45,7 +45,7 @@ final class NodeList {
             return var2;
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ce.K(" + var1 + ')');
+         throw Class44.clientError(var3, "ce.K(" + var1 + ')');
       }
    }
 
@@ -59,7 +59,7 @@ final class NodeList {
             return var1 != -1?(Node)null:var2;
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ce.B(" + var1 + ')');
+         throw Class44.clientError(var3, "ce.B(" + var1 + ')');
       }
    }
 
@@ -75,7 +75,7 @@ final class NodeList {
             return var2;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ce.A(" + var1 + ')');
+         throw Class44.clientError(var4, "ce.A(" + var1 + ')');
       }
    }
 
@@ -91,7 +91,7 @@ final class NodeList {
          var1.aClass3_Sub28_2570.aClass3_Sub28_2578 = var1;
          var1.aClass3_Sub28_2578.aClass3_Sub28_2570 = var1;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ce.E(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "ce.E(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 
@@ -115,7 +115,7 @@ final class NodeList {
             }
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ce.G(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "ce.G(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -148,7 +148,7 @@ final class NodeList {
             var10.anInt2256 = var3;
          }
       } catch (RuntimeException var12) {
-         throw Class44.method1067(var12, "ce.J(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ')');
+         throw Class44.clientError(var12, "ce.J(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ')');
       }
    }
 
@@ -162,7 +162,7 @@ final class NodeList {
          Class101.aClass153_1423 = null;
          Class3_Sub13_Sub39.anInt3463 = var0;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ce.F(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "ce.F(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -182,7 +182,7 @@ final class NodeList {
             var2.method524((byte)-107);
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ce.I(" + var1 + ')');
+         throw Class44.clientError(var3, "ce.I(" + var1 + ')');
       }
    }
 
@@ -198,7 +198,7 @@ final class NodeList {
 
          return null;
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ce.D(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "ce.D(" + var0 + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -207,7 +207,7 @@ final class NodeList {
          this.aClass3_Sub28_333.aClass3_Sub28_2578 = this.aClass3_Sub28_333;
          this.aClass3_Sub28_333.aClass3_Sub28_2570 = this.aClass3_Sub28_333;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ce.<init>()");
+         throw Class44.clientError(var2, "ce.<init>()");
       }
    }
 

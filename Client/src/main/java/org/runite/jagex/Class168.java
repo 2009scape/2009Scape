@@ -54,7 +54,7 @@ final class Class168 {
             var0.anInt2785 = var0.anInt2806;
          }
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "wl.K(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var8, "wl.K(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -69,7 +69,7 @@ final class Class168 {
          var4.anInt3597 = var3;
          var4.anInt3598 = var0;
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "wl.F(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "wl.F(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -709,7 +709,7 @@ final class Class168 {
             }
          }
       } catch (RuntimeException var23) {
-         throw Class44.method1067(var23, "wl.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ')');
+         throw Class44.clientError(var23, "wl.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ')');
       }
    }
 
@@ -734,7 +734,7 @@ final class Class168 {
             return Class7.getRSInterface((byte)118, var0.parentId);
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "wl.J(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var5, "wl.J(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -753,7 +753,7 @@ final class Class168 {
             this.method2279(0, var4, var2, var3);
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "wl.H(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var5, "wl.H(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }
    }
 
@@ -886,7 +886,7 @@ final class Class168 {
          }
 
       } catch (RuntimeException var23) {
-         throw Class44.method1067(var23, "wl.I(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var23, "wl.I(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
@@ -898,7 +898,7 @@ final class Class168 {
             aClass11_2091 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "wl.G(" + var0 + ')');
+         throw Class44.clientError(var2, "wl.G(" + var0 + ')');
       }
    }
 
@@ -934,7 +934,7 @@ final class Class168 {
             var5.anIntArray2551[var1] = var2;
          }
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "wl.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var9, "wl.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -978,7 +978,7 @@ final class Class168 {
          }
 
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "wl.D(" + var0 + ')');
+         throw Class44.clientError(var9, "wl.D(" + var0 + ')');
       }
    }
 
@@ -1038,7 +1038,7 @@ final class Class168 {
 
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "wl.E(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
+         throw Class44.clientError(var6, "wl.E(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
       }
    }
 
@@ -1051,7 +1051,7 @@ final class Class168 {
          Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 11, var1);
          var2.a(true);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "wl.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "wl.B(" + var0 + ',' + var1 + ')');
       }
    }
 

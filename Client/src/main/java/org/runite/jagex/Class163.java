@@ -19,7 +19,7 @@ class Class163 {
             COMMAND_ERROR_TEST = (RSString)null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "wd.L(" + var0 + ')');
+         throw Class44.clientError(var2, "wd.L(" + var0 + ')');
       }
    }
 
@@ -41,7 +41,7 @@ class Class163 {
          var7 <<= var5;
          Class3_Sub13_Sub23.method281((byte)99, var1 << var5 & var7 | ~var7 & Class57.anIntArray898[var4], var4);
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "wd.K(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var8, "wd.K(" + var0 + ',' + var1 + ',' + var2 + ')');
       }
    }
 

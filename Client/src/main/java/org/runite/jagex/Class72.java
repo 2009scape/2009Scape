@@ -33,7 +33,7 @@ final class Class72 {
             return var2;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "jj.D(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "jj.D(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -51,7 +51,7 @@ final class Class72 {
 
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "jj.G(" + var0 + ')');
+         throw Class44.clientError(var3, "jj.G(" + var0 + ')');
       }
    }
 
@@ -234,7 +234,7 @@ final class Class72 {
          return ColorCore.LvlDiffDefault;//Yellow
 
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "jj.E(" + otherPlayer + ',' + levelByte + ',' + yourPlayer + ')');
+         throw Class44.clientError(var4, "jj.E(" + otherPlayer + ',' + levelByte + ',' + yourPlayer + ')');
       }
    }
 
@@ -245,7 +245,7 @@ final class Class72 {
         	LEFT_PARENTHESES = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "jj.F(" + var0 + ')');
+         throw Class44.clientError(var2, "jj.F(" + var0 + ')');
       }
    }
 
@@ -267,7 +267,7 @@ final class Class72 {
             return (float[])null;
          }
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "jj.A(" + var0 + ')');
+         throw Class44.clientError(var7, "jj.A(" + var0 + ')');
       }
    }
 
@@ -275,7 +275,7 @@ final class Class72 {
       try {
          return var0 != 9?(RSString)null:Class118.method1723((byte)-117, false, 10, var1);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "jj.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "jj.C(" + var0 + ',' + var1 + ')');
       }
    }
 

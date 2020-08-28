@@ -23,7 +23,7 @@ final class OutputStream_Sub1 extends OutputStream {
             return var2;
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "vg.A(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "vg.A(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -123,7 +123,7 @@ final class OutputStream_Sub1 extends OutputStream {
             }
          }
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "vg.D(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var7, "vg.D(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -136,7 +136,7 @@ final class OutputStream_Sub1 extends OutputStream {
 
          anIntArray49 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "vg.B(" + var0 + ')');
+         throw Class44.clientError(var2, "vg.B(" + var0 + ')');
       }
    }
 
@@ -177,7 +177,7 @@ final class OutputStream_Sub1 extends OutputStream {
             RenderAnimationDefinition.method900(var2, -11973);
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "vg.C(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "vg.C(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -185,7 +185,7 @@ final class OutputStream_Sub1 extends OutputStream {
       try {
          throw new IOException();
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "vg.write(" + var1 + ')');
+         throw Class44.clientError(var3, "vg.write(" + var1 + ')');
       }
    }
 

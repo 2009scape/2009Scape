@@ -22,7 +22,7 @@ public class Client {
 	/**
 	 * The game settings.
 	 */
-	public static GameSetting SETTINGS = new GameSetting("2009Scape", "127.0.0.1", 3, "live", false);
+	public static GameSetting SETTINGS = new GameSetting("2009Scape", "play.2009scape.org", 3, "live", false);
 	
 	/**
 	 * The main method.
@@ -32,10 +32,10 @@ public class Client {
 	 */
 	public static void main(String[]args) {
 		try {
-			PUBLIC_IP_ADDRESS = "127.0.0.1";
+			PUBLIC_IP_ADDRESS = "play.2009scape.org";
 		} catch (Exception e){
 			System.out.println("Can't find config file " + CONF_FILE + " defaulting to IP 127.0.0.1");
-			PUBLIC_IP_ADDRESS = "127.0.0.1";
+			PUBLIC_IP_ADDRESS = "play.2009scape.org";
 		}
 		System.out.println("Running liveserver client");
 		Configurations.LOCAL_SERVER = false;

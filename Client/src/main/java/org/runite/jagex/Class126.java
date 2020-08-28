@@ -31,7 +31,7 @@ final class Class126 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "rh.A(" + var0 + ')');
+         throw Class44.clientError(var2, "rh.A(" + var0 + ')');
       }
    }
 
@@ -45,7 +45,7 @@ final class Class126 {
          this.anInt1663 = var4;
          this.anInt1670 = var5;
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "rh.<init>(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
+         throw Class44.clientError(var9, "rh.<init>(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
       }
    }
 

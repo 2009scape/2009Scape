@@ -41,7 +41,7 @@ final class Class99 {
          }
 
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "nf.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var7, "nf.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -89,7 +89,7 @@ final class Class99 {
             return null;
          }
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "nf.D(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var9, "nf.D(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ')');
       }
    }
 
@@ -102,7 +102,7 @@ final class Class99 {
             aClass33_1399 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "nf.B(" + var0 + ')');
+         throw Class44.clientError(var2, "nf.B(" + var0 + ')');
       }
    }
 
@@ -118,7 +118,7 @@ final class Class99 {
          var4 = ~var4;
          return var4;
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "nf.A(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var7, "nf.A(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }
    }
 

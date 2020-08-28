@@ -38,7 +38,7 @@ class Class163_Sub1 extends Class163 {
             }
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ah.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "ah.B(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -131,7 +131,7 @@ class Class163_Sub1 extends Class163 {
             }
          }
       } catch (RuntimeException var10) {
-         throw Class44.method1067(var10, "ah.A(" + var0 + ')');
+         throw Class44.clientError(var10, "ah.A(" + var0 + ')');
       }
    }
 
@@ -146,7 +146,7 @@ class Class163_Sub1 extends Class163 {
          }
          aByteArrayArray2987 = (byte[][])null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ah.C(" + var0 + ')');
+         throw Class44.clientError(var2, "ah.C(" + var0 + ')');
       }
    }
 

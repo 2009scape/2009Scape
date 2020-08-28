@@ -31,7 +31,7 @@ final class Class70 {
          aClass94Array1046 = null;
          aClass10_1056 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "jh.A(" + var0 + ')');
+         throw Class44.clientError(var2, "jh.A(" + var0 + ')');
       }
    }
 
@@ -49,7 +49,7 @@ final class Class70 {
 
          GraphicDefinition.anInt546 = 10000;
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "jh.D(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var7, "jh.D(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 
@@ -115,7 +115,7 @@ final class Class70 {
          }
 
       } catch (RuntimeException var11) {
-         throw Class44.method1067(var11, "jh.C(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var11, "jh.C(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ')');
       }
    }
 
@@ -132,7 +132,7 @@ final class Class70 {
             return null;
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "jh.B(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
+         throw Class44.clientError(var6, "jh.B(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
       }
    }
 

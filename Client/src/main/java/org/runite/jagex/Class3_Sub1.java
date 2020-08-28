@@ -91,7 +91,7 @@ final class Class3_Sub1 extends Class3 {
             }
          }
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "bf.D(" + var0 + ')');
+         throw Class44.clientError(var9, "bf.D(" + var0 + ')');
       }
    }
 
@@ -105,7 +105,7 @@ final class Class3_Sub1 extends Class3 {
          interfaceScriptsIndex = null;
          anIntArray2209 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "bf.P(" + var0 + ')');
+         throw Class44.clientError(var2, "bf.P(" + var0 + ')');
       }
    }
 
@@ -114,7 +114,7 @@ final class Class3_Sub1 extends Class3 {
          int var3 = 13 / ((-60 - var2) / 46);
          return 0 != (this.anInt2205 >> 1 + var1 & 1);
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "bf.C(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "bf.C(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -122,7 +122,7 @@ final class Class3_Sub1 extends Class3 {
       try {
          return var1 != 572878952 || 0 != (572878952 & this.anInt2205) >> 29;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "bf.S(" + var1 + ')');
+         throw Class44.clientError(var3, "bf.S(" + var1 + ')');
       }
    }
 
@@ -134,7 +134,7 @@ final class Class3_Sub1 extends Class3 {
 
          return this.anInt2205 >> 18 & 7;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "bf.A(" + var1 + ')');
+         throw Class44.clientError(var3, "bf.A(" + var1 + ')');
       }
    }
 
@@ -146,7 +146,7 @@ final class Class3_Sub1 extends Class3 {
 
          return (1 & this.anInt2205) != 0;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "bf.Q(" + var1 + ')');
+         throw Class44.clientError(var3, "bf.Q(" + var1 + ')');
       }
    }
 
@@ -154,7 +154,7 @@ final class Class3_Sub1 extends Class3 {
       try {
          return var1 == -2063688673 && (this.anInt2205 >> 31 & 1) != 0;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "bf.T(" + var1 + ')');
+         throw Class44.clientError(var3, "bf.T(" + var1 + ')');
       }
    }
 
@@ -162,7 +162,7 @@ final class Class3_Sub1 extends Class3 {
       try {
          return var1 != -20710 || 0 != (1 & this.anInt2205 >> 22);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "bf.R(" + var1 + ')');
+         throw Class44.clientError(var3, "bf.R(" + var1 + ')');
       }
    }
 
@@ -171,7 +171,7 @@ final class Class3_Sub1 extends Class3 {
          this.anInt2202 = var2;
          this.anInt2205 = var1;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "bf.<init>(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "bf.<init>(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -183,7 +183,7 @@ final class Class3_Sub1 extends Class3 {
 
          return (this.anInt2205 >> 21 & 1) != 0;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "bf.E(" + var1 + ')');
+         throw Class44.clientError(var3, "bf.E(" + var1 + ')');
       }
    }
 
@@ -195,7 +195,7 @@ final class Class3_Sub1 extends Class3 {
 
          return (1738913629 & this.anInt2205) >> 30 != 0;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "bf.F(" + var1 + ')');
+         throw Class44.clientError(var3, "bf.F(" + var1 + ')');
       }
    }
 
@@ -203,7 +203,7 @@ final class Class3_Sub1 extends Class3 {
       try {
          return var1 != -9 || (this.anInt2205 & 455226656) >> 28 != 0;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "bf.O(" + var1 + ')');
+         throw Class44.clientError(var3, "bf.O(" + var1 + ')');
       }
    }
 
@@ -215,7 +215,7 @@ final class Class3_Sub1 extends Class3 {
 
          return Class3_Sub28_Sub15.method630((byte)-34, this.anInt2205);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "bf.B(" + var1 + ')');
+         throw Class44.clientError(var3, "bf.B(" + var1 + ')');
       }
    }
 

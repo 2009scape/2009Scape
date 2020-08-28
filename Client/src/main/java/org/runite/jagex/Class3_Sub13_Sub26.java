@@ -34,7 +34,7 @@ final class Class3_Sub13_Sub26 extends Class3_Sub13 {
 			anIntArray3318 = null;
 			anIntArray3331 = null;
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "pg.B(" + var0 + ')');
+			throw Class44.clientError(var2, "pg.B(" + var0 + ')');
 		}
 	}
 
@@ -66,7 +66,7 @@ final class Class3_Sub13_Sub26 extends Class3_Sub13 {
 
 			return var4;
 		} catch (RuntimeException var17) {
-			throw Class44.method1067(var17, "pg.D(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var17, "pg.D(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -81,7 +81,7 @@ final class Class3_Sub13_Sub26 extends Class3_Sub13 {
 			}
 
 		} catch (RuntimeException var5) {
-			throw Class44.method1067(var5, "pg.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+			throw Class44.clientError(var5, "pg.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
 		}
 	}
 

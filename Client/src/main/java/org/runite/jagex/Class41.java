@@ -41,7 +41,7 @@ final class Class41 {
 
          }
       } catch (RuntimeException var12) {
-         throw Class44.method1067(var12, "ge.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var12, "ge.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
@@ -49,7 +49,7 @@ final class Class41 {
       try {
          return "Cache:" + this.cacheIndex;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ge.toString()");
+         throw Class44.clientError(var2, "ge.toString()");
       }
    }
 
@@ -87,7 +87,7 @@ final class Class41 {
          }
 
       } catch (RuntimeException var10) {
-         throw Class44.method1067(var10, "ge.H(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
+         throw Class44.clientError(var10, "ge.H(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
       }
    }
 
@@ -100,7 +100,7 @@ final class Class41 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ge.G(" + var0 + ')');
+         throw Class44.clientError(var2, "ge.G(" + var0 + ')');
       }
    }
 
@@ -122,7 +122,7 @@ final class Class41 {
             }
          }
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "ge.D(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
+         throw Class44.clientError(var9, "ge.D(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
       }
    }
 
@@ -198,7 +198,7 @@ final class Class41 {
             return (byte[])var10000;
          }
       } catch (RuntimeException var19) {
-         throw Class44.method1067(var19, "ge.C(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var19, "ge.C(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -235,7 +235,7 @@ final class Class41 {
             return null;
          }
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "ge.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var9, "ge.B(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -244,7 +244,7 @@ final class Class41 {
          Class97.aClass153_1372 = var1;
          int var2 = -52 / ((var0 - -55) / 36);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ge.F(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "ge.F(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -255,7 +255,7 @@ final class Class41 {
          this.cacheIndex = var1;
          this.aClass30_681 = var2;
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "ge.<init>(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
+         throw Class44.clientError(var6, "ge.<init>(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
       }
    }
 
@@ -377,7 +377,7 @@ final class Class41 {
             }
          }
       } catch (RuntimeException var18) {
-         throw Class44.method1067(var18, "ge.E(" + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ')');
+         throw Class44.clientError(var18, "ge.E(" + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ')');
       }
    }
 

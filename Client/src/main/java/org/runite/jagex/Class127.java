@@ -334,7 +334,7 @@ class Class127 {
 
          }
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "ri.A(" + var0 + ')');
+         throw Class44.clientError(var8, "ri.A(" + var0 + ')');
       }
    }
 
@@ -359,7 +359,7 @@ class Class127 {
 
          anIntArray1681 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ri.B(" + var0 + ')');
+         throw Class44.clientError(var2, "ri.B(" + var0 + ')');
       }
    }
 

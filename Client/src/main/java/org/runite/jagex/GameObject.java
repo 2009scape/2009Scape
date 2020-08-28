@@ -29,7 +29,7 @@ abstract class GameObject {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "th.KC(" + var0 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "th.KC(" + var0 + ',' + var2 + ')');
       }
    }
 
@@ -48,7 +48,7 @@ abstract class GameObject {
          anIntArray1833 = null;
          anIntArray1838 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "th.HC(" + var0 + ')');
+         throw Class44.clientError(var2, "th.HC(" + var0 + ')');
       }
    }
 
@@ -56,7 +56,7 @@ abstract class GameObject {
       try {
          return this;
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "th.JB(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "th.JB(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -87,7 +87,7 @@ abstract class GameObject {
 
          Class3_Sub28_Sub10_Sub2.method598(var0, var1, var6, var5, false, var3, var4);
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "th.EC(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var7, "th.EC(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -104,7 +104,7 @@ abstract class GameObject {
          var1 &= 3;
          return var1 == 0 ?var6:(1 != var1?(var1 != 2 ?var4:-var3 + 1 + -var6 + 7):-var4 + 7 + -var0 - -1);
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "th.JC(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var8, "th.JC(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
@@ -120,7 +120,7 @@ abstract class GameObject {
          RSByteBuffer.aClass94Array2596 = new RSString[]{null, null, TextCore.HasTake, null, null};
          Class3_Sub13_Sub37.aClass3_Sub28_Sub17_Sub1_3440 = var3;
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "th.FC(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var7, "th.FC(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
       }
    }
 
@@ -128,7 +128,7 @@ abstract class GameObject {
       try {
          return false;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "th.AB()");
+         throw Class44.clientError(var2, "th.AB()");
       }
    }
 
@@ -212,7 +212,7 @@ abstract class GameObject {
 
          }
       } catch (RuntimeException var16) {
-         throw Class44.method1067(var16, "th.IC(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var16, "th.IC(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 
@@ -224,7 +224,7 @@ abstract class GameObject {
             Class101.aClass153_1423 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "th.GC(" + var0 + ')');
+         throw Class44.clientError(var2, "th.GC(" + var0 + ')');
       }
    }
 

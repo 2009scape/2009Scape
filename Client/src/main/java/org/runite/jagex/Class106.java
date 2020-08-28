@@ -37,7 +37,7 @@ final class Class106 {
             }
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "od.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "od.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -72,7 +72,7 @@ final class Class106 {
             return var5;
          }
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "od.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var9, "od.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -83,7 +83,7 @@ final class Class106 {
             aClass67_1443 = (Class67)null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "od.A(" + var0 + ')');
+         throw Class44.clientError(var2, "od.A(" + var0 + ')');
       }
    }
 

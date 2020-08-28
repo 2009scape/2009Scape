@@ -14,7 +14,7 @@ final class Class32 {
 
          return Class140_Sub7.method2033(var0, 1, 32767);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "fc.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "fc.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -36,7 +36,7 @@ final class Class32 {
             return var3;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "fc.B(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "fc.B(" + var0 + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -46,7 +46,7 @@ final class Class32 {
             aClass94_592 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "fc.A(" + var0 + ')');
+         throw Class44.clientError(var2, "fc.A(" + var0 + ')');
       }
    }
 
@@ -131,7 +131,7 @@ final class Class32 {
             Class134.anInt1762 = Class25.anInt491;
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "fc.E(" + var0 + ')');
+         throw Class44.clientError(var5, "fc.E(" + var0 + ')');
       }
    }
 

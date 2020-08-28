@@ -38,7 +38,7 @@ final class Class140_Sub2 extends GameObject {
 
          return var3 == null?null:var3;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "bh.E(" + var1 + ')');
+         throw Class44.clientError(var4, "bh.E(" + var1 + ')');
       }
    }
 
@@ -69,7 +69,7 @@ final class Class140_Sub2 extends GameObject {
 
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "bh.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var5, "bh.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -81,7 +81,7 @@ final class Class140_Sub2 extends GameObject {
 
          return var0 >>> 8;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "bh.D(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "bh.D(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -134,7 +134,7 @@ final class Class140_Sub2 extends GameObject {
          NPC.anInt3995 = var0 + -var10;
          Class7.anInt2162 = -var11 + var3;
       } catch (RuntimeException var15) {
-         throw Class44.method1067(var15, "bh.G(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
+         throw Class44.clientError(var15, "bh.G(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
       }
    }
 
@@ -147,7 +147,7 @@ final class Class140_Sub2 extends GameObject {
          Class3_Sub6.anInt2291 = 0;
          return ItemDefinition.method1107(5422);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "bh.H(" + var0 + ')');
+         throw Class44.clientError(var2, "bh.H(" + var0 + ')');
       }
    }
 
@@ -155,7 +155,7 @@ final class Class140_Sub2 extends GameObject {
       try {
          return this.anInt2715;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "bh.MA()");
+         throw Class44.clientError(var2, "bh.MA()");
       }
    }
 
@@ -166,7 +166,7 @@ final class Class140_Sub2 extends GameObject {
             aClass94_2707 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "bh.B(" + var0 + ')');
+         throw Class44.clientError(var2, "bh.B(" + var0 + ')');
       }
    }
 
@@ -178,7 +178,7 @@ final class Class140_Sub2 extends GameObject {
             this.anInt2715 = var13.method1871();
          }
       } catch (RuntimeException var14) {
-         throw Class44.method1067(var14, "bh.IA(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var11 + ',' + (var12 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var14, "bh.IA(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var11 + ',' + (var12 != null?"{...}":"null") + ')');
       }
    }
 
@@ -202,7 +202,7 @@ final class Class140_Sub2 extends GameObject {
 
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "bh.A(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "bh.A(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -236,7 +236,7 @@ final class Class140_Sub2 extends GameObject {
          }
 
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "bh.<init>(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
+         throw Class44.clientError(var9, "bh.<init>(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
       }
    }
 

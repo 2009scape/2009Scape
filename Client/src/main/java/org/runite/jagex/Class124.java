@@ -15,7 +15,7 @@ final class Class124 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "rb.A(" + var0 + ')');
+         throw Class44.clientError(var2, "rb.A(" + var0 + ')');
       }
    }
 
@@ -28,7 +28,7 @@ final class Class124 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "rb.B(" + var0 + ')');
+         throw Class44.clientError(var3, "rb.B(" + var0 + ')');
       }
    }
 
@@ -40,7 +40,7 @@ final class Class124 {
 
          Class75_Sub4.method1352(Class140_Sub7.anInt2934, var0, -1, Class3_Sub28_Sub12.anInt3655, Class23.anInt454);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "rb.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "rb.C(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -56,7 +56,7 @@ final class Class124 {
          var2.method538((byte)103);
          return var2;
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "rb.D(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var5, "rb.D(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 

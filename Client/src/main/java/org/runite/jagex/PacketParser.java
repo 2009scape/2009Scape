@@ -24,7 +24,7 @@ final class PacketParser {
 
             return (8 & Class9.aByteArrayArrayArray113[var3][var1][var0]) == 0 ? (var3 > 0 && (Class9.aByteArrayArrayArray113[1][var1][var0] & 2) != 0 ? -1 + var3 : var3) : 0;
         } catch (RuntimeException var5) {
-            throw Class44.method1067(var5, "ac.G(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+            throw Class44.clientError(var5, "ac.G(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
         }
     }
 
@@ -32,7 +32,7 @@ final class PacketParser {
         try {
             Class134.method1809(var0.length - 1, var0, 122, 0, var1);
         } catch (RuntimeException var4) {
-            throw Class44.method1067(var4, "ac.E(" + (var0 != null ? "{...}" : "null") + ',' + (var1 != null ? "{...}" : "null") + ',' + var2 + ')');
+            throw Class44.clientError(var4, "ac.E(" + (var0 != null ? "{...}" : "null") + ',' + (var1 != null ? "{...}" : "null") + ',' + var2 + ')');
         }
     }
 
@@ -41,7 +41,7 @@ final class PacketParser {
             Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(4, 1, var1);
             var3.a(true);
         } catch (RuntimeException var4) {
-            throw Class44.method1067(var4, "ac.D(" + var0 + ',' + var1 + ')');
+            throw Class44.clientError(var4, "ac.D(" + var0 + ',' + var1 + ')');
         }
     }
 
@@ -63,7 +63,7 @@ final class PacketParser {
                 return -1;
             }
         } catch (RuntimeException var3) {
-            throw Class44.method1067(var3, "ac.B(" + (var0 != null ? "{...}" : "null") + ',' + var1 + ')');
+            throw Class44.clientError(var3, "ac.B(" + (var0 != null ? "{...}" : "null") + ',' + var1 + ')');
         }
     }
 
@@ -1804,7 +1804,7 @@ final class PacketParser {
                 }
             }
         } catch (RuntimeException var19) {
-            throw Class44.method1067(var19, "ac.C(" + var0 + ')');
+            throw Class44.clientError(var19, "ac.C(" + var0 + ')');
         }
     }
 
@@ -1820,7 +1820,7 @@ final class PacketParser {
             aClass61_82 = null;
             aClass11_88 = null;
         } catch (RuntimeException var2) {
-            throw Class44.method1067(var2, "ac.A(" + var0 + ')');
+            throw Class44.clientError(var2, "ac.A(" + var0 + ')');
         }
     }
 
@@ -1913,7 +1913,7 @@ final class PacketParser {
                 Class56.aClass11_886 = null;
             }
         } catch (RuntimeException var9) {
-            throw Class44.method1067(var9, "ac.F(" + var0 + ')');
+            throw Class44.clientError(var9, "ac.F(" + var0 + ')');
         }
     }
 

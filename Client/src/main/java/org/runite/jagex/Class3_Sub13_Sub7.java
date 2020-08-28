@@ -24,7 +24,7 @@ final class Class3_Sub13_Sub7 extends Class3_Sub13 {
             this.method202(1);
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "d.P(" + var1 + ')');
+         throw Class44.clientError(var3, "d.P(" + var1 + ')');
       }
    }
 
@@ -41,7 +41,7 @@ final class Class3_Sub13_Sub7 extends Class3_Sub13 {
          aClass11_3087 = null;
          aClass153_3098 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "d.E(" + var0 + ')');
+         throw Class44.clientError(var2, "d.E(" + var0 + ')');
       }
    }
 
@@ -51,7 +51,7 @@ final class Class3_Sub13_Sub7 extends Class3_Sub13 {
          int var4 = -95 % ((33 - var2) / 54);
          return var3 + (var0 + (var0 >>> 31)) % var1;
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "d.C(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "d.C(" + var0 + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -74,7 +74,7 @@ final class Class3_Sub13_Sub7 extends Class3_Sub13 {
             this.anIntArray3091[this.anInt3085] = this.anIntArray3091[0] + 4096;
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "d.B(" + var1 + ')');
+         throw Class44.clientError(var6, "d.B(" + var1 + ')');
       }
    }
 
@@ -95,7 +95,7 @@ final class Class3_Sub13_Sub7 extends Class3_Sub13 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "d.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var5, "d.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }
    }
 
@@ -156,7 +156,7 @@ final class Class3_Sub13_Sub7 extends Class3_Sub13 {
 
          return var3;
       } catch (RuntimeException var11) {
-         throw Class44.method1067(var11, "d.D(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var11, "d.D(" + var1 + ',' + var2 + ')');
       }
    }
 

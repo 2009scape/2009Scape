@@ -13,7 +13,7 @@ final class Class3_Sub28_Sub8 extends Node {
       try {
          return var0 >= -57?-107:((double)NPC.aFloat3979 == 3.0D?37:((double)NPC.aFloat3979 == 4.0D?50:(6.0D != (double)NPC.aFloat3979?((double)NPC.aFloat3979 == 8.0D?100:200):75)));
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "hc.E(" + var0 + ')');
+         throw Class44.clientError(var2, "hc.E(" + var0 + ')');
       }
    }
 
@@ -85,7 +85,7 @@ final class Class3_Sub28_Sub8 extends Node {
             return var2;
          }
       } catch (RuntimeException var14) {
-         throw Class44.method1067(var14, "hc.O(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var14, "hc.O(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -97,7 +97,7 @@ final class Class3_Sub28_Sub8 extends Node {
 
          aClass113Array3610 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "hc.A(" + var0 + ')');
+         throw Class44.clientError(var2, "hc.A(" + var0 + ')');
       }
    }
 
@@ -118,7 +118,7 @@ final class Class3_Sub28_Sub8 extends Node {
 
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "hc.D(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "hc.D(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -130,7 +130,7 @@ final class Class3_Sub28_Sub8 extends Node {
 
          Class3_Sub23.aClass153_2536 = var0;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "hc.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "hc.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -152,7 +152,7 @@ final class Class3_Sub28_Sub8 extends Node {
             }
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "hc.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "hc.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -160,7 +160,7 @@ final class Class3_Sub28_Sub8 extends Node {
       try {
          this.aByteArray3612 = var1;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "hc.<init>(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "hc.<init>(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 

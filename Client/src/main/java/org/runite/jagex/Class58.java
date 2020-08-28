@@ -29,7 +29,7 @@ final class Class58 {
 
          COMMAND_TOGGLE_FPSON = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "id.C(" + var0 + ')');
+         throw Class44.clientError(var2, "id.C(" + var0 + ')');
       }
    }
 
@@ -46,7 +46,7 @@ final class Class58 {
 
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "id.A(" + var0 + ')');
+         throw Class44.clientError(var2, "id.A(" + var0 + ')');
       }
    }
 
@@ -120,7 +120,7 @@ final class Class58 {
             throw new IllegalArgumentException();
          }
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "id.D(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var8, "id.D(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -135,7 +135,7 @@ final class Class58 {
          Class159.anInt2020 = var0;
          Class57.anInt902 = var3;
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "id.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "id.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -147,7 +147,7 @@ final class Class58 {
 
          Class46.aClass153_737 = var0;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "id.E(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "id.E(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 

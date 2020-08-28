@@ -24,7 +24,7 @@ class RSByteBuffer extends Class3 {
 			this.index += 2;
 			return (this.buffer[-2 + this.index] << 8 & '\uff00') + (this.buffer[-1 + this.index] & 255);
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.EB(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.EB(" + var1 + ')');
 		}
 	}
 
@@ -39,7 +39,7 @@ class RSByteBuffer extends Class3 {
 			this.buffer[this.index++] = (byte)(value >> 8);
 			this.buffer[this.index++] = (byte)value;
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.UC(" + var1 + ',' + value + ')');
+			throw Class44.clientError(var4, "wa.UC(" + var1 + ',' + value + ')');
 		}
 	}
 
@@ -57,7 +57,7 @@ class RSByteBuffer extends Class3 {
 				throw new IllegalArgumentException();
 			}
 		} catch (RuntimeException var6) {
-			throw Class44.method1067(var6, "wa.OB(" + var1 + ',' + var2 + ',' + var3 + ')');
+			throw Class44.clientError(var6, "wa.OB(" + var1 + ',' + var2 + ',' + var3 + ')');
 		}
 	}
 
@@ -74,7 +74,7 @@ class RSByteBuffer extends Class3 {
 				this.buffer[this.index++] = (byte)((int)var1);
 			}
 		} catch (RuntimeException var5) {
-			throw Class44.method1067(var5, "wa.AC(" + var1 + ',' + var3 + ')');
+			throw Class44.clientError(var5, "wa.AC(" + var1 + ',' + var3 + ')');
 		}
 	}
 
@@ -89,7 +89,7 @@ class RSByteBuffer extends Class3 {
 
 			return var2 | var3;
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.WA(" + var1 + ')');
+			throw Class44.clientError(var4, "wa.WA(" + var1 + ')');
 		}
 	}
 
@@ -104,7 +104,7 @@ class RSByteBuffer extends Class3 {
 
 			this.buffer[-var2 + this.index + -1] = (byte)var2;
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.VB(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.VB(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -116,7 +116,7 @@ class RSByteBuffer extends Class3 {
 			}
 
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.PC(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.PC(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -128,7 +128,7 @@ class RSByteBuffer extends Class3 {
 
 			++KeyboardListener.anInt1908;
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "wa.HA(" + var0 + ')');
+			throw Class44.clientError(var2, "wa.HA(" + var0 + ')');
 		}
 	}
 
@@ -137,7 +137,7 @@ class RSByteBuffer extends Class3 {
 			this.index += var2.method1580(true, this.buffer, this.index, var1, var2.length(-65));
 			this.buffer[this.index++] = 0;
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.LA(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var4, "wa.LA(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
 		}
 	}
 
@@ -148,7 +148,7 @@ class RSByteBuffer extends Class3 {
 				;
 			}
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "wa.VC(" + var0 + ')');
+			throw Class44.clientError(var2, "wa.VC(" + var0 + ')');
 		}
 	}
 
@@ -166,7 +166,7 @@ class RSByteBuffer extends Class3 {
 
 			return var2;
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.NA(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.NA(" + var1 + ')');
 		}
 	}
 
@@ -175,7 +175,7 @@ class RSByteBuffer extends Class3 {
 			this.index += 4;
 			return ((255 & this.buffer[this.index - 4]) << 24) + (16711680 & this.buffer[this.index + -3] << 16) + (((255 & this.buffer[this.index - 2]) << 8) - -(this.buffer[this.index - 1] & 255));
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.KA(" + -1 + ')');
+			throw Class44.clientError(var3, "wa.KA(" + -1 + ')');
 		}
 	}
 
@@ -183,7 +183,7 @@ class RSByteBuffer extends Class3 {
 		try {
 			return var1?-79:(byte)(-this.buffer[this.index++] + 128);
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.JB(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.JB(" + var1 + ')');
 		}
 	}
 
@@ -198,7 +198,7 @@ class RSByteBuffer extends Class3 {
 				return this.getString();
 			}
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.IB(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.IB(" + var1 + ')');
 		}
 	}
 
@@ -207,7 +207,7 @@ class RSByteBuffer extends Class3 {
 			int var2 = 122 / ((30 - var1) / 63);
 			return 255 & this.buffer[this.index++] - 128;
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.DC(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.DC(" + var1 + ')');
 		}
 	}
 	
@@ -220,7 +220,7 @@ class RSByteBuffer extends Class3 {
 			}
 
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.RA(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.RA(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -235,7 +235,7 @@ class RSByteBuffer extends Class3 {
 
 			}
 		} catch (RuntimeException var6) {
-			throw Class44.method1067(var6, "wa.QC(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+			throw Class44.clientError(var6, "wa.QC(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ')');
 		}
 	}
 
@@ -247,7 +247,7 @@ class RSByteBuffer extends Class3 {
 
 			return -this.buffer[this.index++] + 128 & 255;
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.PB(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.PB(" + var1 + ')');
 		}
 	}
 
@@ -257,7 +257,7 @@ class RSByteBuffer extends Class3 {
 			int var2 = 40 % ((-7 - var1) / 47);
 			return ((this.buffer[this.index + -2] & 255) << 8) + ((this.buffer[-1 + this.index] & 255) << 16) + (this.buffer[-3 + this.index] & 255);
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.BA(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.BA(" + var1 + ')');
 		}
 	}
 
@@ -271,7 +271,7 @@ class RSByteBuffer extends Class3 {
 				return var4 + (var2 << 32);
 			}
 		} catch (RuntimeException var6) {
-			throw Class44.method1067(var6, "wa.GA(" + var1 + ')');
+			throw Class44.clientError(var6, "wa.GA(" + var1 + ')');
 		}
 	}
 
@@ -286,7 +286,7 @@ class RSByteBuffer extends Class3 {
 			this.buffer[this.index++] = (byte)(var1 >> 16);
 			this.buffer[this.index++] = (byte)(var1 >> 24);
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.AB(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.AB(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -296,7 +296,7 @@ class RSByteBuffer extends Class3 {
 			int var2 = -90 / ((var1 - -58) / 43);
 			return (this.buffer[-1 + this.index] - 128 & 255) + ('\uff00' & this.buffer[-2 + this.index] << 8);
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.LC(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.LC(" + var1 + ')');
 		}
 	}
 	
@@ -312,7 +312,7 @@ class RSByteBuffer extends Class3 {
 			this.buffer[this.index++] = (byte)var2;
 			this.buffer[this.index++] = (byte)(var2 >> 8);
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.MC(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.MC(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -321,7 +321,7 @@ class RSByteBuffer extends Class3 {
 			this.buffer = Class134.method1807(66, var1);
 			this.index = 0;
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.<init>(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.<init>(" + var1 + ')');
 		}
 	}
 
@@ -329,7 +329,7 @@ class RSByteBuffer extends Class3 {
 		try {
 			return this.buffer[this.index++];
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.TA(" + -1 + ")");
+			throw Class44.clientError(var3, "wa.TA(" + -1 + ")");
 		}
 	}
 
@@ -352,7 +352,7 @@ class RSByteBuffer extends Class3 {
 				throw new IllegalStateException("Bad version number in gjstr2");
 			}
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.DA(" + var1 + ')');
+			throw Class44.clientError(var4, "wa.DA(" + var1 + ')');
 		}
 	}
 
@@ -366,7 +366,7 @@ class RSByteBuffer extends Class3 {
 				this.buffer[this.index++] = (byte)(var3 >> 24);
 			}
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.CC(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.CC(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -374,7 +374,7 @@ class RSByteBuffer extends Class3 {
 		try {
 			return var1 < 98?95:(byte)(-this.buffer[this.index++] + 0);
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.BC(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.BC(" + var1 + ')');
 		}
 	}
 
@@ -389,7 +389,7 @@ class RSByteBuffer extends Class3 {
 			}
 
 		} catch (RuntimeException var6) {
-			throw Class44.method1067(var6, "wa.SB(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
+			throw Class44.clientError(var6, "wa.SB(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
 		}
 	}
 
@@ -398,7 +398,7 @@ class RSByteBuffer extends Class3 {
 			this.buffer[this.index++] = (byte)(var1 + 128);
 			this.buffer[this.index++] = (byte)(var1 >> 8);
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.MA(" + var1 + ')');
+			throw Class44.clientError(var4, "wa.MA(" + var1 + ')');
 		}
 	}
 
@@ -407,7 +407,7 @@ class RSByteBuffer extends Class3 {
 			this.index += 2;
 			return var1 >= -54?-17:(255 & this.buffer[this.index - 2]) + ('\uff00' & this.buffer[this.index - 1] << 8);
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.BB(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.BB(" + var1 + ')');
 		}
 	}
 
@@ -424,7 +424,7 @@ class RSByteBuffer extends Class3 {
 			}
 
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "wa.IC(" + var0 + ')');
+			throw Class44.clientError(var2, "wa.IC(" + var0 + ')');
 		}
 	}
 
@@ -442,7 +442,7 @@ class RSByteBuffer extends Class3 {
 				throw new IllegalArgumentException();
 			}
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.UA(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.UA(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -451,7 +451,7 @@ class RSByteBuffer extends Class3 {
 			this.buffer[-1 + -var2 + this.index] = (byte)var2;
 			int var3 = 120 % ((-78 - var1) / 48);
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.MB(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.MB(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -483,7 +483,7 @@ class RSByteBuffer extends Class3 {
 
 			this.index = var5;
 		} catch (RuntimeException var13) {
-			throw Class44.method1067(var13, "wa.SC(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+			throw Class44.clientError(var13, "wa.SC(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ')');
 		}
 	}
 
@@ -507,7 +507,7 @@ class RSByteBuffer extends Class3 {
 
 			this.putByte((byte)-46, var2 & 127);
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.DB(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.DB(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -526,7 +526,7 @@ class RSByteBuffer extends Class3 {
 				throw new IllegalArgumentException();
 			}
 		} catch (RuntimeException var6) {
-			throw Class44.method1067(var6, "wa.VA(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var6, "wa.VA(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -546,7 +546,7 @@ class RSByteBuffer extends Class3 {
 				return var2;
 			}
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.UB(" + var1 + ')');
+			throw Class44.clientError(var4, "wa.UB(" + var1 + ')');
 		}
 	}
 
@@ -559,7 +559,7 @@ class RSByteBuffer extends Class3 {
 
 			}
 		} catch (RuntimeException var6) {
-			throw Class44.method1067(var6, "wa.HC(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
+			throw Class44.clientError(var6, "wa.HC(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
 		}
 	}
 
@@ -570,7 +570,7 @@ class RSByteBuffer extends Class3 {
 			this.buffer[this.index++] = (byte)(var1 >> 24);
 			this.buffer[this.index++] = (byte)(var1 >> 16);
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.GC(" + var1 + ')');
+			throw Class44.clientError(var4, "wa.GC(" + var1 + ')');
 		}
 	}
 
@@ -584,7 +584,7 @@ class RSByteBuffer extends Class3 {
 
 			return Class3_Sub13_Sub3.method178(this.buffer, -4114, -var2 + (this.index - 1), var2);
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.FC()");
+			throw Class44.clientError(var3, "wa.FC()");
 		}
 	}
 
@@ -811,7 +811,7 @@ class RSByteBuffer extends Class3 {
 
 			}
 		} catch (RuntimeException var19) {
-			throw Class44.method1067(var19, "wa.OA(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var19, "wa.OA(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ')');
 		}
 	}
 
@@ -824,7 +824,7 @@ class RSByteBuffer extends Class3 {
 			int var2 = this.buffer[this.index] & 255;
 			return 128 <= var2?-32768 + this.getShort(1):this.getByte((byte)-74);
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.JA(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.JA(" + var1 + ')');
 		}
 	}
 
@@ -838,7 +838,7 @@ class RSByteBuffer extends Class3 {
 
 			this.buffer[this.index++] = (byte)var1;
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.FB(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.FB(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -851,7 +851,7 @@ class RSByteBuffer extends Class3 {
 
 			return ((this.buffer[this.index - 2] & 255) << 24) + ((255 & this.buffer[this.index - 1]) << 16) + ('\uff00' & this.buffer[-4 + this.index] << 8) - -(this.buffer[this.index + -3] & 255);
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.NB(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.NB(" + var1 + ')');
 		}
 	}
 
@@ -864,7 +864,7 @@ class RSByteBuffer extends Class3 {
 
 			return (this.buffer[-1 + this.index] << 322035176 & '\uff00') - -(255 & -128 + this.buffer[this.index + -2]);
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.TB(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.TB(" + var1 + ')');
 		}
 	}
 
@@ -878,7 +878,7 @@ class RSByteBuffer extends Class3 {
 
 			return (255 & this.buffer[-4 + this.index]) + (16711680 & this.buffer[this.index - 2] << 1572599856) + ((255 & this.buffer[this.index + -1]) << -34836040) + ((this.buffer[-3 + this.index] & 255) << 481963272);
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.EA(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.EA(" + var1 + ')');
 		}
 	}
 
@@ -889,7 +889,7 @@ class RSByteBuffer extends Class3 {
 				this.buffer[this.index++] = (byte)(128 + var1);
 			}
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.LB(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.LB(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -903,7 +903,7 @@ class RSByteBuffer extends Class3 {
 			this.index = 0;
 			this.buffer = var1;
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.<init>(" + (var1 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var3, "wa.<init>(" + (var1 != null?"{...}":"null") + ')');
 		}
 	}
 
@@ -916,7 +916,7 @@ class RSByteBuffer extends Class3 {
 				this.buffer[this.index++] = (byte)(var1 >> 12970328);
 			}
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.IA(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.IA(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -928,7 +928,7 @@ class RSByteBuffer extends Class3 {
 
 			return 255 & 0 + -this.buffer[this.index++];
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.CB(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.CB(" + var1 + ')');
 		}
 	}
 
@@ -946,7 +946,7 @@ class RSByteBuffer extends Class3 {
 				return var2;
 			}
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.TC(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.TC(" + var1 + ')');
 		}
 	}
 	
@@ -966,7 +966,7 @@ class RSByteBuffer extends Class3 {
 
 			return var2;
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.EC(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.EC(" + var1 + ')');
 		}
 	}
 
@@ -974,7 +974,7 @@ class RSByteBuffer extends Class3 {
 		try {
 			return var1 != 0?-51:(byte)(-128 + this.buffer[this.index++]);
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.CA(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.CA(" + var1 + ')');
 		}
 	}
 
@@ -986,7 +986,7 @@ class RSByteBuffer extends Class3 {
 
 			this.buffer[this.index++] = (byte)(128 + var1);
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.KC(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.KC(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -1004,7 +1004,7 @@ class RSByteBuffer extends Class3 {
 
 			return var2;
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.SA(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.SA(" + var1 + ')');
 		}
 	}
 	
@@ -1031,7 +1031,7 @@ class RSByteBuffer extends Class3 {
 
 			}
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "wa.AA(" + var0 + ')');
+			throw Class44.clientError(var2, "wa.AA(" + var0 + ')');
 		}
 	}
 
@@ -1045,7 +1045,7 @@ class RSByteBuffer extends Class3 {
 				return var3;
 			}
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.QB(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.QB(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -1058,7 +1058,7 @@ class RSByteBuffer extends Class3 {
 			this.index += 3;
 			return (16711680 & this.buffer[this.index + -3] << -2022440336) + (('\uff00' & this.buffer[-2 + this.index] << -54462168) - -(this.buffer[this.index + -1] & 255));
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.GB(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.GB(" + var1 + ')');
 		}
 	}
 
@@ -1070,7 +1070,7 @@ class RSByteBuffer extends Class3 {
 
 			CS2Script.aClass93_2450.method1522(var0 ^ -114, var1);
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.OC(" + var0 + ',' + var1 + ')');
+			throw Class44.clientError(var3, "wa.OC(" + var0 + ',' + var1 + ')');
 		}
 	}
 
@@ -1083,7 +1083,7 @@ class RSByteBuffer extends Class3 {
 			this.buffer[this.index++] = (byte)var2;
 			this.buffer[this.index++] = (byte)(var2 >> 203327944);
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.PA(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.PA(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -1096,7 +1096,7 @@ class RSByteBuffer extends Class3 {
 
 			return var2 < 128 ?-64 + this.getByte((byte)-82):this.getShort(var1 + 21209) - '\uc000';
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.WB(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.WB(" + var1 + ')');
 		}
 	}
 
@@ -1106,7 +1106,7 @@ class RSByteBuffer extends Class3 {
 			this.index += 4;
 			return ((this.buffer[-3 + this.index] & 255) << -1597905000) - -(16711680 & this.buffer[this.index + -4] << 861399376) + (((this.buffer[this.index + -1] & 255) << 979767016) - -(255 & this.buffer[this.index + -2]));
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.NC(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.NC(" + var1 + ')');
 		}
 	}
 
@@ -1200,7 +1200,7 @@ class RSByteBuffer extends Class3 {
 				Class168.aClass3_Sub28_Sub17_2096.method699(TextCore.LoadingGeneral, var6, var5 + var7, 16777215, -1);
 			}
 		} catch (RuntimeException var14) {
-			throw Class44.method1067(var14, "wa.FA(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+			throw Class44.clientError(var14, "wa.FA(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
 		}
 	}
 
@@ -1221,7 +1221,7 @@ class RSByteBuffer extends Class3 {
 			this.putByte((byte)-23, var8.length);
 			this.putBytes(var8, 0, var8.length, var3 + 348);
 		} catch (RuntimeException var9) {
-			throw Class44.method1067(var9, "wa.KB(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+			throw Class44.clientError(var9, "wa.KB(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
 		}
 	}
 
@@ -1235,7 +1235,7 @@ class RSByteBuffer extends Class3 {
 				this.buffer[this.index++] = (byte)var3;
 			}
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.QA(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.QA(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -1247,7 +1247,7 @@ class RSByteBuffer extends Class3 {
 
 			return Class163_Sub2_Sub1.aClass94Array4016[var0].length(-26) > 0 ?RenderAnimationDefinition.method903(new RSString[]{Class140_Sub7.aClass94Array2935[var0], TextCore.Spacer, Class163_Sub2_Sub1.aClass94Array4016[var0]}, (byte)-86):Class140_Sub7.aClass94Array2935[var0];
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.RB(" + var0 + ',' + var1 + ')');
+			throw Class44.clientError(var3, "wa.RB(" + var0 + ',' + var1 + ')');
 		}
 	}
 
@@ -1259,7 +1259,7 @@ class RSByteBuffer extends Class3 {
 
 			return this.buffer[this.index++] & 255;
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "wa.RC(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.RC(" + var1 + ')');
 		}
 	}
 
@@ -1268,7 +1268,7 @@ class RSByteBuffer extends Class3 {
 			this.buffer[this.index++] = (byte)(var2 >> 2124857032);
 			this.buffer[this.index++] = (byte)var2;
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "wa.JC('" +  var2 + ')');
+			throw Class44.clientError(var4, "wa.JC('" +  var2 + ')');
 		}
 	}
 

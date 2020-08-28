@@ -169,7 +169,7 @@ final class Class39 {
 			}
 
 		} catch (RuntimeException var17) {
-			throw Class44.method1067(var17, "g.F(" + var0 + ',' + dynamic + ')');
+			throw Class44.clientError(var17, "g.F(" + var0 + ',' + dynamic + ')');
 		}
 	}
 
@@ -177,7 +177,7 @@ final class Class39 {
 		try {
 			;
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "g.B(" + var0 + ')');
+			throw Class44.clientError(var2, "g.B(" + var0 + ')');
 		}
 	}
 
@@ -194,7 +194,7 @@ final class Class39 {
 			Class164.anIntArray2048 = null;
 			Class3_Sub13_Sub38.spritePalette = null;
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "g.E(" + var0 + ')');
+			throw Class44.clientError(var2, "g.E(" + var0 + ')');
 		}
 	}
 
@@ -267,7 +267,7 @@ final class Class39 {
 			}
 
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "g.D(" + var0 + ')');
+			throw Class44.clientError(var4, "g.D(" + var0 + ')');
 		}
 	}
 
@@ -609,7 +609,7 @@ final class Class39 {
 				}
 			}
 		} catch (RuntimeException var23) {
-			throw Class44.method1067(var23, "g.G(" + var0 + ')');
+			throw Class44.clientError(var23, "g.G(" + var0 + ')');
 		}
 	}
 
@@ -638,7 +638,7 @@ final class Class39 {
 			Class93.anInt1325 = var1.getArchiveForName(RSString.createRSString("compass"), (byte)-30);
 			Class3_Sub18.anInt2471 = var1.getArchiveForName(RSString.createRSString("hint_mapedge"), (byte)-30);
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "g.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var3, "g.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
 		}
 	}
 

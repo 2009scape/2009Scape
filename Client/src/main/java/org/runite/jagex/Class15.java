@@ -63,7 +63,7 @@ final class Class15 implements Runnable {
             }
          }
       } catch (RuntimeException var13) {
-         throw Class44.method1067(var13, "cj.D(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var13, "cj.D(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
@@ -205,7 +205,7 @@ final class Class15 implements Runnable {
          }
 
       } catch (RuntimeException var26) {
-         throw Class44.method1067(var26, "cj.H(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var26, "cj.H(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -231,7 +231,7 @@ final class Class15 implements Runnable {
             return var0?Class12.method873((byte)62, var2):var2;
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "cj.E(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "cj.E(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -258,7 +258,7 @@ final class Class15 implements Runnable {
          }
 
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "cj.run()");
+         throw Class44.clientError(var9, "cj.run()");
       }
    }
 
@@ -288,7 +288,7 @@ final class Class15 implements Runnable {
          Class39.method1035((byte)116);
          return var1;
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "cj.C(" + var0 + ')');
+         throw Class44.clientError(var7, "cj.C(" + var0 + ')');
       }
    }
 
@@ -302,7 +302,7 @@ final class Class15 implements Runnable {
 
          localNPCIndexes = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "cj.G(" + var0 + ')');
+         throw Class44.clientError(var2, "cj.G(" + var0 + ')');
       }
    }
 
@@ -311,7 +311,7 @@ final class Class15 implements Runnable {
          int var2 = -66 / ((67 - var1) / 41);
          return var0 & 255;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "cj.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "cj.A(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -331,7 +331,7 @@ final class Class15 implements Runnable {
          int var9 = Class3_Sub28_Sub5.aCalendar3581.get(13);
          return RenderAnimationDefinition.method903(new RSString[]{TextCore.DaysOfTheWeek[var3 + -1], Class3_Sub13_Sub12.aClass94_3145, Class72.method1298((byte)9, var4 / 10), Class72.method1298((byte)9, var4 % 10), Class161.aClass94_2025, TextCore.MonthsOfTheYear[var5], Class161.aClass94_2025, Class72.method1298((byte)9, var6), Class24.aClass94_465, Class72.method1298((byte)9, var7 / 10), Class72.method1298((byte)9, var7 % 10), Class155.char_colon, Class72.method1298((byte)9, var8 / 10), Class72.method1298((byte)9, var8 % 10), Class155.char_colon, Class72.method1298((byte)9, var9 / 10), Class72.method1298((byte)9, var9 % 10), WorldListCountry.aClass94_500}, (byte)-96);
       } catch (RuntimeException var10) {
-         throw Class44.method1067(var10, "cj.F(" + var0 + ',' + var2 + ')');
+         throw Class44.clientError(var10, "cj.F(" + var0 + ',' + var2 + ')');
       }
    }
 
@@ -357,7 +357,7 @@ final class Class15 implements Runnable {
 
          return var9;
       } catch (RuntimeException var12) {
-         throw Class44.method1067(var12, "cj.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ')');
+         throw Class44.clientError(var12, "cj.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ')');
       }
    }
 

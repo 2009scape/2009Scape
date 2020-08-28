@@ -19,7 +19,7 @@ final class Class3_Sub21 extends Class3 {
 
          return var3 >= this.anInt2492 && var3 <= this.anInt2495 && this.anInt2494 <= var2 && var2 <= this.anInt2497;
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "lh.D(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "lh.D(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -33,7 +33,7 @@ final class Class3_Sub21 extends Class3 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "lh.E(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "lh.E(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -122,7 +122,7 @@ final class Class3_Sub21 extends Class3 {
          aClass155_2491 = null;
          aClass94_2498 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "lh.B(" + var0 + ')');
+         throw Class44.clientError(var2, "lh.B(" + var0 + ')');
       }
    }
 
@@ -136,7 +136,7 @@ final class Class3_Sub21 extends Class3 {
 
          Class47.aClass93_743.method1524(3);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "lh.C(" + var0 + ')');
+         throw Class44.clientError(var2, "lh.C(" + var0 + ')');
       }
    }
 
@@ -147,7 +147,7 @@ final class Class3_Sub21 extends Class3 {
          this.anInt2495 = var3;
          this.anInt2492 = var1;
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "lh.<init>(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "lh.<init>(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 

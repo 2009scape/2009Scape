@@ -23,7 +23,7 @@ final class Class104 implements Interface5 {
             Class67.aClass93_1013.method1524(3);
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ob.F(" + var0 + ')');
+         throw Class44.clientError(var2, "ob.F(" + var0 + ')');
       }
    }
 
@@ -69,7 +69,7 @@ final class Class104 implements Interface5 {
             return true;
          }
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "ob.E(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var8, "ob.E(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -313,7 +313,7 @@ final class Class104 implements Interface5 {
 
          }
       } catch (RuntimeException var24) {
-         throw Class44.method1067(var24, "ob.K(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var24, "ob.K(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
@@ -357,7 +357,7 @@ final class Class104 implements Interface5 {
       try {
          return 0;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ob.C()");
+         throw Class44.clientError(var2, "ob.C()");
       }
    }
 
@@ -408,7 +408,7 @@ final class Class104 implements Interface5 {
 
          var2.glActiveTexture('\u84c0');
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "ob.B(" + var1 + ')');
+         throw Class44.clientError(var8, "ob.B(" + var1 + ')');
       }
    }
 
@@ -417,7 +417,7 @@ final class Class104 implements Interface5 {
          GL var1 = HDToolKit.gl;
          var1.glCallList(1 + this.anInt2173);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ob.A()");
+         throw Class44.clientError(var2, "ob.A()");
       }
    }
 
@@ -426,7 +426,7 @@ final class Class104 implements Interface5 {
          GL var1 = HDToolKit.gl;
          var1.glCallList(this.anInt2173);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ob.D()");
+         throw Class44.clientError(var2, "ob.D()");
       }
    }
 
@@ -441,7 +441,7 @@ final class Class104 implements Interface5 {
          }
          aClass94_2175 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ob.J(" + var0 + ')');
+         throw Class44.clientError(var2, "ob.J(" + var0 + ')');
       }
    }
 
@@ -480,7 +480,7 @@ final class Class104 implements Interface5 {
          var2.glActiveTexture('\u84c0');
          var2.glEndList();
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ob.I(" + var1 + ')');
+         throw Class44.clientError(var3, "ob.I(" + var1 + ')');
       }
    }
 
@@ -488,7 +488,7 @@ final class Class104 implements Interface5 {
       try {
          this.method1631(2);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ob.<init>()");
+         throw Class44.clientError(var2, "ob.<init>()");
       }
    }
 
@@ -503,7 +503,7 @@ final class Class104 implements Interface5 {
          }
 
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "ob.G(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var7, "ob.G(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 

@@ -28,7 +28,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
          var1.setColorModel(this.aColorModel2979);
          var1.setHints(14);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "di.addConsumer(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "di.addConsumer(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -42,7 +42,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "di.I(" + var0 + ')');
+         throw Class44.clientError(var2, "di.I(" + var0 + ')');
       }
    }
 
@@ -57,7 +57,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
 
          }
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "di.N(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var7, "di.N(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 
@@ -68,7 +68,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "di.removeConsumer(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "di.removeConsumer(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -82,7 +82,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
             var5.setClip(var7);
          }
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "di.E(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ')');
+         throw Class44.clientError(var8, "di.E(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ')');
       }
    }
 
@@ -90,7 +90,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
       try {
          this.addConsumer(var1);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "di.startProduction(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "di.startProduction(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -659,7 +659,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
          }
 
       } catch (RuntimeException var33) {
-         throw Class44.method1067(var33, "di.K(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var33, "di.K(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -672,7 +672,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
             }
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "di.L(" + var1 + ')');
+         throw Class44.clientError(var3, "di.L(" + var1 + ')');
       }
    }
 
@@ -680,7 +680,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
       try {
          return this.anImageConsumer2978 == var1;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "di.isConsumer(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "di.isConsumer(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -894,7 +894,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
             return false;
          }
       } catch (RuntimeException var26) {
-         throw Class44.method1067(var26, "di.J(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ',' + var11 + ')');
+         throw Class44.clientError(var26, "di.J(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ',' + var11 + ')');
       }
    }
 
@@ -907,7 +907,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
          this.method2190(var4 ^ 19661184);
          var3.drawImage(this.anImage2009, var1, var2, this);
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "di.C(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
+         throw Class44.clientError(var6, "di.C(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
       }
    }
 
@@ -930,7 +930,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "di.F(" + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var6, "di.F(" + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ')');
       }
    }
 
@@ -938,7 +938,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
       try {
          return true;
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "di.imageUpdate(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var8, "di.imageUpdate(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
@@ -950,7 +950,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
 
          Class154.aClass93_1955.method1523((byte)-110);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "di.M(" + var0 + ')');
+         throw Class44.clientError(var2, "di.M(" + var0 + ')');
       }
    }
 

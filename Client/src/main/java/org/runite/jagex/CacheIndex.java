@@ -39,7 +39,7 @@ final class CacheIndex {
             return false;
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ve.IA(" + var1 + ')');
+         throw Class44.clientError(var5, "ve.IA(" + var1 + ')');
       }
    }
 
@@ -55,7 +55,7 @@ final class CacheIndex {
             return 0;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ve.J(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "ve.J(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -75,7 +75,7 @@ final class CacheIndex {
 
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ve.R(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "ve.R(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -93,7 +93,7 @@ final class CacheIndex {
             return 0;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ve.P(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "ve.P(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -114,7 +114,7 @@ final class CacheIndex {
             return false;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ve.GA(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "ve.GA(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -130,7 +130,7 @@ final class CacheIndex {
             throw new IllegalStateException("");
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ve.T(" + var1 + ')');
+         throw Class44.clientError(var3, "ve.T(" + var1 + ')');
       }
    }
 
@@ -142,7 +142,7 @@ final class CacheIndex {
 
          aClass153_1948 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ve.AA(" + var0 + ')');
+         throw Class44.clientError(var2, "ve.AA(" + var0 + ')');
       }
    }
 
@@ -156,7 +156,7 @@ final class CacheIndex {
             return -1;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ve.EA(" + (name != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "ve.EA(" + (name != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 
@@ -172,7 +172,7 @@ final class CacheIndex {
             return -1;
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ve.D(" + var1 + ')');
+         throw Class44.clientError(var3, "ve.D(" + var1 + ')');
       }
    }
 
@@ -194,7 +194,7 @@ final class CacheIndex {
 
          return true;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ve.W(" + var1 + ')');
+         throw Class44.clientError(var3, "ve.W(" + var1 + ')');
       }
    }
 
@@ -218,7 +218,7 @@ final class CacheIndex {
             return null;
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "ve.C(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var6, "ve.C(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ')');
       }
    }
 
@@ -231,7 +231,7 @@ final class CacheIndex {
             int var4 = 123 % ((var1 - -60) / 62);
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ve.V(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "ve.V(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -255,7 +255,7 @@ final class CacheIndex {
             return false;
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "ve.DA(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var6, "ve.DA(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
       }
    }
 
@@ -291,7 +291,7 @@ final class CacheIndex {
             return null;
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "ve.BA(" + archive + ',' + (xteaKeys != null?"{...}":"null") + ',' + var3 + ',' + file + ')');
+         throw Class44.clientError(var6, "ve.BA(" + archive + ',' + (xteaKeys != null?"{...}":"null") + ',' + var3 + ',' + file + ')');
       }
    }
 
@@ -305,7 +305,7 @@ final class CacheIndex {
             return false;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ve.O(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "ve.O(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -320,7 +320,7 @@ final class CacheIndex {
             }
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ve.B(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "ve.B(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -340,7 +340,7 @@ final class CacheIndex {
             return false;
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ve.FA(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "ve.FA(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -362,7 +362,7 @@ final class CacheIndex {
             return false;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ve.E(" + var1 + ',' + archiveId + ')');
+         throw Class44.clientError(var4, "ve.E(" + var1 + ',' + archiveId + ')');
       }
    }
 
@@ -374,7 +374,7 @@ final class CacheIndex {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ve.L(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "ve.L(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -424,7 +424,7 @@ final class CacheIndex {
                try {
                   var23 = Class3_Sub28_Sub13.method623((byte)-125, var21);
                } catch (Throwable var19) {
-                  throw Class44.method1067(var19, "T3 - " + (xteaKeys != null) + "," + archive + "," + var21.length + "," + Class38.method1026(var21, var21.length, false) + "," + Class38.method1026(var21, var21.length - 2, false) + "," + this.aClass62_1949.archiveCRCs[archive] + "," + this.aClass62_1949.anInt964);
+                  throw Class44.clientError(var19, "T3 - " + (xteaKeys != null) + "," + archive + "," + var21.length + "," + Class38.method1026(var21, var21.length, false) + "," + Class38.method1026(var21, var21.length - 2, false) + "," + this.aClass62_1949.archiveCRCs[archive] + "," + this.aClass62_1949.anInt964);
                }
 
                if(this.aBoolean1945) {
@@ -509,7 +509,7 @@ final class CacheIndex {
             }
          }
       } catch (RuntimeException var20) {
-         throw Class44.method1067(var20, "ve.I(" + archive + ',' + var2 + ',' + (xteaKeys != null?"{...}":"null") + ')');
+         throw Class44.clientError(var20, "ve.I(" + archive + ',' + var2 + ',' + (xteaKeys != null?"{...}":"null") + ')');
       }
    }
 
@@ -521,7 +521,7 @@ final class CacheIndex {
 
          return this.getFile(archive, (int[])null, 52, file);
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ve.M(" + archive + ',' + var2 + ',' + file + ')');
+         throw Class44.clientError(var5, "ve.M(" + archive + ',' + var2 + ',' + file + ')');
       }
    }
 
@@ -538,7 +538,7 @@ final class CacheIndex {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ve.F(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "ve.F(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -554,7 +554,7 @@ final class CacheIndex {
             return false;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ve.S(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "ve.S(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 
@@ -586,7 +586,7 @@ final class CacheIndex {
             return 0;
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ve.N(" + var1 + ')');
+         throw Class44.clientError(var5, "ve.N(" + var1 + ')');
       }
    }
 
@@ -603,7 +603,7 @@ final class CacheIndex {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ve.Q(" + var1 + ')');
+         throw Class44.clientError(var3, "ve.Q(" + var1 + ')');
       }
    }
 
@@ -625,7 +625,7 @@ final class CacheIndex {
             }
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ve.HA(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "ve.HA(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -643,7 +643,7 @@ final class CacheIndex {
             return false;
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ve.K(" + archive + ',' + var2 + ',' + file + ')');
+         throw Class44.clientError(var5, "ve.K(" + archive + ',' + var2 + ',' + file + ')');
       }
    }
 
@@ -667,7 +667,7 @@ final class CacheIndex {
             return null;
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ve.CA(" + file + ',' + archive + ',' + var3 + ')');
+         throw Class44.clientError(var5, "ve.CA(" + file + ',' + archive + ',' + var3 + ')');
       }
    }
 
@@ -692,7 +692,7 @@ final class CacheIndex {
             return null;
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ve.G(" + var1 + ',' + archiveId + ')');
+         throw Class44.clientError(var5, "ve.G(" + var1 + ',' + archiveId + ')');
       }
    }
 
@@ -702,7 +702,7 @@ final class CacheIndex {
          this.aBoolean1945 = var2;
          this.aBoolean1946 = var3;
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ve.<init>(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "ve.<init>(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -718,7 +718,7 @@ final class CacheIndex {
             return 0;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ve.H(" + archiveId + ',' + var2 + ')');
+         throw Class44.clientError(var4, "ve.H(" + archiveId + ',' + var2 + ')');
       }
    }
 
@@ -734,7 +734,7 @@ final class CacheIndex {
          var5.anInt3598 = var4;
          var5.anInt3597 = var3;
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "ve.U(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "ve.U(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -756,7 +756,7 @@ final class CacheIndex {
             return false;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ve.A(" + var1 + ',' + archiveId + ')');
+         throw Class44.clientError(var4, "ve.A(" + var1 + ',' + archiveId + ')');
       }
    }
 

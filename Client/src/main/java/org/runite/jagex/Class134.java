@@ -23,7 +23,7 @@ final class Class134 {
          aLongArray1766 = null;
          aClass94_1760 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "sh.D(" + var0 + ')');
+         throw Class44.clientError(var2, "sh.D(" + var0 + ')');
       }
    }
 
@@ -52,7 +52,7 @@ final class Class134 {
             }
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "sh.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "sh.A(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -64,7 +64,7 @@ final class Class134 {
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "sh.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "sh.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -104,7 +104,7 @@ final class Class134 {
          }
 
       } catch (RuntimeException var14) {
-         throw Class44.method1067(var14, "sh.B(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var14, "sh.B(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ')');
       }
    }
 

@@ -210,7 +210,7 @@ final class Class45 {
 
 			}
 		} catch (RuntimeException var15) {
-			throw Class44.method1067(var15, "gk.A(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var15, "gk.A(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
 		}
 	}
 
@@ -224,7 +224,7 @@ final class Class45 {
 
 			aClass153_731 = null;
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "gk.E(" + var0 + ')');
+			throw Class44.clientError(var2, "gk.E(" + var0 + ')');
 		}
 	}
 
@@ -322,7 +322,7 @@ final class Class45 {
 			}
 
 		} catch (RuntimeException var15) {
-			throw Class44.method1067(var15, "gk.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+			throw Class44.clientError(var15, "gk.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
 		}
 	}
 
@@ -331,7 +331,7 @@ final class Class45 {
 			Class3_Sub13_Sub9.anIntArray3107 = InputStream_Sub1.method62(true, 14585, 8, 2048, 4, 0.4F, 8, 35);
 			int var1 = -5 / ((var0 - 45) / 59);
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "gk.C(" + var0 + ')');
+			throw Class44.clientError(var2, "gk.C(" + var0 + ')');
 		}
 	}
 
@@ -350,7 +350,7 @@ final class Class45 {
 
 			var1.aClass3_Sub28_2578.aClass3_Sub28_2570 = var1;
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "gk.D(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+			throw Class44.clientError(var4, "gk.D(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
 		}
 	}
 

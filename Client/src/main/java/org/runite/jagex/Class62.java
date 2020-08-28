@@ -28,7 +28,7 @@ final class Class62 {
       try {
          aClass94_946 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ii.A(" + var0 + ')');
+         throw Class44.clientError(var2, "ii.A(" + var0 + ')');
       }
    }
 
@@ -91,7 +91,7 @@ final class Class62 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ii.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "ii.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -114,7 +114,7 @@ final class Class62 {
             Class140_Sub3.anInt2743 = 0;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ii.D(" + var0 + ')');
+         throw Class44.clientError(var4, "ii.D(" + var0 + ')');
       }
    }
 
@@ -232,7 +232,7 @@ final class Class62 {
             throw new RuntimeException();
          }
       } catch (RuntimeException var14) {
-         throw Class44.method1067(var14, "ii.C(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var14, "ii.C(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -245,7 +245,7 @@ final class Class62 {
             throw new RuntimeException();
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ii.<init>(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "ii.<init>(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 

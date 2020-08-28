@@ -40,7 +40,7 @@ final class Class97 {
             throw new RuntimeException("Can only retrieve a full image cache");
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "nd.F(" + var1 + ')');
+         throw Class44.clientError(var3, "nd.F(" + var1 + ')');
       }
    }
 
@@ -60,7 +60,7 @@ final class Class97 {
             this.aClass61_1366 = null;
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "nd.E(" + var1 + ')');
+         throw Class44.clientError(var3, "nd.E(" + var1 + ')');
       }
    }
 
@@ -81,7 +81,7 @@ final class Class97 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "nd.A(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "nd.A(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -101,7 +101,7 @@ final class Class97 {
             aClass94_1374 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "nd.B(" + var0 + ')');
+         throw Class44.clientError(var2, "nd.B(" + var0 + ')');
       }
    }
 
@@ -114,7 +114,7 @@ final class Class97 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "nd.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "nd.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -154,7 +154,7 @@ final class Class97 {
             }
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "nd.D(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var6, "nd.D(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -165,7 +165,7 @@ final class Class97 {
          this.aClass3_Sub20Array1371 = new Class3_Sub20[this.anInt1369];
          this.anIntArrayArrayArray1362 = new int[this.anInt1367][3][var3];
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "nd.<init>(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "nd.<init>(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 

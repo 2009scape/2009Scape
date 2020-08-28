@@ -27,7 +27,7 @@ final class Class121 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ql.C(" + var0 + ')');
+         throw Class44.clientError(var2, "ql.C(" + var0 + ')');
       }
    }
 
@@ -107,7 +107,7 @@ final class Class121 {
             return var12.method146(var31, var33, var32, var30, var19, var20, !var11?var21:-256 & var21, var4 != null?(float)(var33 + -Class3_Sub23.method408(var15, (byte)103, var14, var4, var6, var17)) / var1:0.0F);
          }
       } catch (RuntimeException var29) {
-         throw Class44.method1067(var29, "ql.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ',' + var8 + ',' + var9 + ',' + var10 + ',' + var11 + ',' + (var12 != null?"{...}":"null") + ',' + (var13 != null?"{...}":"null") + ',' + var14 + ',' + var15 + ',' + (var16 != null?"{...}":"null") + ',' + var17 + ')');
+         throw Class44.clientError(var29, "ql.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ',' + var8 + ',' + var9 + ',' + var10 + ',' + var11 + ',' + (var12 != null?"{...}":"null") + ',' + (var13 != null?"{...}":"null") + ',' + var14 + ',' + var15 + ',' + (var16 != null?"{...}":"null") + ',' + var17 + ')');
       }
    }
 
@@ -237,7 +237,7 @@ final class Class121 {
 
          return -1;
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "ql.D(" + var0 + ')');
+         throw Class44.clientError(var6, "ql.D(" + var0 + ')');
       }
    }
 
@@ -264,7 +264,7 @@ final class Class121 {
             }
          }
       } catch (RuntimeException var11) {
-         throw Class44.method1067(var11, "ql.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var11, "ql.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 

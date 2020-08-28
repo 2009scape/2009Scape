@@ -68,7 +68,7 @@ final class Class117 {
             Class143.loadingStage = var0;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "pl.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "pl.C(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -94,7 +94,7 @@ final class Class117 {
          PacketParser.aByteArrayArrayArray81 = new byte[var2][104][104];
          Class3_Sub13_Sub36.aByteArrayArrayArray3430 = new byte[var2][104][104];
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "pl.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "pl.B(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -108,7 +108,7 @@ final class Class117 {
 
          anIntArray1613 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "pl.D(" + var0 + ')');
+         throw Class44.clientError(var2, "pl.D(" + var0 + ')');
       }
    }
 
@@ -126,7 +126,7 @@ final class Class117 {
          Class39.method1035((byte)122);
          return var0 >= -51?(Class3_Sub28_Sub16_Sub2)null:var6;
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "pl.A(" + var0 + ')');
+         throw Class44.clientError(var5, "pl.A(" + var0 + ')');
       }
    }
 

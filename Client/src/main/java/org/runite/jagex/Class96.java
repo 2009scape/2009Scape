@@ -133,7 +133,7 @@ final class Class96 {
             return;
          }
       } catch (RuntimeException var17) {
-         throw Class44.method1067(var17, "nc.A(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var17, "nc.A(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -145,7 +145,7 @@ final class Class96 {
 
          aClass94_1349 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "nc.B(" + var0 + ')');
+         throw Class44.clientError(var2, "nc.B(" + var0 + ')');
       }
    }
 

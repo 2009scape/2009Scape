@@ -38,7 +38,7 @@ final class Class166 {
          aClass3_Sub28_Sub16Array2072 = null;
          aClass94_2074 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "wh.B(" + var0 + ')');
+         throw Class44.clientError(var2, "wh.B(" + var0 + ')');
       }
    }
 
@@ -60,7 +60,7 @@ final class Class166 {
 
          Class163_Sub2_Sub1.aClass93_4015.method1524(3);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "wh.F(" + var0 + ')');
+         throw Class44.clientError(var2, "wh.F(" + var0 + ')');
       }
    }
 
@@ -104,7 +104,7 @@ final class Class166 {
          }
 
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "wh.D(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var7, "wh.D(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -124,7 +124,7 @@ final class Class166 {
          Class39.method1035((byte)116);
          return (AbstractIndexedSprite)var1;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "wh.A(" + var0 + ')');
+         throw Class44.clientError(var2, "wh.A(" + var0 + ')');
       }
    }
 
@@ -135,7 +135,7 @@ final class Class166 {
             Class3_Sub13_Sub31.aClass93_3369.method1522(var0 ^ 1130, var1);
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "wh.E(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "wh.E(" + var0 + ',' + var1 + ')');
       }
    }
 

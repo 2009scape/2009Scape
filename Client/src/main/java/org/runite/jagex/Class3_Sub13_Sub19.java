@@ -38,7 +38,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
 
          this.method263(0);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "mc.P(" + var1 + ')');
+         throw Class44.clientError(var3, "mc.P(" + var1 + ')');
       }
    }
 
@@ -52,7 +52,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
          var3.g((byte)33);
          var3.anInt3598 = var2;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "mc.O(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "mc.O(" + var0 + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -70,7 +70,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
          aClass94_3237 = null;
          aClass3_Sub28_Sub16_Sub2_3221 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "mc.F(" + var0 + ')');
+         throw Class44.clientError(var2, "mc.F(" + var0 + ')');
       }
    }
 
@@ -111,7 +111,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "mc.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var5, "mc.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }
    }
 
@@ -142,7 +142,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
 
          }
       } catch (RuntimeException var14) {
-         throw Class44.method1067(var14, "mc.Q(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
+         throw Class44.clientError(var14, "mc.Q(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
       }
    }
 
@@ -187,7 +187,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
 
          this.anIntArray3230[this.anInt3233] = 4096;
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "mc.E(" + var1 + ')');
+         throw Class44.clientError(var9, "mc.E(" + var1 + ')');
       }
    }
 
@@ -212,7 +212,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "mc.C(" + var0 + ')');
+         throw Class44.clientError(var2, "mc.C(" + var0 + ')');
       }
    }
 
@@ -275,7 +275,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
          var4 = -48 % ((30 - var2) / 36);
          return var3;
       } catch (RuntimeException var17) {
-         throw Class44.method1067(var17, "mc.D(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var17, "mc.D(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -292,7 +292,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "mc.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "mc.B(" + var0 + ',' + var1 + ')');
       }
    }
 

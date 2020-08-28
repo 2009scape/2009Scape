@@ -25,7 +25,7 @@ final class Class3_Sub13_Sub38 extends Class3_Sub13 {
             anIntArray3456 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "vc.B(" + var0 + ')');
+         throw Class44.clientError(var2, "vc.B(" + var0 + ')');
       }
    }
 
@@ -37,7 +37,7 @@ final class Class3_Sub13_Sub38 extends Class3_Sub13 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "vc.P(" + var1 + ')');
+         throw Class44.clientError(var3, "vc.P(" + var1 + ')');
       }
    }
 
@@ -61,7 +61,7 @@ final class Class3_Sub13_Sub38 extends Class3_Sub13 {
             ;
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "vc.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var5, "vc.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }
    }
 
@@ -151,7 +151,7 @@ final class Class3_Sub13_Sub38 extends Class3_Sub13 {
 
          return var3;
       } catch (RuntimeException var28) {
-         throw Class44.method1067(var28, "vc.D(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var28, "vc.D(" + var1 + ',' + var2 + ')');
       }
    }
 

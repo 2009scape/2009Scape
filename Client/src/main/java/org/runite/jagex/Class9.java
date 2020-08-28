@@ -87,7 +87,7 @@ final class Class9 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "bb.A(" + var0 + ')');
+         throw Class44.clientError(var3, "bb.A(" + var0 + ')');
       }
    }
 
@@ -100,7 +100,7 @@ final class Class9 {
             aByteArrayArrayArray113 = (byte[][][])null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "bb.B(" + var0 + ')');
+         throw Class44.clientError(var2, "bb.B(" + var0 + ')');
       }
    }
 

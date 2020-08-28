@@ -192,7 +192,7 @@ final class RSInterface {
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "be.P(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var6, "be.P(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -247,7 +247,7 @@ final class RSInterface {
             return true;
          }
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "be.G(" + var1 + ')');
+         throw Class44.clientError(var7, "be.G(" + var1 + ')');
       }
    }
 
@@ -269,7 +269,7 @@ final class RSInterface {
 
          return RenderAnimationDefinition.method903(new RSString[]{Class30.aClass94_577, var1, Class3_Sub28_Sub7.aClass94_3601, Class72.method1298((byte)9, Class3_Sub20.language), Class151.aClass94_1932, Class72.method1298((byte)9, Class3_Sub26.anInt2554), var2, Class140_Sub3.aClass94_2735}, (byte)-61);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "be.N(" + var0 + ')');
+         throw Class44.clientError(var3, "be.N(" + var0 + ')');
       }
    }
 
@@ -289,7 +289,7 @@ final class RSInterface {
          this.aClass94Array171[var3] = var2;
          int var7 = -124 % ((-10 - var1) / 60);
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "be.B(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var6, "be.B(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }
    }
 
@@ -558,7 +558,7 @@ final class RSInterface {
 
          this.aClass3_Sub1_257 = new Class3_Sub1(var5, -1);
       } catch (RuntimeException var12) {
-         throw Class44.method1067(var12, "be.M(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var12, "be.M(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -590,7 +590,7 @@ final class RSInterface {
             return null;
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "be.I(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "be.I(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -603,7 +603,7 @@ final class RSInterface {
 
          aClass94_251 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "be.F(" + var0 + ')');
+         throw Class44.clientError(var2, "be.F(" + var0 + ')');
       }
    }
 
@@ -612,7 +612,7 @@ final class RSInterface {
          Class3_Sub25 var3 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var0, 0);
          return null == var3?-1:(0 <= var2 && var2 < var3.anIntArray2547.length?(var1 < 39?-69:var3.anIntArray2547[var2]):-1);
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "be.J(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "be.J(" + var0 + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -643,7 +643,7 @@ final class RSInterface {
             return (Object[])null;
          }
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "be.K(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var7, "be.K(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -665,7 +665,7 @@ final class RSInterface {
             return var4;
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "be.H(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var6, "be.H(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 
@@ -682,7 +682,7 @@ final class RSInterface {
          this.itemIds[var2] = this.itemIds[var1];
          this.itemIds[var1] = var4;
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "be.L(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "be.L(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -786,7 +786,7 @@ final class RSInterface {
             }
          }
       } catch (RuntimeException var14) {
-         throw Class44.method1067(var14, "be.E(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var14, "be.E(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ')');
       }
    }
 
@@ -861,7 +861,7 @@ final class RSInterface {
             }
          }
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "be.O(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var8, "be.O(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -1071,7 +1071,7 @@ final class RSInterface {
          this.anIntArray211 = this.method863(buffer, false);
          this.anIntArray185 = this.method863(buffer, false);
       } catch (RuntimeException var10) {
-         throw Class44.method1067(var10, "be.C(" + var1 + ',' + (buffer != null?"{...}":"null") + ')');
+         throw Class44.clientError(var10, "be.C(" + var1 + ',' + (buffer != null?"{...}":"null") + ')');
       }
    }
 
@@ -1097,7 +1097,7 @@ final class RSInterface {
             }
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "be.A(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "be.A(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 
@@ -1105,7 +1105,7 @@ final class RSInterface {
       try {
          return var1 != 16711935 ?(var0 < 97?-63:Class56.method1186(0, var1)):-1;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "be.D(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "be.D(" + var0 + ',' + var1 + ')');
       }
    }
 

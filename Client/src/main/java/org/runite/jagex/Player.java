@@ -37,7 +37,7 @@ final class Player extends Class140_Sub4 {
             return Node.method522(this.class52.pnpcId, var1 + 26998).size;
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "e.H(" + var1 + ')');
+         throw Class44.clientError(var3, "e.H(" + var1 + ')');
       }
    }
 
@@ -49,7 +49,7 @@ final class Player extends Class140_Sub4 {
 
          return this.renderAnimationId;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "e.B(" + var1 + ')');
+         throw Class44.clientError(var3, "e.B(" + var1 + ')');
       }
    }
 
@@ -167,7 +167,7 @@ final class Player extends Class140_Sub4 {
          }
 
       } catch (RuntimeException var18) {
-         throw Class44.method1067(var18, "e.P(" + var1 + ',' + (buffer != null?"{...}":"null") + ')');
+         throw Class44.clientError(var18, "e.P(" + var1 + ',' + (buffer != null?"{...}":"null") + ')');
       }
    }
 
@@ -332,7 +332,7 @@ final class Player extends Class140_Sub4 {
             }
          }
       } catch (RuntimeException var22) {
-         throw Class44.method1067(var22, "e.IA(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var11 + ',' + (var12 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var22, "e.IA(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var11 + ',' + (var12 != null?"{...}":"null") + ')');
       }
    }
 
@@ -358,7 +358,7 @@ final class Player extends Class140_Sub4 {
 
          }
       } catch (RuntimeException var21) {
-         throw Class44.method1067(var21, "e.N(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ',' + var11 + ',' + var12 + ',' + var13 + ',' + var14 + ',' + var15 + ')');
+         throw Class44.clientError(var21, "e.N(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ',' + var11 + ',' + var12 + ',' + var13 + ',' + var14 + ',' + var15 + ')');
       }
    }
 
@@ -370,7 +370,7 @@ final class Player extends Class140_Sub4 {
 
          return this.class52 != null;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "e.L(" + var1 + ')');
+         throw Class44.clientError(var3, "e.L(" + var1 + ')');
       }
    }
 
@@ -391,7 +391,7 @@ final class Player extends Class140_Sub4 {
 
          return var2;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "e.Q(" + var1 + ')');
+         throw Class44.clientError(var3, "e.Q(" + var1 + ')');
       }
    }
 
@@ -402,7 +402,7 @@ final class Player extends Class140_Sub4 {
          super.method1967(var1 + -128, this.getSize((byte)114), var2, var4, var3);
 
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "e.O(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "e.O(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -419,7 +419,7 @@ final class Player extends Class140_Sub4 {
 
          anIntArray3954 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "e.R(" + var0 + ')');
+         throw Class44.clientError(var2, "e.R(" + var0 + ')');
       }
    }
 
@@ -427,7 +427,7 @@ final class Player extends Class140_Sub4 {
       try {
          return this.anInt2820;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "e.MA()");
+         throw Class44.clientError(var2, "e.MA()");
       }
    }
 

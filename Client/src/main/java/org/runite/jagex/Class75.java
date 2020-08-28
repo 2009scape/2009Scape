@@ -22,7 +22,7 @@ abstract class Class75 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "kf.J(" + var0 + ')');
+         throw Class44.clientError(var2, "kf.J(" + var0 + ')');
       }
    }
 
@@ -50,7 +50,7 @@ abstract class Class75 {
          this.anInt1106 = var3;
          this.anInt1101 = var1;
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "kf.<init>(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "kf.<init>(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -64,7 +64,7 @@ abstract class Class75 {
 
          return 255 & var0;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "kf.H(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "kf.H(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -80,7 +80,7 @@ abstract class Class75 {
 
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "kf.G(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "kf.G(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -97,7 +97,7 @@ abstract class Class75 {
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "kf.I(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "kf.I(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 

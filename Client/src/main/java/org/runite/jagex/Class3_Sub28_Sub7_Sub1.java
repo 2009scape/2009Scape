@@ -21,7 +21,7 @@ final class Class3_Sub28_Sub7_Sub1 extends Class3_Sub28_Sub7 {
             var2.a(true);
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "he.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "he.C(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -29,7 +29,7 @@ final class Class3_Sub28_Sub7_Sub1 extends Class3_Sub28_Sub7 {
       try {
          return !var1?(Object)null:this.anObject4044;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "he.B(" + var1 + ')');
+         throw Class44.clientError(var3, "he.B(" + var1 + ')');
       }
    }
 
@@ -48,7 +48,7 @@ final class Class3_Sub28_Sub7_Sub1 extends Class3_Sub28_Sub7 {
 
          aClass93_4051 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "he.D(" + var0 + ')');
+         throw Class44.clientError(var2, "he.D(" + var0 + ')');
       }
    }
 
@@ -56,7 +56,7 @@ final class Class3_Sub28_Sub7_Sub1 extends Class3_Sub28_Sub7 {
       try {
          return var1 != -22358;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "he.A(" + var1 + ')');
+         throw Class44.clientError(var3, "he.A(" + var1 + ')');
       }
    }
 
@@ -64,7 +64,7 @@ final class Class3_Sub28_Sub7_Sub1 extends Class3_Sub28_Sub7 {
       try {
          this.anObject4044 = var1;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "he.<init>(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "he.<init>(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 

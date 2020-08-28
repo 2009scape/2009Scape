@@ -52,7 +52,7 @@ final class Class157 {
 
          return var1;
       } catch (RuntimeException var12) {
-         throw Class44.method1067(var12, "vj.E(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var12, "vj.E(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 
@@ -65,7 +65,7 @@ final class Class157 {
       try {
          aClass3_Sub28_Sub17_Sub1_2000 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "vj.F(" + var0 + ')');
+         throw Class44.clientError(var2, "vj.F(" + var0 + ')');
       }
    }
 
@@ -82,7 +82,7 @@ final class Class157 {
             return null;
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "vj.A(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "vj.A(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
       }
    }
 
@@ -94,7 +94,7 @@ final class Class157 {
 
          return var2 != 90?81:var1;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "vj.C(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "vj.C(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -110,7 +110,7 @@ final class Class157 {
             return var2;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "vj.D(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "vj.D(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -153,7 +153,7 @@ final class Class157 {
 
          }
       } catch (RuntimeException var16) {
-         throw Class44.method1067(var16, "vj.<init>(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var16, "vj.<init>(" + var1 + ',' + var2 + ')');
       }
    }
 

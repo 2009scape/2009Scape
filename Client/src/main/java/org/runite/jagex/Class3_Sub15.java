@@ -25,7 +25,7 @@ final class Class3_Sub15 extends Class3 {
          int var2 = 127 % ((-70 - var1) / 42);
          this.anIntArray2423 = null;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "jk.A(" + var1 + ')');
+         throw Class44.clientError(var3, "jk.A(" + var1 + ')');
       }
    }
 
@@ -34,7 +34,7 @@ final class Class3_Sub15 extends Class3 {
          //int var1 = -125 / ((0 - var0) / 59);
          Class154.aClass93_1955.method1524(3);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "jk.B(" + var0 + ')');
+         throw Class44.clientError(var2, "jk.B(" + var0 + ')');
       }
    }
 
@@ -52,7 +52,7 @@ final class Class3_Sub15 extends Class3 {
 
          return null;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "jk.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "jk.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -64,7 +64,7 @@ final class Class3_Sub15 extends Class3 {
             aClass89_2429 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "jk.D(" + var0 + ')');
+         throw Class44.clientError(var2, "jk.D(" + var0 + ')');
       }
    }
 
@@ -105,7 +105,7 @@ final class Class3_Sub15 extends Class3 {
             return false;
          }
       } catch (RuntimeException var10) {
-         throw Class44.method1067(var10, "jk.E(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var10, "jk.E(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
       }
    }
 
@@ -160,7 +160,7 @@ final class Class3_Sub15 extends Class3 {
             }
          }
       } catch (RuntimeException var21) {
-         throw Class44.method1067(var21, "jk.F(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var21, "jk.F(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ')');
       }
    }
 
@@ -608,7 +608,7 @@ final class Class3_Sub15 extends Class3 {
          }
 
       } catch (RuntimeException var36) {
-         throw Class44.method1067(var36, "jk.<init>(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var36, "jk.<init>(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 

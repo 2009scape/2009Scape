@@ -48,7 +48,7 @@ final class Class132 {
          var1.anInt2253 = var5;
          var1.anInt2257 = var6;
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "sf.B(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var7, "sf.B(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -57,7 +57,7 @@ final class Class132 {
          Class3_Sub13_Sub7.aClass153_3098 = var1;
          int var2 = 113 / ((1 - var0) / 63);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "sf.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "sf.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -70,7 +70,7 @@ final class Class132 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "sf.A(" + var0 + ')');
+         throw Class44.clientError(var2, "sf.A(" + var0 + ')');
       }
    }
 
@@ -134,7 +134,7 @@ final class Class132 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "sf.D(" + var0 + ')');
+         throw Class44.clientError(var5, "sf.D(" + var0 + ')');
       }
    }
 

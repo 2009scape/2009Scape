@@ -18,7 +18,7 @@ final class Class27 {
       try {
          return var0 != 1536?96:(Class23.anInt453 == 0?0:Class2.anInterface5Array70[Class23.anInt453].method24());
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ef.B(" + var0 + ')');
+         throw Class44.clientError(var2, "ef.B(" + var0 + ')');
       }
    }
 
@@ -32,7 +32,7 @@ final class Class27 {
          aClass157_524 = null;
          aClass93_511 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ef.A(" + var0 + ')');
+         throw Class44.clientError(var2, "ef.A(" + var0 + ')');
       }
    }
 

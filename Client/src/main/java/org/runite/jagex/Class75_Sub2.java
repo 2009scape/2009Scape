@@ -26,7 +26,7 @@ final class Class75_Sub2 extends Class75 {
             Class95.method1584(this.anInt1101, var7, var4, var6, -26571, var5);
          }
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "kc.A(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var8, "kc.A(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -38,7 +38,7 @@ final class Class75_Sub2 extends Class75 {
 
          return !Class140_Sub7.method2029((byte)-121, var1, var2)?null:Class43.method1062(99);
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "kc.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "kc.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 
@@ -49,7 +49,7 @@ final class Class75_Sub2 extends Class75 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "kc.E(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "kc.E(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -66,7 +66,7 @@ final class Class75_Sub2 extends Class75 {
          aClass153_2645 = null;
          anIntArray2639 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "kc.B(" + var0 + ')');
+         throw Class44.clientError(var2, "kc.B(" + var0 + ')');
       }
    }
 
@@ -82,7 +82,7 @@ final class Class75_Sub2 extends Class75 {
          int var5 = this.anInt2636 * var2 >> 12;
          Class3_Sub13_Sub12.method223(true, this.anInt1106, var4, var6, var7, this.anInt1104, this.anInt1101, var5);
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "kc.D(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var8, "kc.D(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -95,7 +95,7 @@ final class Class75_Sub2 extends Class75 {
          this.anInt2644 = var2;
          this.anInt2636 = var3;
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "kc.<init>(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
+         throw Class44.clientError(var9, "kc.<init>(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
       }
    }
 

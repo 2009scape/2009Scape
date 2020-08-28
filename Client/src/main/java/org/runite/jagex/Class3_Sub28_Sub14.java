@@ -161,7 +161,7 @@ final class Class3_Sub28_Sub14 extends Node {
             }
          }
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "pa.B(" + var0 + ')');
+         throw Class44.clientError(var7, "pa.B(" + var0 + ')');
       }
    }
 
@@ -169,7 +169,7 @@ final class Class3_Sub28_Sub14 extends Node {
       try {
          this.aClass140_Sub7_3676 = var1;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "pa.<init>(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "pa.<init>(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -183,7 +183,7 @@ final class Class3_Sub28_Sub14 extends Node {
             aBooleanArray3674 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "pa.A(" + var0 + ')');
+         throw Class44.clientError(var2, "pa.A(" + var0 + ')');
       }
    }
 
@@ -222,7 +222,7 @@ final class Class3_Sub28_Sub14 extends Node {
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "pa.C(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var6, "pa.C(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
       }
    }
 

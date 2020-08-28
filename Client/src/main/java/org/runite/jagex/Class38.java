@@ -48,7 +48,7 @@ class Class38 {
             return var2;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "fk.F(" + itemId + ',' + var1 + ')');
+         throw Class44.clientError(var4, "fk.F(" + itemId + ',' + var1 + ')');
       }
    }
 
@@ -63,7 +63,7 @@ class Class38 {
          aClass146_668 = null;
          aClass87_665 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "fk.E(" + var0 + ')');
+         throw Class44.clientError(var2, "fk.E(" + var0 + ')');
       }
    }
 
@@ -76,7 +76,7 @@ class Class38 {
 
          Class27.aClass93_511.method1523((byte)-120);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "fk.I(" + var0 + ')');
+         throw Class44.clientError(var2, "fk.I(" + var0 + ')');
       }
    }
 
@@ -84,7 +84,7 @@ class Class38 {
       try {
          return var2?-3:Class99.method1599(0, var1, var0, (byte)-35);
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "fk.H(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "fk.H(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -93,7 +93,7 @@ class Class38 {
          Class44.aClass93_725.method1522(-128, var0);
          int var2 = -38 % ((var1 - 29) / 40);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "fk.J(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "fk.J(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -114,7 +114,7 @@ class Class38 {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "fk.G(" + var0 + ')');
+         throw Class44.clientError(var4, "fk.G(" + var0 + ')');
       }
    }
 
@@ -124,7 +124,7 @@ class Class38 {
          ++Class54.anInt876;
          Class3_Sub13_Sub1.outgoingBuffer.putShort(Class113.interfacePacketCounter);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "fk.D(" + var0 + ')');
+         throw Class44.clientError(var2, "fk.D(" + var0 + ')');
       }
    }
 

@@ -164,7 +164,7 @@ public final class Client extends GameShell {
 
 			}
 		} catch (RuntimeException var9) {
-			throw Class44.method1067(var9, "client.K(" + var1 + ')');
+			throw Class44.clientError(var9, "client.K(" + var1 + ')');
 		}
 	}
 
@@ -194,7 +194,7 @@ public final class Client extends GameShell {
 			aClass130_2194 = null;
 			aClass3_Sub11ArrayArray2199 = (Class3_Sub11[][])null;
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "client.O(" + var0 + ')');
+			throw Class44.clientError(var2, "client.O(" + var0 + ')');
 		}
 	}
 
@@ -272,7 +272,7 @@ public final class Client extends GameShell {
 			}
 
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "client.F(" + var1 + ')');
+			throw Class44.clientError(var4, "client.F(" + var1 + ')');
 		}
 	}
 
@@ -356,7 +356,7 @@ public final class Client extends GameShell {
 				this.method41((byte)-56, 765, 32 - -Class3_Sub13_Sub13.anInt3148, 1530, 503);
 			}
 		} catch (RuntimeException var11) {
-			throw Class44.method1067(var11, "client.init()");
+			throw Class44.clientError(var11, "client.init()");
 		}
 	}
 
@@ -456,7 +456,7 @@ public final class Client extends GameShell {
 			}
 			//Class3_Sub26.aBoolean2558  = true;
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "client.B(" + var1 + ')');
+			throw Class44.clientError(var4, "client.B(" + var1 + ')');
 		}
 	}
 
@@ -741,7 +741,7 @@ public final class Client extends GameShell {
 			Class75_Sub4.method1350((byte)75);
 			Class75_Sub2.method1345(-71);
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "client.C(" + var1 + ')');
+			throw Class44.clientError(var3, "client.C(" + var1 + ')');
 		}
 
 		if(GameShell.anInt12 != 0) {
@@ -777,7 +777,7 @@ public final class Client extends GameShell {
 				return var2;
 			}
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "client.D(" + var0 + ',' + var1 + ')');
+			throw Class44.clientError(var4, "client.D(" + var0 + ',' + var1 + ')');
 		}
 	}
 
@@ -793,7 +793,7 @@ public final class Client extends GameShell {
 			InputStream_Sub1.js5Connection = null;
 			PacketParser.anInt80 = 0;
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "client.P(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "client.P(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -931,7 +931,7 @@ public final class Client extends GameShell {
 				Class43.method1065(var1 ^ 1073376992, var11);
 			}
 		} catch (RuntimeException var10) {
-			throw Class44.method1067(var10, "client." + var1 + ')');
+			throw Class44.clientError(var10, "client." + var1 + ')');
 		}
 	}
 
@@ -943,7 +943,7 @@ public final class Client extends GameShell {
 			}
 
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "client.J(" + var1 + ')');
+			throw Class44.clientError(var3, "client.J(" + var1 + ')');
 		}
 	}
 
@@ -1053,7 +1053,7 @@ public final class Client extends GameShell {
 
 			}
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "client.E(" + var1 + ')');
+			throw Class44.clientError(var4, "client.E(" + var1 + ')');
 		}
 	}
 
@@ -1126,7 +1126,7 @@ public final class Client extends GameShell {
 			}
 
 		} catch (RuntimeException var5) {
-			throw Class44.method1067(var5, "client.main(" + (var0 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var5, "client.main(" + (var0 != null?"{...}":"null") + ')');
 		}
 	}
 
@@ -2001,7 +2001,7 @@ public final class Client extends GameShell {
 				}
 			}
 		} catch (RuntimeException var6) {
-			throw Class44.method1067(var6, "client.A(" + var1 + ')');
+			throw Class44.clientError(var6, "client.A(" + var1 + ')');
 		}
 	}
 	
@@ -2065,7 +2065,7 @@ public final class Client extends GameShell {
 
 	         }
 	      } catch (RuntimeException var3) {
-	         throw Class44.method1067(var3, "client.N(" + var1 + ')');
+	         throw Class44.clientError(var3, "client.N(" + var1 + ')');
 	      }
 	   }
 }

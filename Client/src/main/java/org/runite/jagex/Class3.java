@@ -15,7 +15,7 @@ class Class3 {
       try {
          return var1 != 0?false:null != this.aClass3_76;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ab.I(" + var1 + ')');
+         throw Class44.clientError(var3, "ab.I(" + var1 + ')');
       }
    }
 
@@ -29,7 +29,7 @@ class Class3 {
          aClass61_78 = null;
          aBooleanArray73 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ab.H(" + var0 + ')');
+         throw Class44.clientError(var2, "ab.H(" + var0 + ')');
       }
    }
 
@@ -40,7 +40,7 @@ class Class3 {
             Class3_Sub28_Sub7.method565((byte)86, Class119.aClass131_1624.aShortArray1727[var2], Class119.aClass131_1624.aShortArray1718[var2]);
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ab.N(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "ab.N(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -49,7 +49,7 @@ class Class3 {
          int var1 = -122 % ((var0 - -63) / 48);
          Class136.aClass93_1772.method1523((byte)-99);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ab.G(" + var0 + ')');
+         throw Class44.clientError(var2, "ab.G(" + var0 + ')');
       }
    }
 
@@ -67,7 +67,7 @@ class Class3 {
          }
       } catch (RuntimeException var3) {
     	  var3.printStackTrace();
-         throw Class44.method1067(var3, "ab.L(" + var1 + ')');
+         throw Class44.clientError(var3, "ab.L(" + var1 + ')');
       }
    }
 
@@ -90,7 +90,7 @@ class Class3 {
 
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ab.K(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "ab.K(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -138,7 +138,7 @@ class Class3 {
 
          return Class56.aClass106Array890;
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "ab.M(" + var0 + ')');
+         throw Class44.clientError(var8, "ab.M(" + var0 + ')');
       }
    }
 
@@ -155,7 +155,7 @@ class Class3 {
          GameObject.aClass11ArrayArray1834 = new RSInterface[Class3_Sub13_Sub29.aClass153_3361.method2121(0)][];
          Class130.aBooleanArray1703 = new boolean[Class3_Sub13_Sub29.aClass153_3361.method2121(0)];
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "ab.J(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var6, "ab.J(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
       }
    }
 

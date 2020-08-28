@@ -21,7 +21,7 @@ final class Class21 {
          aClass94_444 = null;
          aClass94_442 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "dh.B(" + var0 + ')');
+         throw Class44.clientError(var2, "dh.B(" + var0 + ')');
       }
    }
 
@@ -64,23 +64,19 @@ final class Class21 {
 
          Class3_Sub13_Sub8.method204(-3);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "dh.F(" + var0 + ')');
+         throw Class44.clientError(var2, "dh.F(" + var0 + ')');
       }
    }
 
-   static final Class118 method913(int var0) {
+   static final Class118 method913() {
       try {
          try {
-            if(var0 != 31431) {
-               method913(123);
-            }
-
             return (Class118)Class.forName(Configurations.PACKAGE_JAGEX + ".Class118_Sub1").newInstance();
          } catch (Throwable var2) {
             return null;
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "dh.C(" + var0 + ')');
+         throw Class44.clientError(var3, "dh.C(" + ')');
       }
    }
 
@@ -144,7 +140,7 @@ final class Class21 {
 
          return var4;
       } catch (RuntimeException var10) {
-         throw Class44.method1067(var10, "dh.D(" + var0 + ',' + interfaceId + ',' + interfaceHash + ',' + walkable + ')');
+         throw Class44.clientError(var10, "dh.D(" + var0 + ',' + interfaceId + ',' + interfaceHash + ',' + walkable + ')');
       }
    }
 
@@ -155,7 +151,7 @@ final class Class21 {
             Class3_Sub28_Sub7.method565((byte)86, Class119.aClass131_1624.aShortArray1727[var2], Class119.aClass131_1624.aShortArray1718[var2]);
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "dh.A(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "dh.A(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -171,7 +167,7 @@ final class Class21 {
             return null;
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "dh.E(" + var0 + ')');
+         throw Class44.clientError(var3, "dh.E(" + var0 + ')');
       }
    }
 

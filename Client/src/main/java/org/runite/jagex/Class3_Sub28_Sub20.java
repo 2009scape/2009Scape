@@ -17,7 +17,7 @@ final class Class3_Sub28_Sub20 extends Node {
    private Class82 aClass82_3790;
    private int anInt3791;
    private int[] anIntArray3793;
-   static Class118 aClass118_3794 = Class21.method913(31431);
+   static Class118 aClass118_3794 = Class21.method913();
    private int anInt3795 = -1;
    private int anInt3796 = 0;
    boolean aBoolean3797 = false;
@@ -131,7 +131,7 @@ final class Class3_Sub28_Sub20 extends Node {
             return (int[])null;
          }
       } catch (RuntimeException var32) {
-         throw Class44.method1067(var32, "uh.D(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ')');
+         throw Class44.clientError(var32, "uh.D(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ')');
       }
    }
 
@@ -214,7 +214,7 @@ final class Class3_Sub28_Sub20 extends Node {
             return false;
          }
       } catch (RuntimeException var11) {
-         throw Class44.method1067(var11, "uh.F(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var11, "uh.F(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -231,7 +231,7 @@ final class Class3_Sub28_Sub20 extends Node {
             return null;
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "uh.O(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var6, "uh.O(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
       }
    }
 
@@ -244,7 +244,7 @@ final class Class3_Sub28_Sub20 extends Node {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "uh.C(" + var0 + ')');
+         throw Class44.clientError(var2, "uh.C(" + var0 + ')');
       }
    }
 
@@ -252,7 +252,7 @@ final class Class3_Sub28_Sub20 extends Node {
       try {
          return var1 != -5?true:this.aClass82_3790.method1408(true, var2, var3);
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "uh.P(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "uh.P(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ')');
       }
    }
 
@@ -292,7 +292,7 @@ final class Class3_Sub28_Sub20 extends Node {
 
          }
       } catch (RuntimeException var14) {
-         throw Class44.method1067(var14, "uh.E(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var14, "uh.E(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -304,7 +304,7 @@ final class Class3_Sub28_Sub20 extends Node {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "uh.B(" + var0 + ')');
+         throw Class44.clientError(var2, "uh.B(" + var0 + ')');
       }
    }
 
@@ -318,7 +318,7 @@ final class Class3_Sub28_Sub20 extends Node {
 
          super.finalize();
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "uh.finalize()");
+         throw Class44.clientError(var2, "uh.finalize()");
       }
    }
 
@@ -450,7 +450,7 @@ final class Class3_Sub28_Sub20 extends Node {
             }
          }
       } catch (RuntimeException var12) {
-         throw Class44.method1067(var12, "uh.A(" + var0 + ')');
+         throw Class44.clientError(var12, "uh.A(" + var0 + ')');
       }
    }
 
@@ -478,7 +478,7 @@ final class Class3_Sub28_Sub20 extends Node {
 
          this.anInt3788 = (var3 & 240) >> 4;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "uh.<init>(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "uh.<init>(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 

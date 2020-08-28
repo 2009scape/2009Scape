@@ -17,7 +17,7 @@ final class Class75_Sub1 extends Class75 {
             ;
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ci.D(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "ci.D(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -28,7 +28,7 @@ final class Class75_Sub1 extends Class75 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ci.A(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "ci.A(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -93,7 +93,7 @@ final class Class75_Sub1 extends Class75 {
          }
 
       } catch (RuntimeException var13) {
-         throw Class44.method1067(var13, "ci.B(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var13, "ci.B(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ')');
       }
    }
 
@@ -106,7 +106,7 @@ final class Class75_Sub1 extends Class75 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ci.C(" + var0 + ')');
+         throw Class44.clientError(var2, "ci.C(" + var0 + ')');
       }
    }
 
@@ -122,7 +122,7 @@ final class Class75_Sub1 extends Class75 {
          int var7 = var1 * this.anInt2632 >> 12;
          Class3_Sub13_Sub34.method330(this.anInt1104, -111, var7, var4, var6, var5);
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "ci.E(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var8, "ci.E(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -135,7 +135,7 @@ final class Class75_Sub1 extends Class75 {
          this.anInt2629 = var1;
          this.anInt2635 = var3;
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "ci.<init>(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var8, "ci.<init>(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 

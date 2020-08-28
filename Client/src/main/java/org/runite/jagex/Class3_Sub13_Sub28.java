@@ -20,7 +20,7 @@ final class Class3_Sub13_Sub28 extends Class3_Sub13 {
          aClass3_Sub11ArrayArray3346 = (Class3_Sub11[][])null;
          aClass153_3352 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "pk.F(" + var0 + ')');
+         throw Class44.clientError(var2, "pk.F(" + var0 + ')');
       }
    }
 
@@ -41,7 +41,7 @@ final class Class3_Sub13_Sub28 extends Class3_Sub13 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "pk.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var5, "pk.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }
    }
 
@@ -50,7 +50,7 @@ final class Class3_Sub13_Sub28 extends Class3_Sub13 {
          //int var1 = -47 / ((45 - var0) / 57);
          return Class3_Sub13_Sub33.anInt3398;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "pk.E(" + var0 + ')');
+         throw Class44.clientError(var2, "pk.E(" + var0 + ')');
       }
    }
 
@@ -64,7 +64,7 @@ final class Class3_Sub13_Sub28 extends Class3_Sub13 {
             this.method303((byte)59);
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "pk.P(" + var1 + ')');
+         throw Class44.clientError(var3, "pk.P(" + var1 + ')');
       }
    }
 
@@ -112,7 +112,7 @@ final class Class3_Sub13_Sub28 extends Class3_Sub13 {
 
          return var4;
       } catch (RuntimeException var18) {
-         throw Class44.method1067(var18, "pk.D(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var18, "pk.D(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -156,7 +156,7 @@ final class Class3_Sub13_Sub28 extends Class3_Sub13 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "pk.C(" + var0 + ')');
+         throw Class44.clientError(var5, "pk.C(" + var0 + ')');
       }
    }
 
@@ -179,7 +179,7 @@ final class Class3_Sub13_Sub28 extends Class3_Sub13 {
 
          }
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "pk.B(" + var1 + ')');
+         throw Class44.clientError(var8, "pk.B(" + var1 + ')');
       }
    }
 

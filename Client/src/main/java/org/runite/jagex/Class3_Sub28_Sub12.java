@@ -45,7 +45,7 @@ public final class Class3_Sub28_Sub12 extends Node {
             return true;
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "md.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var5, "md.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -60,7 +60,7 @@ public final class Class3_Sub28_Sub12 extends Node {
             this.method614(var1, var3, false);
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "md.E(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "md.E(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
    
@@ -89,7 +89,7 @@ public final class Class3_Sub28_Sub12 extends Node {
          Class3_Sub29.aClass94Array2580[0] = message;
          Class163_Sub3.aClass94Array3003[0] = var3;
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "md.D(" + var0 + ',' + type + ',' + (message != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (byte) 50 + ',' + (var5 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var7, "md.D(" + var0 + ',' + type + ',' + (message != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (byte) 50 + ',' + (var5 != null?"{...}":"null") + ')');
       }
    }
 
@@ -97,7 +97,7 @@ public final class Class3_Sub28_Sub12 extends Node {
       try {
          return var2 <= 85?(RSString)null:Class3_Sub13_Sub8.method207(10, false, 116, var0);
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "md.F(" + var0 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "md.F(" + var0 + ',' + var2 + ')');
       }
    }
 
@@ -110,7 +110,7 @@ public final class Class3_Sub28_Sub12 extends Node {
             aClass94_3651 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "md.B(" + var0 + ')');
+         throw Class44.clientError(var2, "md.B(" + var0 + ')');
       }
    }
 
@@ -125,7 +125,7 @@ public final class Class3_Sub28_Sub12 extends Node {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "md.A(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "md.A(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
       }
    }
 

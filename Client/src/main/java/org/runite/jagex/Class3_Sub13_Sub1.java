@@ -32,7 +32,7 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 			}
 
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "ag.B(" + var0 + ')');
+			throw Class44.clientError(var4, "ag.B(" + var0 + ')');
 		}
 	}
 
@@ -50,7 +50,7 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 			aClass94_3039 = null;
 			outgoingBuffer = null;
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "ag.F(" + var0 + ')');
+			throw Class44.clientError(var2, "ag.F(" + var0 + ')');
 		}
 	}
 
@@ -93,7 +93,7 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 			var4 = -64 / ((30 - var2) / 36);
 			return var3;
 		} catch (RuntimeException var11) {
-			throw Class44.method1067(var11, "ag.D(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var11, "ag.D(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -123,7 +123,7 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 
 			System.gc();
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "ag.O(" + var0 + ')');
+			throw Class44.clientError(var2, "ag.O(" + var0 + ')');
 		}
 	}
 
@@ -135,7 +135,7 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 
 			return var1.equals("B")?Byte.TYPE:(!var1.equals("I")?(var1.equals("S")?Short.TYPE:(!var1.equals("J")?(var1.equals("Z")?Boolean.TYPE:(var1.equals("F")?Float.TYPE:(var1.equals("D")?Double.TYPE:(var1.equals("C")?Character.TYPE:Class.forName(Configurations.PACKAGE_JAGEX + "." + var1))))):Long.TYPE)):Integer.TYPE);
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "ag.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var3, "ag.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
 		}
 	}
 
@@ -147,7 +147,7 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 			}
 
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "ag.P(" + var1 + ')');
+			throw Class44.clientError(var3, "ag.P(" + var1 + ')');
 		}
 	}
 
@@ -170,7 +170,7 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 
 			}
 		} catch (RuntimeException var10) {
-			throw Class44.method1067(var10, "ag.E(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ')');
+			throw Class44.clientError(var10, "ag.E(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ')');
 		}
 	}
 
@@ -191,7 +191,7 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 			}
 
 		} catch (RuntimeException var5) {
-			throw Class44.method1067(var5, "ag.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+			throw Class44.clientError(var5, "ag.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
 		}
 	}
 

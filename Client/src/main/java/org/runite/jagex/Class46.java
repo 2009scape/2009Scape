@@ -14,7 +14,7 @@ final class Class46 {
             aClass153_737 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "gl.B(" + var0 + ')');
+         throw Class44.clientError(var2, "gl.B(" + var0 + ')');
       }
    }
 
@@ -26,7 +26,7 @@ final class Class46 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "gl.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "gl.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -55,7 +55,7 @@ final class Class46 {
 
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "gl.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "gl.A(" + var0 + ',' + var1 + ')');
       }
    }
 

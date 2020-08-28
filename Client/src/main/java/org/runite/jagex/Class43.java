@@ -37,7 +37,7 @@ final class Class43 {
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "gi.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "gi.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -45,7 +45,7 @@ final class Class43 {
       try {
          ;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "gi.E(" + var0 + ')');
+         throw Class44.clientError(var2, "gi.E(" + var0 + ')');
       }
    }
 
@@ -57,7 +57,7 @@ final class Class43 {
          int var6 = -4 % ((var1 - 7) / 62);
          this.anInt709 = var3;
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "gi.F(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var7, "gi.F(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 
@@ -67,7 +67,7 @@ final class Class43 {
          this.aFloat710 = 1.0F / (float)(var2 * var2);
          int var3 = 9 % ((9 - var1) / 57);
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "gi.C(" + var1 + ')');
+         throw Class44.clientError(var4, "gi.C(" + var1 + ')');
       }
    }
 
@@ -94,7 +94,7 @@ final class Class43 {
          Class39.method1035((byte)111);
          return (Class3_Sub28_Sub16)var6;
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "gi.D(" + var0 + ')');
+         throw Class44.clientError(var5, "gi.D(" + var0 + ')');
       }
    }
 
@@ -135,7 +135,7 @@ final class Class43 {
          this.aFloatArray717[2] = var8 * (float)Class3_Sub28_Sub15.method633(255, this.anInt713);
          this.aFloatArray717[1] = (float)(Class3_Sub28_Sub15.method633(this.anInt713, '\uffe7') >> 8) * var8;
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "gi.A(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var7, "gi.A(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -241,7 +241,7 @@ final class Class43 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "gi.G(" + var1 + ')');
+         throw Class44.clientError(var3, "gi.G(" + var1 + ')');
       }
    }
 
@@ -249,7 +249,7 @@ final class Class43 {
       try {
          ItemDefinition.method1104((byte)-93, 200000, var1);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "gi.H(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "gi.H(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -261,7 +261,7 @@ final class Class43 {
 
          this.method1064(3);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "gi.<init>()");
+         throw Class44.clientError(var2, "gi.<init>()");
       }
    }
 
@@ -296,7 +296,7 @@ final class Class43 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "gi.<init>(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "gi.<init>(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 

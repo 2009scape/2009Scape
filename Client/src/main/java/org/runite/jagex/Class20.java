@@ -55,7 +55,7 @@ final class Class20 {
          aClass94_434 = null;
          aShortArrayArray435 = (short[][])null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "dg.A(" + var0 + ')');
+         throw Class44.clientError(var2, "dg.A(" + var0 + ')');
       }
    }
 
@@ -67,7 +67,7 @@ final class Class20 {
 
          int var2 = -100 / ((var0 - 55) / 52);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "dg.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "dg.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -194,7 +194,7 @@ final class Class20 {
 
          }
       } catch (RuntimeException var16) {
-         throw Class44.method1067(var16, "dg.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + (var6 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var16, "dg.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + (var6 != null?"{...}":"null") + ')');
       }
    }
 

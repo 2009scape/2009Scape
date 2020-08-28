@@ -9,7 +9,7 @@ final class Class115 {
       try {
          aClass86ArrayArray1581 = (Class86[][])null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ph.B(" + var0 + ')');
+         throw Class44.clientError(var2, "ph.B(" + var0 + ')');
       }
    }
 
@@ -120,7 +120,7 @@ final class Class115 {
             }
          }
       } catch (RuntimeException var19) {
-         throw Class44.method1067(var19, "ph.A(" + var0 + ')');
+         throw Class44.clientError(var19, "ph.A(" + var0 + ')');
       }
    }
 
@@ -133,7 +133,7 @@ final class Class115 {
 
          Class80.aClass93_1131.method1523((byte)-100);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ph.C(" + var0 + ')');
+         throw Class44.clientError(var2, "ph.C(" + var0 + ')');
       }
    }
 

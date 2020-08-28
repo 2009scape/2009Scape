@@ -60,7 +60,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
       try {
          Class163_Sub2_Sub1.aBoolean4013 = false;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "rc.focusLost(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "rc.focusLost(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -70,7 +70,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
       try {
          this.destroy();
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "rc.windowClosing(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "rc.windowClosing(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -86,7 +86,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
          aClass94_10 = null;
          aClass94_9 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "rc.W(" + var0 + ')');
+         throw Class44.clientError(var2, "rc.W(" + var0 + ')');
       }
    }
 
@@ -101,7 +101,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
          int var2 = Class100.method1602(0, var0);
          return var2 != -1?Class119.aClass131_1624.aClass94Array1721[var2].method1560(Class3_Sub13_Sub16.aClass94_3192, true, Class3_Sub28_Sub10_Sub2.aClass94_4066):Class3_Sub28_Sub7_Sub1.aClass94_4049;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "rc.V(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "rc.V(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -109,7 +109,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
       try {
          return null != frame ?null:(Class38.aClass87_665 != null && this != Class38.aClass87_665.anApplet1219?Class38.aClass87_665.anApplet1219.getAppletContext():super.getAppletContext());
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "rc.getAppletContext()");
+         throw Class44.clientError(var2, "rc.getAppletContext()");
       }
    }
 
@@ -118,7 +118,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
          Class163_Sub2_Sub1.aBoolean4013 = true;
          Class3_Sub13_Sub10.aBoolean3116 = true;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "rc.focusGained(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "rc.focusGained(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -130,7 +130,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "rc.Q(" + var0 + ')');
+         throw Class44.clientError(var2, "rc.Q(" + var0 + ')');
       }
    }
 
@@ -210,7 +210,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
             Class3_Sub26.aBoolean2558  = true;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "rc.BA(" + var1 + ')');
+         throw Class44.clientError(var4, "rc.BA(" + var1 + ')');
       }
    }
 
@@ -223,7 +223,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
             this.method35(46, false);
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "rc.destroy()");
+         throw Class44.clientError(var2, "rc.destroy()");
       }
    }
 
@@ -231,7 +231,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
       try {
          this.paint(var1);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "rc.update(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "rc.update(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -249,7 +249,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "rc.U(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var5, "rc.U(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 
@@ -261,7 +261,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
       try {
          return null != frame ?null:(Class38.aClass87_665 != null && this != Class38.aClass87_665.anApplet1219?Class38.aClass87_665.anApplet1219.getDocumentBase():super.getDocumentBase());
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "rc.getDocumentBase()");
+         throw Class44.clientError(var2, "rc.getDocumentBase()");
       }
    }
 
@@ -278,7 +278,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "rc.paint(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "rc.paint(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -304,7 +304,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
          Class3_Sub21.aClass155_2491 = Class58.method1195(2048, Class38.aClass87_665, Class3_Sub28_Sub12.aCanvas3648, 1, 14);
          Class3_Sub21.aClass155_2491.method2154(-126, Class3_Sub26.aClass3_Sub24_Sub2_2563);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "rc.DA(" + var0 + ')');
+         throw Class44.clientError(var2, "rc.DA(" + var0 + ')');
       }
    }
 
@@ -360,7 +360,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 
          System.out.println("Shutdown complete - clean:" + var2);
       } catch (RuntimeException var10) {
-         throw Class44.method1067(var10, "rc.EA(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var10, "rc.EA(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -386,7 +386,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	         }
 
 	      } catch (RuntimeException var9) {
-	         throw Class44.method1067(var9, "rc.R(" + var1 + ')');
+	         throw Class44.clientError(var9, "rc.R(" + var1 + ')');
 	      }
 	   }
 
@@ -396,7 +396,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
          Class3_Sub13_Sub10.aClass87_3125 = var0;
          Class3_Sub13_Sub1.method445();
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "rc.providesignlink(" + (var0 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var2, "rc.providesignlink(" + (var0 != null?"{...}":"null") + ')');
       }
    }
 
@@ -427,7 +427,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 
          this.method38(40);
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "rc.AA(" + var1 + ')');
+         throw Class44.clientError(var7, "rc.AA(" + var1 + ')');
       }
    }
 
@@ -520,7 +520,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 
 	         this.method35(107, true);
 	      } catch (RuntimeException var6) {
-	         throw Class44.method1067(var6, "rc.run()");
+	         throw Class44.clientError(var6, "rc.run()");
 	      }
 	   }
 
@@ -529,7 +529,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
       try {
          return frame == null?(Class38.aClass87_665 != null && this != Class38.aClass87_665.anApplet1219?Class38.aClass87_665.anApplet1219.getParameter(var1):super.getParameter(var1)):null;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "rc.getParameter(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "rc.getParameter(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -541,7 +541,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
             Class3_Sub9.aLong2313 = 4000L + Class5.method830((byte)-55);
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "rc.stop()");
+         throw Class44.clientError(var2, "rc.stop()");
       }
    }
 
@@ -584,7 +584,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
          }
 
       } catch (RuntimeException var12) {
-         throw Class44.method1067(var12, "rc.S(" +  + ',' +  + ',' + false + ',' + 1024 + ',' + ("runescape" != null?"{...}":"null") + ',' + 768 + ',' + -8057 + ',' + 28 + ')');
+         throw Class44.clientError(var12, "rc.S(" +  + ',' +  + ',' + false + ',' + 1024 + ',' + ("runescape" != null?"{...}":"null") + ',' + 768 + ',' + -8057 + ',' + 28 + ')');
       }
    }
 
@@ -596,7 +596,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
             Class3_Sub9.aLong2313 = 0L;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "rc.start()");
+         throw Class44.clientError(var2, "rc.start()");
       }
    }
 
@@ -646,7 +646,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
          }
 
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "rc.CA(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var9, "rc.CA(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 

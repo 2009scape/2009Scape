@@ -36,7 +36,7 @@ final class Class159 {
 
          return var0 != 255?true:true;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "vl.B(" + var0 + ')');
+         throw Class44.clientError(var3, "vl.B(" + var0 + ')');
       }
    }
 
@@ -150,7 +150,7 @@ final class Class159 {
          }
 
       } catch (RuntimeException var11) {
-         throw Class44.method1067(var11, "vl.E(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var11, "vl.E(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -163,7 +163,7 @@ final class Class159 {
 
          Class3_Sub13_Sub31.aClass93_3369.method1523((byte)-110);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "vl.D(" + var0 + ')');
+         throw Class44.clientError(var2, "vl.D(" + var0 + ')');
       }
    }
 
@@ -177,7 +177,7 @@ final class Class159 {
             aClass93_2016 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "vl.C(" + var0 + ')');
+         throw Class44.clientError(var2, "vl.C(" + var0 + ')');
       }
    }
 

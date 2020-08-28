@@ -69,7 +69,7 @@ final class Class52 {
 
          return var11;
       } catch (RuntimeException var16) {
-         throw Class44.method1067(var16, "hh.J(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ',' + var7 + ',' + var8 + ')');
+         throw Class44.clientError(var16, "hh.J(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ',' + var7 + ',' + var8 + ')');
       }
    }
 
@@ -103,7 +103,7 @@ final class Class52 {
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "hh.K(" + var1 + ')');
+         throw Class44.clientError(var6, "hh.K(" + var1 + ')');
       }
    }
 
@@ -116,7 +116,7 @@ final class Class52 {
          this.aBoolean864 = var1;
          this.method1158(459557008);
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "hh.A(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "hh.A(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -130,7 +130,7 @@ final class Class52 {
             Class67.method1260(23206, -1, GameObject.aClass11ArrayArray1834[var1]);
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "hh.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "hh.B(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -163,7 +163,7 @@ final class Class52 {
             this.method1158(var4 + 459557008);
          }
       } catch (RuntimeException var10) {
-         throw Class44.method1067(var10, "hh.G(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (look != null?"{...}":"null") + ',' + render + ')');
+         throw Class44.clientError(var10, "hh.G(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (look != null?"{...}":"null") + ',' + render + ')');
       }
    }
 
@@ -176,7 +176,7 @@ final class Class52 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "hh.L(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "hh.L(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -188,7 +188,7 @@ final class Class52 {
 
          return this.pnpcId != -1?305419896 + Node.method522(this.pnpcId, var1 + '\ucb05').npcId:(this.lookInfo[8] << 10) + ((this.anIntArray862[0] << 25) - -(this.anIntArray862[4] << 20)) - (-(this.lookInfo[0] << 15) - ((this.lookInfo[11] << 5) + this.lookInfo[1]));
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "hh.E(" + var1 + ')');
+         throw Class44.clientError(var3, "hh.E(" + var1 + ')');
       }
    }
 
@@ -202,7 +202,7 @@ final class Class52 {
             }
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "hh.I(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "hh.I(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -538,7 +538,7 @@ final class Class52 {
             }
          }
       } catch (RuntimeException var36) {
-         throw Class44.method1067(var36, "hh.D(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ',' + var11 + ')');
+         throw Class44.clientError(var36, "hh.D(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ',' + var11 + ')');
       }
    }
 
@@ -848,7 +848,7 @@ final class Class52 {
             }
          }
       } catch (RuntimeException var27) {
-         throw Class44.method1067(var27, "hh.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ',' + var11 + ',' + var12 + ')');
+         throw Class44.clientError(var27, "hh.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ',' + var11 + ',' + var12 + ')');
       }
    }
 
@@ -926,7 +926,7 @@ final class Class52 {
             return Node.method522(this.pnpcId, 27112).getChatModel(var3, var1, var5, -109, var4);
          }
       } catch (RuntimeException var13) {
-         throw Class44.method1067(var13, "hh.F(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var13, "hh.F(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ')');
       }
    }
 
@@ -940,7 +940,7 @@ final class Class52 {
             anIntArray861 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "hh.H(" + var0 + ')');
+         throw Class44.clientError(var2, "hh.H(" + var0 + ')');
       }
    }
 

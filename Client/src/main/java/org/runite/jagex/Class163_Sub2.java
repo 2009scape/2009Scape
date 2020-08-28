@@ -32,7 +32,7 @@ class Class163_Sub2 extends Class163 {
 
          aClass30Array2998 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "dk.B(" + var0 + ')');
+         throw Class44.clientError(var2, "dk.B(" + var0 + ')');
       }
    }
 
@@ -93,7 +93,7 @@ class Class163_Sub2 extends Class163 {
          }
 
       } catch (RuntimeException var15) {
-         throw Class44.method1067(var15, "dk.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var15, "dk.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 

@@ -30,7 +30,7 @@ final class Class140_Sub7 extends GameObject {
             }
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "uj.B(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "uj.B(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 
@@ -47,7 +47,7 @@ final class Class140_Sub7 extends GameObject {
          aClass94_2928 = null;
          aClass153_2939 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "uj.C(" + var0 + ')');
+         throw Class44.clientError(var2, "uj.C(" + var0 + ')');
       }
    }
 
@@ -246,7 +246,7 @@ final class Class140_Sub7 extends GameObject {
             return true;
          }
       } catch (RuntimeException var22) {
-         throw Class44.method1067(var22, "uj.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ')');
+         throw Class44.clientError(var22, "uj.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ')');
       }
    }
 
@@ -260,7 +260,7 @@ final class Class140_Sub7 extends GameObject {
 
          return var0 >>> 10;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "uj.E(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "uj.E(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -280,7 +280,7 @@ final class Class140_Sub7 extends GameObject {
             return Class159.aClass94_2018;
          }
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "uj.D(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var7, "uj.D(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -292,7 +292,7 @@ final class Class140_Sub7 extends GameObject {
             this.anInt2932 = var13.method1871();
          }
       } catch (RuntimeException var14) {
-         throw Class44.method1067(var14, "uj.IA(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var11 + ',' + (var12 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var14, "uj.IA(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var11 + ',' + (var12 != null?"{...}":"null") + ')');
       }
    }
 
@@ -300,7 +300,7 @@ final class Class140_Sub7 extends GameObject {
       try {
          return this.anInt2932;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "uj.MA()");
+         throw Class44.clientError(var2, "uj.MA()");
       }
    }
 

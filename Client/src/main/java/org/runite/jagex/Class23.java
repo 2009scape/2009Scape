@@ -18,7 +18,7 @@ final class Class23 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "dl.A(" + var0 + ')');
+         throw Class44.clientError(var2, "dl.A(" + var0 + ')');
       }
    }
 
@@ -30,7 +30,7 @@ final class Class23 {
          int var12 = (-var5 + var4 << 16) / var10;
          Class136.method1814(var1, var3, var2, var12, var7, 0, 0, 127, var11, var8, var5);
       } catch (RuntimeException var13) {
-         throw Class44.method1067(var13, "dl.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ')');
+         throw Class44.clientError(var13, "dl.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ')');
       }
    }
 
@@ -68,7 +68,7 @@ final class Class23 {
          var1.putByte((byte)-79, Class163_Sub3.aBoolean3004?1:0);
          return var1;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "dl.C(" + var0 + ')');
+         throw Class44.clientError(var2, "dl.C(" + var0 + ')');
       }
    }
 
@@ -81,7 +81,7 @@ final class Class23 {
             }
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "dl.D(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var5, "dl.D(" + var0 + ',' + var1 + ')');
       }
    }
 

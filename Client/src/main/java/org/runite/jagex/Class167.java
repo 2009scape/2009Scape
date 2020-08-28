@@ -71,7 +71,7 @@ final class Class167 {
             return;
          }
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "wj.E(" + var0 + ')');
+         throw Class44.clientError(var9, "wj.E(" + var0 + ')');
       }
    }
 
@@ -79,7 +79,7 @@ final class Class167 {
       try {
          aClass94_2083 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "wj.F(" + var0 + ')');
+         throw Class44.clientError(var2, "wj.F(" + var0 + ')');
       }
    }
 
@@ -117,7 +117,7 @@ final class Class167 {
       try {
          CS2Script.aClass93_2442.method1524(3);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "wj.B(" + var0 + ')');
+         throw Class44.clientError(var2, "wj.B(" + var0 + ')');
       }
    }
 
@@ -128,7 +128,7 @@ final class Class167 {
             Class83.aBoolean1158 = true;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "wj.D(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "wj.D(" + var0 + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -206,7 +206,7 @@ final class Class167 {
          }
 
       } catch (RuntimeException var11) {
-         throw Class44.method1067(var11, "wj.A(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ')');
+         throw Class44.clientError(var11, "wj.A(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ')');
       }
    }
 
@@ -228,7 +228,7 @@ final class Class167 {
             return var4;
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "wj.H(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var6, "wj.H(" + var0 + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -291,7 +291,7 @@ final class Class167 {
          Class3_Sub13_Sub2.method176(var0 + -161);
          Class3_Sub13_Sub11.method219(true, 3000);
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "wj.C(" + var0 + ')');
+         throw Class44.clientError(var4, "wj.C(" + var0 + ')');
       }
    }
 

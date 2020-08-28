@@ -13,7 +13,7 @@ final class Class3_Sub10 extends Class3 {
          Class66.method1250(var1 ^ 93, false);
          Class75.method1339(var0, var1 + var1);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "hb.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "hb.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -26,7 +26,7 @@ final class Class3_Sub10 extends Class3 {
             Class154.aClass93_1965.method1524(3);
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "hb.D(" + var0 + ')');
+         throw Class44.clientError(var2, "hb.D(" + var0 + ')');
       }
    }
 
@@ -35,7 +35,7 @@ final class Class3_Sub10 extends Class3 {
          int var2 = -11 / ((-29 - var1) / 49);
          return var0 >= 0 && Class3_Sub24_Sub4.aBooleanArray3503.length > var0?Class3_Sub24_Sub4.aBooleanArray3503[var0]:false;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "hb.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "hb.A(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -60,7 +60,7 @@ final class Class3_Sub10 extends Class3 {
             return def;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "hb.E(" + var0 + ',' + renderAnimationId + ')');
+         throw Class44.clientError(var4, "hb.E(" + var0 + ',' + renderAnimationId + ')');
       }
    }
 
@@ -72,7 +72,7 @@ final class Class3_Sub10 extends Class3 {
 
          Class158_Sub1.aClass93_2982.method1524(3);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "hb.C(" + var0 + ')');
+         throw Class44.clientError(var2, "hb.C(" + var0 + ')');
       }
    }
 
@@ -83,7 +83,7 @@ final class Class3_Sub10 extends Class3 {
             aByteArrayArrayArray2339 = (byte[][][])null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "hb.B(" + var0 + ')');
+         throw Class44.clientError(var2, "hb.B(" + var0 + ')');
       }
    }
 
@@ -93,7 +93,7 @@ final class Class3_Sub10 extends Class3 {
       try {
          this.aClass94_2341 = var1;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "hb.<init>(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "hb.<init>(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 

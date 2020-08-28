@@ -34,7 +34,7 @@ final class Class3_Sub13_Sub16 extends Class3_Sub13 {
 
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "hm.C(" + var1 + ')');
+         throw Class44.clientError(var4, "hm.C(" + var1 + ')');
       }
    }
 
@@ -47,7 +47,7 @@ final class Class3_Sub13_Sub16 extends Class3_Sub13 {
          this.aByteArray3195 = Class49.method1123(var1 ^ 16727940, this.anInt3197);
          this.method242((byte)37);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "hm.P(" + var1 + ')');
+         throw Class44.clientError(var3, "hm.P(" + var1 + ')');
       }
    }
 
@@ -65,7 +65,7 @@ final class Class3_Sub13_Sub16 extends Class3_Sub13 {
 
          return -1;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "hm.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "hm.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -161,7 +161,7 @@ final class Class3_Sub13_Sub16 extends Class3_Sub13 {
 
          return var3;
       } catch (RuntimeException var20) {
-         throw Class44.method1067(var20, "hm.D(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var20, "hm.D(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -183,7 +183,7 @@ final class Class3_Sub13_Sub16 extends Class3_Sub13 {
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "hm.E(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "hm.E(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -212,7 +212,7 @@ final class Class3_Sub13_Sub16 extends Class3_Sub13 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "hm.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var5, "hm.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }
    }
 
@@ -231,7 +231,7 @@ final class Class3_Sub13_Sub16 extends Class3_Sub13 {
          aClass94_3190 = null;
          aClass94_3196 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "hm.B(" + var0 + ')');
+         throw Class44.clientError(var2, "hm.B(" + var0 + ')');
       }
    }
 

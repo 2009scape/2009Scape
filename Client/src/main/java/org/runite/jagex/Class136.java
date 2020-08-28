@@ -85,7 +85,7 @@ final class Class136 {
             Class101.aClass61_1424.method1211(-76);
          }
       } catch (RuntimeException var31) {
-         throw Class44.method1067(var31, "sm.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ')');
+         throw Class44.clientError(var31, "sm.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ')');
       }
    }
 
@@ -99,7 +99,7 @@ final class Class136 {
          }
          aByteArrayArrayArray1774 = (byte[][][])null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "sm.A(" + var0 + ')');
+         throw Class44.clientError(var2, "sm.A(" + var0 + ')');
       }
    }
 
@@ -113,7 +113,7 @@ final class Class136 {
             Class41.anIntArray686 = new int[var0];
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "sm.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "sm.C(" + var0 + ',' + var1 + ')');
       }
    }
 

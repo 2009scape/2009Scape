@@ -32,7 +32,7 @@ final class Class113 {
             Class3_Sub10.method139(76);
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "pe.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "pe.B(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -42,7 +42,7 @@ final class Class113 {
             method1703(-117);
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "pe.A(" + var0 + ')');
+         throw Class44.clientError(var2, "pe.A(" + var0 + ')');
       }
    }
 

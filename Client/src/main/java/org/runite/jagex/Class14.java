@@ -14,7 +14,7 @@ final class Class14 {
        //  System.out.println("Class 14 " + var1);
          return !Class75_Sub4.method1351(var2, var3, var1, -30901)?null:Class69.method1281(0);
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "cg.C(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var5, "cg.C(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }
    }
 
@@ -26,7 +26,7 @@ final class Class14 {
          aClass94_339 = null;
          aClass94_341 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "cg.B(" + var0 + ')');
+         throw Class44.clientError(var2, "cg.B(" + var0 + ')');
       }
    }
 
@@ -101,7 +101,7 @@ final class Class14 {
          }
 
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "cg.A(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var9, "cg.A(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 

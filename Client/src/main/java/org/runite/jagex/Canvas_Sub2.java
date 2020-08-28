@@ -17,7 +17,7 @@ final class Canvas_Sub2 extends Canvas {
          Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 6, var0);
          var2.a(true);
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "tm.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "tm.C(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -63,7 +63,7 @@ final class Canvas_Sub2 extends Canvas {
             return true;
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "tm.A(" + archive + ',' + var1 + ')');
+         throw Class44.clientError(var6, "tm.A(" + archive + ',' + var1 + ')');
       }
    }
 
@@ -87,7 +87,7 @@ final class Canvas_Sub2 extends Canvas {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "tm.D(" + var0 + ')');
+         throw Class44.clientError(var5, "tm.D(" + var0 + ')');
       }
    }
 
@@ -97,7 +97,7 @@ final class Canvas_Sub2 extends Canvas {
             aBoolean29 = false;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "tm.B(" + var0 + ')');
+         throw Class44.clientError(var2, "tm.B(" + var0 + ')');
       }
    }
 
@@ -105,7 +105,7 @@ final class Canvas_Sub2 extends Canvas {
       try {
          this.aComponent33.update(var1);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "tm.update(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "tm.update(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -287,7 +287,7 @@ final class Canvas_Sub2 extends Canvas {
          }
 
       } catch (RuntimeException var24) {
-         throw Class44.method1067(var24, "tm.E(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ',' + (var6 != null?"{...}":"null") + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ')');
+         throw Class44.clientError(var24, "tm.E(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ',' + (var6 != null?"{...}":"null") + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ')');
       }
    }
 
@@ -295,7 +295,7 @@ final class Canvas_Sub2 extends Canvas {
       try {
          this.aComponent33.paint(var1);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "tm.paint(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "tm.paint(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -303,7 +303,7 @@ final class Canvas_Sub2 extends Canvas {
       try {
          this.aComponent33 = var1;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "tm.<init>(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "tm.<init>(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 

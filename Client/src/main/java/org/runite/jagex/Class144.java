@@ -19,7 +19,7 @@ abstract class Class144 {
             AnimationDefinition.aClass153_1852 = var2;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "u.D(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "u.D(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -46,7 +46,7 @@ abstract class Class144 {
 
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "u.G(" + var0 + ')');
+         throw Class44.clientError(var3, "u.G(" + var0 + ')');
       }
    }
    // static final void method2068(NPCDefinition var0, int var1, int var2, int var3, int var4) {
@@ -169,7 +169,7 @@ abstract class Class144 {
             }
          }
       } catch (RuntimeException var10) {
-         throw Class44.method1067(var10, "u.A(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var10, "u.A(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -193,7 +193,7 @@ abstract class Class144 {
             }
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "u.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "u.C(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -204,7 +204,7 @@ abstract class Class144 {
          }
          aClass94_1885 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "u.F(" + var0 + ')');
+         throw Class44.clientError(var2, "u.F(" + var0 + ')');
       }
    }
 

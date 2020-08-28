@@ -27,7 +27,7 @@ final class Class3_Sub13_Sub20 extends Class3_Sub13 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "mg.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var5, "mg.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }
    }
 
@@ -35,7 +35,7 @@ final class Class3_Sub13_Sub20 extends Class3_Sub13 {
       try {
          ;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "mg.U(" + var0 + ')');
+         throw Class44.clientError(var2, "mg.U(" + var0 + ')');
       }
    }
 
@@ -73,7 +73,7 @@ final class Class3_Sub13_Sub20 extends Class3_Sub13 {
 
          return var3;
       } catch (RuntimeException var15) {
-         throw Class44.method1067(var15, "mg.T(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var15, "mg.T(" + var1 + ',' + var2 + ')');
       }
    }
 

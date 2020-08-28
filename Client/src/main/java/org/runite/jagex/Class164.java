@@ -124,7 +124,7 @@ abstract class Class164 {
          }
 
       } catch (RuntimeException var43) {
-         throw Class44.method1067(var43, "wf.M(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var43, "wf.M(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -144,7 +144,7 @@ abstract class Class164 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "wf.L(" + var1 + ')');
+         throw Class44.clientError(var3, "wf.L(" + var1 + ')');
       }
    }
 
@@ -155,7 +155,7 @@ abstract class Class164 {
          int var2 = -27 / ((var1 - -87) / 39);
          return 1023 & var0;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "wf.K(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "wf.K(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -169,7 +169,7 @@ abstract class Class164 {
             aClass11_2055 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "wf.J(" + var0 + ')');
+         throw Class44.clientError(var2, "wf.J(" + var0 + ')');
       }
    }
 
@@ -195,7 +195,7 @@ abstract class Class164 {
          }
 
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "wf.N(" + var1 + ')');
+         throw Class44.clientError(var7, "wf.N(" + var1 + ')');
       }
    }
 
@@ -211,7 +211,7 @@ abstract class Class164 {
          this.method2232((byte)-60);
          this.method2236(-190126388);
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "wf.<init>(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var7, "wf.<init>(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 

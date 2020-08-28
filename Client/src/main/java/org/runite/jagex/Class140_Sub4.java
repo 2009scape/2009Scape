@@ -99,7 +99,7 @@ abstract class Class140_Sub4 extends GameObject {
          int var2 = this.getRenderAnimationId(-1);
          return var1?(RenderAnimationDefinition)null:(var2 == -1 ?PacketParser.aClass16_84:Class3_Sub10.getRenderAnimationDefinition(false, var2));
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "fe.D(" + var1 + ')');
+         throw Class44.clientError(var3, "fe.D(" + var1 + ')');
       }
    }
 
@@ -111,7 +111,7 @@ abstract class Class140_Sub4 extends GameObject {
 
          return false;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "fe.L(" + var1 + ')');
+         throw Class44.clientError(var3, "fe.L(" + var1 + ')');
       }
    }
 
@@ -158,7 +158,7 @@ abstract class Class140_Sub4 extends GameObject {
          }
 
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "fe.J(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var9, "fe.J(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 
@@ -222,7 +222,7 @@ abstract class Class140_Sub4 extends GameObject {
          var6 = -106 / ((var2 - -10) / 40);
          this.anIntArray2755[0] = var5;
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "fe.E(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var7, "fe.E(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -287,7 +287,7 @@ abstract class Class140_Sub4 extends GameObject {
          }
 
       } catch (RuntimeException var33) {
-         throw Class44.method1067(var33, "fe.M(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var33, "fe.M(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }
    }
 
@@ -305,7 +305,7 @@ abstract class Class140_Sub4 extends GameObject {
 
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "fe.G(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "fe.G(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -528,7 +528,7 @@ abstract class Class140_Sub4 extends GameObject {
          }
 
       } catch (RuntimeException var10) {
-         throw Class44.method1067(var10, "fe.A(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var10, "fe.A(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 
@@ -541,7 +541,7 @@ abstract class Class140_Sub4 extends GameObject {
             this.anInt2811 = 0;
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "fe.I(" + var1 + ')');
+         throw Class44.clientError(var3, "fe.I(" + var1 + ')');
       }
    }
 
@@ -557,7 +557,7 @@ abstract class Class140_Sub4 extends GameObject {
          aClass3_Sub28_Sub16Array2839 = null;
          anIntArray2794 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "fe.K(" + var0 + ')');
+         throw Class44.clientError(var2, "fe.K(" + var0 + ')');
       }
    }
 
@@ -565,7 +565,7 @@ abstract class Class140_Sub4 extends GameObject {
       try {
          return var1 != 27855?107:(this.anInt2820 != -32768?-this.anInt2820:200);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "fe.F(" + var1 + ')');
+         throw Class44.clientError(var3, "fe.F(" + var1 + ')');
       }
    }
 
@@ -577,7 +577,7 @@ abstract class Class140_Sub4 extends GameObject {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "fe.C(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "fe.C(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -585,7 +585,7 @@ abstract class Class140_Sub4 extends GameObject {
       try {
          return var1 != 114?-24:this.size;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "fe.H(" + var1 + ')');
+         throw Class44.clientError(var3, "fe.H(" + var1 + ')');
       }
    }
 

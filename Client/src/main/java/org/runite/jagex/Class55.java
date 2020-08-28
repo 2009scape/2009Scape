@@ -25,7 +25,7 @@ final class Class55 {
             return (Class3_Sub28_Sub16_Sub2)null;
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ia.F(" + var1 + ')');
+         throw Class44.clientError(var3, "ia.F(" + var1 + ')');
       }
    }
 
@@ -253,7 +253,7 @@ final class Class55 {
          }
 
       } catch (RuntimeException var17) {
-         throw Class44.method1067(var17, "ia.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var17, "ia.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -265,7 +265,7 @@ final class Class55 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ia.E(" + var0 + ')');
+         throw Class44.clientError(var2, "ia.E(" + var0 + ')');
       }
    }
 
@@ -284,7 +284,7 @@ final class Class55 {
             this.method1183(-18426, var2, var4, var1);
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ia.G(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "ia.G(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -304,7 +304,7 @@ final class Class55 {
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "ia.D(" + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var6, "ia.D(" + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ')');
       }
    }
 
@@ -351,7 +351,7 @@ final class Class55 {
 
          return 0;
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ia.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var5, "ia.A(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -363,7 +363,7 @@ final class Class55 {
 
          return 2;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ia.B(" + var0 + ')');
+         throw Class44.clientError(var2, "ia.B(" + var0 + ')');
       }
    }
 

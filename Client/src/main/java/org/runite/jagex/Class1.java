@@ -21,7 +21,7 @@ final class Class1 {
 
          Class3_Sub13_Sub9.aClass36_3112 = var0;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "a.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "a.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -611,7 +611,7 @@ final class Class1 {
          PacketParser.method824(var59, var57, var7 + -27);
          return var57;
       } catch (RuntimeException var55) {
-         throw Class44.method1067(var55, "a.A(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + (var5 != null?"{...}":"null") + ',' + (var6 != null?"{...}":"null") + ',' + var7 + ',' + (var8 != null?"{...}":"null") + ',' + (var9 != null?"{...}":"null") + ',' + (var10 != null?"{...}":"null") + ',' + (var11 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var55, "a.A(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + (var5 != null?"{...}":"null") + ',' + (var6 != null?"{...}":"null") + ',' + var7 + ',' + (var8 != null?"{...}":"null") + ',' + (var9 != null?"{...}":"null") + ',' + (var10 != null?"{...}":"null") + ',' + (var11 != null?"{...}":"null") + ')');
       }
    }
 
@@ -626,7 +626,7 @@ final class Class1 {
          aClass94_58 = null;
          anIntArray52 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "a.C(" + var0 + ')');
+         throw Class44.clientError(var2, "a.C(" + var0 + ')');
       }
    }
 
@@ -703,7 +703,7 @@ final class Class1 {
 
          }
       } catch (RuntimeException var14) {
-         throw Class44.method1067(var14, "a.D(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var14, "a.D(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 

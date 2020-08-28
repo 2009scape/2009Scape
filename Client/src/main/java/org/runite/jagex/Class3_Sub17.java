@@ -24,7 +24,7 @@ final class Class3_Sub17 extends Class3 {
 
 			aClass94_2465 = null;
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "jm.B(" + var0 + ')');
+			throw Class44.clientError(var2, "jm.B(" + var0 + ')');
 		}
 	}
 
@@ -68,7 +68,7 @@ final class Class3_Sub17 extends Class3 {
 
 			Class106.anInt1446 = 0;
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "jm.A(" + var0 + ')');
+			throw Class44.clientError(var2, "jm.A(" + var0 + ')');
 		}
 	}
 

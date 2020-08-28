@@ -22,7 +22,7 @@ final class Class107 {
             Class102.anInt2136 = var6 + var3;
          }
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "og.F(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var7, "og.F(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 
@@ -31,7 +31,7 @@ final class Class107 {
          aClass94Array1454 = null;
          aClass11_1453 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "og.E(" + var0 + ')');
+         throw Class44.clientError(var2, "og.E(" + var0 + ')');
       }
    }
 
@@ -43,7 +43,7 @@ final class Class107 {
 
          Class118.method1724(var6, var2, var3.anInt2829, var5, var1, var3.anInt2819, (byte)-85, var4);
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "og.A(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var8, "og.A(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
@@ -55,7 +55,7 @@ final class Class107 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "og.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "og.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -66,7 +66,7 @@ final class Class107 {
             var2.a(true);
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "og.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "og.C(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -78,7 +78,7 @@ final class Class107 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "og.G(" + var0 + ')');
+         throw Class44.clientError(var2, "og.G(" + var0 + ')');
       }
    }
 
@@ -103,7 +103,7 @@ final class Class107 {
 
          return var2;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "og.D(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "og.D(" + var0 + ',' + var1 + ',' + var2 + ')');
       }
    }
 

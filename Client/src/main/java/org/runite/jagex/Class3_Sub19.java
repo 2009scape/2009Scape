@@ -19,7 +19,7 @@ final class Class3_Sub19 extends Class3 {
 
          return new Class75_Sub2(var0.getShort((byte)38), var0.getShort((byte)51), var0.getShort((byte)66), var0.getShort((byte)68), var0.getTriByte((byte)86), var0.getTriByte((byte)86), var0.getByte((byte)-85));
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "kl.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "kl.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -170,7 +170,7 @@ final class Class3_Sub19 extends Class3 {
          Class27.aClass3_Sub28_Sub16_Sub2_518 = null;
          return true;
       } catch (RuntimeException var17) {
-         throw Class44.method1067(var17, "kl.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var17, "kl.B(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -181,7 +181,7 @@ final class Class3_Sub19 extends Class3 {
             Class27.aClass93_511.method1522(-126, var0);
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "kl.D(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "kl.D(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -190,7 +190,7 @@ final class Class3_Sub19 extends Class3 {
          //int var1 = 41 % ((var0 - -70) / 32);
          aClass153_2474 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "kl.A(" + var0 + ')');
+         throw Class44.clientError(var2, "kl.A(" + var0 + ')');
       }
    }
 

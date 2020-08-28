@@ -38,7 +38,7 @@ final class Class81 {
 
          var0.putBytes(var2, 0, 24, 88);
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "la.G(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var6, "la.G(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -62,7 +62,7 @@ final class Class81 {
 
          return var2;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "la.A(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "la.A(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -103,7 +103,7 @@ final class Class81 {
             }
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "la.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var6, "la.B(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -124,7 +124,7 @@ final class Class81 {
 
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "la.E(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "la.E(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 
@@ -144,7 +144,7 @@ final class Class81 {
             return var2;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "la.D(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "la.D(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -153,7 +153,7 @@ final class Class81 {
          aClass13_1139 = null;
          anIntArrayArrayArray1142 = (int[][][])null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "la.F(" + var0 + ')');
+         throw Class44.clientError(var2, "la.F(" + var0 + ')');
       }
    }
 
@@ -180,7 +180,7 @@ final class Class81 {
             return var5;
          }
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "la.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var8, "la.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 

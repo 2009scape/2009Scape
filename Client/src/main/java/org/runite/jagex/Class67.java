@@ -20,7 +20,7 @@ final class Class67 implements Runnable {
             aClass93_1013 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "jd.B(" + var0 + ')');
+         throw Class44.clientError(var2, "jd.B(" + var0 + ')');
       }
    }
 
@@ -38,7 +38,7 @@ final class Class67 implements Runnable {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "jd.run()");
+         throw Class44.clientError(var4, "jd.run()");
       }
    }
 
@@ -51,7 +51,7 @@ final class Class67 implements Runnable {
 
          return Class3_Sub13_Sub17.method251(-1);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "jd.D(" + var0 + ')');
+         throw Class44.clientError(var2, "jd.D(" + var0 + ')');
       }
    }
 
@@ -62,7 +62,7 @@ final class Class67 implements Runnable {
             var2.a(true);
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "jd.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "jd.A(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -140,7 +140,7 @@ final class Class67 implements Runnable {
          }
 
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "jd.E(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var8, "jd.E(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -174,7 +174,7 @@ final class Class67 implements Runnable {
          var11.byteArray = var10;
          return var11;
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "jd.C(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var9, "jd.C(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }
    }
 
@@ -186,7 +186,7 @@ final class Class67 implements Runnable {
 
          return var1 & 127;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "jd.F(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "jd.F(" + var0 + ',' + var1 + ')');
       }
    }
 

@@ -23,7 +23,7 @@ final class RuntimeException_Sub1 extends RuntimeException {
             Class3_Sub28_Sub15.anInt3695 = var2;
          }
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "ld.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var7, "ld.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 
@@ -35,7 +35,7 @@ final class RuntimeException_Sub1 extends RuntimeException {
 
          return 6;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ld.A(" + var0 + ')');
+         throw Class44.clientError(var2, "ld.A(" + var0 + ')');
       }
    }
 
@@ -48,7 +48,7 @@ final class RuntimeException_Sub1 extends RuntimeException {
       try {
          return (var0 < 97 || var0 > 122) && (var0 < 224 || var0 > 254 || 247 == var0)?(var0 != 255 ?(var0 != 156?(var1 != 59?72:var0):140):159):var0 + -32;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ld.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "ld.C(" + var0 + ',' + var1 + ')');
       }
    }
 

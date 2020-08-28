@@ -23,7 +23,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
 
          return var1.aClass3_Sub24_Sub1_2507;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "te.B()");
+         throw Class44.clientError(var2, "te.B()");
       }
    }
 
@@ -37,7 +37,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "te.C(" + var0 + ')');
+         throw Class44.clientError(var2, "te.C(" + var0 + ')');
       }
    }
 
@@ -46,7 +46,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
          Class3_Sub22 var1 = (Class3_Sub22)this.aClass61_3489.method1222();
          return (Class3_Sub24)(null != var1?(null != var1.aClass3_Sub24_Sub1_2507?var1.aClass3_Sub24_Sub1_2507:this.method414()):null);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "te.Q()");
+         throw Class44.clientError(var2, "te.Q()");
       }
    }
 
@@ -78,7 +78,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "te.P(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var6, "te.P(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -90,7 +90,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
 
          Class140_Sub4.aClass93_2792.method1522(-128, var0);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "te.O(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "te.O(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -98,7 +98,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
       try {
          return 0;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "te.D()");
+         throw Class44.clientError(var2, "te.D()");
       }
    }
 
@@ -112,7 +112,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
 
          return var3;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "te.F(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "te.F(" + var0 + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -130,7 +130,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
             return false;
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "te.A(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "te.A(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -145,7 +145,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
          Class2.anInterface5Array70[5] = new Class104();
          Class2.anInterface5Array70[var0] = new Class147();
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "te.T(" + var0 + ')');
+         throw Class44.clientError(var2, "te.T(" + var0 + ')');
       }
    }
 
@@ -175,7 +175,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "te.R(" + var1 + ')');
+         throw Class44.clientError(var4, "te.R(" + var1 + ')');
       }
    }
 
@@ -207,7 +207,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
          }
 
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "te.E(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var7, "te.E(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -258,7 +258,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
             var2.aClass3_Sub24_Sub1_2507.method413(var1, var3, var4);
          }
       } catch (RuntimeException var12) {
-         throw Class44.method1067(var12, "te.S(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var12, "te.S(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
@@ -266,7 +266,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
       try {
          this.aClass3_Sub24_Sub4_3493 = var1;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "te.<init>(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "te.<init>(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 

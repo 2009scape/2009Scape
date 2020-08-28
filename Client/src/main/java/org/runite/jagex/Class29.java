@@ -36,7 +36,7 @@ final class Class29 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "eh.A(" + var0 + ')');
+         throw Class44.clientError(var5, "eh.A(" + var0 + ')');
       }
    }
 
@@ -48,7 +48,7 @@ final class Class29 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "eh.D(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "eh.D(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -67,7 +67,7 @@ final class Class29 {
             this.method972(var2, (byte)-117, var3);
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "eh.B(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "eh.B(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -198,7 +198,7 @@ final class Class29 {
             var15.method150(var7, var3, var12, var22, var21, false);
          }
       } catch (RuntimeException var26) {
-         throw Class44.method1067(var26, "eh.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ',' + var11 + ',' + var12 + ',' + (var13 != null?"{...}":"null") + ',' + var14 + ',' + (var15 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var26, "eh.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ',' + var11 + ',' + var12 + ',' + (var13 != null?"{...}":"null") + ',' + var14 + ',' + (var15 != null?"{...}":"null") + ')');
       }
    }
 
@@ -213,7 +213,7 @@ final class Class29 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "eh.F(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "eh.F(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -226,7 +226,7 @@ final class Class29 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "eh.E(" + var0 + ')');
+         throw Class44.clientError(var2, "eh.E(" + var0 + ')');
       }
    }
 

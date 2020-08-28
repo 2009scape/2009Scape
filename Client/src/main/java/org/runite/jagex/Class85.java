@@ -24,7 +24,7 @@ final class Class85 {
          var1.index += Class3_Sub13_Sub9.aClass36_3112.method1015(var4.length, -81, var1.buffer, var4, 0, var1.index);
          return var1.index + -var3;
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "lg.A(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "lg.A(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -36,7 +36,7 @@ final class Class85 {
 
 	         return Class75_Sub4.method1351(var0, var2, var3, -30901)?Class3_Sub13_Sub36.method343(1854847236):null;
 	      } catch (RuntimeException var5) {
-	         throw Class44.method1067(var5, "lg.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+	         throw Class44.clientError(var5, "lg.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ')');
 	      }
 	   }
 
@@ -61,7 +61,7 @@ final class Class85 {
          }
          aClass142Array1168 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "lg.B(" + var0 + ')');
+         throw Class44.clientError(var2, "lg.B(" + var0 + ')');
       }
    }
 

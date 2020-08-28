@@ -228,7 +228,7 @@ class Class155 {
 
          }
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "vh.Q(" + var1 + ')');
+         throw Class44.clientError(var8, "vh.Q(" + var1 + ')');
       }
    }
 
@@ -237,7 +237,7 @@ class Class155 {
          int var3 = -128 / ((var1 - -58) / 54);
          this.aClass3_Sub24_1973 = var2;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "vh.I(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "vh.I(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -258,7 +258,7 @@ class Class155 {
          this.aClass3_Sub24Array1983[var4] = var1;
          var1.anInt2543 = var2;
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "vh.H(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var6, "vh.H(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -273,7 +273,7 @@ class Class155 {
          var2.aClass3_Sub28_Sub4_151 = Class3_Sub29.method733(12345678, var2.anInt149);
          return var2;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "vh.M(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "vh.M(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -281,7 +281,7 @@ class Class155 {
       try {
          return this.anInt1990;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "vh.B()");
+         throw Class44.clientError(var2, "vh.B()");
       }
    }
 
@@ -298,7 +298,7 @@ class Class155 {
 
          int var2 = 91 % ((var1 - 47) / 60);
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "vh.L(" + var1 + ')');
+         throw Class44.clientError(var4, "vh.L(" + var1 + ')');
       }
    }
 
@@ -310,7 +310,7 @@ class Class155 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "vh.J(" + var1 + ')');
+         throw Class44.clientError(var3, "vh.J(" + var1 + ')');
       }
    }
 
@@ -332,7 +332,7 @@ class Class155 {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "vh.K(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "vh.K(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -400,7 +400,7 @@ class Class155 {
             ;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "vh.P(" + var1 + ')');
+         throw Class44.clientError(var4, "vh.P(" + var1 + ')');
       }
    }
 
@@ -417,7 +417,7 @@ class Class155 {
          anIntArray1969 = null;
          anIntArray1978 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "vh.G(" + var0 + ')');
+         throw Class44.clientError(var2, "vh.G(" + var0 + ')');
       }
    }
 

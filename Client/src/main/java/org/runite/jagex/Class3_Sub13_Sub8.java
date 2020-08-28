@@ -25,7 +25,7 @@ final class Class3_Sub13_Sub8 extends Class3_Sub13 {
 			}
 
 		} catch (RuntimeException var5) {
-			throw Class44.method1067(var5, "ej.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+			throw Class44.clientError(var5, "ej.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
 		}
 	}
 
@@ -62,7 +62,7 @@ final class Class3_Sub13_Sub8 extends Class3_Sub13 {
 
 			return var3;
 		} catch (RuntimeException var12) {
-			throw Class44.method1067(var12, "ej.T(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var12, "ej.T(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -92,7 +92,7 @@ final class Class3_Sub13_Sub8 extends Class3_Sub13 {
 			}
 
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "ej.B(" + var0 + ')');
+			throw Class44.clientError(var2, "ej.B(" + var0 + ')');
 		}
 	}
 
@@ -110,7 +110,7 @@ final class Class3_Sub13_Sub8 extends Class3_Sub13 {
 			Class3_Sub13_Sub1.outgoingBuffer.putShort(Class140_Sub7.anInt2934);
 			Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-31, Class3_Sub28_Sub14.anInt3671);
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "ej.C(" + var0 + ')');
+			throw Class44.clientError(var2, "ej.C(" + var0 + ')');
 		}
 	}
 
@@ -127,7 +127,7 @@ final class Class3_Sub13_Sub8 extends Class3_Sub13 {
 				RenderAnimationDefinition.anInt377 = Class154.aClass153_1967.getFileAmount(1, (byte)83);
 			}
 		} catch (RuntimeException var5) {
-			throw Class44.method1067(var5, "ej.E(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var5, "ej.E(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ')');
 		}
 	}
 
@@ -142,7 +142,7 @@ final class Class3_Sub13_Sub8 extends Class3_Sub13 {
 			}
 
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "ej.O(" + var0 + ')');
+			throw Class44.clientError(var2, "ej.O(" + var0 + ')');
 		}
 	}
 
@@ -163,7 +163,7 @@ final class Class3_Sub13_Sub8 extends Class3_Sub13 {
 
 			return var4;
 		} catch (RuntimeException var7) {
-			throw Class44.method1067(var7, "ej.D(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var7, "ej.D(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -217,7 +217,7 @@ final class Class3_Sub13_Sub8 extends Class3_Sub13 {
 				throw new IllegalArgumentException("Invalid radix:" + var0);
 			}
 		} catch (RuntimeException var12) {
-			throw Class44.method1067(var12, "ej.F(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+			throw Class44.clientError(var12, "ej.F(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
 		}
 	}
 

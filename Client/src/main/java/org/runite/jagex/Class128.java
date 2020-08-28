@@ -65,7 +65,7 @@ final class Class128 {
             }
          }
       } catch (RuntimeException var11) {
-         throw Class44.method1067(var11, "rm.E(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var11, "rm.E(" + var0 + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -76,7 +76,7 @@ final class Class128 {
             aClass93_1683 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "rm.C(" + var0 + ')');
+         throw Class44.clientError(var2, "rm.C(" + var0 + ')');
       }
    }
 
@@ -90,7 +90,7 @@ final class Class128 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "rm.B(" + var0 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "rm.B(" + var0 + ',' + var2 + ')');
       }
    }
 
@@ -141,7 +141,7 @@ final class Class128 {
 
          return var9;
       } catch (RuntimeException var16) {
-         throw Class44.method1067(var16, "rm.D(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ')');
+         throw Class44.clientError(var16, "rm.D(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ')');
       }
    }
 
@@ -194,7 +194,7 @@ final class Class128 {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "rm.<init>(" + var1 + ')');
+         throw Class44.clientError(var4, "rm.<init>(" + var1 + ')');
       }
    }
 

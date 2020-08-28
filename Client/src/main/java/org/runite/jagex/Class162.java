@@ -26,7 +26,7 @@ final class Class162 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "wc.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "wc.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -45,7 +45,7 @@ final class Class162 {
             var0.index += 24;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "wc.E(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var4, "wc.E(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -58,7 +58,7 @@ final class Class162 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "wc.C(" + var0 + ')');
+         throw Class44.clientError(var2, "wc.C(" + var0 + ')');
       }
    }
 
@@ -67,7 +67,7 @@ final class Class162 {
          Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 4, var1);
          var2.a(var0);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "wc.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "wc.A(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -103,7 +103,7 @@ final class Class162 {
             return var2;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "wc.D(" + var0 + ',' + objectId + ')');
+         throw Class44.clientError(var4, "wc.D(" + var0 + ',' + objectId + ')');
       }
    }
 

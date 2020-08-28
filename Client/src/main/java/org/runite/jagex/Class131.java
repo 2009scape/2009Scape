@@ -67,7 +67,7 @@ final class Class131 {
             return;
          }
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "se.D(" + var0 + ')');
+         throw Class44.clientError(var9, "se.D(" + var0 + ')');
       }
    }
 
@@ -79,7 +79,7 @@ final class Class131 {
 
          return (this.aByteArray1730[var1] & 8) != 0;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "se.G(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "se.G(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -94,7 +94,7 @@ final class Class131 {
             return 127;
          }
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "se.H(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var8, "se.H(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -106,7 +106,7 @@ final class Class131 {
 
          return (4 & this.aByteArray1730[var1]) != 0;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "se.A(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "se.A(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -116,7 +116,7 @@ final class Class131 {
          var3.g((byte)33);
          var3.anInt3598 = var1;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "se.B(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "se.B(" + var0 + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -124,7 +124,7 @@ final class Class131 {
       try {
          return var2 != 8?35:this.aByteArray1730[var1] & 3;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "se.I(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "se.I(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -136,7 +136,7 @@ final class Class131 {
             aClass94_1724 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "se.F(" + var0 + ')');
+         throw Class44.clientError(var2, "se.F(" + var0 + ')');
       }
    }
 
@@ -172,7 +172,7 @@ final class Class131 {
             }
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "se.C(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var6, "se.C(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -184,7 +184,7 @@ final class Class131 {
 
          return 0 == (this.aByteArray1730[var1] & 16);
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "se.E(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "se.E(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -197,7 +197,7 @@ final class Class131 {
          this.aByteArray1730 = new byte[this.anInt1720];
          this.aShortArray1727 = new short[this.anInt1720];
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "se.<init>(" + var1 + ')');
+         throw Class44.clientError(var3, "se.<init>(" + var1 + ')');
       }
    }
 

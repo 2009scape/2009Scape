@@ -18,7 +18,7 @@ final class Class3_Sub31 extends Class3 {
             Class80.aClass93_1131.method1522(-126, var0);
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "wk.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "wk.C(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -33,7 +33,7 @@ final class Class3_Sub31 extends Class3 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "wk.B(" + var0 + ')');
+         throw Class44.clientError(var2, "wk.B(" + var0 + ')');
       }
    }
 
@@ -54,7 +54,7 @@ final class Class3_Sub31 extends Class3 {
 
          return var2;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "wk.A(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "wk.A(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 

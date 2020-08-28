@@ -123,7 +123,7 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
             }
          }
       } catch (RuntimeException var11) {
-         throw Class44.method1067(var11, "rj.C(" + var0 + ',' + var1 + ',' + var2 + ',' + (playerUsername != null?"{...}":"null") + ',' + var4 + ')');
+         throw Class44.clientError(var11, "rj.C(" + var0 + ',' + var1 + ',' + var2 + ',' + (playerUsername != null?"{...}":"null") + ',' + var4 + ')');
       }
    }
 
@@ -178,7 +178,7 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
          Class3_Sub1.interfaceScriptsIndex.method2137((byte)56);
          Class3_Sub13_Sub11.aClass93_3130.method1524(3);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "rj.E(" + var0 + ')');
+         throw Class44.clientError(var2, "rj.E(" + var0 + ')');
       }
    }
 
@@ -192,7 +192,7 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
          var4 ^= var4 << 1;
          return 4096 + -((var4 * (var4 * var4 * 15731 - -789221) - -1376312589 & Integer.MAX_VALUE) / 262144);
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "rj.O(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "rj.O(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -208,7 +208,7 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
             aClass61_3364 = (Class61)null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "rj.B(" + var0 + ')');
+         throw Class44.clientError(var2, "rj.B(" + var0 + ')');
       }
    }
 
@@ -226,7 +226,7 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
 
          return var3;
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "rj.D(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var7, "rj.D(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -282,7 +282,7 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
             }
          }
       } catch (RuntimeException var27) {
-         throw Class44.method1067(var27, "rj.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ')');
+         throw Class44.clientError(var27, "rj.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ')');
       }
    }
 

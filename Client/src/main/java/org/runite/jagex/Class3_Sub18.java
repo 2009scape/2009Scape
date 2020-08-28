@@ -19,7 +19,7 @@ final class Class3_Sub18 extends Class3 {
             anIntArray2470 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ka.B(" + var0 + ')');
+         throw Class44.clientError(var2, "ka.B(" + var0 + ')');
       }
    }
 
@@ -27,7 +27,7 @@ final class Class3_Sub18 extends Class3 {
       try {
          this.anInt2467 = var1;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ka.<init>(" + var1 + ')');
+         throw Class44.clientError(var3, "ka.<init>(" + var1 + ')');
       }
    }
 
@@ -43,7 +43,7 @@ final class Class3_Sub18 extends Class3 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ka.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "ka.A(" + var0 + ',' + var1 + ')');
       }
    }
 

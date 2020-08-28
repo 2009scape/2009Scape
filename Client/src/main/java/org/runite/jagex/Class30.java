@@ -33,7 +33,7 @@ final class Class30 {
             COMMAND_TOGGLE_FPSOFF = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "en.G(" + var0 + ')');
+         throw Class44.clientError(var2, "en.G(" + var0 + ')');
       }
    }
 
@@ -76,7 +76,7 @@ final class Class30 {
          }
 
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "en.C(" + var1 + ')');
+         throw Class44.clientError(var8, "en.C(" + var1 + ')');
       }
    }
 
@@ -88,7 +88,7 @@ final class Class30 {
 
          return this.aLong568;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "en.J(" + var1 + ')');
+         throw Class44.clientError(var3, "en.J(" + var1 + ')');
       }
    }
 
@@ -100,7 +100,7 @@ final class Class30 {
 
          return this.aClass122_573.method1742(-83);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "en.D(" + var1 + ')');
+         throw Class44.clientError(var3, "en.D(" + var1 + ')');
       }
    }
 
@@ -204,7 +204,7 @@ final class Class30 {
             throw new EOFException();
          }
       } catch (RuntimeException var15) {
-         throw Class44.method1067(var15, "en.F(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var15, "en.F(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -218,7 +218,7 @@ final class Class30 {
 
          Class73.ClientCommands(var4, false);
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "en.I(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "en.I(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -231,7 +231,7 @@ final class Class30 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "en.K(" + var1 + ')');
+         throw Class44.clientError(var3, "en.K(" + var1 + ')');
       }
    }
 
@@ -263,7 +263,7 @@ final class Class30 {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "en.A(" + var1 + ')');
+         throw Class44.clientError(var4, "en.A(" + var1 + ')');
       }
    }
 
@@ -275,7 +275,7 @@ final class Class30 {
 
          this.method978(0, var2, var2.length, 0);
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "en.B(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "en.B(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -358,7 +358,7 @@ final class Class30 {
          }
 
       } catch (RuntimeException var11) {
-         throw Class44.method1067(var11, "en.H(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var11, "en.H(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -374,7 +374,7 @@ final class Class30 {
             throw new IOException("Invalid seek to " + var2 + " in file " + this.method977(281669816));
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "en.E(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "en.E(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -386,7 +386,7 @@ final class Class30 {
          this.aByteArray564 = new byte[var2];
          this.aLong569 = 0L;
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "en.<init>(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "en.<init>(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
       }
    }
 

@@ -139,7 +139,7 @@ final class Class3_Sub22 extends Class3 {
          aClass153_2528 = null;
          aClass49_2505 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "mf.E(" + var0 + ')');
+         throw Class44.clientError(var2, "mf.E(" + var0 + ')');
       }
    }
 
@@ -151,7 +151,7 @@ final class Class3_Sub22 extends Class3 {
             ++Class163_Sub3.anInt3001;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "mf.F(" + var0 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "mf.F(" + var0 + ',' + var2 + ')');
       }
    }
 
@@ -163,7 +163,7 @@ final class Class3_Sub22 extends Class3 {
          this.aClass3_Sub15_2527 = null;
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "mf.A(" + var1 + ')');
+         throw Class44.clientError(var3, "mf.A(" + var1 + ')');
       }
    }
 
@@ -208,7 +208,7 @@ final class Class3_Sub22 extends Class3 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "mf.O(" + var0 + ')');
+         throw Class44.clientError(var2, "mf.O(" + var0 + ')');
       }
    }
 
@@ -241,7 +241,7 @@ final class Class3_Sub22 extends Class3 {
       try {
          return var0 > -55?(Class75_Sub4)null:new Class75_Sub4(var1.getShort((byte)93), var1.getShort((byte)55), var1.getShort((byte)81), var1.getShort((byte)95), var1.getTriByte((byte)124), var1.getTriByte((byte)120), var1.getByte((byte)-103));
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "mf.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "mf.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 

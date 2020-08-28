@@ -303,7 +303,7 @@ final class Class83 {
          }
 
       } catch (RuntimeException var40) {
-         throw Class44.method1067(var40, "le.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ')');
+         throw Class44.clientError(var40, "le.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ')');
       }
    }
 
@@ -323,7 +323,7 @@ final class Class83 {
             return 3;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "le.D(" + var0 + ')');
+         throw Class44.clientError(var2, "le.D(" + var0 + ')');
       }
    }
 
@@ -356,7 +356,7 @@ final class Class83 {
             return (Class3_Sub12_Sub1)null;
          }
       } catch (RuntimeException var10) {
-         throw Class44.method1067(var10, "le.B(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var10, "le.B(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -376,7 +376,7 @@ final class Class83 {
             }
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "le.A(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "le.A(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
       }
    }
 
@@ -388,7 +388,7 @@ final class Class83 {
 
          aClass3_Sub27_1154 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "le.E(" + var0 + ')');
+         throw Class44.clientError(var2, "le.E(" + var0 + ')');
       }
    }
 
@@ -428,7 +428,7 @@ final class Class83 {
          }
       } catch (RuntimeException var10) {
     	 // var10.printStackTrace();
-    	  throw Class44.method1067(var10, "le.F(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
+    	  throw Class44.clientError(var10, "le.F(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -444,7 +444,7 @@ final class Class83 {
             throw new RuntimeException();
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "le.G(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "le.G(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
       }
    }
 
@@ -453,7 +453,7 @@ final class Class83 {
          this.aClass153_1153 = var1;
          this.aClass153_1157 = var2;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "le.<init>(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "le.<init>(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 

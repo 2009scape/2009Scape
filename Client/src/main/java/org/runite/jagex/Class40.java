@@ -17,7 +17,7 @@ final class Class40 {
       try {
          return var2 != 0?-127:(var1 < var3 ?var3:(var1 > var0?var0:var1));
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "gd.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "gd.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -35,7 +35,7 @@ final class Class40 {
             Class130.anInt1711 = -3;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "gd.D(" + var0 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "gd.D(" + var0 + ',' + var2 + ')');
       }
    }
 
@@ -52,7 +52,7 @@ final class Class40 {
          aClass94_673 = null;
          aClass3_Sub28_Sub16_680 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "gd.A(" + var0 + ')');
+         throw Class44.clientError(var2, "gd.A(" + var0 + ')');
       }
    }
 
@@ -64,7 +64,7 @@ final class Class40 {
         // System.out.println("Class 40 " + archiveId);
          return Class75_Sub4.method1351(var1, var0, archiveId, -30901)?Class117.method1722(-53):null;
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "gd.G(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + archiveId + ')');
+         throw Class44.clientError(var5, "gd.G(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + archiveId + ')');
       }
    }
 
@@ -76,7 +76,7 @@ final class Class40 {
 
          CS2Script.aClass93_2450.method1523((byte)-109);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "gd.E(" + var0 + ')');
+         throw Class44.clientError(var2, "gd.E(" + var0 + ')');
       }
    }
 
@@ -88,7 +88,7 @@ final class Class40 {
 
          Class128.aClass93_1683.method1524(3);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "gd.B(" + var0 + ')');
+         throw Class44.clientError(var2, "gd.B(" + var0 + ')');
       }
    }
 
@@ -383,7 +383,7 @@ final class Class40 {
             Class163_Sub2_Sub1.anInt4019 = 1;
          }
       } catch (RuntimeException var10) {
-         throw Class44.method1067(var10, "gd.F(" + var0 + ')');
+         throw Class44.clientError(var10, "gd.F(" + var0 + ')');
       }
    }
 

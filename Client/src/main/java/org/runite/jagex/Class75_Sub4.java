@@ -146,7 +146,7 @@ final class Class75_Sub4 extends Class75 {
 
          i = 44 % ((27 - var0) / 39);
       } catch (RuntimeException var11) {
-         throw Class44.method1067(var11, "ta.M(" + var0 + ')');
+         throw Class44.clientError(var11, "ta.M(" + var0 + ')');
       }
    }
 
@@ -160,7 +160,7 @@ final class Class75_Sub4 extends Class75 {
             Class145.method2072(this.anInt1104, var4, var6, var5, var7, this.anInt1106, -2);
          }
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "ta.E(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var8, "ta.E(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -173,7 +173,7 @@ final class Class75_Sub4 extends Class75 {
          anIntArray2668 = null;
          anIntArray2663 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ta.C(" + var0 + ')');
+         throw Class44.clientError(var2, "ta.C(" + var0 + ')');
       }
    }
 
@@ -186,7 +186,7 @@ final class Class75_Sub4 extends Class75 {
          this.anInt2671 = var1;
          this.anInt2669 = var4;
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "ta.<init>(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
+         throw Class44.clientError(var9, "ta.<init>(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
       }
    }
 
@@ -199,7 +199,7 @@ final class Class75_Sub4 extends Class75 {
          Class3_Sub29.method730(var4, this.anInt1101, (byte)121, var7, var5, var6);
 
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "ta.A(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var8, "ta.A(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -213,7 +213,7 @@ final class Class75_Sub4 extends Class75 {
             return true;
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ta.N(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + archiveId + ',' + var3 + ')');
+         throw Class44.clientError(var5, "ta.N(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + archiveId + ',' + var3 + ')');
       }
    }
 
@@ -227,7 +227,7 @@ final class Class75_Sub4 extends Class75 {
             Class3_Sub13_Sub5.method194(this.anInt1106, var7, this.anInt1101, this.anInt1104, var6, 4096, var5, var4);
          }
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "ta.D(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var8, "ta.D(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -237,7 +237,7 @@ final class Class75_Sub4 extends Class75 {
             Class158.method2183(var2, var1, var4, 235, var0, GameObject.aClass11ArrayArray1834[var3]);
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "ta.K(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "ta.K(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -257,7 +257,7 @@ final class Class75_Sub4 extends Class75 {
 
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "ta.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var6, "ta.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -270,7 +270,7 @@ final class Class75_Sub4 extends Class75 {
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "ta.L(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "ta.L(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -291,7 +291,7 @@ final class Class75_Sub4 extends Class75 {
             Class133.anInt1754 = 0;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ta.O(" + var0 + ')');
+         throw Class44.clientError(var2, "ta.O(" + var0 + ')');
       }
    }
 

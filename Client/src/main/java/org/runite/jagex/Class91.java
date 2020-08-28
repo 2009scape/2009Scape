@@ -168,7 +168,7 @@ final class Class91 {
          }
 
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "mj.L(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var8, "mj.L(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
@@ -321,7 +321,7 @@ final class Class91 {
 
          }
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "mj.N(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var8, "mj.N(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
@@ -337,7 +337,7 @@ final class Class91 {
             return false;
          }
       } catch (RuntimeException var11) {
-         throw Class44.method1067(var11, "mj.M(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ')');
+         throw Class44.clientError(var11, "mj.M(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ')');
       }
    }
 
@@ -653,7 +653,7 @@ final class Class91 {
             return false;
          }
       } catch (RuntimeException var11) {
-         throw Class44.method1067(var11, "mj.D(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ')');
+         throw Class44.clientError(var11, "mj.D(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ')');
       }
    }
 
@@ -680,7 +680,7 @@ final class Class91 {
 
          }
       } catch (RuntimeException var10) {
-         throw Class44.method1067(var10, "mj.B(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var10, "mj.B(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
@@ -692,7 +692,7 @@ final class Class91 {
 
          this.anIntArrayArray1304[var3][var4] = Class3_Sub13_Sub29.bitwiseOr(this.anIntArrayArray1304[var3][var4], var1);
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "mj.J(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "mj.J(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -707,7 +707,7 @@ final class Class91 {
          aClass94_1301 = null;
          aClass33_1305 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "mj.R(" + var0 + ')');
+         throw Class44.clientError(var2, "mj.R(" + var0 + ')');
       }
    }
 
@@ -857,7 +857,7 @@ final class Class91 {
 
          return false;
       } catch (RuntimeException var11) {
-         throw Class44.method1067(var11, "mj.Q(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ')');
+         throw Class44.clientError(var11, "mj.Q(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ')');
       }
    }
 
@@ -886,7 +886,7 @@ final class Class91 {
             Class163_Sub1_Sub1.aBooleanArray4008[var3] = true;
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "mj.K(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "mj.K(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -970,7 +970,7 @@ final class Class91 {
             return true;
          }
       } catch (RuntimeException var17) {
-         throw Class44.method1067(var17, "mj.O(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ')');
+         throw Class44.clientError(var17, "mj.O(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ')');
       }
    }
 
@@ -1009,7 +1009,7 @@ final class Class91 {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "mj.P(" + var1 + ')');
+         throw Class44.clientError(var4, "mj.P(" + var1 + ')');
       }
    }
 
@@ -1021,7 +1021,7 @@ final class Class91 {
             this.anIntArrayArray1304[var3][var1] = Class3_Sub13_Sub29.bitwiseOr(this.anIntArrayArray1304[var3][var1], 2097152);
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "mj.E(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "mj.E(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -1043,7 +1043,7 @@ final class Class91 {
             }
          }
       } catch (RuntimeException var12) {
-         throw Class44.method1067(var12, "mj.S(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ')');
+         throw Class44.clientError(var12, "mj.S(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ')');
       }
    }
 
@@ -1057,7 +1057,7 @@ final class Class91 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "mj.I(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "mj.I(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -1070,7 +1070,7 @@ final class Class91 {
          this.anIntArrayArray1304 = new int[this.anInt1300][this.anInt1303];
          this.method1496(0);
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "mj.<init>(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "mj.<init>(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -1190,7 +1190,7 @@ final class Class91 {
             }
          }
       } catch (RuntimeException var10) {
-         throw Class44.method1067(var10, "mj.G(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var10, "mj.G(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 
@@ -1200,7 +1200,7 @@ final class Class91 {
             this.anIntArrayArray1304[var3][var2] = Class3_Sub28_Sub15.method633(this.anIntArrayArray1304[var3][var2], ~var4);
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "mj.H(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "mj.H(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -1235,7 +1235,7 @@ final class Class91 {
          }
 
       } catch (RuntimeException var11) {
-         throw Class44.method1067(var11, "mj.A(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
+         throw Class44.clientError(var11, "mj.A(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
       }
    }
 
@@ -1247,7 +1247,7 @@ final class Class91 {
             this.anIntArrayArray1304[var1][var2] = Class3_Sub13_Sub29.bitwiseOr(this.anIntArrayArray1304[var1][var2], 262144);
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "mj.C(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "mj.C(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 

@@ -23,7 +23,7 @@ abstract class Class3_Sub28_Sub16 extends Node {
             COMMAND_GRAPHICS_CARD_MEMORY = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "qf.R(" + var0 + ')');
+         throw Class44.clientError(var2, "qf.R(" + var0 + ')');
       }
    }
 
@@ -38,7 +38,7 @@ abstract class Class3_Sub28_Sub16 extends Node {
          RSInterface var3 = Class7.getRSInterface((byte)109, var1);
          return var2 == -1 ?var3:(var0 != -19?(RSInterface)null:(var3 != null && var3.aClass11Array262 != null && var2 < var3.aClass11Array262.length ?var3.aClass11Array262[var2]:null));
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "qf.P(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "qf.P(" + var0 + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -54,7 +54,7 @@ abstract class Class3_Sub28_Sub16 extends Node {
             this.method636(var6, var7, var4, var1, var2, var3);
          }
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "qf.F(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var8, "qf.F(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 

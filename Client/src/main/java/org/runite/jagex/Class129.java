@@ -18,7 +18,7 @@ abstract class Class129 {
 
          return var0 >>> 7;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "s.D(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "s.D(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -33,7 +33,7 @@ abstract class Class129 {
          anIntArray1693 = null;
          aClass94_1694 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "s.E(" + var0 + ')');
+         throw Class44.clientError(var2, "s.E(" + var0 + ')');
       }
    }
 
@@ -97,7 +97,7 @@ abstract class Class129 {
 
          }
       } catch (RuntimeException var14) {
-         throw Class44.method1067(var14, "s.F(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var14, "s.F(" + var0 + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -416,7 +416,7 @@ abstract class Class129 {
          }
 
       } catch (RuntimeException var37) {
-         throw Class44.method1067(var37, "s.C(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ',' + (var6 != null?"{...}":"null") + ',' + (var7 != null?"{...}":"null") + ',' + (var8 != null?"{...}":"null") + ',' + (var9 != null?"{...}":"null") + ',' + var10 + ',' + (var11 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var37, "s.C(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ',' + (var6 != null?"{...}":"null") + ',' + (var7 != null?"{...}":"null") + ',' + (var8 != null?"{...}":"null") + ',' + (var9 != null?"{...}":"null") + ',' + var10 + ',' + (var11 != null?"{...}":"null") + ')');
       }
    }
 

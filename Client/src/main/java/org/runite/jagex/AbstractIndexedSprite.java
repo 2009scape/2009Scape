@@ -26,7 +26,7 @@ abstract class AbstractIndexedSprite {
             var0.aClass3_74.aClass3_76 = var0;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ok.C(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "ok.C(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 
@@ -37,7 +37,7 @@ abstract class AbstractIndexedSprite {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ok.D(" + var0 + ')');
+         throw Class44.clientError(var2, "ok.D(" + var0 + ')');
       }
    }
 
@@ -54,7 +54,7 @@ abstract class AbstractIndexedSprite {
          int var6 = 30 % ((64 - var2) / 54);
          return var3;
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ok.B(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "ok.B(" + var0 + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -86,7 +86,7 @@ abstract class AbstractIndexedSprite {
          }
 
       } catch (RuntimeException var13) {
-         throw Class44.method1067(var13, "ok.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var13, "ok.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 

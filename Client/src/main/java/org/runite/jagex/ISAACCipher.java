@@ -146,7 +146,7 @@ final class ISAACCipher {
          this.method1229(-1879);
          this.anInt968 = 256;
       } catch (RuntimeException var11) {
-         throw Class44.method1067(var11, "ij.E(" + var1 + ')');
+         throw Class44.clientError(var11, "ij.E(" + var1 + ')');
       }
    }
 
@@ -163,7 +163,7 @@ final class ISAACCipher {
 
          return Configurations.USEISAAC ? this.anIntArray970[this.anInt968] : 0;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ij.C(" + var1 + ')');
+         throw Class44.clientError(var3, "ij.C(" + var1 + ')');
       }
    }
 
@@ -197,7 +197,7 @@ final class ISAACCipher {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ij.A(" + var1 + ')');
+         throw Class44.clientError(var5, "ij.A(" + var1 + ')');
       }
    }
 
@@ -322,7 +322,7 @@ final class ISAACCipher {
 
          Class69.method1282(AbstractIndexedSprite.anInt1462, (byte)122, Class3_Sub13_Sub33.anInt3395, Class3_Sub28_Sub1.anInt3537, Class3_Sub28_Sub3.anInt3552);
       } catch (RuntimeException var10) {
-         throw Class44.method1067(var10, "ij.F(" + var0 + ')');
+         throw Class44.clientError(var10, "ij.F(" + var0 + ')');
       }
    }
 
@@ -333,7 +333,7 @@ final class ISAACCipher {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ij.D(" + var0 + ')');
+         throw Class44.clientError(var2, "ij.D(" + var0 + ')');
       }
    }
 
@@ -365,7 +365,7 @@ final class ISAACCipher {
             return 103;
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "ij.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var5, "ij.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -382,7 +382,7 @@ final class ISAACCipher {
 
          this.method1227(true);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ij.<init>(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "ij.<init>(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 

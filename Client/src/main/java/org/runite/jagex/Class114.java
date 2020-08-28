@@ -27,7 +27,7 @@ final class Class114 {
          ignores = null;
          aClass30_1572 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "pf.G(" + var0 + ')');
+         throw Class44.clientError(var2, "pf.G(" + var0 + ')');
       }
    }
 
@@ -45,7 +45,7 @@ final class Class114 {
          MouseListeningClass.aFloatArray1919[2] = (float)Class3_Sub28_Sub15.method633(255, var0) / 255.0F * var6 * var7 * var2;
          return MouseListeningClass.aFloatArray1919;
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "pf.F(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var8, "pf.F(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -64,7 +64,7 @@ final class Class114 {
          this.aClass61_1577.method1211(-85);
          this.aClass61_1577 = null;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "pf.A(" + var1 + ')');
+         throw Class44.clientError(var3, "pf.A(" + var1 + ')');
       }
    }
 
@@ -89,7 +89,7 @@ final class Class114 {
             return (Class3_Sub28_Sub16)null;
          }
       } catch (RuntimeException var11) {
-         throw Class44.method1067(var11, "pf.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var11, "pf.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 
@@ -101,7 +101,7 @@ final class Class114 {
             var3.anInt3598 = var0;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "pf.E(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "pf.E(" + var0 + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -144,7 +144,7 @@ final class Class114 {
             }
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "pf.C(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "pf.C(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -162,7 +162,7 @@ final class Class114 {
             throw new RuntimeException("Can only retrieve a full image cache");
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "pf.H(" + var1 + ')');
+         throw Class44.clientError(var3, "pf.H(" + var1 + ')');
       }
    }
 
@@ -176,7 +176,7 @@ final class Class114 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "pf.D(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "pf.D(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -187,7 +187,7 @@ final class Class114 {
          this.anInt1579 = var1;
          this.anIntArrayArray1573 = new int[this.anInt1579][var3];
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "pf.<init>(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "pf.<init>(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 

@@ -16,7 +16,7 @@ final class Class123 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "r.A(" + var0 + ')');
+         throw Class44.clientError(var2, "r.A(" + var0 + ')');
       }
    }
 

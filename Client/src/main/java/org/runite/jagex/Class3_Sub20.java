@@ -21,7 +21,7 @@ final class Class3_Sub20 extends Class3 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "lb.A(" + var0 + ')');
+         throw Class44.clientError(var2, "lb.A(" + var0 + ')');
       }
    }
    
@@ -74,7 +74,7 @@ final class Class3_Sub20 extends Class3 {
 	         }
 
 	      } catch (RuntimeException var3) {
-	         throw Class44.method1067(var3, "lb.C(" + var0 + ')');
+	         throw Class44.clientError(var3, "lb.C(" + var0 + ')');
 	      }
 	   }
 
@@ -94,7 +94,7 @@ final class Class3_Sub20 extends Class3 {
         // int var7 = 76 % ((-79 - var4) / 35);
          Class133.anInt1753 = 2;
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "lb.D(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var8, "lb.D(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
@@ -107,7 +107,7 @@ final class Class3_Sub20 extends Class3 {
 
          aClass94_2482 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "lb.B(" + var0 + ')');
+         throw Class44.clientError(var2, "lb.B(" + var0 + ')');
       }
    }
 
@@ -116,7 +116,7 @@ final class Class3_Sub20 extends Class3 {
          this.anInt2483 = var2;
          this.anInt2489 = var1;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "lb.<init>(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "lb.<init>(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -127,7 +127,7 @@ final class Class3_Sub20 extends Class3 {
          Class7.aClass153_2160 = var0;
          Class131.aClass153_1723 = var3;
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "lb.E(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "lb.E(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
       }
    }
 

@@ -57,7 +57,7 @@ abstract class Class118 {
             throw new IllegalArgumentException("Invalid radix:" + var2);
          }
       } catch (RuntimeException var10) {
-         throw Class44.method1067(var10, "q.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var10, "q.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -97,11 +97,11 @@ abstract class Class118 {
             Class32.anInt590 = -1;
          }
       } catch (RuntimeException var16) {
-         throw Class44.method1067(var16, "q.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
+         throw Class44.clientError(var16, "q.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
       }
    }
 
-   abstract Class3_Sub28_Sub7 method1725(Class3_Sub28_Sub7 var1, int var2);
+   abstract Class3_Sub28_Sub7 method1725(Class3_Sub28_Sub7 var1);
 
    public static void method1726(int var0) {
       try {
@@ -110,7 +110,7 @@ abstract class Class118 {
          aClass94_1617 = null;
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "q.B(" + var0 + ')');
+         throw Class44.clientError(var2, "q.B(" + var0 + ')');
       }
    }
 
@@ -122,7 +122,7 @@ abstract class Class118 {
 
          return KeyboardListener.aClass93_1911.method1520(-12623);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "q.D(" + var0 + ')');
+         throw Class44.clientError(var2, "q.D(" + var0 + ')');
       }
    }
 

@@ -37,7 +37,7 @@ final class Class3_Sub2 extends Class3 {
          this.anInt2238 = this.anInt2244 = var1;
          this.anInt2239 = var2;
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "bj.<init>(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "bj.<init>(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -46,7 +46,7 @@ final class Class3_Sub2 extends Class3 {
          aClass130_2220 = null;
          aShortArray2219 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "bj.A(" + var0 + ')');
+         throw Class44.clientError(var2, "bj.A(" + var0 + ')');
       }
    }
 
@@ -56,7 +56,7 @@ final class Class3_Sub2 extends Class3 {
          Class81.aClass13_1139.method883(17126);
          Class126.aClass13_1666.method883(17126);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "bj.B(" + var0 + ')');
+         throw Class44.clientError(var2, "bj.B(" + var0 + ')');
       }
    }
 

@@ -19,7 +19,7 @@ final class WorldListCountry {
          aClass94_500 = null;
          int var1 = 32 % ((-78 - var0) / 34);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ee.A(" + var0 + ')');
+         throw Class44.clientError(var2, "ee.A(" + var0 + ')');
       }
    }
 

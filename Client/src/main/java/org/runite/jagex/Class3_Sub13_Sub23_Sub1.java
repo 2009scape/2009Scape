@@ -40,7 +40,7 @@ final class Class3_Sub13_Sub23_Sub1 extends Class3_Sub13_Sub23 {
 
          return var3;
       } catch (RuntimeException var10) {
-         throw Class44.method1067(var10, "kd.T(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var10, "kd.T(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -74,7 +74,7 @@ final class Class3_Sub13_Sub23_Sub1 extends Class3_Sub13_Sub23 {
          }
 
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "kd.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var7, "kd.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -87,7 +87,7 @@ final class Class3_Sub13_Sub23_Sub1 extends Class3_Sub13_Sub23 {
          System.out.println("Bad " + var0 + ", Usage: worldid, <live/rc/wip>, <english/german>, <game0/game1>");
          System.exit(1);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "kd.O(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "kd.O(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -165,7 +165,7 @@ final class Class3_Sub13_Sub23_Sub1 extends Class3_Sub13_Sub23 {
          var6.method1022(var11);
          var12 = 105 % ((-20 - var7) / 54);
       } catch (RuntimeException var23) {
-         throw Class44.method1067(var23, "kd.Q(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ',' + (var6 != null?"{...}":"null") + ',' + var7 + ',' + (var8 != null?"{...}":"null") + ',' + (var9 != null?"{...}":"null") + ',' + var10 + ')');
+         throw Class44.clientError(var23, "kd.Q(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ',' + (var6 != null?"{...}":"null") + ',' + var7 + ',' + (var8 != null?"{...}":"null") + ',' + (var9 != null?"{...}":"null") + ',' + var10 + ')');
       }
    }
 
@@ -186,7 +186,7 @@ final class Class3_Sub13_Sub23_Sub1 extends Class3_Sub13_Sub23 {
             return (Class158)null;
          }
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "kd.C(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var7, "kd.C(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
       }
    }
 
@@ -198,7 +198,7 @@ final class Class3_Sub13_Sub23_Sub1 extends Class3_Sub13_Sub23 {
          //System.out.println("Class3_Sub13_Sub_23_Sub1 " + var2);
          return !Class75_Sub4.method1351(var3, var1, var2, -30901)?null:Class15.method891(var0 ^ 4);
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "kd.F(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "kd.F(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
       }
    }
 
@@ -211,7 +211,7 @@ final class Class3_Sub13_Sub23_Sub1 extends Class3_Sub13_Sub23 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "kd.E(" + var0 + ')');
+         throw Class44.clientError(var2, "kd.E(" + var0 + ')');
       }
    }
 

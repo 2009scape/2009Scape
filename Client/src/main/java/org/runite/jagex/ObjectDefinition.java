@@ -93,7 +93,7 @@ final class ObjectDefinition {
             return true;
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "pb.H(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var6, "pb.H(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -117,7 +117,7 @@ final class ObjectDefinition {
             return var3 == -1 ?null:Class162.getObjectDefinition(4, var3);
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "pb.C(" + var1 + ')');
+         throw Class44.clientError(var4, "pb.C(" + var1 + ')');
       }
    }
 
@@ -264,7 +264,7 @@ final class ObjectDefinition {
 
          return var13;
       } catch (RuntimeException var10) {
-         throw Class44.method1067(var10, "pb.O(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var10, "pb.O(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -277,7 +277,7 @@ final class ObjectDefinition {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "pb.B(" + var0 + ')');
+         throw Class44.clientError(var2, "pb.B(" + var0 + ')');
       }
    }
 
@@ -317,7 +317,7 @@ final class ObjectDefinition {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "pb.D(" + var1 + ')');
+         throw Class44.clientError(var3, "pb.D(" + var1 + ')');
       }
    }
 
@@ -342,7 +342,7 @@ final class ObjectDefinition {
             return false;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "pb.F(" + var1 + ')');
+         throw Class44.clientError(var4, "pb.F(" + var1 + ')');
       }
    }
 
@@ -357,7 +357,7 @@ final class ObjectDefinition {
             return var4 != null?var4.anInt2467:var1;
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "pb.N(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "pb.N(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -376,7 +376,7 @@ final class ObjectDefinition {
             this.parseOpcode(var2, var3, -80);
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "pb.G(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "pb.G(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -605,7 +605,7 @@ final class ObjectDefinition {
             }
          }
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "pb.K(" + (buffer != null?"{...}":"null") + ',' + opcode + ',' + var3 + ')');
+         throw Class44.clientError(var9, "pb.K(" + (buffer != null?"{...}":"null") + ',' + opcode + ',' + var3 + ')');
       }
    }
 
@@ -623,7 +623,7 @@ final class ObjectDefinition {
             return var1?true:var2;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "pb.I(" + var1 + ')');
+         throw Class44.clientError(var4, "pb.I(" + var1 + ')');
       }
    }
 
@@ -770,7 +770,7 @@ final class ObjectDefinition {
 
          return var19;
       } catch (RuntimeException var13) {
-         throw Class44.method1067(var13, "pb.L(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var13, "pb.L(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -887,7 +887,7 @@ final class ObjectDefinition {
             }
          }
       } catch (RuntimeException var19) {
-         throw Class44.method1067(var19, "pb.A(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ',' + (var6 != null?"{...}":"null") + ',' + var7 + ',' + (var8 != null?"{...}":"null") + ',' + var9 + ',' + var10 + ',' + var11 + ')');
+         throw Class44.clientError(var19, "pb.A(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ',' + (var6 != null?"{...}":"null") + ',' + var7 + ',' + (var8 != null?"{...}":"null") + ',' + var9 + ',' + var10 + ',' + var11 + ')');
       }
    }
 
@@ -996,7 +996,7 @@ final class ObjectDefinition {
             return Class100.aClass136_1413;
          }
       } catch (RuntimeException var20) {
-         throw Class44.method1067(var20, "pb.M(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ',' + var8 + ',' + var9 + ',' + var10 + ',' + (var11 != null?"{...}":"null") + ',' + var12 + ',' + var13 + ',' + var14 + ')');
+         throw Class44.clientError(var20, "pb.M(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ',' + var8 + ',' + var9 + ',' + var10 + ',' + (var11 != null?"{...}":"null") + ',' + var12 + ',' + var13 + ',' + var14 + ')');
       }
    }
 
@@ -1013,7 +1013,7 @@ final class ObjectDefinition {
             return var4 == null?var1:var4.aClass94_2586;
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "pb.E(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "pb.E(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
       }
    }
 

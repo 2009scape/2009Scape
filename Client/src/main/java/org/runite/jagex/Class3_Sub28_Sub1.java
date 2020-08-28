@@ -33,7 +33,7 @@ final class Class3_Sub28_Sub1 extends Node {
 
          var2 = 46 / ((var1 - -27) / 38);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "bc.O(" + var1 + ')');
+         throw Class44.clientError(var3, "bc.O(" + var1 + ')');
       }
    }
 
@@ -51,7 +51,7 @@ final class Class3_Sub28_Sub1 extends Node {
             return -1;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "bc.Q(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "bc.Q(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -92,7 +92,7 @@ final class Class3_Sub28_Sub1 extends Node {
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "bc.E(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var6, "bc.E(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -104,7 +104,7 @@ final class Class3_Sub28_Sub1 extends Node {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "bc.B(" + var0 + ')');
+         throw Class44.clientError(var2, "bc.B(" + var0 + ')');
       }
    }
 
@@ -123,7 +123,7 @@ final class Class3_Sub28_Sub1 extends Node {
             return -1;
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "bc.P(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "bc.P(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -142,7 +142,7 @@ final class Class3_Sub28_Sub1 extends Node {
             this.method527(var1, 0, var3);
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "bc.D(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "bc.D(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 
@@ -169,7 +169,7 @@ final class Class3_Sub28_Sub1 extends Node {
          int var2 = -97 % ((var0 - 55) / 32);
          return var1;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "bc.F(" + var0 + ')');
+         throw Class44.clientError(var3, "bc.F(" + var0 + ')');
       }
    }
 
@@ -182,7 +182,7 @@ final class Class3_Sub28_Sub1 extends Node {
             }
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "bc.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "bc.A(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -244,7 +244,7 @@ final class Class3_Sub28_Sub1 extends Node {
          }
 
       } catch (RuntimeException var11) {
-         throw Class44.method1067(var11, "bc.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
+         throw Class44.clientError(var11, "bc.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
       }
    }
 

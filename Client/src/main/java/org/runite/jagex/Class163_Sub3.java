@@ -19,7 +19,7 @@ final class Class163_Sub3 extends Class163 {
             anIntArray2999 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "fb.A(" + var0 + ')');
+         throw Class44.clientError(var2, "fb.A(" + var0 + ')');
       }
    }
 
@@ -66,7 +66,7 @@ final class Class163_Sub3 extends Class163 {
             }
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "fb.B(" + var0 + ')');
+         throw Class44.clientError(var3, "fb.B(" + var0 + ')');
       }
    }
 
@@ -114,7 +114,7 @@ final class Class163_Sub3 extends Class163 {
             }
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "fb.C(" + var0 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "fb.C(" + var0 + ',' + var2 + ')');
       }
    }
 

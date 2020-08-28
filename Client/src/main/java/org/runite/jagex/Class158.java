@@ -25,7 +25,7 @@ abstract class Class158 {
          Class3_Sub28_Sub7_Sub1.aClass153_4048 = var0;
          Class3_Sub13_Sub18.aClass153_3214 = var1;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "vk.D(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "vk.D(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 
@@ -39,7 +39,7 @@ abstract class Class158 {
 
          aClass94_2006 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "vk.H(" + var0 + ')');
+         throw Class44.clientError(var2, "vk.H(" + var0 + ')');
       }
    }
 
@@ -51,7 +51,7 @@ abstract class Class158 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "vk.G(" + var1 + ')');
+         throw Class44.clientError(var3, "vk.G(" + var1 + ')');
       }
    }
 
@@ -88,7 +88,7 @@ abstract class Class158 {
 
          }
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "vk.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var8, "vk.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ')');
       }
    }
 

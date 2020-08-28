@@ -41,7 +41,7 @@ final class Class80 {
             return var2;
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "l.D(" + var1 + ')');
+         throw Class44.clientError(var3, "l.D(" + var1 + ')');
       }
    }
 
@@ -54,7 +54,7 @@ final class Class80 {
          this.anInt1132 = 0;
          return this.method1392(0);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "l.C(" + var1 + ')');
+         throw Class44.clientError(var3, "l.C(" + var1 + ')');
       }
    }
 
@@ -67,7 +67,7 @@ final class Class80 {
          aClass93_1135 = null;
          aClass3_Sub28_Sub16Array1136 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "l.E(" + var0 + ')');
+         throw Class44.clientError(var2, "l.E(" + var0 + ')');
       }
    }
 
@@ -124,7 +124,7 @@ final class Class80 {
          }
 
       } catch (RuntimeException var10) {
-         throw Class44.method1067(var10, "l.A(" + var0 + ')');
+         throw Class44.clientError(var10, "l.A(" + var0 + ')');
       }
    }
 
@@ -132,7 +132,7 @@ final class Class80 {
       try {
          this.aClass130_1134 = var1;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "l.<init>(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "l.<init>(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 

@@ -102,7 +102,7 @@ public class Translation {
             TextCore.HasScroll = RSString.createRSString("d-Broulement:");
             TextCore.LoadingWLD = RSString.createRSString("Chargement de la liste des serveurs");
         } catch (RuntimeException var2) {
-            throw Class44.method1067(var2, "bb.C(" + var0 + ')');
+            throw Class44.clientError(var2, "bb.C(" + var0 + ')');
         }
     }
 
@@ -204,7 +204,7 @@ public class Translation {
             TextCore.PreparedSoundEngine = RSString.createRSString("Musik)2Engine vorbereitet)3");
             TextCore.HasLevel = RSString.createRSString("Stufe: ");
         } catch (RuntimeException var2) {
-            throw Class44.method1067(var2, "lk.A(" + var0 + ')');
+            throw Class44.clientError(var2, "lk.A(" + var0 + ')');
         }
     }
 }

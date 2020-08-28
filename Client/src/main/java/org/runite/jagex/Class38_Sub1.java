@@ -41,7 +41,7 @@ final class Class38_Sub1 extends Class38 {
             }
          }
       } catch (RuntimeException var14) {
-         throw Class44.method1067(var14, "em.B(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var14, "em.B(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
@@ -53,7 +53,7 @@ final class Class38_Sub1 extends Class38 {
 
          return var0 >>> 7;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "em.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "em.C(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -68,7 +68,7 @@ final class Class38_Sub1 extends Class38 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "em.A(" + var0 + ')');
+         throw Class44.clientError(var2, "em.A(" + var0 + ')');
       }
    }
 

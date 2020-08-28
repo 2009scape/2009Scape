@@ -20,7 +20,7 @@ final class Class110 {
             Class3_Sub13_Sub25.loginStage = 6;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "p.A(" + var0 + ')');
+         throw Class44.clientError(var2, "p.A(" + var0 + ')');
       }
    }
 
@@ -33,7 +33,7 @@ final class Class110 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "p.C(" + var0 + ')');
+         throw Class44.clientError(var2, "p.C(" + var0 + ')');
       }
    }
 
@@ -522,7 +522,7 @@ final class Class110 {
             }
          }
       } catch (RuntimeException var36) {
-         throw Class44.method1067(var36, "p.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + objectId + ',' + type + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ')');
+         throw Class44.clientError(var36, "p.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + objectId + ',' + type + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ')');
       }
    }
 

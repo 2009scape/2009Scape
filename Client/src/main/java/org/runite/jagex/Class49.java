@@ -65,7 +65,7 @@ final class Class49 {
          }
 
       } catch (RuntimeException var15) {
-         throw Class44.method1067(var15, "ha.E(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var15, "ha.E(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -82,7 +82,7 @@ final class Class49 {
 
          return var2;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ha.J(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "ha.J(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -112,7 +112,7 @@ final class Class49 {
 
          return var0 != 16711935?(byte[])null:var2.aByteArray3612;
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "ha.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var9, "ha.B(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -131,7 +131,7 @@ final class Class49 {
             return Class3_Sub28_Sub12.method612(var1, (byte)124);
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "ha.H(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "ha.H(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -186,7 +186,7 @@ final class Class49 {
          int var3 = -67 % ((var0 - -37) / 48);
          var2.a(true);
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "ha.I(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "ha.I(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -297,7 +297,7 @@ final class Class49 {
             Class106.anInt1446 = 0;
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "ha.G(" + var0 + ')');
+         throw Class44.clientError(var3, "ha.G(" + var0 + ')');
       }
    }
 
@@ -326,7 +326,7 @@ final class Class49 {
          }
       } catch (RuntimeException var6) {
 //    	  var6.printStackTrace();
-         throw Class44.method1067(var6, "ha.D(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var6, "ha.D(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }
    }
 
@@ -386,7 +386,7 @@ final class Class49 {
          }
 
       } catch (RuntimeException var15) {
-         throw Class44.method1067(var15, "ha.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var15, "ha.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -402,7 +402,7 @@ final class Class49 {
          aClass47_818 = null;
          aBooleanArrayArray814 = (boolean[][])null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ha.F(" + var0 + ')');
+         throw Class44.clientError(var2, "ha.F(" + var0 + ')');
       }
    }
 

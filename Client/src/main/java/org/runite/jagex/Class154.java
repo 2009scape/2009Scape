@@ -23,7 +23,7 @@ final class Class154 {
          aClass93_1965 = null;
          aClass93_1964 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "vf.A(" + var0 + ')');
+         throw Class44.clientError(var2, "vf.A(" + var0 + ')');
       }
    }
 
@@ -66,7 +66,7 @@ final class Class154 {
             return Class72.method1298((byte)9, var0);
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "vf.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "vf.C(" + var0 + ',' + var1 + ')');
       }
    }
 

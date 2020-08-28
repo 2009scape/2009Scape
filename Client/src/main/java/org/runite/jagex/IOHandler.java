@@ -99,7 +99,7 @@ final class IOHandler implements Runnable {
                 return;
             }
         } catch (RuntimeException var12) {
-            throw Class44.method1067(var12, "ma.run()");
+            throw Class44.clientError(var12, "ma.run()");
         }
     }
 
@@ -116,7 +116,7 @@ final class IOHandler implements Runnable {
             }
 
         } catch (RuntimeException var8) {
-            throw Class44.method1067(var8, "ma.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+            throw Class44.clientError(var8, "ma.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
         }
     }
 
@@ -137,7 +137,7 @@ final class IOHandler implements Runnable {
                 }
             }
         } catch (RuntimeException var6) {
-            throw Class44.method1067(var6, "ma.D(" + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ')');
+            throw Class44.clientError(var6, "ma.D(" + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ')');
         }
     }
 
@@ -149,7 +149,7 @@ final class IOHandler implements Runnable {
 
             return !this.aBoolean1241?this.anInputStream1232.read():0;
         } catch (RuntimeException var3) {
-            throw Class44.method1067(var3, "ma.E(" + var1 + ')');
+            throw Class44.clientError(var3, "ma.E(" + var1 + ')');
         }
     }
 
@@ -162,7 +162,7 @@ final class IOHandler implements Runnable {
             aClass61_1242 = null;
             aClass33_1238 = null;
         } catch (RuntimeException var2) {
-            throw Class44.method1067(var2, "ma.I(" + var0 + ')');
+            throw Class44.clientError(var2, "ma.I(" + var0 + ')');
         }
     }
 
@@ -199,7 +199,7 @@ final class IOHandler implements Runnable {
                 }
             }
         } catch (RuntimeException var9) {
-            throw Class44.method1067(var9, "ma.K(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
+            throw Class44.clientError(var9, "ma.K(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
         }
     }
 
@@ -207,7 +207,7 @@ final class IOHandler implements Runnable {
         try {
             this.close(14821);
         } catch (RuntimeException var2) {
-            throw Class44.method1067(var2, "ma.finalize()");
+            throw Class44.clientError(var2, "ma.finalize()");
         }
     }
 
@@ -219,7 +219,7 @@ final class IOHandler implements Runnable {
 
             return this.aBoolean1241?0:this.anInputStream1232.available();
         } catch (RuntimeException var3) {
-            throw Class44.method1067(var3, "ma.B(" + var1 + ')');
+            throw Class44.clientError(var3, "ma.B(" + var1 + ')');
         }
     }
 
@@ -234,7 +234,7 @@ final class IOHandler implements Runnable {
                 }
             }
         } catch (RuntimeException var3) {
-            throw Class44.method1067(var3, "ma.G(" + var1 + ')');
+            throw Class44.clientError(var3, "ma.G(" + var1 + ')');
         }
     }
 
@@ -249,7 +249,7 @@ final class IOHandler implements Runnable {
                 this.anOutputStream1231 = new OutputStream_Sub1();
             }
         } catch (RuntimeException var3) {
-            throw Class44.method1067(var3, "ma.H(" + var1 + ')');
+            throw Class44.clientError(var3, "ma.H(" + var1 + ')');
         }
     }
 
@@ -281,7 +281,7 @@ final class IOHandler implements Runnable {
                 this.aClass64_1237 = null;
             }
         } catch (RuntimeException var6) {
-            throw Class44.method1067(var6, "ma.J(" + var1 + ')');
+            throw Class44.clientError(var6, "ma.J(" + var1 + ')');
         }
     }
 
@@ -357,7 +357,7 @@ final class IOHandler implements Runnable {
             this.anInputStream1232 = this.aSocket1235.getInputStream();
             this.anOutputStream1231 = this.aSocket1235.getOutputStream();
         } catch (RuntimeException var4) {
-            throw Class44.method1067(var4, "ma.<init>(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
+            throw Class44.clientError(var4, "ma.<init>(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
         }
     }
 
@@ -401,7 +401,7 @@ final class IOHandler implements Runnable {
                 }
             }
         } catch (RuntimeException var12) {
-            throw Class44.method1067(var12, "ma.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+            throw Class44.clientError(var12, "ma.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
         }
     }
 

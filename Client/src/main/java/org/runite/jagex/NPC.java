@@ -24,7 +24,7 @@ final class NPC extends Class140_Sub4 {
 				aClass153_3993 = null;
 			}
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "km.N(" + var0 + ')');
+			throw Class44.clientError(var2, "km.N(" + var0 + ')');
 		}
 	}
 
@@ -39,7 +39,7 @@ final class NPC extends Class140_Sub4 {
 				return 88;
 			}
 		} catch (RuntimeException var5) {
-			throw Class44.method1067(var5, "km.S(" + var0 + ',' + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var5, "km.S(" + var0 + ',' + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -49,7 +49,7 @@ final class NPC extends Class140_Sub4 {
 		try {
 			return this.anInt2820;
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "km.MA()");
+			throw Class44.clientError(var2, "km.MA()");
 		}
 	}
 
@@ -73,7 +73,7 @@ final class NPC extends Class140_Sub4 {
 				}
 			}
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "km.Q(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+			throw Class44.clientError(var4, "km.Q(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
 		}
 	}
 
@@ -158,7 +158,7 @@ final class NPC extends Class140_Sub4 {
 				}
 			}
 		} catch (RuntimeException var20) {
-			throw Class44.method1067(var20, "km.IA(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var11 + ',' + (var12 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var20, "km.IA(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var11 + ',' + (var12 != null?"{...}":"null") + ')');
 		}
 	}
 
@@ -173,7 +173,7 @@ final class NPC extends Class140_Sub4 {
 
 			return this.renderAnimationId;
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "km.B(" + var1 + ')');
+			throw Class44.clientError(var3, "km.B(" + var1 + ')');
 		}
 	}
 
@@ -183,7 +183,7 @@ final class NPC extends Class140_Sub4 {
 				;
 			}
 		} catch (RuntimeException var7) {
-			throw Class44.method1067(var7, "km.IB(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+			throw Class44.clientError(var7, "km.IB(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
 		}
 	}
 
@@ -195,7 +195,7 @@ final class NPC extends Class140_Sub4 {
 
 			return null != this.definition;
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "km.L(" + var1 + ')');
+			throw Class44.clientError(var3, "km.L(" + var1 + ')');
 		}
 	}
 
@@ -207,7 +207,7 @@ final class NPC extends Class140_Sub4 {
 
 			return HDToolKit.highDetail?true:Class3_Sub28_Sub13.aBoolean3665;
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "km.O(" + var0 + ')');
+			throw Class44.clientError(var2, "km.O(" + var0 + ')');
 		}
 	}
 
@@ -221,7 +221,7 @@ final class NPC extends Class140_Sub4 {
 
 			}
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "km.R(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var4, "km.R(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
 		}
 	}
 
@@ -262,7 +262,7 @@ final class NPC extends Class140_Sub4 {
 
 			return false;
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "km.P(" + var0 + ')');
+			throw Class44.clientError(var3, "km.P(" + var0 + ')');
 		}
 	}
 

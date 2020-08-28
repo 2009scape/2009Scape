@@ -90,7 +90,7 @@ final class Class56 {
 
          return (var18 >> 2 << 10) + (var19 >> 5 << 7) + (var20 >> 1);
       } catch (RuntimeException var21) {
-         throw Class44.method1067(var21, "ib.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var21, "ib.A(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -106,7 +106,7 @@ final class Class56 {
          aClass106Array890 = null;
          aClass3_Sub26_884 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ib.B(" + var0 + ')');
+         throw Class44.clientError(var2, "ib.B(" + var0 + ')');
       }
    }
 
@@ -124,7 +124,7 @@ final class Class56 {
          Class129.anIntArray1695 = null;
          Class3_Sub31.anIntArray2606 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "ib.D(" + var0 + ')');
+         throw Class44.clientError(var2, "ib.D(" + var0 + ')');
       }
    }
 

@@ -32,7 +32,7 @@ static boolean aBoolean1080 = false;
             this.aClass13_1086.notifyAll();
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "k.G(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var6, "k.G(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 
@@ -44,7 +44,7 @@ static boolean aBoolean1080 = false;
          //System.out.println("Class 73 " + var1);
          return !Class75_Sub4.method1351(var3, var0, var1, -30901)?null:NodeList.method880(-22376, var4.getFile(var1, (byte)-122, var0));
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "k.C(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var6, "k.C(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
       }
    }
 
@@ -198,7 +198,7 @@ static boolean aBoolean1080 = false;
             }
          }
       } catch (RuntimeException var22) {
-         throw Class44.method1067(var22, "k.D(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var22, "k.D(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
@@ -229,7 +229,7 @@ static boolean aBoolean1080 = false;
             return (Class3_Sub28_Sub6)null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "k.J(" + var0 + ')');
+         throw Class44.clientError(var2, "k.J(" + var0 + ')');
       }
    }
 
@@ -297,7 +297,7 @@ static boolean aBoolean1080 = false;
             }
          }
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "k.K(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var7, "k.K(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 
@@ -321,7 +321,7 @@ static boolean aBoolean1080 = false;
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "k.B(" + var1 + ')');
+         throw Class44.clientError(var6, "k.B(" + var1 + ')');
       }
    }
 
@@ -336,7 +336,7 @@ static boolean aBoolean1080 = false;
          this.method1299(var5, 104);
          return var5;
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "k.A(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
+         throw Class44.clientError(var6, "k.A(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
       }
    }
 
@@ -346,7 +346,7 @@ static boolean aBoolean1080 = false;
             anIntArray1083 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "k.I(" + var0 + ')');
+         throw Class44.clientError(var2, "k.I(" + var0 + ')');
       }
    }
 
@@ -364,7 +364,7 @@ static boolean aBoolean1080 = false;
          this.method1299(var4, 104);
          return var4;
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "k.E(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "k.E(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
       }
    }
 
@@ -538,7 +538,7 @@ static boolean aBoolean1080 = false;
          Class3_Sub13_Sub1.outgoingBuffer.putString(0, command.method1556(2, (byte)-74));
 
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "k.H(" + (command != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var5, "k.H(" + (command != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -574,7 +574,7 @@ static boolean aBoolean1080 = false;
          var4.aBoolean3628 = true;
          return var4;
       } catch (RuntimeException var9) {
-         throw Class44.method1067(var9, "k.F(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var9, "k.F(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -613,7 +613,7 @@ static boolean aBoolean1080 = false;
          }
 
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "k.run()");
+         throw Class44.clientError(var8, "k.run()");
       }
    }
 
@@ -631,7 +631,7 @@ static boolean aBoolean1080 = false;
             this.aThread1090 = (Thread)var1.anObject974;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "k.<init>()");
+         throw Class44.clientError(var2, "k.<init>()");
       }
    }
 

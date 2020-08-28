@@ -22,7 +22,7 @@ final class Class3_Sub13_Sub35 extends Class3_Sub13 {
          int var7 = 59 % ((30 - var2) / 36);
          return var3;
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "tb.D(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var6, "tb.D(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -38,7 +38,7 @@ final class Class3_Sub13_Sub35 extends Class3_Sub13 {
 
          return Class101.aBoolean1419 && ObjectDefinition.aBooleanArray1490[81] && 2 < Class3_Sub13_Sub34.anInt3415?Class114.anIntArray1578[-2 + Class3_Sub13_Sub34.anInt3415]:Class114.anIntArray1578[Class3_Sub13_Sub34.anInt3415 - 1];
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "tb.C(" + var0 + ')');
+         throw Class44.clientError(var2, "tb.C(" + var0 + ')');
       }
    }
 
@@ -51,7 +51,7 @@ final class Class3_Sub13_Sub35 extends Class3_Sub13 {
 
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "tb.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var5, "tb.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }
    }
 
@@ -80,7 +80,7 @@ final class Class3_Sub13_Sub35 extends Class3_Sub13 {
             return (int[][])((int[][])null);
          }
       } catch (RuntimeException var12) {
-         throw Class44.method1067(var12, "tb.T(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var12, "tb.T(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -114,7 +114,7 @@ final class Class3_Sub13_Sub35 extends Class3_Sub13 {
             return var2;
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "tb.B(" + fileId + ',' + var1 + ')');
+         throw Class44.clientError(var4, "tb.B(" + fileId + ',' + var1 + ')');
       }
    }
 
@@ -127,7 +127,7 @@ final class Class3_Sub13_Sub35 extends Class3_Sub13 {
 
          aClass131_3421 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "tb.E(" + var0 + ')');
+         throw Class44.clientError(var2, "tb.E(" + var0 + ')');
       }
    }
 

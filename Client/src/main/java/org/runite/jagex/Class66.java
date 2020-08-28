@@ -33,7 +33,7 @@ final class Class66 {
 
 			return 20 <= this.method1246(11706);
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "jb.N(" + var1 + ')');
+			throw Class44.clientError(var3, "jb.N(" + var1 + ')');
 		}
 	}
 
@@ -46,7 +46,7 @@ final class Class66 {
 
 			aClass94_995 = null;
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "jb.G(" + var0 + ')');
+			throw Class44.clientError(var2, "jb.G(" + var0 + ')');
 		}
 	}
 
@@ -229,7 +229,7 @@ final class Class66 {
 				}
 			}
 		} catch (RuntimeException var20) {
-			throw Class44.method1067(var20, "jb.H(" + var1 + ')');
+			throw Class44.clientError(var20, "jb.H(" + var1 + ')');
 		}
 	}
 
@@ -260,7 +260,7 @@ final class Class66 {
 
 			}
 		} catch (RuntimeException var6) {
-			throw Class44.method1067(var6, "jb.O(" + var1 + ')');
+			throw Class44.clientError(var6, "jb.O(" + var1 + ')');
 		}
 	}
 
@@ -273,7 +273,7 @@ final class Class66 {
 			byte[] var3 = var1.method2138(var2, 0);
 			return var3 != null?new Class3_Sub15(var3):null;
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "jb.F(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+			throw Class44.clientError(var4, "jb.F(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
 		}
 	}
 
@@ -285,7 +285,7 @@ final class Class66 {
 
 			return this.lowPriorityRequests.method874(-79) - -this.aClass13_1003.method874(-118);
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "jb.K(" + var1 + ')');
+			throw Class44.clientError(var3, "jb.K(" + var1 + ')');
 		}
 	}
 
@@ -314,7 +314,7 @@ final class Class66 {
 				}
 			}
 		} catch (RuntimeException var7) {
-			throw Class44.method1067(var7, "jb.B(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var7, "jb.B(" + var1 + ',' + var2 + ')');
 		}
 	}
 
@@ -329,7 +329,7 @@ final class Class66 {
 			}
 
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "jb.P(" + var1 + ')');
+			throw Class44.clientError(var3, "jb.P(" + var1 + ')');
 		}
 	}
 
@@ -390,7 +390,7 @@ final class Class66 {
 				this.highPriorityRequests.method879(var4, (byte)80);
 			}
 		} catch (RuntimeException var9) {
-			throw Class44.method1067(var9, "jb.M(" + var1 + ',' + (stream != null?"{...}":"null") + ',' + var3 + ')');
+			throw Class44.clientError(var9, "jb.M(" + var1 + ',' + (stream != null?"{...}":"null") + ',' + var3 + ')');
 		}
 	}
 
@@ -433,7 +433,7 @@ final class Class66 {
 			Class82.anInt1150 = -1;
 			Class3_Sub13_Sub19.aClass3_Sub28_Sub16_Sub2_3221 = null;
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "jb.E(" + var0 + ',' + var1 + ')');
+			throw Class44.clientError(var3, "jb.E(" + var0 + ',' + var1 + ')');
 		}
 	}
 
@@ -442,7 +442,7 @@ final class Class66 {
 			int var2 = 33 % ((2 - var1) / 58);
 			return 20 <= this.method1253(4);
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "jb.L(" + var1 + ')');
+			throw Class44.clientError(var3, "jb.L(" + var1 + ')');
 		}
 	}
 
@@ -461,7 +461,7 @@ final class Class66 {
 			this.aClass89_1005 = null;
 			++this.anInt1011;
 		} catch (RuntimeException var5) {
-			throw Class44.method1067(var5, "jb.A(" + var1 + ')');
+			throw Class44.clientError(var5, "jb.A(" + var1 + ')');
 		}
 	}
 
@@ -473,7 +473,7 @@ final class Class66 {
 
 			return this.highPriorityRequests.method874(-127) - -this.aClass13_1000.method874(-108);
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "jb.C(" + var1 + ')');
+			throw Class44.clientError(var3, "jb.C(" + var1 + ')');
 		}
 	}
 
@@ -488,7 +488,7 @@ final class Class66 {
 			}
 
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "jb.D(" + var1 + ')');
+			throw Class44.clientError(var3, "jb.D(" + var1 + ')');
 		}
 	}
 
@@ -516,7 +516,7 @@ final class Class66 {
 
 			return var8;
 		} catch (RuntimeException var10) {
-			throw Class44.method1067(var10, "jb.I(" + var1 + ',' + index + ',' + var3 + ',' + archive + ',' + highPriority + ')');
+			throw Class44.clientError(var10, "jb.I(" + var1 + ',' + index + ',' + var3 + ',' + archive + ',' + highPriority + ')');
 		}
 	}
 
@@ -545,7 +545,7 @@ final class Class66 {
 				}
 			}
 		} catch (RuntimeException var6) {
-			throw Class44.method1067(var6, "jb.J(" + var1 + ')');
+			throw Class44.clientError(var6, "jb.J(" + var1 + ')');
 		}
 	}
 

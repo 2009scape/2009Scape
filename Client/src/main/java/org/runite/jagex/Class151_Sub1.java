@@ -79,7 +79,7 @@ final class Class151_Sub1 extends Class151 {
             }
          }
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "bg.G(" + var0 + ')');
+         throw Class44.clientError(var8, "bg.G(" + var0 + ')');
       }
    }
 
@@ -99,7 +99,7 @@ final class Class151_Sub1 extends Class151 {
             this.aClass61_2963.method1215(true, var3);
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "bg.H(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "bg.H(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -176,7 +176,7 @@ final class Class151_Sub1 extends Class151 {
             return (Class62)null;
          }
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "bg.B(" + var1 + ')');
+         throw Class44.clientError(var6, "bg.B(" + var1 + ')');
       }
    }
 
@@ -190,7 +190,7 @@ final class Class151_Sub1 extends Class151 {
 
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "bg.A(" + var1 + ')');
+         throw Class44.clientError(var3, "bg.A(" + var1 + ')');
       }
    }
 
@@ -202,7 +202,7 @@ final class Class151_Sub1 extends Class151 {
 
          return this.anInt2948;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "bg.I(" + var1 + ')');
+         throw Class44.clientError(var3, "bg.I(" + var1 + ')');
       }
    }
 
@@ -210,7 +210,7 @@ final class Class151_Sub1 extends Class151 {
       try {
          return var1 >= -78?true: var0 == 198 || 230 == var0 || var0 == 156 || var0 == 140 || 223 == var0;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "bg.P(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "bg.P(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -230,7 +230,7 @@ final class Class151_Sub1 extends Class151 {
          }
 
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "bg.N(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var7, "bg.N(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -241,7 +241,7 @@ final class Class151_Sub1 extends Class151 {
             aClass3_Sub30_Sub1_2942 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "bg.F(" + var0 + ')');
+         throw Class44.clientError(var2, "bg.F(" + var0 + ')');
       }
    }
 
@@ -266,7 +266,7 @@ final class Class151_Sub1 extends Class151 {
             }
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "bg.O(" + var1 + ')');
+         throw Class44.clientError(var3, "bg.O(" + var1 + ')');
       }
    }
 
@@ -397,7 +397,7 @@ final class Class151_Sub1 extends Class151 {
          }
       } catch (RuntimeException var5) {
     	  var5.printStackTrace();
-         throw Class44.method1067(var5, "bg.J(" + var1 + ')');
+         throw Class44.clientError(var5, "bg.J(" + var1 + ')');
       }
    }
 
@@ -410,7 +410,7 @@ final class Class151_Sub1 extends Class151 {
          Class3_Sub28_Sub10 var3 = (Class3_Sub28_Sub10)this.aClass130_2946.method1780((long)var1, var2 + -65535);
          return null != var3?var3.method586(false):0;
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "bg.L(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "bg.L(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -426,7 +426,7 @@ final class Class151_Sub1 extends Class151 {
             return this.aClass62_2944.validArchiveAmount;
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "bg.M(" + var1 + ')');
+         throw Class44.clientError(var3, "bg.M(" + var1 + ')');
       }
    }
 
@@ -587,7 +587,7 @@ final class Class151_Sub1 extends Class151 {
          }
       } catch (RuntimeException var11) {
 //    	  var11.printStackTrace();
-         throw Class44.method1067(var11, "bg.C(" + var1 + ',' + archiveIndex + ',' + var3 + ')');
+         throw Class44.clientError(var11, "bg.C(" + var1 + ',' + archiveIndex + ',' + var3 + ')');
       }
    }
 
@@ -617,7 +617,7 @@ final class Class151_Sub1 extends Class151 {
             }
          }
       } catch (RuntimeException var4) {
-         throw Class44.method1067(var4, "bg.D(" + var1 + ')');
+         throw Class44.clientError(var4, "bg.D(" + var1 + ')');
       }
    }
 
@@ -626,7 +626,7 @@ final class Class151_Sub1 extends Class151 {
          int var2 = -96 / ((20 - var1) / 33);
          return null != this.method2094(0)?100:(null == this.aClass3_Sub28_Sub10_2950?0:this.aClass3_Sub28_Sub10_2950.method586(false));
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "bg.E(" + var1 + ')');
+         throw Class44.clientError(var3, "bg.E(" + var1 + ')');
       }
    }
 
@@ -641,7 +641,7 @@ final class Class151_Sub1 extends Class151 {
             return var4;
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "bg.K(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "bg.K(" + var1 + ',' + var2 + ')');
       }
    }
 
@@ -667,7 +667,7 @@ final class Class151_Sub1 extends Class151 {
          }
 
       } catch (RuntimeException var10) {
-         throw Class44.method1067(var10, "bg.<init>(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ',' + var7 + ',' + var8 + ')');
+         throw Class44.clientError(var10, "bg.<init>(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ',' + var7 + ',' + var8 + ')');
       }
    }
 

@@ -43,7 +43,7 @@ final class AnimationDefinition {
 
 			return var5;
 		} catch (RuntimeException var6) {
-			throw Class44.method1067(var6, "tk.J(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var6, "tk.J(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
 		}
 	}
 
@@ -63,7 +63,7 @@ final class AnimationDefinition {
 				this.method2060(var3, (byte)-73, var1);
 			}
 		} catch (RuntimeException var4) {
-			throw Class44.method1067(var4, "tk.I(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+			throw Class44.clientError(var4, "tk.I(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
 		}
 	}
 
@@ -131,7 +131,7 @@ final class AnimationDefinition {
 				return var10;
 			}
 		} catch (RuntimeException var11) {
-			throw Class44.method1067(var11, "tk.D(" + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ')');
+			throw Class44.clientError(var11, "tk.D(" + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ')');
 		}
 	}
 
@@ -200,7 +200,7 @@ final class AnimationDefinition {
 				return var17;
 			}
 		} catch (RuntimeException var18) {
-			throw Class44.method1067(var18, "tk.E(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+			throw Class44.clientError(var18, "tk.E(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
 		}
 	}
 
@@ -268,7 +268,7 @@ final class AnimationDefinition {
 				return var10;
 			}
 		} catch (RuntimeException var11) {
-			throw Class44.method1067(var11, "tk.B(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ')');
+			throw Class44.clientError(var11, "tk.B(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ')');
 		}
 	}
 
@@ -283,7 +283,7 @@ final class AnimationDefinition {
 			}
 			anIntArray1871 = null;
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "tk.F(" + var0 + ')');
+			throw Class44.clientError(var2, "tk.F(" + var0 + ')');
 		}
 	}
 
@@ -308,7 +308,7 @@ final class AnimationDefinition {
 
 			}
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "tk.C(" + var1 + ')');
+			throw Class44.clientError(var3, "tk.C(" + var1 + ')');
 		}
 	}
 
@@ -340,7 +340,7 @@ final class AnimationDefinition {
 				return var10;
 			}
 		} catch (RuntimeException var11) {
-			throw Class44.method1067(var11, "tk.G(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var11, "tk.G(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ')');
 		}
 	}
 
@@ -426,7 +426,7 @@ final class AnimationDefinition {
 
 			var4 = 49 % ((-12 - var2) / 34);
 		} catch (RuntimeException var8) {
-			throw Class44.method1067(var8, "tk.H(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var8, "tk.H(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
 		}
 	}
 
@@ -710,7 +710,7 @@ final class AnimationDefinition {
 			CacheIndex.aBoolean1951 = false;
 			Class3_Sub13_Sub8.method204(-3);
 		} catch (RuntimeException var6) {
-			throw Class44.method1067(var6, "tk.A(" + var0 + ')');
+			throw Class44.clientError(var6, "tk.A(" + var0 + ')');
 		}
 	}
 

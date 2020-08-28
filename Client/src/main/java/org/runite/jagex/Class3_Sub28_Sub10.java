@@ -18,7 +18,7 @@ abstract class Class3_Sub28_Sub10 extends Node {
    public static void method588(byte var0) {
       try {
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "il.C(" + var0 + ')');
+         throw Class44.clientError(var2, "il.C(" + var0 + ')');
       }
    }
 
@@ -45,7 +45,7 @@ abstract class Class3_Sub28_Sub10 extends Node {
          ObjectDefinition var4 = Class162.getObjectDefinition(4, var1);
          return var4.method1684(115, var2);
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "il.D(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "il.D(" + var0 + ',' + var1 + ',' + var2 + ')');
       }
    }
 

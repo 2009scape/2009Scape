@@ -50,7 +50,7 @@ final class Class3_Sub9 extends Class3 {
             return var2;
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "fl.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "fl.B(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -102,7 +102,7 @@ final class Class3_Sub9 extends Class3 {
 
          }
       } catch (RuntimeException var5) {
-         throw Class44.method1067(var5, "fl.A(" + var1 + ')');
+         throw Class44.clientError(var5, "fl.A(" + var1 + ')');
       }
    }
 
@@ -162,7 +162,7 @@ final class Class3_Sub9 extends Class3 {
          }
 
       } catch (RuntimeException var25) {
-         throw Class44.method1067(var25, "fl.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var25, "fl.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 
@@ -178,7 +178,7 @@ final class Class3_Sub9 extends Class3 {
          aClass64_2318 = null;
          regionXteaKeys = (int[][])null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "fl.D(" + var0 + ')');
+         throw Class44.clientError(var2, "fl.D(" + var0 + ')');
       }
    }
 
@@ -191,7 +191,7 @@ final class Class3_Sub9 extends Class3 {
          Class82.aClass93_1146.method1522(-127, var0);
          Class159.aClass93_2016.method1522(-126, var0);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "fl.E(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "fl.E(" + var0 + ',' + var1 + ')');
       }
    }
 

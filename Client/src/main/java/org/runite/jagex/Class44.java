@@ -31,12 +31,12 @@ abstract class Class44 {
 				return var0 >= 65 && 90 >= var0?true:48 <= var0 && 57 >= var0;
 			}
 		} catch (RuntimeException var3) {
-			throw method1067(var3, "gj.K(" + var0 + ',' + var1 + ')');
+			throw clientError(var3, "gj.K(" + var0 + ',' + var1 + ')');
 		}
 	}
 
-	static final RuntimeException_Sub1 method1067(Throwable var0, String var1) {
-		//	  var0.printStackTrace();
+	static final RuntimeException_Sub1 clientError(Throwable var0, String var1) {
+		var0.printStackTrace();
 		RuntimeException_Sub1 var2;
 		if(var0 instanceof RuntimeException_Sub1) {
 			var2 = (RuntimeException_Sub1)var0;
@@ -56,7 +56,7 @@ abstract class Class44 {
 	static final void method1069(long[] var0, int var1, int var2, int[] var3, int var4) {
 		try {
 			if(var4 != -24337) {
-				method1067((Throwable)null, (String)null);
+				clientError((Throwable)null, (String)null);
 			}
 
 			if(var2 > var1) {
@@ -89,7 +89,7 @@ abstract class Class44 {
 			}
 
 		} catch (RuntimeException var14) {
-			throw method1067(var14, "gj.N(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
+			throw clientError(var14, "gj.N(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
 		}
 	}
 
@@ -101,7 +101,7 @@ abstract class Class44 {
 
 			return 0 != (1 & this.settings);
 		} catch (RuntimeException var3) {
-			throw method1067(var3, "gj.E(" + var1 + ')');
+			throw clientError(var3, "gj.E(" + var1 + ')');
 		}
 	}
 
@@ -116,7 +116,7 @@ abstract class Class44 {
 
 			anIntArrayArrayArray720 = (int[][][])null;
 		} catch (RuntimeException var2) {
-			throw method1067(var2, "gj.M(" + var0 + ')');
+			throw clientError(var2, "gj.M(" + var0 + ')');
 		}
 	}
 
@@ -124,7 +124,7 @@ abstract class Class44 {
 		try {
 			return var1?false:(this.settings & 4) != 0;
 		} catch (RuntimeException var3) {
-			throw method1067(var3, "gj.G(" + var1 + ')');
+			throw clientError(var3, "gj.G(" + var1 + ')');
 		}
 	}
 
@@ -136,7 +136,7 @@ abstract class Class44 {
 			}
 
 		} catch (RuntimeException var2) {
-			throw method1067(var2, "gj.L(" + var0 + ')');
+			throw clientError(var2, "gj.L(" + var0 + ')');
 		}
 	}
 
@@ -148,7 +148,7 @@ abstract class Class44 {
 
 			return (this.settings & 8) != 0;
 		} catch (RuntimeException var3) {
-			throw method1067(var3, "gj.I(" + var1 + ')');
+			throw clientError(var3, "gj.I(" + var1 + ')');
 		}
 	}
 
@@ -160,7 +160,7 @@ abstract class Class44 {
 
 			return (2 & this.settings) != 0;
 		} catch (RuntimeException var3) {
-			throw method1067(var3, "gj.H(" + var1 + ')');
+			throw clientError(var3, "gj.H(" + var1 + ')');
 		}
 	}
 

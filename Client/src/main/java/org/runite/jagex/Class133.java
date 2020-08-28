@@ -32,7 +32,7 @@ final class Class133 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "sg.A(" + var0 + ')');
+         throw Class44.clientError(var2, "sg.A(" + var0 + ')');
       }
    }
 
@@ -43,7 +43,7 @@ final class Class133 {
             Class159.aClass93_2016.method1523((byte)-103);
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "sg.D(" + var0 + ')');
+         throw Class44.clientError(var2, "sg.D(" + var0 + ')');
       }
    }
 
@@ -55,7 +55,7 @@ final class Class133 {
 
          return this.aByte1742 & 7;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "sg.B(" + var1 + ')');
+         throw Class44.clientError(var3, "sg.B(" + var1 + ')');
       }
    }
 
@@ -64,7 +64,7 @@ final class Class133 {
          int var2 = -74 % ((var1 - 73) / 35);
          return 8 != (this.aByte1742 & 8)?0:1;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "sg.C(" + var1 + ')');
+         throw Class44.clientError(var3, "sg.C(" + var1 + ')');
       }
    }
 
@@ -79,7 +79,7 @@ final class Class133 {
          this.anInt1746 = var1.getInt();
          this.anInt1750 = var1.getInt();
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "sg.<init>(" + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "sg.<init>(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 

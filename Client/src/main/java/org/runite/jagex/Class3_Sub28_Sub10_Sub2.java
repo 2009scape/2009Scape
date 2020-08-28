@@ -18,7 +18,7 @@ final class Class3_Sub28_Sub10_Sub2 extends Class3_Sub28_Sub10 {
       try {
          return var1?92:(this.aClass3_Sub30_4069 == null?0:this.aClass3_Sub30_4069.index * 100 / (-this.aByte4064 + this.aClass3_Sub30_4069.buffer.length));
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "pm.A(" + var1 + ')');
+         throw Class44.clientError(var3, "pm.A(" + var1 + ')');
       }
    }
 
@@ -56,7 +56,7 @@ final class Class3_Sub28_Sub10_Sub2 extends Class3_Sub28_Sub10 {
             return new Class106[0];
          }
 	  } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "pm.P(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var7, "pm.P(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -69,7 +69,7 @@ final class Class3_Sub28_Sub10_Sub2 extends Class3_Sub28_Sub10 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "pm.O(" + var0 + ')');
+         throw Class44.clientError(var2, "pm.O(" + var0 + ')');
       }
    }
    
@@ -270,7 +270,7 @@ final class Class3_Sub28_Sub10_Sub2 extends Class3_Sub28_Sub10 {
 	            }
 	         }
 	      } catch (RuntimeException var10) {
-	         throw Class44.method1067(var10, "pm.F(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+	         throw Class44.clientError(var10, "pm.F(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
 	      }
 	   }
 
@@ -286,7 +286,7 @@ final class Class3_Sub28_Sub10_Sub2 extends Class3_Sub28_Sub10 {
             throw new RuntimeException();
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "pm.E(" + var1 + ')');
+         throw Class44.clientError(var3, "pm.E(" + var1 + ')');
       }
    }
 

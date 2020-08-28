@@ -16,7 +16,7 @@ final class Class77 {
          Class39.method1035((byte)127);
          return var1;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "kh.B(" + var0 + ')');
+         throw Class44.clientError(var2, "kh.B(" + var0 + ')');
       }
    }
 
@@ -28,7 +28,7 @@ final class Class77 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "kh.E(" + var0 + ')');
+         throw Class44.clientError(var2, "kh.E(" + var0 + ')');
       }
    }
 
@@ -40,7 +40,7 @@ final class Class77 {
 
          Class158_Sub1.aClass93_2982.method1522(var0 ^ -22, var1);
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "kh.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "kh.C(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -56,7 +56,7 @@ final class Class77 {
 
          }
       } catch (RuntimeException var8) {
-         throw Class44.method1067(var8, "kh.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var8, "kh.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 
@@ -67,7 +67,7 @@ final class Class77 {
          Class3_Sub13_Sub1.outgoingBuffer.putOpcode(104);
          Class3_Sub13_Sub1.outgoingBuffer.putLong(0L, -2037491440);
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "kh.D(" + var0 + ')');
+         throw Class44.clientError(var2, "kh.D(" + var0 + ')');
       }
    }
 

@@ -74,7 +74,7 @@ final class Class50 {
 			}
 
 		} catch (RuntimeException var10) {
-			throw Class44.method1067(var10, "hd.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
+			throw Class44.clientError(var10, "hd.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
 		}
 	}
 
@@ -86,7 +86,7 @@ final class Class50 {
 			}
 
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "hd.A(" + var0 + ')');
+			throw Class44.clientError(var2, "hd.A(" + var0 + ')');
 		}
 	}
 
@@ -95,7 +95,7 @@ final class Class50 {
 			aLongArray826 = null;
 			aClass3_Sub28_Sub16_824 = null;
 		} catch (RuntimeException var2) {
-			throw Class44.method1067(var2, "hd.C(" + var0 + ')');
+			throw Class44.clientError(var2, "hd.C(" + var0 + ')');
 		}
 	}
 
@@ -108,7 +108,7 @@ final class Class50 {
 			this.anInt821 = var1.anInt821;
 			this.anInt830 = var1.anInt830;
 		} catch (RuntimeException var3) {
-			throw Class44.method1067(var3, "hd.<init>(" + (var1 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var3, "hd.<init>(" + (var1 != null?"{...}":"null") + ')');
 		}
 	}
 

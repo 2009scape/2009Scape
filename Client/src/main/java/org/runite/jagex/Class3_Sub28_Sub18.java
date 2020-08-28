@@ -27,7 +27,7 @@ final class Class3_Sub28_Sub18 extends Node {
 
          super.finalize();
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "sd.finalize()");
+         throw Class44.clientError(var2, "sd.finalize()");
       }
    }
 
@@ -62,7 +62,7 @@ final class Class3_Sub28_Sub18 extends Node {
             Class44.aClass93_725.method1523((byte)-104);
          }
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "sd.C(" + var0 + ')');
+         throw Class44.clientError(var2, "sd.C(" + var0 + ')');
       }
    }
 
@@ -70,7 +70,7 @@ final class Class3_Sub28_Sub18 extends Node {
       try {
          anIntArray3768 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "sd.B(" + var0 + ')');
+         throw Class44.clientError(var2, "sd.B(" + var0 + ')');
       }
    }
 
@@ -89,7 +89,7 @@ final class Class3_Sub28_Sub18 extends Node {
             HDToolKit.method1847(0);
          }
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "sd.E(" + var1 + ')');
+         throw Class44.clientError(var3, "sd.E(" + var1 + ')');
       }
    }
 
@@ -111,7 +111,7 @@ final class Class3_Sub28_Sub18 extends Node {
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "sd.A(" + var0 + ')');
+         throw Class44.clientError(var6, "sd.A(" + var0 + ')');
       }
    }
 
@@ -132,7 +132,7 @@ final class Class3_Sub28_Sub18 extends Node {
          Class31.anInt580 += var6.limit() - this.anInt3767;
          this.anInt3767 = var6.limit();
       } catch (RuntimeException var7) {
-         throw Class44.method1067(var7, "sd.<init>(" + var1 + ')');
+         throw Class44.clientError(var7, "sd.<init>(" + var1 + ')');
       }
    }
 

@@ -17,7 +17,7 @@ final class Class53 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "hi.C(" + var0 + ')');
+         throw Class44.clientError(var2, "hi.C(" + var0 + ')');
       }
    }
 
@@ -26,7 +26,7 @@ final class Class53 {
          int var2 = -77 / ((-34 - var0) / 52);
          return var1 >>> 8;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "hi.E(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "hi.E(" + var0 + ',' + var1 + ')');
       }
    }
 
@@ -62,7 +62,7 @@ final class Class53 {
 
          }
       } catch (RuntimeException var18) {
-         throw Class44.method1067(var18, "hi.D(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ')');
+         throw Class44.clientError(var18, "hi.D(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ')');
       }
    }
 
@@ -151,7 +151,7 @@ final class Class53 {
          Class3_Sub28_Sub7.updateStamp = buffer.getInt();
          Class30.loadedWorldList = true;
       } catch (RuntimeException var6) {
-         throw Class44.method1067(var6, "hi.B(" + (buffer != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var6, "hi.B(" + (buffer != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
@@ -160,7 +160,7 @@ final class Class53 {
          int var2 = 49 % ((var1 - 22) / 46);
          return Client.method44(var0).method101(-69) != 0 ?(null != var0.aClass94_245 && var0.aClass94_245.trim(1).length(-45) != 0?var0.aClass94_245:(Class69.aBoolean1040?RuntimeException_Sub1.aClass94_2116:null)):null;
       } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "hi.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "hi.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 

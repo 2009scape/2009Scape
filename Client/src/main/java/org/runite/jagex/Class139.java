@@ -24,7 +24,7 @@ final class Class139 {
 
          aClass3_Sub28_Sub16Array1825 = null;
       } catch (RuntimeException var2) {
-         throw Class44.method1067(var2, "tg.A(" + var0 + ')');
+         throw Class44.clientError(var2, "tg.A(" + var0 + ')');
       }
    }
 
