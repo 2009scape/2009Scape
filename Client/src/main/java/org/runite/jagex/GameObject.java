@@ -106,7 +106,7 @@ abstract class GameObject {
          Class97.aClass153_1370 = var2;
          int var5 = Class97.aClass153_1370.method2121() - 1;
          Class3_Sub13_Sub23.itemDefinitionSize = Class97.aClass153_1370.getFileAmount(var5, (byte)101) + var5 * 256;
-         RuntimeException_Sub1.aClass94Array2119 = new RSString[]{null, null, null, null, TextCore.HasDrop};
+         ClientErrorException.aClass94Array2119 = new RSString[]{null, null, null, null, TextCore.HasDrop};
          RSByteBuffer.aClass94Array2596 = new RSString[]{null, null, TextCore.HasTake, null, null};
          Class3_Sub13_Sub37.aClass3_Sub28_Sub17_Sub1_3440 = var3;
       } catch (RuntimeException var7) {

@@ -13,12 +13,10 @@ abstract class Class146 {
 
    abstract int method2078();
 
-   static boolean updateInterfacePacketCounter(int packetCounter) {
+   static void updateInterfacePacketCounter(int packetCounter) {
       try {
-
-          Class113.interfacePacketCounter = packetCounter + 1 & '\uffff';
+         Class113.interfacePacketCounter = packetCounter + 1 & '\uffff';
          RenderAnimationDefinition.aBoolean402 = true;
-         return true;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "uc.D(" + packetCounter + ',' + (byte) -25 + ')');
       }

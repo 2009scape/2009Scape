@@ -80,7 +80,7 @@ final class Class21 {
       }
    }
 
-   static Class3_Sub31 method914(int interfaceId, int interfaceHash, int walkable) {
+   static void method914(int interfaceId, int interfaceHash, int walkable) {
       try {
          Class3_Sub31 var4 = new Class3_Sub31();
          var4.anInt2603 = walkable;
@@ -135,7 +135,6 @@ final class Class21 {
             Class3_Sub8.method124(6422 ^ 6509, 1, Class3_Sub28_Sub12.anInt3655);
          }
 
-         return var4;
       } catch (RuntimeException var10) {
          throw Class44.clientError(var10, "dh.D(" + 6422 + ',' + interfaceId + ',' + interfaceHash + ',' + walkable + ')');
       }

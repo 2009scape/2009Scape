@@ -249,7 +249,7 @@ final class Class49 {
                   Class24.method950((RSInterface)null, -86, Node.anInt2567, Class53.anInt865);
                }
             } else {
-               Class24.method950(Class3_Sub28_Sub16.aClass11_3708, -120, RuntimeException_Sub1.anInt2115, Class3_Sub13_Sub23_Sub1.anInt4041);
+               Class24.method950(Class3_Sub28_Sub16.aClass11_3708, -120, ClientErrorException.anInt2115, Class3_Sub13_Sub23_Sub1.anInt4041);
             }
 
             var1 = Class38_Sub1.aBoolean2615?-1:Class3_Sub13_Sub35.method335(var0 + 16859);

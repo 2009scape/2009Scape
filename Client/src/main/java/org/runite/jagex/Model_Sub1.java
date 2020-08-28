@@ -918,7 +918,7 @@ final class Model_Sub1 extends GameObject {
       return var1;
    }
 
-   final int method2005(int var1, int var2, int var3, short var5, byte var6) {
+   final void method2005(int var1, int var2, int var3, short var5, byte var6) {
       this.anIntArray2865[this.anInt2849] = var1;
       this.anIntArray2878[this.anInt2849] = var2;
       this.anIntArray2864[this.anInt2849] = var3;
@@ -927,7 +927,7 @@ final class Model_Sub1 extends GameObject {
       this.aShortArray2870[this.anInt2849] = var5;
       this.aShortArray2858[this.anInt2849] = -1;
       this.aByteArray2843[this.anInt2849] = var6;
-      return this.anInt2849++;
+       this.anInt2849++;
    }
 
    private void method2006(int var1) {

@@ -270,14 +270,12 @@ final class ObjectDefinition {
       }
    }
 
-   static Class72 method1688(int var0, int var1, int var2) {
+   static void method1688(int var0, int var1, int var2) {
       Class3_Sub2 var3 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var0][var1][var2];
       if(var3 == null) {
-         return null;
       } else {
          Class72 var4 = var3.aClass72_2245;
          var3.aClass72_2245 = null;
-         return var4;
       }
    }
 

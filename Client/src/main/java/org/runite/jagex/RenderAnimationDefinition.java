@@ -52,13 +52,12 @@ final class RenderAnimationDefinition {
       }
    }
 
-   static boolean method897(int var0, Class3_Sub24_Sub4 var1, CacheIndex var2, CacheIndex var3, CacheIndex var4) {
+   static void method897(int var0, Class3_Sub24_Sub4 var1, CacheIndex var2, CacheIndex var3, CacheIndex var4) {
       try {
          Class124.aClass153_1661 = var2;
          Class40.aClass153_679 = var4;
          Class3_Sub28_Sub20.aClass153_3786 = var3;
          Class101.aClass3_Sub24_Sub4_1421 = var1;
-         return true;
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "ck.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
       }

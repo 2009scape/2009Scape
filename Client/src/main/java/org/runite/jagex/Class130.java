@@ -312,7 +312,7 @@ final class Class130 {
       }
    }
 
-   final int method1782(Class3[] var1, int var2) {
+   final void method1782(Class3[] var1, int var2) {
       try {
          int var3 = 0;
 
@@ -324,7 +324,6 @@ final class Class130 {
             }
          }
 
-         return var3;
       } catch (RuntimeException var7) {
          throw Class44.clientError(var7, "sc.D(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }

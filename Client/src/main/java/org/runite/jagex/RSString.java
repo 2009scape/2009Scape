@@ -295,7 +295,7 @@ final class RSString implements Interface3 {
       }
    }
 
-   final RSString method1533(RSString var1) {
+   final void method1533(RSString var1) {
       try {
          if(this.aBoolean2152) {
             if(var1.length + this.length > this.byteArray.length) {
@@ -310,7 +310,6 @@ final class RSString implements Interface3 {
 
             Class76.method1357(var1.byteArray, 0, this.byteArray, this.length, var1.length);
             this.length += var1.length;
-            return this;
          } else {
             throw new IllegalArgumentException();
          }
@@ -1266,7 +1265,7 @@ final class RSString implements Interface3 {
       }
    }
 
-   final RSString method1572(int var1, byte var2) {
+   final void method1572(int var1, byte var2) {
       try {
          if(var2 <= 110) {
             aBoolean2150 = true;
@@ -1285,7 +1284,6 @@ final class RSString implements Interface3 {
                }
 
                this.byteArray[this.length++] = (byte)var1;
-               return this;
             } else {
                throw new IllegalArgumentException();
             }

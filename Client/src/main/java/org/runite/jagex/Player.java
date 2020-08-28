@@ -204,8 +204,8 @@ final class Player extends Class140_Sub4 {
                }
 
                if(Class102.player == this) {
-                  for(var17 = RuntimeException_Sub1.aClass96Array2114.length + -1; var17 >= 0; --var17) {
-                     Class96 var27 = RuntimeException_Sub1.aClass96Array2114[var17];
+                  for(var17 = ClientErrorException.aClass96Array2114.length + -1; var17 >= 0; --var17) {
+                     Class96 var27 = ClientErrorException.aClass96Array2114[var17];
                      if(var27 != null && var27.anInt1355 != -1) {
                         int var21;
                         int var20;

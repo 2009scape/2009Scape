@@ -803,9 +803,9 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
 
                                        ++Class3_Sub13_Sub23_Sub1.anInt4032;
                                        ++Class43.anInt716;
-                                       ++RuntimeException_Sub1.anInt2120;
-                                       if(RuntimeException_Sub1.anInt2120 > 500) {
-                                          RuntimeException_Sub1.anInt2120 = 0;
+                                       ++ClientErrorException.anInt2120;
+                                       if(ClientErrorException.anInt2120 > 500) {
+                                          ClientErrorException.anInt2120 = 0;
                                           nodeModelID = (int)(8.0D * Math.random());
                                           if((nodeModelID & 4) == 4) {
                                              Class3_Sub29.anInt2589 += Class128.anInt1682;

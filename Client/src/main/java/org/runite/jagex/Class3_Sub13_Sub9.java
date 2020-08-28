@@ -12,16 +12,6 @@ final class Class3_Sub13_Sub9 extends Class3_Sub13 {
    static int anInt3114 = 0;
    static int[][] anIntArrayArray3115;
 
-
-   static int method208() {
-      try {
-
-          return 15;
-      } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "f.B(" + -119 + ')');
-      }
-   }
-
    public static void method209(byte var0) {
       try {
          aShortArray3110 = null;

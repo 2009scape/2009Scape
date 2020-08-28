@@ -86,7 +86,7 @@ final class Class163_Sub1_Sub1 extends Class163_Sub1 {
                }
 
                if(Class3_Sub13_Sub31.anInt3375 == 1) {
-                  Class3_Sub9.aClass64_2318 = Class38.aClass87_665.method1441((byte)8, RuntimeException_Sub1.worldListHost, Class123.anInt1658);
+                  Class3_Sub9.aClass64_2318 = Class38.aClass87_665.method1441((byte)8, ClientErrorException.worldListHost, Class123.anInt1658);
                   Class3_Sub13_Sub31.anInt3375 = 2;
                }
 

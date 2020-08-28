@@ -211,7 +211,7 @@ final class IOHandler implements Runnable {
         }
     }
 
-    final void method1466() throws IOException {
+    final void method1466() {
         try {
             if(!this.aBoolean1241) {
                 if(this.aBoolean1243) {

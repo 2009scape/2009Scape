@@ -37,7 +37,7 @@ class Class38 {
             if(!Class139.aBoolean1827 && var2.membersItem) {
                var2.name = TextCore.MembersObject;
                var2.teamId = 0;
-               var2.inventoryOptions = RuntimeException_Sub1.aClass94Array2119;
+               var2.inventoryOptions = ClientErrorException.aClass94Array2119;
                var2.aBoolean807 = false;
                var2.groundOptions = RSByteBuffer.aClass94Array2596;
             }

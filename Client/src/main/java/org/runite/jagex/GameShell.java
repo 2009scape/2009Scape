@@ -115,41 +115,6 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 
    public final void windowClosed(WindowEvent var1) {}
 
-   final boolean method29() {
-      /*try {
-         String var2 = this.getDocumentBase().getHost().toLowerCase();
-         if(!var2.equals("jagex.com") && !var2.endsWith(".jagex.com")) {
-            if(!var2.equals("runescape.com") && !var2.endsWith(".runescape.com")) {
-               if(var1 != 27496) {
-                  aClass94_10 = (Class94)null;
-               }
-
-               if(var2.endsWith("127.0.0.1")) {
-                  return true;
-               } else {
-                  while(-1 > ~var2.length() && 48 <= var2.charAt(-1 + var2.length()) && 57 >= var2.charAt(-1 + var2.length())) {
-                     var2 = var2.substring(0, -1 + var2.length());
-                  }
-
-                  if(!var2.endsWith("192.168.1.")) {
-                     this.method31("invalidhost", var1 + -27544);
-                     return false;
-                  } else {
-                     return true;
-                  }
-               }
-            } else {
-               return true;
-            }
-         } else {
-            return true;
-         }
-      } catch (RuntimeException var3) {
-         throw Class44.method1067(var3, "rc.T(" + var1 + ')');
-      }*/
-	   return true;
-   }
-
    final synchronized void method30(byte var1) {
       try {
          if(Class3_Sub28_Sub12.aCanvas3648 != null) {

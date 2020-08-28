@@ -73,8 +73,10 @@ public class Signlink implements Runnable {
       return this.method1435(12, 0, var1, 0, var2 + -58);
    }
 
-   public final Class64 method1434(int[] var1, int var2, int var3, Component var4, Point var5, int var6) {
-      return var2 != 10000?null:this.method1435(17, var6, new Object[]{var4, var1, var5}, var3, -57);
+   public final void method1434(int[] var1, int var2, int var3, Component var4, Point var5, int var6) {
+      if (var2 == 10000) {
+         this.method1435(17, var6, new Object[]{var4, var1, var5}, var3, -57);
+      }
    }
 
    private Class64 method1435(int var1, int var2, Object var3, int var4, int var5) {
@@ -145,8 +147,10 @@ public class Signlink implements Runnable {
       return var1 != 8?null:this.method1435(1, 0, address, port, -17);
    }
 
-   public final Class64 method1442(Class var1, int var2) {
-      return var2 != 0?null:this.method1435(11, 0, var1, 0, -5);
+   public final void method1442(Class var1, int var2) {
+      if (var2 == 0) {
+         this.method1435(11, 0, var1, 0, -5);
+      }
    }
 
    public final Class64 method1443(Class var1, Class[] var2, int var3, String var4) {

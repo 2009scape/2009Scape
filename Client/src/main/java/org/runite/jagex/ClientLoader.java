@@ -155,14 +155,4 @@ public class ClientLoader extends Applet {
 		}
 	}
 
-	private static LibraryDownloader dler;
-	
-	public static LibraryDownloader getLibraryDownloader() {
-		if(dler==null){
-			dler = new LibraryDownloader();
-		}
-		return dler;
-	}
-
-	
 }

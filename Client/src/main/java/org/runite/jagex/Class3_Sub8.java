@@ -190,7 +190,7 @@ final class Class3_Sub8 extends Class3 {
                }
             }
 
-            Class96[] var24 = RuntimeException_Sub1.aClass96Array2114;
+            Class96[] var24 = ClientErrorException.aClass96Array2114;
 
             for(var10 = 0; var24.length > var10; ++var10) {
                Class96 var26 = var24[var10];

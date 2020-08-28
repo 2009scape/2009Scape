@@ -34,14 +34,14 @@ abstract class Class44 {
 		}
 	}
 
-	static RuntimeException_Sub1 clientError(Throwable var0, String var1) {
+	static ClientErrorException clientError(Throwable var0, String var1) {
 		var0.printStackTrace();
-		RuntimeException_Sub1 var2;
-		if(var0 instanceof RuntimeException_Sub1) {
-			var2 = (RuntimeException_Sub1)var0;
+		ClientErrorException var2;
+		if(var0 instanceof ClientErrorException) {
+			var2 = (ClientErrorException)var0;
 			var2.aString2117 = var2.aString2117 + ' ' + var1;
 		} else {
-			var2 = new RuntimeException_Sub1(var0, var1);
+			var2 = new ClientErrorException(var0, var1);
 		}
 
 		return var2;

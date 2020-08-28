@@ -165,7 +165,7 @@ final class Class82 {
                   }
 
                   if(var7 >= 0) {
-                     Class96[] var11 = RuntimeException_Sub1.aClass96Array2114;
+                     Class96[] var11 = ClientErrorException.aClass96Array2114;
 
                      for(var12 = 0; var12 < var11.length; ++var12) {
                         Class96 var13 = var11[var12];
@@ -196,7 +196,7 @@ final class Class82 {
                      }
                   }
 
-                  Class96[] var20 = RuntimeException_Sub1.aClass96Array2114;
+                  Class96[] var20 = ClientErrorException.aClass96Array2114;
 
                   for(var21 = 0; var20.length > var21; ++var21) {
                      Class96 var24 = var20[var21];

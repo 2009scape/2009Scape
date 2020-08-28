@@ -254,8 +254,8 @@ final class Class167 {
          Class3_Sub7.anInt2294 = 0;
          Class131.anInt1716 = 0;
 
-         for(var1 = 0; RuntimeException_Sub1.aClass96Array2114.length > var1; ++var1) {
-            RuntimeException_Sub1.aClass96Array2114[var1] = null;
+         for(var1 = 0; ClientErrorException.aClass96Array2114.length > var1; ++var1) {
+            ClientErrorException.aClass96Array2114[var1] = null;
          }
 
          Class159.localPlayerCount = 0;

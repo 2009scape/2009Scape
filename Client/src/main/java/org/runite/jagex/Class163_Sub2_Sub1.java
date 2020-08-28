@@ -39,7 +39,7 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
       try {
          int var8 = 0;
 
-         for(Class96[] var7 = RuntimeException_Sub1.aClass96Array2114; var8 < var7.length; ++var8) {
+         for(Class96[] var7 = ClientErrorException.aClass96Array2114; var8 < var7.length; ++var8) {
             Class96 var9 = var7[var8];
             if(null != var9 && var9.anInt1360 == 2) {
                Class118.method1724(var0 >> 1, var5, (-Class82.anInt1152 + var9.anInt1347 << 7) - -var9.anInt1350, var9.anInt1353 * 2, var2 >> 1, var9.anInt1346 + (var9.anInt1356 + -Class131.anInt1716 << 7), (byte)-114, var4);
@@ -109,15 +109,13 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
       }
    }
 
-   static boolean method2224(long var1, int var3, int var4) {
+   static void method2224(long var1, int var3, int var4) {
       try {
          int var5 = (int)var1 >> 14 & 31;
 
          int var6 = (int)var1 >> 20 & 3;
          int var7 = (int)(var1 >>> 32) & Integer.MAX_VALUE;
-         if(var5 != 10 && var5 != 11 && var5 != 22) {
-            Class3_Sub28_Sub9.method582(Class102.player.anIntArray2755[0], var6, 0, true, 0, 2, var4, 0, 1 + var5, 2, var3, Class102.player.anIntArray2767[0]);
-         } else {
+         if (var5 == 10 || var5 == 11 || var5 == 22) {
             ObjectDefinition var8 = Class162.getObjectDefinition(var7);
             int var9;
             int var10;
@@ -135,13 +133,14 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
             }
 
             Class3_Sub28_Sub9.method582(Class102.player.anIntArray2755[0], 0, var10, true, var11, 2, var4, var9, 0, 2, var3, Class102.player.anIntArray2767[0]);
+         } else {
+            Class3_Sub28_Sub9.method582(Class102.player.anIntArray2755[0], var6, 0, true, 0, 2, var4, 0, 1 + var5, 2, var3, Class102.player.anIntArray2767[0]);
          }
 
          Class3_Sub28_Sub10_Sub1.anInt4062 = Class38_Sub1.anInt2614;
          Class151_Sub1.anInt2958 = 0;
          Class36.anInt638 = 2;
          Class70.anInt1053 = Class163_Sub1.anInt2993;
-         return true;
       } catch (RuntimeException var12) {
          throw Class44.clientError(var12, "t.D(" + (byte) 39 + ',' + var1 + ',' + var3 + ',' + var4 + ')');
       }

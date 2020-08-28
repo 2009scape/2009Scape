@@ -64,8 +64,8 @@ final class Class53 {
 
    static String method1172(Throwable var1) throws IOException {
       String var2;
-      if(var1 instanceof RuntimeException_Sub1) {
-         RuntimeException_Sub1 var3 = (RuntimeException_Sub1)var1;
+      if(var1 instanceof ClientErrorException) {
+         ClientErrorException var3 = (ClientErrorException)var1;
          var1 = var3.aThrowable2118;
          var2 = var3.aString2117 + " | ";
       } else {
@@ -148,7 +148,7 @@ final class Class53 {
 
    static RSString method1174(RSInterface var0, byte var1) {
       try {
-         return Client.method44(var0).method101(-69) != 0 ?(null != var0.aClass94_245 && var0.aClass94_245.trim(1).length(-45) != 0?var0.aClass94_245:(Class69.aBoolean1040?RuntimeException_Sub1.aClass94_2116:null)):null;
+         return Client.method44(var0).method101(-69) != 0 ?(null != var0.aClass94_245 && var0.aClass94_245.trim(1).length(-45) != 0?var0.aClass94_245:(Class69.aBoolean1040? ClientErrorException.aClass94_2116:null)):null;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "hi.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }

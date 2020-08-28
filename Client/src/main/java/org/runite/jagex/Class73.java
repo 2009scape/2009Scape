@@ -1,7 +1,6 @@
 package org.runite.jagex;
 import org.runite.Properties;
 
-import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 
@@ -308,7 +307,7 @@ static boolean aBoolean1080 = false;
       }
    }
 
-   final Class3_Sub28_Sub10_Sub1 method1305(Class41 var1, byte[] var3, int var4) {
+   final void method1305(Class41 var1, byte[] var3, int var4) {
       try {
          Class3_Sub28_Sub10_Sub1 var5 = new Class3_Sub28_Sub10_Sub1();
          var5.aByteArray4059 = var3;
@@ -317,7 +316,6 @@ static boolean aBoolean1080 = false;
          var5.aClass41_4056 = var1;
          var5.anInt4061 = 2;
          this.method1299(var5);
-         return var5;
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "k.A(" + (var1 != null?"{...}":"null") + ',' + 2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
       }

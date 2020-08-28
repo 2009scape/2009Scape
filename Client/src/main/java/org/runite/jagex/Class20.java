@@ -10,9 +10,8 @@ final class Class20 {
    static RSInterface aClass11_439;
 
 
-   static boolean method907(int var0, int var1, int var2, int var3, int var4, GameObject var5, int var6, long var7, boolean var9) {
+   static void method907(int var0, int var1, int var2, int var3, int var4, GameObject var5, int var6, long var7, boolean var9) {
       if(var5 == null) {
-         return true;
       } else {
          int var10 = var1 - var4;
          int var11 = var2 - var4;
@@ -40,7 +39,7 @@ final class Class20 {
          var11 /= 128;
          var12 /= 128;
          var13 /= 128;
-         return Class56.method1189(var0, var10, var11, var12 - var10 + 1, var13 - var11 + 1, var1, var2, var3, var5, var6, true, var7);
+          Class56.method1189(var0, var10, var11, var12 - var10 + 1, var13 - var11 + 1, var1, var2, var3, var5, var6, true, var7);
       }
    }
 

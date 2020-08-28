@@ -22,14 +22,12 @@ final class Class3_Sub6 extends Class3 {
       }
    }
 
-   static float[] method119(float[] var0) {
+   static void method119(float[] var0) {
       try {
          if(var0 == null) {
-            return null;
          } else {
             float[] var2 = new float[var0.length];
             Class76.method1360(var0, 91, var2, 0, var0.length);
-            return var2;
          }
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "ea.B(" + "{...}" + ',' + 91 + ')');

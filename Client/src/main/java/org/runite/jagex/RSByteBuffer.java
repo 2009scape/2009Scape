@@ -973,12 +973,11 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	final int method793(int var2) {
+	final void method793(int var2) {
 		try {
 			int var3 = Class99.method1599(var2, this.index, this.buffer, (byte)-49);
 			this.putInt(-120, var3);
-			return var3;
-		} catch (RuntimeException var4) {
+        } catch (RuntimeException var4) {
 			throw Class44.clientError(var4, "wa.QB(" + (byte) 86 + ',' + var2 + ')');
 		}
 	}

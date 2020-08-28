@@ -101,7 +101,7 @@ final class Class41 {
       }
    }
 
-   final boolean method1050(int var1, int var2, byte[] var3) {
+   final void method1050(int var1, int var2, byte[] var3) {
       try {
          Class30 var5 = this.aClass30_681;
          synchronized(var5) {
@@ -111,7 +111,6 @@ final class Class41 {
                   var6 = this.method1054((byte)87, var2, var1, var3, false);
                }
 
-               return var6;
             } else {
                throw new IllegalArgumentException();
             }

@@ -54,8 +54,8 @@ abstract class Class3_Sub28_Sub17 extends Node {
    private static int anInt3756 = 0;
 
 
-   final int method676(RSString var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10) {
-      return this.method693(var1, var2, var3, var4, var5, var6, var7, var8, var9, var10);
+   final void method676(RSString var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10) {
+       this.method693(var1, var2, var3, var4, var5, var6, var7, var8, var9, var10);
    }
 
    private void method677(RSString var1, int var2, int var3) {
@@ -849,9 +849,8 @@ abstract class Class3_Sub28_Sub17 extends Node {
       this.anInt3710 = var7 - this.anInt3727;
    }
 
-   final int method702(RSString var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, Random var10, int var11, int[] var12) {
+   final void method702(RSString var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, Random var10, int var11, int[] var12) {
       if(var1 == null) {
-         return 0;
       } else {
          var10.setSeed((long)var11);
          this.method701(var6, var7, 192 + (var10.nextInt() & 31));
@@ -896,7 +895,6 @@ abstract class Class3_Sub28_Sub17 extends Node {
             var12[3] = this.anInt3722 + this.anInt3710;
          }
 
-         return var15;
       }
    }
 

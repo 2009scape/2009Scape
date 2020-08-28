@@ -20,7 +20,7 @@ final class Class3_Sub28_Sub4 extends Node {
       try {
          if(this.anIntArray3566 != null) {
             for(int var4 = 0; var4 < this.anIntArray3566.length && var2.length > var4; ++var4) {
-               int var5 = RuntimeException_Sub1.anIntArray2113[this.method550(89, var4)];
+               int var5 = ClientErrorException.anIntArray2113[this.method550(89, var4)];
                if(var5 > 0) {
                   var1.method739(var5, (long)var2[var4]);
                }

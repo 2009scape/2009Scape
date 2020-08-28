@@ -318,7 +318,7 @@ final class Class3_Sub11 extends Class3 {
       }
    }
 
-   final int method150(int var1, int var2, int var3, int[] var4, int[] var5, boolean var6) {
+   final void method150(int var1, int var2, int var3, int[] var4, int[] var5, boolean var6) {
       if(this.aBoolean2364) {
          this.anIntArrayArray2360[this.anInt2366] = var5;
          this.aBooleanArray2370[this.anInt2366] = var6;
@@ -339,7 +339,7 @@ final class Class3_Sub11 extends Class3 {
       this.anIntArray2350[this.anInt2366] = var2;
       this.anIntArray2349[this.anInt2366] = var3;
       this.anIntArrayArray2357[this.anInt2366] = var4;
-      return this.anInt2366++;
+       this.anInt2366++;
    }
 
    Class3_Sub11(int var1, float var2, boolean var3, boolean var4, int var5) {

@@ -1,6 +1,6 @@
 package org.runite.jagex;
 
-final class RuntimeException_Sub1 extends RuntimeException {
+final class ClientErrorException extends RuntimeException {
 
    static int[] anIntArray2113 = new int[]{2, 2, 4, 0, 1, 8, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0};
    static Class96[] aClass96Array2114 = new Class96[4];
@@ -25,16 +25,7 @@ final class RuntimeException_Sub1 extends RuntimeException {
       }
    }
 
-   static int method2286() {
-      try {
-
-         return 6;
-      } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "ld.A(" + (byte) -5 + ')');
-      }
-   }
-
-   RuntimeException_Sub1(Throwable var1, String var2) {
+   ClientErrorException(Throwable var1, String var2) {
       this.aString2117 = var2;
       this.aThrowable2118 = var1;
    }

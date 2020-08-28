@@ -445,7 +445,7 @@ final class Class47 {
                         }
 
                         if (var11.anInt189 == 1406) {
-                           RuntimeException_Sub1.anInt2115 = var14;
+                           ClientErrorException.anInt2115 = var14;
                            Class3_Sub28_Sub16.aClass11_3708 = var11;
                            Class3_Sub13_Sub23_Sub1.anInt4041 = var13;
                            continue;

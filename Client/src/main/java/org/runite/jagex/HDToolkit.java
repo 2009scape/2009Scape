@@ -1,7 +1,6 @@
 package org.runite.jagex;
 
 import java.awt.Canvas;
-import java.io.UnsupportedEncodingException;
 import java.nio.ByteOrder;
 import java.nio.IntBuffer;
 import java.nio.charset.StandardCharsets;
@@ -575,7 +574,7 @@ final class HDToolKit {
       return aFloat1797;
    }
 
-   static int method1853(Canvas var0, int var1) {
+   static void method1853(Canvas var0, int var1) {
       try {
          if(var0.isDisplayable()) {
             GLCapabilities var2 = new GLCapabilities();
@@ -602,7 +601,7 @@ final class HDToolKit {
                }
 
                if(var4++ > 5) {
-                  return -2;
+                  return;
                }
 
                Class3_Sub13_Sub34.method331(1000L, 64);
@@ -627,7 +626,7 @@ final class HDToolKit {
                   } catch (Exception var7) {
                      if(var4++ > 5) {
                         method1842();
-                        return -3;
+                        return;
                      }
 
                      Class3_Sub13_Sub34.method331(100L, 64);
@@ -635,17 +634,13 @@ final class HDToolKit {
                }
 
                gl.glClear(16384);
-               return 0;
             } else {
                method1842();
-               return var5;
             }
          } else {
-            return -1;
          }
       } catch (Throwable var9) {
          method1842();
-         return -5;
       }
    }
 

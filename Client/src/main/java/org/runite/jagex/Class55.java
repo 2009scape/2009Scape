@@ -338,13 +338,4 @@ final class Class55 {
       }
    }
 
-   static int method1185() {
-      try {
-
-          return 2;
-      } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "ia.B(" + 6098 + ')');
-      }
-   }
-
 }

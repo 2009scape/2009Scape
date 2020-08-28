@@ -329,7 +329,8 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 					KeyboardListener.anInt1918 = var2;
 				}
 
-				if(var4 == 14 && Class163_Sub2_Sub1.method2224(var6, var3, var2)) {
+				if(var4 == 14) {
+					Class163_Sub2_Sub1.method2224(var6, var3, var2);
 					++Class3_Sub28_Sub10_Sub2.anInt4065;
 					Class3_Sub13_Sub1.outgoingBuffer.putOpcode(134);
 					Class3_Sub13_Sub1.outgoingBuffer.putShortA(Class131.anInt1716 + var2);
@@ -675,7 +676,8 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 						Class3_Sub13_Sub1.outgoingBuffer.putLEShort(Class82.anInt1152 + var3);
 					}
 
-					if(var4 == 38 && Class163_Sub2_Sub1.method2224(var6, var3, var2)) {
+					if(var4 == 38) {
+						Class163_Sub2_Sub1.method2224(var6, var3, var2);
 						Class3_Sub13_Sub1.outgoingBuffer.putOpcode(233);
 						Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(var3 + Class82.anInt1152);
 						++Class164_Sub1.anInt3017;

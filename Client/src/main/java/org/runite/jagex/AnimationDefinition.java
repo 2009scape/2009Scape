@@ -563,8 +563,8 @@ final class AnimationDefinition {
 			GraphicDefinition.incomingBuffer.index = 0;
 
 			int var1;
-			for(var1 = 0; RuntimeException_Sub1.aClass96Array2114.length > var1; ++var1) {
-				RuntimeException_Sub1.aClass96Array2114[var1] = null;
+			for(var1 = 0; ClientErrorException.aClass96Array2114.length > var1; ++var1) {
+				ClientErrorException.aClass96Array2114[var1] = null;
 			}
 
 			Class3_Sub13_Sub34.anInt3415 = 0;

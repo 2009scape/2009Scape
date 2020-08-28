@@ -362,8 +362,10 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
       }
    }
 
-   static boolean method292(int var0, int var1, int var2, int var3, GameObject var4, int var5, long var6, int var8, int var9, int var10, int var11) {
-      return var4 == null || Class56.method1189(var0, var8, var9, var10 - var8 + 1, var11 - var9 + 1, var1, var2, var3, var4, var5, true, var6);
+   static void method292(int var0, int var1, int var2, int var3, GameObject var4, int var5, long var6, int var8, int var9, int var10, int var11) {
+       if (var4 != null) {
+           Class56.method1189(var0, var8, var9, var10 - var8 + 1, var11 - var9 + 1, var1, var2, var3, var4, var5, true, var6);
+       }
    }
 
    static int method293(int var0, int var1, int var3) {

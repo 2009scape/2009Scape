@@ -26,7 +26,7 @@ class Class155 {
    int anInt1990;
 
 
-   void method2149() throws Exception {}
+   void method2149() {}
 
    void method2150(int var1) throws Exception {}
 
@@ -270,7 +270,7 @@ class Class155 {
       }
    }
 
-   int method2157() throws Exception {
+   int method2157() {
       try {
          return this.anInt1990;
       } catch (RuntimeException var2) {

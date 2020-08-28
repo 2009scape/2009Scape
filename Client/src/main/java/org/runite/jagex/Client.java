@@ -269,67 +269,65 @@ public final class Client extends GameShell {
 
 	public final void init() {
 		try {
-			if(this.method29()) {
-				GameLaunch.SETTINGS.setWorld(ObjectDefinition.worldId = Integer.parseInt(Objects.requireNonNull(this.getParameter("worldid"))));
-				Class44.anInt718 = Integer.parseInt(Objects.requireNonNull(this.getParameter("modewhere")));
-				if(0 > Class44.anInt718 || 1 < Class44.anInt718) {
-					Class44.anInt718 = 0;
-				}
-
-				Class3_Sub13_Sub13.anInt3148 = Integer.parseInt(Objects.requireNonNull(this.getParameter("modewhat")));
-				if(Class3_Sub13_Sub13.anInt3148 < 0 || Class3_Sub13_Sub13.anInt3148 > 2) {
-					Class3_Sub13_Sub13.anInt3148 = 0;
-				}
-
-				String var1 = this.getParameter("advertsuppressed");
-				Class3_Sub28_Sub19.aBoolean3779 = var1 != null && var1.equals("1");
-
-				try {
-					Class3_Sub20.language = Integer.parseInt(Objects.requireNonNull(this.getParameter("lang")));
-				} catch (Exception var10) {
-					Class3_Sub20.language = 0;
-				}
-				Class3.method87(-31, Class3_Sub20.language);
-
-				String var2 = this.getParameter("objecttag");
-				Class163_Sub2_Sub1.aBoolean4018 = var2 != null && var2.equals("1");
-
-				String var3 = this.getParameter("js");
-				Class3_Sub28_Sub11.aBoolean3641 = null != var3 && var3.equals("1");
-
-				String var4 = this.getParameter("game");
-				if(var4 != null && var4.equals("1")) {
-					Class158.anInt2014 = 1;
-				} else {
-					Class158.anInt2014 = 0;
-				}
-
-				try {
-					Class3_Sub26.anInt2554 = Integer.parseInt(Objects.requireNonNull(this.getParameter("affid")));
-				} catch (Exception var9) {
-					Class3_Sub26.anInt2554 = 0;
-				}
-
-				Class163_Sub2.aClass94_2996 = Class133.aClass94_1745.method1573((byte)126, this);
-				if(Class163_Sub2.aClass94_2996 == null) {
-					Class163_Sub2.aClass94_2996 = Class3_Sub28_Sub14.aClass94_3672;
-				}
-
-				String var5 = this.getParameter("country");
-				if(var5 != null) {
-					try {
-						Class3_Sub31.countryId = Integer.parseInt(var5);
-					} catch (Exception var8) {
-						Class3_Sub31.countryId = 0;
-					}
-				}
-
-				String var6 = this.getParameter("haveie6");
-				Class106.hasInternetExplorer6 = null != var6 && var6.equals("1");
-
-				Class126.aClient1671 = this;
-				this.method41(32 - -Class3_Sub13_Sub13.anInt3148);
+			GameLaunch.SETTINGS.setWorld(ObjectDefinition.worldId = Integer.parseInt(Objects.requireNonNull(this.getParameter("worldid"))));
+			Class44.anInt718 = Integer.parseInt(Objects.requireNonNull(this.getParameter("modewhere")));
+			if(0 > Class44.anInt718 || 1 < Class44.anInt718) {
+				Class44.anInt718 = 0;
 			}
+
+			Class3_Sub13_Sub13.anInt3148 = Integer.parseInt(Objects.requireNonNull(this.getParameter("modewhat")));
+			if(Class3_Sub13_Sub13.anInt3148 < 0 || Class3_Sub13_Sub13.anInt3148 > 2) {
+				Class3_Sub13_Sub13.anInt3148 = 0;
+			}
+
+			String var1 = this.getParameter("advertsuppressed");
+			Class3_Sub28_Sub19.aBoolean3779 = var1 != null && var1.equals("1");
+
+			try {
+				Class3_Sub20.language = Integer.parseInt(Objects.requireNonNull(this.getParameter("lang")));
+			} catch (Exception var10) {
+				Class3_Sub20.language = 0;
+			}
+			Class3.method87(-31, Class3_Sub20.language);
+
+			String var2 = this.getParameter("objecttag");
+			Class163_Sub2_Sub1.aBoolean4018 = var2 != null && var2.equals("1");
+
+			String var3 = this.getParameter("js");
+			Class3_Sub28_Sub11.aBoolean3641 = null != var3 && var3.equals("1");
+
+			String var4 = this.getParameter("game");
+			if(var4 != null && var4.equals("1")) {
+				Class158.anInt2014 = 1;
+			} else {
+				Class158.anInt2014 = 0;
+			}
+
+			try {
+				Class3_Sub26.anInt2554 = Integer.parseInt(Objects.requireNonNull(this.getParameter("affid")));
+			} catch (Exception var9) {
+				Class3_Sub26.anInt2554 = 0;
+			}
+
+			Class163_Sub2.aClass94_2996 = Class133.aClass94_1745.method1573((byte)126, this);
+			if(Class163_Sub2.aClass94_2996 == null) {
+				Class163_Sub2.aClass94_2996 = Class3_Sub28_Sub14.aClass94_3672;
+			}
+
+			String var5 = this.getParameter("country");
+			if(var5 != null) {
+				try {
+					Class3_Sub31.countryId = Integer.parseInt(var5);
+				} catch (Exception var8) {
+					Class3_Sub31.countryId = 0;
+				}
+			}
+
+			String var6 = this.getParameter("haveie6");
+			Class106.hasInternetExplorer6 = null != var6 && var6.equals("1");
+
+			Class126.aClient1671 = this;
+			this.method41(32 - -Class3_Sub13_Sub13.anInt3148);
 		} catch (RuntimeException var11) {
 			throw Class44.clientError(var11, "client.init()");
 		}
@@ -349,16 +347,16 @@ public final class Client extends GameShell {
 			System.out.println("port = " + Class53.anInt867);
 			System.out.println("Here: Config.MSIP = " + Configurations.MS_IP);
 			if(Class44.anInt718 == 0) {
-				RuntimeException_Sub1.worldListHost = Objects.requireNonNull(this.getCodeBase()).getHost();
+				ClientErrorException.worldListHost = Objects.requireNonNull(this.getCodeBase()).getHost();
 				Class53.anInt867 = 43594 + ObjectDefinition.worldId; //443 is secure port
 				Class3_Sub28_Sub19.anInt3773 = '\uaa4a';
 			} else if (Class44.anInt718 == 1) {
-				RuntimeException_Sub1.worldListHost = Objects.requireNonNull(this.getCodeBase()).getHost();
+				ClientErrorException.worldListHost = Objects.requireNonNull(this.getCodeBase()).getHost();
 				//System.out.println("port = " + Class53.anInt867);
 				Class53.anInt867 = ObjectDefinition.worldId + 50000;
 				Class3_Sub28_Sub19.anInt3773 = 40000 + ObjectDefinition.worldId;
 			} else if (Class44.anInt718 == 2) {
-				RuntimeException_Sub1.worldListHost = "127.0.0.1";
+				ClientErrorException.worldListHost = "127.0.0.1";
 				System.out.println("Setting worldListHost to 127.0.0.1, port = " + Class53.anInt867);
 				Class53.anInt867 = ObjectDefinition.worldId + '\uc350';
 				Class3_Sub28_Sub19.anInt3773 = ObjectDefinition.worldId + '\u9c40';
@@ -492,7 +490,7 @@ public final class Client extends GameShell {
 			Class127.method1754(-79);
 			Class17.method905(-24912);
 			Class128.method1761((byte)-55);
-			RuntimeException_Sub1.method2288(false);
+			ClientErrorException.method2288(false);
 			Class20.method908(5157);
 			Class167.method2262((byte)126);
 			Class3_Sub28_Sub10_Sub1.method592((byte)38);
@@ -1731,7 +1729,7 @@ public final class Client extends GameShell {
 						Class3_Sub17.aClass94_2464 = TextCore.PreparedSoundEngine;
 					} else if (Class96.anInt1354 == 50) {
 						var2 = Class3_Sub13_Sub12.method228(Class140_Sub6.spritesCacheIndex, CacheIndex.aClass153_1948, false);
-						var3 = RuntimeException_Sub1.method2286();
+						var3 = 6;
 						if (var3 <= var2) {
 							Class3_Sub17.aClass94_2464 = TextCore.LoadedFonts;
 							Class3_Sub28_Sub15.LoadingStageNumber = 35;
@@ -1742,7 +1740,7 @@ public final class Client extends GameShell {
 						}
 					} else if (60 == Class96.anInt1354) {
 						var2 = Class3_Sub28_Sub11.method599(Class140_Sub6.spritesCacheIndex);
-						var3 = Class55.method1185();
+						var3 = 2;
 						if (var3 <= var2) {
 							Class3_Sub17.aClass94_2464 = TextCore.LoadedTitleScreen;
 							Class96.anInt1354 = 65;
@@ -1814,7 +1812,7 @@ public final class Client extends GameShell {
 						}
 					} else if (Class96.anInt1354 == 80) {
 						var2 = Class3_Sub4.method107(Class140_Sub6.spritesCacheIndex);
-						var3 = Class3_Sub13_Sub9.method208();
+						var3 = 15;
 						if (var2 < var3) {
 							Class3_Sub17.aClass94_2464 = RenderAnimationDefinition.method903(new RSString[]{TextCore.LoadingSprites, Class72.method1298((byte) 9, var2 * 100 / var3), Class24.aClass94_468}, (byte) -66);
 							Class3_Sub28_Sub15.LoadingStageNumber = 60;

@@ -1,6 +1,5 @@
 package org.runite.jagex;
 import java.awt.Component;
-import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
 import java.util.Calendar;
 import java.util.Date;
@@ -3306,7 +3305,7 @@ final class ItemDefinition {
 												}
 												if (j1 == 4123) {
 													int k42 = Class140_Sub7.anIntArray2929[--k];
-													Class140_Sub7.anIntArray2929[k++] = RuntimeException_Sub1.method2287(k42, (byte) 59);
+													Class140_Sub7.anIntArray2929[k++] = ClientErrorException.method2287(k42, (byte) 59);
 													continue;
 												}
 												if (j1 != 4124)
