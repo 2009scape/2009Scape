@@ -308,7 +308,6 @@ final class Class2 {
 			LDIndexedSprite var3 = (LDIndexedSprite)Class3_Sub13_Sub31.aClass93_3369.get((long)(var1 << 16 | this.anInt64));
 			if(var3 == null) {
 				KeyboardListener.aClass153_1916.method2144(this.anInt64);
-				int var4 = 125 % ((var2 - -21) / 50);
 				var3 = RSString.method1539(this.anInt64, KeyboardListener.aClass153_1916);
 				if(var3 != null) {
 					var3.method1668(Class102.anInt2136, Class46.anInt740, Class158.anInt2015);

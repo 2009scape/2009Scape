@@ -146,52 +146,6 @@ public final class Properties {
 	}
 
 	/**
-	 * @return the playThemeSong
-	 */
-	public boolean isPlayThemeSong() {
-		return playThemeSong;
-	}
-
-	/**
-	 * @param playThemeSong the playThemeSong to set
-	 */
-	public void setPlayThemeSong(boolean playThemeSong) {
-		this.playThemeSong = playThemeSong;
-	}
-
-	/**
-	 * Gets the notepadWrap.
-	 * @return the notepadWrap.
-	 */
-	public boolean isNotepadWrap() {
-		return notepadWrap;
-	}
-
-	/**
-	 * Sets the notepadWrap.
-	 * @param notepadWrap the notepadWrap to set
-	 */
-	public void setNotepadWrap(boolean notepadWrap) {
-		this.notepadWrap = notepadWrap;
-	}
-
-	/**
-	 * Gets the rememberMe.
-	 * @return the rememberMe.
-	 */
-	public boolean isRememberMe() {
-		return rememberMe;
-	}
-
-	/**
-	 * Sets the rememberMe.
-	 * @param rememberMe the rememberMe to set
-	 */
-	public void setRememberMe(boolean rememberMe) {
-		this.rememberMe = rememberMe;
-	}
-
-	/**
 	 * Checks if instantAttack is {@code true}.
 	 * @return {@code True} if so.
 	 */

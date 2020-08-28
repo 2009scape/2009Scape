@@ -230,7 +230,6 @@ class Class155 {
 
    final synchronized void method2154(int var1, Class3_Sub24 var2) {
       try {
-         int var3 = -128 / ((var1 - -58) / 54);
          this.aClass3_Sub24_1973 = var2;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "vh.I(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
@@ -288,8 +287,6 @@ class Class155 {
             this.method2160();
             this.aLong1982 = Class5.method830((byte)-55) + 2000L;
          }
-
-         int var2 = 91 % (((byte) -78 - 47) / 60);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "vh.L(" + (byte) -78 + ')');
       }

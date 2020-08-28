@@ -67,7 +67,6 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
 
    static void method2223(boolean var0, byte var1) {
       try {
-         int var2 = 85 % ((-17 - var1) / 59);
          byte var3;
          byte[][] var4;
          if(HDToolKit.highDetail && var0) {
@@ -148,7 +147,6 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
 
    public static void method2225(byte var0) {
       try {
-         int var1 = 58 % ((var0 - 7) / 43);
          aClass89_4012 = null;
          aClass109_Sub1Array4027 = null;
          anIntArray4025 = null;

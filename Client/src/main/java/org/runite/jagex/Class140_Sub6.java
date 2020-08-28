@@ -231,8 +231,6 @@ final class Class140_Sub6 extends GameObject {
 
    static int method2028(int var0, int var1) {
       try {
-         int var3 = 96 / ((-122 - -75) / 33);
-
          int var4;
          for(var4 = 1; 1 < var0; var0 >>= 1) {
             if(0 != (1 & var0)) {

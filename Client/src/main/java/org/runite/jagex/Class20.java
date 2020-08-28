@@ -63,8 +63,6 @@ final class Class20 {
          if(var1.anInt204 == Class3_Sub23.anInt2535) {
             Class3_Sub28_Sub14.aBooleanArray3674[var1.anInt292] = true;
          }
-
-         int var2 = -100 / ((var0 - 55) / 52);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "dg.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
@@ -72,7 +70,6 @@ final class Class20 {
 
    static void method910(int var1, int var2, int var3, int var4, int var5, Class91 var6) {
       try {
-         boolean var9 = true;
          long var7 = 0L;
          if(var4 == 0) {
             var7 = Class157.method2174(var3, var2, var1);
@@ -84,9 +81,7 @@ final class Class20 {
             var7 = Class3_Sub2.method104(var3, var2, var1);
          }
 
-         boolean var10 = false;
          int var19 = (519128 & (int)var7) >> 14;
-          boolean var11 = false;
           int var17 = (int)(var7 >>> 32) & Integer.MAX_VALUE;
           ObjectDefinition var12 = Class162.getObjectDefinition(var17);
           if(var12.method1690()) {

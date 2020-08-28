@@ -395,8 +395,6 @@ public final class Client extends GameShell {
 				Class38.aClass146_668.method2084(Class3_Sub28_Sub12.aCanvas3648, -97);
 			}
 
-			Class163_Sub1.anInt2994 = Signlink.anInt1214;
-
 			try {
 				if(Class38.aClass87_665.aClass122_1198 != null) {
 					Class101.aClass30_1422 = new Class30(Class38.aClass87_665.aClass122_1198, 5200);
@@ -561,10 +559,11 @@ public final class Client extends GameShell {
 			Class101.method1608((byte)110);
 			Class53.method1169(false);
 			WorldListEntry.method1077(0);
-			WorldListCountry.method960(31);
+			WorldListCountry.anIntArray509 = null;
+			WorldListCountry.aClass94_500 = null;
 			Class88.method1457();
 			Class137.method1818(false);
-			Class54.method1178((byte)-93);
+			Class54.aClass153_878 = null;
 			Class10.method853(0);
 			CS2Script.method376(false);
 			GameObject.method1860(0);
@@ -709,9 +708,6 @@ public final class Client extends GameShell {
 			Class75_Sub2.method1345(-71);
 		} catch (RuntimeException var3) {
 			throw Class44.clientError(var3, "client.C(" + 126 + ')');
-		}
-
-		if(GameShell.anInt12 != 0) {
 		}
 
 	}

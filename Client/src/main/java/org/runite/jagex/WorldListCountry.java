@@ -11,15 +11,4 @@ final class WorldListCountry {
    int flagId;
    RSString name;
    static int[] anIntArray509 = new int[5];
-
-
-   public static void method960(int var0) {
-      try {
-         anIntArray509 = null;
-         aClass94_500 = null;
-      } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "ee.A(" + ')');
-      }
-   }
-
 }

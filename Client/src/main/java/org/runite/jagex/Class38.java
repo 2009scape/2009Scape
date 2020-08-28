@@ -14,7 +14,7 @@ class Class38 {
       try {
          ItemDefinition var2 = (ItemDefinition)Class3_Sub28_Sub4.aClass93_3572.get((long)itemId);
          if(var2 == null) {
-            byte[] var3 = Class97.aClass153_1370.getFile(Class140_Sub2.method1951(itemId), Class145.method2075(itemId, (byte)102));
+            byte[] var3 = Class97.aClass153_1370.getFile(Class140_Sub2.method1951(itemId), 255 & itemId);
             if(var1 <= 68) {
                method1027(-113, (byte)110);
             }

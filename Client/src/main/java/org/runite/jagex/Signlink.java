@@ -34,7 +34,6 @@ public class Signlink implements Runnable {
    public Class122 aClass122_1207;
    private Display aDisplay1208;
    private static String homeDirectory;
-   public static String osVersion;
    private static final Hashtable aHashtable1211 = new Hashtable(16);
    private final String aString1212;
    private Class64 aClass64_1213 = null;
@@ -138,10 +137,6 @@ public class Signlink implements Runnable {
       return this.method1435(4, 0, var2, 0, -118);
    }
 
-   public final Class64 method1440(boolean var1, int var2, Component var3) {
-      return this.method1435(15, 0, var3, var1?1:0, -84);
-   }
-
    public final Class64 method1441(byte var1, String address, int port) {
       //System.out.println("var1: " + var1 + ", add: " + address + ":" + port);
       return var1 != 8?null:this.method1435(1, 0, address, port, -17);
@@ -241,7 +236,7 @@ public class Signlink implements Runnable {
                      var5.setResizable(false);
                      this.aDisplay1208.method918(-56, var1.anInt980 & '\uffff', var1.anInt980 >> 16, '\uffff' & var1.anInt979, var5, var1.anInt979 >>> 16);
                   } else if (var2 == 7) {
-                     this.aDisplay1208.method920(-117);
+                     this.aDisplay1208.method920();
                   } else if (10 == var2) {
                      Class[] var17 = new Class[]{Class.forName("java.lang.Class"), Class.forName("java.lang.String")};
                      Runtime var6 = Runtime.getRuntime();
@@ -451,7 +446,8 @@ public class Signlink implements Runnable {
          this.method1452((String)null, true);
       }
 
-      return this.anInterface1_1217;
+      //return this.anInterface1_1217;
+      return null;
    }
 
    public final Class64 method1447(int var1, String var2, Class var3) {
@@ -525,7 +521,7 @@ public class Signlink implements Runnable {
       return this.method1435(3, 0, (Object)null, var2, var1 + -96);
    }
 
-   public final Class64 method1450(int var1, int var2, int var3, int var4, int var5) {
+   public final Class64 method1450(int var1, int var2, int var3, int var4) {
       return this.method1435(6, var1 + (var2 << 16), (Object)null, (var4 << 16) + var3, -49);
    }
 
@@ -574,12 +570,6 @@ public class Signlink implements Runnable {
          osArchitecture = System.getProperty("os.arch").toLowerCase();
       } catch (Exception var15) {
          osArchitecture = "";
-      }
-
-      try {
-         osVersion = System.getProperty("os.version").toLowerCase();
-      } catch (Exception var14) {
-         osVersion = "";
       }
 
       try {

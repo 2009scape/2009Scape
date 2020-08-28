@@ -71,7 +71,7 @@ final class Class162 {
 
          ObjectDefinition var2 = (ObjectDefinition)Canvas_Sub1.aClass93_21.get((long)objectId);
          if(var2 == null) {
-            byte[] var3 = Class85.aClass153_1171.getFile(Class3_Sub13_Sub36.method340(objectId), Class15.method893(objectId));
+            byte[] var3 = Class85.aClass153_1171.getFile(Class3_Sub13_Sub36.method340(objectId), objectId & 255);
             var2 = new ObjectDefinition();
             var2.objectId = objectId;
             if(null != var3) {

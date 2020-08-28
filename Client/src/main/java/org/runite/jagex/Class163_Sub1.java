@@ -11,7 +11,6 @@ class Class163_Sub1 extends Class163 {
    static int anInt2989 = 0;
    static Class61 aClass61_2990 = new Class61();
    static int anInt2993 = 0;
-   static int anInt2994;
 
 
    static void method2210(boolean var1) {

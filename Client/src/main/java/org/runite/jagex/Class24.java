@@ -82,7 +82,6 @@ final class Class24 {
 
    static boolean isValidObjectMapping(byte var0, int var1, int var2, byte[] var3) {
       try {
-         int var4 = 106 % ((-11 - var0) / 51);
          boolean var5 = true;
          int var7 = -1;
          RSByteBuffer buffer = new RSByteBuffer(var3);
@@ -272,8 +271,6 @@ final class Class24 {
             for(int var3 = 0; this.anIntArray474.length > var3; ++var3) {
                var2[var3] = Model_Sub1.method2015(Class10.aClass153_152, this.anIntArray474[var3]);
             }
-
-            int var4 = 27 / (((byte) -26 - 74) / 35);
             Model_Sub1 var7;
             if(var2.length == 1) {
                var7 = var2[0];
@@ -319,7 +316,6 @@ final class Class24 {
 
    static void method949(int var0, int var2, int var3, int var4) {
       try {
-         int var5 = -44 / ((24 - (byte) 118) / 59);
          int var6 = 0;
          Class3_Sub13_Sub23_Sub1.method282(Class38.anIntArrayArray663[var4], -var2 + var0, 100, var0 - -var2, var3);
          int var8 = -var2;

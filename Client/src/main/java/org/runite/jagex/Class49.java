@@ -148,10 +148,10 @@ final class Class49 {
          }
 
          Class7.method831(var3);
-         var3 = Class3_Sub28_Sub6.a(":", "%3a", 126, var3);
-         var3 = Class3_Sub28_Sub6.a("@", "%40", -31, var3);
-         var3 = Class3_Sub28_Sub6.a("&", "%26", -16, var3);
-         var3 = Class3_Sub28_Sub6.a("#", "%23", 6, var3);
+         var3 = Class3_Sub28_Sub6.a(":", "%3a", var3);
+         var3 = Class3_Sub28_Sub6.a("@", "%40", var3);
+         var3 = Class3_Sub28_Sub6.a("&", "%26", var3);
+         var3 = Class3_Sub28_Sub6.a("#", "%23", var3);
          if(Class3_Sub13_Sub10.aClass87_3125.anApplet1219 == null) {
             return;
          }

@@ -45,7 +45,6 @@ final class Class83 {
          int var32;
          int var33;
          int[][] var41;
-         int var10000;
          for(var13 = 0; var13 < var11; ++var13) {
             var14 = var13 * var8 + var1 >> 16;
             var15 = (var13 + 1) * var8 + var1 >> 16;

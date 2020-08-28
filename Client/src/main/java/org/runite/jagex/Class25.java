@@ -119,7 +119,6 @@ final class Class25 {
    static void method958(byte var0) {
       try {
          if(GameObject.aBoolean1837) {
-            int var2 = 88 / ((57 - var0) / 59);
             RSInterface var1 = Class3_Sub28_Sub16.method638(Class54.anInt872, RSInterface.anInt278);
             if(null != var1 && var1.anObjectArray303 != null) {
                CS2Script var3 = new CS2Script();

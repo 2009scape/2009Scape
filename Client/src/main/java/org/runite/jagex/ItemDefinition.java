@@ -63,10 +63,7 @@ final class ItemDefinition {
 	int[] anIntArray804;
 	private int anInt805;
 	boolean aBoolean807;
-	static RSString aClass94_808;
 
-	static RSString aClass94_809;
-	private static RSString aClass94_806;
 	int anInt810;
 	private static RSString aClass94_811;
 
@@ -4055,11 +4052,8 @@ final class ItemDefinition {
 
 	public static void method1111(int var0) {
 		try {
-			aClass94_808 = null;
 			anIntArray781 = null;
-			aClass94_809 = null;
 			if(var0 == 3327) {
-				aClass94_806 = null;
 				aClass94_811 = null;
 			}
 		} catch (RuntimeException var2) {
@@ -4489,11 +4483,7 @@ final class ItemDefinition {
 			var0 += var3;
 			anIntArray781[var1] = var0 / 4;
 		}
-
-		aClass94_808 =
 		aClass94_811 = RSString.createRSString("green:");
-		aClass94_809 = aClass94_811;
-		aClass94_806 = aClass94_811;
 	}
 
 	public int getShiftClickActionIndex() {

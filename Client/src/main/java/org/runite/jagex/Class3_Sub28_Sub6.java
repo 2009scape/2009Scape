@@ -3,7 +3,6 @@ package org.runite.jagex;
 final class Class3_Sub28_Sub6 extends Node {
 
    static boolean aBoolean3594;
-   static RSString aClass94_3595 = RSString.createRSString("(U0a )2 via: ");
    int anInt3596;
    int anInt3597;
    int anInt3598;
@@ -150,7 +149,7 @@ final class Class3_Sub28_Sub6 extends Node {
       }
    }
 
-   static String a(String var0, String var1, int var2, String var3) {
+   static String a(String var0, String var1, String var3) {
       for(int var4 = var3.indexOf(var0); var4 != -1; var4 = var3.indexOf(var0, var4 + var1.length())) {
          var3 = var3.substring(0, var4) + var1 + var3.substring(var0.length() + var4);
       }
@@ -226,7 +225,6 @@ final class Class3_Sub28_Sub6 extends Node {
    public static void f(int var0) {
       try {
          if(var0 == 3) {
-            aClass94_3595 = null;
          }
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "da.O(" + var0 + ')');

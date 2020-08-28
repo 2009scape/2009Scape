@@ -57,7 +57,7 @@ final class Class3_Sub28_Sub8 extends Node {
                }
 
                var4.index = 0;
-               var2.aClass94_3686 = var4.method750();
+               var4.method750();
                var2.anIntArray3683 = new int[var7];
                var2.aClass94Array3688 = new RSString[var7];
                var9 = 0;

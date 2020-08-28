@@ -63,7 +63,7 @@ final class Class99 {
                }
             }
 
-            Class64 var10 = var5.method1450(0, var2, var3, var4, -121);
+            Class64 var10 = var5.method1450(0, var2, var3, var4);
 
             while(0 == var10.anInt978) {
                Class3_Sub13_Sub34.method331(10L, 64);

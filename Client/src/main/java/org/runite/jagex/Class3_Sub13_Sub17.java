@@ -27,7 +27,7 @@ final class Class3_Sub13_Sub17 extends Class3_Sub13 {
          Class133.method1803();
          Class38.method1025((byte)-93);
          Class40.method1044(-3782);
-         method85();
+         Class136.aClass93_1772.method1523((byte)-99);
          Class158_Sub1.method2192();
          Class159.method2196();
          Class50.method1132(103);

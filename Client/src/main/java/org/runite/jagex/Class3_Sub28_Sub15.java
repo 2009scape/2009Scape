@@ -10,7 +10,6 @@ final class Class3_Sub28_Sub15 extends Node {
    int[] anIntArray3683;
    static int LoadingStageNumber = 10;
    Class130[] aClass130Array3685;
-   RSString aClass94_3686;
    int anInt3687;
    RSString[] aClass94Array3688;
    static int anInt3689 = 0;

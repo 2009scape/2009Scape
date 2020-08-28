@@ -303,15 +303,6 @@ final class Class15 implements Runnable {
       }
    }
 
-   static int method893(int var0) {
-      try {
-         int var2 = -66 / ((67 - (byte) 110) / 41);
-         return var0 & 255;
-      } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "cj.A(" + var0 + ',' + (byte) 110 + ')');
-      }
-   }
-
    static RSString method894(long var0, byte var2) {
       try {
          Class3_Sub28_Sub5.aCalendar3581.setTime(new Date(var0));

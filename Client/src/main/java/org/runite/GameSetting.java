@@ -62,27 +62,12 @@ public final class GameSetting {
 	public int getWorld() {
 		return world;
 	}
-	
-	/**
-	 * @return the enviornment
-	 */
-	public String getEnvironment() {
-		return environment;
-	}
-	
+
 	/**
 	 * @return the ip
 	 */
 	public String getIp() {
 		return ip;
-	}
-	
-	/**
-	 * Checks if the client has th low memory flag enabled.
-	 * @return {@code True} if so.
-	 */
-	public boolean isLowMemory() {
-		return lowMemory;
 	}
 
 	/**
@@ -95,7 +80,7 @@ public final class GameSetting {
 
 	/**
 	 * Sets the World
-	 * @param World to set
+	 * @param world world to set
 	 */
 	public void setWorld(int world) {
 		this.world = world;

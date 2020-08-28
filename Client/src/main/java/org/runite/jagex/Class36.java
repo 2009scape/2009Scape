@@ -49,7 +49,6 @@ final class Class36 {
 
    static void method1014(int var1, int var2) {
       try {
-         int var3 = 120 / ((15 - -120) / 41);
 
          for(int var4 = 0; var4 < Class54.anInt869; ++var4) {
             Class168 var5 = Class3_Sub13_Sub37.method350((byte)120, var4);

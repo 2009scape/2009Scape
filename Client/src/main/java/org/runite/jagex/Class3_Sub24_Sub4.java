@@ -36,9 +36,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
    private long aLong3526;
    private Class3_Sub24_Sub3 aClass3_Sub24_Sub3_3527 = new Class3_Sub24_Sub3(this);
    private Class3_Sub27 aClass3_Sub27_3528;
-   private int anInt3529;
-   private boolean aBoolean3530;
-
 
    final synchronized boolean method470(Class3_Sub27 var1, CacheIndex var3, Class83 var4) {
       try {
@@ -976,8 +973,8 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
          }
 
          long var4 = this.aLong3523;
-         if(this.aClass3_Sub27_3528 != null && this.anInt3529 == var3) {
-            this.method475(this.aBoolean3522, this.aClass3_Sub27_3528, this.aBoolean3530);
+         if(this.aClass3_Sub27_3528 != null && 0 == var3) {
+            this.method475(this.aBoolean3522, this.aClass3_Sub27_3528, false);
             this.method494(71);
          } else {
             while(this.anInt3524 == var3) {
@@ -1021,9 +1018,9 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
             this.anInt3525 = var2;
             this.aLong3523 = var4;
             this.anInt3524 = var3;
-            if(this.aClass3_Sub27_3528 != null && var3 > this.anInt3529) {
+            if(this.aClass3_Sub27_3528 != null && var3 > 0) {
                this.anInt3525 = -1;
-               this.anInt3524 = this.anInt3529;
+               this.anInt3524 = 0;
                this.aLong3523 = this.aClass78_3505.method1370(this.anInt3524);
             }
 

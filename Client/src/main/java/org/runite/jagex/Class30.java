@@ -39,7 +39,6 @@ final class Class30 {
 
    private void method975(byte var1) throws IOException {
       try {
-         int var2 = 56 % ((45 - var1) / 44);
          if(-1L != this.aLong571) {
             if(this.aLong571 != this.aLong570) {
                this.aClass122_573.method1737((byte)-10, this.aLong571);

@@ -150,7 +150,6 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	      {
 	        Class3_Sub28_Sub7_Sub1.anInt4045 = 0;
 	        GraphicDefinition.anInt549 = 0;
-	        int var2 = var1.getModifiers();
 		  }
 	      if (var1.isPopupTrigger()) {
 	        var1.consume();
@@ -223,7 +222,6 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 				Class140_Sub3.anInt2743 = 1;
 				GraphicDefinition.anInt549 = 1;
 			}
-	        int var2 = var1.getModifiers();
 		  }
 	      if (var1.isPopupTrigger()) {
 	        var1.consume();

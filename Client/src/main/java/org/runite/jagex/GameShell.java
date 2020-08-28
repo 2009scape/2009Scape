@@ -36,10 +36,6 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
    static RSString aClass94_9 = RSString.createRSString(")3)3)3");
    static RSString aClass94_10 = RSString.createRSString("::rect_debug");
    static boolean aBoolean11 = false;
-   public static int anInt12;
-
-   private static boolean desktop;
-
 
    public final void focusLost(FocusEvent var1) {
       try {
@@ -137,7 +133,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
             ((Container)var2).add(Class3_Sub28_Sub12.aCanvas3648);
             Class3_Sub28_Sub12.aCanvas3648.setSize(Class23.anInt454, Class140_Sub7.anInt2934);
             Class3_Sub28_Sub12.aCanvas3648.setVisible(true);
-            if(var2 == frame || desktop) {
+            if(var2 == frame) {
                Insets var3 = frame.getInsets();
                Class3_Sub28_Sub12.aCanvas3648.setLocation(Class84.anInt1164 + var3.left, var3.top + Class106.anInt1442);
             } else {
@@ -304,7 +300,6 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
    private void method36() {
 	      try {
 	         long var2 = Class5.method830((byte)-55);
-	         long var4 = Class134.aLongArray1766[CacheIndex.anInt1953];
 	         Class134.aLongArray1766[CacheIndex.anInt1953] = var2;
 	         CacheIndex.anInt1953 = 31 & CacheIndex.anInt1953 - -1;
 	         synchronized(this) {
@@ -346,7 +341,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
             Class3_Sub13_Sub25.anInt3313 -= 50;
             Class3_Sub28_Sub12.aCanvas3648.setSize(Class23.anInt454, Class140_Sub7.anInt2934);
             Class3_Sub28_Sub12.aCanvas3648.setVisible(true);
-            if(frame != null && null == Class3_Sub13_Sub10.aFrame3121 && !desktop) {
+            if(frame != null && null == Class3_Sub13_Sub10.aFrame3121) {
                Insets var8 = frame.getInsets();
                Class3_Sub28_Sub12.aCanvas3648.setLocation(var8.left + Class84.anInt1164, Class106.anInt1442 + var8.top);
             } else {

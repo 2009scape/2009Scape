@@ -1230,7 +1230,7 @@ final class Model_Sub1 extends GameObject {
       int var16 = var4.getByte((byte)-47);
       int var17 = var4.getShort(1);
       int var18 = var4.getShort(1);
-      int var19 = var4.getShort(1);
+      var4.getShort(1);
       int var20 = var4.getShort(1);
       byte var21 = 0;
       int var45 = var21 + var9;

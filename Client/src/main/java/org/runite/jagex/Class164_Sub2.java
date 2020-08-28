@@ -84,8 +84,6 @@ class Class164_Sub2 extends Class164 {
    static int method2247(byte var0, int var1, RSInterface var2) {
       try {
          if(var2.childDataBuffers != null && var2.childDataBuffers.length > var1) {
-            int var3 = -92 % ((var0 - 71) / 34);
-
             try {
                int[] var4 = var2.childDataBuffers[var1];
                byte var7 = 0;

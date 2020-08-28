@@ -253,7 +253,6 @@ final class Class41 {
          synchronized(var6) {
             try {
                int var7;
-               boolean var10000;
                if(var5) {
                   if(this.aClass30_683.method976(var1 ^ 87) < (long)(6 + var3 * 6)) {
                       return false;

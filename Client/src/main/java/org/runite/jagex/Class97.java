@@ -109,7 +109,6 @@ final class Class97 {
 
    final int[][] method1594(byte var1, int var2) {
       try {
-         int var3 = -50 % ((var1 - -57) / 57);
          if(this.anInt1367 == this.anInt1369) {
             this.aBoolean1379 = null == this.aClass3_Sub20Array1371[var2];
             this.aClass3_Sub20Array1371[var2] = Class3_Sub28_Sub1.aClass3_Sub20_3532;

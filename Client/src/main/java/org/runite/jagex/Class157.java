@@ -11,7 +11,6 @@ final class Class157 {
 
    final byte[] method2173(byte[] var1) {
       try {
-         int var3 = 53 % (((byte) -105 - -39) / 50);
          if(null != this.anIntArrayArray1999) {
             int var4 = 14 + (int)((long)var1.length * (long)this.anInt2001 / (long)this.anInt1997);
             int[] var5 = new int[var4];

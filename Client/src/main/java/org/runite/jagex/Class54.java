@@ -67,12 +67,4 @@ final class Class54 {
       }
    }
 
-   public static void method1178(byte var0) {
-      try {
-         aClass153_878 = null;
-      } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "hj.B(" + ')');
-      }
-   }
-
 }

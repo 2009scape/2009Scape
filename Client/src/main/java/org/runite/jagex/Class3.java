@@ -44,15 +44,6 @@ class Class3 {
       }
    }
 
-   static void method85() {
-      try {
-         int var1 = -122 % (((byte) -114 - -63) / 48);
-         Class136.aClass93_1772.method1523((byte)-99);
-      } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "ab.G(" + (byte) -114 + ')');
-      }
-   }
-
    final void method86(int var1) {
       try {
          if(null != this.aClass3_76) {

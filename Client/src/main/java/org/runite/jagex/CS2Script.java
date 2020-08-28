@@ -70,7 +70,7 @@ final class CS2Script extends Class3 {
             if(var1 < 126) {
                return (Class79)null;
             } else {
-               byte[] var3 = Class101.aClass153_1420.getFile(Class140_Sub7.method2032(var0), Class164.method2234(var0));
+               byte[] var3 = Class101.aClass153_1420.getFile(Class140_Sub7.method2032(var0), var0 & 1023);
                var2 = new Class79();
                if(var3 != null) {
                   var2.method1387(new RSByteBuffer(var3));

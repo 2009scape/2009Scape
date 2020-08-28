@@ -79,7 +79,6 @@ final class Class31 {
                      if(var2 == null) {
                         if(var1 > 0) {
                            var0.glDeleteTextures(var1, anIntArray589, 0);
-                           boolean var4 = false;
                         }
 
                         while(true) {

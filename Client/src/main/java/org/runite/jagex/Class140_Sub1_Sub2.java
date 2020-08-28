@@ -2443,8 +2443,6 @@ final class Class140_Sub1_Sub2 extends Model {
       this.anInt3891 = 0;
       this.anInt3889 = 0;
       this.anInt3900 = 0;
-      byte var7 = 0;
-      byte var8 = 0;
       this.aByte3875 = -1;
 
       int var9;
@@ -2508,8 +2506,6 @@ final class Class140_Sub1_Sub2 extends Model {
       this.anInt3891 = 0;
       this.anInt3889 = 0;
       this.anInt3900 = 0;
-      boolean var13 = false;
-      boolean var12 = false;
 
       for(var9 = 0; var9 < 2; ++var9) {
          var10 = var1[var9];

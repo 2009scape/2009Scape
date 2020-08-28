@@ -1323,7 +1323,6 @@ final class Class51 {
          int var20;
          int var23;
          int var22;
-         int var10000;
          int var3;
          int var2;
          if(aBoolean845) {

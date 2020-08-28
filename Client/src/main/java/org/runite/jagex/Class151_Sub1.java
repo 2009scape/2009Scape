@@ -37,7 +37,6 @@ final class Class151_Sub1 extends Class151 {
             if(0 == type) {
                Class21.maskUpdateIndexes[Class66.maskUpdateCount++] = 2047;
             } else {
-               int var3 = -112;
                int var4;
                int var5;
                if(type == 1) { //Walk
@@ -92,8 +91,6 @@ final class Class151_Sub1 extends Class151 {
                   return;
                }
             }
-
-            int var4 = -66;
             var3 = new Class3();
             var3.aLong71 = (long)var1;
             this.aClass61_2963.method1215(var3);
@@ -211,7 +208,6 @@ final class Class151_Sub1 extends Class151 {
 
    static void method2104(RSInterface var0, boolean var1, int var2) {
       try {
-         int var3 = 57 % ((var2 - -58) / 47);
          int var4 = var0.anInt240 != 0?var0.anInt240:var0.anInt168;
          int var5 = var0.anInt252 != 0 ?var0.anInt252:var0.anInt193;
          Class158.method2183(var0.anInt279, var1, var4, var5, GameObject.aClass11ArrayArray1834[var0.anInt279 >> 16]);
@@ -463,7 +459,6 @@ final class Class151_Sub1 extends Class151 {
             return null;
          } else {
             byte[] var5 = ((Class3_Sub28_Sub10)var4).method587();
-            int var6 = -57 % ((var3 - -10) / 55);
             int var7;
             Class3_Sub28_Sub10_Sub2 var12;
             if(var4 instanceof Class3_Sub28_Sub10_Sub1) {
@@ -601,7 +596,6 @@ final class Class151_Sub1 extends Class151 {
 
    final int method2111() {
       try {
-         int var2 = -96 / ((20 - -61) / 33);
          return null != this.method2094()?100:(null == this.aClass3_Sub28_Sub10_2950?0:this.aClass3_Sub28_Sub10_2950.method586());
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "bg.E(" + -61 + ')');

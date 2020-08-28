@@ -108,7 +108,7 @@ public class Display {
       }
    }
 
-   public void method920(int var1) {
+   public void method920() {
       if(this.aDisplayMode446 != null) {
          this.aGraphicsDevice445.setDisplayMode(this.aDisplayMode446);
          if(!this.aGraphicsDevice445.getDisplayMode().equals(this.aDisplayMode446)) {

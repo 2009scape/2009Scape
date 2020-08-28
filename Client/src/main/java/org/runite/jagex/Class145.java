@@ -15,10 +15,6 @@ final class Class145 {
    public static void method2071(byte var0) {
       try {
          aClass113Array1895 = null;
-         if(var0 <= 1) {
-            method2075(112, (byte)44);
-         }
-
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "ub.G(" + var0 + ')');
       }
@@ -763,15 +759,6 @@ final class Class145 {
          Class20.method909(126, var7);
       } catch (RuntimeException var9) {
          throw Class44.clientError(var9, "ub.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + -120 + ',' + var6 + ')');
-      }
-   }
-
-   static int method2075(int var0, byte var1) {
-      try {
-         int var2 = 110 / ((var1 - 34) / 61);
-         return 255 & var0;
-      } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "ub.A(" + var0 + ',' + var1 + ')');
       }
    }
 
