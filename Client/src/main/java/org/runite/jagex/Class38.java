@@ -89,7 +89,6 @@ class Class38 {
    static void method1027(int var0, byte var1) {
       try {
          Class44.aClass93_725.method1522(-128, var0);
-         int var2 = -38 % ((var1 - 29) / 40);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "fk.J(" + var0 + ',' + var1 + ')');
       }

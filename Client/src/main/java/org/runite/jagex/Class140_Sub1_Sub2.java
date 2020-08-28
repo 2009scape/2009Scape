@@ -662,8 +662,6 @@ final class Class140_Sub1_Sub2 extends Model {
 
          int var10 = Class51.anInt846;
          int var11 = Class51.anInt835;
-         int var12 = Class51.anIntArray840[0];
-         int var13 = Class51.anIntArray851[0];
          int var14 = Class51.anIntArray840[var2];
          int var15 = Class51.anIntArray851[var2];
          int var16 = Class51.anIntArray840[var3];
@@ -1515,8 +1513,6 @@ final class Class140_Sub1_Sub2 extends Model {
 
          int var9 = Class51.anInt846;
          int var10 = Class51.anInt835;
-         int var11 = Class51.anIntArray840[0];
-         int var12 = Class51.anIntArray851[0];
          int var13 = Class51.anIntArray840[var2];
          int var14 = Class51.anIntArray851[var2];
          int var15 = Class51.anIntArray840[var3];

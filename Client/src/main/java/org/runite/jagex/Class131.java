@@ -153,7 +153,6 @@ final class Class131 {
             var4.putInt(-123, (int) (Math.random() * 9.9999999E7D));
             var4.putString(Class3_Sub28_Sub14.password);
             var4.putInt(-128, (int) (Math.random() * 9.9999999E7D));
-            int var5 = 9 / (((byte) -38 - 29) / 60);
             var4.encryptRSA(Class3_Sub13_Sub14.aBigInteger3162, Class3_Sub13_Sub37.aBigInteger3441);
             Class3_Sub13_Sub1.outgoingBuffer.index = 0;
             Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -29, 210);

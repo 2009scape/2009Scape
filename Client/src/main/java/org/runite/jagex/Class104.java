@@ -13,7 +13,6 @@ final class Class104 implements Interface5 {
    private int anInt2173;
    private final float[] aFloatArray2174 = new float[4];
    private static RSString aClass94_2175 = RSString.createRSString(")4a=");
-   static RSString aClass94_2176 = RSString.createRSString("(U0a )2 non)2existant gosub script)2num: ");
 
 
    static void method1626(byte var0) {
@@ -58,7 +57,7 @@ final class Class104 implements Interface5 {
             }
          } else {
             GameLaunch.SETTINGS.setIp(var2.address.toString());
-            byte[] var3 = var2.address.method1568();
+            var2.address.method1568();
             Class38_Sub1.accRegistryIp = Configurations.MS_IP;
             CS2Script.anInt2451 = var2.worldId;
             if (Class44.anInt718 != 0) {
@@ -434,7 +433,6 @@ final class Class104 implements Interface5 {
          aClass94_2171 = null;
          aClass153_2172 = null;
          aBooleanArray2169 = null;
-         aClass94_2176 = null;
          if(var0 > -112) {
             method1632(-116, 108, 54, -120, 44, 6);
          }

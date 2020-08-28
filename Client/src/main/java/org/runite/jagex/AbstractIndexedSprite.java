@@ -49,7 +49,6 @@ abstract class AbstractIndexedSprite {
             }
          }
 
-         int var6 = 30 % ((64 - (byte) -118) / 54);
          return var3;
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "ok.B(" + var0 + ',' + var1 + ',' + (byte) -118 + ')');

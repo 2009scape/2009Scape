@@ -149,7 +149,6 @@ final class AnimationDefinition {
 				}
 
 				Class3_Sub28_Sub5 var10 = null;
-				int var12 = 47 % ((var2 - 66) / 45);
 				Class3_Sub28_Sub5 var11 = null;
 				int var13 = 0;
 				int var14 = 0;
@@ -304,7 +303,6 @@ final class AnimationDefinition {
 
 	final Model method2059(int var1, int var2, int var3, Model var5) {
 		try {
-			int var8 = 43 / (((byte) -52 - 4) / 54);
 			int var6 = this.duration[var3];
 			var3 = this.frames[var3];
 			Class3_Sub28_Sub5 var7 = Class3_Sub9.method133(var3 >> 16);
@@ -443,11 +441,9 @@ final class AnimationDefinition {
 			Class93.anInt1330 = 0;
 			Class154.anInt1956 = 0;
 			Class3_Sub13_Sub11.anInt3136 = 0;
-			Canvas_Sub1.anInt16 = 0;
 			Class3_Sub28_Sub10_Sub1.anInt4054 = 0;
 			Class126.anInt1677 = 0;
 			IOHandler.anInt1240 = 0;
-			Canvas_Sub1.anInt19 = 0;
 			Class3_Sub28_Sub10.anInt3630 = 0;
 			Class3_Sub13_Sub15.anInt3187 = 0;
 			Class3_Sub23.anInt2541 = 0;
@@ -479,7 +475,6 @@ final class AnimationDefinition {
 			Class167.anInt2085 = 0;
 			KeyboardListener.anInt1910 = 0;
 			Class3_Sub13_Sub12.anInt3144 = 0;
-			Canvas_Sub1.anInt17 = 0;
 			Class120.anInt1633 = 0;
 			Class15.anInt342 = 0;
 			Class143.anInt1873 = 0;
@@ -539,7 +534,6 @@ final class AnimationDefinition {
 			Class25.anInt494 = 0;
 			Class164_Sub1.anInt3017 = 0;
 			Class49.anInt816 = 0;
-			Canvas_Sub1.anInt18 = 0;
 			Class29.anInt562 = 0;
 			Class3_Sub28_Sub11.anInt3640 = 0;
 			Class3_Sub28_Sub10.anInt3627 = 0;

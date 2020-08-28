@@ -55,7 +55,6 @@ final class Class133 {
 
    final int method1805() {
       try {
-         int var2 = -74 % (((byte) -33 - 73) / 35);
          return 8 != (this.aByte1742 & 8)?0:1;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "sg.C(" + (byte) -33 + ')');

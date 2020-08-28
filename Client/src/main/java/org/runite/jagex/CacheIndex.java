@@ -60,7 +60,6 @@ final class CacheIndex {
 
    final void method2115(int var1, boolean var2) {
       try {
-         int var4 = 9 / ((var1 - 35) / 44);
          if(this.method2122(3)) {
             if(var2) {
                this.aClass62_1949.archiveNameHash = null;
@@ -215,7 +214,6 @@ final class CacheIndex {
             var2 = var2.method1534();
             int var3 = this.aClass62_1949.aClass69_949.method1280(var2.method1574());
             this.method2131(var3);
-            int var4 = 123 % ((var1 - -60) / 62);
          }
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "ve.V(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
@@ -308,7 +306,6 @@ final class CacheIndex {
 
    final boolean method2129(byte var1, int var2, int var3) {
       try {
-         int var4 = 78 / ((-10 - var1) / 59);
          if(this.method2139(var3, var2)) {
             if(this.anObjectArrayArray1952[var3] != null && null != this.anObjectArrayArray1952[var3][var2]) {
                return true;

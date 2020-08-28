@@ -125,8 +125,6 @@ final class Class105 {
          }
       }
 
-      int var13 = var0.anInt141;
-
       var0.aByte111 = var2;
       var0.anInt143 = var3;
       var0.anInt131 = var4;
@@ -198,24 +196,6 @@ final class Class105 {
    }
 
    private static void method1638(Class9 var0) {
-      boolean var4 = false;
-      boolean var5 = false;
-      boolean var6 = false;
-      boolean var7 = false;
-      boolean var8 = false;
-      boolean var9 = false;
-      boolean var10 = false;
-      boolean var11 = false;
-      boolean var12 = false;
-      boolean var13 = false;
-      boolean var14 = false;
-      boolean var15 = false;
-      boolean var16 = false;
-      boolean var17 = false;
-      boolean var18 = false;
-      boolean var19 = false;
-      boolean var20 = false;
-      boolean var21 = false;
       int var22 = 0;
       int[] var23 = null;
       int[] var24 = null;

@@ -13,7 +13,6 @@ final class Canvas_Sub2 extends Canvas {
 
    static void method56(int var0) {
       try {
-         int var3 = 81 % ((39 - 99) / 41);
          Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(6, var0);
          var2.a();
       } catch (RuntimeException var4) {
@@ -219,7 +218,6 @@ final class Canvas_Sub2 extends Canvas {
             }
          }
 
-         boolean var27 = false;
          int var28;
          if(HDToolKit.highDetail && !var10) {
             Class86 var26 = null;

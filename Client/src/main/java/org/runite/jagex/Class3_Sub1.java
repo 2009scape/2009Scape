@@ -111,7 +111,6 @@ final class Class3_Sub1 extends Class3 {
 
    final boolean method92(int var1, byte var2) {
       try {
-         int var3 = 13 / ((-60 - var2) / 46);
          return 0 != (this.anInt2205 >> 1 + var1 & 1);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "bf.C(" + var1 + ',' + var2 + ')');

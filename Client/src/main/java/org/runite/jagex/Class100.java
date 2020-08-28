@@ -32,7 +32,6 @@ final class Class100 {
          }
 
          double var11 = var3;
-         int var13 = 0;
          double var14 = 0.0D;
          if(var5 > var3) {
             var11 = var5;
@@ -145,7 +144,6 @@ final class Class100 {
                var4 = var2.nextInt();
             } while(var3 <= var4);
 
-            int var5 = -101 % ((var0 - -52) / 33);
             return Class3_Sub13_Sub7.method201(var4, var1, -58);
          }
       } catch (RuntimeException var6) {
@@ -187,7 +185,6 @@ final class Class100 {
 
    public static void method1606(byte var0) {
       try {
-         int var1 = 86 % ((49 - var0) / 48);
          aClass153_1410 = null;
          aClass136_1413 = null;
       } catch (RuntimeException var2) {

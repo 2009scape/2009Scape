@@ -37,7 +37,6 @@ final class Class136 {
             if(var20 > 0) {
                int var21 = var4 + var17 >> 6;
                var18 += var0;
-               int var10000 = var19 + var0;
                if(var21 >= 0 && var21 <= -1 + Class44.anIntArrayArrayArray720.length) {
                   int[][] var22 = Class44.anIntArrayArrayArray720[var21];
 
@@ -48,7 +47,6 @@ final class Class136 {
                      if(0 < var26) {
                         var24 += var10;
                         int var27 = var9 + var23 >> 6;
-                        var10000 = var25 + var10;
                         if(var27 >= 0 && -1 + var22.length >= var27 && null != var22[var27]) {
                            int var28 = (63 & var17 + var4) + (4032 & var9 + var23 << 6);
                            int var29 = var22[var27][var28];

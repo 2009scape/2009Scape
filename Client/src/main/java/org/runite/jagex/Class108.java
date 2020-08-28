@@ -41,21 +41,6 @@ final class Class108 {
       }
    }
 
-   static byte[] method1655(byte[] var1) {
-      try {
-         if(var1 == null) {
-            return null;
-         } else {
-
-            byte[] var2 = new byte[var1.length];
-            Class76.method1357(var1, 0, var2, 0, var1.length);
-            return var2;
-         }
-      } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "oi.H(" + (byte) -46 + ',' + "{...}" + ')');
-      }
-   }
-
    static void method1656(CacheIndex var0, byte var1) {
       try {
          if(!Class140_Sub2.aBoolean2713) {
@@ -95,7 +80,6 @@ final class Class108 {
    static void method1658(int[] var1, Object[] var2) {
       try {
          Class25.method956(var2, var1.length - 1, var1, 74, 0);
-         int var3 = 113 % ((76 - 21) / 45);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "oi.I(" + 21 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
       }

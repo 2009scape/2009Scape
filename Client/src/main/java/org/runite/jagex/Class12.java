@@ -79,7 +79,6 @@ final class Class12 {
          aClass94_331 = null;
          aClass153_322 = null;
          aClass153_323 = null;
-         int var1 = -93 / ((2 - var0) / 50);
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "bm.A(" + var0 + ')');
       }

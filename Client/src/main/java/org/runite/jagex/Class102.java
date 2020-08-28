@@ -281,7 +281,6 @@ final class Class102 implements Interface2 {
 
    public final int method10(int var1, int var2) {
       try {
-         int var3 = -81 % ((var1 - 4) / 55);
          return this.aByteArray2126[var2] & 255;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "nk.C(" + var1 + ',' + var2 + ')');
@@ -302,7 +301,6 @@ final class Class102 implements Interface2 {
 
    private Class3_Sub28_Sub18 method1615(int var2) {
       try {
-         int var3 = 111 / ((-15 - 48) / 38);
          Class3_Sub28_Sub18 var4 = (Class3_Sub28_Sub18)this.aClass47_2138.method1092((long)var2, 1400);
          if(null == var4) {
             var4 = new Class3_Sub28_Sub18(this.aShortArray2137[var2] & '\uffff');
@@ -411,7 +409,6 @@ final class Class102 implements Interface2 {
 
    public final int method19(int var1, int var2) {
       try {
-         int var3 = -115 / ((-12 - var1) / 56);
          return 255 & this.aByteArray2129[var2];
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "nk.A(" + var1 + ',' + var2 + ')');
@@ -468,7 +465,6 @@ final class Class102 implements Interface2 {
 
    public final boolean method17(int var1, int var2) {
       try {
-         int var3 = -8 / ((20 - var2) / 45);
          return this.aBooleanArray2124[var1];
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "nk.K(" + var1 + ',' + var2 + ')');

@@ -297,7 +297,6 @@ final class Class130 {
 
    final int method1781(int var1) {
       try {
-         int var2 = 75 / ((23 - var1) / 50);
          int var3 = 0;
 
          for(int var4 = 0; var4 < this.anInt1700; ++var4) {

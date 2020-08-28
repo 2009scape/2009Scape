@@ -55,7 +55,6 @@ final class Class132 {
    static void method1799(byte var0, CacheIndex var1) {
       try {
          Class3_Sub13_Sub7.aClass153_3098 = var1;
-         int var2 = 113 / ((1 - var0) / 63);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "sf.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }

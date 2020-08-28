@@ -119,25 +119,15 @@ final class Class116 {
             this.aClass34_1585.method1008();
             this.aClass34_1588.method1008();
             var11 = 0;
-            boolean var19 = false;
-            boolean var18 = true;
 
             for (var14 = 0; var14 < var1; ++var14) {
                var15 = this.aClass34_1585.method1007(var1);
                var16 = this.aClass34_1588.method1007(var1);
-               if (var18) {
-                  var12 = this.aClass34_1585.anInt603 + ((this.aClass34_1585.anInt605 - this.aClass34_1585.anInt603) * var15 >> 8);
-               } else {
-                  var12 = this.aClass34_1585.anInt603 + ((this.aClass34_1585.anInt605 - this.aClass34_1585.anInt603) * var16 >> 8);
-               }
-
+               var12 = this.aClass34_1585.anInt603 + ((this.aClass34_1585.anInt605 - this.aClass34_1585.anInt603) * var15 >> 8);
                var11 += 256;
                if (var11 >= var12) {
                   var11 = 0;
-                  var18 = !var18;
-               }
-
-               if (var18) {
+               } else {
                   anIntArray1598[var14] = 0;
                }
             }

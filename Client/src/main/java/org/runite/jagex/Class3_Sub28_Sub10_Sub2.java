@@ -43,8 +43,7 @@ final class Class3_Sub28_Sub10_Sub2 extends Class3_Sub28_Sub10 {
                   var6.anInt1447 = var3[var5 << 2];
                   var6.anInt1449 = var3[(var5 << 2) + 1];
                   var6.anInt1450 = var3[(var5 << 2) - -2];
-                  var6.anInt1448 = var3[(var5 << 2) - -3];
-               }
+			   }
 
 				return var4;
             }

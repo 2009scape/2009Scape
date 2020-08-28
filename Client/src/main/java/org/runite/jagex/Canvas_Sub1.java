@@ -7,10 +7,6 @@ final class Canvas_Sub1 extends Canvas implements FocusListener {
 
    static int anInt14 = 0;
    static int anInt15 = 0;
-   static int anInt16;
-   static int anInt17;
-   static int anInt18;
-   static int anInt19;
    static int[][] anIntArrayArray20 = new int[5][5000];
    static Class93 aClass93_21 = new Class93(64);
    static int registryStage = 0;

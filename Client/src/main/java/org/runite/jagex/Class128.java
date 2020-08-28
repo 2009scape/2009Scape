@@ -80,7 +80,6 @@ final class Class128 {
    static void method1762(long var0, byte var2) {
       try {
          try {
-            int var3 = 30 / ((var2 - -86) / 36);
             Thread.sleep(var0);
          } catch (InterruptedException var4) {
          }

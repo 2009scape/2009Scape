@@ -9,7 +9,6 @@ final class Class106 {
    static short aShort1444 = 256;
    static int anInt1446 = 0;
    int anInt1447;
-   int anInt1448;
    int anInt1449;
    int anInt1450;
    static boolean hasInternetExplorer6 = false;
