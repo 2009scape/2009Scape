@@ -71,8 +71,6 @@ class Node extends Class3 {
             if(null != var3) {
                def.method1478(new RSByteBuffer(var3));
             }
-
-            def.method1481();
             Class3_Sub28_Sub7_Sub1.aClass93_4043.put((byte)-95, def, (long)var0);
          }
          return def;

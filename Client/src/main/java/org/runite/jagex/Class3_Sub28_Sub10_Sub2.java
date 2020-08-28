@@ -212,7 +212,6 @@ final class Class3_Sub28_Sub10_Sub2 extends Class3_Sub28_Sub10 {
 	                  Class17.aThread409.setPriority(1);
 	                  Class164_Sub1.aClass158_3009 = Class3_Sub13_Sub23_Sub1.method285(503, 765, Class3_Sub28_Sub12.aCanvas3648);
 	                  Class140_Sub1_Sub2.method1938();
-	                  Class127_Sub1.method1756();
 	                  ((Class102)Class51.anInterface2_838).method1619(20);
 	                  if(Class106.aBoolean1441) {
 	                     if(1 == Class3_Sub28_Sub10.anInt3625) {

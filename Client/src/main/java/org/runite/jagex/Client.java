@@ -606,7 +606,6 @@ public final class Client extends GameShell {
 			Class140_Sub2.method1954(0);
 			Class107.method1646(true);
 			Class140_Sub7.method2030((byte)83);
-			Class3_Sub5.method113((byte)-120);
 			Class140_Sub3.method1958(2);
 			Class124.method1744(true);
 			Class80.method1394((byte)-94);
@@ -653,7 +652,6 @@ public final class Client extends GameShell {
 			Class27.method962((byte)-67);
 			Class3_Sub8.method131(-109);
 			Class32.method994('\u93bd');
-			Class60.method1206((byte)26);
 			Class3_Sub13_Sub22.method274(-2);
 			Class3_Sub13_Sub11.method217(1);
 			Class3_Sub13_Sub31.method317(7759444);
@@ -700,7 +698,6 @@ public final class Client extends GameShell {
 			Class163_Sub1.method2212(false);
 			Class3_Sub28_Sub14.method627((byte)-122);
 			Class3_Sub28_Sub19.method717(109);
-			Class3_Sub28_Sub2.method534(99);
 			Class3_Sub23.method405(true);
 			InputStream_Sub1.method61(-93);
 			OutputStream_Sub1.method67(true);

@@ -2293,7 +2293,6 @@ final class ItemDefinition {
 																		continue;
 																	}
 																	if (j1 == 5423) {
-																		Class3.aClass94Array75[--l].method1549();
 																		continue;
 																	}
 																	if (5424 == j1) {

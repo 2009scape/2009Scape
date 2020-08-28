@@ -546,10 +546,6 @@ final class NPCDefinition {
       }
    }
 
-   final void method1481() {
-
-   }
-
    final Model getChatModel(AnimationDefinition var1, int var2, int var3, int var4, int var5) {
       try {
          if(this.childNPCs == null) {

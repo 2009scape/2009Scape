@@ -503,13 +503,7 @@ static boolean aBoolean1080 = false;
             }
 
             if(command.equals(47, Class3_Sub13.COMMAND_SHIFT_DROP_CLICK)) {
-               if(Class101.aBoolean1419) {
-                  Class3_Sub28_Sub12.aClass94_3653.method1549();
-                  Class101.aBoolean1419 = false;
-               } else {
-                  Class20.aClass94_434.method1549();
-                  Class101.aBoolean1419 = true;
-               }
+               Class101.aBoolean1419 = !Class101.aBoolean1419;
             }
 
          Class3_Sub13_Sub1.outgoingBuffer.putOpcode(44);

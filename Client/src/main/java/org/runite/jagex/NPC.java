@@ -210,10 +210,6 @@ final class NPC extends Class140_Sub4 {
 	final void setDefinitions(NPCDefinition var2) {
 		try {
 			this.definition = var2;
-            if(this.aClass127_Sub1_2801 != null) {
-                this.aClass127_Sub1_2801.method1759();
-            }
-
         } catch (RuntimeException var4) {
 			throw Class44.clientError(var4, "km.R(" + -1 + ',' + (var2 != null?"{...}":"null") + ')');
 		}

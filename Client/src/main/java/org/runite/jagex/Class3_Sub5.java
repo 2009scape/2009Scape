@@ -132,10 +132,6 @@ final class Class3_Sub5 extends Class3 {
       }
    }
 
-   public static void method113(byte var0) {
-
-   }
-
    static void method114(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
       try {
 

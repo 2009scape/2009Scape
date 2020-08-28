@@ -157,11 +157,6 @@ final class Player extends Class140_Sub4 {
             this.anInt2819 = 128 * this.anIntArray2767[0] + this.getSize() * 64;
             this.anInt2829 = 128 * this.anIntArray2755[0] - -(64 * this.getSize());
          }
-
-         if(this.aClass127_Sub1_2801 != null) {
-            this.aClass127_Sub1_2801.method1759();
-         }
-
       } catch (RuntimeException var18) {
          throw Class44.clientError(var18, "e.P(" + var1 + ',' + (buffer != null?"{...}":"null") + ')');
       }

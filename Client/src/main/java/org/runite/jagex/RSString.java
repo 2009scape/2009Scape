@@ -642,10 +642,6 @@ final class RSString implements Interface3 {
       }
    }
 
-   final void method1549() {
-
-   }
-
    final boolean endsWith(byte var1, RSString var2) {
       try {
          if(var2.length > this.length) {

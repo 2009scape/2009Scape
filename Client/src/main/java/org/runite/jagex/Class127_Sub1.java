@@ -33,8 +33,6 @@ final class Class127_Sub1 extends Class127 {
 
    }
 
-   static void method1756() {}
-
    static int method1757() {
       return anInt2682;
    }
@@ -42,8 +40,6 @@ final class Class127_Sub1 extends Class127 {
    static void method1758(int var0) {
       anInt2682 = var0;
    }
-
-   final void method1759() {}
 
    static {
       new Class128();

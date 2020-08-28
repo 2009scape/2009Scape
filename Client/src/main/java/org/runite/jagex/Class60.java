@@ -7,11 +7,6 @@ final class Class60 {
    static int anInt934;
    static int anInt936;
 
-
-   public static void method1206(byte var0) {
-
-   }
-
    static void method1207() {
       try {
          for(int var1 = 0; Class163.localNPCCount > var1; ++var1) {
