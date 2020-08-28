@@ -30,6 +30,7 @@ import plugin.consumable.Consumable
 import plugin.consumable.Consumables
 import plugin.consumable.Food
 import plugin.consumable.effects.HealingEffect
+import plugin.ge.BotGrandExchange
 import plugin.ge.GEOfferDispatch
 import plugin.ge.GrandExchangeOffer
 import plugin.ge.OfferState
@@ -353,12 +354,10 @@ class ScriptAPI(private val bot: Player) {
     fun sellOnGE(id: Int){
         class toCounterPulse : MovementPulse(bot,Location.create(3165, 3487, 0) ){
             override fun pulse(): Boolean {
-                val offer = GrandExchangeOffer(id,true)
                 val itemAmt = bot.bank.getAmount(id)
-                offer.amount = itemAmt
-                offer.offeredValue = checkPriceOverrides(id) ?: ItemDefinition.forId(id).value
-                SystemLogger.log("Offered " + offer.amount)
-                GEOfferDispatch.dispatch(Player(PlayerDetails.getDetails("2009scape")),offer)
+                val offeredValue = checkPriceOverrides(id) ?: ItemDefinition.forId(id).value
+                BotGrandExchange.sellOnGE(id, offeredValue, itemAmt)
+                SystemLogger.log("Offered $itemAmt")
                 bot.bank.remove(Item(id,itemAmt))
                 bot.bank.refresh()
                 SystemLogger.log("Banked fish: " + bot.bank.getAmount(ItemNames.RAW_LOBSTER))
@@ -381,11 +380,9 @@ class ScriptAPI(private val bot: Player) {
                     SystemLogger.log("Checking ${item.id}")
                     if(!item.definition.isTradeable) {continue}
                     SystemLogger.log("Adding ${item.name}")
-                    val offer = GrandExchangeOffer(item.id, true)
                     val itemAmt = item.amount
-                    offer.amount = itemAmt
-                    offer.offeredValue = checkPriceOverrides(item.id) ?: item.definition.value
-                    GEOfferDispatch.dispatch(bot, offer)
+                    val offeredValue = checkPriceOverrides(item.id) ?: item.definition.value
+                    BotGrandExchange.sellOnGE(item.id, offeredValue, itemAmt)
                     bot.bank.remove(item)
                     bot.bank.refresh()
                 }
@@ -404,12 +401,10 @@ class ScriptAPI(private val bot: Player) {
     fun sellOnGE(id: Int, value: Int){
         class toCounterPulseWithPrice : MovementPulse(bot,Location.create(3165, 3487, 0) ){
             override fun pulse(): Boolean {
-                val offer = GrandExchangeOffer(id,true)
                 val itemAmt = bot.bank.getAmount(id)
-                offer.amount = itemAmt
-                offer.offeredValue = checkPriceOverrides(id) ?: value
-                SystemLogger.log("Offered " + offer.amount)
-                GEOfferDispatch.dispatch(bot,offer)
+                val offeredValue = checkPriceOverrides(id) ?: value
+                SystemLogger.log("Offered $itemAmt")
+                BotGrandExchange.sellOnGE(id, offeredValue, itemAmt)
                 bot.bank.remove(Item(id,itemAmt))
                 bot.bank.refresh()
                 SystemLogger.log("Banked fish: " + bot.bank.getAmount(ItemNames.RAW_LOBSTER))

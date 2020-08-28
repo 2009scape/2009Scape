@@ -1,1570 +1,1568 @@
-{
-  "ranged_weapon_configs": [
-    {
-      "itemId": "732",
-      "name": "Holy water",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "385",
-      "drop_ammo": "true",
-      "ammunition": "732"
-    },
-    {
-      "itemId": "767",
-      "name": "Phoenix crossbow",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "4230",
-      "drop_ammo": "true",
-      "ammunition": "877,878,6061,6062,879,9236,13280"
-    },
-    {
-      "itemId": "800",
-      "name": "Bronze thrownaxe",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "800"
-    },
-    {
-      "itemId": "801",
-      "name": "Iron thrownaxe",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "801"
-    },
-    {
-      "itemId": "802",
-      "name": "Steel thrownaxe",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "802"
-    },
-    {
-      "itemId": "803",
-      "name": "Mithril thrownaxe",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "803"
-    },
-    {
-      "itemId": "804",
-      "name": "Adamant thrownaxe",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "804"
-    },
-    {
-      "itemId": "805",
-      "name": "Rune thrownaxe",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "805"
-    },
-    {
-      "itemId": "806",
-      "name": "Bronze dart",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "806"
-    },
-    {
-      "itemId": "807",
-      "name": "Iron dart",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "807"
-    },
-    {
-      "itemId": "808",
-      "name": "Steel dart",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "808"
-    },
-    {
-      "itemId": "809",
-      "name": "Mithril dart",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "809"
-    },
-    {
-      "itemId": "810",
-      "name": "Adamant dart",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "810"
-    },
-    {
-      "itemId": "811",
-      "name": "Rune dart",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "811"
-    },
-    {
-      "itemId": "812",
-      "name": "Bronze dart(p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "812"
-    },
-    {
-      "itemId": "813",
-      "name": "Iron dart(p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "813"
-    },
-    {
-      "itemId": "814",
-      "name": "Steel dart(p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "814"
-    },
-    {
-      "itemId": "815",
-      "name": "Mithril dart(p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "815"
-    },
-    {
-      "itemId": "816",
-      "name": "Adamant dart(p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "816"
-    },
-    {
-      "itemId": "817",
-      "name": "Rune dart(p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "817"
-    },
-    {
-      "itemId": "825",
-      "name": "Bronze javelin",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "825"
-    },
-    {
-      "itemId": "826",
-      "name": "Iron javelin",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "826"
-    },
-    {
-      "itemId": "827",
-      "name": "Steel javelin",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "827"
-    },
-    {
-      "itemId": "828",
-      "name": "Mithril javelin",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "828"
-    },
-    {
-      "itemId": "829",
-      "name": "Adamant javelin",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "829"
-    },
-    {
-      "itemId": "830",
-      "name": "Rune javelin",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "830"
-    },
-    {
-      "itemId": "831",
-      "name": "Bronze javelin(p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "831"
-    },
-    {
-      "itemId": "832",
-      "name": "Iron javelin(p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "832"
-    },
-    {
-      "itemId": "833",
-      "name": "Steel javelin(p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "833"
-    },
-    {
-      "itemId": "834",
-      "name": "Mithril javelin(p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "834"
-    },
-    {
-      "itemId": "835",
-      "name": "Adamant javelin(p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "835"
-    },
-    {
-      "itemId": "836",
-      "name": "Rune javelin(p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "836"
-    },
-    {
-      "itemId": "837",
-      "name": "Crossbow",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "4230",
-      "drop_ammo": "true",
-      "ammunition": "877,878,6061,6062,879,9236,13280"
-    },
-    {
-      "itemId": "839",
-      "name": "Longbow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532"
-    },
-    {
-      "itemId": "841",
-      "name": "Shortbow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532"
-    },
-    {
-      "itemId": "843",
-      "name": "Oak shortbow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534"
-    },
-    {
-      "itemId": "845",
-      "name": "Oak longbow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534"
-    },
-    {
-      "itemId": "847",
-      "name": "Willow longbow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536"
-    },
-    {
-      "itemId": "849",
-      "name": "Willow shortbow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536"
-    },
-    {
-      "itemId": "851",
-      "name": "Maple longbow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538"
-    },
-    {
-      "itemId": "853",
-      "name": "Maple shortbow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538"
-    },
-    {
-      "itemId": "855",
-      "name": "Yew longbow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78"
-    },
-    {
-      "itemId": "857",
-      "name": "Yew shortbow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78"
-    },
-    {
-      "itemId": "859",
-      "name": "Magic longbow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78,4160"
-    },
-    {
-      "itemId": "861",
-      "name": "Magic shortbow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78,4160"
-    },
-    {
-      "itemId": "863",
-      "name": "Iron knife",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "863"
-    },
-    {
-      "itemId": "864",
-      "name": "Bronze knife",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "864"
-    },
-    {
-      "itemId": "865",
-      "name": "Steel knife",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "865"
-    },
-    {
-      "itemId": "866",
-      "name": "Mithril knife",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "866"
-    },
-    {
-      "itemId": "867",
-      "name": "Adamant knife",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "867"
-    },
-    {
-      "itemId": "868",
-      "name": "Rune knife",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "868"
-    },
-    {
-      "itemId": "869",
-      "name": "Black knife",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "869"
-    },
-    {
-      "itemId": "870",
-      "name": "Bronze knife(p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "870"
-    },
-    {
-      "itemId": "871",
-      "name": "Iron knife(p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "871"
-    },
-    {
-      "itemId": "872",
-      "name": "Steel knife(p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "872"
-    },
-    {
-      "itemId": "873",
-      "name": "Mithril knife(p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "873"
-    },
-    {
-      "itemId": "874",
-      "name": "Black knife(p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "874"
-    },
-    {
-      "itemId": "875",
-      "name": "Adamant knife(p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "875"
-    },
-    {
-      "itemId": "876",
-      "name": "Rune knife(p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "876"
-    },
-    {
-      "itemId": "2883",
-      "name": "Ogre bow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "2866"
-    },
-    {
-      "itemId": "3093",
-      "name": "Black dart",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "3093"
-    },
-    {
-      "itemId": "3094",
-      "name": "Black dart(p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "3094"
-    },
-    {
-      "itemId": "4212",
-      "name": "New crystal bow",
-      "ammo_slot": "3",
-      "weapon_type": "4",
-      "animation": "426",
-      "drop_ammo": "0",
-      "ammunition": "4212"
-    },
-    {
-      "itemId": "4214",
-      "name": "Crystal bow full",
-      "ammo_slot": "3",
-      "weapon_type": "4",
-      "animation": "426",
-      "drop_ammo": "0",
-      "ammunition": "4214"
-    },
-    {
-      "itemId": "4215",
-      "name": "Crystal bow 9/10",
-      "ammo_slot": "3",
-      "weapon_type": "4",
-      "animation": "426",
-      "drop_ammo": "0",
-      "ammunition": "4215"
-    },
-    {
-      "itemId": "4216",
-      "name": "Crystal bow 8/10",
-      "ammo_slot": "3",
-      "weapon_type": "4",
-      "animation": "426",
-      "drop_ammo": "0",
-      "ammunition": "4216"
-    },
-    {
-      "itemId": "4217",
-      "name": "Crystal bow 7/10",
-      "ammo_slot": "3",
-      "weapon_type": "4",
-      "animation": "426",
-      "drop_ammo": "0",
-      "ammunition": "4217"
-    },
-    {
-      "itemId": "4218",
-      "name": "Crystal bow 6/10",
-      "ammo_slot": "3",
-      "weapon_type": "4",
-      "animation": "426",
-      "drop_ammo": "0",
-      "ammunition": "4218"
-    },
-    {
-      "itemId": "4219",
-      "name": "Crystal bow 5/10",
-      "ammo_slot": "3",
-      "weapon_type": "4",
-      "animation": "426",
-      "drop_ammo": "0",
-      "ammunition": "4219"
-    },
-    {
-      "itemId": "4220",
-      "name": "Crystal bow 4/10",
-      "ammo_slot": "3",
-      "weapon_type": "4",
-      "animation": "426",
-      "drop_ammo": "0",
-      "ammunition": "4220"
-    },
-    {
-      "itemId": "4221",
-      "name": "Crystal bow 3/10",
-      "ammo_slot": "3",
-      "weapon_type": "4",
-      "animation": "426",
-      "drop_ammo": "0",
-      "ammunition": "4221"
-    },
-    {
-      "itemId": "4222",
-      "name": "Crystal bow 2/10",
-      "ammo_slot": "3",
-      "weapon_type": "4",
-      "animation": "426",
-      "drop_ammo": "0",
-      "ammunition": "4222"
-    },
-    {
-      "itemId": "4223",
-      "name": "Crystal bow 1/10",
-      "ammo_slot": "3",
-      "weapon_type": "4",
-      "animation": "426",
-      "drop_ammo": "0",
-      "ammunition": "4223"
-    },
-    {
-      "itemId": "4734",
-      "name": "Karil\\'s crossbow",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "2075",
-      "drop_ammo": "0",
-      "ammunition": "4740"
-    },
-    {
-      "itemId": "4827",
-      "name": "Comp ogre bow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "2866,4773,4778,4783,4788,4793,4798,4803"
-    },
-    {
-      "itemId": "4934",
-      "name": "Karil\\'s x-bow 100",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "2075",
-      "drop_ammo": "0",
-      "ammunition": "4740"
-    },
-    {
-      "itemId": "4935",
-      "name": "Karil\\'s x-bow 75",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "2075",
-      "drop_ammo": "0",
-      "ammunition": "4740"
-    },
-    {
-      "itemId": "4936",
-      "name": "Karil\\'s x-bow 50",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "2075",
-      "drop_ammo": "0",
-      "ammunition": "4740"
-    },
-    {
-      "itemId": "4937",
-      "name": "Karil\\'s x-bow 25",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "2075",
-      "drop_ammo": "0",
-      "ammunition": "4740"
-    },
-    {
-      "itemId": "5628",
-      "name": "Bronze dart(p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "5628"
-    },
-    {
-      "itemId": "5629",
-      "name": "Iron dart(p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "5629"
-    },
-    {
-      "itemId": "5630",
-      "name": "Steel dart(p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "5630"
-    },
-    {
-      "itemId": "5631",
-      "name": "Black dart(p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "5631"
-    },
-    {
-      "itemId": "5632",
-      "name": "Mithril dart(p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "5632"
-    },
-    {
-      "itemId": "5633",
-      "name": "Adamant dart(p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "5633"
-    },
-    {
-      "itemId": "5634",
-      "name": "Rune dart(p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "5634"
-    },
-    {
-      "itemId": "5635",
-      "name": "Bronze dart(p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "5635"
-    },
-    {
-      "itemId": "5636",
-      "name": "Iron dart(p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "5636"
-    },
-    {
-      "itemId": "5637",
-      "name": "Steel dart(p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "5637"
-    },
-    {
-      "itemId": "5638",
-      "name": "Black dart(p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "5638"
-    },
-    {
-      "itemId": "5639",
-      "name": "Mithril dart(p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "5639"
-    },
-    {
-      "itemId": "5640",
-      "name": "Adamant dart(p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "5640"
-    },
-    {
-      "itemId": "5641",
-      "name": "Rune dart(p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "5641"
-    },
-    {
-      "itemId": "5642",
-      "name": "Bronze javelin(p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5642"
-    },
-    {
-      "itemId": "5643",
-      "name": "Iron javelin(p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5643"
-    },
-    {
-      "itemId": "5644",
-      "name": "Steel javelin(p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5644"
-    },
-    {
-      "itemId": "5645",
-      "name": "Mithril javelin(p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5645"
-    },
-    {
-      "itemId": "5646",
-      "name": "Adamant javelin(p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5646"
-    },
-    {
-      "itemId": "5647",
-      "name": "Rune javelin(p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5647"
-    },
-    {
-      "itemId": "5648",
-      "name": "Bronze jav\\'n(p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5648"
-    },
-    {
-      "itemId": "5649",
-      "name": "Iron javelin(p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5649"
-    },
-    {
-      "itemId": "5650",
-      "name": "Steel javelin(p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5650"
-    },
-    {
-      "itemId": "5651",
-      "name": "Mithril javelin(p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5651"
-    },
-    {
-      "itemId": "5652",
-      "name": "Adamant javelin(p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5652"
-    },
-    {
-      "itemId": "5653",
-      "name": "Rune javelin(p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5653"
-    },
-    {
-      "itemId": "5654",
-      "name": "Bronze knife(p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5654"
-    },
-    {
-      "itemId": "5655",
-      "name": "Iron knife(p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5655"
-    },
-    {
-      "itemId": "5656",
-      "name": "Steel knife(p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5656"
-    },
-    {
-      "itemId": "5657",
-      "name": "Mithril knife(p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5657"
-    },
-    {
-      "itemId": "5658",
-      "name": "Black knife(p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5658"
-    },
-    {
-      "itemId": "5659",
-      "name": "Adamant knife(p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5659"
-    },
-    {
-      "itemId": "5660",
-      "name": "Rune knife(p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5660"
-    },
-    {
-      "itemId": "5661",
-      "name": "Bronze knife(p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5661"
-    },
-    {
-      "itemId": "5662",
-      "name": "Iron knife(p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5662"
-    },
-    {
-      "itemId": "5663",
-      "name": "Steel knife(p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5663"
-    },
-    {
-      "itemId": "5664",
-      "name": "Mithril knife(p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5664"
-    },
-    {
-      "itemId": "5665",
-      "name": "Black knife(p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5665"
-    },
-    {
-      "itemId": "5666",
-      "name": "Adamant knife(p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5666"
-    },
-    {
-      "itemId": "5667",
-      "name": "Rune knife(p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "929",
-      "drop_ammo": "true",
-      "ammunition": "5667"
-    },
-    {
-      "itemId": "6522",
-      "name": "Toktz-xil-ul",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "2614",
-      "drop_ammo": "true",
-      "ammunition": "6522"
-    },
-    {
-      "itemId": "6724",
-      "name": "Seercull",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78,4160"
-    },
-    {
-      "itemId": "8880",
-      "name": "Dorgeshuun c\\'bow",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "4230",
-      "drop_ammo": "true",
-      "ammunition": "8882,877,878,6061,6062,879,9236"
-    },
-    {
-      "itemId": "9174",
-      "name": "Bronze crossbow",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "4230",
-      "drop_ammo": "true",
-      "ammunition": "877,878,6061,6062,879,9236,13280"
-    },
-    {
-      "itemId": "9176",
-      "name": "Blurite crossbow",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "4230",
-      "drop_ammo": "true",
-      "ammunition": "877,878,6061,6062,9140,879,9236,13280"
-    },
-    {
-      "itemId": "9177",
-      "name": "Iron crossbow",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "4230",
-      "drop_ammo": "true",
-      "ammunition": "877,878,6061,6062,879,9236,9140,9287,9294,9301,880,9238,13280"
-    },
-    {
-      "itemId": "9179",
-      "name": "Steel crossbow",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "4230",
-      "drop_ammo": "true",
-      "ammunition": "877,878,6061,6062,879,9140,9236,9141,9288,9295,9302,9336,9239,13280"
-    },
-    {
-      "itemId": "9181",
-      "name": "Mith crossbow",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "4230",
-      "drop_ammo": "true",
-      "ammunition": "877,878,6061,6062,879,9236,9141,9288,9295,9302,9336,9239,13083,13084,13085,13086,9142,9289,9296,9303,9337,9240,9338,9140,9241,13280"
-    },
-    {
-      "itemId": "9183",
-      "name": "Adamant crossbow",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "4230",
-      "drop_ammo": "true",
-      "ammunition": "877,878,6061,6062,879,9236,9141,9288,9295,9302,9336,9239,13083,13084,13085,13086,9142,9289,9296,9303,9337,9240,9338,9241,9143,9290,9297,9304,9339,9242,9340,9243,13280"
-    },
-    {
-      "itemId": "9185",
-      "name": "Rune crossbow",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "4230",
-      "drop_ammo": "true",
-      "ammunition": "877,878,6061,6062,879,9236,9141,9288,9295,9302,9336,9239,9236,9237,9238,9239,9240,9241,9242,9243,9244,9245,13083,13084,13085,13086,9142,9289,9296,9303,9337,9240,9338,9241,9143,9290,9297,9304,9339,9242,9340,9243,9144,9291,9298,9305,9341,9244,9342,9245,9140,13280"
-    },
-    {
-      "itemId": "9705",
-      "name": "Training bow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "9706"
-    },
-    {
-      "itemId": "10033",
-      "name": "Chinchompa",
-      "ammo_slot": "3",
-      "weapon_type": "6",
-      "animation": "2779",
-      "drop_ammo": "0",
-      "ammunition": "10034"
-    },
-    {
-      "itemId": "10034",
-      "name": "Red chinchompa",
-      "ammo_slot": "3",
-      "weapon_type": "6",
-      "animation": "2779",
-      "drop_ammo": "0",
-      "ammunition": "10034"
-    },
-    {
-      "itemId": "10156",
-      "name": "Hunters\\' crossbow",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "4230",
-      "drop_ammo": "true",
-      "ammunition": "10158,10159"
-    },
-    {
-      "itemId": "10280",
-      "name": "Willow comp bow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536"
-    },
-    {
-      "itemId": "10282",
-      "name": "Yew comp bow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78"
-    },
-    {
-      "itemId": "10284",
-      "name": "Magic comp bow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78,4160"
-    },
-    {
-      "itemId": "11165",
-      "name": "Phoenix crossbow",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "4230",
-      "drop_ammo": "true",
-      "ammunition": "877,878,6061,6062,879,9236,13280"
-    },
-    {
-      "itemId": "11167",
-      "name": "Phoenix crossbow",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "4230",
-      "drop_ammo": "true",
-      "ammunition": "877,878,6061,6062,879,9236,13280"
-    },
-    {
-      "itemId": "11230",
-      "name": "Dragon dart",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "11230"
-    },
-    {
-      "itemId": "11231",
-      "name": "Dragon dart(p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "11231"
-    },
-    {
-      "itemId": "11233",
-      "name": "Dragon dart(p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "11233"
-    },
-    {
-      "itemId": "11234",
-      "name": "Dragon dart(p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "6600",
-      "drop_ammo": "true",
-      "ammunition": "11234"
-    },
-    {
-      "itemId": "11235",
-      "name": "Dark bow",
-      "ammo_slot": "13",
-      "weapon_type": "2",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,11212,11227,11228,11229,11217,78,4160"
-    },
-    {
-      "itemId": "13081",
-      "name": "Black crossbow",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "4230",
-      "drop_ammo": "true",
-      "ammunition": "877,878,6061,6062,879,9236,9141,9288,9295,9302,9140,9336,9239,13083,13084,13085,13086,13280"
-    },
-    {
-      "itemId": "13405",
-      "name": "Dark bow",
-      "ammo_slot": "13",
-      "weapon_type": "2",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,11212,11227,11228,11229,11217,78,4160"
-    },
-    {
-      "itemId": "13523",
-      "name": "Maple longbow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538"
-    },
-    {
-      "itemId": "13524",
-      "name": "Maple shortbow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538"
-    },
-    {
-      "itemId": "13525",
-      "name": "Yew longbow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78"
-    },
-    {
-      "itemId": "13526",
-      "name": "Yew shortbow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78"
-    },
-    {
-      "itemId": "13527",
-      "name": "Magic longbow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78,4160"
-    },
-    {
-      "itemId": "13528",
-      "name": "Magic shortbow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78,4160"
-    },
-    {
-      "itemId": "13529",
-      "name": "Seercull",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78,4160"
-    },
-    {
-      "itemId": "13530",
-      "name": "Rune crossbow",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "4230",
-      "drop_ammo": "true",
-      "ammunition": "877,878,6061,6062,879,9236,9237,9238,9239,9240,9241,9242,9243,9244,9245,9141,9288,9295,9302,9336,9239,13083,13084,13085,13086,9142,9289,9296,9303,9337,9240,9338,9241,9143,9290,9297,9304,9339,9242,9340,9243,9144,9291,9298,9305,9341,9244,9342,9245,13280"
-    },
-    {
-      "itemId": "13541",
-      "name": "Willow comp bow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536"
-    },
-    {
-      "itemId": "13542",
-      "name": "Yew comp bow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78"
-    },
-    {
-      "itemId": "13543",
-      "name": "Magic comp bow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78,4160"
-    },
-    {
-      "itemId": "13879",
-      "name": "Morrigan\\'s javelin",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "10501",
-      "drop_ammo": "true",
-      "ammunition": "13879"
-    },
-    {
-      "itemId": "13880",
-      "name": "Morrigan\\'s javelin(p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "10501",
-      "drop_ammo": "true",
-      "ammunition": "13880"
-    },
-    {
-      "itemId": "13881",
-      "name": "Morrigan\\'s javelin(p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "10501",
-      "drop_ammo": "true",
-      "ammunition": "13881"
-    },
-    {
-      "itemId": "13882",
-      "name": "Morrigan\\'s javelin(p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "10501",
-      "drop_ammo": "true",
-      "ammunition": "13882"
-    },
-    {
-      "itemId": "13883",
-      "name": "Morrigan\\'s throwing axe",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "10504",
-      "drop_ammo": "true",
-      "ammunition": "13883"
-    },
-    {
-      "itemId": "13953",
-      "name": "Corrupt morrigan\\'s javelin",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "10501",
-      "drop_ammo": "true",
-      "ammunition": "13953"
-    },
-    {
-      "itemId": "13954",
-      "name": "C. morrigan\\'s javelin (p)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "10501",
-      "drop_ammo": "true",
-      "ammunition": "13954"
-    },
-    {
-      "itemId": "13955",
-      "name": "C. morrigan\\'s javelin (p+)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "10501",
-      "drop_ammo": "true",
-      "ammunition": "13955"
-    },
-    {
-      "itemId": "13956",
-      "name": "C. morrigan\\'s javelin (p++)",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "10501",
-      "drop_ammo": "true",
-      "ammunition": "13956"
-    },
-    {
-      "itemId": "13957",
-      "name": "C. morrigan\\'s throwing axe",
-      "ammo_slot": "3",
-      "weapon_type": "3",
-      "animation": "10504",
-      "drop_ammo": "true",
-      "ammunition": "13957"
-    },
-    {
-      "itemId": "14121",
-      "name": "Sacred clay bow",
-      "ammo_slot": "13",
-      "weapon_type": "0",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78,4160"
-    },
-    {
-      "itemId": "14671",
-      "name": "Armadyl crossbow",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "4230",
-      "drop_ammo": "true",
-      "ammunition": "877,878,6061,6062,879,9236,9141,9288,9295,9302,9336,9239,9236,9237,9238,9239,9240,9241,9242,9243,9244,9245,13083,13084,13085,13086,9142,9289,9296,9303,9337,9240,9338,9241,9143,9290,9297,9304,9339,9242,9340,9243,9144,9291,9298,9305,9341,9244,9342,9245,9140,13280"
-    },
-    {
-      "itemId": "14684",
-      "name": "Odium ward",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "4230",
-      "drop_ammo": "true",
-      "ammunition": "8882,877,878,6061,6062,879,9236,9141,9288,9295,9302,9336,9239,13083,13084,13085,13086,9142,9289,9296,9303,9337,9240,9338,9241,9143,9290,9297,9304,9339,9242,9340,9243"
-    },
-    {
-      "itemId": "14685",
-      "name": "Odium shard 1",
-      "ammo_slot": "13",
-      "weapon_type": "1",
-      "animation": "4230",
-      "drop_ammo": "true",
-      "ammunition": "877,878,6061,6062,879,9236"
-    },
-    {
-      "itemId": "14803",
-      "name": "Dark bow",
-      "ammo_slot": "13",
-      "weapon_type": "2",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,11212,11227,11228,11229,11217,78,4160"
-    },
-    {
-      "itemId": "14804",
-      "name": "Dark bow",
-      "ammo_slot": "13",
-      "weapon_type": "2",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,11212,11227,11228,11229,11217,78,4160"
-    },
-    {
-      "itemId": "14805",
-      "name": "Dark bow",
-      "ammo_slot": "13",
-      "weapon_type": "2",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,11212,11227,11228,11229,11217,78,4160"
-    },
-    {
-      "itemId": "14806",
-      "name": "Dark bow",
-      "ammo_slot": "13",
-      "weapon_type": "2",
-      "animation": "426",
-      "drop_ammo": "true",
-      "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,11212,11227,11228,11229,11217,78,4160"
-    }
-  ]
-}
+[
+  {
+    "itemId": "732",
+    "name": "Holy water",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "385",
+    "drop_ammo": "true",
+    "ammunition": "732"
+  },
+  {
+    "itemId": "767",
+    "name": "Phoenix crossbow",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "4230",
+    "drop_ammo": "true",
+    "ammunition": "877,878,6061,6062,879,9236,13280"
+  },
+  {
+    "itemId": "800",
+    "name": "Bronze thrownaxe",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "800"
+  },
+  {
+    "itemId": "801",
+    "name": "Iron thrownaxe",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "801"
+  },
+  {
+    "itemId": "802",
+    "name": "Steel thrownaxe",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "802"
+  },
+  {
+    "itemId": "803",
+    "name": "Mithril thrownaxe",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "803"
+  },
+  {
+    "itemId": "804",
+    "name": "Adamant thrownaxe",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "804"
+  },
+  {
+    "itemId": "805",
+    "name": "Rune thrownaxe",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "805"
+  },
+  {
+    "itemId": "806",
+    "name": "Bronze dart",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "806"
+  },
+  {
+    "itemId": "807",
+    "name": "Iron dart",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "807"
+  },
+  {
+    "itemId": "808",
+    "name": "Steel dart",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "808"
+  },
+  {
+    "itemId": "809",
+    "name": "Mithril dart",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "809"
+  },
+  {
+    "itemId": "810",
+    "name": "Adamant dart",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "810"
+  },
+  {
+    "itemId": "811",
+    "name": "Rune dart",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "811"
+  },
+  {
+    "itemId": "812",
+    "name": "Bronze dart(p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "812"
+  },
+  {
+    "itemId": "813",
+    "name": "Iron dart(p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "813"
+  },
+  {
+    "itemId": "814",
+    "name": "Steel dart(p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "814"
+  },
+  {
+    "itemId": "815",
+    "name": "Mithril dart(p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "815"
+  },
+  {
+    "itemId": "816",
+    "name": "Adamant dart(p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "816"
+  },
+  {
+    "itemId": "817",
+    "name": "Rune dart(p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "817"
+  },
+  {
+    "itemId": "825",
+    "name": "Bronze javelin",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "825"
+  },
+  {
+    "itemId": "826",
+    "name": "Iron javelin",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "826"
+  },
+  {
+    "itemId": "827",
+    "name": "Steel javelin",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "827"
+  },
+  {
+    "itemId": "828",
+    "name": "Mithril javelin",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "828"
+  },
+  {
+    "itemId": "829",
+    "name": "Adamant javelin",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "829"
+  },
+  {
+    "itemId": "830",
+    "name": "Rune javelin",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "830"
+  },
+  {
+    "itemId": "831",
+    "name": "Bronze javelin(p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "831"
+  },
+  {
+    "itemId": "832",
+    "name": "Iron javelin(p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "832"
+  },
+  {
+    "itemId": "833",
+    "name": "Steel javelin(p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "833"
+  },
+  {
+    "itemId": "834",
+    "name": "Mithril javelin(p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "834"
+  },
+  {
+    "itemId": "835",
+    "name": "Adamant javelin(p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "835"
+  },
+  {
+    "itemId": "836",
+    "name": "Rune javelin(p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "836"
+  },
+  {
+    "itemId": "837",
+    "name": "Crossbow",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "4230",
+    "drop_ammo": "true",
+    "ammunition": "877,878,6061,6062,879,9236,13280"
+  },
+  {
+    "itemId": "839",
+    "name": "Longbow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532"
+  },
+  {
+    "itemId": "841",
+    "name": "Shortbow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532"
+  },
+  {
+    "itemId": "843",
+    "name": "Oak shortbow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534"
+  },
+  {
+    "itemId": "845",
+    "name": "Oak longbow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534"
+  },
+  {
+    "itemId": "847",
+    "name": "Willow longbow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536"
+  },
+  {
+    "itemId": "849",
+    "name": "Willow shortbow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536"
+  },
+  {
+    "itemId": "851",
+    "name": "Maple longbow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538"
+  },
+  {
+    "itemId": "853",
+    "name": "Maple shortbow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538"
+  },
+  {
+    "itemId": "855",
+    "name": "Yew longbow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78"
+  },
+  {
+    "itemId": "857",
+    "name": "Yew shortbow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78"
+  },
+  {
+    "itemId": "859",
+    "name": "Magic longbow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78,4160"
+  },
+  {
+    "itemId": "861",
+    "name": "Magic shortbow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78,4160"
+  },
+  {
+    "itemId": "863",
+    "name": "Iron knife",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "863"
+  },
+  {
+    "itemId": "864",
+    "name": "Bronze knife",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "864"
+  },
+  {
+    "itemId": "865",
+    "name": "Steel knife",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "865"
+  },
+  {
+    "itemId": "866",
+    "name": "Mithril knife",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "866"
+  },
+  {
+    "itemId": "867",
+    "name": "Adamant knife",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "867"
+  },
+  {
+    "itemId": "868",
+    "name": "Rune knife",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "868"
+  },
+  {
+    "itemId": "869",
+    "name": "Black knife",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "869"
+  },
+  {
+    "itemId": "870",
+    "name": "Bronze knife(p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "870"
+  },
+  {
+    "itemId": "871",
+    "name": "Iron knife(p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "871"
+  },
+  {
+    "itemId": "872",
+    "name": "Steel knife(p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "872"
+  },
+  {
+    "itemId": "873",
+    "name": "Mithril knife(p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "873"
+  },
+  {
+    "itemId": "874",
+    "name": "Black knife(p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "874"
+  },
+  {
+    "itemId": "875",
+    "name": "Adamant knife(p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "875"
+  },
+  {
+    "itemId": "876",
+    "name": "Rune knife(p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "876"
+  },
+  {
+    "itemId": "2883",
+    "name": "Ogre bow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "2866"
+  },
+  {
+    "itemId": "3093",
+    "name": "Black dart",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "3093"
+  },
+  {
+    "itemId": "3094",
+    "name": "Black dart(p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "3094"
+  },
+  {
+    "itemId": "4212",
+    "name": "New crystal bow",
+    "ammo_slot": "3",
+    "weapon_type": "4",
+    "animation": "426",
+    "drop_ammo": "0",
+    "ammunition": "4212"
+  },
+  {
+    "itemId": "4214",
+    "name": "Crystal bow full",
+    "ammo_slot": "3",
+    "weapon_type": "4",
+    "animation": "426",
+    "drop_ammo": "0",
+    "ammunition": "4214"
+  },
+  {
+    "itemId": "4215",
+    "name": "Crystal bow 9/10",
+    "ammo_slot": "3",
+    "weapon_type": "4",
+    "animation": "426",
+    "drop_ammo": "0",
+    "ammunition": "4215"
+  },
+  {
+    "itemId": "4216",
+    "name": "Crystal bow 8/10",
+    "ammo_slot": "3",
+    "weapon_type": "4",
+    "animation": "426",
+    "drop_ammo": "0",
+    "ammunition": "4216"
+  },
+  {
+    "itemId": "4217",
+    "name": "Crystal bow 7/10",
+    "ammo_slot": "3",
+    "weapon_type": "4",
+    "animation": "426",
+    "drop_ammo": "0",
+    "ammunition": "4217"
+  },
+  {
+    "itemId": "4218",
+    "name": "Crystal bow 6/10",
+    "ammo_slot": "3",
+    "weapon_type": "4",
+    "animation": "426",
+    "drop_ammo": "0",
+    "ammunition": "4218"
+  },
+  {
+    "itemId": "4219",
+    "name": "Crystal bow 5/10",
+    "ammo_slot": "3",
+    "weapon_type": "4",
+    "animation": "426",
+    "drop_ammo": "0",
+    "ammunition": "4219"
+  },
+  {
+    "itemId": "4220",
+    "name": "Crystal bow 4/10",
+    "ammo_slot": "3",
+    "weapon_type": "4",
+    "animation": "426",
+    "drop_ammo": "0",
+    "ammunition": "4220"
+  },
+  {
+    "itemId": "4221",
+    "name": "Crystal bow 3/10",
+    "ammo_slot": "3",
+    "weapon_type": "4",
+    "animation": "426",
+    "drop_ammo": "0",
+    "ammunition": "4221"
+  },
+  {
+    "itemId": "4222",
+    "name": "Crystal bow 2/10",
+    "ammo_slot": "3",
+    "weapon_type": "4",
+    "animation": "426",
+    "drop_ammo": "0",
+    "ammunition": "4222"
+  },
+  {
+    "itemId": "4223",
+    "name": "Crystal bow 1/10",
+    "ammo_slot": "3",
+    "weapon_type": "4",
+    "animation": "426",
+    "drop_ammo": "0",
+    "ammunition": "4223"
+  },
+  {
+    "itemId": "4734",
+    "name": "Karil\\'s crossbow",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "2075",
+    "drop_ammo": "0",
+    "ammunition": "4740"
+  },
+  {
+    "itemId": "4827",
+    "name": "Comp ogre bow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "2866,4773,4778,4783,4788,4793,4798,4803"
+  },
+  {
+    "itemId": "4934",
+    "name": "Karil\\'s x-bow 100",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "2075",
+    "drop_ammo": "0",
+    "ammunition": "4740"
+  },
+  {
+    "itemId": "4935",
+    "name": "Karil\\'s x-bow 75",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "2075",
+    "drop_ammo": "0",
+    "ammunition": "4740"
+  },
+  {
+    "itemId": "4936",
+    "name": "Karil\\'s x-bow 50",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "2075",
+    "drop_ammo": "0",
+    "ammunition": "4740"
+  },
+  {
+    "itemId": "4937",
+    "name": "Karil\\'s x-bow 25",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "2075",
+    "drop_ammo": "0",
+    "ammunition": "4740"
+  },
+  {
+    "itemId": "5628",
+    "name": "Bronze dart(p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "5628"
+  },
+  {
+    "itemId": "5629",
+    "name": "Iron dart(p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "5629"
+  },
+  {
+    "itemId": "5630",
+    "name": "Steel dart(p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "5630"
+  },
+  {
+    "itemId": "5631",
+    "name": "Black dart(p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "5631"
+  },
+  {
+    "itemId": "5632",
+    "name": "Mithril dart(p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "5632"
+  },
+  {
+    "itemId": "5633",
+    "name": "Adamant dart(p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "5633"
+  },
+  {
+    "itemId": "5634",
+    "name": "Rune dart(p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "5634"
+  },
+  {
+    "itemId": "5635",
+    "name": "Bronze dart(p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "5635"
+  },
+  {
+    "itemId": "5636",
+    "name": "Iron dart(p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "5636"
+  },
+  {
+    "itemId": "5637",
+    "name": "Steel dart(p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "5637"
+  },
+  {
+    "itemId": "5638",
+    "name": "Black dart(p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "5638"
+  },
+  {
+    "itemId": "5639",
+    "name": "Mithril dart(p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "5639"
+  },
+  {
+    "itemId": "5640",
+    "name": "Adamant dart(p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "5640"
+  },
+  {
+    "itemId": "5641",
+    "name": "Rune dart(p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "5641"
+  },
+  {
+    "itemId": "5642",
+    "name": "Bronze javelin(p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5642"
+  },
+  {
+    "itemId": "5643",
+    "name": "Iron javelin(p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5643"
+  },
+  {
+    "itemId": "5644",
+    "name": "Steel javelin(p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5644"
+  },
+  {
+    "itemId": "5645",
+    "name": "Mithril javelin(p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5645"
+  },
+  {
+    "itemId": "5646",
+    "name": "Adamant javelin(p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5646"
+  },
+  {
+    "itemId": "5647",
+    "name": "Rune javelin(p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5647"
+  },
+  {
+    "itemId": "5648",
+    "name": "Bronze jav\\'n(p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5648"
+  },
+  {
+    "itemId": "5649",
+    "name": "Iron javelin(p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5649"
+  },
+  {
+    "itemId": "5650",
+    "name": "Steel javelin(p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5650"
+  },
+  {
+    "itemId": "5651",
+    "name": "Mithril javelin(p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5651"
+  },
+  {
+    "itemId": "5652",
+    "name": "Adamant javelin(p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5652"
+  },
+  {
+    "itemId": "5653",
+    "name": "Rune javelin(p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5653"
+  },
+  {
+    "itemId": "5654",
+    "name": "Bronze knife(p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5654"
+  },
+  {
+    "itemId": "5655",
+    "name": "Iron knife(p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5655"
+  },
+  {
+    "itemId": "5656",
+    "name": "Steel knife(p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5656"
+  },
+  {
+    "itemId": "5657",
+    "name": "Mithril knife(p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5657"
+  },
+  {
+    "itemId": "5658",
+    "name": "Black knife(p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5658"
+  },
+  {
+    "itemId": "5659",
+    "name": "Adamant knife(p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5659"
+  },
+  {
+    "itemId": "5660",
+    "name": "Rune knife(p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5660"
+  },
+  {
+    "itemId": "5661",
+    "name": "Bronze knife(p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5661"
+  },
+  {
+    "itemId": "5662",
+    "name": "Iron knife(p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5662"
+  },
+  {
+    "itemId": "5663",
+    "name": "Steel knife(p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5663"
+  },
+  {
+    "itemId": "5664",
+    "name": "Mithril knife(p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5664"
+  },
+  {
+    "itemId": "5665",
+    "name": "Black knife(p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5665"
+  },
+  {
+    "itemId": "5666",
+    "name": "Adamant knife(p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5666"
+  },
+  {
+    "itemId": "5667",
+    "name": "Rune knife(p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "929",
+    "drop_ammo": "true",
+    "ammunition": "5667"
+  },
+  {
+    "itemId": "6522",
+    "name": "Toktz-xil-ul",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "2614",
+    "drop_ammo": "true",
+    "ammunition": "6522"
+  },
+  {
+    "itemId": "6724",
+    "name": "Seercull",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78,4160"
+  },
+  {
+    "itemId": "8880",
+    "name": "Dorgeshuun c\\'bow",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "4230",
+    "drop_ammo": "true",
+    "ammunition": "8882,877,878,6061,6062,879,9236"
+  },
+  {
+    "itemId": "9174",
+    "name": "Bronze crossbow",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "4230",
+    "drop_ammo": "true",
+    "ammunition": "877,878,6061,6062,879,9236,13280"
+  },
+  {
+    "itemId": "9176",
+    "name": "Blurite crossbow",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "4230",
+    "drop_ammo": "true",
+    "ammunition": "877,878,6061,6062,9140,879,9236,13280"
+  },
+  {
+    "itemId": "9177",
+    "name": "Iron crossbow",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "4230",
+    "drop_ammo": "true",
+    "ammunition": "877,878,6061,6062,879,9236,9140,9287,9294,9301,880,9238,13280"
+  },
+  {
+    "itemId": "9179",
+    "name": "Steel crossbow",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "4230",
+    "drop_ammo": "true",
+    "ammunition": "877,878,6061,6062,879,9140,9236,9141,9288,9295,9302,9336,9239,13280"
+  },
+  {
+    "itemId": "9181",
+    "name": "Mith crossbow",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "4230",
+    "drop_ammo": "true",
+    "ammunition": "877,878,6061,6062,879,9236,9141,9288,9295,9302,9336,9239,13083,13084,13085,13086,9142,9289,9296,9303,9337,9240,9338,9140,9241,13280"
+  },
+  {
+    "itemId": "9183",
+    "name": "Adamant crossbow",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "4230",
+    "drop_ammo": "true",
+    "ammunition": "877,878,6061,6062,879,9236,9141,9288,9295,9302,9336,9239,13083,13084,13085,13086,9142,9289,9296,9303,9337,9240,9338,9241,9143,9290,9297,9304,9339,9242,9340,9243,13280"
+  },
+  {
+    "itemId": "9185",
+    "name": "Rune crossbow",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "4230",
+    "drop_ammo": "true",
+    "ammunition": "877,878,6061,6062,879,9236,9141,9288,9295,9302,9336,9239,9236,9237,9238,9239,9240,9241,9242,9243,9244,9245,13083,13084,13085,13086,9142,9289,9296,9303,9337,9240,9338,9241,9143,9290,9297,9304,9339,9242,9340,9243,9144,9291,9298,9305,9341,9244,9342,9245,9140,13280"
+  },
+  {
+    "itemId": "9705",
+    "name": "Training bow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "9706"
+  },
+  {
+    "itemId": "10033",
+    "name": "Chinchompa",
+    "ammo_slot": "3",
+    "weapon_type": "6",
+    "animation": "2779",
+    "drop_ammo": "0",
+    "ammunition": "10034"
+  },
+  {
+    "itemId": "10034",
+    "name": "Red chinchompa",
+    "ammo_slot": "3",
+    "weapon_type": "6",
+    "animation": "2779",
+    "drop_ammo": "0",
+    "ammunition": "10034"
+  },
+  {
+    "itemId": "10156",
+    "name": "Hunters\\' crossbow",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "4230",
+    "drop_ammo": "true",
+    "ammunition": "10158,10159"
+  },
+  {
+    "itemId": "10280",
+    "name": "Willow comp bow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536"
+  },
+  {
+    "itemId": "10282",
+    "name": "Yew comp bow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78"
+  },
+  {
+    "itemId": "10284",
+    "name": "Magic comp bow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78,4160"
+  },
+  {
+    "itemId": "11165",
+    "name": "Phoenix crossbow",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "4230",
+    "drop_ammo": "true",
+    "ammunition": "877,878,6061,6062,879,9236,13280"
+  },
+  {
+    "itemId": "11167",
+    "name": "Phoenix crossbow",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "4230",
+    "drop_ammo": "true",
+    "ammunition": "877,878,6061,6062,879,9236,13280"
+  },
+  {
+    "itemId": "11230",
+    "name": "Dragon dart",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "11230"
+  },
+  {
+    "itemId": "11231",
+    "name": "Dragon dart(p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "11231"
+  },
+  {
+    "itemId": "11233",
+    "name": "Dragon dart(p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "11233"
+  },
+  {
+    "itemId": "11234",
+    "name": "Dragon dart(p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "6600",
+    "drop_ammo": "true",
+    "ammunition": "11234"
+  },
+  {
+    "itemId": "11235",
+    "name": "Dark bow",
+    "ammo_slot": "13",
+    "weapon_type": "2",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,11212,11227,11228,11229,11217,78,4160"
+  },
+  {
+    "itemId": "13081",
+    "name": "Black crossbow",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "4230",
+    "drop_ammo": "true",
+    "ammunition": "877,878,6061,6062,879,9236,9141,9288,9295,9302,9140,9336,9239,13083,13084,13085,13086,13280"
+  },
+  {
+    "itemId": "13405",
+    "name": "Dark bow",
+    "ammo_slot": "13",
+    "weapon_type": "2",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,11212,11227,11228,11229,11217,78,4160"
+  },
+  {
+    "itemId": "13523",
+    "name": "Maple longbow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538"
+  },
+  {
+    "itemId": "13524",
+    "name": "Maple shortbow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538"
+  },
+  {
+    "itemId": "13525",
+    "name": "Yew longbow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78"
+  },
+  {
+    "itemId": "13526",
+    "name": "Yew shortbow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78"
+  },
+  {
+    "itemId": "13527",
+    "name": "Magic longbow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78,4160"
+  },
+  {
+    "itemId": "13528",
+    "name": "Magic shortbow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78,4160"
+  },
+  {
+    "itemId": "13529",
+    "name": "Seercull",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78,4160"
+  },
+  {
+    "itemId": "13530",
+    "name": "Rune crossbow",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "4230",
+    "drop_ammo": "true",
+    "ammunition": "877,878,6061,6062,879,9236,9237,9238,9239,9240,9241,9242,9243,9244,9245,9141,9288,9295,9302,9336,9239,13083,13084,13085,13086,9142,9289,9296,9303,9337,9240,9338,9241,9143,9290,9297,9304,9339,9242,9340,9243,9144,9291,9298,9305,9341,9244,9342,9245,13280"
+  },
+  {
+    "itemId": "13541",
+    "name": "Willow comp bow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536"
+  },
+  {
+    "itemId": "13542",
+    "name": "Yew comp bow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78"
+  },
+  {
+    "itemId": "13543",
+    "name": "Magic comp bow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78,4160"
+  },
+  {
+    "itemId": "13879",
+    "name": "Morrigan\\'s javelin",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "10501",
+    "drop_ammo": "true",
+    "ammunition": "13879"
+  },
+  {
+    "itemId": "13880",
+    "name": "Morrigan\\'s javelin(p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "10501",
+    "drop_ammo": "true",
+    "ammunition": "13880"
+  },
+  {
+    "itemId": "13881",
+    "name": "Morrigan\\'s javelin(p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "10501",
+    "drop_ammo": "true",
+    "ammunition": "13881"
+  },
+  {
+    "itemId": "13882",
+    "name": "Morrigan\\'s javelin(p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "10501",
+    "drop_ammo": "true",
+    "ammunition": "13882"
+  },
+  {
+    "itemId": "13883",
+    "name": "Morrigan\\'s throwing axe",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "10504",
+    "drop_ammo": "true",
+    "ammunition": "13883"
+  },
+  {
+    "itemId": "13953",
+    "name": "Corrupt morrigan\\'s javelin",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "10501",
+    "drop_ammo": "true",
+    "ammunition": "13953"
+  },
+  {
+    "itemId": "13954",
+    "name": "C. morrigan\\'s javelin (p)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "10501",
+    "drop_ammo": "true",
+    "ammunition": "13954"
+  },
+  {
+    "itemId": "13955",
+    "name": "C. morrigan\\'s javelin (p+)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "10501",
+    "drop_ammo": "true",
+    "ammunition": "13955"
+  },
+  {
+    "itemId": "13956",
+    "name": "C. morrigan\\'s javelin (p++)",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "10501",
+    "drop_ammo": "true",
+    "ammunition": "13956"
+  },
+  {
+    "itemId": "13957",
+    "name": "C. morrigan\\'s throwing axe",
+    "ammo_slot": "3",
+    "weapon_type": "3",
+    "animation": "10504",
+    "drop_ammo": "true",
+    "ammunition": "13957"
+  },
+  {
+    "itemId": "14121",
+    "name": "Sacred clay bow",
+    "ammo_slot": "13",
+    "weapon_type": "0",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,78,4160"
+  },
+  {
+    "itemId": "14671",
+    "name": "Armadyl crossbow",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "4230",
+    "drop_ammo": "true",
+    "ammunition": "877,878,6061,6062,879,9236,9141,9288,9295,9302,9336,9239,9236,9237,9238,9239,9240,9241,9242,9243,9244,9245,13083,13084,13085,13086,9142,9289,9296,9303,9337,9240,9338,9241,9143,9290,9297,9304,9339,9242,9340,9243,9144,9291,9298,9305,9341,9244,9342,9245,9140,13280"
+  },
+  {
+    "itemId": "14684",
+    "name": "Odium ward",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "4230",
+    "drop_ammo": "true",
+    "ammunition": "8882,877,878,6061,6062,879,9236,9141,9288,9295,9302,9336,9239,13083,13084,13085,13086,9142,9289,9296,9303,9337,9240,9338,9241,9143,9290,9297,9304,9339,9242,9340,9243"
+  },
+  {
+    "itemId": "14685",
+    "name": "Odium shard 1",
+    "ammo_slot": "13",
+    "weapon_type": "1",
+    "animation": "4230",
+    "drop_ammo": "true",
+    "ammunition": "877,878,6061,6062,879,9236"
+  },
+  {
+    "itemId": "14803",
+    "name": "Dark bow",
+    "ammo_slot": "13",
+    "weapon_type": "2",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,11212,11227,11228,11229,11217,78,4160"
+  },
+  {
+    "itemId": "14804",
+    "name": "Dark bow",
+    "ammo_slot": "13",
+    "weapon_type": "2",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,11212,11227,11228,11229,11217,78,4160"
+  },
+  {
+    "itemId": "14805",
+    "name": "Dark bow",
+    "ammo_slot": "13",
+    "weapon_type": "2",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,11212,11227,11228,11229,11217,78,4160"
+  },
+  {
+    "itemId": "14806",
+    "name": "Dark bow",
+    "ammo_slot": "13",
+    "weapon_type": "2",
+    "animation": "426",
+    "drop_ammo": "true",
+    "ammunition": "882,883,5616,5622,598,884,885,5617,5623,2532,886,887,5618,5624,2534,888,889,5619,5625,2536,890,891,5620,5626,2538,892,893,5621,5627,2540,11212,11227,11228,11229,11217,78,4160"
+  }
+]

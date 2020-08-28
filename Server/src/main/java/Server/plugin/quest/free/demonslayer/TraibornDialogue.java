@@ -23,7 +23,7 @@ public class TraibornDialogue extends DialoguePlugin {
 	/**
 	 * Represents the bones item.
 	 */
-	private static final Item BONES = new Item(526, 25);
+	private static final Item[] BONES = {new Item(526, 25), new Item(2530, 25)};
 
 	/**
 	 * Represents the animation of giving the key.
@@ -169,7 +169,7 @@ public class TraibornDialogue extends DialoguePlugin {
 				end();
 				break;
 			case 380:
-				if (player.getInventory().containsItem(BONES)) {
+				if (player.getInventory().containsItem(BONES[0]) || player.getInventory().containsItem(BONES[1])) {
 					player("I have some bones.");
 					stage = 382;
 				} else {
@@ -199,11 +199,11 @@ public class TraibornDialogue extends DialoguePlugin {
 				ObjectBuilder.add(object);
 				npc.faceLocation(object.getLocation());
 				npc.animate(ANIMATION);
-				if (!player.getInventory().containsItem(BONES)) {
+				if (!player.getInventory().containsItem(BONES[0]) && !player.getInventory().containsItem(BONES[1])) {
 					end();
 					return true;
 				}
-				if (player.getInventory().remove(BONES)) {
+				if (player.getInventory().remove(BONES[0]) || player.getInventory().remove(BONES[1])) {
 					player.removeAttribute("demon-slayer:traiborn");
 					player.getInventory().add(DemonSlayer.THIRD_KEY);
 					interpreter.sendItemMessage(DemonSlayer.THIRD_KEY.getId(), "Traiborn hands you a key.");

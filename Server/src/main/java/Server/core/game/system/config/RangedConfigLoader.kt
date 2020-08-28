@@ -23,8 +23,7 @@ class RangedConfigLoader {
     fun load(){
         var count = 0
         reader = FileReader(ServerConstants.CONFIG_PATH + "ammo_configs.json")
-        var obj = parser.parse(reader) as JSONObject
-        var configs = obj["ammo_configs"] as JSONArray
+        var configs = parser.parse(reader) as JSONArray
         for(entry in configs){
             val e = entry as JSONObject
             var dbowgfx: Graphics? = null
@@ -60,8 +59,7 @@ class RangedConfigLoader {
 
         count = 0
         reader = FileReader(ServerConstants.CONFIG_PATH + "ranged_weapon_configs.json")
-        obj = parser.parse(reader) as JSONObject
-        configs = obj["ranged_weapon_configs"] as JSONArray
+        configs = parser.parse(reader) as JSONArray
         for(entry in configs){
             val e = entry as JSONObject
             val id = Integer.parseInt(e["itemId"].toString())
