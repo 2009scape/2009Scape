@@ -220,7 +220,7 @@ abstract class GameObject {
       try {
          Class101.aClass3_Sub24_Sub4_1421.method505((byte)-128);
          Class10.anInt154 = 1;
-         if(!false) {
+         if(true) {
             Class101.aClass153_1423 = null;
          }
       } catch (RuntimeException var2) {

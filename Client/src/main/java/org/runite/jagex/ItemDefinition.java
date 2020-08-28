@@ -3828,15 +3828,13 @@ final class ItemDefinition {
 					int i66 = Class140_Sub7.anIntArray2929[k - -1];
 					int j43 = Class140_Sub7.anIntArray2929[k];
 					int k75 = 0;
-					do {
-						if (Class3_Sub26.anIntArray2559.length <= k75)
-							break;
+					while (Class3_Sub26.anIntArray2559.length > k75) {
 						if (j43 == Class3_Sub26.anIntArray2559[k75]) {
 							Class102.player.class52.method1164(k75, i66);
 							continue label0;
 						}
 						k75++;
-					} while (true);
+					}
 					k75 = 0;
 					do {
 						if (Class3_Sub13_Sub19.anIntArray3228.length <= k75)

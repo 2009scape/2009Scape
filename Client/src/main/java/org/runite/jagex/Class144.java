@@ -27,7 +27,7 @@ abstract class Class144 {
 
    static void method2067() {
       try {
-         if(!false) {
+         if(true) {
             for(Class3_Sub28_Sub2 var1 = (Class3_Sub28_Sub2)Class3_Sub13_Sub15.aClass61_3177.method1222(); null != var1; var1 = (Class3_Sub28_Sub2)Class3_Sub13_Sub15.aClass61_3177.method1221()) {
                Class140_Sub2 var2 = var1.aClass140_Sub2_3545;
                if(WorldListCountry.localPlane == var2.anInt2717 && !var2.aBoolean2718) {

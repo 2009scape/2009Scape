@@ -609,7 +609,7 @@ final class Class82 {
             }
          }
 
-         if(!true) {
+         if(false) {
             this.anIntArray1144 = (int[])null;
          }
 

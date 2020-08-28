@@ -25,7 +25,7 @@ final class Class79 {
    static int method1386(KeyEvent var1) {
       try {
          int var2 = var1.getKeyChar();
-         if(!true) {
+         if(false) {
             return -90;
          } else if(8364 == var2) {
             return 128;

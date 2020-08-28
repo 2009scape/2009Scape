@@ -27,7 +27,7 @@ final class Class3_Sub28_Sub7_Sub1 extends Class3_Sub28_Sub7 {
 
    final Object method567() {
       try {
-         return !true ?(Object)null:this.anObject4044;
+         return false ?(Object)null:this.anObject4044;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "he.B(" + true + ')');
       }

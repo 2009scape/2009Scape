@@ -80,7 +80,7 @@ class Class38 {
 
    static int method1026(byte[] var0, int var1) {
       try {
-         return false ?-3:Class99.method1599(0, var1, var0, (byte)-35);
+         return Class99.method1599(0, var1, var0, (byte)-35);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "fk.H(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + false + ')');
       }

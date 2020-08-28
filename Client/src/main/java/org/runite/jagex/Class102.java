@@ -27,7 +27,7 @@ final class Class102 implements Interface2 {
 
    final void method1610(int var2) {
       try {
-         if(!true) {
+         if(false) {
             this.method7((byte)113, 17);
          }
 
@@ -54,7 +54,7 @@ final class Class102 implements Interface2 {
          int var10;
          for(var2 = 0; var2 < Class163.localNPCCount; ++var2) {
             var3 = Class3_Sub13_Sub24.npcs[Class15.localNPCIndexes[var2]];
-            if(null != var3 && var3.hasDefinitions((byte)17) && !var3.definition.aBoolean1263 != var1 && var3.definition.method1472()) {
+            if(null != var3 && var3.hasDefinitions((byte)17) && var3.definition.aBoolean1263 == var1 && var3.definition.method1472()) {
                int var4 = var3.getSize();
                int var5;
                if(1 != var4) {

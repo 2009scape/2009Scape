@@ -339,7 +339,7 @@ final class Class2 {
 			++CacheIndex.anInt1944;
 			Class3_Sub13_Sub1.outgoingBuffer.putOpcode(132);
 			Class3_Sub13_Sub1.outgoingBuffer.putIntA(var2);
-			if(!false) {
+			if(true) {
 				Class3_Sub13_Sub1.outgoingBuffer.putLEShort(-1, var0);
 			}
 		} catch (RuntimeException var4) {

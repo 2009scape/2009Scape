@@ -64,7 +64,7 @@ final class Class3_Sub10 extends Class3 {
 
    static void method142() {
       try {
-         if(!true) {
+         if(false) {
             aByteArrayArrayArray2339 = (byte[][][])((byte[][][])null);
          }
 

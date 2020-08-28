@@ -51,7 +51,7 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
             }
          }
 
-         if(!true) {
+         if(false) {
             aBoolean4018 = true;
          }
 

@@ -32,7 +32,7 @@ final class Canvas_Sub1 extends Canvas implements FocusListener {
 
    static int method54(int var0) {
       try {
-         return false ?-81:var0 & 127;
+         return var0 & 127;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "oe.A(" + var0 + ',' + false + ')');
       }

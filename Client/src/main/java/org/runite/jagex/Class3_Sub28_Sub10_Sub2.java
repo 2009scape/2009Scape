@@ -16,7 +16,7 @@ final class Class3_Sub28_Sub10_Sub2 extends Class3_Sub28_Sub10 {
 
    final int method586() {
       try {
-         return false ?92:(this.aClass3_Sub30_4069 == null?0:this.aClass3_Sub30_4069.index * 100 / (-this.aByte4064 + this.aClass3_Sub30_4069.buffer.length));
+         return (this.aClass3_Sub30_4069 == null?0:this.aClass3_Sub30_4069.index * 100 / (-this.aByte4064 + this.aClass3_Sub30_4069.buffer.length));
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "pm.A(" + false + ')');
       }

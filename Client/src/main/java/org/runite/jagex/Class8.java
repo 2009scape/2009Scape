@@ -163,7 +163,7 @@ final class Class8 {
             GameObject.aClass11Array1836 = null;
          }
 
-         if(!true) {
+         if(false) {
             method844((byte)-24);
          }
 

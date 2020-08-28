@@ -465,7 +465,7 @@ final class NPCDefinition {
             return var2;
          } else {
             Class3_Sub29 var4 = (Class3_Sub29)this.aClass130_1272.method1780((long)var1, 0);
-            return !true ?(RSString)null:(null == var4?var2:var4.aClass94_2586);
+            return false ?(RSString)null:(null == var4?var2:var4.aClass94_2586);
          }
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "me.I(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + true + ')');

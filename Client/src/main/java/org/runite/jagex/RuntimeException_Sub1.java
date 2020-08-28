@@ -16,7 +16,7 @@ final class RuntimeException_Sub1 extends RuntimeException {
    static void method2285(int var0, int var1, int var2, int var3, int var5) {
       try {
          Class3_Sub29.anInt2587 = var1;
-         if(!false) {
+         if(true) {
             Class3_Sub13_Sub8.anInt3103 = var5;
             Class140_Sub7.anInt2938 = var0;
             Class9.anInt144 = var3;

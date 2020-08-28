@@ -122,7 +122,7 @@ abstract class Class44 {
 
 	final boolean method1072() {
 		try {
-			return true && (this.settings & 4) != 0;
+			return (this.settings & 4) != 0;
 		} catch (RuntimeException var3) {
 			throw clientError(var3, "gj.G(" + false + ')');
 		}

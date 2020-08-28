@@ -1200,7 +1200,7 @@ final class Class47 {
          if(var2 == -1) {
             return 12345678;
          } else {
-            if(!true) {
+            if(false) {
                method1088(true);
             }
 

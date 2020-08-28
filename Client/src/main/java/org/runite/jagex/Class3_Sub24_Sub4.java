@@ -168,7 +168,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
 
    static void method477(int var0, int var2, RSInterface var3) {
       try {
-         if(!true) {
+         if(false) {
             method487(98, (byte)74);
          }
 

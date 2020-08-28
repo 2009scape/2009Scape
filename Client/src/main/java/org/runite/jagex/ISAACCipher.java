@@ -16,7 +16,7 @@ final class ISAACCipher {
 
    private void method1227() {
       try {
-         if(!true) {
+         if(false) {
             this.method1229(82);
          }
 

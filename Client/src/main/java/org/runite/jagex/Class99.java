@@ -54,7 +54,7 @@ final class Class99 {
                boolean var7 = false;
 
                for(int var8 = 0; var6.length > var8; ++var8) {
-                  if(var4 == var6[var8].anInt1447 && var3 == var6[var8].anInt1449 && (0 == 0 || 0 == var6[var8].anInt1448) && (!var7 || var6[var8].anInt1450 > var2)) {
+                  if(var4 == var6[var8].anInt1447 && var3 == var6[var8].anInt1449 && (!var7 || var6[var8].anInt1450 > var2)) {
                      var2 = var6[var8].anInt1450;
                      var7 = true;
                   }

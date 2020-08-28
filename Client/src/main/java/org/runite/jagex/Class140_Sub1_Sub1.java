@@ -1719,7 +1719,7 @@ final class Class140_Sub1_Sub1 extends Model {
       } else if(this.anInt3833 != 0) {
          if(var7) {
             boolean var8 = !this.aClass121_3814.aBoolean1640 && (var2 || var3 && !Class106.aBoolean1441);
-            this.method1922(false, !this.aClass121_3839.aBoolean1640 && var1, var8, this.aClass121_3815 != null && !this.aClass121_3815.aBoolean1640 && var3, !this.aClass121_3817.aBoolean1640 && true);
+            this.method1922(false, !this.aClass121_3839.aBoolean1640 && var1, var8, this.aClass121_3815 != null && !this.aClass121_3815.aBoolean1640 && var3, !this.aClass121_3817.aBoolean1640);
             if(!this.aClass121_3846.aBoolean1640 && var5 && var2) {
                this.method1912();
             }
@@ -2388,7 +2388,7 @@ final class Class140_Sub1_Sub1 extends Model {
          var12.aByteArray3816 = Class108.method1655(this.aByteArray3816);
       }
 
-      if(var3 && true && var5 && (var8 && var6 || Class106.aBoolean1441)) {
+      if(var3 && var5 && (var8 && var6 || Class106.aBoolean1441)) {
          var12.aClass121_3814 = this.aClass121_3814;
       } else {
          var12.aClass121_3814 = new Class121();

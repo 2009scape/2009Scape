@@ -213,11 +213,11 @@ final class Class39 {
 					if (sb.toString().equals("00-00-00-00-00-00-00-E0")) {
 						continue;
 					}
-					if(sb.toString().isEmpty()==false){
+					if(!sb.toString().isEmpty()){
 						addressByNetwork.put(network.getName(), sb.toString());
 					}
 
-					if(sb.toString().isEmpty()==false && firstInterface == null){
+					if(!sb.toString().isEmpty() && firstInterface == null){
 						firstInterface = network.getName();
 					}
 				}

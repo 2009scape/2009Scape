@@ -76,7 +76,7 @@ final class Class97 {
             method1591(var2);
          }
 
-         if(!true) {
+         if(false) {
             anInt1375 = -103;
          }
 

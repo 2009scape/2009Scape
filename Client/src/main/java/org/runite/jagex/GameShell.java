@@ -94,7 +94,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 
    static RSString method27(RSString var0) {
       try {
-         if(!true) {
+         if(false) {
             method26(-78);
          }
 
@@ -125,7 +125,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
    static void method28() {
       try {
          Class143.aClass93_1874.method1524();
-         if(!true) {
+         if(false) {
             aBoolean11 = false;
          }
 
@@ -368,7 +368,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	         Class134.aLongArray1766[CacheIndex.anInt1953] = var2;
 	         CacheIndex.anInt1953 = 31 & CacheIndex.anInt1953 - -1;
 	         synchronized(this) {
-	            if(!true) {
+	            if(false) {
 	               this.start();
 	            }
 

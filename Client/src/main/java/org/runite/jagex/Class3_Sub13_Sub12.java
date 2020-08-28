@@ -13,7 +13,7 @@ final class Class3_Sub13_Sub12 extends Class3_Sub13 {
          if(var7 == var4) {
             IOHandler.method1460(var1, var3, var6, var7, var2, var5);
          } else {
-            if(!true) {
+            if(false) {
                method226(87, 8);
             }
 

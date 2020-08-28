@@ -10,7 +10,7 @@ abstract class Class118 {
 
    static RSString method1723(byte var0, boolean var1, int var3) {
       try {
-         if(10 >= 2 && 36 >= 10) {
+         if(true) {
             int var4 = 1;
 
             for(int var5 = var3 / 10; 0 != var5; ++var4) {

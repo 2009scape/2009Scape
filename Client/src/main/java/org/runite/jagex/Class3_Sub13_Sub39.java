@@ -204,7 +204,7 @@ final class Class3_Sub13_Sub39 extends Class3_Sub13 {
    private void method355() {
       try {
          int[] var2 = this.anIntArrayArray3469[0];
-         if(!true) {
+         if(false) {
             this.anIntArray3467 = (int[])null;
          }
 

@@ -120,7 +120,7 @@ final class Class3_Sub1 extends Class3 {
 
    final boolean method93() {
       try {
-         return 572878952 != 572878952 || 0 != (572878952 & this.anInt2205) >> 29;
+         return 0 != (572878952 & this.anInt2205) >> 29;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "bf.S(" + 572878952 + ')');
       }
@@ -160,7 +160,7 @@ final class Class3_Sub1 extends Class3 {
 
    final boolean method97() {
       try {
-         return -20710 != -20710 || 0 != (1 & this.anInt2205 >> 22);
+         return 0 != (1 & this.anInt2205 >> 22);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "bf.R(" + -20710 + ')');
       }
@@ -201,7 +201,7 @@ final class Class3_Sub1 extends Class3 {
 
    final boolean method100() {
       try {
-         return (byte) -9 != -9 || (this.anInt2205 & 455226656) >> 28 != 0;
+         return (this.anInt2205 & 455226656) >> 28 != 0;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "bf.O(" + (byte) -9 + ')');
       }

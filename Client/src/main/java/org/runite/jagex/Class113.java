@@ -27,7 +27,7 @@ final class Class113 {
 
    static void method1702(boolean var1) {
       try {
-         if(!var1 != !Class14.aBoolean337) {
+         if(var1 == !Class14.aBoolean337) {
             Class14.aBoolean337 = var1;
             Class3_Sub10.method139(76);
          }

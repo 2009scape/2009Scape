@@ -247,7 +247,7 @@ final class Class3_Sub28_Sub20 extends Node {
 
    final boolean method722(Interface2 var2, CacheIndex var3) {
       try {
-         return -5 != -5 || this.aClass82_3790.method1408(var2, var3);
+         return this.aClass82_3790.method1408(var2, var3);
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "uh.P(" + -5 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ')');
       }

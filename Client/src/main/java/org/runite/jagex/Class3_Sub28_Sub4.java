@@ -16,7 +16,7 @@ final class Class3_Sub28_Sub4 extends Node {
 
    final void method545(RSByteBuffer var1, int[] var2) {
       try {
-         if(!false) {
+         if(true) {
             if(this.anIntArray3566 != null) {
                for(int var4 = 0; var4 < this.anIntArray3566.length && var2.length > var4; ++var4) {
                   int var5 = RuntimeException_Sub1.anIntArray2113[this.method550(89, var4)];
@@ -144,7 +144,7 @@ final class Class3_Sub28_Sub4 extends Node {
 
    final int method552() {
       try {
-         return !true ?-22:(this.anIntArray3566 != null?this.anIntArray3566.length:0);
+         return false ?-22:(this.anIntArray3566 != null?this.anIntArray3566.length:0);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "cb.E(" + true + ')');
       }

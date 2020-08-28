@@ -552,18 +552,15 @@ static boolean aBoolean1080 = false;
 
             Class3_Sub28_Sub10_Sub1 var6 = (Class3_Sub28_Sub10_Sub1)this.aClass13_1086.method876((byte)100);
 
-            while(true) {
-               if(var6 == null) {
-                  break;
-               }
+            while (var6 != null) {
 
-               if((long) var3 == var6.aLong2569 && var6.aClass41_4056 == var1 && var6.anInt4061 == 2) {
+               if ((long) var3 == var6.aLong2569 && var6.aClass41_4056 == var1 && var6.anInt4061 == 2) {
                   var4.aByteArray4059 = var6.aByteArray4059;
                   var4.aBoolean3632 = false;
                   return var4;
                }
 
-               var6 = (Class3_Sub28_Sub10_Sub1)this.aClass13_1086.method878(29);
+               var6 = (Class3_Sub28_Sub10_Sub1) this.aClass13_1086.method878(29);
             }
          }
 

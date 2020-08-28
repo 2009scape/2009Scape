@@ -70,7 +70,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
    static void method230(int[][] var0) {
       try {
          Class38.anIntArrayArray663 = var0;
-         if(!true) {
+         if(false) {
             method234(20);
          }
 
@@ -412,7 +412,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                   Class3_Sub13_Sub1.outgoingBuffer.putLEShort(-1, GraphicDefinition.CAMERA_DIRECTION);
                }
 
-               if(!Class3_Sub13_Sub6.aBoolean3078 != true && !Class140_Sub4.aBoolean2774) {
+               if(!!Class3_Sub13_Sub6.aBoolean3078 && !Class140_Sub4.aBoolean2774) {
                   ++Class3_Sub13_Sub15.anInt3187;
                   Class140_Sub4.aBoolean2774 = true;
                   Class3_Sub13_Sub1.outgoingBuffer.putOpcode(22);
@@ -506,7 +506,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                            } else if (var3 == 7) {
                               var20 = Class7.getRSInterface((byte) 124, var4);
                               boolean var24 = var16.anInt3598 == 1;
-                              if (var20 != null && !var24 != !var20.hidden) {
+                              if (var20 != null && var24 == !var20.hidden) {
                                  var20.hidden = var24;
                                  Class20.method909(119, var20);
                               }
@@ -898,7 +898,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
 
                                        try {
                                           if(Class3_Sub15.aClass89_2429 != null && Class3_Sub13_Sub1.outgoingBuffer.index > 0) {
-                                             Class3_Sub15.aClass89_2429.sendBytes(!true, Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index);
+                                             Class3_Sub15.aClass89_2429.sendBytes(false, Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index);
                                              Class3_Sub13_Sub23_Sub1.anInt4032 = 0;
                                              Class3_Sub13_Sub1.outgoingBuffer.index = 0;
                                           }

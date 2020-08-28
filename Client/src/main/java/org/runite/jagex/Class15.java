@@ -228,7 +228,7 @@ final class Class15 implements Runnable {
                }
             }
 
-            return false ?Class12.method873(var2):var2;
+            return var2;
          }
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "cj.E(" + false + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');

@@ -300,7 +300,7 @@ final class CacheIndex {
          if(this.method2122(3)) {
             var2 = var2.method1534(-98);
             int var3 = this.aClass62_1949.aClass69_949.method1280(var2.method1574(), (byte) -83 + 84);
-            return (byte) -83 != -83 || this.method2117(-104, var3);
+            return this.method2117(-104, var3);
          } else {
             return false;
          }

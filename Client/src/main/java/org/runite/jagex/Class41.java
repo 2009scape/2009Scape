@@ -17,7 +17,7 @@ final class Class41 {
 
    static void method1047(int var0, int var1, int var2, boolean var3, int var4, boolean var5) {
       try {
-         if(!false) {
+         if(true) {
             if(var2 > var4) {
                int var7 = (var2 + var4) / 2;
                int var8 = var4;

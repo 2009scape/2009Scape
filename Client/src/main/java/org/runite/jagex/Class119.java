@@ -80,7 +80,7 @@ final class Class119 {
             Class124.method1746(true, (byte)-125);
          }
 
-         if(!true) {
+         if(false) {
             method1728(39);
          }
 

@@ -42,7 +42,7 @@ final class Class57 {
             this.anInt907 = var2.getShort((byte) 46);
          }
 
-         if(!true) {
+         if(false) {
             method1192((byte)123);
          }
 

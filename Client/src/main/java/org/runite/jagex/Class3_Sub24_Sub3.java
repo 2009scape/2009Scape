@@ -84,7 +84,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
 
    static void method465() {
       try {
-         if(!true) {
+         if(false) {
             method463(92);
          }
 

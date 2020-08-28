@@ -139,7 +139,7 @@ final class Class3_Sub13_Sub2 extends Class3_Sub13 {
          Class3_Sub13_Sub23_Sub1.method282(var15, -var5 + var6, -40, var16, var0);
          Class3_Sub13_Sub23_Sub1.method282(var15, var16, -51, var17, var4);
          Class3_Sub13_Sub23_Sub1.method282(var15, var17, -41, var6 - -var5, var0);
-         if(!true) {
+         if(false) {
             anIntArray3045 = (int[])null;
          }
 

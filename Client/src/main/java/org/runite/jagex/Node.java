@@ -36,7 +36,7 @@ class Node extends Class3 {
    static int method519(int var0, int var2, int var3) {
       try {
          var0 &= 3;
-         if(!true) {
+         if(false) {
             method520((byte)-89);
          }
 

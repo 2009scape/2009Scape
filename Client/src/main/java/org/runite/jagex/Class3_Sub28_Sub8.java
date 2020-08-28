@@ -101,7 +101,7 @@ final class Class3_Sub28_Sub8 extends Node {
 
    static void method574(NPC var0) {
       try {
-         if(!false) {
+         if(true) {
             for(Class3_Sub9 var2 = (Class3_Sub9)IOHandler.aClass61_1242.method1222(); var2 != null; var2 = (Class3_Sub9)IOHandler.aClass61_1242.method1221()) {
                if(var0 == var2.aClass140_Sub4_Sub2_2324) {
                   if(var2.aClass3_Sub24_Sub1_2312 != null) {
@@ -140,7 +140,7 @@ final class Class3_Sub28_Sub8 extends Node {
             return -117;
          } else {
             for (int var2 = 0; var2 < Class119.aClass131_1624.anInt1720; ++var2) {
-               if (Class119.aClass131_1624.aClass94Array1721[var2].method1560(Class3_Sub13_Sub16.aClass94_3192, !false, Class3_Sub28_Sub10_Sub2.aClass94_4066).method1528(var0)) {
+               if (Class119.aClass131_1624.aClass94Array1721[var2].method1560(Class3_Sub13_Sub16.aClass94_3192, true, Class3_Sub28_Sub10_Sub2.aClass94_4066).method1528(var0)) {
                   return var2;
                }
             }

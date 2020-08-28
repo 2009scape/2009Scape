@@ -608,7 +608,7 @@ final class ObjectDefinition {
                var2 &= Class69.aClass153_1043.method2129((byte)64, 0, '\uffff' & this.models[var3]);
             }
 
-            return false || var2;
+            return var2;
          }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "pb.I(" + false + ')');

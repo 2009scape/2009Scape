@@ -122,7 +122,7 @@ class RSByteBuffer extends Class3 {
 
 	static void method744() {
 		try {
-			if(!true) {
+			if(false) {
 				method784(-10, -32, -21);
 			}
 
@@ -180,7 +180,7 @@ class RSByteBuffer extends Class3 {
 
 	final byte method749() {
 		try {
-			return false ?-79:(byte)(-this.buffer[this.index++] + 128);
+			return (byte)(-this.buffer[this.index++] + 128);
 		} catch (RuntimeException var3) {
 			throw Class44.clientError(var3, "wa.JB(" + false + ')');
 		}
@@ -240,7 +240,7 @@ class RSByteBuffer extends Class3 {
 
 	final int getByteS() {
 		try {
-			if(!true) {
+			if(false) {
 				this.index = 61;
 			}
 
@@ -810,7 +810,7 @@ class RSByteBuffer extends Class3 {
 
 	final int getSmart() {
 		try {
-			if(!true) {
+			if(false) {
 				TextCore.LoadedInterfaces = (RSString)null;
 			}
 
@@ -915,7 +915,7 @@ class RSByteBuffer extends Class3 {
 
 	final int getByteC() {
 		try {
-			if(!true) {
+			if(false) {
 				this.index = 46;
 			}
 
@@ -1234,7 +1234,7 @@ class RSByteBuffer extends Class3 {
 
 	static RSString method802(int var0) {
 		try {
-			if(!true) {
+			if(false) {
 				method746((byte)-33);
 			}
 

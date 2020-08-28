@@ -13,7 +13,7 @@ final class Class10 {
    static Class3_Sub28_Sub16_Sub2[] method851() {
       try {
          Class3_Sub28_Sub16_Sub2[] var1 = new Class3_Sub28_Sub16_Sub2[Class95.anInt1338];
-         if(!true) {
+         if(false) {
             method852((byte)127, -18);
          }
 

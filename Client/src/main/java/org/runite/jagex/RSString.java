@@ -186,12 +186,12 @@ final class RSString implements Interface3 {
             var10 = (int)var8 >> 20 & 3;
             var11 = (int)(var8 >>> 32) & Integer.MAX_VALUE;
             ObjectDefinition var18 = Class162.getObjectDefinition(4, var11);
-            if(var18.anInt1516 != -1 && !Class15.method888(var1, var18, !true, var0, var5, var3, var10)) {
+            if(var18.anInt1516 != -1 && !Class15.method888(var1, var18, false, var0, var5, var3, var10)) {
                return false;
             }
          }
 
-         if(!true) {
+         if(false) {
             aBoolean2150 = true;
          }
 
@@ -466,7 +466,7 @@ final class RSString implements Interface3 {
 
    static LDIndexedSprite method1539(int var0, int var2, CacheIndex var3) {
       try {
-         if(!true) {
+         if(false) {
             method1535((WorldListEntry)null, (WorldListEntry)null, -64, -40, 23, false, false);
          }
        //  System.out.println("RSString " + var2);
@@ -651,7 +651,7 @@ final class RSString implements Interface3 {
 
    final URL method1547(URL var1) throws MalformedURLException {
       try {
-         if(!true) {
+         if(false) {
             this.byteArray = (byte[])null;
          }
 
@@ -783,7 +783,7 @@ final class RSString implements Interface3 {
       try {
          if(true) {
             String var3 = new String(this.byteArray, 0, this.length);
-            Class42.method1057(var2, !true, var3);
+            Class42.method1057(var2, false, var3);
          }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "na.AA(" + true + ',' + (var2 != null?"{...}":"null") + ')');
@@ -955,7 +955,7 @@ final class RSString implements Interface3 {
             var1 = 10;
          }
 
-         if(!true) {
+         if(false) {
             aBoolean2146 = false;
          }
 
@@ -1514,7 +1514,7 @@ final class RSString implements Interface3 {
    final int method1580(byte[] var2, int var3, int var4, int var5) {
       try {
          Class76.method1357(this.byteArray, var4, var2, var3, -var4 + var5);
-         if(!true) {
+         if(false) {
             method1570(42, (byte)-117, true, -47, false, 3, -26, true);
          }
 

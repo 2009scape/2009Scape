@@ -53,7 +53,7 @@ final class Class3_Sub28_Sub15 extends Node {
 
    static void method631(CacheIndex var1) {
       try {
-         if(!false) {
+         if(true) {
             Class3_Sub28_Sub5.aClass153_3580 = var1;
             Class54.anInt869 = Class3_Sub28_Sub5.aClass153_3580.getFileAmount(4, (byte)112);
          }

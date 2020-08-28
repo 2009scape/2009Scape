@@ -36,7 +36,7 @@ final class Class140_Sub2 extends GameObject {
             var3 = var2.method966(anInt2714, this.anInt2706, this.anInt2719);
          }
 
-         return var3 == null?null:var3;
+         return var3;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "bh.E(" + false + ')');
       }
@@ -185,7 +185,7 @@ final class Class140_Sub2 extends GameObject {
    final void method1955(int var2) {
       try {
          if(!this.aBoolean2718) {
-            if(!true) {
+            if(false) {
                this.method1955(-72);
             }
 

@@ -122,7 +122,7 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
       try {
          Class79 var3 = CS2Script.method378(var0, (byte)127);
          int var6 = var3.anInt1125;
-         if(!false) {
+         if(true) {
             int var5 = var3.anInt1123;
             int var4 = var3.anInt1128;
             int var7 = Class3_Sub6.anIntArray2288[var6 - var5];

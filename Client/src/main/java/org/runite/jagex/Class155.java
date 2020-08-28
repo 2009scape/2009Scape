@@ -396,7 +396,7 @@ class Class155 {
 
          this.method2160();
          this.anIntArray1975 = null;
-         if(!false) {
+         if(true) {
          }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "vh.P(" + false + ')');

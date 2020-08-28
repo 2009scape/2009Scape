@@ -62,7 +62,7 @@ final class Class3_Sub28_Sub10_Sub1 extends Class3_Sub28_Sub10 {
 
    static void method593(Frame var0, Signlink var2) {
       try {
-         if(!true) {
+         if(false) {
             method594(110, 94);
          }
 

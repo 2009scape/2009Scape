@@ -371,7 +371,7 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
    static int method293(int var0, int var1, int var3) {
       try {
          var1 &= 3;
-         return false ?120:(0 == var1?var3:(1 != var1?(var1 != 2 ?var0:-var3 + 1023):-var0 + 1023));
+         return (0 == var1?var3:(1 != var1?(var1 != 2 ?var0:-var3 + 1023):-var0 + 1023));
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "ol.E(" + var0 + ',' + var1 + ',' + false + ',' + var3 + ')');
       }

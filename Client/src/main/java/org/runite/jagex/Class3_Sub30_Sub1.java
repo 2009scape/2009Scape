@@ -1110,7 +1110,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 	static void method819() {
 		try {
 			Class3_Sub31 var1 = (Class3_Sub31)Class3_Sub13_Sub17.aClass130_3208.method1776(73);
-			if(!false) {
+			if(true) {
 				for(; var1 != null; var1 = (Class3_Sub31)Class3_Sub13_Sub17.aClass130_3208.method1778(-76)) {
 					int var2 = var1.anInt2602;
 					if(Canvas_Sub2.loadInterface(var2)) {

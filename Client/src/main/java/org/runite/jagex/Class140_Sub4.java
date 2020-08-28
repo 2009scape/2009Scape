@@ -97,7 +97,7 @@ abstract class Class140_Sub4 extends GameObject {
    final RenderAnimationDefinition method1965() {
       try {
          int var2 = this.getRenderAnimationId();
-         return false ?(RenderAnimationDefinition)null:(var2 == -1 ?PacketParser.aClass16_84:Class3_Sub10.getRenderAnimationDefinition(var2));
+         return (var2 == -1 ?PacketParser.aClass16_84:Class3_Sub10.getRenderAnimationDefinition(var2));
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "fe.D(" + false + ')');
       }

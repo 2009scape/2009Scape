@@ -766,7 +766,7 @@ public final class Client extends GameShell {
 		try {
 			++Class58.aClass66_917.anInt1011;
 			Class17.aClass64_413 = null;
-			if(!true) {
+			if(false) {
 				aClass3_Sub11ArrayArray2199 = (Class3_Sub11[][])((Class3_Sub11[][])null);
 			}
 

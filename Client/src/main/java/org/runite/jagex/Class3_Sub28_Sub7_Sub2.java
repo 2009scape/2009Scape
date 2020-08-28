@@ -7,7 +7,7 @@ final class Class3_Sub28_Sub7_Sub2 extends Class3_Sub28_Sub7 {
 
 
    final Object method567() {
-      if(!true) {
+      if(false) {
          this.method567();
       }
 

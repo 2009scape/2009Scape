@@ -114,7 +114,7 @@ final class Class3_Sub28_Sub5 extends Node {
 
    final boolean method559(int var2) {
       try {
-         return 1317095745 == 1317095745 && this.animations[var2].aBoolean1386;
+         return this.animations[var2].aBoolean1386;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "cl.D(" + 1317095745 + ',' + var2 + ')');
       }

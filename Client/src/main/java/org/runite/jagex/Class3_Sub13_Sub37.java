@@ -335,7 +335,7 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
    static void method347() {
       try {
          WorldListEntry.inTutorialIsland = 0;
-         if(!true) {
+         if(false) {
             method347();
          }
 

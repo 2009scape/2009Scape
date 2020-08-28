@@ -253,7 +253,7 @@ final class RSInterface {
 
    static RSString method856() {
       try {
-         if(!true) {
+         if(false) {
             method869(127, -68);
          }
 
@@ -565,7 +565,7 @@ final class RSInterface {
    final Class3_Sub28_Sub16 method859(int var2) {
       try {
          GameShell.aBoolean6 = false;
-         if(!true) {
+         if(false) {
             return (Class3_Sub28_Sub16)null;
          } else if(var2 >= 0 && var2 < this.anIntArray197.length) {
             int var3 = this.anIntArray197[var2];
