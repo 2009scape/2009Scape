@@ -696,7 +696,7 @@ final class Class140_Sub1_Sub1 extends Model {
       return var8;
    }
 
-   private short method1907(Model_Sub1 var1, int var2, long var3, int var5, int var6, int var7, int var8, float var9, float var10) {
+   private short method1907(int var2, long var3, int var5, int var6, int var7, int var8, float var9, float var10) {
       int var11 = this.anIntArray3838[var2];
       int var12 = this.anIntArray3838[var2 + 1];
       int var13 = 0;
@@ -3651,19 +3651,19 @@ final class Class140_Sub1_Sub1 extends Model {
             long var86 = (long)(var72 << 2) + ((long)(var27 << 24) + (long)(var67 << 8) + (long)var74 << 32);
             var31 = var1.anIntArray2865[var70];
             Class50 var89 = var1.aClass50Array2872[var31];
-            this.aShortArray3811[var68] = this.method1907(var1, var31, var86, var89.anInt831, var89.anInt821, var89.anInt830, var89.anInt823, var73, var78);
+            this.aShortArray3811[var68] = this.method1907(var31, var86, var89.anInt831, var89.anInt821, var89.anInt830, var89.anInt823, var73, var78);
             var87 = var1.anIntArray2878[var70];
             Class50 var95 = var1.aClass50Array2872[var87];
-            this.aShortArray3830[var68] = this.method1907(var1, var87, var86 + (long)var81, var95.anInt831, var95.anInt821, var95.anInt830, var95.anInt823, var77, var75);
+            this.aShortArray3830[var68] = this.method1907(var87, var86 + (long)var81, var95.anInt831, var95.anInt821, var95.anInt830, var95.anInt823, var77, var75);
             int var92 = var1.anIntArray2864[var70];
             Class50 var91 = var1.aClass50Array2872[var92];
-            this.aShortArray3831[var68] = this.method1907(var1, var92, var86 + (long)var83, var91.anInt831, var91.anInt821, var91.anInt830, var91.anInt823, var82, var79);
+            this.aShortArray3831[var68] = this.method1907(var92, var86 + (long)var83, var91.anInt831, var91.anInt821, var91.anInt830, var91.anInt823, var82, var79);
          } else if(var28 == 1) {
             Class120 var85 = var1.aClass120Array2886[var70];
             long var84 = (long)((var72 << 2) + (var85.anInt1634 > 0?1024:2048) + (var85.anInt1635 + 256 << 12) + (var85.anInt1632 + 256 << 22)) + ((long)(var27 << 24) + (long)(var67 << 8) + (long)var74 << 32);
-            this.aShortArray3811[var68] = this.method1907(var1, var1.anIntArray2865[var70], var84, var85.anInt1634, var85.anInt1635, var85.anInt1632, 0, var73, var78);
-            this.aShortArray3830[var68] = this.method1907(var1, var1.anIntArray2878[var70], var84 + (long)var81, var85.anInt1634, var85.anInt1635, var85.anInt1632, 0, var77, var75);
-            this.aShortArray3831[var68] = this.method1907(var1, var1.anIntArray2864[var70], var84 + (long)var83, var85.anInt1634, var85.anInt1635, var85.anInt1632, 0, var82, var79);
+            this.aShortArray3811[var68] = this.method1907(var1.anIntArray2865[var70], var84, var85.anInt1634, var85.anInt1635, var85.anInt1632, 0, var73, var78);
+            this.aShortArray3830[var68] = this.method1907(var1.anIntArray2878[var70], var84 + (long)var81, var85.anInt1634, var85.anInt1635, var85.anInt1632, 0, var77, var75);
+            this.aShortArray3831[var68] = this.method1907(var1.anIntArray2864[var70], var84 + (long)var83, var85.anInt1634, var85.anInt1635, var85.anInt1632, 0, var82, var79);
          }
 
          if(var1.aShortArray2858 == null) {

@@ -254,10 +254,10 @@ class Class164_Sub2 extends Class164 {
       }
    }
 
-   static void method2249(byte var0, int var1) {
+   static void method2249(int var1) {
       try {
-         Class3 var2 = Class124.aClass130_1659.method1776(var0 + -6);
-         if(var0 != 83) {
+         Class3 var2 = Class124.aClass130_1659.method1776((byte) 83 + -6);
+         if((byte) 83 != 83) {
             aClass33_3019 = (Class33)null;
          }
 
@@ -268,7 +268,7 @@ class Class164_Sub2 extends Class164 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "we.F(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "we.F(" + (byte) 83 + ',' + var1 + ')');
       }
    }
 

@@ -37,7 +37,7 @@ final class Class3_Sub26 extends Class3 {
       }
    }
 
-   static int method513(int var0, int var1) {
+   static int method513(int var0) {
       try {
          int var2 = 0;
          if(var0 < 0 || var0 >= 65536) {
@@ -55,7 +55,7 @@ final class Class3_Sub26 extends Class3 {
             var0 >>>= 4;
          }
 
-         if(var1 <= var0) {
+         if(4 <= var0) {
             var0 >>>= 2;
             var2 += 2;
          }
@@ -67,7 +67,7 @@ final class Class3_Sub26 extends Class3 {
 
          return var0 + var2;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "qi.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "qi.B(" + var0 + ',' + 4 + ')');
       }
    }
 

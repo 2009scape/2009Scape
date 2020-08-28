@@ -22,7 +22,7 @@ class Class38 {
             var2 = new ItemDefinition();
             var2.itemId = itemId;
             if(var3 != null) {
-               var2.parseDefinitions(1, new RSByteBuffer(var3));
+               var2.parseDefinitions(new RSByteBuffer(var3));
             }
 
             var2.method1112();

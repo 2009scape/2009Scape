@@ -130,7 +130,7 @@ class Class3 {
                var9[var10] = var11.anInt1449 * var11.anInt1447;
             }
 
-            Class108.method1658(21, var9, Class56.aClass106Array890);
+            Class108.method1658(var9, Class56.aClass106Array890);
          }
 
          return Class56.aClass106Array890;

@@ -174,7 +174,7 @@ final class Class49 {
 
    static void method1126(int var1) {
       try {
-         Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 2, var1);
+         Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(2, var1);
          int var3 = -67 % ((-94 - -37) / 48);
          var2.a();
       } catch (RuntimeException var4) {
@@ -258,7 +258,7 @@ final class Class49 {
                var1 = Class161.anInt2027;
             }
 
-            Class3_Sub13_Sub13.method229(var1, 20827);
+            Class3_Sub13_Sub13.method229(var1);
             if(CS2Script.anInt2440 == 1) {
                CS2Script.anInt2440 = 2;
             }

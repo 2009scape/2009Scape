@@ -14,7 +14,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
 
    static void method295(RSString var0, int var2) {
       try {
-         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466((byte) 40 + -36, 2, var2);
+         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(2, var2);
 
          var3.g();
          var3.aClass94_3599 = var0;

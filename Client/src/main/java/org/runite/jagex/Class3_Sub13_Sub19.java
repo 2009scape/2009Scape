@@ -44,7 +44,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
    static void method260(int var1, int var2) {
       try {
 
-         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(4, 7, var1);
+         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(7, var1);
          var3.g();
          var3.anInt3598 = var2;
       } catch (RuntimeException var4) {
@@ -265,7 +265,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
 
    static void method265(int var1) {
       try {
-         Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 8, var1);
+         Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(8, var1);
          var2.a();
 
       } catch (RuntimeException var3) {

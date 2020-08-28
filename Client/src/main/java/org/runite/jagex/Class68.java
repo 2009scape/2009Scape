@@ -380,7 +380,7 @@ final class Class68 {
       anIntArrayArrayArray1027 = new int[anInt1030][anInt1036][anInt1035];
    }
 
-   static void method1277(int var0, int var1, Class3_Sub2[][][] var2) {
+   static void method1277(Class3_Sub2[][][] var2) {
       if(Class106.aBoolean1441) {
          javax.media.opengl.GL var3 = HDToolKit.gl;
          Class3_Sub28_Sub4.method551(0, 0);

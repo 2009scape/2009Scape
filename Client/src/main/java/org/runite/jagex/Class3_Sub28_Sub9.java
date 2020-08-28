@@ -93,7 +93,7 @@ final class Class3_Sub28_Sub9 extends Node {
 
    static boolean method582(int var0, int var1, int var2, boolean var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11) {
       try {
-         return Class102.player.getSize() != var5?(Class102.player.getSize() <= 2?Class158_Sub1.method2191(var6, var4, var11, -1001, var10, var9, var2, var1, var3, var8, var0, var7):Class52.method1166(var10, var7, var9, var1, Class102.player.getSize(), var6, var8, var4, var11, var2, var3, var0)):Class2.method76(var7, var8, var4, var0, var10, var3, var2, var1, var6, var9, var11);
+         return Class102.player.getSize() != var5?(Class102.player.getSize() <= 2?Class158_Sub1.method2191(var6, var4, var11, var10, var9, var2, var1, var3, var8, var0, var7):Class52.method1166(var10, var7, var9, var1, Class102.player.getSize(), var6, var8, var4, var11, var2, var3, var0)):Class2.method76(var7, var8, var4, var0, var10, var3, var2, var1, var6, var9, var11);
       } catch (RuntimeException var13) {
          throw Class44.clientError(var13, "hn.O(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ',' + var11 + ')');
       }

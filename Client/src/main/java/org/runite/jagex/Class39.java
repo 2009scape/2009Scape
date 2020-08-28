@@ -37,9 +37,9 @@ final class Class39 {
 				for(var6 = 0; var6 < 4; ++var6) {
 					for(var7 = 0; var7 < 13; ++var7) {
 						for(var18 = 0; 13 > var18; ++var18) {
-							var9 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 1);
+							var9 = GraphicDefinition.incomingBuffer.getBits(1);
 							if(var9 == 1) {
-								ObjectDefinition.anIntArrayArrayArray1497[var6][var7][var18] = GraphicDefinition.incomingBuffer.getBits((byte)-11, 26);
+								ObjectDefinition.anIntArrayArrayArray1497[var6][var7][var18] = GraphicDefinition.incomingBuffer.getBits(26);
 							} else {
 								ObjectDefinition.anIntArrayArrayArray1497[var6][var7][var18] = -1;
 							}
@@ -605,7 +605,7 @@ final class Class39 {
 		}
 	}
 
-	static void method1039(int var0, CacheIndex var1) {
+	static void method1039(CacheIndex var1) {
 		try {
 			Class96.anInt1352 = var1.getArchiveForName(RSString.createRSString("p11_full"));
 			Class75_Sub2.anInt2643 = var1.getArchiveForName(RSString.createRSString("p12_full"));
@@ -614,7 +614,7 @@ final class Class39 {
 			Class3_Sub13_Sub23_Sub1.hitMarkIndex = var1.getArchiveForName(RSString.createRSString("hitmarks"));
 			Client.anInt2195 = var1.getArchiveForName(RSString.createRSString("hitbar_default"));
 			Node.anInt2575 = var1.getArchiveForName(RSString.createRSString("headicons_pk"));
-			if(var0 != 208) {
+			if(208 != 208) {
 				anInt670 = 0;
 			}
 
@@ -630,7 +630,7 @@ final class Class39 {
 			Class93.anInt1325 = var1.getArchiveForName(RSString.createRSString("compass"));
 			Class3_Sub18.anInt2471 = var1.getArchiveForName(RSString.createRSString("hint_mapedge"));
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "g.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var3, "g.C(" + 208 + ',' + (var1 != null?"{...}":"null") + ')');
 		}
 	}
 

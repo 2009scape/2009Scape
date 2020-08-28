@@ -147,7 +147,7 @@ final class OutputStream_Sub1 extends OutputStream {
                Class55.method1180((byte)-22, var2);
             }
          } else {
-            Class140_Sub2.method1950(var2, true);
+            Class140_Sub2.method1950(var2);
          }
 
          if(var2.anInt2819 < 128 || var2.anInt2829 < 128 || var2.anInt2819 >= 13184 || var2.anInt2829 >= 13184) {

@@ -10,8 +10,8 @@ final class Class167 {
    static void addLocalNPCs() {
       try {
          while(true) {
-            if(GraphicDefinition.incomingBuffer.method815(Class130.incomingPacketLength, 32666) >= 27) {
-               int var1 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 15);
+            if(GraphicDefinition.incomingBuffer.method815(Class130.incomingPacketLength) >= 27) {
+               int var1 = GraphicDefinition.incomingBuffer.getBits(15);
                if(32767 != var1) {
                   boolean var2 = false;
                   if(null == Class3_Sub13_Sub24.npcs[var1]) {
@@ -26,24 +26,24 @@ final class Class167 {
                      Class3_Sub28_Sub8.method574(var3);
                   }
 
-                  int var4 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 1);
-                  int var5 = Class27.anIntArray510[GraphicDefinition.incomingBuffer.getBits((byte)-11, 3)];
+                  int var4 = GraphicDefinition.incomingBuffer.getBits(1);
+                  int var5 = Class27.anIntArray510[GraphicDefinition.incomingBuffer.getBits(3)];
                   if(var2) {
                      var3.anInt2806 = var3.anInt2785 = var5;
                   }
 
-                  int var6 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 1);
+                  int var6 = GraphicDefinition.incomingBuffer.getBits(1);
                   if(var6 == 1) {
                      Class21.maskUpdateIndexes[Class66.maskUpdateCount++] = var1;
                   }
 
-                  int var7 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 5);
-                  var3.setDefinitions(Node.method522(GraphicDefinition.incomingBuffer.getBits((byte)-11, 14)));
+                  int var7 = GraphicDefinition.incomingBuffer.getBits(5);
+                  var3.setDefinitions(Node.method522(GraphicDefinition.incomingBuffer.getBits(14)));
                   if(15 < var7) {
                      var7 -= 32;
                   }
 
-                  int var8 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 5);
+                  int var8 = GraphicDefinition.incomingBuffer.getBits(5);
                   if(15 < var8) {
                      var8 -= 32;
                   }
@@ -110,11 +110,11 @@ final class Class167 {
       Class3_Sub17.anInt2456 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638.length;
    }
 
-   static void method2265(int var0) {
+   static void method2265() {
       try {
          CS2Script.aClass93_2442.method1524();
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "wj.B(" + var0 + ')');
+         throw Class44.clientError(var2, "wj.B(" + 0 + ')');
       }
    }
 
@@ -143,7 +143,7 @@ final class Class167 {
                   if(var2) {
                      Class44.anIntArrayArrayArray723[0][var5][var4] = Class58.anIntArrayArrayArray914[0][var5][var4];
                   } else if (var8 == 0) {
-                     Class44.anIntArrayArrayArray723[0][var5][var4] = 8 * -Class32.method993(var4 + 556238 + var1, 125, var0 + var5 + 932731);
+                     Class44.anIntArrayArrayArray723[0][var5][var4] = 8 * -Class32.method993(var4 + 556238 + var1, var0 + var5 + 932731);
                   } else {
                      Class44.anIntArrayArrayArray723[var8][var5][var4] = -240 + Class44.anIntArrayArrayArray723[var8 - 1][var5][var4];
                   }
@@ -239,7 +239,7 @@ final class Class167 {
 
          int var1;
          for(var1 = 0; var1 < 4; ++var1) {
-            Class86.aClass91Array1182[var1].method1496(0);
+            Class86.aClass91Array1182[var1].method1496();
          }
 
          Class66.method1250(62, false);

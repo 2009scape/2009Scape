@@ -505,7 +505,7 @@ final class NPCDefinition {
       }
    }
 
-   static void method1480(boolean var0, RSString var1, int var2) {
+   static void method1480(boolean var0, RSString var1) {
       try {
          short[] var3 = new short[16];
          var1 = var1.method1534();
@@ -543,10 +543,10 @@ final class NPCDefinition {
             var10[var11] = Class38.getItemDefinition(var3[var11], (byte)112).name;
          }
 
-         int var12 = -44 / ((45 - var2) / 33);
+         int var12 = -44 / ((45 - 102) / 33);
          Class3_Sub13_Sub29.method307(var10, Class99.aShortArray1398, 77);
       } catch (RuntimeException var9) {
-         throw Class44.clientError(var9, "me.J(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var9, "me.J(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + 102 + ')');
       }
    }
 

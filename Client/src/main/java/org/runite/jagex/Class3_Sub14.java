@@ -188,7 +188,7 @@ final class Class3_Sub14 extends Class3 {
    private float[] method366(int var1) {
       method365(this.aByteArrayArray2410[var1]);
       method364();
-      int var2 = method368(Class3_Sub26.method513(anIntArray2420.length - 1, 4));
+      int var2 = method368(Class3_Sub26.method513(anIntArray2420.length - 1));
       boolean var3 = aBooleanArray2393[var2];
       int var4 = var3?anInt2396:anInt2402;
       boolean var5 = false;
@@ -297,7 +297,7 @@ final class Class3_Sub14 extends Class3 {
             var20[4 * var25 + 1] = (var27 - var29) * var30 + (var26 - var28) * var31;
          }
 
-         var25 = Class3_Sub26.method513(var4 - 1, 4);
+         var25 = Class3_Sub26.method513(var4 - 1);
 
          int var47;
          int var49;
@@ -472,7 +472,7 @@ final class Class3_Sub14 extends Class3 {
          }
 
          int[] var15 = new int[var5];
-         int var10 = Class3_Sub26.method513(var5 - 1, 4);
+         int var10 = Class3_Sub26.method513(var5 - 1);
 
          for(int var11 = 0; var11 < var5; ++var11) {
             var15[var11] = Class3_Sub28_Sub3.method540(var10, var11);

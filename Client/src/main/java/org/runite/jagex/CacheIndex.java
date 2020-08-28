@@ -246,7 +246,7 @@ final class CacheIndex {
    final byte[] getFile(int archive, int[] xteaKeys, int var3, int file) {
       try {
          //System.out.println("Archive: " + archive + " || File: " + file);
-         if(this.method2139(archive, 0, file)) {
+         if(this.method2139(archive, file)) {
             if(this.anObjectArrayArray1952[archive] == null || this.anObjectArrayArray1952[archive][file] == null) {
                boolean var5 = this.method2132(archive, xteaKeys);
                if(!var5) {
@@ -309,7 +309,7 @@ final class CacheIndex {
    final boolean method2129(byte var1, int var2, int var3) {
       try {
          int var4 = 78 / ((-10 - var1) / 59);
-         if(this.method2139(var3, 0, var2)) {
+         if(this.method2139(var3, var2)) {
             if(this.anObjectArrayArray1952[var3] != null && null != this.anObjectArrayArray1952[var3][var2]) {
                return true;
             } else if(this.files[var3] == null) {
@@ -589,10 +589,10 @@ final class CacheIndex {
       }
    }
 
-   private boolean method2139(int archive, int var2, int file) {
+   private boolean method2139(int archive, int file) {
       try {
          if(this.method2122(3)) {
-            if(var2 <= archive && file >= 0 && archive < this.aClass62_1949.archiveLengths.length && this.aClass62_1949.archiveLengths[archive] > file) {
+            if(0 <= archive && file >= 0 && archive < this.aClass62_1949.archiveLengths.length && this.aClass62_1949.archiveLengths[archive] > file) {
                return true;
             } else if(Class134.aBoolean1765) {
                throw new IllegalArgumentException(archive + "," + file);
@@ -603,13 +603,13 @@ final class CacheIndex {
             return false;
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "ve.K(" + archive + ',' + var2 + ',' + file + ')');
+         throw Class44.clientError(var5, "ve.K(" + archive + ',' + 0 + ',' + file + ')');
       }
    }
 
    final byte[] method2140(int file, int archive) {
       try {
-         if(this.method2139(archive, 0, file)) {
+         if(this.method2139(archive, file)) {
             if(this.anObjectArrayArray1952[archive] == null || null == this.anObjectArrayArray1952[archive][file]) {
                boolean var4 = this.method2132(archive, (int[])null);
                if(!var4) {
@@ -679,7 +679,7 @@ final class CacheIndex {
 
    static void method2143(byte var0, int var1, int var2, int var3, int var4) {
       try {
-         Class3_Sub28_Sub6 var5 = Class3_Sub24_Sub3.method466(4, 8, var2);
+         Class3_Sub28_Sub6 var5 = Class3_Sub24_Sub3.method466(8, var2);
          var5.g();
          var5.anInt3596 = var1;
          if(var0 >= -120) {

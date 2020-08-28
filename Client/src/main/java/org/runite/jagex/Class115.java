@@ -37,7 +37,7 @@ final class Class115 {
             }
 
             if(var2 != null) {
-               ObjectDefinition var20 = Class162.getObjectDefinition(4, var1.anInt2270);
+               ObjectDefinition var20 = Class162.getObjectDefinition(var1.anInt2270);
 
                int var4;
                int var5;

@@ -36,9 +36,9 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
       }
    }
 
-   static void method305(Signlink var0, RSByteBuffer var1, int var2, byte var3) {
+   static void method305(Signlink var0, RSByteBuffer var1, int var2) {
       try {
-         int var5 = 123 % ((var3 - -66) / 57);
+         int var5 = 123 % (((byte) -126 - -66) / 57);
          Class3_Sub8 var4 = new Class3_Sub8();
          var4.anInt2296 = var1.getByte((byte)-54);
          var4.anInt2305 = var1.getInt();
@@ -57,13 +57,13 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
                int var10;
                if(var7 != 0 && var7 != 1 && var7 != 2) {
                   if(var7 == 3 || var7 == 4) {
-                     var8 = new String(var1.getString().method1568(0));
-                     var9 = new String(var1.getString().method1568(0));
+                     var8 = new String(var1.getString().method1568());
+                     var9 = new String(var1.getString().method1568());
                      var10 = var1.getByte((byte)-113);
                      String[] var11 = new String[var10];
 
                      for(int var12 = 0; var10 > var12; ++var12) {
-                        var11[var12] = new String(var1.getString().method1568(0));
+                        var11[var12] = new String(var1.getString().method1568());
                      }
 
                      byte[][] var21 = new byte[var10][];
@@ -87,9 +87,9 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
                      var4.aByteArrayArrayArray2302[var6] = var21;
                   }
                } else {
-                  var8 = new String(var1.getString().method1568(0));
+                  var8 = new String(var1.getString().method1568());
                   var10 = 0;
-                  var9 = new String(var1.getString().method1568(0));
+                  var9 = new String(var1.getString().method1568());
                   if(var7 == 1) {
                      var10 = var1.getInt();
                   }
@@ -113,7 +113,7 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
 
          Class3_Sub26.aClass61_2557.method1215(var4);
       } catch (RuntimeException var20) {
-         throw Class44.clientError(var20, "qg.E(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var20, "qg.E(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + (byte) -126 + ')');
       }
    }
 
@@ -137,7 +137,7 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
 
    static void method307(RSString[] var0, short[] var1, int var2) {
       try {
-         Class3_Sub8.method127(var1, -1 + var0.length, var0, -909, 0);
+         Class3_Sub8.method127(var1, -1 + var0.length, var0, 0);
          int var3 = 91 % ((var2 - -1) / 63);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "qg.C(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');

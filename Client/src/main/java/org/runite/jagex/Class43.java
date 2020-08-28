@@ -27,9 +27,9 @@ final class Class43 {
    static int anInt716 = 0;
    float[] aFloatArray717 = new float[4];
 
-   static void method1058(int var0, int var1, int var2, int var3, byte var4) {
+   static void method1058(int var0, int var1, int var2, int var3) {
       try {
-         int var5 = 25 % ((25 - var4) / 52);
+         int var5 = 25 % ((25 - (byte) -47) / 52);
          if(Class101.anInt1425 <= var1 + -var0 && Class3_Sub28_Sub18.anInt3765 >= var0 + var1 && var3 + -var0 >= Class159.anInt2020 && Class57.anInt902 >= var0 + var3) {
             Class24.method949(var1, var0, var2, var3);
          } else {
@@ -37,7 +37,7 @@ final class Class43 {
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "gi.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "gi.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + (byte) -47 + ')');
       }
    }
 

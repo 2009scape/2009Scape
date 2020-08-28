@@ -64,7 +64,7 @@ final class Class3_Sub28_Sub14 extends Node {
                   Class3_Sub28_Sub1.anInt3536 = RSByteBuffer.aClass3_Sub28_Sub3_2600.anInt3558 * 64 + -Class3_Sub13_Sub21.anInt3256;
                }
 
-               Class3_Sub5.method117((byte)87);
+               Class3_Sub5.method117();
                Class84.anIntArray1161 = new int[1 + Class54.anInt869];
                int var4 = Class108.anInt1460 >> 6;
                int var3 = Class23.anInt455 >> 6;
@@ -184,9 +184,9 @@ final class Class3_Sub28_Sub14 extends Node {
       }
    }
 
-   static void method628(int var0, int var1, int var2, Player var3) {
+   static void method628(int var1, int var2, Player var3) {
       try {
-         if(var0 != 0) {
+         if(0 != 0) {
             aBooleanArray3674 = (boolean[])null;
          }
 
@@ -199,7 +199,7 @@ final class Class3_Sub28_Sub14 extends Node {
                var3.anInt2776 = 1;
                var3.anInt2832 = 0;
                var3.anInt2773 = 0;
-               IOHandler.method1470(var3.anInt2829, var4, var0 + 183921384, var3.anInt2819, Class102.player == var3, var3.anInt2832);
+               IOHandler.method1470(var3.anInt2829, var4, 0 + 183921384, var3.anInt2819, Class102.player == var3, var3.anInt2832);
             }
 
             if(var5 == 2) {
@@ -219,7 +219,7 @@ final class Class3_Sub28_Sub14 extends Node {
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "pa.C(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var6, "pa.C(" + 0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
       }
    }
 

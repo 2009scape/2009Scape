@@ -223,7 +223,7 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
                int var11 = var5 - -this.anInt3262;
                var11 = -2048 > var11?var11 + 4096:var11;
                var11 = var11 > 2048 ?var11 - 4096:var11;
-               var3[var6] = !this.method271(var8, var9) && !this.method270((byte)-44, var10, var11)?0:4096;
+               var3[var6] = !this.method271(var8, var9) && !this.method270(var10, var11)?0:4096;
             }
          }
 
@@ -233,10 +233,10 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
       }
    }
 
-   private boolean method270(byte var1, int var2, int var3) {
+   private boolean method270(int var2, int var3) {
       try {
          int var4 = this.anInt3257 * (var2 + var3) >> 12;
-         if(var1 > -17) {
+         if((byte) -44 > -17) {
             method267((byte)89);
          }
 
@@ -246,7 +246,7 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
          var5 = var5 * this.anInt3254 >> 12;
          return var5 > -var2 + var3 && var3 + -var2 > -var5;
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "mh.S(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var6, "mh.S(" + (byte) -44 + ',' + var2 + ',' + var3 + ')');
       }
    }
 

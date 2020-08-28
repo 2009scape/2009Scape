@@ -14,7 +14,7 @@ final class Class79 {
 
    static void method1385(int var0, int var1) {
       try {
-         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(4, 6, var1);
+         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(6, var1);
          var3.g();
          var3.anInt3598 = var0;
       } catch (RuntimeException var4) {
@@ -121,7 +121,7 @@ final class Class79 {
                      Class3_Sub28_Sub10.anInt3625 = 1;
                   }
 
-                  Class25.method957(-1 + 97, 1 == var0.getByte((byte)-40));
+                  Class25.method957(1 == var0.getByte((byte)-40));
                   Class3_Sub28_Sub7.aBoolean3604 = var0.getByte((byte)-44) == 1;
                   KeyboardListener.aBoolean1905 = 1 == var0.getByte((byte)-39);
                   Class25.aBoolean488 = 1 == var0.getByte((byte)-85);

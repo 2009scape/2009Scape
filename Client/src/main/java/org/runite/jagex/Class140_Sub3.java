@@ -213,17 +213,17 @@ final class Class140_Sub3 extends GameObject {
       }
    }
 
-   static void method1959(int var0, int var1, int var2, boolean var3) {
+   static void method1959(boolean var3) {
       try {
-         if(var2 >= 8000 && var2 <= '\ubb80') {
-            Class3_Sub24_Sub4.anInt3507 = var1;
+         if(22050 >= 8000 && 22050 <= '\ubb80') {
+            Class3_Sub24_Sub4.anInt3507 = 2;
             RSString.aBoolean2150 = var3;
-            Class21.anInt443 = var2;
+            Class21.anInt443 = 22050;
          } else {
             throw new IllegalArgumentException();
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "dc.D(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "dc.D(" + 256 + ',' + 2 + ',' + 22050 + ',' + var3 + ')');
       }
    }
 
@@ -316,7 +316,7 @@ final class Class140_Sub3 extends GameObject {
    private GameObject method1962(boolean var1) {
       try {
          boolean var3 = Class58.anIntArrayArrayArray914 != Class44.anIntArrayArrayArray723;
-         ObjectDefinition var4 = Class162.getObjectDefinition(-2 + 6, this.objectId);
+         ObjectDefinition var4 = Class162.getObjectDefinition(this.objectId);
          int var5 = var4.animationId;
          if(null != var4.ChildrenIds) {
             var4 = var4.method1685(0);
@@ -459,7 +459,7 @@ final class Class140_Sub3 extends GameObject {
 
    static void renderLocalPlayers() {
       try {
-         int localPlayerAmount = GraphicDefinition.incomingBuffer.getBits((byte)-11, 8);
+         int localPlayerAmount = GraphicDefinition.incomingBuffer.getBits(8);
          int var2;
          if(localPlayerAmount < Class159.localPlayerCount) {
             for(var2 = localPlayerAmount; Class159.localPlayerCount > var2; ++var2) {
@@ -474,12 +474,12 @@ final class Class140_Sub3 extends GameObject {
             for(; localPlayerAmount > var2; ++var2) {
                int var3 = Class56.localPlayerIndexes[var2];
                Player var4 = Class3_Sub13_Sub22.players[var3];
-               int update = GraphicDefinition.incomingBuffer.getBits((byte)-11, 1);
+               int update = GraphicDefinition.incomingBuffer.getBits(1);
                if(update == 0) {
                   Class56.localPlayerIndexes[Class159.localPlayerCount++] = var3;
                   var4.anInt2838 = Class44.anInt719;
                } else {
-                  int type = GraphicDefinition.incomingBuffer.getBits((byte)-11, 2);
+                  int type = GraphicDefinition.incomingBuffer.getBits(2);
                   if(type == 0) {
                      Class56.localPlayerIndexes[Class159.localPlayerCount++] = var3;
                      var4.anInt2838 = Class44.anInt719;
@@ -490,26 +490,26 @@ final class Class140_Sub3 extends GameObject {
                      if(type == 1) {
                         Class56.localPlayerIndexes[Class159.localPlayerCount++] = var3;
                         var4.anInt2838 = Class44.anInt719;
-                        var7 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 3);
+                        var7 = GraphicDefinition.incomingBuffer.getBits(3);
                         var4.walkStep(1, (byte)46, var7);
-                        var8 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 1);
+                        var8 = GraphicDefinition.incomingBuffer.getBits(1);
                         if(var8 == 1) {
                            Class21.maskUpdateIndexes[Class66.maskUpdateCount++] = var3;
                         }
                      } else if (type == 2) {
                         Class56.localPlayerIndexes[Class159.localPlayerCount++] = var3;
                         var4.anInt2838 = Class44.anInt719;
-                        if (GraphicDefinition.incomingBuffer.getBits((byte) -11, 1) == 1) {
-                           var7 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 3);
+                        if (GraphicDefinition.incomingBuffer.getBits(1) == 1) {
+                           var7 = GraphicDefinition.incomingBuffer.getBits(3);
                            var4.walkStep(2, (byte) -92, var7);
-                           var8 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 3);
+                           var8 = GraphicDefinition.incomingBuffer.getBits(3);
                            var4.walkStep(2, (byte) 88, var8);
                         } else {
-                           var7 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 3);
+                           var7 = GraphicDefinition.incomingBuffer.getBits(3);
                            var4.walkStep(0, (byte) 113, var7);
                         }
 
-                        var7 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 1);
+                        var7 = GraphicDefinition.incomingBuffer.getBits(1);
                         if (1 == var7) {
                            Class21.maskUpdateIndexes[Class66.maskUpdateCount++] = var3;
                         }
@@ -541,7 +541,7 @@ final class Class140_Sub3 extends GameObject {
             if(var9 instanceof Class140_Sub3) {
                ((Class140_Sub3)var9).method1960();
             } else {
-               var10 = Class162.getObjectDefinition(4, this.objectId);
+               var10 = Class162.getObjectDefinition(this.objectId);
                if(var10.ChildrenIds != null) {
                   var10 = var10.method1685(0);
                }
@@ -594,7 +594,7 @@ final class Class140_Sub3 extends GameObject {
          }
 
          if(var9 == null) {
-            var10 = Class162.getObjectDefinition(4, this.objectId);
+            var10 = Class162.getObjectDefinition(this.objectId);
             if(null != var10.ChildrenIds) {
                this.aBoolean2721 = true;
             }

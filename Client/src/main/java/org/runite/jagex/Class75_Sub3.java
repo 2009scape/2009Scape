@@ -51,7 +51,7 @@ final class Class75_Sub3 extends Class75 {
          Class3_Sub31.method820(5, 64);
          Class25.method953();
          Class3_Sub13_Sub21.method269(-5, 5);
-         Class77.method1366(104, 5);
+         Class77.method1366();
          Class3_Sub13_Sub11.aClass93_3130.method1522(-125, 5);
          Class80.aClass93_1135.method1522(26211 ^ -26142, 5);
       } catch (RuntimeException var2) {

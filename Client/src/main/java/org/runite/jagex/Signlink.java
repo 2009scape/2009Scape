@@ -318,7 +318,7 @@ public class Signlink implements Runnable {
                         this.aSensor1206.method1797(var27, var21);
                      } else if (17 == var2) {
                         var3 = (Object[]) var1.anObject977;
-                        this.aSensor1206.method1795((byte) 113, (Point) var3[2], var1.anInt979, (Component) var3[0], var1.anInt980, (int[]) var3[1]);
+                        this.aSensor1206.method1795((Point) var3[2], var1.anInt979, (Component) var3[0], var1.anInt980, (int[]) var3[1]);
                      } else {
                         if (16 != var2) {
                            throw new Exception();

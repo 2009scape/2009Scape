@@ -107,14 +107,14 @@ final class Class25 {
       }
    }
 
-   static void method957(int var0, boolean var1) {
+   static void method957(boolean var1) {
       try {
-         if(var0 == 96) {
+         if(96 == 96) {
             Class3_Sub28_Sub13.aBoolean3665 = var1;
             Class47.aBoolean742 = !NPC.method1986(42);
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "ec.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "ec.C(" + 96 + ',' + var1 + ')');
       }
    }
 

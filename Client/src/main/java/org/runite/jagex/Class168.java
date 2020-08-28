@@ -59,7 +59,7 @@ final class Class168 {
    static void method2271(int var0, int var1, int var3) {
       try {
 
-         Class3_Sub28_Sub6 var4 = Class3_Sub24_Sub3.method466(1 ^ 5, 11, var1);
+         Class3_Sub28_Sub6 var4 = Class3_Sub24_Sub3.method466(11, var1);
          var4.g();
          var4.anInt3597 = var3;
          var4.anInt3598 = var0;
@@ -992,7 +992,7 @@ final class Class168 {
    static void method2280(int var1) {
       try {
 
-         Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 11, var1);
+         Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(11, var1);
          var2.a();
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "wl.B(" + 2714 + ',' + var1 + ')');

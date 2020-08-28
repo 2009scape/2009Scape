@@ -206,7 +206,7 @@ final class Class3_Sub5 extends Class3 {
       }
    }
 
-   static void method116(boolean var0, int var1) {
+   static void method116(boolean var0) {
       try {
          int var2 = Class159.localPlayerCount;
          if(Class65.anInt987 == Class102.player.anInt2819 >> 7 && Class45.anInt733 == Class102.player.anInt2829 >> 7) {
@@ -231,7 +231,7 @@ final class Class3_Sub5 extends Class3 {
                var4 = Class3_Sub13_Sub22.players[Class56.localPlayerIndexes[var3]];
             }
 
-            if(null != var4 && var4.hasDefinitions((byte)17)) {
+            if(null != var4 && var4.hasDefinitions()) {
                int var5 = var4.getSize();
                int var6;
                if(var5 == 1) {
@@ -272,7 +272,7 @@ final class Class3_Sub5 extends Class3 {
             }
          }
 
-         if(var1 == 670232012) {
+         if(670232012 == 670232012) {
             label226:
             for(var3 = 0; var3 < var2; ++var3) {
                long var16;
@@ -284,7 +284,7 @@ final class Class3_Sub5 extends Class3 {
                   var16 = (long)Class56.localPlayerIndexes[var3] << 32;
                }
 
-               if(var4 != null && var4.hasDefinitions((byte)17)) {
+               if(var4 != null && var4.hasDefinitions()) {
                   var4.aBoolean3968 = (RSInterface.aBoolean236 && Class159.localPlayerCount > 200 || 50 < Class159.localPlayerCount) && !var0 && var4.anInt2764 == var4.method1965().anInt368;
 
                   var7 = var4.getSize();
@@ -364,11 +364,11 @@ final class Class3_Sub5 extends Class3 {
 
          }
       } catch (RuntimeException var15) {
-         throw Class44.clientError(var15, "cn.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var15, "cn.C(" + var0 + ',' + 670232012 + ')');
       }
    }
 
-   static void method117(byte var0) {
+   static void method117() {
       try {
          if(0 > Class3_Sub28_Sub1.anInt3536) {
             Class3_Sub13_Sub30.anInt3362 = -1;
@@ -395,7 +395,7 @@ final class Class3_Sub5 extends Class3 {
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "cn.E(" + var0 + ')');
+         throw Class44.clientError(var2, "cn.E(" + (byte) 87 + ')');
       }
    }
 

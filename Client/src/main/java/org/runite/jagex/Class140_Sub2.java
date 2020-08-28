@@ -39,11 +39,11 @@ final class Class140_Sub2 extends GameObject {
       }
    }
 
-   static void method1950(Class140_Sub4 var0, boolean var1) {
+   static void method1950(Class140_Sub4 var0) {
       try {
          int var2 = var0.anInt2800 - Class44.anInt719;
          int var3 = 128 * var0.anInt2784 - -(64 * var0.getSize());
-         if(var1) {
+         if(true) {
             int var4 = 128 * var0.anInt2835 - -(var0.getSize() * 64);
             if(0 == var0.anInt2840) {
                var0.anInt2806 = 1024;
@@ -66,7 +66,7 @@ final class Class140_Sub2 extends GameObject {
 
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "bh.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var5, "bh.F(" + (var0 != null?"{...}":"null") + ',' + true + ')');
       }
    }
 

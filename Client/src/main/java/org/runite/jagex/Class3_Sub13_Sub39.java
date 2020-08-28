@@ -166,7 +166,7 @@ final class Class3_Sub13_Sub39 extends Class3_Sub13 {
          Class3_Sub13_Sub30.anInt3362 = -1;
 
          Class3_Sub4.anInt2251 = var1;
-         Class3_Sub5.method117((byte)87);
+         Class3_Sub5.method117();
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "wi.B(" + -126 + ',' + var1 + ')');
       }

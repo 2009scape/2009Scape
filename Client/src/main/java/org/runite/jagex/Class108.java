@@ -84,7 +84,7 @@ final class Class108 {
 
    static void method1657(int var0) {
       try {
-         Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 5, var0);
+         Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(5, var0);
          var2.a();
 
       } catch (RuntimeException var3) {
@@ -92,12 +92,12 @@ final class Class108 {
       }
    }
 
-   static void method1658(int var0, int[] var1, Object[] var2) {
+   static void method1658(int[] var1, Object[] var2) {
       try {
          Class25.method956(var2, var1.length - 1, var1, 74, 0);
-         int var3 = 113 % ((76 - var0) / 45);
+         int var3 = 113 % ((76 - 21) / 45);
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "oi.I(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "oi.I(" + 21 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 

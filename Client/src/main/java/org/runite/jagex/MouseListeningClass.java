@@ -289,7 +289,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	  {
 	    try
 	    {
-	      Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 9, var0);
+	      Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(9, var0);
 	      var2.a();
 	    }
 	    catch (RuntimeException var3)

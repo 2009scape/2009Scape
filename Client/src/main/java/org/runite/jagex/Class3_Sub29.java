@@ -108,13 +108,13 @@ final class Class3_Sub29 extends Class3 {
       }
    }
 
-   static void method731(CacheIndex var0, byte var1) {
+   static void method731(CacheIndex var0) {
       try {
-         int var2 = 3 / ((var1 - -62) / 37);
+         int var2 = 3 / (((byte) -113 - -62) / 37);
          Class3_Sub13_Sub13.aClass153_3154 = var0;
          Class95.anInt1344 = Class3_Sub13_Sub13.aClass153_3154.getFileAmount(16, (byte)71);
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "sj.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "sj.B(" + (var0 != null?"{...}":"null") + ',' + (byte) -113 + ')');
       }
    }
 
@@ -164,7 +164,7 @@ final class Class3_Sub29 extends Class3 {
             }
 
             if(var1 >= '\u8000') {
-               var2.method548(60);
+               var2.method548();
             }
 
             Class3_Sub28_Sub19.aClass47_3776.method1097(var2, (long)var1, (byte)-117);

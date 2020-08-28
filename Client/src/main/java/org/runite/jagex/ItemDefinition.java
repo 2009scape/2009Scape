@@ -99,12 +99,12 @@ final class ItemDefinition {
 		}
 	}
 
-	static void method1103(CacheIndex var0, CacheIndex var1, boolean var2) {
+	static void method1103(CacheIndex var0, CacheIndex var1) {
 		try {
 			Class3_Sub13_Sub14.aClass153_3173 = var0;
 			Class29.aClass153_557 = var1;
 		} catch (RuntimeException var4) {
-			throw Class44.clientError(var4, "h.B(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+			throw Class44.clientError(var4, "h.B(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + false + ')');
 		}
 	}
 
@@ -751,7 +751,7 @@ final class ItemDefinition {
 													}
 													if (j1 == 3101) {
 														k -= 2;
-														Class3_Sub28_Sub14.method628(0, Class140_Sub7.anIntArray2929[k - -1], Class140_Sub7.anIntArray2929[k], Class102.player);
+														Class3_Sub28_Sub14.method628(Class140_Sub7.anIntArray2929[k - -1], Class140_Sub7.anIntArray2929[k], Class102.player);
 														continue;
 													}
 													if (j1 == 3103) {
@@ -1862,7 +1862,7 @@ final class ItemDefinition {
 																		int k28 = Class140_Sub7.anIntArray2929[k];
 																		int l57 = Class140_Sub7.anIntArray2929[k + 1];
 																		if (l57 != -1)
-																			Class140_Sub7.anIntArray2929[k++] = Class3_Sub13_Sub35.getQuickChatMessage(k28).method526(l57, 0);
+																			Class140_Sub7.anIntArray2929[k++] = Class3_Sub13_Sub35.getQuickChatMessage(k28).method526(l57);
 																		else
 																			Class140_Sub7.anIntArray2929[k++] = -1;
 																		continue;
@@ -2195,7 +2195,7 @@ final class ItemDefinition {
 																		Class3_Sub13_Sub38.aShortArray3455[Class140_Sub7.anIntArray2929[k]] = (short) Class56.method1186(Class140_Sub7.anIntArray2929[k + 1]);
 																		GameShell.method28();
 																		RSByteBuffer.method746((byte) -29);
-																		Class167.method2265(0);
+																		Class167.method2265();
 																		WorldListEntry.method1076();
 																		Class47.method1093(false);
 																		continue;
@@ -2277,7 +2277,7 @@ final class ItemDefinition {
 																			RSString.aBoolean2154 = flag5;
 																			Class3_Sub13_Sub24.aClass94_3295 = class94_64;
 																			try {
-																				Class15.aClass64_351 = Class38.aClass87_665.method1452(new String(class94_64.method1568(0), "ISO-8859-1"), true);
+																				Class15.aClass64_351 = Class38.aClass87_665.method1452(new String(class94_64.method1568(), "ISO-8859-1"), true);
 																			} catch (UnsupportedEncodingException e) {
 																				// TODO Auto-generated catch block
 																				e.printStackTrace();
@@ -2440,7 +2440,7 @@ final class ItemDefinition {
 																			continue;
 																		}
 																		if (j1 == 6002) {
-																			Class25.method957(96, 1 == Class140_Sub7.anIntArray2929[--k]);
+																			Class25.method957(1 == Class140_Sub7.anIntArray2929[--k]);
 																			Class3_Sub10.method139(66);
 																			Class84.method1417(101);
 																			RSByteBuffer.method792();
@@ -2961,7 +2961,7 @@ final class ItemDefinition {
 																	RSString class94_56 = Class3.aClass94Array75[l + 1];
 																	int k73 = Class140_Sub7.anIntArray2929[--k];
 																	if (Class143.loadingStage == 10 && Class3_Sub13_Sub31.anInt3375 == 0 && Class3_Sub13_Sub25.loginStage == 0 && Canvas_Sub1.registryStage == 0 && Class43.anInt692 == 0)
-																		Class131.method1793(class94_27, class94_56, k73, (byte) -38);
+																		Class131.method1793(class94_27, class94_56, k73);
 																	continue;
 																}
 																if (j1 == 5601) {
@@ -3031,7 +3031,7 @@ final class ItemDefinition {
 															if (!class3_sub28_sub9_1.method585())
 																Class140_Sub7.anIntArray2929[k++] = Class72.method1292((byte) 94, i38).method600(i61, class3_sub28_sub9_1.anInt3614);
 															else
-																Class3.aClass94Array75[l++] = Class72.method1292((byte) 31, i38).method604(class3_sub28_sub9_1.aClass94_3619, (byte) -44, i61);
+																Class3.aClass94Array75[l++] = Class72.method1292((byte) 31, i38).method604(class3_sub28_sub9_1.aClass94_3619, i61);
 															continue;
 														}
 														if (j1 != 4400)
@@ -3041,9 +3041,9 @@ final class ItemDefinition {
 														int j38 = Class140_Sub7.anIntArray2929[k];
 														Class3_Sub28_Sub9 class3_sub28_sub9_2 = Class61.method1210(j61);
 														if (!class3_sub28_sub9_2.method585())
-															Class140_Sub7.anIntArray2929[k++] = Class162.getObjectDefinition(4, j38).method1691(class3_sub28_sub9_2.anInt3614, j61, (byte) 105);
+															Class140_Sub7.anIntArray2929[k++] = Class162.getObjectDefinition(j38).method1691(class3_sub28_sub9_2.anInt3614, j61, (byte) 105);
 														else
-															Class3.aClass94Array75[l++] = Class162.getObjectDefinition(4, j38).method1698(class3_sub28_sub9_2.aClass94_3619, j61);
+															Class3.aClass94Array75[l++] = Class162.getObjectDefinition(j38).method1698(class3_sub28_sub9_2.aClass94_3619, j61);
 														continue;
 													}
 													if (j1 == 4200) {
@@ -3113,7 +3113,7 @@ final class ItemDefinition {
 														int i62 = Class140_Sub7.anIntArray2929[k - -1];
 														Class3_Sub28_Sub9 class3_sub28_sub9_3 = Class61.method1210(i62);
 														if (class3_sub28_sub9_3.method585())
-															Class3.aClass94Array75[l++] = Class38.getItemDefinition(k40, (byte) 126).method1105(107, class3_sub28_sub9_3.aClass94_3619, i62);
+															Class3.aClass94Array75[l++] = Class38.getItemDefinition(k40, (byte) 126).method1105(class3_sub28_sub9_3.aClass94_3619, i62);
 														else
 															Class140_Sub7.anIntArray2929[k++] = Class38.getItemDefinition(k40, (byte) 79).method1115(class3_sub28_sub9_3.anInt3614, -119, i62);
 														continue;
@@ -3121,7 +3121,7 @@ final class ItemDefinition {
 													if (4210 == j1) {
 														RSString class94_28 = Class3.aClass94Array75[--l];
 														int j62 = Class140_Sub7.anIntArray2929[--k];
-														NPCDefinition.method1480(j62 == 1, class94_28, 102);
+														NPCDefinition.method1480(j62 == 1, class94_28);
 														Class140_Sub7.anIntArray2929[k++] = Class62.anInt952;
 														continue;
 													}
@@ -3158,7 +3158,7 @@ final class ItemDefinition {
 													RSString class94_31 = Class3.aClass94Array75[--l];
 													int l62 = Class140_Sub7.anIntArray2929[--k];
 													Class3.aClass94Array75[l++] = RenderAnimationDefinition.method903(new RSString[]{
-															class94_31, Class61.method1218(true, 127, l62)
+															class94_31, Class61.method1218(l62)
 													}, (byte) -119);
 													continue;
 												}
@@ -3235,7 +3235,7 @@ final class ItemDefinition {
 													int k63 = Class140_Sub7.anIntArray2929[--k];
 													if (k63 == -1)
 														throw new RuntimeException("null char");
-													Class3.aClass94Array75[l++] = class94_38.method1548(false, k63);
+													Class3.aClass94Array75[l++] = class94_38.method1548(k63);
 													continue;
 												}
 												if (j1 == 4113) {
@@ -3255,7 +3255,7 @@ final class ItemDefinition {
 												}
 												if (4116 == j1) {
 													int i42 = Class140_Sub7.anIntArray2929[--k];
-													Class140_Sub7.anIntArray2929[k++] = Class3_Sub28_Sub3.method544(-49, i42) ? 1 : 0;
+													Class140_Sub7.anIntArray2929[k++] = Class3_Sub28_Sub3.method544(i42) ? 1 : 0;
 													continue;
 												}
 												if (j1 == 4117) {
@@ -3852,7 +3852,7 @@ final class ItemDefinition {
 					break;
 				try {
 					boolean flag2 = 0 != Class140_Sub7.anIntArray2929[--k];
-					Class102.player.class52.method1159(flag2, true);
+					Class102.player.class52.method1159(flag2);
 				} catch (Exception e) {
 					System.out.println(e);
 				}
@@ -3864,12 +3864,12 @@ final class ItemDefinition {
 	}
 
 
-	private RSString method1105(int var1, RSString var2, int var3) {
+	private RSString method1105(RSString var2, int var3) {
 		try {
 			if(this.aClass130_798 == null) {
 				return var2;
 			} else {
-				if(var1 < 90) {
+				if(107 < 90) {
 					method1111(-111);
 				}
 
@@ -3877,7 +3877,7 @@ final class ItemDefinition {
 				return null != var4?var4.aClass94_2586:var2;
 			}
 		} catch (RuntimeException var5) {
-			throw Class44.clientError(var5, "h.S(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+			throw Class44.clientError(var5, "h.S(" + 107 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
 		}
 	}
 
@@ -4094,12 +4094,12 @@ final class ItemDefinition {
 		}
 	}
 
-	final void parseDefinitions(int var1, RSByteBuffer buffer) {
+	final void parseDefinitions(RSByteBuffer buffer) {
 		try {
 			while(true) {
 				int opcode = buffer.getByte((byte)-72);
 				if(0 == opcode) {
-					if(var1 != 1) {
+					if(1 != 1) {
 						this.anInt789 = -40;
 					}
 
@@ -4109,7 +4109,7 @@ final class ItemDefinition {
 				this.parseOpcode(buffer, opcode);
 			}
 		} catch (RuntimeException var4) {
-			throw Class44.clientError(var4, "h.M(" + var1 + ',' + (buffer != null?"{...}":"null") + ')');
+			throw Class44.clientError(var4, "h.M(" + 1 + ',' + (buffer != null?"{...}":"null") + ')');
 		}
 	}
 

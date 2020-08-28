@@ -128,7 +128,7 @@ final class Class2 {
 				}
 
 				if(var1 != 0) {
-					if((5 > var1 || var1 == 10) && Class86.aClass91Array1182[WorldListCountry.localPlane].method1488(var4, var12, false, var13, var8, -1 + var1, 2, var7)) {
+					if((5 > var1 || var1 == 10) && Class86.aClass91Array1182[WorldListCountry.localPlane].method1488(var4, var12, var13, var8, -1 + var1, 2, var7)) {
 						var16 = true;
 						break;
 					}
@@ -139,7 +139,7 @@ final class Class2 {
 					}
 				}
 
-				if(0 != var0 && var6 != 0 && Class86.aClass91Array1182[WorldListCountry.localPlane].method1498(true, var8, var13, var12, 2, var0, var2, var4, var6)) {
+				if(0 != var0 && var6 != 0 && Class86.aClass91Array1182[WorldListCountry.localPlane].method1498(var8, var13, var12, 2, var0, var2, var4, var6)) {
 					var16 = true;
 					break;
 				}
@@ -309,7 +309,7 @@ final class Class2 {
 			if(var3 == null) {
 				KeyboardListener.aClass153_1916.method2144(this.anInt64);
 				int var4 = 125 % ((var2 - -21) / 50);
-				var3 = RSString.method1539(0, this.anInt64, KeyboardListener.aClass153_1916);
+				var3 = RSString.method1539(this.anInt64, KeyboardListener.aClass153_1916);
 				if(var3 != null) {
 					var3.method1668(Class102.anInt2136, Class46.anInt740, Class158.anInt2015);
 					var3.anInt1469 = var3.anInt1461;

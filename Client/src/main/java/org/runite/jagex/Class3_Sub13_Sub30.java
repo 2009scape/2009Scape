@@ -133,20 +133,20 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
             method312(77, -52, -42, (Player)null, 120);
          }
 
-         Class166.method2257(96);
+         Class166.method2257();
          Class3_Sub8.method128();
-         Class163_Sub2_Sub1.method2220(0);
+         Class163_Sub2_Sub1.method2220();
          Class3_Sub10.method139(69);
          Class3_Sub26.method512();
          Class104.method1626((byte)-128);
-         Class3_Sub13_Sub3.method182(true);
+         Class3_Sub13_Sub3.method182();
          Class145.method2077();
          Class25.method959();
          Class3_Sub28_Sub19.method716();
          Class3_Sub15.method370();
          Class3_Sub13_Sub29.method304();
          Class40.method1045();
-         Class3_Sub13_Sub3.method183(-108);
+         Class3_Sub13_Sub3.method183();
          Class3_Sub29.method727();
          Class3_Sub21.method397((byte)-41);
          if(Class3_Sub13_Sub13.anInt3148 != 0) {
@@ -257,7 +257,7 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
                int var20 = var19 >> 2;
                int var21 = 3 & var19;
                if(var18 == var3 && var8 <= var17 && var17 < 8 + var8 && var9 <= var16 && 8 + var9 > var16) {
-                  ObjectDefinition var22 = Class162.getObjectDefinition(4, var12);
+                  ObjectDefinition var22 = Class162.getObjectDefinition(var12);
                   int var23 = Class3_Sub7.method121(var16 & 7, var4, var21, var22.SizeY, var22.SizeX, 7 & var17) + var5;
                   int var24 = GameObject.method1863(var22.SizeX, var4, var22.SizeY, 7 & var17, var21, 7 & var16) + var6;
                   if(var23 > 0 && var24 > 0 && var23 < 103 && var24 < 103) {

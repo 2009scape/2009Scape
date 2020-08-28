@@ -47,9 +47,9 @@ final class AnimationDefinition {
 		}
 	}
 
-	final void method2053(RSByteBuffer var1, byte var2) {
+	final void method2053(RSByteBuffer var1) {
 		try {
-			if(var2 != -102) {
+			if((byte) -102 != -102) {
 				this.method2055((Model)null, (byte)88, 7, 103, 54);
 			}
 		//	System.out.print("Animation " + animId + " - parsed [");
@@ -63,7 +63,7 @@ final class AnimationDefinition {
 				this.method2060(var3, var1);
 			}
 		} catch (RuntimeException var4) {
-			throw Class44.clientError(var4, "tk.I(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+			throw Class44.clientError(var4, "tk.I(" + (var1 != null?"{...}":"null") + ',' + (byte) -102 + ')');
 		}
 	}
 

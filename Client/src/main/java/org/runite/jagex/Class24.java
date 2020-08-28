@@ -129,7 +129,7 @@ final class Class24 {
                   int var15 = var1 + var13;
                   int var14 = buffer.getByte((byte)-94) >> 2;
                   if(var15 > 0 && var16 > 0 && 103 > var15 && 103 > var16) {
-                     ObjectDefinition var17 = Class162.getObjectDefinition(4, var7);
+                     ObjectDefinition var17 = Class162.getObjectDefinition(var7);
                      if(var14 != 22 || KeyboardListener.aBoolean1905 || 0 != var17.SecondInt || var17.ClipType == 1 || var17.aBoolean1483) {
                         var10 = true;
                         if(!var17.hasModels()) {
@@ -149,7 +149,7 @@ final class Class24 {
    static void renderLocalNPCs() {
       try {
          GraphicDefinition.incomingBuffer.setBitAccess((byte)-98);
-         int var1 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 8);
+         int var1 = GraphicDefinition.incomingBuffer.getBits(8);
          int var2;
          if(var1 < Class163.localNPCCount) {
             for(var2 = var1; var2 < Class163.localNPCCount; ++var2) {
@@ -165,12 +165,12 @@ final class Class24 {
             for(var2 = 0; var1 > var2; ++var2) {
                int var3 = Class15.localNPCIndexes[var2];
                NPC var4 = Class3_Sub13_Sub24.npcs[var3];
-               int var5 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 1);
+               int var5 = GraphicDefinition.incomingBuffer.getBits(1);
                if(0 == var5) {
                   Class15.localNPCIndexes[Class163.localNPCCount++] = var3;
                   var4.anInt2838 = Class44.anInt719;
                } else {
-                  int var6 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 2);
+                  int var6 = GraphicDefinition.incomingBuffer.getBits(2);
                   if(var6 == 0) {
                      Class15.localNPCIndexes[Class163.localNPCCount++] = var3;
                      var4.anInt2838 = Class44.anInt719;
@@ -181,26 +181,26 @@ final class Class24 {
                      if(1 == var6) {
                         Class15.localNPCIndexes[Class163.localNPCCount++] = var3;
                         var4.anInt2838 = Class44.anInt719;
-                        var7 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 3);
+                        var7 = GraphicDefinition.incomingBuffer.getBits(3);
                         var4.walkStep(1, (byte)32, var7);
-                        var8 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 1);
+                        var8 = GraphicDefinition.incomingBuffer.getBits(1);
                         if(1 == var8) {
                            Class21.maskUpdateIndexes[Class66.maskUpdateCount++] = var3;
                         }
                      } else if (var6 == 2) {
                         Class15.localNPCIndexes[Class163.localNPCCount++] = var3;
                         var4.anInt2838 = Class44.anInt719;
-                        if (GraphicDefinition.incomingBuffer.getBits((byte) -11, 1) == 1) {
-                           var7 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 3);
+                        if (GraphicDefinition.incomingBuffer.getBits(1) == 1) {
+                           var7 = GraphicDefinition.incomingBuffer.getBits(3);
                            var4.walkStep(2, (byte) -122, var7);
-                           var8 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 3);
+                           var8 = GraphicDefinition.incomingBuffer.getBits(3);
                            var4.walkStep(2, (byte) 85, var8);
                         } else {
-                           var7 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 3);
+                           var7 = GraphicDefinition.incomingBuffer.getBits(3);
                            var4.walkStep(0, (byte) -80, var7);
                         }
 
-                        var7 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 1);
+                        var7 = GraphicDefinition.incomingBuffer.getBits(1);
                         if (var7 == 1) {
                            Class21.maskUpdateIndexes[Class66.maskUpdateCount++] = var3;
                         }
@@ -301,10 +301,10 @@ final class Class24 {
       }
    }
 
-   final boolean method948(int var1) {
+   final boolean method948() {
       try {
          boolean var2 = true;
-         if(var1 != 18991) {
+         if(18991 != 18991) {
             this.aShortArray460 = (short[])null;
          }
 
@@ -316,7 +316,7 @@ final class Class24 {
 
          return var2;
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "dm.B(" + var1 + ')');
+         throw Class44.clientError(var4, "dm.B(" + 18991 + ')');
       }
    }
 

@@ -186,15 +186,15 @@ final class NPC extends Class140_Sub4 {
 		}
 	}
 
-	final boolean hasDefinitions(byte var1) {
+	final boolean hasDefinitions() {
 		try {
-			if(var1 != 17) {
+			if((byte) 17 != 17) {
 				method1984(-101, -40, 63);
 			}
 
 			return null != this.definition;
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "km.L(" + var1 + ')');
+			throw Class44.clientError(var3, "km.L(" + (byte) 17 + ')');
 		}
 	}
 

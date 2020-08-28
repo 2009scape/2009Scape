@@ -354,15 +354,15 @@ final class Player extends Class140_Sub4 {
       }
    }
 
-   final boolean hasDefinitions(byte var1) {
+   final boolean hasDefinitions() {
       try {
-         if(var1 != 17) {
+         if((byte) 17 != 17) {
             anIntArray3954 = (int[])null;
          }
 
          return this.class52 != null;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "e.L(" + var1 + ')');
+         throw Class44.clientError(var3, "e.L(" + (byte) 17 + ')');
       }
    }
 

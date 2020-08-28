@@ -196,7 +196,7 @@ final class RSInterface {
    final boolean method855() {
       try {
          if(this.anIntArray207 == null) {
-            LDIndexedSprite var2 = RSString.method1539(0, this.spriteArchiveId, Class12.aClass153_323);
+            LDIndexedSprite var2 = RSString.method1539(this.spriteArchiveId, Class12.aClass153_323);
             if(null == var2) {
                return false;
             } else {
@@ -602,9 +602,9 @@ final class RSInterface {
       }
    }
 
-   private Object[] method862(int var1, RSByteBuffer var2) {
+   private Object[] method862(RSByteBuffer var2) {
       try {
-         if(var1 == -65536) {
+         if(-65536 == -65536) {
             int var3 = var2.getByte((byte)-103);
             if(var3 == 0) {
                return null;
@@ -627,7 +627,7 @@ final class RSInterface {
             return (Object[])null;
          }
       } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "be.K(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var7, "be.K(" + -65536 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -1018,26 +1018,26 @@ final class RSInterface {
          }
 
          this.aClass3_Sub1_257 = new Class3_Sub1(var3, var8);
-         this.anObjectArray159 = this.method862(-65536, buffer);
-         this.anObjectArray248 = this.method862(-1 + -65535, buffer);
-         this.anObjectArray281 = this.method862(-65536, buffer);
-         this.anObjectArray303 = this.method862(-1 ^ '\uffff', buffer);
-         this.anObjectArray203 = this.method862(-65536, buffer);
-         this.anObjectArray282 = this.method862(-1 ^ '\uffff', buffer);
-         this.anObjectArray174 = this.method862(-1 + -65535, buffer);
-         this.anObjectArray158 = this.method862(-65536, buffer);//.?
-         this.anObjectArray269 = this.method862(-65536, buffer);
-         this.anObjectArray314 = this.method862(-1 ^ '\uffff', buffer);
-         this.anObjectArray276 = this.method862(-65536, buffer);
-         this.anObjectArray165 = this.method862(-65536, buffer);
-         this.anObjectArray170 = this.method862(-1 ^ '\uffff', buffer);
-         this.anObjectArray239 = this.method862(-1 ^ '\uffff', buffer);
-         this.anObjectArray180 = this.method862(-65536, buffer);
-         this.anObjectArray295 = this.method862(-65536, buffer);
-         this.anObjectArray229 = this.method862(-65536, buffer);
-         this.anObjectArray183 = this.method862(-65536, buffer);
-         this.anObjectArray161 = this.method862(-65536, buffer);
-         this.anObjectArray221 = this.method862(-65536, buffer);
+         this.anObjectArray159 = this.method862(buffer);
+         this.anObjectArray248 = this.method862(buffer);
+         this.anObjectArray281 = this.method862(buffer);
+         this.anObjectArray303 = this.method862(buffer);
+         this.anObjectArray203 = this.method862(buffer);
+         this.anObjectArray282 = this.method862(buffer);
+         this.anObjectArray174 = this.method862(buffer);
+         this.anObjectArray158 = this.method862(buffer);//.?
+         this.anObjectArray269 = this.method862(buffer);
+         this.anObjectArray314 = this.method862(buffer);
+         this.anObjectArray276 = this.method862(buffer);
+         this.anObjectArray165 = this.method862(buffer);
+         this.anObjectArray170 = this.method862(buffer);
+         this.anObjectArray239 = this.method862(buffer);
+         this.anObjectArray180 = this.method862(buffer);
+         this.anObjectArray295 = this.method862(buffer);
+         this.anObjectArray229 = this.method862(buffer);
+         this.anObjectArray183 = this.method862(buffer);
+         this.anObjectArray161 = this.method862(buffer);
+         this.anObjectArray221 = this.method862(buffer);
          this.anIntArray286 = this.method863(buffer);
          this.anIntArray175 = this.method863(buffer);
          this.anIntArray274 = this.method863(buffer);

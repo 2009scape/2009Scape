@@ -89,7 +89,7 @@ final class Class20 {
          int var19 = (519128 & (int)var7) >> 14;
           boolean var11 = false;
           int var17 = (int)(var7 >>> 32) & Integer.MAX_VALUE;
-          ObjectDefinition var12 = Class162.getObjectDefinition(4, var17);
+          ObjectDefinition var12 = Class162.getObjectDefinition(var17);
           if(var12.method1690()) {
              Class140_Sub6.method2020(var2, var12, var1, var3);
           }
@@ -121,7 +121,7 @@ final class Class20 {
                 }
 
                 if (var12.ClipType != 0 && var12.SizeX + var2 < 104 && var12.SizeX + var1 < 104 && 104 > var2 + var12.SizeY && var1 + var12.SizeY < 104) {
-                   var6.method1502(20851, var2, var12.SizeX, var12.ProjectileClipped, var18, var12.SizeY, var1);
+                   var6.method1502(var2, var12.SizeX, var12.ProjectileClipped, var18, var12.SizeY, var1);
                 }
              } else {
                 Class12 var22 = Class159.method2193(var3, var2, var1);

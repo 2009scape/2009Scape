@@ -27,13 +27,13 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
    static LDIndexedSprite[] aClass109_Sub1Array4027;
 
 
-   static void method2220(int var0) {
+   static void method2220() {
       try {
-         if(var0 == 0) {
+         if(0 == 0) {
             Class140_Sub4.aClass93_2792.method1524();
          }
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "t.H(" + var0 + ')');
+         throw Class44.clientError(var2, "t.H(" + 0 + ')');
       }
    }
 
@@ -120,7 +120,7 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
          if(var5 != 10 && var5 != 11 && var5 != 22) {
             Class3_Sub28_Sub9.method582(Class102.player.anIntArray2755[0], var6, 0, true, 0, 2, var4, 0, 1 + var5, 2, var3, Class102.player.anIntArray2767[0]);
          } else {
-            ObjectDefinition var8 = Class162.getObjectDefinition(4, var7);
+            ObjectDefinition var8 = Class162.getObjectDefinition(var7);
             int var9;
             int var10;
             if(var6 == 0 || var6 == 2) {

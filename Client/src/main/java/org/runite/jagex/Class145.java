@@ -785,7 +785,7 @@ final class Class145 {
             } else {
                var2 = new Class29();
                if(null != var3) {
-                  var2.method970(-20638, new RSByteBuffer(var3));
+                  var2.method970(new RSByteBuffer(var3));
                }
 
                Class136.aClass93_1772.put((byte)-108, var2, (long)var1);

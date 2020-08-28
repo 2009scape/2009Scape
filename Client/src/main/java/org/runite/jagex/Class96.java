@@ -80,7 +80,7 @@ final class Class96 {
                                  }
 
                                  --var2;
-                                 ObjectDefinition var3 = Class162.getObjectDefinition(4, var2);
+                                 ObjectDefinition var3 = Class162.getObjectDefinition(var2);
                                  if(null != var3.ChildrenIds) {
                                     var3 = var3.method1685(0);
                                     if(var3 == null || var3.MapIcon == -1) {

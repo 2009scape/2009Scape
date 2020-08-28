@@ -135,7 +135,7 @@ final class Class71 {
          var2 = 0;
 
          for(var3 = Class3_Sub14.method368(5) + 1; var2 < this.anInt1065; ++var3) {
-            int var4 = Class3_Sub14.method368(Class3_Sub26.method513(this.anInt1065 - var2, 4));
+            int var4 = Class3_Sub14.method368(Class3_Sub26.method513(this.anInt1065 - var2));
 
             for(var5 = 0; var5 < var4; ++var5) {
                this.anIntArray1061[var2++] = var3;

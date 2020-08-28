@@ -110,7 +110,7 @@ class Class127 {
                   Class3_Sub13_Sub1.outgoingBuffer.putLong(Class3_Sub28_Sub14.username.toLong(var0 + -116), var0 + -2037491431);
                   Class3_Sub13_Sub1.outgoingBuffer.putString(Class3_Sub28_Sub14.password);
                   Class3_Sub13_Sub1.method229();
-                  Class3_Sub13_Sub1.outgoingBuffer.encryptRSA(Class3_Sub13_Sub14.aBigInteger3162, Class3_Sub13_Sub37.aBigInteger3441, -296);
+                  Class3_Sub13_Sub1.outgoingBuffer.encryptRSA(Class3_Sub13_Sub14.aBigInteger3162, Class3_Sub13_Sub37.aBigInteger3441);
                   Class151_Sub1.aClass3_Sub30_Sub1_2942.index = 0;
                   if(40 == Class143.loadingStage) {
                      Class151_Sub1.aClass3_Sub30_Sub1_2942.putByte((byte)-81, 18);

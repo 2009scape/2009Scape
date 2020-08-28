@@ -47,7 +47,7 @@ final class Class3_Sub10 extends Class3 {
 
             def = new RenderAnimationDefinition();
             if(var3 != null) {
-               def.parse(-1, new RSByteBuffer(var3));
+               def.parse(new RSByteBuffer(var3));
             }
 
             def.method899();

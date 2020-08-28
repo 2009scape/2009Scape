@@ -83,7 +83,7 @@ final class Class40 {
       }
    }
 
-   static void method1046(int var0) {
+   static void method1046() {
       try {
          Class163_Sub1.method2210(false);
          Class3_Sub13_Sub24.anInt3293 = 0;
@@ -181,7 +181,7 @@ final class Class40 {
                }
             }
 
-            if(var0 >= -92) {
+            if(-117 >= -92) {
                method1042(true);
             }
 
@@ -206,7 +206,7 @@ final class Class40 {
                Class3_Sub4.method110(HDToolKit.highDetail?28:25, var11);
 
                for(var12 = 0; 4 > var12; ++var12) {
-                  Class86.aClass91Array1182[var12].method1496(0);
+                  Class86.aClass91Array1182[var12].method1496();
                }
 
                for(var12 = 0; var12 < 4; ++var12) {
@@ -374,7 +374,7 @@ final class Class40 {
             Class163_Sub2_Sub1.anInt4019 = 1;
          }
       } catch (RuntimeException var10) {
-         throw Class44.clientError(var10, "gd.F(" + var0 + ')');
+         throw Class44.clientError(var10, "gd.F(" + -117 + ')');
       }
    }
 

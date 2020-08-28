@@ -199,7 +199,7 @@ final class Class3_Sub28_Sub6 extends Node {
          var8.putShort(var7);
          var8.putShort(var2);
          var8.putInt(-127, (int)(9.9999999E7D * Math.random()));
-         var8.encryptRSA(Class3_Sub13_Sub14.aBigInteger3162, Class3_Sub13_Sub37.aBigInteger3441, -296);
+         var8.encryptRSA(Class3_Sub13_Sub14.aBigInteger3162, Class3_Sub13_Sub37.aBigInteger3441);
          Class3_Sub13_Sub1.outgoingBuffer.index = 0;
          Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-46, 36);
          Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-41, var8.index);
@@ -243,17 +243,17 @@ final class Class3_Sub28_Sub6 extends Node {
       }
    }
 
-   static void h(byte var0) {
+   static void h() {
       try {
          Class114.aClass93_1569.method1523((byte)-109);
-         if(var0 != 3) {
+         if((byte) 3 != 3) {
             aBoolean3594 = false;
          }
 
          Class3_Sub15.aClass93_2428.method1523((byte)-123);
          Class47.aClass93_743.method1523((byte)-106);
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "da.E(" + var0 + ')');
+         throw Class44.clientError(var2, "da.E(" + (byte) 3 + ')');
       }
    }
 

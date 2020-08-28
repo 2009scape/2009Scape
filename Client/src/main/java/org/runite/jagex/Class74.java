@@ -61,9 +61,9 @@ final class Class74 {
 
    }
 
-   private static void method1313(int var0, int var1, int var2) {
+   private static void method1313(int var0, int var1) {
       if(var0 >= anInt1093 && var1 >= anInt1095 && var0 < anInt1096 && var1 < anInt1099) {
-         anIntArray1100[var0 + var1 * anInt1092] = var2;
+         anIntArray1100[var0 + var1 * anInt1092] = 16776960;
       }
    }
 
@@ -422,7 +422,7 @@ final class Class74 {
 
    private static void method1329(int var0, int var1, int var2) {
       if(var2 == 0) {
-         method1313(var0, var1, 16776960);
+         method1313(var0, var1);
       } else {
          if(var2 < 0) {
             var2 = -var2;

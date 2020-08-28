@@ -53,7 +53,7 @@ final class Class136 {
                            int var28 = (63 & var17 + var4) + (4032 & var9 + var23 << 6);
                            int var29 = var22[var27][var28];
                            if(var29 != 0) {
-                              ObjectDefinition var14 = Class162.getObjectDefinition(4, -1 + var29);
+                              ObjectDefinition var14 = Class162.getObjectDefinition(-1 + var29);
                               if(!Class3_Sub24_Sub4.aBooleanArray3503[var14.MapIcon]) {
                                  if(var13 != -1 && Class8.anInt101 == var14.MapIcon) {
                                     Class3_Sub23 var30 = new Class3_Sub23();

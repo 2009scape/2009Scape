@@ -27,7 +27,7 @@ final class Class162 {
       }
    }
 
-   static void method2204(RSByteBuffer var0, int var1) {
+   static void method2204(RSByteBuffer var0) {
       try {
          if(null != Class69.aClass30_1039) {
             try {
@@ -37,11 +37,11 @@ final class Class162 {
             }
          }
 
-         if(var1 >= 45) {
+         if(120 >= 45) {
             var0.index += 24;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "wc.E(" + "null" + ',' + var1 + ')');
+         throw Class44.clientError(var4, "wc.E(" + "null" + ',' + 120 + ')');
       }
    }
 
@@ -60,16 +60,16 @@ final class Class162 {
 
    static void method2206(int var1) {
       try {
-         Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 4, var1);
+         Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, var1);
          var2.a();
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "wc.A(" + true + ',' + var1 + ')');
       }
    }
 
-   static ObjectDefinition getObjectDefinition(int var0, int objectId) {
+   static ObjectDefinition getObjectDefinition(int objectId) {
       try {
-         if(var0 != 4) {
+         if(4 != 4) {
             method2205(95);
          }
          //36873, 24065, 22418
@@ -83,7 +83,7 @@ final class Class162 {
                var2.method1692(6219, new RSByteBuffer(var3));
             }
 
-            var2.method1689(var0 + -2120);
+            var2.method1689(4 + -2120);
             if(!Class14.aBoolean337 && var2.aBoolean1491) {
                var2.options = null;
             }
@@ -97,7 +97,7 @@ final class Class162 {
          }
          return var2;
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "wc.D(" + var0 + ',' + objectId + ')');
+         throw Class44.clientError(var4, "wc.D(" + 4 + ',' + objectId + ')');
       }
    }
 

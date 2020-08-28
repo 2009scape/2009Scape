@@ -37,7 +37,7 @@ final class Class3_Sub13_Sub17 extends Class3_Sub13 {
          }
 
          Class115.method1714();
-         Class3_Sub28_Sub6.h((byte)3);
+         Class3_Sub28_Sub6.h();
          Class107.method1650();
          MouseListeningClass.method2089();
          Class3_Sub13_Sub11.aClass93_3130.method1523((byte)-103);
@@ -202,7 +202,7 @@ final class Class3_Sub13_Sub17 extends Class3_Sub13 {
          Class3_Sub4.anInt2251 = Class108.anInt1460 * var2 / var4;
          Class82.anInt1150 = -1;
          Class3_Sub13_Sub30.anInt3362 = -1;
-         Class3_Sub5.method117((byte)87);
+         Class3_Sub5.method117();
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "je.E(" + -22611 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
       }

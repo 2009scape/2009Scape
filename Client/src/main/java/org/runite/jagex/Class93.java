@@ -40,7 +40,7 @@ final class Class93 {
 
    static void method1516(int var0, int var1) {
       try {
-         Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 3, var0);
+         Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(3, var0);
          var2.a();
          if(var1 < 87) {
             aClass94_1326 = (RSString)null;

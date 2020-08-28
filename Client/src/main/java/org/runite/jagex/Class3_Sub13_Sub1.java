@@ -115,7 +115,7 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 			Class32.method995();
 
 			for(int var1 = 0; 4 > var1; ++var1) {
-				Class86.aClass91Array1182[var1].method1496(22230 + -22230);
+				Class86.aClass91Array1182[var1].method1496();
 			}
 
 			System.gc();

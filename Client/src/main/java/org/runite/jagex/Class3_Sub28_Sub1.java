@@ -37,10 +37,10 @@ final class Class3_Sub28_Sub1 extends Node {
       }
    }
 
-   final int method526(int var1, int var2) {
+   final int method526(int var1) {
       try {
          if (this.anIntArray3540 != null) {
-            for (int var3 = var2; this.anIntArray3540.length > var3; ++var3) {
+            for (int var3 = 0; this.anIntArray3540.length > var3; ++var3) {
                if (var1 == this.anIntArray3533[var3]) {
                   return this.anIntArray3540[var3];
                }
@@ -49,7 +49,7 @@ final class Class3_Sub28_Sub1 extends Node {
          }
          return -1;
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "bc.Q(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "bc.Q(" + var1 + ',' + 0 + ')');
       }
    }
 

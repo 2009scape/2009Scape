@@ -432,7 +432,7 @@ final class Class47 {
                            for (var28 = 0; var28 < 29; ++var28) { //TODO:
                               var25 += RSByteBuffer.aClass151_Sub1Array2601[var28].method2108();
                               var26 += RSByteBuffer.aClass151_Sub1Array2601[var28].method2102();
-                              var47 += RSByteBuffer.aClass151_Sub1Array2601[var28].method2106(1);
+                              var47 += RSByteBuffer.aClass151_Sub1Array2601[var28].method2106();
                            }
 
                            var29 = 10000 * var26 / var25;

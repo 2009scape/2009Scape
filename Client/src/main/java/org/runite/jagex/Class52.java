@@ -27,7 +27,7 @@ final class Class52 {
          if(null == var11) {
             Model_Sub1[] var12 = new Model_Sub1[3];
             int var13 = 0;
-            if(!Class3_Sub13_Sub13.method231(var3).method948(-2012759707 ^ -2012744886) || !Class3_Sub13_Sub13.method231(var7).method948(18991) || !Class3_Sub13_Sub13.method231(var2).method948(18991)) {
+            if(!Class3_Sub13_Sub13.method231(var3).method948() || !Class3_Sub13_Sub13.method231(var7).method948() || !Class3_Sub13_Sub13.method231(var2).method948()) {
                return null;
             }
 
@@ -96,16 +96,16 @@ final class Class52 {
       }
    }
 
-   final void method1159(boolean var1, boolean var2) {
+   final void method1159(boolean var1) {
       try {
-         if(!var2) {
+         if(!true) {
             anIntArray859 = (int[])null;
          }
 
          this.aBoolean864 = var1;
          this.method1158();
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "hh.A(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "hh.A(" + var1 + ',' + true + ')');
       }
    }
 
@@ -556,7 +556,7 @@ final class Class52 {
             }
 
             if(0 != var7) {
-               if((var7 < 5 || 10 == var7) && Class86.aClass91Array1182[WorldListCountry.localPlane].method1488(var0, var13, false, var14, var6, var7 + -1, var5, var4)) {
+               if((var7 < 5 || 10 == var7) && Class86.aClass91Array1182[WorldListCountry.localPlane].method1488(var0, var13, var14, var6, var7 + -1, var5, var4)) {
                   var17 = true;
                   break;
                }
@@ -567,7 +567,7 @@ final class Class52 {
                }
             }
 
-            if(var2 != 0 && -1 != ~var10 && Class86.aClass91Array1182[WorldListCountry.localPlane].method1498(true, var6, var14, var13, var5, var2, var8, var0, var10)) {
+            if(var2 != 0 && -1 != ~var10 && Class86.aClass91Array1182[WorldListCountry.localPlane].method1498(var6, var14, var13, var5, var2, var8, var0, var10)) {
                var17 = true;
                break;
             }
@@ -834,7 +834,7 @@ final class Class52 {
                for(int var8 = 0; var8 < 12; ++var8) {
                   var9 = this.lookInfo[var8];
                   if(0 == (1073741824 & var9)) {
-                     if(~(var9 & Integer.MIN_VALUE) != -1 && !Class3_Sub13_Sub13.method231(var9 & 1073741823).method948(18991)) {
+                     if(~(var9 & Integer.MIN_VALUE) != -1 && !Class3_Sub13_Sub13.method231(var9 & 1073741823).method948()) {
                         var7 = true;
                      }
                   } else if(!Class38.getItemDefinition(1073741823 & var9, (byte)127).method1102(this.aBoolean864)) {

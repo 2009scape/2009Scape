@@ -30,7 +30,7 @@ final class Class102 implements Interface2 {
 
          for(Class3_Sub28_Sub20 var3 = (Class3_Sub28_Sub20)this.aClass47_2142.method1094(); null != var3; var3 = (Class3_Sub28_Sub20)this.aClass47_2142.method1099()) {
             if(var3.aBoolean3797) {
-               var3.method723(var2, (byte)-120);
+               var3.method723(var2);
                var3.aBoolean3797 = false;
             }
          }
@@ -51,7 +51,7 @@ final class Class102 implements Interface2 {
          int var10;
          for(var2 = 0; var2 < Class163.localNPCCount; ++var2) {
             var3 = Class3_Sub13_Sub24.npcs[Class15.localNPCIndexes[var2]];
-            if(null != var3 && var3.hasDefinitions((byte)17) && var3.definition.aBoolean1263 == var1 && var3.definition.method1472()) {
+            if(null != var3 && var3.hasDefinitions() && var3.definition.aBoolean1263 == var1 && var3.definition.method1472()) {
                int var4 = var3.getSize();
                int var5;
                if(1 != var4) {
@@ -96,7 +96,7 @@ final class Class102 implements Interface2 {
          for(var2 = 0; Class163.localNPCCount > var2; ++var2) {
             var3 = Class3_Sub13_Sub24.npcs[Class15.localNPCIndexes[var2]];
             long var15 = (long)Class15.localNPCIndexes[var2] << 32 | 536870912L;
-            if(var3 != null && var3.hasDefinitions((byte)17) && !var3.definition.aBoolean1263 == !var1 && var3.definition.method1472()) {
+            if(var3 != null && var3.hasDefinitions() && !var3.definition.aBoolean1263 == !var1 && var3.definition.method1472()) {
                var6 = var3.getSize();
                if(var6 != 1) {
                   if((var6 & 1) == 0 && (var3.anInt2819 & 127) == 0 && (127 & var3.anInt2829) == 0 || (var6 & 1) == 1 && (var3.anInt2819 & 127) == 64 && (127 & var3.anInt2829) == 64) {

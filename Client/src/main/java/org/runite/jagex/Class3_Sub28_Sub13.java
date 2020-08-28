@@ -14,9 +14,9 @@ final class Class3_Sub28_Sub13 extends Node {
    private int anInt3667;
 
 
-   private void method615(int var1, RSByteBuffer var2, byte var3) {
+   private void method615(int var1, RSByteBuffer var2) {
       try {
-         if(var3 > -29) {
+         if((byte) -84 > -29) {
             anInt3657 = 70;
          }
 
@@ -46,7 +46,7 @@ final class Class3_Sub28_Sub13 extends Node {
          }
 
       } catch (RuntimeException var8) {
-         throw Class44.clientError(var8, "ml.C(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var8, "ml.C(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (byte) -84 + ')');
       }
    }
 
@@ -172,7 +172,7 @@ final class Class3_Sub28_Sub13 extends Node {
                if(0 <= var5 && (Class75.anInt1108 == 0 || var5 <= Class75.anInt1108)) {
                   byte[] var6 = new byte[var5];
                   if(1 == var3) {
-                     Class105.method1640(var6, var5, var1, var4);
+                     Class105.method1640(var6, var5, var1);
                   } else {
                      Class3_Sub22.aClass49_2505.method1128(var6, var2);
                   }
@@ -210,7 +210,7 @@ final class Class3_Sub28_Sub13 extends Node {
                return;
             }
 
-            this.method615(var3, var1, (byte)-84);
+            this.method615(var3, var1);
          }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ml.Q(" + (var1 != null?"{...}":"null") + ',' + -122 + ')');

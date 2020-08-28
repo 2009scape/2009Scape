@@ -31,9 +31,9 @@ final class Class151_Sub1 extends Class151 {
    static void updateLocalPosition() {
       try {
          GraphicDefinition.incomingBuffer.setBitAccess((byte)118);
-         int opcode = GraphicDefinition.incomingBuffer.getBits((byte)-11, 1);
+         int opcode = GraphicDefinition.incomingBuffer.getBits(1);
          if(opcode != 0) {
-            int type = GraphicDefinition.incomingBuffer.getBits((byte)-11, 2);
+            int type = GraphicDefinition.incomingBuffer.getBits(2);
             if(0 == type) {
                Class21.maskUpdateIndexes[Class66.maskUpdateCount++] = 2047;
             } else {
@@ -41,39 +41,39 @@ final class Class151_Sub1 extends Class151 {
                int var4;
                int var5;
                if(type == 1) { //Walk
-                  var4 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 3);
+                  var4 = GraphicDefinition.incomingBuffer.getBits(3);
                   Class102.player.walkStep(1, (byte)-128, var4);
-                  var5 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 1);
+                  var5 = GraphicDefinition.incomingBuffer.getBits(1);
                   if(var5 == 1) {
                      Class21.maskUpdateIndexes[Class66.maskUpdateCount++] = 2047;
                   }
 
                } else if(2 == type) {
-                  if(GraphicDefinition.incomingBuffer.getBits((byte)-11, 1) == 1) {
-                     var4 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 3);
+                  if(GraphicDefinition.incomingBuffer.getBits(1) == 1) {
+                     var4 = GraphicDefinition.incomingBuffer.getBits(3);
                      Class102.player.walkStep(2, (byte)-104, var4);
-                     var5 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 3);
+                     var5 = GraphicDefinition.incomingBuffer.getBits(3);
                      Class102.player.walkStep(2, (byte)-126, var5);
                   } else {
-                     var4 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 3);
+                     var4 = GraphicDefinition.incomingBuffer.getBits(3);
                      Class102.player.walkStep(0, (byte)-109, var4);
                   }
 
-                  var4 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 1);
+                  var4 = GraphicDefinition.incomingBuffer.getBits(1);
                   if(var4 == 1) {
                      Class21.maskUpdateIndexes[Class66.maskUpdateCount++] = 2047;
                   }
 
                } else if (type == 3) {
-                  var4 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 7);
-                  var5 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 1);
-                  WorldListCountry.localPlane = GraphicDefinition.incomingBuffer.getBits((byte) -11, 2);
-                  int var6 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 1);
+                  var4 = GraphicDefinition.incomingBuffer.getBits(7);
+                  var5 = GraphicDefinition.incomingBuffer.getBits(1);
+                  WorldListCountry.localPlane = GraphicDefinition.incomingBuffer.getBits(2);
+                  int var6 = GraphicDefinition.incomingBuffer.getBits(1);
                   if (var6 == 1) {
                      Class21.maskUpdateIndexes[Class66.maskUpdateCount++] = 2047;
                   }
 
-                  int var7 = GraphicDefinition.incomingBuffer.getBits((byte) -11, 7);
+                  int var7 = GraphicDefinition.incomingBuffer.getBits(7);
                   Class102.player.method1981(var7, var5 == 1, var4);
                }
             }
@@ -240,7 +240,7 @@ final class Class151_Sub1 extends Class151 {
       }
    }
 
-   final int method2106(int var1) {
+   final int method2106() {
       try {
          if(null == this.aClass62_2944) {
             return 0;
@@ -249,7 +249,7 @@ final class Class151_Sub1 extends Class151 {
             if (null == var2) {
                return 0;
             } else {
-               if (var1 != 1) {
+               if (1 != 1) {
                   this.anInt2964 = -91;
                }
 
@@ -259,7 +259,7 @@ final class Class151_Sub1 extends Class151 {
             return this.aClass62_2944.validArchiveAmount;
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "bg.O(" + var1 + ')');
+         throw Class44.clientError(var3, "bg.O(" + 1 + ')');
       }
    }
 

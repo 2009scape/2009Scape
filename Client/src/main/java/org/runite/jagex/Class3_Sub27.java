@@ -278,7 +278,7 @@ final class Class3_Sub27 extends Class3 {
 
          while(true) {
             int var63 = var1.method741((byte)113);
-            var51.method771(17038, var63);
+            var51.method771(var63);
             int var64 = var1.buffer[var29++] & 255;
             boolean var65 = var64 != var62;
             var62 = var64 & 15;

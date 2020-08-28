@@ -16,13 +16,13 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
    static int anInt3156 = -1;
 
 
-   static void method229(int var0, int var1) {
+   static void method229(int var0) {
       try {
          if(!Class163_Sub3.aBoolean3004) {
             var0 = -1;
          }
 
-         if(var1 == 20827) {
+         if(20827 == 20827) {
             if(var0 != Class65.anInt991) {
                if(var0 != -1) {
                   Class55 var2 = Class3_Sub13_Sub29.method311(var0);
@@ -43,7 +43,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
             }
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "gg.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "gg.C(" + var0 + ',' + 20827 + ')');
       }
    }
 
@@ -437,7 +437,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                      Class60.method1207();
                      Class3_Sub13_Sub4.method189();
                      if(Class3_Sub28_Sub3.aClass11_3551 != null) {
-                        Class9.method848(4);
+                        Class9.method848();
                      }
 
                      for(var1 = Class3_Sub5.method115(true); var1 != -1; var1 = Class3_Sub5.method115(false)) {
@@ -660,7 +660,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
 
                      Class3_Sub28_Sub3.aClass11_3551 = null;
                      if(Class3_Sub28_Sub12.anInt3655 != -1) {
-                        GraphicDefinition.method967(0, 0, 2, 0, Class23.anInt454, Class3_Sub28_Sub12.anInt3655, 0, Class140_Sub7.anInt2934);
+                        GraphicDefinition.method967(0, 0, 0, Class23.anInt454, Class3_Sub28_Sub12.anInt3655, 0, Class140_Sub7.anInt2934);
                      }
 
                      ++Class3_Sub13_Sub17.anInt3213;
@@ -692,12 +692,12 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                                              var5 = 3;
                                           }
 
-                                          Class30.method979(Class102.player.anIntArray2767[0] + Class131.anInt1716, Class102.player.anIntArray2755[0] + Class82.anInt1152, var5, (byte)-4);
+                                          Class30.method979(Class102.player.anIntArray2767[0] + Class131.anInt1716, Class102.player.anIntArray2755[0] + Class82.anInt1152, var5);
                                        }
 
                                        if(Class3_Sub13_Sub26.rights > 0 && ObjectDefinition.aBooleanArray1490[82] && ObjectDefinition.aBooleanArray1490[81]) {
                                           if(-1 != Class27.anInt515) {
-                                             Class30.method979(Class131.anInt1716 + Class27.anInt515, Class82.anInt1152 - -Class66.anInt999, WorldListCountry.localPlane, (byte)-4);
+                                             Class30.method979(Class131.anInt1716 + Class27.anInt515, Class82.anInt1152 - -Class66.anInt999, WorldListCountry.localPlane);
                                           }
 
                                           ObjectDefinition.anInt1521 = 0;

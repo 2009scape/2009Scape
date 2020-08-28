@@ -43,7 +43,7 @@ final class Class9 {
    int anInt147;
 
 
-   static void method848(int var0) {
+   static void method848() {
       try {
          if(Class44.aFloat727 < NPC.aFloat3979) {
             Class44.aFloat727 = (float)((double)Class44.aFloat727 + (double)Class44.aFloat727 / 30.0D);
@@ -51,14 +51,14 @@ final class Class9 {
                Class44.aFloat727 = NPC.aFloat3979;
             }
 
-            Class3_Sub5.method117((byte)87);
+            Class3_Sub5.method117();
          } else if(NPC.aFloat3979 < Class44.aFloat727) {
             Class44.aFloat727 = (float)((double)Class44.aFloat727 - (double)Class44.aFloat727 / 30.0D);
             if(NPC.aFloat3979 > Class44.aFloat727) {
                Class44.aFloat727 = NPC.aFloat3979;
             }
 
-            Class3_Sub5.method117((byte)87);
+            Class3_Sub5.method117();
          }
 
          if(Class82.anInt1150 != -1 && -1 != Class3_Sub13_Sub30.anInt3362) {
@@ -79,15 +79,15 @@ final class Class9 {
                Class3_Sub13_Sub30.anInt3362 = -1;
             }
 
-            Class3_Sub5.method117((byte)87);
+            Class3_Sub5.method117();
          }
 
-         if(var0 != 4) {
+         if(4 != 4) {
             aClass94_132 = (RSString)null;
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "bb.A(" + var0 + ')');
+         throw Class44.clientError(var3, "bb.A(" + 4 + ')');
       }
    }
 

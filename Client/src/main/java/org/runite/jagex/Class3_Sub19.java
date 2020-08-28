@@ -63,13 +63,13 @@ final class Class3_Sub19 extends Class3 {
                for(var7 = 0; 104 > var7; ++var7) {
                   long var20 = Class3_Sub2.method104(WorldListCountry.localPlane, var6 + 0, var7 - -var3);
                   if(var20 != 0) {
-                     ObjectDefinition var10 = Class162.getObjectDefinition(4, (int)(var20 >>> 32) & Integer.MAX_VALUE);
+                     ObjectDefinition var10 = Class162.getObjectDefinition((int)(var20 >>> 32) & Integer.MAX_VALUE);
                      int var11 = var10.MapIcon;
                      int var12;
                      if(null != var10.ChildrenIds) {
                         for(var12 = 0; var12 < var10.ChildrenIds.length; ++var12) {
                            if(-1 != var10.ChildrenIds[var12]) {
-                              ObjectDefinition var13 = Class162.getObjectDefinition(4, var10.ChildrenIds[var12]);
+                              ObjectDefinition var13 = Class162.getObjectDefinition(var10.ChildrenIds[var12]);
                               if(0 <= var13.MapIcon) {
                                  var11 = var13.MapIcon;
                                  break;
@@ -120,7 +120,7 @@ final class Class3_Sub19 extends Class3 {
 
          for(var6 = 1; var6 < 103; ++var6) {
             for(var7 = 1; 103 > var7; ++var7) {
-               if(0 == (Class9.aByteArrayArrayArray113[var1][var7 + 0][var6 - -var3] & 24) && !RSString.method1529(var3, var7, var18, var6, var5, 0, var1)) {
+               if(0 == (Class9.aByteArrayArrayArray113[var1][var7 + 0][var6 - -var3] & 24) && !RSString.method1529(var3, var7, var18, var6, var5, var1)) {
                   if(HDToolKit.highDetail) {
                      Class74.anIntArray1100 = null;
                   } else {
@@ -130,7 +130,7 @@ final class Class3_Sub19 extends Class3 {
                   return false;
                }
 
-               if(var1 < 3 && (Class9.aByteArrayArrayArray113[1 + var1][var7 + 0][var6 + var3] & 8) != 0 && !RSString.method1529(var3, var7, var18, var6, var5, 0, 1 + var1)) {
+               if(var1 < 3 && (Class9.aByteArrayArrayArray113[1 + var1][var7 + 0][var6 + var3] & 8) != 0 && !RSString.method1529(var3, var7, var18, var6, var5, 1 + var1)) {
                   if(HDToolKit.highDetail) {
                      Class74.anIntArray1100 = null;
                   } else {

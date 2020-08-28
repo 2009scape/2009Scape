@@ -17,7 +17,7 @@ final class Class82 {
 
    final int[] method1404(int var1, boolean var2, int var3, double var4, CacheIndex var7, Interface2 var8, boolean var9) {
       try {
-         GameObject.method1859(var4, 327680 ^ 359938);
+         GameObject.method1859(var4);
          Class17.anInterface2_408 = var8;
          Class104.aClass153_2172 = var7;
          Class3_Sub13_Sub3.method180(-1, var1, var3);
@@ -132,7 +132,7 @@ final class Class82 {
                var8 = Class3_Sub13_Sub24.npcs[Class15.localNPCIndexes[-Class159.localPlayerCount + var7]];
             }
 
-            if(null != var8 && ((Class140_Sub4)var8).hasDefinitions((byte)17)) {
+            if(null != var8 && ((Class140_Sub4)var8).hasDefinitions()) {
                NPCDefinition var9;
                if(var8 instanceof NPC) {
                   var9 = ((NPC)var8).definition;
@@ -481,7 +481,7 @@ final class Class82 {
    final byte[] method1407(int var1, int var2, boolean var3, Interface2 var4, CacheIndex var8) {
       try {
          byte[] var9 = new byte[4 * var2 * var1];
-         GameObject.method1859(0.7, 32258);
+         GameObject.method1859(0.7);
          Class104.aClass153_2172 = var8;
          Class17.anInterface2_408 = var4;
          Class3_Sub13_Sub3.method180(-32, var1, var2);

@@ -21,7 +21,7 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
             Class60.method1208((byte)79, var3);
          }
 
-         Class164_Sub2.method2249((byte)83, var3);
+         Class164_Sub2.method2249(var3);
          RSInterface var5 = Class7.getRSInterface((byte)109, var4);
          if(null != var5) {
             Class20.method909(107, var5);
@@ -65,7 +65,7 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
 
    static void method255(int var0, int var1, int var2) {
       try {
-         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(4, var2, var0);
+         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(var2, var0);
          var3.g();
          var3.anInt3598 = var1;
       } catch (RuntimeException var4) {
@@ -156,7 +156,7 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
 
    static void method256(int var0, int var1, int var2, byte var3, int var4) {
       try {
-         Class3_Sub28_Sub6 var5 = Class3_Sub24_Sub3.method466(4, 4, var2);
+         Class3_Sub28_Sub6 var5 = Class3_Sub24_Sub3.method466(4, var2);
          var5.g();
          var5.anInt3597 = var4;
          var5.anInt3596 = var0;

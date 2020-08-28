@@ -107,7 +107,7 @@ final class Class3_Sub8 extends Class3 {
             for(var9 = 0; MouseListeningClass.anInt1924 > var9; ++var9) {
                var10 = -(Class102.player.anInt2819 / 32) + 2 + 4 * Class84.anIntArray1163[var9];
                var11 = -(Class102.player.anInt2829 / 32) + 2 + (Class3_Sub28_Sub7_Sub1.anIntArray4050[var9] * 4);
-               ObjectDefinition var20 = Class162.getObjectDefinition(4, Class3_Sub28_Sub15.anIntArray3693[var9]);
+               ObjectDefinition var20 = Class162.getObjectDefinition(Class3_Sub28_Sub15.anIntArray3693[var9]);
                if(null != var20.ChildrenIds) {
                   var20 = var20.method1685(var1 + -59);
                   if(null == var20 || var20.MapIcon == -1) {
@@ -131,7 +131,7 @@ final class Class3_Sub8 extends Class3 {
 
             for(var9 = 0; var9 < Class163.localNPCCount; ++var9) {
                NPC var21 = Class3_Sub13_Sub24.npcs[Class15.localNPCIndexes[var9]];
-               if(var21 != null && var21.hasDefinitions((byte)17)) {
+               if(var21 != null && var21.hasDefinitions()) {
                   NPCDefinition var22 = var21.definition;
                   if(null != var22 && null != var22.childNPCs) {
                      var22 = var22.method1471((byte)-3);
@@ -151,7 +151,7 @@ final class Class3_Sub8 extends Class3 {
 
             for(var9 = 0; var9 < Class159.localPlayerCount; ++var9) {
                Player var23 = Class3_Sub13_Sub22.players[Class56.localPlayerIndexes[var9]];
-               if(null != var23 && var23.hasDefinitions((byte)17)) {
+               if(null != var23 && var23.hasDefinitions()) {
                   var12 = var23.anInt2829 / 32 - Class102.player.anInt2829 / 32;
                   var11 = -(Class102.player.anInt2819 / 32) + var23.anInt2819 / 32;
                   long var29 = var23.displayName.toLong(-128);
@@ -264,7 +264,7 @@ final class Class3_Sub8 extends Class3 {
       }
    }
 
-   static void method127(short[] var0, int var1, RSString[] var2, int var3, int var4) {
+   static void method127(short[] var0, int var1, RSString[] var2, int var4) {
       try {
          if(var4 < var1) {
             int var6 = var4;
@@ -291,16 +291,16 @@ final class Class3_Sub8 extends Class3 {
             var2[var6] = var7;
             var0[var1] = var0[var6];
             var0[var6] = var8;
-            method127(var0, -1 + var6, var2, -909, var4);
-            method127(var0, var1, var2, -909, var6 - -1);
+            method127(var0, -1 + var6, var2, var4);
+            method127(var0, var1, var2, var6 - -1);
          }
 
-         if(var3 != -909) {
+         if(-909 != -909) {
             method125(-13, (byte)113, -27, -120, (RSInterface)null);
          }
 
       } catch (RuntimeException var12) {
-         throw Class44.clientError(var12, "ed.E(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var12, "ed.E(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + -909 + ',' + var4 + ')');
       }
    }
 

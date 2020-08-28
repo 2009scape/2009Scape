@@ -58,7 +58,7 @@ final class Class104 implements Interface5 {
             }
          } else {
             GameLaunch.SETTINGS.setIp(var2.address.toString());
-            byte[] var3 = var2.address.method1568(0);
+            byte[] var3 = var2.address.method1568();
             Class38_Sub1.accRegistryIp = Configurations.MS_IP;
             CS2Script.anInt2451 = var2.worldId;
             if (Class44.anInt718 != 0) {
@@ -114,7 +114,7 @@ final class Class104 implements Interface5 {
                 var25 = var26;
                 int var18;
                 if(var14 == 2 && Class151.method2096(WorldListCountry.localPlane, var12, var27, var26)) {
-                   ObjectDefinition var16 = Class162.getObjectDefinition(4, var15);
+                   ObjectDefinition var16 = Class162.getObjectDefinition(var15);
                    if(null != var16.ChildrenIds) {
                       var16 = var16.method1685(0);
                    }

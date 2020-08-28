@@ -267,9 +267,9 @@ final class RenderAnimationDefinition {
       }
    }
 
-   final void parse(int var1, RSByteBuffer var2) {
+   final void parse(RSByteBuffer var2) {
       try {
-         if(var1 != -1) {
+         if(-1 != -1) {
             method900((Class140_Sub4)null, -18);
          }
 
@@ -282,7 +282,7 @@ final class RenderAnimationDefinition {
             this.parseOpcode(opcode, var2);
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "ck.H(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "ck.H(" + -1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 

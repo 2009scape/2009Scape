@@ -179,7 +179,7 @@ abstract class Class144 {
                byte[] var3 = Class8.aClass153_105.getFile(5, var0);
                var2 = new Class3_Sub28_Sub12();
                if(var3 != null) {
-                  var2.method610(new RSByteBuffer(var3), 0);
+                  var2.method610(new RSByteBuffer(var3));
                }
 
                Class49.aClass47_818.method1097(var2, (long)var0, (byte)58);

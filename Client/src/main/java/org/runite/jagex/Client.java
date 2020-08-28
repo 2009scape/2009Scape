@@ -23,7 +23,7 @@ public final class Client extends GameShell {
 	static int ZOOM = 600;
 
 	
-	final void method38(int var1) {
+	final void method38() {
 		try {
 			if(Class143.loadingStage != 1000) {
 				boolean var2 = NPC.method1988();
@@ -69,7 +69,7 @@ public final class Client extends GameShell {
 					GameObject.graphicsSettings(false, Node.anInt2577, -1, -1);
 				}
 
-				if(var1 != 40) {
+				if(40 != 40) {
 					method44((RSInterface)null);
 				}
 
@@ -80,7 +80,7 @@ public final class Client extends GameShell {
 				}
 
 				if(var10) {
-					Class80.method1396(var1 ^ -41);
+					Class80.method1396(40 ^ -41);
 				}
 
 				if(HDToolKit.highDetail) {
@@ -96,7 +96,7 @@ public final class Client extends GameShell {
 					Class3_Sub17.method381(true);
 				} else if (25 != Class143.loadingStage && Class143.loadingStage != 28) {
 					if (Class143.loadingStage == 30) {
-						Class49.method1127(var1 + -40);
+						Class49.method1127(40 + -40);
 					} else if (40 == Class143.loadingStage) {
 						Class3_Sub13.method164((byte) -95, false, RenderAnimationDefinition.method903(new RSString[]{TextCore.ConxLost, RSByteBuffer.aClass94_2598, TextCore.AttemptingReestablish}, (byte) -67));
 					}
@@ -164,7 +164,7 @@ public final class Client extends GameShell {
 
 			}
 		} catch (RuntimeException var9) {
-			throw Class44.clientError(var9, "client.K(" + var1 + ')');
+			throw Class44.clientError(var9, "client.K(" + 40 + ')');
 		}
 	}
 
@@ -223,7 +223,7 @@ public final class Client extends GameShell {
 				Class3_Sub15.aClass89_2429 = null;
 			}
 
-			Class163_Sub1_Sub1.method2215(Class3_Sub28_Sub12.aCanvas3648, -9320);
+			Class163_Sub1_Sub1.method2215(Class3_Sub28_Sub12.aCanvas3648);
 			Class130.method1783(4, Class3_Sub28_Sub12.aCanvas3648);
 			if(null != Class38.aClass146_668) {
 				Class38.aClass146_668.method2082(Class3_Sub28_Sub12.aCanvas3648);
@@ -241,7 +241,7 @@ public final class Client extends GameShell {
 			}
 
 			Class58.aClass66_917.method1254();
-			Class3_Sub13_Sub14.aClass73_3159.method1304(3208);
+			Class3_Sub13_Sub14.aClass73_3159.method1304();
 
 			try {
 				if(Class101.aClass30_1422 != null) {
@@ -740,7 +740,7 @@ public final class Client extends GameShell {
 				var2 = new AnimationDefinition();
 				var2.animId = var0;
 				if(var3 != null) {
-					var2.method2053(new RSByteBuffer(var3), (byte)-102);
+					var2.method2053(new RSByteBuffer(var3));
 				}
 
 				var2.method2058();
@@ -774,7 +774,7 @@ public final class Client extends GameShell {
 
 			++Class106.anInt1446;
 			if(-1 != Class3_Sub28_Sub12.anInt3655) {
-				GraphicDefinition.method967(0, 0, 2, 0, Class23.anInt454, Class3_Sub28_Sub12.anInt3655, 0, Class140_Sub7.anInt2934);
+				GraphicDefinition.method967(0, 0, 0, Class23.anInt454, Class3_Sub28_Sub12.anInt3655, 0, Class140_Sub7.anInt2934);
 			}
 
 			++Class3_Sub13_Sub17.anInt3213;
@@ -793,7 +793,7 @@ public final class Client extends GameShell {
 									var4.aByteArray2795[0] = 1;
 									var4.anIntArray2767[0] = var6 + (var4.anInt2819 >> 7);
 									var4.anIntArray2755[0] = var7 + (var4.anInt2829 >> 7);
-									Class86.aClass91Array1182[WorldListCountry.localPlane].method1502((byte) 1 + 20850, var4.anInt2819 >> 7, var4.getSize(), false, 0, var4.getSize(), var4.anInt2829 >> 1442151015);
+									Class86.aClass91Array1182[WorldListCountry.localPlane].method1502(var4.anInt2819 >> 7, var4.getSize(), false, 0, var4.getSize(), var4.anInt2829 >> 1442151015);
 									if(0 <= var4.anIntArray2767[0] && var4.anIntArray2767[0] <= 104 + -var4.getSize() && 0 <= var4.anIntArray2755[0] && var4.anIntArray2755[0] <= 104 - var4.getSize() && Class86.aClass91Array1182[WorldListCountry.localPlane].method1500(var4.anInt2829 >> 2135388679, var4.anIntArray2755[0], var4.anIntArray2767[0], var4.anInt2819 >> 627928135)) {
 										if(var4.getSize() > 1) {
 											for(int var8 = var4.anIntArray2767[0]; var8 < var4.anIntArray2767[0] - -var4.getSize(); ++var8) {
@@ -1245,7 +1245,7 @@ public final class Client extends GameShell {
 											int var32 = Class3_Sub4.anInt2251 + var29;
 											int var23 = var21 + Class3_Sub13_Sub21.anInt3256;
 											int var24 = Class108.anInt1460 - 1 - var32 + Class2.anInt65;
-											Class30.method979(var23, var24, 0, (byte)-4);
+											Class30.method979(var23, var24, 0);
 											Class3_Sub13_Sub19.method264((byte)126);
 											continue;
 										}
@@ -1591,7 +1591,7 @@ public final class Client extends GameShell {
 
 						Class3_Sub31 var28 = (Class3_Sub31)Class3_Sub13_Sub17.aClass130_3208.method1780((long)inter.anInt279, 0);
 						if(var28 != null) {
-							GraphicDefinition.method967(var10, var13, 2, var11, var14, var28.anInt2602, var12, var15);
+							GraphicDefinition.method967(var10, var13, var11, var14, var28.anInt2602, var12, var15);
 						}
 					}
 				}
@@ -1717,19 +1717,19 @@ public final class Client extends GameShell {
 						} else {
 							Class3_Sub28_Sub15.LoadingStageNumber = 20;
 							Class3_Sub17.aClass94_2464 = TextCore.LoadedUpdateList;
-							Class39.method1039(208, Class140_Sub6.spritesCacheIndex);
+							Class39.method1039(Class140_Sub6.spritesCacheIndex);
 							Class97.method1593(111, Class140_Sub6.spritesCacheIndex);
 							Class3_Sub13_Sub13.method233(28280, Class140_Sub6.spritesCacheIndex);
 							Class96.anInt1354 = 45;
 						}
 					} else if (Class96.anInt1354 == 45) {
-						Class140_Sub3.method1959(256, 2, 22050, Class3_Sub13_Sub15.aBoolean3184);
+						Class140_Sub3.method1959(Class3_Sub13_Sub15.aBoolean3184);
 						Class86.aClass3_Sub24_Sub4_1193 = new Class3_Sub24_Sub4();
 						Class86.aClass3_Sub24_Sub4_1193.method479();
-						WorldListEntry.aClass155_2627 = Class58.method1195(22050, Class38.aClass87_665, Class3_Sub28_Sub12.aCanvas3648, 0, 14);
+						WorldListEntry.aClass155_2627 = Class58.method1195(22050, Class38.aClass87_665, Class3_Sub28_Sub12.aCanvas3648, 0);
 						WorldListEntry.aClass155_2627.method2154(-116, Class86.aClass3_Sub24_Sub4_1193);
 						RenderAnimationDefinition.method897(17770, Class86.aClass3_Sub24_Sub4_1193, NPC.aClass153_3994, Class3_Sub19.aClass153_2474, Class146.aClass153_1902);
-						Class3_Sub21.aClass155_2491 = Class58.method1195(2048, Class38.aClass87_665, Class3_Sub28_Sub12.aCanvas3648, 1, 14);
+						Class3_Sub21.aClass155_2491 = Class58.method1195(2048, Class38.aClass87_665, Class3_Sub28_Sub12.aCanvas3648, 1);
 						Class3_Sub26.aClass3_Sub24_Sub2_2563 = new Class3_Sub24_Sub2();
 						Class3_Sub21.aClass155_2491.method2154(-128, Class3_Sub26.aClass3_Sub24_Sub2_2563);
 						Class27.aClass157_524 = new Class157(22050, Class21.anInt443);
@@ -1796,14 +1796,14 @@ public final class Client extends GameShell {
 							Class3_Sub28_Sub8.method575(Class164.aClass153_2052, -1);
 							CS2Script.method375(Class159.aClass153_2019, Class164.aClass153_2052);
 							Class108.method1661(Class168.aClass153_2097, Class159.aClass153_2019);
-							ItemDefinition.method1103(Class159.aClass153_2019, Class101.aClass153_1428, false);
-							GameObject.method1864(true, (byte) -126, Class100.aClass153_1410, Class157.aClass3_Sub28_Sub17_Sub1_2000, Class159.aClass153_2019);
+							ItemDefinition.method1103(Class159.aClass153_2019, Class101.aClass153_1428);
+							GameObject.method1864(Class100.aClass153_1410, Class157.aClass3_Sub28_Sub17_Sub1_2000, Class159.aClass153_2019);
 							Class29.method969(Class164.aClass153_2052, 59);
 							Class3_Sub20.method392(Class3_Sub28_Sub19.aClass153_3772, Class3_Sub13_Sub36.aClass153_3429, Class75_Sub3.aClass153_2660);
 							Class41.method1053(Class164.aClass153_2052);
 							Class158.method2180(Class159.aClass153_2019, Class70.aClass153_1058);
-							Class107.method1648(Class3_Sub22.aClass153_2528, 255);
-							Class3_Sub29.method731(Class164.aClass153_2052, (byte) -113);
+							Class107.method1648(Class3_Sub22.aClass153_2528);
+							Class3_Sub29.method731(Class164.aClass153_2052);
 							Class3.method89(CacheIndex.aClass153_1948, Class140_Sub6.spritesCacheIndex, Class140_Sub3.aClass153_2727, Class159.aClass153_2019);
 							Class3_Sub13_Sub17.method250(Class164.aClass153_2052);
 							Class46.method1086(NPC.aClass153_3993);
@@ -1994,7 +1994,7 @@ public final class Client extends GameShell {
 					this.method52(107);
 					Class75_Sub4.method1355();
 				} else if (Class143.loadingStage == 25 || Class143.loadingStage == 28) {
-					Class40.method1046(-117);
+					Class40.method1046();
 				}
 
 				 var4 = 121;

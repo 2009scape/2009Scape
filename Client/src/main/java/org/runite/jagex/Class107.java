@@ -42,22 +42,22 @@ final class Class107 {
       }
    }
 
-   static void method1648(CacheIndex var0, int var1) {
+   static void method1648(CacheIndex var0) {
       try {
          Class101.aClass153_1420 = var0;
-         if(var1 != 255) {
+         if(255 != 255) {
             currentChunkY = -56;
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "og.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "og.B(" + (var0 != null?"{...}":"null") + ',' + 255 + ')');
       }
    }
 
    static void method1649(int var0, int var1) {
       try {
          if(var1 <= -65) {
-            Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 10, var0);
+            Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(10, var0);
             var2.a();
          }
       } catch (RuntimeException var3) {

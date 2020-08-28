@@ -164,11 +164,11 @@ final class Class3_Sub28_Sub3 extends Node {
       }
    }
 
-   static boolean method544(int var0, int var1) {
+   static boolean method544(int var1) {
       try {
-         return var0 != -49 || var1 >= 48 && 57 >= var1;
+         return -49 != -49 || var1 >= 48 && 57 >= var1;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "bn.E(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "bn.E(" + -49 + ',' + var1 + ')');
       }
    }
 

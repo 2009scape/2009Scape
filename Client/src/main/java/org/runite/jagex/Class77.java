@@ -29,15 +29,15 @@ final class Class77 {
       }
    }
 
-   static void method1366(int var0, int var1) {
+   static void method1366() {
       try {
-         if(var0 != 104) {
+         if(104 != 104) {
             method1367(114, 95, -80, (byte)-90, -2, 56);
          }
 
-         Class158_Sub1.aClass93_2982.method1522(var0 ^ -22, var1);
+         Class158_Sub1.aClass93_2982.method1522(104 ^ -22, 5);
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "kh.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "kh.C(" + 104 + ',' + 5 + ')');
       }
    }
 

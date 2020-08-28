@@ -72,7 +72,7 @@ final class Class3_Sub23 extends Class3 {
          RSString var6 = Class47.method1090((byte)-99, 0);
          if(var3 < 0) {
             var3 = -var3;
-            Objects.requireNonNull(var6).method1533(Class3_Sub13_Sub11.aClass94_3133, true);
+            Objects.requireNonNull(var6).method1533(Class3_Sub13_Sub11.aClass94_3133);
          }
 
          RSString var8 = Class143.aClass94_1880;
@@ -96,7 +96,7 @@ final class Class3_Sub23 extends Class3 {
 
          int var11;
          for(var11 = 0; var2 > var11; ++var11) {
-            Objects.requireNonNull(var10).method1533(Class72.method1298((byte)9, (int)(var3 % 10L)), true);
+            Objects.requireNonNull(var10).method1533(Class72.method1298((byte)9, (int)(var3 % 10L)));
             var3 /= 10L;
          }
 
@@ -108,10 +108,10 @@ final class Class3_Sub23 extends Class3 {
             RSString var12;
             for(var12 = Class47.method1090((byte)-102, 0); var3 > 0L; var3 /= 10L) {
                if(var1 && var11 != 0 && var11 % 3 == 0) {
-                  var12.method1533(var8, true);
+                  var12.method1533(var8);
                }
 
-               Objects.requireNonNull(var12).method1533(Class72.method1298((byte)9, (int)(var3 % 10L)), true);
+               Objects.requireNonNull(var12).method1533(Class72.method1298((byte)9, (int)(var3 % 10L)));
                ++var11;
             }
 
@@ -119,7 +119,7 @@ final class Class3_Sub23 extends Class3 {
          }
 
           if(Objects.requireNonNull(var10).length(2 ^ -47) > 0) {
-             var10.method1533(var7, true);
+             var10.method1533(var7);
           }
 
           return RenderAnimationDefinition.method903(new RSString[]{var6, Objects.requireNonNull(var9).method1544(true), var10.method1544(true)}, (byte)-66);

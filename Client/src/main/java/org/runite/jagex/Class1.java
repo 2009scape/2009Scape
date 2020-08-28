@@ -25,7 +25,7 @@ final class Class1 {
       }
    }
 
-   static Class3_Sub11[] method70(float[][] var0, float[][] var1, int[][] var2, int var3, float[][] var4, byte[][] var5, int[][] var6, int var7, byte[][] var8, byte[][] var9, byte[][] var10, byte[][][] var11) {
+   static Class3_Sub11[] method70(float[][] var0, float[][] var1, int[][] var2, int var3, float[][] var4, byte[][] var5, int[][] var6, byte[][] var8, byte[][] var9, byte[][] var10, byte[][][] var11) {
       try {
          Class130 var12 = new Class130(128);
 
@@ -299,7 +299,7 @@ final class Class1 {
          }
 
          Class3_Sub11 var56;
-         for(var56 = (Class3_Sub11)var12.method1776(var7 + 36); null != var56; var56 = (Class3_Sub11)var12.method1778(var7 ^ -117)) {
+         for(var56 = (Class3_Sub11)var12.method1776(0 + 36); null != var56; var56 = (Class3_Sub11)var12.method1778(0 ^ -117)) {
             var56.method145();
          }
 
@@ -602,16 +602,16 @@ final class Class1 {
          var13 = var12.method1781(97);
          Class3_Sub11[] var57 = new Class3_Sub11[var13];
          long[] var59 = new long[var13];
-         var12.method1782(var57, var7 + 83);
+         var12.method1782(var57, 0 + 83);
 
-         for(var16 = var7; var16 < var13; ++var16) {
+         for(var16 = 0; var16 < var13; ++var16) {
             var59[var16] = var57[var16].aLong71;
          }
 
-         PacketParser.method824(var59, var57, var7 + -27);
+         PacketParser.method824(var59, var57, 0 + -27);
          return var57;
       } catch (RuntimeException var55) {
-         throw Class44.clientError(var55, "a.A(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + (var5 != null?"{...}":"null") + ',' + (var6 != null?"{...}":"null") + ',' + var7 + ',' + (var8 != null?"{...}":"null") + ',' + (var9 != null?"{...}":"null") + ',' + (var10 != null?"{...}":"null") + ',' + (var11 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var55, "a.A(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + (var5 != null?"{...}":"null") + ',' + (var6 != null?"{...}":"null") + ',' + 0 + ',' + (var8 != null?"{...}":"null") + ',' + (var9 != null?"{...}":"null") + ',' + (var10 != null?"{...}":"null") + ',' + (var11 != null?"{...}":"null") + ')');
       }
    }
 
@@ -644,7 +644,7 @@ final class Class1 {
             if(null == Class36.aClass3_Sub28_Sub16_637 || var2 != Class36.aClass3_Sub28_Sub16_637.anInt3707 || Class36.aClass3_Sub28_Sub16_637.anInt3696 != var1) {
                Class3_Sub28_Sub16_Sub2 var5 = new Class3_Sub28_Sub16_Sub2(var2, var1);
                Class74.method1319(var5.anIntArray4081, var2, var1);
-               Node.method523(var2, 0, 0, Class23.anInt455, 0, 0, Class108.anInt1460, var1, 0);
+               Node.method523(var2, 0, Class23.anInt455, 0, 0, Class108.anInt1460, var1, 0);
                if(HDToolKit.highDetail) {
                   Class36.aClass3_Sub28_Sub16_637 = new Class3_Sub28_Sub16_Sub1(var5);
                } else {

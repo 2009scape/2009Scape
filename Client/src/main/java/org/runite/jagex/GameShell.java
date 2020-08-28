@@ -288,10 +288,10 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
             Class3_Sub21.aClass155_2491.method2163();
          }
 
-         Class140_Sub3.method1959(256, 2, 22050, Class3_Sub13_Sub15.aBoolean3184);
-         WorldListEntry.aClass155_2627 = Class58.method1195(22050, Class38.aClass87_665, Class3_Sub28_Sub12.aCanvas3648, 0, 14);
+         Class140_Sub3.method1959(Class3_Sub13_Sub15.aBoolean3184);
+         WorldListEntry.aClass155_2627 = Class58.method1195(22050, Class38.aClass87_665, Class3_Sub28_Sub12.aCanvas3648, 0);
          WorldListEntry.aClass155_2627.method2154(114, Class86.aClass3_Sub24_Sub4_1193);
-         Class3_Sub21.aClass155_2491 = Class58.method1195(2048, Class38.aClass87_665, Class3_Sub28_Sub12.aCanvas3648, 1, 14);
+         Class3_Sub21.aClass155_2491 = Class58.method1195(2048, Class38.aClass87_665, Class3_Sub28_Sub12.aCanvas3648, 1);
          Class3_Sub21.aClass155_2491.method2154(-126, Class3_Sub26.aClass3_Sub24_Sub2_2563);
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "rc.DA(" + -32589 + ')');
@@ -405,13 +405,13 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
             }
          }
 
-         this.method38(40);
+         this.method38();
       } catch (RuntimeException var7) {
          throw Class44.clientError(var7, "rc.AA(" + 0 + ')');
       }
    }
 
-   abstract void method38(int var1);
+   abstract void method38();
 
    public final URL getCodeBase() {
       return frame == null?(null != Class38.aClass87_665 && this != Class38.aClass87_665.anApplet1219?Class38.aClass87_665.anApplet1219.getCodeBase():super.getCodeBase()):null;

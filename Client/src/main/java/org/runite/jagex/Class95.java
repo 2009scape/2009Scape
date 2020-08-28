@@ -76,7 +76,7 @@ final class Class95 {
       try {
 
           if(var5 == var1) {
-            Class43.method1058(var5, var2, var0, var3, (byte)-47);
+            Class43.method1058(var5, var2, var0, var3);
          } else if (Class101.anInt1425 <= var2 - var5 && var2 + var5 <= Class3_Sub28_Sub18.anInt3765 && -var1 + var3 >= Class159.anInt2020 && Class57.anInt902 >= var3 - -var1) {
             Class3_Sub9.method135(var3, var2, var5, -111, var1, var0);
          } else {
@@ -101,23 +101,23 @@ final class Class95 {
       }
    }
 
-   static RSString method1586(int var0, int var1) {
+   static RSString method1586() {
       try {
-         if(var1 > 0 && var1 <= 255) {
+         if(160 > 0 && 160 <= 255) {
             RSString var2 = new RSString();
-            if(var0 != 23161) {
+            if(23161 != 23161) {
                aClass3_Sub28_Sub16_1339 = (Class3_Sub28_Sub16)null;
             }
 
             var2.length = 1;
             var2.byteArray = new byte[1];
-            var2.byteArray[0] = (byte)var1;
+            var2.byteArray[0] = (byte) 160;
             return var2;
          } else {
             throw new IllegalArgumentException();
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "nb.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "nb.A(" + 23161 + ',' + 160 + ')');
       }
    }
 

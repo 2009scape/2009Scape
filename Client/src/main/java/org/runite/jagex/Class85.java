@@ -16,7 +16,7 @@ final class Class85 {
       try {
 
           int var3 = var1.index;
-         byte[] var4 = var2.method1568(0);
+         byte[] var4 = var2.method1568();
          var1.method768(-32769, var4.length);
          var1.index += Class3_Sub13_Sub9.aClass36_3112.method1015(var4.length, var1.buffer, var4, 0, var1.index);
          return var1.index + -var3;

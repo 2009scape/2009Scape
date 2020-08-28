@@ -216,7 +216,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 						Class3_Sub28_Sub10.method589(WorldListCountry.localPlane, var2, var3);
 					} else if (var5 == 1) {
 						if (0 < Class3_Sub13_Sub26.rights && ObjectDefinition.aBooleanArray1490[82] && ObjectDefinition.aBooleanArray1490[81]) {
-							Class30.method979(Class131.anInt1716 + var2, Class82.anInt1152 + var3, WorldListCountry.localPlane, (byte) -4);
+							Class30.method979(Class131.anInt1716 + var2, Class82.anInt1152 + var3, WorldListCountry.localPlane);
 						} else if (Class3_Sub28_Sub9.method582(Class102.player.anIntArray2755[0], 0, 0, true, 0, 2, var2, 0, 0, 1, var3, Class102.player.anIntArray2767[0])) {
 							Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -32, Class1.anInt56);
 							Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -108, Class58.anInt916);
@@ -815,7 +815,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 								ObjectDefinition.anInt1521 = 1;
 								Class3_Sub28_Sub10.method589(WorldListCountry.localPlane, var2, var3);
 							} else if (Class3_Sub13_Sub26.rights > 0 && ObjectDefinition.aBooleanArray1490[82] && ObjectDefinition.aBooleanArray1490[81]) {
-								Class30.method979(var2 + Class131.anInt1716, Class82.anInt1152 - -var3, WorldListCountry.localPlane, (byte) -4);
+								Class30.method979(var2 + Class131.anInt1716, Class82.anInt1152 - -var3, WorldListCountry.localPlane);
 							} else {
 								++Class3_Sub19.anInt2479;
 								Class3_Sub13_Sub1.outgoingBuffer.putOpcode(179);
@@ -1008,13 +1008,13 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 		}
 	}
 
-	final int getBits(byte var1, int var2) {
+	final int getBits(int var2) {
 		try {
 			int var3 = this.anInt3806 >> 3;
 			int var4 = 8 + -(7 & this.anInt3806);
 			int var5 = 0;
 			this.anInt3806 += var2;
-			if(var1 == -11) {
+			if((byte) -11 == -11) {
 				while(var2 > var4) {
 					var5 += (Class140_Sub2.anIntArray2709[var4] & this.buffer[var3++]) << -var4 + var2;
 					var2 -= var4;
@@ -1032,7 +1032,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 				return -10;
 			}
 		} catch (RuntimeException var6) {
-			throw Class44.clientError(var6, "i.C(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var6, "i.C(" + (byte) -11 + ',' + var2 + ')');
 		}
 	}
 
@@ -1055,15 +1055,15 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 		}
 	}
 
-	final int method815(int var1, int var2) {
+	final int method815(int var1) {
 		try {
-			if(var2 != 32666) {
+			if(32666 != 32666) {
 				this.method811((byte)96, 46, (byte[])null, -50);
 			}
 
 			return var1 * 8 - this.anInt3806;
 		} catch (RuntimeException var4) {
-			throw Class44.clientError(var4, "i.U(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "i.U(" + var1 + ',' + 32666 + ')');
 		}
 	}
 

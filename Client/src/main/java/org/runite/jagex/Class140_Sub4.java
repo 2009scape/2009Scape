@@ -103,15 +103,15 @@ abstract class Class140_Sub4 extends GameObject {
       }
    }
 
-   boolean hasDefinitions(byte var1) {
+   boolean hasDefinitions() {
       try {
-         if(var1 != 17) {
+         if((byte) 17 != 17) {
             this.method1975(-109);
          }
 
          return false;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "fe.L(" + var1 + ')');
+         throw Class44.clientError(var3, "fe.L(" + (byte) 17 + ')');
       }
    }
 

@@ -147,12 +147,12 @@ abstract class Class164 {
 
    abstract void method2233();
 
-   static int method2234(int var0, int var1) {
+   static int method2234(int var0) {
       try {
-         int var2 = -27 / ((var1 - -87) / 39);
+         int var2 = -27 / ((-127 - -87) / 39);
          return 1023 & var0;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "wf.K(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "wf.K(" + var0 + ',' + -127 + ')');
       }
    }
 

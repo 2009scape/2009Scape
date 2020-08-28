@@ -54,10 +54,10 @@ final class Class117 {
                      Class151.method2099(KeyboardListener.anInt1912, Class75_Sub2.aClass153_2645, 255);
                   }
 
-                  Class58.aClass66_917.method1247(false, true);
+                  Class58.aClass66_917.method1247(false);
                } else {
                   NodeList.method882();
-                  Class58.aClass66_917.method1247(true, true);
+                  Class58.aClass66_917.method1247(true);
                }
             }
 

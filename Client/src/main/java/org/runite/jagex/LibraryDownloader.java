@@ -28,10 +28,6 @@ public class LibraryDownloader {
 		println(text);
 	}
 
-	public void drawLoadingText(int amount, String text) {
-		println(text);
-	}
-
 	private String cacheDir = "NEEDS TO BE SET--1";
 	private String getLibsDir() {
 		return cacheDir;
@@ -111,7 +107,7 @@ public class LibraryDownloader {
 				int percentage = (int)(((double)numWritten / (double)length) * 100D);
 				if(percentage != lastPercent){
 					lastPercent = percentage;
-					drawLoadingText(percentage, "Downloading library " + percentage + "%");
+					drawLoadingText("Downloading library " + percentage + "%");
 				}
 			}
 

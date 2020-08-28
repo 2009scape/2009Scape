@@ -18,9 +18,9 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
          ++Class79.anInt1127;
          Class124.method1745();
          if(!var2) {
-            Class3_Sub5.method116(true, 670232012);
+            Class3_Sub5.method116(true);
             Class102.method1611(71, true);
-            Class3_Sub5.method116(false, 670232012);
+            Class3_Sub5.method116(false);
          }
 
          Class102.method1611(100, false);
@@ -93,7 +93,7 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
             }
          }
 
-         Class3_Sub28_Sub20.method725(-118);
+         Class3_Sub28_Sub20.method725();
          if(HDToolKit.highDetail) {
             Class22.method935(var3, var5, var3 + var4, var5 - -var1);
             float var17 = (float)Class139.anInt1823 * 0.17578125F;

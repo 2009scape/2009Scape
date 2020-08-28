@@ -82,15 +82,15 @@ class Node extends Class3 {
       }
    }
 
-   static void method523(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
+   static void method523(int var0, int var1, int var3, int var4, int var5, int var6, int var7, int var8) {
       try {
          int var9 = var3 - var8;
          int var11 = (-var5 + var0 << 16) / var9;
          int var10 = -var4 + var6;
          int var12 = (var7 + -var1 << 16) / var10;
-         Class83.method1410(var1, 0, var6, var4, var3, var5, var8, var12, var11, var2, -12541);
+         Class83.method1410(var1, 0, var6, var4, var3, var5, var8, var12, var11, 0, -12541);
       } catch (RuntimeException var13) {
-         throw Class44.clientError(var13, "rg.SA(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ')');
+         throw Class44.clientError(var13, "rg.SA(" + var0 + ',' + var1 + ',' + 0 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ')');
       }
    }
 

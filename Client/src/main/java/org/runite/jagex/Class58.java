@@ -47,7 +47,7 @@ final class Class58 {
       }
    }
 
-   static Class155 method1195(int var0, Signlink var1, Component var2, int var3, int var4) {
+   static Class155 method1195(int var0, Signlink var1, Component var2, int var3) {
       try {
          if(Class21.anInt443 == 0) {
             throw new IllegalStateException();
@@ -83,7 +83,7 @@ final class Class58 {
 
                return var9;
             } catch (Throwable var7) {
-               if(var4 != 14) {
+               if(14 != 14) {
                   anInt909 = 124;
                }
 
@@ -97,7 +97,7 @@ final class Class58 {
                   if(Class3_Sub24_Sub4.anInt3507 > 0 && null == Class38_Sub1.aClass15_2613) {
                      Class38_Sub1.aClass15_2613 = new Class15();
                      Class38_Sub1.aClass15_2613.aClass87_350 = var1;
-                     var1.method1451(var4 ^ 14, Class3_Sub24_Sub4.anInt3507, Class38_Sub1.aClass15_2613);
+                     var1.method1451(14 ^ 14, Class3_Sub24_Sub4.anInt3507, Class38_Sub1.aClass15_2613);
                   }
 
                   if(Class38_Sub1.aClass15_2613 != null) {
@@ -117,7 +117,7 @@ final class Class58 {
             throw new IllegalArgumentException();
          }
       } catch (RuntimeException var8) {
-         throw Class44.clientError(var8, "id.D(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var8, "id.D(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + 14 + ')');
       }
    }
 

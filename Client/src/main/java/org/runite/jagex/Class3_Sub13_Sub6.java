@@ -8,7 +8,7 @@ final class Class3_Sub13_Sub6 extends Class3_Sub13 {
    static int[] anIntArray3076;
    static CacheIndex aClass153_3077;
    static boolean aBoolean3078;
-   static RSString aClass94_3080 = Class95.method1586(23161, 160);
+   static RSString aClass94_3080 = Class95.method1586();
    static int anInt3081 = 0;
    static int[] anIntArray3082 = new int[100];
    static int[] anIntArray3083 = new int[50];

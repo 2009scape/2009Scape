@@ -457,7 +457,7 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	final void method771(int var1, int var2) {
+	final void method771(int var2) {
 		try {
 			if((-128 & var2) != 0) {
 				if((-16384 & var2) != 0) {
@@ -477,14 +477,14 @@ class RSByteBuffer extends Class3 {
 
 			this.putByte((byte)-46, var2 & 127);
 		} catch (RuntimeException var4) {
-			throw Class44.clientError(var4, "wa.DB(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.DB(" + 17038 + ',' + var2 + ')');
 		}
 	}
 
-	final long method772(int var1, int var2) {
+	final long method772(int var1) {
 		try {
 			--var1;
-			if(var2 <= var1 && var1 <= 7) {
+			if(0 <= var1 && var1 <= 7) {
 				long var4 = 0L;
 
 				for(int var3 = var1 * 8; var3 >= 0; var3 -= 8) {
@@ -496,7 +496,7 @@ class RSByteBuffer extends Class3 {
 				throw new IllegalArgumentException();
 			}
 		} catch (RuntimeException var6) {
-			throw Class44.clientError(var6, "wa.VA(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var6, "wa.VA(" + var1 + ',' + 0 + ')');
 		}
 	}
 
@@ -1073,13 +1073,13 @@ class RSByteBuffer extends Class3 {
 					}
 
 					Class74.method1319(Class3_Sub13_Sub19.aClass3_Sub28_Sub16_Sub2_3221.anIntArray4081, var4, var3);
-					Node.method523(var4, 0, 0, var7, var6, 0, var8, var3, var15);
+					Node.method523(var4, 0, var7, var6, 0, var8, var3, var15);
 					Class23.method938(var4, 0, var7, var8, var3, 0, var15, var6);
 					Class3_Sub5.method111((byte)-54, 0, 0, var15, var4, var8, var6, var7, var3);
 					Class22.method926(Class3_Sub13_Sub19.aClass3_Sub28_Sub16_Sub2_3221.anIntArray4081, var0, var2, var4, var3);
 					Class74.anIntArray1100 = null;
 				} else {
-					Node.method523(var4 + var0, var2, 0, var7, var6, var0, var8, var2 - -var3, var15);
+					Node.method523(var4 + var0, var2, var7, var6, var0, var8, var2 - -var3, var15);
 					Class23.method938(var0 + var4, var0, var7, var8, var3 + var2, var2, var15, var6);
 					Class3_Sub5.method111((byte)-100, var0, var2, var15, var0 - -var4, var8, var6, var7, var3 + var2);
 				}
@@ -1133,7 +1133,7 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	final void encryptRSA(BigInteger var1, BigInteger var2, int var3) {
+	final void encryptRSA(BigInteger var1, BigInteger var2) {
 		try {
 			int var4 = this.index;
 			this.index = 0;
@@ -1148,9 +1148,9 @@ class RSByteBuffer extends Class3 {
 			byte[] var8 = var7.toByteArray();
 			this.index = 0;
 			this.putByte((byte)-23, var8.length);
-			this.putBytes(var8, var8.length, var3 + 348);
+			this.putBytes(var8, var8.length, -296 + 348);
 		} catch (RuntimeException var9) {
-			throw Class44.clientError(var9, "wa.KB(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+			throw Class44.clientError(var9, "wa.KB(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + -296 + ')');
 		}
 	}
 

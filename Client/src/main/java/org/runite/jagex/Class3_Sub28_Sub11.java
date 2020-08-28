@@ -164,20 +164,20 @@ final class Class3_Sub28_Sub11 extends Node {
       }
    }
 
-   final RSString method604(RSString var1, byte var2, int var3) {
+   final RSString method604(RSString var1, int var3) {
       try {
          if(this.aClass130_3636 == null) {
             return var1;
          } else {
             Class3_Sub29 var4 = (Class3_Sub29)this.aClass130_3636.method1780((long)var3, 0);
-            if(var2 != -44) {
+            if((byte) -44 != -44) {
                Translation.englishToGerman(false);
             }
 
             return null != var4?var4.aClass94_2586:var1;
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "lk.B(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "lk.B(" + (var1 != null?"{...}":"null") + ',' + (byte) -44 + ',' + var3 + ')');
       }
    }
 

@@ -11,8 +11,8 @@ class Sensor {
    private Component aComponent1733;
 
 
-   void method1795(byte var1, Point var2, int var3, Component var4, int var5, int[] var6) {
-      if(var1 > 108) {
+   void method1795(Point var2, int var3, Component var4, int var5, int[] var6) {
+      if((byte) 113 > 108) {
          if(var6 == null) {
             var4.setCursor((Cursor)null);
          } else {

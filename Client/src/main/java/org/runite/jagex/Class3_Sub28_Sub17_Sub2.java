@@ -30,7 +30,7 @@ final class Class3_Sub28_Sub17_Sub2 extends Class3_Sub28_Sub17 {
       super.finalize();
    }
 
-   final void method678(int var1, int var2, int var3, int var4, int var5, int var6, boolean var7) {
+   final void method678(int var1, int var2, int var3, int var4, int var5, int var6) {
       GL var8;
       if(Class22.aClass3_Sub28_Sub16_Sub1_447 == null) {
          HDToolKit.method1824();
@@ -82,7 +82,7 @@ final class Class3_Sub28_Sub17_Sub2 extends Class3_Sub28_Sub17 {
 
    }
 
-   final void method679(int var1, int var2, int var3, int var4, int var5, int var6, int var7, boolean var8) {
+   final void method679(int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
       HDToolKit.method1824();
       javax.media.opengl.GL var9 = HDToolKit.gl;
       HDToolKit.bindTexture2D(this.anInt4084);

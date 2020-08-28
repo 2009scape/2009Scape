@@ -176,7 +176,7 @@ final class Class3_Sub13_Sub33 extends Class3_Sub13 {
 
    static void method327(int var0, int var1) {
       try {
-         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466((byte) 68 + -64, 12, var1);
+         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(12, var1);
          var3.g();
          var3.anInt3598 = var0;
       } catch (RuntimeException var4) {

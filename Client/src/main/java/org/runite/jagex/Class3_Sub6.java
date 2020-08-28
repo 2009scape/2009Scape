@@ -14,7 +14,7 @@ final class Class3_Sub6 extends Class3 {
          anIntArray2288 = null;
          aByteArrayArray2287 = (byte[][])null;
          if(var0 != 2) {
-            method119((float[])null, 91);
+            method119((float[])null);
          }
 
       } catch (RuntimeException var2) {
@@ -22,17 +22,17 @@ final class Class3_Sub6 extends Class3 {
       }
    }
 
-   static float[] method119(float[] var0, int var1) {
+   static float[] method119(float[] var0) {
       try {
          if(var0 == null) {
             return null;
          } else {
             float[] var2 = new float[var0.length];
-            Class76.method1360(var0, var1, var2, 0, var0.length);
+            Class76.method1360(var0, 91, var2, 0, var0.length);
             return var2;
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "ea.B(" + "{...}" + ',' + var1 + ')');
+         throw Class44.clientError(var3, "ea.B(" + "{...}" + ',' + 91 + ')');
       }
    }
 

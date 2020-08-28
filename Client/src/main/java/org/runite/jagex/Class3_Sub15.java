@@ -78,7 +78,7 @@ final class Class3_Sub15 extends Class3 {
                   if(var6 != var9) {
                      var6 = var9--;
                      if((var9 & 1) == 0) {
-                        var7 = var3.method1413(var9 >> 2, 33, var2);
+                        var7 = var3.method1413(var9 >> 2, var2);
                      } else {
                         var7 = var3.method1416(var9 >> 2, var2);
                      }

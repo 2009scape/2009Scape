@@ -18,7 +18,7 @@ final class Class54 {
          Class82.anInt1150 = -1;
 
          Class3_Sub28_Sub1.anInt3536 = var0;
-         Class3_Sub5.method117((byte)87);
+         Class3_Sub5.method117();
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "hj.D(" + var0 + ',' + 112 + ')');
       }

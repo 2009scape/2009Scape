@@ -28,7 +28,7 @@ final class Class66 {
 	final boolean method1241() {
 		try {
 
-			return 20 <= this.method1246(11706);
+			return 20 <= this.method1246();
 		} catch (RuntimeException var3) {
 			throw Class44.clientError(var3, "jb.N(" + -30064 + ')');
 		}
@@ -70,7 +70,7 @@ final class Class66 {
 			}
 
 			if(this.aClass89_1005 == null) {
-				return 0 == this.method1253() && this.method1246(11706) == 0;
+				return 0 == this.method1253() && this.method1246() == 0;
 			} else {
 				try {
 					this.aClass89_1005.method1466();
@@ -214,7 +214,7 @@ final class Class66 {
 					this.anInt1010 = -2;
 					++this.anInt1011;
 					this.aClass89_1005 = null;
-					return 0 == this.method1253() && this.method1246(11706) == 0;
+					return 0 == this.method1253() && this.method1246() == 0;
 				}
 			}
 		} catch (RuntimeException var20) {
@@ -260,21 +260,21 @@ final class Class66 {
 		}
 	}
 
-	private int method1246(int var1) {
+	private int method1246() {
 		try {
-			if(var1 != 11706) {
+			if(11706 != 11706) {
 				aClass3_Sub28_Sub16Array996 = (Class3_Sub28_Sub16[])null;
 			}
 
 			return this.lowPriorityRequests.method874(-79) - -this.aClass13_1003.method874(-118);
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "jb.K(" + var1 + ')');
+			throw Class44.clientError(var3, "jb.K(" + 11706 + ')');
 		}
 	}
 
-	final void method1247(boolean var1, boolean var2) {
+	final void method1247(boolean var1) {
 		try {
-			if(var2) {
+			if(true) {
 				if(null != this.aClass89_1005) {
 					try {
 						this.aClass3_Sub30_1007.index = 0;
@@ -325,7 +325,7 @@ final class Class66 {
 
 			this.aClass89_1005 = stream;
 			this.method1256((byte)-77);
-			this.method1247(var1, true);
+			this.method1247(var1);
 			this.aClass3_Sub30_1008.index = 0;
 			this.aClass3_Sub28_Sub10_Sub2_1012 = null;
 
@@ -476,7 +476,7 @@ final class Class66 {
 
 				this.highPriorityRequests.method879(var8, (byte)-125);
 			} else {
-				if(this.method1246(11706) >= 20) {
+				if(this.method1246() >= 20) {
 					throw new RuntimeException();
 				}
 

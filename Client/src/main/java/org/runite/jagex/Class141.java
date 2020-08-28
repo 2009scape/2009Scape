@@ -119,7 +119,7 @@ final class Class141 {
       }
    }
 
-   static void method2038(int var0, int var1, int var2, int var3, boolean[][] var4, int[][] var5) {
+   static void method2038(int var0, int var1, int var2, boolean[][] var4) {
       GL var6 = HDToolKit.gl;
       HDToolKit.method1856(1);
       HDToolKit.method1847(1);

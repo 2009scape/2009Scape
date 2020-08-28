@@ -39,7 +39,7 @@ final class PacketParser {
 
     static void method825(int var1) {
         try {
-            Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(4, 1, var1);
+            Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(1, var1);
             var3.a();
         } catch (RuntimeException var4) {
             throw Class44.clientError(var4, "ac.D(" + (byte) 92 + ',' + var1 + ')');
@@ -538,7 +538,7 @@ final class PacketParser {
                                                         RSString.incomingOpcode = -1;
                                                         return true;
                                                     } else if (RSString.incomingOpcode == 169) {
-                                                        Class162.method2204(GraphicDefinition.incomingBuffer, (byte) -83 ^ -43);
+                                                        Class162.method2204(GraphicDefinition.incomingBuffer);
                                                         RSString.incomingOpcode = -1;
                                                         return true;
                                                     } else if (89 == RSString.incomingOpcode) {
@@ -1091,7 +1091,7 @@ final class PacketParser {
                                                                         Class140_Sub6.anInt2905 = Class3_Sub13_Sub17.anInt3213;
                                                                         return true;
                                                                     } else if (RSString.incomingOpcode == 114) {
-                                                                        Class3_Sub13_Sub29.method305(Class38.aClass87_665, GraphicDefinition.incomingBuffer, Class130.incomingPacketLength, (byte) -126);
+                                                                        Class3_Sub13_Sub29.method305(Class38.aClass87_665, GraphicDefinition.incomingBuffer, Class130.incomingPacketLength);
                                                                         RSString.incomingOpcode = -1;
                                                                         return true;
                                                                     } else if (65 == RSString.incomingOpcode) {
@@ -1159,7 +1159,7 @@ final class PacketParser {
                                                                         } else {
                                                                             Class3_Sub13_Sub24.aClass94_3295 = playerName;
                                                                             RSString.aBoolean2154 = true;
-                                                                            Class15.aClass64_351 = Class38.aClass87_665.method1452(new String(playerName.method1568(0), "ISO-8859-1"), true);
+                                                                            Class15.aClass64_351 = Class38.aClass87_665.method1452(new String(playerName.method1568(), "ISO-8859-1"), true);
                                                                         }
 
                                                                         RSString.incomingOpcode = -1;

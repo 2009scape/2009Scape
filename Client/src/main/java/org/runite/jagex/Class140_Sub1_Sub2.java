@@ -474,7 +474,7 @@ final class Class140_Sub1_Sub2 extends Model {
                         }
 
                         try {
-                           this.method1945(var23, var30, var9, var16 - var14, var13 - var14 + 2, var12);
+                           this.method1945(var23, var30, var9, var16 - var14, var13 - var14 + 2);
                         } catch (Exception var45) {
                         }
 
@@ -704,7 +704,7 @@ final class Class140_Sub1_Sub2 extends Model {
             }
          }
 
-         this.method1945(false, false, (long) -1, this.aShort3886, this.aShort3886 << 1, (Class127_Sub1)null);
+         this.method1945(false, false, (long) -1, this.aShort3886, this.aShort3886 << 1);
       } catch (RuntimeException var26) {
       }
 
@@ -1154,7 +1154,7 @@ final class Class140_Sub1_Sub2 extends Model {
       return this.method1939(var1, var2, aClass140_Sub1_Sub2_3902, aByteArray3907, aShortArray3910, anIntArray3905, anIntArray3909, anIntArray3904);
    }
 
-   private void method1945(boolean var1, boolean var2, long var3, int var5, int var6, Class127_Sub1 var7) {
+   private void method1945(boolean var1, boolean var2, long var3, int var5, int var6) {
       if(var6 < 1600) {
          int var8 = 0;
          int var9 = 0;
@@ -1557,7 +1557,7 @@ final class Class140_Sub1_Sub2 extends Model {
             }
          }
 
-         this.method1945(false, false, 0L, this.aShort3886, this.aShort3886 << 1, (Class127_Sub1)null);
+         this.method1945(false, false, 0L, this.aShort3886, this.aShort3886 << 1);
       } catch (RuntimeException var25) {
       }
 

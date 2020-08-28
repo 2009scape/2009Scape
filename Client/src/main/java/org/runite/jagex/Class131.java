@@ -18,8 +18,8 @@ final class Class131 {
    static void addLocalPlayers() {
       try {
          while(true) {
-            if(GraphicDefinition.incomingBuffer.method815(Class130.incomingPacketLength, 32666) >= 11) {
-               int index = GraphicDefinition.incomingBuffer.getBits((byte)-11, 11);
+            if(GraphicDefinition.incomingBuffer.method815(Class130.incomingPacketLength) >= 11) {
+               int index = GraphicDefinition.incomingBuffer.getBits(11);
                if(index != 2047) {
                   boolean var2 = false;
                   if(null == Class3_Sub13_Sub22.players[index]) {
@@ -33,13 +33,13 @@ final class Class131 {
                   Class56.localPlayerIndexes[Class159.localPlayerCount++] = index;
                   Player var3 = Class3_Sub13_Sub22.players[index];
                   var3.anInt2838 = Class44.anInt719;
-                  int var4 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 1);
+                  int var4 = GraphicDefinition.incomingBuffer.getBits(1);
                   if(var4 == 1) {
                      Class21.maskUpdateIndexes[Class66.maskUpdateCount++] = index;
                   }
 
-                  int var5 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 5);
-                  int var6 = Class27.anIntArray510[GraphicDefinition.incomingBuffer.getBits((byte)-11, 3)];
+                  int var5 = GraphicDefinition.incomingBuffer.getBits(5);
+                  int var6 = Class27.anIntArray510[GraphicDefinition.incomingBuffer.getBits(3)];
                   if(var5 > 15) {
                      var5 -= 32;
                   }
@@ -48,8 +48,8 @@ final class Class131 {
                      var3.anInt2806 = var3.anInt2785 = var6;
                   }
 
-                  int var7 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 1);
-                  int var8 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 5);
+                  int var7 = GraphicDefinition.incomingBuffer.getBits(1);
+                  int var8 = GraphicDefinition.incomingBuffer.getBits(5);
                   if(var8 > 15) {
                      var8 -= 32;
                   }
@@ -105,7 +105,7 @@ final class Class131 {
 
    static void method1790(int var0, int var1) {
       try {
-         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(4, 5, var0);
+         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(5, var0);
          var3.g();
          var3.anInt3598 = var1;
       } catch (RuntimeException var4) {
@@ -133,7 +133,7 @@ final class Class131 {
       }
    }
 
-   static void method1793(RSString var0, RSString var1, int var2, byte var3) {
+   static void method1793(RSString var0, RSString var1, int var2) {
       try {
          Class3_Sub28_Sub14.password = var1;
          Class7.anInt2161 = var2;
@@ -153,8 +153,8 @@ final class Class131 {
             var4.putInt(-123, (int) (Math.random() * 9.9999999E7D));
             var4.putString(Class3_Sub28_Sub14.password);
             var4.putInt(-128, (int) (Math.random() * 9.9999999E7D));
-            int var5 = 9 / ((var3 - 29) / 60);
-            var4.encryptRSA(Class3_Sub13_Sub14.aBigInteger3162, Class3_Sub13_Sub37.aBigInteger3441, -296);
+            int var5 = 9 / (((byte) -38 - 29) / 60);
+            var4.encryptRSA(Class3_Sub13_Sub14.aBigInteger3162, Class3_Sub13_Sub37.aBigInteger3441);
             Class3_Sub13_Sub1.outgoingBuffer.index = 0;
             Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -29, 210);
             Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -121, var4.index);
@@ -163,7 +163,7 @@ final class Class131 {
             Class24.method951();
          }
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "se.C(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var6, "se.C(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + (byte) -38 + ')');
       }
    }
 

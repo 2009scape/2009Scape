@@ -157,29 +157,29 @@ final class Class3_Sub13_Sub3 extends Class3_Sub13 {
       }
    }
 
-   static void method182(boolean var0) {
+   static void method182() {
       try {
-         if(!var0) {
+         if(!true) {
             method179((byte)120, -73);
          }
 
          Class82.aClass93_1146.method1524();
          Class159.aClass93_2016.method1524();
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "an.Q(" + var0 + ')');
+         throw Class44.clientError(var2, "an.Q(" + true + ')');
       }
    }
 
-   static void method183(int var0) {
+   static void method183() {
       try {
-         if(var0 > -91) {
+         if(-108 > -91) {
             aClass148_3049 = (KeyboardListener)null;
          }
 
          Class41.aClass93_684.method1524();
          Class163_Sub1.aClass93_2984.method1524();
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "an.O(" + var0 + ')');
+         throw Class44.clientError(var2, "an.O(" + -108 + ')');
       }
    }
 

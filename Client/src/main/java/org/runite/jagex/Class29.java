@@ -52,12 +52,12 @@ final class Class29 {
       }
    }
 
-   final void method970(int var1, RSByteBuffer var2) {
+   final void method970(RSByteBuffer var2) {
       try {
          while(true) {
             int var3 = var2.getByte((byte)-74);
             if(0 == var3) {
-               if(var1 != -20638) {
+               if(-20638 != -20638) {
                   method969((CacheIndex)null, 55);
                }
 
@@ -67,7 +67,7 @@ final class Class29 {
             this.method972(var2, var3);
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "eh.B(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "eh.B(" + -20638 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 

@@ -26,10 +26,10 @@ final class Class75_Sub1 extends Class75 {
       }
    }
 
-   static void method1342(int[] var0, int[] var1, Player var2, byte var3, int[] var4) {
+   static void method1342(int[] var0, int[] var1, Player var2, int[] var4) {
       try {
          int var5 = 0;
-         if(var3 > -97) {
+         if((byte) -113 > -97) {
             method1343(true);
          }
 
@@ -85,7 +85,7 @@ final class Class75_Sub1 extends Class75 {
          }
 
       } catch (RuntimeException var13) {
-         throw Class44.clientError(var13, "ci.B(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var13, "ci.B(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + (byte) -113 + ',' + (var4 != null?"{...}":"null") + ')');
       }
    }
 

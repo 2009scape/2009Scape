@@ -40,7 +40,7 @@ static boolean aBoolean1080 = false;
             aBoolean1080 = false;
          }
          //System.out.println("Class 73 " + var1);
-         return !Class75_Sub4.method1351(var3, 0, var1, -30901)?null:NodeList.method880(-22376, var4.getFile(var1, 0));
+         return !Class75_Sub4.method1351(var3, 0, var1, -30901)?null:NodeList.method880(var4.getFile(var1, 0));
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "k.C(" + 0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
       }
@@ -294,7 +294,7 @@ static boolean aBoolean1080 = false;
       }
    }
 
-   final void method1304(int var1) {
+   final void method1304() {
       try {
          this.aBoolean1091 = true;
          NodeList var2 = this.aClass13_1086;
@@ -308,11 +308,11 @@ static boolean aBoolean1080 = false;
          }
 
          this.aThread1090 = null;
-         if(var1 != 3208) {
+         if(3208 != 3208) {
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "k.B(" + var1 + ')');
+         throw Class44.clientError(var6, "k.B(" + 3208 + ')');
       }
    }
 

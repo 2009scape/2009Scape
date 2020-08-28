@@ -16,7 +16,7 @@ final class Class3_Sub28_Sub7_Sub1 extends Class3_Sub28_Sub7 {
 
    static void method569(int var1) {
       try {
-         Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 7, var1);
+         Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(7, var1);
          var2.a();
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "he.C(" + -82 + ',' + var1 + ')');

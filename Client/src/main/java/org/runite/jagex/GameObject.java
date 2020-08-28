@@ -13,7 +13,7 @@ abstract class GameObject {
    static Class3_Sub28_Sub16_Sub2[] aClass3_Sub28_Sub16_Sub2Array1839;
 
 
-   static void method1859(double var0, int var2) {
+   static void method1859(double var0) {
       try {
          if(Class70.aDouble1050 != var0) {
             for(int var3 = 0; 256 > var3; ++var3) {
@@ -24,12 +24,12 @@ abstract class GameObject {
             Class70.aDouble1050 = var0;
          }
 
-         if(var2 != 32258) {
+         if(32258 != 32258) {
             aBoolean1837 = false;
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "th.KC(" + var0 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "th.KC(" + var0 + ',' + 32258 + ')');
       }
    }
 
@@ -104,11 +104,11 @@ abstract class GameObject {
       }
    }
 
-   static void method1864(boolean var0, byte var1, CacheIndex var2, Class3_Sub28_Sub17_Sub1 var3, CacheIndex var4) {
+   static void method1864(CacheIndex var2, Class3_Sub28_Sub17_Sub1 var3, CacheIndex var4) {
       try {
-         Class139.aBoolean1827 = var0;
+         Class139.aBoolean1827 = true;
          Class3_Sub29.aClass153_2581 = var4;
-         int var6 = -127 / ((var1 - -87) / 32);
+         int var6 = -127 / (((byte) -126 - -87) / 32);
          Class97.aClass153_1370 = var2;
          int var5 = Class97.aClass153_1370.method2121() - 1;
          Class3_Sub13_Sub23.itemDefinitionSize = Class97.aClass153_1370.getFileAmount(var5, (byte)101) + var5 * 256;
@@ -116,7 +116,7 @@ abstract class GameObject {
          RSByteBuffer.aClass94Array2596 = new RSString[]{null, null, TextCore.HasTake, null, null};
          Class3_Sub13_Sub37.aClass3_Sub28_Sub17_Sub1_3440 = var3;
       } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "th.FC(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var7, "th.FC(" + true + ',' + (byte) -126 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
       }
    }
 

@@ -39,7 +39,7 @@ abstract class Class3_Sub28_Sub7 extends Node {
    static void method564(Signlink var0) {
       try {
          Class3_Sub28_Sub10.anInt3625 = 3;
-         Class25.method957(96, true);
+         Class25.method957(true);
          aBoolean3604 = true;
          Class3_Sub13_Sub15.aBoolean3184 = true;
          Class128.aBoolean1685 = true;
@@ -142,7 +142,7 @@ abstract class Class3_Sub28_Sub7 extends Node {
 
    static void method566(RSString var0, int var2) {
       try {
-         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(4, 3, var2);
+         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(3, var2);
          var3.g();
 
          var3.aClass94_3599 = var0;

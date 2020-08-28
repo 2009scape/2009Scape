@@ -42,7 +42,7 @@ abstract class Class3_Sub28_Sub10 extends Node {
             var2 = 4;
          }
 
-         ObjectDefinition var4 = Class162.getObjectDefinition(4, var1);
+         ObjectDefinition var4 = Class162.getObjectDefinition(var1);
          return var4.method1684(var2);
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "il.D(" + var0 + ',' + var1 + ',' + var2 + ')');

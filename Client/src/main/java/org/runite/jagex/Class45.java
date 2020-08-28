@@ -90,7 +90,7 @@ final class Class45 {
 				}
 
 				chatIcon = GraphicDefinition.incomingBuffer.getByte((byte)-112);
-				Class3_Sub28_Sub14.method628(0, chatIcon, var4, var3);
+				Class3_Sub28_Sub14.method628(chatIcon, var4, var3);
 			}
 
 			//Ordinal: 3 Appearance
@@ -164,7 +164,7 @@ final class Class45 {
 					var20[var22] = GraphicDefinition.incomingBuffer.getShort(Class93.method1519((byte) -79, -80));
 				}
 
-				Class75_Sub1.method1342(var17, var18, var3, (byte)-113, var20);
+				Class75_Sub1.method1342(var17, var18, var3, var20);
 			}
 
 			//Ordinal: 9 Graphic

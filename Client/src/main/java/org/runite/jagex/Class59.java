@@ -261,7 +261,7 @@ final class Class59 {
          }
 
          var3 = anIntArray928[this.anInt923 - 1];
-         int var4 = Class3_Sub26.method513(var3 - 1, 4);
+         int var4 = Class3_Sub26.method513(var3 - 1);
          anIntArray927[0] = Class3_Sub14.method368(var4);
          anIntArray927[1] = Class3_Sub14.method368(var4);
          int var5 = 2;

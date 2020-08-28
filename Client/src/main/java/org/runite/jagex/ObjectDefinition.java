@@ -113,10 +113,10 @@ final class ObjectDefinition {
          }
 
          if(var2 >= 0 && this.ChildrenIds.length - 1 > var2 && this.ChildrenIds[var2] != -1) {
-            return Class162.getObjectDefinition(4, this.ChildrenIds[var2]);
+            return Class162.getObjectDefinition(this.ChildrenIds[var2]);
          } else {
             int var3 = this.ChildrenIds[-1 + this.ChildrenIds.length];
-            return var3 == -1 ?null:Class162.getObjectDefinition(4, var3);
+            return var3 == -1 ?null:Class162.getObjectDefinition(var3);
          }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "pb.C(" + var1 + ')');
@@ -319,7 +319,7 @@ final class ObjectDefinition {
 
             for(int var2 = 0; this.ChildrenIds.length > var2; ++var2) {
                if(this.ChildrenIds[var2] != -1) {
-                  ObjectDefinition var3 = Class162.getObjectDefinition(28933 + -28929, this.ChildrenIds[var2]);
+                  ObjectDefinition var3 = Class162.getObjectDefinition(this.ChildrenIds[var2]);
                   if(var3.anInt1512 != -1 || var3.anIntArray1539 != null) {
                      return true;
                   }

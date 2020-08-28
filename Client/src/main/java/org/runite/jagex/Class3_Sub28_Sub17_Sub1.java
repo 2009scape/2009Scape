@@ -55,7 +55,7 @@ final class Class3_Sub28_Sub17_Sub1 extends Class3_Sub28_Sub17 {
 
    }
 
-   private static void method705(int[] var0, byte[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int[] var11, int[] var12) {
+   private static void method705(byte[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int[] var11, int[] var12) {
       int var13 = var2 - Class74.anInt1093;
       int var14 = var3 - Class74.anInt1095;
 
@@ -127,7 +127,7 @@ final class Class3_Sub28_Sub17_Sub1 extends Class3_Sub28_Sub17 {
 
    }
 
-   final void method679(int var1, int var2, int var3, int var4, int var5, int var6, int var7, boolean var8) {
+   final void method679(int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
       int var9 = var2 + var3 * Class74.anInt1092;
       int var10 = Class74.anInt1092 - var4;
       int var11 = 0;
@@ -172,7 +172,7 @@ final class Class3_Sub28_Sub17_Sub1 extends Class3_Sub28_Sub17 {
       this.aByteArrayArray4082 = var6;
    }
 
-   final void method678(int var1, int var2, int var3, int var4, int var5, int var6, boolean var7) {
+   final void method678(int var1, int var2, int var3, int var4, int var5, int var6) {
       int var8 = var2 + var3 * Class74.anInt1092;
       int var9 = Class74.anInt1092 - var4;
       int var10 = 0;
@@ -211,7 +211,7 @@ final class Class3_Sub28_Sub17_Sub1 extends Class3_Sub28_Sub17 {
          if(Class74.anIntArray1097 == null) {
             method704(Class74.anIntArray1100, this.aByteArrayArray4082[var1], var6, var11, var8, var4, var5, var9, var10);
          } else {
-            method705(Class74.anIntArray1100, this.aByteArrayArray4082[var1], var2, var3, var4, var5, var6, var11, var8, var9, var10, Class74.anIntArray1097, Class74.anIntArray1098);
+            method705(this.aByteArrayArray4082[var1], var2, var3, var4, var5, var6, var11, var8, var9, var10, Class74.anIntArray1097, Class74.anIntArray1098);
          }
 
       }

@@ -92,7 +92,7 @@ final class Class3_Sub13_Sub11 extends Class3_Sub13 {
          }
 
          Class3_Sub28_Sub5.anInt3590 = -1;
-         Class3_Sub13_Sub13.method229(Class161.anInt2027, 20827);
+         Class3_Sub13_Sub13.method229(Class161.anInt2027);
          Class102.player = new Player();
          Class102.player.anInt2829 = 3000;
          Class102.player.anInt2819 = 3000;

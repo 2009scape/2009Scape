@@ -14,7 +14,7 @@ final class Canvas_Sub2 extends Canvas {
    static void method56(int var0) {
       try {
          int var3 = 81 % ((39 - 99) / 41);
-         Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 6, var0);
+         Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(6, var0);
          var2.a();
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "tm.C(" + var0 + ',' + 99 + ')');
@@ -63,10 +63,10 @@ final class Canvas_Sub2 extends Canvas {
       }
    }
 
-   static void parsePlayerMasks(int var0) {
+   static void parsePlayerMasks() {
       try {
          int var1 = 0;
-         if(var0 >= -46) {
+         if(-102 >= -46) {
             method60(95, -37, -27, (Class91[])null, -59, (byte)-121, (byte[])null, -69, -50, -72, false);
          }
 
@@ -83,7 +83,7 @@ final class Canvas_Sub2 extends Canvas {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "tm.D(" + var0 + ')');
+         throw Class44.clientError(var5, "tm.D(" + -102 + ')');
       }
    }
 

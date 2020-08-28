@@ -15,11 +15,11 @@ final class Class32 {
       }
    }
 
-   static int method993(int var0, int var1, int var2) {
+   static int method993(int var0, int var2) {
       try {
          int var3 = -128 + (Class65.method1234(4, var2 + '\ub135', var0 - -91923) + (Class65.method1234(2, var2 + 10294, '\u93bd' + var0) + -128 >> 1) - -(Class65.method1234(1, var2, var0) + -128 >> 2));
          var3 = 35 + (int)(0.3D * (double)var3);
-         if(var1 < 110) {
+         if(125 < 110) {
             return 102;
          } else {
             if(var3 >= 10) {
@@ -33,7 +33,7 @@ final class Class32 {
             return var3;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "fc.B(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "fc.B(" + var0 + ',' + 125 + ',' + var2 + ')');
       }
    }
 

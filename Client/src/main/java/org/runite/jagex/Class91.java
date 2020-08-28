@@ -333,7 +333,7 @@ final class Class91 {
       }
    }
 
-   final boolean method1488(int var1, int var2, boolean var3, int var4, int var5, int var6, int var7, int var8) {
+   final boolean method1488(int var1, int var2, int var4, int var5, int var6, int var7, int var8) {
       try {
          if(1 != var7) {
             if(var2 <= var5 && var2 + var7 + -1 >= var5 && var7 + var1 + -1 >= var1) {
@@ -343,7 +343,7 @@ final class Class91 {
             return true;
          }
 
-         if (!var3) {
+         if (!false) {
             var4 -= this.anInt1306;
             var5 -= this.anInt1309;
             var1 -= this.anInt1306;
@@ -951,9 +951,9 @@ final class Class91 {
       return (var7 >= 50 || var11 >= 50) && ((var7 <= var4 || var11 <= var4) && ((var9 >= Class139.anInt1824 || var13 >= Class139.anInt1824) && ((var9 <= Class145.anInt1898 || var13 <= Class145.anInt1898) && ((var10 >= Class1.anInt55 || var14 >= Class1.anInt55) && (var10 <= Class86.anInt1195 || var14 <= Class86.anInt1195)))));
    }
 
-   final void method1496(int var1) {
+   final void method1496() {
       try {
-         for(int var2 = var1; var2 < this.anInt1300; ++var2) {
+         for(int var2 = 0; var2 < this.anInt1300; ++var2) {
             for(int var3 = 0; var3 < this.anInt1303; ++var3) {
                if(var2 != 0 && 0 != var3 && var2 < this.anInt1300 - 5 && this.anInt1303 - 5 > var3) {
                   this.anIntArrayArray1304[var2][var3] = 16777216;
@@ -964,7 +964,7 @@ final class Class91 {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "mj.P(" + var1 + ')');
+         throw Class44.clientError(var4, "mj.P(" + 0 + ')');
       }
    }
 
@@ -978,7 +978,7 @@ final class Class91 {
       }
    }
 
-   final boolean method1498(boolean var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
+   final boolean method1498(int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
       try {
          if(var5 > 1) {
             return this.method1487(var5, var6, var2, var9, var3, var8, var5, var4) || this.method1494(var2, var8, var6, var7, var9, var4, var3, var5, var5);
@@ -988,7 +988,7 @@ final class Class91 {
             if(var4 >= var2 && var10 >= var4 && var8 <= var3 && var11 >= var3) {
                return true;
             } else {
-               if(!var1) {
+               if(!true) {
                   this.method1501((byte)-85, 4, 106, -39);
                }
 
@@ -996,7 +996,7 @@ final class Class91 {
             }
          }
       } catch (RuntimeException var12) {
-         throw Class44.clientError(var12, "mj.S(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ')');
+         throw Class44.clientError(var12, "mj.S(" + true + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ')');
       }
    }
 
@@ -1018,7 +1018,7 @@ final class Class91 {
          this.anInt1309 = 0;
          this.anInt1300 = 104;
          this.anIntArrayArray1304 = new int[this.anInt1300][this.anInt1303];
-         this.method1496(0);
+         this.method1496();
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "mj.<init>(" + 104 + ',' + 104 + ')');
       }
@@ -1149,12 +1149,12 @@ final class Class91 {
       }
    }
 
-   final void method1502(int var1, int var2, int var3, boolean var4, int var5, int var6, int var7) {
+   final void method1502(int var2, int var3, boolean var4, int var5, int var6, int var7) {
       try {
          var2 -= this.anInt1309;
          var7 -= this.anInt1306;
          int var8 = 256;
-         if(var1 != 20851) {
+         if(20851 != 20851) {
             aClass33_1305 = (Class33)null;
          }
 
@@ -1180,7 +1180,7 @@ final class Class91 {
          }
 
       } catch (RuntimeException var11) {
-         throw Class44.clientError(var11, "mj.A(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
+         throw Class44.clientError(var11, "mj.A(" + 20851 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
       }
    }
 

@@ -243,9 +243,9 @@ final class Class3_Sub28_Sub20 extends Node {
       }
    }
 
-   final void method723(int var1, byte var2) {
+   final void method723(int var1) {
       try {
-         if(var2 != -120) {
+         if((byte) -120 != -120) {
             method721(-42);
          }
 
@@ -279,7 +279,7 @@ final class Class3_Sub28_Sub20 extends Node {
 
          }
       } catch (RuntimeException var14) {
-         throw Class44.clientError(var14, "uh.E(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var14, "uh.E(" + var1 + ',' + (byte) -120 + ')');
       }
    }
 
@@ -306,9 +306,9 @@ final class Class3_Sub28_Sub20 extends Node {
       }
    }
 
-   static void method725(int var0) {
+   static void method725() {
       try {
-         int var1 = 67 / ((-60 - var0) / 41);
+         int var1 = 67 / ((-60 - -118) / 41);
          if(Class137.method1817() == 2) {
             byte var2 = (byte)(255 & Class79.anInt1127 + -4);
             int var3 = Class79.anInt1127 % 104;
@@ -432,7 +432,7 @@ final class Class3_Sub28_Sub20 extends Node {
             }
          }
       } catch (RuntimeException var12) {
-         throw Class44.clientError(var12, "uh.A(" + var0 + ')');
+         throw Class44.clientError(var12, "uh.A(" + -118 + ')');
       }
    }
 

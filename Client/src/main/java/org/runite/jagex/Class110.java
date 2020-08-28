@@ -56,7 +56,7 @@ final class Class110 {
             Class85.anInt1174 = var2;
          }
 
-         ObjectDefinition def = Class162.getObjectDefinition(4, objectId);
+         ObjectDefinition def = Class162.getObjectDefinition(objectId);
          if(!HDToolKit.highDetail || !def.aBoolean1530) {
             int var12;
             int var13;
@@ -396,7 +396,7 @@ final class Class110 {
                         var43 = 16;
                         var44 = Class157.method2174(var2, var7, var9);
                         if (var44 != 0) {
-                           var43 = Class162.getObjectDefinition(4, Integer.MAX_VALUE & (int) (var44 >>> 32)).anInt1528;
+                           var43 = Class162.getObjectDefinition(Integer.MAX_VALUE & (int) (var44 >>> 32)).anInt1528;
                         }
 
                         if (def.animationId == -1 && null == def.ChildrenIds && !def.aBoolean1510) {
@@ -415,7 +415,7 @@ final class Class110 {
                         var43 = 8;
                         var44 = Class157.method2174(var2, var7, var9);
                         if (var44 != 0) {
-                           var43 = Class162.getObjectDefinition(4, Integer.MAX_VALUE & (int) (var44 >>> 32)).anInt1528 / 2;
+                           var43 = Class162.getObjectDefinition(Integer.MAX_VALUE & (int) (var44 >>> 32)).anInt1528 / 2;
                         }
 
                         if (def.animationId == -1 && def.ChildrenIds == null && !def.aBoolean1510) {
@@ -448,7 +448,7 @@ final class Class110 {
                         var43 = 8;
                         var44 = Class157.method2174(var2, var7, var9);
                         if (var44 != 0) {
-                           var43 = Class162.getObjectDefinition(4, Integer.MAX_VALUE & (int) (var44 >>> 32)).anInt1528 / 2;
+                           var43 = Class162.getObjectDefinition(Integer.MAX_VALUE & (int) (var44 >>> 32)).anInt1528 / 2;
                         }
 
                         int var32 = var10 + 2 & 3;

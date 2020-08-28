@@ -124,16 +124,16 @@ abstract class Class3_Sub28_Sub17 extends Node {
                if(var8 != 32) {
                   if(anInt3750 == 256) {
                      if(anInt3754 != -1) {
-                        this.method678(var8, var2 + this.anIntArray3719[var8] + 1, var3 + this.anIntArray3730[var8] + 1, var14, var10, anInt3754, true);
+                        this.method678(var8, var2 + this.anIntArray3719[var8] + 1, var3 + this.anIntArray3730[var8] + 1, var14, var10, anInt3754);
                      }
 
-                     this.method678(var8, var2 + this.anIntArray3719[var8], var3 + this.anIntArray3730[var8], var14, var10, anInt3755, false);
+                     this.method678(var8, var2 + this.anIntArray3719[var8], var3 + this.anIntArray3730[var8], var14, var10, anInt3755);
                   } else {
                      if(anInt3754 != -1) {
-                        this.method679(var8, var2 + this.anIntArray3719[var8] + 1, var3 + this.anIntArray3730[var8] + 1, var14, var10, anInt3754, anInt3750, true);
+                        this.method679(var8, var2 + this.anIntArray3719[var8] + 1, var3 + this.anIntArray3730[var8] + 1, var14, var10, anInt3754, anInt3750);
                      }
 
-                     this.method679(var8, var2 + this.anIntArray3719[var8], var3 + this.anIntArray3730[var8], var14, var10, anInt3755, anInt3750, false);
+                     this.method679(var8, var2 + this.anIntArray3719[var8], var3 + this.anIntArray3730[var8], var14, var10, anInt3755, anInt3750);
                   }
                } else if(anInt3756 > 0) {
                   anInt3748 += anInt3756;
@@ -166,9 +166,9 @@ abstract class Class3_Sub28_Sub17 extends Node {
 
    }
 
-   abstract void method678(int var1, int var2, int var3, int var4, int var5, int var6, boolean var7);
+   abstract void method678(int var1, int var2, int var3, int var4, int var5, int var6);
 
-   abstract void method679(int var1, int var2, int var3, int var4, int var5, int var6, int var7, boolean var8);
+   abstract void method679(int var1, int var2, int var3, int var4, int var5, int var6, int var7);
 
    final int method680(RSString var1, int var2) {
       int var3 = this.method691(var1, new int[]{var2}, aClass94Array3753);
@@ -333,9 +333,9 @@ abstract class Class3_Sub28_Sub17 extends Node {
       for(var4 = 0; var4 < var1; ++var4) {
          int var5 = var0.charAt(var4, (byte)-101);
          if(var5 == 60) {
-            Objects.requireNonNull(var6).method1533(aClass94_3734, true);
+            Objects.requireNonNull(var6).method1533(aClass94_3734);
          } else if(var5 == 62) {
-            Objects.requireNonNull(var6).method1533(aClass94_3726, true);
+            Objects.requireNonNull(var6).method1533(aClass94_3726);
          } else {
             Objects.requireNonNull(var6).method1572(var5, (byte)115);
          }
@@ -431,7 +431,7 @@ abstract class Class3_Sub28_Sub17 extends Node {
                   RSString var15 = var1.method1557(var13, 0, var9 + 1);
                   var9 = -1;
                   aClass94_3745.method1572(60, (byte)111);
-                  aClass94_3745.method1533(var15, true);
+                  aClass94_3745.method1533(var15);
                   aClass94_3745.method1572(62, (byte)112);
                   if(var15.method1528(aClass94_3737)) {
                      if(var3[var11] == null) {
@@ -999,16 +999,16 @@ abstract class Class3_Sub28_Sub17 extends Node {
                if(var11 != 32) {
                   if(anInt3750 == 256) {
                      if(anInt3754 != -1) {
-                        this.method678(var11, var2 + this.anIntArray3719[var11] + 1 + var14, var3 + this.anIntArray3730[var11] + 1 + var15, var19, var13, anInt3754, true);
+                        this.method678(var11, var2 + this.anIntArray3719[var11] + 1 + var14, var3 + this.anIntArray3730[var11] + 1 + var15, var19, var13, anInt3754);
                      }
 
-                     this.method678(var11, var2 + this.anIntArray3719[var11] + var14, var3 + this.anIntArray3730[var11] + var15, var19, var13, anInt3755, false);
+                     this.method678(var11, var2 + this.anIntArray3719[var11] + var14, var3 + this.anIntArray3730[var11] + var15, var19, var13, anInt3755);
                   } else {
                      if(anInt3754 != -1) {
-                        this.method679(var11, var2 + this.anIntArray3719[var11] + 1 + var14, var3 + this.anIntArray3730[var11] + 1 + var15, var19, var13, anInt3754, anInt3750, true);
+                        this.method679(var11, var2 + this.anIntArray3719[var11] + 1 + var14, var3 + this.anIntArray3730[var11] + 1 + var15, var19, var13, anInt3754, anInt3750);
                      }
 
-                     this.method679(var11, var2 + this.anIntArray3719[var11] + var14, var3 + this.anIntArray3730[var11] + var15, var19, var13, anInt3755, anInt3750, false);
+                     this.method679(var11, var2 + this.anIntArray3719[var11] + var14, var3 + this.anIntArray3730[var11] + var15, var19, var13, anInt3755, anInt3750);
                   }
                } else if(anInt3756 > 0) {
                   anInt3748 += anInt3756;

@@ -98,7 +98,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
       }
    }
 
-   static Class3_Sub28_Sub6 method466(int var0, int var1, int var2) {
+   static Class3_Sub28_Sub6 method466(int var1, int var2) {
       try {
          Class3_Sub28_Sub6 var3 = (Class3_Sub28_Sub6)Client.aClass130_2194.method1780((long)var2 | (long)var1 << 32, 0);
          if(null == var3) {
@@ -108,7 +108,7 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
 
          return var3;
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "te.F(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "te.F(" + 4 + ',' + var1 + ',' + var2 + ')');
       }
    }
 
